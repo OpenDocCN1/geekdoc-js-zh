@@ -1,0 +1,2301 @@
+<p><img src="Images/unleashtypescript1.jpg" /></p>
+<p><span id="unleashtypescript1-frontmatter.html"></span></p>
+<div class="page-frontmatter">
+<section class="page-frontmatter">
+<h2>Unleashing the Power of TypeScript</h2>
+</section>
+<p>Copyright © 2023 SitePoint Pty. Ltd.</p>
+<p>Ebook ISBN: 978-1-925836-58-5</p>
+<ul>
+<li><strong>Author:</strong> Steve Kinney</li>
+<li><strong>Technical Editor:</strong> Sebastian Springer</li>
+<li><strong>Product Manager:</strong> Simon Mackie</li>
+<li><strong>English Editor:</strong> Ralph Mason</li>
+<li><strong>Cover Designer:</strong> Volodymyr Boyarinov</li>
+</ul>
+<h2 id="unleashtypescript1-frontmatter.html_sigil_toc_id_1">Notice of
+Rights</h2>
+<p>All rights reserved. No part of this book may be reproduced, stored
+in a retrieval system or transmitted in any form or by any means,
+without the prior written permission of the publisher, except in the
+case of brief quotations embodied in critical articles or reviews.</p>
+<h2 id="unleashtypescript1-frontmatter.html_sigil_toc_id_2">Notice of
+Liability</h2>
+<p>The author and publisher have made every effort to ensure the
+accuracy of the information herein. However, the information contained
+in this book is sold without warranty, either express or implied.
+Neither the authors and SitePoint Pty. Ltd., nor its dealers or
+distributors will be held liable for any damages to be caused either
+directly or indirectly by the instructions contained in this book, or by
+the software or hardware products described herein.</p>
+<h2 id="unleashtypescript1-frontmatter.html_sigil_toc_id_3">Trademark
+Notice</h2>
+<p>Rather than indicating every occurrence of a trademarked name as
+such, this book uses the names only in an editorial fashion and to the
+benefit of the trademark owner with no intention of infringement of the
+trademark.</p>
+<div class="page-frontmatter">
+<p><img src="Images/sitepoint-logo-2012.png" class="calibre4"
+alt="SitePoint logo" /><br />
+Published by SitePoint Pty. Ltd.</p>
+<p>71 Balmain Street, Cremorne, VIC, 3121<br />
+Australia<br />
+Web: www.sitepoint.com<br />
+Email: books@sitepoint.com</p>
+</div>
+</div>
+<div class="page-frontmatter">
+<h2 id="unleashtypescript1-frontmatter.html_sigil_toc_id_4">About
+SitePoint</h2>
+<p>SitePoint specializes in publishing fun, practical, and
+easy-to-understand content for web professionals. Visit <a
+href="http://www.sitepoint.com/">http://www.sitepoint.com/</a> to access
+our blogs, books, newsletters, articles, and community forums. You’ll
+find a stack of information on JavaScript, PHP, design, and more.</p>
+<h2 id="unleashtypescript1-frontmatter.html_sigil_toc_id_5">About the
+Author</h2>
+<p>Steve Kinney is the head of engineering for frontend and developer
+tools at Temporal and an instructor with Frontend Masters. Previously,
+Steve founded the front-end engineering program at the Turing School of
+Software and Design and was a New York City public school teacher for
+the better part of a decade.</p>
+</div>
+<p><span id="unleashtypescript1-preface.html"></span></p>
+<section id="unleashtypescript1-preface.html_preface"
+class="page-frontmatter">
+<h1>Preface</h1>
+<h2 id="unleashtypescript1-preface.html_who-should-read-this-book-">Who
+Should Read This Book?</h2>
+<p>This book is for intermediate-level JavaScript developers who want to
+get to grips with the powerful features that TypeScript offers.</p>
+<h2
+id="unleashtypescript1-preface.html_preface-conventions-used">Conventions
+Used</h2>
+<h3 class="breakbefore"
+id="unleashtypescript1-preface.html_sigil_toc_id_6">Code Samples</h3>
+<p>Code in this book is displayed using a fixed-width font, like so:</p>
+<pre class="codeblock"><code>
+&lt;h1&gt;A Perfect Summer&#39;s Day&lt;/h1&gt;
+&lt;p&gt;It was a lovely day for a walk in the park.
+The birds were singing and the kids were all back at school.&lt;/p&gt;
+			</code></pre>
+<p>You’ll notice that we’ve used certain layout styles throughout this
+book to signify different types of information. Look out for the
+following items.</p>
+<h3 class="calibre8"
+id="unleashtypescript1-preface.html_preface-tips">Tips, Notes, and
+Warnings</h3>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Hey, You!</h4>
+<div class="page-frontmatter">
+<p>Tips provide helpful little pointers.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Ahem, Excuse Me ...</h4>
+<div class="page-frontmatter">
+<p>Notes are useful asides that are related—but not critical—to the
+topic at hand. Think of them as extra tidbits of information.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Make Sure You Always ...</h4>
+<div class="page-frontmatter">
+<p>... pay attention to these important points.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Watch Out!</h4>
+<div class="page-frontmatter">
+<p>Warnings highlight any gotchas that are likely to trip you up along
+the way.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-preface.html_supp-mat">Supplementary
+Materials</h2>
+<ul>
+<li><a
+href="https://www.sitepoint.com/community/">https://www.sitepoint.com/community/</a>
+are SitePoint’s forums, for help on any tricky problems.</li>
+<li><strong>books@sitepoint.com</strong> is our email address, should
+you need to contact us to report a problem, or for any other
+reason.</li>
+</ul>
+</section>
+<p><span id="unleashtypescript1-ch1.html"></span></p>
+<section id="unleashtypescript1-ch1.html_ch1" class="page-frontmatter">
+<h1>Chapter 1: Simplifying Reducers in React with TypeScript</h1>
+<p>Many of the example React applications we see tend to be small and
+easily understandable. But in the real world, React apps tend to grow to
+a scale that makes it impossible for us to keep all of the context in
+our head. This can often lead to unexpected bugs when a given value
+isn’t what we thought it would be. That object you thought had a certain
+property on it? It turns out it ended up being <code>undefined</code>
+somewhere along the way. That function you passed in? Yeah, that’s
+<code>undefined</code> too. That string you’re trying to match against?
+It looks like you misspelled it one night when you were working after
+hours.</p>
+<p>Using TypeScript in a React application enhances code quality by
+providing <strong>static type checking</strong>, which catches errors
+early in the development process. It also improves readability and
+maintainability through explicit type annotations, making it easier for
+teams to understand the code structure. Additionally, TypeScript
+features like interfaces and generics make it easier to build robust,
+scalable applications.</p>
+<p>Large applications also tend to come with increasingly complicated
+state management. <strong><a
+href="https://react.dev/learn/extracting-state-logic-into-a-reducer">Reducers</a></strong>
+are a powerful pattern for managing state in client-side applications.
+Reducers became popular with Redux, and are now built into React with
+the <a
+href="https://react.dev/reference/react/useReducer"><code>useReducer</code></a>
+hook, but they’re framework and language agnostic. At the end of the
+day, a reducer is just a function. Redux and React’s
+<code>useReducer</code> just add some additional functionality to
+trigger updates accordingly. We can use Redux with any frontend
+framework or without one all together. We could also write our own take
+on Redux pretty easily, if we were so inclined.</p>
+<p>That said, Redux (and <a
+href="https://github.com/facebookarchive/flux">other implementations of
+the Flux architecture that it’s based on</a>) often get criticized for
+requiring a lot of boilerplate code, and for being a bit cumbersome to
+use. At the risk of making an unintentional pun, we can leverage
+TypeScript not only to reduce the amount of boilerplate required, but
+also to make the overall experience of using reducers more pleasant.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">Following Along with This Tutorial</h4>
+<div class="body">
+<p>You’re welcome to follow along with this tutorial in your own
+environment. I’ve also created <a
+href="https://github.com/stevekinney/sitepoint-reducers">a GitHub
+repository</a> that you can clone, as well as <a
+href="https://codesandbox.io/p/sandbox/typescript-redux-example-sitepoint-hjkzkg?file=%2Findex.html%3A1%2C1">a
+CodeSandbox demo</a> that you can use to follow along.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch1.html_reducer-basics">Reducer Basics</h2>
+<p>A <strong>reducer</strong>, at its most fundamental level, is simply
+a function that takes two arguments: the current state, and an object
+that represents some kind of action that has occurred. The reducer
+returns the new state based on that action.</p>
+<p><img src="Images/reducer.jpg"
+alt="A diagram showing how a reducer works" /></p>
+<p>The following code is regular JavaScript, but it could easily be
+converted to TypeScript by adding <code>any</code> types to
+<code>state</code> and <code>action</code>:</p>
+<pre class="codeblock"><code>export const incrementAction = { type: &#39;Increment&#39; };
+export const decrementAction = { type: &#39;Decrement&#39; };
+
+export const counterReducer = (state, action) =&gt; {
+  if (action.type === &#39;Increment&#39;) {
+    return { count: state.count + 1 };
+  }
+
+  if (action.type === &#39;Decrement&#39;) {
+    return { count: state.count - 1 };
+  }
+
+  return state;
+};
+
+let state = { count: 1 };
+
+state = counterReducer(state, incrementAction);
+state = counterReducer(state, incrementAction);
+state = counterReducer(state, decrementAction);
+
+console.log(state); // Logs: { count: 1 }</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>01-basic-example</code>) in <a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/01-basic-example.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>Let’s review what’s going on in the code sample above:</p>
+<ul>
+<li>We pass in the current state and an action.</li>
+<li>If the action has a <code>type</code> property of
+<code>"Increment"</code>, we increment the <code>count</code> property
+on <code>state</code>.</li>
+<li>If the action has a <code>type</code> property of
+<code>"Decrement"</code>, we decrement the <code>count</code> property
+on <code>state</code>.</li>
+<li>If neither of the above two bullet points is true, we do nothing and
+return the original state.</li>
+</ul>
+<p>Redux requires an action to be an object with a <code>type</code>
+property, as shown in the example above. React isn’t as strict. An
+action can be anything—even a primitive value like a number. For
+example, this is a valid reducer when using <code>useReducer</code>:</p>
+<pre class="codeblock"><code>const counterReducer = (state = 0, value = 1) =&gt; state + value;</code></pre>
+<p>In fact, if you’ve used <code>useState</code> in React before, you’ve
+really used <code>useReducer</code>. <code>useState</code> is simply an
+abstraction of <code>useReducer</code>. For our purposes, we’ll stick to
+a model closer to Redux, where actions are objects with a
+<code>type</code> property, since that pattern will work almost
+universally.</p>
+<p>The <code>useReducer</code> hook of Redux and React adds some extra
+functionality around emitting changes and telling React to update the
+state of a component accordingly—as opposed to repeatedly setting a
+variable, as shown above—but the basic principles are the same
+regardless of what library we’re using.</p>
+<h2 id="unleashtypescript1-ch1.html_adding-types-to-our-reducer">Adding
+Types to Our Reducer</h2>
+<p>Adding TypeScript will protect us from some of the more obvious
+mistakes—by making sure that we both pass in the correct arguments and
+return the expected result. Both of these situations can be a bit tricky
+to triage in our applications, because they might not happen until
+<em>after</em> the user takes an action—like clicking a button in the
+UI. Let’s quickly add some types to our reducer:</p>
+<pre class="codeblock"><code>type CounterState = { count: number };
+type CounterAction = { type: string };
+
+export const incrementAction = { type: &#39;Increment&#39; };
+export const decrementAction = { type: &#39;Decrement&#39; };
+
+export const counterReducer = (
+  state: CounterState,
+  action: CounterAction,
+): CounterState =&gt; {
+  if (action.type === &#39;Increment&#39;) {
+    return { count: state.count + 1 };
+  }
+
+  if (action.type === &#39;Decrement&#39;) {
+    return { count: state.count - 1 };
+  }
+
+  return state;
+};</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>02-reducer-with-types</code>) in
+<a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/02-reducer-with-types.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>Let’s say that we forget to return <code>state</code> when none of
+the actions match any of our conditionals. TypeScript has analyzed our
+code and has been to told to expect that <code>counterReducer</code>
+will always return some kind of <code>CounterState</code>. If there’s
+even so much as a possibility that our code won’t behave as expected, it
+will refuse to compile. In this case, TypeScript has seen that there’s a
+mismatch between what we expect our code to do and what it actually
+does.</p>
+<p><img src="Images/missing-return-value.png"
+alt="Missing return value" /></p>
+<p>We’ll also get the other protections we’ve come to expect from
+TypeScript, such as making sure we pass in the correct arguments and
+only access properties available on those objects.</p>
+<p>But there’s a more insidious (and arguably more common) edge case
+that comes up when working with reducers. In fact, it’s one that I
+encountered when I was writing tests for the initial example at the
+beginning of this tutorial. What happens if we misspell the action
+type?</p>
+<pre class="codeblock"><code>let state: CounterState = { count: 0 };
+
+state = counterReducer(state, { type: &#39;increment&#39; });
+state = counterReducer(state, { type: &#39;INCREMENT&#39; });
+state = counterReducer(state, { type: &#39;Increement&#39; });
+
+console.log(state); // Logs: { count: 0 }</code></pre>
+<p>This the worst kind of bug, because it doesn’t cause an error. It
+just silently doesn’t do what we expect. One common solution is to store
+the action type names in constants:</p>
+<pre class="codeblock"><code>export const INCREMENT = &#39;Increment&#39;;
+export const DECREMENT = &#39;Decrement&#39;;</code></pre>
+<p>This is where the typical boilerplate begins. Since JavaScript can’t
+protect us from accidentally using a string that doesn’t match any of
+the conditionals in our reducer, we assign these strings to constants.
+Misspelling a constant or variable name will prevent our code from
+compiling and make it obvious that we have an issue.</p>
+<p>Luckily, when we’re using TypeScript, we can avoid this kind of
+boilerplate altogether.</p>
+<h2 id="unleashtypescript1-ch1.html_adding-payloads-to-actions">Adding
+Payloads to Actions</h2>
+<p>It’s common for actions to contain additional information about what
+happened. For example, a user might type a query into a search field and
+click <strong>Submit</strong>. We would want to know what they searched
+for in addition to knowing they clicked the <strong>Submit</strong>
+button.</p>
+<p>There are no hard and fast rules for how to structure an action—other
+than Redux’s insistence that we include a <code>type</code> property.
+But it’s a good practice to follow some kind of standard like <a
+href="https://github.com/redux-utilities/flux-standard-action">Flux
+Standard Action</a>, which advises us put to any additional information
+needed in a <code>payload</code> property.</p>
+<p>Following this convention, our <code>CounterAction</code> might look
+something like this:</p>
+<pre class="codeblock"><code>type CounterAction = {
+  type: string;
+  payload: {
+    amount: number;
+  };
+};
+
+let state = counterReducer(
+  { count: 1 },
+  { type: &#39;Increment&#39;, payload: { amount: 1 } },
+);</code></pre>
+<p>This is getting a bit complicated to type out. A common solution is
+to create a set of helper functions called <em>action creators</em>.
+<strong>Action creators</strong> are simply functions that format our
+actions for us. If we wanted to expand <code>counterReducer</code> to
+support the ability to increment or decrement by certain amounts, we
+might create the following action creators:</p>
+<pre class="codeblock"><code>export const increment = (amount: number = 1): CounterAction =&gt; ({
+  type: INCREMENT,
+  payload: { amount },
+});
+
+export const decrement = (amount: number = 1): CounterAction =&gt; ({
+  type: DECREMENT,
+  payload: { amount },
+});</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>03-action-creators</code>) in <a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/03-action-creators.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>We’re also going to need to update our reducer to support this new
+structure for our actions. This also feels like a good opportunity to
+look at the example holistically:</p>
+<pre class="codeblock"><code>export const INCREMENT = &#39;Increment&#39;;
+export const DECREMENT = &#39;Decrement&#39;;
+
+type CounterState = { count: number };
+
+type CounterAction = {
+  type: string;
+  payload: {
+    amount: number;
+  };
+};
+
+type CounterReducer = (
+  state: CounterState,
+  action: CounterAction,
+) =&gt; CounterState;
+
+export const increment = (amount: number = 1): CounterAction =&gt; ({
+  type: INCREMENT,
+  payload: { amount },
+});
+
+export const decrement = (amount: number = 1): CounterAction =&gt; ({
+  type: DECREMENT,
+  payload: { amount },
+});
+
+export const counterReducer: CounterReducer = (state, action) =&gt; {
+  const { count } = state;
+
+  if (action.type === &#39;Increment&#39;) {
+    return { count: count + action.payload.amount };
+  }
+
+  if (action.type === &#39;Decrement&#39;) {
+    return { count: count - action.payload.amount };
+  }
+
+  return state;
+};
+
+let state: CounterState = { count: 0 };</code></pre>
+<h2 id="unleashtypescript1-ch1.html_using-unions">Using Unions</h2>
+<p>But wait, there’s more! We used some of the traditional patterns to
+get around the issue where our reducer ignores actions that it wasn’t
+explicitly told to look for, but what if we could use TypeScript to
+prevent that from happening in the first place?</p>
+<p>Let’s assume that, in addition to being able to increment and
+decrement the counter, we can also reset it back to zero. This gives us
+three types of actions:</p>
+<ul>
+<li><code>Increment</code></li>
+<li><code>Decrement</code></li>
+<li><code>Reset</code></li>
+</ul>
+<p>We’ll start with <code>Increment</code> and <code>Decrement</code>
+and address <code>Reset</code> later.</p>
+<p>In the last section, we added the ability to increment or decrement
+by a certain amount. Reseting the counter will be a bit unusual — in
+that we can only ever reset it back to zero. (Sure, I could have just
+created a <code>Set</code> action that took a value, but I’m setting
+myself up to make a more important point in a bit.)</p>
+<p>Let’s start with our two known quantities: <code>Increment</code> and
+<code>Decrement</code>. Instead of saying that the <code>type</code>
+property on an action can be any string, we can get a bit more
+specific.</p>
+<p>In <code>04-unions</code> <a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/04-unions.ts">in
+our GitHub repo</a>, I use the union of
+<code>'Increment' | 'Decrement'</code>. We’re now telling TypeScript
+that the <code>type</code> property on a <code>CounterAction</code>
+isn’t just <em>any</em> string, but rather that it’s one of exactly two
+strings:</p>
+<pre class="codeblock"><code>type CounterAction = {
+  type: &#39;Increment&#39; | &#39;Decrement&#39;;
+  payload: {
+    amount: number;
+  };
+};</code></pre>
+<p>We get a number of benefits from this relatively simple change. The
+first and most obvious is that we no longer have to worry about
+misspelling or mistyping an action’s <code>type</code>.</p>
+<p><img src="Images/invalid-type.png"
+alt="TypeScript catches an invalid type" /></p>
+<p>You’ll notice that TypeScript not only detects the error, but it’s
+even smart enough to provide a suggestion that can help us quickly
+address the issue.</p>
+<p>We also get autocomplete for free whenever TypeScript has enough
+information to determine that we’re working with a
+<code>CounterAction</code>.</p>
+<p><img src="Images/autocomplete.png"
+alt="TypeScript aids in the autocompletion of action types" /></p>
+<p>If you look carefully, you’ll notice that it’s <em>only</em>
+recommending <code>Decrement</code>. That’s because we’ve already
+created a conditional defining what we should do in the event that the
+<code>type</code> is <code>Increment</code>. TypeScript is able to
+deduce that, if there are only two properties and we’ve dealt with one
+of them, there’s only one option left.</p>
+<p>As promised, we can also now get rid of these two lines of code from
+<a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/03-action-creators.ts"><code>03-action-creators</code></a>:</p>
+<pre class="codeblock"><code>- export const INCREMENT = &#39;Increment&#39;;
+- export const DECREMENT = &#39;Decrement&#39;;</code></pre>
+<p>With TypeScript’s help, we can now go back to using regular strings
+and still enjoy all of the benefits of using constants. This might not
+seem like much in this simple example, but if you’ve ever used this
+pattern before, you know that it can get cumbersome to have to import
+these values in each and every file that uses them.</p>
+<h2
+id="unleashtypescript1-ch1.html_removing-the-default-case-in-the-reducer">Removing
+the Default Case in the Reducer</h2>
+<p>Earlier on, TypeScript tried to help us by throwing an error when we
+omitted the line with <code>return state</code> at the end of the
+function that served as a fallback if none of the conditions above it
+were hit.</p>
+<p>But now we’ve given TypeScript more information about what types of
+actions it can expect. I prefer to use conditionals (which is why I’ve
+done so throughout this tutorial), but if we use a <code>switch</code>
+statement instead, we’ll notice that something interesting happens.</p>
+<p><img src="Images/unreachable-code.png" alt="Unreachable Code" /></p>
+<p>TypeScript has figured out that, since we’re returning from each case
+of the <code>switch</code> statement <em>and</em> we’ve covered all of
+the possible cases of <code>action.type</code>, there’s no need to
+return the original state in the event that our action slips through,
+because TypeScript can guarantee that will never happen.</p>
+<p>There are a few things to take away from this:</p>
+<ul>
+<li>TypeScript will use the information we provide it to help us avoid
+common mistakes.</li>
+<li>TypeScript will also use this information to enable us to write less
+protective code.</li>
+</ul>
+<h2
+id="unleashtypescript1-ch1.html_dealing-with-different-kinds-of-actions">Dealing
+with Different Kinds of Actions</h2>
+<p>Earlier, I hinted that we might add a third type of action: the
+ability to <code>Reset</code> the counter back to zero. This action is a
+lot like the actions we saw at the very beginning. It doesn’t need a
+payload. However, it might be tempting to do something like this:</p>
+<pre class="codeblock"><code>type CounterAction = {
+  type: &#39;Increment&#39; | &#39;Decrement&#39; | &#39;Reset&#39;;
+  payload: {
+    amount: number;
+  };
+};</code></pre>
+<p>You’ll notice that TypeScript is again upset that we risk returning
+<code>undefined</code> from our reducer. We’ll handle that in a moment.
+But first, we should address the fact that <code>Reset</code> doesn’t
+need a payload.</p>
+<p>We don’t want to have to write something like this:</p>
+<pre class="codeblock"><code>let state = counterReducer({ count: 5 }, { type: &#39;Reset&#39;, { payload: { amount: 0 } } });</code></pre>
+<p>We might be tempted to make the <code>payload</code> optional:</p>
+<pre class="codeblock"><code>type CounterAction = {
+  type: &#39;Increment&#39; | &#39;Decrement&#39; | &#39;Reset&#39;;
+  payload?: {
+    amount: number;
+  };
+};</code></pre>
+<p>But now, TypeScript will never be sure if <code>Increment</code> and
+<code>Decrement</code> are supposed to have a payload. This means that
+TypeScript will insist that we check to see if <code>payload</code>
+exists before we’re allowed to access the <code>amount</code> property
+on it. At the same time, TypeScript will still allow us to needlessly
+put a payload on our <code>Reset</code> actions. I suppose this isn’t
+the worst thing in the world, but we can do better.</p>
+<h3 id="unleashtypescript1-ch1.html_using-unions-for-action-types">Using
+Unions for Action Types</h3>
+<p>It turns out that we can use a similar solution to the one we used
+with the <code>type</code> property on <code>CounterAction</code>:</p>
+<pre class="codeblock"><code>type CounterAdjustmentAction = {
+  type: &#39;Increment&#39; | &#39;Decrement&#39;;
+  payload: {
+    amount: number;
+  };
+};
+
+type CounterResetAction = {
+  type: &#39;Reset&#39;;
+};
+
+type CounterAction = CounterAdjustmentAction | CounterResetAction;</code></pre>
+<p>TypeScript is smart enough to figure out the following:</p>
+<ul>
+<li><code>CounterAction</code> is an object.</li>
+<li><code>CounterAction</code> <em>always</em> has a <code>type</code>
+property.</li>
+<li>The <code>type</code> property is one of <code>Increment</code>,
+<code>Decrement</code>, or <code>Reset</code>.</li>
+<li>If the <code>type</code> property is <code>Increment</code> or
+<code>Decrement</code>, there’s a <code>payload</code> property that
+contains a number as the <code>amount</code>.</li>
+<li>If the <code>type</code> property is <code>Reset</code>, there’s no
+<code>payload</code> property.</li>
+</ul>
+<p>By updating the type to include <code>CounterResetAction</code>,
+TypeScript has already figured out that we’re no longer providing an
+exhaustive list of cases to <code>counterReducer</code>.</p>
+<p><img src="Images/missing-reset.png"
+alt="TypeScript notices that we aren’t handing Reset actions" /></p>
+<p>We can update the code:</p>
+<pre class="codeblock"><code>export const counterReducer: CounterReducer = (state, action) =&gt; {
+  const { count } = state;
+
+  switch (action.type) {
+    case &#39;Increment&#39;:
+      return { count: count + action.payload.amount };
+    case &#39;Decrement&#39;:
+      return { count: count - action.payload.amount };
+    case &#39;Reset&#39;:
+      return { count: 0 };
+  }
+};</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>05-different-payloads</code>) in
+<a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/05-different-payloads.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>If you’ve been following along, you might have noticed a few cool
+features (albeit unsurprising at this point). First, as we added that
+third case, TypeScript was able to infer that we were adding a case for
+<code>Reset</code> and suggested that as the only available
+autocompletion. Secondly, if we tried to reference <code>action</code>
+in the <code>return</code> statement, we would have noticed that it
+<em>only</em> let us access the <code>type</code> property because it’s
+well aware that <code>CounterResetActions</code> doesn’t have a
+<code>payload</code> property.</p>
+<p>Other than clearly defining the type, we didn’t have to tell
+TypeScript much of anything in the code itself. It was able to use the
+information at hand to figure everything out on our behalf.</p>
+<p>If you want to see this for yourself, you can create an action
+creator for resetting the counter:</p>
+<pre class="codeblock"><code>export const reset = (): CounterAction =&gt; ({ type: &#39;Reset&#39; });</code></pre>
+<p>I chose to use the broader <code>CounterAction</code> in this case.
+But you’ll notice that, even if you <em>try</em> to add a
+<code>payload</code> to it, TypeScript has already figured out that it’s
+not an option. But if you change the <code>type</code> to
+<code>"Increment"</code> for a moment, you’re suddenly permitted to add
+the property.</p>
+<p>If we update the return type on the function to
+<code>CounterResetAction</code>, we’ll see that we only have one option
+for the type—<code>"Reset"</code>—and that payloads are forbidden:</p>
+<pre class="codeblock"><code>export const reset = (): CounterResetAction =&gt; ({ type: &#39;Reset&#39; });</code></pre>
+<h2
+id="unleashtypescript1-ch1.html_using-our-reducer-in-a-react-component">Using
+Our Reducer in a React Component</h2>
+<p>So far, we’ve talked a lot about the reducer pattern outside of any
+framework. Let’s pull our <code>counterReducer</code> into React and see
+how it works. We’ll start with this simple component:</p>
+<pre class="codeblock"><code>const Counter = () =&gt; {
+  return (
+    &lt;main className=&quot;mx-auto w-96 flex flex-col gap-8 items-center&quot;&gt;
+      &lt;h1&gt;Counter&lt;/h1&gt;
+      &lt;p className=&quot;text-7xl&quot;&gt;0&lt;/p&gt;
+      &lt;div className=&quot;flex place-content-between w-full&quot;&gt;
+        &lt;button&gt;Decrement&lt;/button&gt;
+        &lt;button&gt;Reset&lt;/button&gt;
+        &lt;button&gt;Increment&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  );
+};
+
+export default Counter;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>06-react-component</code>) in <a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/06-react-component.tsx">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>You might notice that there isn’t much happening just yet. The
+<code>counterReducer</code> that we’ve been working on throughout this
+tutorial is ready for action. We just need to hook it up to the
+component, using the <code>useReducer</code> hook.</p>
+<p>In the context of a reducer in React—or Redux, for that
+matter—<code>state</code> is the current snapshot of our component’s
+data. <code>dispatch</code> is a function used to update that state
+based on actions. We can think of <code>dispatch</code> as the way to
+trigger changes, and the <code>state</code> as the resulting data after
+those changes.</p>
+<p>Let’s add the following code inside the <code>Counter</code>
+component:</p>
+<pre class="codeblock"><code>const [state, dispatch] = useReducer(counterReducer, { count: 0 });</code></pre>
+<p>Now, if we hover over <code>state</code> and <code>dispatch</code>,
+we’ll see that TypeScript is able to automatically figure out what the
+correct types of each is:</p>
+<pre class="codeblock"><code>const state: CounterState;
+const dispatch: React.Dispatch&lt;CounterAction&gt;;</code></pre>
+<p>It’s able to infer this from the type annotations on
+<code>counterReducer</code> itself. Similarly, it also will only allow
+us to pass in an initial state that matches
+<code>CounterState</code>—although the error isn’t nearly as helpful. If
+we change the <code>count</code> property to <code>amount</code> in the
+initial state given to <code>useReducer</code>, we’ll see a result
+similar to that pictured below.</p>
+<p><img src="Images/invalid-initial-state.png"
+alt="TypeScript won’t allow us to pass an invalid initial state to a reducer with useReducer" /></p>
+<p>We can now use the <code>state</code> and <code>dispatch</code> from
+<code>useReducer</code> in our <code>Counter</code> component.
+TypeScript will know that <code>count</code> is a property on
+<code>state</code>, and it will only accept actions or the values
+returned from action creators that match the <code>CounterAction</code>
+type:</p>
+<pre class="codeblock"><code>import { useReducer } from &#39;react&#39;;
+import {
+  counterReducer,
+  increment,
+  decrement,
+  reset,
+} from &#39;./05-different-payloads&#39;;
+
+const Counter = () =&gt; {
+  const [state, dispatch] = useReducer(counterReducer, { count: 0 });
+
+  return (
+    &lt;main className=&quot;mx-auto w-96 flex flex-col gap-8 items-center&quot;&gt;
+      &lt;h1&gt;Counter&lt;/h1&gt;
+      &lt;p className=&quot;text-7xl&quot;&gt;{state.count}&lt;/p&gt;
+      &lt;div className=&quot;flex place-content-between w-full&quot;&gt;
+        &lt;button onClick={() =&gt; dispatch(decrement())}&gt;Decrement&lt;/button&gt;
+        &lt;button onClick={() =&gt; dispatch(reset())}&gt;Reset&lt;/button&gt;
+        &lt;button onClick={() =&gt; dispatch(increment())}&gt;Increment&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  );
+};
+
+export default Counter;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above
+(<code>07-react-component-complete</code>) in <a
+href="https://github.com/stevekinney/sitepoint-reducers/blob/main/src/07-react-component-complete.tsx">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>I’d like to draw your attention to just how little TypeScript is in
+this component. In fact, if we were to change the file extension for
+<code>.tsx</code> to <code>.jsx</code>, it would still work. But behind
+the scenes, TypeScript is doing the important work of ensuring that our
+application will work as expected when we put it in the hands of our
+users.</p>
+<h2 id="unleashtypescript1-ch1.html_conclusion">Conclusion</h2>
+<p>The power of reducers is not in their inherent complexity but in
+their simplicity. It’s important to remember that reducers are just
+functions. In the past, they’ve received a bit of flack for requiring a
+fair amount of boilerplate.</p>
+<p>TypeScript helps to reduce the amount of boilerplate, while also
+making the overall experience of using reducers a lot more pleasant.
+We’re protected from potential pitfalls in the form of incorrect
+arguments and unexpected results, which can be tricky to troubleshoot in
+our applications.</p>
+<p>The combination of reducers and TypeScript can make it super easy to
+build resilient, error-free applications.</p>
+<p>Don’t forget to refer to the <a
+href="https://github.com/stevekinney/sitepoint-reducers">GitHub
+repository</a> and <a
+href="https://codesandbox.io/p/sandbox/typescript-redux-example-sitepoint-hjkzkg?file=%2Findex.html%3A1%2C1">CodeSandbox
+demo</a> to play around with any of the examples discussed above.</p>
+<p>In the next part of this book, we’ll look at taking some of the
+mystery out of using generics in TypeScript. Generics allow us to write
+reusable code that works with multiple types, rather than a single one.
+It acts as a placeholder for the type, letting us write code that can
+adapt and enforce type consistency at compile time.</p>
+</section>
+<p><span id="unleashtypescript1-ch2.html"></span></p>
+<section id="unleashtypescript1-ch2.html_ch2" class="page-frontmatter">
+<h1>Chapter 2: A Gentle Introduction to Generics in TypeScript</h1>
+<p>If you’ve come from a language with a type system, you might already
+be familiar with <a
+href="https://www.typescriptlang.org/docs/handbook/2/generics.html">generics</a>.
+But if you’re like me and your experience consists predominately of
+dynamic languages like JavaScript, Python, or Ruby, generics might seem
+a bit bewildering at first. I’m certainly guilty of just copying and
+pasting examples without fully understanding what’s going on. But fear
+not! Generics are both powerful and also fairly simple once we
+understand them. Let’s start at the basics and build up from there, as
+we work towards a full understanding what generics are and how we can
+use them in our TypeScript code.</p>
+<p>In short, a <strong>generic</strong> in TypeScript allows us to write
+reusable code that works with more than one type. Generics act as
+placeholders for types, letting us write code that can adapt and enforce
+type consistency at compile time. It’s not wrong to think of generics as
+variables, but just for our types.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">Following Along with This Tutorial</h4>
+<div class="body">
+<p>All of the code that we’ll be working with can be found in <a
+href="https://github.com/stevekinney/sitepoint-generics">this GitHub
+repository</a>. I also encourage you to use the <a
+href="https://www.typescriptlang.org/play">TypeScript Playground</a> to
+try out ideas and play with the examples below.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch2.html_what-are-generics-">What Are
+Generics?</h2>
+<p><strong>Generics</strong> in TypeScript offer a means for creating
+reusable code components that work with a variety of types (rather than
+just one). As I mentioned, we can think of them as variables—but for our
+types. Generics provide a way to create flexible structures that allow
+us to define the type at a later time.</p>
+<p>Let’s start with a simple <a
+href="https://en.wikipedia.org/wiki/Linked_list">linked list</a>. A
+<strong>linked list</strong> node contains a value and then a link to
+the next node. We could start out with something link this:</p>
+<pre class="codeblock"><code>type LinkedListNode = {
+  value: any;
+  next?: LinkedListNode;
+};</code></pre>
+<p>However, I’m going to add an extra requirement. All of the nodes in
+the list should be of the same type. For example, if we wanted a linked
+list of strings, we could refine our type to make sure that value is
+always a string:</p>
+<pre class="codeblock"><code>type LinkedListNode = {
+  value: string;
+  next?: LinkedListNode;
+};
+
+const firstNode: LinkedListNode = {
+  value: &#39;first&#39;,
+};
+
+const secondNode: LinkedListNode = {
+  value: &#39;second&#39;,
+};
+
+firstNode.next = secondNode;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>01-without-generics.ts</code>) in
+<a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/01-without-generics.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>You might have already noticed the problem here. If we wanted to also
+support a linked list of numbers, we’d have to create another type, and
+so on for every single type of value we wanted our linked list to
+support. This is tedious, and it doesn’t scale.</p>
+<p>This is where generics come in. They let us define a placeholder that
+we can use in our types. If we wanted to have a linked list node, where
+the value could be any type, but that would ensure all of the later
+nodes were also of the <em>same</em> type, we could write something
+along these lines:</p>
+<pre class="codeblock"><code>type LinkedListNode&lt;T&gt; = {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+};
+
+const firstNode: LinkedListNode&lt;string&gt; = {
+  value: &#39;first&#39;,
+};
+
+const secondNode: LinkedListNode&lt;string&gt; = {
+  value: &#39;second&#39;,
+};
+
+const thirdNode: LinkedListNode&lt;number&gt; = {
+  value: 42,
+};
+
+const fourthNode: LinkedListNode&lt;number&gt; = {
+  value: 17,
+};
+
+firstNode.next = secondNode;
+thirdNode.next = fourthNode;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>02-with-generics</code>) in <a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/02-with-generics.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>When we set <code>T</code> to either <code>string</code> or
+<code>number</code>, TypeScript uses that type everywhere that
+<code>T</code> is referenced.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">An Experiment</h4>
+<div class="body">
+<p>If you want to run a little experiment, you can try to connect the
+<code>thirdNode</code> to <code>firstNode</code> in <a
+href="https://www.typescriptlang.org/play?#code/C4TwDgpgBAMglgOwNYQCbwM7AHIHtUQA8AKgHxQC8UA3gFBRQBuAhgDYCuEAXFMQNz0oCCAA9gAfh7xkaTDnxEyAgL4DaAY1wIsUAGZwATljwEpiFOjjGFhLAcQBzclToMWHblADk+o8C8ANLSqtBpaOhgQmgioJp7SFnJxtsD2CE6UNILunDxekdGogcFq0TrAABaGsQpmMpbWBIQI7AC2AEYQBs5Zbmy5UAAsAExBIWHawHq47AaVcXWJVvJNLR1dPa5M-Z4AjADsY2q+jRAAdMJimQVaNQQCldVxF6JTVLozcxVxfEA">this
+playground</a>. You’ll see that TypeScript won’t allow it.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch2.html_a-word-on-naming-generics">A Word on
+Naming Generics</h2>
+<p>You might be wondering why I called my generic <code>T</code>. I
+mostly did this because it’s convention. <code>T</code> stands for
+“type”. If there’s more than one generic in a type, you might sometimes
+see <code>U</code> used. Why? because U is the letter after T.</p>
+<p>Generics don’t need to be single letters. We could have easily used a
+longer name:</p>
+<pre class="codeblock"><code>type LinkedListNode&lt;NodeType&gt; = {
+  value: NodeType;
+  next?: LinkedListNode&lt;NodeType&gt;;
+};</code></pre>
+<p>Typically, though, we just see single letters used. For example, <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/60ab8a805a1c5c4225027068e604ef4687cdf379/types/react/index.d.ts#L76">React’s
+types</a> will use <code>P</code> when referring to props.</p>
+<p>If we need to use multiple generics, we can separate them with a
+comma, just like we would do for arguments in a function:</p>
+<pre class="codeblock"><code>type Badge&lt;L extends string, C extends number&gt; {
+  label: L,
+  count: C
+}</code></pre>
+<h2
+id="unleashtypescript1-ch2.html_extending-types-in-generics">Extending
+Types in Generics</h2>
+<p>Right now, the <code>T</code> generic can be anything. In the example
+above, we used a string and a number, but we could have just as easily
+used a Boolean, an array, an object, or even a function.</p>
+<p>Let’s say we wanted to limit the value of our linked list node to
+only support strings, numbers, and Booleans.</p>
+<p>In TypeScript, constraints are expressed using the
+<code>extends</code> keyword. <code>T extends K</code> means it’s safe
+to presume that a value of type <code>T</code> is also of type
+<code>K</code>. An easy way of thinking about this is to just imagine
+we’re writing something with <code>extends</code> as a variable
+assignment.</p>
+<p>Let’s take <code>19 extends number</code> as an example. We could
+think about it like this:</p>
+<pre class="codeblock"><code>const nineteen: number = 19;</code></pre>
+<p>We can say that <code>T</code> has to extend another type:</p>
+<pre class="codeblock"><code>type LinkedListNode&lt;T extends string | number | boolean&gt; = {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+};</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>03-extending-types</code>) in <a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/03-extending-types.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>Now, our generic is limited to anything that meets the criteria of
+being a string, number, or Boolean. We can get a little bit silly with
+this. For example, we could say a node can only support a particular
+string or a specific number:</p>
+<pre class="codeblock"><code>const firstNode: LinkedListNode&lt;string&gt; = {
+  value: &#39;first&#39;,
+};
+
+const secondNode: LinkedListNode&lt;&#39;second&#39;&gt; = {
+  value: &#39;second&#39;,
+};
+
+const thirdNode: LinkedListNode&lt;number&gt; = {
+  value: 42,
+};
+
+const fourthNode: LinkedListNode&lt;17&gt; = {
+  value: 17,
+};
+
+firstNode.next = secondNode;
+thirdNode.next = fourthNode;
+fourthNode.next = {
+  value: 17,
+};</code></pre>
+<p>The type <code>number</code> refers to any number. <code>17</code> is
+a literal type that only allows for that specific value. In this case,
+anything connected to <code>secondNode</code> would <em>have</em> to
+have a value of <code>"second"</code>, and anything connected to
+<code>fourthNode</code> would <em>have</em> to have a value of
+<code>17</code>. Each technically does extend <code>string</code> and
+<code>number</code> respectively. That said, I’m only doing this as a
+demonstration. I’m not sure why we’d want to do this in practice.</p>
+<p>A more practical example would be if we wanted to only support a
+certain subset of strings or numbers. For example, we could limit the
+acceptable strings using a union, as seen <a
+href="https://www.typescriptlang.org/play?#code/C4TwDgpgBAMglgOwNYQCbwM7AHIHtUQA8AKlBAB7AQKoZQDkANrgIaqIDm9UAPgxgFcAxkIgYM3PvQgAnGbhn0AfFAC8UAN4AoKFABuLRgIgAuKMQDcOqAgrAA-GfjI0mHPiLElVgL4WgA">in
+this demo</a>:</p>
+<pre class="codeblock"><code>type LinkedListNode&lt;T extends &#39;loading&#39; | &#39;success&#39; | &#39;error&#39;&gt; = {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+};</code></pre>
+<p>Obviously, it’s getting a bit tedious to constantly have to define
+the type for each variable.</p>
+<h2 id="unleashtypescript1-ch2.html_using-generics-in-functions">Using
+Generics in Functions</h2>
+<p>It’s a bit more common to see generics used with functions. Let’s
+consider an <a
+href="https://en.wikipedia.org/wiki/Identity_function">identity
+function</a> that takes a value and returns it. I think we’re pretty
+clear at this point that we don’t want to do something like this:</p>
+<pre class="codeblock"><code>const identity = (x: string): string =&gt; {
+  return x;
+};</code></pre>
+<p>Just as with the linked list, I don’t have time to create one of
+these for every type I come across. This sounds like a perfect use case
+for a generic:</p>
+<pre class="codeblock"><code>export const identity = &lt;T&gt;(x: T): T =&gt; {
+  return x;
+};
+
+export const foo = identity&lt;string&gt;(&#39;foo&#39;);</code></pre>
+<h3 id="unleashtypescript1-ch2.html_a-word-on-using-generics-with-jsx">A
+Word on Using Generics with JSX</h3>
+<p>We might find that the syntax above won’t work if we’re using React
+and/or JSX. This is because the parser has a hard time differentiating
+between the syntax for a generic and a JSX component. We can see it
+failing in <a
+href="https://www.typescriptlang.org/play?ssl=5&amp;ssc=37&amp;pln=1&amp;pc=1#code/MYewdgzgLgBAlgEwKZinKBPGBeGAeAFQD4AKADwC4YCBKKgnImAbwCgYYAnJKAV07AwyAblYBfUa1CRYAMxAgc8ZKnQY80TnDABzUgHJ5IfTWFA">this
+playground</a>, and we can see it compiling just fine with JSX turned
+off <a
+href="https://www.typescriptlang.org/play?jsx=0#code/MYewdgzgLgBAlgEwKZinKBPGBeGAeAFQD4AKADwC4YCBKKgnImAbwCgYYAnJKAV07AwyAblYBfUa1CRYAMxAgc8ZKnQY80TnDABzUgHJ5IfTWFA">here</a>.</p>
+<p>To get around this, we have two options. We could simply add a comma
+after the generic:</p>
+<pre class="codeblock"><code>const identity = &lt;T&gt;(x: T): T =&gt; {
+  return x;
+};</code></pre>
+<p>Or, we could exclusively use function declarations:</p>
+<pre class="codeblock"><code>function identity&lt;T&gt;(x: T): T {
+  return x;
+}</code></pre>
+<h2 id="unleashtypescript1-ch2.html_inferring-generics">Inferring
+Generics</h2>
+<p>TypeScript is always trying to get out of our way. If it can figure
+out what a generic ought to be, it will relieve us of the responsibility
+of having to tell it. Let’s take a look at the following code:</p>
+<pre class="codeblock"><code>export const identity = &lt;T&gt;(x: T): T =&gt; {
+  return x;
+};
+
+export const foo = identity&lt;string&gt;(&#39;foo&#39;);
+export const two = identity(2);</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>04-inferring-generics</code>) in
+<a
+href="https://github.com/stevekinney/sitepoint-generics/src/04-inferring-generics.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>In this code, we’re able to completely omit telling TypeScript what
+type <code>T</code> should be. It sees that we’re handing that function
+call a number, so it’s able to figure out that <code>T</code> is a
+number in this case.</p>
+<p>We can also leverage this to simplify our linked list above:</p>
+<pre class="codeblock"><code>type LinkedListNode&lt;T&gt; = {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+};
+
+export const identity = &lt;T&gt;(x: T): T =&gt; {
+  return x;
+};
+
+export const foo = identity&lt;string&gt;(&#39;foo&#39;);
+export const two = identity(2);
+
+const createLinkedListNode = &lt;T&gt;(value: T): LinkedListNode&lt;T&gt; =&gt; {
+  return { value };
+};
+
+const firstNode = createLinkedListNode(&#39;first&#39;);
+const secondNode = createLinkedListNode(&#39;second&#39;);
+
+firstNode.next = secondNode;</code></pre>
+<p>You’ll notice that we no longer need to define what type of
+<code>LinkedListNode</code> we’re expecting. As soon as TypeScript can
+narrow down the type for one reference to <code>T</code>, it can fill in
+all of the rest. <code>firstNode</code> and <code>secondNode</code> have
+the following types:</p>
+<pre class="codeblock"><code>const firstNode: LinkedListNode&lt;string&gt;;
+const secondNode: LinkedListNode&lt;string&gt;;</code></pre>
+<p>This gives us all the flexibility of a generic without needing to
+type any additional boilerplate.</p>
+<h2 id="unleashtypescript1-ch2.html_taking-it-a-step-further">Taking It
+a Step Further</h2>
+<p>Now that we have <code>createLinkedListNode</code>, we can create an
+additional utility function called <code>addNextNode</code>. The
+function should do the following:</p>
+<ul>
+<li>It should take an existing <code>LinkedListNode</code> as the first
+argument.</li>
+<li>Based on the type of the <code>value</code> of that
+<code>LinkedListNode</code>, the second argument should be a value of
+the same type.</li>
+<li>It should create a new <code>LinkedListNode</code> based on the
+second argument.</li>
+<li>It should set the <code>next</code> property on the first
+<code>LinkedListNode</code> to the new <code>LinkedListNode</code>.</li>
+<li>It should return the newly created node.</li>
+</ul>
+<p>Basically, we want to make the following two tests pass:</p>
+<pre class="codeblock"><code>it(&#39;should create a linked list node&#39;, () =&gt; {
+  let node = createLinkedListNode(&#39;first&#39;);
+  expect(node).toEqual({ value: &#39;first&#39; });
+});
+
+it(&#39;should add a linked list node&#39;, () =&gt; {
+  let firstNode = createLinkedListNode(&#39;first&#39;);
+  let secondNode = addLinkedListNode(firstNode, &#39;second&#39;);
+
+  expect(firstNode).toEqual({ value: &#39;first&#39;, next: { value: &#39;second&#39; } });
+  expect(secondNode).toEqual({ value: &#39;second&#39; });
+});</code></pre>
+<p>The key piece here is that the value of <code>T</code> should be the
+same throughout. There are a few ways we could write the function, and
+we won’t go over the merits of each. Here’s one possible
+implementation:</p>
+<pre class="codeblock"><code>const createLinkedListNode = &lt;T&gt;(value: T): LinkedListNode&lt;T&gt; =&gt; {
+  return { value };
+};
+
+const addLinkedListNode = &lt;T&gt;(
+  node: LinkedListNode&lt;T&gt;,
+  value: T,
+): LinkedListNode&lt;T&gt; =&gt; {
+  node.next = createLinkedListNode(value);
+  return node.next;
+};</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>05-linking-nodes</code>) in <a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/05-linking-nodes.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch2.html_using-generics-with-classes">Using
+Generics with Classes</h2>
+<p>We can also use generics with classes. The interesting feature in
+this case is that the value of <code>T</code> can be used throughout the
+class. Once it’s been set, it will enforce our type throughout all of
+its methods, and each individual instance of the class can have its own
+value for <code>T</code>. Here’s an example:</p>
+<pre class="codeblock"><code>export class LinkedListNode&lt;T&gt; {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+
+  constructor(value: T) {
+    this.value = value;
+  }
+
+  add(value: T): LinkedListNode&lt;T&gt; {
+    this.next = new LinkedListNode(value);
+    return this.next;
+  }
+}</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>06-with-classes</code>) in <a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/06-with-classes.ts">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>Now we can create multiple instances where <code>T</code> is
+correctly enforced for that particular instance:</p>
+<pre class="codeblock"><code>const firstNode = new LinkedListNode(&#39;first&#39;);
+const secondNode = firstNode.add(&#39;second&#39;);
+const thirdNode = new LinkedListNode(42);
+const fourthNode = thirdNode.add(17);</code></pre>
+<p>You can verify this in the unit tests found <a
+href="https://github.com/stevekinney/sitepoint-generics/blob/main/src/06-with-classes.test.ts">here</a>.</p>
+<h2 id="unleashtypescript1-ch2.html_conclusion">Conclusion</h2>
+<p>I prefer to use types, but we can just as easily use generics with
+interfaces as well:</p>
+<pre class="codeblock"><code>interface LinkedListNode&lt;T&gt; {
+  value: T;
+  next?: LinkedListNode&lt;T&gt;;
+}</code></pre>
+<p>Generics are a powerful tool in TypeScript that allow us to create
+reusable code components that work with a variety of types, rather than
+just one. They provide a way to build flexible interfaces that enable us
+to define the type at a later time. Generics can be used with objects,
+functions, and classes. They can be extended or limited to specific
+types, and TypeScript can even infer the type for us in some cases.</p>
+<p>While they may seem daunting at first, generics are fairly simple
+once you understand them. With a little practice, you’ll be able to use
+generics to write more efficient and effective code in no time flat.</p>
+</section>
+<p><span id="unleashtypescript1-ch3.html"></span></p>
+<section id="unleashtypescript1-ch3.html_ch3" class="page-frontmatter">
+<h1>Chapter 3: Navigating the Perils and Pitfalls of Using React’s
+Context API with TypeScript</h1>
+<p>Using TypeScript in any large React application provides a level of
+safety that’s worth the additional effort over using JavaScript.
+TypeScript is able to comb through all of our components and confirm
+that we’re passing in all the props each component requires, and it
+makes sure sure they’re actually the types we assume they are and not
+something nefarious like <code>undefined</code>. But there are some
+cases where even that trade-off is thrown into question—particularly
+when it comes to using the Context API. Let’s look at how to navigate
+some of the challenges of using <code>createContext</code> and
+<code>useContext</code> with TypeScript.</p>
+<p>I’m going to assume you’re familiar with the Context API, but let’s
+do a quick summary anyway. <a
+href="https://react.dev/learn/passing-data-deeply-with-context">The
+Context API in React is a built-in state management tool</a> that allows
+for easy sharing of data throughout a component tree. It enables us to
+avoid <strong><a
+href="https://www.sitepoint.com/replace-redux-react-hooks-context-api/">prop
+drilling</a></strong>, the process of passing data from top to bottom
+through intermediate components.</p>
+<p>With the Context API, we create a <code>Context</code> object that
+has two properties: a <code>Provider</code> component—which is used to
+wrap the part of the component tree of our application that needs access
+to our data—and a <code>Consumer</code> component for reading that
+data.</p>
+<p>These days, we often don’t use the <code>Consumer</code> directly,
+instead using the <code>useContext</code> hook to access the context’s
+value, regardless of the level of each in the component hierarchy. The
+<code>useContext</code> hook is a much cleaner abstraction than trying
+to access the value from the <code>Consumer</code> in a render prop.
+This makes state and function sharing between components way more
+convenient and efficient, especially in larger applications. In fact, <a
+href="https://react.dev/reference/react/createContext#returns">the React
+documentation</a> goes as far as to <a
+href="https://react.dev/reference/react/createContext#returns">mention</a>
+that the <code>Consumer</code> is “an alternative and rarely used way to
+read the context value.”</p>
+<p><img src="Images/colors-screenshot.png"
+alt="A screenshot of the color picker application that we’ll work on" /></p>
+<p>We’re going to work on a simple color picker application (pictured
+above) that uses the Context API to share the ability to get and set the
+color throughout the component hierarchy.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">Following Along with This Tutorial</h4>
+<div class="body">
+<p>All of the code that we’ll be working with can be found in <a
+href="https://github.com/stevekinney/sitepoint-context">this GitHub
+repository</a>. I’ll start on the <code>main</code> branch and then make
+additional branches at each milestone.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch3.html_the-fundamental-problem">The
+Fundamental Problem</h2>
+<p>The core issue that’s going to be a thorn in our side is not
+necessarily a TypeScript problem. It’s a React problem:</p>
+<ul>
+<li>When we call <code>React.createContext</code>, TypeScript will want
+to know what kind of value we can expect.</li>
+<li>But we don’t have that value yet, because we have to wait for the
+<code>Provider</code> component to mount in order to use
+<code>useState</code>.</li>
+<li>TypeScript will take issue with the fact that we’re passing it
+something that isn’t what it expects.</li>
+<li>If we say that it can be a color <em>or</em> <code>undefined</code>,
+TypeScript will never be sure which one it’s working with.</li>
+</ul>
+<p>We’ll look at a few approaches—such as using <code>any</code> or
+<code>undefined</code>—which will work, but which will have some
+trade-offs—before we land on a better (though more involved)
+solution.</p>
+<h2 id="unleashtypescript1-ch3.html_a-rejected-solution-use-any">A
+Rejected Solution: Use <code>any</code></h2>
+<pre class="codeblock"><code>// We don&#39;t have access to `hexColor` outside of `ColorProvider`.
+// So we&#39;ll use `null` for now.
+export const ColorContext = createContext&lt;any&gt;(null);
+
+export const ColorProvider = ({ children }: PropsWithChildren) =&gt; {
+  const [hexColor, setHexColor] = useState(&#39;#e56e24&#39;);
+
+  return (
+    &lt;ColorContext.Provider value={{ hexColor, setHexColor }}&gt;
+      {children}
+    &lt;/ColorContext.Provider&gt;
+  );
+};</code></pre>
+<p>In the code above, we get glimpse of the easier possible solution. We
+can just completely opt out of TypeScript by using <code>any</code>. Not
+only will we lose the type safety that comes with that, but we’ll also
+lose all of the benefits of autocomplete in our code. This works, but we
+can do better.</p>
+<h2
+id="unleashtypescript1-ch3.html_a-feasible-solution-use-a-type-assertion">A
+Feasible Solution: Use a Type Assertion</h2>
+<p>We don’t have our initial hex color yet, but we know that we will
+eventually, right? In this case, we <em>could</em> lie to TypeScript and
+try to convince it that <code>null</code> is actually a hex color.</p>
+<p>First, we’ll need to figure out what the eventual type of the
+<code>value</code> prop is going to be. The easiest way to do this is to
+hover over <code>setHexColor</code> and look at the type.</p>
+<p><img src="Images/set-hex-color.png"
+alt="Hovering over a value will let us see the type" /></p>
+<p>We know that we’re passing <code>ColorContext.Provider</code> an
+object with <code>hexColor</code> and <code>setHexColor</code>. Let’s
+break that out into its own type:</p>
+<pre class="codeblock"><code>type ColorState = {
+  hexColor: string;
+  setHexColor: Dispatch&lt;SetStateAction&lt;string&gt;&gt;;
+};</code></pre>
+<p>Now we can let TypeScript know what it can eventually expect to
+receive, even if we don’t have the value just yet:</p>
+<pre class="codeblock"><code>export const ColorContext = createContext&lt;ColorState&gt;(null as any);</code></pre>
+<p>If we hover over <code>ColorContext</code>, we’ll see the
+<code>const ColorContext: React.Context&lt;ColorState&gt;</code>. If we
+visit any of the components that use this context, we’ll see that it has
+the correct type annotations, as pictured below.</p>
+<p><img src="Images/correct-type-assertion.png"
+alt="setHexColor now has the correct type assertion" /></p>
+<p>If we want to feel better about our deceit, we can at least tell it a
+lie that’s exactly what it should come to expect eventually:</p>
+<pre class="codeblock"><code>export const ColorContext = createContext&lt;ColorState&gt;(
+  null as unknown as ColorState,
+);</code></pre>
+<p>If we don’t have a guilty conscience, we might also consider doing
+this so that ESLint doesn’t get angry with us for explicitly using
+<code>any</code> in our code.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>context.tsx</code>) in <a
+href="https://github.com/stevekinney/sitepoint-context/blob/type-assertion/src/context.tsx">the
+GitHub repo for this tutorial, in the <code>type-assertion</code>
+branch</a>.</p>
+</div>
+</section>
+<h2
+id="unleashtypescript1-ch3.html_a-compromised-solution-tell-the-truth">A
+Compromised Solution: Tell the Truth</h2>
+<p>Another option is to tell the truth. The value of the context can
+either be <code>ColorState</code> or <code>undefined</code>:</p>
+<pre class="codeblock"><code>export const ColorContext = createContext&lt;ColorState | null&gt;(null);</code></pre>
+<p>This feels better, but it will cause a different set of problems:</p>
+<pre class="codeblock"><code>Errors  Files
+  1  src/components/color-change-swatch.tsx:13
+  2  src/components/color-picker/color-select.tsx:11
+  1  src/components/color-picker/color-swatch.tsx:6
+  1  src/components/color-properties/to-cmyk.tsx:8
+  1  src/components/color-properties/to-hsl.tsx:8
+  1  src/components/color-properties/to-hsv.tsx:8
+  1  src/components/color-properties/to-rgb.tsx:8
+  1  src/components/related-colors/index.tsx:11</code></pre>
+<p>The issue is now that TypeScript isn’t sure if we’re working with
+<code>ColorState</code> or <code>undefined</code>. And now we need to
+check every time we use it.</p>
+<p><img src="Images/or-undefined.png"
+alt="ColorState can now be undefined" /></p>
+<p>So it’s now on us to check to see if it’s defined or not every time
+we use it. Here’s one example from the <code>ColorChangeSwatch</code>
+component:</p>
+<pre class="codeblock"><code>const ColorChangeSwatch = ({ hexColor, className }: ColorChangeSwatchProps) =&gt; {
+  // 👀 Store the context in a variable.
+  const context = useContext(ColorContext);
+
+  return (
+    &lt;Button
+      className={clsx(
+        &#39;border-2 border-slate-900 transition-shadow duration-200 ease-in 
+        hover:shadow-xl&#39;,
+        className,
+      )}
+      style={{ backgroundColor: hexColor }}
+      onClick={() =&gt; {
+        // 👀 Conditionally use any property on it.
+        context?.setHexColor(hexColor);
+      }}
+    &gt;
+      {hexColor}
+    &lt;/Button&gt;
+  );
+};</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the code above (<code>color-change-swatch.tsx</code>) in
+<a
+href="https://github.com/stevekinney/sitepoint-context/blob/main/src/components/color-change-swatch.tsx">the
+GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<p>I’m not going to make you endure the chaos that this has caused in
+our application. But I will invite you to look at it <a
+href="https://github.com/stevekinney/sitepoint-context/commit/a0343931a92dd53c1672046f855dbc8e4d0da612">here</a>
+if you’re interested. It involves changing ten files, and this isn’t
+even that big an application. Needless to say, being honest with
+TypeScript probably isn’t worth it in this case.</p>
+<h2
+id="unleashtypescript1-ch3.html_a-reasonable-solution-create-an-abstraction">A
+Reasonable Solution: Create an Abstraction</h2>
+<p>Let’s say we don’t want to lie to TypeScript and we also don’t want
+to endure what I just went through creating that example for you. It
+<em>is</em> possible for us to have our cake and eat it too. It’s just
+going to take a little work.</p>
+<p>Instead of checking whether or not the context is defined every
+single time we use it, we <em>could</em> create our own utilities that
+will do this for us and then never worry about it again. This is going
+to involve a little bit of upfront work, but—unlike in the previous
+solution—once we have our abstractions in place, we’ll never have to
+think about them again.</p>
+<p>I’m going to create a new branch off of <code>main</code> called <a
+href="https://github.com/stevekinney/sitepoint-context/tree/create-context">create-context</a>.</p>
+<h3
+id="unleashtypescript1-ch3.html_creating-our-own-createcontext">Creating
+Our Own <code>createContext</code></h3>
+<p>Let’s start by making a new file called
+<code>src/create-context.tsx</code>. We’ll start with a simple function
+so that TypeScript doesn’t get mad at us for having an empty file:</p>
+<pre class="codeblock"><code>export const createContext = () =&gt; {};</code></pre>
+<p>Next, we’re going to use React’s <code>createContext</code> to create
+a <code>Context</code> object that we’ll build on top of:</p>
+<pre class="codeblock"><code>import React from &#39;react&#39;;
+
+export const createContext = () =&gt; {
+  const Context = React.createContext(null);
+};</code></pre>
+<p>I’m using <code>React.createContext</code> as opposed to
+<code>import { createContext } from 'react';</code> so that we don’t
+have any naming collisions. The name of our function isn’t important,
+but I like consistency.</p>
+<p>Now we’ll do something similar to what we did in the previous
+example: we’ll acknowledge that we might not know what the initial value
+is. We’ll also use a generic so that this function is reusable for other
+contexts:</p>
+<pre class="codeblock"><code>import React from &#39;react&#39;;
+
+export const createContext = &lt;T extends object&gt;() =&gt; {
+  const Context = React.createContext&lt;T | null&gt;(null);
+};</code></pre>
+<p>I know that we’re going to want to pass both <code>hexColor</code>
+and <code>setHexColor</code>, so I’m choosing to constrain
+<code>T</code> to some kind of object. If generics are bewildering to
+you, you can just choose to use the <code>ColorState</code> that we
+created earlier. That might look something like this:</p>
+<pre class="codeblock"><code>// 🚨 Note: We won&#39;t be using this code. It&#39;s just an alternative to code above.
+export const createContext = () =&gt; {
+  const Context = React.createContext&lt;ColorState | null&gt;(null);
+};</code></pre>
+<p>Next, we’re going to create our own take on the
+<code>useContext</code> hook. This will have access to the
+<code>Context</code> that we just created in <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">its
+closure scope</a>. The new <code>useContext</code> will check to make
+sure that context exists and that it’s not <code>null</code>. If it
+<em>is</em> <code>null</code>, an error is thrown. TypeScript is smart
+enough to understand that, if our <code>Context</code> can only be
+either <code>T</code> or <code>null</code> and it’s not
+<code>null</code>, it must be <code>T</code>. Going forward, we’ll
+<em>only</em> be using our custom <code>useContext</code> hook:</p>
+<pre class="codeblock"><code>import React from &#39;react&#39;;
+
+export const createContext = &lt;T extends object&gt;() =&gt; {
+  const Context = React.createContext&lt;T | null&gt;(null);
+
+  const useContext = () =&gt; {
+    const ctx = React.useContext(Context);
+
+    if (ctx === null) {
+      throw new Error(&#39;useContext must be inside a Provider with a value.&#39;);
+    }
+
+    return ctx;
+  };
+
+  return [useContext, Context.Provider] as const;
+};</code></pre>
+<p>To review:</p>
+<ul>
+<li>We know that the value of the context can either be <code>T</code>
+or <code>null</code>.</li>
+<li>So, pull the value out of <code>React.useContext</code> and take a
+look at it.</li>
+<li>Throw an error up if <code>ctx</code> is <code>null</code>. This
+means that we won’t return anything in the case that <code>ctx</code> is
+<code>null</code>.</li>
+<li>If <code>ctx</code> can only either be <code>null</code> or
+<code>T</code> and it’s not <code>null</code>, then it’s <code>T</code>.
+This means we don’t have to keep verifying that it’s <em>not</em>
+<code>null</code> throughout our application like we did before.</li>
+<li>Return <code>Context.Provider</code> and our customized version of
+<code>useContext</code> as a tuple, like we might have seen with
+<code>useState</code> and <code>useReducer</code>.</li>
+</ul>
+<p>This works because we’re not using the React hook at the top level,
+which isn’t allowed. Instead, we have a function that has access to the
+context at any point and can check to see if it’s valid.</p>
+<p>The <code>as const</code> at the end of the last line will tell
+TypeScript that we don’t expect this array to change ever, and that it
+can be sure the first element will always be our <code>useContext</code>
+function and the second element will always be
+<code>Context.Provider</code>.</p>
+<p>We end up with the following signature:</p>
+<pre class="codeblock"><code>const createContext: &lt;T extends object&gt;() =&gt; readonly [
+  () =&gt; T,
+  React.Provider&lt;T | null&gt;,
+];</code></pre>
+<h3 id="unleashtypescript1-ch3.html_using-our-new-hook">Using Our New
+Hook</h3>
+<p>We’ve created our new hook. Now we just need to use it. Let’s update
+<code>src/context.tsx</code> as follows:</p>
+<pre class="codeblock"><code>import { Dispatch, PropsWithChildren, SetStateAction, useState } from &#39;react&#39;;
+
+import { createContext } from &#39;./create-context&#39;;
+
+type ColorState = {
+  hexColor: string;
+  setHexColor: Dispatch&lt;SetStateAction&lt;string&gt;&gt;;
+};
+
+const [useContext, Provider] = createContext&lt;ColorState&gt;();
+
+export const useColor = useContext;
+
+export const ColorProvider = ({ children }: PropsWithChildren) =&gt; {
+  const [hexColor, setHexColor] = useState(&#39;#e56e24&#39;);
+
+  return &lt;Provider value={{ hexColor, setHexColor }}&gt;{children}&lt;/Provider&gt;;
+};</code></pre>
+<p>You’ll notice that our customized <code>createContext</code> doesn’t
+require an argument anymore. We just need to tell it what type we’re
+eventually expecting. This will return a hook and a provider. We’ll
+export that hook. I gave it a useful name because it’s bound to this
+specific context.</p>
+<p>Finally, we use this <code>Provider</code> returned from our
+<code>createContext</code> function to wrap the
+<code>Application</code>.</p>
+<p>We still need to update our code to use our new <code>useColor</code>
+hook instead of <code>useContext</code>. It will demonstrate this in
+<code>src/components/color-picker/color-select.tsx</code>, and you can
+check out the rest in the completed <a
+href="https://github.com/stevekinney/sitepoint-context/tree/create-context"><code>create-context</code>
+branch</a>:</p>
+<pre class="codeblock"><code>import { useColor } from &#39;../../context&#39;;
+import HexColor from &#39;../hex-color&#39;;
+
+type ColorSelectProps = {
+  label?: string;
+};
+
+const ColorSelect = ({ label = &#39;Color&#39; }: ColorSelectProps) =&gt; {
+  // 👀 Our new `useColor` hook in action!
+  const { hexColor, setHexColor } = useColor();
+
+  return (
+    &lt;div className=&quot;flex flex-col gap-2&quot;&gt;
+      &lt;label htmlFor=&quot;color-input&quot;&gt;{label}&lt;/label&gt;
+      &lt;input
+        id=&quot;color-input&quot;
+        className=&quot;h-80 w-full&quot;
+        type=&quot;color&quot;
+        value={hexColor}
+        onChange={(e) =&gt; setHexColor(e.target.value)}
+      /&gt;
+      &lt;HexColor hexColor={hexColor} /&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default ColorSelect;</code></pre>
+<h2 id="unleashtypescript1-ch3.html_conclusion">Conclusion</h2>
+<p>Using the Context API with TypeScript can be a bit tricky, but there
+are solutions available. While using <code>any</code> can provide a
+quick fix, it’s not ideal for maintaining type safety, and it can lead
+to issues down the line. Using a type assertion will definitely work in
+most cases. But creating an abstraction around
+<code>createContext</code> and using a custom <code>useContext</code>
+hook will provide us with a much more solid solution. In fact, it hides
+the fact that we’re using a context at all and leaves us with a
+convenient hook—in this case, <code>useColor</code>. With this approach,
+we can ensure that the context’s value is not <code>null</code> and
+avoid the need for constant null-checking throughout our
+application.</p>
+<p>In the next installment, we’ll continue to explore the use of
+TypeScript in our React applications by looking at extending built-in
+DOM types and creating polymorphic types for our component props.</p>
+</section>
+<p><span id="unleashtypescript1-ch4.html"></span></p>
+<section id="unleashtypescript1-ch4.html_ch4" class="page-frontmatter">
+<h1>Chapter 4: Extending DOM Elements and Creating Polymorphic
+Components</h1>
+<p>In most of the larger applications and projects I’ve worked on, I
+often find myself building a bunch of components that are really
+supersets or abstractions on top of the standard HTML elements. Some
+examples include custom button elements that might take a prop defining
+whether or not that button should be a primary or secondary button, or
+maybe one that indicates that it will invoke a dangerous action, such as
+deleting or removing a item from the database. I still want my button to
+have all the properties of a button in addition to the props I want to
+add to it.</p>
+<p>Another common case is that I’ll end up creating a component that
+allows me to define a label and an input field at once. I don’t want to
+re-add all of the properties that an <code>&lt;input /&gt;</code>
+element takes. I want my custom component to behave just like an input
+field, but <em>also</em> take a string for the label and automatically
+wire up the <code>htmlFor</code> prop on the
+<code>&lt;label /&gt;</code> to correspond with the <code>id</code> on
+the <code>&lt;input /&gt;</code>.</p>
+<p>In JavaScript, I can just use <code>{...props}</code> to pass through
+any props to an underlying HTML element. This can be a bit trickier in
+TypeScript, where I need to explicitly define what props a component
+will accept. While it’s nice to have fine-grained control over the exact
+types that my component accepts, it can be tedious to have to add in
+type information for every single prop manually.</p>
+<p>In certain scenarios, I need a single adaptable component, like a
+<code>&lt;div&gt;</code>, that changes styles according to the current
+theme. For example, maybe I want to define what styles should be used
+depending on whether or not the user has manually enabled light or dark
+mode for the UI. I don’t want to redefine this component for every
+single block element (such as <code>&lt;section&gt;</code>,
+<code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and so on). It
+should be capable of representing different semantic HTML elements, with
+TypeScript automatically adjusting to these changes.</p>
+<p>There are a few strategies that we can employ:</p>
+<ul>
+<li>For components where we’re creating an abstraction over just one
+kind of element, we can extend the properties of that element.</li>
+<li>For components where we want to define different elements, we can
+create polymorphic components. A <strong>polymorphic component</strong>
+is a component designed to render as different HTML elements or
+components while maintaining the same properties and behaviors. It
+allows us to specify a prop to determine its rendered element type.
+Polymorphic components offer flexibility and reusability without us
+having to reimplement the component. For a concrete example, you can
+look at <a
+href="https://www.radix-ui.com/primitives/docs/utilities/polymorphic">Radix’s
+implementation of a polymorphic component</a>.</li>
+</ul>
+<p>In this tutorial, we’ll look at both of these strategies.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">Following Along with This Tutorial</h4>
+<div class="body">
+<p>All of the code that we’ll be working with can be found in <a
+href="https://github.com/stevekinney/polymorphic/">this GitHub
+repository</a>, starting with the <a
+href="https://github.com/stevekinney/polymorphic/tree/main">main
+branch</a>. I’ll push up other branches along the way.</p>
+</div>
+</section>
+<h2
+id="unleashtypescript1-ch4.html_mirroring-and-extending-the-properties-of-an-html-element">Mirroring
+and Extending the Properties of an HTML Element</h2>
+<p>Let’s start with that first example mentioned in the introduction. We
+want to create a button that comes baked in with the appropriate styling
+for use in our application. In JavaScript, we might be able to do
+something like this:</p>
+<pre class="codeblock"><code>const Button = (props) =&gt; {
+  return &lt;button className=&quot;button&quot; {...props} /&gt;;
+};</code></pre>
+<p>In TypeScript, we could just add what we know we need. For example,
+we know that we need the <code>children</code> if we want our custom
+button to behave the same way an HTML button does:</p>
+<pre class="codeblock"><code>const Button = ({ children }: React.PropsWithChildren) =&gt; {
+  return &lt;button className=&quot;button&quot;&gt;{children}&lt;/button&gt;;
+};</code></pre>
+<p>You can imagine that adding properties one at a time could get a bit
+tedious. Instead, we can tell TypeScript that we want to match the same
+props that it would use for a <code>&lt;button&gt;</code> element in
+React:</p>
+<pre class="codeblock"><code>const Button = (props: React.ComponentProps&lt;&#39;button&#39;&gt;) =&gt; {
+  return &lt;button className=&quot;button&quot; {...props} /&gt;;
+};</code></pre>
+<p>But we have a new problem. Or, rather, we <em>had</em> a problem that
+<em>also</em> existed in the JavaScript example and which we ignored. If
+someone using our new <code>Button</code> component passes in a
+<code>className</code> prop, it will override our
+<code>className</code>. We could (and we will) add some code to deal
+with this in a moment, but I don’t want to pass up the opportunity to
+show you how to use a utility type in TypeScript to say “I want to use
+<em>all</em> of the props from an HTML button <em>except</em> for one
+(or more)”:</p>
+<pre class="codeblock"><code>type ButtonProps = Omit&lt;React.ComponentProps&lt;&#39;button&#39;&gt;, &#39;className&#39;&gt;;
+
+const Button = (props: ButtonProps) =&gt; {
+  return &lt;button className=&quot;button&quot; {...props} /&gt;;
+};</code></pre>
+<p>Now, TypeScript will stop us or anyone else from passing a
+<code>className</code> property into our <code>Button</code> component.
+If we just wanted to extend the class list with whatever is passed in,
+we could do that in a few different ways. We could just append it to the
+list:</p>
+<pre class="codeblock"><code>type ButtonProps = React.ComponentProps&lt;&#39;button&#39;&gt;;
+
+const Button = (props: ButtonProps) =&gt; {
+  const className = &#39;button &#39; + props.className;
+
+  return &lt;button className={className.trim()} {...props} /&gt;;
+};</code></pre>
+<p>I like to use the <a href="https://npm.im/clsx">clsx</a> library when
+working with classes, as it takes care of most of these kinds of things
+on our behalf:</p>
+<pre class="codeblock"><code>import React from &#39;react&#39;;
+import clsx from &#39;clsx&#39;;
+
+type ButtonProps = React.ComponentProps&lt;&#39;button&#39;&gt;;
+
+const Button = ({ className, ...props }: ButtonProps) =&gt; {
+  return &lt;button className={clsx(&#39;button&#39;, className)} {...props} /&gt;;
+};
+
+export default Button;</code></pre>
+<p>We learned how to limit the props that a component will accept. To
+extend the props, we can use an <a
+href="https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types">intersection</a>:</p>
+<pre class="codeblock"><code>type ButtonProps = React.ComponentProps&lt;&#39;button&#39;&gt; &amp; {
+  variant?: &#39;primary&#39; | &#39;secondary&#39;;
+};</code></pre>
+<p>We’re now saying that <code>Button</code> accepts all of the props
+that a <code>&lt;button&gt;</code> element accepts plus one more:
+<code>variant</code>. This prop will show up with all the other props we
+inherited from <code>HTMLButtonElement</code>.</p>
+<p><img src="Images/variant.png"
+alt="Variant shows up as a prop on our Button component" /></p>
+<p>We can add support to our <code>Button</code> to add this class as
+well:</p>
+<pre class="codeblock"><code>const Button = ({ variant, className, ...props }: ButtonProps) =&gt; {
+  return (
+    &lt;button
+      className={clsx(
+        &#39;button&#39;,
+        variant === &#39;primary&#39; &amp;&amp; &#39;button-primary&#39;,
+        variant === &#39;secondary&#39; &amp;&amp; &#39;button-secondary&#39;,
+        className,
+      )}
+      {...props}
+    /&gt;
+  );
+};</code></pre>
+<p>We can now update <code>src/application.tsx</code> to use our new
+button component:</p>
+<pre class="codeblock"><code>diff --git a/src/application.tsx b/src/application.tsx
+index 978a61d..fc8a416 100644
+--- a/src/application.tsx
++++ b/src/application.tsx
+@@ -1,3 +1,4 @@
++import Button from &#39;./components/button&#39;;
+ import useCount from &#39;./use-count&#39;;
+
+ const Counter = () =&gt; {
+@@ -8,15 +9,11 @@ const Counter = () =&gt; {
+       &lt;h1&gt;Counter&lt;/h1&gt;
+       &lt;p className=&quot;text-7xl&quot;&gt;{count}&lt;/p&gt;
+       &lt;div className=&quot;flex place-content-between w-full&quot;&gt;
+-        &lt;button className=&quot;button&quot; onClick={decrement}&gt;
++        &lt;Button onClick={decrement}&gt;
+           Decrement
+-        &lt;/button&gt;
+-        &lt;button className=&quot;button&quot; onClick={reset}&gt;
+-          Reset
+-        &lt;/button&gt;
+-        &lt;button className=&quot;button&quot; onClick={increment}&gt;
+-          Increment
+-        &lt;/button&gt;
++        &lt;/Button&gt;
++        &lt;Button onClick={reset}&gt;Reset&lt;/Button&gt;
++        &lt;Button onClick={increment}&gt;Increment&lt;/Button&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         &lt;form
+@@ -32,9 +29,9 @@ const Counter = () =&gt; {
+         &gt;
+           &lt;label htmlFor=&quot;set-count&quot;&gt;Set Count&lt;/label&gt;
+           &lt;input type=&quot;number&quot; id=&quot;set-count&quot; name=&quot;set-count&quot; /&gt;
+-          &lt;button className=&quot;button-primary&quot; type=&quot;submit&quot;&gt;
++          &lt;Button variant=&quot;primary&quot; type=&quot;submit&quot;&gt;
+             Set
+-          &lt;/button&gt;
++          &lt;/Button&gt;
+         &lt;/form&gt;
+       &lt;/div&gt;
+     &lt;/main&gt;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can find the changes above in <a
+href="https://github.com/stevekinney/polymorphic/tree/button">the
+<code>button</code> branch of the GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<h3
+id="unleashtypescript1-ch4.html_creating-composite-components">Creating
+Composite Components</h3>
+<p>Another common component that I typically end up making for myself is
+a component that correctly wires up a label and input element with the
+correct <code>for</code> and <code>id</code> attributes respectively. I
+tend to grow weary typing this out over and over:</p>
+<pre class="codeblock"><code>&lt;label htmlFor=&quot;set-count&quot;&gt;Set Count&lt;/label&gt;
+&lt;input type=&quot;number&quot; id=&quot;set-count&quot; name=&quot;set-count&quot; /&gt;</code></pre>
+<p>Without extending the props of an HTML element, I might end up slowly
+adding props as needed:</p>
+<pre class="codeblock"><code>type LabeledInputProps = {
+  id?: string;
+  label: string;
+  value: string | number;
+  type?: string;
+  className?: string;
+  onChange?: ChangeEventHandler&lt;HTMLInputElement&gt;;
+};</code></pre>
+<p>As we saw with the button, we can refactor it in a similar
+fashion:</p>
+<pre class="codeblock"><code>type LabeledInputProps = React.ComponentProps&lt;&#39;input&#39;&gt; &amp; {
+  label: string;
+};</code></pre>
+<p>Other than <code>label</code>, which we’re passing to the (uhh) label
+that we’ll often want grouped with our inputs, we’re manually passing
+props through one by one. Do we want to add <code>autofocus</code>?
+Better add another prop. It would be better to do something like
+this:</p>
+<pre class="codeblock"><code>import { ComponentProps } from &#39;react&#39;;
+
+type LabeledInputProps = ComponentProps&lt;&#39;input&#39;&gt; &amp; {
+  label: string;
+};
+
+const LabeledInput = ({ id, label, ...props }: LabeledInputProps) =&gt; {
+  return (
+    &lt;&gt;
+      &lt;label htmlFor={id}&gt;{label}&lt;/label&gt;
+      &lt;input {...props} id={id} readOnly={!props.onChange} /&gt;
+    &lt;/&gt;
+  );
+};
+
+export default LabeledInput;</code></pre>
+<p>We can swap in our new component in
+<code>src/application.tsx</code>:</p>
+<pre class="codeblock"><code>&lt;LabeledInput
+  id=&quot;set-count&quot;
+  label=&quot;Set Count&quot;
+  type=&quot;number&quot;
+  onChange={(e) =&gt; setValue(e.target.valueAsNumber)}
+  value={value}
+/&gt;</code></pre>
+<p>We can pull out the things we need to work with and then just pass
+everything else on through to the <code>&lt;input /&gt;</code>
+component, and then just pretend for the rest of our days that it’s a
+standard <code>HTMLInputElement</code>.</p>
+<p>TypeScript doesn’t care, since <code>HTMLElement</code> is pretty
+flexible, as the DOM pre-dates TypeScript. It only complains if we toss
+something completely egregious in there.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can see all of the changes above in <a
+href="https://github.com/stevekinney/polymorphic/tree/input">the
+<code>input</code> branch of the GitHub repo for this tutorial</a>.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch4.html_polymorphic-components">Polymorphic
+Components</h2>
+<p>Earlier, I told you that, over the course of building out a large
+application, I tend to end up making a few wrappers around components.
+<code>Box</code> is a primitive wrapper around the basic block elements
+in HTML (such as <code>&lt;div&gt;</code>, <code>&lt;aside&gt;</code>,
+<code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+<code>&lt;main&gt;</code>, <code>&lt;head&gt;</code>, and so on). But
+just as we don’t want to lose all the semantic meaning we get from these
+tags, we also don’t need multiple variations of <code>Box</code> that
+are all basically the same. What we’d like to is use <code>Box</code>
+but also be able to specify what it ought to be under the hood.</p>
+<p>Here’s an overly simplified take on a <code>Box</code> element
+inspired by <a
+href="https://medium.com/styled-components/announcing-styled-components-v4-better-faster-stronger-3fe1aba1a112">Styled
+Components</a>.</p>
+<p>And here’s an example of a <code>Box</code> component from <a
+href="https://paste.twilio.design/primitives/box">Paste</a>, <a
+href="https://twilio.com">Twilio’s</a> design system:</p>
+<pre class="codeblock"><code>&lt;Box as=&quot;article&quot; backgroundColor=&quot;colorBackgroundBody&quot; padding=&quot;space60&quot;&gt;
+  Parent box on the hill side
+  &lt;Box
+    backgroundColor=&quot;colorBackgroundSuccessWeakest&quot;
+    display=&quot;inline-block&quot;
+    padding=&quot;space40&quot;
+  &gt;
+    nested box 1 made out of ticky tacky
+  &lt;/Box&gt;
+&lt;/Box&gt;</code></pre>
+<p>Here’s a simple implementation that doesn’t have any pass through any
+of the props, like we did with <code>Button</code> and
+<code>LabelledInputProps</code> above:</p>
+<pre class="codeblock"><code>import { PropsWithChildren } from &#39;react&#39;;
+
+type BoxProps = PropsWithChildren&lt;{
+  as: &#39;div&#39; | &#39;section&#39; | &#39;article&#39; | &#39;p&#39;;
+}&gt;;
+
+const Box = ({ as, children }: BoxProps) =&gt; {
+  const TagName = as || &#39;div&#39;;
+  return &lt;TagName&gt;{children}&lt;/TagName&gt;;
+};
+
+export default Box;</code></pre>
+<p>We refine <code>as</code> to <code>TagName</code>, which is a valid
+component name in JSX. That works as far a React is concerned, but we
+also want to get TypeScript to adapt accordingly to the element we’re
+defining in the <code>as</code> prop:</p>
+<pre class="codeblock"><code>import { ComponentProps } from &#39;react&#39;;
+
+type BoxProps = ComponentProps&lt;&#39;div&#39;&gt; &amp; {
+  as: &#39;div&#39; | &#39;section&#39; | &#39;article&#39; | &#39;p&#39;;
+};
+
+const Box = ({ as, children }: BoxProps) =&gt; {
+  const TagName = as || &#39;div&#39;;
+  return &lt;TagName&gt;{children}&lt;/TagName&gt;;
+};
+
+export default Box;</code></pre>
+<p>I honestly don’t even know if elements like
+<code>&lt;section&gt;</code> have any properties that a
+<code>&lt;div&gt;</code> doesn’t. While I’m sure I could look it up,
+none of us feel good about this implementation.</p>
+<p>But what’s that <code>'div'</code> being passed in there and how does
+it work? If we look at the type definition for
+<code>ComponentPropsWithRef</code>, we see the following:</p>
+<pre class="codeblock"><code>type ComponentPropsWithRef&lt;T extends ElementType&gt; = T extends new (
+  props: infer P,
+) =&gt; Component&lt;any, any&gt;
+  ? PropsWithoutRef&lt;P&gt; &amp; RefAttributes&lt;InstanceType&lt;T&gt;&gt;
+  : PropsWithRef&lt;ComponentProps&lt;T&gt;&gt;;</code></pre>
+<p>We can ignore all of those ternaries. We’re interested in
+<code>ElementType</code> right now:</p>
+<pre class="codeblock"><code>type BoxProps = ComponentPropsWithRef&lt;&#39;div&#39;&gt; &amp; {
+  as: ElementType;
+};</code></pre>
+<p><img src="Images/element-type.png"
+alt="A autocompleted list of all of the element types" /></p>
+<p>Okay, that’s interesting, but what if we wanted the type argument we
+give to <code>ComponentProps</code> to be the same as …
+<code>as</code>?</p>
+<p>We <em>could</em> try something like this:</p>
+<pre class="codeblock"><code>import { ComponentProps, ElementType } from &#39;react&#39;;
+
+type BoxProps&lt;E extends ElementType&gt; = Omit&lt;ComponentProps&lt;E&gt;, &#39;as&#39;&gt; &amp; {
+  as?: E;
+};
+
+const Box = &lt;E extends ElementType = &#39;div&#39;&gt;({ as, ...props }: BoxProps&lt;E&gt;) =&gt; {
+  const TagName = as || &#39;div&#39;;
+  return &lt;TagName {...props} /&gt;;
+};
+
+export default Box;</code></pre>
+<p>Now, a <code>Box</code> component will adapt to whatever element type
+we pass in with the <code>as</code> prop.</p>
+<p><img src="Images/as-button.png"
+alt="A Box with the props of a button" /></p>
+<p>We can now use our <code>Box</code> component wherever we might
+otherwise use a <code>&lt;div&gt;</code>:</p>
+<pre class="codeblock"><code>&lt;Box as=&quot;section&quot; className=&quot;flex place-content-between w-full&quot;&gt;
+  &lt;Button className=&quot;button&quot; onClick={decrement}&gt;
+    Decrement
+  &lt;/Button&gt;
+  &lt;Button onClick={reset}&gt;Reset&lt;/Button&gt;
+  &lt;Button onClick={increment}&gt;Increment&lt;/Button&gt;
+&lt;/Box&gt;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Repo Code</h4>
+<div class="body">
+<p>You can the final result on the <a
+href="https://github.com/stevekinney/polymorphic/tree/polymorphic">the
+<code>polymorphic</code> branch of the GitHub repo for this
+tutorial</a>.</p>
+</div>
+</section>
+<h2 id="unleashtypescript1-ch4.html_conclusion">Conclusion</h2>
+<p>We’ve just explored different strategies for creating polymorphic
+components with React and TypeScript. By extending the properties of an
+HTML element, it’s possible to create abstractions over that element
+with additional behavior. A polymorphic component is a single adaptable
+component that can represent different semantic HTML elements, with
+TypeScript automatically adjusting to these changes. The cool thing
+about this is that we can now universally add themes and other
+functionality to our application with this new primitive.</p>
+<p>These approaches work in most versions of TypeScript. In the next
+chapter, we’re going to take a look at some of the specific improvements
+the latest release of TypeScript brings to the table, and how we can use
+them to further improve the reliability and maintainability of our
+code.</p>
+</section>
+<p><span id="unleashtypescript1-ch5.html"></span></p>
+<section id="unleashtypescript1-ch5.html_ch4" class="page-frontmatter">
+<h1>Chapter 5: A Guided Tour of the Three Biggest Features in TypeScript
+5.0</h1>
+<p>TypeScript, JavaScript’s more dependable cousin, keeps getting better
+and better. TypeScript 5.0 and its subsequent minor versions, 5.1 and
+5.2, are brimming with powerful new features that promise to make our
+code cleaner, more powerful, and a lot easier to work with. As you can
+tell from <a
+href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html">the
+release notes</a>, TypeScript 5.0 shipped with a ton of changes—both
+large and small.</p>
+<p>I’m going to focus on three of the features that have had the biggest
+impact in my day-to-day development:</p>
+<ul>
+<li><strong>Decorators</strong>. TypeScript 5.0 supports decorators that
+align with the ECMAScript proposal, allowing the modification of class
+behavior in a reusable way. These have some important distinctions
+between the decorators previously supported by the
+<code>--experimentalDecorators</code> flag.</li>
+<li><strong>const type parameters</strong>. The new <code>const</code>
+type parameters enhance function call inferences, and ensure declared
+constants remain unchanged.</li>
+<li><strong>Upgrades and changes to enums</strong>. TypeScript 5.0
+enhances enums, improving type safety and making them more flexible and
+user-friendly.</li>
+</ul>
+<h2
+id="unleashtypescript1-ch5.html_decorators-the-next-generation">Decorators:
+the Next Generation</h2>
+<p>Decorators have <em>almost</em> been part of ECMAScript for as long
+as I can remember. These nifty tools let us modify classes and members
+in a reusable way. They’ve been on the scene for a while in
+TypeScript—albeit under an experimental flag. Although the Stage 2
+iteration of decorators was always experimental, decorators have been
+widely used in libraries like <a
+href="https://mobx.js.org/enabling-decorators.html">MobX</a>, <a
+href="https://angular.io/">Angular</a>, <a
+href="https://docs.nestjs.com/custom-decorators">Nest</a>, and <a
+href="https://typeorm.io/">TypeORM</a>. TypeScript 5.0’s decorators are
+fully in sync with the <a
+href="https://github.com/tc39/proposal-decorators">ECMAScript
+proposal</a>, which is pretty much ready for prime time, sitting at
+Stage 3.</p>
+<p><strong>Decorators</strong> let us craft a function that tweaks the
+behavior of a class and its methods. Imagine needing to sneak in some
+debug statements into our methods. Before TypeScript 5.0, we’d have been
+stuck copying and pasting the debug statements manually in each method.
+With decorators, we just do the job once and the change will be
+supported through each method the decorator is attached to.</p>
+<p>Let’s say we want to create a decorator for logging that a given
+method is deprecated:</p>
+<pre class="codeblock"><code>class Card {
+  constructor(public suit: Suit, public rank: Rank) {
+    this.suit = suit;
+    this.rank = rank;
+  }
+
+  get name(): CardName {
+    return `${this.rank} of ${this.suit}`;
+  }
+
+  @deprecated // 👀 This is a decorator!
+  getValue(): number {
+    if (this.rank === &#39;Ace&#39;) return 14;
+    if (this.rank === &#39;King&#39;) return 13;
+    if (this.rank === &#39;Queen&#39;) return 12;
+    if (this.rank === &#39;Jack&#39;) return 11;
+    return this.rank;
+  }
+
+  // The new way to do it!
+  get value(): number {
+    if (this.rank === &#39;Ace&#39;) return 14;
+    if (this.rank === &#39;King&#39;) return 13;
+    if (this.rank === &#39;Queen&#39;) return 12;
+    if (this.rank === &#39;Jack&#39;) return 11;
+    return this.rank;
+  }
+}
+
+const card = new Card(&#39;Spades&#39;, &#39;Queen&#39;);
+card.getValue();</code></pre>
+<p>We want a warning message logged to the console whenever
+<code>card.getValue()</code> is called. We could implement the above
+decorator as follows:</p>
+<pre class="codeblock"><code>const deprecated = &lt;This, Arguments extends any[], ReturnValue&gt;(
+  target: (this: This, ...args: Arguments) =&gt; ReturnValue,
+  context: ClassMethodDecoratorContext&lt;
+    This,
+    (this: This, ...args: Arguments) =&gt; ReturnValue
+  &gt;,
+) =&gt; {
+  const methodName = String(context.name);
+
+  function replacementMethod(this: This, ...args: Arguments): ReturnValue {
+    console.warn(`Warning: &#39;${methodName}&#39; is deprecated.`);
+    return target.call(this, ...args);
+  }
+
+  return replacementMethod;
+};</code></pre>
+<p>This might look a little confusing at first, but let’s break it
+down:</p>
+<ul>
+<li>Our decorator function takes two arguments: <code>target</code> and
+<code>context</code>.</li>
+<li><code>target</code> is the method itself that we’re decorating.</li>
+<li><code>context</code> is metadata about the method.</li>
+<li>We return some method that has the same signature.</li>
+<li>In this case, we’re calling <code>console.warn</code> to log a
+deprecation notice and then we’re calling the method.</li>
+</ul>
+<p>The <code>ClassMethodDecorator</code> type has the following
+properties on it:</p>
+<ul>
+<li><code>kind</code>: the type of the decorated property. In the
+example above, this will be <code>method</code>, since we’re decorating
+a method on an instance of a <code>Card</code>.</li>
+<li><code>name</code>: the name of property. In the example above, this
+is <code>getValue</code>.</li>
+<li><code>static</code>: a value indicating whether the class element is
+a static (<code>true</code>) or instance (<code>false</code>)
+element.</li>
+<li><code>private</code>: a value indicating whether the class element
+has a private name.</li>
+<li><code>access</code>: an object that can be used to access the
+current value of the class element at runtime.</li>
+<li><code>has</code>: determines whether an object has a property with
+the same name as the decorated element.</li>
+<li><code>get</code>: invokes the setter on the provided object.</li>
+</ul>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Kick the Tires</h4>
+<div class="body">
+<p>You can kick the tires of the code samples above in <a
+href="https://www.typescriptlang.org/play?ts=5.1.3#code/C4TwDgpgBAygrgS2FAvFA5DMBDAJhAZ3SgB8MAJCbAJ2CNIwBEFsBbAewDtd6z0BhADZwARkQDcAKEmhIUAErZOAa1SSoDdAEEAxhHTqGAJkNkAzKagAWSwFZLANksB2SwA5LATksBGAAyW6ABS2DrKBhp8AIpwEBCcEZoA0gicAOboUjLg0Pw0uABybNBoAAYAJADeiioAvlDsAGZQVfBItaVZOlwEyPhg1BA62MAQuKhQADwAKgAWCAQANFBa1GlwrPF0UBAAHqPcBFBKIADaALrL8hDAcNScAGrYwhAAfAAUhsA0aTcAXFB3sB5gQAXMFssAHTQn6glZrDZbAgASlQrwUNzuj2esUWhm6nFG+wBQmwBAIAFkbrN2LhGEN2NQRoz+FwicBJoYNOCllzAcCFmCQVCYWs4at1ptCSi0Rjbvcni9DK88aiUOjKvieshNsDaUVNhMYMBqKk0u8CezIZxisishpGnBODpgAguFBBmBBKEIFLgFS9bggSChRCoNDIbCARLEdLkQDrvLsS8oJqNBoCQR2IIIJCAO40TjvUoAdULZoB6CqupphWKtWICyg-UGw1GuEhpTtfMGSag3zWN0hw0EgmDYYjsO7Glq0g0vaxHogXp9foDtaktSyezAjOQOm95KgeWo4zTUEzJrgLsZ7zAokECB0UAIiGAALawGW95Ej+fTJUBMlGUVFzw0AUCEhV8kAmaDgCkdN+xBSEANUNBUIQqBZ0MX5kBtTZ3njY98gNaAwKXPsKkqCCUOA+omhaajkLgjpMOwjQAAEWyGEYxhwm5FViQiAU4DYRAgahUz5BBmnHSDUNQFA0G0PR0FRBd7igHwrEwjQZP5ZCFKU5SUnSNSKMXHwzF0qB9Lk2iVEU5SYjiBJ1MxTSfCMGy7JooylIwEIwnMjTOC0nwbNCpCFgc5Q2LnKAAHpEqgOZoE4CA8ygAsQH7dhm3ypAAEJ+OQAA3HEIGEqBRNYcTJPI3zDOApyMF0fR3L7bSfNkvyWuMjBTIyTrLOs6TeuaxyBvQFz4hCjywq8nqDJi-zlKC8IRs8iKewW6L5OA+LZyAA">this
+playground</a>.</p>
+</div>
+</section>
+<p>Decorators provide convenient syntactic sugar for adding log
+messages—like we did in the example above—as well as a number of other
+common use cases. For example, we could create a decorator that
+automatically binds the method to the current instance or that modifies
+the <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/Proxy/getOwnPropertyDescriptor">property
+descriptor</a> of the method or class.</p>
+<h2
+id="unleashtypescript1-ch5.html_unleashing-const-type-parameters">Unleashing
+const Type Parameters</h2>
+<p><code>const</code> type parameters allow us to declare values with
+<code>const</code>. TypeScript will now be able to infer the type, not
+just the literal values.</p>
+<p>Put more simply, the <code>const</code> type parameters allow us to
+spell out our intentions clearly in our code. If a variable is supposed
+to be a constant that never changes, <code>const</code> type parameters
+give us a safety net, making sure it stays constant, come what may.</p>
+<p>Previous versions of TypeScript have supported using
+<code>as const</code> to declare an object or array as
+<code>readonly</code>. Once TypeScript knows that an object or array
+isn’t going to change at runtime, it can be a lot more confident in the
+assumptions it makes about the type.</p>
+<p>Consider the following two arrays:</p>
+<pre class="codeblock"><code>const avengers = [
+  &#39;Black Widow&#39;,
+  &#39;Captain America&#39;,
+  &#39;Hawkeye&#39;,
+  &#39;Hulk&#39;,
+  &#39;Iron Man&#39;,
+  &#39;Thor&#39;,
+];
+
+const ninjaTurtles = [
+  &#39;Donatello&#39;,
+  &#39;Leonardo&#39;,
+  &#39;Michelangelo&#39;,
+  &#39;Raphael&#39;,
+] as const;</code></pre>
+<p>If we hover over each in <a
+href="https://www.typescriptlang.org/play?ts=4.9.5#code/MYewdgzgLgBAhgNwKZgOZIE4RgXhgbQHIBJDcGAWTjEIBoZCAhAGzmAGsYB1ASwBMQAdzoMAKgAsQGEYQDCcAA5Q4PMDACCAW0w9gcGQAk4g9kgCeSQgF0A3AChQkWGFUArOKICuGKMyTY8IgARcDgoJGZmEBkAGSRQjAEZACVFcTgImQpdcQjqdGireGxHaBsgA">this
+playground</a>, we’ll see that TypeScript has inferred two very
+different types:</p>
+<pre class="codeblock"><code>const avengers: string[];
+const ninjaTurtles: readonly [
+  &#39;Donatello&#39;,
+  &#39;Leonardo&#39;,
+  &#39;Michelangelo&#39;,
+  &#39;Raphael&#39;,
+];</code></pre>
+<p>Things get a little trickier when working with <code>readonly</code>
+data structures with functions. Consider the following:</p>
+<pre class="codeblock"><code>type WithNames = { names: readonly string[] };
+
+const turtles = getNames({
+  names: [&#39;Donatello&#39;, &#39;Leonardo&#39;, &#39;Michelangelo&#39;, &#39;Raphael&#39;],
+});</code></pre>
+<p>In this example, <code>turtles</code> would be <code>string[]</code>,
+which is not what we might expect if we look closely at
+<code>WithNames</code>, which asserts that the <code>names</code>
+property is <code>readonly</code>. Previously, we were able to get
+something closer to what we might expect by adding <code>as const</code>
+to the array as we called the function:</p>
+<pre class="codeblock"><code>const turtles = getNames({
+  names: [&#39;Donatello&#39;, &#39;Leonardo&#39;, &#39;Michelangelo&#39;, &#39;Raphael&#39;] as const,
+});</code></pre>
+<p><code>turtles</code> would now correctly be the following type:</p>
+<pre class="codeblock"><code>const turtles: readonly [&#39;Donatello&#39;, &#39;Leonardo&#39;, &#39;Michelangelo&#39;, &#39;Raphael&#39;];</code></pre>
+<p>But this can be cumbersome, and if we forget to add
+<code>as const</code> each time we call the function, we might end up
+with something other than what we expect—and that’s never good.</p>
+<p>In TypeScript 5.0, we can add <code>const</code> to the type of the
+parameter itself, and then we no longer have to worry about adding
+<code>as const</code> every single time we invoke the function:</p>
+<pre class="codeblock"><code>//                  ⬇️
+const getNames = &lt;const T extends WithNames&gt;(arg: T): T[&#39;names&#39;] =&gt; {
+  return arg.names;
+};
+
+const turtles = getNames({
+  names: [&#39;Donatello&#39;, &#39;Leonardo&#39;, &#39;Michelangelo&#39;, &#39;Raphael&#39;],
+});
+
+const avengers = getNames({
+  names: [
+    &#39;Black Widow&#39;,
+    &#39;Captain America&#39;,
+    &#39;Hawkeye&#39;,
+    &#39;Hulk&#39;,
+    &#39;Iron Man&#39;,
+    &#39;Thor&#39;,
+  ],
+});</code></pre>
+<p>The types are now as follows:</p>
+<pre class="codeblock"><code>const turtles: readonly [&#39;Donatello&#39;, &#39;Leonardo&#39;, &#39;Michelangelo&#39;, &#39;Raphael&#39;];
+const avengers: readonly [
+  &#39;Black Widow&#39;,
+  &#39;Captain America&#39;,
+  &#39;Hawkeye&#39;,
+  &#39;Hulk&#39;,
+  &#39;Iron Man&#39;,
+  &#39;Thor&#39;,
+];</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Have a Play</h4>
+<div class="body">
+<p>You can play around with the code above <a
+href="https://www.typescriptlang.org/play?ts=5.1.3#code/C4TwDgpgBA6glsAFgOQIYFsIGcoF4oDeUAdhtgFxQBOEqAJgPbEA2IUWwVcxA5gNoBdKAF8A3AChxAYyYcoPCMDSYc+ADwzicgCpQIAD2ARidHPCTLsAPgAUqKj0raAlE74ByUivdDcVwuJQ1IoArlTEUPY8AHRe2BJikppywGHAzNh48oqWWDYEgSRkWJQeACJMqEbMzAzuADRQ7gAyEJVUjA1NALJwUogQzKi8g3WN7gBKqGCIqIM+9eLCzhLSssCRAG7GClSq2UrF+YVxJVB8hUHuAEJDUgDWsHCMAO4Nl00AwtPAqNxQAEFMFwpKh3kErgAJVAve4QEAQcEQ9yQkLMe5Iq4ASSoTCg3WGmKa2kQDCoSIEi2WEiAA">in
+this TypeScript playground</a>.</p>
+</div>
+</section>
+<p>As with anything, there are some trade-offs. Using
+<code>as const</code> sets the object as read-only at the time of
+declaration. <code>const</code> parameters give us another option: the
+ability to set the object as read-only at the time of invocation. Having
+the ability to choose the behavior that best serves our use case is a
+welcome addition to TypeScript.</p>
+<h2
+id="unleashtypescript1-ch5.html_upgraded-and-enhanced-enums">Upgraded
+and Enhanced Enums</h2>
+<p>Enums—which provide a handy (if somewhat under appreciated) way of
+defining a set of named constants—have received a major boost in
+TypeScript 5.0.</p>
+<p>In the past, we could have accidentally passed an incorrect number to
+a function expecting an enum and gotten away with it. TypeScript 5.0 is
+a lot stricter. It will throw an error if there’s a mismatch. It now
+treats all enums as union enums, making them safer and easier to work
+with.</p>
+<p>Up until TypeScript 5.0, an enum was really just a set of numeric
+constraints. Let’s say we had an enum that tracked the state of an HTTP
+request:</p>
+<pre class="codeblock"><code>enum RequestState {
+  NotStarted,
+  Loading,
+  Success,
+  Error,
+}</code></pre>
+<p>TypeScript will compile that down to the following object:</p>
+<pre class="codeblock"><code>{
+  &quot;0&quot;: &quot;NotStarted&quot;,
+  &quot;1&quot;: &quot;Loading&quot;,
+  &quot;2&quot;: &quot;Success&quot;,
+  &quot;3&quot;: &quot;Error&quot;,
+  &quot;NotStarted&quot;: 0,
+  &quot;Loading&quot;: 1,
+  &quot;Success&quot;: 2,
+  &quot;Error&quot;: 3
+}</code></pre>
+<p>Enums could be treated as a bound set of numbers. In the case of
+<code>RequestState</code>, this would be 0, 1, 2, and 3. But in previous
+versions of TypeScript, we could get around the predefined values in an
+enum with any number. For example, <a
+href="https://www.typescriptlang.org/play?ts=4.9.5#code/KYOwrgtgBASsCOZgGcAuBlVBDVwoG8AoKKAOQHsNsAnXAEwBpioAZcrOgSxAHMmT0YAMZCUyflACi1auWpMAvoUJDyINFAA25HnEQoqOPAF4oACmoIkaAFywrBzEYCUUYwD4CzVevKbgAHTaPGYA5HrWqDahDFCW+mixEY7YuADa8ZEAus4A3IQK+YTByWhOuGalhrgBbBzcPHnFOlXlwGYADE0lDmWp7QCsA01AA">the
+following is valid in TypeScript 4.9.5</a>:</p>
+<pre class="codeblock"><code>const logRequestState = (request: RequestState) =&gt; {
+  console.log(&#39;Request:&#39;, request, RequestState[request]);
+};
+
+logRequestState(RequestState.Loading); // ✅ Logs: &quot;Request:&quot;,  1,  &quot;Loading&quot;
+logRequestState(0); // ✅ Logs: &quot;Request:&quot;,  0,  &quot;NotStarted&quot;
+logRequestState(55); // ✅ Logs:  &quot;Request:&quot;,  55,  undefined 🤨</code></pre>
+<p><code>55</code> should not be a valid argument for
+<code>logRequestState</code>. In TypeScript 5.0, all enums are now
+treated as union enums, which provide better type safety. Effectively,
+<code>RequestState</code> is <code>0 | 1 | 2 | 3</code>, which means
+<code>55</code> is no longer a valid argument. This is closer to what we
+might have expected, as seen in <a
+href="https://www.typescriptlang.org/play?ts=5.1.3#code/KYOwrgtgBASsCOZgGcAuBlVBDVwoG8AoKKAOQHsNsAnXAEwBpioAZcrOgSxAHMmT0YAMZCUyflACi1auWpMAvoUJDyINFAA25HnEQoqOPAF4oACmoIkaAFywrBzEYCUUYwD4CzVevKbgAHTaPGYA5HrWqDahDFCW+mixEY7YuADa8ZEAus4A3IQK+YTByWhOuGalhrgBbBzcPHnFOlXlwGYADE0lDmWp7QCsA01AA">this
+example</a>:</p>
+<pre class="codeblock"><code>logRequestState(RequestState.Loading); // ✅ Logs: &quot;Request:&quot;,  1,  &quot;Loading&quot;
+logRequestState(0); // ✅ Logs: &quot;Request:&quot;,  0,  &quot;NotStarted&quot;
+logRequestState(55); // ❌ Argument of type &#39;55&#39; is not assignable to parameter 
+➥of type &#39;RequestState&#39;.</code></pre>
+<p>TypeScript is now better at enforcing types set in enums. The
+following will compile in TypeScript 4.9.5, but it <em>won’t</em> in
+TypeScript 5.0 and later. One word of caution: if we try to dynamically
+compute the number, TypeScript is not able to be as helpful. For
+example, <code>logRequestState(3 + 2)</code> will <em>not</em> generate
+an error:</p>
+<pre class="codeblock"><code>enum Letters {
+  A = &#39;Aye!&#39;,
+  B = &#39;Bee!&#39;,
+  C = &#39;Sea!&#39;,
+}
+
+enum Numbers {
+  one = 1,
+  two = 2,
+  three = Letters.C,
+}
+
+const n: number = Numbers.three;</code></pre>
+<p>As you can see, <code>Numbers.three</code> is technically a letter
+and should be allowed to be assigned to a number. TypeScript 5.0 makes
+sure this behaves as expected. That said, it’s a breaking change and may
+require us to revisit our code.</p>
+<p>Previously, I avoided enums in favor of unions. The new behavior
+should work well with existing code and also provide more safety than
+the previous implementations. Both enums and unions are valid means of
+defining a set of values, and the choice now comes down to our
+preference.</p>
+<h2 id="unleashtypescript1-ch5.html_conclusion">Conclusion</h2>
+<p>TypeScript 5.0 is a major advancement to the user-friendliness and
+flexibility of the language. It nudges us toward better coding
+practices, promotes cleaner code, and catches potential errors before
+they become a headache. The TypeScript team is continuing to add
+important features and quality-of-life improvements to the language.
+It’s obviously a smaller set of changes this time around, but <a
+href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-1.html">TypeScript
+5.1</a> has added additional features such as easier implicit returns
+for functions that return <code>undefined</code>.</p>
+<p>For me, TypeScript has been critical to my confidence in making
+changes to and maintaining large code bases. I often find that the
+compiler catches edge cases I would otherwise have missed and that might
+have caused my pager to go off at an undesirable hour. I’m personally
+excited to see how the language evolves over the next few
+years—especially if the current pace of updates continues.</p>
+</section>
