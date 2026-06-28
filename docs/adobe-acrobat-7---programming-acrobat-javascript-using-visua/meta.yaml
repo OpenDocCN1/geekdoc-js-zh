@@ -1,0 +1,1156 @@
+groups:
+- md: "# Adobe Acrobat 7.0\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_0_0.png)\n\
+    \n# Programming Acrobat JavaScript Using Visual Basic\n\nOctober 19, 2004\n\n\
+    ![图片](img/5df42d34636aad17a1b31a4ab6630e9b_0_1.png)\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_1_0.png)\n\
+    \nCopyright 2004 Adobe Systems Incorporated. All rights reserved.\n\nNOTICE: All\
+    \ information contained herein is the property of Adobe Systems Incorporated.\
+    \ No part of this publication (whether in hardcopy or electronic form) may be\
+    \ reproduced or transmitted, in any form or by any means, electronic, mechanical,\
+    \ photocopying, recording, or otherwise, without the prior written consent of\
+    \ the Adobe Systems Incorporated.\n\nPostScript is a registered trademark of Adobe\
+    \ Systems Incorporated. All instances of the name PostScript in the text are references\
+    \ to the PostScript language as defined by Adobe Systems Incorporated unless otherwise\
+    \ stated. The name PostScript also is used as a product trademark for Adobe Systems’\
+    \ implementation of the PostScript language interpreter.\n\nExcept as otherwise\
+    \ stated, any reference to a \"PostScript printing device,\" \"PostScript display\
+    \ device,\" or similar item refers to a printing device, display device or item\
+    \ (respectively) that contains PostScript technology created or licensed by Adobe\
+    \ Systems Incorporated and not to devices or items that purport to be merely compatible\
+    \ with the PostScript language.\n\nAdobe, the Adobe logo, Acrobat, the Acrobat\
+    \ logo, Acrobat Capture, Distiller, PostScript, the PostScript logo and Reader\
+    \ are either registered trademarks or trademarks of Adobe Systems Incorporated\
+    \ in the United States and/or other countries.\n\nApple, Macintosh, and Power\
+    \ Macintosh are trademarks of Apple Computer, Inc., registered in the United States\
+    \ and other countries. PowerPC is a registered trademark of IBM Corporation in\
+    \ the United States. ActiveX, Microsoft, Windows, and Windows NT are either registered\
+    \ trademarks or trademarks of Microsoft Corporation in the United States and/or\
+    \ other countries. Verity is a registered trademark of Verity, Incorporated. UNIX\
+    \ is a registered trademark of The Open Group. Verity is a trademark of Verity,\
+    \ Inc. Lextek is a trademark of Lextek International. All other trademarks are\
+    \ the property of their respective owners.\n\nThis publication and the information\
+    \ herein is furnished AS IS, is subject to change without notice, and should not\
+    \ be construed as a commitment by Adobe Systems Incorporated. Adobe Systems Incorporated\
+    \ assumes no responsibility or liability for any errors or inaccuracies, makes\
+    \ no warranty of any kind (express, implied, or statutory) with respect to this\
+    \ publication, and expressly disclaims any and all warranties of merchantability,\
+    \ fitness for particular purposes, and noninfringement of third party rights.\n\
+    \n# Programming Acrobat JavaScript Using Visual Basic\n\nAcrobat 7.0 provides\
+    \ a rich set of JavaScript programming interfaces that are designed to be used\
+    \ from within the Acrobat environment. It also provides a mechanism (known as\
+    \ *JSObject*) that allows external clients to access the same functionality from\
+    \ environments such as Visual Basic.\n\nThis document gives you the information\
+    \ you need to get started using the extended functionality of JavaScript from\
+    \ a Visual Basic programming environment. It provides a set of examples to illustrate\
+    \ the key concepts.\n\n## What is JSObject?\n\nIn precise terms, JSObject is an\
+    \ interpretation layer between an OLE Automation client such as a Visual Basic\
+    \ application and the JavaScript functionality provided by Acrobat. From a programmer's\
+    \ point of view, the end result is that programming JSObject from a Visual Basic\
+    \ environment is quite similar to programming in JavaScript using the Acrobat\
+    \ console.\n\n## Getting Started\n\nThe following steps get you set up to run\
+    \ the examples:\n\n- 1. Install Acrobat 7.0 and Visual Basic .NET, since both\
+    \ are required for the examples in this document.\n- 2. Open a new Visual Basic.NET\
+    \ project. That gets you started with a blank form and project workspace.\n- 3.\
+    \ To access the Acrobat Automation APIs, including JSObject, you need to add a\
+    \ reference to Acrobat's type library. From the UI, select **Project > Add Reference**,\
+    \ then the **COM** tab, and from the list of available references, click on the\
+    \ item labeled \"Adobe Acrobat 7.0 Type Library.\" Click **Select**. Click **OK**.\n\
+    \n# A Simple Example\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_3_0.png)\n\n\
+    ## A Simple Example\n\nThis example describes the bare minimum required to display\
+    \ “Hello, Acrobat!” in Acrobat's JavaScript console.\n\n- 1. Bring up the source\
+    \ code window for this form by selecting **View > Code** from the UI.\n- 2. Select\
+    \ (**Form1 Events**) from the selection box in the upper left corner of that window.\
+    \ The selection box in the upper right shows all the functions available to the\
+    \ Form object.\n- 3. Select **Load** from that box, which creates an empty function\
+    \ stub. The Form's **Load** function is called when the Form is first displayed,\
+    \ so it's a good place to add the initialization code.\n\nThis program uses some\
+    \ global variables for data that are required for its lifetime, and initializes\
+    \ them in the **Form1_Load** routine.\n\n**EXAMPLE 1  *“Hello, Acrobat!”***\n\n\
+    ```\nDim gApp As Acrobat.CAcroApp\nDim gPDDoc As Acrobat.CAcroPDDoc\nDim jso As\
+    \ Object\n\nPrivate Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)\
+    \ Handles MyBase.Load\n    Set gApp = CreateObject(\"AcroExch.App\")\n    Set\
+    \ gPDDoc = CreateObject(\"AcroExch.PDDoc\")\n    If gPDDoc.Open(\"c:\\adobe.pdf\"\
+    ) Then\n        Set jso = gPDDoc.GetJSObject\n        jso.console.Show\n     \
+    \   jso.console.Clear\n        jso.console.println (\"Hello, Acrobat!\")\n   \
+    \     gApp.Show\n    End If\nEnd Sub\n```\n\nNote that you need a file called\
+    \ `adobe.pdf` at the root level of your C: drive.\n\nWith this code in place,\
+    \ the Visual Basic program attaches to Acrobat's Automation interface using the\
+    \ `CreateObject` call, then shows the main window using the App object's `Show`\
+    \ command.\n\nYou may have a few questions after studying the code fragment. For\
+    \ example, why is `jso` declared as an Object, while `gApp` and `gPDDoc` are declared\
+    \ as types found in the Acrobat type library? Is there a real type for JSObject?\n\
+    \nThe answer is no, JSObject does not appear in the type library, except in the\
+    \ context of the `CAcroPDDoc.GetJSObject` call. The COM interface used to export\
+    \ JavaScript functionality through JSObject is known as an IDispatch interface,\
+    \ which in Visual Basic is more commonly known simply as an “Object” type. The\
+    \ upshot of this is that the methods available to the programmer are not as well-defined\
+    \ as we would like. For example, you might be surprised to learn that if you replace\
+    \ the call to\n\n```\njso.console.clear\n```\n\nwith\n\n```\njso.ThisCantPossiblyCompileCanIt(\"\
+    Yes it can!\")\n```\n\nthe compiler happily compiles the code, but fails rudely\
+    \ at run time. Since Visual Basic has no type information for JSObject, Visual\
+    \ Basic does not know if a particular call is even syntactically valid until runtime,\
+    \ and will compile any function call to a JSObject. For that reason, the programmer\
+    \ must rely on documentation to know what functionality is available through the\
+    \ JSObject interface. The *Acrobat JavaScript Scripting Reference*, which is available\
+    \ from http://partners.adobe.com/links/acrobat, is indispensable as you delve\
+    \ deeper into the mysteries of JSObject.\n\nYou may also wonder why it is necessary\
+    \ to open a PDDoc before creating a JSObject. Running the program shows that no\
+    \ document appeared onscreen, and showing the JavaScript console should be possible\
+    \ without a PDDoc in hand. The answer is that JSObject is designed to work closely\
+    \ with a particular document, since most of the available features operate at\
+    \ the document level. There are some application-level features in JavaScript\
+    \ (and therefore in JSObject), but they are of secondary interest. In practice,\
+    \ a JSObject is always associated with a particular document. When working with\
+    \ a large number of documents, you must structure your code such that a new JSObject\
+    \ is acquired for each document, rather than creating a single JSObject to work\
+    \ on every document.\n\n# Working with Annotations\n\nThe next example is more\
+    \ interesting: a program that allows the user to select a PDF, add a pre-defined\
+    \ annotation, and save the file back to disk.\n\n- 1. Create a new Visual Basic.NET\
+    \ project as you did in the first example; be sure to add the Adobe Acrobat 7.0\
+    \ Type Library to this project as well.\n- 2. For this example you use the Windows\
+    \ **File > Open** dialog, so select **Project > Add Component** from the UI. This\
+    \ allows you to open the **Toolbox** on the left side of the development environment.\
+    \ Select **Windows Forms** from the **Toolbox** and scroll down to and select\
+    \ the **OpenFileDialog**. Drag it to your form.\n- 3. Use the same technique to\
+    \ add a **Button** to your form."
+  mdcn: "\n# Adobe Acrobat 7.0\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_0_0.png)\n\
+    \n# 使用 Visual Basic 编程 Acrobat JavaScript\n\n2004年10月19日\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_0_1.png)\n\
+    \n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_1_0.png)\n\n版权所有 2004 Adobe Systems\
+    \ Incorporated。保留所有权利。\n\n注意：本文档中包含的所有信息均为 Adobe Systems Incorporated 的财产。未经 Adobe\
+    \ Systems Incorporated 事先书面同意，不得以任何形式或任何方式（电子、机械、影印、录制或其他方式）复制或传播本出版物的任何部分（无论硬拷贝还是电子形式）。\n\
+    \nPostScript 是 Adobe Systems Incorporated 的注册商标。文本中所有出现的 PostScript 名称均指由 Adobe\
+    \ Systems Incorporated 定义的 PostScript 语言，除非另有说明。PostScript 名称也用作 Adobe Systems\
+    \ 对 PostScript 语言解释器的实现的产品商标。\n\n除另有说明外，任何对“PostScript 打印设备”、“PostScript 显示设备”或类似物品的引用，均指包含由\
+    \ Adobe Systems Incorporated 创建或授权的 PostScript 技术的打印设备、显示设备或物品（分别），而非指仅声称与 PostScript\
+    \ 语言兼容的设备或物品。\n\nAdobe、Adobe 徽标、Acrobat、Acrobat 徽标、Acrobat Capture、Distiller、PostScript、PostScript\
+    \ 徽标和 Reader 是 Adobe Systems Incorporated 在美国和/或其他国家的注册商标或商标。\n\nApple、Macintosh\
+    \ 和 Power Macintosh 是 Apple Computer, Inc. 的商标，在美国和其他国家注册。PowerPC 是 IBM Corporation\
+    \ 在美国的注册商标。ActiveX、Microsoft、Windows 和 Windows NT 是 Microsoft Corporation 在美国和/或其他国家的注册商标或商标。Verity\
+    \ 是 Verity, Incorporated 的注册商标。UNIX 是 The Open Group 的注册商标。Verity 是 Verity, Inc.\
+    \ 的商标。Lextek 是 Lextek International 的商标。所有其他商标为其各自所有者的财产。\n\n本出版物及其中的信息按“原样”提供，如有更改恕不另行通知，且不应被解释为\
+    \ Adobe Systems Incorporated 的承诺。Adobe Systems Incorporated 对任何错误或不准确之处不承担任何责任或义务，不对本出版物提供任何类型的保证（明示、暗示或法定），并明确排除所有关于适销性、特定用途适用性和不侵犯第三方权利的保证。\n\
+    \n# 使用 Visual Basic 编程 Acrobat JavaScript\n\nAcrobat 7.0 提供了一套丰富的 JavaScript 编程接口，旨在从\
+    \ Acrobat 环境中使用。它还提供了一种机制（称为 *JSObject*），允许外部客户端从 Visual Basic 等环境中访问相同的功能。\n\n\
+    本文档提供了您需要的信息，以便开始从 Visual Basic 编程环境中使用 JavaScript 的扩展功能。它提供了一组示例来说明关键概念。\n\n\
+    ## 什么是 JSObject？\n\n准确地说，JSObject 是在 OLE 自动化客户端（如 Visual Basic 应用程序）与 Acrobat\
+    \ 提供的 JavaScript 功能之间的一个解释层。从程序员的角度来看，最终结果是从 Visual Basic 环境中对 JSObject 进行编程，与使用\
+    \ Acrobat 控制台在 JavaScript 中编程非常相似。\n\n## 入门\n\n以下步骤将帮助您设置运行示例：\n\n- 1. 安装 Acrobat\
+    \ 7.0 和 Visual Basic .NET，因为本文档中的示例需要两者。\n- 2. 打开一个新的 Visual Basic .NET 项目。这将使您从一个空白窗体和项目工作区开始。\n\
+    - 3. 要访问 Acrobat 自动化 API（包括 JSObject），您需要添加对 Acrobat 类型库的引用。在用户界面中，选择 **项目 > 添加引用**，然后选择\
+    \ **COM** 选项卡，从可用引用列表中，单击标记为“Adobe Acrobat 7.0 Type Library”的项目。单击 **选择**。单击 **确定**。\n\
+    \n# 一个简单的示例\n\n![图片](img/5df42d34636aad17a1b31a4ab6630e9b_3_0.png)\n\n## 一个简单的示例\n\
+    \n此示例描述了在 Acrobat 的 JavaScript 控制台中显示“Hello, Acrobat!”所需的最低要求。\n\n- 1. 通过从用户界面选择\
+    \ **视图 > 代码** 来打开此窗体的源代码窗口。\n- 2. 从该窗口左上角的下拉框中选择 **(Form1 Events)**。右上角的下拉框显示了\
+    \ Form 对象可用的所有函数。\n- 3. 从该框中选择 **Load**，这将创建一个空的函数存根。当窗体首次显示时，会调用窗体的 **Load**\
+    \ 函数，因此它是添加初始化代码的好地方。\n\n此程序使用一些全局变量来存储其生命周期所需的数据，并在 **Form1_Load** 例程中初始化它们。\n\
+    \n**示例 1 *“Hello, Acrobat!”***\n\n```\nDim gApp As Acrobat.CAcroApp\nDim gPDDoc\
+    \ As Acrobat.CAcroPDDoc\nDim jso As Object\n\nPrivate Sub Form1_Load(ByVal sender\
+    \ As Object, ByVal e As System.EventArgs) Handles MyBase.Load\n    Set gApp =\
+    \ CreateObject(\"AcroExch.App\")\n    Set gPDDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If gPDDoc.Open(\"c:\\adobe.pdf\") Then\n        Set jso = gPDDoc.GetJSObject\n\
+    \        jso.console.Show\n        jso.console.Clear\n        jso.console.println\
+    \ (\"Hello, Acrobat!\")\n        gApp.Show\n    End If\nEnd Sub\n```\n\n请注意，您需要在\
+    \ C: 驱动器的根目录下有一个名为 `adobe.pdf` 的文件。\n\n有了这段代码，Visual Basic 程序使用 `CreateObject`\
+    \ 调用连接到 Acrobat 的自动化接口，然后使用 App 对象的 `Show` 命令显示主窗口。\n\n研究完代码片段后，您可能有几个问题。例如，为什么\
+    \ `jso` 声明为 Object，而 `gApp` 和 `gPDDoc` 声明为在 Acrobat 类型库中找到的类型？JSObject 是否有真正的类型？\n\
+    \n答案是否定的，除了在 `CAcroPDDoc.GetJSObject` 调用的上下文中，JSObject 不会出现在类型库中。用于通过 JSObject\
+    \ 导出 JavaScript 功能的 COM 接口称为 IDispatch 接口，在 Visual Basic 中通常简称为“对象”类型。由此得出的结果是，程序员可用的方法并不像我们希望的那样定义良好。例如，您可能会惊讶地发现，如果将对\n\
+    \n```\njso.console.clear\n```\n\n的调用替换为\n\n```\njso.ThisCantPossiblyCompileCanIt(\"\
+    Yes it can!\")\n```\n\n编译器会愉快地编译代码，但在运行时会粗暴地失败。由于 Visual Basic 没有 JSObject 的类型信息，Visual\
+    \ Basic 不知道特定的调用在语法上是否有效，直到运行时才会知道，并且会编译对 JSObject 的任何函数调用。因此，程序员必须依赖文档来了解通过 JSObject\
+    \ 接口可用哪些功能。当您深入研究 JSObject 的奥秘时，可从 http://partners.adobe.com/links/acrobat 获取的\
+    \ *Acrobat JavaScript Scripting Reference* 是不可或缺的。\n\n您可能还会想知道为什么在创建 JSObject\
+    \ 之前需要打开一个 PDDoc。运行程序后，屏幕上没有出现任何文档，并且在没有 PDDoc 的情况下显示 JavaScript 控制台应该是可能的。答案是\
+    \ JSObject 被设计为与特定文档紧密工作，因为大多数可用功能都在文档级别操作。JavaScript（因此在 JSObject 中）中有一些应用程序级别的功能，但它们是次要的。在实践中，JSObject\
+    \ 始终与特定文档相关联。当处理大量文档时，您必须构建代码，以便为每个文档获取一个新的 JSObject，而不是创建一个单一的 JSObject 来处理每个文档。\n\
+    \n# 使用注释\n\n下一个示例更有趣：一个允许用户选择 PDF、添加预定义注释并将文件保存回磁盘的程序。\n\n- 1. 像在第一个示例中那样创建一个新的\
+    \ Visual Basic .NET 项目；确保也将 Adobe Acrobat 7.0 Type Library 添加到此项目中。\n- 2. 对于此示例，您使用\
+    \ Windows **文件 > 打开** 对话框，因此从用户界面选择 **项目 > 添加组件**。这允许您在开发环境的左侧打开 **工具箱**。从 **工具箱**\
+    \ 中选择 **Windows 窗体**，向下滚动并选择 **OpenFileDialog**。将其拖到您的窗体上。\n- 3. 使用相同的技术将 **Button**\
+    \ 添加到您的窗体。\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # Adobe Acrobat 7.0
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_0_0.png)
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+
+    October 19, 2004
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_0_1.png)'
+  - '[PAGE 1]
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_1_0.png)
+
+
+    Copyright 2004 Adobe Systems Incorporated. All rights reserved.
+
+
+    NOTICE: All information contained herein is the property of Adobe Systems Incorporated.
+    No part of this publication (whether in hardcopy or electronic form) may be reproduced
+    or transmitted, in any form or by any means, electronic, mechanical, photocopying,
+    recording, or otherwise, without the prior written consent of the Adobe Systems
+    Incorporated.
+
+
+    PostScript is a registered trademark of Adobe Systems Incorporated. All instances
+    of the name PostScript in the text are references to the PostScript language as
+    defined by Adobe Systems Incorporated unless otherwise stated. The name PostScript
+    also is used as a product trademark for Adobe Systems’ implementation of the PostScript
+    language interpreter.
+
+
+    Except as otherwise stated, any reference to a "PostScript printing device," "PostScript
+    display device," or similar item refers to a printing device, display device or
+    item (respectively) that contains PostScript technology created or licensed by
+    Adobe Systems Incorporated and not to devices or items that purport to be merely
+    compatible with the PostScript language.
+
+
+    Adobe, the Adobe logo, Acrobat, the Acrobat logo, Acrobat Capture, Distiller,
+    PostScript, the PostScript logo and Reader are either registered trademarks or
+    trademarks of Adobe Systems Incorporated in the United States and/or other countries.
+
+
+    Apple, Macintosh, and Power Macintosh are trademarks of Apple Computer, Inc.,
+    registered in the United States and other countries. PowerPC is a registered trademark
+    of IBM Corporation in the United States. ActiveX, Microsoft, Windows, and Windows
+    NT are either registered trademarks or trademarks of Microsoft Corporation in
+    the United States and/or other countries. Verity is a registered trademark of
+    Verity, Incorporated. UNIX is a registered trademark of The Open Group. Verity
+    is a trademark of Verity, Inc. Lextek is a trademark of Lextek International.
+    All other trademarks are the property of their respective owners.
+
+
+    This publication and the information herein is furnished AS IS, is subject to
+    change without notice, and should not be construed as a commitment by Adobe Systems
+    Incorporated. Adobe Systems Incorporated assumes no responsibility or liability
+    for any errors or inaccuracies, makes no warranty of any kind (express, implied,
+    or statutory) with respect to this publication, and expressly disclaims any and
+    all warranties of merchantability, fitness for particular purposes, and noninfringement
+    of third party rights.'
+  - '[PAGE 2]
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+
+    Acrobat 7.0 provides a rich set of JavaScript programming interfaces that are
+    designed to be used from within the Acrobat environment. It also provides a mechanism
+    (known as *JSObject*) that allows external clients to access the same functionality
+    from environments such as Visual Basic.
+
+
+    This document gives you the information you need to get started using the extended
+    functionality of JavaScript from a Visual Basic programming environment. It provides
+    a set of examples to illustrate the key concepts.
+
+
+    # What is JSObject?
+
+
+    In precise terms, JSObject is an interpretation layer between an OLE Automation
+    client such as a Visual Basic application and the JavaScript functionality provided
+    by Acrobat. From a programmer''s point of view, the end result is that programming
+    JSObject from a Visual Basic environment is quite similar to programming in JavaScript
+    using the Acrobat console.
+
+
+    # Getting Started
+
+
+    The following steps get you set up to run the examples:
+
+
+    +   1. Install Acrobat 7.0 and Visual Basic .NET, since both are required for
+    the examples in this document.
+
+    2. Open a new Visual Basic.NET project. That gets you started with a blank form
+    and project workspace.
+
+    3. To access the Acrobat Automation APIs, including JSObject, you need to add
+    a reference to Acrobat''s type library. From the UI, select **Project > Add Reference**,
+    then the **COM** tab, and from the list of available references, click on the
+    item labeled "Adobe Acrobat 7.0 Type Library." Click **Select**. Click **OK**.'
+  - '[PAGE 3]
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+
+    A Simple Example
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_3_0.png)
+
+
+    # A Simple Example
+
+
+    This example describes the bare minimum required to display “Hello, Acrobat!”
+    in Acrobat''s JavaScript console.
+
+
+    +   1. Bring up the source code window for this form by selecting **View > Code**
+    from the UI.
+
+    2. Select (**Form1 Events**) from the selection box in the upper left corner of
+    that window. The selection box in the upper right shows all the functions available
+    to the Form object.
+
+    3. Select **Load** from that box, which creates an empty function stub. The Form''s
+    **Load** function is called when the Form is first displayed, so it''s a good
+    place to add the initialization code.
+
+
+    This program uses some global variables for data that are required for its lifetime,
+    and initializes them in the **Form1_Load** routine.'
+  - "[PAGE 4]\n\n**EXAMPLE 1  *“Hello, Acrobat!”***\n\n```\nDim gApp As Acrobat.CAcroApp\n\
+    Dim gPDDoc As Acrobat.CAcroPDDoc\nDim jso As Object\n\nPrivate Sub Form1_Load(ByVal\
+    \ sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load\n    Set\
+    \ gApp = CreateObject(\"AcroExch.App\")\n    Set gPDDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If gPDDoc.Open(\"c:\\adobe.pdf\") Then\n        Set jso = gPDDoc.GetJSObject\n\
+    \        jso.console.Show\n        jso.console.Clear\n        jso.console.println\
+    \ (\"Hello, Acrobat!\")\n        gApp.Show\n    End If\nEnd Sub\n```\n\nNote that\
+    \ you need a file called `adobe.pdf` at the root level of your C: drive.\n\nWith\
+    \ this code in place, the Visual Basic program attaches to Acrobat's Automation\
+    \ interface using the `CreateObject` call, then shows the main window using the\
+    \ App object's `Show` command.\n\nYou may have a few questions after studying\
+    \ the code fragment. For example, why is `jso` declared as an Object, while `gApp`\
+    \ and `gPDDoc` are declared as types found in the Acrobat type library? Is there\
+    \ a real type for JSObject?\n\nThe answer is no, JSObject does not appear in the\
+    \ type library, except in the context of the `CAcroPDDoc.GetJSObject` call. The\
+    \ COM interface used to export JavaScript functionality through JSObject is known\
+    \ as an IDispatch interface, which in Visual Basic is more commonly known simply\
+    \ as an “Object” type. The upshot of this is that the methods available to the\
+    \ programmer are not as well-defined as we would like. For example, you might\
+    \ be surprised to learn that if you replace the call to\n\n```\njso.console.clear\n\
+    ```\n\nwith\n\n```\njso.ThisCantPossiblyCompileCanIt(\"Yes it can!\")\n```\n\n\
+    the compiler happily compiles the code, but fails rudely at run time. Since Visual\
+    \ Basic has no type information for JSObject, Visual Basic does not know if a\
+    \ particular call is even syntactically valid until runtime, and will compile\
+    \ any function call to a JSObject. For that reason, the programmer must rely on\
+    \ documentation to know what functionality is available through the JSObject interface.\
+    \ The *Acrobat JavaScript Scripting Reference*, which is available from http://partners.adobe.com/links/acrobat,\
+    \ is indispensable as you delve deeper into the mysteries of JSObject.\n\nYou\
+    \ may also wonder why it is necessary to open a PDDoc before creating a JSObject.\
+    \ Running the program shows that no document appeared onscreen, and showing the\
+    \ JavaScript console should be possible without a PDDoc in hand. The answer is\
+    \ that JSObject is designed to work closely with a particular document, since\
+    \ most of the available"
+  - '[PAGE 5]
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+
+    # Working with Annotations
+
+
+    features operate at the document level. There are some application-level features
+    in JavaScript (and therefore in JSObject), but they are of secondary interest.
+    In practice, a JSObject is always associated with a particular document. When
+    working with a large number of documents, you must structure your code such that
+    a new JSObject is acquired for each document, rather than creating a single JSObject
+    to work on every document.
+
+
+    # Working with Annotations
+
+
+    The next example is more interesting: a program that allows the user to select
+    a PDF, add a pre-defined annotation, and save the file back to disk.
+
+
+    +   1. Create a new Visual Basic.NET project as you did in the first example;
+    be sure to add the Adobe Acrobat 7.0 Type Library to this project as well.
+
+    2. For this example you use the Windows **File > Open** dialog, so select **Project
+    > Add Component** from the UI. This allows you to open the **Toolbox** on the
+    left side of the development environment. Select **Windows Forms** from the **Toolbox**
+    and scroll down to and select the **OpenFileDialog**. Drag it to your form.
+
+    3. Use the same technique to add a **Button** to your form.'
+- md: "# Programming Acrobat JavaScript Using Visual Basic\n\nWorking with Annotations\n\
+    \n![](img/5df42d34636aad17a1b31a4ab6630e9b_6_0.png)\n\n4. Now that a minimal user\
+    \ interface is set up, select **View > Code** from the main menu, and add the\
+    \ following source code:\n\n*EXAMPLE 2* **Working with annotations**\n\n```vb\n\
+    Dim gApp As Acrobat.CAcroApp\n\nPrivate Sub Form_Load()\n    Set gApp = CreateObject(\"\
+    AcroExch.App\")\nEnd Sub\n\nPrivate Sub Form_Unload(Cancel As Integer)\n    If\
+    \ Not gApp Is Nothing Then\n        gApp.Exit\n    End If\n    Set gApp = Nothing\n\
+    End Sub\n\nPrivate Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n\
+    \    Dim page As Acrobat.CAcroPDPage\n    Dim jso As Object\n    Dim path As String\n\
+    \    Dim point(1) As Integer\n    Dim popupRect(3) As Integer\n    Dim pageRect\
+    \ As Object\n    Dim annot As Object\n    Dim props As Object\n\n    OpenFileDialog1.ShowDialog()\n\
+    \    path = OpenFileDialog1.FileName\n\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n       \
+    \ If Not jso Is Nothing Then\n\n            ' Get size for page 0 and setup arrays\n\
+    \            Set page = pdDoc.AcquirePage(0)\n            Set pageRect = page.GetSize\n\
+    \            point(0) = 0\n            point(1) = pageRect.y\n            popupRect(0)\
+    \ = 0\n            popupRect(1) = pageRect.y - 100\n            popupRect(2) =\
+    \ 200\n            popupRect(3) = pageRect.y\n\n            ' Create a new text\
+    \ annot\n            Set annot = jso.AddAnnot\n            Set props = annot.getProps\n\
+    \            props.Type = \"Text\"\n            annot.setProps props\n\n     \
+    \       ' Fill in a few fields\n            Set props = annot.getProps\n     \
+    \       props.page = 0\n            props.point = point\n            props.popupRect\
+    \ = popupRect\n            props.author = \"Rob McAfee\"\n            props.noteIcon\
+    \ = \"Comment\"\n            props.strokeColor = jso.Color.red\n            props.Contents\
+    \ = \"I added this comment from Visual Basic!\"\n            annot.setProps props\n\
+    \        End If\n        pdDoc.Close\n        MsgBox \"Annotation added to \"\
+    \ & path\n    Else\n        MsgBox \"Failed to open \" & path\n    End If\n\n\
+    \    Set pdDoc = Nothing\nEnd Sub\n```\n\nThe code in the **Form_Load** and **Form_Unload**\
+    \ routines simply initializes and shuts down the main Acrobat Automation interface.\
+    \ All the interesting work happens in the Command button's click routine. The\
+    \ first few lines declare local variables and show the Windows **Open** dialog,\
+    \ which allows the user to select a file to annotate. At that point, the code\
+    \ opens the PDF's **PDDoc** object, and obtains a JSObject interface to that document.\n\
+    \nSome standard Acrobat Automation methods are used to determine the size of the\
+    \ first page in the document. These numbers are critical to achieving the correct\
+    \ layout, because the PDF coordinate system is based in the lower-left corner\
+    \ of the page, but the annotation will be anchored at the upper left corner of\
+    \ the page.\n\nThe lines following the \"**Create a new text annot**\" comment\
+    \ do exactly that, but this block of code bears additional explanation. First\
+    \ of all, **addAnnot** looks as if it were a method of JSObject, but the JavaScript\
+    \ reference shows that the method is associated with the **doc** object. In that\
+    \ case, you might expect the syntax to be **jso.doc.addAnnot** — however, **jso**\
+    \ is the **Doc** object, so **jso.addAnnot** is correct. All of the properties\
+    \ and methods in the **Doc** object are used in this manner.\n\nThe second item\
+    \ of note is the use of **annot.getProps** and **annot.setProps**. The Annot object\
+    \ is implemented with a separate properties object, meaning that you cannot set\
+    \ the properties directly. For example, you cannot do the following:\n\n```vb\n\
+    Set annot = jso.AddAnnot\nannot.Type = \"Text\"\nannot.page = 0\n...\n```\n\n\
+    Instead, you must obtain the Annot's properties object using **annot.getProps**,\
+    \ and use that object for read or write access. To save changes back to the original\
+    \ **Annot**, call **annot.setProps** with the modified properties object, as in\
+    \ the original example.\n\nFinally, note the use of JSObject's color property.\
+    \ This object defines several simple colors such as red, green, and blue. In working\
+    \ with colors, you may need a greater range of colors than is available through\
+    \ this object. Also, there is a performance hit associated with every call to\
+    \ JSObject. To set colors more efficiently, you can use code such as the following,\
+    \ which sets the annot's **strokeColor** to red directly, bypassing the color\
+    \ object.\n\n```vb\ndim color(0 to 3) as Variant\ncolor(0) = \"RGB\"\ncolor(1)\
+    \ = 1#\ncolor(2) = 0#\ncolor(3) = 0#\nannot.strokeColor = color\n```\n\nYou can\
+    \ use this technique anywhere a color array is needed as a parameter to a JSObject\
+    \ routine. The example sets the colorspace to RGB, and specifies floating point\
+    \ values ranging from 0 to 1 for red, green, and blue. Note the use of the # character\
+    \ following the color values. These are required, since they tell Visual Basic\
+    \ that the array element should be set to a floating point value, rather than\
+    \ an integer. It is also important to declare the array as containing Variants,\
+    \ since it contains both strings and floating point values. The other color spaces\
+    \ (\"T\", \"G\", \"CMYK\") have varying requirements for array length. Refer to\
+    \ the **Color** object in the *Acrobat JavaScript Scripting Reference* for more\
+    \ details.\n\n## Spell-Checking a Document\n\nAcrobat 7.0 includes a plug-in that\
+    \ can scan a document for spelling errors. This plug-in also provides JavaScript\
+    \ methods that can be accessed using a JSObject. In this example, you'll start\
+    \ with the source code from [Example 2], and make the following changes:\n\n-\
+    \ Add a List View control to the main form. Keep the default name **List1** for\
+    \ the control.\n- Replace the code in the existing **Command1_Click** routine\
+    \ with the following:\n\n*EXAMPLE 3* **Spell-checking a document**\n\n```vb\n\
+    Private Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n    Dim jso\
+    \ As Object\n    Dim path As String\n    Dim count As Integer\n    Dim i As Integer,\
+    \ j As Integer\n    Dim word As Variant\n    Dim result As Variant\n    Dim foundErr\
+    \ As Boolean\n\n    OpenFileDialog1.ShowDialog()\n    path = OpenFileDialog1.FileName\n\
+    \    foundErr = False\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\")\n\n  \
+    \  If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n        If Not\
+    \ jso Is Nothing Then\n            count = jso.getPageNumWords(0)\n          \
+    \  For i = 0 To count - 1\n                word = jso.getPageNthWord(0, i)\n \
+    \               If VarType(word) = vbString Then\n                    result =\
+    \ jso.spell.checkWord(word)\n                    If IsArray(result) Then\n   \
+    \                     foundErr = True\n                        ListView1.Items.Add\
+    \ (word & \" is misspelled.\")\n                        ListView1.Items.Add (\"\
+    Suggestions:\")\n                        For j = LBound(result) To UBound(result)\n\
+    \                            ListView1.Items.Add (result(j))\n               \
+    \         Next j\n                        ListView1.Items.Add (\"\")\n       \
+    \             End If\n                End If\n            Next i\n           \
+    \ Set jso = Nothing\n            pdDoc.Close\n\n            If Not foundErr Then\n\
+    \                ListView1.Items.Add (\"No spelling errors found in \" & path)\n\
+    \            End If\n        End If\n    Else\n        MsgBox \"Failed to open\
+    \ \" & path\n    End If\n\n    Set pdDoc = Nothing\nEnd Sub\n```\n\nIn this example,\
+    \ note the use of the Spell object's **check** method. According to the *Acrobat\
+    \ JavaScript Scripting Reference*, this method takes a word as input, and returns\
+    \ a null object if the word is found in the dictionary, or an array of suggested\
+    \ words if the word is not found. As always, the safest approach when storing\
+    \ the return value of a JSObject method call is to use a Variant. You can use\
+    \ the **IsArray** function to determine if the Variant is an array, and act accordingly.\
+    \ In this simple example, if the program sees an array of suggested words, it\
+    \ dumps them out to the **ListView** control.\n\n## Tips on Translating JavaScript\
+    \ to JSObject\n\nCovering every method available to JSObject is beyond the scope\
+    \ of this document. However, the *Acrobat JavaScript Scripting Reference* covers\
+    \ the subject in detail, and much can be inferred from the reference by keeping\
+    \ a few basic facts in mind:\n\n- Most of the objects and methods in the reference\
+    \ are available in Visual Basic, but not all. In particular, any JavaScript object\
+    \ that requires the `new` operator for construction cannot be created in Visual\
+    \ Basic. This includes the `Report` object.\n- The `Annots` object is unusual\
+    \ in that it requires JSObject to set and get its properties as a separate object\
+    \ using the `getProps` and `setProps` methods.\n- If you are unsure what type\
+    \ to use to declare a variable, declare it as a Variant. This gives Visual Basic\
+    \ more flexibility for type conversion, and helps prevent runtime errors.\n- JSObject\
+    \ cannot add new properties, methods, or objects to JavaScript. Due to this limitation,\
+    \ the `global.setPersistent` property is not meaningful.\n- JSObject is case-insensitive.\
+    \ Visual Basic often capitalizes leading characters of an identifier and prevents\
+    \ you from changing its case. Don't be concerned about this, since JSObject ignores\
+    \ case when matching the identifier to its JavaScript equivalent.\n- JSObject\
+    \ always returns values as Variants. This includes property gets as well as return\
+    \ values from method calls. An empty Variant is used when a null return value\
+    \ is expected. When JSObject returns an array, each element in the array is a\
+    \ Variant. To determine the actual data type of a Variant, use the utility functions\
+    \ `IsArray`, `IsNumeric`, `IsEmpty`, `IsObject`, and `VarType` from the Information\
+    \ module of the VBA library.\n- JSObject can process most elemental Visual Basic\
+    \ types for property puts and input parameters to method calls, including Variant,\
+    \ Array, Boolean, String, Date, Double, Long, Integer, and Byte. JSObject can\
+    \ accept Object parameters, but only when the Object was the result of a property\
+    \ get or method call to a JSObject. JSObject fails to accept values of type Error\
+    \ and Currency."
+  mdcn: "\n# 使用 Visual Basic 编程 Acrobat JavaScript\n\n处理批注\n\n![](img/5df42d34636aad17a1b31a4ab6630e9b_6_0.png)\n\
+    \n4.  现在，最小用户界面已设置完成，请从主菜单中选择 **视图 > 代码**，并添加以下源代码：\n\n*示例 2* **处理批注**\n\n```vb\n\
+    Dim gApp As Acrobat.CAcroApp\n\nPrivate Sub Form_Load()\n    Set gApp = CreateObject(\"\
+    AcroExch.App\")\nEnd Sub\n\nPrivate Sub Form_Unload(Cancel As Integer)\n    If\
+    \ Not gApp Is Nothing Then\n        gApp.Exit\n    End If\n    Set gApp = Nothing\n\
+    End Sub\n\nPrivate Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n\
+    \    Dim page As Acrobat.CAcroPDPage\n    Dim jso As Object\n    Dim path As String\n\
+    \    Dim point(1) As Integer\n    Dim popupRect(3) As Integer\n    Dim pageRect\
+    \ As Object\n    Dim annot As Object\n    Dim props As Object\n\n    OpenFileDialog1.ShowDialog()\n\
+    \    path = OpenFileDialog1.FileName\n\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n       \
+    \ If Not jso Is Nothing Then\n\n            ' 获取第 0 页的大小并设置数组\n            Set\
+    \ page = pdDoc.AcquirePage(0)\n            Set pageRect = page.GetSize\n     \
+    \       point(0) = 0\n            point(1) = pageRect.y\n            popupRect(0)\
+    \ = 0\n            popupRect(1) = pageRect.y - 100\n            popupRect(2) =\
+    \ 200\n            popupRect(3) = pageRect.y\n\n            ' 创建新的文本批注\n     \
+    \       Set annot = jso.AddAnnot\n            Set props = annot.getProps\n   \
+    \         props.Type = \"Text\"\n            annot.setProps props\n\n        \
+    \    ' 填写一些字段\n            Set props = annot.getProps\n            props.page\
+    \ = 0\n            props.point = point\n            props.popupRect = popupRect\n\
+    \            props.author = \"Rob McAfee\"\n            props.noteIcon = \"Comment\"\
+    \n            props.strokeColor = jso.Color.red\n            props.Contents =\
+    \ \"I added this comment from Visual Basic!\"\n            annot.setProps props\n\
+    \        End If\n        pdDoc.Close\n        MsgBox \"Annotation added to \"\
+    \ & path\n    Else\n        MsgBox \"Failed to open \" & path\n    End If\n\n\
+    \    Set pdDoc = Nothing\nEnd Sub\n```\n\n**Form_Load** 和 **Form_Unload** 例程中的代码仅用于初始化和关闭\
+    \ Acrobat 自动化主接口。所有有趣的工作都在命令按钮的单击例程中进行。前几行声明局部变量并显示 Windows **打开** 对话框，允许用户选择要添加批注的文件。此时，代码打开\
+    \ PDF 的 **PDDoc** 对象，并获取该文档的 JSObject 接口。\n\n一些标准的 Acrobat 自动化方法用于确定文档中第一页的大小。这些数字对于实现正确的布局至关重要，因为\
+    \ PDF 坐标系基于页面的左下角，但批注将锚定在页面的左上角。\n\n**“创建新的文本批注”** 注释之后的代码行正是这样做的，但这部分代码需要额外解释。首先，**addAnnot**\
+    \ 看起来像是 JSObject 的一个方法，但 JavaScript 参考资料显示该方法与 **doc** 对象相关联。在这种情况下，你可能期望语法是 **jso.doc.addAnnot**\
+    \ —— 然而，**jso** 是 **Doc** 对象，所以 **jso.addAnnot** 是正确的。**Doc** 对象中的所有属性和方法都以这种方式使用。\n\
+    \n第二个需要注意的点是使用 **annot.getProps** 和 **annot.setProps**。Annot 对象是通过一个单独的属性对象实现的，这意味着你不能直接设置属性。例如，你不能执行以下操作：\n\
+    \n```vb\nSet annot = jso.AddAnnot\nannot.Type = \"Text\"\nannot.page = 0\n...\n\
+    ```\n\n相反，你必须使用 **annot.getProps** 获取 Annot 的属性对象，并使用该对象进行读取或写入访问。要将更改保存回原始的 **Annot**，请使用修改后的属性对象调用\
+    \ **annot.setProps**，如原始示例所示。\n\n最后，注意 JSObject 颜色属性的使用。该对象定义了几种简单的颜色，如红色、绿色和蓝色。在处理颜色时，你可能需要比该对象提供的更广的颜色范围。此外，每次调用\
+    \ JSObject 都会带来性能开销。要更高效地设置颜色，你可以使用如下代码，它直接将批注的 **strokeColor** 设置为红色，绕过颜色对象。\n\
+    \n```vb\ndim color(0 to 3) as Variant\ncolor(0) = \"RGB\"\ncolor(1) = 1#\ncolor(2)\
+    \ = 0#\ncolor(3) = 0#\nannot.strokeColor = color\n```\n\n你可以在任何需要颜色数组作为 JSObject\
+    \ 例程参数的地方使用此技术。该示例将颜色空间设置为 RGB，并为红色、绿色和蓝色指定 0 到 1 范围内的浮点值。请注意颜色值后使用的 # 字符。这些是必需的，因为它们告诉\
+    \ Visual Basic 数组元素应设置为浮点值，而不是整数。将数组声明为包含 Variants 也很重要，因为它同时包含字符串和浮点值。其他颜色空间（“T”、“G”、“CMYK”）对数组长度有不同的要求。有关更多详细信息，请参阅\
+    \ *Acrobat JavaScript Scripting Reference* 中的 **Color** 对象。\n\n## 拼写检查文档\n\nAcrobat\
+    \ 7.0 包含一个可以扫描文档以检查拼写错误的插件。该插件还提供可通过 JSObject 访问的 JavaScript 方法。在本示例中，你将从 [示例\
+    \ 2] 的源代码开始，并进行以下更改：\n\n- 向主窗体添加一个列表视图控件。保持控件的默认名称 **List1**。\n- 用以下内容替换现有 **Command1_Click**\
+    \ 例程中的代码：\n\n*示例 3* **拼写检查文档**\n\n```vb\nPrivate Sub Command1_Click()\n    Dim\
+    \ pdDoc As Acrobat.CAcroPDDoc\n    Dim jso As Object\n    Dim path As String\n\
+    \    Dim count As Integer\n    Dim i As Integer, j As Integer\n    Dim word As\
+    \ Variant\n    Dim result As Variant\n    Dim foundErr As Boolean\n\n    OpenFileDialog1.ShowDialog()\n\
+    \    path = OpenFileDialog1.FileName\n    foundErr = False\n    Set pdDoc = CreateObject(\"\
+    AcroExch.PDDoc\")\n\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n\
+    \        If Not jso Is Nothing Then\n            count = jso.getPageNumWords(0)\n\
+    \            For i = 0 To count - 1\n                word = jso.getPageNthWord(0,\
+    \ i)\n                If VarType(word) = vbString Then\n                    result\
+    \ = jso.spell.checkWord(word)\n                    If IsArray(result) Then\n \
+    \                       foundErr = True\n                        ListView1.Items.Add\
+    \ (word & \" is misspelled.\")\n                        ListView1.Items.Add (\"\
+    Suggestions:\")\n                        For j = LBound(result) To UBound(result)\n\
+    \                            ListView1.Items.Add (result(j))\n               \
+    \         Next j\n                        ListView1.Items.Add (\"\")\n       \
+    \             End If\n                End If\n            Next i\n           \
+    \ Set jso = Nothing\n            pdDoc.Close\n\n            If Not foundErr Then\n\
+    \                ListView1.Items.Add (\"No spelling errors found in \" & path)\n\
+    \            End If\n        End If\n    Else\n        MsgBox \"Failed to open\
+    \ \" & path\n    End If\n\n    Set pdDoc = Nothing\nEnd Sub\n```\n\n在本示例中，请注意\
+    \ Spell 对象 **check** 方法的使用。根据 *Acrobat JavaScript Scripting Reference*，此方法接受一个单词作为输入，如果在字典中找到该单词，则返回\
+    \ null 对象；如果未找到，则返回建议单词的数组。与以往一样，存储 JSObject 方法调用返回值时最安全的方法是使用 Variant。你可以使用 **IsArray**\
+    \ 函数来确定 Variant 是否为数组，并相应地采取操作。在这个简单的示例中，如果程序看到一组建议单词，它会将它们输出到 **ListView** 控件中。\n\
+    \n## 将 JavaScript 转换为 JSObject 的技巧\n\n涵盖 JSObject 可用的每种方法超出了本文档的范围。但是，*Acrobat\
+    \ JavaScript Scripting Reference* 详细介绍了该主题，并且记住一些基本事实可以推断出很多信息：\n\n- 参考资料中的大多数对象和方法在\
+    \ Visual Basic 中可用，但并非全部。特别是，任何需要 `new` 运算符构造的 JavaScript 对象都无法在 Visual Basic\
+    \ 中创建。这包括 `Report` 对象。\n- `Annots` 对象不同寻常，它需要 JSObject 通过 `getProps` 和 `setProps`\
+    \ 方法使用单独的对象来设置和获取其属性。\n- 如果不确定使用什么类型来声明变量，请将其声明为 Variant。这为 Visual Basic 提供了更灵活的类型转换，并有助于防止运行时错误。\n\
+    - JSObject 无法向 JavaScript 添加新的属性、方法或对象。由于此限制，`global.setPersistent` 属性没有意义。\n\
+    - JSObject 不区分大小写。Visual Basic 通常将标识符的首字符大写，并阻止你更改其大小写。不必担心这一点，因为 JSObject 在将标识符与其\
+    \ JavaScript 等效项匹配时不区分大小写。\n- JSObject 总是将值作为 Variants 返回。这包括属性获取以及方法调用的返回值。当预期返回值为\
+    \ null 时，使用空的 Variant。当 JSObject 返回数组时，数组中的每个元素都是 Variant。要确定 Variant 的实际数据类型，请使用\
+    \ VBA 库 Information 模块中的实用程序函数 `IsArray`、`IsNumeric`、`IsEmpty`、`IsObject` 和 `VarType`。\n\
+    - JSObject 可以处理大多数基本的 Visual Basic 类型，用于属性放置和方法调用的输入参数，包括 Variant、Array、Boolean、String、Date、Double、Long、Integer\
+    \ 和 Byte。JSObject 可以接受 Object 参数，但仅当该 Object 是属性获取或对 JSObject 的方法调用的结果时。JSObject\
+    \ 无法接受 Error 和 Currency 类型的值。\n"
+  merge: 0
+  raw:
+  - '[PAGE 6]
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+    Working with Annotations
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_6_0.png)
+
+
+    4. Now that a minimal user interface is set up, select **View > Code** from the
+    main menu, and add the following source code:
+
+
+    *EXAMPLE 2* **Working with annotations**
+
+
+    ```
+
+    Dim gApp As Acrobat.CAcroApp
+
+    ```'
+  - "[PAGE 7]\n\n# Programming Acrobat JavaScript Using Visual Basic\n\nWorking with\
+    \ Annotations\n\n```\nPrivate Sub Form_Load()\n    Set gApp = CreateObject(\"\
+    AcroExch.App\")\nEnd Sub\n\nPrivate Sub Form_Unload(Cancel As Integer)\n    If\
+    \ Not gApp Is Nothing Then\n        gApp.Exit\n    End If\n    Set gApp = Nothing\n\
+    End Sub\n\nPrivate Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n\
+    \    Dim page As Acrobat.CAcroPDPage\n    Dim jso As Object\n    Dim path As String\n\
+    \    Dim point(1) As Integer\n    Dim popupRect(3) As Integer\n    Dim pageRect\
+    \ As Object\n    Dim annot As Object\n    Dim props As Object\n\n    OpenFileDialog1.ShowDialog()\n\
+    \    path = OpenFileDialog1.FileName\n\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n       \
+    \ If Not jso Is Nothing Then\n\n            ' Get size for page 0 and setup arrays\n\
+    \            Set page = pdDoc.AcquirePage(0)\n            Set pageRect = page.GetSize\n\
+    \            point(0) = 0\n            point(1) = pageRect.y\n            popupRect(0)\
+    \ = 0\n            popupRect(1) = pageRect.y - 100\n            popupRect(2) =\
+    \ 200\n            popupRect(3) = pageRect.y\n\n            ' Create a new text\
+    \ annot\n            Set annot = jso.AddAnnot\n            Set props = annot.getProps\n\
+    \            props.Type = \"Text\"\n            annot.setProps props\n\n     \
+    \       ' Fill in a few fields\n            Set props = annot.getProps\n     \
+    \       props.page = 0\n            props.point = point\n            props.popupRect\
+    \ = popupRect\n```"
+  - "[PAGE 8]\n\nprops.author = \"Rob McAfee\"\nprops.noteIcon = \"Comment\"\nprops.strokeColor\
+    \ = jso.Color.red\nprops.Contents = \"I added this comment from Visual Basic!\"\
+    \nannot.setProps props\nEnd If\npdDoc.Close\nMsgBox \"Annotation added to \" &\
+    \ path\nElse\nMsgBox \"Failed to open \" & path\nEnd If\n\nSet pdDoc = Nothing\n\
+    End Sub\n\nThe code in the **Form_Load** and **Form_Unload** routines simply initializes\
+    \ and shuts down the main Acrobat Automation interface. All the interesting work\
+    \ happens in the Command button's click routine. The first few lines declare local\
+    \ variables and show the Windows **Open** dialog, which allows the user to select\
+    \ a file to annotate. At that point, the code opens the PDF's **PDDoc** object,\
+    \ and obtains a JSObject interface to that document.\n\nSome standard Acrobat\
+    \ Automation methods are used to determine the size of the first page in the document.\
+    \ These numbers are critical to achieving the correct layout, because the PDF\
+    \ coordinate system is based in the lower-left corner of the page, but the annotation\
+    \ will be anchored at the upper left corner of the page.\n\nThe lines following\
+    \ the \"**Create a new text annot**\" comment do exactly that, but this block\
+    \ of code bears additional explanation. First of all, **addAnnot** looks as if\
+    \ it were a method of JSObject, but the JavaScript reference shows that the method\
+    \ is associated with the **doc** object. In that case, you might expect the syntax\
+    \ to be **jso.doc.addAnnot** — however, **jso** is the **Doc** object, so **jso.addAnnot**\
+    \ is correct. All of the properties and methods in the **Doc** object are used\
+    \ in this manner.\n\nThe second item of note is the use of **annot.getProps**\
+    \ and **annot.setProps**. The Annot object is implemented with a separate properties\
+    \ object, meaning that you cannot set the properties directly. For example, you\
+    \ cannot do the following:\n\n    Set annot = jso.AddAnnot\n    annot.Type = \"\
+    Text\"\n    annot.page = 0\n    ...\n\nInstead, you must obtain the Annot's properties\
+    \ object using **annot.getProps**, and use that object for read or write access.\
+    \ To save changes back to the original **Annot**, call **annot.setProps** with\
+    \ the modified properties object, as in the original example.\n\nFinally, note\
+    \ the use of JSObject's color property. This object defines several simple colors\
+    \ such as red, green, and blue. In working with colors, you may need a greater\
+    \ range of colors than is available through this object. Also, there is a performance\
+    \ hit associated with every call to JSObject. To set colors more efficiently,\
+    \ you can use code such as the following, which sets the annot's **strokeColor**\
+    \ to red directly, bypassing the color object.\n\n    dim color(0 to 3) as Variant"
+  - "[PAGE 9]\n\n# Programming Acrobat JavaScript Using Visual Basic\n\n# Spell-Checking\
+    \ a Document\n\n```\ncolor(0) = \"RGB\"\ncolor(1) = 1#\ncolor(2) = 0#\ncolor(3)\
+    \ = 0#\nannot.strokeColor = color\n```\n\nYou can use this technique anywhere\
+    \ a color array is needed as a parameter to a JSObject routine. The example sets\
+    \ the colorspace to RGB, and specifies floating point values ranging from 0 to\
+    \ 1 for red, green, and blue. Note the use of the # character following the color\
+    \ values. These are required, since they tell Visual Basic that the array element\
+    \ should be set to a floating point value, rather than an integer. It is also\
+    \ important to declare the array as containing Variants, since it contains both\
+    \ strings and floating point values. The other color spaces (\"T\", \"G\", \"\
+    CMYK\") have varying requirements for array length. Refer to the **Color** object\
+    \ in the *Acrobat JavaScript Scripting Reference* for more details.\n\n# Spell-Checking\
+    \ a Document\n\nAcrobat 7.0 includes a plug-in that can scan a document for spelling\
+    \ errors. This plug-in also provides JavaScript methods that can be accessed using\
+    \ a JSObject. In this example, you'll start with the source code from [Example\
+    \ 2], and make the following changes:\n\n+   1. Add a List View control to the\
+    \ main form. Keep the default name **List1** for the control.\n2. Replace the\
+    \ code in the existing **Command1_Click** routine with the following:\n\n*EXAMPLE\
+    \ 3*    **Spell-checking a document**\n\n```\nPrivate Sub Command1_Click()\n \
+    \   Dim pdDoc As Acrobat.CAcroPDDoc\n    Dim jso As Object\n    Dim path As String\n\
+    \    Dim count As Integer\n    Dim i As Integer, j As Integer\n    Dim word As\
+    \ Variant\n    Dim result As Variant\n    Dim foundErr As Boolean\n\n    OpenFileDialog1.ShowDialog()\n\
+    \    path = OpenFileDialog1.FileName\n    foundErr = False\n    Set pdDoc = CreateObject(\"\
+    AcroExch.PDDoc\")\n\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n\
+    \        If Not jso Is Nothing Then\n            count = jso.getPageNumWords(0)\n\
+    \            For i = 0 To count - 1\n                word = jso.getPageNthWord(0,\
+    \ i)\n```"
+  - "[PAGE 10]\n\n# Programming Acrobat JavaScript Using Visual Basic\n\n# Spell-Checking\
+    \ a Document\n\n```\nIf VarType(word) = vbString Then\n    result = jso.spell.checkWord(word)\n\
+    \    If IsArray(result) Then\n        foundErr = True\n        ListView1.Items.Add\
+    \ (word & \" is misspelled.\")\n        ListView1.Items.Add (\"Suggestions:\"\
+    )\n        For j = LBound(result) To UBound(result)\n            ListView1.Items.Add\
+    \ (result(j))\n        Next j\n        ListView1.Items.Add (\"\")\n    End If\n\
+    End If\nNext i\nSet jso = Nothing\npdDoc.Close\n\nIf Not foundErr Then\n    ListView1.Items.Add\
+    \ (\"No spelling errors found in \" & path)\nEnd If\nEnd If\nElse\n    MsgBox\
+    \ \"Failed to open \" & path\nEnd If\n\nSet pdDoc = Nothing\nEnd Sub\n```\n\n\
+    In this example, note the use of the Spell object's **check** method. According\
+    \ to the *Acrobat JavaScript Scripting Reference*, this method takes a word as\
+    \ input, and returns a null object if the word is found in the dictionary, or\
+    \ an array of suggested words if the word is not found. As always, the safest\
+    \ approach when storing the return value of a JSObject method call is to use a\
+    \ Variant. You can use the **IsArray** function to determine if the Variant is\
+    \ an array, and act accordingly. In this simple example, if the program sees an\
+    \ array of suggested words, it dumps them out to the **ListView** control."
+  - '[PAGE 11]
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+    Tips on Translating JavaScript to JSObject
+
+
+    # Tips on Translating JavaScript to JSObject
+
+
+    Covering every method available to JSObject is beyond the scope of this document.
+    However, the *Acrobat JavaScript Scripting Reference* covers the subject in detail,
+    and much can be inferred from the reference by keeping a few basic facts in mind:
+
+
+    +   1. Most of the objects and methods in the reference are available in Visual
+    Basic, but not all. In particular, any JavaScript object that requires the `new`
+    operator for construction cannot be created in Visual Basic. This includes the
+    `Report` object.
+
+    2. The `Annots` object is unusual in that it requires JSObject to set and get
+    its properties as a separate object using the `getProps` and `setProps` methods.
+
+    3. If you are unsure what type to use to declare a variable, declare it as a Variant.
+    This gives Visual Basic more flexibility for type conversion, and helps prevent
+    runtime errors.
+
+    4. JSObject cannot add new properties, methods, or objects to JavaScript. Due
+    to this limitation, the `global.setPersistent` property is not meaningful.
+
+    5. JSObject is case-insensitive. Visual Basic often capitalizes leading characters
+    of an identifier and prevents you from changing its case. Don''t be concerned
+    about this, since JSObject ignores case when matching the identifier to its JavaScript
+    equivalent.
+
+    6. JSObject always returns values as Variants. This includes property gets as
+    well as return values from method calls. An empty Variant is used when a null
+    return value is expected. When JSObject returns an array, each element in the
+    array is a Variant. To determine the actual data type of a Variant, use the utility
+    functions `IsArray`, `IsNumeric`, `IsEmpty`, `IsObject`, and `VarType` from the
+    Information module of the VBA library.
+
+    7. JSObject can process most elemental Visual Basic types for property puts and
+    input parameters to method calls, including Variant, Array, Boolean, String, Date,
+    Double, Long, Integer, and Byte. JSObject can accept Object parameters, but only
+    when the Object was the result of a property get or method call to a JSObject.
+    JSObject fails to accept values of type Error and Currency.'
+pages:
+- img_proc: true
+  md: '# Adobe Acrobat 7.0
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_0_0.png)
+
+
+    # Programming Acrobat JavaScript Using Visual Basic
+
+
+    October 19, 2004
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_0_1.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '![](img/5df42d34636aad17a1b31a4ab6630e9b_1_0.png)
+
+
+    Copyright 2004 Adobe Systems Incorporated. All rights reserved.
+
+
+    NOTICE: All information contained herein is the property of Adobe Systems Incorporated.
+    No part of this publication (whether in hardcopy or electronic form) may be reproduced
+    or transmitted, in any form or by any means, electronic, mechanical, photocopying,
+    recording, or otherwise, without the prior written consent of the Adobe Systems
+    Incorporated.
+
+
+    PostScript is a registered trademark of Adobe Systems Incorporated. All instances
+    of the name PostScript in the text are references to the PostScript language as
+    defined by Adobe Systems Incorporated unless otherwise stated. The name PostScript
+    also is used as a product trademark for Adobe Systems’ implementation of the PostScript
+    language interpreter.
+
+
+    Except as otherwise stated, any reference to a "PostScript printing device," "PostScript
+    display device," or similar item refers to a printing device, display device or
+    item (respectively) that contains PostScript technology created or licensed by
+    Adobe Systems Incorporated and not to devices or items that purport to be merely
+    compatible with the PostScript language.
+
+
+    Adobe, the Adobe logo, Acrobat, the Acrobat logo, Acrobat Capture, Distiller,
+    PostScript, the PostScript logo and Reader are either registered trademarks or
+    trademarks of Adobe Systems Incorporated in the United States and/or other countries.
+
+
+    Apple, Macintosh, and Power Macintosh are trademarks of Apple Computer, Inc.,
+    registered in the United States and other countries. PowerPC is a registered trademark
+    of IBM Corporation in the United States. ActiveX, Microsoft, Windows, and Windows
+    NT are either registered trademarks or trademarks of Microsoft Corporation in
+    the United States and/or other countries. Verity is a registered trademark of
+    Verity, Incorporated. UNIX is a registered trademark of The Open Group. Verity
+    is a trademark of Verity, Inc. Lextek is a trademark of Lextek International.
+    All other trademarks are the property of their respective owners.
+
+
+    This publication and the information herein is furnished AS IS, is subject to
+    change without notice, and should not be construed as a commitment by Adobe Systems
+    Incorporated. Adobe Systems Incorporated assumes no responsibility or liability
+    for any errors or inaccuracies, makes no warranty of any kind (express, implied,
+    or statutory) with respect to this publication, and expressly disclaims any and
+    all warranties of merchantability, fitness for particular purposes, and noninfringement
+    of third party rights.'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Programming Acrobat JavaScript Using Visual Basic
+
+
+    Acrobat 7.0 provides a rich set of JavaScript programming interfaces that are
+    designed to be used from within the Acrobat environment. It also provides a mechanism
+    (known as *JSObject*) that allows external clients to access the same functionality
+    from environments such as Visual Basic.
+
+
+    This document gives you the information you need to get started using the extended
+    functionality of JavaScript from a Visual Basic programming environment. It provides
+    a set of examples to illustrate the key concepts.
+
+
+    # What is JSObject?
+
+
+    In precise terms, JSObject is an interpretation layer between an OLE Automation
+    client such as a Visual Basic application and the JavaScript functionality provided
+    by Acrobat. From a programmer''s point of view, the end result is that programming
+    JSObject from a Visual Basic environment is quite similar to programming in JavaScript
+    using the Acrobat console.
+
+
+    # Getting Started
+
+
+    The following steps get you set up to run the examples:
+
+
+    +   1. Install Acrobat 7.0 and Visual Basic .NET, since both are required for
+    the examples in this document.
+
+    2. Open a new Visual Basic.NET project. That gets you started with a blank form
+    and project workspace.
+
+    3. To access the Acrobat Automation APIs, including JSObject, you need to add
+    a reference to Acrobat''s type library. From the UI, select **Project > Add Reference**,
+    then the **COM** tab, and from the list of available references, click on the
+    item labeled "Adobe Acrobat 7.0 Type Library." Click **Select**. Click **OK**.'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# Programming Acrobat JavaScript Using Visual Basic
+
+
+    A Simple Example
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_3_0.png)
+
+
+    # A Simple Example
+
+
+    This example describes the bare minimum required to display “Hello, Acrobat!”
+    in Acrobat''s JavaScript console.
+
+
+    +   1. Bring up the source code window for this form by selecting **View > Code**
+    from the UI.
+
+    2. Select (**Form1 Events**) from the selection box in the upper left corner of
+    that window. The selection box in the upper right shows all the functions available
+    to the Form object.
+
+    3. Select **Load** from that box, which creates an empty function stub. The Form''s
+    **Load** function is called when the Form is first displayed, so it''s a good
+    place to add the initialization code.
+
+
+    This program uses some global variables for data that are required for its lifetime,
+    and initializes them in the **Form1_Load** routine.'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: "**EXAMPLE 1  *“Hello, Acrobat!”***\n\n```\nDim gApp As Acrobat.CAcroApp\nDim\
+    \ gPDDoc As Acrobat.CAcroPDDoc\nDim jso As Object\n\nPrivate Sub Form1_Load(ByVal\
+    \ sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load\n    Set\
+    \ gApp = CreateObject(\"AcroExch.App\")\n    Set gPDDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If gPDDoc.Open(\"c:\\adobe.pdf\") Then\n        Set jso = gPDDoc.GetJSObject\n\
+    \        jso.console.Show\n        jso.console.Clear\n        jso.console.println\
+    \ (\"Hello, Acrobat!\")\n        gApp.Show\n    End If\nEnd Sub\n```\n\nNote that\
+    \ you need a file called `adobe.pdf` at the root level of your C: drive.\n\nWith\
+    \ this code in place, the Visual Basic program attaches to Acrobat's Automation\
+    \ interface using the `CreateObject` call, then shows the main window using the\
+    \ App object's `Show` command.\n\nYou may have a few questions after studying\
+    \ the code fragment. For example, why is `jso` declared as an Object, while `gApp`\
+    \ and `gPDDoc` are declared as types found in the Acrobat type library? Is there\
+    \ a real type for JSObject?\n\nThe answer is no, JSObject does not appear in the\
+    \ type library, except in the context of the `CAcroPDDoc.GetJSObject` call. The\
+    \ COM interface used to export JavaScript functionality through JSObject is known\
+    \ as an IDispatch interface, which in Visual Basic is more commonly known simply\
+    \ as an “Object” type. The upshot of this is that the methods available to the\
+    \ programmer are not as well-defined as we would like. For example, you might\
+    \ be surprised to learn that if you replace the call to\n\n```\njso.console.clear\n\
+    ```\n\nwith\n\n```\njso.ThisCantPossiblyCompileCanIt(\"Yes it can!\")\n```\n\n\
+    the compiler happily compiles the code, but fails rudely at run time. Since Visual\
+    \ Basic has no type information for JSObject, Visual Basic does not know if a\
+    \ particular call is even syntactically valid until runtime, and will compile\
+    \ any function call to a JSObject. For that reason, the programmer must rely on\
+    \ documentation to know what functionality is available through the JSObject interface.\
+    \ The *Acrobat JavaScript Scripting Reference*, which is available from http://partners.adobe.com/links/acrobat,\
+    \ is indispensable as you delve deeper into the mysteries of JSObject.\n\nYou\
+    \ may also wonder why it is necessary to open a PDDoc before creating a JSObject.\
+    \ Running the program shows that no document appeared onscreen, and showing the\
+    \ JavaScript console should be possible without a PDDoc in hand. The answer is\
+    \ that JSObject is designed to work closely with a particular document, since\
+    \ most of the available"
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# Programming Acrobat JavaScript Using Visual Basic
+
+
+    # Working with Annotations
+
+
+    features operate at the document level. There are some application-level features
+    in JavaScript (and therefore in JSObject), but they are of secondary interest.
+    In practice, a JSObject is always associated with a particular document. When
+    working with a large number of documents, you must structure your code such that
+    a new JSObject is acquired for each document, rather than creating a single JSObject
+    to work on every document.
+
+
+    # Working with Annotations
+
+
+    The next example is more interesting: a program that allows the user to select
+    a PDF, add a pre-defined annotation, and save the file back to disk.
+
+
+    +   1. Create a new Visual Basic.NET project as you did in the first example;
+    be sure to add the Adobe Acrobat 7.0 Type Library to this project as well.
+
+    2. For this example you use the Windows **File > Open** dialog, so select **Project
+    > Add Component** from the UI. This allows you to open the **Toolbox** on the
+    left side of the development environment. Select **Windows Forms** from the **Toolbox**
+    and scroll down to and select the **OpenFileDialog**. Drag it to your form.
+
+    3. Use the same technique to add a **Button** to your form.'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Programming Acrobat JavaScript Using Visual Basic
+
+    Working with Annotations
+
+
+    ![](img/5df42d34636aad17a1b31a4ab6630e9b_6_0.png)
+
+
+    4. Now that a minimal user interface is set up, select **View > Code** from the
+    main menu, and add the following source code:
+
+
+    *EXAMPLE 2* **Working with annotations**
+
+
+    ```
+
+    Dim gApp As Acrobat.CAcroApp
+
+    ```'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: "# Programming Acrobat JavaScript Using Visual Basic\n\nWorking with Annotations\n\
+    \n```\nPrivate Sub Form_Load()\n    Set gApp = CreateObject(\"AcroExch.App\")\n\
+    End Sub\n\nPrivate Sub Form_Unload(Cancel As Integer)\n    If Not gApp Is Nothing\
+    \ Then\n        gApp.Exit\n    End If\n    Set gApp = Nothing\nEnd Sub\n\nPrivate\
+    \ Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n    Dim page As Acrobat.CAcroPDPage\n\
+    \    Dim jso As Object\n    Dim path As String\n    Dim point(1) As Integer\n\
+    \    Dim popupRect(3) As Integer\n    Dim pageRect As Object\n    Dim annot As\
+    \ Object\n    Dim props As Object\n\n    OpenFileDialog1.ShowDialog()\n    path\
+    \ = OpenFileDialog1.FileName\n\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\"\
+    )\n    If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n       \
+    \ If Not jso Is Nothing Then\n\n            ' Get size for page 0 and setup arrays\n\
+    \            Set page = pdDoc.AcquirePage(0)\n            Set pageRect = page.GetSize\n\
+    \            point(0) = 0\n            point(1) = pageRect.y\n            popupRect(0)\
+    \ = 0\n            popupRect(1) = pageRect.y - 100\n            popupRect(2) =\
+    \ 200\n            popupRect(3) = pageRect.y\n\n            ' Create a new text\
+    \ annot\n            Set annot = jso.AddAnnot\n            Set props = annot.getProps\n\
+    \            props.Type = \"Text\"\n            annot.setProps props\n\n     \
+    \       ' Fill in a few fields\n            Set props = annot.getProps\n     \
+    \       props.page = 0\n            props.point = point\n            props.popupRect\
+    \ = popupRect\n```"
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "props.author = \"Rob McAfee\"\nprops.noteIcon = \"Comment\"\nprops.strokeColor\
+    \ = jso.Color.red\nprops.Contents = \"I added this comment from Visual Basic!\"\
+    \nannot.setProps props\nEnd If\npdDoc.Close\nMsgBox \"Annotation added to \" &\
+    \ path\nElse\nMsgBox \"Failed to open \" & path\nEnd If\n\nSet pdDoc = Nothing\n\
+    End Sub\n\nThe code in the **Form_Load** and **Form_Unload** routines simply initializes\
+    \ and shuts down the main Acrobat Automation interface. All the interesting work\
+    \ happens in the Command button's click routine. The first few lines declare local\
+    \ variables and show the Windows **Open** dialog, which allows the user to select\
+    \ a file to annotate. At that point, the code opens the PDF's **PDDoc** object,\
+    \ and obtains a JSObject interface to that document.\n\nSome standard Acrobat\
+    \ Automation methods are used to determine the size of the first page in the document.\
+    \ These numbers are critical to achieving the correct layout, because the PDF\
+    \ coordinate system is based in the lower-left corner of the page, but the annotation\
+    \ will be anchored at the upper left corner of the page.\n\nThe lines following\
+    \ the \"**Create a new text annot**\" comment do exactly that, but this block\
+    \ of code bears additional explanation. First of all, **addAnnot** looks as if\
+    \ it were a method of JSObject, but the JavaScript reference shows that the method\
+    \ is associated with the **doc** object. In that case, you might expect the syntax\
+    \ to be **jso.doc.addAnnot** — however, **jso** is the **Doc** object, so **jso.addAnnot**\
+    \ is correct. All of the properties and methods in the **Doc** object are used\
+    \ in this manner.\n\nThe second item of note is the use of **annot.getProps**\
+    \ and **annot.setProps**. The Annot object is implemented with a separate properties\
+    \ object, meaning that you cannot set the properties directly. For example, you\
+    \ cannot do the following:\n\n    Set annot = jso.AddAnnot\n    annot.Type = \"\
+    Text\"\n    annot.page = 0\n    ...\n\nInstead, you must obtain the Annot's properties\
+    \ object using **annot.getProps**, and use that object for read or write access.\
+    \ To save changes back to the original **Annot**, call **annot.setProps** with\
+    \ the modified properties object, as in the original example.\n\nFinally, note\
+    \ the use of JSObject's color property. This object defines several simple colors\
+    \ such as red, green, and blue. In working with colors, you may need a greater\
+    \ range of colors than is available through this object. Also, there is a performance\
+    \ hit associated with every call to JSObject. To set colors more efficiently,\
+    \ you can use code such as the following, which sets the annot's **strokeColor**\
+    \ to red directly, bypassing the color object.\n\n    dim color(0 to 3) as Variant"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: "# Programming Acrobat JavaScript Using Visual Basic\n\n# Spell-Checking a Document\n\
+    \n```\ncolor(0) = \"RGB\"\ncolor(1) = 1#\ncolor(2) = 0#\ncolor(3) = 0#\nannot.strokeColor\
+    \ = color\n```\n\nYou can use this technique anywhere a color array is needed\
+    \ as a parameter to a JSObject routine. The example sets the colorspace to RGB,\
+    \ and specifies floating point values ranging from 0 to 1 for red, green, and\
+    \ blue. Note the use of the # character following the color values. These are\
+    \ required, since they tell Visual Basic that the array element should be set\
+    \ to a floating point value, rather than an integer. It is also important to declare\
+    \ the array as containing Variants, since it contains both strings and floating\
+    \ point values. The other color spaces (\"T\", \"G\", \"CMYK\") have varying requirements\
+    \ for array length. Refer to the **Color** object in the *Acrobat JavaScript Scripting\
+    \ Reference* for more details.\n\n# Spell-Checking a Document\n\nAcrobat 7.0 includes\
+    \ a plug-in that can scan a document for spelling errors. This plug-in also provides\
+    \ JavaScript methods that can be accessed using a JSObject. In this example, you'll\
+    \ start with the source code from [Example 2], and make the following changes:\n\
+    \n+   1. Add a List View control to the main form. Keep the default name **List1**\
+    \ for the control.\n2. Replace the code in the existing **Command1_Click** routine\
+    \ with the following:\n\n*EXAMPLE 3*    **Spell-checking a document**\n\n```\n\
+    Private Sub Command1_Click()\n    Dim pdDoc As Acrobat.CAcroPDDoc\n    Dim jso\
+    \ As Object\n    Dim path As String\n    Dim count As Integer\n    Dim i As Integer,\
+    \ j As Integer\n    Dim word As Variant\n    Dim result As Variant\n    Dim foundErr\
+    \ As Boolean\n\n    OpenFileDialog1.ShowDialog()\n    path = OpenFileDialog1.FileName\n\
+    \    foundErr = False\n    Set pdDoc = CreateObject(\"AcroExch.PDDoc\")\n\n  \
+    \  If pdDoc.Open(path) Then\n        Set jso = pdDoc.GetJSObject\n        If Not\
+    \ jso Is Nothing Then\n            count = jso.getPageNumWords(0)\n          \
+    \  For i = 0 To count - 1\n                word = jso.getPageNthWord(0, i)\n```"
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "# Programming Acrobat JavaScript Using Visual Basic\n\n# Spell-Checking a Document\n\
+    \n```\nIf VarType(word) = vbString Then\n    result = jso.spell.checkWord(word)\n\
+    \    If IsArray(result) Then\n        foundErr = True\n        ListView1.Items.Add\
+    \ (word & \" is misspelled.\")\n        ListView1.Items.Add (\"Suggestions:\"\
+    )\n        For j = LBound(result) To UBound(result)\n            ListView1.Items.Add\
+    \ (result(j))\n        Next j\n        ListView1.Items.Add (\"\")\n    End If\n\
+    End If\nNext i\nSet jso = Nothing\npdDoc.Close\n\nIf Not foundErr Then\n    ListView1.Items.Add\
+    \ (\"No spelling errors found in \" & path)\nEnd If\nEnd If\nElse\n    MsgBox\
+    \ \"Failed to open \" & path\nEnd If\n\nSet pdDoc = Nothing\nEnd Sub\n```\n\n\
+    In this example, note the use of the Spell object's **check** method. According\
+    \ to the *Acrobat JavaScript Scripting Reference*, this method takes a word as\
+    \ input, and returns a null object if the word is found in the dictionary, or\
+    \ an array of suggested words if the word is not found. As always, the safest\
+    \ approach when storing the return value of a JSObject method call is to use a\
+    \ Variant. You can use the **IsArray** function to determine if the Variant is\
+    \ an array, and act accordingly. In this simple example, if the program sees an\
+    \ array of suggested words, it dumps them out to the **ListView** control."
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# Programming Acrobat JavaScript Using Visual Basic
+
+    Tips on Translating JavaScript to JSObject
+
+
+    # Tips on Translating JavaScript to JSObject
+
+
+    Covering every method available to JSObject is beyond the scope of this document.
+    However, the *Acrobat JavaScript Scripting Reference* covers the subject in detail,
+    and much can be inferred from the reference by keeping a few basic facts in mind:
+
+
+    +   1. Most of the objects and methods in the reference are available in Visual
+    Basic, but not all. In particular, any JavaScript object that requires the `new`
+    operator for construction cannot be created in Visual Basic. This includes the
+    `Report` object.
+
+    2. The `Annots` object is unusual in that it requires JSObject to set and get
+    its properties as a separate object using the `getProps` and `setProps` methods.
+
+    3. If you are unsure what type to use to declare a variable, declare it as a Variant.
+    This gives Visual Basic more flexibility for type conversion, and helps prevent
+    runtime errors.
+
+    4. JSObject cannot add new properties, methods, or objects to JavaScript. Due
+    to this limitation, the `global.setPersistent` property is not meaningful.
+
+    5. JSObject is case-insensitive. Visual Basic often capitalizes leading characters
+    of an identifier and prevents you from changing its case. Don''t be concerned
+    about this, since JSObject ignores case when matching the identifier to its JavaScript
+    equivalent.
+
+    6. JSObject always returns values as Variants. This includes property gets as
+    well as return values from method calls. An empty Variant is used when a null
+    return value is expected. When JSObject returns an array, each element in the
+    array is a Variant. To determine the actual data type of a Variant, use the utility
+    functions `IsArray`, `IsNumeric`, `IsEmpty`, `IsObject`, and `VarType` from the
+    Information module of the VBA library.
+
+    7. JSObject can process most elemental Visual Basic types for property puts and
+    input parameters to method calls, including Variant, Array, Boolean, String, Date,
+    Double, Long, Integer, and Byte. JSObject can accept Object parameters, but only
+    when the Object was the result of a property get or method call to a JSObject.
+    JSObject fails to accept values of type Error and Currency.'
+  merge: -1
+  pgno: 11
+toc: []

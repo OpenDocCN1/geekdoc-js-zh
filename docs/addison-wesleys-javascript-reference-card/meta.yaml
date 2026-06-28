@@ -1,0 +1,1077 @@
+groups:
+- md: "# Addison-Wesley’s\n## JavaScript Reference Card\n### Kathleen M. Goelz and\
+    \ Carol J. Schwartz, Rutgers University\n\n**Javascript:** A scripting language\
+    \ designed to be integrated into HTML code to produce enhanced, dynamic, interactive\
+    \ web pages.\n\n## DATA TYPES\n\n*Definition:* The classification of values based\
+    \ on the specific categories in which they are stored.\n\n*Primitive Types:* String,\
+    \ Boolean, Integer, Floating Point, Null, Void\n\n*Composite Types:* Object, Array,\
+    \ Function. Composite data types are in separate sections of the code.\n\n###\
+    \ NUMERIC\n\n**Integer:** Positive or negative numbers with no fractional parts\
+    \ or decimal places.\n\n**Floating Point:** Positive or negative numbers that\
+    \ contain a decimal point or exponential notations.\n\n**String:** A sequence\
+    \ of readable characters or text, surrounded by single or double quotes.\n\n**Boolean:**\
+    \ The logical values True/False, etc. used to compare data or make decisions.\n\
+    \n**Null:** The variable does not have a value; nothing to report. Null is not\
+    \ the same as zero, which is a numeric value.\n\n**Casting:** Moving the contents\
+    \ of a variable of one type to a variable of a different type. You don't move\
+    \ the contents to a different variable; it stays in the same variable but the\
+    \ data type is changed or \"re-cast\".\n\n## VARIABLES\n\n*Definition:* A placeholder\
+    \ for storing data. In JavaScript, a declaration statement consists of the reserved\
+    \ word `var` and the name (identifier) of one or more variables.\n\n*Format:*\n\
+    \n```\nvar variable_name\n[var command is used to declare (create) variables]\n\
+    ```\n\n*Examples:*\n\n```\nvar myHouseColor\nvar myAddress\nvar vacation_house,\
+    \ condominium, primaryResidence\n```\n\n*Rules for Naming Variables:*\n\n1. Variables\
+    \ cannot be reserved words.\n2. Variables must begin with a letter or underscore\
+    \ and cannot begin with symbols, numbers, or arithmetic notations.\n3. Spaces\
+    \ cannot be included in a variable name.\n\n**Hints:**\n\n1. Although variables\
+    \ in JavaScript can be used without being declared, it is good programming practice\
+    \ to declare (initialize), all variables.\n2. Variable names are case sensitive;\
+    \ for example X does not equal x.\n\n## INITIALIZING VARIABLES\n\nUse the declaration\
+    \ statement to assign a value to the variable. The value is on the right of the\
+    \ equal sign; the variable is on the left.\n\nFormat:\n\n```\nvar variable_name\
+    \ = value\n```\n\nExamples:\n\n```\nvar myHouseColor = \"yellow\"\n[literal string\
+    \ value yellow assigned to variable myHouseColor]\n\nvar myAddress = 473\n[numeric\
+    \ value 473 assigned to variable myAddress]\n\nvar bookTitle = \"Time Capsule\"\
+    , cost = 28.95, publisher = \"Tucker Bay\"\n[multiple variables can be assigned\
+    \ in one statement]\n```\n\n## DECISION MAKING AND CONTROL STRUCTURES\n\n**Definition:**\
+    \ Statements and structures used to change the order in which computer operations\
+    \ will occur.\n\n**Types:**\n\nConditional Branching IF, IF-ELSE, IF-ELSE IF,\
+    \ SWITCH, WHILE, DO, FOR\n\n## CONDITIONALS\n\nIF Statement: A conditional branching\
+    \ statement used to determine whether a stated condition is TRUE.\n\nFormat:\n\
+    \n```\nif (condition) {\n    statements if condition is TRUE\n}\n```\n\nExample:\n\
+    \n```\nif (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\"\
+    ;\n}\n```\n\nIF-ELSE Statement: A conditional branching statement that includes\
+    \ a path to follow if the condition is TRUE and a path to follow if the condition\
+    \ is FALSE.\n\nFormat:\n\n```\nif (condition) {\n    statements if condition is\
+    \ TRUE;\n} else {\n    statements if condition is FALSE;\n}\n```\n\nExample:\n\
+    \n```\nif (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\"\
+    ;\n} else {\n    grade = \"Fail\"\n    message = \"Try again\";\n}\n```\n\nIF-ELSE\
+    \ IF Statement: A conditional branching statement that allows for more than two\
+    \ possible paths. The first time a true condition is encountered, the statement\
+    \ is executed and the remaining conditions will not be tested.\n\nFormat:\n\n\
+    ```\nif (condition) {\n    Statements if condition is TRUE;\n} else if (condition)\
+    \ {\n    Statements if condition is TRUE;\n} else {\n    Statements if no prior\
+    \ condition is true;\n}\n```\n\nExample:\n\n```\nif (score>=90) {\n    grade=\"\
+    A\";\n}\nelse if (score>=80) {\n    grade=\"B\";\n}\nelse if (score>=70) {\n \
+    \   grade=\"C\";\n}\nelse if (score>=65) {\n    grade=\"D\";\n}\nelse {\n    grade=\"\
+    F\";\n}\n```\n\nSWITCH Statement: An alternative to the IF-ELSE IF statement for\
+    \ handling multiple options. Compares the expression to the test values to find\
+    \ a match.\n\nFormat:\n\n```\nswitch (expression or variable name) {\n    case\
+    \ label:\n        statements if expression matches this label;\n        break;\n\
+    \    case label:\n        statements if expression matches this label;\n     \
+    \   break;\n    default:\n        statements if expression does not match any\
+    \ label;\n        break;\n}\n```\n\nExample:\n\n```\nswitch (colorchoice) {\n\
+    \    case \"red\":\n        document.bgColor=\"red\";\n        break;\n    case\
+    \ \"blue\":\n        document.bgColor=\"blue\";\n        break;\n    default:\n\
+    \        document.bgColor=\"white\";\n        break;\n}\n```\n\n## LOOPS\n\nLoops\
+    \ cause a segment of code to repeat until a stated condition is met. You can use\
+    \ any loop format for any type of code\n\nFOR LOOP:\n\nFormat:\n\n```\nFor (intialize;\
+    \ conditional test; increment/decrement) {\n    Statements to execute;\n}\n```\n\
+    \nExample:\n\n```\nFor (var i=0; i<=10; i++) {\n    document.write (\"This is\
+    \ line \" + i);\n}\n```\n\nDO/WHILE LOOP:\n\nFormat:\n\n```\ndo {\n    Statements\
+    \ to execute;\n} while (condition);\n```\n\nExample:\n\n```\nvar i=0;\ndo {\n\
+    \    document.write (\"This is line \" + i);\n    i++;\n} while (i <=10);\n```\n\
+    \nWHILE LOOP:\n\nFormat:\n\n```\nwhile (condition) {\n    Statements;\n    Increment/decrement;\n\
+    }\n```\n\nExample:\n\n```\nvar i = 0;\nwhile (i<=10) {\n    document.write (\"\
+    This is line \" + i);\n    i++;\n}\n```\n\nHint: Watch out for infinite loops,\
+    \ which do not have a stopping condition or have a stopping condition that will\
+    \ never be reached.\n\n## OBJECTS\n\nDefinition: Objects are a composite data\
+    \ type which contain properties and methods. JavaScript contains built-in objects\
+    \ and allows the user to create custom objects.\n\nCreating Objects: Use the `new`\
+    \ constructor\n\n```\nvar X = new Array()\n```\n\nExamples:\ndate, time, math,\
+    \ strings, arrays\n\n## ARRAY OBJECT\n\nDefinition: Array object is a variable\
+    \ that stores multiple values. Each value is given an index number in the array\
+    \ and each value is referred to by the array name and the index number. Arrays,\
+    \ like simple variables, can hold any kind of data. You can leave the size blank\
+    \ when you create an array. The size of the array will be determined by the number\
+    \ of items placed in it.\n\nFormat:\n\n```\nvar arrayname = new Array(size)\n\
+    ```\n\nHint: When you create an array, you create a new instance of the array\
+    \ object. All properties and methods of the array object are available to your\
+    \ new array.\n\nExample:\n\n```\nvar days = new Array (7)\n```\n\nThis creates\
+    \ an array of seven elements using the array constructor.\nThe first item is `days[0]`,\
+    \ the last item is `days[6]`.\n\n### Initializing Arrays:\n\nArray items can be\
+    \ treated as simple variables:\n\n```\ndays[0] = \"Sunday\";\ndays[1] = \"Monday\"\
+    ;\netc.\n```\n\n## STRING OBJECT\n\nDefinition: String object is created by assigning\
+    \ a string to a variable, or by using the new object constructor.\n\nExample:\n\
+    \n```\nvar name = \"Carol\";\nvar name = new String(\"Carol\");\n```\n\nProperties:\n\
+    - **Length:** returns the number of characters in the string\n- **Prototype:**\
+    \ allows the user to add methods and properties to the string\n\nMethods:\n- String\
+    \ formatting methods (similar to HTML formatting tags)\n    - `String.big`\n \
+    \   - `String.blink`\n    - `String.italics`\n- Substring methods (allow user\
+    \ to find, match, or change patterns of characters in the string)\n    - `indexOf()`\n\
+    \    - `charAt()`\n    - `replace()`\n\n## MATH OBJECT\n\nDefinition: Math object\
+    \ allows arithmetic calculations not supported by the basic math operators. Math\
+    \ is a built-in object that the user does not need to define.\n\nExamples:\n-\
+    \ `Math.abs(number)` returns absolute value of the numeric argument\n- `Math.cos(number)`\
+    \ returns the cosine of the argument, in radians\n- `Math.round(number)` rounds\
+    \ number to the nearest integer\n\n## DATE/TIME OBJECTS\n\nDate object provides\
+    \ methods for getting or setting information about the date and time.\nNote: Dates\
+    \ before January 1, 1970 are not supported."
+  mdcn: "\n# Addison-Wesley公司\n## JavaScript 参考卡片\n### Kathleen M. Goelz 和 Carol J.\
+    \ Schwartz，罗格斯大学\n\n**Javascript：** 一种脚本语言，旨在集成到HTML代码中，以创建增强的、动态的、交互式的网页。\n\n\
+    ## 数据类型\n\n*定义：* 根据值存储的具体类别对其进行的分类。\n\n*基本类型：* 字符串、布尔值、整数、浮点数、空值、无定义值\n\n*复合类型：*\
+    \ 对象、数组、函数。复合数据类型在代码中位于单独的部分。\n\n### 数值型\n\n**整数：** 没有小数部分或小数点的正数或负数。\n\n**浮点数：**\
+    \ 包含小数点或科学记数法的正数或负数。\n\n**字符串：** 由单引号或双引号括起来的可读字符或文本序列。\n\n**布尔值：** 用于比较数据或做出决策的逻辑值，例如\
+    \ True/False。\n\n**空值：** 变量没有值；没有值可报告。Null与零不同，零是一个数值。\n\n**类型转换：** 将一种类型的变量内容移动到不同类型的变量中。你并非将内容移动到不同的变量；它保持在同一个变量中，但数据类型被改变或“重新转换”。\n\
+    \n## 变量\n\n*定义：* 用于存储数据的占位符。在JavaScript中，声明语句由保留字 `var` 和一个或多个变量的名称（标识符）组成。\n\n\
+    *格式：*\n\n```\nvar variable_name\n[var 命令用于声明（创建）变量]\n```\n\n*示例：*\n\n```\nvar\
+    \ myHouseColor\nvar myAddress\nvar vacation_house, condominium, primaryResidence\n\
+    ```\n\n*变量命名规则：*\n\n1. 变量不能是保留字。\n2. 变量必须以字母或下划线开头，不能以符号、数字或算术符号开头。\n3. 变量名中不能包含空格。\n\
+    \n**提示：**\n\n1. 虽然JavaScript中的变量可以在未声明的情况下使用，但良好的编程实践是声明（初始化）所有变量。\n2. 变量名区分大小写；例如，X\
+    \ 不等于 x。\n\n## 初始化变量\n\n使用声明语句为变量赋值。值在等号的右边；变量在左边。\n\n格式：\n\n```\nvar variable_name\
+    \ = value\n```\n\n示例：\n\n```\nvar myHouseColor = \"yellow\"\n[将字符串字面量值 yellow\
+    \ 赋值给变量 myHouseColor]\n\nvar myAddress = 473\n[将数值 473 赋值给变量 myAddress]\n\nvar\
+    \ bookTitle = \"Time Capsule\", cost = 28.95, publisher = \"Tucker Bay\"\n[可以在一条语句中为多个变量赋值]\n\
+    ```\n\n## 决策与控制结构\n\n**定义：** 用于改变计算机操作执行顺序的语句和结构。\n\n**类型：**\n\n条件分支 IF、IF-ELSE、IF-ELSE\
+    \ IF、SWITCH、WHILE、DO、FOR\n\n## 条件语句\n\nIF 语句：一种条件分支语句，用于判断指定条件是否为真。\n\n格式：\n\n\
+    ```\nif (condition) {\n    条件为真时执行的语句\n}\n```\n\n示例：\n\n```\nif (score >= 65)\
+    \ {\n    grade = \"Pass\";\n    message = \"Congratulations\";\n}\n```\n\nIF-ELSE\
+    \ 语句：一种条件分支语句，包含条件为真时执行的路径和条件为假时执行的路径。\n\n格式：\n\n```\nif (condition) {\n    条件为真时执行的语句;\n\
+    } else {\n    条件为假时执行的语句;\n}\n```\n\n示例：\n\n```\nif (score >= 65) {\n    grade\
+    \ = \"Pass\";\n    message = \"Congratulations\";\n} else {\n    grade = \"Fail\"\
+    \n    message = \"Try again\";\n}\n```\n\nIF-ELSE IF 语句：一种允许有两个以上可能路径的条件分支语句。当第一次遇到为真的条件时，执行该语句，其余条件将不再被测试。\n\
+    \n格式：\n\n```\nif (condition) {\n    条件为真时执行的语句;\n} else if (condition) {\n   \
+    \ 条件为真时执行的语句;\n} else {\n    如果没有先前的条件为真，则执行的语句;\n}\n```\n\n示例：\n\n```\nif (score>=90)\
+    \ {\n    grade=\"A\";\n}\nelse if (score>=80) {\n    grade=\"B\";\n}\nelse if\
+    \ (score>=70) {\n    grade=\"C\";\n}\nelse if (score>=65) {\n    grade=\"D\";\n\
+    }\nelse {\n    grade=\"F\";\n}\n```\n\nSWITCH 语句：处理多个选项时，IF-ELSE IF 语句的一种替代方案。将表达式与测试值进行比较以找到匹配项。\n\
+    \n格式：\n\n```\nswitch (expression or variable name) {\n    case label:\n      \
+    \  如果表达式匹配此标签，则执行的语句;\n        break;\n    case label:\n        如果表达式匹配此标签，则执行的语句;\n\
+    \        break;\n    default:\n        如果表达式不匹配任何标签，则执行的语句;\n        break;\n\
+    }\n```\n\n示例：\n\n```\nswitch (colorchoice) {\n    case \"red\":\n        document.bgColor=\"\
+    red\";\n        break;\n    case \"blue\":\n        document.bgColor=\"blue\"\
+    ;\n        break;\n    default:\n        document.bgColor=\"white\";\n       \
+    \ break;\n}\n```\n\n## 循环\n\n循环使一段代码重复执行，直到满足指定条件。你可以对任何类型的代码使用任何循环格式。\n\nFOR\
+    \ 循环：\n\n格式：\n\n```\nFor (initialization; conditional test; increment/decrement)\
+    \ {\n    要执行的语句;\n}\n```\n\n示例：\n\n```\nFor (var i=0; i<=10; i++) {\n    document.write\
+    \ (\"This is line \" + i);\n}\n```\n\nDO/WHILE 循环：\n\n格式：\n\n```\ndo {\n    要执行的语句;\n\
+    } while (condition);\n```\n\n示例：\n\n```\nvar i=0;\ndo {\n    document.write (\"\
+    This is line \" + i);\n    i++;\n} while (i <=10);\n```\n\nWHILE 循环：\n\n格式：\n\n\
+    ```\nwhile (condition) {\n    语句;\n    递增/递减;\n}\n```\n\n示例：\n\n```\nvar i = 0;\n\
+    while (i<=10) {\n    document.write (\"This is line \" + i);\n    i++;\n}\n```\n\
+    \n提示：注意无限循环，它们没有停止条件，或者停止条件永远无法达到。\n\n## 对象\n\n定义：对象是一种复合数据类型，包含属性和方法。JavaScript包含内置对象，并允许用户创建自定义对象。\n\
+    \n创建对象：使用 `new` 构造函数\n\n```\nvar X = new Array()\n```\n\n示例：\n日期、时间、数学、字符串、数组\n\
+    \n## 数组对象\n\n定义：数组对象是存储多个值的变量。每个值在数组中都有一个索引编号，每个值都通过数组名和索引编号来引用。数组与简单变量一样，可以保存任何类型的数据。在创建数组时，你可以将大小留空。数组的大小将由放置在其中的项目数量决定。\n\
+    \n格式：\n\n```\nvar arrayname = new Array(size)\n```\n\n提示：当你创建数组时，你创建了数组对象的一个新实例。数组对象的所有属性和方法都可用于你的新数组。\n\
+    \n示例：\n\n```\nvar days = new Array (7)\n```\n\n这使用数组构造函数创建了一个包含七个元素的数组。\n第一个项目是\
+    \ `days[0]`，最后一个项目是 `days[6]`。\n\n### 初始化数组：\n\n数组项目可以当作简单变量处理：\n\n```\ndays[0]\
+    \ = \"Sunday\";\ndays[1] = \"Monday\";\n等等。\n```\n\n## 字符串对象\n\n定义：字符串对象通过将字符串赋值给变量来创建，或者使用新的对象构造函数来创建。\n\
+    \n示例：\n\n```\nvar name = \"Carol\";\nvar name = new String(\"Carol\");\n```\n\n\
+    属性：\n- **长度：** 返回字符串中的字符数\n- **原型：** 允许用户为字符串添加方法和属性\n\n方法：\n- 字符串格式化方法（类似于HTML格式化标签）\n\
+    \    - `String.big`\n    - `String.blink`\n    - `String.italics`\n- 子字符串方法（允许用户查找、匹配或更改字符串中的字符模式）\n\
+    \    - `indexOf()`\n    - `charAt()`\n    - `replace()`\n\n## 数学对象\n\n定义：数学对象允许进行基本算术运算符不支持的算术计算。Math是一个内置对象，用户不需要定义。\n\
+    \n示例：\n- `Math.abs(number)` 返回数值参数的绝对值\n- `Math.cos(number)` 返回参数的余弦值，以弧度为单位\n\
+    - `Math.round(number)` 将数字四舍五入到最接近的整数\n\n## 日期/时间对象\n\n日期对象提供用于获取或设置日期和时间信息的方法。\n\
+    注意：不支持1970年1月1日之前的日期。\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # Addison-Wesley’s
+
+    ## JavaScript Reference Card
+
+    ### Kathleen M. Goelz and Carol J. Schwartz, Rutgers University
+
+
+    **Javascript:** A scripting language designed to be integrated into HTML code
+    to produce enhanced, dynamic, interactive web pages.
+
+
+    # # DATA TYPES
+
+
+    *Definition:* The classification of values based on the specific categories in
+    which they are stored.
+
+
+    *Primitive Types:* String, Boolean, Integer, Floating Point, Null, Void
+
+
+    *Composite Types:* Object, Array, Function. Composite data types are in separate
+    sections of the code.
+
+
+    # ## NUMERIC
+
+
+    **Integer:** Positive or negative numbers with no fractional parts or decimal
+    places.
+
+
+    **Floating Point:** Positive or negative numbers that contain a decimal point
+    or exponential notations.
+
+
+    **String:** A sequence of readable characters or text, surrounded by single or
+    double quotes.
+
+
+    **Boolean:** The logical values True/False, etc. used to compare data or make
+    decisions.
+
+
+    **Null:** The variable does not have a value; nothing to report. Null is not the
+    same as zero, which is a numeric value.
+
+
+    **Casting:** Moving the contents of a variable of one type to a variable of a
+    different type. You don''t move the contents to a different variable; it stays
+    in the same variable but the data type is changed or "re-cast".
+
+
+    # # VARIABLES
+
+
+    *Definition:* A placeholder for storing data. In JavaScript, a declaration statement
+    consists of the reserved word `var` and the name (identifier) of one or more variables.
+
+
+    *Format:*
+
+
+    ```
+
+    var variable_name
+
+    [var command is used to declare (create) variables]
+
+    ```
+
+
+    *Examples:*
+
+
+    ```
+
+    var myHouseColor
+
+    var myAddress
+
+    var vacation_house, condominium, primaryResidence
+
+    ```
+
+
+    *Rules for Naming Variables:*
+
+
+    1. Variables cannot be reserved words.
+
+    2. Variables must begin with a letter or underscore and cannot begin with symbols,
+    numbers, or arithmetic notations.
+
+    3. Spaces cannot be included in a variable name.
+
+
+    **Hints:**
+
+
+    1. Although variables in JavaScript can be used without being declared, it is
+    good programming practice to declare (initialize), all variables.
+
+    2. Variable names are case sensitive; for example X does not equal x.
+
+
+    ![](img/594ed2567c706c00bdbf404270dcdceb_0_0.png)
+
+
+    ![](img/594ed2567c706c00bdbf404270dcdceb_0_1.png)'
+  - "[PAGE 1]\n\n# # INITIALIZING VARIABLES\n\nUse the declaration statement to assign\
+    \ a value to the variable. The value is on the right of the equal sign; the variable\
+    \ is on the left.\n\nFormat:\n\n```\nvar variable_name = value\n```\n\nExamples:\n\
+    \n```\nvar myHouseColor = \"yellow\"\n[literal string value yellow assigned to\
+    \ variable myHouseColor]\n\nvar myAddress = 473\n[numeric value 473 assigned to\
+    \ variable myAddress]\n\nvar bookTitle = \"Time Capsule\", cost = 28.95, publisher\
+    \ = \"Tucker Bay\"\n[multiple variables can be assigned in one statement]\n```\n\
+    \n# # DECISION MAKING AND CONTROL STRUCTURES\n\n**Definition:** Statements and\
+    \ structures used to change the order in which computer operations will occur.\n\
+    \n**Types:**\n\nConditional Branching IF, IF-ELSE, IF-ELSE IF, SWITCH, WHILE,\
+    \ DO, FOR\n\n# # CONDITIONALS\n\nIF Statement: A conditional branching statement\
+    \ used to determine whether a stated condition is TRUE.\n\nFormat:\n\n```\nif\
+    \ (condition) {\n    statements if condition is TRUE\n}\n```\n\nExample:\n\n```\n\
+    if (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\";\n\
+    }\n```\n\nIF-ELSE Statement: A conditional branching statement that includes a\
+    \ path to follow if the condition is TRUE and a path to follow if the condition\
+    \ is FALSE.\n\nFormat:\n\n```\nif (condition) {\n    statements if condition is\
+    \ TRUE;\n} else {\n    statements if condition is FALSE;\n}\n```\n\nExample:\n\
+    \n```\nif (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\"\
+    ;\n} else {\n    grade = \"Fail\"\n    message = \"Try again\";\n}\n```\n\nIF-ELSE\
+    \ IF Statement: A conditional branching statement that allows for more than two\
+    \ possible paths. The first time a true condition is encountered, the statement\
+    \ is executed and the remaining conditions will not be tested.\n\nFormat:\n\n\
+    ```\nif (condition) {\n    Statements if condition is TRUE;\n} else if (condition)\
+    \ {\n    Statements if condition is TRUE;\n} else {\n    Statements if no prior\
+    \ condition is true;\n}\n```"
+  - "[PAGE 2]\n\nExample:\n\n```\nif (score>=90) {\n    grade=\"A\";\n}\nelse if (score>=80)\
+    \ {\n    grade=\"B\";\n}\nelse if (score>=70) {\n    grade=\"C\";\n}\nelse if\
+    \ (score>=65) {\n    grade=\"D\";\n}\nelse {\n    grade=\"F\";\n}\n```\n\nSWITCH\
+    \ Statement: An alternative to the IF-ELSE IF statement for handling multiple\
+    \ options. Compares the expression to the test values to find a match.\n\nFormat:\n\
+    \n```\nswitch (expression or variable name) {\n    case label:\n        statements\
+    \ if expression matches this label;\n        break;\n    case label:\n       \
+    \ statements if expression matches this label;\n        break;\n    default:\n\
+    \        statements if expression does not match any label;\n        break;\n\
+    }\n```\n\nExample:\n\n```\nswitch (colorchoice) {\n    case \"red\":\n       \
+    \ document.bgColor=\"red\";\n        break;\n    case \"blue\":\n        document.bgColor=\"\
+    blue\";\n        break;\n    default:\n        document.bgColor=\"white\";\n \
+    \       break;\n}\n```\n\n# LOOPS\n\nLoops cause a segment of code to repeat until\
+    \ a stated condition is met. You can use any loop format for any type of code\n\
+    \nFOR LOOP:\n\nFormat:\n\n```\nFor (intialize; conditional test; increment/decrement)\
+    \ {\n    Statements to execute;\n}\n```\n\nExample:\n\n```\nFor (var i=0; i<=10;\
+    \ i++) {\n    document.write (\"This is line \" + i);\n}\n```\n\nDO/WHILE LOOP:\n\
+    \nFormat:\n\n```\ndo {\n    Statements to execute;\n} while (condition);\n```\n\
+    \nExample:\n\n```\nvar i=0;\ndo {\n    document.write (\"This is line \" + i);\n\
+    \    i++;\n} while (i <=10);\n```"
+  - "[PAGE 3]\n\n# WHILE LOOP:\n\nFormat:\n`while (condition) {`\n    `Statements;`\n\
+    \    `Increment/decrement;`\n`}`\n\nExample:\n`var i = 0;`\n`while (i<=10) {`\n\
+    \    `document.write (\"This is line \" + i);`\n    `i++;`\n`}`\n\nHint: Watch\
+    \ out for infinite loops, which do not have a stopping condition or have a stopping\
+    \ condition that will never be reached.\n\n# OBJECTS\n\nDefinition: Objects are\
+    \ a composite data type which contain properties and methods. JavaScript contains\
+    \ built-in objects and allows the user to create custom objects.\n\nCreating Objects:\
+    \ Use the `new` constructor\n`var X = new Array()`\n\nExamples:\ndate, time, math,\
+    \ strings, arrays\n\n# ARRAY OBJECT\n\nDefinition: Array object is a variable\
+    \ that stores multiple values. Each value is given an index number in the array\
+    \ and each value is referred to by the array name and the index number. Arrays,\
+    \ like simple variables, can hold any kind of data. You can leave the size blank\
+    \ when you create an array. The size of the array will be determined by the number\
+    \ of items placed in it.\n\nFormat:\n`var arrayname = new Array(size)`\n\nHint:\
+    \ When you create an array, you create a new instance of the array object. All\
+    \ properties and methods of the array object are available to your new array.\n\
+    \nExample:\n`var days = new Array (7)`\nThis creates an array of seven elements\
+    \ using the array constructor.\nThe first item is `days[0]`, the last item is\
+    \ `days[6]`.\n\n# Initializing Arrays:\n\nArray items can be treated as simple\
+    \ variables:\n`days[0] = \"Sunday\";`\n`days[1] = \"Monday\";`\netc.\n\n# STRING\
+    \ OBJECT\n\nDefinition: String object is created by assigning a string to a variable,\
+    \ or by using the new object constructor.\n\nExample:\n`var name = \"Carol\";`\n\
+    `var name = new String(\"Carol\");`\n\nProperties:\n**Length:** returns the number\
+    \ of characters in the string\n**Prototype:** allows the user to add methods and\
+    \ properties to the string\n\nMethods:\nString formatting methods (similar to\
+    \ HTML formatting tags)\n`String.big`\n`String.blink`\n`String.italics`\n\nSubstring\
+    \ methods (allow user to find, match, or change patterns of characters in the\
+    \ string)\n`indexOf()`\n`charAt()`\n`replace()`\n\n# MATH OBJECT\n\nDefinition:\
+    \ Math object allows arithmetic calculations not supported by the basic math operators.\
+    \ Math is a built-in object that the user does not need to define.\n\nExamples:\n\
+    `Math.abs(number)` returns absolute value of the numeric argument\n`Math.cos(number)`\
+    \ returns the cosine of the argument, in radians\n`Math.round(number)` rounds\
+    \ number to the nearest integer\n\n# DATE/TIME OBJECTS\n\nDate object provides\
+    \ methods for getting or setting information about the date and time.\nNote: Dates\
+    \ before January 1, 1970 are not supported."
+- md: "## FUNCTIONS\n\n*Definition:* A pre-written block of code that performs a specific\
+    \ task. Some functions return values; others perform a task like sorting, but\
+    \ return no value. Function names follow the same rules as variables names. There\
+    \ may or may not be an argument or parameter in the parenthesis, but the parenthesis\
+    \ has to be there.\n\n**User-defined Functions:**\n\n*Example:*\n\n`parseInt()`\
+    \ or `parseFloat()` convert a string to a number.\n\nTo create a function:\n\n\
+    Format:\n\n```\nfunction name_of_function (arguments) {\n    statements to execute\
+    \ when\n    function is called;\n}\n```\n\nExample:\n\n```\nfunction kilosToPounds\
+    \ (){\n    pounds=kilos*2.2046;\n}\n```\n\nThis new function takes the value of\
+    \ the variable kilos, multiplies it by 2.2046, and assigns the result to the variable\
+    \ pounds.\n\nTo call a *function*: Give the name of the function followed by its\
+    \ arguments, if any\n\n`parseInt(X)`; converts the data stored in the variable\
+    \ X into a numeric value.\n\n`kilosToPounds(17)`; converts 17 kilos to the same\
+    \ mass in pounds, returning the value 37.4782.\n\n## PUTTING IT TOGETHER: JAVASCRIPT\
+    \ AND HTML ON THE WEB\n\n**Cookies:** Text-file messages stored by the browser\
+    \ on the user's computer\n\n*Purpose:* To identify the user, store preferences,\
+    \ and present customized information each time the user visits the page\n\n*Types:*\n\
+    \n*Temporary* (transient, session) — stored in temporary memory and available\
+    \ only during active browser session\n\n*Persistent* (permanent, stored) — remain\
+    \ on user's computer until deleted or expired\n\n**Browser Detection:** A script\
+    \ written to determine which browser is running; determine if the browser has\
+    \ the capabilities to load the webpage and support the javascript code; and, if\
+    \ needed, load alternate javascript code to match the browser and platform.\n\n\
+    **Sniffing:** A script written to determine whether a specific browser feature\
+    \ is present; i.e., detecting the presence of Flash before loading a webpage.\n\
+    \n**Event Handling:** Use HTML event attributes (mouseover, mouse click, etc.)\
+    \ and connect event to a JavaScript function called an event handler\n\n## METHODS\n\
+    \n*Definition:* A special kind of function used to describe or instruct the way\
+    \ the object behaves. Each object type in JavaScript has associated methods available.\n\
+    \n*Examples:*\n\n```\narray.sort();\ndocument.write();\nstring.length();\n```\n\
+    \n**Calling:** To call or use a method, state the method name followed by its\
+    \ parameters in parentheses.\n\n*Example:*\n\n```\ndocument.write(\"Hello, world!\"\
+    );\n```\n\n## OPERATORS\n\n### ARITHMETIC\n\n| Symbol | Name | Description |\n\
+    | :--- | :--- | :--- |\n| + | addition | adds two numbers |\n| - | subtraction\
+    \ | subtracts one number from another |\n| * | multiplication | multiplies two\
+    \ numbers |\n| / | division | divides one number by another |\n| % | modulus |\
+    \ returns the integer remainder after dividing two numbers |\n| ++ | increment\
+    \ | adds one to a numeric variable |\n| -- | decrement | subtracts one from a\
+    \ numeric variable |\n\n### STRING\n\n| Symbol | Name | Description |\n| :---\
+    \ | :--- | :--- |\n| + | concatenation | concatenates or joins two strings or\
+    \ other elements |\n| += | concatenation/assignment | concatenates two string\
+    \ variables and assigns the result to the first variable |\n\n### LOGICAL\n\n\
+    | Symbol | Name | Description |\n| :--- | :--- | :--- |\n| && | logical AND |\
+    \ Compares two operands; returns true if both are true, otherwise returns false\
+    \ |\n| || | logical OR | Compares two operands; returns true if either operand\
+    \ is true, otherwise returns false |\n| ! | logical NOT | Returns false if its\
+    \ operand can be converted to true, otherwise returns false |\n\n### COMPARISON\n\
+    \n| Symbol | Description |\n| :--- | :--- |\n| == | Returns true if the operands\
+    \ are equal |\n| != | Returns true if the operands are not equal |\n| === | Returns\
+    \ true if the operands are equal and the same data type |\n| !== | Returns true\
+    \ if the operands are not equal and/or not the same data type |\n| > | Returns\
+    \ true if the first operand is greater than the second |\n| >= | Returns true\
+    \ if the first operand is greater than or equal to the second |\n| < | Returns\
+    \ true if the first operand is less than the second |\n| <= | Returns true if\
+    \ the first operand is less than or equal to the second |\n\n### ASSIGNMENT\n\n\
+    | Symbol | Description |\n| :--- | :--- |\n| = | Assigns the value of the second\
+    \ operand to the first operand |\n| += | Adds two numeric operands and assigns\
+    \ the result to the first operand |\n| -= | Subtracts the second operand from\
+    \ the first, and assigns the result to the first |\n| *= | Multiplies two operands,\
+    \ assigns the result to the first |\n| /= | Divides the first operand by the second,\
+    \ assigns the result to the first |\n| %= | Finds the modulus of two numeric operands,\
+    \ and assigns the result to the first |\n\n### RESERVED WORDS\n\n| Word | Word\
+    \ | Word | Word |\n| :--- | :--- | :--- | :--- |\n| abstract | else | instanceof\
+    \ | switch |\n| boolean | enum | int | synchronized |\n| break | export | interface\
+    \ | this |\n| byte | extends | long | throw |\n| case | false | native | throws\
+    \ |\n| catch | final | new | transient |\n| char | finally | null | true |\n|\
+    \ class | float | package | try |\n| const | for | private | typeof |\n| continue\
+    \ | function | protected | var |\n| debugger | goto | public | void |\n| default\
+    \ | if | return | volatile |\n| delete | implements | short | while |\n| do |\
+    \ import | static | with |\n| double | in | super | |"
+  mdcn: "\n## 函数\n\n*定义：* 一个预编写的代码块，用于执行特定任务。有些函数会返回值；其他函数则执行排序等任务，但不返回值。函数名遵循与变量名相同的规则。括号中可以有参数，也可以没有，但括号必须存在。\n\
+    \n**用户自定义函数：**\n\n*示例：*\n\n`parseInt()` 或 `parseFloat()` 将字符串转换为数字。\n\n创建一个函数：\n\
+    \n格式：\n\n```\nfunction 函数名 (参数) {\n    函数被调用时\n    要执行的语句;\n}\n```\n\n示例：\n\n\
+    ```\nfunction kilosToPounds (){\n    pounds=kilos*2.2046;\n}\n```\n\n这个新函数获取变量\
+    \ `kilos` 的值，乘以 2.2046，然后将结果赋值给变量 `pounds`。\n\n调用一个 *函数*：给出函数名，后面跟上参数（如果有的话）\n\
+    \n`parseInt(X)`；将变量 `X` 中存储的数据转换为数值。\n\n`kilosToPounds(17)`；将 17 公斤转换为相同质量的磅数，返回值\
+    \ 37.4782。\n\n## 综合应用：网络中的 JavaScript 与 HTML\n\n**Cookies：** 浏览器在用户计算机上存储的文本文件消息\n\
+    \n*目的：* 识别用户、存储偏好设置，并在用户每次访问页面时呈现定制化信息\n\n*类型：*\n\n*临时*（临时的、会话）— 存储在临时内存中，仅在浏览器会话期间可用\n\
+    \n*持久*（永久的、存储的）— 保留在用户计算机上，直到被删除或过期\n\n**浏览器检测：** 一个脚本，用于确定正在运行的是哪个浏览器；确定浏览器是否有能力加载网页并支持\
+    \ JavaScript 代码；以及在需要时，加载备用的 JavaScript 代码以匹配浏览器和平台。\n\n**嗅探：** 一个脚本，用于确定是否存在特定的浏览器功能；例如，在加载网页前检测\
+    \ Flash 的存在。\n\n**事件处理：** 使用 HTML 事件属性（鼠标悬停、鼠标点击等）并将事件连接到一个称为事件处理器的 JavaScript\
+    \ 函数\n\n## 方法\n\n*定义：* 一种特殊类型的函数，用于描述或指示对象的行为方式。JavaScript 中的每种对象类型都有相关的方法可供使用。\n\
+    \n*示例：*\n\n```\narray.sort();\ndocument.write();\nstring.length();\n```\n\n**调用：**\
+    \ 要调用或使用一个方法，请说明方法名，后跟括号中的参数。\n\n*示例：*\n\n```\ndocument.write(\"Hello, world!\"\
+    );\n```\n\n## 运算符\n\n### 算术运算符\n\n| 符号 | 名称 | 描述 |\n| :--- | :--- | :--- |\n|\
+    \ + | 加法 | 两个数字相加 |\n| - | 减法 | 从一个数字中减去另一个数字 |\n| * | 乘法 | 两个数字相乘 |\n| / | 除法\
+    \ | 一个数字除以另一个数字 |\n| % | 取模 | 返回两个数字相除后的整数余数 |\n| ++ | 自增 | 数值变量加一 |\n| -- | 自减\
+    \ | 数值变量减一 |\n\n### 字符串运算符\n\n| 符号 | 名称 | 描述 |\n| :--- | :--- | :--- |\n| + |\
+    \ 连接 | 连接或连接两个字符串或其他元素 |\n| += | 连接/赋值 | 连接两个字符串变量并将结果赋值给第一个变量 |\n\n### 逻辑运算符\n\
+    \n| 符号 | 名称 | 描述 |\n| :--- | :--- | :--- |\n| && | 逻辑与 | 比较两个操作数；如果两者都为 true，则返回\
+    \ true，否则返回 false |\n| \\|\\| | 逻辑或 | 比较两个操作数；如果任一操作数为 true，则返回 true，否则返回 false\
+    \ |\n| ! | 逻辑非 | 如果其操作数可以转换为 true，则返回 false，否则返回 false |\n\n### 比较运算符\n\n| 符号\
+    \ | 描述 |\n| :--- | :--- |\n| == | 如果操作数相等，则返回 true |\n| != | 如果操作数不相等，则返回 true\
+    \ |\n| === | 如果操作数相等且数据类型相同，则返回 true |\n| !== | 如果操作数不相等和/或数据类型不同，则返回 true |\n\
+    | > | 如果第一个操作数大于第二个，则返回 true |\n| >= | 如果第一个操作数大于或等于第二个，则返回 true |\n| < | 如果第一个操作数小于第二个，则返回\
+    \ true |\n| <= | 如果第一个操作数小于或等于第二个，则返回 true |\n\n### 赋值运算符\n\n| 符号 | 描述 |\n| :---\
+    \ | :--- |\n| = | 将第二个操作数的值赋给第一个操作数 |\n| += | 两个数值操作数相加，并将结果赋值给第一个操作数 |\n| -=\
+    \ | 从第一个操作数中减去第二个操作数，并将结果赋值给第一个 |\n| *= | 两个操作数相乘，并将结果赋值给第一个 |\n| /= | 第一个操作数除以第二个操作数，并将结果赋值给第一个\
+    \ |\n| %= | 计算两个数值操作数的模，并将结果赋值给第一个 |\n\n### 保留字\n\n| 字 | 字 | 字 | 字 |\n| :--- |\
+    \ :--- | :--- | :--- |\n| abstract | else | instanceof | switch |\n| boolean |\
+    \ enum | int | synchronized |\n| break | export | interface | this |\n| byte |\
+    \ extends | long | throw |\n| case | false | native | throws |\n| catch | final\
+    \ | new | transient |\n| char | finally | null | true |\n| class | float | package\
+    \ | try |\n| const | for | private | typeof |\n| continue | function | protected\
+    \ | var |\n| debugger | goto | public | void |\n| default | if | return | volatile\
+    \ |\n| delete | implements | short | while |\n| do | import | static | with |\n\
+    | double | in | super | |\n"
+  merge: 0
+  raw:
+  - "[PAGE 4]\n\n# FUNCTIONS\n\n*Definition:* A pre-written block of code that performs\
+    \ a specific task. Some functions return values; others perform a task like sorting,\
+    \ but return no value. Function names follow the same rules as variables names.\
+    \ There may or may not be an argument or parameter in the parenthesis, but the\
+    \ parenthesis has to be there.\n\n**User-defined Functions:**\n\n*Example:*\n\n\
+    `parseInt()` or `parseFloat()` convert a string to a number.\n\nTo create a function:\n\
+    \nFormat:\n\n```\nfunction name_of_function (arguments) {\n    statements to execute\
+    \ when\n    function is called;\n}\n```\n\nExample:\n\n```\nfunction kilosToPounds\
+    \ (){\n    pounds=kilos*2.2046;\n}\n```\n\nThis new function takes the value of\
+    \ the variable kilos, multiplies it by 2.2046, and assigns the result to the variable\
+    \ pounds.\n\nTo call a *function*: Give the name of the function followed by its\
+    \ arguments, if any\n\n`parseInt(X)`; converts the data stored in the variable\
+    \ X into a numeric value.\n\n`kilosToPounds(17)`; converts 17 kilos to the same\
+    \ mass in pounds, returning the value 37.4782.\n\n# PUTTING IT TOGETHER: JAVASCRIPT\
+    \ AND HTML ON THE WEB\n\n**Cookies:** Text-file messages stored by the browser\
+    \ on the user's computer\n\n*Purpose:* To identify the user, store preferences,\
+    \ and present customized information each time the user visits the page\n\n*Types:*\n\
+    \n*Temporary* (transient, session) — stored in temporary memory and available\
+    \ only during active browser session\n\n*Persistent* (permanent, stored) — remain\
+    \ on user's computer until deleted or expired\n\n**Browser Detection:** A script\
+    \ written to determine which browser is running; determine if the browser has\
+    \ the capabilities to load the webpage and support the javascript code; and, if\
+    \ needed, load alternate javascript code to match the browser and platform.\n\n\
+    **Sniffing:** A script written to determine whether a specific browser feature\
+    \ is present; i.e., detecting the presence of Flash before loading a webpage.\n\
+    \n**Event Handling:** Use HTML event attributes (mouseover, mouse click, etc.)\
+    \ and connect event to a JavaScript function called an event handler\n\n# METHODS\n\
+    \n*Definition:* A special kind of function used to describe or instruct the way\
+    \ the object behaves. Each object type in JavaScript has associated methods available.\n\
+    \n*Examples:*\n\n```\narray.sort();\ndocument.write();\nstring.length();\n```\n\
+    \n**Calling:** To call or use a method, state the method name followed by its\
+    \ parameters in parentheses.\n\n*Example:*\n\n```\ndocument.write(\"Hello, world!\"\
+    );\n```"
+  - '[PAGE 5]
+
+
+    # # OPERATORS
+
+
+    # # ARITHMETIC
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | + | addition | adds two numbers |
+
+    | - | subtraction | subtracts one number from another |
+
+    | * | multiplication | multiplies two numbers |
+
+    | / | division | divides one number by another |
+
+    | % | modulus | returns the integer remainder after dividing two numbers |
+
+    | ++ | increment | adds one to a numeric variable |
+
+    | -- | decrement | subtracts one from a numeric variable |
+
+
+    # # STRING
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | + | concatenation | concatenates or joins two strings or other elements |
+
+    | += | concatenation/assignment | concatenates two string variables and assigns
+    the result to the first variable |
+
+
+    # # LOGICAL
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | && | logical AND | Compares two operands; returns true if both are true, otherwise
+    returns false |
+
+    | || | logical OR | Compares two operands; returns true if either operand is true,
+    otherwise returns false |
+
+    | ! | logical NOT | Returns false if its operand can be converted to true, otherwise
+    returns false |
+
+
+    # # COMPARISON
+
+
+    | Symbol | Description |
+
+    | :--- | :--- |
+
+    | == | Returns true if the operands are equal |
+
+    | != | Returns true if the operands are not equal |
+
+    | === | Returns true if the operands are equal and the same data type |
+
+    | !== | Returns true if the operands are not equal and/or not the same data type
+    |
+
+    | > | Returns true if the first operand is greater than the second |
+
+    | >= | Returns true if the first operand is greater than or equal to the second
+    |
+
+    | < | Returns true if the first operand is less than the second |
+
+    | <= | Returns true if the first operand is less than or equal to the second |
+
+
+    # # ASSIGNMENT
+
+
+    | Symbol | Description |
+
+    | :--- | :--- |
+
+    | = | Assigns the value of the second operand to the first operand |
+
+    | += | Adds two numeric operands and assigns the result to the first operand |
+
+    | -= | Subtracts the second operand from the first, and assigns the result to
+    the first |
+
+    | *= | Multiplies two operands, assigns the result to the first |
+
+    | /= | Divides the first operand by the second, assigns the result to the first
+    |
+
+    | %= | Finds the modulus of two numeric operands, and assigns the result to the
+    first |
+
+
+    # # RESERVED WORDS
+
+
+    | Word | Word | Word | Word |
+
+    | :--- | :--- | :--- | :--- |
+
+    | abstract | else | instanceof | switch |
+
+    | boolean | enum | int | synchronized |
+
+    | break | export | interface | this |
+
+    | byte | extends | long | throw |
+
+    | case | false | native | throws |
+
+    | catch | final | new | transient |
+
+    | char | finally | null | true |
+
+    | class | float | package | try |
+
+    | const | for | private | typeof |
+
+    | continue | function | protected | var |
+
+    | debugger | goto | public | void |
+
+    | default | if | return | volatile |
+
+    | delete | implements | shor | while |
+
+    | do | import | static | with |
+
+    | double | in | super | |'
+pages:
+- img_proc: true
+  md: '# # Addison-Wesley’s
+
+    ## JavaScript Reference Card
+
+    ### Kathleen M. Goelz and Carol J. Schwartz, Rutgers University
+
+
+    **Javascript:** A scripting language designed to be integrated into HTML code
+    to produce enhanced, dynamic, interactive web pages.
+
+
+    # # DATA TYPES
+
+
+    *Definition:* The classification of values based on the specific categories in
+    which they are stored.
+
+
+    *Primitive Types:* String, Boolean, Integer, Floating Point, Null, Void
+
+
+    *Composite Types:* Object, Array, Function. Composite data types are in separate
+    sections of the code.
+
+
+    # ## NUMERIC
+
+
+    **Integer:** Positive or negative numbers with no fractional parts or decimal
+    places.
+
+
+    **Floating Point:** Positive or negative numbers that contain a decimal point
+    or exponential notations.
+
+
+    **String:** A sequence of readable characters or text, surrounded by single or
+    double quotes.
+
+
+    **Boolean:** The logical values True/False, etc. used to compare data or make
+    decisions.
+
+
+    **Null:** The variable does not have a value; nothing to report. Null is not the
+    same as zero, which is a numeric value.
+
+
+    **Casting:** Moving the contents of a variable of one type to a variable of a
+    different type. You don''t move the contents to a different variable; it stays
+    in the same variable but the data type is changed or "re-cast".
+
+
+    # # VARIABLES
+
+
+    *Definition:* A placeholder for storing data. In JavaScript, a declaration statement
+    consists of the reserved word `var` and the name (identifier) of one or more variables.
+
+
+    *Format:*
+
+
+    ```
+
+    var variable_name
+
+    [var command is used to declare (create) variables]
+
+    ```
+
+
+    *Examples:*
+
+
+    ```
+
+    var myHouseColor
+
+    var myAddress
+
+    var vacation_house, condominium, primaryResidence
+
+    ```
+
+
+    *Rules for Naming Variables:*
+
+
+    1. Variables cannot be reserved words.
+
+    2. Variables must begin with a letter or underscore and cannot begin with symbols,
+    numbers, or arithmetic notations.
+
+    3. Spaces cannot be included in a variable name.
+
+
+    **Hints:**
+
+
+    1. Although variables in JavaScript can be used without being declared, it is
+    good programming practice to declare (initialize), all variables.
+
+    2. Variable names are case sensitive; for example X does not equal x.
+
+
+    ![](img/594ed2567c706c00bdbf404270dcdceb_0_0.png)
+
+
+    ![](img/594ed2567c706c00bdbf404270dcdceb_0_1.png)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: "# # INITIALIZING VARIABLES\n\nUse the declaration statement to assign a value\
+    \ to the variable. The value is on the right of the equal sign; the variable is\
+    \ on the left.\n\nFormat:\n\n```\nvar variable_name = value\n```\n\nExamples:\n\
+    \n```\nvar myHouseColor = \"yellow\"\n[literal string value yellow assigned to\
+    \ variable myHouseColor]\n\nvar myAddress = 473\n[numeric value 473 assigned to\
+    \ variable myAddress]\n\nvar bookTitle = \"Time Capsule\", cost = 28.95, publisher\
+    \ = \"Tucker Bay\"\n[multiple variables can be assigned in one statement]\n```\n\
+    \n# # DECISION MAKING AND CONTROL STRUCTURES\n\n**Definition:** Statements and\
+    \ structures used to change the order in which computer operations will occur.\n\
+    \n**Types:**\n\nConditional Branching IF, IF-ELSE, IF-ELSE IF, SWITCH, WHILE,\
+    \ DO, FOR\n\n# # CONDITIONALS\n\nIF Statement: A conditional branching statement\
+    \ used to determine whether a stated condition is TRUE.\n\nFormat:\n\n```\nif\
+    \ (condition) {\n    statements if condition is TRUE\n}\n```\n\nExample:\n\n```\n\
+    if (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\";\n\
+    }\n```\n\nIF-ELSE Statement: A conditional branching statement that includes a\
+    \ path to follow if the condition is TRUE and a path to follow if the condition\
+    \ is FALSE.\n\nFormat:\n\n```\nif (condition) {\n    statements if condition is\
+    \ TRUE;\n} else {\n    statements if condition is FALSE;\n}\n```\n\nExample:\n\
+    \n```\nif (score >= 65) {\n    grade = \"Pass\";\n    message = \"Congratulations\"\
+    ;\n} else {\n    grade = \"Fail\"\n    message = \"Try again\";\n}\n```\n\nIF-ELSE\
+    \ IF Statement: A conditional branching statement that allows for more than two\
+    \ possible paths. The first time a true condition is encountered, the statement\
+    \ is executed and the remaining conditions will not be tested.\n\nFormat:\n\n\
+    ```\nif (condition) {\n    Statements if condition is TRUE;\n} else if (condition)\
+    \ {\n    Statements if condition is TRUE;\n} else {\n    Statements if no prior\
+    \ condition is true;\n}\n```"
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "Example:\n\n```\nif (score>=90) {\n    grade=\"A\";\n}\nelse if (score>=80)\
+    \ {\n    grade=\"B\";\n}\nelse if (score>=70) {\n    grade=\"C\";\n}\nelse if\
+    \ (score>=65) {\n    grade=\"D\";\n}\nelse {\n    grade=\"F\";\n}\n```\n\nSWITCH\
+    \ Statement: An alternative to the IF-ELSE IF statement for handling multiple\
+    \ options. Compares the expression to the test values to find a match.\n\nFormat:\n\
+    \n```\nswitch (expression or variable name) {\n    case label:\n        statements\
+    \ if expression matches this label;\n        break;\n    case label:\n       \
+    \ statements if expression matches this label;\n        break;\n    default:\n\
+    \        statements if expression does not match any label;\n        break;\n\
+    }\n```\n\nExample:\n\n```\nswitch (colorchoice) {\n    case \"red\":\n       \
+    \ document.bgColor=\"red\";\n        break;\n    case \"blue\":\n        document.bgColor=\"\
+    blue\";\n        break;\n    default:\n        document.bgColor=\"white\";\n \
+    \       break;\n}\n```\n\n# LOOPS\n\nLoops cause a segment of code to repeat until\
+    \ a stated condition is met. You can use any loop format for any type of code\n\
+    \nFOR LOOP:\n\nFormat:\n\n```\nFor (intialize; conditional test; increment/decrement)\
+    \ {\n    Statements to execute;\n}\n```\n\nExample:\n\n```\nFor (var i=0; i<=10;\
+    \ i++) {\n    document.write (\"This is line \" + i);\n}\n```\n\nDO/WHILE LOOP:\n\
+    \nFormat:\n\n```\ndo {\n    Statements to execute;\n} while (condition);\n```\n\
+    \nExample:\n\n```\nvar i=0;\ndo {\n    document.write (\"This is line \" + i);\n\
+    \    i++;\n} while (i <=10);\n```"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: "# WHILE LOOP:\n\nFormat:\n`while (condition) {`\n    `Statements;`\n    `Increment/decrement;`\n\
+    `}`\n\nExample:\n`var i = 0;`\n`while (i<=10) {`\n    `document.write (\"This\
+    \ is line \" + i);`\n    `i++;`\n`}`\n\nHint: Watch out for infinite loops, which\
+    \ do not have a stopping condition or have a stopping condition that will never\
+    \ be reached.\n\n# OBJECTS\n\nDefinition: Objects are a composite data type which\
+    \ contain properties and methods. JavaScript contains built-in objects and allows\
+    \ the user to create custom objects.\n\nCreating Objects: Use the `new` constructor\n\
+    `var X = new Array()`\n\nExamples:\ndate, time, math, strings, arrays\n\n# ARRAY\
+    \ OBJECT\n\nDefinition: Array object is a variable that stores multiple values.\
+    \ Each value is given an index number in the array and each value is referred\
+    \ to by the array name and the index number. Arrays, like simple variables, can\
+    \ hold any kind of data. You can leave the size blank when you create an array.\
+    \ The size of the array will be determined by the number of items placed in it.\n\
+    \nFormat:\n`var arrayname = new Array(size)`\n\nHint: When you create an array,\
+    \ you create a new instance of the array object. All properties and methods of\
+    \ the array object are available to your new array.\n\nExample:\n`var days = new\
+    \ Array (7)`\nThis creates an array of seven elements using the array constructor.\n\
+    The first item is `days[0]`, the last item is `days[6]`.\n\n# Initializing Arrays:\n\
+    \nArray items can be treated as simple variables:\n`days[0] = \"Sunday\";`\n`days[1]\
+    \ = \"Monday\";`\netc.\n\n# STRING OBJECT\n\nDefinition: String object is created\
+    \ by assigning a string to a variable, or by using the new object constructor.\n\
+    \nExample:\n`var name = \"Carol\";`\n`var name = new String(\"Carol\");`\n\nProperties:\n\
+    **Length:** returns the number of characters in the string\n**Prototype:** allows\
+    \ the user to add methods and properties to the string\n\nMethods:\nString formatting\
+    \ methods (similar to HTML formatting tags)\n`String.big`\n`String.blink`\n`String.italics`\n\
+    \nSubstring methods (allow user to find, match, or change patterns of characters\
+    \ in the string)\n`indexOf()`\n`charAt()`\n`replace()`\n\n# MATH OBJECT\n\nDefinition:\
+    \ Math object allows arithmetic calculations not supported by the basic math operators.\
+    \ Math is a built-in object that the user does not need to define.\n\nExamples:\n\
+    `Math.abs(number)` returns absolute value of the numeric argument\n`Math.cos(number)`\
+    \ returns the cosine of the argument, in radians\n`Math.round(number)` rounds\
+    \ number to the nearest integer\n\n# DATE/TIME OBJECTS\n\nDate object provides\
+    \ methods for getting or setting information about the date and time.\nNote: Dates\
+    \ before January 1, 1970 are not supported."
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: "# FUNCTIONS\n\n*Definition:* A pre-written block of code that performs a specific\
+    \ task. Some functions return values; others perform a task like sorting, but\
+    \ return no value. Function names follow the same rules as variables names. There\
+    \ may or may not be an argument or parameter in the parenthesis, but the parenthesis\
+    \ has to be there.\n\n**User-defined Functions:**\n\n*Example:*\n\n`parseInt()`\
+    \ or `parseFloat()` convert a string to a number.\n\nTo create a function:\n\n\
+    Format:\n\n```\nfunction name_of_function (arguments) {\n    statements to execute\
+    \ when\n    function is called;\n}\n```\n\nExample:\n\n```\nfunction kilosToPounds\
+    \ (){\n    pounds=kilos*2.2046;\n}\n```\n\nThis new function takes the value of\
+    \ the variable kilos, multiplies it by 2.2046, and assigns the result to the variable\
+    \ pounds.\n\nTo call a *function*: Give the name of the function followed by its\
+    \ arguments, if any\n\n`parseInt(X)`; converts the data stored in the variable\
+    \ X into a numeric value.\n\n`kilosToPounds(17)`; converts 17 kilos to the same\
+    \ mass in pounds, returning the value 37.4782.\n\n# PUTTING IT TOGETHER: JAVASCRIPT\
+    \ AND HTML ON THE WEB\n\n**Cookies:** Text-file messages stored by the browser\
+    \ on the user's computer\n\n*Purpose:* To identify the user, store preferences,\
+    \ and present customized information each time the user visits the page\n\n*Types:*\n\
+    \n*Temporary* (transient, session) — stored in temporary memory and available\
+    \ only during active browser session\n\n*Persistent* (permanent, stored) — remain\
+    \ on user's computer until deleted or expired\n\n**Browser Detection:** A script\
+    \ written to determine which browser is running; determine if the browser has\
+    \ the capabilities to load the webpage and support the javascript code; and, if\
+    \ needed, load alternate javascript code to match the browser and platform.\n\n\
+    **Sniffing:** A script written to determine whether a specific browser feature\
+    \ is present; i.e., detecting the presence of Flash before loading a webpage.\n\
+    \n**Event Handling:** Use HTML event attributes (mouseover, mouse click, etc.)\
+    \ and connect event to a JavaScript function called an event handler\n\n# METHODS\n\
+    \n*Definition:* A special kind of function used to describe or instruct the way\
+    \ the object behaves. Each object type in JavaScript has associated methods available.\n\
+    \n*Examples:*\n\n```\narray.sort();\ndocument.write();\nstring.length();\n```\n\
+    \n**Calling:** To call or use a method, state the method name followed by its\
+    \ parameters in parentheses.\n\n*Example:*\n\n```\ndocument.write(\"Hello, world!\"\
+    );\n```"
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# # OPERATORS
+
+
+    # # ARITHMETIC
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | + | addition | adds two numbers |
+
+    | - | subtraction | subtracts one number from another |
+
+    | * | multiplication | multiplies two numbers |
+
+    | / | division | divides one number by another |
+
+    | % | modulus | returns the integer remainder after dividing two numbers |
+
+    | ++ | increment | adds one to a numeric variable |
+
+    | -- | decrement | subtracts one from a numeric variable |
+
+
+    # # STRING
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | + | concatenation | concatenates or joins two strings or other elements |
+
+    | += | concatenation/assignment | concatenates two string variables and assigns
+    the result to the first variable |
+
+
+    # # LOGICAL
+
+
+    | Symbol | Name | Description |
+
+    | :--- | :--- | :--- |
+
+    | && | logical AND | Compares two operands; returns true if both are true, otherwise
+    returns false |
+
+    | || | logical OR | Compares two operands; returns true if either operand is true,
+    otherwise returns false |
+
+    | ! | logical NOT | Returns false if its operand can be converted to true, otherwise
+    returns false |
+
+
+    # # COMPARISON
+
+
+    | Symbol | Description |
+
+    | :--- | :--- |
+
+    | == | Returns true if the operands are equal |
+
+    | != | Returns true if the operands are not equal |
+
+    | === | Returns true if the operands are equal and the same data type |
+
+    | !== | Returns true if the operands are not equal and/or not the same data type
+    |
+
+    | > | Returns true if the first operand is greater than the second |
+
+    | >= | Returns true if the first operand is greater than or equal to the second
+    |
+
+    | < | Returns true if the first operand is less than the second |
+
+    | <= | Returns true if the first operand is less than or equal to the second |
+
+
+    # # ASSIGNMENT
+
+
+    | Symbol | Description |
+
+    | :--- | :--- |
+
+    | = | Assigns the value of the second operand to the first operand |
+
+    | += | Adds two numeric operands and assigns the result to the first operand |
+
+    | -= | Subtracts the second operand from the first, and assigns the result to
+    the first |
+
+    | *= | Multiplies two operands, assigns the result to the first |
+
+    | /= | Divides the first operand by the second, assigns the result to the first
+    |
+
+    | %= | Finds the modulus of two numeric operands, and assigns the result to the
+    first |
+
+
+    # # RESERVED WORDS
+
+
+    | Word | Word | Word | Word |
+
+    | :--- | :--- | :--- | :--- |
+
+    | abstract | else | instanceof | switch |
+
+    | boolean | enum | int | synchronized |
+
+    | break | export | interface | this |
+
+    | byte | extends | long | throw |
+
+    | case | false | native | throws |
+
+    | catch | final | new | transient |
+
+    | char | finally | null | true |
+
+    | class | float | package | try |
+
+    | const | for | private | typeof |
+
+    | continue | function | protected | var |
+
+    | debugger | goto | public | void |
+
+    | default | if | return | volatile |
+
+    | delete | implements | shor | while |
+
+    | do | import | static | with |
+
+    | double | in | super | |'
+  merge: -1
+  pgno: 5
+toc:
+- - '#'
+  - 艾迪森·韦斯利 JavaScript 参考卡片
+- - '##'
+  - 数据类型
+- - '###'
+  - 数值型
+- - '##'
+  - 变量
+- - '###'
+  - 初始化变量
+- - '##'
+  - 决策与控制结构
+- - '###'
+  - 条件语句
+- - '###'
+  - 循环
+- - '##'
+  - 对象
+- - '###'
+  - 数组对象
+- - '####'
+  - 初始化数组：
+- - '###'
+  - 字符串对象
+- - '###'
+  - 数学对象
+- - '###'
+  - 日期/时间对象
+- - '###'
+  - 函数
+- - '##'
+  - 综合应用：网络中的 JavaScript 与 HTML
+- - '##'
+  - 方法
+- - '##'
+  - 运算符
+- - '###'
+  - 算术运算符
+- - '###'
+  - 字符串运算符
+- - '###'
+  - 逻辑运算符
+- - '###'
+  - 比较运算符
+- - '###'
+  - 赋值运算符
+- - '###'
+  - 保留字
