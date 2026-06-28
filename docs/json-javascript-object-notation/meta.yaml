@@ -1,0 +1,3476 @@
+groups:
+- md: "# About the Tutorial\n\nJSON or JavaScript Object Notation is a lightweight\
+    \ text-based open standard designed for human-readable data interchange. The JSON\
+    \ format was originally specified by Douglas Crockford, and is described in RFC\
+    \ 4627. The official Internet media type for JSON is application/json. The JSON\
+    \ filename extension is .json.\n\nThis tutorial will help you understand JSON\
+    \ and its use within various programming languages such as PHP, PERL, Python,\
+    \ Ruby, Java, etc.\n\n# Audience\n\nThis tutorial has been designed to help beginners\
+    \ understand the basic functionality of JavaScript Object Notation (JSON) to develop\
+    \ the data interchange format. After completing this tutorial, you will have a\
+    \ good understanding of JSON and how to use it with JavaScript, Ajax, Perl, etc.\n\
+    \n# Prerequisites\n\nBefore proceeding with this tutorial, you should have a basic\
+    \ understanding of the web application's work over HTTP and we assume that you\
+    \ have a basic knowledge of JavaScript.\n\n# Copyright & Disclaimer\n\n© Copyright\
+    \ 2017 by Tutorials Point (I) Pvt. Ltd.\n\nAll the content and graphics published\
+    \ in this e-book are the property of Tutorials Point (I) Pvt. Ltd. The user of\
+    \ this e-book is prohibited to reuse, retain, copy, distribute or republish any\
+    \ contents or a part of contents of this e-book in any manner without written\
+    \ consent of the publisher.\n\nWe strive to update the contents of our website\
+    \ and tutorials as timely and as precisely as possible, however, the contents\
+    \ may contain inaccuracies or errors. Tutorials Point (I) Pvt. Ltd. provides no\
+    \ guarantee regarding the accuracy, timeliness or completeness of our website\
+    \ or its contents including this tutorial. If you discover any errors on our website\
+    \ or in this tutorial, please notify us at contact@tutorialspoint.com\n\n# Table\
+    \ of Contents\n\n- About the Tutorial\n- Audience\n- Prerequisites\n- Copyright\
+    \ & Disclaimer\n- Table of Contents\n1. JSON – OVERVIEW\n   - Uses of JSON\n \
+    \  - Characteristics of JSON\n   - Simple Example in JSON\n2. JSON – SYNTAX\n\
+    3. JSON – DATATYPES\n   - Number\n   - String\n   - Boolean\n   - Array\n   -\
+    \ Object\n   - Whitespace\n   - null\n   - JSON Value\n4. JSON – OBJECTS\n   -\
+    \ Creating Simple Objects\n   - Creating Array Objects\n5. JSON – SCHEMA\n   -\
+    \ JSON Schema Validation Libraries\n   - JSON Schema Example\n6. JSON – COMPARISON\
+    \ WITH XML\n7. JSON – JSON WITH PHP\n   - Environment\n   - JSON Functions\n \
+    \  - Encoding JSON in PHP (json_encode)\n   - Decoding JSON in PHP (json_decode)\n\
+    8. JSON – JSON WITH PERL\n   - Environment\n   - JSON Functions\n   - Encoding\
+    \ JSON in Perl (encode_json)\n   - Decoding JSON in Perl (decode_json)\n9. JSON\
+    \ – JSON WITH PYTHON\n   - Environment\n   - JSON Functions\n   - Encoding JSON\
+    \ in Python (encode)\n   - Decoding JSON in Python (decode)\n10. JSON – JSON WITH\
+    \ RUBY\n    - Environment\n    - Parsing JSON using Ruby\n11. JSON – JSON WITH\
+    \ JAVA\n    - Environment\n    - Mapping between JSON and Java entities\n    -\
+    \ Encoding JSON in Java\n    - Decoding JSON in Java\n12. JSON – JSON WITH AJAX\n\
+    \n# 1. JSON – Overview\n\nJSON or JavaScript Object Notation is a lightweight\
+    \ text-based open standard designed for human-readable data interchange. Conventions\
+    \ used by JSON are known to programmers, which include C, C++, Java, Python, Perl,\
+    \ etc.\n\n- JSON stands for JavaScript Object Notation.\n- The format was specified\
+    \ by Douglas Crockford.\n- It was designed for human-readable data interchange.\n\
+    - It has been extended from the JavaScript scripting language.\n- The filename\
+    \ extension is **.json**.\n- JSON Internet Media type is **application/json**.\n\
+    - The Uniform Type Identifier is public.json.\n\n# Uses of JSON\n\n- It is used\
+    \ while writing JavaScript based applications that includes browser extensions\
+    \ and websites.\n- JSON format is used for serializing and transmitting structured\
+    \ data over network connection.\n- It is primarily used to transmit data between\
+    \ a server and web applications.\n- Web services and APIs use JSON format to provide\
+    \ public data.\n- It can be used with modern programming languages.\n\n# Characteristics\
+    \ of JSON\n\n- JSON is easy to read and write.\n- It is a lightweight text-based\
+    \ interchange format.\n- JSON is language independent.\n\n# Simple Example in\
+    \ JSON\n\nThe following example shows how to use JSON to store information related\
+    \ to books based on their topic and edition.\n\n```\n{\n    \"book\": [\n    {\n\
+    ```"
+  mdcn: "\n# 关于本教程\n\nJSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻量级的、基于文本的开放标准，专为人类可读的数据交换而设计。JSON\
+    \ 格式最初由道格拉斯·克罗克福特（Douglas Crockford）制定，并在 RFC 4627 中进行了描述。JSON 的官方互联网媒体类型是 `application/json`。JSON\
+    \ 的文件名扩展名是 `.json`。\n\n本教程将帮助您了解 JSON 及其在各种编程语言（如 PHP、PERL、Python、Ruby、Java 等）中的使用。\n\
+    \n# 目标读者\n\n本教程旨在帮助初学者理解 JavaScript 对象表示法（JSON）的基本功能，以开发数据交换格式。完成本教程后，您将对 JSON\
+    \ 及其与 JavaScript、Ajax、Perl 等的使用有良好的理解。\n\n# 前提条件\n\n在继续学习本教程之前，您应该对 Web 应用程序通过\
+    \ HTTP 的工作方式有基本的了解，并且我们假设您具备基本的 JavaScript 知识。\n\n# 版权声明与免责声明\n\n© 版权所有 2017 Tutorials\
+    \ Point (I) Pvt. Ltd.\n\n本电子书发布的内容和图形均为 Tutorials Point (I) Pvt. Ltd. 的财产。未经出版商书面同意，本电子书用户不得以任何方式重用、保留、复制、分发或重新发布本电子书的任何内容或部分内容。\n\
+    \n我们力求及时、准确地更新我们网站和教程的内容，但是，内容可能包含不准确或错误之处。Tutorials Point (I) Pvt. Ltd. 不对其网站或其内容（包括本教程）的准确性、及时性或完整性做任何保证。如果您在我们网站或本教程中发现任何错误，请通过\
+    \ contact@tutorialspoint.com 通知我们。\n\n# 目录\n\n-   关于本教程\n-   目标读者\n-   前提条件\n\
+    -   版权声明与免责声明\n-   目录\n1.  JSON – 概述\n    -   JSON 的用途\n    -   JSON 的特性\n   \
+    \ -   JSON 简单示例\n2.  JSON – 语法\n3.  JSON – 数据类型\n    -   数字\n    -   字符串\n   \
+    \ -   布尔值\n    -   数组\n    -   对象\n    -   空白字符\n    -   null\n    -   JSON 值\n\
+    4.  JSON – 对象\n    -   创建简单对象\n    -   创建数组对象\n5.  JSON – 模式（Schema）\n    -  \
+    \ JSON Schema 验证库\n    -   JSON Schema 示例\n6.  JSON – 与 XML 的比较\n7.  JSON – JSON\
+    \ 与 PHP\n    -   环境\n    -   JSON 函数\n    -   在 PHP 中编码 JSON（json_encode）\n  \
+    \  -   在 PHP 中解码 JSON（json_decode）\n8.  JSON – JSON 与 PERL\n    -   环境\n    -\
+    \   JSON 函数\n    -   在 Perl 中编码 JSON（encode_json）\n    -   在 Perl 中解码 JSON（decode_json）\n\
+    9.  JSON – JSON 与 PYTHON\n    -   环境\n    -   JSON 函数\n    -   在 Python 中编码 JSON（encode）\n\
+    \    -   在 Python 中解码 JSON（decode）\n10. JSON – JSON 与 RUBY\n    -   环境\n    -\
+    \   使用 Ruby 解析 JSON\n11. JSON – JSON 与 JAVA\n    -   环境\n    -   JSON 与 Java 实体之间的映射\n\
+    \    -   在 Java 中编码 JSON\n    -   在 Java 中解码 JSON\n12. JSON – JSON 与 AJAX\n\n\
+    # 1. JSON – 概述\n\nJSON 或 JavaScript 对象表示法（JavaScript Object Notation）是一种轻量级的、基于文本的开放标准，专为人类可读的数据交换而设计。JSON\
+    \ 使用的约定为程序员所熟知，包括 C、C++、Java、Python、Perl 等。\n\n-   JSON 代表 JavaScript 对象表示法。\n\
+    -   该格式由道格拉斯·克罗克福特（Douglas Crockford）制定。\n-   它是为人类可读的数据交换而设计的。\n-   它是从 JavaScript\
+    \ 脚本语言扩展而来的。\n-   文件名扩展名是 **.json**。\n-   JSON 互联网媒体类型是 **application/json**。\n\
+    -   统一类型标识符是 `public.json`。\n\n# JSON 的用途\n\n-   用于编写基于 JavaScript 的应用程序，包括浏览器扩展和网站。\n\
+    -   JSON 格式用于通过网络连接序列化和传输结构化数据。\n-   它主要用于在服务器和 Web 应用程序之间传输数据。\n-   Web 服务和 API\
+    \ 使用 JSON 格式来提供公共数据。\n-   它可以与现代编程语言一起使用。\n\n# JSON 的特性\n\n-   JSON 易于读写。\n- \
+    \  它是一种轻量级的基于文本的交换格式。\n-   JSON 与语言无关。\n\n# JSON 简单示例\n\n以下示例展示了如何使用 JSON 存储与书籍主题和版本相关的信息。\n\
+    \n```\n{\n    \"book\": [\n    {\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_0_0.png)
+
+
+    # # tutorialspoint
+
+
+    SIMPLYEASYLEARNING
+
+
+    www.tutorialspoint.com
+
+
+    +   - [Facebook](https://www.facebook.com/tutorialspointindia) - [Twitter](https://twitter.com/tutorialspoint)'
+  - '[PAGE 1]
+
+
+    # About the Tutorial
+
+
+    JSON or JavaScript Object Notation is a lightweight text-based open standard designed
+    for human-readable data interchange. The JSON format was originally specified
+    by Douglas Crockford, and is described in RFC 4627. The official Internet media
+    type for JSON is application/json. The JSON filename extension is .json.
+
+
+    This tutorial will help you understand JSON and its use within various programming
+    languages such as PHP, PERL, Python, Ruby, Java, etc.
+
+
+    # Audience
+
+
+    This tutorial has been designed to help beginners understand the basic functionality
+    of JavaScript Object Notation (JSON) to develop the data interchange format. After
+    completing this tutorial, you will have a good understanding of JSON and how to
+    use it with JavaScript, Ajax, Perl, etc.
+
+
+    # Prerequisites
+
+
+    Before proceeding with this tutorial, you should have a basic understanding of
+    the web application''s work over HTTP and we assume that you have a basic knowledge
+    of JavaScript.
+
+
+    # Copyright & Disclaimer
+
+
+    © Copyright 2017 by Tutorials Point (I) Pvt. Ltd.
+
+
+    All the content and graphics published in this e-book are the property of Tutorials
+    Point (I) Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy,
+    distribute or republish any contents or a part of contents of this e-book in any
+    manner without written consent of the publisher.
+
+
+    We strive to update the contents of our website and tutorials as timely and as
+    precisely as possible, however, the contents may contain inaccuracies or errors.
+    Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy, timeliness
+    or completeness of our website or its contents including this tutorial. If you
+    discover any errors on our website or in this tutorial, please notify us at contact@tutorialspoint.com
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_1_0.png)'
+  - "[PAGE 2]\n\n# # Table of Contents\n\n+   - About the Tutorial................................................................................................................................................................................i\n\
+    - Audience ........................................................................................................................................................................................................i\n\
+    - Prerequisites ................................................................................................................................................................................................i\n\
+    - Copyright & Disclaimer............................................................................................................................................................................i\n\
+    - Table of Contents .......................................................................................................................................................................................ii\n\
+    \n+   1. JSON – OVERVIEW ..................................................................................................................................................................................1\n\
+    \    Uses of JSON ...........................................................................................................................................................................................1\n\
+    \    Characteristics of JSON............................................................................................................................................................................1\n\
+    \    Simple Example in JSON..........................................................................................................................................................................1\n\
+    \n+   2. JSON – SYNTAX .........................................................................................................................................................................................4\n\
+    \n+   3. JSON – DATATYPES ................................................................................................................................................................................5\n\
+    \    Number...........................................................................................................................................................................................................5\n\
+    \    String ...............................................................................................................................................................................................................6\n\
+    \    Boolean..........................................................................................................................................................................................................7\n\
+    \    Array ...............................................................................................................................................................................................................7\n\
+    \    Object .............................................................................................................................................................................................................8\n\
+    \    Whitespace ...................................................................................................................................................................................................8\n\
+    \    null...................................................................................................................................................................................................................9\n\
+    \    JSON Value..................................................................................................................................................................................................9\n\
+    \n+   4. JSON – OBJECTS......................................................................................................................................................................................10\n\
+    \    Creating Simple Objects .......................................................................................................................................................................10\n\
+    \    Creating Array Objects ..........................................................................................................................................................................11\n\
+    \n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_2_0.png)"
+  - '[PAGE 3]
+
+
+    +   5. JSON – SCHEMA
+
+    JSON Schema Validation Libraries
+
+    JSON Schema Example
+
+    6. JSON – COMPARISON WITH XML
+
+    7. JSON – JSON WITH PHP
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in PHP (json_encode)
+
+    Decoding JSON in PHP (json_decode)
+
+    8. JSON – JSON WITH PERL
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in Perl (encode_json)
+
+    Decoding JSON in Perl (decode_json)
+
+    9. JSON – JSON WITH PYTHON
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in Python (encode)
+
+    Decoding JSON in Python (decode)
+
+    10. JSON – JSON WITH RUBY
+
+    Environment
+
+    Parsing JSON using Ruby
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_3_0.png)'
+  - '[PAGE 4]
+
+
+    +   11. JSON – JSON WITH JAVA
+
+
+    +   Environment
+
+
+    +   Mapping between JSON and Java entities
+
+
+    +   Encoding JSON in Java
+
+
+    +   Decoding JSON in Java
+
+
+    +   12. JSON – JSON WITH AJAX'
+  - "[PAGE 5]\n\n# 1. JSON – Overview\n\nJSON or JavaScript Object Notation is a lightweight\
+    \ text-based open standard designed for human-readable data interchange. Conventions\
+    \ used by JSON are known to programmers, which include C, C++, Java, Python, Perl,\
+    \ etc.\n\n+   - JSON stands for JavaScript Object Notation.\n- The format was\
+    \ specified by Douglas Crockford.\n- It was designed for human-readable data interchange.\n\
+    - It has been extended from the JavaScript scripting language.\n- The filename\
+    \ extension is **.json**.\n- JSON Internet Media type is **application/json**.\n\
+    - The Uniform Type Identifier is public.json.\n\n# Uses of JSON\n\n+   - It is\
+    \ used while writing JavaScript based applications that includes browser extensions\
+    \ and websites.\n- JSON format is used for serializing and transmitting structured\
+    \ data over network connection.\n- It is primarily used to transmit data between\
+    \ a server and web applications.\n- Web services and APIs use JSON format to provide\
+    \ public data.\n- It can be used with modern programming languages.\n\n# Characteristics\
+    \ of JSON\n\n+   - JSON is easy to read and write.\n- It is a lightweight text-based\
+    \ interchange format.\n- JSON is language independent.\n\n# Simple Example in\
+    \ JSON\n\nThe following example shows how to use JSON to store information related\
+    \ to books based on their topic and edition.\n\n```\n{\n    \"book\": [\n    {\n\
+    ```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_5_0.png)"
+- md: "## JSON\n\n```json\n\"id\":\"01\",\n\"language\": \"Java\",\n\"edition\": \"\
+    third\",\n\"author\": \"Herbert Schildt\"\n},\n{\n    \"id\":\"07\",\n    \"language\"\
+    : \"C++\",\n    \"edition\": \"second\",\n    \"author\": \"E.Balagurusamy\"\n\
+    }]\n}\n```\n\nAfter understanding the above program, we will try another example.\
+    \ Let's save the below code as **json.htm**:\n\n```html\n<html>\n<head>\n<title>JSON\
+    \ example</title>\n<script language=\"javascript\" >\n\n    var object1 = { \"\
+    language\" : \"Java\", \"author\"  : \"herbert schildt\" };\n    document.write(\"\
+    <h1>JSON with JavaScript example</h1>\");\n    document.write(\"<br>\");\n   \
+    \ document.write(\"<h3>Language = \" + object1.language+\"</h3>\");\n    document.write(\"\
+    <h3>Author = \" + object1.author+\"</h3>\");\n\n    var object2 = { \"language\"\
+    \ : \"C++\", \"author\"  : \"E-Balagurusamy\" };\n    document.write(\"<br>\"\
+    );\n    document.write(\"<h3>Language = \" + object2.language+\"</h3>\");\n  \
+    \  document.write(\"<h3>Author = \" + object2.author+\"</h3>\");\n\n    document.write(\"\
+    <hr />\");\n    document.write(object2.language + \" programming language can\
+    \ be studied \" +\n    \"from book written by \" + object2.author);\n    document.write(\"\
+    <hr />\");\n</script>\n</head>\n<body>\n</body>\n</html>\n```\n\nNow let's try\
+    \ to open json.htm using IE or any other javascript enabled browser that produces\
+    \ the following result:\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_0.png)\n\
+    \nYou can refer to JSON Objects chapter for more information on JSON objects.\n\
+    \n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_1.png)\n\n## 2. JSON – Syntax\n\n\
+    Let's have a quick look at the basic syntax of JSON. JSON syntax is basically\
+    \ considered as a subset of JavaScript syntax; it includes the following:\n\n\
+    - Data is represented in name/value pairs.\n- Curly braces hold objects and each\
+    \ name is followed by ':' (colon), the name/value pairs are separated by ',' (comma).\n\
+    - Square brackets hold arrays and values are separated by ',' (comma).\n\nBelow\
+    \ is a simple example:\n\n```json\n{\n    \"book\": [\n    {\n        \"id\":\"\
+    01\",\n        \"language\": \"Java\",\n        \"edition\": \"third\",\n    \
+    \    \"author\": \"Herbert Schildt\"\n    },\n    {\n        \"id\":\"07\",\n\
+    \        \"language\": \"C++\",\n        \"edition\": \"second\",\n        \"\
+    author\": \"E.Balagurusamy\"\n    }]\n}\n```\n\nJSON supports the following two\
+    \ data structures:\n\n- **Collection of name/value pairs:** This data structure\
+    \ is supported by different programming languages.\n- **Ordered list of values:**\
+    \ It includes array, list, vector or sequence etc.\n\n## 3. JSON – DataTypes\n\
+    \nJSON format supports the following data types:\n\n| Type | Description |\n|\
+    \ :--- | :--- |\n| Number | double-precision floating-point format in JavaScript\
+    \ |\n| String | double-quoted Unicode with backslash escaping |\n| Boolean | true\
+    \ or false |\n| Array | an ordered sequence of values |\n| Value | it can be a\
+    \ string, a number, true or false, null etc |\n| Object | an unordered collection\
+    \ of key:value pairs |\n| Whitespace | can be used between any pair of tokens\
+    \ |\n| null | empty |\n\n### Number\n\n- It is a double precision floating-point\
+    \ format in JavaScript and it depends on implementation.\n- Octal and hexadecimal\
+    \ formats are not used.\n- No NaN or Infinity is used in Number.\n\nThe following\
+    \ table shows the number types:\n\n| Type | Description |\n| :--- | :--- |\n|\
+    \ Integer | Digits 1-9, 0 and positive or negative |\n| Fraction | Fractions like\
+    \ .3, .9 |\n| Exponent | Exponent like e, e+, e-, E, E+, E- |\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_9_0.png)\n\
+    \n### Syntax\n\n```javascript\nvar json-object-name = {\"string\" : number_value,\
+    \ ......}\n```\n\n### Example\n\nExample showing Number Datatype, value should\
+    \ not be quoted:\n\n```javascript\nvar obj = {\"marks\": 97}\n```\n\n### String\n\
+    \n- It is a sequence of zero or more double quoted Unicode characters with backslash\
+    \ escaping.\n- Character is a single character string i.e. a string with length\
+    \ 1.\n\nThe table shows various special characters that you can use in strings\
+    \ of a JSON document:\n\n| Type | Description |\n| :--- | :--- |\n| \" | double\
+    \ quotation |\n| \\ | backslash |\n| / | forward slash |\n| b | backspace |\n\
+    | f | form feed |\n| n | new line |\n| r | carriage return |\n| t | horizontal\
+    \ tab |\n| u | four hexadecimal digits |\n\n### Syntax\n\n```javascript\nvar json-object-name\
+    \ = { string : \"string value\", ......}\n```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_10_0.png)\n\
+    \n### Example\n\nExample showing String Datatype:\n\n```javascript\nvar obj =\
+    \ {\"name\": \"Amit\"}\n```\n\n### Boolean\n\nIt includes true or false values.\n\
+    \n### Syntax\n\n```javascript\nvar json-object-name = { string : true/false, .......}\n\
+    ```\n\n### Example\n\n```javascript\nvar obj = {\"name\": \"Amit\", \"marks\"\
+    : 97, \"distinction\": true}\n```\n\n### Array\n\n- It is an ordered collection\
+    \ of values.\n- These are enclosed in square brackets which means that array begins\
+    \ with '[' and ends with ']'.\n- The values are separated by ',' (comma).\n- Array\
+    \ indexing can be started at 0 or 1.\n- Arrays should be used when the key names\
+    \ are sequential integers.\n\n### Syntax\n\n```javascript\n[ value, .......]\n\
+    ```\n\n### Example\n\nExample showing array containing multiple objects:\n\n```json\n\
+    {\n  \"books\": [\n    { \"language\":\"Java\" , \"edition\":\"second\" },\n \
+    \   { \"language\":\"C++\" , \"lastName\":\"fifth\" },\n    { \"language\":\"\
+    C\" , \"lastName\":\"third\" }\n  ]\n}\n```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_11_0.png)\n\
+    \n### Object\n\n- It is an unordered set of name/value pairs.\n- Objects are enclosed\
+    \ in curly braces that is, it starts with '{' and ends with '}'.\n- Each name\
+    \ is followed by ':' (colon) and the key/value pairs are separated by ',' (comma).\n\
+    - The keys must be strings and should be different from each other.\n- Objects\
+    \ should be used when the key names are arbitrary strings.\n\n### Syntax\n\n```javascript\n\
+    { string : value, ......}\n```\n\n### Example\n\nExample showing Object:\n\n```json\n\
+    {\n  \"id\": \"011A\",\n  \"language\": \"JAVA\",\n  \"price\": 500\n}\n```\n\n\
+    ### Whitespace\n\nIt can be inserted between any pair of tokens. It can be added\
+    \ to make a code more readable. Example shows declaration with and without whitespace:\n\
+    \n### Syntax\n\n```javascript\n{string: \"  \",....}\n```\n\n### Example\n\n```javascript\n\
+    var obj1 = {\"name\": \"Sachin Tendulkar\"}\nvar obj2 = {\"name\": \"SauravGanguly\"\
+    }\n```\n\n### null\n\nIt means empty type.\n\n### Syntax\n\n```javascript\nnull\n\
+    ```\n\n### Example\n\n```javascript\nvar i = null;\n\nif(i==1)\n{\n    document.write(\"\
+    <h1>value is 1</h1>\");\n}\nelse\n{\n    document.write(\"<h1>value is null</h1>\"\
+    );\n}\n```\n\n### JSON Value\n\nIt includes:\n\n- number (integer or floating\
+    \ point)\n- string\n- boolean\n- array\n- object\n- null\n\n### Syntax\n\n```javascript\n\
+    String | Number | Object | Array | TRUE | FALSE | NULL\n```\n\n### Example\n\n\
+    ```javascript\nvar i = 1;\nvar j = \"sachin\";\nvar k = null;\n```\n\n## 4. JSON\
+    \ – Objects\n\n### Creating Simple Objects\n\nJSON objects can be created with\
+    \ JavaScript. Let us see the various ways of creating JSON objects using JavaScript:\n\
+    \n- Creation of an empty Object:\n- Creation of a new Object:\n- Creation of an\
+    \ object with attribute **bookname** with value in string, attribute **price**\
+    \ with numeric value. Attribute is accessed by using '.' Operator:\n\n```javascript\n\
+    var JSONObject = {};\n```\n\n```javascript\nvar JSONObject = new Object();\n```\n\
+    \n```javascript\nvar JSONObject = { \"bookname \":\"VB BLACK BOOK\", \"price\"\
+    :500 };\n```\n\nThis is an example that shows creation of an object in javascript\
+    \ using JSON, save the below code as **json_object.htm**:\n\n```html\n<html>\n\
+    <head>\n<title>Creating Object JSON with JavaScript</title>\n<script language=\"\
+    javascript\" >\n\nvar JSONObject = { \"name\" : \"tutorialspoint.com\", \"year\"\
+    \ : 2005 };\ndocument.write(\"<h1>JSON with JavaScript example</h1>\");\ndocument.write(\"\
+    <br>\");\ndocument.write(\"<h3>Website Name=\"+JSONObject.name+\"</h3>\");\ndocument.write(\"\
+    <h3>Year=\"+JSONObject.year+\"</h3>\");\n\n</script>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\nNow let's try to open json_object.htm using IE or any other javascript\
+    \ enabled browser. It produces the following result:\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_15_0.png)\n\
+    \n### Creating Array Objects\n\nThe following example shows creation of an array\
+    \ object in javascript using JSON, save the below code as **json_array_object.htm**:\n\
+    \n```html\n<html>\n<head>\n<title>Creation of array object in javascript using\
+    \ JSON</title>\n<script language=\"javascript\" >\n\ndocument.writeln(\"<h2>JSON\
+    \ array object</h2>\");\n\nvar books = { \"Pascal\" : [\n    { \"Name\"  : \"\
+    Pascal Made Simple\", \"price\" : 700 },\n    { \"Name\"  : \"Guide to Pascal\"\
+    , \"price\" : 400 }\n    ],\n    \"Scala\"  : [\n    { \"Name\"  : \"Scala for\
+    \ the Impatient\", \"price\" : 1000 },\n    { \"Name\"  : \"Scala in Depth\",\
+    \ \"price\" : 1300 }\n    ]\n}\n\nvar i = 0\ndocument.writeln(\"<table border='2'><tr>\"\
+    );\nfor(i=0;i<books.Pascal.length;i++)\n{\n    document.writeln(\"<td>\");\n</script>\n\
+    </head>\n<body></body>\n</html>\n```"
+  mdcn: "\n## JSON\n\n```json\n\"id\":\"01\",\n\"language\": \"Java\",\n\"edition\"\
+    : \"third\",\n\"author\": \"Herbert Schildt\"\n},\n{\n    \"id\":\"07\",\n   \
+    \ \"language\": \"C++\",\n    \"edition\": \"second\",\n    \"author\": \"E.Balagurusamy\"\
+    \n}]\n}\n```\n\n理解上述程序后，我们将尝试另一个示例。将下面的代码保存为 **json.htm**：\n\n```html\n<html>\n\
+    <head>\n<title>JSON example</title>\n<script language=\"javascript\" >\n\n   \
+    \ var object1 = { \"language\" : \"Java\", \"author\"  : \"herbert schildt\" };\n\
+    \    document.write(\"<h1>JSON with JavaScript example</h1>\");\n    document.write(\"\
+    <br>\");\n    document.write(\"<h3>Language = \" + object1.language+\"</h3>\"\
+    );\n    document.write(\"<h3>Author = \" + object1.author+\"</h3>\");\n\n    var\
+    \ object2 = { \"language\" : \"C++\", \"author\"  : \"E-Balagurusamy\" };\n  \
+    \  document.write(\"<br>\");\n    document.write(\"<h3>Language = \" + object2.language+\"\
+    </h3>\");\n    document.write(\"<h3>Author = \" + object2.author+\"</h3>\");\n\
+    \n    document.write(\"<hr />\");\n    document.write(object2.language + \" programming\
+    \ language can be studied \" +\n    \"from book written by \" + object2.author);\n\
+    \    document.write(\"<hr />\");\n</script>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n现在，让我们尝试使用IE或任何其他支持JavaScript的浏览器打开json.htm，产生以下结果：\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_0.png)\n\
+    \n有关JSON对象的更多信息，你可以参考JSON对象章节。\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_1.png)\n\
+    \n## 2. JSON – 语法\n\n让我们快速了解一下JSON的基本语法。JSON语法基本上被视为JavaScript语法的子集；它包括以下内容：\n\
+    \n-   数据以名称/值对的形式表示。\n-   花括号保存对象，每个名称后跟':'（冒号），名称/值对由','（逗号）分隔。\n-   方括号保存数组，值由','（逗号）分隔。\n\
+    \n下面是一个简单的例子：\n\n```json\n{\n    \"book\": [\n    {\n        \"id\":\"01\",\n\
+    \        \"language\": \"Java\",\n        \"edition\": \"third\",\n        \"\
+    author\": \"Herbert Schildt\"\n    },\n    {\n        \"id\":\"07\",\n       \
+    \ \"language\": \"C++\",\n        \"edition\": \"second\",\n        \"author\"\
+    : \"E.Balagurusamy\"\n    }]\n}\n```\n\nJSON支持以下两种数据结构：\n\n-   **名称/值对的集合：** 这种数据结构得到不同编程语言的支持。\n\
+    -   **值的有序列表：** 它包括数组、列表、向量或序列等。\n\n## 3. JSON – 数据类型\n\nJSON格式支持以下数据类型：\n\n|\
+    \ 类型 | 描述 |\n| :--- | :--- |\n| Number | JavaScript中的双精度浮点数格式 |\n| String | 带反斜杠转义的双引号Unicode\
+    \ |\n| Boolean | true或false |\n| Array | 值的有序序列 |\n| Value | 可以是字符串、数字、true或false、null等\
+    \ |\n| Object | 键值对的无序集合 |\n| Whitespace | 可以在任何一对标记之间使用 |\n| null | 空值 |\n\n\
+    ### Number\n\n-   它是JavaScript中的双精度浮点数格式，具体取决于实现。\n-   不使用八进制和十六进制格式。\n-   数字中不使用NaN或Infinity。\n\
+    \n下表显示了数字类型：\n\n| 类型 | 描述 |\n| :--- | :--- |\n| Integer | 数字1-9，0，正数或负数 |\n| Fraction\
+    \ | 小数，如.3, .9 |\n| Exponent | 指数，如e, e+, e-, E, E+, E- |\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_9_0.png)\n\
+    \n### 语法\n\n```javascript\nvar json-object-name = {\"string\" : number_value,\
+    \ ......}\n```\n\n### 示例\n\n展示数字数据类型的示例，值不应该加引号：\n\n```javascript\nvar obj = {\"\
+    marks\": 97}\n```\n\n### String\n\n-   它是零个或多个带反斜杠转义的双引号Unicode字符的序列。\n-   字符是单个字符字符串，即长度为1的字符串。\n\
+    \n下表显示了可以在JSON文档字符串中使用的各种特殊字符：\n\n| 类型 | 描述 |\n| :--- | :--- |\n| \" | 双引号 |\n\
+    | \\ | 反斜杠 |\n| / | 正斜杠 |\n| b | 退格 |\n| f | 换页 |\n| n | 换行 |\n| r | 回车 |\n| t\
+    \ | 水平制表符 |\n| u | 四个十六进制数字 |\n\n### 语法\n\n```javascript\nvar json-object-name\
+    \ = { string : \"string value\", ......}\n```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_10_0.png)\n\
+    \n### 示例\n\n展示字符串数据类型的示例：\n\n```javascript\nvar obj = {\"name\": \"Amit\"}\n```\n\
+    \n### Boolean\n\n它包括true或false值。\n\n### 语法\n\n```javascript\nvar json-object-name\
+    \ = { string : true/false, .......}\n```\n\n### 示例\n\n```javascript\nvar obj =\
+    \ {\"name\": \"Amit\", \"marks\": 97, \"distinction\": true}\n```\n\n### Array\n\
+    \n-   它是值的有序集合。\n-   它们被括在方括号中，这意味着数组以'['开始，以']'结束。\n-   值由','（逗号）分隔。\n-   数组索引可以从0或1开始。\n\
+    -   当键名是连续的整数时，应该使用数组。\n\n### 语法\n\n```javascript\n[ value, .......]\n```\n\n\
+    ### 示例\n\n展示包含多个对象的数组的示例：\n\n```json\n{\n  \"books\": [\n    { \"language\":\"\
+    Java\" , \"edition\":\"second\" },\n    { \"language\":\"C++\" , \"lastName\"\
+    :\"fifth\" },\n    { \"language\":\"C\" , \"lastName\":\"third\" }\n  ]\n}\n```\n\
+    \n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_11_0.png)\n\n### Object\n\n-   它是名称/值对的无序集合。\n\
+    -   对象被括在花括号中，即它以'{'开始，以'}'结束。\n-   每个名称后跟':'（冒号），键/值对由','（逗号）分隔。\n-   键必须是字符串，并且应该彼此不同。\n\
+    -   当键名是任意字符串时，应该使用对象。\n\n### 语法\n\n```javascript\n{ string : value, ......}\n\
+    ```\n\n### 示例\n\n展示对象的示例：\n\n```json\n{\n  \"id\": \"011A\",\n  \"language\":\
+    \ \"JAVA\",\n  \"price\": 500\n}\n```\n\n### Whitespace\n\n它可以在任何一对标记之间插入。添加它可以提高代码的可读性。示例展示了有和没有空白符的声明：\n\
+    \n### 语法\n\n```javascript\n{string: \"  \",....}\n```\n\n### 示例\n\n```javascript\n\
+    var obj1 = {\"name\": \"Sachin Tendulkar\"}\nvar obj2 = {\"name\": \"SauravGanguly\"\
+    }\n```\n\n### null\n\n它意味着空类型。\n\n### 语法\n\n```javascript\nnull\n```\n\n### 示例\n\
+    \n```javascript\nvar i = null;\n\nif(i==1)\n{\n    document.write(\"<h1>value\
+    \ is 1</h1>\");\n}\nelse\n{\n    document.write(\"<h1>value is null</h1>\");\n\
+    }\n```\n\n### JSON 值\n\n它包括：\n\n-   数字（整数或浮点数）\n-   字符串\n-   布尔值\n-   数组\n-  \
+    \ 对象\n-   null\n\n### 语法\n\n```javascript\nString | Number | Object | Array |\
+    \ TRUE | FALSE | NULL\n```\n\n### 示例\n\n```javascript\nvar i = 1;\nvar j = \"\
+    sachin\";\nvar k = null;\n```\n\n## 4. JSON – 对象\n\n### 创建简单对象\n\nJSON对象可以使用JavaScript创建。让我们看看使用JavaScript创建JSON对象的各种方式：\n\
+    \n-   创建空对象：\n-   创建新对象：\n-   创建一个具有字符串值的属性**bookname**和数值属性**price**的对象。使用'.'运算符访问属性：\n\
+    \n```javascript\nvar JSONObject = {};\n```\n\n```javascript\nvar JSONObject =\
+    \ new Object();\n```\n\n```javascript\nvar JSONObject = { \"bookname \":\"VB BLACK\
+    \ BOOK\", \"price\":500 };\n```\n\n这是一个展示在JavaScript中使用JSON创建对象的例子，将下面的代码保存为 **json_object.htm**：\n\
+    \n```html\n<html>\n<head>\n<title>Creating Object JSON with JavaScript</title>\n\
+    <script language=\"javascript\" >\n\nvar JSONObject = { \"name\" : \"tutorialspoint.com\"\
+    , \"year\" : 2005 };\ndocument.write(\"<h1>JSON with JavaScript example</h1>\"\
+    );\ndocument.write(\"<br>\");\ndocument.write(\"<h3>Website Name=\"+JSONObject.name+\"\
+    </h3>\");\ndocument.write(\"<h3>Year=\"+JSONObject.year+\"</h3>\");\n\n</script>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n现在，让我们尝试使用IE或任何其他支持JavaScript的浏览器打开json_object.htm。它产生以下结果：\n\
+    \n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_15_0.png)\n\n### 创建数组对象\n\n以下示例展示了在JavaScript中使用JSON创建数组对象，将下面的代码保存为\
+    \ **json_array_object.htm**：\n\n```html\n<html>\n<head>\n<title>Creation of array\
+    \ object in javascript using JSON</title>\n<script language=\"javascript\" >\n\
+    \ndocument.writeln(\"<h2>JSON array object</h2>\");\n\nvar books = { \"Pascal\"\
+    \ : [\n    { \"Name\"  : \"Pascal Made Simple\", \"price\" : 700 },\n    { \"\
+    Name\"  : \"Guide to Pascal\", \"price\" : 400 }\n    ],\n    \"Scala\"  : [\n\
+    \    { \"Name\"  : \"Scala for the Impatient\", \"price\" : 1000 },\n    { \"\
+    Name\"  : \"Scala in Depth\", \"price\" : 1300 }\n    ]\n}\n\nvar i = 0\ndocument.writeln(\"\
+    <table border='2'><tr>\");\nfor(i=0;i<books.Pascal.length;i++)\n{\n    document.writeln(\"\
+    <td>\");\n</script>\n</head>\n<body></body>\n</html>\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 6]\n\n# JSON\n\n```\n\"id\":\"01\",\n\"language\": \"Java\",\n\"edition\"\
+    : \"third\",\n\"author\": \"Herbert Schildt\"\n},\n{\n    \"id\":\"07\",\n   \
+    \ \"language\": \"C++\",\n    \"edition\": \"second\"\n    \"author\": \"E.Balagurusamy\"\
+    \n}]\n}\n```\n\nAfter understanding the above program, we will try another example.\
+    \ Let's save the below code as **json.htm**:\n\n```\n<html>\n<head>\n<title>JSON\
+    \ example</title>\n<script language=\"javascript\" >\n\n    var object1 = { \"\
+    language\" : \"Java\", \"author\"  : \"herbert schildt\" };\n    document.write(\"\
+    <h1>JSON with JavaScript example</h1>\");\n    document.write(\"<br>\");\n   \
+    \ document.write(\"<h3>Language = \" + object1.language+\"</h3>\");\n    document.write(\"\
+    <h3>Author = \" + object1.author+\"</h3>\");\n\n    var object2 = { \"language\"\
+    \ : \"C++\", \"author\"  : \"E-Balagurusamy\" };\n    document.write(\"<br>\"\
+    );\n    document.write(\"<h3>Language = \" + object2.language+\"</h3>\");\n  \
+    \  document.write(\"<h3>Author = \" + object2.author+\"</h3>\");\n\n    document.write(\"\
+    <hr />\");\n    document.write(object2.language + \" programming language can\
+    \ be studied \" +\n    \"from book written by \" + object2.author);\n    document.write(\"\
+    <hr />\");\n```"
+  - '[PAGE 7]
+
+
+    ```
+
+    </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Now let''s try to open json.htm using IE or any other javascript enabled browser
+    that produces the following result:
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_0.png)
+
+
+    You can refer to JSON Objects chapter for more information on JSON objects.
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_1.png)'
+  - "[PAGE 8]\n\n# 2. JSON – Syntax\n\nLet's have a quick look at the basic syntax\
+    \ of JSON. JSON syntax is basically considered as a subset of JavaScript syntax;\
+    \ it includes the following:\n\n+   * Data is represented in name/value pairs.\n\
+    * Curly braces hold objects and each name is followed by ':'(colon), the name/value\
+    \ pairs are separated by , (comma).\n* Square brackets hold arrays and values\
+    \ are separated by ,(comma).\n\nBelow is a simple example:\n\n```\n{\n    \"book\"\
+    : [\n    {\n        \"id\":\"01\",\n        \"language\": \"Java\",\n        \"\
+    edition\": \"third\",\n        \"author\": \"Herbert Schildt\"\n    },\n    {\n\
+    \        \"id\":\"07\",\n        \"language\": \"C++\",\n        \"edition\":\
+    \ \"second\"\n        \"author\": \"E.Balagurusamy\"\n    }]\n}\n```\n\nJSON supports\
+    \ the following two data structures:\n\n+   * **Collection of name/value pairs:**\
+    \ This Data Structure is supported by different programming languages.\n* **Ordered\
+    \ list of values:** It includes array, list, vector or sequence etc."
+  - '[PAGE 9]
+
+
+    # # 3. JSON – DataTypes
+
+
+    JSON format supports the following data types:
+
+
+    | Type | Description |
+
+    | :--- | :--- |
+
+    | Number | double- precision floating-point format in JavaScript |
+
+    | String | double-quoted Unicode with backslash escaping |
+
+    | Boolean | true or false |
+
+    | Array | an ordered sequence of values |
+
+    | Value | it can be a string, a number, true or false, null etc |
+
+    | Object | an unordered collection of key:value pairs |
+
+    | Whitespace | can be used between any pair of tokens |
+
+    | null | empty |
+
+
+    # ## Number
+
+
+    +   - It is a double precision floating-point format in JavaScript and it depends
+    on implementation.
+
+    - Octal and hexadecimal formats are not used.
+
+    - No NaN or Infinity is used in Number.
+
+
+    The following table shows the number types:
+
+
+    | Type | Description |
+
+    | :--- | :--- |
+
+    | Integer | Digits 1-9, 0 and positive or negative |
+
+    | Fraction | Fractions like .3, .9 |
+
+    | Exponent | Exponent like e, e+, e-,E, E+, E- |
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_9_0.png)'
+  - '[PAGE 10]
+
+
+    # JSON
+
+
+    # Syntax
+
+
+    ```
+
+    var json-object-name = {"string" : number_value, ......}
+
+    ```
+
+
+    # Example
+
+
+    Example showing Number Datatype, value should not be quoted:
+
+
+    ```
+
+    var obj = {"marks": 97}
+
+    ```
+
+
+    # String
+
+
+    +   - It is a sequence of zero or more double quoted Unicode characters with backslash
+    escaping.
+
+    - Character is a single character string i.e. a string with length 1.
+
+
+    The table shows various special characters that you can use in strings of a JSON
+    document:
+
+
+    | Type | Description |
+
+    |---|---|
+
+    | " | double quotation |
+
+    | \ | backslash |
+
+    | / | forward slash |
+
+    | b | backspace |
+
+    | f | form feed |
+
+    | n | new line |
+
+    | r | carriage return |
+
+    | t | horizontal tab |
+
+    | u | four hexadecimal digits |
+
+
+    # Syntax
+
+
+    ```
+
+    var json-object-name = { string : "string value", ......}
+
+    ```
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_10_0.png)'
+  - "[PAGE 11]\n\nJSON\n\n# Example\n\nExample showing String Datatype:\n\n```\nvar\
+    \ obj = {\"name\": \"Amit\"}\n```\n\n# Boolean\n\nIt includes true or false values.\n\
+    \n# Syntax\n\n```\nvar json-object-name = { string : true/false, .......}\n```\n\
+    \n# Example\n\n```\nvar obj = {\"name\": \"Amit\", \"marks\": 97, \"distinction\"\
+    : true}\n```\n\n# Array\n\n+   - It is an ordered collection of values.\n- These\
+    \ are enclosed in square brackets which means that array begins with .[. and ends\
+    \ with .].\n- The values are separated by , (comma).\n- Array indexing can be\
+    \ started at 0 or 1.\n- Arrays should be used when the key names are sequential\
+    \ integers.\n\n# Syntax\n\n```\n[ value, .......]\n```\n\n# Example\n\nExample\
+    \ showing array containing multiple objects:\n\n```\n{\n  \"books\": [\n    {\
+    \ \"language\":\"Java\" , \"edition\":\"second\" },\n    { \"language\":\"C++\"\
+    \ , \"lastName\":\"fifth\" },\n    { \"language\":\"C\" , \"lastName\":\"third\"\
+    \ }\n  ]\n}\n```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_11_0.png)"
+  - "[PAGE 12]\n\n# # Object\n\n+   - It is an unordered set of name/value pairs.\n\
+    - Objects are enclosed in curly braces that is, it starts with '{' and ends with\
+    \ '}'.\n- Each name is followed by ':'(colon) and the key/value pairs are separated\
+    \ by , (comma).\n- The keys must be strings and should be different from each\
+    \ other.\n- Objects should be used when the key names are arbitrary strings.\n\
+    \n# ## Syntax\n\n```\n{ string : value, ......}\n```\n\n# ## Example\n\nExample\
+    \ showing Object:\n\n```\n{\n  \"id\": \"011A\",\n  \"language\": \"JAVA\",\n\
+    \  \"price\": 500,\n}\n```\n\n# # Whitespace\n\nIt can be inserted between any\
+    \ pair of tokens. It can be added to make a code more readable. Example shows\
+    \ declaration with and without whitespace:\n\n# ## Syntax\n\n```\n{string: \"\
+    \  \",....}\n```\n\n# ## Example\n\n```\nvar obj1 = {\"name\": \"Sachin Tendulkar\"\
+    }\nvar obj2 = {\"name\": \"SauravGanguly\"}\n```"
+  - "[PAGE 13]\n\n# JSON\n\n# null\n\nIt means empty type.\n\n# Syntax\n\n```\nnull\n\
+    ```\n\n# Example\n\n```\nvar i = null;\n\nif(i==1)\n{\n    document.write(\"<h1>value\
+    \ is 1</h1>\");\n}\nelse\n{\n    document.write(\"<h1>value is null</h1>\");\n\
+    }\n```\n\n# JSON Value\n\nIt includes:\n\n+   - number (integer or floating point)\n\
+    - string\n- boolean\n- array\n- object\n- null\n\n# Syntax\n\n```\nString | Number\
+    \ | Object | Array | TRUE | FALSE | NULL\n```\n\n# Example\n\n```\nvar i = 1;\n\
+    var j = \"sachin\";\nvar k = null;\n```"
+  - '[PAGE 14]
+
+
+    # # 4. JSON – Objects
+
+
+    # ## Creating Simple Objects
+
+
+    JSON objects can be created with JavaScript. Let us see the various ways of creating
+    JSON objects using JavaScript:
+
+
+    +   * Creation of an empty Object:
+
+    * Creation of a new Object:
+
+    * Creation of an object with attribute **bookname** with value in string, attribute
+    **price** with numeric value. Attribute is accessed by using ''.'' Operator:
+
+
+    ```
+
+    var JSONObject = {};
+
+    ```
+
+
+    ```
+
+    var JSONObject = new Object();
+
+    ```
+
+
+    ```
+
+    var JSONObject = { "bookname ":"VB BLACK BOOK", "price":500 };
+
+    ```
+
+
+    This is an example that shows creation of an object in javascript using JSON,
+    save the below code as **json_object.htm**:
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>Creating Object JSON with JavaScript</title>
+
+    <script language="javascript" >
+
+
+    var JSONObject = { "name" : "tutorialspoint.com", "year" : 2005 };
+
+    document.write("<h1>JSON with JavaScript example</h1>");
+
+    document.write("<br>");
+
+    document.write("<h3>Website Name="+JSONObject.name+"</h3>");
+
+    document.write("<h3>Year="+JSONObject.year+"</h3>");
+
+
+    </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```'
+  - "[PAGE 15]\n\n# # JSON\n\nNow let's try to open json_object.htm using IE or any\
+    \ other javascript enabled browser. It produces the following result:\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_15_0.png)\n\
+    \n# # Creating Array Objects\n\nThe following example shows creation of an array\
+    \ object in javascript using JSON, save the below code as **json_array_object.htm**:\n\
+    \n```\n<html>\n<head>\n<title>Creation of array object in javascript using JSON</title>\n\
+    <script language=\"javascript\" >\n\ndocument.writeln(\"<h2>JSON array object</h2>\"\
+    );\n\nvar books = { \"Pascal\" : [\n    { \"Name\"  : \"Pascal Made Simple\",\
+    \ \"price\" : 700 },\n    { \"Name\"  : \"Guide to Pascal\", \"price\" : 400 }\n\
+    \    ],\n    \"Scala\"  : [\n    { \"Name\"  : \"Scala for the Impatient\", \"\
+    price\" : 1000 },\n    { \"Name\"  : \"Scala in Depth\", \"price\" : 1300 }\n\
+    \    ]\n}\n\nvar i = 0\ndocument.writeln(\"<table border='2'><tr>\");\nfor(i=0;i<books.Pascal.length;i++)\n\
+    {\n    document.writeln(\"<td>\");\n</script>\n</head>\n<body></body>\n</html>\n\
+    ```"
+- md: "## JSON array object\n\n| Name | Pascal Made Simple | Name | Guide to Pascal\
+    \ | Name | Scala for the Impatient | Name | Scala in Depth |\n| Price | 700 |\
+    \ Price | 400 | Price | 1000 | Price | 1300 |\n\n## 5. JSON – Schema\n\nJSON Schema\
+    \ is a specification for JSON based format for defining the structure of JSON\
+    \ data. It was written under IETF draft which expired in 2011. JSON Schema:\n\n\
+    - Describes your existing data format.\n- Clear, human- and machine-readable documentation.\n\
+    - Complete structural validation, useful for automated testing.\n- Complete structural\
+    \ validation, validating client-submitted data.\n\n### JSON Schema Validation\
+    \ Libraries\n\nThere are several validators currently available for different\
+    \ programming languages. Currently the most complete and compliant JSON Schema\
+    \ validator available is JSV.\n\n| Languages | Libraries |\n| :--- | :--- |\n\
+    | C | WJElement (LGPLv3) |\n| Java | json-schema-validator (LGPLv3) |\n| .NET\
+    \ | Json.NET (MIT) |\n| ActionScript 3 | Frigga (MIT) |\n| Haskell | aeson-schema\
+    \ (MIT) |\n| Python | Jsonschema |\n| Ruby | autoparse (ASL 2.0); ruby-jsonschema\
+    \ (MIT) |\n| PHP | php-json-schema (MIT). json-schema (Berkeley) |\n| JavaScript\
+    \ | Orderly (BSD); JSV; json-schema; Matic (MIT); Dojo; Persevere (modified BSD\
+    \ or AFL 2.0); schema.js. |\n\n## JSON Schema Example\n\nGiven below is a basic\
+    \ JSON schema, which covers a classical product catalog description:\n\n```\n\
+    {\n    \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n    \"title\"\
+    : \"Product\",\n    \"description\": \"A product from Acme's catalog\",\n    \"\
+    type\": \"object\",\n    \"properties\": {\n        \"id\": {\n            \"\
+    description\": \"The unique identifier for a product\",\n            \"type\"\
+    : \"integer\"\n        },\n        \"name\": {\n            \"description\": \"\
+    Name of the product\",\n            \"type\": \"string\"\n        },\n       \
+    \ \"price\": {\n            \"type\": \"number\",\n            \"minimum\": 0,\n\
+    \            \"exclusiveMinimum\": true\n        }\n    },\n    \"required\":\
+    \ [\"id\", \"name\", \"price\"]\n}\n```\n\nLet's check the various important keywords\
+    \ that can be used in this schema:\n\n| Keywords | Description |\n| :--- | :---\
+    \ |\n| $schema | The $schema keyword states that this schema is written according\
+    \ to the draft v4 specification. |\n| title | You will use this to give a title\
+    \ to your schema. |\n| description | A little description of the schema. |\n|\
+    \ type | The type keyword defines the first constraint on our JSON data: it has\
+    \ to be a JSON Object. |\n| properties | Defines various keys and their value\
+    \ types, minimum and maximum values to be used in JSON file. |\n| required | This\
+    \ keeps a list of required properties. |\n| minimum | This is the constraint to\
+    \ be put on the value and represents minimum acceptable value. |\n| exclusiveMinimum\
+    \ | If \"exclusiveMinimum\" is present and has boolean value true, the instance\
+    \ is valid if it is strictly greater than the value of \"minimum\". |\n| maximum\
+    \ | This is the constraint to be put on the value and represents maximum acceptable\
+    \ value. |\n| exclusiveMaximum | If \"exclusiveMaximum\" is present and has boolean\
+    \ value true, the instance is valid if it is strictly lower than the value of\
+    \ \"maximum\". |\n| multipleOf | A numeric instance is valid against \"multipleOf\"\
+    \ if the result of the division of the instance by this keyword's value is an\
+    \ integer. |\n| maxLength | The length of a string instance is defined as the\
+    \ maximum number of its characters. |\n| minLength | The length of a string instance\
+    \ is defined as the minimum number of its characters. |\n| pattern | A string\
+    \ instance is considered valid if the regular expression matches the instance\
+    \ successfully. |\n\n15\n\n![img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)\n\
+    \n## JSON\n\nYou can check a http://json-schema.org for the complete list of keywords\
+    \ that can be used in defining a JSON schema. The above schema can be used to\
+    \ test the validity of the following JSON code:\n\n```\n[\n  {\n    \"id\": 2,\n\
+    \    \"name\": \"An ice sculpture\",\n    \"price\": 12.50,\n  },\n  {\n    \"\
+    id\": 3,\n    \"name\": \"A blue mouse\",\n    \"price\": 25.50,\n  }\n]\n```\n\
+    \n## 6. JSON – Comparison with XML\n\nJSON and XML are human readable formats\
+    \ and are language independent. They both have support for creation, reading and\
+    \ decoding in real world situations. We can compare JSON with XML, based on the\
+    \ following factors:\n\n### Verbose\n\nXML is more verbose than JSON, so it is\
+    \ faster to write JSON for programmers.\n\n### Arrays Usage\n\nXML is used to\
+    \ describe the structured data, which doesn't include arrays whereas JSON include\
+    \ arrays.\n\n### Parsing\n\nJavaScript's *eval* method parses JSON. When applied\
+    \ to JSON, eval returns the described object.\n\n### Example\n\nIndividual examples\
+    \ of XML and JSON:\n\n### JSON\n\n```\n{\n    \"company\": Volkswagen,\n    \"\
+    name\": \"Vento\",\n    \"price\": 800000\n}\n```\n\n### XML\n\n```\n<car>\n \
+    \   <company>Volkswagen</company>\n    <name>Vento</name>\n    <price>800000</price>\n\
+    </car>\n```\n\n## 7. JSON – JSON with PHP\n\nThis chapter covers how to encode\
+    \ and decode JSON objects using PHP programming language. Let's start with preparing\
+    \ the environment to start our programming with PHP for JSON.\n\n### Environment\n\
+    \nAs of PHP 5.2.0, the JSON extension is bundled and compiled into PHP by default.\n\
+    \n### JSON Functions\n\n| Function | Libraries |\n| --- | --- |\n| json_encode\
+    \ | Returns the JSON representation of a value. |\n| json_decode | Decodes a JSON\
+    \ string. |\n| json_last_error | Returns the last error occurred. |\n\n### Encoding\
+    \ JSON in PHP (json_encode)\n\nPHP json_encode() function is used for encoding\
+    \ JSON in PHP. This function returns the JSON representation of a value on success\
+    \ or FALSE on failure.\n\n#### Syntax\n\n```\nstring json_encode ( $value [, $options\
+    \ = 0 ] )\n```\n\n#### Parameters\n\n- **value**: The value being encoded. This\
+    \ function only works with UTF-8 encoded data.\n- **options**: This optional value\
+    \ is a bitmask consisting of JSON_HEX_QUOT, JSON_HEX_TAG, JSON_HEX_AMP, JSON_HEX_APOS,\
+    \ JSON_NUMERIC_CHECK, JSON_PRETTY_PRINT, JSON_UNESCAPED_SLASHES, JSON_FORCE_OBJECT.\n\
+    \n### Example\n\nThe following example shows how to convert an array into JSON\
+    \ with PHP:\n\n```\n<?php\n    $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd'\
+    \ => 4, 'e' => 5);\n    echo json_encode($arr);\n?>\n```\n\nWhile executing, this\
+    \ will produce the following result:\n\n```\n{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"\
+    e\":5}\n```\n\nThe following example shows how the PHP objects can be converted\
+    \ into JSON:\n\n```\n<?php\n    class Emp {\n        public $name = \"\";\n  \
+    \      public $hobbies  = \"\";\n        public $birthdate = \"\";\n    }\n  \
+    \  $e = new Emp();\n    $e->name = \"sachin\";\n    $e->hobbies  = \"sports\"\
+    ;\n    $e->birthdate = date('m/d/Y h:i:s a', \"8/5/1974 12:20:03 p\");\n    $e->birthdate\
+    \ = date('m/d/Y h:i:s a', strtotime(\"8/5/1974 12:20:03\"));\n\n    echo json_encode($e);\n\
+    ?>\n```\n\nWhile executing, this will produce the following result:\n\n```\n{\"\
+    name\":\"sachin\",\"hobbies\":\"sports\",\"birthdate\":\"08\\/05\\/1974 12:20:03\
+    \ pm\"}\n```\n\n### Decoding JSON in PHP (json_decode)\n\nPHP json_decode() function\
+    \ is used for decoding JSON in PHP. This function returns the value decoded from\
+    \ json to appropriate PHP type.\n\n#### Syntax\n\n```\nmixed json_decode ($json\
+    \ [,$assoc = false [, $depth = 512 [, $options = 0 ]]])\n```"
+  mdcn: "\n## JSON 数组对象\n\n| 名称 | Pascal Made Simple | 名称 | Guide to Pascal | 名称 |\
+    \ Scala for the Impatient | 名称 | Scala in Depth |\n| 价格 | 700 | 价格 | 400 | 价格\
+    \ | 1000 | 价格 | 1300 |\n\n## 5. JSON – Schema\n\nJSON Schema 是一种基于 JSON 的格式规范，用于定义\
+    \ JSON 数据的结构。它是在 IETF 草案下编写的，该草案已于 2011 年过期。JSON Schema:\n\n-   描述你现有的数据格式。\n\
+    -   清晰、人类和机器可读的文档。\n-   完整的结构验证，适用于自动化测试。\n-   完整的结构验证，用于验证客户端提交的数据。\n\n### JSON\
+    \ Schema 验证库\n\n目前有几种不同编程语言的验证器可用。目前可用的最完整且最合规的 JSON Schema 验证器是 JSV。\n\n| 语言\
+    \ | 库 |\n| :--- | :--- |\n| C | WJElement (LGPLv3) |\n| Java | json-schema-validator\
+    \ (LGPLv3) |\n| .NET | Json.NET (MIT) |\n| ActionScript 3 | Frigga (MIT) |\n|\
+    \ Haskell | aeson-schema (MIT) |\n| Python | Jsonschema |\n| Ruby | autoparse\
+    \ (ASL 2.0); ruby-jsonschema (MIT) |\n| PHP | php-json-schema (MIT). json-schema\
+    \ (Berkeley) |\n| JavaScript | Orderly (BSD); JSV; json-schema; Matic (MIT); Dojo;\
+    \ Persevere (修改版 BSD 或 AFL 2.0); schema.js. |\n\n## JSON Schema 示例\n\n下面是一个基本的\
+    \ JSON schema，它涵盖了经典的产品目录描述：\n\n```\n{\n    \"$schema\": \"http://json-schema.org/draft-04/schema#\"\
+    ,\n    \"title\": \"Product\",\n    \"description\": \"A product from Acme's catalog\"\
+    ,\n    \"type\": \"object\",\n    \"properties\": {\n        \"id\": {\n     \
+    \       \"description\": \"The unique identifier for a product\",\n          \
+    \  \"type\": \"integer\"\n        },\n        \"name\": {\n            \"description\"\
+    : \"Name of the product\",\n            \"type\": \"string\"\n        },\n   \
+    \     \"price\": {\n            \"type\": \"number\",\n            \"minimum\"\
+    : 0,\n            \"exclusiveMinimum\": true\n        }\n    },\n    \"required\"\
+    : [\"id\", \"name\", \"price\"]\n}\n```\n\n让我们看看可以在此模式中使用的各种重要关键字：\n\n| 关键字 |\
+    \ 描述 |\n| :--- | :--- |\n| $schema | `$schema` 关键字声明此模式是按照草案 v4 规范编写的。 |\n| title\
+    \ | 你将使用此关键字为模式设置标题。 |\n| description | 对模式的简要描述。 |\n| type | `type` 关键字定义了对我们的\
+    \ JSON 数据的第一个约束：它必须是一个 JSON 对象。 |\n| properties | 定义在 JSON 文件中使用的各种键及其值类型、最小值和最大值。\
+    \ |\n| required | 保留必需属性的列表。 |\n| minimum | 这是要施加在值上的约束，表示可接受的最小值。 |\n| exclusiveMinimum\
+    \ | 如果存在 `exclusiveMinimum` 且布尔值为 true，则实例必须严格大于 `minimum` 的值才有效。 |\n| maximum\
+    \ | 这是要施加在值上的约束，表示可接受的最大值。 |\n| exclusiveMaximum | 如果存在 `exclusiveMaximum` 且布尔值为\
+    \ true，则实例必须严格小于 `maximum` 的值才有效。 |\n| multipleOf | 如果数字实例除以该关键字值的结果是整数，则该实例对\
+    \ `multipleOf` 有效。 |\n| maxLength | 字符串实例的长度定义为其字符的最大数量。 |\n| minLength | 字符串实例的长度定义为其字符的最小数量。\
+    \ |\n| pattern | 如果正则表达式成功匹配实例，则认为字符串实例有效。 |\n\n15\n\n![img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)\n\
+    \n## JSON\n\n你可以在 http://json-schema.org 查看可用于定义 JSON 模式的完整关键字列表。上述模式可用于测试以下 JSON\
+    \ 代码的有效性：\n\n```\n[\n  {\n    \"id\": 2,\n    \"name\": \"An ice sculpture\",\n\
+    \    \"price\": 12.50,\n  },\n  {\n    \"id\": 3,\n    \"name\": \"A blue mouse\"\
+    ,\n    \"price\": 25.50,\n  }\n]\n```\n\n## 6. JSON – 与 XML 的比较\n\nJSON 和 XML\
+    \ 都是人类可读的格式，并且与语言无关。它们都在现实世界中支持创建、读取和解码。我们可以基于以下因素将 JSON 与 XML 进行比较：\n\n### 冗余性\n\
+    \nXML 比 JSON 更冗长，因此对程序员来说，编写 JSON 更快。\n\n### 数组用法\n\nXML 用于描述结构化数据，但不包括数组，而 JSON\
+    \ 包括数组。\n\n### 解析\n\nJavaScript 的 *eval* 方法可以解析 JSON。当应用于 JSON 时，eval 返回描述的对象。\n\
+    \n### 示例\n\nXML 和 JSON 的独立示例：\n\n### JSON\n\n```\n{\n    \"company\": Volkswagen,\n\
+    \    \"name\": \"Vento\",\n    \"price\": 800000\n}\n```\n\n### XML\n\n```\n<car>\n\
+    \    <company>Volkswagen</company>\n    <name>Vento</name>\n    <price>800000</price>\n\
+    </car>\n```\n\n## 7. JSON – PHP 中的 JSON\n\n本章介绍如何使用 PHP 编程语言对 JSON 对象进行编码和解码。让我们从准备环境开始，以便使用\
+    \ PHP 进行 JSON 编程。\n\n### 环境\n\n从 PHP 5.2.0 开始，JSON 扩展默认捆绑并编译到 PHP 中。\n\n### JSON\
+    \ 函数\n\n| 函数 | 描述 |\n| --- | --- |\n| json_encode | 返回值的 JSON 表示形式。 |\n| json_decode\
+    \ | 解码 JSON 字符串。 |\n| json_last_error | 返回发生的最后一个错误。 |\n\n### 在 PHP 中编码 JSON (json_encode)\n\
+    \nPHP `json_encode()` 函数用于在 PHP 中编码 JSON。此函数成功时返回值的 JSON 表示形式，失败时返回 FALSE。\n\n\
+    #### 语法\n\n```\nstring json_encode ( $value [, $options = 0 ] )\n```\n\n#### 参数\n\
+    \n-   **value**：要编码的值。此函数仅适用于 UTF-8 编码的数据。\n-   **options**：此可选值是一个位掩码，由 `JSON_HEX_QUOT`、`JSON_HEX_TAG`、`JSON_HEX_AMP`、`JSON_HEX_APOS`、`JSON_NUMERIC_CHECK`、`JSON_PRETTY_PRINT`、`JSON_UNESCAPED_SLASHES`、`JSON_FORCE_OBJECT`\
+    \ 组成。\n\n### 示例\n\n以下示例展示了如何使用 PHP 将数组转换为 JSON：\n\n```\n<?php\n    $arr = array('a'\
+    \ => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);\n    echo json_encode($arr);\n\
+    ?>\n```\n\n执行时，将产生以下结果：\n\n```\n{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"e\":5}\n```\n\
+    \n以下示例展示了如何将 PHP 对象转换为 JSON：\n\n```\n<?php\n    class Emp {\n        public $name\
+    \ = \"\";\n        public $hobbies  = \"\";\n        public $birthdate = \"\"\
+    ;\n    }\n    $e = new Emp();\n    $e->name = \"sachin\";\n    $e->hobbies  =\
+    \ \"sports\";\n    $e->birthdate = date('m/d/Y h:i:s a', \"8/5/1974 12:20:03 p\"\
+    );\n    $e->birthdate = date('m/d/Y h:i:s a', strtotime(\"8/5/1974 12:20:03\"\
+    ));\n\n    echo json_encode($e);\n?>\n```\n\n执行时，将产生以下结果：\n\n```\n{\"name\":\"\
+    sachin\",\"hobbies\":\"sports\",\"birthdate\":\"08\\/05\\/1974 12:20:03 pm\"}\n\
+    ```\n\n### 在 PHP 中解码 JSON (json_decode)\n\nPHP `json_decode()` 函数用于在 PHP 中解码 JSON。此函数将\
+    \ json 解码的值返回为适当的 PHP 类型。\n\n#### 语法\n\n```\nmixed json_decode ($json [,$assoc\
+    \ = false [, $depth = 512 [, $options = 0 ]]])\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 16]\n\n```\ndocument.writeln(\"<table border='1' width=100 >\");\ndocument.writeln(\"\
+    <tr><td><b>Name</b></td><td width=50>\"\n + books.Pascal[i].Name+\"</td></tr>\"\
+    );\ndocument.writeln(\"<tr><td><b>Price</b></td><td width=50>\"\n + books.Pascal[i].price\
+    \ +\"</td></tr>\");\ndocument.writeln(\"</table>\");\ndocument.writeln(\"</td>\"\
+    );\n}\n\nfor(i=0;i<books.Scala.length;i++)\n{\n    document.writeln(\"<td>\");\n\
+    \    document.writeln(\"<table border='1' width=100 >\");\n    document.writeln(\"\
+    <tr><td><b>Name</b></td><td width=50>\"\n    + books.Scala[i].Name+\"</td></tr>\"\
+    );\n    document.writeln(\"<tr><td><b>Price</b></td><td width=50>\"\n    + books.Scala[i].price+\"\
+    </td></tr>\");\n    document.writeln(\"</table>\");\n    document.writeln(\"</td>\"\
+    );\n}\ndocument.writeln(\"</tr></table>\");\n</script>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\nNow let's try to open json_array_object.htm using IE or any other\
+    \ javascript enabled browser. It produces the following result:\n\n# JSON array\
+    \ object\n\n| Name | Pascal Made Simple | Name | Guide to Pascal | Name | Scala\
+    \ for the Impatient | Name | Scala in Depth |\n| Price | 700 | Price | 400 | Price\
+    \ | 1000 | Price | 1300 |"
+  - '[PAGE 17]
+
+
+    # # 5. JSON – Schema
+
+
+    JSON Schema is a specification for JSON based format for defining the structure
+    of JSON data. It was written under IETF draft which expired in 2011. JSON Schema:
+
+
+    +   - Describes your existing data format.
+
+    - Clear, human- and machine-readable documentation.
+
+    - Complete structural validation, useful for automated testing.
+
+    - Complete structural validation, validating client-submitted data.
+
+
+    # ## JSON Schema Validation Libraries
+
+
+    There are several validators currently available for different programming languages.
+    Currently the most complete and compliant JSON Schema validator available is JSV.
+
+
+    | Languages | Libraries |
+
+    | :--- | :--- |
+
+    | C | WJElement (LGPLv3) |
+
+    | Java | json-schema-validator (LGPLv3) |
+
+    | .NET | Json.NET (MIT) |
+
+    | ActionScript 3 | Frigga (MIT) |
+
+    | Haskell | aeson-schema (MIT) |
+
+    | Python | Jsonschema |
+
+    | Ruby | autoparse (ASL 2.0); ruby-jsonschema (MIT) |
+
+    | PHP | php-json-schema (MIT). json-schema (Berkeley) |
+
+    | JavaScript | Orderly (BSD); JSV; json-schema; Matic (MIT); Dojo; Persevere (modified
+    BSD or AFL 2.0); schema.js. |'
+  - "[PAGE 18]\n\n# JSON Schema Example\n\nGiven below is a basic JSON schema, which\
+    \ covers a classical product catalog description:\n\n```\n{\n    \"$schema\":\
+    \ \"http://json-schema.org/draft-04/schema#\",\n    \"title\": \"Product\",\n\
+    \    \"description\": \"A product from Acme's catalog\",\n    \"type\": \"object\"\
+    ,\n    \"properties\": {\n        \"id\": {\n            \"description\": \"The\
+    \ unique identifier for a product\",\n            \"type\": \"integer\"\n    \
+    \    },\n        \"name\": {\n            \"description\": \"Name of the product\"\
+    ,\n            \"type\": \"string\"\n        },\n        \"price\": {\n      \
+    \      \"type\": \"number\",\n            \"minimum\": 0,\n            \"exclusiveMinimum\"\
+    : true\n        }\n    },\n    \"required\": [\"id\", \"name\", \"price\"]\n}\n\
+    ```\n\nLet's check the various important keywords that can be used in this schema:\n\
+    \n| Keywords | Description |\n| :--- | :--- |\n| $schema | The $schema keyword\
+    \ states that this schema is written according to the draft v4 specification.\
+    \ |\n| title | You will use this to give a title to your schema. |\n| description\
+    \ | A little description of the schema. |"
+  - '[PAGE 19]
+
+
+    JSON
+
+
+    | type | The type keyword defines the first constraint on our JSON data: it has
+    to be a JSON Object. |
+
+    |---|---|
+
+    | properties | Defines various keys and their value types, minimum and maximum
+    values to be used in JSON file. |
+
+    | required | This keeps a list of required properties. |
+
+    | minimum | This is the constraint to be put on the value and represents minimum
+    acceptable value. |
+
+    | exclusiveMinimum | If "exclusiveMinimum" is present and has boolean value true,
+    the instance is valid if it is strictly greater than the value of "minimum". |
+
+    | maximum | This is the constraint to be put on the value and represents maximum
+    acceptable value. |
+
+    | exclusiveMaximum | If "exclusiveMaximum" is present and has boolean value true,
+    the instance is valid if it is strictly lower than the value of "maximum". |
+
+    | multipleOf | A numeric instance is valid against "multipleOf" if the result
+    of the division of the instance by this keyword''s value is an integer. |
+
+    | maxLength | The length of a string instance is defined as the maximum number
+    of its characters. |
+
+    | minLength | The length of a string instance is defined as the minimum number
+    of its characters. |
+
+    | pattern | A string instance is considered valid if the regular expression matches
+    the instance successfully. |
+
+
+    15
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)'
+  - "[PAGE 20]\n\n# JSON\n\nYou can check a http://json-schema.org for the complete\
+    \ list of keywords that can be used in defining a JSON schema. The above schema\
+    \ can be used to test the validity of the following JSON code:\n\n```\n[\n  {\n\
+    \    \"id\": 2,\n    \"name\": \"An ice sculpture\",\n    \"price\": 12.50,\n\
+    \  },\n  {\n    \"id\": 3,\n    \"name\": \"A blue mouse\",\n    \"price\": 25.50,\n\
+    \  }\n]\n```"
+  - "[PAGE 21]\n\n# 6. JSON – Comparison with XML\n\nJSON and XML are human readable\
+    \ formats and are language independent. They both have support for creation, reading\
+    \ and decoding in real world situations. We can compare JSON with XML, based on\
+    \ the following factors:\n\n# Verbose\n\nXML is more verbose than JSON, so it\
+    \ is faster to write JSON for programmers.\n\n# Arrays Usage\n\nXML is used to\
+    \ describe the structured data, which doesn't include arrays whereas JSON include\
+    \ arrays.\n\n# Parsing\n\nJavaScript's *eval* method parses JSON. When applied\
+    \ to JSON, eval returns the described object.\n\n# Example\n\nIndividual examples\
+    \ of XML and JSON:\n\n# JSON\n\n```\n{\n    \"company\": Volkswagen,\n    \"name\"\
+    : \"Vento\",\n    \"price\": 800000\n}\n```\n\n# XML\n\n```\n<car>\n    <company>Volkswagen</company>\n\
+    \    <name>Vento</name>\n    <price>800000</price>\n</car>\n```"
+  - '[PAGE 22]
+
+
+    # 7. JSON – JSON with PHP
+
+
+    This chapter covers how to encode and decode JSON objects using PHP programming
+    language. Let''s start with preparing the environment to start our programming
+    with PHP for JSON.
+
+
+    # Environment
+
+
+    As of PHP 5.2.0, the JSON extension is bundled and compiled into PHP by default.
+
+
+    # JSON Functions
+
+
+    | Function | Libraries |
+
+    | --- | --- |
+
+    | json_encode | Returns the JSON representation of a value. |
+
+    | json_decode | Decodes a JSON string. |
+
+    | json_last_error | Returns the last error occurred. |
+
+
+    # Encoding JSON in PHP (json_encode)
+
+
+    PHP json_encode() function is used for encoding JSON in PHP. This function returns
+    the JSON representation of a value on success or FALSE on failure.
+
+
+    # Syntax
+
+
+    ```
+
+    string json_encode ( $value [, $options = 0 ] )
+
+    ```
+
+
+    # Parameters
+
+
+    +   - **value**: The value being encoded. This function only works with UTF-8
+    encoded data.
+
+    - **options**: This optional value is a bitmask consisting of JSON_HEX_QUOT, JSON_HEX_TAG,
+    JSON_HEX_AMP, JSON_HEX_APOS, JSON_NUMERIC_CHECK,JSON_PRETTY_PRINT, JSON_UNESCAPED_SLASHES,
+    JSON_FORCE_OBJECT.'
+  - "[PAGE 23]\n\n# Example\n\nThe following example shows how to convert an array\
+    \ into JSON with PHP:\n\n```\n<?php\n    $arr = array('a' => 1, 'b' => 2, 'c'\
+    \ => 3, 'd' => 4, 'e' => 5);\n    echo json_encode($arr);\n?>\n```\n\nWhile executing,\
+    \ this will produce the following result:\n\n```\n{\"a\":1,\"b\":2,\"c\":3,\"\
+    d\":4,\"e\":5}\n```\n\nThe following example shows how the PHP objects can be\
+    \ converted into JSON:\n\n```\n<?php\n    class Emp {\n        public $name =\
+    \ \"\";\n        public $hobbies  = \"\";\n        public $birthdate = \"\";\n\
+    \    }\n    $e = new Emp();\n    $e->name = \"sachin\";\n    $e->hobbies  = \"\
+    sports\";\n    $e->birthdate = date('m/d/Y h:i:s a', \"8/5/1974 12:20:03 p\");\n\
+    \    $e->birthdate = date('m/d/Y h:i:s a', strtotime(\"8/5/1974 12:20:03\"));\n\
+    \n    echo json_encode($e);\n?>\n```\n\nWhile executing, this will produce the\
+    \ following result:\n\n```\n{\"name\":\"sachin\",\"hobbies\":\"sports\",\"birthdate\"\
+    :\"08\\/05\\/1974 12:20:03 pm\"}\n```\n\n# Decoding JSON in PHP (json_decode)\n\
+    \nPHP json_decode() function is used for decoding JSON in PHP. This function returns\
+    \ the value decoded from json to appropriate PHP type.\n\n# Syntax\n\n```\nmixed\
+    \ json_decode ($json [,$assoc = false [, $depth = 512 [, $options = 0 ]]])\n```"
+- md: "## JSON\n\n## Parameters\n\n- **json_string**: It is an encoded string which\
+    \ must be UTF-8 encoded data.\n- **assoc**: It is a boolean type parameter, when\
+    \ set to TRUE, returned objects will be converted into associative arrays.\n-\
+    \ **depth**: It is an integer type parameter which specifies recursion depth.\n\
+    - **options**: It is an integer type bitmask of JSON decode, JSON_BIGINT_AS_STRING\
+    \ is supported.\n\n## Example\n\nThe following example shows how PHP can be used\
+    \ to decode JSON objects:\n\n```\n<?php\n$json = '{\"a\":1,\"b\":2,\"c\":3,\"\
+    d\":4,\"e\":5}';\n\nvar_dump(json_decode($json));\nvar_dump(json_decode($json,\
+    \ true));\n?>\n```\n\nWhile executing, it will produce the following result:\n\
+    \n```\nobject(stdClass)#1 (5) {\n  [\"a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"\
+    c\"] => int(3)\n  [\"d\"] => int(4)\n  [\"e\"] => int(5)\n}\n\narray(5) {\n  [\"\
+    a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"c\"] => int(3)\n  [\"d\"] => int(4)\n\
+    \  [\"e\"] => int(5)\n}\n```\n\n## 8. JSON – JSON with Perl\n\nThis chapter covers\
+    \ how to encode and decode JSON objects using Perl programming language. Let's\
+    \ start with preparing the environment to start our programming with Perl for\
+    \ JSON.\n\n### Environment\n\nBefore you start encoding and decoding JSON using\
+    \ Perl, you need to install JSON module, which can be obtained from CPAN. Once\
+    \ you downloaded JSON-2.53.tar.gz or any other latest version, follow the steps\
+    \ mentioned below:\n\n```\n$tar xvfz JSON-2.53.tar.gz\n$cd JSON-2.53\n$perl Makefile.PL\n\
+    $make\n$make install\n```\n\n### JSON Functions\n\n| Function | Libraries |\n\
+    | :--- | :--- |\n| encode_json | Converts the given Perl data structure to a UTF-8\
+    \ encoded, binary string. |\n| decode_json | Decodes a JSON string. |\n| to_json\
+    \ | Converts the given Perl data structure to a json string. |\n| from_json |\
+    \ Expects a json string and tries to parse it, returning the resulting reference.\
+    \ |\n| convert_blessed | Use this function with true value so that Perl can use\
+    \ TO_JSON method on the object's class to convert an object into JSON. |\n\n###\
+    \ Encoding JSON in Perl (encode_json)\n\nPerl encode_json() function converts\
+    \ the given Perl data structure to a UTF-8 encoded, binary string.\n\nSyntax:\n\
+    \n```\n$json_text = encode_json ($perl_scalar );\n\nor\n\n$json_text = JSON->new->utf8->encode($perl_scalar);\n\
+    ```\n\nExample\n\nThe following example shows arrays under JSON with Perl:\n\n\
+    ```\n#!/usr/bin/perl\nuse JSON;\n\nmy %rec_hash = ('a' => 1, 'b' => 2, 'c' =>\
+    \ 3, 'd' => 4, 'e' => 5);\nmy $json = encode_json \\%rec_hash;\nprint \"$json\\\
+    n\";\n```\n\nWhile executing, this will produce the following result:\n\n```\n\
+    {\"e\":5,\"c\":3,\"a\":1,\"b\":2,\"d\":4}\n```\n\nThe following example shows\
+    \ how Perl objects can be converted into JSON:\n\n```\n#!/usr/bin/perl\n\npackage\
+    \ Emp;\nsub new\n{\n    my $class = shift;\n    my $self = {\n        name =>\
+    \ shift,\n        hobbies  => shift,\n        birthdate  => shift,\n    };\n \
+    \   bless $self, $class;\n    return $self;\n}\nsub TO_JSON { return { %{ shift()\
+    \ } }; }\n\npackage main;\nuse JSON;\n\nmy $JSON  = JSON->new->utf8;\n$JSON->convert_blessed(1);\n\
+    \n$e = new Emp( \"sachin\", \"sports\", \"8/5/1974 12:20:03 pm\");\n$json = $JSON->encode($e);\n\
+    print \"$json\\n\";\n```\n\nOn executing, it will produce the following result:\n\
+    \n```\n{\"birthdate\":\"8/5/1974 12:20:03 pm\",\"name\":\"sachin\",\"hobbies\"\
+    :\"sports\"}\n```\n\n### Decoding JSON in Perl (decode_json)\n\nPerl decode_json()\
+    \ function is used for decoding JSON in Perl. This function returns the value\
+    \ decoded from json to an appropriate Perl type.\n\nSyntax:\n\n```\n$perl_scalar\
+    \ = decode_json $json_text\n\nor\n\n$perl_scalar = JSON->new->utf8->decode($json_text)\n\
+    ```\n\nExample\n\nThe following example shows how Perl can be used to decode JSON\
+    \ objects. Here you will need to install Data::Dumper module if you already do\
+    \ not have it on your machine.\n\n```\n#!/usr/bin/perl\nuse JSON;\nuse Data::Dumper;\n\
+    \n$json = '{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"e\":5}';\n$text = decode_json($json);\n\
+    print Dumper($text);\n```\n\nOn executing, it will produce following result:\n\
+    \n```\n$VAR1 = {\n    'e' => 5,\n    'c' => 3,\n    'a' => 1,\n    'b' => 2,\n\
+    \    'd' => 4\n};\n```\n\n## 9. JSON – JSON with Python\n\nThis chapter covers\
+    \ how to encode and decode JSON objects using Python programming language. Let's\
+    \ start with preparing the environment to start our programming with Python for\
+    \ JSON.\n\n### Environment\n\nBefore you start with encoding and decoding JSON\
+    \ using Python, you need to install any of the JSON modules available. For this\
+    \ tutorial we have downloaded and installed Demjson (http://deron.meranda.us/python/demjson/)\
+    \ as follows:\n\n```\n$tar xvfz demjson-1.6.tar.gz\n$cd demjson-1.6\n$python setup.py\
+    \ install\n```\n\n### JSON Functions\n\n| Function | Libraries |\n| :--- | :---\
+    \ |\n| encode | Encodes the Python object into a JSON string representation. |\n\
+    | decode | Decodes a JSON-endoded string into a Python object. |\n\n### Encoding\
+    \ JSON in Python (encode)\n\nPython encode() function encodes the Python object\
+    \ into a JSON string representation.\n\nSyntax\n\n```\ndemjson.encode(self, obj,\
+    \ nest_level=0)\n```\n\nExample\n\nThe following example shows arrays under JSON\
+    \ with Python.\n\n```\n#!/usr/bin/python\nimport demjson\n\ndata = [ { 'a' : 1,\
+    \ 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]\njson = demjson.encode(data)\nprint json\n\
+    ```\n\nWhile executing, this will produce the following result:\n\n```\n[{\"a\"\
+    :1,\"b\":2,\"c\":3,\"d\":4,\"e\":5}]\n```\n\n### Decoding JSON in Python (decode)\n\
+    \nPython can use demjson.decode() function for decoding JSON. This function returns\
+    \ the value decoded from json to an appropriate Python type.\n\nSyntax\n\n```\n\
+    demjson.decode(self, txt)\n```\n\nExample\n\nThe following example shows how Python\
+    \ can be used to decode JSON objects.\n\n```\n#!/usr/bin/python\nimport demjson\n\
+    \njson = '{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"e\":5}';\n\ntext = demjson.decode(json)\n\
+    print text\n```\n\nOn executing, it will produce the following result:\n\n```\n\
+    {u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}\n```\n\n## 10. JSON – JSON with\
+    \ Ruby\n\nThis chapter covers how to encode and decode JSON objects using Ruby\
+    \ programming language. Let's start with preparing the environment to start our\
+    \ programming with Ruby for JSON.\n\n### Environment\n\nBefore you start with\
+    \ encoding and decoding JSON using Ruby, you need to install any of the JSON modules\
+    \ available for Ruby. You may need to install Ruby gem, but if you are running\
+    \ latest version of Ruby then you must have gem already installed on your machine,\
+    \ otherwise let's follow the following single step assuming you already have gem\
+    \ installed:\n\n```\n$gem install json\n```\n\n### Parsing JSON using Ruby\n\n\
+    The following example shows that the first 2 keys hold string values and the last\
+    \ 3 keys hold arrays of strings. Let's keep the following content in a file called\
+    \ **input.json**.\n\n```\n{\n    \"President\": \"Alan Isaac\",\n    \"CEO\":\
+    \ \"David Richardson\",\n\n    \"India\": [\n        \"Sachin Tendulkar\",\n \
+    \       \"Virender Sehwag\",\n        \"Gautam Gambhir\",\n    ],\n\n    \"Srilanka\"\
+    : [\n        \"Lasith Malinga\",\n        \"Angelo Mathews\",\n        \"Kumar\
+    \ Sangakkara\"\n    ],\n\n    \"England\": [\n        \"Alastair Cook\",\n   \
+    \     \"Jonathan Trott\",\n        \"Kevin Pietersen\"\n    ]\n}\n```\n\nGiven\
+    \ below is a Ruby program that will be used to parse the above mentioned JSON\
+    \ document:\n\n```\n#!/usr/bin/ruby\nrequire 'rubygems'\nrequire 'json'\nrequire\
+    \ 'pp'\n\njson = File.read('input.json')\nobj = JSON.parse(json)\n\npp obj\n```\n\
+    \nOn executing, it will produce the following result:\n\n```\n{\"President\"=>\"\
+    Alan Isaac\",\n\"CEO\"=>\"David Richardson\",\n\n\"India\"=>\n [\"Sachin Tendulkar\"\
+    , \"Virender Sehwag\", \"Gautam Gambhir\"],\n\n\"Srilanka\"=>\n [\"Lasith Malinga\
+    \ \", \"Angelo Mathews\", \"Kumar Sangakkara\"],\n\n\"England\"=>\n [\"Alastair\
+    \ Cook\", \"Jonathan Trott\", \"Kevin Pietersen\"]\n}\n```\n\n## 11. JSON – JSON\
+    \ with Java\n\nThis chapter covers how to encode and decode JSON objects using\
+    \ Java programming language. Let's start with preparing the environment to start\
+    \ our programming with Java for JSON.\n\n### Environment\n\nBefore you start with\
+    \ encoding and decoding JSON using Java, you need to install any of the JSON modules\
+    \ available. For this tutorial we have downloaded and installed JSON.simple (https://code.google.com/p/json-simple/)\
+    \ and have added the location of **json-simple-1.1.1.jar** file to the environment\
+    \ variable CLASSPATH.\n\n### Mapping between JSON and Java entities\n\nJSON.simple\
+    \ maps entities from the left side to the right side while decoding or parsing,\
+    \ and maps entities from the right to the left while encoding.\n\n| JSON | Java\
+    \ |\n| --- | --- |\n| string | java.lang.String |\n| number | java.lang.Number\
+    \ |\n| true\\|false | java.lang.Boolean |\n| null | null |\n| array | java.util.List\
+    \ |\n| object | java.util.Map |\n\nOn decoding, the default concrete class of\
+    \ *java.util.List* is *org.json.simple.JSONArray* and the default concrete class\
+    \ of *java.util.Map* is *org.json.simple.JSONObject*."
+  mdcn: "\n## JSON\n\n## 参数\n\n-   **json_string**：这是一个编码字符串，必须是 UTF-8 编码的数据。\n- \
+    \  **assoc**：这是一个布尔类型参数，当设置为 TRUE 时，返回的对象将被转换为关联数组。\n-   **depth**：这是一个整数类型参数，用于指定递归深度。\n\
+    -   **options**：这是一个整数类型的 JSON 解码位掩码，支持 JSON_BIGINT_AS_STRING。\n\n## 示例\n\n以下示例展示了如何使用\
+    \ PHP 来解码 JSON 对象：\n\n```\n<?php\n$json = '{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"\
+    e\":5}';\n\nvar_dump(json_decode($json));\nvar_dump(json_decode($json, true));\n\
+    ?>\n```\n\n执行时，将产生以下结果：\n\n```\nobject(stdClass)#1 (5) {\n  [\"a\"] => int(1)\n\
+    \  [\"b\"] => int(2)\n  [\"c\"] => int(3)\n  [\"d\"] => int(4)\n  [\"e\"] => int(5)\n\
+    }\n\narray(5) {\n  [\"a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"c\"] => int(3)\n\
+    \  [\"d\"] => int(4)\n  [\"e\"] => int(5)\n}\n```\n\n## 8. JSON – JSON 与 Perl\n\
+    \n本章介绍如何使用 Perl 编程语言来编码和解码 JSON 对象。让我们从准备环境开始，以便使用 Perl 进行 JSON 编程。\n\n### 环境\n\
+    \n在使用 Perl 编码和解码 JSON 之前，你需要安装 JSON 模块，可以从 CPAN 获取。下载 JSON-2.53.tar.gz 或任何其他最新版本后，请按照以下步骤操作：\n\
+    \n```\n$tar xvfz JSON-2.53.tar.gz\n$cd JSON-2.53\n$perl Makefile.PL\n$make\n$make\
+    \ install\n```\n\n### JSON 函数\n\n| 函数 | 库 |\n| :--- | :--- |\n| encode_json |\
+    \ 将给定的 Perl 数据结构转换为 UTF-8 编码的二进制字符串。 |\n| decode_json | 解码 JSON 字符串。 |\n| to_json\
+    \ | 将给定的 Perl 数据结构转换为 JSON 字符串。 |\n| from_json | 接收一个 JSON 字符串并尝试解析它，返回结果引用。 |\n\
+    | convert_blessed | 使用此函数并设置为 true 值，以便 Perl 可以使用对象类上的 TO_JSON 方法将对象转换为 JSON。\
+    \ |\n\n### 在 Perl 中编码 JSON (encode_json)\n\nPerl encode_json() 函数将给定的 Perl 数据结构转换为\
+    \ UTF-8 编码的二进制字符串。\n\n语法：\n\n```\n$json_text = encode_json ($perl_scalar );\n\n\
+    或\n\n$json_text = JSON->new->utf8->encode($perl_scalar);\n```\n\n示例\n\n以下示例展示了\
+    \ JSON 与 Perl 中的数组：\n\n```\n#!/usr/bin/perl\nuse JSON;\n\nmy %rec_hash = ('a'\
+    \ => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);\nmy $json = encode_json \\%rec_hash;\n\
+    print \"$json\\n\";\n```\n\n执行时，将产生以下结果：\n\n```\n{\"e\":5,\"c\":3,\"a\":1,\"b\"\
+    :2,\"d\":4}\n```\n\n以下示例展示了如何将 Perl 对象转换为 JSON：\n\n```\n#!/usr/bin/perl\n\npackage\
+    \ Emp;\nsub new\n{\n    my $class = shift;\n    my $self = {\n        name =>\
+    \ shift,\n        hobbies  => shift,\n        birthdate  => shift,\n    };\n \
+    \   bless $self, $class;\n    return $self;\n}\nsub TO_JSON { return { %{ shift()\
+    \ } }; }\n\npackage main;\nuse JSON;\n\nmy $JSON  = JSON->new->utf8;\n$JSON->convert_blessed(1);\n\
+    \n$e = new Emp( \"sachin\", \"sports\", \"8/5/1974 12:20:03 pm\");\n$json = $JSON->encode($e);\n\
+    print \"$json\\n\";\n```\n\n执行后，将产生以下结果：\n\n```\n{\"birthdate\":\"8/5/1974 12:20:03\
+    \ pm\",\"name\":\"sachin\",\"hobbies\":\"sports\"}\n```\n\n### 在 Perl 中解码 JSON\
+    \ (decode_json)\n\nPerl decode_json() 函数用于在 Perl 中解码 JSON。此函数将从 JSON 解码的值返回为适当的\
+    \ Perl 类型。\n\n语法：\n\n```\n$perl_scalar = decode_json $json_text\n\n或\n\n$perl_scalar\
+    \ = JSON->new->utf8->decode($json_text)\n```\n\n示例\n\n以下示例展示了如何使用 Perl 来解码 JSON\
+    \ 对象。如果您的机器上尚未安装 Data::Dumper 模块，则需要在此处安装它。\n\n```\n#!/usr/bin/perl\nuse JSON;\n\
+    use Data::Dumper;\n\n$json = '{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"e\":5}';\n$text\
+    \ = decode_json($json);\nprint Dumper($text);\n```\n\n执行后，将产生以下结果：\n\n```\n$VAR1\
+    \ = {\n    'e' => 5,\n    'c' => 3,\n    'a' => 1,\n    'b' => 2,\n    'd' =>\
+    \ 4\n};\n```\n\n## 9. JSON – JSON 与 Python\n\n本章介绍如何使用 Python 编程语言来编码和解码 JSON\
+    \ 对象。让我们从准备环境开始，以便使用 Python 进行 JSON 编程。\n\n### 环境\n\n在使用 Python 编码和解码 JSON 之前，你需要安装任何可用的\
+    \ JSON 模块。在本教程中，我们下载并安装了 Demjson (http://deron.meranda.us/python/demjson/)，步骤如下：\n\
+    \n```\n$tar xvfz demjson-1.6.tar.gz\n$cd demjson-1.6\n$python setup.py install\n\
+    ```\n\n### JSON 函数\n\n| 函数 | 库 |\n| :--- | :--- |\n| encode | 将 Python 对象编码为 JSON\
+    \ 字符串表示形式。 |\n| decode | 将 JSON 编码的字符串解码为 Python 对象。 |\n\n### 在 Python 中编码 JSON\
+    \ (encode)\n\nPython encode() 函数将 Python 对象编码为 JSON 字符串表示形式。\n\n语法\n\n```\ndemjson.encode(self,\
+    \ obj, nest_level=0)\n```\n\n示例\n\n以下示例展示了 JSON 与 Python 中的数组。\n\n```\n#!/usr/bin/python\n\
+    import demjson\n\ndata = [ { 'a' : 1, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ]\n\
+    json = demjson.encode(data)\nprint json\n```\n\n执行时，将产生以下结果：\n\n```\n[{\"a\":1,\"\
+    b\":2,\"c\":3,\"d\":4,\"e\":5}]\n```\n\n### 在 Python 中解码 JSON (decode)\n\nPython\
+    \ 可以使用 demjson.decode() 函数来解码 JSON。此函数将从 JSON 解码的值返回为适当的 Python 类型。\n\n语法\n\n\
+    ```\ndemjson.decode(self, txt)\n```\n\n示例\n\n以下示例展示了如何使用 Python 来解码 JSON 对象。\n\
+    \n```\n#!/usr/bin/python\nimport demjson\n\njson = '{\"a\":1,\"b\":2,\"c\":3,\"\
+    d\":4,\"e\":5}';\n\ntext = demjson.decode(json)\nprint text\n```\n\n执行后，将产生以下结果：\n\
+    \n```\n{u'a': 1, u'c': 3, u'b': 2, u'e': 5, u'd': 4}\n```\n\n## 10. JSON – JSON\
+    \ 与 Ruby\n\n本章介绍如何使用 Ruby 编程语言来编码和解码 JSON 对象。让我们从准备环境开始，以便使用 Ruby 进行 JSON 编程。\n\
+    \n### 环境\n\n在使用 Ruby 编码和解码 JSON 之前，你需要为 Ruby 安装任何可用的 JSON 模块。你可能需要安装 Ruby gem，但如果你运行的是最新版本的\
+    \ Ruby，那么你的机器上一定已经安装了 gem，否则请按照以下单步操作（假设你已安装 gem）：\n\n```\n$gem install json\n\
+    ```\n\n### 使用 Ruby 解析 JSON\n\n以下示例显示前 2 个键保存字符串值，后 3 个键保存字符串数组。让我们将以下内容保存在名为 **input.json**\
+    \ 的文件中。\n\n```\n{\n    \"President\": \"Alan Isaac\",\n    \"CEO\": \"David Richardson\"\
+    ,\n\n    \"India\": [\n        \"Sachin Tendulkar\",\n        \"Virender Sehwag\"\
+    ,\n        \"Gautam Gambhir\",\n    ],\n\n    \"Srilanka\": [\n        \"Lasith\
+    \ Malinga\",\n        \"Angelo Mathews\",\n        \"Kumar Sangakkara\"\n    ],\n\
+    \n    \"England\": [\n        \"Alastair Cook\",\n        \"Jonathan Trott\",\n\
+    \        \"Kevin Pietersen\"\n    ]\n}\n```\n\n下面是一个 Ruby 程序，用于解析上述 JSON 文档：\n\
+    \n```\n#!/usr/bin/ruby\nrequire 'rubygems'\nrequire 'json'\nrequire 'pp'\n\njson\
+    \ = File.read('input.json')\nobj = JSON.parse(json)\n\npp obj\n```\n\n执行后，将产生以下结果：\n\
+    \n```\n{\"President\"=>\"Alan Isaac\",\n\"CEO\"=>\"David Richardson\",\n\n\"India\"\
+    =>\n [\"Sachin Tendulkar\", \"Virender Sehwag\", \"Gautam Gambhir\"],\n\n\"Srilanka\"\
+    =>\n [\"Lasith Malinga \", \"Angelo Mathews\", \"Kumar Sangakkara\"],\n\n\"England\"\
+    =>\n [\"Alastair Cook\", \"Jonathan Trott\", \"Kevin Pietersen\"]\n}\n```\n\n\
+    ## 11. JSON – JSON 与 Java\n\n本章介绍如何使用 Java 编程语言来编码和解码 JSON 对象。让我们从准备环境开始，以便使用\
+    \ Java 进行 JSON 编程。\n\n### 环境\n\n在使用 Java 编码和解码 JSON 之前，你需要安装任何可用的 JSON 模块。在本教程中，我们下载并安装了\
+    \ JSON.simple (https://code.google.com/p/json-simple/)，并将 **json-simple-1.1.1.jar**\
+    \ 文件的位置添加到环境变量 CLASSPATH 中。\n\n### JSON 与 Java 实体之间的映射\n\nJSON.simple 在解码或解析时将实体从左侧映射到右侧，在编码时将实体从右侧映射到左侧。\n\
+    \n| JSON | Java |\n| --- | --- |\n| 字符串 | java.lang.String |\n| 数字 | java.lang.Number\
+    \ |\n| true\\|false | java.lang.Boolean |\n| null | null |\n| 数组 | java.util.List\
+    \ |\n| 对象 | java.util.Map |\n\n解码时，*java.util.List* 的默认具体类是 *org.json.simple.JSONArray*，*java.util.Map*\
+    \ 的默认具体类是 *org.json.simple.JSONObject*。\n"
+  merge: 0
+  raw:
+  - "[PAGE 24]\n\n# JSON\n\n# Paramaters\n\n+   - **json_string**: It is an encoded\
+    \ string which must be UTF-8 encoded data.\n- **assoc**: It is a boolean type\
+    \ parameter, when set to TRUE, returned objects will be converted into associative\
+    \ arrays.\n- **depth**: It is an integer type parameter which specifies recursion\
+    \ depth\n- **options**: It is an integer type bitmask of JSON decode, JSON_BIGINT_AS_STRING\
+    \ is supported.\n\n# Example\n\nThe following example shows how PHP can be used\
+    \ to decode JSON objects:\n\n```\n<?php\n$json = '{\"a\":1,\"b\":2,\"c\":3,\"\
+    d\":4,\"e\":5}';\n\nvar_dump(json_decode($json));\nvar_dump(json_decode($json,\
+    \ true));\n?>\n```\n\nWhile executing, it will produce the following result:\n\
+    \n```\nobject(stdClass)#1 (5) {\n  [\"a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"\
+    c\"] => int(3)\n  [\"d\"] => int(4)\n  [\"e\"] => int(5)\n}\n\narray(5) {\n  [\"\
+    a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"c\"] => int(3)\n  [\"d\"] => int(4)\n\
+    \  [\"e\"] => int(5)\n}\n```"
+  - '[PAGE 25]
+
+
+    # # 8. JSON – JSON with Perl
+
+
+    This chapter covers how to encode and decode JSON objects using Perl programming
+    language. Let''s start with preparing the environment to start our programming
+    with Perl for JSON.
+
+
+    # ## Environment
+
+
+    Before you start encoding and decoding JSON using Perl, you need to install JSON
+    module, which can be obtained from CPAN. Once you downloaded JSON-2.53.tar.gz
+    or any other latest version, follow the steps mentioned below:
+
+
+    ```
+
+    $tar xvfz JSON-2.53.tar.gz
+
+    $cd JSON-2.53
+
+    $perl Makefile.PL
+
+    $make
+
+    $make install
+
+    ```
+
+
+    # ## JSON Functions
+
+
+    | Function | Libraries |
+
+    | :--- | :--- |
+
+    | encode_json | Converts the given Perl data structure to a UTF-8 encoded, binary
+    string. |
+
+    | decode_json | Decodes a JSON string. |
+
+    | to_json | Converts the given Perl data structure to a json string. |
+
+    | from_json | Expects a json string and tries to parse it, returning the resulting
+    reference. |
+
+    | convert_blessed | Use this function with true value so that Perl can use TO_JSON
+    method on the object''s class to convert an object into JSON. |
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_25_0.png)'
+  - "[PAGE 26]\n\nJSON\n\n# Encoding JSON in Perl (encode_json)\n\nPerl encode_json()\
+    \ function converts the given Perl data structure to a UTF-8 encoded, binary string.\n\
+    \nSyntax:\n\n```\n$json_text = encode_json ($perl_scalar );\n\nor\n\n$json_text\
+    \ = JSON->new->utf8->encode($perl_scalar);\n```\n\nExample\n\nThe following example\
+    \ shows arrays under JSON with Perl:\n\n```\n#!/usr/bin/perl\nuse JSON;\n\nmy\
+    \ %rec_hash = ('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);\nmy $json =\
+    \ encode_json \\%rec_hash;\nprint \"$json\\n\";\n```\n\nWhile executing, this\
+    \ will produce the following result:\n\n```\n{\"e\":5,\"c\":3,\"a\":1,\"b\":2,\"\
+    d\":4}\n```\n\nThe following example shows how Perl objects can be converted into\
+    \ JSON:\n\n```\n#!/usr/bin/perl\n\npackage Emp;\nsub new\n{\n    my $class = shift;\n\
+    \    my $self = {\n        name => shift,\n        hobbies  => shift,\n      \
+    \  birthdate  => shift,\n    };\n    bless $self, $class;\n}\n```"
+  - '[PAGE 27]
+
+
+    ```
+
+    return $self;
+
+    }
+
+    sub TO_JSON { return { %{ shift() } }; }
+
+
+    package main;
+
+    use JSON;
+
+
+    my $JSON  = JSON->new->utf8;
+
+    $JSON->convert_blessed(1);
+
+
+    $e = new Emp( "sachin", "sports", "8/5/1974 12:20:03 pm");
+
+    $json = $JSON->encode($e);
+
+    print "$json\n";
+
+    ```
+
+
+    On executing, it will produce the following result:
+
+
+    ```
+
+    {"birthdate":"8/5/1974 12:20:03 pm","name":"sachin","hobbies":"sports"}
+
+    ```
+
+
+    # Decoding JSON in Perl (decode_json)
+
+
+    Perl decode_json() function is used for decoding JSON in Perl. This function returns
+    the value decoded from json to an appropriate Perl type.
+
+
+    # Syntax:
+
+
+    ```
+
+    $perl_scalar = decode_json $json_text
+
+
+    or
+
+
+    $perl_scalar = JSON->new->utf8->decode($json_text)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows how Perl can be used to decode JSON objects. Here
+    you will need to install Data::Dumper module if you already do not have it on
+    your machine.
+
+
+    ```
+
+    #!/usr/bin/perl
+
+    use JSON;
+
+    use Data::Dumper;
+
+
+    $json = ''{"a":1,"b":2,"c":3,"d":4,"e":5}'';
+
+    ```'
+  - "[PAGE 28]\n\n# JSON\n\n```\n$text = decode_json($json);\nprint Dumper($text);\n\
+    ```\n\nOn executing, it will produce following result:\n\n```\n$VAR1 = {\n   \
+    \ 'e' => 5,\n    'c' => 3,\n    'a' => 1,\n    'b' => 2,\n    'd' => 4\n};\n```"
+  - '[PAGE 29]
+
+
+    # 9.  JSON – JSON with Python
+
+
+    This chapter covers how to encode and decode JSON objects using Python programming
+    language. Let''s start with preparing the environment to start our programming
+    with Python for JSON.
+
+
+    # Environment
+
+
+    Before you start with encoding and decoding JSON using Python, you need to install
+    any of the JSON modules available. For this tutorial we have downloaded and installed
+    Demjson (http://deron.meranda.us/python/demjson/) as follows:
+
+
+    ```
+
+    $tar xvfz demjson-1.6.tar.gz
+
+    $cd demjson-1.6
+
+    $python setup.py install
+
+    ```
+
+
+    # JSON Functions
+
+
+    | Function | Libraries |
+
+    | :--- | :--- |
+
+    | encode | Encodes the Python object into a JSON string representation. |
+
+    | decode | Decodes a JSON-endoded string into a Python object. |
+
+
+    # Encoding JSON in Python (encode)
+
+
+    Python encode() function encodes the Python object into a JSON string representation.
+
+
+    # Syntax
+
+
+    ```
+
+    demjson.encode(self, obj, nest_level=0)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows arrays under JSON with Python.
+
+
+    ```
+
+    #!/usr/bin/python
+
+    import demjson
+
+
+    data = [ { ''a'' : 1, ''b'' : 2, ''c'' : 3, ''d'' : 4, ''e'' : 5 } ]
+
+    ```'
+  - '[PAGE 30]
+
+
+    ```
+
+    json = demjson.encode(data)
+
+    print json
+
+    ```
+
+
+    While executing, this will produce the following result:
+
+
+    ```
+
+    [{"a":1,"b":2,"c":3,"d":4,"e":5}]
+
+    ```
+
+
+    # Decoding JSON in Python (decode)
+
+
+    Python can use demjson.decode() function for decoding JSON. This function returns
+    the value decoded from json to an appropriate Python type.
+
+
+    # Syntax
+
+
+    ```
+
+    demjson.decode(self, txt)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows how Python can be used to decode JSON objects.
+
+
+    ```
+
+    #!/usr/bin/python
+
+    import demjson
+
+
+    json = ''{"a":1,"b":2,"c":3,"d":4,"e":5}'';
+
+
+    text = demjson.decode(json)
+
+    print text
+
+    ```
+
+
+    On executing, it will produce the following result:
+
+
+    ```
+
+    {u''a'': 1, u''c'': 3, u''b'': 2, u''e'': 5, u''d'': 4}
+
+    ```'
+  - "[PAGE 31]\n\n# # 10. JSON – JSON with Ruby\n\nThis chapter covers how to encode\
+    \ and decode JSON objects using Ruby programming language. Let's start with preparing\
+    \ the environment to start our programming with Ruby for JSON.\n\n# ## Environment\n\
+    \nBefore you start with encoding and decoding JSON using Ruby, you need to install\
+    \ any of the JSON modules available for Ruby. You may need to install Ruby gem,\
+    \ but if you are running latest version of Ruby then you must have gem already\
+    \ installed on your machine, otherwise let's follow the following single step\
+    \ assuming you already have gem installed:\n\n```\n$gem install json\n```\n\n\
+    # ## Parsing JSON using Ruby\n\nThe following example shows that the first 2 keys\
+    \ hold string values and the last 3 keys hold arrays of strings. Let's keep the\
+    \ following content in a file called **input.json**.\n\n```\n{\n    \"President\"\
+    : \"Alan Isaac\",\n    \"CEO\": \"David Richardson\",\n\n    \"India\": [\n  \
+    \      \"Sachin Tendulkar\",\n        \"Virender Sehwag\",\n        \"Gautam Gambhir\"\
+    ,\n    ],\n\n    \"Srilanka\": [\n        \"Lasith Malinga\",\n        \"Angelo\
+    \ Mathews\",\n        \"Kumar Sangakkara\"\n    ],\n\n    \"England\": [\n   \
+    \     \"Alastair Cook\",\n}\n```"
+  - "[PAGE 32]\n\n```\n    \"Jonathan Trott\",\n    \"Kevin Pietersen\"\n  ]\n}\n\
+    ```\n\nGiven below is a Ruby program that will be used to parse the above mentioned\
+    \ JSON document:\n\n```\n#!/usr/bin/ruby\nrequire 'rubygems'\nrequire 'json'\n\
+    require 'pp'\n\njson = File.read('input.json')\nobj = JSON.parse(json)\n\npp obj\n\
+    ```\n\nOn executing, it will produce the following result:\n\n```\n{\"President\"\
+    =>\"Alan Isaac\",\n\"CEO\"=>\"David Richardson\",\n\n\"India\"=>\n [\"Sachin Tendulkar\"\
+    , \"Virender Sehwag\", \"Gautam Gambhir\"],\n\n\"Srilanka\"=>\n [\"Lasith Malinga\
+    \ \", \"Angelo Mathews\", \"Kumar Sangakkara\"],\n\n\"England\"=>\n [\"Alastair\
+    \ Cook\", \"Jonathan Trott\", \"Kevin Pietersen\"]\n}\n```"
+  - '[PAGE 33]
+
+
+    # # 11. JSON – JSON with Java
+
+
+    This chapter covers how to encode and decode JSON objects using Java programming
+    language. Let''s start with preparing the environment to start our programming
+    with Java for JSON.
+
+
+    # ## Environment
+
+
+    Before you start with encoding and decoding JSON using Java, you need to install
+    any of the JSON modules available. For this tutorial we have downloaded and installed
+    JSON.simple (https://code.google.com/p/json-simple/) and have added the location
+    of **json-simple-1.1.1.jar** file to the environment variable CLASSPATH.
+
+
+    # ## Mapping between JSON and Java entities
+
+
+    JSON.simple maps entities from the left side to the right side while decoding
+    or parsing, and maps entities from the right to the left while encoding.
+
+
+    | JSON | Java |
+
+    | --- | --- |
+
+    | string | java.lang.String |
+
+    | number | java.lang.Number |
+
+    | true|false | ava.lang.Boolean |
+
+    | null | null |
+
+    | array | java.util.List |
+
+    | object | java.util.Map |
+
+
+    On decoding, the default concrete class of *java.util.List* is *org.json.simple.JSONArray*
+    and the default concrete class of *java.util.Map* is *org.json.simple.JSONObject*.'
+- md: "## Encoding JSON in Java\n\nFollowing is a simple example to encode a JSON\
+    \ object using Java JSONObject which is a subclass of java.util.HashMap. No ordering\
+    \ is provided. If you need the strict ordering of elements, use JSONValue.toJSONString\
+    \ (map) method with ordered map implementation such as java.util.LinkedHashMap.\n\
+    \n```java\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n{\n   \
+    \ public static void main(String[] args)\n    {\n        JSONObject obj = new\
+    \ JSONObject();\n\n        obj.put(\"name\", \"foo\");\n        obj.put(\"num\"\
+    , new Integer(100));\n        obj.put(\"balance\", new Double(1000.21));\n   \
+    \     obj.put(\"is_vip\", new Boolean(true));\n\n        System.out.print(obj);\n\
+    \    }\n}\n```\n\nOn compiling and executing the above program the following result\
+    \ will be generated:\n\n```json\n{\"balance\": 1000.21, \"num\":100, \"is_vip\"\
+    :true, \"name\":\"foo\"}\n```\n\nFollowing is another example that shows a JSON\
+    \ object streaming using Java JSONObject:\n\n```java\nimport org.json.simple.JSONObject;\n\
+    \nclass JsonEncodeDemo\n{\n    public static void main(String[] args)\n    {\n\
+    \        JSONObject obj = new JSONObject();\n\n        obj.put(\"name\",\"foo\"\
+    );\n        obj.put(\"num\",new Integer(100));\n        obj.put(\"balance\",new\
+    \ Double(1000.21));\n        obj.put(\"is_vip\",new Boolean(true));\n\n      \
+    \  StringWriter out = new StringWriter();\n        obj.writeJSONString(out);\n\
+    \n        String jsonText = out.toString();\n        System.out.print(jsonText);\n\
+    \    }\n}\n```\n\nOn compiling and executing the above program the following result\
+    \ is generated:\n\n```json\n{\"balance\": 1000.21, \"num\":100, \"is_vip\":true,\
+    \ \"name\":\"foo\"}\n```\n\n## Decoding JSON in Java\n\nThe following example\
+    \ makes use of **JSONObject** and **JSONArray** where JSONObject is a java.util.Map\
+    \ and JSONArray is a java.util.List, so you can access them with standard operations\
+    \ of Map or List.\n\n```java\nimport org.json.simple.JSONObject;\nimport org.json.simple.JSONArray;\n\
+    import org.json.simple.parser.ParseException;\nimport org.json.simple.parser.JSONParser;\n\
+    \nclass JsonDecodeDemo\n{\n    public static void main(String[] args)\n    {\n\
+    \        JSONParser parser=new JSONParser();\n        String s = \"[0,{\\\"1\\\
+    \":{\\\"2\\\":{\\\"3\\\":{\\\"4\\\":[5,{\\\"6\\\":7}]}}}}]\";\n        try{\n\
+    \            Object obj = parser.parse(s);\n            JSONArray array = (JSONArray)obj;\n\
+    \            System.out.println(\"The 2nd element of array\");\n            System.out.println(array.get(1));\n\
+    \            System.out.println();\n\n            JSONObject obj2 = (JSONObject)array.get(1);\n\
+    \            System.out.println(\"Field \\\"1\\\"\");\n            System.out.println(obj2.get(\"\
+    1\"));\n\n            s = \"{}\";\n            obj = parser.parse(s);\n      \
+    \      System.out.println(obj);\n\n            s= \"[5,]\";\n            obj =\
+    \ parser.parse(s);\n            System.out.println(obj);\n\n            s= \"\
+    [5,,2]\";\n            obj = parser.parse(s);\n            System.out.println(obj);\n\
+    \        }catch(ParseException pe){\n            System.out.println(\"position:\
+    \ \" + pe.getPosition());\n            System.out.println(pe);\n        }\n  \
+    \  }\n}\n```\n\nOn compiling and executing the above program, the following result\
+    \ will be generated:\n\n```\nThe 2nd element of array\n{\"1\":{\"2\":{\"3\":{\"\
+    4\":[5,{\"6\":7}]}}}}\n\nField \"1\"\n{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}\n\
+    {}\n[5]\n[5,2]\n```\n\n## 12. JSON – JSON with Ajax\n\nAJAX is Asynchronous JavaScript\
+    \ and XML, which is used on the client side as a group of interrelated web development\
+    \ techniques, in order to create asynchronous web applications. According to the\
+    \ AJAX model, web applications can send and retrieve data from a server asynchronously\
+    \ without interfering with the display and the behavior of the existing page.\n\
+    \nMany developers use JSON to pass AJAX updates between the client and the server.\
+    \ Websites updating live sports scores can be considered as an example of AJAX.\
+    \ If these scores have to be updated on the website, then they must be stored\
+    \ on the server so that the webpage can retrieve the score when it is required.\
+    \ This is where we can make use of JSON formatted data.\n\nAny data that is updated\
+    \ using AJAX can be stored using the JSON format on the web server. AJAX is used\
+    \ so that JavaScript can retrieve these JSON files when necessary, parse them,\
+    \ and perform one of the following operations:\n\n- Store the parsed values in\
+    \ the variables for further processing before displaying them on the webpage.\n\
+    - It directly assigns the data to the DOM elements in the webpage, so that they\
+    \ are displayed on the website.\n\n**Example**\nThe following code shows JSON\
+    \ with AJAX. Save it as **ajax.htm** file. Here the loading function loadJSON()\
+    \ is used asynchronously to upload JSON data.\n\n```html\n<html>\n<head>\n<meta\
+    \ content=\"text/html; charset=ISO-8859-1\" http-equiv=\"content-type\">\n<script\
+    \ type=\"application/javascript\">\nfunction loadJSON()\n{\n    var data_file\
+    \ = \"http://www.tutorialspoint.com/json/data.json\";\n    var http_request =\
+    \ new XMLHttpRequest();\n    try{\n        // Opera 8.0+, Firefox, Chrome, Safari\n\
+    \        http_request = new XMLHttpRequest();\n    }catch (e){\n        // Internet\
+    \ Explorer Browsers\n        try{\n            http_request = new ActiveXObject(\"\
+    Msxml2.XMLHTTP\");\n        }catch (e) {\n            try{\n                http_request\
+    \ = new ActiveXObject(\"Microsoft.XMLHTTP\");\n            }catch (e) {\n    \
+    \            window.alert(\"Something bad is going on....\");\n            }\n\
+    \        }\n    }\n}\n</script>\n<title>tutorialspoint.com JSON</title>\n</head>\n\
+    <body>\n<h1>Cricketer Details</h1>\n<table class=\"src\">\n<tr><th>Name</th><th>Country</th></tr>\n\
+    <tr><td><div id=\"Name\">Sachin</div></td>\n<td><div id=\"Country\">India</div></td></tr>\n\
+    </table>\n\n<div class=\"central\">\n<button type=\"button\" onclick=\"loadJSON()\"\
+    >Update Details </button>\n</div>\n</body>\n</html>\n```\n\nGiven below is the\
+    \ input file **data.json**, having data in JSON format which will be uploaded\
+    \ asynchronously when we click the **Update Detail** button. This file is being\
+    \ kept in http://www.tutorialspoint.com/json/.\n\n```json\n{\"name\": \"brett\"\
+    , \"country\": \"Australia\"}\n```\n\nThe above HTML code will generate the following\
+    \ screen, where you can check AJAX in action:\n\n# Cricketer Details\n\n| Name\
+    \ | Country |\n| --- | --- |\n| Sachin | India |\n\n# Update Details:\n\nWhen\
+    \ you click on the **Update Detail** button, you should get a result something\
+    \ as follows. You can try JSON with AJAX yourself, provided your browser supports\
+    \ Javascript.\n\n# Cricketer Details\n\n| Name | Country |\n| --- | --- |\n| Brett\
+    \ | Australia |"
+  mdcn: "\n## 在Java中编码JSON\n\n以下是一个简单的示例，展示了如何使用Java JSONObject（它是java.util.HashMap的子类）来编码一个JSON对象。此方法不保证元素的顺序。如果需要严格保证元素顺序，请使用`JSONValue.toJSONString(map)`方法，并配合有序映射实现，如`java.util.LinkedHashMap`。\n\
+    \n```java\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n{\n   \
+    \ public static void main(String[] args)\n    {\n        JSONObject obj = new\
+    \ JSONObject();\n\n        obj.put(\"name\", \"foo\");\n        obj.put(\"num\"\
+    , new Integer(100));\n        obj.put(\"balance\", new Double(1000.21));\n   \
+    \     obj.put(\"is_vip\", new Boolean(true));\n\n        System.out.print(obj);\n\
+    \    }\n}\n```\n\n编译并执行上述程序后，将产生以下结果：\n\n```json\n{\"balance\": 1000.21, \"num\"\
+    :100, \"is_vip\":true, \"name\":\"foo\"}\n```\n\n以下是另一个示例，展示了如何使用Java JSONObject进行JSON对象流处理：\n\
+    \n```java\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n{\n   \
+    \ public static void main(String[] args)\n    {\n        JSONObject obj = new\
+    \ JSONObject();\n\n        obj.put(\"name\",\"foo\");\n        obj.put(\"num\"\
+    ,new Integer(100));\n        obj.put(\"balance\",new Double(1000.21));\n     \
+    \   obj.put(\"is_vip\",new Boolean(true));\n\n        StringWriter out = new StringWriter();\n\
+    \        obj.writeJSONString(out);\n\n        String jsonText = out.toString();\n\
+    \        System.out.print(jsonText);\n    }\n}\n```\n\n编译并执行上述程序后，将产生以下结果：\n\n\
+    ```json\n{\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"\
+    }\n```\n\n## 在Java中解码JSON\n\n以下示例使用了**JSONObject**和**JSONArray**，其中JSONObject是一个java.util.Map，JSONArray是一个java.util.List，因此你可以使用Map或List的标准操作来访问它们。\n\
+    \n```java\nimport org.json.simple.JSONObject;\nimport org.json.simple.JSONArray;\n\
+    import org.json.simple.parser.ParseException;\nimport org.json.simple.parser.JSONParser;\n\
+    \nclass JsonDecodeDemo\n{\n    public static void main(String[] args)\n    {\n\
+    \        JSONParser parser=new JSONParser();\n        String s = \"[0,{\\\"1\\\
+    \":{\\\"2\\\":{\\\"3\\\":{\\\"4\\\":[5,{\\\"6\\\":7}]}}}}]\";\n        try{\n\
+    \            Object obj = parser.parse(s);\n            JSONArray array = (JSONArray)obj;\n\
+    \            System.out.println(\"数组的第二个元素\");\n            System.out.println(array.get(1));\n\
+    \            System.out.println();\n\n            JSONObject obj2 = (JSONObject)array.get(1);\n\
+    \            System.out.println(\"字段 \\\"1\\\"\");\n            System.out.println(obj2.get(\"\
+    1\"));\n\n            s = \"{}\";\n            obj = parser.parse(s);\n      \
+    \      System.out.println(obj);\n\n            s= \"[5,]\";\n            obj =\
+    \ parser.parse(s);\n            System.out.println(obj);\n\n            s= \"\
+    [5,,2]\";\n            obj = parser.parse(s);\n            System.out.println(obj);\n\
+    \        }catch(ParseException pe){\n            System.out.println(\"位置: \" +\
+    \ pe.getPosition());\n            System.out.println(pe);\n        }\n    }\n\
+    }\n```\n\n编译并执行上述程序后，将产生以下结果：\n\n```\n数组的第二个元素\n{\"1\":{\"2\":{\"3\":{\"4\":[5,{\"\
+    6\":7}]}}}}\n\n字段 \"1\"\n{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}\n{}\n[5]\n[5,2]\n\
+    ```\n\n## 12. JSON – 结合Ajax使用JSON\n\nAJAX是Asynchronous JavaScript and XML（异步JavaScript和XML）的缩写，它在客户端作为一组相互关联的Web开发技术使用，以创建异步Web应用程序。根据AJAX模型，Web应用程序可以异步地从服务器发送和检索数据，而不会干扰现有页面的显示和行为。\n\
+    \n许多开发者使用JSON在客户端和服务器之间传递AJAX更新数据。实时更新体育赛事比分的网站可以被视为AJAX的一个例子。如果这些比分必须在网站上更新，那么它们必须存储在服务器上，以便网页在需要时可以检索比分。这正是我们可以利用JSON格式化数据的地方。\n\
+    \n任何使用AJAX更新的数据都可以使用JSON格式存储在Web服务器上。使用AJAX是为了让JavaScript能够在必要时检索这些JSON文件，解析它们，并执行以下操作之一：\n\
+    \n- 在将解析后的值显示在网页上之前，将其存储在变量中以进行进一步处理。\n- 它直接将数据分配给网页中的DOM元素，使它们显示在网站上。\n\n**示例**\n\
+    以下代码展示了如何结合使用JSON与AJAX。将其保存为**ajax.htm**文件。这里，加载函数`loadJSON()`被异步地用于上传JSON数据。\n\
+    \n```html\n<html>\n<head>\n<meta content=\"text/html; charset=ISO-8859-1\" http-equiv=\"\
+    content-type\">\n<script type=\"application/javascript\">\nfunction loadJSON()\n\
+    {\n    var data_file = \"http://www.tutorialspoint.com/json/data.json\";\n   \
+    \ var http_request = new XMLHttpRequest();\n    try{\n        // Opera 8.0+, Firefox,\
+    \ Chrome, Safari\n        http_request = new XMLHttpRequest();\n    }catch (e){\n\
+    \        // Internet Explorer Browsers\n        try{\n            http_request\
+    \ = new ActiveXObject(\"Msxml2.XMLHTTP\");\n        }catch (e) {\n           \
+    \ try{\n                http_request = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n            }catch (e) {\n                window.alert(\"发生了一些错误....\");\n\
+    \            }\n        }\n    }\n}\n</script>\n<title>tutorialspoint.com JSON</title>\n\
+    </head>\n<body>\n<h1>板球运动员详情</h1>\n<table class=\"src\">\n<tr><th>姓名</th><th>国家</th></tr>\n\
+    <tr><td><div id=\"Name\">Sachin</div></td>\n<td><div id=\"Country\">India</div></td></tr>\n\
+    </table>\n\n<div class=\"central\">\n<button type=\"button\" onclick=\"loadJSON()\"\
+    >更新详情</button>\n</div>\n</body>\n</html>\n```\n\n以下是输入文件**data.json**，其中包含JSON格式的数据，当我们点击“**更新详情**”按钮时，它将被异步上传。此文件位于http://www.tutorialspoint.com/json/。\n\
+    \n```json\n{\"name\": \"brett\", \"country\": \"Australia\"}\n```\n\n上述HTML代码将生成以下屏幕，你可以在其中查看AJAX的实际运行效果：\n\
+    \n# 板球运动员详情\n\n| 姓名 | 国家 |\n| --- | --- |\n| Sachin | India |\n\n# 更新详情：\n\n当你点击“**更新详情**”按钮时，你应该会得到类似以下的结果。你可以自己尝试结合JSON使用AJAX，前提是你的浏览器支持JavaScript。\n\
+    \n# 板球运动员详情\n\n| 姓名 | 国家 |\n| --- | --- |\n| Brett | Australia |\n"
+  merge: 0
+  raw:
+  - "[PAGE 34]\n\n# Encoding JSON in Java\n\nFollowing is a simple example to encode\
+    \ a JSON object using Java JSONObject which is a subclass of java.util.HashMap.\
+    \ No ordering is provided. If you need the strict ordering of elements, use JSONValue.toJSONString\
+    \ (map) method with ordered map implementation such as java.util.LinkedHashMap.\n\
+    \n```\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n{\n    public\
+    \ static void main(String[] args)\n    {\n        JSONObject obj = new JSONObject();\n\
+    \n        obj.put(\"name\", \"foo\");\n        obj.put(\"num\", new Integer(100));\n\
+    \        obj.put(\"balance\", new Double(1000.21));\n        obj.put(\"is_vip\"\
+    , new Boolean(true));\n\n        System.out.print(obj);\n    }\n}\n```\n\nOn compiling\
+    \ and executing the above program the following result will be generated:\n\n\
+    ```\n{\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"}\n\
+    ```\n\nFollowing is another example that shows a JSON object streaming using Java\
+    \ JSONObject:\n\n```\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n\
+    {\n    public static void main(String[] args)\n    {\n        JSONObject obj =\
+    \ new JSONObject();\n\n        obj.put(\"name\",\"foo\");\n        obj.put(\"\
+    num\",new Integer(100));\n```"
+  - "[PAGE 35]\n\n```\nobj.put(\"balance\",new Double(1000.21));\nobj.put(\"is_vip\"\
+    ,new Boolean(true));\n\nStringWriter out = new StringWriter();\nobj.writeJSONString(out);\n\
+    \nString jsonText = out.toString();\nSystem.out.print(jsonText);\n}\n}\n```\n\n\
+    On compiling and executing the above program the following result is generated:\n\
+    \n```\n{\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"}\n\
+    ```\n\n# Decoding JSON in Java\n\nThe following example makes use of **JSONObject**\
+    \ and **JSONArray** where JSONObject is a java.util.Map and JSONArray is a java.util.List,\
+    \ so you can access them with standard operations of Map or List.\n\n```\nimport\
+    \ org.json.simple.JSONObject;\nimport org.json.simple.JSONArray;\nimport org.json.simple.parser.ParseException;\n\
+    import org.json.simple.parser.JSONParser;\n\nclass JsonDecodeDemo\n{\n    public\
+    \ static void main(String[] args)\n    {\n        JSONParser parser=new JSONParser();\n\
+    \        String s = \"[0,{\\\"1\\\":{\\\"2\\\":{\\\"3\\\":{\\\"4\\\":[5,{\\\"\
+    6\\\":7}]}}}}]\";\n        try{\n            Object obj = parser.parse(s);\n \
+    \           JSONArray array = (JSONArray)obj;\n            System.out.println(\"\
+    The 2nd element of array\");\n            System.out.println(array.get(1));\n\
+    \            System.out.println();\n\n            JSONObject obj2 = (JSONObject)array.get(1);\n\
+    ```"
+  - "[PAGE 36]\n\n```\nSystem.out.println(\"Field \\\"1\\\"\");\nSystem.out.println(obj2.get(\"\
+    1\"));\n\ns = \"{}\";\nobj = parser.parse(s);\nSystem.out.println(obj);\n\ns=\
+    \ \"[5,]\";\nobj = parser.parse(s);\nSystem.out.println(obj);\n\ns= \"[5,,2]\"\
+    ;\nobj = parser.parse(s);\nSystem.out.println(obj);\n}catch(ParseException pe){\n\
+    \    System.out.println(\"position: \" + pe.getPosition());\n    System.out.println(pe);\n\
+    }\n}\n}\n```\n\nOn compiling and executing the above program, the following result\
+    \ will be generated:\n\n```\nThe 2nd element of array\n{\"1\":{\"2\":{\"3\":{\"\
+    4\":[5,{\"6\":7}]}}}}\n\nField \"1\"\n{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}\n\
+    {}\n[5]\n[5,2]\n```"
+  - "[PAGE 37]\n\n# 12. JSON – JSON with Ajax\n\nAJAX is Asynchronous JavaScript and\
+    \ XML, which is used on the client side as a group of interrelated web development\
+    \ techniques, in order to create asynchronous web applications. According to the\
+    \ AJAX model, web applications can send and retrieve data from a server asynchronously\
+    \ without interfering with the display and the behavior of the existing page.\n\
+    \nMany developers use JSON to pass AJAX updates between the client and the server.\
+    \ Websites updating live sports scores can be considered as an example of AJAX.\
+    \ If these scores have to be updated on the website, then they must be stored\
+    \ on the server so that the webpage can retrieve the score when it is required.\
+    \ This is where we can make use of JSON formatted data.\n\nAny data that is updated\
+    \ using AJAX can be stored using the JSON format on the web server. AJAX is used\
+    \ so that JavaScript can retrieve these JSON files when necessary, parse them,\
+    \ and perform one of the following operations:\n\n+   * Store the parsed values\
+    \ in the variables for further processing before displaying them on the webpage.\n\
+    * It directly assigns the data to the DOM elements in the webpage, so that they\
+    \ are displayed on the website.\n\n**Example**\nThe following code shows JSON\
+    \ with AJAX. Save it as **ajax.htm** file. Here the loading function loadJSON()\
+    \ is used asynchronously to upload JSON data.\n\n```\n<html>\n<head>\n<meta content=\"\
+    text/html; charset=ISO-8859-1\" http-equiv=\"content-type\">\n<script type=\"\
+    application/javascript\">\nfunction loadJSON()\n{\n    var data_file = \"http://www.tutorialspoint.com/json/data.json\"\
+    ;\n    var http_request = new XMLHttpRequest();\n    try{\n        // Opera 8.0+,\
+    \ Firefox, Chrome, Safari\n        http_request = new XMLHttpRequest();\n    }catch\
+    \ (e){\n        // Internet Explorer Browsers\n        try{\n            http_request\
+    \ = new ActiveXObject(\"Msxml2.XMLHTTP\");\n        }catch (e) {\n           \
+    \ try{\n                http_request = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n            }catch (e) {\n                window.alert(\"Something bad is\
+    \ going on....\");\n            }\n        }\n    }\n}\n</script>\n</head>\n<body>\n\
+    </body>\n</html>\n```"
+  - "[PAGE 38]\n\nJSON\n\n```\n}catch (e) {\n    try{\n        http_request = new\
+    \ ActiveXObject(\"Microsoft.XMLHTTP\");\n    }catch (e){\n        // Something\
+    \ went wrong\n        alert(\"Your browser broke!\");\n        return false;\n\
+    \    }\n}\nhttp_request.onreadystatechange = function(){\n    if (http_request.readyState\
+    \ == 4 )\n    {\n        // Javascript function JSON.parse to parse JSON data\n\
+    \        var jsonObj = JSON.parse(http_request.responseText);\n\n        // jsonObj\
+    \ variable now contains the data structure and can\n        // be accessed as\
+    \ jsonObj.name and jsonObj.country.\n        document.getElementById(\"Name\"\
+    ).innerHTML = jsonObj.name;\n        document.getElementById(\"Country\").innerHTML\
+    \ = jsonObj.country;\n    }\n}\nhttp_request.open(\"GET\", data_file, true);\n\
+    http_request.send();\n}\n</script>\n<title>tutorialspoint.com JSON</title>\n</head>\n\
+    <body>\n<h1>Cricketer Details</h1>\n<table class=\"src\">\n<tr><th>Name</th><th>Country</th></tr>\n\
+    <tr><td><div id=\"Name\">Sachin</div></td>\n<td><div id=\"Country\">India</div></td></tr>\n\
+    </table>\n\n<div class=\"central\">\n```\n\n34\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_38_0.png)"
+  - '[PAGE 39]
+
+
+    JSON
+
+
+    ```
+
+    <button type="button" onclick="loadJSON()">Update Details </button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Given below is the input file **data.json**, having data in JSON format which
+    will be uploaded asynchronously when we click the **Update Detail** button. This
+    file is being kept in http://www.tutorialspoint.com/json/.
+
+
+    ```
+
+    {"name": "brett", "country": "Australia"}
+
+    ```
+
+
+    The above HTML code will generate the following screen, where you can check AJAX
+    in action:
+
+
+    # Cricketer Details
+
+
+    | Name | Country |
+
+    | --- | --- |
+
+    | Sachin | India |
+
+
+    # Update Details:
+
+
+    When you click on the **Update Detail** button, you should get a result something
+    as follows. You can try JSON with AJAX yourself, provided your browser supports
+    Javascript.
+
+
+    # Cricketer Details
+
+
+    | Name | Country |
+
+    | --- | --- |
+
+    | Brett | Australia |'
+pages:
+- img_proc: true
+  md: '![](img/dfcbe7259b4ea609a027cf7c8440bcf5_0_0.png)
+
+
+    # # tutorialspoint
+
+
+    SIMPLYEASYLEARNING
+
+
+    www.tutorialspoint.com
+
+
+    +   - [Facebook](https://www.facebook.com/tutorialspointindia) - [Twitter](https://twitter.com/tutorialspoint)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# About the Tutorial
+
+
+    JSON or JavaScript Object Notation is a lightweight text-based open standard designed
+    for human-readable data interchange. The JSON format was originally specified
+    by Douglas Crockford, and is described in RFC 4627. The official Internet media
+    type for JSON is application/json. The JSON filename extension is .json.
+
+
+    This tutorial will help you understand JSON and its use within various programming
+    languages such as PHP, PERL, Python, Ruby, Java, etc.
+
+
+    # Audience
+
+
+    This tutorial has been designed to help beginners understand the basic functionality
+    of JavaScript Object Notation (JSON) to develop the data interchange format. After
+    completing this tutorial, you will have a good understanding of JSON and how to
+    use it with JavaScript, Ajax, Perl, etc.
+
+
+    # Prerequisites
+
+
+    Before proceeding with this tutorial, you should have a basic understanding of
+    the web application''s work over HTTP and we assume that you have a basic knowledge
+    of JavaScript.
+
+
+    # Copyright & Disclaimer
+
+
+    © Copyright 2017 by Tutorials Point (I) Pvt. Ltd.
+
+
+    All the content and graphics published in this e-book are the property of Tutorials
+    Point (I) Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy,
+    distribute or republish any contents or a part of contents of this e-book in any
+    manner without written consent of the publisher.
+
+
+    We strive to update the contents of our website and tutorials as timely and as
+    precisely as possible, however, the contents may contain inaccuracies or errors.
+    Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy, timeliness
+    or completeness of our website or its contents including this tutorial. If you
+    discover any errors on our website or in this tutorial, please notify us at contact@tutorialspoint.com
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_1_0.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "# # Table of Contents\n\n+   - About the Tutorial................................................................................................................................................................................i\n\
+    - Audience ........................................................................................................................................................................................................i\n\
+    - Prerequisites ................................................................................................................................................................................................i\n\
+    - Copyright & Disclaimer............................................................................................................................................................................i\n\
+    - Table of Contents .......................................................................................................................................................................................ii\n\
+    \n+   1. JSON – OVERVIEW ..................................................................................................................................................................................1\n\
+    \    Uses of JSON ...........................................................................................................................................................................................1\n\
+    \    Characteristics of JSON............................................................................................................................................................................1\n\
+    \    Simple Example in JSON..........................................................................................................................................................................1\n\
+    \n+   2. JSON – SYNTAX .........................................................................................................................................................................................4\n\
+    \n+   3. JSON – DATATYPES ................................................................................................................................................................................5\n\
+    \    Number...........................................................................................................................................................................................................5\n\
+    \    String ...............................................................................................................................................................................................................6\n\
+    \    Boolean..........................................................................................................................................................................................................7\n\
+    \    Array ...............................................................................................................................................................................................................7\n\
+    \    Object .............................................................................................................................................................................................................8\n\
+    \    Whitespace ...................................................................................................................................................................................................8\n\
+    \    null...................................................................................................................................................................................................................9\n\
+    \    JSON Value..................................................................................................................................................................................................9\n\
+    \n+   4. JSON – OBJECTS......................................................................................................................................................................................10\n\
+    \    Creating Simple Objects .......................................................................................................................................................................10\n\
+    \    Creating Array Objects ..........................................................................................................................................................................11\n\
+    \n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_2_0.png)"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '+   5. JSON – SCHEMA
+
+    JSON Schema Validation Libraries
+
+    JSON Schema Example
+
+    6. JSON – COMPARISON WITH XML
+
+    7. JSON – JSON WITH PHP
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in PHP (json_encode)
+
+    Decoding JSON in PHP (json_decode)
+
+    8. JSON – JSON WITH PERL
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in Perl (encode_json)
+
+    Decoding JSON in Perl (decode_json)
+
+    9. JSON – JSON WITH PYTHON
+
+    Environment
+
+    JSON Functions
+
+    Encoding JSON in Python (encode)
+
+    Decoding JSON in Python (decode)
+
+    10. JSON – JSON WITH RUBY
+
+    Environment
+
+    Parsing JSON using Ruby
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_3_0.png)'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '+   11. JSON – JSON WITH JAVA
+
+
+    +   Environment
+
+
+    +   Mapping between JSON and Java entities
+
+
+    +   Encoding JSON in Java
+
+
+    +   Decoding JSON in Java
+
+
+    +   12. JSON – JSON WITH AJAX'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "# 1. JSON – Overview\n\nJSON or JavaScript Object Notation is a lightweight\
+    \ text-based open standard designed for human-readable data interchange. Conventions\
+    \ used by JSON are known to programmers, which include C, C++, Java, Python, Perl,\
+    \ etc.\n\n+   - JSON stands for JavaScript Object Notation.\n- The format was\
+    \ specified by Douglas Crockford.\n- It was designed for human-readable data interchange.\n\
+    - It has been extended from the JavaScript scripting language.\n- The filename\
+    \ extension is **.json**.\n- JSON Internet Media type is **application/json**.\n\
+    - The Uniform Type Identifier is public.json.\n\n# Uses of JSON\n\n+   - It is\
+    \ used while writing JavaScript based applications that includes browser extensions\
+    \ and websites.\n- JSON format is used for serializing and transmitting structured\
+    \ data over network connection.\n- It is primarily used to transmit data between\
+    \ a server and web applications.\n- Web services and APIs use JSON format to provide\
+    \ public data.\n- It can be used with modern programming languages.\n\n# Characteristics\
+    \ of JSON\n\n+   - JSON is easy to read and write.\n- It is a lightweight text-based\
+    \ interchange format.\n- JSON is language independent.\n\n# Simple Example in\
+    \ JSON\n\nThe following example shows how to use JSON to store information related\
+    \ to books based on their topic and edition.\n\n```\n{\n    \"book\": [\n    {\n\
+    ```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_5_0.png)"
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "# JSON\n\n```\n\"id\":\"01\",\n\"language\": \"Java\",\n\"edition\": \"third\"\
+    ,\n\"author\": \"Herbert Schildt\"\n},\n{\n    \"id\":\"07\",\n    \"language\"\
+    : \"C++\",\n    \"edition\": \"second\"\n    \"author\": \"E.Balagurusamy\"\n\
+    }]\n}\n```\n\nAfter understanding the above program, we will try another example.\
+    \ Let's save the below code as **json.htm**:\n\n```\n<html>\n<head>\n<title>JSON\
+    \ example</title>\n<script language=\"javascript\" >\n\n    var object1 = { \"\
+    language\" : \"Java\", \"author\"  : \"herbert schildt\" };\n    document.write(\"\
+    <h1>JSON with JavaScript example</h1>\");\n    document.write(\"<br>\");\n   \
+    \ document.write(\"<h3>Language = \" + object1.language+\"</h3>\");\n    document.write(\"\
+    <h3>Author = \" + object1.author+\"</h3>\");\n\n    var object2 = { \"language\"\
+    \ : \"C++\", \"author\"  : \"E-Balagurusamy\" };\n    document.write(\"<br>\"\
+    );\n    document.write(\"<h3>Language = \" + object2.language+\"</h3>\");\n  \
+    \  document.write(\"<h3>Author = \" + object2.author+\"</h3>\");\n\n    document.write(\"\
+    <hr />\");\n    document.write(object2.language + \" programming language can\
+    \ be studied \" +\n    \"from book written by \" + object2.author);\n    document.write(\"\
+    <hr />\");\n```"
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '```
+
+    </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Now let''s try to open json.htm using IE or any other javascript enabled browser
+    that produces the following result:
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_0.png)
+
+
+    You can refer to JSON Objects chapter for more information on JSON objects.
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_7_1.png)'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "# 2. JSON – Syntax\n\nLet's have a quick look at the basic syntax of JSON.\
+    \ JSON syntax is basically considered as a subset of JavaScript syntax; it includes\
+    \ the following:\n\n+   * Data is represented in name/value pairs.\n* Curly braces\
+    \ hold objects and each name is followed by ':'(colon), the name/value pairs are\
+    \ separated by , (comma).\n* Square brackets hold arrays and values are separated\
+    \ by ,(comma).\n\nBelow is a simple example:\n\n```\n{\n    \"book\": [\n    {\n\
+    \        \"id\":\"01\",\n        \"language\": \"Java\",\n        \"edition\"\
+    : \"third\",\n        \"author\": \"Herbert Schildt\"\n    },\n    {\n       \
+    \ \"id\":\"07\",\n        \"language\": \"C++\",\n        \"edition\": \"second\"\
+    \n        \"author\": \"E.Balagurusamy\"\n    }]\n}\n```\n\nJSON supports the\
+    \ following two data structures:\n\n+   * **Collection of name/value pairs:**\
+    \ This Data Structure is supported by different programming languages.\n* **Ordered\
+    \ list of values:** It includes array, list, vector or sequence etc."
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# # 3. JSON – DataTypes
+
+
+    JSON format supports the following data types:
+
+
+    | Type | Description |
+
+    | :--- | :--- |
+
+    | Number | double- precision floating-point format in JavaScript |
+
+    | String | double-quoted Unicode with backslash escaping |
+
+    | Boolean | true or false |
+
+    | Array | an ordered sequence of values |
+
+    | Value | it can be a string, a number, true or false, null etc |
+
+    | Object | an unordered collection of key:value pairs |
+
+    | Whitespace | can be used between any pair of tokens |
+
+    | null | empty |
+
+
+    # ## Number
+
+
+    +   - It is a double precision floating-point format in JavaScript and it depends
+    on implementation.
+
+    - Octal and hexadecimal formats are not used.
+
+    - No NaN or Infinity is used in Number.
+
+
+    The following table shows the number types:
+
+
+    | Type | Description |
+
+    | :--- | :--- |
+
+    | Integer | Digits 1-9, 0 and positive or negative |
+
+    | Fraction | Fractions like .3, .9 |
+
+    | Exponent | Exponent like e, e+, e-,E, E+, E- |
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_9_0.png)'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# JSON
+
+
+    # Syntax
+
+
+    ```
+
+    var json-object-name = {"string" : number_value, ......}
+
+    ```
+
+
+    # Example
+
+
+    Example showing Number Datatype, value should not be quoted:
+
+
+    ```
+
+    var obj = {"marks": 97}
+
+    ```
+
+
+    # String
+
+
+    +   - It is a sequence of zero or more double quoted Unicode characters with backslash
+    escaping.
+
+    - Character is a single character string i.e. a string with length 1.
+
+
+    The table shows various special characters that you can use in strings of a JSON
+    document:
+
+
+    | Type | Description |
+
+    |---|---|
+
+    | " | double quotation |
+
+    | \ | backslash |
+
+    | / | forward slash |
+
+    | b | backspace |
+
+    | f | form feed |
+
+    | n | new line |
+
+    | r | carriage return |
+
+    | t | horizontal tab |
+
+    | u | four hexadecimal digits |
+
+
+    # Syntax
+
+
+    ```
+
+    var json-object-name = { string : "string value", ......}
+
+    ```
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_10_0.png)'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "JSON\n\n# Example\n\nExample showing String Datatype:\n\n```\nvar obj = {\"\
+    name\": \"Amit\"}\n```\n\n# Boolean\n\nIt includes true or false values.\n\n#\
+    \ Syntax\n\n```\nvar json-object-name = { string : true/false, .......}\n```\n\
+    \n# Example\n\n```\nvar obj = {\"name\": \"Amit\", \"marks\": 97, \"distinction\"\
+    : true}\n```\n\n# Array\n\n+   - It is an ordered collection of values.\n- These\
+    \ are enclosed in square brackets which means that array begins with .[. and ends\
+    \ with .].\n- The values are separated by , (comma).\n- Array indexing can be\
+    \ started at 0 or 1.\n- Arrays should be used when the key names are sequential\
+    \ integers.\n\n# Syntax\n\n```\n[ value, .......]\n```\n\n# Example\n\nExample\
+    \ showing array containing multiple objects:\n\n```\n{\n  \"books\": [\n    {\
+    \ \"language\":\"Java\" , \"edition\":\"second\" },\n    { \"language\":\"C++\"\
+    \ , \"lastName\":\"fifth\" },\n    { \"language\":\"C\" , \"lastName\":\"third\"\
+    \ }\n  ]\n}\n```\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_11_0.png)"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "# # Object\n\n+   - It is an unordered set of name/value pairs.\n- Objects\
+    \ are enclosed in curly braces that is, it starts with '{' and ends with '}'.\n\
+    - Each name is followed by ':'(colon) and the key/value pairs are separated by\
+    \ , (comma).\n- The keys must be strings and should be different from each other.\n\
+    - Objects should be used when the key names are arbitrary strings.\n\n# ## Syntax\n\
+    \n```\n{ string : value, ......}\n```\n\n# ## Example\n\nExample showing Object:\n\
+    \n```\n{\n  \"id\": \"011A\",\n  \"language\": \"JAVA\",\n  \"price\": 500,\n\
+    }\n```\n\n# # Whitespace\n\nIt can be inserted between any pair of tokens. It\
+    \ can be added to make a code more readable. Example shows declaration with and\
+    \ without whitespace:\n\n# ## Syntax\n\n```\n{string: \"  \",....}\n```\n\n# ##\
+    \ Example\n\n```\nvar obj1 = {\"name\": \"Sachin Tendulkar\"}\nvar obj2 = {\"\
+    name\": \"SauravGanguly\"}\n```"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "# JSON\n\n# null\n\nIt means empty type.\n\n# Syntax\n\n```\nnull\n```\n\n\
+    # Example\n\n```\nvar i = null;\n\nif(i==1)\n{\n    document.write(\"<h1>value\
+    \ is 1</h1>\");\n}\nelse\n{\n    document.write(\"<h1>value is null</h1>\");\n\
+    }\n```\n\n# JSON Value\n\nIt includes:\n\n+   - number (integer or floating point)\n\
+    - string\n- boolean\n- array\n- object\n- null\n\n# Syntax\n\n```\nString | Number\
+    \ | Object | Array | TRUE | FALSE | NULL\n```\n\n# Example\n\n```\nvar i = 1;\n\
+    var j = \"sachin\";\nvar k = null;\n```"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '# # 4. JSON – Objects
+
+
+    # ## Creating Simple Objects
+
+
+    JSON objects can be created with JavaScript. Let us see the various ways of creating
+    JSON objects using JavaScript:
+
+
+    +   * Creation of an empty Object:
+
+    * Creation of a new Object:
+
+    * Creation of an object with attribute **bookname** with value in string, attribute
+    **price** with numeric value. Attribute is accessed by using ''.'' Operator:
+
+
+    ```
+
+    var JSONObject = {};
+
+    ```
+
+
+    ```
+
+    var JSONObject = new Object();
+
+    ```
+
+
+    ```
+
+    var JSONObject = { "bookname ":"VB BLACK BOOK", "price":500 };
+
+    ```
+
+
+    This is an example that shows creation of an object in javascript using JSON,
+    save the below code as **json_object.htm**:
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>Creating Object JSON with JavaScript</title>
+
+    <script language="javascript" >
+
+
+    var JSONObject = { "name" : "tutorialspoint.com", "year" : 2005 };
+
+    document.write("<h1>JSON with JavaScript example</h1>");
+
+    document.write("<br>");
+
+    document.write("<h3>Website Name="+JSONObject.name+"</h3>");
+
+    document.write("<h3>Year="+JSONObject.year+"</h3>");
+
+
+    </script>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "# # JSON\n\nNow let's try to open json_object.htm using IE or any other javascript\
+    \ enabled browser. It produces the following result:\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_15_0.png)\n\
+    \n# # Creating Array Objects\n\nThe following example shows creation of an array\
+    \ object in javascript using JSON, save the below code as **json_array_object.htm**:\n\
+    \n```\n<html>\n<head>\n<title>Creation of array object in javascript using JSON</title>\n\
+    <script language=\"javascript\" >\n\ndocument.writeln(\"<h2>JSON array object</h2>\"\
+    );\n\nvar books = { \"Pascal\" : [\n    { \"Name\"  : \"Pascal Made Simple\",\
+    \ \"price\" : 700 },\n    { \"Name\"  : \"Guide to Pascal\", \"price\" : 400 }\n\
+    \    ],\n    \"Scala\"  : [\n    { \"Name\"  : \"Scala for the Impatient\", \"\
+    price\" : 1000 },\n    { \"Name\"  : \"Scala in Depth\", \"price\" : 1300 }\n\
+    \    ]\n}\n\nvar i = 0\ndocument.writeln(\"<table border='2'><tr>\");\nfor(i=0;i<books.Pascal.length;i++)\n\
+    {\n    document.writeln(\"<td>\");\n</script>\n</head>\n<body></body>\n</html>\n\
+    ```"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "```\ndocument.writeln(\"<table border='1' width=100 >\");\ndocument.writeln(\"\
+    <tr><td><b>Name</b></td><td width=50>\"\n + books.Pascal[i].Name+\"</td></tr>\"\
+    );\ndocument.writeln(\"<tr><td><b>Price</b></td><td width=50>\"\n + books.Pascal[i].price\
+    \ +\"</td></tr>\");\ndocument.writeln(\"</table>\");\ndocument.writeln(\"</td>\"\
+    );\n}\n\nfor(i=0;i<books.Scala.length;i++)\n{\n    document.writeln(\"<td>\");\n\
+    \    document.writeln(\"<table border='1' width=100 >\");\n    document.writeln(\"\
+    <tr><td><b>Name</b></td><td width=50>\"\n    + books.Scala[i].Name+\"</td></tr>\"\
+    );\n    document.writeln(\"<tr><td><b>Price</b></td><td width=50>\"\n    + books.Scala[i].price+\"\
+    </td></tr>\");\n    document.writeln(\"</table>\");\n    document.writeln(\"</td>\"\
+    );\n}\ndocument.writeln(\"</tr></table>\");\n</script>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\nNow let's try to open json_array_object.htm using IE or any other\
+    \ javascript enabled browser. It produces the following result:\n\n# JSON array\
+    \ object\n\n| Name | Pascal Made Simple | Name | Guide to Pascal | Name | Scala\
+    \ for the Impatient | Name | Scala in Depth |\n| Price | 700 | Price | 400 | Price\
+    \ | 1000 | Price | 1300 |"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# # 5. JSON – Schema
+
+
+    JSON Schema is a specification for JSON based format for defining the structure
+    of JSON data. It was written under IETF draft which expired in 2011. JSON Schema:
+
+
+    +   - Describes your existing data format.
+
+    - Clear, human- and machine-readable documentation.
+
+    - Complete structural validation, useful for automated testing.
+
+    - Complete structural validation, validating client-submitted data.
+
+
+    # ## JSON Schema Validation Libraries
+
+
+    There are several validators currently available for different programming languages.
+    Currently the most complete and compliant JSON Schema validator available is JSV.
+
+
+    | Languages | Libraries |
+
+    | :--- | :--- |
+
+    | C | WJElement (LGPLv3) |
+
+    | Java | json-schema-validator (LGPLv3) |
+
+    | .NET | Json.NET (MIT) |
+
+    | ActionScript 3 | Frigga (MIT) |
+
+    | Haskell | aeson-schema (MIT) |
+
+    | Python | Jsonschema |
+
+    | Ruby | autoparse (ASL 2.0); ruby-jsonschema (MIT) |
+
+    | PHP | php-json-schema (MIT). json-schema (Berkeley) |
+
+    | JavaScript | Orderly (BSD); JSV; json-schema; Matic (MIT); Dojo; Persevere (modified
+    BSD or AFL 2.0); schema.js. |'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "# JSON Schema Example\n\nGiven below is a basic JSON schema, which covers a\
+    \ classical product catalog description:\n\n```\n{\n    \"$schema\": \"http://json-schema.org/draft-04/schema#\"\
+    ,\n    \"title\": \"Product\",\n    \"description\": \"A product from Acme's catalog\"\
+    ,\n    \"type\": \"object\",\n    \"properties\": {\n        \"id\": {\n     \
+    \       \"description\": \"The unique identifier for a product\",\n          \
+    \  \"type\": \"integer\"\n        },\n        \"name\": {\n            \"description\"\
+    : \"Name of the product\",\n            \"type\": \"string\"\n        },\n   \
+    \     \"price\": {\n            \"type\": \"number\",\n            \"minimum\"\
+    : 0,\n            \"exclusiveMinimum\": true\n        }\n    },\n    \"required\"\
+    : [\"id\", \"name\", \"price\"]\n}\n```\n\nLet's check the various important keywords\
+    \ that can be used in this schema:\n\n| Keywords | Description |\n| :--- | :---\
+    \ |\n| $schema | The $schema keyword states that this schema is written according\
+    \ to the draft v4 specification. |\n| title | You will use this to give a title\
+    \ to your schema. |\n| description | A little description of the schema. |"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: 'JSON
+
+
+    | type | The type keyword defines the first constraint on our JSON data: it has
+    to be a JSON Object. |
+
+    |---|---|
+
+    | properties | Defines various keys and their value types, minimum and maximum
+    values to be used in JSON file. |
+
+    | required | This keeps a list of required properties. |
+
+    | minimum | This is the constraint to be put on the value and represents minimum
+    acceptable value. |
+
+    | exclusiveMinimum | If "exclusiveMinimum" is present and has boolean value true,
+    the instance is valid if it is strictly greater than the value of "minimum". |
+
+    | maximum | This is the constraint to be put on the value and represents maximum
+    acceptable value. |
+
+    | exclusiveMaximum | If "exclusiveMaximum" is present and has boolean value true,
+    the instance is valid if it is strictly lower than the value of "maximum". |
+
+    | multipleOf | A numeric instance is valid against "multipleOf" if the result
+    of the division of the instance by this keyword''s value is an integer. |
+
+    | maxLength | The length of a string instance is defined as the maximum number
+    of its characters. |
+
+    | minLength | The length of a string instance is defined as the minimum number
+    of its characters. |
+
+    | pattern | A string instance is considered valid if the regular expression matches
+    the instance successfully. |
+
+
+    15
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_19_0.png)'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "# JSON\n\nYou can check a http://json-schema.org for the complete list of keywords\
+    \ that can be used in defining a JSON schema. The above schema can be used to\
+    \ test the validity of the following JSON code:\n\n```\n[\n  {\n    \"id\": 2,\n\
+    \    \"name\": \"An ice sculpture\",\n    \"price\": 12.50,\n  },\n  {\n    \"\
+    id\": 3,\n    \"name\": \"A blue mouse\",\n    \"price\": 25.50,\n  }\n]\n```"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "# 6. JSON – Comparison with XML\n\nJSON and XML are human readable formats\
+    \ and are language independent. They both have support for creation, reading and\
+    \ decoding in real world situations. We can compare JSON with XML, based on the\
+    \ following factors:\n\n# Verbose\n\nXML is more verbose than JSON, so it is faster\
+    \ to write JSON for programmers.\n\n# Arrays Usage\n\nXML is used to describe\
+    \ the structured data, which doesn't include arrays whereas JSON include arrays.\n\
+    \n# Parsing\n\nJavaScript's *eval* method parses JSON. When applied to JSON, eval\
+    \ returns the described object.\n\n# Example\n\nIndividual examples of XML and\
+    \ JSON:\n\n# JSON\n\n```\n{\n    \"company\": Volkswagen,\n    \"name\": \"Vento\"\
+    ,\n    \"price\": 800000\n}\n```\n\n# XML\n\n```\n<car>\n    <company>Volkswagen</company>\n\
+    \    <name>Vento</name>\n    <price>800000</price>\n</car>\n```"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# 7. JSON – JSON with PHP
+
+
+    This chapter covers how to encode and decode JSON objects using PHP programming
+    language. Let''s start with preparing the environment to start our programming
+    with PHP for JSON.
+
+
+    # Environment
+
+
+    As of PHP 5.2.0, the JSON extension is bundled and compiled into PHP by default.
+
+
+    # JSON Functions
+
+
+    | Function | Libraries |
+
+    | --- | --- |
+
+    | json_encode | Returns the JSON representation of a value. |
+
+    | json_decode | Decodes a JSON string. |
+
+    | json_last_error | Returns the last error occurred. |
+
+
+    # Encoding JSON in PHP (json_encode)
+
+
+    PHP json_encode() function is used for encoding JSON in PHP. This function returns
+    the JSON representation of a value on success or FALSE on failure.
+
+
+    # Syntax
+
+
+    ```
+
+    string json_encode ( $value [, $options = 0 ] )
+
+    ```
+
+
+    # Parameters
+
+
+    +   - **value**: The value being encoded. This function only works with UTF-8
+    encoded data.
+
+    - **options**: This optional value is a bitmask consisting of JSON_HEX_QUOT, JSON_HEX_TAG,
+    JSON_HEX_AMP, JSON_HEX_APOS, JSON_NUMERIC_CHECK,JSON_PRETTY_PRINT, JSON_UNESCAPED_SLASHES,
+    JSON_FORCE_OBJECT.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: "# Example\n\nThe following example shows how to convert an array into JSON\
+    \ with PHP:\n\n```\n<?php\n    $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd'\
+    \ => 4, 'e' => 5);\n    echo json_encode($arr);\n?>\n```\n\nWhile executing, this\
+    \ will produce the following result:\n\n```\n{\"a\":1,\"b\":2,\"c\":3,\"d\":4,\"\
+    e\":5}\n```\n\nThe following example shows how the PHP objects can be converted\
+    \ into JSON:\n\n```\n<?php\n    class Emp {\n        public $name = \"\";\n  \
+    \      public $hobbies  = \"\";\n        public $birthdate = \"\";\n    }\n  \
+    \  $e = new Emp();\n    $e->name = \"sachin\";\n    $e->hobbies  = \"sports\"\
+    ;\n    $e->birthdate = date('m/d/Y h:i:s a', \"8/5/1974 12:20:03 p\");\n    $e->birthdate\
+    \ = date('m/d/Y h:i:s a', strtotime(\"8/5/1974 12:20:03\"));\n\n    echo json_encode($e);\n\
+    ?>\n```\n\nWhile executing, this will produce the following result:\n\n```\n{\"\
+    name\":\"sachin\",\"hobbies\":\"sports\",\"birthdate\":\"08\\/05\\/1974 12:20:03\
+    \ pm\"}\n```\n\n# Decoding JSON in PHP (json_decode)\n\nPHP json_decode() function\
+    \ is used for decoding JSON in PHP. This function returns the value decoded from\
+    \ json to appropriate PHP type.\n\n# Syntax\n\n```\nmixed json_decode ($json [,$assoc\
+    \ = false [, $depth = 512 [, $options = 0 ]]])\n```"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "# JSON\n\n# Paramaters\n\n+   - **json_string**: It is an encoded string which\
+    \ must be UTF-8 encoded data.\n- **assoc**: It is a boolean type parameter, when\
+    \ set to TRUE, returned objects will be converted into associative arrays.\n-\
+    \ **depth**: It is an integer type parameter which specifies recursion depth\n\
+    - **options**: It is an integer type bitmask of JSON decode, JSON_BIGINT_AS_STRING\
+    \ is supported.\n\n# Example\n\nThe following example shows how PHP can be used\
+    \ to decode JSON objects:\n\n```\n<?php\n$json = '{\"a\":1,\"b\":2,\"c\":3,\"\
+    d\":4,\"e\":5}';\n\nvar_dump(json_decode($json));\nvar_dump(json_decode($json,\
+    \ true));\n?>\n```\n\nWhile executing, it will produce the following result:\n\
+    \n```\nobject(stdClass)#1 (5) {\n  [\"a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"\
+    c\"] => int(3)\n  [\"d\"] => int(4)\n  [\"e\"] => int(5)\n}\n\narray(5) {\n  [\"\
+    a\"] => int(1)\n  [\"b\"] => int(2)\n  [\"c\"] => int(3)\n  [\"d\"] => int(4)\n\
+    \  [\"e\"] => int(5)\n}\n```"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# # 8. JSON – JSON with Perl
+
+
+    This chapter covers how to encode and decode JSON objects using Perl programming
+    language. Let''s start with preparing the environment to start our programming
+    with Perl for JSON.
+
+
+    # ## Environment
+
+
+    Before you start encoding and decoding JSON using Perl, you need to install JSON
+    module, which can be obtained from CPAN. Once you downloaded JSON-2.53.tar.gz
+    or any other latest version, follow the steps mentioned below:
+
+
+    ```
+
+    $tar xvfz JSON-2.53.tar.gz
+
+    $cd JSON-2.53
+
+    $perl Makefile.PL
+
+    $make
+
+    $make install
+
+    ```
+
+
+    # ## JSON Functions
+
+
+    | Function | Libraries |
+
+    | :--- | :--- |
+
+    | encode_json | Converts the given Perl data structure to a UTF-8 encoded, binary
+    string. |
+
+    | decode_json | Decodes a JSON string. |
+
+    | to_json | Converts the given Perl data structure to a json string. |
+
+    | from_json | Expects a json string and tries to parse it, returning the resulting
+    reference. |
+
+    | convert_blessed | Use this function with true value so that Perl can use TO_JSON
+    method on the object''s class to convert an object into JSON. |
+
+
+    ![](img/dfcbe7259b4ea609a027cf7c8440bcf5_25_0.png)'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "JSON\n\n# Encoding JSON in Perl (encode_json)\n\nPerl encode_json() function\
+    \ converts the given Perl data structure to a UTF-8 encoded, binary string.\n\n\
+    Syntax:\n\n```\n$json_text = encode_json ($perl_scalar );\n\nor\n\n$json_text\
+    \ = JSON->new->utf8->encode($perl_scalar);\n```\n\nExample\n\nThe following example\
+    \ shows arrays under JSON with Perl:\n\n```\n#!/usr/bin/perl\nuse JSON;\n\nmy\
+    \ %rec_hash = ('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);\nmy $json =\
+    \ encode_json \\%rec_hash;\nprint \"$json\\n\";\n```\n\nWhile executing, this\
+    \ will produce the following result:\n\n```\n{\"e\":5,\"c\":3,\"a\":1,\"b\":2,\"\
+    d\":4}\n```\n\nThe following example shows how Perl objects can be converted into\
+    \ JSON:\n\n```\n#!/usr/bin/perl\n\npackage Emp;\nsub new\n{\n    my $class = shift;\n\
+    \    my $self = {\n        name => shift,\n        hobbies  => shift,\n      \
+    \  birthdate  => shift,\n    };\n    bless $self, $class;\n}\n```"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '```
+
+    return $self;
+
+    }
+
+    sub TO_JSON { return { %{ shift() } }; }
+
+
+    package main;
+
+    use JSON;
+
+
+    my $JSON  = JSON->new->utf8;
+
+    $JSON->convert_blessed(1);
+
+
+    $e = new Emp( "sachin", "sports", "8/5/1974 12:20:03 pm");
+
+    $json = $JSON->encode($e);
+
+    print "$json\n";
+
+    ```
+
+
+    On executing, it will produce the following result:
+
+
+    ```
+
+    {"birthdate":"8/5/1974 12:20:03 pm","name":"sachin","hobbies":"sports"}
+
+    ```
+
+
+    # Decoding JSON in Perl (decode_json)
+
+
+    Perl decode_json() function is used for decoding JSON in Perl. This function returns
+    the value decoded from json to an appropriate Perl type.
+
+
+    # Syntax:
+
+
+    ```
+
+    $perl_scalar = decode_json $json_text
+
+
+    or
+
+
+    $perl_scalar = JSON->new->utf8->decode($json_text)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows how Perl can be used to decode JSON objects. Here
+    you will need to install Data::Dumper module if you already do not have it on
+    your machine.
+
+
+    ```
+
+    #!/usr/bin/perl
+
+    use JSON;
+
+    use Data::Dumper;
+
+
+    $json = ''{"a":1,"b":2,"c":3,"d":4,"e":5}'';
+
+    ```'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: "# JSON\n\n```\n$text = decode_json($json);\nprint Dumper($text);\n```\n\nOn\
+    \ executing, it will produce following result:\n\n```\n$VAR1 = {\n    'e' => 5,\n\
+    \    'c' => 3,\n    'a' => 1,\n    'b' => 2,\n    'd' => 4\n};\n```"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# 9.  JSON – JSON with Python
+
+
+    This chapter covers how to encode and decode JSON objects using Python programming
+    language. Let''s start with preparing the environment to start our programming
+    with Python for JSON.
+
+
+    # Environment
+
+
+    Before you start with encoding and decoding JSON using Python, you need to install
+    any of the JSON modules available. For this tutorial we have downloaded and installed
+    Demjson (http://deron.meranda.us/python/demjson/) as follows:
+
+
+    ```
+
+    $tar xvfz demjson-1.6.tar.gz
+
+    $cd demjson-1.6
+
+    $python setup.py install
+
+    ```
+
+
+    # JSON Functions
+
+
+    | Function | Libraries |
+
+    | :--- | :--- |
+
+    | encode | Encodes the Python object into a JSON string representation. |
+
+    | decode | Decodes a JSON-endoded string into a Python object. |
+
+
+    # Encoding JSON in Python (encode)
+
+
+    Python encode() function encodes the Python object into a JSON string representation.
+
+
+    # Syntax
+
+
+    ```
+
+    demjson.encode(self, obj, nest_level=0)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows arrays under JSON with Python.
+
+
+    ```
+
+    #!/usr/bin/python
+
+    import demjson
+
+
+    data = [ { ''a'' : 1, ''b'' : 2, ''c'' : 3, ''d'' : 4, ''e'' : 5 } ]
+
+    ```'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '```
+
+    json = demjson.encode(data)
+
+    print json
+
+    ```
+
+
+    While executing, this will produce the following result:
+
+
+    ```
+
+    [{"a":1,"b":2,"c":3,"d":4,"e":5}]
+
+    ```
+
+
+    # Decoding JSON in Python (decode)
+
+
+    Python can use demjson.decode() function for decoding JSON. This function returns
+    the value decoded from json to an appropriate Python type.
+
+
+    # Syntax
+
+
+    ```
+
+    demjson.decode(self, txt)
+
+    ```
+
+
+    # Example
+
+
+    The following example shows how Python can be used to decode JSON objects.
+
+
+    ```
+
+    #!/usr/bin/python
+
+    import demjson
+
+
+    json = ''{"a":1,"b":2,"c":3,"d":4,"e":5}'';
+
+
+    text = demjson.decode(json)
+
+    print text
+
+    ```
+
+
+    On executing, it will produce the following result:
+
+
+    ```
+
+    {u''a'': 1, u''c'': 3, u''b'': 2, u''e'': 5, u''d'': 4}
+
+    ```'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "# # 10. JSON – JSON with Ruby\n\nThis chapter covers how to encode and decode\
+    \ JSON objects using Ruby programming language. Let's start with preparing the\
+    \ environment to start our programming with Ruby for JSON.\n\n# ## Environment\n\
+    \nBefore you start with encoding and decoding JSON using Ruby, you need to install\
+    \ any of the JSON modules available for Ruby. You may need to install Ruby gem,\
+    \ but if you are running latest version of Ruby then you must have gem already\
+    \ installed on your machine, otherwise let's follow the following single step\
+    \ assuming you already have gem installed:\n\n```\n$gem install json\n```\n\n\
+    # ## Parsing JSON using Ruby\n\nThe following example shows that the first 2 keys\
+    \ hold string values and the last 3 keys hold arrays of strings. Let's keep the\
+    \ following content in a file called **input.json**.\n\n```\n{\n    \"President\"\
+    : \"Alan Isaac\",\n    \"CEO\": \"David Richardson\",\n\n    \"India\": [\n  \
+    \      \"Sachin Tendulkar\",\n        \"Virender Sehwag\",\n        \"Gautam Gambhir\"\
+    ,\n    ],\n\n    \"Srilanka\": [\n        \"Lasith Malinga\",\n        \"Angelo\
+    \ Mathews\",\n        \"Kumar Sangakkara\"\n    ],\n\n    \"England\": [\n   \
+    \     \"Alastair Cook\",\n}\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\n    \"Jonathan Trott\",\n    \"Kevin Pietersen\"\n  ]\n}\n```\n\nGiven\
+    \ below is a Ruby program that will be used to parse the above mentioned JSON\
+    \ document:\n\n```\n#!/usr/bin/ruby\nrequire 'rubygems'\nrequire 'json'\nrequire\
+    \ 'pp'\n\njson = File.read('input.json')\nobj = JSON.parse(json)\n\npp obj\n```\n\
+    \nOn executing, it will produce the following result:\n\n```\n{\"President\"=>\"\
+    Alan Isaac\",\n\"CEO\"=>\"David Richardson\",\n\n\"India\"=>\n [\"Sachin Tendulkar\"\
+    , \"Virender Sehwag\", \"Gautam Gambhir\"],\n\n\"Srilanka\"=>\n [\"Lasith Malinga\
+    \ \", \"Angelo Mathews\", \"Kumar Sangakkara\"],\n\n\"England\"=>\n [\"Alastair\
+    \ Cook\", \"Jonathan Trott\", \"Kevin Pietersen\"]\n}\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '# # 11. JSON – JSON with Java
+
+
+    This chapter covers how to encode and decode JSON objects using Java programming
+    language. Let''s start with preparing the environment to start our programming
+    with Java for JSON.
+
+
+    # ## Environment
+
+
+    Before you start with encoding and decoding JSON using Java, you need to install
+    any of the JSON modules available. For this tutorial we have downloaded and installed
+    JSON.simple (https://code.google.com/p/json-simple/) and have added the location
+    of **json-simple-1.1.1.jar** file to the environment variable CLASSPATH.
+
+
+    # ## Mapping between JSON and Java entities
+
+
+    JSON.simple maps entities from the left side to the right side while decoding
+    or parsing, and maps entities from the right to the left while encoding.
+
+
+    | JSON | Java |
+
+    | --- | --- |
+
+    | string | java.lang.String |
+
+    | number | java.lang.Number |
+
+    | true|false | ava.lang.Boolean |
+
+    | null | null |
+
+    | array | java.util.List |
+
+    | object | java.util.Map |
+
+
+    On decoding, the default concrete class of *java.util.List* is *org.json.simple.JSONArray*
+    and the default concrete class of *java.util.Map* is *org.json.simple.JSONObject*.'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "# Encoding JSON in Java\n\nFollowing is a simple example to encode a JSON object\
+    \ using Java JSONObject which is a subclass of java.util.HashMap. No ordering\
+    \ is provided. If you need the strict ordering of elements, use JSONValue.toJSONString\
+    \ (map) method with ordered map implementation such as java.util.LinkedHashMap.\n\
+    \n```\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n{\n    public\
+    \ static void main(String[] args)\n    {\n        JSONObject obj = new JSONObject();\n\
+    \n        obj.put(\"name\", \"foo\");\n        obj.put(\"num\", new Integer(100));\n\
+    \        obj.put(\"balance\", new Double(1000.21));\n        obj.put(\"is_vip\"\
+    , new Boolean(true));\n\n        System.out.print(obj);\n    }\n}\n```\n\nOn compiling\
+    \ and executing the above program the following result will be generated:\n\n\
+    ```\n{\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"}\n\
+    ```\n\nFollowing is another example that shows a JSON object streaming using Java\
+    \ JSONObject:\n\n```\nimport org.json.simple.JSONObject;\n\nclass JsonEncodeDemo\n\
+    {\n    public static void main(String[] args)\n    {\n        JSONObject obj =\
+    \ new JSONObject();\n\n        obj.put(\"name\",\"foo\");\n        obj.put(\"\
+    num\",new Integer(100));\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "```\nobj.put(\"balance\",new Double(1000.21));\nobj.put(\"is_vip\",new Boolean(true));\n\
+    \nStringWriter out = new StringWriter();\nobj.writeJSONString(out);\n\nString\
+    \ jsonText = out.toString();\nSystem.out.print(jsonText);\n}\n}\n```\n\nOn compiling\
+    \ and executing the above program the following result is generated:\n\n```\n\
+    {\"balance\": 1000.21, \"num\":100, \"is_vip\":true, \"name\":\"foo\"}\n```\n\n\
+    # Decoding JSON in Java\n\nThe following example makes use of **JSONObject** and\
+    \ **JSONArray** where JSONObject is a java.util.Map and JSONArray is a java.util.List,\
+    \ so you can access them with standard operations of Map or List.\n\n```\nimport\
+    \ org.json.simple.JSONObject;\nimport org.json.simple.JSONArray;\nimport org.json.simple.parser.ParseException;\n\
+    import org.json.simple.parser.JSONParser;\n\nclass JsonDecodeDemo\n{\n    public\
+    \ static void main(String[] args)\n    {\n        JSONParser parser=new JSONParser();\n\
+    \        String s = \"[0,{\\\"1\\\":{\\\"2\\\":{\\\"3\\\":{\\\"4\\\":[5,{\\\"\
+    6\\\":7}]}}}}]\";\n        try{\n            Object obj = parser.parse(s);\n \
+    \           JSONArray array = (JSONArray)obj;\n            System.out.println(\"\
+    The 2nd element of array\");\n            System.out.println(array.get(1));\n\
+    \            System.out.println();\n\n            JSONObject obj2 = (JSONObject)array.get(1);\n\
+    ```"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "```\nSystem.out.println(\"Field \\\"1\\\"\");\nSystem.out.println(obj2.get(\"\
+    1\"));\n\ns = \"{}\";\nobj = parser.parse(s);\nSystem.out.println(obj);\n\ns=\
+    \ \"[5,]\";\nobj = parser.parse(s);\nSystem.out.println(obj);\n\ns= \"[5,,2]\"\
+    ;\nobj = parser.parse(s);\nSystem.out.println(obj);\n}catch(ParseException pe){\n\
+    \    System.out.println(\"position: \" + pe.getPosition());\n    System.out.println(pe);\n\
+    }\n}\n}\n```\n\nOn compiling and executing the above program, the following result\
+    \ will be generated:\n\n```\nThe 2nd element of array\n{\"1\":{\"2\":{\"3\":{\"\
+    4\":[5,{\"6\":7}]}}}}\n\nField \"1\"\n{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}\n\
+    {}\n[5]\n[5,2]\n```"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "# 12. JSON – JSON with Ajax\n\nAJAX is Asynchronous JavaScript and XML, which\
+    \ is used on the client side as a group of interrelated web development techniques,\
+    \ in order to create asynchronous web applications. According to the AJAX model,\
+    \ web applications can send and retrieve data from a server asynchronously without\
+    \ interfering with the display and the behavior of the existing page.\n\nMany\
+    \ developers use JSON to pass AJAX updates between the client and the server.\
+    \ Websites updating live sports scores can be considered as an example of AJAX.\
+    \ If these scores have to be updated on the website, then they must be stored\
+    \ on the server so that the webpage can retrieve the score when it is required.\
+    \ This is where we can make use of JSON formatted data.\n\nAny data that is updated\
+    \ using AJAX can be stored using the JSON format on the web server. AJAX is used\
+    \ so that JavaScript can retrieve these JSON files when necessary, parse them,\
+    \ and perform one of the following operations:\n\n+   * Store the parsed values\
+    \ in the variables for further processing before displaying them on the webpage.\n\
+    * It directly assigns the data to the DOM elements in the webpage, so that they\
+    \ are displayed on the website.\n\n**Example**\nThe following code shows JSON\
+    \ with AJAX. Save it as **ajax.htm** file. Here the loading function loadJSON()\
+    \ is used asynchronously to upload JSON data.\n\n```\n<html>\n<head>\n<meta content=\"\
+    text/html; charset=ISO-8859-1\" http-equiv=\"content-type\">\n<script type=\"\
+    application/javascript\">\nfunction loadJSON()\n{\n    var data_file = \"http://www.tutorialspoint.com/json/data.json\"\
+    ;\n    var http_request = new XMLHttpRequest();\n    try{\n        // Opera 8.0+,\
+    \ Firefox, Chrome, Safari\n        http_request = new XMLHttpRequest();\n    }catch\
+    \ (e){\n        // Internet Explorer Browsers\n        try{\n            http_request\
+    \ = new ActiveXObject(\"Msxml2.XMLHTTP\");\n        }catch (e) {\n           \
+    \ try{\n                http_request = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n            }catch (e) {\n                window.alert(\"Something bad is\
+    \ going on....\");\n            }\n        }\n    }\n}\n</script>\n</head>\n<body>\n\
+    </body>\n</html>\n```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "JSON\n\n```\n}catch (e) {\n    try{\n        http_request = new ActiveXObject(\"\
+    Microsoft.XMLHTTP\");\n    }catch (e){\n        // Something went wrong\n    \
+    \    alert(\"Your browser broke!\");\n        return false;\n    }\n}\nhttp_request.onreadystatechange\
+    \ = function(){\n    if (http_request.readyState == 4 )\n    {\n        // Javascript\
+    \ function JSON.parse to parse JSON data\n        var jsonObj = JSON.parse(http_request.responseText);\n\
+    \n        // jsonObj variable now contains the data structure and can\n      \
+    \  // be accessed as jsonObj.name and jsonObj.country.\n        document.getElementById(\"\
+    Name\").innerHTML = jsonObj.name;\n        document.getElementById(\"Country\"\
+    ).innerHTML = jsonObj.country;\n    }\n}\nhttp_request.open(\"GET\", data_file,\
+    \ true);\nhttp_request.send();\n}\n</script>\n<title>tutorialspoint.com JSON</title>\n\
+    </head>\n<body>\n<h1>Cricketer Details</h1>\n<table class=\"src\">\n<tr><th>Name</th><th>Country</th></tr>\n\
+    <tr><td><div id=\"Name\">Sachin</div></td>\n<td><div id=\"Country\">India</div></td></tr>\n\
+    </table>\n\n<div class=\"central\">\n```\n\n34\n\n![](img/dfcbe7259b4ea609a027cf7c8440bcf5_38_0.png)"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: 'JSON
+
+
+    ```
+
+    <button type="button" onclick="loadJSON()">Update Details </button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    Given below is the input file **data.json**, having data in JSON format which
+    will be uploaded asynchronously when we click the **Update Detail** button. This
+    file is being kept in http://www.tutorialspoint.com/json/.
+
+
+    ```
+
+    {"name": "brett", "country": "Australia"}
+
+    ```
+
+
+    The above HTML code will generate the following screen, where you can check AJAX
+    in action:
+
+
+    # Cricketer Details
+
+
+    | Name | Country |
+
+    | --- | --- |
+
+    | Sachin | India |
+
+
+    # Update Details:
+
+
+    When you click on the **Update Detail** button, you should get a result something
+    as follows. You can try JSON with AJAX yourself, provided your browser supports
+    Javascript.
+
+
+    # Cricketer Details
+
+
+    | Name | Country |
+
+    | --- | --- |
+
+    | Brett | Australia |'
+  merge: -1
+  pgno: 39
+toc:
+- - '#'
+  - 'JSON：Javascript 对象表示法  '
+- - '#'
+  - '关于本教程  '
+- - '#'
+  - '目标读者  '
+- - '#'
+  - '前提条件  '
+- - '##'
+  - '1. JSON – 概述  '
+- - '###'
+  - 'JSON 的用途  '
+- - '###'
+  - 'JSON 的特性  '
+- - '###'
+  - 'JSON 简单示例  '
+- - '###'
+  - 'JSON  '
+- - '##'
+  - '2. JSON – 语法  '
+- - '##'
+  - '3. JSON – 数据类型  '
+- - '####'
+  - 'Number  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'String  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'Boolean  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'Array  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'Object  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'Whitespace  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'null  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '####'
+  - 'JSON 值  '
+- - '#####'
+  - '语法  '
+- - '#####'
+  - '示例  '
+- - '##'
+  - '4. JSON – 对象  '
+- - '###'
+  - '创建简单对象  '
+- - '###'
+  - '创建数组对象  '
+- - '###'
+  - 'JSON 数组对象  '
+- - '##'
+  - '5. JSON – Schema  '
+- - '###'
+  - 'JSON Schema 验证库  '
+- - '###'
+  - 'JSON Schema 示例  '
+- - '###'
+  - 'JSON  '
+- - '##'
+  - '6. JSON – 与 XML 的比较  '
+- - '###'
+  - '冗余性  '
+- - '###'
+  - '数组用法  '
+- - '###'
+  - '解析  '
+- - '###'
+  - '示例  '
+- - '###'
+  - 'JSON  '
+- - '###'
+  - 'XML  '
+- - '##'
+  - '7. JSON – PHP 中的 JSON  '
+- - '###'
+  - '环境  '
+- - '###'
+  - 'JSON 函数  '
+- - '###'
+  - '在 PHP 中编码 JSON (json_encode)  '
+- - '####'
+  - '语法  '
+- - '####'
+  - '参数  '
+- - '####'
+  - '示例  '
+- - '###'
+  - '在 PHP 中解码 JSON (json_decode)  '
+- - '####'
+  - '语法  '
+- - '####'
+  - 'JSON  '
+- - '####'
+  - '参数  '
+- - '####'
+  - '示例  '
+- - '##'
+  - '8. JSON – JSON 与 Perl  '
+- - '###'
+  - '环境  '
+- - '###'
+  - 'JSON 函数  '
+- - '###'
+  - '在 Perl 中编码 JSON (encode_json)  '
+- - '###'
+  - '在 Perl 中解码 JSON (decode_json)  '
+- - '##'
+  - '9. JSON – JSON 与 Python  '
+- - '###'
+  - '环境  '
+- - '###'
+  - 'JSON 函数  '
+- - '###'
+  - '在 Python 中编码 JSON (encode)  '
+- - '###'
+  - '在 Python 中解码 JSON (decode)  '
+- - '##'
+  - '10. JSON – JSON 与 Ruby  '
+- - '###'
+  - '环境  '
+- - '###'
+  - '使用 Ruby 解析 JSON  '
+- - '##'
+  - '11. JSON – JSON 与 Java  '
+- - '###'
+  - '环境  '
+- - '###'
+  - 'JSON 与 Java 实体之间的映射  '
+- - '###'
+  - '在Java中编码JSON  '
+- - '###'
+  - '在Java中解码JSON  '
+- - '##'
+  - '12. JSON – 结合Ajax使用JSON  '
+- - '###'
+  - '板球运动员详情  '
+- - '###'
+  - '更新详情：  '
+- - '###'
+  - 板球运动员详情

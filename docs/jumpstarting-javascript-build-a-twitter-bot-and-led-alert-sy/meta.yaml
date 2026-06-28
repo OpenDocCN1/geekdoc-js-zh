@@ -1,0 +1,5138 @@
+groups:
+- md: '## Make: Jumpstarting JavaScript
+
+
+    ![img/a0848e8632a09becbaacc6826f2a8219_0_0.png](img/a0848e8632a09becbaacc6826f2a8219_0_0.png)
+
+
+    Build a Twitter Bot and LED Alert System with Node.js and Raspberry Pi
+
+
+    Lynn Beighley
+
+
+    Maker Media, Inc.
+
+    San Francisco
+
+
+    Copyright © 2017 Lynn Beighley. All rights reserved.
+
+
+    Published by
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    Maker Media books may be purchased for educational, business, or sales promotional
+    use. Online editions are also available for most titles (safaribooksonline.com).
+    For more information, contact our corporate/institutional sales department: 800-998-9938
+    or corporate@oreilly.com.
+
+
+    Publisher: Roger Stewart
+
+    Editor: Patrick DiJusto
+
+    Copy Editor: Elizabeth Welch, Happenstance Type-O-Rama
+
+    Proofreader: Scout Festa, Happenstance Type-O-Rama
+
+    Interior Designer and Compositor: Maureen Forys, Happenstance Type-O-Rama
+
+    Cover Designer: Maureen Forys, Happenstance Type-O-Rama
+
+
+    December 2017: First Edition
+
+    Revision History for the First Edition
+
+    2017-12-13 First Release
+
+
+    See oreilly.com/catalog/errata.jsp?isbn=9781680454970 for release details.
+
+
+    Make:, Maker Shed, and Maker Faire are registered trademarks of Maker Media, Inc.
+    The Maker Media logo is a trademark of Maker Media, Inc. Jumpstarting JavaScript
+    and related trade dress are trademarks of Maker Media, Inc. Many of the designations
+    used by manufacturers and sellers to distinguish their products are claimed as
+    trademarks. Where those designations appear in this book, and Maker Media, Inc.
+    was aware of a trademark claim, the designations have been printed in caps or
+    initial caps. While the publisher and the author have used good faith efforts
+    to ensure that the information and instructions contained in this work are accurate,
+    the publisher and the author disclaim all responsibility for errors or omissions,
+    including without limitation responsibility for damages resulting from the use
+    of or reliance on this work. Use of the information and instructions contained
+    in this work is at your own risk. If any code samples or other technology this
+    work contains or describes is subject to open source licenses or the intellectual
+    property rights of others, it is your responsibility to ensure that your use thereof
+    complies with such licenses and/or rights.
+
+
+    978-1-68045-497-0
+
+
+    ## Safari® Books Online
+
+
+    Safari Books Online is an on-demand digital library that delivers expert content
+    in both book and video form from the world''s leading authors in technology and
+    business. Technology professionals, software developers, web designers, and business
+    and creative professionals use Safari Books Online as their primary resource for
+    research, problem solving, learning, and certification training. Safari Books
+    Online offers a range of plans and pricing for enterprise, government, education,
+    and individuals. Members have access to thousands of books, training videos, and
+    prepublication manuscripts in one fully searchable database from publishers like
+    O''Reilly Media, Prentice Hall Professional, Addison-Wesley Professional, Microsoft
+    Press, Sams, Que, Peachpit Press, Focal Press, Cisco Press, John Wiley & Sons,
+    Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe Press, FT Press, Apress,
+    Manning, New Riders, McGraw-Hill, Jones & Bartlett, Course Technology, and hundreds
+    more. For more information about Safari Books Online, please visit us online.
+
+
+    ## How to Contact Us
+
+
+    Please address comments and questions to the publisher:
+
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    You can send comments and questions to us by email at books@makermedia.com.
+
+
+    Maker Media unites, inspires, informs, and entertains a growing community of resourceful
+    people who undertake amazing projects in their backyards, basements, and garages.
+    Maker Media celebrates your right to tweak, hack, and bend any Technology to your
+    will. The Maker Media audience continues to be a growing culture and community
+    that believes in bettering ourselves, our environment, our educational system—our
+    entire world. This is much more than an audience, it''s a worldwide movement that
+    Maker Media is leading. We call it the Maker Movement.
+
+
+    To learn more about Make: visit us at makezine.com. You can learn more about the
+    company at the following websites:
+
+
+    - Maker Media: makermedia.com
+
+    - Maker Faire: makerfaire.com
+
+    - Maker Shed: makershed.com
+
+    - Maker Share: makershare.com
+
+
+    ## CONTENTS
+
+
+    - Preface vi
+
+
+    ### 1 Meet JavaScript and Node.js! 1
+
+
+    - Install Node on Mac 2
+
+    - Install Node on Windows 5
+
+    - Install Node on Linux 7
+
+    - Node Is Installed; Now What? 9
+
+
+    ### 2 Getting into JavaScript 13
+
+
+    - Strings, Math, and the REPL 13
+
+    - Functions 16
+
+    - Using JavaScript Files 17
+
+    - Make a Web Server 18
+
+
+    ### 3 Creating a Node Twitter Bot on Raspberry Pi 21
+
+
+    - Create and Authorize Your Twitter Account 21
+
+    - Create a Configuration File 24
+
+    - Create the Twitter Bot 25
+
+
+    ### 4 Flash an LED in Response to a Twitter Event 33
+
+
+    - Set Up the LED on Your Raspberry Pi 34
+
+    - Create the Blink Program 36
+
+    - Make Your Bot Detect Your Twitter Handle 37
+
+    - Make Your Bot Blink the LED When Mentioned 39
+
+    - Node, Pi, and the Internet of Things 40
+
+
+    ## PREFACE: WHAT IS NODE.JS?
+
+
+    JavaScript is a programming language that web browsers can run. Browsers like
+    Firefox and Chrome are built with engines that can understand and execute programs
+    written in the JavaScript language. Firefox has an engine called SpiderMonkey,
+    and Chrome''s engine is called V8.
+
+
+    Running JavaScript in a browser limits what you can do with it. For example, with
+    JavaScript in a browser, you are limited to interacting with web pages. You can
+    detect errors when people enter information in a form. You can open browser windows
+    and alert boxes. But you can''t control anything outside of a browser.
+
+
+    Fortunately, you have another option. When you install and use the JavaScript
+    extension Node.js, your JavaScript code can run independently of a web browser.
+    (You''ll often see Node.js simply called Node, and that''s what we''ll do for
+    the rest of this book.)
+
+
+    Node is the V8 JavaScript engine bundled together with libraries that handle input/output
+    and networking. This means that Node lets you use JavaScript outside of a browser
+    to run shell scripts, manage back-end services, and run directly on devices.
+
+
+    ### What You Bring to the Book
+
+
+    - Basic familiarity with programming concepts
+
+    - Ability to set up and connect a Raspberry Pi
+
+    - Ability to access and use a console
+
+    - Understanding of sudo, directories, and file creation/editing
+
+
+    ## Meet JavaScript and Node.js!
+
+
+    This chapter takes you through the steps to install Node on your Mac, Windows,
+    or Linux OS. Then you''ll check to see that it''s working.
+
+
+    > **NOTE** As you install Node, you may notice that something called *npm* is
+    also being installed. This program is the Node Package Manager.
+
+
+    Node is really popular, and it has a whole new ecosystem of useful Node-based
+    code packages other developers have created for you to use. When you want to use
+    one of these packages in Node, you need an easy way to install and manage them.
+    That''s what npm does for you—it installs additional Node packages you want to
+    use.
+
+
+    Follow the instructions for your system; then jump to the last section, "Node
+    Is Installed; Now What?"
+
+
+    ## INSTALL NODE ON MAC
+
+
+    Although you could build Node from the source code, this guide is all about getting
+    you going quickly. The easy way is to visit the official Node website, Nodejs.org,
+    and use an automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *nodejs.org/en/download/* and click the Macintosh Installer
+    button to download the installer (Figure 1.1).
+
+
+    ![img/a0848e8632a09becbaacc6826f2a8219_9_0.png](img/a0848e8632a09becbaacc6826f2a8219_9_0.png)
+
+
+    **FIGURE 1.1:** Nodejs.org download page
+
+
+    **Step 2.** Find the file you downloaded and double-click it. You''ll see the
+    installation dialog (Figure 1.2). Click Continue to go through the installation.
+    Stick with the default settings.
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information (Figure 1.3).'
+  mdcn: '
+
+    ## Make: 快速启动 JavaScript
+
+
+    ![img/a0848e8632a09becbaacc6826f2a8219_0_0.png](img/a0848e8632a09becbaacc6826f2a8219_0_0.png)
+
+
+    使用 Node.js 和 Raspberry Pi 构建 Twitter 机器人和 LED 告警系统
+
+
+    Lynn Beighley
+
+
+    Maker Media, Inc.
+
+    旧金山
+
+
+    版权所有 © 2017 Lynn Beighley。保留所有权利。
+
+
+    出版者
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    Maker Media 的图书可用于教育、商业或销售推广目的。大多数书名也提供在线版本（safaribooksonline.com）。欲了解更多信息，请联系我们的公司/机构销售部门：800-998-9938
+    或 corporate@oreilly.com。
+
+
+    出版人：Roger Stewart
+
+    编辑：Patrick DiJusto
+
+    文字编辑：Elizabeth Welch, Happenstance Type-O-Rama
+
+    校对：Scout Festa, Happenstance Type-O-Rama
+
+    内页设计与排版：Maureen Forys, Happenstance Type-O-Rama
+
+    封面设计：Maureen Forys, Happenstance Type-O-Rama
+
+
+    2017年12月：第一版
+
+    第一版修订历史
+
+    2017-12-13 首次发布
+
+
+    有关发布详情，请访问 oreilly.com/catalog/errata.jsp?isbn=9781680454970。
+
+
+    Make:、Maker Shed 和 Maker Faire 是 Maker Media, Inc. 的注册商标。Maker Media 标志是 Maker
+    Media, Inc. 的商标。Jumpstarting JavaScript 及相关商品外观是 Maker Media, Inc. 的商标。制造商和销售商使用的许多区分其产品的名称被声称是商标。当这些名称出现在本书中，并且
+    Maker Media, Inc. 知晓商标索赔时，这些名称已以大写或首字母大写印刷。尽管出版商和作者已尽力确保本书中包含的信息和说明准确无误，但出版商和作者对任何错误或遗漏（包括但不限于因使用或依赖本书而造成的损害）不承担任何责任。使用本书中包含的信息和说明风险自负。如果本书包含或描述的任何代码示例或其他技术受开源许可或其他第三方知识产权的约束，您有责任确保您的使用符合此类许可和/或权利。
+
+
+    978-1-68045-497-0
+
+
+    ## Safari® 图书在线
+
+
+    Safari Books Online 是一个按需数字图书馆，提供来自世界领先技术和商业专家的书籍和视频形式的专业内容。技术人员、软件开发人员、网页设计师以及商业和创意专业人士使用
+    Safari Books Online 作为其研究、解决问题、学习和认证培训的主要资源。Safari Books Online 为企业、政府、教育机构和个人提供一系列计划和定价。会员可以在一个完全可搜索的数据库中访问来自
+    O''Reilly Media、Prentice Hall Professional、Addison-Wesley Professional、Microsoft
+    Press、Sams、Que、Peachpit Press、Focal Press、Cisco Press、John Wiley & Sons、Syngress、Morgan
+    Kaufmann、IBM Redbooks、Packt、Adobe Press、FT Press、Apress、Manning、New Riders、McGraw-Hill、Jones
+    & Bartlett、Course Technology 等数百家出版商的数千本书籍、培训视频和预出版手稿。有关 Safari Books Online 的更多信息，请访问我们的网站。
+
+
+    ## 如何联系我们
+
+
+    请将意见和问题致函出版商：
+
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    您可以通过电子邮件 books@makermedia.com 向我们发送意见和问题。
+
+
+    Maker Media 联合、激励、告知并娱乐着一个不断壮大的、足智多谋的社区，他们在自家后院、地下室和车库中开展令人惊叹的项目。Maker Media 庆祝您调整、破解和按自己的意愿改造任何技术的权利。Maker
+    Media 的受众群体仍然是一个不断发展的文化和社区，他们相信可以改善我们自己、我们的环境、我们的教育体系——乃至我们的整个世界。这远不止是一个受众群体，它是
+    Maker Media 正在引领的一场全球性运动。我们称之为创客运动。
+
+
+    要了解更多关于 Make: 的信息，请访问 makezine.com。您可以通过以下网站了解更多关于公司的信息：
+
+
+    - Maker Media: makermedia.com
+
+    - Maker Faire: makerfaire.com
+
+    - Maker Shed: makershed.com
+
+    - Maker Share: makershare.com
+
+
+    ## 目录
+
+
+    - 前言 vi
+
+
+    ### 1 认识 JavaScript 和 Node.js! 1
+
+
+    - 在 Mac 上安装 Node 2
+
+    - 在 Windows 上安装 Node 5
+
+    - 在 Linux 上安装 Node 7
+
+    - Node 已安装；现在呢？ 9
+
+
+    ### 2 深入 JavaScript 13
+
+
+    - 字符串、数学运算和 REPL 13
+
+    - 函数 16
+
+    - 使用 JavaScript 文件 17
+
+    - 创建一个 Web 服务器 18
+
+
+    ### 3 在 Raspberry Pi 上创建 Node Twitter 机器人 21
+
+
+    - 创建并授权您的 Twitter 账户 21
+
+    - 创建一个配置文件 24
+
+    - 创建 Twitter 机器人 25
+
+
+    ### 4 根据 Twitter 事件闪烁 LED 33
+
+
+    - 在 Raspberry Pi 上设置 LED 34
+
+    - 创建闪烁程序 36
+
+    - 让您的机器人检测您的 Twitter 用户名 37
+
+    - 让您的机器人在被提及时闪烁 LED 39
+
+    - Node、Pi 和物联网 40
+
+
+    ## 前言：什么是 Node.js？
+
+
+    JavaScript 是一种可以在 web 浏览器中运行的编程语言。像 Firefox 和 Chrome 这样的浏览器是用能够理解并执行 JavaScript
+    语言编写的程序的引擎构建的。Firefox 有一个名为 SpiderMonkey 的引擎，而 Chrome 的引擎名为 V8。
+
+
+    在浏览器中运行 JavaScript 限制了您可以使用它做的事情。例如，在浏览器中使用 JavaScript 时，您仅限于与网页交互。您可以在人们在表单中输入信息时检测错误。您可以打开浏览器窗口和警报框。但您无法控制浏览器之外的任何内容。
+
+
+    幸运的是，您还有另一个选择。当您安装并使用 JavaScript 扩展 Node.js 时，您的 JavaScript 代码可以独立于 web 浏览器运行。（您通常会看到
+    Node.js 被简称为 Node，在本书的其余部分中，我们也将这样称呼它。）
+
+
+    Node 是 V8 JavaScript 引擎与处理输入/输出和网络的库捆绑在一起。这意味着 Node 允许您在浏览器之外使用 JavaScript 来运行
+    shell 脚本、管理后端服务以及直接在设备上运行。
+
+
+    ### 本书所需知识
+
+
+    - 基本熟悉编程概念
+
+    - 能够设置和连接 Raspberry Pi
+
+    - 能够访问和使用控制台
+
+    - 理解 sudo、目录以及文件创建/编辑
+
+
+    ## 认识 JavaScript 和 Node.js!
+
+
+    本章将指导您在 Mac、Windows 或 Linux 操作系统上安装 Node 的步骤。然后您将检查它是否正常工作。
+
+
+    > **注意** 在安装 Node 的过程中，您可能会注意到一个名为 *npm* 的程序也在安装。这个程序是 Node 包管理器。
+
+
+    Node 非常流行，它拥有一个全新的、基于 Node 的有用代码包生态系统，这是其他开发人员为您创建以供使用的。当您想在 Node 中使用这些包之一时，您需要一种简便的方法来安装和管理它们。这就是
+    npm 为您所做的——它安装您想要使用的其他 Node 包。
+
+
+    请按照您的系统对应的说明操作；然后跳到最后一节“Node 已安装；现在呢？”
+
+
+    ## 在 Mac 上安装 Node
+
+
+    虽然您可以从源代码构建 Node，但本指南的目的是让您快速入门。简便的方法是访问 Node 官方网站 Nodejs.org 并使用自动安装程序。以下是相关步骤：
+
+
+    **步骤 1.** 访问 *nodejs.org/en/download/* 并单击 Macintosh Installer 按钮下载安装程序（图 1.1）。
+
+
+    ![img/a0848e8632a09becbaacc6826f2a8219_9_0.png](img/a0848e8632a09becbaacc6826f2a8219_9_0.png)
+
+
+    **图 1.1：** Nodejs.org 下载页面
+
+
+    **步骤 2.** 找到您下载的文件并双击它。您将看到安装对话框（图 1.2）。单击“继续”以完成安装。请坚持使用默认设置。
+
+
+    **步骤 3.** 安装完成后，您将看到一个包含安装信息的摘要屏幕（图 1.3）。
+
+    '
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # Make: Jumpstarting JavaScript
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_0_0.png)
+
+
+    Build a Twitter Bot and LED Alert System with Node.js and Raspberry Pi
+
+
+    LYNN BEIGHLEY'
+  - '[PAGE 1]
+
+
+    <!-- no content -->'
+  - '[PAGE 2]
+
+
+    # Make:
+
+
+    # JUMPSTARTING JavaScript
+
+
+    BUILD A TWITTER BOT AND LED ALERT SYSTEM WITH NODE.JS AND RASPBERRY PI
+
+
+    Lynn Beighley
+
+
+    Maker Media, Inc.\nSan Francisco'
+  - '[PAGE 3]
+
+
+    Copyright © 2017 Lynn Beighley. All rights reserved.
+
+
+    Published by
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    Maker Media books may be purchased for educational, business, or sales promotional
+    use. Online editions are also available for most titles (safaribooksonline.com).
+    For more information, contact our corporate/institutional sales department: 800-998-9938
+    or corporate@oreilly.com.
+
+
+    Publisher: Roger Stewart
+
+    Editor: Patrick DiJusto
+
+    Copy Editor: Elizabeth Welch, Happenstance Type-O-Rama
+
+    Proofreader: Scout Festa, Happenstance Type-O-Rama
+
+    Interior Designer and Compositor: Maureen Forys, Happenstance Type-O-Rama
+
+    Cover Designer: Maureen Forys, Happenstance Type-O-Rama
+
+
+    December 2017: First Edition
+
+    Revision History for the First Edition
+
+    2017-12-13 First Release
+
+
+    See oreilly.com/catalog/errata.jsp?isbn=9781680454970 for release details.
+
+
+    Make:, Maker Shed, and Maker Faire are registered trademarks of Maker Media, Inc.
+    The Maker Media logo is a trademark of Maker Media, Inc. Jumpstarting JavaScript
+    and related trade dress are trademarks of Maker Media, Inc. Many of the designations
+    used by manufacturers and sellers to distinguish their products are claimed as
+    trademarks. Where those designations appear in this book, and Maker Media, Inc.
+    was aware of a trademark claim, the designations have been printed in caps or
+    initial caps. While the publisher and the author have used good faith efforts
+    to ensure that the information and instructions contained in this work are accurate,
+    the publisher and the author disclaim all responsibility for errors or omissions,
+    including without limitation responsibility for damages resulting from the use
+    of or reliance on this work. Use of the information and instructions contained
+    in this work is at your own risk. If any code samples or other technology this
+    work contains or describes is subject to open source licenses or the intellectual
+    property rights of others, it is your responsibility to ensure that your use thereof
+    complies with such licenses and/or rights.
+
+
+    978-1-68045-497-0'
+  - '[PAGE 4]
+
+
+    # Safari® Books Online
+
+
+    Safari Books Online is an on-demand digital library that delivers expert content
+    in both book and video form from the world''s leading authors in technology and
+    business. Technology professionals, software developers, web designers, and business
+    and creative professionals use Safari Books Online as their primary resource for
+    research, problem solving, learning, and certification training. Safari Books
+    Online offers a range of plans and pricing for enterprise, government, education,
+    and individuals. Members have access to thousands of books, training videos, and
+    prepublication manuscripts in one fully searchable database from publishers like
+    O''Reilly Media, Prentice Hall Professional, Addison-Wesley Professional, Microsoft
+    Press, Sams, Que, Peachpit Press, Focal Press, Cisco Press, John Wiley & Sons,
+    Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe Press, FT Press, Apress,
+    Manning, New Riders, McGraw-Hill, Jones & Bartlett, Course Technology, and hundreds
+    more. For more information about Safari Books Online, please visit us online.
+
+
+    # How to Contact Us
+
+
+    Please address comments and questions to the publisher:
+
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    You can send comments and questions to us by email at books@makermedia.com.
+
+
+    Maker Media unites, inspires, informs, and entertains a growing community of resourceful
+    people who undertake amazing projects in their backyards, basements, and garages.
+    Maker Media celebrates your right to tweak, hack, and bend any Technology to your
+    will. The Maker Media audience continues to be a growing culture and community
+    that believes in bettering ourselves, our environment, our educational system—our
+    entire world. This is much more than an audience, it''s a worldwide movement that
+    Maker Media is leading. We call it the Maker Movement.
+
+
+    To learn more about Make: visit us at makezine.com. You can learn more about the
+    company at the following websites:
+
+
+    Maker Media: makermedia.com
+
+    Maker Faire: makerfaire.com
+
+    Maker Shed: makershed.com
+
+    Maker Share: makershare.com'
+  - '[PAGE 5]
+
+
+    <!-- no content -->'
+  - '[PAGE 6]
+
+
+    # # CONTENTS
+
+
+    +   * Preface vi
+
+
+    # ## 1 Meet JavaScript and Node.js! 1
+
+
+    +   * Install Node on Mac 2
+
+    * Install Node on Windows 5
+
+    * Install Node on Linux 7
+
+    * Node Is Installed; Now What? 9
+
+
+    # ## 2 Getting into JavaScript 13
+
+
+    +   * Strings, Math, and the REPL 13
+
+    * Functions 16
+
+    * Using JavaScript Files 17
+
+    * Make a Web Server 18
+
+
+    # ## 3 Creating a Node Twitter Bot on Raspberry Pi 21
+
+
+    +   * Create and Authorize Your Twitter Account 21
+
+    * Create a Configuration File 24
+
+    * Create the Twitter Bot 25
+
+
+    # ## 4 Flash an LED in Response to a Twitter Event 33
+
+
+    +   * Set Up the LED on Your Raspberry Pi 34
+
+    * Create the Blink Program 36
+
+    * Make Your Bot Detect Your Twitter Handle 37
+
+    * Make Your Bot Blink the LED When Mentioned 39
+
+    * Node, Pi, and the Internet of Things 40'
+  - '[PAGE 7]
+
+
+    # PREFACE: WHAT IS NODE.JS?
+
+
+    JavaScript is a programming language that web browsers can run. Browsers like
+    Firefox and Chrome are built with engines that can understand and execute programs
+    written in the JavaScript language. Firefox has an engine called SpiderMonkey,
+    and Chrome''s engine is called V8.
+
+
+    Running JavaScript in a browser limits what you can do with it. For example, with
+    JavaScript in a browser, you are limited to interacting with web pages. You can
+    detect errors when people enter information in a form. You can open browser windows
+    and alert boxes. But you can''t control anything outside of a browser.
+
+
+    Fortunately, you have another option. When you install and use the JavaScript
+    extension Node.js, your JavaScript code can run independently of a web browser.
+    (You''ll often see Node.js simply called Node, and that''s what we''ll do for
+    the rest of this book.)
+
+
+    Node is the V8 JavaScript engine bundled together with libraries that handle input/output
+    and networking. This means that Node lets you use JavaScript outside of a browser
+    to run shell scripts, manage back-end services, and run directly on devices.
+
+
+    What You Bring to the Book
+
+
+    +   * Basic familiarity with programming concepts
+
+    * Ability to set up and connect a Raspberry Pi
+
+    * Ability to access and use a console
+
+    * Understanding of sudo, directories, and file creation/editing'
+  - '[PAGE 8]
+
+
+    # Meet JavaScript and Node.js!
+
+
+    This chapter takes you through the steps to install Node on your Mac, Windows,
+    or Linux OS. Then you''ll check to see that it''s working.
+
+
+    > **NOTE** As you install Node, you may notice that something called *npm* is
+    also being installed. This program is the Node Package Manager.
+
+
+    Node is really popular, and it has a whole new ecosystem of useful Node-based
+    code packages other developers have created for you to use. When you want to use
+    one of these packages in Node, you need an easy way to install and manage them.
+    That''s what npm does for you—it installs additional Node packages you want to
+    use.
+
+
+    Follow the instructions for your system; then jump to the last section, "Node
+    Is Installed; Now What?"'
+  - '[PAGE 9]
+
+
+    # # INSTALL NODE ON MAC
+
+
+    Although you could build Node from the source code, this guide is all about getting
+    you going quickly. The easy way is to visit the official Node website, Nodejs.org,
+    and use an automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *nodejs.org/en/download/* and click the Macintosh Installer
+    button to download the installer (Figure 1.1).
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_9_0.png)
+
+
+    **FIGURE 1.1:** Nodejs.org download page
+
+
+    **Step 2.** Find the file you downloaded and double-click it. You''ll see the
+    installation dialog (Figure 1.2). Click Continue to go through the installation.
+    Stick with the default settings.
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information (Figure 1.3).'
+- md: '## Step 4.
+
+
+    You need to make sure that `/usr/local/bin` is in your PATH environment variable.
+    To do this, open the Terminal.app program—you can find it under /Applications/Utilities.
+    Start the Terminal program. In the new terminal window, type
+
+
+    ```
+
+    echo $PATH
+
+    ```
+
+
+    This will return a list of directory paths, separated by colons. In my case, I
+    get this output:
+
+
+    ```
+
+    /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+    ```
+
+
+    You can see that /usr/local/bin is the first thing in my PATH. If you don’t see
+    it in yours, you’ll need to add it. If you do see it, skip step 5.
+
+
+    ## Step 5.
+
+
+    Here’s how to add /usr/local/bin to your PATH. In your terminal, type
+
+
+    ```
+
+    touch ~/.bash_profile
+
+    ```
+
+
+    This creates the file if it doesn’t already exist. Now type
+
+
+    ```
+
+    open ~/.bash_profile
+
+    ```
+
+
+    This opens the .bash_profile file in TextEdit. In TextEdit, add the line
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin
+
+    ```
+
+
+    Save the .bash_profile file and quit TextEdit.
+
+
+    You’ll need the changes you made to take effect. To do this, type this command
+    in the terminal:
+
+
+    ```
+
+    source ~/.bash_profile
+
+    ```
+
+
+    ## Step 6.
+
+
+    Let’s confirm that we have Node running. Type this command in your terminal to
+    see the versions you’ve installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    Jumpstarting JavaScript
+
+
+    You''ll see output like this, giving you the version of Node that you just installed:
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    After confirming you have the Node program installed and working, you''re ready
+    to start writing JavaScript. Leave this terminal open and skip ahead to the section
+    "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON WINDOWS
+
+
+    You''ll start by visiting the official Node website, Nodejs.org, and getting the
+    automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *https://nodejs.org/en/download/* and click the Windows Installer
+    button to download the installer (Figure 1.4). Pick the MSI file for either 32
+    bits or 64 bits, depending on your computer platform.
+
+
+    **Step 2.** Find the file you downloaded and double-click it. You may get a warning
+    dialog asking for permission to install. Click OK.
+
+
+    The installation program opens (Figure 1.5). Click Continue to go through the
+    installation. Stick with the default settings.
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information. Let''s confirm that we have Node running. Click your
+    Start menu, and you should see two new menu items under Recently Added: Node.js
+    and Node.js Command Prompt (Figure 1.6).
+
+
+    **Step 4.** Click Node.js Command Prompt to open the prompt. You''ll see a terminal
+    window open with this line:
+
+
+    ```
+
+    Your environment has been set up for using Node.js 6.11.3 (x64) and npm
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You now have
+    everything you need to start writing JavaScript. Leave this terminal open and
+    skip ahead to the section "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON LINUX
+
+
+    The easiest way to get going with Linux is to install a prebuilt binary package
+    from the Nodejs.org website.
+
+
+    > NOTE If you''re an experienced Linux user, you may find it simplest to use the
+    package manager for your particular Linux distro. You can find a rundown of those
+    at nodejs.org/en/download/package-manager.
+
+
+    **Step 1.** Visit https://nodejs.org/en/download/. Download the 32- or 64-bit
+    file with a name like node-v6.11.3-linux-x64.tar.xz where v6.11.3 is the current
+    version (Figure 1.7). Be sure to save it in a directory you''ll remember. I''m
+    saving mine to my Downloads directory.
+
+
+    # Opening node-v6.11.3-linux-x64.tar.xz
+
+
+    You have chosen to open:
+
+    node-v6.11.3-linux-x64.tar.xz
+
+    which is: XZ file (8.9 MB)
+
+    from: https://nodejs.org
+
+    What should Firefox do with this file?
+
+
+    - Open with Archive Utility (default)
+
+    - Save File
+
+    - Do this automatically for files like this from now on.
+
+
+    Cancel
+
+
+    OK
+
+
+    FIGURE 1.7: Linux download
+
+
+    ## Step 2.
+
+
+    This archive contains everything you''ll need and is organized into subdirectories.
+    You can extract it where it needs to go by using these commands:
+
+
+    ```
+
+    ~$ cd ~/bin
+
+    ~$ tar xz ~/Downloads/node-v6.11.3-linux-x64.tar.xz
+
+    ```
+
+
+    > NOTE If ~/bin does not exist, you''ll need to create it first.
+
+
+    ## Step 3.
+
+
+    Make sure you have your PATH set to find your Node installation. Edit your .bash_profile
+    file and include that line. You can do so with this command:
+
+
+    ```
+
+    ~$ PATH=$PATH:~/bin/node-v6.11.3-linux
+
+    ```
+
+
+    or by editing your .bash_profile and adding this line:
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin/node-v6.11.3-linux
+
+    ```
+
+
+    **Step 4.** Use this command to check to see whether Node has been installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    and you should get output with the version number
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You have everything
+    you need to start writing JavaScript. Leave this terminal open and continue to
+    the next section.
+
+
+    # NODE IS INSTALLED; NOW WHAT?
+
+
+    At this point, you should have Node installed and a terminal or console window
+    open. (From here on, we''ll just call it the terminal.)
+
+
+    In the next chapter, you''ll write your first program, but let''s quickly try
+    out the Node REPL.
+
+
+    > **NOTE** The REPL is like a playground where you can try out JavaScript code.
+    It''s installed along with Node. REPL stands for Read Eval Print Loop. The REPL
+    gives you a quick and easy way to test your JavaScript code and fix any mistakes.
+
+
+    In your terminal, type **node** to start the Node REPL:
+
+
+    ```
+
+    $ node
+
+    ```
+
+
+    Notice that your cursor has changed to a greater than sign (>). You''re now interacting
+    with the REPL. Let''s output some text:
+
+
+    ```
+
+    > console.log(''Hello World!'');
+
+    Hello World!
+
+    undefined
+
+    ```
+
+
+    If you''re getting an error of some kind, check your punctuation. Make sure you''ve
+    got single quotes around the text and a semicolon at the very end of your code.
+
+
+    > **Did You Get Back *undefined*?**
+
+
+    Don''t worry if you did! You''re using a JavaScript function, which will always
+    return `undefined` if it doesn''t have a return value (you''ll learn more about
+    this later). For now, you can just ignore it. You haven''t made any mistakes.
+
+
+    Now try this very handy **.help** command:
+
+
+    ```
+
+    > .help
+
+    .break Sometimes you get stuck, this gets you out
+
+    .clear Alias for .break
+
+    .exit Exit the repl
+
+    .help Show repl options
+
+    .load Load JS from a file into the REPL session
+
+    .save Save all evaluated commands in this REPL session to a file
+
+    ```
+
+
+    > **NOTE** Commands starting with a period are talking to the REPL interface—they''re
+    not JavaScript code.
+
+
+    And let''s close the REPL and get back to the regular command prompt, using the
+    .exit command:
+
+
+    ```
+
+    > .exit
+
+    ```
+
+
+    You''ve installed Node, and you know how to start up and quit the REPL. This means
+    that you''re ready to learn some JavaScript. Chapter 2 awaits.
+
+
+    # 2 Getting into JavaScript
+
+
+    You played with the REPL at the end of the last chapter. Now you''ll begin learning
+    JavaScript by writing code both in the REPL and into saved JavaScript files.
+
+
+    ## STRINGS, MATH, AND THE REPL
+
+
+    You''ve already used the REPL (also called the Node shell). If it isn''t open,
+    go ahead and launch it. In Windows, open a command prompt or click the Node.js
+    Command Prompt that you installed in your Start menu. On Mac or Linux, open a
+    terminal.
+
+
+    Type `node` to start the REPL. Remember, you''re in the shell when the prompt
+    changes to >.
+
+
+    The REPL is handy as you learn JavaScript. You can test pieces of your JavaScript
+    code before saving them to a file. When you make an error in the REPL, you''ll
+    get immediate feedback.'
+  mdcn: '
+
+    ## 第4步。
+
+
+    你需要确保 `/usr/local/bin` 在你的 PATH 环境变量中。为此，请打开 **Terminal.app** 程序——你可以在 `/Applications/Utilities`
+    下找到它。启动 **Terminal** 程序。在新的终端窗口中，输入
+
+
+    ```
+
+    echo $PATH
+
+    ```
+
+
+    这将返回一个以冒号分隔的目录路径列表。在我的情况下，我会得到这样的输出：
+
+
+    ```
+
+    /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+    ```
+
+
+    你可以看到 `/usr/local/bin` 是我的 PATH 中的第一个条目。如果你在你的 PATH 中没有看到它，你就需要添加它。如果你确实看到了它，请跳过第5步。
+
+
+    ## 第5步。
+
+
+    以下是如何将 `/usr/local/bin` 添加到你的 PATH。在你的终端中，输入
+
+
+    ```
+
+    touch ~/.bash_profile
+
+    ```
+
+
+    如果文件不存在，此命令会创建它。现在输入
+
+
+    ```
+
+    open ~/.bash_profile
+
+    ```
+
+
+    这会在 **TextEdit** 中打开 `.bash_profile` 文件。在 **TextEdit** 中，添加这一行
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin
+
+    ```
+
+
+    保存 `.bash_profile` 文件并退出 **TextEdit**。
+
+
+    你需要使你所做的更改生效。为此，在终端中输入此命令：
+
+
+    ```
+
+    source ~/.bash_profile
+
+    ```
+
+
+    ## 第6步。
+
+
+    让我们确认一下 Node 是否正在运行。在你的终端中输入此命令来查看你已安装的版本：
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    **快速启动 JavaScript**
+
+
+    你会看到像这样的输出，它显示了你刚刚安装的 Node 版本：
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    如果版本号与你在这里看到的不同，请不要担心；新版本会频繁发布。
+
+
+    在确认你已经安装并运行了 Node 程序后，你就可以开始编写 JavaScript 了。保持此终端打开，并跳到章节“Node 已安装；现在做什么？”
+
+
+    # 在 Windows 上安装 Node
+
+
+    你将从访问 Node 官方网站 Nodejs.org 并获取自动安装程序开始。以下是涉及的步骤：
+
+
+    **第1步。** 访问 *https://nodejs.org/en/download/* 并单击 **Windows Installer** 按钮以下载安装程序（图1.4）。根据你的计算机平台，选择
+    32 位或 64 位的 MSI 文件。
+
+
+    **第2步。** 找到你下载的文件并双击它。你可能会收到一个警告对话框，要求安装许可。单击 **确定**。
+
+
+    安装程序打开（图1.5）。单击 **继续** 以完成安装。坚持使用默认设置。
+
+
+    **第3步。** 当安装完成时，你会看到一个显示安装信息的摘要屏幕。让我们确认一下 Node 是否正在运行。单击你的**开始**菜单，你应该会在“最近添加”下看到两个新的菜单项：**Node.js**
+    和 **Node.js Command Prompt**（图1.6）。
+
+
+    **第4步。** 单击 **Node.js Command Prompt** 打开命令提示符。你会看到一个终端窗口打开，显示这一行：
+
+
+    ```
+
+    Your environment has been set up for using Node.js 6.11.3 (x64) and npm
+
+    ```
+
+
+    如果版本号与你在这里看到的不同，请不要担心；新版本会频繁发布。
+
+
+    这确认了你已经安装并运行了 Node 程序。你现在拥有开始编写 JavaScript 所需的一切。保持此终端打开，并跳到章节“Node 已安装；现在做什么？”
+
+
+    # 在 Linux 上安装 Node
+
+
+    在 Linux 上开始的最简单方法是从 Nodejs.org 网站安装预构建的二进制包。
+
+
+    > **注意** 如果你是一个有经验的 Linux 用户，你可能会发现使用你的特定 Linux 发行版的包管理器最简单。你可以在 nodejs.org/en/download/package-manager
+    找到这些信息的概要。
+
+
+    **第1步。** 访问 https://nodejs.org/en/download/。下载 32 位或 64 位文件，其名称类似于 `node-v6.11.3-linux-x64.tar.xz`，其中
+    `v6.11.3` 是当前版本（图1.7）。确保将其保存在你记得的目录中。我将其保存到我的 Downloads 目录。
+
+
+    # 打开 node-v6.11.3-linux-x64.tar.xz
+
+
+    你已选择打开：
+
+    `node-v6.11.3-linux-x64.tar.xz`
+
+    这是一个：XZ 文件（8.9 MB）
+
+    来自：https://nodejs.org
+
+    Firefox 应该对此文件执行什么操作？
+
+
+    - 使用 Archive Utility 打开（默认）
+
+    - 保存文件
+
+    - 以后自动执行此操作以处理来自此源的此类文件。
+
+
+    取消
+
+
+    确定
+
+
+    图 1.7：Linux 下载
+
+
+    ## 第2步。
+
+
+    此存档包含你需要的所有内容，并组织在子目录中。你可以使用以下命令将其提取到需要的位置：
+
+
+    ```
+
+    ~$ cd ~/bin
+
+    ~$ tar xz ~/Downloads/node-v6.11.3-linux-x64.tar.xz
+
+    ```
+
+
+    > **注意** 如果 `~/bin` 不存在，你需要先创建它。
+
+
+    ## 第3步。
+
+
+    确保你的 PATH 设置能够找到你的 Node 安装。编辑你的 `.bash_profile` 文件并包含该行。你可以使用此命令来完成：
+
+
+    ```
+
+    ~$ PATH=$PATH:~/bin/node-v6.11.3-linux
+
+    ```
+
+
+    或者通过编辑你的 `.bash_profile` 并添加这一行：
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin/node-v6.11.3-linux
+
+    ```
+
+
+    **第4步。** 使用此命令检查 Node 是否已安装：
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    你应该会得到带有版本号的输出
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    如果版本号与你在这里看到的不同，请不要担心；新版本会频繁发布。
+
+
+    这确认了你已经安装并运行了 Node 程序。你拥有开始编写 JavaScript 所需的一切。保持此终端打开，并继续到下一节。
+
+
+    # Node 已安装；现在做什么？
+
+
+    此时，你应该已经安装了 Node 并打开了一个终端或控制台窗口。（从现在开始，我们只称其为终端。）
+
+
+    在下一章中，你将编写你的第一个程序，但让我们快速尝试一下 Node REPL。
+
+
+    > **注意** REPL 就像一个游乐场，你可以在其中尝试 JavaScript 代码。它随 Node 一起安装。REPL 代表 **Read Eval
+    Print Loop**（读取-求值-打印循环）。REPL 为你提供了一种快速简便的方式来测试你的 JavaScript 代码并修复任何错误。
+
+
+    在你的终端中，输入 **node** 来启动 Node REPL：
+
+
+    ```
+
+    $ node
+
+    ```
+
+
+    注意你的光标已变为大于号（>）。你现在正在与 REPL 交互。让我们输出一些文本：
+
+
+    ```
+
+    > console.log(''Hello World!'');
+
+    Hello World!
+
+    undefined
+
+    ```
+
+
+    如果你遇到某种错误，请检查你的标点符号。确保你的文本周围有单引号，并且在代码的最末尾有一个分号。
+
+
+    > **你是否得到了 *undefined* ？**
+
+
+    如果你得到了，请不要担心！你正在使用一个 JavaScript 函数，如果它没有返回值，它将总是返回 `undefined`（你稍后会了解更多关于此的信息）。现在，你可以忽略它。你没有犯任何错误。
+
+
+    现在尝试这个非常有用的 **.help** 命令：
+
+
+    ```
+
+    > .help
+
+    .break Sometimes you get stuck, this gets you out
+
+    .clear Alias for .break
+
+    .exit Exit the repl
+
+    .help Show repl options
+
+    .load Load JS from a file into the REPL session
+
+    .save Save all evaluated commands in this REPL session to a file
+
+    ```
+
+
+    > **注意** 以句点开头的命令是与 REPL 接口对话——它们不是 JavaScript 代码。
+
+
+    让我们使用 `.exit` 命令关闭 REPL 并返回到常规命令提示符：
+
+
+    ```
+
+    > .exit
+
+    ```
+
+
+    你已经安装了 Node，并且知道如何启动和退出 REPL。这意味着你已经准备好学习一些 JavaScript 了。第2章在等着你。
+
+
+    # 2 进入 JavaScript
+
+
+    你在上一章末尾玩过了 REPL。现在你将通过在 REPL 中编写代码和保存到 JavaScript 文件中开始学习 JavaScript。
+
+
+    **字符串、数学和 REPL**
+
+
+    你已经使用了 REPL（也称为 Node shell）。如果它没有打开，请立即启动它。在 Windows 中，打开一个命令提示符或单击你在“开始”菜单中安装的
+    **Node.js Command Prompt**。在 Mac 或 Linux 上，打开一个终端。
+
+
+    输入 `node` 来启动 REPL。记住，当提示符变为 `>` 时，你就在 shell 中了。
+
+
+    REPL 在你学习 JavaScript 时非常方便。你可以将你的 JavaScript 代码片段保存到文件之前进行测试。当你在 REPL 中犯错时，你会得到立即的反馈。
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 10]
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_10_0.png)
+
+
+    FIGURE 1.2: Node installer
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_10_1.png)
+
+
+    FIGURE 1.3: Node installer summary
+
+
+    **Step 4.** You need to make sure that `/usr/local/bin` is in your PATH environment
+    variable. To do this, open the Terminal.app'
+  - '[PAGE 11]
+
+
+    program—you can find it under /Applications/Utilities. Start the Terminal program.
+    In the new terminal window, type
+
+
+    ```
+
+    echo $PATH
+
+    ```
+
+
+    This will return a list of directory paths, separated by colons. In my case, I
+    get this output:
+
+
+    ```
+
+    /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+    ```
+
+
+    You can see that /usr/local/bin is the first thing in my PATH. If you don’t see
+    it in yours, you’ll need to add it. If you do see it, skip step 5.
+
+
+    **Step 5.** Here’s how to add /usr/local/bin to your PATH. In your terminal, type
+
+
+    ```
+
+    touch ~/.bash_profile
+
+    ```
+
+
+    This creates the file if it doesn’t already exist. Now type
+
+
+    ```
+
+    open ~/.bash_profile
+
+    ```
+
+
+    This opens the .bash_profile file in TextEdit. In TextEdit, add the line
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin
+
+    ```
+
+
+    Save the .bash_profile file and quit TextEdit.
+
+
+    You’ll need the changes you made to take effect. To do this, type this command
+    in the terminal:
+
+
+    ```
+
+    source ~/.bash_profile
+
+    ```
+
+
+    **Step 6.** Let’s confirm that we have Node running. Type this command in your
+    terminal to see the versions you’ve installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    Jumpstarting JavaScript'
+  - '[PAGE 12]
+
+
+    You''ll see output like this, giving you the version of Node that you just installed:
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    After confirming you have the Node program installed and working, you''re ready
+    to start writing JavaScript. Leave this terminal open and skip ahead to the section
+    "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON WINDOWS
+
+
+    You''ll start by visiting the official Node website, Nodejs.org, and getting the
+    automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *https://nodejs.org/en/download/* and click the Windows Installer
+    button to download the installer (Figure 1.4). Pick the MSI file for either 32
+    bits or 64 bits, depending on your computer platform.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_12_0.png)
+
+
+    FIGURE 1.4: Nodejs.org download page'
+  - '[PAGE 13]
+
+
+    **Step 2.** Find the file you downloaded and double-click it. You may get a warning
+    dialog asking for permission to install. Click OK.
+
+
+    The installation program opens (Figure 1.5). Click Continue to go through the
+    installation. Stick with the default settings.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_13_0.png)
+
+
+    FIGURE 1.5: Node Setup Wizard
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information. Let''s confirm that we have Node running. Click your
+    Start menu, and you should see two new menu items under Recently Added: Node.js
+    and Node.js Command Prompt (Figure 1.6).
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_13_1.png)
+
+
+    FIGURE 1.6: Windows Start menu'
+  - '[PAGE 14]
+
+
+    **Step 4.** Click Node.js Command Prompt to open the prompt. You''ll see a terminal
+    window open with this line:
+
+
+    ```
+
+    Your environment has been set up for using Node.js 6.11.3 (x64) and npm
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You now have
+    everything you need to start writing JavaScript. Leave this terminal open and
+    skip ahead to the section "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON LINUX
+
+
+    The easiest way to get going with Linux is to install a prebuilt binary package
+    from the Nodejs.org website.
+
+
+    > NOTE If you''re an experienced Linux user, you may find it simplest to use the
+    package manager for your particular Linux distro. You can find a rundown of those
+    at nodejs.org/en/download/package-manager.
+
+
+    **Step 1.** Visit https://nodejs.org/en/download/. Download the 32- or 64-bit
+    file with a name like node-v6.11.3-linux-x64.tar.xz where v6.11.3 is the current
+    version (Figure 1.7). Be sure to save it in a directory you''ll remember. I''m
+    saving mine to my Downloads directory.'
+  - '[PAGE 15]
+
+
+    # Opening node-v6.11.3-linux-x64.tar.xz
+
+
+    You have chosen to open:
+
+    node-v6.11.3-linux-x64.tar.xz
+
+    which is: XZ file (8.9 MB)
+
+    from: https://nodejs.org
+
+    What should Firefox do with this file?
+
+
+    +   - Open with Archive Utility (default)
+
+    - Save File
+
+    - Do this automatically for files like this from now on.
+
+
+    Cancel
+
+
+    OK
+
+
+    FIGURE 1.7: Linux download
+
+
+    # Step 2.
+
+
+    This archive contains everything you''ll need and is organized into subdirectories.
+    You can extract it where it needs to go by using these commands:
+
+
+    ```
+
+    ~$ cd ~/bin
+
+    ~$ tar xz ~/Downloads/node-v6.11.3-linux-x64.tar.xz
+
+    ```
+
+
+    > NOTE If ~/bin does not exist, you''ll need to create it first.
+
+
+    # Step 3.
+
+
+    Make sure you have your PATH set to find your Node installation. Edit your .bash_profile
+    file and include that line. You can do so with this command:
+
+
+    ```
+
+    ~$ PATH=$PATH:~/bin/node-v6.11.3-linux
+
+    ```'
+  - '[PAGE 16]
+
+
+    or by editing your .bash_profile and adding this line:
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin/node-v6.11.3-linux
+
+    ```
+
+
+    **Step 4.** Use this command to check to see whether Node has been installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    and you should get output with the version number
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You have everything
+    you need to start writing JavaScript. Leave this terminal open and continue to
+    the next section.
+
+
+    # NODE IS INSTALLED; NOW WHAT?
+
+
+    At this point, you should have Node installed and a terminal or console window
+    open. (From here on, we''ll just call it the terminal.)
+
+
+    In the next chapter, you''ll write your first program, but let''s quickly try
+    out the Node REPL.
+
+
+    > **NOTE** The REPL is like a playground where you can try out JavaScript code.
+    It''s installed along with Node. REPL stands for Read Eval Print Loop. The REPL
+    gives you a quick and easy way to test your JavaScript code and fix any mistakes.'
+  - '[PAGE 17]
+
+
+    In your terminal, type **node** to start the Node REPL:
+
+
+    ```
+
+    $ node
+
+    ```
+
+
+    Notice that your cursor has changed to a greater than sign (>). You''re now interacting
+    with the REPL. Let''s output some text:
+
+
+    ```
+
+    > console.log(''Hello World!'');
+
+    Hello World!
+
+    undefined
+
+    ```
+
+
+    If you''re getting an error of some kind, check your punctuation. Make sure you''ve
+    got single quotes around the text and a semicolon at the very end of your code.
+
+
+    > **Did You Get Back *undefined*?**
+
+
+    Don''t worry if you did! You''re using a JavaScript function, which will always
+    return `undefined` if it doesn''t have a return value (you''ll learn more about
+    this later). For now, you can just ignore it. You haven''t made any mistakes.
+
+
+    Now try this very handy **.help** command:
+
+
+    ```
+
+    > .help
+
+    .break Sometimes you get stuck, this gets you out
+
+    .clear Alias for .break
+
+    .exit Exit the repl
+
+    .help Show repl options
+
+    .load Load JS from a file into the REPL session
+
+    .save Save all evaluated commands in this REPL session to a file
+
+    ```
+
+
+    > **NOTE** Commands starting with a period are talking to the REPL interface—they''re
+    not JavaScript code.'
+  - '[PAGE 18]
+
+
+    And let''s close the REPL and get back to the regular command prompt, using the
+    .exit command:
+
+
+    ```
+
+    > .exit
+
+    ```
+
+
+    You''ve installed Node, and you know how to start up and quit the REPL. This means
+    that you''re ready to learn some JavaScript. Chapter 2 awaits.'
+  - '[PAGE 19]
+
+
+    <!-- no content -->'
+  - '[PAGE 20]
+
+
+    # # 2
+
+
+    # Getting into JavaScript
+
+
+    You played with the REPL at the end of the last chapter. Now you''ll begin learning
+    JavaScript by writing code both in the REPL and into saved JavaScript files.
+
+
+    # ## STRINGS, MATH, AND THE REPL
+
+
+    You''ve already used the REPL (also called the Node shell). If it isn''t open,
+    go ahead and launch it. In Windows, open a command prompt or click the Node.js
+    Command Prompt that you installed in your Start menu. On Mac or Linux, open a
+    terminal.
+
+
+    Type `node` to start the REPL. Remember, you''re in the shell when the prompt
+    changes to >.
+
+
+    The REPL is handy as you learn JavaScript. You can test pieces of your JavaScript
+    code before saving them to a file. When you make an error in the REPL, you''ll
+    get immediate feedback.'
+- md: "## FUNCTIONS\n\nYou've used your first built-in function, `console.log`. This\
+    \ simple function prints out whatever string or other value you put in parentheses.\n\
+    \n> **When You See...**\n\nTry entering this incomplete command:\n```\n> console.log(\n\
+    ```\nInstead of an error message, you'll see this:\n```\n...\n```\nThis ellipsis\
+    \ means that the REPL is waiting for you to type more code to finish the command.\
+    \ If you get the ellipsis but you're not sure why, you can break out of it by\
+    \ typing the REPL command `.break`.\n\nLet's try making a deliberate mistake so\
+    \ you can see the feedback you get from the REPL.\n\nTry this broken line of code:\n\
+    ```\n> console.log(It's broken)\n```\nAlthough there are several things wrong\
+    \ with this code, you'll get only one message at a time. Here's the first error:\n\
+    ```\nconsole.log(It's broken);\n          ^^^^^^^^^^^\nSyntaxError: Invalid or\
+    \ unexpected token\n```\nLet's fix the first problem. If you look at the carets\
+    \ under the text `It's broken`, you'll see they start right under the single quote.\
+    \ In JavaScript, anytime you use a string of text, you need to put it in quotes.\
+    \ Otherwise, the REPL thinks those words are code. So now try this:\n```\n> console.log('It's\
+    \ broken');\n```\nArgh! You get a hanging ellipsis.\n```\nconsole.log('It's broken');\n\
+    ...\n```\nThis time the REPL finds the beginning of the string, but it thinks\
+    \ the second quote is closing your text. It's looking for a parenthesis to end\
+    \ the command.\n\nThis is tricky. We want to use a quote in our string, but we\
+    \ need quotes around our string. The simple way to fix it is to use double quotes\
+    \ around the whole string so you can use the single quote in the string. Both\
+    \ single and double quotes can be used around strings of text:\n```\n> console.log(\"\
+    It's broken\");\nIt's broken\nundefined\n```\n(Remember, you can ignore the `undefined`!)\n\
+    \nYou can put more than a single string of text in the parentheses of the `console.log`\
+    \ function. Try these commands:\n```\n> console.log('Hello'+'world');\n```\nThis\
+    \ command combines the two strings and outputs the single string `Helloworld`.\
+    \ If you want a space between the two words, you can use any of these three arguments\
+    \ in the parentheses; they'll all work.\n```\n'Hello '+'world'\n'Hello'+' world'\n\
+    'Hello'+' '+'world'\n```\nYou won't always be using strings, though—you'll be\
+    \ using lots of numbers and variables. Here's a quick look at some of your options;\
+    \ try them out.\n```\n> console.log(42);\n> console.log(5 + 4);\n> console.log(5\
+    \ * 4);\n```\nNumbers don't use quotes; the REPL recognizes them. And you can\
+    \ do math operations on them.\n\nNow let's write a function! A *function* is basically\
+    \ code that can be reused. There's more to it than that, but you'll start with\
+    \ something simple. Try typing in the following function. (Don't type the ellipsis;\
+    \ it indicates that the REPL is waiting for more code that you can enter on the\
+    \ next line. Press Enter/Return and use multiple lines.)\n```\n> function countPets(){\n\
+    var dogs = 2; var cats = 1;\nvar total = dogs + cats; return (total);\n... }\n\
+    ```\nHere's what is going on in this function:\n```\nfunction countPets(){\n```\n\
+    This line starts with the JavaScript keyword `function` so the REPL knows a function\
+    \ is coming.\n\n`countPets()` is the name of the function. Everything in the function\
+    \ goes inside curly braces.\n\nNext are two lines beginning with the JavaScript\
+    \ keyword `var`. It's short for variable, and the lines are saying that the variable\
+    \ `dogs` is equal to 2 and the variable `cats` is equal to 1.\n\nThe next line\
+    \ says that the variable `total` contains the sum of `dogs` and `cats`.\n\nThe\
+    \ keyword `return` instructs the function to send back the value of `total` after\
+    \ the function finishes.\n\nTo use the function, type this command:\n```\n> countPets();\n\
+    ```\nYou'll get back the sum of `dogs` and `cats`: 3.\n\nLet's make the function\
+    \ a little more reusable. Take a look at this code and see if you can guess what's\
+    \ going on.\n```\n> function countPets(dogs, cats){\n... var total = dogs + cats;\n\
+    ... return (total);\n... }\n```\nNow try it!\n```\n> countPets(5, 3);\n```\nIn\
+    \ this function, you're passing in values that the function can use. Being able\
+    \ to add different values to the same code is part of what makes functions so\
+    \ useful!\n\nYou've now had a taste of JavaScript code. Unfortunately, as soon\
+    \ as you end this REPL session, your functions will not be saved. It's time to\
+    \ move out of the REPL and put your code into .js files so you can start simple\
+    \ and build on them.\n\n## USING JAVASCRIPT FILES\n\nThe REPL is great for testing,\
+    \ but you need to be able to save and reuse your code. You'll need a text editor\
+    \ so you can write and edit your JavaScript code and save it into a file.\n\n\
+    Start by creating a text file called **fromfile.js**. Put this code in your file\
+    \ and save it to a location you'll remember:\n```\nconsole.log('These words are\
+    \ from my .js file!');\n```\nIn your terminal, navigate to the same directory\
+    \ where your **fromfile.js** was saved and type this command on your command line\
+    \ (not in the REPL!):\n```\n$ node fromfile.js\n```\nNode will execute the code\
+    \ in your file and you'll see the output on your screen.\n\n## MAKE A WEB SERVER\n\
+    \nNow that you can save .js files, you can start exploring the real power of Node.\
+    \ Without Node, you can write JavaScript code that would run only on an existing\
+    \ web server. But Node frees you from those browsers and lets you create your\
+    \ own web server!\n\nIt's easy to create a little web server with Node. Begin\
+    \ by creating a file called **easyserver.js** and save this code in it:\n```\n\
+    var http = require('http');\nvar server = http.createServer(function(req, res)\
+    \ {\n    res.writeHead('I created this server!');\n    res.end();\n});\nserver.listen(8080);\n\
+    ```\nNow try running your server. I'll explain this code after you try it. In\
+    \ your terminal, visit the command line in the directory where you saved the file.\
+    \ Type\n```\n$ node easyserver.js\n```\nThe terminal will seem to hang, but that's\
+    \ fine—it means your server is running!\n\nOpen a browser and visit the URL `localhost:8080`.\
+    \ You should see the line `I created this server!` (Figure 2.1).\n\n![A web page\
+    \ with output from your web server](img/a0848e8632a09becbaacc6826f2a8219_25_0.png)\n\
+    \n**FIGURE 2.1:** A web page with output from your web server\n\nAfter you visit\
+    \ the web page, press Ctrl-C in your terminal to end the program.\n\nLet's take\
+    \ a closer look at what's going on in this code. I don't expect you to understand\
+    \ it right now. I've added comments to the original code. Just try to get the\
+    \ gist of it!\n```\nvar http = require('http');\nvar server = http.createServer(function(req,\
+    \ res) {\n  //send response to client\n  res.writeHead('I created this server!');\n\
+    \  // finish the response\n  res.end();\n});\n//the web server is listening on\
+    \ port 8080\nserver.listen(8080);\n```\nNode is doing most of the work for you\
+    \ with built-in code. The very first line is calling the `http` module, which,\
+    \ behind the scenes, has the code to turn your running program into a web server.\
+    \ The `require` keyword is giving the new variable `http` access to a whole lot\
+    \ of saved Node code and functions that can create a web server.\n\nIn the second\
+    \ line, the code is calling a function called `createServer`. Whenever anyone\
+    \ connects to your web server, the code in that function will be executed.\n\n\
+    The last line tells the server you created to start listening for incoming requests\
+    \ on a particular port (in this case, 8080).\n\n## Comments in Your Code\n\nThe\
+    \ double slashes you saw in the last code example let you add comments to your\
+    \ code. Node ignores any words following the `//`. Comments are great for helping\
+    \ you remember what you did in your code.\n\nIn the next chapter, you'll begin\
+    \ using JavaScript to build a Twitter bot!\n\n# 3\n\n# Creating a Node Twitter\
+    \ Bot on Raspberry Pi\n\nYou've written your first JavaScript program. Next, you'll\
+    \ learn how to create a Twitter bot with Node that can run on any machine that\
+    \ has Node installed, including your Raspberry Pi.\n\nBy now, you should already\
+    \ have Node installed on your system. This chapter will take you through the steps\
+    \ you need to set up and authorize a Twitter account, connect that account to\
+    \ a JavaScript program, and use the `twit` npm module in your program to do most\
+    \ of the work.\n\n## CREATE AND AUTHORIZE YOUR TWITTER ACCOUNT\n\nIf you don't\
+    \ have a Twitter account for your bot, create one at Twitter.com."
+  mdcn: "\n## 函数\n\n你已经使用了你的第一个内置函数 `console.log`。这个简单的函数会打印出你放在括号中的任何字符串或其他值。\n\n\
+    > **当你看到……**\n\n尝试输入这个不完整的命令：\n```\n> console.log(\n```\n你不会收到错误信息，而是会看到这个：\n\
+    ```\n...\n```\n这个省略号意味着 REPL 正在等待你输入更多代码以完成命令。如果你看到省略号但不确定原因，可以通过输入 REPL 命令 `.break`\
+    \ 来退出。\n\n让我们尝试一个故意的错误，这样你就能看到 REPL 给出的反馈。\n\n尝试这行有问题的代码：\n```\n> console.log(It's\
+    \ broken)\n```\n尽管这段代码有几个问题，但一次只会显示一个错误信息。这是第一个错误：\n```\nconsole.log(It's broken);\n\
+    \          ^^^^^^^^^^^\nSyntaxError: Invalid or unexpected token\n```\n让我们来修复第一个问题。如果你看文本\
+    \ `It's broken` 下方的脱字符，你会发现它们正好从单引号下方开始。在 JavaScript 中，每次使用文本字符串时，都需要将其放在引号中。否则，REPL\
+    \ 会认为这些单词是代码。所以现在试试这个：\n```\n> console.log('It's broken');\n```\n啊！你得到了一个悬挂的省略号。\n\
+    ```\nconsole.log('It's broken');\n...\n```\n这次 REPL 找到了字符串的开头，但它认为第二个引号结束了你的文本。它正在寻找一个括号来结束命令。\n\
+    \n这很棘手。我们想在字符串中使用一个引号，但我们又需要在字符串周围加上引号。简单的解决方法是在整个字符串周围使用双引号，这样你就可以在字符串中使用单引号。单引号和双引号都可以用于包裹文本字符串：\n\
+    ```\n> console.log(\"It's broken\");\nIt's broken\nundefined\n```\n（记住，你可以忽略 `undefined`！）\n\
+    \n你可以在 `console.log` 函数的括号中放入多个字符串。尝试这些命令：\n```\n> console.log('Hello'+'world');\n\
+    ```\n这个命令将两个字符串组合起来，输出单个字符串 `Helloworld`。如果你想在这两个单词之间加一个空格，可以在括号中使用以下三种参数中的任何一种；它们都有效。\n\
+    ```\n'Hello '+'world'\n'Hello'+' world'\n'Hello'+' '+'world'\n```\n不过，你不会总是使用字符串——你会使用大量的数字和变量。这里快速浏览一下你的选项；试试看。\n\
+    ```\n> console.log(42);\n> console.log(5 + 4);\n> console.log(5 * 4);\n```\n数字不使用引号；REPL\
+    \ 能识别它们。并且你可以对它们进行数学运算。\n\n现在让我们来编写一个函数！*函数*基本上就是可以重用的代码。它不止于此，但你将从一些简单的东西开始。尝试输入以下函数。（不要输入省略号；它表示\
+    \ REPL 正在等待更多代码，你可以在下一行输入。按回车键并使用多行。）\n```\n> function countPets(){\nvar dogs\
+    \ = 2; var cats = 1;\nvar total = dogs + cats; return (total);\n... }\n```\n这个函数内部是这样的：\n\
+    ```\nfunction countPets(){\n```\n这一行以 JavaScript 关键字 `function` 开头，因此 REPL 知道一个函数即将到来。\n\
+    \n`countPets()` 是函数的名称。函数内的所有内容都放在花括号内。\n\n接下来是两行以 JavaScript 关键字 `var` 开头的代码。它是\
+    \ variable（变量）的缩写，这两行表示变量 `dogs` 等于 2，变量 `cats` 等于 1。\n\n下一行表示变量 `total` 包含 `dogs`\
+    \ 和 `cats` 的和。\n\n关键字 `return` 指示函数在函数完成后返回 `total` 的值。\n\n要使用该函数，请输入此命令：\n```\n\
+    > countPets();\n```\n你将得到 `dogs` 和 `cats` 的和：3。\n\n让我们使函数更具可重用性。看看这段代码，看看你能否猜出发生了什么。\n\
+    ```\n> function countPets(dogs, cats){\n... var total = dogs + cats;\n... return\
+    \ (total);\n... }\n```\n现在试试看！\n```\n> countPets(5, 3);\n```\n在这个函数中，你传入了函数可以使用的值。能够将不同的值添加到相同的代码中，这是函数如此有用的一部分原因！\n\
+    \n你现在已经体验了 JavaScript 代码。不幸的是，一旦你结束这个 REPL 会话，你的函数将不会被保存。是时候离开 REPL，将你的代码放入 .js\
+    \ 文件中，这样你就可以从简单开始并在此基础上构建。\n\n## 使用 JavaScript 文件\n\nREPL 对于测试很棒，但你需要能够保存和重用你的代码。你需要一个文本编辑器，这样你就可以编写和编辑你的\
+    \ JavaScript 代码并将其保存到文件中。\n\n首先创建一个名为 **fromfile.js** 的文本文件。将此代码放入你的文件中，并将其保存到你记得的位置：\n\
+    ```\nconsole.log('These words are from my .js file!');\n```\n在你的终端中，导航到保存 **fromfile.js**\
+    \ 的同一目录，然后在命令行（不是在 REPL 中）输入此命令：\n```\n$ node fromfile.js\n```\nNode 将执行你文件中的代码，你将在屏幕上看到输出。\n\
+    \n## 创建 Web 服务器\n\n既然你可以保存 .js 文件，你就可以开始探索 Node 的真正威力了。没有 Node，你只能编写在现有 Web 服务器上运行的\
+    \ JavaScript 代码。但 Node 将你从那些浏览器中解放出来，让你可以创建自己的 Web 服务器！\n\n使用 Node 创建一个小型 Web\
+    \ 服务器很容易。首先创建一个名为 **easyserver.js** 的文件，并将此代码保存在其中：\n```\nvar http = require('http');\n\
+    var server = http.createServer(function(req, res) {\n    res.writeHead('I created\
+    \ this server!');\n    res.end();\n});\nserver.listen(8080);\n```\n现在尝试运行你的服务器。我会在你尝试之后解释这段代码。在你的终端中，访问保存文件的目录中的命令行。输入\n\
+    ```\n$ node easyserver.js\n```\n终端似乎会挂起，但没关系——这意味着你的服务器正在运行！\n\n打开一个浏览器并访问 URL\
+    \ `localhost:8080`。你应该会看到 `I created this server!` 这行文字（图 2.1）。\n\n![一个包含来自你的\
+    \ Web 服务器输出的网页](img/a0848e8632a09becbaacc6826f2a8219_25_0.png)\n\n**图 2.1：** 一个包含来自你的\
+    \ Web 服务器输出的网页\n\n访问网页后，在终端中按 Ctrl-C 结束程序。\n\n让我们仔细看看这段代码中发生了什么。我不指望你现在就能理解它。我在原始代码中添加了注释。试着理解其主旨！\n\
+    ```\nvar http = require('http');\nvar server = http.createServer(function(req,\
+    \ res) {\n  // 向客户端发送响应\n  res.writeHead('I created this server!');\n  // 结束响应\n\
+    \  res.end();\n});\n// Web 服务器正在监听 8080 端口\nserver.listen(8080);\n```\nNode 使用内置代码为你完成了大部分工作。第一行是调用\
+    \ `http` 模块，该模块在幕后拥有将你正在运行的程序转换为 Web 服务器的代码。`require` 关键字使新变量 `http` 能够访问大量保存的\
+    \ Node 代码和函数，这些代码和函数可以创建 Web 服务器。\n\n在第二行中，代码调用了一个名为 `createServer` 的函数。每当有人连接到你的\
+    \ Web 服务器时，该函数中的代码就会被执行。\n\n最后一行告诉你要创建的服务器开始在特定端口（本例中为 8080）上监听传入的请求。\n\n## 你代码中的注释\n\
+    \n你在上一个代码示例中看到的双斜杠允许你在代码中添加注释。Node 会忽略 `//` 后面的任何内容。注释对于帮助你记住代码中做了什么非常有用。\n\n\
+    在下一章中，你将开始使用 JavaScript 构建一个 Twitter 机器人！\n\n# 3\n\n# 在树莓派上创建一个 Node Twitter 机器人\n\
+    \n你已经编写了你的第一个 JavaScript 程序。接下来，你将学习如何使用 Node 创建一个 Twitter 机器人，该机器人可以在任何安装了 Node\
+    \ 的机器上运行，包括你的树莓派。\n\n到现在为止，你的系统上应该已经安装了 Node。本章将指导你完成设置和授权 Twitter 帐户、将该帐户连接到\
+    \ JavaScript 程序，并在程序中使用 `twit` npm 模块来完成大部分工作的步骤。\n\n## 创建并授权你的 Twitter 帐户\n\n\
+    如果你的机器人还没有 Twitter 帐户，请在 Twitter.com 上创建一个。\n"
+  merge: 0
+  raw:
+  - "[PAGE 21]\n\n> **When You See...**\n\nTry entering this incomplete command:\n\
+    > console.log(\n\nInstead of an error message, you'll see this:\n...\n\nThis ellipsis\
+    \ means that the REPL is waiting for you to type more code to finish the command.\
+    \ If you get the ellipsis but you're not sure why, you can break out of it by\
+    \ typing the REPL command `.break`.\n\nLet's try making a deliberate mistake so\
+    \ you can see the feedback you get from the REPL.\n\nTry this broken line of code:\n\
+    \n```\n> console.log(It's broken)\n```\n\nAlthough there are several things wrong\
+    \ with this code, you'll get only one message at a time. Here's the first error:\n\
+    \n```\nconsole.log(It's broken);\n          ^^^^^^^^^^^\nSyntaxError: Invalid\
+    \ or unexpected token\n```\n\nLet's fix the first problem. If you look at the\
+    \ carets under the text It's broken, you'll see they start right under the single\
+    \ quote. In JavaScript, anytime you use a string of text, you need to put it in\
+    \ quotes. Otherwise, the REPL thinks those words are code. So now try this:\n\n\
+    ```\n> console.log('It's broken');\n```\n\nArgh! You get a hanging ellipsis.\n\
+    \n```\nconsole.log('It's broken');\n...\n```"
+  - '[PAGE 22]
+
+
+    This time the REPL finds the beginning of the string, but it thinks the second
+    quote is closing your text. It''s looking for a parenthesis to end the command.
+
+    This is tricky. We want to use a quote in our string, but we need quotes around
+    our string. The simple way to fix it is to use double quotes around the whole
+    string so you can use the single quote in the string.
+
+    Both single and double quotes can be used around strings of text:
+
+
+    ```
+
+    > console.log("It''s broken");
+
+    It''s broken
+
+    undefined
+
+    ```
+
+
+    (Remember, you can ignore the `undefined`!)
+
+    You can put more than a single string of text in the parentheses of the `console.log`
+    function. Try these commands:
+
+
+    ```
+
+    > console.log(''Hello''+''world'');
+
+    ```
+
+
+    This command combines the two strings and outputs the single string `Helloworld`.
+    If you want a space between the two words, you can use any of these three arguments
+    in the parentheses; they''ll all work.
+
+
+    ```
+
+    ''Hello ''+''world''
+
+    ''Hello''+'' world''
+
+    ''Hello''+'' ''+''world''
+
+    ```
+
+
+    You won''t always be using strings, though—you''ll be using lots of numbers and
+    variables. Here''s a quick look at some of your options; try them out.
+
+
+    ```
+
+    > console.log(42);
+
+    > console.log(5 + 4);
+
+    > console.log(5 * 4);
+
+    ```
+
+
+    Numbers don''t use quotes; the REPL recognizes them. And you can do math operations
+    on them.'
+  - '[PAGE 23]
+
+
+    # FUNCTIONS
+
+
+    You''ve used your first built-in function, console.log. This simple function prints
+    out whatever string or other value you put in parentheses.
+
+
+    Now let''s write a function! A *function* is basically code that can be reused.
+    There''s more to it than that, but you''ll start with something simple. Try typing
+    in the following function. (Don''t type the ellipsis; it indicates that the REPL
+    is waiting for more code that you can enter on the next line. Press Enter/Return
+    and use multiple lines.)
+
+
+    ```
+
+    > function countPets(){
+
+    var dogs = 2; var cats = 1;
+
+    var total = dogs + cats; return (total);
+
+    ... }
+
+    ```
+
+
+    Here''s what is going on in this function:
+
+
+    ```
+
+    function countPets(){
+
+    ```
+
+
+    This line starts with the JavaScript keyword `function` so the REPL knows a function
+    is coming.
+
+
+    `countPets()` is the name of the function. Everything in the function goes inside
+    curly braces.
+
+
+    Next are two lines beginning with the JavaScript keyword `var`. It''s short for
+    variable, and the lines are saying that the variable `dogs` is equal to 2 and
+    the variable `cats` is equal to 1.
+
+
+    The next line says that the variable `total` contains the sum of `dogs` and `cats`.
+
+
+    The keyword `return` instructs the function to send back the value of `total`
+    after the function finishes.
+
+
+    To use the function, type this command:
+
+
+    ```
+
+    > countPets();
+
+    ```
+
+
+    You''ll get back the sum of `dogs` and `cats`: 3.'
+  - '[PAGE 24]
+
+
+    Let''s make the function a little more reusable. Take a look at this code and
+    see if you can guess what''s going on.
+
+
+    ```
+
+    > function countPets(dogs, cats){
+
+    ... var total = dogs + cats;
+
+    ... return (total);
+
+    ... }
+
+    ```
+
+
+    Now try it!
+
+
+    ```
+
+    > countPets(5, 3);
+
+    ```
+
+
+    In this function, you''re passing in values that the function can use. Being able
+    to add different values to the same code is part of what makes functions so useful!
+
+
+    You''ve now had a taste of JavaScript code. Unfortunately, as soon as you end
+    this REPL session, your functions will not be saved. It''s time to move out of
+    the REPL and put your code into .js files so you can start simple and build on
+    them.
+
+
+    # USING JAVASCRIPT FILES
+
+
+    The REPL is great for testing, but you need to be able to save and reuse your
+    code. You''ll need a text editor so you can write and edit your JavaScript code
+    and save it into a file.
+
+
+    Start by creating a text file called **fromfile.js**. Put this code in your file
+    and save it to a location you''ll remember:
+
+
+    ```
+
+    console.log(''These words are from my .js file!'');
+
+    ```
+
+
+    In your terminal, navigate to the same directory where your **fromfile.js** was
+    saved and type this command on your command line (not in the REPL!):
+
+
+    ```
+
+    $ node fromfile.js
+
+    ```
+
+
+    Node will execute the code in your file and you''ll see the output on your screen.'
+  - "[PAGE 25]\n\n# MAKE A WEB SERVER\n\nNow that you can save .js files, you can\
+    \ start exploring the real power of Node. Without Node, you can write JavaScript\
+    \ code that would run only on an existing web server. But Node frees you from\
+    \ those browsers and lets you create your own web server!\n\nIt's easy to create\
+    \ a little web server with Node. Begin by creating a file called **easyserver.js**\
+    \ and save this code in it:\n\n```\nvar http = require('http');\nvar server =\
+    \ http.createServer(function(req, res) {\n    res.writeHead('I created this server!');\n\
+    \    res.end();\n});\nserver.listen(8080);\n```\n\nNow try running your server.\
+    \ I'll explain this code after you try it. In your terminal, visit the command\
+    \ line in the directory where you saved the file. Type\n\n```\n$ node easyserver.js\n\
+    ```\n\nThe terminal will seem to hang, but that's fine—it means your server is\
+    \ running!\n\nOpen a browser and visit the URL `localhost:8080`. You should see\
+    \ the line `I created this server!` (Figure 2.1).\n\n![](img/a0848e8632a09becbaacc6826f2a8219_25_0.png)\n\
+    \n**FIGURE 2.1:** A web page with output from your web server\n\nAfter you visit\
+    \ the web page, press Ctrl-C in your terminal to end the program."
+  - "[PAGE 26]\n\nLet's take a closer look at what's going on in this code. I don't\
+    \ expect you to understand it right now. I've added comments to the original code.\
+    \ Just try to get the gist of it!\n\n```\nvar http = require('http');\nvar server\
+    \ = http.createServer(function(req, res) {\n  //send response to client\n  res.writeHead('I\
+    \ created this server!');\n  // finish the response\n  res.end();\n});\n//the\
+    \ web server is listening on port 8080\nserver.listen(8080);\n```\n\nNode is doing\
+    \ most of the work for you with built-in code. The very first line is calling\
+    \ the http module, which, behind the scenes, has the code to turn your running\
+    \ program into a web server. The require keyword is giving the new variable http\
+    \ access to a whole lot of saved Node code and functions that can create a web\
+    \ server.\nIn the second line, the code is calling a function called createServer.\
+    \ Whenever anyone connects to your web server, the code in that function will\
+    \ be executed.\nThe last line tells the server you created to start listening\
+    \ for incoming requests on a particular port (in this case, 8080).\n\n# Comments\
+    \ in Your Code\n\nThe double slashes you saw in the last code example let you\
+    \ add comments to your code. Node ignores any words following the //. Comments\
+    \ are great for helping you remember what you did in your code.\n\nIn the next\
+    \ chapter, you'll begin using JavaScript to build a Twitter bot!"
+  - '[PAGE 27]
+
+
+    <!-- no content -->'
+  - '[PAGE 28]
+
+
+    # 3
+
+
+    # Creating a Node Twitter Bot on Raspberry Pi
+
+
+    You''ve written your first JavaScript program. Next, you''ll learn how to create
+    a Twitter bot with Node that can run on any machine that has Node installed, including
+    your Raspberry Pi.
+
+    By now, you should already have Node installed on your system. This chapter will
+    take you through the steps you need to set up and authorize a Twitter account,
+    connect that account to a JavaScript program, and use the twit npm module in your
+    program to do most of the work.
+
+
+    # CREATE AND AUTHORIZE YOUR TWITTER ACCOUNT
+
+
+    If you don''t have a Twitter account for your bot, create one at Twitter.com.'
+- md: "## Do You Use Gmail?\n\nTwitter accounts are based off unique email addresses.\
+    \ If you don't have a spare email address but you use Gmail, you can save the\
+    \ hassle of creating a new email address with a handy trick. Gmail lets you add\
+    \ a plus sign and a few letters to your address.\n\nFor example, if your Gmail\
+    \ address is jane-doe@gmail.com, you can create other email addresses like janedoe+twitterbot@gmail.com\
+    \ or janedoe+catbot@gmail.com.\n\nTwitter will think this is a new address, but\
+    \ Gmail will place everything sent to that address into your existing inbox.\n\
+    \nOne interesting side effect: It's relatively easy to set up a Gmail filter to\
+    \ label all messages sent to that address as \"Twitterbot Email\" or something\
+    \ similar. That way, you can see at a glance which emails have been sent to your\
+    \ bot.\n\n**Step 1.** Log into the Twitter account you'll be using for your bot.\n\
+    \n**Step 2.** Visit apps.twitter.com and click the Create New App button.\n\n\
+    **Step 3.** You'll be presented with a form to fill out (Figure 3.1). Complete\
+    \ all the fields. You can enter any website you wish, and make sure you type a\
+    \ URL in the callback field. Don't worry too much about what you enter in the\
+    \ fields now; you can change the contents at any time.\n\n**Step 4.** Click the\
+    \ Developer Agreement check box and click Create Your Twitter Application.\n\n\
+    **Step 5.** You'll now see a summary page. Click the Keys And Access Tokens tab\
+    \ (Figure 3.2). The keys on this page connect your Twitter app to the Node bot\
+    \ program you'll create later in this chapter.\n\n![Creating a new Twitter app\
+    \ form](img/a0848e8632a09becbaacc6826f2a8219_30_0.png)\n\nFIGURE 3.1: Creating\
+    \ a new Twitter app form\n\n![Keys And Access Tokens page](img/a0848e8632a09becbaacc6826f2a8219_30_1.png)\n\
+    \nFIGURE 3.2: Keys And Access Tokens page\n\n**Step 6.** Scroll to the bottom\
+    \ of this page and click the Create My Access Token button. This page now displays\
+    \ an access token and access token secret (Figure 3.3). Leave this page open.\
+    \ Next up, you'll create a file in your terminal and copy and paste info from\
+    \ this page into it.\n\n![Keys for your Twitter application](img/a0848e8632a09becbaacc6826f2a8219_31_0.png)\n\
+    \nFIGURE 3.3: Keys for your Twitter application\n\nIn the next section, you'll\
+    \ set up a directory, initialize it, and create a configuration file with the\
+    \ keys and tokens on this page.\n\n## Create a Configuration File\n\nOpen your\
+    \ terminal on the device where you installed Node.\nCreate a new directory where\
+    \ you can keep all your new Twitter bot files. I'll call mine newtwitbot. Navigate\
+    \ to your new directory:\n\n```\npi@raspberrypi:~ $ mkdir newtwitbot\npi@raspberrypi:~\
+    \ $ cd newtwitbot\npi@raspberrypi:~/newtwitbot $\n```\n\nOur Twitter bot will\
+    \ use two files: config.js and index.js. Create them now with the touch command:\n\
+    \n```\npi@raspberrypi:~/newtwitbot $ touch config.js index.js\npi@raspberrypi:~/newtwitbot\
+    \ $ ls\nconfig.js index.js\n```\n\nWe need to edit the config.js file with the\
+    \ Twitter keys for your app. Using the editor of your choice (I use nano), edit\
+    \ your config.js file as shown here. Substitute your keys in place of the xxxxx\
+    \ values:\n\n```\n//config.js\n/* TWITTER APP CONFIGURATION\n    consumer_key\n\
+    \    consumer_secret\n    access_token\n    access_token_secret\n*/\nmodule.exports\
+    \ = {\n    consumer_key: 'xxxxx',\n    consumer_secret: 'xxxxx',\n    access_token:\
+    \ 'xxxxx',\n    access_token_secret: 'xxxxx'\n}\n```\n\nNow, the Twitter bot's\
+    \ configuration is complete. These four values will be unique for each Twitter\
+    \ application you create.\n\n## Create the Twitter Bot\n\nDo you remember the\
+    \ npm application you installed along with Node? This handy application lets you\
+    \ reuse code other people have previously written.\n\nThere's already a Twitter\
+    \ code library called twit. We can import this library with npm and then use functions\
+    \ to make communication with Twitter much easier.\n\nTo install this library,\
+    \ use this command:\n\n```\npi@raspberrypi:~/newtwitbot $ npm install --save twit\n\
+    ```\n\nYou'll see this output:\n\n```\nnpm notice created a lockfile as package-lock.json.\
+    \ You should commit this file.\nnpm WARN newtwitbot@0.0.0 No description\nnpm\
+    \ WARN newtwitbot@0.0.0 No repository field.\n+ twit@2.2.9\nadded 55 packages,\
+    \ removed 55 packages and updated 1 package in 15.243s\n```\n\nAfter the twit\
+    \ package has finished installing, open the index.js file. We'll start adding\
+    \ lines. (Don't worry about the WARN lines! If we were building code to then store\
+    \ for other people to use, we would want to add a description. In this case, we\
+    \ aren't.)\n\n> **Building the index.js File**\n\nIf you get lost, don't worry.\
+    \ The complete contents of the index.js file are listed at the end of this chapter.\n\
+    \nOpen index.js in an editor and add these lines. They tell our bot to use the\
+    \ twit code and let the code access the Twitter application keys in the config.js\
+    \ file.\n\n```\n// Dependencies\nvar twit = require('twit'), config = require('./config');\n\
+    ```\n\nNow under those lines, add the following:\n\n```\nvar Twitter = new twit(config);\n\
+    ```\n\nThis line creates a variable called Twitter, a special object that has\
+    \ access to all the code in the twit library, as well as the keys we set up in\
+    \ the config.js file so that it can actually communicate with Twitter. (This is\
+    \ confusing, but think of this Twitter variable as a superhero. It's more than\
+    \ just a single value; it can access lots of custom functions built to do things\
+    \ with Twitter like post, retweet, and favorite. This will be clearer by the end\
+    \ of the chapter.)\n\nNext we'll get to the heart of our bot. We'll start by making\
+    \ it find tweets that contain the text strings doggo or pupper. Then it will use\
+    \ the console.log function you've already seen and post any found tweets to your\
+    \ terminal.\n\nAdd this function, called retweet, to your index.js file:\n\n```\n\
+    var retweet = function() {\n  var params = {\n    q: 'doggo OR pupper',\n    result_type:\
+    \ 'recent'\n  }\n  Twitter.get('search/tweets', params, function(err, data) {\n\
+    \    // if there no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n\
+    \      var retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n\
+    \      Twitter.post('statuses/retweet/:id',\n      {\n        id: retweetId\n\
+    \      },\n      function(err, response) {\n        if (response) {\n        \
+    \  console.log('Retweeted!!!');\n        }\n        // if there was an error while\
+    \ tweeting\n        if (err) {\n          console.log('Error tweeting');\n   \
+    \     }\n      });\n    }\n    // if unable to Search a tweet\n    else {\n  \
+    \    console.log('Error searching');\n    }\n  });\n}\n```\n\nThere's a lot going\
+    \ on here. This entire block of code is a single function. We'll take a closer\
+    \ look in a minute, but let's get it working and try it first.\n\nIf you tried\
+    \ to run this code right now, it wouldn't actually do anything. You've written\
+    \ a function, but you haven't added any code that will call it. Let's do that\
+    \ now. At the end of this code, add these lines:\n\n```\nretweet();\n// retweet\
+    \ every 3 minutes\nsetInterval(retweet, 180000);\n```\n\nNow we're calling our\
+    \ function every 180,000 milliseconds, or every 3 minutes. Change this to whatever\
+    \ interval you wish.\n\n> **WARNING** If you run your bot too frequently, Twitter\
+    \ will see that you're using up too many resources and will \"rate-limit\" you.\
+    \ Once every 3 minutes is plenty.\n\nIt's time to try the program. Open your bot's\
+    \ Twitter feed in a web browser. Now in your terminal, run your program by using\
+    \ this command:\n\n```\npi@raspberrypi:~/newtwitbot $ node index.js\n```\n\nYou'll\
+    \ see lots of output! All the info about each tweet that matches your search string\
+    \ is displayed on your terminal. It is also retweeted to your bot's Twitter account.\n\
+    \n## Customize Your Own Search\n\nIt's not likely that you'll want to keep searching\
+    \ for and retweeting doggo and pupper tweets! You can change the query string\
+    \ (the text in quotes after q:) to look for any terms you wish, including hashtags.\
+    \ Separate multiple terms with commas. The argument result_type: 'recent' tells\
+    \ the code to search for the latest tweets since our bot last retweeted. You can\
+    \ find more parameters for this query string by checking out the Twitter API reference\
+    \ at dev.twitter.com/rest/reference/get/search/tweets."
+  mdcn: "\n## 你使用Gmail吗？\n\nTwitter账号基于唯一的电子邮件地址。如果你没有备用邮箱但使用Gmail，可以通过一个小技巧省去创建新邮箱的麻烦。Gmail允许你在邮箱地址中添加加号和字母后缀。\n\
+    \n例如，如果你的Gmail地址是jane-doe@gmail.com，可以创建janedoe+twitterbot@gmail.com或janedoe+catbot@gmail.com这样的邮箱。\n\
+    \nTwitter会视其为新邮箱，但Gmail会将所有发往该地址的邮件投递到现有收件箱。\n\n有个有趣的附带效果：可以轻松设置Gmail过滤器，将发往该地址的所有邮件标记为\"\
+    Twitter机器人邮件\"或类似标签。这样就能一目了然地看到哪些邮件发送给了你的机器人。\n\n**步骤 1.** 登录用于运行机器人的Twitter账号。\n\
+    \n**步骤 2.** 访问apps.twitter.com，点击\"创建新应用\"按钮。\n\n**步骤 3.** 填写表单（图3.1）。完成所有字段填写。可以输入任意网站地址，确保在回调字段中输入网址。不必太在意当前填写的内容，随时可以修改。\n\
+    \n**步骤 4.** 勾选开发者协议复选框，点击\"创建你的Twitter应用\"。\n\n**步骤 5.** 此时会看到概览页面。点击\"密钥和访问令牌\"\
+    标签页（图3.2）。本页的密钥将把你的Twitter应用与本章稍后创建的Node机器人程序关联起来。\n\n![创建新Twitter应用表单](img/a0848e8632a09becbaacc6826f2a8219_30_0.png)\n\
+    \n图3.1：创建新Twitter应用表单\n\n![密钥和访问令牌页面](img/a0848e8632a09becbaacc6826f2a8219_30_1.png)\n\
+    \n图3.2：密钥和访问令牌页面\n\n**步骤 6.** 滚动到页面底部，点击\"创建我的访问令牌\"按钮。页面将显示访问令牌和访问令牌密钥（图3.3）。保持此页面打开。接下来，你将在终端中创建文件，并将此页面的信息复制粘贴进去。\n\
+    \n![Twitter应用密钥](img/a0848e8632a09becbaacc6826f2a8219_31_0.png)\n\n图3.3：Twitter应用密钥\n\
+    \n下一节将设置目录、初始化，并创建包含此页面密钥和令牌的配置文件。\n\n## 创建配置文件\n\n在安装Node的设备上打开终端。\n创建一个新目录存放Twitter机器人文件。我将目录命名为newtwitbot。进入新目录：\n\
+    \n```\npi@raspberrypi:~ $ mkdir newtwitbot\npi@raspberrypi:~ $ cd newtwitbot\n\
+    pi@raspberrypi:~/newtwitbot $\n```\n\n我们的Twitter机器人将使用两个文件：config.js和index.js。现在用touch命令创建它们：\n\
+    \n```\npi@raspberrypi:~/newtwitbot $ touch config.js index.js\npi@raspberrypi:~/newtwitbot\
+    \ $ ls\nconfig.js index.js\n```\n\n需要用你的应用Twitter密钥编辑config.js文件。使用你喜欢的编辑器（我用nano），按如下方式编辑config.js文件。将xxxxx替换为你的密钥：\n\
+    \n```\n//config.js\n/* TWITTER APP CONFIGURATION\n    consumer_key\n    consumer_secret\n\
+    \    access_token\n    access_token_secret\n*/\nmodule.exports = {\n    consumer_key:\
+    \ 'xxxxx',\n    consumer_secret: 'xxxxx',\n    access_token: 'xxxxx',\n    access_token_secret:\
+    \ 'xxxxx'\n}\n```\n\n现在Twitter机器人配置完成。这四个值对于你创建的每个Twitter应用都是唯一的。\n\n## 创建Twitter机器人\n\
+    \n还记得随Node一起安装的npm应用吗？这个便捷工具让你能重用他人编写的代码。\n\n已有名为twit的Twitter代码库。我们可以通过npm导入这个库，然后使用函数来简化与Twitter的通信。\n\
+    \n安装此库的命令：\n\n```\npi@raspberrypi:~/newtwitbot $ npm install --save twit\n```\n\
+    \n将看到以下输出：\n\n```\nnpm notice created a lockfile as package-lock.json. You should\
+    \ commit this file.\nnpm WARN newtwitbot@0.0.0 No description\nnpm WARN newtwitbot@0.0.0\
+    \ No repository field.\n+ twit@2.2.9\nadded 55 packages, removed 55 packages and\
+    \ updated 1 package in 15.243s\n```\n\ntwit包安装完成后，打开index.js文件。我们将开始添加代码。（不必担心WARN提示！如果我们要构建供他人使用的代码，就需要添加描述。但此场景下不需要。）\n\
+    \n> **构建index.js文件**\n\n如果迷失了方向，别担心。index.js文件的完整内容将在本章末尾列出。\n\n在编辑器中打开index.js，添加以下代码。这些代码告诉机器人使用twit代码，并允许代码访问config.js文件中的Twitter应用密钥。\n\
+    \n```\n// Dependencies\nvar twit = require('twit'), config = require('./config');\n\
+    ```\n\n然后在下方添加：\n\n```\nvar Twitter = new twit(config);\n```\n\n这行代码创建名为Twitter的变量——一个特殊对象，可访问twit库中的所有代码，以及我们在config.js文件中设置的密钥，从而实现与Twitter的实际通信。（这听起来复杂，但可以把Twitter变量想象成超级英雄。它不仅是单一值，还能访问众多定制函数来执行发布、转发、收藏等Twitter操作。本章结束时你会更清楚。）\n\
+    \n接下来进入机器人核心功能。首先让它查找包含字符串\"doggo\"或\"pupper\"的推文。然后使用你已见过的console.log函数，将找到的推文输出到终端。\n\
+    \n将这个名为retweet的函数添加到index.js文件：\n\n```\nvar retweet = function() {\n  var params\
+    \ = {\n    q: 'doggo OR pupper',\n    result_type: 'recent'\n  }\n  Twitter.get('search/tweets',\
+    \ params, function(err, data) {\n    // if there no errors\n    if (!err) {\n\
+    \      // grab ID of tweet to retweet\n      var retweetId = data.statuses[0].id_str;\n\
+    \      // Tell Twitter to retweet\n      Twitter.post('statuses/retweet/:id',\n\
+    \      {\n        id: retweetId\n      },\n      function(err, response) {\n \
+    \       if (response) {\n          console.log('Retweeted!!!');\n        }\n \
+    \       // if there was an error while tweeting\n        if (err) {\n        \
+    \  console.log('Error tweeting');\n        }\n      });\n    }\n    // if unable\
+    \ to Search a tweet\n    else {\n      console.log('Error searching');\n    }\n\
+    \  });\n}\n```\n\n这里包含大量逻辑。整个代码块是一个函数。我们稍后会深入分析，但先让它运行起来试试。\n\n如果现在尝试运行这段代码，它实际上不会执行任何操作。你已经编写了函数，但没有添加调用它的代码。现在添加。在代码末尾添加：\n\
+    \n```\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet, 180000);\n\
+    ```\n\n现在我们每180,000毫秒（即每3分钟）调用一次函数。你可以根据需要调整这个间隔。\n\n> **警告** 如果机器人运行频率过高，Twitter会检测到资源滥用并进行\"\
+    频率限制\"。每3分钟一次完全足够。\n\n现在尝试运行程序。在网页浏览器中打开机器人的Twitter动态。然后在终端中用以下命令运行程序：\n\n```\n\
+    pi@raspberrypi:~/newtwitbot $ node index.js\n```\n\n你会看到大量输出！所有匹配搜索字符串的推文信息都显示在终端中，同时也会被转发到机器人的Twitter账号。\n\
+    \n## 自定义搜索\n\n你可能不会持续搜索并转发\"doggo\"和\"pupper\"推文！可以修改查询字符串（q:后的引号内容）来搜索任何术语，包括话题标签。多个术语用逗号分隔。参数result_type:\
+    \ 'recent'告诉代码搜索机器人上次转发后的最新推文。更多查询字符串参数可参考Twitter API文档：dev.twitter.com/rest/reference/get/search/tweets。\n"
+  merge: 0
+  raw:
+  - '[PAGE 29]
+
+
+    # Do You Use Gmail?
+
+
+    Twitter accounts are based off unique email addresses. If you don''t have a spare
+    email address but you use Gmail, you can save the hassle of creating a new email
+    address with a handy trick. Gmail lets you add a plus sign and a few letters to
+    your address.
+
+
+    For example, if your Gmail address is jane-doe@gmail.com, you can create other
+    email addresses like janedoe+twitterbot@gmail.com or janedoe+catbot@gmail.com.
+
+
+    Twitter will think this is a new address, but Gmail will place everything sent
+    to that address into your existing inbox.
+
+
+    One interesting side effect: It''s relatively easy to set up a Gmail filter to
+    label all messages sent to that address as "Twitterbot Email" or something similar.
+    That way, you can see at a glance which emails have been sent to your bot.
+
+
+    **Step 1.** Log into the Twitter account you''ll be using for your bot.
+
+
+    **Step 2.** Visit apps.twitter.com and click the Create New App button.
+
+
+    **Step 3.** You''ll be presented with a form to fill out (Figure 3.1). Complete
+    all the fields. You can enter any website you wish, and make sure you type a URL
+    in the callback field. Don''t worry too much about what you enter in the fields
+    now; you can change the contents at any time.
+
+
+    **Step 4.** Click the Developer Agreement check box and click Create Your Twitter
+    Application.
+
+
+    **Step 5.** You''ll now see a summary page. Click the Keys And Access Tokens tab
+    (Figure 3.2). The keys on this page connect'
+  - '[PAGE 30]
+
+
+    your Twitter app to the Node bot program you''ll create later in this chapter.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_30_0.png)
+
+
+    FIGURE 3.1: Creating a new Twitter app form
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_30_1.png)
+
+
+    FIGURE 3.2: Keys And Access Tokens page'
+  - '[PAGE 31]
+
+
+    Step 6. Scroll to the bottom of this page and click the Create My Access Token
+    button. This page now displays an access token and access token secret (Figure
+    3.3). Leave this page open. Next up, you''ll create a file in your terminal and
+    copy and paste info from this page into it.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_31_0.png)
+
+
+    FIGURE 3.3: Keys for your Twitter application
+
+
+    In the next section, you''ll set up a directory, initialize it, and create a configuration
+    file with the keys and tokens on this page.
+
+
+    # CREATE A CONFIGURATION FILE
+
+
+    Open your terminal on the device where you installed Node.
+
+    Create a new directory where you can keep all your new Twitter bot files. I''ll
+    call mine newtwitbot. Navigate to your new directory:
+
+
+    ```
+
+    pi@raspberrypi:~ $ mkdir newtwitbot
+
+    pi@raspberrypi:~ $ cd newtwitbot
+
+    pi@raspberrypi:~/newtwitbot $
+
+    ```'
+  - "[PAGE 32]\n\nOur Twitter bot will use two files: config.js and index.js. Create\
+    \ them now with the touch command:\n\n```\npi@raspberrypi:~/newtwitbot $ touch\
+    \ config.js index.js\npi@raspberrypi:~/newtwitbot $ ls\nconfig.js index.js\n```\n\
+    \nWe need to edit the config.js file with the Twitter keys for your app. Using\
+    \ the editor of your choice (I use nano), edit your config.js file as shown here.\
+    \ Substitute your keys in place of the xxxxx values:\n\n```\n//config.js\n/* TWITTER\
+    \ APP CONFIGURATION\n    consumer_key\n    consumer_secret\n    access_token\n\
+    \    access_token_secret\n*/\nmodule.exports = {\n    consumer_key: 'xxxxx',\n\
+    \    consumer_secret: 'xxxxx',\n    access_token: 'xxxxx',\n    access_token_secret:\
+    \ 'xxxxx'\n}\n```\n\nNow, the Twitter bot's configuration is complete. These four\
+    \ values will be unique for each Twitter application you create.\n\n# CREATE THE\
+    \ TWITTER BOT\n\nDo you remember the npm application you installed along with\
+    \ Node? This handy application lets you reuse code other people have previously\
+    \ written.\n\nThere's already a Twitter code library called twit. We can import\
+    \ this library with npm and then use functions to make communication with Twitter\
+    \ much easier.\n\nTo install this library, use this command:\n\n```\npi@raspberrypi:~/newtwitbot\
+    \ $ npm install --save twit\n```"
+  - '[PAGE 33]
+
+
+    You''ll see this output:
+
+
+    ```
+
+    npm notice created a lockfile as package-lock.json. You should commit this file.
+
+    npm WARN newtwitbot@0.0.0 No description
+
+    npm WARN newtwitbot@0.0.0 No repository field.
+
+    + twit@2.2.9
+
+    added 55 packages, removed 55 packages and updated 1 package in 15.243s
+
+    ```
+
+
+    After the twit package has finished installing, open the index.js file. We''ll
+    start adding lines. (Don''t worry about the WARN lines! If we were building code
+    to then store for other people to use, we would want to add a description. In
+    this case, we aren''t.)
+
+
+    > **Building the index.js File**
+
+
+    If you get lost, don''t worry. The complete contents of the index.js file are
+    listed at the end of this chapter.
+
+
+    Open index.js in an editor and add these lines. They tell our bot to use the twit
+    code and let the code access the Twitter application keys in the config.js file.
+
+
+    ```
+
+    // Dependencies
+
+    var twit = require(''twit''), config = require(''./config'');
+
+    ```
+
+
+    Now under those lines, add the following:
+
+
+    ```
+
+    var Twitter = new twit(config);
+
+    ```
+
+
+    This line creates a variable called Twitter, a special object that has access
+    to all the code in the twit library, as well as the keys we set up in the config.js
+    file so that it can actually communicate with Twitter. (This is confusing, but
+    think of this Twitter variable as a superhero. It''s more than just a single value;
+    it can access lots of custom functions built to do things with Twitter like post,
+    retweet, and favorite. This will be clearer by the end of the chapter.)'
+  - "[PAGE 34]\n\nNext we'll get to the heart of our bot. We'll start by making it\
+    \ find tweets that contain the text strings doggo or pupper. Then it will use\
+    \ the console.log function you've already seen and post any found tweets to your\
+    \ terminal.\n\nAdd this function, called retweet, to your index.js file:\n\n```\n\
+    var retweet = function() {\n  var params = {\n    q: 'doggo OR pupper',\n    result_type:\
+    \ 'recent'\n  }\n  Twitter.get('search/tweets', params, function(err, data) {\n\
+    \    // if there no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n\
+    \      var retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n\
+    \      Twitter.post('statuses/retweet/:id',\n      {\n        id: retweetId\n\
+    \      },\n      function(err, response) {\n        if (response) {\n        \
+    \  console.log('Retweeted!!!');\n        }\n        // if there was an error while\
+    \ tweeting\n        if (err) {\n          console.log('Error tweeting');\n   \
+    \     }\n      });\n    }\n    // if unable to Search a tweet\n    else {\n  \
+    \    console.log('Error searching');\n    }\n  });\n}\n```\n\nThere's a lot going\
+    \ on here. This entire block of code is a single function. We'll take a closer\
+    \ look in a minute, but let's get it working and try it first."
+  - '[PAGE 35]
+
+
+    If you tried to run this code right now, it wouldn''t actually do anything. You''ve
+    written a function, but you haven''t added any code that will call it. Let''s
+    do that now. At the end of this code, add these lines:
+
+
+    ```
+
+    retweet();
+
+    // retweet every 3 minutes
+
+    setInterval(retweet, 180000);
+
+    ```
+
+
+    Now we''re calling our function every 180,000 milliseconds, or every 3 minutes.
+    Change this to whatever interval you wish.
+
+
+    > **WARNING** If you run your bot too frequently, Twitter will see that you''re
+    using up too many resources and will "rate-limit" you. Once every 3 minutes is
+    plenty.
+
+
+    It''s time to try the program. Open your bot''s Twitter feed in a web browser.
+    Now in your terminal, run your program by using this command:
+
+
+    ```
+
+    pi@raspberrypi:~/newtwitbot $ node index.js
+
+    ```
+
+
+    You''ll see lots of output! All the info about each tweet that matches your search
+    string is displayed on your terminal. It is also retweeted to your bot''s Twitter
+    account.
+
+
+    # Customize Your Own Search
+
+
+    It''s not likely that you''ll want to keep searching for and retweeting doggo
+    and pupper tweets! You can change the query string (the text in quotes after q:)
+    to look for any terms you wish, including hashtags. Separate multiple terms with
+    commas. The argument result_type: ''recent'' tells the code to search for the
+    latest tweets since our bot last retweeted. You can find more parameters for this
+    query string by checking out the Twitter API reference at dev.twitter.com/rest/reference/get/search/tweets.'
+- md: "Your program will keep running and retweeting every 3 minutes until you stop\
+    \ it by pressing Ctrl-C.\nLet's take a closer look. Consider this code:\n\n```javascript\n\
+    var params = {\n    q: 'watermelon, papaya, mango', result_type: 'recent'\n}\n\
+    ```\n\nThis code sets up the parameters of the data we'll be searching for.\n\
+    Here's the code that uses those parameters, starting with the Twitter.get function.\
+    \ This function comes from the twit API, and it takes three objects:\n\n1.  The\
+    \ action we want it to take—in this case we want it to search, so we use search/tweets.\n\
+    2.  The params object (our query string and any other params).\n3.  A callback\
+    \ function that calls another twit API function, Twitter.post. This function does\
+    \ the actual posting or reports errors.\n\n```javascript\nTwitter.get('search/tweets',\
+    \ params, function(err, data) {\n    // if there no errors\n    if (!err) {\n\
+    \        // grab ID of matching tweet\n        var retweetId = data.statuses[0].id_str;\n\
+    \        // found something to retweet\n        Twitter.post('statuses/retweet/:id',\n\
+    \        {id: retweetId},\n            function(err, response) {\n           \
+    \     if (response) {\n                    console.log('Retweeted this tweet');\n\
+    \                    console.log(data);\n                }\n            }\n  \
+    \      );\n        // error while retweeting\n        if (err) {\n           \
+    \ console.log('Error tweeting');\n        }\n    }\n    // if unable to search\
+    \ through tweets\n    else {\n        console.log('Error searching.');\n    }\n\
+    });\n}\n```\n\nThe last bit of code we added uses a JavaScript timer function,\
+    \ setInterval(). This timer function calls the retweet function periodically.\n\
+    \n```javascript\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet,\
+    \ 180000);\n```\n\nWe've covered quite a bit of ground in this chapter. Here's\
+    \ the entire index.js code so far:\n\n```javascript\n// Complete index.js code\
+    \ from Chapter 3\n// Dependencies\nvar retweet = function() {\n  var params =\
+    \ {\n    q: 'doggo OR pupper',\n    result_type: 'recent'\n  }\n  Twitter.get('search/tweets',\
+    \ params, function(err, data) {\n    // if there no errors\n    if (!err) {\n\
+    \      // grab ID of tweet to retweet\n      var retweetId = data.statuses[0].id_str;\n\
+    \      // Tell Twitter to retweet\n      Twitter.post('statuses/retweet/:id',\n\
+    \        {\n          id: retweetId\n        },\n        function(err, response)\
+    \ {\n          if (response) {\n            console.log('Retweeted!!!');\n   \
+    \       }\n          // if there was an error while tweeting\n          if (err)\
+    \ {\n            console.log('Error tweeting');\n          }\n        }\n    \
+    \  );\n    }\n    // if unable to Search a tweet\n    else {\n        console.log('Error\
+    \ searching');\n    }\n  });\n}\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet,\
+    \ 180000);\n```\n\nIn the next chapter, we'll expand on the bot's functionality\
+    \ and use the Raspberry Pi to make an LED light up when our bot's Twitter handle\
+    \ is mentioned!\n\n# Flash an LED in Response to a Twitter Event\n\nYou've created\
+    \ your Twitter bot with Node. If you've set it up on your Raspberry Pi, you can\
+    \ hook up an LED and make it flash when an event happens on Twitter. In this chapter,\
+    \ you'll wire up an LED on a breadboard hooked in to your Pi. Next, you'll write\
+    \ a short program that will make the LED blink twice. Finally, you'll add this\
+    \ code to your Twitter bot program so that each time your bot's Twitter handle\
+    \ is mentioned, the LED will alert you by blinking (Figure 4.1).\n\n![](img/a0848e8632a09becbaacc6826f2a8219_41_0.png)\n\
+    \nFIGURE 4.1: Blinking LED\n\n## SET UP THE LED ON YOUR RASPBERRY PI\n\nThe setup,\
+    \ shown in Figure 4.2, is fairly simple. Here's what you'll need:\n\n- Raspberry\
+    \ Pi with 5V power supply\n- Breadboard\n- 2 male-to-female jumper cables (the\
+    \ example uses black and green)\n- An LED\n\n**Step 1.** Locate the GPIO pins\
+    \ on your Pi (Figure 4.3).\n\n![](img/a0848e8632a09becbaacc6826f2a8219_42_0.png)\n\
+    \nFIGURE 4.2: Complete LED setup on Raspberry Pi\n\n![](img/a0848e8632a09becbaacc6826f2a8219_42_1.png)\n\
+    \nFIGURE 4.3: Close-up of GPIO pins\n\n> ## What Do You Mean by GPIO?\n> See those\
+    \ 26 pins along one edge of your Pi? Seventeen of these pins are called GPIO,\
+    \ short for General Purpose Input/Output. You can attach external hardware to\
+    \ these pins. The other pins are power or ground pins.\n\n- **Step 2.** Connect\
+    \ the female end of the green jumper cable to pin 4 of the GPIO on the Pi, as\
+    \ shown in both Figures 4.1 and 4.2.\n- **Step 3.** Connect the female end of\
+    \ the black jumper cable to pin 3 of the GPIO.\n- **Step 4.** Take a look at your\
+    \ LED. One leg is longer than the other. The longer leg is the plus side, and\
+    \ the shorter leg is the minus terminal. This is important to keep track of.\n\
+    - **Step 5.** Insert your LED into the breadboard as shown in Figure 4.2. Make\
+    \ sure the plus side of the LED is on the right.\n- **Step 6.** Connect the male\
+    \ end of the black cable to the breadboard adjacent to the minus terminal of the\
+    \ LED. If any of this is confusing, just take a close look at Figure 4.2.\n- **Step\
+    \ 7.** Connect the male end of the green cable to the breadboard adjacent to the\
+    \ plus terminal of the LED.\n\nYour Pi will now be able to blink the LED in response\
+    \ to the code you're about to write!\n\n## CREATE THE BLINK PROGRAM\n\nOpen your\
+    \ terminal and connect to your Pi. Navigate to the directory where you created\
+    \ your Twitter bot files.\n\n```bash\npi@raspberrypi:~ $ cd newtwitbot\npi@raspberrypi:~/newtwitbot\
+    \ $\n```\n\nRemember using npm to install the Twitter code library called twit?\
+    \ We're going to use npm again, this time to import another library called onoff\
+    \ that lets us control the LED.\n\nTo install this library, use this command:\n\
+    \n```bash\npi@raspberrypi:~/newtwitbot $ npm install --save onoff\n```\n\nAfter\
+    \ onoff has finished installing, create and open a new file, helloBlink.js.\n\n\
+    ```bash\npi@raspberrypi:~/newtwitbot $ nano helloBlink.js\n```\n\nThis opens the\
+    \ editor with a new blank file. Here's the code to enter:\n\n```javascript\n//helloBlink.js\n\
+    var Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\nvar iv = setInterval(function\
+    \ () {\n  led.writeSync(led.readSync() === 0 ? 1 : 0)\n}, 500);\n// Toggle state\
+    \ of the LED every half second\nsetTimeout(function () {\n  clearInterval(iv);\n\
+    \  led.writeSync(0);\n  // Turn LED off\n  led.unexport();\n}, 2000);\n// End\
+    \ blinking after 2 seconds\n```\n\nSave this file.\n\nNow give it a try with the\
+    \ node command:\n\n```bash\npi@raspberrypi:~/newtwitbot $ node helloBlink.js\n\
+    ```\n\n## MAKE YOUR BOT DETECT YOUR TWITTER HANDLE\n\nBefore your bot can blink\
+    \ in response to your Twitter handle being tweeted, it needs to be able to detect\
+    \ when that happens.\n\nIn this section, we'll add some code that will tweet a\
+    \ greeting back to anyone who tweets your handle.\n\nIn the last chapter, you\
+    \ created a Twitter bot in a program called index.js. Open index.js (or whatever\
+    \ you named your file) in an editor. We'll add this new code to the end of the\
+    \ current file. Make sure you change @doggobot to whatever you named your bot!\n\
+    \n```javascript\n//Respond when someone mentions me, @doggobot\nvar stream = Twitter.stream('statuses/filter',\n\
+    \  { track: ['@doggobot'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply = 'You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params\
+    \ = {\n    status: reply,\n    in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n    function(err, data, response) {\n      if (err !== undefined) {\n\
+    \        //Report error if response tweet fails\n        console.log(err);\n \
+    \     } else {\n        //Report success\n        console.log('Tweeted: ' + params.status);\n\
+    \      }\n    })\n};\n```\n\nBasically, this code listens for your bot's Twitter\
+    \ handle. When it detects your handle, it grabs the handle of the sender. Then\
+    \ it creates a reply that includes the sender's handle, and tweets it. In our\
+    \ example, if someone—let's call her @lynnbeighley—were to tweet anything containing\
+    \ my bot's name, @doggobot, the bot will respond with You mentioned me! @lynnbeighley\
+    \ Bork bork!."
+  mdcn: "\n你的程序会持续运行，每隔3分钟自动转发一次推文，直到你按下Ctrl-C停止它。\n让我们更仔细地看看。考虑这段代码：\n\n```javascript\n\
+    var params = {\n    q: 'watermelon, papaya, mango', result_type: 'recent'\n}\n\
+    ```\n\n这段代码设置了我们将要搜索的数据参数。\n以下是使用这些参数的代码，从`Twitter.get`函数开始。这个函数来自`twit` API，它接收三个对象：\n\
+    \n1.  我们要它执行的操作——在这里我们希望它搜索，所以我们使用`search/tweets`。\n2.  `params`对象（我们的查询字符串和其他参数）。\n\
+    3.  一个调用另一个`twit` API函数`Twitter.post`的回调函数。这个函数执行实际的发布或报告错误。\n\n```javascript\n\
+    Twitter.get('search/tweets', params, function(err, data) {\n    // if there no\
+    \ errors\n    if (!err) {\n        // grab ID of matching tweet\n        var retweetId\
+    \ = data.statuses[0].id_str;\n        // found something to retweet\n        Twitter.post('statuses/retweet/:id',\n\
+    \        {id: retweetId},\n            function(err, response) {\n           \
+    \     if (response) {\n                    console.log('Retweeted this tweet');\n\
+    \                    console.log(data);\n                }\n            }\n  \
+    \      );\n        // error while retweeting\n        if (err) {\n           \
+    \ console.log('Error tweeting');\n        }\n    }\n    // if unable to search\
+    \ through tweets\n    else {\n        console.log('Error searching.');\n    }\n\
+    });\n}\n```\n\n我们添加的最后一段代码使用了JavaScript的定时器函数`setInterval()`。这个定时器函数定期调用转推函数。\n\
+    \n```javascript\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet,\
+    \ 180000);\n```\n\n我们在本章已经涵盖了很多内容。以下是目前完整的`index.js`代码：\n\n```javascript\n// Complete\
+    \ index.js code from Chapter 3\n// Dependencies\nvar retweet = function() {\n\
+    \  var params = {\n    q: 'doggo OR pupper',\n    result_type: 'recent'\n  }\n\
+    \  Twitter.get('search/tweets', params, function(err, data) {\n    // if there\
+    \ no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n      var\
+    \ retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n   \
+    \   Twitter.post('statuses/retweet/:id',\n        {\n          id: retweetId\n\
+    \        },\n        function(err, response) {\n          if (response) {\n  \
+    \          console.log('Retweeted!!!');\n          }\n          // if there was\
+    \ an error while tweeting\n          if (err) {\n            console.log('Error\
+    \ tweeting');\n          }\n        }\n      );\n    }\n    // if unable to Search\
+    \ a tweet\n    else {\n        console.log('Error searching');\n    }\n  });\n\
+    }\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet, 180000);\n```\n\
+    \n在下一章，我们将扩展这个机器人的功能，并使用树莓派在我们的机器人Twitter账号被提及时点亮一个LED灯！\n\n# 响应Twitter事件闪烁LED\n\
+    \n你已经用Node.js创建了你的Twitter机器人。如果你在树莓派上设置好了它，你就可以连接一个LED灯，并在Twitter上发生事件时让它闪烁。在本章中，你将在连接到你的树莓派的面包板上接线一个LED。接下来，你将编写一个简短的程序，让LED闪烁两次。最后，你将把这段代码添加到你的Twitter机器人程序中，这样每次你的机器人Twitter账号被提及时，LED灯就会通过闪烁来提醒你（图4.1）。\n\
+    \n![](img/a0848e8632a09becbaacc6826f2a8219_41_0.png)\n\n图4.1：闪烁的LED灯\n\n## 在你的树莓派上设置LED\n\
+    \n设置如图4.2所示，相当简单。你需要以下物品：\n\n-   带5V电源的树莓派\n-   面包板\n-   2根公对母跳线（示例中使用黑色和绿色）\n\
+    -   一个LED灯\n\n**步骤1.** 找到你树莓派上的GPIO引脚（图4.3）。\n\n![](img/a0848e8632a09becbaacc6826f2a8219_42_0.png)\n\
+    \n图4.2：树莓派上完整的LED设置\n\n![](img/a0848e8632a09becbaacc6826f2a8219_42_1.png)\n\n\
+    图4.3：GPIO引脚特写\n\n> ## 你说的GPIO是什么意思？\n> 看到你树莓派一侧边缘上的那26个引脚了吗？其中17个引脚被称为GPIO，即通用输入/输出的缩写。你可以将外部硬件连接到这些引脚上。其他引脚是电源或接地引脚。\n\
+    \n-   **步骤2.** 将绿色跳线的母端连接到树莓派GPIO的4号引脚，如图4.1和4.2所示。\n-   **步骤3.** 将黑色跳线的母端连接到GPIO的3号引脚。\n\
+    -   **步骤4.** 看看你的LED灯。一条腿比另一条长。长腿是正极，短腿是负极。记住这一点很重要。\n-   **步骤5.** 如图4.2所示，将你的LED灯插入面包板。确保LED灯的正极在右侧。\n\
+    -   **步骤6.** 将黑色电缆的公端连接到面包板上与LED灯负极相邻的位置。如果这有任何令人困惑的地方，请仔细看图4.2。\n-   **步骤7.**\
+    \ 将绿色电缆的公端连接到面包板上与LED灯正极相邻的位置。\n\n现在，你的树莓派将能够根据你即将编写的代码来闪烁LED灯！\n\n## 创建闪烁程序\n\
+    \n打开你的终端并连接到你的树莓派。导航到你创建Twitter机器人文件的目录。\n\n```bash\npi@raspberrypi:~ $ cd newtwitbot\n\
+    pi@raspberrypi:~/newtwitbot $\n```\n\n还记得用`npm`安装名为`twit`的Twitter代码库吗？我们将再次使用`npm`，这次是导入另一个名为`onoff`的库，它让我们可以控制LED灯。\n\
+    \n要安装这个库，使用以下命令：\n\n```bash\npi@raspberrypi:~/newtwitbot $ npm install --save\
+    \ onoff\n```\n\n`onoff`安装完成后，创建并打开一个新文件`helloBlink.js`。\n\n```bash\npi@raspberrypi:~/newtwitbot\
+    \ $ nano helloBlink.js\n```\n\n这将打开编辑器并创建一个空白文件。输入以下代码：\n\n```javascript\n//helloBlink.js\n\
+    var Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\nvar iv = setInterval(function\
+    \ () {\n  led.writeSync(led.readSync() === 0 ? 1 : 0)\n}, 500);\n// Toggle state\
+    \ of the LED every half second\nsetTimeout(function () {\n  clearInterval(iv);\n\
+    \  led.writeSync(0);\n  // Turn LED off\n  led.unexport();\n}, 2000);\n// End\
+    \ blinking after 2 seconds\n```\n\n保存这个文件。\n\n现在用`node`命令试一试：\n\n```bash\npi@raspberrypi:~/newtwitbot\
+    \ $ node helloBlink.js\n```\n\n## 让你的机器人检测你的Twitter账号\n\n在你的机器人能够响应有人在推文中提到你的Twitter账号之前，它需要能够检测到这件事的发生。\n\
+    \n在这一节，我们将添加一些代码，它会向任何推文提及你账号的人回复一条问候。\n\n在上一章，你在一个名为`index.js`的程序中创建了一个Twitter机器人。在编辑器中打开`index.js`（或者你命名的任何文件）。我们将把这段新代码添加到当前文件的末尾。确保将`@doggobot`改成你为你的机器人命名的任何名称！\n\
+    \n```javascript\n//Respond when someone mentions me, @doggobot\nvar stream = Twitter.stream('statuses/filter',\n\
+    \  { track: ['@doggobot'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply = 'You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params\
+    \ = {\n    status: reply,\n    in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n    function(err, data, response) {\n      if (err !== undefined) {\n\
+    \        //Report error if response tweet fails\n        console.log(err);\n \
+    \     } else {\n        //Report success\n        console.log('Tweeted: ' + params.status);\n\
+    \      }\n    })\n};\n```\n\n基本上，这段代码监听你的机器人Twitter账号。当它检测到你的账号时，它会获取发送者的账号名。然后它创建一条包含发送者账号名的回复，并发布推文。在我们的例子中，如果有人——我们称她为@lynnbeighley——发布任何包含我的机器人名字`@doggobot`的推文，机器人将回复：You\
+    \ mentioned me! @lynnbeighley Bork bork!。\n"
+  merge: 1
+  raw:
+  - "[PAGE 36]\n\nYour program will keep running and retweeting every 3 minutes until\
+    \ you stop it by pressing Ctrl-C.\nLet's take a closer look. Consider this code:\n\
+    \n```\nvar params = {\n    q: 'watermelon, papaya, mango', result_type: 'recent'\n\
+    }\n```\n\nThis code sets up the parameters of the data we'll be searching for.\n\
+    Here's the code that uses those parameters, starting with the Twitter.get function.\
+    \ This function comes from the twit API, and it takes three objects:\n\n+   *\
+    \ The action we want it to take—in this case we want it to search, so we use search/tweets.\n\
+    * The params object (our query string and any other params).\n* A callback function\
+    \ that calls another twit API function, Twitter.post. This function does the actual\
+    \ posting or reports errors.\n\n```\nTwitter.get('search/tweets', params, function(err,\
+    \ data) {\n    // if there no errors\n    if (!err) {\n        // grab ID of matching\
+    \ tweet\n        var retweetId = data.statuses[0].id_str;\n        // found something\
+    \ to retweet\n        Twitter.post('statuses/retweet/:id',\n        {id: retweetId},\n\
+    \            function(err, response) {\n                if (response) {\n    \
+    \                console.log('Retweeted this tweet');\n                    console.log(data);\n\
+    \                    retweeting.');\n                }\n            }\n      \
+    \  // error while retweeting\n        if (err) {\n            console.log('Error\
+    \ tweeting';});\n        }\n    // if unable to search through tweets\n    else\
+    \ {\n```"
+  - "[PAGE 37]\n\n```\nconsole.log('Error searching.');\n}\n});\n}\n```\n\nThe last\
+    \ bit of code we added uses a JavaScript timer function, setInterval(). This timer\
+    \ function calls the retweet function periodically.\n\n```\nretweet();\n// retweet\
+    \ every 3 minutes\nsetInterval(retweet, 180000);\n```\n\nWe've covered quite a\
+    \ bit of ground in this chapter. Here's the entire index.js code so far:\n\n```\n\
+    // Complete index.js code from Chapter 3\n// Dependencies\nvar retweet = function()\
+    \ {\n  var params = {\n    q: 'doggo OR pupper',\n    result_type: 'recent'\n\
+    \  }\n  Twitter.get('search/tweets', params, function(err, data) {\n    // if\
+    \ there no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n   \
+    \   var retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n\
+    \      Twitter.post('statuses/retweet/:id',\n        {\n          id: retweetId\n\
+    \        },\n        function(err, response) {\n          if (response) {\n  \
+    \          console.log('Retweeted!!!');\n          }\n          // if there was\
+    \ an error while tweeting\n          if (err) {\n            console.log('Error\
+    \ tweeting');\n          }\n        }\n      );\n    }\n  });\n}\n```"
+  - "[PAGE 38]\n\n```\n// if unable to Search a tweet\nelse {\n    console.log('Error\
+    \ searching');\n}\n}\n);\n}\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet,\
+    \ 180000);\n```\n\nIn the next chapter, we'll expand on the bot's functionality\
+    \ and use the Raspberry Pi to make an LED light up when our bot's Twitter handle\
+    \ is mentioned!"
+  - '[PAGE 39]
+
+
+    <!-- no content -->'
+  - '[PAGE 40]
+
+
+    # # Flash an LED in Response to a Twitter Event
+
+
+    You''ve created your Twitter bot with Node. If you''ve set it up on your Raspberry
+    Pi, you can hook up an LED and make it flash when an event happens on Twitter.
+    In this chapter, you''ll wire up an LED on a breadboard hooked in to your Pi.
+    Next, you''ll write a short program that will make the LED blink twice. Finally,
+    you''ll add this code to your Twitter bot program so that each time your bot''s
+    Twitter handle is mentioned, the LED will alert you by blinking (Figure 4.1).'
+  - '[PAGE 41]
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_41_0.png)
+
+
+    FIGURE 4.1: Blinking LED
+
+
+    # SET UP THE LED ON YOUR RASPBERRY PI
+
+
+    The setup, shown in Figure 4.2, is fairly simple. Here''s what you''ll need:
+
+
+    +   - Raspberry Pi with 5V power supply
+
+    - Breadboard
+
+    - 2 male-to-female jumper cables (the example uses black and green)
+
+    - An LED
+
+
+    **Step 1.** Locate the GPIO pins on your Pi (Figure 4.3).'
+  - '[PAGE 42]
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_42_0.png)
+
+
+    FIGURE 4.2: Complete LED setup on Raspberry Pi
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_42_1.png)
+
+
+    FIGURE 4.3: Close-up of GPIO pins'
+  - '[PAGE 43]
+
+
+    > ## What Do You Mean by GPIO?
+
+    See those 26 pins along one edge of your Pi? Seventeen of these pins are called
+    GPIO, short for General Purpose Input/Output. You can attach external hardware
+    to these pins. The other pins are power or ground pins.
+
+
+    +   - **Step 2.** Connect the female end of the green jumper cable to pin 4 of
+    the GPIO on the Pi, as shown in both Figures 4.1 and 4.2.
+
+    - **Step 3.** Connect the female end of the black jumper cable to pin 3 of the
+    GPIO.
+
+    - **Step 4.** Take a look at your LED. One leg is longer than the other. The longer
+    leg is the plus side, and the shorter leg is the minus terminal. This is important
+    to keep track of.
+
+    - **Step 5.** Insert your LED into the breadboard as shown in Figure 4.2. Make
+    sure the plus side of the LED is on the right.
+
+    - **Step 6.** Connect the male end of the black cable to the breadboard adjacent
+    to the minus terminal of the LED. If any of this is confusing, just take a close
+    look at Figure 4.2.
+
+    - **Step 7.** Connect the male end of the green cable to the breadboard adjacent
+    to the plus terminal of the LED.
+
+
+    Your Pi will now be able to blink the LED in response to the code you''re about
+    to write!
+
+
+    # ## CREATE THE BLINK PROGRAM
+
+
+    Open your terminal and connect to your Pi. Navigate to the directory where you
+    created your Twitter bot files.
+
+
+    ```
+
+    pi@raspberrypi:~ $ cd newtwitbot
+
+    pi@raspberrypi:~/newtwitbot $
+
+    ```'
+  - "[PAGE 44]\n\nRemember using npm to install the Twitter code library called twit?\
+    \ We're going to use npm again, this time to import another library called onoff\
+    \ that lets us control the LED.\n\nTo install this library, use this command:\n\
+    \n```\npi@raspberrypi:~/newtwitbot $ npm install --save onoff\n```\n\nAfter onoff\
+    \ has finished installing, create and open a new file, helloBlink.js.\n\n```\n\
+    pi@raspberrypi:~/newtwitbot $ nano helloBlink.js\n```\n\nThis opens the editor\
+    \ with a new blank file. Here's the code to enter:\n\n```\n//helloBlink.js\nvar\
+    \ Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\nvar iv = setInterval(function\
+    \ () {\n  led.writeSync(led.readSync() === 0 ? 1 : 0)\n}, 500);\n// Toggle state\
+    \ of the LED every half second\nsetTimeout(function () {\n  clearInterval(iv);\n\
+    \  led.writeSync(0);\n  // Turn LED off\n  led.unexport();\n}, 2000);\n// End\
+    \ blinking after 2 seconds\n```\n\nSave this file.\n\nNow give it a try with the\
+    \ node command:\n\n```\npi@raspberrypi:~/newtwitbot $ node helloBlink.js\n```\n\
+    \n# MAKE YOUR BOT DETECT YOUR TWITTER HANDLE\n\nBefore your bot can blink in response\
+    \ to your Twitter handle being tweeted, it needs to be able to detect when that\
+    \ happens."
+  - "[PAGE 45]\n\nIn this section, we'll add some code that will tweet a greeting\
+    \ back to anyone who tweets your handle.\n\nIn the last chapter, you created a\
+    \ Twitter bot in a program called index.js. Open index.js (or whatever you named\
+    \ your file) in an editor. We'll add this new code to the end of the current file.\
+    \ Make sure you change @doggobot to whatever you named your bot!\n\n```\n//Respond\
+    \ when someone mentions me, @doggobot\nvar stream = Twitter.stream('statuses/filter',\n\
+    \  { track: ['@doggobot'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply = 'You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params\
+    \ = {\n    status: reply,\n    in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n    function(err, data, response) {\n      if (err !== undefined) {\n\
+    \        //Report error if response tweet fails\n        console.log(err);\n \
+    \     } else {\n        //Report success\n        console.log('Tweeted: ' + params.status);\n\
+    \      }\n    })\n};\n```\n\nBasically, this code listens for your bot's Twitter\
+    \ handle. When it detects your handle, it grabs the handle of the sender. Then\
+    \ it creates a reply that includes the sender's handle, and tweets it. In our\
+    \ example, if someone—let's call her @lynnbeighley—were to tweet anything containing\
+    \ my bot's name, @doggobot, the bot will respond with You mentioned me! @lynnbeighley\
+    \ Bork bork!."
+- md: "# MAKE YOUR BOT BLINK THE LED WHEN MENTIONED\n\nThe last step is to add in\
+    \ the code you used in the helloBlink.js program at the correct point in your\
+    \ bot program. You can copy and paste it immediately after this line:\n\n```\n\
+    console.log('Tweeted: ' + params.status);\n```\n\nThe complete block of code we\
+    \ added to the end of your bot code in this chapter is\n\n```\n//Respond when\
+    \ someone mentions me, @doggothebotto\nvar stream = Twitter.stream('statuses/filter',\n\
+    { track: ['@doggothebotto'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply='You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params =\
+    \ {\n    status: reply, in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n  function(err, data,response) {\n    if (err !== undefined) {\n  \
+    \    //Report error if response tweet fails\n      console.log(err);\n    } else\
+    \ {\n      //Report success\n      console.log('Tweeted: ' + params.status);\n\
+    \    }\n  });\n}\nvar Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\n\
+    var iv = setInterval(function () {\n  led.writeSync(led.readSync() === 0 ? 1 :\
+    \ 0)\n}, 500);\n// Toggle state of the LED every half second\nsetTimeout(function\
+    \ () {\n  clearInterval(iv);\n  led.writeSync(0);\n  // Turn LED off\n  led.unexport();\n\
+    }, 2000);\n// End blinking after 2 seconds\n}\n})\n};\n```\n\nYou've now got a\
+    \ bot that not only responds when someone tweets at it, but also blinks an LED\
+    \ to let you know! Using similar techniques, you could monitor Twitter for more\
+    \ practical search terms—for example, the words tsunami and earthquake.\n\n> Run\
+    \ Node Applications in the Background\n\nIf you're running something like a Twitter\
+    \ bot on your Pi, you'll probably want to let it run in the background. You can\
+    \ use the command `forever` to do this.\n\nUse npm to install `forever`:\n`pi@raspberrypi:~\
+    \ $ npm install forever --global`\n\nNow you can run it like this:\n`pi@raspberrypi:~\
+    \ $ forever start yourProgram.js`\n\nYour program will now run as a process. To\
+    \ stop it, use this:\n`pi@raspberrypi:~ $ forever stop yourProgram.js`\n\n# NODE,\
+    \ PI, AND THE INTERNET OF THINGS\n\nYou've now had a jumpstart into JavaScript\
+    \ with Node and Raspberry Pi. You can control real-world devices and interact\
+    \ with the Internet. Blinking an LED is just a small taste of what you can directly\
+    \ control with your Raspberry Pi. Now that you can do that, you can connect and\
+    \ control other, more interesting electronic devices.\n\nFor example, you could\
+    \ attach a temperature sensor and periodically post environmental readings to\
+    \ a web page. Or you could use a motion sensor and set up an alert to catch your\
+    \ cat jumping up on your counter at night.\n\nNow it's up to you to dream up and\
+    \ build your own JavaScript/Node/Pi projects!\n\nCPSIA information can be obtained\
+    \ at www.ICGtesting.com Printed in the USA BVHW01s2059080418 512785BV00009B/208/P\n\
+    \nTechnology/Electronics\n\nNAPERVILLE PUBLIC LIBRARY\n\n3 1 3 1 8 0 4 4 8 8 3\
+    \ 5 3 5\n\n# Get up and running quickly with the Jumpstarting series!\n\nJumpstarting\
+    \ books provide an avenue for makers to quickly master topical knowledge.\n\n\
+    Each book starts with instructions on how to install or initialize the hardware\
+    \ or software needed to reach the all-important “Hello, World” stage of getting\
+    \ started.\n\nThe second project builds on the first to use more of the hardware\
+    \ or software’s capabilities.\n\nLater projects expand the user’s knowledge into\
+    \ lesser-known aspects of the topic. All Jumpstarting projects are for Makers—they\
+    \ provide hands-on, real-world experience in making the hardware or software do\
+    \ what you want it to do.\n\nLYNN BEIGHLY is a fiction writer stuck in a tech\
+    \ book writer’s body. Upon discovering that tech writing could be creative, she\
+    \ grew to love it. She wrote her first web dev bestseller, she moved to Silicon\
+    \ Valley. She spent several years working at Yahoo! and writing more and more\
+    \ books. Every year she moved to New York to get an MFA in writing. Lynn likes\
+    \ traveling, photography, and making up stories about strangers. Lately she’s\
+    \ been having a blast exploring the IOT\n\nP9-BD-390\n\nUS $12.99  CAN $17.99\n\
+    ISBN: 978-1-680-45-497-0\n\n51299\n\n9 781680 454970\n\nMake:\nmakezine.com"
+  mdcn: "\n# 让你的机器人被提及时闪烁 LED\n\n最后一步是在机器人程序的正确位置，加入你在 helloBlink.js 程序中使用的代码。你可以直接复制并粘贴到这行代码之后：\n\
+    \n```\nconsole.log('Tweeted: ' + params.status);\n```\n\n我们在本章末尾添加到你的机器人代码中的完整代码块如下：\n\
+    \n```\n//当有人提到我，@doggothebotto 时做出响应\nvar stream = Twitter.stream('statuses/filter',\n\
+    { track: ['@doggothebotto'] });\n//查找我的 @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // 获取提到我的用户的推特账号\n  var name = tweet.user.screen_name;\n\
+    \  // 现在向发送者发送回复\n  var reply='You mentioned me! @' + name + ' ' + 'Bork bork!';\n\
+    \  var params = {\n    status: reply, in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n  function(err, data,response) {\n    if (err !== undefined) {\n  \
+    \    //如果回复推文失败，报告错误\n      console.log(err);\n    } else {\n      //报告成功\n  \
+    \    console.log('Tweeted: ' + params.status);\n    }\n  });\n}\nvar Gpio = require('onoff').Gpio,\n\
+    \  led = new Gpio(4, 'out');\nvar iv = setInterval(function () {\n  led.writeSync(led.readSync()\
+    \ === 0 ? 1 : 0)\n}, 500);\n// 每半秒切换一次 LED 的状态\nsetTimeout(function () {\n  clearInterval(iv);\n\
+    \  led.writeSync(0);\n  // 关闭 LED\n  led.unexport();\n}, 2000);\n// 2秒后停止闪烁\n\
+    }\n})\n};\n```\n\n你现在有了一个机器人，它不仅会在有人发推特@它时做出响应，还会通过闪烁 LED 来让你知道！使用类似的技术，你可以监控\
+    \ Twitter 上更实用的搜索词——例如，海啸和地震。\n\n> 在后台运行 Node 应用程序\n\n如果你在树莓派上运行像 Twitter 机器人这样的程序，你可能希望让它在后台运行。你可以使用\
+    \ `forever` 命令来实现这一点。\n\n使用 npm 安装 `forever`：\n`pi@raspberrypi:~ $ npm install\
+    \ forever --global`\n\n现在你可以这样运行它：\n`pi@raspberrypi:~ $ forever start yourProgram.js`\n\
+    \n你的程序现在将作为进程运行。要停止它，使用这个命令：\n`pi@raspberrypi:~ $ forever stop yourProgram.js`\n\
+    \n# NODE、PI 与物联网\n\n你现在通过 Node 和树莓派，已经快速入门了 JavaScript。你可以控制现实世界中的设备并与互联网互动。闪烁\
+    \ LED 只是你用树莓派直接控制的东西中的一小部分。既然你能做到这一点，你就可以连接并控制其他更有趣的电子设备。\n\n例如，你可以连接一个温度传感器，并定期将环境读数发布到网页上。或者你可以使用运动传感器，并设置一个警报来捕捉你的猫在晚上跳上柜台。\n\
+    \n现在轮到你来构思并构建自己的 JavaScript/Node/Pi 项目了！\n\nCPSIA 信息可在 www.ICGtesting.com 获取 美国印刷\
+    \ BVHW01s2059080418 512785BV00009B/208/P\n\n技术/电子\n\n内珀维尔公共图书馆\n\n3 1 3 1 8 0\
+    \ 4 4 8 8 3 5 3 5\n\n# 通过 Jumpstarting 系列快速上手！\n\nJumpstarting 系列为创客提供了一条快速掌握主题知识的途径。\n\
+    \n每本书都从如何安装或初始化达到至关重要的“Hello, World”入门阶段所需的硬件或软件开始。\n\n第二个项目建立在第一个项目的基础上，使用更多硬件或软件的功能。\n\
+    \n后续项目将用户的知识扩展到主题中较少涉及的方面。所有 Jumpstarting 项目都面向创客——它们提供动手实践的真实世界经验，让你掌控硬件或软件按照你的意愿工作。\n\
+    \nLYNN BEIGHLY 是一位被困在技术书籍作家身体里的虚构作家。当发现技术写作也可以富有创意时，她逐渐爱上了它。她撰写了她的第一本网络开发畅销书，并移居硅谷。她在那里工作了几年，同时撰写了越来越多的书籍。每年她都会搬到纽约去攻读写作硕士学位。Lynn\
+    \ 喜欢旅行、摄影，以及为陌生人编故事。最近，她一直在愉快地探索物联网。\n\nP9-BD-390\n\n美国定价 12.99 美元 加拿大定价 17.99\
+    \ 美元\nISBN: 978-1-680-45-497-0\n\n51299\n\n9 781680 454970\n\nMake:\nmakezine.com\n"
+  merge: 0
+  raw:
+  - "[PAGE 46]\n\n# MAKE YOUR BOT BLINK THE LED WHEN MENTIONED\n\nThe last step is\
+    \ to add in the code you used in the helloBlink.js program at the correct point\
+    \ in your bot program. You can copy and paste it immediately after this line:\n\
+    \n```\nconsole.log('Tweeted: ' + params.status);\n```\n\nThe complete block of\
+    \ code we added to the end of your bot code in this chapter is\n\n```\n//Respond\
+    \ when someone mentions me, @doggothebotto\nvar stream = Twitter.stream('statuses/filter',\n\
+    { track: ['@doggothebotto'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply='You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params =\
+    \ {\n    status: reply, in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n  function(err, data,response) {\n    if (err !== undefined) {\n  \
+    \    //Report error if response tweet fails\n      console.log(err);\n    } else\
+    \ {\n      //Report success\n      console.log('Tweeted: ' + params.status);\n\
+    \    }\n  });\n}\nvar Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\n\
+    var iv = setInterval(function () {\n  led.writeSync(led.readSync() === 0 ? 1 :\
+    \ 0)\n}, 500);\n// Toggle state of the LED every half second\nsetTimeout(function\
+    \ () {\n  clearInterval(iv);\n  led.writeSync(0);\n  // Turn LED off\n```"
+  - '[PAGE 47]
+
+
+    ```
+
+    led.unexport();
+
+    }, 2000);
+
+    // End blinking after 2 seconds
+
+    }
+
+    })
+
+    };
+
+    ```
+
+
+    You''ve now got a bot that not only responds when someone tweets at it, but also
+    blinks an LED to let you know! Using similar techniques, you could monitor Twitter
+    for more practical search terms—for example, the words tsunami and earthquake.
+
+
+    > Run Node Applications in the Background
+
+
+    If you''re running something like a Twitter bot on your Pi, you''ll probably want
+    to let it run in the background. You can use the command `forever` to do this.
+
+
+    Use npm to install `forever`:
+
+    `pi@raspberrypi:~ $ npm install forever --global`
+
+
+    Now you can run it like this:
+
+    `pi@raspberrypi:~ $ forever start yourProgram.js`
+
+
+    Your program will now run as a process. To stop it, use this:
+
+    `pi@raspberrypi:~ $ forever stop yourProgram.js`
+
+
+    # NODE, PI, AND THE INTERNET OF THINGS
+
+
+    You''ve now had a jumpstart into JavaScript with Node and Raspberry Pi. You can
+    control real-world devices and interact with the Internet. Blinking an LED is
+    just a small taste of what you can'
+  - '[PAGE 48]
+
+
+    directly control with your Raspberry Pi. Now that you can do that, you can connect
+    and control other, more interesting electronic devices.
+
+
+    For example, you could attach a temperature sensor and periodically post environmental
+    readings to a web page. Or you could use a motion sensor and set up an alert to
+    catch your cat jumping up on your counter at night.
+
+
+    Now it''s up to you to dream up and build your own JavaScript/Node/Pi projects!'
+  - '[PAGE 49]
+
+
+    CPSIA information can be obtained at www.ICGtesting.com Printed in the USA BVHW01s2059080418
+    512785BV00009B/208/P
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_49_0.png)'
+  - '[PAGE 50]
+
+
+    <!-- no content -->'
+  - '[PAGE 51]
+
+
+    Technology/Electronics
+
+
+    NAPERVILLE PUBLIC LIBRARY
+
+
+    3 1 3 1 8 0 4 4 8 8 3 5 3 5
+
+
+    # Get up and running quickly with the Jumpstarting series!
+
+
+    Jumpstarting books provide an avenue for makers to quickly master topical knowledge.
+
+
+    Each book starts with instructions on how to install or initialize the hardware
+    or software needed to reach the all-important “Hello, World” stage of getting
+    started.
+
+
+    The second project builds on the first to use more of the hardware or software’s
+    capabilities.
+
+
+    Later projects expand the user’s knowledge into lesser-known aspects of the topic.
+    All Jumpstarting projects are for Makers—they provide hands-on, real-world experience
+    in making the hardware or software do what you want it to do.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_51_0.png)
+
+
+    LYNN BEIGHLY is a fiction writer stuck in a tech book writer’s body. Upon discovering
+    that tech writing could be creative, she grew to love it. She wrote her first
+    web dev bestseller, she moved to Silicon Valley. She spent several years working
+    at Yahoo! and writing more and more books. Every year she moved to New York to
+    get an MFA in writing. Lynn likes traveling, photography, and making up stories
+    about strangers. Lately she’s been having a blast exploring the IOT
+
+
+    P9-BD-390
+
+
+    US $12.99  CAN $17.99
+
+    ISBN: 978-1-680-45-497-0
+
+
+    51299
+
+
+    9 781680 454970
+
+
+    Make:
+
+    makezine.com'
+pages:
+- img_proc: true
+  md: '# # Make: Jumpstarting JavaScript
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_0_0.png)
+
+
+    Build a Twitter Bot and LED Alert System with Node.js and Raspberry Pi
+
+
+    LYNN BEIGHLEY'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Make:
+
+
+    # JUMPSTARTING JavaScript
+
+
+    BUILD A TWITTER BOT AND LED ALERT SYSTEM WITH NODE.JS AND RASPBERRY PI
+
+
+    Lynn Beighley
+
+
+    Maker Media, Inc.\nSan Francisco'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: 'Copyright © 2017 Lynn Beighley. All rights reserved.
+
+
+    Published by
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    Maker Media books may be purchased for educational, business, or sales promotional
+    use. Online editions are also available for most titles (safaribooksonline.com).
+    For more information, contact our corporate/institutional sales department: 800-998-9938
+    or corporate@oreilly.com.
+
+
+    Publisher: Roger Stewart
+
+    Editor: Patrick DiJusto
+
+    Copy Editor: Elizabeth Welch, Happenstance Type-O-Rama
+
+    Proofreader: Scout Festa, Happenstance Type-O-Rama
+
+    Interior Designer and Compositor: Maureen Forys, Happenstance Type-O-Rama
+
+    Cover Designer: Maureen Forys, Happenstance Type-O-Rama
+
+
+    December 2017: First Edition
+
+    Revision History for the First Edition
+
+    2017-12-13 First Release
+
+
+    See oreilly.com/catalog/errata.jsp?isbn=9781680454970 for release details.
+
+
+    Make:, Maker Shed, and Maker Faire are registered trademarks of Maker Media, Inc.
+    The Maker Media logo is a trademark of Maker Media, Inc. Jumpstarting JavaScript
+    and related trade dress are trademarks of Maker Media, Inc. Many of the designations
+    used by manufacturers and sellers to distinguish their products are claimed as
+    trademarks. Where those designations appear in this book, and Maker Media, Inc.
+    was aware of a trademark claim, the designations have been printed in caps or
+    initial caps. While the publisher and the author have used good faith efforts
+    to ensure that the information and instructions contained in this work are accurate,
+    the publisher and the author disclaim all responsibility for errors or omissions,
+    including without limitation responsibility for damages resulting from the use
+    of or reliance on this work. Use of the information and instructions contained
+    in this work is at your own risk. If any code samples or other technology this
+    work contains or describes is subject to open source licenses or the intellectual
+    property rights of others, it is your responsibility to ensure that your use thereof
+    complies with such licenses and/or rights.
+
+
+    978-1-68045-497-0'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# Safari® Books Online
+
+
+    Safari Books Online is an on-demand digital library that delivers expert content
+    in both book and video form from the world''s leading authors in technology and
+    business. Technology professionals, software developers, web designers, and business
+    and creative professionals use Safari Books Online as their primary resource for
+    research, problem solving, learning, and certification training. Safari Books
+    Online offers a range of plans and pricing for enterprise, government, education,
+    and individuals. Members have access to thousands of books, training videos, and
+    prepublication manuscripts in one fully searchable database from publishers like
+    O''Reilly Media, Prentice Hall Professional, Addison-Wesley Professional, Microsoft
+    Press, Sams, Que, Peachpit Press, Focal Press, Cisco Press, John Wiley & Sons,
+    Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe Press, FT Press, Apress,
+    Manning, New Riders, McGraw-Hill, Jones & Bartlett, Course Technology, and hundreds
+    more. For more information about Safari Books Online, please visit us online.
+
+
+    # How to Contact Us
+
+
+    Please address comments and questions to the publisher:
+
+
+    Maker Media, Inc.
+
+    1700 Montgomery Street, Suite 240
+
+    San Francisco, CA 94111
+
+
+    You can send comments and questions to us by email at books@makermedia.com.
+
+
+    Maker Media unites, inspires, informs, and entertains a growing community of resourceful
+    people who undertake amazing projects in their backyards, basements, and garages.
+    Maker Media celebrates your right to tweak, hack, and bend any Technology to your
+    will. The Maker Media audience continues to be a growing culture and community
+    that believes in bettering ourselves, our environment, our educational system—our
+    entire world. This is much more than an audience, it''s a worldwide movement that
+    Maker Media is leading. We call it the Maker Movement.
+
+
+    To learn more about Make: visit us at makezine.com. You can learn more about the
+    company at the following websites:
+
+
+    Maker Media: makermedia.com
+
+    Maker Faire: makerfaire.com
+
+    Maker Shed: makershed.com
+
+    Maker Share: makershare.com'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# # CONTENTS
+
+
+    +   * Preface vi
+
+
+    # ## 1 Meet JavaScript and Node.js! 1
+
+
+    +   * Install Node on Mac 2
+
+    * Install Node on Windows 5
+
+    * Install Node on Linux 7
+
+    * Node Is Installed; Now What? 9
+
+
+    # ## 2 Getting into JavaScript 13
+
+
+    +   * Strings, Math, and the REPL 13
+
+    * Functions 16
+
+    * Using JavaScript Files 17
+
+    * Make a Web Server 18
+
+
+    # ## 3 Creating a Node Twitter Bot on Raspberry Pi 21
+
+
+    +   * Create and Authorize Your Twitter Account 21
+
+    * Create a Configuration File 24
+
+    * Create the Twitter Bot 25
+
+
+    # ## 4 Flash an LED in Response to a Twitter Event 33
+
+
+    +   * Set Up the LED on Your Raspberry Pi 34
+
+    * Create the Blink Program 36
+
+    * Make Your Bot Detect Your Twitter Handle 37
+
+    * Make Your Bot Blink the LED When Mentioned 39
+
+    * Node, Pi, and the Internet of Things 40'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# PREFACE: WHAT IS NODE.JS?
+
+
+    JavaScript is a programming language that web browsers can run. Browsers like
+    Firefox and Chrome are built with engines that can understand and execute programs
+    written in the JavaScript language. Firefox has an engine called SpiderMonkey,
+    and Chrome''s engine is called V8.
+
+
+    Running JavaScript in a browser limits what you can do with it. For example, with
+    JavaScript in a browser, you are limited to interacting with web pages. You can
+    detect errors when people enter information in a form. You can open browser windows
+    and alert boxes. But you can''t control anything outside of a browser.
+
+
+    Fortunately, you have another option. When you install and use the JavaScript
+    extension Node.js, your JavaScript code can run independently of a web browser.
+    (You''ll often see Node.js simply called Node, and that''s what we''ll do for
+    the rest of this book.)
+
+
+    Node is the V8 JavaScript engine bundled together with libraries that handle input/output
+    and networking. This means that Node lets you use JavaScript outside of a browser
+    to run shell scripts, manage back-end services, and run directly on devices.
+
+
+    What You Bring to the Book
+
+
+    +   * Basic familiarity with programming concepts
+
+    * Ability to set up and connect a Raspberry Pi
+
+    * Ability to access and use a console
+
+    * Understanding of sudo, directories, and file creation/editing'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# Meet JavaScript and Node.js!
+
+
+    This chapter takes you through the steps to install Node on your Mac, Windows,
+    or Linux OS. Then you''ll check to see that it''s working.
+
+
+    > **NOTE** As you install Node, you may notice that something called *npm* is
+    also being installed. This program is the Node Package Manager.
+
+
+    Node is really popular, and it has a whole new ecosystem of useful Node-based
+    code packages other developers have created for you to use. When you want to use
+    one of these packages in Node, you need an easy way to install and manage them.
+    That''s what npm does for you—it installs additional Node packages you want to
+    use.
+
+
+    Follow the instructions for your system; then jump to the last section, "Node
+    Is Installed; Now What?"'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# # INSTALL NODE ON MAC
+
+
+    Although you could build Node from the source code, this guide is all about getting
+    you going quickly. The easy way is to visit the official Node website, Nodejs.org,
+    and use an automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *nodejs.org/en/download/* and click the Macintosh Installer
+    button to download the installer (Figure 1.1).
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_9_0.png)
+
+
+    **FIGURE 1.1:** Nodejs.org download page
+
+
+    **Step 2.** Find the file you downloaded and double-click it. You''ll see the
+    installation dialog (Figure 1.2). Click Continue to go through the installation.
+    Stick with the default settings.
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information (Figure 1.3).'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '![](img/a0848e8632a09becbaacc6826f2a8219_10_0.png)
+
+
+    FIGURE 1.2: Node installer
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_10_1.png)
+
+
+    FIGURE 1.3: Node installer summary
+
+
+    **Step 4.** You need to make sure that `/usr/local/bin` is in your PATH environment
+    variable. To do this, open the Terminal.app'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: 'program—you can find it under /Applications/Utilities. Start the Terminal program.
+    In the new terminal window, type
+
+
+    ```
+
+    echo $PATH
+
+    ```
+
+
+    This will return a list of directory paths, separated by colons. In my case, I
+    get this output:
+
+
+    ```
+
+    /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+    ```
+
+
+    You can see that /usr/local/bin is the first thing in my PATH. If you don’t see
+    it in yours, you’ll need to add it. If you do see it, skip step 5.
+
+
+    **Step 5.** Here’s how to add /usr/local/bin to your PATH. In your terminal, type
+
+
+    ```
+
+    touch ~/.bash_profile
+
+    ```
+
+
+    This creates the file if it doesn’t already exist. Now type
+
+
+    ```
+
+    open ~/.bash_profile
+
+    ```
+
+
+    This opens the .bash_profile file in TextEdit. In TextEdit, add the line
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin
+
+    ```
+
+
+    Save the .bash_profile file and quit TextEdit.
+
+
+    You’ll need the changes you made to take effect. To do this, type this command
+    in the terminal:
+
+
+    ```
+
+    source ~/.bash_profile
+
+    ```
+
+
+    **Step 6.** Let’s confirm that we have Node running. Type this command in your
+    terminal to see the versions you’ve installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    Jumpstarting JavaScript'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: 'You''ll see output like this, giving you the version of Node that you just
+    installed:
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    After confirming you have the Node program installed and working, you''re ready
+    to start writing JavaScript. Leave this terminal open and skip ahead to the section
+    "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON WINDOWS
+
+
+    You''ll start by visiting the official Node website, Nodejs.org, and getting the
+    automated installer. Here are the steps involved:
+
+
+    **Step 1.** Visit *https://nodejs.org/en/download/* and click the Windows Installer
+    button to download the installer (Figure 1.4). Pick the MSI file for either 32
+    bits or 64 bits, depending on your computer platform.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_12_0.png)
+
+
+    FIGURE 1.4: Nodejs.org download page'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: '**Step 2.** Find the file you downloaded and double-click it. You may get a
+    warning dialog asking for permission to install. Click OK.
+
+
+    The installation program opens (Figure 1.5). Click Continue to go through the
+    installation. Stick with the default settings.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_13_0.png)
+
+
+    FIGURE 1.5: Node Setup Wizard
+
+
+    **Step 3.** When the installation finishes, you''ll see a summary screen with
+    installation information. Let''s confirm that we have Node running. Click your
+    Start menu, and you should see two new menu items under Recently Added: Node.js
+    and Node.js Command Prompt (Figure 1.6).
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_13_1.png)
+
+
+    FIGURE 1.6: Windows Start menu'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '**Step 4.** Click Node.js Command Prompt to open the prompt. You''ll see a
+    terminal window open with this line:
+
+
+    ```
+
+    Your environment has been set up for using Node.js 6.11.3 (x64) and npm
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You now have
+    everything you need to start writing JavaScript. Leave this terminal open and
+    skip ahead to the section "Node Is Installed; Now What?"
+
+
+    # INSTALL NODE ON LINUX
+
+
+    The easiest way to get going with Linux is to install a prebuilt binary package
+    from the Nodejs.org website.
+
+
+    > NOTE If you''re an experienced Linux user, you may find it simplest to use the
+    package manager for your particular Linux distro. You can find a rundown of those
+    at nodejs.org/en/download/package-manager.
+
+
+    **Step 1.** Visit https://nodejs.org/en/download/. Download the 32- or 64-bit
+    file with a name like node-v6.11.3-linux-x64.tar.xz where v6.11.3 is the current
+    version (Figure 1.7). Be sure to save it in a directory you''ll remember. I''m
+    saving mine to my Downloads directory.'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# Opening node-v6.11.3-linux-x64.tar.xz
+
+
+    You have chosen to open:
+
+    node-v6.11.3-linux-x64.tar.xz
+
+    which is: XZ file (8.9 MB)
+
+    from: https://nodejs.org
+
+    What should Firefox do with this file?
+
+
+    +   - Open with Archive Utility (default)
+
+    - Save File
+
+    - Do this automatically for files like this from now on.
+
+
+    Cancel
+
+
+    OK
+
+
+    FIGURE 1.7: Linux download
+
+
+    # Step 2.
+
+
+    This archive contains everything you''ll need and is organized into subdirectories.
+    You can extract it where it needs to go by using these commands:
+
+
+    ```
+
+    ~$ cd ~/bin
+
+    ~$ tar xz ~/Downloads/node-v6.11.3-linux-x64.tar.xz
+
+    ```
+
+
+    > NOTE If ~/bin does not exist, you''ll need to create it first.
+
+
+    # Step 3.
+
+
+    Make sure you have your PATH set to find your Node installation. Edit your .bash_profile
+    file and include that line. You can do so with this command:
+
+
+    ```
+
+    ~$ PATH=$PATH:~/bin/node-v6.11.3-linux
+
+    ```'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: 'or by editing your .bash_profile and adding this line:
+
+
+    ```
+
+    PATH=${PATH}:/usr/local/bin/node-v6.11.3-linux
+
+    ```
+
+
+    **Step 4.** Use this command to check to see whether Node has been installed:
+
+
+    ```
+
+    node --version
+
+    ```
+
+
+    and you should get output with the version number
+
+
+    ```
+
+    v6.11.3
+
+    ```
+
+
+    Don''t worry if the version number is different from what you see here; new releases
+    come out frequently.
+
+
+    This confirms that you have the Node program installed and working. You have everything
+    you need to start writing JavaScript. Leave this terminal open and continue to
+    the next section.
+
+
+    # NODE IS INSTALLED; NOW WHAT?
+
+
+    At this point, you should have Node installed and a terminal or console window
+    open. (From here on, we''ll just call it the terminal.)
+
+
+    In the next chapter, you''ll write your first program, but let''s quickly try
+    out the Node REPL.
+
+
+    > **NOTE** The REPL is like a playground where you can try out JavaScript code.
+    It''s installed along with Node. REPL stands for Read Eval Print Loop. The REPL
+    gives you a quick and easy way to test your JavaScript code and fix any mistakes.'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: 'In your terminal, type **node** to start the Node REPL:
+
+
+    ```
+
+    $ node
+
+    ```
+
+
+    Notice that your cursor has changed to a greater than sign (>). You''re now interacting
+    with the REPL. Let''s output some text:
+
+
+    ```
+
+    > console.log(''Hello World!'');
+
+    Hello World!
+
+    undefined
+
+    ```
+
+
+    If you''re getting an error of some kind, check your punctuation. Make sure you''ve
+    got single quotes around the text and a semicolon at the very end of your code.
+
+
+    > **Did You Get Back *undefined*?**
+
+
+    Don''t worry if you did! You''re using a JavaScript function, which will always
+    return `undefined` if it doesn''t have a return value (you''ll learn more about
+    this later). For now, you can just ignore it. You haven''t made any mistakes.
+
+
+    Now try this very handy **.help** command:
+
+
+    ```
+
+    > .help
+
+    .break Sometimes you get stuck, this gets you out
+
+    .clear Alias for .break
+
+    .exit Exit the repl
+
+    .help Show repl options
+
+    .load Load JS from a file into the REPL session
+
+    .save Save all evaluated commands in this REPL session to a file
+
+    ```
+
+
+    > **NOTE** Commands starting with a period are talking to the REPL interface—they''re
+    not JavaScript code.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: 'And let''s close the REPL and get back to the regular command prompt, using
+    the .exit command:
+
+
+    ```
+
+    > .exit
+
+    ```
+
+
+    You''ve installed Node, and you know how to start up and quit the REPL. This means
+    that you''re ready to learn some JavaScript. Chapter 2 awaits.'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# # 2
+
+
+    # Getting into JavaScript
+
+
+    You played with the REPL at the end of the last chapter. Now you''ll begin learning
+    JavaScript by writing code both in the REPL and into saved JavaScript files.
+
+
+    # ## STRINGS, MATH, AND THE REPL
+
+
+    You''ve already used the REPL (also called the Node shell). If it isn''t open,
+    go ahead and launch it. In Windows, open a command prompt or click the Node.js
+    Command Prompt that you installed in your Start menu. On Mac or Linux, open a
+    terminal.
+
+
+    Type `node` to start the REPL. Remember, you''re in the shell when the prompt
+    changes to >.
+
+
+    The REPL is handy as you learn JavaScript. You can test pieces of your JavaScript
+    code before saving them to a file. When you make an error in the REPL, you''ll
+    get immediate feedback.'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "> **When You See...**\n\nTry entering this incomplete command:\n> console.log(\n\
+    \nInstead of an error message, you'll see this:\n...\n\nThis ellipsis means that\
+    \ the REPL is waiting for you to type more code to finish the command. If you\
+    \ get the ellipsis but you're not sure why, you can break out of it by typing\
+    \ the REPL command `.break`.\n\nLet's try making a deliberate mistake so you can\
+    \ see the feedback you get from the REPL.\n\nTry this broken line of code:\n\n\
+    ```\n> console.log(It's broken)\n```\n\nAlthough there are several things wrong\
+    \ with this code, you'll get only one message at a time. Here's the first error:\n\
+    \n```\nconsole.log(It's broken);\n          ^^^^^^^^^^^\nSyntaxError: Invalid\
+    \ or unexpected token\n```\n\nLet's fix the first problem. If you look at the\
+    \ carets under the text It's broken, you'll see they start right under the single\
+    \ quote. In JavaScript, anytime you use a string of text, you need to put it in\
+    \ quotes. Otherwise, the REPL thinks those words are code. So now try this:\n\n\
+    ```\n> console.log('It's broken');\n```\n\nArgh! You get a hanging ellipsis.\n\
+    \n```\nconsole.log('It's broken');\n...\n```"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: 'This time the REPL finds the beginning of the string, but it thinks the second
+    quote is closing your text. It''s looking for a parenthesis to end the command.
+
+    This is tricky. We want to use a quote in our string, but we need quotes around
+    our string. The simple way to fix it is to use double quotes around the whole
+    string so you can use the single quote in the string.
+
+    Both single and double quotes can be used around strings of text:
+
+
+    ```
+
+    > console.log("It''s broken");
+
+    It''s broken
+
+    undefined
+
+    ```
+
+
+    (Remember, you can ignore the `undefined`!)
+
+    You can put more than a single string of text in the parentheses of the `console.log`
+    function. Try these commands:
+
+
+    ```
+
+    > console.log(''Hello''+''world'');
+
+    ```
+
+
+    This command combines the two strings and outputs the single string `Helloworld`.
+    If you want a space between the two words, you can use any of these three arguments
+    in the parentheses; they''ll all work.
+
+
+    ```
+
+    ''Hello ''+''world''
+
+    ''Hello''+'' world''
+
+    ''Hello''+'' ''+''world''
+
+    ```
+
+
+    You won''t always be using strings, though—you''ll be using lots of numbers and
+    variables. Here''s a quick look at some of your options; try them out.
+
+
+    ```
+
+    > console.log(42);
+
+    > console.log(5 + 4);
+
+    > console.log(5 * 4);
+
+    ```
+
+
+    Numbers don''t use quotes; the REPL recognizes them. And you can do math operations
+    on them.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# FUNCTIONS
+
+
+    You''ve used your first built-in function, console.log. This simple function prints
+    out whatever string or other value you put in parentheses.
+
+
+    Now let''s write a function! A *function* is basically code that can be reused.
+    There''s more to it than that, but you''ll start with something simple. Try typing
+    in the following function. (Don''t type the ellipsis; it indicates that the REPL
+    is waiting for more code that you can enter on the next line. Press Enter/Return
+    and use multiple lines.)
+
+
+    ```
+
+    > function countPets(){
+
+    var dogs = 2; var cats = 1;
+
+    var total = dogs + cats; return (total);
+
+    ... }
+
+    ```
+
+
+    Here''s what is going on in this function:
+
+
+    ```
+
+    function countPets(){
+
+    ```
+
+
+    This line starts with the JavaScript keyword `function` so the REPL knows a function
+    is coming.
+
+
+    `countPets()` is the name of the function. Everything in the function goes inside
+    curly braces.
+
+
+    Next are two lines beginning with the JavaScript keyword `var`. It''s short for
+    variable, and the lines are saying that the variable `dogs` is equal to 2 and
+    the variable `cats` is equal to 1.
+
+
+    The next line says that the variable `total` contains the sum of `dogs` and `cats`.
+
+
+    The keyword `return` instructs the function to send back the value of `total`
+    after the function finishes.
+
+
+    To use the function, type this command:
+
+
+    ```
+
+    > countPets();
+
+    ```
+
+
+    You''ll get back the sum of `dogs` and `cats`: 3.'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: 'Let''s make the function a little more reusable. Take a look at this code and
+    see if you can guess what''s going on.
+
+
+    ```
+
+    > function countPets(dogs, cats){
+
+    ... var total = dogs + cats;
+
+    ... return (total);
+
+    ... }
+
+    ```
+
+
+    Now try it!
+
+
+    ```
+
+    > countPets(5, 3);
+
+    ```
+
+
+    In this function, you''re passing in values that the function can use. Being able
+    to add different values to the same code is part of what makes functions so useful!
+
+
+    You''ve now had a taste of JavaScript code. Unfortunately, as soon as you end
+    this REPL session, your functions will not be saved. It''s time to move out of
+    the REPL and put your code into .js files so you can start simple and build on
+    them.
+
+
+    # USING JAVASCRIPT FILES
+
+
+    The REPL is great for testing, but you need to be able to save and reuse your
+    code. You''ll need a text editor so you can write and edit your JavaScript code
+    and save it into a file.
+
+
+    Start by creating a text file called **fromfile.js**. Put this code in your file
+    and save it to a location you''ll remember:
+
+
+    ```
+
+    console.log(''These words are from my .js file!'');
+
+    ```
+
+
+    In your terminal, navigate to the same directory where your **fromfile.js** was
+    saved and type this command on your command line (not in the REPL!):
+
+
+    ```
+
+    $ node fromfile.js
+
+    ```
+
+
+    Node will execute the code in your file and you''ll see the output on your screen.'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: "# MAKE A WEB SERVER\n\nNow that you can save .js files, you can start exploring\
+    \ the real power of Node. Without Node, you can write JavaScript code that would\
+    \ run only on an existing web server. But Node frees you from those browsers and\
+    \ lets you create your own web server!\n\nIt's easy to create a little web server\
+    \ with Node. Begin by creating a file called **easyserver.js** and save this code\
+    \ in it:\n\n```\nvar http = require('http');\nvar server = http.createServer(function(req,\
+    \ res) {\n    res.writeHead('I created this server!');\n    res.end();\n});\n\
+    server.listen(8080);\n```\n\nNow try running your server. I'll explain this code\
+    \ after you try it. In your terminal, visit the command line in the directory\
+    \ where you saved the file. Type\n\n```\n$ node easyserver.js\n```\n\nThe terminal\
+    \ will seem to hang, but that's fine—it means your server is running!\n\nOpen\
+    \ a browser and visit the URL `localhost:8080`. You should see the line `I created\
+    \ this server!` (Figure 2.1).\n\n![](img/a0848e8632a09becbaacc6826f2a8219_25_0.png)\n\
+    \n**FIGURE 2.1:** A web page with output from your web server\n\nAfter you visit\
+    \ the web page, press Ctrl-C in your terminal to end the program."
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "Let's take a closer look at what's going on in this code. I don't expect you\
+    \ to understand it right now. I've added comments to the original code. Just try\
+    \ to get the gist of it!\n\n```\nvar http = require('http');\nvar server = http.createServer(function(req,\
+    \ res) {\n  //send response to client\n  res.writeHead('I created this server!');\n\
+    \  // finish the response\n  res.end();\n});\n//the web server is listening on\
+    \ port 8080\nserver.listen(8080);\n```\n\nNode is doing most of the work for you\
+    \ with built-in code. The very first line is calling the http module, which, behind\
+    \ the scenes, has the code to turn your running program into a web server. The\
+    \ require keyword is giving the new variable http access to a whole lot of saved\
+    \ Node code and functions that can create a web server.\nIn the second line, the\
+    \ code is calling a function called createServer. Whenever anyone connects to\
+    \ your web server, the code in that function will be executed.\nThe last line\
+    \ tells the server you created to start listening for incoming requests on a particular\
+    \ port (in this case, 8080).\n\n# Comments in Your Code\n\nThe double slashes\
+    \ you saw in the last code example let you add comments to your code. Node ignores\
+    \ any words following the //. Comments are great for helping you remember what\
+    \ you did in your code.\n\nIn the next chapter, you'll begin using JavaScript\
+    \ to build a Twitter bot!"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# 3
+
+
+    # Creating a Node Twitter Bot on Raspberry Pi
+
+
+    You''ve written your first JavaScript program. Next, you''ll learn how to create
+    a Twitter bot with Node that can run on any machine that has Node installed, including
+    your Raspberry Pi.
+
+    By now, you should already have Node installed on your system. This chapter will
+    take you through the steps you need to set up and authorize a Twitter account,
+    connect that account to a JavaScript program, and use the twit npm module in your
+    program to do most of the work.
+
+
+    # CREATE AND AUTHORIZE YOUR TWITTER ACCOUNT
+
+
+    If you don''t have a Twitter account for your bot, create one at Twitter.com.'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# Do You Use Gmail?
+
+
+    Twitter accounts are based off unique email addresses. If you don''t have a spare
+    email address but you use Gmail, you can save the hassle of creating a new email
+    address with a handy trick. Gmail lets you add a plus sign and a few letters to
+    your address.
+
+
+    For example, if your Gmail address is jane-doe@gmail.com, you can create other
+    email addresses like janedoe+twitterbot@gmail.com or janedoe+catbot@gmail.com.
+
+
+    Twitter will think this is a new address, but Gmail will place everything sent
+    to that address into your existing inbox.
+
+
+    One interesting side effect: It''s relatively easy to set up a Gmail filter to
+    label all messages sent to that address as "Twitterbot Email" or something similar.
+    That way, you can see at a glance which emails have been sent to your bot.
+
+
+    **Step 1.** Log into the Twitter account you''ll be using for your bot.
+
+
+    **Step 2.** Visit apps.twitter.com and click the Create New App button.
+
+
+    **Step 3.** You''ll be presented with a form to fill out (Figure 3.1). Complete
+    all the fields. You can enter any website you wish, and make sure you type a URL
+    in the callback field. Don''t worry too much about what you enter in the fields
+    now; you can change the contents at any time.
+
+
+    **Step 4.** Click the Developer Agreement check box and click Create Your Twitter
+    Application.
+
+
+    **Step 5.** You''ll now see a summary page. Click the Keys And Access Tokens tab
+    (Figure 3.2). The keys on this page connect'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: 'your Twitter app to the Node bot program you''ll create later in this chapter.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_30_0.png)
+
+
+    FIGURE 3.1: Creating a new Twitter app form
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_30_1.png)
+
+
+    FIGURE 3.2: Keys And Access Tokens page'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: 'Step 6. Scroll to the bottom of this page and click the Create My Access Token
+    button. This page now displays an access token and access token secret (Figure
+    3.3). Leave this page open. Next up, you''ll create a file in your terminal and
+    copy and paste info from this page into it.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_31_0.png)
+
+
+    FIGURE 3.3: Keys for your Twitter application
+
+
+    In the next section, you''ll set up a directory, initialize it, and create a configuration
+    file with the keys and tokens on this page.
+
+
+    # CREATE A CONFIGURATION FILE
+
+
+    Open your terminal on the device where you installed Node.
+
+    Create a new directory where you can keep all your new Twitter bot files. I''ll
+    call mine newtwitbot. Navigate to your new directory:
+
+
+    ```
+
+    pi@raspberrypi:~ $ mkdir newtwitbot
+
+    pi@raspberrypi:~ $ cd newtwitbot
+
+    pi@raspberrypi:~/newtwitbot $
+
+    ```'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "Our Twitter bot will use two files: config.js and index.js. Create them now\
+    \ with the touch command:\n\n```\npi@raspberrypi:~/newtwitbot $ touch config.js\
+    \ index.js\npi@raspberrypi:~/newtwitbot $ ls\nconfig.js index.js\n```\n\nWe need\
+    \ to edit the config.js file with the Twitter keys for your app. Using the editor\
+    \ of your choice (I use nano), edit your config.js file as shown here. Substitute\
+    \ your keys in place of the xxxxx values:\n\n```\n//config.js\n/* TWITTER APP\
+    \ CONFIGURATION\n    consumer_key\n    consumer_secret\n    access_token\n   \
+    \ access_token_secret\n*/\nmodule.exports = {\n    consumer_key: 'xxxxx',\n  \
+    \  consumer_secret: 'xxxxx',\n    access_token: 'xxxxx',\n    access_token_secret:\
+    \ 'xxxxx'\n}\n```\n\nNow, the Twitter bot's configuration is complete. These four\
+    \ values will be unique for each Twitter application you create.\n\n# CREATE THE\
+    \ TWITTER BOT\n\nDo you remember the npm application you installed along with\
+    \ Node? This handy application lets you reuse code other people have previously\
+    \ written.\n\nThere's already a Twitter code library called twit. We can import\
+    \ this library with npm and then use functions to make communication with Twitter\
+    \ much easier.\n\nTo install this library, use this command:\n\n```\npi@raspberrypi:~/newtwitbot\
+    \ $ npm install --save twit\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: 'You''ll see this output:
+
+
+    ```
+
+    npm notice created a lockfile as package-lock.json. You should commit this file.
+
+    npm WARN newtwitbot@0.0.0 No description
+
+    npm WARN newtwitbot@0.0.0 No repository field.
+
+    + twit@2.2.9
+
+    added 55 packages, removed 55 packages and updated 1 package in 15.243s
+
+    ```
+
+
+    After the twit package has finished installing, open the index.js file. We''ll
+    start adding lines. (Don''t worry about the WARN lines! If we were building code
+    to then store for other people to use, we would want to add a description. In
+    this case, we aren''t.)
+
+
+    > **Building the index.js File**
+
+
+    If you get lost, don''t worry. The complete contents of the index.js file are
+    listed at the end of this chapter.
+
+
+    Open index.js in an editor and add these lines. They tell our bot to use the twit
+    code and let the code access the Twitter application keys in the config.js file.
+
+
+    ```
+
+    // Dependencies
+
+    var twit = require(''twit''), config = require(''./config'');
+
+    ```
+
+
+    Now under those lines, add the following:
+
+
+    ```
+
+    var Twitter = new twit(config);
+
+    ```
+
+
+    This line creates a variable called Twitter, a special object that has access
+    to all the code in the twit library, as well as the keys we set up in the config.js
+    file so that it can actually communicate with Twitter. (This is confusing, but
+    think of this Twitter variable as a superhero. It''s more than just a single value;
+    it can access lots of custom functions built to do things with Twitter like post,
+    retweet, and favorite. This will be clearer by the end of the chapter.)'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "Next we'll get to the heart of our bot. We'll start by making it find tweets\
+    \ that contain the text strings doggo or pupper. Then it will use the console.log\
+    \ function you've already seen and post any found tweets to your terminal.\n\n\
+    Add this function, called retweet, to your index.js file:\n\n```\nvar retweet\
+    \ = function() {\n  var params = {\n    q: 'doggo OR pupper',\n    result_type:\
+    \ 'recent'\n  }\n  Twitter.get('search/tweets', params, function(err, data) {\n\
+    \    // if there no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n\
+    \      var retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n\
+    \      Twitter.post('statuses/retweet/:id',\n      {\n        id: retweetId\n\
+    \      },\n      function(err, response) {\n        if (response) {\n        \
+    \  console.log('Retweeted!!!');\n        }\n        // if there was an error while\
+    \ tweeting\n        if (err) {\n          console.log('Error tweeting');\n   \
+    \     }\n      });\n    }\n    // if unable to Search a tweet\n    else {\n  \
+    \    console.log('Error searching');\n    }\n  });\n}\n```\n\nThere's a lot going\
+    \ on here. This entire block of code is a single function. We'll take a closer\
+    \ look in a minute, but let's get it working and try it first."
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: 'If you tried to run this code right now, it wouldn''t actually do anything.
+    You''ve written a function, but you haven''t added any code that will call it.
+    Let''s do that now. At the end of this code, add these lines:
+
+
+    ```
+
+    retweet();
+
+    // retweet every 3 minutes
+
+    setInterval(retweet, 180000);
+
+    ```
+
+
+    Now we''re calling our function every 180,000 milliseconds, or every 3 minutes.
+    Change this to whatever interval you wish.
+
+
+    > **WARNING** If you run your bot too frequently, Twitter will see that you''re
+    using up too many resources and will "rate-limit" you. Once every 3 minutes is
+    plenty.
+
+
+    It''s time to try the program. Open your bot''s Twitter feed in a web browser.
+    Now in your terminal, run your program by using this command:
+
+
+    ```
+
+    pi@raspberrypi:~/newtwitbot $ node index.js
+
+    ```
+
+
+    You''ll see lots of output! All the info about each tweet that matches your search
+    string is displayed on your terminal. It is also retweeted to your bot''s Twitter
+    account.
+
+
+    # Customize Your Own Search
+
+
+    It''s not likely that you''ll want to keep searching for and retweeting doggo
+    and pupper tweets! You can change the query string (the text in quotes after q:)
+    to look for any terms you wish, including hashtags. Separate multiple terms with
+    commas. The argument result_type: ''recent'' tells the code to search for the
+    latest tweets since our bot last retweeted. You can find more parameters for this
+    query string by checking out the Twitter API reference at dev.twitter.com/rest/reference/get/search/tweets.'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "Your program will keep running and retweeting every 3 minutes until you stop\
+    \ it by pressing Ctrl-C.\nLet's take a closer look. Consider this code:\n\n```\n\
+    var params = {\n    q: 'watermelon, papaya, mango', result_type: 'recent'\n}\n\
+    ```\n\nThis code sets up the parameters of the data we'll be searching for.\n\
+    Here's the code that uses those parameters, starting with the Twitter.get function.\
+    \ This function comes from the twit API, and it takes three objects:\n\n+   *\
+    \ The action we want it to take—in this case we want it to search, so we use search/tweets.\n\
+    * The params object (our query string and any other params).\n* A callback function\
+    \ that calls another twit API function, Twitter.post. This function does the actual\
+    \ posting or reports errors.\n\n```\nTwitter.get('search/tweets', params, function(err,\
+    \ data) {\n    // if there no errors\n    if (!err) {\n        // grab ID of matching\
+    \ tweet\n        var retweetId = data.statuses[0].id_str;\n        // found something\
+    \ to retweet\n        Twitter.post('statuses/retweet/:id',\n        {id: retweetId},\n\
+    \            function(err, response) {\n                if (response) {\n    \
+    \                console.log('Retweeted this tweet');\n                    console.log(data);\n\
+    \                    retweeting.');\n                }\n            }\n      \
+    \  // error while retweeting\n        if (err) {\n            console.log('Error\
+    \ tweeting';});\n        }\n    // if unable to search through tweets\n    else\
+    \ {\n```"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "```\nconsole.log('Error searching.');\n}\n});\n}\n```\n\nThe last bit of code\
+    \ we added uses a JavaScript timer function, setInterval(). This timer function\
+    \ calls the retweet function periodically.\n\n```\nretweet();\n// retweet every\
+    \ 3 minutes\nsetInterval(retweet, 180000);\n```\n\nWe've covered quite a bit of\
+    \ ground in this chapter. Here's the entire index.js code so far:\n\n```\n// Complete\
+    \ index.js code from Chapter 3\n// Dependencies\nvar retweet = function() {\n\
+    \  var params = {\n    q: 'doggo OR pupper',\n    result_type: 'recent'\n  }\n\
+    \  Twitter.get('search/tweets', params, function(err, data) {\n    // if there\
+    \ no errors\n    if (!err) {\n      // grab ID of tweet to retweet\n      var\
+    \ retweetId = data.statuses[0].id_str;\n      // Tell Twitter to retweet\n   \
+    \   Twitter.post('statuses/retweet/:id',\n        {\n          id: retweetId\n\
+    \        },\n        function(err, response) {\n          if (response) {\n  \
+    \          console.log('Retweeted!!!');\n          }\n          // if there was\
+    \ an error while tweeting\n          if (err) {\n            console.log('Error\
+    \ tweeting');\n          }\n        }\n      );\n    }\n  });\n}\n```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "```\n// if unable to Search a tweet\nelse {\n    console.log('Error searching');\n\
+    }\n}\n);\n}\nretweet();\n// retweet every 3 minutes\nsetInterval(retweet, 180000);\n\
+    ```\n\nIn the next chapter, we'll expand on the bot's functionality and use the\
+    \ Raspberry Pi to make an LED light up when our bot's Twitter handle is mentioned!"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: '# # Flash an LED in Response to a Twitter Event
+
+
+    You''ve created your Twitter bot with Node. If you''ve set it up on your Raspberry
+    Pi, you can hook up an LED and make it flash when an event happens on Twitter.
+    In this chapter, you''ll wire up an LED on a breadboard hooked in to your Pi.
+    Next, you''ll write a short program that will make the LED blink twice. Finally,
+    you''ll add this code to your Twitter bot program so that each time your bot''s
+    Twitter handle is mentioned, the LED will alert you by blinking (Figure 4.1).'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '![](img/a0848e8632a09becbaacc6826f2a8219_41_0.png)
+
+
+    FIGURE 4.1: Blinking LED
+
+
+    # SET UP THE LED ON YOUR RASPBERRY PI
+
+
+    The setup, shown in Figure 4.2, is fairly simple. Here''s what you''ll need:
+
+
+    +   - Raspberry Pi with 5V power supply
+
+    - Breadboard
+
+    - 2 male-to-female jumper cables (the example uses black and green)
+
+    - An LED
+
+
+    **Step 1.** Locate the GPIO pins on your Pi (Figure 4.3).'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '![](img/a0848e8632a09becbaacc6826f2a8219_42_0.png)
+
+
+    FIGURE 4.2: Complete LED setup on Raspberry Pi
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_42_1.png)
+
+
+    FIGURE 4.3: Close-up of GPIO pins'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '> ## What Do You Mean by GPIO?
+
+    See those 26 pins along one edge of your Pi? Seventeen of these pins are called
+    GPIO, short for General Purpose Input/Output. You can attach external hardware
+    to these pins. The other pins are power or ground pins.
+
+
+    +   - **Step 2.** Connect the female end of the green jumper cable to pin 4 of
+    the GPIO on the Pi, as shown in both Figures 4.1 and 4.2.
+
+    - **Step 3.** Connect the female end of the black jumper cable to pin 3 of the
+    GPIO.
+
+    - **Step 4.** Take a look at your LED. One leg is longer than the other. The longer
+    leg is the plus side, and the shorter leg is the minus terminal. This is important
+    to keep track of.
+
+    - **Step 5.** Insert your LED into the breadboard as shown in Figure 4.2. Make
+    sure the plus side of the LED is on the right.
+
+    - **Step 6.** Connect the male end of the black cable to the breadboard adjacent
+    to the minus terminal of the LED. If any of this is confusing, just take a close
+    look at Figure 4.2.
+
+    - **Step 7.** Connect the male end of the green cable to the breadboard adjacent
+    to the plus terminal of the LED.
+
+
+    Your Pi will now be able to blink the LED in response to the code you''re about
+    to write!
+
+
+    # ## CREATE THE BLINK PROGRAM
+
+
+    Open your terminal and connect to your Pi. Navigate to the directory where you
+    created your Twitter bot files.
+
+
+    ```
+
+    pi@raspberrypi:~ $ cd newtwitbot
+
+    pi@raspberrypi:~/newtwitbot $
+
+    ```'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "Remember using npm to install the Twitter code library called twit? We're going\
+    \ to use npm again, this time to import another library called onoff that lets\
+    \ us control the LED.\n\nTo install this library, use this command:\n\n```\npi@raspberrypi:~/newtwitbot\
+    \ $ npm install --save onoff\n```\n\nAfter onoff has finished installing, create\
+    \ and open a new file, helloBlink.js.\n\n```\npi@raspberrypi:~/newtwitbot $ nano\
+    \ helloBlink.js\n```\n\nThis opens the editor with a new blank file. Here's the\
+    \ code to enter:\n\n```\n//helloBlink.js\nvar Gpio = require('onoff').Gpio,\n\
+    \  led = new Gpio(4, 'out');\nvar iv = setInterval(function () {\n  led.writeSync(led.readSync()\
+    \ === 0 ? 1 : 0)\n}, 500);\n// Toggle state of the LED every half second\nsetTimeout(function\
+    \ () {\n  clearInterval(iv);\n  led.writeSync(0);\n  // Turn LED off\n  led.unexport();\n\
+    }, 2000);\n// End blinking after 2 seconds\n```\n\nSave this file.\n\nNow give\
+    \ it a try with the node command:\n\n```\npi@raspberrypi:~/newtwitbot $ node helloBlink.js\n\
+    ```\n\n# MAKE YOUR BOT DETECT YOUR TWITTER HANDLE\n\nBefore your bot can blink\
+    \ in response to your Twitter handle being tweeted, it needs to be able to detect\
+    \ when that happens."
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "In this section, we'll add some code that will tweet a greeting back to anyone\
+    \ who tweets your handle.\n\nIn the last chapter, you created a Twitter bot in\
+    \ a program called index.js. Open index.js (or whatever you named your file) in\
+    \ an editor. We'll add this new code to the end of the current file. Make sure\
+    \ you change @doggobot to whatever you named your bot!\n\n```\n//Respond when\
+    \ someone mentions me, @doggobot\nvar stream = Twitter.stream('statuses/filter',\n\
+    \  { track: ['@doggobot'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply = 'You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params\
+    \ = {\n    status: reply,\n    in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n    function(err, data, response) {\n      if (err !== undefined) {\n\
+    \        //Report error if response tweet fails\n        console.log(err);\n \
+    \     } else {\n        //Report success\n        console.log('Tweeted: ' + params.status);\n\
+    \      }\n    })\n};\n```\n\nBasically, this code listens for your bot's Twitter\
+    \ handle. When it detects your handle, it grabs the handle of the sender. Then\
+    \ it creates a reply that includes the sender's handle, and tweets it. In our\
+    \ example, if someone—let's call her @lynnbeighley—were to tweet anything containing\
+    \ my bot's name, @doggobot, the bot will respond with You mentioned me! @lynnbeighley\
+    \ Bork bork!."
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: "# MAKE YOUR BOT BLINK THE LED WHEN MENTIONED\n\nThe last step is to add in\
+    \ the code you used in the helloBlink.js program at the correct point in your\
+    \ bot program. You can copy and paste it immediately after this line:\n\n```\n\
+    console.log('Tweeted: ' + params.status);\n```\n\nThe complete block of code we\
+    \ added to the end of your bot code in this chapter is\n\n```\n//Respond when\
+    \ someone mentions me, @doggothebotto\nvar stream = Twitter.stream('statuses/filter',\n\
+    { track: ['@doggothebotto'] });\n//Look for my @name\nstream.on('tweet', tweetEvent);\n\
+    function tweetEvent(tweet) {\n  // Get Twitter handle of who tweeted me\n  var\
+    \ name = tweet.user.screen_name;\n  // Now send a reply back to the sender\n \
+    \ var reply='You mentioned me! @' + name + ' ' + 'Bork bork!';\n  var params =\
+    \ {\n    status: reply, in_reply_to_status_id: nameID\n  };\n  Twitter.post('statuses/update',\
+    \ params,\n  function(err, data,response) {\n    if (err !== undefined) {\n  \
+    \    //Report error if response tweet fails\n      console.log(err);\n    } else\
+    \ {\n      //Report success\n      console.log('Tweeted: ' + params.status);\n\
+    \    }\n  });\n}\nvar Gpio = require('onoff').Gpio,\n  led = new Gpio(4, 'out');\n\
+    var iv = setInterval(function () {\n  led.writeSync(led.readSync() === 0 ? 1 :\
+    \ 0)\n}, 500);\n// Toggle state of the LED every half second\nsetTimeout(function\
+    \ () {\n  clearInterval(iv);\n  led.writeSync(0);\n  // Turn LED off\n```"
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: '```
+
+    led.unexport();
+
+    }, 2000);
+
+    // End blinking after 2 seconds
+
+    }
+
+    })
+
+    };
+
+    ```
+
+
+    You''ve now got a bot that not only responds when someone tweets at it, but also
+    blinks an LED to let you know! Using similar techniques, you could monitor Twitter
+    for more practical search terms—for example, the words tsunami and earthquake.
+
+
+    > Run Node Applications in the Background
+
+
+    If you''re running something like a Twitter bot on your Pi, you''ll probably want
+    to let it run in the background. You can use the command `forever` to do this.
+
+
+    Use npm to install `forever`:
+
+    `pi@raspberrypi:~ $ npm install forever --global`
+
+
+    Now you can run it like this:
+
+    `pi@raspberrypi:~ $ forever start yourProgram.js`
+
+
+    Your program will now run as a process. To stop it, use this:
+
+    `pi@raspberrypi:~ $ forever stop yourProgram.js`
+
+
+    # NODE, PI, AND THE INTERNET OF THINGS
+
+
+    You''ve now had a jumpstart into JavaScript with Node and Raspberry Pi. You can
+    control real-world devices and interact with the Internet. Blinking an LED is
+    just a small taste of what you can'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: 'directly control with your Raspberry Pi. Now that you can do that, you can
+    connect and control other, more interesting electronic devices.
+
+
+    For example, you could attach a temperature sensor and periodically post environmental
+    readings to a web page. Or you could use a motion sensor and set up an alert to
+    catch your cat jumping up on your counter at night.
+
+
+    Now it''s up to you to dream up and build your own JavaScript/Node/Pi projects!'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: 'CPSIA information can be obtained at www.ICGtesting.com Printed in the USA
+    BVHW01s2059080418 512785BV00009B/208/P
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_49_0.png)'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: 'Technology/Electronics
+
+
+    NAPERVILLE PUBLIC LIBRARY
+
+
+    3 1 3 1 8 0 4 4 8 8 3 5 3 5
+
+
+    # Get up and running quickly with the Jumpstarting series!
+
+
+    Jumpstarting books provide an avenue for makers to quickly master topical knowledge.
+
+
+    Each book starts with instructions on how to install or initialize the hardware
+    or software needed to reach the all-important “Hello, World” stage of getting
+    started.
+
+
+    The second project builds on the first to use more of the hardware or software’s
+    capabilities.
+
+
+    Later projects expand the user’s knowledge into lesser-known aspects of the topic.
+    All Jumpstarting projects are for Makers—they provide hands-on, real-world experience
+    in making the hardware or software do what you want it to do.
+
+
+    ![](img/a0848e8632a09becbaacc6826f2a8219_51_0.png)
+
+
+    LYNN BEIGHLY is a fiction writer stuck in a tech book writer’s body. Upon discovering
+    that tech writing could be creative, she grew to love it. She wrote her first
+    web dev bestseller, she moved to Silicon Valley. She spent several years working
+    at Yahoo! and writing more and more books. Every year she moved to New York to
+    get an MFA in writing. Lynn likes traveling, photography, and making up stories
+    about strangers. Lately she’s been having a blast exploring the IOT
+
+
+    P9-BD-390
+
+
+    US $12.99  CAN $17.99
+
+    ISBN: 978-1-680-45-497-0
+
+
+    51299
+
+
+    9 781680 454970
+
+
+    Make:
+
+    makezine.com'
+  merge: -1
+  pgno: 51
+toc:
+- - '#'
+  - JavaScript 快速启动指南：使用 Node.js 和 Raspberry Pi 构建 Twitter 机器人与 LED 提醒系统
+- - '##'
+  - 如何联系我们
+- - '##'
+  - 前言：什么是 Node.js？
+- - '###'
+  - 本书所需知识
+- - '##'
+  - 认识 JavaScript 和 Node.js!
+- - '##'
+  - 在 Mac 上安装 Node
+- - '###'
+  - 第4步。
+- - '###'
+  - 第5步。
+- - '###'
+  - 第6步。
+- - '#'
+  - 在 Windows 上安装 Node
+- - '#'
+  - 在 Linux 上安装 Node
+- - '###'
+  - 打开 node-v6.11.3-linux-x64.tar.xz
+- - '###'
+  - 第2步。
+- - '###'
+  - 第3步。
+- - '#'
+  - Node 已安装；现在做什么？
+- - '##'
+  - 2 进入 JavaScript
+- - '###'
+  - 函数
+- - '###'
+  - 使用 JavaScript 文件
+- - '###'
+  - 创建 Web 服务器
+- - '###'
+  - 你代码中的注释
+- - '#'
+  - 3 在树莓派上创建一个 Node Twitter 机器人
+- - '##'
+  - 创建并授权你的 Twitter 帐户
+- - '##'
+  - 你使用Gmail吗？
+- - '##'
+  - 创建配置文件
+- - '##'
+  - 创建Twitter机器人
+- - '##'
+  - 自定义搜索
+- - '#'
+  - 响应Twitter事件闪烁LED
+- - '##'
+  - 在你的树莓派上设置LED
+- - '##'
+  - 创建闪烁程序
+- - '##'
+  - 让你的机器人检测你的Twitter账号
+- - '#'
+  - 让你的机器人被提及时闪烁 LED
+- - '#'
+  - NODE、PI 与物联网
+- - '#'
+  - 通过 Jumpstarting 系列快速上手！
