@@ -1,0 +1,2 @@
++   [学习 ECMAScript 6：掌握所有 ES6 新特性，成为最杰出的 JavaScript 开发者之一，能够按照最新标准编写高效的 JS 程序](README.md)
++   [学习 ECMAScript 6：掌握所有 ES6 新特性，成为最杰出的 JavaScript 开发者之一，能够按照最新标准编写高效的 JS 程序](learning-ecmascript-6-learn-all-the-new-es6-features-and-be-.md)
