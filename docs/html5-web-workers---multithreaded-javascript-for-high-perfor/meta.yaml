@@ -1,0 +1,1870 @@
+groups:
+- md: "![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_0_0.png)\n\n## Collect, Manage and\
+    \ Share All the Answers Your Team Needs\n\n- Q&A Software for Enterprise Knowledge\
+    \ Sharing\n- Mobile-friendly Responsive Design\n- Easy to Customize with Themes\
+    \ and Plugins\n- Integrates with Your SSO and IT Infrastructure\n- Choose Cloud-based\
+    \ or On-premise Hosting\n\n[Watch Video](#) | [Free Demo](#) | [Pricing](#)\n\n\
+    ## HTML5 Web Workers\n\n### Multithreaded JavaScript for High-Performance Web\
+    \ Apps\n\nBy: Gerard Gallant\n\n- Contents Include:\n- Creating Workers\n- Within\
+    \ a Worker\n- Error Handling\n- Passing Messages to a Worker\n- Receiving Messages\n\
+    - Additional Resources... and More!\n\n### INTRODUCTION\n\nPrior to HTML5 Web\
+    \ Workers, all JavaScript code would run in the same thread as the user interface\
+    \ of the browser window.\n\nThe result was that all long-running scripts would\
+    \ cause the browser window to become unresponsive to user input until the processing\
+    \ finished. If the script took long enough, the browser would even prompt the\
+    \ user to see if they wanted to stop the unresponsive script.\n\nWeb Workers came\
+    \ to the rescue by allowing JavaScript code to run in a separate thread from the\
+    \ browser window's UI thread. This allows long-running scripts to do their processing\
+    \ without interfering with the responsiveness of the browser's UI (the user can\
+    \ still click on buttons and scroll content for example).\n\nA couple of things\
+    \ to be aware of with Web Workers is that, because they are running in a separate\
+    \ thread from the UI, the worker threads have no access to the DOM or other UI\
+    \ functionality. In addition, Web Workers are not intended to be used in large\
+    \ numbers and are expected to be long-lived since they have a high start-up performance\
+    \ cost and high memory cost per worker instance.\n\n### Types of Workers\n\nThere\
+    \ are two types of workers available: dedicated workers and shared workers.\n\n\
+    Dedicated workers are linked to their creator and are a bit simpler to work with\
+    \ than shared workers.\n\nShared workers, on the other hand, allow any script\
+    \ from the same origin/domain to obtain a reference to the worker and communicate\
+    \ with it.\n\nSince worker threads take time to start initially and use a lot\
+    \ of memory per worker, being able to share a single worker rather than creating\
+    \ one for each open window can improve performance.\n\nThe trade off, however,\
+    \ is that shared workers are a bit more involved to set up and work with than\
+    \ dedicated workers.\n\n### Shared Worker Scope\n\nYou may be curious about what\
+    \ happens when the window that created a shared worker is closed. Is the worker\
+    \ thread still accessible by other windows from the same origin?\n\nA shared worker\
+    \ will remain active as long as one window has a connection to it. For example:\n\
+    \nWindow 1 creates a shared worker and Window 2 connects to it.\n\nLater, Window\
+    \ 1 is closed but, because Window 2 is still connected, the shared worker thread\
+    \ remains active even though Window 2 didn't originally create it.\n\n### Browser\
+    \ Support\n\n[http://caniuse.com](http://caniuse.com): This handy website can\
+    \ tell you if a feature is supported by a browser, and in which version of the\
+    \ browser the desired feature became available. This can save considerable testing\
+    \ time needed to determine if the desired feature is available in the browsers\
+    \ you intend to support. The site is updated regularly.\n\nAt the time of this\
+    \ article's writing, dedicated workers have the most browser support including:\n\
+    \nInternet Explorer 10+, Firefox, Chrome, Safari, Opera, iOS Safari, BlackBerry,\
+    \ Opera Mobile, Chrome for Android, and Firefox for Android.\n\nShared worker\
+    \ support currently includes:\n\nChrome, Safari, Opera, iOS Safari, BlackBerry,\
+    \ and Opera Mobile\n\n### CREATING WORKERS\n\n#### Test if the feature exists\n\
+    \nUnless you know for certain that your users will be using a specific browser\
+    \ version, there is a chance that your website will be accessed by a browser that\
+    \ does not have the HTML5 feature you wish to use.\n\nIt is always best to test\
+    \ if the browser supports the feature you intend to use before you try using the\
+    \ feature.\n\nBoth dedicated and shared workers will exist as objects on the global\
+    \ window object if the browser supports them.\n\nThe following is an example of\
+    \ how you can test to see if the browser supports dedicated or shared workers:\n\
+    \n```\nif (window.Worker) { /* Dedicated Workers are supported */ }\nif (window.SharedWorker)\
+    \ { /* Shared Workers are supported */ }\n```\n\n#### Creating a Worker\n\nTo\
+    \ create dedicated worker, you simply create a new instance of the Worker object\
+    \ passing in a string that specifies the location of the JavaScript file that\
+    \ contains the worker thread's main code.\n\nThe following is an example of how\
+    \ a dedicated worker can be created:\n\n```\nvar aDedicatedWorker = new Worker(\"\
+    DedicatedWorker.js\");\n```\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_1_0.png)\n\
+    \nA shared worker is created the same way you create a dedicated worker with the\
+    \ only change being that, rather than specifying a Worker object, we specify a\
+    \ SharedWorker object:\n\n```\nvar aSharedWorker = new SharedWorker(\"SharedWorker.js\"\
+    );\n```\n\nThe worker objects were designed to accept a string indicating the\
+    \ location of the JavaScript file (rather than a function) in order to prevent\
+    \ the creation of a closure that would allow the worker to gain direct access\
+    \ to the browser's DOM or other page elements.\n\n### Receiving Messages from\
+    \ a Worker\n\nCommunication between workers and the thread that created them is\
+    \ accomplished by passing messages.\n\nSince several HTML5 technologies pass messages,\
+    \ a separate specification exists that is specifically for messages called HTML5\
+    \ Web Messaging. I mention this because certain details critical to how Web Workers\
+    \ work are not found within the web worker specifications but rather within the\
+    \ web messaging specifications.\n\nIn order to receive messages from a worker,\
+    \ you need to attach to the onmessage event handler of the worker instance.\n\n\
+    The following is an example of how you can set up an event listener for a dedicated\
+    \ worker:\n\n```\naDedicatedWorker.onmessage = OnWorkerMessage;\n```\n\nSetting\
+    \ up the event listener for a shared worker object is similar to the dedicated\
+    \ worker but in this case you need to access the port object as in the following\
+    \ example:\n\n```\naSharedWorker.port.onmessage = OnWorkerMessage;\n```\n\nFor\
+    \ both dedicated and shared workers, you can also attach to the message event\
+    \ handler event type by using the addEventListener method as in the following\
+    \ example:\n\n```\naSharedWorker.port.addEventListener(\"message\", OnWorkerMessage,\
+    \ false);\n```\n\nOne thing to be aware of if you use the addEventListener method\
+    \ is that, for shared workers, you will also need to start the worker.\n\n```\n\
+    aSharedWorker.port.start();\n```\n\nThe onmessage event listener method will be\
+    \ passed by a MessageEvent parameter which will have a .data property containing\
+    \ the message passed from the worker thread.\n\nThe following is our onmessage\
+    \ event listener (there is no difference between dedicated and shared workers\
+    \ here):\n\n```\nfunction OnWorkerMessage(evt){\n    alert(\"Message received\
+    \ from the worker: \" + evt.data);\n}\n```\n\n### Passing Messages to a Worker\n\
+    \nTo pass a message to a dedicated worker, you call the postMessage function of\
+    \ the worker instance as in the following example:\n\n```\naDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n```\n\nPassing a message to a shared worker is\
+    \ similar but in this case the postMessage function is found on the port object:\n\
+    \n```\naSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n```\n\n\
+    The postMessage function is not limited to just passing strings between threads.\n\
+    \nYou can also pass structured data like JSON objects, JavaScript objects like\
+    \ numbers and Dates, as well as certain data objects like File Blob, FileList\
+    \ and ArrayBuffer.\n\nThe following is an example of passing an object:\n\n```\n\
+    var objData = {\n    \"employeeId\": 103,\n    \"name\": \"Sam Smith\",\n    \"\
+    dateHired\": new Date(2006, 11, 15)\n};\naDedicatedWorker.postMessage(objData);\n\
+    ```\n\nBecause the objects are passed between the two threads so seamlessly (we\
+    \ pass the object in from one side and receive it on the other side without any\
+    \ special work on our part), it feels like the data is passed directly but by\
+    \ default that is not actually the case. By default, all data is actually copied\
+    \ between the threads (also referred to as structured cloning).\n\nWhen you pass\
+    \ data to another thread, behind the scenes the object is serialized into a string,\
+    \ passed to the other thread, and then de-serialized back into an object on the\
+    \ other side.\n\nFor the most part you probably won't notice too much of a performance\
+    \ hit if you're just passing small amounts of data, but if you need to pass large\
+    \ amounts of data, this cloning may result in noticeable delays.\n\nFortunately,\
+    \ some browsers now support a concept called transferable objects where the ownership\
+    \ of the data is transferred to the other thread. The data is moved rather than\
+    \ copied, which can result in large performance improvements.\n\nWhen you transfer\
+    \ an object like an ArrayBuffer to another thread, for example, the contents are\
+    \ transferred to the other thread leaving an empty ArrayBuffer object in the calling\
+    \ thread. To transfer an object to a thread you still use the postMessage method\
+    \ but also include an array in the optional second parameter indicating which\
+    \ items in the message should be transferred.\n\n> Hot Tip\n\nAt the time of this\
+    \ writing, not all browsers support the second parameter of the postMessage method\
+    \ and will actually throw an exception if you attempt to use the second parameter.\
+    \ It is recommended that you use a try/catch statement around your postMessage\
+    \ call if you wish to use this technique.\n\nIf you're passing in just the one\
+    \ object, as in the following example, then you can specify the object itself\
+    \ in the array.\n\n```\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\n```\n\nNot all objects are transferable but, if the object you're\
+    \ passing contains a transferable object, you can specify just the portion of\
+    \ the object that you want to be transferred in the transfer parameter array as\
+    \ in the following example:\n\n```\nvar objData = {\n    \"employeeId\": 103,\n\
+    \    \"name\": \"Sam Smith\",\n    \"dateHired\": new Date(2006, 11, 15),\n  \
+    \  \"abBuffer\": new ArrayBuffer(32)\n};\naDedicatedWorker.postMessage(objData,\
+    \ [objData.abBuffer]);\n```\n\nIf the object you are passing to the other thread\
+    \ contains multiple transferable objects, you can specify each item by comma separating\
+    \ them in the transfer parameter array.\n\nNot all browsers support transferable\
+    \ objects. The following example demonstrates a way to detect if a browser supports\
+    \ transferable objects by actually trying to pass a small amount of data in an\
+    \ ArrayBuffer to another thread. If the buffer's length is zero after the postMessage\
+    \ call, then we know that the data was transferred rather than simply copied:"
+  mdcn: "\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_0_0.png)\n\n## 收集、管理和分享您团队所需的所有答案\n\
+    \n-  企业知识共享的问答软件\n-  移动友好的响应式设计\n-  易于通过主题和插件进行定制\n-  与您的单点登录和IT基础设施集成\n-  选择基于云的或本地托管\n\
+    \n[观看视频](#) | [免费演示](#) | [定价](#)\n\n## HTML5 Web Workers\n\n### 用于高性能Web应用的多线程JavaScript\n\
+    \n作者：Gerard Gallant\n\n-  内容包括：\n-  创建Workers\n-  在Worker内部\n-  错误处理\n-  向Worker传递消息\n\
+    -  接收消息\n-  附加资源...等等！\n\n### 引言\n\n在HTML5 Web Workers出现之前，所有JavaScript代码都与浏览器窗口的用户界面运行在同一个线程中。\n\
+    \n结果是，所有长时间运行的脚本都会导致浏览器窗口对用户输入无响应，直到处理完成。如果脚本运行时间足够长，浏览器甚至会提示用户是否要停止无响应的脚本。\n\n\
+    Web Workers通过允许JavaScript代码在与浏览器窗口UI线程分开的线程中运行来解决这个问题。这使得长时间运行的脚本可以在不干扰浏览器UI响应性的情况下进行处理（例如，用户仍然可以点击按钮和滚动内容）。\n\
+    \n关于Web Workers需要注意几点：由于它们运行在与UI分开的线程中，worker线程无法访问DOM或其他UI功能。此外，Web Workers并非设计为大量使用，并且预期是长期运行的，因为它们每个worker实例都有很高的启动性能成本和内存成本。\n\
+    \n### Worker的类型\n\n有两种可用的worker类型：专用worker（dedicated workers）和共享worker（shared\
+    \ workers）。\n\n专用worker与它们的创建者相关联，并且比共享worker稍微简单一些。\n\n另一方面，共享worker允许来自同一源/域的任何脚本获取对worker的引用并与之通信。\n\
+    \n由于worker线程初始启动需要时间并且每个worker使用大量内存，能够共享单个worker而不是为每个打开的窗口创建一个worker可以提高性能。\n\
+    \n然而，代价是共享worker的设置和使用比专用worker稍微复杂一些。\n\n### 共享Worker的作用域\n\n您可能想知道当创建共享worker的窗口被关闭时会发生什么。其他来自同一源的窗口是否仍然可以访问该worker线程？\n\
+    \n只要有一个窗口与之保持连接，共享worker就会保持活动状态。例如：\n\n窗口1创建一个共享worker，窗口2连接到它。\n\n之后，窗口1被关闭，但是因为窗口2仍然连接着，共享worker线程即使没有被窗口2最初创建，也仍然保持活动状态。\n\
+    \n### 浏览器支持\n\n[http://caniuse.com](http://caniuse.com)：这个方便的网站可以告诉您某个功能是否被浏览器支持，以及在哪个版本的浏览器中该所需功能变得可用。这可以节省确定所需功能在您打算支持的浏览器中是否可用所需的大量测试时间。该网站会定期更新。\n\
+    \n在撰写本文时，专用worker获得了最多的浏览器支持，包括：\n\nInternet Explorer 10+、Firefox、Chrome、Safari、Opera、iOS\
+    \ Safari、BlackBerry、Opera Mobile、Android版Chrome和Android版Firefox。\n\n共享worker支持目前包括：\n\
+    \nChrome、Safari、Opera、iOS Safari、BlackBerry和Opera Mobile\n\n### 创建Workers\n\n\
+    #### 测试功能是否存在\n\n除非您确定您的用户将使用特定的浏览器版本，否则您的网站有可能会被一个不支持您希望使用的HTML5功能的浏览器访问。\n\n\
+    在尝试使用某个功能之前，最好先测试浏览器是否支持您打算使用的功能。\n\n如果浏览器支持，专用worker和共享worker都将作为对象存在于全局window对象上。\n\
+    \n以下是测试浏览器是否支持专用或共享worker的示例：\n\n```\nif (window.Worker) { /* 支持专用Workers */ }\n\
+    if (window.SharedWorker) { /* 支持共享Workers */ }\n```\n\n#### 创建一个Worker\n\n要创建专用worker，您只需创建一个新的Worker对象实例，并传入一个字符串，该字符串指定包含worker线程主要代码的JavaScript文件的位置。\n\
+    \n以下是如何创建专用worker的示例：\n\n```\nvar aDedicatedWorker = new Worker(\"DedicatedWorker.js\"\
+    );\n```\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_1_0.png)\n\n共享worker的创建方式与创建专用worker相同，唯一的区别在于，我们指定一个SharedWorker对象而不是Worker对象：\n\
+    \n```\nvar aSharedWorker = new SharedWorker(\"SharedWorker.js\");\n```\n\nWorker对象被设计为接受一个指示JavaScript文件位置的字符串（而不是一个函数），以防止创建一个闭包，从而使worker能够直接访问浏览器的DOM或其他页面元素。\n\
+    \n### 从Worker接收消息\n\nWorker与创建它们的线程之间的通信是通过传递消息来完成的。\n\n由于多种HTML5技术都传递消息，因此存在一个专门的规范，称为HTML5\
+    \ Web Messaging。我提到这一点是因为，Web Workers工作方式的某些关键细节并不在web worker规范中，而是在web messaging规范中。\n\
+    \n为了从worker接收消息，您需要附加到worker实例的onmessage事件处理程序。\n\n以下是如何为专用worker设置事件监听器的示例：\n\
+    \n```\naDedicatedWorker.onmessage = OnWorkerMessage;\n```\n\n为共享worker对象设置事件监听器与专用worker类似，但在此情况下您需要访问port对象，如下例所示：\n\
+    \n```\naSharedWorker.port.onmessage = OnWorkerMessage;\n```\n\n对于专用和共享worker，您也可以通过使用addEventListener方法附加到message事件处理程序事件类型，如下例所示：\n\
+    \n```\naSharedWorker.port.addEventListener(\"message\", OnWorkerMessage, false);\n\
+    ```\n\n如果您使用addEventListener方法，需要注意的一点是，对于共享worker，您还需要启动该worker。\n\n```\naSharedWorker.port.start();\n\
+    ```\n\nonmessage事件监听器方法将被传递一个MessageEvent参数，该参数将有一个.data属性，其中包含从worker线程传递的消息。\n\
+    \n以下是我们onmessage事件监听器的实现（在这里专用worker和共享worker没有区别）：\n\n```\nfunction OnWorkerMessage(evt){\n\
+    \    alert(\"Message received from the worker: \" + evt.data);\n}\n```\n\n###\
+    \ 向Worker传递消息\n\n要向专用worker传递消息，您可以调用worker实例的postMessage函数，如下例所示：\n\n```\naDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n```\n\n向共享worker传递消息类似，但在此情况下postMessage函数位于port对象上：\n\
+    \n```\naSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n```\n\n\
+    postMessage函数不仅限于在线程之间传递字符串。\n\n您还可以传递结构化数据，如JSON对象、JavaScript对象（如数字和Date对象），以及某些数据对象，如File\
+    \ Blob、FileList和ArrayBuffer。\n\n以下是传递一个对象的示例：\n\n```\nvar objData = {\n    \"\
+    employeeId\": 103,\n    \"name\": \"Sam Smith\",\n    \"dateHired\": new Date(2006,\
+    \ 11, 15)\n};\naDedicatedWorker.postMessage(objData);\n```\n\n因为对象在两个线程之间无缝传递（我们在一侧传入对象，在另一侧接收它，而无需我们做任何特殊工作），感觉数据是直接传递的，但实际上默认情况下并非如此。默认情况下，所有数据实际上都是在线程之间复制的（也称为结构化克隆）。\n\
+    \n当您向另一个线程传递数据时，幕后对象被序列化为字符串，传递到另一个线程，然后在另一侧反序列化回对象。\n\n在大多数情况下，如果您只是传递少量数据，您可能不会注意到太大的性能影响，但如果您需要传递大量数据，这种克隆可能会导致明显的延迟。\n\
+    \n幸运的是，一些浏览器现在支持一种称为可传输对象（transferable objects）的概念，其中数据的所有权被转移给另一个线程。数据是被移动而不是被复制，这可以带来巨大的性能提升。\n\
+    \n例如，当您将像ArrayBuffer这样的对象传输到另一个线程时，内容被移动到另一个线程，在调用线程中留下一个空的ArrayBuffer对象。要将对象传输到线程，您仍然使用postMessage方法，但在可选的第二个参数中包含一个数组，指示消息中的哪些项目应该被传输。\n\
+    \n> 实用提示\n\n在撰写本文时，并非所有浏览器都支持postMessage方法的第二个参数，如果您尝试使用第二个参数，实际上会抛出异常。如果您希望使用此技术，建议在postMessage调用周围使用try/catch语句。\n\
+    \n如果您只传递一个对象，如下例所示，那么您可以在数组中指定该对象本身。\n\n```\nvar abBuffer = new ArrayBuffer(32);\n\
+    aDedicatedWorker.postMessage(abBuffer, [abBuffer]);\n```\n\n并非所有对象都是可传输的，但如果您传递的对象包含一个可传输对象，您可以在传输参数数组中指定您希望传输的对象的哪一部分，如下例所示：\n\
+    \n```\nvar objData = {\n    \"employeeId\": 103,\n    \"name\": \"Sam Smith\"\
+    ,\n    \"dateHired\": new Date(2006, 11, 15),\n    \"abBuffer\": new ArrayBuffer(32)\n\
+    };\naDedicatedWorker.postMessage(objData, [objData.abBuffer]);\n```\n\n如果您传递到另一个线程的对象包含多个可传输对象，您可以通过在传输参数数组中用逗号分隔来指定每个项目。\n\
+    \n并非所有浏览器都支持可传输对象。以下示例展示了一种检测浏览器是否支持可传输对象的方法，即通过实际尝试将少量数据放在ArrayBuffer中传递到另一个线程。如果postMessage调用后buffer的长度为零，那么我们知道数据是被传输了，而不是仅仅被复制：\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_0_0.png)
+
+
+    # # Collect, Manage and Share All the Answers Your Team Needs
+
+
+    +   > Q&A Software for Enterprise Knowledge Sharing
+
+    > Mobile-friendly Responsive Design
+
+    > Easy to Customize with Themes and Plugins
+
+    > Integrates with Your SSO and IT Infrastructure
+
+    > Choose Cloud-based or On-premise Hosting
+
+
+    +   [Watch Video](#) | [Free Demo](#) | [Pricing](#)'
+  - '[PAGE 1]
+
+
+    # # HTML5 Web Workers
+
+
+    # ## Multithreaded JavaScript for High-Performance Web Apps
+
+
+    By: Gerard Gallant
+
+
+    +   - Contents Include:
+
+    - Creating Workers
+
+    - Within a Worker
+
+    - Error Handling
+
+    - Passing Messages to a Worker
+
+    - Receiving Messages
+
+    - Additional Resources... and More!
+
+
+    # ## INTRODUCTION
+
+
+    Prior to HTML5 Web Workers, all JavaScript code would run in the same thread as
+    the user interface of the browser window.
+
+
+    The result was that all long-running scripts would cause the browser window to
+    become unresponsive to user input until the processing finished. If the script
+    took long enough, the browser would even prompt the user to see if they wanted
+    to stop the unresponsive script.
+
+
+    Web Workers came to the rescue by allowing JavaScript code to run in a separate
+    thread from the browser window''s UI thread. This allows long-running scripts
+    to do their processing without interfering with the responsiveness of the browser''s
+    UI (the user can still click on buttons and scroll content for example).
+
+
+    A couple of things to be aware of with Web Workers is that, because they are running
+    in a separate thread from the UI, the worker threads have no access to the DOM
+    or other UI functionality. In addition, Web Workers are not intended to be used
+    in large numbers and are expected to be long-lived since they have a high start-up
+    performance cost and high memory cost per worker instance.
+
+
+    # ### Types of Workers
+
+
+    There are two types of workers available: dedicated workers and shared workers.
+
+
+    Dedicated workers are linked to their creator and are a bit simpler to work with
+    than shared workers.
+
+
+    Shared workers, on the other hand, allow any script from the same origin/domain
+    to obtain a reference to the worker and communicate with it.
+
+
+    Since worker threads take time to start initially and use a lot of memory per
+    worker, being able to share a single worker rather than creating one for each
+    open window can improve performance.
+
+
+    The trade off, however, is that shared workers are a bit more involved to set
+    up and work with than dedicated workers.
+
+
+    # ### Shared Worker Scope
+
+
+    You may be curious about what happens when the window that created a shared worker
+    is closed. Is the worker thread still accessible by other windows from the same
+    origin?
+
+
+    A shared worker will remain active as long as one window has a connection to it.
+    For example:
+
+
+    Window 1 creates a shared worker and Window 2 connects to it.
+
+
+    Later, Window 1 is closed but, because Window 2 is still connected, the shared
+    worker thread remains active even though Window 2 didn''t originally create it.
+
+
+    # ### Browser Support
+
+
+    [http://caniuse.com](http://caniuse.com): This handy website can tell you if a
+    feature is supported by a browser, and in which version of the browser the desired
+    feature became available. This can save considerable testing time needed to determine
+    if the desired feature is available in the browsers you intend to support. The
+    site is updated regularly.
+
+
+    At the time of this article''s writing, dedicated workers have the most browser
+    support including:
+
+
+    Internet Explorer 10+, Firefox, Chrome, Safari, Opera, iOS Safari, BlackBerry,
+    Opera Mobile, Chrome for Android, and Firefox for Android.
+
+
+    Shared worker support currently includes:
+
+
+    Chrome, Safari, Opera, iOS Safari, BlackBerry, and Opera Mobile
+
+
+    # ## CREATING WORKERS
+
+
+    # ### Test if the feature exists
+
+
+    Unless you know for certain that your users will be using a specific browser version,
+    there is a chance that your website will be accessed by a browser that does not
+    have the HTML5 feature you wish to use.
+
+
+    It is always best to test if the browser supports the feature you intend to use
+    before you try using the feature.
+
+
+    Both dedicated and shared workers will exist as objects on the global window object
+    if the browser supports them.
+
+
+    The following is an example of how you can test to see if the browser supports
+    dedicated or shared workers:
+
+
+    ```
+
+    if (window.Worker) { /* Dedicated Workers are supported */ }
+
+    if (window.SharedWorker) { /* Shared Workers are supported */ }
+
+    ```
+
+
+    # ### Creating a Worker
+
+
+    To create dedicated worker, you simply create a new instance of the Worker object
+    passing in a string that specifies the location of the JavaScript file that contains
+    the worker thread''s main code.
+
+
+    The following is an example of how a dedicated worker can be created:
+
+
+    ```
+
+    var aDedicatedWorker = new Worker("DedicatedWorker.js");
+
+    ```
+
+
+    ![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_1_0.png)'
+  - "[PAGE 2]\n\nA shared worker is created the same way you create a dedicated worker\
+    \ with the only change being that, rather than specifying a Worker object, we\
+    \ specify a SharedWorker object:\n\n```\nvar aSharedWorker = new SharedWorker(\"\
+    SharedWorker.js\");\n```\n\nThe worker objects were designed to accept a string\
+    \ indicating the location of the JavaScript file (rather than a function) in order\
+    \ to prevent the creation of a closure that would allow the worker to gain direct\
+    \ access to the browser's DOM or other page elements.\n\n# Receiving Messages\
+    \ from a Worker\n\nCommunication between workers and the thread that created them\
+    \ is accomplished by passing messages.\n\nSince several HTML5 technologies pass\
+    \ messages, a separate specification exists that is specifically for messages\
+    \ called HTML5 Web Messaging. I mention this because certain details critical\
+    \ to how Web Workers work are not found within the web worker specifications but\
+    \ rather within the web messaging specifications.\n\nIn order to receive messages\
+    \ from a worker, you need to attach to the onmessage event handler of the worker\
+    \ instance.\n\nThe following is an example of how you can set up an event listener\
+    \ for a dedicated worker:\n\n```\naDedicatedWorker.onmessage = OnWorkerMessage;\n\
+    ```\n\nSetting up the event listener for a shared worker object is similar to\
+    \ the dedicated worker but in this case you need to access the port object as\
+    \ in the following example:\n\n```\naSharedWorker.port.onmessage = OnWorkerMessage;\n\
+    ```\n\nFor both dedicated and shared workers, you can also attach to the message\
+    \ event handler event type by using the addEventListener method as in the following\
+    \ example:\n\n```\naSharedWorker.port.addEventListener(\"message\", OnWorkerMessage,\
+    \ false);\n```\n\nOne thing to be aware of if you use the addEventListener method\
+    \ is that, for shared workers, you will also need to start the worker.\n\n```\n\
+    aSharedWorker.port.start();\n```\n\nThe onmessage event listener method will be\
+    \ passed by a MessageEvent parameter which will have a .data property containing\
+    \ the message passed from the worker thread.\n\nThe following is our onmessage\
+    \ event listener (there is no difference between dedicated and shared workers\
+    \ here):\n\n```\nfunction OnWorkerMessage(evt){\n    alert(\"Message received\
+    \ from the worker: \" + evt.data);\n}\n```\n\n# Passing Messages to a Worker\n\
+    \nTo pass a message to a dedicated worker, you call the postMessage function of\
+    \ the worker instance as in the following example:\n\n```\naDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n```\n\nPassing a message to a shared worker is\
+    \ similar but in this case the postMessage function is found on the port object:\n\
+    \n```\naSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n```\n\n\
+    The postMessage function is not limited to just passing strings between threads.\n\
+    \nYou can also pass structured data like JSON objects, JavaScript objects like\
+    \ numbers and Dates, as well as certain data objects like File Blob, FileList\
+    \ and ArrayBuffer.\n\nThe following is an example of passing an object:\n\n```\n\
+    var objData = {\n    \"employeeId\": 103,\n    \"name\": \"Sam Smith\",\n    \"\
+    dateHired\": new Date(2006, 11, 15)\n};\naDedicatedWorker.postMessage(objData);\n\
+    ```\n\nBecause the objects are passed between the two threads so seamlessly (we\
+    \ pass the object in from one side and receive it on the other side without any\
+    \ special work on our part), it feels like the data is passed directly but by\
+    \ default that is not actually the case. By default, all data is actually copied\
+    \ between the threads (also referred to as structured cloning).\n\nWhen you pass\
+    \ data to another thread, behind the scenes the object is serialized into a string,\
+    \ passed to the other thread, and then de-serialized back into an object on the\
+    \ other side.\n\nFor the most part you probably won't notice too much of a performance\
+    \ hit if you're just passing small amounts of data, but if you need to pass large\
+    \ amounts of data, this cloning may result in noticeable delays.\n\nFortunately,\
+    \ some browsers now support a concept called transferable objects where the ownership\
+    \ of the data is transferred to the other thread. The data is moved rather than\
+    \ copied, which can result in large performance improvements.\n\nWhen you transfer\
+    \ an object like an ArrayBuffer to another thread, for example, the contents are\
+    \ transferred to the other thread leaving an empty ArrayBuffer object in the calling\
+    \ thread. To transfer an object to a thread you still use the postMessage method\
+    \ but also include an array in the optional second parameter indicating which\
+    \ items in the message should be transferred.\n\n> Hot Tip\nAt the time of this\
+    \ writing, not all browsers support the second parameter of the postMessage method\
+    \ and will actually throw an exception if you attempt to use the second parameter.\
+    \ It is recommended that you use a try/catch statement around your postMessage\
+    \ call if you wish to use this technique.\n\nIf you're passing in just the one\
+    \ object, as in the following example, then you can specify the object itself\
+    \ in the array.\n\n```\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\n```\n\nNot all objects are transferable but, if the object you're\
+    \ passing contains a transferable object, you can specify just the portion of\
+    \ the object that you want to be transferred in the transfer parameter array as\
+    \ in the following example:\n\n```\nvar objData = {\n    \"employeeId\": 103,\n\
+    \    \"name\": \"Sam Smith\",\n    \"dateHired\": new Date(2006, 11, 15),\n  \
+    \  \"abBuffer\": new ArrayBuffer(32)\n};\naDedicatedWorker.postMessage(objData,\
+    \ [objData.abBuffer]);\n```\n\nIf the object you are passing to the other thread\
+    \ contains multiple transferable objects, you can specify each item by comma separating\
+    \ them in the transfer parameter array.\n\nNot all browsers support transferable\
+    \ objects. The following example demonstrates a way to detect if a browser supports\
+    \ transferable objects by actually trying to pass a small amount of data in an\
+    \ ArrayBuffer to another thread. If the buffer's length is zero after the postMessage\
+    \ call, then we know that the data was transferred rather than simply copied:"
+- md: "var abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\nif (abBuffer.byteLength) {\n    alert(\"Transferrable Objects\
+    \ are not supported by your browser\");\n}\n\n}\nelse if (evtError.message) {\n\
+    \    updateResults(\"Error...Message: \" + evtError.message +\n        \", File\
+    \ name: \" + evtError.filename +\n        \", Line number: \" + evtError.lineno);\n\
+    }\nelse {\n    updateResults(\"Unknown error\");\n}\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n\n## Error Handling\n\nFor both dedicated and shared\
+    \ workers you can attach to the onerror event handler of a worker instance so\
+    \ that you can be informed if a runtime error occurs (e.g., maybe there is a network\
+    \ error preventing the creation of the worker object).\n\nFor dedicated workers,\
+    \ the onerror event handler will also tell you about any unhandled exceptions\
+    \ from within the worker thread.\n\nThe following is an example of how you would\
+    \ add an event listener for a onerror event on a worker object:\n\n```\naDedicatedWorker.onerror\
+    \ = function(evt) { alert(evt.message); }\naSharedWorker.onerror = function(evt)\
+    \ { alert(evt.message); }\n```\n\n| ErrorEvent properties | Description |\n| ---\
+    \ | --- |\n| message | A human-readable error message |\n| filename | The name\
+    \ of the script file in which the error occurred (in some browsers this property\
+    \ is undefined and in other browsers the property is an empty string) |\n| lineno\
+    \ | The line number of the script file on which the error occurred (in some browsers\
+    \ this is set to zero) |\n\n## Closing a Worker\n\nBoth a dedicated and shared\
+    \ worker thread can be closed by calling terminate on the worker instance as in\
+    \ the following example:\n\n```\naDedicatedWorker.terminate();\naSharedWorker.terminate();\n\
+    ```\n\nOne thing to be aware of with calling terminate is that it does not give\
+    \ the worker thread an opportunity to finish its operations or to clean up after\
+    \ itself.\n\nThe following is a summary of the JavaScript that creates a dedicated\
+    \ and shared worker:\n\n```\nvar gDedicatedWorker = null;\nvar gSharedWorker =\
+    \ null;\n\n$(document).ready(function () {\n    // If Dedicated Workers are supported\
+    \ by this browser...\n    if (window.Worker) {\n        gDedicatedWorker = new\
+    \ Worker(\"DedicatedWorker.js\");\n        gDedicatedWorker.onerror = handleError;\n\
+    \        gDedicatedWorker.onmessage = handleMessage;\n\n        gDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n    } // End if (window.Worker)\n\n    // If shared\
+    \ Workers are supported by this browser...\n    if (window.SharedWorker) {\n \
+    \       gSharedWorker = new SharedWorker(\"SharedWorker.js\");\n        gSharedWorker.onerror\
+    \ = handleError;\n        gSharedWorker.port.onmessage = handleMessage;\n\n  \
+    \      gSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n    } //\
+    \ End if (window.SharedWorker)\n});\n\n// OnError event listener\nfunction handleError(evtError)\
+    \ {\n    if (typeof evtError === \"string\") {\n        updateResults(\"Error:\
+    \ \" + evtError);\n    }\n    else if (evtError.message) {\n        updateResults(\"\
+    Error...Message: \" + evtError.message +\n            \", File name: \" + evtError.filename\
+    \ +\n            \", Line number: \" + evtError.lineno);\n    }\n    else {\n\
+    \        updateResults(\"Unknown error\");\n    }\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n```\n\n## WITHIN A WORKER\n\n### Including JavaScript\
+    \ Files\n\nWorker threads have access to an importScripts function which allows\
+    \ the thread to pull in all necessary JavaScript files.\n\nThe importScripts function\
+    \ can be used to import one or more files. If multiple files are specified, they\
+    \ are downloaded in parallel but will be loaded and processed synchronously in\
+    \ the order specified.\n\nAlso, the importScripts file will not return until all\
+    \ of the files specified have been loaded and processed.\n\nThe following is an\
+    \ example of using the importScripts to import 3 JavaScript files into the worker\
+    \ (this example stopped at 3 files but you can specify any number of files):\n\
+    \n```\nimportScripts(\"file1.js\", \"file2.js\", \"file3.js\");\n```\n\n### Receiving\
+    \ Messages\n\nIn order for a dedicated worker to receive messages from its creator\
+    \ it must attach to the onmessage event as in the following example:\n\n```\n\
+    self.onmessage = function(evt) {\n    // Data from calling thread can be found\
+    \ in the .data property\n    // of the parameter\n}\n```\n\nWithin shared workers,\
+    \ you need to handle the onconnect event which is triggered whenever a thread\
+    \ connects to the shared worker.\n\nWithin the onconnect event listener you can\
+    \ then attach to the onmessage event of the first port object in the ports array\
+    \ (there is only ever the one port in the array):\n\n```\nself.onconnect = function(evt)\
+    \ {\n    evt.ports[0].onmessage = function(evtMessage) {\n        // Data from\
+    \ calling thread can be found in the .data\n        // property of the parameter.\n\
+    \n        // The calling thread's port can be found in the .target\n        //\
+    \ property of the parameter\n    }\n}\n```\n\n### Passing Messages\n\nA dedicated\
+    \ worker is able to pass a message to its creator by means of the postMessage\
+    \ function:\n\n```\nself.postMessage(\"Hello from the dedicated worker\");\n```\n\
+    \nFrom a shared worker, in order to pass a message to a connected thread, you\
+    \ need to use the postMessage event on the port of the connected thread that you\
+    \ wish to send the message to.\n\nThere are a few options available to obtain\
+    \ the port object. One option could be the creation of a global array to hold\
+    \ each connected port from the onconnect event handler.\n\nAnother option for\
+    \ obtaining a port object is to access the target property of the onmessage event\
+    \ object which holds a reference to the calling thread's port as in the following\
+    \ example:\n\n```\nevt.target.postMessage(\"Hello from the shared worker\");\n\
+    ```\n\n### Timeouts\n\nWorker threads support timeouts (setTimeout, clearTimeout,\
+    \ setInterval, and clearInterval), which are very useful if you only want to do\
+    \ processing at set intervals rather than constantly processing.\n\nOne scenario\
+    \ could be if you wanted to check a 3rd party server to see if it has new information\
+    \ but you don't want to hammer the site with requests. What you could do is set\
+    \ up a timeout to check to see if there is new information every 5 minutes or\
+    \ so.\n\n### XMLHttpRequest\n\nWithin a worker thread, it's possible to make an\
+    \ XMLHttpRequest and, since a worker is separate from the UI thread of the browser\
+    \ window and won't affect performance, it's up to you if you want to make the\
+    \ request synchronously or asynchronously.\n\nOne thing to be aware of, however,\
+    \ is that within a worker the XMLHttpRequest object will only return data via\
+    \ the responseText property (the responseXML property will always return null\
+    \ when the XMLHttpRequest object is used in a worker).\n\nThe following is an\
+    \ example of the use of an XMLHttpRequest object within a worker:\n\n```\n// Data\
+    \ we want to send to server-side code\nvar objData = { \"sPageIndex\": iPage };\n\
+    \n// Make a synchronous call to the server\nvar xhrRequest = new XMLHttpRequest();\n\
+    xhrRequest.open(\"POST\", \"/main.aspx/GetNextPage\", false);\nxhrRequest.setRequestHeader(\"\
+    Content-Type\", \"application/json\");\nxhrRequest.send(JSON.stringify(objData));\n\
+    \n// Return the response to the UI thread\nself.postMessage(xhrRequest.responseText);\n\
+    ```\n\n### location\n\nWorker threads have access to a location object which indicates\
+    \ the absolute URI that was set at the time of the thread's creation.\n\nThe following\
+    \ location properties are available: href, protocol, host, hostname, port, pathname,\
+    \ search, and hash.\n\n### navigator\n\nThe navigator object is available within\
+    \ a worker giving some details about the browser.\n\nSome of the properties that\
+    \ are available are: appName, appVersion, platform, and userAgent.\n\nAnother\
+    \ property available in the navigator object is onLine which will return false\
+    \ if the user agent is definitely offline and will return true if the user agent\
+    \ might be online.\n\nOne thing to note about the onLine property of the navigator\
+    \ object is that, at the time of this article's writing, not every browser supports\
+    \ it. As a result, if you choose to use this property, it would be best to check\
+    \ to see if the property exists first.\n\n### Error Handling\n\nA worker thread\
+    \ has the option of attaching to a global onerror event handler to listen for\
+    \ unhandled exceptions.\n\nThis is especially useful for shared workers since\
+    \ several browsers do not pass unhandled exceptions to the onerror event handler\
+    \ of the worker object itself.\n\nThe following is an example of attaching to\
+    \ the onerror event handler within a worker thread:\n\n```\nself.onerror = function(evt)\
+    \ {\n    // Handle the error possibly by doing a postMessage call to\n    // this\
+    \ thread's creator so that a message can be displayed\n}\n```\n\n### Closing Itself\n\
+    \nA worker can close itself by calling the close method:\n\n```\nself.close();\n\
+    ```\n\nThe following is a summary of the JavaScript within a dedicated worker:\n\
+    \n```\n// Optionally load in some common JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// Attach to the onmessage event to listen for messages from\n\
+    // the caller\nself.onmessage = function (evt) {\n    // Pass a message back\n\
+    \    self.postMessage(\"Text received from the UI: \" + evt.data);\n}\n\n// Attach\
+    \ to the onerror event to listen for unhandled exceptions\nself.onerror = function\
+    \ (evtError) {\n    var sMsg = \"Unknown Error\";\n\n    // Test the error event\
+    \ object to see if it has a message\n    // property. If it does not, check to\
+    \ see if it's a string.\n    if (evtError.message) { sMsg = evtError.message;\
+    \ }\n    else if (typeof evtError === \"string\") { sMsg = evtError; }\n\n   \
+    \ // Pass the message to this worker's creator\n    postMessage(\"Dedicated Worker\
+    \ - Error Message: \" + sMsg);\n}\n\n// At some point we can close the thread\
+    \ ourselves\nself.close();\n```\n\nThe following is a summary of the JavaScript\
+    \ within a shared worker:\n\n```\n// Optionally load in some common JavaScript\n\
+    // self.importScripts(\"common.js\");\n\n// Global variable that will hold a reference\
+    \ to the last thread\n// that connects to this shared worker. Could also use an\
+    \ array to\n// store each connected thread's port.\nvar gLastPort = null;\n\n\
+    // Attach to the onconnect event to listen for threads that\n// connect to this\
+    \ shared thread\nself.onconnect = function (evtConnect) {\n    // Grab a reference\
+    \ to the connected thread's port (only\n    // even the 1 port in the array) and\
+    \ attach to the\n    // onmessage event\n    gLastPort = evtConnect.ports[0];\n\
+    \    gLastPort.onmessage = function (evtMessage) {\n        evtMessage.target.postMessage(\"\
+    Text received from the UI: \"\n        + evtMessage.data);\n    }\n}\n\n// Attach\
+    \ to the onerror event to listen for unhandled exceptions\nself.onerror = function\
+    \ (evtError) {\n    var sMsg = \"Unknown Error\";\n\n    // Test the error event\
+    \ object to see if it has a message\n    // property. If it does not, check to\
+    \ see if it's a string.\n    if (evtError.message) { sMsg = evtError.message;\
+    \ }\n    else if (typeof evtError === \"string\") { sMsg = evtError; }\n```"
+  mdcn: "\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\nif (abBuffer.byteLength) {\n    alert(\"您的浏览器不支持可传输对象\");\n}\n\
+    \n}\nelse if (evtError.message) {\n    updateResults(\"错误...消息: \" + evtError.message\
+    \ +\n        \", 文件名: \" + evtError.filename +\n        \", 行号: \" + evtError.lineno);\n\
+    }\nelse {\n    updateResults(\"未知错误\");\n}\n}\n\n// 消息事件监听器\nfunction handleMessage(evtMessage)\
+    \ {\n    updateResults(\"收到来自工作线程的消息: \" +\n        evtMessage.data);\n}\n\n//\
+    \ 一个用于用新消息更新页面上某个 div 的辅助函数\nfunction updateResults(sMessage) {\n    var $divResults\
+    \ = $(\"#divResults\");\n    $divResults.html($divResults.html() + \"<br />\"\
+    \ + sMessage);\n}\n\n## 错误处理\n\n对于专用和共享工作线程，你都可以将工作线程实例的 onerror 事件处理程序附加到它，以便在发生运行时错误（例如，可能存在阻止创建工作线程对象的网络错误）时得到通知。\n\
+    \n对于专用工作线程，onerror 事件处理程序还会告诉你工作线程内部任何未处理的异常。\n\n以下是如何在工作线程对象上添加 onerror 事件监听器的示例：\n\
+    \n```\naDedicatedWorker.onerror = function(evt) { alert(evt.message); }\naSharedWorker.onerror\
+    \ = function(evt) { alert(evt.message); }\n```\n\n| ErrorEvent 属性 | 描述 |\n| ---\
+    \ | --- |\n| message | 人类可读的错误消息 |\n| filename | 发生错误的脚本文件的名称（在某些浏览器中此属性未定义，在其他浏览器中此属性是空字符串）\
+    \ |\n| lineno | 发生错误的脚本文件的行号（在某些浏览器中此属性设置为零） |\n\n## 关闭工作线程\n\n可以通过在工作线程实例上调用\
+    \ terminate 来关闭专用和共享工作线程，如下例所示：\n\n```\naDedicatedWorker.terminate();\naSharedWorker.terminate();\n\
+    ```\n\n调用 terminate 时需要注意的一点是，它不会给工作线程提供完成其操作或自行清理的机会。\n\n以下是创建专用和共享工作线程的 JavaScript\
+    \ 代码摘要：\n\n```\nvar gDedicatedWorker = null;\nvar gSharedWorker = null;\n\n$(document).ready(function\
+    \ () {\n    // 如果此浏览器支持专用工作线程...\n    if (window.Worker) {\n        gDedicatedWorker\
+    \ = new Worker(\"DedicatedWorker.js\");\n        gDedicatedWorker.onerror = handleError;\n\
+    \        gDedicatedWorker.onmessage = handleMessage;\n\n        gDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n    } // 结束 if (window.Worker)\n\n    // 如果此浏览器支持共享工作线程...\n\
+    \    if (window.SharedWorker) {\n        gSharedWorker = new SharedWorker(\"SharedWorker.js\"\
+    );\n        gSharedWorker.onerror = handleError;\n        gSharedWorker.port.onmessage\
+    \ = handleMessage;\n\n        gSharedWorker.port.postMessage(\"Hello from the\
+    \ UI thread!\");\n    } // 结束 if (window.SharedWorker)\n});\n\n// 错误事件监听器\nfunction\
+    \ handleError(evtError) {\n    if (typeof evtError === \"string\") {\n       \
+    \ updateResults(\"错误: \" + evtError);\n    }\n    else if (evtError.message) {\n\
+    \        updateResults(\"错误...消息: \" + evtError.message +\n            \", 文件名:\
+    \ \" + evtError.filename +\n            \", 行号: \" + evtError.lineno);\n    }\n\
+    \    else {\n        updateResults(\"未知错误\");\n    }\n}\n\n// 消息事件监听器\nfunction\
+    \ handleMessage(evtMessage) {\n    updateResults(\"收到来自工作线程的消息: \" +\n       \
+    \ evtMessage.data);\n}\n\n// 一个用于用新消息更新页面上某个 div 的辅助函数\nfunction updateResults(sMessage)\
+    \ {\n    var $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html()\
+    \ + \"<br />\" + sMessage);\n}\n```\n\n## 在工作线程内部\n\n### 包含 JavaScript 文件\n\n\
+    工作线程有权访问一个 importScripts 函数，该函数允许线程引入所有必要的 JavaScript 文件。\n\nimportScripts 函数可用于导入一个或多个文件。如果指定了多个文件，它们将并行下载，但将按指定的顺序同步加载和处理。\n\
+    \n此外，importScripts 文件在所有指定的文件加载和处理完毕之前不会返回。\n\n以下是使用 importScripts 将 3 个 JavaScript\
+    \ 文件导入工作线程的示例（此示例到 3 个文件为止，但你可以指定任意数量的文件）：\n\n```\nimportScripts(\"file1.js\"\
+    , \"file2.js\", \"file3.js\");\n```\n\n### 接收消息\n\n为了使专用工作线程能够从其创建者接收消息，它必须附加到\
+    \ onmessage 事件，如下例所示：\n\n```\nself.onmessage = function(evt) {\n    // 来自调用线程的数据可以在参数的\
+    \ .data 属性中找到\n}\n```\n\n在共享工作线程中，你需要处理 onconnect 事件，该事件在每次有线程连接到共享工作线程时触发。\n\n\
+    在 onconnect 事件监听器中，你可以附加到 ports 数组中第一个端口对象的 onmessage 事件（数组中永远只有一个端口）：\n\n```\n\
+    self.onconnect = function(evt) {\n    evt.ports[0].onmessage = function(evtMessage)\
+    \ {\n        // 来自调用线程的数据可以在参数的 .data 属性中找到。\n\n        // 调用线程的端口可以在参数的 .target\
+    \ 属性中找到\n    }\n}\n```\n\n### 传递消息\n\n专用工作线程能够通过 postMessage 函数向其创建者传递消息：\n\n\
+    ```\nself.postMessage(\"Hello from the dedicated worker\");\n```\n\n从共享工作线程出发，为了向已连接的线程传递消息，你需要使用你希望发送消息给的那个已连接线程的端口上的\
+    \ postMessage 事件。\n\n有几种方法可以获取端口对象。一种选项是在 onconnect 事件处理程序中创建一个全局数组来保存每个已连接的端口。\n\
+    \n另一种获取端口对象的选项是访问 onmessage 事件对象的 target 属性，该属性保存对调用线程端口的引用，如下例所示：\n\n```\nevt.target.postMessage(\"\
+    Hello from the shared worker\");\n```\n\n### 超时\n\n工作线程支持超时（setTimeout、clearTimeout、setInterval\
+    \ 和 clearInterval），如果你只想在设定的时间间隔而不是持续处理时进行处理，这非常有用。\n\n一个场景可能是你想检查第三方服务器是否有新信息，但又不想用请求轰炸该网站。你可以设置一个超时，每隔\
+    \ 5 分钟左右检查一次是否有新信息。\n\n### XMLHttpRequest\n\n在工作线程内部，可以发起 XMLHttpRequest，由于工作线程与浏览器窗口的\
+    \ UI 线程分离，不会影响性能，因此由你决定是同步还是异步发起请求。\n\n然而，需要注意的一点是，在工作线程内部，XMLHttpRequest 对象将仅通过\
+    \ responseText 属性返回数据（当 XMLHttpRequest 对象在工作线程中使用时，responseXML 属性始终返回 null）。\n\
+    \n以下是在工作线程内部使用 XMLHttpRequest 对象的示例：\n\n```\n// 我们要发送给服务器端代码的数据\nvar objData =\
+    \ { \"sPageIndex\": iPage };\n\n// 向服务器发起同步调用\nvar xhrRequest = new XMLHttpRequest();\n\
+    xhrRequest.open(\"POST\", \"/main.aspx/GetNextPage\", false);\nxhrRequest.setRequestHeader(\"\
+    Content-Type\", \"application/json\");\nxhrRequest.send(JSON.stringify(objData));\n\
+    \n// 将响应返回给 UI 线程\nself.postMessage(xhrRequest.responseText);\n```\n\n### location\n\
+    \n工作线程有权访问一个 location 对象，该对象表示线程创建时设置的绝对 URI。\n\n可用的 location 属性有：href、protocol、host、hostname、port、pathname、search\
+    \ 和 hash。\n\n### navigator\n\nnavigator 对象在工作线程内可用，提供有关浏览器的一些详细信息。\n\n一些可用的属性是：appName、appVersion、platform\
+    \ 和 userAgent。\n\nnavigator 对象中另一个可用的属性是 onLine，如果用户代理确定离线，则返回 false；如果用户代理可能在线，则返回\
+    \ true。\n\n关于 navigator 对象的 onLine 属性需要注意的一点是，在撰写本文时，并非每个浏览器都支持它。因此，如果你选择使用此属性，最好先检查该属性是否存在。\n\
+    \n### 错误处理\n\n工作线程可以选择附加到全局 onerror 事件处理程序，以监听未处理的异常。\n\n这对于共享工作线程特别有用，因为许多浏览器不会将未处理的异常传递给工作线程对象本身的\
+    \ onerror 事件处理程序。\n\n以下是在工作线程内部附加到 onerror 事件处理程序的示例：\n\n```\nself.onerror = function(evt)\
+    \ {\n    // 处理错误，可能通过向此线程的创建者发起 postMessage 调用，以便可以显示一条消息\n}\n```\n\n### 自行关闭\n\
+    \n工作线程可以通过调用 close 方法自行关闭：\n\n```\nself.close();\n```\n\n以下是专用工作线程内部 JavaScript\
+    \ 的摘要：\n\n```\n// 可选地加载一些通用 JavaScript\n// self.importScripts(\"common.js\");\n\
+    \n// 附加到 onmessage 事件以监听来自调用者的消息\nself.onmessage = function (evt) {\n    // 传回一条消息\n\
+    \    self.postMessage(\"Text received from the UI: \" + evt.data);\n}\n\n// 附加到\
+    \ onerror 事件以监听未处理的异常\nself.onerror = function (evtError) {\n    var sMsg = \"\
+    Unknown Error\";\n\n    // 测试错误事件对象，看它是否有 message 属性。如果没有，检查它是否是一个字符串。\n    if\
+    \ (evtError.message) { sMsg = evtError.message; }\n    else if (typeof evtError\
+    \ === \"string\") { sMsg = evtError; }\n\n    // 将消息传递给此工作线程的创建者\n    postMessage(\"\
+    Dedicated Worker - Error Message: \" + sMsg);\n}\n\n// 在某个时候，我们可以自己关闭线程\nself.close();\n\
+    ```\n\n以下是共享工作线程内部 JavaScript 的摘要：\n\n```\n// 可选地加载一些通用 JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// 全局变量，将保存对最后连接到此共享工作线程的线程的引用。也可以使用数组来存储每个已连接线程的端口。\nvar gLastPort\
+    \ = null;\n\n// 附加到 onconnect 事件以监听连接到此共享工作线程的线程\nself.onconnect = function (evtConnect)\
+    \ {\n    // 获取已连接线程端口的引用（数组中永远只有 1 个端口），并附加到 onmessage 事件\n    gLastPort = evtConnect.ports[0];\n\
+    \    gLastPort.onmessage = function (evtMessage) {\n        evtMessage.target.postMessage(\"\
+    Text received from the UI: \"\n        + evtMessage.data);\n    }\n}\n\n// 附加到\
+    \ onerror 事件以监听未处理的异常\nself.onerror = function (evtError) {\n    var sMsg = \"\
+    Unknown Error\";\n\n    // 测试错误事件对象，看它是否有 message 属性。如果没有，检查它是否是一个字符串。\n    if\
+    \ (evtError.message) { sMsg = evtError.message; }\n    else if (typeof evtError\
+    \ === \"string\") { sMsg = evtError; }\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 3]\n\n```\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\nif (abBuffer.byteLength) {\n    alert(\"Transferrable Objects\
+    \ are not supported by your browser\");\n}\n```\n\n```\n}\nelse if (evtError.message)\
+    \ {\n    updateResults(\"Error...Message: \" + evtError.message +\n        \"\
+    , File name: \" + evtError.filename +\n        \", Line number: \" + evtError.lineno);\n\
+    }\nelse {\n    updateResults(\"Unknown error\");\n}\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n```\n\n# Error Handling\n\nFor both dedicated and\
+    \ shared workers you can attach to the onerror event handler of a worker instance\
+    \ so that you can be informed if a runtime error occurs (e.g., maybe there is\
+    \ a network error preventing the creation of the worker object).\n\nFor dedicated\
+    \ workers, the onerror event handler will also tell you about any unhandled exceptions\
+    \ from within the worker thread.\n\nThe following is an example of how you would\
+    \ add an event listener for a onerror event on a worker object:\n\n```\naDedicatedWorker.onerror\
+    \ = function(evt) { alert(evt.message); }\naSharedWorker.onerror = function(evt)\
+    \ { alert(evt.message); }\n```\n\n| ErrorEvent properties | Description |\n| ---\
+    \ | --- |\n| message | A human-readable error message |\n| filename | The name\
+    \ of the script file in which the error occurred (in some browsers this property\
+    \ is undefined and in other browsers the property is an empty string) |\n| lineno\
+    \ | The line number of the script file on which the error occurred (in some browsers\
+    \ this is set to zero) |\n\n# Closing a Worker\n\nBoth a dedicated and shared\
+    \ worker thread can be closed by calling terminate on the worker instance as in\
+    \ the following example:\n\n```\naDedicatedWorker.terminate();\naSharedWorker.terminate();\n\
+    ```\n\nOne thing to be aware of with calling terminate is that it does not give\
+    \ the worker thread an opportunity to finish its operations or to clean up after\
+    \ itself.\n\nThe following is a summary of the JavaScript that creates a dedicated\
+    \ and shared worker:\n\n```\nvar gDedicatedWorker = null;\nvar gSharedWorker =\
+    \ null;\n\n$(document).ready(function () {\n    // If Dedicated Workers are supported\
+    \ by this browser...\n    if (window.Worker) {\n        gDedicatedWorker = new\
+    \ Worker(\"DedicatedWorker.js\");\n        gDedicatedWorker.onerror = handleError;\n\
+    \        gDedicatedWorker.onmessage = handleMessage;\n\n        gDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n    } // End if (window.Worker)\n\n    // If shared\
+    \ Workers are supported by this browser...\n    if (window.SharedWorker) {\n \
+    \       gSharedWorker = new SharedWorker(\"SharedWorker.js\");\n        gSharedWorker.onerror\
+    \ = handleError;\n        gSharedWorker.port.onmessage = handleMessage;\n\n  \
+    \      gSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n    } //\
+    \ End if (window.SharedWorker)\n});\n\n// OnError event listener\nfunction handleError(evtError)\
+    \ {\n    if (typeof evtError === \"string\") {\n        updateResults(\"Error:\
+    \ \" + evtError);\n    }\n    else if (evtError.message) {\n        updateResults(\"\
+    Error...Message: \" + evtError.message +\n            \", File name: \" + evtError.filename\
+    \ +\n            \", Line number: \" + evtError.lineno);\n    }\n    else {\n\
+    \        updateResults(\"Unknown error\");\n    }\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n```\n\n# WITHIN A WORKER\n\n# Including JavaScript\
+    \ Files\n\nWorker threads have access to an importScripts function which allows\
+    \ the thread to pull in all necessary JavaScript files.\n\nThe importScripts function\
+    \ can be used to import one or more files. If multiple files are specified, they\
+    \ are downloaded in parallel but will be loaded and processed synchronously in\
+    \ the order specified.\n\nAlso, the importScripts file will not return until all\
+    \ of the files specified have been loaded and processed.\n\nThe following is an\
+    \ example of using the importScripts to import 3 JavaScript files into the worker\
+    \ (this example stopped at 3 files but you can specify any number of files):\n\
+    \n```\nimportScripts(\"file1.js\", \"file2.js\", \"file3.js\");\n```\n\n# Receiving\
+    \ Messages\n\nIn order for a dedicated worker to receive messages from its creator\
+    \ it must attach to the onmessage event as in the following example:\n\n```\n\
+    self.onmessage = function(evt) {\n    // Data from calling thread can be found\
+    \ in the .data property\n    // of the parameter\n}\n```\n\nWithin shared workers,\
+    \ you need to handle the onconnect event which is triggered whenever a thread\
+    \ connects to the shared worker.\n\nWithin the onconnect event listener you can\
+    \ then attach to the onmessage event of the first port object in the ports array\
+    \ (there is only ever the one port in the array):\n\n```\nself.onconnect = function(evt)\
+    \ {\n    evt.ports[0].onmessage = function(evtMessage) {\n        // Data from\
+    \ calling thread can be found in the .data\n        // property of the parameter.\n\
+    \n        // The calling thread's port can be found in the .target\n        //\
+    \ property of the parameter\n    }\n}\n```\n\n# Passing Messages\n\nA dedicated\
+    \ worker is able to pass a message to its creator by means of the postMessage\
+    \ function:\n\n```\nself.postMessage(\"Hello from the dedicated worker\");\n```"
+  - "[PAGE 4]\n\nFrom a shared worker, in order to pass a message to a connected thread,\
+    \ you need to use the postMessage event on the port of the connected thread that\
+    \ you wish to send the message to.\n\nThere are a few options available to obtain\
+    \ the port object. One option could be the creation of a global array to hold\
+    \ each connected port from the onconnect event handler.\n\nAnother option for\
+    \ obtaining a port object is to access the target property of the onmessage event\
+    \ object which holds a reference to the calling thread's port as in the following\
+    \ example:\n\n```\nevt.target.postMessage(\"Hello from the shared worker\");\n\
+    ```\n\n# Timeouts\n\nWorker threads support timeouts (setTimeout, clearTimeout,\
+    \ setInterval, and clearInterval), which are very useful if you only want to do\
+    \ processing at set intervals rather than constantly processing.\n\nOne scenario\
+    \ could be if you wanted to check a 3rd party server to see if it has new information\
+    \ but you don't want to hammer the site with requests. What you could do is set\
+    \ up a timeout to check to see if there is new information every 5 minutes or\
+    \ so.\n\n# XMLHttpRequest\n\nWithin a worker thread, it's possible to make an\
+    \ XMLHttpRequest and, since a worker is separate from the UI thread of the browser\
+    \ window and won't affect performance, it's up to you if you want to make the\
+    \ request synchronously or asynchronously.\n\nOne thing to be aware of, however,\
+    \ is that within a worker the XMLHttpRequest object will only return data via\
+    \ the responseText property (the responseXML property will always return null\
+    \ when the XMLHttpRequest object is used in a worker).\n\nThe following is an\
+    \ example of the use of an XMLHttpRequest object within a worker:\n\n```\n// Data\
+    \ we want to send to server-side code\nvar objData = { \"sPageIndex\": iPage };\n\
+    \n// Make a synchronous call to the server\nvar xhrRequest = new XMLHttpRequest();\n\
+    xhrRequest.open(\"POST\", \"/main.aspx/GetNextPage\", false);\nxhrRequest.setRequestHeader(\"\
+    Content-Type\", \"application/json\");\nxhrRequest.send(JSON.stringify(objData));\n\
+    \n// Return the response to the UI thread\nself.postMessage(xhrRequest.responseText);\n\
+    ```\n\n# location\n\nWorker threads have access to a location object which indicates\
+    \ the absolute URI that was set at the time of the thread's creation.\n\nThe following\
+    \ location properties are available: href, protocol, host, hostname, port, pathname,\
+    \ search, and hash.\n\n# navigator\n\nThe navigator object is available within\
+    \ a worker giving some details about the browser.\n\nSome of the properties that\
+    \ are available are: appName, appVersion, platform, and userAgent.\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_4_0.png)\n\
+    \nAnother property available in the navigator object is onLine which will return\
+    \ false if the user agent is definitely offline and will return true if the user\
+    \ agent might be online.\nOne thing to note about the onLine property of the navigator\
+    \ object is that, at the time of this article's writing, not every browser supports\
+    \ it. As a result, if you choose to use this property, it would be best to check\
+    \ to see if the property exists first.\n\n# Error Handling\n\nA worker thread\
+    \ has the option of attaching to a global onerror event handler to listen for\
+    \ unhandled exceptions.\n\nThis is especially useful for shared workers since\
+    \ several browsers do not pass unhandled exceptions to the onerror event handler\
+    \ of the worker object itself.\n\nThe following is an example of attaching to\
+    \ the onerror event handler within a worker thread:\n\n```\nself.onerror = function(evt)\
+    \ {\n    // Handle the error possibly by doing a postMessage call to\n    // this\
+    \ thread's creator so that a message can be displayed\n}\n```\n\n# Closing Itself\n\
+    \nA worker can close itself by calling the close method:\n\n```\nself.close();\n\
+    ```\n\nThe following is a summary of the JavaScript within a dedicated worker:\n\
+    \n```\n// Optionally load in some common JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// Attach to the onmessage event to listen for messages from\n\
+    // the caller\nself.onmessage = function (evt) {\n    // Pass a message back\n\
+    \    self.postMessage(\"Text received from the UI: \" + evt.data);\n}\n\n// Attach\
+    \ to the onerror event to listen for unhandled exceptions\nself.onerror = function\
+    \ (evtError) {\n    var sMsg = \"Unknown Error\";\n\n    // Test the error event\
+    \ object to see if it has a message\n    // property. If it does not, check to\
+    \ see if it's a string.\n    if (evtError.message) { sMsg = evtError.message;\
+    \ }\n    else if (typeof evtError === \"string\") { sMsg = evtError; }\n\n   \
+    \ // Pass the message to this worker's creator\n    postMessage(\"Dedicated Worker\
+    \ - Error Message: \" + sMsg);\n}\n\n// At some point we can close the thread\
+    \ ourselves\nself.close();\n```\n\nThe following is a summary of the JavaScript\
+    \ within a shared worker:\n// Optionally load in some common JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// Global variable that will hold a reference to the last thread\n\
+    // that connects to this shared worker. Could also use an array to\n// store each\
+    \ connected thread's port.\nvar gLastPort = null;\n\n// Attach to the onconnect\
+    \ event to listen for threads that\n// connect to this shared thread\nself.onconnect\
+    \ = function (evtConnect) {\n    // Grab a reference to the connected thread's\
+    \ port (only\n    // even the 1 port in the array) and attach to the\n    // onmessage\
+    \ event\n    gLastPort = evtConnect.ports[0];\n    gLastPort.onmessage = function\
+    \ (evtMessage) {\n        evtMessage.target.postMessage(\"Text received from the\
+    \ UI: \"\n        + evtMessage.data);\n    }\n}\n\n// Attach to the onerror event\
+    \ to listen for unhandled exceptions\nself.onerror = function (evtError) {\n \
+    \   var sMsg = \"Unknown Error\";\n\n    // Test the error event object to see\
+    \ if it has a message\n    // property. If it does not, check to see if it's a\
+    \ string.\n    if (evtError.message) { sMsg = evtError.message; }\n    else if\
+    \ (typeof evtError === \"string\") { sMsg = evtError; }\n    ------Snippet cont'd\
+    \ on next page------------>"
+- md: "# EXTRAS\n\n## Creating Multiple Shared Workers\n\nOne of the advantages of\
+    \ shared workers is that you can share the use of a single worker thread across\
+    \ several open windows but you're not limited to a single shared worker.\n\nThe\
+    \ SharedWorker object accepts a 2nd parameter in the constructor that specifies\
+    \ the name of the worker.\n\nThe 2nd parameter is case sensitive so giving the\
+    \ shared worker a name of Worker in one window and worker in another window will\
+    \ actually result in two shared worker threads being created instead of one that\
+    \ is shared between the two windows because of the difference in the case of the\
+    \ 'W'.\n\nThe following is an example of how you can create two shared workers:\n\
+    \n```javascript\n// Window 1 - Shared worker 1 & 2\nvar aSharedWorker1 = new SharedWorker(\"\
+    SharedWorker.js\", \"Worker1\");\nvar aSharedWorker2 = new SharedWorker(\"SharedWorker.js\"\
+    , \"Worker2\");\n\n// Window 2 - Shared worker 1 & 2\nvar aSharedWorker1 = new\
+    \ SharedWorker(\"SharedWorker.js\", \"Worker1\");\nvar aSharedWorker2 = new SharedWorker(\"\
+    SharedWorker.js\", \"Worker2\");\n```\n\n## Spawning Additional Workers from Within\
+    \ a Worker\n\nIf need be, a worker thread can create additional worker objects\
+    \ (sometimes referred to as subworkers) in the same manner that they're created\
+    \ in the UI thread.\n\nSubworkers need to belong to the same origin/domain as\
+    \ the parent page. Also, URIs within subworkers are resolved relative to the parent\
+    \ thread's location rather than the location of the main page.\n\n## JSONP within\
+    \ a Worker\n\nBefore I go any further with this topic, it's important to understand\
+    \ that there are security concerns with importing JavaScript files/content from\
+    \ a 3rd party site.\n\nWhen you import data using script injection, the browser\
+    \ will download the JavaScript data received, evaluate it—turning the text received\
+    \ into functions, variables, objects, etc.—and any global code within the payload\
+    \ will be run.\n\nOther than the potential of having arbitrary code run, there\
+    \ is also the possibility of information being leaked to the 3rd party site via\
+    \ the HTTP traffic being exchanged in the process (cookies or other header information).\n\
+    \nTraditionally with JSONP you use script injection by modifying the DOM. In the\
+    \ case of Web Workers you don't have access to the DOM so how do we accomplish\
+    \ script injection?\n\nIt turns out that it is surprisingly simple to make a JSONP\
+    \ request from within a worker by using the importScripts function as in the following\
+    \ example:\n\n```javascript\nfunction MakeRequest(){\n    importScripts(\"http://SomeServer.com?jsonp=HandleRequest\"\
+    );\n}\nfunction HandleRequest(objJSON){\n    // do something with the returned\
+    \ JSON object\n}\n```\n\n## Inline Workers\n\nThere are times when you might want\
+    \ to take advantage of Web Workers but at the same time you don't want to deal\
+    \ with separate worker files. Inline workers have several advantages including:\n\
+    \n- You can make a server request that returns a string containing custom worker\
+    \ code on the fly to meet the current need of your code\n- By including the worker\
+    \ code as a string within your JavaScript file, or as part of the markup of the\
+    \ page, you can eliminate a network request which can speed up load time\n\nTo\
+    \ accomplish inline workers you populate a Blob object with a string containing\
+    \ the worker code. You then create a URL for the Blob and with that URL you can\
+    \ then create your Worker object. To create a URL for the Blob we use the window.URL.createObjectURL\
+    \ method which gives us a URL similar to the following:\n\n```\nblob:http://localhost/72cdddc4-7989-4104-87ef-cf65ed5f5bf9\n\
+    ```\n\nThe blob URLs will be unique and last for the lifetime of your application.\
+    \ If you no longer need the URL, you can release it by calling the window.URL.revokeObjectURL\
+    \ passing in the blob's URL.\n\nThe following is one example of how an inline\
+    \ worker can be created:\n\n```javascript\nvar bInlineWorker = new Blob([\"onmessage\
+    \ = function(evt) {\n    postMessage(\\\"Text received from the UI: \\\" + evt.data);\n\
+    }\"]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\nvar aDedicatedWorker\
+    \ = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\naDedicatedWorker.postMessage(\"\
+    Hello to our inline worker!\");\n```\n\nThe following example is a modification\
+    \ to the above approach, which defines the worker code within the markup of the\
+    \ page allowing for more natural editing of the code as compared to building it\
+    \ as a string directly within a Blob object:\n\n```html\n<script id=\"scriptWorker\"\
+    \ type=\"javascript/worker\">\n    // This block of code is ignored by the JavaScript\
+    \ engines\n    // of the browsers because of the type specified\n    self.onmessage\
+    \ = function(evt) {\n        self.postMessage(\"Text received from the UI: \"\
+    \ + evt.data);\n    };\n</script>\n```\n\nThe JavaScript code of the main page\
+    \ would then populate the blob dynamically from the content of the script tag:\n\
+    \n```javascript\nvar bInlineWorker = new Blob([document.getElementById(\"scriptWorker\"\
+    ).textContent]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\n\
+    var aDedicatedWorker = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\n\
+    aDedicatedWorker.postMessage(\"Hello to our inline worker!\");\n```\n\n## ADDITIONAL\
+    \ RESOURCES\n\nSome example code has been written to show a possible real-world\
+    \ use case for dedicated web workers.\n\nThe example demonstrates using a dedicated\
+    \ worker thread to pre-fetch data needed by a vertical list of items that the\
+    \ user is able to page through.\n\nMost of code is within the 'main.js' and 'DedicatedWorker.js'\
+    \ files and can be found in the following github repository.\n\n[https://github.com/dovicoapi/HTML5WebWorkerExample](https://github.com/dovicoapi/HTML5WebWorkerExample)\n\
+    \nThe **W3C spec** is located here: [http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)\n\
+    \nFor more information about **HTML5 Web Messaging**, which is the technology\
+    \ used to pass messages to and receive messages from Web Workers: [http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/).\
+    \ Check [http://caniuse.com/](http://caniuse.com/) for detailed breakdown of current\
+    \ browser support.\n\nBecause both specs and browsers are developing so quickly,\
+    \ it's especially good in this case to know the spec itself pretty well. Tutorials\
+    \ and step-by-step howto guides can become out of date, but the basic principles\
+    \ behind Web Workers are pretty solid. As a general rule, applicable to HTML5\
+    \ technologies including but not limited to Web Workers, try to cross-reference\
+    \ the spec against any howto guides or code snippets you find -- and be especially\
+    \ conscious of writing good test code. The web is replete with HTML5 developer\
+    \ sites but, I have found that the following sites stand out and are very helpful\
+    \ in understanding some of the details of the various technologies:\n\n- HTML5\
+    \ Zone: [www.DZone.com/mz/html5](http://www.DZone.com/mz/html5)\n- Mozilla Developer\
+    \ Network: [https://developer.mozilla.org/en-US/docs/HTML/HTML5](https://developer.mozilla.org/en-US/docs/HTML/HTML5)\n\
+    - HTML5 Rocks: [www.html5rocks.com](http://www.html5rocks.com)\n\n## ABOUT THE\
+    \ AUTHORS\n\nGerard Gallant is a Senior Software Developer / Software Architect\
+    \ with Dovico Software. For over a decade, he has played a major role in developing\
+    \ most software products released by Dovico ranging from the creation of the Microsoft\
+    \ Project link ActiveX control to the creation of the new Hosted Services API.\
+    \ He is married with two beautiful and smart girls. He unwinds by shooting hoops\
+    \ or watching a movie and also enjoys traveling extensively. Recent publications\
+    \ can be found on his blog: [http://cggallant.blogspot.ca/](http://cggallant.blogspot.ca/)\n\
+    \n## RECOMMENDED BOOK\n\nWeb apps would run much better if heavy calculations\
+    \ could be performed in the background, rather than compete with the user interface.\
+    \ With this book, you'll learn how to use Web Workers to run computationally intensive\
+    \ JavaScript code in a thread parallel to the UI. Yes, multi-threaded programming\
+    \ is complicated, but Web Workers provide a simple API that helps you be productive\
+    \ without the complex algorithms.\n\n**Buy Here**\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_6_0.png)\n\
+    \n**Browse our collection of over 150 Free Cheat Sheets**\n\n**Free PDF**\n\n\
+    **Upcoming Refcardz**\n\n- C++\n- Cypher\n- Clean Code\n- Git for the Enterprise\n\
+    \nDZone, Inc.\n150 Preston Executive Dr.\nSuite 201\nCary, NC 27513\n888.678.0399\n\
+    919.678.0300\n\n**Refcardz Feedback Welcome**\nrefcardz@dzone.com\n\n**Sponsorship\
+    \ Opportunities**\nsales@dzone.com\n\nDZone communities deliver over 6 million\
+    \ pages each month to more than 3.3 million software developers, architects and\
+    \ decision makers. DZone offers something for everyone, including news, tutorials,\
+    \ cheat sheets, blogs, feature articles, source code and more. \"**DZone is a\
+    \ developer's dream**\", says PC Magazine.\n\nISBN-13: 978-1-936502-75-2\nISBN-10:\
+    \ 1-936502-75-5\n50795\n9 781936 502752"
+  mdcn: "\n# 附加内容\n\n## 创建多个共享工作者\n\n共享工作者的一个优势在于，你可以让多个打开的窗口共享使用单个工作者线程，但你并不局限于只使用一个共享工作者。\n\
+    \n`SharedWorker` 对象在构造函数中接受第二个参数来指定工作者的名称。\n\n第二个参数是大小写敏感的。因此，如果在一个窗口中将共享工作者命名为\
+    \ `Worker`，而在另一个窗口中命名为 `worker`，由于 'W' 的大小写差异，实际上会创建两个共享工作者线程，而不是两个窗口之间共享的一个。\n\
+    \n以下是如何创建两个共享工作者的示例：\n\n```javascript\n// 窗口 1 - 共享工作者 1 和 2\nvar aSharedWorker1\
+    \ = new SharedWorker(\"SharedWorker.js\", \"Worker1\");\nvar aSharedWorker2 =\
+    \ new SharedWorker(\"SharedWorker.js\", \"Worker2\");\n\n// 窗口 2 - 共享工作者 1 和 2\n\
+    var aSharedWorker1 = new SharedWorker(\"SharedWorker.js\", \"Worker1\");\nvar\
+    \ aSharedWorker2 = new SharedWorker(\"SharedWorker.js\", \"Worker2\");\n```\n\n\
+    ## 从工作者内部生成额外的工作者\n\n如果需要，工作者线程可以像在 UI 线程中创建工作者对象一样，以相同的方式创建额外的工作者对象（有时称为子工作者）。\n\
+    \n子工作者需要与父页面属于相同的来源/域名。此外，子工作者中的 URI 是相对于父线程的位置进行解析的，而不是相对于主页面的位置。\n\n## 在工作者中使用\
+    \ JSONP\n\n在进一步讨论这个主题之前，重要的是要理解从第三方站点导入 JavaScript 文件/内容存在安全问题。\n\n当你使用脚本注入导入数据时，浏览器会下载接收到的\
+    \ JavaScript 数据，对其求值——将接收到的文本转换为函数、变量、对象等——并且负载中的任何全局代码都将被运行。\n\n除了可能运行任意代码外，还有可能通过交换过程中使用的\
+    \ HTTP 流量（如 Cookie 或其他头部信息）将信息泄露给第三方站点。\n\n传统上，JSONP 通过修改 DOM 来使用脚本注入。而在 Web Workers\
+    \ 的情况下，你无法访问 DOM，那么我们如何实现脚本注入呢？\n\n事实证明，通过使用 `importScripts` 函数，从工作者内部发出 JSONP\
+    \ 请求出奇地简单，如下例所示：\n\n```javascript\nfunction MakeRequest(){\n    importScripts(\"\
+    http://SomeServer.com?jsonp=HandleRequest\");\n}\nfunction HandleRequest(objJSON){\n\
+    \    // 处理返回的 JSON 对象\n}\n```\n\n## 内联工作者\n\n有时你可能想要利用 Web Workers，但同时又不想处理单独的工作者文件。内联工作者有几个优点，包括：\n\
+    \n- 你可以发出一个服务器请求，该请求动态返回包含自定义工作者代码的字符串，以满足代码的当前需求\n- 通过将工作者代码作为字符串包含在 JavaScript\
+    \ 文件中或作为页面标记的一部分，你可以消除网络请求，从而加快加载速度\n\n要实现内联工作者，你需要用一个包含工作者代码的字符串填充一个 `Blob` 对象。然后为该\
+    \ `Blob` 创建一个 URL，并使用该 URL 创建 `Worker` 对象。为了创建 `Blob` 的 URL，我们使用 `window.URL.createObjectURL`\
+    \ 方法，它会给我们一个类似于以下内容的 URL：\n\n```\nblob:http://localhost/72cdddc4-7989-4104-87ef-cf65ed5f5bf9\n\
+    ```\n\nBlob URL 将是唯一的，并且在你的应用程序生命周期内有效。如果你不再需要该 URL，可以通过调用 `window.URL.revokeObjectURL`\
+    \ 并传入 Blob 的 URL 来释放它。\n\n以下是创建内联工作者的一个示例：\n\n```javascript\nvar bInlineWorker\
+    \ = new Blob([\"onmessage = function(evt) {\n    postMessage(\\\"Text received\
+    \ from the UI: \\\" + evt.data);\n}\"]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\
+    \nvar aDedicatedWorker = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\n\
+    aDedicatedWorker.postMessage(\"Hello to our inline worker!\");\n```\n\n以下示例是对上述方法的修改，它在页面的标记中定义工作者代码，与直接在\
+    \ `Blob` 对象中将其构建为字符串相比，允许更自然地编辑代码：\n\n```html\n<script id=\"scriptWorker\" type=\"\
+    javascript/worker\">\n    // 由于指定的类型，浏览器的 JavaScript 引擎会忽略此代码块\n    self.onmessage\
+    \ = function(evt) {\n        self.postMessage(\"Text received from the UI: \"\
+    \ + evt.data);\n    };\n</script>\n```\n\n然后，主页面的 JavaScript 代码会从 script 标签的内容动态填充\
+    \ blob：\n\n```javascript\nvar bInlineWorker = new Blob([document.getElementById(\"\
+    scriptWorker\").textContent]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\
+    \nvar aDedicatedWorker = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\n\
+    aDedicatedWorker.postMessage(\"Hello to our inline worker!\");\n```\n\n## 附加资源\n\
+    \n已编写了一些示例代码，以展示专用 Web Workers 的一个可能的实际用例。\n\n该示例演示了如何使用专用工作者线程来预取用户可以分页浏览的垂直项目列表所需的数据。\n\
+    \n大部分代码位于 'main.js' 和 'DedicatedWorker.js' 文件中，可以在以下 GitHub 仓库中找到：\n\n[https://github.com/dovicoapi/HTML5WebWorkerExample](https://github.com/dovicoapi/HTML5WebWorkerExample)\n\
+    \n**W3C 规范**位于此处：[http://www.w3.org/TR/workers/](http://www.w3.org/TR/workers/)\n\
+    \n有关 **HTML5 Web Messaging** 的更多信息（这是用于与 Web Workers 传递和接收消息的技术）：[http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/)。查看\
+    \ [http://caniuse.com/](http://caniuse.com/) 了解当前浏览器支持情况的详细分解。\n\n由于规范和浏览器发展得如此之快，在这种情况下，对规范本身有深入的了解尤其重要。教程和分步指南可能会过时，但\
+    \ Web Workers 背后的基本原则相当稳固。作为适用于包括但不限于 Web Workers 在内的 HTML5 技术的一般规则，尝试将规范与你找到的任何操作指南或代码片段进行交叉引用——并特别注意编写良好的测试代码。网络上充斥着\
+    \ HTML5 开发者网站，但我发现以下网站非常突出，并且在理解各种技术的一些细节方面非常有帮助：\n\n- HTML5 Zone: [www.DZone.com/mz/html5](http://www.DZone.com/mz/html5)\n\
+    - Mozilla Developer Network: [https://developer.mozilla.org/en-US/docs/HTML/HTML5](https://developer.mozilla.org/en-US/docs/HTML/HTML5)\n\
+    - HTML5 Rocks: [www.html5rocks.com](http://www.html5rocks.com)\n\n## 关于作者\n\n\
+    Gerard Gallant 是 Dovico Software 的高级软件开发人员/软件架构师。十多年来，他在 Dovico 发布的大多数软件产品的开发中发挥了重要作用，从创建\
+    \ Microsoft Project 链接 ActiveX 控件到创建新的托管服务 API。他已婚，有两个美丽聪明的女孩。他通过投篮或看电影来放松身心，也喜欢广泛旅行。最近的出版物可以在他的博客上找到：[http://cggallant.blogspot.ca/](http://cggallant.blogspot.ca/)\n\
+    \n## 推荐书籍\n\n如果繁重的计算可以在后台执行，而不是与用户界面竞争，Web 应用程序的运行效果会好得多。通过这本书，你将学习如何使用 Web Workers\
+    \ 在与 UI 并行的线程中运行计算密集型 JavaScript 代码。是的，多线程编程很复杂，但 Web Workers 提供了一个简单的 API，帮助你在不使用复杂算法的情况下提高生产力。\n\
+    \n**点击此处购买**\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_6_0.png)\n\n**浏览我们超过\
+    \ 150 个免费速查表的合集**\n\n**免费 PDF**\n\n**即将推出的 Refcardz**\n\n- C++\n- Cypher\n- Clean\
+    \ Code\n- Git for the Enterprise\n\nDZone, Inc.\n150 Preston Executive Dr.\nSuite\
+    \ 201\nCary, NC 27513\n888.678.0399\n919.678.0300\n\n**欢迎提供 Refcardz 反馈**\nrefcardz@dzone.com\n\
+    \n**赞助机会**\nsales@dzone.com\n\nDZone 社区每月为超过 330 万软件开发人员、架构师和决策者提供超过 600 万页的内容。DZone\
+    \ 为每个人提供内容，包括新闻、教程、速查表、博客、专题文章、源代码等。\"**DZone 是开发者的梦想**\"，PC Magazine 如此评价。\n\n\
+    ISBN-13: 978-1-936502-75-2\nISBN-10: 1-936502-75-5\n50795\n9 781936 502752\n"
+  merge: 0
+  raw:
+  - "[PAGE 5]\n\n```\n// Pass the message to this worker's creator\ngLastPort.postMessage(\"\
+    Shared Worker - Error Message: \" +\n    sMsg);\n}\n\n// At some point we can\
+    \ close the thread ourselves\nself.close();\n```\n\n# EXTRAS\n\n# Creating Multiple\
+    \ Shared Workers\n\nOne of the advantages of shared workers is that you can share\
+    \ the use of a single worker thread across several open windows but you're not\
+    \ limited to a single shared worker.\n\nThe SharedWorker object accepts a 2nd\
+    \ parameter in the constructor that specifies the name of the worker.\n\nThe 2nd\
+    \ parameter is case sensitive so giving the shared worker a name of Worker in\
+    \ one window and worker in another window will actually result in two shared worker\
+    \ threads being created instead of one that is shared between the two windows\
+    \ because of the difference in the case of the 'W'.\n\nThe following is an example\
+    \ of how you can create two shared workers:\n\n```\n// Window 1 - Shared worker\
+    \ 1 & 2\nvar aSharedWorker1 = new SharedWorker(\"SharedWorker.js\",\n    \"Worker1\"\
+    );\nvar aSharedWorker2 = new SharedWorker(\"SharedWorker.js\",\n    \"Worker2\"\
+    );\n\n// Window 2 - Shared worker 1 & 2\nvar aSharedWorker1 = new SharedWorker(\"\
+    SharedWorker.js\",\n    \"Worker1\");\nvar aSharedWorker2 = new SharedWorker(\"\
+    SharedWorker.js\",\n    \"Worker2\");\n```\n\n# Spawning Additional Workers from\
+    \ Within a Worker\n\nIf need be, a worker thread can create additional worker\
+    \ objects (sometimes referred to as subworkers) in the same manner that they're\
+    \ created in the UI thread.\n\nSubworkers need to belong to the same origin/domain\
+    \ as the parent page. Also, URIs within subworkers are resolved relative to the\
+    \ parent thread's location rather than the location of the main page.\n\n# JSONP\
+    \ within a Worker\n\nBefore I go any further with this topic, it's important to\
+    \ understand that there are security concerns with importing JavaScript files/content\
+    \ from a 3rd party site.\n\nWhen you import data using script injection, the browser\
+    \ will download the JavaScript data received, evaluate it—turning the text received\
+    \ into functions, variables, objects, etc.—and any global code within the payload\
+    \ will be run.\n\nOther than the potential of having arbitrary code run, there\
+    \ is also the possibility of information being leaked to the 3rd party site via\
+    \ the HTTP traffic being exchanged in the process (cookies or other header information).\n\
+    \nTraditionally with JSONP you use script injection by modifying the DOM. In the\
+    \ case of Web Workers you don't have access to the DOM so how do we accomplish\
+    \ script injection?\n\nIt turns out that it is surprisingly simple to make a JSONP\
+    \ request from within a worker by using the importScripts function as in the following\
+    \ example:\n\n```\nfunction MakeRequest(){\n    importScripts(\"http://SomeServer.com?jsonp=HandleRequest\"\
+    );\n}\nfunction HandleRequest(objJSON){\n    // do something with the returned\
+    \ JSON object\n}\n```\n\n# Inline Workers\n\nThere are times when you might want\
+    \ to take advantage of Web Workers but at the same time you don't want to deal\
+    \ with separate worker files. Inline workers have several advantages including:\n\
+    \n+   - You can make a server request that returns a string containing custom\
+    \ worker code on the fly to meet the current need of your code\n- By including\
+    \ the worker code as a string within your JavaScript file, or as part of the markup\
+    \ of the page, you can eliminate a network request which can speed up load time\n\
+    \nTo accomplish inline workers you populate a Blob object with a string containing\
+    \ the worker code. You then create a URL for the Blob and with that URL you can\
+    \ then create your Worker object. To create a URL for the Blob we use the window.URL.createObjectURL\
+    \ method which gives us a URL similar to the following:\n\n```\nblob:http://localhost/72cdddc4-7989-4104-87ef-cf65ed5f5bf9\n\
+    ```\n\nThe blob URLs will be unique and last for the lifetime of your application.\
+    \ If you no longer need the URL, you can release it by calling the window.URL.revokeObjectURL\
+    \ passing in the blob's URL.\n\nThe following is one example of how an inline\
+    \ worker can be created:\n\n```\nvar bInlineWorker = new Blob([\"onmessage = function(evt)\
+    \ {\n    postMessage(\\\"Text received from the UI: \\\" + evt.data);\n}\"]);\n\
+    var sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\nvar aDedicatedWorker\
+    \ = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\naDedicatedWorker.postMessage(\"\
+    Hello to our inline worker!\");\n```\n\nThe following example is a modification\
+    \ to the above approach, which defines the worker code within the markup of the\
+    \ page allowing for more natural editing of the code as compared to building it\
+    \ as a string directly within a Blob object:\n\n```\n<script id=\"scriptWorker\"\
+    \ type=\"javascript/worker\">\n    // This block of code is ignored by the JavaScript\
+    \ engines\n    // of the browsers because of the type specified\n    self.onmessage\
+    \ = function(evt) {\n        self.postMessage(\"Text received from the UI: \"\
+    \ + evt.data);\n    };\n</script>\n```\n\nThe JavaScript code of the main page\
+    \ would then populate the blob dynamically from the content of the script tag:\n\
+    \n```\nvar bInlineWorker = new Blob([document.\n    getElementById(\"scriptWorker\"\
+    ).textContent]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\n\
+    var aDedicatedWorker = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\n\
+    aDedicatedWorker.postMessage(\"Hello to our inline worker!\");\n```\n\n# ADDITIONAL\
+    \ RESOURCES\n\nSome example code has been written to show a possible real-world\
+    \ use case for dedicated web workers.\n\nThe example demonstrates using a dedicated\
+    \ worker thread to pre-fetch data needed by a vertical list of items that the\
+    \ user is able to page through.\n\nMost of code is within the 'main.js' and 'DedicatedWorker.js'\
+    \ files and can be found in the following github repository.\n\nhttps://github.com/dovicoapi/HTML5WebWorkerExample\n\
+    \nThe **W3C spec** is located here: http://www.w3.org/TR/workers/"
+  - '[PAGE 6]
+
+
+    For more information about **HTML5 Web Messaging**, which is the technology used
+    to pass messages to and receive messages from Web Workers: [http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/)
+    Check [http://caniuse.com/](http://caniuse.com/) for detailed breakdown of current
+    browser support.
+
+
+    Because both specs and browsers are developing so quickly, it''s especially good
+    in this case to know the spec itself pretty well. Tutorials and step-by-step howto
+    guides can become out of date, but the basic principles behind Web Workers are
+    pretty solid. As a general rule, applicable to HTML5 technologies including but
+    not limited to Web Workers, try to cross-reference the spec against any howto
+    guides or code snippets you find -- and be especially conscious of writing good
+    test code. The web is replete with HTML5 developer sites but, I have found that
+    the following sites stand out and are very helpful in understanding some of the
+    details of the various technologies:
+
+
+    +   - HTML5 Zone: [www.DZone.com/mz/html5](http://www.DZone.com/mz/html5)
+
+    - Mozilla Developer Network: [https://developer.mozilla.org/en-US/docs/HTML/HTML5](https://developer.mozilla.org/en-US/docs/HTML/HTML5)
+
+    - HTML5 Rocks: [www.html5rocks.com](http://www.html5rocks.com)
+
+
+    # ABOUT THE AUTHORS
+
+
+    Gerard Gallant is a Senior Software Developer / Software Architect with Dovico
+    Software. For over a decade, he has played a major role in developing most software
+    products released by Dovico ranging from the creation of the Microsoft Project
+    link ActiveX control to the creation of the new Hosted Services API. He is married
+    with two beautiful and smart girls. He unwinds by shooting hoops or watching a
+    movie and also enjoys traveling extensively. Recent publications can be found
+    on his blog: [http://cggallant.blogspot.ca/](http://cggallant.blogspot.ca/)
+
+
+    # RECOMMENDED BOOK
+
+
+    Web apps would run much better if heavy calculations could be performed in the
+    background, rather than compete with the user interface. With this book, you''ll
+    learn how to use Web Workers to run computationally intensive JavaScript code
+    in a thread parallel to the UI. Yes, multi-threaded programming is complicated,
+    but Web Workers provide a simple API that helps you be productive without the
+    complex algorithms.
+
+
+    **Buy Here**
+
+
+    ![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_6_0.png)
+
+
+    # Browse our collection of over 150 Free Cheat Sheets
+
+
+    **Free PDF**
+
+
+    # Upcoming Refcardz
+
+
+    +   - C++
+
+    - Cypher
+
+    - Clean Code
+
+    - Git for the Enterprise
+
+
+    DZone, Inc.
+
+    150 Preston Executive Dr.
+
+    Suite 201
+
+    Cary, NC 27513
+
+    888.678.0399
+
+    919.678.0300
+
+
+    **Refcardz Feedback Welcome**
+
+    refcardz@dzone.com
+
+
+    **Sponsorship Opportunities**
+
+    sales@dzone.com
+
+
+    DZone communities deliver over 6 million pages each month to more than 3.3 million
+    software developers, architects and decision makers. DZone offers something for
+    everyone, including news, tutorials, cheat sheets, blogs, feature articles, source
+    code and more. "**DZone is a developer''s dream**", says PC Magazine.
+
+
+    ISBN-13: 978-1-936502-75-2
+
+    ISBN-10: 1-936502-75-5
+
+    50795
+
+    9 781936 502752'
+pages:
+- img_proc: true
+  md: '![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_0_0.png)
+
+
+    # # Collect, Manage and Share All the Answers Your Team Needs
+
+
+    +   > Q&A Software for Enterprise Knowledge Sharing
+
+    > Mobile-friendly Responsive Design
+
+    > Easy to Customize with Themes and Plugins
+
+    > Integrates with Your SSO and IT Infrastructure
+
+    > Choose Cloud-based or On-premise Hosting
+
+
+    +   [Watch Video](#) | [Free Demo](#) | [Pricing](#)'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# # HTML5 Web Workers
+
+
+    # ## Multithreaded JavaScript for High-Performance Web Apps
+
+
+    By: Gerard Gallant
+
+
+    +   - Contents Include:
+
+    - Creating Workers
+
+    - Within a Worker
+
+    - Error Handling
+
+    - Passing Messages to a Worker
+
+    - Receiving Messages
+
+    - Additional Resources... and More!
+
+
+    # ## INTRODUCTION
+
+
+    Prior to HTML5 Web Workers, all JavaScript code would run in the same thread as
+    the user interface of the browser window.
+
+
+    The result was that all long-running scripts would cause the browser window to
+    become unresponsive to user input until the processing finished. If the script
+    took long enough, the browser would even prompt the user to see if they wanted
+    to stop the unresponsive script.
+
+
+    Web Workers came to the rescue by allowing JavaScript code to run in a separate
+    thread from the browser window''s UI thread. This allows long-running scripts
+    to do their processing without interfering with the responsiveness of the browser''s
+    UI (the user can still click on buttons and scroll content for example).
+
+
+    A couple of things to be aware of with Web Workers is that, because they are running
+    in a separate thread from the UI, the worker threads have no access to the DOM
+    or other UI functionality. In addition, Web Workers are not intended to be used
+    in large numbers and are expected to be long-lived since they have a high start-up
+    performance cost and high memory cost per worker instance.
+
+
+    # ### Types of Workers
+
+
+    There are two types of workers available: dedicated workers and shared workers.
+
+
+    Dedicated workers are linked to their creator and are a bit simpler to work with
+    than shared workers.
+
+
+    Shared workers, on the other hand, allow any script from the same origin/domain
+    to obtain a reference to the worker and communicate with it.
+
+
+    Since worker threads take time to start initially and use a lot of memory per
+    worker, being able to share a single worker rather than creating one for each
+    open window can improve performance.
+
+
+    The trade off, however, is that shared workers are a bit more involved to set
+    up and work with than dedicated workers.
+
+
+    # ### Shared Worker Scope
+
+
+    You may be curious about what happens when the window that created a shared worker
+    is closed. Is the worker thread still accessible by other windows from the same
+    origin?
+
+
+    A shared worker will remain active as long as one window has a connection to it.
+    For example:
+
+
+    Window 1 creates a shared worker and Window 2 connects to it.
+
+
+    Later, Window 1 is closed but, because Window 2 is still connected, the shared
+    worker thread remains active even though Window 2 didn''t originally create it.
+
+
+    # ### Browser Support
+
+
+    [http://caniuse.com](http://caniuse.com): This handy website can tell you if a
+    feature is supported by a browser, and in which version of the browser the desired
+    feature became available. This can save considerable testing time needed to determine
+    if the desired feature is available in the browsers you intend to support. The
+    site is updated regularly.
+
+
+    At the time of this article''s writing, dedicated workers have the most browser
+    support including:
+
+
+    Internet Explorer 10+, Firefox, Chrome, Safari, Opera, iOS Safari, BlackBerry,
+    Opera Mobile, Chrome for Android, and Firefox for Android.
+
+
+    Shared worker support currently includes:
+
+
+    Chrome, Safari, Opera, iOS Safari, BlackBerry, and Opera Mobile
+
+
+    # ## CREATING WORKERS
+
+
+    # ### Test if the feature exists
+
+
+    Unless you know for certain that your users will be using a specific browser version,
+    there is a chance that your website will be accessed by a browser that does not
+    have the HTML5 feature you wish to use.
+
+
+    It is always best to test if the browser supports the feature you intend to use
+    before you try using the feature.
+
+
+    Both dedicated and shared workers will exist as objects on the global window object
+    if the browser supports them.
+
+
+    The following is an example of how you can test to see if the browser supports
+    dedicated or shared workers:
+
+
+    ```
+
+    if (window.Worker) { /* Dedicated Workers are supported */ }
+
+    if (window.SharedWorker) { /* Shared Workers are supported */ }
+
+    ```
+
+
+    # ### Creating a Worker
+
+
+    To create dedicated worker, you simply create a new instance of the Worker object
+    passing in a string that specifies the location of the JavaScript file that contains
+    the worker thread''s main code.
+
+
+    The following is an example of how a dedicated worker can be created:
+
+
+    ```
+
+    var aDedicatedWorker = new Worker("DedicatedWorker.js");
+
+    ```
+
+
+    ![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_1_0.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "A shared worker is created the same way you create a dedicated worker with\
+    \ the only change being that, rather than specifying a Worker object, we specify\
+    \ a SharedWorker object:\n\n```\nvar aSharedWorker = new SharedWorker(\"SharedWorker.js\"\
+    );\n```\n\nThe worker objects were designed to accept a string indicating the\
+    \ location of the JavaScript file (rather than a function) in order to prevent\
+    \ the creation of a closure that would allow the worker to gain direct access\
+    \ to the browser's DOM or other page elements.\n\n# Receiving Messages from a\
+    \ Worker\n\nCommunication between workers and the thread that created them is\
+    \ accomplished by passing messages.\n\nSince several HTML5 technologies pass messages,\
+    \ a separate specification exists that is specifically for messages called HTML5\
+    \ Web Messaging. I mention this because certain details critical to how Web Workers\
+    \ work are not found within the web worker specifications but rather within the\
+    \ web messaging specifications.\n\nIn order to receive messages from a worker,\
+    \ you need to attach to the onmessage event handler of the worker instance.\n\n\
+    The following is an example of how you can set up an event listener for a dedicated\
+    \ worker:\n\n```\naDedicatedWorker.onmessage = OnWorkerMessage;\n```\n\nSetting\
+    \ up the event listener for a shared worker object is similar to the dedicated\
+    \ worker but in this case you need to access the port object as in the following\
+    \ example:\n\n```\naSharedWorker.port.onmessage = OnWorkerMessage;\n```\n\nFor\
+    \ both dedicated and shared workers, you can also attach to the message event\
+    \ handler event type by using the addEventListener method as in the following\
+    \ example:\n\n```\naSharedWorker.port.addEventListener(\"message\", OnWorkerMessage,\
+    \ false);\n```\n\nOne thing to be aware of if you use the addEventListener method\
+    \ is that, for shared workers, you will also need to start the worker.\n\n```\n\
+    aSharedWorker.port.start();\n```\n\nThe onmessage event listener method will be\
+    \ passed by a MessageEvent parameter which will have a .data property containing\
+    \ the message passed from the worker thread.\n\nThe following is our onmessage\
+    \ event listener (there is no difference between dedicated and shared workers\
+    \ here):\n\n```\nfunction OnWorkerMessage(evt){\n    alert(\"Message received\
+    \ from the worker: \" + evt.data);\n}\n```\n\n# Passing Messages to a Worker\n\
+    \nTo pass a message to a dedicated worker, you call the postMessage function of\
+    \ the worker instance as in the following example:\n\n```\naDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n```\n\nPassing a message to a shared worker is\
+    \ similar but in this case the postMessage function is found on the port object:\n\
+    \n```\naSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n```\n\n\
+    The postMessage function is not limited to just passing strings between threads.\n\
+    \nYou can also pass structured data like JSON objects, JavaScript objects like\
+    \ numbers and Dates, as well as certain data objects like File Blob, FileList\
+    \ and ArrayBuffer.\n\nThe following is an example of passing an object:\n\n```\n\
+    var objData = {\n    \"employeeId\": 103,\n    \"name\": \"Sam Smith\",\n    \"\
+    dateHired\": new Date(2006, 11, 15)\n};\naDedicatedWorker.postMessage(objData);\n\
+    ```\n\nBecause the objects are passed between the two threads so seamlessly (we\
+    \ pass the object in from one side and receive it on the other side without any\
+    \ special work on our part), it feels like the data is passed directly but by\
+    \ default that is not actually the case. By default, all data is actually copied\
+    \ between the threads (also referred to as structured cloning).\n\nWhen you pass\
+    \ data to another thread, behind the scenes the object is serialized into a string,\
+    \ passed to the other thread, and then de-serialized back into an object on the\
+    \ other side.\n\nFor the most part you probably won't notice too much of a performance\
+    \ hit if you're just passing small amounts of data, but if you need to pass large\
+    \ amounts of data, this cloning may result in noticeable delays.\n\nFortunately,\
+    \ some browsers now support a concept called transferable objects where the ownership\
+    \ of the data is transferred to the other thread. The data is moved rather than\
+    \ copied, which can result in large performance improvements.\n\nWhen you transfer\
+    \ an object like an ArrayBuffer to another thread, for example, the contents are\
+    \ transferred to the other thread leaving an empty ArrayBuffer object in the calling\
+    \ thread. To transfer an object to a thread you still use the postMessage method\
+    \ but also include an array in the optional second parameter indicating which\
+    \ items in the message should be transferred.\n\n> Hot Tip\nAt the time of this\
+    \ writing, not all browsers support the second parameter of the postMessage method\
+    \ and will actually throw an exception if you attempt to use the second parameter.\
+    \ It is recommended that you use a try/catch statement around your postMessage\
+    \ call if you wish to use this technique.\n\nIf you're passing in just the one\
+    \ object, as in the following example, then you can specify the object itself\
+    \ in the array.\n\n```\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\n```\n\nNot all objects are transferable but, if the object you're\
+    \ passing contains a transferable object, you can specify just the portion of\
+    \ the object that you want to be transferred in the transfer parameter array as\
+    \ in the following example:\n\n```\nvar objData = {\n    \"employeeId\": 103,\n\
+    \    \"name\": \"Sam Smith\",\n    \"dateHired\": new Date(2006, 11, 15),\n  \
+    \  \"abBuffer\": new ArrayBuffer(32)\n};\naDedicatedWorker.postMessage(objData,\
+    \ [objData.abBuffer]);\n```\n\nIf the object you are passing to the other thread\
+    \ contains multiple transferable objects, you can specify each item by comma separating\
+    \ them in the transfer parameter array.\n\nNot all browsers support transferable\
+    \ objects. The following example demonstrates a way to detect if a browser supports\
+    \ transferable objects by actually trying to pass a small amount of data in an\
+    \ ArrayBuffer to another thread. If the buffer's length is zero after the postMessage\
+    \ call, then we know that the data was transferred rather than simply copied:"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: "```\nvar abBuffer = new ArrayBuffer(32);\naDedicatedWorker.postMessage(abBuffer,\
+    \ [abBuffer]);\nif (abBuffer.byteLength) {\n    alert(\"Transferrable Objects\
+    \ are not supported by your browser\");\n}\n```\n\n```\n}\nelse if (evtError.message)\
+    \ {\n    updateResults(\"Error...Message: \" + evtError.message +\n        \"\
+    , File name: \" + evtError.filename +\n        \", Line number: \" + evtError.lineno);\n\
+    }\nelse {\n    updateResults(\"Unknown error\");\n}\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n```\n\n# Error Handling\n\nFor both dedicated and\
+    \ shared workers you can attach to the onerror event handler of a worker instance\
+    \ so that you can be informed if a runtime error occurs (e.g., maybe there is\
+    \ a network error preventing the creation of the worker object).\n\nFor dedicated\
+    \ workers, the onerror event handler will also tell you about any unhandled exceptions\
+    \ from within the worker thread.\n\nThe following is an example of how you would\
+    \ add an event listener for a onerror event on a worker object:\n\n```\naDedicatedWorker.onerror\
+    \ = function(evt) { alert(evt.message); }\naSharedWorker.onerror = function(evt)\
+    \ { alert(evt.message); }\n```\n\n| ErrorEvent properties | Description |\n| ---\
+    \ | --- |\n| message | A human-readable error message |\n| filename | The name\
+    \ of the script file in which the error occurred (in some browsers this property\
+    \ is undefined and in other browsers the property is an empty string) |\n| lineno\
+    \ | The line number of the script file on which the error occurred (in some browsers\
+    \ this is set to zero) |\n\n# Closing a Worker\n\nBoth a dedicated and shared\
+    \ worker thread can be closed by calling terminate on the worker instance as in\
+    \ the following example:\n\n```\naDedicatedWorker.terminate();\naSharedWorker.terminate();\n\
+    ```\n\nOne thing to be aware of with calling terminate is that it does not give\
+    \ the worker thread an opportunity to finish its operations or to clean up after\
+    \ itself.\n\nThe following is a summary of the JavaScript that creates a dedicated\
+    \ and shared worker:\n\n```\nvar gDedicatedWorker = null;\nvar gSharedWorker =\
+    \ null;\n\n$(document).ready(function () {\n    // If Dedicated Workers are supported\
+    \ by this browser...\n    if (window.Worker) {\n        gDedicatedWorker = new\
+    \ Worker(\"DedicatedWorker.js\");\n        gDedicatedWorker.onerror = handleError;\n\
+    \        gDedicatedWorker.onmessage = handleMessage;\n\n        gDedicatedWorker.postMessage(\"\
+    Hello from the UI thread!\");\n    } // End if (window.Worker)\n\n    // If shared\
+    \ Workers are supported by this browser...\n    if (window.SharedWorker) {\n \
+    \       gSharedWorker = new SharedWorker(\"SharedWorker.js\");\n        gSharedWorker.onerror\
+    \ = handleError;\n        gSharedWorker.port.onmessage = handleMessage;\n\n  \
+    \      gSharedWorker.port.postMessage(\"Hello from the UI thread!\");\n    } //\
+    \ End if (window.SharedWorker)\n});\n\n// OnError event listener\nfunction handleError(evtError)\
+    \ {\n    if (typeof evtError === \"string\") {\n        updateResults(\"Error:\
+    \ \" + evtError);\n    }\n    else if (evtError.message) {\n        updateResults(\"\
+    Error...Message: \" + evtError.message +\n            \", File name: \" + evtError.filename\
+    \ +\n            \", Line number: \" + evtError.lineno);\n    }\n    else {\n\
+    \        updateResults(\"Unknown error\");\n    }\n}\n\n// OnMessage event listener\n\
+    function handleMessage(evtMessage) {\n    updateResults(\"Message received from\
+    \ the worker: \" +\n        evtMessage.data);\n}\n\n// A helper to update a div\
+    \ on the page with a new message\nfunction updateResults(sMessage) {\n    var\
+    \ $divResults = $(\"#divResults\");\n    $divResults.html($divResults.html() +\
+    \ \"<br />\" + sMessage);\n}\n```\n\n# WITHIN A WORKER\n\n# Including JavaScript\
+    \ Files\n\nWorker threads have access to an importScripts function which allows\
+    \ the thread to pull in all necessary JavaScript files.\n\nThe importScripts function\
+    \ can be used to import one or more files. If multiple files are specified, they\
+    \ are downloaded in parallel but will be loaded and processed synchronously in\
+    \ the order specified.\n\nAlso, the importScripts file will not return until all\
+    \ of the files specified have been loaded and processed.\n\nThe following is an\
+    \ example of using the importScripts to import 3 JavaScript files into the worker\
+    \ (this example stopped at 3 files but you can specify any number of files):\n\
+    \n```\nimportScripts(\"file1.js\", \"file2.js\", \"file3.js\");\n```\n\n# Receiving\
+    \ Messages\n\nIn order for a dedicated worker to receive messages from its creator\
+    \ it must attach to the onmessage event as in the following example:\n\n```\n\
+    self.onmessage = function(evt) {\n    // Data from calling thread can be found\
+    \ in the .data property\n    // of the parameter\n}\n```\n\nWithin shared workers,\
+    \ you need to handle the onconnect event which is triggered whenever a thread\
+    \ connects to the shared worker.\n\nWithin the onconnect event listener you can\
+    \ then attach to the onmessage event of the first port object in the ports array\
+    \ (there is only ever the one port in the array):\n\n```\nself.onconnect = function(evt)\
+    \ {\n    evt.ports[0].onmessage = function(evtMessage) {\n        // Data from\
+    \ calling thread can be found in the .data\n        // property of the parameter.\n\
+    \n        // The calling thread's port can be found in the .target\n        //\
+    \ property of the parameter\n    }\n}\n```\n\n# Passing Messages\n\nA dedicated\
+    \ worker is able to pass a message to its creator by means of the postMessage\
+    \ function:\n\n```\nself.postMessage(\"Hello from the dedicated worker\");\n```"
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: "From a shared worker, in order to pass a message to a connected thread, you\
+    \ need to use the postMessage event on the port of the connected thread that you\
+    \ wish to send the message to.\n\nThere are a few options available to obtain\
+    \ the port object. One option could be the creation of a global array to hold\
+    \ each connected port from the onconnect event handler.\n\nAnother option for\
+    \ obtaining a port object is to access the target property of the onmessage event\
+    \ object which holds a reference to the calling thread's port as in the following\
+    \ example:\n\n```\nevt.target.postMessage(\"Hello from the shared worker\");\n\
+    ```\n\n# Timeouts\n\nWorker threads support timeouts (setTimeout, clearTimeout,\
+    \ setInterval, and clearInterval), which are very useful if you only want to do\
+    \ processing at set intervals rather than constantly processing.\n\nOne scenario\
+    \ could be if you wanted to check a 3rd party server to see if it has new information\
+    \ but you don't want to hammer the site with requests. What you could do is set\
+    \ up a timeout to check to see if there is new information every 5 minutes or\
+    \ so.\n\n# XMLHttpRequest\n\nWithin a worker thread, it's possible to make an\
+    \ XMLHttpRequest and, since a worker is separate from the UI thread of the browser\
+    \ window and won't affect performance, it's up to you if you want to make the\
+    \ request synchronously or asynchronously.\n\nOne thing to be aware of, however,\
+    \ is that within a worker the XMLHttpRequest object will only return data via\
+    \ the responseText property (the responseXML property will always return null\
+    \ when the XMLHttpRequest object is used in a worker).\n\nThe following is an\
+    \ example of the use of an XMLHttpRequest object within a worker:\n\n```\n// Data\
+    \ we want to send to server-side code\nvar objData = { \"sPageIndex\": iPage };\n\
+    \n// Make a synchronous call to the server\nvar xhrRequest = new XMLHttpRequest();\n\
+    xhrRequest.open(\"POST\", \"/main.aspx/GetNextPage\", false);\nxhrRequest.setRequestHeader(\"\
+    Content-Type\", \"application/json\");\nxhrRequest.send(JSON.stringify(objData));\n\
+    \n// Return the response to the UI thread\nself.postMessage(xhrRequest.responseText);\n\
+    ```\n\n# location\n\nWorker threads have access to a location object which indicates\
+    \ the absolute URI that was set at the time of the thread's creation.\n\nThe following\
+    \ location properties are available: href, protocol, host, hostname, port, pathname,\
+    \ search, and hash.\n\n# navigator\n\nThe navigator object is available within\
+    \ a worker giving some details about the browser.\n\nSome of the properties that\
+    \ are available are: appName, appVersion, platform, and userAgent.\n\n![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_4_0.png)\n\
+    \nAnother property available in the navigator object is onLine which will return\
+    \ false if the user agent is definitely offline and will return true if the user\
+    \ agent might be online.\nOne thing to note about the onLine property of the navigator\
+    \ object is that, at the time of this article's writing, not every browser supports\
+    \ it. As a result, if you choose to use this property, it would be best to check\
+    \ to see if the property exists first.\n\n# Error Handling\n\nA worker thread\
+    \ has the option of attaching to a global onerror event handler to listen for\
+    \ unhandled exceptions.\n\nThis is especially useful for shared workers since\
+    \ several browsers do not pass unhandled exceptions to the onerror event handler\
+    \ of the worker object itself.\n\nThe following is an example of attaching to\
+    \ the onerror event handler within a worker thread:\n\n```\nself.onerror = function(evt)\
+    \ {\n    // Handle the error possibly by doing a postMessage call to\n    // this\
+    \ thread's creator so that a message can be displayed\n}\n```\n\n# Closing Itself\n\
+    \nA worker can close itself by calling the close method:\n\n```\nself.close();\n\
+    ```\n\nThe following is a summary of the JavaScript within a dedicated worker:\n\
+    \n```\n// Optionally load in some common JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// Attach to the onmessage event to listen for messages from\n\
+    // the caller\nself.onmessage = function (evt) {\n    // Pass a message back\n\
+    \    self.postMessage(\"Text received from the UI: \" + evt.data);\n}\n\n// Attach\
+    \ to the onerror event to listen for unhandled exceptions\nself.onerror = function\
+    \ (evtError) {\n    var sMsg = \"Unknown Error\";\n\n    // Test the error event\
+    \ object to see if it has a message\n    // property. If it does not, check to\
+    \ see if it's a string.\n    if (evtError.message) { sMsg = evtError.message;\
+    \ }\n    else if (typeof evtError === \"string\") { sMsg = evtError; }\n\n   \
+    \ // Pass the message to this worker's creator\n    postMessage(\"Dedicated Worker\
+    \ - Error Message: \" + sMsg);\n}\n\n// At some point we can close the thread\
+    \ ourselves\nself.close();\n```\n\nThe following is a summary of the JavaScript\
+    \ within a shared worker:\n// Optionally load in some common JavaScript\n// self.importScripts(\"\
+    common.js\");\n\n// Global variable that will hold a reference to the last thread\n\
+    // that connects to this shared worker. Could also use an array to\n// store each\
+    \ connected thread's port.\nvar gLastPort = null;\n\n// Attach to the onconnect\
+    \ event to listen for threads that\n// connect to this shared thread\nself.onconnect\
+    \ = function (evtConnect) {\n    // Grab a reference to the connected thread's\
+    \ port (only\n    // even the 1 port in the array) and attach to the\n    // onmessage\
+    \ event\n    gLastPort = evtConnect.ports[0];\n    gLastPort.onmessage = function\
+    \ (evtMessage) {\n        evtMessage.target.postMessage(\"Text received from the\
+    \ UI: \"\n        + evtMessage.data);\n    }\n}\n\n// Attach to the onerror event\
+    \ to listen for unhandled exceptions\nself.onerror = function (evtError) {\n \
+    \   var sMsg = \"Unknown Error\";\n\n    // Test the error event object to see\
+    \ if it has a message\n    // property. If it does not, check to see if it's a\
+    \ string.\n    if (evtError.message) { sMsg = evtError.message; }\n    else if\
+    \ (typeof evtError === \"string\") { sMsg = evtError; }\n    ------Snippet cont'd\
+    \ on next page------------>"
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "```\n// Pass the message to this worker's creator\ngLastPort.postMessage(\"\
+    Shared Worker - Error Message: \" +\n    sMsg);\n}\n\n// At some point we can\
+    \ close the thread ourselves\nself.close();\n```\n\n# EXTRAS\n\n# Creating Multiple\
+    \ Shared Workers\n\nOne of the advantages of shared workers is that you can share\
+    \ the use of a single worker thread across several open windows but you're not\
+    \ limited to a single shared worker.\n\nThe SharedWorker object accepts a 2nd\
+    \ parameter in the constructor that specifies the name of the worker.\n\nThe 2nd\
+    \ parameter is case sensitive so giving the shared worker a name of Worker in\
+    \ one window and worker in another window will actually result in two shared worker\
+    \ threads being created instead of one that is shared between the two windows\
+    \ because of the difference in the case of the 'W'.\n\nThe following is an example\
+    \ of how you can create two shared workers:\n\n```\n// Window 1 - Shared worker\
+    \ 1 & 2\nvar aSharedWorker1 = new SharedWorker(\"SharedWorker.js\",\n    \"Worker1\"\
+    );\nvar aSharedWorker2 = new SharedWorker(\"SharedWorker.js\",\n    \"Worker2\"\
+    );\n\n// Window 2 - Shared worker 1 & 2\nvar aSharedWorker1 = new SharedWorker(\"\
+    SharedWorker.js\",\n    \"Worker1\");\nvar aSharedWorker2 = new SharedWorker(\"\
+    SharedWorker.js\",\n    \"Worker2\");\n```\n\n# Spawning Additional Workers from\
+    \ Within a Worker\n\nIf need be, a worker thread can create additional worker\
+    \ objects (sometimes referred to as subworkers) in the same manner that they're\
+    \ created in the UI thread.\n\nSubworkers need to belong to the same origin/domain\
+    \ as the parent page. Also, URIs within subworkers are resolved relative to the\
+    \ parent thread's location rather than the location of the main page.\n\n# JSONP\
+    \ within a Worker\n\nBefore I go any further with this topic, it's important to\
+    \ understand that there are security concerns with importing JavaScript files/content\
+    \ from a 3rd party site.\n\nWhen you import data using script injection, the browser\
+    \ will download the JavaScript data received, evaluate it—turning the text received\
+    \ into functions, variables, objects, etc.—and any global code within the payload\
+    \ will be run.\n\nOther than the potential of having arbitrary code run, there\
+    \ is also the possibility of information being leaked to the 3rd party site via\
+    \ the HTTP traffic being exchanged in the process (cookies or other header information).\n\
+    \nTraditionally with JSONP you use script injection by modifying the DOM. In the\
+    \ case of Web Workers you don't have access to the DOM so how do we accomplish\
+    \ script injection?\n\nIt turns out that it is surprisingly simple to make a JSONP\
+    \ request from within a worker by using the importScripts function as in the following\
+    \ example:\n\n```\nfunction MakeRequest(){\n    importScripts(\"http://SomeServer.com?jsonp=HandleRequest\"\
+    );\n}\nfunction HandleRequest(objJSON){\n    // do something with the returned\
+    \ JSON object\n}\n```\n\n# Inline Workers\n\nThere are times when you might want\
+    \ to take advantage of Web Workers but at the same time you don't want to deal\
+    \ with separate worker files. Inline workers have several advantages including:\n\
+    \n+   - You can make a server request that returns a string containing custom\
+    \ worker code on the fly to meet the current need of your code\n- By including\
+    \ the worker code as a string within your JavaScript file, or as part of the markup\
+    \ of the page, you can eliminate a network request which can speed up load time\n\
+    \nTo accomplish inline workers you populate a Blob object with a string containing\
+    \ the worker code. You then create a URL for the Blob and with that URL you can\
+    \ then create your Worker object. To create a URL for the Blob we use the window.URL.createObjectURL\
+    \ method which gives us a URL similar to the following:\n\n```\nblob:http://localhost/72cdddc4-7989-4104-87ef-cf65ed5f5bf9\n\
+    ```\n\nThe blob URLs will be unique and last for the lifetime of your application.\
+    \ If you no longer need the URL, you can release it by calling the window.URL.revokeObjectURL\
+    \ passing in the blob's URL.\n\nThe following is one example of how an inline\
+    \ worker can be created:\n\n```\nvar bInlineWorker = new Blob([\"onmessage = function(evt)\
+    \ {\n    postMessage(\\\"Text received from the UI: \\\" + evt.data);\n}\"]);\n\
+    var sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\nvar aDedicatedWorker\
+    \ = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\naDedicatedWorker.postMessage(\"\
+    Hello to our inline worker!\");\n```\n\nThe following example is a modification\
+    \ to the above approach, which defines the worker code within the markup of the\
+    \ page allowing for more natural editing of the code as compared to building it\
+    \ as a string directly within a Blob object:\n\n```\n<script id=\"scriptWorker\"\
+    \ type=\"javascript/worker\">\n    // This block of code is ignored by the JavaScript\
+    \ engines\n    // of the browsers because of the type specified\n    self.onmessage\
+    \ = function(evt) {\n        self.postMessage(\"Text received from the UI: \"\
+    \ + evt.data);\n    };\n</script>\n```\n\nThe JavaScript code of the main page\
+    \ would then populate the blob dynamically from the content of the script tag:\n\
+    \n```\nvar bInlineWorker = new Blob([document.\n    getElementById(\"scriptWorker\"\
+    ).textContent]);\nvar sBlobURL = window.URL.createObjectURL(bInlineWorker);\n\n\
+    var aDedicatedWorker = new Worker(sBlobURL);\naDedicatedWorker.onmessage = handleMessage;\n\
+    aDedicatedWorker.postMessage(\"Hello to our inline worker!\");\n```\n\n# ADDITIONAL\
+    \ RESOURCES\n\nSome example code has been written to show a possible real-world\
+    \ use case for dedicated web workers.\n\nThe example demonstrates using a dedicated\
+    \ worker thread to pre-fetch data needed by a vertical list of items that the\
+    \ user is able to page through.\n\nMost of code is within the 'main.js' and 'DedicatedWorker.js'\
+    \ files and can be found in the following github repository.\n\nhttps://github.com/dovicoapi/HTML5WebWorkerExample\n\
+    \nThe **W3C spec** is located here: http://www.w3.org/TR/workers/"
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: 'For more information about **HTML5 Web Messaging**, which is the technology
+    used to pass messages to and receive messages from Web Workers: [http://www.w3.org/TR/webmessaging/](http://www.w3.org/TR/webmessaging/)
+    Check [http://caniuse.com/](http://caniuse.com/) for detailed breakdown of current
+    browser support.
+
+
+    Because both specs and browsers are developing so quickly, it''s especially good
+    in this case to know the spec itself pretty well. Tutorials and step-by-step howto
+    guides can become out of date, but the basic principles behind Web Workers are
+    pretty solid. As a general rule, applicable to HTML5 technologies including but
+    not limited to Web Workers, try to cross-reference the spec against any howto
+    guides or code snippets you find -- and be especially conscious of writing good
+    test code. The web is replete with HTML5 developer sites but, I have found that
+    the following sites stand out and are very helpful in understanding some of the
+    details of the various technologies:
+
+
+    +   - HTML5 Zone: [www.DZone.com/mz/html5](http://www.DZone.com/mz/html5)
+
+    - Mozilla Developer Network: [https://developer.mozilla.org/en-US/docs/HTML/HTML5](https://developer.mozilla.org/en-US/docs/HTML/HTML5)
+
+    - HTML5 Rocks: [www.html5rocks.com](http://www.html5rocks.com)
+
+
+    # ABOUT THE AUTHORS
+
+
+    Gerard Gallant is a Senior Software Developer / Software Architect with Dovico
+    Software. For over a decade, he has played a major role in developing most software
+    products released by Dovico ranging from the creation of the Microsoft Project
+    link ActiveX control to the creation of the new Hosted Services API. He is married
+    with two beautiful and smart girls. He unwinds by shooting hoops or watching a
+    movie and also enjoys traveling extensively. Recent publications can be found
+    on his blog: [http://cggallant.blogspot.ca/](http://cggallant.blogspot.ca/)
+
+
+    # RECOMMENDED BOOK
+
+
+    Web apps would run much better if heavy calculations could be performed in the
+    background, rather than compete with the user interface. With this book, you''ll
+    learn how to use Web Workers to run computationally intensive JavaScript code
+    in a thread parallel to the UI. Yes, multi-threaded programming is complicated,
+    but Web Workers provide a simple API that helps you be productive without the
+    complex algorithms.
+
+
+    **Buy Here**
+
+
+    ![](img/c87c2c7cc0fb6e0fcbc547fd91db34d3_6_0.png)
+
+
+    # Browse our collection of over 150 Free Cheat Sheets
+
+
+    **Free PDF**
+
+
+    # Upcoming Refcardz
+
+
+    +   - C++
+
+    - Cypher
+
+    - Clean Code
+
+    - Git for the Enterprise
+
+
+    DZone, Inc.
+
+    150 Preston Executive Dr.
+
+    Suite 201
+
+    Cary, NC 27513
+
+    888.678.0399
+
+    919.678.0300
+
+
+    **Refcardz Feedback Welcome**
+
+    refcardz@dzone.com
+
+
+    **Sponsorship Opportunities**
+
+    sales@dzone.com
+
+
+    DZone communities deliver over 6 million pages each month to more than 3.3 million
+    software developers, architects and decision makers. DZone offers something for
+    everyone, including news, tutorials, cheat sheets, blogs, feature articles, source
+    code and more. "**DZone is a developer''s dream**", says PC Magazine.
+
+
+    ISBN-13: 978-1-936502-75-2
+
+    ISBN-10: 1-936502-75-5
+
+    50795
+
+    9 781936 502752'
+  merge: -1
+  pgno: 6
+toc:
+- - '#'
+  - HTML5 Web Workers - 高性能 Web 应用多线程 JavaScript
+- - '##'
+  - 收集、管理和分享您团队所需的所有答案
+- - '###'
+  - 引言
+- - '###'
+  - Worker的类型
+- - '###'
+  - 共享Worker的作用域
+- - '###'
+  - 浏览器支持
+- - '###'
+  - 创建Workers
+- - '####'
+  - 测试功能是否存在
+- - '####'
+  - 创建一个Worker
+- - '###'
+  - 从Worker接收消息
+- - '###'
+  - 向Worker传递消息
+- - '##'
+  - 错误处理
+- - '##'
+  - 关闭工作线程
+- - '##'
+  - 在工作线程内部
+- - '###'
+  - 包含 JavaScript 文件
+- - '###'
+  - 接收消息
+- - '###'
+  - 传递消息
+- - '###'
+  - 超时
+- - '###'
+  - XMLHttpRequest
+- - '###'
+  - location
+- - '###'
+  - navigator
+- - '###'
+  - 错误处理
+- - '###'
+  - 自行关闭
+- - '#'
+  - 附加内容
+- - '##'
+  - 创建多个共享工作者
+- - '##'
+  - 从工作者内部生成额外的工作者
+- - '##'
+  - 在工作者中使用 JSONP
+- - '##'
+  - 内联工作者
+- - '##'
+  - 附加资源
+- - '##'
+  - 关于作者
+- - '##'
+  - 推荐书籍
