@@ -1,0 +1,2 @@
++   [LangChainJS 初学者指南：使用 LangChain、JavaScript、OpenAI/ChatGPT 开发 AI 应用](README.md)
++   [LangChainJS 初学者指南：使用 LangChain、JavaScript、OpenAI/ChatGPT 开发 AI 应用](langchainjs-for-beginners-a-beginners-guide-to-ai-applicatio.md)
