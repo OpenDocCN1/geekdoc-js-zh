@@ -1,0 +1,3882 @@
+groups:
+- md: " ## BEGINNER'S GUIDE TO CODING for kids\n\nRAUL SCOTT PH.D\n\n## Table of Contents\n\
+    \n- INTRODUCTION ..........................................................3\n\
+    - What is coding for kids? ..........................................................3\n\
+    \  - Why \"every\" kid should code ..........................................................4\n\
+    - What is Coding for Kids? buffered Age is Appropriate to Learn to Code? ..........................6\n\
+    \  - Why Should My Child Learn to Code? Why isn't K-12th Grade School Enough?\
+    \ ..........................................................7\n- Benefits of coding\
+    \ ..........................................................10\n- Ways to Introduce\
+    \ Early Years Kids to Coding and Computer Programming ..........................................................14\n\
+    - Programming Languages for Kids ..........................................................20\n\
+    \  - Python ..........................................................20\n  -\
+    \ Ruby ..........................................................21\n  - Java\
+    \ (Minecraft) ..........................................................22\n \
+    \ - C++ ..........................................................24\n  - Scratch\
+    \ ..........................................................24\n  - Blockly ..........................................................26\n\
+    \  - Go (Golang) ..........................................................28\n\
+    \  - Lua (Roblox) ..........................................................30\n\
+    - Why It is Important to Train Kids to Code ..........................................................31\n\
+    \  - Why Every Child Should Learn to Code ..........................................................32\n\
+    - Benefits of Learning to Code ..........................................................32\n\
+    - Tips for teaching kids to code ..........................................................36\n\
+    - Should all student learn how to code ..........................................................40\n\
+    - Advantages and disadvantages of programming education ..........................................................46\n\
+    \n## INTRODUCTION\n\nKids coding is growing rapidly in popularity as more and\
+    \ more parents and educators see that it is an important 21st century skill best\
+    \ taught early and often. Too often quality coding options are not available in\
+    \ many towns, cities, and even countries. Many parents and educators see the need,\
+    \ and want to do something about it. Coding for kids (otherwise known as computer\
+    \ programming) is growing rapidly in popularity. While programming is offered\
+    \ in a small number of traditional schools in the US, a Gallup poll indicates\
+    \ that 90% of parents would like computer programming to be taught during the\
+    \ school day. Learning how to code at a young age can truly set up your child\
+    \ for a lifetime of success. Even if they don't go into a specifically computer\
+    \ science related field, it gives them an edge in virtually every modern industry.\n\
+    \n## What is coding for kids?\n\nCoding for kids is the collection of opportunities\
+    \ available for children to get involved in coding. These opportunities aim to\
+    \ be fun and gamified to keep the young mind engaged. And while it is difficult\
+    \ to imagine a young brain learning something seemingly complex, coding for kids\
+    \ is reality—thanks to the many coding summer camps, websites, coding tutors,\
+    \ after-school programs, and toys, coding can be quite digestible.\n\n## Why \"\
+    every\" kid should code\n\nYears ago when all of this kids and code chatter started,\
+    \ you could have characterized it as hype because the whole idea was new and novel\
+    \ to the education system. And, while this \"learn to code\" popularity spike\
+    \ wasn't unfounded by any means, time was really the only thing that could tell\
+    \ us if it all was going to be a big fat flash in the pan. Well, here we are.\
+    \ Time has passed, yet we are still seeing STEM education stats like by 2018,\
+    \ 2.4 million STEM jobs will go unfilled. And others like 71% of all new jobs\
+    \ in STEM are in computing, but only 8% of STEM graduates are in Computer Science.\
+    \ People are still wondering if coding is hard to learn. We've officially moved\
+    \ beyond simply saying \"coding is cool, so go do it,\" end of story. Instead,\
+    \ we are now saying, \"coding is in fact cool, so go do it, but you should also\
+    \ go do it because you'll be rewarded as a result.\" In other words, there are\
+    \ jobs, lots of them—and jobs that pay very well.\n\nWhat makes this even better\
+    \ is that it's not just the jobs or the coolness, either (this would be a much\
+    \ shorter blog post if that were the case). But also the creativity, problem solving,\
+    \ collaboration, communication, and other skills ripe for improvement as byproducts\
+    \ of kids learning to code.\n\nSo, kids should learn to code because:\n\n- Coders\
+    \ are in high demand\n- Coding provides a competitive advantage\n- Coding knowledge\
+    \ allows students better understand the world\n- Coding is fun and satisfying\n\
+    - Coding improves creativity\n- Coding improves problem solving\n- Coding improves\
+    \ persistence\n- Coding improves collaboration\n- Coding improves communication\n\
+    \n## What is Coding for Kids? What Age is Appropriate to Learn to Code?\n\nCoding,\
+    \ or computer programming, is a creative process programmers perform to tell a\
+    \ computer how to perform a task. At its foundation, it involves writing computer\
+    \ programs using programming languages. Coding for kids is usually taught using\
+    \ content that is high-interest while creating projects that involve creative\
+    \ input. In short, coding for kids is typically gamified making it fun for kids\
+    \ to learn! Since coding can be gamified, kids as early as age 5 can start learning\
+    \ how to code using visual block interfaces or age appropriate text-based coding\
+    \ classes. Kids computer programming courses using games, apps, and other kid-centric\
+    \ projects is a research-based approach that has been proven to teach real world\
+    \ skills in a way that keeps students engaged.\n\n## Why Should My Child Learn\
+    \ to Code? Why isn't K-12th Grade School Enough?\n\nIn short, learning to code\
+    \ at a young age provides kids and teens with more future opportunities. As you\
+    \ will learn below, the data is compelling. According to the Bureau of Labor median\
+    \ pay for software developers is $103,560 per year, with demand expected to increase\
+    \ by 24% per year from 2016 to 2026. This is much faster than the average of other\
+    \ occupations.\n\nUnfortunately, even if your K-12 school is one of the few actively\
+    \ offering coding classes, they typically do not properly prepare students. Either\
+    \ they fail to incorporate the proper languages that jumpstart your kid's career\
+    \ or simply don't have as many tools and resources as are available in supplemental\
+    \ programs. Most schools use programs like Scratch, Code.org, or Tynker. Scratch\
+    \ is a good, free way for kids to learn coding concepts without using real programming\
+    \ languages. Code.org has some decent exercises that introduce Scratch-like visual\
+    \ block languages and even some basic text coding in its later modules. Tynker\
+    \ also features a visual block approach while introducing text-based coding in\
+    \ later modules. These programs are preferred tools for schools as classes can\
+    \ be proctored by teachers that have limited or no engineering backgrounds. They\
+    \ are fun ways to get your child's feet wet, but within a short period of time,\
+    \ many kids will be clamoring for more advanced content. Next level content allows\
+    \ student's to create their own games, apps, and web pages using real text-based\
+    \ languages. Plus, it doesn't restrict them to closed platforms.\n\nSome additional\
+    \ reasons you should consider introducing your kids to coding at an early age:\n\
+    \n- Computer science builds skills in a number of corollary areas including math,\
+    \ science, problem-solving, teamwork, project-based learning, creative arts, and\
+    \ more. As Steve Jobs famously stated, \"Coding teaches you how to think.\"\n\
+    - Learning to computer program is just like learning a foreign language. The earlier\
+    \ you start, the easier it is.\n- In 2020, there will be nearly 1 million unfilled\
+    \ tech jobs in the United States due to a shortage of qualified engineers.\n-\
+    \ Computer-related occupations make up over 60% of projected new job positions\
+    \ in STEM (Science, Technology, Engineering, and Math).\n- Computer programming\
+    \ teaches skills that are instantly relevant in today's job market.\n- Computing\
+    \ powers nearly every industry from education to farming, from law to business,\
+    \ and from construction to medicine.\n- Computer engineering jobs rank among the\
+    \ highest-paying for new graduates."
+  mdcn: "\n ## 儿童编程入门指南\n\nRAUL SCOTT PH.D\n\n## 目录\n\n- 引言 ..........................................................3\n\
+    - 什么是儿童编程？ ..........................................................3\n  - 为什么\"\
+    每个\"孩子都应该学编程 ..........................................................4\n- 什么是儿童编程？几岁学编程合适？\
+    \ ..........................................................6\n  - 为什么我的孩子要学编程？K-12年级学校教育够吗？\
+    \ ..........................................................7\n- 编程的益处 ..........................................................10\n\
+    - 如何向低龄儿童介绍编程和计算机程序设计 ..........................................................14\n\
+    - 适合儿童的编程语言 ..........................................................20\n  -\
+    \ Python ..........................................................20\n  - Ruby\
+    \ ..........................................................21\n  - Java（我的世界）\
+    \ ..........................................................22\n  - C++ ..........................................................24\n\
+    \  - Scratch ..........................................................24\n  -\
+    \ Blockly ..........................................................26\n  - Go（Golang）\
+    \ ..........................................................28\n  - Lua（罗布乐思）\
+    \ ..........................................................30\n- 为什么培养孩子的编程能力很重要\
+    \ ..........................................................31\n  - 为什么每个孩子都应该学编程\
+    \ ..........................................................32\n- 学习编程的益处 ..........................................................32\n\
+    - 教孩子学习编程的建议 ..........................................................36\n- 所有学生都应该学编程吗\
+    \ ..........................................................40\n- 编程教育的利与弊 ..........................................................46\n\
+    \n## 引言\n\n儿童编程正迅速流行起来，越来越多的家长和教育工作者认识到这是一项重要的21世纪技能，越早、越频繁地教授越好。然而，高质量的编程教育资源在许多城镇、城市甚至国家都相对匮乏。许多家长和教育工作者看到了这一需求，并希望能够为此做些什么。儿童编程（也称为计算机程序设计）正迅速受到欢迎。虽然美国仅有少数传统学校开设编程课程，但盖洛普民意调查显示，90%的家长希望在学校日常教学中教授计算机编程。让孩子在年幼时学习编程，确实能为他们的终身成功奠定基础。即使他们未来不从事与计算机科学直接相关的工作，这也能让他们在几乎每一个现代行业中占据优势。\n\
+    \n## 什么是儿童编程？\n\n儿童编程是指为儿童参与编程提供的各种机会。这些机会旨在通过趣味性和游戏化的方式保持孩子们的兴趣。虽然很难想象年幼的大脑学习看似复杂的知识，但儿童编程已成为现实——得益于众多编程夏令营、网站、编程辅导老师、课后项目以及益智玩具，编程知识已变得相当易于消化。\n\
+    \n## 为什么\"每个\"孩子都应该学编程\n\n多年前，当关于儿童和编程的讨论刚开始时，你可能会将其视为炒作，因为这对整个教育系统来说是一个全新而新颖的概念。虽然这股\"\
+    学编程\"的热潮并非毫无根据，但只有时间能告诉我们这一切是否只是昙花一现。好了，现在时间已经证明了。我们仍然看到STEM教育统计数据，比如到2018年，将有240万个STEM工作岗位空缺。还有其他的数据，如STEM领域71%的新增工作岗位在计算机领域，但仅有8%的STEM毕业生来自计算机科学专业。人们还在疑惑编程是否难学。我们已经正式超越了单纯说\"\
+    编程很酷，去学吧\"的阶段。现在，我们要说的是：\"编程确实很酷，去学吧，但你也应该因为能够获得回报而去学。\"换句话说，有工作机会，很多工作机会——而且薪水非常可观。\n\
+    \n更妙的是，这不仅仅关乎工作或酷劲（如果是那样的话，这篇文章会短得多）。还有……还在于创造力、问题解决能力、协作能力、沟通能力以及**其他**技能的提升，这些都是孩子学习编程的副产品。\n\
+    \n因此，孩子应该学习编程，因为：\n\n- 程序员需求旺盛\n- 编程提供竞争优势\n- 编程知识帮助学生更好地理解世界\n- 编程有趣且令人满足\n-\
+    \ 编程提升创造力\n- 编程提升问题解决能力\n- 编程提升毅力\n- 编程提升协作能力\n- 编程提升沟通能力\n\n## 什么是儿童编程？几岁学编程合适？\n\
+    \n编程，或者说计算机程序设计，是程序员发挥创造力，告诉计算机如何执行任务的过程。从根本上说，它涉及使用编程语言编写计算机程序。儿童编程通常通过高趣味性的内容来教授，同时创建涉及创意投入的项目。简而言之，儿童编程通常是游戏化的，让孩子学习起来充满乐趣！由于编程可以进行游戏化处理，最早5岁的孩子就可以开始学习编程，使用可视化积木界面或适合年龄的文本编程课程。利用游戏、应用程序和其他以儿童为中心的项目进行儿童计算机编程课程，是一种基于研究的方法，已被证明能够以吸引学生参与的方式教授真实世界的技能。\n\
+    \n## 为什么我的孩子要学编程？K-12年级学校教育够吗？\n\n简而言之，在年幼时学习编程能让孩子和青少年拥有更多的未来机会。正如你将在下面了解到的，数据非常有说服力。根据美国劳工统计局的数据，软件开发者的年薪中位数为103,560美元，预计从2016年到2026年，需求将以每年24%的速度增长。这远快于其他职业的平均水平。\n\
+    \n不幸的是，即使您的K-12学校是少数积极提供编程课程的学校之一，它们通常也无法充分培养学生。要么它们未能纳入能够启动您孩子职业生涯的合适语言，要么就是没有补习项目那样丰富的工具和资源。大多数学校使用Scratch、Code.org或Tynker等程序。Scratch是一种不错的免费方式，让孩子无需使用真正的编程语言就能学习编程概念。Code.org有一些不错的练习，介绍类Scratch的可视化积木语言，甚至在后期模块中引入了一些基础文本编程。Tynker也采用可视化积木方法，同时在后期模块中引入文本编程。这些程序是学校偏爱的工具，因为课程可以由编程经验有限或没有工程背景的教师来监督。它们是让孩子入门编程的有趣方式，但在短时间内，许多孩子会渴望更高级的内容。更高级的内容让学生能够使用真正的文本语言创建自己的游戏、应用程序和网页。而且，这不会将他们限制在封闭平台中。\n\
+    \n您应该考虑尽早让孩子接触编程的其他一些原因：\n\n- 计算机科学在多个相关领域培养技能，包括数学、科学、问题解决、团队合作、项目式学习、创意艺术等。正如史蒂夫·乔布斯的名言所说：\"\
+    编程教会你如何思考。\"\n- 学习计算机程序设计就像学习一门外语。越早开始，越容易。\n- 2020年，由于合格工程师的短缺，美国将有近100万个技术岗位空缺。\n\
+    - 在STEM（科学、技术、工程和数学）领域，计算机相关职业占预计新增职位的60%以上。\n- 计算机编程教授的技能在当今就业市场中即时相关。\n- 计算能力几乎为每个行业提供动力，从教育到农业，从法律到商业，从建筑业到医疗业。\n\
+    - 计算机工程工作在新毕业生就业中薪资排名最高。\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # # BEGINNER''S GUIDE TO CODING for kids
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_0_0.png)
+
+
+    ```
+
+
+    ```
+
+
+    # RAUL SCOTT PH.D'
+  - '[PAGE 1]
+
+
+    <!-- no content -->'
+  - '[PAGE 2]
+
+
+    # Table of Contents
+
+
+    +   - INTRODUCTION ..........................................................3
+
+
+    +   - What is coding for kids? ..........................................................3
+
+
+    +     - Why "every" kid should code ..........................................................4
+
+
+    +   - What is Coding for Kids? What Age is Appropriate to Learn to Code? ..........................................................6
+
+
+    +     - Why Should My Child Learn to Code? Why isn''t K-12th Grade School Enough?
+    ..........................................................7
+
+
+    +   - Benefits of coding ..........................................................10
+
+
+    +   - Ways to Introduce Early Years Kids to Coding and Computer Programming ..........................................................14
+
+
+    +   - Programming Languages for Kids ..........................................................20
+
+
+    +     - Python ..........................................................20
+
+
+    +     - Ruby ..........................................................21
+
+
+    +     - Java (Minecraft) ..........................................................22
+
+
+    +     - C++ ..........................................................24
+
+
+    +     - Scratch ..........................................................24
+
+
+    +     - Blockly ..........................................................26
+
+
+    +     - Go (Golang) ..........................................................28
+
+
+    +     - Lua (Roblox) ..........................................................30
+
+
+    +   - Why It is Important to Train Kids to Code ..........................................................31
+
+
+    +     - Why Every Child Should Learn to Code ..........................................................32
+
+
+    +   - Benefits of Learning to Code ..........................................................32'
+  - '[PAGE 3]
+
+
+    Tips for teaching kids to code .....................................................36
+
+
+    Should all student learn how to code .............................................40
+
+
+    Advantages and disadvantages of programming education...........................................................46'
+  - '[PAGE 4]
+
+
+    # INTRODUCTION
+
+
+    Kids coding is growing rapidly in popularity as more and more parents and educators
+    see that it is an important 21st century skill best taught early and often. Too
+    often quality coding options are not available in many towns, cities, and even
+    countries. Many parents and educators see the need, and want to do something about
+    it. Coding for kids (otherwise known as computer programming) is growing rapidly
+    in popularity. While programming is offered in a small number of traditional schools
+    in the US, a Gallup poll indicates that 90% of parents would like computer programming
+    to be taught during the school day. Learning how to code at a young age can truly
+    set up your child for a lifetime of success. Even if they don''t go into a specifically
+    computer science related field, it gives them an edge in virtually every modern
+    industry.
+
+
+    # What is coding for kids?
+
+
+    Coding for kids is the collection of opportunities available for children to get
+    involved in coding.'
+  - '[PAGE 5]
+
+
+    These opportunities aim to be fun and gamified to keep the young mind engaged.
+    And while it is difficult to imagine a young brain learning something seemingly
+    complex, coding for kids is reality—thanks to the many coding summer camps, websites,
+    coding tutors, after-school programs, and toys, coding can be quite digestible.
+
+
+    # Why "every" kid should code
+
+
+    Years ago when all of this kids and code chatter started, you could have characterized
+    it has hype because the whole idea was new and novel to the education system.
+    And, while this “learn to code” popularity spike wasn’t unfounded by any means,
+    time was really the only thing that could tell us if it all was going to be a
+    big fat flash in the pan. Well, here we are. Time has passed, yet we are still
+    seeing STEM education stats like by 2018, 2.4 million STEM jobs will go unfilled.
+    And others like 71% of all new jobs in STEM are in computing, but only 8% of STEM
+    graduates are in Computer Science. People are still wondering if coding is hard
+    to learn. We’ve officially moved beyond simply saying'
+  - '[PAGE 6]
+
+
+    "coding is cool, so go do it," end of story. Instead, we are now saying, "coding
+    is in fact cool, so go do it, but you should also go do it because you''ll be
+    rewarded as a result." In other words, there are jobs, lots of them—and jobs that
+    pay very well.
+
+
+    What makes this even better is that it''s not just the jobs or the coolness, either
+    (this would be a much shorter blog post if that were the case). But also the creativity,
+    problem solving, collaboration, communication, and other skills ripe for improvement
+    as byproducts of kids learning to code.
+
+
+    So, kids should learn to code because:
+
+
+    +   - Coders are in high demand
+
+
+    +   - Coding provides a competitive advantage
+
+
+    +   - Coding knowledge allows students better understand the world
+
+
+    +   - Coding is fun and satisfying'
+  - '[PAGE 7]
+
+
+    +   - Coding improves creativity
+
+    - Coding improves problem solving
+
+    - Coding improves persistence
+
+    - Coding improves collaboration
+
+    - Coding improves communication
+
+
+    # What is Coding for Kids? What Age is Appropriate to Learn to Code?
+
+
+    Coding, or computer programming, is a creative process programmers perform to
+    tell a computer how to perform a task.At its foundation, it involves writing computer
+    programs using programming languages. Coding for kids is usually taught using
+    content that is high-interest while creating projects that involve creative input.In
+    short, coding for kids is typically gamified making it fun for kids to learn!Since
+    coding can be gamified, kids as early as age 5 can start learning how to code
+    using visual block interfaces or age appropriate text-based coding classes.Kids
+    computer programming courses'
+  - '[PAGE 8]
+
+
+    using games, apps, and other kid-centric projects is a research-based approach
+    that has been proven to teach real world skills in a way that keeps students engaged.
+
+
+    # Why Should My Child Learn to Code? Why isn’t K-12th Grade School Enough?
+
+
+    In short, learning to code at a young age provides kids and teens with more future
+    opportunities. As you will learn below, the data is compelling. According to the
+    Bureau of Labor median pay for software developers is $103,560 per year, with
+    demand expected to increase by 24% per year from 2016 to 2026.This is much faster
+    than the average of other occupations.
+
+
+    Unfortunately, even if your K-12 school is one of the few actively offering coding
+    classes, they typically do not properly prepare students. Either they fail to
+    incorporate the proper languages that jumpstart your kid’s career or simply don’t
+    have as many tools and resources as are available in supplemental programs.Most
+    schools use programs'
+  - '[PAGE 9]
+
+
+    like Scratch, Code.org, or Tynker.Scratch is a good, free way for kids to learn
+    coding concepts without using real programming languages.Code.org has some decent
+    exercises that introduce Scratch-like visual block languages and even some basic
+    text coding in its later modules. Tynker also features a visual block approach
+    while introducing text-based coding in later modules.These programs are preferred
+    tools for schools as classes can be proctored by teachers that have limited or
+    no engineering backgrounds. They are fun ways to get your child’s feet wet, but
+    within a short period of time, many kids will be clamoring for more advanced content.
+    Next level content allows student’s to create their own games, apps, and web pages
+    using real text-based languages.Plus, it doesn’t restrict them to closed platforms.
+
+
+    Some additional reasons you should consider introducing your kids to coding at
+    an early age:
+
+
+    +   - Computer science builds skills in a number of corollary areas including
+    math, science, problem-'
+  - '[PAGE 10]
+
+
+    solving, teamwork, project-based learning, creative arts, and more. As Steve Jobs
+    famously stated, "Coding teaches you how to think."
+
+
+    +   - Learning to computer program is just like learning a foreign language. The
+    earlier you start, the easier it is.
+
+    - In 2020, there will be nearly 1 million unfilled tech jobs in the United States
+    due to a shortage of qualified engineers.
+
+    - Computer-related occupations make up over 60% of projected new job positions
+    in STEM (Science, Technology, Engineering, and Math).
+
+    - Computer programming teaches skills that are instantly relevant in today''s
+    job market.
+
+    - Computing powers nearly every industry from education to farming, from law to
+    business, and from construction to medicine.
+
+    - Computer engineering jobs rank among the highest-paying for new graduates.'
+- md: '## Benefits of coding
+
+
+    Here is an explanation of the different reasons why coding is important.
+
+
+    ## Coders are in high demand
+
+
+    - As mentioned, according to Code.org, 71% of all new STEM jobs are in computing,
+    yet only 8% of STEM graduates are in Computer Science. That''s a SERIOUS shortage
+    of CS majors.
+
+
+    Coding provides a competitive advantage when applying to colleges, internships,
+    and jobs.
+
+
+    - If you possess a hot skill that many of your peers lack–such as the ability
+    to code–you instantly appear more desirable in the eyes of potential college admissions
+    officers and employers. Plain and simple.
+
+
+    ## With coding knowledge, students better understand the world around them
+
+
+    - Most of us don''t know the first thing about what makes our smartphones, laptops,
+    social media networks, and video games run. Basic programming knowledge can change
+    the way we interact with the technologies we use (and take for granted) daily,
+    and can open our eyes to the infinite possibilities of coding.
+
+
+    ## Coding is fun and satisfying
+
+
+    - While programming is logic-based, it''s also an extremely creative activity.
+    If you know how to code, you can develop the aforementioned apps, video games,
+    websites, and more!
+
+
+    ## Coding improves creativity
+
+
+    - When you learn a language, you use it to express yourself. The same is true
+    with code. Computer coding empowers kids to not only consume digital media and
+    technology, but to create it. Instead of simply playing a video game or using
+    an app, they can imagine making their own video game, or envision what their own
+    website, or app might look like—and they’ll have the outlet for expression.
+
+
+    ## Coding improves problem solving
+
+
+    - When kids code, they take complex problems and break them down into smaller
+    parts. Kids learn what it’s like to approach a problem the way a software engineer
+    does, with logical, computational thinking.
+
+    - Computational thinking teaches you how to tackle large problems by breaking
+    them down into a sequence of smaller, more manageable problems.
+
+    - This logical thinking is a powerful tool in school, work, and life.
+
+
+    ## Coding improves persistence
+
+
+    - Learning to code, like any new discipline, is a challenge. Thus, tackling complex
+    problems—and making mistakes along the way—can be very frustrating.
+
+    - Coding teaches the valuable skill of persistence in the face of such challenges.
+    Learning how to problem solve and look for solutions through research and collaboration
+    builds this highly desirable skill.
+
+
+    ## Coding improves collaboration
+
+
+    - Every student can learn and every student can learn how to code. Kids can learn
+    alongside others of every race, gender, or background. Kids meet and learn how
+    to collaborate with all kinds of peers, all joined by a common interest in technology.
+
+    - Classrooms and other in-person environments, like iD Tech, bring kids together
+    for face-to-face collaboration. Kids learning online can also grow, asking each
+    other questions, and working to solve problems and create things together.
+
+    - Many games, like Minecraft, also offer a bevy of educational benefits because
+    they too involve coding, collaboration, and participation—with peers all over
+    the world.
+
+
+    ## Coding improves communication
+
+
+    - Communication is an absolutely essential skill throughout school, work, and
+    life. People who can clearly communicate complex ideas in simple terms tend to
+    be successful in different industries and walks of life.
+
+    - When kids learn how to code, they learn how to communicate with the most simple-minded
+    audience imaginable: computers. As mentioned, computer coding teaches kids how
+    to break down complex ideas and arrange them in a way that computers can understand.
+
+
+    ## Ways to Introduce Early Years Kids to Coding and Computer Programming
+
+
+    Introducing your children to the world of coding can be a bit of a challenge,
+    particularly for parents who themselves have no idea about how codes work. In
+    today''s era where the digital world has largely taken over our tasks and routines,
+    it is essential to learn the fundamentals of coding. Not only is it an enjoyable
+    and productive activity to involve your children in, coding also helps in developing
+    problem-solving skills, polishes creativity and logic, and boosts technical competency.
+
+
+    ## Hands-On Play for Budding Coders
+
+
+    The art of coding is not limited to computers and software. Introduce your young
+    child to technical toys that allow them to test their creativity and logical thinking.
+    They will not even know they are actually coding! For instance, LittleBits offers
+    a range of innovative toys that teach children about circuits, electronics, magnets,
+    and bubbles! They have a fun learning tool by the name of Crawly Creatures that
+    will even leave the geek in you fascinated. Suitable for ages 8+, the toy has
+    little parts including dimmer, pulse, and power that encourages the child to learn
+    how circuits work. Another ingenious toy that I came across is perfect for preschoolers.
+    The Think & Learn Code-a-Pillar toys by Fisher-Price are the simplest of robots
+    in a shape of funky caterpillars that educate youngsters about commands, sequences,
+    and coding blocks.
+
+
+    ## Let Them Play with Applications
+
+
+    Screen-time is usually frowned upon but as we are raising a generation who is
+    surrounded by smartphones and laptops 24/7, it is not feasible to completely ban
+    screens in their lives. Instead, utilize the gadgets in a productive way with
+    some limitations. One of the best resources to enlighten your little engineer
+    to the world of coding and programming are coding applications. Geared towards
+    children, these applications are appealing to the masses and infused with exciting
+    STEM features.
+
+
+    There is Kodable through which your child can learn the basic programming concepts
+    like looping and branching. It is a free, web-based application with coding lessons
+    targeting kindergarten to fifth graders. Daisy the Dinosaur app seems like a simple,
+    puzzle game but it is much more complex. Thanks to the cool dinosaur, the application
+    receives the interest of even non-coders. Tynker and Scratch are similar applications
+    that use learning paths from basic to advanced to teach coding. Coding applications
+    provide a comprehensive medium for children to learn programming.
+
+
+    Web Resources and Apps featured here:
+
+
+    - Kodable
+
+    - Daisy the Dinosaur
+
+    - Tynker
+
+    - Scratch
+
+
+    ## Utilize Online Resources
+
+
+    I stumbled upon this cool website called code.org which is rich with coding content.
+    From games to networking opportunities, the site caters to students, teachers,
+    and coders from all over the world. The games are simple at first. For instance,
+    a Star War game requires you to enter codes to move the player in different directions
+    to reach the items. It is a problem-solving game that will force your child to
+    come up with the best solution. For preschoolers, Code Monster is a fantastic
+    elementary web tool to ignite the spark of interest for coding in them. The site
+    has a basic interface that teaches about codes and commands. Another great free
+    website is CodeAcademy. They have created a user-friendly interactive coding experience
+    that teaches you everything related to coding including HTML & CSS, JavaScript,
+    jQuery, PHP, Python and Ruby.
+
+
+    Khan Academy is widely known for its challenging math games and extensive set
+    of online tools to educate children throughout the world. They have basic coding
+    and programming tutorials for beginners which is quite helpful for kids to learn
+    graphic designing, build animations, creating interactive visualizations and much
+    more! The educational site is completely free and ideal for budding engineers.
+
+
+    Web Resources featured here:
+
+
+    - code.org'
+  mdcn: '
+
+    ## 编程的好处
+
+
+    以下是关于编程为何如此重要的不同原因的说明。
+
+
+    ## 程序员供不应求
+
+
+    - 如前所述，根据 Code.org 的数据，所有新的 STEM 职位中有 **71%** 在计算领域，然而只有 **8%** 的 STEM 毕业生来自计算机科学专业。这是计算机科学专业人才的严重短缺。
+
+
+    在申请大学、实习和工作时，编程提供竞争优势。
+
+
+    - 如果你掌握了一项许多同龄人都不具备的热门技能——比如编程能力——你在潜在的大学招生官和雇主眼中会立刻显得更加有吸引力。就这么简单明了。
+
+
+    ## 掌握编程知识后，学生能更好地理解周围的世界
+
+
+    - 我们大多数人对于智能手机、笔记本电脑、社交媒体网络和视频游戏的运行原理一无所知。基础的编程知识可以改变我们与日常使用的技术（以及我们认为理所当然的技术）的互动方式，并能让我们看到编程的无限可能。
+
+
+    ## 编程有趣且令人满足
+
+
+    - 虽然编程基于逻辑，但它也是一项极具创造性的活动。如果你懂得编程，你就可以开发前面提到的应用程序、视频游戏、网站等等！
+
+
+    ## 编程提升创造力
+
+
+    - 当你学习一门语言时，你用它来*表达自己*。编程也是如此。计算机编程让孩子们不仅能消费数字媒体和技术，还能**创造**它。孩子们不再只是玩视频游戏或使用应用程序，他们可以想象制作自己的视频游戏，或者设想自己的网站或应用程序会是什么样子——而且他们将拥有表达的途径。
+
+
+    ## 编程提升解决问题的能力
+
+
+    - 当孩子们编程时，他们将复杂的问题分解成更小的部分。孩子们学习如何像软件工程师那样处理问题，用逻辑的、计算的思维。
+
+    - 计算思维教会你如何*通过将问题分解为一系列更小、更易管理的问题来应对大型问题*。
+
+    - 这种逻辑思维是在学校、工作和生活中都非常有力的工具。
+
+
+    ## 编程提升毅力
+
+
+    - 学习编程，就像任何新学科一样，是一项挑战。因此，处理复杂问题——并在过程中犯错误——可能会非常令人沮丧。
+
+    - 编程教会了面对此类挑战时坚持不懈的宝贵技能。学会如何通过研究和协作来解决问题，可以培养这种非常受欢迎的能力。
+
+
+    ## 编程提升协作能力
+
+
+    - 每个学生都能学习，每个学生都能学会编程。孩子们可以与各种种族、性别或背景的同伴一起学习。孩子们能够结识并与各种各样的同伴协作，所有这些都因对技术的共同兴趣而凝聚在一起。
+
+    - 教室和其他面对面的环境，如 iD Tech，让孩子们聚在一起进行面对面协作。在线学习的孩子也能共同成长，互相提问，并合作解决问题和创造事物。
+
+    - 许多游戏，如《我的世界》，也提供了丰富的教育益处，因为它们同样涉及编程、协作和参与——与世界各地的同伴一起。
+
+
+    ## 编程提升沟通能力
+
+
+    - 沟通是在学校、工作和生活中都绝对必要的技能。能够用简单的术语清楚表达复杂想法的人，往往在不同的行业和人生道路中都能取得成功。
+
+    - 当孩子们学习编程时，他们学习如何与可以想象到的最简单的受众沟通：**计算机**。如前所述，计算机编程教会孩子们如何分解复杂的想法，并以计算机能够理解的方式组织它们。
+
+
+    ## 向幼儿介绍编程和计算机编程的方法
+
+
+    让你的孩子接触编程世界可能有些挑战，尤其是对于那些自己都不知道代码如何工作的父母而言。在当今这个数字世界已经很大程度上接管了我们的任务和日常的时代，学习编程基础知识至关重要。这不仅是一项让你的孩子参与的有趣且富有成效的活动，编程还有助于培养解决问题的能力，提升创造力和逻辑，并增强技术能力。
+
+
+    ## 为 budding coders 提供的动手游戏
+
+
+    编程艺术不仅限于计算机和软件。向你的年幼孩子介绍能让他们测试创造力和逻辑思考的技术玩具。他们甚至不会知道自己在编程！例如，LittleBits 提供了一系列创新玩具，教孩子们了解电路、电子、磁铁和气泡！他们有一款名为
+    Crawly Creatures 的有趣学习工具，甚至会让你这个极客也着迷。适合 8 岁以上的孩子，这款玩具有许多小部件，包括调光器、脉冲器和电源，鼓励孩子学习电路的工作原理。我遇到的另一款精巧玩具非常适合学龄前儿童。费雪牌的
+    Think & Learn Code-a-Pillar 玩具是最简单的机器人，外形是时髦的毛毛虫，向幼儿传授命令、序列和编程模块的知识。
+
+
+    ## 让他们使用应用程序
+
+
+    屏幕时间通常不受欢迎，但由于我们培养的一代人 24/7 都被智能手机和笔记本电脑包围，完全禁止他们接触屏幕是不可行的。相反，以有限制的方式，以富有成效的方式利用这些设备。向你的小工程师介绍编程世界的最佳资源之一就是编程应用程序。面向儿童，这些应用程序对大众有吸引力，并融入了**令人兴奋的
+    STEM 功能**。
+
+
+    有一款名为 Kodable 的应用，你的孩子可以通过它学习循环和分支等基本编程概念。这是一款免费的基于网络的应用，提供针对幼儿园到五年级学生的编程课程。Daisy
+    the Dinosaur 应用看起来像是一款简单的拼图游戏，但它要复杂得多。多亏了这个酷的恐龙形象，这款应用甚至能吸引非编程爱好者的兴趣。Tynker 和
+    Scratch 是类似的应用，使用从基础到高级的学习路径来教授编程。编程应用为儿童学习编程提供了全面的媒介。
+
+
+    此处推荐的网络资源和应用Endpoint：
+
+
+    - Kodable
+
+    - Daisy the Dinosaur
+
+    - Tynker
+
+    - Scratch
+
+
+    ## 利用在线资源
+
+
+    我偶然发现了一个很酷的网站叫 code.org，它富含编程内容。从游戏到 networking opportunities，该网站面向来自世界各地的学生、教师和程序员。游戏一开始很简单。例如，一款星球大战游戏要求你输入代码来让玩家向不同方向移动以获取物品。这是一款会迫使你的孩子想出最佳解决方案的解决问题游戏。对于学龄前儿童，Code
+    Monster 是一个极好的基础网络工具，能点燃他们对编程的兴趣火花。该网站有基本的界面，教授代码和命令。另一个很棒的免费网站是 CodeAcademy。他们创建了一个用户友好的交互式编程体验，教你与编程相关的所有内容，包括
+    HTML & CSS、JavaScript、jQuery、PHP、Python 和 Ruby。
+
+
+    Khan Academy 以其具有挑战性的数学游戏和广泛的在线工具而闻名于世，用于教育全球儿童。他们有适合初学者的基础编程和编程教程，对孩子学习平面设计、制作动画、创建交互式可视化等非常有帮助！这个教育网站完全免费，非常适合
+    budding engineers。
+
+
+    此处推荐的网络资源：
+
+
+    - code.org
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 11]
+
+
+    +   - Coding is the newest liberal art. (Liberal arts were traditionally designed
+    to prepare individuals for civic life and to help students understand the world
+    around them. It is only a matter of time before it is included in core curricula).
+
+
+    # Benefits of coding
+
+
+    Here is an explanation of the different reasons why coding is important.
+
+
+    # Coders are in high demand
+
+
+    +   - As mentioned, according to Code.org, 71% of all new STEM jobs are in computing,
+    yet only 8% of STEM graduates are in Computer Science. That''s a SERIOUS shortage
+    of CS majors.
+
+
+    Coding provides a competitive advantage when applying to colleges, internships,
+    and jobs
+
+
+    +   - If you possess a hot skill that many of your peers lack–such as the ability
+    to code–you instantly appear more desirable in the eyes of potential'
+  - '[PAGE 12]
+
+
+    college admissions officers and employers.Plain and simple.
+
+
+    # With coding knowledge, students better understand the world around them
+
+
+    +   - Most of us don''t know the first thing about what makes our smartphones,
+    laptops, social media networks, and video games run. Basic programming knowledge
+    can change the way we interact with the technologies we use (and take for granted)
+    daily, and can open our eyes to the infinite possibilities of coding.
+
+
+    # Coding is fun and satisfying
+
+
+    +   - While programming is logic-based, it''s also an extremely creative activity.
+    If you know how to code, you can develop the aforementioned apps, video games,
+    websites, and more!
+
+
+    # Coding improves creativity
+
+
+    +   - When you learn a language, you use it to express yourself.The same is true
+    with code. Computer coding empowers kids to not only consume digital'
+  - '[PAGE 13]
+
+
+    media and technology, but to create it. Instead of simply playing a video game
+    or using an app, they can imagine making their own video game, or envision what
+    their own website, or app might look like—and they’ll have the outlet for expression.
+
+
+    # Coding improves problem solving
+
+
+    +   - When kids code, they take complex problems and break them down into smaller
+    parts. Kids learn what it’s like to approach a problem the way a software engineer
+    does, with logical, computational thinking.
+
+    - Computational thinking teaches you how to tackle large problems by breaking
+    them down into a sequence of smaller, more manageable problems.”
+
+    - This logical thinking is a powerful tool in school, work, and life.
+
+
+    # Coding improves persistence
+
+
+    +   - Learning to code, like any new discipline, is a challenge. Thus, tackling
+    complex problems—and making mistakes along the way—can be very frustrating.'
+  - '[PAGE 14]
+
+
+    +   - Coding teaches the valuable skill of persistence in the face of such challenges.
+    Learning how to problem solve and look for solutions through research and collaboration
+    builds this highly desirable skill.
+
+
+    # Coding improves collaboration
+
+
+    +   - Every student can learn and every student can learn how to code kids can
+    learn alongside others of every race, gender, or background. Kids meet and learn
+    how to collaborate with all kinds of peers, all joined by a common interest in
+    technology.
+
+
+    +   - Classrooms and other in-person environments, like iD Tech, bring kid''s
+    together for face-to-face collaboration. Kids learning online can also grow, asking
+    each other questions, and working to solve problems and create things together.
+
+
+    +   - Many games, like Minecraft, also offer a bevy of educational benefits because
+    they too involve coding, collaboration, and participation—with peers all over
+    the world.'
+  - '[PAGE 15]
+
+
+    # Coding improves communication
+
+
+    +   - Communication is an absolutely essential skill throughout school, work,
+    and life. People who can clearly communicate complex ideas in simple terms tend
+    to be successful in different industries and walks of life.
+
+
+    +   - When kids learn how to code, they learn how to communicate with the most
+    simple-minded audience imaginable: computers. As mentioned, computer coding teaches
+    kids how to break down complex ideas and arrange them in a way that computers
+    can understand.
+
+
+    # Ways to Introduce Early Years Kids to Coding and Computer Programming
+
+
+    Introducing your children to the world of coding can be a bit of a challenge,
+    particularly for parents'' who themselves have no idea about how codes work. In
+    today''s era where the digital world has largely taken over our tasks and routines,
+    it is essential to learn the fundamentals of coding.Not'
+  - '[PAGE 16]
+
+
+    only it is an enjoyable and productive activity to involve your children in, coding
+    also helps in developing problem-solving skills, polishes creativity and logic,
+    and boosts technical competency.
+
+
+    # Hands-On Play for Budding Coders
+
+
+    The art of coding is not limited to computers and software. Introduce your young
+    child to technical toys that allow them to test their creativity and logical thinking.
+    They will not even know they are actually coding! For instance, LittleBits offers
+    a range of innovative toys that teach children about circuits, electronics, magnets,
+    and bubbles! They have a fun learning tool by the name of Crawly Creatures that
+    will even leave the geek in you fascinated. Suitable for ages 8 +, the toy has
+    little parts including dimmer, pulse and power that encourages the child to learn
+    how circuits work.Another ingenious toy that I came across is perfect for preschoolers.
+    The Think & Learn Code-a-Pillar toys by Fisher-Price are the simplest of'
+  - '[PAGE 17]
+
+
+    robots in a shape of funky caterpillars that educate youngsters about commands,
+    sequences, and coding blocks.
+
+
+    # Let Them Play with Applications
+
+
+    Screen-time is usually frowned upon but as we are raising a generation who is
+    surrounded by smartphones and laptops 24/7, it is not feasible to completely ban
+    screens in their lives. Instead, utilize the gadgets in a productive way with
+    some limitations. One of the best resources to enlighten your little engineer
+    to the world of coding and programming are coding applications. Geared towards
+    children, these applications are appealing to the masses and infused with exciting
+    STEM features.
+
+
+    There is Koadable through which your child can learn the basic programming concepts
+    like looping and branching. It is a free, web-based application with coding lessons
+    targeting kindergarten to fifth graders. Daisy the Dinosaur app seems like a simple,
+    puzzle game but it is much more complex.'
+  - '[PAGE 18]
+
+
+    Thanks to the cool dinosaur, the application receives the interest of even non-coders.Tynker
+    and Scratch are similar applications that use learning paths from basic to advance
+    to teach coding.CCoding applications provide a comprehensive medium for children
+    to learn programming.
+
+
+    Web Resources and Apps featured here:
+
+
+    +   - Koadable
+
+
+    +   - Daisy the Dinosaur
+
+
+    +   - Tynker
+
+
+    +   - Scratch
+
+
+    # **Utilize Online Resources**
+
+
+    I stumbled upon this cool website called code.org which is rich with coding content.From
+    games to networking opportunities, the site caters to students, teachers, and
+    coders from all over the world.The games are simple at first. For instance, a
+    Star War game requires you to enter codes to move the player in different directions
+    to reach the items.It is a'
+  - '[PAGE 19]
+
+
+    problem-solving game that will force your child to come up with the best solution.For
+    preschoolers, Code Monster is a fantastic elementary web tool to ignite the spark
+    of interest for coding in them. The site has a basic interface that teaches about
+    codes and commands.Another great free website is CodeAcademy. They have created
+    a user-friendly interactive coding experience that teaches you everything related
+    to coding including HTML & CSS, JavaScript, jQuery, PHP, Python and Ruby.
+
+
+    Khan Academy is widely known for its challenging math games and extensive set
+    of online tools to educate children throughout the world. They have a basic coding
+    and programming tutorials for beginners which is quite helpful for kids to learn
+    graphic designing, build animations, creating interactive visualizations and much
+    more!The educational site is completely free and ideal for budding engineers.
+
+
+    Web Resources featured here:
+
+
+    +   - code.org'
+- md: '## Sign the Kids up to Summer Tech Camps
+
+
+    If your child has a passion for programming and they show potential, you might
+    want to consider sending them off to a tech summer camp. Schools usually have
+    a list of summer programs and you can check if any tech camps are being held in
+    your area. Most of these camps have comprehensive courses from ages 7 till 17.
+
+
+    CoderDojo is one of the most popular coding camps nationwide. The volunteer-led
+    camp takes kids from ages 7-17 and educate them about building websites and applications,
+    creating video games, learning about new technologies and understand the concepts
+    of coding. The best part is the camp is completely free of cost! The classes take
+    place all over the country. Run a quick search and you will find a program happening
+    nearby your area. In UK, National Coding Week takes place in September during
+    which several events and seminars related to coding are organized all over the
+    country. They strive to bring awareness to the younger generation and build their
+    interest in engineering, gaming, and coding. While it is aimed at older kids,
+    it won’t hurt to take your young child for inspiration. Attend the events together
+    with your kid and help them make smart choices.
+
+
+    - Code Monster
+
+    - Code Academy
+
+    - Khan Academy: Computer Programming
+
+
+    ## Programming Languages for Kids
+
+
+    ### Python
+
+
+    Python is a powerful, text-based computer programming language that children as
+    young as age 8 can easily use to express themselves. This specific type of code
+    acts both as a jumping off point for mastering other languages, and a strong enough
+    tool for serious game/web/app development and programming for kids. There are
+    numerous game-based and self-directed courses online that make learning Python
+    (especially Python 3) a unique, fun, and highly engaging experience for kids.
+
+
+    Python is a great choice for introducing children to coding, because this programming
+    language insists upon using good code layouts. It also encourages users to use
+    online support and extensive Python libraries. As they start to play more and
+    more with Python, your children will learn how to properly use fundamental data
+    structures like lists, tuples, and maps. Mastering variables, loops and other
+    functions in Python will give them a great foundation for tackling more advanced
+    programming in the future. They''ll also overcome the complexity that comes with
+    controlling different structures in Python. Drawing shapes and patterns with Python
+    turtle module will help your kids overcome their first barriers with animation
+    and game design. In no time, they''ll be able code their own apps for Mac, PC,
+    or Linux.
+
+
+    ### Ruby
+
+
+    Ruby has the most readable syntax for beginner programmers. Instead of spending
+    a lot of time explaining the code that students are typing into machines, a lot
+    of it will be self-explanatory for them. This is a really important factor for
+    children who are still learning the concepts of programming. At the end of the
+    day, children will need to learn the concepts in order to write good scripts.
+    Ruby is a very robust language and it was originally used to create Twitter, so
+    you can immediately show students that the application is a tool that gets used
+    in popular platforms.
+
+
+    ### Java (Minecraft)
+
+
+    Java is not our favorite kids coding language, and quite frankly the only reason
+    it is on the list is that it is the language of Minecraft. As such, the allure
+    of Minecraft creates such an effective "carrot on stick" experience for students
+    that it has become a very popular way to teach kids coding. Since its release
+    back in 2011, Minecraft has become the center of attention of many children across
+    the globe. Even though a lot of adults still believe it is just another game,
+    Minecraft has proven itself to be much more than that. It is an extremely powerful
+    tool for teaching kids how to use logic, solve problems, and strengthen a number
+    of core academic skills. And that''s just when they''re in the basic user phase.
+    Once your children start to really look beyond the start operations, it will become
+    transparent to them that Minecraft is an highly adaptive playground, open for
+    customization. When kids start to really like the game, you can introduce them
+    to "mods." Short for modifications, mods basically all the changes that kids can
+    introduce to the game. They can change everything – the characters'' objects,
+    landscapes, specific characteristics, etc. The possibilities are endless. In order
+    to introduce a particular mod to the game, the player needs to write a bit of
+    code. This is where things get interesting. Minecraft runs on Java, and the game''s
+    open architecture allows the users to access Minecraft''s Java source code and
+    play around. While modding with Java, kids will start to learn how to create both
+    simple and complicated things, which will certainly keep them focused and engaged
+    in learning more about this coding language.
+
+
+    ### C++
+
+
+    Many computer science experts and developers have different opinions about whether
+    a student should start with C++ or not. This programming language can look a bit
+    like math and might put students off the idea of learning to code. Once the basic
+    fundamentals of programming are understood, however, C++ can open many doors into
+    the world of programming. Many of today''s most successful programmers started
+    learning to code with C or C++.
+
+
+    ### Scratch
+
+
+    Primarily developed for children between the ages of 8 and 16, Scratch is a free
+    educational programming language developed by Mitch Resnick and patented by the
+    Lifelong Kindergarten Group at the Massachusetts Institute of Technology (MIT).
+    Teaching kids to code with Scratch is easy, as the platform provides an intuitive,
+    easy-to-use visual block interface that eliminates the frustration of typing for
+    young learners. This is an excellent starting point for programming for kids.
+    Scratch is one of the most visually appealing of all the kids programming languages
+    on the list, but the real reason it really shines is in the freedom of expression
+    that it allows its students. The whole idea behind it was to simplify the process
+    of creating animations, designing games, and building interactive stories, so
+    that literally anyone could do it from the ground up. Kids feel like real game
+    designers using Scratch, and even complete novices can create simple, completely
+    custom games in minutes. Scratch also has a big online community with over 15
+    million registered users from every corner of the world. Anyone can become a member,
+    as long as they comply with the friendly and respectful rules that the MIT Scratch
+    Team has set. The other great thing about the Scratch platform and its community
+    is that you are required to store your projects and their code on the Scratch
+    server, which allows young learners to study how more advanced users have created
+    complex games.
+
+
+    If Scratch sounds like it might be right for you, you can introduce your child
+    to it with this step-by-step guide. The cards will provide your kids with a fun
+    new way to learn to code with one of the best kids coding languages on the planet.
+
+
+    ### Blockly
+
+
+    Blockly is a visual block programming language for kids that is widely viewed
+    as Google''s response to Scratch. Metaphorically speaking, it uses the same building
+    blocks to help children master code. The only real difference lies in the following:
+    Blockly is actually a programming language made out of several pre-existing programming
+    languages. Developed under the Apache 2.0 license, Blockly is often described
+    as a client-side JavaScript library for creating visual programming block editors.
+    Meaning, it is primarily created for 8+ year-old kids who want to learn how to
+    code at home or at school within their own browsers. Blockly comes with a "JavaScript
+    library", which serves basically as a centralized location where pre-written languages
+    (like JavaScript, Python, PHP, Lua, and Dark) can be easily found and accessed.
+    Blockly has a specific UI.'
+  mdcn: '
+
+    ## 把孩子送去参加科技夏令营
+
+
+    如果你的孩子对编程充满热情并展现出潜力，你或许可以考虑送他们去参加科技夏令营。学校通常会提供夏季项目清单，你可以查看你所在地区是否有科技夏令营。大多数夏令营都提供针对7至17岁孩子的综合课程。
+
+
+    CoderDojo 是全国最受欢迎的编程夏令营之一。这个由志愿者主导的夏令营招收7至17岁的孩子，教导他们构建网站和应用程序、制作电子游戏、了解新技术以及理解编程概念。最棒的是，这个夏令营完全免费！课程在全国各地都有举办。快速搜索一下，你就能找到附近的项目。在英国，国家编程周在九月举行，期间全国各地会组织多项与编程相关的活动和研讨会。他们致力于提高年轻一代的认识，并培养他们对工程、游戏和编程的兴趣。虽然主要面向较大的孩子，但带年幼的孩子去获得启发也无妨。与孩子一起参加活动，帮助他们做出明智的选择。
+
+
+    - Code Monster
+
+    - Code Academy
+
+    - Khan Academy: Computer Programming
+
+
+    ## 适合孩子的编程语言
+
+
+    ### Python
+
+
+    Python 是一种功能强大的、基于文本的计算机编程语言，即使是8岁的孩子也能轻松地用它来表达自己。这种特定类型的代码既可以作为掌握其他语言的跳板，也足以成为孩子进行严肃的游戏/网站/应用程序开发和编程的强大工具。网上有许多基于游戏和自主学习的课程，使学习Python（尤其是Python
+    3）成为孩子们一次独特、有趣且高度参与的体验。
+
+
+    Python 是向孩子介绍编程的绝佳选择，因为这种编程语言强调使用良好的代码布局。它也鼓励用户使用在线支持和丰富的Python库。随着你的孩子越来越多地接触Python，他们将学会如何正确使用列表、元组和映射等基本数据结构。掌握Python中的变量、循环和其他函数，将为他们未来处理更高级的编程打下坚实的基础。他们还将克服在Python中控制不同结构带来的复杂性。使用Python的turtle模块绘制形状和图案，将帮助你的孩子克服动画和游戏设计上的第一道障碍。很快，他们就能为Mac、PC或Linux编写自己的应用程序了。
+
+
+    ### Ruby
+
+
+    Ruby 拥有最适合初学者程序员的可读语法。与其花很多时间解释学生输入机器的代码，不如让代码本身对他们来说是不言而喻的。对于仍在学习编程概念的孩子来说，这是一个非常重要的因素。归根结底，孩子们需要学习这些概念才能写出好的脚本。Ruby
+    是一种非常强大的语言，最初用于创建Twitter，因此你可以立即向学生展示，这个应用程序是流行平台上使用的工具。
+
+
+    ### Java (Minecraft)
+
+
+    Java 并不是我们最喜欢的儿童编程语言，坦白说，它之所以出现在这个列表上，唯一的理由是因为它是Minecraft的语言。因此，Minecraft的魅力为学生创造了一种非常有效的“胡萝卜加大棒”体验，使其成为教孩子编程的一种非常流行的方式。自2011年发布以来，Minecraft已成为全球许多孩子关注的焦点。即使许多成年人仍然认为这只是另一款游戏，但Minecraft已经证明它远不止于此。它是教孩子如何运用逻辑、解决问题以及加强多项核心学术技能的强大工具。而这还只是在他们的基础用户阶段。一旦你的孩子开始真正超越基础操作，他们就会清楚地看到Minecraft是一个高度适应性的、可供自定义的游乐场。当孩子开始真正喜欢这个游戏时，你可以向他们介绍“模组”。“Mod”是“modification”的缩写，模组基本上是孩子们可以引入游戏的所有改变。他们可以改变一切——角色、物品、景观、特定属性等等。可能性是无穷无尽的。为了在游戏中引入特定的模组，玩家需要编写一些代码。这就是事情变得有趣的地方。Minecraft基于Java运行，游戏的开放架构允许用户访问Minecraft的Java源代码并进行修改。在用Java制作模组的过程中，孩子们将开始学习如何创造简单和复杂的东西，这无疑会让他们保持专注并更深入地学习这种编程语言。
+
+
+    ### C++
+
+
+    许多计算机科学专家和开发者对于学生是否应该从C++开始学习有不同意见。这种编程语言看起来有点像数学，可能会让学生对学习编程的想法望而却步。然而，一旦理解了编程的基本原理，C++就能为编程世界打开许多大门。今天许多最成功的程序员都是从学习C或C++开始编程的。
+
+
+    ### Scratch
+
+
+    Scratch 主要为8至16岁的儿童开发，是一种免费的教育编程语言，由米奇·雷斯尼克（Mitch Resnick）开发，并由麻省理工学院（MIT）的终身幼儿园组获得专利。用Scratch教孩子编程很容易，因为该平台提供了一个直观、易用的可视化积木界面，消除了年轻学习者打字的挫败感。这是孩子编程的一个绝佳起点。Scratch是所有儿童编程语言中最具视觉吸引力的语言之一，但它真正脱颖而出的真正原因在于它赋予学生的表达自由。其背后的核心理念是简化创建动画、设计游戏和构建互动故事的过程，让任何人都可以从根本上做到这一点。孩子们使用Scratch时感觉像是真正的游戏设计师，即使是完全的新手也能在几分钟内创建简单的、完全自定义的游戏。Scratch还拥有一个庞大的在线社区，拥有来自世界各地的超过1500万注册用户。任何人都可以成为会员，只要他们遵守麻省理工学院Scratch团队制定的友好且受尊重的规则。Scratch平台及其社区的另一个好处是，你需要将你的项目及其代码存储在Scratch服务器上，这使得年轻的学习者可以研究更高级的用户是如何创建复杂游戏的。
+
+
+    如果Scratch听起来适合你，你可以通过这份分步指南向你的孩子介绍它。这些卡片将为你的孩子提供一种有趣的新方式，来学习使用地球上最好的儿童编程语言之一进行编程。
+
+
+    ### Blockly
+
+
+    Blockly 是一种面向儿童的可视化积木编程语言，普遍被视为谷歌对Scratch的回应。打个比方，它使用相同的积木来帮助孩子们掌握代码。唯一真正的区别在于：Blockly
+    实际上是一种由几种现有编程语言组成的编程语言。在Apache 2.0许可下开发，Blockly通常被描述为用于创建可视化编程积木编辑器的客户端JavaScript库。也就是说，它主要是为8岁以上、想在家或学校在自己的浏览器中学习编程的孩子创建的。Blockly
+    附带一个“JavaScript库”，它基本上充当一个集中位置，可以轻松找到和访问预编写的语言（如JavaScript、Python、PHP、Lua和Dark）。Blockly
+    有一个特定的用户界面。
+
+    '
+  merge: 0
+  raw:
+  - '[PAGE 20]
+
+
+    +   - Code Monster
+
+    - Code Academy
+
+    - Khan Academy: Computer Programming
+
+
+    # ### Sign the Kids up to Summer Tech Camps
+
+
+    If your child has a passion for programming and they show potential, you might
+    want to consider sending them off to a tech summer camp. Schools usually have
+    a list of summer programs and you can check if any tech camps are being held in
+    your area.Most of these camps have comprehensive courses from ages 7 till 17.
+
+
+    CoderDojo is one of the most popular coding camps nationwide. The volunteer-led
+    camp takes kids from ages 7-17 and educate them about building websites and applications,
+    creating video games, learning about new technologies and understand the concepts
+    of coding. The best part is the camp is completely free of cost! The classes take
+    place all over the country.Run a quick search and you will find a program happening
+    nearby your area.In UK,'
+  - '[PAGE 21]
+
+
+    National Coding Week takes place in September during which several events and
+    seminars related to coding are organized all over the country. They strive to
+    bring awareness to the younger generation and build their interest in engineering,
+    gaming, and coding. While it is aimed at older kids, it won’t hurt to take your
+    young child for inspiration. Attend the events together with your kid and help
+    them make smart choices.
+
+
+    # Programming Languages for Kids
+
+
+    # Python
+
+
+    Python is a powerful, text-based computer programming language that children as
+    young as age 8 can easily use to express themselves. This specific type of code
+    acts both as a jumping off point for mastering other languages, and a strong enough
+    tool for serious game/web/app development and programming for kids. There are
+    numerous game-based and self-directed courses online that make learning Python
+    (especially Python 3) a unique, fun, and highly engaging experience for'
+  - '[PAGE 22]
+
+
+    kidsPython is a great choice for introducing children to coding, because this
+    programming language insists upon using good code layouts. It also encourages
+    users to use online support and extensive Python librariesAs they start to play
+    more and more with Python, your children will learn how to properly use fundamental
+    data structures like lists, tuples, and maps. Mastering variables, loops and other
+    functions in Python will give them a great foundation for tackling more advanced
+    programming in the future.They''ll also overcome the complexity that comes with
+    controlling different structures in Python. Drawing shapes and patterns with Python
+    turtle module will help your kids overcome their first barriers with animation
+    and game design. In no time, they''ll be able code their own apps for Mac, PC,
+    or Linux.
+
+
+    # Ruby
+
+
+    Ruby has the most readable syntax for beginner programmers.Instead of spending
+    a lot of time explaining the code that students are typing into machines, a lot
+    of it will be self-explanatory for'
+  - '[PAGE 23]
+
+
+    them. This is a really important factor for children who are still learning the
+    concepts of programming.At the end of the day, children will need to learn the
+    concepts in order to write good scripts.Ruby is a very robust language and it
+    was originally used to create Twitter, so you can immediately show students that
+    the application is a tool that gets used in popular platforms.
+
+
+    ## Java (Minecraft)
+
+
+    Java is not our favorite kids coding language, and quite frankly the only reason
+    it is on the list is that it is the language of Minecraft. As such, the allure
+    of Minecraft creates such an effective "carrot on stick" experience for students
+    that it has become a very popular way to teach kids coding.Since its release back
+    in 2011,Minecraft has become the center of attention of many children across the
+    globe.Even though a lot of adults still believe it is just another game, Minecraft
+    has proven itself to be much more than that.It is an extremely powerful tool for
+    teaching kids how to use logic,solve problems,and strengthen a number of core
+    academic skills.And'
+  - '[PAGE 24]
+
+
+    that''s just when they''re in the basic user phase. Once your children start to
+    really look beyond the start operations, it will become transparent to them that
+    Minecraft is an highly adaptive playground, open for customization. When kids
+    start to really like the game, you can introduce them to "mods." Short for modifications,
+    mods basically all the changes that kids can introduce to the game. They can change
+    everything – the characters'' objects, landscapes, specific characteristics, etc.
+    The possibilities are endless. In order to introduce a particular mod to the game,
+    the player needs to write a bit of code. This is where things get interesting.
+    Minecraft runs on Java, and the game''s open architecture allows the users to
+    access Minecraft''s Java source code and play around. While modding with Java,
+    kids will start to learn how to create both simple and complicated things, which
+    will certainly keep them focused and engaged in learning more about this coding
+    language.",
+
+    BBCA, ;艰险感或оли等 as she or her she''s just She in her an her or her her her in
+    her an her her it''s it''s an an her her her in her it''s an her it''s.'
+  - '[PAGE 25]
+
+
+    # C++
+
+
+    Many computer science experts and developers have different opinions about whether
+    a student should start with C++ or not. This programming language can look a bit
+    like math and might put students off the idea of learning to code. Once the basic
+    fundamentals of programming are understood, however, C++ can open many doors into
+    the world of programming. Many of today''s most successful programmers started
+    learning to code with C or C++.
+
+
+    # Scratch
+
+
+    Primarily developed for children between the ages of 8 and 16, Scratch is a free
+    educational programming language developed by Mitch Resnick and patented by the
+    Lifelong Kindergarten Group at the Massachusetts Institute of Technology (MIT).
+    Teaching kids to code with Scratch is easy, as the platform provides an intuitive,
+    easy-to-use visual block interface that eliminates the frustration of typing for
+    young learners. This is an excellent starting point for programming for kids.
+    Scratch is'
+  - '[PAGE 26]
+
+
+    one of the most visually appealing of all the kids programming languages on the
+    list, but the real reason it really shines is in the freedom of expression that
+    it allows its students. The whole idea behind it was to simplify the process of
+    creating animations, designing games, and building interactive stories, so that
+    literally anyone could do it from the ground up. Kids feel like real game designers
+    using Scratch, and even complete novices can create simple, completely custom
+    games in minutes. Scratch also has a big online community with over 15 million
+    registered users from every corner of the world. Anyone can become a member, as
+    long as they comply with the friendly and respectful rules that the MIT Scratch
+    Team has set. The other great thing about the Scratch platform and its community
+    is that you are required to store your projects and their code on the Scratch
+    server, which allows young learners to study how more advanced users have created
+    complex games.
+
+
+    If Scratch sounds like it might be right for you, you can introduce your child
+    to it with this step-by-step'
+  - '[PAGE 27]
+
+
+    guide. The cards will provide your kids with a fun new way to learn to code with
+    one of the best kids coding languages on the planet.
+
+
+    # Blockly
+
+
+    Blockly is a visual block programming language for kids that is widely viewed
+    as Google''s response to Scratch. Metaphorically speaking, it uses the same building
+    blocks to help children master code. The only real difference lies in the following:
+    Blockly is actually a programming language made out of several pre-existing programming
+    languages.Developed under the Apache 2.0 license, Blockly is often described as
+    a client-side JavaScript library for creating visual programming block editors.
+    Meaning, it is primarily created for 8+ year-old kids who want to learn how to
+    code at home or at school within their own browsers.Blockly comes with a "JavaScript
+    library", which serves basically as a centralized location where pre-written languages
+    (like JavaScript, Python, PHP, Lua, and Dark) can be easily found and accessed.Blockly
+    has a specific UI'
+- md: 'that resembles a child’s box of multi-shaped, multi-colored blocks. In addition
+    to that, there is also a toolbox that holds the blocks, a bin, and space to actually
+    write code. It’s very simple to operate. Users take the blocks out of the toolbox
+    (one at a time) and arrange them in sequences until they solve their problem.
+    Once they finish, the program runs a check up, looks at what has been done, and
+    if the solution isn’t correct – it goes back and analyzes the code again until
+    it finds an error. Easy peasy. Blockly makes it possible for anyone to develop
+    an actual working Android app. This makes this language more than just a kids
+    toy or even just a simple tool that helps with programming for kids. Children
+    can code along the side of their screen by linking different blocks together.
+    They can also switch languages with ease, making it possible for them to see different
+    types of code at any time for the same basic program. Even though this is a great
+    program, in comparison to Scratch – Blockly is still not there yet. It is not
+    as developed as its biggest competitor and there are not as many good tutorials,
+    which makes it harder for children to learn Blockly on their own. Blockly has
+    been used by some excellent designers at Sphero, and we are seeing a number of
+    other companies utilizing the technology.
+
+
+    ## Go (Golang)
+
+
+    The Go programming language, a statically typed and compiled language, is one
+    of the newest languages gaining widespread popularity. It is so new, in fact,
+    that it is only just over 10 years old (invented in 2009). This promising growth
+    makes it a great language to know, so it should be added to any curriculum surrounding
+    programming for kids. Just a few years after Go was first implemented, it had
+    already spread to a variety of different industries. There is also a growing list
+    of Fortune 500 companies and mega-corporations that are emphasizing its importance
+    and promise. Uber, Netflix, and even American Express are just a few of the known
+    users of Go. Structurally, Go is fairly similar to C. The main differences surround
+    memory safety, garbage collection, structural typing, and CSP style concurrency.
+    As far as kids coding languages go, however, it can likely be taught with the
+    same overall tactics and success as C is taught. There are many reasons that go
+    is a language worth knowing, especially in modern day. That said, the main reason
+    would be the fact that it has truly been exploding in terms of popularity, and
+    it doesn''t show signs of stopping. It is expected that, over the next few years,
+    the constant updates from the development team will only prompt the popularity
+    to keep growing and expanding across industries.
+
+
+    ## Swift (Swift Playgrounds)
+
+
+    Apple''s Swift Playgrounds was first introduced in 2016 as a tool to teach kids
+    to code. Swift Playgrounds features a number of basic coding lessons and gamified
+    challenges, and comes with a tight interface with graphically pleasing backgrounds.
+    As an iPad app, Swift Playground is good for schools where iPads are used in the
+    classroom. Swift Playgrounds has less to do with the language, and more to do
+    with its overly restrictive lessons, which, like so many other run-of-the-mill
+    kids coding resources, does not give students any freedom of expression, such
+    as that provided by the Scratch platform. Students are forced to proceed through
+    levels following a rigid pathway defined by course designers. We''ve found that
+    this “on-rails” experience gets old quickly for creative kids. With recent news
+    that Apple plans to teach a younger generation of iOS developers how to build
+    AR-enabled apps with Swift Playgrounds, our opinion may change. We will update
+    this post as soon as we have taken a deep dive into the Swift Playgrounds AR project.
+
+
+    ## Lua (Roblox)
+
+
+    Lua is a scripting language that is perfect for introducing children to text-based
+    coding. It''s easy to learn, use, and embed into applications. Lua is a free,
+    elegant, powerful, portable, embeddable, and beginner-friendly coding language.
+    This type of language introduces simple concepts that have the potential of becoming
+    smooth products, while still staying true to their simplicity, readability, and
+    efficiency. One of the best things about Lua is that it takes care of low-level
+    things like memory management for the user. Lua is similar to Python in the way
+    that it eliminates a number of syntax issues that make coding difficult for kids.
+    But unlike JavaScript, there are no requirements of using semicolons at the end
+    of every line of code.
+
+
+    ## Why It is Important to Train Kids to Code
+
+
+    Believe it or not, we are living in the times of the STEM - Science, Technology,
+    Engineering and Mathematics. More and more parents and teachers are waking up
+    to the potential that lies in engaging kids towards discerning the 21st-century
+    trends, information, and concepts. One of the newest ways that has emerged on
+    the horizon is focused on teaching kids how to code. Multiple types of research
+    have been carried out on this subject, and the most recent studies have led to
+    the consensus that coding is poised to become a major enabler for kids who aspire
+    to establish a career in Science, Technology, Engineering, and Mathematics.
+
+
+    ## Why Every Child Should Learn to Code
+
+
+    Coding is a computing language, and children should be taught new languages. When
+    a child is taught how to code, the entire learning process acts as a trigger and
+    sets off their ability to think logically. Teaching children how to code in their
+    formative years is advantageous because the absorption rate is quicker and children
+    also develop a sense of application early. Like ABCs give direction in the English
+    language, coding uses different combinations of 0s and 1s which direct computers
+    to perform certain functions. And if children are exposed to this technicality
+    whilst they are still young, they will be able to establish better compatibility
+    with technologies and applications around them.
+
+
+    ## Benefits of Learning to Code
+
+
+    Coding isn''t just good news for your career but it has life-long prospects. It
+    simply implies that once kids learn how to code, they can stay invested in it
+    to pursue a passion or a profession. Coding is beneficial because it fosters creativity
+    in children. As they experiment with different coding combinations, children inherently
+    become more inventive; their brainpower is multiplied. Of course, children will
+    make mistakes along the way but it''s a price one has to pay for being creative.
+    In the end, the process matters, the end-product is secondary – in the children''s
+    case at least.
+
+
+    ### Why is Coding Important to Learn?
+
+
+    It''s 2019 and coding plays a major role in establishing the digital literacy
+    phenomenon around the world. And as a result, there has been a sharp increase
+    in the number of summer camps, workshops, websites and programs that are mushrooming
+    to support the demand for coding for kids'' initiatives. The reason being, when
+    a child learns how to code at an early age, it sets the path for him to discover
+    and identify where their interests lie – in Science, Technology, Engineering and
+    Mathematics (STEM) disciplines. The importance of coders is only poised to surge
+    as the years go by. With more and more STEM jobs coming up, companies around the
+    world need talented hands on deck to run the IT, Computer Science and Engineering
+    projects. Therefore, if you encourage your child to learning coding, chances are
+    high that he will grow up and pursue a STEM career and excel in it too!
+
+
+    ## Reasons Your Child Should Learn To Code
+
+
+    Besides being a huge trigger for improved academic performance, many reasons are
+    governing the demand for children to learn coding. Here’s a fun fact: the number
+    of STEM jobs that remain unfulfilled was 2.4 million last year. And while 71 percent
+    of the STEM jobs originate in the computing domain, the number of Computer Science
+    graduates was just 8 percent in 2018. So to cut short the chase, we are living
+    in technology-driven times. And given the pace with which technologies are dominating
+    every sphere of our work-life, social and private habits, it wouldn’t be wrong
+    to state that to learn how to code is no longer'
+  mdcn: '
+
+    它就像是一个装有多形状、多颜色积木的儿童盒子。除此之外，还有一个放置积木的工具箱、一个回收站以及实际编写代码的空间。操作非常简单。用户从工具箱中取出积木（一次一块），按顺序排列，直到解决问题。完成后，程序会运行检查，查看已完成的操作，如果解决方案不正确——它会返回并再次分析代码，直到找到错误。轻而易举。Blockly
+    让任何人都能开发真正可运行的 Android 应用。这使得这门语言不仅仅是一个儿童玩具，甚至不仅仅是一个帮助孩子编程的简单工具。孩子们可以在屏幕一侧通过连接不同的积木来编写代码。他们还可以轻松切换语言，从而随时查看同一基本程序的不同代码类型。尽管这是一个很棒的程序，但与
+    Scratch 相比——Blockly 还有所欠缺。它不如其最大的竞争对手成熟，也没有那么多优质的教程，这使得孩子们更难自学 Blockly。Blockly
+    已被 Sphero 的一些优秀设计师使用，我们也看到越来越多的其他公司正在利用这项技术。
+
+
+    ## Go (Golang)
+
+
+    Go 编程语言是一种静态类型、编译型语言，是最新获得广泛流行的语言之一。事实上，它非常新，仅仅诞生 10 年多（2009 年发明）。这种 promising
+    的增长使其成为一门值得掌握的语言，因此应该被添加到任何围绕儿童编程的课程中。就在 Go 首次实现后的短短几年内，它已经传播到各种不同的行业。此外，越来越多的财富
+    500 强公司和大型企业正在强调其重要性和前景。Uber、Netflix 甚至美国运通都是已知的 Go 用户。从结构上看，Go 与 C 语言相当相似。主要区别在于内存安全、垃圾回收、结构类型和
+    CSP 风格的并发性。然而，就儿童编程语言而言，它很可能可以采用 C 语言相同的整体教学策略并取得成功。Go 是一门值得了解的语言的原因有很多，尤其是在现代。也就是说，最主要的原因是它确实在人气方面呈现爆炸式增长，而且丝毫没有减缓的迹象。预计在未来几年，开发团队的持续更新将只会促使其人气不断增长，并在各行业中不断扩展。
+
+
+    ## Swift (Swift Playgrounds)
+
+
+    Apple 的 Swift Playgrounds 于 2016 年首次推出，作为教孩子 coding 的工具。Swift Playgrounds 包含许多基础
+    coding 课程和游戏化挑战，并配有界面紧凑、图形背景赏心悦目的界面。作为一款 iPad 应用，Swift Playground 适合在课堂中使用 iPad
+    的学校。Swift Playgrounds 的问题不在于语言本身，而在于其过于限制性的课程，与许多其他普通的儿童 coding 资源一样，它没有给学生任何自由表达的空间，例如
+    Scratch 平台所提供的那种。学生被迫按照课程设计师设定的固定路径逐级推进。我们发现这种"轨道式"体验对于富有创造力的孩子来说很快就会变得乏味。鉴于最近有消息称
+    Apple 计划通过 Swift Playgrounds 教年轻一代 iOS 开发者如何构建支持 AR 的应用，我们的看法可能会有所改变。一旦我们深入研究
+    Swift Playgrounds AR 项目，我们将更新这篇文章。
+
+
+    ## Lua (Roblox)
+
+
+    Lua 是一种非常适合向孩子介绍基于文本的 coding 的脚本语言。它易于学习、使用，并且可以轻松嵌入到应用程序中。Lua 是一种免费、优雅、强大、可移植、可嵌入且适合初学者的
+    coding 语言。这种类型的语言引入了简单的概念，这些概念有潜力成为成熟的产品，同时仍然保持其简洁性、可读性和效率。Lua 最好的特点之一是它为用户处理内存管理等底层事务。Lua
+    与 Python 相似，消除了许多使 coding 对孩子来说变得困难的语法问题。但与 JavaScript 不同，它不需要在每行代码末尾使用分号。
+
+
+    ## 为什么培养孩子 coding 很重要
+
+
+    信不信由你，我们正生活在 STEM（科学、技术、工程和数学）时代。越来越多的家长和老师意识到引导孩子理解 21 世纪趋势、信息和概念所蕴含的潜力。最新出现的方法之一是专注于教孩子如何
+    coding。已经开展了多种关于这一主题的研究，最近的研究已达成共识：coding 正 poised 成为有志于在科学、技术、工程和数学领域建立职业生涯的孩子的重要推动因素。
+
+
+    ## 为什么每个孩子都应该学习 coding
+
+
+    Coding 是一种计算语言，应该教孩子学习新语言。当孩子被教导如何 coding 时，整个学习过程会起到触发作用，激发他们的逻辑思维能力。在孩子的 formative
+    years 教他们 coding 是有利的，因为吸收速度更快，孩子也能 early 培养应用意识。就像 ABC 为英语提供方向一样，coding 使用 0
+    和 1 的不同组合来指导计算机执行特定功能。如果孩子在年幼时就接触到这种技术性知识，他们将能够与周围的技术和应用建立更好的兼容性。
+
+
+    ## 学习 coding 的好处
+
+
+    Coding 不仅对职业有好处，而且具有终身前景。这简单地意味着，一旦孩子学会了如何 coding，他们可以继续投入其中，追求爱好或职业。Coding 是有益的，因为它能培养孩子的创造力。当他们尝试不同的
+    coding 组合时，孩子们 inherently 变得更加有创造力；他们的脑力被成倍激发。当然，孩子们会犯错，但这是为创造力付出的代价。最终，过程很重要，最终产品是次要的——至少对孩子来说是这样。
+
+
+    ### 为什么学习 coding 很重要？
+
+
+    2019 年，coding 在建立全球数字素养现象方面发挥着重要作用。因此，支持儿童 coding 倡议的夏令营、研讨会、网站和项目数量急剧增加。原因是，当孩子
+    early 学会如何 coding 时，这为他铺设了道路，去发现和识别自己的兴趣所在——科学、技术、工程和数学（STEM）学科。随着岁月的推移，程序员的重要性只会
+    poised 激增。随着越来越多的 STEM 工作岗位出现，世界各地的公司都需要优秀的人才来运行 IT、计算机科学和工程项目。因此，如果你鼓励孩子学习 coding，很有可能他长大后
+    will 从事 STEM 职业并 excell 其中！
+
+
+    ## 你的孩子应该学习 coding 的原因
+
+
+    除了是提升学业表现的巨大 trigger 之外，还有许多原因促使儿童需要学习 coding。这里有一个有趣的事实：去年未能填补的 STEM 工作岗数量为 240
+    万。虽然 71% 的 STEM 工作源于计算领域，但 2018 年计算机科学毕业生的数量仅为 8%。简而言之，我们正生活在技术驱动的时代。鉴于技术以这样的
+    pace 主导着我们工作、社交和私人生活的 every sphere，说学习如何 coding 已不再……这样的话并不为过
+
+    '
+  merge: 1
+  raw:
+  - '[PAGE 28]
+
+
+    that resembles a child’s box of multi-shaped, multi-colored blocks. In addition
+    to that, there is also a toolbox that holds the blocks, a bin, and space to actually
+    write code. It’s very simple to operate. Users take the blocks out of the toolbox
+    (one at a time) and arrange them in sequences until they solve their problem.
+    Once they finish, the program runs a check up, looks at what has been done, and
+    if the solution isn’t correct – it goes back and analyzes the code again until
+    it finds an error. Easy peasy. Blockly makes it possible for anyone to develop
+    an actual working Android app. This makes this language more than just a kids
+    toy or even just a simple tool that helps with programming for kids. Children
+    can code along the side of their screen by linking different blocks together.
+    They can also switch languages with ease, making it possible for them to see different
+    types of code at any time for the same basic program. Even though this is a great
+    program, in comparison to Scratch – Blockly is still not there yet. It is not
+    as developed as its biggest competitor and there are not as many good tutorials,
+    which'
+  - '[PAGE 29]
+
+
+    makes it harder for children to learn Blockly on their own.Blockly has been used
+    by some excellent designers at Sphero, and we are seeing a number of other companies
+    utilizing the technology.
+
+
+    # ## Go (Golang)
+
+
+    The Go programming language, a statically typed and compiled language, is one
+    of the newest languages gaining widespread popularity.It is so new, in fact, that
+    it is only just over 10 years old (invented in 2009). This promising growth makes
+    it a great language to know, so it should be added to any curriculum surrounding
+    programming for kids.Just a few years after Go was first implemented, it had already
+    spread to a variety of different industries. There is also a growing list of Fortune
+    500 companies and mega-corporations that are emphasizing its importance and promise.
+    Uber, Netflix, and even American Express are just a few of the known users of
+    Go.Structurally, Go is fairly similar to C. The main differences surround memory
+    safety, garbage collection, structural typing, and CSP style concurrency. As far
+    as kids'
+  - '[PAGE 30]
+
+
+    coding languages go, however, it can likely be taught with the same overall tactics
+    and success as C is taught. There are many reasons that go is a language worth
+    knowing, especially in modern day. That said, the main reason would be the fact
+    that it has truly been exploding in terms of popularity, and it doesn''t show
+    signs of stopping. It is expected that, over the next few years, the constant
+    updates from the development team will only prompt the popularity to keep growing
+    and expanding across industries.
+
+
+    # Swift (Swift Playgrounds)
+
+
+    Apple''s Swift Playgrounds was first introduced in 2016 as a tool to teach kids
+    to code. Swift Playgrounds features a number of basic coding lessons and gamified
+    challenges, and comes with a tight interface with graphically pleasing backgrounds.
+    As an iPad app, Swift Playground is good for schools where iPads are used in the
+    classroom.Swift Playgrounds has less to do with the language, and more to do with
+    its overly restrictive lessons, which, like so many other run-of-the-mill kids
+    coding resources, does not give'
+  - '[PAGE 31]
+
+
+    students any freedom of expression, such as that provided by the Scratch platform.
+    Students are forced to proceed through levels following a rigid pathway defined
+    by course designers. We''ve found that this “on-rails” experience gets old quickly
+    for creative kids.With recent news that Apple plans to teach a younger generation
+    of iOS developers how to build AR-enabled apps with Swift Playgrounds, our opinion
+    may change. We will update this post as soon as we have taken a deep dive into
+    the Swift Playgrounds AR project.
+
+
+    # Lua (Roblox)
+
+
+    Lua is a scripting language that is perfect for introducing children to text-based
+    coding. It''s easy to learn, use, and embed into applications. Lua is a free,
+    elegant, powerful, portable, embeddable, and beginner-friendly coding language.This
+    type of language introduces simple concepts that have the potential of becoming
+    smooth products, while still staying true to their simplicity, readability, and
+    efficiency. One of the best things about Lua is that it takes care of low-level
+    things like memory'
+  - '[PAGE 32]
+
+
+    management for the user.Lua is similar to Python in the way that it eliminates
+    a number of syntax issues that make coding difficult for kids.But unlike JavaScript,
+    there are no requirements of using semicolons at the end of every line of code.
+
+
+    # Why It is Important to Train Kids to Code
+
+
+    Believe it or not, we are living in the times of the STEM - Science, Technology,
+    Engineering and Mathematics. More and more parents and teachers are waking up
+    to the potential that lies in engaging kids towards discerning the 21st-century
+    trends, information, and concepts. One of the newest ways that has emerged on
+    the horizon is focused on teaching kids how to code. Multiple types of research
+    have been carried out on this subject, and the most recent studies have led to
+    the consensus that coding is poised to become a major enabler for kids who aspire
+    to establish a career in Science, Technology, Engineering, and Mathematics.'
+  - '[PAGE 33]
+
+
+    # Why Every Child Should Learn to Code
+
+
+    Coding is a computing language, and children should be taught new languages. When
+    a child is taught how to code, the entire learning process acts as a trigger and
+    sets off their ability to think logically. Teaching children how to code in their
+    formative years is advantageous because the absorption rate is quicker and children
+    also develop a sense of application early. Like ABCs give direction in the English
+    language, coding uses different combinations of 0s and 1s which direct computers
+    to perform certain functions. And if children are exposed to this technicality
+    whilst they are still young, they will be able to establish better compatibility
+    with technologies and applications around them.
+
+
+    # Benefits of Learning to Code
+
+
+    Coding isn''t just good news for your career but it has life-long prospects. It
+    simply implies that once kids learn how to code, they can stay invested in it
+    to pursue a passion or a profession. Coding is'
+  - '[PAGE 34]
+
+
+    beneficial because it fosters creativity in children.As they experiment with different
+    coding combinations, children inherently become more inventive; they are brainpower
+    is multiplied. Of course, children will make mistakes along the way but it''s
+    a price one has to pay for being creative.In the end, the process matters, the
+    end-product is secondary – in the children''s case at least.
+
+
+
+
+    # ### Why is Coding Important to Learn?
+
+
+    Its 2019 and coding plays a major role in
+
+    establishing the digital literacy phenomenon around the world. And as a result,
+    there has been a sharp increase in the number of summer camps,
+
+    workshops, websites and programs that are mushrooming to support the demand for
+    coding for kids'' initiatives.
+
+    The reason being, when a child learns how to code at an early age, it sets the
+    path for him to discover and identify where their interests lie – in Science,
+    Technology, Engineering
+
+    and Mathematics(STEM) disciplines. The importance of coders is only poised to
+    surge as the'
+  - '[PAGE 35]
+
+
+    years go by. With more and more STEM jobs coming up, companies around the world
+    need talented hands on deck to run the IT, Computer Science and Engineering projects.
+    Therefore, if you encourage your child to learning coding, chances are high that
+    he will grow up and pursue a STEM career and excel in it too!
+
+
+    # Reasons Your Child Should Learn To Code
+
+
+    Besides being a huge trigger for improved academic performance, many reasons are
+    governing the demand for children to learn coding.Here’s a fun fact: the number
+    of STEM jobs that remain unfulfilled was 2.4 million last year. And while 71 percent
+    of the STEM jobs originate in the computing domain, the number of Computer Science
+    graduates was just 8 percent in 2018. So to cut short the chase, we are living
+    in technology-driven times. And given the pace with which technologies are dominating
+    every sphere of our work-life, social and private habits, it wouldn’t be wrong
+    to state that to learn how to code is no longer'
+- md: 'part of the ‘do it for recreation’ category. Instead, now to learn how to code
+    has become one of the prerequisites for innovation.
+
+
+    ## Why Is Coding Important For the Future
+
+
+    As mentioned in the previous pointer, coding is a skill that will determine the
+    future of STEM jobs’ fulfillment around the world. Considering the pace at which
+    technologies and applications across all platforms are creating methodical chaos
+    around the world, it makes sense to assume that in addition to data being the
+    new oil as quoted by mathematician Clive Humby – programmers will be the new must
+    have professionals in companies in near future. The rise of Machine Learning,
+    IoT, Artificial Intelligence, and Data Science as emerging industries is a sign
+    of what’s to come. And it would be a good idea to have coder kids ready well in
+    advance so that they can make the big leap when the time comes, eventually!
+
+
+    ## Tips for teaching kids to code
+
+
+    Use Scratch for younger kids and Python for older kids
+
+
+    MIT''s Scratch is a free programming tool designed for kids that runs in any modern
+    Web browser. Its visual style was influenced by the Logo program, a staple of
+    programming classes for children of the ''80s and ''90s. But Scratch is much more
+    than yet another Logo knockoff. Kids between the ages of 8 and 13 will benefit
+    from Scratch''s simple graphical interface. Scratch''s drag-and-drop code blocks
+    snap together. Pieces of code that don''t make computational sense won''t fit
+    together, making syntax errors literally impossible. Scratch is great for younger
+    kids who haven''t developed typing skills. Of course, kids who try to make more
+    sophisticated programs will eventually run into a wall with Scratch. For teens
+    and pre-teens, a real-world programming language like Python is more suitable.
+    Python is an excellent first programming language because it has a simple syntax
+    (unlike languages such as Java or C#), produces readable code (unlike Perl or
+    JavaScript), and has a large and friendly community of developers behind it. If
+    your child has outgrown Scratch, Python is the best next step.
+
+
+    ## Show source code for actual programs. Don''t just talk concepts at them.
+
+
+    Despite its intellectual reputation, programming is a hands-on skill that requires
+    practice, more than just reading books. Python''s interactive shell encourages
+    experimentation to find out what instructions do. If you are tutoring your kids
+    directly, writing code goes a long way compared to just talking concepts at them.
+    Even after learning about variables, loops, and functions, sitting in front of
+    a blank editor and starting a new program is intimidating. Sit with them and describe
+    the code they should write line by line. Or, if you are using online resources
+    to share with your child, look for the source code to small games. Programs with
+    less than a couple hundred lines of code work best. The Scratch website automatically
+    shares the source for all projects on its website. Encourage your kid to make
+    modifications to the code and see how they change the final program.
+
+
+    ## Games are fun programming projects.
+
+
+    Programming video games is a common starting point for many young coders. Angry
+    Birds, Minecraft, Flappy Bird, Five Nights at Freddy''s, and other games are prime
+    sources of inspiration. I''ve written a free book, Invent Your Own Computer Games
+    with Python, which demonstrates coding concepts with the complete source code
+    for several simple game projects. Be warned that games your kids love might not
+    make great programming projects when they''re just starting out. Many games require
+    teams of developers, artists, and designers to put together. Games that require
+    a lot of level-design and artwork can overwhelm beginners. It''s much more satisfying
+    to complete a simple game, than to start and never finishing a massive project.
+
+
+    ## Keep your hands off the keyboard and mouse.
+
+
+    Sharing knowledge is exciting. Showing someone what you know about programming
+    is great. But coding is a skill that is learned with hands-on practice, so let
+    the kids drive. Avoid jumping in to type on the keyboard when working with kids,
+    even temporarily. If they have to click on a menu or button, point to the screen
+    with your finger instead of taking the mouse and clicking it yourself. Whenever
+    there is code to be typed, have them type it. It may be faster if you did it yourself,
+    but your pupil needs the practice more than you. If you are teaching a group,
+    try to give each student their own computer. Like playing a musical instrument,
+    programming is a skill that is learned with hands-on practice rather than watching
+    someone else.
+
+
+    The Raspberry Pi is a cheap, bare-bones PC that runs about US$ 70 for a starter
+    kit. Although adding a new keyboard, mouse, and monitor raises the total price
+    to be comparable with a cheap laptop. Avoid Chromebooks, iPads, and tablets because;
+    getting Python to run on them is difficult. If you need to set up a computer lab
+    for an afterschool club on a budget, the Raspberry Pi would allow you to make
+    use of spare keyboards and monitors.
+
+
+    ## Should all student learn how to code
+
+
+    Proponents often make one or more of the following arguments in support of educational
+    coding initiatives:
+
+
+    Coding education will help student acquire vocational skills that are immediately
+    relevant to today''s job market.
+
+
+    - Look at all of the IT-related jobs available in the world, advocates say. Shouldn''t
+    our schools be specifically preparing our students to compete for them? Critics
+    respond that many related efforts are a waste of time in practice because: they
+    focus on developing largely mechanical processes that are easily learned in other
+    venues; they are largely concerned with "job-relevant" skills of today, not tomorrow;
+    initiatives of this sort are largely driven by the business sector (a group that
+    they view with great suspicion); and many efforts have little pedagogical value
+    in and of themselves. (Often cited with particular disdain are projects purportedly
+    about coding but which amount to little more than learning how to use basic office
+    tools such as word processors and presentation software.)
+
+
+    ### Coding helps develop important logic and problem-solving skills
+
+
+    - Few would argue against the notion that, when taught well, education in coding
+    can help develop important logical thinking and problem-solving skills. In response,
+    critics argue that coding courses have no monopoly on the development of such
+    skills, and that in fact such skills should be embedded throughout an entire curriculum,
+    not the focus of a single school subject.
+
+
+    ### Understanding coding helps students better understand the nature of the world
+    around them, and how and why increasing parts of it function as they do
+
+
+    - There tends, I find, to be less disagreement on this count, although it is perhaps
+    worth noting that many critics of educational coding efforts may perhaps not fully
+    grasp the import of this argument. Those that do recognize this may still argue
+    that there is an opportunity cost here: If you add coding to the mandatory curriculum
+    for all students, what comes out?
+
+
+    **Teaching students to code can serve as a gateway to subsequent study of STEM
+    (science, technology, engineering and mathematics) topics, and hopefully to jobs
+    and careers in related fields.**
+
+
+    - This may be true, some critics argue, but is this really the “best” gateway?
+    If coding is not well taught, might it in fact dissuade some students from further
+    study of STEM topics, and thus decrease the likelihood that they pursue STEM-related
+    careers? Is coding education in schools indeed a gateway to coding, or is it in
+    practice just “edutainment”, something to do with all the computers that schools
+    have purchased and still haven''t figured out how to use productively?
+
+
+    ## Being able to code enables new avenues for creativity and creative expression
+
+
+    - Efforts to teach coding skills to young students through the use of tools like
+    Scratch, or as part of robotics courses or initiatives to promote “making”, are
+    often cited as compelling examples of what (good) coding education efforts may
+    comprise. Here again, many critics may laud such efforts but still argue that,
+    even if you concede that coding is a new literacy in our increasingly technology-saturated
+    world, it is still worth asking two rather basic questions before moving ahead
+    with new, large–scale, mandatory educational coding initiatives. How are we doing
+    with the old, basic literacies of reading, writing and arithmetic? Shouldn’t we
+    ensure that these fundamental “literacy skills” are in place before we start tacking
+    new ones on to our already bloated curricula?'
+  mdcn: '
+
+    属于“为了娱乐而做”类别的一部分。相反，现在学习编程已成为创新的前提条件之一。
+
+
+    ## 为什么编程对未来发展至关重要
+
+
+    正如前文所述，编程是一种技能，将决定全球 STEM（科学、技术、工程和数学）职业的未来发展。考虑到技术及其在各平台上的应用正以惊人的速度在世界各地制造有序混乱，可以合理推断，正如克利夫·休比（Clive
+    Humby）所说，“数据是新石油”，那么在未来不久的公司中，“程序员”将成为新的必备专业人才。机器学习、物联网、人工智能和数据科学等新兴行业的崛起，预示着未来的趋势。因此，尽早让编程少年做好准备，以便在时机来临时能实现飞跃，这最终会是个好主意！
+
+
+    ## 教孩子编程的提示
+
+
+    对年幼的孩子使用 Scratch，对年长的孩子使用 Python。MIT 的 Scratch 是一款专为儿童设计的免费编程工具，可在任何现代网络浏览器上运行。其视觉风格受到
+    Logo 程序的影响，该程序是 20 世纪 80 和 90 年代儿童编程课程的经典内容。但 Scratch 远不止是又一个 Logo 仿制品。8 到 13
+    岁的孩子将从 Scratch 的简单图形界面中受益。Scratch 的拖放代码块会自动对齐连接。逻辑不通的代码片段无法拼接，从而使语法错误变得“不可能”。Scratch
+    非常适合尚未掌握打字技能的年幼孩子。当然，试图制作更复杂程序的孩子们最终会发现 Scratch 存在局限。对于青少年和儿童，像 Python 这样的现实编程语言更适合。Python
+    是极佳的入门编程语言，因为它语法简单（不像 Java 或 C#），生成的代码可读性强（不像 Perl 或 JavaScript），并且背后拥有一个庞大友好的开发者社区。如果您的孩子已经超越
+    Scratch 的水平，Python 是最佳的下一步选择。
+
+
+    ## 展示真实程序的源代码，不要只跟他们谈论概念
+
+
+    尽管编程享有智力声誉，但它是一项需要动手实践的技能，不仅仅是阅读书籍。Python 的交互式 Shell 鼓励实验，以了解指令的作用。如果您亲自辅导孩子，编写代码的效果远胜于只跟他们谈论概念。即使学习了变量、循环和函数，坐在空白编辑器前开始新项目仍令人望而生畏。坐下来陪他们，逐行描述他们应编写的代码。或者，如果您使用在线资源与孩子分享，请寻找小型游戏的源代码。代码行数不到几百行的程序效果最好。Scratch
+    网站自动共享其网站上所有项目的源代码。鼓励你的孩子对代码进行修改，观察这些修改如何改变最终程序。
+
+
+    ## 游戏是有趣的编程项目
+
+
+    制作视频游戏是许多年轻程序员常见的起点。《愤怒的小鸟》、《我的世界》、《小鸟快飞》（Flappy Bird）、《玩具熊的五夜后宫》（Five Nights
+    at Freddy''s）和其他游戏是主要的灵感来源。我写了一本免费的书籍，《用 Python 发明你自己的计算机游戏》，该书通过几个简单游戏项目的完整源代码展示了编程概念。请注意，孩子们喜欢的游戏在他们刚开始时可能不是很好的编程项目。许多游戏需要开发团队、艺术家和设计师共同努力完成。需要大量关卡设计和艺术作品的游戏可能会让初学者感到不堪重负。完成一个简单游戏比开始但从未完成庞大项目更令人满意。
+
+
+    ## 请管住手，不要随意触碰键盘和鼠标
+
+
+    分享知识令人兴奋。向别人展示你掌握的编程知识很棒。但编程是一项通过动手实践习得的技能，所以要让孩子主导。即使暂时也要避免在孩子学习时跳进去敲击键盘。如果他们必须点击菜单或按钮，请用手指指向屏幕，而不是拿走鼠标自己点击。只要有代码需要输入，就让他们输入。虽然你自己做可能更快，但你的学生需要的练习比你更多。如果你在教一群人，尽量让每个学生拥有自己的电脑。就像演奏乐器一样，编程是一项通过动手实践而非观看他人而习得的技能。树莓派（Raspberry
+    Pi）是一款廉价、简易的 PC，入门套件售价约为 70 美元。虽然增加键盘、鼠标和显示器后总价会相当于一台廉价笔记本电脑。避免使用 Chromebook、iPad
+    和平板电脑，因为让它们运行 Python 很困难。如果你需要在预算有限的情况下为课后俱乐部设置计算机实验室，树莓派将允许你利用闲置的键盘和显示器。
+
+
+    ## 是否所有学生都应该学习编程
+
+
+    支持者通常会提出一个或多个论点来支持教育编程倡议：
+
+
+    编程教育将帮助学生获得与当前就业市场直接相关的职业技能。
+
+
+    - 倡导者们说，看看世界上所有可用的 IT 相关工作... 我们的学校不应该专门准备我们的学生去竞争这些工作吗？批评者回应称，许多相关努力在实际上是浪费时间，原因如下：它们侧重于开发主要在外部场所即可轻松学习的大机械过程；它们主要关注“今日工作相关的”技能，而非明日；此类倡议主要由商业部门推动（对此持高度怀疑态度的群体）；并且许多努力本身就几乎没有教育价值。（常被人轻蔑提及的是那些号称关于编程但实际上仅仅教如何学习使用基本办公工具（如文字处理软件和演示软件）的项目。）
+
+
+    ### 编程有助于培养重要的逻辑和问题解决技能
+
+
+    - 很少有人会反对这样一个观点，即当教得好时，编程教育有助于培养重要的逻辑思维和问题解决技能。对此，批评者争辩说，编程课程并非发展此类技能的唯一途径，而且事实上这些技能应融入整个课程体系，而不是单一学校科目的焦点。
+
+
+    ### 理解编程有助于学生更好地理解周围世界的本质，以及它各部分运作的方式和原因
+
+
+    - 我发现，在这方面分歧较小，尽管值得注意的许多教育编程努力的批评者可能并未完全掌握这一论点的重要性。那些认识到这一点的人仍然可能会争辩说，这里存在机会成本：如果将编程加入所有学生的必修课程，会产出什么？
+
+
+    **教会学生编程可以成为后续学习 STEM（科学、技术、工程和数学）主题的门户，并希望通往相关领域的职业工作。**
+
+
+    - 这可能属实，一些批评者说，但这真的是“最佳”的门户吗？如果编程没有教好，它是否实际上会劝退一些学生不再深入研究 STEM 主题，从而降低他们从事 STEM
+    相关职业的可能性？学校的编程教育真的是通往编程的门户，还是在实践中仅仅是一种“寓教于乐”，只是处理学校购买但尚未想出产如何用产的电脑？
+
+
+    ## 能够编程为创造力和创造性表达开启新路径
+
+
+    - 通过像 Scratch 这样的工具向小学生教授编程技能，或者作为机器人课程或推广“创客”倡议的一部分，这些努力常被引为（好）的编程教育举措可能包含的内容的有力例子。在此再次，许多批评者可能赞扬此类努力，但仍争辩说，即使你承认编程是我们日益技术饱和世界的新识字能力，在推进新的、大规模、强制性的教育编程倡议之前，仍值得问两个相当基本的问题。我们对于阅读、写作和算术这些旧的基础识字能力做得如何？我们不应该在将新内容添加到已经臃肿的课程之前，确保这些基础“识字技能”到位吗？
+
+    '
+  merge: 1
+  raw:
+  - '[PAGE 36]
+
+
+    part of the ‘do it for recreation’ category. Instead, now to learn how to code
+    has become one of the prerequisites for innovation.
+
+
+    # Why Is Coding Important For the Future
+
+
+    As mentioned in the previous pointer, coding is a skill that will determine the
+    future of STEM jobs’ fulfillment around the world.Considering the pace at which
+    technologies and applications across all platforms are creating methodical chaos
+    around the world, it makes sense to assume that in addition to data being the
+    new oil as quoted by mathematician Clive Humby – programmers will be the new must
+    have professionals in companies in near future. The rise of Machine Learning,
+    IoT, Artificial Intelligence, and Data Science as emerging industries is a sign
+    of what’s to come. And it would be a good idea to have coder kids ready well in
+    advance so that they can make the big leap when the time comes, eventually!'
+  - '[PAGE 37]
+
+
+    # Tips for teaching kids to code
+
+
+    Use Scratch for younger kids and Python for older kids
+
+
+    MIT''s Scratch is a free programming tool designed for kids that runs in any modern
+    Web browser. Its visual style was influenced by the Logo program, a staple of
+    programming classes for children of the ''80s and ''90s. But Scratch is much more
+    than yet another Logo knockoff. Kids between the ages of 8 and 13 will benefit
+    from Scratch''s simple graphical interface. Scratch''s drag-and-drop code blocks
+    snap together. Pieces of code that don''t make computational sense won''t fit
+    together, making syntax errors literally impossible. Scratch is great for younger
+    kids who haven''t developed typing skills. Of course, kids who try to make more
+    sophisticated programs will eventually run into a wall with Scratch. For teens
+    and pre-teens, a real-world programming language like Python is more suitable.
+    Python is an excellent first programming language because it has a simple syntax
+    (unlike languages such as Java or C#), produces readable'
+  - '[PAGE 38]
+
+
+    code (unlike Perl or JavaScript), and has a large and friendly community of developers
+    behind it. If your child has outgrown Scratch, Python is the best next step.
+
+
+    # Show source code for actual programs.Don''t just talk concepts at them.
+
+
+    Despite its intellectual reputation, programming is a hands-on skill that requires
+    practice, more than just reading books. Python''s interactive shell encourages
+    experimentation to find out what instructions do.If you are tutoring your kids
+    directly, writing code goes a long way compared to just talking concepts at them.
+    Even after learning about variables, loops, and functions, sitting in front of
+    a blank editor and starting a new program is intimidating. Sit with them and describe
+    the code they should write line by line.Or, if you are using online resources
+    to share with your child, look for the source code to small games. Programs with
+    less than a couple hundred lines of code work best.The Scratch website automatically
+    shares the source for all projects on'
+  - '[PAGE 39]
+
+
+    its website. Encourage your kid to make modifications to the code and see how
+    they change the final program
+
+
+    # Games are fun programming projects.
+
+
+    Programming video games is a common starting point for many young coders.Angry
+    Birds, Minecraft, Flappy Bird, Five Nights at Freddy''s, and other games are prime
+    sources of inspiration.I''ve written a free book, Invent Your Own Computer Games
+    with Python, which demonstrates coding concepts with the complete source code
+    for several simple game projects. Be warned that games your kids love might not
+    make great programming projects when they''re just starting out. Many games require
+    teams of developers, artists, and designers to put together. Games that require
+    a lot of level-design and artwork can overwhelm beginners.It''s much more satisfying
+    to complete a simple game, than to start and never finishing a massive project.
+
+
+    # Keep your hands off the keyboard and mouse.'
+  - '[PAGE 40]
+
+
+    Sharing knowledge is exciting. Showing someone what you know about programming
+    is great. But coding is a skill that is learned with hands-on practice, so let
+    the kids drive. Avoid jumping in to type on the keyboard when working with kids,
+    even temporarily. If they have to click on a menu or button, point to the screen
+    with your finger instead of taking the mouse and clicking it yourself. Whenever
+    there is code to be typed, have them type it. It may be faster if you did it yourself,
+    but your pupil needs the practice more than you. If you are teaching a group,
+    try to give each student their own computer. Like playing a musical instrument,
+    programming is a skill that is learned with hands-on practice rather than watching
+    someone else.
+
+
+    The Raspberry Pi is a cheap, bare-bones PC that that runs about US$ 70 for a starter
+    kit. Although adding a new keyboard, mouse, and monitor raises the total price
+    to be comparable with a cheap laptop. Avoid Chromebooks, iPads, and tablets because;
+    getting Python to run on them is difficult. If you'
+  - '[PAGE 41]
+
+
+    need to set up a computer lab for an afterschool club on a budget, the Raspberry
+    Pi would allow you to make use of spare keyboards and monitors.
+
+
+    # Should all student learn how to code
+
+
+    Proponents often make one or more of the following arguments in support of educational
+    coding initiatives:
+
+
+    Coding education will help student acquire vocational skills that are immediately
+    relevant to today''s job market.
+
+
+    +   - Look at all of the IT-related jobs available in the world, advocates say.
+    Shouldn''t our schools be specifically preparing our students to compete for them?
+    Critics respond that many related efforts are a waste of time in practice because:
+    they focus on developing largely mechanical processes that are easily learned
+    in other venues; they are largely concerned with "job-relevant" skills of today,
+    not tomorrow; initiatives of this sort are largely driven by the business sector
+    (a group that they view with'
+  - '[PAGE 42]
+
+
+    great suspicion); and many efforts have little pedagogical value in and of themselves.(Often
+    cited with particular disdain are projects purportedly about coding but which
+    amount to little more than learning how to use basic office tools such as word
+    processors and presentation software.)
+
+
+    # ### Coding helps develop important logic and problem-solving skills
+
+
+    • Few would argue against the notion that, when taught well, education in coding
+    can help develop important logical thinking and problem-solving skills. In response,
+    critics argue that coding courses have no monopoly on the development of such
+    skills, and that in fact such skills should be embedded throughout an entire curriculum,
+    not the focus of a single school subject.
+
+
+    ### Understanding coding helps students better understand the nature of the world
+    around them, and how and why increasing parts of it function as they do
+
+
+    41'
+  - '[PAGE 43]
+
+
+    +   - There tends, I find, to be less disagreement on this count, although it
+    is perhaps worth noting that many critics of educational coding efforts may perhaps
+    not fully grasp the import of this argument. Those that do recognize this may
+    still argue that there is an opportunity cost here: If you add coding to the mandatory
+    curriculum for all students, what comes out?
+
+
+    **Teaching students to code can serve as a gateway to subsequent study of STEM
+    (science, technology, engineering and mathematics) topics, and hopefully to jobs
+    and careers in related fields.**
+
+
+    +   - This may be true, some critics argue, but is this really the “best” gateway?
+    If coding is not well taught, might it in fact dissuade some students from further
+    study of STEM topics, and thus decrease the likelihood that they pursue STEM-related
+    careers? Is coding education in schools indeed a gateway to coding, or is it in
+    practice just “edutainment”, something to do with all the computers that schools'
+  - '[PAGE 44]
+
+
+    have purchased and still haven''t figured out how to use productively?
+
+
+    # Being able to code enables new avenues for creativity and creative expression
+
+
+    +   - Efforts to teach coding skills to young students through the use of tools
+    like Scratch, or as part of robotics courses or initiatives to promote “making”,
+    are often cited as compelling examples of what (good) coding education efforts
+    may comprise. Here again, many critics may laud such efforts but still argue that,
+    even if you concede that coding is a new literacy in our increasingly technology-saturated
+    world, it is still worth asking two rather basic questions before moving ahead
+    with new, large–scale, mandatory educational coding initiatives. How are we doing
+    with the old, basic literacies of reading, writing and arithmetic? Shouldn’t we
+    ensure that these fundamental “literacy skills” are in place before we start tacking
+    new ones on to our already bloated curricula?'
+- md: '
+
+
+    - Where a great teacher is working with and supporting an eager, motivated student
+    as she learns to code, it''s hard to argue against doing more of this sort of
+    thing. Educational "success", after all, is largely a function of tapping into
+    a learner''s inherent curiosity (and not stifling it!). If we are talking about
+    a situation where a disinterested or slightly interested learner is made to learn
+    and practice by rote a number of rather basic commands and actions related to
+    "how to make a computer do something", especially by a teacher who herself does
+    not know the subject well and where that "something" largely relates to how to
+    do things like change font sizes in PowerPoint – well, that is something that
+    perhaps no one should have to learn in school as part of the official curriculum.
+    There is of course space in between these two extremes where things get a little
+    more interesting, and complicated.
+
+
+    - When considering that broad middle area, I guess I''d tend to view things a
+    bit like artificial intelligence pioneer Roger Schank who says that "Any cognitive
+    scientist worth his salt knows that it isn''t subjects like algebra or chemistry
+    that matter. It is cognitive abilities that are important." The same holds, I
+    would argue, when it comes to coding.
+
+
+    - As an extracurricular or enrichment activity in education systems that are already
+    doing a good job in promoting the development of basic literacy skills, the introduction
+    of efforts to promote coding in schools seems rather reasonable, especially where
+    such efforts help engage or energize otherwise disinterested learners – particularly
+    where such students may not, for reasons of bias, discrimination or stereotyping,
+    be considered (or even consider themselves) as candidates to learn such things.
+    In places where there are still great struggles to help students develop basic
+    literacy skills, however, especially in many middle and low-income countries,
+    it should not be surprising if many policymakers consider educational coding efforts
+    to be, as one such official recently put it to me, a "luxury" that they "cannot
+    afford right now".
+
+
+    ## Advantages and Disadvantages of Programming Education
+
+
+    ### Advantages
+
+
+    Here we will introduce the benefits of programming education.
+
+
+    #### Lead to social development
+
+
+    - For People who don''t understand programming at all, maybe they have no idea
+    how important programming is, our daily life is surrounded by full of programming.
+
+    - In addition, the Internetization of everyday items is rapidly advancing due
+    to Iotization. Agriculture and other primary industries are likely to be more
+    efficient and productive by using programming.
+
+
+    #### Children''s Vision Will Be More Opened
+
+
+    - By touching programming from young helps children to have many more options
+    for the future.
+
+    - Twenty years ago, who would have imagined that programmers are in high demands?
+    Another twenty years from now, probably, there will be a new occupation.
+
+    - For that reason, there is no doubt to say that learn programming that linked
+    to various things will be a huge benefit for children''s future.
+
+
+    ### Disadvantages
+
+
+    Next, I will introduce the disadvantages of programming education.
+
+
+    ### Lack of teachers
+
+
+    - It will be compulsory in elementary school from next year, and after 3 years
+    it will be compulsory in every single schools in Japan.
+
+    - How many teachers can teach programming? Are there enough teachers to teach
+    hundreds of children?
+
+    - Also, how many people can teach useful programming that can actually be used
+    and high quality of it even they can teach? Even if it becomes compulsory, there
+    is no point if they cannot maintain the quality of education. Maybe, the low quality
+    of programming study leads children to hate programming.
+
+
+    ### More Children Prefer to Play Inside Now
+
+
+    - The biggest disadvantage is maybe children become more indoor person. Primary
+    school children and junior high school students are growing a lot. And, outdoor
+    activities and club activities help children''s body grow in healthy way.
+
+    - It is also possible to have an bad effect on their health if they spend more
+    time indoors because they become too passionate about programming. Also, the actual
+    physical experience may be reduced. The opportunity to actually get in touch with
+    people may be replaced by the time that they face the computer. Programming education
+    has both advantages and disadvantages.
+
+    - However, if we don''t actually start, we never know what will happen. There
+    is a great possibility that the future will be lighten up. So, there is no need
+    to worry about the disadvantages only. This is a topic that you do not want to
+    miss.
+
+
+    CPSIA information can be obtained at www.ICGTesting.com
+
+    Printed in the USA
+
+    LVHW051610250621
+
+    691160LV00003B/4
+
+
+    9 798577 313296
+
+
+    This book starts with the scratch programming basics, teaching kids what coding
+    is, and all about the different tools they can use to build their own programs
+    and games. Each chapter teaches a different aspect of coding, with exercises that
+    get more challenging as they go, so kids can test their abilities and unleash
+    their imagination. They''ll even build their own game. Coding is quickly becoming
+    an essential academic skill, right up there with reading, writing, and arithmetic.
+    This book is an ideal way for young learners ages 8-13 who want more coding knowledge
+    than you can learn in an hour, a day, or a week. Written by a classroom instructor
+    with extensive experience teaching technology skills to kids as young as five,
+    this book teaches the steps and logic needed to write code, solve problems, and
+    create fun projects based in Scratch and JavaScript.
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_57_0.png)'
+  mdcn: '
+
+
+
+    - 当一位优秀的教师与一位热切、积极的学生一起学习编程时，很难反对推广更多此类活动。教育的“成功”，在很大程度上在于激发学习者内在的好奇心（而不是扼杀它！）。如果我们谈论的是一个不感兴趣或兴趣不大的学习者被迫死记硬背地学习与“如何让计算机做某事”相关的大量相当基础的命令和操作的情况，尤其是由一位自己对学科了解不深的教师来教授，而那个“某事”主要涉及如何在
+    PowerPoint 中更改字体大小等事情——那么，这可能是没有人应该在学校作为正式课程的一部分来学习的东西。当然，在这两个极端之间存在一个更有趣也更复杂的中间地带。
+
+
+    - 当考虑到这个广泛的中间地带时，我想我倾向于像人工智能先驱罗杰·尚克那样看待事物，他说：“任何称职的认知科学家都知道，重要的不是代数或化学这样的科目。重要的是认知能力。”我认为，在编程方面，情况也是如此。
+
+
+    - 在已经很好地促进基本读写技能发展的教育体系中，将编程引入学校作为课外或拓展活动似乎是相当合理的，尤其是当这些努力能够帮助吸引或激励那些原本不感兴趣的读者时——特别是当这些学生可能由于偏见、歧视或刻板印象，而不被认为（或甚至不自认为）是学习此类事物的候选人时。然而，在那些仍然在努力帮助学生发展基本读写技能的地方，特别是在许多中低收入国家，如果许多政策制定者认为教育编程努力是，正如一位这样的官员最近对我说的那样，一个他们“目前负担不起”的“奢侈品”，也就不足为奇了。
+
+
+    ## 编程教育的利弊
+
+
+    ### 优点
+
+
+    我们将在此介绍编程教育的好处。
+
+
+    #### 推动社会发展
+
+
+    - 对于完全不懂编程的人来说，也许他们不知道编程有多重要，我们的日常生活充满了编程。
+
+    - 此外，日常物品的互联网化正因物联网化而迅速推进。农业等第一产业通过使用编程可能会变得更高效、更高产。
+
+
+    #### 开阔儿童视野
+
+
+    - 从小接触编程有助于儿童拥有更多未来的可能性。
+
+    - 二十年前，谁能想到程序员会如此抢手？再过二十年，可能会出现新的职业。
+
+    - 因此，毫无疑问地说，学习与各种事物相关的编程将对儿童的未来大有裨益。
+
+
+    ### 缺点
+
+
+    接下来，我将介绍编程教育的缺点。
+
+
+    ### 师资缺乏
+
+
+    - 从明年起，它将在小学成为必修课，三年后，日本所有学校都将强制开设。
+
+    - 有多少教师能教授编程？有足够的教师来教数百名儿童吗？
+
+    - 此能教授编程的教师中，又有多少人能教授实际上可以使用的、高质量的编程？即使编程成为必修课，如果无法保证教育质量，那也没有意义。也许，低质量的编程学习会导致孩子们讨厌编程。
+
+
+    ### 越来越多的孩子现在更喜欢待在室内
+
+
+    - 最大的缺点可能是孩子们变得更加“室内型”。小学生和初中生正处于成长发育期。而且，户外活动和社团活动有助于孩子们以健康的方式成长。
+
+    - 如果他们因为对编程过于热衷而在室内花费更多时间，也可能对他们的健康产生不良影响。此外，实际的亲身经历可能会减少。实际与人接触的机会可能会被面对电脑的时间所取代。编程教育有利有弊。
+
+    - 然而，如果我们不真正开始，我们永远不知道会发生什么。未来很有可能会变得光明。所以，没有必要只担心缺点。这是一个你不想错过的话题。
+
+
+    CPSIA 信息可在 www.ICGTesting.com 获取
+
+    美国印刷
+
+    LVHW051610250621
+
+    691160LV00003B/4
+
+
+    9 798577 313296
+
+
+    本书从 Scratch 编程基础开始，教导孩子们什么是编码，以及他们可以用来构建自己的程序和游戏的所有不同工具。每一章都教授编程的一个不同方面，练习随着章节的进展而变得更具挑战性，因此孩子们可以测试他们的能力并释放他们的想象力。他们甚至会构建自己的游戏。编码正在迅速成为一项必不可少的学术技能，与阅读、写作和算术同等重要。这本书是
+    8-13 岁年轻学习者的理想选择，他们想要比一小时、一天或一周能学到的更多编码知识。本书由一位拥有广泛经验的课堂讲师撰写，曾教授过低至五岁儿童的科技技能，它教授了编写代码、解决问题以及创建基于
+    Scratch 和 JavaScript 的有趣项目所需的步骤和逻辑。
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_57_0.png)
+
+    '
+  merge: 1
+  raw:
+  - '[PAGE 45]
+
+
+    +   - Where a great teacher is working with and supporting an eager, motivated
+    student as she learns to code, it''s hard to argue against doing more of this
+    sort of thing. Educational "success", after all, is largely a function of tapping
+    into a learner''s inherent curiosity (and not stifling it!). If we are talking
+    about a situation where a dis- or slightly interested learner is made to learn
+    and practice by rote a number of rather basic commands and actions related to
+    "how to make a computer do something", especially by a teacher who herself does
+    not know the subject well and where that "something" largely relates to how to
+    do things like change font sizes in PowerPoint – well, that is something that
+    perhaps no one should have to learn in school as part of the official curriculum.
+    There is of course space in between these two extremes where things get a little
+    more interesting, and complicated.
+
+
+    +   - When considering that broad middle area, I guess I''d tend to view things
+    a bit like artificial intelligence pioneer Roger Schank who says that "Any cognitive
+    scientist worth his salt knows that it'
+  - '[PAGE 46]
+
+
+    isn''t subjects like algebra or chemistry that matter. It is cognitive abilities
+    that are important." The same holds, I would argue, when it comes to coding.
+
+
+    +   • As an extracurricular or enrichment activity in education systems that are
+    already doing a good job in promoting the development of basic literacy skills,
+    the introduction of efforts to promote coding in schools seems rather reasonable,
+    especially where such efforts help engage or energize otherwise disinterested
+    learners – particularly where such students may not, for reasons of bias, discrimination
+    or stereotyping, be considered (or even consider themselves) as candidates to
+    learn such things. In places where there are still great struggles to help students
+    develop basic literacy skills, however, especially in many middle and low-income
+    countries, it should not be surprising if many policymakers consider educational
+    coding efforts to be, as one such official recently put it to me, a "luxury" that
+    they "cannot afford right now".'
+  - '[PAGE 47]
+
+
+    # # Advantages and disadvantages of programming education
+
+
+    # ## Advantages
+
+
+    Here we will introduce the benefits of programming education.
+
+
+    # ### Lead to social development
+
+
+    +   * For People who don’t understand programming at all, maybe they have no idea
+    how important programming is, our daily life is surroundings by full of programming.
+
+
+    +   * In addition, the Internetization of everyday items is rapidly advancing
+    due to Iotization.Agriculture and other primary industries are likely to be more
+    efficient and productive by using programming.
+
+
+    # ### Children’s vision will be more opened
+
+
+    +   * By touching programming from young helps children to have many more options
+    for the future.
+
+
+    +   * Twenty years ago, who would have imagined that programmers are in high demands?
+    Another twenty'
+  - '[PAGE 48]
+
+
+    years from now, probably, there will be a new occupation.
+
+
+    +   - For that reason, there is no doubt to say that learn programming that linked
+    to various things will be a huge benefit for children’s future.
+
+
+    # Disadvantages
+
+
+    Next, I will introduce the disadvantages of programming education.
+
+
+    # Lack of teachers
+
+
+    +   - It will be compulsory in elementary school from next year, and after 3 years
+    it will be compulsory in every single schools in Japan.
+
+
+    - How many teachers can teach programming? Are there enough teachers to teach
+    hundreds of children?
+
+
+    - Also, how many people can teach useful programming that can actually be used
+    and high quality of it even they can teach? Even if it'
+  - '[PAGE 49]
+
+
+    becomes compulsory, there is no point if they cannot maintain the quality of education.Maybe,
+    the low quality of programming study leads children to hate programming.
+
+
+    # More children prefer to play inside now
+
+
+    +   - The biggest disadvantage is maybe children become more indoor person.Primary
+    school children and junior high school students are growing a lot. And, outdoor
+    activities and club activities help children’s body grow in healthy way.
+
+    - It is also possible to have an bad effect on their health if they spend more
+    time indoors because they become too passionate about programming.Also, the actual
+    physical experience may be reduced. The opportunity to actually get in touch with
+    people may be replaced by the time that they face the computer. Programming education
+    has both advantages and disadvantages.
+
+    - However, if we don’t actually start, we never know what will happen. There is
+    a great possibility that the future will be lighten up.So, there is no need'
+  - '[PAGE 50]
+
+
+    to worry about the disadvantages only. This is a topic that you do not want to
+    miss.'
+  - '[PAGE 51]
+
+
+    <!-- no content -->'
+  - '[PAGE 52]
+
+
+    <!-- no content -->'
+  - '[PAGE 53]
+
+
+    <!-- no content -->'
+  - '[PAGE 54]
+
+
+    <!-- no content -->'
+  - '[PAGE 55]
+
+
+    CPSIA information can be obtained
+
+    at www.ICGTesting.com
+
+    Printed in the USA
+
+    LVHW051610250621
+
+    691160LV00003B/4
+
+
+    9 798577 313296'
+  - '[PAGE 56]
+
+
+    <!-- no content -->'
+  - '[PAGE 57]
+
+
+    This book starts with the scratch programming basics, teaching kids what coding
+    is, and all about the different tools they can use to build their own programs
+    and games. Each chapter teaches a different aspect of coding, with exercises that
+    get more challenging as they go, so kids can test their abilities and unleash
+    their imagination. They''ll even build their own game. Coding is quickly becoming
+    an essential academic skill, right up there with reading, writing, and arithmetic.
+    This book is an ideal way for young learners ages 8-13 who want more coding knowledge
+    than you can learn in an hour, a day, or a week. Written by a classroom instructor
+    with extensive experience teaching technology skills to kids as young as five,
+    this book teaches the steps and logic needed to write code, solve problems, and
+    create fun projects based in Scratch and JavaScript.
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_57_0.png)'
+pages:
+- img_proc: true
+  md: '# # BEGINNER''S GUIDE TO CODING for kids
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_0_0.png)
+
+
+    ```
+
+
+    ```
+
+
+    # RAUL SCOTT PH.D'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Table of Contents
+
+
+    +   - INTRODUCTION ..........................................................3
+
+
+    +   - What is coding for kids? ..........................................................3
+
+
+    +     - Why "every" kid should code ..........................................................4
+
+
+    +   - What is Coding for Kids? What Age is Appropriate to Learn to Code? ..........................................................6
+
+
+    +     - Why Should My Child Learn to Code? Why isn''t K-12th Grade School Enough?
+    ..........................................................7
+
+
+    +   - Benefits of coding ..........................................................10
+
+
+    +   - Ways to Introduce Early Years Kids to Coding and Computer Programming ..........................................................14
+
+
+    +   - Programming Languages for Kids ..........................................................20
+
+
+    +     - Python ..........................................................20
+
+
+    +     - Ruby ..........................................................21
+
+
+    +     - Java (Minecraft) ..........................................................22
+
+
+    +     - C++ ..........................................................24
+
+
+    +     - Scratch ..........................................................24
+
+
+    +     - Blockly ..........................................................26
+
+
+    +     - Go (Golang) ..........................................................28
+
+
+    +     - Lua (Roblox) ..........................................................30
+
+
+    +   - Why It is Important to Train Kids to Code ..........................................................31
+
+
+    +     - Why Every Child Should Learn to Code ..........................................................32
+
+
+    +   - Benefits of Learning to Code ..........................................................32'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: 'Tips for teaching kids to code .....................................................36
+
+
+    Should all student learn how to code .............................................40
+
+
+    Advantages and disadvantages of programming education...........................................................46'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# INTRODUCTION
+
+
+    Kids coding is growing rapidly in popularity as more and more parents and educators
+    see that it is an important 21st century skill best taught early and often. Too
+    often quality coding options are not available in many towns, cities, and even
+    countries. Many parents and educators see the need, and want to do something about
+    it. Coding for kids (otherwise known as computer programming) is growing rapidly
+    in popularity. While programming is offered in a small number of traditional schools
+    in the US, a Gallup poll indicates that 90% of parents would like computer programming
+    to be taught during the school day. Learning how to code at a young age can truly
+    set up your child for a lifetime of success. Even if they don''t go into a specifically
+    computer science related field, it gives them an edge in virtually every modern
+    industry.
+
+
+    # What is coding for kids?
+
+
+    Coding for kids is the collection of opportunities available for children to get
+    involved in coding.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: 'These opportunities aim to be fun and gamified to keep the young mind engaged.
+    And while it is difficult to imagine a young brain learning something seemingly
+    complex, coding for kids is reality—thanks to the many coding summer camps, websites,
+    coding tutors, after-school programs, and toys, coding can be quite digestible.
+
+
+    # Why "every" kid should code
+
+
+    Years ago when all of this kids and code chatter started, you could have characterized
+    it has hype because the whole idea was new and novel to the education system.
+    And, while this “learn to code” popularity spike wasn’t unfounded by any means,
+    time was really the only thing that could tell us if it all was going to be a
+    big fat flash in the pan. Well, here we are. Time has passed, yet we are still
+    seeing STEM education stats like by 2018, 2.4 million STEM jobs will go unfilled.
+    And others like 71% of all new jobs in STEM are in computing, but only 8% of STEM
+    graduates are in Computer Science. People are still wondering if coding is hard
+    to learn. We’ve officially moved beyond simply saying'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '"coding is cool, so go do it," end of story. Instead, we are now saying, "coding
+    is in fact cool, so go do it, but you should also go do it because you''ll be
+    rewarded as a result." In other words, there are jobs, lots of them—and jobs that
+    pay very well.
+
+
+    What makes this even better is that it''s not just the jobs or the coolness, either
+    (this would be a much shorter blog post if that were the case). But also the creativity,
+    problem solving, collaboration, communication, and other skills ripe for improvement
+    as byproducts of kids learning to code.
+
+
+    So, kids should learn to code because:
+
+
+    +   - Coders are in high demand
+
+
+    +   - Coding provides a competitive advantage
+
+
+    +   - Coding knowledge allows students better understand the world
+
+
+    +   - Coding is fun and satisfying'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '+   - Coding improves creativity
+
+    - Coding improves problem solving
+
+    - Coding improves persistence
+
+    - Coding improves collaboration
+
+    - Coding improves communication
+
+
+    # What is Coding for Kids? What Age is Appropriate to Learn to Code?
+
+
+    Coding, or computer programming, is a creative process programmers perform to
+    tell a computer how to perform a task.At its foundation, it involves writing computer
+    programs using programming languages. Coding for kids is usually taught using
+    content that is high-interest while creating projects that involve creative input.In
+    short, coding for kids is typically gamified making it fun for kids to learn!Since
+    coding can be gamified, kids as early as age 5 can start learning how to code
+    using visual block interfaces or age appropriate text-based coding classes.Kids
+    computer programming courses'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: 'using games, apps, and other kid-centric projects is a research-based approach
+    that has been proven to teach real world skills in a way that keeps students engaged.
+
+
+    # Why Should My Child Learn to Code? Why isn’t K-12th Grade School Enough?
+
+
+    In short, learning to code at a young age provides kids and teens with more future
+    opportunities. As you will learn below, the data is compelling. According to the
+    Bureau of Labor median pay for software developers is $103,560 per year, with
+    demand expected to increase by 24% per year from 2016 to 2026.This is much faster
+    than the average of other occupations.
+
+
+    Unfortunately, even if your K-12 school is one of the few actively offering coding
+    classes, they typically do not properly prepare students. Either they fail to
+    incorporate the proper languages that jumpstart your kid’s career or simply don’t
+    have as many tools and resources as are available in supplemental programs.Most
+    schools use programs'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: 'like Scratch, Code.org, or Tynker.Scratch is a good, free way for kids to learn
+    coding concepts without using real programming languages.Code.org has some decent
+    exercises that introduce Scratch-like visual block languages and even some basic
+    text coding in its later modules. Tynker also features a visual block approach
+    while introducing text-based coding in later modules.These programs are preferred
+    tools for schools as classes can be proctored by teachers that have limited or
+    no engineering backgrounds. They are fun ways to get your child’s feet wet, but
+    within a short period of time, many kids will be clamoring for more advanced content.
+    Next level content allows student’s to create their own games, apps, and web pages
+    using real text-based languages.Plus, it doesn’t restrict them to closed platforms.
+
+
+    Some additional reasons you should consider introducing your kids to coding at
+    an early age:
+
+
+    +   - Computer science builds skills in a number of corollary areas including
+    math, science, problem-'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: 'solving, teamwork, project-based learning, creative arts, and more. As Steve
+    Jobs famously stated, "Coding teaches you how to think."
+
+
+    +   - Learning to computer program is just like learning a foreign language. The
+    earlier you start, the easier it is.
+
+    - In 2020, there will be nearly 1 million unfilled tech jobs in the United States
+    due to a shortage of qualified engineers.
+
+    - Computer-related occupations make up over 60% of projected new job positions
+    in STEM (Science, Technology, Engineering, and Math).
+
+    - Computer programming teaches skills that are instantly relevant in today''s
+    job market.
+
+    - Computing powers nearly every industry from education to farming, from law to
+    business, and from construction to medicine.
+
+    - Computer engineering jobs rank among the highest-paying for new graduates.'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '+   - Coding is the newest liberal art. (Liberal arts were traditionally designed
+    to prepare individuals for civic life and to help students understand the world
+    around them. It is only a matter of time before it is included in core curricula).
+
+
+    # Benefits of coding
+
+
+    Here is an explanation of the different reasons why coding is important.
+
+
+    # Coders are in high demand
+
+
+    +   - As mentioned, according to Code.org, 71% of all new STEM jobs are in computing,
+    yet only 8% of STEM graduates are in Computer Science. That''s a SERIOUS shortage
+    of CS majors.
+
+
+    Coding provides a competitive advantage when applying to colleges, internships,
+    and jobs
+
+
+    +   - If you possess a hot skill that many of your peers lack–such as the ability
+    to code–you instantly appear more desirable in the eyes of potential'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: 'college admissions officers and employers.Plain and simple.
+
+
+    # With coding knowledge, students better understand the world around them
+
+
+    +   - Most of us don''t know the first thing about what makes our smartphones,
+    laptops, social media networks, and video games run. Basic programming knowledge
+    can change the way we interact with the technologies we use (and take for granted)
+    daily, and can open our eyes to the infinite possibilities of coding.
+
+
+    # Coding is fun and satisfying
+
+
+    +   - While programming is logic-based, it''s also an extremely creative activity.
+    If you know how to code, you can develop the aforementioned apps, video games,
+    websites, and more!
+
+
+    # Coding improves creativity
+
+
+    +   - When you learn a language, you use it to express yourself.The same is true
+    with code. Computer coding empowers kids to not only consume digital'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: 'media and technology, but to create it. Instead of simply playing a video game
+    or using an app, they can imagine making their own video game, or envision what
+    their own website, or app might look like—and they’ll have the outlet for expression.
+
+
+    # Coding improves problem solving
+
+
+    +   - When kids code, they take complex problems and break them down into smaller
+    parts. Kids learn what it’s like to approach a problem the way a software engineer
+    does, with logical, computational thinking.
+
+    - Computational thinking teaches you how to tackle large problems by breaking
+    them down into a sequence of smaller, more manageable problems.”
+
+    - This logical thinking is a powerful tool in school, work, and life.
+
+
+    # Coding improves persistence
+
+
+    +   - Learning to code, like any new discipline, is a challenge. Thus, tackling
+    complex problems—and making mistakes along the way—can be very frustrating.'
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: '+   - Coding teaches the valuable skill of persistence in the face of such
+    challenges. Learning how to problem solve and look for solutions through research
+    and collaboration builds this highly desirable skill.
+
+
+    # Coding improves collaboration
+
+
+    +   - Every student can learn and every student can learn how to code kids can
+    learn alongside others of every race, gender, or background. Kids meet and learn
+    how to collaborate with all kinds of peers, all joined by a common interest in
+    technology.
+
+
+    +   - Classrooms and other in-person environments, like iD Tech, bring kid''s
+    together for face-to-face collaboration. Kids learning online can also grow, asking
+    each other questions, and working to solve problems and create things together.
+
+
+    +   - Many games, like Minecraft, also offer a bevy of educational benefits because
+    they too involve coding, collaboration, and participation—with peers all over
+    the world.'
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# Coding improves communication
+
+
+    +   - Communication is an absolutely essential skill throughout school, work,
+    and life. People who can clearly communicate complex ideas in simple terms tend
+    to be successful in different industries and walks of life.
+
+
+    +   - When kids learn how to code, they learn how to communicate with the most
+    simple-minded audience imaginable: computers. As mentioned, computer coding teaches
+    kids how to break down complex ideas and arrange them in a way that computers
+    can understand.
+
+
+    # Ways to Introduce Early Years Kids to Coding and Computer Programming
+
+
+    Introducing your children to the world of coding can be a bit of a challenge,
+    particularly for parents'' who themselves have no idea about how codes work. In
+    today''s era where the digital world has largely taken over our tasks and routines,
+    it is essential to learn the fundamentals of coding.Not'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: 'only it is an enjoyable and productive activity to involve your children in,
+    coding also helps in developing problem-solving skills, polishes creativity and
+    logic, and boosts technical competency.
+
+
+    # Hands-On Play for Budding Coders
+
+
+    The art of coding is not limited to computers and software. Introduce your young
+    child to technical toys that allow them to test their creativity and logical thinking.
+    They will not even know they are actually coding! For instance, LittleBits offers
+    a range of innovative toys that teach children about circuits, electronics, magnets,
+    and bubbles! They have a fun learning tool by the name of Crawly Creatures that
+    will even leave the geek in you fascinated. Suitable for ages 8 +, the toy has
+    little parts including dimmer, pulse and power that encourages the child to learn
+    how circuits work.Another ingenious toy that I came across is perfect for preschoolers.
+    The Think & Learn Code-a-Pillar toys by Fisher-Price are the simplest of'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: 'robots in a shape of funky caterpillars that educate youngsters about commands,
+    sequences, and coding blocks.
+
+
+    # Let Them Play with Applications
+
+
+    Screen-time is usually frowned upon but as we are raising a generation who is
+    surrounded by smartphones and laptops 24/7, it is not feasible to completely ban
+    screens in their lives. Instead, utilize the gadgets in a productive way with
+    some limitations. One of the best resources to enlighten your little engineer
+    to the world of coding and programming are coding applications. Geared towards
+    children, these applications are appealing to the masses and infused with exciting
+    STEM features.
+
+
+    There is Koadable through which your child can learn the basic programming concepts
+    like looping and branching. It is a free, web-based application with coding lessons
+    targeting kindergarten to fifth graders. Daisy the Dinosaur app seems like a simple,
+    puzzle game but it is much more complex.'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: 'Thanks to the cool dinosaur, the application receives the interest of even
+    non-coders.Tynker and Scratch are similar applications that use learning paths
+    from basic to advance to teach coding.CCoding applications provide a comprehensive
+    medium for children to learn programming.
+
+
+    Web Resources and Apps featured here:
+
+
+    +   - Koadable
+
+
+    +   - Daisy the Dinosaur
+
+
+    +   - Tynker
+
+
+    +   - Scratch
+
+
+    # **Utilize Online Resources**
+
+
+    I stumbled upon this cool website called code.org which is rich with coding content.From
+    games to networking opportunities, the site caters to students, teachers, and
+    coders from all over the world.The games are simple at first. For instance, a
+    Star War game requires you to enter codes to move the player in different directions
+    to reach the items.It is a'
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: 'problem-solving game that will force your child to come up with the best solution.For
+    preschoolers, Code Monster is a fantastic elementary web tool to ignite the spark
+    of interest for coding in them. The site has a basic interface that teaches about
+    codes and commands.Another great free website is CodeAcademy. They have created
+    a user-friendly interactive coding experience that teaches you everything related
+    to coding including HTML & CSS, JavaScript, jQuery, PHP, Python and Ruby.
+
+
+    Khan Academy is widely known for its challenging math games and extensive set
+    of online tools to educate children throughout the world. They have a basic coding
+    and programming tutorials for beginners which is quite helpful for kids to learn
+    graphic designing, build animations, creating interactive visualizations and much
+    more!The educational site is completely free and ideal for budding engineers.
+
+
+    Web Resources featured here:
+
+
+    +   - code.org'
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '+   - Code Monster
+
+    - Code Academy
+
+    - Khan Academy: Computer Programming
+
+
+    # ### Sign the Kids up to Summer Tech Camps
+
+
+    If your child has a passion for programming and they show potential, you might
+    want to consider sending them off to a tech summer camp. Schools usually have
+    a list of summer programs and you can check if any tech camps are being held in
+    your area.Most of these camps have comprehensive courses from ages 7 till 17.
+
+
+    CoderDojo is one of the most popular coding camps nationwide. The volunteer-led
+    camp takes kids from ages 7-17 and educate them about building websites and applications,
+    creating video games, learning about new technologies and understand the concepts
+    of coding. The best part is the camp is completely free of cost! The classes take
+    place all over the country.Run a quick search and you will find a program happening
+    nearby your area.In UK,'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: 'National Coding Week takes place in September during which several events and
+    seminars related to coding are organized all over the country. They strive to
+    bring awareness to the younger generation and build their interest in engineering,
+    gaming, and coding. While it is aimed at older kids, it won’t hurt to take your
+    young child for inspiration. Attend the events together with your kid and help
+    them make smart choices.
+
+
+    # Programming Languages for Kids
+
+
+    # Python
+
+
+    Python is a powerful, text-based computer programming language that children as
+    young as age 8 can easily use to express themselves. This specific type of code
+    acts both as a jumping off point for mastering other languages, and a strong enough
+    tool for serious game/web/app development and programming for kids. There are
+    numerous game-based and self-directed courses online that make learning Python
+    (especially Python 3) a unique, fun, and highly engaging experience for'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: 'kidsPython is a great choice for introducing children to coding, because this
+    programming language insists upon using good code layouts. It also encourages
+    users to use online support and extensive Python librariesAs they start to play
+    more and more with Python, your children will learn how to properly use fundamental
+    data structures like lists, tuples, and maps. Mastering variables, loops and other
+    functions in Python will give them a great foundation for tackling more advanced
+    programming in the future.They''ll also overcome the complexity that comes with
+    controlling different structures in Python. Drawing shapes and patterns with Python
+    turtle module will help your kids overcome their first barriers with animation
+    and game design. In no time, they''ll be able code their own apps for Mac, PC,
+    or Linux.
+
+
+    # Ruby
+
+
+    Ruby has the most readable syntax for beginner programmers.Instead of spending
+    a lot of time explaining the code that students are typing into machines, a lot
+    of it will be self-explanatory for'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: 'them. This is a really important factor for children who are still learning
+    the concepts of programming.At the end of the day, children will need to learn
+    the concepts in order to write good scripts.Ruby is a very robust language and
+    it was originally used to create Twitter, so you can immediately show students
+    that the application is a tool that gets used in popular platforms.
+
+
+    ## Java (Minecraft)
+
+
+    Java is not our favorite kids coding language, and quite frankly the only reason
+    it is on the list is that it is the language of Minecraft. As such, the allure
+    of Minecraft creates such an effective "carrot on stick" experience for students
+    that it has become a very popular way to teach kids coding.Since its release back
+    in 2011,Minecraft has become the center of attention of many children across the
+    globe.Even though a lot of adults still believe it is just another game, Minecraft
+    has proven itself to be much more than that.It is an extremely powerful tool for
+    teaching kids how to use logic,solve problems,and strengthen a number of core
+    academic skills.And'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: 'that''s just when they''re in the basic user phase. Once your children start
+    to really look beyond the start operations, it will become transparent to them
+    that Minecraft is an highly adaptive playground, open for customization. When
+    kids start to really like the game, you can introduce them to "mods." Short for
+    modifications, mods basically all the changes that kids can introduce to the game.
+    They can change everything – the characters'' objects, landscapes, specific characteristics,
+    etc. The possibilities are endless. In order to introduce a particular mod to
+    the game, the player needs to write a bit of code. This is where things get interesting.
+    Minecraft runs on Java, and the game''s open architecture allows the users to
+    access Minecraft''s Java source code and play around. While modding with Java,
+    kids will start to learn how to create both simple and complicated things, which
+    will certainly keep them focused and engaged in learning more about this coding
+    language.",
+
+    BBCA, ;艰险感或оли等 as she or her she''s just She in her an her or her her her in
+    her an her her it''s it''s an an her her her in her it''s an her it''s.'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# C++
+
+
+    Many computer science experts and developers have different opinions about whether
+    a student should start with C++ or not. This programming language can look a bit
+    like math and might put students off the idea of learning to code. Once the basic
+    fundamentals of programming are understood, however, C++ can open many doors into
+    the world of programming. Many of today''s most successful programmers started
+    learning to code with C or C++.
+
+
+    # Scratch
+
+
+    Primarily developed for children between the ages of 8 and 16, Scratch is a free
+    educational programming language developed by Mitch Resnick and patented by the
+    Lifelong Kindergarten Group at the Massachusetts Institute of Technology (MIT).
+    Teaching kids to code with Scratch is easy, as the platform provides an intuitive,
+    easy-to-use visual block interface that eliminates the frustration of typing for
+    young learners. This is an excellent starting point for programming for kids.
+    Scratch is'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: 'one of the most visually appealing of all the kids programming languages on
+    the list, but the real reason it really shines is in the freedom of expression
+    that it allows its students. The whole idea behind it was to simplify the process
+    of creating animations, designing games, and building interactive stories, so
+    that literally anyone could do it from the ground up. Kids feel like real game
+    designers using Scratch, and even complete novices can create simple, completely
+    custom games in minutes. Scratch also has a big online community with over 15
+    million registered users from every corner of the world. Anyone can become a member,
+    as long as they comply with the friendly and respectful rules that the MIT Scratch
+    Team has set. The other great thing about the Scratch platform and its community
+    is that you are required to store your projects and their code on the Scratch
+    server, which allows young learners to study how more advanced users have created
+    complex games.
+
+
+    If Scratch sounds like it might be right for you, you can introduce your child
+    to it with this step-by-step'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: 'guide. The cards will provide your kids with a fun new way to learn to code
+    with one of the best kids coding languages on the planet.
+
+
+    # Blockly
+
+
+    Blockly is a visual block programming language for kids that is widely viewed
+    as Google''s response to Scratch. Metaphorically speaking, it uses the same building
+    blocks to help children master code. The only real difference lies in the following:
+    Blockly is actually a programming language made out of several pre-existing programming
+    languages.Developed under the Apache 2.0 license, Blockly is often described as
+    a client-side JavaScript library for creating visual programming block editors.
+    Meaning, it is primarily created for 8+ year-old kids who want to learn how to
+    code at home or at school within their own browsers.Blockly comes with a "JavaScript
+    library", which serves basically as a centralized location where pre-written languages
+    (like JavaScript, Python, PHP, Lua, and Dark) can be easily found and accessed.Blockly
+    has a specific UI'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: that resembles a child’s box of multi-shaped, multi-colored blocks. In addition
+    to that, there is also a toolbox that holds the blocks, a bin, and space to actually
+    write code. It’s very simple to operate. Users take the blocks out of the toolbox
+    (one at a time) and arrange them in sequences until they solve their problem.
+    Once they finish, the program runs a check up, looks at what has been done, and
+    if the solution isn’t correct – it goes back and analyzes the code again until
+    it finds an error. Easy peasy. Blockly makes it possible for anyone to develop
+    an actual working Android app. This makes this language more than just a kids
+    toy or even just a simple tool that helps with programming for kids. Children
+    can code along the side of their screen by linking different blocks together.
+    They can also switch languages with ease, making it possible for them to see different
+    types of code at any time for the same basic program. Even though this is a great
+    program, in comparison to Scratch – Blockly is still not there yet. It is not
+    as developed as its biggest competitor and there are not as many good tutorials,
+    which
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: 'makes it harder for children to learn Blockly on their own.Blockly has been
+    used by some excellent designers at Sphero, and we are seeing a number of other
+    companies utilizing the technology.
+
+
+    # ## Go (Golang)
+
+
+    The Go programming language, a statically typed and compiled language, is one
+    of the newest languages gaining widespread popularity.It is so new, in fact, that
+    it is only just over 10 years old (invented in 2009). This promising growth makes
+    it a great language to know, so it should be added to any curriculum surrounding
+    programming for kids.Just a few years after Go was first implemented, it had already
+    spread to a variety of different industries. There is also a growing list of Fortune
+    500 companies and mega-corporations that are emphasizing its importance and promise.
+    Uber, Netflix, and even American Express are just a few of the known users of
+    Go.Structurally, Go is fairly similar to C. The main differences surround memory
+    safety, garbage collection, structural typing, and CSP style concurrency. As far
+    as kids'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: 'coding languages go, however, it can likely be taught with the same overall
+    tactics and success as C is taught. There are many reasons that go is a language
+    worth knowing, especially in modern day. That said, the main reason would be the
+    fact that it has truly been exploding in terms of popularity, and it doesn''t
+    show signs of stopping. It is expected that, over the next few years, the constant
+    updates from the development team will only prompt the popularity to keep growing
+    and expanding across industries.
+
+
+    # Swift (Swift Playgrounds)
+
+
+    Apple''s Swift Playgrounds was first introduced in 2016 as a tool to teach kids
+    to code. Swift Playgrounds features a number of basic coding lessons and gamified
+    challenges, and comes with a tight interface with graphically pleasing backgrounds.
+    As an iPad app, Swift Playground is good for schools where iPads are used in the
+    classroom.Swift Playgrounds has less to do with the language, and more to do with
+    its overly restrictive lessons, which, like so many other run-of-the-mill kids
+    coding resources, does not give'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: 'students any freedom of expression, such as that provided by the Scratch platform.
+    Students are forced to proceed through levels following a rigid pathway defined
+    by course designers. We''ve found that this “on-rails” experience gets old quickly
+    for creative kids.With recent news that Apple plans to teach a younger generation
+    of iOS developers how to build AR-enabled apps with Swift Playgrounds, our opinion
+    may change. We will update this post as soon as we have taken a deep dive into
+    the Swift Playgrounds AR project.
+
+
+    # Lua (Roblox)
+
+
+    Lua is a scripting language that is perfect for introducing children to text-based
+    coding. It''s easy to learn, use, and embed into applications. Lua is a free,
+    elegant, powerful, portable, embeddable, and beginner-friendly coding language.This
+    type of language introduces simple concepts that have the potential of becoming
+    smooth products, while still staying true to their simplicity, readability, and
+    efficiency. One of the best things about Lua is that it takes care of low-level
+    things like memory'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: 'management for the user.Lua is similar to Python in the way that it eliminates
+    a number of syntax issues that make coding difficult for kids.But unlike JavaScript,
+    there are no requirements of using semicolons at the end of every line of code.
+
+
+    # Why It is Important to Train Kids to Code
+
+
+    Believe it or not, we are living in the times of the STEM - Science, Technology,
+    Engineering and Mathematics. More and more parents and teachers are waking up
+    to the potential that lies in engaging kids towards discerning the 21st-century
+    trends, information, and concepts. One of the newest ways that has emerged on
+    the horizon is focused on teaching kids how to code. Multiple types of research
+    have been carried out on this subject, and the most recent studies have led to
+    the consensus that coding is poised to become a major enabler for kids who aspire
+    to establish a career in Science, Technology, Engineering, and Mathematics.'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: '# Why Every Child Should Learn to Code
+
+
+    Coding is a computing language, and children should be taught new languages. When
+    a child is taught how to code, the entire learning process acts as a trigger and
+    sets off their ability to think logically. Teaching children how to code in their
+    formative years is advantageous because the absorption rate is quicker and children
+    also develop a sense of application early. Like ABCs give direction in the English
+    language, coding uses different combinations of 0s and 1s which direct computers
+    to perform certain functions. And if children are exposed to this technicality
+    whilst they are still young, they will be able to establish better compatibility
+    with technologies and applications around them.
+
+
+    # Benefits of Learning to Code
+
+
+    Coding isn''t just good news for your career but it has life-long prospects. It
+    simply implies that once kids learn how to code, they can stay invested in it
+    to pursue a passion or a profession. Coding is'
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: 'beneficial because it fosters creativity in children.As they experiment with
+    different coding combinations, children inherently become more inventive; they
+    are brainpower is multiplied. Of course, children will make mistakes along the
+    way but it''s a price one has to pay for being creative.In the end, the process
+    matters, the end-product is secondary – in the children''s case at least.
+
+
+
+
+    # ### Why is Coding Important to Learn?
+
+
+    Its 2019 and coding plays a major role in
+
+    establishing the digital literacy phenomenon around the world. And as a result,
+    there has been a sharp increase in the number of summer camps,
+
+    workshops, websites and programs that are mushrooming to support the demand for
+    coding for kids'' initiatives.
+
+    The reason being, when a child learns how to code at an early age, it sets the
+    path for him to discover and identify where their interests lie – in Science,
+    Technology, Engineering
+
+    and Mathematics(STEM) disciplines. The importance of coders is only poised to
+    surge as the'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: 'years go by. With more and more STEM jobs coming up, companies around the world
+    need talented hands on deck to run the IT, Computer Science and Engineering projects.
+    Therefore, if you encourage your child to learning coding, chances are high that
+    he will grow up and pursue a STEM career and excel in it too!
+
+
+    # Reasons Your Child Should Learn To Code
+
+
+    Besides being a huge trigger for improved academic performance, many reasons are
+    governing the demand for children to learn coding.Here’s a fun fact: the number
+    of STEM jobs that remain unfulfilled was 2.4 million last year. And while 71 percent
+    of the STEM jobs originate in the computing domain, the number of Computer Science
+    graduates was just 8 percent in 2018. So to cut short the chase, we are living
+    in technology-driven times. And given the pace with which technologies are dominating
+    every sphere of our work-life, social and private habits, it wouldn’t be wrong
+    to state that to learn how to code is no longer'
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: 'part of the ‘do it for recreation’ category. Instead, now to learn how to code
+    has become one of the prerequisites for innovation.
+
+
+    # Why Is Coding Important For the Future
+
+
+    As mentioned in the previous pointer, coding is a skill that will determine the
+    future of STEM jobs’ fulfillment around the world.Considering the pace at which
+    technologies and applications across all platforms are creating methodical chaos
+    around the world, it makes sense to assume that in addition to data being the
+    new oil as quoted by mathematician Clive Humby – programmers will be the new must
+    have professionals in companies in near future. The rise of Machine Learning,
+    IoT, Artificial Intelligence, and Data Science as emerging industries is a sign
+    of what’s to come. And it would be a good idea to have coder kids ready well in
+    advance so that they can make the big leap when the time comes, eventually!'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '# Tips for teaching kids to code
+
+
+    Use Scratch for younger kids and Python for older kids
+
+
+    MIT''s Scratch is a free programming tool designed for kids that runs in any modern
+    Web browser. Its visual style was influenced by the Logo program, a staple of
+    programming classes for children of the ''80s and ''90s. But Scratch is much more
+    than yet another Logo knockoff. Kids between the ages of 8 and 13 will benefit
+    from Scratch''s simple graphical interface. Scratch''s drag-and-drop code blocks
+    snap together. Pieces of code that don''t make computational sense won''t fit
+    together, making syntax errors literally impossible. Scratch is great for younger
+    kids who haven''t developed typing skills. Of course, kids who try to make more
+    sophisticated programs will eventually run into a wall with Scratch. For teens
+    and pre-teens, a real-world programming language like Python is more suitable.
+    Python is an excellent first programming language because it has a simple syntax
+    (unlike languages such as Java or C#), produces readable'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: 'code (unlike Perl or JavaScript), and has a large and friendly community of
+    developers behind it. If your child has outgrown Scratch, Python is the best next
+    step.
+
+
+    # Show source code for actual programs.Don''t just talk concepts at them.
+
+
+    Despite its intellectual reputation, programming is a hands-on skill that requires
+    practice, more than just reading books. Python''s interactive shell encourages
+    experimentation to find out what instructions do.If you are tutoring your kids
+    directly, writing code goes a long way compared to just talking concepts at them.
+    Even after learning about variables, loops, and functions, sitting in front of
+    a blank editor and starting a new program is intimidating. Sit with them and describe
+    the code they should write line by line.Or, if you are using online resources
+    to share with your child, look for the source code to small games. Programs with
+    less than a couple hundred lines of code work best.The Scratch website automatically
+    shares the source for all projects on'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: 'its website. Encourage your kid to make modifications to the code and see how
+    they change the final program
+
+
+    # Games are fun programming projects.
+
+
+    Programming video games is a common starting point for many young coders.Angry
+    Birds, Minecraft, Flappy Bird, Five Nights at Freddy''s, and other games are prime
+    sources of inspiration.I''ve written a free book, Invent Your Own Computer Games
+    with Python, which demonstrates coding concepts with the complete source code
+    for several simple game projects. Be warned that games your kids love might not
+    make great programming projects when they''re just starting out. Many games require
+    teams of developers, artists, and designers to put together. Games that require
+    a lot of level-design and artwork can overwhelm beginners.It''s much more satisfying
+    to complete a simple game, than to start and never finishing a massive project.
+
+
+    # Keep your hands off the keyboard and mouse.'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: 'Sharing knowledge is exciting. Showing someone what you know about programming
+    is great. But coding is a skill that is learned with hands-on practice, so let
+    the kids drive. Avoid jumping in to type on the keyboard when working with kids,
+    even temporarily. If they have to click on a menu or button, point to the screen
+    with your finger instead of taking the mouse and clicking it yourself. Whenever
+    there is code to be typed, have them type it. It may be faster if you did it yourself,
+    but your pupil needs the practice more than you. If you are teaching a group,
+    try to give each student their own computer. Like playing a musical instrument,
+    programming is a skill that is learned with hands-on practice rather than watching
+    someone else.
+
+
+    The Raspberry Pi is a cheap, bare-bones PC that that runs about US$ 70 for a starter
+    kit. Although adding a new keyboard, mouse, and monitor raises the total price
+    to be comparable with a cheap laptop. Avoid Chromebooks, iPads, and tablets because;
+    getting Python to run on them is difficult. If you'
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: 'need to set up a computer lab for an afterschool club on a budget, the Raspberry
+    Pi would allow you to make use of spare keyboards and monitors.
+
+
+    # Should all student learn how to code
+
+
+    Proponents often make one or more of the following arguments in support of educational
+    coding initiatives:
+
+
+    Coding education will help student acquire vocational skills that are immediately
+    relevant to today''s job market.
+
+
+    +   - Look at all of the IT-related jobs available in the world, advocates say.
+    Shouldn''t our schools be specifically preparing our students to compete for them?
+    Critics respond that many related efforts are a waste of time in practice because:
+    they focus on developing largely mechanical processes that are easily learned
+    in other venues; they are largely concerned with "job-relevant" skills of today,
+    not tomorrow; initiatives of this sort are largely driven by the business sector
+    (a group that they view with'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: 'great suspicion); and many efforts have little pedagogical value in and of
+    themselves.(Often cited with particular disdain are projects purportedly about
+    coding but which amount to little more than learning how to use basic office tools
+    such as word processors and presentation software.)
+
+
+    # ### Coding helps develop important logic and problem-solving skills
+
+
+    • Few would argue against the notion that, when taught well, education in coding
+    can help develop important logical thinking and problem-solving skills. In response,
+    critics argue that coding courses have no monopoly on the development of such
+    skills, and that in fact such skills should be embedded throughout an entire curriculum,
+    not the focus of a single school subject.
+
+
+    ### Understanding coding helps students better understand the nature of the world
+    around them, and how and why increasing parts of it function as they do
+
+
+    41'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: '+   - There tends, I find, to be less disagreement on this count, although
+    it is perhaps worth noting that many critics of educational coding efforts may
+    perhaps not fully grasp the import of this argument. Those that do recognize this
+    may still argue that there is an opportunity cost here: If you add coding to the
+    mandatory curriculum for all students, what comes out?
+
+
+    **Teaching students to code can serve as a gateway to subsequent study of STEM
+    (science, technology, engineering and mathematics) topics, and hopefully to jobs
+    and careers in related fields.**
+
+
+    +   - This may be true, some critics argue, but is this really the “best” gateway?
+    If coding is not well taught, might it in fact dissuade some students from further
+    study of STEM topics, and thus decrease the likelihood that they pursue STEM-related
+    careers? Is coding education in schools indeed a gateway to coding, or is it in
+    practice just “edutainment”, something to do with all the computers that schools'
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: 'have purchased and still haven''t figured out how to use productively?
+
+
+    # Being able to code enables new avenues for creativity and creative expression
+
+
+    +   - Efforts to teach coding skills to young students through the use of tools
+    like Scratch, or as part of robotics courses or initiatives to promote “making”,
+    are often cited as compelling examples of what (good) coding education efforts
+    may comprise. Here again, many critics may laud such efforts but still argue that,
+    even if you concede that coding is a new literacy in our increasingly technology-saturated
+    world, it is still worth asking two rather basic questions before moving ahead
+    with new, large–scale, mandatory educational coding initiatives. How are we doing
+    with the old, basic literacies of reading, writing and arithmetic? Shouldn’t we
+    ensure that these fundamental “literacy skills” are in place before we start tacking
+    new ones on to our already bloated curricula?'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: '+   - Where a great teacher is working with and supporting an eager, motivated
+    student as she learns to code, it''s hard to argue against doing more of this
+    sort of thing. Educational "success", after all, is largely a function of tapping
+    into a learner''s inherent curiosity (and not stifling it!). If we are talking
+    about a situation where a dis- or slightly interested learner is made to learn
+    and practice by rote a number of rather basic commands and actions related to
+    "how to make a computer do something", especially by a teacher who herself does
+    not know the subject well and where that "something" largely relates to how to
+    do things like change font sizes in PowerPoint – well, that is something that
+    perhaps no one should have to learn in school as part of the official curriculum.
+    There is of course space in between these two extremes where things get a little
+    more interesting, and complicated.
+
+
+    +   - When considering that broad middle area, I guess I''d tend to view things
+    a bit like artificial intelligence pioneer Roger Schank who says that "Any cognitive
+    scientist worth his salt knows that it'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: 'isn''t subjects like algebra or chemistry that matter. It is cognitive abilities
+    that are important." The same holds, I would argue, when it comes to coding.
+
+
+    +   • As an extracurricular or enrichment activity in education systems that are
+    already doing a good job in promoting the development of basic literacy skills,
+    the introduction of efforts to promote coding in schools seems rather reasonable,
+    especially where such efforts help engage or energize otherwise disinterested
+    learners – particularly where such students may not, for reasons of bias, discrimination
+    or stereotyping, be considered (or even consider themselves) as candidates to
+    learn such things. In places where there are still great struggles to help students
+    develop basic literacy skills, however, especially in many middle and low-income
+    countries, it should not be surprising if many policymakers consider educational
+    coding efforts to be, as one such official recently put it to me, a "luxury" that
+    they "cannot afford right now".'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: '# # Advantages and disadvantages of programming education
+
+
+    # ## Advantages
+
+
+    Here we will introduce the benefits of programming education.
+
+
+    # ### Lead to social development
+
+
+    +   * For People who don’t understand programming at all, maybe they have no idea
+    how important programming is, our daily life is surroundings by full of programming.
+
+
+    +   * In addition, the Internetization of everyday items is rapidly advancing
+    due to Iotization.Agriculture and other primary industries are likely to be more
+    efficient and productive by using programming.
+
+
+    # ### Children’s vision will be more opened
+
+
+    +   * By touching programming from young helps children to have many more options
+    for the future.
+
+
+    +   * Twenty years ago, who would have imagined that programmers are in high demands?
+    Another twenty'
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: 'years from now, probably, there will be a new occupation.
+
+
+    +   - For that reason, there is no doubt to say that learn programming that linked
+    to various things will be a huge benefit for children’s future.
+
+
+    # Disadvantages
+
+
+    Next, I will introduce the disadvantages of programming education.
+
+
+    # Lack of teachers
+
+
+    +   - It will be compulsory in elementary school from next year, and after 3 years
+    it will be compulsory in every single schools in Japan.
+
+
+    - How many teachers can teach programming? Are there enough teachers to teach
+    hundreds of children?
+
+
+    - Also, how many people can teach useful programming that can actually be used
+    and high quality of it even they can teach? Even if it'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: 'becomes compulsory, there is no point if they cannot maintain the quality of
+    education.Maybe, the low quality of programming study leads children to hate programming.
+
+
+    # More children prefer to play inside now
+
+
+    +   - The biggest disadvantage is maybe children become more indoor person.Primary
+    school children and junior high school students are growing a lot. And, outdoor
+    activities and club activities help children’s body grow in healthy way.
+
+    - It is also possible to have an bad effect on their health if they spend more
+    time indoors because they become too passionate about programming.Also, the actual
+    physical experience may be reduced. The opportunity to actually get in touch with
+    people may be replaced by the time that they face the computer. Programming education
+    has both advantages and disadvantages.
+
+    - However, if we don’t actually start, we never know what will happen. There is
+    a great possibility that the future will be lighten up.So, there is no need'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: to worry about the disadvantages only. This is a topic that you do not want
+    to miss.
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: 'CPSIA information can be obtained
+
+    at www.ICGTesting.com
+
+    Printed in the USA
+
+    LVHW051610250621
+
+    691160LV00003B/4
+
+
+    9 798577 313296'
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: 'This book starts with the scratch programming basics, teaching kids what coding
+    is, and all about the different tools they can use to build their own programs
+    and games. Each chapter teaches a different aspect of coding, with exercises that
+    get more challenging as they go, so kids can test their abilities and unleash
+    their imagination. They''ll even build their own game. Coding is quickly becoming
+    an essential academic skill, right up there with reading, writing, and arithmetic.
+    This book is an ideal way for young learners ages 8-13 who want more coding knowledge
+    than you can learn in an hour, a day, or a week. Written by a classroom instructor
+    with extensive experience teaching technology skills to kids as young as five,
+    this book teaches the steps and logic needed to write code, solve problems, and
+    create fun projects based in Scratch and JavaScript.
+
+
+    ![](img/0a13338e3a47b674ac6b84f2585693f5_57_0.png)'
+  merge: -1
+  pgno: 57
+toc:
+- - '#'
+  - 少儿编程入门指南：轻松从零开始学习 JavaScript、HTML 等编程语言：分步指南
+- - '##'
+  - 引言
+- - '##'
+  - 什么是儿童编程？
+- - '##'
+  - 为什么“每个”孩子都应该学编程
+- - '###'
+  - 什么是儿童编程？几岁学编程合适？
+- - '####'
+  - 为什么我的孩子要学编程？K-12年级学校教育够吗？
+- - '#####'
+  - 编程的好处
+- - '######'
+  - 程序员供不应求
+- - '#######'
+  - 掌握编程知识后，学生能更好地理解周围的世界
+- - '########'
+  - 编程有趣且令人满足
+- - '#########'
+  - 编程提升创造力
+- - '############'
+  - 编程提升解决问题的能力
+- - '################'
+  - 编程提升毅力
+- - '####################################'
+  - 编程提升协作能力
+- - '##########################################'
+  - 编程提升沟通能力
+- - '###################################################'
+  - 向幼儿介绍编程和计算机编程的方法
+- - '#############################################################'
+  - 为 budding coders 提供的动手游戏
+- - '###################################################################'
+  - 让他们使用应用程序
+- - '########################################################################'
+  - 利用在线资源
+- - '####################################################################################'
+  - 把孩子送去参加科技夏令营
+- - '##########################################################################################'
+  - 适合孩子的编程语言
+- - '############################################'
+  - Python
+- - '############################'
+  - Ruby
+- - '################'
+  - Java (Minecraft)
+- - '##################'
+  - C++
+- - '########################'
+  - Scratch
+- - '############################################################################'
+  - Blockly
+- - '################################################################'
+  - Go (Golang)
+- - '##################################################################'
+  - Swift (Swift Playgrounds)
+- - '#############################################################'
+  - Lua (Roblox)
+- - '###########################################################################'
+  - 为什么培养孩子 coding 很重要
+- - '####################################################################################'
+  - 为什么每个孩子都应该学习 coding
+- - '#########################################################################################'
+  - 学习 coding 的好处
+- - '######'
+  - 为什么学习 coding 很重要？
+- - '#####'
+  - 你的孩子应该学习 coding 的原因
+- - '####'
+  - 为什么编程对未来发展至关重要
+- - '##'
+  - 教孩子编程的提示
+- - '###'
+  - 展示真实程序的源代码，不要只跟他们谈论概念
+- - '###'
+  - 游戏是有趣的编程项目
+- - '###'
+  - 请管住手，不要随意触碰键盘和鼠标
+- - '##'
+  - 是否所有学生都应该学习编程
+- - '###'
+  - 编程有助于培养重要的逻辑和问题解决技能
+- - '#####'
+  - 理解编程有助于学生更好地理解周围世界的本质，以及它各部分运作的方式和原因
+- - '#######'
+  - 能够编程为创造力和创造性表达开启新路径
+- - '#'
+  - 编程教育的利弊
+- - '##'
+  - 优点
+- - '####'
+  - 推动社会发展
+- - '####'
+  - 开阔儿童视野
+- - '###'
+  - 缺点
+- - '######'
+  - 师资缺乏
+- - '#########'
+  - 越来越多的孩子现在更喜欢待在室内
