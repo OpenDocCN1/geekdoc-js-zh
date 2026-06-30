@@ -1,0 +1,2207 @@
+groups:
+- md: " ## AJAX\n\nasynchronous javascript and xml\n\ntutorialspoint\n\nSIMPLY EASY\
+    \ LEARNING\n\n## About the Tutorials\n\nAJAX is a web development technique for\
+    \ creating interactive web applications. If you know JavaScript, HTML, CSS, and\
+    \ XML, then you need to spend just one hour to start with AJAX.\n\n## Audience\n\
+    \nThis tutorial will be useful for web developers who want to learn how to create\
+    \ interactive webpages as well as improve their speed and usability using AJAX.\n\
+    \n## Prerequisites\n\nIt is highly recommended that you are familiar with HTML\
+    \ and JavaScript before attempting this tutorial.\n\n## Copyright & Disclaimer\n\
+    \n© Copyright 2015 by Tutorials Point (I) Pvt. Ltd.\n\nAll the content and graphics\
+    \ published in this e-book are the property of Tutorials Point (I) Pvt. Ltd. The\
+    \ user of this e-book is prohibited to reuse, retain, copy, distribute or republish\
+    \ any contents or a part of contents of this e-book in any manner without written\
+    \ consent of the publisher.\n\nWe strive to update the contents of our website\
+    \ and tutorials as timely and as precisely as possible, however, the contents\
+    \ may contain inaccuracies or errors. Tutorials Point (I) Pvt. Ltd. provides no\
+    \ guarantee regarding the accuracy, timeliness or completeness of our website\
+    \ or its contents including this tutorial.\n\nIf you discover any errors on our\
+    \ website or in this tutorial, please notify us at [contact@tutorialspoint.com](mailto:contact@tutorialspoint.com)\n\
+    \n## Table of Contents\n\n- About the Tutorial ...\n- Audience ...\n- Prerequisites\
+    \ ...\n- Copyright & Disclaimer ...\n- Table of Contents ...\n\n1. OVERVIEW ...\n\
+    \   - Rich Internet Application Technology ...\n   - AJAX is Based on Open Standards\
+    \ ...\n\n2. TECHNOLOGIES USED IN AJAX ...\n   - JavaScript ...\n   - DOM ...\n\
+    \   - CSS ...\n   - XMLHttpRequest ...\n\n3. EXAMPLES ...\n   - Google Maps ...\n\
+    \   - Google Suggest ...\n   - Gmail ...\n   - Yahoo Maps (new) ...\n   - Difference\
+    \ between AJAX and Conventional CGI Program ...\n\n4. BROWSER SUPPORT ...\n  \
+    \ - Writing Browser Specific Code ...\n\n5. AJAX IN ACTION ...\n   - Steps of\
+    \ AJAX Operation ...\n   - A Client Event Occurs ...\n   - The XMLHttpRequest\
+    \ Object is Created ...\n   - The XMLHttpRequest Object is Configured ...\n  \
+    \ - Making Asynchronous Request to the Webserver ...\n   - Webserver Returns the\
+    \ Result Containing XML Document ...\n   - Callback Function processRequest()\
+    \ is Called ...\n   - The HTML DOM is Updated ...\n\n6. XMLHTTPREQUEST ...\n \
+    \  - XMLHttpRequest Methods ...\n   - XMLHttpRequest Properties ...\n\n7. DATABASE\
+    \ OPERATIONS ...\n   - Client Side HTML File ...\n   - Server Side PHP File ...\n\
+    \n8. SECURITY ...\n   - AJAX Security: Server Side ...\n   - AJAX Security: Client\
+    \ Side ...\n\n9. CURRENT ISSUES ...\n\n## 1. OVERVIEW\n\nAJAX stands for **Asynchronous\
+    \ JavaScript and XML**. AJAX is a new technique for creating better, faster, and\
+    \ more interactive web applications with the help of XML, HTML, CSS, and JavaScript.\n\
+    \n- Ajax uses XHTML for content, CSS for presentation, along with Document Object\
+    \ Model and JavaScript for dynamic content display.\n- Conventional web applications\
+    \ transmit information to and from the server using synchronous requests. It means\
+    \ you fill out a form, hit submit, and get directed to a new page with new information\
+    \ from the server.\n- With AJAX, when you hit submit, JavaScript will make a request\
+    \ to the server, interpret the results, and update the current screen. In the\
+    \ purest sense, the user would never know that anything was even transmitted to\
+    \ the server.\n- XML is commonly used as the format for receiving server data,\
+    \ although any format, including plain text, can be used.\n- AJAX is a web browser\
+    \ technology independent of web server software.\n- A user can continue to use\
+    \ the application while the client program requests information from the server\
+    \ in the background.\n- Intuitive and natural user interaction. Clicking is not\
+    \ required, mouse movement is a sufficient event trigger.\n- Data-driven as opposed\
+    \ to page-driven.\n- Behind-the-scenes data fetches using XMLHttpRequest objects\
+    \ in the browser.\n- JavaScript to make everything happen.\n\n## Rich Internet\
+    \ Application Technology\n\nAJAX is the most viable Rich Internet Application\
+    \ (RIA) technology so far. It is getting tremendous industry momentum and several\
+    \ tool kit and frameworks are emerging. But at the same time, AJAX has browser\
+    \ incompatibility and it is supported by JavaScript, which is hard to maintain\
+    \ and debug.\n\n## AJAX is Based on Open Standards\n\nAJAX is based on the following\
+    \ open standards:\n\n- Browser-based presentation using HTML and Cascading Style\
+    \ Sheets (CSS).\n- Data is stored in XML format and fetched from the server.\n\
+    \n## 2. TECHNOLOGIES USED IN AJAX\n\nAJAX cannot work independently. It is used\
+    \ in combination with other technologies to create interactive webpages.\n\n###\
+    \ JavaScript\n\n- Loosely typed scripting language.\n- JavaScript function is\
+    \ called when an event occurs in a page.\n- Glue for the whole AJAX operation.\n\
+    \n### DOM\n\n- API for accessing and manipulating structured documents.\n- Represents\
+    \ the structure of XML and HTML documents.\n\n### CSS\n\n- Allows for a clear\
+    \ separation of the presentation style from the content and may be changed programmatically\
+    \ by JavaScript.\n\n### XMLHttpRequest\n\n- JavaScript object that performs asynchronous\
+    \ interaction with the server.\n\n## 3. EXAMPLES\n\nHere is a list of some famous\
+    \ web applications that make use of AJAX.\n\n### Google Maps\n\nA user can drag\
+    \ an entire map by using the mouse, rather than clicking on a button.\n\n- http://maps.google.com/\n\
+    \n### Google Suggest\n\nAs you type, Google offers suggestions. Use the arrow\
+    \ keys to navigate the results.\n\n- http://www.google.com/webhp?complete=1&hl=en\n\
+    \n### Gmail\n\nGmail is a webmail built on the idea that emails can be more intuitive,\
+    \ efficient, and useful.\n\n- http://gmail.com/\n\n### Yahoo Maps (new)\n\nNow\
+    \ it's even easier and more fun to get where you're going!\n\n- http://maps.yahoo.com/\n\
+    \n### Difference between AJAX and Conventional CGI Program\n\nTry these two examples\
+    \ one by one and you will feel the difference. While trying AJAX example, there\
+    \ is no discontinuity and you get the response very quickly, but when you try\
+    \ the standard CGI example, you would have to wait for the response and your page\
+    \ also gets refreshed.\n\n#### AJAX Example:"
+  mdcn: "\n ## AJAX\n\n异步 JavaScript 和 XML\n\ntutorialspoint\n\n轻松学习\n\n## 关于本教程\n\
+    \nAJAX 是一种用于创建交互式 Web 应用程序的 Web 开发技术。如果你了解 JavaScript、HTML、CSS 和 XML，那么你只需要花一个小时就能上手\
+    \ AJAX。\n\n## 受众\n\n本教程对希望学习如何创建交互式网页，以及希望使用 AJAX 提高网页速度和可用性的 Web 开发者有所帮助。\n\n\
+    ## 先决条件\n\n强烈建议你在学习本教程之前熟悉 HTML 和 JavaScript。\n\n## 版权与免责声明\n\n© 2015 版权所有 Tutorials\
+    \ Point (I) Pvt. Ltd.\n\n本电子书中发布的所有内容和图形均为 Tutorials Point (I) Pvt. Ltd. 的财产。未经出版商书面同意，本电子书用户不得以任何方式重复使用、保留、复制、分发或再版本电子书的全部或部分内容。\n\
+    \n我们努力及时、准确地更新网站和教程的内容，但内容可能包含不准确或错误之处。Tutorials Point (I) Pvt. Ltd. 不保证我们的网站或其内容（包括本教程）的准确性、时效性或完整性。\n\
+    \n如果你在我们的网站或本教程中发现任何错误，请通过 [contact@tutorialspoint.com](mailto:contact@tutorialspoint.com)\
+    \ 通知我们。\n\n## 目录\n\n- 关于本教程 ...\n- 受众 ...\n- 先决条件 ...\n- 版权与免责声明 ...\n- 目录 ...\n\
+    \n1. 概述 ...\n   - 富互联网应用技术 ...\n   - AJAX 基于开放标准 ...\n\n2. AJAX 中使用的技术 ...\n \
+    \  - JavaScript ...\n   - DOM ...\n   - CSS ...\n   - XMLHttpRequest ...\n\n3.\
+    \ 示例 ...\n   - Google 地图 ...\n   - Google 建议 ...\n   - Gmail ...\n   - Yahoo 地图（新版）...\n\
+    \   - AJAX 与传统 CGI 程序的区别 ...\n\n4. 浏览器支持 ...\n   - 编写浏览器特定代码 ...\n\n5. AJAX 实战\
+    \ ...\n   - AJAX 操作步骤 ...\n   - 客户端事件发生 ...\n   - 创建 XMLHttpRequest 对象 ...\n \
+    \  - 配置 XMLHttpRequest 对象 ...\n   - 向 Web 服务器发出异步请求 ...\n   - Web 服务器返回包含 XML\
+    \ 文档的结果 ...\n   - 调用回调函数 processRequest() ...\n   - 更新 HTML DOM ...\n\n6. XMLHTTPREQUEST\
+    \ ...\n   - XMLHttpRequest 方法 ...\n   - XMLHttpRequest 属性 ...\n\n7. 数据库操作 ...\n\
+    \   - 客户端 HTML 文件 ...\n   - 服务器端 PHP 文件 ...\n\n8. 安全性 ...\n   - AJAX 安全性：服务器端\
+    \ ...\n   - AJAX 安全性：客户端 ...\n\n9. 当前问题 ...\n\n## 1. 概述\n\nAJAX 代表**异步 JavaScript\
+    \ 和 XML**。AJAX 是一种借助 XML、HTML、CSS 和 JavaScript 创建更好、更快、更具交互性的 Web 应用程序的新技术。\n\n\
+    - Ajax 使用 XHTML 作为内容，CSS 作为展示样式，同时使用文档对象模型和 JavaScript 进行动态内容显示。\n- 传统的 Web 应用程序使用同步请求与服务器之间传输信息。这意味着你填写表单，点击提交，然后被定向到一个包含服务器新信息的新页面。\n\
+    - 使用 AJAX 时，当你点击提交，JavaScript 会向服务器发出请求，解释结果，并更新当前屏幕。从最纯粹的意义上说，用户永远不会知道有任何信息被传输到了服务器。\n\
+    - XML 通常用作接收服务器数据的格式，尽管可以使用任何格式，包括纯文本。\n- AJAX 是一种独立于 Web 服务器软件的 Web 浏览器技术。\n\
+    - 客户端程序在后台向服务器请求信息时，用户可以继续使用应用程序。\n- 直观自然的用户交互。不需要点击，鼠标移动就足以触发事件。\n- 数据驱动而非页面驱动。\n\
+    - 在后台使用浏览器的 XMLHttpRequest 对象获取数据。\n- JavaScript 使一切得以实现。\n\n## 富互联网应用技术\n\nAJAX\
+    \ 是目前最可行的富互联网应用（RIA）技术。它正获得巨大的行业动力，多个工具包和框架正在涌现。但与此同时，AJAX 存在浏览器不兼容问题，并且它由 JavaScript\
+    \ 支持，而 JavaScript 难以维护和调试。\n\n## AJAX 基于开放标准\n\nAJAX 基于以下开放标准：\n\n- 使用 HTML 和层叠样式表（CSS）进行基于浏览器的展示。\n\
+    - 数据以 XML 格式存储并从服务器获取。\n\n## 2. AJAX 中使用的技术\n\nAJAX 无法独立工作。它与其他技术结合使用以创建交互式网页。\n\
+    \n### JavaScript\n\n- 松散类型的脚本语言。\n- 当页面中发生事件时，会调用 JavaScript 函数。\n- 整个 AJAX 操作的粘合剂。\n\
+    \n### DOM\n\n- 用于访问和操作结构化文档的 API。\n- 表示 XML 和 HTML 文档的结构。\n\n### CSS\n\n- 允许将展示样式与内容清晰分离，并且可以通过\
+    \ JavaScript 以编程方式更改。\n\n### XMLHttpRequest\n\n- 执行与服务器异步交互的 JavaScript 对象。\n\n\
+    ## 3. 示例\n\n以下是一些使用 AJAX 的著名 Web 应用程序列表。\n\n### Google 地图\n\n用户可以使用鼠标拖动整个地图，而不是点击按钮。\n\
+    \n- http://maps.google.com/\n\n### Google 建议\n\n当你输入时，Google 会提供建议。使用箭头键浏览结果。\n\
+    \n- http://www.google.com/webhp?complete=1&hl=en\n\n### Gmail\n\nGmail 是一款基于电子邮件可以更直观、更高效、更有用这一理念构建的网络邮件。\n\
+    \n- http://gmail.com/\n\n### Yahoo 地图（新版）\n\n现在前往目的地变得更容易、更有趣了！\n\n- http://maps.yahoo.com/\n\
+    \n### AJAX 与传统 CGI 程序的区别\n\n依次尝试这两个示例，你会感受到差异。在尝试 AJAX 示例时，没有中断，你会很快得到响应，但当你尝试标准\
+    \ CGI 示例时，你必须等待响应，而且你的页面也会刷新。\n\n#### AJAX 示例：\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # AJAX
+
+
+    asynchronous javascript and xml
+
+
+    # tutorialspoint
+
+
+    SIMPLYEASYLEARNING'
+  - '[PAGE 1]
+
+
+    # About the Tutorial
+
+
+    AJAX is a web development technique for creating interactive web applications.
+    If you know JavaScript, HTML, CSS, and XML, then you need to spend just one hour
+    to start with AJAX.
+
+
+    # Audience
+
+
+    This tutorial will be useful for web developers who want to learn how to create
+    interactive webpages as well as improve their speed and usability using AJAX.
+
+
+    # Prerequisites
+
+
+    It is highly recommended that you are familiar with HTML and JavaScript before
+    attempting this tutorial.
+
+
+    # Copyright & Disclaimer
+
+
+    © Copyright 2015 by Tutorials Point (I) Pvt. Ltd.
+
+
+    All the content and graphics published in this e-book are the property of Tutorials
+    Point (I) Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy,
+    distribute or republish any contents or a part of contents of this e-book in any
+    manner without written consent of the publisher.
+
+
+    We strive to update the contents of our website and tutorials as timely and as
+    precisely as possible, however, the contents may contain inaccuracies or errors.
+    Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy, timeliness
+    or completeness of our website or its contents including this tutorial.
+
+
+    If you discover any errors on our website or in this tutorial, please notify us
+    at [contact@tutorialspoint.com](mailto:contact@tutorialspoint.com)'
+  - "[PAGE 2]\n\n# Table of Contents\n\n+   - About the Tutorial ...\n- Audience ...\n\
+    - Prerequisites ...\n- Copyright & Disclaimer ...\n- Table of Contents ...\n\n\
+    +   1. OVERVIEW ...\n   - Rich Internet Application Technology ...\n   - AJAX\
+    \ is Based on Open Standards ...\n\n+   2. TECHNOLOGIES USED IN AJAX ...\n   -\
+    \ JavaScript ...\n   - DOM ...\n   - CSS ...\n   - XMLHttpRequest ...\n\n+   3.\
+    \ EXAMPLES ...\n   - Google Maps ...\n   - Google Suggest ...\n   - Gmail ...\n\
+    \   - Yahoo Maps (new) ...\n   - Difference between AJAX and Conventional CGI\
+    \ Program ...\n\n+   4. BROWSER SUPPORT ...\n   - Writing Browser Specific Code\
+    \ ...\n\n+   5. AJAX IN ACTION ...\n   - Steps of AJAX Operation ...\n   - A Client\
+    \ Event Occurs ...\n\n![](img/713147fda427ad275cc07fad320cb449_2_0.png)"
+  - '[PAGE 3]
+
+
+    The XMLHttpRequest Object is Created ....................................................................................................................8
+
+
+    The XMLHttpRequest Object is Configured ...............................................................................................................9
+
+
+    Making Asynchronous Request to the Webserver..................................................................................................9
+
+
+    Webserver Returns the Result Containing XML Document ................................................................................10
+
+
+    Callback Function processRequest() is Called ......................................................................................................11
+
+
+    The HTML DOM is Updated..................................................................................................................................11
+
+
+    6. XMLHTTPREQUEST..................................................................................................................................................13
+
+
+    XMLHttpRequest Methods..........................................................................................................................................13
+
+
+    XMLHttpRequest Properties .....................................................................................................................................14
+
+
+    7. DATABASE OPERATIONS ..................................................................................................................................16
+
+
+    Client Side HTML File ................................................................................................................................................16
+
+
+    Server Side PHP File ....................................................................................................................................................19
+
+
+    8. SECURITY .................................................................................................................................................................22
+
+
+    AJAX Security: Server Side ..........................................................................................................................................22
+
+
+    AJAX Security: Client Side ...........................................................................................................................................22
+
+
+    9. CURRENT ISSUES....................................................................................................................................................23'
+  - '[PAGE 4]
+
+
+    # # 1. OVERVIEW
+
+
+    AJAX stands for **Asynchronous JavaScript and XML**. AJAX is a new technique for
+    creating better, faster, and more interactive web applications with the help of
+    XML, HTML, CSS, and Java Script.
+
+
+    +   - Ajax uses XHTML for content, CSS for presentation, along with Document Object
+    Model and JavaScript for dynamic content display.
+
+    - Conventional web applications transmit information to and from the sever using
+    synchronous requests. It means you fill out a form, hit submit, and get directed
+    to a new page with new information from the server.
+
+    - With AJAX, when you hit submit, JavaScript will make a request to the server,
+    interpret the results, and update the current screen. In the purest sense, the
+    user would never know that anything was even transmitted to the server.
+
+    - XML is commonly used as the format for receiving server data, although any format,
+    including plain text, can be used.
+
+    - AJAX is a web browser technology independent of web server software.
+
+    - A user can continue to use the application while the client program requests
+    information from the server in the background.
+
+    - Intuitive and natural user interaction. Clicking is not required, mouse movement
+    is a sufficient event trigger.
+
+    - Data-driven as opposed to page-driven.
+
+
+    # ## Rich Internet Application Technology
+
+
+    AJAX is the most viable Rich Internet Application (RIA) technology so far. It
+    is getting tremendous industry momentum and several tool kit and frameworks are
+    emerging. But at the same time, AJAX has browser incompatibility and it is supported
+    by JavaScript, which is hard to maintain and debug.
+
+
+    # ## AJAX is Based on Open Standards
+
+
+    AJAX is based on the following open standards:
+
+
+    +   - Browser-based presentation using HTML and Cascading Style Sheets (CSS).
+
+    - Data is stored in XML format and fetched from the server.
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_4_0.png)'
+  - '[PAGE 5]
+
+
+    # Ajax
+
+
+    +   - Behind-the-scenes data fetches using XMLHttpRequest objects in the browser.
+
+    - JavaScript to make everything happen.'
+  - '[PAGE 6]
+
+
+    # 2. TECHNOLOGIES USED IN AJAX
+
+
+    AJAX cannot work independently. It is used in combination with other technologies
+    to create interactive webpages.
+
+
+    # JavaScript
+
+
+    +   - Loosely typed scripting language.
+
+    - JavaScript function is called when an event occurs in a page.
+
+    - Glue for the whole AJAX operation.
+
+
+    # DOM
+
+
+    +   - API for accessing and manipulating structured documents.
+
+    - Represents the structure of XML and HTML documents.
+
+
+    # CSS
+
+
+    +   - Allows for a clear separation of the presentation style from the content
+    and may be changed programmatically by JavaScript.
+
+
+    # XMLHttpRequest
+
+
+    +   - JavaScript object that performs asynchronous interaction with the server.'
+  - '[PAGE 7]
+
+
+    Here is a list of some famous web applications that make use of AJAX.
+
+
+    # ## Google Maps
+
+
+    A user can drag an entire map by using the mouse, rather than clicking on a button.
+
+
+    +   * http://maps.google.com/
+
+
+    # ## Google Suggest
+
+
+    As you type, Google offers suggestions. Use the arrow keys to navigate the results.
+
+
+    +   * http://www.google.com/webhp?complete=1&hl=en
+
+
+    # ## Gmail
+
+
+    Gmail is a webmail built on the idea that emails can be more intuitive, efficient,
+    and useful.
+
+
+    +   * http://gmail.com/
+
+
+    # ## Yahoo Maps (new)
+
+
+    Now it''s even easier and more fun to get where you''re going!
+
+
+    +   * http://maps.yahoo.com/
+
+
+    # ## Difference between AJAX and Conventional CGI Program
+
+
+    Try these two examples one by one and you will feel the difference. While trying
+    AJAX example, there is no discontinuity and you get the response very quickly,
+    but when you try the standard GCI example, you would have to wait for the response
+    and your page also gets refreshed.
+
+
+    # ### AJAX Example:
+
+
+    [ ] \* [ ] = [ ] Submit'
+- md: "## Standard Example:\n\n![](img/713147fda427ad275cc07fad320cb449_8_0.png)\n\
+    \n**NOTE:** We have given a more complex example in [AJAX Database](https://www.tutorialspoint.com/ajax/ajax_database.htm).\n\
+    \n![](img/713147fda427ad275cc07fad320cb449_8_1.png)\n\n## 4. BROWSER SUPPORT\n\
+    \nAll the available browsers cannot support AJAX. Here is a list of major browsers\
+    \ that support AJAX.\n\n- Mozilla Firefox 1.0 and above.\n- Netscape version 7.1\
+    \ and above.\n- Apple Safari 1.2 and above.\n- Microsoft Internet Explorer 5 and\
+    \ above.\n- Konqueror.\n- Opera 7.6 and above.\n\nWhen you write your next application,\
+    \ do consider the browsers that do not support AJAX.\n\n> **NOTE**: When we say\
+    \ that a browser does not support AJAX, it simply means that the browser does\
+    \ not support the creation of Javascript object - XMLHttpRequest object.\n\n##\
+    \ Writing Browser Specific Code\n\nThe simplest way to make your source code compatible\
+    \ with a browser is to use try...catch blocks in your JavaScript.\n\n```\n<html>\n\
+    <body>\n<script language=\"javascript\" type=\"text/javascript\">\n<!--\n//Browser\
+    \ Support Code\nfunction ajaxFunction(){\nvar ajaxRequest; // The variable that\
+    \ makes Ajax possible!\n\ntry{\n// Opera 8.0+, Firefox, Safari\najaxRequest =\
+    \ new XMLHttpRequest();\n}catch (e){\n// Internet Explorer Browsers\ntry{\n  \
+    \  ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n}catch (e) {\n    try{\n\
+    \        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n    }catch (e){\n\
+    \        // Something went wrong\n        alert(\"Your browser broke!\");\n  \
+    \      return false;\n    }\n}\n\n// -->\n</script>\n<form name='myForm'>\nName:\
+    \ <input type='text' name='username' /> <br />\nTime: <input type='text' name='time'\
+    \ />\n</form>\n</body>\n</html>\n```\n\nIn the above JavaScript code, we try three\
+    \ times to make our XMLHttpRequest object. Our first attempt:\n\n- ajaxRequest\
+    \ = new XMLHttpRequest();\n\nIt is for Opera 8.0+, Firefox, and Safari browsers.\
+    \ If it fails, we try two more times to make the correct object for an Internet\
+    \ Explorer browser with:\n\n- ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n- ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\nIf it doesn't\
+    \ work, then we can use a very outdated browser that doesn't support XMLHttpRequest,\
+    \ which also means it doesn't support AJAX.\n\nMost likely though, our variable\
+    \ ajaxRequest will now be set to whatever *XMLHttpRequest* standard the browser\
+    \ uses and we can start sending data to the server. The step-wise AJAX workflow\
+    \ is explained in the next chapter.\n\n## 5. AJAX IN ACTION\n\nThis chapter gives\
+    \ you a clear picture of the exact steps of AJAX operation.\n\n### Steps of AJAX\
+    \ Operation\n\n1. A client event occurs.\n2. An XMLHttpRequest object is created.\n\
+    3. The XMLHttpRequest object is configured.\n4. The XMLHttpRequest object makes\
+    \ an asynchronous request to the Webserver.\n5. The Webserver returns the result\
+    \ containing XML document.\n6. The XMLHttpRequest object calls the callback()\
+    \ function and processes the result.\n7. The HTML DOM is updated.\n\nLet us take\
+    \ these steps one by one.\n\n### A Client Event Occurs\n\n- A JavaScript function\
+    \ is called as the result of an event.\n- Example: _validateUserId()_ JavaScript\
+    \ function is mapped as an event handler to an _onkeyup_ event on input form field\
+    \ whose id is set to \"userid\".\n- `<input type=\"text\" size=\"20\" id=\"userid\"\
+    \ name=\"id\" onkeyup=\"validateUserId();\">`.\n\n### The XMLHttpRequest Object\
+    \ is Created\n\n```\nvar ajaxRequest;  // The variable that makes Ajax possible!\n\
+    function ajaxFunction(){\n    try{\n        // Opera 8.0+, Firefox, Safari\n \
+    \       ajaxRequest = new XMLHttpRequest();\n    }catch (e){\n        // Internet\
+    \ Explorer Browsers\ntry{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n}catch (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n    }catch (e){\n        // Something went wrong\n        alert(\"Your browser\
+    \ broke!\");\n        return false;\n    }\n}\n}\n```\n\n### The XMLHttpRequest\
+    \ Object is Configured\n\nIn this step, we will write a function that will be\
+    \ triggered by the client event and a callback function processRequest() will\
+    \ be registered.\n\n```\nfunction validateUserId() {\n    ajaxFunction();\n  \
+    \  // Here processRequest() is the callback function.\n    ajaxRequest.onreadystatechange\
+    \ = processRequest;\n    if (!target) target = document.getElementById(\"userid\"\
+    );\n    var url = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"\
+    GET\", url, true);\n    ajaxRequest.send(null);\n}\n```\n\n### Making Asynchronous\
+    \ Request to the Webserver\n\nSource code is available in the above piece of code.\
+    \ Code written in bold typeface is responsible to make a request to the webserver.\
+    \ This is all being done using the XMLHttpRequest object *ajaxRequest*.\n\n![](img/713147fda427ad275cc07fad320cb449_12_0.png)\n\
+    \n```\nfunction validateUserId() {\n    ajaxFunction();\n    // Here processRequest()\
+    \ is the callback function.\n    ajaxRequest.onreadystatechange = processRequest;\n\
+    \n    if (!target) target = document.getElementById(\"userid\");\n    var url\
+    \ = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"GET\", url,\
+    \ true);\n    ajaxRequest.send(null);\n}\n```\n\nAssume you enter *Zara* in the\
+    \ userid box, then in the above request, the URL is set to \"validate?id=Zara\"\
+    .\n\n### Webserver Returns the Result Containing XML Document\n\nYou can implement\
+    \ your server-side script in any language, however its logic should be as follows.\n\
+    \n- Get a request from the client.\n- Parse the input from the client.\n- Do required\
+    \ processing.\n- Send the output to the client.\n\nIf we assume that you are going\
+    \ to write a servlet, then here is the piece of code.\n\n```\npublic void doGet(HttpServletRequest\
+    \ request, HttpServletResponse response)\n    throws IOException, ServletException\n\
+    {\n    String targetId = request.getParameter(\"id\");\n\n    if ((targetId !=\
+    \ null) && !accounts.containsKey(targetId.trim()))\n    {\n        response.setContentType(\"\
+    text/xml\");\n        response.setHeader(\"Cache-Control\", \"no-cache\");\n \
+    \       response.getWriter().write(\"true\");\n    }\nelse\n{\n    response.setContentType(\"\
+    text/xml\");\n    response.setHeader(\"Cache-Control\", \"no-cache\");\n    response.getWriter().write(\"\
+    false\");\n}\n}\n```\n\n### Callback Function processRequest() is Called\n\nThe\
+    \ XMLHttpRequest object was configured to call the processRequest() function when\
+    \ there is a state change to the readyState of the XMLHttpRequest object. Now\
+    \ this function will receive the result from the server and will do the required\
+    \ processing. As in the following example, it sets a variable message on true\
+    \ or false based on the returned value from the Webserver.\n\n```\nfunction processRequest()\
+    \ {\n  if (req.readyState == 4) {\n    if (req.status == 200) {\n      var message\
+    \ = ...;\n\n... \n}\n```\n\n### The HTML DOM is Updated\n\nThis is the final step\
+    \ and in this step, your HTML page will be updated. It happens in the following\
+    \ way.\n\n- JavaScript gets a reference to any element in a page using DOM API.\n\
+    - The recommended way to gain a reference to an element is to call.\n- JavaScript\
+    \ may now be used to modify the element's attributes; modify the element's style\
+    \ properties; or add, remove, or modify the child elements. Here is an example:\n\
+    \n```\ndocument.getElementById(\"userIdMessage\"),\n\n// where \"userIdMessage\"\
+    \ is the ID attribute\n\n// of an element appearing in the HTML document\n```\n\
+    \n```\n<script type=\"text/javascript\">\n<!--\nfunction setMessageUsingDOM(message)\
+    \ {\n  var userMessageElement =\n      document.getElementById(\"userIdMessage\"\
+    );\n  var messageText;\n  if (message == \"false\") {\n    userMessageElement.style.color\
+    \ = \"red\";\n    messageText = \"Invalid User Id\";\n  } else {\n    userMessageElement.style.color\
+    \ = \"green\";\n    messageText = \"Valid User Id\";\n  }\n  var messageBody =\
+    \ document.createTextNode(messageText);\n\n\n  // if the messageBody element has\
+    \ been created simple\n  // replace it otherwise append the new element\n\n\n\
+    \  if (userMessageElement.childNodes[0]) {\n    userMessageElement.replaceChild(messageBody,\n\
+    \    userMessageElement.childNodes[0]);\n  } else {\n    userMessageElement.appendChild(messageBody);\n\
+    \  }\n}\n-->\n</script>\n<body>\n<div id=\"userIdMessage\"><div>\n</body>\n```\n\
+    \nIf you have understood the above-mentioned seven steps, then you are almost\
+    \ done with AJAX. In the next chapter, we will see *XMLHttpRequest* object in\
+    \ detail."
+  mdcn: "\n## 标准示例：\n\n![](img/713147fda427ad275cc07fad320cb449_8_0.png)\n\n**注意：**\
+    \ 我们在 [AJAX 数据库](https://www.tutorialspoint.com/ajax/ajax_database.htm) 中提供了一个更复杂的示例。\n\
+    \n![](img/713147fda427ad275cc07fad320cb449_8_1.png)\n\n## 4. 浏览器支持\n\n并非所有可用浏览器都支持\
+    \ AJAX。以下是支持 AJAX 的主要浏览器列表。\n\n- Mozilla Firefox 1.0 及更高版本。\n- Netscape 7.1 及更高版本。\n\
+    - Apple Safari 1.2 及更高版本。\n- Microsoft Internet Explorer 5 及更高版本。\n- Konqueror。\n\
+    - Opera 7.6 及更高版本。\n\n在编写下一个应用程序时，请务必考虑那些不支持 AJAX 的浏览器。\n\n> **注意**：当我们说浏览器不支持\
+    \ AJAX 时，这仅仅意味着该浏览器不支持创建 Javascript 对象——XMLHttpRequest 对象。\n\n## 编写浏览器特定代码\n\n\
+    使你的源代码与浏览器兼容的最简单方法是在 JavaScript 中使用 try...catch 块。\n\n```\n<html>\n<body>\n<script\
+    \ language=\"javascript\" type=\"text/javascript\">\n<!--\n//Browser Support Code\n\
+    function ajaxFunction(){\nvar ajaxRequest; // The variable that makes Ajax possible!\n\
+    \ntry{\n// Opera 8.0+, Firefox, Safari\najaxRequest = new XMLHttpRequest();\n\
+    }catch (e){\n// Internet Explorer Browsers\ntry{\n    ajaxRequest = new ActiveXObject(\"\
+    Msxml2.XMLHTTP\");\n}catch (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"\
+    Microsoft.XMLHTTP\");\n    }catch (e){\n        // Something went wrong\n    \
+    \    alert(\"Your browser broke!\");\n        return false;\n    }\n}\n\n// -->\n\
+    </script>\n<form name='myForm'>\nName: <input type='text' name='username' /> <br\
+    \ />\nTime: <input type='text' name='time' />\n</form>\n</body>\n</html>\n```\n\
+    \n在上面的 JavaScript 代码中，我们尝试了三次来创建 XMLHttpRequest 对象。我们的第一次尝试：\n\n- ajaxRequest\
+    \ = new XMLHttpRequest();\n\n这是针对 Opera 8.0+、Firefox 和 Safari 浏览器的。如果失败，我们再尝试两次，为\
+    \ Internet Explorer 浏览器创建正确的对象：\n\n- ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n- ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\n如果仍然不行，那么我们使用的是一个非常过时的浏览器，它不支持\
+    \ XMLHttpRequest，这也意味着它不支持 AJAX。\n\n不过，很可能我们的变量 ajaxRequest 现在会被设置为浏览器所使用的任何 *XMLHttpRequest*\
+    \ 标准，我们就可以开始向服务器发送数据了。AJAX 的分步工作流程将在下一章中解释。\n\n## 5. AJAX 实战\n\n本章将清晰地展示 AJAX\
+    \ 操作的精确步骤。\n\n### AJAX 操作步骤\n\n1.  发生一个客户端事件。\n2.  创建一个 XMLHttpRequest 对象。\n3.\
+    \  配置 XMLHttpRequest 对象。\n4.  XMLHttpRequest 对象向 Web 服务器发出异步请求。\n5.  Web 服务器返回包含\
+    \ XML 文档的结果。\n6.  XMLHttpRequest 对象调用回调()函数并处理结果。\n7.  更新 HTML DOM。\n\n让我们逐步来了解这些步骤。\n\
+    \n### 发生客户端事件\n\n- 由于某个事件而调用一个 JavaScript 函数。\n- 示例：_validateUserId()_ JavaScript\
+    \ 函数被映射为一个事件处理程序，响应一个 id 设置为 \"userid\" 的输入表单字段上的 _onkeyup_ 事件。\n- `<input type=\"\
+    text\" size=\"20\" id=\"userid\" name=\"id\" onkeyup=\"validateUserId();\">`.\n\
+    \n### 创建 XMLHttpRequest 对象\n\n```\nvar ajaxRequest;  // The variable that makes\
+    \ Ajax possible!\nfunction ajaxFunction(){\n    try{\n        // Opera 8.0+, Firefox,\
+    \ Safari\n        ajaxRequest = new XMLHttpRequest();\n    }catch (e){\n     \
+    \   // Internet Explorer Browsers\ntry{\n    ajaxRequest = new ActiveXObject(\"\
+    Msxml2.XMLHTTP\");\n}catch (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"\
+    Microsoft.XMLHTTP\");\n    }catch (e){\n        // Something went wrong\n    \
+    \    alert(\"Your browser broke!\");\n        return false;\n    }\n}\n}\n```\n\
+    \n### 配置 XMLHttpRequest 对象\n\n在这一步中，我们将编写一个函数，该函数将由客户端事件触发，并注册一个回调函数 processRequest()。\n\
+    \n```\nfunction validateUserId() {\n    ajaxFunction();\n    // Here processRequest()\
+    \ is the callback function.\n    ajaxRequest.onreadystatechange = processRequest;\n\
+    \    if (!target) target = document.getElementById(\"userid\");\n    var url =\
+    \ \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"GET\", url,\
+    \ true);\n    ajaxRequest.send(null);\n}\n```\n\n### 向 Web 服务器发出异步请求\n\n源代码在上面的代码片段中可用。以粗体书写的代码负责向\
+    \ web 服务器发出请求。所有这些操作都是通过 XMLHttpRequest 对象 *ajaxRequest* 完成的。\n\n![](img/713147fda427ad275cc07fad320cb449_12_0.png)\n\
+    \n```\nfunction validateUserId() {\n    ajaxFunction();\n    // Here processRequest()\
+    \ is the callback function.\n    ajaxRequest.onreadystatechange = processRequest;\n\
+    \n    if (!target) target = document.getElementById(\"userid\");\n    var url\
+    \ = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"GET\", url,\
+    \ true);\n    ajaxRequest.send(null);\n}\n```\n\n假设你在 userid 框中输入了 *Zara*，那么在上面的请求中，URL\
+    \ 被设置为 \"validate?id=Zara\"。\n\n### Web 服务器返回包含 XML 文档的结果\n\n你可以用任何语言实现服务器端脚本，但其逻辑应如下：\n\
+    \n- 从客户端获取请求。\n- 解析来自客户端的输入。\n- 执行必要的处理。\n- 将输出发送给客户端。\n\n如果我们假设你打算编写一个 servlet，那么这是相应的代码片段。\n\
+    \n```\npublic void doGet(HttpServletRequest request, HttpServletResponse response)\n\
+    \    throws IOException, ServletException\n{\n    String targetId = request.getParameter(\"\
+    id\");\n\n    if ((targetId != null) && !accounts.containsKey(targetId.trim()))\n\
+    \    {\n        response.setContentType(\"text/xml\");\n        response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n        response.getWriter().write(\"true\");\n\
+    \    }\nelse\n{\n    response.setContentType(\"text/xml\");\n    response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n    response.getWriter().write(\"false\");\n\
+    }\n}\n```\n\n### 调用回调函数 processRequest()\n\nXMLHttpRequest 对象被配置为在 XMLHttpRequest\
+    \ 对象的 readyState 发生状态变化时调用 processRequest() 函数。现在这个函数将接收服务器的结果，并进行所需的处理。如下例所示，它根据\
+    \ Web 服务器返回的值将变量 message 设置为 true 或 false。\n\n```\nfunction processRequest() {\n\
+    \  if (req.readyState == 4) {\n    if (req.status == 200) {\n      var message\
+    \ = ...;\n\n... \n}\n```\n\n### 更新 HTML DOM\n\n这是最后一步，在这一步中，你的 HTML 页面将被更新。它按以下方式发生：\n\
+    \n- JavaScript 使用 DOM API 获取对页面中任何元素的引用。\n- 获取元素引用的推荐方式是调用。\n- 现在可以使用 JavaScript\
+    \ 来修改元素的属性；修改元素的样式属性；或者添加、删除或修改子元素。以下是示例：\n\n```\ndocument.getElementById(\"userIdMessage\"\
+    ),\n\n// where \"userIdMessage\" is the ID attribute\n\n// of an element appearing\
+    \ in the HTML document\n```\n\n```\n<script type=\"text/javascript\">\n<!--\n\
+    function setMessageUsingDOM(message) {\n  var userMessageElement =\n      document.getElementById(\"\
+    userIdMessage\");\n  var messageText;\n  if (message == \"false\") {\n    userMessageElement.style.color\
+    \ = \"red\";\n    messageText = \"Invalid User Id\";\n  } else {\n    userMessageElement.style.color\
+    \ = \"green\";\n    messageText = \"Valid User Id\";\n  }\n  var messageBody =\
+    \ document.createTextNode(messageText);\n\n\n  // if the messageBody element has\
+    \ been created simple\n  // replace it otherwise append the new element\n\n\n\
+    \  if (userMessageElement.childNodes[0]) {\n    userMessageElement.replaceChild(messageBody,\n\
+    \    userMessageElement.childNodes[0]);\n  } else {\n    userMessageElement.appendChild(messageBody);\n\
+    \  }\n}\n-->\n</script>\n<body>\n<div id=\"userIdMessage\"><div>\n</body>\n```\n\
+    \n如果你理解了上面提到的七个步骤，那么你就几乎掌握了 AJAX。在下一章中，我们将详细讨论 *XMLHttpRequest* 对象。\n"
+  merge: 0
+  raw:
+  - '[PAGE 8]
+
+
+    Ajax
+
+
+    # Standard Example:
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_8_0.png)
+
+
+    **NOTE:** We have given a more complex example in [AJAX Database](https://www.tutorialspoint.com/ajax/ajax_database.htm).
+
+
+    5
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_8_1.png)'
+  - '[PAGE 9]
+
+
+    # # 4. BROWSER SUPPORT
+
+
+    All the available browsers cannot support AJAX. Here is a list of major browsers
+    that support AJAX.
+
+
+    +   - Mozilla Firefox 1.0 and above.
+
+
+    +   - Netscape version 7.1 and above.
+
+
+    +   - Apple Safari 1.2 and above.
+
+
+    +   - Microsoft Internet Explorer 5 and above.
+
+
+    +   - Konqueror.
+
+
+    +   - Opera 7.6 and above.
+
+
+    When you write your next application, do consider the browsers that do not support
+    AJAX.
+
+
+    > **NOTE**: When we say that a browser does not support AJAX, it simply means
+    that the browser does not support the creation of Javascript object - XMLHttpRequest
+    object.
+
+
+    # **Writing Browser Specific Code**
+
+
+    The simplest way to make your source code compatible with a browser is to use
+    try...catch blocks in your JavaScript.
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <script language="javascript" type="text/javascript">
+
+    <!--
+
+    //Browser Support Code
+
+    function ajaxFunction(){
+
+    var ajaxRequest; // The variable that makes Ajax possible!
+
+
+    try{
+
+    // Opera 8.0+, Firefox, Safari
+
+    ajaxRequest = new XMLHttpRequest();
+
+    }catch (e){
+
+    // Internet Explorer Browsers
+
+    ```'
+  - "[PAGE 10]\n\n```\ntry{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n}catch (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n    }catch (e){\n        // Something went wrong\n        alert(\"Your browser\
+    \ broke!\");\n        return false;\n    }\n}\n\n// -->\n</script>\n<form name='myForm'>\n\
+    Name: <input type='text' name='username' /> <br />\nTime: <input type='text' name='time'\
+    \ />\n</form>\n</body>\n</html>\n```\n\nIn the above JavaScript code, we try three\
+    \ times to make our XMLHttpRequest object. Our first attempt:\n\n+   - ajaxRequest\
+    \ = new XMLHttpRequest();\n\nIt is for Opera 8.0+, Firefox, and Safari browsers.\
+    \ If it fails, we try two more times to make the correct object for an Internet\
+    \ Explorer browser with:\n\n+   - ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n- ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\nIf it doesn't\
+    \ work, then we can use a very outdated browser that doesn't support XMLHttpRequest,\
+    \ which also means it doesn't support AJAX.\n\nMost likely though, our variable\
+    \ ajaxRequest will now be set to whatever *XMLHttpRequest* standard the browser\
+    \ uses and we can start sending data to the server. The step-wise AJAX workflow\
+    \ is explained in the next chapter."
+  - "[PAGE 11]\n\n# 5. AJAX IN ACTION\n\nThis chapter gives you a clear picture of\
+    \ the exact steps of AJAX operation.\n\n# Steps of AJAX Operation\n\n+   1. A\
+    \ client event occurs.\n2. An XMLHttpRequest object is created.\n3. The XMLHttpRequest\
+    \ object is configured.\n4. The XMLHttpRequest object makes an asynchronous request\
+    \ to the Webserver.\n5. The Webserver returns the result containing XML document.\n\
+    6. The XMLHttpRequest object calls the callback() function and processes the result.\n\
+    7. The HTML DOM is updated.\n\nLet us take these steps one by one.\n\n# A Client\
+    \ Event Occurs\n\n+   - A JavaScript function is called as the result of an event.\n\
+    - Example: _validateUserId()_ JavaScript function is mapped as an event handler\
+    \ to an _onkeyup_ event on input form field whose id is set to \"userid\".\n-\
+    \ `<input type=\"text\" size=\"20\" id=\"userid\" name=\"id\" onkeyup=\"validateUserId();\"\
+    >`.\n\n# The XMLHttpRequest Object is Created\n\n```\nvar ajaxRequest;  // The\
+    \ variable that makes Ajax possible!\nfunction ajaxFunction(){\n    try{\n   \
+    \     // Opera 8.0+, Firefox, Safari\n        ajaxRequest = new XMLHttpRequest();\n\
+    \    }catch (e){\n        // Internet Explorer Browsers\n```"
+  - "[PAGE 12]\n\n```\ntry{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n}catch (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n    }catch (e){\n        // Something went wrong\n        alert(\"Your browser\
+    \ broke!\");\n        return false;\n    }\n}\n}\n```\n\n# The XMLHttpRequest\
+    \ Object is Configured\n\nIn this step, we will write a function that will be\
+    \ triggered by the client event and a callback function processRequest() will\
+    \ be registered.\n\n```\nfunction validateUserId() {\n    ajaxFunction();\n  \
+    \  // Here processRequest() is the callback function.\n    ajaxRequest.onreadystatechange\
+    \ = processRequest;\n    if (!target) target = document.getElementById(\"userid\"\
+    );\n    var url = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"\
+    GET\", url, true);\n    ajaxRequest.send(null);\n}\n```\n\n# Making Asynchronous\
+    \ Request to the Webserver\n\nSource code is available in the above piece of code.\
+    \ Code written in bold typeface is responsible to make a request to the webserver.\
+    \ This is all being done using the XMLHttpRequest object *ajaxRequest*.\n\n![](img/713147fda427ad275cc07fad320cb449_12_0.png)"
+  - "[PAGE 13]\n\n```\nfunction validateUserId() {\n    ajaxFunction();\n    // Here\
+    \ processRequest() is the callback function.\n    ajaxRequest.onreadystatechange\
+    \ = processRequest;\n\n    if (!target) target = document.getElementById(\"userid\"\
+    );\n    var url = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"\
+    GET\", url, true);\n    ajaxRequest.send(null);\n}\n```\n\nAssume you enter *Zara*\
+    \ in the userid box, then in the above request, the URL is set to \"validate?id=Zara\"\
+    .\n\n# Webserver Returns the Result Containing XML Document\n\nYou can implement\
+    \ your server-side script in any language, however its logic should be as follows.\n\
+    \n+   - Get a request from the client.\n- Parse the input from the client.\n-\
+    \ Do required processing.\n- Send the output to the client.\n\nIf we assume that\
+    \ you are going to write a servlet, then here is the piece of code.\n\n```\npublic\
+    \ void doGet(HttpServletRequest request, HttpServletResponse response)\n    throws\
+    \ IOException, ServletException\n{\n    String targetId = request.getParameter(\"\
+    id\");\n\n    if ((targetId != null) && !accounts.containsKey(targetId.trim()))\n\
+    \    {\n        response.setContentType(\"text/xml\");\n        response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n        response.getWriter().write(\"true\");\n\
+    \    }\n}\n```"
+  - "[PAGE 14]\n\n```\nelse\n{\n    response.setContentType(\"text/xml\");\n    response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n    response.getWriter().write(\"false\");\n\
+    }\n}\n```\n\n# Callback Function processRequest() is Called\n\nThe XMLHttpRequest\
+    \ object was configured to call the processRequest() function when there is a\
+    \ state change to the readyState of the XMLHttpRequest object. Now this function\
+    \ will receive the result from the server and will do the required processing.\
+    \ As in the following example, it sets a variable message on true or false based\
+    \ on the returned value from the Webserver.\n\n```\nfunction processRequest()\
+    \ {\n  if (req.readyState == 4) {\n    if (req.status == 200) {\n      var message\
+    \ = ...;\n\n... \n}\n```\n\n# The HTML DOM is Updated\n\nThis is the final step\
+    \ and in this step, your HTML page will be updated. It happens in the following\
+    \ way:\n\n+   - JavaScript gets a reference to any element in a page using DOM\
+    \ API.\n- The recommended way to gain a reference to an element is to call.\n\
+    - JavaScript may now be used to modify the element's attributes; modify the element's\
+    \ style properties; or add, remove, or modify the child elements. Here is an example:\n\
+    \n```\ndocument.getElementById(\"userIdMessage\"),\n\n// where \"userIdMessage\"\
+    \ is the ID attribute\n\n// of an element appearing in the HTML document\n```\n\
+    \n```\n<script type=\"text/javascript\">\n```"
+  - "[PAGE 15]\n\n# Ajax\n\n```\n<!--\nfunction setMessageUsingDOM(message) {\n  var\
+    \ userMessageElement =\n      document.getElementById(\"userIdMessage\");\n  var\
+    \ messageText;\n  if (message == \"false\") {\n    userMessageElement.style.color\
+    \ = \"red\";\n    messageText = \"Invalid User Id\";\n  } else {\n    userMessageElement.style.color\
+    \ = \"green\";\n    messageText = \"Valid User Id\";\n  }\n  var messageBody =\
+    \ document.createTextNode(messageText);\n\n\n  // if the messageBody element has\
+    \ been created simple\n  // replace it otherwise append the new element\n\n\n\
+    \  if (userMessageElement.childNodes[0]) {\n    userMessageElement.replaceChild(messageBody,\n\
+    \    userMessageElement.childNodes[0]);\n  } else {\n    userMessageElement.appendChild(messageBody);\n\
+    \  }\n}\n-->\n</script>\n<body>\n<div id=\"userIdMessage\"><div>\n</body>\n```\n\
+    \nIf you have understood the above-mentioned seven steps, then you are almost\
+    \ done with AJAX. In the next chapter, we will see *XMLHttpRequest* object in\
+    \ detail."
+- md: "## 6. XMLHTTPREQUEST\n\nThe XMLHttpRequest object is the key to AJAX. It has\
+    \ been available ever since Internet Explorer 5.5 was released in July 2000, but\
+    \ was not fully discovered until AJAX and Web 2.0 in 2005 became popular.\n\n\
+    XMLHttpRequest (XHR) is an API that can be used by JavaScript, JScript, VBScript,\
+    \ and other web browser scripting languages to transfer and manipulate XML data\
+    \ to and from a webserver using HTTP, establishing an independent connection channel\
+    \ between a webpage's Client-Side and Server-Side.\n\nThe data returned from XMLHttpRequest\
+    \ calls will often be provided by back-end databases. Besides XML, XMLHttpRequest\
+    \ can be used to fetch data in other formats, e.g. JSON or even plain text.\n\n\
+    You already have seen a couple of examples on how to create an XMLHttpRequest\
+    \ object.\n\nListed below are some of the methods and properties that you have\
+    \ to get familiar with.\n\n## XMLHttpRequest Methods\n\n- **abort()**\n  Cancels\
+    \ the current request.\n- **getAllResponseHeaders()**\n  Returns the complete\
+    \ set of HTTP headers as a string.\n- **getResponseHeader( headerName )**\n  Returns\
+    \ the value of the specified HTTP header.\n- **open( method, URL )**\n- **open(\
+    \ method, URL, async )**\n- **open( method, URL, async, userName )**\n- **open(\
+    \ method, URL, async, userName, password )**\n  Specifies the method, URL, and\
+    \ other optional attributes of a request.\n\nThe method parameter can have a value\
+    \ of \"GET\", \"POST\", or \"HEAD\". Other HTTP methods such as \"PUT\" and \"\
+    DELETE\" (primarily used in REST applications) may be possible.\nThe \"async\"\
+    \ parameter specifies whether the request should be handled asynchronously or\
+    \ not. \"true\" means that the script processing carries on after the send() method\
+    \ without waiting for a response, and \"false\" means that the script waits for\
+    \ a response before continuing script processing.\n\n- **send( content )**\n \
+    \ Sends the request.\n- **setRequestHeader( label, value )**\n  Adds a label/value\
+    \ pair to the HTTP header to be sent.\n\n## XMLHttpRequest Properties\n\n- **onreadystatechange**\n\
+    \  An event handler for an event that fires at every state change.\n- **readyState**\n\
+    \  The readyState property defines the current state of the XMLHttpRequest object.\n\
+    \nThe following table provides a list of the possible values for the readyState\
+    \ property:\n\n| State | Description |\n| :---: | :--- |\n| 0 | The request is\
+    \ not initialized. |\n| 1 | The request has been set up. |\n| 2 | The request\
+    \ has been sent. |\n| 3 | The request is in process. |\n| 4 | The request is completed.\
+    \ |\n\n**readyState = 0** – After you have created the XMLHttpRequest object,\
+    \ but before you have called the open() method.\n\n**readyState = 1** After you\
+    \ have called the open() method, but before you have called send().\n\n**readyState\
+    \ = 2** After you have called send().\n\n**readyState = 3** After the browser\
+    \ has established a communication with the server, but before the server has completed\
+    \ the response.\n\n**readyState = 4** After the request has been completed, and\
+    \ the response data has been completely received from the server.\n\n- **responseText**\n\
+    \  Returns the response as a string.\n\n- **responseXML**\n  Returns the response\
+    \ as XML. This property returns an XML document object, which can be examined\
+    \ and parsed using the W3C DOM node tree methods and properties.\n\n- **status**\n\
+    \  Returns the status as a number (e.g., 404 for \"Not Found\" and 200 for \"\
+    OK\").\n\n- **statusText**\n  Returns the status as a string (e.g., \"Not Found\"\
+    \ or \"OK\").\n\n## 7. DATABASE OPERATIONS\n\nTo clearly illustrate how easy it\
+    \ is to access information from a database using AJAX, we are going to build MySQL\
+    \ queries on the fly and display the results on \"ajax.html\". But before we proceed,\
+    \ let us do the ground work. Create a table using the following command.\n\n**NOTE**:\
+    \ We are assuming you have sufficient privilege to perform the following MySQL\
+    \ operations.\n\n```\nCREATE TABLE 'ajax_example' (\n  'name' varchar(50) NOT\
+    \ NULL,\n  'age' int(11) NOT NULL,\n  'sex' varchar(1) NOT NULL,\n  'wpm' int(11)\
+    \ NOT NULL,\n  PRIMARY KEY  ('name')\n)\n```\n\nNow dump the following data into\
+    \ this table using the following SQL statements:\n\n```\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Jerry', 120, 'm', 20);\nINSERT INTO 'ajax_example' VALUES ('Regis',\
+    \ 75, 'm', 44);\nINSERT INTO 'ajax_example' VALUES ('Frank', 45, 'm', 87);\nINSERT\
+    \ INTO 'ajax_example' VALUES ('Jill', 22, 'f', 72);\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Tracy', 27, 'f', 0);\nINSERT INTO 'ajax_example' VALUES ('Julie', 35,\
+    \ 'f', 90);\n```\n\n## Client Side HTML File\n\nNow let us have our client side\
+    \ HTML file, which is ajax.html, and it will have the following code:\n\n```\n\
+    <html>\n<body>\n<script language=\"javascript\" type=\"text/javascript\">\n<!--\n\
+    //Browser Support Code\nfunction ajaxFunction(){\n  var ajaxRequest;  // The variable\
+    \ that makes Ajax possible!\n\ntry{\n  // Opera 8.0+, Firefox, Safari\n  ajaxRequest\
+    \ = new XMLHttpRequest();\n}catch (e){\n  // Internet Explorer Browsers\n  try{\n\
+    \    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n  }catch (e) {\n  \
+    \  try{\n      ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n    }catch\
+    \ (e){\n      // Something went wrong\n      alert(\"Your browser broke!\");\n\
+    \      return false;\n    }\n  }\n}\n// Create a function that will receive data\n\
+    // sent from the server and will update\n// div section in the same page.\najaxRequest.onreadystatechange\
+    \ = function(){\n  if(ajaxRequest.readyState == 4){\n    var ajaxDisplay = document.getElementById('ajaxDiv');\n\
+    \    ajaxDisplay.innerHTML = ajaxRequest.responseText;\n  }\n}\n// Now get the\
+    \ value from user and pass it to\n// server script.\nvar age = document.getElementById('age').value;\n\
+    var wpm = document.getElementById('wpm').value;\nvar sex = document.getElementById('sex').value;\n\
+    var queryString = \"?age=\" + age ;\nqueryString += \"&wpm=\" + wpm + \"&sex=\"\
+    \ + sex;\najaxRequest.open(\"GET\", \"ajax-example.php\" + queryString, true);\n\
+    ajaxRequest.send(null);\n}\n//--> \n</script>\n<form name='myForm'>\nMax Age:\
+    \ <input type='text' id='age' /> <br />\nMax WPM: <input type='text' id='wpm'\
+    \ />\n<br />\nSex: <select id='sex'>\n<option value=\"m\">m</option>\n<option\
+    \ value=\"f\">f</option>\n</select>\n<input type='button' onclick='ajaxFunction()'\
+    \ value='Query MySQL'/>\n</form>\n<div id='ajaxDiv'>Your result will display here</div>\n\
+    </body>\n</html>\n```\n\n**NOTE:** The way of passing variables in the Query is\
+    \ according to HTTP standard and have formA.\n\nURL?variable1=value1;&variable2=value2;\n\
+    \nThe above code will give you a screen as given below:\n\n![](img/713147fda427ad275cc07fad320cb449_22_0.png)\n\
+    \n**NOTE:** This is a dummy screen.\n\n## Server Side PHP File\n\nYour client-side\
+    \ script is ready. Now, we have to write our server-side script, which will fetch\
+    \ age, wpm, and sex from the database and will send it back to the client. Put\
+    \ the following code into the file \"ajax-example.php\".\n\n```\n<?php\n$dbhost\
+    \ = \"localhost\";\n$dbuser = \"dbusername\";\n$dbpass = \"dbpassword\";\n$dbname\
+    \ = \"dbname\";\n\n//Connect to MySQL Server\nmysql_connect($dbhost, $dbuser,\
+    \ $dbpass);\n\n//Select Database\nmysql_select_db($dbname) or die(mysql_error());\n\
+    \n// Retrieve data from Query String\n$age = $_GET['age'];\n$sex = $_GET['sex'];\n\
+    $wpm = $_GET['wpm'];\n\n// Escape User Input to help prevent SQL Injection\n$age\
+    \ = mysql_real_escape_string($age);\n$sex = mysql_real_escape_string($sex);\n\
+    $wpm = mysql_real_escape_string($wpm);\n\n//build query\n$query = \"SELECT * FROM\
+    \ ajax_example WHERE sex = '$sex'\";\nif(is_numeric($age))\n    $query .= \" AND\
+    \ age <= $age\";\nif(is_numeric($wpm))\n    $query .= \" AND wpm <= $wpm\";\n\n\
+    //Execute query\n qry_result = mysql_query($query) or die(mysql_error());\n\n\
+    //Build Result String\n$display_string = \"<table>\";\n$display_string .= \"<tr>\"\
+    ;\n$display_string .= \"<th>Name</th>\";\n$display_string .= \"<th>Age</th>\"\
+    ;\n$display_string .= \"<th>Sex</th>\";\n$display_string .= \"<th>WPM</th>\";\n\
+    $display_string .= \"</tr>\";\n\n// Insert a new row in the table for each person\
+    \ returned\nwhile($row = mysql_fetch_array($qry_result)){\n    $display_string\
+    \ .= \"<tr>\";\n    $display_string .= \"<td>$row[name]</td>\";\n    $display_string\
+    \ .= \"<td>$row[age]</td>\";\n    $display_string .= \"<td>$row[sex]</td>\";\n\
+    \    $display_string .= \"<td>$row[wpm]</td>\";\n    $display_string .= \"</tr>\"\
+    ;\n}\n\necho \"Query: \" . $query . \"<br />\";\n```"
+  mdcn: "\n## 6. XMLHttpRequest\n\nXMLHttpRequest 对象是 AJAX 的关键。它自 2000 年 7 月 Internet\
+    \ Explorer 5.5 发布以来就已存在，但直到 2005 年 AJAX 和 Web 2.0 普及后才被充分发现和利用。\n\nXMLHttpRequest\
+    \ (XHR) 是一个 API，可被 JavaScript、JScript、VBScript 等网页浏览器脚本语言使用，通过 HTTP 传输和操作与 Web\
+    \ 服务器之间的 XML 数据，从而在网页的客户端和服务器端之间建立独立的通信通道。\n\nXMLHttpRequest 调用返回的数据通常由后端数据库提供。除了\
+    \ XML，XMLHttpRequest 还可用于获取其他格式的数据，例如 JSON 甚至是纯文本。\n\n你已经见过几个如何创建 XMLHttpRequest\
+    \ 对象的例子了。\n\n以下列出了一些你需要熟悉的方法和属性。\n\n## XMLHttpRequest 方法\n\n- **abort()**\n  取消当前请求。\n\
+    - **getAllResponseHeaders()**\n  以字符串形式返回完整的 HTTP 头信息集合。\n- **getResponseHeader(\
+    \ headerName )**\n  返回指定 HTTP 头的值。\n- **open( method, URL )**\n- **open( method,\
+    \ URL, async )**\n- **open( method, URL, async, userName )**\n- **open( method,\
+    \ URL, async, userName, password )**\n  指定请求的方法、URL 以及其他可选属性。\n\nmethod 参数的值可以是\
+    \ \"GET\"、\"POST\" 或 \"HEAD\"。其他 HTTP 方法如 \"PUT\" 和 \"DELETE\"（主要用于 REST 应用）也可能是有效的。\n\
+    \"async\" 参数指定请求是否应异步处理。\"true\" 表示脚本处理在调用 send() 方法后继续执行，无需等待响应；\"false\" 表示脚本会等待收到响应后才继续执行后续处理。\n\
+    \n- **send( content )**\n  发送请求。\n- **setRequestHeader( label, value )**\n  向要发送的\
+    \ HTTP 头添加一个标签/值对。\n\n## XMLHttpRequest 属性\n\n- **onreadystatechange**\n  在每次状态变化时触发的事件处理程序。\n\
+    - **readyState**\n  readyState 属性定义了 XMLHttpRequest 对象的当前状态。\n\n下表列出了 readyState\
+    \ 属性可能的值：\n\n| 状态 | 描述 |\n| :---: | :--- |\n| 0 | 请求尚未初始化。 |\n| 1 | 请求已建立。 |\n\
+    | 2 | 请求已发送。 |\n| 3 | 请求正在处理中。 |\n| 4 | 请求已完成。 |\n\n**readyState = 0** – 在你创建了\
+    \ XMLHttpRequest 对象之后，但在调用 open() 方法之前。\n\n**readyState = 1** 在你调用了 open() 方法之后，但在调用\
+    \ send() 之前。\n\n**readyState = 2** 在你调用了 send() 之后。\n\n**readyState = 3** 在浏览器与服务器建立连接之后，但在服务器完成响应之前。\n\
+    \n**readyState = 4** 在请求完成，并且从服务器完全接收到响应数据之后。\n\n- **responseText**\n  以字符串形式返回响应。\n\
+    \n- **responseXML**\n  以 XML 形式返回响应。此属性返回一个 XML 文档对象，可以使用 W3C DOM 节点树方法和属性进行检查和解析。\n\
+    \n- **status**\n  以数字形式返回状态（例如，404 表示 \"Not Found\"，200 表示 \"OK\"）。\n\n- **statusText**\n\
+    \  以字符串形式返回状态（例如 \"Not Found\" 或 \"OK\"）。\n\n## 7. 数据库操作\n\n为了清晰地展示使用 AJAX 从数据库中获取信息是多么容易，我们将动态构建\
+    \ MySQL 查询，并在 \"ajax.html\" 上显示结果。但在我们开始之前，让我们先做些基础工作。使用以下命令创建一个表。\n\n**注意**：我们假设你有足够的权限执行以下\
+    \ MySQL 操作。\n\n```\nCREATE TABLE 'ajax_example' (\n  'name' varchar(50) NOT NULL,\n\
+    \  'age' int(11) NOT NULL,\n  'sex' varchar(1) NOT NULL,\n  'wpm' int(11) NOT\
+    \ NULL,\n  PRIMARY KEY  ('name')\n)\n```\n\n现在，使用以下 SQL 语句将数据导入此表：\n\n```\nINSERT\
+    \ INTO 'ajax_example' VALUES ('Jerry', 120, 'm', 20);\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Regis', 75, 'm', 44);\nINSERT INTO 'ajax_example' VALUES ('Frank',\
+    \ 45, 'm', 87);\nINSERT INTO 'ajax_example' VALUES ('Jill', 22, 'f', 72);\nINSERT\
+    \ INTO 'ajax_example' VALUES ('Tracy', 27, 'f', 0);\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Julie', 35, 'f', 90);\n```\n\n## 客户端 HTML 文件\n\n现在，让我们来编写客户端的 HTML\
+    \ 文件，即 ajax.html，它将包含以下代码：\n\n```\n<html>\n<body>\n<script language=\"javascript\"\
+    \ type=\"text/javascript\">\n<!--\n//浏览器支持代码\nfunction ajaxFunction(){\n  var\
+    \ ajaxRequest;  // 使得 Ajax 成为可能的变量！\n\ntry{\n  // Opera 8.0+, Firefox, Safari\n\
+    \  ajaxRequest = new XMLHttpRequest();\n}catch (e){\n  // Internet Explorer 浏览器\n\
+    \  try{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n  }catch (e)\
+    \ {\n    try{\n      ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\
+    \    }catch (e){\n      // 出错了\n      alert(\"您的浏览器出故障了！\");\n      return false;\n\
+    \    }\n  }\n}\n// 创建一个函数，用于接收从服务器发送的数据\n// 并更新同一页面中的 div 部分。\najaxRequest.onreadystatechange\
+    \ = function(){\n  if(ajaxRequest.readyState == 4){\n    var ajaxDisplay = document.getElementById('ajaxDiv');\n\
+    \    ajaxDisplay.innerHTML = ajaxRequest.responseText;\n  }\n}\n// 现在从用户那里获取值并传递给服务器脚本。\n\
+    var age = document.getElementById('age').value;\nvar wpm = document.getElementById('wpm').value;\n\
+    var sex = document.getElementById('sex').value;\nvar queryString = \"?age=\" +\
+    \ age ;\nqueryString += \"&wpm=\" + wpm + \"&sex=\" + sex;\najaxRequest.open(\"\
+    GET\", \"ajax-example.php\" + queryString, true);\najaxRequest.send(null);\n}\n\
+    //--> \n</script>\n<form name='myForm'>\nMax Age: <input type='text' id='age'\
+    \ /> <br />\nMax WPM: <input type='text' id='wpm' />\n<br />\nSex: <select id='sex'>\n\
+    <option value=\"m\">m</option>\n<option value=\"f\">f</option>\n</select>\n<input\
+    \ type='button' onclick='ajaxFunction()' value='Query MySQL'/>\n</form>\n<div\
+    \ id='ajaxDiv'>Your result will display here</div>\n</body>\n</html>\n```\n\n\
+    **注意：** 在查询字符串中传递变量的方式遵循 HTTP 标准，形式如下。\n\nURL?variable1=value1;&variable2=value2;\n\
+    \n上述代码将为你生成如下所示的屏幕：\n\n![](img/713147fda427ad275cc07fad320cb449_22_0.png)\n\n\
+    **注意：** 这是一个示例屏幕。\n\n## 服务器端 PHP 文件\n\n你的客户端脚本已准备就绪。现在，我们必须编写服务器端脚本，该脚本将从数据库中获取\
+    \ age、wpm 和 sex，并将其发送回客户端。将以下代码放入文件 \"ajax-example.php\"。\n\n```\n<?php\n$dbhost\
+    \ = \"localhost\";\n$dbuser = \"dbusername\";\n$dbpass = \"dbpassword\";\n$dbname\
+    \ = \"dbname\";\n\n//连接到 MySQL 服务器\nmysql_connect($dbhost, $dbuser, $dbpass);\n\
+    \n//选择数据库\nmysql_select_db($dbname) or die(mysql_error());\n\n// 从查询字符串中检索数据\n\
+    $age = $_GET['age'];\n$sex = $_GET['sex'];\n$wpm = $_GET['wpm'];\n\n// 转义用户输入以帮助防止\
+    \ SQL 注入\n$age = mysql_real_escape_string($age);\n$sex = mysql_real_escape_string($sex);\n\
+    $wpm = mysql_real_escape_string($wpm);\n\n//构建查询\n$query = \"SELECT * FROM ajax_example\
+    \ WHERE sex = '$sex'\";\nif(is_numeric($age))\n    $query .= \" AND age <= $age\"\
+    ;\nif(is_numeric($wpm))\n    $query .= \" AND wpm <= $wpm\";\n\n//执行查询\n qry_result\
+    \ = mysql_query($query) or die(mysql_error());\n\n//构建结果字符串\n$display_string =\
+    \ \"<table>\";\n$display_string .= \"<tr>\";\n$display_string .= \"<th>Name</th>\"\
+    ;\n$display_string .= \"<th>Age</th>\";\n$display_string .= \"<th>Sex</th>\";\n\
+    $display_string .= \"<th>WPM</th>\";\n$display_string .= \"</tr>\";\n\n// 为返回的每个人在表格中插入一个新行\n\
+    while($row = mysql_fetch_array($qry_result)){\n    $display_string .= \"<tr>\"\
+    ;\n    $display_string .= \"<td>$row[name]</td>\";\n    $display_string .= \"\
+    <td>$row[age]</td>\";\n    $display_string .= \"<td>$row[sex]</td>\";\n    $display_string\
+    \ .= \"<td>$row[wpm]</td>\";\n    $display_string .= \"</tr>\";\n}\n\necho \"\
+    Query: \" . $query . \"<br />\";\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 16]\n\n# 6. XMLHTTPREQUEST\n\nThe XMLHttpRequest object is the key to AJAX.\
+    \ It has been available ever since Internet Explorer 5.5 was released in July\
+    \ 2000, but was not fully discovered until AJAX and Web 2.0 in 2005 became popular.\n\
+    \nXMLHttpRequest (XHR) is an API that can be used by JavaScript, JScript, VBScript,\
+    \ and other web browser scripting languages to transfer and manipulate XML data\
+    \ to and from a webserver using HTTP, establishing an independent connection channel\
+    \ between a webpage's Client-Side and Server-Side.\n\nThe data returned from XMLHttpRequest\
+    \ calls will often be provided by back-end databases. Besides XML, XMLHttpRequest\
+    \ can be used to fetch data in other formats, e.g. JSON or even plain text.\n\n\
+    You already have seen a couple of examples on how to create an XMLHttpRequest\
+    \ object.\n\nListed below are some of the methods and properties that you have\
+    \ to get familiar with.\n\n# XMLHttpRequest Methods\n\n+   - **abort()**\n  Cancels\
+    \ the current request.\n- **getAllResponseHeaders()**\n  Returns the complete\
+    \ set of HTTP headers as a string.\n- **getResponseHeader( headerName )**\n  Returns\
+    \ the value of the specified HTTP header.\n- **open( method, URL )**\n- **open(\
+    \ method, URL, async )**\n- **open( method, URL, async, userName )**\n- **open(\
+    \ method, URL, async, userName, password )**\n  Specifies the method, URL, and\
+    \ other optional attributes of a request."
+  - "[PAGE 17]\n\nThe method parameter can have a value of \"GET\", \"POST\", or \"\
+    HEAD\". Other HTTP methods such as \"PUT\" and \"DELETE\" (primarily used in REST\
+    \ applications) may be possible.\nThe \"async\" parameter specifies whether the\
+    \ request should be handled asynchronously or not. \"true\" means that the script\
+    \ processing carries on after the send() method without waiting for a response,\
+    \ and \"false\" means that the script waits for a response before continuing script\
+    \ processing.\n\n+   * **send( content )**\n    Sends the request.\n* **setRequestHeader(\
+    \ label, value )**\n    Adds a label/value pair to the HTTP header to be sent.\n\
+    \n# XMLHttpRequest Properties\n\n+   * **onreadystatechange**\n    An event handler\
+    \ for an event that fires at every state change.\n* **readyState**\n    The readyState\
+    \ property defines the current state of the XMLHttpRequest object.\n\nThe following\
+    \ table provides a list of the possible values for the readyState property:\n\n\
+    | State | Description |\n| :---: | :--- |\n| 0 | The request is not initialized.\
+    \ |\n| 1 | The request has been set up. |\n| 2 | The request has been sent. |\n\
+    | 3 | The request is in process. |\n| 4 | The request is completed. |\n\n**readyState\
+    \ = 0** – After you have created the XMLHttpRequest object, but before you have\
+    \ called the open() method."
+  - "[PAGE 18]\n\n**readyState = 1** After you have called the open() method, but\
+    \ before you have called send().\n\n**readyState = 2** After you have called send().\n\
+    \n**readyState = 3** After the browser has established a communication with the\
+    \ server, but before the server has completed the response.\n\n**readyState =\
+    \ 4** After the request has been completed, and the response data has been completely\
+    \ received from the server.\n\n+   - **responseText**\n  Returns the response\
+    \ as a string.\n\n+   - **responseXML**\n  Returns the response as XML. This property\
+    \ returns an XML document object, which can be examined and parsed using the W3C\
+    \ DOM node tree methods and properties.\n\n+   - **status**\n  Returns the status\
+    \ as a number (e.g., 404 for \"Not Found\" and 200 for \"OK\").\n\n+   - **statusText**\n\
+    \  Returns the status as a string (e.g., \"Not Found\" or \"OK\")."
+  - "[PAGE 19]\n\n# 7. DATABASE OPERATIONS\n\nTo clearly illustrate how easy it is\
+    \ to access information from a database using AJAX, we are going to build MySQL\
+    \ queries on the fly and display the results on \"ajax.html\". But before we proceed,\
+    \ let us do the ground work. Create a table using the following command.\n\n**NOTE**:\
+    \ We are assuming you have sufficient privilege to perform the following MySQL\
+    \ operations.\n\n```\nCREATE TABLE 'ajax_example' (\n  'name' varchar(50) NOT\
+    \ NULL,\n  'age' int(11) NOT NULL,\n  'sex' varchar(1) NOT NULL,\n  'wpm' int(11)\
+    \ NOT NULL,\n  PRIMARY KEY  ('name')\n)\n```\n\nNow dump the following data into\
+    \ this table using the following SQL statements:\n\n```\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Jerry', 120, 'm', 20);\nINSERT INTO 'ajax_example' VALUES ('Regis',\
+    \ 75, 'm', 44);\nINSERT INTO 'ajax_example' VALUES ('Frank', 45, 'm', 87);\nINSERT\
+    \ INTO 'ajax_example' VALUES ('Jill', 22, 'f', 72);\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Tracy', 27, 'f', 0);\nINSERT INTO 'ajax_example' VALUES ('Julie', 35,\
+    \ 'f', 90);\n```\n\n# Client Side HTML File\n\nNow let us have our client side\
+    \ HTML file, which is ajax.html, and it will have the following code:\n\n```\n\
+    <html>\n<body>\n<script language=\"javascript\" type=\"text/javascript\">\n<!--\n\
+    //Browser Support Code\n```\n\n16"
+  - "[PAGE 20]\n\n# Ajax\n\n```\nfunction ajaxFunction(){\n  var ajaxRequest;  //\
+    \ The variable that makes Ajax possible!\n\ntry{\n  // Opera 8.0+, Firefox, Safari\n\
+    \  ajaxRequest = new XMLHttpRequest();\n}catch (e){\n  // Internet Explorer Browsers\n\
+    \  try{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n  }catch (e)\
+    \ {\n    try{\n      ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\
+    \    }catch (e){\n      // Something went wrong\n      alert(\"Your browser broke!\"\
+    );\n      return false;\n    }\n  }\n}\n// Create a function that will receive\
+    \ data\n// sent from the server and will update\n// div section in the same page.\n\
+    ajaxRequest.onreadystatechange = function(){\n  if(ajaxRequest.readyState == 4){\n\
+    \    var ajaxDisplay = document.getElementById('ajaxDiv');\n    ajaxDisplay.innerHTML\
+    \ = ajaxRequest.responseText;\n  }\n}\n// Now get the value from user and pass\
+    \ it to\n// server script.\nvar age = document.getElementById('age').value;\n\
+    var wpm = document.getElementById('wpm').value;\nvar sex = document.getElementById('sex').value;\n\
+    ```"
+  - "[PAGE 21]\n\n# Ajax\n\n```\nvar queryString = \"?age=\" + age ;\nqueryString\
+    \ += \"&wpm=\" + wpm + \"&sex=\" + sex;\najaxRequest.open(\"GET\", \"ajax-example.php\"\
+    \ + queryString, true);\najaxRequest.send(null);\n}\n//--> \n</script>\n<form\
+    \ name='myForm'>\nMax Age: <input type='text' id='age' /> <br />\nMax WPM: <input\
+    \ type='text' id='wpm' />\n<br />\nSex: <select id='sex'>\n<option value=\"m\"\
+    >m</option>\n<option value=\"f\">f</option>\n</select>\n<input type='button' onclick='ajaxFunction()'\
+    \ value='Query MySQL'/>\n</form>\n<div id='ajaxDiv'>Your result will display here</div>\n\
+    </body>\n</html>\n```\n\n**NOTE:** The way of passing variables in the Query is\
+    \ according to HTTP standard and have formA.\n\nURL?variable1=value1;&variable2=value2;\n\
+    \nThe above code will give you a screen as given below:"
+  - '[PAGE 22]
+
+
+    Ajax
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_22_0.png)
+
+
+    **NOTE:** This is a dummy screen.
+
+
+    # Server Side PHP File
+
+
+    Your client-side script is ready. Now, we have to write our server-side script,
+    which will fetch age, wpm, and sex from the database and will send it back to
+    the client. Put the following code into the file "ajax-example.php".
+
+
+    ```
+
+    <?php
+
+    $dbhost = "localhost";
+
+    $dbuser = "dbusername";
+
+    $dbpass = "dbpassword";
+
+    $dbname = "dbname";
+
+
+    //Connect to MySQL Server
+
+    mysql_connect($dbhost, $dbuser, $dbpass);
+
+
+    //Select Database
+
+    mysql_select_db($dbname) or die(mysql_error());
+
+
+    // Retrieve data from Query String
+
+    $age = $_GET[''age''];
+
+    $sex = $_GET[''sex''];
+
+    $wpm = $_GET[''wpm''];
+
+
+    // Escape User Input to help prevent SQL Injection
+
+    ```'
+  - "[PAGE 23]\n\n# Ajax\n\n```\n$age = mysql_real_escape_string($age);\n$sex = mysql_real_escape_string($sex);\n\
+    $wpm = mysql_real_escape_string($wpm);\n\n//build query\n$query = \"SELECT * FROM\
+    \ ajax_example WHERE sex = '$sex'\";\nif(is_numeric($age))\n    $query .= \" AND\
+    \ age <= $age\";\nif(is_numeric($wpm))\n    $query .= \" AND wpm <= $wpm\";\n\n\
+    //Execute query\n$qry_result = mysql_query($query) or die(mysql_error());\n\n\
+    //Build Result String\n$display_string = \"<table>\";\n$display_string .= \"<tr>\"\
+    ;\n$display_string .= \"<th>Name</th>\";\n$display_string .= \"<th>Age</th>\"\
+    ;\n$display_string .= \"<th>Sex</th>\";\n$display_string .= \"<th>WPM</th>\";\n\
+    $display_string .= \"</tr>\";\n\n// Insert a new row in the table for each person\
+    \ returned\nwhile($row = mysql_fetch_array($qry_result)){\n    $display_string\
+    \ .= \"<tr>\";\n    $display_string .= \"<td>$row[name]</td>\";\n    $display_string\
+    \ .= \"<td>$row[age]</td>\";\n    $display_string .= \"<td>$row[sex]</td>\";\n\
+    \    $display_string .= \"<td>$row[wpm]</td>\";\n    $display_string .= \"</tr>\"\
+    ;\n}\n\necho \"Query: \" . $query . \"<br />\";\n```"
+- md: ' # Ajax
+
+
+    ```
+
+    $display_string .= "</table>";
+
+    echo $display_string;
+
+    ?>
+
+    ```
+
+
+    Now try by entering a valid value (e.g., 120) in *Max Age* or any other box and
+    then click Query MySQL button.
+
+
+    If you have successfully completed this lesson, then you know how to use MySQL,
+    PHP, HTML, and Javascript in tandem to write AJAX applications.
+
+
+    ## 8. SECURITY
+
+
+    ### AJAX Security: Server Side
+
+
+    - AJAX-based Web applications use the same server-side security schemes of regular
+    Web applications.
+
+    - You specify authentication, authorization, and data protection requirements
+    in your web.xml file (declarative) or in your program (programmatic).
+
+    - AJAX-based Web applications are subject to the same security threats as regular
+    Web applications.
+
+
+    ### AJAX Security: Client Side
+
+
+    - JavaScript code is visible to a user/hacker. Hacker can use JavaScript code
+    for inferring server-side weaknesses.
+
+    - JavaScript code is downloaded from the server and executed ("eval") at the client
+    and can compromise the client by mal-intended code.
+
+    - Downloaded JavaScript code is constrained by the sand-box security model and
+    can be relaxed for signed JavaScript.
+
+
+    ## 9. CURRENT ISSUES
+
+
+    AJAX is growing very fast and that is the reason that it contains many issues
+    with it. We hope with the passes of time, they will be resolved and AJAX will
+    become ideal for web applications. We are listing down a few issues that AJAX
+    currently suffers from.
+
+
+    ### Complexity is increased
+
+
+    - Server-side developers will need to understand that presentation logic will
+    be required in the HTML client pages as well as in the server-side logic.
+
+    - Page developers must have JavaScript technology skills.
+
+
+    ### AJAX-based applications can be difficult to debug, test, and maintain
+
+
+    - JavaScript is hard to test - automatic testing is hard.
+
+    - Weak modularity in JavaScript.
+
+    - Lack of design patterns or best practice guidelines yet.
+
+
+    ### Toolkits/Frameworks are not mature yet
+
+
+    - Most of them are in beta phase.
+
+
+    ### No standardization of the XMLHttpRequest yet
+
+
+    - Future version of IE will address this.
+
+
+    ### No support of XMLHttpRequest in old browsers
+
+
+    - Iframe will help.
+
+
+    ### JavaScript technology dependency and incompatibility
+
+
+    - Must be enabled for applications to function.
+
+    - Still some browser incompatibilities exist.
+
+
+    ### JavaScript code is visible to a hacker
+
+
+    - Poorly designed JavaScript code can invite security problems.'
+  mdcn: "\n # Ajax\n\n```\n$display_string .= \"</table>\";\necho $display_string;\n\
+    ?>\n```\n\n现在试着在*最大年龄*或任何其他输入框中输入一个有效值（例如，120），然后点击\"查询 MySQL\"按钮。\n\n如果你成功完成了这一课程，那么你就知道如何协同使用\
+    \ MySQL、PHP、HTML 和 Javascript 来编写 AJAX 应用程序了。\n\n## 8. 安全性\n\n### AJAX 安全性：服务器端\n\
+    \n- 基于 AJAX 的 Web 应用程序使用与常规 Web 应用程序相同的服务器端安全方案。\n- 你可以在 web.xml 文件中（声明式）或在程序中（编程式）指定身份验证、授权和数据保护要求。\n\
+    - 基于 AJAX 的 Web 应用程序面临与常规 Web 应用程序相同的安全威胁。\n\n### AJAX 安全性：客户端\n\n- JavaScript\
+    \ 代码对用户/黑客是可见的。黑客可以利用 JavaScript 代码推断服务器端的弱点。\n- JavaScript 代码从服务器下载并在客户端执行（\"\
+    eval\"），恶意代码可能会危害客户端。\n- 下载的 JavaScript 代码受到沙箱安全模型的限制，对于已签名的 JavaScript 可以放宽限制。\n\
+    \n## 9. 当前问题\n\nAJAX 发展非常迅速，这就是它存在许多问题的原因。我们希望随着时间的推移，这些问题将得到解决，AJAX 将成为 Web 应用程序的理想选择。下面我们列出\
+    \ AJAX 目前存在的一些问题。\n\n### 复杂性增加\n\n- 服务器端开发人员需要了解，表示逻辑将同时需要 HTML 客户端页面和服务器端逻辑中。\n\
+    - 页面开发人员必须具备 JavaScript 技术技能。\n\n### 基于 AJAX 的应用程序难以调试、测试和维护\n\n- JavaScript 难以测试——自动化测试很困难。\n\
+    - JavaScript 的模块化较弱。\n- 尚缺乏设计模式或最佳实践指导。\n\n### 工具包/框架尚不成熟\n\n- 它们大多数仍处于测试阶段。\n\
+    \n### XMLHttpRequest 尚未标准化\n\n- IE 的未来版本将解决此问题。\n\n### 旧版浏览器不支持 XMLHttpRequest\n\
+    \n- Iframe 可以提供帮助。\n\n### JavaScript 技术依赖性和不兼容性\n\n- 必须启用 JavaScript 应用程序才能正常运行。\n\
+    - 仍存在一些浏览器不兼容问题。\n\n### JavaScript 代码对黑客可见\n\n- 设计不佳的 JavaScript 代码可能会带来安全问题。\n"
+  merge: 0
+  raw:
+  - '[PAGE 24]
+
+
+    # Ajax
+
+
+    ```
+
+    $display_string .= "</table>";
+
+    echo $display_string;
+
+    ?>
+
+    ```
+
+
+    Now try by entering a valid value (e.g., 120) in *Max Age* or any other box and
+    then click Query MySQL button.
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_24_0.png)
+
+
+    If you have successfully completed this lesson, then you know how to use MySQL,
+    PHP, HTML, and Javascript in tandem to write AJX applications.'
+  - '[PAGE 25]
+
+
+    # 8. SECURITY
+
+
+    AJAX Security: Server Side
+
+
+    +   * AJAX-based Web applications use the same server-side security schemes of
+    regular Web applications.
+
+    * You specify authentication, authorization, and data protection requirements
+    in your web.xml file (declarative) or in your program (programmatic).
+
+    * AJAX-based Web applications are subject to the same security threats as regular
+    Web applications.
+
+
+    AJAX Security: Client Side
+
+
+    +   * JavaScript code is visible to a user/hacker. Hacker can use JavaScript code
+    for inferring server-side weaknesses.
+
+    * JavaScript code is downloaded from the server and executed ("eval") at the client
+    and can compromise the client by mal-intended code.
+
+    * Downloaded JavaScript code is constrained by the sand-box security model and
+    can be relaxed for signed JavaScript.'
+  - '[PAGE 26]
+
+
+    # 9. CURRENT ISSUES
+
+
+    AJAX is growing very fast and that is the reason that it contains many issues
+    with it. We hope with the passes of time, they will be resolved and AJAX will
+    become ideal for web applications. We are listing down a few issues that AJAX
+    currently suffers from.
+
+
+    Complexity is increased
+
+
+    +   - Server-side developers will need to understand that presentation logic will
+    be required in the HTML client pages as well as in the server-side logic.
+
+    - Page developers must have JavaScript technology skills.
+
+
+    AJAX-based applications can be difficult to debug, test, and maintain
+
+
+    +   - JavaScript is hard to test - automatic testing is hard.
+
+    - Weak modularity in JavaScript.
+
+    - Lack of design patterns or best practice guidelines yet.
+
+
+    Toolkits/Frameworks are not mature yet
+
+
+    +   - Most of them are in beta phase.
+
+
+    No standardization of the XMLHttpRequest yet
+
+
+    +   - Future version of IE will address this.
+
+
+    No support of XMLHttpRequest in old browsers
+
+
+    +   - Iframe will help.
+
+
+    JavaScript technology dependency and incompatibility
+
+
+    +   - Must be enabled for applications to function.
+
+    - Still some browser incompatibilities exist.
+
+
+    JavaScript code is visible to a hacker
+
+
+    +   - Poorly designed JavaScript code can invite security problems.'
+pages:
+- img_proc: true
+  md: '# AJAX
+
+
+    asynchronous javascript and xml
+
+
+    # tutorialspoint
+
+
+    SIMPLYEASYLEARNING'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# About the Tutorial
+
+
+    AJAX is a web development technique for creating interactive web applications.
+    If you know JavaScript, HTML, CSS, and XML, then you need to spend just one hour
+    to start with AJAX.
+
+
+    # Audience
+
+
+    This tutorial will be useful for web developers who want to learn how to create
+    interactive webpages as well as improve their speed and usability using AJAX.
+
+
+    # Prerequisites
+
+
+    It is highly recommended that you are familiar with HTML and JavaScript before
+    attempting this tutorial.
+
+
+    # Copyright & Disclaimer
+
+
+    © Copyright 2015 by Tutorials Point (I) Pvt. Ltd.
+
+
+    All the content and graphics published in this e-book are the property of Tutorials
+    Point (I) Pvt. Ltd. The user of this e-book is prohibited to reuse, retain, copy,
+    distribute or republish any contents or a part of contents of this e-book in any
+    manner without written consent of the publisher.
+
+
+    We strive to update the contents of our website and tutorials as timely and as
+    precisely as possible, however, the contents may contain inaccuracies or errors.
+    Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy, timeliness
+    or completeness of our website or its contents including this tutorial.
+
+
+    If you discover any errors on our website or in this tutorial, please notify us
+    at [contact@tutorialspoint.com](mailto:contact@tutorialspoint.com)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "# Table of Contents\n\n+   - About the Tutorial ...\n- Audience ...\n- Prerequisites\
+    \ ...\n- Copyright & Disclaimer ...\n- Table of Contents ...\n\n+   1. OVERVIEW\
+    \ ...\n   - Rich Internet Application Technology ...\n   - AJAX is Based on Open\
+    \ Standards ...\n\n+   2. TECHNOLOGIES USED IN AJAX ...\n   - JavaScript ...\n\
+    \   - DOM ...\n   - CSS ...\n   - XMLHttpRequest ...\n\n+   3. EXAMPLES ...\n\
+    \   - Google Maps ...\n   - Google Suggest ...\n   - Gmail ...\n   - Yahoo Maps\
+    \ (new) ...\n   - Difference between AJAX and Conventional CGI Program ...\n\n\
+    +   4. BROWSER SUPPORT ...\n   - Writing Browser Specific Code ...\n\n+   5. AJAX\
+    \ IN ACTION ...\n   - Steps of AJAX Operation ...\n   - A Client Event Occurs\
+    \ ...\n\n![](img/713147fda427ad275cc07fad320cb449_2_0.png)"
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: 'The XMLHttpRequest Object is Created ....................................................................................................................8
+
+
+    The XMLHttpRequest Object is Configured ...............................................................................................................9
+
+
+    Making Asynchronous Request to the Webserver..................................................................................................9
+
+
+    Webserver Returns the Result Containing XML Document ................................................................................10
+
+
+    Callback Function processRequest() is Called ......................................................................................................11
+
+
+    The HTML DOM is Updated..................................................................................................................................11
+
+
+    6. XMLHTTPREQUEST..................................................................................................................................................13
+
+
+    XMLHttpRequest Methods..........................................................................................................................................13
+
+
+    XMLHttpRequest Properties .....................................................................................................................................14
+
+
+    7. DATABASE OPERATIONS ..................................................................................................................................16
+
+
+    Client Side HTML File ................................................................................................................................................16
+
+
+    Server Side PHP File ....................................................................................................................................................19
+
+
+    8. SECURITY .................................................................................................................................................................22
+
+
+    AJAX Security: Server Side ..........................................................................................................................................22
+
+
+    AJAX Security: Client Side ...........................................................................................................................................22
+
+
+    9. CURRENT ISSUES....................................................................................................................................................23'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# # 1. OVERVIEW
+
+
+    AJAX stands for **Asynchronous JavaScript and XML**. AJAX is a new technique for
+    creating better, faster, and more interactive web applications with the help of
+    XML, HTML, CSS, and Java Script.
+
+
+    +   - Ajax uses XHTML for content, CSS for presentation, along with Document Object
+    Model and JavaScript for dynamic content display.
+
+    - Conventional web applications transmit information to and from the sever using
+    synchronous requests. It means you fill out a form, hit submit, and get directed
+    to a new page with new information from the server.
+
+    - With AJAX, when you hit submit, JavaScript will make a request to the server,
+    interpret the results, and update the current screen. In the purest sense, the
+    user would never know that anything was even transmitted to the server.
+
+    - XML is commonly used as the format for receiving server data, although any format,
+    including plain text, can be used.
+
+    - AJAX is a web browser technology independent of web server software.
+
+    - A user can continue to use the application while the client program requests
+    information from the server in the background.
+
+    - Intuitive and natural user interaction. Clicking is not required, mouse movement
+    is a sufficient event trigger.
+
+    - Data-driven as opposed to page-driven.
+
+
+    # ## Rich Internet Application Technology
+
+
+    AJAX is the most viable Rich Internet Application (RIA) technology so far. It
+    is getting tremendous industry momentum and several tool kit and frameworks are
+    emerging. But at the same time, AJAX has browser incompatibility and it is supported
+    by JavaScript, which is hard to maintain and debug.
+
+
+    # ## AJAX is Based on Open Standards
+
+
+    AJAX is based on the following open standards:
+
+
+    +   - Browser-based presentation using HTML and Cascading Style Sheets (CSS).
+
+    - Data is stored in XML format and fetched from the server.
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_4_0.png)'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# Ajax
+
+
+    +   - Behind-the-scenes data fetches using XMLHttpRequest objects in the browser.
+
+    - JavaScript to make everything happen.'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# 2. TECHNOLOGIES USED IN AJAX
+
+
+    AJAX cannot work independently. It is used in combination with other technologies
+    to create interactive webpages.
+
+
+    # JavaScript
+
+
+    +   - Loosely typed scripting language.
+
+    - JavaScript function is called when an event occurs in a page.
+
+    - Glue for the whole AJAX operation.
+
+
+    # DOM
+
+
+    +   - API for accessing and manipulating structured documents.
+
+    - Represents the structure of XML and HTML documents.
+
+
+    # CSS
+
+
+    +   - Allows for a clear separation of the presentation style from the content
+    and may be changed programmatically by JavaScript.
+
+
+    # XMLHttpRequest
+
+
+    +   - JavaScript object that performs asynchronous interaction with the server.'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: 'Here is a list of some famous web applications that make use of AJAX.
+
+
+    # ## Google Maps
+
+
+    A user can drag an entire map by using the mouse, rather than clicking on a button.
+
+
+    +   * http://maps.google.com/
+
+
+    # ## Google Suggest
+
+
+    As you type, Google offers suggestions. Use the arrow keys to navigate the results.
+
+
+    +   * http://www.google.com/webhp?complete=1&hl=en
+
+
+    # ## Gmail
+
+
+    Gmail is a webmail built on the idea that emails can be more intuitive, efficient,
+    and useful.
+
+
+    +   * http://gmail.com/
+
+
+    # ## Yahoo Maps (new)
+
+
+    Now it''s even easier and more fun to get where you''re going!
+
+
+    +   * http://maps.yahoo.com/
+
+
+    # ## Difference between AJAX and Conventional CGI Program
+
+
+    Try these two examples one by one and you will feel the difference. While trying
+    AJAX example, there is no discontinuity and you get the response very quickly,
+    but when you try the standard GCI example, you would have to wait for the response
+    and your page also gets refreshed.
+
+
+    # ### AJAX Example:
+
+
+    [ ] \* [ ] = [ ] Submit'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: 'Ajax
+
+
+    # Standard Example:
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_8_0.png)
+
+
+    **NOTE:** We have given a more complex example in [AJAX Database](https://www.tutorialspoint.com/ajax/ajax_database.htm).
+
+
+    5
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_8_1.png)'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# # 4. BROWSER SUPPORT
+
+
+    All the available browsers cannot support AJAX. Here is a list of major browsers
+    that support AJAX.
+
+
+    +   - Mozilla Firefox 1.0 and above.
+
+
+    +   - Netscape version 7.1 and above.
+
+
+    +   - Apple Safari 1.2 and above.
+
+
+    +   - Microsoft Internet Explorer 5 and above.
+
+
+    +   - Konqueror.
+
+
+    +   - Opera 7.6 and above.
+
+
+    When you write your next application, do consider the browsers that do not support
+    AJAX.
+
+
+    > **NOTE**: When we say that a browser does not support AJAX, it simply means
+    that the browser does not support the creation of Javascript object - XMLHttpRequest
+    object.
+
+
+    # **Writing Browser Specific Code**
+
+
+    The simplest way to make your source code compatible with a browser is to use
+    try...catch blocks in your JavaScript.
+
+
+    ```
+
+    <html>
+
+    <body>
+
+    <script language="javascript" type="text/javascript">
+
+    <!--
+
+    //Browser Support Code
+
+    function ajaxFunction(){
+
+    var ajaxRequest; // The variable that makes Ajax possible!
+
+
+    try{
+
+    // Opera 8.0+, Firefox, Safari
+
+    ajaxRequest = new XMLHttpRequest();
+
+    }catch (e){
+
+    // Internet Explorer Browsers
+
+    ```'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "```\ntry{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n}catch\
+    \ (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n    }catch (e){\n        // Something went wrong\n        alert(\"Your browser\
+    \ broke!\");\n        return false;\n    }\n}\n\n// -->\n</script>\n<form name='myForm'>\n\
+    Name: <input type='text' name='username' /> <br />\nTime: <input type='text' name='time'\
+    \ />\n</form>\n</body>\n</html>\n```\n\nIn the above JavaScript code, we try three\
+    \ times to make our XMLHttpRequest object. Our first attempt:\n\n+   - ajaxRequest\
+    \ = new XMLHttpRequest();\n\nIt is for Opera 8.0+, Firefox, and Safari browsers.\
+    \ If it fails, we try two more times to make the correct object for an Internet\
+    \ Explorer browser with:\n\n+   - ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\"\
+    );\n- ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n\nIf it doesn't\
+    \ work, then we can use a very outdated browser that doesn't support XMLHttpRequest,\
+    \ which also means it doesn't support AJAX.\n\nMost likely though, our variable\
+    \ ajaxRequest will now be set to whatever *XMLHttpRequest* standard the browser\
+    \ uses and we can start sending data to the server. The step-wise AJAX workflow\
+    \ is explained in the next chapter."
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "# 5. AJAX IN ACTION\n\nThis chapter gives you a clear picture of the exact\
+    \ steps of AJAX operation.\n\n# Steps of AJAX Operation\n\n+   1. A client event\
+    \ occurs.\n2. An XMLHttpRequest object is created.\n3. The XMLHttpRequest object\
+    \ is configured.\n4. The XMLHttpRequest object makes an asynchronous request to\
+    \ the Webserver.\n5. The Webserver returns the result containing XML document.\n\
+    6. The XMLHttpRequest object calls the callback() function and processes the result.\n\
+    7. The HTML DOM is updated.\n\nLet us take these steps one by one.\n\n# A Client\
+    \ Event Occurs\n\n+   - A JavaScript function is called as the result of an event.\n\
+    - Example: _validateUserId()_ JavaScript function is mapped as an event handler\
+    \ to an _onkeyup_ event on input form field whose id is set to \"userid\".\n-\
+    \ `<input type=\"text\" size=\"20\" id=\"userid\" name=\"id\" onkeyup=\"validateUserId();\"\
+    >`.\n\n# The XMLHttpRequest Object is Created\n\n```\nvar ajaxRequest;  // The\
+    \ variable that makes Ajax possible!\nfunction ajaxFunction(){\n    try{\n   \
+    \     // Opera 8.0+, Firefox, Safari\n        ajaxRequest = new XMLHttpRequest();\n\
+    \    }catch (e){\n        // Internet Explorer Browsers\n```"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "```\ntry{\n    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n}catch\
+    \ (e) {\n    try{\n        ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+    );\n    }catch (e){\n        // Something went wrong\n        alert(\"Your browser\
+    \ broke!\");\n        return false;\n    }\n}\n}\n```\n\n# The XMLHttpRequest\
+    \ Object is Configured\n\nIn this step, we will write a function that will be\
+    \ triggered by the client event and a callback function processRequest() will\
+    \ be registered.\n\n```\nfunction validateUserId() {\n    ajaxFunction();\n  \
+    \  // Here processRequest() is the callback function.\n    ajaxRequest.onreadystatechange\
+    \ = processRequest;\n    if (!target) target = document.getElementById(\"userid\"\
+    );\n    var url = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"\
+    GET\", url, true);\n    ajaxRequest.send(null);\n}\n```\n\n# Making Asynchronous\
+    \ Request to the Webserver\n\nSource code is available in the above piece of code.\
+    \ Code written in bold typeface is responsible to make a request to the webserver.\
+    \ This is all being done using the XMLHttpRequest object *ajaxRequest*.\n\n![](img/713147fda427ad275cc07fad320cb449_12_0.png)"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "```\nfunction validateUserId() {\n    ajaxFunction();\n    // Here processRequest()\
+    \ is the callback function.\n    ajaxRequest.onreadystatechange = processRequest;\n\
+    \n    if (!target) target = document.getElementById(\"userid\");\n    var url\
+    \ = \"validate?id=\" + escape(target.value);\n    ajaxRequest.open(\"GET\", url,\
+    \ true);\n    ajaxRequest.send(null);\n}\n```\n\nAssume you enter *Zara* in the\
+    \ userid box, then in the above request, the URL is set to \"validate?id=Zara\"\
+    .\n\n# Webserver Returns the Result Containing XML Document\n\nYou can implement\
+    \ your server-side script in any language, however its logic should be as follows.\n\
+    \n+   - Get a request from the client.\n- Parse the input from the client.\n-\
+    \ Do required processing.\n- Send the output to the client.\n\nIf we assume that\
+    \ you are going to write a servlet, then here is the piece of code.\n\n```\npublic\
+    \ void doGet(HttpServletRequest request, HttpServletResponse response)\n    throws\
+    \ IOException, ServletException\n{\n    String targetId = request.getParameter(\"\
+    id\");\n\n    if ((targetId != null) && !accounts.containsKey(targetId.trim()))\n\
+    \    {\n        response.setContentType(\"text/xml\");\n        response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n        response.getWriter().write(\"true\");\n\
+    \    }\n}\n```"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "```\nelse\n{\n    response.setContentType(\"text/xml\");\n    response.setHeader(\"\
+    Cache-Control\", \"no-cache\");\n    response.getWriter().write(\"false\");\n\
+    }\n}\n```\n\n# Callback Function processRequest() is Called\n\nThe XMLHttpRequest\
+    \ object was configured to call the processRequest() function when there is a\
+    \ state change to the readyState of the XMLHttpRequest object. Now this function\
+    \ will receive the result from the server and will do the required processing.\
+    \ As in the following example, it sets a variable message on true or false based\
+    \ on the returned value from the Webserver.\n\n```\nfunction processRequest()\
+    \ {\n  if (req.readyState == 4) {\n    if (req.status == 200) {\n      var message\
+    \ = ...;\n\n... \n}\n```\n\n# The HTML DOM is Updated\n\nThis is the final step\
+    \ and in this step, your HTML page will be updated. It happens in the following\
+    \ way:\n\n+   - JavaScript gets a reference to any element in a page using DOM\
+    \ API.\n- The recommended way to gain a reference to an element is to call.\n\
+    - JavaScript may now be used to modify the element's attributes; modify the element's\
+    \ style properties; or add, remove, or modify the child elements. Here is an example:\n\
+    \n```\ndocument.getElementById(\"userIdMessage\"),\n\n// where \"userIdMessage\"\
+    \ is the ID attribute\n\n// of an element appearing in the HTML document\n```\n\
+    \n```\n<script type=\"text/javascript\">\n```"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "# Ajax\n\n```\n<!--\nfunction setMessageUsingDOM(message) {\n  var userMessageElement\
+    \ =\n      document.getElementById(\"userIdMessage\");\n  var messageText;\n \
+    \ if (message == \"false\") {\n    userMessageElement.style.color = \"red\";\n\
+    \    messageText = \"Invalid User Id\";\n  } else {\n    userMessageElement.style.color\
+    \ = \"green\";\n    messageText = \"Valid User Id\";\n  }\n  var messageBody =\
+    \ document.createTextNode(messageText);\n\n\n  // if the messageBody element has\
+    \ been created simple\n  // replace it otherwise append the new element\n\n\n\
+    \  if (userMessageElement.childNodes[0]) {\n    userMessageElement.replaceChild(messageBody,\n\
+    \    userMessageElement.childNodes[0]);\n  } else {\n    userMessageElement.appendChild(messageBody);\n\
+    \  }\n}\n-->\n</script>\n<body>\n<div id=\"userIdMessage\"><div>\n</body>\n```\n\
+    \nIf you have understood the above-mentioned seven steps, then you are almost\
+    \ done with AJAX. In the next chapter, we will see *XMLHttpRequest* object in\
+    \ detail."
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "# 6. XMLHTTPREQUEST\n\nThe XMLHttpRequest object is the key to AJAX. It has\
+    \ been available ever since Internet Explorer 5.5 was released in July 2000, but\
+    \ was not fully discovered until AJAX and Web 2.0 in 2005 became popular.\n\n\
+    XMLHttpRequest (XHR) is an API that can be used by JavaScript, JScript, VBScript,\
+    \ and other web browser scripting languages to transfer and manipulate XML data\
+    \ to and from a webserver using HTTP, establishing an independent connection channel\
+    \ between a webpage's Client-Side and Server-Side.\n\nThe data returned from XMLHttpRequest\
+    \ calls will often be provided by back-end databases. Besides XML, XMLHttpRequest\
+    \ can be used to fetch data in other formats, e.g. JSON or even plain text.\n\n\
+    You already have seen a couple of examples on how to create an XMLHttpRequest\
+    \ object.\n\nListed below are some of the methods and properties that you have\
+    \ to get familiar with.\n\n# XMLHttpRequest Methods\n\n+   - **abort()**\n  Cancels\
+    \ the current request.\n- **getAllResponseHeaders()**\n  Returns the complete\
+    \ set of HTTP headers as a string.\n- **getResponseHeader( headerName )**\n  Returns\
+    \ the value of the specified HTTP header.\n- **open( method, URL )**\n- **open(\
+    \ method, URL, async )**\n- **open( method, URL, async, userName )**\n- **open(\
+    \ method, URL, async, userName, password )**\n  Specifies the method, URL, and\
+    \ other optional attributes of a request."
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "The method parameter can have a value of \"GET\", \"POST\", or \"HEAD\". Other\
+    \ HTTP methods such as \"PUT\" and \"DELETE\" (primarily used in REST applications)\
+    \ may be possible.\nThe \"async\" parameter specifies whether the request should\
+    \ be handled asynchronously or not. \"true\" means that the script processing\
+    \ carries on after the send() method without waiting for a response, and \"false\"\
+    \ means that the script waits for a response before continuing script processing.\n\
+    \n+   * **send( content )**\n    Sends the request.\n* **setRequestHeader( label,\
+    \ value )**\n    Adds a label/value pair to the HTTP header to be sent.\n\n# XMLHttpRequest\
+    \ Properties\n\n+   * **onreadystatechange**\n    An event handler for an event\
+    \ that fires at every state change.\n* **readyState**\n    The readyState property\
+    \ defines the current state of the XMLHttpRequest object.\n\nThe following table\
+    \ provides a list of the possible values for the readyState property:\n\n| State\
+    \ | Description |\n| :---: | :--- |\n| 0 | The request is not initialized. |\n\
+    | 1 | The request has been set up. |\n| 2 | The request has been sent. |\n| 3\
+    \ | The request is in process. |\n| 4 | The request is completed. |\n\n**readyState\
+    \ = 0** – After you have created the XMLHttpRequest object, but before you have\
+    \ called the open() method."
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "**readyState = 1** After you have called the open() method, but before you\
+    \ have called send().\n\n**readyState = 2** After you have called send().\n\n\
+    **readyState = 3** After the browser has established a communication with the\
+    \ server, but before the server has completed the response.\n\n**readyState =\
+    \ 4** After the request has been completed, and the response data has been completely\
+    \ received from the server.\n\n+   - **responseText**\n  Returns the response\
+    \ as a string.\n\n+   - **responseXML**\n  Returns the response as XML. This property\
+    \ returns an XML document object, which can be examined and parsed using the W3C\
+    \ DOM node tree methods and properties.\n\n+   - **status**\n  Returns the status\
+    \ as a number (e.g., 404 for \"Not Found\" and 200 for \"OK\").\n\n+   - **statusText**\n\
+    \  Returns the status as a string (e.g., \"Not Found\" or \"OK\")."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "# 7. DATABASE OPERATIONS\n\nTo clearly illustrate how easy it is to access\
+    \ information from a database using AJAX, we are going to build MySQL queries\
+    \ on the fly and display the results on \"ajax.html\". But before we proceed,\
+    \ let us do the ground work. Create a table using the following command.\n\n**NOTE**:\
+    \ We are assuming you have sufficient privilege to perform the following MySQL\
+    \ operations.\n\n```\nCREATE TABLE 'ajax_example' (\n  'name' varchar(50) NOT\
+    \ NULL,\n  'age' int(11) NOT NULL,\n  'sex' varchar(1) NOT NULL,\n  'wpm' int(11)\
+    \ NOT NULL,\n  PRIMARY KEY  ('name')\n)\n```\n\nNow dump the following data into\
+    \ this table using the following SQL statements:\n\n```\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Jerry', 120, 'm', 20);\nINSERT INTO 'ajax_example' VALUES ('Regis',\
+    \ 75, 'm', 44);\nINSERT INTO 'ajax_example' VALUES ('Frank', 45, 'm', 87);\nINSERT\
+    \ INTO 'ajax_example' VALUES ('Jill', 22, 'f', 72);\nINSERT INTO 'ajax_example'\
+    \ VALUES ('Tracy', 27, 'f', 0);\nINSERT INTO 'ajax_example' VALUES ('Julie', 35,\
+    \ 'f', 90);\n```\n\n# Client Side HTML File\n\nNow let us have our client side\
+    \ HTML file, which is ajax.html, and it will have the following code:\n\n```\n\
+    <html>\n<body>\n<script language=\"javascript\" type=\"text/javascript\">\n<!--\n\
+    //Browser Support Code\n```\n\n16"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "# Ajax\n\n```\nfunction ajaxFunction(){\n  var ajaxRequest;  // The variable\
+    \ that makes Ajax possible!\n\ntry{\n  // Opera 8.0+, Firefox, Safari\n  ajaxRequest\
+    \ = new XMLHttpRequest();\n}catch (e){\n  // Internet Explorer Browsers\n  try{\n\
+    \    ajaxRequest = new ActiveXObject(\"Msxml2.XMLHTTP\");\n  }catch (e) {\n  \
+    \  try{\n      ajaxRequest = new ActiveXObject(\"Microsoft.XMLHTTP\");\n    }catch\
+    \ (e){\n      // Something went wrong\n      alert(\"Your browser broke!\");\n\
+    \      return false;\n    }\n  }\n}\n// Create a function that will receive data\n\
+    // sent from the server and will update\n// div section in the same page.\najaxRequest.onreadystatechange\
+    \ = function(){\n  if(ajaxRequest.readyState == 4){\n    var ajaxDisplay = document.getElementById('ajaxDiv');\n\
+    \    ajaxDisplay.innerHTML = ajaxRequest.responseText;\n  }\n}\n// Now get the\
+    \ value from user and pass it to\n// server script.\nvar age = document.getElementById('age').value;\n\
+    var wpm = document.getElementById('wpm').value;\nvar sex = document.getElementById('sex').value;\n\
+    ```"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "# Ajax\n\n```\nvar queryString = \"?age=\" + age ;\nqueryString += \"&wpm=\"\
+    \ + wpm + \"&sex=\" + sex;\najaxRequest.open(\"GET\", \"ajax-example.php\" + queryString,\
+    \ true);\najaxRequest.send(null);\n}\n//--> \n</script>\n<form name='myForm'>\n\
+    Max Age: <input type='text' id='age' /> <br />\nMax WPM: <input type='text' id='wpm'\
+    \ />\n<br />\nSex: <select id='sex'>\n<option value=\"m\">m</option>\n<option\
+    \ value=\"f\">f</option>\n</select>\n<input type='button' onclick='ajaxFunction()'\
+    \ value='Query MySQL'/>\n</form>\n<div id='ajaxDiv'>Your result will display here</div>\n\
+    </body>\n</html>\n```\n\n**NOTE:** The way of passing variables in the Query is\
+    \ according to HTTP standard and have formA.\n\nURL?variable1=value1;&variable2=value2;\n\
+    \nThe above code will give you a screen as given below:"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: 'Ajax
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_22_0.png)
+
+
+    **NOTE:** This is a dummy screen.
+
+
+    # Server Side PHP File
+
+
+    Your client-side script is ready. Now, we have to write our server-side script,
+    which will fetch age, wpm, and sex from the database and will send it back to
+    the client. Put the following code into the file "ajax-example.php".
+
+
+    ```
+
+    <?php
+
+    $dbhost = "localhost";
+
+    $dbuser = "dbusername";
+
+    $dbpass = "dbpassword";
+
+    $dbname = "dbname";
+
+
+    //Connect to MySQL Server
+
+    mysql_connect($dbhost, $dbuser, $dbpass);
+
+
+    //Select Database
+
+    mysql_select_db($dbname) or die(mysql_error());
+
+
+    // Retrieve data from Query String
+
+    $age = $_GET[''age''];
+
+    $sex = $_GET[''sex''];
+
+    $wpm = $_GET[''wpm''];
+
+
+    // Escape User Input to help prevent SQL Injection
+
+    ```'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: "# Ajax\n\n```\n$age = mysql_real_escape_string($age);\n$sex = mysql_real_escape_string($sex);\n\
+    $wpm = mysql_real_escape_string($wpm);\n\n//build query\n$query = \"SELECT * FROM\
+    \ ajax_example WHERE sex = '$sex'\";\nif(is_numeric($age))\n    $query .= \" AND\
+    \ age <= $age\";\nif(is_numeric($wpm))\n    $query .= \" AND wpm <= $wpm\";\n\n\
+    //Execute query\n$qry_result = mysql_query($query) or die(mysql_error());\n\n\
+    //Build Result String\n$display_string = \"<table>\";\n$display_string .= \"<tr>\"\
+    ;\n$display_string .= \"<th>Name</th>\";\n$display_string .= \"<th>Age</th>\"\
+    ;\n$display_string .= \"<th>Sex</th>\";\n$display_string .= \"<th>WPM</th>\";\n\
+    $display_string .= \"</tr>\";\n\n// Insert a new row in the table for each person\
+    \ returned\nwhile($row = mysql_fetch_array($qry_result)){\n    $display_string\
+    \ .= \"<tr>\";\n    $display_string .= \"<td>$row[name]</td>\";\n    $display_string\
+    \ .= \"<td>$row[age]</td>\";\n    $display_string .= \"<td>$row[sex]</td>\";\n\
+    \    $display_string .= \"<td>$row[wpm]</td>\";\n    $display_string .= \"</tr>\"\
+    ;\n}\n\necho \"Query: \" . $query . \"<br />\";\n```"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# Ajax
+
+
+    ```
+
+    $display_string .= "</table>";
+
+    echo $display_string;
+
+    ?>
+
+    ```
+
+
+    Now try by entering a valid value (e.g., 120) in *Max Age* or any other box and
+    then click Query MySQL button.
+
+
+    ![](img/713147fda427ad275cc07fad320cb449_24_0.png)
+
+
+    If you have successfully completed this lesson, then you know how to use MySQL,
+    PHP, HTML, and Javascript in tandem to write AJX applications.'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# 8. SECURITY
+
+
+    AJAX Security: Server Side
+
+
+    +   * AJAX-based Web applications use the same server-side security schemes of
+    regular Web applications.
+
+    * You specify authentication, authorization, and data protection requirements
+    in your web.xml file (declarative) or in your program (programmatic).
+
+    * AJAX-based Web applications are subject to the same security threats as regular
+    Web applications.
+
+
+    AJAX Security: Client Side
+
+
+    +   * JavaScript code is visible to a user/hacker. Hacker can use JavaScript code
+    for inferring server-side weaknesses.
+
+    * JavaScript code is downloaded from the server and executed ("eval") at the client
+    and can compromise the client by mal-intended code.
+
+    * Downloaded JavaScript code is constrained by the sand-box security model and
+    can be relaxed for signed JavaScript.'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# 9. CURRENT ISSUES
+
+
+    AJAX is growing very fast and that is the reason that it contains many issues
+    with it. We hope with the passes of time, they will be resolved and AJAX will
+    become ideal for web applications. We are listing down a few issues that AJAX
+    currently suffers from.
+
+
+    Complexity is increased
+
+
+    +   - Server-side developers will need to understand that presentation logic will
+    be required in the HTML client pages as well as in the server-side logic.
+
+    - Page developers must have JavaScript technology skills.
+
+
+    AJAX-based applications can be difficult to debug, test, and maintain
+
+
+    +   - JavaScript is hard to test - automatic testing is hard.
+
+    - Weak modularity in JavaScript.
+
+    - Lack of design patterns or best practice guidelines yet.
+
+
+    Toolkits/Frameworks are not mature yet
+
+
+    +   - Most of them are in beta phase.
+
+
+    No standardization of the XMLHttpRequest yet
+
+
+    +   - Future version of IE will address this.
+
+
+    No support of XMLHttpRequest in old browsers
+
+
+    +   - Iframe will help.
+
+
+    JavaScript technology dependency and incompatibility
+
+
+    +   - Must be enabled for applications to function.
+
+    - Still some browser incompatibilities exist.
+
+
+    JavaScript code is visible to a hacker
+
+
+    +   - Poorly designed JavaScript code can invite security problems.'
+  merge: -1
+  pgno: 26
+toc:
+- - '##'
+  - 1. 概述
+- - '###'
+  - 富互联网应用技术
+- - '###'
+  - AJAX 基于开放标准
+- - '##'
+  - 2. AJAX 中使用的技术
+- - '###'
+  - JavaScript
+- - '###'
+  - DOM
+- - '###'
+  - CSS
+- - '###'
+  - XMLHttpRequest
+- - '##'
+  - 3. 示例
+- - '###'
+  - Google 地图
+- - '###'
+  - Google 建议
+- - '###'
+  - Gmail
+- - '###'
+  - Yahoo 地图（新版）
+- - '###'
+  - AJAX 与传统 CGI 程序的区别
+- - '####'
+  - AJAX 示例：
+- - '###'
+  - 标准示例：
+- - '##'
+  - 4. 浏览器支持
+- - '###'
+  - 编写浏览器特定代码
+- - '##'
+  - 5. AJAX 实战
+- - '###'
+  - AJAX 操作步骤
+- - '###'
+  - 发生客户端事件
+- - '###'
+  - 创建 XMLHttpRequest 对象
+- - '###'
+  - 配置 XMLHttpRequest 对象
+- - '###'
+  - 向 Web 服务器发出异步请求
+- - '###'
+  - Web 服务器返回包含 XML 文档的结果
+- - '###'
+  - 调用回调函数 processRequest()
+- - '###'
+  - 更新 HTML DOM
+- - '##'
+  - 6. XMLHttpRequest
+- - '###'
+  - XMLHttpRequest 方法
+- - '###'
+  - XMLHttpRequest 属性
+- - '##'
+  - 7. 数据库操作
+- - '###'
+  - 客户端 HTML 文件
+- - '###'
+  - 服务器端 PHP 文件
+- - '##'
+  - 8. 安全性
+- - '###'
+  - AJAX 安全性：服务器端
+- - '###'
+  - AJAX 安全性：客户端
+- - '##'
+  - 9. 当前问题
+- - '###'
+  - 复杂性增加
+- - '###'
+  - 基于 AJAX 的应用程序难以调试、测试和维护
+- - '###'
+  - 工具包/框架尚不成熟
+- - '###'
+  - XMLHttpRequest 尚未标准化
+- - '###'
+  - 旧版浏览器不支持 XMLHttpRequest
+- - '###'
+  - JavaScript 技术依赖性和不兼容性
+- - '###'
+  - JavaScript 代码对黑客可见
