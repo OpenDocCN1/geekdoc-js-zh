@@ -1,0 +1,2 @@
++   [Vista 小工具创建指南：使用 HTML、CSS 和 JavaScript（附 RSS、Ajax、ActiveX (COM) 和 Silverlight 示例）](README.md)
++   [Vista 小工具创建指南：使用 HTML、CSS 和 JavaScript（附 RSS、Ajax、ActiveX (COM) 和 Silverlight 示例）](creating-vista-gadgets-using-html-css-and-javascript-with-ex.md)
