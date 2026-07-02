@@ -1,0 +1,2 @@
++   [编程面试 1000 问：涵盖 C#、C++、HTML、CSS、JQuery、JavaScript、JAVA、Linux、PHP、MySQL、Python、Visual Basic 课程考查](README.md)
++   [编程面试 1000 问：涵盖 C#、C++、HTML、CSS、JQuery、JavaScript、JAVA、Linux、PHP、MySQL、Python、Visual Basic 课程考查](coding-interview-1000-questions-answers-including-examinatio.md)

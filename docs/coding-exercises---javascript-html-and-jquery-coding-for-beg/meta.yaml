@@ -1,0 +1,4407 @@
+groups:
+- md: " ## JQUERY CODING EXERCISES\n\nCODING FOR BEGINNERS WITH HANDS ON PROJECTS\n\
+    \nWRITTEN BY\nJJ TAM\n\nEDITED BY\nTAM SEL\n\n## HTML CODING EXERCISES\n\nCODING\
+    \ FOR BEGINNERS WITH HANDS ON PROJECTS\n\nWRITTEN BY\nJJ TAM\n\nEDITED BY\nTAM\
+    \ SEL\n\n## JAVASCRIPT CODING EXERCISES\n\nCODING FOR BEGINNERS WITH HANDS ON\
+    \ PROJECTS\n\nWRITTEN BY\nJJ TAM\n\nEDITED BY\nTAM SEL\n\n---\n\n## CODING EXERCISES\
+    \ JAVASCRIPT, HTML AND JQUERY\n\nCODING FOR BEGINNERS JJ TAM\n\n---\n\n## JAVASCRIPT\
+    \ CODING EXERCISES\n\n- DISPLAY THE CURRENT DAY AND TIME\n- PRINT THE CONTENTS\n\
+    - DISPLAY THE CURRENT DATE\n- FIND THE AREA OF A TRIANGLE\n- CHECK WHETHER A GIVEN\
+    \ YEAR IS A LEAP YEAR\n- CALCULATE MULTIPLICATION AND DIVISION\n- CONVERT TEMPERATURES\n\
+    - FIND THE LARGEST\n- REVERSE A GIVEN STRING\n- REPLACE EVERY CHARACTER\n- CAPITALIZE\
+    \ THE FIRST LETTER\n\n## HTML CODING EXERCISES\n\n- COMMENT HTML TAGS\n- CREATE\
+    \ A HYPERLINK IN HTML\n- DOWNLOAD A FILE\n- CREATE A LINK\n- CREATE A NOFOLLOW\
+    \ LINK\n- OPEN A LINKED DOCUMENT\n\n- CORRECT WAY TO WRITE ADDRESS\n- SPECIFY\
+    \ AN ALTERNATE TEXT\n- CREATE AN HTML DOCUMENT\n- CREATE AN HTML DOCUMENT\n- TO\
+    \ ADD CONTROLS TO AN AUDIO\n- WRITE BOLD TEXT USING HTML TAGS\n- TO SPECIFY THE\
+    \ BASE URL\n- ISOLATE A PART OF TEXT\n- DEFINE A SECTION\n- DEFINE THE DOCUMENT'S\
+    \ BODY\n- DEFINES A SINGLE LINE BREAK\n- DEFINE A CLICKABLE BUTTON\n- SPECIFY\
+    \ THAT A BUTTON\n- SPECIFY A BUTTON SHOULD BE DISABLED\n- SPECIFY ONE OR MORE\
+    \ FORMS\n- SPECIFY WHERE TO SEND THE FORM-DATA\n- SEND THE FORM-DATA\n- SPECIFY\
+    \ WHERE TO DISPLAY\n- SPECIFY A NAME FOR THE BUTTON\n\n## JQUERY CODING EXERCISES\n\
+    \n- CHECK JQUERY IS LOADED\n- SCROLL TO THE TOP\n- DISABLE RIGHT CLICK MENU\n\
+    - BLINK TEXT\n- CREATE TABLE EFFECT\n- MAKE FIRST WORD BOLD\n- UNDERLINE ALL THE\
+    \ WORDS\n- CHANGE BUTTON TEXT USING JQUERY\n- ADD OPTIONS TO A DROP-DOWN LIST\n\
+    - SET BACKGROUND-IMAGE\n- DELETE ALL TABLE ROWS EXCEPT FIRST ONE\n- DISABLE A\
+    \ LINK\n- CHANGE A CSS CLASS\n- SET THE BACKGROUND COLOR\n- ADD THE PREVIOUS SET\
+    \ OF ELEMENTS\n- ADD A SPECIFIED CLASS\n\n---\n\n## JAVASCRIPT CODING EXERCISES\n\
+    \n### CODING FOR BEGINNERS\n\nJJ TAM\n\n---\n\n## JAVASCRIPT CODING EXERCISES\n\
+    \n## Display the current day and time\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=\"utf-8\">\n<title>JavaScript current day and time</title>\n\
+    </head>\n<body></body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\nvar today\
+    \ = new Date();\nvar day = today.getDay();\nvar daylist = [\"Sunday\",\"Monday\"\
+    ,\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"];\nconsole.log(\"\
+    Today is : \" + daylist[day] + \".\");\nvar hour = today.getHours();\nvar minute\
+    \ = today.getMinutes();\nvar second = today.getSeconds();\nvar prepand = (hour\
+    \ >= 12)? \" PM \":\" AM \" ;\nhour = (hour >= 12)? hour - 12: hour;\nif (hour===0\
+    \ && prepand===' PM ')\n{\nif (minute===0 && second===0)\n{\nhour=12;\nprepand='\
+    \ Noon';\n}\nelse\n{\nhour=12;\nprepand=' PM';\n}\n}\nif (hour===0 && prepand==='\
+    \ AM ')\n{\nif (minute===0 && second===0)\n{\nhour=12;\nprepand=' Midnight';\n\
+    }\nelse\n{\nhour=12;\nprepand=' AM';\n}\n}\nconsole.log(\"Current Time : \"+hour\
+    \ + prepand + \" : \" + minute + \" : \" + second);\n```\n\n## Print the contents\
+    \ of the current window\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <meta charset=utf-8 />\n<title>Print the current page.</title>\n</head>\n<body>\n\
+    <p></p>\n<p>Click the button to print the current page.</p>\n<button onclick=\"\
+    print_current_page()\">Print this page</button>\n</body>\n</html>\n```\n\n###\
+    \ JAVASCRIPT CODE\n\n```\nfunction print_current_page()\n{\nwindow.print();\n\
+    }\n```\n\n## Display the current date\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=\"utf-8\">\n<title>Write a JavaScript program to\
+    \ get the current date.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n###\
+    \ JAVASCRIPT CODE\n\n```\nvar today = new Date();\nvar dd = today.getDate();\n\
+    \nvar mm = today.getMonth()+1;\nvar yyyy = today.getFullYear();\nif(dd<10)\n{\n\
+    \    dd='0'+dd;\n}\n\nif(mm<10)\n{\n    mm='0'+mm;\n}\ntoday = mm+'-'+dd+'-'+yyyy;\n\
+    console.log(today);\ntoday = mm+'/'+dd+'/'+yyyy;\nconsole.log(today);\ntoday =\
+    \ dd+'-'+mm+'-'+yyyy;\nconsole.log(today);\ntoday = dd+'/'+mm+'/'+yyyy;\nconsole.log(today);\n\
+    ```\n\n## Find the area of a triangle\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=utf-8 />\n<title>The area of a triangle</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\nvar side1\
+    \ = 5;\nvar side2 = 6;\nvar side3 = 7;\nvar s = (side1 + side2 + side3)/2;\nvar\
+    \ area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));\nconsole.log(area);\n```\n\
+    \n## Check whether a given year is a leap year\n\n### HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>Find Leap Year</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\nfunction\
+    \ leapyear(year)\n{\nreturn (year % 100 === 0) ? (year % 400 === 0) : (year %\
+    \ 4 === 0);\n}\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\nconsole.log(leapyear(1700));\n\
+    console.log(leapyear(1800));\nconsole.log(leapyear(100));\n```\n\n#### OUTPUT\n\
+    \n| true |\n| false |\n\ntrue\n\nfalse\n\nfalse\n\n## Calculate multiplication\
+    \ and division of two numbers\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=utf-8 />\n<title>JavaScript program to calculate multiplication\
+    \ and division of two numbers </title>\n<style type=\"text/css\">\nbody {margin:\
+    \ 30px;}\n</style>\n</head>\n<body>\n<form>\n1st Number : <input type=\"text\"\
+    \ id=\"firstNumber\" /><br>\n2nd Number: <input type=\"text\" id=\"secondNumber\"\
+    \ /><br>\n<input type=\"button\" onClick=\"multiplyBy()\" Value=\"Multiply\" />\n\
+    <input type=\"button\" onClick=\"divideBy()\" Value=\"Divide\" />\n</form>\n<p>The\
+    \ Result is : <br>\n<span id = \"result\"></span>\n</p>\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT CODE\n\n```\nfunction multiplyBy()\n{\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    \    document.getElementById(\"result\").innerHTML = num1 * num2;\n}\n```\n\n\
+    ```\nfunction divideBy()\n{\n    num1 = document.getElementById(\"firstNumber\"\
+    ).value;\n    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n#### OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_13_0.png)\n\
+    \n## Convert temperatures To and from celsius, Fahrenheit in JAVASCRIPT\n\n####\
+    \ HTML CODE\n\n```\n<!DOCTYPE html>\n  <html>\n  <head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>Write a JavaScript program to convert temperatures to and from celsius,\
+    \ fahrenheit</title>\n  </head>\n  <body>\n</body>\n  </html>\n```\n\n#### JAVASCRIPT\
+    \ CODE\n\n```\nfunction cToF(celsius)\n{\n  var cTemp = celsius;\n  var cToFahr\
+    \ = cTemp * 9 / 5 + 32;\n  var message = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n\
+    \    console.log(message);\n}\n\nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n\
+    \  var fToCel = (fTemp - 32) * 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel\
+    \ +'\\xB0C.';\n    console.log(message);\n}\ncToF(60);\nfToC(45);\n```\n\n####\
+    \ OUTPUT\n\n60°C is 140 °F.\n\n45°F is 7.222222222222222°C.\n\n## Find the largest\
+    \ Of three given integers\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to find the largest of three given integers.</title>\n\
+    </head>\n<body>\n\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\nfunction\
+    \ max_of_three(x, y, z)\n{\n  max_val = 0;\n  if (x > y)\n  {\n    max_val = x;\n\
+    \  } else\n  {\n    max_val = y;\n  }\n  if (z > max_val)\n  {\n    max_val =\
+    \ z;\n  }\n  return max_val;\n}\n\nconsole.log(max_of_three(1,0,1));\nconsole.log(max_of_three(0,-10,-20));\n\
+    console.log(max_of_three(1000,510,440));\n```\n\n#### Output:\n\n1\n\n0\n\n1000\n\
+    \n## Reverse a given string\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>JavaScript program to reverse a given string.</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\nfunction string_reverse(str)\n\
+    {\n    return str.split(\"\").reverse().join(\"\");\n}\n\nconsole.log(string_reverse(\"\
+    jsresource\"));\nconsole.log(string_reverse(\"www\"));\nconsole.log(string_reverse(\"\
+    JavaScript\"));\n```\n\n#### OUTPUT\n\necruosersj\nwww\ntpircSavaJ\n\n## Replace\
+    \ every character with the character following it in the alphabet\n\n### HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n\
+    \    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to replace every character in a given string with\n    the character\
+    \ following it in the alphabet.</title>\n</head>\n<body>\n\n</body>\n</html>\n\
+    ```\n\n### JAVASCRIPT CODE\n\n```\nfunction LetterChanges(text) {\n//https://goo.gl/R8gn7u\n\
+    var s = text.split(\"\");\nfor (var i = 0; i < s.length; i++) {\n    // Caesar\
+    \ cipher\n    switch(s[i]) {\n        case ' ':\n            break;\n        case\
+    \ 'z':\n            s[i] = 'a';\n            break;\n        case 'Z':\n     \
+    \       s[i] = 'A';\n            break;\n```"
+  mdcn: "\n## JQUERY 编程练习\n\n面向初学者的实践项目编程指南\n\n作者\nJJ TAM\n\n编辑\nTAM SEL\n\n## HTML\
+    \ 编程练习\n\n面向初学者的实践项目编程指南\n\n作者\nJJ TAM\n\n编辑\nTAM SEL\n\n## JAVASCRIPT 编程练习\n\n\
+    面向初学者的实践项目编程指南\n\n作者\nJJ TAM\n\n编辑\nTAM SEL\n\n---\n\n## JAVASCRIPT、HTML 和 JQUERY\
+    \ 编程练习\n\n面向初学者的编程指南 JJ TAM\n\n---\n\n## JAVASCRIPT 编程练习\n\n- 显示当前日期和时间\n- 打印内容\n\
+    - 显示当前日期\n- 计算三角形面积\n- 检查给定年份是否为闰年\n- 计算乘法和除法\n- 转换温度\n- 查找最大值\n- 反转给定字符串\n- 替换每个字符\n\
+    - 将首字母大写\n\n## HTML 编程练习\n\n- 为 HTML 标签添加注释\n- 在 HTML 中创建超链接\n- 下载文件\n- 创建链接\n\
+    - 创建nofollow链接\n- 打开链接文档\n\n- 正确书写地址的方式\n- 指定替代文本\n- 创建 HTML 文档\n- 创建 HTML 文档\n\
+    - 为音频添加控件\n- 使用 HTML 标签编写粗体文本\n- 指定基础 URL\n- 隔离部分文本\n- 定义一个区域\n- 定义文档主体\n- 定义单行换行\n\
+    - 定义可点击按钮\n- 指定一个按钮\n- 指定按钮应被禁用\n- 指定一个或多个表单\n- 指定表单数据的发送位置\n- 发送表单数据\n- 指定显示位置\n\
+    - 为按钮指定名称\n\n## JQUERY 编程练习\n\n- 检查是否已加载 JQUERY\n- 滚动到顶部\n- 禁用右键菜单\n- 文字闪烁效果\n\
+    - 创建表格效果\n- 将第一个单词加粗\n- 为所有单词添加下划线\n- 使用 JQUERY 更改按钮文本\n- 为下拉列表添加选项\n- 设置背景图片\n\
+    - 删除除第一行外的所有表格行\n- 禁用链接\n- 更改 CSS 类\n- 设置背景颜色\n- 添加前一组元素\n- 添加指定的类\n\n---\n\n\
+    ## JAVASCRIPT 编程练习\n\n### 面向初学者的编程指南\n\nJJ TAM\n\n---\n\n## JAVASCRIPT 编程练习\n\n\
+    ## 显示当前日期和时间\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"\
+    utf-8\">\n<title>JavaScript current day and time</title>\n</head>\n<body></body>\n\
+    </html>\n```\n\n### JAVASCRIPT 代码\n\n```\nvar today = new Date();\nvar day = today.getDay();\n\
+    var daylist = [\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"\
+    Friday\",\"Saturday\"];\nconsole.log(\"Today is : \" + daylist[day] + \".\");\n\
+    var hour = today.getHours();\nvar minute = today.getMinutes();\nvar second = today.getSeconds();\n\
+    var prepand = (hour >= 12)? \" PM \":\" AM \" ;\nhour = (hour >= 12)? hour - 12:\
+    \ hour;\nif (hour===0 && prepand===' PM ')\n{\nif (minute===0 && second===0)\n\
+    {\nhour=12;\nprepand=' Noon';\n}\nelse\n{\nhour=12;\nprepand=' PM';\n}\n}\nif\
+    \ (hour===0 && prepand===' AM ')\n{\nif (minute===0 && second===0)\n{\nhour=12;\n\
+    prepand=' Midnight';\n}\nelse\n{\nhour=12;\nprepand=' AM';\n}\n}\nconsole.log(\"\
+    Current Time : \"+hour + prepand + \" : \" + minute + \" : \" + second);\n```\n\
+    \n## 打印当前窗口的内容\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8\
+    \ />\n<title>Print the current page.</title>\n</head>\n<body>\n<p></p>\n<p>Click\
+    \ the button to print the current page.</p>\n<button onclick=\"print_current_page()\"\
+    >Print this page</button>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\n```\n\
+    function print_current_page()\n{\nwindow.print();\n}\n```\n\n## 显示当前日期\n\n###\
+    \ HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n\
+    <title>Write a JavaScript program to get the current date.</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\n```\nvar today = new Date();\n\
+    var dd = today.getDate();\n\nvar mm = today.getMonth()+1;\nvar yyyy = today.getFullYear();\n\
+    if(dd<10)\n{\n    dd='0'+dd;\n}\n\nif(mm<10)\n{\n    mm='0'+mm;\n}\ntoday = mm+'-'+dd+'-'+yyyy;\n\
+    console.log(today);\ntoday = mm+'/'+dd+'/'+yyyy;\nconsole.log(today);\ntoday =\
+    \ dd+'-'+mm+'-'+yyyy;\nconsole.log(today);\ntoday = dd+'/'+mm+'/'+yyyy;\nconsole.log(today);\n\
+    ```\n\n## 计算三角形面积\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta\
+    \ charset=utf-8 />\n<title>The area of a triangle</title>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\n### JAVASCRIPT 代码\n\n```\nvar side1 = 5;\nvar side2 = 6;\nvar\
+    \ side3 = 7;\nvar s = (side1 + side2 + side3)/2;\nvar area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));\n\
+    console.log(area);\n```\n\n## 检查给定年份是否为闰年\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=utf-8 />\n<title>Find Leap Year</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\n```\nfunction leapyear(year)\n\
+    {\nreturn (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\n\
+    console.log(leapyear(2000));\nconsole.log(leapyear(1700));\nconsole.log(leapyear(1800));\n\
+    console.log(leapyear(100));\n```\n\n#### 输出\n\n| true |\n| false |\n\ntrue\n\n\
+    false\n\nfalse\n\n## 计算两个数的乘法和除法\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=utf-8 />\n<title>JavaScript program to calculate multiplication\
+    \ and division of two numbers </title>\n<style type=\"text/css\">\nbody {margin:\
+    \ 30px;}\n</style>\n</head>\n<body>\n<form>\n1st Number : <input type=\"text\"\
+    \ id=\"firstNumber\" /><br>\n2nd Number: <input type=\"text\" id=\"secondNumber\"\
+    \ /><br>\n<input type=\"button\" onClick=\"multiplyBy()\" Value=\"Multiply\" />\n\
+    <input type=\"button\" onClick=\"divideBy()\" Value=\"Divide\" />\n</form>\n<p>The\
+    \ Result is : <br>\n<span id = \"result\"></span>\n</p>\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT 代码\n\n```\nfunction multiplyBy()\n{\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    \    document.getElementById(\"result\").innerHTML = num1 * num2;\n}\n```\n\n\
+    ```\nfunction divideBy()\n{\n    num1 = document.getElementById(\"firstNumber\"\
+    ).value;\n    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n#### 输出\n\n![](img/3c47590736460ba39948e1c4764537c3_13_0.png)\n\
+    \n## 在 JAVASCRIPT 中进行摄氏度和华氏度的相互转换\n\n#### HTML 代码\n\n```\n<!DOCTYPE html>\n  <html>\n\
+    \  <head>\n  <meta charset=\"utf-8\">\n  <title>Write a JavaScript program to\
+    \ convert temperatures to and from celsius, fahrenheit</title>\n  </head>\n  <body>\n\
+    </body>\n  </html>\n```\n\n#### JAVASCRIPT 代码\n\n```\nfunction cToF(celsius)\n\
+    {\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n  var message\
+    \ = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n    console.log(message);\n}\n\
+    \nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp\
+    \ - 32) * 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel +'\\xB0C.';\n  \
+    \  console.log(message);\n}\ncToF(60);\nfToC(45);\n```\n\n#### 输出\n\n60°C is 140\
+    \ °F.\n\n45°F is 7.222222222222222°C.\n\n## 查找三个给定整数中的最大值\n\n### HTML 代码\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>JavaScript program to find the largest\
+    \ of three given integers.</title>\n</head>\n<body>\n\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT 代码\n\n```\nfunction max_of_three(x, y, z)\n{\n  max_val = 0;\n\
+    \  if (x > y)\n  {\n    max_val = x;\n  } else\n  {\n    max_val = y;\n  }\n \
+    \ if (z > max_val)\n  {\n    max_val = z;\n  }\n  return max_val;\n}\n\nconsole.log(max_of_three(1,0,1));\n\
+    console.log(max_of_three(0,-10,-20));\nconsole.log(max_of_three(1000,510,440));\n\
+    ```\n\n#### 输出:\n\n1\n\n0\n\n1000\n\n## 反转给定字符串\n\n### HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n    <title>JavaScript program to reverse a\
+    \ given string.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ 代码\n\n```\nfunction string_reverse(str)\n{\n    return str.split(\"\").reverse().join(\"\
+    \");\n}\n\nconsole.log(string_reverse(\"jsresource\"));\nconsole.log(string_reverse(\"\
+    www\"));\nconsole.log(string_reverse(\"JavaScript\"));\n```\n\n#### 输出\n\necruosersj\n\
+    www\ntpircSavaJ\n\n## 用字母表中的下一个字符替换字符串中的每个字符\n\n### HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n    <title>JavaScript program to replace every\
+    \ character in a given string with\n    the character following it in the alphabet.</title>\n\
+    </head>\n<body>\n\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\n```\nfunction\
+    \ LetterChanges(text) {\n//https://goo.gl/R8gn7u\nvar s = text.split(\"\");\n\
+    for (var i = 0; i < s.length; i++) {\n    // Caesar cipher\n    switch(s[i]) {\n\
+    \        case ' ':\n            break;\n        case 'z':\n            s[i] =\
+    \ 'a';\n            break;\n        case 'Z':\n            s[i] = 'A';\n     \
+    \       break;\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # JQUE CODI EXER
+
+
+    CODING WITH HA
+
+
+    WRITTEN B
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL
+
+
+    # HTML CODIN EXERC
+
+
+    CODING FC
+
+    WITH HAND
+
+
+    WRITTEN BY
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL
+
+
+    # JAVASCRIPT CODING EXERCISES
+
+
+    CODING FOR BEGINNERS
+
+    WITH HANDS ON PROJECTS
+
+
+    JS
+
+
+    WRITTEN BY
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL'
+  - '[PAGE 1]
+
+
+    # CODING EXERCISES JAVASCRIPT, HTML AND JQUERY
+
+
+    # CODING FOR BEGINNERS JJ TAM'
+  - '[PAGE 2]
+
+
+    # JAVASCRIPT CODING EXERCISES
+
+
+    +   - DISPLAY THE CURRENT DAY AND TIME
+
+    - PRINT THE CONTENTS
+
+    - DISPLAY THE CURRENT DATE
+
+    - FIND THE AREA OF A TRIANGLE
+
+    - CHECK WHETHER A GIVEN YEAR IS A LEAP YEAR
+
+    - CALCULATE MULTIPLICATION AND DIVISION
+
+    - CONVERT TEMPERATURES
+
+    - FIND THE LARGEST
+
+    - REVERSE A GIVEN STRING
+
+    - REPLACE EVERY CHARACTER
+
+    - CAPITALIZE THE FIRST LETTER
+
+
+    # HTML CODING EXERCISES
+
+
+    +   - COMMENT HTML TAGS
+
+    - CREATE A HYPERLINK IN HTML
+
+    - DOWNLOAD A FILE
+
+    - CREATE A LINK
+
+    - CREATE A NOFOLLOW LINK
+
+    - OPEN A LINKED DOCUMENT'
+  - '[PAGE 3]
+
+
+    # CORRECT WAY TO WRITE ADDRESS
+
+
+    # SPECIFY AN ALTERNATE TEXT
+
+
+    # CREATE AN HTML DOCUMENT
+
+
+    # CREATE AN HTML DOCUMENT
+
+
+    # TO ADD CONTROLS TO AN AUDIO
+
+
+    # WRITE BOLD TEXT USING HTML TAGS
+
+
+    # TO SPECIFY THE BASE URL
+
+
+    # ISOLATE A PART OF TEXT
+
+
+    # DEFINE A SECTION
+
+
+    # DEFINE THE DOCUMENT''S BODY
+
+
+    # DEFINES A SINGLE LINE BREAK
+
+
+    # DEFINE A CLICKABLE BUTTON
+
+
+    # SPECIFY THAT A BUTTON
+
+
+    # SPECIFY A BUTTON SHOULD BE DISABLED
+
+
+    # SPECIFY ONE OR MORE FORMS
+
+
+    # SPECIFY WHERE TO SEND THE FORM-DATA
+
+
+    # SEND THE FORM-DATA
+
+
+    # SPECIFY WHERE TO DISPLAY
+
+
+    # SPECIFY A NAME FOR THE BUTTON
+
+
+    # JQUERY CODING EXERCISES'
+  - '[PAGE 4]
+
+
+    # CHECK JQUERY IS LOADED
+
+
+    # SCROLL TO THE TOP
+
+
+    # DISABLE RIGHT CLICK MENU
+
+
+    # BLINK TEXT
+
+
+    # CREATE TABLE EFFECT
+
+
+    # MAKE FIRST WORD BOLD
+
+
+    # UNDERLINE ALL THE WORDS
+
+
+    # CHANGE BUTTON TEXT USING JQUERY
+
+
+    # ADD OPTIONS TO A DROP-DOWN LIST
+
+
+    # SET BACKGROUND-IMAGE
+
+
+    # DELETE ALL TABLE ROWS EXCEPT FIRST ONE
+
+
+    # DISABLE A LINK
+
+
+    # CHANGE A CSS CLASS
+
+
+    # SET THE BACKGROUND COLOR
+
+
+    # ADD THE PREVIOUS SET OF ELEMENTS
+
+
+    # ADD A SPECIFIED CLASS'
+  - '[PAGE 5]
+
+
+    # # JAVASCRIPT CODING EXERCISES
+
+
+    # ## CODING FOR BEGINNERS
+
+
+    JJ TAM'
+  - '[PAGE 6]
+
+
+    # JAVASCRIPT CODING EXERCISES
+
+
+    # Display the current day and time
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>JavaScript current day and time</title>
+
+    </head>
+
+    <body></body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    var today = new Date();
+
+    var day = today.getDay();
+
+    var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    console.log("Today is : " + daylist[day] + ".");
+
+    var hour = today.getHours();
+
+    var minute = today.getMinutes();
+
+    var second = today.getSeconds();
+
+    var prepand = (hour >= 12)? " PM ":" AM " ;
+
+    hour = (hour >= 12)? hour - 12: hour;
+
+    if (hour===0 && prepand==='' PM '')
+
+    {
+
+    if (minute===0 && second===0)
+
+    {
+
+    hour=12;
+
+    prepand='' Noon'';
+
+    }
+
+    else
+
+    ```'
+  - '[PAGE 7]
+
+
+    ```
+
+    {
+
+    hour=12;
+
+    prepand='' PM'';
+
+    }
+
+    }
+
+    if (hour===0 && prepand==='' AM '')
+
+    {
+
+    if (minute===0 && second===0)
+
+    {
+
+    hour=12;
+
+    prepand='' Midnight'';
+
+    }
+
+    else
+
+    {
+
+    hour=12;
+
+    prepand='' AM'';
+
+    }
+
+    }
+
+    console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+    ```'
+  - '[PAGE 8]
+
+
+    # Print the contents of the current window
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>Print the current page.</title>
+
+    </head>
+
+    <body>
+
+    <p></p>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="print_current_page()">Print this page</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    function print_current_page()
+
+    {
+
+    window.print();
+
+    }
+
+    ```'
+  - "[PAGE 9]\n\n# # Display the current date\n\n# ## HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Write a JavaScript program\
+    \ to get the current date.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n\
+    # ## JAVASCRIPT CODE\n\n```\nvar today = new Date();\nvar dd = today.getDate();\n\
+    \nvar mm = today.getMonth()+1;\nvar yyyy = today.getFullYear();\nif(dd<10)\n{\n\
+    \    dd='0'+dd;\n}\n\nif(mm<10)\n{\n    mm='0'+mm;\n}\ntoday = mm+'-'+dd+'-'+yyyy;\n\
+    console.log(today);\ntoday = mm+'/'+dd+'/'+yyyy;\nconsole.log(today);\ntoday =\
+    \ dd+'-'+mm+'-'+yyyy;\nconsole.log(today);\ntoday = dd+'/'+mm+'/'+yyyy;\nconsole.log(today);\n\
+    ```"
+  - '[PAGE 10]
+
+
+    # Find the area of a triangle
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>The area of a triangle</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    var side1 = 5;
+
+    var side2 = 6;
+
+    var side3 = 7;
+
+    var s = (side1 + side2 + side3)/2;
+
+    var area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+
+    console.log(area);
+
+    ```'
+  - '[PAGE 11]
+
+
+    # Check whether a given year is a leap year
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>Find Leap Year</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIT CODE
+
+
+    ```
+
+    function leapyear(year)
+
+    {
+
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+    }
+
+    console.log(leapyear(2016));
+
+    console.log(leapyear(2000));
+
+    console.log(leapyear(1700));
+
+    console.log(leapyear(1800));
+
+    console.log(leapyear(100));
+
+    ```
+
+
+    # OUTPUT
+
+
+    true
+
+    true
+
+    false
+
+    false
+
+    false'
+  - "[PAGE 12]\n\n# # Calculate multiplication and division\n\n# ## of two numbers\n\
+    \n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8\
+    \ />\n<title>JavaScript program to calculate multiplication and division of two\
+    \ numbers </title>\n<style type=\"text/css\">\nbody {margin: 30px;}\n</style>\n\
+    </head>\n<body>\n<form>\n1st Number : <input type=\"text\" id=\"firstNumber\"\
+    \ /><br>\n2nd Number: <input type=\"text\" id=\"secondNumber\" /><br>\n<input\
+    \ type=\"button\" onClick=\"multiplyBy()\" Value=\"Multiply\" />\n<input type=\"\
+    button\" onClick=\"divideBy()\" Value=\"Divide\" />\n</form>\n<p>The Result is\
+    \ : <br>\n<span id = \"result\"></span>\n</p>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT\
+    \ CODE\n\n```\nfunction multiplyBy()\n{\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    ```"
+  - "[PAGE 13]\n\n```\ndocument.getElementById(\"result\").innerHTML = num1 * num2;\n\
+    }\n```\n\n```\nfunction divideBy()\n{\n    num1 = document.getElementById(\"firstNumber\"\
+    ).value;\n    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_13_0.png)"
+  - "[PAGE 14]\n\n# # Convert temperatures\n\n# ## To and from celsius, Fahrenheit\
+    \ in JAVASCRIPT\n\n# ### HTML CODE\n\n```\n<!DOCTYPE html>\n  <html>\n  <head>\n\
+    \  <meta charset=\"utf-8\">\n  <title>Write a JavaScript program to convert temperatures\
+    \ to and from celsius, fahrenheit</title>\n  </head>\n  <body>\n</body>\n  </html>\n\
+    ```\n\n# ### JAVASCRIPT CODE\n\n```\nfunction cToF(celsius)\n{\n  var cTemp =\
+    \ celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n  var message = cTemp+'\\xB0C\
+    \ is ' + cToFahr + ' \\xB0F.';\n    console.log(message);\n}\n\nfunction fToC(fahrenheit)\n\
+    {\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp - 32) * 5 / 9;\n  var message\
+    \ = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n    console.log(message);\n}\ncToF(60);\n\
+    fToC(45);\n```"
+  - '[PAGE 15]
+
+
+    # # OUTPUT
+
+
+    60°C is 140 °F.
+
+
+    45°F is 7.222222222222222°C.'
+  - "[PAGE 16]\n\n# Find the largest\n\n# Of three given integers\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"\
+    viewport\" content=\"width=device-width\">\n  <title>JavaScript program to find\
+    \ the largest of three given integers.</title>\n</head>\n<body>\n\n</body>\n</html>\n\
+    ```\n\n# JAVASCRIPT CODE\n\n```\nfunction max_of_three(x, y, z)\n{\n  max_val\
+    \ = 0;\n  if (x > y)\n  {\n    max_val = x;\n  } else\n  {\n    max_val = y;\n\
+    \  }\n  if (z > max_val)\n  {\n    max_val = z;\n  }\n  return max_val;\n}\n\n\
+    console.log(max_of_three(1,0,1));\n```"
+  - '[PAGE 17]
+
+
+    ```
+
+    console.log(max_of_three(0,-10,-20));
+
+    console.log(max_of_three(1000,510,440));
+
+    ```
+
+
+    Output:
+
+
+    1
+
+
+    0
+
+
+    1000'
+  - "[PAGE 18]\n\n# # Reverse a given string\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"\
+    width=device-width\">\n    <title>JavaScript program to reverse a given string.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT CODE\n\n```\nfunction\
+    \ string_reverse(str)\n{\n    return str.split(\"\").reverse().join(\"\");\n}\n\
+    \nconsole.log(string_reverse(\"jsresource\"));\nconsole.log(string_reverse(\"\
+    www\"));\nconsole.log(string_reverse(\"JavaScript\"));\n```\n\n# ## OUTPUT\n\n\
+    ecruosersj\nwww\ntpircSavaJ"
+  - "[PAGE 19]\n\n# Replace every character with the character following it in the\
+    \ alphabet\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to replace every character in a given string with\n    the character\
+    \ following it in the alphabet.</title>\n</head>\n<body>\n\n</body>\n</html>\n\
+    ```\n\n# JAVASCRIPT CODE\n\n```\nfunction string_reverse(str)\nfunction LetterChanges(text)\
+    \ {\n//https://goo.gl/R8gn7u\nvar s = text.split(\"\");\nfor (var i = 0; i < s.length;\
+    \ i++) {\n    // Caesar cipher\n    switch(s[i]) {\n        case ' ':\n      \
+    \      break;\n        case 'z':\n            s[i] = 'a';\n            break;\n\
+    \        case 'Z':\n            s[i] = 'A';\n            break;\n```"
+- md: "## LetterChanges\n\n```javascript\ndefault:\n    s[i] = String.fromCharCode(1\
+    \ + s[i].charCodeAt(0));\n}\n\n// Upper-case vowels\nswitch(s[i]) {\ncase 'a':\
+    \ case 'e': case 'i': case 'o': case 'u':\n    s[i] = s[i].toUpperCase();\n}\n\
+    }\nreturn s.join(\"\");\n}\nconsole.log(LetterChanges(\"PYTHON\"));\nconsole.log(LetterChanges(\"\
+    W3R\"));\nconsole.log(LetterChanges(\"php\"));\n```\n\nOutput:\n\nQZUIPO\n\nX4S\n\
+    \nqIq\n\n## Capitalize The First Letter Of Each Word Of A Given String\n\n###\
+    \ HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to capitalize the first letter of each word of a given string.</title>\n\
+    </head>\n<body>\n\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```javascript\n\
+    function capital_letter(str)\n{\n    str = str.split(\" \");\n\n    for (var i\
+    \ = 0, x = str.length; i < x; i++) {\n        str[i] = str[i][0].toUpperCase()\
+    \ + str[i].substr(1);\n    }\n\n    return str.join(\" \");\n}\n\nconsole.log(capital_letter(\"\
+    Write a JavaScript program to capitalize the first letter of each word of a given\
+    \ string.\"));\n```\n\n### OUTPUT\n\nOutput:\n\nWrite A JavaScript Program To\
+    \ Capitalize The First Letter Of Each Word Of A Given String.\n\n# HTML\n\n##\
+    \ CODING EXERCISES\n\n### CODING FOR BEGINNERS\n\n#### JJ TAM\n\n# HTML CODING\
+    \ EXERCISES\n\n## Comment HTML tags\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>How to comment HTML tags</title>\n\
+    </head>\n<body>\n    <p>HTML Tutorial</p>\n    <!--<p>Python Tutorial</p>-->\n\
+    \    <p>PHP Tutorial</p>\n</body>\n</html>\n```\n\nOutput:\n\nHTML Tutorial\n\n\
+    PHP Tutorial\n\n## Create a hyperlink in HTML\n\n### HTML CODE\n\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to create a\
+    \ hyperlink</title>\n</head>\n<body>\n  <p><a href=\"http://htmlexample.com\"\
+    >htmlexample.com</a></p>\n</body>\n</html>\n```\n\n## Download a file when clicking\
+    \ on the link\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta\
+    \ charset=\"utf-8\">\n<title>Download a file when clicking on the link</title>\n\
+    </head>\n<body>\n<p><a href=\"https://www.htmlresource.com/images/htmlresource-logo.png\"\
+    \ download>Download</a></p>\n\n</body>\n</html>\n```\n\n## Create a link with\
+    \ a media attribute\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \    <meta charset=\"utf-8\">\n    <title>Create a link with a media attribute</title>\n\
+    </head>\n<body>\n    <a href=\"https://www.htmlresource.com\" media=\"print, handheld\"\
+    >Media Attribute</a>\n</body>\n</html>\n```\n\n## Create a nofollow link\n\n###\
+    \ HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>How to create a nofollow link</title>\n</head>\n<body>\n\
+    \    <a rel=\"nofollow\" href=\"http://htmlexample.com\">Example.com</a>\n</body>\n\
+    </html>\n```\n\n## Open a linked document in a separate browser tab\n\n### HTML\
+    \ CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>How to open a linked document in a separate browser tab</title>\n\
+    </head>\n<body>\n  <p><a href=\"https://htmlresource.com\" target=\"_blank\">Target\
+    \ HTML5 EXERCISES</a></p>\n</body>\n</html>\n```\n\n## Correct way to write address\
+    \ in a HTML document\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \    <meta charset=\"utf-8\">\n    <title>What is the correct way to write address\
+    \ in a HTML document</title>\n</head>\n<body>\n    <address>\n        Address:\
+    \ 21, MG Road<br>\n        Burdwan<br>\n        West Bengal.\n    </address>\n\
+    </body>\n</html>\n```\n\n## Specify an alternate text for the area if the href\
+    \ attribute is present\n\n### HTML CODE\n\n```html\n<body>\n<img src=\"https://www.htmlresource.com/htmlr_images/html-area-element.png\"\
+    \ alt=\"area example\" border=\"0\" usemap=\"#Map\"/>\n<map name=\"Map\">\n<area\
+    \ shape=\"rect\" coords=\"8,5,100,77\" href=\"https://www.htmlresource.com/mysql/mysql-tutorials.php\"\
+    \ target=\"_blank\" alt=\"mysql tutorial\">\n<area shape=\"circle\" coords=\"\
+    155,93,59\" href=\"https://www.htmlresource.com/php/php-home.php\" target=\"_blank\"\
+    \ alt=\"php tutorial\">\n<area shape=\"rect\" coords=\"197,136,306,188\" href=\"\
+    https://www.htmlresource.com/sql/sql-tutorials.php\" alt=\"sql tutorials\">\n\
+    </map>\n</body>\n```\n\n## Create an HTML document which uses article element\n\
+    \n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>Create an HTML document which uses article element</title>\n\
+    </head>\n<body>\n<article>\n<h1>Tutorial of HTML5 article element</h1>\n<p>HTML5\
+    \ article element represents independent item like a blog entry in a web document.</p>\n\
+    </article>\n</body>\n</html>\n```\n\n## Create an HTML document which uses aside\
+    \ element\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <title>How to create an HTML document which uses aside\
+    \ element</title>\n</head>\n<body>\n<p> I visited the HTML5 tutorial of htmlresource</p>\n\
+    \n<aside>\n  <h4>HTML5 tutorial</h4>\n  <p>I can develop excellent web applications\
+    \ with HTML5 and related APIs (like GeoLocation, Drag and Drop, WebSocket etc.)\
+    \ in HTML5 tutorial.</p>\n</aside>\n</body>\n</html>\n```\n\n### OUTPUT\n\nI visited\
+    \ the HTML5 tutorial of htmlresource\n\n### HTML5 tutorial\n\nI can develop excellent\
+    \ web applications with HTML5 and related APIs (like GeoLocation, Drag and Drop,\
+    \ WebSocket etc.) in HTML5 tutorial.\n\n## To add controls to an audio\n\n###\
+    \ HTML CODE\n\n```html\n<body>\n<audio controls>\n  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.ogg\"\
+    \ type=\"audio/ogg\">\n  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.mp3\"\
+    \ type=\"audio/mpeg\">\n</audio>\n</body>\n```\n\n## Write bold text using HTML\
+    \ tags\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta\
+    \ charset=\"utf-8\">\n    <title>How to write bold text using HTML tags</title>\n\
+    </head>\n<body>\n    <p>\"htmlresource\" is normal text - and <b>\"htmlresource\"\
+    </b> is bold text.</p>\n</body>\n</html>\n```\n\n### OUTPUT\n\n\"htmlresource\"\
+    \ is normal text - and **\"htmlresource\"** is bold text.\n\n## To specify the\
+    \ base URL\n\n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta\
+    \ charset=\"utf-8\">\n    <title>How to specify the base URL/target for all relative\
+    \ URLs in a document</title>\n    <base href=\"https://www.htmlresource.com/\"\
+    >\n</head>\n<body>\n<ul>\n<li><a href=\"php/php-home.php\">PHP Tutorial</a></li>\n\
+    <li><a href=\"javascript/javascript.php\">JavaScript Tutorial</a></li>\n<li><a\
+    \ href=\"mysql/mysql-tutorials.php\">MySQL Tutorial</a></li>\n</body>\n</html>\n\
+    ```\n\n## Isolate a part of text that might be formatted in a different direction\n\
+    \n### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+    utf-8\">\n  <title>How to isolate a part of text that might be formatted in a\
+    \ different direction from other text outside it</title>\n</head>\n<body>\n<p>\n\
+    In the example below, usernames are shown along with the number of points in a\
+    \ contest.\n\nIf the bdi element is not supported in the browser, the username\
+    \ of the Arabic user would confuse the text (the bidirectional algorithm would\
+    \ put the colon and the number \"80\" next to the word \"User\" rather than next\
+    \ to the word \"points\").\n</p>\n<ul>\n<li>User <bdi>hrefs</bdi>: 40 points</li>\n\
+    <li>User <bdi>jdoe</bdi>: 60 points</li>\n<li>User <bdi>ترحب بك</bdi>: 80 points</li>\n\
+    </ul>\n<p><b>Note:</b> The bdi element is currently supported only in Firefox\
+    \ and Chrome.</p>\n</body>\n</html>\n```\n\n### OUTPUT\n\nIn the example below,\
+    \ usernames are shown along with the number of points in a contest. If the bdi\
+    \ element is not supported in the browser, the username of the Arabic user would\
+    \ confuse the text (the bidirectional algorithm would put the colon and the number\
+    \ \"80\" next to the word \"User\" rather than next to the word \"points\").\n\
+    \n- User hrefs: 40 points\n- User jdoe: 60 points\n- User 80:ترحيب points\n\n\
+    **Note:** The bdi element is currently supported only in Firefox and Chrome.\n\
+    \n## Define a section that is quoted from another source\n\n### HTML CODE\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>html\
+    \ blockquote tag example</title>\n</head>\n<body>\n<blockquote>Freedom is not\
+    \ worth having if it does not connote freedom to err. It passes my comprehension\
+    \ how human beings, be they ever so experienced and able, can delight in depriving\
+    \ other human beings of that precious right.</blockquote>\n</body>\n</html>\n\
+    ```\n\n### OUTPUT\n\nFreedom is not worth having if it does not connote freedom\
+    \ to err. It passes my comprehension how human beings, be they ever so experienced\
+    \ and able, can delight in depriving other human beings of that precious right."
+  mdcn: "\n## LetterChanges\n\n```javascript\ndefault:\n    s[i] = String.fromCharCode(1\
+    \ + s[i].charCodeAt(0));\n}\n\n// 大写元音字母\nswitch(s[i]) {\ncase 'a': case 'e':\
+    \ case 'i': case 'o': case 'u':\n    s[i] = s[i].toUpperCase();\n}\n}\nreturn\
+    \ s.join(\"\");\n}\nconsole.log(LetterChanges(\"PYTHON\"));\nconsole.log(LetterChanges(\"\
+    W3R\"));\nconsole.log(LetterChanges(\"php\"));\n```\n\n输出：\n\nQZUIPO\n\nX4S\n\n\
+    qIq\n\n## 将给定字符串中每个单词的首字母大写\n\n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>将给定字符串中每个单词的首字母大写的 JavaScript 程序。</title>\n</head>\n<body>\n\n</body>\n\
+    </html>\n```\n\n### JAVASCRIPT 代码\n\n```javascript\nfunction capital_letter(str)\n\
+    {\n    str = str.split(\" \");\n\n    for (var i = 0, x = str.length; i < x; i++)\
+    \ {\n        str[i] = str[i][0].toUpperCase() + str[i].substr(1);\n    }\n\n \
+    \   return str.join(\" \");\n}\n\nconsole.log(capital_letter(\"Write a JavaScript\
+    \ program to capitalize the first letter of each word of a given string.\"));\n\
+    ```\n\n### 输出\n\n输出：\n\nWrite A JavaScript Program To Capitalize The First Letter\
+    \ Of Each Word Of A Given String.\n\n# HTML\n\n## 编程练习\n\n### 初学者编程\n\n#### JJ\
+    \ TAM\n\n# HTML 编程练习\n\n## 注释 HTML 标签\n\n### HTML 代码\n\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>如何注释 HTML 标签</title>\n\
+    </head>\n<body>\n    <p>HTML 教程</p>\n    <!--<p>Python 教程</p>-->\n    <p>PHP 教程</p>\n\
+    </body>\n</html>\n```\n\n输出：\n\nHTML 教程\n\nPHP 教程\n\n## 在 HTML 中创建超链接\n\n### HTML\
+    \ 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+    \  <title>如何创建超链接</title>\n</head>\n<body>\n  <p><a href=\"http://htmlexample.com\"\
+    >htmlexample.com</a></p>\n</body>\n</html>\n```\n\n## 点击链接时下载文件\n\n### HTML 代码\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>点击链接时下载文件</title>\n\
+    </head>\n<body>\n<p><a href=\"https://www.htmlresource.com/images/htmlresource-logo.png\"\
+    \ download>下载</a></p>\n\n</body>\n</html>\n```\n\n## 创建带有 media 属性的链接\n\n### HTML\
+    \ 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <title>创建带有 media 属性的链接</title>\n</head>\n<body>\n    <a href=\"https://www.htmlresource.com\"\
+    \ media=\"print, handheld\">Media 属性</a>\n</body>\n</html>\n```\n\n## 创建 nofollow\
+    \ 链接\n\n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>如何创建 nofollow 链接</title>\n</head>\n<body>\n    <a rel=\"\
+    nofollow\" href=\"http://htmlexample.com\">Example.com</a>\n</body>\n</html>\n\
+    ```\n\n## 在单独的浏览器标签页中打开链接文档\n\n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <title>如何在单独的浏览器标签页中打开链接文档</title>\n</head>\n\
+    <body>\n  <p><a href=\"https://htmlresource.com\" target=\"_blank\">目标 HTML5 练习</a></p>\n\
+    </body>\n</html>\n```\n\n## 在 HTML 文档中正确书写地址的方式\n\n### HTML 代码\n\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>在 HTML 文档中正确书写地址的方式</title>\n\
+    </head>\n<body>\n    <address>\n        地址：21, MG Road<br>\n        Burdwan<br>\n\
+    \        West Bengal.\n    </address>\n</body>\n</html>\n```\n\n## 如果存在 href 属性，为区域指定替代文本\n\
+    \n### HTML 代码\n\n```html\n<body>\n<img src=\"https://www.htmlresource.com/htmlr_images/html-area-element.png\"\
+    \ alt=\"area 示例\" border=\"0\" usemap=\"#Map\"/>\n<map name=\"Map\">\n<area shape=\"\
+    rect\" coords=\"8,5,100,77\" href=\"https://www.htmlresource.com/mysql/mysql-tutorials.php\"\
+    \ target=\"_blank\" alt=\"mysql 教程\">\n<area shape=\"circle\" coords=\"155,93,59\"\
+    \ href=\"https://www.htmlresource.com/php/php-home.php\" target=\"_blank\" alt=\"\
+    php 教程\">\n<area shape=\"rect\" coords=\"197,136,306,188\" href=\"https://www.htmlresource.com/sql/sql-tutorials.php\"\
+    \ alt=\"sql 教程\">\n</map>\n</body>\n```\n\n## 创建使用 article 元素的 HTML 文档\n\n###\
+    \ HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <title>创建使用 article 元素的 HTML 文档</title>\n</head>\n<body>\n<article>\n<h1>HTML5\
+    \ article 元素教程</h1>\n<p>HTML5 article 元素表示网页文档中独立的条目，如博客文章。</p>\n</article>\n\
+    </body>\n</html>\n```\n\n## 创建使用 aside 元素的 HTML 文档\n\n### HTML 代码\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>如何创建使用 aside\
+    \ 元素的 HTML 文档</title>\n</head>\n<body>\n<p> 我访问了 htmlresource 的 HTML5 教程</p>\n\
+    \n<aside>\n  <h4>HTML5 教程</h4>\n  <p>在 HTML5 教程中，我可以使用 HTML5 和相关 API（如 GeoLocation、拖放、WebSocket\
+    \ 等）开发出色的 Web 应用程序。</p>\n</aside>\n</body>\n</html>\n```\n\n### 输出\n\n我访问了 htmlresource\
+    \ 的 HTML5 教程\n\n### HTML5 教程\n\n在 HTML5 教程中，我可以使用 HTML5 和相关 API（如 GeoLocation、拖放、WebSocket\
+    \ 等）开发出色的 Web 应用程序。\n\n## 为音频添加控件\n\n### HTML 代码\n\n```html\n<body>\n<audio controls>\n\
+    \  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.ogg\"\
+    \ type=\"audio/ogg\">\n  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.mp3\"\
+    \ type=\"audio/mpeg\">\n</audio>\n</body>\n```\n\n## 使用 HTML 标签书写粗体文本\n\n### HTML\
+    \ 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <title>如何使用 HTML 标签书写粗体文本</title>\n</head>\n<body>\n    <p>\"htmlresource\"\
+    \ 是普通文本 - 而 <b>\"htmlresource\"</b> 是粗体BOOK文本。</p>\n</body>\n</html>\n```\n\n\
+    ### 输出\n\n\"htmlresource\" 是普通文本 - 而 **\"htmlresource\"** 是粗体文本。\n\n## 指定基础 URL\n\
+    \n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>如何为文档中所有相对 URL 指定基础 URL/目标</title>\n    <base href=\"https://www.htmlresource.com/\"\
+    >\n</head>\n<body>\n<ul>\n<li><a href=\"php/php-home.php\">PHP 教程</a></li>\n<li><a\
+    \ href=\"javascript/javascript.php\">JavaScript 教程</a></li>\n<li><a href=\"mysql/mysql-tutorials.php\"\
+    >MySQL 教程</a></li>\n</body>\n</html>\n```\n\n## 隔离一段可能与其他外部文本方向不同的文本\n\n### HTML\
+    \ 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+    \  <title>如何隔离一段可能与其他外部文本方向不同的文本</title>\n</head>\n<body>\n<p>\n在下面的示例中，用户显示了用户名以及比赛中的得分点数。\n\
+    \n如果浏览器不支持 bdi 元素，阿拉伯语用户的用户名会混淆文本（双向算法会将冒号和数字\"80\"放在单词\"User\"旁边，而不是放在单词\"points\"\
+    旁边）。\n</p>\n<ul>\n<li>User <bdi>hrefs</bdi>: 40 points</li>\n<li>User <bdi>jdoe</bdi>:\
+    \ 60 points</li>\n<li>User <bdi>ترحب بك</bdi>: 80 points</li>\n</ul>\n<p><b>注意：</b>\
+    \ bdi 元素目前仅在 Firefox 和 Chrome 中受支持。</p>\n</body>\n</html>\n```\n\n### 输出\n\n在下面的示例中，用户显示了用户名以及比赛中的得分点数。如果浏览器不支持\
+    \ bdi 元素，阿拉伯语用户的用户名会混淆文本（双向算法会将冒号和数字\"80\"放在单词\"User\"旁边，而不是放在单词\"points\"旁边）。\n\
+    \n- User hrefs: 40 points\n- User jdoe: 60 points\n- User 80:ترحيب points\n\n\
+    **注意：** bdi 元素目前仅在 Firefox 和 Chrome 中受支持。\n\n## 定义从其他来源引用的部分\n\n### HTML 代码\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>html\
+    \ blockquote 标签示例</title>\n</head>\n<body>\n<blockquote>自由如果不包含犯错的自由，那就不值得拥有。我无法理解，人类无论多么有经验、有能力，怎么会以剥夺他人这种珍贵权利为乐。</blockquote>\n\
+    </body>\n</html>\n```\n\n### 输出\n\n自由如果不包含犯错的自由，那就不值得拥有。我无法理解，人类无论多么有经验、有能力，怎么会以剥夺他人这种珍贵权利为乐。\n"
+  merge: 0
+  raw:
+  - "[PAGE 20]\n\n```\ndefault:\n    s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));\n\
+    }\n\n// Upper-case vowels\nswitch(s[i]) {\ncase 'a': case 'e': case 'i': case\
+    \ 'o': case 'u':\n    s[i] = s[i].toUpperCase();\n}\n}\nreturn s.join(\"\");\n\
+    }\nconsole.log(LetterChanges(\"PYTHON\"));\nconsole.log(LetterChanges(\"W3R\"\
+    ));\nconsole.log(LetterChanges(\"php\"));\n```\n\n# Output:\n\nQZUIPO\n\nX4S\n\
+    \nqIq"
+  - "[PAGE 21]\n\n# Capitalize The First Letter\nOf Each Word\nOf A Given String\n\
+    \n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to capitalize the first letter of each word of a\n    given string.</title>\n\
+    </head>\n<body>\n\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\nfunction\
+    \ capital_letter(str)\n{\n    str = str.split(\" \");\n\n    for (var i = 0, x\
+    \ = str.length; i < x; i++) {\n        str[i] = str[i][0].toUpperCase() + str[i].substr(1);\n\
+    \    }\n\n    return str.join(\" \");\n}\n\nconsole.log(capital_letter(\"Write\
+    \ a JavaScript program to capitalize the first\nletter of each word of a given\
+    \ string.\"));\n```\n\n# OUTPUT"
+  - '[PAGE 22]
+
+
+    # Output:
+
+
+    Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given
+    String.'
+  - '[PAGE 23]
+
+
+    # # HTML
+
+    ## CODING EXERCISES
+
+
+    ### CODING FOR BEGINNERS
+
+    #### JJ TAM'
+  - "[PAGE 24]\n\n# HTML CODING EXERCISES\n\n# Comment HTML tags\n\n# HTML CODE\n\n\
+    ```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>How\
+    \ to comment HTML tags</title>\n</head>\n<body>\n    <p>HTML Tutorial</p>\n  \
+    \  <!--<p>Python Tutorial</p>-->\n    <p>PHP Tutorial</p>\n</body>\n</html>\n\
+    ```\n\nOutput:\n\nHTML Tutorial\n\nPHP Tutorial"
+  - "[PAGE 25]\n\n# Create a hyperlink in HTML\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to create a hyperlink</title>\n\
+    </head>\n<body>\n  <p><a href=\"http://htmlexample.com\">htmlexample.com</a><p>\n\
+    </body>\n</html>\n```"
+  - '[PAGE 26]
+
+
+    # Download a file
+
+    when clicking on the link
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>Download a file when clicking on the link</title>
+
+    </head>
+
+    <body>
+
+    <p><a href="https://www.htmlresource.com/images/htmlresource-logo.png" download>Download</a></p>
+
+
+    </body>
+
+    </html>
+
+    ```'
+  - "[PAGE 27]\n\n# Create a link with a media attribute\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Create a link\
+    \ with a media attribute</title>\n</head>\n<body>\n    <a href=\"https://www.htmlresource.com\"\
+    \ media=\"print, handheld\">Media Attribute</a>\n</body>\n</html>\n```"
+  - '[PAGE 28]
+
+
+    # # Create a nofollow link
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    ```
+
+
+    ```
+
+    <html>
+
+    ```
+
+
+    ```
+
+    <head>
+
+    ```
+
+
+    ```
+
+    <meta charset="utf-8">
+
+    ```
+
+
+    ```
+
+    <title>How to create a nofollow link</title>
+
+    ```
+
+
+    ```
+
+    </head>
+
+    ```
+
+
+    ```
+
+    <body>
+
+    ```
+
+
+    ```
+
+    <a rel="nofollow" href="http://htmlexample.com">Example.com</a>
+
+    ```
+
+
+    ```
+
+    </body>
+
+    ```
+
+
+    ```
+
+    </html>
+
+    ```'
+  - "[PAGE 29]\n\n# Open a linked document in a separate browser tab\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How\
+    \ to open a linked document in a separate browser tab</title>\n</head>\n<body>\n\
+    \  <p><a href=\"https://htmlresource.com\" target=\"_blank\">Target HTML5 EXCECISES</a></p>\n\
+    </body>\n</html>\n```"
+  - "[PAGE 30]\n\n# Correct way to write address in a HTML document\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>What\
+    \ is the correct way to write address in a HTML document</title>\n</head>\n<body>\n\
+    \    <address>\n        Address: 21,MG Road<br>\n        Burdwan<br>\n       \
+    \ West Bengal.\n    </address>\n</body>\n</html>\n```"
+  - '[PAGE 31]
+
+
+    # # Specify an alternate text
+
+    for the area
+
+    if the href attribute is present
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <body>
+
+    <img src="https://www.htmlresource.com/htmlr_images/html-area-element.png" alt="area
+    example" border="0" usemap="#Map"/>
+
+    <map name="Map">
+
+    <area shape="rect" coords="8,5,100,77" href="https://www.htmlresource.com/mysql/mysql-tutorials.php"
+    target="_blank" alt="mysql tutorial">
+
+    <area shape="circle" coords="155,93,59" href="https://www.htmlresource.com/php/php-home.php"
+    target="_blank" alt="php tutorial">
+
+    <area shape="rect" coords="197,136,306,188" href="https://www.htmlresource.com/sql/sql-tutorials.php"
+    alt="sql tutorials">
+
+    </map>
+
+    </body>
+
+    ```'
+  - "[PAGE 32]\n\n# Create an HTML document which uses article element\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Create\
+    \ an HTML document which uses article element</title>\n</head>\n<body>\n<article>\n\
+    <h1>Tutorial of HTML5 article element</h1>\n<p>HTML5 article element represents\
+    \ independent item like a blog entry in an web document.</p>\n</article>\n</body>\n\
+    </html>\n```"
+  - "[PAGE 33]\n\n# # Create an HTML document which uses aside element\n\n# ## HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <title>How to create an HTML document which uses aside element</title>\n</head>\n\
+    <body>\n<p> I visited the HTML5 tutorial of htmlresource</p>\n\n<aside>\n  <h4>HTML5\
+    \ tutorial</h4>\n  <p>I can develop excellent web applications with HTML5 and\
+    \ related APIs (like GeoLocation, Drag and Drop, WebSocket etc.)in HTML5 tutorial.</p>\n\
+    </aside>\n</body>\n</html>\n```\n\n# ## OUTPUT\n\nI visited the HTML5 tutorial\
+    \ of htmlresource\n\n# ### HTML5 tutorial\n\nI can develop excellent web applications_capabilities\
+    \ with HTML5 and related APIs (like GeoLocation, Drag and Drop, WebSocket etc.)in\
+    \ HTML5 tutorial."
+  - "[PAGE 34]\n\n# To add controls to an audio\n\n# HTML CODE\n\n```\n<body>\n<audio\
+    \ controls>\n  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.ogg\"\
+    \ type=\"audio/ogg\">\n<source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.mp3\"\
+    \ type=\"audio/mpeg\">\n</audio>\n</body>\n```"
+  - "[PAGE 35]\n\n# Write bold text using HTML tags\n\nHTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<title>How to write bold\
+    \ text using HTML tags</title>\n</head>\n<body>\n\t<p>\"htmlresource\" is normal\
+    \ text - and <b>\"htmlresource\"</b> is bold text.</p>\n</body>\n</html>\n```\n\
+    \nOUTPUT\n\n\"htmlresource\" is normal text - and **\"htmlresource\"** is bold\
+    \ text."
+  - '[PAGE 36]
+
+
+    # # To specify the base URL
+
+
+    ```
+
+    HTML CODE
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>How to specifie the base URL/target for all relative URLs in a document</title>
+
+    <base href="https://www.htmlresource.com/">
+
+    </head>
+
+    <body>
+
+    <ul>
+
+    <li><a href="php/php-home.php">PHP Tutorial</a></li>
+
+    <li><a href="javascript/javascript.php">JavaScript Tutorial</a></li>
+
+    <li><a href="mysql/mysql-tutorials.php">MySQL Tutorial</a></li>
+
+    </body>
+
+    </html>
+
+    ```'
+  - "[PAGE 37]\n\n# Isolate a part of text\nThat might be formatted\nIn a different\
+    \ direction\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+    utf-8\">\n  <title><span class=\"heading\">How to isolate a part of text that\
+    \ might be formatted in a different direction from other text outside it</span></title>\n\
+    </head>\n<body>\n<p>\nIn the example below, usernames are shown along with the\
+    \ number of points\nin a contest.\n\nIf the bdi element is not supported in the\
+    \ browser, the username of the Arabic\nuser would confuse the text (the bidirectional\
+    \ algorithm would put the colon\nand the number \"80\" next to the word \"User\"\
+    \ rather than next to the word\n\"points\").\n</p>\n<ul>\n<li>User <bdi>hrefs</bdi>:\
+    \ 40 points</li>\n<li>User <bdi>jdoe</bdi>: 60 points</li>\n<li>User <bdi>ترحب\
+    \ بك</bdi>:80 points</li>\n```"
+  - '[PAGE 38]
+
+
+    ```
+
+    </ul>
+
+    <p><b>Note:</b> The bdi element is currently supported only in Firefox and Chrome.</p>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # OUTPUT
+
+
+    In the example below, usernames are shown along with the number of points in a
+    contest. If the bdi element is not supported in the browser, the username of the
+    Arabic user would confuse the text (the bidirectional algorithm would put the
+    colon and the number "80" next to the word "User" rather than next to the word
+    "points").
+
+
+    +   - User hrefs: 40 points
+
+    - User jdoe: 60 points
+
+    - User 80:ترحيب points
+
+
+    **Note:** The bdi element is currently supported only in Firefox and Chrome.'
+  - "[PAGE 39]\n\n# Define a section\n\n# that is quoted from another source\n\n#\
+    \ HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>html blockquote tag example</title>\n</head>\n<body>\n<blockquote>Freedom\
+    \ is not worth having if it does not connote freedom to err. It passes my comprehension\
+    \ how human beings, be they ever so experienced and able, can delight in depriving\
+    \ other human beings of that precious right.</blockquote>\n</body>\n</html>\n\
+    ```\n\n# OUTPUT\n\nFreedom is not worth having if it does not connote freedom\
+    \ to err. It passes my comprehension how human beings, be they ever so experienced\
+    \ and able, can delight in depriving other human beings of that precious right."
+- md: "## Define the document's body\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <title>How to define the document's\
+    \ body</title>\n</head>\n<body>\nWe are learning HTML body element.\n</body>\n\
+    </html>\n```\n\n### OUTPUT\n\nWe are learning HTML body element.\n\n## Define\
+    \ a single line break\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <title>How to define a single line break</title>\n\
+    </head>\n<body>\n  <p>The quick brown fox jumps<br>over the lazy dog.</p>\n</body>\n\
+    </html>\n```\n\n### OUTPUT\n\nThe quick brown fox jumps\nover the lazy dog.\n\n\
+    ## Define a clickable button\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <title>How to define a clickable button.</title>\n\
+    </head>\n<body>\n  <button type=\"button\" onclick=\"console.log('Welcome Friends')\"\
+    >Click Me!</button>\n</body>\n</html>\n```\n\n## Specify that a button automatically\
+    \ get focus when the page load\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <title>The example of autofocus attribute\
+    \ with button element.</title>\n</head>\n<body>\n    <button type=\"button\" autofocus\
+    \ onclick=\"console.log('Welcome Friends')\">Click Me!</button>\n</body>\n</html>\n\
+    ```\n\n## Specify a button should be disabled\n\n### HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Example of HTML\
+    \ disabled attribute with button</title>\n</head>\n<body>\n<form action=\"example.php\"\
+    \ method=\"post\">\nFirst Name : <input type=\"text\" name=\"Fname\"><br>\n<button\
+    \ type=\"button\" name=\"Submit\" disabled>Submit</button>\n</form>\n</body>\n\
+    </html>\n```\n\n### OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_44_0.png)\n\
+    \n## Specify one or more forms the button belongs to\n\n### HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to specify\
+    \ one or more forms the button belongs to</title>\n</head>\n<body>\n<form method=\"\
+    POST\"\naction=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-form-answer-demo.php\"\
+    \ id=\"form1\">\n  First name : <input type=\"text\" name=\"fname\"><br>\n  Last\
+    \ name : <input type=\"text\" name=\"lname\"><br>\n  Present Address : <input\
+    \ type=\"text\" name=\"add\"><br>\n  E-mail : <input type=\"text\" name=\"mail\"\
+    ><br>\n</form>\n<button type=\"submit\" form=\"form1\" value=\"Submit\">Submit</button>\n\
+    </body>\n</html>\n```\n\n### OUTPUT\n\nFirst name :\n\nLast name :\n\nPresent\
+    \ Address :\n\nE-mail :\n\nSubmit\n\n## Specify where to send the form-data when\
+    \ a form is submitted\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <title>How to Specify where to send the form-data\
+    \ when a form is submitted.</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-answer-demo.php\"\
+    \ method=\"post\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button><br>\n  <button type=\"submit\" formation=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-admin-demo.php\"\
+    >Submit as admin</button>\n</form>\n</body>\n</html>\n```\n\n### OUTPUT\n\n<!--\
+    \ no content -->\n\n## Send the form-data\n(which HTTP method to use)\n\n### HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <title>How to send the form-data, which HTTP method to use</title>\n</head>\n\
+    <body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php\"\
+    >\n  First name: <input type=\"text\" name=\"fname\"><br>\n  Last name: <input\
+    \ type=\"text\" name=\"lname\"><br>\n  Address: <input type=\"text\" name=\"place\"\
+    ><br>\n  <button type=\"submit\">Submit</button>\n  <button type=\"submit\" formmethod=\"\
+    post\" formaction=\"http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php\"\
+    >Submit using POST</button>\n</form>\n</body>\n</html>\n```\n\n### OUTPUT\n\n\
+    ![](img/3c47590736460ba39948e1c4764537c3_49_0.png)\n\n## Specify where to display\
+    \ the response after submitting the form\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to specify where to display\
+    \ the response after submitting the form</title>\n</head>\n<body>\n<form action=\"\
+    https://www.htmlresource.com/html-css-exercise/basic/solution/button-formtarget-answer-demo.php\"\
+    \ method=\"POST\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button>\n  <button type=\"submit\" formtarget=\"_blank\">Submit to a\
+    \ new window/tab</button>\n</form>\n</body>\n</html>\n```\n\n### OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_50_0.png)\n\
+    \n## Specify a name for the button\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n<title>How to specify a name for the\
+    \ button</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-name-answer-demo.php\"\
+    \ method=\"post\">\nChoose your favorite topic:\n<button name=\"topic\" type=\"\
+    submit\" value=\"JavaScript\">JavaScript</button>\n<button name=\"topic\" type=\"\
+    submit\" value=\"PHP\">PHP</button>\n</form>\n</body>\n</html>\n```\n\n### OUTPUT\n\
+    \n![](img/3c47590736460ba39948e1c4764537c3_51_0.png)\n\n## JQUERY CODING EXERCISES\n\
+    \n### CODING FOR BEGINNERS\n\n### JJ TAM\n\n## JQUERY CODING EXERCISES\n\n###\
+    \ Check jQuery is loaded\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n    <meta charset=\"\
+    utf-8\">\n    <title>Test if jQuery is loaded</title>\n</head>\n<body>\n<p>Click\
+    \ me!</p>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\n$(\"p\").bind(\"\
+    click\", function(){\n    $( \"This is a click Event\").appendTo( \"body\" );\n\
+    });\n\n$(\"p\").bind(\"dblclick\", function(){\n    $( \"This is a double-click\
+    \ Event\" ).appendTo( \"body\" );\n});\n```\n\n### OUTPUT\n\nClick me!\n\nThis\
+    \ is a click Event\n\n## Scroll to the top\nof the page\n\n### HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<title>Scroll to the top of the page with\
+    \ jQuery</title>\n</head>\n<body>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<a href='#top'>Go\
+    \ Top</a>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\n```\n$(\"a[href='#top']\"\
+    ).click(function() {\n    $(\"html, body\").animate({ scrollTop: 0 }, \"slow\"\
+    );\n    return false;\n});\n```\n\n## Disable right click menu\nin html page\n\
+    \n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Disable right click menu in html\
+    \ page using jquery</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n\n```\n$(document).bind(\"contextmenu\",function(e){\n  return false;\n\
+    });\n```\n\n## Disable/enable the form submit button\n\n### HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<title>Disable/enable the form submit button</title>\n\
+    </head>\n<body>\n<input id=\"accept\" name=\"accept\" type=\"checkbox\" value=\"\
+    y\"/>I accept<br>\n<input id=\"submitbtn\" disabled=\"disabled\" name=\"Submit\"\
+    \ type=\"submit\" value=\"Submit\" />\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n\n```\n$('#accept').click(function() {\n    if ($('#submitbtn').is(':disabled'))\
+    \ {\n        $('#submitbtn').removeAttr('disabled');\n    } else {\n        $('#submitbtn').attr('disabled',\
+    \ 'disabled');\n    }\n});\n```\n\n### OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_57_0.png)\n\
+    \n## Blink text\nusing jQuery\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta\
+    \ charset=\"utf-8\">\n  <title>Blink text using jQuery</title>\n</head>\n<body>\n\
+    \  <p>jQuery <span class=\"blink\">Exercises</span> and Solution</p>\n</body>\n\
+    </html>\n```\n\n### JAVASCRIPT CODE\n\n```\nfunction blink_text() {\n    $('.blink').fadeOut(500);\n\
+    \    $('.blink').fadeIn(500);\n}\nsetInterval(blink_text, 1000);\n```"
+  mdcn: "\n## 定义文档的主体\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n   \
+    \ <meta charset=\"utf-8\">\n    <title>How to define the document's body</title>\n\
+    </head>\n<body>\nWe are learning HTML body element.\n</body>\n</html>\n```\n\n\
+    ### 输出\n\n我们正在学习 HTML body 元素。\n\n## 定义单个换行\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to define a single line\
+    \ break</title>\n</head>\n<body>\n  <p>The quick brown fox jumps<br>over the lazy\
+    \ dog.</p>\n</body>\n</html>\n```\n\n### 输出\n\n敏捷的棕色狐狸\n跃过了懒狗。\n\n## 定义可点击按钮\n\
+    \n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>How to define a clickable button.</title>\n</head>\n<body>\n  <button\
+    \ type=\"button\" onclick=\"console.log('Welcome Friends')\">Click Me!</button>\n\
+    </body>\n</html>\n```\n\n## 指定按钮在页面加载时自动获取焦点\n\n### HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>The example\
+    \ of autofocus attribute with button element.</title>\n</head>\n<body>\n    <button\
+    \ type=\"button\" autofocus onclick=\"console.log('Welcome Friends')\">Click Me!</button>\n\
+    </body>\n</html>\n```\n\n## 指定按钮为禁用状态\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Example of HTML disabled\
+    \ attribute with button</title>\n</head>\n<body>\n<form action=\"example.php\"\
+    \ method=\"post\">\nFirst Name : <input type=\"text\" name=\"Fname\"><br>\n<button\
+    \ type=\"button\" name=\"Submit\" disabled>Submit</button>\n</form>\n</body>\n\
+    </html>\n```\n\n### 输出\n\n![](img/3c47590736460ba39948e1c4764537c3_44_0.png)\n\
+    \n## 指定按钮所属的一个或多个表单\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n \
+    \ <meta charset=\"utf-8\">\n  <title>How to specify one or more forms the button\
+    \ belongs to</title>\n</head>\n<body>\n<form method=\"POST\"\naction=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-form-answer-demo.php\"\
+    \ id=\"form1\">\n  First name : <input type=\"text\" name=\"fname\"><br>\n  Last\
+    \ name : <input type=\"text\" name=\"lname\"><br>\n  Present Address : <input\
+    \ type=\"text\" name=\"add\"><br>\n  E-mail : <input type=\"text\" name=\"mail\"\
+    ><br>\n</form>\n<button type=\"submit\" form=\"form1\" value=\"Submit\">Submit</button>\n\
+    </body>\n</html>\n```\n\n### 输出\n\n名：\n\n姓：\n\n当前地址：\n\n电子邮件：\n\n提交\n\n## 指定表单提交时表单数据的发送地址\n\
+    \n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>How to Specify where to send the form-data when a form is submitted.</title>\n\
+    </head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-answer-demo.php\"\
+    \ method=\"post\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button><br>\n  <button type=\"submit\" formation=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-admin-demo.php\"\
+    >Submit as admin</button>\n</form>\n</body>\n</html>\n```\n\n### 输出\n\n<!-- 无内容\
+    \ -->\n\n## 发送表单数据\n（使用哪种 HTTP 方法）\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <title>How to send the form-data, which\
+    \ HTTP method to use</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php\"\
+    >\n  First name: <input type=\"text\" name=\"fname\"><br>\n  Last name: <input\
+    \ type=\"text\" name=\"lname\"><br>\n  Address: <input type=\"text\" name=\"place\"\
+    ><br>\n  <button type=\"submit\">Submit</button>\n  <button type=\"submit\" formmethod=\"\
+    post\" formaction=\"http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php\"\
+    >Submit using POST</button>\n</form>\n</body>\n</html>\n```\n\n### 输出\n\n![](img/3c47590736460ba39948e1c4764537c3_49_0.png)\n\
+    \n## 指定提交表单后响应的显示位置\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n \
+    \ <meta charset=\"utf-8\">\n  <title>How to specify where to display the response\
+    \ after submitting the form</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formtarget-answer-demo.php\"\
+    \ method=\"POST\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button>\n  <button type=\"submit\" formtarget=\"_blank\">Submit to a\
+    \ new window/tab</button>\n</form>\n</body>\n</html>\n```\n\n### 输出\n\n![](img/3c47590736460ba39948e1c4764537c3_50_0.png)\n\
+    \n## 为按钮指定名称\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+    utf-8\">\n<title>How to specify a name for the button</title>\n</head>\n<body>\n\
+    <form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-name-answer-demo.php\"\
+    \ method=\"post\">\nChoose your favorite topic:\n<button name=\"topic\" type=\"\
+    submit\" value=\"JavaScript\">JavaScript</button>\n<button name=\"topic\" type=\"\
+    submit\" value=\"PHP\">PHP</button>\n</form>\n</body>\n</html>\n```\n\n### 输出\n\
+    \n![](img/3c47590736460ba39948e1c4764537c3_51_0.png)\n\n## JQUERY 编程练习\n\n###\
+    \ 初学者编程\n\n### JJ TAM\n\n## JQUERY 编程练习\n\n### 检查 jQuery 是否已加载\n\n### HTML 代码\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n    <meta charset=\"utf-8\">\n    <title>Test if jQuery is loaded</title>\n\
+    </head>\n<body>\n<p>Click me!</p>\n</body>\n</html>\n```\n\n### JavaScript 代码\n\
+    \n```\n$(\"p\").bind(\"click\", function(){\n    $( \"This is a click Event\"\
+    ).appendTo( \"body\" );\n});\n\n$(\"p\").bind(\"dblclick\", function(){\n    $(\
+    \ \"This is a double-click Event\" ).appendTo( \"body\" );\n});\n```\n\n### 输出\n\
+    \nClick me!\n\nThis is a click Event\n\n## 滚动到页面顶部\n\n### HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<title>Scroll to the top of the page with\
+    \ jQuery</title>\n</head>\n<body>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<a href='#top'>Go\
+    \ Top</a>\n</body>\n</html>\n```\n\n### JavaScript 代码\n\n```\n$(\"a[href='#top']\"\
+    ).click(function() {\n    $(\"html, body\").animate({ scrollTop: 0 }, \"slow\"\
+    );\n    return false;\n});\n```\n\n## 禁用 HTML 页面中的右键菜单\n\n### HTML 代码\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Disable right click menu in html\
+    \ page using jquery</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JavaScript\
+    \ 代码\n\n```\n$(document).bind(\"contextmenu\",function(e){\n  return false;\n\
+    });\n```\n\n## 禁用/启用表单提交按钮\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n<meta charset=\"\
+    utf-8\">\n<title>Disable/enable the form submit button</title>\n</head>\n<body>\n\
+    <input id=\"accept\" name=\"accept\" type=\"checkbox\" value=\"y\"/>I accept<br>\n\
+    <input id=\"submitbtn\" disabled=\"disabled\" name=\"Submit\" type=\"submit\"\
+    \ value=\"Submit\" />\n</body>\n</html>\n```\n\n### JavaScript 代码\n\n```\n$('#accept').click(function()\
+    \ {\n    if ($('#submitbtn').is(':disabled')) {\n        $('#submitbtn').removeAttr('disabled');\n\
+    \    } else {\n        $('#submitbtn').attr('disabled', 'disabled');\n    }\n\
+    });\n```\n\n### 输出\n\n![](img/3c47590736460ba39948e1c4764537c3_57_0.png)\n\n##\
+    \ 使用 jQuery 实现文字闪烁\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+    \ src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta charset=\"\
+    utf-8\">\n  <title>Blink text using jQuery</title>\n</head>\n<body>\n  <p>jQuery\
+    \ <span class=\"blink\">Exercises</span> and Solution</p>\n</body>\n</html>\n\
+    ```\n\n### JavaScript 代码\n\n```\nfunction blink_text() {\n    $('.blink').fadeOut(500);\n\
+    \    $('.blink').fadeIn(500);\n}\nsetInterval(blink_text, 1000);\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 40]\n\n# Define the document's body\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>How to define the document's\
+    \ body</title>\n</head>\n<body>\nWe are learning HTML body element.\n</body>\n\
+    </html>\n```\n\n# OUTPUT\n\nWe are learning HTML body element."
+  - "[PAGE 41]\n\n# # Defines a single line break\n\n# ## HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to define a\
+    \ single line break</title>\n</head>\n<body>\n  <p>The quick brown fox jumps<br>over\
+    \ the lazy dog.</p>\n</body>\n</html>\n```\n\n# ## OUTPUT\n\nThe quick brown fox\
+    \ jumps\nover the lazy dog."
+  - "[PAGE 42]\n\n# # Define a clickable button\n\n# ## HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to define a\
+    \ clickable button.</title>\n</head>\n<body>\n  <button type=\"button\" onclick=\"\
+    console.log('Welcome Friends')\">Click Me!</button>\n</body>\n</html>\n```"
+  - "[PAGE 43]\n\n# Specify that a button automatically get focus when the page load\n\
+    \nHTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <title>The example of autofocus attribute with button element.</title>\n\
+    </head>\n<body>\n    <button type=\"button\" autofocus onclick=\"console.log('Welcome\
+    \ Friends')\">Click Me!</button>\n</body>\n</html>\n```"
+  - "[PAGE 44]\n\n# Specify a button should be disabled\n\nHTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Example of HTML\
+    \ disabled attribute with button</title>\n</head>\n<body>\n<form action=\"example.php\"\
+    \ method=\"post\">\nFirst Name : <input type=\"text\" name=\"Fname\"><br>\n<button\
+    \ type=\"button\" name=\"Submit\" disabled>Submit</button>\n</body>\n</html>\n\
+    ```\n\nOUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_44_0.png)"
+  - "[PAGE 45]\n\n# # Specify one or more forms the button belongs to\n\n# ## HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <title>How to specify one or more forms the button belongs to</title>\n</head>\n\
+    <body>\n<form method=\"POST\"\naction=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-form-answer-demo.php\"\
+    \ id=\"form1\">\n  First name : <input type=\"text\" name=\"fname\"><br>\n  Last\
+    \ name : <input type=\"text\" name=\"lname\"><br>\n  Present Address : <input\
+    \ type=\"text\" name=\"add\"><br>\n  E-mail : <input type=\"text\" name=\"mail\"\
+    ><br>\n</form>\n<button type=\"submit\" form=\"form1\" value=\"Submit\">Submit</button>\n\
+    </body>\n</html>\n```\n\n# ## OUTPUT"
+  - '[PAGE 46]
+
+
+    First name :
+
+
+    Last name :
+
+
+    Present Address :
+
+
+    E-mail :
+
+
+    Submit'
+  - "[PAGE 47]\n\n# # Specify where to send the form-data when a form is submitted\n\
+    \n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>How to Specify where to send the form-data when a form is submitted.</title>\n\
+    </head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-answer-demo.php\"\
+    \ method=\"post\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button><br>\n  <button type=\"submit\" formation=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-admin-demo.php\"\
+    >Submit as admin</button>\n</form>\n</body>\n</html>\n```\n\n# ## OUTPUT"
+  - '[PAGE 48]
+
+
+    <!-- no content -->'
+  - "[PAGE 49]\n\n# # Send the form-data\n(which HTTP method to use)\n\n## HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How\
+    \ to send the form-data,which HTTP method to use</title>\n</head>\n<body>\n<form\
+    \ action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php\"\
+    >\n  First name: <input type=\"text\" name=\"fname\"><br>\n  Last name: <input\
+    \ type=\"text\" name=\"lname\"><br>\n  Address: <input type=\"text\" name=\"place\"\
+    ><br>\n  <button type=\"submit\">Submit</button>\n  <button type=\"submit\" formmethod=\"\
+    post\" formaction=\"http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php\"\
+    >Submit using POST</button>\n</form>\n</body>\n</html>\n```\n\n## OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_49_0.png)"
+  - "[PAGE 50]\n\n# Specify where to display the response after submitting the form\n\
+    \n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>How to specify where to display the response after submitting the\
+    \ form</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formtarget-answer-demo.php\"\
+    \ method=\"POST\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button>\n  <button type=\"submit\" formtarget=\"_blank\">Submit to a\
+    \ new window/tab</button>\n</form>\n</body>\n</html>\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_50_0.png)"
+  - "[PAGE 51]\n\n# Specify a name for the button\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n<title>How to specify a name\
+    \ for the button</title>\n</head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-name-answer-demo.php\"\
+    \ method=\"post\">\nChoose your favorite topic:\n<button name=\"topic\" type=\"\
+    submit\" value=\"JavaScript\">JavaScript</button>\n<button name=\"topic\" type=\"\
+    submit\" value=\"PHP\">PHP</button>\n</form>\n</body>\n</html>\n```\n\n# OUTPUT\n\
+    \n![](img/3c47590736460ba39948e1c4764537c3_51_0.png)"
+  - '[PAGE 52]
+
+
+    # JQUERY CODING EXERCISES
+
+
+    # CODING FOR BEGINNERS
+
+
+    # JJ TAM'
+  - "[PAGE 53]\n\n# JQUERY CODING EXERCISES\n\n# Check jQuery is loaded\n\n# HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n    <meta charset=\"utf-8\">\n    <title>Test if jQuery is loaded</title>\n\
+    </head>\n<body>\n<p>Click me!</p>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\
+    \n```\n$(\"p\").bind(\"click\", function(){\n    $( \"This is a click Event\"\
+    ).appendTo( \"body\" );\n});\n\n$(\"p\").bind(\"dblclick\", function(){\n    $(\
+    \ \"This is a double-click Event\" ).appendTo( \"body\" );\n});\n```\n\n# OUTPUT\n\
+    \nClick me!\n\nThis is a click Event"
+  - '[PAGE 54]
+
+
+    # # Scroll to the top
+
+
+    # ## of the page
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    ```
+
+
+    ```
+
+    <html>
+
+    ```
+
+
+    ```
+
+    <head>
+
+    ```
+
+
+    ```
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    ```
+
+
+    ```
+
+    <meta charset="utf-8">
+
+    ```
+
+
+    ```
+
+    <title>Scroll to the top of the page with jQuery</title>
+
+    ```
+
+
+    ```
+
+    </head>
+
+    ```
+
+
+    ```
+
+    <body>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p >
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```'
+  - "[PAGE 55]\n\n```\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <p>jquery</p>\n<a href='#top'>Go Top</a>\n</body>\n</html>\n```\n\n# JAVASCRIPT\
+    \ CODE\n\n```\n$(\"a[href='#top']\").click(function() {\n    $(\"html, body\"\
+    ).animate({ scrollTop: 0 }, \"slow\");\n    return false;\n});\n```"
+  - "[PAGE 56]\n\n# Disable right click menu\n\n# In html page\n\n# HTML CODE\n\n\
+    ```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Disable right click menu in html\
+    \ page using jquery</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n# JAVASCRIPT\
+    \ CODE\n\n```\nosphate$(document).bind(\"contextmenu\",function(e){\n  return\
+    \ false;\n});\n```"
+  - "[PAGE 57]\n\n# Disable/enable the form submit button\n\n# HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<title>Disable/enable the form submit button</title>\n\
+    </head>\n<body>\n<input id=\"accept\" name=\"accept\" type=\"checkbox\" value=\"\
+    y\"/>I accept<br>\n<input id=\"submitbtn\" disabled=\"disabled\" name=\"Submit\"\
+    \ type=\"submit\" value=\"Submit\" />\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\
+    \n```\n$('#accept').click(function() {\n    if ($('#submitbtn').is(':disabled'))\
+    \ {\n        $('#submitbtn').removeAttr('disabled');\n    } else {\n        $('#submitbtn').attr('disabled',\
+    \ 'disabled');\n    }\n});\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_57_0.png)"
+  - "[PAGE 58]\n\n# Blink text\n\n# using jQuery\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Blink text using jQuery</title>\n\
+    </head>\n<body>\n  <p>jQuery <span class=\"blink\">Exercises</span> and Solution</p>\n\
+    </body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\nfunction blink_text() {\n \
+    \   $('.blink').fadeOut(500);\n    $('.blink').fadeIn(500);\n}\nsetInterval(blink_text,\
+    \ 1000);\n```"
+- md: " ## Create table effect\n\n## Like Zebra Stripes\n\n### HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n<style type=\"text/css\">.table_style\
+    \ {\n        width: 500px;\n        margin: 0px auto;\n    }\n    table{\n   \
+    \ width: 100%;\n    border-collapse: collapse;\n    }\n    table tr td{\n    width:\
+    \ 50%;\n    border: 1px solid #ff751a;\n    padding: 5px;\n    }\n    table tr\
+    \ th{\n    border: 1px solid #79ff4d;\n    padding: 5px;\n    }\n    .zebra{\n\
+    \    background-color: #ff0066;\n    }\n    </style>\n  <title>Create a Zebra\
+    \ Stripes table effect</title>\n</head>\n<body>\n<div class=\"table_style\">\n\
+    <table>\n  <tr>\n    <th>Student Name</th>\n    <th>Marks in Science</th>\n  </tr>\n\
+    \  <tr>\n    <td>James</td>\n    <td>85.00</td>\n  </tr>\n  <tr>\n    <td>David</td>\n\
+    \    <td>92.00</td>\n  </tr>\n  <tr>\n    <td>Arthur</td>\n    <td>79.00</td>\n\
+    \  </tr>\n  <tr>\n    <td>George</td>\n    <td>82.00</td>\n  </tr>\n</table>\n\
+    </div>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \    $(\"tr:odd\").addClass(\"zebra\");\n});\n```\n\n# OUTPUT\n\n| Student Name\
+    \ | Marks in Science |\n| --- | --- |\n| James | 85.00 |\n| David | 92.00 |\n\
+    | Arthur | 79.00 |\n| George | 82.00 |\n\n---\n\n## Make first word bold\n\n##\
+    \ HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Make first word bold of all elements</title>\n\
+    </head>\n<body>\n  <p>PHP Exercises</p>\n  <p>Python Exercises</p>\n  <p>JavaScript\
+    \ Exercises</p>\n  <p>jQuery Exercises</p>\n</body>\n</html>\n```\n\n## JAVASCRIPT\
+    \ CODE\n\n```\n$('p').each(function(){\n         var pdata = $(this);\n      \
+    \   pdata.html( pdata.text().replace(/(^\\w+)/,'<b>$1</b>') );\n});\n```\n\n##\
+    \ OUTPUT\n\n**PHP** Exercises\n\n**Python** Exercises\n\n**JavaScript** Exercises\n\
+    \n**jQuery** Exercises\n\n---\n\n# Underline all the words\n\n# HTML CODE\n\n\
+    ```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Underline all words of a text through jQuery</title>\n</head>\n<body>\n\
+    <p>The best way we learn anything is by practice and exercise questions</p>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np span{\n    text-decoration: underline;\n\
+    }\n```\n\n# JAVASCRIPT CODE\n\n```\n$('p').each(function() {\n\nvar text_words\
+    \ = $(this).text().split(' ');\n\n    $(this).empty().html(function() {\n\n  \
+    \      for (i = 0; i < text_words.length; i++) {\n        if (i === 0) {\n   \
+    \     $(this).append('<span>' + text_words[i] + '</span>');\n        } else {\n\
+    \        $(this).append(' <span>' + text_words[i] + '</span>');\n        }\n \
+    \       }\n    });\n});\n```\n\n# OUTPUT\n\nThe best way we learn anything is\
+    \ by practice and exercise questions\n\n---\n\n# Change button text using jQuery\n\
+    \n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Change button text using jQuery.</title>\n</head>\n<body>\n<input type='button'\
+    \ value='Cancel' id='button1'>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n\
+    ```\n//Uncomment the following code and see the changes.\n\n//$(\"#button1\").prop('value',\
+    \ 'Save');\n```\n\n---\n\n# Add options to a drop-down list\n\nUsing jQuery\n\n\
+    # HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Add options to a drop-down list using jQuery.</title>\n</head>\n<body>\n\
+    <p>List of Colors :</p>\n<select id='myColors'>\n<option value=\"Red\">Red</option>\n\
+    <option value=\"Green\">Green</option>\n<option value=\"White\">White</option>\n\
+    <option value=\"Black Pant\">Black</option>\n</select>\n</body>\n</html>\n```\n\
+    \n# JAVASCRIPT CODE\n\n```\nvar myOptions = {\n    val1 : 'Blue',\n    val2 :\
+    \ 'Orange'\n};\nvar mySelect = $('#myColors');\n$.each(myOptions, function(val,\
+    \ text) {\n    mySelect.append(\n        $('<option></option>').val(val).html(text)\n\
+    \    );\n});\n```\n\n# OUTPUT\n\nList of Colors :\n\n- Red\n- Green\n- White\n\
+    - Black\n- Blue\n- Orange\n\n---\n\n## Set background-image\n\n## Using jQuery\
+    \ CSS property\n\n## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+    \ src=\"https://code.jquery.com/jquery-git.js\"></script>\n<meta charset=\"utf-8\"\
+    >\n<meta name=\"viewport\" content=\"width=device-width\">\n<title>Set background-image\
+    \ using jQuery CSS property.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\
+    \n## JAVASCRIPT CODE\n\n```\n$('body').css('background-image',\n'url(\"https://www.htmlresource.com/includes/jquery-images/jquery.gif\"\
+    )');\n```\n\n## Output\n\n---\n\n## Delete all table rows except first one\n\n\
+    using jQuery\n\n## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+    \ src=\"https://code.jquery.com/jquery-git.js\"></script>\n<meta charset=\"utf-8\"\
+    >\n<meta name=\"viewport\" content=\"width=device-width\">\n<title>Delete all\
+    \ table rows except first one using jQuery.</title>\n</head>\n<body>\n<table border=\"\
+    1\" id=\"myTable\">\n<tr>\n<th>Year</th>\n<th>Savings</th>\n</tr>\n<tr>\n<td>2014</td>\n\
+    <td>$10000</td>\n</tr>\n<tr>\n<td>2015</td>\n<td>$8000</td>\n</tr>\n<tr>\n<td>2016</td>\n\
+    <td>$9000</td>\n</tr>\n</table>\n<p>\n<input id=\"button1\" type=\"button\" value=\"\
+    Click to remove all rows except first one\"/></p>\n</body>\n</html>\n```\n\n#\
+    \ JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\t$('#button1').click(function(){\n\
+    \t\t$(\"#myTable\").find(\"tr:gt(0)\").remove();\n\t});\n});\n```\n\n# OUTPUT\n\
+    \n---\n\n## Disable a link\n\n## Using jQuery\n\n## HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Disable a link using jQuery</title>\n</head>\n<body>\n<a href=\"https://www.htmlresource.com/jquery-exercises/\"\
+    >jQuery Exercises, Practice, Solution</a>\n<p></p>\n  <input id=\"button1\" type=\"\
+    button\" value=\"Click to remove the link!\" />\n</body>\n</html>\n```\n\n## JAVASCRIPT\
+    \ CODE\n\n```\n$(document).ready(function(){\n  $('#button1').click(function(){\n\
+    \  $(\"a\").removeAttr('href');\n   });\n});\n```\n\n## OUTPUT\n\n---\n\n## Change\
+    \ a CSS class\n\n## Using jQuery\n\n### HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"https://code.jquery.com/jquery-git.js\"></script>\n<meta\
+    \ charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\">\n\
+    <title>Change a CSS class name using jQuery.</title>\n</head>\n<body>\n<p id=\"\
+    pid\" class=\"center\"> jQuery Exercises</p>\n<input id=\"button1\" type=\"button\"\
+    \ value=\"Click to change the Class\" />\n</body>\n</html>\n```\n\n### CSS CODE\n\
+    \n```\np.center {\n    text-align: center;\n    color: red;\n}\n\np.large {\n\
+    \    font-size: 200%;\n}\n```\n\n### JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \  $('#button1').click(function()\n { $('#pid').removeClass('center').addClass('large');\n\
+    \   });\n});\n```\n\n---\n\n## Set the background color\n\n## HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Set the background color red of the following elements using jQuery.</title>\n\
+    <style type=\"?\"\n\n\n<div style=\"page-break-after: always\"></div>\n\n```\n\
+    \n## JAVASCRIPT CODE\n\n```\n$('#button1').click(function(){\n$(\"p\").add( \"\
+    span\" ).add(\"textarea\").css( \"background\", \"red\" );\n});\n```\n\n---\n\n\
+    # Add the previous set of elements\n\n# On the stack to the current set\n\n# HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Using jQuery add the previous set of elements on the stack to the current\
+    \ set.</title>\n</head>\n<body>\n<div class=\"left\">\n<p><strong>Before <code>addBack()</code></strong></p>\n\
+    <div class=\"before-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    <div class=\"right\">\n<p><strong>After <code>addBack()</code></strong></p>\n\
+    <div class=\"after-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np, div {\n    margin: 5px;\n```"
+  mdcn: "\n ## 创建表格效果\n\n## 斑马条纹效果\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta\
+    \ charset=\"utf-8\">\n<style type=\"text/css\">.table_style {\n        width:\
+    \ 500px;\n        margin: 0px auto;\n    }\n    table{\n    width: 100%;\n   \
+    \ border-collapse: collapse;\n    }\n    table tr td{\n    width: 50%;\n    border:\
+    \ 1px solid #ff751a;\n    padding: 5px;\n    }\n    table tr th{\n    border:\
+    \ 1px solid #79ff4d;\n    padding: 5px;\n    }\n    .zebra{\n    background-color:\
+    \ #ff0066;\n    }\n    </style>\n  <title>Create a Zebra Stripes table effect</title>\n\
+    </head>\n<body>\n<div class=\"table_style\">\n<table>\n  <tr>\n    <th>Student\
+    \ Name</th>\n    <th>Marks in Science</th>\n  </tr>\n  <tr>\n    <td>James</td>\n\
+    \    <td>85.00</td>\n  </tr>\n  <tr>\n    <td>David</td>\n    <td>92.00</td>\n\
+    \  </tr>\n  <tr>\n    <td>Arthur</td>\n    <td>79.00</td>\n  </tr>\n  <tr>\n \
+    \   <td>George</td>\n    <td>82.00</td>\n  </tr>\n</table>\n</div>\n</body>\n\
+    </html>\n```\n\n# JAVASCRIPT 代码\n\n```\n$(document).ready(function(){\n    $(\"\
+    tr:odd\").addClass(\"zebra\");\n});\n```\n\n# 输出\n\n| 学生姓名 | 科学成绩 |\n| --- | ---\
+    \ |\n| James | 85.00 |\n| David | 92.00 |\n| Arthur | 79.00 |\n| George | 82.00\
+    \ |\n\n---\n\n## 将第一个词加粗\n\n## HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta charset=\"\
+    utf-8\">\n  <title>Make first word bold of all elements</title>\n</head>\n<body>\n\
+    \  <p>PHP Exercises</p>\n  <p>Python Exercises</p>\n  <p>JavaScript Exercises</p>\n\
+    \  <p>jQuery Exercises</p>\n</body>\n</html>\n```\n\n## JAVASCRIPT 代码\n\n```\n\
+    $('p').each(function(){\n         var pdata = $(this);\n         pdata.html( pdata.text().replace(/(^\\\
+    w+)/,'<b>$1</b>') );\n});\n```\n\n## 输出\n\n**PHP** Exercises\n\n**Python** Exercises\n\
+    \n**JavaScript** Exercises\n\n**jQuery** Exercises\n\n---\n\n# 为所有文字添加下划线\n\n\
+    # HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Underline all words of a text through jQuery</title>\n</head>\n<body>\n\
+    <p>The best way we learn anything is by practice and exercise questions</p>\n\
+    </body>\n</html>\n```\n\n# CSS 代码\n\n```\np span{\n    text-decoration: underline;\n\
+    }\n```\n\n# JAVASCRIPT 代码\n\n```\n$('p').each(function() {\n\nvar text_words =\
+    \ $(this).text().split(' ');\n\n    $(this).empty().html(function() {\n\n    \
+    \    for (i = 0; i < text_words.length; i++) {\n        if (i === 0) {\n     \
+    \   $(this).append('<span>' + text_words[i] + '</span>');\n        } else {\n\
+    \        $(this).append(' <span>' + text_words[i] + '</span>');\n        }\n \
+    \       }\n    });\n});\n```\n\n# 输出\n\nThe best way we learn anything is by practice\
+    \ and exercise questions\n\n---\n\n# 使用 jQuery 更改按钮文本\n\n# HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Change button text using jQuery.</title>\n</head>\n<body>\n<input type='button'\
+    \ value='Cancel' id='button1'>\n</body>\n</html>\n```\n\n# JAVASCRIPT 代码\n\n```\n\
+    //Uncomment the following code and see the changes.\n\n//$(\"#button1\").prop('value',\
+    \ 'Save');\n```\n\n---\n\n# 向下拉列表添加选项\n\n使用 jQuery\n\n # HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Add options to a drop-down list using jQuery.</title>\n</head>\n<body>\n\
+    <p>List of Colors :</p>\n<select id='myColors'>\n<option value=\"Red\">Red</option>\n\
+    <option value=\"Green\">Green</option>\n<option value=\"White\">White</option>\n\
+    <option value=\"Black Pant\">Black</option>\n</select>\n</body>\n</html>\n```\n\
+    \n# JAVASCRIPT 代码\n\n```\nvar myOptions = {\n    val1 : 'Blue',\n    val2 : 'Orange'\n\
+    };\nvar mySelect = $('#myColors');\n$.each(myOptions, function(val, text) {\n\
+    \    mySelect.append(\n        $('<option></option>').val(val).html(text)\n  \
+    \  );\n});\n```\n\n# 输出\n\n颜色列表：\n\n- Red\n- Green\n- White\n- Black\n- Blue\n\
+    - Orange\n\n---\n\n## 设置背景图片\n\n## 使用 jQuery CSS 属性\n\n## HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Set background-image using jQuery CSS property.</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n## JAVASCRIPT 代码\n\n```\n$('body').css('background-image',\n\
+    'url(\"https://www.htmlresource.com/includes/jquery-images/jquery.gif\")');\n\
+    ```\n\n## 输出\n\n---\n\n## 删除表格中除第一行外的所有行\n\n使用 jQuery\n\n## HTML 代码\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Delete all table rows except first one using jQuery.</title>\n</head>\n\
+    <body>\n<table border=\"1\" id=\"myTable\">\n<tr>\n<th>Year</th>\n<th>Savings</th>\n\
+    </tr>\n<tr>\n<td>2014</td>\n<td>$10000</td>\n</tr>\n<tr>\n<td>2015</td>\n<td>$8000</td>\n\
+    </tr>\n<tr>\n<td>2016</td>\n<td>$9000</td>\n</tr>\n</table>\n<p>\n<input id=\"\
+    button1\" type=\"button\" value=\"Click to remove all rows except first one\"\
+    /></p>\n</body>\n</html>\n```\n\n# JAVASCRIPT 代码\n\n```\n$(document).ready(function(){\n\
+    \t$('#button1').click(function(){\n\t\t$(\"#myTable\").find(\"tr:gt(0)\").remove();\n\
+    \t});\n});\n```\n\n# 输出\n\n---\n\n## 禁用链接\n\n## 使用 jQuery\n\n## HTML 代码\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Disable a link using jQuery</title>\n</head>\n<body>\n<a href=\"https://www.htmlresource.com/jquery-exercises/\"\
+    >jQuery Exercises, Practice, Solution</a>\n<p></p>\n  <input id=\"button1\" type=\"\
+    button\" value=\"Click to remove the link!\" />\n</body>\n</html>\n```\n\n## JAVASCRIPT\
+    \ 代码\n\n```\n$(document).ready(function(){\n  $('#button1').click(function(){\n\
+    \  $(\"a\").removeAttr('href');\n   });\n});\n```\n\n## 输出\n\n---\n\n## 更改 CSS\
+    \ 类\n\n## 使用 jQuery\n\n### HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+    \ src=\"https://code.jquery.com/jquery-git.js\"></script>\n<meta charset=\"utf-8\"\
+    >\n<meta name=\"viewport\" content=\"width=device-width\">\n<title>Change a CSS\
+    \ class name using jQuery.</title>\n</head>\n<body>\n<p id=\"pid\" class=\"center\"\
+    > jQuery Exercises</p>\n<input id=\"button1\" type=\"button\" value=\"Click to\
+    \ change the Class\" />\n</body>\n</html>\n```\n\n### CSS 代码\n\n```\np.center\
+    \ {\n    text-align: center;\n    color: red;\n}\n\np.large {\n    font-size:\
+    \ 200%;\n}\n```\n\n### JAVASCRIPT 代码\n\n```\n$(document).ready(function(){\n \
+    \ $('#button1').click(function()\n { $('#pid').removeClass('center').addClass('large');\n\
+    \   });\n});\n```\n\n---\n\n## 设置背景颜色\n\n## HTML 代码\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"></script>\n\
+    <meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Set the background color red of the following elements using jQuery.</title>\n\
+    <style type=\"?\"\n\n\n<div style=\"page-break-after: always\"></div>\n\n```\n\
+    \n## JAVASCRIPT 代码\n\n```\n$('#button1').click(function(){\n$(\"p\").add( \"span\"\
+    \ ).add(\"textarea\").css( \"background\", \"red\" );\n});\n```\n\n---\n\n# 将之前堆栈上的元素集合\n\
+    \n# 添加到当前集合\n\n# HTML 代码\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"\
+    https://code.jquery.com/jquery-git.js\"></script>\n<meta charset=\"utf-8\">\n\
+    <meta name=\"viewport\" content=\"width=device-width\">\n<title>Using jQuery add\
+    \ the previous set of elements on the stack to the current set.</title>\n</head>\n\
+    <body>\n<div class=\"left\">\n<p><strong>Before <code>addBack()</code></strong></p>\n\
+    <div class=\"before-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    <div class=\"right\">\n<p><strong>After <code>addBack()</code></strong></p>\n\
+    <div class=\"after-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    </body>\n</html>\n```\n\n# CSS 代码\n\n```\np, div {\n    margin: 5px;\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 59]\n\n# # Create table effect\n\n# ## Like Zebra Stripes\n\n# ### HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n<style type=\"text/css\">.table_style\
+    \ {\n        width: 500px;\n        margin: 0px auto;\n    }\n    table{\n   \
+    \ width: 100%;\n    border-collapse: collapse;\n    }\n    table tr td{\n    width:\
+    \ 50%;\n    border: 1px solid #ff751a;\n    padding: 5px;\n    }\n    table tr\
+    \ th{\n    border: 1px solid #79ff4d;\n    padding: 5px;\n    }\n    .zebra{\n\
+    \    background-color: #ff0066;\n    }\n    </style>\n  <title>Create a Zebra\
+    \ Stripes table effect</title>\n</head>\n<body>\n<div class=\"table_style\">\n\
+    ```"
+  - "[PAGE 60]\n\n```\n<table>\n  <tr>\n    <th>Student Name</th>\n    <th>Marks in\
+    \ Science</th>\n  </tr>\n  <tr>\n    <td>James</td>\n    <td>85.00</td>\n  </tr>\n\
+    \  <tr>\n    <td>David</td>\n    <td>92.00</td>\n  </tr>\n  <tr>\n    <td>Arthur</td>\n\
+    \    <td>79.00</td>\n  </tr>\n  <tr>\n    <td>George</td>\n    <td>82.00</td>\n\
+    \  </tr>\n</table>\n</div>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n\
+    $(document).ready(function(){\n    $(\"tr:odd\").addClass(\"zebra\");\n});\n```\n\
+    \n# OUTPUT"
+  - '[PAGE 61]
+
+
+    | Student Name | Marks in Science |
+
+    | --- | --- |
+
+    | James | 85.00 |
+
+    | David | 92.00 |
+
+    | Arthur | 79.00 |
+
+    | George | 82.00 |'
+  - "[PAGE 62]\n\n# # Make first word bold\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n\
+    \  <meta charset=\"utf-8\">\n  <title>Make first word bold of all elements</title>\n\
+    </head>\n<body>\n  <p>PHP Exercises</p>\n  <p>Python Exercises</p>\n  <p>JavaScript\
+    \ Exercises</p>\n  <p>jQuery Exercises</p>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT\
+    \ CODE\n\n```\n$('p').each(function(){\n         var pdata = $(this);\n      \
+    \   pdata.html( pdata.text().replace(/(^\\w+)/,'$1') );\n});\n```\n\n# ## OUTPUT\n\
+    \n**PHP** Exercises\n\n**Python** Exercises\n\n**JavaScript** Exercises\n\n**jQuery**\
+    \ Exercises"
+  - "[PAGE 63]\n\n# Underline all the words\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"></script>\n\
+    <meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Underline all words of a text through jQuery</title>\n</head>\n<body>\n\
+    <p>The best way we learn anything is by practice and exercise questions</p>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np span{\n    text-decoration: underline;\n\
+    }\n```\n\n# JAVASCRIPT CODE\n\n```\n$('p').each(function() {\n\nvar text_words\
+    \ = $(this).text().split(' ');\n\n    $(this).empty().html(function() {\n\n  \
+    \      for (i = 0; i < text_words.length; i++) {\n        if (i === 0) {\n   \
+    \     $(this).append('<span>' + text_words[i] + '</span>');\n        } else {\n\
+    \        $(this).append(' <span>' + text_words[i] + '</span>');\n        }\n \
+    \       }\n    });\n```"
+  - '[PAGE 64]
+
+
+    ```
+
+    });
+
+    ```
+
+
+    # OUTPUT
+
+
+    The best way we learn anything is by practice and exercise'
+  - '[PAGE 65]
+
+
+    # Change button text using jQuery
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Change button text using jQuery.</title>
+
+    </head>
+
+    <body>
+
+    <input type=''button'' value=''Cancel'' id=''button1''>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    //Uncomment the following code and see the changes.
+
+
+    //$("#button1").prop(''value'', ''Save'');
+
+    ```'
+  - "[PAGE 66]\n\n# Add options to a drop-down list\nUsing jQuery\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Add options to a drop-down list using jQuery.</title>\n</head>\n<body>\n\
+    <p>List of Colors :</p>\n<select id='myColors'>\n<option value=\"Red\">Red</option>\n\
+    <option value=\"Green\">Green</option>\n<option value=\"White\">White</option>\n\
+    <option value=\"Black\">Black</option>\n</select>\n</body>\n</html>\n```\n\n#\
+    \ JAVASCRIPT CODE\n\n```\nvar myOptions = {\n    val1 : 'Blue',\n    val2 : 'Orange'\n\
+    };\nvar mySelect = $('#myColors');\n$.each(myOptions, function(val, text) {\n\
+    \    mySelect.append(\n        $('<option></option>').val(val).html(text)\n  \
+    \  );\n});\n```"
+  - '[PAGE 67]
+
+
+    # OUTPUT
+
+
+    ![](img/3c47590736460ba39948e1c4764537c3_67_0.png)
+
+
+    List of Colors :
+
+
+    Red'
+  - '[PAGE 68]
+
+
+    # # Set background-image
+
+
+    # ## Using jQuery CSS property
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Set background-image using jQuery CSS property.</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''body'').css(''background-image'',
+
+    ''url("https://www.htmlresource.com/includes/jquery-images/jquery.gif")'');
+
+    ```
+
+
+    # ## Output
+
+
+    ![](img/3c47590736460ba39948e1c4764537c3_68_0.png)'
+  - '[PAGE 69]
+
+
+    # # Delete all table rows except first one
+
+
+    using jQuery
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Delete all table rows except first one using jQuery.</title>
+
+    </head>
+
+    <body>
+
+    <table border="1" id="myTable">
+
+    <tr>
+
+    <th>Year</th>
+
+    <th>Savings</th>
+
+    </tr>
+
+    <tr>
+
+    <td>2014</td>
+
+    <td>$10000</td>
+
+    </tr>
+
+    <tr>
+
+    <td>2015</td>
+
+    <td>$8000</td>
+
+    </tr>
+
+    <tr>
+
+    <td>2016</td>
+
+    <td>$9000</td>
+
+    </tr>
+
+    </table>
+
+    <p>
+
+    <input id="button1" type="button" value="Click to remove all rows except first
+    one"/></p>
+
+    </body>
+
+    ```'
+  - "[PAGE 70]\n\n```\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \t$('#button1').click(function(){\n\t\t$(\"#myTable\").find(\"tr:gt(0)\").remove();\n\
+    \t});\n});\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_70_0.png)"
+  - "[PAGE 71]\n\n# # Disable a link\n\n# ## Using jQuery\n\n# ## HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Disable a link using jQuery</title>\n</head>\n<body>\n<a href=\"https://www.htmlresource.com/jquery-exercises/\"\
+    >jQuery Exercises, Practice, Solution</a>\n<p></p>\n  <input id=\"button1\" type=\"\
+    button\" value=\"Click to remove the link!\" />\n</body>\n</html>\n```\n\n# ##\
+    \ JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n  $('#button1').click(function(){\n\
+    \  $(\"a\").removeAttr('href');\n   });\n});\n```\n\n# ## OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_71_0.png)"
+  - "[PAGE 72]\n\n# # Change a CSS class\n\n# ## Using jQuery\n\n# ### HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Change a CSS class name using jQuery.</title>\n</head>\n<body>\n<p id=\"\
+    pid\" class=\"center\"> jQuery Exercises</p>\n<input id=\"button1\" type=\"button\"\
+    \ value=\"Click to change the Class\" />\n</body>\n</html>\n```\n\n# ### CSS CODE\n\
+    \n```\np.center {\n    text-align: center;\n    color: red;\n}\n\np.large {\n\
+    \    font-size: 200%;\n}\n```\n\n# ### JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \  $('#button1').click(function()\n { $('#pid').removeClass('center').addClass('large');\n\
+    \   });\n});\n```"
+  - '[PAGE 73]
+
+
+    # # OUTPUT
+
+
+    ```
+
+    jQuery Exercises
+
+    Click to change the Class
+
+    ```'
+  - '[PAGE 74]
+
+
+    # # Set the background color
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Set the background color red of the following elements using jQuery.</title>
+
+    <style type="text/css">
+
+    button {
+
+    display: block;
+
+    margin: 20px 0 0 0;
+
+    }  </style>
+
+    </head>
+
+    <body>
+
+    <textarea>TutoRIAL</textarea>
+
+    <p>jQuery</p>
+
+    <span>Exercises</span>
+
+    <button id="button1">Click to see the effect</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''#button1'').click(function(){
+
+    $("p").add( "span" ).add("textarea").css( "background", "red" );
+
+    });
+
+    ```'
+  - "[PAGE 75]\n\n# Add the previous set of elements\n\n# On the stack to the current\
+    \ set\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Using jQuery add the previous set of elements on the stack to the current\
+    \ set.</title>\n</head>\n<body>\n<div class=\"left\">\n<p><strong>Before <code>addBack()</code></strong></p>\n\
+    <div class=\"before-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    <div class=\"right\">\n<p><strong>After <code>addBack()</code></strong></p>\n\
+    <div class=\"after-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np, div {\n    margin: 5px;\n```"
+- md: '## JAVASCRIPT CODE
+
+
+    ```javascript
+
+    $( "div.left, div.right" ).find( "div, div > p" ).addClass( "border" );
+
+
+    // First Part
+
+    $( "div.before-addback" ).find( "p" ).addClass( "background" );
+
+
+    // Second Part
+
+    $( "div.after-addback" ).find( "p" ).addBack().addClass( "background" );
+
+    ```
+
+
+    ## Add a specified class
+
+
+    ### To the matched elements
+
+
+    ### HTML CODE
+
+
+    ```html
+
+
+    ```
+
+
+    ### CSS CODE
+
+
+    ```css
+
+
+    ```
+
+
+    ### JAVASCRIPT CODE
+
+
+    ```javascript
+
+    $(''p'').last().addClass("h3r_font_color");
+
+    ```'
+  mdcn: '
+
+    ## JAVASCRIPT 代码
+
+
+    ```javascript
+
+    $( "div.left, div.right" ).find( "div, div > p" ).addClass( "border" );
+
+
+    // 第一部分
+
+    $( "div.before-addback" ).find( "p" ).addClass( "background" );
+
+
+    // 第二部分
+
+    $( "div.after-addback" ).find( "p" ).addBack().addClass( "background" );
+
+    ```
+
+
+    ## 添加指定的类
+
+
+    ### 到匹配的元素
+
+
+    ### HTML 代码
+
+
+    ```html
+
+
+    ```
+
+
+    ### CSS 代码
+
+
+    ```css
+
+
+    ```
+
+
+    ### JAVASCRIPT 代码
+
+
+    ```javascript
+
+    $(''p'').last().addClass("h3r_font_color");
+
+    ```
+
+    '
+  merge: 0
+  raw:
+  - "[PAGE 76]\n\n```\npadding: 5px;\ncolor: #c03199;\n}\n.border {\n  border: 2px\
+    \ solid #360e9b;\n}\n.background {\n  background: #cdc8b1;\n}\n.left, .right {\n\
+    \  width: 40%;\n  float: left;\n}\n.right {\n  margin-left: 2%;\n}\n```\n\n# JAVASCRIPT\
+    \ CODE\n\n```\n$( \"div.left, div.right\" ).find( \"div, div > p\" ).addClass(\
+    \ \"border\" );\n\n// First Part\n$( \"div.before-addback\" ).find( \"p\" ).addClass(\
+    \ \"background\" );\n\n// Second Part\n$( \"div.after-addback\" ).find( \"p\"\
+    \ ).addBack().addClass( \"background\" );\n```"
+  - '[PAGE 77]
+
+
+    # # Add a specified class
+
+
+    # ## To the matched elements
+
+
+    # ## HTML CODE
+
+
+    ```
+
+
+    ```
+
+
+    # ## CSS CODE
+
+
+    ```
+
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''p'').last().addClass("h3r_font_color");
+
+    ```'
+pages:
+- img_proc: true
+  md: '# JQUE CODI EXER
+
+
+    CODING WITH HA
+
+
+    WRITTEN B
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL
+
+
+    # HTML CODIN EXERC
+
+
+    CODING FC
+
+    WITH HAND
+
+
+    WRITTEN BY
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL
+
+
+    # JAVASCRIPT CODING EXERCISES
+
+
+    CODING FOR BEGINNERS
+
+    WITH HANDS ON PROJECTS
+
+
+    JS
+
+
+    WRITTEN BY
+
+    JJ TAM
+
+
+    EDITED BY
+
+    TAM SEL'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# CODING EXERCISES JAVASCRIPT, HTML AND JQUERY
+
+
+    # CODING FOR BEGINNERS JJ TAM'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# JAVASCRIPT CODING EXERCISES
+
+
+    +   - DISPLAY THE CURRENT DAY AND TIME
+
+    - PRINT THE CONTENTS
+
+    - DISPLAY THE CURRENT DATE
+
+    - FIND THE AREA OF A TRIANGLE
+
+    - CHECK WHETHER A GIVEN YEAR IS A LEAP YEAR
+
+    - CALCULATE MULTIPLICATION AND DIVISION
+
+    - CONVERT TEMPERATURES
+
+    - FIND THE LARGEST
+
+    - REVERSE A GIVEN STRING
+
+    - REPLACE EVERY CHARACTER
+
+    - CAPITALIZE THE FIRST LETTER
+
+
+    # HTML CODING EXERCISES
+
+
+    +   - COMMENT HTML TAGS
+
+    - CREATE A HYPERLINK IN HTML
+
+    - DOWNLOAD A FILE
+
+    - CREATE A LINK
+
+    - CREATE A NOFOLLOW LINK
+
+    - OPEN A LINKED DOCUMENT'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# CORRECT WAY TO WRITE ADDRESS
+
+
+    # SPECIFY AN ALTERNATE TEXT
+
+
+    # CREATE AN HTML DOCUMENT
+
+
+    # CREATE AN HTML DOCUMENT
+
+
+    # TO ADD CONTROLS TO AN AUDIO
+
+
+    # WRITE BOLD TEXT USING HTML TAGS
+
+
+    # TO SPECIFY THE BASE URL
+
+
+    # ISOLATE A PART OF TEXT
+
+
+    # DEFINE A SECTION
+
+
+    # DEFINE THE DOCUMENT''S BODY
+
+
+    # DEFINES A SINGLE LINE BREAK
+
+
+    # DEFINE A CLICKABLE BUTTON
+
+
+    # SPECIFY THAT A BUTTON
+
+
+    # SPECIFY A BUTTON SHOULD BE DISABLED
+
+
+    # SPECIFY ONE OR MORE FORMS
+
+
+    # SPECIFY WHERE TO SEND THE FORM-DATA
+
+
+    # SEND THE FORM-DATA
+
+
+    # SPECIFY WHERE TO DISPLAY
+
+
+    # SPECIFY A NAME FOR THE BUTTON
+
+
+    # JQUERY CODING EXERCISES'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# CHECK JQUERY IS LOADED
+
+
+    # SCROLL TO THE TOP
+
+
+    # DISABLE RIGHT CLICK MENU
+
+
+    # BLINK TEXT
+
+
+    # CREATE TABLE EFFECT
+
+
+    # MAKE FIRST WORD BOLD
+
+
+    # UNDERLINE ALL THE WORDS
+
+
+    # CHANGE BUTTON TEXT USING JQUERY
+
+
+    # ADD OPTIONS TO A DROP-DOWN LIST
+
+
+    # SET BACKGROUND-IMAGE
+
+
+    # DELETE ALL TABLE ROWS EXCEPT FIRST ONE
+
+
+    # DISABLE A LINK
+
+
+    # CHANGE A CSS CLASS
+
+
+    # SET THE BACKGROUND COLOR
+
+
+    # ADD THE PREVIOUS SET OF ELEMENTS
+
+
+    # ADD A SPECIFIED CLASS'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# # JAVASCRIPT CODING EXERCISES
+
+
+    # ## CODING FOR BEGINNERS
+
+
+    JJ TAM'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# JAVASCRIPT CODING EXERCISES
+
+
+    # Display the current day and time
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>JavaScript current day and time</title>
+
+    </head>
+
+    <body></body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    var today = new Date();
+
+    var day = today.getDay();
+
+    var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    console.log("Today is : " + daylist[day] + ".");
+
+    var hour = today.getHours();
+
+    var minute = today.getMinutes();
+
+    var second = today.getSeconds();
+
+    var prepand = (hour >= 12)? " PM ":" AM " ;
+
+    hour = (hour >= 12)? hour - 12: hour;
+
+    if (hour===0 && prepand==='' PM '')
+
+    {
+
+    if (minute===0 && second===0)
+
+    {
+
+    hour=12;
+
+    prepand='' Noon'';
+
+    }
+
+    else
+
+    ```'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '```
+
+    {
+
+    hour=12;
+
+    prepand='' PM'';
+
+    }
+
+    }
+
+    if (hour===0 && prepand==='' AM '')
+
+    {
+
+    if (minute===0 && second===0)
+
+    {
+
+    hour=12;
+
+    prepand='' Midnight'';
+
+    }
+
+    else
+
+    {
+
+    hour=12;
+
+    prepand='' AM'';
+
+    }
+
+    }
+
+    console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+    ```'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# Print the contents of the current window
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>Print the current page.</title>
+
+    </head>
+
+    <body>
+
+    <p></p>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="print_current_page()">Print this page</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    function print_current_page()
+
+    {
+
+    window.print();
+
+    }
+
+    ```'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: "# # Display the current date\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=\"utf-8\">\n<title>Write a JavaScript program to get the\
+    \ current date.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT\
+    \ CODE\n\n```\nvar today = new Date();\nvar dd = today.getDate();\n\nvar mm =\
+    \ today.getMonth()+1;\nvar yyyy = today.getFullYear();\nif(dd<10)\n{\n    dd='0'+dd;\n\
+    }\n\nif(mm<10)\n{\n    mm='0'+mm;\n}\ntoday = mm+'-'+dd+'-'+yyyy;\nconsole.log(today);\n\
+    today = mm+'/'+dd+'/'+yyyy;\nconsole.log(today);\ntoday = dd+'-'+mm+'-'+yyyy;\n\
+    console.log(today);\ntoday = dd+'/'+mm+'/'+yyyy;\nconsole.log(today);\n```"
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: '# Find the area of a triangle
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>The area of a triangle</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    var side1 = 5;
+
+    var side2 = 6;
+
+    var side3 = 7;
+
+    var s = (side1 + side2 + side3)/2;
+
+    var area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+
+    console.log(area);
+
+    ```'
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: '# Check whether a given year is a leap year
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset=utf-8 />
+
+    <title>Find Leap Year</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIT CODE
+
+
+    ```
+
+    function leapyear(year)
+
+    {
+
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+    }
+
+    console.log(leapyear(2016));
+
+    console.log(leapyear(2000));
+
+    console.log(leapyear(1700));
+
+    console.log(leapyear(1800));
+
+    console.log(leapyear(100));
+
+    ```
+
+
+    # OUTPUT
+
+
+    true
+
+    true
+
+    false
+
+    false
+
+    false'
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "# # Calculate multiplication and division\n\n# ## of two numbers\n\n# ## HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>JavaScript\
+    \ program to calculate multiplication and division of two numbers </title>\n<style\
+    \ type=\"text/css\">\nbody {margin: 30px;}\n</style>\n</head>\n<body>\n<form>\n\
+    1st Number : <input type=\"text\" id=\"firstNumber\" /><br>\n2nd Number: <input\
+    \ type=\"text\" id=\"secondNumber\" /><br>\n<input type=\"button\" onClick=\"\
+    multiplyBy()\" Value=\"Multiply\" />\n<input type=\"button\" onClick=\"divideBy()\"\
+    \ Value=\"Divide\" />\n</form>\n<p>The Result is : <br>\n<span id = \"result\"\
+    ></span>\n</p>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT CODE\n\n```\nfunction\
+    \ multiplyBy()\n{\n    num1 = document.getElementById(\"firstNumber\").value;\n\
+    \    num2 = document.getElementById(\"secondNumber\").value;\n```"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "```\ndocument.getElementById(\"result\").innerHTML = num1 * num2;\n}\n```\n\
+    \n```\nfunction divideBy()\n{\n    num1 = document.getElementById(\"firstNumber\"\
+    ).value;\n    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_13_0.png)"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "# # Convert temperatures\n\n# ## To and from celsius, Fahrenheit in JAVASCRIPT\n\
+    \n# ### HTML CODE\n\n```\n<!DOCTYPE html>\n  <html>\n  <head>\n  <meta charset=\"\
+    utf-8\">\n  <title>Write a JavaScript program to convert temperatures to and from\
+    \ celsius, fahrenheit</title>\n  </head>\n  <body>\n</body>\n  </html>\n```\n\n\
+    # ### JAVASCRIPT CODE\n\n```\nfunction cToF(celsius)\n{\n  var cTemp = celsius;\n\
+    \  var cToFahr = cTemp * 9 / 5 + 32;\n  var message = cTemp+'\\xB0C is ' + cToFahr\
+    \ + ' \\xB0F.';\n    console.log(message);\n}\n\nfunction fToC(fahrenheit)\n{\n\
+    \  var fTemp = fahrenheit;\n  var fToCel = (fTemp - 32) * 5 / 9;\n  var message\
+    \ = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n    console.log(message);\n}\ncToF(60);\n\
+    fToC(45);\n```"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: '# # OUTPUT
+
+
+    60°C is 140 °F.
+
+
+    45°F is 7.222222222222222°C.'
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "# Find the largest\n\n# Of three given integers\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>JavaScript program to find the largest\
+    \ of three given integers.</title>\n</head>\n<body>\n\n</body>\n</html>\n```\n\
+    \n# JAVASCRIPT CODE\n\n```\nfunction max_of_three(x, y, z)\n{\n  max_val = 0;\n\
+    \  if (x > y)\n  {\n    max_val = x;\n  } else\n  {\n    max_val = y;\n  }\n \
+    \ if (z > max_val)\n  {\n    max_val = z;\n  }\n  return max_val;\n}\n\nconsole.log(max_of_three(1,0,1));\n\
+    ```"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '```
+
+    console.log(max_of_three(0,-10,-20));
+
+    console.log(max_of_three(1000,510,440));
+
+    ```
+
+
+    Output:
+
+
+    1
+
+
+    0
+
+
+    1000'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "# # Reverse a given string\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>JavaScript program to reverse a given string.</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT CODE\n\n```\nfunction string_reverse(str)\n\
+    {\n    return str.split(\"\").reverse().join(\"\");\n}\n\nconsole.log(string_reverse(\"\
+    jsresource\"));\nconsole.log(string_reverse(\"www\"));\nconsole.log(string_reverse(\"\
+    JavaScript\"));\n```\n\n# ## OUTPUT\n\necruosersj\nwww\ntpircSavaJ"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "# Replace every character with the character following it in the alphabet\n\
+    \n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to replace every character in a given string with\n    the character\
+    \ following it in the alphabet.</title>\n</head>\n<body>\n\n</body>\n</html>\n\
+    ```\n\n# JAVASCRIPT CODE\n\n```\nfunction string_reverse(str)\nfunction LetterChanges(text)\
+    \ {\n//https://goo.gl/R8gn7u\nvar s = text.split(\"\");\nfor (var i = 0; i < s.length;\
+    \ i++) {\n    // Caesar cipher\n    switch(s[i]) {\n        case ' ':\n      \
+    \      break;\n        case 'z':\n            s[i] = 'a';\n            break;\n\
+    \        case 'Z':\n            s[i] = 'A';\n            break;\n```"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "```\ndefault:\n    s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));\n}\n\
+    \n// Upper-case vowels\nswitch(s[i]) {\ncase 'a': case 'e': case 'i': case 'o':\
+    \ case 'u':\n    s[i] = s[i].toUpperCase();\n}\n}\nreturn s.join(\"\");\n}\nconsole.log(LetterChanges(\"\
+    PYTHON\"));\nconsole.log(LetterChanges(\"W3R\"));\nconsole.log(LetterChanges(\"\
+    php\"));\n```\n\n# Output:\n\nQZUIPO\n\nX4S\n\nqIq"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "# Capitalize The First Letter\nOf Each Word\nOf A Given String\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta\
+    \ name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript program\
+    \ to capitalize the first letter of each word of a\n    given string.</title>\n\
+    </head>\n<body>\n\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\nfunction\
+    \ capital_letter(str)\n{\n    str = str.split(\" \");\n\n    for (var i = 0, x\
+    \ = str.length; i < x; i++) {\n        str[i] = str[i][0].toUpperCase() + str[i].substr(1);\n\
+    \    }\n\n    return str.join(\" \");\n}\n\nconsole.log(capital_letter(\"Write\
+    \ a JavaScript program to capitalize the first\nletter of each word of a given\
+    \ string.\"));\n```\n\n# OUTPUT"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: '# Output:
+
+
+    Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A Given
+    String.'
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# # HTML
+
+    ## CODING EXERCISES
+
+
+    ### CODING FOR BEGINNERS
+
+    #### JJ TAM'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "# HTML CODING EXERCISES\n\n# Comment HTML tags\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>How to comment\
+    \ HTML tags</title>\n</head>\n<body>\n    <p>HTML Tutorial</p>\n    <!--<p>Python\
+    \ Tutorial</p>-->\n    <p>PHP Tutorial</p>\n</body>\n</html>\n```\n\nOutput:\n\
+    \nHTML Tutorial\n\nPHP Tutorial"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: "# Create a hyperlink in HTML\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <title>How to create a hyperlink</title>\n\
+    </head>\n<body>\n  <p><a href=\"http://htmlexample.com\">htmlexample.com</a><p>\n\
+    </body>\n</html>\n```"
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '# Download a file
+
+    when clicking on the link
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>Download a file when clicking on the link</title>
+
+    </head>
+
+    <body>
+
+    <p><a href="https://www.htmlresource.com/images/htmlresource-logo.png" download>Download</a></p>
+
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "# Create a link with a media attribute\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Create a link with a\
+    \ media attribute</title>\n</head>\n<body>\n    <a href=\"https://www.htmlresource.com\"\
+    \ media=\"print, handheld\">Media Attribute</a>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# # Create a nofollow link
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    ```
+
+
+    ```
+
+    <html>
+
+    ```
+
+
+    ```
+
+    <head>
+
+    ```
+
+
+    ```
+
+    <meta charset="utf-8">
+
+    ```
+
+
+    ```
+
+    <title>How to create a nofollow link</title>
+
+    ```
+
+
+    ```
+
+    </head>
+
+    ```
+
+
+    ```
+
+    <body>
+
+    ```
+
+
+    ```
+
+    <a rel="nofollow" href="http://htmlexample.com">Example.com</a>
+
+    ```
+
+
+    ```
+
+    </body>
+
+    ```
+
+
+    ```
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "# Open a linked document in a separate browser tab\n\n# HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to open\
+    \ a linked document in a separate browser tab</title>\n</head>\n<body>\n  <p><a\
+    \ href=\"https://htmlresource.com\" target=\"_blank\">Target HTML5 EXCECISES</a></p>\n\
+    </body>\n</html>\n```"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: "# Correct way to write address in a HTML document\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>What is the\
+    \ correct way to write address in a HTML document</title>\n</head>\n<body>\n \
+    \   <address>\n        Address: 21,MG Road<br>\n        Burdwan<br>\n        West\
+    \ Bengal.\n    </address>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: '# # Specify an alternate text
+
+    for the area
+
+    if the href attribute is present
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <body>
+
+    <img src="https://www.htmlresource.com/htmlr_images/html-area-element.png" alt="area
+    example" border="0" usemap="#Map"/>
+
+    <map name="Map">
+
+    <area shape="rect" coords="8,5,100,77" href="https://www.htmlresource.com/mysql/mysql-tutorials.php"
+    target="_blank" alt="mysql tutorial">
+
+    <area shape="circle" coords="155,93,59" href="https://www.htmlresource.com/php/php-home.php"
+    target="_blank" alt="php tutorial">
+
+    <area shape="rect" coords="197,136,306,188" href="https://www.htmlresource.com/sql/sql-tutorials.php"
+    alt="sql tutorials">
+
+    </map>
+
+    </body>
+
+    ```'
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "# Create an HTML document which uses article element\n\n# HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Create\
+    \ an HTML document which uses article element</title>\n</head>\n<body>\n<article>\n\
+    <h1>Tutorial of HTML5 article element</h1>\n<p>HTML5 article element represents\
+    \ independent item like a blog entry in an web document.</p>\n</article>\n</body>\n\
+    </html>\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "# # Create an HTML document which uses aside element\n\n# ## HTML CODE\n\n\
+    ```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How\
+    \ to create an HTML document which uses aside element</title>\n</head>\n<body>\n\
+    <p> I visited the HTML5 tutorial of htmlresource</p>\n\n<aside>\n  <h4>HTML5 tutorial</h4>\n\
+    \  <p>I can develop excellent web applications with HTML5 and related APIs (like\
+    \ GeoLocation, Drag and Drop, WebSocket etc.)in HTML5 tutorial.</p>\n</aside>\n\
+    </body>\n</html>\n```\n\n# ## OUTPUT\n\nI visited the HTML5 tutorial of htmlresource\n\
+    \n# ### HTML5 tutorial\n\nI can develop excellent web applications_capabilities\
+    \ with HTML5 and related APIs (like GeoLocation, Drag and Drop, WebSocket etc.)in\
+    \ HTML5 tutorial."
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "# To add controls to an audio\n\n# HTML CODE\n\n```\n<body>\n<audio controls>\n\
+    \  <source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.ogg\"\
+    \ type=\"audio/ogg\">\n<source src=\"https://www.htmlresource.com/html-css-exercise/basic/solution/beach.mp3\"\
+    \ type=\"audio/mpeg\">\n</audio>\n</body>\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "# Write bold text using HTML tags\n\nHTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n\t<meta charset=\"utf-8\">\n\t<title>How to write bold text using HTML\
+    \ tags</title>\n</head>\n<body>\n\t<p>\"htmlresource\" is normal text - and <b>\"\
+    htmlresource\"</b> is bold text.</p>\n</body>\n</html>\n```\n\nOUTPUT\n\n\"htmlresource\"\
+    \ is normal text - and **\"htmlresource\"** is bold text."
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '# # To specify the base URL
+
+
+    ```
+
+    HTML CODE
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <meta charset="utf-8">
+
+    <title>How to specifie the base URL/target for all relative URLs in a document</title>
+
+    <base href="https://www.htmlresource.com/">
+
+    </head>
+
+    <body>
+
+    <ul>
+
+    <li><a href="php/php-home.php">PHP Tutorial</a></li>
+
+    <li><a href="javascript/javascript.php">JavaScript Tutorial</a></li>
+
+    <li><a href="mysql/mysql-tutorials.php">MySQL Tutorial</a></li>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "# Isolate a part of text\nThat might be formatted\nIn a different direction\n\
+    \n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title><span class=\"heading\">How to isolate a part of text that might be\
+    \ formatted in a different direction from other text outside it</span></title>\n\
+    </head>\n<body>\n<p>\nIn the example below, usernames are shown along with the\
+    \ number of points\nin a contest.\n\nIf the bdi element is not supported in the\
+    \ browser, the username of the Arabic\nuser would confuse the text (the bidirectional\
+    \ algorithm would put the colon\nand the number \"80\" next to the word \"User\"\
+    \ rather than next to the word\n\"points\").\n</p>\n<ul>\n<li>User <bdi>hrefs</bdi>:\
+    \ 40 points</li>\n<li>User <bdi>jdoe</bdi>: 60 points</li>\n<li>User <bdi>ترحب\
+    \ بك</bdi>:80 points</li>\n```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: '```
+
+    </ul>
+
+    <p><b>Note:</b> The bdi element is currently supported only in Firefox and Chrome.</p>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # OUTPUT
+
+
+    In the example below, usernames are shown along with the number of points in a
+    contest. If the bdi element is not supported in the browser, the username of the
+    Arabic user would confuse the text (the bidirectional algorithm would put the
+    colon and the number "80" next to the word "User" rather than next to the word
+    "points").
+
+
+    +   - User hrefs: 40 points
+
+    - User jdoe: 60 points
+
+    - User 80:ترحيب points
+
+
+    **Note:** The bdi element is currently supported only in Firefox and Chrome.'
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: "# Define a section\n\n# that is quoted from another source\n\n# HTML CODE\n\
+    \n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>html\
+    \ blockquote tag example</title>\n</head>\n<body>\n<blockquote>Freedom is not\
+    \ worth having if it does not connote freedom to err. It passes my comprehension\
+    \ how human beings, be they ever so experienced and able, can delight in depriving\
+    \ other human beings of that precious right.</blockquote>\n</body>\n</html>\n\
+    ```\n\n# OUTPUT\n\nFreedom is not worth having if it does not connote freedom\
+    \ to err. It passes my comprehension how human beings, be they ever so experienced\
+    \ and able, can delight in depriving other human beings of that precious right."
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "# Define the document's body\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <title>How to define the document's\
+    \ body</title>\n</head>\n<body>\nWe are learning HTML body element.\n</body>\n\
+    </html>\n```\n\n# OUTPUT\n\nWe are learning HTML body element."
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: "# # Defines a single line break\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to define a single line\
+    \ break</title>\n</head>\n<body>\n  <p>The quick brown fox jumps<br>over the lazy\
+    \ dog.</p>\n</body>\n</html>\n```\n\n# ## OUTPUT\n\nThe quick brown fox jumps\n\
+    over the lazy dog."
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: "# # Define a clickable button\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <title>How to define a clickable button.</title>\n\
+    </head>\n<body>\n  <button type=\"button\" onclick=\"console.log('Welcome Friends')\"\
+    >Click Me!</button>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "# Specify that a button automatically get focus when the page load\n\nHTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n\
+    \    <title>The example of autofocus attribute with button element.</title>\n\
+    </head>\n<body>\n    <button type=\"button\" autofocus onclick=\"console.log('Welcome\
+    \ Friends')\">Click Me!</button>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "# Specify a button should be disabled\n\nHTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Example of HTML disabled\
+    \ attribute with button</title>\n</head>\n<body>\n<form action=\"example.php\"\
+    \ method=\"post\">\nFirst Name : <input type=\"text\" name=\"Fname\"><br>\n<button\
+    \ type=\"button\" name=\"Submit\" disabled>Submit</button>\n</body>\n</html>\n\
+    ```\n\nOUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_44_0.png)"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "# # Specify one or more forms the button belongs to\n\n# ## HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to specify\
+    \ one or more forms the button belongs to</title>\n</head>\n<body>\n<form method=\"\
+    POST\"\naction=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-form-answer-demo.php\"\
+    \ id=\"form1\">\n  First name : <input type=\"text\" name=\"fname\"><br>\n  Last\
+    \ name : <input type=\"text\" name=\"lname\"><br>\n  Present Address : <input\
+    \ type=\"text\" name=\"add\"><br>\n  E-mail : <input type=\"text\" name=\"mail\"\
+    ><br>\n</form>\n<button type=\"submit\" form=\"form1\" value=\"Submit\">Submit</button>\n\
+    </body>\n</html>\n```\n\n# ## OUTPUT"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: 'First name :
+
+
+    Last name :
+
+
+    Present Address :
+
+
+    E-mail :
+
+
+    Submit'
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "# # Specify where to send the form-data when a form is submitted\n\n# ## HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <title>How to Specify where to send the form-data when a form is submitted.</title>\n\
+    </head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-answer-demo.php\"\
+    \ method=\"post\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button><br>\n  <button type=\"submit\" formation=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formation-admin-demo.php\"\
+    >Submit as admin</button>\n</form>\n</body>\n</html>\n```\n\n# ## OUTPUT"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: "# # Send the form-data\n(which HTTP method to use)\n\n## HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>How to send\
+    \ the form-data,which HTTP method to use</title>\n</head>\n<body>\n<form action=\"\
+    https://www.htmlresource.com/html-css-exercise/basic/solution/button-formmethod-answer-demo.php\"\
+    >\n  First name: <input type=\"text\" name=\"fname\"><br>\n  Last name: <input\
+    \ type=\"text\" name=\"lname\"><br>\n  Address: <input type=\"text\" name=\"place\"\
+    ><br>\n  <button type=\"submit\">Submit</button>\n  <button type=\"submit\" formmethod=\"\
+    post\" formaction=\"http://localhost/html-css-exercise/basic/solution/button-formmethod-post-answer.php\"\
+    >Submit using POST</button>\n</form>\n</body>\n</html>\n```\n\n## OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_49_0.png)"
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "# Specify where to display the response after submitting the form\n\n# HTML\
+    \ CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <title>How to specify where to display the response after submitting the form</title>\n\
+    </head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-formtarget-answer-demo.php\"\
+    \ method=\"POST\">\n  First name: <input type=\"text\" name=\"fname\"><br>\n \
+    \ Last name: <input type=\"text\" name=\"lname\"><br>\n  <button type=\"submit\"\
+    >Submit</button>\n  <button type=\"submit\" formtarget=\"_blank\">Submit to a\
+    \ new window/tab</button>\n</form>\n</body>\n</html>\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_50_0.png)"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: "# Specify a name for the button\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n<title>How to specify a name for the button</title>\n\
+    </head>\n<body>\n<form action=\"https://www.htmlresource.com/html-css-exercise/basic/solution/button-name-answer-demo.php\"\
+    \ method=\"post\">\nChoose your favorite topic:\n<button name=\"topic\" type=\"\
+    submit\" value=\"JavaScript\">JavaScript</button>\n<button name=\"topic\" type=\"\
+    submit\" value=\"PHP\">PHP</button>\n</form>\n</body>\n</html>\n```\n\n# OUTPUT\n\
+    \n![](img/3c47590736460ba39948e1c4764537c3_51_0.png)"
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: '# JQUERY CODING EXERCISES
+
+
+    # CODING FOR BEGINNERS
+
+
+    # JJ TAM'
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: "# JQUERY CODING EXERCISES\n\n# Check jQuery is loaded\n\n# HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n    <meta charset=\"utf-8\">\n    <title>Test if jQuery is loaded</title>\n\
+    </head>\n<body>\n<p>Click me!</p>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\
+    \n```\n$(\"p\").bind(\"click\", function(){\n    $( \"This is a click Event\"\
+    ).appendTo( \"body\" );\n});\n\n$(\"p\").bind(\"dblclick\", function(){\n    $(\
+    \ \"This is a double-click Event\" ).appendTo( \"body\" );\n});\n```\n\n# OUTPUT\n\
+    \nClick me!\n\nThis is a click Event"
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: '# # Scroll to the top
+
+
+    # ## of the page
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    ```
+
+
+    ```
+
+    <html>
+
+    ```
+
+
+    ```
+
+    <head>
+
+    ```
+
+
+    ```
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    ```
+
+
+    ```
+
+    <meta charset="utf-8">
+
+    ```
+
+
+    ```
+
+    <title>Scroll to the top of the page with jQuery</title>
+
+    ```
+
+
+    ```
+
+    </head>
+
+    ```
+
+
+    ```
+
+    <body>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p >
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```
+
+
+    ```
+
+    <p>jquery</p>
+
+    ```'
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: "```\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n<p>jquery</p>\n\
+    <a href='#top'>Go Top</a>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n\
+    $(\"a[href='#top']\").click(function() {\n    $(\"html, body\").animate({ scrollTop:\
+    \ 0 }, \"slow\");\n    return false;\n});\n```"
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: "# Disable right click menu\n\n# In html page\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n  <title>Disable right click menu in html\
+    \ page using jquery</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n# JAVASCRIPT\
+    \ CODE\n\n```\nosphate$(document).bind(\"contextmenu\",function(e){\n  return\
+    \ false;\n});\n```"
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: "# Disable/enable the form submit button\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n\
+    <meta charset=\"utf-8\">\n<title>Disable/enable the form submit button</title>\n\
+    </head>\n<body>\n<input id=\"accept\" name=\"accept\" type=\"checkbox\" value=\"\
+    y\"/>I accept<br>\n<input id=\"submitbtn\" disabled=\"disabled\" name=\"Submit\"\
+    \ type=\"submit\" value=\"Submit\" />\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\
+    \n```\n$('#accept').click(function() {\n    if ($('#submitbtn').is(':disabled'))\
+    \ {\n        $('#submitbtn').removeAttr('disabled');\n    } else {\n        $('#submitbtn').attr('disabled',\
+    \ 'disabled');\n    }\n});\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_57_0.png)"
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: "# Blink text\n\n# using jQuery\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta\
+    \ charset=\"utf-8\">\n  <title>Blink text using jQuery</title>\n</head>\n<body>\n\
+    \  <p>jQuery <span class=\"blink\">Exercises</span> and Solution</p>\n</body>\n\
+    </html>\n```\n\n# JAVASCRIPT CODE\n\n```\nfunction blink_text() {\n    $('.blink').fadeOut(500);\n\
+    \    $('.blink').fadeIn(500);\n}\nsetInterval(blink_text, 1000);\n```"
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "# # Create table effect\n\n# ## Like Zebra Stripes\n\n# ### HTML CODE\n\n```\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"\
+    ></script>\n  <meta charset=\"utf-8\">\n<style type=\"text/css\">.table_style\
+    \ {\n        width: 500px;\n        margin: 0px auto;\n    }\n    table{\n   \
+    \ width: 100%;\n    border-collapse: collapse;\n    }\n    table tr td{\n    width:\
+    \ 50%;\n    border: 1px solid #ff751a;\n    padding: 5px;\n    }\n    table tr\
+    \ th{\n    border: 1px solid #79ff4d;\n    padding: 5px;\n    }\n    .zebra{\n\
+    \    background-color: #ff0066;\n    }\n    </style>\n  <title>Create a Zebra\
+    \ Stripes table effect</title>\n</head>\n<body>\n<div class=\"table_style\">\n\
+    ```"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: "```\n<table>\n  <tr>\n    <th>Student Name</th>\n    <th>Marks in Science</th>\n\
+    \  </tr>\n  <tr>\n    <td>James</td>\n    <td>85.00</td>\n  </tr>\n  <tr>\n  \
+    \  <td>David</td>\n    <td>92.00</td>\n  </tr>\n  <tr>\n    <td>Arthur</td>\n\
+    \    <td>79.00</td>\n  </tr>\n  <tr>\n    <td>George</td>\n    <td>82.00</td>\n\
+    \  </tr>\n</table>\n</div>\n</body>\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n\
+    $(document).ready(function(){\n    $(\"tr:odd\").addClass(\"zebra\");\n});\n```\n\
+    \n# OUTPUT"
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '| Student Name | Marks in Science |
+
+    | --- | --- |
+
+    | James | 85.00 |
+
+    | David | 92.00 |
+
+    | Arthur | 79.00 |
+
+    | George | 82.00 |'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: "# # Make first word bold\n\n# ## HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\n  <meta\
+    \ charset=\"utf-8\">\n  <title>Make first word bold of all elements</title>\n\
+    </head>\n<body>\n  <p>PHP Exercises</p>\n  <p>Python Exercises</p>\n  <p>JavaScript\
+    \ Exercises</p>\n  <p>jQuery Exercises</p>\n</body>\n</html>\n```\n\n# ## JAVASCRIPT\
+    \ CODE\n\n```\n$('p').each(function(){\n         var pdata = $(this);\n      \
+    \   pdata.html( pdata.text().replace(/(^\\w+)/,'$1') );\n});\n```\n\n# ## OUTPUT\n\
+    \n**PHP** Exercises\n\n**Python** Exercises\n\n**JavaScript** Exercises\n\n**jQuery**\
+    \ Exercises"
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: "# Underline all the words\n\n# HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<script src=\"https://code.jquery.com/jquery-git.js\"></script>\n<meta\
+    \ charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\">\n\
+    <title>Underline all words of a text through jQuery</title>\n</head>\n<body>\n\
+    <p>The best way we learn anything is by practice and exercise questions</p>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np span{\n    text-decoration: underline;\n\
+    }\n```\n\n# JAVASCRIPT CODE\n\n```\n$('p').each(function() {\n\nvar text_words\
+    \ = $(this).text().split(' ');\n\n    $(this).empty().html(function() {\n\n  \
+    \      for (i = 0; i < text_words.length; i++) {\n        if (i === 0) {\n   \
+    \     $(this).append('<span>' + text_words[i] + '</span>');\n        } else {\n\
+    \        $(this).append(' <span>' + text_words[i] + '</span>');\n        }\n \
+    \       }\n    });\n```"
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: '```
+
+    });
+
+    ```
+
+
+    # OUTPUT
+
+
+    The best way we learn anything is by practice and exercise'
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '# Change button text using jQuery
+
+
+    # HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Change button text using jQuery.</title>
+
+    </head>
+
+    <body>
+
+    <input type=''button'' value=''Cancel'' id=''button1''>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # JAVASCRIPT CODE
+
+
+    ```
+
+    //Uncomment the following code and see the changes.
+
+
+    //$("#button1").prop(''value'', ''Save'');
+
+    ```'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: "# Add options to a drop-down list\nUsing jQuery\n\n# HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Add options to a drop-down list using jQuery.</title>\n</head>\n<body>\n\
+    <p>List of Colors :</p>\n<select id='myColors'>\n<option value=\"Red\">Red</option>\n\
+    <option value=\"Green\">Green</option>\n<option value=\"White\">White</option>\n\
+    <option value=\"Black\">Black</option>\n</select>\n</body>\n</html>\n```\n\n#\
+    \ JAVASCRIPT CODE\n\n```\nvar myOptions = {\n    val1 : 'Blue',\n    val2 : 'Orange'\n\
+    };\nvar mySelect = $('#myColors');\n$.each(myOptions, function(val, text) {\n\
+    \    mySelect.append(\n        $('<option></option>').val(val).html(text)\n  \
+    \  );\n});\n```"
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: '# OUTPUT
+
+
+    ![](img/3c47590736460ba39948e1c4764537c3_67_0.png)
+
+
+    List of Colors :
+
+
+    Red'
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: '# # Set background-image
+
+
+    # ## Using jQuery CSS property
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Set background-image using jQuery CSS property.</title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''body'').css(''background-image'',
+
+    ''url("https://www.htmlresource.com/includes/jquery-images/jquery.gif")'');
+
+    ```
+
+
+    # ## Output
+
+
+    ![](img/3c47590736460ba39948e1c4764537c3_68_0.png)'
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '# # Delete all table rows except first one
+
+
+    using jQuery
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Delete all table rows except first one using jQuery.</title>
+
+    </head>
+
+    <body>
+
+    <table border="1" id="myTable">
+
+    <tr>
+
+    <th>Year</th>
+
+    <th>Savings</th>
+
+    </tr>
+
+    <tr>
+
+    <td>2014</td>
+
+    <td>$10000</td>
+
+    </tr>
+
+    <tr>
+
+    <td>2015</td>
+
+    <td>$8000</td>
+
+    </tr>
+
+    <tr>
+
+    <td>2016</td>
+
+    <td>$9000</td>
+
+    </tr>
+
+    </table>
+
+    <p>
+
+    <input id="button1" type="button" value="Click to remove all rows except first
+    one"/></p>
+
+    </body>
+
+    ```'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "```\n</html>\n```\n\n# JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \t$('#button1').click(function(){\n\t\t$(\"#myTable\").find(\"tr:gt(0)\").remove();\n\
+    \t});\n});\n```\n\n# OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_70_0.png)"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: "# # Disable a link\n\n# ## Using jQuery\n\n# ## HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Disable a link using jQuery</title>\n</head>\n<body>\n<a href=\"https://www.htmlresource.com/jquery-exercises/\"\
+    >jQuery Exercises, Practice, Solution</a>\n<p></p>\n  <input id=\"button1\" type=\"\
+    button\" value=\"Click to remove the link!\" />\n</body>\n</html>\n```\n\n# ##\
+    \ JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n  $('#button1').click(function(){\n\
+    \  $(\"a\").removeAttr('href');\n   });\n});\n```\n\n# ## OUTPUT\n\n![](img/3c47590736460ba39948e1c4764537c3_71_0.png)"
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: "# # Change a CSS class\n\n# ## Using jQuery\n\n# ### HTML CODE\n\n```\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Change a CSS class name using jQuery.</title>\n</head>\n<body>\n<p id=\"\
+    pid\" class=\"center\"> jQuery Exercises</p>\n<input id=\"button1\" type=\"button\"\
+    \ value=\"Click to change the Class\" />\n</body>\n</html>\n```\n\n# ### CSS CODE\n\
+    \n```\np.center {\n    text-align: center;\n    color: red;\n}\n\np.large {\n\
+    \    font-size: 200%;\n}\n```\n\n# ### JAVASCRIPT CODE\n\n```\n$(document).ready(function(){\n\
+    \  $('#button1').click(function()\n { $('#pid').removeClass('center').addClass('large');\n\
+    \   });\n});\n```"
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: '# # OUTPUT
+
+
+    ```
+
+    jQuery Exercises
+
+    Click to change the Class
+
+    ```'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '# # Set the background color
+
+
+    # ## HTML CODE
+
+
+    ```
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Set the background color red of the following elements using jQuery.</title>
+
+    <style type="text/css">
+
+    button {
+
+    display: block;
+
+    margin: 20px 0 0 0;
+
+    }  </style>
+
+    </head>
+
+    <body>
+
+    <textarea>TutoRIAL</textarea>
+
+    <p>jQuery</p>
+
+    <span>Exercises</span>
+
+    <button id="button1">Click to see the effect</button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''#button1'').click(function(){
+
+    $("p").add( "span" ).add("textarea").css( "background", "red" );
+
+    });
+
+    ```'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: "# Add the previous set of elements\n\n# On the stack to the current set\n\n\
+    # HTML CODE\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"https://code.jquery.com/jquery-git.js\"\
+    ></script>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>Using jQuery add the previous set of elements on the stack to the current\
+    \ set.</title>\n</head>\n<body>\n<div class=\"left\">\n<p><strong>Before <code>addBack()</code></strong></p>\n\
+    <div class=\"before-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    <div class=\"right\">\n<p><strong>After <code>addBack()</code></strong></p>\n\
+    <div class=\"after-addback\">\n<p>JavaScript</p>\n<p>jQuery</p>\n</div>\n</div>\n\
+    </body>\n</html>\n```\n\n# CSS CODE\n\n```\np, div {\n    margin: 5px;\n```"
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: "```\npadding: 5px;\ncolor: #c03199;\n}\n.border {\n  border: 2px solid #360e9b;\n\
+    }\n.background {\n  background: #cdc8b1;\n}\n.left, .right {\n  width: 40%;\n\
+    \  float: left;\n}\n.right {\n  margin-left: 2%;\n}\n```\n\n# JAVASCRIPT CODE\n\
+    \n```\n$( \"div.left, div.right\" ).find( \"div, div > p\" ).addClass( \"border\"\
+    \ );\n\n// First Part\n$( \"div.before-addback\" ).find( \"p\" ).addClass( \"\
+    background\" );\n\n// Second Part\n$( \"div.after-addback\" ).find( \"p\" ).addBack().addClass(\
+    \ \"background\" );\n```"
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '# # Add a specified class
+
+
+    # ## To the matched elements
+
+
+    # ## HTML CODE
+
+
+    ```
+
+
+    ```
+
+
+    # ## CSS CODE
+
+
+    ```
+
+
+    ```
+
+
+    # ## JAVASCRIPT CODE
+
+
+    ```
+
+    $(''p'').last().addClass("h3r_font_color");
+
+    ```'
+  merge: -1
+  pgno: 77
+toc:
+- - '##'
+  - 在 JAVASCRIPT 中进行摄氏度和华氏度的相互转换
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 检查 jQuery 是否已加载
+- - '###'
+  - HTML 代码
+- - '###'
+  - JavaScript 代码
+- - '###'
+  - 输出
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '##'
+  - 将第一个词加粗
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '##'
+  - 为所有文字添加下划线
+- - '###'
+  - HTML 代码
+- - '###'
+  - CSS 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '##'
+  - 使用 jQuery 更改按钮文本
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 向下拉列表添加选项
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '##'
+  - 禁用链接
+- - '###'
+  - 使用 jQuery
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 将之前堆栈上的元素集合添加到当前集合
+- - '###'
+  - HTML 代码
+- - '###'
+  - CSS 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 添加指定的类到匹配的元素
+- - '###'
+  - HTML 代码
+- - '###'
+  - CSS 代码
+- - '###'
+  - JAVASCRIPT 代码
