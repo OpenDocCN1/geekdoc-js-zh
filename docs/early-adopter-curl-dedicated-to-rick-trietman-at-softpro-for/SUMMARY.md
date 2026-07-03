@@ -1,0 +1,2 @@
++   [ Curl 先驱者：献给 SOFTPRO 的 Rick Trietman，感谢他让 Wrox 与 Curl 公司携手合作](README.md)
++   [ Curl 先驱者：献给 SOFTPRO 的 Rick Trietman，感谢他让 Wrox 与 Curl 公司携手合作](early-adopter-curl-dedicated-to-rick-trietman-at-softpro-for.md)
