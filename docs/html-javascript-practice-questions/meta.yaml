@@ -1,0 +1,4318 @@
+groups:
+- md: " # HTML & JavaScript\n\n## Practice Questions\n\nBY DHEERAJ SINGH\n\n---\n\n\
+    # HTML & JavaScript Practice Questions\n\n---\n\n## Evincepub Publishing\n\nMansarover\
+    \ Park, West Delhi, India 110015\nSMIG - 65, Parijat Extension, Bilaspur, Chhattisgarh\
+    \ 495001\n\nFirst Published by Evincepub Publishing 2017\nCopyright © Dheeraj\
+    \ Singh 2017\nAll Rights Reserved.\n\n**ISBN:** 978-1-5457-1047-0\n**Price:**\
+    \ Rs. 150\n\nThis book has been published with all reasonable efforts taken to\
+    \ make the material error-free after the consent of the author. No part of this\
+    \ book shall be used, reproduced in any manner whatsoever without written permission\
+    \ from the author, except in the case of brief quotations embodied in critical\
+    \ articles and reviews. The Author of this book is solely responsible and liable\
+    \ for its content including but not limited to the views, representations, descriptions,\
+    \ statements, information, opinions and references [\"Content\"]. The Content\
+    \ of this book shall not constitute or be construed or deemed to reflect the opinion\
+    \ or expression of the Publisher or Editor. Neither the Publisher nor Editor endorse\
+    \ or approve the Content of this book or guarantee the reliability, accuracy or\
+    \ completeness of the Content published herein and do not make any representations\
+    \ or warranties of any kind, express or implied, including but not limited to\
+    \ the implied warranties of merchantability, fitness for a particular purpose.\
+    \ The Publisher and Editor shall not be liable whatsoever for any errors, omissions,\
+    \ whether such errors or omissions result from negligence, accident, or any other\
+    \ cause or claims for loss or damages of any kind, including without limitation,\
+    \ indirect or consequential loss or damage arising out of use, inability to use,\
+    \ or about the reliability, accuracy or sufficiency of the information contained\
+    \ in this book.\n\n---\n\n# HTML & JavaScript Practice Questions\n\nBy Dheeraj\
+    \ Singh\n\n---\n\n## About the Book\n\nThe book is a complete set of HTML and\
+    \ JavaScript Programming Examples. The examples are well tested and based on the\
+    \ syllabus of Masters Degree of Computer Science Students.\n\n---\n\n## About\
+    \ the Author\n\nDheeraj Singh, an enthusiastic student and teacher, loves computers\
+    \ and programming languages like HTML, JavaScript, C, C++ and Java. He is having\
+    \ the post graduation degree on Economics. Despite of getting a degree in Economics,\
+    \ he is always found surrounded by computers. He is currently running his own\
+    \ tutorials on Programming Languages online. He has written this book at an early\
+    \ age of 20. The main aim of Dheeraj to write this book is to clear the small\
+    \ and necessary doubts of students willing to start programming in HTML and JavaScript.\n\
+    \n---\n\n## Content List\n\n| S.N. | Program Name |\n|---|---|\n| | **HTML** |\n\
+    | 1. | Write a program to implement marquee tag with its attributes. |\n| 2. |\
+    \ Write a program to display class time table using HTML. |\n| 3. | Write a program\
+    \ to implement form using html. |\n| 4. | Write a program to implement `<img>`\
+    \ with its attributes. |\n| 5. | Write a program to implement subscript and superscript\
+    \ using html. |\n| 6. | Write a program to implement frames. |\n| 7. | Write a\
+    \ program to implement svg with html. |\n| 8. | Write a program to implement inline\
+    \ css. |\n| 9. | Write a program to implement internal css. |\n| 10. | Write a\
+    \ program to implement external css. |\n| | **JAVA SCRIPT** |\n| 11. | Write a\
+    \ program to show alert (), prompt () and confirm (). |\n| 12. | Write a program\
+    \ to display factorial number using recursive function. |\n| 13. | Write a program\
+    \ to find cube of the given number using function. |\n| 14. | Write a program\
+    \ to convert Celsius to Fahrenheit using function. |\n| 15. | Write a JavaScript\
+    \ program that accept two integers and display the larger using if () and else\
+    \ if (). |\n| 16. | Write a program to find Armstrong number of 3 digits using\
+    \ for loop. |\n| 17. | Write a JavaScript program to construct the following pattern,\
+    \ using a nested for loop. |\n| 18. | Write a JavaScript program to compute the\
+    \ greatest common divisor (GCD) of two positive integers using while loop. |\n\
+    | 19. | Write a JavaScript function to convert a decimal number to binary, hexadecimal\
+    \ or octal number using switch (). |\n| 20. | Write a JavaScript program to find\
+    \ the most frequent item of an array. |\n| 21. | Write a JavaScript function to\
+    \ get the number of days in a month. |\n| 22. | Write a JavaScript function to\
+    \ add specified minutes to a Date object. |\n| 23. | Write a program to display\
+    \ function of keyboard. |\n| 24. | Write a program to display mouse event using\
+    \ which property. |\n| 25. | Write a program to display load and unload event.\
+    \ |\n| 26. | Write a program Receive real data from the user and store it in a\
+    \ cookie. |\n| 27. | Write a program to Retrieves values from cookie. |\n| 28.\
+    \ | Write a program to check form validation. |\n| 29. | Write a program to display\
+    \ digital clock. |\n| 30. | Write a program to implement any two string method.\
+    \ |\n| 31. | Write a program to check whether number is even or odd. |\n\n---\n\
+    \n## 1. Write a program to implement marquee tag with its attributes.\n\n```html\n\
+    <HTML>\n\n    <HEAD>\n\n        <TITLE>Marquee Tag Example!!!</TITLE>\n\n    </HEAD>\n\
+    \n    <BODY> <font color=\"blue\"><marquee\n    width=\"100%\" height=\"15%\"\
+    \ behavior=\"slide\"\n    direction=\"right\" scrolldelay=10 scrollamount=8\n\
+    \    loop=20>\n\n        <h1>An Example of Marquee Tag ---></h1>\n\n    </marquee>\n\
+    \n    <marquee behavior=\"scroll\" direction=\"left\">\n\n        <h1><--- Moving\
+    \ in Left Direction </h1>\n\n    </marquee> </font>\n\n    <marquee behavior=\"\
+    alternate\">\n\n        <h1><----Alternate Behavior---></h1>\n\n    </marquee>\n\
+    \n</BODY> </HTML>\n```\n\n---\n\n### Coding Output\n\n---\n\n## 2. Write a program\
+    \ to display class time table using HTML.\n\n```html\n<HTML>\n  <HEAD>\n    <TITLE>CLASS\
+    \ TIME TABLE</TITLE>\n  </HEAD>\n  <BODY>\n    <H2 align=\"center\">MSc 2<SUP>nd</SUP>\
+    \ SEMESTER </H2>\n    <BR>\n    <H4 align=\"center\">Class Time Table</H4>\n \
+    \   <TABLE border=1 align=\"center\">\n      <tr>\n        <th>DAY</th>\n    \
+    \    <th>12:00-2:00</th>\n        <th>2:00-2:45</th>\n        <th>2:45-3:15</th>\n\
+    \        <th>3:15-4:30</th>\n        <th>4:30-5:00</th>\n      </tr>\n      <tr>\n\
+    \        <td>MONDAY</td>\n        <td>OOPs LAB(batch I)</td>\n        <td>TOC</td>\n\
+    \        <td>POS</td>\n        <td>WT</td>\n        <td>DM</td>\n      </tr>\n\
+    \      <tr>\n        <td>TUESDAY</td>\n        <td>OOPs LAB(batch II)</td>\n \
+    \       <td>TOC</td>\n        <td>OOP</td>\n        <td>WT</td>\n        <td>DM</td>\n\
+    \      </tr>\n      <tr>\n        <td>WEDNESDAY</td>\n        <td>WT LAB(batch\
+    \ I)</td>\n        <td>POS</td>\n        <td>OOP</td>\n        <td>WT</td>\n \
+    \       <td>DM</td>\n      </tr>\n      <tr>\n        <td>THURSDAY</td>\n    \
+    \    <td>-</td>\n        <td>POS</td>\n        <td>OOP</td>\n        <td>TOC</td>\n\
+    \        <td>DM</td>\n      </tr>\n      <tr>\n        <td>FRIDAY</td>\n     \
+    \   <td>WT LAB(batch II)</td>\n        <td>POS</td>\n        <td>OOP</td>\n  \
+    \      <td>TOC</td>\n        <td>WT</td>\n      </tr>\n    </TABLE>\n  </BODY>\n\
+    </HTML>\n```\n\n### Coding Output\n\n| DAY | 11:00-12:00 | 12:00-1:00 | 1:00-2:00\
+    \ | 2:00-3:30 | 3:30-4:00 | 4:00-5:00 | 5:00-6:00 |\n|---|---|---|---|---|---|---|---|\n\
+    | MONDAY | DATA | LAB(Batch 1) | TIC | TIC | TIC | TIC | - |\n| TUESDAY | DATA\
+    \ | LAB(Batch 2) | TIC | TIC | TIC | TIC | - |\n| WEDNESDAY | DATA | LAB(Batch\
+    \ 3) | TIC | TIC | TIC | TIC | - |\n| THURSDAY | DATA | LAB(Batch 4) | TIC | TIC\
+    \ | TIC | TIC | - |\n| FRIDAY | DATA | LAB(Batch 5) | TIC | TIC | TIC | TIC |\
+    \ - |\n\n---\n\n## 3. Write a program to implement a form using HTML.\n\n```html\n\
+    <HTML>\n\n  <HEAD>\n\n    <TITLE>FORM EXAMPLE</TITLE>\n\n  </HEAD>\n\n  <BODY>\n\
+    \n    <FORM>\n\n      <H2 align=\"center\">Employee Data</H2>\n\n      <center>\n\
+    \n        EMPLOYEE NAME :\n\n        <input type=\"text\" name=\"sname\">\n\n\
+    \        <br><br>\n\n        FATHER'S NAME :\n\n        <input type=\"text\" name=\"\
+    fname\">\n\n        <br><br>\n\n        GENDER :\n```"
+  mdcn: "\n # HTML 与 JavaScript\n\n## 练习题\n\n作者：DHEERAJ SINGH\n\n---\n\n# HTML 与 JavaScript\
+    \ 练习题\n\n---\n\n## Evincepub 出版社\n\n印度西德里的曼萨罗瓦公园，110015\n恰蒂斯加尔邦比拉斯普尔帕里贾特扩展区 SMIG-65，495001\n\
+    \n由 Evincepub 出版社于2017年首次出版\n版权所有 © Dheeraj Singh 2017\n保留所有权利。\n\n**ISBN：** 978-1-5457-1047-0\n\
+    **定价：** 150 卢比\n\n本书在获得作者同意后，已尽一切合理努力确保材料无误。未经作者书面许可，不得以任何方式使用或复制本书的任何部分，但评论文章中引用的简短摘录除外。本书作者对其内容负全部责任，包括但不限于观点、陈述、描述、声明、信息、意见和引用（\"\
+    内容\"）。本书内容不构成、不得解释或视为反映出版商或编辑的意见或表达。出版商和编辑既不认可或批准本书内容，也不保证此处发布内容的可靠性、准确性或完整性，不作任何明示或暗示的陈述或保证，包括但不限于适销性、特定用途适用性的默示保证。对于任何错误、遗漏，无论此类错误或遗漏是由于疏忽、事故或任何其他原因造成的，或因使用、无法使用本书而产生的或与之相关的任何类型的索赔，包括但不限于间接或后果性损失或损害，出版商和编辑概不承担责任，也不对本书所含信息的可靠性、准确性或充分性作出任何担保。\n\
+    \n---\n\n# HTML 与 JavaScript 练习题\n\n作者：Dheeraj Singh\n\n---\n\n## 关于本书\n\n本书是一套完整的\
+    \ HTML 和 JavaScript 编程示例集。这些示例经过充分测试，基于计算机科学硕士生的教学大纲。\n\n---\n\n## 关于作者\n\nDheeraj\
+    \ Singh 是一位热情的学生和教师，热爱计算机以及 HTML、JavaScript、C、C++ 和 Java 等编程语言。他拥有经济学硕士学位。尽管获得了经济学学位，但他总是被发现围绕着计算机。他目前在网络上开设自己的编程语言教程。他在20岁的早期就写了这本书。Dheeraj\
+    \ 写这本书的主要目的是帮助愿意开始学习 HTML 和 JavaScript 编程的学生澄清那些小而必要的疑问。\n\n---\n\n## 内容目录\n\n\
+    | 序号 | 程序名称 |\n|---|---|\n| | **HTML** |\n| 1. | 编写程序实现 marquee 标签及其属性。 |\n| 2.\
+    \ | 编写程序使用 HTML 显示班级时间表。 |\n| 3. | 编写程序使用 html 实现表单。 |\n| 4. | 编写程序实现 `<img>`\
+    \ 及其属性。 |\n| 5. | 编写程序使用 html 实现下标和上标。 |\n| 6. | 编写程序实现框架。 |\n| 7. | 编写程序使用 html\
+    \ 实现 svg。 |\n| 8. | 编写程序实现内联 css。 |\n| 9. | 编写程序实现内部 css。 |\n| 10. | 编写程序实现外部\
+    \ css。 |\n| | **JAVA SCRIPT** |\n| 11. | 编写程序显示 alert ()、prompt () 和 confirm ()。\
+    \ |\n| 12. | 编写程序使用递归函数显示阶乘数。 |\n| 13. | 编写程序使用函数求给定数字的立方。 |\n| 14. | 编写程序使用函数将摄氏温度转换为华氏温度。\
+    \ |\n| 15. | 编写一个 JavaScript 程序，接受两个整数并使用 if () 和 else if () 显示较大者。 |\n| 16. |\
+    \ 编写程序使用 for 循环找出 3 位数的阿姆斯特朗数。 |\n| 17. | 编写一个 JavaScript 程序，使用嵌套 for 循环构造以下模式。\
+    \ |\n| 18. | 编写一个 JavaScript 程序，使用 while 循环计算两个正整数的最大公约数 (GCD)。 |\n| 19. | 编写一个\
+    \ JavaScript 函数，使用 switch () 将十进制数转换为二进制、十六进制或八进制数。 |\n| 20. | 编写一个 JavaScript\
+    \ 程序，找出数组中出现最频繁的项。 |\n| 21. | 编写一个 JavaScript 函数，获取某个月份的天数。 |\n| 22. | 编写一个 JavaScript\
+    \ 函数，向 Date 对象添加指定的分钟数。 |\n| 23. | 编写程序显示键盘的功能。 |\n| 24. | 编写程序使用 which 属性显示鼠标事件。\
+    \ |\n| 25. | 编写程序显示 load 和 unload 事件。 |\n| 26. | 编写程序接收用户的真实数据并将其存储在 cookie 中。\
+    \ |\n| 27. | 编写程序从 cookie 中检索值。 |\n| 28. | 编写程序检查表单验证。 |\n| 29. | 编写程序显示数字时钟。\
+    \ |\n| 30. | 编写程序实现任意两种字符串方法。 |\n| 31. | 编写程序检查数字是偶数还是奇数。 |\n\n---\n\n## 1. 编写程序实现\
+    \ marquee 标签及其属性。\n\n```html\n<HTML>\n\n    <HEAD>\n\n        <TITLE>Marquee 标签示例！！！</TITLE>\n\
+    \n    </HEAD>\n\n    <BODY> <font color=\"blue\"><marquee\n    width=\"100%\"\
+    \ height=\"15%\" behavior=\"slide\"\n    direction=\"right\" scrolldelay=10 scrollamount=8\n\
+    \    loop=20>\n\n        <h1>Marquee 标签示例 ---></h1>\n\n    </marquee>\n\n    <marquee\
+    \ behavior=\"scroll\" direction=\"left\">\n\n        <h1><--- 向左移动 </h1>\n\n \
+    \   </marquee> </font>\n\n    <marquee behavior=\"alternate\">\n\n        <h1><----交替行为---></h1>\n\
+    \n    </marquee>\n\n</BODY> </HTML>\n```\n\n---\n\n### 代码输出\n\n---\n\n## 2. 编写程序使用\
+    \ HTML 显示班级时间表。\n\n```html\n<HTML>\n  <HEAD>\n    <TITLE>班级时间表</TITLE>\n  </HEAD>\n\
+    \  <BODY>\n    <H2 align=\"center\">理学硕士 第<SUP>2</SUP>学期 </H2>\n    <BR>\n   \
+    \ <H4 align=\"center\">班级时间表</H4>\n    <TABLE border=1 align=\"center\">\n   \
+    \   <tr>\n        <th>日期</th>\n        <th>12:00-2:00</th>\n        <th>2:00-2:45</th>\n\
+    \        <th>2:45-3:15</th>\n        <th>3:15-4:30</th>\n        <th>4:30-5:00</th>\n\
+    \      </tr>\n      <tr>\n        <td>星期一</td>\n        <td>面向对象编程实验(批次 I)</td>\n\
+    \        <td>计算理论</td>\n        <td>操作系统原理</td>\n        <td>Web 技术</td>\n   \
+    \     <td>数据挖掘</td>\n      </tr>\n      <tr>\n        <td>星期二</td>\n        <td>面向对象编程实验(批次\
+    \ II)</td>\n        <td>计算理论</td>\n        <td>面向对象编程</td>\n        <td>Web 技术</td>\n\
+    \        <td>数据挖掘</td>\n      </tr>\n      <tr>\n        <td>星期三</td>\n      \
+    \  <td>Web 技术实验(批次 I)</td>\n        <td>操作系统原理</td>\n        <td>面向对象编程</td>\n\
+    \        <td>Web 技术</td>\n        <td>数据挖掘</td>\n      </tr>\n      <tr>\n   \
+    \     <td>星期四</td>\n        <td>-</td>\n        <td>操作系统原理</td>\n        <td>面向对象编程</td>\n\
+    \        <td>计算理论</td>\n        <td>数据挖掘</td>\n      </tr>\n      <tr>\n     \
+    \   <td>星期五</td>\n        <td>Web 技术实验(批次 II)</td>\n        <td>操作系统原理</td>\n\
+    \        <td>面向对象编程</td>\n        <td>计算理论</td>\n        <td>Web 技术</td>\n   \
+    \   </tr>\n    </TABLE>\n  </BODY>\n</HTML>\n```\n\n### 代码输出\n\n| 日期 | 11:00-12:00\
+    \ | 12:00-1:00 | 1:00-2:00 | 2:00-3:30 | 3:30-4:00 | 4:00-5:00 | 5:00-6:00 |\n\
+    |---|---|---|---|---|---|---|---|\n| 星期一 | 数据 | 实验(批次 1) | 计算机信息系统 | 计算机信息系统 |\
+    \ 计算机信息系统 | 计算机信息系统 | - |\n| 星期二 | 数据 | 实验(批次 2) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统\
+    \ | 计算机信息系统 | - |\n| 星期三 | 数据 | 实验(批次 3) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | 计算机信息系统\
+    \ | - |\n| 星期四 | 数据 | 实验(批次 4) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | - |\n\
+    | 星期五 | 数据 | 实验(批次 5) | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | 计算机信息系统 | - |\n\n---\n\n\
+    ## 3. 编写程序使用 HTML 实现表单。\n\n```html\n<HTML>\n\n  <HEAD>\n\n    <TITLE>表单示例</TITLE>\n\
+    \n  </HEAD>\n\n  <BODY>\n\n    <FORM>\n\n      <H2 align=\"center\">员工数据</H2>\n\
+    \n      <center>\n\n        员工姓名 ：\n\n        <input type=\"text\" name=\"sname\"\
+    >\n\n        <br><br>\n\n        父亲姓名 ：\n\n        <input type=\"text\" name=\"\
+    fname\">\n\n        <br><br>\n\n        性别 ：\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    # HTML & JavaScript
+
+
+    Practice Questions
+
+
+    BY DHEERAJ SINGH'
+  - '[PAGE 1]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_1_0.png)'
+  - '[PAGE 2]
+
+
+    # Evincepub Publishing
+
+
+    Mansarover Park, West Delhi, India 110015
+
+    SMIG - 65, Parijat Extension, Bilaspur, Chhattisgarh 495001
+
+
+    First Published by Evincepub Publishing 2017
+
+    Copyright © Dheeraj Singh 2017
+
+    All Rights Reserved.
+
+    **ISBN:** 978-1-5457-1047-0
+
+    **Price:** Rs. 150
+
+
+    This book has been published with all reasonable efforts taken to make the material
+    error-free after the consent of the author. No part of this book shall be used,
+    reproduced in any manner whatsoever without written permission from the author,
+    except in the case of brief quotations embodied in critical articles and reviews.
+    The Author of this book is solely responsible and liable for its content including
+    but not limited to the views, representations, descriptions, statements, information,
+    opinions and references [“Content”]. The Content of this book shall not constitute
+    or be construed or deemed to reflect the opinion or expression of the Publisher
+    or Editor. Neither the Publisher nor Editor endorse or approve the Content of
+    this book or guarantee the reliability, accuracy or completeness of the Content
+    published herein and do not make any representations or warranties of any kind,
+    express or implied, including but not limited to the implied warranties of merchantability,
+    fitness for a particular purpose. The Publisher and Editor shall not be liable
+    whatsoever for any errors, omissions, whether such errors or omissions result
+    from negligence, accident, or any other cause or claims for loss or damages of
+    any kind, including without limitation, indirect or consequential loss or damage
+    arising out of use, inability to use, or about the reliability, accuracy or sufficiency
+    of the information contained in this book.'
+  - '[PAGE 3]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    By Dheeraj Singh'
+  - '[PAGE 4]
+
+
+    # About the Book
+
+
+    The book is a complete set of HTML and JavaScript Programming Examples. The examples
+    are well tested and based on the syllabus of Masters Degree of Computer Science
+    Students.'
+  - '[PAGE 5]
+
+
+    # About the Author
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_5_0.png)
+
+
+    Dheeraj Singh, an enthusiastic student and teacher, loves computers and programming
+    languages like HTML, JavaScript, C, C++ and Java. He is having the post graduation
+    degree on Economics. Despite of getting a degree in Economics, he is always found
+    surrounded by computers. He is currently running his own tutorials on Programming
+    Languages online. He has written this book at an early age of 20. The main aim
+    of Dheeraj to write this book is to clear the small and necessary doubts of students
+    willing to start programming in HTML and JavaScript.'
+  - '[PAGE 6]
+
+
+    # Content List
+
+
+    | S.N. | Program Name |
+
+    |---|---|
+
+    | | **HTML** |
+
+    | 1. | Write a program to implement marquee tag with its attributes. |
+
+    | 2. | Write a program to display class time table using HTML. |
+
+    | 3. | Write a program to implement form using html. |
+
+    | 4. | Write a program to implement `<img>` with its attributes. |
+
+    | 5. | Write a program to implement subscript and superscript using html. |
+
+    | 6. | Write a program to implement frames. |
+
+    | 7. | Write a program to implement svg with html. |'
+  - '[PAGE 7]
+
+
+    | 8. | Write a program to implement inline css. |
+
+    | 9. | Write a program to implement internal css. |
+
+    | 10. | write a program to implement external css. |
+
+    | | **JAVA SCRIPT** |
+
+    | 11. | Write a program to show alert (), prompt () and confirm (). |
+
+    | 12. | Write a program to display factorial number using recursive function.
+    |
+
+    | 13. | Write a program to find cube of the given number using function. |
+
+    | 14. | Write a program to convert Celsius to Fahrenheit using function. |
+
+    | 15. | Write a JavaScript program that accept two integers and display the larger
+    using if () and else if (). |
+
+    | 16. | Write a program to find Armstrong number of 3 digits using for loop. |
+
+    | 17. | Write a JavaScript program to construct the following pattern, using a
+    nested for loop. |'
+  - '[PAGE 8]
+
+
+    | 18. | Write a JavaScript program to compute the greatest common divisor (GCD)
+    of two positive integers using while loop. |
+
+    |---|---|
+
+    | 19. | Write a JavaScript function to convert a decimal number to binary, hexadecimal
+    or octal number using switch (). |
+
+    | 20. | Write a JavaScript program to find the most frequent item of an array.
+    |
+
+    | 21. | Write a JavaScript function to get the number of days in a month. |
+
+    | 22. | Write a JavaScript function to add specified minutes to a Date object.
+    |
+
+    | 23. | Write a program to display function of keyboard. |
+
+    | 24. | Write a program to display mouse event using which property. |
+
+    | 25. | Write a program to display load and unload event. |
+
+    | 26. | Write a program Receive real data from the user and store it in a cookie.
+    |
+
+
+    viii'
+  - '[PAGE 9]
+
+
+    | 27. | Write a program to Retrieves values from cookie. |
+
+    | 28. | Write a program to check form validation. |
+
+    | 29. | Write a program to display digital clock. |
+
+    | 30. | Write a program to implement any two string method. |
+
+    | 31. | Write a program to check whether number is even or odd. |'
+  - '[PAGE 10]
+
+
+    <!-- no content -->'
+  - "[PAGE 11]\n\n# 1. Write a program to implement marquee tag with it's attributes.\n\
+    \n```\n<HTML>\n\n    <HEAD>\n\n        <TITLE>Maquee Tag Example!!!</TITLE>\n\n\
+    \    </HEAD>\n\n    <BODY> <font color=\"blue\"><marquee\n    width=\"100%\" height=\"\
+    15%\" behavior=\"slide\"\n    direction=\"right\" scrolldelay=10 scrollamount=8\n\
+    \    loop=20>\n\n        <h1>An Example of Marquee Tag ---></h1>\n\n    </marquee>\n\
+    \n    <marquee behavior=\"scroll\" direction=\"left\">\n\n        <h1><--- Moving\
+    \ in Left Direction </h1>\n\n    </marquee> </font>\n\n    <marquee behavior=\"\
+    alternate\">\n\n        <h1><----Alternate Brhavior---></h1>\n\n    </marquee>\n\
+    \n</BODY> </HTML>\n```"
+  - '[PAGE 12]
+
+
+    HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_12_0.png)'
+  - "[PAGE 13]\n\n# 2. Write a program to display class time table using HTML.\n\n\
+    ```\n<HTML>\n  <HEAD>\n    <TITLE>CLASS TIME TABLE</</TITLE>\n  </HEAD>\n  <BODY>\n\
+    \    <H2 align=\"center\">MSc 2<SUP>nd</SUP> SEMESTER </H2>\n    <BR>\n    <H4\
+    \ align=\"center\">Class Time Table</H4>\n    <TABLE border=1 align=\"center\"\
+    >\n      <tr>\n        <th>DAY</th>\n        <th>12:00-2:00</th>\n        <th>2:00-2:45</th>\n\
+    \        <th>2:45-3:15</th>\n        <th>3:15-4:30</th>\n```"
+  - "[PAGE 14]\n\nHTML & JavaScript Practice Questions\n\n```\n<th>4:30-5:00</th>\n\
+    \n</tr>\n\n<tr>\n    <td>MONDAY</td>\n    <td>OOPs LAB(batch I)</td>\n    <td>TOC</td>\n\
+    \    <td>POS</td>\n    <td>WT</td>\n    <td>DM</td>\n</tr>\n\n<tr>\n    <td>TUESDAY</td>\n\
+    \    <td>OOPs LAB(batch II)</td>\n    <td>TOC</td>\n    <td>OOP</td>\n    <td>WT</td>\n\
+    \    <td>DM</td>\n</tr>\n```"
+  - "[PAGE 15]\n\n```\n<tr>\n  <td>WEDNESDAY</td>\n  <td>WT LAB(batch I)</td>\n  <td>POS</td>\n\
+    \  <td>OOP</td>\n  <td>WT</td>\n  <td>DM</td>\n</tr>\n```\n\n```\n<tr>\n  <td>THURSDAY</td>\n\
+    \  <td>-</td>\n  <td>POS</td>\n  <td>OOP</td>\n  <td>TOC</td>\n  <td>DM</td>\n\
+    </tr>\n```\n\n```\n<tr>\n```"
+  - '[PAGE 16]
+
+
+    ```
+
+    <td>FRIDAY</td>
+
+    <td>WT LAB(batch II)</td>
+
+    <td>POS</td>
+
+    <td>OOP</td>
+
+    <td>TOC</td>
+
+    <td>WT</td>
+
+    </tr>
+
+    </TABLE>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  - '[PAGE 17]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_17_0.png)
+
+
+    | DAY | 11:00-12:00 | 12:00-1:00 | 1:00-2:00 | 2:00-3:30 | 3:30-4:00 | 4:00-5:00
+    | 5:00-6:00 |
+
+    |---|---|---|---|---|---|---|---|
+
+    | MONDAY | DATA | LAB(Batch 1) | TIC | TIC | TIC | TIC | - |
+
+    | TUESDAY | DATA | LAB(Batch 2) | TIC | TIC | TIC | TIC | - |
+
+    | WEDNESDAY | DATA | LAB(Batch 3) | TIC | TIC | TIC | TIC | - |
+
+    | THURSDAY | DATA | LAB(Batch 4) | TIC | TIC | TIC | TIC | - |
+
+    | FRIDAY | DATA | LAB(Batch 5) | TIC | TIC | TIC | TIC | - |'
+  - "[PAGE 18]\n\n```\n<HTML>\n\n  <HEAD>\n\n    <TITLE>FORM EXAMPLE</TITLE>\n\n \
+    \ </HEAD>\n\n  <BODY>\n\n    <FORM>\n\n      <H2 align=\"center\">Employee Data</H2>\n\
+    \n      <center>\n\n        EMPLOYEE NAME :\n\n        <input type=\"text\" name=\"\
+    sname\">\n\n        <br><br>\n\n        FATHER'S NAME :\n\n        <input type=\"\
+    text\" name=\"fname\">\n\n        <br><br>\n\n        GENDER :\n```\n\n# 3. Write\
+    \ a program to implement a form using HTML."
+- md: "## HTML & JavaScript Practice Questions\n\nADDRESS :\n\n<textarea rows=3 name=\"\
+    add\">\n</textarea>\n<br><br>\n\nCREATE PASSWORD :\n\n<input type=\"password\"\
+    \ name=\"pwd\">\n<br><br>\n<input type=\"reset\" value=\"RESET\">\n<input type=\"\
+    submit\" value=\"SUBMIT\">\n\n</center>\n</FORM>\n</BODY>\n</HTML>\n\n## Coding\
+    \ Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_21_0.png)\n\n## HTML & JavaScript\
+    \ Practice Questions\n\n### 4. Write a program to implement img with it's attributes.\n\
+    \n<HTML>\n  <HEAD>\n    <TITLE>IMG EXAMPLE</TITLE>\n  </HEAD>\n  <BODY>\n    <center>\n\
+    \      <H2>image example</H2>\n      <img src=\"sample.jpg\" alt=\"sample\" width=\"\
+    200\" height=\"200\">\n    </center>\n  </BODY>\n</HTML>\n\n## Coding Output\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_23_0.png)\n\n### 5. Write a program\
+    \ to implement subscript and superscript USING HTML.\n\n<HTML>\n<HEAD>\n<TITLE>HTML\
+    \ Subscript and superscript</TITLE>\n</HEAD>\n<BODY>\n<center>\n<H2>\nSUBSCRIPT\
+    \ : H<sub>2</sub>O =\nH<sub>2</sub> + O\n<br><br>\nSUPERSCRIPT : 2<sup>4</sup>\
+    \ = 16\n</H2>\n</center>\n</BODY>\n</HTML>\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_25_0.png)\n\
+    \n### 6. Write a program to implement frames in HTML.\n\n<HTML>\n  <HEAD>\n  \
+    \  <TITLE>Frame Test...</TITLE></HEAD>\n    <FRAMESET COLS=\"30%,70%\">\n    \
+    \  <FRAMESET ROWS=\"75%,25%\">\n        <FRAME SRC=\"1.html\" NAME=\"menu\">\n\
+    \        <FRAME SRC=\"2.html\" NAME=\"logo\">\n      </FRAMESET>\n      <FRAMESET\
+    \ ROWS=\"*\">\n        <FRAME SRC=\"3.html\" NAME=\"main\">\n      </FRAMESET>\n\
+    \    </FRAMESET>\n  </HEAD>\n</HTML>\n\n### 7. Write a program to implement SVG\
+    \ (Scalable Vector Graphics) in HTML.\n\n<HTML>\n  <HEAD>\n    <TITLE>SVG EXAMPLE</TITLE>\n\
+    \  </HEAD>\n  <BODY>\n    <svg width=\"300\" height=\"200\">\n      <polygon points=\"\
+    100,10,40,180,190,60,10,60,160,180\" style=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;\"\
+    \ />\n    </svg>\n  </BODY>\n</HTML>\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_28_0.png)\n\
+    \n### 8. Write a program to implement inline CSS in HTML.\n\n<HTML>\n<HEAD>\n\
+    <TITLE>CSS EXAMPLE</TITLE>\n</HEAD>\n<BODY>\n<h1 style=\"background-color:#d0e4fe;font-size:100px;\"\
+    />\nInline CSS\n</h1>\n</BODY>\n</HTML>\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_30_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_30_1.png)\n\n### 9. Write a program\
+    \ to implement internal CSS in HTML.\n\n<HTML>\n<HEAD>\n<TITLE>CSS EXAMPLE</TITLE>\n\
+    <style>\nh1\n{\nfont-size: 100px;\nbackground-color: yellow;\n}\n</style>\n</HEAD>\n\
+    <BODY>\n<h1>\nInternal CSS\n</h1>\n</BODY>\n</HTML>\n\n## HTML & JavaScript Practice\
+    \ Questions\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_32_0.png)\n\
+    \n### 10. Write a program to implement external CSS in HTML.\n\n<HTML>\n  <HEAD>\n\
+    \    <TITLE>CSS EXAMPLE</TITLE>\n    <link href=\"extrnal.css\" rel=\"stylesheet\"\
+    \ type=\"text/css\">\n  </HEAD>\n  <BODY>\n    <h1>\n      External CSS\n    </h1>\n\
+    \  </BODY>\n</HTML>\n\n**extrnal.css**\n\nh1{ font-size: 200px;\n  background-color:\
+    \ #d0e4fe;\n  font-style:italic; }\n\n## HTML & JavaScript Practice Questions\n\
+    \n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_34_0.png)\n\n###\
+    \ 11. Write a program to show alert(), prompt() and confirm().\n\n<HTML>\n  <HEAD>\n\
+    \    <TITLE>Predefined Functions</TITLE>\n  </HEAD>\n  <BODY>\n    <script>\n\
+    \      alert(\"CONTINUE....?\");\n      var txt=\"\";\n      var name = prompt(\"\
+    Enter your name...\");\n      var b = confirm(\"Are you sure???\");\n      if(b)\
+    \ document.write(\"<h1>Welcome \"+name+\"</h1>\");\n      else document.write(\"\
+    <h1>Input is cacelled!!!!</h1>\")\n    </script>\n  </BODY>\n</HTML>\n\n## HTML\
+    \ & JavaScript Practice Questions\n\n## *Coding Output*\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_36_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_36_1.png)\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_36_2.png)\n\
+    \n### 12. Write a program to factorial number using recursive function.\n\n<HTML>\n\
+    <HEAD>\n<TITLE>Predefined Functions</TITLE>\n<script>\nfunction fun()\n{\nvar\
+    \ n = document.getElementById(\"n\").value;\nfact(n);\n}\nvar f=1;\nfunction fact(n)\n\
+    {\nif(n>0)\n{\nf = f*n;\nfact(n-1);\n}\n}\n</script>\n</HEAD>\n<BODY>\n<input\
+    \ type=\"text\" id=\"n\" value=\"5\">\n<button onclick=\"fun()\">Factorial</button>\n\
+    <p id=\"demo\"></p>\n</BODY>\n</HTML>\n\n**Alternative Implementation:**\n\n<HTML>\n\
+    <HEAD>\n<TITLE>Predefined Functions</TITLE>\n<script>\nfunction fun()\n{\nvar\
+    \ n = document.getElementById(\"n\").value;\nfact(n);\n}\nvar f=1;\nfunction fact(n)\n\
+    {\nif(n>0)\n{\nf = f*n;\nfact(n-1);\n}\nelse\ndocument.getElementById(\"result\"\
+    ).innerHTML =\n\"Factorial = \"+f;\n}\n</script>\n</HEAD>\n<BODY>\n<br><br>\n\
+    Enter any number :\n<input type=\"text\" id=\"n\">\n<br><br>\n<input type=\"submit\"\
+    \ value=\"Get Factorial\" Onclick=\"fun()\">\n<h2 id=\"result\"></h2>\n</BODY>\n\
+    </HTML>\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_39_0.png)\n\
+    \n### 13. Write a program to find cube of the given number using function.\n\n\
+    <HTML>\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n        <script>\n\
+    \            function fun()\n            {\n                var n = document.getElementById(\"\
+    n\").value;\n\n                document.getElementById(\"result\").innerHTML =\n\
+    \                \"Result = \"+n*n*n;\n            }\n        </script>\n    </HEAD>\n\
+    \    <BODY>\n        <br><br>\n        Enter any number :\n        <input type=\"\
+    text\" id=\"n\">\n        <br><br>\n        <input type=\"submit\" value=\"Get_Cube\"\
+    \ OnClick=\"fun()\">\n\n        <h2 id=\"result\"></h2>\n    </BODY>\n</HTML>\n\
+    \n## HTML & JavaScript Practice Questions\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_42_0.png)\n\
+    \n### 14. Write a program to convert Celsius to Fahrenheit using function.\n\n\
+    <HTML>\n\t<HEAD>\n\t\t<TITLE>Predefined Functions</TITLE>\n\t\t<script>\n\t\t\t\
+    function fun()\n\t\t\t{\n\t\t\t\tvar n = document.getElementById(\"n\").value;\n\
+    \t\t\t\tvar r = n*9/5 +32;\n\t\t\t\tdocument.getElementById(\"result\").innerHTML\
+    \ = \"Result = \"+r+\" Fahrenheit\";\n\t\t\t}\n\t\t</script>\n\t</HEAD>\n\t<BODY>\n\
+    \t\t<br><br>\n\t\tEnter any number :\n\t\t<input type=\"text\" id=\"n\">\n\t\t\
+    <br><br>\n\t\t<input type=\"submit\" value=\"Get_Cube\" Onclick=\"fun()\">\n\n\
+    \t\t<h2 id=\"result\"></h2>\n\t</BODY>\n</HTML>\n\n## HTML & JavaScript Practice\
+    \ Questions\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_45_0.png)\n\
+    \n### 15. Write a program to input two integers and display the larger using if()\
+    \ and else if().\n\n<HTML>\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n\
+    \    </HEAD>\n    <BODY>\n        <script>\n            var a = prompt(\"Enter\
+    \ first number....\");\n            var b = prompt(\"Enter second number....\"\
+    );\n            if(a>b) document.write(\"<h2>\"+a+\" is greater than \"+b+\"</h2>\"\
+    );\n            else if(b>a) document.write(\"<h2>\"+b+\" is greater than \"+a+\"\
+    </h2>\");\n            else document.write(\"<h2>both are equals</h2>\");\n  \
+    \      </script>\n    </BODY>\n</HTML>\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_48_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_48_1.png)\n\n6 is greater than 5\n\n\
+    ### 16. Write a program to find out armstrong number of 3 digits using loop;\n\
+    \n<HTML>\n<HEAD>\n<TITLE>Armstrong Numbers</TITLE>\n</HEAD>\n<BODY>\n<script>\n\
+    var i;\ndocument.write(\"<h2>Armstrong Numbers\");\nfor(i=1;i<=999;i++)\n{\nif(Math.floor(i/100)\
+    \ == Math.floor(i%10))\n{\nif(Math.floor(i/100)==0)\ndocument.write(\"<br>0\"\
+    +i);\nelse document.write(\"<br>\"+i);\n}\n}\n\n</script>\n\n</BODY>\n</HTML>\n\
+    \n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_51_0.png)"
+  mdcn: "\n## HTML 与 JavaScript 练习题\n\n地址 :\n\n<textarea rows=3 name=\"add\">\n</textarea>\n\
+    <br><br>\n\n创建密码 :\n\n<input type=\"password\" name=\"pwd\">\n<br><br>\n<input\
+    \ type=\"reset\" value=\"重置\">\n<input type=\"submit\" value=\"提交\">\n\n</center>\n\
+    </FORM>\n</BODY>\n</HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_21_0.png)\n\
+    \n## HTML 与 JavaScript 练习题\n\n### 4. 编写一个程序，使用 HTML 实现带有其属性的 img 标签。\n\n<HTML>\n\
+    \  <HEAD>\n    <TITLE>IMG EXAMPLE</TITLE>\n  </HEAD>\n  <BODY>\n    <center>\n\
+    \      <H2>图像示例</H2>\n      <img src=\"sample.jpg\" alt=\"sample\" width=\"200\"\
+    \ height=\"200\">\n    </center>\n  </BODY>\n</HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_23_0.png)\n\
+    \n### 5. 编写一个程序，使用 HTML 实现下标和上标。\n\n<HTML>\n<HEAD>\n<TITLE>HTML Subscript and\
+    \ superscript</TITLE>\n</HEAD>\n<BODY>\n<center>\n<H2>\n下标 : H<sub>2</sub>O =\n\
+    H<sub>2</sub> + O\n<br><br>\n上标 : 2<sup>4</sup> = 16\n</H2>\n</center>\n</BODY>\n\
+    </HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_25_0.png)\n\n###\
+    \ 6. 编写一个程序，在 HTML 中实现框架。\n\n<HTML>\n  <HEAD>\n    <TITLE>框架测试...</TITLE></HEAD>\n\
+    \    <FRAMESET COLS=\"30%,70%\">\n      <FRAMESET ROWS=\"75%,25%\">\n        <FRAME\
+    \ SRC=\"1.html\" NAME=\"menu\">\n        <FRAME SRC=\"2.html\" NAME=\"logo\">\n\
+    \      </FRAMESET>\n      <FRAMESET ROWS=\"*\">\n        <FRAME SRC=\"3.html\"\
+    \ NAME=\"main\">\n      </FRAMESET>\n    </FRAMESET>\n  </HEAD>\n</HTML>\n\n###\
+    \ 7. 编写一个程序，在 HTML 中实现 SVG（可缩放矢量图形）。\n\n<HTML>\n  <HEAD>\n    <TITLE>SVG EXAMPLE</TITLE>\n\
+    \  </HEAD>\n  <BODY>\n    <svg width=\"300\" height=\"200\">\n      <polygon points=\"\
+    100,10,40,180,190,60,10,60,160,180\" style=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;\"\
+    \ />\n    </svg>\n  </BODY>\n</HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_28_0.png)\n\
+    \n### 8. 编写一个程序，在 HTML 中实现内联 CSS。\n\n<HTML>\n<HEAD>\n<TITLE>CSS EXAMPLE</TITLE>\n\
+    </HEAD>\n<BODY>\n<h1 style=\"background-color:#d0e4fe;font-size:100px;\"/>\n内联\
+    \ CSS\n</h1>\n</BODY>\n</HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_30_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_30_1.png)\n\n### 9. 编写一个程序，在 HTML 中实现内部\
+    \ CSS。\n\n<HTML>\n<HEAD>\n<TITLE>CSS EXAMPLE</TITLE>\n<style>\nh1\n{\nfont-size:\
+    \ 100px;\nbackground-color: yellow;\n}\n</style>\n</HEAD>\n<BODY>\n<h1>\n内部 CSS\n\
+    </h1>\n</BODY>\n</HTML>\n\n## HTML 与 JavaScript 练习题\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_32_0.png)\n\
+    \n### 10. 编写一个程序，在 HTML 中实现外部 CSS。\n\n<HTML>\n  <HEAD>\n    <TITLE>CSS EXAMPLE</TITLE>\n\
+    \    <link href=\"extrnal.css\" rel=\"stylesheet\" type=\"text/css\">\n  </HEAD>\n\
+    \  <BODY>\n    <h1>\n      外部 CSS\n    </h1>\n  </BODY>\n</HTML>\n\n**extrnal.css**\n\
+    \nh1{ font-size: 200px;\n  background-color: #d0e4fe;\n  font-style:italic; }\n\
+    \n## HTML 与 JavaScript 练习题\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_34_0.png)\n\
+    \n### 11. 编写一个程序，演示 alert()、prompt() 和 confirm() 函数。\n\n<HTML>\n  <HEAD>\n   \
+    \ <TITLE>Predefined Functions</TITLE>\n  </HEAD>\n  <BODY>\n    <script>\n   \
+    \   alert(\"继续....？\");\n      var txt=\"\";\n      var name = prompt(\"请输入您的姓名...\"\
+    );\n      var b = confirm(\"您确定吗？？？\");\n      if(b) document.write(\"<h1>欢迎 \"\
+    +name+\"</h1>\");\n      else document.write(\"<h1>输入已取消!!!!</h1>\")\n    </script>\n\
+    \  </BODY>\n</HTML>\n\n## HTML 与 JavaScript 练习题\n\n## *代码输出*\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_36_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_36_1.png)\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_36_2.png)\n\
+    \n### 12. 编写一个程序，使用递归函数计算阶乘数。\n\n<HTML>\n<HEAD>\n<TITLE>Predefined Functions</TITLE>\n\
+    <script>\nfunction fun()\n{\nvar n = document.getElementById(\"n\").value;\nfact(n);\n\
+    }\nvar f=1;\nfunction fact(n)\n{\nif(n>0)\n{\nf = f*n;\nfact(n-1);\n}\n}\n</script>\n\
+    </HEAD>\n<BODY>\n<input type=\"text\" id=\"n\" value=\"5\">\n<button onclick=\"\
+    fun()\">阶乘</button>\n<p id=\"demo\"></p>\n</BODY>\n</HTML>\n\n**替代实现：**\n\n<HTML>\n\
+    <HEAD>\n<TITLE>Predefined Functions</TITLE>\n<script>\nfunction fun()\n{\nvar\
+    \ n = document.getElementById(\"n\").value;\nfact(n);\n}\nvar f=1;\nfunction fact(n)\n\
+    {\nif(n>0)\n{\nf = f*n;\nfact(n-1);\n}\nelse\ndocument.getElementById(\"result\"\
+    ).innerHTML =\n\"阶乘 = \"+f;\n}\n</script>\n</HEAD>\n<BODY>\n<br><br>\n请输入任意数字：\n\
+    <input type=\"text\" id=\"n\">\n<br><br>\n<input type=\"submit\" value=\"获取阶乘\"\
+    \ Onclick=\"fun()\">\n<h2 id=\"result\"></h2>\n</BODY>\n</HTML>\n\n## 代码输出\n\n\
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_39_0.png)\n\n### 13. 编写一个程序，使用函数计算给定数字的立方。\n\
+    \n<HTML>\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n        <script>\n\
+    \            function fun()\n            {\n                var n = document.getElementById(\"\
+    n\").value;\n\n                document.getElementById(\"result\").innerHTML =\n\
+    \                \"结果 = \"+n*n*n;\n            }\n        </script>\n    </HEAD>\n\
+    \    <BODY>\n        <br><br>\n        请输入任意数字：\n        <input type=\"text\"\
+    \ id=\"n\">\n        <br><br>\n        <input type=\"submit\" value=\"获取立方\" OnClick=\"\
+    fun()\">\n\n        <h2 id=\"result\"></h2>\n    </BODY>\n</HTML>\n\n## HTML 与\
+    \ JavaScript 练习题\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_42_0.png)\n\
+    \n### 14. 编写一个程序，使用函数将摄氏度转换为华氏度。\n\n<HTML>\n\t<HEAD>\n\t\t<TITLE>Predefined Functions</TITLE>\n\
+    \t\t<script>\n\t\t\tfunction fun()\n\t\t\t{\n\t\t\t\tvar n = document.getElementById(\"\
+    n\").value;\n\t\t\t\tvar r = n*9/5 +32;\n\t\t\t\tdocument.getElementById(\"result\"\
+    ).innerHTML = \"结果 = \"+r+\" 华氏度\";\n\t\t\t}\n\t\t</script>\n\t</HEAD>\n\t<BODY>\n\
+    \t\t<br><br>\n\t\t请输入任意数字：\n\t\t<input type=\"text\" id=\"n\">\n\t\t<br><br>\n\
+    \t\t<input type=\"submit\" value=\"获取立方\" Onclick=\"fun()\">\n\n\t\t<h2 id=\"\
+    result\"></h2>\n\t</BODY>\n</HTML>\n\n## HTML 与 JavaScript 练习题\n\n## 代码输出\n\n\
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_45_0.png)\n\n### 15. 编写一个程序，输入两个整数并使用\
+    \ if() 和 else if() 显示较大的那个。\n\n<HTML>\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n\
+    \    </HEAD>\n    <BODY>\n        <script>\n            var a = prompt(\"请输入第一个数字....\"\
+    );\n            var b = prompt(\"请输入第二个数字....\");\n            if(a>b) document.write(\"\
+    <h2>\"+a+\" 大于 \"+b+\"</h2>\");\n            else if(b>a) document.write(\"<h2>\"\
+    +b+\" 大于 \"+a+\"</h2>\");\n            else document.write(\"<h2>两者相等</h2>\");\n\
+    \        </script>\n    </BODY>\n</HTML>\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_48_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_48_1.png)\n\n6 大于 5\n\n### 16. 编写一个程序，使用循环找出三位的阿姆斯特朗数。\n\
+    \n<HTML>\n<HEAD>\n<TITLE>Armstrong Numbers</TITLE>\n</HEAD>\n<BODY>\n<script>\n\
+    var i;\ndocument.write(\"<h2>阿姆斯特朗数\");\nfor(i=1;i<=999;i++)\n{\nif(Math.floor(i/100)\
+    \ == Math.floor(i%10))\n{\nif(Math.floor(i/100)==0)\ndocument.write(\"<br>0\"\
+    +i);\nelse document.write(\"<br>\"+i);\n}\n}\n\n</script>\n\n</BODY>\n</HTML>\n\
+    \n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_51_0.png)\n"
+  merge: 0
+  raw:
+  - "[PAGE 19]\n\n```\n<input type=\"radio\" name=\"gendr\" value=\"male\" checked>Male\n\
+    \n<input type=\"radio\" name+\"gendr\" value=\"femal\">Female\n\n<br><br>\n\n\
+    Department :\n\n<select name=department>\n\n    <option value=\"msc\">SALES</option>\n\
+    \n    <option value=\"mca\">ACCOUNT</option>\n\n</select>\n\n<br><br>\n\nHOBBY\
+    \ :\n\n<input type=\"checkbox\" name=\"hoby\" value=\"singing\" checked>Singing\n\
+    \n<input type=\"checkbox\" name=\"hoby\" value=\"Dancing\">Dancing\n\n<input type=\"\
+    checkbox\" name=\"hoby\" value=\"Chess\">Chess\n\n<br><br>\n```"
+  - '[PAGE 20]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ADDRESS :
+
+
+    ```
+
+    <textarea rows=3 name="add">
+
+    </textarea>
+
+    <br><br>
+
+    ```
+
+
+    CREATE PASSWORD :
+
+
+    ```
+
+    <input type="password" name="pwd">
+
+    <br><br>
+
+    <input type="reset" value="RESET">
+
+    <input type="submit" value="SUBMIT">
+
+    ```
+
+
+    ```
+
+    </center>
+
+    </FORM>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  - '[PAGE 21]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_21_0.png)'
+  - "[PAGE 22]\n\n# HTML & JavaScript Practice Questions\n\n# 4. Write a program to\
+    \ implement img with it's attributes.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>IMG\
+    \ EXAMPLE</TITLE>\n  </HEAD>\n  <BODY>\n    <center>\n      <H2>image example</H2>\n\
+    \      <img src=\"sample.jpg\" alt=\"sample\" width=\"200\" height=\"200\">\n\
+    \    </center>\n  </BODY>\n</HTML>\n```"
+  - '[PAGE 23]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_23_0.png)'
+  - '[PAGE 24]
+
+
+    # 5. Write a program to implement subscript and superscript USING HTML.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>HTML Subscript and superscript</TITLE>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <center>
+
+
+    <H2>
+
+
+    SUBSCRIPT : H<sub>2</sub>O =
+
+
+    H<sub>2</sub> + O
+
+
+    <br><br>
+
+
+    SUPERSCRIPT : 2<sup>4</sup> = 16
+
+
+    </H2>
+
+
+    </center>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - '[PAGE 25]
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_25_0.png)'
+  - "[PAGE 26]\n\n# # 6. Write a program to implement frames in HTML.\n\n```\n<HTML>\n\
+    \  <HEAD>\n    <TITLE>Frame Test...</TITLE></HEAD>\n    <FRAMESET COLS=\"30%,70%\"\
+    >\n      <FRAMESET ROWS=\"75%,25%\">\n        <FRAME SRC=\"1.html\" NAME=\"menu\"\
+    >\n        <FRAME SRC=\"2.html\" NAME=\"logo\">\n      </FRAMESET>\n      <FRAMESET\
+    \ ROWS=\"*\">\n        <FRAME SRC=\"3.html\" NAME=\"main\">\n      </FRAMESET>\n\
+    \    </FRAMESET>\n  </HEAD>\n</HTML>\n```"
+  - "[PAGE 27]\n\n# 7. Write a program to implement SVG (Scalable Vector Graphics)\
+    \ in HTML.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>SVG EXAMPLE</TITLE>\n  </HEAD>\n\
+    \  <BODY>\n    <svg width=\"300\" height=\"200\">\n      <polygon\npoints=\"100,10,40,180,190,60,10,60,160,180\"\
+    \nstyle=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;\" />\n   \
+    \ </svg>\n  </BODY>\n</HTML>\n```"
+  - '[PAGE 28]
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_28_0.png)'
+  - '[PAGE 29]
+
+
+    # 8. Write a program to implement inline CSS in HTML.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>CSS EXAMPLE</TITLE>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <h1 style="background-color:#d0e4fe;font-size:100px;"/>
+
+
+    Inline CSS
+
+
+    </h1>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - '[PAGE 30]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_30_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_30_1.png)'
+  - "[PAGE 31]\n\n# 9. Write a program to implement internal CSS in HTML.\n\n```\n\
+    <HTML>\n\n<HEAD>\n\n 姨中<TITLE>CSS EXAMPLE</TITLE>\n\n<style>\n\nh1\n\n{\n\nfont-size:\
+    \ 100px;\n\nbackground-color: yellow;\n\n}\n\n</style>\n\n</HEAD>\n\n<BODY>\n\n\
+    <h1>\n\n矩Internal CSS\n\n</h1> </BODY>\n\n</HTML>\n```"
+  - '[PAGE 32]
+
+
+    HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_32_0.png)'
+  - "[PAGE 33]\n\n# 10.Write a program to implement external CSS in HTML.\n\n```\n\
+    <HTML>\n\n  <HEAD>\n\n    <TITLE>CSS EXAMPLE</TITLE>\n\n    <link href=\"extrnal.css\"\
+    \ rel=\"stylesheet\" type=\"text/css\">\n\n  </HEAD>\n\n  <BODY>\n\n    <h1>\n\
+    \n      External CSS\n\n    </h1>\n\n  </BODY>\n\n</HTML>\n```\n\nextrnal.css\n\
+    \n```\nh1{ font-size: 200px;\n\n  background-color: #d0e4fe;\n\n  font-style:italic;\
+    \ }\n```"
+  - '[PAGE 34]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_34_0.png)'
+  - "[PAGE 35]\n\n# 11.Write a program to show alert(), prompt() and confirm().\n\n\
+    ```\n<HTML>\n\n  <HEAD>\n\n    <TITLE>Predefined Functions</TITLE>\n\n  </HEAD>\n\
+    \n  <BODY>\n\n    <script>\n\n      alert(\"CONTINUE....?\");\n\n      var txt=\"\
+    \";\n\n      var name = prompt(\"Enter your name...\");\n\n      var b = confirm(\"\
+    Are you sure???\");\n\n      if(b) document.write(\"<h1>Welcome \"+name+\"</h1>\"\
+    );\n\n      else document.write(\"<h1>Input is cacelled!!!!</h1>\")\n\n    </script>\n\
+    \n  </BODY>\n```"
+  - '[PAGE 36]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # *Coding Output*
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_1.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_2.png)'
+  - '[PAGE 37]
+
+
+    # 12.Write a program to factorial number using recursive function.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>Predefined Functions</TITLE>
+
+
+    <script>
+
+
+    function fun()
+
+
+    {
+
+
+    var n = document.getElementById("n").value;
+
+
+    fact(n);
+
+
+    }
+
+
+    var f=1;
+
+
+    function fact(n)
+
+
+    {
+
+
+    if(n>0)
+
+
+    {
+
+
+    f = f*n;
+
+
+    fact(n-1);
+
+
+    }
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <input type="text" id="n" value="5">
+
+
+    <button onclick="fun()">Factorial</button>
+
+
+    <p id="demo"></p>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - "[PAGE 38]\n\nHTML & JavaScript Practice Questions\n\n```\n    }\n\n    else\n\
+    \    document.getElementById(\"result\").innerHTML =\n    \"Factorial = \"+f;\n\
+    \n    }\n\n    </script>\n\n    </HEAD>\n\n    <BODY>\n\n    <br><br>\n\n    Enter\
+    \ any number :\n\n    <input type=\"text\" id=\"n\">\n\n    <br><br>\n\n    <input\
+    \ type=\"submit\" value=\"Get Factorial\"\n    Onclick=\"fun()\">\n\n    <h2 id=\"\
+    result\"></h2>\n\n    </BODY>\n\n    </HTML>\n```"
+  - '[PAGE 39]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_39_0.png)'
+  - "[PAGE 40]\n\n# 13.Write a program to find cube of the given number using function.\n\
+    \n```\n<HTML>\n\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n   \
+    \     <script>\n            function fun()\n            {\n                var\
+    \ n = document.getElementById(\"n\").value;\n\n                document.getElementById(\"\
+    result\").innerHTML =\n                \"Result = \"+n*n*n;\n            }\n \
+    \       </script>\n    </HEAD>\n    <BODY>\n        <br><br>\n        Enter any\
+    \ number : \n        <input type=\"text\" id=\"n\">\n```"
+  - '[PAGE 41]
+
+
+    ```
+
+    <br><br>
+
+
+    <input type="submit" value="Get_Cube" OnClick="fun()">
+
+
+    <h2 id="result"></h2>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - '[PAGE 42]
+
+
+    # # HTML & JavaScript Practice Questions
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_42_0.png)'
+  - "[PAGE 43]\n\n# 14.Write a program to convert Celsius to Fahrenheit using function.\n\
+    \n```\n<HTML>\n\t<HEAD>\n\t\t<TITLE>Predefined Functions</TITLE>\n\t\t<script>\n\
+    \t\t\tfunction fun()\n\t\t\t{\n\t\t\t\tvar n = document.getElementById(\"n\").value;\n\
+    \t\t\t\tvar r = n*9/5 +32;\n\t\t\t\tdocument.getElementById(\"result\").innerHTML\
+    \ = \"Result = \"+r+\" Fahrenheit\";\n\t\t\t}\n\t\t</script>\n\t</HEAD>\n\t<BODY>\n\
+    \t\t<br><br>\n\t\tEnter any number :\n```"
+  - '[PAGE 44]
+
+
+    HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <input type="text" id="n">
+
+    <br><br>
+
+    <input type="submit" value="Get_Cube" Onclick="fun()">
+
+
+    <h2 id="result"></h2>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  - '[PAGE 45]
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_45_0.png)'
+  - '[PAGE 46]
+
+
+    <!-- no content -->'
+  - "[PAGE 47]\n\n# 15.Write a program to input two integers and display the larger\
+    \ using if() and else if().\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Predefined\
+    \ Functions</TITLE>\n    </HEAD> <BODY>\n        <script>\n            var a =\
+    \ prompt(\"Enter first number....\");\n            var b = prompt(\"Enter second\
+    \ number....\");\n            if(a>b) document.write(\"<h2>\"+a+\" is greater\
+    \ than \"+b+\"</h2>\");\n            else if(b>a) document.write(\"<h2>\"+b+\"\
+    \ is greater than \"+a+\"</h2>\");\n            else document.write(\"<h2>both\
+    \ are equals</h2>\");\n        </script>\n    </BODY>\n</HTML>\n```"
+  - '[PAGE 48]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_48_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_48_1.png)
+
+
+    6 is greater than 5'
+  - '[PAGE 49]
+
+
+    # 16.Write a program to find out armstrong number of 3 digits using loop;
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Armstrong Numbers</TITLE>
+
+    </HEAD>
+
+    <BODY>
+
+    <script>
+
+    var i;
+
+    document.write("<h2>Armstrong Numbers");
+
+    for(i=1;i<=999;i++)
+
+    {
+
+    if(Math.floor(i/100) == Math.floor(i%10))
+
+    {
+
+    if(Math.floor(i/100)==0)
+
+    ```'
+  - "[PAGE 50]\n\n# HTML & JavaScript Practice Questions\n\n```\ndocument.write(\"\
+    <br>0\"+i);\nelse document.write(\"<br>\"+i);\n      }\n   }\n\n</script>\n\n\
+    </BODY>\n\n</HTML>\n```"
+  - '[PAGE 51]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_51_0.png)'
+- md: "## 17. Write a javaScript program to construct the following pattern using\
+    \ nested for loop.\n\n```\n<HTML>\n\n    <HEAD>\n\n        <TITLE>Pattern</TITLE>\n\
+    \n    </HEAD>\n\n    <BODY>\n\n        <script>\n\n            var i,j;\n\n  \
+    \          document.write(\"<h2>Pattern:<br>\");\n\n            for(i=0;i<10;i++)\n\
+    \n            {\n\n                for(j=0;j<=i;j++)\n\n                document.write(\"\
+    \ *\");\n\n                document.write(\"<br>\");\n\n            }\n\n    \
+    \    </script>\n\n    </BODY>\n\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_53_0.png)\n\
+    \n## HTML & JavaScript Practice Questions\n\n## 18. Write a javascript program\
+    \ to compute the greatest common divisor(GCD) of two positive integers using while\
+    \ loop.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>Pattern</TITLE>\n    <script>\n \
+    \     function gcd()\n      {\n        var x = document.getElementById(\"x\").value;\n\
+    \        var y = document.getElementById(\"y\").value;\n        var hcf=1;\n \
+    \       if(x<y)\n        {\n          var t = x;\n          x = y;\n         \
+    \ y = t;\n        }\n        while(hcf!=0)\n        {\n          hcf = x%y;\n\
+    \          x = y;\n          y = hcf;\n        }\n        document.getElementById(\"\
+    result\").innerHTML = \"GCD = \"+x;\n      }\n    </script>\n  </HEAD>\n\n  <BODY>\n\
+    \    <h2>\n      Enter two numbers :\n      <input type=\"text\" id=\"x\">\n \
+    \     <input type=\"text\" id=\"y\">\n    </h2>\n    <br><br>\n    <input type=\"\
+    submit\" value=\"Get GCD\" Onclick=\"gcd()\">\n    <br><br>\n    <h2 id=\"result\"\
+    ></h2>\n  </BODY>\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_57_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_57_1.png)\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_57_2.png)\n\
+    \nGCD = 1\n\n## 19. Write a javascript function to convert a decimal number to\
+    \ binary, hexadecimal to octal number using switch case.\n\n```\n<HTML>\n  <HEAD>\n\
+    \    <TITLE>Pattern</TITLE>\n    <script>\n      function convert()\n      {\n\
+    \        var n = document.getElementById(\"x\").value;\n        var a = 0;\n \
+    \       if(document.getElementById(\"1\").checked)\n          a=1;\n        else\n\
+    \        if(document.getElementById(\"2\").checked)\n          a=2;\n        else\n\
+    \        if(document.getElementById(\"3\").checked)\n          a=3;\n        switch(a)\n\
+    \        {\n          case 1:\n            var x=0,i=0;\n            while(n>0)\n\
+    \            {\n              x = x + n%2*Math.pow(10,i);\n              n = Math.floor(n/2);\n\
+    \              i++;\n            }\n            document.getElementById(\"result\"\
+    ).innerHTML =\n              \"Binary value : \"+x;\n            break;\n    \
+    \      case 2:\n            var x=0,i=0;\n            while(n>0)\n           \
+    \ {\n              x = x + n%16*Math.pow(10,i);\n              n = Math.floor(n/16);\n\
+    \              i++;\n            }\n            document.getElementById(\"result\"\
+    ).innerHTML =\n              \"Hexadecimal value : \"+x;\n            break;\n\
+    \          case 3:\n            var x=0,i=0;\n            while(n>0)\n       \
+    \     {\n              x = x + n%8*Math.pow(10,i);\n              n = Math.floor(n/8);\n\
+    \              i++;\n            }\n            document.getElementById(\"result\"\
+    ).innerHTML =\n              \"Octal value : \"+x;\n            break;\n     \
+    \     default:\n            document.getElementById(\"result\").innerHTML =\n\
+    \              \"Please select converter type\";\n        }\n      }\n    </script>\n\
+    \  </HEAD>\n\n  <BODY>\n    <p>\n      Enter two numbers :\n      <input type=\"\
+    text\" id=\"x\">\n      <br><br>\n      <input type=\"radio\" name=\"cnvrt\" value=\"\
+    1\" id=\"1\">Binary\n      <input type=\"radio\" name=\"cnvrt\" value=\"2\" id=\"\
+    2\">Hexadecimal\n      <input type=\"radio\" name=\"cnvrt\" value=\"3\" id=\"\
+    3\">Octal\n    </p>\n    <br>\n    <input type=\"submit\" value=\"Get GCD\" Onclick=\"\
+    convert()\">\n    <br><br>\n    <h2 id=\"result\"></h2>\n  </BODY>\n</HTML>\n\
+    ```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_63_0.png)\n\
+    \n## 20. Write a javascript program to find the most frequent item of an array.\n\
+    \n```\n<HTML>\n\n<HEAD>\n<TITLE>Array</TITLE>\n</HEAD>\n\n<BODY>\n<script>\nvar\
+    \ arr = [3,2,3,2,2,2,2,2,2,4];\nvar a=1,c=0,item=arr[0],i,j;\n\nfor(i=0;i<arr.length;i++)\n\
+    {\n    for(j=i;j<arr.length;j++)\n    if(arr[i]==arr[j]) c++;\n    if(c>a)\n \
+    \   {\n        item = arr[i];\n        a = c;\n    }\n    c=0;\n}\n\nalert(\"\
+    Most frequent item of array = \"+item);\n</script>\n\n</BODY>\n\n</HTML>\n```\n\
+    \n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_66_0.png)\n\n##\
+    \ 21. Write a javascript function to get the number of days in month.\n\n```\n\
+    <HTML>\n\n  <HEAD>\n\n    <TITLE>Date</TITLE>\n\n    <script>\n\n      function\
+    \ getdays()\n\n      {\n\n        var m = document.getElementById(\"m\").value;\n\
+    \n        var y = document.getElementById(\"y\").value;\n\n        var day = new\
+    \ Date(y,m,0).getDate();\n\n        document.getElementById(\"result\").innerHTML\
+    \ = day+\" Days\";\n\n      }\n\n    </script>\n\n  </HEAD>\n\n  <BODY>\n    <p>\n\
+    \      Month :\n      <input type=\"text\" id=\"m\">\n      <br><br>\n      Year\
+    \ :\n      <input type=\"text\" id=\"y\">\n      <br><br>\n      <input type=\"\
+    submit\" value=\"Get_Days\" Onclick=\"getdays()\">\n      <br>\n      <h2 id=\"\
+    result\"></h2>\n    </p>\n  </BODY>\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_69_0.png)\n\
+    \n## 22. Write a javascript function to add specified minutes to a Date object.\n\
+    \n```\n<HTML>\n    <HEAD>\n        <TITLE>Date</TITLE>\n        <script>\n   \
+    \         function add()\n            {\n                var m = document.getElementById(\"\
+    m\").value;\n                var someDate = new Date();\n                someDate.setMinutes(someDate.getMinutes()+m);\n\
+    \                document.getElementById(\"result\").innerHTML = \"Minutes \"\
+    +someDate.getMinutes();\n            }\n        </script>\n    </HEAD>\n    <BODY>\n\
+    \        <p>\n            Minutes to add :\n            <input type=\"text\" id=\"\
+    m\">\n            <br><br>\n            <input type=\"submit\" value=\"ADD\" Onclick=\"\
+    add()\">\n            <br>\n            <h2 id=\"result\"></h2>\n        </p>\n\
+    \    </BODY>\n</HTML>\n```\n\n## HTML & JavaScript Practice Questions\n\n## Coding\
+    \ Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_72_0.png)\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_72_1.png)\n\
+    \n62\n\n## 23. Write a program to display function of keyboard.\n\n```\n<html>\n\
+    <head>\n<script language=\"JavaScript\">\nfunction keyDown(){\n    alert(\"key\
+    \ pressed\");\n}\nfunction keyUp(){\n    alert(\"key released\");\n}\nfunction\
+    \ keypress(){\n    alert(\"key pressed and released\");\n}\n</script>\n</head>\n\
+    <body>\n<input type=\"text\" OnkeyDown=\"keyDown()\"><br>\n<input type=\"text\"\
+    \ OnkeyUp=\"keyUp()\"><br>\n<input type=\"text\" Onkeypress=\"keypress()\"><br>\n\
+    </body>\n</html>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_75_0.png)\n\
+    \n## HTML & JavaScript Practice Questions\n\n## 24. Write a program to display\
+    \ mouse event using which property.\n\n```\n<html>\n\n<head></head>\n\n<body>\n\
+    \n<div onmousedown=\"whichbutton(event)\">click this text with one of the mouse\
+    \ button to return number.\n\n<p> 1=the left mouse button</p>\n\n<p> 2=the middle\
+    \ mouse button</p>\n\n<p> 3=the right mouse button</p>\n\n</div>\n\n<p> <strong>Note:</strong>\
+    \ The which property is not supported by IE 8 or earlier versions</p>\n\n<script\
+    \ language=\"JavaScript\">\n\nfunction whichbutton(event){\n\nalert(\"you pressed\
+    \ button\"+event.which);}\n\n</script>\n\n</body>\n\n</html>\n```\n\n## Coding\
+    \ Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_77_0.png)\n\n## 25. Write\
+    \ a program to display load and unload event.\n\n```\n<html>\n<head>\n<script\
+    \ language=\"JavaScript\">\nfunction load(){\n    alert(\"onload webpage\");\n\
+    }\nfunction unload(){\n    alert(\"unload a webpage\");\n}\n</script>\n</head>\n\
+    <body Onload=\"load()\"\nOnunload=\"unload()\">\n</body>\n</html>\n```\n\n## Coding\
+    \ Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_79_0.png)\n\n## 26. Write\
+    \ a program to receive real data from the user and store it in a cookie.\n\n```\n\
+    <html>\n\n<head>\n\n<title>JavaScript creating cookies - receive real data. example1</title>\n\
+    \n</head>\n\n<body>\n\n<h1 style=\"color: red\">JavaScript creating cookies, receive\
+    \ real data. - example1</h1><br>\n\n<hr />\n\n<script type=\"text/javascript\"\
+    >\n\n//This is done to make the following JavaScript code compatible to XHTML.\
+    \ <![CDATA[\n\nvar visitor_name = prompt(\"What's your name?\",\"\");\n\nvar expr_date\
+    \ = new Date(\"July 30, 2017\");\n\nvar cookie_date = expr_date.toUTCString();\n\
+    \nfinal_cookie = \"Name = \" +\n\nencodeURIComponent(visitor_name) + \";expires_on\
+    \ = \"\n\n+ cookie_date;\n\ndocument.cookie = final_cookie;\n\nalert(final_cookie);\n\
+    \n//]]>\n\n</script>\n\n</body>\n\n</html>\n```"
+  mdcn: "\n## 17. 编写一个JavaScript程序，使用嵌套for循环构建以下图案。\n\n```\n<HTML>\n\n    <HEAD>\n\
+    \n        <TITLE>Pattern</TITLE>\n\n    </HEAD>\n\n    <BODY>\n\n        <script>\n\
+    \n            var i,j;\n\n            document.write(\"<h2>Pattern:<br>\");\n\n\
+    \            for(i=0;i<10;i++)\n\n            {\n\n                for(j=0;j<=i;j++)\n\
+    \n                document.write(\" *\");\n\n                document.write(\"\
+    <br>\");\n\n            }\n\n        </script>\n\n    </BODY>\n\n</HTML>\n```\n\
+    \n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_53_0.png)\n\n## HTML & JavaScript\
+    \ 练习题\n\n## 18. 编写一个JavaScript程序，使用while循环计算两个正整数的最大公约数（GCD）。\n\n```\n<HTML>\n\
+    \  <HEAD>\n    <TITLE>Pattern</TITLE>\n    <script>\n      function gcd()\n  \
+    \    {\n        var x = document.getElementById(\"x\").value;\n        var y =\
+    \ document.getElementById(\"y\").value;\n        var hcf=1;\n        if(x<y)\n\
+    \        {\n          var t = x;\n          x = y;\n          y = t;\n       \
+    \ }\n        while(hcf!=0)\n        {\n          hcf = x%y;\n          x = y;\n\
+    \          y = hcf;\n        }\n        document.getElementById(\"result\").innerHTML\
+    \ = \"GCD = \"+x;\n      }\n    </script>\n  </HEAD>\n\n  <BODY>\n    <h2>\n \
+    \     输入两个数字：\n      <input type=\"text\" id=\"x\">\n      <input type=\"text\"\
+    \ id=\"y\">\n    </h2>\n    <br><br>\n    <input type=\"submit\" value=\"获取最大公约数\"\
+    \ Onclick=\"gcd()\">\n    <br><br>\n    <h2 id=\"result\"></h2>\n  </BODY>\n</HTML>\n\
+    ```\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_57_0.png)\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_57_1.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_57_2.png)\n\nGCD = 1\n\n## 19. 编写一个JavaScript函数，使用switch\
+    \ case将十进制数转换为二进制、十六进制或八进制数。\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>Pattern</TITLE>\n\
+    \    <script>\n      function convert()\n      {\n        var n = document.getElementById(\"\
+    x\").value;\n        var a = 0;\n        if(document.getElementById(\"1\").checked)\n\
+    \          a=1;\n        else\n        if(document.getElementById(\"2\").checked)\n\
+    \          a=2;\n        else\n        if(document.getElementById(\"3\").checked)\n\
+    \          a=3;\n        switch(a)\n        {\n          case 1:\n           \
+    \ var x=0,i=0;\n            while(n>0)\n            {\n              x = x + n%2*Math.pow(10,i);\n\
+    \              n = Math.floor(n/2);\n              i++;\n            }\n     \
+    \       document.getElementById(\"result\").innerHTML =\n              \"二进制值\
+    \ : \"+x;\n            break;\n          case 2:\n            var x=0,i=0;\n \
+    \           while(n>0)\n            {\n              x = x + n%16*Math.pow(10,i);\n\
+    \              n = Math.floor(n/16);\n              i++;\n            }\n    \
+    \        document.getElementById(\"result\").innerHTML =\n              \"十六进制值\
+    \ : \"+x;\n            break;\n          case 3:\n            var x=0,i=0;\n \
+    \           while(n>0)\n            {\n              x = x + n%8*Math.pow(10,i);\n\
+    \              n = Math.floor(n/8);\n              i++;\n            }\n     \
+    \       document.getElementById(\"result\").innerHTML =\n              \"八进制值\
+    \ : \"+x;\n            break;\n          default:\n            document.getElementById(\"\
+    result\").innerHTML =\n              \"请选择转换器类型\";\n        }\n      }\n    </script>\n\
+    \  </HEAD>\n\n  <BODY>\n    <p>\n      输入数字：\n      <input type=\"text\" id=\"\
+    x\">\n      <br><br>\n      <input type=\"radio\" name=\"cnvrt\" value=\"1\" id=\"\
+    1\">二进制\n      <input type=\"radio\" name=\"cnvrt\" value=\"2\" id=\"2\">十六进制\n\
+    \      <input type=\"radio\" name=\"cnvrt\" value=\"3\" id=\"3\">八进制\n    </p>\n\
+    \    <br>\n    <input type=\"submit\" value=\"转换\" Onclick=\"convert()\">\n  \
+    \  <br><br>\n    <h2 id=\"result\"></h2>\n  </BODY>\n</HTML>\n```\n\n## 代码输出\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_63_0.png)\n\n## 20. 编写一个JavaScript程序，找出数组中出现最频繁的元素。\n\
+    \n```\n<HTML>\n\n<HEAD>\n<TITLE>Array</TITLE>\n</HEAD>\n\n<BODY>\n<script>\nvar\
+    \ arr = [3,2,3,2,2,2,2,2,2,4];\nvar a=1,c=0,item=arr[0],i,j;\n\nfor(i=0;i<arr.length;i++)\n\
+    {\n    for(j=i;j<arr.length;j++)\n    if(arr[i]==arr[j]) c++;\n    if(c>a)\n \
+    \   {\n        item = arr[i];\n        a = c;\n    }\n    c=0;\n}\n\nalert(\"\
+    数组中出现最频繁的元素 = \"+item);\n</script>\n\n</BODY>\n\n</HTML>\n```\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_66_0.png)\n\
+    \n## 21. 编写一个JavaScript函数，获取指定月份的天数。\n\n```\n<HTML>\n\n  <HEAD>\n\n    <TITLE>Date</TITLE>\n\
+    \n    <script>\n\n      function getdays()\n\n      {\n\n        var m = document.getElementById(\"\
+    m\").value;\n\n        var y = document.getElementById(\"y\").value;\n\n     \
+    \   var day = new Date(y,m,0).getDate();\n\n        document.getElementById(\"\
+    result\").innerHTML = day+\" 天\";\n\n      }\n\n    </script>\n\n  </HEAD>\n\n\
+    \  <BODY>\n    <p>\n      月份：\n      <input type=\"text\" id=\"m\">\n      <br><br>\n\
+    \      年份：\n      <input type=\"text\" id=\"y\">\n      <br><br>\n      <input\
+    \ type=\"submit\" value=\"获取天数\" Onclick=\"getdays()\">\n      <br>\n      <h2\
+    \ id=\"result\"></h2>\n    </p>\n  </BODY>\n</HTML>\n```\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_69_0.png)\n\
+    \n## 22. 编写一个JavaScript函数，向Date对象添加指定的分钟数。\n\n```\n<HTML>\n    <HEAD>\n      \
+    \  <TITLE>Date</TITLE>\n        <script>\n            function add()\n       \
+    \     {\n                var m = document.getElementById(\"m\").value;\n     \
+    \           var someDate = new Date();\n                someDate.setMinutes(someDate.getMinutes()+m);\n\
+    \                document.getElementById(\"result\").innerHTML = \"分钟 \"+someDate.getMinutes();\n\
+    \            }\n        </script>\n    </HEAD>\n    <BODY>\n        <p>\n    \
+    \        要添加的分钟数：\n            <input type=\"text\" id=\"m\">\n            <br><br>\n\
+    \            <input type=\"submit\" value=\"添加\" Onclick=\"add()\">\n        \
+    \    <br>\n            <h2 id=\"result\"></h2>\n        </p>\n    </BODY>\n</HTML>\n\
+    ```\n\n## HTML & JavaScript 练习题\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_72_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_72_1.png)\n\n62\n\n## 23. 编写一个程序，展示键盘的功能。\n\
+    \n```\n<html>\n<head>\n<script language=\"JavaScript\">\nfunction keyDown(){\n\
+    \    alert(\"按键被按下\");\n}\nfunction keyUp(){\n    alert(\"按键被释放\");\n}\nfunction\
+    \ keypress(){\n    alert(\"按键被按下并释放\");\n}\n</script>\n</head>\n<body>\n<input\
+    \ type=\"text\" OnkeyDown=\"keyDown()\"><br>\n<input type=\"text\" OnkeyUp=\"\
+    keyUp()\"><br>\n<input type=\"text\" Onkeypress=\"keypress()\"><br>\n</body>\n\
+    </html>\n```\n\n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_75_0.png)\n\
+    \n## HTML & JavaScript 练习题\n\n## 24. 编写一个程序，使用which属性显示鼠标事件。\n\n```\n<html>\n\n\
+    <head></head>\n\n<body>\n\n<div onmousedown=\"whichbutton(event)\">点击此文本，使用任意鼠标按键将返回一个数字。\n\
+    \n<p> 1=鼠标左键</p>\n\n<p> 2=鼠标中键</p>\n\n<p> 3=鼠标右键</p>\n\n</div>\n\n<p> <strong>注意：</strong>\
+    \ IE 8 或更早版本不支持 which 属性</p>\n\n<script language=\"JavaScript\">\n\nfunction whichbutton(event){\n\
+    \nalert(\"您按下了按钮 \"+event.which);}\n\n</script>\n\n</body>\n\n</html>\n```\n\n\
+    ## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_77_0.png)\n\n## 25. 编写一个程序，展示load和unload事件。\n\
+    \n```\n<html>\n<head>\n<script language=\"JavaScript\">\nfunction load(){\n  \
+    \  alert(\"网页加载完成\");\n}\nfunction unload(){\n    alert(\"网页被卸载\");\n}\n</script>\n\
+    </head>\n<body Onload=\"load()\"\nOnunload=\"unload()\">\n</body>\n</html>\n```\n\
+    \n## 代码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_79_0.png)\n\n## 26. 编写一个程序，接收用户的真实数据并将其存储在cookie中。\n\
+    \n```\n<html>\n\n<head>\n\n<title>JavaScript创建Cookie - 接收真实数据. 示例1</title>\n\n\
+    </head>\n\n<body>\n\n<h1 style=\"color: red\">JavaScript创建Cookie，接收真实数据 - 示例1</h1><br>\n\
+    \n<hr />\n\n<script type=\"text/javascript\">\n\n//为确保以下JavaScript代码兼容XHTML而这样做。\
+    \ <![CDATA[\n\nvar visitor_name = prompt(\"您叫什么名字？\",\"\");\n\nvar expr_date =\
+    \ new Date(\"July 30, 2017\");\n\nvar cookie_date = expr_date.toUTCString();\n\
+    \nfinal_cookie = \"Name = \" +\n\nencodeURIComponent(visitor_name) + \";expires_on\
+    \ = \"\n\n+ cookie_date;\n\ndocument.cookie = final_cookie;\n\nalert(final_cookie);\n\
+    \n//]]>\n\n</script>\n\n</body>\n\n</html>\n```\n"
+  merge: 0
+  raw:
+  - "[PAGE 52]\n\n# 17.Write a javaScript program to construct the following pattern\
+    \ using nested for loop.\n\n```\n<HTML>\n\n    <HEAD>\n\n        <TITLE>Pattern</TITLE>\n\
+    \n    </HEAD>\n\n    <BODY>\n\n        <script>\n\n            var i,j;\n\n  \
+    \          document.write(\"<h2>Pattern:<br>\");\n\n            for(i=0;i<10;i++)\n\
+    \n            {\n\n                for(j=0;j<=i;j++)\n\n                document.write(\"\
+    \ *\");\n\n                document.write(\"<br>\");\n\n            }\n\n    \
+    \    </script>\n\n    </BODY>\n\n</HTML>\n```"
+  - '[PAGE 53]
+
+
+    ```
+
+    </BODY>
+
+    </HTML>
+
+    ```
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_53_0.png)'
+  - "[PAGE 54]\n\n# HTML & JavaScript Practice Questions\n\n# 18. Write a javascript\
+    \ program to compute the greatest common divisor(GCD) of two positive integers\
+    \ using while loop.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>Pattern</TITLE>\n   \
+    \ <script>\n      function gcd()\n      {\n        var x = document.getElementById(\"\
+    x\").value;\n        var y = document.getElementById(\"y\").value;\n        var\
+    \ hcf=1;\n        if(x<y)\n        {\n          var t = x;\n          x = y;\n\
+    \          y = t;\n```"
+  - "[PAGE 55]\n\n```\nwhile(hcf!=0)\n{\n    hcf = x%y;\n    x = y;\n    y = hcf;\n\
+    }\n\ndocument.getElementById(\"result\").innerHTML = \"GCD = \"+x;\n}\n\n</script>\n\
+    \n</HEAD>\n\n<BODY>\n\n<h2>\n    Enter two numbers :\n    <input type=\"text\"\
+    \ id=\"x\">\n    <input type=\"text\" id=\"y\">\n</h2>\n```"
+  - '[PAGE 56]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <br><br>
+
+    <input type="submit" value="Get GCD" Onclick="gcd()">
+
+    <br><br>
+
+    <h2 id="result"></h2>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  - '[PAGE 57]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_1.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_2.png)
+
+
+    GCD = 1'
+  - "[PAGE 58]\n\n# 19. Write a javascript function to convert a decimal number to\
+    \ binary, hexadecimal to octal number using switch case.\n\n```\n<HTML>\n\t<HEAD>\n\
+    \t\t<TITLE>Pattern</TITLE>\n\t\t<script>\n\t\t\tfunction convert()\n\t\t\t{\n\t\
+    \t\t\tvar n =\n\tdocument.getElementById(\"x\").value;\n\t\t\t\tvar a = 0;\n\t\
+    \t\t\tif(document.getElementById(\"1\").checked)\n\t\t\t\t\ta=1;\n\t\t\t\telse\n\
+    \t\t\t\tif(document.getElementById(\"2\").checked)\n\t\t\t\t\ta=2;\n\t\t\t\telse\n\
+    \t\t\t\tif(document.getElementById(\"3\").checked)\n```"
+  - "[PAGE 59]\n\n```\na=3;\nswitch(a)\n{\ncase 1:\n    var x=0,i=0;\n    while(n>0)\n\
+    \    {\n        x = x + n%2*Math.pow(10,i);\n        n = Math.floor(n/2);\n  \
+    \      i++;\n    }\n\ndocument.getElementById(\"result\").innerHTML =\n\"Binary\
+    \ value : \"+x;\n    break;\ncase 2:\n    var x=0,i=0;\n    while(n>0)\n    {\n\
+    ```"
+  - '[PAGE 60]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ```
+
+    x = x + n%16*Math.pow(10,i);
+
+
+    n = Math.floor(n/16);
+
+
+    i++;
+
+
+    }
+
+    ```
+
+
+    ```
+
+    document.getElementById("result").innerHTML =
+
+    "Hexadecimal value : "+x;
+
+    ```
+
+
+    ```
+
+    break;
+
+
+    case 3:
+
+
+    var x=0,i=0;
+
+
+    while(n>0)
+
+
+    {
+
+
+    x = x + n%8*Math.pow(10,i);
+
+
+    n = Math.floor(n/8);
+
+
+    i++;
+
+
+    }
+
+    ```
+
+
+    ```
+
+    document.getElementById("result").innerHTML =
+
+    "Octal value : "+x;
+
+    ```'
+  - '[PAGE 61]
+
+
+    ```
+
+    break;
+
+
+    default:
+
+    document.getElementById("result").innerHTML =
+
+    "Please select converter type";
+
+
+    }
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <p>
+
+
+    Enter two numbers :
+
+
+    <input type="text" id="x">
+
+
+    <br><br>
+
+
+    <input type="radio" name="cnvrt" value="1"
+
+    id="1">Binary
+
+
+    <input type="radio" name="cnvrt" value="2"
+
+    id="2">Hexadecimal
+
+
+    <input type="radio" name="cnvrt" value="3"
+
+    id="3">Octal
+
+
+    </p>
+
+    ```'
+  - '[PAGE 62]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <br>
+
+
+    <input type="submit" value="Get GCD" Onclick="convert()">
+
+
+    <br><br>
+
+
+    <h2 id="result"></h2>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - '[PAGE 63]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_63_0.png)'
+  - "[PAGE 64]\n\n# 20. Write a javascript program to find the most frequent item\
+    \ of an array.\n\n```\n<HTML>\n\n<HEAD>\n<TITLE>Array</TITLE>\n</HEAD>\n\n<BODY>\n\
+    <script>\nvar arr = [3,2,3,2,2,2,2,2,2,4];\nvar a=1,c=0,item=arr[0],i,j;\n\nfor(i=0;i<arr.length;i++)\n\
+    {\n    for(j=i;j<arr.length;j++)\n    if(arr[i]==arr[j]) c++;\n    if(c>a)\n \
+    \   {\n```"
+  - '[PAGE 65]
+
+
+    ```
+
+    item = arr[i];
+
+
+    a = c;
+
+
+    }
+
+
+    c=0;
+
+
+    }
+
+
+    alert("Most frequent item of array = "+item);
+
+
+    </script>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  - '[PAGE 66]
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_66_0.png)'
+  - "[PAGE 67]\n\n# 21. Write a javascript function to get the number of days in month.\n\
+    \n```\n<HTML>\n\n  <HEAD>\n\n    <TITLE>Date</TITLE>\n\n    <script>\n\n     \
+    \ function getdays()\n\n      {\n\n        var m = document.getElementById(\"\
+    m\").value;\n\n        var y = document.getElementById(\"y\").value;\n\n     \
+    \   var day = new Date(y,m,0).getDate();\n\n        document.getElementById(\"\
+    result\").innerHTML = day+\" Days\";\n\n      }\n\n    </script>\n\n  </HEAD>\n\
+    \n  <BODY>\n```"
+  - "[PAGE 68]\n\nHTML & JavaScript Practice Questions\n\n```\n<p>\n    Month :\n\
+    \    <input type=\"text\" id=\"m\">\n    <br><br>\n    Year :\n    <input type=\"\
+    text\" id=\"y\">\n    <br><br>\n    <input type=\"submit\" value=\"Get_Days\"\
+    \ Onclick=\"getdays()\">\n    <br>\n    <h2 id=\"result\"></h2>\n</p>\n</BODY>\n\
+    </HTML>\n```"
+  - '[PAGE 69]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_69_0.png)'
+  - "[PAGE 70]\n\n# 22. Write a javascript function to add specified minutes to a\
+    \ Date object.\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Date</TITLE>\n     \
+    \   <script>\n            function add()\n            {\n                var m\
+    \ = document.getElementById(\"m\").value;\n                var someDate = new\
+    \ Date();\n                someDate.setMinutes(someDate.getMinutes()+m);\n   \
+    \             document.getElementById(\"result\").innerHTML = \"Minutes \"+someDate.getMinutes();\n\
+    \            }\n        </script>\n    </HEAD>\n```"
+  - "[PAGE 71]\n\n```\n<BODY>\n\n<p>\n\n    Minutes to add :\n\n    <input type=\"\
+    text\" id=\"m\">\n\n    <br><br>\n\n    <input type=\"submit\" value=\"ADD\" Onclick=\"\
+    add()\">\n\n    <br>\n\n    <h2 id=\"result\"></h2>\n\n</p>\n\n</BODY>\n\n</HTML>\n\
+    ```"
+  - '[PAGE 72]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_72_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_72_1.png)
+
+
+    62'
+  - '[PAGE 73]
+
+
+    # 23. Write a program to display function of keyboard.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <script language="JavaScript">
+
+    function keyDown(){
+
+    alert("key pressed");
+
+    }
+
+    function keyUp(){
+
+    alert("key released");
+
+    }
+
+    function keypress(){
+
+    alert("key pressed and released");
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <input type="text" OnkeyDown="keyDown()"><br>
+
+    ```'
+  - '[PAGE 74]
+
+
+    ```
+
+    <input type="text" OnkeyUp="keyUp()"><br>
+
+    <input type="text" Onkeypress="keypress()"><br>
+
+    </body>
+
+    </html>
+
+    ```'
+  - '[PAGE 75]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_75_0.png)'
+  - '[PAGE 76]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # 24. Write a program to display mouse event using which property.
+
+
+    ```
+
+    <html>
+
+
+    <head></head>
+
+
+    <body>
+
+
+    <div onmousedown="whichbutton(event)">click this text with one of the mouse button
+    to return number.
+
+
+    <p> 1=the left mouse button</p>
+
+
+    <p> 2=the middle mouse button</p>
+
+
+    <p> 3=the right mouse button</p>
+
+
+    </div>
+
+
+    <p> <strong>Note:</strong> The which property is not supported by IE 8 or earlier
+    versions</p>
+
+
+    <script language="JavaScript">
+
+
+    function whichbutton(event){
+
+
+    alert("you pressed button"+event.which);}
+
+
+    </script>
+
+
+    </body>
+
+
+    </html>
+
+    ```'
+  - '[PAGE 77]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_77_0.png)'
+  - '[PAGE 78]
+
+
+    # 25. Write a program to display load and unload event.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <script language="JavaScript">
+
+    function load(){
+
+    alert("onload webpage");
+
+    }
+
+    function unload(){
+
+    alert("unload a webpage");
+
+    }
+
+    </script></head>
+
+    <body Onload="load()"
+
+    Onunload="unload()">
+
+    </body>
+
+    </html>
+
+    ```'
+  - '[PAGE 79]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_79_0.png)'
+  - '[PAGE 80]
+
+
+    # 26. Write a program to receive real data from the user and store it in s cookie.
+
+
+    ```
+
+    <html>
+
+
+    <head>
+
+
+    <title>JavaScript creating cookies - receive real data. example1</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    <h1 style="color: red">JavaScript creating cookies, receive real data. - example1</h1><br>
+
+
+    <hr />
+
+
+    <script type="text/javascript">
+
+
+    //This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+
+
+    var visitor_name = prompt("What''s your name?","");
+
+
+    var expr_date = new Date("July 30, 2017");
+
+
+    var cookie_date = expr_date.toUTCString();
+
+
+    final_cookie = "Name = " +
+
+
+    encodeURIComponent(visitor_name) + ";expires_on = "
+
+
+    + cookie_date;
+
+    ```'
+  - '[PAGE 81]
+
+
+    ```
+
+    document.cookie = final_cookie;
+
+    alert(final_cookie);
+
+    //]]>
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```'
+- md: " # HTML & JavaScript Practice Questions\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_82_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_82_1.png)\n\n## 27. Write a program\
+    \ to retrieve values from cookie.\n\n```\n<html>\n<head>\n<title>JavaScript :\
+    \ Retrieve values from a cookie - example1</title>\n</head>\n<body>\n<h1 style=\"\
+    color: red\">JavaScript : Retrieve values from a cookie - example1</h1>\n<hr />\n\
+    <script type=\"text/javascript\">\n//This is done to make the following JavaScript\
+    \ code compatible to XHTML. <![CDATA[\nvar search_cookie = \"my_cookie\" + \"\
+    =\"\nif (document.cookie.length > 0)\n{\n// Search for a cookie.\noffset = document.cookie.indexOf(search_cookie)\n\
+    if (offset != -1)\n{\n    offset += search_cookie.length\n    // set index of\
+    \ beginning of value\n    end = document.cookie.indexOf(\";\",offset)\n    if\
+    \ (end == -1)\n    {\n        end = document.cookie.length\n    }\n    alert(decodeURIComponent(document.cookie.substring(offset,\
+    \ end)))\n}\n}\n//]]>\n</script>\n</head>\n</body>\n</html>\n```\n\n### Coding\
+    \ Output\n\nJavaScript : Retrieve values from a cookie - example1\n\n## 28. Write\
+    \ a javascript program to check form validation.\n\n```\n<HTML>\n    <HEAD>\n\
+    \        <TITLE>FORM EXAMPLE</TITLE>\n        <script>\n            function validation()\n\
+    \            {\n                var x=document.forms[\"myForm\"][\"sname\"].value;\n\
+    \                if(x==null||x==\"\")\n                    alert(\"Student Name\
+    \ must be filled Out!!!\");\n\n                x = document.forms[\"myForm\"][\"\
+    fname\"].value;\n                if(x==null||x==\"\")\n                    alert(\"\
+    Father's Name must be filled Out!!!\");\n\n                if(!document.getElementById(\"\
+    m\").checked && !document.getElementById(\"f\").checked)\n                   \
+    \ alert(\"Please select Gender\");\n\n                //Email Validation\n   \
+    \             x=document.forms[\"myForm\"][\"email\"].value;\n\n             \
+    \   var atpos=x.indexOf(\"@\");\n                var dotpos=x.lastIndexOf(\".\"\
+    );\n\n                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)\n \
+    \               {\n                    alert(\"Not a valid e-mail address\");\n\
+    \                    return false;\n                }\n\n                var len\
+    \ =document.forms[\"myForm\"][\"pwd\"].value.length;\n\n                if(len<8)\
+    \ alert(\"Your Password is weak!!!\");\n            }\n        </script>\n   \
+    \ </HEAD>\n    <BODY>\n        <FORM name=\"myForm\">\n            <H2 align=\"\
+    center\">STUDENT REGISTRATION</H2>\n            <center>\n            STUDENT\
+    \ NAME : \n            <input type=\"text\" name=\"sname\">\n            <br><br>\n\
+    \            FATHER'S NAME : \n            <input type=\"text\" name=\"fname\"\
+    >\n            <br><br>\n            GENDER : \n            <input type=\"radio\"\
+    \ name=\"gendr\" value=\"male\" checked id=\"m\">Male \n            <input type=\"\
+    radio\" name=\"gendr\" value=\"female\" id=\"f\">Female \n            <br><br>\n\
+    \            COURSE : \n            <select name=course>\n                <option\
+    \ value=\"msc\">MSC</option>\n                <option value=\"mca\">MCA</option>\n\
+    \            </select>\n            </select>\n            <br><br>\n        \
+    \    HOBBY :\n            <input type=\"checkbox\" name=\"hoby\" value=\"singing\"\
+    \ checked>Singing\n            <input type=\"checkbox\" name=\"hoby\" value=\"\
+    Dancing\">Dancing\n            <input type=\"checkbox\" name=\"hoby\" value=\"\
+    Chess\">Chess\n            <br><br>\n            Email Address :\n           \
+    \ <input type=\"text\" name=\"email\">\n            <br><br>\n            CREATE\
+    \ PASSWORD :\n            <input type=\"password\" name=\"pwd\">\n           \
+    \ <br><br>\n            <input type=\"reset\" value=\"RESET\">\n            <input\
+    \ type=\"submit\" value=\"SUBMIT\" Onclick=\"validation()\">\n            </center>\n\
+    \        </FORM>\n    </BODY>\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_91_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_91_1.png)\n\n## 29. Write a javascript\
+    \ program to display digital clock.\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Clock</TITLE>\n\
+    \        <script>\n            function startTime()\n            {\n         \
+    \       var today=new Date();\n                var h=today.getHours();\n     \
+    \           var m=today.getMinutes();\n                var s=today.getSeconds();\n\
+    \                // add a zero in front of numbers<10\n                m=checkTime(m);\n\
+    \                s=checkTime(s);\n\n                document.getElementById('txt').innerHTML=h+\"\
+    :\"+m+\":\"+s;\n                t=setTimeout(function(){startTime()},500);\n \
+    \           }\n\n            function checkTime(i)\n            {\n          \
+    \      if (i<10)\n                {\n                    i=\"0\" + i;\n      \
+    \          }\n                return i;\n            }\n        </script>\n  \
+    \  </HEAD>\n    <body onload=\"startTime()\">\n        <h1 align=\"center\" id=\"\
+    txt\"></h1>\n    </body>\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_94_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_94_1.png)\n\n## 30. Write a javascript\
+    \ program to implement any two string method.\n\n```\n<HTML>\n    <HEAD>\n   \
+    \     <TITLE>Date</TITLE>\n        <script>\n            function strmethod()\n\
+    \            {\n                var str = document.getElementById(\"m\").value;\n\
+    \                var txt = str.toUpperCase();\n                var rpc = str.replace(\"\
+    kumar\",\"Kaushik\");\n                document.getElementById(\"result\").innerHTML\
+    \ = \"toUpperCase() : \"+txt+\"<br>replace() : \"+rpc;\n            }\n      \
+    \  </script>\n    </HEAD>\n    <BODY>\n        <p>\n            Enter String :\n\
+    \            <input type=\"text\" id=\"m\">\n            <br><br>\n          \
+    \  <input type=\"submit\" value=\"Apply_method\" Onclick=\"strmethod()\">\n  \
+    \          <br>\n            <h2 id=\"result\"></h2>\n        </p>\n    </BODY>\n\
+    </HTML>\n```\n\n### Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_98_0.png)\n\
+    \n## 31. Write a javascript program to check whether the Number is even or odd.\n\
+    \n```\n<HTML>\n    <HEAD>\n        <TITLE>Even Odd</TITLE>\n        <script>\n\
+    \            function check()\n            {\n                var n = document.getElementById(\"\
+    m\").value;\n                if(Math.floor(n%2)==0)\n                    document.getElementById(\"\
+    result\").innerHTML = \"Number is Even!!!\";\n                else\n         \
+    \           document.getElementById(\"result\").innerHTML = \"Number is Odd!!!\"\
+    ;\n            }\n        </script>\n    </HEAD>\n    <BODY>\n        <p>\n  \
+    \          Enter any no.. :\n            <input type=\"text\" id=\"m\">\n    \
+    \        <br><br>\n            <input type=\"submit\" value=\"Even_or_Odd\" Onclick=\"\
+    check()\">\n            <br>\n            <h2 id=\"result\"></h2>\n        </p>\n\
+    \    </BODY>\n</HTML>\n```\n\n## Coding Output\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_101_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_101_1.png)\n\nThe book is a complete\
+    \ set of HTML and JavaScript Programming. The examples are well tested and based\
+    \ on the syllabus of Masters Degree of Computer Science Students.\n\nI, Dheeraj\
+    \ Singh, Thank Evincepub Publishing team for their support and help for publication\
+    \ of this book. I hope it is surely going to help students seeking to get knowledge\
+    \ about HTML and JavaScript Programming.\n\n-Dheeraj Singh\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_102_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_102_1.png)"
+  mdcn: "\n# HTML 与 JavaScript 练习题\n\n## 编码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_82_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_82_1.png)\n\n## 27. 编写一个程序从 Cookie\
+    \ 中检索值。\n\n```\n<html>\n<head>\n<title>JavaScript : Retrieve values from a cookie\
+    \ - example1</title>\n</head>\n<body>\n<h1 style=\"color: red\">JavaScript : Retrieve\
+    \ values from a cookie - example1</h1>\n<hr />\n<script type=\"text/javascript\"\
+    >\n//This is done to make the following JavaScript code compatible to XHTML. <![CDATA[\n\
+    var search_cookie = \"my_cookie\" + \"=\"\nif (document.cookie.length > 0)\n{\n\
+    // Search for a cookie.\noffset = document.cookie.indexOf(search_cookie)\nif (offset\
+    \ != -1)\n{\n    offset += search_cookie.length\n    // set index of beginning\
+    \ of value\n    end = document.cookie.indexOf(\";\",offset)\n    if (end == -1)\n\
+    \    {\n        end = document.cookie.length\n    }\n    alert(decodeURIComponent(document.cookie.substring(offset,\
+    \ end)))\n}\n}\n//]]>\n</script>\n</head>\n</body>\n</html>\n```\n\n### 编码输出\n\
+    \nJavaScript : Retrieve values from a cookie - example1\n\n## 28. 编写一个 JavaScript\
+    \ 程序来检查表单验证。\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>FORM EXAMPLE</TITLE>\n\
+    \        <script>\n            function validation()\n            {\n        \
+    \        var x=document.forms[\"myForm\"][\"sname\"].value;\n                if(x==null||x==\"\
+    \")\n                    alert(\"Student Name must be filled Out!!!\");\n\n  \
+    \              x = document.forms[\"myForm\"][\"fname\"].value;\n            \
+    \    if(x==null||x==\"\")\n                    alert(\"Father's Name must be filled\
+    \ Out!!!\");\n\n                if(!document.getElementById(\"m\").checked &&\
+    \ !document.getElementById(\"f\").checked)\n                    alert(\"Please\
+    \ select Gender\");\n\n                //Email Validation\n                x=document.forms[\"\
+    myForm\"][\"email\"].value;\n\n                var atpos=x.indexOf(\"@\");\n \
+    \               var dotpos=x.lastIndexOf(\".\");\n\n                if (atpos<1\
+    \ || dotpos<atpos+2 || dotpos+2>=x.length)\n                {\n              \
+    \      alert(\"Not a valid e-mail address\");\n                    return false;\n\
+    \                }\n\n                var len =document.forms[\"myForm\"][\"pwd\"\
+    ].value.length;\n\n                if(len<8) alert(\"Your Password is weak!!!\"\
+    );\n            }\n        </script>\n    </HEAD>\n    <BODY>\n        <FORM name=\"\
+    myForm\">\n            <H2 align=\"center\">STUDENT REGISTRATION</H2>\n      \
+    \      <center>\n            STUDENT NAME : \n            <input type=\"text\"\
+    \ name=\"sname\">\n            <br><br>\n            FATHER'S NAME : \n      \
+    \      <input type=\"text\" name=\"fname\">\n            <br><br>\n          \
+    \  GENDER : \n            <input type=\"radio\" name=\"gendr\" value=\"male\"\
+    \ checked id=\"m\">Male \n            <input type=\"radio\" name=\"gendr\" value=\"\
+    female\" id=\"f\">Female \n            <br><br>\n            COURSE : \n     \
+    \       <select name=course>\n                <option value=\"msc\">MSC</option>\n\
+    \                <option value=\"mca\">MCA</option>\n            </select>\n \
+    \           </select>\n            <br><br>\n            HOBBY :\n           \
+    \ <input type=\"checkbox\" name=\"hoby\" value=\"singing\" checked>Singing\n \
+    \           <input type=\"checkbox\" name=\"hoby\" value=\"Dancing\">Dancing\n\
+    \            <input type=\"checkbox\" name=\"hoby\" value=\"Chess\">Chess\n  \
+    \          <br><br>\n            Email Address :\n            <input type=\"text\"\
+    \ name=\"email\">\n            <br><br>\n            CREATE PASSWORD :\n     \
+    \       <input type=\"password\" name=\"pwd\">\n            <br><br>\n       \
+    \     <input type=\"reset\" value=\"RESET\">\n            <input type=\"submit\"\
+    \ value=\"SUBMIT\" Onclick=\"validation()\">\n            </center>\n        </FORM>\n\
+    \    </BODY>\n</HTML>\n```\n\n## 编码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_91_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_91_1.png)\n\n## 29. 编写一个 JavaScript\
+    \ 程序来显示数字时钟。\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Clock</TITLE>\n      \
+    \  <script>\n            function startTime()\n            {\n               \
+    \ var today=new Date();\n                var h=today.getHours();\n           \
+    \     var m=today.getMinutes();\n                var s=today.getSeconds();\n \
+    \               // add a zero in front of numbers<10\n                m=checkTime(m);\n\
+    \                s=checkTime(s);\n\n                document.getElementById('txt').innerHTML=h+\"\
+    :\"+m+\":\"+s;\n                t=setTimeout(function(){startTime()},500);\n \
+    \           }\n\n            function checkTime(i)\n            {\n          \
+    \      if (i<10)\n                {\n                    i=\"0\" + i;\n      \
+    \          }\n                return i;\n            }\n        </script>\n  \
+    \  </HEAD>\n    <body onload=\"startTime()\">\n        <h1 align=\"center\" id=\"\
+    txt\"></h1>\n    </body>\n</HTML>\n```\n\n## 编码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_94_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_94_1.png)\n\n## 30. 编写一个 JavaScript\
+    \ 程序来实现任意两个字符串方法。\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Date</TITLE>\n  \
+    \      <script>\n            function strmethod()\n            {\n           \
+    \     var str = document.getElementById(\"m\").value;\n                var txt\
+    \ = str.toUpperCase();\n                var rpc = str.replace(\"kumar\",\"Kaushik\"\
+    );\n                document.getElementById(\"result\").innerHTML = \"toUpperCase()\
+    \ : \"+txt+\"<br>replace() : \"+rpc;\n            }\n        </script>\n    </HEAD>\n\
+    \    <BODY>\n        <p>\n            Enter String :\n            <input type=\"\
+    text\" id=\"m\">\n            <br><br>\n            <input type=\"submit\" value=\"\
+    Apply_method\" Onclick=\"strmethod()\">\n            <br>\n            <h2 id=\"\
+    result\"></h2>\n        </p>\n    </BODY>\n</HTML>\n```\n\n### 编码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_98_0.png)\n\
+    \n## 31. 编写一个 JavaScript 程序来检查一个数字是偶数还是奇数。\n\n```\n<HTML>\n    <HEAD>\n      \
+    \  <TITLE>Even Odd</TITLE>\n        <script>\n            function check()\n \
+    \           {\n                var n = document.getElementById(\"m\").value;\n\
+    \                if(Math.floor(n%2)==0)\n                    document.getElementById(\"\
+    result\").innerHTML = \"Number is Even!!!\";\n                else\n         \
+    \           document.getElementById(\"result\").innerHTML = \"Number is Odd!!!\"\
+    ;\n            }\n        </script>\n    </HEAD>\n    <BODY>\n        <p>\n  \
+    \          Enter any no.. :\n            <input type=\"text\" id=\"m\">\n    \
+    \        <br><br>\n            <input type=\"submit\" value=\"Even_or_Odd\" Onclick=\"\
+    check()\">\n            <br>\n            <h2 id=\"result\"></h2>\n        </p>\n\
+    \    </BODY>\n</HTML>\n```\n\n## 编码输出\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_101_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_101_1.png)\n\n本书是完整的 HTML 和 JavaScript\
+    \ 编程集合。示例经过充分测试，并基于计算机科学硕士生的教学大纲。\n\n我，Dheeraj Singh，感谢 Evincepub 出版团队在本书出版过程中的支持与帮助。我深信，它必将帮助那些寻求获取\
+    \ HTML 和 JavaScript 编程知识的学生。\n\n-Dheeraj Singh\n\n![](img/118de41f1d7757a3a32bcc09c536fee2_102_0.png)\n\
+    \n![](img/118de41f1d7757a3a32bcc09c536fee2_102_1.png)\n"
+  merge: 1
+  raw:
+  - '[PAGE 82]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_82_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_82_1.png)'
+  - '[PAGE 83]
+
+
+    # 27. Write a program to retrieve values from cookie.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>JavaScript : Retrieve values from a cookie - example1</title>
+
+    </head>
+
+    <body>
+
+    <h1 style="color: red">JavaScript : Retrieve values from a cookie - example1</h1>
+
+    <hr />
+
+    <script type="text/javascript">
+
+    //This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+
+    var search_cookie = "my_cookie" + "="
+
+    if (document.cookie.length > 0)
+
+    {
+
+    // Search for a cookie.
+
+    offset = document.cookie.indexOf(search_cookie)
+
+    ```'
+  - "[PAGE 84]\n\n# HTML & JavaScript Practice Questions\n\n```\nif (offset != -1)\n\
+    {\n    offset += search_cookie.length\n    // set index of beginning of value\n\
+    \    end = document.cookie.indexOf(\";\",offset)\n    if (end == -1)\n    {\n\
+    \        end = document.cookie.length\n    }\n    alert(decodeURIComponent(document.cookie.substring(offset,\
+    \ end)))\n}\n}\n//]]>\n</script>\n</head>\n</body>\n</html>\n```"
+  - '[PAGE 85]
+
+
+    # # Coding Output
+
+
+    JavaScript : Retrieve values from a cookie - example1'
+  - "[PAGE 86]\n\n# 28. Write a javascript program to check form validation.\n\n```\n\
+    <HTML>\n    <HEAD>\n        <TITLE>FORM EXAMPLE</TITLE>\n        <script>\n  \
+    \          function validation()\n            {\n                var x=document.forms[\"\
+    myForm\"][\"sname\"].value;\n                if(x==null||x==\"\")\n          \
+    \          alert(\"Student Name must be fielled Out!!!\");\n\n               \
+    \ x = document.forms[\"myForm\"][\"fname\"].value;\n                alert(\"Father's\
+    \ Name must be fielled Out!!!\");\n\n                if(!document.getElementById(\"\
+    m\").checked || !document.getElementById(\"f\").checked)\n                   \
+    \ alert(\"Please select Gender\");\n            }\n        </script>\n    </HEAD>\n\
+    ```"
+  - "[PAGE 87]\n\n```\n//Email Validation\n\nx=document.forms[\"myForm\"][\"email\"\
+    ].value;\n\nvar atpos=x.indexOf(\"@\");\nvar dotpos=x.lastIndexOf(\".\");\n\n\
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)\n{\n    alert(\"Not a valid\
+    \ e-mail address\");\n    return false;\n}\n\nvar len =document.forms[\"myForm\"\
+    ][\"pwd\"].length;\n\nif(len<8) alert(\"Your Password is week!!!\");\n}\n\n</script>\n\
+    </HEAD>\n<BODY>\n<FORM name=\"myForm\">\n```"
+  - "[PAGE 88]\n\nHTML & JavaScript Practice Questions\n\n```\n<H2 align=\"center\"\
+    >STUDENT REGISTRATION</H2>\n<center>\nSTUDENT NAME : \n<input type=\"text\" name=\"\
+    sname\">\n<br><br>\nFATHER'S NAME : \n<input type=\"text\" name=\"fname\">\n<br><br>\n\
+    GENDER : \n<input type=\"radio\" name=\"gendr\" value=\"male\" checked id=\"m\"\
+    >Male \n<input type=\"radio\" name=\"gendr\" value=\"femal\" id=\"f\">Female \n\
+    <br><br>\nCOURSE : \n<select name=course>\n<option value=\"msc\">MSC</option>\n\
+    <option value=\"mca\">MCA</option>\n</select>\n```"
+  - '[PAGE 89]
+
+
+    ```
+
+    </select>
+
+    <br><br>
+
+    HOBBY :
+
+    <input type="checkbox" name="hoby" value="singing" checked>Singing
+
+    <input type="checkbox" name="hoby" value="Dancing">Dancing
+
+    <input type="checkbox" name="hoby" value="Chess">Chess
+
+    <br><br>
+
+    Email Address :
+
+    <input type="text" name="email">
+
+    </textarea>
+
+    <br><br>
+
+    CREATE PASSWORD :
+
+    <input type="password" name="pwd">
+
+    <br><br>
+
+    <input type="reset" value="RESET">
+
+    <input type="submit" value="SUBMIT" Onclick="validation()">
+
+    ```'
+  - '[PAGE 90]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    ```
+
+    </center>
+
+    ```
+
+
+    ```
+
+    </FORM>
+
+    ```
+
+
+    ```
+
+    </BODY>
+
+    ```
+
+
+    ```
+
+    </HTML>
+
+    ```'
+  - '[PAGE 91]
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_91_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_91_1.png)'
+  - "[PAGE 92]\n\n# 29. Write a javascript program to display digital clock.\n\n```\n\
+    <HTML>\n    <HEAD>\n        <TITLE>Clock</TITLE>\n        <script>\n         \
+    \   function startTime()\n            {\n                var today=new Date();\n\
+    \                var h=today.getHours();\n                var m=today.getMinutes();\n\
+    \                var s=today.getSeconds();\n                // add a zero in front\
+    \ of numbers<10\n                m=checkTime(m);\n                s=checkTime(s);\n\
+    \ndocument.getElementById('txt').innerHTML=h+\":\"+m+\n\":\"+s;\n            \
+    \    t=setTimeout(function(){startTime()},500);\n```"
+  - "[PAGE 93]\n\n```\n    }\n\n    function checkTime(i)\n    {\n        if (i<10)\n\
+    \        {\n            i=\"0\" + i;\n        }\n        return i;\n    }\n</script>\n\
+    </HEAD>\n<body onload=\"startTime()\">\n    <h1 align=\"center\" id=\"txt\"></div>\n\
+    </body>\n</HTML>\n```"
+  - '[PAGE 94]
+
+
+    # HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_94_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_94_1.png)'
+  - '[PAGE 95]
+
+
+    # ## 30. Write a javascript program to implement any two string method.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>Date</TITLE>
+
+
+    <script>
+
+
+    function strmethod()
+
+
+    {
+
+
+    var str = document.getElementById("m").value;
+
+
+    var txt = str.toUpperCase();
+
+
+    var rpc = str.replace("kumar","Kaushik");
+
+
+    document.getElementById("result").innerHTML = "toUpperCase() : "+txt+"<br>replace()
+    : "+rpc;
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <p>
+
+    ```'
+  - "[PAGE 96]\n\nEnter String :\n\n```\n<input type=\"text\" id=\"m\">\n<br><br>\n\
+    <input type=\"submit\" value=\"Apply_method\" Onclick=\"strmethod()\">\n<br>\n\
+    <h2 id=\"result\"></h2>\n</p>\n</BODY>\n</HTML><HTML>\n<HEAD>\n<TITLE>Date</TITLE>\n\
+    <script>\nfunction strmethod()\n{\n    var str = document.getElementById(\"m\"\
+    ).value;\n    var txt = str.toUpperCase();\n    var rpc = str.replace(\"kumar\"\
+    ,\"Kaushik\");\n```"
+  - "[PAGE 97]\n\n```\ndocument.getElementById(\"result\")\n.innerHTML = \"<br>toUpperCase()\
+    \ : \"+txt+\"<br>replace() : \"+rpc;\n}\n\n</script>\n</HEAD>\n\n<BODY>\n\n<p>\n\
+    \tEnter String :\n\t<input type=\"text\" id=\"m\">\n\t<br><br>\n\t<input type=\"\
+    submit\" value=\"Apply_method\" Onclick=\"strmethod()\">\n\t<br>\n\t<h2 id=\"\
+    result\"></h2>\n</p>\n</BODY>\n</HTML>\n```"
+  - '[PAGE 98]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_98_0.png)'
+  - '[PAGE 99]
+
+
+    # 31. Write a javascript program to check whether the Number is even or odd.
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Even Odd</TITLE>
+
+    <script>
+
+    function check()
+
+    {
+
+    var n = document.getElementById("m").value;
+
+    if(Math.floor(n%2)==0)
+
+    document.getElementById("result").innerHTML = "Number is Even!!!";
+
+    else
+
+    document.getElementById("result").innerHTML = "Number is Odd!!!";
+
+    }
+
+    </script>
+
+    </HEAD>
+
+    <BODY>
+
+    ```'
+  - "[PAGE 100]\n\n# HTML & JavaScript Practice Questions\n\n```\n<p>\n    Enter any\
+    \ no.. :\n    <input type=\"text\" id=\"m\">\n    <br><br>\n    <input type=\"\
+    submit\" value=\"Even_or_Odd\" Oonclick=\"check()\">\n    <br>\n    <h2 id=\"\
+    result\"></h2>\n</p>\n</BODY>\n</HTML>\n```"
+  - '[PAGE 101]
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_101_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_101_1.png)'
+  - '[PAGE 102]
+
+
+    The book is a complete set of HTML and JavaScript Programming. The examples are
+    well tested and based on the syllabus of Masters Degree of Computer Science Students.
+
+
+    I, Dheeraj Singh, Thank Evincepub Publishing team for their support and help for
+    publication of this book. I hope it is surely going to help students seeking to
+    get knowledge about HTML and JavaScript Programming.
+
+
+    -Dheeraj Singh
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_102_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_102_1.png)'
+pages:
+- img_proc: true
+  md: '# HTML & JavaScript
+
+
+    Practice Questions
+
+
+    BY DHEERAJ SINGH'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_1_0.png)'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# Evincepub Publishing
+
+
+    Mansarover Park, West Delhi, India 110015
+
+    SMIG - 65, Parijat Extension, Bilaspur, Chhattisgarh 495001
+
+
+    First Published by Evincepub Publishing 2017
+
+    Copyright © Dheeraj Singh 2017
+
+    All Rights Reserved.
+
+    **ISBN:** 978-1-5457-1047-0
+
+    **Price:** Rs. 150
+
+
+    This book has been published with all reasonable efforts taken to make the material
+    error-free after the consent of the author. No part of this book shall be used,
+    reproduced in any manner whatsoever without written permission from the author,
+    except in the case of brief quotations embodied in critical articles and reviews.
+    The Author of this book is solely responsible and liable for its content including
+    but not limited to the views, representations, descriptions, statements, information,
+    opinions and references [“Content”]. The Content of this book shall not constitute
+    or be construed or deemed to reflect the opinion or expression of the Publisher
+    or Editor. Neither the Publisher nor Editor endorse or approve the Content of
+    this book or guarantee the reliability, accuracy or completeness of the Content
+    published herein and do not make any representations or warranties of any kind,
+    express or implied, including but not limited to the implied warranties of merchantability,
+    fitness for a particular purpose. The Publisher and Editor shall not be liable
+    whatsoever for any errors, omissions, whether such errors or omissions result
+    from negligence, accident, or any other cause or claims for loss or damages of
+    any kind, including without limitation, indirect or consequential loss or damage
+    arising out of use, inability to use, or about the reliability, accuracy or sufficiency
+    of the information contained in this book.'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    By Dheeraj Singh'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# About the Book
+
+
+    The book is a complete set of HTML and JavaScript Programming Examples. The examples
+    are well tested and based on the syllabus of Masters Degree of Computer Science
+    Students.'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: '# About the Author
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_5_0.png)
+
+
+    Dheeraj Singh, an enthusiastic student and teacher, loves computers and programming
+    languages like HTML, JavaScript, C, C++ and Java. He is having the post graduation
+    degree on Economics. Despite of getting a degree in Economics, he is always found
+    surrounded by computers. He is currently running his own tutorials on Programming
+    Languages online. He has written this book at an early age of 20. The main aim
+    of Dheeraj to write this book is to clear the small and necessary doubts of students
+    willing to start programming in HTML and JavaScript.'
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# Content List
+
+
+    | S.N. | Program Name |
+
+    |---|---|
+
+    | | **HTML** |
+
+    | 1. | Write a program to implement marquee tag with its attributes. |
+
+    | 2. | Write a program to display class time table using HTML. |
+
+    | 3. | Write a program to implement form using html. |
+
+    | 4. | Write a program to implement `<img>` with its attributes. |
+
+    | 5. | Write a program to implement subscript and superscript using html. |
+
+    | 6. | Write a program to implement frames. |
+
+    | 7. | Write a program to implement svg with html. |'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '| 8. | Write a program to implement inline css. |
+
+    | 9. | Write a program to implement internal css. |
+
+    | 10. | write a program to implement external css. |
+
+    | | **JAVA SCRIPT** |
+
+    | 11. | Write a program to show alert (), prompt () and confirm (). |
+
+    | 12. | Write a program to display factorial number using recursive function.
+    |
+
+    | 13. | Write a program to find cube of the given number using function. |
+
+    | 14. | Write a program to convert Celsius to Fahrenheit using function. |
+
+    | 15. | Write a JavaScript program that accept two integers and display the larger
+    using if () and else if (). |
+
+    | 16. | Write a program to find Armstrong number of 3 digits using for loop. |
+
+    | 17. | Write a JavaScript program to construct the following pattern, using a
+    nested for loop. |'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '| 18. | Write a JavaScript program to compute the greatest common divisor (GCD)
+    of two positive integers using while loop. |
+
+    |---|---|
+
+    | 19. | Write a JavaScript function to convert a decimal number to binary, hexadecimal
+    or octal number using switch (). |
+
+    | 20. | Write a JavaScript program to find the most frequent item of an array.
+    |
+
+    | 21. | Write a JavaScript function to get the number of days in a month. |
+
+    | 22. | Write a JavaScript function to add specified minutes to a Date object.
+    |
+
+    | 23. | Write a program to display function of keyboard. |
+
+    | 24. | Write a program to display mouse event using which property. |
+
+    | 25. | Write a program to display load and unload event. |
+
+    | 26. | Write a program Receive real data from the user and store it in a cookie.
+    |
+
+
+    viii'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '| 27. | Write a program to Retrieves values from cookie. |
+
+    | 28. | Write a program to check form validation. |
+
+    | 29. | Write a program to display digital clock. |
+
+    | 30. | Write a program to implement any two string method. |
+
+    | 31. | Write a program to check whether number is even or odd. |'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "# 1. Write a program to implement marquee tag with it's attributes.\n\n```\n\
+    <HTML>\n\n    <HEAD>\n\n        <TITLE>Maquee Tag Example!!!</TITLE>\n\n    </HEAD>\n\
+    \n    <BODY> <font color=\"blue\"><marquee\n    width=\"100%\" height=\"15%\"\
+    \ behavior=\"slide\"\n    direction=\"right\" scrolldelay=10 scrollamount=8\n\
+    \    loop=20>\n\n        <h1>An Example of Marquee Tag ---></h1>\n\n    </marquee>\n\
+    \n    <marquee behavior=\"scroll\" direction=\"left\">\n\n        <h1><--- Moving\
+    \ in Left Direction </h1>\n\n    </marquee> </font>\n\n    <marquee behavior=\"\
+    alternate\">\n\n        <h1><----Alternate Brhavior---></h1>\n\n    </marquee>\n\
+    \n</BODY> </HTML>\n```"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: 'HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_12_0.png)'
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "# 2. Write a program to display class time table using HTML.\n\n```\n<HTML>\n\
+    \  <HEAD>\n    <TITLE>CLASS TIME TABLE</</TITLE>\n  </HEAD>\n  <BODY>\n    <H2\
+    \ align=\"center\">MSc 2<SUP>nd</SUP> SEMESTER </H2>\n    <BR>\n    <H4 align=\"\
+    center\">Class Time Table</H4>\n    <TABLE border=1 align=\"center\">\n      <tr>\n\
+    \        <th>DAY</th>\n        <th>12:00-2:00</th>\n        <th>2:00-2:45</th>\n\
+    \        <th>2:45-3:15</th>\n        <th>3:15-4:30</th>\n```"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "HTML & JavaScript Practice Questions\n\n```\n<th>4:30-5:00</th>\n\n</tr>\n\n\
+    <tr>\n    <td>MONDAY</td>\n    <td>OOPs LAB(batch I)</td>\n    <td>TOC</td>\n\
+    \    <td>POS</td>\n    <td>WT</td>\n    <td>DM</td>\n</tr>\n\n<tr>\n    <td>TUESDAY</td>\n\
+    \    <td>OOPs LAB(batch II)</td>\n    <td>TOC</td>\n    <td>OOP</td>\n    <td>WT</td>\n\
+    \    <td>DM</td>\n</tr>\n```"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "```\n<tr>\n  <td>WEDNESDAY</td>\n  <td>WT LAB(batch I)</td>\n  <td>POS</td>\n\
+    \  <td>OOP</td>\n  <td>WT</td>\n  <td>DM</td>\n</tr>\n```\n\n```\n<tr>\n  <td>THURSDAY</td>\n\
+    \  <td>-</td>\n  <td>POS</td>\n  <td>OOP</td>\n  <td>TOC</td>\n  <td>DM</td>\n\
+    </tr>\n```\n\n```\n<tr>\n```"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: '```
+
+    <td>FRIDAY</td>
+
+    <td>WT LAB(batch II)</td>
+
+    <td>POS</td>
+
+    <td>OOP</td>
+
+    <td>TOC</td>
+
+    <td>WT</td>
+
+    </tr>
+
+    </TABLE>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_17_0.png)
+
+
+    | DAY | 11:00-12:00 | 12:00-1:00 | 1:00-2:00 | 2:00-3:30 | 3:30-4:00 | 4:00-5:00
+    | 5:00-6:00 |
+
+    |---|---|---|---|---|---|---|---|
+
+    | MONDAY | DATA | LAB(Batch 1) | TIC | TIC | TIC | TIC | - |
+
+    | TUESDAY | DATA | LAB(Batch 2) | TIC | TIC | TIC | TIC | - |
+
+    | WEDNESDAY | DATA | LAB(Batch 3) | TIC | TIC | TIC | TIC | - |
+
+    | THURSDAY | DATA | LAB(Batch 4) | TIC | TIC | TIC | TIC | - |
+
+    | FRIDAY | DATA | LAB(Batch 5) | TIC | TIC | TIC | TIC | - |'
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "```\n<HTML>\n\n  <HEAD>\n\n    <TITLE>FORM EXAMPLE</TITLE>\n\n  </HEAD>\n\n\
+    \  <BODY>\n\n    <FORM>\n\n      <H2 align=\"center\">Employee Data</H2>\n\n \
+    \     <center>\n\n        EMPLOYEE NAME :\n\n        <input type=\"text\" name=\"\
+    sname\">\n\n        <br><br>\n\n        FATHER'S NAME :\n\n        <input type=\"\
+    text\" name=\"fname\">\n\n        <br><br>\n\n        GENDER :\n```\n\n# 3. Write\
+    \ a program to implement a form using HTML."
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "```\n<input type=\"radio\" name=\"gendr\" value=\"male\" checked>Male\n\n<input\
+    \ type=\"radio\" name+\"gendr\" value=\"femal\">Female\n\n<br><br>\n\nDepartment\
+    \ :\n\n<select name=department>\n\n    <option value=\"msc\">SALES</option>\n\n\
+    \    <option value=\"mca\">ACCOUNT</option>\n\n</select>\n\n<br><br>\n\nHOBBY\
+    \ :\n\n<input type=\"checkbox\" name=\"hoby\" value=\"singing\" checked>Singing\n\
+    \n<input type=\"checkbox\" name=\"hoby\" value=\"Dancing\">Dancing\n\n<input type=\"\
+    checkbox\" name=\"hoby\" value=\"Chess\">Chess\n\n<br><br>\n```"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ADDRESS :
+
+
+    ```
+
+    <textarea rows=3 name="add">
+
+    </textarea>
+
+    <br><br>
+
+    ```
+
+
+    CREATE PASSWORD :
+
+
+    ```
+
+    <input type="password" name="pwd">
+
+    <br><br>
+
+    <input type="reset" value="RESET">
+
+    <input type="submit" value="SUBMIT">
+
+    ```
+
+
+    ```
+
+    </center>
+
+    </FORM>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_21_0.png)'
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "# HTML & JavaScript Practice Questions\n\n# 4. Write a program to implement\
+    \ img with it's attributes.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>IMG EXAMPLE</TITLE>\n\
+    \  </HEAD>\n  <BODY>\n    <center>\n      <H2>image example</H2>\n      <img src=\"\
+    sample.jpg\" alt=\"sample\" width=\"200\" height=\"200\">\n    </center>\n  </BODY>\n\
+    </HTML>\n```"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_23_0.png)'
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: '# 5. Write a program to implement subscript and superscript USING HTML.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>HTML Subscript and superscript</TITLE>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <center>
+
+
+    <H2>
+
+
+    SUBSCRIPT : H<sub>2</sub>O =
+
+
+    H<sub>2</sub> + O
+
+
+    <br><br>
+
+
+    SUPERSCRIPT : 2<sup>4</sup> = 16
+
+
+    </H2>
+
+
+    </center>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: '# # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_25_0.png)'
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: "# # 6. Write a program to implement frames in HTML.\n\n```\n<HTML>\n  <HEAD>\n\
+    \    <TITLE>Frame Test...</TITLE></HEAD>\n    <FRAMESET COLS=\"30%,70%\">\n  \
+    \    <FRAMESET ROWS=\"75%,25%\">\n        <FRAME SRC=\"1.html\" NAME=\"menu\"\
+    >\n        <FRAME SRC=\"2.html\" NAME=\"logo\">\n      </FRAMESET>\n      <FRAMESET\
+    \ ROWS=\"*\">\n        <FRAME SRC=\"3.html\" NAME=\"main\">\n      </FRAMESET>\n\
+    \    </FRAMESET>\n  </HEAD>\n</HTML>\n```"
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: "# 7. Write a program to implement SVG (Scalable Vector Graphics) in HTML.\n\
+    \n```\n<HTML>\n  <HEAD>\n    <TITLE>SVG EXAMPLE</TITLE>\n  </HEAD>\n  <BODY>\n\
+    \    <svg width=\"300\" height=\"200\">\n      <polygon\npoints=\"100,10,40,180,190,60,10,60,160,180\"\
+    \nstyle=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;\" />\n   \
+    \ </svg>\n  </BODY>\n</HTML>\n```"
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: '# # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_28_0.png)'
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: '# 8. Write a program to implement inline CSS in HTML.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>CSS EXAMPLE</TITLE>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <h1 style="background-color:#d0e4fe;font-size:100px;"/>
+
+
+    Inline CSS
+
+
+    </h1>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_30_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_30_1.png)'
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "# 9. Write a program to implement internal CSS in HTML.\n\n```\n<HTML>\n\n\
+    <HEAD>\n\n 姨中<TITLE>CSS EXAMPLE</TITLE>\n\n<style>\n\nh1\n\n{\n\nfont-size: 100px;\n\
+    \nbackground-color: yellow;\n\n}\n\n</style>\n\n</HEAD>\n\n<BODY>\n\n<h1>\n\n\
+    矩Internal CSS\n\n</h1> </BODY>\n\n</HTML>\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: 'HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_32_0.png)'
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "# 10.Write a program to implement external CSS in HTML.\n\n```\n<HTML>\n\n\
+    \  <HEAD>\n\n    <TITLE>CSS EXAMPLE</TITLE>\n\n    <link href=\"extrnal.css\"\
+    \ rel=\"stylesheet\" type=\"text/css\">\n\n  </HEAD>\n\n  <BODY>\n\n    <h1>\n\
+    \n      External CSS\n\n    </h1>\n\n  </BODY>\n\n</HTML>\n```\n\nextrnal.css\n\
+    \n```\nh1{ font-size: 200px;\n\n  background-color: #d0e4fe;\n\n  font-style:italic;\
+    \ }\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_34_0.png)'
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "# 11.Write a program to show alert(), prompt() and confirm().\n\n```\n<HTML>\n\
+    \n  <HEAD>\n\n    <TITLE>Predefined Functions</TITLE>\n\n  </HEAD>\n\n  <BODY>\n\
+    \n    <script>\n\n      alert(\"CONTINUE....?\");\n\n      var txt=\"\";\n\n \
+    \     var name = prompt(\"Enter your name...\");\n\n      var b = confirm(\"Are\
+    \ you sure???\");\n\n      if(b) document.write(\"<h1>Welcome \"+name+\"</h1>\"\
+    );\n\n      else document.write(\"<h1>Input is cacelled!!!!</h1>\")\n\n    </script>\n\
+    \n  </BODY>\n```"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # *Coding Output*
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_1.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_36_2.png)'
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: '# 12.Write a program to factorial number using recursive function.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>Predefined Functions</TITLE>
+
+
+    <script>
+
+
+    function fun()
+
+
+    {
+
+
+    var n = document.getElementById("n").value;
+
+
+    fact(n);
+
+
+    }
+
+
+    var f=1;
+
+
+    function fact(n)
+
+
+    {
+
+
+    if(n>0)
+
+
+    {
+
+
+    f = f*n;
+
+
+    fact(n-1);
+
+
+    }
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <input type="text" id="n" value="5">
+
+
+    <button onclick="fun()">Factorial</button>
+
+
+    <p id="demo"></p>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "HTML & JavaScript Practice Questions\n\n```\n    }\n\n    else\n    document.getElementById(\"\
+    result\").innerHTML =\n    \"Factorial = \"+f;\n\n    }\n\n    </script>\n\n \
+    \   </HEAD>\n\n    <BODY>\n\n    <br><br>\n\n    Enter any number :\n\n    <input\
+    \ type=\"text\" id=\"n\">\n\n    <br><br>\n\n    <input type=\"submit\" value=\"\
+    Get Factorial\"\n    Onclick=\"fun()\">\n\n    <h2 id=\"result\"></h2>\n\n   \
+    \ </BODY>\n\n    </HTML>\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_39_0.png)'
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "# 13.Write a program to find cube of the given number using function.\n\n```\n\
+    <HTML>\n\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n        <script>\n\
+    \            function fun()\n            {\n                var n = document.getElementById(\"\
+    n\").value;\n\n                document.getElementById(\"result\").innerHTML =\n\
+    \                \"Result = \"+n*n*n;\n            }\n        </script>\n    </HEAD>\n\
+    \    <BODY>\n        <br><br>\n        Enter any number : \n        <input type=\"\
+    text\" id=\"n\">\n```"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: '```
+
+    <br><br>
+
+
+    <input type="submit" value="Get_Cube" OnClick="fun()">
+
+
+    <h2 id="result"></h2>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: '# # HTML & JavaScript Practice Questions
+
+
+    # # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_42_0.png)'
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "# 14.Write a program to convert Celsius to Fahrenheit using function.\n\n```\n\
+    <HTML>\n\t<HEAD>\n\t\t<TITLE>Predefined Functions</TITLE>\n\t\t<script>\n\t\t\t\
+    function fun()\n\t\t\t{\n\t\t\t\tvar n = document.getElementById(\"n\").value;\n\
+    \t\t\t\tvar r = n*9/5 +32;\n\t\t\t\tdocument.getElementById(\"result\").innerHTML\
+    \ = \"Result = \"+r+\" Fahrenheit\";\n\t\t\t}\n\t\t</script>\n\t</HEAD>\n\t<BODY>\n\
+    \t\t<br><br>\n\t\tEnter any number :\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: 'HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <input type="text" id="n">
+
+    <br><br>
+
+    <input type="submit" value="Get_Cube" Onclick="fun()">
+
+
+    <h2 id="result"></h2>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: '# # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_45_0.png)'
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: <!-- no content -->
+  merge: -1
+  pgno: 46
+- img_proc: true
+  md: "# 15.Write a program to input two integers and display the larger using if()\
+    \ and else if().\n\n```\n<HTML>\n    <HEAD>\n        <TITLE>Predefined Functions</TITLE>\n\
+    \    </HEAD> <BODY>\n        <script>\n            var a = prompt(\"Enter first\
+    \ number....\");\n            var b = prompt(\"Enter second number....\");\n \
+    \           if(a>b) document.write(\"<h2>\"+a+\" is greater than \"+b+\"</h2>\"\
+    );\n            else if(b>a) document.write(\"<h2>\"+b+\" is greater than \"+a+\"\
+    </h2>\");\n            else document.write(\"<h2>both are equals</h2>\");\n  \
+    \      </script>\n    </BODY>\n</HTML>\n```"
+  merge: -1
+  pgno: 47
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_48_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_48_1.png)
+
+
+    6 is greater than 5'
+  merge: -1
+  pgno: 48
+- img_proc: true
+  md: '# 16.Write a program to find out armstrong number of 3 digits using loop;
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Armstrong Numbers</TITLE>
+
+    </HEAD>
+
+    <BODY>
+
+    <script>
+
+    var i;
+
+    document.write("<h2>Armstrong Numbers");
+
+    for(i=1;i<=999;i++)
+
+    {
+
+    if(Math.floor(i/100) == Math.floor(i%10))
+
+    {
+
+    if(Math.floor(i/100)==0)
+
+    ```'
+  merge: -1
+  pgno: 49
+- img_proc: true
+  md: "# HTML & JavaScript Practice Questions\n\n```\ndocument.write(\"<br>0\"+i);\n\
+    else document.write(\"<br>\"+i);\n      }\n   }\n\n</script>\n\n</BODY>\n\n</HTML>\n\
+    ```"
+  merge: -1
+  pgno: 50
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_51_0.png)'
+  merge: -1
+  pgno: 51
+- img_proc: true
+  md: "# 17.Write a javaScript program to construct the following pattern using nested\
+    \ for loop.\n\n```\n<HTML>\n\n    <HEAD>\n\n        <TITLE>Pattern</TITLE>\n\n\
+    \    </HEAD>\n\n    <BODY>\n\n        <script>\n\n            var i,j;\n\n   \
+    \         document.write(\"<h2>Pattern:<br>\");\n\n            for(i=0;i<10;i++)\n\
+    \n            {\n\n                for(j=0;j<=i;j++)\n\n                document.write(\"\
+    \ *\");\n\n                document.write(\"<br>\");\n\n            }\n\n    \
+    \    </script>\n\n    </BODY>\n\n</HTML>\n```"
+  merge: -1
+  pgno: 52
+- img_proc: true
+  md: '```
+
+    </BODY>
+
+    </HTML>
+
+    ```
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_53_0.png)'
+  merge: -1
+  pgno: 53
+- img_proc: true
+  md: "# HTML & JavaScript Practice Questions\n\n# 18. Write a javascript program\
+    \ to compute the greatest common divisor(GCD) of two positive integers using while\
+    \ loop.\n\n```\n<HTML>\n  <HEAD>\n    <TITLE>Pattern</TITLE>\n    <script>\n \
+    \     function gcd()\n      {\n        var x = document.getElementById(\"x\").value;\n\
+    \        var y = document.getElementById(\"y\").value;\n        var hcf=1;\n \
+    \       if(x<y)\n        {\n          var t = x;\n          x = y;\n         \
+    \ y = t;\n```"
+  merge: -1
+  pgno: 54
+- img_proc: true
+  md: "```\nwhile(hcf!=0)\n{\n    hcf = x%y;\n    x = y;\n    y = hcf;\n}\n\ndocument.getElementById(\"\
+    result\").innerHTML = \"GCD = \"+x;\n}\n\n</script>\n\n</HEAD>\n\n<BODY>\n\n<h2>\n\
+    \    Enter two numbers :\n    <input type=\"text\" id=\"x\">\n    <input type=\"\
+    text\" id=\"y\">\n</h2>\n```"
+  merge: -1
+  pgno: 55
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <br><br>
+
+    <input type="submit" value="Get GCD" Onclick="gcd()">
+
+    <br><br>
+
+    <h2 id="result"></h2>
+
+    </BODY>
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 56
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_1.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_57_2.png)
+
+
+    GCD = 1'
+  merge: -1
+  pgno: 57
+- img_proc: true
+  md: "# 19. Write a javascript function to convert a decimal number to binary, hexadecimal\
+    \ to octal number using switch case.\n\n```\n<HTML>\n\t<HEAD>\n\t\t<TITLE>Pattern</TITLE>\n\
+    \t\t<script>\n\t\t\tfunction convert()\n\t\t\t{\n\t\t\t\tvar n =\n\tdocument.getElementById(\"\
+    x\").value;\n\t\t\t\tvar a = 0;\n\t\t\t\tif(document.getElementById(\"1\").checked)\n\
+    \t\t\t\t\ta=1;\n\t\t\t\telse\n\t\t\t\tif(document.getElementById(\"2\").checked)\n\
+    \t\t\t\t\ta=2;\n\t\t\t\telse\n\t\t\t\tif(document.getElementById(\"3\").checked)\n\
+    ```"
+  merge: -1
+  pgno: 58
+- img_proc: true
+  md: "```\na=3;\nswitch(a)\n{\ncase 1:\n    var x=0,i=0;\n    while(n>0)\n    {\n\
+    \        x = x + n%2*Math.pow(10,i);\n        n = Math.floor(n/2);\n        i++;\n\
+    \    }\n\ndocument.getElementById(\"result\").innerHTML =\n\"Binary value : \"\
+    +x;\n    break;\ncase 2:\n    var x=0,i=0;\n    while(n>0)\n    {\n```"
+  merge: -1
+  pgno: 59
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ```
+
+    x = x + n%16*Math.pow(10,i);
+
+
+    n = Math.floor(n/16);
+
+
+    i++;
+
+
+    }
+
+    ```
+
+
+    ```
+
+    document.getElementById("result").innerHTML =
+
+    "Hexadecimal value : "+x;
+
+    ```
+
+
+    ```
+
+    break;
+
+
+    case 3:
+
+
+    var x=0,i=0;
+
+
+    while(n>0)
+
+
+    {
+
+
+    x = x + n%8*Math.pow(10,i);
+
+
+    n = Math.floor(n/8);
+
+
+    i++;
+
+
+    }
+
+    ```
+
+
+    ```
+
+    document.getElementById("result").innerHTML =
+
+    "Octal value : "+x;
+
+    ```'
+  merge: -1
+  pgno: 60
+- img_proc: true
+  md: '```
+
+    break;
+
+
+    default:
+
+    document.getElementById("result").innerHTML =
+
+    "Please select converter type";
+
+
+    }
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <p>
+
+
+    Enter two numbers :
+
+
+    <input type="text" id="x">
+
+
+    <br><br>
+
+
+    <input type="radio" name="cnvrt" value="1"
+
+    id="1">Binary
+
+
+    <input type="radio" name="cnvrt" value="2"
+
+    id="2">Hexadecimal
+
+
+    <input type="radio" name="cnvrt" value="3"
+
+    id="3">Octal
+
+
+    </p>
+
+    ```'
+  merge: -1
+  pgno: 61
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ```
+
+    <br>
+
+
+    <input type="submit" value="Get GCD" Onclick="convert()">
+
+
+    <br><br>
+
+
+    <h2 id="result"></h2>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 62
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_63_0.png)'
+  merge: -1
+  pgno: 63
+- img_proc: true
+  md: "# 20. Write a javascript program to find the most frequent item of an array.\n\
+    \n```\n<HTML>\n\n<HEAD>\n<TITLE>Array</TITLE>\n</HEAD>\n\n<BODY>\n<script>\nvar\
+    \ arr = [3,2,3,2,2,2,2,2,2,4];\nvar a=1,c=0,item=arr[0],i,j;\n\nfor(i=0;i<arr.length;i++)\n\
+    {\n    for(j=i;j<arr.length;j++)\n    if(arr[i]==arr[j]) c++;\n    if(c>a)\n \
+    \   {\n```"
+  merge: -1
+  pgno: 64
+- img_proc: true
+  md: '```
+
+    item = arr[i];
+
+
+    a = c;
+
+
+    }
+
+
+    c=0;
+
+
+    }
+
+
+    alert("Most frequent item of array = "+item);
+
+
+    </script>
+
+
+    </BODY>
+
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 65
+- img_proc: true
+  md: '# # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_66_0.png)'
+  merge: -1
+  pgno: 66
+- img_proc: true
+  md: "# 21. Write a javascript function to get the number of days in month.\n\n```\n\
+    <HTML>\n\n  <HEAD>\n\n    <TITLE>Date</TITLE>\n\n    <script>\n\n      function\
+    \ getdays()\n\n      {\n\n        var m = document.getElementById(\"m\").value;\n\
+    \n        var y = document.getElementById(\"y\").value;\n\n        var day = new\
+    \ Date(y,m,0).getDate();\n\n        document.getElementById(\"result\").innerHTML\
+    \ = day+\" Days\";\n\n      }\n\n    </script>\n\n  </HEAD>\n\n  <BODY>\n```"
+  merge: -1
+  pgno: 67
+- img_proc: true
+  md: "HTML & JavaScript Practice Questions\n\n```\n<p>\n    Month :\n    <input type=\"\
+    text\" id=\"m\">\n    <br><br>\n    Year :\n    <input type=\"text\" id=\"y\"\
+    >\n    <br><br>\n    <input type=\"submit\" value=\"Get_Days\" Onclick=\"getdays()\"\
+    >\n    <br>\n    <h2 id=\"result\"></h2>\n</p>\n</BODY>\n</HTML>\n```"
+  merge: -1
+  pgno: 68
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_69_0.png)'
+  merge: -1
+  pgno: 69
+- img_proc: true
+  md: "# 22. Write a javascript function to add specified minutes to a Date object.\n\
+    \n```\n<HTML>\n    <HEAD>\n        <TITLE>Date</TITLE>\n        <script>\n   \
+    \         function add()\n            {\n                var m = document.getElementById(\"\
+    m\").value;\n                var someDate = new Date();\n                someDate.setMinutes(someDate.getMinutes()+m);\n\
+    \                document.getElementById(\"result\").innerHTML = \"Minutes \"\
+    +someDate.getMinutes();\n            }\n        </script>\n    </HEAD>\n```"
+  merge: -1
+  pgno: 70
+- img_proc: true
+  md: "```\n<BODY>\n\n<p>\n\n    Minutes to add :\n\n    <input type=\"text\" id=\"\
+    m\">\n\n    <br><br>\n\n    <input type=\"submit\" value=\"ADD\" Onclick=\"add()\"\
+    >\n\n    <br>\n\n    <h2 id=\"result\"></h2>\n\n</p>\n\n</BODY>\n\n</HTML>\n```"
+  merge: -1
+  pgno: 71
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_72_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_72_1.png)
+
+
+    62'
+  merge: -1
+  pgno: 72
+- img_proc: true
+  md: '# 23. Write a program to display function of keyboard.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <script language="JavaScript">
+
+    function keyDown(){
+
+    alert("key pressed");
+
+    }
+
+    function keyUp(){
+
+    alert("key released");
+
+    }
+
+    function keypress(){
+
+    alert("key pressed and released");
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <input type="text" OnkeyDown="keyDown()"><br>
+
+    ```'
+  merge: -1
+  pgno: 73
+- img_proc: true
+  md: '```
+
+    <input type="text" OnkeyUp="keyUp()"><br>
+
+    <input type="text" Onkeypress="keypress()"><br>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 74
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_75_0.png)'
+  merge: -1
+  pgno: 75
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # 24. Write a program to display mouse event using which property.
+
+
+    ```
+
+    <html>
+
+
+    <head></head>
+
+
+    <body>
+
+
+    <div onmousedown="whichbutton(event)">click this text with one of the mouse button
+    to return number.
+
+
+    <p> 1=the left mouse button</p>
+
+
+    <p> 2=the middle mouse button</p>
+
+
+    <p> 3=the right mouse button</p>
+
+
+    </div>
+
+
+    <p> <strong>Note:</strong> The which property is not supported by IE 8 or earlier
+    versions</p>
+
+
+    <script language="JavaScript">
+
+
+    function whichbutton(event){
+
+
+    alert("you pressed button"+event.which);}
+
+
+    </script>
+
+
+    </body>
+
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 76
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_77_0.png)'
+  merge: -1
+  pgno: 77
+- img_proc: true
+  md: '# 25. Write a program to display load and unload event.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <script language="JavaScript">
+
+    function load(){
+
+    alert("onload webpage");
+
+    }
+
+    function unload(){
+
+    alert("unload a webpage");
+
+    }
+
+    </script></head>
+
+    <body Onload="load()"
+
+    Onunload="unload()">
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 78
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_79_0.png)'
+  merge: -1
+  pgno: 79
+- img_proc: true
+  md: '# 26. Write a program to receive real data from the user and store it in s
+    cookie.
+
+
+    ```
+
+    <html>
+
+
+    <head>
+
+
+    <title>JavaScript creating cookies - receive real data. example1</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    <h1 style="color: red">JavaScript creating cookies, receive real data. - example1</h1><br>
+
+
+    <hr />
+
+
+    <script type="text/javascript">
+
+
+    //This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+
+
+    var visitor_name = prompt("What''s your name?","");
+
+
+    var expr_date = new Date("July 30, 2017");
+
+
+    var cookie_date = expr_date.toUTCString();
+
+
+    final_cookie = "Name = " +
+
+
+    encodeURIComponent(visitor_name) + ";expires_on = "
+
+
+    + cookie_date;
+
+    ```'
+  merge: -1
+  pgno: 80
+- img_proc: true
+  md: '```
+
+    document.cookie = final_cookie;
+
+    alert(final_cookie);
+
+    //]]>
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```'
+  merge: -1
+  pgno: 81
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_82_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_82_1.png)'
+  merge: -1
+  pgno: 82
+- img_proc: true
+  md: '# 27. Write a program to retrieve values from cookie.
+
+
+    ```
+
+    <html>
+
+    <head>
+
+    <title>JavaScript : Retrieve values from a cookie - example1</title>
+
+    </head>
+
+    <body>
+
+    <h1 style="color: red">JavaScript : Retrieve values from a cookie - example1</h1>
+
+    <hr />
+
+    <script type="text/javascript">
+
+    //This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+
+    var search_cookie = "my_cookie" + "="
+
+    if (document.cookie.length > 0)
+
+    {
+
+    // Search for a cookie.
+
+    offset = document.cookie.indexOf(search_cookie)
+
+    ```'
+  merge: -1
+  pgno: 83
+- img_proc: true
+  md: "# HTML & JavaScript Practice Questions\n\n```\nif (offset != -1)\n{\n    offset\
+    \ += search_cookie.length\n    // set index of beginning of value\n    end = document.cookie.indexOf(\"\
+    ;\",offset)\n    if (end == -1)\n    {\n        end = document.cookie.length\n\
+    \    }\n    alert(decodeURIComponent(document.cookie.substring(offset, end)))\n\
+    }\n}\n//]]>\n</script>\n</head>\n</body>\n</html>\n```"
+  merge: -1
+  pgno: 84
+- img_proc: true
+  md: '# # Coding Output
+
+
+    JavaScript : Retrieve values from a cookie - example1'
+  merge: -1
+  pgno: 85
+- img_proc: true
+  md: "# 28. Write a javascript program to check form validation.\n\n```\n<HTML>\n\
+    \    <HEAD>\n        <TITLE>FORM EXAMPLE</TITLE>\n        <script>\n         \
+    \   function validation()\n            {\n                var x=document.forms[\"\
+    myForm\"][\"sname\"].value;\n                if(x==null||x==\"\")\n          \
+    \          alert(\"Student Name must be fielled Out!!!\");\n\n               \
+    \ x = document.forms[\"myForm\"][\"fname\"].value;\n                alert(\"Father's\
+    \ Name must be fielled Out!!!\");\n\n                if(!document.getElementById(\"\
+    m\").checked || !document.getElementById(\"f\").checked)\n                   \
+    \ alert(\"Please select Gender\");\n            }\n        </script>\n    </HEAD>\n\
+    ```"
+  merge: -1
+  pgno: 86
+- img_proc: true
+  md: "```\n//Email Validation\n\nx=document.forms[\"myForm\"][\"email\"].value;\n\
+    \nvar atpos=x.indexOf(\"@\");\nvar dotpos=x.lastIndexOf(\".\");\n\nif (atpos<1\
+    \ || dotpos<atpos+2 || dotpos+2>=x.length)\n{\n    alert(\"Not a valid e-mail\
+    \ address\");\n    return false;\n}\n\nvar len =document.forms[\"myForm\"][\"\
+    pwd\"].length;\n\nif(len<8) alert(\"Your Password is week!!!\");\n}\n\n</script>\n\
+    </HEAD>\n<BODY>\n<FORM name=\"myForm\">\n```"
+  merge: -1
+  pgno: 87
+- img_proc: true
+  md: "HTML & JavaScript Practice Questions\n\n```\n<H2 align=\"center\">STUDENT REGISTRATION</H2>\n\
+    <center>\nSTUDENT NAME : \n<input type=\"text\" name=\"sname\">\n<br><br>\nFATHER'S\
+    \ NAME : \n<input type=\"text\" name=\"fname\">\n<br><br>\nGENDER : \n<input type=\"\
+    radio\" name=\"gendr\" value=\"male\" checked id=\"m\">Male \n<input type=\"radio\"\
+    \ name=\"gendr\" value=\"femal\" id=\"f\">Female \n<br><br>\nCOURSE : \n<select\
+    \ name=course>\n<option value=\"msc\">MSC</option>\n<option value=\"mca\">MCA</option>\n\
+    </select>\n```"
+  merge: -1
+  pgno: 88
+- img_proc: true
+  md: '```
+
+    </select>
+
+    <br><br>
+
+    HOBBY :
+
+    <input type="checkbox" name="hoby" value="singing" checked>Singing
+
+    <input type="checkbox" name="hoby" value="Dancing">Dancing
+
+    <input type="checkbox" name="hoby" value="Chess">Chess
+
+    <br><br>
+
+    Email Address :
+
+    <input type="text" name="email">
+
+    </textarea>
+
+    <br><br>
+
+    CREATE PASSWORD :
+
+    <input type="password" name="pwd">
+
+    <br><br>
+
+    <input type="reset" value="RESET">
+
+    <input type="submit" value="SUBMIT" Onclick="validation()">
+
+    ```'
+  merge: -1
+  pgno: 89
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    ```
+
+    </center>
+
+    ```
+
+
+    ```
+
+    </FORM>
+
+    ```
+
+
+    ```
+
+    </BODY>
+
+    ```
+
+
+    ```
+
+    </HTML>
+
+    ```'
+  merge: -1
+  pgno: 90
+- img_proc: true
+  md: '# # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_91_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_91_1.png)'
+  merge: -1
+  pgno: 91
+- img_proc: true
+  md: "# 29. Write a javascript program to display digital clock.\n\n```\n<HTML>\n\
+    \    <HEAD>\n        <TITLE>Clock</TITLE>\n        <script>\n            function\
+    \ startTime()\n            {\n                var today=new Date();\n        \
+    \        var h=today.getHours();\n                var m=today.getMinutes();\n\
+    \                var s=today.getSeconds();\n                // add a zero in front\
+    \ of numbers<10\n                m=checkTime(m);\n                s=checkTime(s);\n\
+    \ndocument.getElementById('txt').innerHTML=h+\":\"+m+\n\":\"+s;\n            \
+    \    t=setTimeout(function(){startTime()},500);\n```"
+  merge: -1
+  pgno: 92
+- img_proc: true
+  md: "```\n    }\n\n    function checkTime(i)\n    {\n        if (i<10)\n       \
+    \ {\n            i=\"0\" + i;\n        }\n        return i;\n    }\n</script>\n\
+    </HEAD>\n<body onload=\"startTime()\">\n    <h1 align=\"center\" id=\"txt\"></div>\n\
+    </body>\n</HTML>\n```"
+  merge: -1
+  pgno: 93
+- img_proc: true
+  md: '# HTML & JavaScript Practice Questions
+
+
+    # Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_94_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_94_1.png)'
+  merge: -1
+  pgno: 94
+- img_proc: true
+  md: '# ## 30. Write a javascript program to implement any two string method.
+
+
+    ```
+
+    <HTML>
+
+
+    <HEAD>
+
+
+    <TITLE>Date</TITLE>
+
+
+    <script>
+
+
+    function strmethod()
+
+
+    {
+
+
+    var str = document.getElementById("m").value;
+
+
+    var txt = str.toUpperCase();
+
+
+    var rpc = str.replace("kumar","Kaushik");
+
+
+    document.getElementById("result").innerHTML = "toUpperCase() : "+txt+"<br>replace()
+    : "+rpc;
+
+
+    }
+
+
+    </script>
+
+
+    </HEAD>
+
+
+    <BODY>
+
+
+    <p>
+
+    ```'
+  merge: -1
+  pgno: 95
+- img_proc: true
+  md: "Enter String :\n\n```\n<input type=\"text\" id=\"m\">\n<br><br>\n<input type=\"\
+    submit\" value=\"Apply_method\" Onclick=\"strmethod()\">\n<br>\n<h2 id=\"result\"\
+    ></h2>\n</p>\n</BODY>\n</HTML><HTML>\n<HEAD>\n<TITLE>Date</TITLE>\n<script>\n\
+    function strmethod()\n{\n    var str = document.getElementById(\"m\").value;\n\
+    \    var txt = str.toUpperCase();\n    var rpc = str.replace(\"kumar\",\"Kaushik\"\
+    );\n```"
+  merge: -1
+  pgno: 96
+- img_proc: true
+  md: "```\ndocument.getElementById(\"result\")\n.innerHTML = \"<br>toUpperCase()\
+    \ : \"+txt+\"<br>replace() : \"+rpc;\n}\n\n</script>\n</HEAD>\n\n<BODY>\n\n<p>\n\
+    \tEnter String :\n\t<input type=\"text\" id=\"m\">\n\t<br><br>\n\t<input type=\"\
+    submit\" value=\"Apply_method\" Onclick=\"strmethod()\">\n\t<br>\n\t<h2 id=\"\
+    result\"></h2>\n</p>\n</BODY>\n</HTML>\n```"
+  merge: -1
+  pgno: 97
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_98_0.png)'
+  merge: -1
+  pgno: 98
+- img_proc: true
+  md: '# 31. Write a javascript program to check whether the Number is even or odd.
+
+
+    ```
+
+    <HTML>
+
+    <HEAD>
+
+    <TITLE>Even Odd</TITLE>
+
+    <script>
+
+    function check()
+
+    {
+
+    var n = document.getElementById("m").value;
+
+    if(Math.floor(n%2)==0)
+
+    document.getElementById("result").innerHTML = "Number is Even!!!";
+
+    else
+
+    document.getElementById("result").innerHTML = "Number is Odd!!!";
+
+    }
+
+    </script>
+
+    </HEAD>
+
+    <BODY>
+
+    ```'
+  merge: -1
+  pgno: 99
+- img_proc: true
+  md: "# HTML & JavaScript Practice Questions\n\n```\n<p>\n    Enter any no.. :\n\
+    \    <input type=\"text\" id=\"m\">\n    <br><br>\n    <input type=\"submit\"\
+    \ value=\"Even_or_Odd\" Oonclick=\"check()\">\n    <br>\n    <h2 id=\"result\"\
+    ></h2>\n</p>\n</BODY>\n</HTML>\n```"
+  merge: -1
+  pgno: 100
+- img_proc: true
+  md: '# Coding Output
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_101_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_101_1.png)'
+  merge: -1
+  pgno: 101
+- img_proc: true
+  md: 'The book is a complete set of HTML and JavaScript Programming. The examples
+    are well tested and based on the syllabus of Masters Degree of Computer Science
+    Students.
+
+
+    I, Dheeraj Singh, Thank Evincepub Publishing team for their support and help for
+    publication of this book. I hope it is surely going to help students seeking to
+    get knowledge about HTML and JavaScript Programming.
+
+
+    -Dheeraj Singh
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_102_0.png)
+
+
+    ![](img/118de41f1d7757a3a32bcc09c536fee2_102_1.png)'
+  merge: -1
+  pgno: 102
+toc:
+- - '#'
+  - HTML 与 JavaScript 实践指南
+- - '##'
+  - 1. 编写程序实现 marquee 标签及其属性。
+- - '###'
+  - 代码输出
+- - '##'
+  - 2. 编写程序使用 HTML 显示班级时间表。
+- - '###'
+  - 代码输出
+- - '##'
+  - 3. 编写程序使用 HTML 实现表单。
+- - '##'
+  - HTML 与 JavaScript 练习题
+- - '###'
+  - 代码输出
+- - '##'
+  - 4. 编写一个程序，使用 HTML 实现带有其属性的 img 标签。
+- - '###'
+  - 代码输出
+- - '##'
+  - 5. 编写一个程序，使用 HTML 实现下标和上标。
+- - '###'
+  - 代码输出
+- - '##'
+  - 6. 编写一个程序，在 HTML 中实现框架。
+- - '##'
+  - 7. 编写一个程序，在 HTML 中实现 SVG（可缩放矢量图形）。
+- - '###'
+  - 代码输出
+- - '##'
+  - 8. 编写一个程序，在 HTML 中实现内联 CSS。
+- - '###'
+  - 代码输出
+- - '##'
+  - 9. 编写一个程序，在 HTML 中实现内部 CSS。
+- - '##'
+  - 代码输出
+- - '##'
+  - 10. 编写一个程序，在 HTML 中实现外部 CSS。
+- - '##'
+  - 代码输出
+- - '##'
+  - 11. 编写一个程序，演示 alert()、prompt() 和 confirm() 函数。
+- - '##'
+  - 代码输出
+- - '##'
+  - 12. 编写一个程序，使用递归函数计算阶乘数。
+- - '###'
+  - 代码输出
+- - '##'
+  - 13. 编写一个程序，使用函数计算给定数字的立方。
+- - '##'
+  - 代码输出
+- - '##'
+  - 14. 编写一个程序，使用函数将摄氏度转换为华氏度。
+- - '##'
+  - 代码输出
+- - '##'
+  - 15. 编写一个程序，输入两个整数并使用 if() 和 else if() 显示较大的那个。
+- - '###'
+  - 代码输出
+- - '##'
+  - 16. 编写一个程序，使用循环找出三位的阿姆斯特朗数。
+- - '###'
+  - 代码输出
+- - '##'
+  - 17. 编写一个JavaScript程序，使用嵌套for循环构建以下图案。
+- - '###'
+  - 代码输出
+- - '##'
+  - 18. 编写一个JavaScript程序，使用while循环计算两个正整数的最大公约数（GCD）。
+- - '###'
+  - 代码输出
+- - '##'
+  - 19. 编写一个JavaScript函数，使用switch case将十进制数转换为二进制、十六进制或八进制数。
+- - '###'
+  - 代码输出
+- - '##'
+  - 20. 编写一个JavaScript程序，找出数组中出现最频繁的元素。
+- - '###'
+  - 代码输出
+- - '##'
+  - 21. 编写一个JavaScript函数，获取指定月份的天数。
+- - '###'
+  - 代码输出
+- - '##'
+  - 22. 编写一个JavaScript函数，向Date对象添加指定的分钟数。
+- - '###'
+  - 代码输出
+- - '##'
+  - 23. 编写一个程序，展示键盘的功能。
+- - '###'
+  - 代码输出
+- - '##'
+  - 24. 编写一个程序，使用which属性显示鼠标事件。
+- - '###'
+  - 代码输出
+- - '##'
+  - 25. 编写一个程序，展示load和unload事件。
+- - '###'
+  - 代码输出
+- - '##'
+  - 26. 编写一个程序，接收用户的真实数据并将其存储在cookie中。
+- - '#'
+  - HTML 与 JavaScript 练习题
+- - '##'
+  - 编码输出
+- - '##'
+  - 27. 编写一个程序从 Cookie 中检索值。
+- - '###'
+  - 编码输出
+- - '##'
+  - 28. 编写一个 JavaScript 程序来检查表单验证。
+- - '##'
+  - 编码输出
+- - '##'
+  - 29. 编写一个 JavaScript 程序来显示数字时钟。
+- - '##'
+  - 编码输出
+- - '##'
+  - 30. 编写一个 JavaScript 程序来实现任意两个字符串方法。
+- - '###'
+  - 编码输出
+- - '##'
+  - 31. 编写一个 JavaScript 程序来检查一个数字是偶数还是奇数。
+- - '##'
+  - 编码输出
