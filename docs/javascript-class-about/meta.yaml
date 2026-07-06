@@ -1,0 +1,1312 @@
+groups:
+- md: "## index.js\n\n```\nthis === window\ntrue\n\"use strict\";\nthis === window\n\
+    true\n```\n\n# [Pause] index.js\n\n```\n1\n```\n\n```\n$ node\n> this === global\n\
+    true\n> .exit\n```\n\n```\nconsole.log(this === global);\n```\n\n# index.js\n\n\
+    ```\nconsole.log(this === module.exports);\n```\n\n```\n$ node index.js\nfalse\n\
+    $ node index.js\ntrue\n$\n```\n\n```\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n```\n\n```\n\"\
+    use strict\";\n\nfunction func() {\n    console.log(this === undefined);\n}\n\n\
+    func();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\n$\n```\n\n\
+    ```\nfunction func() {\n    \"use strict\";\n    console.log(this === undefined);\n\
+    }\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\n$ node\
+    \ index.js\ntrue\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\"\
+    , \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nundefined\n$\n\
+    ```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\", \"Doe\");\n\
+    console.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\nundefined\n$ node index.js\nundefined\nJane\nDoe\n\
+    $ \n```\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n  \
+    \  this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\nundefined\nJane\n\
+    Doe\n$ node index.js\n/Users/marius/Desktop/this/index.js:4\n    this.firstName\
+    \ = firstName;\n            ^\n\nTypeError: Cannot set property 'firstName' of\
+    \ undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n    at\
+    \ Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at Module._compile\
+    \ (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    $ \n```\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n  \
+    \  this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\n\n/Users/marius/Desktop/this/index.js:4\n\
+    \    this.firstName = firstName;\n                   ^\n\nTypeError: Cannot set\
+    \ property 'firstName' of undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \n$ node index.js\n\nPerson { firstName: 'Jane', lastName: 'Doe' }\nundefined\n\
+    undefined\n\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    console.log(this);\n\
+    \    this.firstName = firstName;\n    console.log(this);\n    this.lastName =\
+    \ lastName;\n    console.log(this);\n}\n\nconst person = new Person(\"Jane\",\
+    \ \"Doe\");\n```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane'\
+    \ }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n```\n\n```\nfunction Person(firstName,\
+    \ lastName) {\n    this.firstName = firstName;\n    this.lastName = lastName;\n\
+    }\n\nconst person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\
+    \n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n\n    return this;\n}\n\nconst\
+    \ person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n\
+    $ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$\n\
+    ```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return {\n        firstName: \"John\",\n\
+    \        lastName: \"Roe\"\n    };\n}\n\nconst person = new Person(\"Jane\", \"\
+    Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\nPerson\
+    \ { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node\
+    \ index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson\
+    \ { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John',\
+    \ lastName: 'Roe' }\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n \
+    \   this.firstName = firstName;\n    this.lastName = lastName;\n\n    return new\
+    \ Proxy(this, {\n        get(target, name) {\n            // ...\n        }\n\
+    \    });\n}\n\nconst person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\
+    ```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson {\
+    \ firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane',\
+    \ lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe'\
+    \ }\n$ node index.js\n{ firstName: 'John', lastName: 'Roe' }\n$\n```\n\nindex.js\n\
+    \n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return null;\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John', lastName: 'Roe'\
+    \ }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ _\n```\n\
+    \n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nperson.sayHi();\n```\n\n```\n\
+    $ node index.js\nHi, my name is John!\n$\n```\n\n```\nfunction sayHi() {\n   \
+    \ console.log(`Hi, my name is ${this.firstName}!`);\n}\n\nconst person = {\n \
+    \   firstName: \"John\"\n};\n\nperson.sayHi = sayHi;\nperson.sayHi();\n```\n\n\
+    ```\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is John!\n\
+    $\n```\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n   \
+    \     console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nconst greet\
+    \ = person.sayHi;\ngreet();\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $\n```\n\n# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi()\
+    \ {\n        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\n\
+    setTimeout(person.sayHi, 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is undefined!\n```\n\n```\nconst person = {\n   \
+    \ firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n};\n\nsetTimeout(function() {\n    person.sayHi();\n}, 1000);\n```\n\n\
+    ```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name\
+    \ is undefined!\n$ node index.js\nHi, my name is John!\n$\n```\n\n# index.js\n\
+    \n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(person.sayHi.bind(person),\
+    \ 1000);\n```\n\n# TERMINAL\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is John!\n\
+    $ node index.js\nHi, my name is John!\n```\n\n```\nfunction sayHi() {\n    console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n}\n\nconst person = {\n    firstName: \"Jane\"\
+    ,\n    lastName: \"Doe\"\n};\n\nsayHi.call(person);\n```\n\n```\n$ node index.js\n\
+    Hi, my name is Jane!\n$\n```"
+  mdcn: "\n## index.js\n\n```\nthis === window\ntrue\n\"use strict\";\nthis === window\n\
+    true\n```\n\n# [暂停] index.js\n\n```\n1\n```\n\n```\n$ node\n> this === global\n\
+    true\n> .exit\n```\n\n```\nconsole.log(this === global);\n```\n\n# index.js\n\n\
+    ```\nconsole.log(this === module.exports);\n```\n\n```\n$ node index.js\nfalse\n\
+    $ node index.js\ntrue\n$\n```\n\n```\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n```\n\n```\n\"\
+    use strict\";\n\nfunction func() {\n    console.log(this === undefined);\n}\n\n\
+    func();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\n$\n```\n\n\
+    ```\nfunction func() {\n    \"use strict\";\n    console.log(this === undefined);\n\
+    }\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\n$ node\
+    \ index.js\ntrue\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\"\
+    , \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nundefined\n$\n\
+    ```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\", \"Doe\");\n\
+    console.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\nundefined\n$ node index.js\nundefined\nJane\nDoe\n\
+    $ \n```\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n  \
+    \  this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\nundefined\nJane\n\
+    Doe\n$ node index.js\n/Users/marius/Desktop/this/index.js:4\n    this.firstName\
+    \ = firstName;\n            ^\n\nTypeError: Cannot set property 'firstName' of\
+    \ undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n    at\
+    \ Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at Module._compile\
+    \ (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    $ \n```\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n  \
+    \  this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\n\n/Users/marius/Desktop/this/index.js:4\n\
+    \    this.firstName = firstName;\n                   ^\n\nTypeError: Cannot set\
+    \ property 'firstName' of undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \n$ node index.js\n\nPerson { firstName: 'Jane', lastName: 'Doe' }\nundefined\n\
+    undefined\n\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    console.log(this);\n\
+    \    this.firstName = firstName;\n    console.log(this);\n    this.lastName =\
+    \ lastName;\n    console.log(this);\n}\n\nconst person = new Person(\"Jane\",\
+    \ \"Doe\");\n```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane'\
+    \ }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n```\n\n```\nfunction Person(firstName,\
+    \ lastName) {\n    this.firstName = firstName;\n    this.lastName = lastName;\n\
+    }\n\nconst person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\
+    \n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n\n    return this;\n}\n\nconst\
+    \ person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n\
+    $ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$\n\
+    ```\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return {\n        firstName: \"John\",\n\
+    \        lastName: \"Roe\"\n    };\n}\n\nconst person = new Person(\"Jane\", \"\
+    Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\nPerson\
+    \ { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node\
+    \ index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson\
+    \ { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John',\
+    \ lastName: 'Roe' }\n$\n```\n\n```\nfunction Person(firstName, lastName) {\n \
+    \   this.firstName = firstName;\n    this.lastName = lastName;\n\n    return new\
+    \ Proxy(this, {\n        get(target, name) {\n            // ...\n        }\n\
+    \    });\n}\n\nconst person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\
+    ```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson {\
+    \ firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane',\
+    \ lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe'\
+    \ }\n$ node index.js\n{ firstName: 'John', lastName: 'Roe' }\n$\n```\n\nindex.js\n\
+    \n```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return null;\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John', lastName: 'Roe'\
+    \ }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ _\n```\n\
+    \n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nperson.sayHi();\n```\n\n```\n\
+    $ node index.js\nHi, my name is John!\n$\n```\n\n```\nfunction sayHi() {\n   \
+    \ console.log(`Hi, my name is ${this.firstName}!`);\n}\n\nconst person = {\n \
+    \   firstName: \"John\"\n};\n\nperson.sayHi = sayHi;\nperson.sayHi();\n```\n\n\
+    ```\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is John!\n\
+    $\n```\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n   \
+    \     console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nconst greet\
+    \ = person.sayHi;\ngreet();\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $\n```\n\n# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi()\
+    \ {\n        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\n\
+    setTimeout(person.sayHi, 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is undefined!\n```\n\n```\nconst person = {\n   \
+    \ firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n};\n\nsetTimeout(function() {\n    person.sayHi();\n}, 1000);\n```\n\n\
+    ```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name\
+    \ is undefined!\n$ node index.js\nHi, my name is John!\n$\n```\n\n# index.js\n\
+    \n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(person.sayHi.bind(person),\
+    \ 1000);\n```\n\n# 终端\n\n```\n$ node index.js\nHi, my name is undefined!\n$ node\
+    \ index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is John!\n\
+    $ node index.js\nHi, my name is John!\n```\n\n```\nfunction sayHi() {\n    console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n}\n\nconst person = {\n    firstName: \"Jane\"\
+    ,\n    lastName: \"Doe\"\n};\n\nsayHi.call(person);\n```\n\n```\n$ node index.js\n\
+    Hi, my name is Jane!\n$\n```\n"
+  merge: -1
+  raw:
+  - '[PAGE 0]
+
+
+    ```
+
+    this === window
+
+    ```
+
+
+    ```
+
+    true
+
+    ```'
+  - '[PAGE 1]
+
+
+    ```
+
+    this === window
+
+    true
+
+    "use strict";
+
+    this === window
+
+    true
+
+    ```'
+  - '[PAGE 2]
+
+
+    # [Pause] index.js
+
+
+    ```
+
+    1
+
+    ```
+
+
+    ```
+
+    $ node
+
+    > this === global
+
+    true
+
+    > .exit
+
+    ```'
+  - '[PAGE 3]
+
+
+    ```
+
+    console.log(this === global);
+
+    ```'
+  - '[PAGE 4]
+
+
+    # index.js
+
+
+    ```
+
+    console.log(this === module.exports);
+
+    ```
+
+
+    PROBLEMS OUTPUT DEBUG CONSOLE TERMINAL
+
+
+    ```
+
+    $ node index.js
+
+    false
+
+    $ node index.js
+
+    true
+
+    $
+
+    ```'
+  - "[PAGE 5]\n\n```\nfunction func() {\n    console.log(this === global);\n}\n\n\
+    func();\n```\n\n```\n$ node index.js\ntrue\n```"
+  - "[PAGE 6]\n\n```\n\"use strict\";\n\nfunction func() {\n    console.log(this ===\
+    \ undefined);\n}\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\n\
+    true\n$\n```"
+  - "[PAGE 7]\n\n```\n1  function func() {\n2      \"use strict\";\n3      console.log(this\
+    \ === undefined);\n4  }\n5  \n6  func();\n7\n```\n\n```\n$ node index.js\ntrue\n\
+    $ node index.js\ntrue\n$ node index.js\ntrue\n$\n```"
+  - "[PAGE 8]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName =\
+    \ firstName;\n    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\"\
+    , \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nundefined\n$\n\
+    ```"
+  - "[PAGE 9]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName =\
+    \ firstName;\n    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\"\
+    , \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\nundefined\n$ node index.js\nundefined\nJane\nDoe\n\
+    $ \n```"
+  - "[PAGE 10]\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n\
+    \    this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\nundefined\nJane\n\
+    Doe\n$ node index.js\n/Users/marius/Desktop/this/index.js:4\n    this.firstName\
+    \ = firstName;\n            ^\n\nTypeError: Cannot set property 'firstName' of\
+    \ undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n    at\
+    \ Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at Module._compile\
+    \ (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    $ \n```"
+  - "[PAGE 11]\n\n```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n\
+    \    this.firstName = firstName;\n    this.lastName = lastName;\n}\n\nconst person\
+    \ = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\n\
+    console.log(global.lastName);\n```\n\n```\n$ node index.js\n\n/Users/marius/Desktop/this/index.js:4\n\
+    \    this.firstName = firstName;\n                   ^\n\nTypeError: Cannot set\
+    \ property 'firstName' of undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \n$ node index.js\n\nPerson { firstName: 'Jane', lastName: 'Doe' }\nundefined\n\
+    undefined\n\n$\n```"
+  - "[PAGE 12]\n\n```\nfunction Person(firstName, lastName) {\n    console.log(this);\n\
+    \    this.firstName = firstName;\n    console.log(this);\n    this.lastName =\
+    \ lastName;\n    console.log(this);\n}\n\nconst person = new Person(\"Jane\",\
+    \ \"Doe\");\n```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane'\
+    \ }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n```"
+  - "[PAGE 13]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$\n```"
+  - "[PAGE 14]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n\n    return this;\n}\n\nconst\
+    \ person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n\
+    $ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$\n\
+    ```"
+  - "[PAGE 15]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n\n    return {\n        firstName:\
+    \ \"John\",\n        lastName: \"Roe\"\n    };\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John',\
+    \ lastName: 'Roe' }\n$\n```"
+  - "[PAGE 16]\n\n```\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n\n    return new Proxy(this, {\n\
+    \        get(target, name) {\n            // ...\n        }\n    });\n}\n\nconst\
+    \ person = new Person(\"Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n\
+    $ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node\
+    \ index.js\n{ firstName: 'John', lastName: 'Roe' }\n$\n```"
+  - "[PAGE 17]\n\nindex.js\n\n```\n1   function Person(firstName, lastName) {\n2 \
+    \      this.firstName = firstName;\n3       this.lastName = lastName;\n4 \n5 \
+    \      return null;\n6   }\n7 \n8   const person = new Person(\"Jane\", \"Doe\"\
+    );\n9   console.log(person);\n```\n\nPROBLEMS OUTPUT DEBUG CONSOLE TERMINAL\n\n\
+    ```\n$ node index.js\nPerson {}\nPerson { firstName: 'Jane' }\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node\
+    \ index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{\
+    \ firstName: 'John', lastName: 'Roe' }\n$ node index.js\nPerson { firstName: 'Jane',\
+    \ lastName: 'Doe' }\n$ _\n```"
+  - "[PAGE 18]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nperson.sayHi();\n\
+    ```\n\n```\n$ node index.js\nHi, my name is John!\n$\n```"
+  - "[PAGE 19]\n\n```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"John\"\n};\n\nperson.sayHi = sayHi;\n\
+    person.sayHi();\n```\n\n```\n$ node index.js\nHi, my name is John!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  - "[PAGE 20]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nconst\
+    \ greet = person.sayHi;\ngreet();\n```\n\n```\n$ node index.js\nHi, my name is\
+    \ undefined!\n$\n```"
+  - "[PAGE 21]\n\n# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n\
+    \    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n  \
+    \  }\n};\n\nsetTimeout(person.sayHi, 1000);\n```\n\n```\n$ node index.js\nHi,\
+    \ my name is undefined!\n$ node index.js\nHi, my name is undefined!\n```"
+  - "[PAGE 22]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(function()\
+    \ {\n    person.sayHi();\n}, 1000);\n```\n\n```\n$ node index.js\nHi, my name\
+    \ is undefined!\n$ node index.js\nHi, my name is undefined!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  - "[PAGE 23]\n\n# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n\
+    \    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n  \
+    \  }\n};\n\nsetTimeout(person.sayHi.bind(person), 1000);\n```\n\n# TERMINAL\n\n\
+    ```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name\
+    \ is undefined!\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my\
+    \ name is John!\n```"
+  - "[PAGE 24]\n\n```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.call(person);\n```\n\n```\n$ node index.js\nHi, my name is Jane!\n$\n```"
+- md: "function sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.apply(person);\n\n$ node index.js\nHi, my name is Jane!\n$ node index.js\n\
+    Hi, my name is Jane!\n$\n\nconst numbers = [10, 20, 30, 40, 50];\n\nconst slice1\
+    \ = numbers.slice(1, 4);\nconst slice2 = numbers.slice.call(numbers, 1, 4);\n\
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);\n\nconsole.log(slice1);\n\
+    console.log(slice2);\nconsole.log(slice3);\n\n$ node index.js\n[ 20, 30, 40 ]\n\
+    [ 20, 30, 40 ]\n[ 20, 30, 40 ]\n$\n\nconst numbers = [10, 20, 30, 40, 50];\n\n\
+    const slice1 = numbers.slice(1, 4);\nconst slice2 = numbers.slice.call(numbers,\
+    \ 1, 4);\nconst slice3 = numbers.slice.apply(numbers, [1, 4]);\n\nconsole.log(slice1);\n\
+    console.log(slice2);\nconsole.log(slice3);\n\n// (c)all => (c)omma\n// (a)pply\
+    \ => (a)rray\n\n$ node index.js\n[ 20, 30, 40 ]\n[ 20, 30, 40 ]\n[ 20, 30, 40\
+    \ ]\n$\n\nfunction func() {\n    console.log(this === global);\n}\n\nfunc.call(null);\n\
+    func.call(undefined);\n\nfunc.apply(null);\nfunc.apply(undefined);\n\n$ node index.js\n\
+    true\ntrue\ntrue\ntrue\n\n\"use strict\";\n\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc.call(null);\nfunc.call(undefined);\n\nfunc.apply(null);\n\
+    func.apply(undefined);\n\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$ node index.js\n\
+    false\nfalse\nfalse\nfalse\n$\n\nconst person = {\n  firstName: \"John\",\n  sayHi()\
+    \ {\n    console.log(`Hi, my name is ${this.firstName}!`);\n  }\n};\n\nsetTimeout(person.sayHi,\
+    \ 1000);\n\n$ node index.js\nHi, my name is undefined!\n\nconst person = {\n \
+    \   firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n};\n\nsetTimeout(person.sayHi.bind(person), 1000);\n\n$ node index.js\n\
+    Hi, my name is undefined!\n$ node index.js\nHi, my name is John!\n$\n\nconst person\
+    \ = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name\
+    \ is ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my\
+    \ name is John!\n$ node index.js\nHi, my name is John!\n$\n\nconst person = {\n\
+    \    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is\
+    \ ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    \nconst otherPerson = {\n    firstName: \"Jane\"\n};\n\ngreet.call(otherPerson);\n\
+    \n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is\
+    \ John!\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is\
+    \ John!\n\nFunction.prototype.bind = function(thisArg, ...fixedArgs) {\n    const\
+    \ func = this;\n    return function(...args) {\n        return func.apply(thisArg,\
+    \ [...fixedArgs, ...args]);\n    };\n};\n\n$\n\nconst outerThis = this;\n\nconst\
+    \ func = () => {\n    console.log(this === outerThis);\n};\n\nfunc();\n\n$ node\
+    \ index.js\ntrue\n$\n\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\nfunc.call(null);\nfunc.apply(undefined);\nfunc.bind({})();\n\
+    \n$ node index.js\ntrue\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$ \n\nconst\
+    \ outerThis = this;\n\nconst func = () => {\n    console.log(this === outerThis);\n\
+    };\n\nnew func();\n\ntrue\n$ node index.js\n/Users/marius/Desktop/this/index.js:7\n\
+    new func();\n^\nTypeError: func is not a constructor\n    at Object.<anonymous>\
+    \ (/Users/marius/Desktop/this/index.js:7:1)\n    at Module._compile (module.js:635:30)\n\
+    \    at Object.Module._extensions..js (module.js:646:10)\n    at Module.load (module.js:554:32)\n\
+    \    at tryModuleLoad (module.js:497:12)\n    at Function.Module._load (module.js:489:3)\n\
+    \    at Function.Module.runMain (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n\
+    \    at bootstrap_node.js:608:3\n\nconst counter = {\n    count: 0,\n    incrementPeriodically()\
+    \ {\n        setInterval(function() {\n            console.log(++this.count);\n\
+    \        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n\n$ node index.js\n\
+    NaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\nconst counter = {\n    count:\
+    \ 0,\n    incrementPeriodically() {\n        setInterval(() => {\n           \
+    \ console.log(++this.count);\n        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n\
+    \n$ node index.js\n1\n2\n3\n^C\n$\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nperson.sayHi();\n\n\
+    $ node index.js\nHi, my name is John!\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\nconsole.log(`Hi, my name is ${this.firstName}!`);\n\nTypeError: Cannot\
+    \ read property 'firstName' of undefined\n    at sayHi (/Users/marius/Desktop/this/index.js:8:44)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:14:1)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n    }\n\n    sayHi() {\n  \
+    \      console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n\n$ node index.js\nHi, my name is John!\n$\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \n        this.sayHi = this.sayHi.bind(this);\n    }\n\n    sayHi() {\n      \
+    \  console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n\
+    $ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is John!\n\
+    \nclass Person {\n    sayHi = () => {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    };\n\n    constructor(firstName, lastName) {\n        this.firstName = firstName;\n\
+    \        this.lastName = lastName;\n    }\n}\n\nconst person = new Person(\"John\"\
+    , \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n$ npm run babel\nclass Person\
+    \ {\n    constructor(firstName, lastName) {\n        this.sayHi = () => {\n  \
+    \          console.log(`Hi, my name is ${this.firstName}!`);\n        };\n   \
+    \     this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    }\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n$\n\nclass Person {\n    sayHi = () => {\n        console.log(`Hi, my\
+    \ name is ${this.firstName}!`);\n    };\n\n    constructor(firstName, lastName)\
+    \ {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\n$ npm run babel\nclass Person {\n\n    constructor(firstName, lastName)\
+    \ {\n        this.sayHi = () => {\n            console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \        };\n\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\n$ npm run babel | node\nHi, my name is John!\n\nLutfen akp ye oy vermeyin.\
+    \ daha cok kitap yayinlarim."
+  mdcn: "\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.apply(person);\n\n$ node index.js\nHi, my name is Jane!\n$ node index.js\n\
+    Hi, my name is Jane!\n$\n\nconst numbers = [10, 20, 30, 40, 50];\n\nconst slice1\
+    \ = numbers.slice(1, 4);\nconst slice2 = numbers.slice.call(numbers, 1, 4);\n\
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);\n\nconsole.log(slice1);\n\
+    console.log(slice2);\nconsole.log(slice3);\n\n$ node index.js\n[ 20, 30, 40 ]\n\
+    [ 20, 30, 40 ]\n[ 20, 30, 40 ]\n$\n\nconst numbers = [10, 20, 30, 40, 50];\n\n\
+    const slice1 = numbers.slice(1, 4);\nconst slice2 = numbers.slice.call(numbers,\
+    \ 1, 4);\nconst slice3 = numbers.slice.apply(numbers, [1, 4]);\n\nconsole.log(slice1);\n\
+    console.log(slice2);\nconsole.log(slice3);\n\n// (c)all => (c)omma\n// (a)pply\
+    \ => (a)rray\n\n$ node index.js\n[ 20, 30, 40 ]\n[ 20, 30, 40 ]\n[ 20, 30, 40\
+    \ ]\n$\n\nfunction func() {\n    console.log(this === global);\n}\n\nfunc.call(null);\n\
+    func.call(undefined);\n\nfunc.apply(null);\nfunc.apply(undefined);\n\n$ node index.js\n\
+    true\ntrue\ntrue\ntrue\n\n\"use strict\";\n\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc.call(null);\nfunc.call(undefined);\n\nfunc.apply(null);\n\
+    func.apply(undefined);\n\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$ node index.js\n\
+    false\nfalse\nfalse\nfalse\n$\n\nconst person = {\n  firstName: \"John\",\n  sayHi()\
+    \ {\n    console.log(`Hi, my name is ${this.firstName}!`);\n  }\n};\n\nsetTimeout(person.sayHi,\
+    \ 1000);\n\n$ node index.js\nHi, my name is undefined!\n\nconst person = {\n \
+    \   firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n};\n\nsetTimeout(person.sayHi.bind(person), 1000);\n\n$ node index.js\n\
+    Hi, my name is undefined!\n$ node index.js\nHi, my name is John!\n$\n\nconst person\
+    \ = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name\
+    \ is ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my\
+    \ name is John!\n$ node index.js\nHi, my name is John!\n$\n\nconst person = {\n\
+    \    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi, my name is\
+    \ ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    \nconst otherPerson = {\n    firstName: \"Jane\"\n};\n\ngreet.call(otherPerson);\n\
+    \n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is\
+    \ John!\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is\
+    \ John!\n\nFunction.prototype.bind = function(thisArg, ...fixedArgs) {\n    const\
+    \ func = this;\n    return function(...args) {\n        return func.apply(thisArg,\
+    \ [...fixedArgs, ...args]);\n    };\n};\n\n$\n\nconst outerThis = this;\n\nconst\
+    \ func = () => {\n    console.log(this === outerThis);\n};\n\nfunc();\n\n$ node\
+    \ index.js\ntrue\n$\n\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\nfunc.call(null);\nfunc.apply(undefined);\nfunc.bind({})();\n\
+    \n$ node index.js\ntrue\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$ \n\nconst\
+    \ outerThis = this;\n\nconst func = () => {\n    console.log(this === outerThis);\n\
+    };\n\nnew func();\n\ntrue\n$ node index.js\n/Users/marius/Desktop/this/index.js:7\n\
+    new func();\n^\nTypeError: func is not a constructor\n    at Object.<anonymous>\
+    \ (/Users/marius/Desktop/this/index.js:7:1)\n    at Module._compile (module.js:635:30)\n\
+    \    at Object.Module._extensions..js (module.js:646:10)\n    at Module.load (module.js:554:32)\n\
+    \    at tryModuleLoad (module.js:497:12)\n    at Function.Module._load (module.js:489:3)\n\
+    \    at Function.Module.runMain (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n\
+    \    at bootstrap_node.js:608:3\n\nconst counter = {\n    count: 0,\n    incrementPeriodically()\
+    \ {\n        setInterval(function() {\n            console.log(++this.count);\n\
+    \        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n\n$ node index.js\n\
+    NaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n\nconst counter = {\n    count:\
+    \ 0,\n    incrementPeriodically() {\n        setInterval(() => {\n           \
+    \ console.log(++this.count);\n        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n\
+    \n$ node index.js\n1\n2\n3\n^C\n$\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nperson.sayHi();\n\n\
+    $ node index.js\nHi, my name is John!\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\nconsole.log(`Hi, my name is ${this.firstName}!`);\n\nTypeError: Cannot\
+    \ read property 'firstName' of undefined\n    at sayHi (/Users/marius/Desktop/this/index.js:8:44)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:14:1)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n    }\n\n    sayHi() {\n  \
+    \      console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n\n$ node index.js\nHi, my name is John!\n$\n\nclass Person {\n    constructor(firstName,\
+    \ lastName) {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \n        this.sayHi = this.sayHi.bind(this);\n    }\n\n    sayHi() {\n      \
+    \  console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n\
+    $ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is John!\n\
+    \nclass Person {\n    sayHi = () => {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    };\n\n    constructor(firstName, lastName) {\n        this.firstName = firstName;\n\
+    \        this.lastName = lastName;\n    }\n}\n\nconst person = new Person(\"John\"\
+    , \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n$ npm run babel\nclass Person\
+    \ {\n    constructor(firstName, lastName) {\n        this.sayHi = () => {\n  \
+    \          console.log(`Hi, my name is ${this.firstName}!`);\n        };\n   \
+    \     this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    }\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n$\n\nclass Person {\n    sayHi = () => {\n        console.log(`Hi, my\
+    \ name is ${this.firstName}!`);\n    };\n\n    constructor(firstName, lastName)\
+    \ {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\n$ npm run babel\nclass Person {\n\n    constructor(firstName, lastName)\
+    \ {\n        this.sayHi = () => {\n            console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \        };\n\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n\n$ npm run babel | node\nHi, my name is John!\n\n请不要投票给AKP。我会出版更多书籍。\n"
+  merge: 0
+  raw:
+  - "[PAGE 25]\n\n```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.apply(person);\n```\n\n```\n$ node index.js\nHi, my name is Jane!\n$ node\
+    \ index.js\nHi, my name is Jane!\n$\n```"
+  - '[PAGE 26]
+
+
+    ```
+
+    const numbers = [10, 20, 30, 40, 50];
+
+
+    const slice1 = numbers.slice(1, 4);
+
+    const slice2 = numbers.slice.call(numbers, 1, 4);
+
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);
+
+
+    console.log(slice1);
+
+    console.log(slice2);
+
+    console.log(slice3);
+
+    ```
+
+
+    ```
+
+    $ node index.js
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    $
+
+    ```'
+  - '[PAGE 27]
+
+
+    ```
+
+    const numbers = [10, 20, 30, 40, 50];
+
+
+    const slice1 = numbers.slice(1, 4);
+
+    const slice2 = numbers.slice.call(numbers, 1, 4);
+
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);
+
+
+    console.log(slice1);
+
+    console.log(slice2);
+
+    console.log(slice3);
+
+
+    // (c)all => (c)omma
+
+    // (a)pply => (a)rray
+
+    ```
+
+
+    ```
+
+    $ node index.js
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    $
+
+    ```'
+  - "[PAGE 28]\n\n```\nfunction func() {\n    console.log(this === global);\n}\n\n\
+    func.call(null);\nfunc.call(undefined);\n\nfunc.apply(null);\nfunc.apply(undefined);\n\
+    ```\n\n```\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n```"
+  - "[PAGE 29]\n\n```\nindex.js\n\n\"use strict\";\n\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc.call(null);\nfunc.call(undefined);\n\nfunc.apply(null);\n\
+    func.apply(undefined);\n```\n\n```\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n\
+    $ node index.js\nfalse\nfalse\nfalse\nfalse\n$\n```"
+  - "[PAGE 30]\n\n```\nconst person = {\n  firstName: \"John\",\n  sayHi() {\n   \
+    \ console.log(`Hi, my name is ${this.firstName}!`);\n  }\n};\n\nsetTimeout(person.sayHi,\
+    \ 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n```"
+  - "[PAGE 31]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(person.sayHi.bind(person),\
+    \ 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  - "[PAGE 32]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nconst\
+    \ greet = person.sayHi.bind(person);\ngreet();\n```\n\n```\n$ node index.js\n\
+    Hi, my name is undefined!\n$ node index.js\nHi, my name is John!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  - "[PAGE 33]\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n\
+    \        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\nconst\
+    \ greet = person.sayHi.bind(person);\n\nconst otherPerson = {\n    firstName:\
+    \ \"Jane\"\n};\n\ngreet.call(otherPerson);\n```\n\n```\n$ node index.js\nHi, my\
+    \ name is undefined!\n$ node index.js\nHi, my name is John!\n$ node index.js\n\
+    Hi, my name is John!\n$ node index.js\nHi, my name is John!\n```"
+  - "[PAGE 34]\n\n# index.js\n\n```\nFunction.prototype.bind = function(thisArg, ...fixedArgs)\
+    \ {\n    const func = this;\n    return function(...args) {\n        return func.apply(thisArg,\
+    \ [...fixedArgs, ...args]);\n    };\n};\n```\n\nTERMINAL\n\n```\n$\n```"
+  - "[PAGE 35]\n\n```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$\n```"
+  - "[PAGE 36]\n\n```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\nfunc.call(null);\nfunc.apply(undefined);\nfunc.bind({})();\n\
+    ```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$\
+    \ \n```"
+  - "[PAGE 37]\n\n```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nnew func();\n```\n\n```\ntrue\n$ node index.js\n/Users/marius/Desktop/this/index.js:7\n\
+    new func();\n^\nTypeError: func is not a constructor\n    at Object.<anonymous>\
+    \ (/Users/marius/Desktop/this/index.js:7:1)\n    at Module._compile (module.js:635:30)\n\
+    \    at Object.Module._extensions..js (module.js:646:10)\n    at Module.load (module.js:554:32)\n\
+    \    at tryModuleLoad (module.js:497:12)\n    at Function.Module._load (module.js:489:3)\n\
+    \    at Function.Module.runMain (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n\
+    \    at bootstrap_node.js:608:3\n```"
+  - "[PAGE 38]\n\n# index.js\n\n```\nconst counter = {\n    count: 0,\n    incrementPeriodically()\
+    \ {\n        setInterval(function() {\n            console.log(++this.count);\n\
+    \        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n```\n\n```\n\
+    $ node index.js\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n```"
+  - "[PAGE 39]\n\n```\nconst counter = {\n    count: 0,\n    incrementPeriodically()\
+    \ {\n        setInterval(() => {\n            console.log(++this.count);\n   \
+    \     }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n```\n\n```\n$\
+    \ node index.js\n1\n2\n3\n^C\n$\n```"
+  - "[PAGE 40]\n\n```\nclass Person {\n    constructor(firstName, lastName) {\n  \
+    \      this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    \n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n \
+    \   }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nperson.sayHi();\n```\n\
+    \n$ node index.js\nHi, my name is John!"
+  - "[PAGE 41]\n\n```\nclass Person {\n    constructor(firstName, lastName) {\n  \
+    \      this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    \n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n \
+    \   }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n```\n\n```\nconsole.log(`Hi, my name is ${this.firstName}!`);\n```\n\
+    \n```\nTypeError: Cannot read property 'firstName' of undefined\n    at say youths\
+    \ (/Users/marius/Desktop/this/index.js:8:44)\n    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:14:1)\n\
+    \    at Module._compile (module.js:635:30)\n    at Object.Module._extensions..js\
+    \ (module.js:646:10)\n    at Module.load (module.js:554:32)\n    at tryModuleLoad\
+    \ (module.js:497:12)\n    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    ```"
+  - "[PAGE 42]\n\n```\nclass Person {\n    constructor(firstName, lastName) {\n  \
+    \      this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    \n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n \
+    \   }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n```\n\n```\n$ node index.js\nHi, my name is John!\n$\n```"
+  - "[PAGE 43]\n\n```\nclass Person {\n    constructor(firstName, lastName) {\n  \
+    \      this.firstName = firstName;\n        this.lastName = lastName;\n\n    \
+    \    this.sayHi = this.sayHi.bind(this);\n    }\n\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n}\n\nconst person = new Person(\"John\"\
+    , \"Doe\");\nconst greet = person.sayHi;\ngreet();\n```\n\n```\n$ node index.js\n\
+    Hi, my name is John!\n$ node index.js\nHi, my name is John!\n```"
+  - "[PAGE 44]\n\n```\nindex.js\n1 class Person {\n2     sayHi = () => {\n3      \
+    \   console.log(`Hi, my name is ${this.firstName}!`);\n4     };\n5\n6     constructor(firstName,\
+    \ lastName) {\n7         this.firstName = firstName;\n8         this.lastName\
+    \ = lastName;\n9     }\n10 }\n11\n12 const person = new Person(\"John\", \"Doe\"\
+    );\n13 const greet = person.sayHi;\n14 greet();\n15\n```\n\n```\n$ npm run babel\n\
+    class Person {\n    constructor(firstName, lastName) {\n        this.sayHi = ()\
+    \ => {\n            console.log(`Hi, my name is ${this.firstName}!`);\n      \
+    \  };\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n$\n```"
+  - "[PAGE 45]\n\n```\nclass Person {\n    sayHi = () => {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    };\n\n    constructor(firstName, lastName)\
+    \ {\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n```\n\n```\n$ npm run babel\nclass Person {\n\n    constructor(firstName,\
+    \ lastName) {\n        this.sayHi = () => {\n            console.log(`Hi, my name\
+    \ is ${this.firstName}!`);\n        };\n\n        this.firstName = firstName;\n\
+    \        this.lastName = lastName;\n    }\n}\n\nconst person = new Person(\"John\"\
+    , \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n$ npm run babel | node\n\
+    Hi, my name is John!\n```"
+  - '[PAGE 46]
+
+
+    Lutfen akp ye oy vermeyin. daha cok kitap yayinlarim.'
+pages:
+- img_proc: true
+  md: '```
+
+    this === window
+
+    ```
+
+
+    ```
+
+    true
+
+    ```'
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: '```
+
+    this === window
+
+    true
+
+    "use strict";
+
+    this === window
+
+    true
+
+    ```'
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: '# [Pause] index.js
+
+
+    ```
+
+    1
+
+    ```
+
+
+    ```
+
+    $ node
+
+    > this === global
+
+    true
+
+    > .exit
+
+    ```'
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '```
+
+    console.log(this === global);
+
+    ```'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: '# index.js
+
+
+    ```
+
+    console.log(this === module.exports);
+
+    ```
+
+
+    PROBLEMS OUTPUT DEBUG CONSOLE TERMINAL
+
+
+    ```
+
+    $ node index.js
+
+    false
+
+    $ node index.js
+
+    true
+
+    $
+
+    ```'
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "```\nfunction func() {\n    console.log(this === global);\n}\n\nfunc();\n```\n\
+    \n```\n$ node index.js\ntrue\n```"
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: "```\n\"use strict\";\n\nfunction func() {\n    console.log(this === undefined);\n\
+    }\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\n$\n```"
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: "```\n1  function func() {\n2      \"use strict\";\n3      console.log(this\
+    \ === undefined);\n4  }\n5  \n6  func();\n7\n```\n\n```\n$ node index.js\ntrue\n\
+    $ node index.js\ntrue\n$ node index.js\ntrue\n$\n```"
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\", \"Doe\");\n\
+    console.log(person);\n```\n\n```\n$ node index.js\nundefined\n$\n```"
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\", \"Doe\");\n\
+    console.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\nundefined\n$ node index.js\nundefined\nJane\nDoe\n\
+    $ \n```"
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n}\n\nconst person = Person(\"Jane\"\
+    , \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\nundefined\nJane\nDoe\n$ node index.js\n/Users/marius/Desktop/this/index.js:4\n\
+    \    this.firstName = firstName;\n            ^\n\nTypeError: Cannot set property\
+    \ 'firstName' of undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    $ \n```"
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "```\n\"use strict\";\n\nfunction Person(firstName, lastName) {\n    this.firstName\
+    \ = firstName;\n    this.lastName = lastName;\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n\nconsole.log(global.firstName);\nconsole.log(global.lastName);\n\
+    ```\n\n```\n$ node index.js\n\n/Users/marius/Desktop/this/index.js:4\n    this.firstName\
+    \ = firstName;\n                   ^\n\nTypeError: Cannot set property 'firstName'\
+    \ of undefined\n    at Person (/Users/marius/Desktop/this/index.js:4:20)\n   \
+    \ at Object.<anonymous> (/Users/marius/Desktop/this/index.js:8:16)\n    at Module._compile\
+    \ (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    \n$ node index.js\n\nPerson { firstName: 'Jane', lastName: 'Doe' }\nundefined\n\
+    undefined\n\n$\n```"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    console.log(this);\n    this.firstName\
+    \ = firstName;\n    console.log(this);\n    this.lastName = lastName;\n    console.log(this);\n\
+    }\n\nconst person = new Person(\"Jane\", \"Doe\");\n```\n\n```\n$ node index.js\n\
+    Person {}\nPerson { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName:\
+    \ 'Doe' }\n```"
+  merge: -1
+  pgno: 12
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n}\n\nconst person = new Person(\"Jane\", \"Doe\"\
+    );\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\nPerson { firstName:\
+    \ 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson\
+    \ { firstName: 'Jane', lastName: 'Doe' }\n$\n```"
+  merge: -1
+  pgno: 13
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return this;\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$\n```"
+  merge: -1
+  pgno: 14
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return {\n        firstName: \"John\",\n\
+    \        lastName: \"Roe\"\n    };\n}\n\nconst person = new Person(\"Jane\", \"\
+    Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\nPerson\
+    \ { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node\
+    \ index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson\
+    \ { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John',\
+    \ lastName: 'Roe' }\n$\n```"
+  merge: -1
+  pgno: 15
+- img_proc: true
+  md: "```\nfunction Person(firstName, lastName) {\n    this.firstName = firstName;\n\
+    \    this.lastName = lastName;\n\n    return new Proxy(this, {\n        get(target,\
+    \ name) {\n            // ...\n        }\n    });\n}\n\nconst person = new Person(\"\
+    Jane\", \"Doe\");\nconsole.log(person);\n```\n\n```\n$ node index.js\nPerson {}\n\
+    Person { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe' }\n\
+    $ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John',\
+    \ lastName: 'Roe' }\n$\n```"
+  merge: -1
+  pgno: 16
+- img_proc: true
+  md: "index.js\n\n```\n1   function Person(firstName, lastName) {\n2       this.firstName\
+    \ = firstName;\n3       this.lastName = lastName;\n4 \n5       return null;\n\
+    6   }\n7 \n8   const person = new Person(\"Jane\", \"Doe\");\n9   console.log(person);\n\
+    ```\n\nPROBLEMS OUTPUT DEBUG CONSOLE TERMINAL\n\n```\n$ node index.js\nPerson\
+    \ {}\nPerson { firstName: 'Jane' }\nPerson { firstName: 'Jane', lastName: 'Doe'\
+    \ }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\n\
+    Person { firstName: 'Jane', lastName: 'Doe' }\n$ node index.js\nPerson { firstName:\
+    \ 'Jane', lastName: 'Doe' }\n$ node index.js\n{ firstName: 'John', lastName: 'Roe'\
+    \ }\n$ node index.js\nPerson { firstName: 'Jane', lastName: 'Doe' }\n$ _\n```"
+  merge: -1
+  pgno: 17
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nperson.sayHi();\n```\n\n```\n\
+    $ node index.js\nHi, my name is John!\n$\n```"
+  merge: -1
+  pgno: 18
+- img_proc: true
+  md: "```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"John\"\n};\n\nperson.sayHi = sayHi;\n\
+    person.sayHi();\n```\n\n```\n$ node index.js\nHi, my name is John!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  merge: -1
+  pgno: 19
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi;\n\
+    greet();\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n$\n```"
+  merge: -1
+  pgno: 20
+- img_proc: true
+  md: "# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi()\
+    \ {\n        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\n\
+    setTimeout(person.sayHi, 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is undefined!\n```"
+  merge: -1
+  pgno: 21
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(function() {\n   \
+    \ person.sayHi();\n}, 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is John!\n\
+    $\n```"
+  merge: -1
+  pgno: 22
+- img_proc: true
+  md: "# index.js\n\n```\nconst person = {\n    firstName: \"John\",\n    sayHi()\
+    \ {\n        console.log(`Hi, my name is ${this.firstName}!`);\n    }\n};\n\n\
+    setTimeout(person.sayHi.bind(person), 1000);\n```\n\n# TERMINAL\n\n```\n$ node\
+    \ index.js\nHi, my name is undefined!\n$ node index.js\nHi, my name is undefined!\n\
+    $ node index.js\nHi, my name is John!\n$ node index.js\nHi, my name is John!\n\
+    ```"
+  merge: -1
+  pgno: 23
+- img_proc: true
+  md: "```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.call(person);\n```\n\n```\n$ node index.js\nHi, my name is Jane!\n$\n```"
+  merge: -1
+  pgno: 24
+- img_proc: true
+  md: "```\nfunction sayHi() {\n    console.log(`Hi, my name is ${this.firstName}!`);\n\
+    }\n\nconst person = {\n    firstName: \"Jane\",\n    lastName: \"Doe\"\n};\n\n\
+    sayHi.apply(person);\n```\n\n```\n$ node index.js\nHi, my name is Jane!\n$ node\
+    \ index.js\nHi, my name is Jane!\n$\n```"
+  merge: -1
+  pgno: 25
+- img_proc: true
+  md: '```
+
+    const numbers = [10, 20, 30, 40, 50];
+
+
+    const slice1 = numbers.slice(1, 4);
+
+    const slice2 = numbers.slice.call(numbers, 1, 4);
+
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);
+
+
+    console.log(slice1);
+
+    console.log(slice2);
+
+    console.log(slice3);
+
+    ```
+
+
+    ```
+
+    $ node index.js
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    $
+
+    ```'
+  merge: -1
+  pgno: 26
+- img_proc: true
+  md: '```
+
+    const numbers = [10, 20, 30, 40, 50];
+
+
+    const slice1 = numbers.slice(1, 4);
+
+    const slice2 = numbers.slice.call(numbers, 1, 4);
+
+    const slice3 = numbers.slice.apply(numbers, [1, 4]);
+
+
+    console.log(slice1);
+
+    console.log(slice2);
+
+    console.log(slice3);
+
+
+    // (c)all => (c)omma
+
+    // (a)pply => (a)rray
+
+    ```
+
+
+    ```
+
+    $ node index.js
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    [ 20, 30, 40 ]
+
+    $
+
+    ```'
+  merge: -1
+  pgno: 27
+- img_proc: true
+  md: "```\nfunction func() {\n    console.log(this === global);\n}\n\nfunc.call(null);\n\
+    func.call(undefined);\n\nfunc.apply(null);\nfunc.apply(undefined);\n```\n\n```\n\
+    $ node index.js\ntrue\ntrue\ntrue\ntrue\n```"
+  merge: -1
+  pgno: 28
+- img_proc: true
+  md: "```\nindex.js\n\n\"use strict\";\n\nfunction func() {\n    console.log(this\
+    \ === global);\n}\n\nfunc.call(null);\nfunc.call(undefined);\n\nfunc.apply(null);\n\
+    func.apply(undefined);\n```\n\n```\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n\
+    $ node index.js\nfalse\nfalse\nfalse\nfalse\n$\n```"
+  merge: -1
+  pgno: 29
+- img_proc: true
+  md: "```\nconst person = {\n  firstName: \"John\",\n  sayHi() {\n    console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n  }\n};\n\nsetTimeout(person.sayHi, 1000);\n\
+    ```\n\n```\n$ node index.js\nHi, my name is undefined!\n```"
+  merge: -1
+  pgno: 30
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nsetTimeout(person.sayHi.bind(person),\
+    \ 1000);\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\n\
+    Hi, my name is John!\n$\n```"
+  merge: -1
+  pgno: 31
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n```\n\n```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\n\
+    Hi, my name is John!\n$ node index.js\nHi, my name is John!\n$\n```"
+  merge: -1
+  pgno: 32
+- img_proc: true
+  md: "```\nconst person = {\n    firstName: \"John\",\n    sayHi() {\n        console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n    }\n};\n\nconst greet = person.sayHi.bind(person);\n\
+    \nconst otherPerson = {\n    firstName: \"Jane\"\n};\n\ngreet.call(otherPerson);\n\
+    ```\n\n```\n$ node index.js\nHi, my name is undefined!\n$ node index.js\nHi, my\
+    \ name is John!\n$ node index.js\nHi, my name is John!\n$ node index.js\nHi, my\
+    \ name is John!\n```"
+  merge: -1
+  pgno: 33
+- img_proc: true
+  md: "# index.js\n\n```\nFunction.prototype.bind = function(thisArg, ...fixedArgs)\
+    \ {\n    const func = this;\n    return function(...args) {\n        return func.apply(thisArg,\
+    \ [...fixedArgs, ...args]);\n    };\n};\n```\n\nTERMINAL\n\n```\n$\n```"
+  merge: -1
+  pgno: 34
+- img_proc: true
+  md: "```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\n```\n\n```\n$ node index.js\ntrue\n$\n```"
+  merge: -1
+  pgno: 35
+- img_proc: true
+  md: "```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nfunc();\nfunc.call(null);\nfunc.apply(undefined);\nfunc.bind({})();\n\
+    ```\n\n```\n$ node index.js\ntrue\n$ node index.js\ntrue\ntrue\ntrue\ntrue\n$\
+    \ \n```"
+  merge: -1
+  pgno: 36
+- img_proc: true
+  md: "```\nconst outerThis = this;\n\nconst func = () => {\n    console.log(this\
+    \ === outerThis);\n};\n\nnew func();\n```\n\n```\ntrue\n$ node index.js\n/Users/marius/Desktop/this/index.js:7\n\
+    new func();\n^\nTypeError: func is not a constructor\n    at Object.<anonymous>\
+    \ (/Users/marius/Desktop/this/index.js:7:1)\n    at Module._compile (module.js:635:30)\n\
+    \    at Object.Module._extensions..js (module.js:646:10)\n    at Module.load (module.js:554:32)\n\
+    \    at tryModuleLoad (module.js:497:12)\n    at Function.Module._load (module.js:489:3)\n\
+    \    at Function.Module.runMain (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n\
+    \    at bootstrap_node.js:608:3\n```"
+  merge: -1
+  pgno: 37
+- img_proc: true
+  md: "# index.js\n\n```\nconst counter = {\n    count: 0,\n    incrementPeriodically()\
+    \ {\n        setInterval(function() {\n            console.log(++this.count);\n\
+    \        }, 1000);\n    }\n};\n\ncounter.incrementPeriodically();\n```\n\n```\n\
+    $ node index.js\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\nNaN\n```"
+  merge: -1
+  pgno: 38
+- img_proc: true
+  md: "```\nconst counter = {\n    count: 0,\n    incrementPeriodically() {\n    \
+    \    setInterval(() => {\n            console.log(++this.count);\n        }, 1000);\n\
+    \    }\n};\n\ncounter.incrementPeriodically();\n```\n\n```\n$ node index.js\n\
+    1\n2\n3\n^C\n$\n```"
+  merge: -1
+  pgno: 39
+- img_proc: true
+  md: "```\nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n    }\n\n    sayHi() {\n  \
+    \      console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nperson.sayHi();\n```\n\n$ node index.js\n\
+    Hi, my name is John!"
+  merge: -1
+  pgno: 40
+- img_proc: true
+  md: "```\nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n    }\n\n    sayHi() {\n  \
+    \      console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\ngreet();\n```\n\
+    \n```\nconsole.log(`Hi, my name is ${this.firstName}!`);\n```\n\n```\nTypeError:\
+    \ Cannot read property 'firstName' of undefined\n    at say youths (/Users/marius/Desktop/this/index.js:8:44)\n\
+    \    at Object.<anonymous> (/Users/marius/Desktop/this/index.js:14:1)\n    at\
+    \ Module._compile (module.js:635:30)\n    at Object.Module._extensions..js (module.js:646:10)\n\
+    \    at Module.load (module.js:554:32)\n    at tryModuleLoad (module.js:497:12)\n\
+    \    at Function.Module._load (module.js:489:3)\n    at Function.Module.runMain\
+    \ (module.js:676:10)\n    at startup (bootstrap_node.js:187:16)\n    at bootstrap_node.js:608:3\n\
+    ```"
+  merge: -1
+  pgno: 41
+- img_proc: true
+  md: "```\nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n    }\n\n    sayHi() {\n  \
+    \      console.log(`Hi, my name is ${this.firstName}!`);\n    }\n}\n\nconst person\
+    \ = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi.bind(person);\n\
+    greet();\n```\n\n```\n$ node index.js\nHi, my name is John!\n$\n```"
+  merge: -1
+  pgno: 42
+- img_proc: true
+  md: "```\nclass Person {\n    constructor(firstName, lastName) {\n        this.firstName\
+    \ = firstName;\n        this.lastName = lastName;\n\n        this.sayHi = this.sayHi.bind(this);\n\
+    \    }\n\n    sayHi() {\n        console.log(`Hi, my name is ${this.firstName}!`);\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n```\n\n```\n$ node index.js\nHi, my name is John!\n$ node index.js\n\
+    Hi, my name is John!\n```"
+  merge: -1
+  pgno: 43
+- img_proc: true
+  md: "```\nindex.js\n1 class Person {\n2     sayHi = () => {\n3         console.log(`Hi,\
+    \ my name is ${this.firstName}!`);\n4     };\n5\n6     constructor(firstName,\
+    \ lastName) {\n7         this.firstName = firstName;\n8         this.lastName\
+    \ = lastName;\n9     }\n10 }\n11\n12 const person = new Person(\"John\", \"Doe\"\
+    );\n13 const greet = person.sayHi;\n14 greet();\n15\n```\n\n```\n$ npm run babel\n\
+    class Person {\n    constructor(firstName, lastName) {\n        this.sayHi = ()\
+    \ => {\n            console.log(`Hi, my name is ${this.firstName}!`);\n      \
+    \  };\n        this.firstName = firstName;\n        this.lastName = lastName;\n\
+    \    }\n}\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n$\n```"
+  merge: -1
+  pgno: 44
+- img_proc: true
+  md: "```\nclass Person {\n    sayHi = () => {\n        console.log(`Hi, my name\
+    \ is ${this.firstName}!`);\n    };\n\n    constructor(firstName, lastName) {\n\
+    \        this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    }\n\nconst person = new Person(\"John\", \"Doe\");\nconst greet = person.sayHi;\n\
+    greet();\n```\n\n```\n$ npm run babel\nclass Person {\n\n    constructor(firstName,\
+    \ lastName) {\n        this.sayHi = () => {\n            console.log(`Hi, my name\
+    \ is ${this.firstName}!`);\n        };\n\n        this.firstName = firstName;\n\
+    \        this.lastName = lastName;\n    }\n}\n\nconst person = new Person(\"John\"\
+    , \"Doe\");\nconst greet = person.sayHi;\ngreet();\n\n$ npm run babel | node\n\
+    Hi, my name is John!\n```"
+  merge: -1
+  pgno: 45
+- img_proc: true
+  md: Lutfen akp ye oy vermeyin. daha cok kitap yayinlarim.
+  merge: -1
+  pgno: 46
+toc:
+- - '#'
+  - Javascript 面向对象编程实战
+- - '##'
+  - index.js
+- - '##'
+  - '[暂停] index.js'
+- - '##'
+  - index.js
+- - '##'
+  - index.js
+- - '##'
+  - index.js
+- - '##'
+  - 终端
