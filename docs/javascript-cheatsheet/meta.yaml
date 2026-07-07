@@ -1,0 +1,1781 @@
+groups:
+- md: "# Seven (7) Types\n\n1. String\n2. Number\n3. Boolean\n4. Null\n5. Undefined\n\
+    6. Symbol\n7. Object\n   - Array\n   - Function\n\n```\n\"Any text\"\n123.45\n\
+    true or false\nnull\nundefined\nSymbol('something')\n{ key: 'value' }\n[1, \"\
+    text\", false]\nfunction name() { }\n```\n\n# Basic Vocabulary\n\n**Variable**\n\
+    A named reference to a value is a variable.\n\n**Operator**\nOperators are reserved-words\
+    \ that perform action on values and variables.\nExamples: + - = * in === typeof\
+    \ != ...\n\n```\nvar a = 7 + \"2\";\n```\n\n**Statement**\nA group of words, numbers\
+    \ and operators that do a task is a statement.\n\n**Keyword / reserved word**\n\
+    Any word that is part of the vocabulary of the programming language is called\
+    \ a keyword (a.k.a reserved word).\nExamples: var = + if for...\n\n**Expression**\n\
+    A reference, value or a group of reference(s) and value(s) combined with operator(s),\
+    \ which result in a single value.\n\n**Note:** var, let & const are all valid\
+    \ keywords to declare variables. The difference between them is covered on page\
+    \ 7 of this cheatsheet.\n\n# Object\n\nAn object is a data type in JavaScript\
+    \ that is used to store a combination of data in a simple key-value pair. Thats\
+    \ it.\n\n**Key**\nThese are the keys in user object.\n\n```\nvar user = {\n  name:\
+    \ \"Aziz Ali\",\n  yearOfBirth: 1988,\n  calculateAge: function(){\n    // some\
+    \ code to calculate age\n  }\n}\n```\n\n**Value**\nThese are the values of the\
+    \ respective keys in user object.\n\n**Method**\nIf a key has a function as a\
+    \ value, its called a method.\n\n# Function\n\nA function is simply a bunch of\
+    \ code bundled in a section. This bunch of code ONLY runs when the function is\
+    \ called. Functions allow for organizing code into sections and code reusability.\n\
+    \nUsing a function has ONLY two parts. (1) Declaring/defining a function, and\
+    \ (2) using/running a function.\n\n# Name of function\n\nThats it, its just a\
+    \ name you give to your function. Tip: Make your function names descriptive to\
+    \ what the function does.\n\n# Return (optional)\n\nA function can optionally\
+    \ spit-out or \"return\" a value once its invoked. Once a function returns, no\
+    \ further lines of code within the function run.\n\n```\n// Function declaration\
+    \ / Function statement\nfunction someName(param1, param2){\n\n    // bunch of\
+    \ code as needed...\n    var a = param1 + \"love\" + param2;\n    return a;\n\
+    }\n\n// Invoke (run / call) a function\nsomeName(\"Me\", \"You\")\n```\n\n# Invoke\
+    \ a function\n\nInvoking, calling or running a function all mean the same thing.\
+    \ When we write the function name, in this case someName, followed by the brackets\
+    \ symbol () like this someName(), the code inside the function gets executed.\n\
+    \n# Passing parameter(s) to a function (optional)\n\nAt the time of invoking a\
+    \ function, parameter(s) may be passed to the function code.\n\n# Parameters /\
+    \ Arguments (optional)\n\nA function can optionally take parameters (a.k.a arguments).\
+    \ The function can then use this information within the code it has.\n\n# Code\
+    \ block\n\nAny code within the curly braces { ... } is called a \"block of code\"\
+    , \"code block\" or simply \"block\". This concept is not just limited to functions.\
+    \ \"if statements\", \"for loops\" and other statements use code blocks as well.\n\
+    \n# Vocabulary around variables and scope\n\n**Variable Declaration**\nThe creation\
+    \ of the variable.\n\n**Scope**\nThe limits in which a variable exists.\n\n```\n\
+    var a;\n```\n\n```\nvar a = \"global\";\n```\n\n**Variable Initialization**\n\
+    The initial assignment of value to a variable.\n\n**Global scope**\nThe outer\
+    \ most scope is called the Global scope.\n\n```\na = 12;\n```\n\n```\nfunction\
+    \ first(){\n  var a = \"fresh\";\n\n  function second(){\n    console.log(a);\n\
+    \  }\n}\n```\n\n**Functional scope**\nAny variables inside a function is in scope\
+    \ of the function.\n\n**Variable Assignment**\nAssigning value to a variable.\n\
+    \n```\na = \"me\";\n```\n\n**Lexical Environment (Lexical scope)**\nThe physical\
+    \ location (scope) where a variable or function is declared is its lexical environment\
+    \ (lexical scope).\n\n**Scope chain**\nThe nested hierarchy of scope is called\
+    \ the scope chain. The JS engine looks for variables in the scope chain upwards\
+    \ (in its ancestors, until found).\n\n**Hoisting**\nVariables are declared at\
+    \ the top of the function automatically, and initialized at the time they are\
+    \ run.\n\n```\nconsole.log(a);\nvar a = \"me\";\n```\n\n**Rule:**\n(1) Variables\
+    \ in the outer scope can be accessed in a nested scope; But variables inside a\
+    \ nested scope CANNOT be accessed by the outer scope. (a.k.a private variables.)\n\
+    \n(2) Variables are picked up from the lexical environment.\n\n# JavaScript Cheatsheet\n\
+    \n# 6 Operators\n\nFull list of JavaScript operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators\n\
+    \nOperators are reserved-words that perform action on values and variables.\n\n\
+    **Arithmetic**\n+ Add\n- Subtract\n* Multiply\n/ Divide\n% Remainder\n** Exponential\n\
+    \n**Relational / Comparison**\n>= Greater than or equal to\n<= Less than or equal\
+    \ to\n!= Not equal after coercion\n!== Not equal\n\n**Operator Precedence**\n\
+    Given multiple operators are used in an expression, the \"Operator Precedence\"\
+    \ determines which operator will be executed first. The higher the precedence,\
+    \ the earlier it will get executed.\n\n**Assignment**\n= Assign value\n+= Add\
+    \ then assign\n-= Subtract then assign\n*= Multiply then assign\n\n**Increment\
+    \ / Decrement**\n++ Postfix increment\n-- Postfix decrement\n\n++ Prefix increment\n\
+    -- Prefix decrement\n\n**Operator Associativity**\nGiven multiple operators have\
+    \ the same precedence, \"Associativity\" determines in which direction the code\
+    \ will be parsed.\n\nSee the Operator Precedence and Associativity table here:\n\
+    http://bit.ly/operatortable\n\n**Logical**\n|| Or\n&& And\n\n**Others**\ntypeof\n\
+    instanceof\n()\n...spread-operator\n.\n.[.]\nnew\ndelete\n(.. ? .. : ..)\n\n#\
+    \ 7 Coercion\n\nWhen trying to compare different \"types\", the JavaScript engine\
+    \ attempts to convert one type into another so it can compare the two values.\n\
+    \nType coercion priority order:\n1. String\n2. Number\n3. Boolean\n\n**Coercion\
+    \ in action**\nDoes this make sense?\n\n**Equality**\n=== Equality\n== Equality\
+    \ with coercion\n\n**Conversion**\n+ Convert to number\n- Convert to number then\
+    \ negate it\n! Convert to boolean then inverse it\n\n```\n2 + \"7\";  // \"27\"\
+    \ntrue - 5  // -4\n```\n\n# Conditional Statements\n\nConditional statements allow\
+    \ our program to run specific code only if certain conditions are met. For instance,\
+    \ lets say we have a shopping app. We can tell our program to hide the \"checkout\"\
+    \ button if the shopping cart is empty.\n\n**If -else Statement**: Run certain\
+    \ code, \"if\" a condition is met. If the condition is not met, the code in the\
+    \ \"else\" block is run (if available.)\n\n```\nif (a > 0) {\n    // run this\
+    \ code\n} else if (a < 0) {\n    // run this code\n} else {\n    // run this code\n\
+    }\n```\n\n# Truthy / Falsy\n\nThere are certain values in JavaScript that return\
+    \ true when coerced into boolean. Such values are called **truthy** values. On\
+    \ the other hand, there are certain values that return false when coerced to boolean.\
+    \ These values are known as **falsy** values.\n\n**Switch Statement**: Takes a\
+    \ single expression, and runs the code of the \"case\" where the expression matches.\
+    \ The **\"break\"** keyword is used to end the switch statement.\n\n```\nswitch\
+    \ (expression) {\n    case choice1:\n        // run this code\n        break;\n\
+    \    case choice2:\n        // run this code\n        break;\n    default:\n \
+    \       // run this code\n}\n```\n\n| Truthy Values | Falsy Values |\n| :--- |\
+    \ :--- |\n| true | false |\n| \"text\" | \" \" |\n| 72 | 0 |\n| -72 | -0 |\n|\
+    \ Infinity | NaN |\n| -Infinity | null |\n| {} | undefined |\n| [] | |\n\n**Ternary\
+    \ Operator:** A ternary operator returns the first value if the expression is\
+    \ truthy, or else returns the second value.\n\n```\n(expression)? ifTrue: ifFalse;\n\
+    ```\n\n# Loop Statements\n\nLoops are used to do something repeatedly. For instance\
+    \ lets say we get a list of 50 blog posts from the database and we want to print\
+    \ their titles on our page. Instead of writing the code 50 times, we would instead\
+    \ use a loop to make this happen.\n\n**For loop**\n\n```\nfor (initial-expression;\
+    \ condition; second-expression){\n  // run this code in block\n}\n```\n\nStep\
+    \ 1: Run the initial expression.\nStep 2: Check if condition meets. If condition\
+    \ meets, proceed; or else end the loop.\nStep 3: Run the code in block.\nStep\
+    \ 4: Run the second-expression.\nStep 5: Go to Step 2.\n\n**While loop**\n\n```\n\
+    while (i<3){\n  // run this code in block\n  i++;\n}\n```\n\nStep 1: If the condition\
+    \ is true, proceed; or else end the loop.\nStep 2: Run the code in block.\nStep\
+    \ 3: Go to Step 1.\n\n**Do while loop**\n\n```\ndo {\n  // run this code in block\n\
+    \  i++;\n} while (i<3);\n```\n\nStep 1: Run the code in block.\nStep 2: If the\
+    \ condition is true, proceed; or else end the loop.\nStep 3: Go to Step 1."
+  mdcn: "\n# 七种（7）类型\n\n1. String\n2. Number\n3. Boolean\n4. Null\n5. Undefined\n\
+    6. Symbol\n7. Object\n   - Array\n   - Function\n\n```\n\"Any text\"\n123.45\n\
+    true or false\nnull\nundefined\nSymbol('something')\n{ key: 'value' }\n[1, \"\
+    text\", false]\nfunction name() { }\n```\n\n# 基础词汇\n\n**Variable（变量）**\n对值的命名引用就是变量。\n\
+    \n**Operator（运算符）**\n运算符是执行值和变量操作的保留字。\n示例：+ - = * in === typeof != ...\n\n```\n\
+    var a = 7 + \"2\";\n```\n\n**Statement（语句）**\n完成一项任务的一组单词、数字和运算符。\n\n**Keyword\
+    \ / reserved word（关键字 / 保留字）**\n作为编程语言词汇一部分的任何单词称为关键字（又称保留字）。\n示例：var = + if for...\n\
+    \n**Expression（表达式）**\n一个引用、值，或引用与值通过运算符组合后产生单一值的结果。\n\n**注意：** var、let 和 const\
+    \ 都是声明变量的有效关键字。它们之间的区别在本速查表第 7 页有介绍。\n\n# Object（对象）\n\n对象是 JavaScript 中的一种数据类型，用于以简单的键值对组合存储数据。就这么简单。\n\
+    \n**Key（键）**\n这些是 user 对象中的键。\n\n```\nvar user = {\n  name: \"Aziz Ali\",\n  yearOfBirth:\
+    \ 1988,\n  calculateAge: function(){\n    // some code to calculate age\n  }\n\
+    }\n```\n\n**Value（值）**\n这些是 user 对象中对应键的值。\n\n**Method（方法）**\n如果某个键的值是函数，则称之为方法。\n\
+    \n# Function（函数）\n\n函数就是将一组代码打包在一个区块中。这组代码**只有**在函数被调用时才会运行。函数可以将代码组织成区块，并实现代码复用。\n\
+    \n使用函数**只有**两个部分：（1）声明/定义函数，以及（2）使用/运行函数。\n\n# 函数名称\n\n就这么简单，就是给函数起个名字。提示：让函数名称具有描述性，说明函数的功能。\n\
+    \n# Return（返回，可选）\n\n函数可以选择性地\"吐出\"或\"返回\"一个值，在它被调用时。一旦函数返回，函数内部将不再执行后续代码。\n\n\
+    ```\n// 函数声明 / 函数语句\nfunction someName(param1, param2){\n\n    // 根据需要编写的代码...\n\
+    \    var a = param1 + \"love\" + param2;\n    return a;\n}\n\n// 调用（运行 / 执行）函数\n\
+    someName(\"Me\", \"You\")\n```\n\n# 调用函数\n\n调用、呼叫或运行函数都是同一个意思。当我们写下函数名称，在本例中是\
+    \ someName，后跟括号符号 ()，像这样 someName()，函数内部的代码就会被执行。\n\n# 向函数传递参数（可选）\n\n在调用函数时，可以向函数代码传递参数。\n\
+    \n# Parameters / Arguments（参数，可选）\n\n函数可以选择性地接收参数（又称实参）。函数随后可以在其代码中使用这些信息。\n\n\
+    # 代码块\n\n花括号 { ... } 内的任何代码称为\"代码区块\"、\"代码块\"或简称\"块\"。这个概念不仅限于函数。\"if 语句\"、\"\
+    for 循环\"和其他语句也会使用代码块。\n\n# 变量与作用域相关词汇\n\n**Variable Declaration（变量声明）**\n创建变量。\n\
+    \n**Scope（作用域）**\n变量存在的范围。\n\n```\nvar a;\n```\n\n```\nvar a = \"global\";\n```\n\
+    \n**Variable Initialization（变量初始化）**\n为变量赋予初始值。\n\n**Global scope（全局作用域）**\n最外层的作用域称为全局作用域。\n\
+    \n```\na = 12;\n```\n\n```\nfunction first(){\n  var a = \"fresh\";\n\n  function\
+    \ second(){\n    console.log(a);\n  }\n}\n```\n\n**Functional scope（函数作用域）**\n\
+    函数内部的任何变量都处于该函数的作用域中。\n\n**Variable Assignment（变量赋值）**\n为变量赋值。\n\n```\na = \"\
+    me\";\n```\n\n**Lexical Environment (Lexical scope)（词法环境 / 词法作用域）**\n变量或函数声明的物理位置（作用域）就是其词法环境（词法作用域）。\n\
+    \n**Scope chain（作用域链）**\n作用域的嵌套层级称为作用域链。JS 引擎会在作用域链中向上查找变量（在其祖先作用域中查找，直到找到）。\n\
+    \n**Hoisting（提升）**\n变量会自动声明在函数顶部，并在运行时才初始化。\n\n```\nconsole.log(a);\nvar a = \"\
+    me\";\n```\n\n**规则：**\n（1）外层作用域中的变量可以在嵌套作用域中访问；但嵌套作用域中的变量**不能**被外层作用域访问。（又称私有变量。）\n\
+    \n（2）变量从其词法环境中获取。\n\n# JavaScript 速查表\n\n# 6 运算符\n\nJavaScript 运算符完整列表 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators\n\
+    \n运算符是执行值和变量操作的保留字。\n\n**Arithmetic（算术）**\n+ 加\n- 减\n* 乘\n/ 除\n% 取余\n** 指数\n\n\
+    **Relational / Comparison（关系 / 比较）**\n>= 大于或等于\n<= 小于或等于\n!= 强制转换后不相等\n!== 不相等\n\
+    \n**Operator Precedence（运算符优先级）**\n当表达式中使用多个运算符时，\"运算符优先级\"决定哪个运算符会先执行。优先级越高，越早执行。\n\
+    \n**Assignment（赋值）**\n= 赋值\n+= 加后赋值\n-= 减后赋值\n*= 乘后赋值\n\n**Increment / Decrement（递增\
+    \ / 递减）**\n++ 后缀递增\n-- 后缀递减\n\n++ 前缀递增\n-- 前缀递减\n\n**Operator Associativity（运算符结合性）**\n\
+    当多个运算符优先级相同时，\"结合性\"决定代码将按哪个方向解析。\n\n运算符优先级和结合性表见：\nhttp://bit.ly/operatortable\n\
+    \n**Logical（逻辑）**\n|| 或\n&& 与\n\n**Others（其他）**\ntypeof\ninstanceof\n()\n...spread-operator\n\
+    .\n.[.]\nnew\ndelete\n(.. ? .. : ..)\n\n# 7 Coercion（强制转换）\n\n当尝试比较不同的\"类型\"时，JavaScript\
+    \ 引擎会尝试将一种类型转换为另一种类型，以便比较两个值。\n\n类型强制转换优先级：\n1. String\n2. Number\n3. Boolean\n\
+    \n**强制转换实例**\n这说得通吗？\n\n**Equality（相等性）**\n=== 相等\n== 带强制转换的相等\n\n**Conversion（转换）**\n\
+    + 转换为数字\n- 转换为数字后取反\n! 转换为布尔值后取反\n\n```\n2 + \"7\";  // \"27\"\ntrue - 5  // -4\n\
+    ```\n\n# 条件语句\n\n条件允许程序仅在满足特定条件时运行特定代码。例如，假设我们有一个购物应用。我们可以告诉程序，如果购物车为空，则隐藏\"结账\"\
+    按钮。\n\n**If-else Statement（if-else 语句）**：如果满足某个条件，就运行特定代码。如果不满足条件，则运行 \"else\"\
+    \ 区块中的代码（如果有）。\n\n```\nif (a > 0) {\n    // run this code\n} else if (a < 0) {\n\
+    \    // run this code\n} else {\n    // run this code\n}\n```\n\n# Truthy / Falsy（真值\
+    \ / 假值）\n\nJavaScript 中有某些值，当被强制转换为布尔值时返回 true。这类值称为 **truthy（真值）**。另一方面，有些值被强制转换为布尔值时返回\
+    \ false。这些值称为 **falsy（假值）**。\n\n**Switch Statement（switch 语句）**：接收单个表达式，并运行表达式匹配的\
+    \ \"case\" 中的代码。**\"break\"** 关键字用于结束 switch 语句。\n\n```\nswitch (expression) {\n\
+    \    case choice1:\n        // run this code\n        break;\n    case choice2:\n\
+    \        // run this code\n        break;\n    default:\n        // run this code\n\
+    }\n```\n\n| Truthy Values（真值） | Falsy Values（假值） |\n| :--- | :--- |\n| true |\
+    \ false |\n| \"text\" | \" \" |\n| 72 | 0 |\n| -72 | -0 |\n| Infinity | NaN |\n\
+    | -Infinity | null |\n| {} | undefined |\n| [] | |\n\n**Ternary Operator（三元运算符）：**\
+    \ 如果表达式为真值，则返回第一个值，否则返回第二个值。\n\n```\n(expression)? ifTrue: ifFalse;\n```\n\n#\
+    \ 循环语句\n\n循环用于重复执行某些操作。例如，假设我们从数据库中获取了 50 篇博客文章，想要将它们的标题打印到页面上。与其将代码写 50 次，不如使用循环来实现。\n\
+    \n**For loop（for 循环）**\n\n```\nfor (initial-expression; condition; second-expression){\n\
+    \  // run this code in block\n}\n```\n\n步骤 1：执行初始表达式。\n步骤 2：检查条件是否满足。如果满足，继续；否则结束循环。\n\
+    步骤 3：运行区块中的代码。\n步骤 4：执行第二个表达式。\n步骤 5：返回步骤 2。\n\n**While loop（while 循环）**\n\n```\n\
+    while (i<3){\n  // run this code in block\n  i++;\n}\n```\n\n步骤 1：如果条件为真，继续；否则结束循环。\n\
+    步骤 2：运行区块中的代码。\n步骤 3：返回步骤 1。\n\n**Do while loop（do while 循环）**\n\n```\ndo {\n\
+    \  // run this code in block\n  i++;\n} while (i<3);\n```\n\n步骤 1：运行区块中的代码。\n\
+    步骤 2：如果条件为真，继续；否则结束循环。\n步骤 3：返回步骤 1。\n"
+  merge: -1
+  raw:
+  - "[PAGE 0]\n\n# Seven (7) Types\n\n+   1. String\n2. Number\n3. Boolean\n4. Null\n\
+    5. Undefined\n6. Symbol\n7. Object\n   - Array\n   - Function\n\n```\n\"Any text\"\
+    \n123.45\ntrue or false\nnull\nundefined\nSymbol('something')\n{ key: 'value'\
+    \ }\n[1, \"text\", false]\nfunction name() { }\n```\n\n# Basic Vocabulary\n\n\
+    **Variable**\nA named reference to a value is a variable.\n\n**Operator**\nOperators\
+    \ are reserved-words that perform action on values and variables.\nExamples: +\
+    \ - = * in === typeof != ...\n\n```\nvar a = 7 + \"2\";\n```\n\n**Statement**\n\
+    A group of words, numbers and operators that do a task is a statement.\n\n**Keyword\
+    \ / reserved word**\nAny word that is part of the vocabulary of the programming\
+    \ language is called a keyword (a.k.a reserved word).\nExamples: var = + if for...\n\
+    \n**Expression**\nA reference, value or a group of reference(s) and value(s) combined\
+    \ with operator(s), which result in a single value.\n\n**Note:** var, let & const\
+    \ are all valid keywords to declare variables. The difference between them is\
+    \ covered on page 7 of this cheatsheet.\n\n# Object\n\nAn object is a data type\
+    \ in JavaScript that is used to store a combination of data in a simple key-value\
+    \ pair. Thats it.\n\n**Key**\nThese are the keys in user object.\n\n```\nvar user\
+    \ = {\n  name: \"Aziz Ali\",\n  yearOfBirth: 1988,\n  calculateAge: function(){\n\
+    \    // some code to calculate age\n  }\n}\n```\n\n**Value**\nThese are the values\
+    \ of the respective keys in user object.\n\n**Method**\nIf a key has a function\
+    \ as a value, its called a method."
+  - "[PAGE 1]\n\n# ④ Function\n\nA function is simply a bunch of code bundled in a\
+    \ section. This bunch of code ONLY runs when the function is called. Functions\
+    \ allow for organizing code into sections and code reusability.\n\nUsing a function\
+    \ has ONLY two parts. (1) Declaring/defining a function, and (2) using/running\
+    \ a function.\n\n# Name of function\n\nThats it, its just a name you give to your\
+    \ function. Tip: Make your function names descriptive to what the function does.\n\
+    \n# Return (optional)\n\nA function can optionally spit-out or \"return\" a value\
+    \ once its invoked. Once a function returns, no further lines of code within the\
+    \ function run.\n\n```\n// Function declaration / Function statement\nfunction\
+    \ someName(param1, param2){\n\n    // bunch of code as needed...\n    var a =\
+    \ param1 + \"love\" + param2;\n    return a;\n}\n\n// Invoke (run / call) a function\n\
+    someName(\"Me\", \"You\")\n```\n\n# Invoke a function\n\nInvoking, calling or\
+    \ running a function all mean the same thing. When we write the function name,\
+    \ in this case someName, followed by the brackets symbol () like this someName(),\
+    \ the code inside the function gets executed.\n\n# Passing parameter(s) to a function\
+    \ (optional)\n\nAt the time of invoking a function, parameter(s) may be passed\
+    \ to the function code.\n\n# Parameters / Arguments (optional)\n\nA function can\
+    \ optionally take parameters (a.k.a arguments). The function can then use this\
+    \ information within the code it has.\n\n# Code block\n\nAny code within the curly\
+    \ braces { ... } is called a \"block of code\", \"code block\" or simply \"block\"\
+    . This concept is not just limited to functions. \"if statements\", \"for loops\"\
+    \ and other statements use code blocks as well."
+  - "[PAGE 2]\n\n# # Vocabulary around variables and scope\n\n**Variable Declaration**\n\
+    The creation of the variable.\n\n**Scope**\nThe limits in which a variable exists.\n\
+    \n```\nvar a;\n```\n\n```\nvar a = \"global\";\n```\n\n**Variable Initialization**\n\
+    The initial assignment of value to a variable.\n\n**Global scope**\nThe outer\
+    \ most scope is called the Global scope.\n\n```\na = 12;\n```\n\n```\nfunction\
+    \ first(){\n  var a = \"fresh\";\n\n  function second(){\n    console.log(a);\n\
+    \  }\n}\n```\n\n**Functional scope**\nAny variables inside a function is in scope\
+    \ of the function.\n\n**Variable Assignment**\nAssigning value to a variable.\n\
+    \n```\na = \"me\";\n```\n\n**Lexical Environment (Lexical scope)**\nThe physical\
+    \ location (scope) where a variable or function is declared is its lexical environment\
+    \ (lexical scope).\n\n**Scope chain**\nThe nested hierarchy of scope is called\
+    \ the scope chain. The JS engine looks for variables in the scope chain upwards\
+    \ (it its ancestors, until found)\n\n**Hoisting**\nVariables are declared at the\
+    \ top of the function automatically, and initialized at the time they are run.\n\
+    \n```\nconsole.log(a);\nvar a = \"me\";\n```\n\n**Rule:**\n(1) Variables in the\
+    \ outer scope can be accessed in a nested scope; But variables inside a nested\
+    \ scope CANNOT be accessed by the outer scope. (a.k.a private variables.)\n\n\
+    (2) Variables are picked up from the lexical environment."
+  - '[PAGE 3]
+
+
+    # JavaScript Cheatsheet
+
+
+    # 6 Operators
+
+
+    Full list of JavaScript operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+
+
+    Operators are reserved-words that perform action on values and variables.
+
+
+    Arithmetic
+
+    .. + .. Add
+
+    .. - .. Subtract
+
+    .. * .. Multiply
+
+    .. / .. Divide
+
+    .. % .. Remainder
+
+    .. ** .. Exponential
+
+
+    Relational / Comparison
+
+    .. >= .. Greater than or equal to
+
+    .. <= .. Less than or equal to
+
+    .. != .. Not equal after coercion
+
+    .. !== .. Not equal
+
+
+    Operator Precedence
+
+    Given multiple operators are used in an expression, the "Operator Precedence"
+    determines which operator will be executed first. The higher the precedence, the
+    earlier it will get executed.
+
+
+    Assignment
+
+    .. = .. Assign value
+
+    .. += .. Add then assign
+
+    .. -= .. Subtract then assign
+
+    .. *= .. Multiply then assign
+
+
+    Increment / Decrement
+
+    ..++ Postfix increment
+
+    ..-- Postfix decrement
+
+
+    ++.. Prefix increment
+
+    --.. Prefix increment
+
+
+    Operator Associativity
+
+    Given multiple operators have the same precedence, "Associativity" determines
+    in which direction the code will be parsed.
+
+
+    See the Operator Precedence and Associativity table here:
+
+    http://bit.ly/operatortable
+
+
+    Logical
+
+    .. || .. Or
+
+    .. && .. And
+
+
+    Others
+
+    typeof ..
+
+    .. instanceof ..
+
+    (..)
+
+    ...spread-operator
+
+    .
+
+    ..[.]
+
+    new ..
+
+    delete ..
+
+    (.. ? .. : ..)
+
+
+    # 7 Coercion
+
+
+    When trying to compare different "types", the JavaScript engine attempts to convert
+    one type into another so it can compare the two values.
+
+
+    Type coercion priority order:
+
+    1. String
+
+    2. Number
+
+    3. Boolean
+
+
+    Coercion in action
+
+    Does this make sense?
+
+
+    Equality
+
+    .. === .. Equality
+
+    .. == .. Equality with coercion
+
+
+    Conversion
+
+    + .. Convert to number
+
+    - .. Convert to number then negate it
+
+    ! .. Convert to boolean then inverse it
+
+
+    ```
+
+    2 + "7";  // "27"
+
+    true - 5  // -4
+
+    ```'
+  - "[PAGE 4]\n\n# # ⑧ Conditional Statements\n\nConditional statements allow our\
+    \ program to run specific code only if certain conditions are met. For instance,\
+    \ lets say we have a shopping app. We can tell our program to hide the \"checkout\"\
+    \ button if the shopping cart is empty.\n\n**If -else Statement**: Run certain\
+    \ code, \"if\" a condition is met. If the condition is not met, the code in the\
+    \ \"else\" block is run (if available.)\n\n```\nif (a > 0) {\n    // run this\
+    \ code\n} else if (a < 0) {\n    // run this code\n} else {\n    // run this code\n\
+    }\n```\n\n# # ⑨ Truthy / Falsy\n\nThere are certain values in JavaScript that\
+    \ return true when coerced into boolean. Such values are called **truthy** values.\
+    \ On the other hand, there are certain values that return false when coerced to\
+    \ boolean. These values are knows as **falsy** values.\n\n**Switch Statement**:\
+    \ Takes a single expression, and runs the code of the \"case\" where the expression\
+    \ matches. The **\"break\"** keyword is used to end the switch statement.\n\n\
+    ```\nswitch (expression) {\n    case choice1:\n        // run this code\n    \
+    \    break;\n    case choice1:\n        // run this code\n        break;\n   \
+    \ default:\n        // run this code\n}\n```\n\n| Truthy Values | Falsy Values\
+    \ |\n| :--- | :--- |\n| true | false |\n| \"text\" | \" \" |\n| 72 | 0 |\n| -72\
+    \ | -0 |\n| Infinity | NaN |\n| -Infinity | null |\n| {} | undefined |\n| [] |\
+    \ |\n\n**Ternary Operator:** A ternary operator returns the first value if the\
+    \ expression is truthy, or else returns the second value.\n\n```\n(expression)?\
+    \ ifTrue: ifFalse;\n```"
+  - "[PAGE 5]\n\n# ⑩ Loop Statements\n\nLoops are used to do something repeatedly.\
+    \ For instance lets say we get a list of 50 blog posts from the database and we\
+    \ want to print their titles on our page. Instead of writing the code 50 times,\
+    \ we would instead use a loop to make this happen.\n\nFor loop\n\n```\nfor (initial-expression;\
+    \ condition; second-expression){\n  // run this code in block\n}\n```\n\n+   Step\
+    \ 1: Run the initial expression.\nStep 2: Check if condition meets. If condition\
+    \ meets, proceed; or else end the loop.\nStep 3: Run the code in block.\nStep\
+    \ 4: Run the second-expression.\nStep 5: Go to Step 2.\n\nWhile loop\n\n```\n\
+    while (i<3){\n  // run this code in block\n  i++;\n}\n```\n\n+   Step 1: If the\
+    \ condition is true, proceed; or else end the loop.\nStep 2: Run the code in block.\n\
+    Step 3: Go to Step 1.\n\nDo while loop\n\n```\ndo {\n  // run this code in block\n\
+    \  i++;\n} while (i<3);\n```\n\n+   Step 1: Run the code in block.\nStep 2: If\
+    \ the condition is true, proceed; or else end the loop.\nStep 3: Go to Step 1."
+- md: " ## Ways to Create a Variable\n\nThere are 3 ways to create variables in JavaScript:\n\
+    `var`, `let` and `const`. Variables created with `var` are in scope of the function\
+    \ (or global if declared in the global scope); `let` variables are block scoped;\
+    \ and `const` variables are like `let` plus their values cannot be re-assigned.\n\
+    \n```\nvar a = \"some value\";    // functional or global scoped\nlet b = \"some\
+    \ value\";    // block scoped\nconst c = \"some value\";  // block scoped + cannot\
+    \ get new value\n```\n\n## Event Loop\n\n![](img/100a2f06642446eb339b2146e2383d7b_6_0.png)\n\
+    \n## 13 Browser\n\nA web browser is a pretty advance piece of software which contains\
+    \ a lot of components. Many of these components are accessible to a web developer,\
+    \ so we can create complex web apps. At the same time a lot of components are\
+    \ kept out of reach of the web developer for security purposes. For instance,\
+    \ we as web developers can get access to the user's location, but we cannot get\
+    \ access to the user's saved passwords or browsing history. **Let's see below\
+    \ how a browser is structured:**\n\n![](img/100a2f06642446eb339b2146e2383d7b_7_0.png)\n\
+    \n## DOM - Document Object Model\n\n### Query/Get Elements\n\n```\n// Preferred\
+    \ way:\ndocument.querySelector('css-selectors')\ndocument.querySelectorAll('css-selectors',\
+    \ ...)\n```\n\n```\n// Old ways, and still work:\ndocument.getElementsByTagName('element-name')\n\
+    document.getElementsByClassName('class-name')\ndocument.getElementById('id')\n\
+    ```\n\n### Create / clone Element\n\n```\ndocument.createElement('div')\ndocument.createTextNode('some\
+    \ text here')\nnode.cloneNode()\nnode.textContent = 'some text here'\n```\n\n\
+    ### Add node to document\n\n```\nparentNode.appendChild(nodeToAdd)\nparentNode.insertBefore(nodeToAdd,\
+    \ childNode)\n```\n\n### Get Element Details\n\n```\nnode.nextSibling\nnode.firstChild\n\
+    node.lastChild\nnode.parentNode\nnode.childNodes\nnode.children\n```\n\n### Modify\
+    \ Element\n\n```\nnode.style.color = 'red'\nnode.style.padding = '10px',\nnode.style.fontSize\
+    \ = '200%'\n\nnode.setAttribute('attr-name', 'attr-value')\nnode.removeAttribute('attr-name')\n\
+    ```\n\n### Get and Modify Element Class\n\n```\nnode.classList\nnode.classList.add('class-name',\
+    \ ...)\nnode.classList.remove('class-name', ...)\nnode.classList.toggle('class-name')\n\
+    node.classList.contains('class-name')\nnode.classList.replace('old', 'new')\n\
+    ```\n\n### Remove Node\n\n```\nparentNode.removeChild(nodeToRemove)\n// Hack to\
+    \ remove self\nnodeToRemove.parentNode.removeChild(nodeToRemove)\n```\n\n### What\
+    \ is a \"Node\"?\n(in the context of DOM)\n\n**Node:** Every item in the DOM tree\
+    \ is called a node. There are two types of node - A text node, and an element\
+    \ node:\n\n**Text Node:** Node that has text.\n\n**Element Node:** Node that has\
+    \ an element.\n\n**Child Node:** A node which is a child of another node.\n\n\
+    **Parent Node:** A node which has one LIKE child.\n\n**Descendent Node:** A node\
+    \ which is nested deep in the tree.\n\n**Sibling Node:** A node that share the\
+    \ same parent node.\n\n### Events\n\n```\nnode.addEventListener('event-name',\
+    \ callback-function)\nnode.removeEventListener('event-name', callback-function)\n\
+    ```\n\nList of Events: https://developer.mozilla.org/en-US/docs/Web/Events\nor\
+    \ google \"Mozilla event reference\"\n\n## Auto Inherited Properties\n\nWhen you\
+    \ create a value in JavaScript, certain properties are automatically inherited\
+    \ by this value. This magic happens because every **type** has a **constructor**\
+    \ with a special property called **prototype**. All methods on the **prototype**\
+    \ gets automatically inherited by the new value created for that **type**. Take\
+    \ a look at some of of these methods on the right.\n\n```\nconst thing = \"some\
+    \ text\";\n```\n\n```\nconst num = 123.45;\n```\n\nGoogle 'Mozilla String' to\
+    \ find the docs\n\nGoogle 'Mozilla Number' to find the docs\n\nGoogle 'Mozilla\
+    \ Array' to find the docs\n\nGoogle 'Mozilla Boolean' to find the docs\n\n- `.concat()`\n\
+    - `.charAt()`\n- `.indexOf()`\n- `.startsWith()`\n- `.endsWith()`\n- `.split()`\n\
+    - `.slice()`\n\n- `.toFixed()`\n- `.toPrecision()`\n- `.toString()`\n\n- `.filter()`\n\
+    - `.map()`\n- `.find()`\n- `.every()`\n- `.some()`\n- `.sort()`\n- `.slice()`\n\
+    - `.splice()`\n- `.reduce()`\n- `.forEach()`\n\n- `.toString()`\n\n## Built-in\
+    \ Objects\n\nJavaScript gives us a ton of useful built-in objects to make our\
+    \ lives easier. The **Date** and **Math** objects are very useful on a regular\
+    \ basis. Take a look at some of their features on the right.\n\nFull list of builtin\
+    \ objects in JavaScript visit https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects\n\
+    \nGoogle 'Mozilla Math' to find the docs\n\nGoogle 'Mozilla Date' to find the\
+    \ docs\n\n```\nMath.pow(2, 3) // 8\nMath.sqrt(16) // 4\nMath.min(7, 8, 6) // 6\n\
+    Math.max(7, 8, 6) // 8\nMath.floor(123.45) // 123\nMath.ceil(123.45) // 124\n\
+    Math.round(123.45) // 123\nMath.random() // 0.45..\n```\n\n```\nconst d = new\
+    \ Date('9/17/1988');\nd.getDay()\nd.getFullYear()\nd.getMonth()\n\nDate.now()\n\
+    Milliseconds since Jan 1, 1970\n```\n\n## 17 Promise\n\n**What is a Promise?**\n\
+    \nPromise is an object that provides a useful construct when dealing with asynchronous\
+    \ tasks. A promise is called a \"Promise\" because it guarantees it will run upon\
+    \ success or failure of that task.\n\nWorking with a promise consists of two parts;\
+    \ (A) Creating a promise, and (B) Using a promise.\n\n**What is an Async task?**\n\
+    \nAn async task is one in which a third-party process is doing the task.\n\nExamples:\n\
+    \n- Requesting/sending data to a database\n- Requesting/sending data via HTTP\
+    \ protocol\n- Working with the file system of the computer\n\n```\n// (A) Create\
+    \ a promise\nconst p = new Promise((resolve, reject)=>{\n  // Do some async task\n\
+    \  setTimeout(()=>{\n    if(condition){\n      resolve('Successful login');\n\
+    \    } else {\n      reject('Login failed');\n    }\n  }, 2000)\n})\n```\n\n```\n\
+    // (B) Using a promise\np.then((res)=>{\n  console.log(res)\n})\n.catch((err)=>{\n\
+    \  console.log(err)\n})\n```\n\n**Note:** 90% of the time you will be working\
+    \ with pre-existing promises. The step of \"Creating a promise\" would be done\
+    \ for you either by a library, framework or environment you are using. Examples\
+    \ of promises: fetch\n\n## 18 'this' keyword\n\nThe this keyword is used inside\
+    \ a function. The this keyword is merely a reference to another object.\n\nWhat\
+    \ the this keyword refers to depends on the scenario or the way the function is\
+    \ implemented. Here are the 3 scenarios to remember.\n\n### Scenario #1: this\
+    \ inside a function\n\nThe this keyword points to global object.\n\n### Scenario\
+    \ #2: this inside a method\n\nThe this keyword points to the object the method\
+    \ is in.\n\n### Scenario #3: When function is run with call, bind or apply\n\n\
+    When a function is called using the .call(param) .bind(param) or .apply(param)\
+    \ method, the first param become the object that the this keyword refers to.\n\
+    \n**Important Note:**\nIn the browser, global is the window object.\nIn Node.js,\
+    \ global is the global object.\n\n```\nvar name = \" Fatema\";\n\nfunction fun(){\n\
+    \    // some code here\n    console.log(this.name);\n}\n\nconst user = {\n   \
+    \ name: \"Marium\",\n    yearOfBirth: 1999,\n    calcAge: function(){\n      \
+    \  const currentYear = (new Date()).getFullYear();\n        return currentYear\
+    \ - this.yearOfBirth;\n    }\n}\n\nfun();           // 'this' is global. Logs\
+    \ \"Fatema\"\nuser.calcAge();  // 'this' is the user object\nfun.call(user); \
+    \ // 'this' is the user object. Logs \"Marium\"\n```\n\n## 19 Constructor\n\n\
+    **What is a constructor?**\nIn JavaScript, a constructor is a special function\
+    \ that acts as a mold to create new objects.\n\nThere are numerous built-in constructors\
+    \ in JavaScript, such as `String`, `Number`, `Promise`, `Date`, `Array`, `Object`,\
+    \ and many more.\n\nWe can create our own custom constructors if need be.\n\n\
+    A great place to use a constructor is when you are creating multiple objects of\
+    \ the same kind.\n\nThere are two parts to working with a constructor:\n\n1. **Defining\
+    \ a constructor**\n   When creating a custom constructor\n\n2. **Using a constructor**\n\
+    \   with the \"new\" keyword\n\n```\n// Defining a Constructor\nfunction Car(make,\
+    \ model, year){\n  this.make = make;\n  this.model = model;\n  this.year = year;\n\
+    \n  this.setMiles = function(miles){\n    this.miles = miles\n    return miles;\n\
+    \  }\n}\n\n// Using a constructor\nconst car1 = new Car('Toyota', 'Prius', 2016);\n\
+    const car2 = new Car('Hyundai', 'Sonata', 2018);\n\n// Adding method to the constructor\
+    \ prototype\nCar.prototype.age = function(){\n  return (new Date()).getFullYear()\
+    \ - this.year;\n}\n\ncar1.age(); // 2\n```\n\n> **Rule of thumb:**\nA) Set properties\
+    \ inside a constructor.\n\nB) Set methods inside the prototype property.\n\n>\
+    \ **\"new\" keyword**\nThe new keyword is used to create a new object (instance)\
+    \ from the constructor.\n\n> **\"prototype\" property**\nprototype is a special\
+    \ property on every object. Properties (methods or values) attached to the prototype\
+    \ property get inherited to every instance of the constructor."
+  mdcn: "\n ## 创建变量的方式\n\n在 JavaScript 中有 3 种创建变量的方式：\n`var`、`let` 和 `const`。使用 `var`\
+    \ 创建的变量是函数作用域（如果在全局作用域中声明则为全局作用域）；`let` 变量是块级作用域；`const` 变量类似于 `let`，但它们的值不能被重新赋值。\n\
+    \n```\nvar a = \"some value\";    // 函数或全局作用域\nlet b = \"some value\";    // 块级作用域\n\
+    const c = \"some value\";  // 块级作用域 + 不能被赋予新值\n```\n\n## 事件循环\n\n![](img/100a2f06642446eb339b2146e2383d7b_6_0.png)\n\
+    \n## 13 浏览器\n\n网络浏览器是一款相当先进的软件，包含许多组件。其中许多组件对 Web 开发人员是可访问的，因此我们可以创建复杂的 Web 应用程序。同时，出于安全目的，许多组件对\
+    \ Web 开发人员是不可访问的。例如，作为 Web 开发人员，我们可以获取用户的*位置*，但无法访问用户保存的密码或浏览历史记录。**下面我们来看看浏览器的结构：**\n\
+    \n![](img/100a2f06642446eb339b2146e2383d7b_7_0.png)\n\n## DOM - 文档对象模型\n\n###\
+    \ 查询/获取元素\n\n```\n// 推荐方式：\ndocument.querySelector('css-selectors')\ndocument.querySelectorAll('css-selectors',\
+    \ ...)\n```\n\n```\n// 旧方式，仍然有效：\ndocument.getElementsByTagName('element-name')\n\
+    document.getElementsByClassName('class-name')\ndocument.getElementById('id')\n\
+    ```\n\n### 创建 / 克隆元素\n\n```\ndocument.createElement('div')\ndocument.createTextNode('some\
+    \ text here')\nnode.cloneNode()\nnode.textContent = 'some text here'\n```\n\n\
+    ### 将节点添加到文档\n\n```\nparentNode.appendChild(nodeToAdd)\nparentNode.insertBefore(nodeToAdd,\
+    \ childNode)\n```\n\n### 获取元素详情\n\n```\nnode.nextSibling\nnode.firstChild\nnode.lastChild\n\
+    node.parentNode\nnode.childNodes\nnode.children\n```\n\n### 修改元素\n\n```\nnode.style.color\
+    \ = 'red'\nnode.style.padding = '10px',\nnode.style.fontSize = '200%'\n\nnode.setAttribute('attr-name',\
+    \ 'attr-value')\nnode.removeAttribute('attr-name')\n```\n\n### 获取和修改元素类\n\n```\n\
+    node.classList\nnode.classList.add('class-name', ...)\nnode.classList.remove('class-name',\
+    \ ...)\nnode.classList.toggle('class-name')\nnode.classList.contains('class-name')\n\
+    node.classList.replace('old', 'new')\n```\n\n### 移除节点\n\n```\nparentNode.removeChild(nodeToRemove)\n\
+    // 移除自身的技巧\nnodeToRemove.parentNode.removeChild(nodeToRemove)\n```\n\n### \"节点\"\
+    是什么？\n（在 DOM 的上下文中）\n\n**节点：** DOM 树中的每个项目都称为节点。节点有两种类型——文本节点和元素节点：\n\n**文本节点：**\
+    \ 包含文本的节点。\n\n**元素节点：** 包含元素的节点。\n\n**子节点：** 作为另一个节点的子节点的节点。\n\n**父节点：** 拥有一个子节点的节点。\n\
+    \n**后代节点：** 嵌套在树深处的节点。\n\n**兄弟节点：** 共享同一父节点的节点。\n\n### 事件\n\n```\nnode.addEventListener('event-name',\
+    \ callback-function)\nnode.removeEventListener('event-name', callback-function)\n\
+    ```\n\n事件列表：https://developer.mozilla.org/en-US/docs/Web/Events\n或在 Google 搜索\
+    \ \"Mozilla event reference\"\n\n## 自动继承的属性\n\n当你在 JavaScript 中创建一个值时，某些属性会自动被该值继承。这种神奇的现象是因为每个**类型**都有一个**构造函数**，其中包含一个名为\
+    \ **prototype** 的特殊属性。**原型**上的所有方法都会自动被该**类型**创建的新值继承。看看右侧的一些方法。\n\n```\nconst\
+    \ thing = \"some text\";\n```\n\n```\nconst num = 123.45;\n```\n\nGoogle 搜索 'Mozilla\
+    \ String' 查找文档\n\nGoogle 搜索 'Mozilla Number' 查找文档\n\nGoogle 搜索 'Mozilla Array'\
+    \ 查找文档\n\nGoogle 搜索 'Mozilla Boolean' 查找文档\n\n- `.concat()`\n- `.charAt()`\n-\
+    \ `.indexOf()`\n- `.startsWith()`\n- `.endsWith()`\n- `.split()`\n- `.slice()`\n\
+    \n- `.toFixed()`\n- `.toPrecision()`\n- `.toString()`\n\n- `.filter()`\n- `.map()`\n\
+    - `.find()`\n- `.every()`\n- `.some()`\n- `.sort()`\n- `.slice()`\n- `.splice()`\n\
+    - `.reduce()`\n- `.forEach()`\n\n- `.toString()`\n\n## 内置对象\n\nJavaScript 为我们提供了大量有用的内置对象，让我们的生活更轻松。**Date**\
+    \ 和 **Math** 对象在日常使用中非常有用。看看右侧它们的一些特性。\n\nJavaScript 内置对象的完整列表，请访问 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects\n\
+    \nGoogle 搜索 'Mozilla Math' 查找文档\n\nGoogle 搜索 'Mozilla Date' 查找文档\n\n```\nMath.pow(2,\
+    \ 3) // 8\nMath.sqrt(16) // 4\nMath.min(7, 8, 6) // 6\nMath.max(7, 8, 6) // 8\n\
+    Math.floor(123.45) // 123\nMath.ceil(123.45) // 124\nMath.round(123.45) // 123\n\
+    Math.random() // 0.45..\n```\n\n```\nconst d = new Date('9/17/1988');\nd.getDay()\n\
+    d.getFullYear()\nd.getMonth()\n\nDate.now()\n自 1970 年 1 月 1 日以来的毫秒数\n```\n\n##\
+    \ 17 Promise（Promise）\n\n**什么是 Promise？**\n\nPromise 是一个在处理异步任务时提供有用构造的对象。Promise\
+    \ 被称为\"Promise\"，是因为它保证在该任务成功或失败时执行。\n\n使用 Promise 包括两个部分：（A）创建 Promise，和（B）使用\
+    \ Promise。\n\n**什么是异步任务？**\n\n异步任务是指由第三方进程执行的任务。\n\n示例：\n\n- 向数据库请求/发送数据\n- 通过\
+    \ HTTP 协议请求/发送数据\n- 操作计算机的文件系统\n\n```\n// (A) 创建 Promise\nconst p = new Promise((resolve,\
+    \ reject)=>{\n  // 执行一些异步任务\n  setTimeout(()=>{\n    if(condition){\n      resolve('Successful\
+    \ login');\n    } else {\n      reject('Login failed');\n    }\n  }, 2000)\n})\n\
+    ```\n\n```\n// (B) 使用 Promise\np.then((res)=>{\n  console.log(res)\n})\n.catch((err)=>{\n\
+    \  console.log(err)\n})\n```\n\n**注意：** 90% 的时间你会使用预先存在的 Promise。\"创建 Promise\"\
+    的步骤会由你使用的库、框架或环境为你完成。Promise 的示例：fetch\n\n## 18 'this' 关键字\n\nthis 关键字在函数内部使用。this\
+    \ 关键字仅仅是对另一个对象的引用。\n\nthis 关键字指向什么取决于场景或函数的实现方式。以下是 3 个需要记住的场景。\n\n### 场景 #1：函数内的\
+    \ this\n\nthis 关键字指向全局对象。\n\n### 场景 #2：方法内的 this\n\nthis 关键字指向方法所属的对象。\n\n###\
+    \ 场景 #3：使用 call、bind 或 apply 运行函数时\n\n当使用 .call(param) .bind(param) 或 .apply(param)\
+    \ 方法调用函数时，第一个参数成为 this 关键字所引用的对象。\n\n**重要提示：**\n在浏览器中，全局对象是 window 对象。\n在 Node.js\
+    \ 中，全局对象是 global 对象。\n\n```\nvar name = \" Fatema\";\n\nfunction fun(){\n    //\
+    \ 此处的一些代码\n    console.log(this.name);\n}\n\nconst user = {\n    name: \"Marium\"\
+    ,\n    yearOfBirth: 1999,\n    calcAge: function(){\n        const currentYear\
+    \ = (new Date()).getFullYear();\n        return currentYear - this.yearOfBirth;\n\
+    \    }\n}\n\nfun();           // 'this' 是全局的。输出 \"Fatema\"\nuser.calcAge();  //\
+    \ 'this' 是 user 对象\nfun.call(user);  // 'this' 是 user 对象。输出 \"Marium\"\n```\n\n\
+    ## 19 构造函数（Constructor）\n\n**什么是构造函数？**\n在 JavaScript 中，构造函数是一种特殊的函数，充当创建新对象的模具。\n\
+    \nJavaScript 中有许多内置构造函数，例如 `String`、`Number`、`Promise`、`Date`、`Array`、`Object`\
+    \ 等等。\n\n如果需要，我们可以创建自己的自定义构造函数。\n\n构造函数的一个绝佳用途是在创建多个相同类型的对象时。\n\n使用构造函数包括两个部分：\n\
+    \n1. **定义构造函数**\n   创建自定义构造函数时\n\n2. **使用构造函数**\n   使用 \"new\" 关键字\n\n```\n//\
+    \ 定义构造函数\nfunction Car(make, model, year){\n  this.make = make;\n  this.model\
+    \ = model;\n  this.year = year;\n\n  this.setMiles = function(miles){\n    this.miles\
+    \ = miles\n    return miles;\n  }\n}\n\n// 使用构造函数\nconst car1 = new Car('Toyota',\
+    \ 'Prius', 2016);\nconst car2 = new Car('Hyundai', 'Sonata', 2018);\n\n// 向构造函数原型添加方法\n\
+    Car.prototype.age = function(){\n  return (new Date()).getFullYear() - this.year;\n\
+    }\n\ncar1.age(); // 2\n```\n\n> **经验法则：**\nA) 在构造函数内设置属性。\n\nB) 在 prototype 属性内设置方法。\n\
+    \n> **\"new\" 关键字**\nnew 关键字用于从构造函数创建新对象（实例）。\n\n> **\"prototype\" 属性**\nprototype\
+    \ 是每个对象上的特殊属性。附加到 prototype 属性的属性（方法或值）会被继承到构造函数的每个实例。\n"
+  merge: 0
+  raw:
+  - '[PAGE 6]
+
+
+    # # Ways to create a variable
+
+
+    There are 3 ways to create variables in JavaScript:
+
+    `var`, `let` and `const`. Variables created with `var` are in scope of the function
+    (or global if declared in the global scope); `let` variables are block scoped;
+    and `const` variables are like `let` plus their values cannot be re-assigned.
+
+
+    ```
+
+    var a = "some value";    // functional or global scoped
+
+    let b = "some value";    // block scoped
+
+    const c = "some value";  // block scoped + cannot get new value
+
+    ```
+
+
+    # # Event Loop
+
+
+    ![](img/100a2f06642446eb339b2146e2383d7b_6_0.png)'
+  - '[PAGE 7]
+
+
+    # # 13 Browser
+
+
+    A web browser is a pretty advance piece of software which contains a lot of components.
+    Many of these components are accessible to a web developer, so we can create complex
+    web apps. At the same time a lot of components are kept out of reach of the web
+    developer for security purposes. For instance, we as web developers can get access
+    to the user''s location, but we cannot get access to the user''s saved passwords
+    or browsing history. **Let''s see below how a browser is structured:**
+
+
+    ![](img/100a2f06642446eb339b2146e2383d7b_7_0.png)'
+  - '[PAGE 8]
+
+
+    # DOM - Document Object Model
+
+
+    # Query/Get Elements
+
+
+    ```
+
+    // Preferred way:
+
+    document.querySelector(''css-selectors'')
+
+    document.querySelectorAll(''css-selectors'', ...)
+
+    ```
+
+
+    ```
+
+    // Old ways, and still work:
+
+    document.getElementsByTagName(''element-name'')
+
+    document.getElementsByClassName(''class-name'')
+
+    document.getElementById(''id'')
+
+    ```
+
+
+    # Create / clone Element
+
+
+    ```
+
+    document.createElement(''div'')
+
+    document.createTextNode(''some text here'')
+
+    node.cloneNode()
+
+    node.textContent = ''some text here''
+
+    ```
+
+
+    # Add node to document
+
+
+    ```
+
+    parentNode.appendChild(nodeToAdd)
+
+    parentNode.insertBefore(nodeToAdd, childNode)
+
+    ```
+
+
+    # Get Element Details
+
+
+    ```
+
+    node.nextSibling
+
+    node.firstChild
+
+    node.lastChild
+
+    node.parentNode
+
+    node.childNodes
+
+    node.children
+
+    ```
+
+
+    # Modify Element
+
+
+    ```
+
+    node.style.color = ''red''
+
+    node.style.padding = ''10px'',
+
+    node.style.fontSize = ''200%''
+
+
+    node.setAttribute(''attr-name'', ''attr-value'')
+
+    node.removeAttribute(''attr-name'')
+
+    ```
+
+
+    # Get and Modify Element Class
+
+
+    ```
+
+    node.classList
+
+    node.classList.add(''class-name'', ...)
+
+    node.classList.remove(''class-name'', ...)
+
+    node.classList.toggle(''class-name'')
+
+    node.classList.contains(''class-name'')
+
+    node.classList.replace(''old'', ''new'')
+
+    ```
+
+
+    # Remove Node
+
+
+    ```
+
+    parentNode.removeChild(nodeToRemove)
+
+    // Hack to remove self
+
+    nodeToRemove.parentNode.removeChild(nodeToRemove)
+
+    ```
+
+
+    # What is a "Node"?
+
+    (in the context of DOM)
+
+
+    **Node:** Every item in the DOM tree is called a node. There are two types of
+    node - A text node, and an element node:
+
+
+    **Text Node:** Node that has text.
+
+
+    **Element Node:** Node that has an element.
+
+
+    **Child Node:** A node which is a child of another node.
+
+
+    **Parent Node:** A node which has one LIKE child.
+
+
+    **Descendent Node:** A node which is nested deep in the tree.
+
+
+    **Sibling Node:** A node that share the same parent node.
+
+
+    # Events
+
+
+    ```
+
+    node.addEventListener(''event-name'', callback-function)
+
+    node.removeEventListener(''event-name'', callback-function)
+
+    ```
+
+
+    List of Events: https://developer.mozilla.org/en-US/docs/Web李广Events
+
+    or google "Mozilla event reference"'
+  - '[PAGE 9]
+
+
+    # Auto Inherited Properties
+
+
+    When you create a value in JavaScript, certain properties are automatically inherited
+    by this value. This magic happens because every **type** has a **constructor**
+    with a special property called **prototype**. All methods on the **prototype**
+    gets automatically inherited by the new value created for that **type**. Take
+    a look at some of of these methods on the right.
+
+
+    ```
+
+    const thing = "some text";
+
+    ```
+
+
+    ```
+
+    const num = 123.45;
+
+    ```
+
+
+    Google ''Mozilla String'' to find the docs
+
+
+    Google ''Mozilla Number'' to find the docs
+
+
+    Google ''Mozilla Array'' to find the docs
+
+
+    Google ''Mozilla Boolean'' to find the docs
+
+
+    +   - `.concat()`
+
+    - `.charAt()`
+
+    - `.indexOf()`
+
+    - `.startsWith()`
+
+    - `.endsWith()`
+
+    - `.split()`
+
+    - `.slice()`
+
+
+    +   - `.toFixed()`
+
+    - `.toPrecision()`
+
+    - `.toString()`
+
+
+    +   - `.filter()`
+
+    - `.map()`
+
+    - `.find()`
+
+    - `.every()`
+
+    - `.some()`
+
+    - `.sort()`
+
+    - `.slice()`
+
+    - `.splice()`
+
+    - `.reduce()`
+
+    - `.forEach()`
+
+
+    +   - `.toString()`
+
+
+    # Built-in Objects
+
+
+    JavaScript gives us a ton of useful built-in objects to make our lives easier.
+    The **Date** and **Math** objects are very useful on a regular basis. Take a look
+    at some of their features on the right.
+
+
+    Full list of builtin objects in JavaScript visit https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+
+    Google ''Mozilla Math'' to find the docs
+
+
+    Google ''Mozilla Date'' to find the docs
+
+
+    ```
+
+    Math.pow(2, 3) // 8
+
+    Math.sqrt(16) // 4
+
+    Math.min(7, 8, 6) // 6
+
+    Math.max(7, 8, 6) // 8
+
+    Math.floor(123.45) // 123
+
+    Math.ceil(123.45) // 124
+
+    Math.round(123.45) // 123
+
+    Math.random() // 0.45..
+
+    ```
+
+
+    ```
+
+    const d = new Date(''9/17/1988'');
+
+    d.getDay()
+
+    d.getFullYear()
+
+    d.getMonth()
+
+
+    Date.now()
+
+    Milliseconds since Jan 1, 1970
+
+    ```'
+  - "[PAGE 10]\n\n# ## 17 Promise\n\n**What is a Promise?**\n\nPromise is an object\
+    \ that provides a useful construct when dealing with asynchronous tasks. A promise\
+    \ is called a \"Promise\" because it guarantees it will run upon success or failure\
+    \ of that task.\n\nWorking with a promise consists of two parts; (A) Creating\
+    \ a promise, and (B) Using a promise.\n\n**What is an Async task?**\n\nAn async\
+    \ task is one in which a third-party process is doing the task.\n\nExamples:\n\
+    \n+   - Requesting/sending data to a database\n- Requesting/sending data via HTTP\
+    \ protocol\n- Working with the file system of the computer\n\n```\n// (A) Create\
+    \ a promise\nconst p = new Promise((resolve, reject)=>{\n  // Do some async task\n\
+    \  setTimeout(()=>{\n    if(condition){\n      resolve('Successful login');\n\
+    \    } else {\n      reject('Login failed');\n    }\n  }, 2000)\n})\n```\n\n```\n\
+    // (B) Using a promise\np.then((res)=>{\n  console.log(res)\n})\n.catch((err)=>{\n\
+    \  console.log(err)\n})\n```\n\n**Note:** 90% of the time you will be working\
+    \ with pre-existing promises. The step of \"Creating a promise\" would be done\
+    \ for you either by a library, framework or environment you are using. Examples\
+    \ of promises: fetch"
+  - "[PAGE 11]\n\n# 18 'this' keyword\n\nThe this keyword is used inside a function.\
+    \ The this keyword is merely a reference to another object.\n\nWhat the this keyword\
+    \ refers to depends on the scenario or the way the function is implemented. Here\
+    \ are the 3 scenarios to remember.\n\n# Scenario #1: this inside a function\n\n\
+    The this keyword points to global object.\n\n# Scenario #2: this inside a method\n\
+    \nThe this keyword points to the object the method is in.\n\n# Scenario #3: When\
+    \ function is run with call, bind or apply\n\nWhen a function is called using\
+    \ the .call(param) .bind(param) or .apply(param) method, the first param become\
+    \ the object that the this keyword refers to.\n\n**Important Note:**\nIn the browser,\
+    \ global is the window object.\nIn Node.js, global is the global object.\n\n```\n\
+    var name = \" Fatema\";\n\nfunction fun(){\n    // some code here\n    console.log(this.name);\n\
+    }\n\nconst user = {\n    name: \"Marium\",\n    yearOfBirth: 1999,\n    calcAge:\
+    \ function(){\n        const currentYear = (new Date()).getFullYear();\n     \
+    \   return currentYear - this.yearOfBirth;\n    }\n}\n\nfun();           // 'this'\
+    \ is global. Logs \"Fatema\"\nuser.calcAge();  // 'this' is the user object\n\
+    fun.call(user);  // 'this' is the user object. Logs \"Marium\"\n```"
+  - "[PAGE 12]\n\n# 19 Constructor\n\n**What is a constructor?**\nIn JavaScript, a\
+    \ constructor is a special function that acts as a mold to create new objects.\n\
+    \nThere are numerous built-in constructors in JavaScript, such as `String`, `Number`,\
+    \ `Promise`, `Date`, `Array`, `Object`, and many more.\n\nWe can create our own\
+    \ custom constructors if need be.\n\nA great place to use a constructor is when\
+    \ you are creating multiple objects of the same kind.\n\nThere are two parts to\
+    \ working with a constructor:\n\n+   1. **Defining a constructor**\n   When creating\
+    \ a custom constructor\n\n2. **Using a constructor**\n   with the \"new\" keyword\n\
+    \n```\n// Defining a Constructor\nfunction Car(make, model, year){\n  this.make\
+    \ = make;\n  this.model = model;\n  this.year = year;\n\n  this.setMiles = function(miles){\n\
+    \    this.miles = miles\n    return miles;\n  }\n}\n\n// Using a constructor\n\
+    const car1 = new Car('Toyota', 'Prius', 2016);\nconst car2 = new Car('Hyundai',\
+    \ 'Sonata', 2018);\n\n// Adding method to the constructor prototype\nCar.prototype.age\
+    \ = function(){\n  return (new Date()).getFullYear() - this.year;\n}\n\ncar1.age();\
+    \ // 2\n```\n\n> **Rule of thumb:**\nA) Set properties inside a constructor.\n\
+    \nB) Set methods inside the prototype property.\n\n> **\"new\" keyword**\nThe\
+    \ new keyword is used to create a new object (instance) from the constructor.\n\
+    \n> **\"prototype\" property**\nprototype is a special property on every object.\
+    \ Properties (methods or values) attached to the prototype property get inherited\
+    \ to every instance of the constructor."
+pages:
+- img_proc: true
+  md: "# Seven (7) Types\n\n+   1. String\n2. Number\n3. Boolean\n4. Null\n5. Undefined\n\
+    6. Symbol\n7. Object\n   - Array\n   - Function\n\n```\n\"Any text\"\n123.45\n\
+    true or false\nnull\nundefined\nSymbol('something')\n{ key: 'value' }\n[1, \"\
+    text\", false]\nfunction name() { }\n```\n\n# Basic Vocabulary\n\n**Variable**\n\
+    A named reference to a value is a variable.\n\n**Operator**\nOperators are reserved-words\
+    \ that perform action on values and variables.\nExamples: + - = * in === typeof\
+    \ != ...\n\n```\nvar a = 7 + \"2\";\n```\n\n**Statement**\nA group of words, numbers\
+    \ and operators that do a task is a statement.\n\n**Keyword / reserved word**\n\
+    Any word that is part of the vocabulary of the programming language is called\
+    \ a keyword (a.k.a reserved word).\nExamples: var = + if for...\n\n**Expression**\n\
+    A reference, value or a group of reference(s) and value(s) combined with operator(s),\
+    \ which result in a single value.\n\n**Note:** var, let & const are all valid\
+    \ keywords to declare variables. The difference between them is covered on page\
+    \ 7 of this cheatsheet.\n\n# Object\n\nAn object is a data type in JavaScript\
+    \ that is used to store a combination of data in a simple key-value pair. Thats\
+    \ it.\n\n**Key**\nThese are the keys in user object.\n\n```\nvar user = {\n  name:\
+    \ \"Aziz Ali\",\n  yearOfBirth: 1988,\n  calculateAge: function(){\n    // some\
+    \ code to calculate age\n  }\n}\n```\n\n**Value**\nThese are the values of the\
+    \ respective keys in user object.\n\n**Method**\nIf a key has a function as a\
+    \ value, its called a method."
+  merge: -1
+  pgno: 0
+- img_proc: true
+  md: "# ④ Function\n\nA function is simply a bunch of code bundled in a section.\
+    \ This bunch of code ONLY runs when the function is called. Functions allow for\
+    \ organizing code into sections and code reusability.\n\nUsing a function has\
+    \ ONLY two parts. (1) Declaring/defining a function, and (2) using/running a function.\n\
+    \n# Name of function\n\nThats it, its just a name you give to your function. Tip:\
+    \ Make your function names descriptive to what the function does.\n\n# Return\
+    \ (optional)\n\nA function can optionally spit-out or \"return\" a value once\
+    \ its invoked. Once a function returns, no further lines of code within the function\
+    \ run.\n\n```\n// Function declaration / Function statement\nfunction someName(param1,\
+    \ param2){\n\n    // bunch of code as needed...\n    var a = param1 + \"love\"\
+    \ + param2;\n    return a;\n}\n\n// Invoke (run / call) a function\nsomeName(\"\
+    Me\", \"You\")\n```\n\n# Invoke a function\n\nInvoking, calling or running a function\
+    \ all mean the same thing. When we write the function name, in this case someName,\
+    \ followed by the brackets symbol () like this someName(), the code inside the\
+    \ function gets executed.\n\n# Passing parameter(s) to a function (optional)\n\
+    \nAt the time of invoking a function, parameter(s) may be passed to the function\
+    \ code.\n\n# Parameters / Arguments (optional)\n\nA function can optionally take\
+    \ parameters (a.k.a arguments). The function can then use this information within\
+    \ the code it has.\n\n# Code block\n\nAny code within the curly braces { ... }\
+    \ is called a \"block of code\", \"code block\" or simply \"block\". This concept\
+    \ is not just limited to functions. \"if statements\", \"for loops\" and other\
+    \ statements use code blocks as well."
+  merge: -1
+  pgno: 1
+- img_proc: true
+  md: "# # Vocabulary around variables and scope\n\n**Variable Declaration**\nThe\
+    \ creation of the variable.\n\n**Scope**\nThe limits in which a variable exists.\n\
+    \n```\nvar a;\n```\n\n```\nvar a = \"global\";\n```\n\n**Variable Initialization**\n\
+    The initial assignment of value to a variable.\n\n**Global scope**\nThe outer\
+    \ most scope is called the Global scope.\n\n```\na = 12;\n```\n\n```\nfunction\
+    \ first(){\n  var a = \"fresh\";\n\n  function second(){\n    console.log(a);\n\
+    \  }\n}\n```\n\n**Functional scope**\nAny variables inside a function is in scope\
+    \ of the function.\n\n**Variable Assignment**\nAssigning value to a variable.\n\
+    \n```\na = \"me\";\n```\n\n**Lexical Environment (Lexical scope)**\nThe physical\
+    \ location (scope) where a variable or function is declared is its lexical environment\
+    \ (lexical scope).\n\n**Scope chain**\nThe nested hierarchy of scope is called\
+    \ the scope chain. The JS engine looks for variables in the scope chain upwards\
+    \ (it its ancestors, until found)\n\n**Hoisting**\nVariables are declared at the\
+    \ top of the function automatically, and initialized at the time they are run.\n\
+    \n```\nconsole.log(a);\nvar a = \"me\";\n```\n\n**Rule:**\n(1) Variables in the\
+    \ outer scope can be accessed in a nested scope; But variables inside a nested\
+    \ scope CANNOT be accessed by the outer scope. (a.k.a private variables.)\n\n\
+    (2) Variables are picked up from the lexical environment."
+  merge: -1
+  pgno: 2
+- img_proc: true
+  md: '# JavaScript Cheatsheet
+
+
+    # 6 Operators
+
+
+    Full list of JavaScript operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+
+
+    Operators are reserved-words that perform action on values and variables.
+
+
+    Arithmetic
+
+    .. + .. Add
+
+    .. - .. Subtract
+
+    .. * .. Multiply
+
+    .. / .. Divide
+
+    .. % .. Remainder
+
+    .. ** .. Exponential
+
+
+    Relational / Comparison
+
+    .. >= .. Greater than or equal to
+
+    .. <= .. Less than or equal to
+
+    .. != .. Not equal after coercion
+
+    .. !== .. Not equal
+
+
+    Operator Precedence
+
+    Given multiple operators are used in an expression, the "Operator Precedence"
+    determines which operator will be executed first. The higher the precedence, the
+    earlier it will get executed.
+
+
+    Assignment
+
+    .. = .. Assign value
+
+    .. += .. Add then assign
+
+    .. -= .. Subtract then assign
+
+    .. *= .. Multiply then assign
+
+
+    Increment / Decrement
+
+    ..++ Postfix increment
+
+    ..-- Postfix decrement
+
+
+    ++.. Prefix increment
+
+    --.. Prefix increment
+
+
+    Operator Associativity
+
+    Given multiple operators have the same precedence, "Associativity" determines
+    in which direction the code will be parsed.
+
+
+    See the Operator Precedence and Associativity table here:
+
+    http://bit.ly/operatortable
+
+
+    Logical
+
+    .. || .. Or
+
+    .. && .. And
+
+
+    Others
+
+    typeof ..
+
+    .. instanceof ..
+
+    (..)
+
+    ...spread-operator
+
+    .
+
+    ..[.]
+
+    new ..
+
+    delete ..
+
+    (.. ? .. : ..)
+
+
+    # 7 Coercion
+
+
+    When trying to compare different "types", the JavaScript engine attempts to convert
+    one type into another so it can compare the two values.
+
+
+    Type coercion priority order:
+
+    1. String
+
+    2. Number
+
+    3. Boolean
+
+
+    Coercion in action
+
+    Does this make sense?
+
+
+    Equality
+
+    .. === .. Equality
+
+    .. == .. Equality with coercion
+
+
+    Conversion
+
+    + .. Convert to number
+
+    - .. Convert to number then negate it
+
+    ! .. Convert to boolean then inverse it
+
+
+    ```
+
+    2 + "7";  // "27"
+
+    true - 5  // -4
+
+    ```'
+  merge: -1
+  pgno: 3
+- img_proc: true
+  md: "# # ⑧ Conditional Statements\n\nConditional statements allow our program to\
+    \ run specific code only if certain conditions are met. For instance, lets say\
+    \ we have a shopping app. We can tell our program to hide the \"checkout\" button\
+    \ if the shopping cart is empty.\n\n**If -else Statement**: Run certain code,\
+    \ \"if\" a condition is met. If the condition is not met, the code in the \"else\"\
+    \ block is run (if available.)\n\n```\nif (a > 0) {\n    // run this code\n} else\
+    \ if (a < 0) {\n    // run this code\n} else {\n    // run this code\n}\n```\n\
+    \n# # ⑨ Truthy / Falsy\n\nThere are certain values in JavaScript that return true\
+    \ when coerced into boolean. Such values are called **truthy** values. On the\
+    \ other hand, there are certain values that return false when coerced to boolean.\
+    \ These values are knows as **falsy** values.\n\n**Switch Statement**: Takes a\
+    \ single expression, and runs the code of the \"case\" where the expression matches.\
+    \ The **\"break\"** keyword is used to end the switch statement.\n\n```\nswitch\
+    \ (expression) {\n    case choice1:\n        // run this code\n        break;\n\
+    \    case choice1:\n        // run this code\n        break;\n    default:\n \
+    \       // run this code\n}\n```\n\n| Truthy Values | Falsy Values |\n| :--- |\
+    \ :--- |\n| true | false |\n| \"text\" | \" \" |\n| 72 | 0 |\n| -72 | -0 |\n|\
+    \ Infinity | NaN |\n| -Infinity | null |\n| {} | undefined |\n| [] | |\n\n**Ternary\
+    \ Operator:** A ternary operator returns the first value if the expression is\
+    \ truthy, or else returns the second value.\n\n```\n(expression)? ifTrue: ifFalse;\n\
+    ```"
+  merge: -1
+  pgno: 4
+- img_proc: true
+  md: "# ⑩ Loop Statements\n\nLoops are used to do something repeatedly. For instance\
+    \ lets say we get a list of 50 blog posts from the database and we want to print\
+    \ their titles on our page. Instead of writing the code 50 times, we would instead\
+    \ use a loop to make this happen.\n\nFor loop\n\n```\nfor (initial-expression;\
+    \ condition; second-expression){\n  // run this code in block\n}\n```\n\n+   Step\
+    \ 1: Run the initial expression.\nStep 2: Check if condition meets. If condition\
+    \ meets, proceed; or else end the loop.\nStep 3: Run the code in block.\nStep\
+    \ 4: Run the second-expression.\nStep 5: Go to Step 2.\n\nWhile loop\n\n```\n\
+    while (i<3){\n  // run this code in block\n  i++;\n}\n```\n\n+   Step 1: If the\
+    \ condition is true, proceed; or else end the loop.\nStep 2: Run the code in block.\n\
+    Step 3: Go to Step 1.\n\nDo while loop\n\n```\ndo {\n  // run this code in block\n\
+    \  i++;\n} while (i<3);\n```\n\n+   Step 1: Run the code in block.\nStep 2: If\
+    \ the condition is true, proceed; or else end the loop.\nStep 3: Go to Step 1."
+  merge: -1
+  pgno: 5
+- img_proc: true
+  md: '# # Ways to create a variable
+
+
+    There are 3 ways to create variables in JavaScript:
+
+    `var`, `let` and `const`. Variables created with `var` are in scope of the function
+    (or global if declared in the global scope); `let` variables are block scoped;
+    and `const` variables are like `let` plus their values cannot be re-assigned.
+
+
+    ```
+
+    var a = "some value";    // functional or global scoped
+
+    let b = "some value";    // block scoped
+
+    const c = "some value";  // block scoped + cannot get new value
+
+    ```
+
+
+    # # Event Loop
+
+
+    ![](img/100a2f06642446eb339b2146e2383d7b_6_0.png)'
+  merge: -1
+  pgno: 6
+- img_proc: true
+  md: '# # 13 Browser
+
+
+    A web browser is a pretty advance piece of software which contains a lot of components.
+    Many of these components are accessible to a web developer, so we can create complex
+    web apps. At the same time a lot of components are kept out of reach of the web
+    developer for security purposes. For instance, we as web developers can get access
+    to the user''s location, but we cannot get access to the user''s saved passwords
+    or browsing history. **Let''s see below how a browser is structured:**
+
+
+    ![](img/100a2f06642446eb339b2146e2383d7b_7_0.png)'
+  merge: -1
+  pgno: 7
+- img_proc: true
+  md: '# DOM - Document Object Model
+
+
+    # Query/Get Elements
+
+
+    ```
+
+    // Preferred way:
+
+    document.querySelector(''css-selectors'')
+
+    document.querySelectorAll(''css-selectors'', ...)
+
+    ```
+
+
+    ```
+
+    // Old ways, and still work:
+
+    document.getElementsByTagName(''element-name'')
+
+    document.getElementsByClassName(''class-name'')
+
+    document.getElementById(''id'')
+
+    ```
+
+
+    # Create / clone Element
+
+
+    ```
+
+    document.createElement(''div'')
+
+    document.createTextNode(''some text here'')
+
+    node.cloneNode()
+
+    node.textContent = ''some text here''
+
+    ```
+
+
+    # Add node to document
+
+
+    ```
+
+    parentNode.appendChild(nodeToAdd)
+
+    parentNode.insertBefore(nodeToAdd, childNode)
+
+    ```
+
+
+    # Get Element Details
+
+
+    ```
+
+    node.nextSibling
+
+    node.firstChild
+
+    node.lastChild
+
+    node.parentNode
+
+    node.childNodes
+
+    node.children
+
+    ```
+
+
+    # Modify Element
+
+
+    ```
+
+    node.style.color = ''red''
+
+    node.style.padding = ''10px'',
+
+    node.style.fontSize = ''200%''
+
+
+    node.setAttribute(''attr-name'', ''attr-value'')
+
+    node.removeAttribute(''attr-name'')
+
+    ```
+
+
+    # Get and Modify Element Class
+
+
+    ```
+
+    node.classList
+
+    node.classList.add(''class-name'', ...)
+
+    node.classList.remove(''class-name'', ...)
+
+    node.classList.toggle(''class-name'')
+
+    node.classList.contains(''class-name'')
+
+    node.classList.replace(''old'', ''new'')
+
+    ```
+
+
+    # Remove Node
+
+
+    ```
+
+    parentNode.removeChild(nodeToRemove)
+
+    // Hack to remove self
+
+    nodeToRemove.parentNode.removeChild(nodeToRemove)
+
+    ```
+
+
+    # What is a "Node"?
+
+    (in the context of DOM)
+
+
+    **Node:** Every item in the DOM tree is called a node. There are two types of
+    node - A text node, and an element node:
+
+
+    **Text Node:** Node that has text.
+
+
+    **Element Node:** Node that has an element.
+
+
+    **Child Node:** A node which is a child of another node.
+
+
+    **Parent Node:** A node which has one LIKE child.
+
+
+    **Descendent Node:** A node which is nested deep in the tree.
+
+
+    **Sibling Node:** A node that share the same parent node.
+
+
+    # Events
+
+
+    ```
+
+    node.addEventListener(''event-name'', callback-function)
+
+    node.removeEventListener(''event-name'', callback-function)
+
+    ```
+
+
+    List of Events: https://developer.mozilla.org/en-US/docs/Web李广Events
+
+    or google "Mozilla event reference"'
+  merge: -1
+  pgno: 8
+- img_proc: true
+  md: '# Auto Inherited Properties
+
+
+    When you create a value in JavaScript, certain properties are automatically inherited
+    by this value. This magic happens because every **type** has a **constructor**
+    with a special property called **prototype**. All methods on the **prototype**
+    gets automatically inherited by the new value created for that **type**. Take
+    a look at some of of these methods on the right.
+
+
+    ```
+
+    const thing = "some text";
+
+    ```
+
+
+    ```
+
+    const num = 123.45;
+
+    ```
+
+
+    Google ''Mozilla String'' to find the docs
+
+
+    Google ''Mozilla Number'' to find the docs
+
+
+    Google ''Mozilla Array'' to find the docs
+
+
+    Google ''Mozilla Boolean'' to find the docs
+
+
+    +   - `.concat()`
+
+    - `.charAt()`
+
+    - `.indexOf()`
+
+    - `.startsWith()`
+
+    - `.endsWith()`
+
+    - `.split()`
+
+    - `.slice()`
+
+
+    +   - `.toFixed()`
+
+    - `.toPrecision()`
+
+    - `.toString()`
+
+
+    +   - `.filter()`
+
+    - `.map()`
+
+    - `.find()`
+
+    - `.every()`
+
+    - `.some()`
+
+    - `.sort()`
+
+    - `.slice()`
+
+    - `.splice()`
+
+    - `.reduce()`
+
+    - `.forEach()`
+
+
+    +   - `.toString()`
+
+
+    # Built-in Objects
+
+
+    JavaScript gives us a ton of useful built-in objects to make our lives easier.
+    The **Date** and **Math** objects are very useful on a regular basis. Take a look
+    at some of their features on the right.
+
+
+    Full list of builtin objects in JavaScript visit https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+
+    Google ''Mozilla Math'' to find the docs
+
+
+    Google ''Mozilla Date'' to find the docs
+
+
+    ```
+
+    Math.pow(2, 3) // 8
+
+    Math.sqrt(16) // 4
+
+    Math.min(7, 8, 6) // 6
+
+    Math.max(7, 8, 6) // 8
+
+    Math.floor(123.45) // 123
+
+    Math.ceil(123.45) // 124
+
+    Math.round(123.45) // 123
+
+    Math.random() // 0.45..
+
+    ```
+
+
+    ```
+
+    const d = new Date(''9/17/1988'');
+
+    d.getDay()
+
+    d.getFullYear()
+
+    d.getMonth()
+
+
+    Date.now()
+
+    Milliseconds since Jan 1, 1970
+
+    ```'
+  merge: -1
+  pgno: 9
+- img_proc: true
+  md: "# ## 17 Promise\n\n**What is a Promise?**\n\nPromise is an object that provides\
+    \ a useful construct when dealing with asynchronous tasks. A promise is called\
+    \ a \"Promise\" because it guarantees it will run upon success or failure of that\
+    \ task.\n\nWorking with a promise consists of two parts; (A) Creating a promise,\
+    \ and (B) Using a promise.\n\n**What is an Async task?**\n\nAn async task is one\
+    \ in which a third-party process is doing the task.\n\nExamples:\n\n+   - Requesting/sending\
+    \ data to a database\n- Requesting/sending data via HTTP protocol\n- Working with\
+    \ the file system of the computer\n\n```\n// (A) Create a promise\nconst p = new\
+    \ Promise((resolve, reject)=>{\n  // Do some async task\n  setTimeout(()=>{\n\
+    \    if(condition){\n      resolve('Successful login');\n    } else {\n      reject('Login\
+    \ failed');\n    }\n  }, 2000)\n})\n```\n\n```\n// (B) Using a promise\np.then((res)=>{\n\
+    \  console.log(res)\n})\n.catch((err)=>{\n  console.log(err)\n})\n```\n\n**Note:**\
+    \ 90% of the time you will be working with pre-existing promises. The step of\
+    \ \"Creating a promise\" would be done for you either by a library, framework\
+    \ or environment you are using. Examples of promises: fetch"
+  merge: -1
+  pgno: 10
+- img_proc: true
+  md: "# 18 'this' keyword\n\nThe this keyword is used inside a function. The this\
+    \ keyword is merely a reference to another object.\n\nWhat the this keyword refers\
+    \ to depends on the scenario or the way the function is implemented. Here are\
+    \ the 3 scenarios to remember.\n\n# Scenario #1: this inside a function\n\nThe\
+    \ this keyword points to global object.\n\n# Scenario #2: this inside a method\n\
+    \nThe this keyword points to the object the method is in.\n\n# Scenario #3: When\
+    \ function is run with call, bind or apply\n\nWhen a function is called using\
+    \ the .call(param) .bind(param) or .apply(param) method, the first param become\
+    \ the object that the this keyword refers to.\n\n**Important Note:**\nIn the browser,\
+    \ global is the window object.\nIn Node.js, global is the global object.\n\n```\n\
+    var name = \" Fatema\";\n\nfunction fun(){\n    // some code here\n    console.log(this.name);\n\
+    }\n\nconst user = {\n    name: \"Marium\",\n    yearOfBirth: 1999,\n    calcAge:\
+    \ function(){\n        const currentYear = (new Date()).getFullYear();\n     \
+    \   return currentYear - this.yearOfBirth;\n    }\n}\n\nfun();           // 'this'\
+    \ is global. Logs \"Fatema\"\nuser.calcAge();  // 'this' is the user object\n\
+    fun.call(user);  // 'this' is the user object. Logs \"Marium\"\n```"
+  merge: -1
+  pgno: 11
+- img_proc: true
+  md: "# 19 Constructor\n\n**What is a constructor?**\nIn JavaScript, a constructor\
+    \ is a special function that acts as a mold to create new objects.\n\nThere are\
+    \ numerous built-in constructors in JavaScript, such as `String`, `Number`, `Promise`,\
+    \ `Date`, `Array`, `Object`, and many more.\n\nWe can create our own custom constructors\
+    \ if need be.\n\nA great place to use a constructor is when you are creating multiple\
+    \ objects of the same kind.\n\nThere are two parts to working with a constructor:\n\
+    \n+   1. **Defining a constructor**\n   When creating a custom constructor\n\n\
+    2. **Using a constructor**\n   with the \"new\" keyword\n\n```\n// Defining a\
+    \ Constructor\nfunction Car(make, model, year){\n  this.make = make;\n  this.model\
+    \ = model;\n  this.year = year;\n\n  this.setMiles = function(miles){\n    this.miles\
+    \ = miles\n    return miles;\n  }\n}\n\n// Using a constructor\nconst car1 = new\
+    \ Car('Toyota', 'Prius', 2016);\nconst car2 = new Car('Hyundai', 'Sonata', 2018);\n\
+    \n// Adding method to the constructor prototype\nCar.prototype.age = function(){\n\
+    \  return (new Date()).getFullYear() - this.year;\n}\n\ncar1.age(); // 2\n```\n\
+    \n> **Rule of thumb:**\nA) Set properties inside a constructor.\n\nB) Set methods\
+    \ inside the prototype property.\n\n> **\"new\" keyword**\nThe new keyword is\
+    \ used to create a new object (instance) from the constructor.\n\n> **\"prototype\"\
+    \ property**\nprototype is a special property on every object. Properties (methods\
+    \ or values) attached to the prototype property get inherited to every instance\
+    \ of the constructor."
+  merge: -1
+  pgno: 12
+toc:
+- - '#'
+  - 七种（7）类型
+- - '#'
+  - 基础词汇
+- - '#'
+  - Object（对象）
+- - '#'
+  - Function（函数）
+- - '#'
+  - 函数名称
+- - '#'
+  - Return（返回，可选）
+- - '#'
+  - 调用函数
+- - '#'
+  - 向函数传递参数（可选）
+- - '#'
+  - Parameters / Arguments（参数，可选）
+- - '#'
+  - 代码块
+- - '#'
+  - 变量与作用域相关词汇
+- - '#'
+  - JavaScript 速查表
+- - '#'
+  - 6 运算符
+- - '#'
+  - 7 Coercion（强制转换）
+- - '#'
+  - 条件语句
+- - '#'
+  - Truthy / Falsy（真值 / 假值）
+- - '#'
+  - 循环语句
+- - '#'
+  - 事件循环
+- - '#'
+  - 13 浏览器
+- - '##'
+  - DOM - 文档对象模型
+- - '###'
+  - 查询/获取元素
+- - '###'
+  - 创建 / 克隆元素
+- - '###'
+  - 将节点添加到文档
+- - '###'
+  - 获取元素详情
+- - '###'
+  - 修改元素
+- - '###'
+  - 获取和修改元素类
+- - '###'
+  - 移除节点
+- - '###'
+  - '"节点"是什么？'
+- - '###'
+  - 事件
+- - '##'
+  - 自动继承的属性
+- - '##'
+  - 内置对象
+- - '#'
+  - 17 Promise（Promise）
+- - '#'
+  - 18 'this' 关键字
+- - '##'
+  - '场景 #1：函数内的 this'
+- - '##'
+  - '场景 #2：方法内的 this'
+- - '##'
+  - '场景 #3：使用 call、bind 或 apply 运行函数时'
+- - '#'
+  - 19 构造函数（Constructor）
