@@ -1,0 +1,3751 @@
+- fmt: '
+
+
+    ![](images/cover.png)
+
+
+    Copyright 2020 by John Rhea. This book is licensed under the Creative Commons
+    [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
+    (CC BY-NC 4.0)
+
+
+    Distributed by the [Undead Institute](https://undead.institute/) a division of
+    [StoryLab LLC](https://storylab.us/)
+
+
+    This book made possible by a generous grant from [Grant for the Web](https://www.grantfortheweb.org).
+
+
+    ## You Know What Else Kills Zombies?
+
+
+    Honest feedback. Enjoyed the book? Found an error or an omission? Still confused
+    about something? Want to complement the author’s sense of humor (or lack thereof)?
+    Email John directly at [feedback@undead.institute](mailto:feedback@undead.institute)
+
+
+    ## Find More Zombified Web Development at
+
+
+    [https://undead.institute](https://undead.institute)
+
+
+    ## Four Word
+
+
+    Stop those zombie cowboys!
+
+
+    ## Content Warning
+
+
+    (for Silliness)
+
+
+    This book contains a large amount of information, zombies, silliness, and a sense
+    of humor that some would call “terrible”. If you’re looking for straight technical
+    information or a cure to your insomnia, this is not the book for you.
+
+
+    If you’re looking for a book that’s accessible to those without technical training
+    or inclination and/or don’t mind laughing a bit while you’re learning, this book
+    is for you. We at the Undead Institute believe that getting braaains should be
+    fun. Join us and let’s stop those smelly zombies once and for all! (No, seriously.
+    Their breath is terrible.)
+
+
+    ## Get a Free Apocalyptic JavaScript-ic Cheat Sheet
+
+
+    [![](images/jsintro.png)](https://undd.link/intro2js)
+
+
+    When you sign up for Webpocalypse Weekly, our email newsletter. This printable
+    cheat sheet covers JavaScript loops, variable, conditionals and functions. Write
+    JavaScript easily with your very own Apocalyptic Javascript-ic Cheat Sheet
+
+
+    [https://undd.link/intro2js](https://undd.link/intro2js)
+
+
+    # An Introduction to Programming in JavaScript:
+
+
+    Stomping Zombies with Variables, Loops, Functions and More
+
+
+    by John Rhea
+
+
+    Published by [*The Undead Institute*](https://undead.institute)
+
+
+    ## Hello Human Resistance Cell
+
+
+    JavaScript differs from other front-end web languages, such as HTML and CSS. It’s
+    much more programmatic and uses logic and variables and functions and loops and
+    all kinds of things—but don’t fear for your mind as though a zombie were hot on
+    your trail. We’ll walk you through everything and get you up to speed, even if
+    this is your first taste of JavaScript and/or of a more traditional programming
+    language.
+
+
+    This book assumes a small amount of HTML/web page knowledge. If you have none,
+    you can get what you''d need from our free book *[Punching Zombies: An HTML &
+    CSS Quick Start Guide for Writers, Designers, and Beginners](https://undead.institute/death-to-boring-programming-books/)*
+
+
+    ## Buckets and Buckets of Zombie Guts
+
+
+    One of the first things to understand is a concept called variables. Variables
+    are like buckets you store things in. You can put water in a bucket or your lunch
+    or a mannequin head or the rookie cards of the 2037 Los Angeles Zombie-Dodgers
+    Human Resistance Cell. You can put just about anything in a bucket.
+
+
+    There are also lots of different JavaScripty types of things you can put in a
+    bucket, such as:
+
+
+    **Numbers:** These are what you think they are.
+
+
+    **Strings of Letters (Strings):** These are actually more than just letters—they
+    are any text or character that you want to treat as a single thing. Enclose strings
+    in quotation marks (both single and double quotes work in JavaScript) and can
+    include any valid character. Examples of strings are:
+
+
+    “Hello Post-Apocalyptic World”
+
+
+    Or,
+
+
+    “Don’t look at me, Norm. The zombie pulled your lunch out of the fridge and ate
+    it.”
+
+
+    Or,
+
+
+    “I know you labeled it. The zombie didn’t care or couldn’t read.”
+
+
+    Or,
+
+
+    “Only one way to find out. He’s over there eating 7 other lunches.”
+
+
+    Or,
+
+
+    “7?”
+
+
+    Or,
+
+
+    “7”
+
+
+    So you can have number characters in a string too, but they’ll behave as strings
+    and not as numbers—so you can’t add or multiply them without converting them back
+    to numbers. If something is in quotes, it’s a string.
+
+
+    **Boolean:** The value is true or false and can’t be anything else. This makes
+    it great for using it like a switch to turn something on or off.
+
+
+    There are a few more types of variables in JavaScript, but this is enough to get
+    us started.
+
+
+    ## Buckets of Type Z
+
+
+    Some buckets can only hold one type of thing. For instance, a bucket with a hole
+    in the bottom wouldn’t hold water or the soda from the last working soda fountain
+    in North America, but it could be great for holding books or large rocks or the
+    personal effects of your zombified roommate. Similarly, variables often only hold
+    one type of thing.
+
+
+    In some programming languages, putting the wrong type of content in the wrong
+    bucket can cause errors, but JavaScript is forgiving. The positive side of that
+    is that JavaScript just handles a lot of stuff without complaining. The negative
+    is that if it messes up or handles something different from what you expect, you
+    can get weird results or programming bugs that are hard to track down.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    One common place these types of bugs happen is when you try to add a number (`2`)
+    and a string that looks like a number (`"2"`). In JavaScript, `2 + "2"` is `"22"`.
+    Since one of these is a string, it casts/treats the other as a string too and
+    puts them together or concatenates them. (This can be very useful when you need
+    to construct a message for the user.) Thus, be careful that you are adding numbers
+    with numbers and not strings.
+
+
+    ## Variable Bucket Contents
+
+
+    These buckets we’ve been talking about are called variables. They’re called variables
+    because they are…ahem…variable. You can put something in them, and, during your
+    program, you can take that out and look at it or take it out and do something
+    with it or take it out and put something else in. You can do that any number of
+    times.
+
+
+    Before we can use these buckets/variables to beat back the zombie hordes, we have
+    to name them. We can name a variable just about anything we want. However, we
+    can only use letters, numbers, and underscores. We can’t use any other characters,
+    and the first character can’t be a number—i.e., `7zombies` is invalid, but `sevenzombies`
+    or `_7zombies` or `zombies_numbering_7` would all work just fine.
+
+
+    Also, variables are case sensitive, so a variable of `zombie` is different from
+    a variable of `Zombie`, which is also different from a variable named `ZOMBIE`,
+    which is different from `zOmBiE`—so watch which case you use, and use that case
+    throughout your code.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    We can use this to our advantage with camel case. Camel case makes multi-word
+    variable names much easier to read and understand. In camel case, you write the
+    first word in all lower case, and then capitalize the first letter of each additional
+    word. Here are some examples:
+
+
+    `sevenZombies` `sevenFormerHumans` `thatGuyFromAccountingWhoTurnedZombie` `dawnOfTheDeadFromSales`
+    `rickTheUndeadHarbingerOfDoom`
+
+
+    The last rule for variable names is that you can’t use any of JavaScript’s reserved
+    words—meaning the words that have special meaning to JavaScript and are how the
+    language functions. If HTML had variables, it’d be like naming your bucket `<p>`.
+    It would be hard for the browser to understand when you meant the `p` tag and
+    when you meant the variable/bucket, as you’d given both the same name.
+
+
+    Now how do you declare a variable in JavaScript? There are three ways: `var`,
+    `let`, and `const`. (These would be examples of reserved words that cannot be
+    variable/bucket names.)
+
+
+    '
+  raw: '
+
+
+    ![](images/cover.png)
+
+
+    Copyright 2020 by John Rhea. This book is licensed under the Creative Commons
+    [Attribution-NonCommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/)
+    (CC BY-NC 4.0)
+
+
+    Distributed by the [Undead Institute](https://undead.institute/) a division of
+    [StoryLab LLC](https://storylab.us/)
+
+
+    This book made possible by a generous grant from [Grant for the Web](https://www.grantfortheweb.org).
+
+
+    ## You Know What Else Kills Zombies?
+
+
+    Honest feedback. Enjoyed the book? Found an error or an omission? Still confused
+    about something? Want to complement the author’s sense of humor (or lack thereof)?
+    Email John directly at [feedback@undead.institute](mailto:feedback@undead.institute)
+
+
+    ## Find More Zombified Web Development at
+
+
+    [https://undead.institute](https://undead.institute)
+
+
+    ## Four Word
+
+
+    Stop those zombie cowboys!
+
+
+    ## Content Warning
+
+
+    (for Silliness)
+
+
+    This book contains a large amount of information, zombies, silliness, and a sense
+    of humor that some would call “terrible”. If you’re looking for straight technical
+    information or a cure to your insomnia, this is not the book for you.
+
+
+    If you’re looking for a book that’s accessible to those without technical training
+    or inclination and/or don’t mind laughing a bit while you’re learning, this book
+    is for you. We at the Undead Institute believe that getting braaains should be
+    fun. Join us and let’s stop those smelly zombies once and for all! (No, seriously.
+    Their breath is terrible.)
+
+
+    ## Get a Free Apocalyptic JavaScript-ic Cheat Sheet
+
+
+    [![](images/jsintro.png)](https://undd.link/intro2js)
+
+
+    When you sign up for Webpocalypse Weekly, our email newsletter. This printable
+    cheat sheet covers JavaScript loops, variable, conditionals and functions. Write
+    JavaScript easily with your very own Apocalyptic Javascript-ic Cheat Sheet
+
+
+    [https://undd.link/intro2js](https://undd.link/intro2js)
+
+
+    # An Introduction to Programming in JavaScript:
+
+
+    Stomping Zombies with Variables, Loops, Functions and More
+
+
+    by John Rhea
+
+
+    Published by [*The Undead Institute*](https://undead.institute)
+
+
+    ## Hello Human Resistance Cell
+
+
+    JavaScript differs from other front-end web languages, such as HTML and CSS. It’s
+    much more programmatic and uses logic and variables and functions and loops and
+    all kinds of things—but don’t fear for your mind as though a zombie were hot on
+    your trail. We’ll walk you through everything and get you up to speed, even if
+    this is your first taste of JavaScript and/or of a more traditional programming
+    language.
+
+
+    This book assumes a small amount of HTML/web page knowledge. If you have none,
+    you can get what you''d need from our free book *[Punching Zombies: An HTML &
+    CSS Quick Start Guide for Writers, Designers, and Beginners](https://undead.institute/death-to-boring-programming-books/)*
+
+
+    ## Buckets and Buckets of Zombie Guts
+
+
+    One of the first things to understand is a concept called variables. Variables
+    are like buckets you store things in. You can put water in a bucket or your lunch
+    or a mannequin head or the rookie cards of the 2037 Los Angeles Zombie-Dodgers
+    Human Resistance Cell. You can put just about anything in a bucket.
+
+
+    There are also lots of different JavaScripty types of things you can put in a
+    bucket, such as:
+
+
+    **Numbers:** These are what you think they are.
+
+
+    **Strings of Letters (Strings):** These are actually more than just letters—they
+    are any text or character that you want to treat as a single thing. Enclose strings
+    in quotation marks (both single and double quotes work in JavaScript) and can
+    include any valid character. Examples of strings are:
+
+
+    “Hello Post-Apocalyptic World”
+
+
+    Or,
+
+
+    “Don’t look at me, Norm. The zombie pulled your lunch out of the fridge and ate
+    it.”
+
+
+    Or,
+
+
+    “I know you labeled it. The zombie didn’t care or couldn’t read.”
+
+
+    Or,
+
+
+    “Only one way to find out. He’s over there eating 7 other lunches.”
+
+
+    Or,
+
+
+    “7?”
+
+
+    Or,
+
+
+    “7”
+
+
+    So you can have number characters in a string too, but they’ll behave as strings
+    and not as numbers—so you can’t add or multiply them without converting them back
+    to numbers. If something is in quotes, it’s a string.
+
+
+    **Boolean:** The value is true or false and can’t be anything else. This makes
+    it great for using it like a switch to turn something on or off.
+
+
+    There are a few more types of variables in JavaScript, but this is enough to get
+    us started.
+
+
+    ## Buckets of Type Z
+
+
+    Some buckets can only hold one type of thing. For instance, a bucket with a hole
+    in the bottom wouldn’t hold water or the soda from the last working soda fountain
+    in North America, but it could be great for holding books or large rocks or the
+    personal effects of your zombified roommate. Similarly, variables often only hold
+    one type of thing.
+
+
+    In some programming languages, putting the wrong type of content in the wrong
+    bucket can cause errors, but JavaScript is forgiving. The positive side of that
+    is that JavaScript just handles a lot of stuff without complaining. The negative
+    is that if it messes up or handles something different from what you expect, you
+    can get weird results or programming bugs that are hard to track down.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    One common place these types of bugs happen is when you try to add a number (2)
+    and a string that looks like a number (“2”). In JavaScript, 2 + “2” is “22”. Since
+    one of these is a string, it casts/treats the other as a string too and puts them
+    together or concatenates them. (This can be very useful when you need to construct
+    a message for the user.) Thus, be careful that you are adding numbers with numbers
+    and not strings.
+
+
+    ## Variable Bucket Contents
+
+
+    These buckets we’ve been talking about are called variables. They’re called variables
+    because they are…ahem…variable. You can put something in them, and, during your
+    program, you can take that out and look at it or take it out and do something
+    with it or take it out and put something else in. You can do that any number of
+    times.
+
+
+    Before we can use these buckets/variables to beat back the zombie hordes, we have
+    to name them. We can name a variable just about anything we want. However, we
+    can only use letters, numbers, and underscores. We can’t use any other characters,
+    and the first character can’t be a number—i.e., 7zombies is invalid, but sevenzombies
+    or _7zombies or zombies_numbering_7 would all work just fine.
+
+
+    Also, variables are case sensitive, so a variable of zombie is different from
+    a variable of Zombie, which is also different from a variable named ZOMBIE, which
+    is different from zOmBiE—so watch which case you use, and use that case throughout
+    your code.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    We can use this to our advantage with camel case. Camel case makes multi-word
+    variable names much easier to read and understand. In camel case, you write the
+    first word in all lower case, and then capitalize the first letter of each additional
+    word. Here are some examples:
+
+
+    sevenZombies sevenFormerHumans thatGuyFromAccountingWhoTurnedZombie dawnOfTheDeadFromSales
+    rickTheUndeadHarbingerOfDoom
+
+
+    The last rule for variable names is that you can’t use any of JavaScript’s reserved
+    words—meaning the words that have special meaning to JavaScript and are how the
+    language functions. If HTML had variables, it’d be like naming your bucket <p>.
+    It would be hard for the browser to understand when you meant the p tag and when
+    you meant the variable/bucket, as you’d given both the same name.
+
+
+    Now how do you declare a variable in JavaScript? There are three ways: var, let,
+    and const. (These would be examples of reserved words that cannot be variable/bucket
+    names.)'
+  toc: []
+  trans: '
+
+
+    ![](img/cover.png)
+
+
+    版权所有 © 2020 John Rhea。本书采用知识共享 [署名-非商业性使用 4.0 国际](https://creativecommons.org/licenses/by-nc/4.0/)（CC
+    BY-NC 4.0）许可协议。
+
+
+    由 [亡灵学院](https://undead.institute/) 发行，该学院隶属于 [StoryLab 有限责任公司](https://storylab.us/)。
+
+
+    本书的出版得益于 [网络资助](https://www.grantfortheweb.org) 的慷慨资助。
+
+
+    ## 你知道还有什么能杀死僵尸吗？
+
+
+    真诚的反馈。喜欢这本书？发现了错误或遗漏？对某些内容仍有疑惑？想夸赞作者（或吐槽其缺乏）的幽默感？请直接发送邮件至 feedback@undead.institute
+    联系 John。
+
+
+    ## 更多僵尸化网页开发内容，请访问
+
+
+    [`undead.institute`](https://undead.institute)
+
+
+    ## 四个字
+
+
+    阻止那些僵尸牛仔！
+
+
+    ## 内容警告
+
+
+    （关于“愚蠢”）
+
+
+    本书包含大量信息、僵尸、愚蠢内容，以及某些人称之为“糟糕”的幽默感。如果你在寻找纯粹的技术资料或治疗失眠的良方，这本书不适合你。
+
+
+    如果你在寻找一本对没有技术背景或兴趣的人友好，并且/或者不介意在学习时笑一笑的书，那么这本书就是为你准备的。亡灵学院坚信，获取“脑仁”应该充满乐趣。加入我们，一劳永逸地阻止那些臭烘烘的僵尸吧！（不，说真的，它们的口气太可怕了。）
+
+
+    ## 免费获取末日 JavaScript 速查表
+
+
+    ![](https://undd.link/intro2js)
+
+
+    当你订阅我们的电子邮件通讯《网络末日周刊》时，即可获得这份可打印的速查表。它涵盖了 JavaScript 循环、变量、条件语句和函数。借助你自己的末日 JavaScript
+    速查表，轻松编写 JavaScript。
+
+
+    [`undd.link/intro2js`](https://undd.link/intro2js)
+
+
+    # JavaScript 编程入门：
+
+
+    用变量、循环、函数等知识痛扁僵尸
+
+
+    作者：John Rhea
+
+
+    由 [*亡灵学院*](https://undead.institute) 出版
+
+
+    ## 你好，人类抵抗细胞
+
+
+    JavaScript 与其他前端网页语言（如 HTML 和 CSS）不同。它更具程序性，使用逻辑、变量、函数、循环以及各种东西——但别担心你的脑子会像被僵尸紧追不舍一样。我们会一步步引导你，让你快速上手，即使这是你第一次接触
+    JavaScript 和/或更传统的编程语言。
+
+
+    本书假设你具备少量 HTML/网页知识。如果你完全没有，可以从我们的免费书籍《*痛击僵尸：面向作家、设计师和初学者的 HTML & CSS 快速入门指南*》中获取所需内容，该书可在
+    [`undead.institute/death-to-boring-programming-books/`](https://undead.institute/death-to-boring-programming-books/)
+    获取。
+
+
+    ## 一桶又一桶的僵尸内脏
+
+
+    首先要理解的一个概念是变量。变量就像你用来存放东西的桶。你可以在桶里放水、午餐、假人模特头、或者 2037 年洛杉矶僵尸道奇队人类抵抗细胞的新秀卡。你几乎可以把任何东西放进桶里。
+
+
+    在 JavaScript 中，也有很多不同类型的“东西”可以放进桶里，例如：
+
+
+    **数字：** 就是你想的那样。
+
+
+    **字符串（字符串）：** 实际上不仅仅是字母——它们是你想当作一个整体处理的任何文本或字符。字符串需要用引号括起来（JavaScript 中单引号和双引号都可以），并且可以包含任何有效字符。字符串的例子有：
+
+
+    “你好，后末日世界”
+
+
+    或者，
+
+
+    “别看我，Norm。僵尸把你的午餐从冰箱里拿出来吃掉了。”
+
+
+    或者，
+
+
+    “我知道你贴了标签。僵尸不在乎，或者它不识字。”
+
+
+    或者，
+
+
+    “只有一个办法能知道。它正在那边吃另外 7 份午餐。”
+
+
+    或者，
+
+
+    “7？”
+
+
+    或者，
+
+
+    “7”
+
+
+    所以你也可以在字符串中包含数字字符，但它们会作为字符串而不是数字来表现——因此你不能直接对它们进行加法或乘法运算，除非先将它们转换回数字。如果某物在引号内，它就是字符串。
+
+
+    **布尔值：** 值为 true 或 false，不能是其他值。这使得它非常适合用作开关，来打开或关闭某些东西。
+
+
+    JavaScript 中还有几种其他类型的变量，但这些足以让我们开始。
+
+
+    ## Z 型桶
+
+
+    有些桶只能装一种类型的东西。例如，一个底部有洞的桶装不了水，也装不了北美最后一个还在工作的汽水机里的汽水，但它很适合装书、大石头，或者你变成僵尸的室友的个人物品。类似地，变量通常也只保存一种类型的东西。
+
+
+    在某些编程语言中，把错误类型的内容放进错误的桶里会导致错误，但 JavaScript 很宽容。好的一面是，JavaScript 会处理很多事情而不抱怨。坏的一面是，如果它处理出错或处理的结果与你预期不同，你可能会得到奇怪的结果或难以追踪的编程错误。
+
+
+    ![](img/livingtip-jsloops.png)
+
+
+    #### 活死人之夜小贴士：
+
+
+    这类错误常见的一个地方是当你试图将一个数字（`2`）和一个看起来像数字的字符串（`"2"`）相加时。在 JavaScript 中，`2 + "2"` 的结果是
+    `"22"`。由于其中一个是字符串，它会将另一个也强制转换为字符串，并将它们拼接（连接）在一起。（这在需要为用户构建消息时非常有用。）因此，要小心确保你是在用数字加数字，而不是字符串。
+
+
+    ## 变量桶的内容
+
+
+    我们一直在谈论的这些桶被称为变量。它们之所以叫变量，是因为它们……嗯……是可变的。你可以往里面放东西，在程序运行过程中，你可以取出它并查看，或者取出它并对其进行操作，或者取出它并放入其他东西。你可以重复任意多次。
+
+
+    在我们可以使用这些桶/变量来击退僵尸大军之前，我们必须给它们命名。我们可以给变量起几乎任何我们想要的名字。但是，我们只能使用字母、数字和下划线。不能使用任何其他字符，并且第一个字符不能是数字——例如，`7zombies`
+    是无效的，但 `sevenzombies`、`_7zombies` 或 `zombies_numbering_7` 都可以正常工作。
+
+
+    另外，变量是区分大小写的，所以变量 `zombie` 与变量 `Zombie` 不同，也与名为 `ZOMBIE` 的变量不同，更与 `zOmBiE` 不同——因此要注意你使用的大小写，并在整个代码中保持一致。
+
+
+    ![](img/livingtip-jsloops.png)
+
+
+    #### 活死人之夜小贴士：
+
+
+    我们可以利用这一点，采用驼峰命名法。驼峰命名法使多词变量名更易于阅读和理解。在驼峰命名法中，第一个单词全部小写，然后每个后续单词的首字母大写。以下是一些例子：
+
+
+    `sevenZombies` `sevenFormerHumans` `thatGuyFromAccountingWhoTurnedZombie` `dawnOfTheDeadFromSales`
+    `rickTheUndeadHarbingerOfDoom`
+
+
+    变量名的最后一条规则是，你不能使用任何 JavaScript 的保留字——即那些对 JavaScript 有特殊含义、构成语言功能的单词。如果 HTML 有变量，那就好比把你的桶命名为
+    `<p>`。浏览器将很难理解你什么时候指的是 `p` 标签，什么时候指的是变量/桶，因为你给两者起了相同的名字。
+
+
+    那么如何在 JavaScript 中声明一个变量呢？有三种方式：`var`、`let` 和 `const`。（这些就是不能用作变量/桶名的保留字的例子。）
+
+
+    '
+- fmt: '
+
+    Before we name variables, you need to learn a few important syntax rules. Similar
+    to CSS, JavaScript lines should end with a semicolon. Also, two forward slashes
+    (`//`) in JavaScript indicate a comment or, to be more specific, tell the browser
+    to ignore the two slashes and everything after them until the end of the line.
+    CSS style comments also work in JavaScript—that is, the browser will ignore everything
+    from your opening `/*` to your ending `*/`, no matter how many lines it is.
+
+
+    `var`: `var` is the original way to set a variable and the method that is most
+    backward-compatible. If you’re building something for older browsers, use `var`.
+    Examples:
+
+
+    ```javascript
+
+    var zombie; //Just creating the variable/bucket
+
+    var zombie = 45; /* creating the variable and assigning it the number 45 or creating
+    the bucket and putting the number 45 into it… and then having a multi-line comment
+    */
+
+    var apocalypse = "The end of the world"; //putting a string in the bucket
+
+    var zombieDoomed = true; // putting a Boolean in the bucket
+
+    ```
+
+
+    `let`: The next option is to use `let` instead of `var`. `let` is a newer choice
+    and exists because `var` could have unexpected behavior. JavaScript’s loosey-goosey
+    (zombly-wombly?) attitude toward variables—that is, how forgiving it is—can, in
+    certain cases, get you into trouble. `let` solves that issue and should be your
+    default way of creating variables for any recent browser work.
+
+
+    ```javascript
+
+    let zombie;
+
+    let zombie = 45;
+
+    let apocalypse = "The end of the world";
+
+    let zombieDoomed = true;
+
+    ```
+
+
+    `const`: The last option is almost a contradiction in terms because the next way
+    to instantiate a variable is to create a constant...Yeah, that seems zomborrific
+    to me too, but hear me out. Sometimes you’ll have a value that should stay constant
+    during a program, like the number of zombies cured by one cc of anti-zombie serum
+    or the ratio of human resistance cells to the number of zombie nests in an area.
+    But that number may change outside the bounds of the program. For example, you
+    might increase the effectiveness of the anti-zombie serum (for instance, by infusing
+    it with HTML, CSS, and/or JavaScript), or you might eradicate a zombie nest, making
+    the ratio inaccurate. Rather than putting that value in sixty times and then looking
+    for every instance of that value and replacing it, you can use the name of a constant
+    throughout the program, and then, if the value of the constant changes, you only
+    have to update it in one place in the code. You cannot change a constant while
+    the program is running. You can only change it by editing the code.
+
+
+    The keyword for a constant is `const`.
+
+
+    ```javascript
+
+    const zCuredPerSerumCC = 7;
+
+    const cell2NestRatio = 0.8271;
+
+    ```
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    You can define more than one variable at a time by using a comma between variable
+    names. I’m using `let` below, but it works with `var` and `const` too.
+
+
+    ```javascript
+
+    let zombie, undead;
+
+    ```
+
+
+    You can also set their values while chaining them:
+
+
+    ```javascript
+
+    let horde = 700, humanityInTrouble = true;
+
+    ```
+
+
+    ## Undead Output
+
+
+    There are several ways to output something in JavaScript. Outputting for user
+    view is almost always the end goal, even if the results of a program do something
+    else first. Outputting for user view is also helpful in figuring out what’s wrong
+    in a program and how to fix it.
+
+
+    ### Output to an Alert
+
+
+    One of the easiest (but often most annoying) ways to output a variable is to use
+    an alert statement. An alert statement is a JavaScript function that creates a
+    dialog box with a message and an okay button. For instance:
+
+
+    ```javascript
+
+    alert("The zombies are here!");
+
+    ```
+
+
+    would show
+
+
+    ![alert box with the text The zombies are here!](images/Image0.png)
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/bGemwXJ](https://codepen.io/undeadinstitute/pen/bGemwXJ)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/001-zombie-alert.html](https://undead.institute/files/zombie-programming/001-zombie-alert.html)
+
+
+    Outputs to an alert are useful, particularly when you are starting out, as you
+    learn what a variable holds at a particular point in your program. The downside
+    is that you have to click “okay” on each dialogue box opened. If you create an
+    alert in a loop, you may end up with quite a lot of clicking. And if you forget
+    to remove a debugging alert from your code before you publish the site, your users
+    will see them, be annoyed, and decide that maybe being a zombie ain''t so bad
+    if humans are this monstrous.
+
+
+    ### Output to the Page
+
+
+    You can output content or information to the page using `document.write`.
+
+
+    ```javascript
+
+    document.write("The zombies are here!");
+
+    ```
+
+
+    This prints out content to the page, which is usually where you want to see it.
+    The downsides are that it’s a little complicated to get the content where you
+    want it (although it’s easy to add at, for example, the bottom of the page), and
+    if you leave any debugging code in the production files, the zombies will win,
+    and your users will see your confusing debugging output.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/ZEOqBbW](https://codepen.io/undeadinstitute/pen/ZEOqBbW)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/002-zombie-write.html](https://undead.institute/files/zombie-programming/002-zombie-write.html)
+
+
+    Another option is similar to `document.write`. You can also select an HTML element
+    on the page and add or change the text, or you can create an element in JavaScript
+    and append it to the page with the information. This is the major way that you’ll
+    show content/the results of your program to your users, but when you use it for
+    debugging, it has the downside of being visible to users. This is a powerful and
+    useful way to show content (debugging or otherwise). We’ll look at it in the next
+    book, *JavaScript Basics: Flinging Event, Element, and Object Bombs at Zombie
+    Heads*.
+
+
+    ### Output to the Console
+
+
+    The way that’s often best to output debug content is to the console. (I say often
+    the best because each method has its purpose. I use the console most often but
+    will sometimes throw up an alert or write it to the page for a quick and dirty
+    solution.) The console is part of each browser’s web developer tools and allows
+    you to output content to a hidden command line. All you have to do is use:
+
+
+    ```javascript
+
+    console.log("The zombies are here!");
+
+    ```
+
+
+    The output will then appear in the console, and you can figure out where your
+    program went wrong. While I would still recommend removing `console.log` statements
+    from production code, if you forget, no one but us developer types are likely
+    to see the output.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/LYZgber](https://codepen.io/undeadinstitute/pen/LYZgber)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/003-console-zombies.html](https://undead.institute/files/zombie-programming/003-console-zombies.html)
+
+
+    ## Math after the Apocalypse
+
+
+    Next we’ll tackle something familiar, though it may be unpleasant for some: math.
+    A lot of math can happen in programming and all the usual culprits are there:
+    addition, subtraction, multiplication, and division, as well as one you may not
+    be familiar with, modulus division.
+
+
+    **Addition:** `undead = zombies + infected`
+
+
+    **Subtraction:** `undead = zombies - cured`
+
+
+    **Multiplication:** `undead = humans * infectionRate`
+
+
+    **Division:** `undead = zombies / antidote`
+
+
+    **Modulus Division:** is just like division except the remainder is the answer—for
+    example, 13 modulus 5 is 3 because 3 is the remainder/what’s left over after 5
+    is divided into 13.) Modulus uses the `%` sign.
+
+
+    ```javascript
+
+    nextHorde = zombies % hordeSize;
+
+    ```
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010](https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/004-mathematical-zombies.html](https://undead.institute/files/zombie-programming/004-mathematical-zombies.html)
+
+    '
+  raw: 'Before we name variables, you need to learn a few important syntax rules.
+    Similar to CSS, JavaScript lines should end with a semicolon. Also, two forward
+    slashes (//) in JavaScript indicate a comment or, to be more specific, tell the
+    browser to ignore the two slashes and everything after them until the end of the
+    line. CSS style comments also work in JavaScript—that is, the browser will ignore
+    everything from your opening /* to your ending */, no matter how many lines it
+    is.
+
+
+    **Var:** var is the original way to set a variable and the method that is most
+    backward-compatible. If you’re building something for older browsers, use var.
+    Examples:
+
+
+    var zombie; //Just creating the variable/bucket var zombie = 45; /* creating the
+    variable and assigning it the number 45 or creating the bucket and putting the
+    number 45 into it… and then having a multi-line comment */ var apocalypse = “The
+    end of the world”; //putting a string in the bucket var zombieDoomed = true; //
+    putting a Boolean in the bucket
+
+
+    **Let:** The next option is to use let instead of var. Let is a newer choice and
+    exists because var could have unexpected behavior. JavaScript’s loosey-goosey
+    (zombly-wombly?) attitude toward variables—that is, how forgiving it is—can, in
+    certain cases, get you into trouble. Let solves that issue and should be your
+    default way of creating variables for any recent browser work.
+
+
+    let zombie; let zombie = 45; let apocalypse = “The end of the world”; let zombieDoomed
+    = true;
+
+
+    **Const:** The last option is almost a contradiction in terms because the next
+    way to instantiate a variable is to create a constant...Yeah, that seems zomborrific
+    to me too, but hear me out. Sometimes you’ll have a value that should stay constant
+    during a program, like the number of zombies cured by one cc of anti-zombie serum
+    or the ratio of human resistance cells to the number of zombie nests in an area.
+    But that number may change outside the bounds of the program. For example, you
+    might increase the effectiveness of the anti-zombie serum (for instance, by infusing
+    it with HTML, CSS, and/or JavaScript), or you might eradicate a zombie nest, making
+    the ratio inaccurate. Rather than putting that value in sixty times and then looking
+    for every instance of that value and replacing it, you can use the name of a constant
+    throughout the program, and then, if the value of the constant changes, you only
+    have to update it in one place in the code. You cannot change a constant while
+    the program is running. You can only change it by editing the code.
+
+
+    The keyword for a constant is const.
+
+
+    const zCuredPerSerumCC = 7; const cell2NestRatio = 0.8271;![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    You can define more than one variable at a time by using a comma between variable
+    names. I’m using *let* below, but it works with var and const too.let zombie,
+    undead;
+
+
+    You can also set their values while chaining them:
+
+
+    let horde = 700, humanityInTrouble = true;
+
+
+    ## Undead Output
+
+
+    There are several ways to output something in JavaScript. Outputting for user
+    view is almost always the end goal, even if the results of a program do something
+    else first. Outputting for user view is also helpful in figuring out what’s wrong
+    in a program and how to fix it.
+
+
+    ### Output to an Alert
+
+
+    One of the easiest (but often most annoying) ways to output a variable is to use
+    an alert statement. An alert statement is a JavaScript function that creates a
+    dialog box with a message and an okay button. For instance:
+
+
+    alert(“The zombies are here!”);
+
+
+    would show
+
+
+    ![alert box with the text The zombies are here!](images/Image0.png)
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/bGemwXJ](https://codepen.io/undeadinstitute/pen/bGemwXJ)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/001-zombie-alert.html](https://undead.institute/files/zombie-programming/001-zombie-alert.html)
+
+
+    Outputs to an alert are useful, particularly when you are starting out, as you
+    learn what a variable holds at a particular point in your program. The downside
+    is that you have to click “okay” on each dialogue box opened. If you create an
+    alert in a loop, you may end up with quite a lot of clicking. And if you forget
+    to remove a debugging alert from your code before you publish the site, your users
+    will see them, be annoyed, and decide that maybe being a zombie ain''t so bad
+    if humans are this monstrous.
+
+
+    ### Output to the Page
+
+
+    You can output content or information to the page using document.write.
+
+
+    document.write(“The zombies are here!”);
+
+
+    This prints out content to the page, which is usually where you want to see it.
+    The downsides are that it’s a little complicated to get the content where you
+    want it (although it’s easy to add at, for example, the bottom of the page), and
+    if you leave any debugging code in the production files, the zombies will win,
+    and your users will see your confusing debugging output.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/ZEOqBbW](https://codepen.io/undeadinstitute/pen/ZEOqBbW)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/002-zombie-write.html](https://undead.institute/files/zombie-programming/002-zombie-write.html)
+
+
+    Another option is similar to document.write. You can also select an HTML element
+    on the page and add or change the text, or you can create an element in JavaScript
+    and append it to the page with the information. This is the major way that you’ll
+    show content/the results of your program to your users, but when you use it for
+    debugging, it has the downside of being visible to users. This is a powerful and
+    useful way to show content (debugging or otherwise). We’ll look at it in the next
+    book, *JavaScript Basics: Flinging Event, Element, and Object Bombs at Zombie
+    Heads*.
+
+
+    ### Output to the Console
+
+
+    The way that’s often best to output debug content is to the console. (I say often
+    the best because each method has its purpose. I use the console most often but
+    will sometimes throw up an alert or write it to the page for a quick and dirty
+    solution.) The console is part of each browser’s web developer tools and allows
+    you to output content to a hidden command line. All you have to do is use:
+
+
+    console.log(“The zombies are here!”);
+
+
+    The output will then appear in the console, and you can figure out where your
+    program went wrong. While I would still recommend removing console.log statements
+    from production code, if you forget, no one but us developer types are likely
+    to see the output.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/LYZgber](https://codepen.io/undeadinstitute/pen/LYZgber)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/003-console-zombies.html](https://undead.institute/files/zombie-programming/003-console-zombies.html)
+
+
+    ## Math after the Apocalypse
+
+
+    Next we’ll tackle something familiar, though it may be unpleasant for some: math.
+    A lot of math can happen in programming and all the usual culprits are there:
+    addition, subtraction, multiplication, and division, as well as one you may not
+    be familiar with, modulus division.
+
+
+    **Addition:** undead = zombies + infected
+
+
+    **Subtraction:** undead = zombies - cured
+
+
+    **Multiplication:** undead = humans * infectionRate
+
+
+    **Division:** undead = zombies / antidote
+
+
+    **Modulus Division:** is just like division except the remainder is the answer—for
+    example, 13 modulus 5 is 3 because 3 is the remainder/what’s left over after 5
+    is divided into 13.) Modulus uses the % sign.
+
+
+    nextHorde = zombies % hordeSize;
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010](https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/004-mathematical-zombies.html](https://undead.institute/files/zombie-programming/004-mathematical-zombies.html)'
+  toc: []
+  trans: '
+
+
+    在命名变量之前，你需要学习一些重要的语法规则。与 CSS 类似，JavaScript 的每一行应以分号结尾。此外，JavaScript 中的两个正斜杠（`//`）表示注释，更具体地说，是告诉浏览器忽略这两个斜杠及其之后直到行末的所有内容。CSS
+    风格的注释在 JavaScript 中同样有效——也就是说，浏览器会忽略从 `/*` 开始到 `*/` 结束的所有内容，无论跨多少行。
+
+
+    `var`：`var` 是设置变量的原始方式，也是向后兼容性最好的方法。如果你要为旧版浏览器构建内容，请使用 `var`。示例：
+
+
+    ```javascript
+
+    var zombie; // 仅创建变量/桶
+
+    var zombie = 45; /* 创建变量并赋值为数字 45，或者创建桶并将数字 45 放入其中……然后是多行注释 */
+
+    var apocalypse = "The end of the world"; // 将字符串放入桶中
+
+    var zombieDoomed = true; // 将布尔值放入桶中
+
+    ```
+
+
+    `let`：另一种选择是使用 `let` 代替 `var`。`let` 是一个较新的选择，它的出现是因为 `var` 可能产生意外行为。JavaScript
+    对变量的宽松态度（或者说它的宽容性）在某些情况下可能会给你带来麻烦。`let` 解决了这个问题，并且应该成为你在现代浏览器工作中创建变量的默认方式。
+
+
+    ```javascript
+
+    let zombie;
+
+    let zombie = 45;
+
+    let apocalypse = "The end of the world";
+
+    let zombieDoomed = true;
+
+    ```
+
+
+    `const`：最后一种选项几乎是一个矛盾的说法，因为接下来实例化变量的方式是创建一个常量……是的，这对我来说也像僵尸一样可怕，但请听我说完。有时你会遇到一个在程序运行期间应保持恒定的值，比如每毫升抗僵尸血清能治愈的僵尸数量，或者某个区域内人类抗性细胞与僵尸巢穴数量的比率。但这个值可能会在程序外部发生变化。例如，你可能会提高抗僵尸血清的效果（比如通过注入
+    HTML、CSS 和/或 JavaScript），或者你可能摧毁了一个僵尸巢穴，导致比率不再准确。与其将这个值重复使用六十次，然后查找每个实例并替换，不如在整个程序中使用常量的名称，这样如果常量的值发生变化，你只需在代码中的一个位置更新它。你不能在程序运行时更改常量，只能通过编辑代码来更改。
+
+
+    常量的关键字是 `const`。
+
+
+    ```javascript
+
+    const zCuredPerSerumCC = 7;
+
+    const cell2NestRatio = 0.8271;
+
+    ```
+
+
+    ![](img/livingtip-jsloops.png)
+
+
+    #### 活尸小贴士：
+
+
+    你可以通过在变量名之间使用逗号来同时定义多个变量。下面我使用 `let`，但这种方法也适用于 `var` 和 `const`。
+
+
+    ```javascript
+
+    let zombie, undead;
+
+    ```
+
+
+    你还可以在链式定义时设置它们的值：
+
+
+    ```javascript
+
+    let horde = 700, humanityInTrouble = true;
+
+    ```
+
+
+    ## 不死输出
+
+
+    在 JavaScript 中有几种输出内容的方式。为用户显示输出几乎总是最终目标，即使程序的结果首先做了其他事情。为用户显示输出也有助于找出程序中的问题并修复它。
+
+
+    ### 输出到警告框
+
+
+    输出变量最简单（但通常也最烦人）的方法之一是使用警告语句。警告语句是一个 JavaScript 函数，它会创建一个带有消息和“确定”按钮的对话框。例如：
+
+
+    ```javascript
+
+    alert("The zombies are here!");
+
+    ```
+
+
+    会显示
+
+
+    ![显示文本“The zombies are here!”的警告框](img/Image0.png)
+
+
+    #### 试试看：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/bGemwXJ`](https://codepen.io/undeadinstitute/pen/bGemwXJ)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/001-zombie-alert.html`](https://undead.institute/files/zombie-programming/001-zombie-alert.html)
+
+
+    输出到警告框很有用，尤其是在你刚开始学习时，可以了解变量在程序特定时刻的值。缺点是每次打开的对话框都需要点击“确定”。如果你在循环中创建了警告，可能会需要大量点击。而且如果你在发布网站前忘记从代码中移除调试用的警告，用户就会看到它们，感到厌烦，并认为如果人类如此残忍，也许变成僵尸也没那么糟。
+
+
+    ### 输出到页面
+
+
+    你可以使用 `document.write` 将内容或信息输出到页面。
+
+
+    ```javascript
+
+    document.write("The zombies are here!");
+
+    ```
+
+
+    这会将内容打印到页面上，通常这正是你希望看到的地方。缺点是让内容出现在你希望的位置有点复杂（尽管很容易添加到页面底部等位置），而且如果你在生产文件中留下了任何调试代码，僵尸就会获胜，你的用户会看到令人困惑的调试输出。
+
+
+    #### 试试看：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/ZEOqBbW`](https://codepen.io/undeadinstitute/pen/ZEOqBbW)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/002-zombie-write.html`](https://undead.institute/files/zombie-programming/002-zombie-write.html)
+
+
+    另一种选择与 `document.write` 类似。你也可以选择页面上的一个 HTML 元素，添加或更改其文本，或者在 JavaScript 中创建一个元素并将其附加到页面上，同时携带信息。这是向用户展示内容/程序结果的主要方式，但当你用它进行调试时，缺点是对用户可见。这是一种强大且有用的展示内容（调试或其他）的方式。我们将在下一本书《JavaScript
+    基础：向僵尸头部投掷事件、元素和对象炸弹》中讨论它。
+
+
+    ### 输出到控制台
+
+
+    通常最适合输出调试内容的方式是输出到控制台。（我说“通常最适合”是因为每种方法都有其用途。我最常使用控制台，但有时也会为了快速解决问题而弹出一个警告或写入页面。）控制台是每个浏览器开发者工具的一部分，允许你将内容输出到一个隐藏的命令行。你只需使用：
+
+
+    ```javascript
+
+    console.log("The zombies are here!");
+
+    ```
+
+
+    输出就会出现在控制台中，然后你可以找出程序出错的地方。虽然我仍然建议从生产代码中移除 `console.log` 语句，但如果你忘记了，除了我们这些开发者之外，其他人不太可能看到输出。
+
+
+    #### 试试看：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/LYZgber`](https://codepen.io/undeadinstitute/pen/LYZgber)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/003-console-zombies.html`](https://undead.institute/files/zombie-programming/003-console-zombies.html)
+
+
+    ## 末日后的数学
+
+
+    接下来我们将处理一些熟悉的内容，尽管对某些人来说可能不太愉快：数学。编程中涉及大量数学运算，所有常见的运算符都在：加法、减法、乘法、除法，以及你可能不熟悉的模除。
+
+
+    **加法：** `undead = zombies + infected`
+
+
+    **减法：** `undead = zombies - cured`
+
+
+    **乘法：** `undead = humans * infectionRate`
+
+
+    **除法：** `undead = zombies / antidote`
+
+
+    **模除：** 与除法类似，但余数才是答案——例如，13 模 5 等于 3，因为 3 是 5 除以 13 后的余数/剩余部分。模除使用 `%` 符号。
+
+
+    ```javascript
+
+    nextHorde = zombies % hordeSize;
+
+    ```
+
+
+    #### 试试看：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010`](https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/004-mathematical-zombies.html`](https://undead.institute/files/zombie-programming/004-mathematical-zombies.html)
+
+
+    '
+- fmt: "\nThere are some shortcuts for things we do often. For instance, if we wanted\
+    \ to add a number to a variable and save the new answer to that variable we’d\
+    \ do:\n\n```\nundead = undead + 12;\n```\n\nA shortcut for this is to use the\
+    \ `+=` operator that performs the same as above.\n\n```\nundead += 12;\n```\n\n\
+    This isn’t just for addition. It works for all the arithmetic operators.\n\n```\n\
+    undead = undead - 7\n```\n\nis equivalent to\n\n```\nundead -= 7\n```\n\n```\n\
+    undead = undead * 7\n```\n\nis equivalent to\n\n```\nundead *= 7\n```\n\n```\n\
+    undead = undead / 7\n```\n\nis equivalent to\n\n```\nundead /= 7\n```\n\n```\n\
+    undead = undead % 7\n```\n\nis equivalent to\n\n```\nundead %= 7\n```\n\nThere’s\
+    \ one arithmetic operation so common that it has a shortcut even shorter than\
+    \ using `+=`. To increment a value by 1, add `++` to the variable (you can decrement\
+    \ by 1 using `--`).\n\n```\nundead += 1 is equivalent to undead++\n```\n\n```\n\
+    undead -= 1 is equivalent to undead--\n```\n\n#### Try it Out:\n\nCodepen Demo:\
+    \ [https://codepen.io/undeadinstitute/pen/QWEZPXP](https://codepen.io/undeadinstitute/pen/QWEZPXP)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html](https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html)\n\
+    \nThere’s one little quirk with `++` and `--` that can occasionally come in handy.\
+    \ You can put the `++` or `--` in front of the variable too.\n\n```\n++undead;\n\
+    --undead;\n```\n\nIt still increments or decrements the variable. However, if\
+    \ the `++` or `--` comes after the variable, the variable increments or decrements\
+    \ *before* the contents of the variable/bucket is looked at. If the `++` or `--`\
+    \ comes before the variable name, the variable/bucket will increment or decrement\
+    \ before it’s looked at (see the examples below). If the statement is on its own\
+    \ line, it doesn’t matter much whether it’s incremented or decremented before\
+    \ or after. The statements are equivalent. But if it’s used within another JavaScript\
+    \ statement, the result may change.\n\nFor instance:\n\n```\nlet undead = 10;\
+    \ let zombie = 17 + undead++;\n```\n\nwould set `zombie` equal to 28 and `undead`\
+    \ equal to 11; whereas\n\n```\nlet undead = 10; let zombie = 17 + ++undead;\n\
+    ```\n\nwould set `zombie` equal to 27 and `undead` equal to 11.\n\n#### Try it\
+    \ Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/WNxYQbw](https://codepen.io/undeadinstitute/pen/WNxYQbw)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html](https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html)\n\
+    \n## Logically Challenged Zombies\n\nSince variables can hold almost any value,\
+    \ it can be difficult to keep track of what a variable/bucket is supposed to hold.\
+    \ The problem is exacerbated by growing complexity. But you can figure out what’s\
+    \ in a variable by using if-then statements. These allow you to test a condition\
+    \ (if) and do something based on the results (then).\n\nHere’s how an if-then\
+    \ statement looks when the if tests whether `undead` and `zombie` are equivalent\
+    \ (we’ll talk about the different tests you can do in a second):\n\n```\nif( undead\
+    \ == zombie ) { //stop horde }\n```\n\nIf `undead` and `zombie` are equivalent,\
+    \ then whatever code you put in the curly brackets will run. (It's like CSS in\
+    \ that whenever an element matches your selector, the browser will apply the rules\
+    \ in the curly brackets.) If `undead` and `zombie` aren’t equivalent, then the\
+    \ browser will skip any code in the curly brackets.\n\nHere are the logical operators\
+    \ we have to work with:\n\n### Equal:\n\n`undead == zombie` and `undead === zombie`\
+    \ test for equality.\n\nThree equals signs is stricter than two, and it’s usually\
+    \ what you’ll want to use.\n\n![](images/livingtip-jsloops.png)\n\n#### Night\
+    \ of the Living Tip:\n\nHow can things be more or less equal (outside of *Animal\
+    \ Farm*)? This is because of one way that a computer saves memory. Our bucket\
+    \ metaphor will break down a bit here, but let’s say we had a bucket full of something\
+    \ complex, such as a loaf of bread. There’s a lot of information there. It’s complex,\
+    \ and it takes up space.\n\nThe human resistance commander needs to see what rations\
+    \ are available, but he’s in the field with the resistance fighters. We could\
+    \ create a copy or 3-D model of the bread (super easy in this computer-i-fied\
+    \ example), but that would take up as much space as the original, and we might\
+    \ run out of buckets. We’d also have to transport the bread or model out to him,\
+    \ which can get complicated when you have quite a few buckets to transport.\n\n\
+    So we take a picture of the bread instead. In very general terms, the loaf and\
+    \ the picture are equivalent because one is the loaf and one points to or is a\
+    \ picture of that same loaf. (In computer science, the picture from our analogy\
+    \ is called a pointer because it “points” to the original.) That’s the double\
+    \ equals `==` level of equality. The triple equals `===` is when you’re trying\
+    \ to see if two loaves of bread are the same or, rather, if one of them isn’t\
+    \ a pointer to/picture of the other.\n\nIn code, a simplified version of that\
+    \ might look like\n\n```\n7 == \"7\" //true\n7 === \"7\" //false\n```\n\n### Less\
+    \ than:\n\n`undead < zombie`\n\nLet’s say `undead` is equal to 10. Is the value\
+    \ of `undead` less than the value of `zombie`? For this to return true, `zombie`\
+    \ would have to be more than 10 (e.g., 11, 12, 10.1, 312 etc.). It will return\
+    \ false if `zombie` is 10 or less (e.g., 9, 10, 7, -437, etc.).\n\n### Greater\
+    \ than:\n\n`undead > zombie`\n\nIs the value of `undead` greater than the value\
+    \ of `zombie`? If `undead = 10`, then true values include 9, 8, -10, 0, and so\
+    \ on. False values include 10, 11, 412, and so on.\n\n### Less than or equal to:\n\
+    \n`undead <= zombie`\n\nIs the value of `undead` less than or equal to the value\
+    \ of `zombie`? If `undead = 10`, true values include 10, 11, 1017, and so on.\
+    \ False values include 9.9, -78, 6, and so on. (You can also do `<==` to enforce\
+    \ the stricter form of equality.)\n\n### Greater than or equal to:\n\n`undead\
+    \ >= zombie`\n\nIs the value of `undead` greater than or equal to the value of\
+    \ `zombie`? If `undead = 10`, true values include 10, 9, -7, and so on. False\
+    \ values include 11, 10.1, 371, and so on. (You can also do `>==` to enforce the\
+    \ stricter form of equality.)\n\n### Not equal:\n\n`undead != zombie`\n\nThe values\
+    \ of `undead` and `zombie` are two different things. If `undead = 10`, true values\
+    \ include 9, 17, 38, -239, and so on, while the false value is 10. Nothing else\
+    \ is a false value. (You can also use `!==` to enforce the stricter form of inequality.)\n\
+    \nThere’s one additional thing you can do based on the if, but it’s not required.\
+    \ It’s called an else statement, and it allows you to do one thing if the conditional\
+    \ is true (then) and another thing if it’s false (else). It looks like this:\n\
+    \n```\nif( undead === zombie ) {\n  //stop horde\n} else {\n  //stop contagion\n\
+    }\n```\n\nThus, if `undead` and `zombie` are equal, then the browser will “stop\
+    \ horde.” If they aren’t (else), it will “stop contagion.”\n\n#### Try it Out:\n\
+    \nCodepen Demo: [https://codepen.io/undeadinstitute/pen/MWezKez](https://codepen.io/undeadinstitute/pen/MWezKez)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html](https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html)\n\
+    \nIf you need to test multiple conditions, you can do an else if, allowing you\
+    \ to further segment how the program reacts. For instance, if two values are equal,\
+    \ you may want to “stop horde.” But if they aren’t equal, you may want to “stop\
+    \ a greater horde” if one is greater and “stop a lesser horde” if one is lesser.\n\
+    \n```\nif( undead === zombie ) {\n  //stop horde\n} else if (undead > zombie)\
+    \ {\n  //stop a greater horde\n} else {\n  //stop a lesser horde\n}\n```\n\nYou\
+    \ can do as many of these if-else-if chains as you want. You can also refine the\
+    \ something you want to do by whatever variables make sense for your program.\n\
+    \nYou can combine conditionals using AND (`&&`) and OR (`||`).\n\n**AND** means\
+    \ both statements have to be true to execute the then portion. AND is represented\
+    \ by two ampersands:\n\n```\nif( undead === zombie && zombie > human ) {\n  //stop\
+    \ horde\n} else {\n  //stop contagion\n}\n```\n"
+  raw: 'There are some shortcuts for things we do often. For instance, if we wanted
+    to add a number to a variable and save the new answer to that variable we’d do:
+
+
+    undead = undead + 12;
+
+
+    A shortcut for this is to use the += operator that performs the same as above.
+
+
+    undead += 12;
+
+
+    This isn’t just for addition. It works for all the arithmetic operators.
+
+
+    undead = undead - 7
+
+
+    is equivalent to
+
+
+    undead -= 7
+
+
+    undead = undead * 7
+
+
+    is equivalent to
+
+
+    undead *= 7
+
+
+    undead = undead / 7
+
+
+    is equivalent to
+
+
+    undead /= 7
+
+
+    undead = undead % 7
+
+
+    is equivalent to
+
+
+    undead %= 7
+
+
+    There’s one arithmetic operation so common that it has a shortcut even shorter
+    than using +=. To increment a value by 1, add ++ to the variable (you can decrement
+    by 1 using --).
+
+
+    undead += 1 is equivalent to undead++
+
+
+    undead -= 1 is equivalent to undead--
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/QWEZPXP](https://codepen.io/undeadinstitute/pen/QWEZPXP)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html](https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html)
+
+
+    There’s one little quirk with ++ and -- that can occasionally come in handy. You
+    can put the ++ or -- in front of the variable too.
+
+
+    ++undead;
+
+
+    --undead;
+
+
+    It still increments or decrements the variable. However, if the ++ or -- comes
+    after the variable, the variable increments or decrements *before* the contents
+    of the variable/bucket is looked at. If the ++ or -- comes before the variable
+    name, the variable/bucket will increment or decrement before it’s looked at (see
+    the examples below). If the statement is on its own line, it doesn’t matter much
+    whether it’s incremented or decremented before or after. The statements are equivalent.
+    But if it’s used within another JavaScript statement, the result may change.
+
+
+    For instance:
+
+
+    let undead = 10; let zombie = 17 + undead++;
+
+
+    would set zombie equal to 28 and undead equal to 11; whereas
+
+
+    let undead = 10; let zombie = 17 + ++undead;
+
+
+    would set zombie equal to 27 and undead equal to 11.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/WNxYQbw](https://codepen.io/undeadinstitute/pen/WNxYQbw)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html](https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html)
+
+
+    ## Logically Challenged Zombies
+
+
+    Since variables can hold almost any value, it can be difficult to keep track of
+    what a variable/bucket is supposed to hold. The problem is exacerbated by growing
+    complexity. But you can figure out what’s in a variable by using if-then statements.
+    These allow you to test a condition (if) and do something based on the results
+    (then).
+
+
+    Here’s how an if-then statement looks when the if tests whether undead and zombie
+    are equivalent (we’ll talk about the different tests you can do in a second):
+
+
+    if( undead == zombie ) { //stop horde }
+
+
+    If undead and zombie are equivalent, then whatever code you put in the curly brackets
+    will run. (It''s like CSS in that whenever an element matches your selector, the
+    browser will apply the rules in the curly brackets.) If undead and zombie aren’t
+    equivalent, then the browser will skip any code in the curly brackets.
+
+
+    Here are the logical operators we have to work with:
+
+
+    ### Equal:
+
+
+    undead == zombie and undead === zombie test for equality.
+
+
+    Three equals signs is stricter than two, and it’s usually what you’ll want to
+    use.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    How can things be more or less equal (outside of *Animal Farm*)? This is because
+    of one way that a computer saves memory. Our bucket metaphor will break down a
+    bit here, but let’s say we had a bucket full of something complex, such as a loaf
+    of bread. There’s a lot of information there. It’s complex, and it takes up space.
+
+
+    The human resistance commander needs to see what rations are available, but he’s
+    in the field with the resistance fighters. We could create a copy or 3-D model
+    of the bread (super easy in this computer-i-fied example), but that would take
+    up as much space as the original, and we might run out of buckets. We’d also have
+    to transport the bread or model out to him, which can get complicated when you
+    have quite a few buckets to transport.
+
+
+    So we take a picture of the bread instead. In very general terms, the loaf and
+    the picture are equivalent because one is the loaf and one points to or is a picture
+    of that same loaf. (In computer science, the picture from our analogy is called
+    a pointer because it “points” to the original.) That’s the double equals == level
+    of equality. The triple equals === is when you’re trying to see if two loaves
+    of bread are the same or, rather, if one of them isn’t a pointer to/picture of
+    the other.
+
+
+    In code, a simplified version of that might look like
+
+
+    7 == “7” //true 7 === “7” //false
+
+
+    ### Less than:
+
+
+    undead < zombie
+
+
+    Let’s say undead is equal to 10\. Is the value of undead less than the value of
+    zombie? For this to return true, zombie would have to be more than 10 (e.g., 11,
+    12, 10.1, 312 etc.). It will return false if zombie is 10 or less (e.g., 9, 10,
+    7, -437, etc.).
+
+
+    ### Greater than:
+
+
+    undead > zombie
+
+
+    Is the value of undead greater than the value of zombie? If undead = 10, then
+    true values include 9, 8, -10, 0, and so on. False values include 10, 11, 412,
+    and so on.
+
+
+    ### Less than or equal to:
+
+
+    undead <= zombie
+
+
+    Is the value of undead less than or equal to the value of zombie? If undead =
+    10, true values include 10, 11, 1017, and so on. False values include 9.9, -78,
+    6, and so on. (You can also do <== to enforce the stricter form of equality.)
+
+
+    ### Greater than or equal to:
+
+
+    undead >= zombie
+
+
+    Is the value of undead greater than or equal to the value of zombie? If undead
+    = 10, true values include 10, 9, -7, and so on. False values include 11, 10.1,
+    371, and so on. (You can also do >== to enforce the stricter form of equality.)
+
+
+    ### Not equal:
+
+
+    undead != zombie
+
+
+    The values of undead and zombie are two different things. If undead = 10, true
+    values include 9, 17, 38, -239, and so on, while the false value is 10\. Nothing
+    else is a false value. (You can also use !== to enforce the stricter form of inequality.)
+
+
+    There’s one additional thing you can do based on the if, but it’s not required.
+    It’s called an else statement, and it allows you to do one thing if the conditional
+    is true (then) and another thing if it’s false (else). It looks like this:
+
+
+    if( undead === zombie ) {
+
+
+    //stop horde
+
+
+    } else {
+
+
+    //stop contagion
+
+
+    }
+
+
+    Thus, if undead and zombie are equal, then the browser will “stop horde.” If they
+    aren’t (else), it will “stop contagion.”
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/MWezKez](https://codepen.io/undeadinstitute/pen/MWezKez)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html](https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html)
+
+
+    If you need to test multiple conditions, you can do an else if, allowing you to
+    further segment how the program reacts. For instance, if two values are equal,
+    you may want to “stop horde.” But if they aren’t equal, you may want to “stop
+    a greater horde” if one is greater and “stop a lesser horde” if one is lesser.
+
+
+    if( undead === zombie ) {
+
+
+    //stop horde
+
+
+    } else if (undead > zombie) {
+
+
+    //stop a greater horde
+
+
+    } else {
+
+
+    //stop a lesser horde
+
+
+    }
+
+
+    You can do as many of these if-else-if chains as you want. You can also refine
+    the something you want to do by whatever variables make sense for your program.
+
+
+    You can combine conditionals using AND (&&) and OR (||).
+
+
+    **AND** means both statements have to be true to execute the then portion. AND
+    is represented by two ampersands:
+
+
+    if( undead === zombie && zombie > human ) {
+
+
+    //stop horde
+
+
+    } else {
+
+
+    //stop contagion
+
+
+    }'
+  toc: []
+  trans: "\n\n我们经常做的事情有一些快捷方式。例如，如果我们想给一个变量加上一个数并将新结果保存到该变量，可以这样做：\n\n```\nundead\
+    \ = undead + 12;\n```\n\n一个快捷方式是使用 `+=` 运算符，其效果与上面相同。\n\n```\nundead += 12;\n\
+    ```\n\n这不仅适用于加法，也适用于所有算术运算符。\n\n```\nundead = undead - 7\n```\n\n等价于\n\n```\n\
+    undead -= 7\n```\n\n```\nundead = undead * 7\n```\n\n等价于\n\n```\nundead *= 7\n\
+    ```\n\n```\nundead = undead / 7\n```\n\n等价于\n\n```\nundead /= 7\n```\n\n```\n\
+    undead = undead % 7\n```\n\n等价于\n\n```\nundead %= 7\n```\n\n有一种算术运算非常常见，以至于它有一个比使用\
+    \ `+=` 更短的快捷方式。要将值增加 1，可以在变量后添加 `++`（使用 `--` 可以减少 1）。\n\n```\nundead += 1 等价于\
+    \ undead++\n```\n\n```\nundead -= 1 等价于 undead--\n```\n\n#### 试试看：\n\nCodepen\
+    \ 演示：[`codepen.io/undeadinstitute/pen/QWEZPXP`](https://codepen.io/undeadinstitute/pen/QWEZPXP)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html`](https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html)\n\
+    \n`++` 和 `--` 有一个小特性，偶尔会派上用场。你也可以将 `++` 或 `--` 放在变量前面。\n\n```\n++undead;\n--undead;\n\
+    ```\n\n它仍然会递增或递减变量。但是，如果 `++` 或 `--` 放在变量后面，则变量会在查看变量/桶的内容*之前*递增或递减。如果 `++` 或\
+    \ `--` 放在变量名前面，则变量/桶会在被查看之前递增或递减（参见下面的示例）。如果语句单独成行，那么是在之前还是之后递增或递减关系不大，这些语句是等价的。但如果它用在另一个\
+    \ JavaScript 语句中，结果可能会改变。\n\n例如：\n\n```\nlet undead = 10; let zombie = 17 + undead++;\n\
+    ```\n\n会将 `zombie` 设置为 28，`undead` 设置为 11；而\n\n```\nlet undead = 10; let zombie\
+    \ = 17 + ++undead;\n```\n\n会将 `zombie` 设置为 27，`undead` 设置为 11。\n\n#### 试试看：\n\n\
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/WNxYQbw`](https://codepen.io/undeadinstitute/pen/WNxYQbw)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/006-incremetal-apocalypse.html`](https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html)\n\
+    \n## 逻辑混乱的僵尸\n\n由于变量几乎可以保存任何值，因此很难跟踪变量/桶应该保存什么。随着复杂性的增加，这个问题会加剧。但你可以通过使用 if-then\
+    \ 语句来弄清楚变量中有什么。这些语句允许你测试一个条件（if）并根据结果执行某些操作（then）。\n\n以下是 if-then 语句的样子，其中 if\
+    \ 测试 `undead` 和 `zombie` 是否相等（我们稍后会讨论你可以进行的不同测试）：\n\n```\nif( undead == zombie\
+    \ ) { //停止尸群 }\n```\n\n如果 `undead` 和 `zombie` 相等，那么你放在花括号中的任何代码都会运行。（这类似于 CSS，当元素匹配选择器时，浏览器会应用花括号中的规则。）如果\
+    \ `undead` 和 `zombie` 不相等，那么浏览器会跳过花括号中的任何代码。\n\n以下是我们可以使用的逻辑运算符：\n\n### 等于：\n\n\
+    `undead == zombie` 和 `undead === zombie` 测试相等性。\n\n三个等号比两个等号更严格，通常你会想使用它。\n\n\
+    ![](img/livingtip-jsloops.png)\n\n#### 活尸小贴士：\n\n事物怎么会或多或少相等（除了《动物农场》之外）？这是因为计算机节省内存的一种方式。我们的桶比喻在这里会有点失效，但假设我们有一个装满复杂东西的桶，比如一条面包。那里有很多信息。它很复杂，而且占用空间。\n\
+    \n人类抵抗军指挥官需要查看可用的补给，但他正和抵抗军战士们在野外。我们可以创建面包的副本或 3D 模型（在这个计算机化的例子中超级简单），但这会占用和原物一样多的空间，我们可能会用完桶。我们还得把面包或模型运送到他那里，当你有相当多的桶需要运输时，这可能会变得复杂。\n\
+    \n所以我们改为给面包拍张照片。通俗地说，面包和照片是等价的，因为一个是面包，另一个指向或代表同一个面包的照片。（在计算机科学中，我们类比中的照片被称为指针，因为它“指向”原物。）这就是双等号\
+    \ `==` 的相等级别。三等号 `===` 则是试图判断两条面包是否相同，或者更确切地说，其中一条是否不是另一条的指针/照片。\n\n在代码中，简化的版本可能如下所示：\n\
+    \n```\n7 == \"7\" //true\n7 === \"7\" //false\n```\n\n### 小于：\n\n`undead < zombie`\n\
+    \n假设 `undead` 等于 10。`undead` 的值是否小于 `zombie` 的值？要使此条件返回 true，`zombie` 必须大于 10（例如\
+    \ 11、12、10.1、312 等）。如果 `zombie` 为 10 或更小（例如 9、10、7、-437 等），则返回 false。\n\n### 大于：\n\
+    \n`undead > zombie`\n\n`undead` 的值是否大于 `zombie` 的值？如果 `undead = 10`，则 true 值包括\
+    \ 9、8、-10、0 等。false 值包括 10、11、412 等。\n\n### 小于或等于：\n\n`undead <= zombie`\n\n`undead`\
+    \ 的值是否小于或等于 `zombie` 的值？如果 `undead = 10`，true 值包括 10、11、1017 等。false 值包括 9.9、-78、6\
+    \ 等。（你也可以使用 `<==` 来强制使用更严格的相等形式。）\n\n### 大于或等于：\n\n`undead >= zombie`\n\n`undead`\
+    \ 的值是否大于或等于 `zombie` 的值？如果 `undead = 10`，true 值包括 10、9、-7 等。false 值包括 11、10.1、371\
+    \ 等。（你也可以使用 `>==` 来强制使用更严格的相等形式。）\n\n### 不等于：\n\n`undead != zombie`\n\n`undead`\
+    \ 和 `zombie` 的值是两个不同的东西。如果 `undead = 10`，true 值包括 9、17、38、-239 等，而 false 值是 10。没有其他\
+    \ false 值。（你也可以使用 `!==` 来强制使用更严格的不等形式。）\n\n基于 if 你还可以做一件事，但这不是必需的。它被称为 else 语句，它允许你在条件为真时（then）做一件事，在条件为假时（else）做另一件事。它看起来像这样：\n\
+    \n```\nif( undead === zombie ) {\n  //停止尸群\n} else {\n  //停止传染\n}\n```\n\n因此，如果\
+    \ `undead` 和 `zombie` 相等，浏览器将“停止尸群”。如果不相等（else），它将“停止传染”。\n\n#### 试试看：\n\nCodepen\
+    \ 演示：[`codepen.io/undeadinstitute/pen/MWezKez`](https://codepen.io/undeadinstitute/pen/MWezKez)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html`](https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html)\n\
+    \n如果你需要测试多个条件，可以使用 else if，从而进一步细分程序的响应方式。例如，如果两个值相等，你可能想要“停止尸群”。但如果它们不相等，你可能想要在其中一个更大时“停止更大的尸群”，在其中一个更小时“停止更小的尸群”。\n\
+    \n```\nif( undead === zombie ) {\n  //停止尸群\n} else if (undead > zombie) {\n  //停止更大的尸群\n\
+    } else {\n  //停止更小的尸群\n}\n```\n\n你可以根据需要创建任意多个这样的 if-else-if 链。你也可以根据程序中合理的变量来细化你想要执行的操作。\n\
+    \n你可以使用 AND（`&&`）和 OR（`||`）组合条件。\n\n**AND** 表示两个语句都必须为真才能执行 then 部分。AND 由两个与符号表示：\n\
+    \n```\nif( undead === zombie && zombie > human ) {\n  //停止尸群\n} else {\n  //停止传染\n\
+    }\n```\n\n"
+- fmt: "\n`Undead` and `zombie` must be equal AND `zombie` must be greater than `human`\
+    \ for the browser to “stop horde.” If neither of them is true, or if only one\
+    \ or the other is true, a “stop contagion” will be done.\n\n**OR** means that\
+    \ if either statement is true or if both are true, then “stop horde” will be done.\n\
+    \n```\nif( undead === zombie || zombie > human ) {\n  //stop horde\n} else {\n\
+    \  //stop contagion\n}\n```\n\nIf `undead` and `zombie` are equal or if `zombie`\
+    \ is greater than `human` or both, “stop horde” will be done. The only way “stop\
+    \ contagion” will happen is if `undead` and `zombie` are not equal *and* `human`\
+    \ is greater than `zombie`.\n\n#### Try it Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/OJXaMmO](https://codepen.io/undeadinstitute/pen/OJXaMmO)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html](https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html)\n\
+    \n![](images/livingtip-jsloops.png)\n\n#### Night of the Living Tip:\n\nBecause\
+    \ we often test for `true` and `false`, changing everything to a literal `true`\
+    \ or `false` or writing a specific test would be additional work every time we’re\
+    \ testing something. So, as a shortcut, most programming languages (including\
+    \ JavaScript) count several values as `false` that aren’t technically `false`.\
+    \ For instance, if an expression or variable evaluates to `0`, it’s counted as\
+    \ `false`. If it’s any other numeric value, it will evaluate as `true`. In this\
+    \ way, you might see a single value (this is a rather contrived example, but hopefully\
+    \ it will make sense).\n\n```\nlet undead = 0;\nif ( undead ) {\n  //stop horde\n\
+    } else {\n  //stop contagion\n}\n```\n\nIn that example, `undead` being equal\
+    \ to `0` would evaluate as `false` and “stop contagion” would be done.\n\nOther\
+    \ values that evaluate to `false` include `null` (meaning an empty variable/one\
+    \ without a value), `undefined` (a variable that has never been set), an empty\
+    \ string represented by two double or single quotation marks next to each other\
+    \ `“”` or `‘’`, and `NaN` which stands for not a number. You see it when you try\
+    \ to do numbery things with non-numbers, such as `“12” / 2` (remember that anything\
+    \ in quotation marks is treated as a string, not a number) or on the protest signs\
+    \ of a populace being barcoded by an authoritarian human settlement.\n\n**Note:**\
+    \ this test works best on primitive types: numbers, strings, and so on. It may\
+    \ not work on more complicated types like arrays (we’ll discuss these later).\n\
+    \n#### Try it Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/ZEOmvjN](https://codepen.io/undeadinstitute/pen/ZEOmvjN)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html](https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html)\n\
+    \n## Getting Loopy with Zombies\n\nThe next important thing in JavaScript—and\
+    \ in other programming languages—is the loop. Loops are just what they sound like,\
+    \ they do some code again and again and again until they hit a stopping condition.\
+    \ There are two main types of loops (with a couple variations): the `for` loop\
+    \ and the `while` loop.\n\n`for` loops run whatever code you place between the\
+    \ curly brackets for a set number of iterations.\n\n![](images/livingtip-jsloops.png)\n\
+    \n#### Night of the Living Tip:\n\nThe letters `i`, `j`, and `k` are traditionally\
+    \ used as loop counters (a variable that counts the number of iterations used.\
+    \ You don’t have to use these as your counter values, but if you don’t, name your\
+    \ counters clearly. For clearer code, it’s best not to use `i`, `j`, or `k` for\
+    \ any other kind of variable.\n\nA traditional `for` loop in JavaScript looks\
+    \ like this:\n\n```\nfor( let i = 0; i < 10; i++ ) {\n  //stop zombies 10 times\n\
+    }\n```\n\n#### Try it Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/bGeQaZx](https://codepen.io/undeadinstitute/pen/bGeQaZx)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html](https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html)\n\
+    \n![](images/livingtip-jsloops.png)\n\n#### Night of the Living Tip:\n\nYou’ll\
+    \ notice that the `i` counter started at zero instead of one. This is not a requirement,\
+    \ but it can make things easier in the long run. The reason is that computers\
+    \ start counting at 0 rather than at 1. (Like some zombies, computers don’t have\
+    \ fingers to count on.) So later, when we work on arrays, their indexes start\
+    \ at 0 rather than at 1, and if you start your `for` loop at 1, you’ll skip the\
+    \ first array element, and the zombies will win. (If that made little sense, no\
+    \ worries. We’ll get there.)\n\nThe `for` loop itself (inside the parentheses)\
+    \ is three statements in one. First (`let i = 0;`), you instantiate the counter\
+    \ or just set it to an initial value. Next (`i < 10`), you set the conditional\
+    \ for how long to continue the loop (i.e., while `i` is less than 10, keep running\
+    \ all the code between the curly brackets). Finally (`i++`), you’re setting how\
+    \ fast you go from the initial value (`i = 0`) to the end condition (when `i`\
+    \ is greater than or equal to 10). In most cases, that’s by an increment of 1\
+    \ (`i++`), but it could be a decrement (`i--`) or you could do it by more than\
+    \ 1 depending on your needs (`i += 2`, etc.).\n\nBe careful that you don’t set\
+    \ up a condition that will never come about, or the loop will go on forever, and\
+    \ the zombies will win. For instance, if your condition is `i < 10`, and you decrement\
+    \ instead of increment, then `i` will always be less than 10, and your loop will\
+    \ never exit. (I’ve done this myself more times than there are zombies in a horde,\
+    \ so if you find your browser hanging or repeating something well beyond the number\
+    \ of times you anticipate, it’s best to just close the browser window, fix your\
+    \ code, and then reopen the page. Hopefully you’ll be free of the infinite loops\
+    \ that’ll eat your brain like a zombie with an empty stomach).\n\n```\nlet horde\
+    \ = 0;\nlet humans = 100;\nfor( let i = 0; i < 10; i++) {\n  horde += 10;\n  humans\
+    \ -= 10;\n}\n//perform the same task using a decrementing loop\nlet horde = 0;\n\
+    let humans = 100;\nfor( let j = 10; j < 1; j--) {\n  horde += 10;\n  humans -=\
+    \ 10;\n}\n```\n\n#### Try it Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/JjKepGE](https://codepen.io/undeadinstitute/pen/JjKepGE)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html](https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html)\n\
+    \nThe `for` loop examples above, assume you have something numeric to compare.\
+    \ What if there isn’t a set number of times to run something or a numeric comparison\
+    \ just isn’t appropriate? That’s where the second kind of loop comes in, the `while`\
+    \ loop.\n\nThe `while` loop tells the browser to keep looping *while* a condition\
+    \ is true.\n\n```\nlet george = “zombie”, stillAZombie = true;\nwhile( stillAZombie\
+    \ ) {\n  if( george == “zombie” ) {\n    tryToCure( george );\n  } else {\n  \
+    \  stillAZombie = false;\n  }\n}\n```\n\nThe example above checks whether the\
+    \ `stillAZombie` variable is `true`. If it is, it checks whether the `george`\
+    \ variable holds a string of “zombie.” If it does, the program tries a cure on\
+    \ `george`. If the `tryToCure` function succeeds, then the `george` variable will\
+    \ no longer hold “zombie,” the `if` test will fail, and the `else` section will\
+    \ be executed, setting `stillAZombie` to `false` and ending the loop the next\
+    \ time the `while` loop checks whether `stillAZombie` is `true`.\n\nThe `while`\
+    \ loop has a half-brother called the `do-while` loop. `do-while` loops are used\
+    \ when you want to put the conditional at the end of the loop (i.e., you want\
+    \ to run the statements in the loop at least once).\n\n```\nlet george = “zombie”,\
+    \ stillAzombie = true;\ndo {\n  if( george == “zombie” ) {\n    tryToCure( george\
+    \ );\n  } else {\n    stillAZombie = false;\n  }\n} while( stillAZombie );\n```\n\
+    \n#### Try it Out:\n\nCodepen Demo: [https://codepen.io/undeadinstitute/pen/zYBMRoB](https://codepen.io/undeadinstitute/pen/zYBMRoB)\n\
+    \nFile Demo: [https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html](https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html)\n"
+  raw: 'Undead and zombie must be equal AND zombie must be greater than human for
+    the browser to “stop horde.” If neither of them is true, or if only one or the
+    other is true, a “stop contagion” will be done.
+
+
+    **OR** means that if either statement is true or if both are true, then “stop
+    horde” will be done.
+
+
+    if( undead === zombie || zombie > human ) {
+
+
+    //stop horde
+
+
+    } else {
+
+
+    //stop contagion
+
+
+    }
+
+
+    If undead and zombie are equal or if zombie is greater than human or both, “stop
+    horde” will be done. The only way “stop contagion” will happen is if undead and
+    zombie are not equal *and* human is greater than zombie.
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/OJXaMmO](https://codepen.io/undeadinstitute/pen/OJXaMmO)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html](https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html)
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    Because we often test for true and false, changing everything to a literal true
+    or false or writing a specific test would be additional work every time we’re
+    testing something. So, as a shortcut, most programming languages (including JavaScript)
+    count several values as false that aren’t technically false. For instance, if
+    an expression or variable evaluates to 0, it’s counted as false. If it’s any other
+    numeric value, it will evaluate as true. In this way, you might see a single value
+    (this is a rather contrived example, but hopefully it will make sense).
+
+
+    let undead = 0; if ( undead ) {
+
+
+    //stop horde
+
+
+    } else {
+
+
+    //stop contagion
+
+
+    }
+
+
+    In that example, undead being equal to 0 would evaluate as false and “stop contagion”
+    would be done.
+
+
+    Other values that evaluate to false include null (meaning an empty variable/one
+    without a value), undefined (a variable that has never been set), an empty string
+    represented by two double or single quotation marks next to each other “” or ‘’,
+    and NaN which stands for not a number. You see it when you try to do numbery things
+    with non-numbers, such as “12” / 2 (remember that anything in quotation marks
+    is treated as a string, not a number) or on the protest signs of a populace being
+    barcoded by an authoritarian human settlement.
+
+
+    **Note:** this test works best on primitive types: numbers, strings, and so on.
+    It may not work on more complicated types like arrays (we’ll discuss these later).
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/ZEOmvjN](https://codepen.io/undeadinstitute/pen/ZEOmvjN)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html](https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html)
+
+
+    ## Getting Loopy with Zombies
+
+
+    The next important thing in JavaScript—and in other programming languages—is the
+    loop. Loops are just what they sound like, they do some code again and again and
+    again until they hit a stopping condition. There are two main types of loops (with
+    a couple variations): the for loop and the while loop.
+
+
+    For loops run whatever code you place between the curly brackets for a set number
+    of iterations.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    The letters i, j, and k are traditionally used as loop counters (a variable that
+    counts the number of iterations used. You don’t have to use these as your counter
+    values, but if you don’t, name your counters clearly. For clearer code, it’s best
+    not to use i, j, or k for any other kind of variable.
+
+
+    A traditional for loop in JavaScript looks like this:
+
+
+    for( let i = 0; i < 10; i++ ) {
+
+
+    //stop zombies 10 times
+
+
+    }
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/bGeQaZx](https://codepen.io/undeadinstitute/pen/bGeQaZx)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html](https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html)
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    You’ll notice that the i counter started at zero instead of one. This is not a
+    requirement, but it can make things easier in the long run. The reason is that
+    computers start counting at 0 rather than at 1\. (Like some zombies, computers
+    don’t have fingers to count on.) So later, when we work on arrays, their indexes
+    start at 0 rather than at 1, and if you start your for loop at 1, you’ll skip
+    the first array element, and the zombies will win. (If that made little sense,
+    no worries. We’ll get there.)
+
+
+    The for loop itself (inside the parentheses) is three statements in one. First
+    (let i = 0;), you instantiate the counter or just set it to an initial value.
+    Next (i < 10), you set the conditional for how long to continue the loop (i.e.,
+    while i is less than 10, keep running all the code between the curly brackets).
+    Finally (i++), you’re setting how fast you go from the initial value (i = 0) to
+    the end condition (when i is greater than or equal to 10). In most cases, that’s
+    by an increment of 1 (i++), but it could be a decrement (i--) or you could do
+    it by more than 1 depending on your needs (i += 2, etc.).
+
+
+    Be careful that you don’t set up a condition that will never come about, or the
+    loop will go on forever, and the zombies will win. For instance, if your condition
+    is i < 10, and you decrement instead of increment, then i will always be less
+    than 10, and your loop will never exit. (I’ve done this myself more times than
+    there are zombies in a horde, so if you find your browser hanging or repeating
+    something well beyond the number of times you anticipate, it’s best to just close
+    the browser window, fix your code, and then reopen the page. Hopefully you’ll
+    be free of the infinite loops that’ll eat your brain like a zombie with an empty
+    stomach).
+
+
+    let horde = 0; let humans = 100; for( let i = 0; i < 10; i++) {
+
+
+    horde += 10;
+
+
+    humans -= 10;
+
+
+    } //perform the same task using a decrementing loop let horde = 0; let humans
+    = 100; for( let j = 10; j < 1; j--) {
+
+
+    horde += 10;
+
+
+    humans -= 10;
+
+
+    }
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/JjKepGE](https://codepen.io/undeadinstitute/pen/JjKepGE)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html](https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html)
+
+
+    The for loop examples above, assume you have something numeric to compare. What
+    if there isn’t a set number of times to run something or a numeric comparison
+    just isn’t appropriate? That’s where the second kind of loop comes in, the while
+    loop.
+
+
+    The while loop tells the browser to keep looping *while* a condition is true.
+
+
+    let george = “zombie”, stillAZombie = true; while( stillAZombie ) { if( george
+    == “zombie” ) { tryToCure( george ); } else { stillAZombie = false; } }
+
+
+    The example above checks whether the stillAZombie variable is true. If it is,
+    it checks whether the george variable holds a string of “zombie.” If it does,
+    the program tries a cure on george. If the tryToCure function succeeds, then the
+    george variable will no longer hold “zombie,” the if test will fail, and the else
+    section will be executed, setting stillAZombie to false and ending the loop the
+    next time the while loop checks whether stillAZombie is true.
+
+
+    The while loop has a half-brother called the do-while loop. Do-while loops are
+    used when you want to put the conditional at the end of the loop (i.e., you want
+    to run the statements in the loop at least once).
+
+
+    let george = “zombie”, stillAzombie = true; do {
+
+
+    if( george == “zombie” ) {
+
+
+    tryToCure( george );
+
+
+    } else {
+
+
+    stillAZombie = false;
+
+
+    }
+
+
+    } while( stillAZombie );
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/zYBMRoB](https://codepen.io/undeadinstitute/pen/zYBMRoB)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html](https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html)'
+  toc: []
+  trans: "\n\n`Undead` 和 `zombie` 必须相等，并且 `zombie` 必须大于 `human`，浏览器才会执行“停止尸群”。如果两者都不成立，或者只有其中一个成立，则会执行“停止传染”。\n\
+    \n**OR** 表示如果任一语句为真，或者两者都为真，则执行“停止尸群”。\n\n```\nif( undead === zombie || zombie\
+    \ > human ) {\n  //stop horde\n} else {\n  //stop contagion\n}\n```\n\n如果 `undead`\
+    \ 和 `zombie` 相等，或者 `zombie` 大于 `human`，或者两者都成立，则执行“停止尸群”。只有当 `undead` 和 `zombie`\
+    \ 不相等 *并且* `human` 大于 `zombie` 时，才会执行“停止传染”。\n\n#### 动手试试：\n\nCodepen 演示：[`codepen.io/undeadinstitute/pen/OJXaMmO`](https://codepen.io/undeadinstitute/pen/OJXaMmO)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html`](https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html)\n\
+    \n![](img/livingtip-jsloops.png)\n\n#### 活死人之夜小贴士：\n\n由于我们经常测试 `true` 和 `false`，每次测试时都将所有内容改为字面量\
+    \ `true` 或 `false`，或者编写特定的测试，都会增加额外的工作。因此，作为一种快捷方式，大多数编程语言（包括 JavaScript）会将一些并非严格意义上的\
+    \ `false` 的值视为 `false`。例如，如果某个表达式或变量求值为 `0`，则被视为 `false`。如果是其他任何数值，则会被视为 `true`。这样，你可能会看到单个值（这个例子有点牵强，但希望你能理解）。\n\
+    \n```\nlet undead = 0;\nif ( undead ) {\n  //stop horde\n} else {\n  //stop contagion\n\
+    }\n```\n\n在这个例子中，`undead` 等于 `0` 会被视为 `false`，因此会执行“停止传染”。\n\n其他被视为 `false` 的值包括：`null`（表示空变量/没有值的变量）、`undefined`（从未被赋值的变量）、由两个双引号或单引号相邻表示的空字符串\
+    \ `“”` 或 `‘’`，以及 `NaN`（表示非数字）。当你尝试对非数字进行数字运算时，就会看到它，例如 `“12” / 2`（记住，引号内的任何内容都被视为字符串，而不是数字），或者出现在被威权人类定居点打上条形码的民众抗议标语上。\n\
+    \n**注意：** 这种测试最适用于原始类型：数字、字符串等。对于更复杂的类型（如数组，我们稍后会讨论），可能不适用。\n\n#### 动手试试：\n\n\
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/ZEOmvjN`](https://codepen.io/undeadinstitute/pen/ZEOmvjN)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/009-zombie-brain-is-null.html`](https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html)\n\
+    \n## 与僵尸一起循环\n\nJavaScript 以及其他编程语言中下一个重要的内容是循环。循环正如其名，它们会一遍又一遍地执行某些代码，直到达到停止条件。主要有两种类型的循环（以及一些变体）：`for`\
+    \ 循环和 `while` 循环。\n\n`for` 循环会在大括号内放置的代码上运行固定次数的迭代。\n\n![](img/livingtip-jsloops.png)\n\
+    \n#### 活死人之夜小贴士：\n\n字母 `i`、`j` 和 `k` 传统上用作循环计数器（用于统计迭代次数的变量）。你不必非得使用这些作为计数器值，但如果不使用，请清晰地命名你的计数器。为了代码更清晰，最好不要将\
+    \ `i`、`j` 或 `k` 用于其他类型的变量。\n\nJavaScript 中传统的 `for` 循环如下所示：\n\n```\nfor( let i\
+    \ = 0; i < 10; i++ ) {\n  //stop zombies 10 times\n}\n```\n\n#### 动手试试：\n\nCodepen\
+    \ 演示：[`codepen.io/undeadinstitute/pen/bGeQaZx`](https://codepen.io/undeadinstitute/pen/bGeQaZx)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html`](https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html)\n\
+    \n![](img/livingtip-jsloops.png)\n\n#### 活死人之夜小贴士：\n\n你会注意到 `i` 计数器从零开始而不是从一开始。这不是强制要求，但从长远来看，这会让事情更简单。原因是计算机从\
+    \ 0 开始计数，而不是从 1 开始。（就像某些僵尸一样，计算机没有手指可以数数。）因此，稍后当我们处理数组时，它们的索引从 0 开始而不是从 1 开始，如果你从\
+    \ 1 开始 `for` 循环，就会跳过第一个数组元素，僵尸就会获胜。（如果这听起来不太明白，别担心，我们后面会讲到。）\n\n`for` 循环本身（括号内）实际上是三个语句合为一体。首先（`let\
+    \ i = 0;`），你实例化计数器或将其设置为初始值。其次（`i < 10`），你设置循环继续的条件（即，当 `i` 小于 10 时，持续运行大括号内的所有代码）。最后（`i++`），你设置从初始值（`i\
+    \ = 0`）到结束条件（当 `i` 大于或等于 10 时）的步进速度。大多数情况下，步进为 1（`i++`），但也可以是递减（`i--`），或者根据需求步进大于\
+    \ 1（`i += 2` 等）。\n\n注意不要设置一个永远无法达到的条件，否则循环会无限进行下去，僵尸就会获胜。例如，如果你的条件是 `i < 10`，而你使用了递减而不是递增，那么\
+    \ `i` 将始终小于 10，循环永远不会退出。（我自己犯这种错误的次数比尸群中的僵尸还多，所以如果你发现浏览器卡住或重复执行远超预期的次数，最好直接关闭浏览器窗口，修复代码，然后重新打开页面。希望你能摆脱那些像饿肚子僵尸一样吞噬你大脑的无限循环。）\n\
+    \n```\nlet horde = 0;\nlet humans = 100;\nfor( let i = 0; i < 10; i++) {\n  horde\
+    \ += 10;\n  humans -= 10;\n}\n//perform the same task using a decrementing loop\n\
+    let horde = 0;\nlet humans = 100;\nfor( let j = 10; j < 1; j--) {\n  horde +=\
+    \ 10;\n  humans -= 10;\n}\n```\n\n#### 动手试试：\n\nCodepen 演示：[`codepen.io/undeadinstitute/pen/JjKepGE`](https://codepen.io/undeadinstitute/pen/JjKepGE)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/011-loopy-little-zombies.html`](https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html)\n\
+    \n上面的 `for` 循环示例假设你有某种数值可以比较。如果没有固定的运行次数，或者数值比较不合适，该怎么办？这时就需要第二种循环——`while` 循环。\n\
+    \n`while` 循环告诉浏览器在条件为真时持续循环。\n\n```\nlet george = “zombie”, stillAZombie = true;\n\
+    while( stillAZombie ) {\n  if( george == “zombie” ) {\n    tryToCure( george );\n\
+    \  } else {\n    stillAZombie = false;\n  }\n}\n```\n\n上面的示例检查 `stillAZombie`\
+    \ 变量是否为 `true`。如果是，则检查 `george` 变量是否包含字符串“zombie”。如果是，程序尝试对 `george` 进行治疗。如果 `tryToCure`\
+    \ 函数成功，那么 `george` 变量将不再包含“zombie”，`if` 测试失败，并执行 `else` 部分，将 `stillAZombie` 设置为\
+    \ `false`，并在下一次 `while` 循环检查 `stillAZombie` 是否为 `true` 时结束循环。\n\n`while` 循环有一个同父异母的兄弟叫做\
+    \ `do-while` 循环。当你希望将条件放在循环末尾（即希望循环中的语句至少执行一次）时，可以使用 `do-while` 循环。\n\n```\nlet\
+    \ george = “zombie”, stillAzombie = true;\ndo {\n  if( george == “zombie” ) {\n\
+    \    tryToCure( george );\n  } else {\n    stillAZombie = false;\n  }\n} while(\
+    \ stillAZombie );\n```\n\n#### 动手试试：\n\nCodepen 演示：[`codepen.io/undeadinstitute/pen/zYBMRoB`](https://codepen.io/undeadinstitute/pen/zYBMRoB)\n\
+    \n文件演示：[`undead.institute/files/zombie-programming/012-while-zombie-freak-out.html`](https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html)\n\
+    \n"
+- fmt: '
+
+    The `do-while` loop above does the same thing as the `while` loop did, but the
+    `if` test is ensured to run at least once.
+
+
+    Be careful with this kind of loop though, because if `stillAzombie` never becomes
+    `false`, then your loop will continue forever, and the zombies will winter in
+    Florida while taking out loans in your name and ruining that credit score you
+    worked so hard to get. You know…they’ll win.
+
+
+    ## Zombie Sniper and Variable Scopes
+
+
+    Before we go further, let’s talk about variable scope—that is, where you can use
+    a variable. When we define a bucket using `var` or `let` or `const`, it’s like
+    we’re writing its name on the side. If you have a horde of buckets with names
+    on their sides, it can take a while to find the one you want, right? So JavaScript
+    allows you to create groups of buckets and localize the bucket names to make things
+    easier to find and make sure there aren’t any conflicts. You can think of a group
+    of buckets as all the buckets (variables) defined between two curly brackets.
+    Any bucket you’ve named within that group won’t be used outside that group, but
+    any variable declared outside that group can also be used within the group. For
+    instance:
+
+
+    ```
+
+    let zombie = 0; for( let i = 0; i < 10; i++ ) {
+
+
+    let undead = i;
+
+
+    zombie = i;
+
+
+    }
+
+
+    //print contents of both variables. document.write(zombie); //Output is 10 document.write(undead);
+    //Output is undefined
+
+    ```
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/abZQPye](https://codepen.io/undeadinstitute/pen/abZQPye)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html](https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html)
+
+
+    Since the variable `zombie` was defined outside the `for` loop/curly brackets,
+    it can be accessed from within the loop and changed. However, since `undead` was
+    defined within the loop, it does not exist outside of that and thus will be `undefined`
+    when printed outside the loop.
+
+
+    ## An Array of Apocalyptic Outcomes
+
+
+    There’s one more data type to discuss, though this might be better called a data
+    structure: the array. You can think of an array as an orderly line of buckets,
+    or a line of people with empty bowls waiting for whatever-we-got stew at your
+    nearest human resistance cell. This line is a useful way to group everyone, and
+    you could either go down the line and hand out stew, or you could call out names
+    for them to come get stew, or you could send out a line of stew cooks the same
+    size as the line of hungry people to give them stew. Whatever way you access the
+    people in the line, you can because they’re all in one place and in an order you
+    understand. Arrays are a line of buckets or variables. You can access all the
+    variables in sequence using their indices (places in line), pull out a specific
+    variable in the array (you can have string names as your indices too), or you
+    can use a `map` function (we’ll get to these in the next book) to do work on all
+    the variables at once.
+
+
+    Arrays use bracket notation to designate which bucket you are on. By default,
+    indices are numbered starting at zero. (Empty brackets designate creating an empty
+    array.)
+
+
+    ```
+
+    let horde = []; horde[0] = "Bob"; horde[1] = "Fred"; horde[2] = "Leroy"; //the
+    horde array then looks like ["Bob", "Fred", "Leroy"]
+
+    ```
+
+
+    You can also create that array this way:
+
+
+    ```
+
+    let horde = ["Bob", "Fred", "Leroy"];
+
+    ```
+
+
+    But you aren’t limited to a line of buckets. You can also create a line of lines
+    and a line of lines of lines and a line of lines of lines of...you get it. You
+    can create arrays of multiple dimensions. A two-dimensional array is like a square.
+    If you’ve ever seen a majority military human resistance cell walk into battle
+    or the last vestiges of our air force planes fly in a tight, square formation,
+    you’ll understand what I mean. Or look at this array of buckets:
+
+
+    ![](images/Image1.png)
+
+
+    A two-dimensional array is accessed in a similar way as a one-dimensional array
+    but with two indices (one horizontal, and one vertical).
+
+
+    `let zombie = horde[6][2];`
+
+
+    The code above would save the contents of seven down and three across into the
+    variable `zombie`. (Don’t forget. A two-dimensional array’s first cell is at `[0][0]`.)
+
+
+    There are also a few array-specific properties we can use to get information about
+    the array. One of the most common is `length`, which gives us the number of items
+    in the array, allowing us to write a `for` loop to search the entire array. You
+    call `length` by adding a period after the array name and the word `length`.
+
+
+    ```
+
+    let horde = [ 1, 0, 0, 1, 1 ]; let results = []; for( let i = 0; i < horde.length;
+    i++) {
+
+
+    results[i] = tryToCure( horde[i] );
+
+
+    }
+
+    ```
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010](https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html](https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html)
+
+
+    Using the code above, you go through every bucket in the array. Bucket zero is
+    the first one in the `horde` array or `horde[0]`. When you increment `i` by one,
+    you can look at the second bucket or `horde[1]`, and so on, till you get through
+    the entire array.
+
+
+    ## Functional Apocalypse
+
+
+    Sometimes you create a section of code that you want to use again and again—for
+    instance, code that cures the zombie contagion or that finds the highest strength
+    zombie in a horde.
+
+
+    Now in your human resistance cell, you could do every task yourself and overload
+    your schedule. Or you could delegate a task to Fred or Nancy, and then they could
+    do that task every time and be excellent at it (rather than you having to relearn/remember
+    that task every time you had to do it).
+
+
+    It’s similar with code. Rather than writing that same set of code again and again
+    and again, you can put it in a function. A function is a set of tasks/code that
+    you can reuse. Like asking Fred or Nancy to do the task, you ask the function
+    to do the task.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    While there is some disagreement on the best way to use functions, whether you
+    do almost everything in small functions or use more monolithic functions, both
+    have their advantages. More functions can make it harder to follow the code and
+    can make things confusing because the code won’t be as linear and will jump around
+    from location to location wherever the function is defined. On the other hand,
+    if something’s wrong, it’s confined to a rather small section of code. Using more
+    monolithic functions can make it easier to find the function the problem is in,
+    but that is often an extensive section of code.
+
+
+    I’d recommend a middle approach. When you start out, have your functions do one
+    thing at a time and anything you do multiple times. They’re easier to debug (figure
+    out where the code went wrong/why it’s not doing what you intend), and, once you
+    have some practice, you’ll get a handle on when you need a function or not, and
+    what makes sense to you.
+
+
+    Before we do some function code, we need to discuss how we hand information to
+    Fred or Nancy and how we get information back from them.
+
+
+    You don’t always need to give a function (or Fred or Nancy) any information to
+    perform their task other than “Go!” But you might have a horde you want them to
+    target or a weapon you want them to reload or a specific zombie you want them
+    to cure, such as a formerly human spouse or child. When you pass information to
+    a function or hand data to Fred or Nancy to process, that information or data
+    is called a parameter, and you can have none, one, two, or however many parameters
+    or inputs into a function.
+
+    '
+  raw: 'The do-while loop above does the same thing as the while loop did, but the
+    if test is ensured to run at least once.
+
+
+    Be careful with this kind of loop though, because if stillAzombie never becomes
+    false, then your loop will continue forever, and the zombies will winter in Florida
+    while taking out loans in your name and ruining that credit score you worked so
+    hard to get. You know…they’ll win.
+
+
+    ## Zombie Sniper and Variable Scopes
+
+
+    Before we go further, let’s talk about variable scope—that is, where you can use
+    a variable. When we define a bucket using var or let or const, it’s like we’re
+    writing its name on the side. If you have a horde of buckets with names on their
+    sides, it can take a while to find the one you want, right? So JavaScript allows
+    you to create groups of buckets and localize the bucket names to make things easier
+    to find and make sure there aren’t any conflicts. You can think of a group of
+    buckets as all the buckets (variables) defined between two curly brackets. Any
+    bucket you’ve named within that group won’t be used outside that group, but any
+    variable declared outside that group can also be used within the group. For instance:
+
+
+    let zombie = 0; for( let i = 0; i < 10; i++ ) {
+
+
+    let undead = i;
+
+
+    zombie = i;
+
+
+    }
+
+
+    //print contents of both variables. document.write(zombie); //Output is 10 document.write(undead);
+    //Output is undefined
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/abZQPye](https://codepen.io/undeadinstitute/pen/abZQPye)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html](https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html)
+
+
+    Since the variable zombie was defined outside the for loop/curly brackets, it
+    can be accessed from within the loop and changed. However, since undead was defined
+    within the loop, it does not exist outside of that and thus will be undefined
+    when printed outside the loop.
+
+
+    ## An Array of Apocalyptic Outcomes
+
+
+    There’s one more data type to discuss, though this might be better called a data
+    structure: the array. You can think of an array as an orderly line of buckets,
+    or a line of people with empty bowls waiting for whatever-we-got stew at your
+    nearest human resistance cell. This line is a useful way to group everyone, and
+    you could either go down the line and hand out stew, or you could call out names
+    for them to come get stew, or you could send out a line of stew cooks the same
+    size as the line of hungry people to give them stew. Whatever way you access the
+    people in the line, you can because they’re all in one place and in an order you
+    understand. Arrays are a line of buckets or variables. You can access all the
+    variables in sequence using their indices (places in line), pull out a specific
+    variable in the array (you can have string names as your indices too), or you
+    can use a map function (we’ll get to these in the next book) to do work on all
+    the variables at once.
+
+
+    Arrays use bracket notation to designate which bucket you are on. By default,
+    indices are numbered starting at zero. (Empty brackets designate creating an empty
+    array.)
+
+
+    let horde = []; horde[0] = “Bob”; horde[1] = “Fred”; horde[2] = “Leroy”; //the
+    horde array then looks like [“Bob”, “Fred”, “Leroy”]
+
+
+    You can also create that array this way:
+
+
+    let horde = [“Bob”, “Fred”, “Leroy”];
+
+
+    But you aren’t limited to a line of buckets. You can also create a line of lines
+    and a line of lines of lines and a line of lines of lines of...you get it. Youcan
+    create arrays of multiple dimensions. A two-dimensional array is like a square.
+    If you’ve ever seen a majority military human resistance cell walk into battle
+    or the last vestiges of our air force planes fly in a tight, square formation,
+    you’ll understand what I mean. Or look at this array of buckets:
+
+
+    ![](images/Image1.png)
+
+
+    A two-dimensional array is accessed in a similar way as a one-dimensional array
+    but with two indices (one horizontal, and one vertical).
+
+
+    let zombie = horde[6][2];
+
+
+    The code above would save the contents of seven down and three across into the
+    variable zombie. (Don’t forget. A two-dimensional array’s first cell is at [0][0].)
+
+
+    There are also a few array-specific properties we can use to get information about
+    the array. One of the most common is length, which gives us the number of items
+    in the array, allowing us to write a for loop to search the entire array. You
+    call length by adding a period after the array name and the word length.
+
+
+    let horde = [ 1, 0, 0, 1, 1 ]; let results = []; for( let i = 0; i < horde.length;
+    i++) {
+
+
+    results[i] = tryToCure( horde[i] );
+
+
+    }
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010](https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html](https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html)
+
+
+    Using the code above, you go through every bucket in the array. Bucket zero is
+    the first one in the horde array or horde[0]. When you increment i by one, you
+    can look at the second bucket or horde[1], and so on, till you get through the
+    entire array.
+
+
+    ## Functional Apocalypse
+
+
+    Sometimes you create a section of code that you want to use again and again—for
+    instance, code that cures the zombie contagion or that finds the highest strength
+    zombie in a horde.
+
+
+    Now in your human resistance cell, you could do every task yourself and overload
+    your schedule. Or you could delegate a task to Fred or Nancy, and then they could
+    do that task every time and be excellent at it (rather than you having to relearn/remember
+    that task every time you had to do it).
+
+
+    It’s similar with code. Rather than writing that same set of code again and again
+    and again, you can put it in a function. A function is a set of tasks/code that
+    you can reuse. Like asking Fred or Nancy to do the task, you ask the function
+    to do the task.
+
+
+    ![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    While there is some disagreement on the best way to use functions, whether you
+    do almost everything in small functions or use more monolithic functions, both
+    have their advantages. More functions can make it harder to follow the code and
+    can make things confusing because the code won’t be as linear and will jump around
+    from location to location wherever the function is defined. On the other hand,
+    if something’s wrong, it’s confined to a rather small section of code. Using more
+    monolithic functions can make it easier to find the function the problem is in,
+    but that is often an extensive section of code.
+
+
+    I’d recommend a middle approach. When you start out, have your functions do one
+    thing at a time and anything you do multiple times. They’re easier to debug (figure
+    out where the code went wrong/why it’s not doing what you intend), and, once you
+    have some practice, you’ll get a handle on when you need a function or not, and
+    what makes sense to you.
+
+
+    Before we do some function code, we need to discuss how we hand information to
+    Fred or Nancy and how we get information back from them.
+
+
+    You don’t always need to give a function (or Fred or Nancy) any information to
+    perform their task other than “Go!” But you might have a horde you want them to
+    target or a weapon you want them to reload or a specific zombie you want them
+    to cure, such as a formerly human spouse or child. When you pass information to
+    a function or hand data to Fred or Nancy to process, that information or data
+    is called a parameter, and you can have none, one, two, or however many parameters
+    or inputs into a function.'
+  toc: []
+  trans: '
+
+
+    上面的 `do-while` 循环与 `while` 循环功能相同，但确保了 `if` 测试至少执行一次。
+
+
+    不过要小心这种循环，因为如果 `stillAzombie` 永远不会变成 `false`，那么你的循环将永远持续下去，僵尸们会在佛罗里达过冬，同时以你的名义贷款，毁掉你辛苦挣来的信用评分。你懂的……它们会赢。
+
+
+    ## 僵尸狙击手与变量作用域
+
+
+    在继续之前，我们先谈谈变量作用域——也就是你可以在哪里使用变量。当我们用 `var`、`let` 或 `const` 定义一个“桶”时，就像在桶侧面写上名字。如果你有一大堆侧面写有名字的桶，要找到你想要的那个可能需要花点时间，对吧？所以
+    JavaScript 允许你创建桶的分组，并将桶名局部化，以便更容易找到，并确保没有冲突。你可以把一组桶想象成两个花括号之间定义的所有桶（变量）。在该组内命名的任何桶都不会在组外使用，但在组外声明的任何变量也可以在组内使用。例如：
+
+
+    ```
+
+    let zombie = 0; for( let i = 0; i < 10; i++ ) {
+
+
+    let undead = i;
+
+
+    zombie = i;
+
+
+    }
+
+
+    //打印两个变量的内容。 document.write(zombie); //输出为 10 document.write(undead); //输出为 undefined
+
+    ```
+
+
+    #### 动手试试：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/abZQPye`](https://codepen.io/undeadinstitute/pen/abZQPye)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html`](https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html)
+
+
+    由于变量 `zombie` 是在 `for` 循环/花括号外部定义的，因此可以在循环内部访问并修改它。然而，`undead` 是在循环内部定义的，所以在循环外部它不存在，因此在循环外部打印时会是
+    `undefined`。
+
+
+    ## 末日结局数组
+
+
+    还有另一种数据类型需要讨论，不过它更应被称为数据结构：数组。你可以把数组想象成一排有序的桶，或者是一排端着空碗的人，等着你最近的人类抵抗组织分发的“有啥炖啥”。这种排队方式能有效地将所有人分组，你可以沿着队伍分发炖菜，也可以喊名字让他们来取，或者派出一排与饥饿人群数量相等的炖菜厨师来分发。无论你用什么方式访问队伍中的人，都能做到，因为他们都在一个地方，并且按你理解的顺序排列。数组就是一行桶或变量。你可以通过索引（在队伍中的位置）按顺序访问所有变量，取出数组中的特定变量（你也可以使用字符串名称作为索引），或者使用
+    `map` 函数（我们将在下一本书中介绍）一次性对所有变量进行操作。
+
+
+    数组使用方括号表示法来指定你当前所在的桶。默认情况下，索引从零开始编号。（空方括号表示创建一个空数组。）
+
+
+    ```
+
+    let horde = []; horde[0] = "Bob"; horde[1] = "Fred"; horde[2] = "Leroy"; //horde
+    数组看起来像 ["Bob", "Fred", "Leroy"]
+
+    ```
+
+
+    你也可以这样创建该数组：
+
+
+    ```
+
+    let horde = ["Bob", "Fred", "Leroy"];
+
+    ```
+
+
+    但你不限于一排桶。你还可以创建一排排的桶，以及一排排排的桶，以及一排排排排的……你懂的。你可以创建多维数组。二维数组就像一个正方形。如果你见过大多数军事化人类抵抗组织列队作战，或者我们空军最后的飞机以紧密的方形编队飞行，你就会明白我的意思。或者看看这个桶的数组：
+
+
+    ![](img/Image1.png)
+
+
+    二维数组的访问方式与一维数组类似，但有两个索引（一个水平，一个垂直）。
+
+
+    `let zombie = horde[6][2];`
+
+
+    上面的代码会将第七行第三列的内容保存到变量 `zombie` 中。（别忘了，二维数组的第一个单元格位于 `[0][0]`。）
+
+
+    还有一些数组特有的属性可以用来获取数组的信息。其中最常用的是 `length`，它返回数组中的元素数量，使我们能够编写 `for` 循环来搜索整个数组。调用
+    `length` 的方法是在数组名后面加上一个点号和 `length` 这个词。
+
+
+    ```
+
+    let horde = [ 1, 0, 0, 1, 1 ]; let results = []; for( let i = 0; i < horde.length;
+    i++) {
+
+
+    results[i] = tryToCure( horde[i] );
+
+
+    }
+
+    ```
+
+
+    #### 动手试试：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/ExyGryj?editors=0010`](https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html`](https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html)
+
+
+    使用上面的代码，你遍历数组中的每一个桶。桶零是 `horde` 数组中的第一个，即 `horde[0]`。当你将 `i` 递增 1 时，你可以查看第二个桶，即
+    `horde[1]`，依此类推，直到遍历整个数组。
+
+
+    ## 函数式末日
+
+
+    有时你会创建一段想要反复使用的代码——例如，治愈僵尸感染的代码，或者在一群僵尸中找出最强僵尸的代码。
+
+
+    现在，在你的人类抵抗组织中，你可以亲自完成所有任务，让自己的日程超负荷。或者你可以把任务委派给弗雷德或南希，然后他们每次都能完成那个任务，并且做得非常出色（而不是你每次都要重新学习/记住那个任务）。
+
+
+    代码也是如此。与其一遍又一遍地编写同一组代码，你可以将其放入一个函数中。函数是一组可重用的任务/代码。就像请弗雷德或南希去做任务一样，你请函数去做任务。
+
+
+    ![](img/livingtip-jsloops.png)
+
+
+    #### 活死人小贴士：
+
+
+    虽然关于使用函数的最佳方式存在一些分歧——是几乎所有事情都用小函数，还是使用更庞大的函数——但两者各有优势。函数过多可能会使代码难以跟踪，并造成混乱，因为代码不再是线性的，而是会在函数定义的位置之间跳来跳去。另一方面，如果出了问题，问题会被限制在相当小的代码段内。使用更庞大的函数可以更容易地找到问题所在的函数，但该函数通常是一大段代码。
+
+
+    我建议采取折中的方法。刚开始时，让你的函数一次只做一件事，并且只做那些你需要多次做的事情。这样更容易调试（找出代码出错的地方/为什么没有按预期工作），而且一旦你有了一些练习，你就会掌握何时需要函数、何时不需要，以及什么对你来说有意义。
+
+
+    在编写函数代码之前，我们需要讨论如何将信息传递给弗雷德或南希，以及如何从他们那里获取信息。
+
+
+    你并不总是需要给函数（或弗雷德或南希）任何信息来执行任务，只需说“开始！”即可。但你可能希望他们瞄准一群僵尸，或者重新装填武器，或者治愈某个特定的僵尸，比如曾经是人类配偶或孩子的僵尸。当你将信息传递给函数，或者将数据交给弗雷德或南希处理时，这些信息或数据被称为参数，你可以有零个、一个、两个或任意数量的参数或输入。
+
+
+    '
+- fmt: '
+
+    After the task is complete, you might want Fred or Nancy to hand something back
+    to you or return with some information. That might be a now reloaded weapon or
+    whether the antidote worked on your un-bucket-kicking spouse or child. (Don’t
+    worry, the antidote was infused with JavaScript code, and your spouse/child is
+    now resting, fully restored.) If they hand you a bunch of things, it’ll be hard
+    to know what each thing is unless it’s organized (e.g. like into an array or something).
+    Functions can only return one value, but that value could be an array, allowing
+    you to circumvent the one-value return policy.
+
+
+    A function definition (where you define the function’s name and what it does)
+    begins with the word *function*, and then you enter the case-sensitive name you
+    want to give that function. Next, in parentheses, add any parameters in a comma-separated
+    list. If you don’t have any parameters, just leave the space between the parentheses
+    blank/empty.
+
+
+    ```
+
+    function tryToCure( person ) {
+
+
+    let result = Math.random() * 100;
+
+
+    if(result <= 10) {
+
+
+    return person + " is cured!";
+
+
+    } else {
+
+
+    return person + " is still a zombie";
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    When you call the function, you could write:
+
+
+    `tryToCure( spouse );`
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/wvWNvXa](https://codepen.io/undeadinstitute/pen/wvWNvXa)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/015-functionally-undead.html](https://undead.institute/files/zombie-programming/015-functionally-undead.html)
+
+
+    It will be just as though you handed Nancy your spouse’s whereabouts and asked
+    her to use a tranquilizer dart to bring your spouse in and administer the antidote.
+
+
+    To capture the returned value, you need to save it in a variable. Returning a
+    value is optional.
+
+
+    `let human = tryToCure( spouse );`
+
+
+    If you had no parameters to send the function, you could write this:
+
+
+    ```
+
+    function cureAllZombies() {
+
+
+    //cure all zombies
+
+
+    if( allCured == true ) {
+
+
+    return true;
+
+
+    } else {
+
+
+    return false;
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    If it didn’t return a value because Fred cured all the zombies, there would be
+    no return statement in the function and no need to capture a result. It would
+    be called like this:
+
+
+    `cureAllZombies();`
+
+
+    With two or more parameters, you separate the parameters with commas.
+
+
+    ```
+
+    function cureTwoZombies( zombie1, zombie2) {
+
+
+    //cure two zombies
+
+
+    }
+
+    ```
+
+
+    Assuming it didn’t need to return anything, it would be called like this:
+
+
+    `cureTwoZombies( spouse, child );`
+
+
+    Let’s look at an example program. For arbitrary reasons that make this example
+    easier, we magically have an array filled with zombie results from the latest
+    testing done at a hospital. It is held in a one-dimensional array, and the results
+    are set up so that a 1 is a human and a 0 is a zombie ("because zombies are zeroes
+    and humans are heroes," said the totally cool and hip author...). The hospital
+    wants a JavaScript program to sort the array into humans and zombies and get a
+    count of each.
+
+
+    ```
+
+    let patientList = [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0 ], i = 0; let humans = 0,
+    zombies = 0; while (patientList[i] != null) {
+
+
+    if( patientList[i] === 1 ) {
+
+
+    humans++;
+
+
+    } else {
+
+
+    zombies++;
+
+
+    }
+
+
+    i++
+
+
+    } //Output: humans 7, zombies 5
+
+    ```
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/KKMJwEB](https://codepen.io/undeadinstitute/pen/KKMJwEB)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html](https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html)
+
+
+    Now that we have some idea of how the logic and programming works, how do we add
+    this stuff to the HTML page? There are several ways, but the most important is
+    the HTML script tag.
+
+
+    ```
+
+    <script type=“text/javascript”>
+
+
+    cureAllZombies();
+
+
+    </script>
+
+    ```
+
+
+    You can also use the script tag to load a file full of JavaScript.
+
+
+    `<script src=“thecure.js” type=“text/javascript”></script>`![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    You want to load your JavaScript code as late as possible in the downloading of
+    the site—that is just before the closing body tag. If you load it earlier, such
+    as in the head tag, it can block the download of other assets. The total time
+    spent downloading will be the same wherever the JavaScript is placed, but if it
+    blocks download or rendering because the browser is waiting on your js file to
+    download or your js code to execute, it can prevent the rest of the page from
+    displaying, giving the user a blank screen for longer. Even if the page isn’t
+    functional until the js loads, the user likes to see that things are working,
+    and the browser rendering what it can will help. A blank page, like a zombie''s
+    blank stare, usually means something is broken and users will assume as such.
+    There will be some JavaScript that needs to be executed before the page loads
+    or to determine how the page loads, so there may very well be JavaScript in the
+    head, but if it''s pushed to the bottom and the page still works as intended,
+    that would be ideal.
+
+
+    This book covered most of the basic tools you need to get up and running with
+    programming with an eye towards doing so in JavaScript. While the syntax/how you
+    write it will vary, most programming languages have all the concepts discussed
+    here. The next book, *JavaScript Basics: Flinging Event, Element, and Object Bombs
+    at Zombie Heads* will get into specifics of and focus on JavaScript and some unique
+    offerings of that language.
+
+
+    But before we go there, let’s test out those skills.
+
+
+    ## Punch Those Zombies in the Array
+
+
+    You will take a two-dimensional array composed of names and a super-secret numbery
+    biologicy thingy (NBT) and process that array using several functions. The starter
+    HTML file/codepen will hold the array and have stubs for the functions.
+
+
+    #### Starter File
+
+
+    Codepen: [https://codepen.io/undeadinstitute/pen/jOrdwrE](https://codepen.io/undeadinstitute/pen/jOrdwrE)
+
+
+    File: [https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html](https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    Your first function, `processPerson`, should take the subject’s name and the conveniently
+    provided `NBT`. (Running it in a loop would probably help you process all the
+    entries.) The `NBT`, due to arbitrary convenience for this exercise, can tell
+    you both whether a subject will become a zombie and whether a cure will work on
+    them once they become a zombie.
+
+
+    From `processPerson`, hand the `NBT` to a function called `willBecomeZombie`.
+    `willBecomeZombie` should return `true` or `false`. If the `NBT` modulus 7 is
+    2 or more, the person, if infected, will become a zombie, so return `true`. If
+    it’s 0 or 1, return `false`.
+
+
+    Also from `processPerson`, you call a function named `infectionRateCalculation`
+    to calculate the likelihood of infection using that magical `NBT`. Divide the
+    `NBT` by 19307 and multiply the result by 0.1257. That will give you the infection
+    rate of others should the person be infected. Return the infection rate so that
+    you can print it with the other info.
+
+
+    From `processPerson`, call a function called `curable` that takes the `NBT`. The
+    antidote will work on the person if (`NBT` * 3 + 2) modulus 17 is 0 or 7. Therefore,
+    those values should return `true`. Any other value should return `false`.
+
+
+    Once you have all the information calculated, call a function that outputs it
+    to the screen using `document.write`. Your output should list the person’s name
+    and label the results of each function. Please also ensure that each person’s
+    info prints on its own line.
+
+
+    #### Example Answer:
+
+
+    Codepen: [https://codepen.io/undeadinstitute/pen/xxOMWbd](https://codepen.io/undeadinstitute/pen/xxOMWbd)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html](https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    ### Got Questions?
+
+    '
+  raw: 'After the task is complete, you might want Fred or Nancy to hand something
+    back to you or return with some information. That might be a now reloaded weapon
+    or whether the antidote worked on your un-bucket-kicking spouse or child. (Don’t
+    worry, the antidote was infused with JavaScript code, and your spouse/child is
+    now resting, fully restored.) If they hand you a bunch of things, it’ll be hard
+    to know what each thing is unless it’s organized (e.g. like into an array or something).
+    Functions can only return one value, but that value could be an array, allowing
+    you to circumvent the one-value return policy.
+
+
+    A function definition (where you define the function’s name and what it does)
+    begins with the word *function*, and then you enter the case-sensitive name you
+    want to give that function. Next, in parentheses, add any parameters in a comma-separated
+    list. If you don’t have any parameters, just leave the space between the parentheses
+    blank/empty.
+
+
+    function tryToCure( person ) {
+
+
+    let result = Math.random() * 100;
+
+
+    if(result <= 10) {
+
+
+    return person + " is cured!";
+
+
+    } else {
+
+
+    return person + " is still a zombie";
+
+
+    }
+
+
+    }
+
+
+    When you call the function, you could write:
+
+
+    tryToCure( spouse );
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/wvWNvXa](https://codepen.io/undeadinstitute/pen/wvWNvXa)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/015-functionally-undead.html](https://undead.institute/files/zombie-programming/015-functionally-undead.html)
+
+
+    It will be just as though you handed Nancy your spouse’s whereabouts and asked
+    her to use a tranquilizer dart to bring your spouse in and administer the antidote.
+
+
+    To capture the returned value, you need to save it in a variable. Returning a
+    value is optional.
+
+
+    let human = tryToCure( spouse );
+
+
+    If you had no parameters to send the function, you could write this:
+
+
+    function cureAllZombies() {
+
+
+    //cure all zombies
+
+
+    if( allCured == true ) {
+
+
+    return true;
+
+
+    } else {
+
+
+    return false;
+
+
+    }
+
+
+    }
+
+
+    If it didn’t return a value because Fred cured all the zombies, there would be
+    no return statement in the function and no need to capture a result. It would
+    be called like this:
+
+
+    cureAllZombies();
+
+
+    With two or more parameters, you separate the parameters with commas.
+
+
+    function cureTwoZombies( zombie1, zombie2) {
+
+
+    //cure two zombies
+
+
+    }
+
+
+    Assuming it didn’t need to return anything, it would be called like this:
+
+
+    cureTwoZombies( spouse, child );
+
+
+    Let’s look at an example program. For arbitrary reasons that make this example
+    easier, we magically have an array filled with zombie results from the latest
+    testing done at a hospital. It is held in a one-dimensional array, and the results
+    are set up so that a 1 is a human and a 0 is a zombie ("because zombies are zeroes
+    and humans are heroes," said the totally cool and hip author...). The hospital
+    wants a JavaScript program to sort the array into humans and zombies and get a
+    count of each.
+
+
+    let patientList = [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0 ], i = 0; let humans = 0,
+    zombies = 0; while (patientList[i] != null) {
+
+
+    if( patientList[i] === 1 ) {
+
+
+    humans++;
+
+
+    } else {
+
+
+    zombies++;
+
+
+    }
+
+
+    i++
+
+
+    } //Output: humans 7, zombies 5
+
+
+    #### Try it Out:
+
+
+    Codepen Demo: [https://codepen.io/undeadinstitute/pen/KKMJwEB](https://codepen.io/undeadinstitute/pen/KKMJwEB)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html](https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html)
+
+
+    Now that we have some idea of how the logic and programming works, how do we add
+    this stuff to the HTML page? There are several ways, but the most important is
+    the HTML script tag.
+
+
+    <script type=“text/javascript”>
+
+
+    cureAllZombies();
+
+
+    </script>
+
+
+    You can also use the script tag to load a file full of JavaScript.
+
+
+    <script src=“thecure.js” type=“text/javascript”></script>![](images/livingtip-jsloops.png)
+
+
+    #### Night of the Living Tip:
+
+
+    You want to load your JavaScript code as late as possible in the downloading of
+    the site—that is just before the closing body tag. If you load it earlier, such
+    as in the head tag, it can block the download of other assets. The total time
+    spent downloading will be the same wherever the JavaScript is placed, but if it
+    blocks download or rendering because the browser is waiting on your js file to
+    download or your js code to execute, it can prevent the rest of the page from
+    displaying, giving the user a blank screen for longer. Even if the page isn’t
+    functional until the js loads, the user likes to see that things are working,
+    and the browser rendering what it can will help. A blank page, like a zombie''s
+    blank stare, usually means something is broken and users will assume as such.
+    There will be some JavaScript that needs to be executed before the page loads
+    or to determine how the page loads, so there may very well be JavaScript in the
+    head, but if it''s pushed to the bottom and the page still works as intended,
+    that would be ideal.
+
+
+    This book covered most of the basic tools you need to get up and running with
+    programming with an eye towards doing so in JavaScript. While the syntax/how you
+    write it will vary, most programming languages have all the concepts discussed
+    here. The next book, *JavaScript Basics: Flinging Event, Element, and Object Bombs
+    at Zombie Heads* will get into specifics of and focus on JavaScript and some unique
+    offerings of that language.
+
+
+    But before we go there, let’s test out those skills.
+
+
+    ## Punch Those Zombies in the Array
+
+
+    You will take a two-dimensional array composed of names and a super-secret numbery
+    biologicy thingy (NBT) and process that array using several functions. The starter
+    HTML file/codepen will hold the array and have stubs for the functions.
+
+
+    #### Starter File
+
+
+    Codepen: [https://codepen.io/undeadinstitute/pen/jOrdwrE](https://codepen.io/undeadinstitute/pen/jOrdwrE)
+
+
+    File: [https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html](https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    Your first function, processPerson, should take the subject’s name and the conveniently
+    provided NBT. (Running it in a loop would probably help you process all the entries.)
+    The NBT, due to arbitrary convenience for this exercise, can tell you both whether
+    a subject will become a zombie and whether a cure will work on them once they
+    become a zombie.
+
+
+    From processPerson, hand the NBT to a function called willBecomeZombie. willBecomeZombie
+    should return true or false. If the NBT modulus 7 is 2 or more, the person, if
+    infected, will become a zombie, so return true. If it’s 0 or 1, return false.
+
+
+    Also from processPerson, you call a function named infectionRateCalculation to
+    calculate the likelihood of infection using that magical NBT. Divide the NBT by
+    19307 and multiply the result by 0.1257\. That will give you the infection rate
+    of others should the person be infected. Return the infection rate so that you
+    can print it with the other info.
+
+
+    From processPerson, call a function called curable that takes the NBT. The antidote
+    will work on the person if (NBT * 3 + 2) modulus 17 is 0 or 7\. Therefore, those
+    values should return true. Any other value should return false.
+
+
+    Once you have all the information calculated, call a function that outputs it
+    to the screen using document.write. Your output should list the person’s name
+    and label the results of each function. Please also ensure that each person’s
+    info prints on its own line.
+
+
+    #### Example Answer:
+
+
+    Codepen: [https://codepen.io/undeadinstitute/pen/xxOMWbd](https://codepen.io/undeadinstitute/pen/xxOMWbd)
+
+
+    File Demo: [https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html](https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    ### Got Questions?'
+  toc: []
+  trans: '
+
+
+    任务完成后，你可能希望弗雷德或南希把某样东西交还给你，或者带回一些信息。这可能是一把重新装填好的武器，或者解药是否对你那位还没“翘辫子”的配偶或孩子起了作用（别担心，解药里注入了
+    JavaScript 代码，你的配偶/孩子现在正在休息，已经完全康复了）。如果他们交给你一堆东西，除非这些东西被整理好（例如放进一个数组或类似结构），否则你很难知道每样东西是什么。函数只能返回一个值，但这个值可以是一个数组，从而让你绕过“只能返回一个值”的限制。
+
+
+    函数定义（即定义函数名称及其功能的部分）以关键字 *function* 开头，然后输入你为该函数指定的区分大小写的名称。接着，在括号内以逗号分隔的形式添加任意参数。如果没有参数，只需让括号内保持空白即可。
+
+
+    ```
+
+    function tryToCure( person ) {
+
+
+    let result = Math.random() * 100;
+
+
+    if(result <= 10) {
+
+
+    return person + " is cured!";
+
+
+    } else {
+
+
+    return person + " is still a zombie";
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    调用该函数时，你可以这样写：
+
+
+    `tryToCure( spouse );`
+
+
+    #### 动手试试：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/wvWNvXa`](https://codepen.io/undeadinstitute/pen/wvWNvXa)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/015-functionally-undead.html`](https://undead.institute/files/zombie-programming/015-functionally-undead.html)
+
+
+    这就好比你把配偶的行踪告诉了南希，让她用麻醉镖把配偶带回来并注射解药。
+
+
+    要捕获返回的值，你需要将其保存到一个变量中。返回值是可选的。
+
+
+    `let human = tryToCure( spouse );`
+
+
+    如果你没有参数要传给函数，可以这样写：
+
+
+    ```
+
+    function cureAllZombies() {
+
+
+    //cure all zombies
+
+
+    if( allCured == true ) {
+
+
+    return true;
+
+
+    } else {
+
+
+    return false;
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    如果因为弗雷德治愈了所有僵尸而无需返回值，那么函数中就不需要 return 语句，也无需捕获结果。调用方式如下：
+
+
+    `cureAllZombies();`
+
+
+    如果有两个或更多参数，需要用逗号分隔参数。
+
+
+    ```
+
+    function cureTwoZombies( zombie1, zombie2) {
+
+
+    //cure two zombies
+
+
+    }
+
+    ```
+
+
+    假设不需要返回任何内容，调用方式如下：
+
+
+    `cureTwoZombies( spouse, child );`
+
+
+    让我们看一个示例程序。出于让这个例子更简单的任意原因，我们神奇地拥有一个数组，里面装满了医院最新测试的僵尸结果。它存储在一维数组中，结果设置如下：1 表示人类，0
+    表示僵尸（“因为僵尸是零，人类是英雄，”这位酷炫又时髦的作者说道……）。医院需要一个 JavaScript 程序来将数组分类为人类和僵尸，并统计各自的数量。
+
+
+    ```
+
+    let patientList = [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0 ], i = 0; let humans = 0,
+    zombies = 0; while (patientList[i] != null) {
+
+
+    if( patientList[i] === 1 ) {
+
+
+    humans++;
+
+
+    } else {
+
+
+    zombies++;
+
+
+    }
+
+
+    i++
+
+
+    } //Output: humans 7, zombies 5
+
+    ```
+
+
+    #### 动手试试：
+
+
+    Codepen 演示：[`codepen.io/undeadinstitute/pen/KKMJwEB`](https://codepen.io/undeadinstitute/pen/KKMJwEB)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html`](https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html)
+
+
+    现在我们对逻辑和编程的工作原理有了一些了解，那么如何将这些内容添加到 HTML 页面中呢？有几种方法，但最重要的是 HTML 的 script 标签。
+
+
+    ```
+
+    <script type=“text/javascript”>
+
+
+    cureAllZombies();
+
+
+    </script>
+
+    ```
+
+
+    你也可以使用 script 标签加载一个包含 JavaScript 的文件。
+
+
+    `<script src=“thecure.js” type=“text/javascript”></script>`![](img/livingtip-jsloops.png)
+
+
+    #### 活尸之夜小贴士：
+
+
+    你应该尽可能晚地加载 JavaScript 代码——也就是在结束的 body 标签之前。如果过早加载（例如在 head 标签中），可能会阻塞其他资源的下载。无论
+    JavaScript 放在哪里，总下载时间都是一样的，但如果浏览器因为等待你的 js 文件下载或 js 代码执行而阻塞了下载或渲染，就会阻止页面其余部分的显示，导致用户看到空白屏幕的时间更长。即使页面在
+    js 加载完成之前无法正常工作，用户也喜欢看到页面正在加载的迹象，浏览器尽可能渲染内容会有所帮助。空白页面，就像僵尸空洞的凝视，通常意味着出了问题，用户也会这么认为。有些
+    JavaScript 需要在页面加载之前执行，或者用于决定页面的加载方式，因此 head 中也可能有 JavaScript，但如果能将其移到页面底部并且页面仍然能正常工作，那将是最理想的。
+
+
+    本书涵盖了入门编程所需的大部分基本工具，并且着眼于在 JavaScript 中实现。虽然语法/编写方式会有所不同，但大多数编程语言都包含这里讨论的所有概念。下一本书《JavaScript
+    基础：向僵尸头部投掷事件、元素和对象炸弹》将深入探讨 JavaScript 的具体内容及其一些独特特性。
+
+
+    但在那之前，让我们先测试一下这些技能。
+
+
+    ## 在数组中痛击那些僵尸
+
+
+    你将处理一个由姓名和超级秘密的“数字生物学玩意儿”（NBT）组成的二维数组，并使用多个函数对该数组进行处理。起始的 HTML 文件/Codepen 将包含该数组，并为函数提供存根。
+
+
+    #### 起始文件
+
+
+    Codepen：[`codepen.io/undeadinstitute/pen/jOrdwrE`](https://codepen.io/undeadinstitute/pen/jOrdwrE)
+
+
+    文件：[`undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html`](https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    你的第一个函数 `processPerson` 应该接收受试者的姓名和方便提供的 `NBT`。（在循环中运行它可能有助于你处理所有条目。）由于本练习的任意便利性，`NBT`
+    可以告诉你两件事：受试者是否会变成僵尸，以及一旦变成僵尸，解药是否对他们有效。
+
+
+    从 `processPerson` 中，将 `NBT` 传递给一个名为 `willBecomeZombie` 的函数。`willBecomeZombie`
+    应返回 `true` 或 `false`。如果 `NBT` 模 7 的结果大于等于 2，那么该人如果被感染就会变成僵尸，因此返回 `true`。如果结果为
+    0 或 1，则返回 `false`。
+
+
+    同样从 `processPerson` 中，你调用一个名为 `infectionRateCalculation` 的函数，利用那个神奇的 `NBT` 计算感染概率。将
+    `NBT` 除以 19307，再将结果乘以 0.1257。这将给出该人如果被感染后感染他人的概率。返回感染概率，以便与其他信息一起打印。
+
+
+    从 `processPerson` 中，调用一个名为 `curable` 的函数，该函数接收 `NBT`。如果 (`NBT` * 3 + 2) 模 17 的结果为
+    0 或 7，则解药对该人有效。因此，这些值应返回 `true`。任何其他值应返回 `false`。
+
+
+    一旦你计算出所有信息，调用一个函数，使用 `document.write` 将结果输出到屏幕上。你的输出应列出该人的姓名，并标注每个函数的结果。另外，请确保每个人的信息单独打印在一行。
+
+
+    #### 示例答案：
+
+
+    Codepen：[`codepen.io/undeadinstitute/pen/xxOMWbd`](https://codepen.io/undeadinstitute/pen/xxOMWbd)
+
+
+    文件演示：[`undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html`](https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html)
+
+
+    ### 有问题吗？
+
+
+    '
+- fmt: '
+
+    Join the [Undead Institute Facebook group](https://www.facebook.com/groups/490540551375786/)
+    and get answers. https://www.facebook.com/groups/undeadinstitutehelpforum
+
+
+    ### You Know What Else Kills Zombies?
+
+
+    Honest feedback. Enjoyed the book? Found an error or an omission? Still confused
+    about something? Want to complement the author’s sense of humor (or lack thereof)?
+    Email John directly at [feedback@undead.institute](mailto:feedback@undead.institute)
+
+
+    ### Find More Zombified Web Development at
+
+
+    [https://undead.institute](https://undead.institute/)
+
+
+    ## About the Author
+
+
+    John is a storyteller with design and development skills. By day he designs and
+    builds websites and mobile apps, by night he spins sci-fi stories at StoryLab
+    ([https://storylab.us](https://storylab.us/)) and counts his words carefully at
+    [https://8wordstories.com](https://8wordstories.com/). He''s a pineapple in disguise
+    [https://pineapplecomics.com](https://pineapplecomics.com/) and (as you know)
+    tries to make learning web development fun by helping you kill zombies [https://undead.institute](https://undead.institute/).
+    He''s been lucky enough to collect a wife and five kids along with six cats, four
+    dogs, and a small army of fish. If he remembers to wear pants, it’s been a good
+    day.
+
+
+    Ask him questions, compliment his tastes in thirteenth century Greenlandic literature,
+    and argue with him over minutia (like whether Greenland had any independent literature
+    in the thirteenth century) on twitter [@storykaboom](http://twitter.com/storykaboom)
+
+
+    We Hope Getting Braaains was Fun!
+
+    '
+  raw: 'Join the [Undead Institute Facebook group](https://www.facebook.com/groups/490540551375786/)
+    and get answers. https://www.facebook.com/groups/undeadinstitutehelpforum
+
+
+    ### You Know What Else Kills Zombies?
+
+
+    Honest feedback. Enjoyed the book? Found an error or an omission? Still confused
+    about something? Want to complement the author’s sense of humor (or lack thereof)?
+    Email John directly at [feedback@undead.institute](mailto:feedback@undead.institute)
+
+
+    ### Find More Zombified Web Development at
+
+
+    [https://undead.institute](https://undead.institute/)
+
+
+    ## About the Author
+
+
+    John is a storyteller with design and development skills. By day he designs and
+    builds websites and mobile apps, by night he spins sci-fi stories at StoryLab
+    ([https://storylab.us](https://storylab.us/)) and counts his words carefully at
+    [https://8wordstories.com](https://8wordstories.com/). He''s a pineapple in disguise
+    [https://pineapplecomics.com](https://pineapplecomics.com/) and (as you know)
+    tries to make learning web development fun by helping you kill zombies [https://undead.institute](https://undead.institute/).
+    He''s been lucky enough to collect a wife and five kids along with six cats, four
+    dogs, and a small army of fish. If he remembers to wear pants, it’s been a good
+    day.
+
+
+    Ask him questions, compliment his tastes in thirteenth century Greenlandic literature,
+    and argue with him over minutia (like whether Greenland had any independent literature
+    in the thirteenth century) on twitter [@storykaboom](http://twitter.com/storykaboom)
+
+
+    We Hope Getting Braaains was Fun!'
+  toc: []
+  trans: '
+
+    加入[亡灵学院 Facebook 群组](https://www.facebook.com/groups/490540551375786/)获取答案。https://www.facebook.com/groups/undeadinstitutehelpforum
+
+
+    ### 你知道还有什么能杀死僵尸吗？
+
+
+    诚实的反馈。喜欢这本书吗？发现了错误或遗漏？还有不明白的地方？想夸赞作者（或吐槽他）的幽默感？直接发邮件给 John：feedback@undead.institute
+
+
+    ### 在以下网址找到更多僵尸化的 Web 开发内容
+
+
+    [`undead.institute`](https://undead.institute/)
+
+
+    ## 关于作者
+
+
+    John 是一位兼具设计与开发技能的故事讲述者。白天他设计和构建网站与移动应用，晚上则在 StoryLab（[`storylab.us`](https://storylab.us/)）编写科幻故事，并在[`8wordstories.com`](https://8wordstories.com/)上精心计算字数。他是一颗伪装的菠萝[`pineapplecomics.com`](https://pineapplecomics.com/)，并且（如你所知）试图通过帮助你杀死僵尸[`undead.institute`](https://undead.institute/)来让学习
+    Web 开发变得有趣。他很幸运地拥有一个妻子、五个孩子，以及六只猫、四条狗和一小群鱼。如果他记得穿裤子，那就是美好的一天。
+
+
+    在推特上[@storykaboom](http://twitter.com/storykaboom)向他提问，赞美他对十三世纪格陵兰文学的品味，或者就细枝末节（比如十三世纪格陵兰是否有独立文学）与他争论。
+
+
+    我们希望获得脑子（Braaains）的过程很有趣！
+
+    '

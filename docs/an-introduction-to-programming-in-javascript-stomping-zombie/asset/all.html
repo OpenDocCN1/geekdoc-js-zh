@@ -1,0 +1,1173 @@
+<p><img src="images/cover.png" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewbox="0 0 1375 2200" preserveaspectratio="none">
+<image width="1375" height="2200" xlink:href="images/cover.png"></image>
+</svg>
+</div>
+<p><span id="contents.xhtml"></span></p>
+<p><span id="body.xhtml"></span></p>
+<p>Copyright 2020 by John Rhea. This book is licensed under the Creative
+Commons <a
+href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial
+4.0 International</a> (CC BY-NC 4.0)</p>
+<p>Distributed by the <a href="https://undead.institute/">Undead
+Institute</a> a division of <a href="https://storylab.us/">StoryLab
+LLC</a></p>
+<p><br />
+<br />
+</p>
+<p>This book made possible by a generous grant from <a
+href="https://www.grantfortheweb.org">Grant for the Web</a>.</p>
+<p><span id="body_split1.xhtml"></span></p>
+<h2>You Know What Else Kills Zombies?</h2>
+<p>Honest feedback. Enjoyed the book? Found an error or an omission?
+Still confused about something? Want to complement the author’s sense of
+humor (or lack thereof)? Email John directly at <a
+href="mailto:feedback@undead.institute">feedback@undead.institute</a></p>
+<h2>Find More Zombified Web Development at</h2>
+<p><a href="https://undead.institute">https://undead.institute</a></p>
+<p><span id="body_split2.xhtml"></span></p>
+<h2>Four Word</h2>
+<p>Stop those zombie cowboys!</p>
+<p><span id="body_split3.xhtml"></span></p>
+<h2 style="text-align: center;">Content Warning<br />
+<span class="small">(for Silliness)</span></h2>
+<p>This book contains a large amount of information, zombies, silliness,
+and a sense of humor that some would call “terrible”. If you’re looking
+for straight technical information or a cure to your insomnia, this is
+not the book for you.</p>
+<p>If you’re looking for a book that’s accessible to those without
+technical training or inclination and/or don’t mind laughing a bit while
+you’re learning, this book is for you. We at the Undead Institute
+believe that getting braaains should be fun. Join us and let’s stop
+those smelly zombies once and for all! (No, seriously. Their breath is
+terrible.)</p>
+<p><span id="body_split4.xhtml"></span></p>
+<h2>Get a Free Apocalyptic JavaScript-ic Cheat Sheet</h2>
+<p><a href="https://undd.link/intro2js"><img src="images/jsintro.png"
+style="display: block; margin: 1em auto; border: solid 1px black;" /></a></p>
+<p>When you sign up for Webpocalypse Weekly, our email newsletter. This
+printable cheat sheet covers JavaScript loops, variable, conditionals
+and functions. Write JavaScript easily with your very own Apocalyptic
+Javascript-ic Cheat Sheet</p>
+<p><a
+href="https://undd.link/intro2js">https://undd.link/intro2js</a></p>
+<p><span id="title.xhtml"></span></p>
+<h1 style="text-align: center; margin: 2em 0;">An Introduction to
+Programming in JavaScript:<br />
+<span class="small">Stomping Zombies with Variables, Loops, Functions
+and More</span></h1>
+<p>by John Rhea</p>
+<p><span class="small">Published by <a
+href="https://undead.institute"><em>The Undead
+Institute</em></a></span></p>
+<p><span id="body1.xhtml"></span></p>
+<h2>Hello Human Resistance Cell</h2>
+<p>JavaScript differs from other front-end web languages, such as HTML
+and CSS. It’s much more programmatic and uses logic and variables and
+functions and loops and all kinds of things—but don’t fear for your mind
+as though a zombie were hot on your trail. We’ll walk you through
+everything and get you up to speed, even if this is your first taste of
+JavaScript and/or of a more traditional programming language.</p>
+<p>This book assumes a small amount of HTML/web page knowledge. If you
+have none, you can get what you'd need from our free book <em><a
+href="https://undead.institute/death-to-boring-programming-books/">Punching
+Zombies: An HTML &amp; CSS Quick Start Guide for Writers, Designers, and
+Beginners</a></em></p>
+<p><span id="body2.xhtml"></span></p>
+<h2>Buckets and Buckets of Zombie Guts</h2>
+<p>One of the first things to understand is a concept called variables.
+Variables are like buckets you store things in. You can put water in a
+bucket or your lunch or a mannequin head or the rookie cards of the 2037
+Los Angeles Zombie-Dodgers Human Resistance Cell. You can put just about
+anything in a bucket.</p>
+<p>There are also lots of different JavaScripty types of things you can
+put in a bucket, such as:</p>
+<p><strong>Numbers:</strong> These are what you think they are.</p>
+<p><strong>Strings of Letters (Strings):</strong> These are actually
+more than just letters—they are any text or character that you want to
+treat as a single thing. Enclose strings in quotation marks (both single
+and double quotes work in JavaScript) and can include any valid
+character. Examples of strings are:</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“Hello
+Post-Apocalyptic World”</span>
+</div>
+<p>Or,</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“Don’t look at me,
+Norm. The zombie pulled your lunch out of the fridge and ate it.”</span>
+</div>
+<p>Or,</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“I know you labeled
+it. The zombie didn’t care or couldn’t read.”</span>
+</div>
+<p>Or,</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“Only one way to
+find out. He’s over there eating 7 other lunches.”</span>
+</div>
+<p>Or,</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“7?”</span>
+</div>
+<p>Or,</p>
+<div class="code">
+<span style="padding-left: 0; text-indent: -0.5em;">“7”</span>
+</div>
+<p>So you can have number characters in a string too, but they’ll behave
+as strings and not as numbers—so you can’t add or multiply them without
+converting them back to numbers. If something is in quotes, it’s a
+string.</p>
+<p><strong>Boolean:</strong> The value is true or false and can’t be
+anything else. This makes it great for using it like a switch to turn
+something on or off.</p>
+<p>There are a few more types of variables in JavaScript, but this is
+enough to get us started.</p>
+<p><span id="body3.xhtml"></span></p>
+<h2>Buckets of Type Z</h2>
+<p>Some buckets can only hold one type of thing. For instance, a bucket
+with a hole in the bottom wouldn’t hold water or the soda from the last
+working soda fountain in North America, but it could be great for
+holding books or large rocks or the personal effects of your zombified
+roommate. Similarly, variables often only hold one type of thing.</p>
+<p>In some programming languages, putting the wrong type of content in
+the wrong bucket can cause errors, but JavaScript is forgiving. The
+positive side of that is that JavaScript just handles a lot of stuff
+without complaining. The negative is that if it messes up or handles
+something different from what you expect, you can get weird results or
+programming bugs that are hard to track down.</p>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+One common place these types of bugs happen is when you try to add a
+number (2) and a string that looks like a number (“2”). In JavaScript, 2
++ “2” is “22”. Since one of these is a string, it casts/treats the other
+as a string too and puts them together or concatenates them. (This can
+be very useful when you need to construct a message for the user.) Thus,
+be careful that you are adding numbers with numbers and not strings.
+</div>
+<p><span id="body4.xhtml"></span></p>
+<h2>Variable Bucket Contents</h2>
+<p>These buckets we’ve been talking about are called variables. They’re
+called variables because they are…ahem…variable. You can put something
+in them, and, during your program, you can take that out and look at it
+or take it out and do something with it or take it out and put something
+else in. You can do that any number of times.</p>
+<p>Before we can use these buckets/variables to beat back the zombie
+hordes, we have to name them. We can name a variable just about anything
+we want. However, we can only use letters, numbers, and underscores. We
+can’t use any other characters, and the first character can’t be a
+number—i.e., 7zombies is invalid, but sevenzombies or _7zombies or
+zombies_numbering_7 would all work just fine.</p>
+<p>Also, variables are case sensitive, so a variable of zombie is
+different from a variable of Zombie, which is also different from a
+variable named ZOMBIE, which is different from zOmBiE—so watch which
+case you use, and use that case throughout your code.</p>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>We can use this to our advantage with camel case. Camel case makes
+multi-word variable names much easier to read and understand. In camel
+case, you write the first word in all lower case, and then capitalize
+the first letter of each additional word. Here are some examples:</p>
+<div class="code" style="margin-bottom: 0.5em; margin-top: 1em">
+<span style="padding-left: 0; text-indent: 0;"> sevenZombies</span>
+<span style="padding-left: 0; text-indent: 0;">sevenFormerHumans</span>
+<span
+style="padding-left: 0; text-indent: 0;">thatGuyFromAccountingWhoTurnedZombie</span>
+<span
+style="padding-left: 0; text-indent: 0;">dawnOfTheDeadFromSales</span>
+<span
+style="padding-left: 0; text-indent: 0;">rickTheUndeadHarbingerOfDoom</span>
+</div>
+</div>
+<p>The last rule for variable names is that you can’t use any of
+JavaScript’s reserved words—meaning the words that have special meaning
+to JavaScript and are how the language functions. If HTML had variables,
+it’d be like naming your bucket &lt;p&gt;. It would be hard for the
+browser to understand when you meant the p tag and when you meant the
+variable/bucket, as you’d given both the same name.</p>
+<p>Now how do you declare a variable in JavaScript? There are three
+ways: var, let, and const. (These would be examples of reserved words
+that cannot be variable/bucket names.)</p>
+<p>Before we name variables, you need to learn a few important syntax
+rules. Similar to CSS, JavaScript lines should end with a semicolon.
+Also, two forward slashes (//) in JavaScript indicate a comment or, to
+be more specific, tell the browser to ignore the two slashes and
+everything after them until the end of the line. CSS style comments also
+work in JavaScript—that is, the browser will ignore everything from your
+opening /* to your ending */, no matter how many lines it is.</p>
+<p><strong>Var:</strong> var is the original way to set a variable and
+the method that is most backward-compatible. If you’re building
+something for older browsers, use var. Examples:</p>
+<div class="code">
+<span style="padding-left: 2em"> var zombie; //Just creating the
+variable/bucket</span> <span style="padding-left: 2em">var zombie = 45;
+/* creating the variable and assigning it the number 45 or creating the
+bucket and putting the number 45 into it… and then having a multi-line
+comment */</span> <span style="padding-left: 2em">var apocalypse = “The
+end of the world”; //putting a string in the bucket</span> <span
+style="padding-left: 2em">var zombieDoomed = true; // putting a Boolean
+in the bucket</span>
+</div>
+<p><strong>Let:</strong> The next option is to use let instead of var.
+Let is a newer choice and exists because var could have unexpected
+behavior. JavaScript’s loosey-goosey (zombly-wombly?) attitude toward
+variables—that is, how forgiving it is—can, in certain cases, get you
+into trouble. Let solves that issue and should be your default way of
+creating variables for any recent browser work.</p>
+<div class="code">
+<span style="padding-left: 2em">let zombie;</span> <span
+style="padding-left: 2em">let zombie = 45;</span> <span
+style="padding-left: 2em">let apocalypse = “The end of the
+world”;</span> <span style="padding-left: 2em">let zombieDoomed =
+true;</span>
+</div>
+<p><strong>Const:</strong> The last option is almost a contradiction in
+terms because the next way to instantiate a variable is to create a
+constant...Yeah, that seems zomborrific to me too, but hear me out.
+Sometimes you’ll have a value that should stay constant during a
+program, like the number of zombies cured by one cc of anti-zombie serum
+or the ratio of human resistance cells to the number of zombie nests in
+an area. But that number may change outside the bounds of the program.
+For example, you might increase the effectiveness of the anti-zombie
+serum (for instance, by infusing it with HTML, CSS, and/or JavaScript),
+or you might eradicate a zombie nest, making the ratio inaccurate.
+Rather than putting that value in sixty times and then looking for every
+instance of that value and replacing it, you can use the name of a
+constant throughout the program, and then, if the value of the constant
+changes, you only have to update it in one place in the code. You cannot
+change a constant while the program is running. You can only change it
+by editing the code.</p>
+<p>The keyword for a constant is const.</p>
+<div class="code">
+<span style="padding-left: 2em">const zCuredPerSerumCC = 7;</span> <span
+style="padding-left: 2em">const cell2NestRatio = 0.8271;</span>
+</div>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+You can define more than one variable at a time by using a comma between
+variable names. I’m using <em>let</em> below, but it works with var and
+const too.
+<div class="code">
+<span style="padding-left: 2em">let zombie, undead;</span>
+</div>
+<p>You can also set their values while chaining them:</p>
+<div class="code" style="margin-bottom: 0.5em;">
+<span style="padding-left: 2em">let horde = 700, humanityInTrouble =
+true;</span>
+</div>
+</div>
+<p><span id="body5.xhtml"></span></p>
+<h2>Undead Output</h2>
+<p>There are several ways to output something in JavaScript. Outputting
+for user view is almost always the end goal, even if the results of a
+program do something else first. Outputting for user view is also
+helpful in figuring out what’s wrong in a program and how to fix it.</p>
+<h3>Output to an Alert</h3>
+<p>One of the easiest (but often most annoying) ways to output a
+variable is to use an alert statement. An alert statement is a
+JavaScript function that creates a dialog box with a message and an okay
+button. For instance:</p>
+<div class="code">
+<span style="padding-left: 2em">alert(“The zombies are here!”);</span>
+</div>
+<p>would show</p>
+<div>
+<img src="images/Image0.png" style="width:100%;margin: 1em 0;"
+alt="alert box with the text The zombies are here!" />
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/bGemwXJ">https://codepen.io/undeadinstitute/pen/bGemwXJ</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/001-zombie-alert.html">https://undead.institute/files/zombie-programming/001-zombie-alert.html</a></p>
+</section>
+<p>Outputs to an alert are useful, particularly when you are starting
+out, as you learn what a variable holds at a particular point in your
+program. The downside is that you have to click “okay” on each dialogue
+box opened. If you create an alert in a loop, you may end up with quite
+a lot of clicking. And if you forget to remove a debugging alert from
+your code before you publish the site, your users will see them, be
+annoyed, and decide that maybe being a zombie ain't so bad if humans are
+this monstrous.</p>
+<h3>Output to the Page</h3>
+<p>You can output content or information to the page using
+document.write.</p>
+<div class="code">
+<span style="padding-left: 2em">document.write(“The zombies are
+here!”);</span>
+</div>
+<p>This prints out content to the page, which is usually where you want
+to see it. The downsides are that it’s a little complicated to get the
+content where you want it (although it’s easy to add at, for example,
+the bottom of the page), and if you leave any debugging code in the
+production files, the zombies will win, and your users will see your
+confusing debugging output.</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/ZEOqBbW">https://codepen.io/undeadinstitute/pen/ZEOqBbW</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/002-zombie-write.html">https://undead.institute/files/zombie-programming/002-zombie-write.html</a></p>
+</section>
+<p>Another option is similar to document.write. You can also select an
+HTML element on the page and add or change the text, or you can create
+an element in JavaScript and append it to the page with the information.
+This is the major way that you’ll show content/the results of your
+program to your users, but when you use it for debugging, it has the
+downside of being visible to users. This is a powerful and useful way to
+show content (debugging or otherwise). We’ll look at it in the next
+book, <em>JavaScript Basics: Flinging Event, Element, and Object Bombs
+at Zombie Heads</em>.</p>
+<h3>Output to the Console</h3>
+<p>The way that’s often best to output debug content is to the console.
+(I say often the best because each method has its purpose. I use the
+console most often but will sometimes throw up an alert or write it to
+the page for a quick and dirty solution.) The console is part of each
+browser’s web developer tools and allows you to output content to a
+hidden command line. All you have to do is use:</p>
+<div class="code">
+<span style="padding-left: 2em">console.log(“The zombies are
+here!”);</span>
+</div>
+<p>The output will then appear in the console, and you can figure out
+where your program went wrong. While I would still recommend removing
+console.log statements from production code, if you forget, no one but
+us developer types are likely to see the output.</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/LYZgber">https://codepen.io/undeadinstitute/pen/LYZgber</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/003-console-zombies.html">https://undead.institute/files/zombie-programming/003-console-zombies.html</a></p>
+</section>
+<p><span id="body6.xhtml"></span></p>
+<h2>Math after the Apocalypse</h2>
+<p>Next we’ll tackle something familiar, though it may be unpleasant for
+some: math. A lot of math can happen in programming and all the usual
+culprits are there: addition, subtraction, multiplication, and division,
+as well as one you may not be familiar with, modulus division.</p>
+<p><strong>Addition:</strong> undead = zombies + infected</p>
+<p><strong>Subtraction:</strong> undead = zombies - cured</p>
+<p><strong>Multiplication:</strong> undead = humans * infectionRate</p>
+<p><strong>Division:</strong> undead = zombies / antidote</p>
+<p><strong>Modulus Division:</strong> is just like division except the
+remainder is the answer—for example, 13 modulus 5 is 3 because 3 is the
+remainder/what’s left over after 5 is divided into 13.) Modulus uses the
+% sign.</p>
+<p>nextHorde = zombies % hordeSize;</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010">https://codepen.io/undeadinstitute/pen/eYzPyLm?editors=0010</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/004-mathematical-zombies.html">https://undead.institute/files/zombie-programming/004-mathematical-zombies.html</a></p>
+</section>
+<p>There are some shortcuts for things we do often. For instance, if we
+wanted to add a number to a variable and save the new answer to that
+variable we’d do:</p>
+<div class="code">
+<span style="padding-left: 2em">undead = undead + 12;</span>
+</div>
+<p>A shortcut for this is to use the += operator that performs the same
+as above.</p>
+<div class="code">
+<span style="padding-left: 2em">undead += 12;</span>
+</div>
+<p>This isn’t just for addition. It works for all the arithmetic
+operators.</p>
+<p><br />
+</p>
+<p><span class="inlinecode">undead = undead - 7</span><br />
+is equivalent to<br />
+<span class="inlinecode">undead -= 7</span></p>
+<p><br />
+</p>
+<p><span class="inlinecode">undead = undead * 7</span><br />
+is equivalent to<br />
+<span class="inlinecode">undead *= 7</span></p>
+<p><br />
+</p>
+<p><span class="inlinecode">undead = undead / 7</span><br />
+is equivalent to<br />
+<span class="inlinecode">undead /= 7</span></p>
+<p><br />
+</p>
+<p><span class="inlinecode">undead = undead % 7</span><br />
+is equivalent to<br />
+<span class="inlinecode">undead %= 7</span></p>
+<p><br />
+</p>
+<p>There’s one arithmetic operation so common that it has a shortcut
+even shorter than using +=. To increment a value by 1, add ++ to the
+variable (you can decrement by 1 using --).</p>
+<p><span class="inlinecode">undead += 1</span> is equivalent to <span
+class="inlinecode">undead++</span></p>
+<p><span class="inlinecode">undead -= 1</span> is equivalent to <span
+class="inlinecode">undead--</span></p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/QWEZPXP">https://codepen.io/undeadinstitute/pen/QWEZPXP</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html">https://undead.institute/files/zombie-programming/005-zombie-math-shortcuts.html</a></p>
+</section>
+<p>There’s one little quirk with ++ and -- that can occasionally come in
+handy. You can put the ++ or -- in front of the variable too.</p>
+<p><span class="inlinecode">++undead;</span></p>
+<p><span class="inlinecode">--undead;</span></p>
+<p>It still increments or decrements the variable. However, if the ++ or
+-- comes after the variable, the variable increments or decrements
+<em>before</em> the contents of the variable/bucket is looked at. If the
+++ or -- comes before the variable name, the variable/bucket will
+increment or decrement before it’s looked at (see the examples below).
+If the statement is on its own line, it doesn’t matter much whether it’s
+incremented or decremented before or after. The statements are
+equivalent. But if it’s used within another JavaScript statement, the
+result may change.</p>
+<p>For instance:</p>
+<div class="code">
+<span style="padding-left: 2em">let undead = 10;</span> <span
+style="padding-left: 2em">let zombie = 17 + undead++;</span>
+</div>
+<p>would set zombie equal to 28 and undead equal to 11; whereas</p>
+<div class="code">
+<span style="padding-left: 2em">let undead = 10;</span> <span
+style="padding-left: 2em">let zombie = 17 + ++undead;</span>
+</div>
+<p>would set zombie equal to 27 and undead equal to 11.</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/WNxYQbw">https://codepen.io/undeadinstitute/pen/WNxYQbw</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html">https://undead.institute/files/zombie-programming/006-incremetal-apocalypse.html</a></p>
+</section>
+<p><span id="body7.xhtml"></span></p>
+<h2>Logically Challenged Zombies</h2>
+<p>Since variables can hold almost any value, it can be difficult to
+keep track of what a variable/bucket is supposed to hold. The problem is
+exacerbated by growing complexity. But you can figure out what’s in a
+variable by using if-then statements. These allow you to test a
+condition (if) and do something based on the results (then).</p>
+<p>Here’s how an if-then statement looks when the if tests whether
+undead and zombie are equivalent (we’ll talk about the different tests
+you can do in a second):</p>
+<div class="code">
+<span style="padding-left: 2em">if( undead == zombie ) {</span> <span
+style="padding-left: 4em">//stop horde</span> <span
+style="padding-left: 2em">}</span>
+</div>
+<p>If undead and zombie are equivalent, then whatever code you put in
+the curly brackets will run. (It's like CSS in that whenever an element
+matches your selector, the browser will apply the rules in the curly
+brackets.) If undead and zombie aren’t equivalent, then the browser will
+skip any code in the curly brackets.</p>
+<p>Here are the logical operators we have to work with:</p>
+<h3>Equal:</h3>
+<p><span class="inlinecode">undead == zombie</span> and <span
+class="inlinecode">undead === zombie</span> test for equality.</p>
+<p>Three equals signs is stricter than two, and it’s usually what you’ll
+want to use.</p>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>How can things be more or less equal (outside of <em>Animal
+Farm</em>)? This is because of one way that a computer saves memory. Our
+bucket metaphor will break down a bit here, but let’s say we had a
+bucket full of something complex, such as a loaf of bread. There’s a lot
+of information there. It’s complex, and it takes up space.</p>
+<p>The human resistance commander needs to see what rations are
+available, but he’s in the field with the resistance fighters. We could
+create a copy or 3-D model of the bread (super easy in this
+computer-i-fied example), but that would take up as much space as the
+original, and we might run out of buckets. We’d also have to transport
+the bread or model out to him, which can get complicated when you have
+quite a few buckets to transport.</p>
+<p>So we take a picture of the bread instead. In very general terms, the
+loaf and the picture are equivalent because one is the loaf and one
+points to or is a picture of that same loaf. (In computer science, the
+picture from our analogy is called a pointer because it “points” to the
+original.) That’s the double equals == level of equality. The triple
+equals === is when you’re trying to see if two loaves of bread are the
+same or, rather, if one of them isn’t a pointer to/picture of the
+other.</p>
+<p>In code, a simplified version of that might look like</p>
+<div class="code" style="margin-bottom: 0.5em">
+<span style="padding-left: 2em">7 == “7” //true</span> <span
+style="padding-left: 2em">7 === “7” //false</span>
+</div>
+</div>
+<h3>Less than:</h3>
+<p>undead &lt; zombie</p>
+<p>Let’s say undead is equal to 10. Is the value of undead less than the
+value of zombie? For this to return true, zombie would have to be more
+than 10 (e.g., 11, 12, 10.1, 312 etc.). It will return false if zombie
+is 10 or less (e.g., 9, 10, 7, -437, etc.).</p>
+<h3>Greater than:</h3>
+<p>undead &gt; zombie</p>
+<p>Is the value of undead greater than the value of zombie? If undead =
+10, then true values include 9, 8, -10, 0, and so on. False values
+include 10, 11, 412, and so on.</p>
+<h3>Less than or equal to:</h3>
+<p>undead &lt;= zombie</p>
+<p>Is the value of undead less than or equal to the value of zombie? If
+undead = 10, true values include 10, 11, 1017, and so on. False values
+include 9.9, -78, 6, and so on. (You can also do &lt;== to enforce the
+stricter form of equality.)</p>
+<h3>Greater than or equal to:</h3>
+<p>undead &gt;= zombie</p>
+<p>Is the value of undead greater than or equal to the value of zombie?
+If undead = 10, true values include 10, 9, -7, and so on. False values
+include 11, 10.1, 371, and so on. (You can also do &gt;== to enforce the
+stricter form of equality.)</p>
+<h3>Not equal:</h3>
+<p>undead != zombie</p>
+<p>The values of undead and zombie are two different things. If undead =
+10, true values include 9, 17, 38, -239, and so on, while the false
+value is 10. Nothing else is a false value. (You can also use !== to
+enforce the stricter form of inequality.)</p>
+<p>There’s one additional thing you can do based on the if, but it’s not
+required. It’s called an else statement, and it allows you to do one
+thing if the conditional is true (then) and another thing if it’s false
+(else). It looks like this:</p>
+<div class="code">
+<span style="padding-left: 2em"> if( undead === zombie ) {</span>
+<p>//stop horde</p>
+<span style="padding-left: 2em">} else {</span>
+<p>//stop contagion</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>Thus, if undead and zombie are equal, then the browser will “stop
+horde.” If they aren’t (else), it will “stop contagion.”</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/MWezKez">https://codepen.io/undeadinstitute/pen/MWezKez</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html">https://undead.institute/files/zombie-programming/007-logically-its-the-apocalypse.html</a></p>
+</section>
+<p>If you need to test multiple conditions, you can do an else if,
+allowing you to further segment how the program reacts. For instance, if
+two values are equal, you may want to “stop horde.” But if they aren’t
+equal, you may want to “stop a greater horde” if one is greater and
+“stop a lesser horde” if one is lesser.</p>
+<div class="code">
+<span style="padding-left: 2em">if( undead === zombie ) {</span>
+<p>//stop horde</p>
+<span style="padding-left: 2em">} else if (undead &gt; zombie) {</span>
+<p>//stop a greater horde</p>
+<span style="padding-left: 2em">} else {</span>
+<p>//stop a lesser horde</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>You can do as many of these if-else-if chains as you want. You can
+also refine the something you want to do by whatever variables make
+sense for your program.</p>
+<p>You can combine conditionals using AND (&amp;&amp;) and OR (||).</p>
+<p><strong>AND</strong> means both statements have to be true to execute
+the then portion. AND is represented by two ampersands:</p>
+<div class="code">
+<span style="padding-left: 2em">if( undead === zombie &amp;&amp; zombie
+&gt; human ) {</span>
+<p>//stop horde</p>
+<span style="padding-left: 2em">} else {</span>
+<p>//stop contagion</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>Undead and zombie must be equal AND zombie must be greater than human
+for the browser to “stop horde.” If neither of them is true, or if only
+one or the other is true, a “stop contagion” will be done.</p>
+<p><strong>OR</strong> means that if either statement is true or if both
+are true, then “stop horde” will be done.</p>
+<div class="code">
+<span style="padding-left: 2em">if( undead === zombie || zombie &gt;
+human ) {</span>
+<p>//stop horde</p>
+<span style="padding-left: 2em">} else {</span>
+<p>//stop contagion</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>If undead and zombie are equal or if zombie is greater than human or
+both, “stop horde” will be done. The only way “stop contagion” will
+happen is if undead and zombie are not equal <em>and</em> human is
+greater than zombie.</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/OJXaMmO">https://codepen.io/undeadinstitute/pen/OJXaMmO</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html">https://undead.institute/files/zombie-programming/008-if-hes-not-human-and-not-a-zombie.html</a></p>
+</section>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>Because we often test for true and false, changing everything to a
+literal true or false or writing a specific test would be additional
+work every time we’re testing something. So, as a shortcut, most
+programming languages (including JavaScript) count several values as
+false that aren’t technically false. For instance, if an expression or
+variable evaluates to 0, it’s counted as false. If it’s any other
+numeric value, it will evaluate as true. In this way, you might see a
+single value (this is a rather contrived example, but hopefully it will
+make sense).</p>
+<div class="code">
+<span style="padding-left: 2em">let undead = 0;</span> <span
+style="padding-left: 2em">if ( undead ) {</span>
+<p>//stop horde</p>
+<span style="padding-left: 2em">} else {</span>
+<p>//stop contagion</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>In that example, undead being equal to 0 would evaluate as false and
+“stop contagion” would be done.</p>
+<p>Other values that evaluate to false include null (meaning an empty
+variable/one without a value), undefined (a variable that has never been
+set), an empty string represented by two double or single quotation
+marks next to each other “” or ‘’, and NaN which stands for not a
+number. You see it when you try to do numbery things with non-numbers,
+such as “12” / 2 (remember that anything in quotation marks is treated
+as a string, not a number) or on the protest signs of a populace being
+barcoded by an authoritarian human settlement.</p>
+<p><strong>Note:</strong> this test works best on primitive types:
+numbers, strings, and so on. It may not work on more complicated types
+like arrays (we’ll discuss these later).</p>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/ZEOmvjN">https://codepen.io/undeadinstitute/pen/ZEOmvjN</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html">https://undead.institute/files/zombie-programming/009-zombie-brain-is-null.html</a></p>
+</section>
+</div>
+<p><span id="body8.xhtml"></span></p>
+<h2>Getting Loopy with Zombies</h2>
+<p>The next important thing in JavaScript—and in other programming
+languages—is the loop. Loops are just what they sound like, they do some
+code again and again and again until they hit a stopping condition.
+There are two main types of loops (with a couple variations): the for
+loop and the while loop.</p>
+<p>For loops run whatever code you place between the curly brackets for
+a set number of iterations.</p>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>The letters i, j, and k are traditionally used as loop counters (a
+variable that counts the number of iterations used. You don’t have to
+use these as your counter values, but if you don’t, name your counters
+clearly. For clearer code, it’s best not to use i, j, or k for any other
+kind of variable.</p>
+</div>
+<p>A traditional for loop in JavaScript looks like this:</p>
+<div class="code">
+<span style="padding-left: 2em">for( let i = 0; i &lt; 10; i++ )
+{</span>
+<p>//stop zombies 10 times</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/bGeQaZx">https://codepen.io/undeadinstitute/pen/bGeQaZx</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html">https://undead.institute/files/zombie-programming/010-zombie-loop-de-loop.html</a></p>
+</section>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>You’ll notice that the i counter started at zero instead of one. This
+is not a requirement, but it can make things easier in the long run. The
+reason is that computers start counting at 0 rather than at 1. (Like
+some zombies, computers don’t have fingers to count on.) So later, when
+we work on arrays, their indexes start at 0 rather than at 1, and if you
+start your for loop at 1, you’ll skip the first array element, and the
+zombies will win. (If that made little sense, no worries. We’ll get
+there.)</p>
+</div>
+<p>The for loop itself (inside the parentheses) is three statements in
+one. First (let i = 0;), you instantiate the counter or just set it to
+an initial value. Next (i &lt; 10), you set the conditional for how long
+to continue the loop (i.e., while i is less than 10, keep running all
+the code between the curly brackets). Finally (i++), you’re setting how
+fast you go from the initial value (i = 0) to the end condition (when i
+is greater than or equal to 10). In most cases, that’s by an increment
+of 1 (i++), but it could be a decrement (i--) or you could do it by more
+than 1 depending on your needs (i += 2, etc.).</p>
+<p>Be careful that you don’t set up a condition that will never come
+about, or the loop will go on forever, and the zombies will win. For
+instance, if your condition is i &lt; 10, and you decrement instead of
+increment, then i will always be less than 10, and your loop will never
+exit. (I’ve done this myself more times than there are zombies in a
+horde, so if you find your browser hanging or repeating something well
+beyond the number of times you anticipate, it’s best to just close the
+browser window, fix your code, and then reopen the page. Hopefully
+you’ll be free of the infinite loops that’ll eat your brain like a
+zombie with an empty stomach).</p>
+<div class="code">
+<span style="padding-left: 2em">let horde = 0;</span> <span
+style="padding-left: 2em">let humans = 100;</span> <span
+style="padding-left: 2em">for( let i = 0; i &lt; 10; i++) {</span>
+<p>horde += 10;</p>
+<p>humans -= 10;</p>
+<span style="padding-left: 2em">}</span> <span
+style="padding-left: 2em">//perform the same task using a decrementing
+loop</span> <span style="padding-left: 2em">let horde = 0;</span> <span
+style="padding-left: 2em">let humans = 100;</span> <span
+style="padding-left: 2em">for( let j = 10; j &lt; 1; j--) {</span>
+<p>horde += 10;</p>
+<p>humans -= 10;</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/JjKepGE">https://codepen.io/undeadinstitute/pen/JjKepGE</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html">https://undead.institute/files/zombie-programming/011-loopy-little-zombies.html</a></p>
+</section>
+<p>The for loop examples above, assume you have something numeric to
+compare. What if there isn’t a set number of times to run something or a
+numeric comparison just isn’t appropriate? That’s where the second kind
+of loop comes in, the while loop.</p>
+<p>The while loop tells the browser to keep looping <em>while</em> a
+condition is true.</p>
+<div class="code">
+<span style="padding-left: 2em">let george = “zombie”, stillAZombie =
+true;</span> <span style="padding-left: 2em">while( stillAZombie )
+{</span> <span style="padding-left: 4em">if( george == “zombie” )
+{</span> <span style="padding-left: 6em">tryToCure( george );</span>
+<span style="padding-left: 4em">} else {</span> <span
+style="padding-left: 6em">stillAZombie = false;</span> <span
+style="padding-left: 4em">}</span> <span
+style="padding-left: 2em">}</span>
+</div>
+<p>The example above checks whether the stillAZombie variable is true.
+If it is, it checks whether the george variable holds a string of
+“zombie.” If it does, the program tries a cure on george. If the
+tryToCure function succeeds, then the george variable will no longer
+hold “zombie,” the if test will fail, and the else section will be
+executed, setting stillAZombie to false and ending the loop the next
+time the while loop checks whether stillAZombie is true.</p>
+<p>The while loop has a half-brother called the do-while loop. Do-while
+loops are used when you want to put the conditional at the end of the
+loop (i.e., you want to run the statements in the loop at least
+once).</p>
+<div class="code">
+<span style="padding-left: 2em">let george = “zombie”, stillAzombie =
+true;</span> <span style="padding-left: 2em">do {</span>
+<p>if( george == “zombie” ) {</p>
+<span style="padding-left: 6em">tryToCure( george );</span>
+<p>} else {</p>
+<span style="padding-left: 6em">stillAZombie = false;</span>
+<p>}</p>
+<span style="padding-left: 2em">} while( stillAZombie );</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/zYBMRoB">https://codepen.io/undeadinstitute/pen/zYBMRoB</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html">https://undead.institute/files/zombie-programming/012-while-zombie-freak-out.html</a></p>
+</section>
+<p>The do-while loop above does the same thing as the while loop did,
+but the if test is ensured to run at least once.</p>
+<p>Be careful with this kind of loop though, because if stillAzombie
+never becomes false, then your loop will continue forever, and the
+zombies will winter in Florida while taking out loans in your name and
+ruining that credit score you worked so hard to get. You know…they’ll
+win.</p>
+<p><span id="body9.xhtml"></span></p>
+<h2>Zombie Sniper and Variable Scopes</h2>
+<p>Before we go further, let’s talk about variable scope—that is, where
+you can use a variable. When we define a bucket using var or let or
+const, it’s like we’re writing its name on the side. If you have a horde
+of buckets with names on their sides, it can take a while to find the
+one you want, right? So JavaScript allows you to create groups of
+buckets and localize the bucket names to make things easier to find and
+make sure there aren’t any conflicts. You can think of a group of
+buckets as all the buckets (variables) defined between two curly
+brackets. Any bucket you’ve named within that group won’t be used
+outside that group, but any variable declared outside that group can
+also be used within the group. For instance:</p>
+<div class="code">
+<span style="padding-left: 2em">let zombie = 0;</span> <span
+style="padding-left: 2em">for( let i = 0; i &lt; 10; i++ ) {</span>
+<p>let undead = i;</p>
+<p>zombie = i;</p>
+<span style="padding-left: 2em">}</span><br />
+<span style="padding-left: 2em">//print contents of both
+variables.</span> <span
+style="padding-left: 2em">document.write(zombie); //Output is 10</span>
+<span style="padding-left: 2em">document.write(undead); //Output is
+undefined</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/abZQPye">https://codepen.io/undeadinstitute/pen/abZQPye</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html">https://undead.institute/files/zombie-programming/013-using-scope-on-zombie-breath.html</a></p>
+</section>
+<p>Since the variable zombie was defined outside the for loop/curly
+brackets, it can be accessed from within the loop and changed. However,
+since undead was defined within the loop, it does not exist outside of
+that and thus will be undefined when printed outside the loop.</p>
+<p><span id="body10.xhtml"></span></p>
+<h2>An Array of Apocalyptic Outcomes</h2>
+<p>There’s one more data type to discuss, though this might be better
+called a data structure: the array. You can think of an array as an
+orderly line of buckets, or a line of people with empty bowls waiting
+for whatever-we-got stew at your nearest human resistance cell. This
+line is a useful way to group everyone, and you could either go down the
+line and hand out stew, or you could call out names for them to come get
+stew, or you could send out a line of stew cooks the same size as the
+line of hungry people to give them stew. Whatever way you access the
+people in the line, you can because they’re all in one place and in an
+order you understand. Arrays are a line of buckets or variables. You can
+access all the variables in sequence using their indices (places in
+line), pull out a specific variable in the array (you can have string
+names as your indices too), or you can use a map function (we’ll get to
+these in the next book) to do work on all the variables at once.</p>
+<p>Arrays use bracket notation to designate which bucket you are on. By
+default, indices are numbered starting at zero. (Empty brackets
+designate creating an empty array.)</p>
+<div class="code">
+<span style="padding-left: 2em">let horde = [];</span> <span
+style="padding-left: 2em">horde[0] = “Bob”;</span> <span
+style="padding-left: 2em">horde[1] = “Fred”;</span> <span
+style="padding-left: 2em">horde[2] = “Leroy”;</span> <span
+style="padding-left: 2em">//the horde array then looks like [“Bob”,
+“Fred”, “Leroy”]</span>
+</div>
+<p>You can also create that array this way:</p>
+<div class="code">
+<span style="padding-left: 2em">let horde = [“Bob”, “Fred”,
+“Leroy”];</span>
+</div>
+<p>But you aren’t limited to a line of buckets. You can also create a
+line of lines and a line of lines of lines and a line of lines of lines
+of...you get it. Youcan create arrays of multiple dimensions. A
+two-dimensional array is like a square. If you’ve ever seen a majority
+military human resistance cell walk into battle or the last vestiges of
+our air force planes fly in a tight, square formation, you’ll understand
+what I mean. Or look at this array of buckets:</p>
+<div>
+<img src="images/Image1.png" style="width: 100%; margin: 1em 0.25em" />
+</div>
+<p>A two-dimensional array is accessed in a similar way as a
+one-dimensional array but with two indices (one horizontal, and one
+vertical).</p>
+<div class="code">
+<span style="padding-left: 2em">let zombie = horde[6][2];</span>
+</div>
+<p>The code above would save the contents of seven down and three across
+into the variable zombie. (Don’t forget. A two-dimensional array’s first
+cell is at [0][0].)</p>
+<p>There are also a few array-specific properties we can use to get
+information about the array. One of the most common is length, which
+gives us the number of items in the array, allowing us to write a for
+loop to search the entire array. You call length by adding a period
+after the array name and the word length.</p>
+<div class="code">
+<span style="padding-left: 2em">let horde = [ 1, 0, 0, 1, 1 ];</span>
+<span style="padding-left: 2em">let results = [];</span> <span
+style="padding-left: 2em">for( let i = 0; i &lt; horde.length; i++)
+{</span>
+<p>results[i] = tryToCure( horde[i] );</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010">https://codepen.io/undeadinstitute/pen/ExyGryj?editors=0010</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html">https://undead.institute/files/zombie-programming/014-a-wide-array-of-zombies.html</a></p>
+</section>
+<p>Using the code above, you go through every bucket in the array.
+Bucket zero is the first one in the horde array or horde[0]. When you
+increment i by one, you can look at the second bucket or horde[1], and
+so on, till you get through the entire array.</p>
+<p><span id="body11.xhtml"></span></p>
+<h2>Functional Apocalypse</h2>
+<p>Sometimes you create a section of code that you want to use again and
+again—for instance, code that cures the zombie contagion or that finds
+the highest strength zombie in a horde.</p>
+<p>Now in your human resistance cell, you could do every task yourself
+and overload your schedule. Or you could delegate a task to Fred or
+Nancy, and then they could do that task every time and be excellent at
+it (rather than you having to relearn/remember that task every time you
+had to do it).</p>
+<p>It’s similar with code. Rather than writing that same set of code
+again and again and again, you can put it in a function. A function is a
+set of tasks/code that you can reuse. Like asking Fred or Nancy to do
+the task, you ask the function to do the task.</p>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+<p>While there is some disagreement on the best way to use functions,
+whether you do almost everything in small functions or use more
+monolithic functions, both have their advantages. More functions can
+make it harder to follow the code and can make things confusing because
+the code won’t be as linear and will jump around from location to
+location wherever the function is defined. On the other hand, if
+something’s wrong, it’s confined to a rather small section of code.
+Using more monolithic functions can make it easier to find the function
+the problem is in, but that is often an extensive section of code.</p>
+<p>I’d recommend a middle approach. When you start out, have your
+functions do one thing at a time and anything you do multiple times.
+They’re easier to debug (figure out where the code went wrong/why it’s
+not doing what you intend), and, once you have some practice, you’ll get
+a handle on when you need a function or not, and what makes sense to
+you.</p>
+</div>
+<p>Before we do some function code, we need to discuss how we hand
+information to Fred or Nancy and how we get information back from
+them.</p>
+<p>You don’t always need to give a function (or Fred or Nancy) any
+information to perform their task other than “Go!” But you might have a
+horde you want them to target or a weapon you want them to reload or a
+specific zombie you want them to cure, such as a formerly human spouse
+or child. When you pass information to a function or hand data to Fred
+or Nancy to process, that information or data is called a parameter, and
+you can have none, one, two, or however many parameters or inputs into a
+function.</p>
+<p>After the task is complete, you might want Fred or Nancy to hand
+something back to you or return with some information. That might be a
+now reloaded weapon or whether the antidote worked on your
+un-bucket-kicking spouse or child. (Don’t worry, the antidote was
+infused with JavaScript code, and your spouse/child is now resting,
+fully restored.) If they hand you a bunch of things, it’ll be hard to
+know what each thing is unless it’s organized (e.g. like into an array
+or something). Functions can only return one value, but that value could
+be an array, allowing you to circumvent the one-value return policy.</p>
+<p>A function definition (where you define the function’s name and what
+it does) begins with the word <em>function</em>, and then you enter the
+case-sensitive name you want to give that function. Next, in
+parentheses, add any parameters in a comma-separated list. If you don’t
+have any parameters, just leave the space between the parentheses
+blank/empty.</p>
+<div class="code">
+<span style="padding-left: 2em">function tryToCure( person ) {</span>
+<p>let result = Math.random() * 100;</p>
+<p>if(result &lt;= 10) {</p>
+<span style="padding-left: 6em">return person + " is cured!";</span>
+<p>} else {</p>
+<span style="padding-left: 6em">return person + " is still a
+zombie";</span>
+<p>}</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>When you call the function, you could write:</p>
+<div class="code">
+<span style="padding-left: 2em">tryToCure( spouse );</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/wvWNvXa">https://codepen.io/undeadinstitute/pen/wvWNvXa</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/015-functionally-undead.html">https://undead.institute/files/zombie-programming/015-functionally-undead.html</a></p>
+</section>
+<p>It will be just as though you handed Nancy your spouse’s whereabouts
+and asked her to use a tranquilizer dart to bring your spouse in and
+administer the antidote.</p>
+<p>To capture the returned value, you need to save it in a variable.
+Returning a value is optional.</p>
+<div class="code">
+<span style="padding-left: 2em">let human = tryToCure( spouse );</span>
+</div>
+<p>If you had no parameters to send the function, you could write
+this:</p>
+<div class="code">
+<span style="padding-left: 2em">function cureAllZombies() {</span>
+<p>//cure all zombies</p>
+<p>if( allCured == true ) {</p>
+<span style="padding-left: 6em">return true;</span>
+<p>} else {</p>
+<span style="padding-left: 6em">return false;</span>
+<p>}</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>If it didn’t return a value because Fred cured all the zombies, there
+would be no return statement in the function and no need to capture a
+result. It would be called like this:</p>
+<div class="code">
+<span style="padding-left: 2em">cureAllZombies();</span>
+</div>
+<p>With two or more parameters, you separate the parameters with
+commas.</p>
+<div class="code">
+<span style="padding-left: 2em">function cureTwoZombies( zombie1,
+zombie2) {</span>
+<p>//cure two zombies</p>
+<span style="padding-left: 2em">}</span>
+</div>
+<p>Assuming it didn’t need to return anything, it would be called like
+this:</p>
+<div class="code">
+<span style="padding-left: 2em">cureTwoZombies( spouse, child );</span>
+</div>
+<p>Let’s look at an example program. For arbitrary reasons that make
+this example easier, we magically have an array filled with zombie
+results from the latest testing done at a hospital. It is held in a
+one-dimensional array, and the results are set up so that a 1 is a human
+and a 0 is a zombie ("because zombies are zeroes and humans are heroes,"
+said the totally cool and hip author...). The hospital wants a
+JavaScript program to sort the array into humans and zombies and get a
+count of each.</p>
+<div class="code">
+<span style="padding-left: 2em">let patientList = [1, 1, 0, 1, 1, 1, 0,
+0, 1, 0, 1, 0 ], i = 0;</span> <span style="padding-left: 2em">let
+humans = 0, zombies = 0;</span> <span style="padding-left: 2em">while
+(patientList[i] != null) {</span>
+<p>if( patientList[i] === 1 ) {</p>
+<span style="padding-left: 6em">humans++;</span>
+<p>} else {</p>
+<span style="padding-left: 6em">zombies++;</span>
+<p>}</p>
+<p>i++</p>
+<span style="padding-left: 2em">}</span> <span
+style="padding-left: 2em">//Output: humans 7, zombies 5</span>
+</div>
+<section class="demobox">
+<h4>Try it Out:</h4>
+<p>Codepen Demo: <a
+href="https://codepen.io/undeadinstitute/pen/KKMJwEB">https://codepen.io/undeadinstitute/pen/KKMJwEB</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html">https://undead.institute/files/zombie-programming/016-sorting-an-array-of-zombies.html</a></p>
+</section>
+<p>Now that we have some idea of how the logic and programming works,
+how do we add this stuff to the HTML page? There are several ways, but
+the most important is the HTML script tag.</p>
+<div class="code">
+<span style="padding-left: 2em">&lt;script
+type=“text/javascript”&gt;</span>
+<p>cureAllZombies();</p>
+<span style="padding-left: 2em">&lt;/script&gt;</span>
+</div>
+<p>You can also use the script tag to load a file full of
+JavaScript.</p>
+<div class="code">
+<span style="padding-left: 2em">&lt;script src=“thecure.js”
+type=“text/javascript”&gt;&lt;/script&gt;</span>
+</div>
+<div class="tips">
+<img src="images/livingtip-jsloops.png" />
+<h4>Night of the Living Tip:</h4>
+You want to load your JavaScript code as late as possible in the
+downloading of the site—that is just before the closing body tag. If you
+load it earlier, such as in the head tag, it can block the download of
+other assets. The total time spent downloading will be the same wherever
+the JavaScript is placed, but if it blocks download or rendering because
+the browser is waiting on your js file to download or your js code to
+execute, it can prevent the rest of the page from displaying, giving the
+user a blank screen for longer. Even if the page isn’t functional until
+the js loads, the user likes to see that things are working, and the
+browser rendering what it can will help. A blank page, like a zombie's
+blank stare, usually means something is broken and users will assume as
+such. There will be some JavaScript that needs to be executed before the
+page loads or to determine how the page loads, so there may very well be
+JavaScript in the head, but if it's pushed to the bottom and the page
+still works as intended, that would be ideal.
+</div>
+<p>This book covered most of the basic tools you need to get up and
+running with programming with an eye towards doing so in JavaScript.
+While the syntax/how you write it will vary, most programming languages
+have all the concepts discussed here. The next book, <em>JavaScript
+Basics: Flinging Event, Element, and Object Bombs at Zombie Heads</em>
+will get into specifics of and focus on JavaScript and some unique
+offerings of that language.</p>
+<p>But before we go there, let’s test out those skills.</p>
+<p><span id="body11_split1.xhtml"></span></p>
+<h2>Punch Those Zombies in the Array</h2>
+<p>You will take a two-dimensional array composed of names and a
+super-secret numbery biologicy thingy (NBT) and process that array using
+several functions. The starter HTML file/codepen will hold the array and
+have stubs for the functions.</p>
+<section class="demobox">
+<h4>Starter File</h4>
+<p>Codepen: <a
+href="https://codepen.io/undeadinstitute/pen/jOrdwrE">https://codepen.io/undeadinstitute/pen/jOrdwrE</a></p>
+<p>File: <a
+href="https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html">https://undead.institute/files/zombie-programming/017-our-cells-numbery-biologicy-thingy-results.html</a></p>
+</section>
+<p>Your first function, processPerson, should take the subject’s name
+and the conveniently provided NBT. (Running it in a loop would probably
+help you process all the entries.) The NBT, due to arbitrary convenience
+for this exercise, can tell you both whether a subject will become a
+zombie and whether a cure will work on them once they become a
+zombie.</p>
+<p>From processPerson, hand the NBT to a function called
+willBecomeZombie. willBecomeZombie should return true or false. If the
+NBT modulus 7 is 2 or more, the person, if infected, will become a
+zombie, so return true. If it’s 0 or 1, return false.</p>
+<p>Also from processPerson, you call a function named
+infectionRateCalculation to calculate the likelihood of infection using
+that magical NBT. Divide the NBT by 19307 and multiply the result by
+0.1257. That will give you the infection rate of others should the
+person be infected. Return the infection rate so that you can print it
+with the other info.</p>
+<p>From processPerson, call a function called curable that takes the
+NBT. The antidote will work on the person if (NBT * 3 + 2) modulus 17 is
+0 or 7. Therefore, those values should return true. Any other value
+should return false.</p>
+<p>Once you have all the information calculated, call a function that
+outputs it to the screen using document.write. Your output should list
+the person’s name and label the results of each function. Please also
+ensure that each person’s info prints on its own line.</p>
+<section class="demobox">
+<h4>Example Answer:</h4>
+<p>Codepen: <a
+href="https://codepen.io/undeadinstitute/pen/xxOMWbd">https://codepen.io/undeadinstitute/pen/xxOMWbd</a></p>
+<p>File Demo: <a
+href="https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html">https://undead.institute/files/zombie-programming/017answers-our-cells-numbery-biologicy-thingy-results.html</a></p>
+</section>
+<p><span id="body12.xhtml"></span></p>
+<h3 id="body12.xhtml_doc13">Got Questions?</h3>
+<p>Join the <a
+href="https://www.facebook.com/groups/490540551375786/">Undead Institute
+Facebook group</a> and get answers.
+https://www.facebook.com/groups/undeadinstitutehelpforum<br />
+</p>
+<h3>You Know What Else Kills Zombies?</h3>
+<p>Honest feedback. Enjoyed the book? Found an error or an omission?
+Still confused about something? Want to complement the author’s sense of
+humor (or lack thereof)? Email John directly at <a
+href="mailto:feedback@undead.institute">feedback@undead.institute</a></p>
+<p><br />
+</p>
+<h3>Find More Zombified Web Development at</h3>
+<p><a href="https://undead.institute/">https://undead.institute</a></p>
+<p><br />
+</p>
+<p><span id="body12_split1.xhtml"></span></p>
+<h2>About the Author</h2>
+<p>John is a storyteller with design and development skills. By day he
+designs and builds websites and mobile apps, by night he spins sci-fi
+stories at StoryLab (<a
+href="https://storylab.us/">https://storylab.us</a>) and counts his
+words carefully at <a
+href="https://8wordstories.com/">https://8wordstories.com</a>. He's a
+pineapple in disguise <a
+href="https://pineapplecomics.com/">https://pineapplecomics.com</a> and
+(as you know) tries to make learning web development fun by helping you
+kill zombies <a
+href="https://undead.institute/">https://undead.institute</a>. He's been
+lucky enough to collect a wife and five kids along with six cats, four
+dogs, and a small army of fish. If he remembers to wear pants, it’s been
+a good day.</p>
+<p>Ask him questions, compliment his tastes in thirteenth century
+Greenlandic literature, and argue with him over minutia (like whether
+Greenland had any independent literature in the thirteenth century) on
+twitter <a href="http://twitter.com/storykaboom">@storykaboom</a></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>We Hope Getting Braaains was Fun!</p>

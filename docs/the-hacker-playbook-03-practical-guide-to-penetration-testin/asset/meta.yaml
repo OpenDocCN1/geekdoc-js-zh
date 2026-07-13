@@ -1,0 +1,382 @@
+name: '[The Hacker Playbook 03] • Practical Guide To Penetration Testing'
+name_cn: 黑客秘籍：渗透测试实用指南
+slug: the-hacker-playbook-03-practical-guide-to-penetration-testin
+toc:
+- - '##'
+  - 注意事项与免责声明
+- - '##'
+  - 简介
+- - '##'
+  - 渗透测试团队与红队
+- - '###'
+  - 混淆 Meterpreter 载荷
+- - '####'
+  - Cobalt Strike Infrastructure
+- - '####'
+  - Cobalt Strike Aggressor Scripts
+- - '###'
+  - 运行 `Empire`
+- - '###'
+  - 选择您的监听器（我们将在实验中选用 http）
+- - '###'
+  - 配置负载 (Payload)
+- - '###'
+  - 创建负载 (Create Payload)
+- - '###'
+  - 使用 **GoDaddy**设置权威 `DNS`服务器
+- - '###'
+  - 将 Nameservers（名称服务器）自定义为专属
+- - '##'
+  - 设置 Attacker Server
+- - '###'
+  - 设置 dnscat2 Server
+- - '##'
+  - 编译客户端
+- - '###'
+  - 常规 Nmap 差异对比
+- - '###'
+  - Web 截图
+- - '###'
+  - 云扫描
+- - '###'
+  - 网络/服务搜索引擎
+- - '###'
+  - 手动解析 SSL 证书
+- - '###'
+  - 子域名发现
+- - '###'
+  - 发现脚本 Discover Scripts
+- - '###'
+  - 脚本
+- - '###'
+  - Knock
+- - '###'
+  - Knockpy
+- - '###'
+  - 步骤摘要：
+- - '###'
+  - 注意：图像已转换为链接或占位符。图像链接（`images/00...`）应针对实际仓库中的可用性进行检查。
+- - '###'
+  - Sublist3r
+- - '###'
+  - SubBrute
+- - '###'
+  - Truffle Hog
+- - '###'
+  - S3 存储桶枚举
+- - '###'
+  - Bucket Finder
+- - '#'
+  - 开始之前
+- - '#'
+  - 查询 S3 并下载所有内容
+- - '#'
+  - 向 S3 写入数据
+- - '#'
+  - 在 AWS 存储桶中修改访问控制
+- - '#'
+  - 资源
+- - '#'
+  - 子域接管
+- - '#'
+  - 运行 tko-subs
+- - '#'
+  - 电子邮件
+- - '###'
+  - SimplyEmail
+- - '##'
+  - 实验室：为 cnn.com 查找所有电子邮件账户
+- - '##'
+  - 过去泄露
+- - '##'
+  - 其他开源资源
+- - '#'
+  - 结论
+- - '##'
+  - 漏洞赏金计划：入门
+- - '###'
+  - 设置您的 Web 应用黑客机器
+- - '###'
+  - 分析 Web 应用程序
+- - '###'
+  - Web 发现
+- - '###'
+  - 跨站脚本 (XSS)
+- - '###'
+  - NodeJS 中的高级 XSS
+- - '###'
+  - 攻击客户支持系统的 NoSQL 应用程序
+- - '###'
+  - 服务器源代码
+- - '###'
+  - 注入 NoSQL 聊天
+- - '###'
+  - 高级 NoSQL 注入
+- - '###'
+  - 反序列化攻击
+- - '###'
+  - 创建载荷
+- - '###'
+  - 模板引擎攻击 - 模板注入
+- - '###'
+  - 测试基本操作
+- - '#'
+  - 远程代码执行
+- - '##'
+  - JavaScript 与远程代码执行 (RCE)
+- - '##'
+  - 针对支持上传功能的易感 Chat 应用进行攻击
+- - '##'
+  - RCE Upload 攻击
+- - '##'
+  - 服务器端请求伪造 (SSRF)
+- - '###'
+  - 高级 XXE - 跨带（XXE-OOB）!
+- - '###'
+  - 更多 XXE 负载：
+- - '##'
+  - '结论！  '
+- - '#'
+  - 4 The Drive - 破坏网络
+- - '##'
+  - '找到凭据！  '
+- - '###'
+  - 设置环境 - 实验室网络
+- - '###'
+  - 配置和创建域控制器
+- - '###'
+  - 设置客户端机器（Windows 7/10）加入域
+- - '###'
+  - 设置 IIS 服务器并配置 SPN
+- - '##'
+  - 无凭据的网络
+- - '###'
+  - Responder
+- - '###'
+  - Beta Responder (MultiRelay.py)
+- - '###'
+  - 参考资料
+- - '###'
+  - PowerShell Responder
+- - '#'
+  - Run CME to spawn Empire shells
+- - '##'
+  - 权限提升实验
+- - '##'
+  - '`从内存中提取明文凭证`'
+- - '##'
+  - '`从 Windows 凭证存储和浏览器中获取密码`'
+- - '##'
+  - 从 OSX 获取本地凭据和信息
+- - '##'
+  - 在 Windows 域环境中“利用本地资源” (Living Off the Land)
+- - '###'
+  - 查询 Active Directory
+- - '###'
+  - BloodHound/SharpHound
+- - '###'
+  - Advanced ACL/ACE Bloodhound
+- - '###'
+  - 横向移动 - 迁移进程
+- - '###'
+  - 从您初始主机向外横向移动
+- - '#'
+  - 正如我们所见，`find_localadmin_access` 模块识别出我们被利用的用户确实拥有访问 `buzz.cyberspacekittens.local`
+    主机的权限。
+- - '##'
+  - 在远程系统上执行
+- - '##'
+  - 转储域控制器哈希值
+- - '##'
+  - 通过 VPS 上的 RDP 进行横向移动
+- - '##'
+  - Linux 上的 Pivoting（中转）
+- - '##'
+  - 提权 (Privilege Escalation)
+- - '##'
+  - Linux 横向移动实验室 (Lateral Movement Lab)
+- - '###'
+  - 攻击 CSK 安全网络 (CSK Secure Network)
+- - '###'
+  - 检索数据库信息：
+- - '###'
+  - 通过 dnscat 进行特权提升：
+- - '###'
+  - 执行 dnscat 端口转发：
+- - '##'
+  - 结论
+- - '#'
+  - 5 屏幕 - 社会工程学
+- - '###'
+  - Doppelganger 域
+- - '###'
+  - 如何克隆认证页面
+- - '###'
+  - 具有 2FA 的凭据
+- - '##'
+  - 钓鱼
+- - '##'
+  - 隐藏的加密负载
+- - '##'
+  - 利用社会工程学攻击内部 Jenkins
+- - '##'
+  - 完整的 Jenkins 利用实验室
+- - '##'
+  - 在 THP Kali VM 上利用 Jenkins
+- - '##'
+  - 结论
+- - '#'
+  - 6 侧踢 - 物理攻击
+- - '##'
+  - 读卡器克隆机
+- - '##'
+  - 物理工具绕过访问点
+- - '###'
+  - 设置 OpenVPN AS 服务器：
+- - '###'
+  - 下载 OpenVPN 配置文件
+- - '###'
+  - 设置 LAN Turtle 和初始配置
+- - '#'
+  - 在以下位置：config 区域 'vpn'，选项 forward 设置为 ACCEPT。
+- - '##'
+  - 从我们的 Kali 攻击机访问 VPN 服务器：
+- - '#'
+  - '在 LAN Turtle 的 SSH 连接上，使用以下命令重启： '
+- - '##'
+  - Packet Squirrel
+- - '##'
+  - Bash Bunny
+- - '###'
+  - 在 Kali 上设置 Bash Bunny
+- - '###'
+  - 登录 Bash Bunny
+- - '###'
+  - QuickCreds
+- - '###'
+  - BunnyTap
+- - '##'
+  - WiFi
+- - '##'
+  - 结论
+- - '#'
+  - 7 四分卫突袭——规避 `AV` 和 `网络` 检测
+- - '##'
+  - 基础：构建 `Keylogger`（键盘记录器）
+- - '###'
+  - 从源代码编译
+- - '##'
+  - 示例框架
+- - '###'
+  - 混淆
+- - '###'
+  - THP 自定义投放器
+- - '##'
+  - Shellcode 与 DLLs
+- - '##'
+  - 运行服务器
+- - '###'
+  - 用于 Shellcode 载荷：
+- - '###'
+  - 用于 DLL 载荷：
+- - '##'
+  - 客户端
+- - '##'
+  - 配置客户端和服务器
+- - '##'
+  - 添加新处理器
+- - '##'
+  - 进一步练习
+- - '##'
+  - 重新编译 Metasploit/Meterpreter 以绕过 AV 和网络检测
+- - '###'
+  - 使用 Clang 编译 metsrv
+- - '###'
+  - 自定义 Stage0 载荷：
+- - '#'
+  - 'LAB: '
+- - '##'
+  - '如何在 Windows 上构建 Metasploit/Meterpreter: '
+- - '##'
+  - '编译 Metasploit/Meterpreter '
+- - '###'
+  - 'Next, modify our Meterpreter Payloads and compile them using the supplied `.bat`
+    file:'
+- - '#'
+  - Advanced Bypass Techniques
+- - '##'
+  - SharpShooter
+- - '##'
+  - 应用程序白名单绕过
+- - '##'
+  - 代码洞穴（Code Caves）
+- - '##'
+  - PowerShell 混淆
+- - '##'
+  - 无 PowerShell 的 PowerShell：
+- - '##'
+  - '`SharpPick`: 无需调用 `PowerShell.exe` 即可运行 PowerShell'
+- - '##'
+  - HideMyPS
+- - '##'
+  - 结论
+- - '#'
+  - 8 特殊团队 - 破解、漏洞利用和技巧
+- - '##'
+  - 自动化
+- - '###'
+  - 创建 Handler 和 AutoRunScript：
+- - '###'
+  - 自动化 Empire
+- - '###'
+  - 自动化 Cobalt Strike
+- - '##'
+  - Aggressor 收集脚本
+- - '##'
+  - 密码破解
+- - '##'
+  - 实验室环境
+- - '##'
+  - 最喜欢的密码列表
+- - '##'
+  - 全都要破译——尽可能快地破解尽可能多的密码
+- - '##'
+  - 创意活动
+- - '##'
+  - 禁用 PS 日志记录
+- - '##'
+  - 从互联网下载文件的 Windows 命令行
+- - '##'
+  - 从本地管理员获取系统权限
+- - '##'
+  - 在不触碰 LSASS 的情况下检索 NTLM 哈希值
+- - '##'
+  - 使用防御工具构建培训和监控环境
+- - '##'
+  - 结论
+- - '#'
+  - '`9 战地两分钟演练——从零到英雄`'
+- - '###'
+  - '`10 码线`'
+- - '###'
+  - '`20 码线`'
+- - '###'
+  - '`30 码线`'
+- - '###'
+  - '`40 码线`'
+- - '###'
+  - '`50 码线`'
+- - '###'
+  - '`60 码线`'
+- - '###'
+  - '`70 码线`'
+- - '###'
+  - '`80 码线`'
+- - '##'
+  - 90 码线
+- - '#'
+  - '`继续教育`'
+- - '#'
+  - '`关于作者`'
+- - '#'
+  - '`特别鸣谢`'

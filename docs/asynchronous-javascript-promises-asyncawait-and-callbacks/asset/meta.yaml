@@ -1,0 +1,50 @@
+name: Asynchronous JavaScript： Promises, Async／Await, and Callbacks
+name_cn: 异步JavaScript：Promise、Async/Await和回调
+slug: asynchronous-javascript-promises-asyncawait-and-callbacks
+toc:
+- - '###'
+  - 为什么异步 JavaScript 如此重要
+- - '###'
+  - JavaScript 异步编程的演进
+- - '####'
+  - 1. 回调时代
+- - '####'
+  - 2. Promise 革命
+- - '####'
+  - 3. Async/Await 范式
+- - '####'
+  - 4. 现代异步模式
+- - '###'
+  - 异步 JavaScript 的常见用例
+- - '####'
+  - 1. API 调用和网络请求
+- - '####'
+  - 2. 文件操作
+- - '####'
+  - 3. 数据库操作
+- - '####'
+  - 4. 定时器与时间间隔
+- - '####'
+  - 5. 事件处理与用户交互
+- - '####'
+  - 6. 动画与图形
+- - '###'
+  - 本书你将学到什么
+- - '####'
+  - 1. 异步 JavaScript 基础
+- - '####'
+  - 2. 回调函数：构建基石
+- - '####'
+  - 3. Promise：异步编程的新时代
+- - '####'
+  - 4. Async/Await：同步风格的异步代码
+- - '####'
+  - 5. 高级异步模式
+- - '####'
+  - 6. 实际应用与最佳实践
+- - '####'
+  - 7. 性能优化与调试
+- - '####'
+  - 8. 现代框架中的异步 JavaScript
+- - '####'
+  - 9. 异步 JavaScript 的未来

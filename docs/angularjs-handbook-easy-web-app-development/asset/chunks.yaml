@@ -1,0 +1,6237 @@
+- fmt: "\n![](images/00001.jpeg)\n\nAngularJS Handbook\n\nEasy Web App Development\n\
+    \nBy Rick L.\n\nCopyright©2016 Rick L.\n\nAll Rights Reserved\n\nCopyright © 2016\
+    \ by Rick L.\n\nAll rights reserved. No part of this publication may be reproduced,\
+    \ distributed, or transmitted in any form or by any means, including photocopying,\
+    \ recording, or other electronic or mechanical methods, without the prior written\
+    \ permission of the author, except in the case of brief quotations embodied in\
+    \ critical reviews and certain other noncommercial uses permitted by copyright\
+    \ law.\n\n## Table of Contents\n\n[Chapter 1- Overview of AngularJS](#part0000_split_004.html__Toc445490750)\n\
+    \n[Chapter 2- AngularJS and HTML](#part0000_split_005.html__Toc445490751)\n\n\
+    [Chapter 3- XHRs](#part0000_split_011.html__Toc445490760)\n\n[Chapter 4- Links\
+    \ & Images](#part0000_split_013.html__Toc445490761)\n\n[Chapter 5- Working with\
+    \ Animations](#part0000_split_014.html__Toc445490762)\n\n[Chapter 6- $watch()\
+    \ , $digest(), and $apply()](#part0000_split_019.html__Toc445490763)\n\n[Chapter\
+    \ 7- The Hierarchy of “$scope”](#part0000_split_023.html__Toc445490767)\n\n[Chapter\
+    \ 8- Refactoring AngularJS Apps](#part0000_split_024.html__Toc445490768)\n\n[Conclusion](#part0000_split_027.html__Toc445490769)\n\
+    \n## Disclaimer\n\nWhile all attempts have been made to verify the information\
+    \ provided in this book, the author does assume any responsibility for errors,\
+    \ omissions, or contrary interpretations of the subject matter contained within.\
+    \ The information provided in this book is for educational and entertainment purposes\
+    \ only. The reader is responsible for his or her own actions and the author does\
+    \ not accept any responsibilities for any liabilities or damages, real or perceived,\
+    \ resulting from the use of this information.\n\nThe trademarks that are used\
+    \ are without any consent, and the publication of the trademark is without permission\
+    \ or backing by the trademark owner. All trademarks and brands within this book\
+    \ are for clarifying purposes only and are the owned by the owners themselves,\
+    \ not affiliated with this document.\n\n# Chapter 1- Overview of AngularJS\n\n\
+    This framework works by performing an extension of what is provided in HTML. If\
+    \ HTML had been created for the purpose of the development of web-apps, then it\
+    \ would have been the angularJS. HTML is the best when it comes to declaration\
+    \ of static documents. However, it is not good for the declaration of dynamic\
+    \ views in our web applications. With Angular, the HTML vocabulary used in your\
+    \ application can be greatly extended. After doing that, you will get an environment\
+    \ which is easy to read, expressive, and faster to perform your development.\n\
+    \nIn this book, we will explore the various features of AngularJS which you as\
+    \ a developer can take advantage of so as to improve the look and feel of your\
+    \ application.\n\n# Chapter 2- [AngularJS](https://github.com/angular/bower-material)\
+    \ and HTML\n\nAs you are aware, AngularJS is used to extend the features of HTML.\
+    \ Most of you are aware of how the standard HTML can be used. However, AngularJS\
+    \ is used to extend the features of this. In this chapter, we want to create an\
+    \ HTML page, and then turn the code written in HTML into a template which will\
+    \ be used by the AngularJS so as to display the same data dynamically. Only basic\
+    \ information will be added to the HTML page.\n\nHere is the first code for the\
+    \ web page:\n\n```html\n<ul>\n<li>\n   <span> Motorola </span>\n<p>\n    I really\
+    \ like Motorola phones.\n</p>\n</li>\n<li>\n    <span>Nokia are the best in Wi-Fi\
+    \ connection</span>\n<p>\n    I really like to make use of devices.\n</p>\n</li>\n\
+    </ul>\n```\n\nYou can continue with the addition of static HTML to the above file.\
+    \ An example of this is given below:\n\n```html\n<p> The number of available phones\
+    \ is: 2</p>\n```\n\nIn the example, we have just used the static HTML so as to\
+    \ render the content of the web page which we have just created. With AngularJS,\
+    \ the same content can be rendered dynamically.\n\nOur aim is to make the page\
+    \ we have created dynamic. A test case should also be implemented so that the\
+    \ controller that we create is tested. In AngularJS, the MV model (Model-View-Controller)\
+    \ is used for the purpose of organizing the structure of the application. With\
+    \ this, the code is decoupled, and the concept of separation of concerns is implemented.\
+    \ The model, view, and the controller will be added in this app. What happens\
+    \ in Angular is that the model is projected into a template via the view. This\
+    \ is an indication that in case something is changed, all of the binding points\
+    \ will also be updated so that the view is updated. The view is constructed from\
+    \ the model in Angular.\n\nConsider the example given below:\n\n```html\n<html\
+    \ ng-app=\"myApp\">\n<head>\n...\n<script src=\"myapps/angular/angular.js\"></script>\n\
+    <script src=\"js/controllers.js\"></script>\n</head>\n  <body ng-controller=\"\
+    mply “Repeat”?PnListCtrl\">\n<ul>\n<li ng-repeat=\"model in phones\">\n<span>{{model.name}}</span>\n\
+    <p>{{model.snippet}}</p>\n    </li>\n  </ul>\n</body>\n</html>\n```\n\nWhat you\
+    \ should have noticed is that the hard coded phone list has been replaced by AngularJS\
+    \ expressions and an `ngRepeat` directive.\n\nThe controller for the app should\
+    \ just be a constructor function which will take the parameter `$scope`. This\
+    \ is shown below:\n\n```javascript\nvar myApp = angular.module('myApp', []);\n\
+    \   myApp.controller('PhoneListCtrl', function ($scope) {\n$scope.phones = [\n\
+    \   {'name': 'Motorola,\n'snippet': ' I really like Motorola phones.\n.'},\n \
+    \ {'name': ' Nokia are the best in Wi-Fi connection ',\n   'snippet': 'Their devices\
+    \ are really liked by many.'},\n   {'name': 'MOTOROLA XOOM™',\n  'snippet': '\
+    \ I really like to make use of devices.\n.'}\n];\n});\n```\n\nWhat we have done\
+    \ is that we have declared the controller, and then we have finally linked it\
+    \ to the module.\n\n### Tests\n\nIn AngularJS, the controller and the view are\
+    \ separated. With this, the ode becomes testable even during the time of development.\
+    \ In case the controller is available in the global space, then we can mock the\
+    \ `scope` object so as to instantiate it. This is shown in the example given below:\n\
+    \n```javascript\ndescribe('PnListCtrl', function(){\n   it(' a \"phones\" model\
+    \ with 2 phones should be created', function() {\nvar scope = {},\n   ctrl = new\
+    \ PnListCtrl(scop);\n   expect(scop.phones.length).toBe(2);\n});\n});\n```\n\n\
+    The non-global controllers should then be created. No one will want to have their\
+    \ controller function to be in their global namespace. Instead, most people will\
+    \ want it to be registered via the anonymous constructor function of the module\
+    \ which we have just created.\n\nIn this case, we will be proved by the service\
+    \ `$controller` from AngularJS. This will be tasked with retrieving the controller\
+    \ by its name. Consider the example given below, which shows how this can be done:\n\
+    \n```javascript\ndescribe('PnListCtrl', function(){\n   beforeEach(module('pncatApp'));\n\
+    \   it('you should create \"phones\" model with the 2 phones', inject(function($controller)\
+    \ {\nvar scope = {},\n   ctrl = $controller('PnListCtrl', {$scope:scope});\n \
+    \  expect(scope.phones.length).toBe(2);\n}));\n});\n```\n\nWhat we have done is\
+    \ that we have instructed the Angular to load each module before any of the tests\
+    \ is done. The service `$controller` should then be injected into our service.\
+    \ The service has also been used for creation of a new `PnListCtrl`. The instance\
+    \ is then used for the purpose of verification.\n\n### The Experiments\n\nAnother\
+    \ binding can be added to the file. This is shown below:\n\n```html\n<p>The available\
+    \ number of phones: {{phones.length}}</p>\n```\n\nA new model property can be\
+    \ created in the controller and then bound from the template. An example of this\
+    \ is shown below:\n\n```javascript\n$scope.name = \"John\";\n```\n\nThe new binding\
+    \ can be added to the file as follows:\n\n```html\n<p>Hi, {{name}}!</p>\n```\n\
+    \nYou can now refresh your browser and then observe what happens. The unit test\
+    \ for the controller should then be updated in the `./test/unit/controllersSpec.js`\
+    \ so that the new change is reflected.\n"
+  raw: '
+
+
+    ![](images/00001.jpeg)
+
+
+    AngularJS Handbook
+
+
+    Easy Web App Development
+
+
+    By Rick L.
+
+
+    Copyright©2016 Rick L.
+
+
+    All Rights Reserved
+
+
+    Copyright © 2016 by Rick L.
+
+
+    All rights reserved. No part of this publication may be reproduced, distributed,
+    or transmitted in any form or by any means, including photocopying, recording,
+    or other electronic or mechanical methods, without the prior written permission
+    of the author, except in the case of brief quotations embodied in critical reviews
+    and certain other noncommercial uses permitted by copyright law.
+
+
+    Table of Contents
+
+
+    [Chapter 1- Overview of AngularJS](#part0000_split_004.html__Toc445490750)
+
+
+    [Chapter 2- AngularJS and HTML](#part0000_split_005.html__Toc445490751)
+
+
+    [Chapter 3- XHRs](#part0000_split_011.html__Toc445490760)
+
+
+    [Chapter 4- Links & Images](#part0000_split_013.html__Toc445490761)
+
+
+    [Chapter 5- Working with Animations](#part0000_split_014.html__Toc445490762)
+
+
+    [Chapter 6- $watch() , $digest(), and $apply()](#part0000_split_019.html__Toc445490763)
+
+
+    [Chapter 7- The Hierarchy of “$scope”](#part0000_split_023.html__Toc445490767)
+
+
+    [Chapter 8- Refactoring AngularJS Apps](#part0000_split_024.html__Toc445490768)
+
+
+    [Conclusion](#part0000_split_027.html__Toc445490769)
+
+
+    Disclaimer
+
+
+    While all attempts have been made to verify the information provided in this book,
+    the author does assume any responsibility for errors, omissions, or contrary interpretations
+    of the subject matter contained within. The information provided in this book
+    is for educational and entertainment purposes only. The reader is responsible
+    for his or her own actions and the author does not accept any responsibilities
+    for any liabilities or damages, real or perceived, resulting from the use of this
+    information.
+
+
+    The trademarks that are used are without any consent, and the publication of the
+    trademark is without permission or backing by the trademark owner. All trademarks
+    and brands within this book are for clarifying purposes only and are the owned
+    by the owners themselves, not affiliated with this document.
+
+
+    # Chapter 1- Overview of AngularJS
+
+
+    This framework works by performing an extension of what is provided in HTML. If
+    HTML had been created for the purpose of the development of web-apps, then it
+    would have been the angularJS. HTML is the best when it comes to declaration of
+    static documents. However, it is not good for the declaration of dynamic views
+    in our web applications.  With Angular, the HTML vocabulary used in your application
+    can be greatly extended. After doing that, you will get an environment which is
+    easy to read, expressive, and faster to perform your development.
+
+
+    In this book, we will explore the various features of AngularJS which you as a
+    developer can take advantage of so as to improve the look and feel of your application.
+
+
+    # Chapter 2- [AngularJS](https://github.com/angular/bower-material) and HTML
+
+
+    # As you are aware, AngularJS is used to extend the features of HTML. Most of
+    you are aware of how the standard HTML can be used. However, AngularJS is used
+    to extend the features of this. In this chapter, we want to create an HTML page,
+    and then turn the code written in HTML into a template which will be used by the
+    AngularJS so as to display the same data dynamically. Only basic information will
+    be added to the HTML page.
+
+
+    # Here is the first code for the web page:
+
+
+    <ul>
+
+
+    <li>
+
+
+       <span> Motorola </span>
+
+
+    <p>
+
+
+        I really like Motorola phones.
+
+
+    </p>
+
+
+    </li>
+
+
+    <li>
+
+
+        <span>Nokia are the best in Wi-Fi connection</span>
+
+
+    <p>
+
+
+        I really like to make use of devices.
+
+
+    </p>
+
+
+    </li>
+
+
+    </ul>
+
+
+    # You can continue with the addition of static HTML to the above file. An example
+    of this is given below:
+
+
+    <p> The number of available phones is: 2</p>
+
+
+    # In the example, we have just used the static HTML so as to render the content
+    of the web page which we have just created. With AngularJS, the same content can
+    be rendered dynamically.
+
+
+    # Our aim is to make the page we have created dynamic. A test case should also
+    be implemented so that the controller that we create is tested. In AngularJS,
+    the MV model (Model-View-Controller) is used for the purpose of organizing the
+    structure of the application. With this, the code is decoupled, and the concept
+    of separation of concerns is implemented. The model, view, and the controller
+    will be added in this app. What happens in Angular is that the model is projected
+    into a template via the view. This is an indication that in case something is
+    changed, all of the binding points will also be updated so that the view is updated.
+    The view is constructed from the model in Angular.
+
+
+    # Consider the example given below:
+
+
+    <html ng-app="myApp">
+
+
+    <head>
+
+
+    ...
+
+
+    <script src="myapps/angular/angular.js"></script>
+
+
+    <script src="js/controllers.js"></script>
+
+
+    </head>
+
+
+      <body ng-controller="mply “Repeat”?PnListCtrl">
+
+
+    <ul>
+
+
+    <li ng-repeat="model in phones">
+
+
+    <span>{{model.name}}</span>
+
+
+    <p>{{model.snippet}}</p>
+
+
+        </li>
+
+
+      </ul>
+
+
+    </body>
+
+
+    </html>
+
+
+    # What you should have noticed is that the hard coded phone list has been replaced
+    by AngularJS expressions and an ngRepeat directive.
+
+
+    # The controller for the app should just be a constructor function which will
+    take the parameter “$scope.” This is shown below:
+
+
+    var myApp = angular.module(''myApp'', []);
+
+
+       myApp.controller(''PhoneListCtrl'', function ($scope) {
+
+
+    $scope.phones = [
+
+
+       {''name'': ''Motorola,
+
+
+    ''snippet'': '' I really like Motorola phones.
+
+
+    .''},
+
+
+      {''name'': '' Nokia are the best in Wi-Fi connection '',
+
+
+       ''snippet'': ''Their devices are really liked by many.''},
+
+
+       {''name'': ''MOTOROLA XOOM™'',
+
+
+      ''snippet'': '' I really like to make use of devices.
+
+
+    .''}
+
+
+    ];
+
+
+    });
+
+
+    What we have done is that we have declared the controller, and then we have finally
+    linked it to the module.
+
+
+    Tests
+
+
+    In AngularJS, the controller and the view are separated. With this, the ode becomes
+    testable even during the time of development. In case the controller is available
+    in the global space, then we can mock the “scope” object so as to instantiate
+    it. This is shown in the example given below:
+
+
+    describe(''PnListCtrl'', function(){
+
+
+       it('' a "phones" model with 2 phones should be created'', function() {
+
+
+    var scope = {},
+
+
+       ctrl = new PnListCtrl(scop);
+
+
+       expect(scop.phones.length).toBe(2);
+
+
+    });
+
+
+    });
+
+
+    The non-global controllers should then be created. No one will want to have their
+    controller function to be in their global namespace. Instead, most people will
+    want it to be registered via the anonymous constructor function of the module
+    which we have just created.
+
+
+    In this case, we will be proved by the service “$controller” from AngularJS. This
+    will be tasked with retrieving the controller by its name. Consider the example
+    given below, which shows how this can be done:
+
+
+    describe(''PnListCtrl'', function(){
+
+
+       beforeEach(module(''pncatApp''));
+
+
+       it(''you should create "phones" model with the 2 phones'', inject(function($controller)
+    {
+
+
+    var scope = {},
+
+
+       ctrl = $controller(''PnListCtrl'', {$scope:scope});
+
+
+       expect(scope.phones.length).toBe(2);
+
+
+    }));
+
+
+    });
+
+
+    What we have done is that we have instructed the Angular to load each module before
+    any of the tests is done. The service “$controller” should then be injected into
+    our service. The service has also been used for creation of a new “PnListCtrl.”
+    The instance is then used for the purpose of verification.
+
+
+    The Experiments
+
+
+    Another binding can be added to the file. This is shown below:
+
+
+    <p>The available number of phones: {{phones.length}}</p>
+
+
+    A new model property can be created in the controller and then bound from the
+    template. An example of this is shown below:
+
+
+    $scope.name = "John";
+
+
+    The new binding can be added to the file as follows:
+
+
+    <p>Hi, {{name}}!</p>
+
+
+    You can now refresh your browser and then observe what happens. The unit test
+    for the controller should then be updated in the “./test/unit/controllersSpec.js”
+    so that the new change is reflected.'
+  toc: []
+  trans: "\n\n![](img/00001.jpeg)\n\nAngularJS 手册\n\n轻松开发 Web 应用\n\n作者：Rick L.\n\n\
+    版权所有 © 2016 Rick L.\n\n保留所有权利\n\n版权所有 © 2016 年 Rick L.\n\n保留所有权利。未经作者事先书面许可，不得以任何形式或任何方式（包括影印、录制或其他电子或机械方法）复制、分发或传播本出版物的任何部分，除非在版权法允许的批评性评论和某些其他非商业用途中包含的简短引用。\n\
+    \n## 目录\n\n第 1 章 - AngularJS 概述\n\n第 2 章 - AngularJS 与 HTML\n\n第 3 章 - XHR\n\n\
+    第 4 章 - 链接与图片\n\n第 5 章 - 使用动画\n\n第 6 章 - $watch()、$digest() 和 $apply()\n\n第 7\
+    \ 章 - “$scope”的层次结构\n\n第 8 章 - 重构 AngularJS 应用\n\n结论\n\n## 免责声明\n\n尽管已尽力验证本书中提供的信息，但作者对其中包含的主题内容的错误、遗漏或相反解释不承担任何责任。本书提供的信息仅供教育和娱乐之用。读者应对自己的行为负责，作者不承担因使用这些信息而产生的任何责任或损害（无论是实际还是感知的）。\n\
+    \n所使用的商标未经任何同意，商标的发布未经商标所有者的许可或支持。本书中的所有商标和品牌仅用于说明目的，归其所有者所有，与本文件无关。\n\n# 第 1\
+    \ 章 - AngularJS 概述\n\n该框架通过扩展 HTML 提供的功能来工作。如果 HTML 是为了开发 Web 应用而创建的，那么它就会是 AngularJS。HTML\
+    \ 在声明静态文档方面表现最佳。然而，它并不适合在我们的 Web 应用中声明动态视图。使用 Angular，可以极大地扩展应用中使用的 HTML 词汇。完成此操作后，您将获得一个易于阅读、表达力强且开发速度更快的环境。\n\
+    \n在本书中，我们将探讨 AngularJS 的各种特性，作为开发人员，您可以利用这些特性来改善应用的外观和感觉。\n\n# 第 2 章 - [AngularJS](https://github.com/angular/bower-material)\
+    \ 与 HTML\n\n如您所知，AngularJS 用于扩展 HTML 的功能。大多数人都知道如何使用标准 HTML。然而，AngularJS 用于扩展其功能。在本章中，我们想要创建一个\
+    \ HTML 页面，然后将用 HTML 编写的代码转换为模板，该模板将由 AngularJS 使用，以便动态显示相同的数据。HTML 页面中只会添加基本信息。\n\
+    \n以下是网页的第一个代码：\n\n```html\n<ul>\n<li>\n   <span> Motorola </span>\n<p>\n    I\
+    \ really like Motorola phones.\n</p>\n</li>\n<li>\n    <span>Nokia are the best\
+    \ in Wi-Fi connection</span>\n<p>\n    I really like to make use of devices.\n\
+    </p>\n</li>\n</ul>\n```\n\n您可以继续向上述文件添加静态 HTML。下面给出了一个示例：\n\n```html\n<p> The\
+    \ number of available phones is: 2</p>\n```\n\n在示例中，我们仅使用静态 HTML 来呈现我们刚刚创建的网页内容。使用\
+    \ AngularJS，可以动态呈现相同的内容。\n\n我们的目标是使我们创建的页面变得动态。还应实现一个测试用例，以便测试我们创建的控制器。在 AngularJS\
+    \ 中，使用 MV 模型（模型-视图-控制器）来组织应用的结构。通过这种方式，代码被解耦，并实现了关注点分离的概念。模型、视图和控制器将被添加到这个应用中。Angular\
+    \ 中的工作方式是，模型通过视图投影到模板中。这表明，如果某些内容发生变化，所有绑定点也会更新，以便视图得到更新。在 Angular 中，视图是从模型构建的。\n\
+    \n考虑下面给出的示例：\n\n```html\n<html ng-app=\"myApp\">\n<head>\n...\n<script src=\"\
+    myapps/angular/angular.js\"></script>\n<script src=\"js/controllers.js\"></script>\n\
+    </head>\n  <body ng-controller=\"mply “Repeat”?PnListCtrl\">\n<ul>\n<li ng-repeat=\"\
+    model in phones\">\n<span>{{model.name}}</span>\n<p>{{model.snippet}}</p>\n  \
+    \  </li>\n  </ul>\n</body>\n</html>\n```\n\n您应该注意到，硬编码的手机列表已被 AngularJS 表达式和 `ngRepeat`\
+    \ 指令所取代。\n\n应用的控制器应该只是一个构造函数，它将接受参数 `$scope`。如下所示：\n\n```javascript\nvar myApp\
+    \ = angular.module('myApp', []);\n   myApp.controller('PhoneListCtrl', function\
+    \ ($scope) {\n$scope.phones = [\n   {'name': 'Motorola,\n'snippet': ' I really\
+    \ like Motorola phones.\n.'},\n  {'name': ' Nokia are the best in Wi-Fi connection\
+    \ ',\n   'snippet': 'Their devices are really liked by many.'},\n   {'name': 'MOTOROLA\
+    \ XOOM™',\n  'snippet': ' I really like to make use of devices.\n.'}\n];\n});\n\
+    ```\n\n我们所做的是声明了控制器，然后最终将其链接到模块。\n\n### 测试\n\n在 AngularJS 中，控制器和视图是分离的。这样，即使在开发过程中，代码也变得可测试。如果控制器在全局空间中可用，那么我们可以模拟\
+    \ `scope` 对象来实例化它。如下例所示：\n\n```javascript\ndescribe('PnListCtrl', function(){\n\
+    \   it(' a \"phones\" model with 2 phones should be created', function() {\nvar\
+    \ scope = {},\n   ctrl = new PnListCtrl(scop);\n   expect(scop.phones.length).toBe(2);\n\
+    });\n});\n```\n\n然后应该创建非全局控制器。没有人希望他们的控制器函数位于全局命名空间中。相反，大多数人希望它通过我们刚刚创建的模块的匿名构造函数进行注册。\n\
+    \n在这种情况下，我们将由 AngularJS 的 `$controller` 服务来证明。该服务将负责通过名称检索控制器。考虑下面给出的示例，展示了如何实现这一点：\n\
+    \n```javascript\ndescribe('PnListCtrl', function(){\n   beforeEach(module('pncatApp'));\n\
+    \   it('you should create \"phones\" model with the 2 phones', inject(function($controller)\
+    \ {\nvar scope = {},\n   ctrl = $controller('PnListCtrl', {$scope:scope});\n \
+    \  expect(scope.phones.length).toBe(2);\n}));\n});\n```\n\n我们所做的是指示 Angular 在任何测试之前加载每个模块。然后应将\
+    \ `$controller` 服务注入到我们的服务中。该服务还用于创建新的 `PnListCtrl`。然后使用该实例进行验证。\n\n### 实验\n\n\
+    可以向文件添加另一个绑定。如下所示：\n\n```html\n<p>The available number of phones: {{phones.length}}</p>\n\
+    ```\n\n可以在控制器中创建一个新的模型属性，然后从模板进行绑定。下面给出了一个示例：\n\n```javascript\n$scope.name =\
+    \ \"John\";\n```\n\n可以按如下方式将新绑定添加到文件：\n\n```html\n<p>Hi, {{name}}!</p>\n```\n\n\
+    现在您可以刷新浏览器并观察发生了什么。然后应更新 `./test/unit/controllersSpec.js` 中的控制器单元测试，以反映新的更改。\n\
+    \n"
+- fmt: "\nA repeater for the creation of a simple table should then be created in\
+    \ the file. This can be implemented as follows:\n\n```\n<table>\n   <tr><th>the\
+    \ row number</th></tr>\n   <tr ng-repeat=\"j in [0, 1, 2, 3, 4, 5, 6, 7]\"><td>{{j}}</td></tr>\n\
+    </table>\n```\n\nThe list should then be modified to the following:\n\n```\n<table>\n\
+    \  <tr><th>the row number</th></tr>\n  <tr ng-repeat=\"j in [0, 1, 2, 3, 4, 5,\
+    \ 6, 7]\"><td>{{j+1}}</td></tr>\n</table>\n```\n\nThe `ng-repeat` can be used\
+    \ for the creation of another table with some other specifications. That is also\
+    \ very powerful in Angular. At this point, you will have an app working dynamically\
+    \ and it has the model, the view, and the controller located separately.\n\n#\
+    \ Chapter 3- XHRs\n\nYou should not always handle small and hard-coded data in\
+    \ your application. We should be able to fetch large data sets from our AngularJS\
+    \ servers by the use of the pre-built services named `$http`.\n\nWe will have\
+    \ the file `app/phones/devices.json`, which has the list of phones that we have.\
+    \ These will be stored in a JSON format. A sample part of the file looks as follows:\n\
+    \n```\n[\n  {\n    \"age\": 15,\n    \"id\": \"motorola \",\n    \"name\": \"\
+    Motorola DEFY\\u2122 with MOTOBLUR\\u2122\",\n    \"snippet\": \"Do you enjoy\
+    \ using Motorola devices and phones?\"\n  },\n  ...\n]\n```\n\n## Controller\n\
+    \nThe `$http` service for Angular will be used in the controller for making an\
+    \ HTTP request to the web server so as to fetch data from the file `app/phones/devices.json`.\
+    \ This is just one of the ways how this can be handled or the processing of operations\
+    \ related to web apps. With AngularJS, these services are injected where they\
+    \ are needed.\n\nThe code for the controller should be as shown below:\n\n```\n\
+    var myApp = angular.module('myApp', []);\nmyApp.controller('PnListCtrl', function\
+    \ ($scope, $http) {\n  $http.get('phones/devices.json').success(function(data)\
+    \ {\n    $scope.phones = data;\n  });\n  $scope.orderProp = 'age';\n});\n```\n\
+    \nFor a service to be used in Angular, the names of the dependencies which are\
+    \ needed have to be defined as arguments to the controller constructor function.\
+    \ This is shown below:\n\n```\nmyApp.controller('PnListCtrl', function ($scope,\
+    \ $http) {...}\n```\n\nThe dependency constructor in AngularJS will provide the\
+    \ services to our controller once it has been launched. The process of creating\
+    \ any of the transitive dependencies which the service may have is also taken\
+    \ care of. Consider the example given below, showing how this can be done:\n\n\
+    ```\nvar myApp = angular.module('myApp', []);\nmyApp.controller('PnListCtrl',\
+    \ ['$scope', '$http',\n  function ($scope, $http) {\n    $http.get('phones/devices.json').success(function(data)\
+    \ {\n      $scope.phones = data;\n    });\n    $scope.orderProp = 'age';\n  }\n\
+    ]);\n```\n\nThe test can be done as follows:\n\n```\ndescribe('myApp controllers',\
+    \ function() {\n  describe('PnListCtrl', function(){\n    var scope, ctrl, $httpBackend;\n\
+    \n    // Loading our app module definition before the test.\n    beforeEach(module('myApp'));\n\
+    \n    // The injector will ignore the leading and the trailing underscores here\
+    \ (i.e. _$httpBackend_).\n    // This will allow us to inject the service but\
+    \ also attach it to the variable\n    // with a name which is same as the service\
+    \ so as to avoid a name conflict.\n    beforeEach(inject(function(_$httpBackend_,\
+    \ $rootScope, $controller) {\n      $httpBackend = _$httpBackend_;\n      $httpBackend.expectGET('phones/devices.json').\n\
+    \        respond([{name: 'Motorola'}, {name: 'Motorola Phone'}]);\n      scope\
+    \ = $rootScope.$new();\n      ctrl = $controller('PnListCtrl', {$scope: scope});\n\
+    \    }));\n  });\n});\n```\n\nNotice the two helper functions in the above test\
+    \ case. These can be used for configuration and accessing the injector.\n\nConsider\
+    \ the code given below:\n\n```\nit('You should create \"phones\" model having\
+    \ 2 phones which have been fetched from the xhr', function() {\n  expect(scope.phones).toBeUndefined();\n\
+    \  $httpBackend.flush();\n  expect(scope.phones).toEqual([{name: 'Motorola'},\n\
+    \    {name: 'Motorola Phone'}]);\n});\n```\n\nWe want to perform a verification\
+    \ on our model which does not exist on the scope before we have received the response.\
+    \ After calling the function `$httpBackend.flush()`, the request queue will be\
+    \ flushed into the browser. The promise which is returned by the service `$http`\
+    \ will be resolved with our resolved response. We will make the assertions, and\
+    \ then verify whether the model belongs to the scope. We can then verify whether\
+    \ the `orderProp` has been set correctly. This is shown below:\n\n```\nit('the\
+    \ default value should be set for the orderProp model', function() {\n  expect(scope.orderProp).toBe('age');\n\
+    });\n```\n\nIn the karma tab, the following output should be observed:\n\n```\n\
+    Chrome 22.0: Executed 2 of 2 SUCCESS (0.028 secs / 0.007 secs)\n```\n\n`<pre>{{phones\
+    \ | filter:query | orderBy:orderProp | json}}</pre>` can be added at the bottom\
+    \ of the file so that the available phones can be listed or shown in a JSON format.\
+    \ The following can be added to the callback:\n\n```\n$scope.devices = data.splice(0,\
+    \ 5);\n```\n\n# Chapter 4- Links & Images\n\nYou should know how to add thumbnail\
+    \ images to the devices that you have in your list. Links should also be added\
+    \ to these.\n\nNote that in the JSON file, the links for the devices and their\
+    \ URLs are available, as well as unique IDs. The URLs should be pointing to the\
+    \ URL `app/img/devices/`.\n\nConsider the code snippet given below:\n\n```\n[\n\
+    \  {\n    ...\n    \"id\": \"motorola \",\n    \"imageUrl\": \"img/phones/motorola.0.jpg\"\
+    ,\n    \"name\": \"Motorola PHONE \",\n    ...\n  },\n  ...\n]\n```\n\nThe template\
+    \ should be as follows:\n\n```\n...\n<ul class=\"phones\">\n  <li ng-repeat=\"\
+    device in phones | filter:query | orderBy:orderProp\" class=\"thumbnail\">\n \
+    \   <a href=\"#/phones/{{device.id}}\" class=\"thumb\"><img ng-src=\"{{device.imageUrl}}\"\
+    ></a>\n    <a href=\"#/phones/{{device.id}}\">{{device.name}}</a>\n    <p>{{device.snippet}}</p>\n\
+    \  </li>\n</ul>\n...\n```\n\nThe double-binding curly braces have been used in\
+    \ the attribute values for `href` so as to allow for the links to be dynamically\
+    \ generated. In the second step, the binding `{{device.name}}` was added as an\
+    \ element of content.\n\nThe directive `ngSrc` has been used so as to add an image\
+    \ next to each device. The test can be implemented as follows:\n\n```\n...\nit('\
+    \ device specific links should be rendered ', function() {\n  var myquery = element(by.model('query'));\n\
+    \  myquery.sendKeys('nexus');\n  element.all(by.css('.phones li a')).first().click();\n\
+    \  browser.getLocationAbsUrl().then(function(url) {\n    expect(url).toBe('/phones/motorola');\n\
+    \  });\n});\n...\n```\n\nWe need to perform a verification of whether the app\
+    \ is generating the right links for the device views which you may need to implement.\
+    \ The directive `ngSrc` can be replaced with the plain `src`.\n\n# Chapter 5-\
+    \ Working with Animations\n\nSometimes, you might need to enhance your application\
+    \ by adding some animations to it. This can be done by use of both CSS and JavaScript.\
+    \ For the animations to be enabled throughout the application, we have to use\
+    \ the `ngAnimate` module. The common `ng` directives have to be used for the purpose\
+    \ of triggering the hooks for the animations we are tapping into. This should\
+    \ be done automatically. Once the animation has been found, it is executed in\
+    \ between the standard DOM element which has been issued to the element at that\
+    \ given time. The `ngRepeat` and `ngClass` can be used for doing this, just by\
+    \ removing or adding elements to them.\n\nThe AngularJS module `ngAnimate` will\
+    \ provide us with the functionality for performing the animation. This module\
+    \ has been distributed separately from our core Angular framework. For the purpose\
+    \ of performing the extra animations, we will use the jQuery.\n\nWe now need to\
+    \ install the dependencies to be used on the client-side of the application. Bower\
+    \ can be used for this purpose. We need to update the configuration file `bower.json`\
+    \ so that it includes the new dependency. This can be done as follows:\n\n```\n\
+    {\n  \"name\": \"angular-seed\",\n  \"description\": \"A project for AngularJS\
+    \ starting\",\n  \"version\": \"0.0.0\",\n  \"homepage\": \"https://mysite.com/angular/angular-project\"\
+    ,\n  \"license\": \"MIT\",\n  \"private\": true,\n  \"dependencies\": {\n    \"\
+    angular\": \"1.4.x\",\n```\n"
+  raw: 'A repeater for the creation of a simple table should then be created in the
+    file. This can be implemented as follows:
+
+
+    <table>
+
+
+       <tr><th>the row number</th></tr>
+
+
+       <tr ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{j}}</td></tr>
+
+
+    </table>
+
+
+    The list should then be modified to the following:
+
+
+    <table>
+
+
+      <tr><th>the row number</th></tr>
+
+
+      <tr ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{j+1}}</td></tr>
+
+
+    </table>
+
+
+    The “ng-repeat” can be used for the creation of another table with some other
+    specifications. That is also very powerful in Angular. At this point, you will
+    have an app working dynamically and it has the model, the view, and the controller
+    located separately.
+
+
+    # Chapter 3- XHRs
+
+
+    You should not always handle small and hard-coded data in your application. We
+    should be able to fetch large data sets from our AngularJS servers by the use
+    of the pre-built services named “$http.”
+
+
+    We will have the file “app/phones/devices.json,” which has the list of phones
+    that we have. These will be stored in a JSON format. A sample part of the file
+    looks as follows:
+
+
+    [
+
+
+    {
+
+
+       "age": 15,
+
+
+      "id": "motorola ",
+
+
+        "name": "Motorola DEFY\u2122 with MOTOBLUR\u2122",
+
+
+        "snippet": "Do you enjoy using Motorola devices and phones?"
+
+
+    ...
+
+
+    },
+
+
+    ...
+
+
+    ]
+
+
+    Controller
+
+
+    The “$http” service for Angular will be used in the controller for making an HTTP
+    request to the web server so as to fetch data from the file “app/phones/devices.json.”This
+    is just one of the ways  how this can be handled or the processing of operations
+    related to web apps. With AngularJS, these services are injected where they are
+    needed.
+
+
+    The code for the controller should be as shown below:
+
+
+    var myApp = angular.module(''myApp'', []);
+
+
+        myApp.controller(''PnListCtrl'', function ($scope, $http) {
+
+
+        $http.get(''phones/devices.json'').success(function(data) {
+
+
+        $scope.phones = data;
+
+
+    });
+
+
+        $scope.orderProp = ''age'';
+
+
+    });
+
+
+    For a service to be used in Angular, the names of the dependencies which are needed
+    have to be defined as arguments to the controller constructor function. This is
+    shown below:
+
+
+    myApp.controller(''PnListCtrl'', function ($scope, $http) {...}
+
+
+    The dependency constructor in AngularJS will provide the services to our controller
+    once it has been launched. The process of creating any of the transitive dependencies
+    which the service may have is also taken care of. Consider the example given below,
+    showing how this can be done:
+
+
+    var myApp = angular.module(''myApp'', []);
+
+
+    myApp.controller(''PnListCtrl'', [''$scope'', ''$http'',
+
+
+    function ($scope, $http) {
+
+
+       $http.get(''phones/devices.json'').success(function(data) {
+
+
+       $scope.phones = data;
+
+
+    });
+
+
+      $scope.orderProp = ''age'';
+
+
+    }]);
+
+
+    The test can be done as follows:
+
+
+    describe(''myApp controllers'', function() {
+
+
+    describe(''PnListCtrl'', function(){
+
+
+        var scope, ctrl, $httpBackend;
+
+
+    // Loading our app module definition before the test.
+
+
+        beforeEach(module(''myApp''));
+
+
+    // The injector will ignore the leading and the trailing underscores here (i.e.
+    _$httpBackend_).
+
+
+    // This will allow us to inject the service but also attach it to the variable
+
+
+    // with a name which is same as the service so as to avoid a name conflict.
+
+
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+
+
+       $httpBackend = _$httpBackend_;
+
+
+       $httpBackend.expectGET(''phones/devices.json'').
+
+
+    respond([{name: ''Motorola''}, {name: ''Motorola Phone''}]);
+
+
+    scope = $rootScope.$new();
+
+
+       ctrl = $controller(''PnListCtrl'', {$scope: scope});
+
+
+    }));
+
+
+    Notice the two helper functions in the above test case. These can be used for
+    configuration and accessing the injector.
+
+
+    Consider the code given below:
+
+
+    it(''You should create "phones" model having 2 phones which have been fetched
+    from the xhr'', function() {
+
+
+        expect(scope.phones).toBeUndefined();
+
+
+        $httpBackend.flush();
+
+
+        expect(scope.phones).toEqual([{name: ''Motorola''},
+
+
+        {name: ''Motorola Phone''}]);
+
+
+    });
+
+
+    We want to perform a verification on our model which does not exist on the scope
+    before we have received the response. After calling the function “$httpBackend.flush(),”
+    the request queue will be flushed into the browser. The promise which is returned
+    by the service “$http” will be resolved with our resolved response. We will make
+    the assertions, and then verify whether the model belongs to the scope. We can
+    then verify whether the “orderProp” has been set correctly. This is shown below:
+
+
+    it(''the default value should be set for the orderProp model'', function() {
+
+
+         expect(scope.orderProp).toBe(''age'');
+
+
+    });
+
+
+    In the karma tab, the following output should be observed:
+
+
+    Chrome 22.0: Executed 2 of 2 SUCCESS (0.028 secs / 0.007 secs)
+
+
+    “<pre>{{phones | filter:query | orderBy:orderProp | json}}</pre>” can be added
+    at the bottom of the file so that the available phones can be listed or shown
+    in a JSON format. The following can be added to the callback:
+
+
+    $scope.devices = data.splice(0, 5);
+
+
+    # Chapter 4- Links & Images
+
+
+    You should know how to add thumbnail images to the devices that you have in your
+    list. Links should also be added to these.
+
+
+    Note that in the JSON file, the links for the devices and their URLs are available,
+    as well as unique IDs. The URLs should be pointing to the URL “app/img/devices/.”
+
+
+    Consider the code snippet given below:
+
+
+    [
+
+
+    {
+
+
+    ...
+
+
+    "id": "motorola ",
+
+
+         "imageUrl": "img/phones/motorola.0.jpg",
+
+
+          "name": "Motorola PHONE ",
+
+
+    ...
+
+
+    },
+
+
+    ...
+
+
+    ]
+
+
+    The template should be as follows:
+
+
+    ...
+
+
+    <ul class="phones">
+
+
+    <li ng-repeat="device in phones | filter:query | orderBy:orderProp" class="thumbnail">
+
+
+    <a href="#/phones/{{device.id}}" class="thumb"><img ng-src="{{device.imageUrl}}"></a>
+
+
+    <a href="#/phones/{{device.id}}">{{device.name}}</a>
+
+
+    <p>{{device.snippet}}</p>
+
+
+    </li>
+
+
+    </ul>
+
+
+    ...
+
+
+    The double-binding curly brae has been used in the attribute values for “href”
+    so as to allow for the links to be dynamically generated. In the second step,
+    the binding “{{device.name}}” was added as an element of content.
+
+
+    The directive “ngRs” has been used so as to add an image next to each device.
+    The test can be implemented as follows:
+
+
+    ...
+
+
+    it('' device specific links should be rendered '', function() {
+
+
+      var myquery = element(by.model(''query''));
+
+
+       myquery.sendKeys(''nexus'');
+
+
+    element.all(by.css(''.phones li a'')).first().click();
+
+
+    browser.getLocationAbsUrl().then(function(url) {
+
+
+        expect(url).toBe(''/phones/motorola'');
+
+
+    });
+
+
+    });
+
+
+    ...
+
+
+    We need to perform a verification of whether the app is generating the right links
+    for the device views which you may need to implement. The directive “ng-rsc” can
+    be replaced with the plain “src.”
+
+
+    # Chapter 5- Working with Animations
+
+
+    Sometimes, you might need to enhance your application by adding some animations
+    to it. This can be done by use of both CSS and JavaScript. For the animations
+    to be enabled throughout the application, we have to use the “ngAnimate” module.
+    The common “ng” directives have to be used for the purpose of triggering the hooks
+    for the animations we are tapping into. This should be done automatically. Once
+    the animation has been found, it is executed in between the standard DOM element
+    which has been issued to the element at that given time. The “ngRepeat” and “ngClass”
+    can be used for doing this, just by removing or adding elements to them.
+
+
+    The AngularJS module “ngAnimate” will provide us with the functionality for performing
+    the animation. This module has been distributed separately from our core Angular
+    framework. For the purpose of performing the extra animations, we will use the
+    jQuery.
+
+
+    We now need to install the dependencies to be used on the client-side of the application.
+    Bower can be used for this purpose. We need to update the configuration file “bower.json”
+    so that it includes the new dependency. This can be done as follows:
+
+
+    {
+
+
+    "name": "angular-seed",
+
+
+    "description": "A project for AngularJS starting",
+
+
+    "version": "0.0.0",
+
+
+    "homepage": "https://mysite.com/angular/angular-project",
+
+
+    "license": "MIT",
+
+
+    "private": true,
+
+
+    "dependencies": {
+
+
+    "angular": "1.4.x",'
+  toc: []
+  trans: "\n接下来，应在文件中创建一个用于生成简单表格的重复器。实现方式如下：\n\n```\n<table>\n   <tr><th>行号</th></tr>\n\
+    \   <tr ng-repeat=\"j in [0, 1, 2, 3, 4, 5, 6, 7]\"><td>{{j}}</td></tr>\n</table>\n\
+    ```\n\n然后将列表修改为以下内容：\n\n```\n<table>\n  <tr><th>行号</th></tr>\n  <tr ng-repeat=\"\
+    j in [0, 1, 2, 3, 4, 5, 6, 7]\"><td>{{j+1}}</td></tr>\n</table>\n```\n\n`ng-repeat`\
+    \ 可用于创建具有其他规格的表格。这在 Angular 中也非常强大。此时，你将拥有一个动态运行的应用程序，并且其模型、视图和控制器分别位于不同位置。\n\n\
+    # 第 3 章 - XHR\n\n你不应总是在应用程序中处理小型且硬编码的数据。我们应该能够通过使用名为 `$http` 的预构建服务，从 AngularJS\
+    \ 服务器获取大型数据集。\n\n我们将有一个文件 `app/phones/devices.json`，其中包含我们拥有的手机列表。这些数据将以 JSON\
+    \ 格式存储。该文件的一个示例部分如下所示：\n\n```\n[\n  {\n    \"age\": 15,\n    \"id\": \"motorola\
+    \ \",\n    \"name\": \"Motorola DEFY\\u2122 with MOTOBLUR\\u2122\",\n    \"snippet\"\
+    : \"你喜欢使用摩托罗拉设备和手机吗？\"\n  },\n  ...\n]\n```\n\n## 控制器\n\nAngular 的 `$http` 服务将在控制器中使用，用于向\
+    \ Web 服务器发出 HTTP 请求，以便从文件 `app/phones/devices.json` 获取数据。这只是处理此类操作或与 Web 应用相关操作的一种方式。使用\
+    \ AngularJS，这些服务会被注入到需要它们的地方。\n\n控制器的代码应如下所示：\n\n```\nvar myApp = angular.module('myApp',\
+    \ []);\nmyApp.controller('PnListCtrl', function ($scope, $http) {\n  $http.get('phones/devices.json').success(function(data)\
+    \ {\n    $scope.phones = data;\n  });\n  $scope.orderProp = 'age';\n});\n```\n\
+    \n要在 Angular 中使用服务，需要将所需的依赖项名称定义为控制器构造函数函数的参数。如下所示：\n\n```\nmyApp.controller('PnListCtrl',\
+    \ function ($scope, $http) {...}\n```\n\nAngularJS 中的依赖构造函数会在启动后为我们的控制器提供服务。它还会处理服务可能需要的任何传递依赖项的创建。考虑下面的示例，展示了如何实现这一点：\n\
+    \n```\nvar myApp = angular.module('myApp', []);\nmyApp.controller('PnListCtrl',\
+    \ ['$scope', '$http',\n  function ($scope, $http) {\n    $http.get('phones/devices.json').success(function(data)\
+    \ {\n      $scope.phones = data;\n    });\n    $scope.orderProp = 'age';\n  }\n\
+    ]);\n```\n\n测试可以按如下方式进行：\n\n```\ndescribe('myApp controllers', function() {\n\
+    \  describe('PnListCtrl', function(){\n    var scope, ctrl, $httpBackend;\n\n\
+    \    // 在测试前加载我们的应用模块定义。\n    beforeEach(module('myApp'));\n\n    // 注入器会忽略这里的前导和下划线（即\
+    \ _$httpBackend_）。\n    // 这将允许我们注入服务，同时将其附加到与服务同名的变量上，以避免名称冲突。\n    beforeEach(inject(function(_$httpBackend_,\
+    \ $rootScope, $controller) {\n      $httpBackend = _$httpBackend_;\n      $httpBackend.expectGET('phones/devices.json').\n\
+    \        respond([{name: 'Motorola'}, {name: 'Motorola Phone'}]);\n      scope\
+    \ = $rootScope.$new();\n      ctrl = $controller('PnListCtrl', {$scope: scope});\n\
+    \    }));\n  });\n});\n```\n\n注意上述测试用例中的两个辅助函数。它们可用于配置和访问注入器。\n\n考虑下面的代码：\n\n\
+    ```\nit('你应该创建包含从 xhr 获取的两个手机的 \"phones\" 模型', function() {\n  expect(scope.phones).toBeUndefined();\n\
+    \  $httpBackend.flush();\n  expect(scope.phones).toEqual([{name: 'Motorola'},\n\
+    \    {name: 'Motorola Phone'}]);\n});\n```\n\n我们希望在收到响应之前，对作用域上不存在的模型进行验证。调用 `$httpBackend.flush()`\
+    \ 函数后，请求队列将被刷新到浏览器。`$http` 服务返回的 promise 将使用我们解析的响应进行解析。我们将进行断言，然后验证模型是否属于作用域。然后我们可以验证\
+    \ `orderProp` 是否已正确设置。如下所示：\n\n```\nit('应为 orderProp 模型设置默认值', function() {\n\
+    \  expect(scope.orderProp).toBe('age');\n});\n```\n\n在 karma 选项卡中，应观察到以下输出：\n\n\
+    ```\nChrome 22.0: Executed 2 of 2 SUCCESS (0.028 secs / 0.007 secs)\n```\n\n可以在文件底部添加\
+    \ `<pre>{{phones | filter:query | orderBy:orderProp | json}}</pre>`，以便以 JSON 格式列出或显示可用的手机。可以在回调中添加以下内容：\n\
+    \n```\n$scope.devices = data.splice(0, 5);\n```\n\n# 第 4 章 - 链接与图片\n\n你应该知道如何为列表中的设备添加缩略图。还应添加指向这些设备的链接。\n\
+    \n请注意，在 JSON 文件中，设备的链接及其 URL 以及唯一 ID 都是可用的。URL 应指向 `app/img/devices/`。\n\n考虑下面的代码片段：\n\
+    \n```\n[\n  {\n    ...\n    \"id\": \"motorola \",\n    \"imageUrl\": \"img/phones/motorola.0.jpg\"\
+    ,\n    \"name\": \"Motorola PHONE \",\n    ...\n  },\n  ...\n]\n```\n\n模板应如下所示：\n\
+    \n```\n...\n<ul class=\"phones\">\n  <li ng-repeat=\"device in phones | filter:query\
+    \ | orderBy:orderProp\" class=\"thumbnail\">\n    <a href=\"#/phones/{{device.id}}\"\
+    \ class=\"thumb\"><img ng-src=\"{{device.imageUrl}}\"></a>\n    <a href=\"#/phones/{{device.id}}\"\
+    >{{device.name}}</a>\n    <p>{{device.snippet}}</p>\n  </li>\n</ul>\n...\n```\n\
+    \n在 `href` 的属性值中使用了双花括号绑定，以便动态生成链接。在第二步中，将绑定 `{{device.name}}` 添加为内容元素。\n\n使用了\
+    \ `ngSrc` 指令来为每个设备添加图片。测试可以按如下方式实现：\n\n```\n...\nit('应渲染设备特定的链接', function() {\n\
+    \  var myquery = element(by.model('query'));\n  myquery.sendKeys('nexus');\n \
+    \ element.all(by.css('.phones li a')).first().click();\n  browser.getLocationAbsUrl().then(function(url)\
+    \ {\n    expect(url).toBe('/phones/motorola');\n  });\n});\n...\n```\n\n我们需要验证应用程序是否为可能需要实现的设备视图生成了正确的链接。`ngSrc`\
+    \ 指令可以替换为普通的 `src`。\n\n# 第 5 章 - 使用动画\n\n有时，你可能需要通过添加一些动画来增强应用程序。这可以通过使用 CSS 和\
+    \ JavaScript 来实现。为了在整个应用程序中启用动画，我们必须使用 `ngAnimate` 模块。必须使用常见的 `ng` 指令来触发我们正在接入的动画的钩子。这应该自动完成。一旦找到动画，它将在标准\
+    \ DOM 元素之间执行，该元素在给定时间被发出到该元素。可以使用 `ngRepeat` 和 `ngClass` 来实现这一点，只需向它们添加或删除元素即可。\n\
+    \nAngularJS 模块 `ngAnimate` 将为我们提供执行动画的功能。该模块已与我们的核心 Angular 框架分开分发。为了执行额外的动画，我们将使用\
+    \ jQuery。\n\n我们现在需要安装要在应用程序客户端使用的依赖项。可以使用 Bower 来实现这一点。我们需要更新配置文件 `bower.json`，使其包含新的依赖项。可以按如下方式操作：\n\
+    \n```\n{\n  \"name\": \"angular-seed\",\n  \"description\": \"一个用于 AngularJS 启动的项目\"\
+    ,\n  \"version\": \"0.0.0\",\n  \"homepage\": \"https://mysite.com/angular/angular-project\"\
+    ,\n  \"license\": \"MIT\",\n  \"private\": true,\n  \"dependencies\": {\n    \"\
+    angular\": \"1.4.x\",\n```\n"
+- fmt: "\n```\n\"angular-mocks\": \"1.4.x\",\n\"jquery\": \"~2.1.1\",\n\"bootstrap\"\
+    : \"~3.1.1\",\n\"angular-route\": \"1.4.x\",\n\"angular-resource\": \"1.4.x\"\
+    ,\n\"angular-animate\": \"1.4.x\"\n}\n}\n```\n\nAll the elements installed in\
+    \ the above step should be compatible, otherwise, there will be trouble. The `bower`\
+    \ has also been instructed to install the jQuery. However, this cannot be said\
+    \ to be an Angular library, but it is a standard jQuery library.\n\nInstruct the\
+    \ `bower` to download and install the dependencies by executing the following\
+    \ command: `npm install`\n\nNote that incompatibility might occur in case there\
+    \ is a new version of Angular which has been released after the last time you\
+    \ executed the above command. To solve this problem, you just have to delete the\
+    \ folder for `app/bower_components` before having to execute the above command.\n\
+    \n## The Template\n\nWe have to make some changes to the HTML template so as to\
+    \ link the asset files defining our animations and the file `angular-animate.js`.\
+    \ The module for animation, that is, `ngAnimate`, is defined in this file, and\
+    \ this has the code which is responsible for making the application sense the\
+    \ animation effect.\n\nThe following changes have to be made to the file:\n\n\
+    ```\n...\n<!—this is for the CSS Transitions and/or the Keyframe Animations -->\n\
+    <link rel=\"stylesheet\" href=\"css/animations.css\">\n...\n<!—the jQuery will\
+    \ be used for JavaScript animations (this should included before angular.js) -->\n\
+    <script src=\"bower_components/jquery/dist/jquery.js\"></script>\n...\n<!—this\
+    \ is the required module for enabling animation support in the AngularJS -->\n\
+    <script src=\"bower_components/angular-animate/angular-animate.js\"></script>\n\
+    <!—this is for JavaScript Animations -->\n<script src=\"js/animations.js\"></script>\n\
+    ...\n```\n\nFor those who are using Angular version 1.4, make sure that you are\
+    \ using jQuery 2.1 and above. Any version below this will not be compatible with\
+    \ Angular 1.4. This will mean that the animation will not be detected, or it may\
+    \ work in a manner which is not expected.\n\nThe animations can be implemented\
+    \ in either the CSS code (`animations.css`) or in the JavaScript code (`animations.js`).\
+    \ We need to begin by creating a new module which will use the `ngAnimate` module\
+    \ as a dependency in the same way we did it in the `ngResource`.\n\nThe `animations.js`\
+    \ file should be as follows:\n\n```\nangular.module('myAnimations', ['ngAnimate']);\n\
+    \   // ...\n// this module will be used for definition of the animations later\n\
+    \   // ...\n```\n\nThe module should then be attached to the application module.\
+    \ This is shown below:\n\n```\n// ...\nangular.module('myApp', [\n'ngRoute',\n\
+    'myAnimations',\n'myControllers',\n'myFilters',\n'myServices',\n]);\n// ...\n\
+    ```\n\nAt this moment, our module will be aware.\n\n## Animation of “ngRepeat”\
+    \ with the CSS Transition Animations\n\nThe CSS animations should be added to\
+    \ the `ngRepeat` directive which is present in the web page with our devices.\
+    \ We should begin by adding an extra CSS class to the element which has been repeated\
+    \ so that it can be hooked with the CSS animation code. This is shown below:\n\
+    \n```\n<!--\nLet us change the repeater HTML so as to include a new CSS class\n\
+    That we will use later for the animations:\n-->\n<ul class=\"phones\">\n<li ng-repeat=\"\
+    device in phones | filter:query | orderBy:orderProp\"\nclass=\"thumbnail device-listing\"\
+    >\n<a href=\"#/phones/{{device.id}}\" class=\"thumb\"><img ng-src=\"{{device.imageUrl}}\"\
+    ></a>\n<a href=\"#/phones/{{device.id}}\">{{device.name}}</a>\n<p>{{device.snippet}}</p>\n\
+    </li>\n</ul>\n```\n\nNote how the CSS class has been added. This is needed in\
+    \ the HTML file so that the animation may work.\n\nThe CSS code for animation\
+    \ should be as follows:\n\n```\n.device-listing.ng-enter,\n.device-listing.ng-leave,\n\
+    .device-listing.ng-move {\n    -webkit-transition: 0.5s linear all;\n    -moz-transition:\
+    \ 0.5s linear all;\n    -o-transition: 0.5s linear all;\n    transition: 0.5s\
+    \ linear all;\n}\n.device-listing.ng-enter,\n.device-listing.ng-move {\n   opacity:\
+    \ 0;\n   height: 0;\n   overflow: hidden;\n}\n.device-listing.ng-move.ng-move-active,\n\
+    .device-listing.ng-enter.ng-enter-active {\n    opacity: 1;\n    height: 120px;\n\
+    }\n.device-listing.ng-leave {\n    opacity: 1;\n    overflow: hidden;\n}\n.device-listing.ng-leave.ng-leave-active\
+    \ {\n    opacity: 0;\n    height: 0;\n    padding-top: 0;\n    padding-bottom:\
+    \ 0;\n}\n```\n\nThe CSS class for `device-listing` has been combined together\
+    \ with the animation hooks which will occur when the items have been inserted\
+    \ into and then removed from the list.\n\nThe class `ng-enter` will be applied\
+    \ to the element after a new device has been added to the list and then displayed\
+    \ on the page. The class `ng-move` will be applied after the elements have been\
+    \ moved around the list. The class `ng-leave` will be applied once the elements\
+    \ have been removed from the list.\n\n## Animation of “ngView”\n\nWe now need\
+    \ to add an animation for transitions between our route changes in the `ngView`.\
+    \ A new CSS class has to be added to the HTML as we did in our previous example.\
+    \ Other than adding it to the `ng-Repeat` element, we will add it to the `ngView`.\
+    \ This means that the HTML code has to be changed a bit. This will mean that the\
+    \ animation will be more controlled between the changes in the view.\n\nThe `index.html`\
+    \ file should be as follows:\n\n```\n<div class=\"view-container\">\n    <div\
+    \ ng-view class=\"view-frame\"></div>\n</div>\n```\n\nThe `view-container` CSS\
+    \ class has been used to nest the `ng-view` directive inside the parent element.\
+    \ The class will add the style `position: relative` so that the positioning of\
+    \ the directive `ng-view` is relative to the parent as the transitions are animated.\n\
+    \nThe CSS for the transition should be added to the file `animation.css`. This\
+    \ is shown below:\n\n```\n.view-container {\n    position: relative;\n}\n.view-frame.ng-enter,\
+    \ .view-frame.ng-leave {\n    background: white;\n    position: absolute;\n  \
+    \  top: 0;\n    left: 0;\n    right: 0;\n}\n.view-frame.ng-enter {\n     -webkit-animation:\
+    \ 0.5s fade-in;\n     -moz-animation: 0.5s fade-in;\n    -o-animation: 0.5s fade-in;\n\
+    \    animation: 0.5s fade-in;\n    z-index: 100;\n}\n.view-frame.ng-leave {\n\
+    \     -webkit-animation: 0.5s fade-out;\n      -moz-animation: 0.5s fade-out;\n\
+    \      -o-animation: 0.5s fade-out;\n       animation: 0.5s fade-out;\n      \
+    \ z-index:99;\n}\n@keyframes fade-in {\n       from { opacity: 0; }\n        to\
+    \ { opacity: 1; }\n}\n@-moz-keyframes fade-in {\n        from { opacity: 0; }\n\
+    \        to { opacity: 1; }\n}\n@-webkit-keyframes fade-in {\n     from { opacity:\
+    \ 0; }\n      to { opacity: 1; }\n}\n@keyframes fade-out {\n      from { opacity:\
+    \ 1; }\n      to { opacity: 0; }\n}\n@-moz-keyframes fade-out {\n       from {\
+    \ opacity: 1; }\n       to { opacity: 0; }\n}\n@-webkit-keyframes fade-out {\n\
+    \       from { opacity: 1; }\n       to { opacity: 0; }\n}\n/* the vendor-prefixes\
+    \ should not be forgotten */\n```\n\n## Animation of the “ngClass” with Javascript\n\
+    \nWe need to add another animation to our application. A nice thumbnail will be\
+    \ observed in the `device-list.html` page. Once the thumbnail has been clicked,\
+    \ the image will change. The CSS class has to be changed so that we can ensure\
+    \ that the displaying of the images is accurate. This is shown below:\n\n```\n\
+    .phone-images {\n    background-color: white;\n    width: 450px;\n    height:\
+    \ 450px;\n    overflow: hidden;\n    position: relative;\n    float: left;\n}\n\
+    ...\nimg.device {\n     float: left;\n     margin-right: 3em;\n     margin-bottom:\
+    \ 2em;\n     background-color: white;\n     padding: 2em;\n     height: 400px;\n\
+    \     width: 400px;\n    display: none;\n}\nimg.device:first-child {\n     display:\
+    \ block;\n}\n```\n\nYou are thinking that we will create an animation which is\
+    \ CSS enabled. However, we can do this by use of the `animation()` module of JavaScript.\
+    \ This is shown in the example given below:\n"
+  raw: '"angular-mocks": "1.4.x",
+
+
+    "jquery": "~2.1.1",
+
+
+    "bootstrap": "~3.1.1",
+
+
+    "angular-route": "1.4.x",
+
+
+    "angular-resource": "1.4.x",
+
+
+    "angular-animate": "1.4.x"
+
+
+    }
+
+
+    }
+
+
+    All the elements installed in the above step should be compatible, otherwise,
+    there will be trouble. The bower has also been instructed to install the jQuery.
+    However, this cannot be said to be an Angular library, but it is a standard jQuery
+    library.
+
+
+    Instruct the bower to download and install the dependencies by executing the following
+    command:
+
+
+    npm install
+
+
+    Note that incompatibility might occur in case there is a new version of Angular
+    which has been released after the last time you executed the above command. To
+    solve this problem, you just have to delete the folder for “app/bower_components”
+    before having to execute the above command.
+
+
+    The Template
+
+
+    We have to make some changes to the HTML template so as to link the asset files
+    defining our animations and the file “angular-animate.js.” The module for animation,
+    that is, “ngAnimate,” is defined in this file, and this has the code which is
+    responsible for making the application sense the animation effect.
+
+
+    The following changes have to be made to the file:
+
+
+    ...
+
+
+    <!—this is for the CSS Transitions and/or the Keyframe Animations -->
+
+
+    <link rel="stylesheet" href="css/animations.css">
+
+
+    ...
+
+
+    <!—the jQuery will be used for JavaScript animations (this should included before
+    angular.js) -->
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+    ...
+
+
+    <!—this is the required module for enabling animation support in the AngularJS
+    -->
+
+
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+
+
+    <!—this is for JavaScript Animations -->
+
+
+    <script src="js/animations.js"></script>
+
+
+    ...
+
+
+    For those who are using Angular version 1.4, make sure that you are using jQuery
+    2.1 and above. Any version below this will not be compatible with Angular 1.4\.
+    This will mean that the animation will not be detected, or it may work in a manner
+    which is not expected.
+
+
+    The animations can be implemented in either the CSS code (“animations.css”)  or
+    in the JavaScript code (“animations.js”). We need to begin by creating a new module
+    which will use the “ngAnimate” module as a dependency in the same way we did it
+    in the “ngResource.”
+
+
+    The “animations.js” file should be as follows:
+
+
+    angular.module(''myAnimations'', [''ngAnimate'']);
+
+
+       // ...
+
+
+    // this module will be used for definition of the animations later
+
+
+       // ...
+
+
+    The module should then be attached to the application module. This is shown below:
+
+
+    // ...
+
+
+    angular.module(''myApp'', [
+
+
+    ''ngRoute'',
+
+
+    ''myAnimations'',
+
+
+    ''myControllers'',
+
+
+    ''myFilters'',
+
+
+    ''myServices'',
+
+
+    ]);
+
+
+    // ...
+
+
+    At this moment, our module will be aware.
+
+
+    Animation of “ngRepeat” with the CSS Transition Animations
+
+
+    The CSS animations should be added to the “ngRepeat” directive which is present
+    in the web page with our devices. We should begin by adding an extra CSS class
+    to the element which has been repeated so that it can be hooked with the CSS animation
+    code. This is shown below:
+
+
+    <!--
+
+
+    Let us change the repeater HTML so as to include a new CSS class
+
+
+    That we will use later for the animations:
+
+
+    -->
+
+
+    <ul class="phones">
+
+
+    <li ng-repeat="device in phones | filter:query | orderBy:orderProp"
+
+
+    class="thumbnail device-listing">
+
+
+    <a href="#/phones/{{device.id}}" class="thumb"><img ng-src="{{device.imageUrl}}"></a>
+
+
+    <a href="#/phones/{{device.id}}">{{device.name}}</a>
+
+
+    <p>{{device.snippet}}</p>
+
+
+    </li>
+
+
+    </ul>
+
+
+    Note how the CSS class has been added. This is needed in the HTML file so that
+    the animation may work.
+
+
+    The CSS code for animation should be as follows:
+
+
+    .device-listing.ng-enter,
+
+
+    .device-listing.ng-leave,
+
+
+    .device-listing.ng-move {
+
+
+        -webkit-transition: 0.5s linear all;
+
+
+        -moz-transition: 0.5s linear all;
+
+
+        -o-transition: 0.5s linear all;
+
+
+        transition: 0.5s linear all;
+
+
+    }
+
+
+    .device-listing.ng-enter,
+
+
+    .device-listing.ng-move {
+
+
+       opacity: 0;
+
+
+       height: 0;
+
+
+       overflow: hidden;
+
+
+    }
+
+
+    .device-listing.ng-move.ng-move-active,
+
+
+    .device-listing.ng-enter.ng-enter-active {
+
+
+        opacity: 1;
+
+
+        height: 120px;
+
+
+    }
+
+
+    .device-listing.ng-leave {
+
+
+        opacity: 1;
+
+
+        overflow: hidden;
+
+
+    }
+
+
+    .device-listing.ng-leave.ng-leave-active {
+
+
+        opacity: 0;
+
+
+        height: 0;
+
+
+        padding-top: 0;
+
+
+        padding-bottom: 0;
+
+
+    }
+
+
+    The CSS class for “device-listing” has been combined together with the animation
+    hooks which will occur when the items have been inserted into and then removed
+    from the list.
+
+
+    The class “ng-enter” will be applied to the element after a new device has been
+    added to the list and then displayed on the page. The class “ng-move” will be
+    applied after the elements have been moved around the list. The class “ng-leave”
+    will be applied once the elements have been removed from the list.
+
+
+    Animation of “ngView”
+
+
+    We now need to add an animation for transitions between our route changes in the
+    “ngView.” A new CSS class has to be added to the HTML as we did in our previous
+    example. Other than adding it to the “ng-Repeat” element, we will add it to the
+    “ngView.” This means that the HTML code has to be changed a bit. This will mean
+    that the animation will be more controlled between the changes in the view.
+
+
+    The “index.html” file should be as follows:
+
+
+    <div class="view-container">
+
+
+        <div ng-view class="view-frame"></div>
+
+
+    </div>
+
+
+    The “view-container” CSS class has been used to nest the “ng-view” directive inside
+    the parent element. The class will add the style “position: relative” so that
+    the positioning of the directive “ng-view” is relative to the parent as the transitions
+    are animated.
+
+
+    The CSS for the transition should be added to the file “animation.css.” This is
+    shown below:
+
+
+    .view-container {
+
+
+        position: relative;
+
+
+    }
+
+
+    .view-frame.ng-enter, .view-frame.ng-leave {
+
+
+        background: white;
+
+
+        position: absolute;
+
+
+        top: 0;
+
+
+        left: 0;
+
+
+                                                                          right: 0;             
+                 
+
+
+                                                                                       
+    }                           
+
+
+    .view-frame.ng-enter {
+
+
+         -webkit-animation: 0.5s fade-in;
+
+
+         -moz-animation: 0.5s fade-in;
+
+
+        -o-animation: 0.5s fade-in;
+
+
+        animation: 0.5s fade-in;
+
+
+        z-index: 100;
+
+
+    }
+
+
+    .view-frame.ng-leave {
+
+
+         -webkit-animation: 0.5s fade-out;
+
+
+          -moz-animation: 0.5s fade-out;
+
+
+          -o-animation: 0.5s fade-out;
+
+
+           animation: 0.5s fade-out;
+
+
+           z-index:99;
+
+
+    }
+
+
+    @keyframes fade-in {
+
+
+           from { opacity: 0; }
+
+
+            to { opacity: 1; }
+
+
+    }
+
+
+    @-moz-keyframes fade-in {
+
+
+            from { opacity: 0; }
+
+
+            to { opacity: 1; }
+
+
+    }
+
+
+    @-webkit-keyframes fade-in {
+
+
+         from { opacity: 0; }
+
+
+          to { opacity: 1; }
+
+
+    }
+
+
+    @keyframes fade-out {
+
+
+          from { opacity: 1; }
+
+
+          to { opacity: 0; }
+
+
+    }
+
+
+    @-moz-keyframes fade-out {
+
+
+           from { opacity: 1; }
+
+
+           to { opacity: 0; }
+
+
+    }
+
+
+    @-webkit-keyframes fade-out {
+
+
+           from { opacity: 1; }
+
+
+           to { opacity: 0; }
+
+
+    }
+
+
+    /* the vendor-prefixes should not be forgotten */
+
+
+    Animation of the “ngClass” with Javascript
+
+
+    We need to add another animation to our application. A nice thumbnail will be
+    observed in the “device-list.html” page. Once the thumbnail has been clicked,
+    the image will change. The CSS class has to be changed so that we can ensure that
+    the displaying of the images is accurate. This is shown below:
+
+
+    .phone-images {
+
+
+        background-color: white;
+
+
+        width: 450px;
+
+
+        height: 450px;
+
+
+        overflow: hidden;
+
+
+        position: relative;
+
+
+        float: left;
+
+
+    }
+
+
+    ...
+
+
+    img.device {
+
+
+         float: left;
+
+
+         margin-right: 3em;
+
+
+         margin-bottom: 2em;
+
+
+         background-color: white;
+
+
+         padding: 2em;
+
+
+         height: 400px;
+
+
+         width: 400px;
+
+
+        display: none;
+
+
+    }
+
+
+    img.device:first-child {
+
+
+         display: block;
+
+
+    }
+
+
+    You are thinking that we will create an animation which is CSS enabled. However,
+    we can do this by use of the “animation()” module of JavaScript. This is shown
+    in the example given below:'
+  toc: []
+  trans: "\n\n```\n\"angular-mocks\": \"1.4.x\",\n\"jquery\": \"~2.1.1\",\n\"bootstrap\"\
+    : \"~3.1.1\",\n\"angular-route\": \"1.4.x\",\n\"angular-resource\": \"1.4.x\"\
+    ,\n\"angular-animate\": \"1.4.x\"\n}\n}\n```\n\n上述步骤中安装的所有元素都应兼容，否则会出现问题。`bower`\
+    \ 也已被告知安装 jQuery。然而，这不能说是 Angular 库，而是一个标准的 jQuery 库。\n\n通过执行以下命令，指示 `bower` 下载并安装依赖项：`npm\
+    \ install`\n\n请注意，如果在您上次执行上述命令之后发布了新版本的 Angular，则可能会出现不兼容问题。要解决此问题，您只需在执行上述命令之前删除\
+    \ `app/bower_components` 文件夹。\n\n## 模板\n\n我们需要对 HTML 模板进行一些更改，以便链接定义动画的资源文件和 `angular-animate.js`\
+    \ 文件。动画模块，即 `ngAnimate`，定义在此文件中，其中包含负责让应用程序感知动画效果的代码。\n\n需要对文件进行以下更改：\n\n```\n\
+    ...\n<!—这是用于 CSS 过渡和/或关键帧动画 -->\n<link rel=\"stylesheet\" href=\"css/animations.css\"\
+    >\n...\n<!—jQuery 将用于 JavaScript 动画（应在 angular.js 之前包含） -->\n<script src=\"bower_components/jquery/dist/jquery.js\"\
+    ></script>\n...\n<!—这是在 AngularJS 中启用动画支持所需的模块 -->\n<script src=\"bower_components/angular-animate/angular-animate.js\"\
+    ></script>\n<!—这是用于 JavaScript 动画 -->\n<script src=\"js/animations.js\"></script>\n\
+    ...\n```\n\n对于使用 Angular 1.4 版本的用户，请确保您使用的是 jQuery 2.1 或更高版本。任何低于此版本的 jQuery 都将与\
+    \ Angular 1.4 不兼容。这意味着动画将无法被检测到，或者可能以非预期的方式工作。\n\n动画可以在 CSS 代码（`animations.css`）或\
+    \ JavaScript 代码（`animations.js`）中实现。我们需要首先创建一个新模块，该模块将 `ngAnimate` 模块作为依赖项，就像我们在\
+    \ `ngResource` 中所做的那样。\n\n`animations.js` 文件应如下所示：\n\n```\nangular.module('myAnimations',\
+    \ ['ngAnimate']);\n   // ...\n// 此模块将用于稍后定义动画\n   // ...\n```\n\n然后，该模块应附加到应用程序模块。如下所示：\n\
+    \n```\n// ...\nangular.module('myApp', [\n'ngRoute',\n'myAnimations',\n'myControllers',\n\
+    'myFilters',\n'myServices',\n]);\n// ...\n```\n\n此时，我们的模块将能够感知动画。\n\n## 使用 CSS\
+    \ 过渡动画实现“ngRepeat”动画\n\n应将 CSS 动画添加到包含我们设备的网页中的 `ngRepeat` 指令。我们首先需要向已重复的元素添加一个额外的\
+    \ CSS 类，以便将其与 CSS 动画代码挂钩。如下所示：\n\n```\n<!--\n让我们更改重复器的 HTML，以包含一个新的 CSS 类\n稍后我们将用它来实现动画：\n\
+    -->\n<ul class=\"phones\">\n<li ng-repeat=\"device in phones | filter:query |\
+    \ orderBy:orderProp\"\nclass=\"thumbnail device-listing\">\n<a href=\"#/phones/{{device.id}}\"\
+    \ class=\"thumb\"><img ng-src=\"{{device.imageUrl}}\"></a>\n<a href=\"#/phones/{{device.id}}\"\
+    >{{device.name}}</a>\n<p>{{device.snippet}}</p>\n</li>\n</ul>\n```\n\n请注意 CSS\
+    \ 类是如何添加的。HTML 文件中需要这样做，以便动画能够正常工作。\n\n动画的 CSS 代码应如下所示：\n\n```\n.device-listing.ng-enter,\n\
+    .device-listing.ng-leave,\n.device-listing.ng-move {\n    -webkit-transition:\
+    \ 0.5s linear all;\n    -moz-transition: 0.5s linear all;\n    -o-transition:\
+    \ 0.5s linear all;\n    transition: 0.5s linear all;\n}\n.device-listing.ng-enter,\n\
+    .device-listing.ng-move {\n   opacity: 0;\n   height: 0;\n   overflow: hidden;\n\
+    }\n.device-listing.ng-move.ng-move-active,\n.device-listing.ng-enter.ng-enter-active\
+    \ {\n    opacity: 1;\n    height: 120px;\n}\n.device-listing.ng-leave {\n    opacity:\
+    \ 1;\n    overflow: hidden;\n}\n.device-listing.ng-leave.ng-leave-active {\n \
+    \   opacity: 0;\n    height: 0;\n    padding-top: 0;\n    padding-bottom: 0;\n\
+    }\n```\n\n`device-listing` 的 CSS 类与动画钩子结合，这些钩子会在项目被插入列表或从列表中移除时触发。\n\n当新设备被添加到列表并显示在页面上后，`ng-enter`\
+    \ 类将应用于该元素。当元素在列表中被移动后，`ng-move` 类将应用于该元素。当元素从列表中被移除后，`ng-leave` 类将应用于该元素。\n\n\
+    ## “ngView”动画\n\n现在我们需要为 `ngView` 中的路由切换添加动画。与之前的示例一样，我们需要向 HTML 添加一个新的 CSS 类。不过这次不是添加到\
+    \ `ngRepeat` 元素，而是添加到 `ngView`。这意味着 HTML 代码需要稍作更改。这样，视图切换时的动画将更加可控。\n\n`index.html`\
+    \ 文件应如下所示：\n\n```\n<div class=\"view-container\">\n    <div ng-view class=\"view-frame\"\
+    ></div>\n</div>\n```\n\n`view-container` CSS 类用于将 `ng-view` 指令嵌套在父元素内。该类将添加样式\
+    \ `position: relative`，以便在动画过渡时，`ng-view` 指令的定位相对于父元素。\n\n过渡的 CSS 应添加到 `animation.css`\
+    \ 文件中。如下所示：\n\n```\n.view-container {\n    position: relative;\n}\n.view-frame.ng-enter,\
+    \ .view-frame.ng-leave {\n    background: white;\n    position: absolute;\n  \
+    \  top: 0;\n    left: 0;\n    right: 0;\n}\n.view-frame.ng-enter {\n     -webkit-animation:\
+    \ 0.5s fade-in;\n     -moz-animation: 0.5s fade-in;\n    -o-animation: 0.5s fade-in;\n\
+    \    animation: 0.5s fade-in;\n    z-index: 100;\n}\n.view-frame.ng-leave {\n\
+    \     -webkit-animation: 0.5s fade-out;\n      -moz-animation: 0.5s fade-out;\n\
+    \      -o-animation: 0.5s fade-out;\n       animation: 0.5s fade-out;\n      \
+    \ z-index:99;\n}\n@keyframes fade-in {\n       from { opacity: 0; }\n        to\
+    \ { opacity: 1; }\n}\n@-moz-keyframes fade-in {\n        from { opacity: 0; }\n\
+    \        to { opacity: 1; }\n}\n@-webkit-keyframes fade-in {\n     from { opacity:\
+    \ 0; }\n      to { opacity: 1; }\n}\n@keyframes fade-out {\n      from { opacity:\
+    \ 1; }\n      to { opacity: 0; }\n}\n@-moz-keyframes fade-out {\n       from {\
+    \ opacity: 1; }\n       to { opacity: 0; }\n}\n@-webkit-keyframes fade-out {\n\
+    \       from { opacity: 1; }\n       to { opacity: 0; }\n}\n/* 不要忘记供应商前缀 */\n\
+    ```\n\n## 使用 JavaScript 实现“ngClass”动画\n\n我们需要为应用程序添加另一个动画。在 `device-list.html`\
+    \ 页面中会看到一个漂亮的缩略图。点击缩略图后，图像会发生变化。需要更改 CSS 类，以确保图像的显示准确无误。如下所示：\n\n```\n.phone-images\
+    \ {\n    background-color: white;\n    width: 450px;\n    height: 450px;\n   \
+    \ overflow: hidden;\n    position: relative;\n    float: left;\n}\n...\nimg.device\
+    \ {\n     float: left;\n     margin-right: 3em;\n     margin-bottom: 2em;\n  \
+    \   background-color: white;\n     padding: 2em;\n     height: 400px;\n     width:\
+    \ 400px;\n    display: none;\n}\nimg.device:first-child {\n     display: block;\n\
+    }\n```\n\n您可能认为我们将创建一个基于 CSS 的动画。然而，我们可以通过使用 JavaScript 的 `animation()` 模块来实现这一点。如下例所示：\n\
+    \n"
+- fmt: '
+
+    ```javascript
+
+    var myAnimations = angular.module(''myAnimations'', [''ngAnimate'']);
+
+
+        myAnimations.animation(''.device'', function() {
+
+
+        var animUp = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+       return;
+
+
+    }
+
+
+    element.css({
+
+
+         position: ''absolute'',
+
+
+         top: 500,
+
+
+         left: 0,
+
+
+         display: ''block''
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+         top: 0
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    var animDown = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+          return;
+
+
+    }
+
+
+    element.css({
+
+
+          position: ''absolute'',
+
+
+          left: 0,
+
+
+         top: 0
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+          top: -500
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    return {
+
+
+          addClass: animUp,
+
+
+          removeClass: animDown
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    As you have noticed, the animation has been implemented by use of jQuery. With
+    both Angular and JavaScript, we do not require the jQuery so as to perform the
+    animation. Writing your own animation library in JavaScript will be difficult.
+
+
+    # Chapter 6- $watch() , $digest(), and $apply()
+
+
+    These methods are widely used in AngularJS. You should learn how to use these
+    in Angular.
+
+
+    After the creation of data binding somewhere in one''s view to a variable on the
+    object `$scope`, a "watch" will be internally created by the Angular. With the
+    watch, it will mean that it will watch what is contained in the `$scope` object.
+    This will be an indication that the framework will be watching the variable. To
+    create watches, we use the function `$scope.$watch()`.
+
+
+    In most cases, the functions `$scope.$digest()` and `$scope.$watch()` can be called
+    on your behalf, but in some other cases, you might have to call them yourself.
+    This is why you should know and understand how these work.
+
+
+    The function `$scope.$apply` is used for execution of a particular code, and then
+    the function `$scope.$digest()` is called after that. This will have all of the
+    watches checked and all of the corresponding functions for the watch listener
+    called. The function `$apply()` is good when it comes to integration of the AngularJS
+    code with any other code.
+
+
+    ## $watch()
+
+
+    The function `$scope.watch()` is used for creation of a watch of a particular
+    variable. Once a watch has been registered, two parameters have to be passed to
+    the `$watch()` function. These two parameters include the following:
+
+
+    *   A value function
+
+    *   A listener function
+
+
+    Consider the example given below showing how this can be done:
+
+
+    ```javascript
+
+    $scope.$watch(function() {},
+
+
+          function() {}
+
+
+    );
+
+    ```
+
+
+    The first function represents the value function, while the second function represents
+    the listener function. With the value function, the value which is being watched
+    will be returned. It is then the work of the AngularJS to check the value which
+    has been returned against the one that was returned by the watch function last
+    time. AngularJS has changed the way in which checking of whether a value was returned
+    can be done. An example of this is shown below:
+
+
+    ```javascript
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+         function() {}
+
+
+    );
+
+    ```
+
+
+    With the above function, the value `scope.data.myVariable` will be returned by
+    the value function. In case the value for this variable is changed, then a different
+    value will have to be returned. The listener function will then be called by the
+    AngularJS.
+
+
+    If the value has been changed, the listener function will try to do whatever that
+    it can do. By use of this value, the value function will be in a position to access
+    the `$scope` together with its variables. The global variables can also be watched
+    by the value function in case it is needed, but most often, the variable `$scope`
+    will be watched.
+
+
+    If the value is changed, the listener function can do whatever that it needs to
+    do. For some, they might need to change the content of the variable while with
+    others, they might need to change the content of an HTML element. Consider the
+    example given below:
+
+
+    ```javascript
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+    function(nValue, oValue) {
+
+
+        document.getElementById("").innerHTML =
+
+
+         "" + newValue + "";
+
+
+    }
+
+
+    );
+
+    ```
+
+
+    The above example will set the inner HTML of the HTML element to the new value
+    of the variable, and this has been embedded in the `b` element for the value of
+    making the content bold.
+
+
+    ## $digest()
+
+
+    The function `$scope.$digest()` will iterate through the watches in the object
+    `$scope` and the child `$scope` object. When the function `$digest()` has iterated
+    through the watches, the value function for each watch will be called. If the
+    value returned by our value function is found to be different to the value which
+    it had returned last time that it was called, the listener function for the watch
+    will then be called.
+
+
+    Whenever AngularJS finds it necessary, it just calls the `$digest()` function.
+    Situations may be found in which the AngularJS does not call the `$digest()` function.
+    To solve this problem, just call the function `$scope.$digest()`.
+
+
+    ## $apply()
+
+
+    The function `$scope.$apply()` will take a function as a parameter which has been
+    executed, and then the function `$scope.$apply()` will internally be called. This
+    is a way for you to ensure that all of the watches have been checked. All of the
+    data bindings will then be refreshed.
+
+
+    Consider the example given below:
+
+
+    ```javascript
+
+    $scope.$apply(function() {
+
+
+    $scope.data.myVariable = "A new value";
+
+
+    });
+
+    ```
+
+
+    Once a function has been passed to this function as a parameter, the value of
+    `$scope.data.myVar` will be changed. Once the function has exited, the function
+    `$scope.$digest()` will be called by the AngularJS, meaning that the watches will
+    be checked for the changes in the watched values.
+
+
+    Consider the example given below, which shows how these functions can be used
+    in AngularJS:
+
+
+    ```html
+
+    <div ng-controller="appController">
+
+
+    {{data.time}}
+
+
+    <br/>
+
+
+    <button ng-click="updateTime()">update time - ng-click</button>
+
+
+    <button id="upTimeButton"  >change time</button>
+
+
+    </div>
+
+
+    <script>
+
+
+    var module       = angular.module("myapplication", []);
+
+
+    var appController1 = module.controller("appController", function($scope) {
+
+
+    $scope.data = { time : new Date() };
+
+
+    $scope.updateTime = function() {
+
+
+    $scope.data.time = new Date();
+
+
+    }
+
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    });
+
+
+    });
+
+
+    </script>
+
+    ```
+
+
+    With the above example, the variable `$scope.data.time` will be bound to an interpolation
+    directive which will merge the variable value to a HTML page. With this binding,
+    a watch will be internally created in the variable `$scope.data.time`.
+
+
+    We have created two buttons for our application. The first button has a listener
+    of type `ng-click` attached to it. Clicking of this button will call the function
+    `$scope.updateTime()`, and then the AngularJS updates the bindings by calling
+    the function `$scope.$digest()`.
+
+
+    A JavaScript event listener has been attached to the second button. This listener
+    will be executed once the second button has been clicked. The only difference
+    between the two listeners is that with the one for the second button, the data
+    bindings are not updated once the second button has been clicked. The reason behind
+    this is that the function `$scope.$digest()` will not be called after the execution
+    of the event listener for the second button. This means that the clicking of the
+    second button will have the effect of updating the time in the variable `$scope.data.time`,
+    but this new time will not be displayed for visibility.
+
+
+    For us to solve this problem, the call for `$scope.$digest()` can be added to
+    the last line of the event listener. This is shown in the example given below:
+
+
+    ```javascript
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    $scope.$digest();
+
+
+    });
+
+    ```
+
+
+    The addition of the above call has been done in the last line of the program.
+    That is how it should be done.
+
+    '
+  raw: 'var myAnimations = angular.module(''myAnimations'', [''ngAnimate'']);
+
+
+        myAnimations.animation(''.device'', function() {
+
+
+        var animUp = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+       return;
+
+
+    }
+
+
+    element.css({
+
+
+         position: ''absolute'',
+
+
+         top: 500,
+
+
+         left: 0,
+
+
+         display: ''block''
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+         top: 0
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    var animDown = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+          return;
+
+
+    }
+
+
+    element.css({
+
+
+          position: ''absolute'',
+
+
+          left: 0,
+
+
+         top: 0
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+          top: -500
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    return {
+
+
+          addClass: animUp,
+
+
+          removeClass: animDown
+
+
+    };
+
+
+    });
+
+
+    As you have noticed, the animation has been implemented by use of jQuery. With
+    both Angular and JavaScript, we do not require the jQuery so as to perform the
+    animation. Writing your own animation library in JavaScript will be difficult.
+
+
+    # Chapter 6- $watch() , $digest(), and $apply()
+
+
+    These methods are widely used in AngularJS. You should learn how to use these
+    in Angular.
+
+
+    After the creation of data binding somewhere in one’s view to a variable on the
+    object “$scope,” a “watch” will be internally created by the Angular. With the
+    watch, it will mean that it will watch what is contained in the “$scope” object.
+    This will be an indication that the framework will be watching the variable. To
+    create watches, we use the function “$scope.$watch().”
+
+
+    In most cases, the functions “$scope.$digest()” and “$scope.$watch()” can be called
+    on your behalf, but in some other cases, you might have to call them yourself.
+    This is why you should know and understand how these work.
+
+
+    The function “$scope.$apply“ is used for execution of a particular code, and then
+    the function “$scope.$digest()” is called after that. This will have all of the
+    watches checked and all of the corresponding functions for the watch listener
+    called. The function “$apply()” is good when it comes to integration of the AngularJS
+    code with any other code.
+
+
+    ## $watch()
+
+
+    The function “$scope.watch()” is used for creation of a watch of a particular
+    variable. Once a watch has been registered, two parameters have to be passed to
+    the “$watch()“ function. These two parameters include the following:
+
+
+    *   A value function
+
+
+    *   A listener function
+
+
+    Consider the example given below showing how this can be done:
+
+
+    $scope.$watch(function() {},
+
+
+          function() {}
+
+
+    );
+
+
+    The first function represents the value function, while the second function represents
+    the listener function. With the value function, the value which is being watched
+    will be returned. It is then the work of the AngularJS to check the value which
+    has been returned against the one that was returned by the watch function last
+    time. AngularJS has changed the way in which checking of whether a value was returned
+    can be done. An example of this is shown below:
+
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+         function() {}
+
+
+    );
+
+
+    With the above function, the value “scope.data.myVariable” will be returned by
+    the value function. In case the value for this variable is changed, then a different
+    value will have to be returned. The listener function will then be called by the
+    AngularJS.
+
+
+    If the value has been changed, the listener function will try to do whatever that
+    it can do. By use of this value, the value function will be in a position to access
+    the “$scope” together with its variables. The global variables can also be watched
+    by the value function in case it is needed, but most often, the variable “$scope”
+    will be watched.
+
+
+    If the value is changed, the listener function can do whatever that it needs to
+    do. For some, they might need to change the content of the variable while with
+    others, they might need to change the content of an HTML element. Consider the
+    example given below:
+
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+    function(nValue, oValue) {
+
+
+        document.getElementById("").innerHTML =
+
+
+         "" + newValue + "";
+
+
+    }
+
+
+    );
+
+
+    The above example will set the inner HTML of the HTML element to the new value
+    of the variable, and this has been embedded in the “b” element for the value of
+    making the content bold.
+
+
+    ## $digest()
+
+
+    The function “$scope.$digest()” will iterate through the watches in the object
+    “$scope” and the child “$scope” object. When the function”  $digest()” has iterated
+    through the watches, the value function for each watch will be called. If the
+    value returned by our value function is found to be different to the value which
+    it had returned last time that it was called, the listener function for the watch
+    will then be called.
+
+
+    Whenever AngularJS finds it necessary, it just calls the “$digest()” function.
+    Situations may be found in which the AngularJS does not call the “$digest()“ function.
+    To solve this problem, just call the function “$scope.$digest().”
+
+
+    ## $apply()
+
+
+    The function “$scope.$apply()” will take a function as a parameter which has been
+    executed, and then the function “$scope.$apply()” will internally be called. This
+    is a way for you to ensure that all of the watches have been checked. All of the
+    data bindings will then be refreshed.
+
+
+    Consider the example given below:
+
+
+    $scope.$apply(function() {
+
+
+    $scope.data.myVariable = "A new value";
+
+
+    });
+
+
+    Once a function has been passed to this function as a parameter, the value of
+    “$scope.data.myVar” will be changed. Once the function has exited, the function
+    “$scope.$digest()” will be called by the AngularJS, meaning that the watches will
+    be checked for the changes in the watched values.
+
+
+    Consider the example given below, which shows how these functions can be used
+    in AngularJS:
+
+
+    <div ng-controller="appController">
+
+
+    {{data.time}}
+
+
+    <br/>
+
+
+    <button ng-click="updateTime()">update time - ng-click</button>
+
+
+    <button id="upTimeButton"  >change time</button>
+
+
+    </div>
+
+
+    <script>
+
+
+    var module       = angular.module("myapplication", []);
+
+
+    var appController1 = module.controller("appController", function($scope) {
+
+
+    $scope.data = { time : new Date() };
+
+
+    $scope.updateTime = function() {
+
+
+    $scope.data.time = new Date();
+
+
+    }
+
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    });
+
+
+    });
+
+
+    </script>
+
+
+    With the above example, the variable “$scope.data.time” will be bound to an interpolation
+    directive which will merge the variable value to a HTML page. With this binding,
+    a watch will be internally created in the variable “$scope.data.time.”
+
+
+    We have created two buttons for our application. The first button has a listener
+    of type “ng-click” attached to it. Clicking of this button will call the function
+    “$scope.updateTime(),” and then the AngularJS updates the bindings by calling
+    the function “$scope.$digest().”
+
+
+    A JavaScript event listener has been attached to the second button. This listener
+    will be executed once the second button has been clicked. The only difference
+    between the two listeners is that with the one for the second button, the data
+    bindings are not updated once the second button has been clicked. The reason behind
+    this is that the function “$scope.$digest()” will not be called after the execution
+    of the event listener for the second button. This means that the clicking of the
+    second button will have the effect of updating the time in the variable “$scope.data.time,”
+    but this new time will not be displayed for visibility.
+
+
+    For us to solve this problem, the call for “$scope.$digest()” can be added to
+    the last line of the event listener. This is shown in the example given below:
+
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    $scope.$digest();
+
+
+    });
+
+
+    The addition of the above call has been done in the last line of the program.
+    That is how it should be done.'
+  toc: []
+  trans: '
+
+
+    ```javascript
+
+    var myAnimations = angular.module(''myAnimations'', [''ngAnimate'']);
+
+
+        myAnimations.animation(''.device'', function() {
+
+
+        var animUp = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+       return;
+
+
+    }
+
+
+    element.css({
+
+
+         position: ''absolute'',
+
+
+         top: 500,
+
+
+         left: 0,
+
+
+         display: ''block''
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+         top: 0
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    var animDown = function(element, cName, done) {
+
+
+    if(cName != ''active'') {
+
+
+          return;
+
+
+    }
+
+
+    element.css({
+
+
+          position: ''absolute'',
+
+
+          left: 0,
+
+
+         top: 0
+
+
+    });
+
+
+    jQuery(element).animate({
+
+
+          top: -500
+
+
+    }, done);
+
+
+    return function(cancel) {
+
+
+    if(cancel) {
+
+
+         element.stop();
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    return {
+
+
+          addClass: animUp,
+
+
+          removeClass: animDown
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    正如你所注意到的，动画是通过使用 jQuery 实现的。借助 Angular 和 JavaScript，我们并不需要 jQuery 来执行动画。用 JavaScript
+    编写自己的动画库将会很困难。
+
+
+    # 第 6 章 - $watch()、$digest() 和 $apply()
+
+
+    这些方法在 AngularJS 中被广泛使用。你应该学会如何在 Angular 中使用它们。
+
+
+    当在视图中将数据绑定到 `$scope` 对象的某个变量上时，Angular 会在内部创建一个“监视器”。这个监视器意味着它会监视 `$scope` 对象中包含的内容。这表示框架将监视该变量。要创建监视器，我们使用
+    `$scope.$watch()` 函数。
+
+
+    在大多数情况下，`$scope.$digest()` 和 `$scope.$watch()` 函数会自动为你调用，但在某些情况下，你可能需要手动调用它们。这就是为什么你应该了解并理解它们的工作原理。
+
+
+    `$scope.$apply` 函数用于执行特定的代码，然后在其后调用 `$scope.$digest()` 函数。这将检查所有监视器，并调用所有对应的监视监听器函数。`$apply()`
+    函数在将 AngularJS 代码与其他代码集成时非常有用。
+
+
+    ## $watch()
+
+
+    `$scope.watch()` 函数用于创建对特定变量的监视。一旦注册了监视器，就需要向 `$watch()` 函数传递两个参数。这两个参数包括：
+
+
+    *   一个值函数
+
+    *   一个监听器函数
+
+
+    考虑下面的示例，展示如何实现：
+
+
+    ```javascript
+
+    $scope.$watch(function() {},
+
+
+          function() {}
+
+
+    );
+
+    ```
+
+
+    第一个函数代表值函数，第二个函数代表监听器函数。值函数会返回正在被监视的值。AngularJS 的工作就是检查返回的值与上次监视函数返回的值是否相同。AngularJS
+    改变了检查值是否返回的方式。下面是一个示例：
+
+
+    ```javascript
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+         function() {}
+
+
+    );
+
+    ```
+
+
+    在上面的函数中，值函数会返回 `scope.data.myVariable` 的值。如果这个变量的值发生了变化，那么返回的值也会不同。然后 AngularJS
+    会调用监听器函数。
+
+
+    如果值发生了变化，监听器函数会尝试执行它所能做的任何操作。通过使用这个值，值函数可以访问 `$scope` 及其变量。如果需要，值函数也可以监视全局变量，但大多数情况下，监视的是
+    `$scope` 变量。
+
+
+    如果值发生了变化，监听器函数可以执行它需要做的任何操作。有些人可能需要改变变量的内容，而另一些人可能需要改变 HTML 元素的内容。考虑下面的示例：
+
+
+    ```javascript
+
+    $scope.$watch(function(scope) { return scope.data.myVariable },
+
+
+    function(nValue, oValue) {
+
+
+        document.getElementById("").innerHTML =
+
+
+         "" + newValue + "";
+
+
+    }
+
+
+    );
+
+    ```
+
+
+    上面的示例会将 HTML 元素的 innerHTML 设置为变量的新值，并且该值被嵌入到 `b` 元素中，以使内容变为粗体。
+
+
+    ## $digest()
+
+
+    `$scope.$digest()` 函数会遍历 `$scope` 对象及其子 `$scope` 对象中的监视器。当 `$digest()` 函数遍历完监视器后，会调用每个监视器的值函数。如果发现值函数返回的值与上次调用时返回的值不同，则会调用该监视器的监听器函数。
+
+
+    每当 AngularJS 认为有必要时，它就会调用 `$digest()` 函数。但可能会遇到 AngularJS 不调用 `$digest()` 函数的情况。为了解决这个问题，只需手动调用
+    `$scope.$digest()` 函数。
+
+
+    ## $apply()
+
+
+    `$scope.$apply()` 函数接受一个函数作为参数，该函数会被执行，然后内部会调用 `$scope.$digest()` 函数。这是确保所有监视器都被检查的一种方式。所有数据绑定随后都会被刷新。
+
+
+    考虑下面的示例：
+
+
+    ```javascript
+
+    $scope.$apply(function() {
+
+
+    $scope.data.myVariable = "A new value";
+
+
+    });
+
+    ```
+
+
+    一旦将一个函数作为参数传递给此函数，`$scope.data.myVar` 的值就会被改变。当函数退出后，AngularJS 会调用 `$scope.$digest()`
+    函数，这意味着监视器会检查被监视值的变化。
+
+
+    考虑下面的示例，展示如何在 AngularJS 中使用这些函数：
+
+
+    ```html
+
+    <div ng-controller="appController">
+
+
+    {{data.time}}
+
+
+    <br/>
+
+
+    <button ng-click="updateTime()">update time - ng-click</button>
+
+
+    <button id="upTimeButton"  >change time</button>
+
+
+    </div>
+
+
+    <script>
+
+
+    var module       = angular.module("myapplication", []);
+
+
+    var appController1 = module.controller("appController", function($scope) {
+
+
+    $scope.data = { time : new Date() };
+
+
+    $scope.updateTime = function() {
+
+
+    $scope.data.time = new Date();
+
+
+    }
+
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    });
+
+
+    });
+
+
+    </script>
+
+    ```
+
+
+    在上面的示例中，变量 `$scope.data.time` 被绑定到一个插值指令上，该指令会将变量值合并到 HTML 页面中。通过这种绑定，会在变量 `$scope.data.time`
+    上内部创建一个监视器。
+
+
+    我们为应用程序创建了两个按钮。第一个按钮附加了一个 `ng-click` 类型的监听器。点击此按钮会调用 `$scope.updateTime()` 函数，然后
+    AngularJS 通过调用 `$scope.$digest()` 函数来更新绑定。
+
+
+    第二个按钮附加了一个 JavaScript 事件监听器。当第二个按钮被点击时，该监听器会被执行。两个监听器之间的唯一区别是，对于第二个按钮的监听器，点击后数据绑定不会被更新。原因在于，第二个按钮的事件监听器执行后不会调用
+    `$scope.$digest()` 函数。这意味着点击第二个按钮会更新变量 `$scope.data.time` 中的时间，但这个新时间不会显示出来。
+
+
+    为了解决这个问题，可以在事件监听器的最后一行添加对 `$scope.$digest()` 的调用。如下面的示例所示：
+
+
+    ```javascript
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    $scope.$digest();
+
+
+    });
+
+    ```
+
+
+    上述调用被添加到了程序的最后一行。这就是应该做的。
+
+
+    '
+- fmt: "\nInstead of doing the above, that is, calling the `$digest()` function inside\
+    \ the event listener, the `apply()` function can also be used as shown below:\n\
+    \n```\ndocument.getElementById(\"upTimeButton\")\n.addEventListener('click', function()\
+    \ {\n$scope.$apply(function() {\nconsole.log(\"change time clicked\");\n$scope.data.time\
+    \ = new Date();\n});\n});\n```\n\nThe function `$scope.$apply()` has been called\
+    \ from within the event listener for the button, and the update of the variable\
+    \ `$scope.data.time` has been passed as a parameter to the function `$apply()`.\
+    \ Once all of the function `$apply()` has finished, AngularJS will call the function\
+    \ `$digest()` internally so that all of the data bindings are updated.\n\n# Chapter\
+    \ 7- The Hierarchy of `$scope`\n\nThe object `$scope` for AngularJS, which is\
+    \ used by views, is organized into an hierarchy. We begin with the root scope,\
+    \ which is then made up of one or more children. Each of the available views is\
+    \ made up of its own scope, which is just the child of the root scope. This means\
+    \ that whatever variable that the view controller has set on the variable `$scope`\
+    \ will be invisible to the controllers.\n\nConsider the AngularJS code given below\
+    \ as an example:\n\n```\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<script\
+    \ src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js\"\
+    ></script>\n</head>\n<body ng-app=\"myapplication\">\n<div ng-controller=\"appController1\"\
+    >\n{{data.theVariable}}\n</div>\n<div ng-controller=\"appController2\">\n{{data.theVariable}}\n\
+    </div>\n<script>\nvar module       = angular.module(\"myapplication\", []);\n\
+    var appController1 = module.controller(\"appController1\", function($scope) {\n\
+    $scope.data = { theVariable : \"first value\"};\n});\nvar appController2 = module.controller(\"\
+    appController2\", function($scope) {\n$scope.data = { theVariable : \"second value\"\
+    };\n});\n</script>\n</body>\n</html>\n```\n\nIn the above example, we have used\
+    \ two views, and each of the views has its own controller. Each controller will\
+    \ set the `data.theVariable` variable to a different value.\n\nOnce the program\
+    \ has been executed, you will get the following hierarchy:\n\nRoot `$scope`\n\n\
+    *   `$scope` for appController 1\n*   `$scope` for appController 2\n\nAs shown\
+    \ above, the two views have used different scope objects. With the example, two\
+    \ different values will also be written for the `{{data.theVar}}` data bindings\
+    \ inside our two views. Different values will also be set for the variable `data.theVariable`\
+    \ in the `$scope` object.\n\n# Chapter 8- Refactoring AngularJS Apps\n\nDirectives\
+    \ which are component-based are increasingly becoming popular in AngularJS. The\
+    \ reason for this is the ease of use associated with components. However, most\
+    \ apps for Angular which are in use today are not based on components.\n\nFor\
+    \ Angular2 users, components can be used as follows:\n\n```\n< confirmation\n\
+    \    [message]=\"'Start firing?'\"\n       (ok)=\"startFiring()\">\n</ confirmation>\n\
+    ```\n\nAs shown in the above example, a component is just an element in custom\
+    \ HTML, and it matches a component name which has been defined somewhere else.\
+    \ Each component has its inputs and outputs, and these are supplied as properties\
+    \ to the element.\n\nThe above component can also be defined as shown below:\n\
+    \n```\n@Component({\nselector: 'confirmation',\nproperties: ['message'],\nevents:\
+    \ ['ok']\n})\n@View({\ntemplate: `\n<div>\n{{message}}\n    <button (click)=\"\
+    ok()\">OK</button>\n     </div>\n`})\nclass Confirmation {\n    okEvents = new\
+    \ EventEmitter();\n    ok() {\n     this.okEvents.next();\n}\n}\n```\n\nAn interface\
+    \ boundary definition is used for specification of the inputs and outputs which\
+    \ the component can work with. The UI template has been used for definition of\
+    \ the user interface for our users. The component logic has been used behind the\
+    \ UI template to define the behavior of the component and what it does when the\
+    \ user is interacting with it. The definition of a component as a directive can\
+    \ be done as shown below:\n\n```\n@Component({\n    selector: 'confirmation',\n\
+    \     properties: ['message'],\n    events: ['ok']\n})\n@View({\ntemplate: `\n\
+    \    <div>{{message}}\n    <button (click)=\"ok()\">OK</button>\n</div>\n`\n})\n\
+    class Confirmation {\n     okEvents = new EventEmitter();\n     ok() {\n     this.okEvents.next();\n\
+    }\n}\n```\n\nThe above code is completely different from what we had before.\n\
+    \nRefactoring can easily be done or used in AngularJS. We want to give an example\
+    \ of how this can be done:\n\nConsider the code given below for the file `index.html`:\n\
+    \n```\n<div ng-include=\"'bar.html'\">\n</div>\n```\n\nFor the above to be replaced,\
+    \ we will have to create a directive for `bar`. This will use the inherited scope\
+    \ and the template `bar.htm`.\n\nThe code for `bar_directive.js` should be as\
+    \ follows:\n\n```\nmodule.directive('bar', function() {\nreturn {\n     scope:\
+    \ true,\n     templateUrl: 'bar.html'\n};\n});\n```\n\nFor this to work effectively,\
+    \ both the directive and the template have to be co-located and their names should\
+    \ also match. This is shown below:\n\n```\ncomponents/foobar/\n*   bar_directive.js\n\
+    *   bar.html\n```\n\nThe original `ng-include` should then be replaced with the\
+    \ new directive. This is shown below:\n\n```\n<div ng-include=\"'footbar.html'\"\
+    >\n     </div>\n<footbar></footbar>\n```\n\nAfter the addition of the above component\
+    \ directive, that is, `footbar`, the template itself will look as shown below:\n\
+    \n```\n<div ng-controller=\"FoobarCtrl as c\">\n     <p>{{c.getText()}}</p>\n\
+    </div>\n```\n\nWe then want to move and then rename the file which has the FootCtrl\
+    \ so that it becomes co-located with our component directive. This is shown below:\n\
+    \n```\ncomponents/foobar/\n*   bar_directive.js\n*   bar_controller.js\n*   bar.html\n\
+    ```\n\nThe controller should then be used in the directive, and then the same\
+    \ ctrl alias that our `ng-controller` will be used. The file `bar_directive.js`\
+    \ should be as follows:\n\n```\nmodule.directive('foobar', function() {\nreturn\
+    \ {\n    scope: true,\n    controller: 'FoobarCtrl',\n    controllerAs: 'ctrl',\n\
+    \    templateUrl: 'bar.html'\n};\n});\n```\n\nThe wrapper `ng-controller` can\
+    \ now be removed from the template. This is shown below:\n\n```\n<div ng-controller=\"\
+    FooBarCtrl as c\">\n<p>{{c.getText()}}</p>\n</div>\n```\n\nOne can also choose\
+    \ to keep this element for the purpose of styling, and then the attribute `ng-controller`\
+    \ is removed.\n\nConsider the example given below:\n\n```\n<div ng-controller=\"\
+    FoobarCtrl as c\"\nclass=\" foo-bar\">\n<p>{{c.getText()}}</p>\n</div>\n```\n\n\
+    In the above example representing a template, we have an `ng-controller`. It has\
+    \ been used to instantiate a `FoobarCtrl` and then alias it as `c`.\n\nWe now\
+    \ need to create a new directive. This should then create an inherited scope,\
+    \ and then use the `FoobarCtrl` and then alias it as `c`. This is shown below:\n\
+    \n```\nmodule.directive('bar', function() {\nreturn {\n    scope: true,\n    controller:\
+    \ 'FoobarCtrl',\n    controllerAs: 'c'\n};\n});\n```\n\nOur new directive and\
+    \ the controller in existence will be moved to the same location. The two should\
+    \ also have the same prefix. This is shown below:\n\n```\ncomponents/foobar/\n\
+    *   bar_directive.js\n*   bar_controller.js\n```\n\nFinally, in the original template,\
+    \ the `ng-controller` can be replaced with an instance of the component `foobar`.\
+    \ This is shown below:\n\n```\n<div ng-controller=\"FoobarCtrl as c\"\nclass=\"\
+    foo-bar\">\n<foobar class=\"foo-bar\">\n<p>{{c.getText()}}</p>\n</foobar>\n</div>\n\
+    ```\n\nThis is what we have for now:\n\n```\n<div ng-controller=\"FoobarCtrl as\
+    \ c\"\nclass=\"foo-bar\">\n<foobar class=\"foo-bar\">\n<p>{{c.getText()}}</p>\n\
+    </foobar>\n</div>\n```\n\nA template file should then be created for the component\
+    \ directive. This is shown below:\n\n```\ncomponents/foobar/\n*   bar_directive.js\n\
+    *   bar_controller.js\n*   bar.html\n```\n\nThe new template should then be referenced\
+    \ from the directive. This can be done as follows:\n\n```\nmodule.directive('foobar',\
+    \ function() {\nreturn {\nscope: true,\ncontroller: 'FoobarCtrl',\ncontrollerAs:\
+    \ 'c',\ntemplateUrl: 'bar.html'\n};\n});\n```\n\nWe will then use what was contained\
+    \ in the directive element so as to populate the new template. This is shown below:\n\
+    \n```\n<p>{{c.getText()}</p>\n```\n"
+  raw: 'Instead of doing the above, that is, calling the “$digest()” function inside
+    the event listener, the “apply()” function can also be used as shown below:
+
+
+    document.getElementById("upTimeButton")
+
+
+    .addEventListener(''click'', function() {
+
+
+    $scope.$apply(function() {
+
+
+    console.log("change time clicked");
+
+
+    $scope.data.time = new Date();
+
+
+    });
+
+
+    });
+
+
+    The function “$scope.$apply()” has been called from within the event listener
+    for the button, and the update of the variable “$scope.data.time” has been passed
+    as a parameter to the function “$apply().” Once  all of the function “$apply()”
+    has finished, AngularJS will call the function “$digest()” internally so that
+    all of the data bindings are updated.
+
+
+    # Chapter 7- The Hierarchy of “$scope”
+
+
+    The object “$scope” for AngularJS, which is used by views, is organized into an
+    hierarchy. We begin with the root scope, which is then made up of one or more
+    children. Each of the available views is made up of its own scope, which is just
+    the child of the root scope. This means that whatever variable that the view controller
+    has set on the variable “$scope” will be invisible to the controllers.
+
+
+    Consider the AngularJS code given below as an example:
+
+
+    <!DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <head>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+
+
+    </head>
+
+
+    <body ng-app="myapplication">
+
+
+    <div ng-controller="appController1">
+
+
+    {{data.theVariable}}
+
+
+    </div>
+
+
+    <div ng-controller="appController2">
+
+
+    {{data.theVariable}}
+
+
+    </div>
+
+
+    <script>
+
+
+    var module       = angular.module("myapplication", []);
+
+
+    var appController1 = module.controller("appController1", function($scope) {
+
+
+    $scope.data = { theVariable : "first value"};
+
+
+    });
+
+
+    var appController2 = module.controller("appController2", function($scope) {
+
+
+    $scope.data = { theVariable : "second value"};
+
+
+    });
+
+
+    </script>
+
+
+    </body>
+
+
+    </html>
+
+
+    In the above example, we have used two views, and each of the views has its own
+    controller. Each controller will set the “data.theVariable” variable to a different
+    value.
+
+
+    Once the program has been executed, you will get the following hierarchy:
+
+
+    Root $scope
+
+
+    *   $scope for appController 1
+
+
+    *   $scope for appController 2
+
+
+    As shown above, the two views have used different scope objects. With the example,
+    two different values will also be written for the “{{data.theVar}}” data bindings
+    inside our two views. Different values will also be set for the variable “data.theVariable”
+    in the “$scope” object.
+
+
+    # Chapter 8- Refactoring AngularJS Apps
+
+
+    Directives which are component-based are increasingly becoming popular in AngularJS.
+    The reason for this is the ease of use associated with components. However, most
+    apps for Angular which are in use today are not based on components.
+
+
+    For Angular2 users, components can be used as follows:
+
+
+    < confirmation
+
+
+        [message]="''Start firing?''"
+
+
+           (ok)="startFiring()">
+
+
+    </ confirmation>
+
+
+    As shown in the above example, a component is just an element in custom HTML,
+    and it matches a component name which has been defined somewhere else. Each component
+    has its inputs and outputs, and these are supplied as properties to the element.
+
+
+    The above component can also be defined as shown below:
+
+
+    @Component({
+
+
+    selector: ''confirmation'',
+
+
+    properties: [''message''],
+
+
+    events: [''ok'']
+
+
+    })
+
+
+    @View({
+
+
+    template: `
+
+
+    <div>
+
+
+    {{message}}
+
+
+        <button (click)="ok()">OK</button>
+
+
+         </div>
+
+
+    `})
+
+
+    class Confirmation {
+
+
+        okEvents = new EventEmitter();
+
+
+        ok() {
+
+
+         this.okEvents.next();
+
+
+    }
+
+
+    }
+
+
+    An interface boundary definition is used for specification of the inputs and outputs
+    which the component can work with. The UI template has been used for definition
+    of the user interface for our users. The component logic has been used behind
+    the UI template to define the behavior of the component and what it does when
+    the user is interacting with it. The definition of a component as a directive
+    can be done as shown below:
+
+
+    @Component({
+
+
+        selector: ''confirmation'',
+
+
+         properties: [''message''],
+
+
+        events: [''ok'']
+
+
+    })
+
+
+    @View({
+
+
+    template: `
+
+
+        <div>{{message}}
+
+
+        <button (click)="ok()">OK</button>
+
+
+    </div>
+
+
+    `
+
+
+    })
+
+
+    class Confirmation {
+
+
+         okEvents = new EventEmitter();
+
+
+         ok() {
+
+
+         this.okEvents.next();
+
+
+    }
+
+
+    }
+
+
+    The above code is completely different from what we had before.
+
+
+    Refactoring can easily be done or used in AngularJS. We want to give an example
+    of how this can be done:
+
+
+    Consider the code given below for the file “index.html”:
+
+
+    <div ng-include="''bar.html''">
+
+
+    </div>
+
+
+    For the above to be replaced, we will have to create a directive for “bar.” This
+    will use the inherited scope and the template “bar.htm.”
+
+
+    The code for “bar_directive.js” should be as follows:
+
+
+    module.directive(''bar'', function() {
+
+
+    return {
+
+
+         scope: true,
+
+
+         templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    For this to work effectively, both the directive and the template have to be co-located
+    and their names should also match. This is shown below:
+
+
+    components/foobar/
+
+
+    *   bar_directive.js
+
+
+    *   bar.html
+
+
+    The original “ng-inlude” should then be replaced with the new directive. This
+    is shown below:
+
+
+    <div ng-include="''footbar.html''">
+
+
+         </div>
+
+
+    <footbar></footbar>
+
+
+    After the addition of the above component directive, that is, “footbar,”  the
+    template itself will look as shown below:
+
+
+    <div ng-controller="FoobarCtrl as c">
+
+
+         <p>{{c.getText()}}</p>
+
+
+    </div>
+
+
+    We then want to move and then rename the file which has the FootCtrl so that it
+    becomes co-located with our component directive. This is shown below:
+
+
+    components/foobar/
+
+
+    *   bar_directive.js
+
+
+    *   bar_controller.js
+
+
+    *   bar.html
+
+
+    The controller should then be used in the directive, and then the same ctrl alias
+    that our “ng-controller” will be used. The file “bar_diretive.js” should be as
+    follows:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+        scope: true,
+
+
+        controller: ''FoobarCtrl'',
+
+
+        controllerAs: ''ctrl'',
+
+
+        templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    The wrapper “ng-controller” can now be removed from the template. This is shown
+    below:
+
+
+    <div ng-controller="FooBarCtrl as c">
+
+
+    <p>{{c.getText()}}</p>
+
+
+    </div>
+
+
+    One can also choose to keep this element for the purpose of styling, and then
+    the attribute “ng-controller” is  removed.
+
+
+    Consider the example given below:
+
+
+    <div ng-controller="FoobarCtrl as c"
+
+
+    class=" foo-bar">
+
+
+    <p>{{c.getText()}}</p>
+
+
+    </div>
+
+
+    In the above example representing a template, we have an “ng-controller.”  It
+    has been used to instantiate a “FoobarCtrl” and then alias it as “c.”
+
+
+    We now need to create a new directive. This should then create an inherited scope,
+    and then use the “FoobarCtrl” and then alias it as “c.”  This is shown below:
+
+
+    module.directive(''bar'', function() {
+
+
+    return {
+
+
+        scope: true,
+
+
+        controller: ''FoobarCtrl'',
+
+
+        controllerAs: ''c''
+
+
+    };
+
+
+    });
+
+
+    Our new directive and the controller in existence will be moved to the same location.
+    The two should also have the same prefix. This is shown below:
+
+
+    components/foobar/
+
+
+    *   bar_directive.js
+
+
+    *   bar_controller.js
+
+
+    Finally, in the original template, the “ng-controller” can be replaced with an
+    instance of the component “foobar.” This is shown below:
+
+
+    <div ng-controller="FoobarCtrl as c"
+
+
+    class="foo-bar">
+
+
+    <foobar class="foo-bar">
+
+
+    <p>{{c.getText()}}</p>
+
+
+    </foobar>
+
+
+    </div>
+
+
+    This is what we have for now:
+
+
+    <div ng-controller="FoobarCtrl as c"
+
+
+    class="foo-bar">
+
+
+    <foobar class="foo-bar">
+
+
+    <p>{{c.getText()}}</p>
+
+
+    </foobar>
+
+
+    </div>
+
+
+    A template file should then be created for the component directive. This is shown
+    below:
+
+
+    components/foobar/
+
+
+    *   bar_directive.js
+
+
+    *   bar_controller.js
+
+
+    *   bar.html
+
+
+    The new template should then be referenced from the directive. This can be done
+    as follows:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    We will then use what was contained in the directive element so as to populate
+    the new template. This is shown below:
+
+
+    <p>{{c.getText()}</p>'
+  toc: []
+  trans: "\n与其像上面那样在事件监听器内部调用 `$digest()` 函数，不如使用 `apply()` 函数，如下所示：\n\n```\ndocument.getElementById(\"\
+    upTimeButton\")\n.addEventListener('click', function() {\n$scope.$apply(function()\
+    \ {\nconsole.log(\"change time clicked\");\n$scope.data.time = new Date();\n});\n\
+    });\n```\n\n函数 `$scope.$apply()` 已在按钮的事件监听器中被调用，并且变量 `$scope.data.time` 的更新已作为参数传递给函数\
+    \ `$apply()`。一旦函数 `$apply()` 执行完毕，AngularJS 将在内部调用函数 `$digest()`，以便所有数据绑定都被更新。\n\
+    \n# 第 7 章 - `$scope` 的层次结构\n\nAngularJS 中供视图使用的 `$scope` 对象被组织成一个层次结构。我们从根作用域开始，它由一个或多个子作用域组成。每个可用的视图都有自己的作用域，这些作用域只是根作用域的子级。这意味着视图控制器在变量\
+    \ `$scope` 上设置的任何变量对其他控制器都是不可见的。\n\n以下面的 AngularJS 代码为例：\n\n```\n<!DOCTYPE html>\n\
+    <html lang=\"en\">\n<head>\n<script src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js\"\
+    ></script>\n</head>\n<body ng-app=\"myapplication\">\n<div ng-controller=\"appController1\"\
+    >\n{{data.theVariable}}\n</div>\n<div ng-controller=\"appController2\">\n{{data.theVariable}}\n\
+    </div>\n<script>\nvar module       = angular.module(\"myapplication\", []);\n\
+    var appController1 = module.controller(\"appController1\", function($scope) {\n\
+    $scope.data = { theVariable : \"first value\"};\n});\nvar appController2 = module.controller(\"\
+    appController2\", function($scope) {\n$scope.data = { theVariable : \"second value\"\
+    };\n});\n</script>\n</body>\n</html>\n```\n\n在上面的例子中，我们使用了两个视图，每个视图都有自己的控制器。每个控制器会将\
+    \ `data.theVariable` 变量设置为不同的值。\n\n程序执行后，你将得到以下层次结构：\n\n根 `$scope`\n\n*   appController1\
+    \ 的 `$scope`\n*   appController2 的 `$scope`\n\n如上所示，两个视图使用了不同的作用域对象。在这个例子中，两个视图中的\
+    \ `{{data.theVar}}` 数据绑定也会写入两个不同的值。`$scope` 对象中的变量 `data.theVariable` 也会被设置为不同的值。\n\
+    \n# 第 8 章 - 重构 AngularJS 应用\n\n基于组件的指令在 AngularJS 中越来越流行。原因在于组件易于使用。然而，目前大多数正在使用的\
+    \ Angular 应用并非基于组件。\n\n对于 Angular2 用户，可以按如下方式使用组件：\n\n```\n< confirmation\n  \
+    \  [message]=\"'Start firing?'\"\n       (ok)=\"startFiring()\">\n</ confirmation>\n\
+    ```\n\n如上例所示，组件只是一个自定义 HTML 元素，它匹配一个已在其他地方定义的组件名称。每个组件都有其输入和输出，这些作为属性提供给元素。\n\n\
+    上述组件也可以按如下方式定义：\n\n```\n@Component({\nselector: 'confirmation',\nproperties: ['message'],\n\
+    events: ['ok']\n})\n@View({\ntemplate: `\n<div>\n{{message}}\n    <button (click)=\"\
+    ok()\">OK</button>\n     </div>\n`})\nclass Confirmation {\n    okEvents = new\
+    \ EventEmitter();\n    ok() {\n     this.okEvents.next();\n}\n}\n```\n\n接口边界定义用于指定组件可以处理的输入和输出。UI\
+    \ 模板用于定义用户界面。组件逻辑位于 UI 模板之后，用于定义组件的行为以及当用户与之交互时它做什么。组件作为指令的定义可以如下所示：\n\n```\n\
+    @Component({\n    selector: 'confirmation',\n     properties: ['message'],\n \
+    \   events: ['ok']\n})\n@View({\ntemplate: `\n    <div>{{message}}\n    <button\
+    \ (click)=\"ok()\">OK</button>\n</div>\n`\n})\nclass Confirmation {\n     okEvents\
+    \ = new EventEmitter();\n     ok() {\n     this.okEvents.next();\n}\n}\n```\n\n\
+    上述代码与我们之前看到的完全不同。\n\n在 AngularJS 中，重构可以轻松完成或使用。我们想给出一个如何实现的示例：\n\n考虑下面给出的 `index.html`\
+    \ 文件代码：\n\n```\n<div ng-include=\"'bar.html'\">\n</div>\n```\n\n为了替换上述代码，我们需要为\
+    \ `bar` 创建一个指令。该指令将使用继承的作用域和模板 `bar.htm`。\n\n`bar_directive.js` 的代码应如下所示：\n\n\
+    ```\nmodule.directive('bar', function() {\nreturn {\n     scope: true,\n     templateUrl:\
+    \ 'bar.html'\n};\n});\n```\n\n为了使其有效工作，指令和模板必须位于同一位置，并且它们的名称也应匹配。如下所示：\n\n```\n\
+    components/foobar/\n*   bar_directive.js\n*   bar.html\n```\n\n然后，原始的 `ng-include`\
+    \ 应被新指令替换。如下所示：\n\n```\n<div ng-include=\"'footbar.html'\">\n     </div>\n<footbar></footbar>\n\
+    ```\n\n添加上述组件指令（即 `footbar`）后，模板本身将如下所示：\n\n```\n<div ng-controller=\"FoobarCtrl\
+    \ as c\">\n     <p>{{c.getText()}}</p>\n</div>\n```\n\n然后，我们想要移动并重命名包含 FootCtrl\
+    \ 的文件，使其与我们的组件指令位于同一位置。如下所示：\n\n```\ncomponents/foobar/\n*   bar_directive.js\n\
+    *   bar_controller.js\n*   bar.html\n```\n\n然后，控制器应在指令中使用，并且使用与 `ng-controller`\
+    \ 相同的 ctrl 别名。文件 `bar_directive.js` 应如下所示：\n\n```\nmodule.directive('foobar',\
+    \ function() {\nreturn {\n    scope: true,\n    controller: 'FoobarCtrl',\n  \
+    \  controllerAs: 'ctrl',\n    templateUrl: 'bar.html'\n};\n});\n```\n\n现在可以从模板中移除包装器\
+    \ `ng-controller`。如下所示：\n\n```\n<div ng-controller=\"FooBarCtrl as c\">\n<p>{{c.getText()}}</p>\n\
+    </div>\n```\n\n也可以为了样式目的保留该元素，然后移除 `ng-controller` 属性。\n\n考虑下面的示例：\n\n```\n<div\
+    \ ng-controller=\"FoobarCtrl as c\"\nclass=\" foo-bar\">\n<p>{{c.getText()}}</p>\n\
+    </div>\n```\n\n在上面的模板示例中，我们有一个 `ng-controller`。它用于实例化一个 `FoobarCtrl`，然后将其别名为 `c`。\n\
+    \n我们现在需要创建一个新指令。该指令应创建一个继承的作用域，然后使用 `FoobarCtrl` 并将其别名为 `c`。如下所示：\n\n```\nmodule.directive('bar',\
+    \ function() {\nreturn {\n    scope: true,\n    controller: 'FoobarCtrl',\n  \
+    \  controllerAs: 'c'\n};\n});\n```\n\n我们的新指令和现有的控制器将被移动到同一位置。两者还应具有相同的前缀。如下所示：\n\
+    \n```\ncomponents/foobar/\n*   bar_directive.js\n*   bar_controller.js\n```\n\n\
+    最后，在原始模板中，`ng-controller` 可以被替换为组件 `foobar` 的一个实例。如下所示：\n\n```\n<div ng-controller=\"\
+    FoobarCtrl as c\"\nclass=\"foo-bar\">\n<foobar class=\"foo-bar\">\n<p>{{c.getText()}}</p>\n\
+    </foobar>\n</div>\n```\n\n目前我们得到的是：\n\n```\n<div ng-controller=\"FoobarCtrl as\
+    \ c\"\nclass=\"foo-bar\">\n<foobar class=\"foo-bar\">\n<p>{{c.getText()}}</p>\n\
+    </foobar>\n</div>\n```\n\n然后，应为组件指令创建一个模板文件。如下所示：\n\n```\ncomponents/foobar/\n\
+    *   bar_directive.js\n*   bar_controller.js\n*   bar.html\n```\n\n然后，新模板应从指令中引用。可以按如下方式完成：\n\
+    \n```\nmodule.directive('foobar', function() {\nreturn {\nscope: true,\ncontroller:\
+    \ 'FoobarCtrl',\ncontrollerAs: 'c',\ntemplateUrl: 'bar.html'\n};\n});\n```\n\n\
+    然后，我们将使用指令元素中包含的内容来填充新模板。如下所示：\n\n```\n<p>{{c.getText()}</p>\n```\n\n"
+- fmt: "\nThe directive element will itself become empty. The `index.html` file will\
+    \ then be as follows:\n\n```\n<foobar>\n\n<p>{{c.getText()}}</p>\n\n</foobar>\n\
+    ```\n\nAfter the `ng-controller` has been replaced with the directive, the original\
+    \ template will be left with the following:\n\n```\n<foobar>\n\n<h2>{{c.getTitle()}}</h2>\n\
+    \n<p>{{mainC.getText()}}</p>\n\n</foobar>\n```\n\nTransclusion can be used for\
+    \ the purpose of supporting both of the cases. We will begin by creating a template\
+    \ file for our component directive. This is shown below:\n\n`components/foobar/`\n\
+    \n*   `bar_directive.js`\n*   `bar_controller.js`\n*   `bar.html`\n\nThe new template\
+    \ can then be referenced from our directive. At the same time, transclusion will\
+    \ also be enabled, as shown below:\n\n```\nmodule.directive('foobar', function()\
+    \ {\n\nreturn {\n\ntransclude: true,\n\nscope: true,\n\ncontroller: 'FoobarCtrl',\n\
+    \ncontrollerAs: 'c',\n\ntemplateUrl: 'bar.html'\n\n};\n\n});\n```\n\nThe population\
+    \ of the template file will be done by use of a part of the original template\
+    \ which is needed to be put inside the component. The directive `ng-transclude`\
+    \ will be added for the other part. The `bar.html` file should have the following\
+    \ code:\n\n```\n<h2>{{c.getTitle()}}</h2>\n\n<p ng-transclude></p>\n```\n\nIn\
+    \ our directive element, we will leave the part which is to be transcluded. This\
+    \ is shown below:\n\n```\n<foobar>\n\n<h2>{{c.getTitle()}}</h2>\n\n<p>{{mainC.getText()}}</p>\n\
+    \n</foobar>\n```\n\nConsider the next example.\n\nWe have a `<ul>` element for\
+    \ listing some data. This is shown below:\n\n```\n<div>\n\n<h1>Foobars</h1>\n\n\
+    <ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\n<img ng-src=\"foo.imageUrl\"/>\n\n\
+    {{file.text}}\n\n</li>\n\n</ul>\n\n</div>\n```\n\nWe need to perform the listing\
+    \ into its own component. A directive and a template file should be created for\
+    \ the component. This should be called in the directive as shown below:\n\n`components/foobar_list/`\n\
+    \n*   `foobar_list_directive.js`\n*   `foobar_list.html`\n\nThe directive will\
+    \ create an inherited scope, and then reference the template which has been created.\
+    \ This is shown below:\n\n```\nmodule.directive('foobarList', function() {\n\n\
+    return {\n\n     scope: true,\n\n     templateUrl: 'list.html'\n\n};\n\n});\n\
+    ```\n\nThe template will be populated by copying the HTML file which has been\
+    \ populated from our original template. This is shown below:\n\n```\n<ul>\n\n\
+    <li ng-repeat=\"foo in c.bars\">\n\n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\
+    \n</li>\n\n</ul>\n```\n\nA new instance of this component can then be used in\
+    \ the original template. It will replace the markup which has been created. This\
+    \ is shown below:\n\n```\n<div>\n\n<h1>Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"\
+    foo in c.bars\">\n\n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\
+    \n</ul>\n\n<foobar-list></foobar-list>\n\n</div>\n```\n\nAn example can also be\
+    \ created which makes use of transclusion. An example of this is given below:\n\
+    \n```\n<div>\n\n<h1>Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\
+    \n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n<img ng-src=\"foo.imageUrl\"/>\n\n\
+    {{file.text}}\n\n</li>\n\n</ul>\n\n</div>\n```\n\nThe `<ul>` element from our\
+    \ previous example has some content coming from the outside, and transclusion\
+    \ can be used for the purpose of both of these. In the above example, we have\
+    \ used an item header which has been provided by `mainC`.\n\nWhen the listing\
+    \ is extracted into its own component, a directive and a template should then\
+    \ be created for that file. This is shown below:\n\n`components/foobar_list/`\n\
+    \n*   `bar_list_directive.js`\n*   `bar_list.html`\n\nThe directive will create\
+    \ an inherited scope, and the newly created template file will then be referenced.\
+    \ Transclusion will also be enabled.\n\nThe code for the file `bar_list_directive.js`\
+    \ should be as follows:\n\n```\nmodule.directive('foobarList', function() {\n\n\
+    return {\n\n     transclude: true,\n\n     scope: true,\n\n     templateUrl: 'bar_list.html'\n\
+    \n};\n\n});\n```\n\nThe population of the template will be done by copying the\
+    \ HTML which has been extracted from our original template. The part for the item\
+    \ header will be replaced with an `ng-transclude` element.\n\nThe code for `bar_list.htm`\
+    \ should be as follows:\n\n```\n<ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\n<ng-transclude></ng-transclude>\n\
+    \n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\n</ul>\n```\n\nA\
+    \ new instance of this component can then be used in our new template. It will\
+    \ replace the markup which has been extracted, but an item header will be left\
+    \ in place and then transclusion will be done to each item. This is shown below:\n\
+    \n```\n<div>\n\n<h1>My Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"foo in c.bars\"\
+    >\n\n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n<img ng-src=\"foo.imageUrl\"/>\n\
+    \n              {{file.text}}              \n\n</li>\n\n</ul>\n\n<foobar-list>\n\
+    \n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n</foobar-list>\n\n</div>\n```\n\nWe\
+    \ now have a component template. Two external references can be seen in it, and\
+    \ these reference the controller `mainC`. Note that this is not the controller\
+    \ for the component, but it is just another controller which has been defined\
+    \ on the upper or higher level of our hierarchy. This is shown below:\n\n```\n\
+    <div ng-show=\"mainC.isFooBarVisible()\">\n\n<p>\n\n{{c.getText(mainC.getLanguage())}}\n\
+    \n</p>\n\n</div>\n```\n\nThe external references should be removed one by one,\
+    \ and the code should be kept working all the time.\n\nThe expression `mainC.isFooBarVisible()`\
+    \ has to be chosen first. It refers to calling a method which is located on the\
+    \ parent controller, and we have used the result to control whether or not the\
+    \ element is visible. For the external reference to be replaced, a binding to\
+    \ the component directive has to be introduced named `visible`.\n\nThe code for\
+    \ the `bar_diretive.js` should be as follows:\n\n```\nmodule.directive('foobar',\
+    \ function() {\n\nreturn {\n\nscope: true,\n\ncontroller: 'FoobarCtrl',\n\ncontrollerAs:\
+    \ 'c',\n\nbindToController: {\n\nvisible: '='\n\n},\n\ntemplateUrl: 'bar.html'\n\
+    \n};\n\n});\n```\n\nThe above code shows that the component has an input named\
+    \ `visible`, and the user should supply the component to it. You should also have\
+    \ noticed that we have introduced `bindToController`, but the attribute `scope:\
+    \ true` has been kept unchanged. However, it isn’t an isolated scope directive.\
+    \ The reason we do not want to isolate it is that there are other external references\
+    \ inside it, and we don’t need to break these references. In Angular 1.4, it is\
+    \ possible for one to combine the `scope: true` and the `bindToController` so\
+    \ as to introduce binding to scopes which are not isolated.\n\nFor the `visible`\
+    \ binding which is new, we have to plug in a value wherever the component `foobar`\
+    \ is to be used. We have the capability of accessing the `mainC`, and the template\
+    \ originally contained in the template can be used. This is shown below:\n\n```\n\
+    <foobar\n\nvisible=\"mainC.isFooBarVisible()\">\n\n</foobar>\n```\n\nThe scope\
+    \ binding can now be referred to inside the component, and the dependency will\
+    \ be broken to the external world. This is shown below for the `bar.html`:\n\n\
+    ```\n<div ng-show=\"c.visible\">\n\n<p>\n\n{{c.getText(mainC.getLanguage())}}\n\
+    \n</p>\n\n</div>\n```\n\nAnother binding to the definition for the directive named\
+    \ `language` can now be introduced. This is shown below:\n\n```\nmodule.directive('foobar',\
+    \ function() {\n\nreturn {\n\nscope: true,\n\ncontroller: 'FoobarCtrl',\n\ncontrollerAs:\
+    \ 'c',\n\nbindToController: {\n\nvisible: '=',\n\nlanguage: '='\n\n},\n\ntemplateUrl:\
+    \ 'bar.html'\n\n};\n\n});\n```\n\nA value for it should then be plugged in where\
+    \ the component is being used. This is shown below:\n\n```\n<foobar\n\nvisible=\"\
+    mainC.isFooBarVisible()\"\n\nlanguage=\"mainC.getLanguage()\">\n\n</foobar>\n\
+    ```\n\nThe binding should also be done inside the component template. This is\
+    \ shown below:\n\n```\n<div ng-show=\"c.visible\">\n\n<p>{{c.getText(c.language)}}</p>\n\
+    \n</div>\n```\n\nOur template will then be free of the external references. All\
+    \ of the data which is needed will be specified explicitly at the interface boundary.\n\
+    \n## An Example of the `$watch` Expression\n"
+  raw: 'The directive element will itself become empty. The “index.html” file will
+    then be as follows:
+
+
+    <foobar>
+
+
+    <p>{{c.getText()}}</p>
+
+
+    </foobar>
+
+
+    After the “ng-controller” has been replaced with the directive, the original template
+    will be left with the following:
+
+
+    <foobar>
+
+
+    <h2>{{c.getTitle()}}</h2>
+
+
+    <p>{{mainC.getText()}}</p>
+
+
+    </foobar>
+
+
+    Transclusion can be used for the purpose of supporting both of the cases. We will
+    begin by creating a template file for our component directive. This is shown below:
+
+
+    components/foobar/
+
+
+    *   bar_directive.js
+
+
+    *   bar_controller.js
+
+
+    *   bar.html
+
+
+    The new template can then be referenced from our directive. At the same time,
+    transclusion will also be enabled, as shown below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    transclude: true,
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    The population of the template file will be done by use of a part of the original
+    template which is needed to be put inside the component. The directive “ng-transclude”
+    will be added for the other part. The “bar.html” file should have the following
+    ode:
+
+
+    <h2>{{c.getTitle()}}</h2>
+
+
+    <p ng-transclude></p>
+
+
+    In our directive element, we will leave the part which is to be transcluded. This
+    is shown below:
+
+
+    <foobar>
+
+
+    <h2>{{c.getTitle()}}</h2>
+
+
+    <p>{{mainC.getText()}}</p>
+
+
+    </foobar>
+
+
+    Consider the next example.
+
+
+    We have a “<ul>” element for listing some data. This is shown below:
+
+
+    <div>
+
+
+    <h1>Foobars</h1>
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+    {{file.text}}
+
+
+    </li>
+
+
+    </ul>
+
+
+    </div>
+
+
+    We need to perform the listing into its own component. A directive and a template
+    file should be created for the component. This should be called in the directive
+    as shown below:
+
+
+    components/foobar_list/
+
+
+    *   foobar_list_directive.js
+
+
+    *   foobar_list.html
+
+
+    The directive will create an inherited scope, and then reference the template
+    which has been created. This is shown below:
+
+
+    module.directive(''foobarList'', function() {
+
+
+    return {
+
+
+         scope: true,
+
+
+         templateUrl: ''list.html''
+
+
+    };
+
+
+    });
+
+
+    The template will be populated by copying the HTML file which has been populated
+    from our original template. This is shown below:
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+    {{file.text}}
+
+
+    </li>
+
+
+    </ul>
+
+
+    A new instance of this component can then be used in the original template. It
+    will replace the markup which has been created. This is shown below:
+
+
+    <div>
+
+
+    <h1>Foobars</h1>
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+    {{file.text}}
+
+
+    </li>
+
+
+    </ul>
+
+
+    <foobar-list></foobar-list>
+
+
+    </div>
+
+
+    An example can also be created which makes use of transclusion. An example of
+    this is given below:
+
+
+    <div>
+
+
+    <h1>Foobars</h1>
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <h3>
+
+
+    {{mainC.itemHeader}}
+
+
+    </h3>
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+    {{file.text}}
+
+
+    </li>
+
+
+    </ul>
+
+
+    </div>
+
+
+    The “<ul>” element from our previous example has some content coming from the
+    outside, and transclusion can be used for the purpose of both of these. In the
+    above example, we have used an item header which has been provided by “mainC”
+
+
+    When the listing is extracted into its own component, a directive and a template
+    should then be created for that file. This is shown below:
+
+
+    components/foobar_list/
+
+
+    *   bar_list_directive.js
+
+
+    *   bar_list.html
+
+
+    The directive will create an inherited scope, and the newly created template file
+    will then be referenced. Transclusion will also be enabled.
+
+
+    The code for the file “bar_list_directive.js” should be as follows:
+
+
+    module.directive(''foobarList'', function() {
+
+
+    return {
+
+
+         transclude: true,
+
+
+         scope: true,
+
+
+         templateUrl: ''bar_list.html''
+
+
+    };
+
+
+    });
+
+
+    The population of the template will be done by copying the HTML which has been
+    extracted from our original template. The part for the item header will be replaced
+    with an “ng-transclude” element.
+
+
+    The code for “bar_list.htm” should be as follows:
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <ng-transclude></ng-transclude>
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+    {{file.text}}
+
+
+    </li>
+
+
+    </ul>
+
+
+    A new instance of this component can then be used in our new template. It will
+    replace the markup which has been extracted, but an item header will be left in
+    place and then transclusion will be done to each item. This is shown below:
+
+
+    <div>
+
+
+    <h1>My Foobars</h1>
+
+
+    <ul>
+
+
+    <li ng-repeat="foo in c.bars">
+
+
+    <h3>
+
+
+    {{mainC.itemHeader}}
+
+
+    </h3>
+
+
+    <img ng-src="foo.imageUrl"/>
+
+
+                                                                          {{file.text}}             
+                 
+
+
+    </li>
+
+
+    </ul>
+
+
+    <foobar-list>
+
+
+    <h3>
+
+
+    {{mainC.itemHeader}}
+
+
+    </h3>
+
+
+    </foobar-list>
+
+
+    </div>
+
+
+    We  now have a component template. Two external references can be seen in it,
+    and these reference the controller “mainC.” Note that this is not the controller
+    for the component, but it is just another controller which has been defined on
+    the upper or higher level of our hierarchy. This is shown below:
+
+
+    <div ng-show="mainC.isFooBarVisible()">
+
+
+    <p>
+
+
+    {{c.getText(mainC.getLanguage())}}
+
+
+    </p>
+
+
+    </div>
+
+
+    The external references should be removed one by one, and the code should be kept
+    working all the time.
+
+
+    The expression “mainC.isFooBarVisible()” has to be chosen first. It refers to
+    calling a method which is located on the parent controller, and we have used the
+    result to control whether or not the element is visible. For the external reference
+    to be replaced, a binding to the component directive has to be introduced named
+    “visible.”
+
+
+    The code for the “bar_diretive.js” should be as follows:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    visible: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    The above code shows that the component has an input named “visible,” and the
+    user should supply the component to it. You should also have noticed that we have
+    introduced “bindToController,” but the attribute “scope: true” has been kept unchanged.
+    However, it isn’t an isolated scope directive. The reason we do not want to isolate
+    it is that there are other external references inside it, and we don’t need to
+    break these references. In Angular 1.4, it is possible for one to combine the
+    “scope: true” and the “bindToController” so as to introduce binding to scopes
+    which are not isolated.
+
+
+    For the “visible” binding which is new, we have to plug in a value wherever the
+    component “foobar” is to be used. We have the capability of accessing the “mainC,”
+    and the template originally contained in the template can be used. This is shown
+    below:
+
+
+    <foobar
+
+
+    visible="mainC.isFooBarVisible()">
+
+
+    </foobar>
+
+
+    The scope binding can now be referred to inside the component, and the dependency
+    will be broken to the external world. This is shown below for the “bar.html”:
+
+
+    <div ng-show="c.visible">
+
+
+    <p>
+
+
+    {{c.getText(mainC.getLanguage())}}
+
+
+    </p>
+
+
+    </div>
+
+
+    Another binding to the definition for the directive named “language” can now be
+    introduced. This is shown below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    visible: ''='',
+
+
+    language: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    A value for it should then be plugged in where the component is being used. This
+    is shown below:
+
+
+    <foobar
+
+
+    visible="mainC.isFooBarVisible()"
+
+
+    language="mainC.getLanguage()">
+
+
+    </foobar>
+
+
+    The binding should also be done inside the component template. This is shown below:
+
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    </div>
+
+
+    Our template will then be free of the external references. All of the data which
+    is needed will be specified explicitly at the interface boundary.
+
+
+    An Example of the “$watch” Expression'
+  toc: []
+  trans: "\n\n指令元素本身将变为空。`index.html` 文件将如下所示：\n\n```\n<foobar>\n\n<p>{{c.getText()}}</p>\n\
+    \n</foobar>\n```\n\n在 `ng-controller` 被指令替换后，原始模板将剩下以下内容：\n\n```\n<foobar>\n\n\
+    <h2>{{c.getTitle()}}</h2>\n\n<p>{{mainC.getText()}}</p>\n\n</foobar>\n```\n\n\
+    可以使用嵌入（Transclusion）来支持这两种情况。我们将首先为组件指令创建一个模板文件。如下所示：\n\n`components/foobar/`\n\
+    \n*   `bar_directive.js`\n*   `bar_controller.js`\n*   `bar.html`\n\n然后可以从指令中引用新模板。同时，嵌入功能也将被启用，如下所示：\n\
+    \n```\nmodule.directive('foobar', function() {\n\nreturn {\n\ntransclude: true,\n\
+    \nscope: true,\n\ncontroller: 'FoobarCtrl',\n\ncontrollerAs: 'c',\n\ntemplateUrl:\
+    \ 'bar.html'\n\n};\n\n});\n```\n\n模板文件的内容将通过使用原始模板中需要放入组件的一部分来填充。另一部分将添加指令 `ng-transclude`。`bar.html`\
+    \ 文件应包含以下代码：\n\n```\n<h2>{{c.getTitle()}}</h2>\n\n<p ng-transclude></p>\n```\n\
+    \n在我们的指令元素中，我们将保留需要被嵌入的部分。如下所示：\n\n```\n<foobar>\n\n<h2>{{c.getTitle()}}</h2>\n\
+    \n<p>{{mainC.getText()}}</p>\n\n</foobar>\n```\n\n考虑下一个示例。\n\n我们有一个用于列出某些数据的 `<ul>`\
+    \ 元素。如下所示：\n\n```\n<div>\n\n<h1>Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"foo in\
+    \ c.bars\">\n\n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\n</ul>\n\
+    \n</div>\n```\n\n我们需要将列表提取到它自己的组件中。应为该组件创建一个指令和一个模板文件。在指令中应如下调用：\n\n`components/foobar_list/`\n\
+    \n*   `foobar_list_directive.js`\n*   `foobar_list.html`\n\n该指令将创建一个继承作用域，然后引用已创建的模板。如下所示：\n\
+    \n```\nmodule.directive('foobarList', function() {\n\nreturn {\n\n     scope:\
+    \ true,\n\n     templateUrl: 'list.html'\n\n};\n\n});\n```\n\n模板将通过复制从原始模板中填充的\
+    \ HTML 文件来填充。如下所示：\n\n```\n<ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\n<img ng-src=\"\
+    foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\n</ul>\n```\n\n然后可以在原始模板中使用此组件的新实例。它将替换已创建的标记。如下所示：\n\
+    \n```\n<div>\n\n<h1>Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\
+    \n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\n</ul>\n\n<foobar-list></foobar-list>\n\
+    \n</div>\n```\n\n还可以创建一个使用嵌入的示例。如下所示：\n\n```\n<div>\n\n<h1>Foobars</h1>\n\n<ul>\n\
+    \n<li ng-repeat=\"foo in c.bars\">\n\n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n\
+    <img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\n</li>\n\n</ul>\n\n</div>\n\
+    ```\n\n我们之前示例中的 `<ul>` 元素有一些来自外部的内容，嵌入可以用于这两者。在上面的示例中，我们使用了由 `mainC` 提供的项目标题。\n\
+    \n当列表被提取到它自己的组件中时，应为该文件创建一个指令和一个模板。如下所示：\n\n`components/foobar_list/`\n\n*   `bar_list_directive.js`\n\
+    *   `bar_list.html`\n\n该指令将创建一个继承作用域，然后引用新创建的模板文件。嵌入功能也将被启用。\n\n文件 `bar_list_directive.js`\
+    \ 的代码应如下所示：\n\n```\nmodule.directive('foobarList', function() {\n\nreturn {\n\n\
+    \     transclude: true,\n\n     scope: true,\n\n     templateUrl: 'bar_list.html'\n\
+    \n};\n\n});\n```\n\n模板的填充将通过复制从原始模板中提取的 HTML 来完成。项目标题部分将被替换为 `ng-transclude` 元素。\n\
+    \n`bar_list.htm` 的代码应如下所示：\n\n```\n<ul>\n\n<li ng-repeat=\"foo in c.bars\">\n\n\
+    <ng-transclude></ng-transclude>\n\n<img ng-src=\"foo.imageUrl\"/>\n\n{{file.text}}\n\
+    \n</li>\n\n</ul>\n```\n\n然后可以在新模板中使用此组件的新实例。它将替换已提取的标记，但项目标题将保留在原位，然后对每个项目进行嵌入。如下所示：\n\
+    \n```\n<div>\n\n<h1>My Foobars</h1>\n\n<ul>\n\n<li ng-repeat=\"foo in c.bars\"\
+    >\n\n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n<img ng-src=\"foo.imageUrl\"/>\n\
+    \n              {{file.text}}              \n\n</li>\n\n</ul>\n\n<foobar-list>\n\
+    \n<h3>\n\n{{mainC.itemHeader}}\n\n</h3>\n\n</foobar-list>\n\n</div>\n```\n\n现在我们有了一个组件模板。其中可以看到两个外部引用，它们引用了控制器\
+    \ `mainC`。请注意，这不是组件的控制器，它只是在我们层次结构的更上层定义的另一个控制器。如下所示：\n\n```\n<div ng-show=\"\
+    mainC.isFooBarVisible()\">\n\n<p>\n\n{{c.getText(mainC.getLanguage())}}\n\n</p>\n\
+    \n</div>\n```\n\n应逐个移除外部引用，并始终保持代码正常工作。\n\n首先必须选择表达式 `mainC.isFooBarVisible()`。它指的是调用位于父控制器上的方法，我们使用结果来控制元素是否可见。为了替换外部引用，必须为组件指令引入一个名为\
+    \ `visible` 的绑定。\n\n文件 `bar_diretive.js` 的代码应如下所示：\n\n```\nmodule.directive('foobar',\
+    \ function() {\n\nreturn {\n\nscope: true,\n\ncontroller: 'FoobarCtrl',\n\ncontrollerAs:\
+    \ 'c',\n\nbindToController: {\n\nvisible: '='\n\n},\n\ntemplateUrl: 'bar.html'\n\
+    \n};\n\n});\n```\n\n上述代码显示组件有一个名为 `visible` 的输入，用户应向组件提供该输入。您还应该注意到我们引入了 `bindToController`，但属性\
+    \ `scope: true` 保持不变。然而，它并不是一个隔离作用域指令。我们不隔离它的原因是其中还有其他外部引用，我们不需要破坏这些引用。在 Angular\
+    \ 1.4 中，可以将 `scope: true` 和 `bindToController` 结合起来，以便为非隔离的作用域引入绑定。\n\n对于新的 `visible`\
+    \ 绑定，我们必须在任何使用组件 `foobar` 的地方插入一个值。我们能够访问 `mainC`，并且可以使用模板中原本包含的模板。如下所示：\n\n```\n\
+    <foobar\n\nvisible=\"mainC.isFooBarVisible()\">\n\n</foobar>\n```\n\n现在可以在组件内部引用作用域绑定，并且将打破对外部世界的依赖。如下所示，在\
+    \ `bar.html` 中：\n\n```\n<div ng-show=\"c.visible\">\n\n<p>\n\n{{c.getText(mainC.getLanguage())}}\n\
+    \n</p>\n\n</div>\n```\n\n现在可以为指令定义引入另一个名为 `language` 的绑定。如下所示：\n\n```\nmodule.directive('foobar',\
+    \ function() {\n\nreturn {\n\nscope: true,\n\ncontroller: 'FoobarCtrl',\n\ncontrollerAs:\
+    \ 'c',\n\nbindToController: {\n\nvisible: '=',\n\nlanguage: '='\n\n},\n\ntemplateUrl:\
+    \ 'bar.html'\n\n};\n\n});\n```\n\n然后应在使用组件的地方为其插入一个值。如下所示：\n\n```\n<foobar\n\n\
+    visible=\"mainC.isFooBarVisible()\"\n\nlanguage=\"mainC.getLanguage()\">\n\n</foobar>\n\
+    ```\n\n绑定也应在组件模板内部完成。如下所示：\n\n```\n<div ng-show=\"c.visible\">\n\n<p>{{c.getText(c.language)}}</p>\n\
+    \n</div>\n```\n\n我们的模板将不再有外部引用。所有需要的数据都将在接口边界处显式指定。\n\n## `$watch` 表达式示例\n\n"
+- fmt: '
+
+    External references cannot only be found in the component template. In the component
+    controller, one may also have the expressions `$watch`, `$watchCollection`, or
+    `$watchGroup`. The link functions can also be used if available. Consider the
+    example given below, which shows how this can be replaced with a bound input:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''mainC.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    c.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+    ```
+
+
+    Our watch expression has referenced the `foo` attribute of the `mainC`. A bound
+    input should be used instead of this. Consider the code which is given below:
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    Once the component is being used, the actual value should be plugged in. This
+    is shown below:
+
+
+    ```
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+    ```
+
+
+    Inside the watch expression for the controller, the bound input can then be used.
+    This is shown below:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''c.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    ctrl.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+    ```
+
+
+    An external reference may not be used in certain situations. We want to create
+    a code for the controller which will reference a code which will just reference
+    a scope attribute which is inherited just in plain JavaScript. Here is the code
+    for the example:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.getActiveFoo = function() {
+
+
+    if ($scope.mainC.foo.active) {
+
+
+    return $scope.mainC.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    The above example is just similar to the previous one, with the only exception
+    being that a bound input will be needed. This is shown below:
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    The `foo` value will be provided during the use of the component. This is shown
+    below:
+
+
+    ```
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+    ```
+
+
+    Our controller code will then be in a position to use the bound input. This is
+    shown below:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    ctrl.getActiveFoo = function() {
+
+
+    if (c.foo.active) {
+
+
+    return c.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    ## Event handler and Bound output
+
+
+    All of the external components used in components are not logical inputs. Others
+    act as logical outputs. Consider the example given below:
+
+
+    ```
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="mainC.deleteFoobar()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+    ```
+
+
+    In the above example, and inside our component template, we have the `ng-click`
+    directive. This has been used to invoke a method on a `mainC` reference which
+    has been inherited. That is what we have done.
+
+
+    For the dependency to be broken, an expression binding named `onDelete` has to
+    be introduced on the definition of the directive. This is shown below:
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    visible: ''='',
+
+
+    language: ''='',
+
+
+    onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    For the inputs and outputs to be distinguished in AngularJS, the syntax `[]` is
+    used for the input and the syntax `()` used for the output. However, in the earlier
+    versions of AngularJS, such as 1.x, there was no mechanism as to how these can
+    be distinguished. This is why most people prefer to use the prefix `on` for outputs.
+
+
+    Once the component has been used, an expression for the new binding will then
+    be plugged in. The user of the component will then decide on what the delete means
+    to him or her. In our case, we have used it so as to invoke the function `deleteFoobar`
+    of our main controller. This is shown below:
+
+
+    ```
+
+    <foobar
+
+
+    visible="mainC.isFooBarVisible()"
+
+
+    language="mainC.getLanguage()"
+
+
+    onDelete="mainC.deleteFoobar()">
+
+
+    </foobar>
+
+    ```
+
+
+    The expression binding will then be invoked from inside the component template.
+    This is shown below:
+
+
+    ```
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="c.onDelete()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+    ```
+
+
+    Consider the sample code given below:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+       var c = this;
+
+
+    c.onFooClick = function() {
+
+
+       mainC.setActiveFoo(c.foo);
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    In the above example, we have used a controller function which will call a function
+    in the parent scope. The external function call must not be an event handler in
+    a particular template. It can be contained in a controller. This is what we did
+    with the inputs.
+
+
+    What we should do to the definition of the directive is that we should add an
+    expression binding. This is shown below:
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+         onActivateFoo: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    Once the template has been used, there is an invocation of `mainCtrl.setActiveFoo`
+    which we set in the component controller. This is shown below:
+
+
+    ```
+
+    <foobar
+
+
+    on-activate-foo="mainC.setActiveFoo(foo)">
+
+
+    </foobar>
+
+    ```
+
+
+    The expression binding should then be invoked inside the controller other than
+    the external inherited controller. An object argument should be provided to the
+    Angular so as to know the value of the `foo` which is to be used inside the bound
+    expression. This is shown below:
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.onFooClick = function() {
+
+
+        c.onActivateFoo({foo: c.foo});
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    Consider the example given below:
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+        scope: true,
+
+
+        controller: ''FoobarCtrl'',
+
+
+        controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+        visible: ''='',
+
+
+        language: ''='',
+
+
+       onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    We have defined all the inputs and the outputs in the above example.
+
+
+    # Conclusion
+
+
+    It can be concluded that AngularJS is a very useful framework for the development
+    of web applications. The usefulness of AngularJS is seen on what it does to HTML.
+    Generally, it was developed for the purpose of extending what is contained in
+    HTML. Note that HTML was not developed for the purpose of development of web-apps.
+
+
+    However, AngularJS comes in to fill this gap. It works by extending the vocabulary
+    which is contained in HTML so as to get extra and amazing functionalities. With
+    HTML, it is very easy for one to declare and display dynamic content. However,
+    when it comes to dealing with dynamic content, then HTML is not the best. This
+    is where AngularJS comes in, and it serves to fill this gap.
+
+
+    As we have said, AngularJS is used to extend the functionalities of HTML. A good
+    example is when we create an HTML page and then change it by use of the AngularJS.
+    This page can then be changed to display the content dynamically by the use of
+    AngularJS. That is how the two work together. Applications always use data. This
+    is very important for any application.
+
+
+    However, other than dealing with only small amounts of data, you should learn
+    to work with large data sets in AngularJS. This is possible in AngularJS, and
+    your resultant application will be very useful. AngularJS can also be used for
+    the purpose of adding animations to your application. These make your web application
+    very attractive to its users. There is a module named `ngAnimate` in AngularJS
+    which can be used for the purpose of performing these animations. Those are some
+    of the features which have been discussed in this book.
+
+    '
+  raw: 'External references cannot only be found in the component template. In the
+    component controller, one may also have the expressions “$watch,” “$watchCollection,”
+    or “$watchGroup.” The link functions can also be used if available. Consider the
+    example given below, which shows how this can be replaced with a bound input:
+
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''mainC.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    c.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+
+    Our watch expression has referenced the “foo” attribute of the “mainC.” A bound
+    input should be used instead of this. Consider the code which is given below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    Once the component is being used, the actual value should be plugged in. This
+    is shown below:
+
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+
+    Inside the watch expression for the controller, the bound input can then be used.
+    This is shown below:
+
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''c.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    ctrl.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+
+    An external reference may not be used in certain situations. We want to create
+    a code for the controller which will reference a code which will just reference
+    a scope attribute which is inherited just in plain JavaScript.  Here is the code
+    for the example:
+
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.getActiveFoo = function() {
+
+
+    if ($scope.mainC.foo.active) {
+
+
+    return $scope.mainC.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    The above example is just similar to the previous one, with the only exception
+    being that a bound input will be needed. This is shown below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    The foo value will be provided during the use of the component. This is shown
+    below:
+
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+
+    Our controller code will then be in a position to use the bound input. This is
+    shown below:
+
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    ctrl.getActiveFoo = function() {
+
+
+    if (c.foo.active) {
+
+
+    return c.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+
+    Event handler and Bound output
+
+
+    All of the external components used in components are not logical inputs. Others
+    act as logical outputs. Consider the example given below:
+
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="mainC.deleteFoobar()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+
+    In the above example, and inside our component template, we have the “ng-click”
+    directive. This has been used to invoke a method on a “mainC” reference which
+    has been inherited. That is what we have done.
+
+
+    For the dependency to be broken, an expression binding named “onDelete” has to
+    be introduced on the definition of the directive. This is shown below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    visible: ''='',
+
+
+    language: ''='',
+
+
+    onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    For the inputs and outputs to be distinguished in AngularJS, the syntax [] is
+    used for the input and the syntax  () used for the output. However, in the earlier
+    versions of AngularJS, such as 1.x, there was no mechanism as to how these can
+    be distinguished. This is why most people prefer to use the prefix “on” for outputs.
+
+
+    Once the component has been used, an expression for the new binding will then
+    be plugged in. The user of the component will then decide on what the delete means
+    to him or her. In our case, we have used it so as to invoke the function “deleteFoobar”
+    of our main controller. This is shown below:
+
+
+    <foobar
+
+
+    visible="mainC.isFooBarVisible()"
+
+
+    language="mainC.getLanguage()"
+
+
+    onDelete="mainC.deleteFoobar()">
+
+
+    </foobar>
+
+
+    The expression binding will then be invoked from inside the component template.
+    This is shown below:
+
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="c.onDelete()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+
+    Consider the sample code given below:
+
+
+    function FoobarCtrl($scope) {
+
+
+       var c = this;
+
+
+    c.onFooClick = function() {
+
+
+       mainC.setActiveFoo(c.foo);
+
+
+    };
+
+
+    }
+
+
+    In the above example, we have used a controller function which will call a function
+    in the parent scope. The external function call must not be an event handler in
+    a particular template. It can be contained in a controller. This is what we did
+    with the inputs.
+
+
+    What we should do to the definition of the directive is that we should add an
+    expression binding. This is shown below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+         onActivateFoo: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    Once the template has been used, there is an  invocation of “mainCtrl.setActiveFoo”
+    which we set in the component controller. This is shown below:
+
+
+    <foobar
+
+
+    on-activate-foo="mainC.setActiveFoo(foo)">
+
+
+    </foobar>
+
+
+    The expression binding should then be invoked inside the controller other than
+    the external inherited controller. An object argument should be provided to the
+    Angular so as to know the value of the “foo” which is to be used inside the bound
+    expression. This is shown below:
+
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.onFooClick = function() {
+
+
+        c.onActivateFoo({foo: c.foo});
+
+
+    };
+
+
+    }
+
+
+    Consider the example given below:
+
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+        scope: true,
+
+
+        controller: ''FoobarCtrl'',
+
+
+        controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+        visible: ''='',
+
+
+        language: ''='',
+
+
+       onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+
+    We have defined all the inputs and the outputs in the above example.
+
+
+    # Conclusion
+
+
+    It can be concluded that AngularJS is a very useful framework for the development
+    of web applications. The usefulness of AngularJS is seen on what it does to HTML.
+    Generally, it was developed for the purpose of extending what is contained in
+    HTML. Note that HTML was not developed for the purpose of development of web-apps.
+
+
+    However, AngularJS comes in to fill this gap. It works by extending the vocabulary
+    which is contained in  HTML so as to get extra and amazing functionalities. With
+    HTML, it is very easy for one to declare and display dynamic content. However,
+    when it comes to dealing with dynamic content, then HTML is not the best. This
+    is where AngularJS comes in, and it serves to fill this gap.
+
+
+    As we have said, AngularJS is used to extend the functionalities of  HTML. A good
+    example is when we create an HTML page and then change it by use of the AngularJS.
+    This page can then be changed to display the content dynamically by the use of
+    AngularJS. That is how the two work together. Applications always use data. This
+    is very important for any application.
+
+
+    However, other than dealing with only small amounts of data, you should learn
+    to work with large data sets in AngularJS. This is possible in AngularJS, and
+    your resultant application will be very useful. AngularJS can also be used for
+    the purpose of adding animations to your application. These make your web application
+    very attractive to its users. There is a module named “ngAnimate” in AngularJS
+    which can be used for the purpose of performing these animations. Those are some
+    of the features which have been discussed in this book.'
+  toc: []
+  trans: '
+
+
+    外部引用不仅可以在组件模板中找到。在组件控制器中，也可能存在 `$watch`、`$watchCollection` 或 `$watchGroup` 表达式。如果可用，也可以使用链接函数。考虑下面给出的示例，它展示了如何用绑定输入来替代：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''mainC.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    c.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+    ```
+
+
+    我们的 watch 表达式引用了 `mainC` 的 `foo` 属性。应该使用绑定输入来代替它。考虑下面给出的代码：
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    一旦组件被使用，就应该填入实际的值。如下所示：
+
+
+    ```
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+    ```
+
+
+    在控制器的 watch 表达式内部，就可以使用绑定输入了。如下所示：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    $scope.$watch(''c.foo'', function(nFoo) {
+
+
+    if (nFoo.active) {
+
+
+    ctrl.actFoo = nFoo;
+
+
+    } else {
+
+
+    ctrl.actFoo = null;
+
+
+    }
+
+
+    });
+
+
+    }
+
+    ```
+
+
+    在某些情况下，可能不允许使用外部引用。我们希望为控制器编写一段代码，该代码将引用一个仅继承自普通 JavaScript 作用域属性的代码。以下是示例代码：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.getActiveFoo = function() {
+
+
+    if ($scope.mainC.foo.active) {
+
+
+    return $scope.mainC.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    上面的示例与之前的类似，唯一的区别是需要一个绑定输入。如下所示：
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    foo: ''=''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    `foo` 值将在组件使用时提供。如下所示：
+
+
+    ```
+
+    <foobar foo="mainC.foo">
+
+
+    </foobar>
+
+    ```
+
+
+    然后我们的控制器代码就可以使用绑定输入了。如下所示：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    ctrl.getActiveFoo = function() {
+
+
+    if (c.foo.active) {
+
+
+    return c.foo;
+
+
+    } else {
+
+
+    return null;
+
+
+    }
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    ## 事件处理器与绑定输出
+
+
+    组件中使用的所有外部组件并非都是逻辑输入。有些充当逻辑输出。考虑下面给出的示例：
+
+
+    ```
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="mainC.deleteFoobar()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+    ```
+
+
+    在上面的示例中，在我们的组件模板内部，我们使用了 `ng-click` 指令。它被用来调用继承而来的 `mainC` 引用上的一个方法。这就是我们所做的。
+
+
+    为了打破依赖关系，需要在指令定义中引入一个名为 `onDelete` 的表达式绑定。如下所示：
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+    visible: ''='',
+
+
+    language: ''='',
+
+
+    onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    为了在 AngularJS 中区分输入和输出，使用 `[]` 语法表示输入，使用 `()` 语法表示输出。然而，在 AngularJS 的早期版本（如 1.x）中，并没有区分它们的机制。这就是为什么大多数人倾向于为输出使用
+    `on` 前缀。
+
+
+    一旦组件被使用，就会填入新绑定的表达式。组件的使用者将决定删除操作对他或她意味着什么。在我们的例子中，我们使用它来调用主控制器的 `deleteFoobar`
+    函数。如下所示：
+
+
+    ```
+
+    <foobar
+
+
+    visible="mainC.isFooBarVisible()"
+
+
+    language="mainC.getLanguage()"
+
+
+    onDelete="mainC.deleteFoobar()">
+
+
+    </foobar>
+
+    ```
+
+
+    然后，表达式绑定将从组件模板内部被调用。如下所示：
+
+
+    ```
+
+    <div ng-show="c.visible">
+
+
+    <p>{{c.getText(c.language)}}</p>
+
+
+    <button ng-click="c.onDelete()">
+
+
+    Delete
+
+
+    </button>
+
+
+    </div>
+
+    ```
+
+
+    考虑下面给出的示例代码：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+       var c = this;
+
+
+    c.onFooClick = function() {
+
+
+       mainC.setActiveFoo(c.foo);
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    在上面的示例中，我们使用了一个控制器函数，该函数会调用父作用域中的一个函数。外部函数调用不一定非得是特定模板中的事件处理器。它可以包含在控制器中。这就是我们对输入所做的处理。
+
+
+    我们应该对指令定义做的是添加一个表达式绑定。如下所示：
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+    scope: true,
+
+
+    controller: ''FoobarCtrl'',
+
+
+    controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+         onActivateFoo: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    一旦模板被使用，就会调用我们在组件控制器中设置的 `mainCtrl.setActiveFoo`。如下所示：
+
+
+    ```
+
+    <foobar
+
+
+    on-activate-foo="mainC.setActiveFoo(foo)">
+
+
+    </foobar>
+
+    ```
+
+
+    然后，表达式绑定应该在控制器内部被调用，而不是在外部继承的控制器中。应该向 Angular 提供一个对象参数，以便知道要在绑定表达式中使用的 `foo` 的值。如下所示：
+
+
+    ```
+
+    function FoobarCtrl($scope) {
+
+
+    var c = this;
+
+
+    c.onFooClick = function() {
+
+
+        c.onActivateFoo({foo: c.foo});
+
+
+    };
+
+
+    }
+
+    ```
+
+
+    考虑下面给出的示例：
+
+
+    ```
+
+    module.directive(''foobar'', function() {
+
+
+    return {
+
+
+        scope: true,
+
+
+        controller: ''FoobarCtrl'',
+
+
+        controllerAs: ''c'',
+
+
+    bindToController: {
+
+
+        visible: ''='',
+
+
+        language: ''='',
+
+
+       onDelete: ''&''
+
+
+    },
+
+
+    templateUrl: ''bar.html''
+
+
+    };
+
+
+    });
+
+    ```
+
+
+    在上面的示例中，我们定义了所有的输入和输出。
+
+
+    # 结论
+
+
+    可以得出结论，AngularJS 是一个用于开发 Web 应用程序的非常有用的框架。AngularJS 的实用性体现在它对 HTML 所做的改进上。总的来说，它被开发出来是为了扩展
+    HTML 所包含的内容。请注意，HTML 并非为开发 Web 应用程序而设计。
+
+
+    然而，AngularJS 的出现填补了这一空白。它通过扩展 HTML 所包含的词汇来获得额外且令人惊叹的功能。使用 HTML，声明和显示动态内容非常容易。但是，当涉及到处理动态内容时，HTML
+    就不是最佳选择了。这正是 AngularJS 发挥作用的地方，它填补了这一空白。
+
+
+    正如我们所说，AngularJS 用于扩展 HTML 的功能。一个很好的例子是，当我们创建一个 HTML 页面，然后通过使用 AngularJS 来修改它。这个页面随后可以通过使用
+    AngularJS 动态地显示内容。这就是两者协同工作的方式。应用程序总是使用数据。这对任何应用程序都非常重要。
+
+
+    然而，除了处理少量数据之外，你还应该学会在 AngularJS 中处理大型数据集。这在 AngularJS 中是可行的，并且你最终得到的应用程序将非常有用。AngularJS
+    还可以用于为你的应用程序添加动画效果。这使你的 Web 应用程序对用户非常有吸引力。AngularJS 中有一个名为 `ngAnimate` 的模块，可用于执行这些动画。这些就是本书中讨论的一些特性。
+
+
+    '

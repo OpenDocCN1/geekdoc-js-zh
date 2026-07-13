@@ -1,0 +1,2583 @@
+<p><img src="Image00291.jpg" /></p>
+<p><span id="text00000.html"></span></p>
+<p>Meet Patel</p>
+<p>Advanced JavaScript Visualized</p>
+<p><span id="text00001.html"></span></p>
+<div class="publishing-info">
+<p>Copyright © 2021 by Meet Patel</p>
+<p>All rights reserved. No part of this publication may be reproduced,
+stored or transmitted in any form or by any means, electronic,
+mechanical, photocopying, recording, scanning, or otherwise without
+written permission from the publisher. It is illegal to copy this book,
+post it to a website, or distribute it by any other means without
+permission.</p>
+<p>Meet Patel asserts the moral right to be identified as the author of
+this work.</p>
+<p>Meet Patel has no responsibility for the persistence or accuracy of
+URLs for external or third-party Internet Websites referred to in this
+publication and does not guarantee that any content on such Websites is,
+or will remain, accurate or appropriate.</p>
+<p>Designations used by companies to distinguish their products are
+often claimed as trademarks. All brand names and product names used in
+this book and on its cover are trade names, service marks, trademarks
+and registered trademarks of their respective owners. The publishers and
+the book are not associated with any product or vendor mentioned in this
+book. None of the companies referenced within the book have endorsed the
+book.</p>
+<p>First edition</p>
+<p>This book was professionally typeset on Reedsy<br />
+Find out more at <a href="https://reedsy.com">reedsy.com</a></p>
+</div>
+<p><span id="text00002.html"></span></p>
+<div class="dedication">
+<p>I like to dedicate this book to my engineering which made me realize
+I should have started writing earlier :)</p>
+</div>
+<p><span id="text00003.html"></span></p>
+<div class="epigraph-container">
+<div class="epigraph">
+<div class="epigraph-content">
+<p>The true sign of intelligence is not knowledge but imagination.</p>
+</div>
+<div class="epigraph-attribution">
+<p>- Albert Einstein</p>
+</div>
+</div>
+</div>
+<p><span id="text00004.html"></span></p>
+<nav id="toc">
+<h1 class="chapter-title">Contents</h1>
+<ol>
+<li><a href="#text00005.html">1. Execution Context, Thread &amp;
+Callstack</a></li>
+<li><a href="#text00006.html">2. Closure - A Deep Dive</a></li>
+<li><a href="#text00007.html">3. Prototype , __proto__ &amp;
+Objects</a></li>
+<li><a href="#text00008.html">4. Asynchronous Execution</a></li>
+<li><a href="#text00009.html">5. Iterators, Generators, and
+Async-Await</a></li>
+<li><a href="#text00010.html">6. NodeJS, C++, Queues &amp;
+Servers</a></li>
+<li><a href="#text00011.html">7. Bonus</a></li>
+</ol>
+</nav>
+<p><span id="text00005.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">1</h1>
+<h1 class="chapter-title">Execution Context, Thread &amp; Callstack</h1>
+</div>
+<div class="chapter-content">
+<pre><code>We all know that we always had and have a love and hate relationship with JavaScript from the day you or I started learning it. But, sometimes philosophy around those weird JavaScript concepts can easily be understood if we just dig down the basics and fundamentals.</code></pre>
+<p><br />
+</p>
+<p>This is the most important and fundamental chapter of all. So if you
+get this, then almost everything will be easy to follow and understand.
+Welcome to the exciting journey of <strong>JavaScript beyond normal
+expectations.</strong></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p>—————————————————————————————————</p>
+<p><br />
+</p>
+<p><strong>Terminologies</strong></p>
+<ul>
+<li>Memory</li>
+<li>Processes and Threads</li>
+<li>Execution Context</li>
+<li>Scope</li>
+<li>The Thread of Execution</li>
+<li>Callstack</li>
+</ul>
+<pre><code>Memory:- A computer is just a machine that takes a set of instructions and executes it, but during that time computer needs to hold some information for the calculation or for any other task. So, we have storage devices like RAM and ROM (HDDs, SSDs) which hold information temporarily or permanently. So, memory is just a part where our information is held.</code></pre>
+<p><br />
+</p>
+<pre><code>Process:- A currently executing/running program (bundled up instructions) is called process. Each process is just a blueprint for what the computer needs to do in order to finish a given task.
+
+Thread:- A process is a set of instructions bundled up, but each instruction might need to be executed as well to achieve the original process to be finished and so the thread is just a simple lightweight running process (a small set of instruction/s in execution).</code></pre>
+<p><br />
+</p>
+<pre><code>Execution Context:- It&#39;s nothing but a currently running code inside memory(every running program needs memory) which could be normal function execution or normal JavaScript code like if-else, loop, or any other expression.
+
+Memory + Process == Execution Context</code></pre>
+<p><br />
+</p>
+<pre><code>Scope:- A Scope is an allocated memory to a specific or currently executing function or block of code. That is to say, variables(memory) is not available outside of it to functions or block of code.
+
+Scope == Memory Restriction/s for execution context/s </code></pre>
+<p><br />
+</p>
+<pre><code>The Thread of Execution:- A currently running(executing) function or block of code is a thread of execution. That is to say, it is a small running process inside our main process.</code></pre>
+<p><br />
+</p>
+<pre><code>Callstack:- It&#39;s a container in which you can add or remove code block/functions such that most recently added stuff in this container will get priority for the next thread of execution. That is to say Last In First Out (LIFO) pattern. </code></pre>
+<p><br />
+</p>
+<p>Before we move further let me give you a quick overview of how
+processes are managed at a high level.</p>
+<ol>
+<li>Initially, any program(set of instructions) is collected by the
+memory(usually in the RAM) and then the processor takes the initiative
+to complete that program.</li>
+<li>A processor then take the program and start executing it and during
+that process processor might need to do extra stuff to accomplish a
+given task i.e. processor might perform a program inside the program(Set
+of instruction might need other instructions as well) AKA thread/s also
+needs to be done as well.</li>
+<li>After finishing the program, the Operating System will take care of
+the cleanup and some other dependent task/s.</li>
+<li>Now, any program is called <strong>single-threaded</strong> when the
+given program can perform a <strong>set of instructions one by one, and
+no extra internal set of instructions is done(Running JavaScript program
+is a single-threaded process).</strong></li>
+</ol>
+<div class="scene-break">
+* * *
+</div>
+<p>After getting an idea about termonologies Let’s now further
+understand stuff with a little example</p>
+<p><br />
+</p>
+<p><img src="Image00000.jpg" alt="Image" /></p>
+<p><u>Example 1.1</u></p>
+<blockquote>
+<p><strong>- First thing if you don’t know then, JavaScript is a
+single-threaded and synchronous language which mean JavaScript
+engine/Interpreter can execute one line or block of code at one time.
+Which means you can’t do multiple things at the same time. Also, you go
+through line by line while executing code (synchronously).</strong></p>
+<p><br />
+</p>
+<p><strong>- when you execute JavaScript code on a browser or any other
+enviroment(nodejs, react-native etc) we run our code in something called
+global execution environment(global memory space for browser tab or
+global memory for node enviroment first).</strong></p>
+<p><br />
+</p>
+<p><strong>- every function we defined are actually first goes inside
+global memory space (ignore function defined inside another functions
+for now). When we put these function into execution, first they are put
+on callstack first and from that callstack functions are getting called
+where latest function are made available in thread of
+execution!</strong></p>
+<p><br />
+</p>
+<p><strong>- Before we start understanding the given code it’s important
+to create “mental model” for all the stuff we learned so
+far.</strong></p>
+</blockquote>
+<p><br />
+</p>
+<p><img src="Image00001.jpg" alt="Image" /></p>
+<p><u>Current JavaScript Mental Model</u></p>
+<p><br />
+</p>
+<ul>
+<li>In our mental model, we can see that every JavaScript program gets
+Global memory space (Global Scope). Every function and topmost declared
+variables are hoisted in the global scope.</li>
+<li><strong>Hoisting</strong> is <strong>JavaScript’s</strong> default
+behavior of moving all declarations to the top of the current scope (to
+the top of the current script or the current function) - W3SCHOOL (I
+don’t prefer w3school but sometimes it explains stuff easily😅).</li>
+<li>Each line of code or function definition is not called directly in
+JavaScript. But instead, it goes to callstack, and then based on
+callstack current priority function/s is put in the Thread of execution
+(Last In First Out). Why not understand this mental model via
+example🤩.</li>
+<li>Let’s start reading the below code and explore and keep the above
+mental model in mind.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00002.jpg" alt="Image" /></p>
+<p><u>Example 1.1</u></p>
+<ul>
+<li>In the first line as you can see we are declaring a variable called
+<strong>“outerGoal”</strong> and assigning a value of 0. That is to say,
+we are consuming small memory space inside global memory (scope) and
+giving the label called <strong>“outerGoal”</strong> to that
+memory.</li>
+<li>In the next line of code, we are simply logging that value to the
+console. That is to say, we are simply logging value at a label called
+<strong>“outerGoal”</strong> .</li>
+<li>One thing to note, I will not draw a global thread of execution
+diagram but it’s always when we start executing our javascript
+code.</li>
+<li>Let’s see our <strong>“mental model”</strong> again how it applies
+to the current situation.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00003.jpg" alt="Image" /></p>
+<p><u>Current JavaScript Mental Model</u></p>
+<p>let’s further understand the below code</p>
+<p><img src="Image00004.jpg" alt="Image" /></p>
+<p>Example 1.1</p>
+<ul>
+<li>As we can see, we are declaring function(a special type of object in
+js) and giving the label <strong>“addGoal”</strong> .</li>
+<li>Note that this function declaration has 1 parameter called
+<strong>count</strong> which means <strong>count</strong> is a label for
+future memory space address which will be going to consume by this
+function later.</li>
+<li>Inside function definition whatever we are doing is noting that much
+important right now (will see detail when we call it).</li>
+<li>After function definition, we are actually declaring variable
+“storedEvaluatedValue” in global scope which will be return or evaluated
+value from addGoal function call.</li>
+<li>In case if you didn’t notice then, we are not leaving global scope
+or global thread of execution here.</li>
+<li>It’s time to see our <strong>“mental model”</strong> again.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00005.jpg" alt="Image" /></p>
+<p><u>Current JavaScript Mental Model</u></p>
+<p>let’s continue our understanding of code</p>
+<ul>
+<li>Here is the important part comes, we are calling
+<strong>“addGoal()”</strong> by putting braces around it. As soon as we
+did that we create a brand new execution context (or local memory space
+for that function).</li>
+<li>Just to know that making the execution context doesn’t happen
+magically in JavaScript. Actually, when we call a function instead of
+putting that function directly into Execution Thread, we first put that
+function into call stack first.</li>
+<li>Remember, <strong>“stack”</strong> data structure means Last In
+First Out, which means if we put a function call on the call stack, as
+long as we don’t have extra function calls immediately afterward, we
+take the topmost function of the call stack &amp; put it into the
+execution thread.</li>
+</ul>
+<p>It’s time for our <strong>“mental model”</strong> again.</p>
+<p><img src="Image00006.jpg" alt="Image" /></p>
+<p><u>Current JavaScript Mental Model</u></p>
+<p><br />
+</p>
+<p>Before we move further, we need to understand the local scope as well
+and what is happening inside the local scope as well.</p>
+<p><br />
+</p>
+<p><img src="Image00007.jpg" alt="Image" /></p>
+<p><u>Mental Model of local function and its scope</u></p>
+<ul>
+<li>As you can see in function execution in execution thread, does
+create local memory &amp; we are manipulating local variable called
+“innerGoal” inside that call.</li>
+<li>But one thing to note, parameter “count” is also part of local
+memory, which means the parameter becomes argument only when we run
+function &amp; it occupies space in memory only when it is used.
+“Placeholder” or so-called “parameters” do not occupy space.</li>
+<li>After the function body about to finish execution, we are returning
+the <strong>“innerGoal”</strong> variable. That is to say, the value of
+it has the label <strong>“innerGoal”.</strong></li>
+<li>When we exit out of function execution, the JavaScript engine
+destroys the local function execution context. if a function returns a
+value then that value will become an evaluated value for that function
+otherwise it returns undefined by default.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00008.jpg" alt="Image" /></p>
+<p><u>Mental Model of local scope execution</u></p>
+<p><img src="Image00009.jpg" alt="Image" /></p>
+<p><u>Mental Model of the current execution</u></p>
+<p><img src="Image00010.jpg" alt="Image" /></p>
+<p><u>Final Mental Model after execution</u></p>
+<p><strong><u>Quick Notes:- How variables are stored</u></strong></p>
+<ul>
+<li>Always remember computers are made up of a lot of space (memory
+addresses).</li>
+<li>when we store/use a space, we are effectively using those memory
+addresses of the computer.</li>
+<li>Because humans are not good at remembering those memory addresses,
+we give a label (variable name) that points to that memory
+address/es.</li>
+</ul>
+<p><br />
+</p>
+<p><strong><u>TLDR;</u></strong></p>
+<ul>
+<li>The mental model for any programming language is really important
+and it plays an exceptional role in the understanding of core
+concepts.</li>
+<li>Keep this mental model for a further chapter in mind and you will
+enjoy learning.</li>
+</ul>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00006.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">2</h1>
+<h1 class="chapter-title">Closure - A Deep Dive</h1>
+</div>
+<div class="chapter-content">
+<pre><code>When it comes to the most widely used programming languages like JavaScript &amp; Python, we can&#39;t ignore its most used feature called &quot;Closure&quot; directly or indirectly. So, Let&#39;s understand how it works under the hood. Also, Before we start let&#39;s understand what really JavaScript functions are ?!</code></pre>
+<p><br />
+</p>
+<p><strong>JavaScript Functions</strong></p>
+<ul>
+<li>A JavaScript function is an <strong>“Object”!</strong></li>
+<li>An Object in JavaScript means it can have key-value pairs, nothing
+fancy more than that. (We will understand Objects in much detail in
+“Prototype Chapter”).</li>
+<li>Functions are a special type of Object, and one of the special
+features is to store blocks of code and invoke(run) that later when
+needed!</li>
+<li>Because the function is an object we can store key-value pairs to
+the function as well, it seems a little strange if you are coming from
+other programming languages. But it’s true!</li>
+</ul>
+<p><strong>JavaScript Functions Are First Class</strong></p>
+<ul>
+<li>you can <strong>pass a function as an argument</strong> to function
+for different kinds of purposes.</li>
+<li>we have a function that can be returned from another function or we
+can store an anonymous function in a variable as well (Store in
+memory)</li>
+<li>each function has its own <strong>local memory/local variable
+scope</strong> (explained in chapter 1).</li>
+</ul>
+<blockquote>
+<p><u>Having a feature of adding any key-value pair to function is a
+superpower and that superpower helps JavaScript enable an amazing
+feature called</u> <strong><u>closure.</u></strong> <u>Let’s see
+how!</u></p>
+<p><br />
+</p>
+<p><u>There are definitions for closure available on the internet but
+none of them actually helped me for understanding how the hell it
+actually works under the hood. after some research and experiment, I
+finally understood what actually it really means and how it works under
+the hood. let’s see how with example.</u></p>
+</blockquote>
+<p><img src="Image00011.jpg" alt="Image" /></p>
+<p><u>functions are objects</u></p>
+<ul>
+<li>As you can see from the above example we created a function with the
+name of <strong>calmMan</strong> and later using object literal syntax
+we added 2 properties to the function itself(Yes we can do that
+!!).</li>
+<li>These properties become part of our function object and remain
+attached to it always. Let’s see how they look like under the
+hoods!</li>
+</ul>
+<p><img src="Image00012.jpg" alt="Image" /></p>
+<p><u>function’s internal look</u></p>
+<ul>
+<li>As we can see from the image both properties belong to the function
+object and part of it. We can see some other properties (Key-Value
+pairs) were added by JavaScript itself as well for its internal use(we
+don’t need to worry about that, let JavaScript Engine handle it😬).</li>
+<li>Now, we have proof of work that functions are objects and can hold
+properties in themselves. Now, what if these functions use this
+key-value pair internally and make available those key-value pairs to
+us? and here are my friends the magic starts.</li>
+<li>By the way, if you have noted in the above image we already have 2
+of those internal properties (key-value pairs) made available by
+JavaScript(i.e. <strong><em>[[Scopes]]</em></strong> ). We will look
+deep into that but let’s take a formal definition of closure now and
+understand it.</li>
+</ul>
+<h2 id="text00006.html_heading-1">MDN</h2>
+<pre><code>A closure is a combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function&#39;s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.</code></pre>
+<p>It’s just not easy to grasp and the first time and I didn’t like the
+mdn definition and explanation also here (It’s the right definition
+though, it’s just not easy to grasp with buzzwords).</p>
+<p><br />
+</p>
+<h2 id="text00006.html_heading-2">W3SCHOOL</h2>
+<pre><code>JavaScript variables can belong to the local or global scope.
+Global variables can be made local (private) with closures.
+(try to remember our mental model, we will draw it out soon!)</code></pre>
+<p>I don’t prefer w3school as a reliable source😅, but this time I felt
+w3school is actually more precise, easy to grasp, and has a clear
+definition.</p>
+<p><br />
+</p>
+<p>Now it’s our turn to understand from visualization and for that, I am
+going to take a simple example.</p>
+<p><img src="Image00013.jpg" alt="Image" /></p>
+<p><u>Function definition</u></p>
+<p><img src="Image00014.jpg" alt="Image" /></p>
+<p><u>Function execution</u></p>
+<p>Our first Mental model for function definition goes here.</p>
+<p><img src="Image00015.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<ul>
+<li>As per the current mental model as you can see that, from global
+memory space to callstack and then from callstack to execution thread we
+have put the <strong>createCapitial</strong> function into
+execution.</li>
+<li>A function <strong>createCapital</strong> has its own local scope
+(environment) and inside that, we have <strong>getCapital</strong>
+function definition and stored.</li>
+<li>Now let’s see what happens when we finish executing
+<strong>createCapital</strong> and we have returned the
+<strong>getCapital.</strong></li>
+<li>Your best guess should be, the entire body and local scope of
+<strong>createCapital</strong> will be destroyed and the
+<strong>getCapital</strong> function will be stored in the variable
+called <strong>accessCapital.</strong> Let’s look at our mental model
+again.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00016.jpg" alt="Image" /></p>
+<p><u>Function createCapital in execution</u></p>
+<p><img src="Image00017.jpg" alt="Image" /></p>
+<p><u>Function getCapital in execution</u></p>
+<ul>
+<li>As you can see from both images, we have finally reached the point
+where we are going to put the <strong>getCapital</strong> function into
+execution(<strong>accessCapital</strong> variable is used which is
+referring to our original <strong>getCapital</strong> function
+definition).</li>
+<li>But wait, as per normal behavior we should expect that variable
+<strong>wealth</strong> should be <strong>undefined</strong> when we
+execute the <strong>getCapital</strong> and it should not have access to
+the local memory of the executed function(aka memory of
+<strong>createCapital</strong> )<strong>.</strong> But, life is not that
+simple man<strong>😅‼</strong></li>
+<li>Introducing a new friend called <strong>backpack</strong> to rescue
+operation.</li>
+</ul>
+<pre><code>A backpack is a simple memory store with strings attached to it(imagine as a real backpack🎒), and where these strings of the backpack will going to be attached is a question 🤔.</code></pre>
+<p>Let’s actually visualize what actually happened when the execution of
+our outer function createCapital finished!</p>
+<p><img src="Image00018.jpg" alt="Image" /></p>
+<p><u>Attached backpack to the inner function</u></p>
+<p><img src="Image00019.jpg" alt="Image" /></p>
+<p>As you can see our backpack is nothing but a variable/s of an outer
+function’s scope, and when JavaScirpt sees this kind of outer scope
+combine with inner scope(outer function returning inner function),
+instead of wiping the memory it keeps those variables as internal
+properties of inner function!</p>
+<p><br />
+</p>
+<p>Also, if we want to see those internal properties then we can. Let’s
+see in the below image where those are!</p>
+<p><br />
+</p>
+<p><img src="Image00020.jpg" alt="Image" /></p>
+<p><u>Hidden backpack</u></p>
+<ul>
+<li>As we can see above, the local scope (local memory) of the outer
+function (createCapitial) gets attached to the inner function’s internal
+key-value pair! ( <strong><em>[[Scope]]</em></strong> ).</li>
+<li><strong><em>[[Scope]]</em></strong> key has 3 array elements and the
+first element is where our backpack memory is stored, that is to say,
+it’s our <strong>Closure.</strong></li>
+<li>Also, the second element of that function is actually stat that, for
+which function that <strong>Closure</strong> is!</li>
+<li>The last element is actually our global scope which is actually
+available to every function (It’s like global closure for each function
+object)</li>
+<li>There you have it, my friends. this is closure with a mental
+model😎!</li>
+<li>We can take one example on it to understand it better. Because even
+if don’t return an inner function from the outer function, we could have
+closure. Let’s see with an example.</li>
+</ul>
+<p><img src="Image00021.jpg" alt="Image" /></p>
+<ul>
+<li>This example is almost similar to the previous one except here we
+are returning an object instead of a function. This object however has a
+function in it. Let’s start visualizing as well.</li>
+</ul>
+<p><img src="Image00022.jpg" alt="Image" /></p>
+<p><img src="Image00023.jpg" alt="Image" /></p>
+<ul>
+<li>Arguments in function are also part of local memory for function
+execution.</li>
+</ul>
+<p><img src="Image00024.jpg" alt="Image" /></p>
+<ul>
+<li>The function inside the object will get local memory of the outer
+function when the execution of the outer function gets destroyed. see
+below😁.</li>
+</ul>
+<p><img src="Image00025.jpg" alt="Image" /></p>
+<p><img src="Image00026.jpg" alt="Image" /></p>
+<p><img src="Image00027.jpg" alt="Image" /></p>
+<ul>
+<li>Even without outer function, we are now able to access variables of
+it through closure as shown. Moreover, note that both <strong>local
+variables and arguments</strong> are made available through
+closure.</li>
+</ul>
+<p><img src="Image00028.jpg" alt="Image" /></p>
+<ul>
+<li>finally, we completed our execution and the console gave the
+output.</li>
+</ul>
+<p><img src="Image00029.jpg" alt="Image" /></p>
+<p>That is all my friends for closure, sometimes they call our
+closure/backpack <strong>‘Lexical Scope’</strong> as well. let’s just a
+have quick note before we move on to another chapter with a new
+visualization journey.</p>
+<p><br />
+</p>
+<pre><code>Whenever we have an object with function property in it or function inside a function, all surrounding variable is made available to object&#39;s function property or inner function even after execution of parent(outer) function get finished through closure. we understood both by example. we will later in the chapter use this concept as well.</code></pre>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00007.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">3</h1>
+<h1 class="chapter-title">Prototype , __proto__ &amp; Objects</h1>
+</div>
+<div class="chapter-content">
+<pre><code>This chapter is all about shifting your mind if you are coming from other programming languages or have traditional OOPs concepts in your mind. JavaScript and its prototype nature is a completely different concept. Moreover, JavaScript&#39;s lot of features try to mimic syntax from other programming languages, and because of that a lot of confusion starts. In this chapter, we will see an in-depth look at how things work under the hood with visuals.</code></pre>
+<p>Let’s start with very simple stuff and that is
+<strong>Objects.</strong></p>
+<h2 id="text00007.html_heading-1">Objects</h2>
+<ul>
+<li>In JavaScript, objects are simply key-value pairs(you can think of a
+collection of variables are put together).</li>
+<li>However, just because key-values are put together doesn’t mean they
+are stored together in memory. Under the hood, all variables are stored
+randomly in memory, but references for those variables know how to
+target value exactly based on a key is accessed.</li>
+<li>Take a look at how the below object is stored in computer
+memory.</li>
+</ul>
+<p><img src="Image00030.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<p><img src="Image00031.jpg" alt="Image" /></p>
+<p>The main reason to show the above diagram is to show that logically
+put together values is not how exactly it is stored in memory.</p>
+<h2 id="text00007.html_heading-2">Objects and Primitive values</h2>
+<ul>
+<li>In JavaScript everything except <strong>primitive values</strong>
+(strings, numbers, boolean, etc) are <strong>objects.</strong></li>
+<li><strong>Functions are objects as well.</strong></li>
+<li><strong>Arrays are objects</strong></li>
+<li><strong>Math, Date, and other helper functions are also
+objects.</strong></li>
+<li>Out of all this, functions are most important. Functions are
+objects, but it’s a special type of object.</li>
+<li>Functions have two parts available to use. The first part is the
+function body where we can store a block of code and later invoke it
+whenever we need it. The second part is the object part where we can
+store key-value pairs.</li>
+</ul>
+<p><img src="Image00032.jpg" alt="Image" /></p>
+<ul>
+<li>We have already seen proof of work in chapter 2 where we added
+properties to the function object(recheck if have forgotten😅). Over
+here, we are going to see further what we can do or available to
+us.</li>
+<li>Interestingly, every function object has a
+<strong>prototype</strong> property available by default and every
+object has <strong>__proto__</strong> property available as well.</li>
+<li>so, every function will have a <strong>prototype and
+__proto__</strong> property and every object will have
+<strong>__proto__</strong> <strong><em>(no prototype property on a
+normal object, only available to function object only)</em></strong>
+available to us.</li>
+</ul>
+<p><img src="Image00033.jpg" alt="Image" /></p>
+<ul>
+<li>In this chapter I will not draw the entire javascript environment as
+it’s not needed here, we will purely focus on how objects and function
+with their linking works. Let’s start with a simple example below(don’t
+try to understand right now, will do that).</li>
+</ul>
+<p><img src="Image00034.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see we have created the <strong>ArtistCreator</strong>
+function, which helps us to create objects. you can think of it’s a
+common function to create artist objects. we soon visualize it but
+before we do that let’s understand what <strong>Object.create()</strong>
+does for us.</li>
+</ul>
+<p><img src="Image00035.jpg" alt="Image" /></p>
+<ul>
+<li>We have a lot of global objects(key-value pairs) available to us in
+the javascript. <strong>Object</strong> (notice capital ‘O’) is one of
+them. which has a lot of key-value pairs and it is made available by
+javascript.</li>
+<li>The <strong>“create”</strong> is a method of <strong>Object</strong>
+is available to us and it has fundamental below task.</li>
+</ul>
+<ol>
+<li>Create an empty object.</li>
+<li>And because every object has __proto__ property available, after the
+creation of an empty object whatever we pass as an argument to the
+<strong>“create”</strong> method, will be available to this __proto__
+directly to the newly created object. let’s see how.</li>
+</ol>
+<p><img src="Image00036.jpg" alt="Image" /></p>
+<p><img src="Image00037.jpg" alt="Image" /></p>
+<ul>
+<li>we are executing the ArtistCreator function and it’s executing the
+Object.create() method with our globally stored commonFunctionality
+object.</li>
+</ul>
+<p><img src="Image00038.jpg" alt="Image" /></p>
+<ul>
+<li>Object.create() not just created a new empty object but also added a
+__proto__ reference to our globally stored
+<strong>commonFunctionalities</strong> object<strong>.</strong> so,
+whatever we passed to the create()’s first argument will available to
+__proto__ property of the newly created object. Let’s finish our
+visualization.</li>
+</ul>
+<p><img src="Image00039.jpg" alt="Image" /></p>
+<p><img src="Image00040.jpg" alt="Image" /></p>
+<p><img src="Image00041.jpg" alt="Image" /></p>
+<p><img src="Image00042.jpg" alt="Image" /></p>
+<p><img src="Image00043.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see, we can create a new object using a function, and not
+only that we can reuse this function again and again as well.</li>
+</ul>
+<p><img src="Image00044.jpg" alt="Image" /></p>
+<ul>
+<li>If we run the same function again, as shown above, we will still
+able to reuse its functionality and also we can utilize already declared
+<strong>commonFunctionalities.</strong> See the below diagram we did the
+same for the <strong>artist2</strong> object as well(go through the
+mental model on your own just like we have shown above).</li>
+</ul>
+<p><img src="Image00045.jpg" alt="Image" /></p>
+<ul>
+<li>Alright, we have created functionality that allows us to create
+objects whenever we need and reuse some of the existing functionalities
+as well. Now, what if javascript has this kind of feature available to
+us😋.</li>
+<li>Gladly, we do have, and that what we are going to do next. see below
+example and will understand shortly.</li>
+</ul>
+<p><img src="Image00046.jpg" alt="Image" /></p>
+<ul>
+<li>In case you have forgotten, the function can have a prototype and
+__proto__ properties available by default. same way
+<strong>ArtistCreator</strong> will also have these properties available
+to them. Let me show that diagram again. By the way, a
+<strong>prototype</strong> is an object and we can add any key-value
+pairs to it.</li>
+</ul>
+<p><img src="Image00047.jpg" alt="Image" /></p>
+<ul>
+<li>Now what to add to that prototype object is up to us. In our
+example, we added two functions <strong>isHuman</strong> and
+<strong>isCuriuos.</strong></li>
+</ul>
+<p><img src="Image00048.jpg" alt="Image" /></p>
+<ul>
+<li>Note, our example now has a <strong>new</strong> keyword as well.
+which does a lot of automation work behind the scene. let’s see how its
+diagram goes.</li>
+</ul>
+<p><img src="Image00049.jpg" alt="Image" /></p>
+<ul>
+<li>let’s execute the below line, note that the <strong>new</strong>
+keyword in front of the function call.</li>
+</ul>
+<p><img src="Image00050.jpg" alt="Image" /></p>
+<p>The <strong>new</strong> keyword does 2 major things.</p>
+<ol>
+<li>It will create a new <strong>empty object</strong> and a newly
+created object will get <strong>this</strong> reference. That means
+inside function execution <strong>this</strong> will point to newly
+created object by <strong>new</strong> keyword.</li>
+<li>Moreover, whatever <strong>prototype</strong> object of
+function(<strong>ArtistCreator</strong> function in our example) has
+that will refer to __proto__ of newly created object(let’s visualize of
+course😅).</li>
+</ol>
+<p><img src="Image00051.jpg" alt="Image" /></p>
+<ul>
+<li>Every function object has 2 parts as we know, one its function body,
+and the second is the object part.</li>
+<li>In the below diagram as you can see in
+<strong>ArtistCreator</strong> ’s object part has a prototype and
+__proto__ object.</li>
+<li>In our code, we added two functions to the prototype object which
+are <strong>isHuman</strong> and <strong>isCurious</strong> .</li>
+<li>Every object will always have __proto__ property available by
+default. <strong>That is why the prototype object also has __proto__
+property as well</strong> (where this property will point is unknown,
+but let’s just focus first on our code execution).</li>
+</ul>
+<p><img src="Image00052.jpg" alt="Image" /></p>
+<ul>
+<li>The <strong>prototype</strong> object of function is referring to
+the __proto__ property of a newly created object.</li>
+<li>Now, we know the <strong>new</strong> keyword helps us to set the
+reference of the prototype object to __proto__ property of the newly
+created object. see below.</li>
+<li>One more thing, we have cleared function execution but the object
+part of the function remains in global memory. Here <strong>we are not
+copying objects</strong> , but we are just setting the references.</li>
+</ul>
+<p><img src="Image00053.jpg" alt="Image" /></p>
+<p><img src="Image00054.jpg" alt="Image" /></p>
+<ul>
+<li>Never forget, function execution has been done, but a memory for
+that function will not wipe out from memory. That is why ArtistCreator
+function with prototype object will remain in memory.</li>
+</ul>
+<p><img src="Image00055.jpg" alt="Image" /></p>
+<ul>
+<li>There you have it, we are now able to create objects from function,
+and some common functionalities also available by prototype object as
+well.</li>
+<li>Now, the same thing happens to <strong>artist2</strong> as well, so
+I am not going to draw that part(you can visualize your own now😎).</li>
+</ul>
+<p><img src="Image00056.jpg" alt="Image" /></p>
+<p><img src="Image00057.jpg" alt="Image" /></p>
+<ul>
+<li>We are creating objects using the function, that is why we call it
+<strong>“function constructor”.</strong> so<strong>,</strong> here
+ArtistCreator is the constructor function.</li>
+<li>Before we close the above example, let’s just output in the browser
+console.</li>
+</ul>
+<p><img src="Image00058.jpg" alt="Image" /></p>
+<ul>
+<li>So far so good, but ES6+ has new syntactic sugar available to us
+which does the same thing as shown in the above code. It’s just
+<strong>trying to mimic and simplify the syntax.</strong> Under the
+hood, working remains the same. Let’s just see the equivalent code for
+the above example.</li>
+</ul>
+<p><img src="Image00059.jpg" alt="Image" /></p>
+<ul>
+<li>The <strong>class</strong> keyword is introduced in ES6+ to mimic
+our previous work.</li>
+<li>Not too much fancy, simply our prototype methods are defined
+directly inside class and constructor works as a function body.</li>
+</ul>
+<blockquote>
+<p>We have learned how to create dynamic and custom objects from the
+function constructor. Now, what about extending our functionalities and
+using the existing function constructor to create another function
+constructor such that it helps us inherit others’ features as well.
+let’s see with example<em>😁</em> .Initially we will take
+<strong>non-class</strong> version exmple and later we will create
+equivaent class version also.</p>
+</blockquote>
+<p><img src="Image00060.jpg" alt="Image" /></p>
+<ul>
+<li>Don’t worry if you can’t understand the above code, we will go piece
+by piece how it works. The only thing to note in the above example is
+that we can inherit <strong>ArtistCreator’s</strong> prototype functions
+into our newly created <strong>Entrepreneur’s</strong> function
+constructor. let’s start visualizing😋.</li>
+</ul>
+<p><img src="Image00061.jpg" alt="Image" /></p>
+<ul>
+<li>We are first going to visualize the above line. This will be similar
+to the previous example we just show.</li>
+</ul>
+<p><img src="Image00062.jpg" alt="Image" /></p>
+<p><img src="Image00063.jpg" alt="Image" /></p>
+<p><img src="Image00064.jpg" alt="Image" /></p>
+<p><img src="Image00065.jpg" alt="Image" /></p>
+<p><img src="Image00066.jpg" alt="Image" /></p>
+<p><img src="Image00067.jpg" alt="Image" /></p>
+<ul>
+<li>So far it was the same as the previous example’s visualization. now,
+let’s see what happens when we run the below code.</li>
+<li>Also, I am here skipping the execution of line no. 298 to 303
+because I don’t want to confuse you with upcoming diagrams. we are
+actually going to see a diagram of line no. 298 to 303 after when
+finishing execution on the below-highlighted line.</li>
+</ul>
+<p><img src="Image00068.jpg" alt="Image" /></p>
+<ul>
+<li>Don’t forget ArtistCreator’s object part will remain in memory even
+after execution is finished and when we call ArtistCreator again then we
+will use reference stored from memory instead of creating a copy of
+it.</li>
+</ul>
+<p><img src="Image00069.jpg" alt="Image" /></p>
+<p><img src="Image00070.jpg" alt="Image" /></p>
+<ul>
+<li>We are calling a function with the <strong>“call”</strong> keyword
+and passing <strong>this</strong> is to as the first argument.</li>
+</ul>
+<pre><code>The call() method calls a function with a given this value and arguments provided individually.</code></pre>
+<ul>
+<li>Because we have used a <strong>new</strong> keyword in front of the
+<strong>Entrepreneur</strong> function, we are going to create a new
+empty object and <strong>this</strong> keyword will point to
+that<strong>.</strong> However, Entrepreneur internally calling
+ArtistCreator with <strong>call()</strong> method and passing the newly
+created object(this keyword currently pointing to the newly created
+empty object!).</li>
+</ul>
+<p><img src="Image00071.jpg" alt="Image" /></p>
+<ul>
+<li>Here we are just adding properties to a newly created object.</li>
+</ul>
+<p><img src="Image00072.jpg" alt="Image" /></p>
+<ul>
+<li>The arguments are actually made available to the
+<strong>ArtistCreator</strong> function via reference, where the
+<strong>Entrepreneur</strong> function is providing those values😅. Just
+follow the diagram and you will get it.</li>
+</ul>
+<p><img src="Image00073.jpg" alt="Image" /></p>
+<ul>
+<li>By default you know, the newly created object(<strong>this</strong>
+) will have a reference of the prototype object where the object is
+born.</li>
+<li>In our case, we used ArtistCreator as a mother for the newly created
+object. so, <strong>the newly created object’s __proto__ will point to
+the prototype object of ArtistCreator</strong> .</li>
+</ul>
+<p><img src="Image00074.jpg" alt="Image" /></p>
+<ul>
+<li>After finishing the execution of the <strong>ArtistCreator</strong>
+function, we will continue our execution with our
+<strong>Entrepruer</strong> function execution and here we are adding
+one more property <strong>“communicationSkill”</strong> to the newly
+created(this) object.</li>
+<li>I am keeping the object part of functions here because it’ll help us
+to understand better.</li>
+</ul>
+<p><img src="Image00075.jpg" alt="Image" /></p>
+<ul>
+<li>Also, as you can see we are now done with our Entrepruener function
+execution as well.</li>
+</ul>
+<p><img src="Image00076.jpg" alt="Image" /></p>
+<ul>
+<li>Now, the important part has arrived. remember I told you to ignore
+line 298 to 303. let’s see what happens to them behind the scenes when
+we execute it(actually execution already is finished but I am showing
+right now because it will be easy to visualize now).</li>
+</ul>
+<p><img src="Image00077.jpg" alt="Image" /></p>
+<p><img src="Image00078.jpg" alt="Image" /></p>
+<ul>
+<li>As we know, <strong>Object.create() will create an empty
+object</strong> , and __proto__ of just created empty object will point
+to whatever we pass to the argument of <strong>create() method</strong>
+.</li>
+</ul>
+<p><img src="Image00079.jpg" alt="Image" /></p>
+<ul>
+<li>Because we are reassigning <strong>Entrepreneur.prototype,</strong>
+the old prototype object of the Entrepreneur will be destroyed from
+memory. whatever we got back from Object.create() method call will
+assign to Entrepreneur.prototype😃.</li>
+</ul>
+<p><img src="Image00080.jpg" alt="Image" /></p>
+<ul>
+<li>We are adding one property to
+<strong>Entrepreneur.prototype</strong> object as well which is the
+<strong>hasPatience</strong> function.</li>
+<li>we are passing <strong>ArtistCreator.prototype</strong> object to
+<strong>Object.create()</strong> method. So, the prototype object of
+ArtistCreator will point to __proto__ of the newly created empty
+object.</li>
+</ul>
+<p><img src="Image00081.jpg" alt="Image" /></p>
+<p><img src="Image00082.jpg" alt="Image" /></p>
+<ul>
+<li>As we know, prototype objects of functions remain in memory, that’s
+the reason why it’s shown in the diagram.</li>
+<li>see how __proto__ and it’s linking works😎.</li>
+</ul>
+<p><img src="Image00083.jpg" alt="Image" /></p>
+<p><img src="Image00084.jpg" alt="Image" /></p>
+<pre><code>Woooh, we finally completed our visualization(if you find it a little confusing then just go through it again😅, the first time it always seems a little too much to digest.)</code></pre>
+<ul>
+<li>Let’s just see the output in our console. compare our above diagram
+with the below output you will get it😅.</li>
+</ul>
+<p><img src="Image00085.jpg" alt="Image" /></p>
+<h2 id="text00007.html_heading-3">What we have achieved then🤔.</h2>
+<blockquote>
+<p>We have learned one big important stuff from the previous example. We
+are literally able to create dynamic objects and reuse the existing
+functionality of other objects and function(don’t call this inheritance
+<em>😅</em> , here we are composing stuff not inheriting).</p>
+</blockquote>
+<ul>
+<li>Now, how about if ES6+ provides syntactic sugar of above🤨. we
+actually do and have simpler syntax to achieve the same thing as
+above.</li>
+<li>Here, working is slightly different to achieve the same thing. let’s
+see.</li>
+</ul>
+<p><img src="Image00086.jpg" alt="Image" /></p>
+<p><img src="Image00087.jpg" alt="Image" /></p>
+<ul>
+<li>Let’s start with our simple class execution for the below line and
+visualize it.</li>
+</ul>
+<p><img src="Image00088.jpg" alt="Image" /></p>
+<p><img src="Image00089.jpg" alt="Image" /></p>
+<ul>
+<li>In <strong>class,</strong> we should remember that the
+<strong>constructor</strong> method is available on its prototype
+object. so whenever we try to execute class with a <strong>new</strong>
+keyword this constructor method from the prototype object is used (class
+is syntactic sugar for function and function always has prototype
+object).</li>
+<li>See diagram we are executing constructor of ArtistCreator
+class.</li>
+</ul>
+<p><img src="Image00090.jpg" alt="Image" /></p>
+<p>Here, <strong>this</strong> keyword will point to the newly created
+object by the <strong>new</strong> keyword.</p>
+<p><img src="Image00091.jpg" alt="Image" /></p>
+<p>As per the below diagram, we find that using the
+<strong>class</strong> we are adding a function body for creating a new
+object and we are calling it constructor and putting it on the class’s
+prototype object.</p>
+<p><img src="Image00092.jpg" alt="Image" /></p>
+<p>I think execution for ArtistCreator class was easy to grasp. now
+let’s see what happens when we execute the below line🤨.</p>
+<p><img src="Image00093.jpg" alt="Image" /></p>
+<p><img src="Image00094.jpg" alt="Image" /></p>
+<p>Note here, we have 2 major things.</p>
+<ol>
+<li><strong>extends</strong> keyword</li>
+<li><strong>super</strong> keyword inside the constructor.</li>
+</ol>
+<h2 id="text00007.html_heading-4">extends</h2>
+<ul>
+<li>the <strong>extends</strong> keyword behind the scene, set the
+reference of __proto__ of the current class (here in our case
+<strong>Entrepreneur</strong> ) to the parent class’s constructor(here
+in our case <strong>ArtistCreator.prototype.constructor</strong> )</li>
+<li>As per the diagram, we can see <strong>Entrepreneur.__proto__ =
+ArtistCreator.prototype.constructor.</strong></li>
+</ul>
+<h2 id="text00007.html_heading-5">super</h2>
+<ul>
+<li>The super keyword sends a command to call the method available on
+<strong>Entrepreneur.__proto__.</strong> Here it’s pointing to the
+parent class’s(<strong>ArtistCreator.prototype.constructor</strong> )
+constructor.</li>
+<li>Also, <strong>this</strong> keyword inside the super() call will
+create an empty object as well. Let’s continue our visualization.</li>
+</ul>
+<p><img src="Image00095.jpg" alt="Image" /></p>
+<p><img src="Image00096.jpg" alt="Image" /></p>
+<p><img src="Image00097.jpg" alt="Image" /></p>
+<p><img src="Image00098.jpg" alt="Image" /></p>
+<ul>
+<li>After finish executing the super() call, we are now back in call of
+the constructor of the current class(Entrepreneur)</li>
+<li>In Entrepreneur’s prototype object, we have reference to its own
+constructor which we are going to execute next.</li>
+</ul>
+<p><img src="Image00099.jpg" alt="Image" /></p>
+<ul>
+<li>Inside the body of an Entrepreneur’s constructor, we are adding one
+more property to the newly created object.</li>
+</ul>
+<p><img src="Image00100.jpg" alt="Image" /></p>
+<p><img src="Image00101.jpg" alt="Image" /></p>
+<p>Now, the last thing is the newly created object’s __proto__ will have
+reference to <strong>Entrepreneur.prototype</strong> object. see below
+diagram.</p>
+<p><img src="Image00102.jpg" alt="Image" /></p>
+<p>So, long story short. here is what happened by calling
+<strong>Entrepreneur</strong> class with <strong>new</strong> keyword
+step by step.</p>
+<ol>
+<li>An empty object created from the super() call and
+<strong>this</strong> keyword will point to our newly created
+object.</li>
+<li>All the properties were added from the super() call(see
+digram/code).</li>
+<li>The newly created object’s <strong>__proto__</strong> is pointing to
+the parent’s prototype object(here
+<strong>ArtistCreator.prototype</strong> )</li>
+<li>After re-entering the constructor of Entrepreneur, we added one more
+property to the newly created object.</li>
+<li>Now, because we are inside Entrepreneur class, we actually updated
+__proto__ of newly created object to the Entrepreneur.prototype
+object.</li>
+<li>But here we lose the functionalities of parent’s class functions.
+So, the <strong>extends</strong> keyword helped us to set
+<strong>__proto__</strong> property of the newly created object’s
+<strong>__proto__</strong> to the ArtistCreator.prototype object.
+<u>(</u> <em>think of it like</em>
+<strong><em>this.prototype.__proto__</em></strong>
+<strong><em>=</em></strong>
+<strong><em>ArtistCreator.prototype</em></strong> <u>)</u></li>
+<li>And last we finally returned our object to global memory and stored
+it in a variable called <strong>entrepreneur1</strong> .</li>
+<li>If you still confused then please see the diagrams slowly and read
+the above 7 steps again😃.</li>
+</ol>
+<p><img src="Image00103.jpg" alt="Image" /></p>
+<ul>
+<li>After all execution, you can see our final diagram😎.</li>
+</ul>
+<p><img src="Image00104.jpg" alt="Image" /></p>
+<ul>
+<li>Let’s not forget to see the output in our console as well. I hope I
+don’t have to explain it😅.</li>
+<li>We call it <strong>prototype chaining</strong> because we are
+literally extending __proto__ with prototype properties of others(mostly
+prototype object of function constructor or class).</li>
+</ul>
+<p><img src="Image00105.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<pre><code>That was freaking too much under the hood stuff I know, but this is all you need to know. </code></pre>
+<p>Before we close this chapter we will see how JavaScript itself uses
+the above mechanism.</p>
+<p><img src="Image00106.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see, <strong>String</strong> is a function constructor and
+it has a prototype and __proto__ object available to us. The prototype
+object itself has __proto__ property.</li>
+<li>Every string that we define in JavaScript is actually made from this
+String constructor. That is the reason why you can access all string
+methods of it via __proto__ reference which points to this prototype
+object(String.prototype).</li>
+</ul>
+<p><img src="Image00107.jpg" alt="Image" /></p>
+<ul>
+<li>Every JavaScript object literally borns from an
+<strong>Object(</strong> notice capital ‘O’<strong>). This is the end of
+our chaining(will see soon).</strong></li>
+<li>The <strong>Object</strong> itself has a prototype and __proto__
+property available to it.</li>
+<li>The prototype object has methods like hasOwnProperty(), toString()
+available which you might have used in your day to day code.</li>
+<li>Let’s see how these <strong>String</strong> and
+<strong>Object</strong> has a connection with one another.</li>
+</ul>
+<p><img src="Image00108.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see, <strong>String’s</strong> __proto__ point to our
+global <strong>Object’s</strong> prototype. One more thing our global
+<strong>Object’s</strong> __proto__ object has call(), bind(), apply()
+and other function but __proto__ of <strong>Object’s</strong> __proto__
+is <strong>this.prototype.</strong> And the last <strong>Object is also
+a function constructor so the prototype object is available to
+it.</strong> Here, __proto__ of the prototype is <strong>null.</strong>
+The main reason is <strong>null</strong> because here our __proto__
+chain ends😎.</li>
+<li>Let’s go through other similar objects as well.</li>
+</ul>
+<p><img src="Image00109.jpg" alt="Image" /></p>
+<p><img src="Image00110.jpg" alt="Image" /></p>
+<p><img src="Image00111.jpg" alt="Image" /></p>
+<p><strong>The Function</strong> is a special type of constructor. it’s
+a prototype and __proto__ both points to Object.__proto__. See the below
+diagram😁.</p>
+<p><img src="Image00112.jpg" alt="Image" /></p>
+<ul>
+<li>Finally combined all diagram’s native constructors. (there are a lot
+more than these constructors but no need to show them in the below image
+as we understood the nuance of it).</li>
+</ul>
+<p><img src="Image00113.jpg" alt="Image" /></p>
+<pre><code>There you have it, my friends, the most complete guide to __proto__, prototype, and object linking😁. Enjoy the further journey with the next chapters.</code></pre>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00008.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">4</h1>
+<h1 class="chapter-title">Asynchronous Execution</h1>
+</div>
+<div class="chapter-content">
+<pre><code>JavaScript (without environment) by default is single-threaded (one task at a time) &amp; synchronous (Line by line &amp; top to bottom execution). If you think this is pretty bad because we can&#39;t do multiple tasks at a time and we are blocking our execution until the current line finishes its execution. So, JavaScript needs a way to tackle this. Let&#39;s see how.</code></pre>
+<h2 id="text00008.html_heading-1">JavaScript alone is not enough!</h2>
+<ul>
+<li>When you play cricket/football, a single most powerful player is not
+enough to win the entire match. you need to play as a team and each
+player’s contribution matters.</li>
+<li>Same way JavaScript alone is not enough, we need extra players or
+rather a team.</li>
+<li>That is where the extra “environment” comes and helps
+JavaScript.</li>
+<li>There is 2 famous JavaScript environment we use a lot.</li>
+</ul>
+<p>1) Browser</p>
+<p>2) NodeJS</p>
+<ul>
+<li>In this chapter I will explain only the browser environment, we will
+understand the nodejs environment in a later chapter.</li>
+<li>We have seen our “mental model” in chapter 1, but I didn’t tell you
+that it was incomplete because I didn’t want you to confuse there. It’s
+time to show the big “mental model” with the environment
+surrounding.</li>
+<li>Brower environment is so big which include HTML/CSS parsers,
+console, network monitoring, storages(local, Indexeddb, web SQL, etc),
+performance tool, etc. we only going to focus on how asynchronous part
+handle through something called “Queues” &amp; “Event Loop”.</li>
+</ul>
+<h2 id="text00008.html_heading-2">JavaScript is synchronous! (Don’t
+Forget)</h2>
+<ul>
+<li>Timing and resource utilization are always important in every single
+app or the real world.</li>
+<li>JavaScript is synchronous and it’s so important that a lot of people
+forget that JavaScript is just a scripting language that is meant for
+just making webpage dynamic in its early days.</li>
+<li>Ultimately JavaScript never builds for servers or complex rendering
+that we do today.</li>
+<li>But some people wanted to make javascript more flexible and powerful
+without breaking the origin of the language mindset.</li>
+<li>In 2004, Google released Gmap and it was built with fully JavaScript
+on the browser and stunned the world what potential JavaScript language
+has.</li>
+<li>Without doing history talk more, let’s come to the actual
+implementation of an asynchronous environment.</li>
+<li>You will see the new <strong>Queues</strong> part will be drawn,
+that is where our journey of asynchronous starts😁.</li>
+<li>Remember, <strong>‘Queues’</strong> are implemented by the browser
+so sometimes you see different output/results than the actual desired
+one from different browsers, but we will discuss what is right and what
+the desired approach should be. let’s have a sneak peek at our new
+mental modal!</li>
+<li>Don’t try to understand deeply, we will go through it in details
+soon.</li>
+</ul>
+<p><img src="Image00114.jpg" alt="Image" /></p>
+<p><u>Current Extended Mental Model</u></p>
+<h2 id="text00008.html_heading-3">Callbacks: functions that are called
+back!</h2>
+<ul>
+<li>Before we move further it’s important to talk about callback
+functions a little bit.</li>
+<li>Callbacks are simple functions that are invoked whenever they are
+called back(AKA whenever a particular task has been finished after
+that).</li>
+<li>There are 2 types of callbacks.</li>
+</ul>
+<p>1) Sync Callback/s</p>
+<p>2) Async Callback/s</p>
+<p><br />
+</p>
+<h3 id="text00008.html_heading-4">1) Sync Callbacks</h3>
+<ul>
+<li>Sync callbacks are called on iterators which is easy and quick to
+execute (fast operations)</li>
+<li>An example of a sync callback is given below.</li>
+</ul>
+<p><img src="Image00115.jpg" alt="Image" /></p>
+<p><u>Sync callback</u></p>
+<h3 id="text00008.html_heading-5">2) Async Callbacks</h3>
+<ul>
+<li>Async callbacks are time-consuming tasks or error pruning
+functions(might finish a task or won’t finish it at all kind of).</li>
+<li>An example of async callbacks is given below!</li>
+<li>Don’t try to understand deeply, just an example😅. will understand
+shortly.</li>
+</ul>
+<p><img src="Image00116.jpg" alt="Image" /></p>
+<p><u>Async callback</u></p>
+<ul>
+<li>We have extended our mental model of course, but one thing to note
+that our extended mental model is not just JavaScript. It’s JavaScript +
+browser APIs(Those queues’ function are part of the browser environment,
+aka setTimeout,setInterval, etc ).</li>
+<li>But there is one twist here, promises are more complicated more than
+that, they are part of javascript and browser both. will see that in the
+mental model.</li>
+<li>Currently, let’s see a simpler version mental model with
+queues.</li>
+</ul>
+<p><img src="Image00117.jpg" alt="Image" /></p>
+<p><u>Mental Model With Queues</u></p>
+<pre><code>Queue: It&#39;s a simple data structure where the first in first out rule is followed(aka, whoever comes first will go first). Just like a movie ticket purchase line.</code></pre>
+<h3 id="text00008.html_heading-6">Task Queue</h3>
+<ul>
+<li>first of all weird thing is, task queue is actually not a queue, it
+is a <strong>set</strong> (in Cpp world it’s struct).</li>
+<li>Tasks are added in task queue are picked and removed it, not like a
+queue that it’s dequeued. To keep it simple let’s treat it as a normal
+queue(most javascript developers do that and will do the same)😁.</li>
+<li><strong>Macro Task</strong> , is a term used sometimes for task
+queue.</li>
+</ul>
+<h3 id="text00008.html_heading-7">Job Queue</h3>
+<ul>
+<li>The job queue is an actual queue where tasks are queued and
+dequeued. it’s a real queue.</li>
+<li><strong>Micro Task</strong> , is a term used sometimes for job queue
+and but it’s called Job queue in ES6+ specifications.</li>
+</ul>
+<p><br />
+</p>
+<h2 id="text00008.html_heading-8">Time to understand stuff with an
+example!</h2>
+<p><img src="Image00118.jpg" alt="Image" /></p>
+<ul>
+<li>There is a sleep function which I simulated that block the function
+for given seconds. Let’s see our mental model of it, how it’s going to
+be executed!</li>
+<li><strong>setTimeout is a browser feature and it’s not a part of
+regular javascript. Waiting for the given time period and then giving
+the callback function back to the task queue is done by the
+browser.</strong></li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00119.jpg" alt="Image" /></p>
+<ul>
+<li>Now let’s see what will happen when we finished executing the sleep
+function and try to execute it further.</li>
+</ul>
+<p><img src="Image00120.jpg" alt="Image" /></p>
+<ul>
+<li>Also, note that we have <strong>delayedTimer</strong> function
+defined but we never called it. so, it’s still not part of callstack and
+also it’s passed as an argument to setTimeout.</li>
+</ul>
+<p><img src="Image00121.jpg" alt="Image" /></p>
+<p><img src="Image00122.jpg" alt="Image" /></p>
+<p><img src="Image00123.jpg" alt="Image" /></p>
+<ul>
+<li>As per the above images, we can see that all the execution of
+callstack is done including global expressions and statements code.</li>
+<li>So in short, JavaScript will execute all synchronous code straight
+forward and all async operations are just delegated for later execution.
+However, All function references are still stored on global memory
+space, they are not copied to the task/job queue.</li>
+</ul>
+<h2 id="text00008.html_heading-9"></h2>
+<h2 id="text00008.html_heading-10">Time for introduction “Event
+Loop”!</h2>
+<p><br />
+</p>
+<pre><code>The event loop is a simple while loop, which keeps tracks that where any work is pending in queue/s to be finished or not with continuously checking that whether callstack is ready for taking the work from the queue/s or not.</code></pre>
+<p><br />
+</p>
+<p><img src="Image00124.jpg" alt="Image" /></p>
+<ul>
+<li>Now because currently our callstack is empty and the queue has
+pending tasks to be finished, the event loop will find it. Note that
+<strong>delayedTimer</strong> actually made available to <strong>task
+queue</strong> after 2000 milliseconds(which we provided time, after how
+much time it’ll become part of task queue actually!)</li>
+<li>The event loop will have task only checking whether the work on
+queues are pending or not and which are those tasks.</li>
+<li>The function <strong>delayedTimer</strong> will be pushed to the
+<strong>callstack</strong> by the environment and become part of normal
+execution😀.</li>
+</ul>
+<p><img src="Image00125.jpg" alt="Image" /></p>
+<p><img src="Image00126.jpg" alt="Image" /></p>
+<p><img src="Image00127.jpg" alt="Image" /></p>
+<p><img src="Image00128.jpg" alt="Image" /></p>
+<ul>
+<li>There you have my friends, this is how async code is executed in
+JavaScript. There are little more to explore still. Promises and Async
+Await.</li>
+<li>In this chapter, I will only explain promises, because async-await
+requires little more knowledge that we will discuss in upcoming
+chapters.</li>
+</ul>
+<h2 id="text00008.html_heading-11">Promise - An Aesthetic Async Task
+Resolver</h2>
+<p><strong>MDN</strong></p>
+<pre><code>The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.</code></pre>
+<ul>
+<li>Of course, it’s a short and simple definition but also not
+explaining what the hell actually happening under the hood🤨!</li>
+<li>Let me tell unwill the promise more simply for you with a visual
+example.</li>
+<li>In the above example, I made a simple <strong>sleep</strong>
+function for simulating a synchronous blocking mechanism for given
+second/s. we will use this for our next example too.</li>
+<li>There are 2 things different things available to us, we have a
+<strong>Promise</strong> function constructor(notice capital letter) and
+<strong>promise object.</strong></li>
+<li><strong>The Promise is a function constructor</strong> that will
+create a <strong>promise object</strong> when we use a
+<strong>new</strong> keyword in front of the Promise constructor.</li>
+<li>let’s start with an example.</li>
+</ul>
+<p><img src="Image00129.jpg" alt="Image" /></p>
+<ul>
+<li>Now in the above code, as you can see we will be going to store the
+returned object of the <strong>Promise function constructor</strong> in
+the <strong>promiseObj</strong> variable<strong>.</strong></li>
+<li>Note here we have made <strong>conditional resolve and
+reject</strong> calls based on whether <strong>num &gt; 5 or
+not</strong> .</li>
+<li><strong>It’s visualization time😄.</strong></li>
+</ul>
+<p><img src="Image00130.jpg" alt="Image" /></p>
+<p><img src="Image00131.jpg" alt="Image" /></p>
+<p><img src="Image00132.jpg" alt="Image" /></p>
+<ul>
+<li>Let’s see our code again so we don’t lose track of that code in our
+minds.</li>
+</ul>
+<p><img src="Image00133.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see, we have the <strong>Promise</strong> function
+constructor which will be used to create a promise object. but before we
+visualize everything, let me tell you what we will get back after
+executing that Promise function constructor.</li>
+<li>Let’s see which are properties and internal properties are given to
+us for the <strong>promise object</strong> .</li>
+</ul>
+<p><img src="Image00134.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<ul>
+<li>As per the diagram, we can see that the promise object has the main
+3 key-value pairs(internal and hidden properties actually).</li>
+<li>Also, remember we have passed <strong>resolved</strong> and
+<strong>reject</strong> inside the original <strong>Promise function
+constructor’s first argument.</strong></li>
+<li>The return <strong>promiseObj</strong> has the main 3 important
+key-value pairs(hidden/internal)<strong>.</strong></li>
+</ul>
+<h3 id="text00008.html_heading-12">onFullfillment</h3>
+<ul>
+<li>It’s an array, which is used as a placeholder for all <strong>.then
+call’s function arguments.</strong> All <strong>then</strong> methods
+are in order pushed into this array. (will visualize soon how😄).</li>
+</ul>
+<h3 id="text00008.html_heading-13">onRejection</h3>
+<ul>
+<li>It’s an array, which is used as a placeholder for <strong>.catch
+call’s function arguments.</strong> <strong>catch</strong> method is
+pushed into this array. (will visualize soon how😄).</li>
+</ul>
+<h3 id="text00008.html_heading-14">value</h3>
+<ul>
+<li>It’s a value holder that will have the <strong>resolved value or
+rejected value</strong> .</li>
+<li>The importance of this resolve and <strong>reject</strong> functions
+are the mapping of value to the <strong>value</strong> key of the
+returned object(we will visualize it).</li>
+</ul>
+<p>Let’s see how the below code snippet is working and how
+its(promiseObj’s) value is read.</p>
+<p><img src="Image00135.jpg" alt="Image" /></p>
+<ul>
+<li>Promise(It’s a function) constructor evaluation is actually a
+<strong>synchronous</strong> task.</li>
+</ul>
+<p><img src="Image00136.jpg" alt="Image" /></p>
+<p><img src="Image00137.jpg" alt="Image" /></p>
+<p><img src="Image00138.jpg" alt="Image" /></p>
+<p><img src="Image00139.jpg" alt="Image" /></p>
+<ul>
+<li>We will see how the <strong>new</strong> keyword works under the
+hood, but here let me tell you quickly a <strong>new</strong> keyword
+creates an object, and the function constructor will determine what
+properties will be available inside that object.</li>
+<li>let’s just keep visualizing😊.</li>
+</ul>
+<p><img src="Image00140.jpg" alt="Image" /></p>
+<p><img src="Image00141.jpg" alt="Image" /></p>
+<pre><code>Now we have 2 possibilities over here.</code></pre>
+<ul>
+<li>if we get <strong>num &gt; 5</strong> , then we are going to call
+<strong>resolve</strong> and will pass <strong>num</strong> as an
+argument to resolve<strong>.</strong></li>
+</ul>
+<p><img src="Image00142.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<ul>
+<li>if we get <strong>num &lt; 5</strong> , then we are going to call
+<strong>reject</strong> and will pass <strong>num</strong> as an
+argument to reject<strong>.</strong></li>
+</ul>
+<p><img src="Image00143.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<p>Here in both cases, as you can see it’s going to be stored in the
+<strong>value property of the promise object.</strong></p>
+<ul>
+<li>Now, we can see promiseObj(the label given to returned object) is
+actually available on currently working scope and whatever
+state(resolved or rejected) of promise will have, is actually going to
+be stored inside promiseObj’s internal properties and also
+<strong>value</strong> will be a placeholder for resolved/rejected
+value. But, <strong><u>to access resolved value or rejected value we
+need some kind of mechanism</u></strong> .</li>
+<li>That’s why we have <strong>then and catch</strong> methods available
+to us. both methods are available to us via <strong>__proto__</strong>
+(will understand protoType and chaining in later chapters in
+details).</li>
+<li>We are missing one part here, <strong>onFullfillment</strong> and
+<strong>onRejection</strong> are arrays and how it works
+actually🤨!</li>
+<li>Here, after evaluating the value inside a promise object, work for
+the <strong>Promise function constructor is done.</strong> (for both
+resolve and reject scenarios).</li>
+<li>Let’s first visualize that part.</li>
+</ul>
+<p><img src="Image00144.jpg" alt="Image" /></p>
+<p><img src="Image00145.jpg" alt="Image" /></p>
+<p><img src="Image00146.jpg" alt="Image" /></p>
+<p><img src="Image00147.jpg" alt="Image" /></p>
+<p>Woooh, that was a lot. but we still have to figure out for that
+<strong>then and catch methods😅!</strong></p>
+<ul>
+<li>One thing I didn’t tell you that, whenever we write <strong>then or
+catch method</strong> inside the regular global context, these methods
+are actually made available via reference to the onFullfillment or
+onRejection key of promiseObj while it’s creation time(promiseObj
+creation time).</li>
+<li>Not only that but whenever we evaluate the value, the value will be
+available to then function’s argument(function as an argument) or catch
+function’s argument.</li>
+<li>let’s see both scenarios!</li>
+</ul>
+<pre><code>Resolve function scenario</code></pre>
+<p><img src="Image00148.jpg" alt="Image" /></p>
+<ul>
+<li>There is an illusion is given to us, and illusion is
+<strong>then</strong> method😯! so, the code which looks like we are
+executing on returned promiseObj is actually not run by
+<strong>then</strong> method. It’s just a function that will act as a
+placeholder for another function. so, whatever function we pass as an
+argument to then method <strong>(here (val) =&gt; { console.log(val) })
+will be pushed to the onFullfillment array</strong> of promiseObj. Also,
+I had not shown this before because I didn’t want to confuse it with
+other visualization. A then method is actually accessible via __proto__
+of a promiseObj. let’s visualize it😎.</li>
+</ul>
+<p><br />
+</p>
+<p><img src="Image00149.jpg" alt="Image" /></p>
+<ul>
+<li>Remember callstack became empty after all synchronous code finished
+its execution.</li>
+<li>The function of <strong>then’s</strong> argument will be added to
+onFullfillment and whenever it finishes execution it will be added to
+the <strong>job queue</strong> and later from <strong>job queue to
+callstack.</strong></li>
+</ul>
+<p><img src="Image00150.jpg" alt="Image" /></p>
+<ul>
+<li>Here function has no name (Anonymous function😅)</li>
+</ul>
+<p><img src="Image00151.jpg" alt="Image" /></p>
+<p><img src="Image00152.jpg" alt="Image" /></p>
+<p><img src="Image00153.jpg" alt="Image" /></p>
+<p><img src="Image00154.jpg" alt="Image" /></p>
+<p><img src="Image00155.jpg" alt="Image" /></p>
+<p><img src="Image00156.jpg" alt="Image" /></p>
+<ul>
+<li>That was too much for that little promiseObj😅, but it’s what
+happens under the hood.</li>
+<li>Let’s not forget our second scenario as well, it’s almost the same
+as above but it will use the onRejection array of promiseObj!</li>
+<li>let’s visualize that😃.</li>
+</ul>
+<pre><code>Reject function scenario</code></pre>
+<p><img src="Image00157.jpg" alt="Image" /></p>
+<p>Let’s see step by step it’s execution.</p>
+<p><img src="Image00158.jpg" alt="Image" /></p>
+<p><img src="Image00159.jpg" alt="Image" /></p>
+<p><img src="Image00160.jpg" alt="Image" /></p>
+<p><img src="Image00161.jpg" alt="Image" /></p>
+<p><img src="Image00162.jpg" alt="Image" /></p>
+<p><img src="Image00163.jpg" alt="Image" /></p>
+<p><img src="Image00164.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<p><img src="Image00165.jpg" alt="Image" /></p>
+<p><img src="Image00166.jpg" alt="Image" /></p>
+<ul>
+<li>And there you have it😅, a hell of a lot of things under the hood.
+This is how a promise works. Now, what about <strong>fetch API available
+in the browser which is also promise-based! It works almost like the
+above example but with a little twist😁.</strong> Why not explore
+visualization of it with a simple example😋.</li>
+</ul>
+<p><img src="Image00167.jpg" alt="Image" /></p>
+<ul>
+<li>Here, we have a simple console log, little blocking for 2 seconds,
+and fetch API code. let’s start visualizing it.</li>
+</ul>
+<p><img src="Image00168.jpg" alt="Image" /></p>
+<p><img src="Image00169.jpg" alt="Image" /></p>
+<p><img src="Image00170.jpg" alt="Image" /></p>
+<p><img src="Image00171.jpg" alt="Image" /></p>
+<p><img src="Image00172.jpg" alt="Image" /></p>
+<p><img src="Image00173.jpg" alt="Image" /></p>
+<ul>
+<li>we don’t have any other synchronous code to run so we will exit out
+of the global execution context and callstack will become empty.</li>
+</ul>
+<p><img src="Image00174.jpg" alt="Image" /></p>
+<p><img src="Image00175.jpg" alt="Image" /></p>
+<ul>
+<li>I think till now everything seems the same as what we visualized
+earlier, but here the twist comes. T<strong>he above shown mental model
+is still incomplete😅.</strong></li>
+<li>We have a lot of browser features (AKA browser APIs) which happen
+outside of the regular execution context. not only that, these browser
+features actually happens through our underline Operating System and
+using Kernel. But to keep it short and simple let’s just think these
+browser features are happening outside of the actual JavaScript
+execution context.</li>
+<li>One such feature is the fetch API.</li>
+<li>Let’s extend our mental model a little bit more😅.</li>
+</ul>
+<p><img src="Image00176.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see we added browser features inside our diagram, now you
+can sense that our browser environment is not just JavaScript but a lot
+of hidden features combined under the hood.</li>
+</ul>
+<p><img src="Image00177.jpg" alt="Image" /></p>
+<ul>
+<li>Here, let’s see what happens when hit
+<strong>fetch(’https://test.com’)</strong> below the line when we
+execute code.</li>
+<li>we are going back again to what happens when we actually return
+dataPromiseObject.</li>
+</ul>
+<p><img src="Image00178.jpg" alt="Image" /></p>
+<ul>
+<li>We can see that, fetch actually make bond two way one in javascript
+task and other is networking work. let me continue with
+visualization☺.</li>
+</ul>
+<p><img src="Image00179.jpg" alt="Image" /></p>
+<ul>
+<li>After hitting the fetch line in our code, work for returning promise
+object from fetch API gets done immediately but background task for
+finishing API call still pending and it’s done by browser and given back
+to promise object when it gets completed.</li>
+<li>After finishing background work, all other work is the same as
+before we visualized 😁.</li>
+</ul>
+<p><img src="Image00180.jpg" alt="Image" /></p>
+<p><img src="Image00181.jpg" alt="Image" /></p>
+<p><img src="Image00182.jpg" alt="Image" /></p>
+<p><img src="Image00183.jpg" alt="Image" /></p>
+<p><img src="Image00184.jpg" alt="Image" /></p>
+<p><img src="Image00185.jpg" alt="Image" /></p>
+<p><img src="Image00186.jpg" alt="Image" /></p>
+<pre><code>This is all my friends, how really promise and fetch API work under the hood😊.</code></pre>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00009.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">5</h1>
+<h1 class="chapter-title">Iterators, Generators, and Async-Await</h1>
+</div>
+<div class="chapter-content">
+<pre><code>This chapter will give an in-depth explanation of and importance of iterator and generators. Also, how this stuff is utilized in real-world scenarios to make code look nicer and easy to read. not only that, this chapter will have a really high dense visualization.</code></pre>
+<h2 id="text00009.html_heading-1">Loops</h2>
+<ul>
+<li>Let’s talk about traditional loops before we move to Iterators.</li>
+<li>We use loops to iterate over each element of
+<strong>iterable</strong> and do the operation. Let’s take a simple
+example of it.</li>
+</ul>
+<p><img src="Image00187.jpg" alt="Image" /></p>
+<ul>
+<li>In the above example, we have a simple <strong>numberArray</strong>
+and we are iterating over elements and simply multiplying by 2.</li>
+<li>Notice here, we are doing the operation in <strong>a single
+shot</strong> . We don’t have control over in a single shot
+operation(you can put if-else and other stuff to control the flow but
+that is no real control over elements !).</li>
+<li>How about if we can get element one at a time and perform some
+operation on it. so whenever we need the next element we simply produce
+it. At first impression, it might seem a little weird to think but let
+me give an example by building a custom iterable.</li>
+<li>To make things simple, I will use the smaller diagram of our mental
+model and we will make an entire mental model diagram when we combine
+all the concepts😄. I will only show the thread of execution and memory
+for the below example.</li>
+</ul>
+<h2 id="text00009.html_heading-2">Iterators</h2>
+<p><img src="Image00188.jpg" alt="Image" /></p>
+<p>We have declared one function called
+<strong>‘createFlowOfElements’</strong> which is actually a function
+that takes an array as an argument and returns an
+<strong>innerObj</strong> . Let’s execute this function.</p>
+<p><img src="Image00189.jpg" alt="Image" /></p>
+<p>Now it’s time to visualize what happens when we execute the
+<strong>createFlowOfElements.</strong></p>
+<p><img src="Image00190.jpg" alt="Image" /></p>
+<ul>
+<li><strong>In case you haven’t guessed,</strong> here we have a
+function inside a function(even if it’s defined inside innerObj). So, if
+we return innerObj or function of innerObj we will have a backpack of
+outer scope (closure my friends😁).</li>
+<li><strong>createFlowOfElements</strong> is a function that will
+actually be going to create iterator!. Let’s visualize it.</li>
+</ul>
+<p><img src="Image00191.jpg" alt="Image" /></p>
+<p><img src="Image00192.jpg" alt="Image" /></p>
+<p><img src="Image00193.jpg" alt="Image" /></p>
+<ul>
+<li>Amazing, as we can see here <strong>returnNextElement</strong> has
+closure, and not only that we have the <strong>next</strong> method
+inside the object as well(people usually call a function of the object
+as method😅). Also, I hadn’t shown two variables of the global scope
+which are <strong>element1</strong> and <strong>element2</strong>
+because real visualization of those variables was not needed in the
+above diagrams.</li>
+</ul>
+<p><img src="Image00194.jpg" alt="Image" /></p>
+<ul>
+<li>Now, It’s time to see what happens when we execute the next method
+of <strong>returnNextElement</strong> .</li>
+</ul>
+<p><img src="Image00195.jpg" alt="Image" /></p>
+<p><img src="Image00196.jpg" alt="Image" /></p>
+<ul>
+<li>Because we don’t have variables inside the function’s local memory
+so we look into our closure to find those variables and here we find
+it.</li>
+</ul>
+<p><img src="Image00197.jpg" alt="Image" /></p>
+<p><img src="Image00198.jpg" alt="Image" /></p>
+<ul>
+<li>Now, for <strong>element2</strong> same things happen so I am not
+going to draw a diagram for that😅. Here is our final diagram after all
+execution finishes.</li>
+</ul>
+<p><img src="Image00199.jpg" alt="Image" /></p>
+<ul>
+<li>Great, we just made our first custom iterable, that is to say, now
+we have a mechanism to control the flow of data, and instead of doing
+all stuff in just a shot. So, instead of throwing it all elements into
+the pipe directly now, we have a switch that we can use to get the
+element. We are controlling our flow of elements😎.</li>
+<li>This is the reason why iterators are important we can get control.
+It’s a powerful mechanism and will be helpful to build some ES7+
+features from the scratch(will see soon).</li>
+<li>Also, you can imagine an <strong>event loop is maintained through
+iterators, where we are literally iterating over queued methods one by
+one and make them available to callstack😁.</strong></li>
+</ul>
+<h2 id="text00009.html_heading-3">Generators</h2>
+<p>The <strong>generator</strong> is just simply a function that returns
+an iterator! In the above example, <strong>createFlowOfElements</strong>
+was literally a generator function that returned an iterator😮!</p>
+<p>ES7+ has a native generator function. Let’s see a simple example of
+JavaScript’s native generator.</p>
+<p><img src="Image00200.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see from the above example, native generators are pretty
+simple looking and easy to write. But there is little twist how native
+generator works from our custom made generators.</li>
+<li>The first major difference is a native generator and a special kind
+of function (you see <strong>*</strong> in function definition ). Native
+generator function relies on hidden/internal properties (Remember
+functions are objects 😅).</li>
+<li>The second difference is, a generator function is not put in
+callstack, but it’s store in memory and put directly on the thread of
+execution😮!</li>
+<li>The <strong>yield</strong> is a special type of keyword that does a
+lot of hidden stuff behind the scene. Also, it is completely different
+from the <strong>return keyword.</strong></li>
+</ul>
+<h2 id="text00009.html_heading-4">return</h2>
+<ul>
+<li>return keyword immediately stops the function execution and
+literally allows you to return any value from a function.</li>
+<li>the return keyword is mostly used to do some stuff and the result of
+the operation is usually return to the outer scope.</li>
+</ul>
+<h2 id="text00009.html_heading-5">yield</h2>
+<ul>
+<li>This is a special type of keyword and used inside the generator
+function.</li>
+<li>yield keyword <strong>will not stop the execution of the generator
+function</strong> but it will <strong><u>suspend the execution(pause the
+execution)</u></strong> 🤨. so, we can later use the same suspended
+execution context.</li>
+<li>Now, when we <strong><u>suspend</u></strong> function execution(kind
+of pausing the execution of a function), we need some kind of mechanism
+to keep track of where exactly our execution was suspended. so, in the
+next iteration, we will able to start execution again from where it is
+suspended (paused).</li>
+<li>We have a hidden/internal property called
+<strong><em>[[GeneratorLocation]]</em></strong> <em>available on
+the</em> <strong><em>returned iterator from the generator
+function.</em></strong></li>
+<li><strong>yield</strong> keyword will suspend the execution and
+<strong>store the location where function execution is
+suspended</strong> in <strong><em>[[GeneratorLocation]]</em></strong> .
+let’s see😬.</li>
+</ul>
+<p><img src="Image00201.jpg" alt="Image" /></p>
+<ul>
+<li>The reason we have <strong>[[GeneratorLocation]] at</strong>
+<u>VM36: 3,</u> because you can see we have called
+<strong>returnNextElement.next() 2 times. So, a</strong> 2-time value
+was yielded and the function was paused and continued. So, in the next
+iteration, we will start our execution from the 3rd line (rather at the
+3rd position of yielded value).</li>
+<li>If you click on <u>VM36:3 (VM36 =&gt; this is randomly generated by
+the console of the browser)</u> , we will able to see where our last
+suspension of function is.</li>
+</ul>
+<p><img src="Image00202.jpg" alt="Image" /></p>
+<p>Now, what if we have some other stuff inside the generator function?
+like console.log() or any other operation!</p>
+<p><img src="Image00203.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see, it works exactly like before but now we have
+<strong><em>[[GeneratorLocation]]</em></strong> relative to our function
+definition. This means it is literally keeping track of line number
+where a function is paused!.</li>
+<li>Now if we click on that <u>VM107:4,</u> we can see below where it’s
+paused. again because we have used <strong>returnNextElement.next() 2
+times,</strong> that is why we have paused after at second yielded
+value.</li>
+</ul>
+<p><img src="Image00204.jpg" alt="Image" /></p>
+<ul>
+<li>We still haven’t seen what actually inside the
+<strong>element1</strong> and <strong>element2</strong> variables😅.
+Let’s see.</li>
+</ul>
+<p><img src="Image00205.jpg" alt="Image" /></p>
+<ul>
+<li>Unlike our previous custom generator where we returned values
+directly, here we are returning an object with some key-value
+pairs.</li>
+<li>We have value property itself and done property.</li>
+<li>The <strong>value</strong> holds the whatever was yielded and done
+tells us is there anything remained of execution of paused execution
+function!</li>
+<li>But, wait we don’t have closure here then where the hell this object
+is retrieved! let’s see.</li>
+</ul>
+<p><img src="Image00206.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see we are storing yielded values and keeping them inside
+hidden property called <strong><em>[[scopes]].</em></strong></li>
+<li>now what if we run <strong>returnNextElement.next()</strong> one
+more time and see the result.</li>
+</ul>
+<p><img src="Image00207.jpg" alt="Image" /></p>
+<ul>
+<li>now again what if we run <strong>returnNextElement.next()</strong>
+one more time and see the result.</li>
+</ul>
+<p><img src="Image00208.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see that when we finished all yielding of values, we
+<strong>closed</strong> (finished) the function execution, and the
+<strong>done</strong> property became <strong>true.</strong></li>
+<li><strong>So, long story short</strong> generators allow us to create
+<strong>custom iterators</strong> and we can <strong>use the next method
+on our iterable to retrieve yielded values</strong> .</li>
+<li>We need to explore one more thing in order to get a full idea of
+generators and iterators. Let’s look at the below example.</li>
+</ul>
+<p><img src="Image00209.jpg" alt="Image" /></p>
+<p>The common thinking would be, we will <strong>yield 4</strong> in the
+first next() call and in the second call of next() we will have the
+<strong>newNum</strong> variable to be <strong>4</strong> . so, the
+second next() call should yield us to <strong>9</strong> (5 + 4 == 9).
+unfortunately, that is not how it works😅.</p>
+<p>let’s see what we get in the output.</p>
+<p><img src="Image00210.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see in the second call of next() it has a totally
+different output than our expectation. The reason why it happened
+because the iterator returned from the generator function will allow you
+to pass an argument to the next() function and whatever we pass to the
+next() function’s argument will become available to wherever our
+function suspended execution!</li>
+<li>so, ultimately <strong>13</strong> that we passed to second next()
+call as an argument made available and got stored in
+<strong>newNum</strong> . so, in the next yield, it became 18 (5 +
+13)😄.</li>
+</ul>
+<p>What if we didn’t provide or pass any argument to the second next()
+call 🤔?</p>
+<p><img src="Image00211.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see if we don’t provide any argument then
+<strong>newNum</strong> will have a value of
+<strong>undefined.</strong></li>
+<li><strong>So,</strong> when we second time yielded value it became
+<strong>NaN(5 + undefined).</strong></li>
+<li>The above example has a great use case, and that is what we are
+going to do next.</li>
+<li>Let’s build <strong>async-await</strong> from scratch😎.</li>
+</ul>
+<p><img src="Image00212.jpg" alt="Image" /></p>
+<ul>
+<li>This time we are going to visualize the above code😅😅.let me tell
+you ahead of time that the diagram that we are going to draw soon will
+be the most intense and complicated. It’ll involve almost every single
+concept that we have understood so far😮. Let’s start then.</li>
+</ul>
+<p><img src="Image00213.jpg" alt="Image" /></p>
+<p>Before we move further, let me tell you some color schemas that we
+will use.</p>
+<p><strong>Dark purple</strong> - generator function in execution</p>
+<p><strong>light purple</strong> - generator function in suspended
+state(paused).</p>
+<p><img src="Image00214.jpg" alt="Image" /></p>
+<ul>
+<li>One more thing, generator functions are not normal functions and
+they <strong>don’t get garbage collected</strong> (It stays in memory
+even after its execution is finished).</li>
+<li>Moreover, the execution of the function is put directly on the
+thread of execution.</li>
+</ul>
+<p><img src="Image00215.jpg" alt="Image" /></p>
+<ul>
+<li>Regarding that __proto__, it’s actually simple. The *<u>generator
+function object</u> was build from the <strong>“Generator” object(yes,
+it’s direct object).</strong> So, generator function object’s __proto__
+point to prototype object of Generator(<em>*generator .__ptoto__ =
+Generator.prototype</em> ).The same way <u>returnNextElement</u> was
+build from <strong>*generator function</strong> . So, returnNextElement
+object’s __proto__ point to prototype object of *generator
+function(<em>returnNextElement.__proto__ = *generator.prototype</em>
+).</li>
+<li>Ultimetly, out returnNextElement will have access to next() method
+via __proto__ chain.</li>
+</ul>
+<p><img src="Image00216.jpg" alt="Image" /></p>
+<p><img src="Image00217.jpg" alt="Image" /></p>
+<ul>
+<li>After finishing the creation of <strong>returnNextElement</strong>
+iterator when we use the next() method on that part we will hit
+<strong>fetch() API</strong> part. let’s see how it goes.</li>
+</ul>
+<p><img src="Image00218.jpg" alt="Image" /></p>
+<ul>
+<li>See below diagram, where generator function is directly put into
+execution and not only that our <strong>fetch API create two-way bonding
+as well(</strong> background networking work + promise object creation
+in javascript execution thread<strong>).</strong></li>
+<li>Try remembering fetch API’s mental model from the previous chapter
+and everything will follow smoothly</li>
+</ul>
+<p><img src="Image00219.jpg" alt="Image" /></p>
+<p><img src="Image00220.jpg" alt="Image" /></p>
+<ul>
+<li>As we know when we finish working on our networking task, the result
+will be given back to the promise object’s <strong>value</strong>
+property and the further mental model is the same that we learned in the
+previous chapter for the promise object.</li>
+<li>Just follow the diagrams and you will get it😊.</li>
+</ul>
+<p><img src="Image00221.jpg" alt="Image" /></p>
+<p><img src="Image00222.jpg" alt="Image" /></p>
+<p><img src="Image00223.jpg" alt="Image" /></p>
+<p><img src="Image00224.jpg" alt="Image" /></p>
+<p><img src="Image00225.jpg" alt="Image" /></p>
+<ul>
+<li>After finishing the promise object work, now we are calling again
+the next() method of <strong>returnNextElement</strong> by providing the
+<strong>data</strong> argument to the <u>next() method</u> . see our
+example code.</li>
+</ul>
+<p><img src="Image00226.jpg" alt="Image" /></p>
+<ul>
+<li>Let’s see how it goes in further execution.</li>
+</ul>
+<p><img src="Image00227.jpg" alt="Image" /></p>
+<ul>
+<li>Because we called the next() method with <strong>data</strong> which
+we got from the promise object’s <strong>value,</strong> we will make
+available that value to the local variable of the next() iterator.</li>
+</ul>
+<p><img src="Image00228.jpg" alt="Image" /></p>
+<p><img src="Image00229.jpg" alt="Image" /></p>
+<p><img src="Image00230.jpg" alt="Image" /></p>
+<p><img src="Image00231.jpg" alt="Image" /></p>
+<pre><code>There you have it, my friends. we have made our own custom async-await from scratch😎.(you can do the same with a catch scenario as well, which I am not going to show😅)</code></pre>
+<p>Before we close this chapter let’s just see the shorten ES7+ syntax
+of async-await with example.</p>
+<p><img src="Image00232.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see, the <strong>async</strong> keyword will behave like
+a generator and the <strong>await</strong> keyword will behave like the
+<strong>yield</strong> keyword from our example. That been said this is
+all under the hood and deep dive for this chapter😊.</li>
+</ul>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00010.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">6</h1>
+<h1 class="chapter-title">NodeJS, C++, Queues &amp; Servers</h1>
+</div>
+<div class="chapter-content">
+<pre><code>If someone would ask me, what is the best thing that happens in the javascript community?, my immediate answer will be it is none other than NodeJS!.NodeJS is an amazing javascript runtime and also a little misunderstood tool. In this chapter, I will try to make it as easy as possible and explain the core architecture and fundamentals of the nodejs.</code></pre>
+<h2 id="text00010.html_heading-1">What node is not?</h2>
+<ol>
+<li>It’s not a programming language.</li>
+<li>It’s not a framework/tool for server-side coding (Not like
+Php).</li>
+<li>JavaScript is a programming language, <strong>the node is
+not</strong> .</li>
+</ol>
+<h2 id="text00010.html_heading-2">What node actually is?</h2>
+<ol>
+<li>It’s a low-level c++ delegated code made available to us by making
+JavaScript APIs (AKA JavaScipt version of a c++
+features(<strong>sometimes even “c” bound c++ code</strong> )).</li>
+<li><strong><u>It’s a literally C++ program</u></strong> that takes
+JavaScript code as a string and does all the work!</li>
+<li>Node is a single c++ program, which relies on a lot of other c++
+libraries like <strong>libUV, V8, c-ares, OpenSSL,</strong> etc.</li>
+<li>We call is nodejs because c++ written features are made available to
+us by exposing equivalent JavaScript APIs. so, Node(C++ features) +
+JavaScript == NodeJS😎.</li>
+</ol>
+<pre><code>NodeJS&#39;s core architecture is way more complicated than a browser or any other environment. Not only that, on the internet 90% of information related to nodejs are partially false or misguided😪.</code></pre>
+<ul>
+<li>I will try to go very gradually on the core architecture and will
+split pieces for you, such that you don’t have to go anywhere to
+understand anymore. Let’s start with our basic version of the javascript
+diagram.</li>
+</ul>
+<p><img src="Image00233.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see we have a similar model that we know, queues,
+callstack, and our memory space.</li>
+<li>Because we are going to perform a lot of system operations on our
+computer, the node actually uses a lot of third-party c/c++ libraries
+which does all kinds of stuff.</li>
+<li>There are major 2 components that we should understand first.</li>
+</ul>
+<h2 id="text00010.html_heading-3">V8 engine</h2>
+<ul>
+<li>The V8 engine has a fundamental 1 job to perform which is to parse
+the JavaScript and convert it into <strong>optimized machine
+code</strong> .</li>
+<li>However V8 just not convert our javascript code into machine code,
+but it does much more than that. It provides the default version of the
+event loop(wait what🤨).</li>
+<li>The default event loop given to us by v8 can be extended or replaced
+by javascript runtime creators.</li>
+<li>Node actually does not use the default v8’s event loop. Node uses
+the event loop of LibUV’s instead of v8!</li>
+<li>Because v8 has a default event loop, the barebone code of v8’s event
+loops queue remains there and <strong>Promise</strong> uses that queue
+instead of any other queues.</li>
+<li>I have removed the <strong>‘Task Queue’</strong> of v8. The main
+reason because the node doesn’t use it or even care about it. Node uses
+a little different approach to tackle asynchronous
+<strong>timers</strong> .</li>
+<li>There is <strong>‘process.nextTick()’</strong> which is provided by
+node and it always runs ahead of every single queue by design.</li>
+</ul>
+<p><img src="Image00234.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<h2 id="text00010.html_heading-4">LibUV</h2>
+<ul>
+<li>This library is the heart of the node. LibUV does not just provide
+an event loop but it has a really good mechanism to handle a lot of I/O
+operations.</li>
+<li>The I/O operation could be anything like a lot of connection
+requests, sockets, File systems, etc.</li>
+<li>LibUV provides or sometimes uses a lot of queues which we are going
+to learn soon.</li>
+<li>Let’s just see first our mental model diagram with <strong>v8 and
+libUV</strong> combined😄.</li>
+</ul>
+<p><img src="Image00235.jpg" alt="Image" /></p>
+<ul>
+<li>I left out some space above the blue-colored box intentionally and I
+will come to that.</li>
+<li>As from the diagram you can see we have v8 + LibUV’s queues.</li>
+<li>LibUV has major 7 queues(drawn only 6 because Idle and prepare are
+combined in one line).</li>
+</ul>
+<ol>
+<li><strong>Timers:</strong> setTimeout() and setInterval().</li>
+<li><strong>Pending callbacks:</strong> Imagine parent process is
+<strong>Nginx server which</strong> is already running on PORT 3000, and
+you want to start node server on PORT 3000. So, it will throw an
+error(system errors). All those kinds of system call’s or error
+callbacks are given to this queue.</li>
+<li><strong>Idle and prepare:</strong> we don’t interact with it.😅 (2
+queues drawn in one as we don’t actually use, libUV uses it
+internally)</li>
+<li>Poll: all I/O operations like files handling, client request
+handling, sockets, crypto, zlib(compression) operations, etc handled via
+this queue.</li>
+<li><strong>Check:</strong> for the setImmediate() callback/s ,we use
+this queue.</li>
+<li><strong>Close:</strong> All close events from a system like a socket
+close or clean up events are added in this queue (but why ? because
+these are system calls, not incoming requests, so😁).</li>
+</ol>
+<blockquote>
+<p>The default libUV and v8 combined mental model is not so hard to
+grasp. The problem is a node internally does way much more stuff than
+just using these queues and most important part is <strong>poll
+queue</strong> <strong><em>😋</em></strong> <strong>.</strong></p>
+</blockquote>
+<ul>
+<li>From the diagram, we can see we have some strange stuff like
+<strong>Thread Pool and Epoll/KQueue(data structure), which is used to
+do work delegated from the poll queue.</strong></li>
+<li>Not only that we have, <strong>Worker Threads</strong> which is also
+a different thing🤨.</li>
+<li>At the bottom, we have our operating system feature or you can say
+that heart of the system <strong>‘Kernel’</strong> .</li>
+<li>Before we move further and explain how all things work combined,
+let’s just finish out node architecture.</li>
+</ul>
+<p><img src="Image00236.jpg" alt="Image" /></p>
+<ul>
+<li>As we know we are going to write ‘JavaScript’, so any system-level
+code needs to be written in JavaScript which will be delegated to our
+c++ code. That’s the reason why we have <strong>Node Core
+APIs.</strong></li>
+<li>It has major all core modules logic written in c++ and exposed
+javascript API which we use as a developer.</li>
+<li><strong>C++ Addon and N-API</strong> are special features or APIs
+available to us that we can use to extends nodejs using c++ (this
+requires c/c++ knowledge so I am not going to tell you about
+this😅).</li>
+</ul>
+<h2 id="text00010.html_heading-5">Normal Flow of execution inside the
+node.</h2>
+<p><br />
+</p>
+<p><strong>step 1:</strong> Scan the entire code and hoist all possible
+variables. Do garbage collection of unused references(optimization).</p>
+<p><br />
+</p>
+<p><strong>step 2:</strong> Complete all synchronous execution from top
+to bottom.</p>
+<p><br />
+</p>
+<p><strong>step 3:</strong> All the asynchronous code’s event handlers
+or callbacks are scanned and stored in memory as a future
+placeholder.</p>
+<p><br />
+</p>
+<p><strong>step 4:</strong> Start executing all finished background code
+via a queue, and keep going until we don’t finish all background tasks
+or kill the process (Event Loop😁!)</p>
+<p>The order of Queue in the node environment is as shown in the
+figure.</p>
+<ol>
+<li>execute all process.nextTick()’s callback/s.</li>
+<li>execute all promises of the <strong>job queue.</strong></li>
+<li>enter into LibUV’s queues and start from right to left for
+execution<br />
+3.1 complete the timers via the <strong>Timer queue</strong> .<br />
+3.2 complete error handling callback of system calls<br />
+via <strong>Pending queue</strong> .<br />
+3.3 complete internally used <strong>Idle, prepare queue.</strong> 3.4
+wait for some amount of period to try to finish as much as callbacks of
+the <strong>poll queue.</strong> (little complicated, we will understand
+this deeply later). 3.5 complete the <strong>check queue</strong>
+(setImmediate). 3.6 complete the execution of close callbacks via the
+<strong>close queue.</strong></li>
+</ol>
+<p><strong>step 5:</strong> repeat the loop until the node process gets
+killed.</p>
+<p><br />
+</p>
+<pre><code>It&#39;s time to understand everything combined with an example and will understand deeply what happens in each step.</code></pre>
+<p><img src="Image00237.jpg" alt="Image" /></p>
+<blockquote>
+<p>Ignore how the <strong>require() and how the module system works
+right now and only focus on our example.</strong> Also, I wrote a
+javascript code in a way that execution of code will have completely
+different unexpected output than logically shown in code.</p>
+</blockquote>
+<p><img src="Image00238.jpg" alt="Image" /></p>
+<ul>
+<li>In our starting, we are reading the content of text files that is
+file1.txt and file2.txt.</li>
+<li>file1.txt has ‘Hello guys 1’ and file2.txt has ‘Hello guys 2’ in it
+as content.</li>
+</ul>
+<p><img src="Image00239.jpg" alt="Image" /></p>
+<ul>
+<li>The next statement is the pretty simple synchronous log.</li>
+</ul>
+<p><img src="Image00240.jpg" alt="Image" /></p>
+<ul>
+<li>The next thing, we are using process.nextTick() as shown above.</li>
+</ul>
+<p><img src="Image00241.jpg" alt="Image" /></p>
+<ul>
+<li>After that, we are calling setImmediate() as above.</li>
+</ul>
+<p><img src="Image00242.jpg" alt="Image" /></p>
+<ul>
+<li>Then after, we are making <strong>2 HTTP GET API</strong> calls and
+logging simply <strong>statusMessage</strong> from the response.</li>
+</ul>
+<p><img src="Image00243.jpg" alt="Image" /></p>
+<ul>
+<li>After that, we are just resolving Promise and have
+<strong>then()</strong> call of that resolved promise.</li>
+</ul>
+<p><img src="Image00244.jpg" alt="Image" /></p>
+<ul>
+<li>At last in our code, we have setTimeout() call which has
+<strong>0</strong> milliseconds timeout.</li>
+</ul>
+<pre><code>It&#39;s time to start our visualization of code and see how code actually works under the hood 😎!</code></pre>
+<p><img src="Image00245.jpg" alt="Image" /></p>
+<ul>
+<li>Initially, we will complete our all synchronous code which in our
+case, console statement and Promise function constructor (note here, not
+the finished promise object, only <strong>Promise</strong> constructor
+execution).</li>
+</ul>
+<p><img src="Image00246.jpg" alt="Image" /></p>
+<p><img src="Image00247.jpg" alt="Image" /></p>
+<ul>
+<li>Here we are returning a promise object but we are not storing it in
+any variable, so immediately <strong>then()’s callback</strong> is put
+into <strong>Job Queue</strong> and the object gets garbage collected as
+it has zero references in memory. let’s see it
+below<strong>!</strong></li>
+</ul>
+<p><img src="Image00248.jpg" alt="Image" /></p>
+<ul>
+<li><strong>Working of Promises does not changes in browser or node
+environment as both uses V8 and promises are part of V8 engine
+itself.</strong></li>
+</ul>
+<p><img src="Image00249.jpg" alt="Image" /></p>
+<p><img src="Image00250.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see, the callback of <strong>then()</strong> is added to
+the <strong>job queue</strong> and the promise object gets garbage
+collected. The next thing we did is continued our execution.<br />
+As node made available <strong>process.nextTick()</strong> ,
+<strong><u>all callback of process.nextTick()</u></strong> after
+finishing synchronous execution, we add in one separate queue as shown
+in the figure.</li>
+<li>so callback of process.nextTick() is stored in the queue which is on
+our topmost hierarchy of queues.</li>
+</ul>
+<p><img src="Image00251.jpg" alt="Image" /></p>
+<ul>
+<li>We further go through code and store callbacks into their respective
+queue which node environment decided. in the above, we added a timer
+callback to the timer queue.</li>
+</ul>
+<p><img src="Image00252.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see above, all the I/O callbacks are in the poll queue.
+Both files read operation and HTTP get API call are part of I/O
+operation.</li>
+<li>Internally poll queue used different approaches based on what
+operation is performed on the poll queue(will see soon).</li>
+</ul>
+<p><img src="Image00253.jpg" alt="Image" /></p>
+<ul>
+<li>At last, we have setImmediate() which will go into the <strong>check
+queue.</strong></li>
+<li>The poll queue actually starts background work and does not take
+participation in the first iteration(the first iteration of the event
+loop) of the queues call. So, I have made a grey color for that.</li>
+</ul>
+<p><img src="Image00254.jpg" alt="Image" /></p>
+<ul>
+<li>Now, let’s start executing our queues. Remember the order for queues
+which is top to bottom and right to left.</li>
+</ul>
+<p><img src="Image00255.jpg" alt="Image" /></p>
+<p><img src="Image00256.jpg" alt="Image" /></p>
+<p>The next turn is for our job queue (promises).</p>
+<p><img src="Image00257.jpg" alt="Image" /></p>
+<p><img src="Image00258.jpg" alt="Image" /></p>
+<p><img src="Image00259.jpg" alt="Image" /></p>
+<p><img src="Image00260.jpg" alt="Image" /></p>
+<ul>
+<li>Now the next turn is for our timers😃.</li>
+</ul>
+<p><img src="Image00261.jpg" alt="Image" /></p>
+<p><img src="Image00262.jpg" alt="Image" /></p>
+<p><img src="Image00263.jpg" alt="Image" /></p>
+<ul>
+<li>This time turn is for the poll queue, but the poll queue has 4
+operations -&gt; 2 file reads and 2 GET API calls. so, internally
+timeout is calculated by libUV whether these operations are going to be
+finished quickly in a certain period of time (usually a very few seconds
+or not) or not. If not, then immediately we move to check queue. That is
+why here we are quickly going to move for setImmediate()’s callback from
+the check queue without waiting for 4 operations(2 file reads + 2 GET
+API calls).</li>
+</ul>
+<p><img src="Image00264.jpg" alt="Image" /></p>
+<p><img src="Image00265.jpg" alt="Image" /></p>
+<ul>
+<li>Now, all queues are empty and all pending task has finished except
+poll queue. Let’s see how the <strong>poll queue</strong> is going to
+perform these tasks.</li>
+<li>Poll queue delegate task in major 2 categories.</li>
+<li>All operations like file read, crypto and zLib are done through the
+Thread pool.</li>
+<li><strong>A Thread pool is a collection of worker threads.</strong>
+(it’s different from worker threads provided by node’s default module).
+The default size of the thread pool is 4 but you can overwrite using the
+<strong>UV_THREADPOOL_SIZE</strong> global variable provided by the
+node. I have drawn 4 small boxes for thread inside the thread pool.</li>
+<li>One thread can perform one task, so 4 threads can perform 4 tasks
+simultaneously.</li>
+<li>However, as I said file read, crypto, and zLib like tasks only
+perform in thread pool by design. So in our case, both files read
+operation is done through thread pool and 2 file operation handle
+through 2 separate threads and other 2 GET APIs calls are done by some
+other mechanism like Epoll/Kqueue(will see soon).</li>
+</ul>
+<p><img src="Image00266.jpg" alt="Image" /></p>
+<ul>
+<li>As you can see we are processing 2 file read operations in 2 threads
+and when they finish reading result is given back to respective
+callbacks.</li>
+</ul>
+<p><img src="Image00267.jpg" alt="Image" /></p>
+<p><img src="Image00268.jpg" alt="Image" /></p>
+<ul>
+<li>Let’s finish the execution of the completed 2 read operations and
+run callbacks of it(Because we are not going to block the poll queue
+while waiting to finish API calls).</li>
+</ul>
+<p><img src="Image00269.jpg" alt="Image" /></p>
+<p><img src="Image00270.jpg" alt="Image" /></p>
+<ul>
+<li>Great, now we have finished file read operations as well, but still,
+we have 2 more operations to complete which are our 2 API calls. So,
+again we go through the next iteration of the event loop.</li>
+</ul>
+<p><img src="Image00271.jpg" alt="Image" /></p>
+<ul>
+<li>Now the time has come how <strong>epoll/Kqueue</strong> and
+<strong>poll queue</strong> work together. I will explain epoll, not
+other mechanisms because all other mechanisms are almost the same only
+difference is it’s based on Operating System Architecture.</li>
+</ul>
+<h2 id="text00010.html_heading-6">epoll(Assuming we are on Linux):</h2>
+<ul>
+<li>It’s a self-balancing binary tree data structure.</li>
+<li>We attach task/s to a node of this data structure and loop through
+each task until some timeout.</li>
+<li>Let’s assume we have 10 API requests that come to the running node
+process at the same time, all are actually given to epoll.</li>
+<li>Before giving all requests to epoll, requests are opened in a
+non-blocking mode (It’s a Linux feature that allows you to open the
+files/fulfill requests in non-blocking mode and wait for them until it’s
+done, and then the result is given back).</li>
+<li>Now in our assumption, we said we have 10 simultaneous requests
+which we are going to open in non-blocking mode and its id(they call it
+file descriptor) is stored in epoll. each id will have events attached
+to it. (here, our callback functions).</li>
+<li>Generally, we loop over epoll for a certain time period. let’s say
+epoll is looping for 2 seconds, so out of 10 requests, 4 requests are
+done in 2 seconds. so, the result of it given back to epoll and from
+epoll to our <strong>poll queue.</strong></li>
+<li>After finishing 4 requests, we move immediately to the <strong>check
+queue</strong> .</li>
+<li>On the next iteration of the event loop, let’s say in our epoll we
+completed 3 more requests(remember here we are literally looping in
+epoll for every 2 seconds to check whether work is done or not in the
+background). These 3 requests with data given back to the <strong>poll
+queue.</strong></li>
+<li>On the next iteration, let’s say we fulfill all remaining 3
+requests, and the result is given back to the <strong>poll
+queue.</strong></li>
+</ul>
+<pre><code>Putting requests in non-blocking mode via kernel&#39;s feature and handling stuff through Epoll data structure will give amazing concurrency without blocking main javascript thread as well as without blocking poll queue and spinning new threads. This is the reason why nodejs is so popular and amazing.</code></pre>
+<p><img src="Image00272.jpg" alt="Image" /></p>
+<ul>
+<li>In our case, we have 2 GET API calls. We will process them through
+epoll as we just discussed and the result is given back to the poll
+queue. Let’s finish our visualization of the remaining finished 2 API
+calls.</li>
+</ul>
+<p><img src="Image00273.jpg" alt="Image" /></p>
+<p><img src="Image00274.jpg" alt="Image" /></p>
+<p><img src="Image00275.jpg" alt="Image" /></p>
+<p>Now, our all execution has finished as above and all queue became
+empty so our program will exit. That’s all my friends this is how node
+actually works😎. you learned complex node architecture with the proper
+mental model😁.</p>
+<pre><code>Note: Here I have assumed that file1.txt read operation done before file2.txt and the same way the first API call finished before the second API call. Which operation out of 2 files read will complete before it depends on your OS and processer. The same goes for API calls. </code></pre>
+<p><br />
+Now let’s talk about some confusing stuff like <strong>multi-threading,
+worker threads, and multi-processing</strong> from the node’s
+perspective.</p>
+<p><br />
+</p>
+<h2 id="text00010.html_heading-7">Multi-processing</h2>
+<ul>
+<li>We know, when we start the node program we essentially start the
+node process in which we will have 1 instance of v8, 1 instance of event
+loop via libUV, and node APIs core layer.</li>
+<li>Now, when we use <strong>child_process,</strong> we create a new
+separate process from the parent process(from our node process). we can
+do anything in the newly created process.</li>
+<li>The important thing to note here, each newly created process will
+have its own 1 instance of v8, 1 instance of event loop via libUV as
+well. That is the reason why we can parse javascript inside
+child_process as well if we want.</li>
+<li>If you are a node developer then you most likely know the module
+called <strong>‘Cluster’,</strong> which is fundamentally used to create
+a fork/s of our running node process and each process will be put in the
+logical core of your processor!</li>
+<li>Let’s visualize it.</li>
+</ul>
+<p><img src="Image00276.jpg" alt="Image" /></p>
+<h2 id="text00010.html_heading-8"></h2>
+<h2 id="text00010.html_heading-9">Worker Threads</h2>
+<ul>
+<li>This is a separate module available in the node which allows you to
+create real threads and we can run javascript code in that newly created
+thread as well.</li>
+<li>each thread will have its own v8 and libUV instance in it.</li>
+</ul>
+<p><img src="Image00277.jpg" alt="Image" /></p>
+<ul>
+<li>The worker thread can communicate to the parent process’s main
+thread via a communication channel and not only that we can pass data
+back and forth to different threads as well😋.</li>
+<li>Threading in the node is a little different from other programming
+languages threading concepts. as we can see we can run CPU-intensive
+tasks in a separate thread but each thread will have its v8 and libUV
+instances. Because each thread needs v8 and libUV to perform the task
+and parse javascript code threads in the node are a little more memory
+consuming.</li>
+<li>So, even create a tone of threads in a node we will surely run out
+of memory in our system or we will overload our system with
+resource-hungry threads.</li>
+<li>So, it’s better to use worker threads only for big CPU-intensive
+tasks in the node. Never use worker threads for serving API requests or
+serving files🧐.</li>
+</ul>
+<h2 id="text00010.html_heading-10">Multi-processing vs worker
+threads</h2>
+<ul>
+<li>It’s best to use multi-processing for serving node processes on each
+CPU-core. Also, inside each node process, we will have enough memory and
+storage such that multiple API requests can be accumulated and later
+delegate to epoll and thread pool via poll queue to give us really good
+concurrency.</li>
+<li>Worker threads are can be useful to do CPU-intensive tasks like
+calculating highly mathematical formulas in a separate thread and giving
+back results to the parent thread (our node main process’s thread).</li>
+<li>We can combine the best of both worlds with creating multiple node
+processes and for each process for specific CPU-intensive tasks we use
+worker threads😎.</li>
+</ul>
+<h2 id="text00010.html_heading-11">Worker threads vs Thread pool</h2>
+<ul>
+<li>It’s pretty simple, Thread pool has a worker thread(threads which
+can perform specific task/s directly) that is used automatically by
+libUV whenever we do File I/O, crypto, and zlib operations.</li>
+<li><strong>‘Worker threads’</strong> (module provided by node) are
+created by us to do a specific task/s in a completely different
+thread/s.</li>
+<li>Now, <strong>thread pool’s</strong> threads are easy to maintain and
+fast as they don’t need v8 and libUV instances in it because tasks have
+already been known to thread pool ahead of time.</li>
+<li><strong>‘Worker threads’</strong> are little resource takers so we
+don’t create too much of them. (here, we don’t create threads for
+serving each client request as we do in other traditional programming
+languages like JAVA, because if we do that then it’ll make our system
+more resource hungry and unstable. it’s totally different concept
+compare to them. we should always rely on node’s non-blocking I/O for
+these kinds of purposes).</li>
+</ul>
+<pre><code>I hope all the above information has cleared all wrong assumptions and misconceptions regarding nodejs😊.</code></pre>
+<ul>
+<li><strong>Now, before we close our journey of the node, I like to
+explain how the node’s module system works.</strong><br />
+JavaScript is run in different environments, and we don’t have a native
+module system by default available to us (ignore ES6+ native modules
+which came recently, will discuss later).</li>
+<li>Now, when nodejs developed they need to figure out some way how to
+give a modularity system to developers, so they created their own module
+system which they call <strong>“commonjs”</strong> . Let’s start
+understanding how it works with visualization.</li>
+<li>In Nodejs, each javascript file that we are going to use in our
+project is <strong>treated as a “module” which means they are not just
+normal javascript code sitting inside the file, but they have some extra
+wrapper and pieces of stuff.</strong></li>
+<li>Also, nodejs provides us some global variables which are available
+to all “modules”. we call them <strong>global variables</strong> . Out
+of those 2 variables, the <strong>“require” function and “module”
+object</strong> (Note that our file “module” and global keyword “module”
+are 2 different things here😅)<strong>.</strong></li>
+<li>Let’s visualize whatever we have learned so far.</li>
+</ul>
+<p><img src="Image00278.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<ul>
+<li>Suppose, we want to add some content of other files(file1.js &amp;
+file2.js) to our main file(main.js).</li>
+<li>As I said earlier, in running the node process we have some global
+variables available to us by default. So, here we are going to need one
+of those variables to accomplish our needs.</li>
+<li>The <strong>require() function</strong> is made available to us in
+each file(module) which means I can use that helper function in the
+<strong>main.js</strong> as well.</li>
+<li>But nodejs put something call <strong>IIFE(Immediately invoked
+function expression)</strong> to all our modules(js files) before it
+even going to required by another module. let’s see that.</li>
+</ul>
+<p><img src="Image00279.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see, in our file1.js we have simple <strong>greet()
+function,</strong> which will be wrapped around by the IFEE function as
+shown in the figure(only if we require file1.js in another module then
+and only of course).</li>
+<li>In the same way, our main.js(main module) also get wrapped around as
+well. Because when we are going to start our node process we are going
+to start from our main module.</li>
+</ul>
+<p><img src="Image00280.jpg" alt="Image" /></p>
+<ul>
+<li>One thing if you have noted then, we have a bunch of
+arguments/variables available to wrapper IFEE and one of them is
+<strong>“require”.</strong> let’s see what happens when we use require
+in our main module.</li>
+<li>The <strong>require()</strong> function takes the file path as an
+argument to find another module.</li>
+</ul>
+<p><img src="Image00281.jpg" alt="Image" /></p>
+<ul>
+<li>If you try to run the above code then it will give a “module” not
+found error🤔.</li>
+</ul>
+<p><img src="Image00282.jpg" alt="Image" /></p>
+<ul>
+<li>But why?</li>
+<li>Remember I said every module is wrapped with IFEE, so when we
+required a module we actually grab the IFEE not the code of the
+module😮. let’s visualize it.</li>
+</ul>
+<p><img src="Image00283.jpg" alt="Image" /></p>
+<p><br />
+</p>
+<ul>
+<li>As we can blue color content is actually what
+<strong>“require()”</strong> does. so, it’s wrapped function and all
+variables and function inside that are locally scoped. That’s is the
+reason why we were not able to execute the <strong>greet()</strong>
+function and got the error.</li>
+<li>But how then we are able to get this work🤨?</li>
+<li>That is where our <strong>arguments</strong> passed to IFEE are come
+into the picture.</li>
+<li>If we want to use the <strong>greet()</strong> function then we need
+to somehow take it outside of the IFEE scope when we require it.</li>
+<li>Nodejs’s IFEE has a <strong>“module” object</strong> available to us
+via argument and there is a “<strong>exports”</strong> key available to
+us on the <strong>“module” object</strong> (see diagram, the 3rd
+argument of IFEE).</li>
+<li>So, if I use a <strong>“module.exports” and add properties to
+it,</strong> then when we require that it in another module it will have
+access to it. let’s visualize it because it’ll easy to grasp.</li>
+</ul>
+<p><img src="Image00284.jpg" alt="Image" /></p>
+<ul>
+<li>As we can see from the diagram wrapper of file1.js returns the
+module.exports object and we have attached the <strong>greet()</strong>
+function to the <strong>module.exports object</strong> .</li>
+<li>Now, let’s see what happens in our main.js where we required this
+module(file1.js).</li>
+</ul>
+<p><img src="Image00285.jpg" alt="Image" /></p>
+<p>As per visualization, we can see if we extract whatever is returned
+from IFEE then we can get access to <strong>greet</strong> function via
+<strong>“module.exports” because “module.exports” is what is returned
+from that IFEE.</strong> Here we are returning the stuff from IFEE but
+not stored in a variable such that we can use it.</p>
+<p><img src="Image00286.jpg" alt="Image" /></p>
+<ul>
+<li>Finally, we can see whatever we returned from “module.exports” is
+actually stored in the variable called “file1_stuff”. Because
+“module.exports” point to greet function, <strong>“file1_stuff”</strong>
+will point to greet function😁.</li>
+<li>There you have my friends how <strong>commonjs module
+system</strong> works under the hood!</li>
+<li>Same way let’s just finish our visualization for file2.js as
+well😅.</li>
+</ul>
+<p><img src="Image00287.jpg" alt="Image" /></p>
+<p><img src="Image00288.jpg" alt="Image" /></p>
+<p><img src="Image00289.jpg" alt="Image" /></p>
+<ul>
+<li>We did exact same for file2.js as well and visualized. You can see
+whatever we exported from the file can be renamed as your wish as
+well.</li>
+<li>The last before I close the chapter let me tell you one thing
+<strong>“exports”</strong> (first argument of IFEE) and
+<strong>“module.exports”</strong> point to the same place😅.</li>
+<li><strong>exports = module.exports.</strong></li>
+<li>So, you can you <strong>exports</strong> keyword directly instead of
+writing <strong>module. exports</strong> every time(just add key-value
+pair to exports object, don’t re-assign to entirely to new
+stuff😅).</li>
+<li><strong>Do this:</strong> exports.add = add, exports.greet =
+greet;</li>
+<li><strong>Don’t do this:</strong> exports = null or exports = add or
+exports = greet(If you do this, then it’ll break the functionality of
+the default module system’s behavior);</li>
+</ul>
+<blockquote>
+<p><strong>Lastly, the ES6+ module system is a real module system that
+doesn’t follow the above mechanism and natively parse the content of the
+file and make it available to us without wrapping.</strong></p>
+</blockquote>
+<pre><code>That is all from my end friends, I hope you enjoyed learning as much as I enjoyed writing this book. I will try to add content to this book in future editions as well. All future updates will free who has access to the first edition😊.</code></pre>
+<div class="scene-break">
+* * *
+</div>
+</div>
+<p><span id="text00011.html"></span></p>
+<div class="chapter-heading">
+<h1 class="chapter-number">7</h1>
+<h1 class="chapter-title">Bonus</h1>
+</div>
+<div class="chapter-content">
+<pre><code>This chapter is just about some weird javascript facts😅</code></pre>
+<ol>
+<li>typeof <strong>null</strong> is the object which is a bug in
+javascript.</li>
+<li>typeof <strong>NaN</strong> (Not a Number) is actually
+<strong>‘number’.</strong></li>
+<li>1 + 2 == 3 but 1.0 + 2.0 !== 3.0🤨.</li>
+<li>NaN === NaN; -&gt; false</li>
+<li><strong>10/0</strong> -&gt; Infinity; <strong>10/-0</strong> -&gt;
+-Infinity</li>
+<li><strong>let newFn = new Function(‘num’, ‘return num *
+num’);</strong> // create function dynamically😯.</li>
+<li>JavaScript is a compiled language, that parses, optimizes, and
+compiles code ahead of time and <strong>it only interprets code at
+runtime</strong> 😉.</li>
+<li>JavaScript is not Java(Always remember this).</li>
+<li><strong>It is a very easy language to learn. But very hard to
+master.</strong></li>
+<li>Below the <strong>‘a’</strong> array has an element in it, but the
+length is still showing <strong>0</strong> 😂.</li>
+</ol>
+<p><img src="Image00290.jpg" alt="Image" /></p>
+<pre><code>This is all my friends, I will keep updating this book with more content, till then enjoy learning and we will meet someday, sometime with some other book journey. Thank you for reading and happy Learning🥰.</code></pre>
+</div>

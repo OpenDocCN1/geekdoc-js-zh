@@ -1,0 +1,271 @@
+name: Advanced Web Development with React： SSR and PWA with Next.js using React with
+  advanced concepts (English Edition)
+name_cn: React 高级Web开发：使用React高级概念的Next.js SSR和PWA
+slug: advanced-web-development-with-react-ssr-and-pwa-with-nextjs-
+toc:
+- - '##'
+  - 类（Classes）
+- - '##'
+  - 闭包（Closures）
+- - '##'
+  - 更多 JavaScript 主题
+- - '##'
+  - 结论
+- - '####'
+  - Windows
+- - '####'
+  - Linux
+- - '####'
+  - macOS
+- - '###'
+  - 设置 React 项目
+- - '####'
+  - '#1 – 使用 CDN 设置'
+- - '####'
+  - '#2 – 使用 create-react-app'
+- - '####'
+  - '#3 – 从头开始设置'
+- - '###'
+  - JSX
+- - '###'
+  - 迁移到 TypeScript
+- - '##'
+  - 结论
+- - '##'
+  - 组件
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 关于组件
+- - '###'
+  - 类组件与函数式组件
+- - '###'
+  - 函数组件
+- - '###'
+  - Props
+- - '###'
+  - Children
+- - '###'
+  - Hooks
+- - '####'
+  - useState
+- - '####'
+  - useState 不是同步的
+- - '####'
+  - useStatecallback
+- - '####'
+  - useEffect
+- - '####'
+  - useEffect 依赖项
+- - '####'
+  - useEffect 清理
+- - '####'
+  - useCallback
+- - '####'
+  - 自定义钩子
+- - '###'
+  - 类组件
+- - '####'
+  - Props
+- - '####'
+  - State
+- - '###'
+  - 生命周期方法
+- - '####'
+  - constructor
+- - '####'
+  - static getDerivedStateFromProps
+- - '####'
+  - render
+- - '####'
+  - getSnapshotBeforeUpdate
+- - '####'
+  - componentDidMount
+- - '####'
+  - componentDidUpdate
+- - '####'
+  - componentWillUnmount
+- - '###'
+  - Refs
+- - '###'
+  - Context API
+- - '###'
+  - Context.Provider
+- - '###'
+  - useContext 钩子
+- - '###'
+  - useReducer 钩子
+- - '##'
+  - 结论
+- - '##'
+  - 问题
+- - '##'
+  - 服务端 React
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 服务端上的 React
+- - '###'
+  - 什么是服务端渲染？
+- - '###'
+  - 为什么需要服务端渲染？
+- - '###'
+  - 开始使用 SSR
+- - '###'
+  - ReactDOM
+- - '###'
+  - SSR 项目配置
+- - '###'
+  - 编写更多组件
+- - '###'
+  - SSR 中的路由
+- - '###'
+  - 客户端 React
+- - '###'
+  - ReactDOM.hydrate
+- - '###'
+  - 获取数据
+- - '###'
+  - 在服务器上获取数据
+- - '##'
+  - 结论
+- - '##'
+  - 问题
+- - '##'
+  - Next.js 简介
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 什么是 Next.js？
+- - '###'
+  - 为什么选择 Next.js？
+- - '###'
+  - 安装
+- - '###'
+  - Next.js 默认配置
+- - '###'
+  - 页面
+- - '###'
+  - 热代码重载
+- - '###'
+  - 静态文件服务
+- - '###'
+  - 路由
+- - '###'
+  - Link
+- - '###'
+  - '`Link` 只是一个高阶组件'
+- - '###'
+  - 关于 `Link` 的更多内容
+- - '###'
+  - '`Next.js` 组件'
+- - '###'
+  - '`Next.js` + CSS'
+- - '###'
+  - Styled JSX
+- - '###'
+  - 导入 CSS 文件
+- - '##'
+  - 结论
+- - '##'
+  - 问题
+- - '##'
+  - 更多 Next.js 内容
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - Next.js 应用程序
+- - '###'
+  - 启动项目
+- - '###'
+  - 切换到 TypeScript
+- - '###'
+  - Redux
+- - '###'
+  - getInitialProps
+- - '###'
+  - 创建应用
+- - '###'
+  - 使用 Next.js 的 API
+- - '###'
+  - 设置 Redux + Next.js
+- - '###'
+  - _app.js 文件
+- - '###'
+  - 派发 Redux Actions
+- - '###'
+  - useSelector 和 useDispatch
+- - '###'
+  - 创建仪表盘页面
+- - '###'
+  - 条件路由
+- - '###'
+  - 嵌套路由
+- - '###'
+  - 动态路由
+- - '###'
+  - 注册页面
+- - '##'
+  - 结论
+- - '##'
+  - 问题
+- - '####'
+  - Hello World
+- - '####'
+  - manifest.json 文件
+- - '####'
+  - 服务工作线程
+- - '####'
+  - 生命周期
+- - '###'
+  - 使用 Next.js 实现 PWA
+- - '####'
+  - 自定义 Next.js 服务器
+- - '#####'
+  - 'next(config: object)'
+- - '#####'
+  - getRequestHandler()
+- - '#####'
+  - serveStatic()
+- - '#####'
+  - _document.js
+- - '##'
+  - 结论
+- - '##'
+  - 问题
+- - '##'
+  - 前沿 React
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - React 是如何工作的？
+- - '###'
+  - 协调器
+- - '###'
+  - 渲染器
+- - '###'
+  - 从类组件迁移
+- - '###'
+  - 并发模式
+- - '###'
+  - 3. 并发
+- - '###'
+  - 选择并发模式
+- - '###'
+  - Suspense – 代码获取
+- - '###'
+  - Suspense – 数据获取
+- - '##'
+  - 结论
+- - '##'
+  - 问题

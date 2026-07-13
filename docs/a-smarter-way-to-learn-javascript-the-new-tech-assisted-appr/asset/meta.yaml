@@ -1,0 +1,41 @@
+name: A Smarter Way to Learn JavaScript. The new tech-assisted approach that requires
+  half the effort
+name_cn: JavaScript 智能学习法：事半功倍的新型技术辅助法
+slug: a-smarter-way-to-learn-javascript-the-new-tech-assisted-appr
+toc:
+- - '#'
+  - 函数
+- - '##'
+  - 函数：向它们传递数据
+- - '##'
+  - 函数：传递参数与返回数据
+- - '###'
+  - 从函数返回数据
+- - '###'
+  - 将函数用作表达式
+- - '##'
+  - 函数：局部变量与全局变量
+- - '#'
+  - 58 DOM
+- - '#'
+  - 59 DOM：父节点与子节点
+- - '#'
+  - 60 DOM：查找子节点
+- - '#'
+  - 61 DOM：垃圾伪影与 nodeType
+- - '#'
+  - 62 DOM：更多定位元素的方法
+- - '#'
+  - 63 DOM：获取目标的名称
+- - '#'
+  - 63 DOM：节点值
+- - '#'
+  - 64 DOM：计数元素
+- - '#'
+  - 65 DOM：属性
+- - '#'
+  - 66 DOM：属性名和属性值
+- - '##'
+  - 70 对象：属性
+- - '##'
+  - 71 对象：方法

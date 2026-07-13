@@ -1,0 +1,41 @@
+name: Ajax Construction Kit： Building Plug-and-Play Ajax Applications (Negus Live
+  Linux Series)
+name_cn: Ajax构建工具包：即插即用Ajax应用构建指南 (Negus Live Linux系列)
+slug: ajax-construction-kit-building-plug-and-play-ajax-applicatio
+toc:
+- - '##'
+  - 第 4 章 使用 Ajax 动态填充列表：股票选择器
+- - '##'
+  - 第 5 章 接入 RSS 新闻源
+- - '##'
+  - 第 6 章 通过自动完成读取用户心思
+- - '##'
+  - 第 7 章 通过实时验证创建响应式图形界面
+- - '##'
+  - 第 8 章 图像查看的杀手级界面
+- - '##'
+  - 第 9 章 通过精美弹出窗口呈现信息
+- - '##'
+  - 第 10 章 使用 Ajax 预测天气
+- - '##'
+  - 第 11 章 构建 Ajax 运费计算器
+- - '##'
+  - 第 12 章 为你的网站添加 Ajax 驱动的评分系统
+- - '##'
+  - 第三部分：附录
+- - '##'
+  - 附录 A Ajax 的过去、现在与未来
+- - '##'
+  - 附录 B 快速而粗略的 XMLHttpRequest 参考
+- - '##'
+  - 附录 C 使用 Live Linux CD
+- - '##'
+  - 第一部分：Ajax 训练营
+- - '###'
+  - 第 1 章：Ajax 与勇敢的新万维网
+- - '###'
+  - 第 2 章 Ajax 应用内部探秘
+- - '###'
+  - 第 3 章 动态加载网络数据：一个 XML 电子书阅读器
+- - '##'
+  - 第二部分：构建真实世界的 Ajax 应用程序

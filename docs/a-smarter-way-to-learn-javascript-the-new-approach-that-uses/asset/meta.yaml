@@ -1,0 +1,31 @@
+name: A Smarter Way to Learn JavaScript： The New Approach That Uses Technology to
+  Cut Your Effort in Half
+name_cn: JavaScript 智能学习法：利用技术将学习量减半的新方法
+slug: a-smarter-way-to-learn-javascript-the-new-approach-that-uses
+toc:
+- - '#'
+  - 16 数组：添加和删除元素
+- - '#'
+  - 17 数组：删除、插入和提取元素
+- - '#'
+  - 18 `for`循环
+- - '#'
+  - 19. `for` 循环：标志、布尔值、数组长度和循环中断
+- - '#'
+  - 20. 嵌套 `for` 循环
+- - '#'
+  - 30 控制小数位数
+- - '#'
+  - 31 获取当前日期和时间
+- - '#'
+  - 32 提取日期和时间的各个部分
+- - '#'
+  - 33 指定日期和时间
+- - '##'
+  - 函数：向函数传递数据
+- - '#'
+  - 37 函数：从函数返回数据
+- - '#'
+  - 39. `switch` 语句：如何开始
+- - '#'
+  - 40. `switch` 语句：如何完成

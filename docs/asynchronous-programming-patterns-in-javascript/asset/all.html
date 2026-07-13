@@ -1,0 +1,4171 @@
+<p><img src="cover.jpg" /></p>
+<p><span id="chapter1.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter1.xhtml_defined-introduction">Introduction</h1>
+<p>Asynchronous programming is everywhere in Javascript. This is the
+result of the fundamental choices that define how it works. In other
+languages, you can use multiple threads and that allows synchronous
+waiting, a crucial feature missing from Javascript. It is by design
+single-threaded and a wait operation stops everything, just think of the
+case where a long calculation freezes the UI.</p>
+<p>Without a way to wait for a later result synchronously, Javascript
+needs to use callbacks. Even simple things like waiting for a given
+duration requires a function that will be run when the time is up:</p>
+<pre class="highlight"><code>setTimeout(() =&gt; {
+  console.log(&quot;1 second passed!&quot;);
+}, 1000);</code></pre>
+<p>You can find this pattern everywhere, as most of the things are
+asynchronous in nature. Using <code>fetch</code> to make an HTTP call to
+a server is an async operation. Just like getting information about the
+available cameras and microphones with the <code>getUserMedia</code>
+call, as it needs to get permission from the user. Same with reading and
+writing files. While these have synchronous versions for now, they are
+terrible for performance. Or want to do some web scraping with
+Puppeteer? Every single instruction is asynchronous as all of them
+communicate with a remote process. Or for backend applications, reading
+or writing data to a database is also inherently async.</p>
+<p>And not only that some functions are async but all the other
+functions that call them need to be async too. A piece of functionality
+that requires making a network call, for example, is asynchronous, no
+matter how insignificant that call is compared to what other things the
+function is doing. Because of this, almost all Javascript applications
+consist of mostly asynchronous operations.</p>
+<p>Over the years, the language got a lot of features that make writing
+async code easier. Gone are the days of the so-called callback hell
+where a series of callback-based async calls made the program's
+structure very hard to understand and easy to inadvertently silence
+errors.</p>
+<p>First, Promises gained widespread support, flattening the structure
+of callbacks. Then async/await became the mainstream way of async
+programming, hiding a lot of the complexities of asynchronicity behind
+only two keywords: <code>async</code> and <code>await</code>.</p>
+<p>This improved readability and made it a lot easier for new
+programmers to write asynchronous code. Modern Javascript is still using
+the same single-threaded no-sync-wait event loop, but the program
+structure reflects that of a modern language.</p>
+<p>But asynchronous programming is inherently hard. While the language
+helps with the syntax to make understanding and writing code easier,
+asynchronicity introduces a lot of potential errors, most of them so
+subtle they only occur in special circumstances.</p>
+<p>Even though I've been working for many years with asynchronous code,
+some of the problems in this book took me a week to reach a solution I'm
+happy with. My goal with this book is that you'll have an easier time
+when you encounter similar problems by knowing what are the hard parts.
+This way you won't need to start from zero but you'll have a good idea
+of what are the roadblocks and the best practices.</p>
+<p>You'll notice that error handling is a recurring topic in this book.
+This is because it is an often overlooked concept and that leads to code
+that easily breaks. By knowing how errors in async functions and
+Promises work you'll write safer programs.</p>
+<h2 id="chapter1.xhtml_structure">Structure</h2>
+<p>This book is divided into two parts.</p>
+<p>The first chapter, <a
+href="#chapter2.xhtml_defined-getting-started-with-async-await">Getting
+started with async/await</a>, is an introduction to async/await and
+Promises and how each piece of the async puzzle fit together. The
+primary focus is async functions as they are the mainstream way to
+program asynchronously in Javascript. But async/await is a kind of magic
+without knowing about Promises, so you'll learn about them too.</p>
+<p>By the end of the first chapter, you'll have a good understanding of
+how to use async functions and how they work under the hood.</p>
+<p>The second part of the book consists of several common programming
+tasks and problems. You'll learn when that particular problem is
+important, how to solve it, and what are the edge cases. This gives you
+a complete picture so that when you encounter a similar problem you'll
+know how to approach it.</p>
+<p>This book is not meant to be read from cover to cover but to be used
+as a reference guide. With the patterns described in this book, my hope
+is that you'll see the underlying difficulty with async programming so
+when you work on your own solutions you'll know the pitfalls and best
+practices so you'll end up with more reliable code.</p>
+<p><span id="chapter2.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter2.xhtml_defined-getting-started-with-async-await">Getting
+started with async/await</h1>
+<p>In this chapter, we start with an introduction to asynchronous
+programming in Javascript. The main focus is async functions, as you'll
+likely use them more often, but you'll also learn how Promises work.</p>
+<h2 id="chapter2.xhtml_async-functions">Async functions</h2>
+<p>Normal functions return a result with the <code>return</code>
+keyword:</p>
+<pre class="highlight"><code>const fn = () =&gt; {
+  return 5;
+}
+
+fn();
+// 5</code></pre>
+<p>Async functions, in contrast, return a <code>Promise</code>:</p>
+<pre class="highlight"><code>const asyncFn = async () =&gt; {
+  return 5;
+}
+
+asyncFn();
+// Promise</code></pre>
+<p>You can make any function async with the <code>async</code> keyword,
+and there are a lot of functions that return a Promise instead of a
+result.</p>
+<p>For example, to read a file from the filesystem, you can use
+<code>fs.promises</code>, a variant of the <code>fs</code> functions
+returning Promises:</p>
+<pre class="highlight"><code>const fs = require(&quot;fs&quot;);
+
+fs.promises.readFile(&quot;test.js&quot;);
+// Promise</code></pre>
+<p>Or convert an image to jpeg with the <a
+href="https://www.npmjs.com/package/sharp">sharp</a> library, which also
+returns a Promise:</p>
+<pre class="highlight"><code>const sharp = require(&quot;sharp&quot;);
+
+sharp(&quot;image.png&quot;)
+  .jpeg()
+  .toFile(&quot;image.jpg&quot;);
+// Promise</code></pre>
+<p>Or make a network request with <code>fetch</code>:</p>
+<pre class="highlight"><code>fetch(&quot;https://advancedweb.hu&quot;);
+// Promise</code></pre>
+<h3 id="chapter2.xhtml_how-to-use-the-promise">How to use the
+Promise</h3>
+<p>An async function still has a return value, and the Promise holds
+this result. To get access to the value, <strong>attach a
+callback</strong> using the <code>then()</code> function. This callback
+will be called with the result of the function.</p>
+<p>To get the file contents after the <code>readFile</code>:</p>
+<pre class="highlight"><code>const fs = require(&quot;fs&quot;);
+
+fs.promises.readFile(&quot;test.js&quot;).then((result) =&gt; {
+  console.log(result);
+  // Buffer
+});</code></pre>
+<p>Similarly, to get the result of our simple async function, use
+<code>then()</code>:</p>
+<pre class="highlight"><code>const asyncFn = async () =&gt; {
+  return 5;
+}
+
+asyncFn().then((res) =&gt; {
+  console.log(res);
+  // 5
+});</code></pre>
+<h3 id="chapter2.xhtml_the-benefits-of-promises">The benefits of
+Promises</h3>
+<p>But why complicate a function call with Promises? A normal function
+just returns a value that can be used on the next line, without the need
+for any callbacks.</p>
+<p>The benefit of returning a Promise instead of a value is that the
+<strong>result might not be ready by the time the function
+returns</strong>. The callback can be called much later, but the
+function must return immediately. This extends what a function can
+do.</p>
+<pre class="highlight"><code>// sync
+fn();
+// result is ready
+
+// async
+asyncFn().then(() =&gt; {
+  // result is ready
+})
+// result is pending</code></pre>
+<p>In many cases, a synchronous result is not possible. For example,
+making a network request takes forever compared to a function call. With
+Promises, it does not matter if something takes a lot of time or
+produces a result immediately. In both cases, the <code>then()</code>
+function will be called when the result is ready.</p>
+<figure class="plantuml image">
+<img
+src="219846a27f36124ca15767dea9c7b8b464f160923c5e3e283f065d57c1088b38.png"
+style="width: 226px;" />
+<figcaption>An async function returns a Promise</figcaption>
+</figure>
+<p>Using standardized Promises also allows other constructs to build on
+it. As we've seen, the <code>async</code> keyword makes a function
+return a Promise instead of a value.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-success">
+<div class="tbox-header">
+Recap
+</div>
+<div class="tbox-body">
+<p>Async functions return Promises which are values that are available
+sometime in the future.</p>
+</div>
+</div>
+</div>
+<h3 id="chapter2.xhtml_defined-the-await-keyword">The await keyword</h3>
+<p>Using Promises with callbacks requires changes to the code structure
+and it makes the code harder to read.</p>
+<p>Instead of a flat structure of synchronous function calls:</p>
+<pre class="highlight"><code>const user = getUser();
+const permissions = getPermissions();
+const hasAccess = checkPermissions(user, permissions);
+if (hasAccess) {
+  // handle request
+}</code></pre>
+<p>Promises need callbacks:</p>
+<pre class="highlight"><code>getUser().then((user) =&gt; {
+  getPermissions().then((permissions) =&gt; {
+    const hasAccess = checkPermissions(user, permissions);
+    if (hasAccess) {
+      // handle request
+    }
+  });
+});</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Note
+</div>
+<div class="tbox-body">
+<p>Promises support a flat structure when they are invoked sequentially,
+this is their main selling point over traditional callbacks. For
+example, a series of async calls can process an object:</p>
+<pre class="highlight"><code>getUser()
+  .then(getPermissionsForUser)
+  .then(checkPermission)
+  .then((allowed) =&gt; {
+    // handle allowed or not
+  });</code></pre>
+<p>This is an almost flat structure which we'll detail in the <a
+href="#chapter2.xhtml_defined-chaining-promises">Chaining Promises</a>
+chapter, but a callback is still needed at the end. The
+<code>await</code> keyword eliminates the need for that.</p>
+</div>
+</div>
+</div>
+<p>To solve this without losing the advantages of Promises, async
+functions can use the <code>await</code> keyword. It <strong>stops the
+function until the Promise is ready</strong> and returns the result
+value.</p>
+<pre class="highlight"><code>const asyncFn = async () =&gt; {
+  return 5;
+}
+
+await asyncFn();
+// 5</code></pre>
+<p>The above code that uses callbacks can use <code>await</code> instead
+which leads to a more familiar structure:</p>
+<pre class="highlight"><code>const user = await getUser();
+const permissions = await getPermissions();
+const hasAccess = checkPermissions(user, permissions);
+if (hasAccess) {
+  // handle request
+}</code></pre>
+<p>The <code>await</code> keyword that <strong>waits for async
+results</strong> makes the code look almost like it's synchronous, but
+with all the benefits of Promises.</p>
+<p>Note that <code>await</code> stops the execution of the function,
+which seems like something that can not happen in Javascript. But under
+the hood, it still uses the <code>then()</code> callbacks and since
+async functions return Promises they don't need to provide a result
+immediately. This allows halting the function without major changes to
+how the language works.</p>
+<h3 id="chapter2.xhtml_async-function-examples">Async function
+examples</h3>
+<p>Async functions with <code>await</code> are powerful. They make a
+complicated and asynchronous workflow seem easy and familiar, hiding all
+the complexities of results arriving later.</p>
+<p>Browser automation is a prime example. The <a
+href="https://www.npmjs.com/package/puppeteer">Puppeteer</a> project
+allows starting Chromium and driving it with the DevTools protocol.</p>
+<p>Taking a screenshot of a webpage is only a few lines:</p>
+<pre class="highlight"><code>const browser = await puppeteer.launch(options);
+const page = await browser.newPage();
+const response = await page.goto(url);
+const img = await page.screenshot();
+await browser.close();</code></pre>
+<p>This code hides a lot of complexity. It starts a browser, then sends
+commands to it, all asynchronous since the browser is a separate
+process. But the end result is an image buffer containing the
+screenshot.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Note
+</div>
+<div class="tbox-body">
+<p>The above code leaves the browser running if there is an error during
+execution. You'll learn how to handle closing resources in the <a
+href="#chapter8.xhtml_defined-async-disposer">The async disposer
+pattern</a> chapter.</p>
+</div>
+</div>
+</div>
+<p>Another example is to interface with databases. A remote service
+always requires network calls and that means asynchronous results.</p>
+<p>This code, used in an AWS Lambda function, updates a user's avatar
+image:</p>
+<pre class="highlight"><code>// move object out of the pending directory
+await s3.copyObject({/*...*/}).promise();
+await s3.deleteObject({/*...*/}).promise();
+
+// get the current avatar image
+const oldAvatar = (await dynamodb.getItem({/*...*/}).promise())
+  .Item.Avatar.S;
+
+// update the user&#39;s avatar
+await dynamodb.updateItem({/*...*/}).promise();
+// delete the old image
+await s3.deleteObject({/*...*/}).promise();
+
+return {
+  statusCode: 200,
+};</code></pre>
+<p>It makes calls to the AWS S3 service to move objects, and to the
+DynamoDB database to read and modify data. Both of these are remote
+services, but all the complexities are hidden behind the
+<code>await</code>s.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-success">
+<div class="tbox-header">
+Recap
+</div>
+<div class="tbox-body">
+<p>The <code>await</code> keyword stops the function until the future
+result becomes available.</p>
+</div>
+</div>
+</div>
+<h3 id="chapter2.xhtml_defined-chaining-promises">Chaining Promises</h3>
+<p>We've seen that when an async function returns a value it will be
+wrapped in a Promise and the <code>await</code> keyword extracts the
+value from it. But what happens when an async function returns a
+Promise? Would that mean you need to use two <code>await</code>s?</p>
+<p>Consider this code:</p>
+<pre class="highlight"><code>const f1 = async () =&gt; {
+  return 2;
+};
+
+const f2 = async () =&gt; {
+  return f1();
+}
+
+const result = await f2();</code></pre>
+<p>Strictly following the process described in the previous chapters,
+<code>f1()</code> returns <code>Promise&lt;2&gt;</code>, and
+<code>f2()</code> returns <code>Promise&lt;Promise&lt;2&gt;&gt;</code>,
+so the value of <code>result</code> will be
+<code>Promise&lt;2&gt;</code> instead of <code>2</code>.</p>
+<p>But this is not what happens. When an async function returns a
+Promise, it returns it without adding another layer. It does not matter
+if it returns a value or a Promise, it will always be a Promise and it
+will always resolve with the final value and not another Promise.</p>
+<p>This works the same for Promise chains too. The <code>.then()</code>
+callback is also wrapped in a Promise if it's not one already so you can
+chain them easily:</p>
+<pre class="highlight"><code>getUser()
+  .then(async function getPermissionsForUser(user) {
+    const permissions = await // ...;
+    return permissions;
+  })
+  .then(async function checkPermission(permissions) {
+    const allowed = await // ...;
+    return allowed;
+  })
+  .then((allowed) =&gt; {
+    // handle allowed or not
+  });</code></pre>
+<p>The <code>getUser</code> function returns a
+<code>Promise&lt;User&gt;</code>, then the
+<code>getPermissionsForUser</code> gets the user object (the resolved
+value), then returns the permission set. The next call,
+<code>checkPermission</code> gets the permissions, and so on.</p>
+<p>A useful analog is how the <code>flatMap</code> function for an array
+works. It does not matter if it returns a value or an array, the end
+result will always be an array with values. It is a <code>map</code>,
+followed by a <code>flat</code>.</p>
+<pre class="highlight"><code>[1].flatMap((a) =&gt; 5) // [5]
+[1].flatMap((a) =&gt; [5]) // [5]
+
+[1].flat() // [1]
+[[1]].flat() // [1]</code></pre>
+<p>When I'm not sure what a Promise chain returns, I mentally translate
+Promises to arrays where every async function return a flattened array
+with its result and an <code>await</code> is getting the first
+element:</p>
+<pre class="highlight"><code>const f1 = () =&gt; {
+  return [2].flat();
+};
+
+const f2 = () =&gt; {
+  return [f1()].flat();
+}
+
+const result = f2()[0]; // 2</code></pre>
+<p>A Promise chain then becomes a series of <code>flatMap</code>s:</p>
+<pre class="highlight"><code>const getUser = () =&gt; [&quot;user&quot;];
+
+getUser()
+  .flatMap(function getPermissionsForUser(user) {
+    // user = &quot;user&quot;
+    const permissions = &quot;permissions&quot;;
+    return permissions;
+  })
+  .flatMap(function checkPermission(permissions) {
+    // permissions = &quot;permissions&quot;
+    const allowed = true;
+    return allowed;
+  })
+  .flatMap((allowed) =&gt; {
+    // allowed = true
+    // handle allowed or not
+  });</code></pre>
+<p>This eliminates most of the complexities of asynchronicity and is a
+lot easier to reason about.</p>
+<h2 id="chapter2.xhtml_promises">Promises</h2>
+<p>So far we've discussed how to write Promise-producing async functions
+and how to wait for a Promise to have a value. But how to create
+Promises in cases where there are no existing Promises to build on?</p>
+<p>To know this, we need to discuss how asynchronicity works in
+Javascript and how to construct Promises from callbacks.</p>
+<h3 id="chapter2.xhtml_callbacks">Callbacks</h3>
+<p>Async results come in the form of callbacks. These are like the
+parameter of the <code>then()</code> function in Promises but are called
+when a particular event happens. For example, the simplest callback is
+the <code>setTimeout</code> call that waits a given number of
+milliseconds then invokes the argument function:</p>
+<pre class="highlight"><code>setTimeout(() =&gt; {
+  // 1s later
+}, 1000);</code></pre>
+<p>This pattern of using callbacks is everywhere in Javascript.</p>
+<p>The gapi, the library to use Google services, <a
+href="https://github.com/google/google-api-javascript-client/blob/master/docs/reference.md#----gapiloadlibraries-callbackorconfig------">needs
+a callback</a> when it loads a client library:</p>
+<pre class="highlight"><code>gapi.load(&quot;client:auth2&quot;, () =&gt; {
+  // auth2 client loaded
+});</code></pre>
+<p>Similarly, event listeners, such as a click handler, calls a function
+when the event happened:</p>
+<pre class="highlight"><code>const button = document.querySelector(&quot;#button&quot;);
+
+button.addEventListener(&quot;click&quot;, () =&gt; {
+  // button is clicked
+}, {once: true})</code></pre>
+<p>The problem with callbacks is that we are back to square one as
+instead of having a flat structure we have nesting again.</p>
+<p>Fortunately, there is a simple way to convert callbacks to Promises
+and then use them with <code>await</code>.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Event listeners and Promises
+</div>
+<div class="tbox-body">
+<p>Eagle-eyed readers might have spotted the <code>{once: true}</code>
+part in the last example. Event listeners are inherently different than
+async functions as they represent <em>multiple events</em> instead of a
+single result value. Because of this, you can not replace them with
+Promises.</p>
+<p>The exception is when there is exactly one event, as in the above
+example. In a sense, it works similarly to the timeout or the gapi load
+function, as the callback is invoked when the event happens.</p>
+</div>
+</div>
+</div>
+<h3 id="chapter2.xhtml_defined-the-promise-constructor">The Promise
+constructor</h3>
+<p>Async functions return Promises but you can only use
+<code>await</code> to wait for other Promises and not for callbacks. To
+make a Promise, you need to use its constructor:</p>
+<pre class="highlight"><code>new Promise((res) =&gt; {
+  // call res when the Promise is ready
+});</code></pre>
+<p>Calling the <code>res</code> callback signals the Promise that the
+result is ready. This is the same as when an async function returns.</p>
+<p>To convert the <code>setTimeout</code> to a Promise, wrap it in the
+constructor and use <code>res</code> as the callback:</p>
+<pre class="highlight"><code>await new Promise((res) =&gt; {
+  setTimeout(res, 1000);
+});
+// 1s later
+
+// same as
+await new Promise((res) =&gt; {
+  setTimeout(() =&gt; {
+    res();
+  }, 1000);
+});</code></pre>
+<p>Now that it is a Promise, <code>await</code> works just like for
+other async functions.</p>
+<p>Similarly, the two other examples are also easy to promisify:</p>
+<pre class="highlight"><code>await new Promise((res) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, res);
+});
+// auth2 client loaded</code></pre>
+<pre class="highlight"><code>const button = document.querySelector(&quot;#button&quot;);
+
+await new Promise((res) =&gt; {
+  button.addEventListener(&quot;click&quot;, res, {once: true});
+});
+// button is clicked</code></pre>
+<p>With Promises instead of callbacks it's easy to use
+<code>await</code> and make a sequence of async operations. To load the
+auth2 client when the button is clicked:</p>
+<pre class="highlight"><code>await new Promise((res) =&gt; {
+  button.addEventListener(&quot;click&quot;, res, {once: true});
+});
+// the button is clicked
+await new Promise((res) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, res);
+});
+// the gapi library is loaded</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Converting between callbacks and Promises
+</div>
+<div class="tbox-body">
+<p>You'll learn more about this in the <a
+href="#chapter5.xhtml_defined-convert-between-promises-and-callbacks">Convert
+between Promises and callbacks</a> chapter.</p>
+</div>
+</div>
+</div>
+<h3 id="chapter2.xhtml_promise-states">Promise states</h3>
+<p>As a Promise holds a future value it can be in several states.</p>
+<p>When you create a Promise, it starts in the <strong>Pending</strong>
+state. It is before the resolve/reject callback is called or the async
+function finished.</p>
+<p>When there is a value, the Promise transitions into the
+<strong>Resolved</strong> state. It is when the <code>await</code> in
+unblocked and the async function continues to run.</p>
+<p>If there is an error, the Promise goes into the
+<strong>Rejected</strong> state. It is when the <code>await</code>
+throws an exception.</p>
+<p>The Resolved and the Rejected states are collectively called
+<strong>Fulfilled</strong> (or <strong>Settled</strong>). When a Promise
+is in this state it's already finished and produced a value or an
+error.</p>
+<figure class="plantuml image">
+<img
+src="c7bf165c038961ff3793fb930dc7f0f0e4deca1a722e24292ec3555a5c09e142.png"
+style="width: 252px;" />
+<figcaption>Promise states</figcaption>
+</figure>
+<h3 id="chapter2.xhtml_result-value">Result value</h3>
+<p>The examples above all used the Promise <code>res</code> function to
+signal when an async operation is ready and did not produce any value.
+To also return a value, <strong>pass it to the <code>res</code>
+call</strong>.</p>
+<pre class="highlight"><code>const value = new Promise((res) =&gt; {
+  res(5);
+});
+// 5</code></pre>
+<p>A more complicated example, the next Promise shows the Google Drive
+file picker and resolves with the selected file. This seems complicated,
+but the underlying idea is the same: create a new Promise, then call the
+<code>res</code> method when the result is ready.</p>
+<pre class="highlight"><code>const folder = await new Promise((res) =&gt; {
+  const picker = new google.picker.PickerBuilder()
+    // ... configuration ...
+    .setCallback((data) =&gt; {
+      if (/* selected action*/) {
+        // a folder is selected
+        const selectedFolder = ...
+
+        // resolve the Promise
+        res(selectedFolder);
+      }
+    })
+    .build();
+  picker.setVisible(true);
+});
+// folder is the selected folder</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Note
+</div>
+<div class="tbox-body">
+<p>You can return only one value with the <code>res()</code> call.
+You'll learn about ways to return multiple in the <a
+href="#chapter4.xhtml_defined-returning-multiple-values">Returning
+multiple values</a> chapter.</p>
+</div>
+</div>
+</div>
+<h2 id="chapter2.xhtml_error-handling">Error handling</h2>
+<p>So far we've been discussing async functions when everything is going
+fine. No database timeout, no validation errors, no sudden loss of
+network. But these things happen, so we need to prepare for them too.
+Without proper error propagation, failures stall Promises and async
+functions, stopping them forever.</p>
+<p>With synchronous functions, errors happen when something
+<code>throw</code>s them, and they bubble up until there is a
+<code>try-catch</code>:</p>
+<pre class="highlight"><code>const fn = () =&gt; {
+  throw new Error(&quot;Something bad happened&quot;);
+}
+
+try {
+  fn();
+}catch(e) {
+  // handle error
+}</code></pre>
+<p>Async functions work similarly so that when there is an error thrown
+it will go up until a <code>try-catch</code>. When there is an
+asynchronous error (we'll look into how they work in the next chapter),
+you can handle it with the same familiar structure:</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  throw new Error(&quot;Something bad happened&quot;);
+}
+
+try {
+  await fn();
+}catch(e) {
+  // handle error
+}</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Note
+</div>
+<div class="tbox-body">
+<p>Errors are thrown during the <code>await</code> and not when the
+function is called:</p>
+<pre class="highlight"><code>const asyncFn = async () =&gt; {
+  throw new Error(&quot;Something bad happened&quot;);
+}
+
+const res = asyncFn(); // no error here
+
+try {
+  await res; // error
+}catch(e) {
+  // handle error
+}</code></pre>
+</div>
+</div>
+</div>
+<h3 id="chapter2.xhtml_error-callback-in-the-promise-constructor">Error
+callback in the Promise constructor</h3>
+<p>But when you use the Promise constructor, you need to pay attention
+to propagate the errors.</p>
+<p>Let's revisit our previous examples! The <code>gapi.load</code> loads
+a client library that can be used with Google services and it needs a
+callback to notify when it's finished. This is easy to turn into a
+Promise with the Promise constructor:</p>
+<pre class="highlight"><code>await new Promise((res) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, res);
+});
+// auth2 loaded</code></pre>
+<p>But what happens when there is an error? Maybe the network is down
+and the client library can not be loaded. In this case, the callback
+function is never called and the Promise is never finished. An
+<code>await</code> waiting for it will wait forever.</p>
+<pre class="highlight"><code>await new Promise((res) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, res); // error
+});
+// never happens</code></pre>
+<p>To implement proper error propagation, we need two things. First, a
+way to signal the Promise that an error happened, and second, a way to
+detect that error.</p>
+<h4 id="chapter2.xhtml_rejecting-a-promise">Rejecting a Promise</h4>
+<p>The Promise constructor provides a second callback that can signal
+that an error happened:</p>
+<pre class="highlight"><code>new Promise((res, rej) =&gt; {
+  // call res() when everything is fine
+  // call rej() when there is an error
+});</code></pre>
+<p>When the <code>rej</code> function is called it behaves similarly to
+an async function throwing an error:</p>
+<pre class="highlight"><code>try {
+  await new Promise((res, rej) =&gt; {
+    rej(); // signal error
+  });
+}catch(e) {
+  // handle error
+}</code></pre>
+<p>Similar to the <code>res</code> function, you can pass the error
+object which will be the rejection reason:</p>
+<pre class="highlight"><code>try {
+  await new Promise((res, rej) =&gt; {
+    rej(new Error(&quot;Something bad happened&quot;));
+  });
+}catch(e) {
+  console.log(e.message) // Something bad happened
+}</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+What is an error
+</div>
+<div class="tbox-body">
+<p>What constitutes an error is up to the implementation. For example,
+<code>fetch</code> throws an error when the connection can not be
+established, but it does not when the response code is outside the 2xx
+range.</p>
+<pre class="highlight"><code>try {
+  const response = await fetch(options);
+  if (response.ok) {
+    // request successful
+  }else {
+    // error response
+  }
+} catch (e) {
+  // error while sending the request
+}</code></pre>
+</div>
+</div>
+</div>
+<p>Exceptions thrown in the constructor also reject the Promise:</p>
+<pre class="highlight"><code>new Promise(() =&gt; {
+  throw Error(&quot;something bad happened&quot;);
+});
+// rejected with error</code></pre>
+<p>This behavior makes most programming errors to propagate correctly.
+But unlike the <code>reject</code> callback, this only handles
+synchronous errors.</p>
+<h4 id="chapter2.xhtml_detecting-errors">Detecting errors</h4>
+<p>Now that we have a way to signal an error to the Promise, let's see
+how to adapt the gapi example to take advantage of this construct!</p>
+<p>In this specific case, the callback can also be an <a
+href="https://github.com/google/google-api-javascript-client/blob/master/docs/reference.md#----gapiloadlibraries-callbackorconfig------">object</a>
+with <code>callback</code> and <code>onerror</code> handlers:</p>
+<pre class="highlight"><code>await new Promise((res, rej) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, {callback: res, onerror: rej});
+});</code></pre>
+<p>Now if there is an error during the load process the <code>rej</code>
+function is called and the <code>await</code> throws an error.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Note
+</div>
+<div class="tbox-body">
+<p>How the underlying function signals results and errors can vary from
+library-to-library. You'll learn more about it in the <a
+href="#chapter5.xhtml_defined-callback-styles">Callback styles</a>
+chapter.</p>
+</div>
+</div>
+</div>
+<h3
+id="chapter2.xhtml_defined-error-propagation-in-promise-chains">Error
+propagation in Promise chains</h3>
+<p>While async functions use the same <code>try..catch</code> structure
+as normal functions, Promise chains work differently. The
+<code>then</code> callback gets an additional callback, one that is
+called when a previous Promise is rejected:</p>
+<pre class="highlight"><code>const rejectedPromise = new Promise((res, rej) =&gt; {
+  rej(new Error(&quot;rejected&quot;));
+});
+
+rejectedPromise.then(undefined, (error) =&gt; {
+  // error = &quot;rejected&quot;
+  // handle error
+});</code></pre>
+<p>Errors in Promise chains move to the next error handler, skipping all
+previous steps. This makes it easy to collect errors from multiple steps
+and handle them in a single place:</p>
+<pre class="highlight"><code>getUser()
+  .then(getPermissionsForUser)
+  .then(checkPermission)
+  .then((allowed) =&gt; {
+    // handle allowed or not
+  }).then(undefined, (error) =&gt; {
+    // there was an error in one of the previous steps
+  });</code></pre>
+<p>A useful way to think about error propagation through the chain is to
+think about it as 2 parallel railway tracks with stations. A station is
+a <code>then</code> callback, and its result determines which track the
+train continues.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-success">
+<div class="tbox-header">
+Tip
+</div>
+<div class="tbox-body">
+<p>Instead of <code>.then(undefined, (error) =&gt; {...})</code>, you
+can use the shorthand <code>.catch((error) =&gt; {...})</code>.</p>
+</div>
+</div>
+</div>
+<figure class="plantuml image">
+<img
+src="1570b41fac08486b3d036c0da65981b6f9791bf94e4597cbb52302155f72e9e3.png"
+style="width: 333px;" />
+<figcaption>Error handler in a Promise chain</figcaption>
+</figure>
+<p>This way of thinking allows untangling way more complicated chains.
+Let's dissect what's happening here:</p>
+<pre class="highlight"><code>getPromise()
+  .then(handler1)
+  .then(handler2, catch1)
+  .then(handler3)
+  .then(undefined, catch2)
+  .then(handler4)</code></pre>
+<p>This yields the following diagram:</p>
+<figure class="plantuml image">
+<img
+src="c354aee4c19744ca4aa52500db8678dff726cf80330cb30356faa176a2fc1d0c.png"
+style="width: 288px;" />
+<figcaption>Diagram of the promise chain</figcaption>
+</figure>
+<p>It looks complicated, but there are simple rules:</p>
+<ul>
+<li>Each function, no matter which track it is, can move the execution
+to the OK as well as the error tracks</li>
+<li>When a handler is missing (the diamonds in the above diagram) the
+execution stays on the same track</li>
+</ul>
+<p>For example, if <code>getPromise()</code> is rejected, the next
+function will be <code>catch1</code>. If it resolves, then
+<code>handler3</code> is the next one. If it resolves,
+<code>handler4</code> is called, and it will be the result of the whole
+chain, no matter if it resolves or rejects.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Error handlers
+</div>
+<div class="tbox-body">
+<p>Notice this line:</p>
+<pre class="highlight"><code>.then(handler2, catch1)</code></pre>
+<p>A common source of errors is that if there is an error in
+<code>handler2</code> then <code>catch1</code> <strong>won't
+run</strong>. Each error handler handles errors from <em>previous
+steps</em>.</p>
+</div>
+</div>
+</div>
+<p><span id="chapter3.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter3.xhtml_defined-parallel-and-sequential-processing">Parallel
+and sequential processing</h1>
+<p>When you use <code>await</code> in an async function, it stops the
+execution until the Promise is resolved. This makes each line wait for
+the previous, which yields a code that looks almost like a synchronous
+one:</p>
+<pre class="highlight"><code>await s3.copyObject({/*...*/}).promise();
+await s3.deleteObject({/*...*/}).promise();</code></pre>
+<p>The above code copies an object, then it deletes one. In case you
+wanted to <em>move</em> the object, it is the desirable chain of events
+as you want the copy operation to finish before deleting the
+original.</p>
+<h2 id="chapter3.xhtml_parallel-processing-with-promiseall">Parallel
+processing with Promise.all</h2>
+<p>But what if there is an unrelated call, such as an update to a
+database?</p>
+<pre class="highlight"><code>await s3.copyObject({/*...*/}).promise();
+await s3.deleteObject({/*...*/}).promise();
+
+await dynamodb.updateItem({/*...*/}).promise();</code></pre>
+<p>While the <code>dynamodb.updateItem</code> has nothing to do with the
+S3 object, it still waits for the move operation (copy + delete) to
+finish. This makes the overall process longer than necessary.</p>
+<figure class="plantuml image">
+<img
+src="3e190789d246b3a99678b872e19dca5e25722f9e39f7b5d615d91a516632adc7.png"
+style="width: 451px;" />
+<figcaption>Serial execution</figcaption>
+</figure>
+<p>In this case, a better implementation is to run the two parts in
+parallel. To make it easier to see, let's group the two operations with
+async functions:</p>
+<pre class="highlight"><code>const moveObject = async () =&gt; {
+  await s3.copyObject({/*...*/}).promise();
+  await s3.deleteObject({/*...*/}).promise();
+};
+
+const updateDatabase = async () =&gt; {
+  await dynamodb.updateItem({/*...*/}).promise();
+};</code></pre>
+<p>Javascript has a built-in convenience method to run things in
+parallel. This is the <code>Promise.all</code>, that gets a
+<em>collection of Promises</em> and returns a Promise with all the
+results. Whenever you want to run multiple things concurrently, this is
+the tool to use.</p>
+<p>To use it to run the two operations in parallel, use:</p>
+<pre class="highlight"><code>await Promise.all([moveObject(), updateDatabase()]);</code></pre>
+<figure class="plantuml image">
+<img
+src="327e086a88b6fea910123a1487b792143e5f047bb4e62f2c1be1ef125182b2c7.png"
+style="width: 511px;" />
+<figcaption>Parallel execution</figcaption>
+</figure>
+<p>There are multiple things to notice here. First,
+<code>Promise.all</code> gets <em>Promises</em>. Remember that
+<em>calling</em> an async function returns a Promise, so don't forget to
+call the functions you want to run.</p>
+<p>Second, it needs a <em>collection of Promises</em>, which is usually
+an array. Notice the <code>([ ... ])</code> structure for the call to
+<code>Promise.all</code>.</p>
+<p>And third, <code>await</code> is only used for the
+<code>Promise.all</code> and not for the individual async function
+calls. This is because you want to wait for <em>all of them</em> to
+finish before moving on.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Tip
+</div>
+<div class="tbox-body">
+<p><code>await</code> stops the async function execution. In the case of
+<code>Promise.all</code> you want to stop only once, to wait for all the
+input Promises to settle. That's why you only need one
+<code>await</code>.</p>
+</div>
+</div>
+</div>
+<h3 id="chapter3.xhtml_results">Results</h3>
+<p>In the above example none of the operations returned a value. Let's
+see how to handle values returned from <code>Promise.all</code>!</p>
+<p>For the sake of illustration, let's say there are two unrelated piece
+of data an async function needs: a user object and a list of groups.
+Both of these are stored in a database and thus they are available via
+async functions.</p>
+<pre class="highlight"><code>const getUser = async () =&gt; {
+  // gets the user object
+  return user;
+}
+const getGroups = async () =&gt; {
+  // gets the groups
+  return groups;
+}</code></pre>
+<p>Notice in this example that the <code>getGroups</code> function does
+not need the user object. This makes them able to run in parallel.</p>
+<p>A serial implementation calls these functions separately and stores
+their results in variables:</p>
+<pre class="highlight"><code>const user = await getUser();
+const groups = await getGroups();
+
+// user and groups are available</code></pre>
+<p>There are two <code>await</code>s here, so the function will stop
+twice. No matter which you put first, the total execution time will be
+the sum of the calls. As we've seen previously, the
+<code>Promise.all</code> runs the Promises returned by the async
+function in parallel. It also returns a Promise with an <em>array</em>
+of the results.</p>
+<p>To run the two calls in parallel and extract the results, use the
+array destructuring operator:</p>
+<pre class="highlight"><code>const [user, groups] = await Promise.all([
+  getUser(),
+  getGroups(),
+]);
+
+// user and groups are available</code></pre>
+<h3 id="chapter3.xhtml_errors-in-promiseall">Errors in Promise.all</h3>
+<p>When <em>any</em> of the input Promises are rejected then the
+resulting Promise will be rejected as well. This behavior allows errors
+to propagate seamlessly.</p>
+<pre class="highlight"><code>try {
+  const [user, groups] = await Promise.all([
+    getUser(), // getUser returns a value
+    getGroups(), // getGroups throws an exception
+  ]);
+} catch(e) {
+  // handle error thrown by either of calls
+}</code></pre>
+<p>Even when async functions are independent in a sense that one does
+not use the result of the other, you might not want to run them in
+parallel in some cases. In the example above with the
+<code>moveObject</code> and <code>updateDatabase</code> async functions,
+you might not want to run the latter if the former is failed.</p>
+<pre class="highlight"><code>await Promise.all([moveObject(), updateDatabase()]);</code></pre>
+<p>When this code is run, it can produce the following results:</p>
+<table class="prevp">
+<thead>
+<tr>
+<th style="text-align: center;">Object is moved</th>
+<th style="text-align: center;">Database is updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">‐</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>‐</strong></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">‐</td>
+<td style="text-align: center;">‐</td>
+</tr>
+</tbody>
+</table>
+<p>By using serial execution, you can make sure that the later
+operations won't run unless the earlier ones are finished:</p>
+<pre class="highlight"><code>await moveObject();
+await updateDatabase();</code></pre>
+<p>When this code is run, the database is guaranteed to be unchanged if
+the move object failed:</p>
+<table class="prevp">
+<thead>
+<tr>
+<th style="text-align: center;">Object is moved</th>
+<th style="text-align: center;">Database is updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">‐</td>
+</tr>
+<tr>
+<td style="text-align: center;">‐</td>
+<td style="text-align: center;">‐</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chapter3.xhtml_early-init">Early init</h2>
+<p>When you create a Promise, it starts executing. But the async
+function only stops when it encounters an <code>await</code>. This
+allows a structure that starts the async processing early but only stops
+for it when the result is needed.</p>
+<p>For example, consider this code, which waits for the function to
+finish before moving on:</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+const fn = async () =&gt; {
+  console.log(&quot;starting&quot;);
+  await wait(100);
+  console.log(&quot;end&quot;);
+}
+
+await fn();
+console.log(&quot;after&quot;);
+
+// starting
+// end
+// after</code></pre>
+<figure class="plantuml image">
+<img
+src="8d4d58f7f1e0491f45e90876feb98157026c307f5ffe6bc7a5c07595adeaa4f7.png"
+style="width: 194px;" />
+<figcaption>Eager await</figcaption>
+</figure>
+<p>But when the <code>await</code> is later, the order of execution
+changes:</p>
+<pre class="highlight"><code>const fnProm = fn();
+console.log(&quot;after&quot;);
+await fnProm;
+
+// starting
+// after
+// end</code></pre>
+<p>This allows an easy way to run things "in the background" while also
+getting the results when they are needed.</p>
+<figure class="plantuml image">
+<img
+src="fa9d1f0ccc5366e0d05176dd3b8d30ec61b0c3928005a76744076d57359459e3.png"
+style="width: 194px;" />
+<figcaption>Deferred await</figcaption>
+</figure>
+<p>For example, a web server might do several things when a request
+arrives, one of them to fetch the user session from a cookie and a
+session store.</p>
+<pre class="highlight"><code>const http = require(&quot;http&quot;);
+
+const getUserSession = async (req) =&gt; {
+  // extract the session cookie
+  // fetch the session from Redis
+  // return the user object
+};
+
+const server = http.createServer(async (req, res) =&gt; {
+  // validate request
+  // fetch configuration
+  const session = await getUserSession(req);
+  // handle request
+});
+
+server.listen(8080);</code></pre>
+<p>In the above example, everything happens sequentially. The server
+processes the request and then fetches the user session.</p>
+<p>To start getting the user session right after the request comes, you
+can separate calling the async function and the <code>await</code>:</p>
+<pre class="highlight"><code>const server = http.createServer(async (req, res) =&gt; {
+  const sessionProm = getUserSession(req);
+  // validate request
+  // fetch configuration
+  const session = await sessionProm;
+  // handle request
+});</code></pre>
+<p>In this case, the session is still available when it's needed, but
+the process starts sooner. This reduces the total time the user
+experiences.</p>
+<p>There is catch though. As we've discussed in the <a
+href="#chapter11.xhtml_defined-error-handling">Error handling</a>
+chapter, if the async function throws an error it will be propagated
+through the <code>await</code>. This means if the execution reaches no
+<code>await</code>s for that Promise, the error won't be handled.</p>
+<p>This is a problem.</p>
+<p>Consider this code:</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+
+const fn = async () =&gt; {
+  await wait(100);
+  throw new Error(&quot;Something bad happened&quot;);
+}
+
+try{
+  const p = fn();
+  throw new Error(&quot;There was an error&quot;);
+  await p;
+}catch(e) {
+  console.log(e.message);
+}</code></pre>
+<p>This prints:</p>
+<pre class="highlight"><code>There was an error
+(node:170) UnhandledPromiseRejectionWarning: Error: Something
+bad happened
+(node:170) UnhandledPromiseRejectionWarning: Unhandled promise
+rejection. This error originated either by throwing inside of an
+async function without a catch block, or by rejecting a promise
+which was not handled with .catch(). To terminate the node
+process on unhandled promise rejection, use the CLI flag
+`--unhandled-rejections=strict` (see
+https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode).
+(rejection id: 1)
+(node:170) [DEP0018] DeprecationWarning: Unhandled promise
+rejections are deprecated. In the future, promise rejections that
+are not handled will terminate the Node.js process with a
+non-zero exit code.</code></pre>
+<p>An unhandled rejection is bad. There is a catch-all
+<code>unhandledRejection</code> event that allows handling it, but that
+leads to unmaintainable code. A proper solution is to make sure that the
+Promise is always <code>await</code>ed upon. This usually leads to more
+complicated code.</p>
+<p>There are valid cases where the early init pattern is useful,
+especially when any exception is catastrophic. But when you have a
+backend server that multiple clients can call, it is better to
+avoid.</p>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Multiple awaits
+</div>
+<div class="tbox-body">
+<p>What happens if there are mutliple <code>await</code>s for a Promise?
+This does not result in calling the function multiple times. When a
+Promise is settled (resolved or rejected), <code>await</code> just
+returns the result (or throws an exception).</p>
+<p>Consider the following code:</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  console.log(&quot;called&quot;);
+  await wait(100);
+  return &quot;result&quot;;
+}
+
+(async () =&gt; {
+  const p = fn();
+  console.log(await p);
+  console.log(await p);
+})();
+
+
+// called
+// result
+// result</code></pre>
+</div>
+</div>
+</div>
+<p><span id="chapter4.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter4.xhtml_defined-returning-multiple-values">Returning multiple
+values</h1>
+<p>As we've discussed in the <a
+href="#chapter2.xhtml_defined-the-promise-constructor">The Promise
+constructor</a> chapter, just like normal functions, a Promise can have
+a single return value. But oftentimes you'll want to return multiple
+things.</p>
+<p>Fortunately, Javascript supports the object and the array
+destructuring operators that makes it easy to use a single variable to
+hold multiple things.</p>
+<p>For example, a Promise can resolve with an array of values:</p>
+<pre class="highlight"><code>const getValues = () =&gt; new Promise((res) =&gt; {
+  const user = &quot;user&quot;;
+  const group = &quot;group&quot;;
+  res([user, group]);
+});
+
+const [user, group] = await getValues();
+// user, group</code></pre>
+<p>Or an object with known fields:</p>
+<pre class="highlight"><code>const getValues = () =&gt; new Promise((res) =&gt; {
+  const user = &quot;user&quot;;
+  const group = &quot;group&quot;;
+  res({user, group});
+});
+
+const {user, group} = await getValues();
+// user, group</code></pre>
+<p>Of course, it's the same pattern that you'd use for synchronous
+functions:</p>
+<pre class="highlight"><code>const getValues = () =&gt; {
+  const user = &quot;user&quot;;
+  const group = &quot;group&quot;;
+  return {user, group};
+};
+
+const {user, group} = getValues();
+// user, group</code></pre>
+<p>And works the same with async functions too:</p>
+<pre class="highlight"><code>const getValues = async () =&gt; {
+  const user = &quot;user&quot;;
+  const group = &quot;group&quot;;
+  return {user, group};
+};
+
+const {user, group} = await getValues();
+// user, group</code></pre>
+<p><span id="chapter5.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter5.xhtml_defined-convert-between-promises-and-callbacks">Convert
+between Promises and callbacks</h1>
+<p>While Promises and async/await are increasingly the primary way to
+write asynchronous code in Javascript, callbacks are still used in many
+places. Several libraries that adopted that style are slow to migrate to
+the more modern alternative, and browser (and Node) APIs are also slow
+to change.</p>
+<p>For example, <a
+href="https://www.npmjs.com/package/marked">marked</a>, a markdown
+compiler needs a callback when it's used in asynchronous mode:</p>
+<pre class="highlight"><code>marked(text, options, (err, result) =&gt; {
+  // result is the compiled markdown
+});</code></pre>
+<p>Similarly, <code>setTimeout</code> invokes a function when the time
+is up:</p>
+<pre class="highlight"><code>setTimeout(callback, 100);</code></pre>
+<p>Not to mention a ton of web APIs, such as <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">Indexed
+DB</a>, <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader">FileReader</a>,
+and others. Callbacks are still everywhere, and it's a good practice to
+convert them to Promises especially if your code is already using
+async/await.</p>
+<h2 id="chapter5.xhtml_defined-callback-styles">Callback styles</h2>
+<p>Callbacks implement the continuation-passing style programming where
+<strong>a function</strong> instead of returning a value
+<strong>calls</strong> a continuation, in this case, <strong>an argument
+function</strong>. It is especially prevalent in Javascript as it does
+not support synchronous waiting. Everything that involves some future
+events, such as network calls, an asynchronous API, or a simple timeout
+is only possible by using a callback mechanism.</p>
+<p>There are several ways callbacks can work. For example,
+<code>setTimeout</code> uses a callback-first pattern:</p>
+<pre class="highlight"><code>setTimeout(callback, ms);</code></pre>
+<p>Or functions can get multiple functions and call them when
+appropriate:</p>
+<pre class="highlight"><code>const checkAdmin = (id, isAdmin, notAdmin) =&gt; {
+  if (/* admin logic */) {
+    isAdmin();
+  }else {
+    notAdmin();
+  }
+};</code></pre>
+<p>How the callback is invoked can also vary. For example, it might get
+multiple arguments:</p>
+<pre class="highlight"><code>const getUserData = (id, cb) =&gt; {
+  const user = /* get user */
+  cb(user.id, user.profile, user.avatar);
+};</code></pre>
+<p>Also, asynchronicity might be implemented as an object that emits
+events:</p>
+<pre class="highlight"><code>const reader = new FileReader();
+reader.onload = (event) =&gt; {
+  // event.target.result
+}
+reader.onerror = (error) =&gt; {
+  // handle error
+};
+reader.readAsDataURL(blob);</code></pre>
+<h3 id="chapter5.xhtml_node-style-callbacks">Node-style callbacks</h3>
+<p>As there are multiple equally reasonable ways to implement callbacks,
+it was a mess at first. A de-facto standard emerged, which is now called
+Node-style or error-first callbacks. It is used almost everywhere in
+Javascript whenever a callback is needed.</p>
+<p>A Node-style callback has three characteristics:</p>
+<ul>
+<li>The callback function is the last argument</li>
+<li>It is called with an error object first, then a result
+(<code>(error, result)</code>)</li>
+<li>It returns only one result</li>
+</ul>
+<p>As an illustration, this function implements a Node-style
+callback:</p>
+<pre class="highlight"><code>const getUser = (id, cb) =&gt; {
+  const user = /* get user */;
+  if (user) {
+    // success
+    cb(null, user);
+  }else {
+    // error
+    cb(new Error(&quot;Failed to get user&quot;));
+  }
+};</code></pre>
+<p>Notice that when there is no error, the first argument is
+<code>null</code>. This allows the caller to easily check whether the
+execution failed or succeeded:</p>
+<pre class="highlight"><code>getUser(15, (error, result) =&gt; {
+  if (error) {
+    // handle error
+  } else {
+    // handle result
+  }
+});</code></pre>
+<p>With a callback structure that is used almost exclusively, it is
+possible to convert between Promises and callbacks more easily.</p>
+<h2 id="chapter5.xhtml_convert-callbacks-to-promises">Convert callbacks
+to Promises</h2>
+<p>This is the more prominent direction as it's a common task to
+integrate a callback-based function into an async/await flow. Let's see
+how to do it!</p>
+<h3 id="chapter5.xhtml_promise-constructor">Promise constructor</h3>
+<p>The Promise constructor is the low-level but universally applicable
+way to convert callbacks to Promises. It works for every callback style
+and it needs only a few lines of code.</p>
+<p>The Promise constructor gets a function with two arguments: a
+<code>resolve</code> and a <code>reject</code> function. When one of
+them is called, the Promise will settle with either a result passed to
+the <code>resolve</code> function, or an error, passed to the
+<code>reject</code>.</p>
+<pre class="highlight"><code>new Promise((res, rej) =&gt; {
+
+  // resolve with a value
+  // res(value)
+
+  // reject with error:
+  // rej(error)
+})</code></pre>
+<p>This makes it easy to call a callback-based function and convert it
+to a Promise which then can be <code>await</code>-ed:</p>
+<pre class="highlight"><code>// Node-style
+new Promise((res, rej) =&gt; getUser(15, (err, result) =&gt; {
+  if (err) {
+    rej(err);
+  }else {
+    res(result);
+  }
+}))
+
+// setTimeout
+new Promise((res) =&gt; setTimeout(res, 100));
+
+// event-based
+new Promise((res, rej) =&gt; {
+  const reader = new FileReader();
+  reader.onload = (event) =&gt; {
+    // resolve the Promise
+    res(event.target.result);
+  }
+  reader.onerror = (error) =&gt; {
+    // reject the Promise
+    rej(error)
+  };
+  reader.readAsDataURL(blob);
+});</code></pre>
+<h4 id="chapter5.xhtml_promisified-functions">Promisified functions</h4>
+<p>The above examples show how to call a callback-based function and get
+back a Promise, but it requires wrapping every call with the Promise
+boilerplate. It would be better to have a function that mimics the
+original one but without the callback. Such a function would get the
+same arguments minus the callback and return the Promise.</p>
+<p>To make promisified versions of functions, it is only a matter of
+wrapping the Promise constructor in a function that gets the arguments
+before the callback:</p>
+<pre class="highlight"><code>// setTimeout
+const promisifiedSetTimeout = (ms) =&gt;
+  new Promise((res) =&gt; setTimeout(res, ms));
+
+// FileReader
+const promisifiedFileReader = (blob) =&gt;
+  new Promise((res, rej) =&gt; {
+    const reader = new FileReader();
+    reader.onload = (event) =&gt; {
+      res(event.target.result);
+    }
+    reader.onerror = (error) =&gt; {
+      rej(error)
+    };
+    reader.readAsDataURL(blob);
+  });
+
+// checkAdmin
+const promisifiedCheckAdmin = (id) =&gt; new Promise((res) =&gt; {
+  if (/* admin logic */) {
+    res(true);
+  }else {
+    res(false);
+  }
+};</code></pre>
+<p>These functions are direct replacements to the callback-based
+originals and can be directly used in an async/await workflow:</p>
+<pre class="highlight"><code>// timeout
+setTimeout(() =&gt; {
+  console.log(&quot;Timeout reached&quot;);
+}, 100);
+
+await promisifiedSetTimeout(100);
+console.log(&quot;Timeout reached&quot;);
+
+// checkAdmin
+const checkAdmin = (id, isAdmin, notAdmin) =&gt; {
+  if (/* admin logic */) {
+    isAdmin();
+  }else {
+    notAdmin();
+  }
+};
+
+checkAdmin(15, () =&gt; {
+  console.log(&quot;User is an admin&quot;);
+}, () =&gt; {
+  console.log(&quot;User is not an admin&quot;);
+});
+
+const admin = await promisifiedCheckAdmin(15);
+console.log(`User is admin: ${admin}`);
+
+// FileReader
+const dataURI = await promisifiedFileReader(blob);</code></pre>
+<h3 id="chapter5.xhtml_utilpromisify">util.promisify</h3>
+<p>While the Promise constructor offers a universal way to transform
+callbacks to Promises, when the callback pattern follows the Node-style
+there is an easier way. The <code>util.promisify</code> gets the
+callback-based function and returns a promisified version.</p>
+<pre class="highlight"><code>import util from &quot;util&quot;;
+
+const promisifiedGetUser = util.promisify(getUser);
+
+const user = await promisifiedGetUser(15);
+// user is the result object</code></pre>
+<p>When the promisified function is called, the callback argument is
+added automatically and it also converts the result (or error) to the
+return value of the Promise.</p>
+<p>How it works is no magic though. It uses the Promise constructor
+pattern we've discussed above, and uses the spread syntax to allow
+arbitrary amount of arguments. A simplified implementation looks like
+this:</p>
+<pre class="highlight"><code>const promisify = (fn) =&gt; (...args) =&gt;
+  new Promise((res, rej) =&gt; {
+    fn(...args, (err, result) =&gt; {
+      if (err) {
+        rej(err);
+      }else {
+        res(result);
+      }
+    });
+  });</code></pre>
+<h3 id="chapter5.xhtml_usual-problems">Usual problems</h3>
+<h4 id="chapter5.xhtml_handle-this">Handle this</h4>
+<p>The value of <code>this</code> is complicated in Javascript. It can
+get different values depending on how you call a function.</p>
+<p>For example, classes can have instance variables, attached to
+<code>this</code>:</p>
+<pre class="highlight"><code>class C {
+  constructor() {
+    this.var = &quot;var&quot;;
+  }
+  fn() {
+    console.log(this.var);
+  }
+}</code></pre>
+<p>But when you have an object of this class, whether you call this
+function directly on the object or extract it to another variable makes
+a difference in the value of <code>this</code>:</p>
+<pre class="highlight"><code>new C().fn(); // var
+
+let fn = new C().fn;
+fn(); // TypeError: Cannot read property &#39;var&#39; of undefined</code></pre>
+<p>This affects how to promisify the methods of this object as the
+<code>util.promisify</code> requires just the function and not the whole
+object. Which, in turn, breaks <code>this</code>.</p>
+<p>For example, let's say there is a Database object that creates a
+connection in its constructor then it offers methods to send
+queries:</p>
+<pre class="highlight"><code>class Database {
+  constructor() {
+    this.connection = &quot;database connection&quot;;
+  }
+  getUser(id, cb) {
+    if (!this.connection) {
+      throw new Error(&quot;No connection&quot;);
+    }
+    setTimeout(() =&gt; {
+      if (id &gt;= 0) {
+        cb(null, `user: ${id}`);
+      }else {
+        cb(new Error(&quot;id must be positive&quot;));
+      }
+    }, 100);
+  }
+}
+
+const database = new Database();
+database.getUser(15, (error, user) =&gt; {
+  // handle error or user
+})</code></pre>
+<p>Using <code>util.promisify</code> would break the
+<code>getUser</code> function as it changes the value of
+<code>this</code>:</p>
+<pre class="highlight"><code>const promisifiedDatabaseGetUser =
+  util.promisify(database.getUser);
+await promisifiedDatabaseGetUser(15);
+// Error: Cannot read property &#39;connection&#39; of undefined</code></pre>
+<p>To solve this, you can bind the object to the function, forcing the
+value of <code>this</code>:</p>
+<pre class="highlight"><code>const promisifiedDatabaseGetUser =
+  util.promisify(database.getUser.bind(database));
+const user = await promisifiedDatabaseGetUser(15);</code></pre>
+<h4 id="chapter5.xhtml_functionlength">function.length</h4>
+<p>The <code>length</code> of a function is how many arguments it needs.
+Don't confuse this with the Array's <code>length</code>, as that is how
+many <em>elements</em> in the array.</p>
+<p>For example, this function needs 2 arguments, so its
+<code>length</code> is 2:</p>
+<pre class="highlight"><code>const fn = (a, cb) =&gt; {};
+
+console.log(fn.length); // 2</code></pre>
+<p>It is rarely used, but some libraries depend on it having the correct
+value, such as <a
+href="https://www.npmjs.com/package/memoizee#user-content-arguments-length">memoizee</a>,
+which determines how to cache the function call or <a
+href="https://www.npmjs.com/package/marked">marked</a>, a Markdown
+compiler, to decide whether its configuration is <a
+href="https://github.com/markedjs/marked/blob/127ac84da0c4d0a651e00bbd4eebef65d95aed75/src/marked.js#L67">called
+async or sync</a>.</p>
+<p>While the length of the function is rarely used, it can cause
+problems. <code>util.promisify</code> does not change it, so the
+resulting function will have the same length as the original one, even
+though it needs fewer arguments.</p>
+<pre class="highlight"><code>console.log(fn.length); // 2
+
+const promisified = util.promisify(fn);
+
+console.log(promisified.length); // 2</code></pre>
+<h2 id="chapter5.xhtml_convert-promises-to-callbacks">Convert Promises
+to callbacks</h2>
+<p>The other direction is to have a Promise-returning function (usually
+an <code>async</code> function) and you need to convert it to a
+callback-based one. It is much rarer than the other way around, but
+there are cases when it's needed, usually when a library expects an
+asynchronous function and it supports only callbacks.</p>
+<p>For example, the marked library supports a <code>highlight</code>
+option that gets the code block and returns a formatted version. The
+highlighter gets the code, the language, and a callback argument, and it
+is expected to call the last one with the result.</p>
+<pre class="highlight"><code>import marked from &quot;marked&quot;;
+import util from &quot;util&quot;;
+
+const promisifiedMarked = util.promisify(marked);
+
+const res = await promisifiedMarked(md, {
+  // highlight gets a callback
+  highlight: (code, lang, cb) =&gt; {
+    const result = &quot;Code block&quot;;
+    cb(null, result);
+  }
+});</code></pre>
+<p>As with the promisification, there is a universal and a
+Node-callback-specific way to convert an async function to use
+callbacks. The universal way is to use an async IIFE
+(Immediately-Invoked Function Expression) and add use <code>then</code>
+to interface with the callback when there is a result or an error:</p>
+<pre class="highlight"><code>highlight: (code, lang, cb) =&gt; {
+  (async () =&gt; {
+    const result = &quot;Code block&quot;;
+    return result;
+  })().then((res) =&gt; cb(null, res), (err) =&gt; cb(err));
+}</code></pre>
+<p>This structure allows all callback styles as you control how a result
+or an error is communicated with the callback function.</p>
+<p>For Node-style callbacks, you can use the
+<code>util.callbackify</code> function that gets an async function and
+returns a callbackified version:</p>
+<pre class="highlight"><code>highlight: util.callbackify(async (code, lang) =&gt; {
+  const result = &quot;Code block&quot;;
+
+  return result;
+})</code></pre>
+<p>This yields a convenient structure and it is suitable in most
+cases.</p>
+<p>Also, it changes the resulting function's <code>length</code> by one,
+as it needs a callback as well as all the original arguments:</p>
+<pre class="highlight"><code>console.log(fn.length) // 2
+console.log(util.callbackify(fn).length) // 3</code></pre>
+<p><span id="chapter6.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter6.xhtml_promise-timeouts">Promise timeouts</h1>
+<p><strong>Promises in Javascript have no concept of time.</strong> When
+you use <code>await</code> or attach a function with
+<code>.then()</code>, it will <strong>wait until the Promise is either
+resolved or rejected</strong>. This is usually not a problem as most
+async tasks finish within a reasonable time and their result is
+needed.</p>
+<p>But when a client is waiting for a response of, let's say, an HTTP
+server, it's better to return early with an error giving the caller a
+chance to retry rather than to wait for a potentially long time.</p>
+<p>Fortunately, there is a built-in Promise helper function that can be
+used to add timeout functionality to any Promise-based construct.</p>
+<h2 id="chapter6.xhtml_promiserace">Promise.race</h2>
+<p>The <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race">Promise.race</a>
+is a global property of the Promise object. <strong>It gets an array of
+Promises and waits <em>for the first one</em> to finish</strong>.
+Whether the race is resolved or rejected depends on the winning
+member.</p>
+<figure class="plantuml image">
+<img
+src="9f8380b1ff6291470df6531613ee319b5bac317693c0f2d54da694da97dae3b4.png"
+style="width: 164px;" />
+<figcaption>p2 finishes first</figcaption>
+</figure>
+<p>For example, the following code races two Promises. The second one
+resolves sooner, and the result of the other one is discarded:</p>
+<pre class="highlight"><code>const p1 =
+  new Promise((res) =&gt; setTimeout(() =&gt; res(&quot;p1&quot;), 1000));
+const p2 =
+  new Promise((res) =&gt; setTimeout(() =&gt; res(&quot;p2&quot;), 500));
+
+const result = await Promise.race([p1, p2]);
+// result = p2</code></pre>
+<p>Similarly, it works for rejections also. If the winning Promise is
+rejected, the race is rejected:</p>
+<pre class="highlight"><code>const p1 =
+  new Promise((res) =&gt; setTimeout(() =&gt; res(&quot;p1&quot;), 1000));
+const p2 =
+  new Promise((_r, rej) =&gt; setTimeout(() =&gt; rej(&quot;p2&quot;), 500));
+
+try {
+  const result = await Promise.race([p1, p2]);
+} catch(e) {
+  // e = p2
+}</code></pre>
+<p>The arguments of the <code>Promise.race</code> function are
+<em>Promises</em>. This makes it work with <code>async</code> functions
+too:</p>
+<pre class="highlight"><code>const fn = async (time, label) =&gt; {
+  await new Promise((res) =&gt; setTimeout(res, time));
+  return label;
+}
+
+const result =
+  await Promise.race([fn(1000, &quot;p1&quot;), fn(500, &quot;p2&quot;)])
+// result = p2</code></pre>
+<p>Just don't forget to <em>call</em> the <code>async</code> functions
+so that the race gets Promises. This can be a problem with anonymous
+functions and those need to be wrapped IIFE-style:</p>
+<pre class="highlight"><code>const result = await Promise.race([
+  fn(1000, &quot;p1&quot;),
+  (async () =&gt; {
+    await new Promise((res) =&gt; setTimeout(res, 500));
+    return &quot;p2&quot;;
+  })(),
+]);
+// result = p2</code></pre>
+<h2 id="chapter6.xhtml_defined-timeout-implementation">Timeout
+implementation</h2>
+<p>With <code>Promise.race</code>, it's easy to implement a timeout that
+supports any Promises. Along with the async task, <strong>start another
+Promise that rejects when the timeout is reached</strong>. Whichever
+finishes first (the original Promise or the timeout) will be the
+result.</p>
+<figure class="plantuml image">
+<img
+src="0c43ee3777ed3a14a2262881d8dcee6b4ccd9c3f4b984b8f042b98edd0f157e9.png"
+style="width: 186px;" />
+<figcaption>The Promise finishes before the timeout</figcaption>
+</figure>
+<pre class="highlight"><code>const timeout = (prom, time) =&gt;
+  Promise.race([
+    prom,
+    new Promise((_r, rej) =&gt; setTimeout(rej, time))
+  ]);</code></pre>
+<p>With this helper function, wrap any Promise and it will reject if it
+does not produce a result in the specified time.</p>
+<pre class="highlight"><code>// resolves in 500 ms
+const fn = async () =&gt; {
+  await new Promise((res) =&gt; setTimeout(res, 500));
+  return &quot;p2&quot;;
+}
+
+// finishes before the timeout
+const result = await timeout(fn(), 1000);
+// result = p2
+
+// timeouts in 100 ms
+await timeout(fn(), 100);
+// error</code></pre>
+<figure class="plantuml image">
+<img
+src="7221da63522922a688fa6822c7f619d06f1e665461f03a0c0d4ba10f1406dbab.png"
+style="width: 194px;" />
+<figcaption>The timeout finishes before the Promise</figcaption>
+</figure>
+<p>It's important to note that it <em>does not terminate the Promise if
+the timeout is reached</em>, just discard its result. If it consists of
+multiple steps, they will still run to completion eventually.</p>
+<h3 id="chapter6.xhtml_clear-timeout">Clear timeout</h3>
+<p>The above solution uses a <code>setTimeout</code> call to schedule
+the rejection. Just as the original Promise does not terminate when the
+timeout is reached, the timeout Promise <strong>won't cancel this timer
+when the race is finished</strong>.</p>
+<p>While this does not change how the resulting Promise works, it can
+cause side-effects. The event loop needs to check whether the timer is
+finished, and some environments might work differently if there are
+unfinished ones.</p>
+<p>Let's make the wrapper function use <code>Promise.finally</code> to
+clear the timeout!</p>
+<pre class="highlight"><code>const timeout = (prom, time) =&gt; {
+  let timer;
+  return Promise.race([
+    prom,
+    new Promise((_r, rej) =&gt; timer = setTimeout(rej, time))
+  ]).finally(() =&gt; clearTimeout(timer));
+}</code></pre>
+<p>The above implementation saves the <code>setTimeout</code>'s result
+as <code>timer</code> and clears it when the race is over.</p>
+<h3 id="chapter6.xhtml_error-object">Error object</h3>
+<p>The race is over and there is a rejection. Was it because of the
+timeout or there was an error thrown from the Promise?</p>
+<p>The above implementation does not distinguish between errors and this
+makes it hard to handle timeouts specifically.</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  throw new Error();
+};
+
+try {
+  const result = await timeout(fn(), 1000);
+}catch(e) {
+  // error or timeout?
+}</code></pre>
+<p>The solution is to add a third argument that is the timeout rejection
+value. This way there is an option to differentiate between errors:</p>
+<pre class="highlight"><code>const timeout = (prom, time, exception) =&gt; {
+  let timer;
+  return Promise.race([
+    prom,
+    new Promise((_r, rej) =&gt;
+      timer = setTimeout(rej, time, exception)
+    )
+  ]).finally(() =&gt; clearTimeout(timer));
+}</code></pre>
+<p>What should be a timeout error object?</p>
+<p><a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol">Symbols</a>
+in Javascript are unique objects that are only equal to themselves. This
+makes them perfect for this use-case. Pass a Symbol as the timeout error
+argument then check if the rejection is that Symbol.</p>
+<pre class="highlight"><code>const timeoutError = Symbol();
+try {
+  const result = await timeout(prom, 1000, timeoutError);
+  // handle result
+}catch (e) {
+  if (e === timeoutError) {
+    // handle timeout
+  }else {
+    // other error
+    throw e;
+  }
+}</code></pre>
+<p>This construct allows handling the timeout error specifically.</p>
+<p><span id="chapter7.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter7.xhtml_the-async-serializer-pattern">The async serializer
+pattern</h1>
+<p>Let's say you have a function that does some calculation but only if
+it hasn't been done recently, effectively caching the result for a short
+amount of time. In this case, <strong>subsequent calls to the function
+affect each other</strong>, as when there is a refresh all of them need
+to wait for it. An implementation that does not take concurrency into
+account can potentially run the refresh several times in parallel when
+the cache expires.</p>
+<p>This implementation is broken:</p>
+<pre class="highlight"><code>// returns a function that caches its result for 2 seconds
+// broken, don&#39;t use it
+const badCachingFunction = (() =&gt; {
+  const cacheTime = 2000;
+  let lastRefreshed = undefined;
+  let lastResult = undefined;
+  return async () =&gt; {
+    const currentTime = new Date().getTime();
+    // check if cache is fresh enough
+    if (lastResult === undefined ||
+      lastRefreshed + cacheTime &lt; currentTime) {
+      // refresh the value
+      lastResult = await refresh();
+      lastRefreshed = currentTime;
+    }
+    return lastResult;
+  }
+})();</code></pre>
+<p>When two concurrent calls come when the function needs to refresh the
+value, the <code>refresh</code> function is called twice:</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+const refresh = async () =&gt; {
+  console.log(&quot;refreshing&quot;)
+  await wait(1000);
+};
+
+const badCachingFunction = ...;
+
+badCachingFunction();
+badCachingFunction();
+// refreshing
+// refreshing</code></pre>
+<p>The correct way to handle this is to <strong>make the second function
+wait for the refresh process</strong> without starting a separate
+one.</p>
+<p>One way to do this is to <strong>serialize the calls</strong> to the
+caching function. This makes <em>every</em> function to wait for all the
+previous ones to finish, so multiple calls only trigger a single refresh
+process.</p>
+<p>This can be done in a variety of ways, but the easiest one is to make
+the functions run one after the other. In this case, when one needs to
+refresh the value, the other ones will wait for it to finish and won't
+start their own jobs.</p>
+<p>Another use-case I needed a solution like this is when backend calls
+needed a token and that token expired after some time. When a call hit
+an Unauthorized error, it refreshed the token and used the new one to
+retry. Other backend calls needed to wait for the new token before they
+could be run. In this case, it wasn't just performance-related as a new
+token invalidated all the old ones.</p>
+<h2 id="chapter7.xhtml_why-await-is-not-a-solution">Why await is not a
+solution</h2>
+<p>The trivial solution is to use <code>await</code> that achieves
+serialization easily. After all, that's what that keyword is for.</p>
+<pre class="highlight"><code>await badCachingFunction();
+badCachingFunction();
+// refreshing</code></pre>
+<p>But that requires <em>collaboration between the calls</em>, and that
+is not always possible. For example, when the function is called in
+response to multiple types of events, <code>await</code> is not possible
+to coordinate between them:</p>
+<pre class="highlight"><code>document.querySelector(&quot;#btn&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+  fn();
+})
+
+window.addEventListener(&quot;message&quot;,  =&gt; {
+  fn();
+});</code></pre>
+<p>In this case, the function call must do the coordination.</p>
+<h2 id="chapter7.xhtml_a-general-purpose-solution">A general-purpose
+solution</h2>
+<p>The solution is to keep a queue of Promises that chains them one
+after the other. It is just a few lines of code and it is general
+purpose, allowing any function be serialized:</p>
+<pre class="highlight"><code>const serialize = (fn) =&gt; {
+  let queue = Promise.resolve();
+  return (...args) =&gt; {
+    const res = queue.then(() =&gt; fn(...args));
+    queue = res.catch(() =&gt; {});
+    return res;
+  };
+};</code></pre>
+<figure class="plantuml image">
+<img
+src="6600f68c8248bd1f1944c97a98bb9f325857eb96cbd5b1c092fd1fa91a14c374.png"
+style="width: 210px;" />
+<figcaption>Queue structure</figcaption>
+</figure>
+<p>The <code>Promise.resolve()</code> is the start of the queue. Every
+other call is appended to this Promise.</p>
+<p>The <code>queue.then(() =&gt; fn(...args))</code> adds the function
+call to the queue and it saves its result in <code>res</code>. It will
+be resolved when <em>the current and all the previous calls are
+resolved</em>.</p>
+<p>The <code>queue = res.catch(() =&gt; {})</code> part makes sure that
+the queue won't get stuck in rejection when one part of it is
+rejected.</p>
+<p>Wrapping the caching function with this serializer makes sure that a
+single refresh is run even for multiple calls:</p>
+<pre class="highlight"><code>const fn = serialize((() =&gt; {
+  const cacheTime = 2000;
+  let lastRefreshed = undefined;
+  let lastResult = undefined;
+  return async () =&gt; {
+    const currentTime = new Date().getTime();
+    // check if cache is fresh enough
+    if (lastResult === undefined ||
+      lastRefreshed + cacheTime &lt; currentTime) {
+      // refresh the value
+      lastResult = await refresh();
+      lastRefreshed = currentTime;
+    }
+    return lastResult;
+  }
+})());
+
+fn();
+fn();
+// refreshing</code></pre>
+<p><span id="chapter8.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter8.xhtml_defined-async-disposer">The async disposer
+pattern</h1>
+<p>A recurring pattern is to <strong>run some initialization
+code</strong> to set up some resource or configuration, then use the
+thing, <strong>and</strong> finally <strong>do some cleanup</strong>. It
+can be a global property, such as freezing the time with <a
+href="https://www.npmjs.com/package/timekeeper">timekeeper</a>, starting
+a Chrome browser with Puppeteer, or creating a temp directory. In all
+these cases, you need to make sure the modifications/resources are
+properly disposed of, otherwise, they might spill out to other parts of
+the codebase.</p>
+<p>For example, this code creates a temp directory in the system tmpdir
+then when it's not needed it deletes it. This can be useful when, for
+example, you want to use ffmpeg to extract some frames from a video and
+need a directory to tell the <code>ffmpeg</code> command to output the
+images to.</p>
+<pre class="highlight"><code>// create the temp directory
+const dir = await fs.mkdtemp(
+  await fs.realpath(os.tmpdir()) + path.sep
+);
+try {
+
+  // use the temp directory
+
+} finally {
+  // remove the directory
+  fs.rmdir(dir, {recursive: true});
+}</code></pre>
+<p>A similar construct is <code>console.time</code> that needs a
+<code>console.timeEnd</code> to output the time it took for a segment of
+the code to run:</p>
+<pre class="highlight"><code>console.time(&quot;name&quot;);
+try {
+  // ...
+} finally {
+  console.timeEnd(&quot;name&quot;);
+}</code></pre>
+<p>Or when you launch a browser, you want to make sure it's closed when
+it's not needed:</p>
+<pre class="highlight"><code>const browser = await puppeteer.launch({/* ... */});
+try {
+  // use browser
+} finally {
+  await browser.close();
+}</code></pre>
+<p>All these cases share the <code>try..finally</code> structure.
+Without it, <strong>an error can jump over the cleanup logic</strong>,
+leaving the resource initialized (or the console timing still
+ticking):</p>
+<pre class="highlight"><code>const browser = await puppeteer.launch({/* ... */});
+
+// if there is an error here the browser won&#39;t close!
+
+await browser.close();</code></pre>
+<p>In other languages, such as Java, this is known as <a
+href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html">try-with-resources</a>
+and it is built into the language. For example, the
+<code>BufferedReader</code> is closed after the block:</p>
+<pre class="highlight"><code>try (BufferedReader br =
+  new BufferedReader(new FileReader(path))
+) {
+  return br.readLine();
+}</code></pre>
+<p>This builds on the <a
+href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html">AutoCloseable</a>
+interface's <code>close</code> method so it's easy to adapt to custom
+resource types.</p>
+<p>But there is no such structure in Javascript. Let's see how to
+implement one!</p>
+<h2 id="chapter8.xhtml_disposer-pattern">Disposer pattern</h2>
+<p>One problem with the <code>try..finally</code> structure we've seen
+above is <strong>how to return a value from inside the <code>try</code>
+block</strong>. Let's say you want to take a screenshot of a website and
+want to use the resulting image later.</p>
+<pre class="highlight"><code>const browser = await puppeteer.launch({/* ... */});
+try {
+  const page = await browser.newPage();
+  // ...
+  const screenshot = await page.screenshot({/* ... */});
+
+  // the browser can be closed
+  // but how to use the screenshot outside the try..finally?
+} finally {
+  await browser.close();
+}</code></pre>
+<p>A suboptimal solution is to declare a variable outside the block and
+use it to store the image:</p>
+<pre class="highlight"><code>let screenshot;
+
+const browser = await puppeteer.launch({/* ... */});
+try {
+  const page = await browser.newPage();
+  // ...
+  screenshot = await page.screenshot({/* ... */});
+} finally {
+  await browser.close();
+}
+
+// use screenshot</code></pre>
+<p>A better solution is to <strong>use a function</strong>:</p>
+<pre class="highlight"><code>const makeScreenshot = async () =&gt; {
+  const browser = await puppeteer.launch({/* ... */});
+  try {
+    const page = await browser.newPage();
+    // ...
+    return await page.screenshot({/* ... */});
+  } finally {
+    await browser.close();
+  }
+}
+
+const screenshot = await makeScreenshot();</code></pre>
+<p>This is the basis of the disposer pattern. The difference is that
+<strong>instead of hardcoding the logic inside the
+<code>try..finally</code> block, it gets a function</strong> that
+implements that part:</p>
+<pre class="highlight"><code>const withBrowser = async (fn) =&gt; {
+  const browser = await puppeteer.launch({/* ... */});
+  try {
+    return await fn(browser);
+  } finally {
+    await browser.close();
+  }
+}
+
+const screenshot = await withBrowser(async (browser) =&gt; {
+  const page = await browser.newPage();
+  // ...
+  return await page.screenshot({/* ... */});
+});</code></pre>
+<p>The <code>withBrowser</code> function contains the logic to launch
+and close the browser, and <strong>the <code>fn</code> function gets and
+uses the browser instance</strong>. Whenever the argument function
+returns, the browser is automatically closed, no additional cleanup
+logic is needed. This structure provides an elegant way to prevent
+non-closed resources hanging around.</p>
+<p>An interesting aspect of this pattern is that it is one of the few
+cases where there is a difference between <code>return fn()</code> and
+<code>return await fn()</code>. Usually, it does not matter if an async
+function returns a Promise or the <em>result</em> of the Promise. But in
+this case, without the <code>await</code> the <code>finally</code> block
+runs <em>before</em> the <code>fn()</code> call is finished.</p>
+<p>A potential problem is when there is some task is running in the
+argument function when it returns. This can happen when it starts an
+asynchronous task and does not wait for it to finish. In this case, the
+cleanup logic runs and closes the browser instance that can cause an
+error. It is usually the sign that an <code>await</code> is missing.</p>
+<p><span id="chapter9.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter9.xhtml_defined-retrying-async-operations">Retrying async
+operations</h1>
+<h2 id="chapter9.xhtml_backoff-algorithm">Backoff algorithm</h2>
+<p>A Javascript application made a <code>fetch</code> call to a remote
+server and it failed. How should it retry the request so that it
+eventually succeeds while also minimizing the calls made?</p>
+<p>A backoff algorithm makes sure that <strong>when a target system can
+not serve a request it is not flooded with subsequent retries</strong>.
+It achieves this by introducing a <strong>waiting period between the
+retries</strong> to give the target a chance to recover.</p>
+<p>The need for a backoff builds on the observation that a service is
+unavailable when it is overloaded and sending more requests only
+exacerbates the problem. When all callers temporarily cease adding more
+load to the already overloaded service usually smooths the traffic
+spikes with only a slight delay.</p>
+<figure class="plantuml image">
+<img
+src="81ffa39b4f50a6322742cfe80c6b0abe4a54d33a4cfc6e65c6d6bbe6f6f2f07c.png"
+style="width: 165px;" />
+<figcaption>Waiting between retries</figcaption>
+</figure>
+<p><strong>The backoff algorithm used determines how much to wait
+between the retries</strong>. The best configuration is actively
+researched in the case of network congestion, such as when a mobile
+network is saturated. It's fascinating to see that different
+implementations yield drastically different effective bandwidth.</p>
+<p>Retrying a failed call to a remote server is a much easier problem
+and doing it right does not require years of research. In this article,
+you'll learn how to implement a backoff solution in Javascript that is
+good enough for all practical purposes.</p>
+<h3 id="chapter9.xhtml_exponential-backoff">Exponential backoff</h3>
+<p>But let's first revisit the problem of choosing the backoff strategy,
+i.e. <strong>how much to wait between the retries</strong>! Sending
+requests too soon puts more load on the potentially struggling server,
+while waiting too long introduces too much lag.</p>
+<p>The exponential backoff became the standard algorithm to use. It
+waits exponentially longer for subsequent retries, which makes the first
+few tries happen with only a slight delay while it reaches longer
+periods quickly.</p>
+<p>It has two parameters: the <strong>delay of the first period</strong>
+and the <strong>growth factor</strong>. For example, when the first
+retry waits 10ms and the subsequent ones double the previous values, the
+waiting times are: 10, 20, 40, 80, 160, 320, 640, 1280, ...</p>
+<p>Notice that the sum of the first 3 attempts is less than 100 ms,
+which is barely noticeable. But it reaches &gt;1 second in just 8
+tries.</p>
+<figure class="plantuml image">
+<img
+src="d5191b2e9a717182d5ab61edf29b6752ce765f65c23731a334bd94a7bf8e27c4.png"
+style="width: 191px;" />
+<figcaption>Exponential backoff</figcaption>
+</figure>
+<h2 id="chapter9.xhtml_javascript-implementation">Javascript
+implementation</h2>
+<p>There are two pitfalls when implementing a backoff algorithm.</p>
+<p>First, make sure to <strong>wait only before retries and not the
+first request</strong>. Waiting first and sending a request then
+introduces a delay even for successful requests.</p>
+<p>And second, make sure to <strong>put a limit to the number of
+retries</strong> so that the code eventually gives up and throws an
+error. Even if the call eventually succeeds, something upstream timeouts
+in the meantime, and the user likely gets an error. Returning an error
+in a timely manner and letting the user retry the operation is a good UX
+practice.</p>
+<p>There are two types of operation in terms of retrying:
+rejection-based and progress-based. Let's discuss each of them!</p>
+<h3 id="chapter9.xhtml_rejection-based-retrying">Rejection-based
+retrying</h3>
+<p>This type of call <strong>either succeeds or fails</strong> and it is
+usually implemented as a Promise resolving or rejecting. A canonical
+example is a "Save" button that may fail and in that case, retrying
+means sending the request again.</p>
+<figure class="plantuml image">
+<img
+src="2117662494b59818a77ac0f1f0b249e36841997112e113693732a4400b88382a.png"
+style="width: 146px;" />
+<figcaption>Rejection-based retrying</figcaption>
+</figure>
+<p>For illustration, this operation emulates a network call that fails
+90% of the time:</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+const maybeFail = (successProbability, result, error) =&gt;
+  new Promise((res, rej) =&gt; Math.random() &lt; successProbability
+    ? res(result)
+    : rej()
+  );
+
+const maybeFailingOperation = async () =&gt; {
+  await wait(10);
+  return maybeFail(0.1, &quot;result&quot;, &quot;error&quot;);
+}</code></pre>
+<p>Calling this function without a retry mechanism is bad UX. The user
+would need to click the button repeatedly until it succeeds.</p>
+<p>A general-purpose solution that can take any async function and retry
+it for a few times before giving up:</p>
+<pre class="highlight"><code>const callWithRetry = async (fn, depth = 0) =&gt; {
+  try {
+    return await fn();
+  }catch(e) {
+    if (depth &gt; 7) {
+      throw e;
+    }
+    await wait(2 ** depth * 10);
+  
+    return callWithRetry(fn, depth + 1);
+  }
+}</code></pre>
+<p>And to use it with the operation defined above:</p>
+<pre class="highlight"><code>const result = await callWithRetry(maybeFailingOperation);</code></pre>
+<p>In the retry implementation, the <code>depth</code> argument
+indicates the number of calls made to the service so far. It determines
+how much to wait (<code>await wait(2 ** depth * 10)</code>) and when to
+give up (<code>if (depth &gt; 7) {...}</code>). When the function calls
+itself it increments this value.</p>
+<p>Interestingly, this is a scenario where using
+<code>return await</code> makes a difference. Usually, it does not
+matter if an async function returns a Promise or its resolved value. But
+not in this case, as the <code>try..catch</code> needs to wait for the
+<code>fn()</code> call to finish to handle exceptions thrown from
+it.</p>
+<p>Note that this implementation retries for <em>any error</em>, even if
+it is a non-retriable one, such as sending invalid data.</p>
+<h3 id="chapter9.xhtml_progress-based-retrying">Progress-based
+retrying</h3>
+<p>Another class of retriable operations is when <strong>each call might
+make some progress towards completion but might not reach
+it</strong>.</p>
+<p>A great example of this is how DynamoDB's <code>batchWriteItem</code>
+call works. You define the items to store, and the call tries to save
+all of them. It then returns a list in the response indicating which
+elements failed. The retry operation only needs to include these missed
+items and not the whole request.</p>
+<figure class="plantuml image">
+<img
+src="eab2c064636a7004eb33ea8188c39e723476b67a79447737f4b9cbf93af9e9bd.png"
+style="width: 212px;" />
+<figcaption>Progress-based retrying</figcaption>
+</figure>
+<p>As an illustration, this function emulates a progressing call to a
+remote server. It returns a <code>progress</code> field that goes from 0
+to 1, and a <code>result</code> when the call is fully finished. It also
+needs to know the <em>current progress</em>, which is a parameter for
+the call:</p>
+<pre class="highlight"><code>const progressingOperation = async (startProgress = 0) =&gt; {
+  await wait(10);
+  const progress = Math.round(
+    Math.min(startProgress + Math.random() / 3, 1) * 10
+  ) / 10;
+  return {
+    progress,
+    result: progress === 1 ? &quot;result&quot; : undefined,
+  };
+}</code></pre>
+<p>In this case, not reaching completion still resolves the Promise,
+which mimics the DynamoDB API. But a different API might reject it.
+Fortunately, it's easy to convert a rejected Promise to a resolved one:
+<code>.catch()</code>.</p>
+<p>In the DynamoDB <code>batchWriteItem</code> example, the
+<code>progress</code> return field is the list of the unprocessed items,
+and the <code>startProgress</code> parameter is the items to save.</p>
+<p>To retry the above call until it reaches completion:</p>
+<pre class="highlight"><code>const callWithProgress = async (fn, status, depth = 0) =&gt; {
+  const result = await fn(status);
+
+  // check completion
+  if (result.progress === 1) {
+    // finished
+    return result.result;
+  }else {
+    // unfinished
+    if (depth &gt; 7) {
+      throw result;
+    }
+    await wait(2 ** depth * 10);
+  
+    return callWithProgress(fn, result.progress, depth + 1);
+  }
+}</code></pre>
+<p>To use this retrying call, use:</p>
+<pre class="highlight"><code>const result = await callWithProgress(progressingOperation);</code></pre>
+<p>Note that this implementation is not general-purpose as it builds on
+how the call returns progress.</p>
+<p><span id="chapter10.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter10.xhtml_paginating-with-async-generators">Paginating with
+async generators</h1>
+<p>Many APIs limit how many results they return for a single call. For
+example, the functions of the AWS SDK that return lists are paginated
+operations. That means that you get a limited number of elements in one
+call along with a token to get the next batch. This can be a problem if
+you are not aware of it, as you might get all the elements during
+development but your function might break in the future.</p>
+<p>But while getting the first batch is just
+<code>await lambda.listFunctions().promise()</code>, paginating until
+all the pages are retrieved requires more work.</p>
+<p>Let's see how to make an <code>await</code>-able structure that
+reliable gets all the elements from an AWS API!</p>
+<h2 id="chapter10.xhtml_pagination">Pagination</h2>
+<p>In the case of Lambda functions, the
+<code>lambda.listFunctions</code> <a
+href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Lambda.html#listFunctions-property">call</a>
+returns a structure with a list of all your lambdas if you don't have
+too many of them (at most 50):</p>
+<pre class="highlight"><code>const functions = await lambda.listFunctions().promise();</code></pre>
+<pre class="highlight"><code>{
+  Functions: [...]
+}</code></pre>
+<p>To simulate a paginated case, you can set the <code>MaxItems</code>
+parameter:</p>
+<pre class="highlight"><code>const functions = await lambda.listFunctions({
+  MaxItems: 1
+}).promise();</code></pre>
+<p>This time a <code>NextMarker</code> is also returned, indicating
+there are more items:</p>
+<pre class="highlight"><code>{
+  Functions: [...],
+  NextMarker: ...
+}</code></pre>
+<p>To get the next batch, provide the last marker:</p>
+<pre class="highlight"><code>const functions = await lambda.listFunctions({
+  MaxItems: 1,
+  Marker: functions.NextMarker,
+}).promise();</code></pre>
+<p>Then do so until no <code>NextMarker</code> is returned.</p>
+<h2 id="chapter10.xhtml_a-solution-with-async-generators">A solution
+with async generators</h2>
+<p>Async generators are a relatively new feature of Javascript. They are
+like traditional generator functions, but they are async, meaning you
+can <code>await</code> inside them.</p>
+<p>To collect all the Lambda functions no matter how many calls are
+needed, use:</p>
+<pre class="highlight"><code>const getAllLambdas = async () =&gt; {
+  const EMPTY = Symbol(&quot;empty&quot;);
+
+  const res = [];
+  for await (const lf of (async function*() {
+    let NextMarker = EMPTY;
+    while (NextMarker || NextMarker === EMPTY) {
+      const functions = await lambda.listFunctions({
+        Marker: NextMarker !== EMPTY ? NextMarker : undefined,
+      }).promise();
+      yield* functions.Functions;
+      NextMarker = functions.NextMarker;
+    }
+  })()) {
+    res.push(lf);
+  }
+
+  return res;
+}
+
+// use it
+const functions = await getAllLambdas();</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+Async generator functions
+</div>
+<div class="tbox-body">
+<p>A generator function that can use <code>await</code>. When it
+encounters a <code>yield</code> or a <code>yield*</code> the execution
+stops until a subsequent element is requested.</p>
+<pre class="highlight"><code>const wait = (ms) =&gt;
+  new Promise((res) =&gt; setTimeout(res, ms));
+
+const gen = async function*() {
+  console.log(&quot;start&quot;);
+  await wait(100);
+  yield 1;
+  await wait(100);
+  console.log(&quot;next&quot;);
+  yield 2;
+  await wait(100);
+  console.log(&quot;end&quot;);
+};
+
+const it = gen();
+console.log(await it.next());
+console.log(await it.next());
+console.log(await it.next());
+
+// start
+// { value: 1, done: false }
+// next
+// { value: 2, done: false }
+// end
+// { value: undefined, done: true }</code></pre>
+</div>
+</div>
+</div>
+<h3 id="chapter10.xhtml_breaking-it-down">Breaking it down</h3>
+<p>The most important thing is to keep track of the
+<code>NextMarker</code> returned by the last call and use that for
+making the next one. For the first call, <code>Marker</code> should be
+<code>undefined</code>, and to differentiate between the first and the
+last one (the one that returns no <code>NextMarker</code>), a Symbol is
+a safe option as it cannot be returned by the API.</p>
+<pre class="highlight"><code>const EMPTY = Symbol(&quot;empty&quot;);
+let NextMarker = EMPTY;
+while (NextMarker || NextMarker === EMPTY) {
+  // Marker: NextMarker !== EMPTY ? NextMarker : undefined
+
+  NextMarker = functions.NextMarker;
+}</code></pre>
+<p>After the call, we need to <code>yield</code> the functions
+returned:</p>
+<pre class="highlight"><code>yield* functions.Functions;</code></pre>
+<p>The <code>yield*</code> makes sure that each element is returned as a
+separate value by the generator.</p>
+<p>Finally, a <code>for await..of</code> loop collects the results and
+returns them as an Array:</p>
+<pre class="highlight"><code>const res = [];
+for await (const lf of (async function*() {
+  ...
+})()) {
+  res.push(lf);
+}
+return res;</code></pre>
+<p>To use it, just call the function and wait for the resulting Promise
+to resolve:</p>
+<pre class="highlight"><code>const functions = await getAllLambdas();</code></pre>
+<h2 id="chapter10.xhtml_making-it-generic">Making it generic</h2>
+<p>The same <code>Marker</code>/<code>NextMarker</code> pattern appears
+throughout the AWS SDK. But unfortunately, the naming is different for
+different services. For example, getting the CloudWatch Logs log groups
+you need to provide a <code>nextToken</code> <a
+href="https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CloudWatchLogs.html#describeLogGroups-property">parameter</a>.
+This makes it impossible to support all the listing functions with a
+generic wrapper.</p>
+<p>Luckily, as the pattern is the same, we can make a wrapper function
+that handles everything but the naming:</p>
+<pre class="highlight"><code>const getPaginatedResults = async (fn) =&gt; {
+  const EMPTY = Symbol(&quot;empty&quot;);
+  const res = [];
+  for await (const lf of (async function*() {
+    let NextMarker = EMPTY;
+    while (NextMarker || NextMarker === EMPTY) {
+      const {marker, results} = await fn(
+        NextMarker !== EMPTY ? NextMarker : undefined
+      );
+
+      yield* results;
+      NextMarker = marker;
+    }
+  })()) {
+    res.push(lf);
+  }
+
+  return res;
+};</code></pre>
+<p>It follows the same structure as before, but it gets an
+<code>fn</code> parameter that does the actual API call and returns the
+list and the marker.</p>
+<p>To get all the Lambda functions with this wrapper:</p>
+<pre class="highlight"><code>const lambdas = await getPaginatedResults(async (NextMarker) =&gt; {
+  const functions = await lambda.listFunctions(
+    {Marker: NextMarker}
+  ).promise();
+  return {
+    marker: functions.NextMarker,
+    results: functions.Functions,
+  };
+});</code></pre>
+<p>Adapted to the log groups:</p>
+<pre class="highlight"><code>const logGroups =
+  await getPaginatedResults(async (NextMarker) =&gt; {
+    const logGroups = await logs.describeLogGroups(
+      {nextToken: NextMarker}
+    ).promise();
+    return {
+      marker: logGroups.nextToken,
+      results: logGroups.logGroups,
+    };
+  });</code></pre>
+<p><span id="chapter11.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter11.xhtml_using-async-functions-with-postmessage">Using async
+functions with postMessage</h1>
+<p>The <code>postMessage</code> call allows an asynchronous
+communication channel between different browsing contexts, such as with
+IFrames and web workers, where direct function calls don't work. It
+works by sending a message to the other side, then the receiving end can
+listen to <code>message</code> events.</p>
+<p>For example, the page can communicate with an IFrame via
+<code>postMessage</code> and send events to each others' windows. The
+<code>iframe.contentWindow.postMessage()</code> call sends a message to
+the IFrame, while the <code>window.parent.postMessage()</code> sends a
+message back to the main page. The two ends can listen to messages from
+the other using
+<code>window.addEventListener("message", (event) =&gt; {...})</code>.</p>
+<pre class="highlight"><code>// index.html
+const iframe = document.querySelector(&quot;iframe&quot;);
+
+window.addEventListener(&quot;message&quot;, ({data}) =&gt; {
+  // 3: receive response
+  console.log(&quot;Message from iframe: &quot; + data);
+});
+
+// 1: send request
+iframe.contentWindow.postMessage([5, 2]);
+
+// iframe.html
+window.addEventListener(&quot;message&quot;, ({data}) =&gt; {
+  // 2: send response
+  window.parent.postMessage(event.data[0] + event.data[1]);
+});</code></pre>
+<figure class="plantuml image">
+<img
+src="b1786475a19dc022bf1f3004f04a3cdc36dd119d4b068f2b65998e8f866a5ba5.png"
+style="width: 508px;" />
+<figcaption>page-IFrame communication</figcaption>
+</figure>
+<p>For web workers, each worker has a separate message handler. The page
+can send a message to a specific worker using the
+<code>worker.postMessage()</code> call and listen for events from that
+worker using
+<code>worker.addEventListener("message", (event) =&gt; {...})</code>. On
+the other side, the worker sends and receives events using the global
+functions <code>postMessage()</code> and
+<code>addEventListener()</code>:</p>
+<pre class="highlight"><code>// index.html
+const worker = new Worker(&quot;worker.js&quot;);
+worker.addEventListener(&quot;message&quot;, ({data}) =&gt; {
+  console.log(&quot;Message from worker: &quot; + data); // 3
+});
+
+worker.postMessage([5, 5]); // 1
+
+// worker.js
+addEventListener(&quot;message&quot;, (event) =&gt; {
+  postMessage(event.data[0] + event.data[1]); // 2
+}, false)</code></pre>
+<h2 id="chapter11.xhtml_request-response-communication">Request-response
+communication</h2>
+<p>Both communicating with an IFrame and with a worker has problems.
+First, sending the request and handling the response is separated.
+<strong>The receiving side uses a global (or a per-worker) event
+listener</strong>, which is shared between the calls.</p>
+<p>This is good for "notification-style" messages where one end wants to
+notify the other that something happened but not expecting a response.
+But <strong>notification-style messaging is rare</strong>. What is
+usually needed is a "request-response-style" messaging.</p>
+<p>For example, one end uses an access token that the other one can
+refresh. The communication consists of a request to refresh and a
+response to that with the refreshed token. Or even when a user clicks on
+a button and the other side needs to handle this. This example seems
+like a "notification-style" message, but when the button needs to be
+disabled while the operation takes place (such as a save button) or
+there is a possibility of an error that the sender needs to know about,
+it's now a request-response.</p>
+<p>The global (or per-worker) message handler is not suited for pairing
+responses to requests. The ideal solution would be to hide all these
+complications behind an async function call and use <code>await</code>
+to wait for the result:</p>
+<pre class="highlight"><code>const result = await add(10, 5);</code></pre>
+<p>Let's see how to make such a function!</p>
+<h3 id="chapter11.xhtml_response-identification">Response
+identification</h3>
+<p>The first task is to know which request triggered a given response.
+The problem with using the global event handler is that it's all too
+easy to rely on only one communication happening at a time. When you
+test your webapp, you test one thing at a time but users won't be that
+considerate. You can't assume only one request-response will happen at
+any one time.</p>
+<figure class="plantuml image">
+<img
+src="fe5ec8337fbbff1aac2fec193f30a60c549566acdab873dd3eab8e52fe5153a8.png"
+style="width: 260px;" />
+<figcaption>Non-multiplexed channel</figcaption>
+</figure>
+<p>One solution is to use <em>request identifiers</em> to pair the
+responses to the requests.</p>
+<figure class="plantuml image">
+<img
+src="b5b51157b8c956a6b5cbe1c493ca6946506fc1deedecbf7ead2f4895ca1bacbd.png"
+style="width: 300px;" />
+<figcaption>Request ids</figcaption>
+</figure>
+<p>This works, and even though it requires some coding, this is a good
+solution.</p>
+<h4 id="chapter11.xhtml_messagechannel">MessageChannel</h4>
+<p>Fortunately, there is a better solution built into the language.
+MessageChannel allows a dedicated communication channel attached to the
+<code>postMessage</code> call. The sending end can listen for messages
+<em>on that channel</em> which is separated from all other calls, and
+the receiving end can send its responses through the
+<em>MessagePort</em> it got.</p>
+<p>A MessageChannel creates two MessagePorts, one for each end of the
+communication. Each port supports both the <code>onmessage</code> and
+the <code>postMessage</code>, similar to the basic cross-context
+communication channels.</p>
+<pre class="highlight"><code>// index.html
+const worker = new Worker(&quot;worker.js&quot;);
+// create a channel
+const channel = new MessageChannel(); 
+
+// listen on one end
+channel.port1.onmessage = ({data}) =&gt; {
+  console.log(&quot;Message from channel: &quot; + data); // 3
+};
+
+// send the other end
+worker.postMessage([15, 2], [channel.port2]); // 1
+
+// worker.js
+addEventListener(&quot;message&quot;, (event) =&gt; {
+  // respond on the received port
+  event.ports[0].postMessage(event.data[0] + event.data[1]); // 2
+}, false)</code></pre>
+<p>To attach a message handler to a port, use
+<code>port.onmessage = (event) =&gt; {...}</code>. If you use
+<code>addEventListener</code> then you need to start the channel
+too:</p>
+<pre class="highlight"><code>port.addEventListener(&quot;message&quot;, (event) =&gt; {...});
+port.start();</code></pre>
+<p>To attach a port to the <code>postMessage</code> call, use the second
+argument: <code>postMessage(data, [channel.port2])</code>. To use this
+port on the other end, use
+<code>event.ports[0].postMessage()</code>.</p>
+<p>By creating a new MessageChannel for each request, pairing the
+response is solved as whatever comes through that channel is the
+response to this particular request.</p>
+<h3 id="chapter11.xhtml_defined-error-handling">Error handling</h3>
+<p>An often overlooked aspect of request-response communication is error
+handling. When the receiving end has a problem and throws an Error, it
+should be propagated to the sender so that it can handle it
+appropriately.</p>
+<p>The problem with <code>postMessage</code> is that it can only send
+one type of message, there is no <code>postError</code> call. How to
+signal an error then?</p>
+<p>A possible solution is similar to how Node-style callbacks propagate
+errors using only a single function. These callbacks use an error and a
+result value together, and only one of them is defined:</p>
+<pre class="highlight"><code>(err, result) =&gt; {
+  if (err) {
+    // error
+  } else {
+    // result
+  }
+}</code></pre>
+<p>To implement the same with messages, use an object with
+<code>error</code> and <code>result</code> properties. When the former
+is non-null that indicates that an error happened.</p>
+<pre class="highlight"><code>// worker.js
+try{
+  event.ports[0].postMessage(
+    {result: event.data[0] + event.data[1]}
+  );
+}catch(e) {
+  event.ports[0].postMessage({error: e});
+}
+
+// index.html
+channel.port1.onmessage = ({data}) =&gt; {
+  if (data.error) {
+    // error
+  }else {
+    // data.result
+  }
+};</code></pre>
+<p>Don't forget to wrap the receiving end in a try-catch to propagate
+runtime errors.</p>
+<h2 id="chapter11.xhtml_using-promises">Using Promises</h2>
+<p>With a separated response channel and error propagation, it's easy to
+wrap the call in a Promise constructor.</p>
+<pre class="highlight"><code>const worker = new Worker(&quot;worker.js&quot;);
+
+const add = (a, b) =&gt; new Promise((res, rej) =&gt; {
+  const channel = new MessageChannel(); 
+
+  channel.port1.onmessage = ({data}) =&gt; {
+    channel.port1.close();
+    if (data.error) {
+      rej(data.error);
+    }else {
+      res(data.result);
+    }
+  };
+
+  worker.postMessage([a, b], [channel.port2]);
+});
+
+console.log(await add(3, 5)); // 8</code></pre>
+<p>With a Promise hiding all the complexities of the remote call,
+everything that works with async/await works with these calls too:</p>
+<pre class="highlight"><code>// parallel execution
+console.log(await Promise.all([
+  add(1, 1),
+  add(5, 5),
+])); // [2, 10]
+
+// async reduce
+console.log(await [1, 2, 3, 4].reduce(async (memo, i) =&gt; {
+  return add(await memo, i);
+}), 0); // 10</code></pre>
+<p>And the Promise rejects when it should, allowing proper error
+handling on the sending end:</p>
+<pre class="highlight"><code>// worker.js
+addEventListener(&quot;message&quot;, (event) =&gt; {
+  try{
+    if (
+      typeof event.data[0] !== &quot;number&quot; ||
+      typeof event.data[1] !== &quot;number&quot;
+    ) {
+      throw new Error(&quot;both arguments must be numbers&quot;);
+    }
+    event.ports[0].postMessage(
+      {result: event.data[0] + event.data[1]}
+    );
+  }catch(e) {
+    event.ports[0].postMessage({error: e});
+  }
+}, false)
+
+// index.html
+try {
+  await add(undefined, &quot;b&quot;);
+}catch(e) {
+  console.log(&quot;Error: &quot; + e.message); // error
+}</code></pre>
+<p>One restriction is what can be sent through the
+<code>postMessage</code> call. It uses the <em>structured clone
+algorithm</em> which supports complex objects but <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm">not
+everything</a>.</p>
+<p><span id="chapter12.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter12.xhtml_collection-processing-with-async-functions">Collection
+processing with async functions</h1>
+<p>While async/await is great to make async <em>commands</em> look like
+synchronous ones, collection processing is not that simple. It's not
+just adding an <code>async</code> before the function passed to
+<code>Array.reduce</code> and it will magically work correctly. But
+without async functions, you can not use <code>await</code> and provide
+a result <em>later</em> which is required for things like reading a
+database, making network connections, reading files, and a whole bunch
+of other things.</p>
+<p>Let's see some examples!</p>
+<p>When all the functions you need to use are synchronous, it's easy.
+For example, a string can be doubled without any asynchronicity
+involved:</p>
+<pre class="highlight"><code>const double = (str) =&gt; {
+  return str + str;
+};
+
+double(&quot;abc&quot;);
+// abcabc</code></pre>
+<p>If the function is async, it's also easy for a single item using
+<code>await</code>. For example, to calculate the SHA-256 hash,
+Javascript provides a <code>digest()</code> async function:</p>
+<pre class="highlight"><code>// https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest
+const digestMessage = async (message) =&gt; {
+  const msgUint8 = new TextEncoder().encode(message);
+  const hashBuffer =
+    await crypto.subtle.digest(&quot;SHA-256&quot;, msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray
+    .map(b =&gt; b.toString(16).padStart(2, &quot;0&quot;))
+    .join(&#39;&#39;);
+  return hashHex;
+};
+
+await digestMessage(&quot;msg&quot;);
+// e46b320165eec91e6344fa1034...</code></pre>
+<p>This looks almost identical to the previous call, the only difference
+is an <code>await</code>.</p>
+<p>But for collections, handling asynchronicity becomes different.</p>
+<p>To calculate the double for each element in a <strong>collection of
+strings</strong> is simple with a <code>map</code>:</p>
+<pre class="highlight"><code>const strings = [&quot;msg1&quot;, &quot;msg2&quot;, &quot;msg3&quot;];
+
+strings.map(double);
+// [&quot;msg1msg1&quot;, &quot;msg2msg2&quot;, &quot;msg3msg3&quot;]</code></pre>
+<p>But to calculate the <strong>hash</strong> of each string in a
+collection, it does not work:</p>
+<pre class="highlight"><code>const strings = [&quot;msg1&quot;, &quot;msg2&quot;, &quot;msg3&quot;];
+
+await strings.map(digestMessage);
+// [object Promise],[object Promise],[object Promise]</code></pre>
+<p>This is an everyday problem as async functions make a bigger category
+than synchronous ones. A sync function can work in an async environment,
+but an async one can not be converted to work in a synchronous way.</p>
+<p>For a more realistic scenario, querying a database is inherently
+async as it needs to make network connections. To get the score for a
+single <code>userId</code> from a hypothetical database is simple:</p>
+<pre class="highlight"><code>const getUserObject = async (id) =&gt; {
+  // get user by id
+};
+
+const userId = 15;
+const userObject = await getUserObject(userId);
+const userScore = userObject.score;</code></pre>
+<p>But how to query the database for a <em>collection</em> of
+<code>userId</code>s?</p>
+<pre class="highlight"><code>const userIds = [15, 16, 21];
+// const userObjects = ???</code></pre>
+<p>And it's not just about using <code>map</code> to transform one value
+to another. Is the user's score above 3?</p>
+<pre class="highlight"><code>const userObject = await getUserObject(userId);
+const above3 = userObject.score &gt; 3;</code></pre>
+<p>But is <em>any</em> of the users' score above 3?</p>
+<pre class="highlight"><code>// userIds.some(???)</code></pre>
+<p>Or what is the average score?</p>
+<pre class="highlight"><code>// userIds.reduce(???)</code></pre>
+<p>To make things more interesting, adding an <code>async</code> to a
+<code>map</code> at least gives some indication what is changed:</p>
+<pre class="highlight"><code>// synchronous
+[1, 2, 3].map((i) =&gt; {
+  return i + 1;
+});
+// [2, 3, 4]
+
+// asynchronous
+[1, 2, 3].map(async (i) =&gt; {
+  return i + 1;
+});
+// [object Promise],[object Promise],[object Promise]</code></pre>
+<p>But a <code>filter</code> just does something entirely wrong:</p>
+<pre class="highlight"><code>// synchronous
+[1, 2, 3, 4, 5].filter((i) =&gt; {
+  return i % 2 === 0;
+});
+// [2, 4]
+
+// asynchronous
+[1, 2, 3, 4, 5].filter(async (i) =&gt; {
+  return i % 2 === 0;
+});
+// [1, 2, 3, 4, 5]</code></pre>
+<p>Because of this, async collection processing requires some effort,
+and it's different depending on what kind of function you want to use.
+An async <code>map</code> works markedly differently than an async
+<code>filter</code> or and async <code>reduce</code>.</p>
+<p>In this chapter, you'll learn how each of them works and how to
+efficiently use them.</p>
+<h2 id="chapter12.xhtml_async-for-iteration">Async for iteration</h2>
+<p>But first, let's talk about <code>for</code> loops!</p>
+<p>I don't like <code>for</code> loops as they tend to promote bad
+coding practices, like nested loops that do a lot of things at once or
+<code>continue</code>/<code>break</code> statements scattered around
+that quickly descend into an unmaintainable mess.</p>
+<p>Also, a more functional approach with functions like
+<code>map</code>/<code>filter</code>/<code>reduce</code> promote a style
+where one function does only one thing and everything inside it is
+scoped and stateless. And the functional approach is not only possible
+99% of the time but it comes with no perceivable performance drop and it
+also yields simpler code (well, at least when you know the functions
+involved).</p>
+<p>But async/await is in the remaining 1%.</p>
+<p>For loops have a distinctive feature, as they don't rely on
+<em>calling</em> a function. In effect, you can use <code>await</code>
+inside the loop and it will just work.</p>
+<pre class="highlight"><code>// synchronous
+{
+  const res = [];
+  for (let i of [1, 2, 3]){
+    res.push(i + 1);
+  }
+  // res: [2, 3, 4]
+}
+
+// asynchronous
+{
+  const res = [];
+  for (let i of [1, 2, 3]){
+    await sleep(10);
+    res.push(i + 1);
+  }
+  // res: [2, 3, 4]
+}</code></pre>
+<p>As <code>for</code> loops are a generic tool, they can be used for
+all kinds of requirements when working with collections.</p>
+<p>But their downside is still present, and while it's not trivial to
+adapt the functional approach to async/await, once you start seeing the
+general pattern it's not that hard either.</p>
+<h2 id="chapter12.xhtml_async-functions-with-reduce">Async functions
+with reduce</h2>
+<p>The <code>reduce</code> function iteratively constructs a value and
+returns it, which is not necessarily a collection. That's where the name
+comes from, as it <em>reduces</em> a collection to a value.</p>
+<p>The iteratee function gets the previous result, called
+<code>memo</code> in the examples below, and the current value,
+<code>e</code>.</p>
+<p>The following function sums the elements, starting with 0 (the second
+argument of <code>reduce</code>):</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const syncRes = arr.reduce((memo, e) =&gt; {
+  return memo + e;
+}, 0);
+
+console.log(syncRes);
+// 6</code></pre>
+<table>
+<thead>
+<tr>
+<th><code>memo</code>  </th>
+<th style="text-align: center;">      <code>e</code>      </th>
+<th style="text-align: right;">  result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 (initial)</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: right;">(end result) 6</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<figure class="plantuml image">
+<img
+src="87a5c26af62b04b8a3f8f8f31fadb7f21ef4327dd2eb7167aa4ee5b222f5a055.png"
+style="width: 159px;" />
+<figcaption>The reduce function</figcaption>
+</figure>
+<h3 id="chapter12.xhtml_asynchronous-reduce">Asynchronous reduce</h3>
+<p>An async version is almost the same, but it returns a Promise on each
+iteration, so <code>memo</code> will be the <em>Promise</em> of the
+previous result. The iteratee function needs to <code>await</code> it in
+order to calculate the next result:</p>
+<pre class="highlight"><code>// utility function for sleeping
+const sleep = (n) =&gt; new Promise((res) =&gt; setTimeout(res, n));
+
+const arr = [1, 2, 3];
+
+const asyncRes = await arr.reduce(async (memo, e) =&gt; {
+  await sleep(10);
+  return (await memo) + e;
+}, 0);
+
+console.log(asyncRes);
+// 6</code></pre>
+<table>
+<thead>
+<tr>
+<th><code>memo</code>  </th>
+<th style="text-align: center;">      <code>e</code>      </th>
+<th style="text-align: right;">  result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 (initial)</td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: right;">Promise(1)</td>
+</tr>
+<tr>
+<td>Promise(1)</td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: right;">Promise(3)</td>
+</tr>
+<tr>
+<td>Promise(3)</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: right;">(end result) Promise(6)</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<figure class="plantuml image">
+<img
+src="3b1dc9cf4690d493cf04ceff6c45d834e15ea9ceec86ae61167a3f1505a36813.png"
+style="width: 290px;" />
+<figcaption>Async reduce function</figcaption>
+</figure>
+<p>With the structure of <code>async (memo, e) =&gt; await memo</code>,
+the <code>reduce</code> can handle any async functions and it can be
+<code>await</code>ed.</p>
+<h3 id="chapter12.xhtml_timing">Timing</h3>
+<p>Concurrency has an interesting property when it comes to
+<code>reduce</code>. In the synchronous version, elements are processed
+one-by-one, which is not surprising as they rely on the
+<em>previous</em> result. But when an async <code>reduce</code> is run,
+all the iteratee functions start running in parallel and wait for the
+previous result (<code>await memo</code>) only when needed.</p>
+<h4 id="chapter12.xhtml_await-memo-last">await memo last</h4>
+<p>In the example above, all the <code>sleep</code>s happen in parallel,
+as the <code>await memo</code>, which makes the function to wait for the
+previous one to finish, comes later.</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const startTime = new Date().getTime();
+
+const asyncRes = await arr.reduce(async (memo, e) =&gt; {
+  await sleep(10);
+  return (await memo) + e;
+}, 0);
+
+console.log(`Took ${new Date().getTime() - startTime} ms`);
+// Took 11-13 ms</code></pre>
+<figure class="plantuml image">
+<img
+src="0b9006991849f3db718eda88ce54dd1256aac7028395d38d486e40e017b9c20c.png"
+style="width: 250px;" />
+<figcaption>Async reduce with "await memo" last</figcaption>
+</figure>
+<h4 id="chapter12.xhtml_await-memo-first">await memo first</h4>
+<p>But when the <code>await memo</code> comes first, the functions run
+sequentially:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const startTime = new Date().getTime();
+
+const asyncRes = await arr.reduce(async (memo, e) =&gt; {
+  await memo;
+  await sleep(10);
+  return (await memo) + e;
+}, 0);
+
+console.log(`Took ${new Date().getTime() - startTime} ms`);
+// Took 36-38 ms</code></pre>
+<figure class="plantuml image">
+<img
+src="b5be8ee75623f698e0f641badb7276bd5dcf61c7743e9b3960452f00be724050.png"
+style="width: 269px;" />
+<figcaption>Async reduce with "await memo" first</figcaption>
+</figure>
+<p>This behavior is usually not a problem as it naturally means
+everything that is not dependent on the previous result will be
+calculated immediately, and only the dependent parts are waiting for the
+previous value.</p>
+<h4 id="chapter12.xhtml_when-parallelism-matters">When parallelism
+matters</h4>
+<p>But in some cases, it might be unfeasible to do something ahead of
+time.</p>
+<p>For example, I had a piece of code that prints different PDFs and
+concatenates them into one single file using the <a
+href="https://www.npmjs.com/package/pdf-lib">pdf-lib</a> library.</p>
+<p>This implementation runs the resource-intensive <code>printPDF</code>
+function in parallel:</p>
+<pre class="highlight"><code>const result = await printingPages.reduce(async (memo, page) =&gt; {
+  const pdf = await PDFDocument.load(await printPDF(page));
+
+  const pdfDoc = await memo;
+
+  (await pdfDoc.copyPages(pdf, pdf.getPageIndices()))
+    .forEach((page) =&gt; pdfDoc.addPage(page));
+
+  return pdfDoc;
+
+}, PDFDocument.create());</code></pre>
+<p>I noticed that when I have many pages to print, it would consume too
+much memory and slow down the overall process.</p>
+<p>A simple change made the <code>printPDF</code> calls wait for the
+previous one to finish:</p>
+<pre class="highlight"><code>const result = await printingPages.reduce(async (memo, page) =&gt; {
+  const pdfDoc = await memo;
+
+  const pdf = await PDFDocument.load(await printPDF(page));
+
+  (await pdfDoc.copyPages(pdf, pdf.getPageIndices()))
+    .forEach((page) =&gt; pdfDoc.addPage(page));
+
+  return pdfDoc;
+
+}, PDFDocument.create());</code></pre>
+<h2 id="chapter12.xhtml_async-functions-with-map">Async functions with
+map</h2>
+<p>The <code>map</code> is the easiest and most common collection
+function. It runs each element through an iteratee function and returns
+an array with the results.</p>
+<p>The synchronous version that adds one to each element:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const syncRes = arr.map((i) =&gt; {
+  return i + 1;
+});
+
+console.log(syncRes);
+// 2,3,4</code></pre>
+<p>An async version needs to do two things. First, it needs to
+<strong>map every item to a <em>Promise</em></strong> with the new
+value, which is what adding <code>async</code> before the function
+does.</p>
+<p>And second, it needs to <strong>wait for all the Promises</strong>
+then <strong>collect the results</strong> in an Array. Fortunately, the
+<code>Promise.all</code> built-in call is exactly what we need for step
+2.</p>
+<p>This makes the general pattern of an async <code>map</code> to be
+<code>Promise.all(arr.map(async (...) =&gt; ...))</code>.</p>
+<p>An async implementation doing the same as the sync one:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const asyncRes = await Promise.all(arr.map(async (i) =&gt; {
+  await sleep(10);
+  return i + 1;
+}));
+
+console.log(asyncRes);
+// 2,3,4</code></pre>
+<figure class="plantuml image">
+<img
+src="4882ecc2dd5773605f888af8d04d80ecb36a75c646ef743a8e2f5effef00a0a0.png"
+style="width: 189px;" />
+<figcaption>Async map</figcaption>
+</figure>
+<h3 id="chapter12.xhtml_concurrency">Concurrency</h3>
+<p>The above implementation runs the iteratee function in parallel for
+each element of the array. This is usually fine, but in some cases, it
+might consume too much resources. This can happen when the async
+function hits an API or consumes too much RAM that it's not feasible to
+run too many at once.</p>
+<p>While an async <code>map</code> is easy to write, adding concurrency
+controls is more involved. In the next few examples, we'll look into
+different solutions.</p>
+<h4 id="chapter12.xhtml_batch-processing">Batch processing</h4>
+<p>The easiest way is to group elements and process the groups one by
+one. This gives you control of the maximum amount of parallel tasks that
+can run at once. But since one group has to finish before the next one
+starts, the <em>slowest</em> element in each group becomes the limiting
+factor.</p>
+<figure class="plantuml image">
+<img
+src="e1c1bb2cf8fe927cceb829b06b7bcf4d193ae1459d48dc895ae7f708be81dd0c.png"
+style="width: 302px;" />
+<figcaption>Mapping in groups</figcaption>
+</figure>
+<p>To make groups, the example below uses the <code>groupBy</code>
+implementation from <a
+href="https://underscorejs.org/#groupBy">Underscore.js</a>. Many
+libraries provide an implementation and they are mostly interchangeable.
+The exception is Lodash, as its <a
+href="https://lodash.com/docs/#groupBy">groupBy does not pass the index
+of the item</a>.</p>
+<p>If you are not familiar with <code>groupBy</code>, it runs each
+element through an iteratee function and returns an object with the keys
+as the results and the values as lists of the elements that produced
+that value.</p>
+<p>To make groups of at most <code>n</code> elements, an iteratee
+<code>Math.floor(i / n)</code> where <code>i</code> is the
+<em>index</em> of the element will do. As an example, a group of size 3
+will map the elements like this:</p>
+<pre class="highlight"><code>0 =&gt; 0
+1 =&gt; 0
+2 =&gt; 0
+3 =&gt; 1
+4 =&gt; 1
+5 =&gt; 1
+6 =&gt; 2
+...</code></pre>
+<p>In Javascript:</p>
+<pre class="highlight"><code>const arr = [30, 10, 20, 20, 15, 20, 10];
+
+console.log(
+  _.groupBy(arr, (_v, i) =&gt; Math.floor(i / 3))
+);
+// {
+//     0: [30, 10, 20],
+//     1: [20, 15, 20],
+//     2: [10]
+// }</code></pre>
+<p>The last group might be smaller than the others, but all groups are
+guaranteed not to exceed the maximum group size.</p>
+<p>To map one group, the usual <code>Promise.all(group.map(...))</code>
+construct is fine.</p>
+<p>To map the groups sequentially, we need a reduce that concatenates
+the previous results (<code>memo</code>) with the results of the current
+group:</p>
+<pre class="highlight"><code>return Object.values(groups)
+  .reduce(async (memo, group) =&gt; [
+    ...(await memo),
+    ...(await Promise.all(group.map(iteratee)))
+  ], []);</code></pre>
+<p>This implementation is based on the fact that the
+<code>await memo</code>, which waits for the previous result, will be
+completed before moving on to the next line.</p>
+<p>The full implementation that implements batching:</p>
+<pre class="highlight"><code>const arr = [30, 10, 20, 20, 15, 20, 10];
+
+const mapInGroups = (arr, iteratee, groupSize) =&gt; {
+  const groups = _.groupBy(arr, (_v, i) =&gt;
+    Math.floor(i / groupSize));
+
+  return Object.values(groups)
+    .reduce(async (memo, group) =&gt; [
+      ...(await memo),
+      ...(await Promise.all(group.map(iteratee)))
+    ], []);
+};
+
+const res = await mapInGroups(arr, async (v) =&gt; {
+  console.log(`S ${v}`);
+  await sleep(v);
+  console.log(`F ${v}`);
+  return v + 1;
+}, 3);
+
+// -- first batch --
+// S 30
+// S 10
+// S 20
+// F 10
+// F 20
+// F 30
+// -- second batch --
+// S 20
+// S 15
+// S 20
+// F 15
+// F 20
+// F 20
+// -- third batch --
+// S 10
+// F 10
+
+console.log(res);
+// 31,11,21,21,16,21,11</code></pre>
+<h4 id="chapter12.xhtml_parallel-processing">Parallel processing</h4>
+<p>Another type of concurrency control is to run at most <code>n</code>
+tasks in parallel, and start a new one whenever one is finished.</p>
+<figure class="plantuml image">
+<img
+src="902c1166225283a3fdcb8dc17bac41ee0ca65689964e8747ea3f7485578e1209.png"
+style="width: 235px;" />
+<figcaption>Controlled concurrency</figcaption>
+</figure>
+<p>I couldn't come up with a simple implementation for this, but
+fortunately, the Bluebird library <a
+href="http://bluebirdjs.com/docs/api/promise.map.html#map-option-concurrency">provides
+one</a> out of the box. This makes it straightforward, just import the
+library and use the <code>Promise.map</code> function that has support
+for the <code>concurrency</code> option.</p>
+<p>In the example below the concurrency is limited to <code>2</code>,
+which means 2 tasks are started immediately, then whenever one is
+finished, a new one is started until there are none left:</p>
+<pre class="highlight"><code>const arr = [30, 10, 20, 20, 15, 20, 10];
+
+// Bluebird promise
+const res = await Promise.map(arr, async (v) =&gt; {
+  console.log(`S ${v}`)
+  await sleep(v);
+  console.log(`F ${v}`);
+  return v + 1;
+}, {concurrency: 2});
+
+// S 30
+// S 10
+// F 10
+// S 10
+// F 30
+// S 20
+// F 10
+// S 15
+// F 20
+// S 20
+// F 15
+// S 20
+// F 20
+// F 20
+
+console.log(res);
+// 31,11,21,21,16,21,11</code></pre>
+<h4 id="chapter12.xhtml_sequential-processing">Sequential
+processing</h4>
+<p>Sometimes any concurrency is too much and the elements should be
+processed one after the other.</p>
+<figure class="plantuml image">
+<img
+src="26e09fdca23842d354c8c0658109bdfdf041ea7696549b1aa4d4636fb2998b27.png"
+style="width: 254px;" />
+<figcaption>Mapping sequentially</figcaption>
+</figure>
+<p>A trivial implementation is to use Bluebird's Promise with a
+concurrency of 1. But for this case, it does not warrant including a
+library as a simple <code>reduce</code> would do the job:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const res = await arr.reduce(async (memo, v) =&gt; {
+  const results = await memo;
+  console.log(`S ${v}`)
+  await sleep(10);
+  console.log(`F ${v}`);
+  return [...results, v + 1];
+}, []);
+
+// S 1
+// F 1
+// S 2
+// F 2
+// S 3
+// F 3
+
+console.log(res);
+// 2,3,4</code></pre>
+<p>Make sure to <code>await</code> the memo before
+<code>await</code>-ing anything else, as without that it will still run
+concurrently!</p>
+<h2 id="chapter12.xhtml_defined-the-foreach-function">Async functions
+with forEach</h2>
+<p>The <code>forEach</code> function is similar to the <code>map</code>,
+but instead of transforming the values and using the results, it runs
+the function for each element and discards the result. Effectively, the
+important part is the <em>side effects</em> of calling the function.</p>
+<p>For example, printing each element to the console, synchronously:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+arr.forEach((i) =&gt; {
+  console.log(i);
+});
+
+// 1
+// 2
+// 3
+
+console.log(&quot;Finished sync&quot;);
+// Finished sync</code></pre>
+<p>As the result is not important, using an async function as the
+iteratee would work:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+arr.forEach(async (i) =&gt; {
+  // each element takes a different amount of time to complete
+  await sleep(10 - i);
+  console.log(i);
+});
+
+console.log(&quot;Finished async&quot;);
+// Finished async
+
+// 3
+// 2
+// 1</code></pre>
+<figure class="plantuml image">
+<img
+src="44bde7cbd8fdafdc2c2494ae8f049fe77ae0bf57dd112b78b0ac05dec2e53192.png"
+style="width: 274px;" />
+<figcaption>Async forEach</figcaption>
+</figure>
+<h3 id="chapter12.xhtml_controlling-the-timing">Controlling the
+timing</h3>
+<h4 id="chapter12.xhtml_waiting-for-finish">Waiting for finish</h4>
+<p>But, not unsurprisingly, the function is called
+<strong>asynchronously</strong>, and the program execution goes past the
+call. This is an important difference from the sync version, as, by the
+time the next line is executed, the synchronous <code>forEach</code> is
+already done, while the async version is not. That's why the "Finished
+async" log appears <em>before</em> the elements.</p>
+<p>To wait for all the function calls to finish before moving on, use a
+<code>map</code> with a <code>Promise.all</code> and discard the
+results:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+await Promise.all(arr.map(async (i) =&gt; {
+  await sleep(10 - i);
+  console.log(i);
+}));
+
+// 3
+// 2
+// 1
+
+console.log(&quot;Finished async&quot;);
+// Finished async</code></pre>
+<figure class="plantuml image">
+<img
+src="4578a72f73ebe729751dc8a2e7982f5f5788c083d678588f96ebf1ca1642dd40.png"
+style="width: 252px;" />
+<figcaption>Async forEach, waiting for the results</figcaption>
+</figure>
+<p>With this change, the "Finished async" comes last.</p>
+<h4 id="chapter12.xhtml_sequential-processing-1">Sequential
+processing</h4>
+<p>But notice that the iteratee functions are called in parallel. To
+faithfully follow the synchronous <code>forEach</code>, use a
+<code>reduce</code> with an <code>await memo</code> first:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+await arr.reduce(async (memo, i) =&gt; {
+  await memo;
+  await sleep(10 - i);
+  console.log(i);
+}, undefined);
+
+// 1
+// 2
+// 3
+
+console.log(&quot;Finished async&quot;);
+// Finished async</code></pre>
+<figure class="plantuml image">
+<img
+src="66b6c76bc716c0b5c0aa317848a0a8ee3bd423d67071bb936461d21f0a1e35ea.png"
+style="width: 271px;" />
+<figcaption>Async forEach, sequential processing</figcaption>
+</figure>
+<p>This way the elements are processed in-order, one after the other,
+and the program execution waits for the whole array to finish before
+moving on.</p>
+<h2 id="chapter12.xhtml_async-functions-with-filter">Async functions
+with filter</h2>
+<p>The <code>filter</code> function keeps only the elements that pass a
+condition. It gets a function, this time it's called a
+<em>predicate</em>, and this function returns true/false (truthy and
+falsy, to be more precise) values. The resulting collection only
+contains the elements where the predicate returned true.</p>
+<pre class="highlight"><code>const arr = [1, 2, 3, 4, 5];
+
+const syncRes = arr.filter((i) =&gt; {
+  return i % 2 === 0;
+});
+
+console.log(syncRes);
+// 2,4</code></pre>
+<h3 id="chapter12.xhtml_async-filter-with-map">Async filter with
+map</h3>
+<p>The async version is a bit more complicated this time and it works in
+two phases. The first one maps the array through the predicate function
+asynchronously, producing true/false values. Then the second step is a
+synchronous <code>filter</code> that uses the results from the first
+step.</p>
+<figure class="plantuml image">
+<img
+src="ea88e1aac9cb48ef0755b091aa42472171622d59e3968cfa8bf14292042a7823.png"
+style="width: 436px;" />
+<figcaption>Async filter</figcaption>
+</figure>
+<pre class="highlight"><code>const arr = [1, 2, 3, 4, 5];
+
+const asyncFilter = async (arr, predicate) =&gt; {
+  const results = await Promise.all(arr.map(predicate));
+
+  return arr.filter((_v, index) =&gt; results[index]);
+}
+
+const asyncRes = await asyncFilter(arr, async (i) =&gt; {
+  await sleep(10);
+  return i % 2 === 0;
+});
+
+console.log(asyncRes);
+// 2,4</code></pre>
+<p>Or a one-liner implementation:</p>
+<pre class="highlight"><code>const asyncFilter = async (arr, predicate) =&gt;
+  Promise.all(arr.map(predicate))
+  .then((results) =&gt; arr.filter((_v, index) =&gt; results[index]));</code></pre>
+<figure class="plantuml image">
+<img
+src="98752878cc289cb4a5f69120e50b00611fc444ce3124c0ed4c27ec622201b4b6.png"
+style="width: 364px;" />
+<figcaption>Async filter with map</figcaption>
+</figure>
+<h4 id="chapter12.xhtml_concurrency-1">Concurrency</h4>
+<p>The above implementation runs all of the predicate functions
+concurrently. This is usually fine, but, as with all other functions, it
+might strain some resources too hard. Fortunately, since the above
+implementation relies on <code>map</code>, the same concurrency controls
+can be used.</p>
+<h3 id="chapter12.xhtml_async-filter-with-reduce">Async filter with
+reduce</h3>
+<p>Instead of using an async <code>map</code> with a sync
+<code>filter</code>, an async <code>reduce</code> could also do the job.
+Since it's just one function, the structure is even easier though it
+does not provide the same level of control.</p>
+<p>First, start with an empty array (<code>[]</code>). Then run the next
+element through the predicate function and if it passes, append it to
+the array. If not, skip it.</p>
+<figure class="plantuml image">
+<img
+src="e378a1cbb53cf39e1f6f2e25de2cb568d2882c6080e3eb041f6caf103f70efa1.png"
+style="width: 355px;" />
+<figcaption>Async filter with reduce</figcaption>
+</figure>
+<pre class="highlight"><code>// concurrently
+const asyncFilter = async (arr, predicate) =&gt; 
+  arr.reduce(async (memo, e) =&gt;
+    await predicate(e) ? [...await memo, e] : memo
+  , []);</code></pre>
+<figure class="plantuml image">
+<img
+src="be648b1a6427cd57ea903ec9ddadf2fdd75c4b9f486bfb2a19bd42220a411f16.png"
+style="width: 468px;" />
+<figcaption>Async filter with reduce</figcaption>
+</figure>
+<p>Notice that the <code>await predicate(e)</code> comes <em>before</em>
+the <code>await memo</code>, which means those will be called in
+parallel.</p>
+<h4 id="chapter12.xhtml_sequential-processing-2">Sequential
+processing</h4>
+<p>To wait for a predicate function to finish before calling the next
+one, change the order of the <code>await</code>s:</p>
+<pre class="highlight"><code>// sequentially
+const asyncFilter = async (arr, predicate) =&gt; 
+  arr.reduce(async (memo, e) =&gt; 
+    [...await memo, ...await predicate(e) ? [e] : []]
+  , []);</code></pre>
+<p>This implementation waits for the previous element then conditionally
+append an element depending on the result of the predicate
+(<code>...[e]</code> or <code>...[]</code>).</p>
+<figure class="plantuml image">
+<img
+src="9c63ff63c95c8f8ddc4bed111d964e35cf518c153bb4db4302fbd0a18f84a5e0.png"
+style="width: 515px;" />
+<figcaption>Async filter with reduce running sequentially</figcaption>
+</figure>
+<h2 id="chapter12.xhtml_async-functions-with-someevery">Async functions
+with some/every</h2>
+<p>These functions get an iteratee function, just like the
+<code>filter</code>, but they return a single true/false, depending on
+whether the predicate returned a specific value. In the case of the
+<code>some</code>, if <em>any</em> of the predicates returned true, the
+result will be true. For the <code>every</code> function, if any
+returned false, the result will be false.</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const someRes = arr.some((i) =&gt; {
+  return i % 2 === 0;
+});
+
+console.log(someRes);
+// true
+
+const everyRes = arr.every((i) =&gt; {
+  return i &lt; 2;
+});
+
+console.log(everyRes);
+// false</code></pre>
+<h3 id="chapter12.xhtml_using-an-async-filter">Using an async
+filter</h3>
+<p>Considering only the result, these functions can be emulated with an
+async <code>filter</code>, which is already covered in a previous
+article how to convert to async.</p>
+<pre class="highlight"><code>// sync
+const some = (arr, predicate) =&gt;
+  arr.filter(predicate).length &gt; 0;
+const every = (arr, predicate) =&gt;
+  arr.filter(predicate).length === arr.length;
+
+// async
+const asyncSome = async (arr, predicate) =&gt;
+  (await asyncFilter(arr, predicate)).length &gt; 0;
+const asyncEvery = async (arr, predicate) =&gt;
+  (await asyncFilter(arr, predicate)).length === arr.length;</code></pre>
+<figure class="plantuml image">
+<img
+src="7aab5ebf6fa625fce3d789c911166ad71474735e1dc2451535b590f24a1e8c8e.png"
+style="width: 341px;" />
+<figcaption>Filter-based async some</figcaption>
+</figure>
+<h4 id="chapter12.xhtml_short-circuiting">Short-circuiting</h4>
+<p>But there is an important difference between the built-in
+<code>some</code>/<code>every</code> functions and the
+<code>filter</code>-based implementations. When there is an element that
+returns true for a <code>some</code>, it <strong>short-circuits</strong>
+and does not process the remaining elements:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const res = arr.some((i) =&gt; {
+  console.log(`Checking ${i}`);
+  return i % 2 === 0;
+});
+
+// Checking 1
+// Checking 2
+
+console.log(res);
+// true</code></pre>
+<figure class="plantuml image">
+<img
+src="e7aefe8f1796e5a90d2c85d3ddd34a7d2117cda3fae26b9a0a5ac618974c984e.png"
+style="width: 228px;" />
+<figcaption>Synchronous some</figcaption>
+</figure>
+<p>Similarly, <code>every</code> stops after the first false result:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const res = arr.every((i) =&gt; {
+  console.log(`Checking ${i}`);
+  return i &lt; 2;
+});
+
+// Checking 1
+// Checking 2
+
+console.log(res);
+// false</code></pre>
+<p>Let's see how to code an async version that works in a similar way
+and does the least amount of work!</p>
+<h3 id="chapter12.xhtml_async-some">Async some</h3>
+<p>The best solution is to use an async <strong>for iteration</strong>
+that returns as soon as it finds a truthy result:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const asyncSome = async (arr, predicate) =&gt; {
+  for (let e of arr) {
+    if (await predicate(e)) return true;
+  }
+  return false;
+};
+const res = await asyncSome(arr, async (i) =&gt; {
+  console.log(`Checking ${i}`);
+  await sleep(10);
+  return i % 2 === 0;
+});
+
+// Checking 1
+// Checking 2
+
+console.log(res);
+// true</code></pre>
+<figure class="plantuml image">
+<img
+src="29298028c2b0b61baa14673755d0e4cd641b66a550d0be0004a9bb9e23ceee1b.png"
+style="width: 257px;" />
+<figcaption>For-based async some</figcaption>
+</figure>
+<p>For the first element <code>predicate(e)</code> returns true, it
+concludes the for-loop.</p>
+<h3 id="chapter12.xhtml_async-every">Async every</h3>
+<p>The similar structure works for <code>every</code>, it's just a
+matter of negating the conditions:</p>
+<pre class="highlight"><code>const arr = [1, 2, 3];
+
+const asyncEvery = async (arr, predicate) =&gt; {
+  for (let e of arr) {
+    if (!await predicate(e)) return false;
+  }
+  return true;
+};
+const res = await asyncEvery(arr, async (i) =&gt; {
+  console.log(`Checking ${i}`);
+  await sleep(10);
+  return i &lt; 2;
+});
+
+// Checking 1
+// Checking 2
+
+console.log(res);
+// false</code></pre>
+<p>Whenever there is a false value returned by
+<code>predicate(e)</code>, the function is ended without checking the
+other elements.</p>
+<h3 id="chapter12.xhtml_parallel-processing-1">Parallel processing</h3>
+<p>The short-circuiting implementation processes the elements
+sequentially, which is efficient in terms of resource usage, but it
+might result in longer execution.</p>
+<p>For example, if the iteratee sends requests via a network, it might
+take some time to send them one at a time. On the other hand, while it
+might result in more requests sent, sending all of them at the same time
+would be faster.</p>
+<p><span id="chapter13.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter13.xhtml_common-errors">Common errors</h1>
+<h2 id="chapter13.xhtml_not-propagating-errors">Not propagating
+errors</h2>
+<p>When you convert a callback to a Promise, make sure that you also
+handle the error case. Without that, the Promise is never resolved and
+an <code>await</code> waits forever.</p>
+<p>For example, the <code>gapi.load</code> provides separate callbacks
+for results and errors:</p>
+<pre class="highlight"><code>await new Promise((res, rej) =&gt; {
+  gapi.load(&quot;client:auth2&quot;, {callback: res, onerror: rej});
+});</code></pre>
+<p>If you don't attach the <code>rej</code> callback to the
+<code>onerror</code> handler, errors won't propagate through the chain.
+This leads to hard-to-debug problems and components that "just
+stops".</p>
+<h2 id="chapter13.xhtml_missing-await-in-trycatch">Missing await in
+try..catch</h2>
+<p>When you use <code>try..catch</code> or <code>try..finally</code> in
+an async function, make sure that you use <code>await</code> too. For
+example, this code works fine when the inner Promise resolves:</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  return &quot;result&quot;;
+}
+
+const outer = async () =&gt; {
+  try {
+    return fn(); // &lt;= missing await!
+  }catch(e) {
+    console.log(e.message);
+  }
+}
+
+await outer(); // result</code></pre>
+<p>But the <code>try..catch</code> won't handle exceptions:</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  throw new Error(&quot;error&quot;);
+}
+
+const outer = async () =&gt; {
+  try {
+    return fn(); // &lt;= missing await!
+  }catch(e) {
+    console.log(e.message);
+  }
+}
+
+await outer();
+// exception is thrown!</code></pre>
+<p>This is because exceptions are thrown from the <code>await</code> and
+while returning a Promise from an async function flattens the result, it
+will be returned without waiting for it. And without waiting, an
+exception is not thrown for the <code>try..catch</code> but when the
+caller uses <code>await</code>.</p>
+<pre class="highlight"><code>const fn = async () =&gt; {
+  throw new Error(&quot;error&quot;);
+}
+
+const outer = async () =&gt; {
+  try {
+    return await fn();
+  }catch(e) {
+    console.log(e.message); // error
+  }
+}
+
+await outer();
+// no exception here</code></pre>
+<h2 id="chapter13.xhtml_not-checking-the-return-value">Not checking the
+return value</h2>
+<p>When a Promise is resolved it does not necessarily mean that
+everything is alright. For example, the <code>fetch</code> rejects when
+there is a problem <em>with the connection</em> but it resolves even if
+the response status returns an error.</p>
+<p>When the call can not establish a connection, the Promise
+rejects:</p>
+<pre class="highlight"><code>try {
+  await fetch(&quot;htp://example.com&quot;);
+}catch(e) {
+  console.log(e.message); // Failed to fetch
+}</code></pre>
+<p>But when the response status code indicates an error (500), the
+Promise still resolves:</p>
+<pre class="highlight"><code>try {
+  await fetch(&quot;https://httpbin.org/status/500&quot;);
+
+  // no error
+}catch(e) {
+  console.log(e.message);
+}</code></pre>
+<p>Because of this, you need to check the result for error responses.
+The <code>fetch</code> result provides the <code>ok</code> field to do
+this:</p>
+<pre class="highlight"><code>const response = await fetch(&quot;https://httpbin.org/status/500&quot;);
+
+if (!response.ok) {
+  throw new Error(&quot;Error response&quot;);
+}</code></pre>
+<h2
+id="chapter13.xhtml_not-closing-resources-in-case-of-a-rejection">Not
+closing resources in case of a rejection</h2>
+<p>It's common to open some resource, then close it after it's not
+needed. For example, this code creates a temporary directory then
+deletes it later:</p>
+<pre class="highlight"><code>const fs = require(&quot;fs&quot;).promises;
+const os = require(&quot;os&quot;);
+const path = require(&quot;path&quot;);
+
+const dir = await fs.mkdtemp(
+  await fs.realpath(os.tmpdir()) + path.sep
+);
+
+// use dir to store temporary things
+
+await fs.rmdir(dir, {recursive: true});</code></pre>
+<p>This works unless there is an exception that jumps over the cleanup
+code.</p>
+<pre class="highlight"><code>const dir = await fs.mkdtemp(
+  await fs.realpath(os.tmpdir()) + path.sep
+);
+
+throw Error(&quot;error&quot;);
+
+await fs.rmdir(dir, {recursive: true});
+// the cleanup won&#39;t run!</code></pre>
+<p>Use <code>try..finally</code> to implement reliable cleanup:</p>
+<pre class="highlight"><code>const dir = await fs.mkdtemp(
+  await fs.realpath(os.tmpdir()) + path.sep
+);
+try {
+  // use dir to store temporary things
+}finally {
+  await fs.rmdir(dir, {recursive: true});
+}</code></pre>
+<p>Even better, you can move the resource lifecycle to a dedicated
+function, as discussed in the <a
+href="#chapter8.xhtml_defined-async-disposer">The async disposer
+pattern</a> chapter:</p>
+<pre class="highlight"><code>const withTempDir = async (fn) =&gt; {
+  const dir = await fs.mkdtemp(
+    await fs.realpath(os.tmpdir()) + path.sep
+  );
+  try {
+    return await fn(dir);
+  }finally {
+    fs.rmdir(dir, {recursive: true});
+  }
+};
+
+await withTempDir((dir) =&gt; {
+  // use dir to store temporary things
+})</code></pre>
+<h2
+id="chapter13.xhtml_using-both-the-rejection-and-resolve-handlers-in-one-then-function">Using
+both the rejection and resolve handlers in one then function</h2>
+<p>A common source of problems is to write error handling like this:</p>
+<pre class="highlight"><code>getPromise()
+  .then(process, handleError);</code></pre>
+<p>As we've discussed in the <a
+href="#chapter2.xhtml_defined-error-propagation-in-promise-chains">Error
+propagation in Promise chains</a> chapter, the second handler of the
+<code>then()</code> is called for errors but only from the previous
+steps.</p>
+<figure class="plantuml image">
+<img
+src="ef010590c468612b89d4abfa91bab02e9dfbc8ee00ff194c7c4047da0758ec61.png"
+style="width: 320px;" />
+<figcaption>Diagram of the promise chain</figcaption>
+</figure>
+<p>Notice that the <code>handleError</code> function only gets errors
+from the <code>getPromise</code>. If the result of the
+<code>process</code> function is rejected, it won't be handled.</p>
+<p>A better solution is to use <code>.catch</code> to be explicit about
+errors:</p>
+<pre class="highlight"><code>getPromise()
+  .then(process)
+  .catch(handleError);</code></pre>
+<p>This way it's clear that both steps are covered by the error
+handlers.</p>
+<h2 id="chapter13.xhtml_not-waiting-for-an-async-foreach">Not waiting
+for an async forEach</h2>
+<p>The <code>forEach</code> function iterates over a collection and
+calls an iteratee function. A typical problem is not waiting for the
+iteration to complete:</p>
+<pre class="highlight"><code>[1, 2, 3].forEach(async (e) =&gt; {
+  console.log(e);
+  return makePromise(e);
+});
+console.log(&quot;finished&quot;);
+// finished
+// 1
+// 2
+// 3</code></pre>
+<p>It is a best practice to wait until the whole collection is
+processed, which can be achived with a <code>Promise.all</code> and a
+<code>map</code>:</p>
+<pre class="highlight"><code>await Promise.all([1, 2, 3].map(async (e) =&gt; {
+  console.log(e);
+  return makePromsie(e);
+}));
+console.log(&quot;finished&quot;);
+// 1
+// 2
+// 3
+// finished</code></pre>
+<div class="floatbox floatbox-center">
+<div class="tcolorbox tcolorbox-info">
+<div class="tbox-header">
+More info
+</div>
+<div class="tbox-body">
+<p>This topic is covered in more detail in the <a
+href="#chapter12.xhtml_defined-the-foreach-function">Async functions
+with forEach</a> chapter.</p>
+</div>
+</div>
+</div>
+<p><span id="chapter14.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter14.xhtml_glossary">Glossary</h1>
+<p><strong>Async function</strong></p>
+<p>A function that returns a Promise. The <code>await</code> keyword is
+only usable in an async function.</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+const fn = async () =&gt; {
+  await wait(100);
+  return &quot;result&quot;;
+}
+
+fn(); // Promise</code></pre>
+<p><strong>Async generator function</strong></p>
+<p>A generator function that can use <code>await</code>. When it
+encounters a <code>yield</code> or a <code>yield*</code> the execution
+stops until a subsequent element is requested.</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+const gen = async function*() {
+  console.log(&quot;start&quot;);
+  await wait(100);
+  yield 1;
+  await wait(100);
+  console.log(&quot;next&quot;);
+  yield 2;
+  await wait(100);
+  console.log(&quot;end&quot;);
+};
+
+const it = gen();
+console.log(await it.next());
+console.log(await it.next());
+console.log(await it.next());
+
+// start
+// { value: 1, done: false }
+// next
+// { value: 2, done: false }
+// end
+// { value: undefined, done: true }</code></pre>
+<p>See <a
+href="#chapter14.xhtml_defined-glossary-generator-function">Generator
+function</a>.</p>
+<p><strong>await keyword</strong></p>
+<p>Usable in async functions, it stops the execution until the argument
+Promise becomes fulfilled. It then returns the value or throws an
+exception. See <a
+href="#chapter14.xhtml_defined-glossary-async-function">Async
+function</a>.</p>
+<p><strong>Callback</strong></p>
+<p>A function passed as an argument that is called with the return
+value. It allows asynchronous results, as the callback can be invoked
+later.</p>
+<p>For example, the <code>setTimeout</code> function needs a callback
+that it calls when the time is up:</p>
+<pre class="highlight"><code>setTimeout(() =&gt; {
+  // 1 second later
+}, 1000);</code></pre>
+<p>See <a
+href="#chapter14.xhtml_defined-glossary-continuation-passing-style">Continuation-passing
+style</a>.</p>
+<p><strong>Collection processing</strong></p>
+<p>A series of functions that work on a collection of elements (usually,
+an array), such as transforming (<code>map</code>), filtering
+(<code>filter</code>), and reducing to a value
+(<code>reduce</code>).</p>
+<p><strong>Continuation-passing style</strong></p>
+<p>A programming construct that uses callback functions (continuations)
+for function results instead of returning them directly. This allows
+asynchronous results as these callbacks can be invoked later.</p>
+<pre class="highlight"><code>// direct style
+const directFn = () =&gt; {
+  return &quot;result&quot;;
+};
+
+// CPS
+const cpsFn = (callback) =&gt; {
+  callback(&quot;result&quot;);
+};</code></pre>
+<p>See <a
+href="#chapter14.xhtml_defined-glossary-callback">Callback</a>.</p>
+<p><strong>Error propagation</strong></p>
+<p>When there is an error, it moves up in context until there is a piece
+of code that can handle it.</p>
+<p>For example, an unhandled exception gets thrown to the caller:</p>
+<pre class="highlight"><code>const fn = () =&gt; {
+  // the error is thrown here
+  throw new Error(&quot;error&quot;);
+}
+
+try {
+  fn();
+}catch(e) {
+  // and handled here
+}</code></pre>
+<p>With Promises, errors propagate to the next handlers:</p>
+<pre class="highlight"><code>getUser() // returns a Promise
+  .then(() =&gt; {
+    // the error is thrown here
+    throw new Error(&quot;error&quot;);
+  })
+  .catch((e) =&gt; {
+    // and handled here
+  });</code></pre>
+<p><strong>Error-first callbacks</strong></p>
+<p>A callback style where the first argument is an error object. The
+receiving end needs to check if this value is non-null (or
+non-undefined).</p>
+<pre class="highlight"><code>const fn = (callback) =&gt; {
+  try {
+    const result = &quot;result&quot;;
+    // error is null
+    callback(null, result);
+  }catch(e) {
+    // signal error
+    callback(e);
+  }
+}
+
+fn((err, result) =&gt; {
+  if (err) {
+    // handle error
+  }else {
+    // handle result
+  }
+});</code></pre>
+<p>See <a
+href="#chapter14.xhtml_defined-glossary-node-style-callbacks">Node-style
+callbacks</a>.</p>
+<p><strong>Fulfilled Promise</strong></p>
+<p>A state of a Promise that is either resolved or rejected. See <a
+href="#chapter14.xhtml_defined-glossary-promise-states">Promise
+states</a>.</p>
+<p><strong>Generator function</strong></p>
+<p>A function that returns an iterable structure. It can be frozen with
+a <code>yield</code> statement and only resumes if more elements are
+requested.</p>
+<pre class="highlight"><code>const gen = function*() {
+  console.log(&quot;start&quot;);
+  yield 1;
+  console.log(&quot;next&quot;);
+  yield 2;
+  console.log(&quot;end&quot;);
+}
+
+const it = gen();
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+
+// start
+// { value: 1, done: false }
+// next
+// { value: 2, done: false }
+// end
+// { value: undefined, done: true }</code></pre>
+<p><strong>Node-style callbacks</strong></p>
+<p>A callback style where:</p>
+<ul>
+<li>The callback function is the last argument</li>
+<li>It is called with an error object first, then a result
+(<code>(error, result)</code>)</li>
+<li>It returns only one result</li>
+</ul>
+<pre class="highlight"><code>const getUser = (id, cb) =&gt; {
+  const user = /* get user */;
+  if (user) {
+    // success
+    cb(null, user);
+  }else {
+    // error
+    cb(new Error(&quot;Failed to get user&quot;));
+  }
+};</code></pre>
+<p><strong>Pagination</strong></p>
+<p>When a method (usually an API) does not return all results for a
+request and it requires multiple calls to get all items.</p>
+<p><strong>Pending Promise</strong></p>
+<p>A Promise state where the asynchronous result is not yet available.
+See <a href="#chapter14.xhtml_defined-glossary-promise-states">Promise
+states</a>.</p>
+<p><strong>postMessage</strong></p>
+<p>An API to communicate cross-context, such as with IFrames and Web
+Workers. It is an event-based communication where one end listens for
+<code>message</code> events and the other uses the
+<code>postMessage</code> function to send messages.</p>
+<p><strong>Promise</strong></p>
+<p>A value that holds an asynchronous result. You can use the
+<code>then</code> callback to handle when the Promise becomes fulfilled,
+or use <code>await</code> in an async function.</p>
+<p><strong>Promise chain</strong></p>
+<p>A series of <code>then()</code> callbacks, each getting the previous
+state of the Promise and returns the next one.</p>
+<pre class="highlight"><code>getUser() // returns a Promise
+  .then(async function getPermissionsForUser(user) {
+    const permissions = await // ...;
+    return permissions;
+  })
+  .then(async function checkPermission(permissions) {
+    const allowed = await // ...;
+    return allowed;
+  })
+  .then((allowed) =&gt; {
+    // handle allowed or not
+  });</code></pre>
+<p><strong>Promise states</strong></p>
+<p>A Promise can be in one of multiple states:</p>
+<ul>
+<li>Pending: The value is not yet available</li>
+<li>Resolved: The value is available</li>
+<li>Rejected: There was an error</li>
+</ul>
+<p>When the Promise is either resolved or rejected then it's fulfilled
+or settled.</p>
+<figure class="plantuml image">
+<img
+src="c7bf165c038961ff3793fb930dc7f0f0e4deca1a722e24292ec3555a5c09e142.png"
+style="width: 252px;" />
+<figcaption>Promise states</figcaption>
+</figure>
+<p><strong>Promise.all</strong></p>
+<p>A utility function that gets multiple Promises and resolves when all
+of them are resolved and returns an array with the results. It rejects
+if any of the input Promises rejects.</p>
+<pre class="highlight"><code>console.log(
+  await Promise.all([
+    Promise.resolve(&quot;a&quot;),
+    Promise.resolve(&quot;b&quot;),
+  ])
+);
+
+// [&quot;a&quot;, &quot;b&quot;]</code></pre>
+<p><strong>Promise.allSettled</strong></p>
+<p>A utility function that gets multiple Promises and resolves when all
+of them are settled. It resolves even if some input Promises reject.</p>
+<pre class="highlight"><code>console.log(
+  await Promise.allSettled([
+    Promise.resolve(&quot;a&quot;),
+    Promise.reject(&quot;b&quot;),
+  ])
+);
+
+// [
+//     { status: &#39;fulfilled&#39;, value: &#39;a&#39; },
+//     { status: &#39;rejected&#39;, reason: &#39;b&#39; }
+// ]</code></pre>
+<p><strong>Promise.catch</strong></p>
+<p>A utility function that attaches a rejection handler to a Promise.
+It's equivalent to <code>then(undefined, handler)</code>.</p>
+<pre class="highlight"><code>Promise.reject(new Error(&quot;error&quot;))
+  .catch((e) =&gt; {
+    console.log(e.message); // error
+  });</code></pre>
+<p><strong>Promise.finally</strong></p>
+<p>A utility function that is called when the Promise settles, either if
+it's resolved or rejected. It brings the <code>try..finally</code>
+construct to Promises.</p>
+<pre class="highlight"><code>getUser() // returns a Promise
+  .finally(() =&gt; {
+  // called both even if the Promise is rejected
+    console.log(&quot;finished&quot;);
+  });
+// does not change the result value</code></pre>
+<p><strong>Promise.race</strong></p>
+<p>A utility function that gets multiple Promises and resolves (or
+rejects) when the first one settles.</p>
+<pre class="highlight"><code>const wait = (ms) =&gt; new Promise((res) =&gt; setTimeout(res, ms));
+
+const fn = async (ms, result) =&gt; {
+  await wait(ms);
+
+  return result;
+}
+console.log(
+  await Promise.race([
+    fn(100, &quot;a&quot;),
+    fn(50, &quot;b&quot;),
+  ])
+);
+// b</code></pre>
+<p><strong>Promise.reject</strong></p>
+<p>A utility function that rejects with the value provided.</p>
+<pre class="highlight"><code>Promise.reject(new Error(&quot;error&quot;))
+  .catch((v) =&gt; {
+    console.log(v.message); // error
+  })</code></pre>
+<p><strong>Promise.resolve</strong></p>
+<p>A utility function that returns a Promise that is resolved with the
+value provided. Useful to start a Promise chain.</p>
+<pre class="highlight"><code>Promise.resolve(&quot;value&quot;)
+  .then((v) =&gt; {
+    console.log(v); // value
+  })</code></pre>
+<p><strong>Promise.then</strong></p>
+<p>A function of a Promise object that attaches a function that will be
+called when the Promise is settled. See <a
+href="#chapter14.xhtml_defined-glossary-promise-chain">Promise
+chain</a>.</p>
+<p><strong>Promisification</strong></p>
+<p>The process of converting callbacks to Promises.</p>
+<p><strong>Rejected Promise</strong></p>
+<p>A Promise state that indicates an error. See <a
+href="#chapter14.xhtml_defined-glossary-promise-states">Promise
+states</a>.</p>
+<p><strong>Resolved Promise</strong></p>
+<p>A Promise state where the asynchronous value is available. See <a
+href="#chapter14.xhtml_defined-glossary-promise-states">Promise
+states</a>.</p>
+<p><strong>Settled Promise</strong></p>
+<p>An alternative name for the fulfilled state. See <a
+href="#chapter14.xhtml_defined-glossary-promise-states">Promise
+states</a>.</p>
+<p><strong>Synchronous function</strong></p>
+<p>A function that returns a value when it's run. See <a
+href="#chapter14.xhtml_defined-glossary-continuation-passing-style">Continuation-passing
+style</a>.</p>
+<p><span id="chapter15.xhtml"></span></p>
+<h1 data-xmlns="http://www.w3.org/1999/xhtml"
+id="chapter15.xhtml_about-the-author">About the author</h1>
+<div class="author">
+<div class="name">
+Tamás Sallai
+</div>
+<img src="self_big.jpg" data-sharp="true" data-sharp-src="self_big.jpg"
+data-sharp-target-dpi="300" />
+<div class="bio">
+<p>Hey, I'm Tamás! I'm a software developer specializing in web
+technologies and cloud computing. I'm especially interested in exploring
+edge cases and "what ifs" in order to write dependable software.</p>
+<p>I co-author the <a
+href="https://advancedweb.hu">https://advancedweb.hu</a> blog where I've
+published more than 200 articles in various technology topics. You can
+always find what I'm currently working on there.</p>
+</div>
+</div>
+<div class="page-break-before">
+
+</div>
+<p>Copyright © 2021 by Tamás Sallai</p>
+<p>All rights reserved. No part of this book may be reproduced or used
+in any manner without written permission of the copyright owner except
+for the use of quotations in a book review.</p>
+<p>The information is provided "as-is", without warranty of any kind,
+express or implied. In no event shall the the authors or copyright
+holders be liable for any claim, damages or other liability.</p>

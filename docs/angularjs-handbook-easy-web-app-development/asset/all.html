@@ -1,0 +1,2729 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 741 1186" preserveaspectratio="none">
+<image width="741" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">AngularJS Handbook</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre4">Easy Web App Development</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre6">By Rick L.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre6">Copyright©2016 Rick L.</span></p>
+<p><span class="calibre6">All Rights Reserved</span></p>
+<p><span class="calibre5"> </span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre10">Copyright © 2016 by Rick L</span><span
+class="calibre6">.</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre6">Table of Contents</span></p>
+<p><span id="part0000_split_002.html_toc" class="calibre12"></span><a
+href="#part0000_split_004.html__Toc445490750" class="calibre12"><span
+class="calibre13">Chapter 1- Overview of AngularJS</span></a></p>
+<p><a href="#part0000_split_005.html__Toc445490751"
+class="calibre12"><span class="calibre13">Chapter 2- AngularJS and
+HTML</span></a></p>
+<p><a href="#part0000_split_011.html__Toc445490760"
+class="calibre12"><span class="calibre13">Chapter 3- XHRs</span></a></p>
+<p><a href="#part0000_split_013.html__Toc445490761"
+class="calibre12"><span class="calibre13">Chapter 4- Links &amp;
+Images</span></a></p>
+<p><a href="#part0000_split_014.html__Toc445490762"
+class="calibre12"><span class="calibre13">Chapter 5- Working with
+Animations</span></a></p>
+<p><a href="#part0000_split_019.html__Toc445490763"
+class="calibre12"><span class="calibre13">Chapter 6- $watch() ,
+$digest(), and $apply()</span></a></p>
+<p><a href="#part0000_split_023.html__Toc445490767"
+class="calibre12"><span class="calibre13">Chapter 7- The Hierarchy of
+“$scope”</span></a></p>
+<p><a href="#part0000_split_024.html__Toc445490768"
+class="calibre12"><span class="calibre13">Chapter 8- Refactoring
+AngularJS Apps</span></a></p>
+<p><a href="#part0000_split_027.html__Toc445490769"
+class="calibre12"><span class="calibre13">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre5">Disclaimer</span></p>
+<p><span class="calibre17"> </span></p>
+<p><span class="calibre5">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre10"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+<div id="part0000_split_003.html_calibre_pb_6" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_004.html_calibre_pb_9"><span
+id="part0000_split_004.html__Toc445490750" class="calibre12"><span
+id="part0000_split_004.html_2G-d11a07ed075848ec9c0e1289dcdfef6d"
+class="calibre19">Chapter 1- Overview of AngularJS</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">This framework works by performing an
+extension of what is provided in HTML. If HTML had been created for the
+purpose of the development of web-apps, then it would have been the
+angularJS. HTML is the best when it comes to declaration of static
+documents. However, it is not good for the declaration of dynamic views
+in our web applications.  With Angular, the HTML vocabulary used in your
+application can be greatly extended. After doing that, you will get an
+environment which is easy to read, expressive, and faster to perform
+your development. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">In this book, we will explore the various
+features of AngularJS which you as a developer can take advantage of so
+as to improve the look and feel of your application. </span></p>
+<div id="part0000_split_004.html_calibre_pb_10" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_005.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_005.html_calibre_pb_13"><span
+id="part0000_split_005.html__Toc445490751" class="calibre12"><span
+class="calibre19">Chapter 2- </span></span><a
+href="https://github.com/angular/bower-material" class="calibre12"><span
+class="calibre19">AngularJS</span></a><span class="calibre19"> and
+HTML</span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre21"><span
+id="part0000_split_005.html__Toc445490752"><span class="calibre22">As
+you are aware, AngularJS is used to extend the features of HTML. Most of
+you are aware of how the standard HTML can be used. However, AngularJS
+is used to extend the features of this. </span><span class="calibre23">
+</span><span class="calibre22">In this chapter, we want to create an
+HTML page, and then turn the code written in HTML into a template which
+will be used by the AngularJS so as to display the same data
+dynamically. Only basic information will be added to the HTML
+page.</span></span><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span
+id="part0000_split_005.html__Toc445490753"><span class="calibre22">Here
+is the first code for the web page:</span></span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li&gt;</span></p>
+<p><span class="calibre5">   &lt;span&gt; Motorola
+&lt;/span&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;</span></p>
+<p><span class="calibre5">    I really like Motorola phones.</span></p>
+<p><span class="calibre5">&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;li&gt;</span></p>
+<p><span class="calibre5">    &lt;span&gt;Nokia are the best in Wi-Fi
+connection&lt;/span&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;</span></p>
+<p><span class="calibre5">    I really like to make use of
+devices.</span></p>
+<p><span class="calibre5">&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+</div>
+<p><span id="part0000_split_006.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre25" id="part0000_split_006.html_calibre_pb_14"><span
+id="part0000_split_006.html__Toc445490754"><span class="calibre22">You
+can continue with the addition of static HTML to the above file. An
+example of this is given below:</span></span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<p><span class="calibre5">&lt;p&gt; The number of available phones is:
+2&lt;/p&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+</div>
+<p><span id="part0000_split_007.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre25" id="part0000_split_007.html_calibre_pb_15"><span
+id="part0000_split_007.html__Toc445490755"><span class="calibre22">In
+the example, we have just used the static HTML so as to render the
+content of the web page which we have just created. With AngularJS, the
+same content can be rendered dynamically.</span></span><span
+class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span
+id="part0000_split_007.html__Toc445490756"><span class="calibre22">Our
+aim is to make the page we have created dynamic. A test case should also
+be implemented so that the controller that we create is tested. In
+AngularJS, the MV model (Model-View-Controller) is used for the purpose
+of organizing the structure of the application. With this, the code is
+decoupled, and the concept of separation of concerns is implemented. The
+model, view, and the controller will be added in this app. What happens
+in Angular is that the model is projected into a template via the view.
+This is an indication that in case something is changed, all of the
+binding points will also be updated so that the view is updated. The
+view is constructed from the model in Angular.</span></span><span
+class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span
+id="part0000_split_007.html__Toc445490757"><span
+class="calibre22">Consider the example given below:</span></span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<p><span class="calibre5">&lt;html ng-app="myApp"&gt;</span></p>
+<p><span class="calibre5">&lt;head&gt;</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">&lt;script
+src="myapps/angular/angular.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5">&lt;script
+src="js/controllers.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5">&lt;/head&gt;</span></p>
+<p><span class="calibre5">  &lt;body ng-controller="mply
+“Repeat”?PnListCtrl"&gt;</span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="model in
+phones"&gt;</span></p>
+<p><span
+class="calibre5">&lt;span&gt;{{model.name}}&lt;/span&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{model.snippet}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">    &lt;/li&gt;</span></p>
+<p><span class="calibre5">  &lt;/ul&gt;</span></p>
+<p><span class="calibre5"> &lt;/body&gt;</span></p>
+<p><span class="calibre5">&lt;/html&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+</div>
+<p><span id="part0000_split_008.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre25" id="part0000_split_008.html_calibre_pb_16"><span
+id="part0000_split_008.html__Toc445490758"><span class="calibre22">What
+you should have noticed is that the hard coded phone list has been
+replaced by AngularJS expressions and an ngRepeat
+directive.</span></span><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span
+id="part0000_split_008.html__Toc445490759"><span class="calibre22">The
+controller for the app should just be a constructor function which will
+take the parameter “$scope.” This is shown below:</span></span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<h1 class="calibre21"><span class="calibre22"> </span></h1>
+<p><span class="calibre5">var myApp = angular.module('myApp',
+[]);</span></p>
+<p><span class="calibre5">   myApp.controller('PhoneListCtrl', function
+($scope) {</span></p>
+<p><span class="calibre5">$scope.phones = [</span></p>
+<p><span class="calibre5">   {'name': 'Motorola,</span></p>
+<p><span class="calibre5">'snippet': ' I really like Motorola
+phones.</span></p>
+<p><span class="calibre5">.'},</span></p>
+<p><span class="calibre5">  {'name': ' Nokia are the best in Wi-Fi
+connection ',</span></p>
+<p><span class="calibre5">   'snippet': 'Their devices are really liked
+by many.'},</span></p>
+<p><span class="calibre5">   {'name': 'MOTOROLA XOOM™',</span></p>
+<p><span class="calibre5">  'snippet': ' I really like to make use of
+devices.</span></p>
+<p><span class="calibre5">.'}</span></p>
+<p><span class="calibre5">];</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">What we have done is that we have declared
+the controller, and then we have finally linked it to the module.
+</span></p>
+<div id="part0000_split_008.html_calibre_pb_17" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_009.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Tests</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">In AngularJS, the controller and the view are
+separated. With this, the ode becomes testable even during the time of
+development. In case the controller is available in the global space,
+then we can mock the “</span><span class="calibre30">scope”</span><span
+class="calibre10"> object so as to instantiate it. This is shown in the
+example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">describe('PnListCtrl', function(){</span></p>
+<p><span class="calibre5">   it(' a "phones" model with 2 phones should
+be created', function() {</span></p>
+<p><span class="calibre5">var scope = {},</span></p>
+<p><span class="calibre5">   ctrl = new PnListCtrl(scop);</span></p>
+<p><span class="calibre5">  
+expect(scop.phones.length).toBe(2);</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The non-global controllers should then be
+created. No one will want to have their controller function to be in
+their global namespace. Instead, most people will want it to be
+registered via the anonymous constructor function of the module which we
+have just created. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">In this case, we will be proved by the
+service “$controller” from AngularJS. This will be tasked with
+retrieving the controller by its name. Consider the example given below,
+which shows how this can be done:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">describe('PnListCtrl', function(){</span></p>
+<p><span class="calibre5">   beforeEach(module('pncatApp'));</span></p>
+<p><span class="calibre5">   it('you should create "phones" model with
+the 2 phones', inject(function($controller) {</span></p>
+<p><span class="calibre5">var scope = {},</span></p>
+<p><span class="calibre5">   ctrl = $controller('PnListCtrl',
+{$scope:scope});</span></p>
+<p><span class="calibre5">  
+expect(scope.phones.length).toBe(2);</span></p>
+<p><span class="calibre5">}));</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">What we have done is that we have instructed
+the Angular to load each module before any of the tests is done. The
+service “</span><span class="calibre30">$controller</span><span
+class="calibre10">” should then be injected into our service. The
+service has also been used for creation of a new “</span><span
+class="calibre30">PnListCtrl.”</span><span class="calibre10"> The
+instance is then used for the purpose of verification. </span></p>
+<div id="part0000_split_009.html_calibre_pb_19" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_010.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">The Experiments</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">Another binding can be added to the file.
+This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;p&gt;The available number of phones:
+{{phones.length}}&lt;/p&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">A new model property can be created in the
+controller and then bound from the template. An example of this is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.name = "John";</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The new binding can be added to the file as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;p&gt;Hi, {{name}}!&lt;/p&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">You can now refresh your browser and then
+observe what happens. The unit test for the controller should then be
+updated in the </span><span
+class="calibre30">“./test/unit/controllersSpec.js</span><span
+class="calibre10">” so that the new change is reflected. </span></p>
+<p><span class="calibre10">A repeater for the creation of a simple table
+should then be created in the file. This can be implemented as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;table&gt;</span></p>
+<p><span class="calibre5">   &lt;tr&gt;&lt;th&gt;the row
+number&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p><span class="calibre5">   &lt;tr ng-repeat="j in [0, 1, 2, 3, 4, 5,
+6, 7]"&gt;&lt;td&gt;{{j}}&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p><span class="calibre5">&lt;/table&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The list should then be modified to the
+following:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;table&gt;</span></p>
+<p><span class="calibre5">  &lt;tr&gt;&lt;th&gt;the row
+number&lt;/th&gt;&lt;/tr&gt;</span></p>
+<p><span class="calibre5">  &lt;tr ng-repeat="j in [0, 1, 2, 3, 4, 5, 6,
+7]"&gt;&lt;td&gt;{{j+1}}&lt;/td&gt;&lt;/tr&gt;</span></p>
+<p><span class="calibre5">&lt;/table&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The “</span><span
+class="calibre30">ng-repeat”</span><span class="calibre10"> can be used
+for the creation of another table with some other specifications. That
+is also very powerful in Angular. At this point, you will have an app
+working dynamically and it has the model, the view, and the controller
+located separately. </span></p>
+<div id="part0000_split_010.html_calibre_pb_21" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_011.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_011.html_calibre_pb_24"><span
+id="part0000_split_011.html__Toc445490760" class="calibre12"><span
+class="calibre19">Chapter 3- XHRs</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">You should not always handle small and
+hard-coded data in your application. We should be able to fetch large
+data sets from our AngularJS servers by the use of the pre-built
+services named “</span><span class="calibre30">$http.”</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">We will have the file “</span><span
+class="calibre30">app/phones/devices.json,</span><span
+class="calibre10">” which has the list of phones that we have. These
+will be stored in a JSON format. A sample part of the file looks as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">[</span></p>
+<p><span class="calibre5">{</span></p>
+<p><span class="calibre5">   "age": 15,</span></p>
+<p><span class="calibre5">  "id": "motorola ",</span></p>
+<p><span class="calibre5">    "name": "Motorola DEFY\u2122 with
+MOTOBLUR\u2122",</span></p>
+<p><span class="calibre5">    "snippet": "Do you enjoy using Motorola
+devices and phones?"</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">]</span></p>
+<div id="part0000_split_011.html_calibre_pb_25" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Controller</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">The “</span><span
+class="calibre30">$http”</span><span class="calibre10"> service for
+Angular will be used in the controller for making an HTTP request to the
+web server so as to fetch data from the file “</span><span
+class="calibre30">app/phones/devices.json.</span><span
+class="calibre10">”This is just one of the ways  how this can be handled
+or the processing of operations related to web apps. With AngularJS,
+these services are injected where they are needed. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The code for the controller should be as
+shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">var myApp = angular.module('myApp',
+[]);</span></p>
+<p><span class="calibre5">    myApp.controller('PnListCtrl', function
+($scope, $http) {</span></p>
+<p><span class="calibre5">   
+$http.get('phones/devices.json').success(function(data) {</span></p>
+<p><span class="calibre5">    $scope.phones = data;</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">    $scope.orderProp = 'age';</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">For a service to be used in Angular, the
+names of the dependencies which are needed have to be defined as
+arguments to the controller constructor function. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">myApp.controller('PnListCtrl', function
+($scope, $http) {...}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The dependency constructor in AngularJS will
+provide the services to our controller once it has been launched. The
+process of creating any of the transitive dependencies which the service
+may have is also taken care of. Consider the example given below,
+showing how this can be done:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">var myApp = angular.module('myApp',
+[]);</span></p>
+<p><span class="calibre5">myApp.controller('PnListCtrl', ['$scope',
+'$http',</span></p>
+<p><span class="calibre5">function ($scope, $http) {</span></p>
+<p><span class="calibre5">  
+$http.get('phones/devices.json').success(function(data) {</span></p>
+<p><span class="calibre5">   $scope.phones = data;</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">  $scope.orderProp = 'age';</span></p>
+<p><span class="calibre5">}]);</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The test can be done as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">describe('myApp controllers', function()
+{</span></p>
+<p><span class="calibre5">describe('PnListCtrl', function(){</span></p>
+<p><span class="calibre5">    var scope, ctrl, $httpBackend;</span></p>
+<p><span class="calibre5">// Loading our app module definition before
+the test.</span></p>
+<p><span class="calibre5">    beforeEach(module('myApp'));</span></p>
+<p><span class="calibre5">// The injector will ignore the leading and
+the trailing underscores here (i.e. _$httpBackend_).</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">// This will allow us to inject the service
+but also attach it to the variable</span></p>
+<p><span class="calibre5">// with a name which is same as the service so
+as to avoid a name conflict.</span></p>
+<p><span class="calibre5">beforeEach(inject(function(_$httpBackend_,
+$rootScope, $controller) {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">   $httpBackend = _$httpBackend_;</span></p>
+<p><span class="calibre5">  
+$httpBackend.expectGET('phones/devices.json').</span></p>
+<p><span class="calibre5">respond([{name: 'Motorola'}, {name: 'Motorola
+Phone'}]);</span></p>
+<p><span class="calibre5">scope = $rootScope.$new();</span></p>
+<p><span class="calibre5">   ctrl = $controller('PnListCtrl', {$scope:
+scope});</span></p>
+<p><span class="calibre5">}));</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Notice the two helper functions in the above
+test case. These can be used for configuration and accessing the
+injector. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the code given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">it('You should create "phones" model having 2
+phones which have been fetched from the xhr', function() {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">   
+expect(scope.phones).toBeUndefined();</span></p>
+<p><span class="calibre5">    $httpBackend.flush();</span></p>
+<p><span class="calibre5">    expect(scope.phones).toEqual([{name:
+'Motorola'},</span></p>
+<p><span class="calibre5">    {name: 'Motorola Phone'}]);</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We want to perform a verification on our
+model which does not exist on the scope before we have received the
+response. After calling the function </span><span
+class="calibre30">“$httpBackend.flush(),” </span><span
+class="calibre10"> the request queue will be flushed into the browser.
+The promise which is returned by the service “$http” will be resolved
+with our resolved response. We will make the assertions, and then verify
+whether the model belongs to the scope. We can then verify whether the
+“</span><span class="calibre30">orderProp”</span><span
+class="calibre10"> has been set correctly. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">it('the default value should be set for the
+orderProp model', function() {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">    
+expect(scope.orderProp).toBe('age');</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In the karma tab, the following output should
+be observed:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">Chrome 22.0: Executed 2 of 2 SUCCESS (0.028
+secs / 0.007 secs)</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">“</span><span
+class="calibre30">&lt;pre&gt;{{phones | filter:query | orderBy:orderProp
+| json}}&lt;/pre&gt;” c</span><span class="calibre10">an be added at the
+bottom of the file so that the available phones can be listed or shown
+in a JSON format. The following can be added to the callback:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.devices = data.splice(0, 5);</span></p>
+<div id="part0000_split_012.html_calibre_pb_27" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_013.html_calibre_pb_30"><span
+id="part0000_split_013.html__Toc445490761" class="calibre12"><span
+class="calibre19">Chapter 4- Links &amp; Images</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">You should know how to add thumbnail images
+to the devices that you have in your list. Links should also be added to
+these. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Note that in the JSON file, the links for the
+devices and their URLs are available, as well as unique IDs. The URLs
+should be pointing to the URL “</span><span
+class="calibre30">app/img/devices/.”</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the code snippet given
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">[</span></p>
+<p><span class="calibre5">{</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">"id": "motorola ",</span></p>
+<p><span class="calibre5">     "imageUrl":
+"img/phones/motorola.0.jpg",</span></p>
+<p><span class="calibre5">      "name": "Motorola PHONE ",</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">]</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The template should be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">&lt;ul class="phones"&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="device in phones |
+filter:query | orderBy:orderProp" class="thumbnail"&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;a href="#/phones/{{device.id}}"
+class="thumb"&gt;&lt;img
+ng-src="{{device.imageUrl}}"&gt;&lt;/a&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;a
+href="#/phones/{{device.id}}"&gt;{{device.name}}&lt;/a&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{device.snippet}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The double-binding curly brae has been used
+in the attribute values for “</span><span
+class="calibre30">href”</span><span class="calibre10"> so as to allow
+for the links to be dynamically generated. In the second step, the
+binding </span><span class="calibre30">“{{device.name}}”</span><span
+class="calibre10"> was added as an element of content. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The directive “</span><span
+class="calibre30">ngRs”</span><span class="calibre10"> has been used so
+as to add an image next to each device. The test can be implemented as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">it(' device specific links should be rendered
+', function() {</span></p>
+<p><span class="calibre5">  var myquery =
+element(by.model('query'));</span></p>
+<p><span class="calibre5">   myquery.sendKeys('nexus');</span></p>
+<p><span class="calibre5">element.all(by.css('.phones li
+a')).first().click();</span></p>
+<p><span class="calibre5">browser.getLocationAbsUrl().then(function(url)
+{</span></p>
+<p><span class="calibre5">   
+expect(url).toBe('/phones/motorola');</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We need to perform a verification of whether
+the app is generating the right links for the device views which you may
+need to implement. The directive “</span><span
+class="calibre30">ng-rsc”</span><span class="calibre10"> can be replaced
+with the plain “</span><span class="calibre30">src.”</span></p>
+<div id="part0000_split_013.html_calibre_pb_31" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_014.html_calibre_pb_34"><span
+id="part0000_split_014.html__Toc445490762" class="calibre12"><span
+class="calibre19">Chapter 5- Working with Animations</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">Sometimes, you might need to enhance your
+application by adding some animations to it. This can be done by use of
+both CSS and JavaScript. For the animations to be enabled throughout the
+application, we have to use the “</span><span
+class="calibre30">ngAnimate”</span><span class="calibre10"> module. The
+common “</span><span class="calibre30">ng</span><span
+class="calibre10">” directives have to be used for the purpose of
+triggering the hooks for the animations we are tapping into. This should
+be done automatically. Once the animation has been found, it is executed
+in between the standard DOM element which has been issued to the element
+at that given time. The “</span><span
+class="calibre30">ngRepeat”</span><span class="calibre10"> and
+“</span><span class="calibre30">ngClass”</span><span class="calibre10">
+can be used for doing this, just by removing or adding elements to them.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The AngularJS module “</span><span
+class="calibre30">ngAnimate”</span><span class="calibre10"> will provide
+us with the functionality for performing the animation. This module has
+been distributed separately from our core Angular framework. For the
+purpose of performing the extra animations, we will use the jQuery.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">We now need to install the dependencies to be
+used on the client-side of the application. Bower can be used for this
+purpose. We need to update the configuration file “</span><span
+class="calibre30">bower.json</span><span class="calibre10">” so that it
+includes the new dependency. This can be done as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">{</span></p>
+<p><span class="calibre5">"name": "angular-seed",</span></p>
+<p><span class="calibre5">"description": "A project for AngularJS
+starting",</span></p>
+<p><span class="calibre5">"version": "0.0.0",</span></p>
+<p><span class="calibre5">"homepage":
+"https://mysite.com/angular/angular-project",</span></p>
+<p><span class="calibre5">"license": "MIT",</span></p>
+<p><span class="calibre5">"private": true,</span></p>
+<p><span class="calibre5">"dependencies": {</span></p>
+<p><span class="calibre5">"angular": "1.4.x",</span></p>
+<p><span class="calibre5">"angular-mocks": "1.4.x",</span></p>
+<p><span class="calibre5">"jquery": "~2.1.1",</span></p>
+<p><span class="calibre5">"bootstrap": "~3.1.1",</span></p>
+<p><span class="calibre5">"angular-route": "1.4.x",</span></p>
+<p><span class="calibre5">"angular-resource": "1.4.x",</span></p>
+<p><span class="calibre5">"angular-animate": "1.4.x"</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">All the elements installed in the above step
+should be compatible, otherwise, there will be trouble. The bower has
+also been instructed to install the jQuery. However, this cannot be said
+to be an Angular library, but it is a standard jQuery library.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Instruct the bower to download and install
+the dependencies by executing the following command:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">npm install</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Note that incompatibility might occur in case
+there is a new version of Angular which has been released after the last
+time you executed the above command. To solve this problem, you just
+have to delete the folder for “</span><span
+class="calibre30">app/bower_components</span><span class="calibre10">”
+before having to execute the above command. </span></p>
+<div id="part0000_split_014.html_calibre_pb_35" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">The Template</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">We have to make some changes to the HTML
+template so as to link the asset files defining our animations and the
+file “</span><span class="calibre30">angular-animate.js.</span><span
+class="calibre10">” The module for animation, that is, “</span><span
+class="calibre30">ngAnimate,”</span><span class="calibre10"> is defined
+in this file, and this has the code which is responsible for making the
+application sense the animation effect. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The following changes have to be made to the
+file:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">&lt;!—this is for the CSS Transitions and/or
+the Keyframe Animations --&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;link rel="stylesheet"
+href="css/animations.css"&gt;</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">&lt;!—the jQuery will be used for JavaScript
+animations (this should included before angular.js) --&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;script
+src="bower_components/jquery/dist/jquery.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5">&lt;!—this is the required module for enabling
+animation support in the AngularJS --&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;script
+src="bower_components/angular-animate/angular-animate.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;!—this is for JavaScript Animations
+--&gt;</span></p>
+<p><span class="calibre5">&lt;script
+src="js/animations.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">For those who are using Angular version 1.4,
+make sure that you are using jQuery 2.1 and above. Any version below
+this will not be compatible with Angular 1.4. This will mean that the
+animation will not be detected, or it may work in a manner which is not
+expected. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The animations can be implemented in either
+the CSS code (“</span><span class="calibre30">animations.css</span><span
+class="calibre10">”)</span><span class="calibre30"> </span><span
+class="calibre10">or in the JavaScript code (“</span><span
+class="calibre30">animations.js”</span><span class="calibre10">). We
+need to begin by creating a new module which will use the “</span><span
+class="calibre30">ngAnimate”</span><span class="calibre10"> module as a
+dependency in the same way we did it in the “</span><span
+class="calibre30">ngResource.”</span></p>
+<p><span class="calibre10">The “</span><span
+class="calibre30">animations.js”</span><span class="calibre10"> file
+should be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">angular.module('myAnimations',
+['ngAnimate']);</span></p>
+<p><span class="calibre5">   // ...</span></p>
+<p><span class="calibre5">// this module will be used for definition of
+the animations later</span></p>
+<p><span class="calibre5">   // ...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The module should then be attached to the
+application module. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">// ...</span></p>
+<p><span class="calibre5">angular.module('myApp', [</span></p>
+<p><span class="calibre5">'ngRoute',</span></p>
+<p><span class="calibre5">'myAnimations',</span></p>
+<p><span class="calibre5">'myControllers',</span></p>
+<p><span class="calibre5">'myFilters',</span></p>
+<p><span class="calibre5">'myServices',</span></p>
+<p><span class="calibre5">]);</span></p>
+<p><span class="calibre5">// ...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">At this moment, our module will be aware.
+</span></p>
+<div id="part0000_split_015.html_calibre_pb_37" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_016.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Animation of “ngRepeat” with the CSS
+Transition Animations</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">The CSS animations should be added to the
+“</span><span class="calibre30">ngRepeat”</span><span class="calibre10">
+directive which is present in the web page with our devices. We should
+begin by adding an extra CSS class to the element which has been
+repeated so that it can be hooked with the CSS animation code. This is
+shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;!--</span></p>
+<p><span class="calibre5">Let us change the repeater HTML so as to
+include a new CSS class</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">That we will use later for the
+animations:</span></p>
+<p><span class="calibre5">--&gt;</span></p>
+<p><span class="calibre5">&lt;ul class="phones"&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="device in phones |
+filter:query | orderBy:orderProp"</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">class="thumbnail
+device-listing"&gt;</span></p>
+<p><span class="calibre5">&lt;a href="#/phones/{{device.id}}"
+class="thumb"&gt;&lt;img
+ng-src="{{device.imageUrl}}"&gt;&lt;/a&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;a
+href="#/phones/{{device.id}}"&gt;{{device.name}}&lt;/a&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{device.snippet}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Note how the CSS class has been added. This
+is needed in the HTML file so that the animation may work. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The CSS code for animation should be as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">.device-listing.ng-enter,</span></p>
+<p><span class="calibre5">.device-listing.ng-leave,</span></p>
+<p><span class="calibre5">.device-listing.ng-move {</span></p>
+<p><span class="calibre5">    -webkit-transition: 0.5s linear
+all;</span></p>
+<p><span class="calibre5">    -moz-transition: 0.5s linear
+all;</span></p>
+<p><span class="calibre5">    -o-transition: 0.5s linear all;</span></p>
+<p><span class="calibre5">    transition: 0.5s linear all;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">.device-listing.ng-enter,</span></p>
+<p><span class="calibre5">.device-listing.ng-move {</span></p>
+<p><span class="calibre5">   opacity: 0;</span></p>
+<p><span class="calibre5">   height: 0;</span></p>
+<p><span class="calibre5">   overflow: hidden;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span
+class="calibre5">.device-listing.ng-move.ng-move-active,</span></p>
+<p><span class="calibre5">.device-listing.ng-enter.ng-enter-active
+{</span></p>
+<p><span class="calibre5">    opacity: 1;</span></p>
+<p><span class="calibre5">    height: 120px;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">.device-listing.ng-leave {</span></p>
+<p><span class="calibre5">    opacity: 1;</span></p>
+<p><span class="calibre5">    overflow: hidden;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">.device-listing.ng-leave.ng-leave-active
+{</span></p>
+<p><span class="calibre5">    opacity: 0;</span></p>
+<p><span class="calibre5">    height: 0;</span></p>
+<p><span class="calibre5">    padding-top: 0;</span></p>
+<p><span class="calibre5">    padding-bottom: 0;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The CSS class for “</span><span
+class="calibre30">device-listing”</span><span class="calibre10"> has
+been combined together with the animation hooks which will occur when
+the items have been inserted into and then removed from the list.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The class “</span><span
+class="calibre30">ng-enter”</span><span class="calibre10"> will be
+applied to the element after a new device has been added to the list and
+then displayed on the page. The class “</span><span
+class="calibre30">ng-move”</span><span class="calibre10"> will be
+applied after the elements have been moved around the list. The class
+“</span><span class="calibre30">ng-leave”</span><span class="calibre10">
+will be applied once the elements have been removed from the list.
+</span></p>
+<div id="part0000_split_016.html_calibre_pb_39" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Animation of “ngView”</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">We now need to add an animation for
+transitions between our route changes in the “</span><span
+class="calibre30">ngView.”</span><span class="calibre10"> A new CSS
+class has to be added to the HTML as we did in our previous example.
+Other than adding it to the “</span><span
+class="calibre30">ng-Repeat</span><span class="calibre10">” element, we
+will add it to the “</span><span class="calibre30">ngView.”</span><span
+class="calibre10"> This means that the HTML code has to be changed a
+bit. This will mean that the animation will be more controlled between
+the changes in the view. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The “</span><span
+class="calibre30">index.html”</span><span class="calibre10"> file should
+be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div class="view-container"&gt;</span></p>
+<p><span class="calibre5">    &lt;div ng-view
+class="view-frame"&gt;&lt;/div&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The “</span><span
+class="calibre30">view-container”</span><span class="calibre10"> CSS
+class has been used to nest the “</span><span
+class="calibre30">ng-view”</span><span class="calibre10"> directive
+inside the parent element. The class will add the style “</span><span
+class="calibre30">position: relative</span><span class="calibre10">” so
+that the positioning of the directive “</span><span
+class="calibre30">ng-view</span><span class="calibre10">” is relative to
+the parent as the transitions are animated. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The CSS for the transition should be added to
+the file “</span><span class="calibre30">animation.css.”</span><span
+class="calibre10"> This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">.view-container {</span></p>
+<p><span class="calibre5">    position: relative;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">.view-frame.ng-enter, .view-frame.ng-leave
+{</span></p>
+<p><span class="calibre5">    background: white;</span></p>
+<p><span class="calibre5">    position: absolute;</span></p>
+<p><span class="calibre5">    top: 0;</span></p>
+<p><span class="calibre5">    left: 0;</span></p>
+<p><span class="calibre5">                                         
+                            right: 0;                           
+</span></p>
+<p><span class="calibre5">                                         
+                                          }                           
+</span></p>
+<p><span class="calibre5">.view-frame.ng-enter {</span></p>
+<p><span class="calibre5">     -webkit-animation: 0.5s
+fade-in;</span></p>
+<p><span class="calibre5">     -moz-animation: 0.5s fade-in;</span></p>
+<p><span class="calibre5">    -o-animation: 0.5s fade-in;</span></p>
+<p><span class="calibre5">    animation: 0.5s fade-in;</span></p>
+<p><span class="calibre5">    z-index: 100;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">.view-frame.ng-leave {</span></p>
+<p><span class="calibre5">     -webkit-animation: 0.5s
+fade-out;</span></p>
+<p><span class="calibre5">      -moz-animation: 0.5s
+fade-out;</span></p>
+<p><span class="calibre5">      -o-animation: 0.5s fade-out;</span></p>
+<p><span class="calibre5">       animation: 0.5s fade-out;</span></p>
+<p><span class="calibre5">       z-index:99;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@keyframes fade-in {</span></p>
+<p><span class="calibre5">       from { opacity: 0; }</span></p>
+<p><span class="calibre5">        to { opacity: 1; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@-moz-keyframes fade-in {</span></p>
+<p><span class="calibre5">        from { opacity: 0; }</span></p>
+<p><span class="calibre5">        to { opacity: 1; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@-webkit-keyframes fade-in {</span></p>
+<p><span class="calibre5">     from { opacity: 0; }</span></p>
+<p><span class="calibre5">      to { opacity: 1; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@keyframes fade-out {</span></p>
+<p><span class="calibre5">      from { opacity: 1; }</span></p>
+<p><span class="calibre5">      to { opacity: 0; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@-moz-keyframes fade-out {</span></p>
+<p><span class="calibre5">       from { opacity: 1; }</span></p>
+<p><span class="calibre5">       to { opacity: 0; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">@-webkit-keyframes fade-out {</span></p>
+<p><span class="calibre5">       from { opacity: 1; }</span></p>
+<p><span class="calibre5">       to { opacity: 0; }</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">/* the vendor-prefixes should not be forgotten
+*/</span></p>
+<div id="part0000_split_017.html_calibre_pb_41" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Animation of the “ngClass” with
+Javascript</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">We need to add another animation to our
+application. A nice thumbnail will be observed in the “</span><span
+class="calibre30">device-list.html”</span><span class="calibre10"> page.
+Once the thumbnail has been clicked, the image will change. The CSS
+class has to be changed so that we can ensure that the displaying of the
+images is accurate. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">.phone-images {</span></p>
+<p><span class="calibre5">    background-color: white;</span></p>
+<p><span class="calibre5">    width: 450px;</span></p>
+<p><span class="calibre5">    height: 450px;</span></p>
+<p><span class="calibre5">    overflow: hidden;</span></p>
+<p><span class="calibre5">    position: relative;</span></p>
+<p><span class="calibre5">    float: left;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">...</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">img.device {</span></p>
+<p><span class="calibre5">     float: left;</span></p>
+<p><span class="calibre5">     margin-right: 3em;</span></p>
+<p><span class="calibre5">     margin-bottom: 2em;</span></p>
+<p><span class="calibre5">     background-color: white;</span></p>
+<p><span class="calibre5">     padding: 2em;</span></p>
+<p><span class="calibre5">     height: 400px;</span></p>
+<p><span class="calibre5">     width: 400px;</span></p>
+<p><span class="calibre5">    display: none;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">img.device:first-child {</span></p>
+<p><span class="calibre5">     display: block;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">You are thinking that we will create an
+animation which is CSS enabled. However, we can do this by use of the
+“</span><span class="calibre30">animation()”</span><span
+class="calibre10"> module of JavaScript. This is shown in the example
+given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">var myAnimations =
+angular.module('myAnimations', ['ngAnimate']);</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">    myAnimations.animation('.device',
+function() {</span></p>
+<p><span class="calibre5">    var animUp = function(element, cName,
+done) {</span></p>
+<p><span class="calibre5">if(cName != 'active') {</span></p>
+<p><span class="calibre5">   return;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">element.css({</span></p>
+<p><span class="calibre5">     position: 'absolute',</span></p>
+<p><span class="calibre5">     top: 500,</span></p>
+<p><span class="calibre5">     left: 0,</span></p>
+<p><span class="calibre5">     display: 'block'</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">jQuery(element).animate({</span></p>
+<p><span class="calibre5">     top: 0</span></p>
+<p><span class="calibre5">}, done);</span></p>
+<p><span class="calibre5">return function(cancel) {</span></p>
+<p><span class="calibre5">if(cancel) {</span></p>
+<p><span class="calibre5">     element.stop();</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">var animDown = function(element, cName, done)
+{</span></p>
+<p><span class="calibre5">if(cName != 'active') {</span></p>
+<p><span class="calibre5">      return;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">element.css({</span></p>
+<p><span class="calibre5">      position: 'absolute',</span></p>
+<p><span class="calibre5">      left: 0,</span></p>
+<p><span class="calibre5">     top: 0</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">jQuery(element).animate({</span></p>
+<p><span class="calibre5">      top: -500</span></p>
+<p><span class="calibre5">}, done);</span></p>
+<p><span class="calibre5">return function(cancel) {</span></p>
+<p><span class="calibre5">if(cancel) {</span></p>
+<p><span class="calibre5">     element.stop();</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">      addClass: animUp,</span></p>
+<p><span class="calibre5">      removeClass: animDown</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">As you have noticed, the animation has been
+implemented by use of jQuery. With both Angular and JavaScript, we do
+not require the jQuery so as to perform the animation. Writing your own
+animation library in JavaScript will be difficult. </span></p>
+<div id="part0000_split_018.html_calibre_pb_43" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_019.html_calibre_pb_46"><span
+id="part0000_split_019.html__Toc445490763" class="calibre12"><span
+class="calibre19">Chapter 6- $watch() , $digest(), and
+$apply()</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">These methods are widely used in AngularJS.
+You should learn how to use these in Angular. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">After the creation of data binding somewhere
+in one’s view to a variable on the object “</span><span
+class="calibre30">$scope,”</span><span class="calibre10"> a
+“</span><span class="calibre30">watch”</span><span class="calibre10">
+will be internally created by the Angular. With the watch, it will mean
+that it will watch what is contained in the “</span><span
+class="calibre30">$scope”</span><span class="calibre10"> object. This
+will be an indication that the framework will be watching the variable.
+To create watches, we use the function </span><span
+class="calibre30">“$scope.$watch().”</span><span class="calibre10">
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">In most cases, the functions </span><span
+class="calibre30">“$scope.$digest()”</span><span class="calibre10"> and
+</span><span class="calibre30">“$scope.$watch()”</span><span
+class="calibre10"> can be called on your behalf, but in some other
+cases, you might have to call them yourself. This is why you should know
+and understand how these work. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The function </span><span
+class="calibre30">“$scope.$apply</span><span class="calibre10">“ is used
+for execution of a particular code, and then the function “</span><span
+class="calibre30">$scope.$digest()” </span><span class="calibre10">is
+called after that. This will have all of the watches checked and all of
+the corresponding functions for the watch listener called. The function
+</span><span class="calibre30">“$apply()”</span><span class="calibre10">
+is good when it comes to integration of the AngularJS code with any
+other code. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<section id="part0000_split_020.html_calibre_pb_47"
+class="calibre32 calibre1">
+<h2 class="calibre32"><span
+id="part0000_split_020.html__Toc445490764"><span
+class="calibre33">$watch()</span></span></h2>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">The function </span><span
+class="calibre30">“$scope.watch()”</span><span class="calibre10"> is
+used for creation of a watch of a particular variable. Once a watch has
+been registered, two parameters have to be passed to the “</span><span
+class="calibre30">$watch()</span><span class="calibre10">“ function.
+These two parameters include the following:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<ul>
+<li><span class="calibre10">A value function</span></li>
+<li><span class="calibre10">A listener function</span></li>
+</ul>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the example given below showing how
+this can be done:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.$watch(function() {},</span></p>
+<p><span class="calibre5">      function() {}</span></p>
+<p><span class="calibre5">);</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The first function represents the value
+function, while the second function represents the listener function.
+With the value function, the value which is being watched will be
+returned. It is then the work of the AngularJS to check the value which
+has been returned against the one that was returned by the watch
+function last time. AngularJS has changed the way in which checking of
+whether a value was returned can be done. An example of this is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.$watch(function(scope) { return
+scope.data.myVariable },</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">     function() {}</span></p>
+<p><span class="calibre5">);</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">With the above function, the value
+“</span><span class="calibre30">scope.data.myVariable</span><span
+class="calibre10">” will be returned by the value function. In case the
+value for this variable is changed, then a different value will have to
+be returned. The listener function will then be called by the AngularJS.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">If the value has been changed, the listener
+function will try to do whatever that it can do. By use of this value,
+the value function will be in a position to access the “$scope” together
+with its variables. The global variables can also be watched by the
+value function in case it is needed, but most often, the variable
+“</span><span class="calibre30">$scope</span><span class="calibre10">”
+will be watched. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">If the value is changed, the listener
+function can do whatever that it needs to do. For some, they might need
+to change the content of the variable while with others, they might need
+to change the content of an HTML element. Consider the example given
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.$watch(function(scope) { return
+scope.data.myVariable },</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">function(nValue, oValue) {</span></p>
+<p><span class="calibre5">    document.getElementById("").innerHTML
+=</span></p>
+<p><span class="calibre5">     "" + newValue + "";</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">);</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The above example will set the inner HTML of
+the HTML element to the new value of the variable, and this has been
+embedded in the “</span><span class="calibre30">b”</span><span
+class="calibre10"> element for the value of making the content bold.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+</section>
+<p><span id="part0000_split_021.html"></span></p>
+<section id="part0000_split_021.html_calibre_pb_48"
+class="calibre32 calibre1">
+<h2 class="calibre32"><span
+id="part0000_split_021.html__Toc445490765"><span
+class="calibre33">$digest()</span></span></h2>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">The function </span><span
+class="calibre30">“$scope.$digest()”</span><span class="calibre10"> will
+iterate through the watches in the object “</span><span
+class="calibre30">$scope</span><span class="calibre10">” and the child
+“</span><span class="calibre30">$scope</span><span class="calibre10">”
+object. When the function”</span><span class="calibre5"> </span><span
+class="calibre30">$digest()”</span><span class="calibre10"> has iterated
+through the watches, the value function for each watch will be called.
+If the value returned by our value function is found to be different to
+the value which it had returned last time that it was called, the
+listener function for the watch will then be called. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Whenever AngularJS finds it necessary, it
+just calls the </span><span class="calibre30">“$digest()”</span><span
+class="calibre10"> function. Situations may be found in which the
+AngularJS does not call the </span><span
+class="calibre30">“$digest()“</span><span class="calibre10"> function.
+To solve this problem, just call the function </span><span
+class="calibre30">“$scope.$digest().”</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre10"> </span></p>
+</section>
+<p><span id="part0000_split_022.html"></span></p>
+<section id="part0000_split_022.html_calibre_pb_49"
+class="calibre38 calibre1">
+<h2 class="calibre38"><span
+id="part0000_split_022.html__Toc445490766"><span
+class="calibre33">$apply()</span></span></h2>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">The function “</span><span
+class="calibre30">$scope.$apply()”</span><span class="calibre10"> will
+take a function as a parameter which has been executed, and then the
+function “$scope.$apply()” will internally be called. This is a way for
+you to ensure that all of the watches have been checked. All of the data
+bindings will then be refreshed. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">$scope.$apply(function() {</span></p>
+<p><span class="calibre5">$scope.data.myVariable = "A new
+value";</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Once a function has been passed to this
+function as a parameter, the value of </span><span
+class="calibre30">“$scope.data.myVar</span><span class="calibre10">”
+will be changed. Once the function has exited, the function </span><span
+class="calibre30">“$scope.$digest()”</span><span class="calibre10"> will
+be called by the AngularJS, meaning that the watches will be checked for
+the changes in the watched values. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the example given below, which shows
+how these functions can be used in AngularJS:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div
+ng-controller="appController"&gt;</span></p>
+<p><span class="calibre5">{{data.time}}</span></p>
+<p><span class="calibre5">&lt;br/&gt;</span></p>
+<p><span class="calibre5">&lt;button ng-click="updateTime()"&gt;update
+time - ng-click&lt;/button&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;button id="upTimeButton"  &gt;change
+time&lt;/button&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5">&lt;script&gt;</span></p>
+<p><span class="calibre5">var module       =
+angular.module("myapplication", []);</span></p>
+<p><span class="calibre5">var appController1 =
+module.controller("appController", function($scope) {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">$scope.data = { time : new Date()
+};</span></p>
+<p><span class="calibre5">$scope.updateTime = function() {</span></p>
+<p><span class="calibre5">$scope.data.time = new Date();</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span
+class="calibre5">document.getElementById("upTimeButton")</span></p>
+<p><span class="calibre5">.addEventListener('click', function()
+{</span></p>
+<p><span class="calibre5">console.log("change time clicked");</span></p>
+<p><span class="calibre5">$scope.data.time = new Date();</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">&lt;/script&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">With the above example, the variable
+“</span><span class="calibre30">$scope.data.time</span><span
+class="calibre10">” will be bound to an interpolation directive which
+will merge the variable value to a HTML page. With this binding, a watch
+will be internally created in the variable </span><span
+class="calibre30">“$scope.data.time.</span><span
+class="calibre10">”</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">We have created two buttons for our
+application. The first button has a listener of type “</span><span
+class="calibre30">ng-click”</span><span class="calibre10"> attached to
+it. Clicking of this button will call the function </span><span
+class="calibre30">“$scope.updateTime(),”</span><span class="calibre10">
+and then the AngularJS updates the bindings by calling the function
+</span><span class="calibre30">“$scope.$digest().”</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">A JavaScript event listener has been attached
+to the second button. This listener will be executed once the second
+button has been clicked. The only difference between the two listeners
+is that with the one for the second button, the data bindings are not
+updated once the second button has been clicked. The reason behind this
+is that the function </span><span
+class="calibre30">“$scope.$digest()”</span><span class="calibre10"> will
+not be called after the execution of the event listener for the second
+button. This means that the clicking of the second button will have the
+effect of updating the time in the variable </span><span
+class="calibre30">“$scope.data.time,</span><span class="calibre10">” but
+this new time will not be displayed for visibility. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">For us to solve this problem, the call for
+“$scope.$digest()” can be added to the last line of the event listener.
+This is shown in the example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span
+class="calibre5">document.getElementById("upTimeButton")</span></p>
+<p><span class="calibre5">.addEventListener('click', function()
+{</span></p>
+<p><span class="calibre5">console.log("change time clicked");</span></p>
+<p><span class="calibre5">$scope.data.time = new Date();</span></p>
+<p><span class="calibre5">$scope.$digest();</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The addition of the above call has been done
+in the last line of the program. That is how it should be done.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Instead of doing the above, that is, calling
+the </span><span class="calibre30">“$digest()”</span><span
+class="calibre10"> function inside the event listener, the “</span><span
+class="calibre30">apply()”</span><span class="calibre10"> function can
+also be used as shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span
+class="calibre5">document.getElementById("upTimeButton")</span></p>
+<p><span class="calibre5">.addEventListener('click', function()
+{</span></p>
+<p><span class="calibre5">$scope.$apply(function() {</span></p>
+<p><span class="calibre5">console.log("change time clicked");</span></p>
+<p><span class="calibre5">$scope.data.time = new Date();</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The function “</span><span
+class="calibre30">$scope.$apply()” </span><span class="calibre10">has
+been called from within the event listener for the button, and the
+update of the variable </span><span
+class="calibre30">“$scope.data.time</span><span class="calibre10">” has
+been passed as a parameter to the function </span><span
+class="calibre30">“$apply().”</span><span class="calibre10"> Once  all
+of the function “$apply()” has finished, AngularJS will call the
+function </span><span class="calibre30">“$digest()”</span><span
+class="calibre10"> internally so that all of the data bindings are
+updated. </span></p>
+<div id="part0000_split_022.html_calibre_pb_50" class="calibre15">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_023.html"></span></p>
+<section id="part0000_split_023.html_calibre_pb_53"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_023.html__Toc445490767"
+class="calibre12"><span class="calibre19">Chapter 7- The Hierarchy of
+“$scope”</span></span></h1>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The object “$scope” for AngularJS, which is
+used by views, is organized into an hierarchy. We begin with the root
+scope, which is then made up of one or more children. Each of the
+available views is made up of its own scope, which is just the child of
+the root scope. This means that whatever variable that the view
+controller has set on the variable “</span><span
+class="calibre30">$scope</span><span class="calibre10">” will be
+invisible to the controllers. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the AngularJS code given below as an
+example:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;!DOCTYPE html&gt;</span></p>
+<p><span class="calibre5">&lt;html lang="en"&gt;</span></p>
+<p><span class="calibre5">&lt;head&gt;</span></p>
+<p><span class="calibre5">&lt;script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">&lt;/head&gt;</span></p>
+<p><span class="calibre5">&lt;body ng-app="myapplication"&gt;</span></p>
+<p><span class="calibre5">&lt;div
+ng-controller="appController1"&gt;</span></p>
+<p><span class="calibre5">{{data.theVariable}}</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5">&lt;div
+ng-controller="appController2"&gt;</span></p>
+<p><span class="calibre5">{{data.theVariable}}</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5">&lt;script&gt;</span></p>
+<p><span class="calibre5">var module       =
+angular.module("myapplication", []);</span></p>
+<p><span class="calibre5">var appController1 =
+module.controller("appController1", function($scope) {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">$scope.data = { theVariable : "first
+value"};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">var appController2 =
+module.controller("appController2", function($scope) {</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5">$scope.data = { theVariable : "second
+value"};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">&lt;/script&gt;</span></p>
+<p><span class="calibre5">&lt;/body&gt;</span></p>
+<p><span class="calibre5">&lt;/html&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In the above example, we have used two views,
+and each of the views has its own controller. Each controller will set
+the “</span><span class="calibre30">data.theVariable</span><span
+class="calibre10">” variable to a different value. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Once the program has been executed, you will
+get the following hierarchy:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Root $scope </span></p>
+<ul>
+<li><span class="calibre10">$scope for appController 1</span></li>
+<li><span class="calibre10">$scope for appController 2</span></li>
+</ul>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">As shown above, the two views have used
+different scope objects. With the example, two different values will
+also be written for the </span><span
+class="calibre30">“{{data.theVar}}”</span><span class="calibre10"> data
+bindings inside our two views. Different values will also be set for the
+variable “</span><span class="calibre30">data.theVariable</span><span
+class="calibre10">” in the “</span><span
+class="calibre30">$scope</span><span class="calibre10">” object.
+</span></p>
+<div id="part0000_split_023.html_calibre_pb_54" class="calibre15">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_024.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_024.html_calibre_pb_57"><span
+id="part0000_split_024.html__Toc445490768" class="calibre12"><span
+class="calibre19">Chapter 8- Refactoring AngularJS
+Apps</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">Directives which are component-based are
+increasingly becoming popular in AngularJS. The reason for this is the
+ease of use associated with components. However, most apps for Angular
+which are in use today are not based on components. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">For Angular2 users, components can be used as
+follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt; confirmation</span></p>
+<p><span class="calibre5">    [message]="'Start firing?'"</span></p>
+<p><span class="calibre5">       (ok)="startFiring()"&gt;</span></p>
+<p><span class="calibre5">&lt;/ confirmation&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">As shown in the above example, a component is
+just an element in custom HTML, and it matches a component name which
+has been defined somewhere else. Each component has its inputs and
+outputs, and these are supplied as properties to the element.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The above component can also be defined as
+shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">@Component({</span></p>
+<p><span class="calibre5">selector: 'confirmation',</span></p>
+<p><span class="calibre5">properties: ['message'],</span></p>
+<p><span class="calibre5">events: ['ok']</span></p>
+<p><span class="calibre5">})</span></p>
+<p><span class="calibre5">@View({</span></p>
+<p><span class="calibre5">template: `</span></p>
+<p><span class="calibre5">&lt;div&gt;</span></p>
+<p><span class="calibre5">{{message}}</span></p>
+<p><span class="calibre5">    &lt;button
+(click)="ok()"&gt;OK&lt;/button&gt;</span></p>
+<p><span class="calibre5">     &lt;/div&gt;</span></p>
+<p><span class="calibre5">`})</span></p>
+<p><span class="calibre5">class Confirmation {</span></p>
+<p><span class="calibre5">    okEvents = new EventEmitter();</span></p>
+<p><span class="calibre5">    ok() {</span></p>
+<p><span class="calibre5">     this.okEvents.next();</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">An interface boundary definition is used for
+specification of the inputs and outputs which the component can work
+with. The UI template has been used for definition of the user interface
+for our users. The component logic has been used behind the UI template
+to define the behavior of the component and what it does when the user
+is interacting with it. The definition of a component as a directive can
+be done as shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">@Component({</span></p>
+<p><span class="calibre5">    selector: 'confirmation',</span></p>
+<p><span class="calibre5">     properties: ['message'],</span></p>
+<p><span class="calibre5">    events: ['ok']</span></p>
+<p><span class="calibre5">})</span></p>
+<p><span class="calibre5">@View({</span></p>
+<p><span class="calibre5">template: `</span></p>
+<p><span class="calibre5">    &lt;div&gt;{{message}}</span></p>
+<p><span class="calibre5">    &lt;button
+(click)="ok()"&gt;OK&lt;/button&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5">`</span></p>
+<p><span class="calibre5">})</span></p>
+<p><span class="calibre5">class Confirmation {</span></p>
+<p><span class="calibre5">     okEvents = new EventEmitter();</span></p>
+<p><span class="calibre5">     ok() {</span></p>
+<p><span class="calibre5">     this.okEvents.next();</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The above code is completely different from
+what we had before. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Refactoring can easily be done or used in
+AngularJS. We want to give an example of how this can be
+done:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the code given below for the file
+“</span><span class="calibre30">index.html”</span><span
+class="calibre10">:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-include="'bar.html'"&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">For the above to be replaced, we will have to
+create a directive for “</span><span class="calibre30">bar.”</span><span
+class="calibre10"> This will use the inherited scope and the template
+“</span><span class="calibre30">bar.htm.”</span><span class="calibre10">
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The code for “</span><span
+class="calibre30">bar_directive.js”</span><span class="calibre10">
+should be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('bar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">     scope: true,</span></p>
+<p><span class="calibre5">     templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">For this to work effectively, both the
+directive and the template have to be co-located and their names should
+also match. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar/ </span></p>
+<ul>
+<li><span class="calibre5">bar_directive.js</span></li>
+<li><span class="calibre5">bar.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The original “</span><span
+class="calibre30">ng-inlude”</span><span class="calibre10"> should then
+be replaced with the new directive. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div
+ng-include="'footbar.html'"&gt;</span></p>
+<p><span class="calibre5">     &lt;/div&gt;</span></p>
+<p><span class="calibre5">&lt;footbar&gt;&lt;/footbar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">After the addition of the above component
+directive, that is, “</span><span
+class="calibre30">footbar,”</span><span class="calibre10">  the template
+itself will look as shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-controller="FoobarCtrl as
+c"&gt;</span></p>
+<p><span class="calibre5">    
+&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We then want to move and then rename the file
+which has the FootCtrl so that it becomes co-located with our component
+directive. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar/ </span></p>
+<ul>
+<li><span class="calibre5">bar_directive.js</span></li>
+<li><span class="calibre5">bar_controller.js</span></li>
+<li><span class="calibre5">bar.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The controller should then be used in the
+directive, and then the same ctrl alias that our “</span><span
+class="calibre30">ng-controller”</span><span class="calibre10"> will be
+used. The file “</span><span
+class="calibre30">bar_diretive.js”</span><span class="calibre10"> should
+be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">    scope: true,</span></p>
+<p><span class="calibre5">    controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">    controllerAs: 'ctrl',</span></p>
+<p><span class="calibre5">    templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The wrapper “ng-controller” can now be
+removed from the template. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-controller="FooBarCtrl as
+c"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">One can also choose to keep this element for
+the purpose of styling, and then the attribute “</span><span
+class="calibre30">ng-controller</span><span class="calibre10">” is 
+removed. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Consider the example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-controller="FoobarCtrl as
+c"</span></p>
+<p><span class="calibre5">class=" foo-bar"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In the above example representing a template,
+we have an “</span><span class="calibre30">ng-controller.”</span><span
+class="calibre10">  It has been used to instantiate a “FoobarCtrl” and
+then alias it as “c.”</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">We now need to create a new directive. This
+should then create an inherited scope, and then use the “FoobarCtrl” and
+then alias it as “c.”  This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('bar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">    scope: true,</span></p>
+<p><span class="calibre5">    controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">    controllerAs: 'c'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Our new directive and the controller in
+existence will be moved to the same location. The two should also have
+the same prefix. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar/ </span></p>
+<ul>
+<li><span class="calibre5">bar_directive.js</span></li>
+<li><span class="calibre5">bar_controller.js</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Finally, in the original template, the
+“</span><span class="calibre30">ng-controller”</span><span
+class="calibre10"> can be replaced with an instance of the component
+“</span><span class="calibre30">foobar.</span><span class="calibre10">”
+This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-controller="FoobarCtrl as
+c"</span></p>
+<p><span class="calibre5">class="foo-bar"&gt;</span></p>
+<p><span class="calibre5">&lt;foobar class="foo-bar"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">This is what we have for now:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-controller="FoobarCtrl as
+c"</span></p>
+<p><span class="calibre5">class="foo-bar"&gt;</span></p>
+<p><span class="calibre5">&lt;foobar class="foo-bar"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">A template file should then be created for
+the component directive. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar/ </span></p>
+<ul>
+<li><span class="calibre5">bar_directive.js</span></li>
+<li><span class="calibre5">bar_controller.js</span></li>
+<li><span class="calibre5">bar.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The new template should then be referenced
+from the directive. This can be done as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We will then use what was contained in the
+directive element so as to populate the new template. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}&lt;/p&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The directive element will itself become
+empty. The “</span><span class="calibre30">index.html”</span><span
+class="calibre10"> file will then be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;{{c.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">After the “</span><span
+class="calibre30">ng-controller”</span><span class="calibre10"> has been
+replaced with the directive, the original template will be left with the
+following:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar&gt;</span></p>
+<p><span
+class="calibre5">&lt;h2&gt;{{c.getTitle()}}&lt;/h2&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{mainC.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Transclusion can be used for the purpose of
+supporting both of the cases. We will begin by creating a template file
+for our component directive. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar/ </span></p>
+<ul>
+<li><span class="calibre5">bar_directive.js</span></li>
+<li><span class="calibre5">bar_controller.js</span></li>
+<li><span class="calibre5">bar.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The new template can then be referenced from
+our directive. At the same time, transclusion will also be enabled, as
+shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">transclude: true,</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The population of the template file will be
+done by use of a part of the original template which is needed to be put
+inside the component. The directive “ng-transclude” will be added for
+the other part. The “</span><span
+class="calibre30">bar.html”</span><span class="calibre10"> file should
+have the following ode:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span
+class="calibre5">&lt;h2&gt;{{c.getTitle()}}&lt;/h2&gt;</span></p>
+<p><span class="calibre5">&lt;p ng-transclude&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In our directive element, we will leave the
+part which is to be transcluded. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar&gt;</span></p>
+<p><span
+class="calibre5">&lt;h2&gt;{{c.getTitle()}}&lt;/h2&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{mainC.getText()}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Consider the next example.</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">We have a “&lt;ul&gt;” element for listing
+some data. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div&gt;</span></p>
+<p><span class="calibre5">&lt;h1&gt;Foobars&lt;/h1&gt;</span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">{{file.text}}</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We need to perform the listing into its own
+component. A directive and a template file should be created for the
+component. This should be called in the directive as shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar_list/ </span></p>
+<ul>
+<li><span class="calibre5">foobar_list_directive.js</span></li>
+<li><span class="calibre5">foobar_list.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The directive will create an inherited scope,
+and then reference the template which has been created. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobarList', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">     scope: true,</span></p>
+<p><span class="calibre5">     templateUrl: 'list.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The template will be populated by copying the
+HTML file which has been populated from our original template. This is
+shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">{{file.text}}</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">A new instance of this component can then be
+used in the original template. It will replace the markup which has been
+created. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div&gt;</span></p>
+<p><span class="calibre5">&lt;h1&gt;Foobars&lt;/h1&gt;</span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">{{file.text}}</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span
+class="calibre5">&lt;foobar-list&gt;&lt;/foobar-list&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">An example can also be created which makes
+use of transclusion. An example of this is given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div&gt;</span></p>
+<p><span class="calibre5">&lt;h1&gt;Foobars&lt;/h1&gt;</span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span class="calibre5">&lt;h3&gt;</span></p>
+<p><span class="calibre5">{{mainC.itemHeader}}</span></p>
+<p><span class="calibre5">&lt;/h3&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">{{file.text}}</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The </span><span
+class="calibre30">“&lt;ul&gt;”</span><span class="calibre10"> element
+from our previous example has some content coming from the outside, and
+transclusion can be used for the purpose of both of these. In the above
+example, we have used an item header which has been provided by
+“</span><span class="calibre30">mainC</span><span
+class="calibre10">”</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">When the listing is extracted into its own
+component, a directive and a template should then be created for that
+file. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">components/foobar_list/ </span></p>
+<ul>
+<li><span class="calibre5">bar_list_directive.js</span></li>
+<li><span class="calibre5">bar_list.html</span></li>
+</ul>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The directive will create an inherited scope,
+and the newly created template file will then be referenced.
+Transclusion will also be enabled. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The code for the file “</span><span
+class="calibre30">bar_list_directive.js</span><span class="calibre10">”
+should be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobarList', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">     transclude: true,</span></p>
+<p><span class="calibre5">     scope: true,</span></p>
+<p><span class="calibre5">     templateUrl: 'bar_list.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The population of the template will be done
+by copying the HTML which has been extracted from our original template.
+The part for the item header will be replaced with an “</span><span
+class="calibre30">ng-transclude</span><span class="calibre10">” element.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The code for “</span><span
+class="calibre30">bar_list.htm” </span><span class="calibre10">should be
+as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span
+class="calibre5">&lt;ng-transclude&gt;&lt;/ng-transclude&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">{{file.text}}</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">A new instance of this component can then be
+used in our new template. It will replace the markup which has been
+extracted, but an item header will be left in place and then
+transclusion will be done to each item. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div&gt;</span></p>
+<p><span class="calibre5">&lt;h1&gt;My Foobars&lt;/h1&gt;</span></p>
+<p><span class="calibre5">&lt;ul&gt;</span></p>
+<p><span class="calibre5">&lt;li ng-repeat="foo in
+c.bars"&gt;</span></p>
+<p><span class="calibre5">&lt;h3&gt;</span></p>
+<p><span class="calibre5">{{mainC.itemHeader}}</span></p>
+<p><span class="calibre5">&lt;/h3&gt;</span></p>
+<p><span class="calibre5">&lt;img ng-src="foo.imageUrl"/&gt;</span></p>
+<p><span class="calibre5">                                         
+                            {{file.text}}                           
+</span></p>
+<p><span class="calibre5">&lt;/li&gt;</span></p>
+<p><span class="calibre5">&lt;/ul&gt;</span></p>
+<p><span class="calibre5">&lt;foobar-list&gt;</span></p>
+<p><span class="calibre5">&lt;h3&gt;</span></p>
+<p><span class="calibre5">{{mainC.itemHeader}}</span></p>
+<p><span class="calibre5">&lt;/h3&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar-list&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre10">We  now have a component template. Two
+external references can be seen in it, and these reference the
+controller “</span><span class="calibre30">mainC.</span><span
+class="calibre10">” Note that this is not the controller for the
+component, but it is just another controller which has been defined on
+the upper or higher level of our hierarchy. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div
+ng-show="mainC.isFooBarVisible()"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;</span></p>
+<p><span class="calibre5">{{c.getText(mainC.getLanguage())}}</span></p>
+<p><span class="calibre5">&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The external references should be removed one
+by one, and the code should be kept working all the time. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The expression “</span><span
+class="calibre30">mainC.isFooBarVisible()”</span><span
+class="calibre10"> has to be chosen first. It refers to calling a method
+which is located on the parent controller, and we have used the result
+to control whether or not the element is visible. For the external
+reference to be replaced, a binding to the component directive has to be
+introduced named “</span><span class="calibre30">visible.”</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">The code for the “</span><span
+class="calibre30">bar_diretive.js”</span><span class="calibre10"> should
+be as follows:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">visible: '='</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The above code shows that the component has
+an input named “</span><span class="calibre30">visible,”</span><span
+class="calibre10"> and the user should supply the component to it. You
+should also have noticed that we have introduced “</span><span
+class="calibre30">bindToController,</span><span class="calibre10">” but
+the attribute “</span><span class="calibre30">scope: true</span><span
+class="calibre10">” has been kept unchanged. However, it isn’t an
+isolated scope directive. The reason we do not want to isolate it is
+that there are other external references inside it, and we don’t need to
+break these references. In Angular 1.4, it is possible for one to
+combine the “</span><span class="calibre30">scope: true</span><span
+class="calibre10">” and the “</span><span
+class="calibre30">bindToController</span><span class="calibre10">” so as
+to introduce binding to scopes which are not isolated. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">For the “</span><span
+class="calibre30">visible”</span><span class="calibre10"> binding which
+is new, we have to plug in a value wherever the component “</span><span
+class="calibre30">foobar</span><span class="calibre10">” is to be used.
+We have the capability of accessing the “</span><span
+class="calibre30">mainC,</span><span class="calibre10">” and the
+template originally contained in the template can be used. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar</span></p>
+<p><span
+class="calibre5">visible="mainC.isFooBarVisible()"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The scope binding can now be referred to
+inside the component, and the dependency will be broken to the external
+world. This is shown below for the “</span><span
+class="calibre30">bar.html”</span><span class="calibre10">:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-show="c.visible"&gt;</span></p>
+<p><span class="calibre5">&lt;p&gt;</span></p>
+<p><span class="calibre5">{{c.getText(mainC.getLanguage())}}</span></p>
+<p><span class="calibre5">&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Another binding to the definition for the
+directive named “</span><span class="calibre30">language”</span><span
+class="calibre10"> can now be introduced. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">visible: '=',</span></p>
+<p><span class="calibre5">language: '='</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">A value for it should then be plugged in
+where the component is being used. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar</span></p>
+<p><span class="calibre5">visible="mainC.isFooBarVisible()"</span></p>
+<p><span class="calibre5">language="mainC.getLanguage()"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The binding should also be done inside the
+component template. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-show="c.visible"&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{c.getText(c.language)}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Our template will then be free of the
+external references. All of the data which is needed will be specified
+explicitly at the interface boundary. </span></p>
+<div id="part0000_split_024.html_calibre_pb_58" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_025.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">An Example of the “$watch”
+Expression</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">External references cannot only be found in
+the component template. In the component controller, one may also have
+the expressions </span><span class="calibre30">“$watch,”
+“$watchCollection,</span><span class="calibre10">” or “</span><span
+class="calibre30">$watchGroup.</span><span class="calibre10">” The link
+functions can also be used if available. Consider the example given
+below, which shows how this can be replaced with a bound
+input:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">var c = this;</span></p>
+<p><span class="calibre5">$scope.$watch('mainC.foo', function(nFoo)
+{</span></p>
+<p><span class="calibre5">if (nFoo.active) {</span></p>
+<p><span class="calibre5">ctrl.actFoo = nFoo;</span></p>
+<p><span class="calibre5">} else {</span></p>
+<p><span class="calibre5">c.actFoo = null;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Our watch expression has referenced the
+“</span><span class="calibre30">foo”</span><span class="calibre10">
+attribute of the “</span><span class="calibre30">mainC.”</span><span
+class="calibre10"> A bound input should be used instead of this.
+Consider the code which is given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">foo: '='</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Once the component is being used, the actual
+value should be plugged in. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar foo="mainC.foo"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Inside the watch expression for the
+controller, the bound input can then be used. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">var c = this;</span></p>
+<p><span class="calibre5">$scope.$watch('c.foo', function(nFoo)
+{</span></p>
+<p><span class="calibre5">if (nFoo.active) {</span></p>
+<p><span class="calibre5">ctrl.actFoo = nFoo;</span></p>
+<p><span class="calibre5">} else {</span></p>
+<p><span class="calibre5">ctrl.actFoo = null;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">An external reference may not be used in
+certain situations. We want to create a code for the controller which
+will reference a code which will just reference a scope attribute which
+is inherited just in plain JavaScript.  Here is the code for the
+example:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">var c = this;</span></p>
+<p><span class="calibre5">c.getActiveFoo = function() {</span></p>
+<p><span class="calibre5">if ($scope.mainC.foo.active) {</span></p>
+<p><span class="calibre5">return $scope.mainC.foo;</span></p>
+<p><span class="calibre5">} else {</span></p>
+<p><span class="calibre5">return null;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The above example is just similar to the
+previous one, with the only exception being that a bound input will be
+needed. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">foo: '='</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The foo value will be provided during the use
+of the component. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar foo="mainC.foo"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Our controller code will then be in a
+position to use the bound input. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">var c = this;</span></p>
+<p><span class="calibre5">ctrl.getActiveFoo = function() {</span></p>
+<p><span class="calibre5">if (c.foo.active) {</span></p>
+<p><span class="calibre5">return c.foo;</span></p>
+<p><span class="calibre5">} else {</span></p>
+<p><span class="calibre5">return null;</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<div id="part0000_split_025.html_calibre_pb_60" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_026.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre28">Event handler and Bound output</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre10">All of the external components used in
+components are not logical inputs. Others act as logical outputs.
+Consider the example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-show="c.visible"&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{c.getText(c.language)}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;button
+ng-click="mainC.deleteFoobar()"&gt;</span></p>
+<p><span class="calibre5">Delete</span></p>
+<p><span class="calibre5">&lt;/button&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In the above example, and inside our
+component template, we have the “</span><span
+class="calibre30">ng-click”</span><span class="calibre10"> directive.
+This has been used to invoke a method on a “</span><span
+class="calibre30">mainC”</span><span class="calibre10"> reference which
+has been inherited. That is what we have done.</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">For the dependency to be broken, an
+expression binding named “</span><span
+class="calibre30">onDelete”</span><span class="calibre10"> has to be
+introduced on the definition of the directive. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">visible: '=',</span></p>
+<p><span class="calibre5">language: '=',</span></p>
+<p><span class="calibre5">onDelete: '&amp;'</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">For the inputs and outputs to be
+distinguished in AngularJS, the syntax [] is used for the input and the
+syntax  () used for the output. However, in the earlier versions of
+AngularJS, such as 1.x, there was no mechanism as to how these can be
+distinguished. This is why most people prefer to use the prefix
+“</span><span class="calibre30">on”</span><span class="calibre10"> for
+outputs. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">Once the component has been used, an
+expression for the new binding will then be plugged in. The user of the
+component will then decide on what the delete means to him or her. In
+our case, we have used it so as to invoke the function “</span><span
+class="calibre30">deleteFoobar</span><span class="calibre10">” of our
+main controller. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar</span></p>
+<p><span class="calibre5">visible="mainC.isFooBarVisible()"</span></p>
+<p><span class="calibre5">language="mainC.getLanguage()"</span></p>
+<p><span class="calibre5">onDelete="mainC.deleteFoobar()"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The expression binding will then be invoked
+from inside the component template. This is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;div ng-show="c.visible"&gt;</span></p>
+<p><span
+class="calibre5">&lt;p&gt;{{c.getText(c.language)}}&lt;/p&gt;</span></p>
+<p><span class="calibre5">&lt;button
+ng-click="c.onDelete()"&gt;</span></p>
+<p><span class="calibre5">Delete</span></p>
+<p><span class="calibre5">&lt;/button&gt;</span></p>
+<p><span class="calibre5">&lt;/div&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Consider the sample code given
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">   var c = this;</span></p>
+<p><span class="calibre5">c.onFooClick = function() {</span></p>
+<p><span class="calibre5">   mainC.setActiveFoo(c.foo);</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">In the above example, we have used a
+controller function which will call a function in the parent scope. The
+external function call must not be an event handler in a particular
+template. It can be contained in a controller. This is what we did with
+the inputs. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">What we should do to the definition of the
+directive is that we should add an expression binding. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">scope: true,</span></p>
+<p><span class="calibre5">controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">     onActivateFoo: '&amp;'</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">Once the template has been used, there is an 
+invocation of “</span><span
+class="calibre30">mainCtrl.setActiveFoo</span><span class="calibre10">”
+which we set in the component controller. This is shown
+below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">&lt;foobar</span></p>
+<p><span
+class="calibre5">on-activate-foo="mainC.setActiveFoo(foo)"&gt;</span></p>
+<p><span class="calibre5">&lt;/foobar&gt;</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">The expression binding should then be invoked
+inside the controller other than the external inherited controller. An
+object argument should be provided to the Angular so as to know the
+value of the “</span><span class="calibre30">foo”</span><span
+class="calibre10"> which is to be used inside the bound expression. This
+is shown below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">function FoobarCtrl($scope) {</span></p>
+<p><span class="calibre5">var c = this;</span></p>
+<p><span class="calibre5">c.onFooClick = function() {</span></p>
+<p><span class="calibre5">    c.onActivateFoo({foo: c.foo});</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">}</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><br />
+<span class="calibre10">Consider the example given below:</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre5">module.directive('foobar', function()
+{</span></p>
+<p><span class="calibre5">return {</span></p>
+<p><span class="calibre5">    scope: true,</span></p>
+<p><span class="calibre5">    controller: 'FoobarCtrl',</span></p>
+<p><span class="calibre5">    controllerAs: 'c',</span></p>
+<p><span class="calibre5">bindToController: {</span></p>
+<p><span class="calibre5">    visible: '=',</span></p>
+<p><span class="calibre5">    language: '=',</span></p>
+<p><span class="calibre5">   onDelete: '&amp;'</span></p>
+<p><span class="calibre5">},</span></p>
+<p><span class="calibre5">templateUrl: 'bar.html'</span></p>
+<p><span class="calibre5">};</span></p>
+<p><span class="calibre5">});</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre10">We have defined all the inputs and the
+outputs in the above example. </span></p>
+<div id="part0000_split_026.html_calibre_pb_62" class="calibre15">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_027.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre18" id="part0000_split_027.html_calibre_pb_64"><span
+id="part0000_split_027.html__Toc445490769" class="calibre12"><span
+class="calibre19">Conclusion</span></span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<h1 class="calibre20"><span class="calibre19"> </span></h1>
+<p><span class="calibre10">It can be concluded that AngularJS is a very
+useful framework for the development of web applications. The usefulness
+of AngularJS is seen on what it does to HTML. Generally, it was
+developed for the purpose of extending what is contained in HTML. Note
+that HTML was not developed for the purpose of development of web-apps.
+</span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">However, AngularJS comes in to fill this gap.
+It works by extending the vocabulary which is contained in  HTML so as
+to get extra and amazing functionalities. With HTML, it is very easy for
+one to declare and display dynamic content. However, when it comes to
+dealing with dynamic content, then HTML is not the best. This is where
+AngularJS comes in, and it serves to fill this gap. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">As we have said, AngularJS is used to extend
+the functionalities of  HTML. A good example is when we create an HTML
+page and then change it by use of the AngularJS. This page can then be
+changed to display the content dynamically by the use of AngularJS. That
+is how the two work together. Applications always use data. This is very
+important for any application. </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10"> </span></p>
+<p><span class="calibre10">However, other than dealing with only small
+amounts of data, you should learn to work with large data sets in
+AngularJS. This is possible in AngularJS, and your resultant application
+will be very useful. AngularJS can also be used for the purpose of
+adding animations to your application. These make your web application
+very attractive to its users. There is a module named “</span><span
+class="calibre30">ngAnimate”</span><span class="calibre10"> in AngularJS
+which can be used for the purpose of performing these animations. Those
+are some of the features which have been discussed in this book.
+</span></p>
+<p><span class="calibre10"> </span></p>
+</div>
