@@ -1,0 +1,499 @@
+- "# 轻松学习 JavaScript 设计模式：更好的编码与设计模式构建指南\n\n简单是智慧的开始。本书简要阐述概念，生动培养编程兴趣，深入分析 JavaScript\
+  \ 设计模式，让您轻松、快速且扎实地掌握。\n\n[`en.verejava.com`](http://en.verejava.com)\n\n## 策略模式原理\n\
+  \n策略模式：将算法封装在类中。定义一系列算法，将每个算法封装起来，并使它们可以互换。策略模式让算法独立于使用它的客户端而变化。\n\n### 1. 计算策略：加、减、乘、除\n\
+  \n![](img/Image00003.jpg)\n\n1. 使用记事本创建 `TestStrategy1.html`，并在浏览器中打开\n\n```javascript\n\
+  <script type =\"text/javascript\" >function Addition(){this.caculate = function\
+  \ ( a, b){return a + b;}}function Subtraction(){this.caculate = function ( a, b){return\
+  \ a - b;}}function Multiplication (){this.caculate = function ( a, b){return a *\
+  \ b;}}function Division(){this.caculate = function ( a, b){return a / b;}}function\
+  \ Context( strategy){this.strategy = strategy;this.caculate = function ( a, b){return\
+  \ this.strategy.caculate( a, b);}}var context = new Context( new Addition());var\
+  \ result = context.caculate( 4 , 2 );document.write( result + \"<br>\" );var context\
+  \ = new Context( new Subtraction());var result = context.caculate( 4 , 2 );document.write(\
+  \ result + \"<br>\" );var context = new Context( new Multiplication());var result\
+  \ = context.caculate( 4 , 2 );document.write( result + \"<br>\" );var context =\
+  \ new Context( new Division());var result = context.caculate( 4 , 2 );document.write(\
+  \ result + \"<br>\" );</script>\n```\n\n结果：\n\n![](img/Image00004.jpg)\n\n2. 另一种方式：使用记事本创建\
+  \ `TestStrategy2.html`，并在浏览器中打开\n\n```javascript\n<script type =\"text/javascript\"\
+  \ >var strategy = {\"Addition\" : function ( a, b){return a + b;},\"Subtraction\"\
+  \ : function ( a, b){return a - b;},\"Multiplication\" : function ( a, b){return\
+  \ a * b;},\"Division\" : function ( a, b){return a / b;}};var context = function\
+  \ ( key, a, b ){return strategy key;};var result = context( \"Addition\" , 4 , 2\
+  \ );document.write( result + \"<br>\" );var result = context( \"Subtraction\" ,\
+  \ 4 , 2 );document.write( result + \"<br>\" );var result = context( \"Multiplication\"\
+  \ , 4 , 2 );document.write( result + \"<br>\" );var result = context( \"Division\"\
+  \ , 4 , 2 );document.write( result + \"<br>\" );</script>\n```\n\n## 策略模式案例\n\n\
+  ### 1. 实际案例：电商选择不同银行支付的不同策略实现\n\n![](img/Image00005.jpg)\n\n### 2. UML 图\n\n![](img/Image00006.jpg)\n\
+  \n1. 使用记事本创建 `TestStrategyCase1.html`，并在浏览器中打开\n\n结果：\n\n![](img/Image00007.jpg)\n\
+  ![](img/Image00008.jpg)\n![](img/Image00009.jpg)\n\n2. 使用记事本创建 `TestStrategyCase2.html`，并在浏览器中打开\n\
+  \n```html\n<input type =\"radio\" name =\"card\" value =\"MasterCard\" onclick =\"\
+  doTestPay(this)\" /> <img src =\"images/mastercard.jpg\" /><input type =\"radio\"\
+  \ name =\"card\" value =\"VisaCard\" onclick =\"doTestPay(this)\" /><img src =\"\
+  images/visacard.jpg\" /><input type =\"radio\" name =\"card\" value =\"Paypal\"\
+  \ onclick =\"doTestPay(this)\" /><img src =\"images/paypal.jpg\" /><br><span id\
+  \ =\"result\" ></span><script type =\"text/javascript\" >var payStrategy = {\"MasterCard\"\
+  \ : function ( price){document.getElementById( \"result\" ). innerHTML = \"Pay \"\
+  \ + price + \" $ by MasterCard\" ;},\"VisaCard\" : function ( price){document.getElementById(\
+  \ \"result\" ). innerHTML = \"Pay \" + price + \" $ by VisaCard\" ;},\"Paypal\"\
+  \ : function ( price){document.getElementById( \"result\" ). innerHTML = \"Pay \"\
+  \ + price + \" $ by Paypal\" ;}};var payManager = function ( key, price){return\
+  \ payStrategy key;};function doTestPay( obj){payManager( obj.value, 100 );}</script>\n\
+  ```\n\n结果：\n\n![](img/Image00007.jpg)\n![](img/Image00008.jpg)\n![](img/Image00009.jpg)\n\
+  \n## 组合模式原理\n\n组合模式：简单对象和复合对象的树形结构。将对象组合成树形结构以表示“部分-整体”的层次结构。组合模式使得客户端对单个对象和组合对象的使用具有一致性。\n\
+  \n### 1. 国家城市树形图\n\n![](img/Image00010.jpg)\n\n### 2. UML 图\n\n![](img/Image00011.jpg)\n\
+  \n1. 使用记事本创建 `TestComposition.html`，并在浏览器中打开\n\n\n\n\n\n## 组合模式案例\n\n1. 下拉菜单。\n\n\
+  \   ![](img/Image00013.jpg)\n\n2. UML 图\n\n   ![](img/Image00014.jpg)\n\n3. 使用记事本创建\
+  \ `TestCompositionCase.html` 并在浏览器中打开。\n\n   结果：![](img/Image00015.jpg) ![](img/Image00016.jpg)\n\
+  \n## 单例模式原理\n\n**单例模式**：一个类只能存在一个实例。确保一个类只有一个实例，并提供一个全局访问点。\n\n1. UML 图\n\n   ![](img/Image00017.jpg)\n\
+  \n2. 使用记事本创建 `TestSingleton.html` 并在浏览器中打开。\n\n   ```javascript\n   <script type=\"\
+  text/javascript\">\n   var Singleton = {\n       instance: null,\n       getInstance:\
+  \ function() {\n           if (Singleton.instance == null) {\n               //\
+  \ there is only one instance\n               Singleton.instance = {};\n        \
+  \   }\n           return Singleton.instance;\n       }\n   };\n   /////////////////////test/////////////////////////\n\
+  \   var singleton1 = Singleton.getInstance();\n   var singleton2 = Singleton.getInstance();\n\
+  \   document.write(singleton1 === singleton2);   // true one instance\n   </script>\n\
+  \   ```\n\n## 单例模式案例\n\n**单例模式**：确保一个类只有一个实例，共享全局访问。\n\n1. 点击登录按钮始终显示同一个对话框，避免重复创建。\n\
+  \n   ![](img/Image00018.jpg)\n\n   UML 图\n\n   ![](img/Image00019.jpg)\n\n2. 使用记事本创建\
+  \ `TestSingletonCase.html` 并在浏览器中打开。\n\n   ```html\n   <style>\n   #login{\n   \
+  \    width:300px; height: 100px;\n       border:1px solid #cccccc; background-color:\
+  \ #fff0f3;\n       text-align:center;\n       padding: 20px;\n   }\n   </style>\n\
+  \   <input type=\"button\" value=\"Login\" onclick=\"doLogin()\" />\n   <script\
+  \ type=\"text/javascript\">\n   var Dialog = {\n       instance: null,\n       showDialog:\
+  \ function() {\n           if (Dialog.instance == null) {\n               var dialogDiv\
+  \ = document.createElement(\"div\");\n               dialogDiv.setAttribute(\"id\"\
+  , \"login\");\n               dialogDiv.innerHTML = \"Username: <input type='text'\
+  \ id='username' />\";\n               dialogDiv.innerHTML += \"<br><br>\";\n   \
+  \            dialogDiv.innerHTML += \"Password: <input type='password' id='password'\
+  \ />\";\n               dialogDiv.innerHTML += \"<br><br>\";\n               dialogDiv.innerHTML\
+  \ += \"<input type='button' value='Submit' />\";\n               document.body.appendChild(dialogDiv);\n\
+  \               Dialog.instance = {};\n           }\n           return Dialog.instance;\n\
+  \       }\n   };\n   function doLogin() {\n       Dialog.showDialog(); // Singleton\
+  \ instance always create one dialog\n   }\n   </script>\n   ```\n\n   结果：![](img/Image00020.jpg)\
+  \ 始终点击登录按钮显示同一个对话框 ![](img/Image00021.jpg)\n\n## 模板模式原理\n\n**模板模式**：将算法的具体步骤延迟到子类中实现。定义一个操作中的算法骨架，将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下重新定义算法的某些步骤。\n\
+  \n1. 父类打印 A4 纸，子类还可以设置颜色。\n\n   ![](img/Image00022.jpg)\n\n2. 使用记事本创建 `TestTemplate.html`\
+  \ 并在浏览器中打开。\n\n   ```javascript\n   <script type=\"text/javascript\">\n   function\
+  \ PaperTemplate() {\n       this.parentPrint = function() {\n           document.write(\"\
+  Print A4 Paper<br>\");\n       }\n   }\n   function ColorTemplate() {}\n   /////////////////////test///////////////////////////////////////////////////////\n\
+  \   ColorTemplate.prototype = new PaperTemplate();\n   ColorTemplate.prototype.colorPrint\
+  \ = function() {\n       this.parentPrint();\n       document.write(\"Set the color\
+  \ of A4 paper red<br>\");\n   }\n   var template = new ColorTemplate();\n   template.colorPrint();\n\
+  \   </script>\n   ```\n\n   结果：![](img/Image00023.jpg)\n\n## 模板模式案例\n\n**飞机游戏**：不同的飞机具有相同的飞机特征，但每架飞机的行为不同。\n\
+  \n   ![](img/Image00024.jpg)\n\n1. UML 图\n\n   ![](img/Image00025.jpg)\n\n2. 使用记事本创建\
+  \ `TestTemplateCase.html` 并在浏览器中打开。\n\n   结果：![](img/Image00026.jpg)\n\n## 工厂模式原理\n\
+  \n**飞机游戏**：通过工厂创建不同的飞机，然后发射不同的子弹。\n\n   ![](img/Image00027.jpg)\n\n1. UML 图\n\n\
+  \   ![](img/Image00028.jpg)\n\n2. 使用记事本创建 `TestFactory.html` 并在浏览器中打开。\n\n   ```html\n\
+  \   <input type=\"radio\" name=\"fly\" value=1 onclick=\"doCreate(this)\" /> Banshee\n\
+  \   <input type=\"radio\" name=\"fly\" value=2 onclick=\"doCreate(this)\" /> B747fly\n\
+  \   <input type=\"radio\" name=\"fly\" value=3 onclick=\"doCreate(this)\" /> A380fly\n\
+  \   <br><br>\n   <span id=\"result\"></span>\n   <script type=\"text/javascript\"\
+  >\n   function Fly() {\n       this.shoot = function() {}\n   }\n   function Banshee()\
+  \ {\n       this.shoot = function() {\n           document.getElementById(\"result\"\
+  ).innerHTML = \"Banshee fire the laser\";\n       }\n   }\n   Banshee.prototype\
+  \ = new Fly();\n   function B747fly() {\n       this.shoot = function() {\n    \
+  \       document.getElementById(\"result\").innerHTML = \"B747 fire the missile\"\
+  ;\n       }\n   }\n   B747fly.prototype = new Fly();\n   function A380fly() {\n\
+  \       this.shoot = function() {\n           document.getElementById(\"result\"\
+  ).innerHTML = \"A380 fire the trigeminal shot\";\n       }\n   }\n   A380fly.prototype\
+  \ = new Fly();\n   var FlyFactory = {\n       create: function(type) {\n       \
+  \    var fly = null;\n           if (type == 1) {\n               fly = new Banshee();\n\
+  \           } else if (type == 2) {\n               fly = new B747fly();\n     \
+  \      } else if (type == 3) {\n               fly = new A380fly();\n          \
+  \ }\n           return fly;\n       }\n   };\n   /////////////////////test///////////////////////////////////////////////////////\n\
+  \   function doCreate(obj) {\n       fly = FlyFactory.create(obj.value);\n     \
+  \  fly.shoot();\n   }\n   </script>\n   ```\n\n   结果：![](img/Image00029.jpg) ![](img/Image00030.jpg)\n\
+  \n## 工厂模式案例\n\n**绘制图形**：在画布上绘制不同的图形，如矩形、正方形等。\n\n   ![](img/Image00031.jpg)\n\n\
+  1. UML 图\n\n   ![](img/Image00032.jpg)\n\n2. 使用记事本创建 `TestFactoryCase.html` 并在浏览器中打开。\n\
+  \n   结果：![](img/Image00033.jpg)\n\n## 建造者模式原理\n\n**建造者模式**：将对象的构建与其表示分离。将一个复杂对象的构建与其表示分离，使得同样的构建过程可以创建不同的表示。\n\
+  \n1. 汽车分为三个部分：车头、车身、车轮分别构建。\n\n   ![](img/Image00034.jpg)\n\n2. 使用记事本创建 `TestBuilder.html`\
+  \ 并在浏览器中打开。\n\n\n\n\n\n## 建造者模式\n\n### 代码示例\n\n```\n<script type =\"text/javascript\"\
+  \ >function Car(){this.head = \"\" ;this.body = \"\" ;this.wheel = \"\" ;this.getHead\
+  \ = function (){return this.head;}this.setHead = function ( head){this.head = head;}this.getBody\
+  \ = function (){return this.body;}this.setBody = function ( body){this.body = body;}this.getWheel\
+  \ = function (){return this.wheel;}this.setWheel = function ( wheel){this.wheel\
+  \ = wheel;}}function Builder(){this.buildHead = function (){}this.buildBody = function\
+  \ (){}this.buildWheel = function (){}this.buildPart = function (){}}function ConcreteBuilder\
+  \ (){this.car = new Car();this.buildHead = function (){this.car.setHead( \"Car head\
+  \ construction completed\" );}this.buildBody = function (){this.car.setBody( \"\
+  Car body construction completed\" );}this.buildWheel = function (){this.car.setWheel(\
+  \ \"Car Wheel construction completed\" );}this.buildPart = function (){return this.car;}}var\
+  \ Director = {construct: function ( builder){builder.buildHead();builder.buildBody();builder.buildWheel();return\
+  \ builder.buildPart();}};/////////////////////test///////////////////////////////////////////////////////var\
+  \ car = Director.construct( new ConcreteBuilder());document.write( car.getHead()\
+  \ + \"<br>\" );document.write( car.getBody() + \"<br>\" );document.write( car.getWheel()\
+  \ + \"<br>\" );</script>\n```\n\n### 结果\n\n![1558060552(1)](img/Image00035.jpg)\n\
+  \n### 案例\n\n建造者模式案例弹出对话框：首先内部创建提示、消息和按钮，最后构建对话框使其弹出。\n\n![1558065220(1)](img/Image00036.jpg)\n\
+  \n### UML 图\n\n![](img/Image00037.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestBuilderCase.html\
+  \ 文件，并在浏览器中打开\n\n结果：![1558066242(1)](img/Image00038.jpg)\n\n## 适配器模式\n\n### 原理\n\
+  \n适配器模式：匹配不同类的接口。将一个类的接口转换成客户期望的另一个接口。适配器使得原本由于接口不兼容而无法一起工作的类能够协同工作。\n\n1. 原始电源为\
+  \ 100 伏特，需要适配为 36 伏特才能工作。\n\n![](img/Image00039.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestAdapter.html\
+  \ 文件，并在浏览器中打开\n\n### 代码示例\n\n```\n<script type =\"text/javascript\" >function Plug(){this.recharge\
+  \ = function (){}}function HighVoltagePlug(){Plug.call( this );this.recharge = function\
+  \ (){return 100 ; // Power is 100 Voltage}}function AdapterPlug (){Plug.call( this\
+  \ );this.recharge = function (){var highPlug = new HighVoltagePlug();var highVoltage\
+  \ = highPlug.recharge();var lowVoltage = highVoltage - 64 ;return lowVoltage;}}/////////////////////test///////////////////////////////////////////////////////var\
+  \ plug = new HighVoltagePlug();document.write( plug.recharge() + \" too much voltage\
+  \ <br>\" );plug = new AdapterPlug();document.write( \"Adapter into \" + plug.recharge()\
+  \ + \" voltage\" )</script>\n```\n\n### 结果\n\n![1558068178(1)](img/Image00040.jpg)\n\
+  \n### 案例\n\n适配器模式案例弹出列表菜单和图片列表菜单：数据填充，相同的数据，不同的适配显示不同的视图\n\n![](img/Image00041.jpg)\n\
+  \n### UML 图\n\n![](img/Image00042.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestAdapterCase.html\
+  \ 文件，并在浏览器中打开\n\n结果：![1558072556(1)](img/Image00043.jpg)\n\n## 外观模式\n\n### 原理\n\n\
+  外观模式：一个代表整个子系统的单一类。为系统中的一组接口提供统一的接口。外观定义了一个更高级别的接口，使得子系统更易于使用。\n\n1. 状态提供一致的接口来执行：灯光、音乐和视频。\n\
+  \n![](img/Image00044.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestFacade.html 文件，并在浏览器中打开\n\
+  \n### 代码示例\n\n```\n<script type =\"text/javascript\" >function Light(){this.flash\
+  \ = function (){document.write( \"Flashing color light<br>\" );}}function Music(){this.play\
+  \ = function (){document.write( \"Playing classical music<br>\" );}}function Video\
+  \ (){this.show = function (){document.write( \"Mountain stream video display<br>\"\
+  \ );}}function Facade(){this.light = new Light();this.music = new Music();this.video\
+  \ = new Video();this.sing = function (){document.write( \"Start singing with<br>\"\
+  \ );this.light.flash();this.music.play();}this.dance = function (){document.write(\
+  \ \"Start dancing with<br>\" );this.light.flash();this.music.play();this.video.show();}this.act\
+  \ = function (){document.write( \"Start acting with<br>\" );this.light.flash();this.video.show();}}/////////////////////test///////////////////////////////////////////////////////var\
+  \ facade = new Facade();facade.sing();document.write( \"<br>------------------------------<br>\"\
+  \ );facade.dance();document.write( \"<br>------------------------------<br>\" );facade.act();</script>\n\
+  ```\n\n### 结果\n\n![1558084663(1)](img/Image00045.jpg)\n\n### 案例\n\n外观模式案例\n\n1.\
+  \ 文本框数字、字符串验证\n\n![](img/Image00046.jpg)\n\nUML 图\n\n![](img/Image00047.jpg)\n\n\
+  ### 测试\n\n1. 使用记事本创建一个 TestFacadeRegister.html 文件，并在浏览器中打开\n\n结果：![1558093695(1)](img/Image00048.jpg)\
+  \ ![1558093747(1)](img/Image00049.jpg) ![1558093760(1)](img/Image00050.jpg)\n\n\
+  ## 装饰器模式\n\n### 原理\n\n装饰器模式：动态地向对象添加职责。动态地给对象附加额外的职责。装饰器为扩展功能提供了一种比子类化更灵活的替代方案。\n\
+  \n![](img/Image00051.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestDecorator.html 文件，并在浏览器中打开\n\
+  \n### 代码示例\n\n```\n<script type =\"text/javascript\" >function Person(){this.show\
+  \ = function (){}}function Man(){this.show = function (){document.write( \"I am\
+  \ a man <br>\" );}}Man.prototyoe = new Person();function Decorator( person){this.person\
+  \ = person;}function ManagerDecorator( person){Decorator.call( this , person);this.show\
+  \ = function (){this.person.show();document.write( \"I am still a manager <br>\"\
+  \ );}}function ActorDecorator( person){Decorator.call( this , person);this.show\
+  \ = function (){this.person.show();document.write( \"I am still an international\
+  \ actor. <br>\" );}}/////////////////////test///////////////////////////////////////////////////////var\
+  \ person = new Man();person.show();document.write( \" <br>------------------------------------\
+  \ <br>\" )person = new ManagerDecorator( person);person.show();document.write( \"\
+  \ <br>------------------------------------ <br>\" )person = new ActorDecorator(\
+  \ person);person.show();</script>\n```\n\n### 结果\n\n![1558111489(1)](img/Image00052.jpg)\n\
+  \n### 案例\n\n装饰器模式案例飞行游戏：在飞机游戏中，飞机可以向上发射红色子弹，或者可以装饰飞机子弹并同时向下发射白色子弹。\n\n![](img/Image00053.jpg)\n\
+  \n### UML 图\n\n![](img/Image00054.jpg)\n\n### 测试\n\n1. 使用记事本创建一个 TestDecoratorCase.html\
+  \ 文件，并在浏览器中打开\n\n结果：![1558149161(1)](img/Image00055.jpg)\n\n## 浅克隆模式\n\n### 原理\n\
+  \n浅克隆只复制基本数据类型\n\n![1558247710(1)](img/Image00056.jpg)\n\n### 测试\n\n1. 使用记事本创建一个\
+  \ TestShallowClone.html 文件，并在浏览器中打开\n\n结果：![1558247782(1)](img/Image00057.jpg)\n\
+  \nshallowClonePerson 和 person 实例指向不同的 name、age，但指向相同的 hobby、cat 引用\n\n## 深克隆模式\n\
+  \n### 原理\n\n深克隆模式：可以复制基本数据类型和引用对象。\n\n![1558248040(1)](img/Image00058.jpg)\n\n###\
+  \ 测试\n\n1. 使用记事本创建一个 TestDeepClone.html 文件，并在浏览器中打开\n\n\n\n\n\n## 克隆模式\n\n### 克隆模式案例\n\
+  \n```javascript\n<script type =\"text/javascript\" >\nfunction Cat( name){\n   \
+  \ this.name = name;\n    this.getName = function (){\n        return this.name;\n\
+  \    }\n    this.setName = function ( name){\n        this.name = name;\n    }\n\
+  }\nfunction Person( name, age, hobby, cat ){\n    this.name = name;\n    this.age\
+  \ = age;\n    this.hobby = hobby;\n    this.cat = cat;\n    this.getName = function\
+  \ (){\n        return this.name;\n    }\n    this.setName = function ( name){\n\
+  \        this.name = name;\n    }\n    this.getAge = function (){\n        return\
+  \ this.age;\n    }\n    this.setAge = function ( age){\n        this.age = age;\n\
+  \    }\n    this.getHobby = function (){\n        return this.hobby;\n    }\n  \
+  \  this.setHobby = function ( hobby){\n        this.hobby = hobby;\n    }\n    this.getCat\
+  \ = function (){\n        return this.cat;\n    }\n    this.setCat = function (\
+  \ cat){\n        this.cat = cat;\n    }\n}\n//deep clone\nfunction deepClone( obj,\
+  \ newObj){\n    var newObj = newObj||{};\n    for ( var i in obj){\n        if (\
+  \ typeof obj[ i]=== 'object' ){\n            newObj[ i] = ( obj[ i]. constructor\
+  \ === Array) ? [] : {};\n            deepClone( obj[ i], newObj[ i]);\n        }\
+  \ else {\n            newObj[ i] = obj[ i];\n        }\n    }\n    return newObj;\n\
+  }\n/////////////////////test///////////////////////////////////////////////////////\n\
+  var person1 = new Person();\nperson1.setName( \"David\" );\nperson1.setAge( 20 );\n\
+  person1.setHobby( new Array( \"BasketBall\" , \"Swimming\" ));\nperson1.setCat(\
+  \ new Cat( \"BlackCat\" ));\ndocument.write( \"------ Original Person : --------\
+  \ <br>\" );\ndocument.write( person1.getName() + \"<br>\" );\ndocument.write( person1.getAge()\
+  \ + \"<br>\" );\ndocument.write( person1.getHobby() + \"<br>\" );\ndocument.write(\
+  \ person1.getCat(). getName() + \"<br>\" );\nvar deepClonePerson = deepClone( person1);\n\
+  document.write( \"-------- Deep Clone Person : -------- <br>\" );\ndocument.write(\
+  \ deepClonePerson.getName() + \"<br>\" );\ndocument.write( deepClonePerson.getAge()\
+  \ + \"<br>\" );\ndocument.write( deepClonePerson.getHobby() + \"<br>\" );\ndocument.write(\
+  \ deepClonePerson.getCat(). getName() + \"<br>\" );\nperson1.setName( \"Grace\"\
+  \ );\nperson1.setAge( 30 );\nperson1.getHobby(). push( \"Reading\" );\nperson1.getCat().\
+  \ setName( \"WhiteCat\" );\ndocument.write( \"--------- Original Changed Person\
+  \ : ------- <br>\" );\ndocument.write( person1.getName() + \"<br>\" );\ndocument.write(\
+  \ person1.getAge() + \"<br>\" );\ndocument.write( person1.getHobby() + \"<br>\"\
+  \ );\ndocument.write( person1.getCat(). getName() + \"<br>\" );\ndocument.write(\
+  \ \"------ Deep Clone Person : -------- <br>\" );\ndocument.write( deepClonePerson.getName()\
+  \ + \"<br>\" );\ndocument.write( deepClonePerson.getAge() + \"<br>\" );\ndocument.write(\
+  \ deepClonePerson.getHobby() + \"<br>\" );\ndocument.write( deepClonePerson.getCat().\
+  \ getName() + \"<br>\" );\n</script>\n```\n\n结果：![1558248408(1)](img/Image00059.jpg)\n\
+  \n`deepClonePerson` 和 `person` 实例指向不同的 name、age、hobby、cat。\n\n### 克隆添加联系人\n\n![1558317756(1)](img/Image00061.jpg)\
+  \ 点击添加联系人按钮 ![1558317766(1)](img/Image00062.jpg)\n\n1. 用记事本创建一个 `TestCloneCase.html`\
+  \ 文件，并在浏览器中打开\n\n```html\n<style>\n#contact{\n    border:1px solid #dddddd;\n  \
+  \  background-color:eeeeee;\n    width:550px;\n    font-size:16px;\n}\n#contact\
+  \ input{\n    width: 120px;\n}\n</style>\n<input type =\"button\" value =\"Add Contact\"\
+  \ onclick =\"doAddContact()\" />\n<div id =\"contact_list\" >\n    <div id =\"contact\"\
+  \ >\n        Name: <input type =\"text\" /> Telephone: <input type =\"text\" />\
+  \ Email: <input type =\"text\" />\n    </div>\n</div>\n<script type =\"text/javascript\"\
+  \ >\nfunction doAddContact (){\n    var contactObj = document.getElementById( \"\
+  contact\" );\n    newContactObj = contactObj.cloneNode( true );\n    document.getElementById(\
+  \ \"contact_list\" ). appendChild( newContactObj);\n}\n</script>\n```\n\n结果：![1558317756(1)](img/Image00061.jpg)\
+  \ 点击添加联系人按钮 ![1558317766(1)](img/Image00062.jpg)\n\n## 桥接模式\n\n### 桥接模式原理\n\n桥接模式：将对象的接口与其实现分离。将抽象部分与实现部分解耦，使它们可以独立变化。\n\
+  \n1. 不同的人可以穿不同的衣服\n\n![1558322141(1)](img/Image00064.jpg)\n\n1. 用记事本创建一个 `TestBridge.html`\
+  \ 文件，并在浏览器中打开\n\n```javascript\n<script type =\"text/javascript\" >\nfunction Person(\
+  \ name){\n    this.name = name;\n    this.clothing = null ;\n    this.getName =\
+  \ function (){\n        return this.name;\n    }\n    this.setName = function (\
+  \ name){\n        this.name = name;\n    }\n    this.getClothing = function (){\n\
+  \        return this.clothing;\n    }\n    this.setClothing = function ( clothing){\n\
+  \        this.clothing = clothing;\n    }\n    this.dress = function (){}\n}\nfunction\
+  \ Man( name){\n    Person.call( this , name);\n    this.dress = function (){\n \
+  \       document.write( this.getName() + \" wear \" + this.clothing.getName() +\
+  \ \"<br>\" );\n    }\n}\nfunction Lady( name){\n    Person.call( this , name);\n\
+  \    this.dress = function (){\n        document.write( this.getName() + \" wear\
+  \ \" + this.clothing.getName() + \"<br>\" );\n    }\n}\nfunction Clothing( name){\n\
+  \    this.name = name;\n    this.person = null ;\n    this.getName = function (){\n\
+  \        return this.name;\n    }\n    this.setName = function ( name){\n      \
+  \  this.name = name;\n    }\n    this.getPerson = function (){\n        return this.person;\n\
+  \    }\n    this.setPerson = function ( person){\n        this.person = person;\n\
+  \    }\n}\nfunction Jacket( name){\n    Clothing.call( this , name);\n}\nfunction\
+  \ Trouser( name){\n    Clothing.call( this , name);\n}\n/////////////////////test///////////////////////////////////////////////////////\n\
+  var man = new Man( \"Man\" );\nvar lady = new Lady( \"Lady\" );\nvar jacket = new\
+  \ Jacket( \"Jacket\" );\nvar trouser = new Trouser( \"Trouser\" );\nman.setClothing(\
+  \ jacket); // Man wear Jacket\nman.dress();\nman.setClothing( trouser); // Man wear\
+  \ Trouser\nman.dress();\nlady.setClothing( jacket); // Lady wear Jacket\nlady.dress();\n\
+  lady.setClothing( trouser); // Lady wear Trouser\nlady.dress();\n</script>\n```\n\
+  \n结果：![1558322141(1)](img/Image00064.jpg)\n\n### 桥接模式案例\n\n桥接模式：将抽象部分与实现部分分离，使它们都可以独立变化。\n\
+  \n1. 不同的飞机发射不同的子弹\n\n![1558349600(1)](img/Image00065.jpg)\n\n2. UML 图\n\n![1558349600(1)](img/Image00066.jpg)\n\
+  \n1. 用记事本创建一个 `TestBridgeCase.html` 文件，并在浏览器中打开\n\n结果：![1558349600(1)](img/Image00067.jpg)\
+  \ ![1558349600(1)](img/Image00068.jpg)\n\n## 享元模式\n\n### 享元模式原理\n\n享元模式：一种用于高效共享的细粒度实例。使用共享来高效地支持大量细粒度对象。享元是一个共享对象，可以同时在多个上下文中使用。享元在每个上下文中都充当独立对象——它与非共享对象的实例无法区分。\n\
+  \n某些数据可以存储在缓存中。客户端可以直接从缓存获取数据，提高查询速度。\n\n![1558449087(1)](img/Image00070.jpg)\n\n\
+  1. 用记事本创建一个 `TestFlyWeight.html` 文件，并在浏览器中打开\n\n```javascript\n<script type =\"\
+  text/javascript\" >\nfunction Person( name){\n    this.name = name;\n    this.getName\
+  \ = function (){\n        return this.name;\n    }\n    this.setName = function\
+  \ ( name){\n        this.name = name;\n    }\n}\nvar Cache = {\n    map : {},\n\
+  \    get: function ( key ){\n        return Cache.map[ key];\n    },\n    put: function\
+  \ ( key, value){\n        Cache.map[ key] = value;\n    }\n};\n/////////////////////test/////////////////////////////////////////////////////////\n\
+  // Basic data types are stored in the cache\nCache.put( \"1\" , 1000 );\n// String\
+  \ are stored in the cache\nCache.put( \"name\" , \"Grace\" );\n// Object are stored\
+  \ in the cache\nCache.put( \"person\" , new Person( \"Sala\" ));\n// Get data from\
+  \ the cache\ndocument.write( \"int : \" + Cache.get( \"1\" ) + \"<br>\" );\ndocument.write(\
+  \ \"String : \" + Cache.get( \"name\" ) + \"<br>\" );\nperson = Cache.get( \"person\"\
+  \ );\ndocument.write( \"Person Object : \" + person.getName() + \"<br>\" );\n</script>\n\
+  ```\n\n结果：![1558449087(1)](img/Image00070.jpg)\n\n### 享元模式案例\n\n将购物车数据缓存到 localStorage：\n\
+  \n![1558454078(1)](img/Image00071.jpg)\n\n1. 用记事本创建一个 `TestFlyWeightCase.html` 文件，并在浏览器中打开\n\
+  \n\n\n\n\n```\n<style>#product_table{border:1px solid #dddddd;background-color:eeeeee;width:550px;font-size:16px;}#product\
+  \ input{width: 120px;}</style><table id =\"product_table\" ><tr><td> Product </td><td>\
+  \ Price </td><td> Quantity </td></tr></table><script type =\"text/javascript\" >var\
+  \ cartJson = null ;if ( localStorage.getItem( \"cart\" ) == null ){//for example\
+  \ this json data from servercartJson = [{ \"product\" : \"Easy Learning Javascript\"\
+  \ , \"price\" : 3.99 , \"quantity\" : 1 },{ \"product\" : \"Easy Learning Java\"\
+  \ , \"price\" : 3.99 , \"quantity\" : 1 },{ \"product\" : \"Easy Learning Python\
+  \ 3\" , \"price\" : 3.99 , \"quantity\" : 1 }]localStorage.setItem( \"cart\" , JSON.stringify(\
+  \ cartJson)); // localStorage is cache} else {cartJson = JSON.parse( localStorage.getItem(\
+  \ \"cart\" ));}/////////////////////test///////////////////////////////////////////////////////var\
+  \ product_table = document.getElementById( \"product_table\" );for ( var i= 0 ;\
+  \ i< cartJson.length; i++){var item = cartJson[ i];var product_tr = product_table.insertRow();var\
+  \ product = product_tr.insertCell();var price = product_tr.insertCell();var quantity\
+  \ = product_tr.insertCell();product.innerHTML = item.product;price.innerHTML = item.price;quantity.innerHTML\
+  \ = item.quantity;}</script>\n```\n\n结果：![1558454217(1)](img/Image00072.jpg)\n\n\
+  ## 责任链模式原理\n\n责任链模式：一种在对象链之间传递请求的方式。通过给多个对象处理请求的机会，避免请求发送者与接收者之间的耦合。将接收对象链接起来，并沿着链传递请求，直到某个对象处理它。\n\
+  \n1. 离职申请 -> 财务审核 -> 经理审核 -> 批准\n\n![](img/Image00073.jpg)\n\n1. 用记事本创建一个 `TestChain.html`\
+  \ 并在浏览器中打开\n\n```\n<script type =\"text/javascript\" >function Handler(){this.handleRequest\
+  \ = function ( request){}}function FrontHandler( nextHandler){Handler.call( this\
+  \ );this.nextHandler = nextHandler;this.handleRequest = function ( request){if (\
+  \ \"ResignationApply\" == request){document.write( \"Resignation Apply -> \" )if\
+  \ ( this.nextHandler != null ){this.nextHandler.handleRequest( \"FinancialReview\"\
+  \ );}}}}function FinanceHandler( nextHandler){Handler.call( this );this.nextHandler\
+  \ = nextHandler;this.handleRequest = function ( request){if ( \"FinancialReview\"\
+  \ == request){document.write( \"Financial Review Completed -> \" )if ( this.nextHandler\
+  \ != null ){this.nextHandler.handleRequest( \"ManagerReview\" );}}}}function ManagerHandler(\
+  \ nextHandler){Handler.call( this );this.nextHandler = nextHandler;this.handleRequest\
+  \ = function ( request){if ( \"ManagerReview\" == request){document.write( \"Manager\
+  \ Review Completed -> \" )if ( this.nextHandler != null ){this.nextHandler.handleRequest(\
+  \ \"Approval\" );}}}}function HrHandler( nextHandler){Handler.call( this );this.nextHandler\
+  \ = nextHandler;this.handleRequest = function ( request){if ( \"Approval\" == request){document.write(\
+  \ \"HR Approval -> \" )if ( this.nextHandler != null ){this.nextHandler.handleRequest(\
+  \ \"Approval Completed\" );}}}}var hrHandler = new HrHandler( null );var managerHandler\
+  \ = new ManagerHandler( hrHandler);var financeHandler = new FinanceHandler( managerHandler);var\
+  \ frontHandler = new FrontHandler( financeHandler);frontHandler.handleRequest( \"\
+  ResignationApply\" );</script></body></html>\n```\n\n结果：![](img/Image00074.jpg)\n\
+  \n## 责任链模式案例\n\nJavaScript DOM 事件冒泡机制就是责任链模式：\n\n![1558457516(1)](img/Image00075.jpg)\n\
+  \n当点击 level_3_box div 时，事件总是向上传递到 body\n\n![1558458043(1)](img/Image00076.jpg)\n\
+  \n1. 用记事本创建一个 `TestChainCase.html` 并在浏览器中打开\n\n```\n<style>#level_1_box{border:1px\
+  \ solid red;background-color:red;width:300px;height:300px;}#level_2_box{border:1px\
+  \ solid green;background-color:green;width:200px;height:200px;}#level_3_box{border:1px\
+  \ solid blue;background-color:blue;width:100px;height:100px;color:white;}</style><body\
+  \ id =\"body\" ><div id =\"level_1_box\" >   <div id =\"level_2_box\" ><div id =\"\
+  level_3_box\" > level_3_box </div>   </div>   </div>   <br><span id =\"result\"\
+  \ ></span></body><script type =\"text/javascript\" >window.onload = function ()\
+  \ {   document.getElementById( \"body\" ). addEventListener( \"click\" , eventHandler);\
+  \   document.getElementById( \"level_1_box\" ). addEventListener( \"click\" , eventHandler);\
+  \   document.getElementById( \"level_2_box\" ). addEventListener( \"click\" , eventHandler\
+  \ );   document.getElementById( \"level_3_box\" ). addEventListener( \"click\" ,\
+  \ eventHandler);   }   function eventHandler( event) {   document.getElementById(\
+  \ \"result\" ). innerHTML += event.currentTarget.id + \" -> \" ;   }   </script>\n\
+  ```\n\n结果：![1558458266(1)](img/Image00077.jpg)\n\n## 命令模式原理\n\n命令模式：将命令请求封装为一个对象。将请求封装为对象，从而让你可以用不同的请求对客户端进行参数化、对请求进行排队或记录日志，并支持可撤销的操作。\n\
+  \n1. 按钮事件，鼠标点击“确定”或“取消”按钮。\n\nUML 图\n\n![](img/Image00078.jpg)\n\n1. 用记事本创建一个 `TestCommand.html`\
+  \ 并在浏览器中打开\n\n```\n<script type =\"text/javascript\" >function Mouse(){this.click\
+  \ = function ( button){button.onClick();}}function Button( name){this.name = name;this.command\
+  \ = null ;this.addEventLisnener = function ( command){this.command = command;}this.onClick\
+  \ = function (){this.command();}}var okCommand = function (){document.write( \"\
+  OK button is clicked <br>\" );}var cancelCommand = function (){document.write( \"\
+  Cancel button is clicked <br>\" );}var okButton = new Button( \"Ok\" )okButton.addEventLisnener(\
+  \ okCommand);var cancelButton = new Button( \"Cancel\" )cancelButton.addEventLisnener(\
+  \ cancelCommand);var mouse = new Mouse()mouse.click( okButton) // Mouse click OK\
+  \ buttonmouse.click( cancelButton) // Mouse click Cancel button</script>\n```\n\n\
+  结果：![](img/Image00079.jpg)\n\n## 命令模式案例\n\n鼠标点击“关闭”按钮关闭 div 菜单。\n\n![1558522244(1)](img/Image00080.jpg)\n\
+  \n1. 用记事本创建一个 `TestCommandCase.html` 并在浏览器中打开\n\n```\n<style>#menu{border:1px solid\
+  \ #dddddd;background-color:#eeeeee;width:400px;font-size:16px;}</style><div id =\"\
+  menu\" ><ul><li> Easy Learning Java </li><li> Easy Learning Javascript </li><li>\
+  \ Easy Learning HTML CSS </li><li> Easy Learning Python 3 </li><li> Easy Learning\
+  \ Design Patterns </li></ul><center><input type =\"button\" id =\"closeButton\"\
+  \ value =\"Close\" /></center></div><script type =\"text/javascript\" >document.getElementById(\
+  \ \"closeButton\" ). addEventListener( \"click\" , closeCommand);function closeCommand(\
+  \ event){   document.getElementById( \"menu\" ). style.display = \"none\" ;}   </script>\n\
+  ```\n\n结果：![1558522212(1)](img/Image00081.jpg)\n\n## 迭代器模式原理\n\n迭代器模式：顺序访问集合中的元素。提供一种方法顺序访问聚合对象中的元素，而不暴露其底层表示。\n\
+  \n1. 在 JavaScript 中实现迭代器\n\n![](img/Image00082.jpg)\n\n2. UML 图\n\n![](img/Image00083.jpg)\n\
+  \n1. 用记事本创建一个 `TestIterator.html` 并在浏览器中打开\n\n```\n<script type =\"text/javascript\"\
+  \ >function Iterator( list){this.index = 0 ;this.list = list;this.hasNext = function\
+  \ (){return this.index < this.list.length;}this.next = function (){var element =\
+  \ null ;if ( this.index  < this.list.length){element = this.list[ this.index];this.index\
+  \ = this.index + 1 ;}return element;}}function List(){this.size = 0 ;this.element\
+  \ = new Array();this.add = function ( element){this.element.push( element);this.size\
+  \ = this.size + 1 ;}this.get = function ( index){return this.element[ index];}this.size\
+  \ = function (){return this.size;}this.iterator = function (){return new Iterator(\
+  \ this.element);}}/////////////////////test///////////////////////////////////////////////////////var\
+  \ list = new List();list.add( \"Berkeley University\" );list.add( \"Market Street\"\
+  \ );list.add( \"Polo Alto\" );list.add( \"Cuptino\" );var iterator = list.iterator();while\
+  \ ( iterator.hasNext()){obj = iterator.next();document.write( obj + \" -> \" );}</script>\n\
+  ```\n\n\n\n\n\n# 设计模式示例\n\n## 迭代器模式案例\n\n使用 JavaScript 的 `forEach` 输出新闻列表。\n\n![1558542526(1)](img/Image00084.jpg)\n\
+  ![1558544000(1)](img/Image00085.jpg)\n\n1. 用记事本创建一个 `TestIteratorCase.html` 文件，并在浏览器中打开它\n\
+  \n```html\n<style>\n#book_table {\n  border: 1px solid #dddddd;\n  background-color:\
+  \ f7fefe;\n  width: 550px;\n  font-size: 16px;\n}\n</style>\n<table id=\"book_table\"\
+  >\n  <tr><td> title </td><td> Date </td></tr>\n</table>\n<script type=\"text/javascript\"\
+  >\n//for example this data from server\nvar bookArray = new Array(\n  { \"title\"\
+  : \"Easy Learning Javascript\", \"date\": \"09/09/2019\" },\n  { \"title\": \"Easy\
+  \ Learning Python 3\", \"date\": \"07/07/2019\" },\n  { \"title\": \"Easy Learning\
+  \ Java\", \"date\": \"06/06/2019\" }\n);\nvar book_table = document.getElementById(\"\
+  book_table\");\nbookArray.forEach(function(item) {\n  var book_tr = book_table.insertRow();\n\
+  \  var title = book_tr.insertCell();\n  var date = book_tr.insertCell();\n  title.innerHTML\
+  \ = item.title;\n  date.innerHTML = item.date;\n});\n</script>\n```\n\n结果：![1558544091(1)](img/Image00086.jpg)\n\
+  \n## 中介者模式原理\n\n**中介者模式**：定义类之间的简化通信。定义一个对象，该对象封装了一组对象如何交互。中介者通过使对象不显式地相互引用来促进松散耦合，并允许你独立地改变它们的交互。\n\
+  \n1. 客户想通过中介联系房东租房\n\n![1556178253(1)](img/Image00087.jpg)\n\n2. UML 图\n\n![](img/Image00088.jpg)\n\
+  \n1. 用记事本创建一个 `TestMediator.html` 文件，并在浏览器中打开它\n\n```html\n<script type=\"text/javascript\"\
+  >\nfunction HouseOwner() {\n  this.action = function() {}\n}\nfunction HouseRent()\
+  \ {\n  HouseOwner.call(this);\n  this.action = function() {\n    document.write(\"\
+  Client come to rent a house <br>\");\n  }\n}\nfunction HouseSale() {\n  HouseOwner.call(this);\n\
+  \  this.action = function() {\n    document.write(\"Client come to need to sell\
+  \ <br>\");\n  }\n}\nfunction Mediator() {\n  this.owner1 = new HouseRent();\n  this.owner2\
+  \ = new HouseSale();\n  this.handle = function(content) {\n    if (content == \"\
+  rent\") {\n      this.owner1.action();\n    }\n    if (content == \"sale\") {\n\
+  \      this.owner2.action();\n    }\n  }\n}\nvar mediator = new Mediator();\n//\
+  \ mediator help adjust the renting and selling between the client and the houseowner\n\
+  mediator.handle(\"rent\");\nmediator.handle(\"sale\");\n</script>\n```\n\n结果：![1558582785(1)](img/Image00089.jpg)\n\
+  \n## 中介者模式案例\n\n我们有 3 个用户，通过向聊天室（中介者）注册来加入聊天。每个用户由一个 User 对象表示。用户之间发送消息，聊天室负责路由。\n\
+  \n![1558586195(1)](img/Image00090.jpg)\n\n2. UML 图\n\n![](img/Image00091.jpg)\n\n\
+  1. 用记事本创建一个 `TestMediatorCase.html` 文件，并在浏览器中打开它\n\n结果：![1558586656(1)](img/Image00092.jpg)\n\
+  \n## 备忘录模式原理\n\n**备忘录模式**：捕获并恢复对象的内部状态。在不破坏封装的前提下，捕获并外部化对象的内部状态，以便以后可以将对象恢复到此状态。例如文本编辑器的撤销、重做、历史恢复等。\n\
+  \nUML 图\n\n![](img/Image00093.jpg)\n\n1. 用记事本创建一个 `TestMemento.html` 文件，并在浏览器中打开它\n\
+  \n```html\n<script type=\"text/javascript\">\nfunction Memento(state) {\n  this.state\
+  \ = state;\n  this.getState = function() {\n    return this.state;\n  }\n  this.setState\
+  \ = function(state) {\n    this.state = state;\n  }\n}\nfunction TextEdit() {\n\
+  \  this.mementos = [];\n  this.index = 0;\n  this.push = function(memento) {\n \
+  \   this.mementos.push(memento);\n    this.index += 1;\n  }\n  this.forward = function()\
+  \ {\n    memento = this.mementos[this.index];\n    this.index += 1;\n    return\
+  \ memento;\n  }\n  this.back = function() {\n    this.index -= 1;\n    memento =\
+  \ this.mementos[this.index];\n    return memento;\n  }\n}\nfunction Originator()\
+  \ {\n  this.state = '';\n  this.getState = function() {\n    return this.state;\n\
+  \  }\n  this.setState = function(state) {\n    this.state = state;\n  }\n  this.createMemento\
+  \ = function() {\n    return new Memento(this.state);\n  }\n  this.setMemento =\
+  \ function(memento) {\n    this.state = memento.getState();\n  }\n  this.show =\
+  \ function() {\n    document.write(this.state);\n  }\n}\n/////////////////////test///////////////////////////////////////////////////////\n\
+  var textEdit = new TextEdit();\n// Enter text in textEdit, save while saving\nvar\
+  \ originator = new Originator();\noriginator.setState(\"Move you in the direction\
+  \ of your dream. <br>\");\ntextEdit.push(originator.createMemento());\noriginator.setState(\"\
+  Ways to start your day positively. <br>\");\ntextEdit.push(originator.createMemento());\n\
+  originator.setState(\"Love can change the world. <br>\");\noriginator.show();\n\
+  // Undo  redo   Recovery history\noriginator.setMemento(textEdit.back());\noriginator.show();\n\
+  originator.setMemento(textEdit.back());\noriginator.show();\ndocument.write(\"<br>------------------------------\
+  \ <br>\");\noriginator.setMemento(textEdit.forward());\noriginator.show();\noriginator.setMemento(textEdit.forward());\n\
+  originator.show();\n</script>\n```\n\n结果：![1558589229(1)](img/Image00094.jpg)\n\n\
+  ## 备忘录模式案例\n\nHtmlEdit 的撤销、重做、历史恢复。\n\n![1558597832(1)](img/Image00095.jpg)\n\n\
+  UML 图\n\n![](img/Image00096.jpg)\n\n1. 用记事本创建一个 `TestMementoCase.html` 文件，并在浏览器中打开它\n\
+  \n结果：![1558598184(1)](img/Image00097.jpg)\n\n点击撤销按钮\n\n![1558598169(1)](img/Image00098.jpg)\n\
+  \n## 观察者模式原理\n\n**观察者模式**：一种向多个类通知变化的方式。定义对象之间的一对多依赖关系，这样当一个对象改变状态时，其所有依赖者都会自动收到通知并更新。\n\
+  \n1. 在股票市场中，股票数据随时变化。卖家和买家可以随时看到变化。\n\n![](img/Image00099.jpg)\n\n1. 用记事本创建一个 `TestObserver.html`\
+  \ 文件，并在浏览器中打开它\n\n```html\n<script type=\"text/javascript\">\nfunction Observable()\
+  \ {\n  this.observerList = [];\n  this.notifyObservers = function() {\n    this.observerList.forEach(function(observer)\
+  \ {\n      observer.update();\n    });\n  }\n  this.addObserver = function(observer)\
+  \ {\n    this.observerList.push(observer);\n  }\n}\nfunction StockData(price) {\n\
+  \  Observable.call(this);\n  this.price = price;\n  this.getPrice = function() {\n\
+  \    return this.price;\n  }\n  this.setPrice = function(price) {\n    this.price\
+  \ = price;\n    this.notifyObservers();\n  }\n}\nfunction Observer(observable) {\n\
+  \  this.observable = observable;\n  this.observable.addObserver(this);\n  this.update\
+  \ = function(observable) {}\n}\nfunction Buyer(observable) {\n  Observer.call(this,\
+  \ observable);\n  this.update = function(observable) {\n    document.write(\"Buyer\
+  \ Price :\" + this.observable.getPrice() + \"<br>\");\n  }\n}\nfunction Seller(observable)\
+  \ {\n  Observer.call(this, observable);\n  this.update = function(observable) {\n\
+  \    document.write(\"Seller Price :\" + this.observable.getPrice() + \"<br>\");\n\
+  \  }\n}\n/////////////////////test///////////////////////////////////////////////////////\n\
+  var data = new StockData(16.9);\nvar buyer = new Buyer(data);\nvar seller = new\
+  \ Seller(data);\ndata.setPrice(18.9);\ndocument.write(\"<br>-------------------------<br>\"\
+  );\ndata.setPrice(12.9);\n</script>\n```\n\n结果：\n\n## 观察者模式案例\n\n画布绘制各种形状、直方图和饼图，选择颜色后自动更改填充颜色。\n\
+  \n![1558628258(1)](img/Image00101.jpg)\n\n1. UML 图\n\n![](img/Image00102.jpg)\n\n\
+  1. 用记事本创建一个 `TestObserverCase.html` 文件，并在浏览器中打开它\n\n结果：![1558628592(1)](img/Image00103.jpg)\
+  \ ![1558628630(1)](img/Image00104.jpg)\n\n## 访问者模式原理\n\n**访问者模式**：在不改变类的情况下定义新的操作。表示要对对象结构的元素执行的操作。访问者允许你在不改变所操作元素类的情况下定义新操作。\n\
+  \n1. 男人可以成功  \n   女人可以成功  \n   男人恋爱了  \n   女人恋爱了\n\n![](img/Image00105.jpg)\n\n\
+  1. 用记事本创建一个 `TestVisitor.html` 文件，并在浏览器中打开它\n\n结果：![1558631243(1)](img/Image00106.jpg)\n\
+  \n## 访问者模式案例\n\nJavaScript 的拖放功能类似于访问者模式\n\n![1558664119(1)](img/Image00107.jpg)\n\
+  \n1. 用记事本创建一个 `TestVisitorCase.html` 文件，并在浏览器中打开它\n\n\n\n\n| <style>#accept{width:350px;\
+  \ height: 150px;border:1px solid #cccccc; background-color: #fff0f3;text-align:left;padding:\
+  \ 20px;}#drag1{width:300px; height: 100px;text-align:left;}</style><div id =\"accept\"\
+  \ ondrop =\"drop(event)\" ondragover =\"allowDrop(event)\" ></div><div id =\"visitor\"\
+  \   draggable =\"true\" ondragstart =\"drag(event)\" ><ul><li> Easy Learning Javascript\
+  \ </li><li> Easy Learning Python 3 </li><li> Easy Learning Java </li><li> Easy Learning\
+  \ HTML CSS </li></ul></div><script type =\"text/javascript\" >function allowDrop(\
+  \ event){event.preventDefault();}function drag( event){event.dataTransfer.setData(\
+  \ \"visitor_id\" , event.target.id);}function drop( event ){event.preventDefault();var\
+  \ visitor_id= event.dataTransfer.getData( \"visitor_id\" );event.target.appendChild(\
+  \ document.getElementById( visitor_id));}</script> |\n\n结果：![1558664245(1)](img/Image00108.jpg)将\
+  \ ul 列表拖拽到 div 框中![1558664324(1)](img/Image00109.jpg)\n\n## 状态模式原理\n\n状态模式：当对象的状态改变时，改变其行为。允许对象在内部状态改变时改变其行为。该对象看起来像是改变了它的类。\n\
+  \n![](img/Image00110.jpg)\n\n1. 使用记事本创建一个 `TestState.html` 文件，并在浏览器中打开它\n\n| <script\
+  \ type =\"text/javascript\" >function Flow(){this.action = function (){}}function\
+  \ ApplyFlow(){Flow.call( this );this.action = function (){document.write( \"Apply\
+  \ -> \" );}}function VerfiyFlow(){Flow.call( this );this.action = function (){document.write(\
+  \ \"Verfiy -> \" );}}function ApproveFlow(){Flow.call( this );this.action = function\
+  \ (){document.write( \"Approve\" );}}function Context(){this.flow = null ;this.setFlow\
+  \ = function ( flow){this.flow = flow;}this.process = function (){this.flow.action();}}/////////////////////test///////////////////////////////////////////////////////var\
+  \ context  = new Context();context.setFlow( new ApplyFlow());context.process();context.setFlow(\
+  \ new VerfiyFlow());context.process();context.setFlow( new ApproveFlow());context.process();</script>\
+  \ |\n\n结果：![1558665200(1)](img/Image00111.jpg)\n\n### 状态模式案例\n\n新闻发布管理有 3 种状态：查看、编辑、审核。每个状态下只显示对应的操作按钮。\n\
+  \n![1558667113(1)](img/Image00112.jpg)\n\nUML 图\n\n![](img/Image00113.jpg)\n\n1.\
+  \ 使用记事本创建一个 `TestState.html` 文件，并在浏览器中打开它\n\n| <style>#news_table{border:1px solid\
+  \ #dddddd;background-color:#eeeeee;width:550px;font-size:16px;}#title_tool{background-color:#dddddd;}</style><table\
+  \ id =\"news_table\" ><tr id =\"title_tool\" ><td> title </td><td> Date </td><td>\
+  \ State </td><td> Action </td></tr></table><script type =\"text/javascript\" >function\
+  \ Flow(){this.action = function (){}}function ViewFlow(){Flow.call( this );this.action\
+  \ = function (){return \"\" ;}}function EditFlow (){Flow.call( this );this.action\
+  \ = function (){return \"<input type='button' value='Update' />\" ;}}function VerifyFlow(){Flow.call(\
+  \ this );this.action = function (){return \"<input type='button' value='Update'\
+  \ /> <input type='button' value='Delete' />\" ;}}function Context(){this.flow =\
+  \ null ;this.setFlow = function ( flow){this.flow = flow;}this.process = function\
+  \ (){return this.flow.action();}}var newsArray = new Array ({ \"title\" : \"Happy\
+  \ Labor Day\" , \"date\" : \"05/01/2019\" , \"state\" : \"view\" },{ \"title\" :\
+  \ \"New book has been released\" , \"date\" : \"07/07/2019\" , \"state\" : \"edit\"\
+  \ },{ \"title\" : \"Merry Christmas\" , \"date\" : \"12/25/2019\" , \"state\" :\
+  \ \"verify\" })newsArray.forEach( function ( item) {var news_tr = news_table.insertRow();var\
+  \ title = news_tr.insertCell();var date = news_tr.insertCell();var state = news_tr.insertCell();var\
+  \ action = news_tr.insertCell();title.innerHTML = item.title;date.innerHTML = item.date;state.innerHTML\
+  \ = item.state;var context = new Context();if ( item.state == \"view\" ){context.setFlow(\
+  \ new ViewFlow());} else if ( item.state == \"edit\" ){context.setFlow( new EditFlow());}\
+  \ else if ( item.state == \"verify\" ){context.setFlow( new VerifyFlow());}action.innerHTML\
+  \ = context.process();});</script> |\n\n结果：![1558667238(1)](img/Image00114.jpg)\n\
+  \n## 代理模式原理\n\n代理模式：一个代表另一个对象的对象。为另一个对象提供一个代理或占位符，以控制对其的访问。\n\n1. 代理注册\n\n![](img/Image00115.jpg)\n\
+  \n1. 使用记事本创建一个 `TestProxy.html` 文件，并在浏览器中打开它\n\n| <script type =\"text/javascript\"\
+  \ >var Target = {doSomething: function () {document.write( \"Agency registration\
+  \ company\" );}}function Proxy(){this.call = function ( target, method){document.write(\
+  \ \"<br> before <br>\" );result = target[ method]();document.write( \"<br> after\
+  \  <br>\" );return result;}}var proxy = new Proxy();proxy.call( Target, \"doSomething\"\
+  \ );</script> |\n\n结果：![1558671982(1)](img/Image00116.jpg)\n\n### 代理模式案例\n\n当加载大图时，通过代理预加载默认的小图标，等待大图加载完成后立即显示大图。\n\
+  \n![1558674545(1)](img/Image00117.jpg)\n\nUML 图\n\n![](img/Image00118.jpg)\n\n1.\
+  \ 使用记事本创建一个 `TestProxyCase.html` 文件，并在浏览器中打开它\n\n| <div id =\"image\" ></div><script\
+  \ type =\"text/javascript\" >var Target = {loadImage: function ( loadimg, imageSrc)\
+  \ {var img = document.createElement( 'img' );img.src = imageSrc;img.onload = function\
+  \ (){//Once the image is loaded, it will be displayed immediatelyloadimg.src = img.src;}}}function\
+  \ Proxy(){this.call = function ( target, method, imageSrc){//preload imagevar img\
+  \ = document.createElement( 'img' );img.src = \"images/loading.gif\" ;document.getElementById(\
+  \ \"image\" ). appendChild( img);result = target method;return result;}}var proxy\
+  \ = new Proxy();proxy.call( Target, \"loadImage\" , \"images/javascript.jpg\" );</script>\
+  \ |\n\n如果您喜欢这本书并从中受益，我希望听到您的反馈，并希望您能花点时间在亚马逊上写一篇评论。您的反馈和支持将帮助我们在未来大幅改进，使这本书变得更好。\n\
+  \n您现在可以点击此链接：\n\n[`www.amazon.com/review/create-review?&asin=B07SCJMWV8`](http://www.amazon.com/review/create-review?&asin=B07SCJMWV8)\n\
+  \n不同国家的评论只需修改链接中的亚马逊域名：\n\n- www.amazon.co.uk\n- www.amazon.de\n- www.amazon.fr\n\
+  - www.amazon.es\n- www.amazon.it\n- www.amazon.ca\n- www.amazon.nl\n- www.amazon.in\n\
+  - www.amazon.co.jp\n- www.amazon.com.br\n- www.amazon.com.mx\n- www.amazon.com.au\n\
+  \n祝您未来一切顺利，取得成功！\n\n"

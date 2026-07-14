@@ -1,0 +1,24 @@
+name: Discover Functional JavaScript
+name_cn: 函数式JavaScript探索指南
+slug: discover-functional-javascript
+toc:
+- - '###'
+  - 使用其他纯函数
+- - '###'
+  - 使用其他非纯函数
+- - '###'
+  - 从内部实现纯度
+- - '###'
+  - 从外部判断纯度
+- - '###'
+  - 问题所在
+- - '###'
+  - 非纯代码
+- - '###'
+  - 最终思考
+- - '###'
+  - 原始值
+- - '###'
+  - 阅读代码
+- - '###'
+  - 常量

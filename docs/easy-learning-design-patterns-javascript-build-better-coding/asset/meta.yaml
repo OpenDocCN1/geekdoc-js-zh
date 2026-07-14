@@ -1,0 +1,32 @@
+name: Easy Learning Design Patterns Javascript： Build Better Coding and Design Patterns
+name_cn: 轻松学习 JavaScript 设计模式：更好的编码与设计模式构建指南
+slug: easy-learning-design-patterns-javascript-build-better-coding
+toc:
+- - '##'
+  - 克隆模式
+- - '###'
+  - 克隆模式案例
+- - '###'
+  - 克隆添加联系人
+- - '##'
+  - 桥接模式
+- - '###'
+  - 桥接模式原理
+- - '###'
+  - 桥接模式案例
+- - '##'
+  - 享元模式
+- - '###'
+  - 享元模式原理
+- - '###'
+  - 享元模式案例
+- - '##'
+  - 责任链模式原理
+- - '##'
+  - 责任链模式案例
+- - '##'
+  - 命令模式原理
+- - '##'
+  - 命令模式案例
+- - '##'
+  - 迭代器模式原理

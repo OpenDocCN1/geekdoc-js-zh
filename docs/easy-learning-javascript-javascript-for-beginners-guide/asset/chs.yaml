@@ -1,0 +1,539 @@
+- "# 轻松学习Javascript：初学者指南的Javascript\n\n如果你想学习 HTML CSS 的基础知识：<< 轻松学习 HTML CSS >>\n\
+  \n[`www.amazon.com/dp/B07QHRB23X`](https://www.amazon.com/dp/B07QHRB23X)\n\n![](img/Image00001.jpg)\n\
+  \n如果你已经掌握了 HTML CSS 的基础知识，请跳过它，开始一段激动人心的旅程\n\n# JavaScript HelloWorld\n\nJavaScript\
+  \ 是一种用于网页开发的动态交互语言。\n\n1. 用记事本创建一个 `helloworld.html` 文件，并在浏览器中打开它，即可看到网页\n\n`<html>`：标签告诉浏览器这是一个\
+  \ HTML 文档。\n\n`<head>`：标签是元数据（内容和字符集）的容器。\n\n`<title>`：标签定义文档的标题。\n\n`<body>`：标签定义文档的主体。\n\
+  \n`<script>`：标签用于定义客户端脚本（JavaScript）。\n\n`document.write()`：向浏览器中的文档写入 HTML 内容\n\
+  \n```html\n<html>\n<head>\n    <meta http-equiv = \"Content-Type\" content = \"\
+  text/html; charset=UTF-8\" >\n    <title> 第一个网页 </title>\n</head>\n<body>\n    <script\
+  \ type = \"text/javascript\" >\n        document.write ( \"HelloWorld\" );\n   \
+  \ </script>\n</body>\n</html>\n```\n\n结果：\n\n![](img/Image00002.jpg)\n\n# 变量\n\n\
+  ![](img/Image00003.jpg)\n\n1. 创建一个文件：`Variable.html` 并在浏览器中打开它\n\n`//`：单行注释，不会被\
+  \ JavaScript 执行\n\n`\"\"`：字符串类型\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    var basket = \"Apple\" ;\n    document.write ( basket );\n</script>\n```\n\
+  \n结果：\n\n![](img/Image00004.jpg)\n\n2. 修改文件：`Variable.html`，将 \"orange\" 替换 \"apple\"\
+  。\n\n![](img/Image00005.jpg)\n\n`<br>`：HTML 标签，换行\n\n```javascript\n<script type\
+  \ = \"text/javascript\" >\n    var basket = \"Apple\" ;\n    document.write ( basket\
+  \ );\n    document.write ( \"<br>\" );\n    basket = \"Orange\" ;\n    document.write\
+  \ ( basket );\n</script>\n```\n\n运行结果：\n\n![](img/Image00006.jpg)\n\n# 变量与类型\n\n\
+  JavaScript 是一种动态类型语言\n\n1. 用记事本创建一个 `var.html` 文件，并在浏览器中打开它，即可看到网页\n\n`typeof()`：查找\
+  \ JavaScript 变量的类型\n\n```javascript\n<script type = \"text/javascript\" >\n    var\
+  \ x ;           //undefined\n    var a = 9 ;       //number\n    var b = 1.5 ; \
+  \    //number\n    var c = true ;    //Boolean\n    var d = \"abc\" ;   //string\n\
+  \    var e = 'abc' ;   //string\n    document.write ( typeof ( x ) + \"<br>\" );\n\
+  \    document.write ( typeof ( a ) + \"<br>\" );\n    document.write ( typeof (\
+  \ b ) + \"<br>\" );\n    document.write ( typeof ( c ) + \"<br>\" );\n    document.write\
+  \ ( typeof ( d ) + \"<br>\" );\n    document.write ( typeof ( e ) + \"<br>\" );\n\
+  </script>\n```\n\n结果：\n\n```\nundefined\nnumber\nnumber\nboolean\nstring\nstring\n\
+  ```\n\n# 算术运算符\n\n1. 用记事本创建一个 `ArithmeticOperator.html` 文件，并在浏览器中打开它\n\n算术运算符：\n\
+  \n加 `+`，减 `-`，乘 `*`，除 `/`，取模 `%`\n\n![](img/Image00007.jpg)\n\n```javascript\n<script\
+  \ type = \"text/javascript\" >\n    var a = 1 ;\n    var b = 2 ;\n    var c = 3\
+  \ ;\n    var d = 4 ;\n    document.write ( a + b ); // = 3\n    document.write (\
+  \ \"<br>\" );\n    document.write ( a - b ); // = -1\n    document.write ( \"<br>\"\
+  \ );\n    document.write ( a * b ); // = 2\n    document.write ( \"<br>\" );\n \
+  \   document.write ( b / a ); // = 2\n    document.write ( \"<br>\" );\n    document.write\
+  \ ( c % b ); // = 1 //除法后的余数\n    document.write ( \"<br>\" );\n</script>\n```\n\
+  \n# 函数\n\n![](img/Image00008.jpg)\n\n![](img/Image00009.jpg)\n\n![](img/Image00010.jpg)\n\
+  \n1. 创建一个文件：`Function.html`\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    function add ( a , b ){\n        return a + b ;\n    }\n    var result\
+  \ = add ( 4 , 2 );\n    document.write ( result ); // 6\n    document.write ( \"\
+  <br>\" );\n    var result = add ( 5 , 3 );\n    document.write ( result )  // 8\n\
+  </script>\n```\n\n运行结果：\n\n```\n6\n8\n```\n\n2. 在 `Function.html` 中添加关于 `-`、`*`、`/`\
+  \ 的 3 个函数\n\n```javascript\n<script type = \"text/javascript\" >\n    function add\
+  \ ( a , b ){\n        return a + b ;\n    }\n    function sub ( a , b ){\n     \
+  \   return a - b ;\n    }\n    function multiply ( a , b ){\n        return a *\
+  \ b ;\n    }\n    function divide ( a , b ){\n        return a / b ;\n    }\n  \
+  \  var result = add ( 4 , 2 );\n    document.write ( result ); // 6\n    document.write\
+  \ ( \"<br>\" );\n    var result = sub ( 4 , 2 );\n    document.write ( result )\
+  \  // 2\n    document.write ( \"<br>\" );\n    var result = multiply ( 4 , 2 );\n\
+  \    document.write ( result )  // 8\n    document.write ( \"<br>\" );\n    var\
+  \ result = divide ( 4 , 2 );\n    document.write ( result )  // 2\n</script>\n```\n\
+  \n# 类\n\n![](img/Image00011.jpg)\n\n1. 创建一个文件：`Caculator.html`\n\n\n\n\n\n```javascript\n\
+  <script type = \"text/javascript\" >\n    function Caculator (){\n        this.add\
+  \ = function ( a , b ){\n            return a + b ;\n        }\n        this.sub\
+  \ = function ( a , b ){\n            return a - b ;\n        }\n        this.multiply\
+  \ = function ( a , b ){\n            return a * b ;\n        }\n        this.divide\
+  \ = function ( a , b ){\n            return a / b ;\n        }\n    }\n    var cal\
+  \ = new Caculator ();\n    var result = cal.add ( 4 , 2 );\n    document.write (\
+  \ result ); // 6\n    var result = cal.sub ( 4 , 2 );\n    document.write ( result\
+  \ )  // 2\n    var result = cal.multiply ( 4 , 2 );\n    document.write ( result\
+  \ )  // 8\n    var result = cal.divide ( 4 , 2 );\n    document.write ( result )\
+  \  // 2\n</script>\n```\n\n## 类型转换\n\n`parseInt()`：这是 JavaScript 的默认函数，可以将字符串转换为整数。\n\
+  \n1. 创建一个 `TypeConversion.html` 文件\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    var a = \"1\" ;           var b = \"2\" ;       var result = a + b ; //\
+  \ + 连接两个字符串\n    document.write ( result ); // = 12\n    document.write ( \"<br>\"\
+  \ );\n    result = parseInt ( a ) + parseInt ( b );\n    document.write ( result\
+  \ ); // = 3\n</script>\n```\n\n结果：\n\n12\n\n3\n\n## DOM\n\nDOM：在 JavaScript 中，每个\
+  \ HTML 元素都是一个类对象。\n\n文档对象模型结构图：\n\n![](img/Image00012.jpg)\n\n1. 创建一个文件：`getElementById.html`\n\
+  \n`document.getElementById()`：是一个 DOM 方法，用于通过 ID 属性获取元素。\n\n`alert()`：是一个函数，用于打开信息窗口。\n\
+  \n`Obj.innerHTML`：设置或返回元素的内部 HTML 内容。\n\n`<div>`：标签定义 HTML 文档中的一个分区或节。\n\n```javascript\n\
+  <div id = \"word\" > Faith and Hope </div>\n<script type = \"text/javascript\" >\n\
+  \    var divObj = document.getElementById ( \"word\" );\n    var htmlContent = divObj.innerHTML\
+  \ ;\n    alert ( htmlContent );\n</script>\n```\n\n![](img/Image00013.jpg)\n\n2.\
+  \ 修改文件：`getElementById.html`\n\n`<input type= \" text \" />`：HTML 标签，指定一个用户可以输入数据的输入字段。\n\
+  \n```javascript\n<input type = \"text\" id = \"username\" value = \"Joseph\" />\n\
+  <script type = \"text/javascript\" >\n    var divObj = document.getElementById (\
+  \ \"username\" );\n    var value = divObj.value ;\n    alert ( value );\n</script>\n\
+  ```\n\n![](img/Image00014.jpg)\n\n## 事件\n\n1. 创建一个文件：`onClick.html`\n\n`onClick`：当鼠标点击按钮时，会调用一个函数。\n\
+  \n`<input type= \" button \" />`：HTML 标签，定义一个可点击的按钮。\n\n```javascript\n<input type\
+  \ = \"text\" id = \"username\" value = \"Joseph\" />\n<input type = \"button\" value\
+  \ = \"Click Me\" onClick = \"doClick()\" />\n<script type = \"text/javascript\"\
+  \ >\n    function doClick (){\n        var divObj = document.getElementById ( \"\
+  username\" );\n        var value = divObj.value ;\n        alert ( value );\n  \
+  \  }\n</script>\n```\n\n![](img/Image00015.jpg)\n\n## 创建一个网页计算器\n\n1. 创建一个文件：`WebCaculator.html`\n\
+  \n![](img/Image00016.jpg)\n\n```javascript\na: <input type = \"text\" id = \"a\"\
+  \ value = \"\" />\nb: <input type = \"text\" id = \"b\" value = \"\" />\n=<span\
+  \ id = \"result\" ></span>\n<br>\n<input type = \"button\" value = \"+\" onClick\
+  \ = \"doAdd()\" />\n<script type = \"text/javascript\" >\n    function doAdd (){\n\
+  \        var aObj = document.getElementById ( \"a\" );\n        var bObj = document.getElementById\
+  \ ( \"b\" );\n        var resultObj = document.getElementById ( \"result\" );\n\
+  \        var a = parseInt ( aObj.value ); // 将字符串转换为整数\n        var b = parseInt\
+  \ ( bObj.value );\n        resultObj.innerHTML = a + b ;\n    }\n</script>\n```\n\
+  \n2. 为 `WebCaculator.html` 添加另外三个函数 -、*、/\n\n```javascript\na: <input type = \"\
+  text\" id = \"a\" value = \"\" />\nb: <input type = \"text\" id = \"b\" value =\
+  \ \"\" />\n=<span id = \"result\" ></span>\n<br>\n<input type = \"button\" value\
+  \ = \"+\" onClick = \"doAdd()\" />\n<input type = \"button\" value = \"-\" onClick\
+  \ = \"doSub()\" />\n<input type = \"button\" value = \"*\" onClick = \"doMultiply()\"\
+  \ />\n<input type = \"button\" value = \"/\" onClick = \"doDivide()\" />\n<script\
+  \ type = \"text/javascript\" >\n    function doAdd (){\n        var aObj = document.getElementById\
+  \ ( \"a\" );\n        var bObj = document.getElementById ( \"b\" );\n        var\
+  \ resultObj = document.getElementById ( \"result\" );\n        var a = parseInt\
+  \ ( aObj.value ); // 将字符串转换为整数\n        var b = parseInt ( bObj.value );\n     \
+  \   resultObj.innerHTML = a + b ;\n    }\n    function doSub (){\n        var aObj\
+  \ = document.getElementById ( \"a\" );\n        var bObj = document.getElementById\
+  \ ( \"b\" );\n        var resultObj = document.getElementById ( \"result\" );\n\
+  \        var a = parseInt ( aObj.value ); // 将字符串转换为整数\n        var b = parseInt\
+  \ ( bObj.value );\n        resultObj.innerHTML = a - b ;\n    }\n    function doMultiply\
+  \ (){\n        var aObj = document.getElementById ( \"a\" );\n        var bObj =\
+  \ document.getElementById ( \"b\" );\n        var resultObj = document.getElementById\
+  \ ( \"result\" );\n        var a = parseInt ( aObj.value ); // 将字符串转换为整数\n     \
+  \   var b = parseInt ( bObj.value );\n        resultObj.innerHTML = a * b ;\n  \
+  \  }\n    function doDivide (){\n        var aObj = document.getElementById ( \"\
+  a\" );\n        var bObj = document.getElementById ( \"b\" );\n        var resultObj\
+  \ = document.getElementById ( \"result\" );\n        var a = parseInt ( aObj.value\
+  \ ); // 将字符串转换为整数\n        var b = parseInt ( bObj.value );\n        resultObj.innerHTML\
+  \ = a / b ;\n    }\n</script>\n```\n\n点击 + 按钮的结果：\n\n![](img/Image00017.gif)\n\n\
+  点击 - 按钮的结果：\n\n![](img/Image00018.gif)\n\n点击 * 按钮的结果：\n\n![](img/Image00019.gif)\n\
+  \n点击 / 按钮的结果：\n\n![](img/Image00020.gif)\n\n## 赋值运算符\n\n1. 用记事本创建一个 `AssignmentOperator.html`\
+  \ 文件，并在浏览器中打开它\n\n```javascript\n<script type = \"text/javascript\" >\n    var d\
+  \ = 4 ;\n    document.write ( d ++); // = 4 先打印 d，然后自增 1\n    document.write ( \"\
+  <br>\" );\n    d = 4 ;\n    document.write (++ d ); // = 5 先自增 1，然后打印 d\n    document.write\
+  \ ( \"<br>\" );\n    d = 4 ;\n    document.write ( d --); // = 4 先打印 d，然后自减 1\n\
+  \    document.write ( \"<br>\" );\n    d = 4 ;\n    document.write (-- d ); // =\
+  \ 3 先自减 1，然后打印 d\n    var result = 10 ;\n    result = result + 1 ;\n    document.write\
+  \ ( result ); // = 11\n    document.write ( \"<br>\" );\n    result = 10 ;\n   \
+  \ result ++;\n    document.write ( result ); // = 11\n    document.write ( \"<br>\"\
+  \ );\n    result = 10 ;\n    result += 1 ;\n    document.write ( result );  // =\
+  \ 11\n    document.write ( \"<br>\" );\n</script>\n```\n\n2. 创建一个数量加减器 `quantity.html`\n\
+  \n点击 + 按钮使数量增加 1，点击 - 按钮使数量减少 1。\n\n![](img/Image00021.jpg)\n\n```javascript\nQuantity:<br>\n\
+  <input type = \"text\" style = \"width:30px\" id = \"quantity\" value = \"1\" />\n\
+  <input type = \"button\" value = \"+\" onClick = \"doAdd()\" />\n<input type = \"\
+  button\" value = \"-\" onClick = \"doSub()\" />\n<script type = \"text/javascript\"\
+  \ >\n    function doAdd (){\n        var quantityObj = document.getElementById (\
+  \ \"quantity\" );\n        var value = parseInt ( quantityObj.value );\n       \
+  \ value ++\n        quantityObj.value = value ;\n    }\n    function doSub (){\n\
+  \        var quantityObj = document.getElementById ( \"quantity\" );\n        var\
+  \ value = parseInt ( quantityObj.value );\n        value --\n        quantityObj.value\
+  \ = value ;\n    }\n</script>\n```\n\n## 关系运算符\n\n1. 用记事本创建一个 `RelationalOperator.html`\
+  \ 文件，并在浏览器中打开它\n\n关系运算符只有两个值：true、false\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    document.write ( 1 > 2 ); // false\n    document.write ( \"<br>\" );\n\
+  \    document.write ( 1 >= 1 ); // true\n    document.write ( \"<br>\" );\n    document.write\
+  \ ( 1 < 2 ); // true\n    document.write ( \"<br>\" );\n    document.write ( 1 <=\
+  \ 2 ); // true\n    document.write ( \"<br>\" );\n    document.write ( 1 == 1 );\
+  \ // true\n    document.write ( \"<br>\" );\n    document.write ( 1 != 2 ); // true\n\
+  </script>\n```\n\n## If 条件语句\n\nIf 语句\n\n1. `if (expression){statement}`\n2. `if\
+  \ (expression) { statement } else { statement }`\n3. `if (expression) {statement\
+  \ } else if { statement }`\n\n1. 用记事本创建一个 `If.html` 文件，并在浏览器中打开它\n\n分数示例：\n\n- 如果分数\
+  \ == 5：优秀\n- 否则如果分数 == 4：良好\n- 否则：需要努力\n\n![](img/Image00022.jpg)\n\n\n\n\n\n![](img/Image00023.jpg)\n\
+  \n![](img/Image00024.jpg)\n\n| 请输入您的分数：<br><input type = \"text\"   id = \"score\"\
+  \ value = \"\" /><input type = \"button\" value = \"提交\" onClick = \"doSubmit()\"\
+  \ /><br><span id = \"message\" ></span><script type = \"text/javascript\" >    function\
+  \ doSubmit (){        var scoreObj = document.getElementById ( \"score\" );    \
+  \    var messageObj = document.getElementById ( \"message\" );        var score\
+  \ = parseInt ( scoreObj.value );        if ( score == 5 ) {            messageObj.innerHTML\
+  \ = \"优秀\" ;        } else if ( score == 4 ) {            messageObj.innerHTML =\
+  \ \"良好\" ;        } else {            messageObj.innerHTML = \"需要加油\" ;        }\
+  \    }</script> |\n\n## 逻辑运算符\n\n1. 用记事本创建一个 `LogicOperator.html` 文件，并在浏览器中打开\n\n\
+  逻辑运算符：与 `&&`，或 `||`，非 `!`\n\n- `&&` 如果操作符两侧都为 true，则返回 true，否则返回 false\n- `||` 当操作符两侧都为\
+  \ false 时结果为 false，否则为 true\n- `!` 如果返回 true，则结果为 false，否则为 true\n\n```javascript\n\
+  <script type = \"text/javascript\" >\n    document.write ( true && false ); // false\n\
+  \    document.write ( \"<br>\" );\n    document.write ( false && true ); // false\n\
+  \    document.write ( \"<br>\" );\n    document.write ( false && false ); // false\n\
+  \    document.write ( \"<br>\" );\n    document.write ( true && true ); // true\n\
+  \    document.write ( \"<br>\" );\n    document.write ( true || false ); // true\n\
+  \    document.write ( \"<br>\" );\n    document.write ( false || true ); // true\n\
+  \    document.write ( \"<br>\" );\n    document.write ( true || true ); // true\n\
+  \    document.write ( \"<br>\" );\n    document.write ( false || false ); // false\n\
+  \    document.write ( \"<br>\" );\n    document.write (! true ); // false\n    document.write\
+  \ ( \"<br>\" );\n    document.write (! false ); // true\n    document.write ( \"\
+  <br>\" );\n</script>\n```\n\n2. 创建一个 `LogicOperator2.html`\n\n```javascript\n<script\
+  \ type = \"text/javascript\" >\n    document.write ( 1 > 2 && 3 > 4 ) // = false\n\
+  \    document.write ( 2 > 1 && 3 > 4 ) // = false\n    document.write ( \"--------------\"\
+  \ )\n    document.write ( 2 > 1 || 3 > 4 ) // = true\n    document.write ( 2 > 1\
+  \ || 3 > 4 ) // = true\n    document.write ( 1 > 2 || 3 > 4 ) // = false\n</script>\n\
+  ```\n\n3. 工资税示例：\n\n税额 = 工资 * 税率\n\n等级：\n\n- 500 -- 2000 美元：税率 10%\n- 2000--5000\
+  \ 美元：税率 15%\n- 5000--20000 美元：税率 20%\n- 超过 20000 美元：税率 30%\n\n```javascript\n<script\
+  \ type = \"text/javascript\" >\n    var salary = 10000 ;\n    var tax = 0 ;\n  \
+  \  if ( salary >= 500 && salary < 2000 ) {\n        tax = salary * 0.1 ;\n    }\
+  \ else if ( salary >= 2000 && salary < 5000 ) {\n        tax = salary * 0.15 ;\n\
+  \    } else if ( salary >= 5000 && salary < 20000 ) {\n        tax = salary * 0.2\
+  \ ;\n    } else {\n        tax = salary * 0.3 ;\n    }\n    document.write ( \"\
+  税额=\" + tax );\n</script>\n```\n\n结果：\n\n税额=2000\n\n2. 创建一个 `WebTax.html`\n\n输入工资，然后点击计算税额按钮\n\
+  \n![](img/Image00025.jpg)\n\n| 工资：<input type = \"text\" id = \"salary\" value =\
+  \ \"\" />=<span id = \"tax\" ></span><input type = \"button\" value = \"计算税额\" onClick\
+  \ = \"doTax()\" /><script type = \"text/javascript\" >    function doTax (){   \
+  \     var salaryObj = document.getElementById ( \"salary\" );        var salary\
+  \ = parseInt ( salaryObj.value );        var tax = 0 ;        if ( salary >= 500\
+  \ && salary < 2000 ) {            tax = salary * 0.1 ;        } else if ( salary\
+  \ >= 2000 && salary < 5000 ) {            tax = salary * 0.15 ;        } else if\
+  \ ( salary >= 5000 && salary < 20000 ) {            tax = salary * 0.2 ;       \
+  \ } else {            tax = salary * 0.3 ;        }        document.getElementById\
+  \ ( \"tax\" ). innerHTML = tax ;    }</script> |\n\n## Switch 语句\n\n1. 用记事本创建一个\
+  \ `switch.html` 文件，并在浏览器中打开\n\n输入数字 1、2、3\n\n- 1：使用 Visa 卡支付\n- 2：使用 Master 卡支付\n\
+  - 3：使用 Paypal 支付\n- 其他：面对面支付\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    var num = 1 ;\n    switch ( num ) {\n        case 1 :\n            document.write\
+  \ ( \"使用 Visa 卡支付\" );\n            break ; // 终止代码继续执行\n        case 2 :\n    \
+  \        document.write ( \"使用 Master 卡支付\" );\n            break ;\n        case\
+  \ 3 :\n            document.write ( \"使用 Paypal 支付\" );\n            break ;\n \
+  \       default :\n            document.write ( \"面对面支付\" );\n    }\n</script>\n\
+  ```\n\n结果：\n\n使用 Visa 卡支付\n\n2. 创建一个 `WebPay.html`\n\nthis：当前元素对象\n\n![](img/Image00026.jpg)\n\
+  \n| <input type = \"radio\" name = \"card\" value = \"1\" onclick = \"doPay(this)\"\
+  \ /> Visa 卡<input type = \"radio\" name = \"card\" value = \"2\" onclick = \"doPay(this)\"\
+  \ /> Master 卡<input type = \"radio\" name = \"card\" value = \"3\" onclick = \"\
+  doPay(this)\" /> Paypal<br><span id = \"result\" ></span><script type = \"text/javascript\"\
+  \ >    function doPay ( obj ){        var num = parseInt ( obj.value );        var\
+  \ resultObj = document.getElementById ( \"result\" );        switch ( num ) {  \
+  \          case 1 :                resultObj.innerHTML = \"使用 Visa 卡支付\" ;     \
+  \           break ;            case 2 :                resultObj.innerHTML = \"\
+  使用 Master 卡支付\" ;                break ;            case 3 :                resultObj.innerHTML\
+  \ = \"使用 Paypal 支付\" ;                break ;            default :             \
+  \   resultObj.innerHTML = \"面对面支付\" ;        }    }</script> |\n\n## While 循环语句\n\
+  \n```\nwhile (表达式){\n    语句;\n}\n```\n\n如果表达式为 true，则继续执行，否则退出循环\n\n![](img/Image00027.jpg)\n\
+  \n1. 用记事本创建一个 `WhileLoop.html` 文件，并在浏览器中打开\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    var i = 0 ;\n    while ( i < 10 )\n    {\n        document.write ( i +\
+  \ \",\" );\n        i ++;\n    }\n</script>\n```\n\n结果：\n\n0,1,2,3,4,5,6,7,8,9,\n\
+  \n## For 循环语句\n\n![](img/Image00028.jpg)\n\n1. 用记事本创建一个 `ForLoop.html` 文件，并在浏览器中打开\n\
+  \n```javascript\n<script type = \"text/javascript\" >\n    for ( var i = 0 ; i <\
+  \ 10 ; i ++) {\n        document.write ( i + \",\" );\n    }\n</script>\n```\n\n\
+  结果：\n\n0,1,2,3,4,5,6,7,8,9,\n\n## 一维数组\n\n![](img/Image00029.gif)\n\n1. 用记事本创建一个\
+  \ `OneArray.html` 文件，并在浏览器中打开\n\n```javascript\n<script type = \"text/javascript\"\
+  \ >\n    // 一维数组的定义和初始化\n    var scores = [ 90 , 70 , 50 , 80 , 60 , 85 ];\n   \
+  \ document.write ( scores [ 0 ] + \"<br>\" );\n    document.write ( scores [ 2 ]\
+  \ + \"<br>\" );\n    document.write ( scores [ 4 ] + \"<br>\" );\n</script>\n```\n\
+  \n结果：\n\n90\n\n50\n\n60\n\n2. 修改 `OneArray.html`，打印数组中的所有分数\n\n`Scores.length`：数组的总长度\n\
+  \n```javascript\n<script type = \"text/javascript\" >\n    var scores = [ 90 , 70\
+  \ , 50 , 80 , 60 , 85 ];\n    // 打印数组中的所有分数\n    for ( var i = 0 ; i < scores.length\
+  \ ; i ++) {\n        document.write ( scores [ i ] + \",\" );\n    }\n</script>\n\
+  ```\n\n结果：\n\n90,70,50,80,60,85,\n\n3. 修改 `OneArray.html`，打印数组中的所有分数\n\n```javascript\n\
+  <script type = \"text/javascript\" >\n    // 动态定义一维数组\n    var scores = new Array\
+  \ ();\n    scores [ 0 ] = 90 ;\n    scores [ 1 ] = 70 ;\n    scores [ 2 ] = 50 ;\n\
+  \    scores [ 3 ] = 80 ;\n    scores [ 4 ] = 60 ;\n    scores [ 5 ] = 85 ;\n   \
+  \ // 打印数组中的所有分数\n    for ( var i = 0 ; i < scores.length ; i ++) {\n        document.write\
+  \ ( scores [ i ] + \",\" );\n    }\n</script>\n```\n\n结果：\n\n90,70,50,80,60,85,\n\
+  \n## 全选复选框\n\n![](img/Image00030.jpg)\n\n1. 用记事本创建一个 `SelectCheckBox.html` 文件，并在浏览器中打开\n\
+  \n`document.getElementsByName()`：获取具有相同名称的元素数组\n\n`checked`：复选框是否被选中\n\n\n\n\n\n\
+  ```html\n<table width=\"400\" border=\"1\">\n    <tr>\n        <td><input type=\"\
+  checkbox\" onclick=\"checkAll(this)\" /> 全选 </td>\n        <td> 书名 </td>\n    </tr>\n\
+  \    <tr>\n        <td><input type=\"checkbox\" name=\"book\" /></td>\n        <td>\
+  \ 轻松学习 Java </td>\n    </tr>\n    <tr>\n        <td><input type=\"checkbox\" name=\"\
+  book\" /></td>\n        <td> 轻松学习 Python 3 </td>\n    </tr>\n</table>\n<script language=\"\
+  JavaScript\">\n    function checkAll ( obj )\n    {\n        var bookArray = document.getElementsByName\
+  \ ( \"book\" );\n        for ( var i = 0 ; i < bookArray.length ; i ++)\n      \
+  \  {\n            bookArray [ i ]. checked = obj.checked ;\n        }\n    }\n</script>\n\
+  ```\n\n## 二维数组\n\n![](img/Image00031.gif)\n\n### 1. 使用记事本创建 TwoArray.html 文件并在浏览器中打开\n\
+  \n```javascript\n<script type=\"text/javascript\">\n    // 二维数组的定义和初始化\n    var\
+  \ arrs =[\n        [ 10 , 20 , 30 ],\n        [ 40 , 50 , 60 ],\n        [ 70 ,\
+  \ 80 , 90 ]\n    ];\n    document.write ( arrs [ 0 ][ 0 ] + \"<br>\" );\n    document.write\
+  \ ( arrs [ 0 ][ 2 ] + \"<br>\" );\n    document.write ( arrs [ 1 ][ 2 ] + \"<br>\"\
+  \ );\n</script>\n```\n\n结果：\n\n```\n10\n30\n60\n```\n\n### 2. 使用记事本创建 TwoArray2.html\
+  \ 文件并在浏览器中打开\n\n![](img/Image00032.gif)\n\n```javascript\n<script type=\"text/javascript\"\
+  >\n    var arrs =[\n        [ 10 , 20 , 30 ],\n        [ 40 , 50 , 60 ],\n     \
+  \   [ 70 , 80 , 90 ]\n    ];\n    // i: 行索引, j: 列索引\n    for ( var i = 0 ; i < arrs.length\
+  \ ; i ++) {\n        for ( var j = 0 ; j < arrs [ i ]. length ; j ++) {\n      \
+  \      document.write ( arrs [ i ][ j ]);\n            document.write ( \" \" );\n\
+  \        }\n        document.write ( \"<br>\" );\n    }\n</script>\n```\n\n## 找狗游戏\n\
+  \n### 1. 根据二维数组地图绘制按钮\n\n![](img/Image00033.gif)\n\n```javascript\n<style>\n   \
+  \ input{\n        width:40px;\n        height:40px;\n    }\n</style>\n<span id=\"\
+  result\"></span>\n<script type=\"text/javascript\">\n    var maps =[\n        [\
+  \ 1 , 1 , 1 , 1 ],\n        [ 1 , 1 , 1 , 1 ],\n        [ 1 , 2 , 1 , 1 ],\n   \
+  \     [ 1 , 1 , 1 , 1 ]\n    ];\n    var mapHTML = \"\" ;\n    for ( var i = 0 ;\
+  \ i < maps.length ; i ++) {\n        for ( var j = 0 ; j < maps [ i ]. length ;\
+  \ j ++) {\n            mapHTML += \"<input type='button' value=' ' />\" ;\n    \
+  \    }\n        mapHTML += \"<br>\" ;\n    }\n    document.getElementById ( \"result\"\
+  \ ). innerHTML = mapHTML ;\n</script>\n```\n\n### 2. 将数组的值填入按钮，并添加按钮点击事件，如果按钮值为\
+  \ 1 则变为 *，如果按钮值为 2 则变为狗\n\n![](img/Image00034.gif)\n\n1:    *\n2:   狗\n\n```javascript\n\
+  <style>\n    input{\n        width:40px;\n        height:40px;\n    }\n</style>\n\
+  <span id=\"result\"></span>\n<script type=\"text/javascript\">\n    var maps =[\n\
+  \        [ 1 , 1 , 1 , 1 ],\n        [ 1 , 1 , 1 , 1 ],\n        [ 1 , 2 , 1 , 1\
+  \ ],\n        [ 1 , 1 , 1 , 1 ]\n    ];\n    var mapHTML = \"\" ;\n    for ( var\
+  \ i = 0 ; i < maps.length ; i ++) {\n        for ( var j = 0 ; j < maps [ i ]. length\
+  \ ; j ++) {\n            mapHTML += \"<input type='button' value=' ' onClick='doButtonClick(this,\"\
+  \ + maps [ i ][ j ]+ \")' />\" ;\n        }\n        mapHTML += \"<br>\" ;\n   \
+  \ }\n    document.getElementById ( \"result\" ). innerHTML = mapHTML ;\n    function\
+  \ doButtonClick ( obj , value ){\n        if ( value == 1 ){\n            obj.value\
+  \ = \"*\" ;\n        } else if ( value == 2 ){\n            obj.value = \"Dog\"\
+  \ ;\n        }\n    }\n</script>\n```\n\n### 3. 打印随机数 0-9\n\n`Math.random()`: 返回一个介于\
+  \ 0 和 1 之间的随机数。\n\n`Math.floor()`: 向下取整为最接近的整数\n\n```javascript\n<script type=\"\
+  text/javascript\">\n    for ( var i = 0 ; i < 10 ; i ++){\n        var num = Math.floor\
+  \ ( Math.random () * 10 )\n        document.write ( num + \", \" );\n    }\n</script>\n\
+  ```\n\n结果：\n\n```\n9, 3, 9, 0, 4, 1, 0, 3, 4, 5,\n```\n\n### 4. 随机生成 1-2 初始化二维数组，将数组的值填入按钮，并添加按钮点击事件，如果按钮值为\
+  \ 1 则变为 *，如果按钮值为 2 则变为狗\n\n![](img/Image00035.gif)\n\n1:    *\n2:   狗\n\n```javascript\n\
+  <style>\n    input{\n        width:40px;\n        height:40px;\n    }\n</style>\n\
+  <span id=\"result\"></span>\n<script type=\"text/javascript\">\n    var maps =[\n\
+  \        [ 0 , 0 , 0 , 0 ],\n        [ 0 , 0 , 0 , 0 ],\n        [ 0 , 0 , 0 , 0\
+  \ ],\n        [ 0 , 0 , 0 , 0 ]\n    ];\n    for ( var i = 0 ; i < maps.length ;\
+  \ i ++) {\n        for ( var j = 0 ; j < maps [ i ]. length ; j ++) {\n        \
+  \    var num = Math.floor ( Math.random ()* 2 )+ 1\n            maps [ i ][ j ]\
+  \ = num ;\n        }\n    }\n    var mapHTML = \"\" ;\n    for ( var i = 0 ; i <\
+  \ maps.length ; i ++) {\n        for ( var j = 0 ; j < maps [ i ]. length ; j ++)\
+  \ {\n            mapHTML += \"<input type='button' value=' ' onClick='doButtonClick(this,\"\
+  \ + maps [ i ][ j ]+ \")' />\" ;\n        }\n        mapHTML += \"<br>\" ;\n   \
+  \ }\n    document.getElementById ( \"result\" ). innerHTML = mapHTML ;\n    function\
+  \ doButtonClick ( obj , value ){\n        if ( value == 1 ){\n            obj.value\
+  \ = \"*\" ;\n        } else if ( value == 2 ){\n            obj.value = \"Dog\"\
+  \ ;\n        }\n    }\n</script>\n```\n\n## 二级联动下拉菜单\n\n### 1. 使用记事本创建 Drop-down.html\
+  \ 文件并在浏览器中打开\n\n`window.onload`: 页面加载后执行一个函数\n\n`document.createElement()`: 创建一个\
+  \ HTML 元素\n\n![](img/Image00036.jpg)\n\n```javascript\n<select id=\"country\">\n\
+  \    <option value=\"\"> --请选择国家-- </option>\n</select>\n<script type=\"text/javascript\"\
+  >\n    window.onload = function ()\n    {\n        var countryObj = document.getElementById\
+  \ ( \"country\" );\n        option = document.createElement ( \"option\" );\n  \
+  \      option.text = \"美国\" ;\n        option.value = \"美国\" ;\n        countryObj.options\
+  \ [ countryObj.options.length ]= option ;\n    }\n</script>\n```\n\n### 2. 通过 countryArray\
+  \ 添加更多选项\n\n![](img/Image00037.jpg)\n\n```javascript\n<select id=\"country\">\n\
+  \    <option value=\"\"> --请选择国家-- </option>\n</select>\n<script type=\"text/javascript\"\
+  >\n    var countryArray =[ \"中国\" , \"美国\" ];\n    window.onload = function ()\n\
+  \    {\n        var countryObj = document.getElementById ( \"country\" );\n    \
+  \    for ( var i = 0 ; i < countryArray.length ; i ++)\n        {\n            var\
+  \ option = document.createElement ( \"option\" );\n            option.text = countryArray\
+  \ [ i ];\n            option.value = countryArray [ i ];\n            countryObj.options\
+  \ [ countryObj.options.length ]= option ;\n        }\n    }\n</script>\n```\n\n\
+  ### 3. 添加省份选项\n\n`selectedIndex`: 设置或返回下拉列表中选中选项的索引。\n\n![](img/Image00038.jpg)\n\
+  \n```javascript\n<select id=\"country\" onchange=\"doCountryChange(this)\">\n  \
+  \  <option value=\"\"> --请选择国家-- </option>\n</select>\n<select id=\"province\"></select>\n\
+  <script type=\"text/javascript\">\n    var countryArray =[ \"中国\" , \"美国\" ];\n\
+  \    var provinceArray = new Array ();\n     provinceArray [ 0 ] =[];\n     provinceArray\
+  \ [ 1 ] =[ \"北京\" , \"上海\" ];\n     provinceArray [ 2 ] =[ \"旧金山\" , \"纽约\" ];\n\
+  \    window.onload = function ()\n    {\n        var country = document.getElementById\
+  \ ( \"country\" );\n        for ( var i = 0 ; i < countryArray.length ; i ++)\n\
+  \        {\n            var option = document.createElement ( \"option\" );\n  \
+  \          option.text = countryArray [ i ];\n            option.value = countryArray\
+  \ [ i ];\n            country.options [ country.options.length ]= option ;\n   \
+  \     }\n    }\n    function doCountryChange ( obj )\n    {\n        var provinceObj\
+  \ = document.getElementById ( \"province\" );\n        provinceObj.options.length\
+  \ = 0 ; // 清空所有\n        var index = obj.selectedIndex ;\n        for ( var i =\
+  \ 0 ; i < provinceArray [ index ]. length ; i ++)\n        {\n            var option\
+  \ = document.createElement ( \"option\" );\n            option.text = provinceArray\
+  \ [ index ][ i ];\n            option.value = provinceArray [ index ][ i ];\n  \
+  \          provinceObj.options [ provinceObj.options.length ]= option ;\n      \
+  \  }\n    }\n</script>\n```\n\n## 事件\n\n事件列表：\n\n| Onblur | 元素失去焦点 |\n|--------|---------------------|\n\
+  | Onchange | 内容改变 |\n| Onclick | 鼠标点击对象 |\n| Ondblclick | 鼠标双击对象 |\n\n\n\n\n\n|\
+  \ `Onerror` | 加载文档或图像时发生错误 |\n| `Onfocus` | 元素获得焦点 |\n| `Onkeydown` | 键盘按键被按下 |\n\
+  | `Onkeypress` | 键盘按键被按下 |\n| `Onkeyup` | 键盘按键被释放 |\n| `Onload` | 页面或图像加载完成 |\n\
+  | `Onmousedown` | 鼠标按钮被按下 |\n| `Onmousemove` | 鼠标移动 |\n| `Onmouseout` | 鼠标从元素上移出\
+  \ |\n| `Onmouseover` | 鼠标移到元素上 |\n| `Onmouseup` | 鼠标按钮被释放 |\n| `Onreset` | 重置按钮被点击\
+  \ |\n| `Onresize` | 窗口或框架大小改变 |\n| `Onselect` | 文本被选中 |\n| `Onsubmit` | 提交按钮被点击\
+  \ |\n| `Onunload` | 退出页面 |\n\n## 登录网页\n\n![](img/Image00039.jpg)\n\n1. 使用记事本创建一个\
+  \ `Login.html` 文件，并在浏览器中打开它\n\n```html\nUsername: <input type = \"text\" id = \"\
+  username\"   value = \"\"   /> <br>Password: <input type = \"password\"   id = \"\
+  pwd\"   value = \"\"   /> <br><input type = \"button\" value = \"Login\" onclick\
+  \ = \"checkLogin()\"   /><script   type = \"text/javascript\" >    function checkLogin\
+  \ ()    {        var usernameObj = document.getElementById ( \"username\" );   \
+  \     var pwdObj = document.getElementById ( \"pwd\" );        if ( usernameObj.value\
+  \ == \"\" )        {            alert ( \"Please input username !\" );         \
+  \   return ;        }        if ( pwdObj.value == \"\" )        {            alert\
+  \ ( \"Please input password !\" );            return ;        }        alert ( \"\
+  login successfull !\" );    }</script>\n```\n\n2. 使用记事本创建一个 `Login.html` 文件，并在浏览器中打开它\n\
+  \n`document.onkeypress`：当用户按下某个键时触发该事件。\n\n```html\nUsername: <input type = \"text\"\
+  \ id = \"username\"   value = \"\"   /><br>Password: <input type = \"password\"\
+  \   id = \"pwd\"   value = \"\"   /><br><input type = \"button\" value = \"Login\"\
+  \ onclick = \"checkLogin()\"   /><script   type = \"text/javascript\" >    document.onkeypress\
+  \ = function ( event )    {        var ext = window.event ? window.event : event\
+  \ ;        var key = ext.keyCode ? ext.keyCode : ext.which ;        if ( key ==\
+  \ 13 ) // press enter key will be invoked        {            checkLogin ();   \
+  \     }    }    function checkLogin ()    {        var usernameObj = document.getElementById\
+  \ ( \"username\" );        var pwdObj = document.getElementById ( \"pwd\" );   \
+  \     if ( usernameObj.value == \"\" )        {            alert ( \"Please input\
+  \ username !\" );            return ;        }        if ( pwdObj.value == \"\"\
+  \ )        {            alert ( \"Please input password !\" );            return\
+  \ ;        }        alert ( \"login successfull !\" );    }</script>\n```\n\n##\
+  \ 鼠标悬停缩略图放大\n\n![1554891382(1)](img/Image00040.jpg)\n\n1. 使用记事本创建一个 `ThumbnailLarger.html`\
+  \ 文件，并在浏览器中打开它\n\n`<img>`：标签在 HTML 页面中定义一张图片。\n\n```html\n  <img src = \"images/java.jpg\"\
+  \ width = \"60\"   onmouseover = \"zoomImage(this)\" />  <img src = \"images/python.jpg\"\
+  \ width = \"60\"   onmouseover = \"zoomImage(this)\" />  <img src = \"images/csharp.jpg\"\
+  \ width = \"60\"   onmouseover = \"zoomImage(this)\" />  <hr>  <img id = \"image\"\
+  \ src=\"\" /><script type = \"text/javascript\" >    function zoomImage ( obj )\
+  \    {        document.getElementById ( \"image\" ). src = obj.src ;    }</script>\n\
+  ```\n\n## 元素层级结构\n\n![](img/Image00041.jpg)\n\n1. 修改 `ElementHierarchy.html` 以获取所有子节点。\n\
+  \n`obj.childNodes`：获取当前节点的所有子节点\n\n`obj.nodeName`：获取节点名称\n\n`obj.nodeType`：获取节点类型\n\
+  \n`obj.innerHTML`：获取节点的 HTML 内容\n\n![](img/Image00042.jpg)\n\n`<b>`：标签指定粗体文本。\n\n\
+  `<a>`：标签定义超链接，用于从一个页面链接到另一个页面。\n\n```html\n<body>  <div id = \"div\" >    <b> United\
+  \ State </b>    <span> Book </span>    <a href = \"#\" > VereJava </a>  </div> \
+  \ <hr>  <input type = \"button\" value = \"Get Parent Node\" onclick = \"doGetParentNode()\"\
+  \ /></body><script type = \"text/javascript\" >    function doGetParentNode () \
+  \   {        var divObj = document.getElementById ( \"div\" );        alert ( divObj.parentNode.nodeName\
+  \ );    }</script>\n```\n\n2. 修改 `ElementHierarchy.html` 以获取所有子节点\n\n`obj.childNodes`：获取当前节点的所有子节点\n\
+  \n`obj.nodeName`：获取父节点名称\n\n`obj.nodeType`：获取父节点类型\n\n`obj.innerHTML`：获取父节点的 HTML\
+  \ 内容\n\n![](img/Image00043.jpg)\n\n```html\n<body>  <div id= \"div\" >    <b> United\
+  \ State </b>    <span> Book </span>    <a href = \"#\" > VereJava </a>  </div> \
+  \ <hr>  <input type = \"button\" value = \"Get Child Nodes\" onclick = \"doGetChildNodes()\"\
+  \ /></body><script type = \"text/javascript\" >    function doGetChildNodes () \
+  \   {        var div = document.getElementById ( \"div\" );        var childNodes\
+  \ = div.childNodes ;        for ( var i = 0 ; i < childNodes.length ; i ++)    \
+  \    {            if ( childNodes [ i ]. nodeType == 1 )            {          \
+  \      document.write ( childNodes [ i ]. nodeName + \" , \" );                document.write\
+  \ ( childNodes [ i ]. nodeType + \" , \" );                document.write ( childNodes\
+  \ [ i ]. innerHTML + \"<br>\" );            }        }    }</script>\n```\n\n3.\
+  \ 修改 `ElementHierarchy.html` 以获取 book 节点的前一个和后一个节点\n\n`obj.previousSibling`：获取当前节点的前一个兄弟节点\n\
+  \n`obj.nextSibling`：获取当前节点的后一个兄弟节点\n\n![](img/Image00044.jpg)\n\n```html\n<body>\
+  \  <div id = \"div\" >    <b> United State </b><span id = \"book\" > Book </span><a\
+  \ href = \"#\" > VereJava </a>  </div>  <hr>  <input type = \"button\" value = \"\
+  Get Sliding Nodes\" onclick = \"doGetSliding()\" /></body><script type = \"text/javascript\"\
+  \ >    function doGetSliding ()    {        var bookObj = document.getElementById\
+  \ ( \"book\" );        document.write ( bookObj.previousSibling.innerHTML + \"<br>\"\
+  \ );        document.write ( bookObj.nextSibling.innerHTML );    }</script>\n```\n\
+  \n## 创建文本节点\n\n![](img/Image00045.jpg)\n\n1. 使用记事本创建一个 `CreateTextNode.html` 文件，并在浏览器中打开它\n\
+  \n`obj.createTextNode`：使用指定的文本创建一个文本节点\n\n`obj.appendChild`：将一个节点追加为某个节点的最后一个子节点\n\
+  \n```html\n<style>    div{        width:200px;        height:100px;        border:1px\
+  \ solid #ff0000;    }</style><div id = \"div\" ></div><input type = \"button\" value\
+  \ = \"Create Text Node\" onclick = \"doCreateTextNode()\" /><script type = \"text/javascript\"\
+  \ >    function doCreateTextNode ()    {        var divObj = document.getElementById\
+  \ ( \"div\" );        var newNode = document.createTextNode ( \"Good Dreams\" );\
+  \        divObj.appendChild ( newNode );    }</script>\n```\n\n2. 使用记事本创建一个 `CreateElement.html`\
+  \ 文件，并在浏览器中打开它\n\n`obj.createElement`：使用指定的名称创建一个元素节点\n\n`obj.appendChild`：将一个节点追加为某个节点的最后一个子节点\n\
+  \n![](img/Image00046.jpg)\n\n```html\n<style>    div{        width:200px;      \
+  \  height:100px;        border:1px solid #ff0000;    }</style><div id = \"div\"\
+  \ ></div><input type = \"button\" value = \"Create Element\" onclick = \"doCreateElement()\"\
+  \ /><script type = \"text/javascript\" >    function doCreateElement ()    {   \
+  \     var divObj = document.getElementById ( \"div\" );        var buttonElement\
+  \ = document.createElement ( \"input\" );        buttonElement.type = \"button\"\
+  \ ;        buttonElement.value = \"button\" ;        divObj.appendChild ( buttonElement\
+  \ );    }</script>\n```\n\n## 删除节点\n\n![](img/Image00047.jpg)\n\n1. 使用记事本创建一个 `DeleteNode.html`\
+  \ 文件，并在浏览器中打开它\n\n`obj.removeChild`：移除指定的子节点\n\n```html\n<style>    div{       \
+  \ width:200px;        height:250px;        border:1px solid #ff0000;    }</style><div\
+  \ id = \"div1\" >    <img id = \"image\" src = \"python.jpg\" /></div><br><input\
+  \ type = \"button\" value = \"Remove Child\" onclick = \"doRemoveChild()\" /><script\
+  \ type = \"text/javascript\" >    function doRemoveChild ()    {        var div\
+  \ = document.getElementById ( \"div1\" );        var img = document.getElementById\
+  \ ( \"image\" );        div.removeChild ( img );    }</script>\n```\n\n## 替换节点\n\
+  \n![](img/Image00048.jpg)\n\n1. 使用记事本创建一个 `ReplaceNode.html` 文件，并在浏览器中打开它\n\n\n\n\
+  \n\n## `obj.replaceChild`: 用新节点替换子节点\n\n```\n<style>    #div1{        width:200px;       \
+  \ height:200px;        border:1px solid #ff0000;    }</style><div id = \"div1\"\
+  \ > Everyone has inside them a piece of good news. </div><input type = \"button\"\
+  \ value = \"Replace Child Node\" onclick = \"doReplaceChild()\" /><script type =\
+  \ \"text/javascript\" >    function doReplaceChild ()    {        var imgNode =\
+  \ document.createElement ( \"img\" );        imgNode.src = \"python.jpg\" ;       \
+  \ var div1 = document.getElementById ( \"div1\" );        div1.replaceChild ( imgNode\
+  \ , div1.childNodes [ 0 ]);    }  </script>\n```\n\n## 添加联系人示例\n\n![](img/Image00049.jpg)\n\
+  \n1. 使用记事本创建一个 `AddContactExample.html` 文件，并在浏览器中打开它\n\n```\n<style>    #div{       \
+  \ border:1px solid #ff0000;        width:550px;    }</style><a href = \"javascript:void(0)\"\
+  \ onclick = \"addContact()\" > Add Contact </a><div id = \"div\" >    <div id =\
+  \ \"contact\" >        Name: <input type = \"text\" name = \"user\" />        Telephone:\
+  \ <input type = \"text\" name = \"telephone\" />        <a href = \"javascript:void(0)\"\
+  \ onclick = \"deleteNode(this)\" > Delete </a>    </div></div><script type = \"\
+  text/javascript\" >    function addContact ()    {        var contact = document.getElementById\
+  \ ( \"contact\" );        var newNone = contact.cloneNode ( true );        var div\
+  \ = document.getElementById ( \"div\" );        div.appendChild ( newNone );   \
+  \ }    function deleteNode ( obj )    {        if ( obj.parentNode.parentNode.childNodes.length\
+  \ > 1 )          obj.parentNode.removeNode ( true );    }</script>\n```\n\n## CSS\
+  \ 样式字体\n\n![](img/Image00050.jpg)\n\n1. 使用记事本创建一个 `CSSStyleFont.html` 文件，并在浏览器中打开它\n\
+  \n```\n<div id = \"div\" > Choose to stay positive </div><input type = \"button\"\
+  \ value = \"Change Font Style\" onclick = \"doChangeFont()\" /><script type = \"\
+  text/javascript\" >    function doChangeFont ()    {        var div = document.getElementById\
+  \ ( \"div\" );        div.style.fontSize = 48 + \"px\" ;        div.style.fontWeight\
+  \ = \"bold\" ;        div.style.color = \"#ff0000\" ;    }</script>\n```\n\n## CSS\
+  \ 更改类选择器\n\n![](img/Image00051.jpg)\n\n1. 使用记事本创建一个 `CSSClassSelector.html` 文件，并在浏览器中打开它\n\
+  \n```\n<style type = \"text/css\" >    .smallFont{        font-size:12px;       \
+  \ color:#ff0000;    }    .bigFont{        font-size:48px;        font-weight:bold;       \
+  \ color:#00ff00;    }</style><div id = \"div\" > Just keep doing every day. </div><input\
+  \ type = \"button\" value = \"Change Font Class\" onclick = \"changeFont()\" /><script\
+  \ type = \"text/javascript\" >    function changeFont ()    {        var div = document.getElementById\
+  \ ( \"div\" );        if ( div.className == \"smallFont\" )        {           \
+  \ div.className = \"bigFont\" ;        }        else        {            div.className\
+  \ = \"smallFont\" ;        }    }</script>\n```\n\n## CSS 溢出展开与关闭\n\n![1554913527(1)](img/Image00052.jpg)\n\
+  \n1. 使用记事本创建一个 `CSSExpandClose.html` 文件，并在浏览器中打开它\n\n```\n<style type = \"text/css\"\
+  \ >    .open{        display :\"\" ;    }    .close{        display :none ;    }   \
+  \ #div{        width:300px;        height:30px;        border:1px solid #ff0000;       \
+  \ text-align:right;    }    #div2{        width:300px;        border:1px solid #00ff00;   \
+  \ }</style><div id = \"div\" onclick = \"change()\" > Chick Here </div><div id =\
+  \ \"div2\" ><ul>  <li> Don’t be afraid, for I am with you. </li>  <li> Your smile\
+  \ lights up the room. </li>  <li> You are doing an amazing job at life. </li></ul></div><script\
+  \ type = \"text/javascript\" >    function change ()    {        var div2 = document.getElementById\
+  \ ( \"div2\" );        if ( div2.className == \"open\" )        {            div2.className\
+  \ = \"close\" ;        }        else        {            div2.className = \"open\"\
+  \ ;        }    }</script>\n```\n\n## CSS 浮动高亮\n\n![](img/Image00053.jpg)\n\n1.\
+  \ 使用记事本创建一个 `CSSHighlighting.html` 文件，并在浏览器中打开它\n\n```\n<style type = \"text/css\"\
+  \ >    .over{        background-color: #ff0000;    }    .down{        background-color:\
+  \ #0000ff;    }    table{        border:1px solid #eeeeee;        width:400px;       \
+  \ border-collapse: collapse;    }    table th{        border:1px solid #eeeeee;       \
+  \ background-color: #cccccc;    }    table td{        border:1px solid #eeeeee;   \
+  \ }</style><table>    <tr>        <th> Username </th><th> Password </th>    </tr>   \
+  \ <tr onmousedown = \"doDown(this)\" onmouseover = \"doOver(this)\" onmouseout =\
+  \ \"doOut(this)\" >        <td> admin </td><td> 111111 </td>    </tr>    <tr onmousedown\
+  \ = \"doDown(this)\"   onmouseover = \"doOver(this)\" onmouseout = \"doOut(this)\"\
+  \ >        <td> isacc </td><td> 222222 </td>    </tr>    <tr onmousedown = \"doDown(this)\"\
+  \   onmouseover = \"doOver(this)\" onmouseout = \"doOut(this)\" >        <td> sala\
+  \ </td><td> 333333 </td>    </tr></table><script type = \"text/javascript\" >   \
+  \ function doOver ( obj ){        if ( obj.className != \"down\" ){            obj.className\
+  \ = \"over\" ;        }    }    function doOut ( obj ){        if ( obj.className\
+  \ != \"down\" ){            obj.className = \"\" ;        }    }    function doDown\
+  \ ( obj ){        if ( obj.className != \"down\" ){            obj.className = \"\
+  down\" ;        } else {            obj.className = \"over\" ;        }    }</script>\n\
+  ```\n\n## 表格创建行与列\n\n![](img/Image00054.jpg)\n\n1. 使用记事本创建一个 `TableCreateRowsColumns.html`\
+  \ 文件，并在浏览器中打开它\n\n`table.insertRow`: 在给定的 `<table>` 中插入一个新行（`<tr>`），返回对新行的引用。\n\n\
+  `table.insertCell`: 在给定的 `<tr>` 中插入一个新列（`<td>`），返回对新列的引用。\n\n```\n<style type =\
+  \ \"text/css\" >    .tableClass{        width:600px;        border:1px solid #ff0000;       \
+  \ border-collapse: collapse;    }    .tableClass td{        border:1px solid #ff0000;   \
+  \ }</style><input type = \"button\" value = \"Create Table\" onclick = \"doCreateTable()\"\
+  \ /><input type = \"button\" value = \"Create Row\" onclick = \"doCreateRow()\"\
+  \ />Rows: <input type = \"text\" value = \"\" id = \"row\" /> Columns: <input type\
+  \ = \"text\" value = \"\" id = \"col\" /><br><br><div id = \"div\" ></div><script\
+  \ type = \"text/javascript\" >    var table ;    function doCreateTable ()    {       \
+  \ table = document.createElement ( \"table\" );        table.className = \"tableClass\"\
+  \ ;        document.getElementById ( \"div\" ). appendChild ( table );    }    function\
+  \ doCreateRow ()    {        var rowNum = parseInt ( document.getElementById ( \"\
+  row\" ). value );        var colNum = parseInt ( document.getElementById ( \"col\"\
+  \ ). value );        for ( var i = 1 ; i <= rowNum ; i ++)        {            var\
+  \ row = table.insertRow (- 1 );            for ( var j = 1 ; j <= colNum ; j ++)           \
+  \ {                var cell = row.insertCell (- 1 );                cell.innerHTML\
+  \ = \"row: \" + i + \", col: \" + j ;            }        }    }</script>\n```\n\
+  \n## 删除表格行与列\n\n![](img/Image00055.jpg)\n\n1. 使用记事本创建一个 `DeleteTableRowColumn.html`\
+  \ 文件，并在浏览器中打开它\n\n`table.deleteCell`: 删除当前表格行中的一个单元格。\n\n\n\n\n\n```\n<style type\
+  \ = \"text/css\" >    .tableClass{        width:600px;        border:1px solid #ff0000;       \
+  \ border-collapse: collapse;    }    .tableClass td{        border:1px solid #ff0000;   \
+  \ }</style><input type = \"button\" value = \"Create Table\" onclick = \"doCreateTable()\"\
+  \ /><input type = \"button\" value = \"Create Row\" onclick = \"doCreateRow()\"\
+  \ /><br><input type = \"button\" value = \"Delete Row\" onclick = \"doDeleteRow()\"\
+  \ /><input type = \"button\" value = \"Delete Col\" onclick = \"doDeleteCol()\"\
+  \ /><br>Rows: <input type = \"text\" value = \"\" id = \"row\" /> Columns: <input\
+  \ type = \"text\" value = \"\" id = \"col\" /><br><br><div id = \"div\" > </div><script\
+  \ type = \"text/javascript\" >    var table ;    function doCreateTable ()    {       \
+  \ table = document.createElement ( \"table\" );        table.className = \"tableClass\"\
+  \ ;        document.getElementById ( \"div\" ). appendChild ( table );    }    function\
+  \ doCreateRow ()    {        var rowNum = parseInt ( document.getElementById ( \"\
+  row\" ). value );        var colNum = parseInt ( document.getElementById ( \"col\"\
+  \ ). value );        for ( var i = 1 ; i <= rowNum ; i ++)        {            var\
+  \ row = table.insertRow (- 1 );            for ( var j = 1 ; j <= colNum ; j ++)           \
+  \ {                var cell = row.insertCell (- 1 );                cell.innerHTML\
+  \ = \"Rows: \" + i + \",Columns: \" + j ;            }        }    }    function\
+  \ doDeleteRow ()    {        var rowNum = parseInt ( document.getElementById ( \"\
+  row\" ). value );        table.deleteRow ( rowNum );    }    function doDeleteCol\
+  \ ()    {        var colNum = parseInt ( document.getElementById ( \"col\" ). value\
+  \ );        var rows = table.rows ;        for ( var i = 0 ; i < rows.length ; i\
+  \ ++)        {            rows [ i ]. deleteCell ( colNum );        }    }</script>\n\
+  ```\n\n# 计时器\n\n![](img/Image00056.jpg)\n\n1. 使用记事本创建一个`Timer.html`文件，并在浏览器中打开它\n\
+  \n- `getFullYear()`: 获取四位数的年份（yyyy）\n- `getMonth()`: 获取月份（0-11）\n- `getDate()`:\
+  \ 获取日期（1-31）\n- `getHours()`: 获取小时（0-23）\n- `getMinutes()`: 获取分钟（0-59）\n- `getSeconds()`:\
+  \ 获取秒数（0-59）\n- `getTime()`: 获取时间（自 1970 年 1 月 1 日以来的毫秒数）\n- `setInterval()`: 持续调用该函数，直到调用`clearInterval()`为止\n\
+  \n```\n<div id = \"dateDiv\" ></div><script type = \"text/javascript\" >    function\
+  \ doSetInterval ()    {        var dateDiv = document.getElementById ( \"dateDiv\"\
+  \ );        var d = new Date ();        var dateString = d.getHours ()+ \":\" +\
+  \ d.getMinutes ()+ \":\" + d.getSeconds ()        dateDiv.innerHTML = dateString\
+  \ ;    }    setInterval ( \"doSetInterval()\" , 1000 );</script>\n```\n\n感谢学习，如果你想学习网页编码，请学习这本书\n\
+  \n[`www.amazon.com/dp/B07S8S5TLQ`](https://www.amazon.com/dp/B07S8S5TLQ)\n\n![](img/Image00057.jpg)\n\
+  \n[`www.amazon.com/dp/B08D863KFY`](https://www.amazon.com/dp/B08D863KFY)\n\n![](img/Image00058.jpg)\n\
+  \n如果你喜欢这本书并从中受益，我希望听到你的反馈，并希望你能花些时间在亚马逊上发布评论。你的反馈和支持将帮助我们在未来大幅改进，使这本书变得更好。\n\n你现在可以点击这个链接。\n\
+  \n[`www.amazon.com/review/create-review?&asin=1093504781`](http://www.amazon.com/review/create-review?&asin=1093504781)\n\
+  \n不同国家的评论只需修改链接中的亚马逊域名：\n\n- www.amazon.co.uk\n- www.amazon.de\n- www.amazon.fr\n\
+  - www.amazon.es\n- www.amazon.it\n- www.amazon.ca\n- www.amazon.nl\n- www.amazon.in\n\
+  - www.amazon.co.jp\n- www.amazon.com.br\n- www.amazon.com.mx\n- www.amazon.com.au\n\
+  \n祝你未来一切顺利，取得成功！\n\n"
