@@ -1,0 +1,30 @@
+name: CSS： QuickStart Guide - Effective Web Design (CSS, HTML, JavaScript, Programming)
+name_cn: CSS：快速启动指南 - 高效网页设计（CSS、HTML、JavaScript、编程）
+slug: css-quickstart-guide---effective-web-design-css-html-javascr
+toc:
+- - '##'
+  - font – 用于指定各种字体属性的简写属性
+- - '###'
+  - 如何设置字体系列
+- - '###'
+  - 如何设置字体样式
+- - '###'
+  - 如何设置字体变体
+- - '###'
+  - 如何设置字体粗细
+- - '###'
+  - 如何设置字体大小
+- - '###'
+  - 如何设置字体大小调整
+- - '###'
+  - 如何设置字体拉伸
+- - '###'
+  - 如何设置简写属性
+- - '##'
+  - '`Border-Color`'
+- - '##'
+  - 边距属性（Margin Property）
+- - '##'
+  - 下边距（Margin-Bottom）
+- - '##'
+  - 上边距（Margin-Top）

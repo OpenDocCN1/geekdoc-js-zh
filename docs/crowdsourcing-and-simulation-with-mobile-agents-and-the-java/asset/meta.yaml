@@ -1,0 +1,26 @@
+name: Crowdsourcing and Simulation with Mobile Agents and the JavaScript Agent Machine
+name_cn: 移动代理与JavaScript代理机器 众包与模拟
+slug: crowdsourcing-and-simulation-with-mobile-agents-and-the-java
+toc:
+- - '###'
+  - 目标变量
+- - '###'
+  - 辅助变量
+- - '###'
+  - 定义 5-1. 可在智能体活动函数内部使用的 AgentJS 调度块构造函数模板。`B`：线性块，`L`：循环，`I`：迭代器。
+- - '###'
+  - 练习 5-1. 调度块
+- - '###'
+  - 练习 7-2. Web 代理（2）
+- - '###'
+  - 练习 7-3. Web 代理（2）
+- - '###'
+  - 定义 9-1. 支持补丁网格架构的 SEJAM2 仿真模型基本模板
+- - '###'
+  - 定义 9-2. 定义通信网络的网格世界架构，采用冯·诺依曼邻域连接，由处理计算智能体的 v-JAM 节点组成
+- - '###'
+  - 示例 13-2. SEJAM2 世界智能体示例（world.js）
+- - '###'
+  - 示例 13-3. 具有随机游走行为的简单物理模拟智能体示例（agent.js）
+- - '###'
+  - 示例 13-9

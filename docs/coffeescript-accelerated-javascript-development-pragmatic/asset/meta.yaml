@@ -1,0 +1,14 @@
+name: CoffeeScript： Accelerated JavaScript Development (Pragmatic)
+name_cn: CoffeeScript：加速JavaScript开发指南
+slug: coffeescript-accelerated-javascript-development-pragmatic
+toc:
+- - '##'
+  - 1.1 安装 CoffeeScript
+- - '###'
+  - => 是如何工作的？
+- - '###'
+  - 注意：全局变量与隐式声明
+- - '###'
+  - '`hasOwnProperty` 和 `for own`'
+- - '###'
+  - '`for` 没有作用域'

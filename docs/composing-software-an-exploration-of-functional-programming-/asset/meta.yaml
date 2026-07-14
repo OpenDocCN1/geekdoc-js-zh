@@ -1,0 +1,11 @@
+name: Composing Software： An Exploration of Functional Programming and Object Composition
+  in JavaScript (2024)
+name_cn: 软件组合：JavaScript 函数式编程与对象组合探索 (2024)
+slug: composing-software-an-exploration-of-functional-programming-
+toc:
+- - '###'
+  - JavaScript 缺少什么
+- - '###'
+  - JavaScript 拥有而纯函数式语言所缺乏的
+- - '###'
+  - 模拟非常适合集成测试

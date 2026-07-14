@@ -1,0 +1,964 @@
+- "# AngularJS 编程：初学者快速学习指南，速成课程，快速启动指南，动手项目教程书，简单步骤，终极初学者指南\n\n## 关于作者\n\n美国 Zend\
+  \ 认证 PHP 工程师  \n美国 Sun 认证 JAVA 程序员  \n美国 Oracle 认证 SCWCD 开发人员  \n美国 CompTIA 认证 A+\
+  \ 专业人员  \n美国 Microsoft 认证 ASP.NET 专家  \n美国 Microsoft 认证 MCP 专业人员  \n美国 Microsoft\
+  \ 认证 TECHNOLOGY 专家  \n美国 CompTIA 认证 NETWORK+ 专业人员  \n\n[亚马逊上强烈推荐的计算机书籍：](http://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=ntt_dp_epwbk_0)\
+  \  \n[Linux 命令行](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[JAVA 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[PHP 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[JavaScript 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[C++ 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[AngularJS 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[JQuery 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[Python 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[HTML CSS 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[C# 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[Visual Basic 编程](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n[JavaScript 50 个实用程序](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \  \n\n## 前言\n\n《AngularJS 编程》涵盖了所有必要的 AngularJS 知识。您可以快速轻松地学习 AngularJS 的完整初级技能。\n\
+  \n本书包含许多实用的动手项目。您可以通过动手项目来学习 AngularJS 编码。\n\n### 源代码下载\n\n本书提供源代码下载；您可以下载源代码以便更好地学习，或者将源代码复制到您喜欢的编辑器中测试程序。源代码的下载链接位于本书最后一页。\n\
+  \n现在就开始编码吧！\n\n# 第 1 小时\n\n## AngularJS 简介\n\n### 什么是 AngularJS？\n\nAngularJS 是一个\
+  \ JavaScript 框架。它可以将 HTML 作为模板语言，并扩展 HTML 的语句结构，从而清晰简洁地描述应用程序的组件。\n\nAngularJS 的语法如下所示：\n\
+  \n`<div ng-app=\" \">…… </div>`\n\n我们知道`div`是一个 HTML 标签，而`ng-app`是 AngularJS 的指令，它像属性一样用在`div`标签中。（我们稍后会讨论指令）\n\
+  \n### 学习 AngularJS 的前提条件\n\n在学习 AngularJS 之前，你应该具备 HTML 和 JavaScript 的基础知识，因为 AngularJS\
+  \ 与 HTML 和 JavaScript 协同工作。你可以在附录 1 或附录 2 中复习 HTML、CSS 和 JavaScript。\n\n（注：本书附录包含“HTML、CSS\
+  \ 和 JavaScript 复习”）\n\n### 下载 AngularJS\n\n下载 AngularJS 并不复杂；只需访问 AngularJS 官网[`AngularJS.org`](https://AngularJS.org)，点击“Download”按钮。下载\
+  \ AngularJS 文件`angular.min.js`后，将其放入`myFolder\\js`文件夹（即把 HTML 文件和 JavaScript 文件放入`myFolder`文件夹，把`angular.min.js`放入`myFolder\\\
+  js`文件夹），然后在 HTML 页面的 head 部分写入该`angular.min.js`文件的路径，如下所示：\n\n```html\n<html>\n\
+  <head>\n<script src=\"js\\angular.min.js\"></script>\n………………………………………………………………………………………………………………………………………….......\n\
+  </head>\n```\n\n在上面的例子中，你可以看到 AngularJS 的路径如`<script src=\"js\\angular.min.js\"\
+  >`。现在 AngularJS 框架已添加到我们的应用程序中。因此，从现在开始我们可以使用 AngularJS 框架。\n\n### AngularJS 的优势\n\
+  \n- AngularJS 能够将数据与 HTML 绑定。\n- AngularJS 提供单页应用程序（SPA）。\n- AngularJS 的视图完全用 HTML\
+  \ 编写，控制器用 JavaScript 编写，模型用 AngularJS 编写。它是一个 MVC 框架。\n- 只需几行代码即可实现更多功能。\n- AngularJS\
+  \ 提供了代码和组件的可重用性。\n\n### 第一个 AngularJS 脚本\n\n#### 示例 1.1\n\n打开记事本，编写如下代码。（图 1）\n\n\
+  ```html\n<html>\n<script src=\"js\\angular.min.js\"></script>\n<body>\n<div ng-app=\"\
+  \">\n<p>在输入框中输入我的 ID：</p>\n<p><input type=\"text\" ng-model=\"id\" </p>\n<br>\n\
+  <h1>欢迎！{{id}}</h1>\n</div>\n</body>\n</html>\n```\n\n![](img/00001.jpeg)\n\n（图 1）\n\
+  \n请将文件以名称`FirstAngularJS.html`保存在`myFolder`中。注意：确保使用`.html`扩展名。\n\n双击`FirstAngularJS.html`文件，`FirstAngularJS.html`将在浏览器中运行，并查看输出。（图\
+  \ 2）\n\n（假设我输入了 ID `168168`。）\n\n##### 输出：\n\n![](img/00002.jpeg)\n\n##### （图 2）\n\
+  \n##### 解释：\n\n`<script src=\"js\\angular.min.js\"></script>` 将 AngularJS 框架添加到当前应用程序中。\n\
+  \n`<div ng-app=\"\"></div>` 表示你可以在此处编写 AngularJS 应用程序。\n\n`ng-model=\"id\"` 将 HTML\
+  \ 控件（input、select 和 textarea）输入的数据绑定到应用程序数据`id`。\n\n`{{id}}` 与`ng-model=\"id\"`中的`id`同步。\n\
+  \n`{{id}}`：显示`id`的值。\n\n如果要编辑代码，请右键单击文件`FirstAngularJS.html` > 打开方式 > 记事本。\n\n###\
+  \ Hello World！\n\n`<html ng-app>…</html>`\n\n`<html ng-app>…</html>` 表示在标签内部使用了\
+  \ AngularJS 脚本。\n\n打开记事本，编写如下代码。\n\n#### 示例 1.2\n\n```html\n<html ng-app>\n<script\
+  \ src=\"js\\angular.min.js\"></script>\n<body><br>\n<p>\n<label>姓名：   </label>\n\
+  <input type = \"text\" ng-model = \"yourName\" placeholder = \"请输入你的姓名。\"><br>\n\
+  <h1>你好 {{yourName}}！</h1>\n</p>\n</body>\n</html>\n```\n\n请将文件以名称`Hello.html`保存在`myFolder`中。注意：确保使用`.html`扩展名。双击`Hello.html`文件，`Hello.html`将在浏览器中运行，在文本框中输入`would`，并查看输出。\n\
+  \n##### 输出：\n\n![](img/00003.jpeg)\n\n##### 解释：\n\n`<html ng-app>…</html>` 表示在标签内部使用了\
+  \ AngularJS 脚本。\n\n`<script src=\"js\\angular.min.js\"></script>` 将 AngularJS 框架添加到当前应用程序中。\n\
+  \n`ng-model = \"yourname\"` 将 HTML 控件输入的值绑定到`Username`。\n\n`placeholder = …` 指定一个简短的提示，描述输入文本的预期值。\n\
+  \n`{{yourname}}` 与`ng-model=\"yourname\"`中的`yourname`同步。\n\n`{{yourname}}`：显示`yourname`的值。\n\
+  \n### data-ng-app\n\n`<html data-ng-app>…</html>`\n\n`<html data-ng-app>…</html>`\
+  \ 表示在 html5 标签内部使用了 AngularJS 脚本。\n\n#### 示例 1.3\n\n```html\n<!DOCTYPE html>\n<html\
+  \ data-ng-app=\"\"> // 兼容 html5\n<script src=\"js\\angular.min.js\"></script>\n\
+  <body><br>\n<p>\n<label>姓名：   </label>\n<input type = \"text\" ng-model = \"yourName\"\
+  \ placeholder = \"请输入你的姓名。\"><br>\n<h1>你好  {{yourName}}！</h1>\n</p>\n</body>\n</html>\n\
+  ```\n\n请在文本框中输入`My Friends`。\n\n##### 输出：\n\n![](img/00004.jpeg)\n\n##### 解释：\n\n\
+  `<html data-ng-app>…</html>` 表示在 html5 标签内部使用了 AngularJS 脚本。\n\n`<script src=\"\
+  js\\angular.min.js\"></script>` 将 AngularJS 框架添加到当前应用程序中。\n\n`ng-model = \"yourname\"\
+  ` 将 HTML 控件输入的值绑定到`Username`。\n\n`placeholder = …` 指定一个简短的提示，描述输入文本的预期值。\n\n`{{yourname}}`\
+  \ 与`ng-model=\"yourname\"`中的`yourname`同步。\n\n`{{yourname}}`：显示`yourname`的值。\n\n\
+  ## 总结\n\n在本章中，我们学习了什么是 AngularJS，如何下载 AngularJS 以及 AngularJS 的优势。\n\n`<script src=\"\
+  js\\angular.min.js\"></script>` 将 AngularJS 框架添加到当前应用程序中，这样我们就可以使用 AngularJS 框架了。\n\
+  \n`<html ng-app>…</html>` 表示在标签内部使用了 AngularJS 脚本。\n\n`<html data-ng-app>…</html>`\
+  \ 表示在 html5 标签内部使用了 AngularJS 脚本。\n\n如果要编辑代码，请右键单击文件`FirstAngularJS.html` > 打开方式\
+  \ > 记事本。\n\n## 动手项目\n\n### 显示你输入的内容\n\n打开记事本，编写 AngularJS 代码（图 1）：\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<script src=\"js\\angular.min.js\"></script>\n<body>\n\
+  <div ng-app=\"\">\n<p>请输入一些文本。</p>\n<textarea ng-model=\"texts\"></textarea>\n<p>显示你输入的内容：</p>\n\
+  <H1><p ng-bind=\"texts\"></p><H1>\n</div>\n</body>\n</html>\n```\n\n![](img/00005.jpeg)\n\
+  \n（图 1）\n\n请将文件以名称`ShowInputted.html`保存在`myFolder`中。注意：确保使用`.html`扩展名。\n\n双击`ShowInputted.html`文件，`ShowInputted.html`将在浏览器中运行，请在文本框中输入一些文本，并查看输出。（图\
+  \ 2）\n\n##### 输出：（图 2）\n\n![](img/00006.jpeg)\n\n##### 解释：\n\n`<script src=\"js\\\
+  angular.min.js\"></script>` 将 AngularJS 框架添加到当前应用程序中。\n\n`<div ng-app=\"\"></div>`\
+  \ 表示你可以在此处编写 AngularJS 应用程序。\n\n`ng-model=\"texts\"` 将 HTML 控件（textarea）输入的数据绑定到应用程序数据`texts`。\n\
+  \n`<p ng-bind=\"texts\"></p>` 可以在指定的 HTML 元素`<p></p>`中“输出”`texts`的值。\n\n# 第 2 小时\n\
+  \n## 指令\n\nAngularJS 的指令\n\n\n\n\nAngularJS 允许我们通过属性以非常简单的方式扩展 HTML。这些属性本质上就是指令。有不同类型的指令，它们在应用程序中可以扮演不同的角色。它们分别是应用指令、模型指令、绑定指令、初始化指令和重复指令。下面我们逐一详细讨论。\n\
+  \n## 应用指令\n\n`ng-app=\" \"`\n\n应用指令定义了 AngularJS 应用程序的区域。应用指令的语法是 `ng-app=\" \"\
+  `；这里的 `ng` 是 AngularJS 的命名空间，`app` 是 AngularJS 的应用程序区域。\n\n### 示例 2.1\n\n```html\n\
+  <!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS 入门</title>\n    <script src=\"\
+  js\\angular.min.js\"></script>\n</head>\n<body>\n    <div ng-app=\" \"> \n     \
+  \   AngularJS 应用程序已启动。\n    </div>\n</body>\n</html>\n```\n\n### 输出：\n\nAngularJS\
+  \ 应用程序已启动。\n\n### 说明：\n\n在 head 部分（`<script src = \"js\\angular.min.js\"> </script>`），加载了\
+  \ AngularJS 框架，这意味着我们现在可以使用 AngularJS 框架了。\n\n在 body 部分（`<div ng-app=\" \"> </div>`），可以在此处编写\
+  \ AngularJS 应用程序。\n\n在最后一个标签（`</div>`）处，AngularJS 应用程序结束。\n\n## 模型指令\n\n`ng-model\
+  \ = \"data\"`\n\n模型指令用于将 HTML 控件（input、checkbox 和 select 等）输入的值绑定到应用程序数据。`ng-model\
+  \ = \"data\"` 是模型指令的语法。我们通过一个示例来更好地理解。\n\n### 示例 2.2\n\n```html\n<!DOCTYPE html>\n\
+  <html >\n<head>\n    <title>AngularJS 入门</title>\n    <script src=\"js\\angular.min.js\"\
+  ></script>\n</head>\n<body>\n<div ng-app=\"\">\n<p>用户名：<br>\n<input type=\"text\"\
+  \ ng-model = \"Username\"></p>\n</div>\n</body>\n</html>\n```\n\n### 输出：\n\n用户名：\n\
+  \n|  |\n\n### 说明：\n\n`ng-model = \"Username\"` 将 HTML 控件输入的值绑定到 `Username`。\n\n\
+  现在你看不到结果，因为这段程序缺少代码 `<p ng-bind=\"Username\"></p>`。\n\n## 绑定指令\n\n`<p>ng-bind =\
+  \ \"data\"</p>`\n\n绑定指令用于将数据值绑定到 HTML 元素 `<p>` 上；绑定指令的语法是 `<p>ng-bind = \"data\"\
+  </p>`。我们通过一个示例来更好地理解。\n\n### 示例 2.3\n\n```html\n<!DOCTYPE html>\n<html >\n<head>\n\
+  \    <title>AngularJS 入门</title>\n    <script src=\"js\\angular.min.js\"></script>\n\
+  </head>\n<body>\n<div ng-app=\"\">\n<p>用户名：<br>\n<input type=\"text\" ng-model =\
+  \ \"Username\"></p>\n<p ng-bind=\"Username\"></p>\n</div>\n</body>\n</html>\n```\n\
+  \n打开记事本，将上述代码粘贴并保存为 `.html` 扩展名，然后在输入框中输入用户名 \"Ray Yao\"。\n\n### 输出：\n\n![](img/00007.jpeg)\n\
+  \n### 说明：\n\n`<p>ng-bind=\"Username\"</p>` 将 `Username` 的值绑定到 `<p></p>` 标签，并“显示”其值。\n\
+  \n在上面的示例中，（`<p ng-bind=\"Username\"></p>`）可以更新 `Username` 的值并将其写入 `<p></p>` 标签。\n\
+  \n`<p>ng-bind=\"data\"</p>` 可以在指定的 HTML 元素 `<p>` 中“输出” `data` 的值。\n\n### ng-model\
+  \ 与 ng-bind\n\n它们都使用了“bind”。\n\n（1）`ng-model = \"data\"`：将 HTML 控件（textarea、checkbox、select、input\
+  \ 和 radio 等）输入的值绑定到 `data`。\n\n#### 例如：\n\n`ng-model = \"Username\"` 将输入的值绑定到 `Username`。\n\
+  \n（就像将输入的值赋给 `Username`。）\n\n（2）`<p>ng-bind= \"data\"</p>`：将 `data` 绑定到 HTML 元素\
+  \ `<p></p>`。\n\n#### 例如：\n\n`<p ng-bind=\"Username\"></p>` 将数据 `Username` 绑定到 `<p></p>`\
+  \ 元素并显示其值。\n\n（就像在 `<p></p>` 中显示 `Username` 的值。）\n\n## 初始化指令\n\n`ng-init = \"data\
+  \ = 'value'\"`\n\n初始化指令用于用某个值初始化数据。初始化指令的语法是 `ng-init = \"data = 'value'\"`。我们通过一个示例来更好地理解。\n\
+  \n### 示例 2.4\n\n```html\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS\
+  \ 入门</title>\n    <script src=\"js\\angular.min.js\"></script>\n</head>\n<body>\n\
+  <div ng-app=\"\" ng-init=\"Username= 'Andy Smith' \">\n   <p>用户名：<input type=\"\
+  text\" ng-model = \"Username\"></p>\n   <p ng-bind=\"Username\"></p>\n</div>\n</body>\n\
+  </html>\n```\n\n打开记事本，将上述代码粘贴并保存为 `.html` 扩展名。\n\n### 输出：\n\n![](img/00008.jpeg)\n\
+  \n### 说明：\n\n`ng-init=\"Username= 'Andy Smith'\"` 用值 \"Andy Smith\" 初始化 `Username`。\n\
+  \n在上面的示例中，（`<div ng-app=\"\" ng-init = \"Username= 'Andy Smith' \">`）初始化了用户名的值。当页面完全加载时，会显示用户名\
+  \ \"Andy Smith\" 的值。\n\n## 重复指令\n\n`ng-repeat = \"variable in array\"`\n\n重复指令的工作方式类似于循环。`ng-repeat`\
+  \ 指令重复获取数组的值。\n\n### 示例 2.5\n\n```html\n<html >\n<head>\n    <title>AngularJS 入门</title>\n\
+  <script src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n<div ng-app=\"\"  ng-init\
+  \ = \"ColorName = ['Pink', 'Red', 'Green', 'Blue', 'Black', 'White', 'Yellow', 'Gray']\"\
+  >\n<p style=\"color:green; font-weight:bold\">颜色名称：</p>\n<ol>\n<li ng-repeat=\"\
+  x in ColorName\">\n  <p ng-bind=\"x\"></p>     \n     </li>\n</ol>\n</div>\n</body>\n\
+  </html>\n```\n\n打开记事本，将上述代码粘贴并保存为 `.html` 扩展名。\n\n### 输出：\n\n![](img/00009.jpeg)\n\
+  \n### 说明：\n\n`ng-repeat = \"x in ColorName\"` 重复获取数组 `ColorName` 的值，并将所有数组值赋给变量\
+  \ `x`。\n\n`<p ng-bind=\"x\"></p>` 重复输出 `x` 的值。\n\n## 有效指令\n\n`input.ng-valid`\n\n\
+  `ng-valid` 指令可以在输入有效时更改指定元素的状态。\n\n### 示例 2.6\n\n```html\n<!DOCTYPE html>\n<html\
+  \ ng-app=\"\">\n<head>\n<script src=\"js\\angular.min.js\"></script>\n<meta charset=\"\
+  utf-8\">\n<style>\ninput.ng-valid{ // 检查数字是否有效\nbackground-color: yellow;\n}\n</style>\n\
+  </head>\n<body>\n<form>\n请输入您的数字：<br>\n<input text=\"mynumber\" ng-model=\"psw\"\
+  \ required>\n</form>\n</body>\n</html>\n```\n\n### 输出：\n\n![](img/00010.jpeg)\n\n\
+  ### 说明：\n\n`input.ng-valid` 在输入有效时更改输入元素的状态。\n\n`<input text=\"mynumber\" ng-model=\"\
+  psw\" required>` 用于输入数字。`ng-model= \"psw\"` 需要 `required` 属性，否则该元素无法更改状态。\n\n当您在文本字段中输入有效的数字时，文本字段的背景会变为黄色。\n\
+  \n## 检查电子邮件地址\n\n`$error.email`\n\n`$error.email` 用于检查电子邮件地址的有效性；如果输入的电子邮件地址格式错误，则返回错误消息。\n\
+  \n### 示例 2.7\n\n```html\n<!DOCTYPE html>\n<html ng-app=\"\">\n<head>\n<script src=\"\
+  js\\angular.min.js\"></script>\n<meta charset=\"utf-8\">\n</head>\n<body>\n<form\
+  \ name=\"iForm\">\n请输入您的电子邮件地址：<br><br>\n<input type=\"email\" name=\"eMailAddr\"\
+  \ ng-model=\"text\"> <br><br>\n<div ng-show=\"iForm.eMailAddr.$error.email\"> 无效的电子邮件地址！</div>\n\
+  </form>\n```\n\n### 输出：\n\n![](img/00011.jpeg)\n\n### 说明：\n\n`$error.email` 用于检查电子邮件地址的有效性；如果输入的电子邮件地址格式错误，则返回错误消息。\n\
+  \n当您输入格式错误的电子邮件地址时，您会看到一条警告：无效的电子邮件地址！\n\n## 总结\n\n在本章中，我们学习了 `ng-app` 指令、`ng-model`\
+  \ 指令、`ng-bind` 指令和 `ng-repeat` 指令，并通过适当的示例和输出了解了它们的功能。\n\n- `ng-app` 指令表示您可以在此处编写\
+  \ AngularJS 应用程序代码。\n- `ng-init` 指令初始化应用程序数据。\n- `ng-model` 指令将 HTML 控件（input、select\
+  \ 和 textarea）输入的值绑定到应用程序数据。\n- `ng-bind` 指令将应用程序数据绑定到指定的 HTML 元素，并输出该数据的值。\n- `ng-repeat`\
+  \ 指令重复获取数组的值。\n- `ng-valid` 指令可以在输入有效时更改指定元素的状态。\n- `$error.email` 用于检查电子邮件地址的有效性；如果输入的电子邮件地址格式错误，则返回错误消息。\n\
+  \n## 动手项目\n\n### 重复输出\n\n打开记事本，编写 AngularJS 代码（图 1）：\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n```\n\n\n\n\n```\n<script src=\"js\\angular.min.js\"></script>\n\n<body>\n\
+  \n<div data-ng-app=\"\"\n\ndata-ng-init=\"colors=\n\n['Red','Yellow','Green','White','Black']\"\
+  >\n\n  <p>显示颜色：</p>\n\n  <ol type = \"1\">\n\n    <li data-ng-repeat=\"show in colors\"\
+  >\n\n      {{ show }}\n\n    </li>\n\n  </ol>\n\n</div>\n\n</body>\n\n</html>\n\
+  ```\n\n![](img/00012.jpeg)\n\n（图 1）\n\n请将文件以名称 `RepeatOutput.html` 保存在 `myFolder`\
+  \ 中。注意：确保使用 `.html` 扩展名。\n\n双击 `RepeatOutput.html` 文件，`RepeatOutput.html` 将由浏览器运行，并查看输出结果。（图\
+  \ 2）\n\n输出结果：（图 2）\n\n![](img/00013.jpeg)\n\n## 解释：\n\n`data-ng-app` 与 `ng-app`\
+  \ 几乎相同，但 `data-ng-app` 更适用于 HTML5。\n\n`<div data-ng-app=\"\" > </div>` 表示您可以在此处编写\
+  \ AngularJS 应用程序。\n\n`data-ng-init` 与 `ng-init` 几乎相同，但 `data-ng-init` 更适用于 HTML5。\n\
+  \n`data-ng-init=\"colors=…\"` 用一些值初始化数组 `colors`。\n\n`data-ng-repeat = \"show in\
+  \ colors\"` 重复获取数组 `colors` 的值，并将所有数组值赋给变量 `show`。\n\n`{{ show }}` 显示 `show` 的值。\n\
+  \n# 第 3 小时\n\n## 过滤器\n\n什么是过滤器？\n\n过滤器用于格式化数据的值。管道符号（ `|` ）表示使用了过滤器。过滤器的正确语法如下所示：\n\
+  \n`| 值 &#124; 过滤器 |`\n\n让我们逐一了解过滤器。\n\n### 大写过滤器\n\n`| 值 &#124; uppercase |`\n\n\
+  大写过滤器将文本转换为大写。假设用户输入了小写文本（例如 ray）或首字母大写（例如 Ray）或混合大小写（例如 rAy 或 RaY 或 rAY 等），而您希望得到大写结果，那么您需要使用大写过滤器。\n\
+  \n#### 示例 3.1\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJSfor\
+  \ beginners</title>\n<script src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n<h3>Using\
+  \ Upper Case Filter</h3>\n<div ng-app=\"\"  ng-init=\"Username= 'ray' \">\n<p>User\
+  \ Name: <input type=\"text\" ng-model = \"Username\"></p>\n<p style=\"color:red\"\
+  \ ng-bind=\"Username | uppercase\"></p>\n</div>\n</body>\n</html>\n```\n\n输出结果：\n\
+  \n![](img/00014.jpeg)\n\n解释：\n\n`Username | uppercase` 将 `Username` 的值转换为大写。\n\n\
+  在上面的示例中，我将默认值（`ray`）设置为小写，但结果变成了大写（`RAY`）。\n\n### 小写过滤器\n\n`| 值 &#124; lowercase\
+  \ |`\n\n小写过滤器将文本转换为小写。假设用户输入了大写文本（例如 RAY YAO）或首字母大写（例如 Ray Yao）或混合大小写（例如 rAy 或 RaY\
+  \ 或 rAY 等），而您希望得到小写结果，那么您需要使用小写过滤器。\n\n#### 示例 3.2\n\n```\n<html >\n<head>\n   \
+  \ <title>AngularJSfor beginners</title>\n    <script src=\"js\\angular.min.js\"\
+  ></script>\n</head>\n<body>\n<h3>Using Lower Case Filter</h3>\n<div ng-app=\"\"\
+    ng-init=\"Username= 'Ray YAO' \">\n<p>User Name: <input type=\"text\" ng-model=\"\
+  Username\"></p>\n<p style=\"color:red\" ng-bind=\"Username | lowercase\"></p>\n\
+  </div>\n</body>\n</html>\n```\n\n打开记事本，将上述代码粘贴到扩展名为 .html 的文件中。\n\n输出结果：\n\n![](img/00015.jpeg)\n\
+  \n解释：\n\n`Username | lowercase` 将 `Username` 的值转换为小写。\n\n在上面的示例中，当我输入大写文本（`Ray YAO`）时，结果变成了小写（`ray\
+  \ yao`）。\n\n### OrderBy 过滤器\n\nOrderBy 过滤器用于按升序或降序显示值。`orderBy` 的语法如下所示：\n\n`| 值\
+  \ &#124; orderBy: ’value’   //升序值 &#124; orderBy: ’-value’   //降序 |`\n\n让我们通过一个示例来更好地理解。\n\
+  \n#### 示例 3.3\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJSfor\
+  \ beginners</title>\n    <script src=\"js\\angular.min.js\"></script>\n</head>\n\
+  <body>\n<h1>Using OrderBy filter</h1>\n<div ng-app=\"\" ng-init=\"StudentsResult=[{name:\
+  \ 'Tienq', marks:81},              {name: 'Svbrf', marks:70},              {name:\
+  \ 'Yaito', marks:90},               {name: 'Pewfn', marks:63}, {name: 'Riet', marks:98}]\"\
+  >\n<table border=\"1\" >\n<tr>\n<th>Student Name</th>\n<th>Mathematics’ Result</th>\n\
+  </tr>\n<tr ng-repeat=\"x in StudentsResult | orderBy:'-marks' \">\n<td ng-bind=\"\
+  x.name \"></td>\n<td ng-bind=\"x.marks \"></td>\n</tr>\n</table>\n</div>\n</body>\n\
+  </html>\n```\n\n输出结果：\n\n![](img/00016.jpeg)\n\n解释：\n\n`StudentsResult | orderBy:'-marks'`\
+  \ 按降序显示 `StudentsResult` 的值。\n\n您可以看到，通过使用（`value | orderBy:'-marks'`），最高分在最上面，最低分在最下面。\n\
+  \n如果您想反转顺序，可以去掉“-”符号。\n\n#### 示例 3.4\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n\
+      <title>AngularJSfor beginners</title>\n    <script src=\"js\\angular.min.js\"\
+  ></script>\n</head>\n<body>\n<h1>Using OrderBy filter</h1>\n<div ng-app=\"\" ng-init=\"\
+  StudentsResult=[{name: 'Tienq', marks:81},              {name: 'Svbrf', marks:70},             \n\
+  \n{name: 'Yaito', marks:90}, {name: 'Pewfn', marks:63}, {name: 'Riet', marks:98}]\"\
+  >\n<table border=\"1\" >\n<tr>\n<th>Student Name</th>\n<th>Mathematics’ Result</th>\n\
+  </tr>\n<tr ng-repeat=\"x in StudentsResult | orderBy:'marks' \">\n<td ng-bind=\"\
+  x.name \"></td>\n<td ng-bind=\"x.marks \"></td>\n</tr>\n</table>\n</div>\n</body>\n\
+  </html>\n```\n\n输出结果：\n\n![](img/00017.jpeg)\n\n解释：\n\n`StudentsResult | orderBy:\
+  \ 'marks'` 按升序显示 `StudentsResult` 的值。\n\n### 货币过滤器\n\n`| 值 &#124; currency |`\n\n\
+  货币过滤器用于以货币格式显示结果。\n\n#### 示例 3.5\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJSfor\
+  \ beginners</title>\n<script src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n<h1>Using\
+  \ Currency filter</h1>\n<div ng-app=\"\" ng-init = \"Employees_Monthly_Salary=[{name:\
+  \ 'Jay', salary:8100}, {name: 'Sdwt', salary:7000},               {name: 'Hao',\
+  \ salary:9000}, {name: 'Luoe', salary:6300}, {name: 'Fin', salary:9800}]\">\n<table\
+  \ border=\"1\" >\n<tr>\n<th>Employee Name</th>\n<th>Employee Salary</th>\n</tr>\n\
+  <tr ng-repeat=\"x in Employees_Monthly_Salary  \">\n<td ng-bind=\"x.name \"></td>\n\
+  <td ng-bind=\"x.salary | currency \"></td>\n</tr>\n</table>\n</div>\n</body>\n</html>\n\
+  ```\n\n打开记事本，将上述代码粘贴到扩展名为 .html 的文件中。\n\n输出结果：\n\n![](img/00018.jpeg)\n\n解释：\n\n\
+  `x.salary | currency` 将薪水转换为货币格式。\n\n在上面的示例中，表格有两列，第一列是员工姓名，第二列是员工薪水。薪水列以货币格式显示薪水。\n\
+  \n### 数组过滤器\n\n`| 数组 &#124; filter:input |`\n\n`Array | filter:input` 可以根据用户输入过滤数组元素。\n\
+  \n#### 示例 3.6\n\n```\n<!DOCTYPE html>\n<html ng-app=\"\">\n<head>\n<script src=\"\
+  js\\angular.min.js\"></script>\n<meta charset=\"utf-8\">\n</head>\n<body>\n<div\
+  \ ng-init=\"students = // define an array “students”\n[{name:'Andy', age:'19'},\n\
+  {name:'Rose', age:'18'},\n{name:'Jony', age:'17'},\n{name:'Judy', age:'16'},\n{name:'Tomy',\
+  \ age:'15'},\n{name:'Lily', age:'14'}]\">\n</div>\n<table>\n  <tr><th>Name</th><th>Age</th></tr>\n\
+    <tr ng-repeat=\"person in students | filter:myList\"> \n// filter the array “students”\
+  \ according to the input value\n    <td>{{person.name}}</td>\n    <td>{{person.age}}</td>\n\
+    </tr>\n</table>\n<br><br>\n<label>Please input one of the above name or age\n\
+  <br><br>\n<input ng-model=\"myList\"></label> // user input\n</body>\n</html>\n\
+  ```\n\n请尝试在文本框中输入数字 18。\n\n输出结果：\n\n![](img/00019.jpeg)\n\n解释：\n\n`<div ng-init=\"\
+  students =…\"` 定义了一个数组 `students`。\n\n`person in students | filter:myList` 根据输入值\
+  \ `myList` 过滤数组 `students`。\n\n`<input ng-model=\"myList\">` 接受用户输入，并将输入值存储到 `myList`\
+  \ 中。\n\n当您在文本框中输入 18 时，输出显示“Rose  18”。\n\n## 总结\n\n\n\n\n在本章中，我们学习了什么是过滤器，以及不同类型的过滤器，如大写过滤器、小写过滤器、排序过滤器和货币过滤器。我尝试通过适当的示例、输出和解释来说明本章的每个主题。\n\
+  \n`Value | uppercase` 将值转换为大写。\n\n`Value | lowercase` 将值转换为小写。\n\n`Value | orderBy:\
+  \ 'value'` 按升序显示值。\n\n`Value | orderBy: '-value'` 按降序显示值。\n\n`Value | currency`\
+  \ 将值转换为货币格式。\n\n`Array | filter:input` 可以根据用户输入过滤数组元素。\n\n## 动手项目\n\n### 大写过滤器\n\
+  \n打开记事本，编写 AngularJS 代码：\n\n```html\n<!DOCTYPE html>\n<script src=\"js\\angular.min.js\"\
+  ></script>\n<body>\n<h4>大写过滤器</h4>\n<div ng-app=\"\">\n<p>书名：</p>\n<p><input type=\"\
+  text\" ng-model = \"Book\"></p>\n<H3><p ng-bind=\"Book|uppercase\"></p><H3>\n</div>\n\
+  </body>\n</html>\n```\n\n![](img/00020.jpeg)\n\n请将文件以名称 `UppercaseFilter.html` 保存在\
+  \ `myFolder` 中。注意：确保使用 `.html` 扩展名。\n\n双击 `UppercaseFilter.html` 文件，`UppercaseFilter.html`\
+  \ 将在浏览器中运行，在文本框中输入书名 \"JavaScript in 8 Hours\"，查看输出。\n\n输出：\n\n![](img/00021.jpeg)\n\
+  \n#### 解释：\n\n`<p ng-bind=\"Book|uppercase\"></p>` 将 `Book` 的值转换为大写。\n\n# 第 4 小时\n\
+  \n## DOM 中的指令\n\n### Show 指令\n\n```html\n<p ng-show=\"true\">可见。</p>\n<p ng-show=\"\
+  false\">不可见。</p>\n```\n\nShow 指令用于显示或隐藏 HTML 中 `<p>` 元素的文本。\n\n如果 `ng-show` 为 true，则显示文本\
+  \ \"可见\"。\n\n如果 `ng-show` 为 false，则隐藏文本 \"不可见\"。\n\n示例 4.1\n\n```html\n<!DOCTYPE\
+  \ html>\n<html >\n<head>\n    <title>AngularJS 入门</title>\n    <script src=\"js/angular.min.js\"\
+  ></script>\n</head>\n<body>\n<h3>使用 Show 指令</h3>\n<div ng-app=\"\" >\n<input type=\"\
+  checkbox\" ng-model=\"showHideDiv\">显示 Div\n<div ng-show=\"showHideDiv\" style=\"\
+  background-color:yellow;height:50px;\">\n<p>我是一个 div</p>\n<p>当复选框被选中时，我会出现。</p>\n\
+  </div>\n</div>\n</body>\n</html>\n```\n\n输出：\n\n![](img/00022.jpeg)\n\n#### 解释：\n\
+  \n`ng-model=\"showHideDiv\"` 将复选框的值绑定到 `showHideDiv`。\n\n`ng-show=\"showHideDiv\"\
+  ` 当 `showHideDiv` 的值为 true 时显示文本。\n\n在上面的示例中，页面首次加载时，div（页面的黄色区域）不显示，但当我选中复选框（显示\
+  \ Div）时，`showHideDiv` 的值为 true；div（页面的黄色区域）出现。\n\n### Hide 指令\n\n```html\n<p ng-hide=\"\
+  true\">不可见。</p>\n<p ng-hide=\"false\">可见。</p>\n```\n\nHide 指令用于隐藏或显示 HTML 中 `<p>`\
+  \ 元素的文本。\n\n如果 `ng-hide` 为 true，则隐藏文本 \"不可见\"。\n\n如果 `ng-hide` 为 false，则显示文本 \"\
+  可见\"。\n\n示例 4.2\n\n```html\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS\
+  \ 入门</title>\n<script src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n<h3>使用\
+  \ Hide 指令</h3>\n<div ng-app=\"\" >\n<input type=\"checkbox\" ng-model=\"HideShowDiv\"\
+  >隐藏 Div\n<div ng-hide=\"HideShowDiv\" style=\"background-color:pink;height:50px;\"\
+  >\n<p>我是一个 div</p>\n<p>当复选框被选中时，我会消失。</p>\n</div>\n</div>\n</body>\n</html>\n```\n\
+  \n输出：\n\n![](img/00023.jpeg)\n\n请点击复选框，查看结果。\n\n![](img/00024.jpeg)\n\n#### 解释：\n\
+  \n`ng-model=\"showHideDiv\"` 将复选框的值绑定到 `showHideDiv`。\n\n`ng-hide=\"showHideDiv\"\
+  ` 当 `showHideDiv` 的值为 true 时隐藏文本。\n\n在上面的示例中，页面首次加载时，div（页面的粉色区域）显示。但当我点击复选框（隐藏\
+  \ Div）时，`showHideDiv` 的值为 true；div（页面的粉色区域）消失。\n\n### Disable 指令\n\n```html\n<input\
+  \ type=\"button\" ng-disabled=true value=\"myButton\">\n<input type=\"button\" ng-disabled=false\
+  \ value=\"myButton\">\n```\n\nDisable 指令用于禁用或启用 HTML 元素。\n\n如果 `ng-disable` 为 true，则\
+  \ myButton 将被禁用。\n\n如果 `ng-disable` 为 false，则 myButton 将被启用。\n\n示例 4.3\n\n```html\n\
+  <!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS 入门</title>\n    <script src=\"\
+  js/angular.min.js\"></script>\n</head>\n<body>\n<h3>使用 Disable 指令</h3>\n<div ng-app=\"\
+  \" >\n<input type=\"checkbox\" ng-model=\"DisableEnable\">禁用按钮<br><br><br>\n<input\
+  \ type=\"button\" ng-disabled=\"DisableEnable\" value=\"提交\">\n</div>\n</body>\n\
+  </html>\n```\n\n输出：\n\n![](img/00025.jpeg)\n\n#### 解释：\n\n`ng-model=\"DisableEnable\"\
+  ` 将复选框的值绑定到 `DisableEnable`。\n\n`<input type=\"button\" ng-disabled=\"DisableEnable\"\
+  \ value=\"提交\">` 当 `DisableEnable` 为 true 时禁用 `提交` 按钮。\n\n在上面的示例中，页面首次加载时，按钮（提交）是启用的，但当我点击复选框时，`DisableEnable`\
+  \ 变为 true，按钮（提交）被禁用。\n\n### Click 指令\n\n`ng-click = \"expression\"`\n\nClick 指令用于定义事件，并计算表达式。\n\
+  \n示例 4.4\n\n```html\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS 入门</title>\n\
+  <script src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n<h3>使用 Click 指令</h3>\n\
+  <div ng-app=\"\"  ng-init=\"increaseNumber=0\">\n<button ng-click=\"increaseNumber\
+  \ = increaseNumber + 1\">点击我！</button>\n<p ng-bind=\"increaseNumber\" style=\"color:blue\"\
+  ></p>\n</div>\n</body>\n</html>\n```\n\n#### 输出：\n\n![](img/00026.jpeg)\n\n####\
+  \ 解释：\n\n`ng-click=\"increaseNumber = increaseNumber + 1\"` 在点击按钮时更新 `increaseNumber`\
+  \ 的值。\n\n`<p ng-bind=\"increaseNumber\" style=\"color:blue\"></p>` 将 `increaseNumber`\
+  \ 的值绑定到 `<p>` 并显示其值。\n\n在上面的示例中，页面首次加载时，计数显示 0，表示我尚未点击按钮（点击我！），但当我点击按钮时，它会逐一增加，表示点击次数。\n\
+  \n### If 指令\n\n`ng-if=\"result\"`\n\n`ng-if` 指令用于在 DOM 中添加或移除元素。\n\n如果 `ng-if` 的结果为\
+  \ true，则添加元素。\n\n如果 `ng-if` 的结果为 false，则移除元素。\n\n#### 示例 4.5\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"></script>\n<meta charset=\"\
+  utf-8\">\n</head>\n<body ng-app=\"\" align = \"center\"><br><br>\n<input type=\"\
+  checkbox\" ng-init=\"result = true\" ng-model=\"result\" >\n<div ng-if=\"result\"\
+  > // 检查 true 或 false\n<p>当你选中复选框时，<br>\n文本会显示。<br>\n当你取消选中复选框时，<br>\n文本会隐藏。</p>\n\
+  </div>\n</body>\n</html>\n```\n\n请选中或取消选中复选框。\n\n#### 输出：\n\n![](img/00027.jpeg)\n\
+  \n#### 解释：\n\n`ng-if=\"result\"` 检查结果为 true 还是 false。\n\n当 `ng-if` 的结果为 true 时，添加元素。\n\
+  \n当 `ng-if` 的结果为 false 时，移除元素。\n\n### 总结\n\n`ng-show=\"showHideDiv\"` 当 `showHideDiv`\
+  \ 的值为 true 时显示文本。\n\n`ng-hide=\"showHideDiv\"` 当 `showHideDiv` 的值为 true 时隐藏文本。\n\
+  \n`ng-disabled=\"DisableEnable\"` 当 `DisableEnable` 为 true 时禁用 HTML 元素。\n\n`ng-click\
+  \ = \"expression or function()\"` 在点击按钮时更新表达式中的值或运行 `function()`。\n\n`ng-if` 指令用于在\
+  \ DOM 中添加或移除元素。\n\n## 动手项目\n\n### 点击事件\n\n打开记事本，编写 AngularJS 代码：\n\n```html\n<!DOCTYPE\
+  \ html>\n<html >\n<head>\n<script src=\"js\\angular.min.js\"></script>\n</head>\n\
+  <body>\n<br><br>点击指令<br><br>\n<div ng-app=\"\"  ng-init=\"result=0\">\n<button ng-click=\"\
+  result=result+100\">\n点击这里！</button>\n<H1><p ng-bind=\"result\" ></p></H1>\n</div>\n\
+  </body>\n</html>\n```\n\n![](img/00028.jpeg)\n\n请将文件以名称 `ClickEvent.html` 保存在 `myFolder`\
+  \ 中。注意：确保使用 `.html` 扩展名。\n\n\n\n\n\n双击`ClickEvent.html`文件，`ClickEvent.html`将由浏览器运行，点击按钮“点击这里！”，查看输出。\n\
+  \n输出：\n\n![](img/00029.jpeg)\n\n## 解释：\n\n`ng-click=\"result=result+100\"`在点击按钮时计算表达式。\n\
+  \n# 第 5 小时\n\n## 事件\n\n### 事件\n\n事件与不同的 HTML 元素相关联。例如，点击事件与按钮元素相关联；类似地，按键事件与文本框或文本区域元素相关联。AngularJS\
+  \ 提供了多个与 HTML 控件关联的事件。\n\n### 点击事件\n\n`ng-click = “expression”`\n\n`ng-click = “expression”`定义了一个点击事件。当按钮被点击时，事件发生，并计算表达式。点击事件通常作用于按钮。\n\
+  \n#### 示例 5.1\n\n```html\n<!DOCTYPE html>\n<html >\n<head>\n<title>AngularJSfor\
+  \ beginners</title>\n    <script src=\"js\\angular.min.js\"></script>\n</head>\n\
+  <body>\n<h3>Add Two Numbers Using Click Event</h3>\n<div ng-app=\"\"  ng-init=\"\
+  firstNumber=47; secondNumber=23\">\n<p>First Number :  <input type=\"number\" ng-model\
+  \ = \"firstNumber\"></p>\n<p>Second Number: <input type=\"number\" ng-model = \"\
+  secondNumber\"></p>\n<button ng-click=\"Result=firstNumber + secondNumber\"> Add\
+  \ Numbers </button>\n<p>Result:<p style=\"font-weight:bold; color:blue\" ng-bind\
+  \ = \"Result\"> </p></p>\n</div>\n</body>\n</html>\n```\n\n打开记事本，粘贴上述代码，保存为`.html`扩展名。\n\
+  \n输出：\n\n![](img/00030.jpeg)\n\n**解释：**\n\n`<button ng-click=\"Result=firstNumber\
+  \ + secondNumber\"> 添加数字 </button>`：当按钮被点击时，事件发生。`firstNumber`加上`secondNumber`，并将结果赋值给`Result`。\n\
+  \n在上面的示例中，页面首次加载时，第一个文本框中的数字是 47，第二个文本框中的数字是 23，但没有结果。（注意：这些数字在`ng-init`指令中初始化，但你可以在两个文本框中输入自己的数字）。当我点击按钮（添加数字）时，结果显示在\
+  \ Result 区域，为 70。\n\n### 双击事件\n\n`ng-dblclick = “expression”`\n\n`ng-dblclick =\
+  \ “expression”`定义了一个双击事件。当按钮被双击时，事件发生，并计算表达式。双击事件通常作用于按钮。\n\n#### 示例 5.2\n\n```html\n\
+  <!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS for beginners</title>\n \
+  \   <script src=\"js/angular.min.js\"></script>\n</head>\n<body>\n<h4>Add Two Numbers\
+  \ Using Double Click Event</h4>\n<div ng-app=\"\"  ng-init=\"firstNumber=26;SecondNumber=89\"\
+  >\n<p>First Number:  &nbsp;&nbsp;&nbsp; <input type=\"number\" ng-model=\"firstNumber\"\
+  ></p>\n<p>Second Number: <input type=\"number\" ng-model=\"SecondNumber\"></p>\n\
+  <button ng-dblclick=\"Result=firstNumber + SecondNumber\">Double Click</button>\n\
+  <p>Result:<p style=\"font-weight:bold;color:blue\" ng-bind=\"Result\"> </p>\n</div>\n\
+  </body>\n</html>\n```\n\n打开记事本，粘贴上述代码，保存为`.html`扩展名。\n\n输出：\n\n![](img/00031.jpeg)\n\
+  \n**解释：**\n\n`<button ng-dblclick=\"Result=firstNumber + secondNumber\">  添加数字 \
+  \ </button>`：当按钮被双击时，事件发生。`firstNumber`加上`secondNumber`，并将结果赋值给`Result`。\n\n在上面的示例中，页面首次加载时，第一个文本框中的数字是\
+  \ 26，第二个文本框中的数字是 89，但没有结果。当我双击按钮（添加数字）时，结果显示在 Result 区域，为 115。\n\n### 鼠标移动事件\n\n\
+  `ng-mousemove = “expression”`\n\n`ng-mousemove = “expression”`定义了一个鼠标移动事件。当鼠标移动时，事件发生，并计算表达式。鼠标移动事件通常作用于`div`、`body`以及特定区域或元素。\n\
+  \n#### 示例 5.3\n\n```html\n<!doctype html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"\
+  >\n</script>\n</head>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-mousemove=\"count\
+  \ = count + 1\"\nng-init=\"count=0\">\nHere is a textarea\n</textarea>\n<br><br>\n\
+  <h2>count: {{count}}</h2>\n</body>\n</html>\n```\n\n（假设你在文本区域上移动鼠标 20 次。）\n\n输出：\n\
+  \n| 这是一个文本区域。 |\n\ncount: 20\n\n**解释：**\n\n`ng-mousemove=\"count = count + 1\"`：当鼠标在文本区域上移动时，`count`增加\
+  \ 1。\n\n`ng-init=\"count=0\"`将`count`的值初始化为 0。\n\n`{{count}}`显示`count`的值。\n\n`count\
+  \ : 20`表示鼠标移动了 20 次。\n\n### 鼠标悬停事件\n\n`ng-mouseover = “expression”`\n\n`ng-mouseover\
+  \ = “expression”`定义了一个鼠标悬停事件。当鼠标悬停时，事件发生，并计算表达式。鼠标悬停事件通常作用于`div`、`body`以及特定区域或元素。\n\
+  \n#### 示例 5.4\n\n```html\n<!doctype html>\n<html>\n<script src=\"js\\angular.min.js\"\
+  ></script>\n<body ng-app=\"\">\n <br><br>\n<textarea ng-mouseover=\"count = count\
+  \ + 1\"\nng-init=\"count=0\">\nHere is a textarea.\n</textarea>\n<br><br>\n<h2>count:\
+  \ {{count}}</h2>\n</body>\n</html>\n```\n\n（假设你在文本区域上悬停鼠标 2 次。）\n\n输出：\n\n| 这是一个文本区域。\
+  \ |\n\ncount: 2\n\n**解释：**\n\n`ng-mouseover=\"count = count + 1\"`：当鼠标在文本区域上悬停时，`count`增加\
+  \ 1。\n\n`ng-init=\"count=0\"`将`count`的值初始化为 0。\n\n`{{count}}`显示`count`的值。\n\n`count\
+  \ : 2`表示鼠标在文本区域上悬停了两次。\n\n### 鼠标离开事件\n\n`ng-mouseleave = “expression”`\n\n`ng-mouseleave\
+  \ = “expression”`定义了一个鼠标离开事件。当鼠标离开指定元素时，事件发生，并计算表达式。\n\n#### 示例 5.5\n\n```html\n\
+  <!doctype html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\">\n</script>\n\
+  </head>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-mouseleave=\"count = count +\
+  \ 1\"\nng-init=\"count=0\">\nHere is a textarea\n</textarea>\n<br><br>\n<h2>count:\
+  \ {{count}}</h2>\n<body>\n</html>\n```\n\n（假设你移动鼠标并离开文本区域 10 次。）\n\n输出：\n\n| 这是一个文本区域。\
+  \ |\n\ncount: 10\n\n**解释：**\n\n`ng-mouseleave=\"count = count + 1\"`：当鼠标离开文本区域时，`count`增加\
+  \ 1。\n\n`ng-init=\"count=0\"`将`count`的值初始化为 0。\n\n`{{count}}`显示`count`的值。\n\n`count\
+  \ : 10`表示鼠标离开了 10 次。\n\n### 按键弹起事件\n\n`ng-keyup = “expression”`\n\n`ng-keyup = “expression”`定义了一个按键弹起事件。当在指定元素中按键弹起时，事件发生，并计算表达式。按键弹起事件通常作用于文本框和文本区域。\n\
+  \n#### 示例 5.6\n\n```html\n<!doctype html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"\
+  >\n</script>\n</head>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-keyup=\"count\
+  \ = count + 1\"\nng-init=\"count=0\">\nHere is a textarea\n</textarea>\n<br><br>\n\
+  <h2>count: {{count}}</h2>\n<body>\n</html>\n```\n\n（假设你在文本区域中输入 12345678。）\n\n输出：\n\
+  \n| 这是一个文本区域。12345678 |\n\ncount: 8\n\n**解释：**\n\n`ng-keyup=\"count = count + 1\"\
+  `：当在文本区域中键入内容并按键弹起时，`count`增加 1。\n\n`ng-init=\"count=0\"`将`count`的值初始化为 0。\n\n`{{count}}`显示`count`的值。\n\
+  \n`count : 8`表示键入导致按键弹起了 8 次。\n\n### 按键按下事件\n\n`ng-keydown = “expression”`\n\n`ng-keydown\
+  \ = “expression”`定义了一个按键按下事件。当在指定元素中按键按下时，事件发生，并计算表达式。按键按下事件通常作用于文本框和文本区域。\n\n####\
+  \ 示例 5.7\n\n```html\n<!doctype html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"\
+  >\n</script>\n</head>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-keydown=\"count\
+  \ = count + 1\"\nng-init=\"count=0\">\nHere is a textarea\n</textarea>\n<br><br>\n\
+  <h2>count: {{count}}</h2>\n<body>\n</html>\n```\n\n（假设你在文本区域中输入 123456。）\n\n输出：\n\
+  \n| 这是一个文本区域。123456 |\n\ncount: 6\n\n**解释：**\n\n`ng-keydown=\"count = count + 1\"\
+  `：当在文本区域中键入内容并按键按下时，`count`增加 1。\n\n`ng-init=\"count=0\"`将`count`的值初始化为 0。\n\n`{{count}}`显示`count`的值。\n\
+  \n`count : 6`表示键入导致按键按下了 6 次。\n\n### 复制与剪切事件\n\n`ng-copy= \"result1=true\"  ng-cut=\
+  \ \"result2=true\"`\n\n\n\n\n\n当复制指定文本时，结果 1 将为真。\n\n当剪切指定文本时，结果 2 将为真。\n\n## 示例\
+  \ 5.8\n\n```\n<!doctype html>\n<html ng-app>\n<head>\n<script src=\"js\\angular.min.js\"\
+  ></script>\n<meta charset=\"utf-8\">\n</head>\n<body>\n<br>\n<input ng-copy= \"\
+  result1=true\"  ng-init= \"result1=false;\nvalue1='please copy me'\"  ng-model=\
+  \ \"value1\" >\ncopy status: {{result1}}</br><br>\n<input ng-cut= \"result2=true\"\
+  \  ng-init= \"result2=false;\nvalue2='please cut me'\"  ng-model= \"value2\" >\n\
+  cut status: {{result2}}\n</body>\n</html>\n```\n\n## 输出：\n\n![](img/00032.jpeg)\n\
+  \n## 解释：\n\n`ng-copy= \"result1=true\"`：当复制指定文本时，结果 1 将为真。\n\n`ng-cut= \"result2=true\"\
+  `：当剪切指定文本时，结果 2 将为真。\n\n`{{result1}}` 将显示 true 或 false。\n\n`{{result2}}` 将显示 true\
+  \ 或 false。\n\n## 总结\n\n在本章中，我们学习了不同的事件，如点击事件、双击事件、鼠标移动事件、鼠标悬停事件、鼠标离开事件、按键抬起事件和按键按下事件。\n\
+  \n`ng-click` 定义了一个 AngularJS 点击事件。\n\n`ng-dblclick` 定义了一个 AngularJS 双击事件。\n\n`ng-mousemove`\
+  \ 定义了一个 AngularJS 鼠标移动事件。\n\n`ng-mouseover` 定义了一个 AngularJS 鼠标悬停事件。\n\n`ng-mouseleave`\
+  \ 定义了一个 AngularJS 鼠标离开事件。\n\n`ng-keyup` 定义了一个 AngularJS 按键抬起事件。\n\n`ng-keydown`\
+  \ 定义了一个 AngularJS 按键按下事件。\n\n`ng-copy= \"result1=true\"`：当复制指定文本时，结果 1 将为真。\n\n\
+  `ng-cut= \"result2=true\"`：当剪切指定文本时，结果 2 将为真。\n\n## 动手实践项目\n\n## 鼠标悬停事件\n\n打开记事本，编写\
+  \ AngularJS 代码：\n\n```\n<!doctype html>\n<html>\n<script src=\"js\\angular.min.js\"\
+  ></script>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-mouseover=\"count = count\
+  \ + 1\"\nng-init=\"count=0\">\nMouse over here.\n</textarea>\n<br><br>\n<h2>count:\
+  \ {{count}}</h2>\n</body>\n</html>\n```\n\n![](img/00033.jpeg)\n\n请将文件以 `MouseOverEvent.html`\
+  \ 为名保存在 `myFolder` 中，运行 `MouseOverEvent.html` 文件，将鼠标悬停在文本区域上 8 次，并查看输出。\n\n输出：\n\
+  \n![](img/00034.jpeg)\n\n## 解释：\n\n`ng-mouseover=\"count = count + 1\"` 在鼠标移动到文本区域上时计算表达式。\n\
+  \n# 第 6 小时\n\n# 表达式\n\n`{{ 表达式 }}`\n\n`{{表达式}}` 用于将值与 HTML 元素绑定并显示该值。其作用与 `ng-bind`\
+  \ 指令相同。`{{表达式}}` 写在两个花括号内。`{{表达式}}` 本质上是纯 JavaScript 表达式。表达式有多种类型，我们逐一介绍。\n\n##\
+  \ 字符串表达式\n\n我们知道字符串是字符的集合。在 AngularJS 中，字符串表达式如下所示。\n\n`| <element> {{第一个字符串 + 第二个字符串}}\
+  \ </element> |`\n\n### 示例 6.1\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS\
+  \ for beginners</title>\n    <script src=\"js/angular.min.js\"></script>\n</head>\n\
+  <body>\n<h4>Combine Two String Using String Expression</h4>\n<div ng-app=\"\" >\n\
+  First String &nbsp;&nbsp;&nbsp;: <input type=\"text\" ng-model=\"firstString\"/><br><br>\n\
+  Second String: <input ng-model=\"secondString\"/><br><br>\nResulting String:<p style=\"\
+  color:blue;font-weight:bold;\">{{firstString +\" \"+secondString}}</p>\n</div>\n\
+  </body>\n</html>\n```\n\n#### 输出：\n\n![](img/00035.jpeg)\n\n#### 解释：\n\n`{{firstString\
+  \ +\" \"+secondString}}` 将两个字符串连接在一起。\n\n`{{ 表达式 }}` 显示表达式的值。\n\n在上面的示例中，第一个文本框中输入了文本\
+  \ Ray，第二个文本框中输入了 Yao，但在结果字符串区域中，由于使用了字符串表达式 `{{ }}`，Ray 字符串和 Yao 字符串被合并了。注意：加号 `+`\
+  \ 用于字符串拼接。\n\n## 数字表达式\n\n在 AngularJS 中，你可以使用数字表达式执行各种数学运算。\n\n`| <element> {{第一个数字\
+  \ + 第二个数字}} </element> |`\n\n### 示例 6.2\n\n```\n<!DOCTYPE html>\n<html >\n<head>\n\
+  \    <title>AngularJS for beginners</title>\n    <script src=\"js/angular.min.js\"\
+  ></script>\n</head>\n<body>\n<h4>Multiply Two Number Using Number Expression</h4>\n\
+  <div ng-app=\"\" ng-init=\"firstNumber=9;secondNumber=6\">\nFirst Number &nbsp;&nbsp;&nbsp;:\
+  \ <input type=\"number\" ng-model=\"firstNumber\"/><br><br>\nSecond Number: <input\
+  \ type=\"number\" ng-model=\"secondNumber\"/><br><br>\nResult:<p style=\"color:blue;font-weight:bold;\"\
+  >{{firstNumber * secondNumber}}</p>\n</div>\n</body>\n</html>\n```\n\n#### 输出：\n\
+  \n![](img/00036.jpeg)\n\n#### 解释：\n\n`{{firstNumber * secondNumber}}` 将 `firstNumber`\
+  \ 和 `secondNumber` 相乘。\n\n`{{ 表达式 }}` 显示表达式的值。\n\n在上面的示例中，第一个文本框中输入了数字 9，第二个文本框中输入了\
+  \ 6，54 是 9 和 6 相乘的结果。你可以使用数字表达式执行任何算术运算。\n\n## 对象表达式\n\nAngularJS 对象的工作方式类似于 JavaScript\
+  \ 对象。语法如下：\n\n`| object = {property: value} |`\n\n### 示例 6.3\n\n```\n<html >\n<script\
+  \ src= \"js\\angular.min.js\"></script>\n<body>\n<h4>Object Expression</h4>\n<div\
+  \ ng-app=\"\"  ng-init=\"EmployeeObject = {Emp_name: 'Jay Smith',     Emp_Month:\
+  \ 'June.15 2015',  Emp_salary: '$8000'}\">\n<p>Employee Name :  {{EmployeeObject.Emp_name}}</p>\n\
+  <p>Salary's Month:  {{EmployeeObject.Emp_Month}}</p>\n<p>Employee Salary:  {{EmployeeObject.Emp_salary}}</p>\n\
+  </div>\n</body>\n</html>\n```\n\n#### 输出：\n\n![](img/00037.jpeg)\n\n#### 解释：\n\n\
+  `EmployeeObject` 是一个对象。\n\n`Emp_name` 是一个属性。\n\n`Emp_Month` 是一个属性。\n\n`Emp_salary`\
+  \ 是一个属性。\n\n`{{ object.property }}` 显示属性的值。\n\n## 数组表达式\n\nAngularJS 的数组表达式工作方式类似于\
+  \ JavaScript 数组。语法如下：\n\n`| Array=[val1, val2, val3,] |`\n\n### 示例 6.4\n\n```\n\
+  <!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJS for beginners</title>\n \
+  \   <script src=\"js/angular.min.js\"></script>\n</head>\n<body>\n<h4>My Math Result\
+  \ Using Array Expression</h4>\n<div ng-app=\"\" ng-init=\"MyArray=[98,96,93,90,99]\"\
+  >\n<p>My score in mathematics is:  {{MyArray[4]}}</p>\n</div>\n</body>\n</html>\n\
+  ```\n\n#### 输出：\n\n![](img/00038.jpeg)\n\n#### 解释：\n\n`MyArray=[98,96,93,90,99]`\
+  \ 是一个数组。\n\n`{{MyArray[4]}}` 显示 `MyArray` 中索引为 4 的值。\n\n## 使用表达式\n\n`| {{表达式}} |`\n\
+  \n`{{表达式}}` 可以计算表达式的值，并显示结果。\n\n### 示例 6.5\n\n```\n<!DOCTYPE html>\n<html data-ng-app=\"\
+  \">\n<head>\n<script src=\"js\\angular.min.js\"></script>\n<meta charset=\"utf-8\"\
+  >\n</head>\n<body>\n<h3>Price Calculator</h3>\nBook1 Price: <input type=\"number\"\
+  \ ng-model=\"price1\"><br>\nBook2 Price: <input type=\"number\" ng-model=\"price2\"\
+  ><br>\nBook3 Price: <input type=\"number\" ng-model=\"price3\"><br>\n<p><b>SUM:</b>\
+  \ ${{price1+price2+price3}}</p>\n</div>\n</body>\n</html>\n```\n\n#### 输出：\n\n![](img/00039.jpeg)\n\
+  \n#### 解释：\n\n`{{表达式}}` 可以计算表达式的值。\n\n`${{price1+price2+price3}}` 可以计算用户输入的所有值，并显示结果。\n\
+  \n## 总结\n\n在本章中，我们学习了不同的表达式，如字符串表达式、数字表达式、对象表达式和数组表达式。\n\n`{{ 表达式 }}` 显示表达式的值。\n\
+  \n`{{第一个字符串 + 第二个字符串}}` 将两个字符串连接在一起。\n\n`{{第一个数字 + 第二个数字}}` 计算算术表达式。\n\n`{{ object.property\
+  \ }}` 显示属性的值。\n\n`{{ Array [index] }}` 显示数组的值。\n\n`{{表达式}}` 可以计算表达式的值，并显示结果。\n\n\
+  ## 动手实践项目\n\n## 表达式示例\n\n打开记事本，编写 AngularJS 代码：\n\n```\n<!DOCTYPE html>\n<html >\n\
+  <head>\n<title>Expression Sample</title>\n<script src=\"js\\angular.min.js\"></script>\n\
+  </head>\n<body>\n<h4>Number Expression</h4>\n<div ng-app=\"\" >\nFirst Number:\n\
+  <input type=\"number\" ng-model=\"firstNumber\"/>\n<br><br>\nSecond Number:\n<input\
+  \ type=\"number\" ng-model=\"secondNumber\"/>\n<br><br>\n<h2>Sum:  {{firstNumber\
+  \ + secondNumber}} </h2>\n</div>\n</body>\n</html>\n```\n\n\n\n\n请将文件以名称 `ExpressionSample.html`\
+  \ 保存在 `myFolder` 中。双击 `ExpressionSample.html` 文件，查看输出。\n\n输出：\n\n![](img/00040.jpeg)\n\
+  \n### 说明：\n\n`{{firstNumber + secondNumber}}` 显示 `firstNumber` 和 `secondNumber`\
+  \ 的和。\n\n# 第 7 小时\n\n## 控制器与作用域\n\n### 什么是控制器？\n\n控制器本质上是一个 JavaScript 对象，用于控制应用程序的数据流。因此，AngularJS\
+  \ 应用程序由控制器控制。\n\n### 如何定义控制器？\n\n`ng-controller` 指令用于定义控制器。我们知道控制器是一个包含 JavaScript\
+  \ 函数和属性的 JavaScript 对象。控制器的语法如下：\n\n```\n<div ng-app=\"\" ng-controller=\"controllerName\"\
+  >\n```\n\n#### 示例 7.1\n\n```\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<div ng-app=\"Calculation\" ng-controller=\"myController\">\n第一个数字：<input\
+  \ type=\"number\" ng-model=\"firstNumber\"><br>\n第二个数字：<input type=\"number\" ng-model=\"\
+  secondNumber\"><br>\n<br>\n和：{{firstNumber + secondNumber}}\n</div>\n<script>\n\
+  var app = angular.module('Calculation', [ ]);\napp.controller('myController', function($scope)\
+  \ {\n    $scope.firstNumber = 4;\n    $scope.secondNumber = 8;\n});\n</script>\n\
+  </body>\n</html>\n```\n\n输出：\n\n![](img/00041.jpeg)\n\n### 说明：\n\n`ng-controller=\"\
+  myController\"` 定义了一个控制器。\n\n`app = angular.module()` 创建了一个新模块。\n\n`app.controller()`\
+  \ 将控制器的构造函数添加到模块中。\n\n`function($scope)` 定义了一个构造函数，同时也定义了一个对象 `$scope`。当页面加载时，该函数将运行。\n\
+  \n`$scope.property = value` 将值赋给 `$scope` 对象的属性。\n\n在上面的示例中，页面首次加载时，你会看到两个文本框分别显示不同的数字，即\
+  \ 4 和 8；结果区域显示结果 12。\n\n`angular.module()`：AngularJS 模块是应用程序各个部分的集合，例如控制器、服务、过滤器、指令等。AngularJS\
+  \ 模块定义了一个应用程序，这将在后面的章节中详细讨论。\n\n### 什么是作用域？\n\n作用域是一个包含模型数据的 JavaScript 对象。\n\n\
+  ```\nfunction ($scope) { }\n```\n\n`$scope` 是由控制器调用的 JavaScript 函数的一个参数。让我们通过一个示例来理解。\n\
+  \n#### 示例 7.2\n\n```\n<script>\nfunction ($scope) {\n    $scope.firstNumber = 23;\n\
+  \    $scope.secondNumber = 63;\n}\n</script>\n```\n\n### 说明：\n\n在上面的示例中，`$scope`\
+  \ 是 `function ($scope) { }` 的参数。`$scope` 是 AngularJS 中的一个对象。\n\n`$scope.firstNumber`\
+  \ 和 `$scope.secondNumber` 是在 HTML 中使用的模型。模型数据通过 `$scope` 对象访问。我们使用以下公式为模型赋值：`$scope.property\
+  \ = value`。\n\n### 例如：\n\n```\n$scope.firstNumber = 23;\n$scope.secondNumber = 63;\n\
+  ```\n\n## MVC 与作用域\n\n### 什么是 MVC？\n\nMVC 代表模型（Model）、视图（View）和控制器（Controller）。\n\
+  \n模型直接管理应用程序的数据、逻辑和规则。\n\n视图显示数据。\n\n控制器处理输入。\n\n在上面的示例中：\n\n`$scope.firstNumber`\
+  \ 和 `$scope.secondNumber` 是模型。\n\n`<p ng-bind = \"firstNumber + secondNumber\">\
+  \ </p>` 是在 HTML 中使用的视图。\n\n`ng-controller=\"myController\"` 定义了一个控制器。\n\n控制器和视图之间的通信称为作用域，因此我们可以说作用域就像一座连接控制器和视图的桥梁。\n\
+  \n## 模块基础\n\n```\napp = angular.module()\n```\n\n`app = angular.module()` 创建了一个新模块。\n\
+  \n### 示例 7.3\n\n```\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n\
+  <script src=\"js\\angular.min.js\"></script>\n</head>\n<body>\n<div ng-app=\"myFruit\"\
+  \ ng-controller=\"iController\">\n<p>请选择您最喜欢的水果。</p>\n<select ng-model=\"choosedFruit\"\
+  \ ng-options=\"obj.fruit for obj in fruits\" size = \"4\">\n</select>\n<h3>您最喜欢的水果是：{{choosedFruit.fruit}}</h3>\n\
+  <h3>颜色是：{{choosedFruit.color}}<h3>\n</div>\n<script>\nvar app = angular.module('myFruit',\
+  \ [ ]);\napp.controller('iController', function($scope) {\n   $scope.fruits = [\n\
+  \    {fruit : \"苹果\", color : \"红色\"},\n    {fruit : \"橙子\", color : \"金色\"},\n\
+  \    {fruit : \"香蕉\", color : \"绿色\"}\n];\n});\n</script>\n</body>\n</html>\n```\n\
+  \n### 输出：\n\n![](img/00042.jpeg)\n\n### 说明：\n\n`<div ng-app=\"myFruit\" ng-controller=\"\
+  iController\">` 定义了一个控制器 `iController`。\n\n`<select ng-model=\"choosedFruit\" ng-options=\"\
+  obj.fruit for obj in fruits\" size = \"4\">` 创建了一个选择菜单，接受用户输入到变量 `chooseFruit`。\n\
+  \n`ng-options=\"obj.fruit for obj in fruits\"` 为选择菜单创建了一些选项 `fruit`。`for...in...`\
+  \ 遍历数组 `fruits` 中的每个选项，并将其值存储到 `obj` 中。\n\n`size = 4` 设置选择菜单的大小。\n\n`{{choosedFruit.fruit}}`\
+  \ 显示您选择的水果。\n\n`{{choosedFruit.color}}` 显示水果的颜色。\n\n`var app = angular.module('myFruit',\
+  \ [ ])` 在应用程序 `myFruit` 中创建了一个新模块。\n\n`[ ]` 参数可用于定义依赖模块。\n\n`app.controller('iController',\
+  \ function($scope)` 将控制器的构造函数添加到模块中。\n\n`function($scope)` 定义了一个控制器构造函数，同时也定义了一个对象\
+  \ `$scope`。当页面加载时，该函数将运行。\n\n`$scope.property = value` 将值赋给 `$scope` 对象的属性，该属性是\
+  \ AngularJS 中的一个模型。\n\n## 总结\n\n在本章中，我们学习了什么是控制器、如何定义控制器、什么是 MVC 和作用域。\n\n`ng-controller=\"\
+  myController\"` 定义了一个控制器。\n\n`app = angular.module()` 创建了一个新模块。\n\n`app.controller()`\
+  \ 将控制器的构造函数添加到模块中。\n\n`function ($scope) { }` 定义了一个控制器函数和一个对象 `$scope`。\n\n`$scope.property\
+  \ = value` 将值赋给 `$scope` 对象的属性，该属性是 AngularJS 中的一个模型。\n\n`<p ng-bind = \"value\"\
+  > </p>` 显示数据，这是一个视图。\n\n`<div ng-app= \"\" ng-controller=\"controllerName\">` 定义了一个控制器，并在网页加载时调用\
+  \ `function ($scope) { }`。\n\n## 动手项目\n\n### 控制器示例\n\n打开记事本，编写 AngularJS 代码（图 1）：\n\
+  \n```\n<!DOCTYPE html>\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<div ng-app=\"myApplication\"\nng-controller=\"myController\">\n第一个文本：\n\
+  <p><textarea ng-model=\"firstText\"></textarea></p>\n第二个文本：\n<p><textarea ng-model=\"\
+  SecondText\"></textarea></p>\n<br>\n连接后的文本：\n<h4><p>{{firstText + \" \" + SecondText}}</p></h4>\n\
+  </div>\n<script>\nvar app = angular.module('myApplication', [ ]);\napp.controller('myController',\
+  \ function($scope) {\n    $scope.firstText = \"JavaScript\";\n    $scope.SecondText\
+  \ = \"in 8 Hours\";\n});\n</script>\n</body>\n</html>\n```\n\n![](img/00043.jpeg)\n\
+  \n（图 1）\n\n请将文件以名称 `ControllerSample.html` 保存在 `myFolder` 中。双击 `ControllerSample.html`\
+  \ 文件，输入文本，并查看输出。（图 2）\n\n输出：（如下图 2）\n\n![](img/00044.jpeg)\n\n### 说明：\n\n`ng-controller=\"\
+  myController\"` 定义了一个控制器。\n\n`app = angular.module()` 创建了一个新模块。\n\n`app.controller()`\
+  \ 将控制器的构造函数添加到模块中。\n\n`function($scope)` 定义了一个构造函数，同时也定义了一个对象 `$scope`。当页面加载时，该函数将运行。\n\
+  \n`$scope.property = value` 将值赋给 `$scope` 对象的属性。\n\n# 第 8 小时\n\n## 模块与 API\n\n###\
+  \ 什么是 AngularJS 模块？\n\nAngularJS 模块是应用程序各个部分的集合，例如控制器、服务、过滤器、指令等。AngularJS 模块定义了一个应用程序。\n\
+  \n创建模块的语法如下：\n\n```\nvar myModule = angular.module(\"myApplication\", [ ]);\n```\n\
+  \n### 示例 8.1\n\n```\n<html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n\
+  <div ng-app=\"myApplication\" ng-controller=\"myController\">\n{{ firstNum + lastNum\
+  \ }}\n</div>\n<script>\nvar myModule = angular.module(\"myApplication\", [ ]);\n\
+  myModule.controller(\"myController\", function($scope) {\n    $scope.firstNum =\
+  \ 100;\n```\n\n\n\n\n\n```html\n    $scope.lastNum = 200;\n\n});\n\n</script>\n\n\
+  </body>\n\n</html>\n```\n\n## 输出：300\n\n## 解释：\n\n`<div ng-app=\"myApplication\"\
+  \ ng-controller=\"myController\">` 表示该应用 `myApplication` 有一个控制器 `myController`。`{{\
+  \ firstNum + lastNum }}` 显示 `firstNum` 加 `lastNum` 的结果。`var myModule = angular.module(\"\
+  myApplication\", [ ])` 使用 `myApplication` 创建了一个新模块 `myModule`。`[ ]` 参数可用于定义依赖模块。`myModule.controller(\"\
+  myController\", function($scope)` 通过 `controller()` 方法将控制器的构造函数添加到模块中，使 `myController`\
+  \ 属于 `myModule`。`$scope` 被定义为一个对象。`$scope.firstNum` 的值为 100。`$scope.lastNum` 的值为\
+  \ 200。因此，`{{ firstNum + lastNum }}` 的结果是 300。\n\n## 什么是 AngularJS API？\n\nAPI 代表应用程序编程接口。\n\
+  \nAPI 上有 10 个基本函数：\n\n- `angular.uppercase()`\n- `angular.lowercase()`\n- `angular.isString()`\n\
+  - `angular.isNumber()`\n- ……\n\n### `uppercase()`\n\n`angular.uppercase()` 将字符串转换为大写。\n\
+  \n#### 示例 8.2\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<div ng-app=\"myApplication\" ng-controller=\"myController\">\n<p>{{ text1\
+  \ }}</p>\n<p>{{ text2 }}</p>\n</div>\n<script>\nvar myModule = angular.module('myApplication',\
+  \ [ ]);\nmyModule.controller('myController', function($scope) {\n$scope.text1 =\
+  \ \"javascript\";\n$scope.text2 = angular.uppercase($scope.text1);\n});\n</script>\n\
+  </body>\n</html>\n```\n\n**输出：**\n\njavascript\n\nJAVASCRIPT\n\n**解释：**\n\n`var\
+  \ myModule = angular.module('myApplication', [ ])` 使用 `myApplication` 创建了一个新模块 `myModule`。`myModule.controller('myController',\
+  \ function($scope)` 通过 `controller()` 方法将控制器的构造函数添加到模块中，使 `myController` 属于 `myModule`。`$scope`\
+  \ 被定义为一个对象。`$scope.text2 = angular.uppercase($scope.text1)` 将 `text1` 转换为大写。\n\n\
+  ### `lowercase()`\n\n`angular.lowercase()` 将字符串转换为小写。\n\n#### 示例 8.3\n\n```html\n\
+  <html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n<div ng-app=\"myApplication\"\
+  \ ng-controller=\"myController\">\n<p>{{ text1 }}</p>\n<p>{{ text2 }}</p>\n</div>\n\
+  <script>\nvar myModule = angular.module('myApplication', [ ]);\nmyModule.controller('myController',\
+  \ function($scope) {\n$scope.text1 = \"JAVASCRIPT\";\n$scope.text2 = angular.lowercase($scope.text1);\n\
+  });\n</script>\n</body>\n</html>\n```\n\n**输出：**\n\nJAVASCRIPT\n\njavascript\n\n\
+  **解释：**\n\n`var myModule = angular.module('myApplication', [ ])` 使用 `myApplication`\
+  \ 创建了一个新模块 `myModule`。`myModule.controller('myController', function($scope)` 通过\
+  \ `controller()` 方法将控制器的构造函数添加到模块中，使 `myController` 属于 `myModule`。`$scope` 被定义为一个对象。`$scope.text2\
+  \ = angular.lowercase($scope.text1)` 将 `text1` 转换为小写。\n\n### `isString()`\n\n`isString()`\
+  \ 测试一个值是否为字符串，如果是字符串则返回 true。\n\n#### 示例 8.4\n\n```html\n<html>\n<script src= \"\
+  js\\angular.min.js\"></script>\n<body>\n<div ng-app=\"myApplication\" ng-controller=\"\
+  myController\">\n<p>{{ text1 }}</p>\n<p>{{ text2 }}</p>\n</div>\n<script>\nvar myModule\
+  \ = angular.module('myApplication', [ ]);\nmyModule.controller('myController', function($scope)\
+  \ {\n$scope.text1 = \"JAVASCRIPT\";\n$scope.text2 = angular.isString($scope.text1);\n\
+  });\n</script>\n</body>\n</html>\n```\n\n**输出：**\n\nJAVASCRIPT\n\ntrue\n\n**解释：**\n\
+  \n`var myModule = angular.module('myApplication', [ ])` 使用 `myApplication` 创建了一个新模块\
+  \ `myModule`。`myModule.controller('myController', function($scope)` 通过 `controller()`\
+  \ 方法将控制器的构造函数添加到模块中，使 `myController` 属于 `myModule`。`$scope` 被定义为一个对象。`$scope.text2\
+  \ = angular.isString($scope.text1)` 测试 `text1` 是否为字符串。\n\n### `isNumber()`\n\n`isNumber()`\
+  \ 测试一个值是否为数字，如果是数字则返回 true。\n\n#### 示例 8.5\n\n```html\n<html>\n<script src= \"js\\\
+  angular.min.js\"></script>\n<body>\n<div ng-app=\"myApplication\" ng-controller=\"\
+  myController\">\n<p>{{ text1 }}</p>\n<p>{{ text2 }}</p>\n</div>\n<script>\nvar myModule\
+  \ = angular.module('myApplication', [ ]);\nmyModule.controller('myController', function($scope)\
+  \ {\n$scope.text1 = \"JAVASCRIPT\";\n$scope.text2 = angular.isNumber($scope.text1);\n\
+  });\n</script>\n</body>\n</html>\n```\n\n**输出：**\n\nJAVASCRIPT\n\nfalse\n\n**解释：**\n\
+  \n`var myModule = angular.module('myApplication', [ ])` 使用 `myApplication` 创建了一个新模块\
+  \ `myModule`。`myModule.controller('myController', function($scope)` 通过 `controller()`\
+  \ 方法将控制器的构造函数添加到模块中，使 `myController` 属于 `myModule`。`$scope` 被定义为一个对象。`$scope.text2\
+  \ = angular.isNumber($scope.text1)` 测试 `text1` 是否为数字。\n\n### `isDate()`\n\n`angular.isDate()`\
+  \ 测试一个值是否为 Date 对象，如果是 Date 对象则返回 true。\n\n#### 示例 8.6\n\n```html\n<html>\n<script\
+  \ src= \"js\\angular.min.js\"></script>\n<body>\n<script>   \nvar myDate = \"Aug/10/2015\"\
+  ;\nvar dateObject = new Date();  \ndocument.write(angular.isDate(myDate) + \"  \"\
+  ); \ndocument.write(angular.isDate(dateObject) + \"  \");      \n</script>  \n</body>\n\
+  </html>\n```\n\n**输出：**\n\nfalse   true\n\n**解释：**\n\n`myDate` 是一个字符串，因此 `angular.isDate(myDate)`\
+  \ 返回 false。`dateObject` 是一个 Date 对象，因此 `angular.isDate(dateObject)` 返回 true。\n\n\
+  ### `isFunction()`\n\n`angular.isFunction()` 测试一个值是否为函数，如果是函数则返回 true。\n\n#### 示例\
+  \ 8.7\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n\
+  <script>   \nvar myString = \"This is a string\";   \nfunction myFunction() \n{\
+  \ \n    return \"This is inside a function\"; \n} \ndocument.write(angular.isFunction(myString)\
+  \ + \"  \");\ndocument.write(angular.isFunction(myFunction) + \" \");   \n</script>\
+  \ \n</body>\n</html>\n```\n\n**输出：**\n\nfalse  true\n\n**解释：**\n\n`myString` 是一个字符串，因此测试结果为\
+  \ false。`myFunction` 是一个函数，因此测试结果为 true。\n\n### `isElement()`\n\n`angular.isElement()`\
+  \ 测试一个值是否为 DOM 元素，如果是 DOM 元素则返回 true。`angular.isElement(document.querySelector())`\
+  \ 可以访问一个 HTML 元素，如果是 HTML 元素则返回 true。\n\n#### 示例 8.8\n\n```html\n<!DOCTYPE html>\
+  \ \n<html ng-app=\"\">   \n<head>   \n<title>检查元素</title>\n<script src=\"js\\angular.min.js\"\
+  ></script> \n</script>   \n</head>   \n<body> \n<script>\ndocument.write(\"<br>\"\
+  );\ndocument.write(\"Title 是一个 DOM 元素吗？\"); \ndocument.write(\"<br>\");\ndocument.write(angular.isElement('title'));\
+  \ \ndocument.write(\"<br><br>\");  \ndocument.write(\"Title 是一个 HTML 元素吗？\");\n\
+  document.write(\"<br>\");\nvar check=angular.isElement(\ndocument.querySelector('title'));\n\
+  document.write(check);\n</script> \n</body>   \n</html>\n```\n\n**输出：**\n\nTitle\
+  \ 是一个 DOM 元素吗？\n\nfalse\n\nTitle 是一个 HTML 元素吗？\n\ntrue\n\n**解释：**\n\n`angular.isElement()`\
+  \ 期望访问一个 DOM 元素而不是 HTML 元素。因此，`angular.isElement('title')` 返回 false。`angular.isElement(document.querySelector('title'))`\
+  \ 可以访问一个 HTML 元素，因此返回 true。\n\n### `isObject()`\n\n`angular.isObject()` 测试一个值是否为对象，如果是对象则返回\
+  \ true。\n\n#### 示例 8.9\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<script>   \nvar myCar = \"This is my car!\";  \nvar carObject = new Object(\
+  \ ) ; \ndocument.write(angular.isObject(myCar) + \" \");\ndocument.write(angular.isObject(carObject)\
+  \ + \" \");   \n</script>\n</body>\n</html>\n```\n\n**输出：**\n\nfalse  true\n\n**解释：**\n\
+  \n`myCar` 是一个字符串。因此，`angular.isObject(myCar)` 返回 false。`carObject` 是一个对象。因此，`angular.isObject(carObject)`\
+  \ 返回 true。\n\n### `isDefined()`\n\n\n\n\n\n`angular.isDefined()` 测试一个值是否已被定义，如果该值已被定义则返回\
+  \ true。\n\n## 示例 8.10\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<script>   \nvar futureCar;\nvar existingCar = \"Very Good!\";  \ndocument.write(angular.isDefined(futureCar)\
+  \ + \" \");   \ndocument.write(angular.isDefined(existingCar) + \" \");      \n\
+  </script>\n</body>\n</html>\n```\n\n## 输出：\n\nfalse  true\n\n## 解释：\n\n“`futureCar`”\
+  \ 未被定义。因此，`isDefined(futureCar)` 返回 false。\n\n“`existingCar`” 已被定义。因此，`isDefined(existingCar)`\
+  \ 返回 true。\n\n`isUndefined()`\n\n`angular.isUndefined()` 测试一个值是否未被定义，如果该值未被定义则返回\
+  \ true。\n\n## 示例 8.11\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<script>   \nvar futureCar;\nvar existingCar = \"Very Good!\";  \ndocument.write(angular.isUndefined(futureCar)\
+  \ + \" \");   \ndocument.write(angular.isUndefined(existingCar) + \" \");      \n\
+  </script>\n</body>\n</html>\n```\n\n## 输出：\n\ntrue  false\n\n## 解释：\n\n“`futureCar`”\
+  \ 未被定义。因此，`isUndefined(futureCar)` 返回 true。\n\n“`existingCar`” 已被定义。因此，`isUndefined(existingCar)`\
+  \ 返回 false。\n\n## 总结\n\n“`var myModule = angular.module('myApplication', [ ])`”\
+  \ 使用 “`myApplication`” 创建了一个名为 “`myModule`” 的新模块。\n\n“`myModule.controller('myController',\
+  \ function($scope)`” 使用 `controller()` 方法将控制器的构造函数添加到模块中，使 `myController` 属于 `myModule`。\n\
+  \n`$scope` 被定义为一个对象。\n\n`angular.uppercase()` 将字符串转换为大写。\n\n`angular.lowercase()`\
+  \ 将字符串转换为小写。\n\n`isString()` 测试一个值是否为字符串，如果是字符串则返回 true。\n\n`isNumber()` 测试一个值是否为数字，如果是数字则返回\
+  \ true。\n\n`isDate()` 测试一个值是否为 Date 对象，如果是 Date 对象则返回 true。\n\n`isFunction()` 测试一个值是否为函数，如果是函数则返回\
+  \ true。\n\n`isElement()` 测试一个值是否为 DOM 元素，如果是 DOM 元素则返回 true。\n\n`isObject()` 测试一个值是否为对象，如果是对象则返回\
+  \ true。\n\n`isDefined()` 测试一个值是否已被定义，如果已被定义则返回 true。\n\n`isUndefined()` 测试一个值是否未被定义，如果未被定义则返回\
+  \ true。\n\n### 动手实践项目\n\n## 模块示例\n\n打开记事本，编写 AngularJS 代码：\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n<div ng-app=\"\
+  myApplication\"\nng-controller=\"myController\">\nHeight:\n<p><input type=\"number\"\
+  \ ng-model=\"height\"></p>\nLength:\n<p><input type=\"number\" ng-model=\"length\"\
+  ></p>\n<br>\nArea of a Triangle:\n<h4><p>{{(height * length)/2}}</p></h4>\n</div>\n\
+  <script>\nvar app = angular.module('myApplication', [ ]);\napp.controller('myController',\
+  \ function($scope) {\n    $scope.height = 0;\n    $scope.length = 0;\n});\n</script>\n\
+  </body>\n</html>\n```\n\n![](img/00045.jpeg)\n\n请将文件以 “`ModuleSample.html`” 为名保存在\
+  \ `myFolder` 中。双击 “`ModuleSample.html`” 文件，输入三角形的 height 和 length，查看输出。\n\n输出：\n\
+  \n![](img/00046.jpeg)\n\n## 解释：\n\n“`ng-controller=\"myController\"`” 定义了一个控制器。\n\
+  \n“`app = angular.module()`” 创建了一个新模块。\n\n“`app.controller()`” 将控制器的构造函数添加到模块中。\n\
+  \n“`function($scope)`” 定义了一个构造函数，同时也定义了一个对象 `$scope`。当页面加载时，该函数将运行。\n\n“`$scope.property\
+  \ = value`” 将值赋给 `$scope` 对象的属性。\n\n# 附录 1\n\n## Ajax 基础\n\n什么是 Ajax？\n\nAJAX 代表\
+  \ “Asynchronous JavaScript And XML”（异步 JavaScript 和 XML）。AJAX 是一种新技术，用于通过服务器结合 XML、HTML、CSS、PHP、ASP\
+  \ 和 JavaScript 创建更好、更快、更具交互性的 Web 脚本。\n\nAJAX 用于更新网页的部分内容，而无需重新加载整个页面。\n\n这意味着使用\
+  \ Ajax，你可以与服务器通信以更新信息，而无需刷新网页。\n\n通过 jQuery 和 JavaScript，你可以轻松地在网页中实现 Ajax。\n\n\
+  要运行 Ajax，你需要一个服务器。\n\n下面将介绍如何在自己的计算机上设置服务器，以及如何使用 Ajax。\n\n### 设置服务器\n\n如果你想运行 Ajax，需要在自己的计算机上设置一个服务器。\n\
+  \n“AppServ” 是一款用于设置服务器的免费软件；它可以运行 Apache、PHP、MySQL、PhpMyAdmin、Ajax、JavaScript、JQuery……\n\
+  \n## 步骤 1：\n\n从链接下载 “AppServ”：（图 1）\n\n[`www.appservnetwork.com/`](http://www.appservnetwork.com/)\
+  \    \n\n（图 1）\n\n## 步骤 2：\n\n将 AppServ 安装到本地计算机。\n\n`C:\\AppServ`\n\n（图 2）\n\n\
+  ![A1](img/00047.jpeg)\n\n（图 2）\n\n## 步骤 3：\n\n请勾选所有复选框以安装所有组件。（图 3）\n\n![A2](img/00048.jpeg)\n\
+  \n（图 3）\n\n## 步骤 4：\n\n服务器名称：`localhost`\n\n电子邮件地址：`xxxxxxxx@xxxxx.xxx`\n\nApache\
+  \ HTTP 端口：80（图 4）\n\n![A3](img/00049.jpeg)\n\n（图 4）\n\n## 步骤 5：\n\n输入 root 密码：12345（图\
+  \ 5）\n\n（默认用户名：root）\n\n![A4](img/00050.jpeg)\n\n（图 5）\n\n## 步骤 6：\n\n勾选复选框，启动 Apache，启动\
+  \ MySQL。\n\n点击 Finish 按钮。（图 6）\n\n![A5](img/00051.jpeg)\n\n（图 6）\n\n## 步骤 7：\n\n\
+  测试 AppServ 安装是否成功，请运行浏览器，输入地址：\n\n`http://localhost`\n\n如果你能看到类似这样的页面：（图 7）\n\n\
+  ![](img/00052.jpeg)\n\n（图 7）\n\n恭喜！你自己的服务器已成功运行。\n\n## 步骤 8：\n\n如何使用服务器？\n\n打开文件夹\
+  \ `C:\\AppServ\\www`，请创建一个名为 “`myServer`” 的文件夹，该文件夹可作为工作区。你可以将所有程序文件放入 “`myServer`”\
+  \ 文件夹中。从现在开始，你可以在 `C:\\AppServ\\www\\myServer` 上运行 Ajax 文件、PHP 文件和 HTML 文件。（图 8）\n\
+  \n![](img/00053.jpeg)\n\n（图 8）\n\n## 注意：\n\n请使用 “`http://localhost/......`” 在服务器上运行任何文件，例如：\n\
+  \n如果你想运行 `AjaxEvent.html`，请输入地址：\n\n`http://localhost/myServer/AjaxEven.html`\n\n\
+  如果你想运行 `Response.php`，请输入地址：\n\n`http://localhost/myServer/Response.php`\n\n###\
+  \ 如何使用 Ajax？\n\n注意：Ajax 需要服务器支持。\n\n如果你的计算机可以作为服务器，请准备一个文本文件 “`data.txt`”，其中包含单词\
+  \ “Hello Ajax World!”，并将 “`data.txt`” 与以下 Ajax 文件放在同一文件夹中。\n\n示例 1\n\n## 示例 B1\n\
+  \n```javascript\n1. <script Language = “JavaScript”>\n2. var ajaxObject = new XMLHttpRequest(\
+  \ );\n3. ajaxObject.open( “GET”, “data.txt”, true);\n4. ajaxObject.onreadystatechange\
+  \ = function( ) {\n5. if (ajaxObject.readyState == 4) {\n6. alert( ajaxObject.responseText);\n\
+  7. }\n8. }\n9. ajaxObject.send( );\n10. </script>\n```\n\n将文件保存为 “`B1.html`”，然后双击它。\n\
+  \n## 输出：\n\nHello Ajax World!\n\n## 解释：\n\n第 2 行：\n\n“`new XMLHttpRequest( )`” 创建了一个名为\
+  \ “`ajaxObject`” 的 XMLHttpRequest 对象，该对象将用于 Ajax 脚本。\n\n第 3 行：\n\n“`ajaxObject.open(\
+  \ “GET”, “data.txt”, true)`” 初始化 XMLHttpRequest 对象的请求。\n\n“`GET`” 指定了请求方法。也可以使用\
+  \ “`POST`” 或 “`PUT`”。\n\n“`data.txt`” 是一个提供数据资源的 URL。\n\n在这里，`datat.txt` 的内容是 “Hello\
+  \ Ajax World!”。\n\n“`true`” 表示使用异步技术。\n\n第 4 行：\n\n“`ajaxObject.onreadystatechange\
+  \ = function( ) { … }`” 指定了一个函数，该函数在收到服务器响应时运行。服务器的响应状态为 0 到 4：\n\n| readyState\
+  \ | 说明 |\n|------------|------|\n| 0          | 未初始化 |\n| 1          | 已初始化 |\n\
+  | 2          | 发送数据 |\n| 3          | 接收数据 |\n| 4          | 完成。返回的数据可用。 |\n\n“`ajaxObject.onreadystatechange`”\
+  \ 正在等待服务器响应。\n\n第 5 行：\n\n“`if (ajaxObject.readyState == 4)`” 表示如果服务器响应状态为 4，则返回的数据可用。\n\
+  \n第 6 行：\n\n“`alert( ajaxObject.responseText)`” 显示从 `data.txt` 中检索到的文本。\n\n输出：“Hello\
+  \ Ajax World!”。\n\n第 9 行：\n\n\n\n\n\n`ajaxObject.send()` 将请求发送到服务器。\n\n## 示例 2\n\
+  \n### 示例 B2\n\n1. `<input type = \"button\" value = \"try\" onClick = \"ajaxRequest();\"\
+  />`\n2. `<script type = \"text/javascript\">`\n3. `function ajaxRequest() {`\n4.\
+  \ `if (window.XMLHttpRequest) {`\n5. `ajaxObject = new XMLHttpRequest();`\n6. `}`\n\
+  7. `else if (window.ActiveXObject) {`\n8. `ajaxObject = new ActiveXObject(\"Microsoft.XMLHTTP\"\
+  );`\n9. `}`\n10. `ajaxObject.open(\"POST\", \"data.txt\", true);`\n11. `ajaxObject.onreadystatechange\
+  \ = function() {`\n12. `if (ajaxObject.readyState == 4) {`\n13. `if (ajaxObject.status\
+  \ == 200) {`\n14. `alert(ajaxObject.responseText);`\n15. `}`\n16. `}`\n17. `}`\n\
+  19. `ajaxObject.send();`\n20. `}`\n21. `</script>`\n\n将文件保存为 `\"B2.html\"`，然后双击它。\n\
+  \n### 输出：\n\nHello Ajax World!\n\n### 解释：\n\n**第 1 行：**  \n`onClick = \"ajaxRequest()\"\
+  ` 在点击按钮时调用函数 `ajaxRequest()`。\n\n**第 3-9 行：**  \n这些代码创建了一个名为 `ajaxObject` 的 `XMLHttpRequest`\
+  \ 对象，用于 Ajax 脚本。  \n如果浏览器是非 IE，则使用 `new XMLHttpRequest()` 创建 `ajaxObject`。  \n如果浏览器是\
+  \ IE，则使用 `new ActiveXObject(...)` 创建 `ajaxObject`。\n\n**第 10 行：**  \n`ajaxObject.open(\"\
+  POST\", \"data.txt\", true)` 初始化 `XMLHttpRequest` 对象的请求。  \n`\"POST\"` 指定请求方法。也可以使用\
+  \ `\"GET\"` 或 `\"PUT\"`。  \n`\"data.txt\"` 是提供数据资源的 URL。  \n此处，`data.txt` 的内容是 `\"\
+  Hello Ajax World!\"`。  \n`\"true\"` 表示使用异步技术。\n\n**第 11 行：**  \n`ajaxObject.onreadystatechange\
+  \ = function() { ... }` 指定一个函数，在收到服务器响应时运行。服务器的响应状态为 0 到 4：\n\n| `readyState` |\
+  \ 说明 |\n|--------------|------|\n| 0            | 未初始化 |\n| 1            | 已初始化\
+  \ |\n| 2            | 发送数据 |\n| 3            | 接收数据 |\n| 4            | 完成，返回的数据可用\
+  \ |\n\n`ajaxObject.onreadystatechange` 正在等待服务器响应。\n\n**第 12 行：**  \n`if (ajaxObject.readyState\
+  \ == 4)` 表示如果服务器响应状态为 4，则返回的数据可用。\n\n**第 13 行：**  \n`if (ajaxObject.status == 200)\
+  \ { }` 表示如果服务器返回的 HTTP 状态码为 200，则请求成功。\n\n| HTTP 状态码 | 说明 |\n|-------------|------|\n\
+  | 200         | 请求成功 |\n| 401         | 未授权 |\n| 403         | 禁止访问 |\n| 404   \
+  \      | 未找到 |\n\n**第 14 行：**  \n`alert(ajaxObject.responseText)` 显示从 `data.txt`\
+  \ 获取的文本。  \n输出：`\"Hello Ajax World!\"`。\n\n**第 15 行：**  \n`ajaxObject.send()` 将请求发送到服务器。\n\
+  \n**结果：**  \n运行整个脚本，将弹出一个对话框，显示 `\"Hello Ajax World!\"`。\n\n## 示例 3\n\n示例 3 中的代码与示例\
+  \ 2 几乎相同。  \n但示例 2 中的代码可以修改为示例 3，如下所示：\n\n### 示例 B3\n\n14. `document.getElementById(\"\
+  display\").innerHTML = \"A message from server is: \" + ajaxObject.responseText;`\n\
+  22. `<div id = \"display\"> </div>`\n\n`B3.html` 如下：\n\n```html\n<input type = \"\
+  button\" value = \"try\" onClick = \"ajaxRequest();\"/>\n<script type = \"text/javascript\"\
+  >\nfunction ajaxRequest() {\n  if (window.XMLHttpRequest) {\n    ajaxObject = new\
+  \ XMLHttpRequest();\n  }\n  else if (window.ActiveXObject) {\n    ajaxObject = new\
+  \ ActiveXObject(\"Microsoft.XMLHTTP\");\n  }\n  ajaxObject.open(\"POST\", \"data.txt\"\
+  , true);\n  ajaxObject.onreadystatechange = function() {\n    if (ajaxObject.readyState\
+  \ == 4) {\n      if (ajaxObject.status == 200) {\n        document.getElementById(\"\
+  display\").innerHTML = \"A message from server is: \" + ajaxObject.responseText;\n\
+  \      }\n    }\n  }\n  ajaxObject.send();\n}\n</script>\n<div id = \"display\"\
+  > </div>\n```\n\n将文件保存为 `\"B3.html\"`，然后双击它。\n\n### 输出：\n\nA message from server\
+  \ is: Hello Ajax World!\n\n### 解释：\n\n**第 14 行：**  \n`document.getElementById(\"\
+  display\").innerHTML` 在 ID 为 `\"display\"` 的指定位置显示内容。  \n`ajaxObject.responseText`\
+  \ 从 `data.txt` 获取数据。  \n输出：`\"A message from server is: Hello Ajax World!\"`。\n\n\
+  **第 22 行：**  \n`<div id = \"display\"> </div>` 创建一个 id 为 `\"display\"` 的标签，用于显示内容。\n\
+  \n**结果：**  \n运行整个脚本。  \n输出：`\"A message from server is: Hello Ajax World!\"`\n\n\
+  **注意：**  \n`\"data.txt\"` 可以是 `data.php`、`data.asp`、`data.jsp` 和 `data.xml`。  \n\
+  Ajax 需要服务器的支持。  \nAjax 的优势是：Ajax 无需重新加载整个页面即可更新网页的部分内容，响应非常快！\n\n### Ajax 图表\n\n\
+  | 属性 / 方法 | 描述 |\n|-------------|------|\n| `open()`    | 初始化一个新的 HTTP 请求 |\n| `send()`\
+  \    | 向服务器发送请求 |\n| `onreadystatechange` | 状态事件 |\n| `readyState` | 请求处理过程 (0,1,2,3,4)\
+  \ |\n| `responseText` | 从服务器返回的文本 |\n| `status`    | HTTP 状态码 (200, 404...) |\n\n\
+  | `readyState` | 说明 |\n|--------------|------|\n| 0            | 未初始化 |\n| 1   \
+  \         | 已初始化 |\n| 2            | 发送数据 |\n| 3            | 接收数据 |\n| 4      \
+  \      | 完成，返回的数据可用 |\n\n| HTTP 状态码 | 说明 |\n|-------------|------|\n| 200      \
+  \   | 请求成功 |\n| 401         | 未授权 |\n| 403         | 禁止访问 |\n| 404         | 未找到\
+  \ |\n\n# 附录 2\n\n# 深入了解 AngularJS\n\n## Angular 服务\n\n服务是一个函数或对象，用于提供特定的操作。在 AngularJS\
+  \ 中，有大约 30 个内置服务，例如 `$http`、`$location`、`$interval` 和 `$timeout`。有时你也可以构建自定义服务。\n\
+  \n以下是一个 `$timeout` 服务示例：\n\n### 示例 A1\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <script src=\"js\\angular.min.js\"></script>\n</head>\n<body>\n<div ng-app=\"iCode\"\
+  \ ng-controller=\"iController\">\n<h2>{{message}}</h2>\n</div>\n<script>\nvar iModule\
+  \ = angular.module('iCode', []);\niModule.controller('iController', function($scope,\
+  \ $timeout) {\n  $scope.message = \"Please wait......\";\n  $timeout(function ()\
+  \ { // $timeout 服务\n    $scope.message = \"This is a Timeout service example.\"\
+  ;\n  }, 3000); // 延迟三秒\n});\n</script>\n</body>\n</html>\n```\n\n### 输出 1：\n\nPlease\
+  \ wait……\n\n### 输出 2：\n\nThis is a Timeout service example.\n\n### 解释：\n\n`$timeout(function\
+  \ () { })` 是一个 AngularJS 服务。  \n`3000` 参数：延迟三秒执行操作。\n\n## Angular Http\n\n`$http`\
+  \ 是一个 Angular 服务，用于访问服务器中的数据。\n\n| `$http.get().then();` / `$http.post().then();`\
+  \ |\n|------------------------------------------------|\n| `get()` 或 `post()` 可以访问服务器的数据，`then()`\
+  \ 返回来自服务器的消息。 |\n\n### 示例 A2\n\n```html\n/* 注意：以下示例需要服务器支持。\n假设服务器上有一个文件 httpService.txt，该文件包含文本\
+  \ \"This is a HTTP service example.\" */\n\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+  \ src=\"js\\angular.min.js\"></script>\n</head>\n<body>\n<div ng-app=\"iCode\" ng-controller=\"\
+  iController\">\n<p>A message from Server:</p>\n<h2>{{message}}</h2> <!--显示数据-->\n\
+  </div>\n<script>\nvar iModule = angular.module('iCode', []);\niModule.controller('iController',\
+  \ function($scope, $http) {\n  $http.get(\"httpService.txt\").then(function (feedback)\
+  \ {\n    // 从服务器获取数据\n    $scope.message = feedback.data; // 返回文件的数据\n  });\n});\n\
+  </script>\n</body>\n</html>\n```\n\n### 输出：\n\nA message from Server:\n\n## This\
+  \ is a HTTP service example.\n\n### 解释：\n\n`$http.get(\"httpService.txt\").then(function\
+  \ (feedback)` 获取服务器中的 `\"httpService.txt\"` 数据，`then()` 返回响应消息。  \n`$scope.message\
+  \ = feedback.data;` 返回文件的数据。\n\n## Angular MySql\n\nAngularJS 可以通过 PHP 程序访问 MySQL\
+  \ 数据库中的数据。\n\n### 示例 A3\n\n```html\n/* 假设有一个 PHP 文件 \"angular_mysql.php\"，其中包含如下\
+  \ MySQL 数据库表：\n\n| ID | Fruit | Color |\n|----|-------|-------|\n| 001| Apple |\
+  \ Red   |\n| 002| Banana| Green |\n| 003| Orange| Golden|\n*/\n\n<!DOCTYPE html>\n\
+  <html>\n<head>\n<script src=\"js\\angular.min.js\"></script>\n</head>\n<body>\n\
+  <div ng-app=\"iCode\" ng-controller=\"iController\">\n<table>  \n  <tr ng-repeat=\"\
+  v in title\">   \n    <td>{{ v.ID }}</td>\n    <td>{{ v.Fruit }}</td>\n    <td>{{\
+  \ v.Color }}</td>\n  </tr>\n</table>\n</div>\n<script>\nvar iModule = angular.module('iCode',\
+  \ []);\niModule.controller('iController', function($scope, $http) {\n  $http.get(\"\
+  angular_mysql.php\").then(function (feedback) {\n    // 从 mysql 数据库获取数据\n    $scope.title\
+  \ = feedback.records; // 返回 mysql 数据库的每条记录\n  });\n});\n</script>\n</body>\n</html>\n\
+  ```\n\n\n\n\n```\n});\n});\n\n</script>\n\n</body>\n\n</html>\n```\n\n## 输出：\n\n\
+  | ID | 水果 | 颜色 |\n| --- | --- | --- |\n| 001 | 苹果 | 红色 |\n| 002 | 香蕉 | 绿色 |\n| 003\
+  \ | 橙子 | 金色 |\n\n## 解释：\n\n`$http.get(\"angular_mysql.php\").then(function (feedback)\
+  \ { })` 从 MySQL 数据库中获取数据。\n\n`$scope.title = feedback.records;` 返回 MySQL 数据库的每条记录。\n\
+  \n`<tr ng-repeat=\"v in title\">` 遍历每个字段名。\n\n关于 PHP 与 MySQL，请阅读我的另一本书“PHP 与 MySQL\
+  \ 8 小时教程”。\n\n### Angular 检查\n\n| `$dirty` // 检查用户是否已输入 `$pristine` // 检查用户是否未输入\
+  \ |\n\n## 示例 A4\n\n```html\n<head>\n<script src=\"js\\angular.min.js\"></script>\n\
+  </head>\n<body>\n<form ng-app=\"iCode\" ng-controller=\"iController\"\nname=\"iForm\"\
+  \ novalidate>\n<p>Please input your name in here:<br><br>\n<input type=\"text\"\
+  \ name=\"userName\" ng-model=\"userName\" required>\n<div style=\"color:red\" ng-show=\"\
+  iForm.userName.!$dirty\">\n<!--check input empty-->\n<div ng-show=\"iForm.userName.$error.required\"\
+  >\n<!--show error message -->\nThis field cannot be empty!</div>\n</div>\n</p>\n\
+  </form>\n<script>\nvar iModule = angular.module('iCode', []);\niModule.controller('iController',\
+  \ function($scope) {\n$scope.userName = '';   \n});\n</script>\n</body>\n</html>\n\
+  ```\n\n## 输出：\n\n请在此输入您的姓名：\n\n|  |\n| --- |\n| 此字段不能为空！ |\n\n## 解释：\n\n`iForm.userName.!$dirty`\
+  \ 检查输入字段是否为空。你可以使用 `$pristine` 或 `!$dirty`。\n\n`.$error.required` 显示错误消息。\n\n###\
+  \ Angular 验证\n\n| `$valid` // 检查输入的有效性 `$invalid` // 检查输入的无效性 |\n\n## 示例 A5\n\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"></script>\n\
+  </head>\n<body>\n<br>\n<form ng-app=\"iCode\" ng-controller=\"iController\"\nname=\"\
+  iForm\" novalidate>\n<input type=\"email\" name=\"email\" ng-model=\"email\" required>\n\
+  <div style=\"color:red\" ng-show=\"iForm.email.$invalid\">\n<!--check invalidity\
+  \ of the email address--> <br>\n<div ng-show=\"iForm.email.$error.email\">\n<!--show\
+  \ error message -->\nThe email address format is invalid!</div>\n</div>\n</form>\n\
+  <script>\nvar iModule = angular.module('iCode', []);\niModule.controller('iController',\
+  \ function($scope) {\n$scope.email = 'xxxxx@gmail.com';\n});\n</script>\n</body>\n\
+  </html>\n```\n\n## 输出：\n\n![](img/00054.jpeg)\n\n## 解释：\n\n`<div style=\"color:red\"\
+  \ ng-show=\"iForm.email.$invalid\">` 检查电子邮件地址的有效性。\n\n`<div ng-show=\"iForm.email.$error.email\"\
+  >` 显示错误消息。\n\n### Angular 包含\n\n`ng-include=\"'another.txt'\"`\n\n`ng-include=\"\
+  'another.txt'\"` 将外部文件包含到当前文件中。\n\n## 示例 A6\n\n```html\n/* Note: the following example\
+  \ need a server to support.\nAssume there is a file another.txt in the server, the\
+  \ file has text “This is an Include Example.” */\n<!DOCTYPE html>\n<html ng-app=\"\
+  \">\n<script src=\"js\\angular.min.js\"></script>\n<body>\n<div ng-include=\"'another.txt'\"\
+  ></div> \n</body>\n</html>\n```\n\n## 输出：\n\n这是一个包含示例。\n\n## 解释：\n\n`ng-include=\"\
+  'another.txt'\"` 将外部文件包含到当前文件中。\n\n# 附录 3\n\n# AngularJS\n\n# 测试与答案\n\n### 测试\n\n\
+  请选择正确答案。\n\n(1)\n\n```html\n<html>\n<script src=\"js\\angular.min.js\"></script>\n\
+  <body>\n<div ng-app=\"\">\n<p>Input my id in the input box:</p>\n<p><input type=\"\
+  text\" fill in here </p>\n// binds the inputted data from HTML controls to “id”\n\
+  <br>\n<h1>Welcome! {{id}}</h1>\n</div>\n</body>\n</html>\n```\n\nA. `bind = \"id\"\
+  `      \nB. `ng-bind = \"id\"`    \nC. `ng = \"id\"`   \nD. `ng-model=\"id\"`\n\n\
+  (2)\n\n```html\n<!doctype html>\n<html>\n<head>\n<script src=\"js\\angular.min.js\"\
+  >\n</script>\n</head>\n<body ng-app=\"\">\n<br><br>\n<textarea ng-keydown=\"count\
+  \ = count + 1\"\nng-init=\"count=0\">\nHere is a textarea\n</textarea>\n<br><br>\n\
+  <h2>count: {{ fill in here  }}</h2> // displays the value of “count”\n<body>\n</html>\n\
+  ```\n\n1. `show`      B. `display`     C. `count`      D. `variable`\n\n(3)\n\n\
+  ```html\n## <html>\n## <script src= \"js\\angular.min.js\"></script>\n## <body>\n\
+  ## <script>   \n## var myString = \"This is a string\";   \n## function myFunction()\
+  \ \n## { \n##     return \"This is inside a function\"; \n## } \n## document.write(fill\
+  \ in here.isFunction(myString) + \"  \");\n## document.write(fill in here.isFunction(myFunction)\
+  \ + \" \");\n## //  tests a value to see if it is a function\n## </script> \n##\
+  \ </body>\n</html>\n```\n\n1. `ng-test`    B. `angular`   C. `AngularJS`   D. `test`\n\
+  \n(4)\n\n```html\n<html>\n<script src=\"js\\angular.min.js\"></script>\n<body>\n\
+  <div fill in here >\n // indicates you can write AngularJS application from here.\n\
+  <p>Input my id in the input box:</p>\n<p><input type=\"text\" ng-model=\"id\" </p>\n\
+  <br>\n<h1>Welcome! {{id}}</h1>\n</div>\n</body>\n</html>\n```\n\nA. `ng-app=\"\"\
+  `        B. `ng-model=\"\"`       C. `angular`      D. `ng`\n\n(5)\n\n```html\n\
+  <!DOCTYPE html>\n<html >\n<head>\n    <title>AngularJSfor beginners</title>\n<script\
+  \ src=\"js\\angular.min.js\"></script>\n<meta http-equiv=\"Content-Type\" content=\"\
+  text/html; charset=UTF-8\" />\n</head>\n<body>\n<h3>Using Click directive</h3>\n\
+  <div ng-app=\"\" fill in here =\"increaseNumber=0\">\n// initialize the variable\
+  \ with a value\n<button ng-click=\"increaseNumber = increaseNumber + 1\">Click Me!</button>\n\
+  <p ng-bind=\"increaseNumber\" style=\"color:blue\"></p>\n</div>\n</body>\n</html>\n\
+  ```\n\nA. `init`         B. `initialize`       C. `ng-init`      D. `ng-initalize`\n\
+  \n(6)\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n\
+  <div ng-app=\"Calculation\" ng-controller=\"myController\">\nFirst Number: <input\
+  \ type=\"number\" ng-model=\"firstNumber\"><br>\nSecond Number: <input type=\"number\"\
+  \ ng-model=\"secondNumber\"><br>\n<br>\nSum: {{firstNumber + secondNumber}}\n</div>\n\
+  <script>\nvar app = angular.module('Calculation', [ ]);\napp.controller('myController',\
+  \ function($scope) {\n fill in here.firstNumber = 4;\nfill in here.secondNumber\
+  \ = 8;\n// assigns the value to the property of $scope object.\n});\n</script>\n\
+  </body>\n</html>\n```\n\nA. `object`       B. `angular`       C. `scope`      D.\
+  \ `$scope`\n\n(7)\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"></script>\n\
+  <body>\n<div ng-app=\"myApplication\" ng-controller=\"myController\">\n{{ firstNum\
+  \ + lastNum }}\n</div>\n<script>\nvar myModule = angular.module(\"myApplication\"\
+  , [ ]);\nfill in here.controller(\"myController\", function($scope) {\n// makes\
+  \ myController belongs to myModule.\n    $scope.firstNum = 100;\n    $scope.lastNum\
+  \ = 200;\n});\n</script>\n</body>\n</html>\n```\n\nA. `module`      B. `myModule`\
+  \      C. `$scope`      D. `angular`\n\n(8)\n\n```html\n<html>\n<script src= \"\
+  js\\angular.min.js\"></script>\n<body>\n<script>   \nvar myCar = \"This is my car!\"\
+  ;  \nvar carObject = new Object( ) ; \ndocument.write(angular.fill in hereObject(myCar)\
+  \ + \" \");\ndocument.write(angular.fill in hereObject(carObject) + \" \");   \n\
+  // tests a value to see if it is an object\n</script>\n</body>\n</html>\n```\n\n\
+  A. `test`        B. `check`        C. `is`        D. `if`\n\n(9)\n\n```html\n<html\
+  \ >\n<head>\n    <title>AngularJSfor beginners</title>\n<script src=\"js\\angular.min.js\"\
+  ></script>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"\
+  \ />\n</head>\n<body>\n<div ng-app=\"\"  ng-init = \"ColorName = ['Pink', 'Red',\
+  \ 'Green', 'Blue', 'Black', 'White', 'Yellow', 'Gray']\">\n<p style=\"color:green;\
+  \ font-weight:bold\">Colours Name:</p>\n<ol>\n<li fill in here = \"x in ColorName\"\
+  >\n// repeats to get the value of an array\n  <p ng-bind=\"x\"></p>     \n     </li>\n\
+  </ol>\n</div>\n</body>\n</html>\n```\n\nA. `ng-repeat`     B. `repeat`     C. `foreach`\
+  \      D. `for`\n\n(10)\n\n```html\n<html>\n<script src= \"js\\angular.min.js\"\
+  ></script>\n<body>\n<div ng-app=\"Calculation\" fill in here = \"myController\"\
+  >\n// defines a controller\nFirst Number: <input type=\"number\" ng-model=\"firstNumber\"\
+  ><br>\nSecond Number: <input type=\"number\" ng-model=\"secondNumber\"><br>\n<br>\n\
+  Sum: {{firstNumber + secondNumber}}\n</div>\n<script>\nvar app = angular.module('Calculation',\
+  \ [ ]);\napp.controller('myController', function($scope) {\n    $scope.firstNumber\
+  \ = 4;\n    $scope.secondNumber = 8;\n});\n</script>\n</body>\n</html>\n```\n\n\
+  A. `define`        B. `controller`      C. `new`      D. `ng-controller`\n\n(11)\n\
+  \n```html\n<html>\n<script fill in here =\"js\\angular.min.js\"></script>\n```\n\
+  \n\n\n\n\n```\n// adds AngularJS framework into current application.\n\n<body>\n\
+  \n<div ng-app=\"\">\n\n<p>Input my id in the input box:</p>\n\n<p><input type=\"\
+  text\" ng-model=\"id\" </p>\n\n<br>\n\n<h1>Welcome! {{id}}</h1>\n\n</div>\n\n</body>\n\
+  \n</html>\n```\n\nA. `import` B. `url` C. `src` D. `add`\n\n(12)\n```\n<html >\n\
+  \n<body>\n\n<div ng-app=\"\">\n\n<p>User Name: <br>\n<input type=\"text\" ng-model\
+  \ = \"Username\"></p>\n\n<p fill in here =\"Username\"></p>\n\n// binds “Username”\
+  \ to <p></p> tag, and “shows” its value\n\n</div>\n\n</body>\n\n</html>\n```\n\n\
+  A. `bind` B. `ng-bind` C. `ng-bound` D. `ng-show`\n\n(13)\n```\n<html >\n\n<body>\n\
+  \n<h3>Using Upper Case Filter</h3>\n\n<div ng-app=\"\"  ng-init=\"Username= 'ray'\
+  \ \">\n\n<p>User Name: <input type=\"text\" ng-model = \"Username\"></p>\n\n<p style=\"\
+  color:red\" ng-bind=\"Username | fill in here \"></p>\n\n// changes the value of\
+  \ “Username” to uppercase.\n\n</div>\n\n</body>\n\n</html>\n```\n\nA. `toUppercase()`\
+  \ B. `uppercase()` C. `toUppercase` D. `uppercase`\n\n(14)\n```\n<html >\n\n<body>\n\
+  \n<h3>Using Click directive</h3>\n\n<div ng-app=\"\"  ng-init=\"increaseNumber=0\"\
+  >\n\n<button fill in here =\"increaseNumber = increaseNumber + 1\">Click Me!</button>\n\
+  \n// updates the value of “increaseNumber” when click the button.\n\n<p ng-bind=\"\
+  increaseNumber\" style=\"color:blue\"></p>\n\n</div>\n\n</body>\n\n</html>\n```\n\
+  \nA. `ng-click` B. `ng-press` C. `onClick` D. `onPress`\n\n(15)\n```\n<html>\n\n\
+  <script src=\"js\\angular.min.js\"></script>\n\n<body ng-app=\"\">\n\n<br><br>\n\
+  \n<textarea fill in here =\"count = count + 1\"\nng-init=\"count=0\"> // mouse over\
+  \ event\nHere is a textarea.\n</textarea>\n\n<br><br>\n\n<h2>count: {{count}}</h2>\n\
+  \n</body>\n\n</html>\n```\n\nA. `mouseover` B. `ng-mouseover` C. `over` D. `ng-over`\n\
+  \n(16)\n```\n<html >\n\n<head>\n    <title>AngularJS for beginners</title>\n   \
+  \ <script src=\"js/angular.min.js\"></script>\n</head>\n\n<body>\n\n<h4>My Math\
+  \ Result Using Array Expression</h4>\n\n<div ng-app=\"\" ng-init=\"MyArray=[98,96,93,90,99]\"\
+  >\n\n<p>My score in mathematics is:  {{ fill in here }}</p>\n\n// displays the value\
+  \ whose index is 4 in MyArray.\n\n</div>\n\n</body>\n\n</html>\n```\n\nA. `array[4]`\
+  \ B. `[4]` C. `MyArray[4]` D. `MyArray{4}`\n\n(17)\nMVC 代表模型（Model）、视图（View）和控制器（Controller）。\n\
+  \n“$scope.firstNumber and $scope.secondNumber” 是一个待填项\n\n<p ng-bind = \"firstNumber\
+  \ + secondNumber\"> </p> 是一个待填项\n\n“ng-controller=\"myController\"” 定义了一个待填项\n\n\
+  // MVC\n\nA. 控制器 视图 模型 B. 视图 控制器 模型 C. 模型 控制器 视图 D. 模型 视图 控制器\n\n(18)\n```\n<html>\n\
+  \n<script src= \"js\\angular.min.js\"></script>\n\n<body>\n\n<script>   \nvar myDate\
+  \ = \"Aug/10/2015\";\nvar dateObject = new Date();  \ndocument.write(angular. fill\
+  \ in here(myDate) + \"  \"); \ndocument.write(angular. fill in here(dateObject)\
+  \ + \"  \");      \n// tests a value to see if it is a Date object\n</script> \n\
+  \n</body>\n\n</html>\n```\n\nA. `check` B. `test` C. `isDate` D. `isObject`\n\n\
+  (19)\n```\n<html>\n\n<head>\n<script src=\"js\\angular.min.js\">\n</script>\n</head>\n\
+  \n<body ng-app=\"\">\n\n<br><br>\n\n<textarea fill in here =\"count = count + 1\"\
+  \nng-init=\"count=0\"> // press key down event\nHere is a textarea\n</textarea>\n\
+  \n<br><br>\n\n<h2>count: {{count}}</h2>\n\n<body>\n\n</html>\n```\n\nA. `keydown`\
+  \ B. `ng-keydown` C. `onKeydown` D. `key()`\n\n(20)\n```\n## <html>\n## <script\
+  \ src= \"js\\angular.min.js\"></script>\n## <body>\n## <script>   \n## var futureCar;\n\
+  ## var existingCar = \"Very Good!\";  \n## document.write(angular. fill in here(futureCar)\
+  \ + \" \");   \n## document.write(angular. fill in here(existingCar) + \" \");\n\
+  ## //  tests a value to see if it has been defined     \n## </script>\n## </body>\n\
+  </html>\n```\n\nA. `test` B. `check` C. `ng-defined` D. `isDefined`\n\n(21)\n```\n\
+  ## <!DOCTYPE html>\n## <html >\n## <head>\n##     <title>AngularJSfor beginners</title>\n\
+  ##     <script src=\"js\\angular.min.js\"></script>\n## </head>\n## <body>\n## <div\
+  \ ng-app=\"\" ng-init=\"StudentsResult=[{name: 'Tienq', marks:81},             \
+  \ {name: 'Svbrf', marks:70},              {name: 'Yaito', marks:90},           \
+  \   {name: 'Pewfn', marks:63}, {name: 'Riet', marks:98}]\">\n## <table border=\"\
+  1\" >\n## <tr>\n## <th>Student Name</th>\n## <th>Mathematics’ Result</th>\n## </tr>\n\
+  ## <tr ng-repeat=\"x in StudentsResult | fill in here :'-marks' \">\n// display\
+  \ values in descending order.\n## <td ng-bind=\"x.name \"></td>\n## <td ng-bind=\"\
+  x.marks \"></td>\n## </tr>\n## </table>\n## </div>\n## </body>\n## </html>\n```\n\
+  \nA. `order` B. `sort` C. `orderBy` D. `sortBy`\n\n(22)\n```\n## <!DOCTYPE html>\n\
+  ## <html >\n## <head>\n## <script src=\"js\\angular.min.js\"></script>\n## <meta\
+  \ http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n## </head>\n\
+  ## <body>\n## <div ng-app=\"\" >\n## <input type=\"checkbox\" ng-model=\"HideShowDiv\"\
+  >Hide Div\n## <div fill in here =\"HideShowDiv\" style=\"background-color:pink;height:50px;\"\
+  > // use hide directive\n## <p>I am a div</p>\n## <p>I will disappeared when the\
+  \ check box is checked.</p>\n## </div>\n## </div>\n## </body>\n## </html>\n```\n\
+  \nA. `hide` B. `invisible` C. `ng-hide` D. `ng-invisible`\n\n(23)\n```\n<script>\n\
+  function (fill in here) {\n   fill in here.firstNumber = 23;\n   fill in here.secondNumber\
+  \ = 63;\n}\n</script>\n// declare a parameter of JavaScript function, the parameter\
+  \ will be an object in AngularJS.\n```\n\nA. `ng-controller` B. `$scope` C. `ng-object`\
+  \ D. `ng-scope`\n\n(24)\n```\n## <!DOCTYPE html>\n## <html >\n## <head>\n##    \
+  \ <title>AngularJS for beginners</title>\n##     <script src=\"js/angular.min.js\"\
+  ></script>\n## </head>\n## <body>\n## <h3>Using Show directive</h3>\n## <div ng-app=\"\
+  \" >\n## <input type=\"checkbox\" ng-model=\"showHideDiv\">Show Div\n## <div fill\
+  \ in here =\"showHideDiv\" style=\"background-color:yellow;height:50px;\"> // use\
+  \ show directive\n## <p>I am a div</p>\n## <p>I appear when the check box is checked.</p>\n\
+  ## </div>\n## </div>\n## </body>\n## </html>\n```\n\nA. `show` B. `angular` C. `ng-display`\
+  \ D. `ng-show`\n\n(25)\n```\n## <html >\n## <script src= \"js\\angular.min.js\"\
+  ></script>\n## <body>\n## <h4>Object Expression</h4>\n## <div ng-app=\"\"  ng-init=\"\
+  \ fill in here = {Emp_name: 'Jay Smith',     Emp_Month: 'June.15 2015',  Emp_salary:\
+  \ '$8000'}\">\n// use object expression according to context\n## <p>Employee Name\
+  \ :  {{EmployeeObject.Emp_name}}</p>\n## <p>Salary's Month:  {{EmployeeObject.Emp_Month}}</p>\n\
+  ## <p>Employee Salary:  {{EmployeeObject.Emp_salary}}</p>\n## </div>\n## </body>\n\
+  ## </html>\n```\n\nA. `EmployeeObject` B. `myObject` C. `Object` D. `ng-Object`\n\
+  \n(26)\n```\n<html>\n<script src= \"js\\angular.min.js\"></script>\n<body>\n<div\
+  \ ng-app=\"myApplication\" ng-controller=\"myController\">\n<p>{{ text1 }}</p>\n\
+  <p>{{ text2 }}</p>\n</div>\n<script>\nvar myModule = angular.module('myApplication',\
+  \ [ ]);\nmyModule.controller('myController', function($scope) {\n$scope.text1 =\
+  \ \"JAVASCRIPT\";\n$scope.text2 = angular. fill in here($scope.text1);\n}); // \
+  \ check “text1” to see if it is a number.\n</script>\n</body>\n</html>\n```\n\n\
+  A. `Number` B. `isNumber` C. `Digital` D. `isDigital`\n\n(27)\n```\n1. <script Language\
+  \ = “JavaScript”>\n2. var ajaxObject = new fill in here; // creates an XMLHttpRequest\
+  \ object named “ajaxObject”\n3. ajaxObject.open( “GET”, “data.txt”, true);\n4. ajaxObject.onreadystatechange\
+  \ = function( ) {\n5. if (ajaxObject.readyState == 4) {\n6. alert( ajaxObject.responseText);\n\
+  7. }\n8. }\n9. ajaxObject.send( );\n10. </script>\n```\n\nA. `HttpRequest` B. `XMLHttpRequest`\
+  \ C. `HttpRequest()` D. `XMLHttpRequest()`\n\n(28)\n```\n1. <input type = “button”\
+  \ value = \"try\" onClick = “ajaxRequest ( );”/>\n2. <script type = “text/javascript”>\n\
+  3. function ajaxRequest ( ) {\n4. if (window.XMLHttpRequest){\n5. ajaxObject = new\
+  \ XMLHttpRequest ( );\n6. }\n7. else if (window.ActiveXObject){\n8. ajaxObject =\
+  \ new ActiveXObject(“Microsoft.XMLHTTP”);\n9. }\n10. ajaxObject.open( “POST”, “data.txt”,\
+  \ true);\n11. ajaxObject.onreadystatechange = function( ) {\n12. if (ajaxObject.readyState\
+  \ == 4) {\n13. if(ajaxObject. fill in here == 200) { // if the server’s returned\
+  \ http status code is 200, the request succeeded\n```\n\nA. `status` B. `responseStatus`\
+  \ C. `httpStatus` D. `statusCode`\n\n\n\n\n\n```\n14.alert ( ajaxObject.responseText);\n\
+  15.}\n16.}\n17\\. }\n19\\. ajaxObject.send( );\n20\\. }\n21\\. </script>\n```\n\n\
+  A. 响应      B. 就绪状态      C. 状态      D. 返回\n\n(29)\n\n```\n<input type = “button”\
+  \ value = \"try\" onClick = “ajaxRequest ( );”/>\n<script type = “text/javascript”>\n\
+  function ajaxRequest ( ) {\nif (window.XMLHttpRequest){\najaxObject = new XMLHttpRequest\
+  \ ( );\n}\nelse if (window.ActiveXObject){\najaxObject = new ActiveXObject(“Microsoft.XMLHTTP”);\n\
+  }\najaxObject.open( “POST”, “data.txt”, true);\najaxObject.onreadystatechange =\
+  \ function( ) {\nif (ajaxObject.readyState == 4) {\nif(ajaxObject.status == 200)\
+  \ {\ndocument.getElementById( “display” ).fill in here = “A message from server\
+  \ is: ” + ajaxObject.responseText; // shows the content at the specified location\
+  \ where ID is “display”\n}\n}\n}\najaxObject.send( );\n}\n</script>\n<div id = “display”>\
+  \ </div>\n```\n\nA. 显示       B. innerHTML       C. 展示       D. 文本\n\n## (30)\n\n\
+  在 Ajax 中，当 `readyState` 为 4 时，表示请求处理处于哪个阶段？\n\nA. 未初始化  \nB. 正在发送数据  \nC. 已接收数据\
+  \  \nD. 数据已返回可用\n\n## (31)\n\n在 Ajax 中，当 http `status` 为 200 时，表示请求的结果是？\n\nA. 请求成功\
+  \  \nB. 未授权  \nC. 禁止访问  \nD. 未找到\n\n## (32)\n\n关于 Ajax，以下哪个说法是正确的？（多选）\n\nA. `readyState`\
+  \ 属性是一个从 0 到 4 的请求状态。  \nB. Http `status` 返回一个数字，如 200、401、403 或 404。  \nC. `onreadystatechange`\
+  \ 属性是一个状态事件。  \nD. `responseText` 属性返回来自服务器的文本。\n\n答案\n\n| 01. | D | 17. | D |\n\
+  | 02. | C | 18. | C |\n| 03. | B | 19. | B |\n| 04. | A | 20. | D |\n| 05. | C |\
+  \ 21. | C |\n| 06. | D | 22. | C |\n| 07. | B | 23. | B |\n| 08. | C | 24. | D |\n\
+  | 09. | A | 25. | A |\n| 10. | D | 26. | B |\n| 11. | C | 27. | D |\n| 12. | B |\
+  \ 28. | C |\n| 13. | D | 29. | B |\n| 14. | A | 30. | D |\n| 15. | B | 31. | A |\n\
+  | 16. | C | 32. | ABCD |\n\n## [强烈推荐亚马逊计算机书籍：](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\n\
+  \n| ![AngularJS 8 小时教程 (1900x2500)-201610260908.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![C# 8 小时教程 (1900x2500)-201610261118.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![C++ 8 小时教程 (1900x2500)-201610260826.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ |\n| ![Html Css 8 小时教程 (1900x2500)-201610260839.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![JAVA 8 小时教程 (1900x2500)-201610260918.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![JavaScript 8 小时教程 (1900x2500)-201610261002.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ |\n| ![JQuery 8 小时教程 (1900x2500)-201610261033.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![Php MySql 8 小时教程 (1900x2500)-201610261055.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![Python 8 小时教程 (1900x2500)-201610261123.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ |\n| ![Linux 命令行 201608061323.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![JavaScript 50 个实用程序-201608240927.jpg.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ | ![VB 8 小时教程 (1900x2500)-201611040955.jpg](https://www.amazon.com/Ray-Yao/e/B00RG5FG6K/ref=dp_byline_cont_ebooks_1)\
+  \ |\n\n# 源代码下载\n\n请下载本书的源代码：\n\n[AngularJS 源代码下载](http://www.websprogram.com/www/angularjswangshiruyi/sourcecode.php)\n\
+  \n亲爱的朋友，\n\n如果您对这本电子书不满意，能否请在购买之日起七天内退货退款？\n\n如果您发现本书中有任何错误，能否请发送电子邮件给我？\n\nyaowining@yahoo.com\
+  \      \n\n我将非常感谢您的邮件。非常感谢！\n\n诚挚地\n\nRay Yao\n\n朋友，再见！\n\n"

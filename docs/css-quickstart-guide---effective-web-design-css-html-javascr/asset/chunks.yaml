@@ -1,0 +1,5238 @@
+- fmt: '
+
+    ![](cover.jpeg)
+
+
+    ## Table of Contents
+
+
+    *   © Copyright 2016 - All rights reserved.
+
+    *   ContentsIntroduction
+
+    *   Introduction
+
+    *   Chapter 1: The Advantages of Using CSS
+
+    *   Chapter 2: CSS Modules
+
+    *   Chapter 3: Inclusion
+
+    *   Chapter 4: Measurement Units
+
+    *   Chapter 5: Colors
+
+    *   Chapter 6: Background
+
+    *   Chapter 7: Fonts
+
+    *   Chapter 8: Text
+
+    *   Chapter 9: Using Images
+
+    *   Chapter 10: Links
+
+    *   Chapter 11: Tables
+
+    *   Chapter 12: Borders
+
+    *   Chapter 13: Margins
+
+    *   Conclusion
+
+
+    CSS:
+
+
+    Quick Start Guide - Effective Web Design
+
+
+    © Copyright 2016 - All rights reserved.
+
+
+    In no way is it legal to reproduce, duplicate, or transmit any part of this document
+    in either electronic means or in printed format. Recording of this publication
+    is strictly prohibited and any storage of this document is not allowed unless
+    with written permission from the publisher. All rights reserved.
+
+
+    The information provided herein is stated to be truthful and consistent, in that
+    any liability, in terms of inattention or otherwise, by any usage or abuse of
+    any policies, processes, or directions contained within is the solitary and utter
+    responsibility of the recipient reader. Under no circumstances will any legal
+    responsibility or blame be held against the publisher for any reparation, damages,
+    or monetary loss due to the information herein, either directly or indirectly.
+
+
+    Respective authors own all copyrights not held by the publisher.
+
+
+    Legal Notice:
+
+
+    This book is copyright protected. This is only for personal use. You cannot amend,
+    distribute, sell, use, quote or paraphrase any part or the content within this
+    book without the consent of the author or copyright owner. Legal action will be
+    pursued if this is breached.
+
+
+    Disclaimer Notice:
+
+
+    Please note the information contained within this document is for educational
+    and entertainment purposes only. Every attempt has been made to provide accurate,
+    up to date and reliable complete information. No warranties of any kind are expressed
+    or implied. Readers acknowledge that the author is not engaging in the rendering
+    of legal, financial, medical or professional advice.
+
+
+    By reading this document, the reader agrees that under no circumstances are we
+    responsible for any losses, direct or indirect, which are incurred as a result
+    of the use of information contained within this document, including, but not limited
+    to, —errors, omissions, or inaccuracies.
+
+
+    *   Contents
+
+    *   Introduction
+
+    *   Chapter 1: The Advantages of Using CSS
+
+    *   Chapter 2: CSS Modules
+
+    *   Chapter 3: Inclusion
+
+    *   Chapter 4: Measurement Units
+
+    *   Chapter 5: Colors
+
+    *   Chapter 6: Background
+
+    *   Chapter 7: Fonts
+
+    *   Chapter 8: Text
+
+    *   Chapter 9: Using Images
+
+    *   Chapter 10: Links
+
+    *   Chapter 11: Tables
+
+    *   Chapter 12: Borders
+
+    *   Chapter 13: Margins
+
+    *   Conclusion
+
+
+    # Introduction
+
+
+    CSS, the shortened version of Cascading Style Sheets, is one of the simplest of
+    all the design languages, the one you need to use for the most effective web design.
+    CSS will handle how your webpages look and how they feel; you can set the text
+    color, the font style, how much space there is between each paragraph, how the
+    web page columns are laid out and sized, the colors and images needed for the
+    background and all the other layout and design variations that you need to make
+    your website work on all different screen sizes and devices.
+
+
+    CSS is incredibly easy to understand and learn and it gives you powerful control
+    over how your HTML document are presented. It is commonly combines with two of
+    the more popular markup languages, HTML or XHTML, to provide you with all the
+    tools you need to produce a well-designed website.
+
+
+    For the purpose of this book, I am going to take you through all of the main aspects
+    of web design that you can control CSS, together with sample code. I hope that,
+    by the end of it, you have some idea of how easy CSS is to use and the amazing
+    results you can produce.
+
+
+    # Chapter 1: The Advantages of Using CSS
+
+
+    CSS has a lot of advantages over and above any other similar program, including:
+
+
+    Time-Savings - with CSS, you can write it once and then use the exact same sheet
+    in a number of different HTML pages. Each HTML element can have its own separate
+    style that can be applied to multiple web pages.
+
+
+    Faster Page Load Times – when you use CSS, there is no need to write the HTML
+    tag attribute every single time. Instead, you can write just one rule for a tag
+    and then apply it to every occurrence of the tag. Less code equals much faster
+    loading times
+
+
+    Easy to Maintain -  when you want to make a global change, all you need to do
+    is change the style; each element relating to that style in all the web pages
+    it was used in will be changed
+
+
+    Superior to HTML in Style – CSS provides access to a much bigger range of attributes
+    than HTML does so your HTML page will look better than if you used HTML attributes.
+
+
+    Compatibility with Multiple Devices – Your style sheets allow for content to be
+    optimized for more multiple types of device. Using the same HTML document, you
+    can produce different website versions for printing, for PDAs or for mobile devices,
+    for example.
+
+
+    Global Web Standards – More and more, CS I being recommended over HTML so now
+    is a good time to start learning it and using it in all your HTML pages. That
+    way, they will be compatible with the browsers of the future.
+
+
+    Offline Browsing   CSS is able to store applications locally using offline cache.
+    This mean that you will find it easier to view offline websites and, because of
+    the cache, they will load faster and the website will perform better.
+
+
+    As you can see, CSS offers a ton of advantages over using HTML, not least the
+    fact that it is now the recognized standard. With CSS becoming more and more poplar,
+    now is the best time to start your learning process.
+
+
+    Without any further ado, let us delve into the CSS elements that you use for web
+    design.
+
+
+    Before I go any further, I must state that some of the example code used in the
+    book is attributed to www.tutorialspoint.com.
+
+
+    # Chapter 2: CSS Modules
+
+
+    CSS modules take on the existing CSS specifications along with a number of extension
+    features, including:
+
+
+    *   Selectors
+
+    *   Box Model
+
+    *   Image Values
+
+    *   Backgrounds and borders
+
+    *   Replaced content
+
+    *   Text effect
+
+    *   D and 3D transformations
+
+    *   Animations
+
+    *   Multiple column layout
+
+    *   Use Interface
+
+
+    CSS is made up of a number of style rules that are interpreted by the browser
+    before being applied to the right element of the document. Style rules are split
+    into three:
+
+
+    Selector - this is the HTML tag that the style is applied to. Examples of these
+    tags are, `<h1>` or `<table>`.
+
+
+    *   Property – Properties are types of HTML ta attributes. In simple terms, all
+    HTML attributes are changed to CSS properties, for example, `color` `border`,
+    etc.
+
+
+    *   Value – Each property is assigned a value or value. For example, the color
+    property may have a value of red or perhaps `#F2F2F2`, etc.
+
+
+    The syntax for a CSS style rule is:
+
+
+    ```
+
+    selector { property: value }
+
+    ```
+
+
+    For eample, you could define a border on a table as:
+
+
+    ```
+
+    table{ border :1px solid #C00; }
+
+    ```
+
+    '
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    ## Table of Contents
+
+
+    *   [© Copyright 2016 - All rights reserved.](#part0002.html_9-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [ContentsIntroduction](#part0003.html_S-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Introduction](#part0004.html_23-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 1: The Advantages of Using CSS](#part0005.html_2J-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 2: CSS Modules](#part0006.html_3J-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 3: Inclusion](#part0007.html_AT-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 4: Measurement Units](#part0008.html_HU-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 5: Colors](#part0009.html_IE-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 6: Background](#part0010.html_K0-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 7: Fonts](#part0011.html_VV-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 8: Text](#part0012.html_17T-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 9: Using Images](#part0013.html_1JK-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 10: Links](#part0014.html_1NB-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 11: Tables](#part0015.html_1SF-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 12: Borders](#part0016.html_2AT-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Chapter 13: Margins](#part0017.html_2M9-020de52a65f8414d94e9614e31c22477)
+
+
+    *   [Conclusion](#part0018.html_2TL-020de52a65f8414d94e9614e31c22477)
+
+
+    CSS:
+
+
+    Quick Start Guide - Effective Web Design
+
+
+    © Copyright 2016 - All rights reserved.
+
+
+    In no way is it legal to reproduce, duplicate, or transmit any part of this document
+    in either electronic means or in printed format. Recording of this publication
+    is strictly prohibited and any storage of this document is not allowed unless
+    with written permission from the publisher. All rights reserved.
+
+
+    The information provided herein is stated to be truthful and consistent, in that
+    any liability, in terms of inattention or otherwise, by any usage or abuse of
+    any policies, processes, or directions contained within is the solitary and utter
+    responsibility of the recipient reader. Under no circumstances will any legal
+    responsibility or blame be held against the publisher for any reparation, damages,
+    or monetary loss due to the information herein, either directly or indirectly.
+
+
+    Respective authors own all copyrights not held by the publisher.
+
+
+    Legal Notice:
+
+
+    This book is copyright protected. This is only for personal use. You cannot amend,
+    distribute, sell, use, quote or paraphrase any part or the content within this
+    book without the consent of the author or copyright owner. Legal action will be
+    pursued if this is breached.
+
+
+    Disclaimer Notice:
+
+
+    Please note the information contained within this document is for educational
+    and entertainment purposes only. Every attempt has been made to provide accurate,
+    up to date and reliable complete information. No warranties of any kind are expressed
+    or implied. Readers acknowledge that the author is not engaging in the rendering
+    of legal, financial, medical or professional advice.
+
+
+    By reading this document, the reader agrees that under no circumstances are we
+    responsible for any losses, direct or indirect, which are incurred as a result
+    of the use of information contained within this document, including, but not limited
+    to, —errors, omissions, or inaccuracies.
+
+
+    Contents
+
+
+    Introduction
+
+
+    Chapter 1: The Advantages of Using CSS
+
+
+    Chapter 2: CSS Modules
+
+
+    Chapter 3: Inclusion
+
+
+    Chapter 4: Measurement Units
+
+
+    Chapter 5: Colors
+
+
+    Chapter 6: Background
+
+
+    Chapter 7: Fonts
+
+
+    Chapter 8: Text
+
+
+    Chapter 9: Using Images
+
+
+    Chapter 10: Links
+
+
+    Chapter 11: Tables
+
+
+    Chapter 12: Borders
+
+
+    Chapter 13: Margins
+
+
+    Conclusion
+
+
+    # Introduction
+
+
+    CSS, the shortened version of Cascading Style Sheets, is one of the simplest of
+    all the design languages, the one you need to use for the most effective web design.
+    CSS will handle how your webpages look and how they feel; you can set the text
+    color, the font style, how much space there is between each paragraph, how the
+    web page columns are laid out and sized, the colors and images needed for the
+    background and all the other layout and design variations that you need to make
+    your website work on all different screen sizes and devices.
+
+
+    CSS is incredibly easy to understand and learn and it gives you powerful control
+    over how your HTML document are presented. It is commonly combines with two of
+    the more popular markup languages, HTML or XHTML, to provide you with all the
+    tools you need to produce a well-designed website.
+
+
+    For the purpose of this book, I am going to take you through all of the main aspects
+    of web design that you can control CSS, together with sample code. I hope that,
+    by the end of it, you have some idea of how easy CSS is to use and the amazing
+    results you can produce.
+
+
+    # Chapter 1: The Advantages of Using CSS
+
+
+    CSS has a lot of advantages over and above any other similar program, including:
+
+
+    Time-Savings - with CSS, you can write it once and then use the exact same sheet
+    in a number of different HTML pages. Each HTML element can have its own separate
+    style that can be applied to multiple web pages.
+
+
+    Faster Page Load Times – when you use CSS, there is no need to write the HTML
+    tag attribute every single time. Instead, you can write just one rule for a tag
+    and then apply it to every occurrence of the tag. Less code equals much faster
+    loading times
+
+
+    Easy to Maintain -  when you want to make a global change, all you need to do
+    is change the style; each element relating to that style in all the web pages
+    it was used in will be changed
+
+
+    Superior to HTML in Style – CSS provides access to a much bigger range of attributes
+    than HTML does so your HTML page will look better than if you used HTML attributes.
+
+
+    Compatibility with Multiple Devices – Your style sheets allow for content to be
+    optimized for more multiple types of device. Using the same HTML document, you
+    can produce different website versions for printing, for PDAs or for mobile devices,
+    for example.
+
+
+    Global Web Standards – More and more, CS I being recommended over HTML so now
+    is a good time to start learning it and using it in all your HTML pages. That
+    way, they will be compatible with the browsers of the future.
+
+
+    Offline Browsing   CSS is able to store applications locally using offline cache.
+    This mean that you will find it easier to view offline websites and, because of
+    the cache, they will load faster and the website will perform better.
+
+
+    As you can see, CSS offers a ton of advantages over using HTML, not least the
+    fact that it is now the recognized standard. With CSS becoming more and more poplar,
+    now is the best time to start your learning process.
+
+
+    Without any further ado, let us delve into the CSS elements that you use for web
+    design.
+
+
+    Before I go any further, I must state that some of the example code used in the
+    book is attributed to www.tutorialspoint.com.
+
+
+    # Chapter 2: CSS Modules
+
+
+    CSS modules take on the existing CSS specifications along with a number of extension
+    features, including:
+
+
+    *   Selectors
+
+
+    *   Box Model
+
+
+    *   Image Values
+
+
+    *   Backgrounds and borders
+
+
+    *   Replaced content
+
+
+    *   Text effect
+
+
+    *   D and 3D transformations
+
+
+    *   Animations
+
+
+    *   Multiple column layout
+
+
+    *   Use Interface
+
+
+    CSS is made up of a number of style rules that are interpreted by the browser
+    before being applied to the right element of the document. Style rules are split
+    into three:
+
+
+    Selector - this is the HTML tag that the style is applied to. Examples of these
+    tags are, <h1> or <table>.
+
+
+    *   Property – Properties are types of HTML ta attributes. In simple terms, all
+    HTML attributes are changed to CSS properties, for example, color border, etc.
+
+
+    *   Value – Each property is assigned a value or value. For example, the color
+    property may have a value of red or perhaps #F2F2F2, etc.
+
+
+    The syntax for a CSS style rule is:
+
+
+    selector { property: value }
+
+
+    For eample, you could define a border on a table as:
+
+
+    table{ border :1px solid #C00; }'
+  toc: []
+  trans: '
+
+
+    ![](img/cover.jpeg)
+
+
+    ## 目录
+
+
+    *   © 版权所有 2016 - 保留所有权利。
+
+    *   内容简介
+
+    *   引言
+
+    *   第 1 章：使用 CSS 的优势
+
+    *   第 2 章：CSS 模块
+
+    *   第 3 章：包含方式
+
+    *   第 4 章：度量单位
+
+    *   第 5 章：颜色
+
+    *   第 6 章：背景
+
+    *   第 7 章：字体
+
+    *   第 8 章：文本
+
+    *   第 9 章：使用图像
+
+    *   第 10 章：链接
+
+    *   第 11 章：表格
+
+    *   第 12 章：边框
+
+    *   第 13 章：边距
+
+    *   结论
+
+
+    CSS：
+
+
+    快速入门指南 - 高效网页设计
+
+
+    © 版权所有 2016 - 保留所有权利。
+
+
+    未经许可，严禁以电子或印刷形式复制、复制或传播本文档的任何部分。严禁录制本出版物，未经出版商书面许可，不得存储本文档。保留所有权利。
+
+
+    本文提供的信息据称真实且一致，任何因疏忽或其他原因导致的、因使用或滥用其中包含的任何政策、流程或指示而产生的责任，均由接收读者独自承担。在任何情况下，出版商均不对因本文信息直接或间接造成的任何赔偿、损害或金钱损失承担法律责任或责任。
+
+
+    各自作者拥有出版商未持有的所有版权。
+
+
+    法律声明：
+
+
+    本书受版权保护。仅供个人使用。未经作者或版权所有者同意，不得修改、分发、出售、使用、引用或释义本书的任何部分或内容。如有违反，将追究法律责任。
+
+
+    免责声明：
+
+
+    请注意，本文档中包含的信息仅供教育和娱乐目的。已尽一切努力提供准确、最新和可靠的完整信息。不提供任何明示或暗示的保证。读者承认作者不提供法律、财务、医疗或专业建议。
+
+
+    通过阅读本文档，读者同意在任何情况下，我们均不对因使用本文档中包含的信息而导致的任何直接或间接损失负责，包括但不限于错误、遗漏或不准确之处。
+
+
+    *   内容
+
+    *   引言
+
+    *   第 1 章：使用 CSS 的优势
+
+    *   第 2 章：CSS 模块
+
+    *   第 3 章：包含方式
+
+    *   第 4 章：度量单位
+
+    *   第 5 章：颜色
+
+    *   第 6 章：背景
+
+    *   第 7 章：字体
+
+    *   第 8 章：文本
+
+    *   第 9 章：使用图像
+
+    *   第 10 章：链接
+
+    *   第 11 章：表格
+
+    *   第 12 章：边框
+
+    *   第 13 章：边距
+
+    *   结论
+
+
+    # 引言
+
+
+    CSS，即层叠样式表（Cascading Style Sheets）的缩写，是所有设计语言中最简单的一种，也是实现最高效网页设计所必需的语言。CSS 将处理网页的外观和感觉；你可以设置文本颜色、字体样式、段落间距、网页列的布局和大小、背景所需的颜色和图像，以及所有其他布局和设计变化，以使你的网站在不同屏幕尺寸和设备上正常工作。
+
+
+    CSS 非常容易理解和学习，它让你能够强有力地控制 HTML 文档的呈现方式。它通常与两种更流行的标记语言（HTML 或 XHTML）结合使用，为你提供制作设计精良网站所需的所有工具。
+
+
+    本书将带你了解 CSS 可以控制的网页设计的所有主要方面，并附有示例代码。我希望，在阅读完本书后，你能对 CSS 的易用性以及它能产生的惊人效果有所了解。
+
+
+    # 第 1 章：使用 CSS 的优势
+
+
+    CSS 相比其他类似程序有许多优势，包括：
+
+
+    节省时间——使用 CSS，你可以编写一次样式表，然后在多个不同的 HTML 页面中使用完全相同的样式表。每个 HTML 元素都可以拥有自己独立的样式，并可应用于多个网页。
+
+
+    更快的页面加载速度——使用 CSS 时，无需每次都编写 HTML 标签属性。相反，你可以为某个标签编写一条规则，然后将其应用于该标签的每次出现。更少的代码意味着更快的加载速度。
+
+
+    易于维护——当你想要进行全局更改时，只需更改样式；所有使用该样式的网页中与该样式相关的每个元素都将被更改。
+
+
+    在样式上优于 HTML——CSS 提供了比 HTML 更广泛的属性访问范围，因此你的 HTML 页面看起来会比使用 HTML 属性更好。
+
+
+    兼容多种设备——你的样式表允许内容针对多种设备类型进行优化。例如，使用相同的 HTML 文档，你可以为打印、PDA 或移动设备生成不同的网站版本。
+
+
+    全球网络标准——越来越多地推荐使用 CSS 而非 HTML，所以现在是开始学习并将其应用于所有 HTML 页面的好时机。这样，它们将与未来的浏览器兼容。
+
+
+    离线浏览——CSS 能够通过离线缓存本地存储应用程序。这意味着你将更容易查看离线网站，并且由于缓存，它们加载速度更快，网站性能更好。
+
+
+    如你所见，CSS 相比 HTML 提供了大量优势，尤其是它现在已成为公认的标准。随着 CSS 越来越流行，现在正是开始学习的最佳时机。
+
+
+    闲话少说，让我们深入探讨用于网页设计的 CSS 元素。
+
+
+    在进一步讲解之前，我必须说明，本书中使用的一些示例代码归功于 www.tutorialspoint.com。
+
+
+    # 第 2 章：CSS 模块
+
+
+    CSS 模块采用了现有的 CSS 规范以及一些扩展功能，包括：
+
+
+    *   选择器
+
+    *   盒模型
+
+    *   图像值
+
+    *   背景和边框
+
+    *   替换内容
+
+    *   文本效果
+
+    *   2D 和 3D 变换
+
+    *   动画
+
+    *   多列布局
+
+    *   用户界面
+
+
+    CSS 由一系列样式规则组成，这些规则由浏览器解释后应用于文档的正确元素。样式规则分为三部分：
+
+
+    选择器——这是应用样式的 HTML 标签。这些标签的示例有`<h1>`或`<table>`。
+
+
+    *   属性——属性是 HTML 标签属性的类型。简单来说，所有 HTML 属性都转换为 CSS 属性，例如`color`、`border`等。
+
+
+    *   值——每个属性被赋予一个或多个值。例如，颜色属性的值可以是红色或`#F2F2F2`等。
+
+
+    CSS 样式规则的语法为：
+
+
+    ```
+
+    selector { property: value }
+
+    ```
+
+
+    例如，你可以为表格定义边框：
+
+
+    ```
+
+    table{ border :1px solid #C00; }
+
+    ```
+
+
+    '
+- fmt: "\nIn this example, the `table` is a selector and `border` is a property. It\
+    \ has been given a value of `1px solid #C00`.\n\nSelectors can be defined in a\
+    \ number of ways so let’s look at each different one:\n\n## Type Selectors\n\n\
+    You saw an example of the Type selector above but let’s have a look at another\
+    \ - a way of adding a color to all of the level 1 headings:\n\n```css\nh1 {\n\
+    \    color: #36CFFF;\n}\n```\n\n## Universal Selectors\n\nInstead of selecting\
+    \ the elements that relate to a specific type, this selector just matches the\
+    \ names of the element types. For example:\n\n```css\n* {\n    color: #000000;\n\
+    }\n```\n\nIn this example, the content of all the elements has been turned to\
+    \ black.\n\n## Descendant Selectors\n\nLet’s say you want to give a particular\
+    \ element a style but only when it is inside a specific element. In the following\
+    \ example, we are applying the style rule to the `<em>` element but only when\
+    \ it is outside of the `<ul>` tag:\n\n```css\nul em {\n    color: #000000;\n}\n\
+    ```\n\n## Class Selectors\n\nClass selectors allow you to use the `class` attribute\
+    \ of the elements to define your style rules. All of the elements of that particular\
+    \ class are formatted as per the defined rule:\n\n```css\n.black {\n    color:\
+    \ #000000;\n}\n```\n\nIn this example, the rule has turned the content of all\
+    \ the elements with the `class` attribute of `black` to the color black. You could\
+    \ go one step further if you like:\n\n```css\nh1.black {\n    color: #000000;\n\
+    }\n```\n\nNow you have specified that only the content inside the `<h1>` element\
+    \ with a `class` attribute of `black` will be turned to black.\n\nYou are not\
+    \ limited to just one class selector for an element though. Look at this example:\n\
+    \n```html\n<p class=\"center bold\">\nThe style of this paragraph is defined by\
+    \ the classes Bold and Center\n</p>\n```\n\n## ID Selectors\n\nStyle rules can\
+    \ be defined on the `id` attribute of an element and, when a rule is defined,\
+    \ it will format all elements with the specified `id` attribute:\n\n```css\n#black\
+    \ {\n    color: #000000;\n}\n```\n\nThis rule will turn the content of all elements\
+    \ that has the `id` attribute to black. You can be a bit more specific if you\
+    \ like, for example:\n\n```css\nh1#black {\n    color: #000000;\n}\n```\n\nThis\
+    \ rule turns the content for `<h1>` elements to black ONLY if the `id` attribute\
+    \ is set to `black`.\n\nThe real power of an id selector become known when they\
+    \ are used as foundations for the descendant selector, for example:\n\n```css\n\
+    #black h2 {\n    color: #000000;\n}\n```\n\nHere, you can see that all of the\
+    \ level 2 headings will be turned to black only when they lie inside a tag that\
+    \ has the `id` attribute set as `black`.\n\n## Child Selectors\n\nThe child selector\
+    \ is similar to the descendant selector but with different functionality. Look\
+    \ at this example:\n\n```css\nbody > p {\n    color: #000000;\n}\n```\n\nThis\
+    \ will turn the paragraphs to black only if they are the direct child of the `<body>`\
+    \ element. Other paragraphs that are inside other elements, like `<td>` or `<div>`\
+    \ would not change.\n\n## Attribute Selectors\n\nStyles can also be applied to\
+    \ HTML element that have specific attributes. Look at the example below; you can\
+    \ see that the style rule is going to match all the `input` elements that have\
+    \ a `type` attribute with a `text` value:\n\n```css\ninput[type=\"text\"] {\n\
+    \    color: #000000;\n}\n```\n\nThe advantage to using this method is that `<input\
+    \ type=\"submit\" />` is not affected and the color change only applied to certain\
+    \ text fields.\n\nThe following rules are for the attribute selector:\n\n*   `p[lang]`\
+    \ - this selects all of the paragraph elements that have a `lang` attribute\n\
+    *   `p[lang=\"fr\"]` – this selects all the paragraph elements with `lang` attributes\
+    \ that have an exact value of `\"fr\"`\n*   `p[lang~=\"fr\"]` – this selects all\
+    \ the paragraph elements that have a `lang` attribute containing `\"fr\"`\n* \
+    \  `p[lang|=\"en\"]` – this selects all the paragraph elements with a `lang` attribute\
+    \ containing exact values of `\"en\"` or that start with `\"en-\"`.\n\n## Multiple\
+    \ Style Rules\n\nMultiple style rules can be defined for one single element and\
+    \ these should be defined to combine a number of properties and their corresponding\
+    \ value into one block, as in this example:\n\n```css\nh1 {\n    color: #36C;\n\
+    \    font-weight: normal;\n    letter-spacing: .4em;\n    margin-bottom: 1em;\n\
+    \    text-transform: lowercase;\n}\n```\n\nIn this example, you can see that the\
+    \ pairs of properties and their value are each separated by a semi-colon (`;`).\
+    \ They can stay in one single line or you can spread them over multiple lines\
+    \ but, to read them better, we have kept them on single lines.\n\n## Grouping\
+    \ Selectors\n\nStyles can be applied to multiple selectors. You just have to remember\
+    \ to separate each with a comma, as shown in this example:\n\n```css\nh1, h2,\
+    \ h3 {\n    color: #36C;\n    font-weight: normal;\n    letter-spacing: .4em;\n\
+    \    margin-bottom: 1em;\n    text-transform: lowercase;\n}\n```\n\nThis style\
+    \ rule will apply to all of the `h1`, `h2` and `h3` elements as well. The order\
+    \ in the list is not relevant because all of the elements in the selector are\
+    \ going to have the declarations applied to them. As you can see from the example\
+    \ below, various class selectors can be combined:\n\n```css\n#content, #footer,\
+    \ #supplement {\n    position: absolute;\n    left: 510px;\n    width: 200px;\n\
+    }\n```\n\n# Chapter 3: Inclusion\n\nYou have four ways of associating styles with\
+    \ HTML documents, the most common of which is the inline CSS and the External\
+    \ CSS methods.\n\n## Embedded CSS\n\nCSS rules can be put into an HTML document\
+    \ with the use of the `<style>` element. The tag goes inside the `<head>…</head?`\
+    \ tag and the rules that are defined with this syntax are applicable to all of\
+    \ the available elements. The following example shows an embedded CSS style element:\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n   <head>\n      <style type=\"text/css\"\
+    \ media=\"all\">\n         body {\n            background-color: linen;\n    \
+    \     }\n         h1 {\n            color: maroon;\n            margin-left: 40px;\n\
+    \         }\n      </style>\n   </head>   \n   <body>\n      <h1>This is a heading</h1>\n\
+    \      <p>This is a paragraph.</p>\n   </body>\n</html>\n```\n\n### Attributes\n\
+    \nThe attributes commonly associated with the `<style>` elements are shown in\
+    \ the following table:\n\n| Attribute | Value | Description |\n| --- | --- | ---\
+    \ |\n| `type` | `text/css` | This attribute specifies the language for the style\
+    \ sheet as an MIME content type and is a required attribute |\n| `media` | `screen`\
+    \ `tty` `tv` `projection` `handheld` `print` `braille` `aural` `all` | This specifies\
+    \ which device the document is going to be displayed on. The default value is\
+    \ `all` and this is classed as an optional attribute |\n\n## Inline CSS\n\nYou\
+    \ can also use the `style` attributes from any HTML elements to define the rules.\
+    \ These specific rules will only be applied to that particular element. The generic\
+    \ syntax is:\n\n```html\n<element style=\"...style rules....\">\n```\n\n### Attributes\n\
+    \nThe value of a `style` attribute is a mixture of different style declarations,\
+    \ each separated by semi colons. The following example is based on the generic\
+    \ syntax:\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <h1 style=\"\
+    color:#36C;\"> This is inline CSS </h1>\n   </body>\n</html>\n```\n\n## External\
+    \ CSS - The `<link>` Element\n\nYou can use the `<link>` element as a way of including\
+    \ an external stylesheet in the HTML document. External stylesheets are separate\
+    \ text files that have a `.css` extension. You will define all of your style rules\
+    \ in this file and this can then be added to any HTML document by using the `<link>`\
+    \ element. The generic syntax is:\n\n```html\n<head>\n   <link type=\"text/css\"\
+    \ href=\"...\" media=\"...\" />\n</head>\n```\n\n### Attributes\n\nThe attributes\
+    \ that are associated with the `<style>` elements are as follows:\n\n| Attribute\
+    \ | Value | Description |\n| --- | --- | --- |\n| `type` | `text/css` | This specifies\
+    \ the language for the style sheet as a MIME content type and is a required attribute\
+    \ |\n| `href` | `URL` | This specifies that the style sheet has style rules and\
+    \ is also a required attribute |\n| `media` | `screen` `tty` `tv` `projection`\
+    \ `handheld` `print` `braille` `aural` `all` | This specifies which devices the\
+    \ document can be displayed on and is an optional attribute. The default value\
+    \ is `all` |\n\nAs an example, consider a style sheet called `mystyle.css` with\
+    \ these rules:\n"
+  raw: 'In this example, the table is a selector and border is a property. It has
+    been given a value of 1px solid #C00
+
+
+    Selectors can be defined in a number of ways so let’s look at each different one:
+
+
+    Type Selectors
+
+
+    You saw an example of the Type selector above but let’s have a look at another
+    - a way of adding a color to all of the level 1 headings:
+
+
+    h1 {
+
+
+    color: #36CFFF;
+
+
+    }
+
+
+    Universal Selectors
+
+
+    Instead of selecting the elements that relate to a specific type, this selector
+    just matches the names of the element types. For example:
+
+
+    {
+
+
+    color: #000000;
+
+
+    }
+
+
+    In this example, the content of all the elements has been turned to black
+
+
+    Descendant Selectors
+
+
+    Let’s say you want to give a particular element a style but only when it is inside
+    a specific element. In the following example, we are applying the style rule to
+    the <em> element but only when it is outside of the <ul> tag:
+
+
+    ul em {
+
+
+    color: #000000;
+
+
+    }
+
+
+    Class Selectors
+
+
+    Class selectors allow you to use the class attribute of the elements to define
+    your style rules. All of the elements of that particular class are formatted as
+    per the defined rule:
+
+
+    .black {
+
+
+    color: #000000;
+
+
+    }
+
+
+    In this example, the rule has turned the content of all the elements with the
+    class attribute of black to the color black. You could go one step further if
+    you like:
+
+
+    h1.black {
+
+
+    color: #000000;
+
+
+    }
+
+
+    Now you have specified that only the content inside the <h1> element with a class
+    attribute of black will be turned to black.
+
+
+    You are not limited to just one class selector for an element though. Look at
+    this example:
+
+
+    <p class="center bold">
+
+
+    The style of this paragraph is defined by the classes Bold and Center
+
+
+    </p>
+
+
+    ID Selectors
+
+
+    Style rules can be defined on the id attribute of an element and, when a rule
+    is defined, it will format all elements with the specified id attribute:
+
+
+    #black {
+
+
+    color: #000000;
+
+
+    }
+
+
+    This rule will turn the content of all elements that has the id attribute to black.
+    You can be a bit more specific if you like, for example:
+
+
+    h1#black {
+
+
+    color: #000000;
+
+
+    }
+
+
+    This rule turns the content for <h1> elements to black ONLY if the id attribute
+    is set to black.
+
+
+    The real power of an id selector become known when they are used as foundations
+    for the descendant selector, for example:
+
+
+    #black h2 {
+
+
+    color: #000000;
+
+
+    }
+
+
+    Here, you can see that all of the level 2 headings will be turned to black only
+    when they lie inside a tag that has the id attribute set as black
+
+
+    Child Selectors
+
+
+    The child selector is similar to the descendant selector but with different functionality.
+    Look at this example:
+
+
+    body > p {
+
+
+    color: #000000;
+
+
+    }
+
+
+    This will turn the paragraphs to black only if they are the direct child of the
+    <body> element. Other paragraphs that are inside other elements, like <td> or
+    <div> would not change.
+
+
+    Attribute Selectors
+
+
+    Styles can also be applied to HTML element that have specific attributes. Look
+    at the example below; you can see that the style rule is going to match all the
+    input elements that have a type attribute with a text value:
+
+
+    input [type = "text"]{
+
+
+    color: #000000;
+
+
+    }
+
+
+    The advantage to using this method is that <input type = “submit” /> is not affected
+    and the color change only applied to certain text fields.
+
+
+    The following rules are for the attribute selector:
+
+
+    *   p[lang] -  this selects all of the paragraph elements that have a lang attribute
+
+
+    *   p[lang]= “fr”] – this selects all the paragraph elements with lang attributes
+    that have an exact value of “fr”
+
+
+    *   p[lang~="fr"] – this selects all the paragraph elements that have a lang attribute
+    containing “fr”
+
+
+    *   p[lang|="en"] – this selects all the paragraph elements with a lang attribute
+    containing exact values of “en” or that start with “en-“.
+
+
+    Multiple Style Rules
+
+
+    Multiple style rules can be defined for one single element and these should be
+    defined to combine a number of properties and their corresponding value into one
+    block, as in this example:
+
+
+    h1 {
+
+
+                    color: #36C;
+
+
+                     font-weight: normal;
+
+
+                    letter-spacing: .4em;
+
+
+                    margin-bottom: 1em;
+
+
+                    text-transform: lowercase;
+
+
+    }
+
+
+    In this example, you can see that the pairs of properties and their value are
+    each separated by a semi-colon (;). They can stay in one single line or you can
+    spread them over multiple lines but, to read them better, we have kept them on
+    single lines.
+
+
+    Grouping Selectors
+
+
+    Styles can be applied to multiple selectors. You just have to remember to separate
+    each with a comma, as shown in this example:
+
+
+    h1, h2, h3 {
+
+
+                    color: #36C;
+
+
+                    font-weight: normal;
+
+
+                    letter-spacing: .4em;
+
+
+                    margin-bottom: 1em;
+
+
+                    text-transform: lowercase;
+
+
+    }
+
+
+    This style rule will apply to all of the h1, h2 and h3 elements as well. The order
+    in the list is not relevant because all of the elements in the selector are going
+    to have the declarations applied to them. As you can see from the example below,
+    various class selectors can be combined:
+
+
+    #content, #footer, #supplement {
+
+
+       position: absolute;
+
+
+       left: 510px;
+
+
+                    width: 200px;
+
+
+             }
+
+
+    # Chapter 3: Inclusion
+
+
+    You have four ways of associating styles with HTML documents, the most common
+    of which is the inline CSS and the External CSS methods.
+
+
+    Embedded CSS
+
+
+    CSS rules can be put into an HTML document with the use of the <style> element.
+    The tag goes inside the <head>…</head? Tag ad the rules that are defined with
+    this syntax are applicable to all of the available elements. The following example
+    shows and embedded CSS style element:
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type = "text/css" media = "all">
+
+
+             body {
+
+
+                background-color: linen;
+
+
+             }
+
+
+             h1 {
+
+
+                color: maroon;
+
+
+                margin-left: 40px;
+
+
+             }
+
+
+          </style>
+
+
+       </head>  
+
+
+       <body>
+
+
+          <h1>This is a heading</h1>
+
+
+          <p>This is a paragraph.</p>
+
+
+       </body>
+
+
+    </html>
+
+
+    Attributes
+
+
+    The attributes commonly associated with the <style> elements are shown in the
+    following table:
+
+
+    | Attribute | Value | Description |
+
+
+    | type | Text/css | This attribute specifies the language for the style sheer
+    as an MIME content type and s a required attribute |
+
+
+    | media | screenttytvprojectionhandheldprintbrailleauralall | This specifies which
+    device the document is going to be displayed on. The default value is all and
+    this is classed as an optional attribute |
+
+
+    Inline CSS
+
+
+    You can also use the style attributes from any HTML elements to define the rules.
+    These specific rules will only be applied that the particular element. The generic
+    syntax is:
+
+
+    <element style = "...style rules....">
+
+
+    Attributes
+
+
+    The value of a style attribute is a mixture of different style declarations, each
+    separated by semi colons. The following example is based on the generic syntax:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <h1 style = "color:#36C;"> This is inline CSS </h1>
+
+
+       </body>
+
+
+    </html>
+
+
+    External CSS - The <link> Element
+
+
+    You can use the <link> element as a way of including an external stylesheet in
+    the HTML document. External stylesheet are separate text files that have a .css
+    extension. You will define all of your style rules in this file and this can then
+    be added to any HTML document by using the <link element. The generic syntax is:
+
+
+    <head>
+
+
+       <link type = "text/css" href = "..." media = "..." />
+
+
+    </head>
+
+
+    Attributes
+
+
+    The attributes that are associated with the <style> elements are as follows:
+
+
+    | Attribute | Value | Description |
+
+
+    | type | text/css | This specifies the language for the style sheet as a MIME
+    content type and is a required attribute |
+
+
+    | href | URL | This specifies that the style sheet has style rules and is also
+    a required attribute |
+
+
+    | media | Screenttytvprojectionhandheldprintbrailleauralall | Tis specifies which
+    devices the document can be displayed on and is an optional attribute. The default
+    value is All |
+
+
+    As an example, consider a style sheet called mystyle.css with these rules:'
+  toc: []
+  trans: "\n在这个例子中，`table` 是一个选择器，`border` 是一个属性。它被赋予了 `1px solid #C00` 的值。\n\n选择器可以通过多种方式定义，下面我们逐一介绍：\n\
+    \n## 类型选择器\n\n上面你已经看到了类型选择器的例子，但让我们再看一个——为所有一级标题添加颜色的方法：\n\n```css\nh1 {\n   \
+    \ color: #36CFFF;\n}\n```\n\n## 通用选择器\n\n这个选择器不是选择与特定类型相关的元素，而是直接匹配元素类型的名称。例如：\n\
+    \n```css\n* {\n    color: #000000;\n}\n```\n\n在这个例子中，所有元素的内容都变成了黑色。\n\n## 后代选择器\n\
+    \n假设你想给某个特定元素设置样式，但仅当它位于另一个特定元素内部时。在下面的例子中，我们将样式规则应用于 `<em>` 元素，但仅当它位于 `<ul>`\
+    \ 标签之外时：\n\n```css\nul em {\n    color: #000000;\n}\n```\n\n## 类选择器\n\n类选择器允许你使用元素的\
+    \ `class` 属性来定义样式规则。所有属于该特定类的元素都会按照定义的规则进行格式化：\n\n```css\n.black {\n    color:\
+    \ #000000;\n}\n```\n\n在这个例子中，规则将所有 `class` 属性为 `black` 的元素内容变为黑色。如果你愿意，还可以更进一步：\n\
+    \n```css\nh1.black {\n    color: #000000;\n}\n```\n\n现在你指定了只有 `<h1>` 元素中 `class`\
+    \ 属性为 `black` 的内容才会变为黑色。\n\n不过，一个元素并不限于只能使用一个类选择器。请看这个例子：\n\n```html\n<p class=\"\
+    center bold\">\n该段落的样式由 Bold 和 Center 这两个类定义。\n</p>\n```\n\n## ID 选择器\n\n样式规则可以定义在元素的\
+    \ `id` 属性上，一旦定义了规则，它将格式化所有具有指定 `id` 属性的元素：\n\n```css\n#black {\n    color: #000000;\n\
+    }\n```\n\n这条规则会将所有 `id` 属性为 `black` 的元素内容变为黑色。如果你愿意，可以更具体一些，例如：\n\n```css\nh1#black\
+    \ {\n    color: #000000;\n}\n```\n\n这条规则仅当 `<h1>` 元素的 `id` 属性设置为 `black` 时，才将其内容变为黑色。\n\
+    \nID 选择器的真正威力在于它们作为后代选择器的基础时体现出来，例如：\n\n```css\n#black h2 {\n    color: #000000;\n\
+    }\n```\n\n这里可以看到，所有二级标题只有在位于 `id` 属性设置为 `black` 的标签内部时，才会变为黑色。\n\n## 子选择器\n\n\
+    子选择器与后代选择器类似，但功能不同。请看这个例子：\n\n```css\nbody > p {\n    color: #000000;\n}\n```\n\
+    \n这将使段落变为黑色，但仅当它们是 `<body>` 元素的直接子元素时。其他位于其他元素（如 `<td>` 或 `<div>`）内部的段落不会改变。\n\
+    \n## 属性选择器\n\n样式也可以应用于具有特定属性的 HTML 元素。请看下面的例子；你可以看到样式规则将匹配所有 `type` 属性值为 `text`\
+    \ 的 `input` 元素：\n\n```css\ninput[type=\"text\"] {\n    color: #000000;\n}\n```\n\
+    \n使用这种方法的优点是 `<input type=\"submit\" />` 不会受到影响，颜色变化仅应用于特定的文本字段。\n\n以下是属性选择器的规则：\n\
+    \n*   `p[lang]` - 选择所有具有 `lang` 属性的段落元素\n*   `p[lang=\"fr\"]` – 选择所有 `lang` 属性精确值为\
+    \ `\"fr\"` 的段落元素\n*   `p[lang~=\"fr\"]` – 选择所有 `lang` 属性包含 `\"fr\"` 的段落元素\n* \
+    \  `p[lang|=\"en\"]` – 选择所有 `lang` 属性精确值为 `\"en\"` 或以 `\"en-\"` 开头的段落元素\n\n##\
+    \ 多重样式规则\n\n可以为单个元素定义多条样式规则，这些规则应组合成一个块，包含多个属性及其对应的值，如下例所示：\n\n```css\nh1 {\n\
+    \    color: #36C;\n    font-weight: normal;\n    letter-spacing: .4em;\n    margin-bottom:\
+    \ 1em;\n    text-transform: lowercase;\n}\n```\n\n在这个例子中，你可以看到每对属性和值之间用分号（`;`）分隔。它们可以放在一行，也可以分散在多行，但为了便于阅读，我们将其放在单独的行上。\n\
+    \n## 分组选择器\n\n样式可以应用于多个选择器。你只需记住用逗号分隔每个选择器，如下例所示：\n\n```css\nh1, h2, h3 {\n  \
+    \  color: #36C;\n    font-weight: normal;\n    letter-spacing: .4em;\n    margin-bottom:\
+    \ 1em;\n    text-transform: lowercase;\n}\n```\n\n这条样式规则将应用于所有 `h1`、`h2` 和 `h3`\
+    \ 元素。列表中的顺序无关紧要，因为选择器中的所有元素都将应用这些声明。从下面的例子可以看出，可以组合多个类选择器：\n\n```css\n#content,\
+    \ #footer, #supplement {\n    position: absolute;\n    left: 510px;\n    width:\
+    \ 200px;\n}\n```\n\n# 第 3 章：包含方式\n\n你有四种方法将样式与 HTML 文档关联起来，其中最常用的是内联 CSS 和外部 CSS\
+    \ 方法。\n\n## 嵌入式 CSS\n\nCSS 规则可以通过使用 `<style>` 元素放入 HTML 文档中。该标签位于 `<head>…</head>`\
+    \ 标签内，使用此语法定义的规则适用于所有可用元素。下面的例子展示了一个嵌入式 CSS 样式元素：\n\n```html\n<!DOCTYPE html>\n\
+    <html>\n   <head>\n      <style type=\"text/css\" media=\"all\">\n         body\
+    \ {\n            background-color: linen;\n         }\n         h1 {\n       \
+    \     color: maroon;\n            margin-left: 40px;\n         }\n      </style>\n\
+    \   </head>   \n   <body>\n      <h1>这是一个标题</h1>\n      <p>这是一个段落。</p>\n   </body>\n\
+    </html>\n```\n\n### 属性\n\n与 `<style>` 元素相关的常见属性如下表所示：\n\n| 属性 | 值 | 描述 |\n| ---\
+    \ | --- | --- |\n| `type` | `text/css` | 该属性将样式表的语言指定为 MIME 内容类型，是必需属性 |\n| `media`\
+    \ | `screen` `tty` `tv` `projection` `handheld` `print` `braille` `aural` `all`\
+    \ | 指定文档将在哪种设备上显示。默认值为 `all`，属于可选属性 |\n\n## 内联 CSS\n\n你也可以使用任何 HTML 元素的 `style`\
+    \ 属性来定义规则。这些特定规则仅应用于该特定元素。通用语法为：\n\n```html\n<element style=\"...样式规则....\">\n\
+    ```\n\n### 属性\n\n`style` 属性的值由不同的样式声明混合而成，每个声明之间用分号分隔。以下示例基于通用语法：\n\n```html\n\
+    <html>\n   <head>\n   </head>\n   <body>\n      <h1 style=\"color:#36C;\"> 这是内联\
+    \ CSS </h1>\n   </body>\n</html>\n```\n\n## 外部 CSS - `<link>` 元素\n\n你可以使用 `<link>`\
+    \ 元素将外部样式表包含到 HTML 文档中。外部样式表是独立的文本文件，扩展名为 `.css`。你将在该文件中定义所有样式规则，然后可以通过 `<link>`\
+    \ 元素将其添加到任何 HTML 文档中。通用语法为：\n\n```html\n<head>\n   <link type=\"text/css\" href=\"\
+    ...\" media=\"...\" />\n</head>\n```\n\n### 属性\n\n与 `<style>` 元素相关的属性如下：\n\n|\
+    \ 属性 | 值 | 描述 |\n| --- | --- | --- |\n| `type` | `text/css` | 将样式表的语言指定为 MIME\
+    \ 内容类型，是必需属性 |\n| `href` | `URL` | 指定样式表包含样式规则，也是必需属性 |\n| `media` | `screen`\
+    \ `tty` `tv` `projection` `handheld` `print` `braille` `aural` `all` | 指定文档可以在哪些设备上显示，是可选属性。默认值为\
+    \ `all` |\n\n例如，考虑一个名为 `mystyle.css` 的样式表，其中包含以下规则：\n"
+- fmt: "\n```\nh1, h2, h3 {\n   color: #36C;\n   font-weight: normal;\n   letter-spacing:\
+    \ .4em;\n   margin-bottom: 1em;\n   text-transform: lowercase;\n}\n```\n\nNow,\
+    \ using the following code, you can add this file to any HTML document:\n\n```\n\
+    <head>\n   <link type = \"text/css\" href = \"mystyle.css\" media = \" all\" />\n\
+    </head>\n```\n\n## Imported CSS - @import Rule\n\nThe `@import` rule is used to\
+    \ import external stylesheets in a similar way to the `<link>` element. The generic\
+    \ syntax is:\n\n```\n<head>\n   <@import \"URL\";\n</head>\n```\n\nIn this syntax,\
+    \ `URL` is used as the URL of the specific stylesheet that contains the style\
+    \ rules. Another way of writing it would be:\n\n```\n<head>\n   <@import url(\"\
+    URL\");\n</head>\n```\n\nThe following example shows you how to import the style\
+    \ sheet to the HTML document:\n\n```\n<head>\n   @import \"mystyle.css\";\n</head>\n\
+    ```\n\n## Overriding CSS Rules\n\nSo far, we have looked at four different ways\
+    \ to include a style sheet in an HTML document. Now we look at how to override\
+    \ any of the style sheet rules:\n\n*   An inline style sheet will take the top\
+    \ priority, including over any rule that is defined in an external sheet or defined\
+    \ in `<style> … </style>` tags\n*   Any `<style> … </style>` tag will override\
+    \ an external sheet file\n*   External style sheet rules are the lowest priority\
+    \ and will only be applied if the inline style or `<style> … </style>` tags do\
+    \ not apply\n\n## How to Handle an Old Browser\n\nThere are quite a few of the\
+    \ older browsers that don’t provide support for CSS so, when you are writing your\
+    \ Embedded CSS in HTML documents, please take care. The following example show\
+    \ how to use comment tags as a way of hiding CSS from an older browser:\n\n```\n\
+    <style type=\"text/css\">\n   <!--\n      body, td {\n         color: blue;\n\
+    \      }\n   -->\n</style>\n```\n\n## CSS Comments\n\nSometimes you will need\
+    \ to add extra comments in to your style sheet blocks but it is very easy to comment\
+    \ on any part of a style sheet. All you do is put your comments within `/*…. this\
+    \ is a comment in a style sheet…. */`.\n\nYou can also use `/*…. */` to comment\
+    \ on multi-line blocks in the same way that you would in C or C++ languages.\n\
+    \nFor example:\n\n```\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n   \
+    \      p {\n            color: red;\n            /* a single-line comment */\n\
+    \            text-align: center;\n         }\n         /* a multi-line comment\
+    \ */\n      </style>\n   </head>\n   <body>\n      <p>Hello World!</p>\n   </body>\n\
+    </html>\n```\n\nThis will result in “Hello, World!” being displayed on your screen.\n\
+    \n# Chapter 4: Measurement Units\n\nCSS supports several different measurements\
+    \ including relative measures, like percentages, and absolute unit, like centimeters,\
+    \ inches, points, etc. These values are required when you specify measurements\
+    \ in the Style rules, for example, e.g. `border = “1px solid red”`.\n\nThe following\
+    \ table lists the CSS measurement units together with examples:\n\n| Unit | Description\
+    \ | Example |\n| --- | --- | --- |\n| % | This defines the measurement as a percentage\
+    \ relative to other values. A typical one would be an enclosing element. | `p\
+    \ {font-size: 16pt; line-height: 125%;}` |\n| cm | This defines measurements in\
+    \ centimeters | `div {margin-bottom: 2cm;}` |\n| em | This is a relative measurement\
+    \ for font height in em spaces. An em unit is the equivalent of the size of any\
+    \ given font and, because of this, if you were to assign 12 pt to a font, each\
+    \ of the em units would be 12 pt. This means that 2em would equal 24 pt. | `p\
+    \ {letter-spacing: 7em;}` |\n| ex | This defines the measurement that is relative\
+    \ to the x-height of the font. We determine the x-height by the height of the\
+    \ lowercase x in the specified font | `p {font-size: 24pt; line-height: 3ex;}`\
+    \ |\n| in | This defines the measurement in inches | `p {word-spacing: .15in;}`\
+    \ |\n| mm | This defines the measurement in millimeters | `p {word-spacing: 15mm;}`\
+    \ |\n| pc | This defines the measurement in picas, which is equivalent to 12 points.\
+    \ This means that there are 6 picas to an inch. | `p {font-size: 20pc;}` |\n|\
+    \ pt | This define the measurement in points, which is defined as 1/72 of an inch\
+    \ | `body {font-size: 18pt;}` |\n| px | Defines the measurement in screen pixels.\
+    \ | `p {padding: 25px;}` |\n| vh | This is 1% of the viewport height. | `h2 {\
+    \ font-size: 3.0vh; }` |\n| vw | This is 1% of the viewport width | `h1 { font-size:\
+    \ 5.9vw; }` |\n| vmin | This is 1vw or 1vh, whichever is the smallest | `p { font-size:\
+    \ 2vmin;}` |\n\n# Chapter 5: Colors\n\nIn CSS we use values to specify colors.\
+    \ Usually these are used when we set the color for the text of an element, which\
+    \ is the foreground, or the background of the element. We can also use them to\
+    \ change the color of decorative effects, such as a border.\n\nThe color values\
+    \ can be specified in several different formats, as displayed in the following\
+    \ table:\n\n| Format | Syntax | Example |\n| --- | --- | --- |\n| Hex Code | `#RRGGBB`\
+    \ | `p{color:#FF0000;}` |\n| Short Hex Code | `#RGB` | `p{color:#6A7;}` |\n| RGB\
+    \ % | `rgb(rrr%,ggg%,bbb%)` | `p{color:rgb(50%,50%,50%);}` |\n| RGB Absolute |\
+    \ `rgb(rrr,ggg,bbb)` | `p{color:rgb(0,0,255);}` |\n| keyword | `aqua, black, etc.`\
+    \ | `p{color:teal;}` |\n\nLet’s look at these formats in more detail:\n\n## Hex\
+    \ Codes\n\nHexadecimals are 6-digit color representations. The first digit – `RR`\
+    \ – represent red values, `GG` represents green values and `BB` represents the\
+    \ blue values.\n\nThe values can be taken from graphics software, such as JASC\
+    \ Paintshop Pro, Adobe Photoshop, Advanced Paintbrush, etc. Each of the hexadecimal\
+    \ codes are preceded by a # or a £ sign and the following are examples of hexadecimal\
+    \ notations:\n\n| Color | Color HEX |\n| --- | --- |\n|  | `#000000` |\n|  | `#FF0000`\
+    \ |\n|  | `#00FF00` |\n|  | `#0000FF` |\n|  | `#FFFF00` |\n|  | `#00FFFF` |\n\
+    |  | `#FF00FF` |\n|  | `#C0C0C0` |\n|  | `#FFFFFF` |\n\n## Short Hex Codes\n\n\
+    This is just a shorter version of the hex code, and each digit is replicated so\
+    \ that you get the equivalent 6-dgit value. These values can also be taken from\
+    \ graphics software and are also preceded by the # or £ sign:\n\n| Color | Color\
+    \ HEX |\n| --- | --- |\n|  | `#000` |\n|  | `#F00` |\n|  | `#0F0` |\n|  | `#0FF`\
+    \ |\n|  | `#FF0` |\n|  | `#0FF` |\n|  | `#F0F` |\n|  | `#FFF` |\n\n## RGB Values\n\
+    \nWe specify this value with the `rgb()` property, which takes three values –\
+    \ red, green and blue. Values are percentages or integers between 0 and 255. Be\
+    \ aware that not all browsers offer support for `rgb()` so try not to use it.\n\
+    \n| Color | Color RGB |\n| --- | --- |\n|  | `rgb(0,0,0)` |\n|  | `rgb(255,0,0)`\
+    \ |\n|  | `rgb(0,255,0)` |\n|  | `rgb(0,0,255)` |\n|  | `rgb(255,255,0)` |\n|\
+    \  | `rgb(0,255,255)` |\n|  | `rgb(255,0,255)` |\n|  | `rgb(192,192,192)` |\n\
+    |  | `rgb(255,255,255)` |\n\n## Building the Color Codes\n\nIf you use the CSS\
+    \ Color Code Builder, you can build, quite literally, millions of different color\
+    \ code but you will need a browser that is Java-enabled to do this.\n\n## Browser-Safe\
+    \ Colors\n\nThe following tables show you the 216 colors that are considered to\
+    \ be safe and are computer-independent. They vary from hexa code `000000` through\
+    \ to `FFFFFF` and are safe because all computers can display the colors in the\
+    \ right way on a 25 color palette:\n\n| | | | | | |\n|---|---|---|---|---|---|\n\
+    | `000000` | `000033` | `000066` | `000099` | `0000CC` | `0000FF` |\n| `003300`\
+    \ | `003333` | `003366` | `003399` | `0033CC` | `0033FF` |\n| `006600` | `006633`\
+    \ | `006666` | `006699` | `0066CC` | `0066FF` |\n| `009900` | `009933` | `009966`\
+    \ | `009999` | `0099CC` | `0099FF` |\n| `00CC00` | `00CC33` | `00CC66` | `00CC99`\
+    \ | `00CCCC` | `00CCFF` |\n| `00FF00` | `00FF33` | `00FF66` | `00FF99` | `00FFCC`\
+    \ | `00FFFF` |\n| `330000` | `330033` | `330066` | `330099` | `3300CC` | `3300FF`\
+    \ |\n| `333300` | `333333` | `333366` | `333399` | `3333CC` | `3333FF` |\n| `336600`\
+    \ | `336633` | `336666` | `336699` | `3366CC` | `3366FF` |\n| `339900` | `339933`\
+    \ | `339966` | `339999` | `3399CC` | `3399FF` |\n| `33CC00` | `33CC33` | `33CC66`\
+    \ | `33CC99` | `33CCCC` | `33CCFF` |\n| `33FF00` | `33FF33` | `33FF66` | `33FF99`\
+    \ | `33FFCC` | `33FFFF` |\n| `660000` | `660033` | `660066` | `660099` | `6600CC`\
+    \ | `6600FF` |\n| `663300` | `663333` | `663366` | `663399` | `6633CC` | `6633FF`\
+    \ |\n| `666600` | `666633` | `666666` | `666699` | `6666CC` | `6666FF` |\n| `669900`\
+    \ | `669933` | `669966` | `669999` | `6699CC` | `6699FF` |\n| `66CC00` | `66CC33`\
+    \ | `66CC66` | `66CC99` | `66CCCC` | `66CCFF` |\n| `66FF00` | `66FF33` | `66FF66`\
+    \ | `66FF99` | `66FFCC` | `66FFFF` |\n| `990000` | `990033` | `990066` | `990099`\
+    \ | `9900CC` | `9900FF` |\n"
+  raw: 'h1, h2, h3 {
+
+
+       color: #36C;
+
+
+       font-weight: normal;
+
+
+       letter-spacing: .4em;
+
+
+       margin-bottom: 1em;
+
+
+       text-transform: lowercase;
+
+
+    }
+
+
+    Now, using the following code, you can add this file to any HTML document:
+
+
+    <head>
+
+
+       <link type = "text/css" href = "mystyle.css" media = " all" />
+
+
+    </head>
+
+
+    Imported CSS - @import Rule
+
+
+    The @import rule is used to import external stylesheets in a similar way to the
+    <link> element. The generic syntax is:
+
+
+    <head>
+
+
+       <@import "URL";
+
+
+    </head>
+
+
+    In this syntax, URL is used as the URL of the specific stylesheet that contains
+    the style rules. Another way of writing it would be:
+
+
+    <head>
+
+
+       <@import url("URL");
+
+
+    </head>
+
+
+    The following example shows you how to import the style sheet to the HTML document:
+
+
+    <head>
+
+
+       @import "mystyle.css";
+
+
+    </head>
+
+
+    Overriding CSS Rules
+
+
+    So far, we have looked at four different ways to include a style sheet in an HTML
+    document. Now we look at how to override any of the style sheet rules:
+
+
+    *   An inline style sheet will take the top priority, including over any rule
+    that is defined in an external sheet or defined in <style> … </style> tags
+
+
+    *   Any <style> … </style> tag will override an external sheet file
+
+
+    *   External style sheet rules are the lowest priority and will only be applied
+    if the inline style or <style> … </style> tags do not apply
+
+
+    How to Handle an Old Browser
+
+
+    There are quite a few of the older browsers that don’t provide support for CSS
+    so, when you are writing your Embedded CSS in HTML documents, please take care.
+    The following example show how to use comment tags as a way of hiding CSS from
+    an older browser:
+
+
+    <style type="text/css">
+
+
+       <!--
+
+
+          body, td {
+
+
+             color: blue;
+
+
+          }
+
+
+       -->
+
+
+    </style>
+
+
+    CSS Comments
+
+
+    Sometimes you will need to add extra comments in to your style sheet blocks but
+    it is very easy to comment on any part of a style sheet. All you do is put your
+    comments within /*…. this is a comment in a style sheet…. */.
+
+
+    You can also use /*…. */ to comment on multi-line blocks in the same way that
+    you would in C or C++ languages.
+
+
+    For example:
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+       <head>
+
+
+          <style>
+
+
+             p {
+
+
+                color: red;
+
+
+                /* a single-line comment */
+
+
+                text-align: center;
+
+
+             }
+
+
+             /* a multi-line comment */
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p>Hello World!</p>
+
+
+       </body>
+
+
+    </html>
+
+
+    This will result in “Hello, World!” being displayed on your screen.
+
+
+    # Chapter 4: Measurement Units
+
+
+    CSS supports several different measurements including relative measures, like
+    percentages, and absolute unit, like centimeters, inches, points, etc. These values
+    are required when you specify measurements in the Style rules, for example, e.g.
+    border = “1px solid red”.
+
+
+    The following table lists the CSS measurement units together with examples:
+
+
+    | Unit | Description | Example |
+
+
+    | % | This defines the measurement as a percentage relative to other values. A
+    typical one would be an enclosing element. | p {font-size: 16pt; line-height:
+    125%;} |
+
+
+    | cm | This defines measurements in centimeters | div {margin-bottom: 2cm;} |
+
+
+    | em | This is a relative measurement for font height in em spaces. An em unit
+    is the equivalent of the size of any given font and, because of this, if you were
+    to assign 12 pt to a font, each of the em units would be 12 pt. This means that
+    2em would equal 24 pt. | p {letter-spacing: 7em;} |
+
+
+    | ex | This defines the measurement that is relative to the x-height of the font.
+    We determine the x-height by the height of the lowercase x in the specified font
+    | p {font-size: 24pt; line-height: 3ex;} |
+
+
+    | in | This defines the measurement in inches | p {word-spacing: .15in;} |
+
+
+    | mm | This defines the measurement in millimeters | p {word-spacing: 15mm;} |
+
+
+    | pc | This defines the measurement in picas, which is equivalent to 12 points.
+    This means that there are 6 picas to an inch. | p {font-size: 20pc;} |
+
+
+    | pt | This define the measurement in points, which is defined as 1/72 of an inch
+    | body {font-size: 18pt;} |
+
+
+    | px | Defines the measurement in screen pixels. | p {padding: 25px;} |
+
+
+    | vh | This is 1% of the viewport height. | h2 { font-size: 3.0vh; } |
+
+
+    | vw | This is 1% of the viewport width | h1 { font-size: 5.9vw; } |
+
+
+    | vmin | This is 1vw or 1vh, whichever is the smallest | p { font-size: 2vmin;}
+    |
+
+
+    # Chapter 5: Colors
+
+
+    In CSS we use values to specify colors. Usually these are used when we set the
+    color for the text of an element, which is the foreground, or the background of
+    the element. We can also use them to change the color of decorative effects, such
+    as a border.
+
+
+    The color values can be specified in several different formats, as displayed in
+    the following table:
+
+
+    | Format | Syntax | Example |
+
+
+    | Hex Code | #RRGGBB | p{color:#FF0000;} |
+
+
+    | Short Hex Code | #RGB | p{color:#6A7;} |
+
+
+    | RGB % | rgb(rrr%,ggg%,bbb%) | p{color:rgb(50%,50%,50%);} |
+
+
+    | RGB Absolute | rgb(rrr,ggg,bbb) | p{color:rgb(0,0,255);} |
+
+
+    | keyword | aqua, black, etc. | p{color:teal;} |
+
+
+    Let’s look at these formats in more detail:
+
+
+    Hex Codes
+
+
+    Hexadecimals are 6-digit color representations. The first digit – RR – represent
+    red values, GG represents green values and BB represents the blue values.
+
+
+    The values can be taken from graphics software, such as JASC Paintshop Pro, Adobe
+    Photoshop, Advanced Paintbrush, etc. Each of the hexadecimal codes are preceded
+    by a # or a £ sign and the following are examples of hexadecimal notations:
+
+
+    | Color | Color HEX |
+
+
+    |  | #000000 |
+
+
+    |  | #FF0000 |
+
+
+    |  | #00FF00 |
+
+
+    |  | #0000FF |
+
+
+    |  | #FFFF00 |
+
+
+    |  | #00FFFF |
+
+
+    |  | #FF00FF |
+
+
+    |  | #C0C0C0 |
+
+
+    |  | #FFFFFF |
+
+
+    Short Hex Codes
+
+
+    This is just a shorter version of the hex code, and each digit is replicated so
+    that you get the equivalent 6-dgit value.  These values can also be taken from
+    graphics software and are also preceded by the # or £ sign:
+
+
+    | Color | Color HEX |
+
+
+    |  | #000 |
+
+
+    |  | #F00 |
+
+
+    |  | #0F0 |
+
+
+    |  | #0FF |
+
+
+    |  | #FF0 |
+
+
+    |  | #0FF |
+
+
+    |  | #F0F |
+
+
+    |  | #FFF |
+
+
+    RGB Values
+
+
+    We specify this value with the rgb() property, which takes three values – red,
+    green and blue. Values are percentages or integers between 0 and 255\. Be aware
+    that not all browsers offer support for rgb() so try not to use it.
+
+
+    | Color | Color RGB |
+
+
+    |  | rgb(0,0,0) |
+
+
+    |  | rgb(255,0,0) |
+
+
+    |  | rgb(0,255,0) |
+
+
+    |  | rgb(0,0,255) |
+
+
+    |  | rgb(255,255,0) |
+
+
+    |  | rgb(0,255,255) |
+
+
+    |  | rgb(255,0,255) |
+
+
+    |  | rgb(192,192,192) |
+
+
+    |  | rgb(255,255,255) |
+
+
+    Building the Color Codes
+
+
+    If you use the CSS Color Code Builder, you can build, quite literally, millions
+    of different color code but you will need a browser that is Java-enabled to do
+    this.
+
+
+    Browser-Safe Colors
+
+
+    The following tables show you the 216 colors that are considered to be safe and
+    are computer-independent. They vary from hexa code 000000 through to FFFFFF and
+    are safe because all computers can display the colors in the right way on a 25
+    color palette:
+
+
+    | 000000 | 000033 | 000066 | 000099 | 0000CC | 0000FF |
+
+
+    | 003300 | 003333 | 003366 | 003399 | 0033CC | 0033FF |
+
+
+    | 006600 | 006633 | 006666 | 006699 | 0066CC | 0066FF |
+
+
+    | 009900 | 009933 | 009966 | 009999 | 0099CC | 0099FF |
+
+
+    | 00CC00 | 00CC33 | 00CC66 | 00CC99 | 00CCCC | 00CCFF |
+
+
+    | 00FF00 | 00FF33 | 00FF66 | 00FF99 | 00FFCC | 00FFFF |
+
+
+    | 330000 | 330033 | 330066 | 330099 | 3300CC | 3300FF |
+
+
+    | 333300 | 333333 | 333366 | 333399 | 3333CC | 3333FF |
+
+
+    | 336600 | 336633 | 336666 | 336699 | 3366CC | 3366FF |
+
+
+    | 339900 | 339933 | 339966 | 339999 | 3399CC | 3399FF |
+
+
+    | 33CC00 | 33CC33 | 33CC66 | 33CC99 | 33CCCC | 33CCFF |
+
+
+    | 33FF00 | 33FF33 | 33FF66 | 33FF99 | 33FFCC | 33FFFF |
+
+
+    | 660000 | 660033 | 660066 | 660099 | 6600CC | 6600FF |
+
+
+    | 663300 | 663333 | 663366 | 663399 | 6633CC | 6633FF |
+
+
+    | 666600 | 666633 | 666666 | 666699 | 6666CC | 6666FF |
+
+
+    | 669900 | 669933 | 669966 | 669999 | 6699CC | 6699FF |
+
+
+    | 66CC00 | 66CC33 | 66CC66 | 66CC99 | 66CCCC | 66CCFF |
+
+
+    | 66FF00 | 66FF33 | 66FF66 | 66FF99 | 66FFCC | 66FFFF |
+
+
+    | 990000 | 990033 | 990066 | 990099 | 9900CC | 9900FF |'
+  toc: []
+  trans: "\n\n```\nh1, h2, h3 {\n   color: #36C;\n   font-weight: normal;\n   letter-spacing:\
+    \ .4em;\n   margin-bottom: 1em;\n   text-transform: lowercase;\n}\n```\n\n现在，使用以下代码，你可以将这个文件添加到任何\
+    \ HTML 文档中：\n\n```\n<head>\n   <link type = \"text/css\" href = \"mystyle.css\"\
+    \ media = \" all\" />\n</head>\n```\n\n## 导入 CSS - @import 规则\n\n`@import` 规则用于导入外部样式表，其方式与\
+    \ `<link>` 元素类似。通用语法如下：\n\n```\n<head>\n   <@import \"URL\";\n</head>\n```\n\n\
+    在此语法中，`URL` 用作包含样式规则的特定样式表的 URL。另一种写法是：\n\n```\n<head>\n   <@import url(\"URL\"\
+    );\n</head>\n```\n\n以下示例展示了如何将样式表导入 HTML 文档：\n\n```\n<head>\n   @import \"mystyle.css\"\
+    ;\n</head>\n```\n\n## 覆盖 CSS 规则\n\n到目前为止，我们已经了解了在 HTML 文档中包含样式表的四种不同方式。现在我们来看看如何覆盖任何样式表规则：\n\
+    \n*   内联样式表拥有最高优先级，包括覆盖外部样式表或 `<style> … </style>` 标签中定义的任何规则。\n*   任何 `<style>\
+    \ … </style>` 标签都会覆盖外部样式表文件。\n*   外部样式表规则的优先级最低，仅当内联样式或 `<style> … </style>` 标签未应用时才会生效。\n\
+    \n## 如何处理旧版浏览器\n\n有不少较旧的浏览器不支持 CSS，因此当你在 HTML 文档中编写嵌入式 CSS 时，请务必小心。以下示例展示了如何使用注释标签来对旧版浏览器隐藏\
+    \ CSS：\n\n```\n<style type=\"text/css\">\n   <!--\n      body, td {\n        \
+    \ color: blue;\n      }\n   -->\n</style>\n```\n\n## CSS 注释\n\n有时你需要在样式表块中添加额外的注释，但注释样式表的任何部分都非常容易。你只需将注释放在\
+    \ `/*…. 这是样式表中的注释 …. */` 中即可。\n\n你也可以使用 `/*…. */` 来注释多行块，就像在 C 或 C++ 语言中那样。\n\n\
+    例如：\n\n```\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n         p {\n\
+    \            color: red;\n            /* 单行注释 */\n            text-align: center;\n\
+    \         }\n         /* 多行注释 */\n      </style>\n   </head>\n   <body>\n    \
+    \  <p>Hello World!</p>\n   </body>\n</html>\n```\n\n这将在屏幕上显示“Hello, World!”。\n\
+    \n# 第 4 章：度量单位\n\nCSS 支持多种不同的度量单位，包括相对度量（如百分比）和绝对单位（如厘米、英寸、点等）。当你在样式规则中指定度量值时，需要使用这些值，例如\
+    \ `border = “1px solid red”`。\n\n下表列出了 CSS 度量单位及其示例：\n\n| 单位 | 描述 | 示例 |\n| ---\
+    \ | --- | --- |\n| % | 将度量定义为相对于其他值的百分比。典型情况是相对于包含元素。 | `p {font-size: 16pt; line-height:\
+    \ 125%;}` |\n| cm | 以厘米为单位定义度量 | `div {margin-bottom: 2cm;}` |\n| em | 以 em 空格为单位的字体高度相对度量。一个\
+    \ em 单位相当于任何给定字体的大小，因此如果你为字体分配 12 pt，每个 em 单位就是 12 pt。这意味着 2em 等于 24 pt。 | `p\
+    \ {letter-spacing: 7em;}` |\n| ex | 定义相对于字体 x 高度的度量。x 高度由指定字体中小写字母 x 的高度决定。 |\
+    \ `p {font-size: 24pt; line-height: 3ex;}` |\n| in | 以英寸为单位定义度量 | `p {word-spacing:\
+    \ .15in;}` |\n| mm | 以毫米为单位定义度量 | `p {word-spacing: 15mm;}` |\n| pc | 以派卡为单位定义度量，1\
+    \ 派卡等于 12 点。这意味着 1 英寸等于 6 派卡。 | `p {font-size: 20pc;}` |\n| pt | 以点为单位定义度量，1 点定义为\
+    \ 1/72 英寸 | `body {font-size: 18pt;}` |\n| px | 以屏幕像素为单位定义度量 | `p {padding: 25px;}`\
+    \ |\n| vh | 视口高度的 1% | `h2 { font-size: 3.0vh; }` |\n| vw | 视口宽度的 1% | `h1 { font-size:\
+    \ 5.9vw; }` |\n| vmin | 1vw 或 1vh 中的较小值 | `p { font-size: 2vmin;}` |\n\n# 第 5\
+    \ 章：颜色\n\n在 CSS 中，我们使用值来指定颜色。通常，这些值用于设置元素文本的颜色（即前景色）或元素的背景色。我们也可以使用它们来改变装饰效果（如边框）的颜色。\n\
+    \n颜色值可以用几种不同的格式指定，如下表所示：\n\n| 格式 | 语法 | 示例 |\n| --- | --- | --- |\n| 十六进制代码 |\
+    \ `#RRGGBB` | `p{color:#FF0000;}` |\n| 短十六进制代码 | `#RGB` | `p{color:#6A7;}` |\n\
+    | RGB 百分比 | `rgb(rrr%,ggg%,bbb%)` | `p{color:rgb(50%,50%,50%);}` |\n| RGB 绝对值\
+    \ | `rgb(rrr,ggg,bbb)` | `p{color:rgb(0,0,255);}` |\n| 关键字 | `aqua, black, 等`\
+    \ | `p{color:teal;}` |\n\n让我们更详细地了解这些格式：\n\n## 十六进制代码\n\n十六进制是 6 位颜色表示。第一位 `RR`\
+    \ 表示红色值，`GG` 表示绿色值，`BB` 表示蓝色值。\n\n这些值可以从图形软件（如 JASC Paintshop Pro、Adobe Photoshop、Advanced\
+    \ Paintbrush 等）中获取。每个十六进制代码前面都有一个 # 或 £ 符号，以下是十六进制表示法的示例：\n\n| 颜色 | 颜色十六进制 |\n\
+    | --- | --- |\n|  | `#000000` |\n|  | `#FF0000` |\n|  | `#00FF00` |\n|  | `#0000FF`\
+    \ |\n|  | `#FFFF00` |\n|  | `#00FFFF` |\n|  | `#FF00FF` |\n|  | `#C0C0C0` |\n\
+    |  | `#FFFFFF` |\n\n## 短十六进制代码\n\n这只是十六进制代码的较短版本，每个数字会被复制，从而得到等效的 6 位值。这些值也可以从图形软件中获取，并且前面也有\
+    \ # 或 £ 符号：\n\n| 颜色 | 颜色十六进制 |\n| --- | --- |\n|  | `#000` |\n|  | `#F00` |\n\
+    |  | `#0F0` |\n|  | `#0FF` |\n|  | `#FF0` |\n|  | `#0FF` |\n|  | `#F0F` |\n| \
+    \ | `#FFF` |\n\n## RGB 值\n\n我们使用 `rgb()` 属性来指定此值，该属性接受三个值——红色、绿色和蓝色。值可以是百分比或 0\
+    \ 到 255 之间的整数。请注意，并非所有浏览器都支持 `rgb()`，因此尽量少用。\n\n| 颜色 | 颜色 RGB |\n| --- | --- |\n\
+    |  | `rgb(0,0,0)` |\n|  | `rgb(255,0,0)` |\n|  | `rgb(0,255,0)` |\n|  | `rgb(0,0,255)`\
+    \ |\n|  | `rgb(255,255,0)` |\n|  | `rgb(0,255,255)` |\n|  | `rgb(255,0,255)` |\n\
+    |  | `rgb(192,192,192)` |\n|  | `rgb(255,255,255)` |\n\n## 构建颜色代码\n\n如果你使用 CSS\
+    \ 颜色代码生成器，你可以构建数百万种不同的颜色代码，但你需要一个支持 Java 的浏览器才能做到这一点。\n\n## 浏览器安全颜色\n\n下表显示了 216\
+    \ 种被认为是安全且与计算机无关的颜色。它们从十六进制代码 `000000` 到 `FFFFFF`，之所以安全，是因为所有计算机都能在 256 色调色板上正确显示这些颜色：\n\
+    \n| | | | | | |\n|---|---|---|---|---|---|\n| `000000` | `000033` | `000066` |\
+    \ `000099` | `0000CC` | `0000FF` |\n| `003300` | `003333` | `003366` | `003399`\
+    \ | `0033CC` | `0033FF` |\n| `006600` | `006633` | `006666` | `006699` | `0066CC`\
+    \ | `0066FF` |\n| `009900` | `009933` | `009966` | `009999` | `0099CC` | `0099FF`\
+    \ |\n| `00CC00` | `00CC33` | `00CC66` | `00CC99` | `00CCCC` | `00CCFF` |\n| `00FF00`\
+    \ | `00FF33` | `00FF66` | `00FF99` | `00FFCC` | `00FFFF` |\n| `330000` | `330033`\
+    \ | `330066` | `330099` | `3300CC` | `3300FF` |\n| `333300` | `333333` | `333366`\
+    \ | `333399` | `3333CC` | `3333FF` |\n| `336600` | `336633` | `336666` | `336699`\
+    \ | `3366CC` | `3366FF` |\n| `339900` | `339933` | `339966` | `339999` | `3399CC`\
+    \ | `3399FF` |\n| `33CC00` | `33CC33` | `33CC66` | `33CC99` | `33CCCC` | `33CCFF`\
+    \ |\n| `33FF00` | `33FF33` | `33FF66` | `33FF99` | `33FFCC` | `33FFFF` |\n| `660000`\
+    \ | `660033` | `660066` | `660099` | `6600CC` | `6600FF` |\n| `663300` | `663333`\
+    \ | `663366` | `663399` | `6633CC` | `6633FF` |\n| `666600` | `666633` | `666666`\
+    \ | `666699` | `6666CC` | `6666FF` |\n| `669900` | `669933` | `669966` | `669999`\
+    \ | `6699CC` | `6699FF` |\n| `66CC00` | `66CC33` | `66CC66` | `66CC99` | `66CCCC`\
+    \ | `66CCFF` |\n| `66FF00` | `66FF33` | `66FF66` | `66FF99` | `66FFCC` | `66FFFF`\
+    \ |\n| `990000` | `990033` | `990066` | `990099` | `9900CC` | `9900FF` |\n\n"
+- fmt: "\n| 993300 | 993333 | 993366 | 993399 | 9933CC | 9933FF |\n| 996600 | 996633\
+    \ | 996666 | 996699 | 9966CC | 9966FF |\n| 999900 | 999933 | 999966 | 999999 |\
+    \ 9999CC | 9999FF |\n| 99CC00 | 99CC33 | 99CC66 | 99CC99 | 99CCCC | 99CCFF |\n\
+    | 99FF00 | 99FF33 | 99FF66 | 99FF99 | 99FFCC | 99FFFF |\n| CC0000 | CC0033 | CC0066\
+    \ | CC0099 | CC00CC | CC00FF |\n| CC3300 | CC3333 | CC3366 | CC3399 | CC33CC |\
+    \ CC33FF |\n| CC6600 | CC6633 | CC6666 | CC6699 | CC66CC | CC66FF |\n| CC9900\
+    \ | CC9933 | CC9966 | CC9999 | CC99CC | CC99FF |\n| CCCC00 | CCCC33 | CCCC66 |\
+    \ CCCC99 | CCCCCC | CCCCFF |\n| CCFF00 | CCFF33 | CCFF66 | CCFF99 | CCFFCC | CCFFFF\
+    \ |\n| FF0000 | FF0033 | FF0066 | FF0099 | FF00CC | FF00FF |\n| FF3300 | FF3333\
+    \ | FF3366 | FF3399 | FF33CC | FF33FF |\n| FF6600 | FF6633 | FF6666 | FF6699 |\
+    \ FF66CC | FF66FF |\n| FF9900 | FF9933 | FF9966 | FF9999 | FF99CC | FF99FF |\n\
+    | FFCC00 | FFCC33 | FFCC66 | FFCC99 | FFCCCC | FFCCFF |\n| FFFF00 | FFFF33 | FFFF66\
+    \ | FFFF99 | FFFFCC | FFFFFF |\n\n# Chapter 6: Background\n\nIn this chapter,\
+    \ we are going to look at setting backgrounds for different HTML elements. The\
+    \ following properties can be set:\n\n*   `background-color` - to set the background\
+    \ color of the element\n*   `background-image` - to set the background image of\
+    \ the element\n*   `background-repeat` – to control background image repetition\n\
+    *   `background-position` – to control where a background image is positioned\n\
+    *   `background-attachment` – to control how a background image scrolls\n*   `background`\
+    \ – used as a shorthand method of specifying various background properties\n\n\
+    ## Setting the Background Color\n\nThe following example shows you how to set\
+    \ background color on an element:\n\n```html\n<html>\n   <head>\n   <body>\n \
+    \     <p style = \"background-color:yellow;\">\n      This text has a yellow background\
+    \ color.</p>\n   </body>\n   </head>\n<html>\n```\n\nYou will see the following\
+    \ on your screen:\n\nThe text has a yellow background color.\n\n## How to Set\
+    \ the Background Image\n\nThe following example shows how to call a local stored\
+    \ image to set the background:\n\n```html\n<html>\n   <head>\n      <style>\n\
+    \         body  {\n            background-image: url(\"/css/images/css.jpg\");\n\
+    \            background-color: #cccccc;\n         }\n      </style>\n      <body>\n\
+    \         <h1>Hello World!</h1>\n      </body>\n   </head>\n<html>\n```\n\nYou\
+    \ will now see “Hello, World!” appear on the specified background\n\n## How to\
+    \ Repeat the Background Image\n\nThe following is an example of how to repeat\
+    \ a small background image. The `no-repeat` value can be used for the `background-repeat`\
+    \ property if the image is NOT to be repeated and is only to be displayed once.\
+    \ By default, the value of `background-repeat` is set to `repeat`:\n\n```html\n\
+    <html>\n   <head>\n      <style>\n         body {\n            background-image:\
+    \ url(\"/css/images/css.jpg\");\n            background-repeat: repeat;\n    \
+    \     }\n      </style>\n   </head>\n   <body>\n      <p>Tutorials point</p>\n\
+    \   </body>\n</html>\n```\n\nThe background that we used in the last example will\
+    \ now be shown repeated. In the following example, we can see how to repeat an\
+    \ image vertically:\n\n```html\n<html>\n   <head>\n      <style>\n         body\
+    \ {\n            background-image: url(\"/css/images/css.jpg\");\n           \
+    \ background-repeat: repeat-y;\n         }\n      </style>\n   </head>\n   <body>\n\
+    \      <p>Tutorials point</>\n   </body>\n</html>\n```\n\nThe chosen background\
+    \ image will be repeated vertically.\n\nIn the next example, we look at horizontal\
+    \ repetition:\n\n```html\n<html>\n   <head>\n      <style>\n         body {\n\
+    \            background-image: url(\"/css/images/css.jpg\");\n            background-repeat:\
+    \ repeat-x;\n         }\n </style>\n   </head>\n   <body>\n      <p>Tutorials\
+    \ point</>\n   </body>\n</html>\n```\n\nThe chosen background image will be repeated\
+    \ horizontally\n\n## How to Set the Position of the Background Image\n\nThis example\
+    \ shows you how to set the image in a position that is 100 pixels in from the\
+    \ left hand side:\n\n```html\n<html>\n   <head>\n      <style>\n         body\
+    \ {\n            background-image: url(\"/css/images/css.jpg\");\n           \
+    \ background-position:100px;\n         }\n      </style>\n   </head>\n   <body>\n\
+    \      <p>Tutorials point</>\n   </body>\n</html>\n```\n\nThe background image\
+    \ will be placed in the specified position\n\nNow we look at how to set the image\
+    \ 100 pixels in from the left and 200 pixels from the top:\n\n```html\n<html>\n\
+    \   <head>\n      <style>\n         body {\n            background-image: url(\"\
+    /css/images/css.jpg\");\n            background-position:100px 200px;\n      \
+    \   }\n </style>\n   </head>\n   <body>\n      <p>Tutorials point</>\n   </body>\n\
+    </html>\n```\n\nThe background image will be placed in the specified positon\n\
+    \n## How to Set the Background Attachment\n\nThis determines if an image is to\
+    \ be fixed or if it should scroll when the page is scrolled. First, we look at\
+    \ a fixed image:\n\n```html\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n\
+    \         body  {\n            background-image: url('/css/images/css.jpg');\n\
+    \            background-repeat: no-repeat;\n            background-attachment:\
+    \ fixed;\n         }\n      </style>\n   </head>\n   <body>\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n      <p>The background-image is\
+    \ fixed. Try scrolling down the page.</p>\n      <p>The background-image is fixed.\
+    \ Try scrolling down the page.</p>\n      <p>The background-image is fixed. Try\
+    \ scrolling down the page.</p>\n      <p>The background-image is fixed. Try scrolling\
+    \ down the page.</p>\n      <p>The background-image is fixed. Try scrolling down\
+    \ the page.</p>\n      <p>The background-image is fixed. Try scrolling down the\
+    \ page.</p>\n      <p>The background-image is fixed. Try scrolling down the page.</p>\n\
+    \      <p>The background-image is fixed. Try scrolling down the page.</p>\n  \
+    \ </body>\n</html>\n```\n\nYou will see this line repeated however many times\
+    \ it is in the code:\n\nThe background-image is fixed. Try scrolling down the\
+    \ page.\n\nFollowed by this:\n\nIf you do not see any scrollbars, try to resize\
+    \ the browser window.\n\nNext, we look at setting a scrolling background:\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n         body  {\n\
+    \            background-image: url('/css/images/css.jpg');\n            background-repeat:\
+    \ no-repeat;\n            background-attachment: fixed;\n            background-attachment:scroll;\n\
+    \         }.\n      </style>\n   </head>\n   <body>\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n      <p>The background-image is\
+    \ fixed. Try scrolling down the page.</p>\n      <p>The background-image is fixed.\
+    \ Try scrolling down the page.</p>\n      <p>The background-image is fixed. Try\
+    \ scrolling down the page.</p>\n      <p>The background-image is fixed. Try scrolling\
+    \ down the page.</p>\n      <p>The background-image is fixed. Try scrolling down\
+    \ the page.</p>\n      <p>The background-image is fixed. Try scrolling down the\
+    \ page.</p>\n      <p>The background-image is fixed. Try scrolling down the page.</p>\n\
+    \      <p>The background-image is fixed. Try scrolling down the page.</p>\n  \
+    \ </body>\n</html>\n```\n\nAgain, you will see this message repeated on a scrolling\
+    \ background\n\nThe background-image is fixed. Try scrolling down the page.\n\n\
+    Followed by this:\n\nIf you do not see any scrollbars, try to resize the browser\
+    \ window.\n\n## How to use the Shorthand Property\n\nThe final example shows how\
+    \ to set all of the background properties at the same time by using the shorthand\
+    \ `background` property:\n\n```html\n<p style=\"background:url(/images/pattern1.gif)\
+    \ repeat fixed;\">\n   This paragraph has a fixed background image that will be\
+    \ repeated.\n</p>\n```\n\n# Chapter 7: Fonts\n\nNow we are going to look at how\
+    \ to set up the fonts. The following are the font properties that you can set\
+    \ for an element:\n\n*   `font-family` - is used to change the font face\n*  \
+    \ `font-style` - is used to turn a font oblique or italic\n*   `font-weight` –\
+    \ is used to increase or decrease the boldness or lightness of a font\n*   `font-variant`\
+    \ – used to give the font a small caps effect\n*   `font-size` – is used to make\
+    \ a font bigger or smaller\n"
+  raw: "| 993300 | 993333 | 993366 | 993399 | 9933CC | 9933FF |\n\n| 996600 | 996633\
+    \ | 996666 | 996699 | 9966CC | 9966FF |\n\n| 999900 | 999933 | 999966 | 999999\
+    \ | 9999CC | 9999FF |\n\n| 99CC00 | 99CC33 | 99CC66 | 99CC99 | 99CCCC | 99CCFF\
+    \ |\n\n| 99FF00 | 99FF33 | 99FF66 | 99FF99 | 99FFCC | 99FFFF |\n\n| CC0000 | CC0033\
+    \ | CC0066 | CC0099 | CC00CC | CC00FF |\n\n| CC3300 | CC3333 | CC3366 | CC3399\
+    \ | CC33CC | CC33FF |\n\n| CC6600 | CC6633 | CC6666 | CC6699 | CC66CC | CC66FF\
+    \ |\n\n| CC9900 | CC9933 | CC9966 | CC9999 | CC99CC | CC99FF |\n\n| CCCC00 | CCCC33\
+    \ | CCCC66 | CCCC99 | CCCCCC | CCCCFF |\n\n| CCFF00 | CCFF33 | CCFF66 | CCFF99\
+    \ | CCFFCC | CCFFFF |\n\n| FF0000 | FF0033 | FF0066 | FF0099 | FF00CC | FF00FF\
+    \ |\n\n| FF3300 | FF3333 | FF3366 | FF3399 | FF33CC | FF33FF |\n\n| FF6600 | FF6633\
+    \ | FF6666 | FF6699 | FF66CC | FF66FF |\n\n| FF9900 | FF9933 | FF9966 | FF9999\
+    \ | FF99CC | FF99FF |\n\n| FFCC00 | FFCC33 | FFCC66 | FFCC99 | FFCCCC | FFCCFF\
+    \ |\n\n| FFFF00 | FFFF33 | FFFF66 | FFFF99 | FFFFCC | FFFFFF |\n\n# Chapter 6:\
+    \ Background\n\nIn this chapter, we are going to look at setting backgrounds for\
+    \ different HTML elements. The following properties can be set:\n\n*   background-color\
+    \ -  to set the background color of the element\n\n*   background-image -  to\
+    \ set the background image of the element\n\n*   background-repeat – to control\
+    \ background image repetition\n\n*   background-position – to control where a\
+    \ background image is positioned\n\n*   background-attachment – to control how\
+    \ a background image scrolls\n\n*   background – used as a shorthand method of\
+    \ specifying various background properties\n\nSetting the Background Color\n\n\
+    The following example shows you how to set background color on an element:\n\n\
+    <html>\n\n   <head>\n\n   <body>\n\n      <p style = \"background-color:yellow;\"\
+    >\n\n      This text has a yellow background color.</p>\n\n   </body>\n\n   </head>\n\
+    \n<html>\n\nYou will see the following on your screen:\n\nThe text has a yellow\
+    \ background color.\n\nHow to Set the Background Image\n\nThe following example\
+    \ shows how to call a local stored image to set the background:\n\n<html>\n\n\
+       <head>\n\n      <style>\n\n         body  {\n\n            background-image:\
+    \ url(\"/css/images/css.jpg\");\n\n            background-color: #cccccc;\n\n\
+             }\n\n      </style>\n\n      <body>\n\n         <h1>Hello World!</h1>\n\
+    \n      </body>\n\n   </head>\n\n<html>\n\nYou will now see “Hello, World!” appear\
+    \ on the specified background\n\nHow to Repeat the Background Image:\n\nThe following\
+    \ is an example of how to repeat a small background image. The no-repeat value\
+    \ can be used for the background-repeat property if the image is NOT to be repeated\
+    \ and is only to be displayed once. By default, the value of background-repeat\
+    \ is set to repeat:\n\n<html>\n\n   <head>\n\n      <style>\n\n         body {\n\
+    \n            background-image: url(\"/css/images/css.jpg\");\n\n            background-repeat:\
+    \ repeat;\n\n         }\n\n      </style>\n\n   </head>\n\n   <body>\n\n     \
+    \ <p>Tutorials point</p>\n\n   </body>\n\n</html>\n\nThe background that we used\
+    \ in the last example will now be shown repeated. In the following example, we\
+    \ can see how to repeat an image vertically:\n\n<html>\n\n   <head>\n\n      <style>\n\
+    \n         body {\n\n            background-image: url(\"/css/images/css.jpg\"\
+    );\n\n            background-repeat: repeat-y;\n\n         }\n\n      </style>\n\
+    \n   </head>\n\n   <body>\n\n      <p>Tutorials point</>\n\n   </body>\n\n</html>\n\
+    \nThe chosen background image will be repeated vertically.\n\nIn the next example,\
+    \ we look at horizontal repetition:\n\n<html>\n\n   <head>\n\n      <style>\n\n\
+             body {\n\n            background-image: url(\"/css/images/css.jpg\");\n\
+    \n            background-repeat: repeat-x;\n\n         }\n\n </style>\n\n   </head>\n\
+    \n   <body>\n\n      <p>Tutorials point</>\n\n   </body>\n\n</html>\n\nThe chosen\
+    \ background image will be repeated horizontally\n\nHow to Set the Position of\
+    \ the Background Image\n\nThis example shows you how to set the image in a position\
+    \ that is 100 pixels in from the left hand side:\n\n<html>\n\n   <head>\n\n     \
+    \ <style>\n\n         body {\n\n            background-image: url(\"/css/images/css.jpg\"\
+    );\n\n            background-position:100px;\n\n         }\n\n      </style>\n\
+    \n   </head>\n\n   <body>\n\n      <p>Tutorials point</>\n\n   </body>\n\n</html>\n\
+    \nThe background image will be placed in the specified position\n\nNow we look\
+    \ at how to set the image 100 pixels in from the left and 200 pixels from the\
+    \ top:\n\n<html>\n\n   <head>\n\n      <style>\n\n         body {\n\n           \
+    \ background-image: url(\"/css/images/css.jpg\");\n\n            background-position:100px\
+    \ 200px;\n\n         }\n\n </style>\n\n   </head>\n\n   <body>\n\n      <p>Tutorials\
+    \ point</>\n\n   </body>\n\n</html>\n\nThe background image will be placed in\
+    \ the specified positon\n\nHow to Set the Background Attachment\n\nThis determines\
+    \ if an image is to be fixed or if it should scroll when the page is scrolled.\
+    \ First, we look at a fixed image:\n\n<!DOCTYPE html>\n\n<html>\n\n   <head>\n\
+    \n      <style>\n\n         body  {\n\n            background-image: url('/css/images/css.jpg');\n\
+    \n            background-repeat: no-repeat;\n\n            background-attachment:\
+    \ fixed;\n\n         }\n\n      </style>\n\n   </head>\n\n   <body>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n\n   </body>\n\n\
+    </html>\n\nYou will see this line repeated however many times it is in the code:\n\
+    \nThe background-image is fixed. Try scrolling down the page.\n\nFollowed by this:\n\
+    \nIf you do not see any scrollbars, try to resize the browser window.\n\nNext,\
+    \ we look at setting a scrolling background:\n\n<!DOCTYPE html>\n\n<html>\n\n\
+       <head>\n\n      <style>\n\n         body  {\n\n            background-image:\
+    \ url('/css/images/css.jpg');\n\n            background-repeat: no-repeat;\n\n\
+                background-attachment: fixed;\n\n            background-attachment:scroll;\n\
+    \n         }.\n\n      </style>\n\n   </head>\n\n   <body>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n\n   </body>\n\n</html>\n\nAgain,\
+    \ you will see this message repeated on a scrolling background\n\nThe background-image\
+    \ is fixed. Try scrolling down the page.\n\nFollowed by this:\n\nIf you do not\
+    \ see any scrollbars, try to resize the browser window.\n\nHow to use the Shorthand\
+    \ Property\n\nThe final example shows how to set all of the background properties\
+    \ at the same time by using the shorthand background property:\n\n<p style=\"\
+    background:url(/images/pattern1.gif) repeat fixed;\">\n\n   This paragraph has\
+    \ a fixed background image that will be repeated.\n\n</p>\n\n# Chapter 7: Fonts\n\
+    \nNow we are going to look at how to set up the fonts. The following are the font\
+    \ properties that you can set for an element:\n\n*   font-family             \
+    \ - is used to change the font face\n\n*   font-style -  is used to turn a font\
+    \ oblique or italic\n\n*   font-weight – is used to increase or decrease the boldness\
+    \ or lightness of a font\n\n*   font-variant – used to give the font a small caps\
+    \ effect\n\n*   font-size – is used to make a font bigger or smaller"
+  toc: []
+  trans: "\n\n| 993300 | 993333 | 993366 | 993399 | 9933CC | 9933FF |\n| 996600 |\
+    \ 996633 | 996666 | 996699 | 9966CC | 9966FF |\n| 999900 | 999933 | 999966 | 999999\
+    \ | 9999CC | 9999FF |\n| 99CC00 | 99CC33 | 99CC66 | 99CC99 | 99CCCC | 99CCFF |\n\
+    | 99FF00 | 99FF33 | 99FF66 | 99FF99 | 99FFCC | 99FFFF |\n| CC0000 | CC0033 | CC0066\
+    \ | CC0099 | CC00CC | CC00FF |\n| CC3300 | CC3333 | CC3366 | CC3399 | CC33CC |\
+    \ CC33FF |\n| CC6600 | CC6633 | CC6666 | CC6699 | CC66CC | CC66FF |\n| CC9900\
+    \ | CC9933 | CC9966 | CC9999 | CC99CC | CC99FF |\n| CCCC00 | CCCC33 | CCCC66 |\
+    \ CCCC99 | CCCCCC | CCCCFF |\n| CCFF00 | CCFF33 | CCFF66 | CCFF99 | CCFFCC | CCFFFF\
+    \ |\n| FF0000 | FF0033 | FF0066 | FF0099 | FF00CC | FF00FF |\n| FF3300 | FF3333\
+    \ | FF3366 | FF3399 | FF33CC | FF33FF |\n| FF6600 | FF6633 | FF6666 | FF6699 |\
+    \ FF66CC | FF66FF |\n| FF9900 | FF9933 | FF9966 | FF9999 | FF99CC | FF99FF |\n\
+    | FFCC00 | FFCC33 | FFCC66 | FFCC99 | FFCCCC | FFCCFF |\n| FFFF00 | FFFF33 | FFFF66\
+    \ | FFFF99 | FFFFCC | FFFFFF |\n\n# 第 6 章：背景\n\n在本章中，我们将学习如何为不同的 HTML 元素设置背景。可以设置以下属性：\n\
+    \n*   `background-color` - 设置元素的背景颜色\n*   `background-image` - 设置元素的背景图像\n*  \
+    \ `background-repeat` – 控制背景图像的重复方式\n*   `background-position` – 控制背景图像的位置\n*\
+    \   `background-attachment` – 控制背景图像如何随页面滚动\n*   `background` – 作为简写属性，用于同时指定多个背景属性\n\
+    \n## 设置背景颜色\n\n以下示例展示了如何为元素设置背景颜色：\n\n```html\n<html>\n   <head>\n   <body>\n\
+    \      <p style = \"background-color:yellow;\">\n      This text has a yellow\
+    \ background color.</p>\n   </body>\n   </head>\n<html>\n```\n\n你将在屏幕上看到以下内容：\n\
+    \n这段文本具有黄色背景。\n\n## 如何设置背景图像\n\n以下示例展示了如何调用本地存储的图像来设置背景：\n\n```html\n<html>\n\
+    \   <head>\n      <style>\n         body  {\n            background-image: url(\"\
+    /css/images/css.jpg\");\n            background-color: #cccccc;\n         }\n\
+    \      </style>\n      <body>\n         <h1>Hello World!</h1>\n      </body>\n\
+    \   </head>\n<html>\n```\n\n现在你将在指定的背景上看到“Hello, World!”。\n\n## 如何重复背景图像\n\n以下是一个重复小背景图像的示例。如果图像不希望重复，而只显示一次，则可以将\
+    \ `background-repeat` 属性的值设为 `no-repeat`。默认情况下，`background-repeat` 的值为 `repeat`：\n\
+    \n```html\n<html>\n   <head>\n      <style>\n         body {\n            background-image:\
+    \ url(\"/css/images/css.jpg\");\n            background-repeat: repeat;\n    \
+    \     }\n      </style>\n   </head>\n   <body>\n      <p>Tutorials point</p>\n\
+    \   </body>\n</html>\n```\n\n上一个示例中使用的背景现在将重复显示。在下面的示例中，我们将看到如何垂直重复图像：\n\n```html\n\
+    <html>\n   <head>\n      <style>\n         body {\n            background-image:\
+    \ url(\"/css/images/css.jpg\");\n            background-repeat: repeat-y;\n  \
+    \       }\n      </style>\n   </head>\n   <body>\n      <p>Tutorials point</>\n\
+    \   </body>\n</html>\n```\n\n选定的背景图像将垂直重复。\n\n下一个示例中，我们来看水平重复：\n\n```html\n<html>\n\
+    \   <head>\n      <style>\n         body {\n            background-image: url(\"\
+    /css/images/css.jpg\");\n            background-repeat: repeat-x;\n         }\n\
+    \ </style>\n   </head>\n   <body>\n      <p>Tutorials point</>\n   </body>\n</html>\n\
+    ```\n\n选定的背景图像将水平重复。\n\n## 如何设置背景图像的位置\n\n以下示例展示了如何将图像放置在距离左侧 100 像素的位置：\n\n```html\n\
+    <html>\n   <head>\n      <style>\n         body {\n            background-image:\
+    \ url(\"/css/images/css.jpg\");\n            background-position:100px;\n    \
+    \     }\n      </style>\n   </head>\n   <body>\n      <p>Tutorials point</>\n\
+    \   </body>\n</html>\n```\n\n背景图像将被放置在指定位置。\n\n现在我们来看如何将图像放置在距离左侧 100 像素、距离顶部\
+    \ 200 像素的位置：\n\n```html\n<html>\n   <head>\n      <style>\n         body {\n \
+    \           background-image: url(\"/css/images/css.jpg\");\n            background-position:100px\
+    \ 200px;\n         }\n </style>\n   </head>\n   <body>\n      <p>Tutorials point</>\n\
+    \   </body>\n</html>\n```\n\n背景图像将被放置在指定位置。\n\n## 如何设置背景附着\n\n这决定了图像是固定不动，还是随页面滚动。首先，我们来看固定图像：\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n         body  {\n\
+    \            background-image: url('/css/images/css.jpg');\n            background-repeat:\
+    \ no-repeat;\n            background-attachment: fixed;\n         }\n      </style>\n\
+    \   </head>\n   <body>\n      <p>The background-image is fixed. Try scrolling\
+    \ down the page.</p>\n      <p>The background-image is fixed. Try scrolling down\
+    \ the page.</p>\n      <p>The background-image is fixed. Try scrolling down the\
+    \ page.</p>\n      <p>The background-image is fixed. Try scrolling down the page.</p>\n\
+    \      <p>The background-image is fixed. Try scrolling down the page.</p>\n  \
+    \    <p>The background-image is fixed. Try scrolling down the page.</p>\n    \
+    \  <p>The background-image is fixed. Try scrolling down the page.</p>\n      <p>The\
+    \ background-image is fixed. Try scrolling down the page.</p>\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n   </body>\n</html>\n```\n\n你将看到这行文字在代码中重复出现多次：\n\
+    \n背景图像是固定的。尝试向下滚动页面。\n\n接着是：\n\n如果你没有看到滚动条，请尝试调整浏览器窗口大小。\n\n接下来，我们来看设置滚动背景：\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n   <head>\n      <style>\n         body  {\n\
+    \            background-image: url('/css/images/css.jpg');\n            background-repeat:\
+    \ no-repeat;\n            background-attachment: fixed;\n            background-attachment:scroll;\n\
+    \         }.\n      </style>\n   </head>\n   <body>\n      <p>The background-image\
+    \ is fixed. Try scrolling down the page.</p>\n      <p>The background-image is\
+    \ fixed. Try scrolling down the page.</p>\n      <p>The background-image is fixed.\
+    \ Try scrolling down the page.</p>\n      <p>The background-image is fixed. Try\
+    \ scrolling down the page.</p>\n      <p>The background-image is fixed. Try scrolling\
+    \ down the page.</p>\n      <p>The background-image is fixed. Try scrolling down\
+    \ the page.</p>\n      <p>The background-image is fixed. Try scrolling down the\
+    \ page.</p>\n      <p>The background-image is fixed. Try scrolling down the page.</p>\n\
+    \      <p>The background-image is fixed. Try scrolling down the page.</p>\n  \
+    \ </body>\n</html>\n```\n\n同样，你将在滚动背景上看到这条重复的消息：\n\n背景图像是固定的。尝试向下滚动页面。\n\n接着是：\n\
+    \n如果你没有看到滚动条，请尝试调整浏览器窗口大小。\n\n## 如何使用简写属性\n\n最后一个示例展示了如何通过简写 `background` 属性同时设置所有背景属性：\n\
+    \n```html\n<p style=\"background:url(/images/pattern1.gif) repeat fixed;\">\n\
+    \   This paragraph has a fixed background image that will be repeated.\n</p>\n\
+    ```\n\n# 第 7 章：字体\n\n现在我们将学习如何设置字体。以下是你可以为元素设置的字体属性：\n\n*   `font-family` - 用于更改字体系列\n\
+    *   `font-style` - 用于将字体设置为斜体或倾斜\n*   `font-weight` – 用于增加或减少字体的粗细或亮度\n*   `font-variant`\
+    \ – 用于使字体呈现小型大写字母效果\n*   `font-size` – 用于放大或缩小字体\n\n"
+- fmt: "\n# font – shorthand for specifying various font properties\n\n## How to Set\
+    \ the Font Family\n\nThe following example shows how to set the font family of\
+    \ a specific element. The value can be any font family name:\n\n```html\n<html>\n\
+    \   <head>\n   </head>\n   <body>\n      <p style=\"font-family:georgia,garamond,serif;\"\
+    >\n      This text will be rendered in georgia, garamond, or the default serif\
+    \ font\n      depending on which ones are in your system.\n      </p>\n   </body>\n\
+    </html>\n```\n\nIt will produce the following result –\n\nThis text will be rendered\
+    \ in georgia, garamond, or the default serif font, depending on which ones are\
+    \ in your system\n\n## How to Set the Font Style\n\nThe following example shows\
+    \ how to set the style of an element. Values can be `italic`, `normal`, `oblique`,\
+    \ etc.\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    font-style:italic;\">\n      This text is rendered in italic style\n      </p>\n\
+    \   </body>\n</html>\n```\n\nYou will get the following result:\n\nThis text is\
+    \ rendered in italic style\n\n## How to Set the Font Variant\n\nThis example shows\
+    \ how to set the font variant with possible values of `small-caps`, `normal`,\
+    \ etc.\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    font-variant:small-caps;\">\n      The text is going to be rendered as small caps\n\
+    \      </p>\n   </body>\n</html>\n```\n\nYou will get the following result:\n\n\
+    THE TEXT IS GOING TO BE RENDERED AS SMALL CAPS\n\n## How to Set the Font Weight\n\
+    \nThe next example shows how we set the font weight of an element. This property\
+    \ will specify the bold level of the font and possible values include – `normal`,\
+    \ `lighter`, `bold`, `bolder`, `100`, `200`, `300`, `400`, `500`, `600`, `700`,\
+    \ `800`, `900`, etc.\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n  \
+    \    <p style=\"font-weight:bold;\">The font is bold.</p>\n      <p style=\"font-weight:bolder;\"\
+    >The font is bolder.</p>\n      <p style=\"font-weight:500;\">The font is 500\
+    \ weight.</p>\n   </body>\n</html>\n```\n\nYou will get the following result:\n\
+    \nThe font is bold.\n\nThe font is bolder.\n\nThe font is 500 weight.\n\n## How\
+    \ to Set the Font Size\n\nThis example shows how to set up the font size of the\
+    \ element. This is used as a way of controlling the font size and has possible\
+    \ values of – `small`, `x-small`, `xx-small`, `xx-large`, `x-large`, `large`,\
+    \ `smaller`, `larger`, `%`, or size in pixels:\n\n```html\n<html>\n   <head>\n\
+    \   </head>\n   <body>\n      <p style=\"font-size:20px;\">The font size is 20\
+    \ pixels</p>\n      <p style=\"font-size:small;\">The font size is small</p>\n\
+    \      <p style=\"font-size:large;\">The font size is large</p>\n   </body>\n\
+    </html>\n```\n\nYou will get the following result:\n\nThe font size is 20 pixels\n\
+    \nThe font size is small\n\nThe font size is large\n\n## How to Set Font Size\
+    \ Adjust\n\nThis example will demonstrate how we set the font size adjust and\
+    \ lets you change the x-height to make the font more readable. The possible values\
+    \ can be any number:\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n  \
+    \    <p style=\"font-size-adjust:0.61;\">\n         The text uses a font-size-adjust\
+    \ value.\n      </p>\n   </body>\n</html>\n```\n\nYou will get the following result\
+    \ -\n\nTHE TEXT USES A FONT-SIZE-ADJUST VALUE.\n\n## How to Set the Font Stretch\n\
+    \nThis next example shows you how to set up the font stretch and it relies on\
+    \ your computer to have either an expanded or a condensed version of the particular\
+    \ font. The values could possibly be – `wider`, `normal`, `narrower`, `extra-condensed`,\
+    \ `ultra-condensed`, `condensed`, `semi-condensed`, `expanded`, `semi-expanded`,\
+    \ `extra-expanded`, `ultra-expanded`:\n\n```html\n<html>\n   <head>\n   </head>\n\
+    \   <body>\n      <p style=\"font-stretch:ultra-expanded;\">\n         If this\
+    \ doesn't look like it works, most likely your computer does not have a condensed\
+    \ or expanded version of the font\n      </p>\n   </body>\n</html>\n```\n\nIt\
+    \ will produce the following result –\n\nIf this doesn't look like it works, most\
+    \ likely your computer does not have a condensed or expanded version of the font\n\
+    \n## How to Set the Shorthand Property\n\nThe final example shows you how to use\
+    \ the `font` property to set all of the font properties at the same time:\n\n\
+    ```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font:italic\
+    \ small-caps bold 15px georgia;\">\n      This will apply all of the properties\
+    \ on the text at the same time.\n      </p>\n   </body>\n</html>\n```\n\nIt will\
+    \ produce the following result –\n\nTHIS WILL APPLY ALL OF THE PROPERTIES ON THE\
+    \ TEXT AT THE SAME TIME.\n\n# Chapter 8: Text\n\nThis chapter is going to take\
+    \ a look at how we can manipulate text with the use of some CSS properties. The\
+    \ following text properties can be used on an element:\n\n* `color` – used to\
+    \ set what color the text is\n* `direction` – used to set the direction of the\
+    \ text\n* `letter-spacing` – used to add in or remove spaces between letter in\
+    \ a word\n* `text-indent` – used to indent the first line of a paragraph of text\n\
+    * `text-align` – used to align the text in an entire document\n* `text-decoration`\
+    \ – used to add decoration to text, such as `underline`, `overline`, and `strikethrough`\n\
+    * `text-transform` – used to either capitalize the text or convert between upper\
+    \ and lower case letters\n* `white-space` – used to control text flow and formatting\n\
+    * `text-shadow` – used to set a shadow around the text\n\n## How to Set the Text\
+    \ Color\n\nThis example shows how we set the color of the text, using values of\
+    \ any color name in any format that is valid\n\n```html\n<html>\n   <head>\n \
+    \  </head>\n   <body>\n      <p style=\"color:red;\">\n      This text is shown\
+    \ in red.\n      </p>\n   </body>\n</html>\n```\n\nYou will see the following\
+    \ result -\n\nThis text is shown in red.\n\n## How to Set the Direction of the\
+    \ Text\n\nThe next example shows how we set the text direction, using values of\
+    \ `ltr` or `rtl`\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p\
+    \ style=\"direction:rtl;\">\n      This text is going to be rendered from right\
+    \ to left\n      </p>\n   </body>\n</html>\n```\n\nYou will see this result -\n\
+    \nThis text is going to be rendered from right to left\n\n## How to Set the Spaces\
+    \ Between Characters\n\nThis example shows how we set up the spaces between the\
+    \ characters, using values of `normal` or number specifying space\n\n```html\n\
+    <html>\n   <head>\n   </head>\n   <body>\n      <p style=\"letter-spacing:5px;\"\
+    >\n      This text will have spaces between letters.\n      </p>\n   </body>\n\
+    </html>\n```\n\nYou will see this result -\n\nThis text will have spaces between\
+    \ letters.\n\n## How to Set the Spaces Between Words\n\nThe next example shows\
+    \ how we set space in between words, using values of `normal` or number specifying\
+    \ space\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    word-spacing:5px;\">\n      This text has spaces between words.\n      </p>\n\
+    \   </body>\n</html>\n```\n\nYou will see the following result -\n\nThis text\
+    \ has spaces between words.\n\n## How to Set the Text Indent\n\nThe next example\
+    \ shows how we indent the first line of a new paragraph using values of number\
+    \ specifying indent space or `%`\n\n```html\n<html>\n   <head>\n   </head>\n \
+    \  <body>\n      <p style=\"text-indent:1cm;\">\n      The text has the first\
+    \ line indented by 1cm and it will remain at\n      this position. This is done\
+    \ using the CSS text-indent property.\n      </p>\n   </body>\n</html>\n```\n\n\
+    You will see this result -\n\nThe text has the first line indented by 1cm and\
+    \ it will remain at this position. This is done using the CSS text-indent property\n\
+    \n## How to Set up the Text Alignment\n\nThis example shows how we align text,\
+    \ using values of `justify`, `left`, `right` and `center`\n\n```html\n<html>\n\
+    \   <head>\n   </head>\n   <body>\n      <p style=\"text-align:right;\">\n   \
+    \   The text will be right aligned.\n      </p>\n      <p style=\"text-align:center;\"\
+    >\n      The text will be center aligned.\n      </p>\n      <p style=\"text-align:left;\"\
+    >\n      The text will be left aligned.\n      </p>\n   </body>\n</html>\n```\n\
+    \nYou will see the following result -\n\nThe text will be right aligned.\n\nThe\
+    \ text will be center aligned.\n\nThe text will be left aligned.\n\n## How to\
+    \ Decorate Text\n\nNow we look at an example showing how we decorate text, using\
+    \ values of `none`, `overline`, `underline`, `blink` and `strikethrough`\n\n```html\n\
+    <html>\n   <head>\n   </head>\n   <body>\n      <p style=\"text-decoration:underline;\"\
+    >\n```\n"
+  raw: "*   font – shorthand for specifying various font properties\n\nHow to Set\
+    \ the Font Family\n\nThe following example shows how to set the font family of\
+    \ a specific element. The value can be any font family name:\n\n<html>\n\n   <head>\n\
+    \n   </head>\n\n   <body>\n\n      <p style=\"font-family:georgia,garamond,serif;\"\
+    >\n\n      This text will be rendered in georgia, garamond, or the default serif\
+    \ font\n\n      depending on which ones are in your system.\n\n      </p>\n\n\
+       </body>\n\n</html>\n\nIt will produce the following result –\n\nThis text will\
+    \ be rendered in georgia,garamond, or the default serif font, depending on which\
+    \ ones are in your system\n\nHow to Set the Font Style\n\nThe following example\
+    \ shows how to set the style of an element. Values can be italic, normal, oblique,\
+    \ etc.\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    font-style:italic;\">\n\n      This text is rendered in italic style\n\n     \
+    \ </p>\n\n   </body>\n\n</html>\n\nYou will get the following result:\n\nThis\
+    \ text is rendered in italic style\n\nHow to Set the Font Variant\n\nThis example\
+    \ shows how to set the font variant with possible values of small-caps, normal,\
+    \ etc.\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    font-variant:small-caps;\">\n\n      The text is going to be rendered as small\
+    \ caps\n\n      </p>\n\n   </body>\n\n</html>\n\nYou will get the following result:\n\
+    \nTHE TEXT IS GOING TO BE RENDERED AS SMALL CAPS\n\nHow to Set the Font Weight\n\
+    \nThe next example shows how we set the font weight of an element. This property\
+    \ will specify the bold level of the font and possible values include – normal,\
+    \ lighter, bold, bolder, 100, 200, 300, 400, 500, 600, 700, 800, 900, etc.\n\n\
+    <html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"font-weight:bold;\"\
+    >The font is bold.</p>\n\n      <p style=\"font-weight:bolder;\">The font is bolder.</p>\n\
+    \n      <p style=\"font-weight:500;\">The font is 500 weight.</p>\n\n   </body>\n\
+    \n</html>\n\nYou will get the following result:\n\nThe font is bold.\n\nThe font\
+    \ is bolder.\n\nThe font is 500 weight.\n\nHow to Set the Font Size\n\nThis example\
+    \ shows how to set up the font size of the element. This is used as a way of controlling\
+    \ the font size and has possible values of – small, x-small, xx-small, xx-large,\
+    \ x-large, large, smaller, larger, %, or size in pixels:\n\n<html>\n\n   <head>\n\
+    \n   </head>\n\n   <body>\n\n      <p style=\"font-size:20px;\">The font size\
+    \ is 20 pixels</p>\n\n      <p style=\"font-size:small;\">The font size is small</p>\n\
+    \n      <p style=\"font-size:large;\">The font size is large</p>\n\n   </body>\n\
+    \n</html>\n\nYou will get the following result:\n\nThe font size is 20 pixels\n\
+    \nThe font size is small\n\nThe font size is large\n\nHow to Set Font Size Adjust\n\
+    \nThis example will demonstrate how we set the font size adjust and lets you change\
+    \ the x-height to make the font more readable. The possible values can be any\
+    \ number:\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    font-size-adjust:0.61;\">\n\n         The text uses a font-size-adjust value.\n\
+    \n      </p>\n\n   </body>\n\n</html>\n\nYou will get the following result -\n\
+    \nTHE TEXT USES A FONT-SIZE-ADJUST VALUE.\n\nHow to Set the Font Stretch\n\nThis\
+    \ next example shows you how to set up the font stretch and it relies on your\
+    \ computer to have either an expanded or a condensed version of the particular\
+    \ font. The values could possibly be – wider, normal, narrower, extra-condensed,\
+    \ ultra-condensed, condensed, semi-condensed, expanded, semi-expanded, extra-expanded,\
+    \ ultra-expanded:\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p\
+    \ style=\"font-stretch:ultra-expanded;\">\n\n         If this doesn't look like\
+    \ it works, most likely your computer does not have a condensed or expanded version\
+    \ of the font\n\n      </p>\n\n   </body>\n\n</html>\n\nIt will produce the following\
+    \ result –\n\nIf this doesn't look like it works, most likely your computer does\
+    \ not have a condensed or expanded version of the font\n\nHow to Set the Shorthand\
+    \ Property\n\nThe final example shows you how to use the font property to set\
+    \ all of the font properties at the same time:\n\n<html>\n\n   <head>\n\n   </head>\n\
+    \n   <body>\n\n      <p style=\"font:italic small-caps bold 15px georgia;\">\n\
+    \n      This will apply all of the properties on the text at the same time.\n\n\
+          </p>\n\n   </body>\n\n</html>\n\nIt will produce the following result –\n\
+    \nTHIS WILL APPLY ALL OF THE PROPERTIES ON THE TEXT AT THE SAME TIME.\n\n# Chapter\
+    \ 8: Text\n\nThis chapter is going to take a look at how we can manipulate text\
+    \ with the use of some CSS properties. The following text properties can be used\
+    \ on an element:\n\n*   color – used to set what color the text is\n\n*   direction\
+    \ – used to set the direction of the text\n\n*   letter-spacing – used to add\
+    \ in or remove spaces between letter in a word\n\n*   text-indent – used to indent\
+    \ the first line of a paragraph of text\n\n*   text-align – used to align the\
+    \ text in an entire document\n\n*   text-decoration – used to add decoration to\
+    \ text, such as underline, overline, and strikethrough\n\n*   text-transform –\
+    \ used to either capitalize the text or convert between upper and lower case letters\n\
+    \n*   white-space – used to control text flow and formatting\n\n*   text-shadow\
+    \ – used to set a shadow around the text\n\nHow to Set the Text Color\n\nThis\
+    \ example shows how we set the color of the text, using values of any color name\
+    \ in any format that is valid\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\
+    \n      <p style=\"color:red;\">\n\n      This text is shown in red.\n\n     \
+    \ </p>\n\n   </body>\n\n</html>\n\nYou will see the following result -\n\nThis\
+    \ text is shown in red.\n\nHow to Set the Direction of the Text\n\nThe next example\
+    \ shows how we set the text direction, using values of ltr or rtl\n\n<html>\n\n\
+       <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"direction:rtl;\">\n\n\
+          This text is going to be rendered from right to left\n\n      </p>\n\n  \
+    \ </body>\n\n</html>\n\nYou will see this result -\n\nThis text is going to be\
+    \ rendered from right to left\n\nHow to Set the Spaces Between Characters\n\n\
+    This example shows how we set up the spaces between the characters, using values\
+    \ of normal or number specifying space\n\n<html>\n\n   <head>\n\n   </head>\n\n\
+       <body>\n\n      <p style=\"letter-spacing:5px;\">\n\n      This text will have\
+    \ spaces between letters.\n\n      </p>\n\n   </body>\n\n</html>\n\nYou will see\
+    \ this result -\n\nThis text will have spaces between letters.\n\nHow to Set the\
+    \ Spaces Between Words\n\nThe next example shows how we set space in between words,\
+    \ using values of normal or number specifying space\n\n<html>\n\n   <head>\n\n\
+       </head>\n\n   <body>\n\n      <p style=\"word-spacing:5px;\">\n\n      This\
+    \ text has spaces between words.\n\n      </p>\n\n   </body>\n\n</html>\n\nYou\
+    \ will see the following result -\n\nThis text has spaces between words.\n\nHow\
+    \ to Set the Text Indent\n\nThe next example shows how we indent the first line\
+    \ of a new paragraph using values of number specifying indent space or %\n\n<html>\n\
+    \n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"text-indent:1cm;\"\
+    >\n\n      The text has the first line indented by 1cm and it will remain at\n\
+    \n      this position. This is done using the CSS text-indent property.\n\n     \
+    \ </p>\n\n   </body>\n\n</html>\n\nYou will see this result -\n\n The text has\
+    \ the first line indented by 1cm and it will remain at this position. This is\
+    \ done using the CSS text-indent property\n\nHow to Set up the Text Alignment\n\
+    \nThis example shows how we align text, using values of justify, left, right and\
+    \ center\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    text-align:right;\">\n\n      The text will be right aligned.\n\n      </p>\n\n\
+          <p style=\"text-align:center;\">\n\n      The text will be center aligned.\n\
+    \n      </p>\n\n      <p style=\"text-align:left;\">\n\n      The text will be\
+    \ left aligned.\n\n      </p>\n\n   </body>\n\n</html>\n\nYou will see the following\
+    \ result -\n\nThe text will be right aligned.\n\nThe text will be center aligned.\n\
+    \nThe text will be left aligned.\n\nHow to Decorate Text\n\nNow we look at an\
+    \ example showing how we decorate text, using values of none, overline, underline,\
+    \ blink and strikethrough\n\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n\
+          <p style=\"text-decoration:underline;\">"
+  toc: []
+  trans: "\n\n# font – 用于指定各种字体属性的简写属性\n\n## 如何设置字体系列\n\n以下示例展示了如何设置特定元素的字体系列。该值可以是任何字体系列名称：\n\
+    \n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font-family:georgia,garamond,serif;\"\
+    >\n      This text will be rendered in georgia, garamond, or the default serif\
+    \ font\n      depending on which ones are in your system.\n      </p>\n   </body>\n\
+    </html>\n```\n\n它将产生以下结果——\n\n此文本将根据您系统中存在的字体，以 georgia、garamond 或默认衬线字体呈现。\n\n\
+    ## 如何设置字体样式\n\n以下示例展示了如何设置元素的样式。值可以是 `italic`、`normal`、`oblique` 等。\n\n```html\n\
+    <html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font-style:italic;\"\
+    >\n      This text is rendered in italic style\n      </p>\n   </body>\n</html>\n\
+    ```\n\n您将得到以下结果：\n\n此文本以斜体样式呈现。\n\n## 如何设置字体变体\n\n此示例展示了如何设置字体变体，可能的值有 `small-caps`、`normal`\
+    \ 等。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font-variant:small-caps;\"\
+    >\n      The text is going to be rendered as small caps\n      </p>\n   </body>\n\
+    </html>\n```\n\n您将得到以下结果：\n\nTHE TEXT IS GOING TO BE RENDERED AS SMALL CAPS\n\n\
+    ## 如何设置字体粗细\n\n下一个示例展示了如何设置元素的字体粗细。此属性将指定字体的粗体级别，可能的值包括 – `normal`、`lighter`、`bold`、`bolder`、`100`、`200`、`300`、`400`、`500`、`600`、`700`、`800`、`900`\
+    \ 等。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font-weight:bold;\"\
+    >The font is bold.</p>\n      <p style=\"font-weight:bolder;\">The font is bolder.</p>\n\
+    \      <p style=\"font-weight:500;\">The font is 500 weight.</p>\n   </body>\n\
+    </html>\n```\n\n您将得到以下结果：\n\nThe font is bold.\n\nThe font is bolder.\n\nThe font\
+    \ is 500 weight.\n\n## 如何设置字体大小\n\n此示例展示了如何设置元素的字体大小。这用于控制字体大小，可能的值有 – `small`、`x-small`、`xx-small`、`xx-large`、`x-large`、`large`、`smaller`、`larger`、`%`\
+    \ 或像素大小：\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    font-size:20px;\">The font size is 20 pixels</p>\n      <p style=\"font-size:small;\"\
+    >The font size is small</p>\n      <p style=\"font-size:large;\">The font size\
+    \ is large</p>\n   </body>\n</html>\n```\n\n您将得到以下结果：\n\nThe font size is 20 pixels\n\
+    \nThe font size is small\n\nThe font size is large\n\n## 如何设置字体大小调整\n\n此示例将演示如何设置字体大小调整，它允许您更改\
+    \ x 高度以使字体更易读。可能的值可以是任何数字：\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n\
+    \      <p style=\"font-size-adjust:0.61;\">\n         The text uses a font-size-adjust\
+    \ value.\n      </p>\n   </body>\n</html>\n```\n\n您将得到以下结果——\n\nTHE TEXT USES\
+    \ A FONT-SIZE-ADJUST VALUE.\n\n## 如何设置字体拉伸\n\n下一个示例展示了如何设置字体拉伸，它依赖于您的计算机是否拥有特定字体的紧缩或扩展版本。值可能为\
+    \ – `wider`、`normal`、`narrower`、`extra-condensed`、`ultra-condensed`、`condensed`、`semi-condensed`、`expanded`、`semi-expanded`、`extra-expanded`、`ultra-expanded`：\n\
+    \n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"font-stretch:ultra-expanded;\"\
+    >\n         If this doesn't look like it works, most likely your computer does\
+    \ not have a condensed or expanded version of the font\n      </p>\n   </body>\n\
+    </html>\n```\n\n它将产生以下结果——\n\nIf this doesn't look like it works, most likely\
+    \ your computer does not have a condensed or expanded version of the font\n\n\
+    ## 如何设置简写属性\n\n最后一个示例展示了如何使用 `font` 属性同时设置所有字体属性：\n\n```html\n<html>\n   <head>\n\
+    \   </head>\n   <body>\n      <p style=\"font:italic small-caps bold 15px georgia;\"\
+    >\n      This will apply all of the properties on the text at the same time.\n\
+    \      </p>\n   </body>\n</html>\n```\n\n它将产生以下结果——\n\nTHIS WILL APPLY ALL OF\
+    \ THE PROPERTIES ON THE TEXT AT THE SAME TIME.\n\n# 第 8 章：文本\n\n本章将介绍如何通过使用一些\
+    \ CSS 属性来操作文本。以下文本属性可用于元素：\n\n* `color` – 用于设置文本的颜色\n* `direction` – 用于设置文本的方向\n\
+    * `letter-spacing` – 用于在单词的字母之间添加或删除空格\n* `text-indent` – 用于缩进文本段落的第一行\n* `text-align`\
+    \ – 用于对齐整个文档中的文本\n* `text-decoration` – 用于为文本添加装饰，例如 `underline`、`overline` 和\
+    \ `strikethrough`\n* `text-transform` – 用于将文本大写或在大小写字母之间转换\n* `white-space` –\
+    \ 用于控制文本流和格式\n* `text-shadow` – 用于在文本周围设置阴影\n\n## 如何设置文本颜色\n\n此示例展示了如何设置文本的颜色，使用任何有效格式的任何颜色名称作为值。\n\
+    \n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"color:red;\"\
+    >\n      This text is shown in red.\n      </p>\n   </body>\n</html>\n```\n\n\
+    您将看到以下结果——\n\nThis text is shown in red.\n\n## 如何设置文本方向\n\n下一个示例展示了如何设置文本方向，使用\
+    \ `ltr` 或 `rtl` 作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n  \
+    \    <p style=\"direction:rtl;\">\n      This text is going to be rendered from\
+    \ right to left\n      </p>\n   </body>\n</html>\n```\n\n您将看到此结果——\n\nThis text\
+    \ is going to be rendered from right to left\n\n## 如何设置字符间距\n\n此示例展示了如何设置字符之间的间距，使用\
+    \ `normal` 或指定间距的数字作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n\
+    \      <p style=\"letter-spacing:5px;\">\n      This text will have spaces between\
+    \ letters.\n      </p>\n   </body>\n</html>\n```\n\n您将看到此结果——\n\nThis text will\
+    \ have spaces between letters.\n\n## 如何设置单词间距\n\n下一个示例展示了如何设置单词之间的间距，使用 `normal`\
+    \ 或指定间距的数字作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p\
+    \ style=\"word-spacing:5px;\">\n      This text has spaces between words.\n  \
+    \    </p>\n   </body>\n</html>\n```\n\n您将看到以下结果——\n\nThis text has spaces between\
+    \ words.\n\n## 如何设置文本缩进\n\n下一个示例展示了如何缩进新段落的第一行，使用指定缩进空间的数字或 `%` 作为值。\n\n```html\n\
+    <html>\n   <head>\n   </head>\n   <body>\n      <p style=\"text-indent:1cm;\"\
+    >\n      The text has the first line indented by 1cm and it will remain at\n \
+    \     this position. This is done using the CSS text-indent property.\n      </p>\n\
+    \   </body>\n</html>\n```\n\n您将看到此结果——\n\nThe text has the first line indented\
+    \ by 1cm and it will remain at this position. This is done using the CSS text-indent\
+    \ property\n\n## 如何设置文本对齐\n\n此示例展示了如何对齐文本，使用 `justify`、`left`、`right` 和 `center`\
+    \ 作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    text-align:right;\">\n      The text will be right aligned.\n      </p>\n    \
+    \  <p style=\"text-align:center;\">\n      The text will be center aligned.\n\
+    \      </p>\n      <p style=\"text-align:left;\">\n      The text will be left\
+    \ aligned.\n      </p>\n   </body>\n</html>\n```\n\n您将看到以下结果——\n\nThe text will\
+    \ be right aligned.\n\nThe text will be center aligned.\n\nThe text will be left\
+    \ aligned.\n\n## 如何装饰文本\n\n现在我们来看一个示例，展示如何装饰文本，使用 `none`、`overline`、`underline`、`blink`\
+    \ 和 `strikethrough` 作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n\
+    \      <p style=\"text-decoration:underline;\">\n```\n\n"
+- fmt: "\n# Chapter 9: Using Images\n\nImages are an important part of websites and,\
+    \ although you shouldn’t use too many, those you do use should be of good quality\
+    \ and in the right place. CSS helps to control the display of these images by\
+    \ allowing you to set the following properties:\n\n*   `Border` – this is used\
+    \ to set the width of the border on the image\n*   `Height` – this is used to\
+    \ set the height of the image\n*   `Width` – this is used to set the width of\
+    \ the image\n*   `-moz-opacity` – this used to determine the opacity of the image\n\
+    \n## Image Border\n\nThis property is used to set the width of the border on the\
+    \ image and can use values of length or `%`. For example:\n\n```\n<html>\n   <head>\n\
+    \   </head>\n   <body>\n      <img style=\"border:0px;\" src=\"/css/images/logo.png\"\
+    \ />\n      <br />\n      <img style=\"border:3px dashed red;\" src=\"/css/images/logo.png\"\
+    \ />\n   </body>\n</html>\n```\n\nThe result will be a logo without a border and\
+    \ then a logo with a dotted red border.\n\n## Image Height\n\nThis property is\
+    \ used to set how high an image is and can use values of length or `%`. When you\
+    \ use `%`, the value is applied to the box which the image is in:\n\n```\n<html>\n\
+    \   <head>\n   </head>\n   <body>\n      <img style=\"border:1px solid red; height:100px;\"\
+    \ src=\"/css/images/logo.png\" />\n      <br />\n      <img style=\"border:1px\
+    \ solid red; height:50%;\" src=\"/css/images/logo.png\" />\n   </body>\n</html>\n\
+    ```\n\nThe result will be two logos, exactly the same, but one taller than the\
+    \ other.\n\n## Image Width\n\nThis is used to set the width of an image using\
+    \ value of `%` or length. As with height, using percentage applies to the box\
+    \ the image is in:\n\n```\n<html>\n   <head>\n   </head>\n   <body>\n      <img\
+    \ style=\"border:1px solid red; width:150px;\" src=\"/css/images/logo.png\" />\n\
+    \      <br />\n      <img style=\"border:1px solid red; width:100%;\" src=\"/css/images/logo.png\"\
+    \ />\n   </body>\n</html>\n```\n\nThe result will be two identical logos but of\
+    \ different sizes.\n\n## `-moz-opacity`\n\nThe final property is used to set up\
+    \ the opacity of the image and is used with Mozilla Firefox. For Internet Explorer,\
+    \ we use `filter:alpha(opacity=x)` to come up with transparent images.\n\nIn Mozilla\
+    \ Firefox, in the property `-moz-opacity:x`, `x` may hold a value of anywhere\
+    \ between `0.0` and `1.0`. The lower the value, the more transparent the image.\
+    \ By the same token, in Internet Explorer `filter:alpha(opacity=x)`, the value\
+    \ of `x` can be anywhere between `0` and `100`. Again, the lower the value, the\
+    \ more transparent the image is.\n\n```\n<html>\n   <head>\n   </head>\n   <body>\n\
+    \      <img style=\"border:1px solid red;-moz-opacity:0.4;filter:alpha(opacity=40);\"\
+    \ src=\"/css/images/logo.png\" />\n   </body>\n</html>\n```\n\nThe result will\
+    \ be a logo with a border of solid red.\n\n# Chapter 10: Links\n\nIn this chapter,\
+    \ we take a look at how to use CSS to set the properties of a hyper link. The\
+    \ following properties can be set:\n\n*   `:link` is used to signify unvisited\
+    \ hyperlinks.\n*   `:visited` is used to signify visited hyperlinks.\n*   `:hover`\
+    \ is used to signify elements that have the mouse pointer hovering over the top.\n\
+    *   `:active` is used to signify elements that are currently being clicked.\n\n\
+    Normally, these properties are stored in the header of an HTML document. Remember\
+    \ the following rules for effective use:\n\n*   `a:hover` comes after `a:link`\
+    \ and `a:visited` in CSS definition\n*   `a:active` comes after `a:hover`, as\
+    \ shown in the next example:\n\n```\n<style type=\"text/css\">\n   a:link {color:\
+    \ #000000}\n   a:visited {color: #006600}\n   a:hover {color: #FFCC00}\n   a:active\
+    \ {color: #FF00CC}\n</style>\n```\n\nNext we will look at how these properties\
+    \ are used for different effects on hyperlinks.\n\n## Set the Color\n\nThis example\
+    \ shows how we set the color of a link using values that are of any color name\
+    \ in any format that is valid:\n\n```\n<html>\n   <head>\n      <style type=\"\
+    text/css\">\n         a:link {color:#000000}\n     </style>\n   </head>\n   <body>\n\
+    \      <a href=\"\">Link</a>\n   </body>\n</html>\n```\n\nThe result will be a\
+    \ black link. Please note that none of these links are clickable; they are just\
+    \ for demonstration purposes.\n\nLink\n\n## The Color of Visited Links\n\nThis\
+    \ example shows how to set the color of a visited link, again with values of any\
+    \ color name in any format that is valid:\n\n```\n<html>\n   <head>\n      <style\
+    \ type=\"text/css\">\n         a:visited {color: #006600}\n      </style>\n  \
+    \ </head>\n   <body>\n      <a href=\"\"> link</a>\n   </body>\n</html>\n```\n\
+    \nThe result will be the following link, black to start and green when clicked\
+    \ on.\n\nLink\n\n## Color of Links with Mouse Hover\n\nThis example shows how\
+    \ to change the color of a link when we hover the mouse pointer over it:\n\n```\n\
+    <html>\n   <head>\n      <style type=\"text/css\">\n         a:hover {color: #FFCC00}\n\
+    \      </style>\n   </head>\n   <body>\n      <a href=\"\">Link</a>\n   </body>\n\
+    </html>\n```\n\nThe result will be a black link that changes to yellow when the\
+    \ mouse is hovered over the top.\n\nLink\n\n## Color of Active Links\n\nThis example\
+    \ shows how we change the color of an active link:\n\n```\n<html>\n   <head>\n\
+    \      <style type=\"text/css\">\n         a:active {color: #FF00CC}\n      </style>\n\
+    \   </head>\n   <body>\n      <a href=\"\">Link</a>\n   </body>\n</html>\n```\n\
+    \nThe result will be a black link that changes to pink when it is clicked on.\n\
+    \nLink\n\n# Chapter 11: Tables\n\nIn this chapter, we are going to look at the\
+    \ properties we can set for HTML tables. The following properties can be set:\n\
+    \n*   `Border-collapse` – this specifies whether the cells of the table should\
+    \ maintain their own appearance or if the browser should control the borders that\
+    \ touch\n*   `Border-spacing` – this specifies the width of the space between\
+    \ table cells\n*   `Caption-side` captions – these are in the `<caption>` element\
+    \ and rendered, by default, above the table. They can be used to set the position\
+    \ of the table caption\n"
+  raw: '      This text is underlined
+
+
+          </p>
+
+
+          <p style="text-decoration:line-through;">
+
+
+          This text is struck through.
+
+
+          </p>
+
+
+          <p style="text-decoration:overline;">
+
+
+          This text has an over line.
+
+
+          </p>
+
+
+          <p style="text-decoration:blink;">
+
+
+          This text has a blinking effect
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    You will see the following result -
+
+
+    This text is underlined
+
+
+    This text is struck through.
+
+
+    This text has an over line.
+
+
+    This text has a blinking effect
+
+
+    How to Set Text Cases
+
+
+    This example shows how we set up text cases using values of non, uppercase, lowercase
+    and capitalize
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="text-transform:capitalize;">
+
+
+          This text will be capitalized
+
+
+          </p>
+
+
+          <p style="text-transform:uppercase;">
+
+
+          This text will be in uppercase
+
+
+          </p>
+
+
+          <p style="text-transform:lowercase;">
+
+
+          This text will be in lowercase
+
+
+          </p>
+
+
+          </body>
+
+
+    </html>
+
+
+    You will see the following result -
+
+
+    This Text Will Be Capitalized
+
+
+    THIS text WILL BE IN UPPERCASE
+
+
+    this text will be in lowercase
+
+
+    How to Set Whitespace between Text
+
+
+    This example shows how to handle whitespace in an element, using values of nowrap,
+    normal and pre
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="white-space:pre;">
+
+
+          This text will have a line break and the white-space pre setting will tell
+    the browser to honor
+
+
+          it the same as the HTML pre tag.</p>
+
+
+       </body>
+
+
+    </html>
+
+
+    You will see the following result -
+
+
+    This text will have a line break and the white-space pre setting will tell the
+    browser to honor it the same as the HTML pre tag.</p>.
+
+
+    How to Set a Text Shadow
+
+
+    This final example shows how to set a shadow around a piece of text. Be aware
+    that this may not have the support of every browser
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="text-shadow:4px 4px 8px blue;">
+
+
+          Provided your browser will support CSS text-shadow property, the text will
+    have a blue shadow
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    You will see the following result -
+
+
+    Provided your browser will support CSS text-shadow property, the text will have
+    a blue shadow
+
+
+    # Chapter 9: Using Images
+
+
+    Images are an important part of websites and, although you shouldn’t use too many,
+    those you do use should be of good quality and in the right place. CSS helps to
+    control the display of these images by allowing you to set the following properties:
+
+
+    *   Border – this is used to set the width of the border on the image
+
+
+    *   Height – this is used to set the height of the image
+
+
+    *   Width – this is used to set the width of the image
+
+
+    *   -most-opacity -  this used to determine the opacity of the image
+
+
+    Image Border
+
+
+    This property is used to set the width of the border on the image and can use
+    values of length or %. For example:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <img style="border:0px;" src="/css/images/logo.png" />
+
+
+          <br />
+
+
+          <img style="border:3px dashed red;" src="/css/images/logo.png" />
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be a logo without a border and then a logo with a dotted red border
+
+
+    Image Height
+
+
+    This property is used to set how high an image is and can use values of length
+    or %. When you use %, the value is applied to the box which the image is in:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <img style="border:1px solid red; height:100px;" src="/css/images/logo.png"
+    />
+
+
+          <br />
+
+
+          <img style="border:1px solid red; height:50%;" src="/css/images/logo.png"
+    />
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be two logos, exactly the same, but one taller than the other
+
+
+    Image Width
+
+
+    This is used to set the width of an image using value of % or length. As with
+    height, using percentage applies to the box the image is in
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <img style="border:1px solid red; width:150px;" src="/css/images/logo.png"
+    />
+
+
+          <br />
+
+
+          <img style="border:1px solid red; width:100%;" src="/css/images/logo.png"
+    />
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be two identical logos but of different sizes
+
+
+    -Moz-Opacity
+
+
+    The final property is use to set up the opacity of the image and is used with
+    Mozilla Firefox. For Internet Explorer, we use filter:alpha (opacity:x), to come
+    up with transparent images.
+
+
+    In Mozilla Firefox, in the property (-moz-opacity:x), x may hold a value of anywhere
+    between 0.0 and 1.0\. The lower the value, the more transparent the image. By
+    the same token, in Internet Explorer (filter:apha(opacity=x)), the value of x
+    can be anywhere between 0 and 100. Again, the lower the value, the more transparent
+    the image is.
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <img style="border:1px solid red;-moz-opacity:0.4;filter:alpha(opacity=40);"
+    src="/css/images/logo.png" />
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be a logo with a border of solid red.
+
+
+    # Chapter 10: Links
+
+
+    In this chapter, we take a look at how to use CSS to set the properties of a hyper
+    link. The following properties can be set:
+
+
+    *   :link is used to signify unvisited hyperlinks.
+
+
+    *   :visited is used to signify visited hyperlinks.
+
+
+    *   :hover is used to signify elements that have the mouse pointer hovering over
+    the top.
+
+
+    *   :active is used to signify elements that are currently being clicked.
+
+
+    Normally, these properties are stored in the header of an HTML document. Remember
+    the following rules for effective use:
+
+
+    *   a:hover comes after a:link and a:visited in CSS definition
+
+
+    *   a:active comes after a:hover, as shown in the next example:
+
+
+    <style type="text/css">
+
+
+       a:link {color: #000000}
+
+
+       a:visited {color: #006600}
+
+
+       a:hover {color: #FFCC00}
+
+
+       a:active {color: #FF00CC}
+
+
+    </style>
+
+
+    Next we will look at how these properties are used for different effects on hyperlinks.
+
+
+    Set the Color
+
+
+    This example shows how we set the color of a link using values that are of any
+    color name in any format that is valid:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             a:link {color:#000000}
+
+
+         </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <a href="">Link</a>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be a black link. Please note that none of these links are clickable;
+    they are just for demonstration purposes.
+
+
+    Link
+
+
+    The Color of Visited Links
+
+
+    This example shows how to set the color of a visited link, again with values of
+    any color name in any format that is valid:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             a:visited {color: #006600}
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <a href=""> link</a>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be the following link, black to start and green when clicked on.
+
+
+    Link
+
+
+    Color of Links with Mouse Hover
+
+
+    This example shows how to change the color of a link when we hover the mouse pointer
+    over it:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             a:hover {color: #FFCC00}
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <a href="">Link</a>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be a black link that changes to yellow when the mouse is hovered
+    over the top
+
+
+    Link
+
+
+    Color of Active Links
+
+
+    This example shows how we change the color of an active link:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             a:active {color: #FF00CC}
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <a href="">Link</a>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be a black link that changes to pink when it is clicked on.
+
+
+    Link
+
+
+    # Chapter 11: Tables
+
+
+    In this chapter, we are going to look at the properties we can set for HTML tables.
+    The following properties can be set:
+
+
+    *   Border-collapse – this specifies whether the cells of the table should maintain
+    their own appearance or if the browser should control the borders that touch             
+
+
+    *   Border-spacing – this specifies the width of the space between table cells
+
+
+    *   Caption-side captions – these are in the <caption> element and rendered, by
+    default, above the table. They can be used to set the position of the table caption'
+  toc: []
+  trans: "\n\n# 第 9 章：使用图像\n\n图像是网站的重要组成部分，虽然不应使用过多，但使用的图像应质量良好且位置恰当。CSS 通过允许设置以下属性来控制这些图像的显示：\n\
+    \n*   `Border` – 用于设置图像边框的宽度\n*   `Height` – 用于设置图像的高度\n*   `Width` – 用于设置图像的宽度\n\
+    *   `-moz-opacity` – 用于确定图像的不透明度\n\n## 图像边框\n\n该属性用于设置图像边框的宽度，可以使用长度值或 `%`。例如：\n\
+    \n```\n<html>\n   <head>\n   </head>\n   <body>\n      <img style=\"border:0px;\"\
+    \ src=\"/css/images/logo.png\" />\n      <br />\n      <img style=\"border:3px\
+    \ dashed red;\" src=\"/css/images/logo.png\" />\n   </body>\n</html>\n```\n\n\
+    结果将是一个无边框的徽标，然后是一个带有红色虚线边框的徽标。\n\n## 图像高度\n\n该属性用于设置图像的高度，可以使用长度值或 `%`。当使用 `%`\
+    \ 时，该值应用于图像所在的盒子：\n\n```\n<html>\n   <head>\n   </head>\n   <body>\n      <img\
+    \ style=\"border:1px solid red; height:100px;\" src=\"/css/images/logo.png\" />\n\
+    \      <br />\n      <img style=\"border:1px solid red; height:50%;\" src=\"/css/images/logo.png\"\
+    \ />\n   </body>\n</html>\n```\n\n结果将是两个完全相同的徽标，但一个比另一个高。\n\n## 图像宽度\n\n该属性用于使用\
+    \ `%` 或长度值设置图像的宽度。与高度类似，使用百分比时应用于图像所在的盒子：\n\n```\n<html>\n   <head>\n   </head>\n\
+    \   <body>\n      <img style=\"border:1px solid red; width:150px;\" src=\"/css/images/logo.png\"\
+    \ />\n      <br />\n      <img style=\"border:1px solid red; width:100%;\" src=\"\
+    /css/images/logo.png\" />\n   </body>\n</html>\n```\n\n结果将是两个相同的徽标，但尺寸不同。\n\n\
+    ## `-moz-opacity`\n\n最后一个属性用于设置图像的不透明度，适用于 Mozilla Firefox。对于 Internet Explorer，我们使用\
+    \ `filter:alpha(opacity=x)` 来实现透明图像。\n\n在 Mozilla Firefox 中，属性 `-moz-opacity:x`\
+    \ 中的 `x` 可以取 `0.0` 到 `1.0` 之间的任意值。值越低，图像越透明。同样，在 Internet Explorer 中，`filter:alpha(opacity=x)`\
+    \ 的 `x` 值可以在 `0` 到 `100` 之间。同样，值越低，图像越透明。\n\n```\n<html>\n   <head>\n   </head>\n\
+    \   <body>\n      <img style=\"border:1px solid red;-moz-opacity:0.4;filter:alpha(opacity=40);\"\
+    \ src=\"/css/images/logo.png\" />\n   </body>\n</html>\n```\n\n结果将是一个带有红色实线边框的徽标。\n\
+    \n# 第 10 章：链接\n\n在本章中，我们将了解如何使用 CSS 设置超链接的属性。可以设置以下属性：\n\n*   `:link` 用于表示未访问的超链接。\n\
+    *   `:visited` 用于表示已访问的超链接。\n*   `:hover` 用于表示鼠标指针悬停在其上的元素。\n*   `:active` 用于表示当前正在被点击的元素。\n\
+    \n通常，这些属性存储在 HTML 文档的头部。请记住以下有效使用的规则：\n\n*   在 CSS 定义中，`a:hover` 位于 `a:link` 和\
+    \ `a:visited` 之后\n*   `a:active` 位于 `a:hover` 之后，如下例所示：\n\n```\n<style type=\"\
+    text/css\">\n   a:link {color: #000000}\n   a:visited {color: #006600}\n   a:hover\
+    \ {color: #FFCC00}\n   a:active {color: #FF00CC}\n</style>\n```\n\n接下来，我们将了解这些属性如何用于实现超链接的不同效果。\n\
+    \n## 设置颜色\n\n此示例展示了如何使用任何有效格式的颜色名称值来设置链接的颜色：\n\n```\n<html>\n   <head>\n     \
+    \ <style type=\"text/css\">\n         a:link {color:#000000}\n     </style>\n\
+    \   </head>\n   <body>\n      <a href=\"\">Link</a>\n   </body>\n</html>\n```\n\
+    \n结果将是一个黑色链接。请注意，这些链接均不可点击，仅用于演示目的。\n\n链接\n\n## 已访问链接的颜色\n\n此示例展示了如何设置已访问链接的颜色，同样使用任何有效格式的颜色名称值：\n\
+    \n```\n<html>\n   <head>\n      <style type=\"text/css\">\n         a:visited\
+    \ {color: #006600}\n      </style>\n   </head>\n   <body>\n      <a href=\"\"\
+    > link</a>\n   </body>\n</html>\n```\n\n结果将是以下链接：初始为黑色，点击后变为绿色。\n\n链接\n\n## 鼠标悬停时链接的颜色\n\
+    \n此示例展示了当鼠标指针悬停在链接上时如何改变其颜色：\n\n```\n<html>\n   <head>\n      <style type=\"text/css\"\
+    >\n         a:hover {color: #FFCC00}\n      </style>\n   </head>\n   <body>\n\
+    \      <a href=\"\">Link</a>\n   </body>\n</html>\n```\n\n结果将是一个黑色链接，当鼠标悬停在其上时变为黄色。\n\
+    \n链接\n\n## 活动链接的颜色\n\n此示例展示了如何改变活动链接的颜色：\n\n```\n<html>\n   <head>\n      <style\
+    \ type=\"text/css\">\n         a:active {color: #FF00CC}\n      </style>\n   </head>\n\
+    \   <body>\n      <a href=\"\">Link</a>\n   </body>\n</html>\n```\n\n结果将是一个黑色链接，点击时变为粉色。\n\
+    \n链接\n\n# 第 11 章：表格\n\n在本章中，我们将了解可以为 HTML 表格设置的属性。可以设置以下属性：\n\n*   `Border-collapse`\
+    \ – 指定表格的单元格是保持各自的外观，还是由浏览器控制相邻的边框\n*   `Border-spacing` – 指定表格单元格之间的间距宽度\n* \
+    \  `Caption-side` 标题 – 这些标题位于 `<caption>` 元素中，默认情况下渲染在表格上方。它们可用于设置表格标题的位置\n\n"
+- fmt: "\n*   `Empty-cells` – this specifies whether there should be a border shown\
+    \ on empty cells\n*   `Table-layout` – this lets the browser speed up the table\
+    \ layout by using the first width property it finds for a column without having\
+    \ to load the table and then rendering it\n\nNext we look at these properties\
+    \ with examples.\n\n## `Border-Collapse`\n\nThis property may have two values\
+    \ – `collapse` and `separate`. This example uses both:\n\n```html\n<html>\n  \
+    \ <head>\n      <style type=\"text/css\">\n         table.one {border-collapse:collapse;}\n\
+    \         table.two {border-collapse:separate;}\n         td.a {\n           \
+    \ border-style:dotted;\n            border-width:3px;\n            border-color:#000000;\n\
+    \            padding: 10px;\n         }\n         td.b {\n            border-style:solid;\n\
+    \            border-width:3px;\n            border-color:#333333;\n          \
+    \  padding:10px;\n         }\n      </style>\n   </head>\n   <body>\n      <table\
+    \ class=\"one\">\n         <caption>Collapse Border Example</caption>\n      \
+    \   <tr><td class=\"a1 Cell 1 Collapse Example</td></tr>\n         <tr><td class=\"\
+    2\"> Cell 2 Collapse Example</td></tr>\n      </table>\n      <br />\n      <table\
+    \ class=\"two\">\n         <caption>Separate Border Example</caption>\n      \
+    \   <tr><td class=\"1\"> Cell 1 Separate Example</td></tr>\n         <tr><td class=\"\
+    2\"> Cell 2 Separate Example</td></tr>\n      </table>\n   </body>\n</html>\n\
+    ```\n\nThis will give you these results;\n\n| Collapse Border: |\n| Cell 1 Collapse\
+    \ Example |\n| Cell 2 Collapse Example |\n| Separate Border: |\n| Cell 1 Separate\
+    \ Example |\n| Cell 2 Separate Example |\n\n## `Border-Spacing`\n\nThis property\
+    \ specifies how much distance there is between the border of two adjacent cells.\
+    \ It can take either of two values, each of which should be a length unit. One\
+    \ value applies to horizontal and vertical borders while using two values will\
+    \ refer to the vertical and the horizontal spacing.\n\n```css\n<style type=\"\
+    text/css\">\n   /* If you provide a value */\n   table.example {border-spacing:10px;}\n\
+    \   /* This is how to provide two values */\n   table.example {border-spacing:10px;\
+    \ 15px;}\n</style>\n```\n\nThe next example modifies the first example:\n\n```html\n\
+    <html>\n   <head>\n      <style type=\"text/css\">\n         table.one {\n   \
+    \         border-collapse:separate;\n            width:400px;\n            border-spacing:10px;\n\
+    \         }\n         table.two {\n            border-collapse:separate;\n   \
+    \         width:400px;\n            border-spacing:10px 50px;\n         }\n  \
+    \    </style>\n   </head>\n   <body>\n      <table class=\"one\" border=\"1\"\
+    >\n         <caption>Separate Border Example with border-spacing</caption>\n \
+    \        <tr><td> Cell A Collapse Example</td></tr>\n         <tr><td> Cell B\
+    \ Collapse Example</td></tr>\n      </table>\n      <br />\n      <table class=\"\
+    two\" border=\"1\">\n         <caption>Separate Border Example with border-spacing</caption>\n\
+    \         <tr><td> Cell A Separate Example</td></tr>\n         <tr><td> Cell B\
+    \ Separate Example</td></tr>\n      </table>\n   </body>\n</html>\n```\n\n## `Caption-Side`\
+    \ Property\n\nThis property allows you to specify the position of the `<caption>`\
+    \ element content in relation to the table. It can use these four properties –\
+    \ `top`, `left`, `bottom`, `right`. The following example uses all of the four\
+    \ values:\n\n```html\n<html>\n   <head>\n      <style type=\"text/css\">\n   \
+    \      caption.top {caption-side:top}\n         caption.bottom {caption-side:bottom}\n\
+    \         caption.left {caption-side:left}\n         caption.right {caption-side:right}\n\
+    \      </style>\n   </head>\n   <body>\n      <table style=\"width:400px; border:1px\
+    \ solid black;\">\n         <caption class=\"top\">\n         This caption will\
+    \ appear at the top\n         </caption>\n         <tr><td > Cell A</td></tr>\n\
+    \         <tr><td > Cell B</td></tr>\n      </table>\n      <br />\n      <table\
+    \ style=\"width:400px; border:1px solid black;\">\n         <caption class=\"\
+    bottom\">\n         The caption appears at the bottom\n         </caption>\n \
+    \        <tr><td > Cell A</td></tr>\n         <tr><td > Cell B</td></tr>\n   \
+    \   </table>\n      <br />\n      <table style=\"width:400px; border:1px solid\
+    \ black;\">\n         <caption class=\"left\">\n         The caption appears at\
+    \ the left\n         </caption>\n         <tr><td > Cell A</td></tr>\n       \
+    \  <tr><td > Cell B</td></tr>\n      </table>\n      <br />\n      <table style=\"\
+    width:400px; border:1px solid black;\">\n         <caption class=\"right\">\n\
+    \         The caption appears at the right\n         </caption>\n         <tr><td\
+    \ > Cell A</td></tr>\n         <tr><td > Cell B</td></tr>\n      </table>\n  \
+    \ </body>\n</html>\n```\n\n## `Empty-Cells`\n\nThis property is used to indicate\
+    \ if an empty cell should have a border or not. It can have one of these three\
+    \ value – `hide`, `show`, `inherit`. This example shows the property being used\
+    \ to hide the borders of the empty cells in the `<table>` element:\n\n```html\n\
+    <html>\n   <head>\n      <style type=\"text/css\">\n         table.empty{\n  \
+    \          width:350px;\n            border-collapse:separate;\n            empty-cells:hide;\n\
+    \         }\n         td.empty{\n            padding:5px;\n            border-style:solid;\n\
+    \            border-width:1px;\n            border-color:#999999;\n         }\n\
+    \      </style>\n   </head>\n   <body>\n      <table class=\"empty\">\n      <tr>\n\
+    \         <th></th>\n         <th>Title one</th>\n         <th>Title two</th>\n\
+    \      </tr>\n      <tr>\n         <th>Row Title</th>\n         <td class=\"empty\"\
+    >value</td>\n         <td class=\"empty\">value</td>\n      </tr>\n      <tr>\n\
+    \         <th>Row Title</th>\n         <td class=\"empty\">value</td>\n      \
+    \   <td class=\"empty\"></td>\n      </tr>\n      </table>\n   </body>\n</html>\n\
+    ```\n\n## `Table-Layout`\n\nThis property is meant to help you control how the\
+    \ browser lays out or renders a table. It can have one of these three value –\
+    \ `inherit`, `auto` or `fixed`. The next example shows the\n\n```html\n<html>\n\
+    \   <head>\n      <style type=\"text/css\">\n         table.auto {\n         \
+    \   table-layout: auto\n         }\n         table.fixed{\n            table-layout:\
+    \ fixed\n         }\n      </style>\n   </head>\n   <body>\n      <table class=\"\
+    auto\" border=\"1\" width=\"100%\">\n      <tr>\n         <td width=\"20%\">1000000000000000000000000000</td>\n\
+    \         <td width=\"40%\">10000000</td>\n         <td width=\"40%\">100</td>\n\
+    \      </tr>\n      </table>\n      <br />\n      <table class=\"fixed\" border=\"\
+    1\" width=\"100%\">\n      <tr>\n         <td width=\"20%\">1000000000000000000000000000</td>\n\
+    \         <td width=\"40%\">10000000</td>\n         <td width=\"40%\">100</td>\n\
+    \      </tr>\n      </table>\n   </body>\n</html>\n```\n\n# Chapter 12: Borders\n\
+    \nBorder properties allow you to say what the border of an element box should\
+    \ look like. The following are the three properties that you can control\n\n*\
+    \   `Border-color` – allows you to specify the color of the border\n*   `Border-style`\
+    \ – allows you to specify the style from a choice of values, including a solid\
+    \ line, dashed line, double line, etc.\n*   `Border-width` – allows you to specify\
+    \ the width of the border\n\n### `Border-Color`\n\nThis property lets you change\
+    \ the color of a border surrounding an element. You can change each side of the\
+    \ border individually using these properties:\n\n*   `Border-bottom-color`\n*\
+    \   `Border-top-color`\n*   `Border-left-color`\n*   `Border-right-color`\n\n\
+    This example shows all four properties in use:\n\n```html\n<html>\n   <head>\n\
+    \      <style type=\"text/css\">\n         p.example1{\n            border:1px\
+    \ solid;\n            border-bottom-color:#009900; /* Green */\n            border-top-color:#FF0000;\
+    \    /* Red */\n            border-left-color:#330000;   /* Black */\n       \
+    \     border-right-color:#0000CC;  /* Blue */\n         }\n         p.example2{\n\
+    \            border:1px solid;\n            border-color:#009900;        /* Green\
+    \ */\n         }\n      </style>\n   </head>\n   <body>\n      <p class=\"example1\"\
+    >\n      The example shows all borders in different colors.\n      </p>\n    \
+    \  <p class=\"example2\">\n      The example shows all borders in green only.\n\
+    \      </p>\n   </body>\n</html>\n```\n"
+  raw: '*   Empty-cells – this specifies whether there should be a border shown on
+    empty cells
+
+
+    *   Table-layout – this lets the browser speed up the table layout by using the
+    first width property it finds for a column without having to load the table and
+    then rendering it
+
+
+    Next we look at these properties with examples.
+
+
+    Border-Collapse
+
+
+    This property may have two values – collapse and separate. This example uses both:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             table.one {border-collapse:collapse;}
+
+
+             table.two {border-collapse:separate;}
+
+
+             td.a {
+
+
+                border-style:dotted;
+
+
+                border-width:3px;
+
+
+                border-color:#000000;
+
+
+                padding: 10px;
+
+
+             }
+
+
+             td.b {
+
+
+                border-style:solid;
+
+
+                border-width:3px;
+
+
+                border-color:#333333;
+
+
+                padding:10px;
+
+
+             }
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <table class="one">
+
+
+             <caption>Collapse Border Example</caption>
+
+
+             <tr><td class="a1 Cell 1 Collapse Example</td></tr>
+
+
+             <tr><td class="2"> Cell 2 Collapse Example</td></tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table class="two">
+
+
+             <caption>Separate Border Example</caption>
+
+
+             <tr><td class="1"> Cell 1 Separate Example</td></tr>
+
+
+             <tr><td class="2"> Cell 2 Separate Example</td></tr>
+
+
+          </table>
+
+
+       </body>
+
+
+    </html>
+
+
+    This will give you these results;
+
+
+    | Collapse Border: |
+
+
+    | Cell 1 Collapse Example |
+
+
+    | Cell 2 Collapse Example |
+
+
+    | Separate Border: |
+
+
+    | Cell 1 Separate Example |
+
+
+    | Cell 2 Separate Example |
+
+
+    Border-Spacing
+
+
+    This property specifies how much distance there is between the border of two adjacent
+    cells. It can take either of two values, each of which should be a length unit.
+    One value applies to horizontal and vertical borders while using two values will
+    refer to the vertical and the horizontal spacing.
+
+
+    <style type="text/css">
+
+
+       /* If you provide a value */
+
+
+       table.example {border-spacing:10px;}
+
+
+       /* This is how to provide two values */
+
+
+       table.example {border-spacing:10px; 15px;}
+
+
+    </style>
+
+
+    The next example modifies the first example:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             table.one {
+
+
+                border-collapse:separate;
+
+
+                width:400px;
+
+
+                border-spacing:10px;
+
+
+             }
+
+
+             table.two {
+
+
+                border-collapse:separate;
+
+
+                width:400px;
+
+
+                border-spacing:10px 50px;
+
+
+             }
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <table class="one" border="1">
+
+
+             <caption>Separate Border Example with border-spacing</caption>
+
+
+             <tr><td> Cell A Collapse Example</td></tr>
+
+
+             <tr><td> Cell B Collapse Example</td></tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table class="two" border="1">
+
+
+             <caption>Separate Border Example with border-spacing</caption>
+
+
+             <tr><td> Cell A Separate Example</td></tr>
+
+
+             <tr><td> Cell B Separate Example</td></tr>
+
+
+          </table>
+
+
+       </body>
+
+
+    </html>
+
+
+    Caption-Side Property
+
+
+    This property allows you to specify the position of the <caption> element content
+    in relation to the table.  It can use these four properties – top, left, bottom,
+    right. The following example uses all of the four values:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             caption.top {caption-side:top}
+
+
+             caption.bottom {caption-side:bottom}
+
+
+             caption.left {caption-side:left}
+
+
+             caption.right {caption-side:right}
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <table style="width:400px; border:1px solid black;">
+
+
+             <caption class="top">
+
+
+             This caption will appear at the top
+
+
+             </caption>
+
+
+             <tr><td > Cell A</td></tr>
+
+
+             <tr><td > Cell B</td></tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table style="width:400px; border:1px solid black;">
+
+
+             <caption class="bottom">
+
+
+             The caption appears at the bottom
+
+
+             </caption>
+
+
+             <tr><td > Cell A</td></tr>
+
+
+             <tr><td > Cell B</td></tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table style="width:400px; border:1px solid black;">
+
+
+             <caption class="left">
+
+
+             The caption appears at the left
+
+
+             </caption>
+
+
+             <tr><td > Cell A</td></tr>
+
+
+             <tr><td > Cell B</td></tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table style="width:400px; border:1px solid black;">
+
+
+             <caption class="right">
+
+
+             The caption appears at the right
+
+
+             </caption>
+
+
+             <tr><td > Cell A</td></tr>
+
+
+             <tr><td > Cell B</td></tr>
+
+
+          </table>
+
+
+       </body>
+
+
+    </html>
+
+
+    Empty-Cells
+
+
+    This property is used to indicate if an empty cell should have a border or not.
+    It can have one of these three value – hide, show, inherit. This example shows
+    the property being used to hide the borders of the empty cells in the <table>
+    element:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             table.empty{
+
+
+                width:350px;
+
+
+                border-collapse:separate;
+
+
+                empty-cells:hide;
+
+
+             }
+
+
+             td.empty{
+
+
+                padding:5px;
+
+
+                border-style:solid;
+
+
+                border-width:1px;
+
+
+                border-color:#999999;
+
+
+             }
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <table class="empty">
+
+
+          <tr>
+
+
+             <th></th>
+
+
+             <th>Title one</th>
+
+
+             <th>Title two</th>
+
+
+          </tr>
+
+
+          <tr>
+
+
+             <th>Row Title</th>
+
+
+             <td class="empty">value</td>
+
+
+             <td class="empty">value</td>
+
+
+          </tr>
+
+
+          <tr>
+
+
+             <th>Row Title</th>
+
+
+             <td class="empty">value</td>
+
+
+             <td class="empty"></td>
+
+
+          </tr>
+
+
+          </table>
+
+
+       </body>
+
+
+    </html>
+
+
+    Table-Layout
+
+
+    This property is meant to help you control how the browser lays out or renders
+    a table. It can have one of these three value – inherit, auto or fixed. The next
+    example shows the
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             table.auto {
+
+
+                table-layout: auto
+
+
+             }
+
+
+             table.fixed{
+
+
+                table-layout: fixed
+
+
+             }
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <table class="auto" border="1" width="100%">
+
+
+          <tr>
+
+
+             <td width="20%">1000000000000000000000000000</td>
+
+
+             <td width="40%">10000000</td>
+
+
+             <td width="40%">100</td>
+
+
+          </tr>
+
+
+          </table>
+
+
+          <br />
+
+
+          <table class="fixed" border="1" width="100%">
+
+
+          <tr>
+
+
+             <td width="20%">1000000000000000000000000000</td>
+
+
+             <td width="40%">10000000</td>
+
+
+             <td width="40%">100</td>
+
+
+          </tr>
+
+
+          </table>
+
+
+       </body>
+
+
+    </html>
+
+
+    # Chapter 12: Borders
+
+
+    Border properties allow you to say what the border of an element box should look
+    like. The following are the three properties that you can control
+
+
+    *   Border-color – allows you to specify the color of the border
+
+
+    *   Border-style – allows you to specify the style from a choice of values, including
+    a solid line, dashed line, double line, etc.
+
+
+    *   Border-width – allows you to specify the width of the border
+
+
+    Border-Color
+
+
+    This property lets you change the color of a border surrounding an element. You
+    can change each side of the border individually using these properties:
+
+
+    *   Border-bottom-color
+
+
+    *   Border-top-color
+
+
+    *   Border-left-color
+
+
+    *   Border-right-color
+
+
+    This example shows all four properties in use:
+
+
+    <html>
+
+
+       <head>
+
+
+          <style type="text/css">
+
+
+             p.example1{
+
+
+                border:1px solid;
+
+
+                border-bottom-color:#009900; /* Green */
+
+
+                border-top-color:#FF0000;    /* Red */
+
+
+                border-left-color:#330000;   /* Black */
+
+
+                border-right-color:#0000CC;  /* Blue */
+
+
+             }
+
+
+             p.example2{
+
+
+                border:1px solid;
+
+
+                border-color:#009900;        /* Green */
+
+
+             }
+
+
+          </style>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p class="example1">
+
+
+          The example shows all borders in different colors.
+
+
+          </p>
+
+
+          <p class="example2">
+
+
+          The example shows all borders in green only.
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>'
+  toc: []
+  trans: "\n*   `Empty-cells` – 指定是否应在空单元格上显示边框\n*   `Table-layout` – 允许浏览器通过使用它为列找到的第一个宽度属性来加速表格布局，而无需加载表格后再渲染\n\
+    \n接下来我们通过示例来了解这些属性。\n\n## `Border-Collapse`\n\n该属性可以有两个值 – `collapse` 和 `separate`。以下示例同时使用了这两个值：\n\
+    \n```html\n<html>\n   <head>\n      <style type=\"text/css\">\n         table.one\
+    \ {border-collapse:collapse;}\n         table.two {border-collapse:separate;}\n\
+    \         td.a {\n            border-style:dotted;\n            border-width:3px;\n\
+    \            border-color:#000000;\n            padding: 10px;\n         }\n \
+    \        td.b {\n            border-style:solid;\n            border-width:3px;\n\
+    \            border-color:#333333;\n            padding:10px;\n         }\n  \
+    \    </style>\n   </head>\n   <body>\n      <table class=\"one\">\n         <caption>折叠边框示例</caption>\n\
+    \         <tr><td class=\"a1 Cell 1 Collapse Example</td></tr>\n         <tr><td\
+    \ class=\"2\"> Cell 2 Collapse Example</td></tr>\n      </table>\n      <br />\n\
+    \      <table class=\"two\">\n         <caption>分离边框示例</caption>\n         <tr><td\
+    \ class=\"1\"> Cell 1 Separate Example</td></tr>\n         <tr><td class=\"2\"\
+    > Cell 2 Separate Example</td></tr>\n      </table>\n   </body>\n</html>\n```\n\
+    \n这将产生以下结果：\n\n| 折叠边框： |\n| 单元格 1 折叠示例 |\n| 单元格 2 折叠示例 |\n| 分离边框： |\n| 单元格 1 分离示例\
+    \ |\n| 单元格 2 分离示例 |\n\n## `Border-Spacing`\n\n该属性指定两个相邻单元格边框之间的距离。它可以接受两个值中的任意一个，每个值都应为长度单位。一个值适用于水平和垂直边框，而使用两个值则分别表示垂直和水平间距。\n\
+    \n```css\n<style type=\"text/css\">\n   /* 如果提供一个值 */\n   table.example {border-spacing:10px;}\n\
+    \   /* 这是提供两个值的方法 */\n   table.example {border-spacing:10px; 15px;}\n</style>\n\
+    ```\n\n下一个示例修改了第一个示例：\n\n```html\n<html>\n   <head>\n      <style type=\"text/css\"\
+    >\n         table.one {\n            border-collapse:separate;\n            width:400px;\n\
+    \            border-spacing:10px;\n         }\n         table.two {\n        \
+    \    border-collapse:separate;\n            width:400px;\n            border-spacing:10px\
+    \ 50px;\n         }\n      </style>\n   </head>\n   <body>\n      <table class=\"\
+    one\" border=\"1\">\n         <caption>带边框间距的分离边框示例</caption>\n         <tr><td>\
+    \ 单元格 A 折叠示例</td></tr>\n         <tr><td> 单元格 B 折叠示例</td></tr>\n      </table>\n\
+    \      <br />\n      <table class=\"two\" border=\"1\">\n         <caption>带边框间距的分离边框示例</caption>\n\
+    \         <tr><td> 单元格 A 分离示例</td></tr>\n         <tr><td> 单元格 B 分离示例</td></tr>\n\
+    \      </table>\n   </body>\n</html>\n```\n\n## `Caption-Side` 属性\n\n该属性允许你指定\
+    \ `<caption>` 元素内容相对于表格的位置。它可以接受以下四个值 – `top`、`left`、`bottom`、`right`。以下示例使用了所有四个值：\n\
+    \n```html\n<html>\n   <head>\n      <style type=\"text/css\">\n         caption.top\
+    \ {caption-side:top}\n         caption.bottom {caption-side:bottom}\n        \
+    \ caption.left {caption-side:left}\n         caption.right {caption-side:right}\n\
+    \      </style>\n   </head>\n   <body>\n      <table style=\"width:400px; border:1px\
+    \ solid black;\">\n         <caption class=\"top\">\n         此标题将显示在顶部\n    \
+    \     </caption>\n         <tr><td > 单元格 A</td></tr>\n         <tr><td > 单元格 B</td></tr>\n\
+    \      </table>\n      <br />\n      <table style=\"width:400px; border:1px solid\
+    \ black;\">\n         <caption class=\"bottom\">\n         标题显示在底部\n         </caption>\n\
+    \         <tr><td > 单元格 A</td></tr>\n         <tr><td > 单元格 B</td></tr>\n    \
+    \  </table>\n      <br />\n      <table style=\"width:400px; border:1px solid\
+    \ black;\">\n         <caption class=\"left\">\n         标题显示在左侧\n         </caption>\n\
+    \         <tr><td > 单元格 A</td></tr>\n         <tr><td > 单元格 B</td></tr>\n    \
+    \  </table>\n      <br />\n      <table style=\"width:400px; border:1px solid\
+    \ black;\">\n         <caption class=\"right\">\n         标题显示在右侧\n         </caption>\n\
+    \         <tr><td > 单元格 A</td></tr>\n         <tr><td > 单元格 B</td></tr>\n    \
+    \  </table>\n   </body>\n</html>\n```\n\n## `Empty-Cells`\n\n该属性用于指示空单元格是否应显示边框。它可以取以下三个值之一\
+    \ – `hide`、`show`、`inherit`。以下示例展示了如何使用该属性隐藏 `<table>` 元素中空单元格的边框：\n\n```html\n\
+    <html>\n   <head>\n      <style type=\"text/css\">\n         table.empty{\n  \
+    \          width:350px;\n            border-collapse:separate;\n            empty-cells:hide;\n\
+    \         }\n         td.empty{\n            padding:5px;\n            border-style:solid;\n\
+    \            border-width:1px;\n            border-color:#999999;\n         }\n\
+    \      </style>\n   </head>\n   <body>\n      <table class=\"empty\">\n      <tr>\n\
+    \         <th></th>\n         <th>标题一</th>\n         <th>标题二</th>\n      </tr>\n\
+    \      <tr>\n         <th>行标题</th>\n         <td class=\"empty\">值</td>\n    \
+    \     <td class=\"empty\">值</td>\n      </tr>\n      <tr>\n         <th>行标题</th>\n\
+    \         <td class=\"empty\">值</td>\n         <td class=\"empty\"></td>\n   \
+    \   </tr>\n      </table>\n   </body>\n</html>\n```\n\n## `Table-Layout`\n\n该属性旨在帮助你控制浏览器如何布局或渲染表格。它可以取以下三个值之一\
+    \ – `inherit`、`auto` 或 `fixed`。下一个示例展示了\n\n```html\n<html>\n   <head>\n      <style\
+    \ type=\"text/css\">\n         table.auto {\n            table-layout: auto\n\
+    \         }\n         table.fixed{\n            table-layout: fixed\n        \
+    \ }\n      </style>\n   </head>\n   <body>\n      <table class=\"auto\" border=\"\
+    1\" width=\"100%\">\n      <tr>\n         <td width=\"20%\">1000000000000000000000000000</td>\n\
+    \         <td width=\"40%\">10000000</td>\n         <td width=\"40%\">100</td>\n\
+    \      </tr>\n      </table>\n      <br />\n      <table class=\"fixed\" border=\"\
+    1\" width=\"100%\">\n      <tr>\n         <td width=\"20%\">1000000000000000000000000000</td>\n\
+    \         <td width=\"40%\">10000000</td>\n         <td width=\"40%\">100</td>\n\
+    \      </tr>\n      </table>\n   </body>\n</html>\n```\n\n# 第 12 章：边框\n\n边框属性允许你指定元素框的边框外观。以下是你可以控制的三个属性：\n\
+    \n*   `Border-color` – 允许你指定边框的颜色\n*   `Border-style` – 允许你从一系列值中选择样式，包括实线、虚线、双线等\n\
+    *   `Border-width` – 允许你指定边框的宽度\n\n### `Border-Color`\n\n该属性允许你更改元素周围边框的颜色。你可以使用以下属性单独更改边框的每一侧：\n\
+    \n*   `Border-bottom-color`\n*   `Border-top-color`\n*   `Border-left-color`\n\
+    *   `Border-right-color`\n\n以下示例展示了所有四个属性的使用：\n\n```html\n<html>\n   <head>\n\
+    \      <style type=\"text/css\">\n         p.example1{\n            border:1px\
+    \ solid;\n            border-bottom-color:#009900; /* 绿色 */\n            border-top-color:#FF0000;\
+    \    /* 红色 */\n            border-left-color:#330000;   /* 黑色 */\n           \
+    \ border-right-color:#0000CC;  /* 蓝色 */\n         }\n         p.example2{\n  \
+    \          border:1px solid;\n            border-color:#009900;        /* 绿色 */\n\
+    \         }\n      </style>\n   </head>\n   <body>\n      <p class=\"example1\"\
+    >\n      此示例展示了所有边框以不同颜色显示。\n      </p>\n      <p class=\"example2\">\n      此示例展示了所有边框仅以绿色显示。\n\
+    \      </p>\n   </body>\n</html>\n```\n"
+- fmt: "\nThe result will\n\nThis example shows all borders in different colors.\n\
+    \nThis example shows all borders in green only.\n\n## Border-style\n\nThis property\
+    \ let you select one of these styles:\n\n*   None – has no border at all\n*  \
+    \ Solid – gives the border a solid line\n*   Dotted – the border is made of dots\n\
+    *   Dashed – the border is made of short lines\n*   Double – this is two solid\
+    \ lines\n*   Groove – make the border look like it has been carved into the page\n\
+    *   Ridge – does the opposite of groove\n*   Inset – the box looks embedded in\
+    \ the page\n*   Outset – the box looks as though it is coming out of the page\n\
+    *   Hidden – exactly the same as for None but with the exception of a border-conflict\
+    \ resolution for table elements\n\nAs with color, you can change the style of\
+    \ each individual side of the border, using these properties:\n\n*   `Border-bottom-style`\n\
+    *   `Border-top-style`\n*   `Border-left-style`\n*   `Border-right-style`\n\n\
+    This example uses all four of these styles:\n\n```html\n<html>\n\n   <head>\n\n\
+    \   </head>\n\n   <body>.\n\n      <p style=\"border-width:4px; border-style:none;\"\
+    >\n\n      This is a border with a width of none.\n\n      </p>\n\n      <p style=\"\
+    border-width:4px; border-style:solid;\">\n\n      This is a solid border.\n\n\
+    \      </p>\n\n      <p style=\"border-width:4px; border-style:dashed;\">\n\n\
+    \      This is a dashed border.\n\n      </p>\n\n      <p style=\"border-width:4px;\
+    \ border-style:double;\">\n\n      This is a double border.\n\n      </p>\n\n\
+    \      <p style=\"border-width:4px; border-style:groove;\">\n\n      This is a\
+    \ groove border.\n\n      </p>\n\n      <p style=\"border-width:4px; border-style:ridge\"\
+    >\n\n      This is a ridge border.\n\n      </p>\n\n      <p style=\"border-width:4px;\
+    \ border-style:inset;\">\n\n      This is an inset border.\n\n      </p>\n\n \
+    \     <p style=\"border-width:4px; border-style:outset;\">\n\n      This is an\
+    \ outset border.\n\n      </p>\n\n      <p style=\"border-width:4px; border-style:hidden;\"\
+    >\n\n      This is a hidden border.\n\n      </p>\n\n      <p style=\"border-width:4px;border-top-style:solid;\n\
+    \n      border-bottom-style:dashed; border-left-style:groove; border-right-style:double;\"\
+    >\n\n      This is a border with four different styles.\n\n      </p>\n\n   </body>\n\
+    \n</html>\n```\n\nThe result will be -\n\nThis is a border with none width.\n\n\
+    This is a solid border.\n\nThis is a dashed border.\n\nThis is a double border.\n\
+    \nThis is a groove border.\n\nThis is a ridge border.\n\nThis is an inset border.\n\
+    \nThis is an outset border.\n\nThis is a hidden border.\n\nThis is a border with\
+    \ four different styles.\n\n## Border-Width\n\nThis allows you to set the width\
+    \ of the border, using a value of length in pt., px or cm or you can set it to\
+    \ thick, medium or thin. You can change each side of the border individually,\
+    \ using these properties:\n\n*   `border-bottom-width`\n*   `border-top-width`\n\
+    *   `border-left-width`\n*   `border-right-width`\n\nThis example use all of these\
+    \ properties\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n  \
+    \    <p style=\"border-width:4px; border-style:solid;\">\n\n      This is a solid\
+    \ border with a width of 4px.\n\n      </p>\n\n      <p style=\"border-width:4pt;\
+    \ border-style:solid;\">\n\n      This is a solid border whose width is 4pt.\n\
+    \n      </p>\n\n      <p style=\"border-width:thin; border-style:solid;\">\n\n\
+    \      This is a solid border whose width is thin.\n\n      </p>\n\n      <p style=\"\
+    border-width:medium; border-style:solid;\">\n\n      This is a solid border whose\
+    \ width is medium;\n\n      </p>\n\n      <p style=\"border-width:thick; border-style:solid;\"\
+    >\n\n      This is a solid border whose width is thick.\n\n      </p>\n\n    \
+    \  <p style=\"border-bottom-width:4px;border-top-width:10px;\n\n      border-left-width:\
+    \ 2px;border-right-width:15px;border-style:solid;\">\n\n      This is a border\
+    \ with four different widths.\n\n      </p>\n\n   </body>\n\n</html>\n```\n\n\
+    The result will be:\n\nThis is a solid border whose width is 4px.\n\nThis is a\
+    \ solid border whose width is 4pt.\n\nThis is a solid border whose width is thin.\n\
+    \nThis is a solid border whose width is medium;\n\nThis is a solid border whose\
+    \ width is thick.\n\nThis is a border with four different widths.\n\n## Shorthand\
+    \ Border Properties\n\nUsing the shorthand border property, you can specify the\
+    \ style, color and width of the lines using just one property instead of three.\
+    \ The following example uses the border property to combine all three and you\
+    \ will find that this is the most commonly used method of setting a border around\
+    \ an element:\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n \
+    \     <p style=\"border:4px solid red;\">\n\nAnother example:\n\n      </p>\n\n\
+    \   </body>\n\n</html>\n```\n\n# Chapter 13: Margins\n\nThe final chapter deals\
+    \ with the margin property, i.e. the space around the HTML element. Martin property\
+    \ values are not inherited by child elements and it is also possible that you\
+    \ can use negative value as a way of overlapping the content.\n\nRemember – the\
+    \ vertical margins that are adjacent to one another (that is the top and bottom\
+    \ margins) are going to collapse into each other so that distance between each\
+    \ block is NOT the sum of the margins; instead it is the larger of the margins\
+    \ or the same as one margin if both are the same size.\n\nThe following properties\
+    \ can be used:\n\n*   `Margin` – specifies the shorthand for setting all the margin\
+    \ properties in one single declaration\n*   `Margin-bottom` – specifies the bottom\
+    \ margin\n*   `Margin-top` – specifies the top margin\n*   `Margin-left` – specifies\
+    \ the left margin\n*   `Margin-right` – specifies the right margin\n\nNow we will\
+    \ look at how these properties are used.\n\n### Margin Property\n\nThis is a shorthand\
+    \ property that lets you set all properties for all four of the margin with a\
+    \ single declaration. The following example shows you how to set a margin round\
+    \ a paragraph:\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n\
+    \      <p style=\"margin: 15px; border:1px solid black;\">\n\n      all four margins\
+    \ will be 15px\n\n      </p>\n\n      <p style=\"margin:10px 2%; border:1px solid\
+    \ black;\">\n\n      top and bottom margin will be 10px, left and right margin\
+    \ will be 2% of the total width of the document.\n\n      </p>\n\n      <p style=\"\
+    margin: 10px 2% -10px; border:1px solid black;\">\n\n      top margin will be\
+    \ 10px, left and right margin will be 2% of the total width of the document, bottom\
+    \ margin will be -10px\n\n      </p>\n\n      <p style=\"margin: 10px 2% -10px\
+    \ auto; border:1px solid black;\">\n\n      top margin will be 10px, right margin\
+    \ will be 2% of the total width of the document, bottom margin will be -10px,\
+    \ left margin will be set by the browser\n\n      </p>\n\n   </body>\n\n</html>\n\
+    ```\n\nYou will see the following result -\n\nall four margins will be 15px\n\n\
+    top and bottom margin will be 10px, left and right margin will be 2% of the total\
+    \ width of the document.\n\ntop margin will be 10px, left and right margin will\
+    \ be 2% of the total width of the document, bottom margin will be -10px\n\ntop\
+    \ margin will be 10px, right margin will be 2% of the total width of the document,\
+    \ bottom margin will be -10px, left margin will be set by the browser\n\n### Margin-Bottom\n\
+    \nThis allows you set up the bottom margin using a value of auto, length or %\n\
+    \n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    margin-bottom: 15px; border:1px solid black;\">\n\n      This is a paragraph with\
+    \ a specified bottom margin.\n\n      </p>\n\n      <p style=\"margin-bottom:\
+    \ 5%; border:1px solid black;\">\n\n      This is another paragraph with a specified\
+    \ bottom margin in percent\n\n      </p>\n\n   </body>\n\n</html>\n```\n\nThe\
+    \ result will be -\n\nThis is a paragraph with a specified bottom margin\n\nThis\
+    \ is another paragraph with a specified bottom margin in percent\n\n### Margin-Top\n\
+    \nThis allows you to specify the top margin and uses a value of auto, length or\
+    \ %\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    margin-top: 15px; border:1px solid black;\">\n\n      This is a paragraph with\
+    \ a specified top margin\n\n      </p>\n\n      <p style=\"margin-top: 5%; border:1px\
+    \ solid black;\">\n\n      This is another paragraph with a specified top margin\
+    \ in percent\n\n      </p>\n\n   </body>\n\n</html>\n```\n\nThe result will be\
+    \ as follows -\n\nThis is a paragraph with a specified top margin\n"
+  raw: 'The result will
+
+
+    This example shows all borders in different colors.
+
+
+    This example shows all borders in green only.
+
+
+    Border-style
+
+
+    This property let you select one of these styles:
+
+
+    *   None – has no border at all
+
+
+    *   Solid – gives the border a solid line
+
+
+    *   Dotted – the border is made of dots
+
+
+    *   Dashed – the border is made of short lines
+
+
+    *   Double – this is two solid lines
+
+
+    *   Groove – make the border look like it has been carved into the page
+
+
+    *   Ridge – does the opposite of groove
+
+
+    *   Inset – the box looks embedded in the page
+
+
+    *   Outset – the box looks as though it is coming out of the page
+
+
+    *   Hidden – exactly the same as for None but with the exception of a border-conflict
+    resolution for table elements
+
+
+    As with color, you can change the style of each individual side of the border,
+    using these properties:
+
+
+    *   Border-bottom-style
+
+
+    *   Border-top-style
+
+
+    *   Border-left-style
+
+
+    *   Border-right-style
+
+
+    This example uses all four of these styles:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>.
+
+
+          <p style="border-width:4px; border-style:none;">
+
+
+          This is a border with a width of none.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:solid;">
+
+
+          This is a solid border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:dashed;">
+
+
+          This is a dashed border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:double;">
+
+
+          This is a double border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:groove;">
+
+
+          This is a groove border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:ridge">
+
+
+          This is a ridge border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:inset;">
+
+
+          This is an inset border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:outset;">
+
+
+          This is an outset border.
+
+
+          </p>
+
+
+          <p style="border-width:4px; border-style:hidden;">
+
+
+          This is a hidden border.
+
+
+          </p>
+
+
+          <p style="border-width:4px;border-top-style:solid;
+
+
+          border-bottom-style:dashed; border-left-style:groove; border-right-style:double;">
+
+
+          This is a border with four different styles.
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be -
+
+
+    This is a border with none width.
+
+
+    This is a solid border.
+
+
+    This is a dashed border.
+
+
+    This is a double border.
+
+
+    This is a groove border.
+
+
+    This is a ridge border.
+
+
+    This is an inset border.
+
+
+    This is an outset border.
+
+
+    This is a hidden border.
+
+
+    This is a border with four different styles.
+
+
+    Border-Width
+
+
+    This allows you to set the width of the border, using a value of length in pt.,
+    px or cm or you can set it to thick, medium or thin. You can change each side
+    of the border individually, using these properties:
+
+
+    *   border-bottom-width 
+
+
+    *   border-top-width 
+
+
+    *   border-left-width
+
+
+    *   border-right-width 
+
+
+    This example use all of these properties
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="border-width:4px; border-style:solid;">
+
+
+          This is a solid border with a width of 4px.
+
+
+          </p>
+
+
+          <p style="border-width:4pt; border-style:solid;">
+
+
+          This is a solid border whose width is 4pt.
+
+
+          </p>
+
+
+          <p style="border-width:thin; border-style:solid;">
+
+
+          This is a solid border whose width is thin.
+
+
+          </p>
+
+
+          <p style="border-width:medium; border-style:solid;">
+
+
+          This is a solid border whose width is medium;
+
+
+          </p>
+
+
+          <p style="border-width:thick; border-style:solid;">
+
+
+          This is a solid border whose width is thick.
+
+
+          </p>
+
+
+          <p style="border-bottom-width:4px;border-top-width:10px;
+
+
+          border-left-width: 2px;border-right-width:15px;border-style:solid;">
+
+
+          This is a border with four different widths.
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be:
+
+
+    This is a solid border whose width is 4px.
+
+
+    This is a solid border whose width is 4pt.
+
+
+    This is a solid border whose width is thin.
+
+
+    This is a solid border whose width is medium;
+
+
+    This is a solid border whose width is thick.
+
+
+    This is a border with four different widths.
+
+
+    Shorthand Border Properties
+
+
+    Using the shorthand border property, you can specify the style, color and width
+    of the lines using just one property instead of three. The following example uses
+    the border property to combine all three and you will find that this is the most
+    commonly used method of setting a border around an element:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="border:4px solid red;">
+
+
+    Another example:
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    # Chapter 13: Margins
+
+
+    The final chapter deals with the margin property, i.e. the space around the HTML
+    element. Martin property values are not inherited by child elements and it is
+    also possible that you can use negative value as a way of overlapping the content.
+
+
+    Remember – the vertical margins that are adjacent to one another (that is the
+    top and bottom margins) are going to collapse into each other so that distance
+    between each block is NOT the sum of the margins; instead it is the larger of
+    the margins or the same as one margin if both are the same size.
+
+
+    The following properties can be used:
+
+
+    *   Margin – specifies the shorthand for setting all the margin properties in
+    one single declaration
+
+
+    *   Margin-bottom – specifies the bottom margin
+
+
+    *   Margin-top – specifies the top margin
+
+
+    *   Margin-left – specifies the left margin
+
+
+    *   Margin-right – specifies the right margin
+
+
+    Now we will look at how these properties are used.
+
+
+    Margin Property
+
+
+    This is a shorthand property that lets you set all properties for all four of
+    the margin with a single declaration. The following example shows you how to set
+    a margin round a paragraph:
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="margin: 15px; border:1px solid black;">
+
+
+          all four margins will be 15px
+
+
+          </p>
+
+
+          <p style="margin:10px 2%; border:1px solid black;">
+
+
+          top and bottom margin will be 10px, left and right margin will be 2% of
+    the total width of the document.
+
+
+          </p>
+
+
+          <p style="margin: 10px 2% -10px; border:1px solid black;">
+
+
+          top margin will be 10px, left and right margin will be 2% of the total width
+    of the document, bottom margin will be -10px
+
+
+          </p>
+
+
+          <p style="margin: 10px 2% -10px auto; border:1px solid black;">
+
+
+          top margin will be 10px, right margin will be 2% of the total width of the
+    document, bottom margin will be -10px, left margin will be set by the browser
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    You will see the following result -
+
+
+    all four margins will be 15px
+
+
+    top and bottom margin will be 10px, left and right margin will be 2% of the total
+    width of the document.
+
+
+    top margin will be 10px, left and right margin will be 2% of the total width of
+    the document, bottom margin will be -10px
+
+
+    top margin will be 10px, right margin will be 2% of the total width of the document,
+    bottom margin will be -10px, left margin will be set by the browser
+
+
+    Margin-Bottom
+
+
+    This allows you set up the bottom margin using a value of auto, length or %
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="margin-bottom: 15px; border:1px solid black;">
+
+
+          This is a paragraph with a specified bottom margin.
+
+
+          </p>
+
+
+          <p style="margin-bottom: 5%; border:1px solid black;">
+
+
+          This is another paragraph with a specified bottom margin in percent
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be -
+
+
+    This is a paragraph with a specified bottom margin
+
+
+    This is another paragraph with a specified bottom margin in percent
+
+
+    Margin-Top
+
+
+    This allows you to specify the top margin and uses a value of auto, length or
+    %
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="margin-top: 15px; border:1px solid black;">
+
+
+          This is a paragraph with a specified top margin
+
+
+          </p>
+
+
+          <p style="margin-top: 5%; border:1px solid black;">
+
+
+          This is another paragraph with a specified top margin in percent
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be as follows -
+
+
+    This is a paragraph with a specified top margin'
+  toc: []
+  trans: "\n结果将是\n\n此示例展示了所有边框以不同颜色显示。\n\n此示例展示了所有边框仅以绿色显示。\n\n## 边框样式（Border-style）\n\
+    \n此属性允许你选择以下样式之一：\n\n*   None（无） – 完全没有边框\n*   Solid（实线） – 边框为实线\n*   Dotted（点线）\
+    \ – 边框由点组成\n*   Dashed（虚线） – 边框由短线段组成\n*   Double（双线） – 两条实线\n*   Groove（凹槽） –\
+    \ 使边框看起来像刻入页面\n*   Ridge（脊状） – 与凹槽效果相反\n*   Inset（内嵌） – 盒子看起来嵌入页面\n*   Outset（外凸）\
+    \ – 盒子看起来从页面凸出\n*   Hidden（隐藏） – 与 None 完全相同，但针对表格元素的边框冲突解决有例外\n\n与颜色一样，你可以使用以下属性单独更改边框每一侧的样式：\n\
+    \n*   `Border-bottom-style`\n*   `Border-top-style`\n*   `Border-left-style`\n\
+    *   `Border-right-style`\n\n此示例使用了所有这四种样式：\n\n```html\n<html>\n\n   <head>\n\n\
+    \   </head>\n\n   <body>.\n\n      <p style=\"border-width:4px; border-style:none;\"\
+    >\n\n      This is a border with a width of none.\n\n      </p>\n\n      <p style=\"\
+    border-width:4px; border-style:solid;\">\n\n      This is a solid border.\n\n\
+    \      </p>\n\n      <p style=\"border-width:4px; border-style:dashed;\">\n\n\
+    \      This is a dashed border.\n\n      </p>\n\n      <p style=\"border-width:4px;\
+    \ border-style:double;\">\n\n      This is a double border.\n\n      </p>\n\n\
+    \      <p style=\"border-width:4px; border-style:groove;\">\n\n      This is a\
+    \ groove border.\n\n      </p>\n\n      <p style=\"border-width:4px; border-style:ridge\"\
+    >\n\n      This is a ridge border.\n\n      </p>\n\n      <p style=\"border-width:4px;\
+    \ border-style:inset;\">\n\n      This is an inset border.\n\n      </p>\n\n \
+    \     <p style=\"border-width:4px; border-style:outset;\">\n\n      This is an\
+    \ outset border.\n\n      </p>\n\n      <p style=\"border-width:4px; border-style:hidden;\"\
+    >\n\n      This is a hidden border.\n\n      </p>\n\n      <p style=\"border-width:4px;border-top-style:solid;\n\
+    \n      border-bottom-style:dashed; border-left-style:groove; border-right-style:double;\"\
+    >\n\n      This is a border with four different styles.\n\n      </p>\n\n   </body>\n\
+    \n</html>\n```\n\n结果将是 -\n\n这是一个宽度为 none 的边框。\n\n这是一个实线边框。\n\n这是一个虚线边框。\n\n这是一个双线边框。\n\
+    \n这是一个凹槽边框。\n\n这是一个脊状边框。\n\n这是一个内嵌边框。\n\n这是一个外凸边框。\n\n这是一个隐藏边框。\n\n这是一个具有四种不同样式的边框。\n\
+    \n## 边框宽度（Border-Width）\n\n这允许你设置边框的宽度，使用 pt、px 或 cm 的长度值，或者你可以将其设置为 thick（粗）、medium（中）或\
+    \ thin（细）。你可以使用以下属性单独更改边框的每一侧：\n\n*   `border-bottom-width`\n*   `border-top-width`\n\
+    *   `border-left-width`\n*   `border-right-width`\n\n此示例使用了所有这些属性：\n\n```html\n\
+    <html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"border-width:4px;\
+    \ border-style:solid;\">\n\n      This is a solid border with a width of 4px.\n\
+    \n      </p>\n\n      <p style=\"border-width:4pt; border-style:solid;\">\n\n\
+    \      This is a solid border whose width is 4pt.\n\n      </p>\n\n      <p style=\"\
+    border-width:thin; border-style:solid;\">\n\n      This is a solid border whose\
+    \ width is thin.\n\n      </p>\n\n      <p style=\"border-width:medium; border-style:solid;\"\
+    >\n\n      This is a solid border whose width is medium;\n\n      </p>\n\n   \
+    \   <p style=\"border-width:thick; border-style:solid;\">\n\n      This is a solid\
+    \ border whose width is thick.\n\n      </p>\n\n      <p style=\"border-bottom-width:4px;border-top-width:10px;\n\
+    \n      border-left-width: 2px;border-right-width:15px;border-style:solid;\">\n\
+    \n      This is a border with four different widths.\n\n      </p>\n\n   </body>\n\
+    \n</html>\n```\n\n结果将是：\n\n这是一个宽度为 4px 的实线边框。\n\n这是一个宽度为 4pt 的实线边框。\n\n这是一个宽度为\
+    \ thin（细）的实线边框。\n\n这是一个宽度为 medium（中）的实线边框；\n\n这是一个宽度为 thick（粗）的实线边框。\n\n这是一个具有四种不同宽度的边框。\n\
+    \n## 边框简写属性（Shorthand Border Properties）\n\n使用简写边框属性，你可以仅用一个属性而不是三个来指定线条的样式、颜色和宽度。以下示例使用\
+    \ border 属性将三者合并，你会发现这是为元素设置边框最常用的方法：\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\
+    \n   <body>\n\n      <p style=\"border:4px solid red;\">\n\nAnother example:\n\
+    \n      </p>\n\n   </body>\n\n</html>\n```\n\n# 第 13 章：边距（Margins）\n\n最后一章讨论 margin\
+    \ 属性，即 HTML 元素周围的空间。Margin 属性值不会被子元素继承，并且你也可以使用负值来重叠内容。\n\n请记住——相邻的垂直边距（即上边距和下边距）会相互折叠，因此每个块之间的距离**不是**边距之和；而是取较大的边距，如果两者大小相同，则等于其中一个边距。\n\
+    \n可以使用以下属性：\n\n*   `Margin` – 指定在一个声明中设置所有边距属性的简写\n*   `Margin-bottom` – 指定下边距\n\
+    *   `Margin-top` – 指定上边距\n*   `Margin-left` – 指定左边距\n*   `Margin-right` – 指定右边距\n\
+    \n现在我们将看看这些属性是如何使用的。\n\n### 边距属性（Margin Property）\n\n这是一个简写属性，允许你通过单个声明设置所有四个边距的属性。以下示例展示了如何为段落设置边距：\n\
+    \n```html\n<html>\n\n   <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"\
+    margin: 15px; border:1px solid black;\">\n\n      all four margins will be 15px\n\
+    \n      </p>\n\n      <p style=\"margin:10px 2%; border:1px solid black;\">\n\n\
+    \      top and bottom margin will be 10px, left and right margin will be 2% of\
+    \ the total width of the document.\n\n      </p>\n\n      <p style=\"margin: 10px\
+    \ 2% -10px; border:1px solid black;\">\n\n      top margin will be 10px, left\
+    \ and right margin will be 2% of the total width of the document, bottom margin\
+    \ will be -10px\n\n      </p>\n\n      <p style=\"margin: 10px 2% -10px auto;\
+    \ border:1px solid black;\">\n\n      top margin will be 10px, right margin will\
+    \ be 2% of the total width of the document, bottom margin will be -10px, left\
+    \ margin will be set by the browser\n\n      </p>\n\n   </body>\n\n</html>\n```\n\
+    \n你将看到以下结果 -\n\n所有四个边距均为 15px\n\n上边距和下边距为 10px，左边距和右边距为文档总宽度的 2%。\n\n上边距为 10px，左边距和右边距为文档总宽度的\
+    \ 2%，下边距为 -10px\n\n上边距为 10px，右边距为文档总宽度的 2%，下边距为 -10px，左边距由浏览器设置\n\n### 下边距（Margin-Bottom）\n\
+    \n这允许你使用 auto、长度或百分比值设置下边距：\n\n```html\n<html>\n\n   <head>\n\n   </head>\n\n\
+    \   <body>\n\n      <p style=\"margin-bottom: 15px; border:1px solid black;\"\
+    >\n\n      This is a paragraph with a specified bottom margin.\n\n      </p>\n\
+    \n      <p style=\"margin-bottom: 5%; border:1px solid black;\">\n\n      This\
+    \ is another paragraph with a specified bottom margin in percent\n\n      </p>\n\
+    \n   </body>\n\n</html>\n```\n\n结果将是 -\n\n这是一个指定了下边距的段落。\n\n这是另一个以百分比指定了下边距的段落。\n\
+    \n### 上边距（Margin-Top）\n\n这允许你指定上边距，并使用 auto、长度或百分比值：\n\n```html\n<html>\n\n  \
+    \ <head>\n\n   </head>\n\n   <body>\n\n      <p style=\"margin-top: 15px; border:1px\
+    \ solid black;\">\n\n      This is a paragraph with a specified top margin\n\n\
+    \      </p>\n\n      <p style=\"margin-top: 5%; border:1px solid black;\">\n\n\
+    \      This is another paragraph with a specified top margin in percent\n\n  \
+    \    </p>\n\n   </body>\n\n</html>\n```\n\n结果如下 -\n\n这是一个指定了上边距的段落。\n\n"
+- fmt: "\nThis is another paragraph with a specified top margin in percent\n\n## `Margin-Left`\n\
+    \nThis property allows you to set the left margin and use a value of `%`, `auto`\
+    \ or `length`\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    margin-left: 15px; border:1px solid black;\">\n      This is a paragraph with\
+    \ a specified left margin\n      </p>\n      <p style=\"margin-left: 5%; border:1px\
+    \ solid black;\">\n      This is another paragraph with a specified top margin\
+    \ in percent\n      </p>\n   </body>\n</html>\n```\n\nThe result will be as follows\
+    \ -\n\nThis is a paragraph with a specified left margin\n\nThis is another paragraph\
+    \ with a specified top margin in percent\n\n## `Margin-Right`\n\nThis property\
+    \ allows you to specify the right margin, using a value of `auto`, `length` or\
+    \ `%`\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n      <p style=\"\
+    margin-right: 15px; border:1px solid black;\">\n      This is a paragraph with\
+    \ a specified right margin\n      </p>\n      <p style=\"margin-right: 5%; border:1px\
+    \ solid black;\">\n      This is another paragraph with a specified right margin\
+    \ in percent\n      </p>\n   </body>\n</html>\n```\n\nThe result will be shown\
+    \ as follows -\n\nThis is a paragraph with a specified right margin\n\nThis is\
+    \ another paragraph with a specified right margin in percent\n\n# Conclusion\n\
+    \nThank you for purchasing my book, I hope that you found it helpful. As you have\
+    \ seen, CSS is a truly amazing tool for anyone who wants to get into the world\
+    \ of web design. Although it is one of the easiest to understand and learn, I\
+    \ won’t promise that you can learn it overnight. Like any computer language, it\
+    \ takes time and it takes patience.\n\nYou need to be dedicated to learning it\
+    \ and, once you have, you must be prepared to keep up with all the latest developments.\
+    \ CSS isn’t a program you can learn, forget about and then pick up again a few\
+    \ months later. While you will still have the basics in your mind, in those few\
+    \ months, much may have happened and many changes may have been made. It is vital\
+    \ that you keep up with the changes and that you use CSS on a daily basis to ensure\
+    \ that you do not lose any of your newfound skills.\n\nCSS is a program that you\
+    \ learn, that you understand and that you live. Please may I ask a small favor\
+    \ of you - will you leave a review for me at Amazon.com? It isn’t only helpful\
+    \ to me; it is helpful to others who may decide to purchase my book.\n\nAs stated\
+    \ earlier, this is to reiterate that some of the example code that I have used\
+    \ in this book is attributed to www.tutorialspoint.com\n"
+  raw: 'This is another paragraph with a specified top margin in percent
+
+
+    Margin-Left
+
+
+    This property allows you to set the left margin and use a value of %, auto or
+    length
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="margin-left: 15px; border:1px solid black;">
+
+
+          This is a paragraph with a specified left margin
+
+
+          </p>
+
+
+          <p style="margin-left: 5%; border:1px solid black;">
+
+
+          This is another paragraph with a specified top margin in percent
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be as follows -
+
+
+    This is a paragraph with a specified left margin
+
+
+    This is another paragraph with a specified top margin in percent
+
+
+    Margin-Right
+
+
+    This property allows you to specify the right margin, using a value of auto, length
+    or %
+
+
+    <html>
+
+
+       <head>
+
+
+       </head>
+
+
+       <body>
+
+
+          <p style="margin-right: 15px; border:1px solid black;">
+
+
+          This is a paragraph with a specified right margin
+
+
+          </p>
+
+
+          <p style="margin-right: 5%; border:1px solid black;">
+
+
+          This is another paragraph with a specified right margin in percent
+
+
+          </p>
+
+
+       </body>
+
+
+    </html>
+
+
+    The result will be shown as follows -
+
+
+    This is a paragraph with a specified right margin
+
+
+    This is another paragraph with a specified right margin in percent
+
+
+    # Conclusion
+
+
+    Thank you for purchasing my book, I hope that you found it helpful. As you have
+    seen, CSS is a truly amazing tool for anyone who wants to get into the world of
+    web design. Although it is one of the easiest to understand and learn, I won’t
+    promise that you can learn it overnight. Like any computer language, it takes
+    time and it takes patience.
+
+
+    You need to be dedicated to learning it and, once you have, you must be prepared
+    to keep up with all the latest developments. CSS isn’t a program you can learn,
+    forget about and then pick up again a few months later. While you will still have
+    the basics in your mind, in those few months, much may have happened and many
+    changes may have been made. It is vital that you keep up with the changes and
+    that you use CSS on a daily basis to ensure that you do not lose any of your newfound
+    skills.
+
+
+    CSS is a program that you learn, that you understand and that you live. Please
+    may I ask a small favor of you - will you leave a review for me at Amazon.com?
+    It isn’t only helpful to me; it is helpful to others who may decide to purchase
+    my book.
+
+
+    As stated earlier, this is to reiterate that some of the example code that I have
+    used in this book is attributed to www.tutorialspoint.com'
+  toc: []
+  trans: "\n\n这是另一个段落，指定了百分比形式的上外边距。\n\n## `Margin-Left`\n\n该属性允许你设置左外边距，可以使用 `%`、`auto`\
+    \ 或 `length` 作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n     \
+    \ <p style=\"margin-left: 15px; border:1px solid black;\">\n      This is a paragraph\
+    \ with a specified left margin\n      </p>\n      <p style=\"margin-left: 5%;\
+    \ border:1px solid black;\">\n      This is another paragraph with a specified\
+    \ top margin in percent\n      </p>\n   </body>\n</html>\n```\n\n结果如下所示——\n\n\
+    这是一个指定了左外边距的段落\n\n这是另一个指定了百分比形式的上外边距的段落\n\n## `Margin-Right`\n\n该属性允许你指定右外边距，可以使用\
+    \ `auto`、`length` 或 `%` 作为值。\n\n```html\n<html>\n   <head>\n   </head>\n   <body>\n\
+    \      <p style=\"margin-right: 15px; border:1px solid black;\">\n      This is\
+    \ a paragraph with a specified right margin\n      </p>\n      <p style=\"margin-right:\
+    \ 5%; border:1px solid black;\">\n      This is another paragraph with a specified\
+    \ right margin in percent\n      </p>\n   </body>\n</html>\n```\n\n结果将如下所示——\n\
+    \n这是一个指定了右外边距的段落\n\n这是另一个指定了百分比形式的右外边距的段落\n\n# 结语\n\n感谢您购买我的书，希望它对您有所帮助。正如您所见，对于任何想要进入网页设计世界的人来说，CSS\
+    \ 都是一个真正令人惊叹的工具。尽管它是最容易理解和学习的语言之一，但我不能保证您能在一夜之间学会它。与任何计算机语言一样，它需要时间和耐心。\n\n您需要全身心投入学习，一旦掌握了它，就必须准备好跟上所有最新的发展。CSS\
+    \ 不是那种您可以学会、忘记、几个月后再重新捡起来的程序。虽然您脑海中仍会保留基础知识，但在那几个月里，可能已经发生了很多变化，许多改动也可能已经出现。至关重要的是，您要跟上这些变化，并每天使用\
+    \ CSS，以确保不会丢失任何新掌握的技能。\n\nCSS 是一种您需要学习、理解并融入日常生活的程序。请允许我向您提一个小请求——您能在 Amazon.com\
+    \ 上为我写一篇评论吗？这不仅对我有帮助，对可能决定购买我书的其他人也有帮助。\n\n如前所述，在此重申，我在本书中使用的一些示例代码归功于 www.tutorialspoint.com。\n\
+    \n"

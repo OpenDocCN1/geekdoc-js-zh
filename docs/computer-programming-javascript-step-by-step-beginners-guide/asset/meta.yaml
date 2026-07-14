@@ -1,0 +1,173 @@
+name: Computer programming Javascript： step-by-step beginner’s guide on how to start
+  to programm your first website using Javascript + practical exercises
+name_cn: Javascript 编程：分步初学者指南：使用Javascript创建第一个网站 + 实用练习
+slug: computer-programming-javascript-step-by-step-beginners-guide
+toc:
+- - '###'
+  - 示例 55
+- - '#'
+  - 第 5 章 表单
+- - '##'
+  - 表单结构
+- - '##'
+  - Action
+- - '##'
+  - Method
+- - '###'
+  - Get
+- - '###'
+  - Post
+- - '##'
+  - Id
+- - '##'
+  - 文本输入
+- - '###'
+  - '`type="text"`'
+- - '###'
+  - Name
+- - '###'
+  - Max length
+- - '##'
+  - 密码输入
+- - '###'
+  - '`type="password"`'
+- - '###'
+  - Name
+- - '##'
+  - 文本区域
+- - '##'
+  - 单选按钮
+- - '###'
+  - Name
+- - '###'
+  - Value
+- - '###'
+  - Checked
+- - '##'
+  - 复选框
+- - '###'
+  - '`type="checkbox"`'
+- - '###'
+  - Name
+- - '###'
+  - Value
+- - '###'
+  - Checked
+- - '##'
+  - 下拉列表
+- - '###'
+  - Name
+- - '###'
+  - '`<option>`'
+- - '###'
+  - Value
+- - '###'
+  - Selected
+- - '##'
+  - 文件输入框
+- - '###'
+  - '`type="file"`'
+- - '###'
+  - '`type="submit"`'
+- - '###'
+  - Name
+- - '###'
+  - Value
+- - '##'
+  - 重置按钮
+- - '###'
+  - '`type="reset"`'
+- - '##'
+  - 图片按钮
+- - '##'
+  - 按钮标签
+- - '##'
+  - Fieldset 元素
+- - '##'
+  - Legend 元素
+- - '##'
+  - Label 元素
+- - '#'
+  - 第 6 章 Iframe 与多媒体
+- - '##'
+  - Iframe
+- - '###'
+  - Iframe 嵌入：谷歌地图
+- - '###'
+  - Iframe 嵌入：YouTube
+- - '##'
+  - HTML5 中的多媒体
+- - '###'
+  - 视频元素：
+- - '####'
+  - Preload
+- - '####'
+  - Src
+- - '####'
+  - Poster
+- - '####'
+  - Width, height
+- - '####'
+  - Controls
+- - '####'
+  - Autoplay
+- - '####'
+  - Loop
+- - '###'
+  - 多种视频格式
+- - '###'
+  - 音频元素
+- - '####'
+  - Autoplay
+- - '####'
+  - Loop
+- - '###'
+  - Control
+- - '###'
+  - 多种音频格式
+- - '#'
+  - 第 7 章 文档对象模型
+- - '##'
+  - DOM 方法
+- - '###'
+  - getElementById()
+- - '###'
+  - getElementsByName()
+- - '###'
+  - getElementsByTagName()
+- - '###'
+  - innerHTML
+- - '###'
+  - innerText
+- - '###'
+  - 手动动画
+- - '###'
+  - 自动动画
+- - '###'
+  - 鼠标悬停效果
+- - '##'
+  - 字符串与数值数据类型
+- - '###'
+  - 示例
+- - '###'
+  - 练习 5：嗯……那你到底是什么？
+- - '##'
+  - 实验室活动解决方案：代码清单
+- - '###'
+  - 变量运算符
+- - '###'
+  - 复习问题
+- - '#'
+  - 第 16 章 window 对象
+- - '##'
+  - 什么是 `window` 对象？
+- - '##'
+  - 对 `window` 对象的默认引用
+- - '##'
+  - 所有声明的变量实际上都是 `window` 对象的属性
+- - '##'
+  - '`window` 对象的方法引用'
+- - '##'
+  - '`window` 对象的属性'
+- - '#'
+  - 第 17 章 Map 和 Set

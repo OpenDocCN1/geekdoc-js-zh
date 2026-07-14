@@ -1,0 +1,2 @@
++   [绝对初学者的计算机编程基础：从基础到高级的Python、PHP、C++、C#、HTML和CSS、Java、JavaScript、SQL逐步快速学习](README.md)
++   [绝对初学者的计算机编程基础：从基础到高级的Python、PHP、C++、C#、HTML和CSS、Java、JavaScript、SQL逐步快速学习](computer-programming-basics-for-absolute-beginners-learn-fro_0.md)

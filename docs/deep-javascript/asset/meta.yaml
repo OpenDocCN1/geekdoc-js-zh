@@ -1,0 +1,12 @@
+name: Deep JavaScript
+name_cn: 深入JavaScript
+slug: deep-javascript
+toc:
+- - '###'
+  - 2.4.1 `ToPrimitive()`
+- - '###'
+  - 2.4.2 `ToString()` 及相关操作
+- - '###'
+  - 2.4.3 `ToPropertyKey()`
+- - '###'
+  - 2.4.4 `ToNumeric()` 及相关操作

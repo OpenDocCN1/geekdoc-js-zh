@@ -1,0 +1,37 @@
+name: Beginning Modern JavaScript： A Step-By-Step Gentle Guide to Learn JavaScript
+  for Beginners (Code With Nathan)
+name_cn: 现代 JavaScript 入门指南
+slug: beginning-modern-javascript-a-step-by-step-gentle-guide-to-l
+toc:
+- - '#'
+  - 第 1 章：引言
+- - '##'
+  - 什么是 JavaScript？
+- - '#'
+  - 第 2 章：JavaScript 变量
+- - '##'
+  - 变量命名
+- - '##'
+  - 常量变量
+- - '##'
+  - 总结
+- - '#'
+  - 第 3 章：基本数据类型
+- - '##'
+  - JavaScript 中的字符串
+- - '##'
+  - JavaScript 中的数字（整数和浮点数）
+- - '#'
+  - 第 4 章：JavaScript 运算符
+- - '#'
+  - 第 5 章：控制流
+- - '#'
+  - 第 11 章：向导表单机制
+- - '#'
+  - 第 12 章：处理向导表单提交
+- - '#'
+  - 第 13 章：异步 JavaScript 与回调
+- - '#'
+  - 第 14 章：Promise
+- - '#'
+  - 第 17 章：为应用程序添加 CRUD 功能

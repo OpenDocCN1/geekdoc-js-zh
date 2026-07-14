@@ -1,0 +1,2834 @@
+<p><img src="image_rsrc294.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMidYMid meet" viewbox="0 0 1557 1920" height="100%" width="100%">
+<image xlink:href="image_rsrc294.jpg" height="1920" width="1557"></image>
+</svg>
+<p><span id="part0001.xhtml"></span></p>
+<p>Design Patterns in JavaScript</p>
+<p>Optimizing code structure for robust and scalable JS
+applications.</p>
+<p>By Hernando Abella</p>
+<p>Thank you for trusting our publishing house. If you can evaluate our
+work and give us a comment on amazon, we will appreciate it very
+much!</p>
+<p>This book may not be copied or printed without the permission of the
+author.</p>
+<p>Copyright 2023 Aluna Publishing House</p>
+<p>Contents</p>
+<p><a href="#part0001.xhtml_a27Z"
+class="class_s28X">Introduction</a></p>
+<p><a href="#part0001.xhtml_a280" class="class_s28X">What are Design
+Patterns?</a></p>
+<p><a href="#part0001.xhtml_a281" class="class_s28X">Types of Design
+Patterns</a></p>
+<p><a href="#part0001.xhtml_a282" class="class_s28X">Creational Design
+Patterns</a></p>
+<p><a href="#part0001.xhtml_a283" class="class_s28X">Factory
+Method</a></p>
+<p><a href="#part0001.xhtml_a284" class="class_s28X">Abstract
+Factory</a></p>
+<p><a href="#part0001.xhtml_a285" class="class_s28X">Builder</a></p>
+<p><a href="#part0001.xhtml_a286" class="class_s28X">Prototype</a></p>
+<p><a href="#part0001.xhtml_a287" class="class_s28X">Singleton</a></p>
+<p><a href="#part0001.xhtml_a288" class="class_s28X">Structural Design
+Patterns</a></p>
+<p><a href="#part0001.xhtml_a289" class="class_s28X">Adapter</a></p>
+<p><a href="#part0001.xhtml_a28A" class="class_s28X">Bridge</a></p>
+<p><a href="#part0001.xhtml_a28B" class="class_s28X">Composite</a></p>
+<p><a href="#part0001.xhtml_a28C" class="class_s28X">Decorator</a></p>
+<p><a href="#part0001.xhtml_a28D" class="class_s28X">Facade</a></p>
+<p><a href="#part0001.xhtml_a28E" class="class_s28X">Flyweight</a></p>
+<p><a href="#part0001.xhtml_a28F" class="class_s28X">Proxy</a></p>
+<p><a href="#part0001.xhtml_a28G" class="class_s28X">Behavioral Design
+Patterns</a></p>
+<p><a href="#part0001.xhtml_a28H" class="class_s28X">Chain of
+Responsability</a></p>
+<p><a href="#part0001.xhtml_a28J" class="class_s28X">Command</a></p>
+<p><a href="#part0001.xhtml_a28K" class="class_s28X">Iterator</a></p>
+<p><a href="#part0001.xhtml_a28M" class="class_s28X">Mediator</a></p>
+<p><a href="#part0001.xhtml_a28N" class="class_s28X">Memento</a></p>
+<p><a href="#part0001.xhtml_a28P" class="class_s28X">Observer</a></p>
+<p><a href="#part0001.xhtml_a28R" class="class_s28X">Visitor</a></p>
+<p><a href="#part0001.xhtml_a28S" class="class_s28X">Strategy</a></p>
+<p><a href="#part0001.xhtml_a28T" class="class_s28X">State</a></p>
+<p><a href="#part0001.xhtml_a28U" class="class_s28X">Template
+Method</a></p>
+<h1 class="heading_s1T" id="part0001.xhtml_a27Z">Introduction</h1>
+<p>Immerse yourself in the world of design patterns in JavaScript with
+this comprehensive guide that explores the practical application of the
+most relevant patterns. From the module pattern to the observer pattern,
+each section of this guide is carefully crafted to help you tackle
+development challenges with confidence and clarity. Designed for both
+beginners and experienced developers, this guide will provide you with
+the necessary <span id="part0001.xhtml_page_4"></span>tools to
+effectively understand and apply design patterns, thus elevating the
+quality and sustainability of your projects in JavaScript.</p>
+<h1 class="heading_s1X" id="part0001.xhtml_a280">What are Design
+Patterns?</h1>
+<p>Design patterns are proven and robust solutions for addressing common
+problems in software design and other contexts related to interaction
+and interfaces. These techniques provide structured and effective
+approaches to solving recurring challenges, promoting efficiency,
+reusability, and clarity in software development. </p>
+<p>A design pattern is considered a mature and consolidated solution for
+a specific design problem. To earn the recognition of being a pattern,
+it must exhibit certain key characteristics. Firstly, it must have <span
+id="part0001.xhtml_page_5"></span>demonstrated its effectiveness in
+solving similar problems in previous situations. Additionally, a pattern
+should be highly reusable, meaning it is applicable in various contexts
+and design challenges. </p>
+<h1 class="heading_s22" id="part0001.xhtml_a281">Types of Design
+Patterns</h1>
+<p>There are three main categories of design patterns, each focusing on
+a particular dimension of software design: </p>
+<p><span class="class_s28Y">Creational Patterns:</span> These patterns
+center around how class instances and objects are created. They offer
+flexible solutions for object creation in various scenarios. </p>
+<p><span class="class_s28Y">Structural Patterns:</span> Structural
+patterns deal with the composition of classes and objects <span
+id="part0001.xhtml_page_6"></span>to form larger structures. They
+facilitate the creation of efficient and flexible relationships between
+parts of the system. </p>
+<p><span class="class_s28Y">Behavioral Patterns:</span> These patterns
+focus on the interaction between objects and how they communicate with
+each other. They help define workflows and collaborative behaviors. </p>
+<h1 class="heading_s28" id="part0001.xhtml_a282">Creational Design
+Patterns</h1>
+<p>Creational design patterns focus on how objects are created,
+providing solutions for instantiating objects appropriately for the
+situation. They address design and complexity problems that can arise
+when creating objects in the most basic <span
+id="part0001.xhtml_page_7"></span>form. These patterns solve these
+problems by controlling the object creation in some way. </p>
+<p>Below are the most common creational design patterns in
+JavaScript: </p>
+<p><span class="class_s28Y">Factory Method: </span>Provides an interface
+for creating objects, allowing subclasses to alter the type of objects
+that will be created. It's useful when flexible and adaptable creation
+logic is needed. </p>
+<p><span class="class_s28Y">Abstract Factory: </span>Provides an
+interface for creating families of related or dependent objects without
+specifying their concrete classes. This promotes the creation of
+consistent and compatible objects. </p>
+<p><span class="class_s28Y">Builder: </span>Is used to construct an
+object step by step. It allows the creation of complex objects by
+specifying their type and content incrementally. </p>
+<p><span class="class_s28Y">Prototype: </span>Focuses on creating new
+objects by copying an existing object, called a prototype. It's useful
+when creating an object is more efficient by duplicating an existing
+object rather than building it from scratch. </p>
+<p><span class="class_s28Y">Singleton: </span>Ensures that a class has a
+single instance and provides a global point of access to that instance.
+It is used when a single instance of a class needs to coordinate actions
+throughout the system.  </p>
+<h1 class="heading_s2J" id="part0001.xhtml_a283">Factory Method</h1>
+<p>The Factory Method design pattern is a software design technique that
+relies on creating objects of a specific subtype through a common
+interface. This pattern is achieved by using an abstract creator class
+that contains both concrete and abstract methods. The concrete methods
+handle object creation, while the abstract methods are implemented by
+concrete subclasses. Depending on the subclass used, specific behavior
+is obtained. </p>
+<p><span class="class_s28Y">Example:</span> To better understand the
+Factory Method, let's consider a concrete example related <span
+id="part0001.xhtml_page_9"></span>to creating points in a
+two-dimensional plane. Imagine that we are developing an application
+that needs to work with points in Cartesian and polar coordinates. </p>
+<p>First, we create a class called Point that represents a point in the
+plane. This class has a constructor that takes the x and y coordinates
+and a toString() method that returns a readable representation of the
+point in the format (x, y). </p>
+<p><span class="class_s28Y">Step 1: Definition of the Point class
+representing a point in the plane:</span> </p>
+<p>// Point class representing a point in the plane </p>
+<p>class Point {</p>
+<p>constructor(x, y) {</p>
+<p>this.x = x;</p>
+<p>this.y = y;</p>
+<p>}</p>
+<p>// Method to obtain a readable representation of the point </p>
+<p>toString() {</p>
+<p>return `(${this.x}, ${this.y})`;</p>
+<p>}</p>
+<p>}</p>
+<p>In this step, we have created the Point class with a constructor that
+takes the x and y coordinates and a toString() method to obtain a
+readable representation of the point. </p>
+<p><span class="class_s28Y">Step 2: Implementation of the Factory Method
+in the PointFactory class:</span> </p>
+<p>// PointFactory class implementing the Factory Method </p>
+<p>class PointFactory {</p>
+<p>// Method to create a point in Cartesian coordinates </p>
+<p>static createCartesianPoint(x, y) {</p>
+<p>return new Point(x, y);</p>
+<p>}</p>
+<p>// Method to create a point in polar coordinates </p>
+<p>static createPolarPoint(rho, theta) {</p>
+<p>return new Point(rho * Math.cos(theta), rho * Math.sin(theta));</p>
+<p>}</p>
+<p>}</p>
+<p>In this step, we have created the PointFactory class that implements
+the Factory Method. This class contains two static methods:
+createCartesianPoint and createPolarPoint. The first one creates a point
+in Cartesian coordinates, <span id="part0001.xhtml_page_11"></span>and
+the second one creates a point in polar coordinates. </p>
+<p><span class="class_s28Y">Step 3: Example of using the Factory
+Method:</span> </p>
+<p>// Example of using the Factory Method </p>
+<p>const cartesianPoint = PointFactory.createCartesianPoint(5, 6); </p>
+<p>const polarPoint = PointFactory.createPolarPoint(5, Math.PI / 2);</p>
+<p>In this step, we have created two points using the PointFactory. One
+is created in Cartesian coordinates using createCartesianPoint, and the
+other is created in polar coordinates using createPolarPoint. </p>
+<p><span class="class_s28Y">Step 4: Printing the created
+points:</span> </p>
+<p>// Printing the created points </p>
+<p>console.log("Cartesian Point:", cartesianPoint.toString()); //
+Cartesian Point: (5, 6) </p>
+<p>console.log("Polar Point:", polarPoint.toString()); // Polar Point:
+(6.123233995736766e-17, 5)</p>
+<p>In this final step, we have printed the created points to verify the
+result. </p>
+<p><span class="class_s28Y">Final Code:</span></p>
+<p><span class="class_s28V">// Point class representing a point in the
+plane</span> </p>
+<p><span class="class_s28V">class Point {</span></p>
+<p><span class="class_s28V">constructor(x, y) {</span></p>
+<p><span class="class_s28V">this.x = x;</span></p>
+<p><span class="class_s28V">this.y = y;</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// Method to obtain a readable
+representation of the point</span> </p>
+<p><span class="class_s28V">toString() {</span></p>
+<p><span class="class_s28V">return `(${this.x}, ${this.y})`;</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// PointFactory class implementing the
+Factory Method</span> </p>
+<p><span class="class_s28V">class PointFactory {</span></p>
+<p><span class="class_s28V">// Method to create a point in Cartesian
+coordinates</span> </p>
+<p><span class="class_s28V">static createCartesianPoint(x, y)
+{</span></p>
+<p><span class="class_s28V">return new Point(x, y);</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// Method to create a point in polar
+coordinates</span> </p>
+<p><span class="class_s28V">static createPolarPoint(rho, theta)
+{</span></p>
+<p><span class="class_s28V">return new Point(rho * Math.cos(theta), rho
+* Math.sin(theta));</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// Example of using the Factory
+Method</span> </p>
+<p><span class="class_s28V">const cartesianPoint =
+PointFactory.createCartesianPoint(5, 6);</span> </p>
+<p><span class="class_s28V">const polarPoint =
+PointFactory.createPolarPoint(5, Math.PI / 2);</span> </p>
+<p><span class="class_s28V">// Printing the created points</span> </p>
+<p><span class="class_s28V">console.log("Cartesian Point:",
+cartesianPoint.toString()); // Cartesian Point: (5, 6)</span> </p>
+<p>console.log("Polar Point:", polarPoint.toString()); // Polar Point:
+(6.123233995736766e-17, 5)</p>
+<h1 class="heading_s55" id="part0001.xhtml_a284">Abstract Factory</h1>
+<p>In software design, the Abstract Factory design pattern is a
+technique used to create families or groups of related objects without
+specifying their concrete classes. This pattern provides a way to
+encapsulate a set of individual factories that share a common theme
+without needing <span id="part0001.xhtml_page_14"></span>to know the
+details of the exact classes of the objects that will be created. This
+promotes consistent and modular object creation, making code management
+and extension easier. </p>
+<p><span class="class_s28Y">Example:</span> To better understand the
+Abstract Factory pattern, let's consider an example related to preparing
+beverages, such as tea and coffee. </p>
+<p><span class="class_s28Y">Step 1:</span> We define base classes and
+subclasses to represent beverages, in this case, Beverage, Tea, and
+Coffee. </p>
+<p><span class="class_s28V">class Beverage {</span></p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">// Abstract method, to be implemented in
+subclasses</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">class Tea extends Beverage {</span> </p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">console.log('This is Tea');</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">class Coffee extends Beverage {</span> </p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">console.log('This is Coffee');</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28Y">Step 2:</span> We define the base factory
+class (BeverageFactory) and factory subclasses (TeaFactory and
+CoffeeFactory) that will be used to create specific beverages. </p>
+<p>class BeverageFactory {</p>
+<p>prepare(amount) {</p>
+<p>// Abstract method, to be implemented in subclasses</p>
+<p>}</p>
+<p>}</p>
+<p>class TeaFactory extends BeverageFactory { </p>
+<p>makeTea() {</p>
+<p>console.log('Tea is prepared');</p>
+<p>return new Tea();</p>
+<p>}</p>
+<p>}</p>
+<p>class CoffeeFactory extends BeverageFactory { </p>
+<p>makeCoffee() {</p>
+<p>console.log('Coffee is prepared');</p>
+<p>return new Coffee();</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3:</span> In this step, we create an
+instance of the tea factory (teaBeverageFactory), use it to create a tea
+beverage (tea), and finally, consume the tea beverage, which produces
+the expected console output. </p>
+<p>let teaBeverageFactory = new TeaFactory(); // Create a tea
+factory </p>
+<p>let tea = teaBeverageFactory.makeTea(); // Use the factory to create
+a tea beverage </p>
+<p>tea.consume(); // Consume the tea beverage </p>
+<p>// Expected Output:</p>
+<p>// Tea is prepared </p>
+<p>// This is Tea </p>
+<p><span class="class_s28Y">Final Code:</span></p>
+<p><span class="class_s28V">// Definition of base classes and
+subclasses</span> </p>
+<p><span class="class_s28V">class Beverage {</span></p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">// Abstract method, to be implemented in
+subclasses</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">class Tea extends Beverage {</span> </p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">console.log('This is Tea');</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">class Coffee extends Beverage {</span> </p>
+<p><span class="class_s28V">consume() {</span></p>
+<p><span class="class_s28V">console.log('This is Coffee');</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// Definition of the base factory class and
+factory subclasses</span> </p>
+<p><span class="class_s28V">class BeverageFactory {</span></p>
+<p><span class="class_s28V">prepare(amount) {</span></p>
+<p><span class="class_s28V">// Abstract method, to be implemented in
+subclasses</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span> <span
+class="class_s28V"> </span> </p>
+<p><span class="class_s28V">class TeaFactory extends BeverageFactory
+{</span> </p>
+<p><span class="class_s28V">makeTea() {</span></p>
+<p><span class="class_s28V">console.log('Tea is prepared');</span></p>
+<p><span class="class_s28V">return new Tea();</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">class CoffeeFactory extends BeverageFactory
+{</span> </p>
+<p><span class="class_s28V">makeCoffee() {</span></p>
+<p><span class="class_s28V">console.log('Coffee is
+prepared');</span></p>
+<p><span class="class_s28V">return new Coffee();</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">// Example of usage</span> </p>
+<p><span class="class_s28V">let teaBeverageFactory = new TeaFactory();
+// Create a tea factory</span> </p>
+<p><span class="class_s28V">let tea = teaBeverageFactory.makeTea(); //
+Use the factory to create a tea beverage</span> </p>
+<p><span class="class_s28V">tea.consume(); // Consume the tea
+beverage</span> </p>
+<p><span class="class_s28V">// Expected Output:</span></p>
+<p><span class="class_s28V">// Tea is prepared</span> </p>
+<p><span class="class_s28V">// This is Tea</span> </p>
+<h1 class="heading_s7X" id="part0001.xhtml_a285">Builder</h1>
+<p>Builds complex objects from simple objects. </p>
+<p>The constructor pattern is a design pattern designed to provide a
+flexible solution to various object creation problems in object-oriented
+programming. </p>
+<p><span class="class_s28Y">Example:</span> Let's use an example of a
+Person class to store information about a person. </p>
+<p><span class="class_s28Y">Step 1. Definition of the Person
+Class:</span> In this step, we define the Person class, which is the
+class we want to build in a structured way. The Person class has several
+properties like addressStreet, postalCode, city, companyName, position,
+and annualIncome, which store information about a person. It also has a
+toString() method that returns a readable string representation of the
+person's information.</p>
+<p><span class="class_s28V">class Person {</span></p>
+<p><span class="class_s28V">constructor() {</span></p>
+<p><span class="class_s28V">this.addressStreet = this.postalCode =
+this.city = "";</span></p>
+<p><span class="class_s28V">this.companyName = this.position =
+"";</span></p>
+<p><span class="class_s28V">this.annualIncome = 0;</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">toString() {</span></p>
+<p><span class="class_s28V">return (</span></p>
+<p><span class="class_s28V">`Person lives at</span></p>
+<p><span class="class_s28V">${this.addressStreet}, ${this.city},
+${this.postalCode}</span></p>
+<p><span class="class_s28V">and works at ${this.companyName}
+as</span></p>
+<p><span class="class_s28V">${this.position} earning
+${this.annualIncome}`</span></p>
+<p><span class="class_s28V">);</span></p>
+<p><span class="class_s28V">}</span></p>
+<p><span class="class_s28V">}</span></p>
+<p>In this step, we have created the Person class with a constructor
+that initializes the properties and a toString() method to obtain a
+readable representation of the person. </p>
+<p><span class="class_s28Y">Step 2.</span> <span
+class="class_s28Y">Creating Constructors:</span> In this step, we create
+three related constructors: PersonBuilder, WorkPersonBuilder, and
+AddressPersonBuilder.</p>
+<p><span class="class_s28Y">PersonBuilder:</span> This is the main
+constructor used to build Person objects. It has two methods, lives and
+works, to specify the person's address and job. The build() method
+finalizes the construction and returns the built Person object.</p>
+<p><span class="class_s28Y">WorkPersonBuilder:</span> Extends
+PersonBuilder and is used to specify the person's job. It has methods
+like at, asA, and earning to define the company name, position, and
+annual income of the person.</p>
+<p><span class="class_s28Y">AddressPersonBuilder:</span> Also extends
+PersonBuilder and is used to specify the person's address. It has
+methods like at, withPostcode, and in to define the address, postal
+code, and city.</p>
+<p>class PersonBuilder {</p>
+<p>constructor(person = new Person()) {</p>
+<p>this.person = person;</p>
+<p>}</p>
+<p>get lives() {</p>
+<p>return new AddressPersonBuilder(this.person);</p>
+<p>}</p>
+<p>get works() {</p>
+<p>return new WorkPersonBuilder(this.person);</p>
+<p>}</p>
+<p>build() {</p>
+<p>return this.person;</p>
+<p>}</p>
+<p>}</p>
+<p>class WorkPersonBuilder extends PersonBuilder {</p>
+<p>constructor(person) {</p>
+<p>super(person);</p>
+<p>}</p>
+<p>at(companyName) {</p>
+<p>this.person.companyName = companyName;</p>
+<p>return this;</p>
+<p>}</p>
+<p>asA(position) {</p>
+<p>this.person.position = position;</p>
+<p>return this;</p>
+<p>}</p>
+<p>earning(annualIncome) {</p>
+<p>this.person.annualIncome = annualIncome;</p>
+<p>return this;</p>
+<p>}</p>
+<p>}</p>
+<p>class AddressPersonBuilder extends PersonBuilder {</p>
+<p>constructor(person) {</p>
+<p>super(person);</p>
+<p>}</p>
+<p>at(addressStreet) {</p>
+<p>this.person.addressStreet = addressStreet;</p>
+<p>return this;</p>
+<p>}</p>
+<p>withPostcode(postalCode) {</p>
+<p>this.person.postalCode = postalCode;</p>
+<p>return this;</p>
+<p>}</p>
+<p>in(city) {</p>
+<p>this.person.city = city;</p>
+<p>return this;</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3. Using the Constructor:</span> In
+this step, we create an instance of PersonBuilder called personBuilder.
+Then, we use a method chain to build a Person instance in a structured
+way.</p>
+<p>let personBuilder = new PersonBuilder();</p>
+<p>let person = personBuilder.lives</p>
+<p>.at("123 Main Street")</p>
+<p>.in("New York")</p>
+<p>.withPostcode("10001")</p>
+<p>.works.at("ABC Inc.")</p>
+<p>.asA("Engineer")</p>
+<p>.earning(80000)</p>
+<p>.build();</p>
+<p><span class="class_s28Y">Step 4. Result and Output:</span> Finally,
+we can print the information of the built person using the toString()
+method of the Person class.</p>
+<p>console.log(person.toString());</p>
+<p>The expected output will be a string representation of the person's
+information, including details of address and job:</p>
+<p>Person lives at 123 Main Street, New York, 10001 and works at ABC
+Inc. as Engineer earning 80000</p>
+<p>Final Code:</p>
+<p>// Definition of the Person class to store personal and job-related
+information</p>
+<p>class Person {</p>
+<p>constructor() {</p>
+<p>this.addressStreet = this.postalCode = this.city = "";</p>
+<p>this.companyName = this.position = "";</p>
+<p>this.annualIncome = 0;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return (</p>
+<p>`Person lives at</p>
+<p>${this.addressStreet}, ${this.city}, ${this.postalCode}</p>
+<p>and works at ${this.companyName} as</p>
+<p>${this.position} earning ${this.annualIncome}`</p>
+<p>);</p>
+<p>}</p>
+<p>}</p>
+<p>// Base class PersonBuilder to build Person objects</p>
+<p>class PersonBuilder {</p>
+<p>constructor(person = new Person()) {</p>
+<p>this.person = person;</p>
+<p>}</p>
+<p>get lives() {</p>
+<p>return new AddressPersonBuilder(this.person);</p>
+<p>}</p>
+<p>get works() {</p>
+<p>return new WorkPersonBuilder(this.person);</p>
+<p>}</p>
+<p>build() {</p>
+<p>return this.person;</p>
+<p>}</p>
+<p>}</p>
+<p>// Constructor for Person's job details</p>
+<p>class WorkPersonBuilder extends PersonBuilder {</p>
+<p>constructor(person) {</p>
+<p>super(person);</p>
+<p>}</p>
+<p>at(companyName) {</p>
+<p>this.person.companyName = companyName;</p>
+<p>return this;</p>
+<p>}</p>
+<p>asA(position) {</p>
+<p>this.person.position = position;</p>
+<p>return this;</p>
+<p>}</p>
+<p>earning(annualIncome) {</p>
+<p>this.person.annualIncome = annualIncome;</p>
+<p>return this;</p>
+<p>}</p>
+<p>}</p>
+<p>// Constructor for Person's address details</p>
+<p>class AddressPersonBuilder extends PersonBuilder {</p>
+<p>constructor(person) {</p>
+<p>super(person);</p>
+<p>}</p>
+<p>at(addressStreet) {</p>
+<p>this.person.addressStreet = addressStreet;</p>
+<p>return this;</p>
+<p>}</p>
+<p>withPostcode(postalCode) {</p>
+<p>this.person.postalCode = postalCode;</p>
+<p>return this;</p>
+<p>}</p>
+<p>in(city) {</p>
+<p>this.person.city = city;</p>
+<p>return this;</p>
+<p>}</p>
+<p>}</p>
+<p>// Using the constructor pattern to create a Person object in a
+structured way</p>
+<p>let personBuilder = new PersonBuilder();</p>
+<p>let person = personBuilder.lives</p>
+<p>.at("123 Main Street")</p>
+<p>.in("New York")</p>
+<p>.withPostcode("10001")</p>
+<p>.works.at("ABC Inc.")</p>
+<p>.asA("Engineer")</p>
+<p>.earning(80000)</p>
+<p>.build();</p>
+<p>// Printing the details of the created Person</p>
+<p>console.log(person.toString());</p>
+<p>/*</p>
+<p>Expected Output:</p>
+<p>Person lives at</p>
+<p>123 Main Street, New York, 10001</p>
+<p>and works at ABC Inc. as</p>
+<p>Engineer earning 80000</p>
+<p>*/</p>
+<h1 class="heading_sDF" id="part0001.xhtml_a286">Prototype</h1>
+<p>Creates new objects based on existing objects.</p>
+<p>The prototype pattern is a creational design pattern in software
+development. It is used when the type of objects to create is determined
+by a prototype instance, which is cloned to produce new objects.</p>
+<p><span class="class_s28Y">Example:</span> We will use the example of a
+car.</p>
+<p><span class="class_s28Y">Step 1:</span> Definition of the Car Class
+(Prototype)</p>
+<p>class Car {</p>
+<p>constructor(name, model) {</p>
+<p>this.name = name;</p>
+<p>this.model = model;</p>
+<p>}</p>
+<p>// ... (Class methods)</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2: </span>Method to set the car's
+name</p>
+<p>// Method to set the car's name</p>
+<p>setCarName(name) {</p>
+<p>this.name = name;</p>
+<p>console.log(`Car name adjusted to: ${this.name}`);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3</span>: Method to clone the car
+(create a copy)</p>
+<p>// Method to clone the car (create a copy)</p>
+<p>clone() {</p>
+<p>// Create a new Car instance with the same attributes</p>
+<p>return new Car(this.name, this.model);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 4: </span>Using the Prototype
+Pattern</p>
+<p>// Using the Prototype Pattern</p>
+<p>const originalCar = new Car('Audi', 'A3');</p>
+<p>// Clone the original car to create a new instance</p>
+<p>const clonedCar = originalCar.clone();</p>
+<p>clonedCar.setCarName('BMW');</p>
+<p><span class="class_s28Y">Step 5: </span>Verify that the cars are
+different</p>
+<p>// Verify that the cars are different</p>
+<p>console.log('Original Car:', originalCar.name,
+originalCar.model);</p>
+<p>console.log('Cloned Car:', clonedCar.name, clonedCar.model);</p>
+<p>This code demonstrates how to use the Prototype Pattern to create a
+copy of an existing object (originalCar) and adjust its attributes
+(name) without affecting the original object. In the end, it verifies
+that the two cars are different, confirming that the clone worked
+correctly.</p>
+<p>Final Code:</p>
+<p>// Definition of the Car Class (Prototype)</p>
+<p>class Car {</p>
+<p>constructor(name, model) {</p>
+<p>this.name = name;</p>
+<p>this.model = model;</p>
+<p>}</p>
+<p>// Method to set the car's name</p>
+<p>setCarName(name) {</p>
+<p>this.name = name;</p>
+<p>console.log(`Car name adjusted to: ${this.name}`);</p>
+<p>}</p>
+<p>// Method to clone the car (create a copy)</p>
+<p>clone() {</p>
+<p>// Create a new Car instance with the same attributes</p>
+<p>return new Car(this.name, this.model);</p>
+<p>}</p>
+<p>}</p>
+<p>// Using the Prototype Pattern</p>
+<p>const originalCar = new Car('Audi', 'A3');</p>
+<p>// Clone the original car to create a new instance</p>
+<p>const clonedCar = originalCar.clone();</p>
+<p>clonedCar.setCarName('BMW');</p>
+<p>// Verify that the cars are different</p>
+<p>console.log('Original Car:', originalCar.name,
+originalCar.model);</p>
+<p>console.log('Cloned Car:', clonedCar.name, clonedCar.model);</p>
+<p>// Expected Output:</p>
+<p>// Car name adjusted to: BMW</p>
+<p>// Original Car: Audi A3</p>
+<p>// Cloned Car: BMW A3</p>
+<h1 class="heading_sFH" id="part0001.xhtml_a287">Singleton</h1>
+<p>Ensures that there is only one object created for a particular
+class.</p>
+<p>In software engineering, the singleton pattern is a software design
+pattern that restricts the instantiation of a class to a "single"
+instance. This is useful when you need exactly one object to coordinate
+actions throughout the system.</p>
+<p>Example:</p>
+<p><span class="class_s28Y">Step 1:</span> <span
+class="class_s28Y">Singleton Class Definition:</span></p>
+<p>class Singleton {</p>
+<p>constructor() {</p>
+<p>// ...</p>
+<p>}</p>
+<p>// ...</p>
+<p>}</p>
+<p>Step 2: Check if an instance of the class already exists:</p>
+<p>const instance = this.constructor.instance;</p>
+<p>if (instance) {</p>
+<p>return instance;</p>
+<p>}</p>
+<p>In this step, within the constructor of the Singleton class, we check
+if an instance of the class already exists using
+this.constructor.instance. If an instance exists, we return that
+instance instead of creating a new one.</p>
+<p><span class="class_s28Y">Step 3:</span> <span
+class="class_s28Y">Create instances of the Singleton class:</span></p>
+<p>let s1 = new Singleton();</p>
+<p>let s2 = new Singleton();</p>
+<p>In this step, we create two instances, s1 and s2, of the Singleton
+class.</p>
+<p>Step 4: Check if s1 and s2 are the same instance:</p>
+<p>console.log('Are they the same? ' + (s1 === s2));</p>
+<p>Here, we check if s1 and s2 are the same instance using (s1 === s2)
+and display the result in the console.</p>
+<p><span class="class_s28Y">Step 5: Call the say() method:</span> In
+this final step, we call the say() method of the s1 instance, which will
+print "Saying..." to the console.</p>
+<p>s1.say();</p>
+<p><span class="class_s28Y">Final Code:</span> In this last step, we
+call the say() method of the s1 instance, which will print "Saying..."
+to the console.</p>
+<p>// Singleton class definition</p>
+<p>class Singleton {</p>
+<p>constructor() {</p>
+<p>// Check if an instance of the class already exists</p>
+<p>const instance = this.constructor.instance;</p>
+<p>if (instance) {</p>
+<p>// If it exists, return the existing instance</p>
+<p>return instance;</p>
+<p>}</p>
+<p>// If no instance exists, store this as the unique instance</p>
+<p>this.constructor.instance = this;</p>
+<p>}</p>
+<p>// Method to display a message</p>
+<p>say() {</p>
+<p>console.log('Saying...');</p>
+<p>}</p>
+<p>}</p>
+<p>// Create instances of the Singleton class</p>
+<p>let s1 = new Singleton();</p>
+<p>let s2 = new Singleton();</p>
+<p>// Check if s1 and s2 are the same instance</p>
+<p>console.log('Are they the same? ' + (s1 === s2));</p>
+<p>// Call the say() method of the s1 instance</p>
+<p>s1.say();</p>
+<p>// Expected Output:</p>
+<p>// Are they the same? true</p>
+<p>// Saying...</p>
+<p>These creational patterns are valuable tools for addressing object
+creation problems efficiently and structurally in JavaScript projects.
+Each one has its specific purpose and application, making them essential
+resources in software design.</p>
+<h1 class="heading_sHA" id="part0001.xhtml_a288">Structural Design
+Patterns</h1>
+<p>Structural design patterns focus on the composition of classes and
+objects to form more complex structures. They use inheritance and
+interface composition to create efficient and flexible relationships
+between entities.</p>
+<p>Below are the most common structural design patterns in
+JavaScript:</p>
+<p><span class="class_s28Y">Adapter:</span> Allows incompatible
+interfaces to work together. It converts the interface of one class into
+another that the client expects. It's useful when you need objects with
+different interfaces to collaborate.</p>
+<p><span class="class_s28Y">Bridge:</span> Separates an abstraction from
+its implementation, allowing them to evolve <span
+id="part0001.xhtml_page_37"></span>independently. It's useful when you
+want to avoid a permanent bond between an abstraction and its
+implementation.</p>
+<p><span class="class_s28Y">Composite:</span> Composes objects into tree
+structures to represent part-whole hierarchies. It allows treating
+individual objects and object compositions uniformly.</p>
+<p><span class="class_s28Y">Decorator:</span> Dynamically adds
+functionality to existing objects without modifying their structure.
+It's useful when you want to extend an object's functionality
+flexibly.</p>
+<p><span class="class_s28Y">Facade:</span> Provides a simplified
+interface for a set of interfaces in a subsystem. It makes using complex
+systems easier by providing a more user-friendly interface.</p>
+<p><span class="class_s28Y">Flyweight:</span> Minimizes memory or disk
+storage usage by sharing as much as possible with similar objects. It's
+useful when you need to manage a large number of objects with efficient
+resource usage.</p>
+<p><span class="class_s28Y">Proxy:</span> Provides a substitute or
+placeholder for another object to control access to it. It can be used
+to add additional functionality like access control or lazy loading.</p>
+<h1 class="heading_sHN" id="part0001.xhtml_a289">Adapter</h1>
+<p>Enables classes with incompatible interfaces to collaborate by
+adapting their own interface to fit around the existing class. This is
+particularly useful when we need objects with different interfaces to
+work together without altering their source code.</p>
+<p>Example:</p>
+<p><span class="class_s28Y">1. Definition of Incompatible
+Interfaces:</span> In this example, we have two calculator interfaces:
+Calculator1 (old) and Calculator2 (new).</p>
+<p>class Calculator1 {</p>
+<p>constructor() {</p>
+<p>this.operations = function(value1, value2, operation) {</p>
+<p>// Implementation of the old calculator</p>
+<p>switch(operation) {</p>
+<p>case 'sum':</p>
+<p>return value1 + value2;</p>
+<p>case 'subtract':</p>
+<p>return value1 - value2;</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>class Calculator2 {</p>
+<p>constructor() {</p>
+<p>this.add = function(value1, value2) {</p>
+<p>// Implementation of the new calculator</p>
+<p>return value1 + value2;</p>
+<p>};</p>
+<p>this.subtract = function(value1, value2) {</p>
+<p>// Implementation of the new calculator</p>
+<p>return value1 - value2;</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">2. Creating an Adapter:</span> We create a
+CalcAdapter class that will act as an adapter between the two calculator
+interfaces. The adapter wraps the new interface (Calculator2) and
+provides methods for the required operations.</p>
+<p>class CalcAdapter {</p>
+<p>constructor() {</p>
+<p>const cal2 = new Calculator2();</p>
+<p>this.operations = function(value1, value2, operation) {</p>
+<p>switch(operation) {</p>
+<p>case 'sum':</p>
+<p>return cal2.add(value1, value2);</p>
+<p>case 'subtract':</p>
+<p>return cal2.subtract(value1, value2);</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">3. Using the Adapter:</span> Now, we can use
+the CalcAdapter to perform operations on the new interface (Calculator2)
+without modifying its code. This makes transitioning from the old
+calculator to the new one easier.</p>
+<p>// Create an instance of the adapter</p>
+<p>const calcAdapter = new CalcAdapter();</p>
+<p>// Use the adapter to perform a subtraction operation</p>
+<p>console.log(calcAdapter.operations(10, 55, 'subtract'));</p>
+<p>Final Code:</p>
+<p>// Definition of the Old Calculator Class</p>
+<p>class OldCalculator {</p>
+<p>constructor() {</p>
+<p>this.operations = function(value1, value2, operation) {</p>
+<p>switch(operation) {</p>
+<p>case 'add':</p>
+<p>return value1 + value2;</p>
+<p>case 'subtract':</p>
+<p>return value1 - value2;</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the New Calculator Class</p>
+<p>class NewCalculator {</p>
+<p>constructor() {</p>
+<p>this.add = function(value1, value2) {</p>
+<p>return value1 + value2;</p>
+<p>};</p>
+<p>this.subtract = function(value1, value2) {</p>
+<p>return value1 - value2;</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the Adapter Class</p>
+<p>class CalculatorAdapter {</p>
+<p>constructor() {</p>
+<p>// Create an instance of the New Calculator</p>
+<p>const newCalculator = new NewCalculator();</p>
+<p>// Define the operations method that will use the New Calculator</p>
+<p>this.operations = function(value1, value2, operation) {</p>
+<p>switch(operation) {</p>
+<p>case 'add':</p>
+<p>return newCalculator.add(value1, value2);</p>
+<p>case 'subtract':</p>
+<p>return newCalculator.subtract(value1, value2);</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>// Create an instance of the Calculator Adapter</p>
+<p>const calculatorAdapter = new CalculatorAdapter();</p>
+<p>// Use the Calculator Adapter to perform a subtraction operation</p>
+<p>console.log(calculatorAdapter.operations(10, 55, 'subtract')); //
+-45</p>
+<p>console.log(calculatorAdapter.operations(10, 55, 'add')); // 65</p>
+<h1 class="heading_s7X" id="part0001.xhtml_a28A">Bridge</h1>
+<p>The Bridge design pattern is used to separate the abstraction from
+the implementation, allowing both to evolve independently. In other
+words, the Bridge pattern is used when you want to avoid a tight
+connection between an abstract class and its concrete classes, enabling
+them to evolve independently without affecting each other.</p>
+<p>Example:</p>
+<p>In this example, we will create classes for rendering geometric
+shapes. We will use two renderer classes: VectorRenderer and
+RasterRenderer. Then, we will create an abstract class Shape and a
+Circle class that inherits from Shape. The key to the Bridge pattern is
+that Shape has a reference to a renderer and delegates the rendering
+task to the concrete renderer.</p>
+<p><span class="class_s28Y">Step 1. Definition of Renderer
+Classes:</span> In this step, we create the VectorRenderer and
+RasterRenderer classes, representing different rendering methods.</p>
+<p>class VectorRenderer {</p>
+<p>renderCircle(radius) {</p>
+<p>console.log(`Drawing a circle of radius ${radius}`);</p>
+<p>}</p>
+<p>}</p>
+<p>class RasterRenderer {</p>
+<p>renderCircle(radius) {</p>
+<p>console.log(`Drawing pixels for circle of radius ${radius}`);</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2. Definition of Abstract Class
+Shape:</span> In this step, we create the abstract class Shape that will
+act as our abstraction. This class has a renderer attribute that is a
+reference to the renderer we will use to draw the shape.</p>
+<p>class Shape {</p>
+<p>constructor(renderer) {</p>
+<p>this.renderer = renderer;</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3. Definition of Circle Class:</span>
+In this step, we create the Circle class that inherits from Shape. The
+Circle class has a radius attribute representing the circle's
+radius.</p>
+<p>class Circle extends Shape {</p>
+<p>constructor(renderer, radius) {</p>
+<p>super(renderer);</p>
+<p>this.radius = radius;</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 4. Implementation of the draw
+Method:</span> In the Circle class, we implement the draw method. This
+method delegates the rendering task to the concrete renderer
+(VectorRenderer or RasterRenderer) through the this.renderer
+reference.</p>
+<p>draw() {</p>
+<p>this.renderer.renderCircle(this.radius);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 5. Creating Instances of Renderers and
+Circle:</span> In this step, we create instances of the renderer classes
+VectorRenderer and RasterRenderer. Then, we create an instance of <span
+id="part0001.xhtml_page_46"></span>Circle named circle and provide it
+with the vector renderer and a radius of 5.</p>
+<p>let raster = new RasterRenderer();</p>
+<p>let vector = new VectorRenderer();</p>
+<p>let circle = new Circle(vector, 5);</p>
+<p><span class="class_s28Y">Step 6. Drawing the Circle and Changing Its
+Size:</span> We call the draw method on the circle instance, resulting
+in the printing of the corresponding message for the vector renderer.
+Then, we change the size of the circle by calling the resize method,
+doubling its radius.</p>
+<p>circle.draw();</p>
+<p>circle.resize(2);</p>
+<p><span class="class_s28Y">Step 7. Drawing the Circle After Size
+Change:</span> We call the draw method again on the circle instance,
+resulting in the updated message after the size change.</p>
+<p>circle.draw();</p>
+<p>Final Code:</p>
+<p>// Definition of Renderer Classes</p>
+<p>class VectorRenderer {</p>
+<p>renderCircle(radius) {</p>
+<p>console.log(`Drawing a circle of radius ${radius}`);</p>
+<p>}</p>
+<p>}</p>
+<p>class RasterRenderer {</p>
+<p>renderCircle(radius) {</p>
+<p>console.log(`Drawing pixels for circle of radius ${radius}`);</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the Abstract Class `Shape`</p>
+<p>class Shape {</p>
+<p>constructor(renderer) {</p>
+<p>this.renderer = renderer;</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the `Circle` Class</p>
+<p>class Circle extends Shape {</p>
+<p>constructor(renderer, radius) {</p>
+<p>super(renderer);</p>
+<p>this.radius = radius;</p>
+<p>}</p>
+<p>// Implementation of the `draw` Method</p>
+<p>draw() {</p>
+<p>this.renderer.renderCircle(this.radius);</p>
+<p>}</p>
+<p>resize(factor) {</p>
+<p>this.radius *= factor;</p>
+<p>}</p>
+<p>}</p>
+<p>// Creating Instances of Renderers and Circle</p>
+<p>let raster = new RasterRenderer();</p>
+<p>let vector = new VectorRenderer();</p>
+<p>let circle = new Circle(vector, 5);</p>
+<p>// Drawing the Circle and Changing Its Size</p>
+<p>circle.draw();</p>
+<p>circle.resize(2);</p>
+<p>// Drawing the Circle After Size Change</p>
+<p>circle.draw();</p>
+<p>// Expected Output:</p>
+<p>// Drawing a circle of radius 5</p>
+<p>// Drawing a circle of radius 10</p>
+<h1 class="heading_sRB" id="part0001.xhtml_a28B">Composite</h1>
+<p>The Composite pattern is used to compose objects into tree structures
+to represent object <span
+id="part0001.xhtml_page_49"></span>hierarchies. This allows individual
+objects and compositions of objects to be treated in the same way,
+simplifying their manipulation.</p>
+<p>Example:</p>
+<p><span class="class_s28Y">1. Class Definitions:</span> In this
+example, we create two classes: Employee to represent individual
+employees and EmployeeGroup to represent groups of employees.</p>
+<p>class Employee {</p>
+<p>constructor(name, role) {</p>
+<p>this.name = name;</p>
+<p>this.role = role;</p>
+<p>}</p>
+<p>print() {</p>
+<p>console.log("Name: " + this.name + ", Role: " + this.role);</p>
+<p>}</p>
+<p>}</p>
+<p>class EmployeeGroup {</p>
+<p>constructor(name, composite = []) {</p>
+<p>this.name = name;</p>
+<p>this.composite = composite;</p>
+<p>}</p>
+<p>print() {</p>
+<p>console.log("Group: " + this.name);</p>
+<p>this.composite.forEach(emp =&gt; {</p>
+<p>emp.print();</p>
+<p>})</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">2. Creating Employees and Groups:</span> We
+create instances of individual employees and then group them into an
+EmployeeGroup.</p>
+<p>// Creating individual employees</p>
+<p>let hernando = new Employee("Hernando", "Developer");</p>
+<p>let albert = new Employee("Albert", "Developer");</p>
+<p>// Creating an employee group and adding individual employees</p>
+<p>let developerGroup = new EmployeeGroup("Developers", [hernando,
+albert]);</p>
+<p>// Creating individual employees</p>
+<p>let hernando = new Employee("Hernando", "Developer");</p>
+<p>let albert = new Employee("Albert", "Developer");</p>
+<p>// Creating an employee group and adding individual employees</p>
+<p>let developerGroup = new EmployeeGroup("Developers", [hernando,
+albert]);</p>
+<p><span class="class_s28Y">3. Printing the Hierarchical
+Structure:</span> We use the print() method to display the hierarchical
+structure, which includes both individual employees and employee
+groups.</p>
+<p>// Print the hierarchical structure</p>
+<p>developerGroup.print();</p>
+<p>Final Code:</p>
+<p>class Employee {</p>
+<p>constructor(name, role) {</p>
+<p>this.name = name;</p>
+<p>this.role = role;</p>
+<p>}</p>
+<p>print() {</p>
+<p>console.log(`Name: ${this.name}, Role: ${this.role}`);</p>
+<p>}</p>
+<p>}</p>
+<p>class EmployeeGroup {</p>
+<p>constructor(name, composite = []) {</p>
+<p>this.name = name;</p>
+<p>this.composite = composite;</p>
+<p>}</p>
+<p>print() {</p>
+<p>console.log(`Group: ${this.name}`);</p>
+<p>this.composite.forEach(emp =&gt; {</p>
+<p>emp.print();</p>
+<p>})</p>
+<p>}</p>
+<p>}</p>
+<p>// Creating individual employees</p>
+<p>let hernando = new Employee("Hernando", "Developer");</p>
+<p>let albert = new Employee("Albert", "Developer");</p>
+<p>// Creating an employee group and adding individual employees</p>
+<p>let developerGroup = new EmployeeGroup("Developers", [hernando,
+albert]);</p>
+<p>// Print the hierarchical structure</p>
+<p>developerGroup.print();</p>
+<p>// Expected Output:</p>
+<p>// Group: Developers</p>
+<p>// Name: Hernando, Role: Developer</p>
+<p>// Name: Albert, Role: Developer</p>
+<h1 class="heading_sTM" id="part0001.xhtml_a28C">Decorator</h1>
+<p>The decorator pattern allows dynamically adding or overriding
+behaviors to an individual object without affecting other objects of the
+same class. It is especially useful when you want to extend the
+capabilities of an object without creating subclasses.</p>
+<p>Example:</p>
+<p>1. Class Definitions: In this example, we create the Form class as
+the base and Circle as a concrete shape we want to decorate. We also
+create a class called ColoredShape that acts as a decorator to add
+colors to shapes.</p>
+<p>class Form {</p>
+<p>constructor(color) {</p>
+<p>this.color = color;</p>
+<p>}</p>
+<p>}</p>
+<p>class Circle extends Form {</p>
+<p>constructor(radius = 0) {</p>
+<p>super();</p>
+<p>this.radius = radius;</p>
+<p>}</p>
+<p>resize(factor) {</p>
+<p>this.radius *= factor;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `A circle of radius ${this.radius}`;</p>
+<p>}</p>
+<p>}</p>
+<p>class ColoredShape extends Form {</p>
+<p>constructor(shape, color) {</p>
+<p>super();</p>
+<p>this.shape = shape;</p>
+<p>this.color = color;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `${this.shape.toString()}, colored ${this.color}`;</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">2. Using the Decorator:</span> We create an
+instance of a base circle and then decorate that circle with a red color
+using the ColoredShape class.</p>
+<p>// Create a base circle</p>
+<p>let circle = new Circle(2);</p>
+<p>console.log(circle.toString()); // Output: A circle of radius 2</p>
+<p>// Decorate the circle with red color</p>
+<p>let redCircle = new ColoredShape(circle, "red");</p>
+<p>console.log(redCircle.toString()); // Output: A circle of radius 2,
+colored red</p>
+<p>Final Code:</p>
+<p>// Base class for all shapes</p>
+<p>class Form {</p>
+<p>constructor(color) {</p>
+<p>this.color = color;</p>
+<p>}</p>
+<p>}</p>
+<p>// Concrete class for a circle that inherits from Form</p>
+<p>class Circle extends Form {</p>
+<p>constructor(radius = 0) {</p>
+<p>super();</p>
+<p>this.radius = radius;</p>
+<p>}</p>
+<p>resize(factor) {</p>
+<p>this.radius *= factor;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `A circle of radius ${this.radius}`;</p>
+<p>}</p>
+<p>}</p>
+<p>// Decorator class that adds color to an existing shape</p>
+<p>class ColoredShape extends Form {</p>
+<p>constructor(shape, color) {</p>
+<p>super();</p>
+<p>this.shape = shape;</p>
+<p>this.color = color;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `${this.shape.toString()}, colored ${this.color}`;</p>
+<p>}</p>
+<p>}</p>
+<p>// Create a base circle</p>
+<p>let circle = new Circle(2);</p>
+<p>console.log(circle.toString()); // Output: A circle of radius 2</p>
+<p>// Decorate the circle with red color</p>
+<p>let redCircle = new ColoredShape(circle, "red");</p>
+<p>console.log(redCircle.toString()); // Output: A circle of radius 2,
+colored red</p>
+<h1 class="heading_sW0" id="part0001.xhtml_a28D">Facade</h1>
+<p>The facade pattern is a commonly used software design pattern in
+object-oriented programming. Analogous to a facade in architecture, a
+facade is an object that serves as a front-end interface that masks more
+complex underlying or <span
+id="part0001.xhtml_page_58"></span>structural code. It provides a
+simplified interface for accessing a set of related subsystems or
+classes, making interaction with the system easier without needing to
+know the internal details.</p>
+<p><span class="class_s28Y">Example:</span> In this example, we will
+simulate the operation of a computer using the facade pattern. The
+computer consists of various components such as CPU, memory, and hard
+drive. The ComputerFacade will simplify the interaction with these
+components.</p>
+<p><span class="class_s28Y">We define classes for computer
+components:</span> CPU, Memory, and HardDrive. These classes have
+methods to perform various operations, such as freezing the CPU, loading
+data into memory, and reading from the hard drive.</p>
+<p>class CPU {</p>
+<p>freeze() { console.log("CPU Frozen...") }</p>
+<p>jump(position) { console.log("Jump to position " + position) }</p>
+<p>execute() { console.log("Execute CPU...") }</p>
+<p>}</p>
+<p>class Memory {</p>
+<p>load(position, data) { console.log("Load data at position " +
+position + ": " + data) }</p>
+<p>}</p>
+<p>class HardDrive {</p>
+<p>read(lba, size) { console.log("Read from LBA " + lba + " with size "
++ size) }</p>
+<p>}</p>
+<p>We create the ComputerFacade, which provides a simplified interface
+for interacting with computer components. In the start() method,
+components are used coherently and mask complex details.</p>
+<p>class ComputerFacade {</p>
+<p>constructor() {</p>
+<p>this.processor = new CPU();</p>
+<p>this.ram = new Memory();</p>
+<p>this.hdd = new HardDrive();</p>
+<p>}</p>
+<p>start() {</p>
+<p>this.processor.freeze();</p>
+<p>this.ram.load(this.BOOT_ADDRESS, this.hdd.read(this.BOOT_SECTOR,
+this.SECTOR_SIZE));</p>
+<p>this.processor.jump(this.BOOT_ADDRESS);</p>
+<p>this.processor.execute();</p>
+<p>}</p>
+<p>}</p>
+<p>Finally, we create an instance of ComputerFacade and use its start()
+method to simulate the computer's booting process.</p>
+<p>let computer = new ComputerFacade();</p>
+<p>computer.start();</p>
+<p>Final Code:</p>
+<p>// Definition of the CPU class representing the central processing
+unit.</p>
+<p>class CPU {</p>
+<p>freeze() { console.log("CPU Frozen...") } // Method to freeze the
+CPU.</p>
+<p>jump(position) { console.log("Jump to position " + position) } //
+Method to jump to a specific position.</p>
+<p>execute() { console.log("Execute CPU...") } // Method to execute the
+CPU.</p>
+<p>}</p>
+<p>// Definition of the Memory class representing the computer's
+memory.</p>
+<p>class Memory {</p>
+<p>load(position, data) { console.log("Load data at position " +
+position + ": " + data) } // Method to load data into memory.</p>
+<p>}</p>
+<p>// Definition of the HardDrive class representing the computer's hard
+drive.</p>
+<p>class HardDrive {</p>
+<p>read(lba, size) { console.log("Read from LBA " + lba + " with size "
++ size) } // Method to read from the hard drive.</p>
+<p>}</p>
+<p>// Definition of the ComputerFacade class that acts as a facade to
+interact with computer components.</p>
+<p>class ComputerFacade {</p>
+<p>constructor() {</p>
+<p>this.processor = new CPU(); // Create an instance of CPU.</p>
+<p>this.ram = new Memory(); // Create an instance of Memory.</p>
+<p>this.hdd = new HardDrive(); // Create an instance of Hard Drive.</p>
+<p>}</p>
+<p>start() {</p>
+<p>this.processor.freeze(); // Freeze the CPU.</p>
+<p>this.ram.load(this.BOOT_ADDRESS, this.hdd.read(this.BOOT_SECTOR,
+this.SECTOR_SIZE)); // Load data into memory from the hard drive.</p>
+<p>this.processor.jump(this.BOOT_ADDRESS); // Jump to the start
+address.</p>
+<p>this.processor.execute(); // Execute the CPU.</p>
+<p>}</p>
+<p>}</p>
+<p>// Create an instance of ComputerFacade and use it to simulate the
+computer's boot process.</p>
+<p>let computer = new ComputerFacade();</p>
+<p>computer.start();</p>
+<p>// Expected output:</p>
+<p>// CPU Frozen...</p>
+<p>// Load data at position BOOT_ADDRESS: Read from LBA BOOT_SECTOR with
+size SECTOR_SIZE</p>
+<p>// Jump to position BOOT_ADDRESS</p>
+<p>// Execute CPU...</p>
+<h1 class="heading_sY6" id="part0001.xhtml_a28E">Flyweight</h1>
+<p>The Flyweight pattern is used to minimize <span
+id="part0001.xhtml_page_63"></span>memory usage when creating similar
+objects by sharing as much data as possible among them. This means that
+instead of creating multiple instances of objects with identical data, a
+shared instance is used to represent that common data. This
+significantly reduces the amount of memory used, especially when working
+with large quantities of similar objects.</p>
+<p>Example:</p>
+<p><span class="class_s28Y">Step 1. Definition of User and User2
+Classes:</span> In this step, we define two classes: User and User2. The
+first represents a simple user with a full name, while the second
+implements the Flyweight pattern to reduce memory usage by sharing
+similar full names.</p>
+<p>// Definition of the User class</p>
+<p>class User {</p>
+<p>constructor(fullName) {</p>
+<p>this.fullName = fullName;</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the User2 class that implements the Flyweight
+pattern</p>
+<p>class User2 {</p>
+<p>constructor(fullName) {</p>
+<p>let getOrAdd = function(s) {</p>
+<p>let idx = User2.strings.indexOf(s);</p>
+<p>if (idx !== -1) return idx;</p>
+<p>else {</p>
+<p>User2.strings.push(s);</p>
+<p>return User2.strings.length - 1;</p>
+<p>}</p>
+<p>};</p>
+<p>this.names = fullName.split(' ').map(getOrAdd);</p>
+<p>}</p>
+<p>}</p>
+<p>User2.strings = [];</p>
+<p><span class="class_s28Y">Step 2. Auxiliary Functions:</span> In this
+step, we create two auxiliary functions: getRandomInteger to obtain
+random integers and getRandomText to generate random text strings.</p>
+<p>// Auxiliary functions</p>
+<p>function getRandomInteger(max) {</p>
+<p>return Math.floor(Math.random() * Math.floor(max));</p>
+<p>}</p>
+<p>function getRandomText() {</p>
+<p>let result = [];</p>
+<p>for (let x = 0; x &lt; 10; ++x)</p>
+<p>result.push(String.fromCharCode(65 + getRandomInteger(26)));</p>
+<p>return result.join('');</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3. Creating Random Names:</span> In
+this step, we create two arrays, names and lastNames, which contain
+randomly generated names and last names that will be used to create
+users.</p>
+<p>// Creating Random Names</p>
+<p>let names = lastNames = [];</p>
+<p>for (let i = 0; i &lt; 100; ++i) {</p>
+<p>names.push(getRandomText());</p>
+<p>lastNames.push(getRandomText());</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 4. Creating Users:</span> In this step,
+we create two arrays, users and users2, which will contain the created
+users. We iterate through the names and last names arrays to create
+10,000 users both without the Flyweight pattern and with it.</p>
+<p>let users = [];</p>
+<p>let users2 = [];</p>
+<p>// Creating Users</p>
+<p>for (let name of names) {</p>
+<p>for (let lastName of lastNames) {</p>
+<p>users.push(new User(`${name} ${lastName}`));</p>
+<p>users2.push(new User2(`${name} ${lastName}`));</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 5. Memory Usage Comparison:</span> In
+this step, we compare the memory usage between users without the
+Flyweight pattern and users with it using JSON.stringify. We print the
+results to the console.</p>
+<p>// Memory Usage Comparison</p>
+<p>console.log(`10,000 users occupy approximately
+${JSON.stringify(users).length} characters`);</p>
+<p>let users2Length = [users2, User2.strings].map(x =&gt;
+JSON.stringify(x).length).reduce((x, y) =&gt; x + y);</p>
+<p>console.log(`10,000 users with Flyweight occupy ~${users2Length}
+characters`);</p>
+<p>Final Code:</p>
+<p>// Definition of the User class</p>
+<p>class User {</p>
+<p>constructor(fullName) {</p>
+<p>this.fullName = fullName;</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the User2 class that implements the Flyweight
+pattern</p>
+<p>class User2 {</p>
+<p>constructor(fullName) {</p>
+<p>let getOrAdd = function(s) {</p>
+<p>let idx = User2.strings.indexOf(s);</p>
+<p>if (idx !== -1) return idx;</p>
+<p>else {</p>
+<p>User2.strings.push(s);</p>
+<p>return User2.strings.length - 1;</p>
+<p>}</p>
+<p>};</p>
+<p>this.names = fullName.split(' ').map(getOrAdd);</p>
+<p>}</p>
+<p>}</p>
+<p>User2.strings = [];</p>
+<p>// Auxiliary functions</p>
+<p>function getRandomInteger(max) {</p>
+<p>return Math.floor(Math.random() * Math.floor(max));</p>
+<p>}</p>
+<p>function getRandomText() {</p>
+<p>let result = [];</p>
+<p>for (let x = 0; x &lt; 10; ++x)</p>
+<p>result.push(String.fromCharCode(65 + getRandomInteger(26)));</p>
+<p>return result.join('');</p>
+<p>}</p>
+<p>// Creating Random Names</p>
+<p>let names = lastNames = [];</p>
+<p>for (let i = 0; i &lt; 100; ++i) {</p>
+<p>names.push(getRandomText());</p>
+<p>lastNames.push(getRandomText());</p>
+<p>}</p>
+<p>let users = [];</p>
+<p>let users2 = [];</p>
+<p>// Creating Users</p>
+<p>for (let name of names) {</p>
+<p>for (let lastName of lastNames) {</p>
+<p>users.push(new User(`${name} ${lastName}`));</p>
+<p>users2.push(new User2(`${name} ${lastName}`));</p>
+<p>}</p>
+<p>}</p>
+<p>// Memory Usage Comparison</p>
+<p>console.log(`10,000 users occupy approximately
+${JSON.stringify(users).length} characters`); // 10,000 users occupy
+approximately 1720001 characters</p>
+<p>let users2Length = [users2, User2.strings].map(x =&gt;
+JSON.stringify(x).length).reduce((x, y) =&gt; x + y);</p>
+<p>console.log(`10,000 users with Flyweight occupy ~${users2Length}
+characters`); // 10,000 users with Flyweight occupy ~838602
+characters</p>
+<h1 class="heading_s11N" id="part0001.xhtml_a28F">Proxy</h1>
+<p>The Proxy pattern allows one class to represent the functionality of
+another class, acting as an intermediary or "proxy" between the client
+and the real object. This can be useful for controlling access to the
+real object, performing additional operations before or after accessing
+the real object, or even replacing the real object entirely.</p>
+<p>Example:</p>
+<p>Let's imagine an example of a Proxy object called "Percentage" used
+to represent percentages. This Proxy allows manipulating percentage
+values and performing mathematical operations on them.</p>
+<p>class Percentage {</p>
+<p>constructor(percentage) {</p>
+<p>this.percentage = percentage;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `${this.percentage}%`;</p>
+<p>}</p>
+<p>valueOf() {</p>
+<p>return this.percentage / 100;</p>
+<p>}</p>
+<p>}</p>
+<p>// Let's use the Percentage Proxy object</p>
+<p>let percentageFive = new Percentage(5);</p>
+<p>console.log(percentageFive.toString()); // Output: "5%"</p>
+<p>console.log(`5% of 50 is ${50 * percentageFive}`); // Output: "5% of
+50 is 2.5"</p>
+<p>In this example, the "Percentage" acts as a proxy that allows
+representing percentage values and performing calculations with them.
+The Percentage Proxy makes it easy to manipulate percentage values and
+use them in mathematical operations.</p>
+<h1 class="heading_s12B" id="part0001.xhtml_a28G">Behavioral Design
+Patterns</h1>
+<p>Behavioral design patterns focus on the communication and interaction
+between objects in a software system. These patterns identify common
+patterns of communication and collaboration between objects, increasing
+flexibility and efficiency in designing and implementing the behavior of
+a system.</p>
+<p>Below are the most common behavioral design patterns in
+JavaScript:</p>
+<p><span class="class_s28Y">Chain of Responsibility:</span> Allows
+multiple objects to handle a request without the sender knowing which
+one will process it.</p>
+<p><span class="class_s28Y">Command:</span> Encapsulates a request as an
+object, allowing clients to parameterize objects with operations, queue
+requests, log requests, and support undoable operations.</p>
+<p><span class="class_s28Y">Iterator:</span> Provides a way to access
+elements of a collection sequentially without exposing its underlying
+representation.</p>
+<p><span class="class_s28Y">Mediator:</span> Defines an object that
+encapsulates how communication occurs between objects in a system,
+promoting loose coupling by preventing objects from explicitly referring
+to each other.</p>
+<p><span class="class_s28Y">Memento:</span> Allows capturing and
+externalizing an object's internal state so that the object can be
+restored to that state later.</p>
+<p><span class="class_s28Y">Observer:</span> Defines a one-to-many
+dependency between objects so that when one object changes its state,
+all its dependents are notified and updated automatically.</p>
+<p><span class="class_s28Y">Visitor:</span> Represents an operation to
+be performed on the elements of an object structure, allowing defining a
+new operation without changing the classes of the elements on which it
+operates.</p>
+<p><span class="class_s28Y">Strategy:</span> Defines a family of
+algorithms, encapsulates each one, and makes them interchangeable,
+allowing the algorithm to vary independently of clients that use it.</p>
+<p><span class="class_s28Y">State:</span> Allows an object to alter its
+behavior when its internal state changes, often implemented as a finite
+state machine.</p>
+<p><span class="class_s28Y">Template Method:</span> Defines the skeleton
+of an algorithm in an operation but allows subclasses to redefine parts
+of the algorithm without changing its structure.</p>
+<h1 class="heading_s12T" id="part0001.xhtml_a28H">Chain of
+Responsability</h1>
+<p>Create a chain of objects. Starting from a point, it stops until a
+certain condition is met.</p>
+<p>In object-oriented design, the Chain of Responsibility pattern is a
+design pattern consisting of a source of command objects and a series of
+processing objects.</p>
+<p>Example:</p>
+<p>Let's use an example of a game that has a creature. The creature will
+increase its defense and attack when it reaches a certain point. It will
+create a chain, and the attack and defense will increase and
+decrease.</p>
+<p><span class="class_s28Y">Step 1. Definition of Key Classes and the
+Chain of Responsibility Pattern:</span> In this step, we define the main
+classes, including Creature and CreatureModifier, as well as specific
+modifier classes.</p>
+<p>class Creature {</p>
+<p>constructor(name, attack, defense) {</p>
+<p>this.name = name;</p>
+<p>this.attack = attack;</p>
+<p>this.defense = defense;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `${this.name} (${this.attack} / ${this.defense})`;</p>
+<p>}</p>
+<p>}</p>
+<p>class CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>this.creature = creature;</p>
+<p>this.next = null;</p>
+<p>}</p>
+<p>add(modifier) {</p>
+<p>if (this.next) this.next.add(modifier);</p>
+<p>else this.next = modifier;</p>
+<p>}</p>
+<p>handle() {</p>
+<p>if (this.next) this.next.handle();</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2. Implementation of Specific
+Modifiers:</span> We create specific modifiers such as
+NoBonusesModifier, DoubleAttackModifier, and
+IncreaseDefenseModifier.</p>
+<p>class NoBonusesModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>console.log("No bonuses for you!");</p>
+<p>}</p>
+<p>}</p>
+<p>class DoubleAttackModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>console.log(`Doubling attack of ${this.creature.name}`);</p>
+<p>this.creature.attack *= 2;</p>
+<p>super.handle();</p>
+<p>}</p>
+<p>}</p>
+<p>class IncreaseDefenseModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>if (this.creature.attack &lt;= 2) {</p>
+<p>console.log(`Increasing defense of ${this.creature.name}`);</p>
+<p>this.creature.defense++;</p>
+<p>}</p>
+<p>super.handle();</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3. Using the Chain of Responsibility
+Pattern:</span> In this step, we create an instance of Creature, then
+create a chain of responsibility of modifiers and apply it to the
+creature.</p>
+<p>let pikachu = new Creature("Pikachu", 1, 1);</p>
+<p>console.log(pikachu.toString());</p>
+<p>let root = new CreatureModifier(pikachu);</p>
+<p>root.add(new NoBonusesModifier(pikachu));</p>
+<p>root.add(new IncreaseDefenseModifier(pikachu));</p>
+<p>root.handle();</p>
+<p>console.log(pikachu.toString());</p>
+<p>This final code combines all the steps and shows the expected output
+when executed.</p>
+<p>Código final:</p>
+<p>class Creature {</p>
+<p>constructor(name, attack, defense) {</p>
+<p>this.name = name;</p>
+<p>this.attack = attack;</p>
+<p>this.defense = defense;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `${this.name} (${this.attack} / ${this.defense})`;</p>
+<p>}</p>
+<p>}</p>
+<p>class CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>this.creature = creature;</p>
+<p>this.next = null;</p>
+<p>}</p>
+<p>add(modifier) {</p>
+<p>if (this.next) this.next.add(modifier);</p>
+<p>else this.next = modifier;</p>
+<p>}</p>
+<p>handle() {</p>
+<p>if (this.next) this.next.handle();</p>
+<p>}</p>
+<p>}</p>
+<p>class NoBonusesModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>console.log("No bonuses for you!");</p>
+<p>}</p>
+<p>}</p>
+<p>class DoubleAttackModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>console.log(`Doubling attack of ${this.creature.name}`);</p>
+<p>this.creature.attack *= 2;</p>
+<p>super.handle();</p>
+<p>}</p>
+<p>}</p>
+<p>class IncreaseDefenseModifier extends CreatureModifier {</p>
+<p>constructor(creature) {</p>
+<p>super(creature);</p>
+<p>}</p>
+<p>handle() {</p>
+<p>if (this.creature.attack &lt;= 2) {</p>
+<p>console.log(`Increasing defense of ${this.creature.name}`);</p>
+<p>this.creature.defense++;</p>
+<p>}</p>
+<p>super.handle();</p>
+<p>}</p>
+<p>}</p>
+<p>// Create a creature and show its initial state</p>
+<p>let pikachu = new Creature("Pikachu", 1, 1);</p>
+<p>console.log(pikachu.toString());</p>
+<p>// Create a chain of responsibility and add modifiers</p>
+<p>let root = new CreatureModifier(pikachu);</p>
+<p>root.add(new NoBonusesModifier(pikachu));</p>
+<p>root.add(new IncreaseDefenseModifier(pikachu));</p>
+<p>// Apply the modifiers to the creature</p>
+<p>root.handle();</p>
+<p>// Show the final state of the creature after applying modifiers</p>
+<p>console.log(pikachu.toString());</p>
+<p>// Expected Output:</p>
+<p>// Pikachu (1 / 1)</p>
+<p>// Increasing defense of Pikachu</p>
+<p>// Pikachu (1 / 2)</p>
+<h1 class="heading_s175" id="part0001.xhtml_a28J">Command</h1>
+<p>In object-oriented programming, the Command pattern is a behavioral
+design pattern in which an object is used to encapsulate all the
+information needed to perform an action or trigger an event at a later
+time. This information includes the method's name, the object that owns
+the method, and the method's parameter values.</p>
+<p>Example:</p>
+<p>We'll take a simple example of a bank account where we issue an order
+to deposit or withdraw a certain amount of money.</p>
+<p><span class="class_s28Y">Step 1. Definition of the BankAccount
+class:</span> In this step, we define the BankAccount class, which
+represents a bank account with methods for depositing, withdrawing, and
+getting the balance.</p>
+<p>class BankAccount {</p>
+<p>constructor(balance = 0) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>deposit(amount) {</p>
+<p>this.balance += amount;</p>
+<p>console.log(`${amount} deposited into the total balance
+${this.balance}`);</p>
+<p>}</p>
+<p>withdraw(amount) {</p>
+<p>if (this.balance - amount &gt;= BankAccount.overdraftLimit) {</p>
+<p>this.balance -= amount;</p>
+<p>console.log(`${amount} withdrawn from the total balance.`);</p>
+<p>} else {</p>
+<p>console.log(`Insufficient funds to withdraw ${amount}`);</p>
+<p>}</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `Balance: ${this.balance}`;</p>
+<p>}</p>
+<p>}</p>
+<p>BankAccount.overdraftLimit = -500;</p>
+<p><span class="class_s28Y">Step 2. Creating Commands:</span> In this
+step, we create an enumeration Action to represent deposit and withdraw
+actions, and then define the BankAccountCommand class that encapsulates
+an action along with its amount.</p>
+<p>let Action = Object.freeze({</p>
+<p>deposit: 1,</p>
+<p>withdraw: 2,</p>
+<p>});</p>
+<p>class BankAccountCommand {</p>
+<p>constructor(account, action, amount) {</p>
+<p>this.account = account;</p>
+<p>this.action = action;</p>
+<p>this.amount = amount;</p>
+<p>}</p>
+<p>execute() {</p>
+<p>switch (this.action) {</p>
+<p>case Action.deposit:</p>
+<p>this.account.deposit(this.amount);</p>
+<p>break;</p>
+<p>case Action.withdraw:</p>
+<p>this.account.withdraw(this.amount);</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>undo() {</p>
+<p>switch (this.action) {</p>
+<p>case Action.deposit:</p>
+<p>this.account.withdraw(this.amount); // Reversing a deposit is a
+withdrawal</p>
+<p>break;</p>
+<p>case Action.withdraw:</p>
+<p>this.account.deposit(this.amount); // Reversing a withdrawal is a
+deposit</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3. Using the Command Pattern:</span> In
+this step, we create an instance of BankAccount and a command to deposit
+and then undo that deposit.</p>
+<p>let bankAccount = new BankAccount(100);</p>
+<p>let cmd = new BankAccountCommand(bankAccount, Action.deposit,
+50);</p>
+<p>cmd.execute(); // Perform a deposit of 50</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>cmd.undo(); // Undo the deposit of 50</p>
+<p>console.log(bankAccount.toString()); // Balance: 100</p>
+<p>This code demonstrates how the Command pattern allows encapsulating
+requests as objects, making it easy to execute and undo actions.</p>
+<p>Final Code:</p>
+<p>class BankAccount {</p>
+<p>constructor(balance = 0) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>deposit(amount) {</p>
+<p>this.balance += amount;</p>
+<p>console.log(`${amount} deposited into the total balance
+${this.balance}`);</p>
+<p>}</p>
+<p>withdraw(amount) {</p>
+<p>if (this.balance - amount &gt;= BankAccount.overdraftLimit) {</p>
+<p>this.balance -= amount;</p>
+<p>console.log(`${amount} withdrawn from the total balance.`);</p>
+<p>} else {</p>
+<p>console.log(`Insufficient funds to withdraw ${amount}`);</p>
+<p>}</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `Balance: ${this.balance}`;</p>
+<p>}</p>
+<p>}</p>
+<p>BankAccount.overdraftLimit = -500;</p>
+<p>let Action = Object.freeze({</p>
+<p>deposit: 1,</p>
+<p>withdraw: 2,</p>
+<p>});</p>
+<p>class BankAccountCommand {</p>
+<p>constructor(account, action, amount) {</p>
+<p>this.account = account;</p>
+<p>this.action = action;</p>
+<p>this.amount = amount;</p>
+<p>}</p>
+<p>execute() {</p>
+<p>switch (this.action) {</p>
+<p>case Action.deposit:</p>
+<p>this.account.deposit(this.amount);</p>
+<p>break;</p>
+<p>case Action.withdraw:</p>
+<p>this.account.withdraw(this.amount);</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>undo() {</p>
+<p>switch (this.action) {</p>
+<p>case Action.deposit:</p>
+<p>this.account.withdraw(this.amount); // Reversing a deposit is a
+withdrawal</p>
+<p>break;</p>
+<p>case Action.withdraw:</p>
+<p>this.account.deposit(this.amount); // Reversing a withdrawal is a
+deposit</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>let bankAccount = new BankAccount(100);</p>
+<p>let cmd = new BankAccountCommand(bankAccount, Action.deposit,
+50);</p>
+<p>cmd.execute(); // Perform a deposit of 50</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>cmd.undo(); // Undo the deposit of 50</p>
+<p>console.log(bankAccount.toString()); // Balance: 100</p>
+<h1 class="heading_s1B3" id="part0001.xhtml_a28K">Iterator</h1>
+<p>Iterator accesses the elements of an object without exposing its
+underlying representation.</p>
+<p>In object-oriented programming, the iterator pattern is a design
+pattern where an iterator is used to traverse a container and access the
+elements of the container.</p>
+<p>Definition of the 'Thing' Class: First, we define a class called
+'Thing' that has two properties 'a' and 'b.'</p>
+<p><span class="class_s28Y">Step 1: </span>Define the 'Thing' class and
+its 'a' and 'b' properties.</p>
+<p>class Thing {</p>
+<p>constructor() {</p>
+<p>this.a = 11;</p>
+<p>this.b = 22;</p>
+<p>}</p>
+<p>// Rest of the code</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2:</span> Implement the Symbol.iterator
+method to traverse the 'a' and 'b' properties of the 'Thing' class.</p>
+<p>class Thing {</p>
+<p>// ...</p>
+<p>[Symbol.iterator]() {</p>
+<p>let i = 0;</p>
+<p>let self = this;</p>
+<p>return {</p>
+<p>next: function() {</p>
+<p>return {</p>
+<p>done: i &gt; 1,</p>
+<p>value: self[i++ === 0 ? 'a' : 'b']</p>
+<p>};</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>// Rest of the code</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3:</span> Implement the 'backwards'
+property to traverse the properties in reverse order.</p>
+<p>class Thing {</p>
+<p>// ...</p>
+<p>get backwards() {</p>
+<p>let i = 0;</p>
+<p>let self = this;</p>
+<p>return {</p>
+<p>next: function() {</p>
+<p>return {</p>
+<p>done: i &gt; 1,</p>
+<p>value: self[i++ === 0 ? 'b' : 'a']</p>
+<p>};</p>
+<p>},</p>
+<p>[Symbol.iterator]: function() { return this; }</p>
+<p>};</p>
+<p>}</p>
+<p>// Rest of the code</p>
+<p>}</p>
+<p>class Thing {</p>
+<p>// ...</p>
+<p>get backwards() {</p>
+<p>let i = 0;</p>
+<p>let self = this;</p>
+<p>return {</p>
+<p>next: function() {</p>
+<p>return {</p>
+<p>done: i &gt; 1,</p>
+<p>value: self[i++ === 0 ? 'b' : 'a']</p>
+<p>};</p>
+<p>},</p>
+<p>[Symbol.iterator]: function() { return this; }</p>
+<p>};</p>
+<p>}</p>
+<p>// Rest of the code</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 4:</span> Create an array 'values' with
+numeric elements.</p>
+<p>let values = [100, 200, 300];</p>
+<p><span class="class_s28Y">Step 5:</span> Use a 'for...in' loop to
+iterate over the 'values' array.</p>
+<p>for (let i in values) {</p>
+<p>console.log(`Element at position ${i} is ${values[i]}`);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 6:</span> Use another 'for...in' loop
+to iterate over an object (not recommended).</p>
+<p>for (let v in values) {</p>
+<p>console.log(`The value is ${v}`);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 7:</span> Create an instance of the
+'Thing' class called 'thing'.</p>
+<p>let thing = new Thing();</p>
+<p><span class="class_s28Y">Step 8:</span> Use a 'for...of' loop to
+iterate over the properties of 'thing.'.</p>
+<p>console.log("Iterating over 'a' and 'b':");</p>
+<p>for (let element of thing) {</p>
+<p>console.log(`${element}`);</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 9:</span> Use another 'for...of' loop
+to iterate in reverse order.</p>
+<p>console.log("Iterating in reverse order:");</p>
+<p>for (let element of thing.backwards) {</p>
+<p>console.log(`${element}`);</p>
+<p>}</p>
+<p>Final Code:</p>
+<p>We will take the example of an array where we print the values of an
+array and then, using an iterator, print its values in reverse.</p>
+<p>// Define a class called 'Thing'</p>
+<p>class Thing {</p>
+<p>constructor() {</p>
+<p>this.a = 11; // Property 'a' with value 11</p>
+<p>this.b = 22; // Property 'b' with value 22</p>
+<p>}</p>
+<p>// Define an iterator to traverse the elements 'a' and 'b' of this
+class</p>
+<p>[Symbol.iterator]() {</p>
+<p>let i = 0; // Initialize an index to keep control</p>
+<p>let self = this; // Capture a reference to the current instance
+('this')</p>
+<p>return {</p>
+<p>next: function() {</p>
+<p>return {</p>
+<p>done: i &gt; 1, // Indicates if everything has been traversed (when
+'i' is greater than 1)</p>
+<p>value: self[i++ === 0 ? 'a' : 'b'] // Get the corresponding value
+('a' or 'b')</p>
+<p>};</p>
+<p>}</p>
+<p>};</p>
+<p>}</p>
+<p>// Get an iterator to traverse the elements in reverse order</p>
+<p>get backwards() {</p>
+<p>let i = 0; // Initialize an index to keep control</p>
+<p>let self = this; // Capture a reference to the current instance
+('this')</p>
+<p>return {</p>
+<p>next: function() {</p>
+<p>return {</p>
+<p>done: i &gt; 1, // Indicates if everything has been traversed (when
+'i' is greater than 1)</p>
+<p>value: self[i++ === 0 ? 'b' : 'a'] // Get the corresponding value
+('b' or 'a')</p>
+<p>};</p>
+<p>},</p>
+<p>[Symbol.iterator]: function() { return this; } // Make the iterator
+iterable</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>let values = [100, 200, 300];</p>
+<p>// Use a for...in loop to traverse an array (Note: not the
+recommended way for arrays)</p>
+<p>for (let i in values) {</p>
+<p>console.log(`Element at position ${i} is ${values[i]}`);</p>
+<p>}</p>
+<p>// Use a for...in loop to traverse an object (Note: not the
+recommended way for objects)</p>
+<p>for (let v in values) {</p>
+<p>console.log(`The value is ${v}`);</p>
+<p>}</p>
+<p>let thing = new Thing(); // Create an instance of the class
+'Thing'</p>
+<p>console.log("Iterating over 'a' and 'b':");</p>
+<p>for (let element of thing) {</p>
+<p>console.log(`${element}`);</p>
+<p>}</p>
+<p>console.log("Iterating in reverse order:");</p>
+<p>for (let element of thing.backwards) {</p>
+<p>console.log(`${element}`);</p>
+<p>}</p>
+<p>// Expected output:</p>
+<p>// Element at position 0 is 100</p>
+<p>// Element at position 1 is 200</p>
+<p>// The value is 0</p>
+<p>// The value is 1</p>
+<p>// The value is 2</p>
+<p>// Iterating over 'a' and 'b':</p>
+<p>// 11</p>
+<p>// 22</p>
+<p>// Iterating in reverse order:</p>
+<p>// 22</p>
+<p>// 11</p>
+<h1 class="heading_s175" id="part0001.xhtml_a28M">Mediator</h1>
+<p>The mediator pattern adds a third-party object to control the
+interaction between two objects. It allows for flexible coupling between
+classes since it is the only class with detailed knowledge of its
+methods.</p>
+<p>The mediator pattern defines an object that encapsulates how a set of
+objects interact. This pattern is considered a behavioral pattern due to
+the way it can alter the program's execution behavior. In
+object-oriented programming, programs often consist of many classes.</p>
+<p>We will use an example of a person using a chat room. Here, a chat
+room acts as a mediator between two people communicating with each
+other.</p>
+<p>Example:</p>
+<p><span class="class_s28Y">Step 1.</span> <span
+class="class_s28Y">Definition of the Person class, which represents
+people in the chat room:</span></p>
+<p>class Person {</p>
+<p>constructor(name, chatRoom) {</p>
+<p>this.name = name;         // Person's name</p>
+<p>this.chatRoom = chatRoom; // Chat room they belong to</p>
+<p>}</p>
+<p>// Method to send a message in the chat room</p>
+<p>say(message) {</p>
+<p>this.chatRoom.sendMessage(this, message);</p>
+<p>}</p>
+<p>// Method to receive a message</p>
+<p>receive(message) {</p>
+<p>console.log(`${this.name} receives: ${message}`);</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2.</span> <span
+class="class_s28Y">Definition of the ChatRoom class, which acts as a
+mediator:</span></p>
+<p>class ChatRoom {</p>
+<p>constructor() {</p>
+<p>this.people = []; // Stores people in the chat room</p>
+<p>}</p>
+<p>// Method to add a person to the chat room</p>
+<p>joinPerson(person) {</p>
+<p>this.people.push(person); // Add the person to the list</p>
+<p>person.chatRoom = this;  // Set the person's chat room as this
+room</p>
+<p>}</p>
+<p>// Method to send a message to all people in the room</p>
+<p>sendMessage(sender, message) {</p>
+<p>for (const person of this.people) {</p>
+<p>if (person !== sender) {</p>
+<p>person.receive(`${sender.name}: ${message}`);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3.</span> <span
+class="class_s28Y">Creation of a chat room (ChatRoom):</span></p>
+<p>const chatRoom = new ChatRoom();</p>
+<p><span class="class_s28Y">Step 4.</span> <span
+class="class_s28Y">Creation of people and joining them to the chat
+room:</span></p>
+<p>const john = new Person("John", chatRoom);</p>
+<p>const tony = new Person("Tony", chatRoom);</p>
+<p>chatRoom.joinPerson(john);</p>
+<p>chatRoom.joinPerson(tony);</p>
+<p><span class="class_s28Y">Step 5.</span> <span class="class_s28Y">John
+sends a message in the chat room:</span></p>
+<p>john.say("Hello, everyone!");</p>
+<p><span class="class_s28Y">Step 6.</span> <span
+class="class_s28Y">Creation of a new person and joining them to the chat
+room:</span></p>
+<p>const doe = new Person("Doe", chatRoom);</p>
+<p>chatRoom.joinPerson(doe);</p>
+<p><span class="class_s28Y">Step 7.</span> <span class="class_s28Y">Doe
+sends a message in the chat room:</span></p>
+<p>doe.say("Hi, everyone!");</p>
+<p>Whenever someone sends a message, the chat room takes care of
+distributing that message to all the other people in the room.</p>
+<p>Final Code:</p>
+<p>// Definition of the Person class, which represents people in the
+chat room</p>
+<p>class Person {</p>
+<p>constructor(name, chatRoom) {</p>
+<p>this.name = name;         // Person's name</p>
+<p>this.chatRoom = chatRoom; // Chat room they belong to</p>
+<p>}</p>
+<p>// Method to send a message in the chat room</p>
+<p>say(message) {</p>
+<p>this.chatRoom.sendMessage(this, message);</p>
+<p>}</p>
+<p>// Method to receive a message</p>
+<p>receive(message) {</p>
+<p>console.log(`${this.name} receives: ${message}`);</p>
+<p>}</p>
+<p>}</p>
+<p>// Definition of the ChatRoom class, which acts as a mediator</p>
+<p>class ChatRoom {</p>
+<p>constructor() {</p>
+<p>this.people = []; // Stores people in the chat room</p>
+<p>}</p>
+<p>// Method to add a person to the chat room</p>
+<p>joinPerson(person) {</p>
+<p>this.people.push(person); // Add the person to the list</p>
+<p>person.chatRoom = this;  // Set the person's chat room as this
+room</p>
+<p>}</p>
+<p>// Method to send a message to all people in the room</p>
+<p>sendMessage(sender, message) {</p>
+<p>for (const person of this.people) {</p>
+<p>if (person !== sender) {</p>
+<p>person.receive(`${sender.name}: ${message}`);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>// Creation of a chat room</p>
+<p>const chatRoom = new ChatRoom();</p>
+<p>// Creation of people and joining them to the chat room</p>
+<p>const john = new Person("John", chatRoom);</p>
+<p>const tony = new Person("Tony", chatRoom);</p>
+<p>chatRoom.joinPerson(john);</p>
+<p>chatRoom.joinPerson(tony);</p>
+<p>// John sends a message in the chat room</p>
+<p>john.say("Hello, everyone!");</p>
+<p>// Creation of a new person and joining them to the chat room</p>
+<p>const doe = new Person("Doe", chatRoom);</p>
+<p>chatRoom.joinPerson(doe);</p>
+<p>// Doe sends a message in the chat room</p>
+<p>doe.say("Hi, everyone!");</p>
+<h1 class="heading_s55" id="part0001.xhtml_a28N">Memento</h1>
+<p>The Memento pattern allows restoring an object to its previous
+state.</p>
+<p>The Memento pattern is a software design pattern that provides the
+capability to restore an object to a previous state. It is implemented
+using three objects: the originator, the caretaker, and the memento.</p>
+<p>Example:</p>
+<p>Let's take an example of a bank account in which we store our
+previous state and have the functionality to undo.</p>
+<p>Step 1. Definition of the Memento class:</p>
+<p>class Memento {</p>
+<p>constructor(balance) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>}</p>
+<p>In this step, we create the Memento class, which will be used to
+store the state of the bank account at a given moment.</p>
+<p>Step 2. Definition of the CuentaBanco class:</p>
+<p>class BankAccount {</p>
+<p>constructor(balance = 0) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>deposit(amount) {</p>
+<p>this.balance += amount;</p>
+<p>return new Memento(this.balance);</p>
+<p>}</p>
+<p>restore(memento) {</p>
+<p>this.balance = memento.balance;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `Balance: ${this.balance}`;</p>
+<p>}</p>
+<p>}</p>
+<p>Here, we create the BankAccount class, which represents a bank
+account with the ability to make deposits, save states in the form of
+Mementos, and restore the previous state.</p>
+<p>Step 3. Definition of the Caretaker class:</p>
+<p>class Caretaker {</p>
+<p>constructor() {</p>
+<p>this.mementos = [];</p>
+<p>}</p>
+<p>addMemento(memento) {</p>
+<p>this.mementos.push(memento);</p>
+<p>}</p>
+<p>getMemento(index) {</p>
+<p>return this.mementos[index];</p>
+<p>}</p>
+<p>}</p>
+<p>The CareTaker class is responsible for storing the Mementos in a list
+so that previous states can be restored when needed.</p>
+<p>Step 4. Using the Memento pattern:</p>
+<p>// Create an instance of BankAccount</p>
+<p>const bankAccount = new BankAccount(100);</p>
+<p>const caretaker = new Caretaker();</p>
+<p>// Make deposits and save states in Mementos</p>
+<p>caretaker.addMemento(bankAccount.deposit(50));</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>caretaker.addMemento(bankAccount.deposit(25));</p>
+<p>console.log(bankAccount.toString()); // Balance: 175</p>
+<p>// Restore the previous state</p>
+<p>bankAccount.restore(caretaker.getMemento(0));</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>bankAccount.restore(caretaker.getMemento(1));</p>
+<p>console.log(bankAccount.toString()); // Balance: 175</p>
+<p>In this step, we create an instance of BankAcccount and a CareTaker.
+Then, we make deposits into the bank account and save states as Mementos
+using the CareTaker. Finally, we restore previous states of the bank
+account using the Mementos and verify the resulting balances.</p>
+<p>Final Code:</p>
+<p>class Memento {</p>
+<p>constructor(balance) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>}</p>
+<p>class BankAccount {</p>
+<p>constructor(balance = 0) {</p>
+<p>this.balance = balance;</p>
+<p>}</p>
+<p>deposit(amount) {</p>
+<p>this.balance += amount;</p>
+<p>return new Memento(this.balance);</p>
+<p>}</p>
+<p>restore(memento) {</p>
+<p>this.balance = memento.balance;</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return `Balance: ${this.balance}`;</p>
+<p>}</p>
+<p>}</p>
+<p>class Caretaker {</p>
+<p>constructor() {</p>
+<p>this.mementos = [];</p>
+<p>}</p>
+<p>addMemento(memento) {</p>
+<p>this.mementos.push(memento);</p>
+<p>}</p>
+<p>getMemento(index) {</p>
+<p>return this.mementos[index];</p>
+<p>}</p>
+<p>}</p>
+<p>// Create an instance of BankAccount</p>
+<p>const bankAccount = new BankAccount(100);</p>
+<p>const caretaker = new Caretaker();</p>
+<p>// Make deposits and save states in Mementos</p>
+<p>caretaker.addMemento(bankAccount.deposit(50));</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>caretaker.addMemento(bankAccount.deposit(25));</p>
+<p>console.log(bankAccount.toString()); // Balance: 175</p>
+<p>// Restore the previous state</p>
+<p>bankAccount.restore(caretaker.getMemento(0));</p>
+<p>console.log(bankAccount.toString()); // Balance: 150</p>
+<p>bankAccount.restore(caretaker.getMemento(1));</p>
+<p>console.log(bankAccount.toString()); // Balance: 175</p>
+<h1 class="heading_s1PA" id="part0001.xhtml_a28P">Observer</h1>
+<p>Allows multiple observer objects to watch an event.</p>
+<p>The Observer pattern is a software design pattern in which an object,
+called the subject, maintains a list of its dependents, called
+observers, and automatically notifies them of any state changes, usually
+by calling one of their methods.</p>
+<p>Example:</p>
+<p>Let's take an example of a person where if a person gets sick, it
+shows a notification.</p>
+<p><span class="class_s28Y">Step 1. Definition of classes and the
+Observer Pattern:</span> In this step, we define three key classes:
+Event, GetSick, and Person. The Event class represents an observable
+event and <span id="part0001.xhtml_page_109"></span>contains the logic
+for subscribing, unsubscribing, and notifying observers.</p>
+<p>The GetSick class is a specific event that contains information about
+the location where it occurs. The Person class is the observable subject
+that can "get sick" and notify observers when this happens.</p>
+<p>// Event class representing an observable event</p>
+<p>class Event {</p>
+<p>constructor() {</p>
+<p>this.handlers = new Map();</p>
+<p>this.counter = 0;</p>
+<p>}</p>
+<p>// Method to subscribe a handler to the event and return a unique
+identifier</p>
+<p>subscribe(handler) {</p>
+<p>this.handlers.set(++this.counter, handler);</p>
+<p>return this.counter;</p>
+<p>}</p>
+<p>// Method to unsubscribe from an event given an identifier</p>
+<p>unsubscribe(index) {</p>
+<p>this.handlers.delete(index);</p>
+<p>}</p>
+<p>// Method to notify all observers when the event occurs</p>
+<p>fire(sender, args) {</p>
+<p>this.handlers.forEach((handler, id) =&gt; handler(sender, args));</p>
+<p>}</p>
+<p>}</p>
+<p>// GetSick class representing a specific event</p>
+<p>class GetSick {</p>
+<p>constructor(location) {</p>
+<p>this.location = location;</p>
+<p>}</p>
+<p>}</p>
+<p>// Person class that will be the observable subject</p>
+<p>class Person {</p>
+<p>constructor(location) {</p>
+<p>this.location = location;</p>
+<p>this.getSick = new Event(); // Create a "get sick" event</p>
+<p>}</p>
+<p>// Method to simulate the person getting sick and notify
+observers</p>
+<p>catchCold() {</p>
+<p>this.getSick.fire(this, new GetSick(this.location));</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2. Using the Observer Pattern:</span>
+In this step, we create an instance of Person and then subscribe an
+observer to the "get sick" event using the subscribe method of the Event
+class. We then simulate the person getting sick twice by calling the
+catchCold method. After that, we unsubscribe the observer using the
+unsubscribe method. Finally, we call the catchCold method again, but the
+unsubscribed observer no longer receives notifications.</p>
+<p>This pattern allows multiple observers to watch an event (in this
+case, getting sick) without the Person class needing to know the details
+of who the observers are or how they react to the event.</p>
+<p>// Create an instance of the person</p>
+<p>let person = new Person("Route ABC");</p>
+<p>// Subscribe an observer to the "get sick" event</p>
+<p>let sub = person.getSick.subscribe((subject, event) =&gt; {</p>
+<p>console.log(`A doctor has been called to ${event.location}`);</p>
+<p>});</p>
+<p>// The person gets sick twice</p>
+<p>person.catchCold();</p>
+<p>person.catchCold();</p>
+<p>// Unsubscribe the observer</p>
+<p>person.getSick.unsubscribe(sub);</p>
+<p>// The person gets sick again, but the unsubscribed observer no
+longer receives the notification</p>
+<p>person.catchCold();</p>
+<p>Final Code:</p>
+<p>// Definition of classes and the Observer Pattern</p>
+<p>// Event class representing an observable event</p>
+<p>class Event {</p>
+<p>constructor() {</p>
+<p>this.handlers = new Map();</p>
+<p>this.counter = 0;</p>
+<p>}</p>
+<p>// Method to subscribe a handler to the event and return a unique
+identifier</p>
+<p>subscribe(handler) {</p>
+<p>this.handlers.set(++this.counter, handler);</p>
+<p>return this.counter;</p>
+<p>}</p>
+<p>// Method to unsubscribe from an event given an identifier</p>
+<p>unsubscribe(index) {</p>
+<p>this.handlers.delete(index);</p>
+<p>}</p>
+<p>// Method to notify all observers when the event occurs</p>
+<p>fire(sender, args) {</p>
+<p>this.handlers.forEach((handler, id) =&gt; handler(sender, args));</p>
+<p>}</p>
+<p>}</p>
+<p>// GetSick class representing a specific event</p>
+<p>class GetSick {</p>
+<p>constructor(location) {</p>
+<p>this.location = location;</p>
+<p>}</p>
+<p>}</p>
+<p>// Person class that will be the observable subject</p>
+<p>class Person {</p>
+<p>constructor(location) {</p>
+<p>this.location = location;</p>
+<p>this.getSick = new Event(); // Create a "get sick" event</p>
+<p>}</p>
+<p>// Method to simulate the person getting sick and notify
+observers</p>
+<p>catchCold() {</p>
+<p>this.getSick.fire(this, new GetSick(this.location));</p>
+<p>}</p>
+<p>}</p>
+<p>// Using the Observer Pattern</p>
+<p>// Create an instance of the person</p>
+<p>let person = new Person("Route ABC");</p>
+<p>// Subscribe an observer to the "get sick" event</p>
+<p>let sub = person.getSick.subscribe((subject, event) =&gt; {</p>
+<p>console.log(`A doctor has been called to ${event.location}`);</p>
+<p>});</p>
+<p>// The person gets sick twice</p>
+<p>person.catchCold();</p>
+<p>person.catchCold();</p>
+<p>// Unsubscribe the observer</p>
+<p>person.getSick.unsubscribe(sub);</p>
+<p>// The person gets sick again, but the unsubscribed observer no
+longer receives the notification</p>
+<p>person.catchCold();</p>
+<h1 class="heading_sW0" id="part0001.xhtml_a28R">Visitor</h1>
+<p>Add operations to objects without having to modify them.</p>
+<p>The visitor design pattern is a way to separate an algorithm from an
+object structure it operates on. A practical result of this separation
+is the ability to add new operations to existing object structures
+without modifying those structures.</p>
+<p>Example:</p>
+<p>Let's take an example of the NumericExpression class that gives us
+the result of the given expression.</p>
+<p><span class="class_s28Y">1. NumericExpression Class:</span> This
+class represents a simple numeric expression with a value.</p>
+<p>class NumericExpression {</p>
+<p>constructor(value) {</p>
+<p>this.value = value;</p>
+<p>}</p>
+<p>print(buffer) {</p>
+<p>buffer.push(this.value.toString());</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">2. SumExpression Class:</span> This class
+represents a sum expression that takes two numeric expressions (left and
+right) and adds them.</p>
+<p>class SumExpression {</p>
+<p>constructor(left, right) {</p>
+<p>this.left = left;</p>
+<p>this.right = right;</p>
+<p>}</p>
+<p>print(buffer) {</p>
+<p>buffer.push('(');</p>
+<p>this.left.print(buffer);</p>
+<p>buffer.push('+');</p>
+<p>this.right.print(buffer);</p>
+<p>buffer.push(')');</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">3. Using the Visitor Pattern:</span> Next,
+you create a composite expression that represents "5 + (1 + 9)" using
+instances of the NumericExpression and SumExpression classes.</p>
+<p>let e = new SumExpression(</p>
+<p>new NumericExpression(5),</p>
+<p>new SumExpression(</p>
+<p>new NumericExpression(1),</p>
+<p>new NumericExpression(9)</p>
+<p>)</p>
+<p>);</p>
+<p><span class="class_s28Y">Printing the Expression:</span> Finally, you
+use the print() method to get a readable representation of the
+expression and store it in a buffer.</p>
+<p>let buffer = [];</p>
+<p>e.print(buffer);</p>
+<p>console.log(buffer.join('')); // Output: (5+(1+9))</p>
+<p>This example illustrates how the visitor design pattern allows you to
+add the printing operation to complex objects without having to modify
+their internal structure. This makes the code more flexible and
+extensible for future operations without affecting existing classes.</p>
+<p>Final Code:</p>
+<p>class NumericExpression {</p>
+<p>constructor(value) {</p>
+<p>this.value = value;</p>
+<p>}</p>
+<p>print(buffer) {</p>
+<p>buffer.push(this.value.toString());</p>
+<p>}</p>
+<p>}</p>
+<p>class SumExpression {</p>
+<p>constructor(left, right) {</p>
+<p>this.left = left;</p>
+<p>this.right = right;</p>
+<p>}</p>
+<p>print(buffer) {</p>
+<p>buffer.push('(');</p>
+<p>this.left.print(buffer);</p>
+<p>buffer.push('+');</p>
+<p>this.right.print(buffer);</p>
+<p>buffer.push(')');</p>
+<p>}</p>
+<p>}</p>
+<p>// Creating a composite expression: 5 + (1 + 9)</p>
+<p>let e = new SumExpression(</p>
+<p>new NumericExpression(5),</p>
+<p>new SumExpression(</p>
+<p>new NumericExpression(1),</p>
+<p>new NumericExpression(9)</p>
+<p>)</p>
+<p>);</p>
+<p>let buffer = [];</p>
+<p>e.print(buffer);</p>
+<p>console.log(buffer.join('')); // Expected Output: (5+(1+9))</p>
+<p>The expected output is (5+(1+9)), which is the representation of the
+"5 + (1 + 9)" expression after printing it using the visitor pattern.
+This code demonstrates how the visitor pattern allows <span
+id="part0001.xhtml_page_120"></span>adding the printing operation to
+complex objects without modifying their internal structure.</p>
+<h1 class="heading_sY6" id="part0001.xhtml_a28S">Strategy</h1>
+<p>Allows selecting one of the algorithms in certain situations.</p>
+<p>The strategy pattern is a behavioral software design pattern that
+allows selecting an algorithm at runtime. Instead of implementing a
+single algorithm directly, the code receives instructions at runtime on
+which one to use from a family of algorithms.</p>
+<p>Example:</p>
+<p>Let's take an example where we have a text processor that will
+display data based on the chosen strategy (HTML or Markdown).</p>
+<p>The strategy design pattern allows selecting an algorithm at runtime.
+<span class="class_s28Y">Here's the example step by step:</span></p>
+<p><span class="class_s28Y">1. Definition of Output Formats:</span> An
+OutputFormat object is defined that lists the available output formats,
+in this case, Markdown and HTML.</p>
+<p><span class="class_s28Y">2. Abstract Strategy Class
+ListStrategy:</span> An abstract class called ListStrategy is created,
+which defines abstract methods start, end, and addListItem. These
+methods will be implemented by specific strategies.</p>
+<p>class ListStrategy {</p>
+<p>start(buffer) {}</p>
+<p>end(buffer) {}</p>
+<p>addListItem(buffer, item) {}</p>
+<p>}</p>
+<p><span class="class_s28Y">3. Specific List Strategies:</span> Two
+classes are created that inherit from ListStrategy to implement specific
+strategies: MarkdownListStrategy and HTMLListStrategy. Each one
+implements the abstract methods of the base strategy according to its
+specific format.</p>
+<p>class MarkdownListStrategy extends ListStrategy {</p>
+<p>addListItem(buffer, item) {</p>
+<p>buffer.push(` * ${item}`);</p>
+<p>}</p>
+<p>}</p>
+<p>class HTMLListStrategy extends ListStrategy {</p>
+<p>start(buffer) {</p>
+<p>buffer.push("&lt;ul&gt;");</p>
+<p>}</p>
+<p>end(buffer) {</p>
+<p>buffer.push("&lt;/ul&gt;");</p>
+<p>}</p>
+<p>addListItem(buffer, item) {</p>
+<p>buffer.push(` &lt;li&gt;${item}&lt;/li&gt;`);</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">4. TextProcessor Class:</span> A
+TextProcessor class is created that accepts an output format and uses a
+specific list strategy based on the selected format.</p>
+<p>class TextProcessor {</p>
+<p>constructor(outputFormat) {</p>
+<p>this.buffer = [];</p>
+<p>this.setFormat(outputFormat);</p>
+<p>}</p>
+<p>setFormat(format) {</p>
+<p>switch (format) {</p>
+<p>case OutputFormat.markdown:</p>
+<p>this.listStrategy = new MarkdownListStrategy();</p>
+<p>break;</p>
+<p>case OutputFormat.html:</p>
+<p>this.listStrategy = new HTMLListStrategy();</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>appendList(items) {</p>
+<p>this.listStrategy.start(this.buffer);</p>
+<p>for (let item of items) {</p>
+<p>this.listStrategy.addListItem(this.buffer, item);</p>
+<p>}</p>
+<p>this.listStrategy.end(this.buffer);</p>
+<p>}</p>
+<p>clear() {</p>
+<p>this.buffer = [];</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return this.buffer.join("\\n");</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">5. Using the Text Processor:</span> An
+instance of TextProcessor is created, the output format is set, and a
+list is added. Then, the result is displayed.</p>
+<p>let textProcessor = new TextProcessor();</p>
+<p>textProcessor.setFormat(OutputFormat.markdown);</p>
+<p>textProcessor.appendList(["one", "two", "three"]);</p>
+<p>console.log(textProcessor.toString());</p>
+<p>textProcessor.clear();</p>
+<p>textProcessor.setFormat(OutputFormat.html);</p>
+<p>textProcessor.appendList(["one", "two", "three"]);</p>
+<p>console.log(textProcessor.toString());</p>
+<p>Final Code:</p>
+<p>// Enumeration of output formats</p>
+<p>let OutputFormat = Object.freeze({</p>
+<p>markdown: 0,</p>
+<p>html: 1,</p>
+<p>});</p>
+<p>// Abstract class ListStrategy</p>
+<p>class ListStrategy {</p>
+<p>start(buffer) {}</p>
+<p>end(buffer) {}</p>
+<p>addListItem(buffer, item) {}</p>
+<p>}</p>
+<p>// Specific strategy for Markdown format</p>
+<p>class MarkdownListStrategy extends ListStrategy {</p>
+<p>addListItem(buffer, item) {</p>
+<p>buffer.push(` * ${item}`);</p>
+<p>}</p>
+<p>}</p>
+<p>// Specific strategy for HTML format</p>
+<p>class HTMLListStrategy extends ListStrategy {</p>
+<p>start(buffer) {</p>
+<p>buffer.push("&lt;ul&gt;");</p>
+<p>}</p>
+<p>end(buffer) {</p>
+<p>buffer.push("&lt;/ul&gt;");</p>
+<p>}</p>
+<p>addListItem(buffer, item) {</p>
+<p>buffer.push(` &lt;li&gt;${item}&lt;/li&gt;`);</p>
+<p>}</p>
+<p>}</p>
+<p>// TextProcessor class</p>
+<p>class TextProcessor {</p>
+<p>constructor(outputFormat) {</p>
+<p>this.buffer = [];</p>
+<p>this.setFormat(outputFormat);</p>
+<p>}</p>
+<p>setFormat(format) {</p>
+<p>switch (format) {</p>
+<p>case OutputFormat.markdown:</p>
+<p>this.listStrategy = new MarkdownListStrategy();</p>
+<p>break;</p>
+<p>case OutputFormat.html:</p>
+<p>this.listStrategy = new HTMLListStrategy();</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>appendList(items) {</p>
+<p>this.listStrategy.start(this.buffer);</p>
+<p>for (let item of items) {</p>
+<p>this.listStrategy.addListItem(this.buffer, item);</p>
+<p>}</p>
+<p>this.listStrategy.end(this.buffer);</p>
+<p>}</p>
+<p>clear() {</p>
+<p>this.buffer = [];</p>
+<p>}</p>
+<p>toString() {</p>
+<p>return this.buffer.join("\\n");</p>
+<p>}</p>
+<p>}</p>
+<p>// Create an instance of the text processor</p>
+<p>let textProcessor = new TextProcessor();</p>
+<p>// Set the output format to Markdown</p>
+<p>textProcessor.setFormat(OutputFormat.markdown);</p>
+<p>// Append a list of items</p>
+<p>textProcessor.appendList(["one", "two", "three"]);</p>
+<p>// Display the output in Markdown format</p>
+<p>console.log("Markdown Format Output:");</p>
+<p>console.log(textProcessor.toString());</p>
+<p>// Clear the text processor</p>
+<p>textProcessor.clear();</p>
+<p>// Set the output format to HTML</p>
+<p>textProcessor.setFormat(OutputFormat.html);</p>
+<p>// Append a list of items</p>
+<p>textProcessor.appendList(["one", "two", "three"]);</p>
+<p>// Display the output in HTML format</p>
+<p>console.log("\\nHTML Format Output:");</p>
+<p>console.log(textProcessor.toString());</p>
+<p>Salida esperada en formato HTML:</p>
+<p>&lt;ul&gt;</p>
+<p>&lt;li&gt;one&lt;/li&gt;</p>
+<p>&lt;li&gt;two&lt;/li&gt;</p>
+<p>&lt;li&gt;three&lt;/li&gt;</p>
+<p>&lt;/ul&gt;</p>
+<p>This code demonstrates how different output format strategies
+(Markdown and HTML) can be easily switched at runtime using the strategy
+design pattern.</p>
+<h1 class="heading_s211" id="part0001.xhtml_a28T">State</h1>
+<p>Modifies the behavior of an object when its internal state
+changes.</p>
+<p>The State pattern is a behavioral software design pattern that allows
+an object to alter its behavior when its internal state changes. This
+pattern is closely related to the concept of finite state machines.</p>
+<p>Example:</p>
+<p>Let's take an example of a light switch in which turning the switch
+on or off changes its state.</p>
+<p>This is an example of the "State" design pattern, which allows an
+object to change its behavior when its internal state changes. Here is
+the code with comments explaining each step:</p>
+<p><span class="class_s28Y">Step 1:</span> We create two state classes,
+OnState and OffState, which inherit from the base State class. Each
+state class defines how the switch should behave when it is in that
+particular state.</p>
+<p>class OnState extends State {</p>
+<p>constructor() {</p>
+<p>super();</p>
+<p>console.log("Lights are on");</p>
+<p>}</p>
+<p>turnOff(sw) {</p>
+<p>console.log("Turning off the lights...");</p>
+<p>sw.state = new OffState();</p>
+<p>}</p>
+<p>}</p>
+<p>class OffState extends State {</p>
+<p>constructor() {</p>
+<p>super();</p>
+<p>console.log("Lights are off...");</p>
+<p>}</p>
+<p>turnOn(sw) {</p>
+<p>console.log("Turning on the lights...");</p>
+<p>sw.state = new OnState();</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2:</span> We create the Switch class,
+which contains an internal state and turnOn() and turnOff() methods to
+change the state. We initialize the switch with the off state.</p>
+<p>class Switch {</p>
+<p>constructor() {</p>
+<p>this.state = new OffState();</p>
+<p>}</p>
+<p>turnOn() {</p>
+<p>this.state.turnOn(this);</p>
+<p>}</p>
+<p>turnOff() {</p>
+<p>this.state.turnOff(this);</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3:</span> We create the abstract base
+class State, which defines the turnOn() and turnOff() methods. Concrete
+state classes must implement these methods.</p>
+<p>class State {</p>
+<p>constructor() {</p>
+<p>if (this.constructor === State) throw new Error("Abstract!");</p>
+<p>}</p>
+<p>turnOn(sw) {</p>
+<p>console.log("The light is on.");</p>
+<p>}</p>
+<p>turnOff(sw) {</p>
+<p>console.log("The light is off.");</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 4:</span> We create an instance of the
+Switch class and test its methods to change the state of the lights.
+First, we turn the lights on and then we turn them off.</p>
+<p>let lightSwitch = new Switch();</p>
+<p>lightSwitch.turnOn();</p>
+<p>lightSwitch.turnOff();</p>
+<p>This example demonstrates how the "State" design pattern allows an
+object, in this case, a light switch, to change its behavior based on
+its internal state (on or off). Each state has its own behaviors defined
+in the concrete state classes.</p>
+<p>Final Code:</p>
+<p>// Create two state classes</p>
+<p>class OnState extends State {</p>
+<p>constructor() {</p>
+<p>super();</p>
+<p>console.log("Lights are on");</p>
+<p>}</p>
+<p>turnOff(sw) {</p>
+<p>console.log("Turning off the lights...");</p>
+<p>sw.state = new OffState();</p>
+<p>}</p>
+<p>}</p>
+<p>class OffState extends State {</p>
+<p>constructor() {</p>
+<p>super();</p>
+<p>console.log("Lights are off...");</p>
+<p>}</p>
+<p>turnOn(sw) {</p>
+<p>console.log("Turning on the lights...");</p>
+<p>sw.state = new OnState();</p>
+<p>}</p>
+<p>}</p>
+<p>// Create the Switch class</p>
+<p>class Switch {</p>
+<p>constructor() {</p>
+<p>this.state = new OffState(); // Initialize with the off state</p>
+<p>}</p>
+<p>turnOn() {</p>
+<p>this.state.turnOn(this); // Call the turn-on method of the current
+state</p>
+<p>}</p>
+<p>turnOff() {</p>
+<p>this.state.turnOff(this); // Call the turn-off method of the current
+state</p>
+<p>}</p>
+<p>}</p>
+<p>// Create the abstract base class State</p>
+<p>class State {</p>
+<p>constructor() {</p>
+<p>if (this.constructor === State) throw new Error("Abstract!"); //
+Prevent direct instantiation</p>
+<p>}</p>
+<p>turnOn(sw) {</p>
+<p>console.log("The light is on.");</p>
+<p>}</p>
+<p>turnOff(sw) {</p>
+<p>console.log("The light is off.");</p>
+<p>}</p>
+<p>}</p>
+<p>// Create an instance of the Switch class and test its methods</p>
+<p>let lightSwitch = new Switch();</p>
+<p>lightSwitch.turnOn(); // Turn on the lights</p>
+<p>lightSwitch.turnOff(); // Turn off the lights</p>
+<h1 class="heading_s24C" id="part0001.xhtml_a28U">Template Method</h1>
+<p>Define the skeleton of an algorithm as an abstract class, specifying
+how it should be performed.</p>
+<p>Template Method is a method in a superclass, typically an abstract
+superclass, that defines the skeleton of an operation in terms of a
+series of high-level steps.</p>
+<p>Example:</p>
+<p>Let's take an example of a chess game. The Template Method design
+pattern is a design <span id="part0001.xhtml_page_136"></span>pattern
+that defines the skeleton of an algorithm in a superclass but allows
+subclasses to implement certain steps of the algorithm without changing
+its overall structure. <span class="class_s28Y">Here's the code step by
+step:</span></p>
+<p><span class="class_s28Y">Step 1:</span> We create the base class
+Game, which will serve as the game's skeleton and defines the overall
+flow of the game.</p>
+<p>class Game {</p>
+<p>constructor(numberOfPlayers) {</p>
+<p>this.numberOfPlayers = numberOfPlayers;</p>
+<p>this.currentPlayer = 0;</p>
+<p>}</p>
+<p>execute() {</p>
+<p>this.initialize();</p>
+<p>while (!this.haveWinner) {</p>
+<p>this.takeTurn();</p>
+<p>}</p>
+<p>console.log(`Player ${this.winningPlayer} wins.`);</p>
+<p>}</p>
+<p>initialize() {}</p>
+<p>get haveWinner() {}</p>
+<p>takeTurn() {}</p>
+<p>get winningPlayer() {}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 2:</span> We create the Chess class
+that inherits from Game and customizes specific details of the chess
+game, such as the number of players and maximum number of turns.</p>
+<p>class Chess extends Game {</p>
+<p>constructor() {</p>
+<p>super(2);</p>
+<p>this.maxTurns = 10;</p>
+<p>this.turn = 1;</p>
+<p>}</p>
+<p>initialize() {</p>
+<p>console.log(`Starting a chess game with ${this.numberOfPlayers}
+players.`);</p>
+<p>}</p>
+<p>get haveWinner() {</p>
+<p>return this.turn &gt; this.maxTurns;</p>
+<p>}</p>
+<p>takeTurn() {</p>
+<p>console.log(`Turn ${this.turn} taken by player
+${this.currentPlayer}`);</p>
+<p>this.currentPlayer = (this.currentPlayer + 1) %
+this.numberOfPlayers;</p>
+<p>this.turn++;</p>
+<p>}</p>
+<p>get winningPlayer() {</p>
+<p>return this.currentPlayer;</p>
+<p>}</p>
+<p>}</p>
+<p><span class="class_s28Y">Step 3:</span> We create an instance of the
+Chess class and execute the game by calling the execute method.</p>
+<p>let chess = new Chess();</p>
+<p>chess.execute();</p>
+<p>This example demonstrates how the Template Method design pattern is
+used to define the overall flow of the game in the base class Game and
+how specific game details are customized in the Chess class.</p>
+<p>Final Code:</p>
+<p>class Game {</p>
+<p>constructor(numberOfPlayers) {</p>
+<p>this.numberOfPlayers = numberOfPlayers;</p>
+<p>this.currentPlayer = 0;</p>
+<p>}</p>
+<p>execute() {</p>
+<p>this.initialize();</p>
+<p>while (!this.haveWinner) {</p>
+<p>this.takeTurn();</p>
+<p>}</p>
+<p>console.log(`Player ${this.winningPlayer} wins.`);</p>
+<p>}</p>
+<p>initialize() {}</p>
+<p>get haveWinner() {}</p>
+<p>takeTurn() {}</p>
+<p>get winningPlayer() {}</p>
+<p>}</p>
+<p>class Chess extends Game {</p>
+<p>constructor() {</p>
+<p>super(2);</p>
+<p>this.maxTurns = 10;</p>
+<p>this.turn = 1;</p>
+<p>}</p>
+<p>initialize() {</p>
+<p>console.log(`Starting a chess game with ${this.numberOfPlayers}
+players.`);</p>
+<p>}</p>
+<p>get haveWinner() {</p>
+<p>return this.turn &gt; this.maxTurns;</p>
+<p>}</p>
+<p>takeTurn() {</p>
+<p>console.log(`Turn ${this.turn} taken by player
+${this.currentPlayer}`);</p>
+<p>this.currentPlayer = (this.currentPlayer + 1) %
+this.numberOfPlayers;</p>
+<p>this.turn++;</p>
+<p>}</p>
+<p>get winningPlayer() {</p>
+<p>return this.currentPlayer;</p>
+<p>}</p>
+<p>}</p>
+<p>let chess = new Chess();</p>
+<p>chess.execute();</p>
+<p>// Expected Output:</p>
+<p>// Starting a chess game with 2 players.</p>
+<p>// Turn 1 taken by player 0</p>
+<p>// Turn 2 taken by player 1</p>
+<p>// Turn 3 taken by player 0</p>
+<p>// Turn 4 taken by player 1</p>
+<p>// Turn 5 taken by player 0</p>
+<p>// Turn 6 taken by player 1</p>
+<p>// Turn 7 taken by player 0</p>
+<p>// Turn 8 taken by player 1</p>
+<p>// Turn 9 taken by player 0</p>
+<p>// Turn 10 taken by player 1</p>
+<p>// Player 1 wins</p>
+<p>As you conclude "Advanced Design Patterns in JavaScript," remember:
+that your coding journey is perpetual. JavaScript's flexibility enables
+sophisticated design patterns, enhancing code quality.</p>
+<p>Keep embracing challenges, sharing knowledge, and engaging with the
+JavaScript community. Attend events, stay current, and contribute.</p>
+<p>Thank you for choosing our resource. Your potential is boundless;
+each line of code shapes the digital world. Success in your JavaScript
+adventures!</p>
+<p>Explore more at</p>
+<p>www.hernandoabella.com</p>

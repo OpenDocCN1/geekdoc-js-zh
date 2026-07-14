@@ -1,0 +1,18 @@
+name: Core Java (Programming Languages - JavaScript, Java)
+name_cn: Java 核心 (编程语言 - JavaScript, Java)
+slug: core-java-programming-languages---javascript-java
+toc:
+- - '##'
+  - 4.6 switch-case 语句
+- - '###'
+  - 11. JScrollbar - 它代表一个滚动条组件，允许用户从范围值中选择。
+- - '###'
+  - 12. JOptionPane - 它提供一组标准对话框，用于提示用户输入值。
+- - '###'
+  - 13. JFileChooser - 它代表一个对话框窗口，允许用户选择文件。
+- - '###'
+  - 14. JProgressBar - 它显示任务完成的百分比。
+- - '###'
+  - 15. JSlider – 用户可以通过在定义的区间内滑动旋钮来选择值。
+- - '###'
+  - 16. JSpinner – 它是一个单行输入字段，允许用户从有序序列中选择数字或对象值。
