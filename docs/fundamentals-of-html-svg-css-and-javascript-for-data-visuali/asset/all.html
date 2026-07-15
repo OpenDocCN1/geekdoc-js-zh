@@ -1,0 +1,4073 @@
+<p><img src="resources/title_page.png" /></p>
+<p><span id="title_page.xhtml"></span></p>
+<div id="title_page.xhtml_cover-image">
+<img src="resources/title_page.png"
+alt="Fundamentals of HTML, SVG, CSS and JavaScript for Data Visualisation" />
+</div>
+<p><span id="verso_page.xhtml"></span></p>
+<h2>Fundamentals of HTML, SVG, CSS and JavaScript for Data
+Visualisation</h2>
+<p> </p>
+<h4>Peter Cook</h4>
+<p> </p>
+<p>This book is for sale at <a
+href="http://leanpub.com/html-svg-css-js-for-data-visualisation">http://leanpub.com/html-svg-css-js-for-data-visualisation</a></p>
+<p>This version was published on 2022-10-17</p>
+<p><img src="resources/leanpub-logo.png" id="publisher-logo"
+alt="publisher&#39;s logo" /></p>
+<p>*   *   *   *   *</p>
+<p>This is a <a href="https://leanpub.com">Leanpub</a> book. Leanpub
+empowers authors and publishers with the Lean Publishing process. <a
+href="https://leanpub.com/manifesto">Lean Publishing</a> is the act of
+publishing an in-progress ebook using lightweight tools and many
+iterations to get reader feedback, pivot until you have the right book
+and build traction once you do.</p>
+<p>*   *   *   *   *</p>
+<div>
+© 2022 Peter Cook
+</div>
+<p><span id="toc.xhtml"></span></p>
+<section class="frontmatter TableOfContents toc">
+<h2 id="toc.xhtml_toc">Table of Contents</h2>
+<nav xmlns:epub="http://www.idpf.org/2007/ops" epub:type="landmarks" id="guide">
+<h2>Guide</h2>
+<ol>
+<li><a href="#chap00.xhtml" class="bodymatter">Begin Reading</a></li>
+</ol>
+</nav>
+</section>
+<p><span id="chap00.xhtml"></span></p>
+<h1 class="chapter" id="chap00.xhtml_leanpub-auto-introduction"><span
+class="section-number">1 </span>Introduction</h1>
+<p>Welcome! This book covers the fundamentals of HTML, SVG, CSS and
+JavaScript for those who are interested in visualising data. If you work
+with data you might spend most of your time using Excel, R or Python.
+You might be tasked with creating charts in a Python Jupyter notebook or
+creating a dashboard using R’s Shiny or Python’s Dash. Often these
+charts are built with HTML, SVG, CSS and JavaScript and a good
+understanding of these languages is useful when you need to dive
+deeper.</p>
+<p>Or you might be interested in learning D3 or other JavaScript
+charting libraries. In which case this book can help you get up to speed
+with HTML, SVG, CSS and JavaScript.</p>
+<p>This book doesn’t assume prior knowledge of these languages, but
+it’ll be helpful if you’ve some coding experience. Being familiar with a
+text editor (or IDE) will also be helpful.</p>
+<p>It’s by no means a comprehensive tutorial on HTML, SVG, CSS and
+JavaScript. You’d need a much bigger book for that. Think of this book
+as presenting the minimum of what you ought to know if you’re wanting to
+work with web based data visualisations. If you’d like to understand my
+other data visualisation books (such as D3 Start to Finish) you
+definitely need to understand the content in this book.</p>
+<h2 class="section" id="chap00.xhtml_leanpub-auto-setting-up"><span
+class="section-number">1.1 </span>Setting up</h2>
+<p>In order to get started quickly I recommend using <a
+href="https://codepen.io/">CodePen</a> to look at and experiment with
+code examples (see next section). At the end of this book, in the ‘Tools
+and Set-up’ chapter I show you how to set up tools so that you can write
+code locally (where the files are stored on your computer instead of on
+CodePen). This takes a bit of time to set up but I recommend this
+approach if you become more serious about web development.</p>
+<h2 class="section" id="chap00.xhtml_leanpub-auto-codepen"><span
+class="section-number">1.2 </span>CodePen</h2>
+<p><a href="https://codepen.io/">CodePen</a> is a web site that lets you
+experiment with HTML, SVG, CSS and JavaScript without having to set up
+any tools.</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/16bd52866cd98207c7c894c118bbd54e.png"
+style="width: 100%;" />
+<figcaption>This is CodePen. You can visit this example at
+https://codepen.io/createwithdata/pen/VwvpzOg</figcaption>
+</figure>
+</div>
+<p>At key points in the book there’ll be a link to a CodePen ‘pen’ that
+contains a code example. If you visit the link you’ll be able to view
+and experiment with the code. I encourage you to play around with the
+CodePen examples - there’s very little you can break and learning
+through experimentation is very effective.</p>
+<p>You can freely edit the CodePen examples from this book and your
+changes don’t affect the original example. If you want to keep your
+changes, click Fork (at the bottom of the page) and create a CodePen
+account (or log in). Save your work by clicking the Save button at the
+top of the page.</p>
+<h2 class="section" id="chap00.xhtml_leanpub-auto-stay-in-touch"><span
+class="section-number">1.3 </span>Stay in touch</h2>
+<p>I love to stay in touch with my readers. One of the best ways to do
+this is via my mailing list. I send occasional messages containing
+useful information related to implementing data visualisations (e.g.
+using JavaScript or other tools). There’ll also be discount codes for my
+other books. You can sign up <a
+href="https://mailchi.mp/085e79e8fd7c/create-with-data-newsletter">here</a>.</p>
+<h2 class="section" id="chap00.xhtml_leanpub-auto-translators"><span
+class="section-number">1.4 </span>Translators</h2>
+<p>If you’re interested in translating Fundamentals of HTML, SVG, CSS
+and JavaScript for Data Visualisation to another language contact me at
+info@createwithdata.com and I’ll be happy to discuss further.</p>
+<p><span id="chap01.xhtml"></span></p>
+<h1 class="chapter"
+id="chap01.xhtml_leanpub-auto-web-languages-html-svg-css--javascript"><span
+class="section-number">2 </span>Web languages: HTML, SVG, CSS &amp;
+JavaScript</h1>
+<p>Most websites and web applications (including data visualisations)
+are built from 4 languages: <strong>HTML</strong>, <strong>SVG</strong>,
+<strong>CSS</strong> and <strong>JavaScript</strong>.</p>
+<p>HTML stands for Hyper Text Markup Language and describes the
+<strong>content</strong> of a webpage.</p>
+<p>SVG stands for Scalable Vector Graphics and describes
+<strong>shapes</strong> such as circles, lines and rectangles. It’s
+often used when visualising data (to describe bars, lines, circles,
+axes, legends etc.).</p>
+<p>CSS stands for Cascading Style Sheets and describes the
+<strong>style</strong> (such as font weight, colour or size) and
+<strong>position</strong> of HTML and SVG elements.</p>
+<p>JavaScript is a programming language that can
+<strong>manipulate</strong> HTML and SVG, do general
+<strong>computation</strong> (such as data manipulation) and handle
+<strong>interaction</strong>.</p>
+<p>We’ll look at each of these in the upcoming chapters.</p>
+<p><span id="chap02.xhtml"></span></p>
+<h1 class="chapter" id="chap02.xhtml_leanpub-auto-html"><span
+class="section-number">3 </span>HTML</h1>
+<p>HTML is a language that defines the <strong>content</strong> of a
+webpage. It defines a webpage using elements to define headings,
+paragraphs, images, links etc. For example a paragraph element looks
+like:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+</div>
+</figure>
+<p>The paragraph element consists of an <strong>opening tag</strong>
+<code>&lt;p&gt;</code>, some <strong>content</strong> and a
+<strong>closing tag</strong> <code>&lt;/p&gt;</code>. Tags usually come
+in pairs. An opening tag looks like <code>&lt;p&gt;</code> and a closing
+tag looks like <code>&lt;/p&gt;</code>.</p>
+<p>When a web browser loads an HTML document it draws each element
+according to the type of element (paragraph, heading, image etc.). For
+example, the paragraph element above looks like the following when
+rendered in a web browser:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/bd2b66aaf5793ed7fb6769887aeb954c.png"
+style="width: 100%;" />
+<figcaption>A paragraph <code>&lt;p&gt;</code> element as rendered in a
+web browser</figcaption>
+</figure>
+</div>
+<p>There’s a large number of HTML elements but you can achieve a lot
+with just a few of them. This chapter looks at five common elements:
+headings, lists, images, <code>div</code> elements and <code>svg</code>
+elements. (These five elements are usually sufficient when visualising
+data.)</p>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-headings"><span
+class="section-number">3.1 </span>Headings</h2>
+<p>Heading elements are used for titles. There are six levels ranging
+from large (<code>&lt;h1&gt;</code>) to small
+(<code>&lt;h6&gt;</code>).</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;h1&gt;Main heading&lt;/h1&gt;
+&lt;h2&gt;Sub heading&lt;/h2&gt;
+&lt;h3&gt;Level 3 heading&lt;/h3&gt;
+&lt;h4&gt;Level 4 heading&lt;/h4&gt;
+&lt;h5&gt;Level 5 heading&lt;/h5&gt;
+&lt;h6&gt;Level 6 heading&lt;/h6&gt;</code></pre>
+</div>
+</figure>
+<p>These elements look like this when rendered in a web browser:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/842934fa7c3b7a8c7ff897a7d13bb3a1.png"
+style="width: 100%;" />
+<figcaption>Heading elements <code>&lt;h1&gt;</code> to
+<code>&lt;h6&gt;</code> rendered in a web browser</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>The web browser determines how each of these elements is styled. For
+example the <code>&lt;h1&gt;</code> is the largest and all the headings
+are rendered with bold text. You can set the style yourself using CSS
+(see the CSS chapter).</p>
+</aside>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-lists"><span
+class="section-number">3.2 </span>Lists</h2>
+<p>The list element <code>&lt;ul&gt;</code> is used to represent lists
+of items. Each item is represented by a list item element
+<code>&lt;li&gt;</code> and nested within the <code>&lt;ul&gt;</code>
+element:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;List item one&lt;/li&gt;
+  &lt;li&gt;List item two&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+</figure>
+<p>Notice that we’ve indented the <code>&lt;li&gt;</code> elements. This
+is optional but is the usual way to indicate nested elements. When
+displayed in a browser the list looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/c98f89915d42064563c9f2ccf1eb1b8a.png"
+style="width: 100%;" />
+<figcaption>List elements <code>&lt;ul&gt;</code> and
+<code>&lt;li&gt;</code> rendered in a web browser</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>By default list items are bulleted and displayed as a vertical list.
+However you can change how a list looks using CSS. Often navigation
+menus are represented using a list and CSS used to hide the bullet
+points and position the items as desired.</p>
+</aside>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-images"><span
+class="section-number">3.3 </span>Images</h2>
+<p>Images can be added to an HTML document using the
+<code>&lt;img&gt;</code> element. <code>&lt;img&gt;</code> elements
+require an <strong>attribute</strong> named <code>src</code> that
+specifies the URL of the image.</p>
+<aside class="discussion blurb">
+<p>Attributes can be added to the opening tag of any HTML element and
+they specify additional information about the element. They take the
+form <code>name="value"</code> where the value is always in quotes.</p>
+</aside>
+<p>Image elements don’t have a closing tag. Here’s an image element that
+displays an image located at
+<code>https://picsum.photos/id/127/300/200.jpg</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;img src=&quot;https://picsum.photos/id/127/300/200.jpg&quot;&gt;</code></pre>
+</div>
+</figure>
+<p>This example looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/bd967b4e4ad159da03d87bd9e9dc23fd.png"
+style="width: 100%;" />
+<figcaption>Image element <code>&lt;img&gt;</code> rendered in a web
+browser</figcaption>
+</figure>
+</div>
+<p>Typically your image files will live alongside your source code. For
+example, you might have an image file <code>my-image.jpg</code> within a
+directory named <code>images</code>. In this case you’d write:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;img src=&quot;images/my-image.jpg&quot;&gt;</code></pre>
+</div>
+</figure>
+<p>By default images are displayed at their original size. You can set
+the display width (or height) of an image using the <code>width</code>
+(or <code>height</code>) attribute. Let’s set the width of the previous
+image to 200 pixels:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;img width=&quot;200px&quot; src=&quot;images/my-image.jpg&quot;&gt;</code></pre>
+</div>
+</figure>
+<p>We’ll cover measurement units (such as <code>px</code>) in the CSS
+chapter.</p>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-div-element"><span
+class="section-number">3.4 </span><code>&lt;div&gt;</code> element</h2>
+<p>The <code>&lt;div&gt;</code> element is a general purpose element
+that is often used for grouping and organising content. It’s also a good
+fallback element when none of the other elements are suitable. Here’s an
+example where <code>&lt;div&gt;</code> elements are used to structure a
+web page:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div&gt;
+  &lt;h1&gt;Main title&lt;/h1&gt;
+  &lt;h2&gt;Secondary title&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h3&gt;Article title&lt;/h3&gt;
+  &lt;div&gt;
+    &lt;p&gt;First paragraph&lt;/p&gt;
+    &lt;p&gt;Second paragraph&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>Notice how the elements have been indented. This is optional and
+doesn’t affect how the elements appear in the browser but it’s useful
+when reading and working with the code.</p>
+<p>The above example looks like the following when rendered in a web
+browser:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/8d76a2ccf46fd6f7ea23fce904abfb73.png"
+style="width: 100%;" />
+<figcaption>The general purpose <code>&lt;div&gt;</code> element
+rendered in a web browser</figcaption>
+</figure>
+</div>
+<p>See if you can relate each HTML element to each line of output.</p>
+<aside class="discussion blurb">
+<p>By default the <code>&lt;div&gt;</code> elements don’t affect how the
+HTML is rendered. In other words, the above HTML will look the same with
+or without the <code>&lt;div&gt;</code> elements. However you can add
+CSS to style the <code>&lt;div&gt;</code> elements. For example you
+could add margins to each <code>&lt;div&gt;</code> to add more space
+between the headings.</p>
+</aside>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-svg-element"><span
+class="section-number">3.5 </span><code>&lt;svg&gt;</code> element</h2>
+<p>The <code>&lt;svg&gt;</code> element is used when you want to include
+SVG in your page. SVG stands for Scalable Vector Graphics and is a
+language for describing shapes such as lines, circles and rectangles
+(see the SVG chapter). The <code>&lt;svg&gt;</code> element acts as a
+container for your SVG shapes. For example, to add a circle to your web
+page you can use:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;circle r=&quot;100&quot;&gt;&lt;/circle&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>Inside the <code>&lt;svg&gt;</code> element are two
+<strong>attributes</strong>: <code>width</code> and <code>height</code>.
+These are similar to the <code>width</code> and <code>height</code>
+attributes in <code>&lt;img&gt;</code> elements.</p>
+<p>It’s quite important to specify the SVG element’s size (using
+<code>width</code> and <code>height</code> attributes) because its
+default size is quite small and shapes are cropped to the SVG’s
+boundary.</p>
+<p>SVG will be covered in greater depth in the SVG chapter.</p>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-wrapping-up"><span
+class="section-number">3.6 </span>Wrapping up</h2>
+<p>There are many other HTML elements but when visualising data the ones
+covered in this section are the most common.</p>
+<p>You can see a comprehensive list of HTML elements at <a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>.</p>
+<aside class="discussion blurb">
+<p>Most of the examples in this book are presented using CodePen which
+makes it very easy to get started. However it doesn’t reveal the whole
+story. Web pages are typically made up of individual HTML, CSS and
+JavaScript documents. HTML documents typically contain extra information
+that CodePen doesn’t show. We’ll look at this in more detail in the
+‘Tools and set-up’ chapter.</p>
+</aside>
+<h2 class="section" id="chap02.xhtml_leanpub-auto-exercises"><span
+class="section-number">3.7 </span>Exercises</h2>
+<p>Here’s some HTML that includes most of the elements covered in this
+chapter:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div&gt;
+  &lt;h1&gt;Main header&lt;/h1&gt;
+  &lt;h2&gt;Sub header&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;h4&gt;Article title&lt;/h4&gt;
+  &lt;div&gt;
+    &lt;p&gt;First paragraph&lt;/p&gt;
+    &lt;img src=&quot;https://picsum.photos/id/127/300/200.jpg&quot;&gt;
+    &lt;p&gt;Second paragraph&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List item one&lt;/li&gt;
+      &lt;li&gt;List item two&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Third paragraph&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>You can open this example on CodePen at <a
+href="https://codepen.io/createwithdata/pen/ExQGeeY">https://codepen.io/createwithdata/pen/ExQGeeY</a>.</p>
+<p>Try the following:</p>
+<ol>
+<li>Change the text inside the headings.</li>
+<li>Change the <code>&lt;h4&gt;</code> &amp; <code>&lt;/h4&gt;</code>
+tags to <code>&lt;h4&gt;</code> and <code>&lt;/h4&gt;</code>.</li>
+<li>Add a new paragraph containing some text.</li>
+<li>Change the image URL to
+<code>https://picsum.photos/id/104/384/216</code></li>
+<li>Change the image’s width to 150 pixels.</li>
+<li>Add another list item.</li>
+</ol>
+<p><span id="chap03.xhtml"></span></p>
+<h1 class="chapter" id="chap03.xhtml_leanpub-auto-svg"><span
+class="section-number">4 </span>SVG</h1>
+<p>SVG (Scalable Vector Graphics) is a language for describing shapes.
+It has a similar structure to HTML but it describes shapes rather than
+text. The most common SVG elements when visualising data are:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;line&gt;</code></td>
+<td>Line</td>
+</tr>
+<tr>
+<td><code>&lt;rect&gt;</code></td>
+<td>Rectangle</td>
+</tr>
+<tr>
+<td><code>&lt;circle&gt;</code></td>
+<td>Circle</td>
+</tr>
+<tr>
+<td><code>&lt;text&gt;</code></td>
+<td>Text</td>
+</tr>
+<tr>
+<td><code>&lt;g&gt;</code></td>
+<td>Group (for grouping elements)</td>
+</tr>
+<tr>
+<td><code>&lt;path&gt;</code></td>
+<td>Path (a general purpose, free-form shape)</td>
+</tr>
+</tbody>
+</table>
+<p>Each element requires a number of attributes to define its position
+and size. We saw in the HTML chapter that an attribute looks like
+<code>name="value"</code> and is inserted inside an opening tag. For
+example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;circle r=&quot;100&quot;&gt;&lt;/circle&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>In the above snippet the <code>&lt;svg&gt;</code> element has two
+attributes <code>width</code> and <code>height</code> and the
+<code>&lt;circle&gt;</code> element has an attribute <code>r</code> with
+value <code>100</code>. We’ll see later that the <code>r</code>
+attribute specifies the circle radius.</p>
+<h2 class="section"
+id="chap03.xhtml_leanpub-auto-adding-svg-to-a-web-page"><span
+class="section-number">4.1 </span>Adding SVG to a web page</h2>
+<p>SVG shape elements may be added to an HTML document by enclosing them
+within an <code>&lt;svg&gt;</code> element. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;h3&gt;Here&#39;s some shapes:&lt;/h3&gt;
+
+&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;circle r=&quot;100&quot;&gt;&lt;/circle&gt;
+  &lt;line x1=&quot;10&quot; y1=&quot;10&quot; x2=&quot;100&quot; y2=&quot;10&quot;&gt;&lt;/line&gt; 
+&lt;/svg&gt;
+
+&lt;p&gt;Above is a circle and a line.&lt;/p&gt;</code></pre>
+</div>
+</figure>
+<h2 class="section" id="chap03.xhtml_leanpub-auto-svg-elements"><span
+class="section-number">4.2 </span>SVG elements</h2>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-line"><span
+class="section-number">4.2.1 </span>Line</h3>
+<p><code>&lt;line&gt;</code> elements represent straight lines. They
+have 4 attributes:</p>
+<ul>
+<li><code>x1</code> and <code>y1</code> which define the start of the
+line</li>
+<li><code>x2</code> and <code>y2</code> which define the end of the
+line</li>
+</ul>
+<p>For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;100&quot;&gt;
+  &lt;line x1=&quot;50&quot; y1=&quot;50&quot; x2=&quot;200&quot; y2=&quot;50&quot;&gt;&lt;/line&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>defines a line whose start coordinate is (50,50) and end coordinate
+is (200,50). Each attribute is measured in pixels. The above example
+looks like the following:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/0f7e66f6a0c9e74d4c39d63e32080531.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;line&gt;</code> element (with the
+<code>&lt;svg&gt;</code> element represented by grey
+outline)</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>In SVG the coordinate (0,0) is at the top-left of the SVG element.
+The x coordinate goes from left to right and the y coordinate goes from
+top to bottom.</p>
+<p>Although it seems unnecessary SVG elements <strong>do</strong>
+require a closing tag!</p>
+<p>By default, SVG lines are white, so without additional CSS rules they
+won’t show up! You’ll lean about styling using CSS in the next chapter
+and the Codepen example also contains a CSS rule for setting the line
+colour.</p>
+</aside>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-rectangle"><span
+class="section-number">4.2.2 </span>Rectangle</h3>
+<p><code>&lt;rect&gt;</code> elements define rectangles and have 4
+attributes:</p>
+<ul>
+<li><code>x</code> and <code>y</code> which define the top left
+position</li>
+<li><code>width</code> and <code>height</code></li>
+</ul>
+<p>For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;150&quot;&gt;
+  &lt;rect x=&quot;50&quot; y=&quot;50&quot; width=&quot;200&quot; height=&quot;50&quot;&gt;&lt;/rect&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>defines a rectangle whose top-left corner is at (50,50) and has a
+width of 200 pixels and height of 50 pixels. This example looks
+like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/0b00275bef9811eba831ded2f38a2e71.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;rect&gt;</code> element</figcaption>
+</figure>
+</div>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-circle"><span
+class="section-number">4.2.3 </span>Circle</h3>
+<p><code>&lt;circle&gt;</code> elements have 3 attributes:</p>
+<ul>
+<li><code>cx</code> and <code>cy</code> which define the circle
+center</li>
+<li><code>r</code> which defines the radius</li>
+</ul>
+<p>For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;150&quot;&gt;
+  &lt;circle cx=&quot;100&quot; cy=&quot;75&quot; r=&quot;50&quot;&gt;&lt;/circle&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/a903dac8725a3e3e595983ca2ee24003.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;circle&gt;</code> element centered at (100,75)
+with radius 50</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>Make sure you use <code>cx</code> and <code>cy</code> (and not
+<code>x</code> and <code>y</code>) when defining a circle’s center.</p>
+</aside>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-text"><span
+class="section-number">4.2.4 </span>Text</h3>
+<p><code>&lt;text&gt;</code> elements have 2 attributes <code>x</code>
+and <code>y</code> which define the bottom-left corner of the text.</p>
+<p>Unlike most SVG elements, <code>&lt;text&gt;</code> elements have
+content between the opening and closing tags:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;100&quot;&gt;
+  &lt;text x=&quot;50&quot; y=&quot;50&quot;&gt;Some SVG text&lt;/text&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>This example renders as:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/0cbee3579876266ec846058c0407e3a5.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;text&gt;</code> element whose bottom-left is at
+(100,50)</figcaption>
+</figure>
+</div>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-group"><span
+class="section-number">4.2.5 </span>Group</h3>
+<p><code>&lt;g&gt;</code> elements are used to group SVG elements and
+are particularly useful when an object is made up of a few elements.
+They’re a bit like HTML’s <code>&lt;div&gt;</code> elements. For example
+a circle with text label could be represented as:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;g&gt;
+    &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;20&quot;&gt;&lt;/circle&gt;
+    &lt;text x=&quot;75&quot; y=&quot;55&quot;&gt;My label&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>This example renders as:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/21f9c866b1124600f3c3266a253d3e29.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;g&gt;</code> element containing two
+elements</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>In practice you should position the circle at (0,0) and transform the
+group as a whole (see the next section on transformations).</p>
+</aside>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-path"><span
+class="section-number">4.2.6 </span>Path</h3>
+<p><code>&lt;path&gt;</code> elements have a single attribute
+<code>d</code> which contains a list of drawing commands:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;100&quot;&gt;
+  &lt;path d=&quot;M20,20 l200,0 l0,50 z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>In this example, three commands are used:</p>
+<ul>
+<li><code>M</code> which means move to a given coordinate</li>
+<li><code>l</code> which means draw a line relative to the current
+position</li>
+<li><code>z</code> which means close the shape</li>
+</ul>
+<p>Therefore:</p>
+<ul>
+<li><code>M20,20</code> means move to the coordinates
+<code>20,20</code></li>
+<li><code>l200,0</code> means draw a line <code>200</code> pixels to the
+right</li>
+<li><code>l0,50</code> means draw a line <code>50</code> pixels
+down</li>
+<li><code>z</code> means close the shape</li>
+</ul>
+<p>This renders as:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/71929891d09771adec546a417e46434d.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;path&gt;</code> element</figcaption>
+</figure>
+</div>
+<p>If you’d like more information on the path commands visit <a
+href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths">https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths</a>.</p>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-exercises-1"><span
+class="section-number">4.2.7 </span>Exercises</h3>
+<p>Here’s some SVG that includes most of the elements covered in this
+chapter:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;line x1=&quot;20&quot; y1=&quot;50&quot; x2=&quot;220&quot; y2=&quot;50&quot;&gt;&lt;/line&gt;
+  &lt;rect x=&quot;20&quot; y=&quot;100&quot; width=&quot;200&quot; height=&quot;50&quot;&gt;&lt;/rect&gt;
+  &lt;circle cx=&quot;300&quot; cy=&quot;50&quot; r=&quot;50&quot;&gt;&lt;/circle&gt;
+  &lt;text x=&quot;300&quot; y=&quot;150&quot;&gt;SVG Text&lt;/text&gt;
+  &lt;path d=&quot;M20,180 l200,0 l0,50 z&quot;&gt;&lt;/path&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>You can open this example on CodePen at <a
+href="https://codepen.io/createwithdata/pen/poJqELb">https://codepen.io/createwithdata/pen/poJqELb</a>.</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/d3e97ea9e32a9b7452cbdac3052eb599.png"
+style="width: 100%;" />
+<figcaption>SVG shapes</figcaption>
+</figure>
+</div>
+<p>Try the following:</p>
+<ol>
+<li>Make the line shorter.</li>
+<li>Give the circle a smaller radius.</li>
+<li>Move the rectangle up or down.</li>
+<li>Change the conent of the <code>&lt;text&gt;</code> element.</li>
+</ol>
+<p>SVG is a cornerstone of web-based data visualisation. Most data
+visualisation you see on the web (particularly if it’s interactive) is
+SVG based. Typically they’ll be made up of the elements you’ve covered
+in this section. Next time you see a data visualisation on the web see
+if you can identify some of the shapes that might be in use.</p>
+<h2 class="section" id="chap03.xhtml_leanpub-auto-svg-transforms"><span
+class="section-number">4.3 </span>SVG Transforms</h2>
+<p>SVG transforms change the position, size and shape of an SVG element
+in a number of ways including <strong>translation</strong>,
+<strong>scaling</strong> and <strong>rotation</strong>. A translation
+transformation moves an element by a given x and y value. A scaling
+transformation makes an element larger or smaller. A rotation
+transformation rotates an element.</p>
+<p>A transform can be added to a SVG element using the
+<code>transform</code> attribute. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;circle transform=&quot;translate(100,100)&quot;&gt;&lt;/circle&gt;</code></pre>
+</div>
+</figure>
+<p>SVG transforms include <code>translate</code>, <code>rotate</code>,
+<code>scale</code>, <code>skewX</code> and <code>skewY</code>. In this
+section we’ll cover <code>translate</code> and <code>rotate</code> as
+these are common in data visualisation.</p>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-translate"><span
+class="section-number">4.3.1 </span>Translate</h3>
+<p>Suppose you have a circle centered at <code>(0,0)</code> with radius
+50:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;circle r=&quot;50&quot;&gt;&lt;/circle&gt;</code></pre>
+</div>
+</figure>
+<p>The default position of a circle is (0,0) which corresponds to the
+origin at the top left of the SVG container (represented by the grey box
+below). This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/e5c8ead4b7c5cf0c5670588f102d282d.png"
+style="width: 100%;" />
+<figcaption>SVG circle in default position</figcaption>
+</figure>
+</div>
+<p>You can apply a translate transform to the circle using
+<code>translate(x,y)</code> where <code>x</code> and <code>y</code> are
+the amounts to move by in the <code>x</code> and <code>y</code>
+directions:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;circle r=&quot;50&quot; transform=&quot;translate(200,75)&quot;&gt;&lt;/circle&gt;</code></pre>
+</div>
+</figure>
+<p>The above transform moves the circle by 200 in the x direction and 75
+in the y direction. This results in a circle centered at (200,75):</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/002e129474ba0a5783ce3cb97ad4d761.png"
+style="width: 100%;" />
+<figcaption>SVG circle translated by (200,75)</figcaption>
+</figure>
+</div>
+<p>You can apply transforms to any type of SVG element including
+<code>g</code> elements. Suppose you have a <code>&lt;g&gt;</code>
+element containing a circle and a text label:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;g&gt;
+  &lt;circle r=&quot;50&quot;&gt;&lt;/circle&gt;
+  &lt;text y=&quot;6&quot;&gt;Label&lt;/text&gt;
+&lt;/g&gt;</code></pre>
+</div>
+</figure>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/f38617a9892ff1e7b6fda451f710e968.png"
+style="width: 100%;" />
+<figcaption>SVG circle and label before transforming</figcaption>
+</figure>
+</div>
+<p>You can apply a translate transform to the group:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;g transform=&quot;translate(100,75)&quot;&gt;
+  &lt;circle r=&quot;50&quot;&gt;&lt;/circle&gt;
+  &lt;text y=&quot;6&quot;&gt;Label&lt;/text&gt;
+&lt;/g&gt;</code></pre>
+</div>
+</figure>
+<p>This has the effect of moving the circle and text element by the same
+amount:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/99945862c2198d1e33baf852f0965d84.png"
+style="width: 100%;" />
+<figcaption>SVG circle and label after translation</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>This is a very common pattern when working with SVG. You’re often
+grouping items together and I recommend transforming the group as a
+whole (rather than transforming or positioning each individual
+element).<br />
+Note that in this example I’ve added some CSS to horizontally center the
+label. See the CSS chapter to learn more about CSS.</p>
+</aside>
+<h3 class="subsection" id="chap03.xhtml_leanpub-auto-rotate"><span
+class="section-number">4.3.2 </span>Rotate</h3>
+<p>Suppose you have a rectangle:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect x=&quot;50&quot; y=&quot;50&quot; width=&quot;200&quot; height=&quot;20&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/1cb3b8bfc2f9008e7b44baec21313329.png"
+style="width: 100%;" />
+<figcaption>SVG rectangle without rotation</figcaption>
+</figure>
+</div>
+<p>You can apply a rotate transform using <code>rotate(a)</code> which
+rotates an element by <code>a</code> degrees in the clockwise direction
+about the origin (0,0):</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect x=&quot;50&quot; y=&quot;50&quot; width=&quot;200&quot; height=&quot;20&quot; transform=&quot;rotate(20)&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>This results in:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/d422173863d118d3c3dea47ad89afdb8.png"
+style="width: 100%;" />
+<figcaption>SVG rectangle with rotation (dotted rectangle represents
+untransformed <code>&lt;rect&gt;</code>)</figcaption>
+</figure>
+</div>
+<p>The rectangle has rotated 20 degrees about the origin (0,0). (The
+origin is the top left corner of the SVG container.)</p>
+<p>You can specify a new center of rotation by adding coordinates after
+the angle. The following rotates the rectangle about its center
+(150,60):</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect x=&quot;50&quot; y=&quot;50&quot; width=&quot;200&quot; height=&quot;20&quot; transform=&quot;rotate(20 150 60)&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>This results in:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/c1c67c58ad5fa846a7916943e265db3d.png"
+style="width: 100%;" />
+<figcaption>SVG rectangle with rotation about the rectangle’s
+center</figcaption>
+</figure>
+</div>
+<h3 class="subsection"
+id="chap03.xhtml_leanpub-auto-combining-transforms"><span
+class="section-number">4.3.3 </span>Combining transforms</h3>
+<p>Transforms can be combined by writing them one after the other:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect transform=&quot;rotate(45) translate(100,0)&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>It’s important to understand that the transforms specify
+<strong>transformations of the coordinate system</strong>. For example,
+in the above code snippet, the coordinate system is rotated by 45
+degrees then translated by (100,0).</p>
+<p>Let’s have a closer look how transforms combine. Here’s a rectangle
+without a transform:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect width=&quot;50&quot; height=&quot;10&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/72283a634fcb8c1ea0db9402d89de5c5.png"
+style="width: 100%;" />
+<figcaption>Untransformed rectangle (with coordinate
+system)</figcaption>
+</figure>
+</div>
+<p>Now let’s add a rotate transform:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect width=&quot;50&quot; height=&quot;10&quot; transform=&quot;rotate(45)&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>This results in:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/64904faff152306e9d8751f828080054.png"
+style="width: 100%;" />
+<figcaption>Rotated coordinate system</figcaption>
+</figure>
+</div>
+<p>The coordinate system has rotated by 45 degrees and the rectangle is
+drawn in the <strong>transformed coordinate system</strong>.</p>
+<p>Now let’s add a translation of 100 pixels in the x direction:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;rect width=&quot;50&quot; height=&quot;10&quot; transform=&quot;rotate(45) translate(100,0)&quot;&gt;&lt;/rect&gt;</code></pre>
+</div>
+</figure>
+<p>This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/5c9ad1fa03bf3749d87a6565eca78545.png"
+style="width: 100%;" />
+<figcaption>Rotated and translated coordinate system</figcaption>
+</figure>
+</div>
+<p>The coordinate system is 1) rotated about the origin by 45 degrees
+then 2) transformed by 100 pixels in the direction of the rotated
+x-axis. (The coordinate system with just the rotate transform is shown
+faintly.)</p>
+<h2 class="section" id="chap03.xhtml_leanpub-auto-exercises-2"><span
+class="section-number">4.4 </span>Exercises</h2>
+<p>Here’s the labelled circle SVG:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;800&quot; height=&quot;600&quot;&gt;
+  &lt;g transform=&quot;translate(100,75)&quot;&gt;
+    &lt;circle r=&quot;50&quot;&gt;&lt;/circle&gt;
+    &lt;text y=&quot;6&quot;&gt;Label&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/MWwZjPp">https://codepen.io/createwithdata/pen/MWwZjPp</a>
+to view this example in CodePen.</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/99945862c2198d1e33baf852f0965d84.png"
+style="width: 100%;" />
+<figcaption>SVG circle and label after translation</figcaption>
+</figure>
+</div>
+<p>Try the following (see if you can guess the effect before changing
+the code):</p>
+<ol>
+<li>Change the translate transform and observe the effect on the
+labelled circle group.</li>
+<li>Add a rotate transform after the translate and see the effect on the
+group.</li>
+</ol>
+<p><span id="chap04.xhtml"></span></p>
+<h1 class="chapter" id="chap04.xhtml_leanpub-auto-css"><span
+class="section-number">5 </span>CSS</h1>
+<p>CSS (Cascading Style Sheets) is a language for
+<strong>styling</strong> and <strong>positioning</strong> HTML and SVG
+elements. Styling means changing the appearance (such as
+<strong>size</strong>, <strong>colour</strong> and
+<strong>font</strong>) of HTML and SVG elements.</p>
+<p>In the next section we look at the structure of CSS. We then look at
+CSS measurement units followed by common CSS properties.</p>
+<h2 class="section"
+id="chap04.xhtml_leanpub-auto-the-structure-of-css"><span
+class="section-number">5.1 </span>The Structure of CSS</h2>
+<p>A CSS stylesheet is list of <strong>rules</strong>. Here’s a single
+CSS rule:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>h1 {
+  color: green;
+  font-size: 20px;
+}</code></pre>
+</div>
+</figure>
+<p>Each rule comprises a <strong>selector</strong> and a list of
+<strong>declarations</strong>. In the above example the selector is
+<code>h1</code> and the declarations are <code>color: green;</code> and
+<code>font-size: 20px;</code>.</p>
+<p>The selector defines <strong>which</strong> HTML or SVG elements are
+to be styled. The declaration defines <strong>how</strong> the elements
+are to be styled. Each declaration consists of a
+<strong>property</strong> and a <strong>value</strong>. In the
+declaration <code>color: green;</code> the property is
+<code>color</code> and the value is <code>green</code>.</p>
+<p>The rule in the above example mean that on all <code>h1</code>
+elements the colour is set to green and the font size to 20 pixels (in
+height). As an example, suppose you have an <code>&lt;h1&gt;</code>
+element:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;h1&gt;The title&lt;/h1&gt;</code></pre>
+</div>
+</figure>
+<p>Without the CSS rule applied, this looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 33%">
+<img src="resources/c915d4d3d5dd1bf7acb228db6b3c3d29.png"
+style="width: 100%;" />
+<figcaption><code>h1</code> element without CSS</figcaption>
+</figure>
+</div>
+<p>If you apply the CSS rule:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>h1 {
+  color: green;
+  font-size: 20px;
+}</code></pre>
+</div>
+</figure>
+<p>you get:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 33%">
+<img src="resources/2091f1019ff68f45518eaabd457affa0.png"
+style="width: 100%;" />
+<figcaption><code>&lt;h1&gt;</code> element styled using
+CSS</figcaption>
+</figure>
+</div>
+<h2 class="section" id="chap04.xhtml_leanpub-auto-css-units"><span
+class="section-number">5.2 </span>CSS Units</h2>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-size-units"><span
+class="section-number">5.2.1 </span>Size units</h3>
+<p>Sizes may be expressed using the following units:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Unit</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>px</code></td>
+<td>Pixels</td>
+<td><code>12px</code></td>
+</tr>
+<tr>
+<td><code>rem</code></td>
+<td>Relative to the web page’s default font size</td>
+<td><code>1.5rem</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Percentage of the value of the element’s parent</td>
+<td><code>50%</code></td>
+</tr>
+<tr>
+<td><code>vw</code></td>
+<td>Percentage of the viewport’s width</td>
+<td><code>25vw</code></td>
+</tr>
+<tr>
+<td><code>vh</code></td>
+<td>Percentage of the viewport’s height</td>
+<td><code>100vh</code></td>
+</tr>
+</tbody>
+</table>
+<p>Typically the web page’s default font size is 16px so
+<code>1.5rem</code> means <code>24px</code>.</p>
+<p>These units are usually sufficient when building data
+visualisations.</p>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-colour-units"><span
+class="section-number">5.2.2 </span>Colour units</h3>
+<p>Colours may be expressed in the following manner:</p>
+<table style="width: 100%">
+<thead>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Colour name</td>
+<td>A colour name. The full list of possible colours is <a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">here</a>.</td>
+<td><code>red</code>, <code>green</code>, <code>steelblue</code></td>
+</tr>
+<tr>
+<td>RGB</td>
+<td><code>rgb</code> followed by red, green and blue values in brackets,
+expressed as numbers <code>0</code> to <code>255</code>.</td>
+<td><code>rgb(255, 100, 255)</code></td>
+</tr>
+<tr>
+<td>Hex code</td>
+<td>A <code>#</code> symbol followed by red, green &amp; blue values in
+hexadecimal (<code>00</code> to <code>FF</code>). If all three values
+have duplicate digits e.g. <code>#FFDD33</code> you can shorten it to
+<code>#FD3</code>.</td>
+<td><code>#FF595E, #FD3</code></td>
+</tr>
+</tbody>
+</table>
+<p>In my experience the above colour units are sufficient when building
+data visualisations. If you wish to dive deeper take a look at MDN’s
+guide to <a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color">HTML
+colour</a>.</p>
+<h2 class="section" id="chap04.xhtml_leanpub-auto-css-properties"><span
+class="section-number">5.3 </span>CSS Properties</h2>
+<p>Some CSS properties apply to HTML elements, some apply to SVG
+elements and others apply to both HTML and SVG elements. Let’s start by
+looking at CSS properties for HTML elements.</p>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-css-properties-for-html"><span
+class="section-number">5.3.1 </span>CSS properties for HTML</h3>
+<p>Some of the most common properties for HTML elements are:</p>
+<table style="width: 100%">
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example values</strong></th>
+<th><strong>More info</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>color</code></td>
+<td>Text colour</td>
+<td><code>red</code>, <code>#FF595E</code>,
+<code>rgb(255, 100, 255)</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">More</a></td>
+</tr>
+<tr>
+<td><code>background-color</code></td>
+<td>Background colour</td>
+<td><code>black</code>, <code>#CCC</code>,
+<code>rgb(0, 0, 10)</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">More</a></td>
+</tr>
+<tr>
+<td><code>border</code></td>
+<td>Border (around the content of the element)</td>
+<td><code>solid</code> (solid line), <code>1px dashed red</code> (red
+dashed line)</td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">More</a></td>
+</tr>
+<tr>
+<td><code>padding</code></td>
+<td>Width of the space between the content and the border</td>
+<td><code>10px</code>, <code>2rem</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">More</a></td>
+</tr>
+<tr>
+<td><code>margin</code></td>
+<td>Width of the space around the border</td>
+<td><code>10px</code>, <code>2rem</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">More</a></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td>Opacity (or transparency)</td>
+<td><code>0</code> (transparent), <code>0.5</code> (semi-opaque),
+<code>1</code> (opaque)</td>
+<td><a
+href="https://developer.mozilla.org/docs/Web/CSS/opacity">More</a></td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Text size</td>
+<td><code>12px</code>, <code>1.5rem</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">More</a></td>
+</tr>
+<tr>
+<td><code>font-family</code></td>
+<td>Font family</td>
+<td><code>Helvetica</code>, <code>Verdana</code>,
+<code>sans-serif</code>, <code>serif</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">More</a></td>
+</tr>
+<tr>
+<td><code>font-weight</code></td>
+<td>Font weight</td>
+<td><code>lighter</code>, <code>normal</code>, <code>bold</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">More</a></td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>Width</td>
+<td><code>200px</code>, <code>10rem</code>, <code>50%</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">More</a></td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>Height</td>
+<td><code>100px</code>, <code>5rem</code>, <code>25%</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">More</a></td>
+</tr>
+</tbody>
+</table>
+<aside class="discussion blurb">
+<p>For simple cases, set <code>font-family</code> to <code>serif</code>
+or <code>sans-serif</code>. You can specify font names such as Helvetica
+but some fonts might not be available in everyone’s browser. You can
+also use web font services such as <a
+href="https://fonts.google.com/">Google Fonts</a> but this requires
+additional setting up which is beyond the scope of this book.</p>
+</aside>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-exercises-3"><span
+class="section-number">5.3.2 </span>Exercises</h3>
+<p>Here’s some HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;p&gt;This is a paragraph element.&lt;/p&gt;</code></pre>
+</div>
+</figure>
+<p>and some CSS:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>p {
+  font-size: 1rem;
+  color: #335C67;
+  background-color: #FFF3B0;
+  border: 1px solid #aaa;
+  padding: 2rem;
+  margin: 1rem;
+  width: 12rem; 
+}</code></pre>
+</div>
+</figure>
+<p>This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 40%">
+<img src="resources/a69cdd547614d1363d039cd2b48c6159.png"
+style="width: 100%;" />
+<figcaption>A <code>&lt;p&gt;</code> element styled with
+CSS</figcaption>
+</figure>
+</div>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/OJQXzKo">https://codepen.io/createwithdata/pen/OJQXzKo</a>
+to view this example in CodePen.</p>
+<p>Try the following:</p>
+<ol>
+<li>Edit some of the property values (for example you could change some
+of the colours).</li>
+<li>Add a rule for changing the opacity of <code>&lt;p&gt;</code>
+elements.</li>
+<li>Increase/decrease the margin and/or padding to see how they
+relate.</li>
+<li>Increase the border width.</li>
+<li>Reduce the element width.</li>
+<li>Add another <code>&lt;p&gt;</code> element to the HTML and observe
+how it looks in the result pane.</li>
+</ol>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-css-properties-for-svg"><span
+class="section-number">5.3.3 </span>CSS properties for SVG</h3>
+<p>For SVG elements the most common properties are:</p>
+<table style="width: 100%">
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Example values</strong></th>
+<th><strong>More info</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fill</code></td>
+<td>The shape’s internal colour</td>
+<td><code>red</code>, <code>#FF595E</code>,
+<code>rgb(255, 100, 255)</code>, <code>none</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes">More</a></td>
+</tr>
+<tr>
+<td><code>stroke</code></td>
+<td>The colour of the shape’s outline</td>
+<td><code>red</code>, <code>#FF595E</code>,
+<code>rgb(255, 100, 255)</code>, <code>none</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes">More</a></td>
+</tr>
+<tr>
+<td><code>stroke-width</code></td>
+<td>The width of the shape’s outline</td>
+<td><code>1px</code>, <code>0.5px</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes">More</a></td>
+</tr>
+<tr>
+<td><code>opacity</code></td>
+<td>The opacity of the shape</td>
+<td><code>0</code> (transparent), <code>0.5</code> (semi-opaque),
+<code>1</code> (opaque)</td>
+<td><a
+href="https://developer.mozilla.org/docs/Web/CSS/opacity">More</a></td>
+</tr>
+<tr>
+<td><code>font-size</code></td>
+<td>Text size</td>
+<td><code>12px</code>, <code>1.5rem</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">More</a></td>
+</tr>
+<tr>
+<td><code>font-family</code></td>
+<td>Font family</td>
+<td><code>Helvetica</code>, <code>Verdana</code>,
+<code>sans-serif</code>, <code>serif</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">More</a></td>
+</tr>
+<tr>
+<td><code>font-weight</code></td>
+<td>Font weight</td>
+<td><code>lighter</code>, <code>normal</code>, <code>bold</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">More</a></td>
+</tr>
+<tr>
+<td><code>text-anchor</code></td>
+<td>Horizontal alignment of text element</td>
+<td><code>start</code>, <code>middle</code>, <code>end</code></td>
+<td><a
+href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor">More</a></td>
+</tr>
+</tbody>
+</table>
+<p>For example here’s some SVG:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;svg width=&quot;400&quot; height=&quot;200&quot;&gt;
+  &lt;g transform=&quot;translate(100, 75)&quot;&gt;
+    &lt;circle r=&quot;50&quot;&gt;&lt;/circle&gt;
+    &lt;text y=&quot;6&quot;&gt;Label&lt;/text&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+</figure>
+<p>and some CSS:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>circle {
+  fill: #9E2A2B;
+}
+
+text {
+  font-family: sans-serif;
+  fill: white;
+  text-anchor: middle;
+}</code></pre>
+</div>
+</figure>
+<p>This looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 20%">
+<img src="resources/32d8541e6b176eee9ec5da421c8257b7.png"
+style="width: 100%;" />
+<figcaption>An SVG circle and text styled with CSS</figcaption>
+</figure>
+</div>
+<p>The first rule sets the colour of the circle and the second rule
+styles the text element. The font family, colour and horizontal
+alignment of the text element are set.</p>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/YzeWeyY">https://codepen.io/createwithdata/pen/YzeWeyY</a>
+to view this example in CodePen.</p>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-exercise"><span
+class="section-number">5.3.4 </span>Exercise</h3>
+<p>Try the following:</p>
+<ol>
+<li>Set the opacity of the circle to <code>0.5</code>.</li>
+<li>Increase the font-size of the label.</li>
+</ol>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-overriding-rules"><span
+class="section-number">5.3.5 </span>Overriding rules</h3>
+<p>If more than one CSS declaration applies to the same element the
+lower one takes precedence. For example the following two rules:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>p {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+}</code></pre>
+</div>
+</figure>
+<p>results in <code>p</code> elements having a font size of
+<code>1.5rem</code>. (The first rule is overriden by the second.)</p>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-example"><span
+class="section-number">5.3.6 </span>Example</h3>
+<p>Let’s look at a more advanced example. Suppose you’ve the following
+HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;h1&gt;Main title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;
+
+&lt;div&gt;
+  &lt;p&gt;Some description text&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;svg width=&quot;600&quot; height=&quot;300&quot;&gt;
+    &lt;circle cx=&quot;150&quot; cy=&quot;150&quot; r=&quot;100&quot;&gt;&lt;/circle&gt;
+    &lt;rect x=&quot;300&quot; y=&quot;50&quot; width=&quot;100&quot; height=&quot;200&quot;&gt;&lt;/rect&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>and the following CSS:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>body {
+  font-family: serif;
+}
+
+h2 {
+  color: #aaa;
+  font-family: sans-serif;
+}
+
+p {
+  color: #333;
+}
+
+circle {
+  fill: orange;
+}
+
+rect {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 1px;
+}</code></pre>
+</div>
+</figure>
+<p>(You can view this example on CodePen at <a
+href="https://codepen.io/createwithdata/pen/LYVvBEg">https://codepen.io/createwithdata/pen/LYVvBEg</a>.)</p>
+<p>The first rule’s selector is <code>body</code>. The <code>body</code>
+element represents all of the content so this rule sets the font family
+to <code>serif</code> on all elements. The next rule sets the colour and
+font family of <code>h2</code> elements. This <code>font-family</code>
+declaration overrides the <code>font-family</code> declaration of the
+previous rule.</p>
+<p>Next is a rule to set the colour of <code>p</code> elements. We then
+set the <code>fill</code> of <code>circle</code> elements and the
+<code>fill</code>, <code>stroke</code> and <code>stroke-width</code> of
+<code>rect</code> elements. The result looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/ccedb05dfcea48b8fef2ee529b81c29e.png"
+style="width: 100%;" />
+<figcaption>CSS applied to multiple HTML and SVG elements</figcaption>
+</figure>
+</div>
+<h2 class="section"
+id="chap04.xhtml_leanpub-auto-more-css-selectors"><span
+class="section-number">5.4 </span>More CSS selectors</h2>
+<p>The previous section showed how to style HTML and SVG elements using
+CSS. You saw how a CSS rule applies to elements of a particular type.
+For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>p {
+  color: #333;
+}</code></pre>
+</div>
+</figure>
+<p>sets the colour of all <code>&lt;p&gt;</code> elements. However what
+if your web page contains lots of <code>&lt;p&gt;</code> elements and
+you only want to style <strong>some</strong> of them?</p>
+<p>You can do this by making CSS selectors more specific using these
+approaches:</p>
+<ul>
+<li>add classes and ids on HTML and SVG elements</li>
+<li>nested selectors</li>
+<li>pseudo classes</li>
+</ul>
+<p>These approaches cover most cases where you need to target specific
+elements. Let’s look at them one by one.</p>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-classes-and-ids"><span
+class="section-number">5.4.1 </span>Classes and ids</h3>
+<p>There are two HTML and SVG attributes <code>id</code> and
+<code>classs</code> that let you label particular elements in your page.
+This allows you to add a CSS rule that targets those elements. The
+<code>id</code> attribute is used where you need to target a single
+element and the <code>class</code> attribute is used where you need to
+target a number of elements.</p>
+<h4 class="subsubsection" id="chap04.xhtml_leanpub-auto-id"><span
+class="section-number">5.4.1.1 </span>id</h4>
+<p>The <code>id</code> attribute lets you label a single element so that
+you can reference it elsewhere (typically with CSS or JavaScript). For
+example, you might have a main menu that needs some CSS applied to
+it.</p>
+<p>Let’s create a simple menu and add an <code>id</code> attribute with
+value <code>main-menu</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div&gt;Home&lt;/div&gt;
+  &lt;div&gt;About&lt;/div&gt;
+  &lt;div&gt;Blog&lt;/div&gt;
+  &lt;div&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>You can add ids to more than one element but each id value must be
+unique. In other words: two elements should not have the same id.</p>
+<p>In CSS, to select an element with an id use a <code>#</code> followed
+by the id value:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#main-menu {
+  margin: 1rem;
+}</code></pre>
+</div>
+</figure>
+<p>This adds a margin to the menu.</p>
+<h4 class="subsubsection" id="chap04.xhtml_leanpub-auto-class"><span
+class="section-number">5.4.1.2 </span>class</h4>
+<p>The <code>class</code> attribute is used to label
+<strong>multiple</strong> HTML and SVG elements. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;Home&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;About&lt;/div&gt;
+  &lt;div class=&quot;item selected&quot;&gt;Blog&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>Each menu item is given a class attribute with value
+<code>item</code>. Class attributes can have more than one value
+(separated by a space). For example the third item’s class attribute has
+two values: <code>item</code> and <code>selected</code>. This indicates
+that this particular <code>div</code> element is an item in a list and
+has been selected.</p>
+<p>In CSS, an element with a given class value may be selected adding a
+<strong>dot</strong> followed by the <strong>class name</strong> to the
+element type:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>div.item {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+div.selected {
+  background-color: #ccc;
+}</code></pre>
+</div>
+</figure>
+<p>This means:</p>
+<ul>
+<li>add padding and a border to each <code>div</code> element with class
+value <code>item</code></li>
+<li>set the background colour of <code>div</code> elements with class
+value <code>selected</code></li>
+</ul>
+<p>You can also select all elements, regardless of type, with a given
+class value by omitting the element name. For example <code>.item</code>
+selects all elements with class value <code>item</code>.</p>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-exercises-4"><span
+class="section-number">5.4.2 </span>Exercises</h3>
+<p>Here’s a simple menu built using HTML and CSS. The HTML is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;Home&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;About&lt;/div&gt;
+  &lt;div class=&quot;item selected&quot;&gt;Blog&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>and the CSS is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#main-menu {
+  margin: 1rem;
+  width: 15rem;
+}
+
+div.item {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+div.selected {
+  background-color: #ccc;
+}</code></pre>
+</div>
+</figure>
+<p>The menu looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/f1e163462cce27eed259f3e4a9536b80.png"
+style="width: 100%;" />
+<figcaption>A menu built with HTML and CSS with the second item
+selected.</figcaption>
+</figure>
+</div>
+<p>You can view this example on CodePen at <a
+href="https://codepen.io/createwithdata/pen/VwQjQpX">https://codepen.io/createwithdata/pen/VwQjQpX</a>.</p>
+<p>Explore the code and try the following:</p>
+<ol>
+<li>Change the background colour of the selected item.</li>
+<li>Change the font colour of the selected item.</li>
+<li>Change which menu item is selected.</li>
+</ol>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-descendant-selectors"><span
+class="section-number">5.4.3 </span>Descendant selectors</h3>
+<p>Another way to select specific elements using CSS is to use a
+descendant selector. This consists of two or more selectors separated by
+a space and it lets you select elements that are descendants of other
+elements. For example if you have the HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div&gt;Home&lt;/div&gt;
+  &lt;div&gt;Posts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div&gt;Some content&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>You can style the <code>div</code> elements within the
+<code>#main-menu</code> element using the selector
+<code>#main-menu div</code>. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#main-menu div {
+  padding: 1rem;
+}</code></pre>
+</div>
+</figure>
+<p>This means select all <code>div</code> elements that are descendants
+of the <code>#main-menu</code> element. The <code>div</code> elements
+outside of the menu are not selected.</p>
+<p>Descendant selectors are a very common device and examples related to
+data visualisation include:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>.bar-chart .bar {
+  fill: blue;
+}
+.chart .legend .label {
+  font-family: sans-serif;
+  font-size: 0.75rem;
+}</code></pre>
+</div>
+</figure>
+<p>The first selector <code>.bar-chart .bar</code> selects elements with
+class <code>bar</code> that are nested within elements with class
+<code>.bar-chart</code>. (In other words, bar chart bars.)</p>
+<p>The second selector <code>.chart .legend .label</code> selects
+elements with class <code>label</code> that are nested within elements
+with class <code>legend</code> that are nested within elements with
+class <code>chart</code>. (In other words, chart legend labels.)</p>
+<p>Descendant selectors are handy because they let you select elements
+based on the nested structure of your elements. For example you can
+recreate the previous menu example using descendant selectors. Here’s
+the HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div&gt;Home&lt;/div&gt;
+  &lt;div&gt;About&lt;/div&gt;
+  &lt;div class=&quot;selected&quot;&gt;Blog&lt;/div&gt;
+  &lt;div&gt;Contact&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;(This div doesn&#39;t get styled)&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>And here’s the CSS:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#main-menu {
+  margin: 1rem;
+  width: 15rem;
+}
+
+#main-menu div {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+#main-menu div.selected {
+  background-color: #ccc;
+}</code></pre>
+</div>
+</figure>
+<p>Notice that we’re able to remove the <code>class="item"</code>
+attributes from each item. Instead of using <code>div.item</code> to
+style menu items, we use <code>#main-menu div</code>. This has
+simplified the HTML, making it easier to read and maintain.</p>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/BaYzYZb">https://codepen.io/createwithdata/pen/BaYzYZb</a>
+to view this example in CodePen</p>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-pseudo-classes"><span
+class="section-number">5.4.4 </span>Pseudo classes</h3>
+<p>Pseudo classes modify the behavior of a selector. They consist of a
+colon (<code>:</code>) followed by the pseudo class name:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>p:hover {
+  background-color: yellow;
+}</code></pre>
+</div>
+</figure>
+<p>The above changes the background colour of <code>&lt;p&gt;</code>
+elements to yellow when hovered over.</p>
+<p>Pseudo classes commonly used when building data visualisations
+include:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Pseudo class</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:hover</code></td>
+<td>Selects the element when it’s being hovered over</td>
+</tr>
+<tr>
+<td><code>:first-child</code></td>
+<td>Selects the first sibling within a group of sibling elements.
+(Siblings are neighbouring elements that are nested under the same
+parent element.)</td>
+</tr>
+<tr>
+<td><code>:last-child</code></td>
+<td>Selects the last sibling within a group of sibling elements</td>
+</tr>
+</tbody>
+</table>
+<p>Here’s the menu example using pseudo classes to style the first item
+(which now represents the menu title) and the hovered item. The HTML
+is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;main-menu&quot;&gt;
+  &lt;div&gt;Main&lt;/div&gt;
+  &lt;div&gt;About&lt;/div&gt;
+  &lt;div class=&quot;selected&quot;&gt;Blog&lt;/div&gt;
+  &lt;div&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>and the CSS is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#main-menu {
+  margin: 1rem;
+  width: 15rem;
+}
+
+#main-menu div {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
+#main-menu div:first-child {
+  font-weight: bold;
+}
+
+#main-menu div.selected {
+  background-color: #aaa;
+}
+
+#main-menu div:hover {
+  background-color: #ccc;
+}</code></pre>
+</div>
+</figure>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/99e8358a21354627044669ace3c6c46e.png"
+style="width: 100%;" />
+<figcaption>Styling the first item using pseudo classes</figcaption>
+</figure>
+</div>
+<p>The first <code>div</code> within <code>#main-menu</code> has been
+made bold by using the <code>:first-child</code> pseudo class. When any
+item is hovered over the background colour changes because of the
+<code>:hover</code> pseudo-class. (In reality you wouldn’t implement a
+menu quite like this so this example just serves as a teaching
+tool.)</p>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/MWQeQvy">https://codepen.io/createwithdata/pen/MWQeQvy</a>
+to view this example in CodePen</p>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-grouped-selectors"><span
+class="section-number">5.4.5 </span>Grouped selectors</h3>
+<p>You can apply the same set of declarations to more than one selector
+by separating the selectors with commas. For example, given the
+HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;h1&gt;Main heading&lt;/h1&gt;
+&lt;h2&gt;Sub heading&lt;/h2&gt;
+&lt;h6&gt;Small heading&lt;/h6&gt;</code></pre>
+</div>
+</figure>
+<p>The following CSS sets the font weight of all heading elements to
+<code>lighter</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}</code></pre>
+</div>
+</figure>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/jOPoMBK">https://codepen.io/createwithdata/pen/jOPoMBK</a>
+to view this example in CodePen</p>
+<p>As an exercise, try removing <code>h1</code> selector from the CSS
+rule and observing the effect.</p>
+<h2 class="section"
+id="chap04.xhtml_leanpub-auto-css-for-html-layout"><span
+class="section-number">5.5 </span>CSS for HTML layout</h2>
+<p>CSS is also used to arrange HTML elements. For example you might want
+a header at the top of the page containing a title and menu. You might
+also want your main content to be in boxes arranged as a grid:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 66%">
+<img src="resources/06e1a4202b2bcf843e51bcf7848d20c3.png"
+style="width: 100%;" />
+<figcaption>Dashboard layout</figcaption>
+</figure>
+</div>
+<p>It takes some skill to position HTML elements using CSS. On one level
+it can be straightforward, but it can also be tricky. One of the
+challenges is that you’re rarely working with a fixed size page. (It
+would be much easier if you were!) People might be reading your page on
+a mobile, tablet, laptop or large desktop monitor. You usually need to
+take into account all these different screen widths.</p>
+<p>Having said this, there’s a couple of recent CSS developments that
+make arranging your elements much easier: Flexbox and Grid. We’ll give
+an overview of Flexbox in this book. CSS Grid is a newer development and
+isn’t covered. It could take a whole book to cover HTML layout in detail
+and hopefully this section is able to give you a flavour of what’s
+possible.</p>
+<h3 class="subsection"
+id="chap04.xhtml_leanpub-auto-block-and-inline-elements"><span
+class="section-number">5.5.1 </span>Block and inline elements</h3>
+<p>From a layout perspective HTML elements can be divided into two
+categories: <strong>block</strong> elements and <strong>inline</strong>
+elements.</p>
+<p>Block elements are positioned below each other and inline elements
+are positioned side by side. For example if you have several
+<code>&lt;div&gt;</code> elements:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>they’ll appear as a vertical stack:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/aac4c7e8735bbb78071e284a61329934.png"
+style="width: 100%;" />
+<figcaption>Block elements</figcaption>
+</figure>
+</div>
+<p>If these elements are inline elements they’ll be positioned side by
+side:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/ce1f11866dead51a2fe9da5982ff88ed.png"
+style="width: 100%;" />
+<figcaption>Inline elements</figcaption>
+</figure>
+</div>
+<aside class="discussion blurb">
+<p>The size of inline elements is determined by their content. By
+default block elements occupy the entire width of their parent element.
+They can also be sized using the CSS <code>width</code> and
+<code>height</code> properties.</p>
+</aside>
+<p>Of the elements covered in this book, heading
+(<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>), list
+<code>&lt;ul&gt;</code> and <code>&lt;div&gt;</code> elements are block
+elements (by default) and <code>&lt;img&gt;</code> and
+<code>&lt;svg&gt;</code> elements are inline elements (by default). You
+can also set whether an element is block or inline using the
+<code>display</code> CSS property. To set an element to block display
+use:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>display: block;</code></pre>
+</div>
+</figure>
+<p>and to set an element to inline display use:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>display: inline;</code></pre>
+</div>
+</figure>
+<p>Another value for <code>display</code> is <code>inline-block</code>
+which positions elements side by side <strong>and</strong> allows their
+width and height to be set using <code>width</code> and
+<code>height</code> properties. (I very rarely use
+<code>display: inline;</code> but occasionally use
+<code>display: inline-block;</code> when positioning
+<code>&lt;div&gt;</code> elements side by side.)</p>
+<aside class="discussion blurb">
+<p>The direction in which block and inline elements run depends on the
+writing language. This book assumes the writing language is English.</p>
+</aside>
+<h3 class="subsection" id="chap04.xhtml_leanpub-auto-flexbox"><span
+class="section-number">5.5.2 </span>Flexbox</h3>
+<p>The CSS Flexbox model lets you specify how items are <strong>arranged
+within their parent element</strong>. For example, let’s start with this
+HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;ONE&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;TWO&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;THREE&lt;/div&gt;
+  &lt;div class=&quot;item&quot;&gt;FOUR&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>and this CSS:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>.item {
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 1px solid #aaa;
+}</code></pre>
+</div>
+</figure>
+<p>By default this’ll render like:</p>
+<div class="figure-wrapper center">
+<figure class="image block inline" style="width: 381px">
+<img src="resources/866cbdcfc43cf7838e3322c6c59ee120.png"
+style="width: 100%;" />
+<figcaption>Default layout of <code>&lt;div&gt;</code>
+elements</figcaption>
+</figure>
+</div>
+<p>Flexbox lets you specify properties on the container and its child
+elements (or ‘items’) to specify how the items are arranged.</p>
+<p>To make an element a flex container set the <code>display</code>
+property of the element to <code>flex</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#container {
+  display: flex;
+}</code></pre>
+</div>
+</figure>
+<p>This results in the items being arranged in a row:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/8d20342c81156bb9e5eaa7aca69f455b.png"
+style="width: 100%;" />
+<figcaption>Container element (shown in grey) with flex
+enabled</figcaption>
+</figure>
+</div>
+<p>You can now set properties on the container and/or the items to
+determine how the items should be arranged. These are the most common
+properties and values for the container:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Values</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flex-direction</code></td>
+<td>Determines the direction in which items will be positioned. This
+also determines the direction of the ‘main axis’.</td>
+<td><code>row</code> (items arranged in a row, main axis runs left to
+right), <code>column</code> (items arranged in a column , main axis runs
+top to bottom)</td>
+</tr>
+<tr>
+<td><code>flex-wrap</code></td>
+<td>Determines whether elements should wrap onto another row/column</td>
+<td><code>nowrap</code> (don’t wrap items), <code>wrap</code> (wrap
+items)</td>
+</tr>
+<tr>
+<td><code>justify-content</code></td>
+<td>Specifies how flex items are distributed along the main axis</td>
+<td><code>flex-start</code> (items placed at the start of the main
+axis), <code>flex-end</code> (items placed at the end of the main axis),
+<code>center</code> (items placed in the middle of the main axis),
+<code>space-around</code> (items spread along the main axis),
+<code>space-between</code> (items spread along the main axis with no
+space at the ends)</td>
+</tr>
+<tr>
+<td><code>align-items</code></td>
+<td>Specifies how items are aligned about the main axis</td>
+<td><code>stretch</code> (items stretched about the main axis to fill
+the container), <code>center</code> (items centered about the main
+axis), <code>flex-start</code> (items placed at start of cross-axis),
+<code>flex-end</code> (items placed at end of cross-axis)</td>
+</tr>
+</tbody>
+</table>
+<p>The main axis is determined by <code>flex-direction</code> and runs
+left to right if <code>flex-direction</code> is <code>row</code> and
+runs top to bottom if <code>flex-direction</code> is
+<code>column</code>. The cross axis is perpendicular to the main axis.
+See <a
+href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">https://css-tricks.com/snippets/css/a-guide-to-flexbox</a>
+for more detail.</p>
+<p>As an example, if we set <code>justify-content</code> to
+<code>space-between</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>#container {
+  display: flex;
+  justify-content: space-between;
+}</code></pre>
+</div>
+</figure>
+<p>we get:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/330ef8881d86d52cb914e7b2f7e5472f.png"
+style="width: 100%;" />
+<figcaption>Layout with <code>justify-content</code> set to
+<code>space-between</code></figcaption>
+</figure>
+</div>
+<p>If we set <code>justify-content</code> to <code>flex-end</code> we
+get:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/515e7595e412f984d1c5e0c8b90634fc.png"
+style="width: 100%;" />
+<figcaption>Layout with <code>justify-content</code> set to
+<code>flex-end</code></figcaption>
+</figure>
+</div>
+<p>You can also nest flex containers inside one another. For example you
+can build a rudimentary header bar using this approach. Here’s the
+HTML:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;div id=&quot;header&quot;&gt;
+  &lt;div id=&quot;title&quot;&gt;My Website&lt;/div&gt;
+  &lt;div id=&quot;menu&quot;&gt;
+    &lt;div&gt;Home&lt;/div&gt;
+    &lt;div&gt;About&lt;/div&gt;
+    &lt;div&gt;Contact&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</figure>
+<p>And the CSS is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#header {
+  height: 4rem;
+  background-color: #222;
+  color: white;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+}
+
+#menu div {
+  padding-left: 1rem;
+}</code></pre>
+</div>
+</figure>
+<p>The outermost <code>&lt;div&gt;</code> element represents the header.
+It has two children: a title and a menu. The header element acts as a
+flex container (<code>display</code> is set to <code>flex</code> on
+<code>#header</code>). The title and menu are arranged at opposing ends
+of the header by setting <code>justify-content</code> to
+<code>space-between</code>. The items are vertically centered within the
+container by setting <code>align-items</code> to
+<code>center</code>.</p>
+<p>In order to arrange the menu items in a row, the menu element
+(<code>#menu</code>) is also made a flex container (its
+<code>display</code> property is set to <code>flex</code>). Thus the
+menu is both a flex container and a flex item.</p>
+<p>The finished header looks like:</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 381px">
+<img src="resources/28bbe7658cb5dd68c42e3048e1b20926.png"
+style="width: 100%;" />
+<figcaption>Website header arranged using nested flex
+containers</figcaption>
+</figure>
+</div>
+<p>Hopefully this gives you a flavour of what Flexbox can achieve. If
+you’d like to learn more about Flexbox one of the best tutorials is <a
+href="https://css-tricks.com/snippets/css/a-guide-to-flexbox">https://css-tricks.com/snippets/css/a-guide-to-flexbox</a>.
+I’ve also built a Flexbox explorer (<a
+href="https://app.peterrcook.com/flexplorer/">https://app.peterrcook.com/flexplorer/</a>)
+which lets you quickly explore each property interactively.</p>
+<p><span id="chap05.xhtml"></span></p>
+<h1 class="chapter" id="chap05.xhtml_leanpub-auto-javascript"><span
+class="section-number">6 </span>JavaScript</h1>
+<p>JavaScript is the programming language of the web. It’s built into
+the majority of web browsers and can:</p>
+<ul>
+<li><strong>add</strong>, <strong>modify</strong> and
+<strong>remove</strong> HTML and SVG elements</li>
+<li>handle <strong>interactivity</strong> (for example, mouse
+clicks)</li>
+<li><strong>fetch</strong> data and other resources</li>
+<li>perform general purpose <strong>computation</strong> (such as data
+processing)</li>
+</ul>
+<p>Web-based data visualisations, particularly if they’re interactive,
+probably use JavaScript.</p>
+<p>JavaScript started out as a little used language for websites (it was
+typically used to handle a few user interactions) but is now a
+widespread language with hundreds of tools and libraries in its
+ecosystem.</p>
+<p>Libraries such as <a href="https://d3js.org/">D3</a>, <a
+href="https://leafletjs.com/">Leaflet</a> and <a
+href="https://www.chartjs.org/">Chart.js</a> are written in JavaScript
+and provide useful features for building data visualisations.</p>
+<p>The next two sections will cover the basics of JavaScript namely
+<strong>variables</strong> and <strong>types</strong>. Subsequent
+sections will look at <strong>operators</strong>,
+<strong>conditionals</strong>, <strong>iteration</strong> and
+<strong>functions</strong>.</p>
+<p>In order to experiment and practise JavaScript I recommend using the
+<a href="https://jsconsole.com/">jsconsole</a> website. This allows you
+to enter JavaScript code and it evaluates it immediately. (If you’re
+more experienced you can use your browser’s <a
+href="https://developers.google.com/web/tools/chrome-devtools/console#javascript">debug
+console</a> or Node.)</p>
+<p>When you see example code in this section you’ll occasionally see
+<code>// </code> followed by a value:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>10 + 5;  // 15</code></pre>
+</div>
+</figure>
+<p>The value indicates the value that the code returns. (If you type
+<code>10 + 5</code> into jsconsole and press return it’ll show the
+result <code>15</code> on the next line.)</p>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-variables"><span
+class="section-number">6.1 </span>JavaScript variables</h2>
+<p>If you have a value (such as some text or a number) you can use a
+<strong>variable</strong> to point to that data. In effect you’re giving
+the data a label so that you can refer to it elsewhere in your code. In
+JavaScript, a variable must be <strong>declared</strong> before it’s
+used. Typically this is done using the <code>let</code> keyword:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let myMessage;</code></pre>
+</div>
+</figure>
+<aside class="discussion blurb">
+<p><code>let</code> is the modern way of declaring a variable. The older
+way is to use <code>var</code>. The differences are subtle and are
+beyond the scope of this book. You can read more <a
+href="https://javascript.info/var">here</a>.</p>
+<p>JavaScript statements usually end with a semicolon <code>;</code>.
+This is optional but we’ll use them in this book.</p>
+</aside>
+<p>You can assign a value (such as a number or string) to a variable.
+Here’s how to assign a string (a piece of text enclosed between
+quotation marks) to the variable <code>myMessage</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>myMessage = &quot;Hello world!&quot;;</code></pre>
+</div>
+</figure>
+<p>You can also assign numbers to variables:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;</code></pre>
+</div>
+</figure>
+<p>(The above code uses a shorthand where the variable is declared and
+assigned in a single statement.)</p>
+<p>Any expression can be assigned to a variable.</p>
+<aside class="discussion blurb">
+<p>An expression is a piece of code that evaluates to a single value
+such as <code>"hello"</code> or <code>2 * 10</code>. These evalute to
+<code>"hello"</code> and <code>20</code>, respectively. An expression
+can also consist of variables. For example <code>a + b</code> evaluates
+to <code>30</code>.</p>
+</aside>
+<p>Let’s assign the expression <code>a + b</code> to a new variable
+<code>c</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let c = a + b;
+c;  // 30</code></pre>
+</div>
+</figure>
+<p>The <code>a + b</code> expression is evaluated and the result
+<code>30</code> is assigned to <code>c</code>.</p>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-exercises-5"><span
+class="section-number">6.1.0.1 </span>Exercises</h4>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and type the
+following:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;</code></pre>
+</div>
+</figure>
+<p>Now type <code>a</code> followed by the return key. What do you
+see?</p>
+<p>jsconsole evaluates <code>a</code> and outputs the result
+<code>10</code>. Now type:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let c = a + b;</code></pre>
+</div>
+</figure>
+<p>Now type <code>c</code> followed by the return key. The
+<code>c</code> variable will be evaluated and its value <code>30</code>
+is ouput.</p>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-data-types"><span
+class="section-number">6.2 </span>JavaScript data types</h2>
+<p>The most common data types in JavaScript are:</p>
+<ul>
+<li>strings (e.g. <code>"Hello world"</code>)</li>
+<li>numbers (e.g. <code>1234</code>, <code>10.567</code>,
+<code>1.23e2</code>)</li>
+<li>booleans (<code>true</code> and <code>false</code>)</li>
+<li>arrays (lists of values)</li>
+<li>objects (lists of key-value pairs)</li>
+</ul>
+<p>The above are sufficient to build data visualisations. We’ll look at
+strings, numbers and booleans in this section. There are separate
+chapters for arrays and objects.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-strings"><span
+class="section-number">6.2.1 </span>Strings</h3>
+<p>Strings represent text. The text is enclosed by single quotes
+(<code>'</code>) or double quotes (<code>"</code>):</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&#39;A JavaScript string&#39;
+&quot;A string enclosed in double quotes&quot;</code></pre>
+</div>
+</figure>
+<p>If your text contains a single quote you use double quotes to enclose
+it (and vice versa):</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>&quot;Bob&#39;s learning to code in JavaScript&quot;</code></pre>
+</div>
+</figure>
+<p>You can add strings together using the <code>+</code> operator:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let firstName = &quot;Jolene&quot;;
+let lastName = &quot;Smith&quot;;
+let fullName = firstName + &quot; &quot; + lastName;
+fullName;  // &quot;Jolene Smith&quot;</code></pre>
+</div>
+</figure>
+<p>In the following examples we’ve a variable <code>a</code> with value
+<code>"This is a string"</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = &quot;This is a string&quot;;</code></pre>
+</div>
+</figure>
+<p>You can get the length of a string using <code>.length</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a.length;  // 16</code></pre>
+</div>
+</figure>
+<p>You can get the <code>n</code>th character in the string using square
+brackets:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a[0];  // &quot;T&quot;
+a[2];  // &quot;i&quot;</code></pre>
+</div>
+</figure>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-string-manipulation"><span
+class="section-number">6.2.1.1 </span>String manipulation</h4>
+<p>A string can be split wherever a string <code>s</code> occurs using
+<code>split(s)</code>. For example let’s split the string by a single
+space character:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a.split(&#39; &#39;);  // [&quot;This&quot;, &quot;is&quot;, &quot;a&quot;, &quot;string&quot;]</code></pre>
+</div>
+</figure>
+<p>(The square brackets represent an array which we’ll cover in a
+subsequent section.)</p>
+<p>You can compute the upper case version of a string using
+<code>toUpperCase()</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a.toUpperCase();  // &quot;THIS IS A STRING&quot;</code></pre>
+</div>
+</figure>
+<p>Note that this doesn’t change (or mutate) the string. It just returns
+a new string and <code>a</code>’s value is still
+<code>"This is a string"</code>. To make variable <code>a</code> upper
+case you can assign the output of <code>a.toUpperCase()</code> to
+<code>a</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a = a.toUpperCase();
+a;  // &quot;THIS IS A STRING&quot;</code></pre>
+</div>
+</figure>
+<p>There’s a lower case counterpart called
+<code>toLowerCase()</code>.</p>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-string-conversion"><span
+class="section-number">6.2.1.2 </span>String conversion</h4>
+<p>You can convert a string containing a number into a number using
+<code>parseFloat</code>. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>parseFloat(&#39;123.456&#39;);  // 123.456
+parseFloat(&#39;5432&#39;);     // 5432
+parseFloat(&#39;abc&#39;);      // NaN (not a number)
+parseFloat(&#39;1234abc&#39;);  // 1234
+parseFloat(&#39;0&#39;);        // 0
+parseFloat(&#39;&#39;);         // NaN</code></pre>
+</div>
+</figure>
+<p>Note that passing an empty string into parseFloat returns
+<code>NaN</code> which means ‘not a number’.</p>
+<aside class="discussion blurb">
+<p>It’s quite common to see the <code>+</code> operator used to convert
+strings into numbers. For example <code>+'123'</code> evaluates to
+<code>123</code>. You need to use with caution because converting an
+empty string (e.g. <code>+''</code>) evaluates to 0. Sometimes when
+working with data, missing data is represented by an empty string and if
+this is converted using <code>+</code> it’ll evaluate as 0 which isn’t
+always desirable.</p>
+</aside>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-exercises-6"><span
+class="section-number">6.2.1.3 </span>Exercises</h4>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and type the
+following:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a = &quot;This is a string&quot;;
+a.length;
+a[2];
+a.split(&#39; &#39;);
+a.toUpperCase();</code></pre>
+</div>
+</figure>
+<p>Check that your output is similar to:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>16
+&quot;i&quot;
+[&quot;This&quot;, &quot;is&quot;, &quot;a&quot;, &quot;string&quot;]
+&quot;THIS IS A STRING&quot;</code></pre>
+</div>
+</figure>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-numbers"><span
+class="section-number">6.2.2 </span>Numbers</h3>
+<p>JavaScript has a number type for representing numbers. Integers
+(whole numbers) and decimals may be represented:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 123;
+let b = 123.456;</code></pre>
+</div>
+</figure>
+<p>The mathematical operators <code>+</code> (addition), <code>-</code>
+(subtraction), <code>*</code> (multiplication) and <code>/</code>
+division may be applied to numbers:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let c = 123 + 456;
+let d = 3 * 123;</code></pre>
+</div>
+</figure>
+<p>Brackets can be used to enforce precedence:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>(10 + 20) * 2;  // 60
+10 + (20 * 2);  // 50</code></pre>
+</div>
+</figure>
+<p>The first expression evaluates as <code>60</code> and the second one
+<code>50</code>. (An expression is a piece of code that evaluates to a
+single value.)</p>
+<p>The following examples use a variable <code>n</code> with value
+<code>123.456</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let n = 123.456;</code></pre>
+</div>
+</figure>
+<p>You can round numbers using <code>round</code>, <code>floor</code>
+and <code>ceil</code>.</p>
+<p><code>round</code> returns the closest integer, <code>floor</code>
+rounds the number down and <code>ceil</code> rounds the number up:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>Math.round(n);  // 123
+Math.floor(n);  // 123
+Math.ceil(n);   // 124</code></pre>
+</div>
+</figure>
+<p>You can get the string representation of a number using
+<code>toString()</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>n.toString();  // &quot;123.456&quot;</code></pre>
+</div>
+</figure>
+<p>You can get the square root of a number using
+<code>Math.sqrt()</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>Math.sqrt(100);  // 10</code></pre>
+</div>
+</figure>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-exercises-7"><span
+class="section-number">6.2.2.1 </span>Exercises</h4>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and type the
+following:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let n = 123.456;
+Math.round(n);
+n.toString();
+Math.sqrt(100);</code></pre>
+</div>
+</figure>
+<p>Your output values should be:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>123
+&quot;123.456&quot;
+10</code></pre>
+</div>
+</figure>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-booleans"><span
+class="section-number">6.2.3 </span>Booleans</h3>
+<p>Boolean types can have two values <code>true</code> and
+<code>false</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>var learningCSS = true;
+var learningJavaScript = true;
+var learningPython = false;</code></pre>
+</div>
+</figure>
+<p>You’ll see later on (in the operators section) that booleans are
+returned by operators such as <code>===</code> (is equal to) and
+<code>&gt;</code> (is greater than).</p>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-arrays"><span
+class="section-number">6.3 </span>JavaScript arrays</h2>
+<p>Arrays represent <strong>lists of values</strong>. Each value can be
+of any type, even arrays! Arrays are one of the fundamental data
+structures used when working with data. (You’ll see in the section on
+objects that it’s common to represent a table of data using an array.)
+An array is represented by <strong>square brackets</strong> and each
+value is separated by a <strong>comma</strong>. Here are 4 different
+arrays:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>[ 10, 20, 30 ]                      // an array of numbers
+[ &quot;An&quot;, &quot;array&quot;, &quot;of&quot;, &quot;strings&quot; ]  // an array of strings
+[ [ 10, 20 ], [ 30, 40 ] ]          // an array of arrays
+[ true, true, false ]               // an array of booleans</code></pre>
+</div>
+</figure>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-accessing-array-elements"><span
+class="section-number">6.3.1 </span>Accessing array elements</h3>
+<p>You can access the <code>i</code>th item in an array by writing
+<code>[i]</code> after the array:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = [ &quot;An&quot;, &quot;array&quot;, &quot;of&quot;, &quot;strings&quot; ];
+a[0];  // &quot;An&quot;
+a[2];  // &quot;of&quot;</code></pre>
+</div>
+</figure>
+<p>Arrays are indexed from <code>0</code>. So the first element in an
+array is referenced by <code>[0]</code>. For nested arrays such as:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = [ [ 10, 20 ], [ 30, 40 ] ];</code></pre>
+</div>
+</figure>
+<p>you access the values by stringing together the square brackets:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a[0];     // [10, 20]
+a[0][1];  // 20</code></pre>
+</div>
+</figure>
+<p><code>a[0]</code> is the first element of <code>a</code> and
+evaluates to <code>[10, 20]</code>.</p>
+<p><code>a[0][1]</code> means index <code>1</code> of <code>a[0]</code>
+and evaluates to <code>20</code>.</p>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-array-operations"><span
+class="section-number">6.3.2 </span>Array operations</h3>
+<p>In the following table, these variables are used:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = [ 10, 20, 30 ];
+let b = [ 40, 50, 60 ];
+let c = [ &quot;An&quot;, &quot;array&quot;, &quot;with&quot;, &quot;text&quot; ];</code></pre>
+</div>
+</figure>
+<p>Useful array operations include the following:</p>
+<table style="width: 100%">
+<thead>
+<tr>
+<th><strong>Operation</strong></th>
+<th><strong>Examples</strong></th>
+<th><strong>Result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get array length</td>
+<td><code>a.length</code></td>
+<td><code>3</code></td>
+</tr>
+<tr>
+<td>Sort an array</td>
+<td><code>c.sort()</code></td>
+<td><code>c</code> is now
+<code>["An", "array", "text", "with"]</code></td>
+</tr>
+<tr>
+<td>Reverse an array</td>
+<td><code>a.reverse()</code></td>
+<td><code>a</code> is now <code>[30, 20, 10]</code></td>
+</tr>
+<tr>
+<td>Get a portion (or ‘slice’) of an array. The 1st number indicates the
+start index of the slice. The 2nd number indicates the end index
+(inclusive) of the slice.</td>
+<td><code>c.slice(1, 2)</code></td>
+<td><code>["array", "with"]</code></td>
+</tr>
+<tr>
+<td>Join each element of an array with a given string</td>
+<td><code>a.join(' and ')</code></td>
+<td><code>"10 and 20 and 30"</code></td>
+</tr>
+<tr>
+<td>Join two arrays</td>
+<td><code>a.concat(b)</code></td>
+<td><code>[10, 20, 30, 40, 50, 60]</code></td>
+</tr>
+<tr>
+<td>Add an element to the end of an array</td>
+<td><code>b.push(70)</code></td>
+<td><code>b</code> is now <code>[40, 50, 60, 70]</code></td>
+</tr>
+<tr>
+<td>Remove (and return) the last element of an array</td>
+<td><code>a.pop()</code></td>
+<td>Evaluates to <code>30</code>. <code>a</code> is now
+<code>[10, 20]</code></td>
+</tr>
+</tbody>
+</table>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-take-care-when-sorting"><span
+class="section-number">6.3.2.1 </span>Take care when sorting</h4>
+<p>Be careful when sorting arrays of numbers. The following example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let d = [11, 10, 9];
+d.sort();</code></pre>
+</div>
+</figure>
+<p>results in <code>d</code> being <code>[10, 11, 9]</code>. Which is
+rather surprising.</p>
+<p>It’s because JavaScript sorts as strings, even if it’s an array of
+numbers! It’s really strange. Read <a
+href="https://stackoverflow.com/questions/48201502/strange-javascript-sorting-bug">https://stackoverflow.com/questions/48201502/strange-javascript-sorting-bug</a>
+for more insight.</p>
+<p>Another quirk of JavaScript is that some of the above operations
+change the original array while others don’t. <code>sort</code> and
+<code>reverse</code> overwrite the array with the new order. Similarly,
+<code>push</code> and <code>pop</code> change the length of the original
+array.</p>
+<p>The remaining operations just evaluate to a value. They don’t have
+any effect on the array.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-exercises-8"><span
+class="section-number">6.3.3 </span>Exercises</h3>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and type the
+following:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = [10, 20, 30];
+a.length;
+a.reverse();
+a.push(0);
+a;</code></pre>
+</div>
+</figure>
+<p>The final value of <code>a</code> should be
+<code>[30, 20, 10, 0]</code>.</p>
+<p>The first expression just outputs the length of <code>a</code>. The
+second reverses <code>a</code> so <code>a</code> is now
+<code>[30, 20, 10]</code>. The third statement adds <code>0</code> on to
+the end of <code>a</code>. The final expression <code>a</code> evaluates
+to <code>[30, 20, 10, 0]</code>.</p>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-objects"><span
+class="section-number">6.4 </span>JavaScript objects</h2>
+<p>JavaScript objects are <strong>(unordered) lists</strong> of
+<strong>name-value pairs</strong>. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let carrot = {
+  foodGroup: &quot;vegetable&quot;,
+  color: &quot;orange&quot;
+}</code></pre>
+</div>
+</figure>
+<p>Each name-value pair is known as a <strong>property</strong>. Each
+property has a <strong>name</strong> (e.g. <code>foodGroup</code>,
+<code>color</code>, <code>id</code>, <code>height</code>,
+<code>data</code>) and a <strong>value</strong>. The value can be any
+type (including array or object). You can access properties using a dot
+followed by the property name:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot.foodGroup;  // &quot;vegetable&quot;</code></pre>
+</div>
+</figure>
+<p>An object’s property may also be accessed using the property name
+(expressed as a string) enclosed in square brackets:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot[&quot;foodGroup&quot;];  // &quot;vegetable&quot;</code></pre>
+</div>
+</figure>
+<p>The advantage of the square bracket notation is that a variable can
+be used as the property name:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let day = &quot;Tuesday&quot;;
+
+let data = {
+  Monday: 20,
+  Tuesday: 30,
+  Wednesday: 10,
+  Thursday: 50,
+  Friday: 70
+};
+
+data[day];  // 30</code></pre>
+</div>
+</figure>
+<p>Property values can be any type. Here’s an object containing
+arrays:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = {
+  Monday: [10, 30, 20],
+  Tuesday: [50, 20, 30],
+  Wednesday: [40, 10, 20],
+  Thursday: [30, 10, 20],
+  Friday: [60, 30, 40]
+};
+
+data.Tuesday;    // [50, 20, 30]
+data.Tuesday[1]  // 20</code></pre>
+</div>
+</figure>
+<p>You can also have arrays of objects. This is a <strong>very</strong>
+common structure in data visualisation:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [
+  {
+    name: &quot;Spain&quot;,
+    capital: &quot;Madrid&quot;,
+    population: 46.66
+  },
+  {
+    name: &quot;China&quot;,
+    capital: &quot;Beijing&quot;,
+    population: 1386
+  }
+];
+
+data[0].name;     // &quot;Spain&quot;
+data[1].capital;  // &quot;Beijing&quot;</code></pre>
+</div>
+</figure>
+<p>Given an object such as:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let vegetable = {
+  name: &quot;carrot&quot;,
+  color: &quot;orange&quot;
+};</code></pre>
+</div>
+</figure>
+<p>You can set properties using the following notation:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>vegetable.name = &quot;broccoli&quot;;
+vegetable.color = &quot;green&quot;;
+vegetable.name;  // &quot;broccoli&quot;</code></pre>
+</div>
+</figure>
+<p>You can use the above notation even if the property doesn’t
+exist:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>vegetable.family = &quot;Brassica&quot;;</code></pre>
+</div>
+</figure>
+<p>To get a list of an object’s property names use:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>Object.keys(vegetable);  // [&quot;name&quot;, &quot;color&quot;, &quot;family&quot;]</code></pre>
+</div>
+</figure>
+<p>This returns the array <code>["name", "color", "family"]</code>.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-exercises-9"><span
+class="section-number">6.4.1 </span>Exercises</h3>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and create the
+following object:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let carrot = {
+  foodGroup: &quot;vegetable&quot;,
+  color: &quot;orange&quot;
+}</code></pre>
+</div>
+</figure>
+<p>Use <code>shift</code> + <code>return</code> instead of just
+<code>return</code> to insert new lines within a single statement. Or
+click <a
+href="https://jsconsole.com/?let%20carrot%20%3D%20%7B%0A%20%20foodGroup%3A%20%22vegetable%22%2C%0A%20%20color%3A%20%22orange%22%0A%7D">here</a>
+for a pre-populated console.</p>
+<p>Type the following:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot.color;</code></pre>
+</div>
+</figure>
+<p>Check that this returns the string <code>"orange"</code>. Now change
+the colour to <code>purple</code> by typing:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot.color = &quot;purple&quot;;</code></pre>
+</div>
+</figure>
+<p>Check the colour has changed by typing:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot.color;</code></pre>
+</div>
+</figure>
+<p>This should output <code>"purple"</code>. You can also view the
+object by typing:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>carrot</code></pre>
+</div>
+</figure>
+<p>Now add a new property named <code>price</code> with value
+<code>15</code> to the object and check that it’s been added.</p>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-operators"><span
+class="section-number">6.5 </span>JavaScript operators</h2>
+<p>JavaScript operators take one or two values and compute a new
+value.</p>
+<p>For example the <code>+</code> operator takes two numbers and
+computes the sum of the numbers.</p>
+<p>In the following table these variables are defined:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 1;
+let b = 2;</code></pre>
+</div>
+</figure>
+<p>The most common operators are:</p>
+<table style="width: 100%">
+<thead>
+<tr>
+<th><strong>Operator</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Examples</strong></th>
+<th><strong>Evaluates to</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Adds two numbers or joins two strings</td>
+<td><code>1 + 2</code>, <code>"abc" + "def"</code>,
+<code>a + b</code></td>
+<td><code>3</code>, <code>"abcdef"</code>, <code>3</code></td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtracts two numbers</td>
+<td><code>3 - 2</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplies two numbers</td>
+<td><code>2 * 8</code></td>
+<td><code>16</code></td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Divides two numbers</td>
+<td><code>10 / 5</code></td>
+<td><code>2</code></td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Computes the remainder of a division</td>
+<td><code>11 / 5</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>Inverts a boolean</td>
+<td><code>!true</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>,
+<code>&lt;=</code></td>
+<td>Greater than, greater or equal to, less than and less than or
+equal.</td>
+<td><code>5 &lt; 6</code>, <code>5 &lt; 5</code>,
+<code>5 &lt;= 5</code>, <code>"a" &gt; "b"</code>,
+<code>"abc" &lt; "def"</code>, <code>a &gt; b</code></td>
+<td><code>true</code>, <code>false</code>, <code>true</code>,
+<code>false</code>, <code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>===</code></td>
+<td>Is equal to</td>
+<td><code>10 === 10</code>, <code>"dogs" === "cats"</code>,
+<code>a === b</code></td>
+<td><code>true</code>, <code>false</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>!==</code></td>
+<td>Is not equal to</td>
+<td><code>10 !== 10</code>, <code>"dogs" !== "cats"</code></td>
+<td><code>false</code>, <code>true</code></td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>Logical and (<code>true</code> if both expressions are
+<code>true</code>)</td>
+<td><code>2 &gt; 1 &amp;&amp; 3 &gt; 2</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>\|</code></td>
+<td>Logical or (<code>true</code> if either expression is
+<code>true</code>)</td>
+<td><code>1 &gt; 2 \| 2 &gt; 3</code></td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>Note that the equality operator is three equal signs
+<code>===</code>. This operator checks that two expressions are exactly
+equal. There’s a similar operator <code>==</code> which is less strict.
+In general I recommend using <code>===</code>.</p>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-ternary-operator"><span
+class="section-number">6.5.1 </span>Ternary operator</h3>
+<p>There’s an operator known as the ternary operator which deserves a
+special mention. The ternary operator evaluates one of two expressions
+depending on the value of a third expression:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;
+let result = a &gt; b ? &quot;a is bigger than b&quot; : &quot;a is not bigger than b&quot;;
+result;     // outputs &quot;a is not bigger than b&quot;</code></pre>
+</div>
+</figure>
+<p>In this example the expression <code>a &gt; b</code> is evaluated. If
+<code>true</code> the first expression after the question mark is
+evaluated. If <code>false</code> the expression after the colon
+<code>:</code> is evaluated.</p>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-increment-and-decrement"><span
+class="section-number">6.5.2 </span>Increment and decrement</h3>
+<p>The increment <code>++</code> operator takes a numeric variable and
+increments it:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+a++;
+a;  // 11</code></pre>
+</div>
+</figure>
+<p>It’s basically shorthand for:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a = a + 1;</code></pre>
+</div>
+</figure>
+<p>There’s also a decrement operator <code>--</code> that decrements a
+variable.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-exercises-10"><span
+class="section-number">6.5.3 </span>Exercises</h3>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and define two
+variables:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;</code></pre>
+</div>
+</figure>
+<p>Write expressions to:</p>
+<ol>
+<li>Add <code>a</code> and <code>b</code>.</li>
+<li>Multiply <code>a</code> and <code>b</code>.</li>
+<li>Check whether <code>a</code> is greater than <code>b</code>.</li>
+<li>Check whether <code>a</code> is equal to <code>b</code>.</li>
+<li>Check whether <code>a</code> is equal to <code>10</code>.</li>
+</ol>
+<h4 class="subsubsection" id="chap05.xhtml_leanpub-auto-answers"><span
+class="section-number">6.5.3.1 </span>Answers</h4>
+<p>Your expressions should look something like:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a + b;     // 30
+a * b;     // 200
+a &gt; b;     // false
+a === b;   // false
+a === 10;  // true</code></pre>
+</div>
+</figure>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-conditionals"><span
+class="section-number">6.6 </span>JavaScript conditionals</h2>
+<p>Conditionals are used to execute different branches of code depending
+on a given value. This section covers two types of conditional
+<code>if</code> and <code>switch</code>.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-if"><span
+class="section-number">6.6.1 </span>if</h3>
+<p>The most well known conditional is <code>if</code>. It looks
+like:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let answer;
+
+if (a &gt; b) {
+  answer = &quot;a is greater than b&quot;;
+}</code></pre>
+</div>
+</figure>
+<p>The <code>if</code> keyword is followed by a pair of brackets
+containing an expression. The expression is evaluated and if it’s
+<code>true</code> the code in the following block is executed. If it’s
+<code>false</code> nothing happens. (A block of code can contain
+multiple statements and is delimited by curly brackets.)</p>
+<p>You can add an <code>else</code> block that’ll get executed if the
+<code>if</code> expression is <code>false</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let answer;
+
+if (a &gt; b) {
+  answer = &quot;a is greater than b&quot;;
+} else {
+  answer = &quot;a is not greater than b&quot;;
+}</code></pre>
+</div>
+</figure>
+<p>You can also string a series of <code>else</code> and <code>if</code>
+statements together:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let food = {
+  name: &quot;banana&quot;,
+  type: &quot;fruit&quot;
+};
+
+let answer;
+
+if (food.type === &quot;fruit&quot;) {
+  answer = &quot;It&#39;s a fruit!&quot;;
+} else if (food.type === &quot;vegetable&quot;) {
+  answer = &quot;It&#39;s a vegetable!&quot;;
+} else {
+  answer = &quot;Unknown food&quot;;
+}</code></pre>
+</div>
+</figure>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-switch"><span
+class="section-number">6.6.2 </span>switch</h3>
+<p>The <code>switch</code> statement executes different blocks of code
+depending on the value of an expression:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let food = {
+  name: &quot;banana&quot;,
+  type: &quot;fruit&quot;
+};
+
+let answer;
+
+switch(food.type) {
+  case &quot;fruit&quot;:
+    answer = &quot;It&#39;s a fruit!&quot;;
+    break;
+  case &quot;vegetable&quot;:
+    answer = &quot;It&#39;s a vegetable!&quot;;
+    break;
+  default:
+    answer = &quot;Unknown food&quot;;
+    break;
+}</code></pre>
+</div>
+</figure>
+<p>The <code>switch</code> statement is followed by an expression
+wrapped in brackets (in the example the expression is
+<code>food.type</code>). There are a number of <code>case</code>
+statements followed by possible values of the expression (such as
+<code>"fruit"</code> and <code>"vegetable"</code>). If there’s a match,
+the code following the <code>case</code> statement is executed. The code
+following a <code>case</code> statement is executed up until the
+<code>break</code> statement.</p>
+<aside class="discussion blurb">
+<p>It’s important to include the <code>break</code> statements otherwise
+the following <code>case</code> statements will also execute. In
+general, add a <code>break</code> statement at the end of each
+<code>case</code> block.</p>
+</aside>
+<p>You can also use multiple <code>case</code> statements together:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>var food = {
+  name: &quot;banana&quot;,
+  type: &quot;fruit&quot;
+};
+
+switch(food.type) {
+  case &quot;fruit&quot;:
+  case &quot;vegetable&quot;:
+    alert(&quot;It&#39;s a fruit or a vegetable!&quot;);
+    break;
+  default:
+    alert(&quot;Unknown food&quot;);
+    break;
+}</code></pre>
+</div>
+</figure>
+<aside class="discussion blurb">
+<p>In general use <code>if</code> if the test expression returns
+<code>true</code> or <code>false</code> and <code>switch</code> if the
+test expression returns multiple values.</p>
+</aside>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-functions"><span
+class="section-number">6.7 </span>JavaScript functions</h2>
+<p>Functions let you wrap up code that can be called multiple times from
+anywhere in your code. For example suppose you need to double some
+numbers. You could do it this way:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;
+let doubleA = a * 2;
+let doubleB = b * 2;</code></pre>
+</div>
+</figure>
+<p>If the operation is more complicated than doubling a number this
+approach becomes harder to manage. An alternative approach is to define
+a function that takes a number and returns the double of the number:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function double(x) {
+  return 2 * x;
+}</code></pre>
+</div>
+</figure>
+<p>Now we can do:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = 10;
+let b = 20;
+let doubleA = double(a);
+let doubleB = double(b);</code></pre>
+</div>
+</figure>
+<p>There’s a number of advantages of this approach:</p>
+<ul>
+<li>the intent of the code is clearer (i.e. it’s more expressive)</li>
+<li>if the repeated operation changed, you’d only need to update one
+piece of code</li>
+<li>the function can be reused elsewhere</li>
+</ul>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-defining-functions"><span
+class="section-number">6.7.1 </span>Defining functions</h3>
+<p>Functions allow a piece of code to be reused. They are defined using
+the <code>function</code> keyword:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function sayHello() {
+  console.log(&#39;Hello&#39;);  // console.log lets you print a value to the console
+}</code></pre>
+</div>
+</figure>
+<p>A function is (usually) given a name. In the above example the
+function name is <code>sayHello</code>. You place a pair of brackets
+after the function name. The function’s body (the code that gets
+executed when the function is called) is placed between curly braces. To
+call a function you write the name of the function followed by
+brackets:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>sayHello();</code></pre>
+</div>
+</figure>
+<aside class="discussion blurb">
+<p><code>console.log</code> is a function built into JavaScript that
+lets you output a value. Where the value is displayed depends on where
+you’re running JavaScript. If you’re using jsconsole it’ll appear below
+your code.</p>
+</aside>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-return-value"><span
+class="section-number">6.7.2 </span>Return value</h3>
+<p>Functions can return a value. Here’s a function that returns a
+string:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function getName() {
+  return &quot;Paris&quot;;
+}</code></pre>
+</div>
+</figure>
+<p>If you call <code>getName</code> it runs the function’s code and
+returns the expression after the <code>return</code> keyword:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>getName();  // &quot;Paris&quot;</code></pre>
+</div>
+</figure>
+<p>The return value of a function is an expression so you can assign it
+to a variable:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>var name = getName();
+name;  // &quot;Paris&quot;</code></pre>
+</div>
+</figure>
+<p>and use it in an <code>if</code> statement:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let message;
+
+if(getName() === &quot;Paris&quot;) {
+  message = &quot;You&#39;re in France!&quot;;
+}
+
+message;  // &quot;You&#39;re in France!&quot;</code></pre>
+</div>
+</figure>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-function-arguments-and-parameters"><span
+class="section-number">6.7.3 </span>Function arguments and
+parameters</h3>
+<p>You can define a list of values that are passed into your function.
+For example let’s define a function that joins a first name and last
+name (with a space between):</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function joinNames(firstName, lastName) {
+  var joinedName = firstName + &quot; &quot; + lastName;
+
+  return joinedName;
+}</code></pre>
+</div>
+</figure>
+<p>This function has a list of <strong>parameters</strong>
+(<code>firstName</code> and <code>lastName</code>) inside its round
+brackets. These behave as variables within the function body. When the
+function is called a list of <strong>arguments</strong> is placed inside
+the round brackets:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>var fullName = joinNames(&quot;Ana&quot;, &quot;Matronic&quot;);
+fullName;  // &quot;Ana Matronic&quot;</code></pre>
+</div>
+</figure>
+<p>When the <code>joinNames</code> function executes each argument is
+assigned to the function parameters. In the above example, when the
+function executes <code>firstName</code> is <code>Ana</code> and
+<code>lastName</code> is <code>Matronic</code>.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-exercise-1"><span
+class="section-number">6.7.4 </span>Exercise</h3>
+<p>Create a function called <code>add10</code> that adds <code>10</code>
+to a number. Test your function by calling it with an argument
+<code>50</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>add10(50);</code></pre>
+</div>
+</figure>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-iteration"><span
+class="section-number">6.8 </span>JavaScript iteration</h2>
+<p>Iteration is the repeated execution of a piece of code. A common use
+case (especially when visualising data) is to execute the same piece of
+code on each element of an array.</p>
+<p>This section covers the following iteration types:</p>
+<ul>
+<li><code>for</code> loops</li>
+<li><code>forEach</code></li>
+<li><code>map</code></li>
+</ul>
+<p>These three iteration types cover most cases when visualising
+data.</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-for-loops"><span
+class="section-number">6.8.1 </span><code>for</code> loops</h3>
+<p><code>for</code> loops allow you to execute a block of code a number
+of times:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>for (let i = 0; i &lt; 3; i++) {
+  console.log(i);
+}</code></pre>
+</div>
+</figure>
+<p>The <code>for</code> statement is given three expressions:</p>
+<ul>
+<li>the first is an initialisation expression which usually initializes
+a counter variable to zero.</li>
+<li>the second is an expression that is evaluated before each iteration.
+If it evaluates to <code>true</code> the loop iterates again. If
+<code>false</code> the loop stops.</li>
+<li>the third expression is evaluated after each iteration. Typically
+the counter is incremented.</li>
+</ul>
+<p>In the above code the body of the <code>for</code> loop
+(<code>console.log(i)</code>) is executed while <code>i</code> is less
+than 3. The output will be three numbers: 0, 1 and 2.</p>
+<p><code>for</code> loops are useful when you know how many times you
+want to iterate. For example if you wanted to create an array containing
+5 items you could do something like:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let numItems = 5;
+let data = [];
+
+for (let i = 0; i &lt; numItems; i++) {
+  data[i] = &#39;Item-&#39; + i;
+}</code></pre>
+</div>
+</figure>
+<p>Once the loop has finished <code>data</code> is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>[&quot;Item-0&quot;, &quot;Item-1&quot;, &quot;Item-2&quot;, &quot;Item-3&quot;, &quot;Item-4&quot;]</code></pre>
+</div>
+</figure>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-foreach"><span
+class="section-number">6.8.2 </span>forEach</h3>
+<p>Given an array, <code>forEach</code> iterates over each element of
+the array. You provide <code>forEach</code> with a function that gets
+called for each array element. Each time the function is called the
+array element is passed into the function:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [10, 50, 40, 30, 20];
+
+data.forEach(function(d) {
+  console.log(d);
+});</code></pre>
+</div>
+</figure>
+<p>In this example the function is called once for each array element.
+The first time it’s called, the first element of the array
+<code>10</code> is passed into the function. The second time it’s
+called, the second element of the array <code>20</code> is passed in,
+and so on. In this instance the function gets called a total of five
+times.</p>
+<p>Notice that the function doesn’t have a name. This is an example of
+an <strong>anonymous function</strong>. These are functions that are
+defined ‘on the fly’ and typically aren’t called from anywhere else in
+the code. They’re covered in the JavaScript functions (advanced)
+chapter.</p>
+<p>You can rewrite the above using a named function:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [10, 50, 40, 30, 20];
+
+function output(message) {
+  console.log(message);
+}
+
+data.forEach(output);</code></pre>
+</div>
+</figure>
+<p>This is more verbose, but does allow the function to be reused
+elsewhere.</p>
+<p>When iterating over an array you can also use a <code>for</code>
+loop:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>var data = [10, 50, 40, 30, 20];
+
+for (let i = 0; i &lt; data.length; i++) {
+  console.log(data[i]);
+}</code></pre>
+</div>
+</figure>
+<p>However I recommend using <code>forEach</code> if possible because
+it’s more expressive. (‘Expressive’ means that the intent of the code is
+clearer to another developer.)</p>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-map"><span
+class="section-number">6.8.3 </span>map</h3>
+<p>The <code>map</code> statement takes an array and returns a new array
+with the same length. Each element of the new array is computed from the
+corresponding element in the original array. A function determines how
+the new values are computed.</p>
+<p>Here’s an example where <code>map</code> is used to iterate over
+<code>data</code> and outputs a new array where each element is
+doubled:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [10, 50, 40, 30, 20];
+
+let doubled = data.map(function(d) {
+  return d * 2;
+});
+
+doubled;  // [20, 100, 80, 60, 40]</code></pre>
+</div>
+</figure>
+<p>For each element in <code>data</code> the function is called. For the
+first element <code>10</code> is passed into the function. The function
+returns <code>10 * 2</code> and this’ll get assigned to the first
+element of the new array. The second time it’s called <code>50</code> is
+passed in and <code>50 * 2</code> is returned and added to the new
+array. And so on.</p>
+<p><code>map</code> is very common when working with data. For example
+given the data:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [
+  {
+    name: &quot;Anna&quot;,
+    value: &quot;20.1&quot;
+  },
+  {
+    name: &quot;Brian&quot;,
+    value: &quot;15.3&quot;
+  }
+];</code></pre>
+</div>
+</figure>
+<p>we might want to convert the <code>name</code> property to upper case
+and the <code>value</code> property from a string into a number.</p>
+<p>First write a function that takes an object (with properties
+<code>name</code> and <code>value</code>) and returns a new object with
+the two properties converted:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function convert(d) {
+  let newObject = {
+    name: d.name.toUpperCase(),
+    value: parseFloat(d.value)
+  };
+
+  return newObject;
+}</code></pre>
+</div>
+</figure>
+<p>Now use <code>map</code> to create a new array:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let converted = data.map(convert);</code></pre>
+</div>
+</figure>
+<p><code>converted</code> will look like:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>[
+  {
+    name: &quot;ANNA&quot;,
+    value: 20.1
+  },
+  {
+    name: &quot;BRIAN&quot;,
+    value: 15.3
+  }
+]</code></pre>
+</div>
+</figure>
+<p>The above example can be rewritten using an anonymous function:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let converted = data.map(function(d) {
+  let newObject = {
+    name: d.name.toUpperCase(),
+    value: parseFloat(d.value)
+  };
+
+  return newObject;
+});</code></pre>
+</div>
+</figure>
+<aside class="discussion blurb">
+<p>It’s a matter of design whether you use an anonymous function with
+<code>map</code>. The advantage of anonymous functions are they keep the
+<code>map</code> and function in the same place so can be easier to
+read. The advantage of using a named function with <code>map</code> is
+you can reuse that function elsewhere in your code.</p>
+</aside>
+<h3 class="subsection" id="chap05.xhtml_leanpub-auto-exercises-11"><span
+class="section-number">6.8.4 </span>Exercises</h3>
+<p>Open <a href="https://jsconsole.com/">jsconsole</a> and create an
+array of numbers:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let a = [10, 20, 30, 40, 50];</code></pre>
+</div>
+</figure>
+<p>Try the following:</p>
+<ol>
+<li>Use <code>forEach</code> to iterate over the array, outputing the
+square of each number. (Use <code>console.log</code> to output a
+number.)</li>
+<li>Use <code>map</code> to create an array containing the square of
+each element of <code>a</code>.</li>
+</ol>
+<p>Remember to use <code>shift</code> + <code>return</code> to create
+new lines within a single statement in jsconsole.</p>
+<h4 class="subsubsection" id="chap05.xhtml_leanpub-auto-answers-1"><span
+class="section-number">6.8.4.1 </span>Answers</h4>
+<p>Using <code>forEach</code> to output the square of each number:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>a.forEach(function(d) {
+  console.log(d * d);
+});</code></pre>
+</div>
+</figure>
+<p>Using <code>map</code> to create an array containing the square of
+each element of <code>a</code>:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let squared = a.map(function(d) {
+  return d * d;
+});
+
+squared;     // [100, 400, 900, 1600, 2500]</code></pre>
+</div>
+</figure>
+<h2 class="section"
+id="chap05.xhtml_leanpub-auto-javascript-functions-advanced"><span
+class="section-number">6.9 </span>JavaScript functions (advanced)</h2>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-named-functions-and-anonymous-functions"><span
+class="section-number">6.9.1 </span>Named functions and anonymous
+functions</h3>
+<p>Functions usually have a name:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function addTen(x) {
+  return x + 10;
+}</code></pre>
+</div>
+</figure>
+<p>This allows them to be called anywhere in your program. However when
+using <code>forEach</code> or <code>map</code> (see the iteration
+chapter) it’s often convenient to use an <strong>anonymous
+function</strong>. This is a function without a name and is defined as
+the first argument of <code>forEach</code> or <code>map</code>. So
+instead of writing:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [10, 50, 40, 30, 20];
+
+function output(message) {
+  console.log(message);
+}
+
+data.forEach(output);</code></pre>
+</div>
+</figure>
+<p>you can write:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let data = [10, 50, 40, 30, 20];
+
+data.forEach(function(message) {
+  console.log(message);
+});</code></pre>
+</div>
+</figure>
+<p>This results in more concise code and is a <strong>very</strong>
+common pattern in JavaScript. (D3 uses this pattern very often.) I
+highly recommend understanding this pattern properly. Study the two code
+examples above and try to understand the difference and similarity
+between the two.</p>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-pure-functions"><span
+class="section-number">6.9.2 </span>Pure functions</h3>
+<p>A pure function is a function that doesn’t have <strong>side
+effects</strong>. A side effect is when something outside of the
+function changes. For example:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let outside = 10;
+
+function doSomething() {
+  outside = 20;
+}</code></pre>
+</div>
+</figure>
+<p>Calling <code>doSomething</code> results in the variable
+<code>outside</code> changing. This is considered a side effect. An
+example of a pure function (where there are no side effects) is:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let outside = 10;
+
+function doSomething() {
+  return 20;
+}
+
+outside = doSomething();</code></pre>
+</div>
+</figure>
+<p>The function just returns a value and does not affect anything
+outside of the function. The advantage of pure functions is that they
+have more predictable behaviour. They have input values (via the
+argument list) and a single output. You know that if you call a pure
+function it’s not going to cause anything to change outside of that
+function.</p>
+<h3 class="subsection"
+id="chap05.xhtml_leanpub-auto-functions-are-objects"><span
+class="section-number">6.9.3 </span>Functions are objects</h3>
+<p>JavaScript functions behave like objects. This means you can do
+anything to a function that you can do to an object. For example you can
+assign a function to a variable:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let getANumber = function() {
+  return 10;
+}
+
+getANumber();</code></pre>
+</div>
+</figure>
+<p>The above is equivalent to:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function getANumber() {
+  return 10;
+}
+
+getANumber();</code></pre>
+</div>
+</figure>
+<p>You can add functions to objects:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>let myFunctions = {
+  add: function(a, b) {
+    return a + b;
+  },
+  subtract: function(a, b) {
+    return a - b;
+  }
+};
+
+myFunctions.add(10, 20);       // 30
+myFunctions.subtract(20, 10);  // 10</code></pre>
+</div>
+</figure>
+<h4 class="subsubsection"
+id="chap05.xhtml_leanpub-auto-passing-functions-into-functions"><span
+class="section-number">6.9.3.1 </span>Passing functions into
+functions</h4>
+<p>You can also pass functions into functions:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>function add(a, b) {
+  return a + b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function getValue(a, b, operation) {
+  return operation(a, b);
+}
+
+getValue(10, 20, add);          // 30
+getValue(10, 20, multiply);     // 200</code></pre>
+</div>
+</figure>
+<p>Here we’ve defined three functions:</p>
+<ul>
+<li><code>add</code> takes two numbers and returns the sum</li>
+<li><code>multiply</code> takes two numbers and returns them
+multiplied</li>
+<li><code>getValue</code> takes two numbers and a function</li>
+</ul>
+<p>When <code>getValue</code> is first called, the <code>add</code>
+function is passed in and assigned to the <code>operation</code>
+parameter. Thus when <code>operation</code> is called (inside
+<code>getValue</code>) <code>add</code> is executed.</p>
+<p>In the second call to <code>getValue</code>, the
+<code>multiply</code> function is passed in meaning that
+<code>operation</code>‘s value is <code>multiply</code>. Thus when
+<code>operation</code> is called, <code>multiply</code> is executed.</p>
+<p>Navigate to <a
+href="https://codepen.io/createwithdata/pen/abvJmPY">https://codepen.io/createwithdata/pen/abvJmPY</a>
+to view this example in CodePen</p>
+<p>Take your time in understanding this example. This is fairly advanced
+JavaScript but functions are often passed into functions when using
+D3.</p>
+<p><span id="chap06.xhtml"></span></p>
+<h1 class="chapter"
+id="chap06.xhtml_leanpub-auto-tools-and-set-up"><span
+class="section-number">7 </span>Tools and Set-up</h1>
+<p>This book has used CodePen for code examples. CodePen’s a reasonable
+tool for building small applications but larger applications are
+typically developed locally. This means using tools and files <strong>on
+your computer</strong> (rather than on the web). This chapter outlines a
+typical set up for developing web applications locally. This is similar
+to the set-up most web developers use.</p>
+<p>The first section gives an overview of the necessary tools and the
+second section walks you through setting up these tools.</p>
+<h2 class="section"
+id="chap06.xhtml_leanpub-auto-web-development-tools"><span
+class="section-number">7.1 </span>Web development tools</h2>
+<p>The tools necessary for web development are:</p>
+<ul>
+<li>a <strong>code editor</strong></li>
+<li>a <strong>web browser</strong></li>
+<li>a <strong>web server</strong> (not so important if you’re not
+loading data)</li>
+</ul>
+<p>You could also add a <strong>terminal emulator</strong> to this list.
+A terminal emulator allows you to interact with your operating system
+via text commands. For example Terminal (on MacOS) and the Command shell
+(on Windows). You can work through all the material in this book without
+a terminal emulator so I won’t cover them in this book. If you’d like to
+learn more I suggest a web search for ‘command line tutorial’.</p>
+<h3 class="subsection" id="chap06.xhtml_leanpub-auto-code-editor"><span
+class="section-number">7.1.1 </span>Code editor</h3>
+<p>A code editor is a desktop application that allows you to edit HTML,
+CSS and JavaScript files. You can use simple applications such as
+Notepad (on Windows) and TextEdit (on Mac). It’s important that these
+editors work in plain text mode so that they don’t insert extra
+characters. However I recommend using a dedicated code editor such as <a
+href="http://brackets.io/">Brackets</a> or <a
+href="https://code.visualstudio.com/">Visual Studio Code</a>. Both of
+these are free and multi-platform. Advantages of using a dedicated code
+editor include:</p>
+<ul>
+<li>you can treat your application as a project making it easier to open
+and navigate</li>
+<li>syntax highlighting (code is coloured according to whether its a
+keyword, a variable etc.)</li>
+<li>numerous plug-ins (including web servers!) that make your life as a
+coder easier</li>
+</ul>
+<aside class="discussion blurb">
+<p>Adobe dropped support for Brackets but at the time of writing it’s
+been resurrected by the open source community. It does seem to be in a
+state of flux so keep checking its status if you’re interested.</p>
+</aside>
+<h3 class="subsection" id="chap06.xhtml_leanpub-auto-web-browser"><span
+class="section-number">7.1.2 </span>Web browser</h3>
+<p>A modern web browser such as Chrome, Firefox, Safari or Edge is
+recommended for web development. Create With Data books assume that
+<strong>Chrome</strong> is being used. The majority of material will
+apply regardless of your browser choice but there may be differences if
+the debugging tools are used, as these differ from browser to
+browser.</p>
+<h3 class="subsection" id="chap06.xhtml_leanpub-auto-web-server"><span
+class="section-number">7.1.3 </span>Web server</h3>
+<p>A web server typically returns (or ‘serves’) HTML, CSS and JavaScript
+files in response to requests from a web browser. For example if you
+type <code>createwithdata.com</code> into a web browser the browser
+connects with a web server and requests files that make up that website.
+The web server responds by sending the requested files back to the
+browser.</p>
+<p>When you create a web site on your own computer you don’t necessarily
+need your own web server running. (You can open an HTML file directly in
+most web browsers.) However if you need to make requests from within
+your web application (as is usually the case with web based data
+visualisations) you will need your own local web server. (This is due to
+security restrictions in web browsers.) If you’re an experienced
+developer and are comfortable setting up a local web server, feel free
+to skip ahead.</p>
+<p>The options for running a local web server (starting at the easiest)
+include:</p>
+<ul>
+<li>Brackets editor built-in web server</li>
+<li>Visual Studio Code plug-ins</li>
+<li>Python, Ruby, PHP or Node servers</li>
+</ul>
+<p>Another option which I’ve not personally explored is <a
+href="https://greggman.github.io/servez/">Servez</a> which is a simple
+GUI based web server.</p>
+<aside class="discussion blurb">
+<p>Personally I use a Node server (such as <a
+href="https://github.com/http-party/http-serverhttps://github.com/http-party/http-server">http-server</a>)
+and I recommend this if you get serious about web development. However
+if you’re starting out Brackets is a great choice.</p>
+</aside>
+<h4 class="subsubsection"
+id="chap06.xhtml_leanpub-auto-brackets-web-server"><span
+class="section-number">7.1.3.1 </span>Brackets web server</h4>
+<p><a href="http://brackets.io/">Brackets</a> has a built in web server
+so this is by far the easiest option. This <a
+href="https://youtu.be/KJXdvaY9lTA?t=122">video</a> gives a good
+demonstration. If you’re new to code editors I recommend using
+Brackets.</p>
+<h4 class="subsubsection"
+id="chap06.xhtml_leanpub-auto-vs-code-live-server"><span
+class="section-number">7.1.3.2 </span>VS Code Live Server</h4>
+<p>Visual Studio Code has a web server plug-in called <a
+href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live
+Server</a>.</p>
+<p>To install Live Server:</p>
+<ul>
+<li>select ‘View’ and then ‘Command Palette…’ from the menu bar</li>
+</ul>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/d717b39536c6d8db2b2de77247886680.png"
+style="width: 100%;" />
+<figcaption>Open Command Palette in VS Code</figcaption>
+</figure>
+</div>
+<ul>
+<li>type ‘extension’ and select ‘Extensions: Install Extensions’</li>
+</ul>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/758fc48409e013f521b425ce750d31e1.png"
+style="width: 100%;" />
+<figcaption>Select Extensions: Install Extensions</figcaption>
+</figure>
+</div>
+<ul>
+<li>search for ‘live server’ (by Ritwick Dey) in the extensions search
+box and click Install</li>
+</ul>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/a1d14e404fc8f56eec28c40e0dfd2567.png"
+style="width: 100%;" />
+<figcaption>Search for ‘live server’</figcaption>
+</figure>
+</div>
+<ul>
+<li>open a directory containing your code</li>
+</ul>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/a4466b2227af9203170369748abdee9f.png"
+style="width: 100%;" />
+<figcaption>Open a directory cotaining your code</figcaption>
+</figure>
+</div>
+<ul>
+<li>click the <strong>Go Live</strong> button in the bottom bar</li>
+</ul>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 25%">
+<img src="resources/7639d9be85c152e9a18293484e41967d.png"
+style="width: 100%;" />
+<figcaption>Click the Go Live button</figcaption>
+</figure>
+</div>
+<p>Your web browser should then open your web application. If it
+doesn’t, open a web browser and go to <code>localhost:5500</code>. (If a
+different port number to 5500 is shown in the ‘Server is Started’
+message, use that number instead.) More detailed instructions are <a
+href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">here</a>.</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/e7600c7555f3ff521f83a1b460d49485.png"
+style="width: 100%;" />
+<figcaption>Server has started</figcaption>
+</figure>
+</div>
+<h4 class="subsubsection"
+id="chap06.xhtml_leanpub-auto-python-ruby-php-node"><span
+class="section-number">7.1.3.3 </span>Python, Ruby, PHP, Node</h4>
+<p>If you’re a Python, Ruby or PHP developer you can use the language’s
+built in webserver. There are some useful instructions <a
+href="https://gist.github.com/willurd/5720255">here</a>. MacOS includes
+Python and Ruby so you can use one of these if you’re a Mac user. If
+you’re a JavaScript developer using Node you can use <a
+href="https://www.npmjs.com/package/http-server">http-server</a>.</p>
+<h2 class="section" id="chap06.xhtml_leanpub-auto-example-set-up"><span
+class="section-number">7.2 </span>Example set-up</h2>
+<p>This section takes you through setting up a web development
+environment and the creation of a simple website (using HTML, CSS and
+JavaScript).</p>
+<p>The steps are:</p>
+<ul>
+<li><strong>create a directory</strong> for your project</li>
+<li>choose and install a <strong>code editor</strong></li>
+<li>create a simple <strong>HTML</strong> file</li>
+<li>get a local <strong>web server</strong> up and running</li>
+<li>add <strong>CSS</strong> and <strong>JavaScript</strong> files</li>
+</ul>
+<p>We’ll use VS Code and its Live Server extension. If you’re
+comfortable using a different editor and web server then please feel
+free to do so.</p>
+<h3 class="subsection"
+id="chap06.xhtml_leanpub-auto-create-a-project-directory"><span
+class="section-number">7.2.1 </span>Create a project directory</h3>
+<p>Using File Explorer (Windows) or Finder (Mac) create a directory (or
+folder) that’ll contain your project. Name it <code>my_website</code>
+(or something similar). You might want to place it in another directory
+named <code>coding_projects</code> (or similar) if you plan on having
+more than one project.</p>
+<h3 class="subsection"
+id="chap06.xhtml_leanpub-auto-install-a-code-editor"><span
+class="section-number">7.2.2 </span>Install a code editor</h3>
+<p>1. Download VS Code from <a
+href="https://code.visualstudio.com/">here</a> and install<br />
+2. Run VS Code</p>
+<h3 class="subsection"
+id="chap06.xhtml_leanpub-auto-create-a-minimal-html-file"><span
+class="section-number">7.2.3 </span>Create a minimal HTML file</h3>
+<p>In this section you’ll create a simple HTML file. In VS Code select
+<strong>New</strong> from the <strong>File</strong> menu. VS Code
+creates a new (unsaved and untitled) file.</p>
+<p>The following code is just about the shortest and valid HTML document
+possible. It serves as a good starting point to a new web page. Copy it
+and paste into your new document.</p>
+<figure class="code with-caption" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My webpage&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Hello!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+<figcaption>index.html</figcaption>
+</figure>
+<p>Usually the only code you’ll need to change is the title (between the
+<code>&lt;title&gt;</code> tags and the content (between the
+<code>&lt;body&gt;</code>) tags.</p>
+<aside class="discussion blurb">
+<p>The <code>&lt;!DOCTYPE&gt;</code>, <code>lang="en"</code> and
+<code>charset="utf-8"</code> are standard bits of code that tell the
+browser how to interpret your HTML file. Although your webpage may
+appear to work without these it’s best to leave them in. (See <a
+href="https://www.w3.org/International/questions/qa-what-is-encoding">here</a>
+for more information about character encoding if you’re interested.)</p>
+</aside>
+<p>Select <strong>Save</strong> from the <strong>File</strong> menu,
+navigate to your project directory, name your file
+<strong>index.html</strong> and click Save. (It’s important to name your
+file <strong>index.html</strong>.) Once your file is saved you should
+see <strong>index.html</strong> appear in the sidebar.</p>
+<h3 class="subsection"
+id="chap06.xhtml_leanpub-auto-install-live-server-extension"><span
+class="section-number">7.2.4 </span>Install Live Server extension</h3>
+<p>Follow the instructions earlier in this chapter to install the Live
+Server extension.</p>
+<h3 class="subsection" id="chap06.xhtml_leanpub-auto-start-server"><span
+class="section-number">7.2.5 </span>Start Server</h3>
+<p>If you haven’t already, select <strong>Open Folder…</strong> from the
+<strong>File</strong> menu and select your <code>my_website</code>
+directory. You should see your new directory appear in the sidebar. Now
+click on the Go Live button that appears in the bottom bar.</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 25%">
+<img src="resources/8dc438bb3ddde54df5c5ca1458b88a29.png"
+style="width: 100%;" />
+<figcaption>Click the Go Live button in VS Code</figcaption>
+</figure>
+</div>
+<p>Make sure your browser is pointing at ‘localhost:5500’ (use whichever
+port number is displayed in the bottom bar).</p>
+<div class="figure-wrapper center">
+<figure class="image block" style="width: 50%">
+<img src="resources/dee9aa4bc88e5e8d643c872b93f92954.png"
+style="width: 100%;" />
+<figcaption>Server has started message (with active port number
+displayed)</figcaption>
+</figure>
+</div>
+<p>Your page should now be visible in the web browser (it should say
+‘Hello!’). Try editing your HTML file, saving it, then refreshing your
+browser. The changes you’ve made should be visible.</p>
+<h3 class="subsection"
+id="chap06.xhtml_leanpub-auto-add-css-and-javascript-files"><span
+class="section-number">7.2.6 </span>Add CSS and JavaScript files</h3>
+<p>In this section you’ll add a CSS file and a JavaScript file to your
+web page. There are usually two steps to adding a file to a web
+page:</p>
+<ul>
+<li>create the file and save it (with extension <code>.css</code> for
+CSS files or <code>.js</code> for JavaScript files)</li>
+<li>include the file in your <code>index.html</code> file</li>
+</ul>
+<h4 class="subsubsection"
+id="chap06.xhtml_leanpub-auto-add-a-css-file"><span
+class="section-number">7.2.6.1 </span>Add a CSS file</h4>
+<p>Select <strong>New</strong> from the <strong>File</strong> menu and
+add the following CSS code to the new file:</p>
+<figure class="code with-caption" dir="ltr">
+<div class="highlight">
+<pre><code>h1 {
+  color: orange;
+}</code></pre>
+</div>
+<figcaption>style.css</figcaption>
+</figure>
+<p>Select <strong>Save</strong> from the <strong>File</strong> menu and
+when the dialog appears create a new directory called <code>css</code>
+within your project directory. Go into the <code>css</code> directory
+then save your new file as <code>style.css</code>. You’re aiming for the
+following directory structure:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>my_website
+  css
+    style.css
+  index.html</code></pre>
+</div>
+</figure>
+<p>You now need link to your CSS file in <code>index.html</code>. Start
+editing your HTML file by clicking <code>index.html</code> in the left
+sidebar. Add the line with the <code>&lt;link&gt;</code> tags
+(highlighted below):</p>
+<figure class="code with-caption" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My webpage&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Hello there!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+<figcaption>index.html</figcaption>
+</figure>
+<p>Save <code>index.html</code> and check your browser (you might need
+to refresh the page). The title should now be
+<strong>orange</strong>.</p>
+<h4 class="subsubsection"
+id="chap06.xhtml_leanpub-auto-add-a-javascript-file"><span
+class="section-number">7.2.6.2 </span>Add a JavaScript file</h4>
+<p>Select <strong>New</strong> from the <strong>File</strong> menu and
+add the following JavaScript code to the new file:</p>
+<figure class="code with-caption" dir="ltr">
+<div class="highlight">
+<pre><code>  alert(&quot;Hello!&quot;);</code></pre>
+</div>
+<figcaption>main.js</figcaption>
+</figure>
+<p>Select <strong>Save</strong> from the <strong>File</strong> menu and
+when the dialog appears create a new directory within your project
+directory called <code>src</code>. Go into the <code>src</code>
+directory then save your new file as <code>main.js</code>. You’re aiming
+for the following directory structure:</p>
+<figure class="code" dir="ltr">
+<div class="highlight">
+<pre><code>my_website
+  css
+    style.css
+  src
+    main.js
+  index.html</code></pre>
+</div>
+</figure>
+<aside class="discussion blurb">
+<p>If your files aren’t in the above structure you can drag them into
+their correct location in the left sidebar of VS Code. You can also
+right click files and directories for more options.</p>
+</aside>
+<p>You now need to add a link to your JavaScript file in
+<code>index.html</code>. Start editing your HTML file by clicking
+<code>index.html</code> in the left sidebar. Add the line containing the
+<code>&lt;script&gt;</code> tag (highlighted below):</p>
+<figure class="code with-caption" dir="ltr">
+<div class="highlight">
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;My webpage&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h1&gt;Hello there!&lt;/h1&gt;
+    &lt;script src=&quot;src/main.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+<figcaption>index.html</figcaption>
+</figure>
+<p>Save <code>index.html</code> and check your browser (you might need
+to refresh the page). An alert should appear saying ‘Hello!’.</p>
+<h3 class="subsection" id="chap06.xhtml_leanpub-auto-summary"><span
+class="section-number">7.2.7 </span>Summary</h3>
+<p>This section has shown how to set up a web development environment
+consisting of:</p>
+<ul>
+<li>a code editor</li>
+<li>a web browser</li>
+<li>a local web server</li>
+</ul>
+<p>You saw how to create a simple web site consisting of an HTML file, a
+CSS file and a JavaScript file. This is the basis for most web
+applications and web-based data visualisations.</p>

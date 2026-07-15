@@ -1,0 +1,611 @@
+- "# 数据可视化的 HTML、SVG、CSS 和 JavaScript 基础\n\n# 1 引言\n\n欢迎！本书面向对数据可视化感兴趣的读者，涵盖 HTML、SVG、CSS\
+  \ 和 JavaScript 的基础知识。如果你处理数据，可能大部分时间都在使用 Excel、R 或 Python。你可能会被要求在 Python Jupyter\
+  \ notebook 中创建图表，或使用 R 的 Shiny 或 Python 的 Dash 创建仪表板。这些图表通常是用 HTML、SVG、CSS 和 JavaScript\
+  \ 构建的，当你需要深入探索时，对这些语言的良好理解会很有帮助。\n\n或者，你可能对学习 D3 或其他 JavaScript 图表库感兴趣。在这种情况下，本书可以帮助你快速掌握\
+  \ HTML、SVG、CSS 和 JavaScript。\n\n本书不假设你具备这些语言的先验知识，但如果你有一些编程经验会更有帮助。熟悉文本编辑器（或 IDE）也会有所帮助。\n\
+  \n本书绝不是 HTML、SVG、CSS 和 JavaScript 的全面教程。要做到这一点，你需要一本更厚的书。请将本书视为一份最低限度的知识清单，适用于希望处理基于\
+  \ Web 的数据可视化的人。如果你想理解我的其他数据可视化书籍（例如《D3 从入门到精通》），你绝对需要理解本书的内容。\n\n## 1.1 环境搭建\n\n\
+  为了快速上手，我建议使用 [CodePen](https://codepen.io/) 来查看和试验代码示例（见下一节）。在本书末尾的“工具与设置”章节中，我将展示如何设置工具，以便你可以在本地编写代码（文件存储在你的计算机上，而不是\
+  \ CodePen 上）。这需要一些时间来设置，但如果你对 Web 开发变得更加认真，我推荐这种方法。\n\n## 1.2 CodePen\n\n[CodePen](https://codepen.io/)\
+  \ 是一个网站，让你无需设置任何工具即可试验 HTML、SVG、CSS 和 JavaScript。\n\n![](img/16bd52866cd98207c7c894c118bbd54e.png)\n\
+  \n这就是 CodePen。你可以在 https://codepen.io/createwithdata/pen/VwvpzOg 访问此示例。\n\n在书中的关键位置，会有一个指向\
+  \ CodePen “笔”的链接，其中包含代码示例。如果你访问该链接，就可以查看并试验代码。我鼓励你多玩玩 CodePen 示例——你几乎不会破坏任何东西，通过实验学习非常有效。\n\
+  \n你可以自由编辑本书中的 CodePen 示例，你的更改不会影响原始示例。如果你想保留更改，请点击 Fork（在页面底部）并创建一个 CodePen 账户（或登录）。通过点击页面顶部的\
+  \ Save 按钮保存你的工作。\n\n## 1.3 保持联系\n\n我喜欢与读者保持联系。最好的方式之一是通过我的邮件列表。我会偶尔发送包含与实现数据可视化相关的有用信息（例如使用\
+  \ JavaScript 或其他工具）的消息。还会有我其他书籍的折扣码。你可以[在此处](https://mailchi.mp/085e79e8fd7c/create-with-data-newsletter)注册。\n\
+  \n## 1.4 翻译者\n\n如果你有兴趣将《用于数据可视化的 HTML、SVG、CSS 和 JavaScript 基础》翻译成其他语言，请通过 info@createwithdata.com\
+  \ 联系我，我很乐意进一步讨论。\n\n# 2 Web 语言：HTML、SVG、CSS 和 JavaScript\n\n大多数网站和 Web 应用程序（包括数据可视化）都由\
+  \ 4 种语言构建：**HTML**、**SVG**、**CSS** 和 **JavaScript**。\n\nHTML 代表超文本标记语言，描述网页的**内容**。\n\
+  \nSVG 代表可缩放矢量图形，描述**形状**，例如圆形、线条和矩形。它常用于数据可视化（描述条形、线条、圆形、坐标轴、图例等）。\n\nCSS 代表层叠样式表，描述\
+  \ HTML 和 SVG 元素的**样式**（例如字体粗细、颜色或大小）和**位置**。\n\nJavaScript 是一种编程语言，可以**操作** HTML\
+  \ 和 SVG，进行通用**计算**（例如数据处理）并处理**交互**。\n\n我们将在接下来的章节中逐一介绍这些内容。\n\n# 3 HTML\n\nHTML\
+  \ 是一种定义网页**内容**的语言。它使用元素来定义标题、段落、图像、链接等。例如，一个段落元素看起来像这样：\n\n```\n<p>这是一个段落文本。</p>\n\
+  ```\n\n段落元素由一个**开始标签** `<p>`、一些**内容**和一个**结束标签** `</p>` 组成。标签通常成对出现。开始标签看起来像 `<p>`，结束标签看起来像\
+  \ `</p>`。\n\n当 Web 浏览器加载 HTML 文档时，它会根据元素类型（段落、标题、图像等）绘制每个元素。例如，上面的段落元素在 Web 浏览器中渲染时看起来像这样：\n\
+  \n![](img/bd2b66aaf5793ed7fb6769887aeb954c.png)\n\n在 Web 浏览器中渲染的段落 `<p>` 元素\n\n\
+  HTML 元素有很多，但只需少数几个就能完成很多工作。本章介绍五个常见元素：标题、列表、图像、`div` 元素和 `svg` 元素。（在可视化数据时，这五个元素通常就足够了。）\n\
+  \n## 3.1 标题\n\n标题元素用于标题。有六个级别，从大（`<h1>`）到小（`<h6>`）。\n\n```\n<h1>主标题</h1>\n<h2>副标题</h2>\n\
+  <h3>三级标题</h3>\n<h4>四级标题</h4>\n<h5>五级标题</h5>\n<h6>六级标题</h6>\n```\n\n这些元素在 Web 浏览器中渲染时看起来像这样：\n\
+  \n![](img/842934fa7c3b7a8c7ff897a7d13bb3a1.png)\n\n在 Web 浏览器中渲染的标题元素 `<h1>` 到 `<h6>`\n\
+  \n## 3.2 列表\n\n列表元素 `<ul>` 用于表示项目列表。每个项目由列表项元素 `<li>` 表示，并嵌套在 `<ul>` 元素内：\n\n```\n\
+  <ul>\n  <li>列表项一</li>\n  <li>列表项二</li>\n</ul>\n```\n\n注意，我们对 `<li>` 元素进行了缩进。这是可选的，但通常是表示嵌套元素的方式。在浏览器中显示时，列表看起来像：\n\
+  \n![](img/c98f89915d42064563c9f2ccf1eb1b8a.png)\n\n在 Web 浏览器中渲染的列表元素 `<ul>` 和 `<li>`\n\
+  \n## 3.3 图像\n\n可以使用 `<img>` 元素将图像添加到 HTML 文档中。`<img>` 元素需要一个名为 `src` 的**属性**，用于指定图像的\
+  \ URL。\n\n图像元素没有结束标签。下面是一个图像元素，显示位于 `https://picsum.photos/id/127/300/200.jpg` 的图像：\n\
+  \n```\n<img src=\"https://picsum.photos/id/127/300/200.jpg\">\n```\n\n此示例看起来像：\n\
+  \n![](img/bd967b4e4ad159da03d87bd9e9dc23fd.png)\n\n在 Web 浏览器中渲染的图像元素 `<img>`\n\n\
+  通常，你的图像文件会与源代码放在一起。例如，你可能有一个名为 `images` 的目录，其中包含图像文件 `my-image.jpg`。在这种情况下，你应该这样写：\n\
+  \n```\n<img src=\"images/my-image.jpg\">\n```\n\n\n\n\n默认情况下，图像以其原始尺寸显示。你可以使用 `width`（或\
+  \ `height`）属性设置图像的显示宽度（或高度）。让我们将上一张图像的宽度设置为 200 像素：\n\n```\n<img width=\"200px\"\
+  \ src=\"images/my-image.jpg\">\n```\n\n我们将在 CSS 章节中介绍测量单位（例如 `px`）。\n\n## 3.4 `<div>`\
+  \ 元素\n\n`<div>` 元素是一个通用元素，常用于分组和组织内容。当其他元素都不合适时，它也是一个很好的后备元素。下面是一个使用 `<div>` 元素构建网页结构的示例：\n\
+  \n```\n<div>\n  <h1>主标题</h1>\n  <h2>副标题</h2>\n</div>\n<div>\n  <h3>文章标题</h3>\n \
+  \ <div>\n    <p>第一段</p>\n    <p>第二段</p>\n  </div>\n</div>\n```\n\n注意元素是如何缩进的。这是可选的，不会影响元素在浏览器中的显示，但在阅读和处理代码时很有用。\n\
+  \n上述示例在网页浏览器中渲染时如下所示：\n\n![](img/8d76a2ccf46fd6f7ea23fce904abfb73.png)\n\n通用 `<div>`\
+  \ 元素在网页浏览器中的渲染效果\n\n试着将每个 HTML 元素与输出的每一行对应起来。\n\n## 3.5 `<svg>` 元素\n\n当你想在页面中包含\
+  \ SVG 时，使用 `<svg>` 元素。SVG 代表可缩放矢量图形（Scalable Vector Graphics），是一种描述形状（如线条、圆形和矩形）的语言（参见\
+  \ SVG 章节）。`<svg>` 元素充当 SVG 形状的容器。例如，要在网页中添加一个圆形，你可以使用：\n\n```\n<svg width=\"800\"\
+  \ height=\"600\">\n  <circle r=\"100\"></circle>\n</svg>\n```\n\n在 `<svg>` 元素内部有两个**属性**：`width`\
+  \ 和 `height`。它们与 `<img>` 元素中的 `width` 和 `height` 属性类似。\n\n指定 SVG 元素的大小（使用 `width`\
+  \ 和 `height` 属性）非常重要，因为其默认尺寸非常小，并且形状会被裁剪到 SVG 的边界内。\n\nSVG 将在 SVG 章节中更深入地介绍。\n\n\
+  ## 3.6 总结\n\n还有许多其他 HTML 元素，但在可视化数据时，本节介绍的元素是最常见的。\n\n你可以在 [`developer.mozilla.org/en-US/docs/Web/HTML/Element`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)\
+  \ 查看 HTML 元素的完整列表。\n\n## 3.7 练习\n\n下面是一些包含本章大部分元素的 HTML：\n\n```\n<div>\n  <h1>主标题</h1>\n\
+  \  <h2>副标题</h2>\n</div>\n<div>\n  <h4>文章标题</h4>\n  <div>\n    <p>第一段</p>\n    <img\
+  \ src=\"https://picsum.photos/id/127/300/200.jpg\">\n    <p>第二段</p>\n    <ul>\n\
+  \      <li>列表项一</li>\n      <li>列表项二</li>\n    </ul>\n    <p>第三段</p>\n  </div>\n\
+  </div>\n```\n\n你可以在 CodePen 上打开此示例：[`codepen.io/createwithdata/pen/ExQGeeY`](https://codepen.io/createwithdata/pen/ExQGeeY)。\n\
+  \n尝试以下操作：\n\n1.  更改标题内的文本。\n\n2.  将 `<h4>` 和 `</h4>` 标签改为 `<h4>` 和 `</h4>`。\n\n\
+  3.  添加一个包含一些文本的新段落。\n\n4.  将图像 URL 改为 `https://picsum.photos/id/104/384/216`\n\n\
+  5.  将图像的宽度改为 150 像素。\n\n6.  添加另一个列表项。\n\n# 4 SVG\n\nSVG（可缩放矢量图形）是一种描述形状的语言。它的结构与\
+  \ HTML 类似，但描述的是形状而非文本。在可视化数据时，最常见的 SVG 元素有：\n\n| 元素 | 描述 |\n| --- | --- |\n| `<line>`\
+  \ | 线条 |\n| `<rect>` | 矩形 |\n| `<circle>` | 圆形 |\n| `<text>` | 文本 |\n| `<g>` | 组（用于分组元素）\
+  \ |\n| `<path>` | 路径（通用的自由形状） |\n\n每个元素需要多个属性来定义其位置和大小。我们在 HTML 章节中看到，属性看起来像 `name=\"\
+  value\"`，并插入到开始标签内。例如：\n\n```\n<svg width=\"800\" height=\"600\">\n  <circle r=\"\
+  100\"></circle>\n</svg>\n```\n\n在上面的代码片段中，`<svg>` 元素有两个属性 `width` 和 `height`，`<circle>`\
+  \ 元素有一个属性 `r`，其值为 `100`。稍后我们会看到 `r` 属性指定了圆的半径。\n\n## 4.1 将 SVG 添加到网页\n\nSVG 形状元素可以通过将它们包含在\
+  \ `<svg>` 元素内来添加到 HTML 文档中。例如：\n\n```\n<h3>这里有一些形状：</h3>\n\n<svg width=\"800\" height=\"\
+  600\">\n  <circle r=\"100\"></circle>\n  <line x1=\"10\" y1=\"10\" x2=\"100\" y2=\"\
+  10\"></line> \n</svg>\n\n<p>上面是一个圆形和一条线条。</p>\n```\n\n## 4.2 SVG 元素\n\n### 4.2.1\
+  \ 线条\n\n`<line>` 元素表示直线。它有 4 个属性：\n\n*   `x1` 和 `y1` 定义线条的起点\n*   `x2` 和 `y2` 定义线条的终点\n\
+  \n例如：\n\n```\n<svg width=\"800\" height=\"100\">\n  <line x1=\"50\" y1=\"50\" x2=\"\
+  200\" y2=\"50\"></line>\n</svg>\n```\n\n定义了一条起点坐标为 (50,50)、终点坐标为 (200,50) 的线条。每个属性以像素为单位。上述示例看起来如下：\n\
+  \n![](img/0f7e66f6a0c9e74d4c39d63e32080531.png)\n\n一个 `<line>` 元素（`<svg>` 元素以灰色轮廓表示）\n\
+  \n### 4.2.2 矩形\n\n`<rect>` 元素定义矩形，有 4 个属性：\n\n*   `x` 和 `y` 定义左上角位置\n*   `width`\
+  \ 和 `height`\n\n例如：\n\n```\n<svg width=\"800\" height=\"150\">\n  <rect x=\"50\"\
+  \ y=\"50\" width=\"200\" height=\"50\"></rect>\n</svg>\n```\n\n定义了一个左上角在 (50,50)、宽度为\
+  \ 200 像素、高度为 50 像素的矩形。此示例看起来像：\n\n![](img/0b00275bef9811eba831ded2f38a2e71.png)\n\
+  \n一个 `<rect>` 元素\n\n### 4.2.3 圆形\n\n`<circle>` 元素有 3 个属性：\n\n*   `cx` 和 `cy` 定义圆心\n\
+  *   `r` 定义半径\n\n例如：\n\n```\n<svg width=\"800\" height=\"150\">\n  <circle cx=\"\
+  100\" cy=\"75\" r=\"50\"></circle>\n</svg>\n```\n\n看起来像：\n\n![](img/a903dac8725a3e3e595983ca2ee24003.png)\n\
+  \n一个圆心在 (100,75)、半径为 50 的 `<circle>` 元素\n\n### 4.2.4 文本\n\n`<text>` 元素有 2 个属性 `x`\
+  \ 和 `y`，定义文本的左下角。\n\n与大多数 SVG 元素不同，`<text>` 元素在开始和结束标签之间有内容：\n\n```\n<svg width=\"\
+  800\" height=\"100\">\n  <text x=\"50\" y=\"50\">一些 SVG 文本</text>\n</svg>\n```\n\
+  \n此示例渲染为：\n\n![](img/0cbee3579876266ec846058c0407e3a5.png)\n\n一个左下角在 (100,50) 的\
+  \ `<text>` 元素\n\n### 4.2.5 组\n\n`<g>` 元素用于分组 SVG 元素，当对象由多个元素组成时特别有用。它们有点像 HTML 的\
+  \ `<div>` 元素。例如，一个带有文本标签的圆形可以表示为：\n\n```\n<svg width=\"800\" height=\"600\">\n \
+  \ <g>\n    <circle cx=\"50\" cy=\"50\" r=\"20\"></circle>\n    <text x=\"75\" y=\"\
+  55\">我的标签</text>\n  </g>\n</svg>\n```\n\n此示例渲染为：\n\n![](img/21f9c866b1124600f3c3266a253d3e29.png)\n\
+  \n一个包含两个元素的 `<g>` 元素\n\n### 4.2.6 路径\n\n`<path>` 元素有一个单独的属性 `d`，其中包含一系列绘图命令：\n\n\
+  ```\n<svg width=\"800\" height=\"100\">\n  <path d=\"M20,20 l200,0 l0,50 z\"></path>\n\
+  </svg>\n```\n\n在此示例中，使用了三个命令：\n\n*   `M` 表示移动到指定坐标\n*   `l` 表示从当前位置绘制相对线条\n*   `z`\
+  \ 表示闭合形状\n\n因此：\n\n*   `M20,20` 表示移动到坐标 `20,20`\n*   `l200,0` 表示向右绘制一条 `200` 像素的线条\n\
+  *   `l0,50` 表示向下绘制一条 `50` 像素的线条\n*   `z` 表示闭合形状\n\n渲染效果如下：\n\n![](img/71929891d09771adec546a417e46434d.png)\n\
+  \n一个 `<path>` 元素\n\n如果你想了解更多关于路径命令的信息，请访问 [`developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths`](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)。\n\
+  \n### 4.2.7 练习\n\n下面是一些包含本章大部分元素的 SVG：\n\n\n\n\n\n```svg\n<svg width=\"800\" height=\"\
+  600\">\n  <line x1=\"20\" y1=\"50\" x2=\"220\" y2=\"50\"></line>\n  <rect x=\"20\"\
+  \ y=\"100\" width=\"200\" height=\"50\"></rect>\n  <circle cx=\"300\" cy=\"50\"\
+  \ r=\"50\"></circle>\n  <text x=\"300\" y=\"150\">SVG Text</text>\n  <path d=\"\
+  M20,180 l200,0 l0,50 z\"></path>\n</svg>\n```\n\n你可以在 CodePen 上打开这个示例，地址为 [`codepen.io/createwithdata/pen/poJqELb`](https://codepen.io/createwithdata/pen/poJqELb)。\n\
+  \n![](img/d3e97ea9e32a9b7452cbdac3052eb599.png)\n\nSVG 形状\n\n尝试以下操作：\n\n1. 让线条变短。\n\
+  2. 让圆的半径变小。\n3. 将矩形向上或向下移动。\n4. 更改 `<text>` 元素的内容。\n\nSVG 是基于网页的数据可视化的基石。你在网页上看到的大多数数据可视化（尤其是交互式的）都是基于\
+  \ SVG 的。它们通常由你在本节中介绍的元素组成。下次你在网页上看到数据可视化时，试着识别其中可能使用的一些形状。\n\n## 4.3 SVG 变换\n\n\
+  SVG 变换可以通过多种方式改变 SVG 元素的位置、大小和形状，包括**平移**、**缩放**和**旋转**。平移变换将元素沿给定的 `x` 和 `y` 值移动。缩放变换使元素变大或变小。旋转变换旋转元素。\n\
+  \n可以使用 `transform` 属性将变换添加到 SVG 元素。例如：\n\n```svg\n<circle transform=\"translate(100,100)\"\
+  ></circle>\n```\n\nSVG 变换包括 `translate`、`rotate`、`scale`、`skewX` 和 `skewY`。在本节中，我们将介绍\
+  \ `translate` 和 `rotate`，因为它们在数据可视化中很常见。\n\n### 4.3.1 平移\n\n假设你有一个圆心在 `(0,0)`、半径为\
+  \ 50 的圆：\n\n```svg\n<circle r=\"50\"></circle>\n```\n\n圆的默认位置是 `(0,0)`，对应于 SVG 容器（如下面的灰色框所示）左上角的原点。效果如下：\n\
+  \n![](img/e5c8ead4b7c5cf0c5670588f102d282d.png)\n\n默认位置的 SVG 圆\n\n你可以使用 `translate(x,y)`\
+  \ 对圆应用平移变换，其中 `x` 和 `y` 是在 `x` 和 `y` 方向上移动的量：\n\n```svg\n<circle r=\"50\" transform=\"\
+  translate(200,75)\"></circle>\n```\n\n上述变换将圆沿 `x` 方向移动 200，沿 `y` 方向移动 75。结果得到一个圆心在\
+  \ `(200,75)` 的圆：\n\n![](img/002e129474ba0a5783ce3cb97ad4d761.png)\n\n平移 `(200,75)`\
+  \ 后的 SVG 圆\n\n你可以对任何类型的 SVG 元素应用变换，包括 `g` 元素。假设你有一个包含圆和文本标签的 `<g>` 元素：\n\n```svg\n\
+  <g>\n  <circle r=\"50\"></circle>\n  <text y=\"6\">标签</text>\n</g>\n```\n\n![](img/f38617a9892ff1e7b6fda451f710e968.png)\n\
+  \n变换前的 SVG 圆和标签\n\n你可以对组应用平移变换：\n\n```svg\n<g transform=\"translate(100,75)\">\n\
+  \  <circle r=\"50\"></circle>\n  <text y=\"6\">标签</text>\n</g>\n```\n\n这会将圆和文本元素移动相同的量：\n\
+  \n![](img/99945862c2198d1e33baf852f0965d84.png)\n\n平移后的 SVG 圆和标签\n\n### 4.3.2 旋转\n\
+  \n假设你有一个矩形：\n\n```svg\n<rect x=\"50\" y=\"50\" width=\"200\" height=\"20\"></rect>\n\
+  ```\n\n![](img/1cb3b8bfc2f9008e7b44baec21313329.png)\n\n未旋转的 SVG 矩形\n\n你可以使用 `rotate(a)`\
+  \ 应用旋转变换，该变换将元素绕原点 `(0,0)` 顺时针旋转 `a` 度：\n\n```svg\n<rect x=\"50\" y=\"50\" width=\"\
+  200\" height=\"20\" transform=\"rotate(20)\"></rect>\n```\n\n结果如下：\n\n![](img/d422173863d118d3c3dea47ad89afdb8.png)\n\
+  \n旋转后的 SVG 矩形（虚线矩形表示未变换的 `<rect>`）\n\n矩形绕原点 `(0,0)` 旋转了 20 度。（原点是 SVG 容器的左上角。）\n\
+  \n你可以在角度后添加坐标来指定新的旋转中心。以下将矩形绕其中心 `(150,60)` 旋转：\n\n```svg\n<rect x=\"50\" y=\"50\"\
+  \ width=\"200\" height=\"20\" transform=\"rotate(20 150 60)\"></rect>\n```\n\n结果如下：\n\
+  \n![](img/c1c67c58ad5fa846a7916943e265db3d.png)\n\n绕矩形中心旋转后的 SVG 矩形\n\n### 4.3.3\
+  \ 组合变换\n\n可以通过依次书写变换来组合它们：\n\n```svg\n<rect transform=\"rotate(45) translate(100,0)\"\
+  ></rect>\n```\n\n重要的是要理解，变换指定的是**坐标系的变换**。例如，在上面的代码片段中，坐标系先旋转 45 度，然后平移 `(100,0)`。\n\
+  \n让我们更仔细地看看变换是如何组合的。这是一个没有变换的矩形：\n\n```svg\n<rect width=\"50\" height=\"10\"></rect>\n\
+  ```\n\n效果如下：\n\n![](img/72283a634fcb8c1ea0db9402d89de5c5.png)\n\n未变换的矩形（带坐标系）\n\n\
+  现在让我们添加一个旋转变换：\n\n```svg\n<rect width=\"50\" height=\"10\" transform=\"rotate(45)\"\
+  ></rect>\n```\n\n结果如下：\n\n![](img/64904faff152306e9d8751f828080054.png)\n\n旋转后的坐标系\n\
+  \n坐标系旋转了 45 度，矩形绘制在**变换后的坐标系**中。\n\n现在让我们添加一个沿 `x` 方向平移 100 像素的变换：\n\n```svg\n<rect\
+  \ width=\"50\" height=\"10\" transform=\"rotate(45) translate(100,0)\"></rect>\n\
+  ```\n\n效果如下：\n\n![](img/5c9ad1fa03bf3749d87a6565eca78545.png)\n\n旋转并平移后的坐标系\n\n\
+  坐标系先 1) 绕原点旋转 45 度，然后 2) 沿旋转后的 x 轴方向平移 100 像素。（仅应用旋转变换的坐标系以浅色显示。）\n\n## 4.4 练习\n\
+  \n以下是带标签的圆 SVG：\n\n```svg\n<svg width=\"800\" height=\"600\">\n  <g transform=\"\
+  translate(100,75)\">\n    <circle r=\"50\"></circle>\n    <text y=\"6\">标签</text>\n\
+  \  </g>\n</svg>\n```\n\n导航至 [`codepen.io/createwithdata/pen/MWwZjPp`](https://codepen.io/createwithdata/pen/MWwZjPp)\
+  \ 在 CodePen 中查看此示例。\n\n![](img/99945862c2198d1e33baf852f0965d84.png)\n\n平移后的 SVG\
+  \ 圆和标签\n\n尝试以下操作（在更改代码前试着猜测效果）：\n\n1. 更改 `translate` 变换，观察对带标签的圆组的影响。\n2. 在 `translate`\
+  \ 之后添加一个 `rotate` 变换，观察对组的影响。\n\n# 5 CSS\n\nCSS（层叠样式表）是一种用于**样式化**和**定位** HTML 和\
+  \ SVG 元素的语言。样式化意味着改变 HTML 和 SVG 元素的外观（例如**大小**、**颜色**和**字体**）。\n\n在下一节中，我们将了解 CSS\
+  \ 的结构。然后我们将介绍 CSS 度量单位，接着是常见的 CSS 属性。\n\n## 5.1 CSS 的结构\n\nCSS 样式表是一个**规则**列表。以下是一个单独的\
+  \ CSS 规则：\n\n```css\nh1 {\n  color: green;\n  font-size: 20px;\n}\n```\n\n每条规则包含一个**选择器**和一个**声明**列表。在上面的例子中，选择器是\
+  \ `h1`，声明是 `color: green;` 和 `font-size: 20px;`。\n\n选择器定义了**哪些** HTML 或 SVG 元素将被样式化。声明定义了元素**如何**被样式化。每个声明由一个**属性**和一个**值**组成。在声明\
+  \ `color: green;` 中，属性是 `color`，值是 `green`。\n\n上面例子中的规则意味着所有 `h1` 元素的颜色设置为绿色，字体大小设置为\
+  \ 20 像素（高度）。例如，假设你有一个 `<h1>` 元素：\n\n```html\n<h1>标题</h1>\n```\n\n未应用 CSS 规则时，效果如下：\n\
+  \n![](img/c915d4d3d5dd1bf7acb228db6b3c3d29.png)\n\n未应用 CSS 的 `h1` 元素\n\n如果你应用 CSS\
+  \ 规则：\n\n```css\nh1 {\n  color: green;\n  font-size: 20px;\n}\n```\n\n你会得到：\n\n\
+  ![](img/2091f1019ff68f45518eaabd457affa0.png)\n\n使用 CSS 样式化的 `<h1>` 元素\n\n## 5.2\
+  \ CSS 单位\n\n### 5.2.1 尺寸单位\n\n尺寸可以使用以下单位表示：\n\n| **单位** | **描述** | **示例** |\n| ---\
+  \ | --- | --- |\n| `px` | 像素 | `12px` |\n| `rem` | 相对于网页的默认字体大小 | `1.5rem` |\n\n\
+  \n\n\n\n| `%` | 元素父级值的百分比 | `50%` |\n| `vw` | 视口宽度的百分比 | `25vw` |\n| `vh` | 视口高度的百分比\
+  \ | `100vh` |\n\n通常网页的默认字体大小为 `16px`，因此 `1.5rem` 表示 `24px`。\n\n在构建数据可视化时，这些单位通常足够使用。\n\
+  \n### 5.2.2 颜色单位\n\n颜色可以通过以下方式表示：\n\n| **类型** | **描述** | **示例** |\n| --- | --- |\
+  \ --- |\n| 颜色名称 | 颜色名称。所有可能颜色的完整列表见[此处](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)。\
+  \ | `red`, `green`, `steelblue` |\n| RGB | `rgb` 后跟括号内的红、绿、蓝值，以数字 `0` 到 `255` 表示。\
+  \ | `rgb(255, 100, 255)` |\n| 十六进制代码 | `#` 符号后跟红、绿、蓝的十六进制值（`00` 到 `FF`）。如果三个值都有重复的数字，例如\
+  \ `#FFDD33`，可以简写为 `#FD3`。 | `#FF595E, #FD3` |\n\n根据我的经验，上述颜色单位在构建数据可视化时已经足够。如果你想深入了解，可以查看\
+  \ MDN 关于 [HTML 颜色](https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color)\
+  \ 的指南。\n\n## 5.3 CSS 属性\n\n某些 CSS 属性适用于 HTML 元素，某些适用于 SVG 元素，另一些则同时适用于 HTML 和 SVG\
+  \ 元素。我们先来看 HTML 元素的 CSS 属性。\n\n### 5.3.1 HTML 的 CSS 属性\n\nHTML 元素的一些最常见属性如下：\n\n\
+  | **属性** | **描述** | **示例值** | **更多信息** |\n| --- | --- | --- | --- |\n| `color` |\
+  \ 文本颜色 | `red`, `#FF595E`, `rgb(255, 100, 255)` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/color)\
+  \ |\n| `background-color` | 背景颜色 | `black`, `#CCC`, `rgb(0, 0, 10)` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)\
+  \ |\n| `border` | 边框（围绕元素内容） | `solid`（实线）, `1px dashed red`（红色虚线） | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/border)\
+  \ |\n| `padding` | 内容与边框之间的空间宽度 | `10px`, `2rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)\
+  \ |\n| `margin` | 边框周围的空间宽度 | `10px`, `2rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)\
+  \ |\n| `opacity` | 不透明度（或透明度） | `0`（透明）, `0.5`（半透明）, `1`（不透明） | [更多](https://developer.mozilla.org/docs/Web/CSS/opacity)\
+  \ |\n| `font-size` | 文本大小 | `12px`, `1.5rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)\
+  \ |\n| `font-family` | 字体族 | `Helvetica`, `Verdana`, `sans-serif`, `serif` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)\
+  \ |\n| `font-weight` | 字体粗细 | `lighter`, `normal`, `bold` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)\
+  \ |\n| `width` | 宽度 | `200px`, `10rem`, `50%` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/width)\
+  \ |\n| `height` | 高度 | `100px`, `5rem`, `25%` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/height)\
+  \ |\n\n### 5.3.2 练习\n\n以下是 HTML：\n\n```\n<p>这是一个段落元素。</p>\n```\n\n以及 CSS：\n\n```\n\
+  p {\n  font-size: 1rem;\n  color: #335C67;\n  background-color: #FFF3B0;\n  border:\
+  \ 1px solid #aaa;\n  padding: 2rem;\n  margin: 1rem;\n  width: 12rem; \n}\n```\n\
+  \n效果如下：\n\n![](img/a69cdd547614d1363d039cd2b48c6159.png)\n\n一个使用 CSS 样式化的 `<p>`\
+  \ 元素\n\n导航至 [`codepen.io/createwithdata/pen/OJQXzKo`](https://codepen.io/createwithdata/pen/OJQXzKo)\
+  \ 在 CodePen 中查看此示例。\n\n尝试以下操作：\n\n1.  编辑某些属性值（例如，你可以更改一些颜色）。\n\n2.  添加一条规则来更改 `<p>`\
+  \ 元素的不透明度。\n\n3.  增加/减少 margin 和/或 padding，观察它们之间的关系。\n\n4.  增加边框宽度。\n\n5.  减小元素宽度。\n\
+  \n6.  在 HTML 中添加另一个 `<p>` 元素，并在结果面板中观察其显示效果。\n\n### 5.3.3 SVG 的 CSS 属性\n\n对于 SVG\
+  \ 元素，最常见的属性如下：\n\n| **属性** | **描述** | **示例值** | **更多信息** |\n| --- | --- | --- |\
+  \ --- |\n| `fill` | 形状的内部颜色 | `red`, `#FF595E`, `rgb(255, 100, 255)`, `none` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)\
+  \ |\n| `stroke` | 形状轮廓的颜色 | `red`, `#FF595E`, `rgb(255, 100, 255)`, `none` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)\
+  \ |\n| `stroke-width` | 形状轮廓的宽度 | `1px`, `0.5px` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)\
+  \ |\n| `opacity` | 形状的不透明度 | `0`（透明）, `0.5`（半透明）, `1`（不透明） | [更多](https://developer.mozilla.org/docs/Web/CSS/opacity)\
+  \ |\n| `font-size` | 文本大小 | `12px`, `1.5rem` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)\
+  \ |\n| `font-family` | 字体族 | `Helvetica`, `Verdana`, `sans-serif`, `serif` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)\
+  \ |\n| `font-weight` | 字体粗细 | `lighter`, `normal`, `bold` | [更多](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)\
+  \ |\n| `text-anchor` | 文本元素的水平对齐方式 | `start`, `middle`, `end` | [更多](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/text-anchor)\
+  \ |\n\n例如，以下是 SVG：\n\n```\n<svg width=\"400\" height=\"200\">\n  <g transform=\"\
+  translate(100, 75)\">\n    <circle r=\"50\"></circle>\n    <text y=\"6\">标签</text>\n\
+  \  </g>\n</svg>\n```\n\n以及 CSS：\n\n```\ncircle {\n  fill: #9E2A2B;\n}\n\ntext {\n\
+  \  font-family: sans-serif;\n  fill: white;\n  text-anchor: middle;\n}\n```\n\n\
+  效果如下：\n\n![](img/32d8541e6b176eee9ec5da421c8257b7.png)\n\n一个使用 CSS 样式化的 SVG 圆形和文本\n\
+  \n第一条规则设置了圆形的颜色，第二条规则样式化了文本元素。文本元素的字体族、颜色和水平对齐方式均已设置。\n\n导航至 [`codepen.io/createwithdata/pen/YzeWeyY`](https://codepen.io/createwithdata/pen/YzeWeyY)\
+  \ 在 CodePen 中查看此示例。\n\n### 5.3.4 练习\n\n尝试以下操作：\n\n1.  将圆形的透明度设置为 `0.5`。\n\n2.  增大标签的字体大小。\n\
+  \n### 5.3.5 规则覆盖\n\n如果多个 CSS 声明应用于同一元素，则后面的声明优先级更高。例如以下两条规则：\n\n```\np {\n  font-size:\
+  \ 10px;\n}\n\np {\n  font-size: 1.5rem;\n}\n```\n\n结果 `p` 元素的字体大小为 `1.5rem`。（第一条规则被第二条覆盖。）\n\
+  \n### 5.3.6 示例\n\n让我们看一个更高级的示例。假设你有以下 HTML：\n\n```\n<h1>主标题</h1>\n<h2>副标题</h2>\n\
+  \n<div>\n  <p>一些描述文本</p>\n</div>\n\n<div>\n  <svg width=\"600\" height=\"300\">\n\
+  \    <circle cx=\"150\" cy=\"150\" r=\"100\"></circle>\n    <rect x=\"300\" y=\"\
+  50\" width=\"100\" height=\"200\"></rect>\n  </svg>\n</div>\n```\n\n以及以下 CSS：\n\n\
+  ```\nbody {\n  font-family: serif;\n}\n\nh2 {\n  color: #aaa;\n  font-family: sans-serif;\n\
+  }\n\np {\n  color: #333;\n}\n\ncircle {\n  fill: orange;\n}\n\nrect {\n  fill: none;\n\
+  \  stroke: #aaa;\n  stroke-width: 1px;\n}\n```\n\n（你可以在 CodePen 上查看此示例，地址为 [`codepen.io/createwithdata/pen/LYVvBEg`](https://codepen.io/createwithdata/pen/LYVvBEg)。）\n\
+  \n第一条规则的选择器是 `body`。`body` 元素代表所有内容，因此该规则将所有元素的字体族设置为 `serif`。下一条规则设置了 `h2` 元素的颜色和字体族。此\
+  \ `font-family` 声明覆盖了前一条规则的 `font-family` 声明。\n\n接下来是一条设置 `p` 元素颜色的规则。然后我们设置了 `circle`\
+  \ 元素的 `fill`，以及 `rect` 元素的 `fill`、`stroke` 和 `stroke-width`。结果如下：\n\n![](img/ccedb05dfcea48b8fef2ee529b81c29e.png)\n\
+  \nCSS 应用于多个 HTML 和 SVG 元素\n\n## 5.4 更多 CSS 选择器\n\n\n\n\n\n上一节展示了如何使用 CSS 为 HTML\
+  \ 和 SVG 元素设置样式。你看到了 CSS 规则如何应用于特定类型的元素。例如：\n\n```\np {\n  color: #333;\n}\n```\n\
+  \n设置了所有 `<p>` 元素的颜色。但是，如果你的网页包含大量 `<p>` 元素，而你只想为**其中一部分**设置样式，该怎么办？\n\n你可以通过以下方法让\
+  \ CSS 选择器更具体：\n\n*   在 HTML 和 SVG 元素上添加类（class）和 ID\n*   后代选择器\n*   伪类\n\n这些方法涵盖了大多数需要定位特定元素的情况。让我们逐一了解。\n\
+  \n### 5.4.1 类与 ID\n\nHTML 和 SVG 中有两个属性 `id` 和 `class`，可以让你标记页面中的特定元素。这样你就可以添加针对这些元素的\
+  \ CSS 规则。`id` 属性用于需要定位单个元素的情况，而 `class` 属性用于需要定位多个元素的情况。\n\n#### 5.4.1.1 id\n\n\
+  `id` 属性允许你标记单个元素，以便在其他地方（通常是 CSS 或 JavaScript）引用它。例如，你可能有一个需要应用某些 CSS 的主菜单。\n\n\
+  让我们创建一个简单的菜单，并添加一个值为 `main-menu` 的 `id` 属性：\n\n```\n<div id=\"main-menu\">\n  <div>Home</div>\n\
+  \  <div>About</div>\n  <div>Blog</div>\n  <div>Contact</div>\n</div>\n```\n\n你可以为多个元素添加\
+  \ id，但每个 id 值必须是唯一的。换句话说：两个元素不应具有相同的 id。\n\n在 CSS 中，要选择带有 id 的元素，请使用 `#` 后跟 id 值：\n\
+  \n```\n#main-menu {\n  margin: 1rem;\n}\n```\n\n这为菜单添加了外边距。\n\n#### 5.4.1.2 class\n\
+  \n`class` 属性用于标记**多个** HTML 和 SVG 元素。例如：\n\n```\n<div id=\"main-menu\">\n  <div\
+  \ class=\"item\">Home</div>\n  <div class=\"item\">About</div>\n  <div class=\"\
+  item selected\">Blog</div>\n  <div class=\"item\">Contact</div>\n</div>\n```\n\n\
+  每个菜单项都被赋予了一个值为 `item` 的 class 属性。class 属性可以有多个值（用空格分隔）。例如，第三个菜单项的 class 属性有两个值：`item`\
+  \ 和 `selected`。这表明这个特定的 `div` 元素是列表中的一个项，并且已被选中。\n\n在 CSS 中，可以通过在元素类型后添加一个**点**后跟**类名**来选择具有给定类值的元素：\n\
+  \n```\ndiv.item {\n  border: 1px solid #aaa;\n  padding: 1rem;\n}\n\ndiv.selected\
+  \ {\n  background-color: #ccc;\n}\n```\n\n这意味着：\n\n*   为每个类值为 `item` 的 `div` 元素添加内边距和边框\n\
+  *   设置类值为 `selected` 的 `div` 元素的背景颜色\n\n你也可以省略元素名称，选择所有具有给定类值的元素，无论其类型如何。例如，`.item`\
+  \ 选择所有类值为 `item` 的元素。\n\n### 5.4.2 练习\n\n这是一个使用 HTML 和 CSS 构建的简单菜单。HTML 如下：\n\n\
+  ```\n<div id=\"main-menu\">\n  <div class=\"item\">Home</div>\n  <div class=\"item\"\
+  >About</div>\n  <div class=\"item selected\">Blog</div>\n  <div class=\"item\">Contact</div>\n\
+  </div>\n```\n\nCSS 如下：\n\n```\n#main-menu {\n  margin: 1rem;\n  width: 15rem;\n\
+  }\n\ndiv.item {\n  border: 1px solid #aaa;\n  padding: 1rem;\n}\n\ndiv.selected\
+  \ {\n  background-color: #ccc;\n}\n```\n\n菜单效果如下：\n\n![](img/f1e163462cce27eed259f3e4a9536b80.png)\n\
+  \n一个用 HTML 和 CSS 构建的菜单，第二个项被选中。\n\n你可以在 CodePen 上查看此示例：[`codepen.io/createwithdata/pen/VwQjQpX`](https://codepen.io/createwithdata/pen/VwQjQpX)\n\
+  \n探索代码并尝试以下操作：\n\n1.  更改选中项的背景颜色。\n2.  更改选中项的字体颜色。\n3.  更改选中的菜单项。\n\n### 5.4.3 后代选择器\n\
+  \n另一种使用 CSS 选择特定元素的方法是使用后代选择器。它由两个或多个选择器组成，用空格分隔，允许你选择作为其他元素后代的元素。例如，如果你有以下 HTML：\n\
+  \n```\n<div id=\"main-menu\">\n  <div>Home</div>\n  <div>Posts</div>\n</div>\n<div\
+  \ id=\"content\">\n  <div>Some content</div>\n</div>\n```\n\n你可以使用选择器 `#main-menu\
+  \ div` 为 `#main-menu` 元素内的 `div` 元素设置样式。例如：\n\n```\n#main-menu div {\n  padding:\
+  \ 1rem;\n}\n```\n\n这意味着选择所有作为 `#main-menu` 元素后代的 `div` 元素。菜单外部的 `div` 元素不会被选中。\n\
+  \n后代选择器是一种非常常见的工具，与数据可视化相关的示例包括：\n\n```\n.bar-chart .bar {\n  fill: blue;\n}\n.chart\
+  \ .legend .label {\n  font-family: sans-serif;\n  font-size: 0.75rem;\n}\n```\n\n\
+  第一个选择器 `.bar-chart .bar` 选择嵌套在类为 `.bar-chart` 的元素内部、类为 `bar` 的元素（即条形图的条形）。\n\n第二个选择器\
+  \ `.chart .legend .label` 选择嵌套在类为 `legend` 的元素内部、而该类又嵌套在类为 `chart` 的元素内部、类为 `label`\
+  \ 的元素（即图表图例标签）。\n\n后代选择器很方便，因为它们允许你根据元素的嵌套结构来选择元素。例如，你可以使用后代选择器重新创建之前的菜单示例。HTML\
+  \ 如下：\n\n```\n<div id=\"main-menu\">\n  <div>Home</div>\n  <div>About</div>\n  <div\
+  \ class=\"selected\">Blog</div>\n  <div>Contact</div>\n</div>\n\n<div>(This div\
+  \ doesn't get styled)</div>\n```\n\nCSS 如下：\n\n```\n#main-menu {\n  margin: 1rem;\n\
+  \  width: 15rem;\n}\n\n#main-menu div {\n  border: 1px solid #aaa;\n  padding: 1rem;\n\
+  }\n\n#main-menu div.selected {\n  background-color: #ccc;\n}\n```\n\n注意，我们可以从每个菜单项中移除\
+  \ `class=\"item\"` 属性。我们不再使用 `div.item` 来设置菜单项样式，而是使用 `#main-menu div`。这简化了 HTML，使其更易于阅读和维护。\n\
+  \n导航至 [`codepen.io/createwithdata/pen/BaYzYZb`](https://codepen.io/createwithdata/pen/BaYzYZb)\
+  \ 在 CodePen 中查看此示例。\n\n### 5.4.4 伪类\n\n伪类修改选择器的行为。它们由冒号（`:`）后跟伪类名称组成：\n\n```\np:hover\
+  \ {\n  background-color: yellow;\n}\n```\n\n上述代码在鼠标悬停时将 `<p>` 元素的背景颜色更改为黄色。\n\n\
+  构建数据可视化时常用的伪类包括：\n\n| **伪类** | **描述** |\n| --- | --- |\n| `:hover` | 当元素被悬停时选择该元素\
+  \ |\n| `:first-child` | 选择一组兄弟元素中的第一个兄弟元素。（兄弟元素是嵌套在同一父元素下的相邻元素。） |\n| `:last-child`\
+  \ | 选择一组兄弟元素中的最后一个兄弟元素 |\n\n以下是使用伪类为第一个项（现在代表菜单标题）和悬停项设置样式的菜单示例。HTML 如下：\n\n```\n\
+  <div id=\"main-menu\">\n  <div>Main</div>\n  <div>About</div>\n  <div class=\"selected\"\
+  >Blog</div>\n  <div>Contact</div>\n</div>\n```\n\nCSS 如下：\n\n```\n#main-menu {\n\
+  \  margin: 1rem;\n  width: 15rem;\n}\n\n#main-menu div {\n  border: 1px solid #aaa;\n\
+  \  padding: 1rem;\n}\n\n#main-menu div:first-child {\n  font-weight: bold;\n}\n\n\
+  #main-menu div.selected {\n  background-color: #aaa;\n}\n\n#main-menu div:hover\
+  \ {\n  background-color: #ccc;\n}\n```\n\n![](img/99e8358a21354627044669ace3c6c46e.png)\n\
+  \n使用伪类为第一个项设置样式\n\n通过使用 `:first-child` 伪类，`#main-menu` 中的第一个 `div` 被加粗。当任何项被悬停时，由于\
+  \ `:hover` 伪类，背景颜色会发生变化。（实际上你不会这样实现菜单，所以这个示例仅作为教学工具。）\n\n导航至 [`codepen.io/createwithdata/pen/MWQeQvy`](https://codepen.io/createwithdata/pen/MWQeQvy)\
+  \ 在 CodePen 中查看此示例。\n\n### 5.4.5 分组选择器\n\n你可以通过用逗号分隔选择器，将同一组声明应用于多个选择器。例如，给定以下 HTML：\n\
+  \n\n\n\n\n```\n<h1>主标题</h1>\n<h2>副标题</h2>\n<h6>小标题</h6>\n```\n\n以下 CSS 将所有标题元素的字体粗细设置为\
+  \ `lighter`：\n\n```\nh1, h2, h3, h4, h5, h6 {\n  font-weight: lighter;\n}\n```\n\
+  \n导航至 [`codepen.io/createwithdata/pen/jOPoMBK`](https://codepen.io/createwithdata/pen/jOPoMBK)\
+  \ 在 CodePen 中查看此示例。\n\n作为练习，尝试从 CSS 规则中移除 `h1` 选择器，并观察效果。\n\n## 5.5 用于 HTML 布局的\
+  \ CSS\n\nCSS 也用于排列 HTML 元素。例如，你可能希望页面顶部有一个包含标题和菜单的页眉。你可能还希望将主要内容放在按网格排列的盒子中：\n\n\
+  ![](img/06e1a4202b2bcf843e51bcf7848d20c3.png)\n\n仪表板布局\n\n使用 CSS 定位 HTML 元素需要一些技巧。从某种程度上说，它可能很简单，但也可能很棘手。挑战之一是你很少处理固定大小的页面。（如果是固定大小，事情会简单得多！）人们可能通过手机、平板、笔记本电脑或大型台式机显示器阅读你的页面。你通常需要考虑所有这些不同的屏幕宽度。\n\
+  \n话虽如此，最近 CSS 的两项发展使得排列元素变得更加容易：Flexbox 和 Grid。本书将概述 Flexbox。CSS Grid 是较新的发展，不在本书讨论范围内。详细讲解\
+  \ HTML 布局可能需要一整本书，希望本节能让你了解其可能性。\n\n### 5.5.1 块级元素与内联元素\n\n从布局角度来看，HTML 元素可分为两类：**块级**元素和**内联**元素。\n\
+  \n块级元素彼此上下排列，内联元素则并排排列。例如，如果你有几个 `<div>` 元素：\n\n```\n<div>1</div>\n<div>2</div>\n\
+  <div>3</div>\n<div>4</div>\n```\n\n它们会显示为垂直堆叠：\n\n![](img/aac4c7e8735bbb78071e284a61329934.png)\n\
+  \n块级元素\n\n如果这些元素是内联元素，它们会并排排列：\n\n![](img/ce1f11866dead51a2fe9da5982ff88ed.png)\n\
+  \n内联元素\n\n在本书涵盖的元素中，标题（`<h1>` - `<h6>`）、列表 `<ul>` 和 `<div>` 元素（默认情况下）是块级元素，而 `<img>`\
+  \ 和 `<svg>` 元素（默认情况下）是内联元素。你也可以使用 `display` CSS 属性设置元素是块级还是内联。要将元素设置为块级显示，请使用：\n\
+  \n```\ndisplay: block;\n```\n\n要将元素设置为内联显示，请使用：\n\n```\ndisplay: inline;\n```\n\n\
+  `display` 的另一个值是 `inline-block`，它使元素并排排列，**并且**允许使用 `width` 和 `height` 属性设置其宽度和高度。（我很少使用\
+  \ `display: inline;`，但在并排排列 `<div>` 元素时偶尔会使用 `display: inline-block;`。）\n\n### 5.5.2\
+  \ Flexbox\n\nCSS Flexbox 模型允许你指定项目如何**在其父元素内排列**。例如，从以下 HTML 开始：\n\n```\n<div id=\"\
+  container\">\n  <div class=\"item\">一</div>\n  <div class=\"item\">二</div>\n  <div\
+  \ class=\"item\">三</div>\n  <div class=\"item\">四</div>\n</div>\n```\n\n以及以下 CSS：\n\
+  \n```\n.item {\n  padding: 1rem;\n  margin: 0.25rem;\n  border: 1px solid #aaa;\n\
+  }\n```\n\n默认情况下，它会渲染为：\n\n![](img/866cbdcfc43cf7838e3322c6c59ee120.png)\n\n`<div>`\
+  \ 元素的默认布局\n\nFlexbox 允许你在容器及其子元素（或“项目”）上指定属性，以指定项目的排列方式。\n\n要使元素成为弹性容器，请将其 `display`\
+  \ 属性设置为 `flex`：\n\n```\n#container {\n  display: flex;\n}\n```\n\n这会导致项目排列成一行：\n\
+  \n![](img/8d20342c81156bb9e5eaa7aca69f455b.png)\n\n启用了 flex 的容器元素（灰色显示）\n\n现在，你可以在容器和/或项目上设置属性，以确定项目的排列方式。以下是容器最常用的属性和值：\n\
+  \n| 属性 | 描述 | 值 |\n| --- | --- | --- |\n| `flex-direction` | 确定项目定位的方向。这也决定了“主轴”的方向。\
+  \ | `row`（项目排列成行，主轴从左到右），`column`（项目排列成列，主轴从上到下） |\n| `flex-wrap` | 确定元素是否应换行/换列\
+  \ | `nowrap`（不换行），`wrap`（换行） |\n| `justify-content` | 指定弹性项目沿主轴的分布方式 | `flex-start`（项目放在主轴起点），`flex-end`（项目放在主轴终点），`center`（项目放在主轴中间），`space-around`（项目沿主轴均匀分布），`space-between`（项目沿主轴均匀分布，两端无间距）\
+  \ |\n| `align-items` | 指定项目关于主轴的排列方式 | `stretch`（项目沿主轴拉伸以填满容器），`center`（项目关于主轴居中），`flex-start`（项目放在交叉轴起点），`flex-end`（项目放在交叉轴终点）\
+  \ |\n\n主轴由 `flex-direction` 决定：如果 `flex-direction` 为 `row`，则从左到右；如果为 `column`，则从上到下。交叉轴垂直于主轴。更多详情请参见\
+  \ [`css-tricks.com/snippets/css/a-guide-to-flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox)。\n\
+  \n例如，如果我们将 `justify-content` 设置为 `space-between`：\n\n```\n#container {\n  display:\
+  \ flex;\n  justify-content: space-between;\n}\n```\n\n我们会得到：\n\n![](img/330ef8881d86d52cb914e7b2f7e5472f.png)\n\
+  \n`justify-content` 设置为 `space-between` 的布局\n\n如果我们将 `justify-content` 设置为 `flex-end`，我们会得到：\n\
+  \n![](img/515e7595e412f984d1c5e0c8b90634fc.png)\n\n`justify-content` 设置为 `flex-end`\
+  \ 的布局\n\n你还可以将弹性容器相互嵌套。例如，你可以使用这种方法构建一个基本的页眉栏。以下是 HTML：\n\n```\n<div id=\"header\"\
+  >\n  <div id=\"title\">我的网站</div>\n  <div id=\"menu\">\n    <div>首页</div>\n    <div>关于</div>\n\
+  \    <div>联系</div>\n  </div>\n</div>\n```\n\nCSS 如下：\n\n```\nbody {\n  margin: 0;\n\
+  \  font-family: sans-serif;\n}\n\n#header {\n  height: 4rem;\n  background-color:\
+  \ #222;\n  color: white;\n  padding: 0 1rem;\n  display: flex;\n  justify-content:\
+  \ space-between;\n  align-items: center;\n}\n\n#menu {\n  display: flex;\n}\n\n\
+  #menu div {\n  padding-left: 1rem;\n}\n```\n\n最外层的 `<div>` 元素代表页眉。它有两个子元素：标题和菜单。页眉元素充当弹性容器（`#header`\
+  \ 的 `display` 设置为 `flex`）。通过将 `justify-content` 设置为 `space-between`，标题和菜单被排列在页眉的两端。通过将\
+  \ `align-items` 设置为 `center`，项目在容器内垂直居中。\n\n为了将菜单项排列成一行，菜单元素（`#menu`）也被设为弹性容器（其\
+  \ `display` 属性设置为 `flex`）。因此，菜单既是弹性容器，又是弹性项目。\n\n完成的页眉如下所示：\n\n![](img/28bbe7658cb5dd68c42e3048e1b20926.png)\n\
+  \n使用嵌套弹性容器排列的网站页眉\n\n希望这能让你了解 Flexbox 的能力。如果你想了解更多关于 Flexbox 的知识，最好的教程之一是 [`css-tricks.com/snippets/css/a-guide-to-flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox)。我还构建了一个\
+  \ Flexbox 探索器（[`app.peterrcook.com/flexplorer/`](https://app.peterrcook.com/flexplorer/)），可以让你以交互方式快速探索每个属性。\n\
+  \n# 6 JavaScript\n\nJavaScript 是 Web 的编程语言。它内置于大多数 Web 浏览器中，可以：\n\n*   **添加**、**修改**和**删除**\
+  \ HTML 和 SVG 元素\n*   处理**交互性**（例如，鼠标点击）\n*   **获取**数据和其他资源\n\n\n\n\n\n*   执行通用**计算**（例如数据处理）\n\
+  \n基于网页的数据可视化，尤其是交互式的，很可能使用 JavaScript。\n\nJavaScript 最初是一种在网站上很少使用的语言（通常用于处理少量用户交互），但现在已成为一种广泛使用的语言，其生态系统中拥有数百种工具和库。\n\
+  \n诸如 [D3](https://d3js.org/)、[Leaflet](https://leafletjs.com/) 和 [Chart.js](https://www.chartjs.org/)\
+  \ 之类的库都是用 JavaScript 编写的，为构建数据可视化提供了有用的功能。\n\n接下来的两节将介绍 JavaScript 的基础知识，即**变量**和**类型**。后续章节将介绍**运算符**、**条件语句**、**迭代**和**函数**。\n\
+  \n为了实验和练习 JavaScript，我推荐使用 [jsconsole](https://jsconsole.com/) 网站。它允许你输入 JavaScript\
+  \ 代码并立即求值。（如果你更有经验，可以使用浏览器的[调试控制台](https://developers.google.com/web/tools/chrome-devtools/console#javascript)或\
+  \ Node。）\n\n当你看到本节中的示例代码时，偶尔会看到 `//` 后跟一个值：\n\n```\n10 + 5;  // 15\n```\n\n该值表示代码返回的值。（如果你在\
+  \ jsconsole 中输入 `10 + 5` 并按回车，它会在下一行显示结果 `15`。）\n\n## 6.1 JavaScript 变量\n\n如果你有一个值（例如一些文本或数字），你可以使用**变量**来指向该数据。实际上，你是在给数据贴上一个标签，以便在代码的其他地方引用它。在\
+  \ JavaScript 中，变量在使用前必须**声明**。通常使用 `let` 关键字来完成：\n\n```\nlet myMessage;\n```\n\n\
+  你可以将一个值（例如数字或字符串）赋给变量。下面是如何将字符串（一段用引号括起来的文本）赋给变量 `myMessage`：\n\n```\nmyMessage\
+  \ = \"Hello world!\";\n```\n\n你也可以将数字赋给变量：\n\n```\nlet a = 10;\nlet b = 20;\n```\n\
+  \n（上面的代码使用了一种简写形式，即在一行语句中声明并赋值变量。）\n\n任何表达式都可以赋给变量。\n\n让我们将表达式 `a + b` 赋给一个新变量 `c`：\n\
+  \n```\nlet c = a + b;\nc;  // 30\n```\n\n表达式 `a + b` 被求值，结果 `30` 被赋给 `c`。\n\n####\
+  \ 6.1.0.1 练习\n\n打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：\n\n```\nlet a =\
+  \ 10;\nlet b = 20;\n```\n\n现在输入 `a` 并按回车键。你看到了什么？\n\njsconsole 对 `a` 求值并输出结果 `10`。现在输入：\n\
+  \n```\nlet c = a + b;\n```\n\n现在输入 `c` 并按回车键。变量 `c` 将被求值，并输出其值 `30`。\n\n## 6.2 JavaScript\
+  \ 数据类型\n\nJavaScript 中最常见的数据类型有：\n\n*   字符串（例如 `\"Hello world\"`）\n*   数字（例如 `1234`、`10.567`、`1.23e2`）\n\
+  *   布尔值（`true` 和 `false`）\n*   数组（值的列表）\n*   对象（键值对的列表）\n\n以上类型足以构建数据可视化。本节我们将介绍字符串、数字和布尔值。数组和对象有单独的章节。\n\
+  \n### 6.2.1 字符串\n\n字符串表示文本。文本用单引号（`'`）或双引号（`\"`）括起来：\n\n```\n'A JavaScript string'\n\
+  \"A string enclosed in double quotes\"\n```\n\n如果你的文本包含单引号，则使用双引号将其括起来（反之亦然）：\n\n\
+  ```\n\"Bob's learning to code in JavaScript\"\n```\n\n你可以使用 `+` 运算符将字符串拼接在一起：\n\n\
+  ```\nlet firstName = \"Jolene\";\nlet lastName = \"Smith\";\nlet fullName = firstName\
+  \ + \" \" + lastName;\nfullName;  // \"Jolene Smith\"\n```\n\n在以下示例中，我们有一个变量 `a`，其值为\
+  \ `\"This is a string\"`：\n\n```\nlet a = \"This is a string\";\n```\n\n你可以使用 `.length`\
+  \ 获取字符串的长度：\n\n```\na.length;  // 16\n```\n\n你可以使用方括号获取字符串中的第 `n` 个字符：\n\n```\n\
+  a[0];  // \"T\"\na[2];  // \"i\"\n```\n\n#### 6.2.1.1 字符串操作\n\n可以使用 `split(s)` 在字符串\
+  \ `s` 出现的位置拆分字符串。例如，让我们按单个空格字符拆分字符串：\n\n```\na.split(' ');  // [\"This\", \"is\"\
+  , \"a\", \"string\"]\n```\n\n（方括号表示一个数组，我们将在后续章节中介绍。）\n\n你可以使用 `toUpperCase()` 计算字符串的大写版本：\n\
+  \n```\na.toUpperCase();  // \"THIS IS A STRING\"\n```\n\n注意，这不会改变（或修改）字符串。它只是返回一个新字符串，而\
+  \ `a` 的值仍然是 `\"This is a string\"`。要使变量 `a` 变为大写，你可以将 `a.toUpperCase()` 的输出赋给 `a`：\n\
+  \n```\na = a.toUpperCase();\na;  // \"THIS IS A STRING\"\n```\n\n还有一个对应的小写方法叫做 `toLowerCase()`。\n\
+  \n#### 6.2.1.2 字符串转换\n\n你可以使用 `parseFloat` 将包含数字的字符串转换为数字。例如：\n\n```\nparseFloat('123.456');\
+  \  // 123.456\nparseFloat('5432');     // 5432\nparseFloat('abc');      // NaN (not\
+  \ a number)\nparseFloat('1234abc');  // 1234\nparseFloat('0');        // 0\nparseFloat('');\
+  \         // NaN\n```\n\n注意，将空字符串传入 `parseFloat` 会返回 `NaN`，表示“不是一个数字”。\n\n#### 6.2.1.3\
+  \ 练习\n\n打开 [jsconsole](https://jsconsole.com/) 并输入以下内容：\n\n```\na = \"This is a\
+  \ string\";\na.length;\na[2];\na.split(' ');\na.toUpperCase();\n```\n\n检查你的输出是否类似于：\n\
+  \n```\n16\n\"i\"\n[\"This\", \"is\", \"a\", \"string\"]\n\"THIS IS A STRING\"\n\
+  ```\n\n### 6.2.2 数字\n\nJavaScript 有一种数字类型用于表示数字。可以表示整数（整数）和小数：\n\n```\nlet a = 123;\n\
+  let b = 123.456;\n```\n\n数学运算符 `+`（加法）、`-`（减法）、`*`（乘法）和 `/`（除法）可以应用于数字：\n\n```\n\
+  let c = 123 + 456;\nlet d = 3 * 123;\n```\n\n可以使用括号来强制优先级：\n\n```\n(10 + 20) * 2;\
+  \  // 60\n10 + (20 * 2);  // 50\n```\n\n第一个表达式求值为 `60`，第二个为 `50`。（表达式是一段求值为单个值的代码。）\n\
+  \n以下示例使用一个值为 `123.456` 的变量 `n`：\n\n```\nlet n = 123.456;\n```\n\n你可以使用 `round`、`floor`\
+  \ 和 `ceil` 对数字进行舍入。\n\n`round` 返回最接近的整数，`floor` 向下舍入，`ceil` 向上舍入：\n\n```\nMath.round(n);\
+  \  // 123\nMath.floor(n);  // 123\nMath.ceil(n);   // 124\n```\n\n你可以使用 `toString()`\
+  \ 获取数字的字符串表示：\n\n```\nn.toString();  // \"123.456\"\n```\n\n你可以使用 `Math.sqrt()`\
+  \ 获取数字的平方根：\n\n```\nMath.sqrt(100);  // 10\n```\n\n#### 6.2.2.1 练习\n\n打开 [jsconsole](https://jsconsole.com/)\
+  \ 并输入以下内容：\n\n```\nlet n = 123.456;\nMath.round(n);\nn.toString();\nMath.sqrt(100);\n\
+  ```\n\n你的输出值应为：\n\n```\n123\n\"123.456\"\n10\n```\n\n### 6.2.3 布尔值\n\n布尔类型可以有两个值：`true`\
+  \ 和 `false`：\n\n```\nvar learningCSS = true;\nvar learningJavaScript = true;\nvar\
+  \ learningPython = false;\n```\n\n稍后你会看到（在运算符部分），布尔值由诸如 `===`（等于）和 `>`（大于）之类的运算符返回。\n\
+  \n## 6.3 JavaScript 数组\n\n数组表示**值的列表**。每个值可以是任何类型，甚至可以是数组！数组是处理数据时使用的基本数据结构之一。（你将在对象部分看到，通常使用数组来表示数据表。）数组由**方括号**表示，每个值之间用**逗号**分隔。以下是\
+  \ 4 个不同的数组：\n\n```\n[ 10, 20, 30 ]                      // 数字数组\n[ \"An\", \"array\"\
+  , \"of\", \"strings\" ]  // 字符串数组\n[ [ 10, 20 ], [ 30, 40 ] ]          // 数组的数组\n\
+  [ true, true, false ]               // 布尔值数组\n```\n\n### 6.3.1 访问数组元素\n\n你可以通过在数组后面写\
+  \ `[i]` 来访问数组中的第 `i` 项：\n\n```\nlet a = [ \"An\", \"array\", \"of\", \"strings\"\
+  \ ];\na[0];  // \"An\"\na[2];  // \"of\"\n```\n\n\n\n\n\n数组的索引从 `0` 开始。因此，数组中的第一个元素通过\
+  \ `[0]` 引用。对于嵌套数组，例如：\n\n```\nlet a = [ [ 10, 20 ], [ 30, 40 ] ];\n```\n\n你可以通过串联方括号来访问这些值：\n\
+  \n```\na[0];     // [10, 20]\na[0][1];  // 20\n```\n\n`a[0]` 是 `a` 的第一个元素，计算结果为\
+  \ `[10, 20]`。\n\n`a[0][1]` 表示 `a[0]` 的索引 `1`，计算结果为 `20`。\n\n### 6.3.2 数组操作\n\n在下表中，使用了以下变量：\n\
+  \n```\nlet a = [ 10, 20, 30 ];\nlet b = [ 40, 50, 60 ];\nlet c = [ \"An\", \"array\"\
+  , \"with\", \"text\" ];\n```\n\n有用的数组操作包括：\n\n| **操作** | **示例** | **结果** |\n| ---\
+  \ | --- | --- |\n| 获取数组长度 | `a.length` | `3` |\n| 对数组排序 | `c.sort()` | `c` 现在为 `[\"\
+  An\", \"array\", \"text\", \"with\"]` |\n| 反转数组 | `a.reverse()` | `a` 现在为 `[30,\
+  \ 20, 10]` |\n| 获取数组的一部分（或“切片”）。第一个数字表示切片的起始索引。第二个数字表示切片的结束索引（包含）。 | `c.slice(1,\
+  \ 2)` | `[\"array\", \"with\"]` |\n| 用给定字符串连接数组的每个元素 | `a.join(' and ')` | `\"10\
+  \ and 20 and 30\"` |\n| 连接两个数组 | `a.concat(b)` | `[10, 20, 30, 40, 50, 60]` |\n\
+  | 向数组末尾添加一个元素 | `b.push(70)` | `b` 现在为 `[40, 50, 60, 70]` |\n| 移除（并返回）数组的最后一个元素\
+  \ | `a.pop()` | 计算结果为 `30`。`a` 现在为 `[10, 20]` |\n\n#### 6.3.2.1 排序时需谨慎\n\n对数字数组进行排序时要小心。以下示例：\n\
+  \n```\nlet d = [11, 10, 9];\nd.sort();\n```\n\n结果 `d` 变为 `[10, 11, 9]`，这相当令人惊讶。\n\
+  \n这是因为 JavaScript 会按字符串排序，即使它是一个数字数组！这真的很奇怪。请阅读 [`stackoverflow.com/questions/48201502/strange-javascript-sorting-bug`](https://stackoverflow.com/questions/48201502/strange-javascript-sorting-bug)\
+  \ 以了解更多信息。\n\nJavaScript 的另一个怪癖是，上述某些操作会改变原始数组，而另一些则不会。`sort` 和 `reverse` 会用新顺序覆盖数组。同样，`push`\
+  \ 和 `pop` 会改变原始数组的长度。\n\n其余操作只是计算出一个值，对数组没有任何影响。\n\n### 6.3.3 练习\n\n打开 [jsconsole](https://jsconsole.com/)\
+  \ 并输入以下内容：\n\n```\nlet a = [10, 20, 30];\na.length;\na.reverse();\na.push(0);\n\
+  a;\n```\n\n`a` 的最终值应为 `[30, 20, 10, 0]`。\n\n第一个表达式只是输出 `a` 的长度。第二个表达式反转 `a`，因此 `a`\
+  \ 现在为 `[30, 20, 10]`。第三个语句将 `0` 添加到 `a` 的末尾。最后一个表达式 `a` 计算结果为 `[30, 20, 10, 0]`。\n\
+  \n## 6.4 JavaScript 对象\n\nJavaScript 对象是**名称-值对**的**（无序）列表**。例如：\n\n```\nlet carrot\
+  \ = {\n  foodGroup: \"vegetable\",\n  color: \"orange\"\n}\n```\n\n每个名称-值对称为一个**属性**。每个属性都有一个**名称**（例如\
+  \ `foodGroup`、`color`、`id`、`height`、`data`）和一个**值**。值可以是任何类型（包括数组或对象）。你可以使用点号后跟属性名来访问属性：\n\
+  \n```\ncarrot.foodGroup;  // \"vegetable\"\n```\n\n对象的属性也可以通过用方括号括起来的属性名（表示为字符串）来访问：\n\
+  \n```\ncarrot[\"foodGroup\"];  // \"vegetable\"\n```\n\n方括号表示法的优点是可以使用变量作为属性名：\n\
+  \n```\nlet day = \"Tuesday\";\n\nlet data = {\n  Monday: 20,\n  Tuesday: 30,\n \
+  \ Wednesday: 10,\n  Thursday: 50,\n  Friday: 70\n};\n\ndata[day];  // 30\n```\n\n\
+  属性值可以是任何类型。这是一个包含数组的对象：\n\n```\nlet data = {\n  Monday: [10, 30, 20],\n  Tuesday:\
+  \ [50, 20, 30],\n  Wednesday: [40, 10, 20],\n  Thursday: [30, 10, 20],\n  Friday:\
+  \ [60, 30, 40]\n};\n\ndata.Tuesday;    // [50, 20, 30]\ndata.Tuesday[1]  // 20\n\
+  ```\n\n你也可以有对象数组。这是数据可视化中**非常**常见的结构：\n\n```\nlet data = [\n  {\n    name: \"Spain\"\
+  ,\n    capital: \"Madrid\",\n    population: 46.66\n  },\n  {\n    name: \"China\"\
+  ,\n    capital: \"Beijing\",\n    population: 1386\n  }\n];\n\ndata[0].name;   \
+  \  // \"Spain\"\ndata[1].capital;  // \"Beijing\"\n```\n\n给定一个对象，例如：\n\n```\nlet\
+  \ vegetable = {\n  name: \"carrot\",\n  color: \"orange\"\n};\n```\n\n你可以使用以下表示法设置属性：\n\
+  \n```\nvegetable.name = \"broccoli\";\nvegetable.color = \"green\";\nvegetable.name;\
+  \  // \"broccoli\"\n```\n\n即使属性不存在，你也可以使用上述表示法：\n\n```\nvegetable.family = \"Brassica\"\
+  ;\n```\n\n要获取对象属性名称的列表，请使用：\n\n```\nObject.keys(vegetable);  // [\"name\", \"color\"\
+  , \"family\"]\n```\n\n这将返回数组 `[\"name\", \"color\", \"family\"]`。\n\n### 6.4.1 练习\n\
+  \n打开 [jsconsole](https://jsconsole.com/) 并创建以下对象：\n\n```\nlet carrot = {\n  foodGroup:\
+  \ \"vegetable\",\n  color: \"orange\"\n}\n```\n\n使用 `shift` + `return` 而不是仅按 `return`\
+  \ 来在单个语句中插入新行。或者点击 [此处](https://jsconsole.com/?let%20carrot%20%3D%20%7B%0A%20%20foodGroup%3A%20%22vegetable%22%2C%0A%20%20color%3A%20%22orange%22%0A%7D)\
+  \ 打开预填充的控制台。\n\n输入以下内容：\n\n```\ncarrot.color;\n```\n\n检查是否返回字符串 `\"orange\"`。现在通过输入以下内容将颜色更改为\
+  \ `purple`：\n\n```\ncarrot.color = \"purple\";\n```\n\n通过输入以下内容检查颜色是否已更改：\n\n```\n\
+  carrot.color;\n```\n\n这应该输出 `\"purple\"`。你也可以通过输入以下内容查看对象：\n\n```\ncarrot\n```\n\
+  \n现在向对象添加一个名为 `price` 的新属性，值为 `15`，并检查它是否已添加。\n\n## 6.5 JavaScript 运算符\n\nJavaScript\
+  \ 运算符接受一个或两个值，并计算出一个新值。\n\n例如，`+` 运算符接受两个数字并计算它们的和。\n\n在下表中，定义了以下变量：\n\n```\nlet\
+  \ a = 1;\nlet b = 2;\n```\n\n最常见的运算符有：\n\n| **运算符** | **描述** | **示例** | **计算结果**\
+  \ |\n| --- | --- | --- | --- |\n| `+` | 将两个数字相加或连接两个字符串 | `1 + 2`, `\"abc\" + \"\
+  def\"`, `a + b` | `3`, `\"abcdef\"`, `3` |\n| `-` | 两个数字相减 | `3 - 2` | `1` |\n|\
+  \ `*` | 两个数字相乘 | `2 * 8` | `16` |\n| `/` | 两个数字相除 | `10 / 5` | `2` |\n| `%` | 计算除法的余数\
+  \ | `11 / 5` | `1` |\n| `!` | 反转布尔值 | `!true` | `false` |\n| `>`, `>=`, `<`, `<=`\
+  \ | 大于、大于等于、小于、小于等于 | `5 < 6`, `5 < 5`, `5 <= 5`, `\"a\" > \"b\"`, `\"abc\" < \"\
+  def\"`, `a > b` | `true`, `false`, `true`, `false`, `true`, `false` |\n| `===` |\
+  \ 等于 | `10 === 10`, `\"dogs\" === \"cats\"`, `a === b` | `true`, `false`, `false`\
+  \ |\n| `!==` | 不等于 | `10 !== 10`, `\"dogs\" !== \"cats\"` | `false`, `true` |\n\
+  | `&&` | 逻辑与（如果两个表达式都为 `true`，则结果为 `true`） | `2 > 1 && 3 > 2` | `true` |\n| `\\\
+  &#124;` | 逻辑或（如果任一表达式为 `true`，则结果为 `true`） | `1 > 2 \\&#124; 2 > 3` | `false` |\n\
+  \n注意，相等运算符是三个等号 `===`。此运算符检查两个表达式是否完全相等。还有一个类似的运算符 `==`，它不那么严格。通常我建议使用 `===`。\n\n\
+  ### 6.5.1 三元运算符\n\n有一个称为三元运算符的运算符值得特别提及。三元运算符根据第三个表达式的值来计算两个表达式之一：\n\n```\nlet a\
+  \ = 10;\nlet b = 20;\nlet result = a > b ? \"a is bigger than b\" : \"a is not bigger\
+  \ than b\";\nresult;     // 输出 \"a is not bigger than b\"\n```\n\n在此示例中，表达式 `a >\
+  \ b` 被求值。如果为 `true`，则计算问号后的第一个表达式。如果为 `false`，则计算冒号 `:` 后的表达式。\n\n### 6.5.2 递增和递减\n\
+  \n递增 `++` 运算符接受一个数值变量并将其递增：\n\n```\nlet a = 10;\na++;\na;  // 11\n```\n\n它基本上是以下内容的简写：\n\
+  \n```\na = a + 1;\n```\n\n还有一个递减运算符 `--`，用于递减变量。\n\n### 6.5.3 练习\n\n\n\n\n\n打开 [jsconsole](https://jsconsole.com/)\
+  \ 并定义两个变量：\n\n```\nlet a = 10;\nlet b = 20;\n```\n\n编写表达式以完成以下操作：\n\n1.  将 `a` 和\
+  \ `b` 相加。\n\n2.  将 `a` 和 `b` 相乘。\n\n3.  检查 `a` 是否大于 `b`。\n\n4.  检查 `a` 是否等于 `b`。\n\
+  \n5.  检查 `a` 是否等于 `10`。\n\n#### 6.5.3.1 答案\n\n你的表达式应类似于：\n\n```\na + b;     // 30\n\
+  a * b;     // 200\na > b;     // false\na === b;   // false\na === 10;  // true\n\
+  ```\n\n## 6.6 JavaScript 条件语句\n\n条件语句用于根据给定的值执行不同的代码分支。本节介绍两种条件语句：`if` 和 `switch`。\n\
+  \n### 6.6.1 if\n\n最广为人知的条件语句是 `if`。其形式如下：\n\n```\nlet answer;\n\nif (a > b) {\n\
+  \  answer = \"a is greater than b\";\n}\n```\n\n`if` 关键字后跟一对括号，括号内包含一个表达式。该表达式会被求值，如果结果为\
+  \ `true`，则执行后续代码块中的代码；如果为 `false`，则什么也不发生。（代码块可以包含多条语句，并由花括号界定。）\n\n你可以添加一个 `else`\
+  \ 块，当 `if` 表达式为 `false` 时执行：\n\n```\nlet answer;\n\nif (a > b) {\n  answer = \"\
+  a is greater than b\";\n} else {\n  answer = \"a is not greater than b\";\n}\n```\n\
+  \n你还可以将多个 `else` 和 `if` 语句串联起来：\n\n```\nlet food = {\n  name: \"banana\",\n  type:\
+  \ \"fruit\"\n};\n\nlet answer;\n\nif (food.type === \"fruit\") {\n  answer = \"\
+  It's a fruit!\";\n} else if (food.type === \"vegetable\") {\n  answer = \"It's a\
+  \ vegetable!\";\n} else {\n  answer = \"Unknown food\";\n}\n```\n\n### 6.6.2 switch\n\
+  \n`switch` 语句根据表达式的值执行不同的代码块：\n\n```\nlet food = {\n  name: \"banana\",\n  type:\
+  \ \"fruit\"\n};\n\nlet answer;\n\nswitch(food.type) {\n  case \"fruit\":\n    answer\
+  \ = \"It's a fruit!\";\n    break;\n  case \"vegetable\":\n    answer = \"It's a\
+  \ vegetable!\";\n    break;\n  default:\n    answer = \"Unknown food\";\n    break;\n\
+  }\n```\n\n`switch` 语句后跟一个用括号包裹的表达式（示例中表达式为 `food.type`）。其后有多个 `case` 语句，每个 `case`\
+  \ 后跟表达式的可能值（例如 `\"fruit\"` 和 `\"vegetable\"`）。如果匹配，则执行该 `case` 语句后的代码。`case` 语句后的代码会一直执行到遇到\
+  \ `break` 语句为止。\n\n你也可以将多个 `case` 语句组合在一起：\n\n```\nvar food = {\n  name: \"banana\"\
+  ,\n  type: \"fruit\"\n};\n\nswitch(food.type) {\n  case \"fruit\":\n  case \"vegetable\"\
+  :\n    alert(\"It's a fruit or a vegetable!\");\n    break;\n  default:\n    alert(\"\
+  Unknown food\");\n    break;\n}\n```\n\n## 6.7 JavaScript 函数\n\n函数允许你将代码封装起来，以便在代码中的任何位置多次调用。例如，假设你需要将一些数字加倍。你可以这样做：\n\
+  \n```\nlet a = 10;\nlet b = 20;\nlet doubleA = a * 2;\nlet doubleB = b * 2;\n```\n\
+  \n如果操作比将数字加倍更复杂，这种方法会变得难以管理。另一种方法是定义一个函数，该函数接收一个数字并返回该数字的两倍：\n\n```\nfunction double(x)\
+  \ {\n  return 2 * x;\n}\n```\n\n现在我们可以这样做：\n\n```\nlet a = 10;\nlet b = 20;\nlet\
+  \ doubleA = double(a);\nlet doubleB = double(b);\n```\n\n这种方法有几个优点：\n\n*   代码的意图更清晰（即更具表现力）\n\
+  \n*   如果重复的操作发生变化，你只需更新一处代码\n\n*   该函数可以在其他地方重用\n\n### 6.7.1 定义函数\n\n函数允许代码被重用。它们使用\
+  \ `function` 关键字定义：\n\n```\nfunction sayHello() {\n  console.log('Hello');  // console.log\
+  \ 允许你将值打印到控制台\n}\n```\n\n函数通常有一个名称。在上面的例子中，函数名是 `sayHello`。你在函数名后面放置一对括号。函数体（调用函数时执行的代码）放在花括号之间。要调用函数，你写出函数名后跟括号：\n\
+  \n```\nsayHello();\n```\n\n### 6.7.2 返回值\n\n函数可以返回一个值。下面是一个返回字符串的函数：\n\n```\nfunction\
+  \ getName() {\n  return \"Paris\";\n}\n```\n\n如果你调用 `getName`，它会运行函数的代码并返回 `return`\
+  \ 关键字后的表达式：\n\n```\ngetName();  // \"Paris\"\n```\n\n函数的返回值是一个表达式，因此你可以将其赋值给一个变量：\n\
+  \n```\nvar name = getName();\nname;  // \"Paris\"\n```\n\n并在 `if` 语句中使用它：\n\n```\n\
+  let message;\n\nif(getName() === \"Paris\") {\n  message = \"You're in France!\"\
+  ;\n}\n\nmessage;  // \"You're in France!\"\n```\n\n### 6.7.3 函数参数\n\n你可以定义传递给函数的参数列表。例如，让我们定义一个将名字和姓氏连接起来的函数（中间加空格）：\n\
+  \n```\nfunction joinNames(firstName, lastName) {\n  var joinedName = firstName +\
+  \ \" \" + lastName;\n\n  return joinedName;\n}\n```\n\n这个函数在其圆括号内有一个**参数**列表（`firstName`\
+  \ 和 `lastName`）。它们在函数体内充当变量。当函数被调用时，一个**实参**列表被放在圆括号内：\n\n```\nvar fullName = joinNames(\"\
+  Ana\", \"Matronic\");\nfullName;  // \"Ana Matronic\"\n```\n\n当 `joinNames` 函数执行时，每个实参被赋值给函数的参数。在上面的例子中，当函数执行时，`firstName`\
+  \ 是 `Ana`，`lastName` 是 `Matronic`。\n\n### 6.7.4 练习\n\n创建一个名为 `add10` 的函数，该函数将一个数字加上\
+  \ `10`。通过传入实参 `50` 调用该函数来测试：\n\n```\nadd10(50);\n```\n\n## 6.8 JavaScript 迭代\n\n\
+  迭代是重复执行一段代码。一个常见的用例（尤其是在可视化数据时）是对数组的每个元素执行相同的代码。\n\n本节涵盖以下迭代类型：\n\n*   `for` 循环\n\
+  \n*   `forEach`\n\n*   `map`\n\n这三种迭代类型涵盖了可视化数据时的大多数情况。\n\n### 6.8.1 `for` 循环\n\n\
+  `for` 循环允许你多次执行一段代码：\n\n```\nfor (let i = 0; i < 3; i++) {\n  console.log(i);\n\
+  }\n```\n\n`for` 语句包含三个表达式：\n\n*   第一个是初始化表达式，通常将计数器变量初始化为零。\n\n*   第二个是在每次迭代前求值的表达式。如果求值为\
+  \ `true`，则循环继续；如果为 `false`，则循环停止。\n\n*   第三个表达式在每次迭代后求值。通常计数器会递增。\n\n在上面的代码中，`for`\
+  \ 循环体（`console.log(i)`）在 `i` 小于 3 时执行。输出将是三个数字：0、1 和 2。\n\n当你明确知道要迭代多少次时，`for` 循环非常有用。例如，如果你想创建一个包含\
+  \ 5 个元素的数组，可以这样做：\n\n```\nlet numItems = 5;\nlet data = [];\n\nfor (let i = 0; i\
+  \ < numItems; i++) {\n  data[i] = 'Item-' + i;\n}\n```\n\n循环结束后，`data` 为：\n\n```\n\
+  [\"Item-0\", \"Item-1\", \"Item-2\", \"Item-3\", \"Item-4\"]\n```\n\n### 6.8.2 forEach\n\
+  \n给定一个数组，`forEach` 会遍历数组的每个元素。你向 `forEach` 提供一个函数，该函数会为每个数组元素调用一次。每次调用函数时，数组元素会被传入函数：\n\
+  \n```\nlet data = [10, 50, 40, 30, 20];\n\ndata.forEach(function(d) {\n  console.log(d);\n\
+  });\n```\n\n在这个例子中，函数为每个数组元素调用一次。第一次调用时，数组的第一个元素 `10` 被传入函数。第二次调用时，数组的第二个元素 `20`\
+  \ 被传入，依此类推。在这个实例中，函数总共被调用了五次。\n\n\n\n\n\n请注意，该函数没有名称。这是一个 `匿名函数` 的示例。这些函数是“即时”定义的，通常不会在代码的其他地方被调用。它们将在\
+  \ JavaScript 函数（进阶）章节中介绍。\n\n你可以使用命名函数重写上述代码：\n\n```\nlet data = [10, 50, 40, 30,\
+  \ 20];\n\nfunction output(message) {\n  console.log(message);\n}\n\ndata.forEach(output);\n\
+  ```\n\n这样写更冗长，但确实允许函数在其他地方被复用。\n\n在遍历数组时，你也可以使用 `for` 循环：\n\n```\nvar data = [10,\
+  \ 50, 40, 30, 20];\n\nfor (let i = 0; i < data.length; i++) {\n  console.log(data[i]);\n\
+  }\n```\n\n不过，如果可能的话，我建议使用 `forEach`，因为它更具表现力。（“表现力”指的是代码的意图对其他开发者来说更清晰。）\n\n###\
+  \ 6.8.3 map\n\n`map` 语句接收一个数组，并返回一个长度相同的新数组。新数组的每个元素都由原始数组中对应的元素计算得出。一个函数决定了新值如何计算。\n\
+  \n下面是一个示例，其中 `map` 用于遍历 `data`，并输出一个新数组，其中每个元素都翻倍：\n\n```\nlet data = [10, 50, 40,\
+  \ 30, 20];\n\nlet doubled = data.map(function(d) {\n  return d * 2;\n});\n\ndoubled;\
+  \  // [20, 100, 80, 60, 40]\n```\n\n对于 `data` 中的每个元素，都会调用该函数。第一个元素 `10` 被传入函数，函数返回\
+  \ `10 * 2`，这个值会被赋给新数组的第一个元素。第二次调用时传入 `50`，返回 `50 * 2` 并添加到新数组，以此类推。\n\n`map` 在处理数据时非常常见。例如，给定以下数据：\n\
+  \n```\nlet data = [\n  {\n    name: \"Anna\",\n    value: \"20.1\"\n  },\n  {\n\
+  \    name: \"Brian\",\n    value: \"15.3\"\n  }\n];\n```\n\n我们可能希望将 `name` 属性转换为大写，并将\
+  \ `value` 属性从字符串转换为数字。\n\n首先编写一个函数，该函数接收一个对象（包含 `name` 和 `value` 属性），并返回一个包含两个转换后属性的新对象：\n\
+  \n```\nfunction convert(d) {\n  let newObject = {\n    name: d.name.toUpperCase(),\n\
+  \    value: parseFloat(d.value)\n  };\n\n  return newObject;\n}\n```\n\n现在使用 `map`\
+  \ 创建一个新数组：\n\n```\nlet converted = data.map(convert);\n```\n\n`converted` 将如下所示：\n\
+  \n```\n[\n  {\n    name: \"ANNA\",\n    value: 20.1\n  },\n  {\n    name: \"BRIAN\"\
+  ,\n    value: 15.3\n  }\n]\n```\n\n上面的示例可以使用匿名函数重写：\n\n```\nlet converted = data.map(function(d)\
+  \ {\n  let newObject = {\n    name: d.name.toUpperCase(),\n    value: parseFloat(d.value)\n\
+  \  };\n\n  return newObject;\n});\n```\n\n### 6.8.4 练习\n\n打开 [jsconsole](https://jsconsole.com/)\
+  \ 并创建一个数字数组：\n\n```\nlet a = [10, 20, 30, 40, 50];\n```\n\n尝试以下操作：\n\n1.  使用 `forEach`\
+  \ 遍历数组，输出每个数字的平方。（使用 `console.log` 输出数字。）\n\n2.  使用 `map` 创建一个数组，其中包含 `a` 中每个元素的平方。\n\
+  \n请记住，在 jsconsole 中，使用 `shift` + `return` 可以在单个语句中创建新行。\n\n#### 6.8.4.1 答案\n\n使用\
+  \ `forEach` 输出每个数字的平方：\n\n```\na.forEach(function(d) {\n  console.log(d * d);\n\
+  });\n```\n\n使用 `map` 创建一个包含 `a` 中每个元素平方的数组：\n\n```\nlet squared = a.map(function(d)\
+  \ {\n  return d * d;\n});\n\nsquared;     // [100, 400, 900, 1600, 2500]\n```\n\n\
+  ## 6.9 JavaScript 函数（进阶）\n\n### 6.9.1 命名函数与匿名函数\n\n函数通常有一个名称：\n\n```\nfunction addTen(x)\
+  \ {\n  return x + 10;\n}\n```\n\n这使得它们可以在程序的任何地方被调用。然而，在使用 `forEach` 或 `map`（参见迭代章节）时，使用\
+  \ `匿名函数` 通常更方便。这是一个没有名称的函数，作为 `forEach` 或 `map` 的第一个参数定义。因此，与其这样写：\n\n```\nlet data\
+  \ = [10, 50, 40, 30, 20];\n\nfunction output(message) {\n  console.log(message);\n\
+  }\n\ndata.forEach(output);\n```\n\n你可以这样写：\n\n```\nlet data = [10, 50, 40, 30, 20];\n\
+  \ndata.forEach(function(message) {\n  console.log(message);\n});\n```\n\n这样代码更简洁，并且是\
+  \ JavaScript 中一种**非常**常见的模式。（D3 经常使用这种模式。）我强烈建议正确理解这种模式。研究上面的两个代码示例，并尝试理解两者之间的区别和相似之处。\n\
+  \n### 6.9.2 纯函数\n\n纯函数是没有 `副作用` 的函数。副作用是指函数外部发生的变化。例如：\n\n```\nlet outside = 10;\n\
+  \nfunction doSomething() {\n  outside = 20;\n}\n```\n\n调用 `doSomething` 会导致变量 `outside`\
+  \ 发生变化。这被认为是一种副作用。纯函数（没有副作用）的示例如下：\n\n```\nlet outside = 10;\n\nfunction doSomething()\
+  \ {\n  return 20;\n}\n\noutside = doSomething();\n```\n\n该函数只返回一个值，不会影响函数外部的任何内容。纯函数的优点是它们具有更可预测的行为。它们有输入值（通过参数列表）和一个输出。你知道，如果调用一个纯函数，它不会导致该函数外部的任何东西发生变化。\n\
+  \n### 6.9.3 函数是对象\n\nJavaScript 函数的行为类似于对象。这意味着你可以对函数执行任何可以对对象执行的操作。例如，你可以将函数赋值给一个变量：\n\
+  \n```\nlet getANumber = function() {\n  return 10;\n}\n\ngetANumber();\n```\n\n\
+  上面的代码等同于：\n\n```\nfunction getANumber() {\n  return 10;\n}\n\ngetANumber();\n```\n\
+  \n你可以将函数添加到对象中：\n\n```\nlet myFunctions = {\n  add: function(a, b) {\n    return\
+  \ a + b;\n  },\n  subtract: function(a, b) {\n    return a - b;\n  }\n};\n\nmyFunctions.add(10,\
+  \ 20);       // 30\nmyFunctions.subtract(20, 10);  // 10\n```\n\n#### 6.9.3.1 将函数传入函数\n\
+  \n你也可以将函数作为参数传入其他函数：\n\n```\nfunction add(a, b) {\n  return a + b;\n}\n\nfunction\
+  \ multiply(a, b) {\n  return a * b;\n}\n\nfunction getValue(a, b, operation) {\n\
+  \  return operation(a, b);\n}\n\ngetValue(10, 20, add);          // 30\ngetValue(10,\
+  \ 20, multiply);     // 200\n```\n\n这里我们定义了三个函数：\n\n*   `add` 接收两个数字并返回它们的和\n\n\
+  *   `multiply` 接收两个数字并返回它们的乘积\n\n*   `getValue` 接收两个数字和一个函数\n\n当第一次调用 `getValue`\
+  \ 时，`add` 函数被传入并赋值给 `operation` 参数。因此，当 `operation` 被调用时（在 `getValue` 内部），`add`\
+  \ 被执行。\n\n在第二次调用 `getValue` 时，`multiply` 函数被传入，这意味着 `operation` 的值是 `multiply`。因此，当\
+  \ `operation` 被调用时，`multiply` 被执行。\n\n导航到 [`codepen.io/createwithdata/pen/abvJmPY`](https://codepen.io/createwithdata/pen/abvJmPY)\
+  \ 在 CodePen 中查看此示例\n\n花点时间理解这个示例。这是相当高级的 JavaScript，但在使用 D3 时，函数经常被传入其他函数。\n\n#\
+  \ 7 工具与设置\n\n本书在代码示例中使用了 CodePen。CodePen 是构建小型应用程序的不错工具，但较大的应用程序通常是在本地开发的。这意味着使用**你计算机上**的工具和文件（而不是在网络上）。本章概述了在本地开发\
+  \ Web 应用程序的典型设置。这与大多数 Web 开发人员使用的设置类似。\n\n第一部分概述了必要的工具，第二部分将引导你完成这些工具的设置。\n\n##\
+  \ 7.1 Web 开发工具\n\nWeb 开发所需的工具包括：\n\n*   **代码编辑器**\n\n*   **Web 浏览器**\n\n*   **Web\
+  \ 服务器**（如果你不加载数据，则不是那么重要）\n\n\n\n\n你也可以在这个列表中添加一个**终端模拟器**。终端模拟器允许你通过文本命令与操作系统交互，例如\
+  \ MacOS 上的“终端”和 Windows 上的“命令提示符”。即使没有终端模拟器，你也可以完成本书中的所有内容，因此本书不会涉及它们。如果你想了解更多，建议在网上搜索“命令行教程”。\n\
+  \n### 7.1.1 代码编辑器\n\n代码编辑器是一种桌面应用程序，允许你编辑 HTML、CSS 和 JavaScript 文件。你可以使用简单的应用程序，如\
+  \ Windows 上的“记事本”和 Mac 上的“文本编辑”。重要的是这些编辑器要以纯文本模式工作，以免插入额外字符。不过，我推荐使用专门的代码编辑器，例如\
+  \ [Brackets](http://brackets.io/) 或 [Visual Studio Code](https://code.visualstudio.com/)。这两款都是免费且跨平台的。使用专用代码编辑器的优势包括：\n\
+  \n*   你可以将应用程序视为一个项目，从而更轻松地打开和导航\n*   语法高亮（代码根据其是关键字、变量等而显示不同颜色）\n*   众多插件（包括 Web\
+  \ 服务器！）让你的编码生活更轻松\n\n### 7.1.2 网页浏览器\n\n建议使用现代网页浏览器进行 Web 开发，例如 Chrome、Firefox、Safari\
+  \ 或 Edge。《用数据创造》系列书籍假定你使用的是 **Chrome**。无论你选择哪种浏览器，大部分内容都适用，但如果使用调试工具，可能会存在差异，因为这些工具因浏览器而异。\n\
+  \n### 7.1.3 网页服务器\n\n网页服务器通常根据网页浏览器的请求返回（或“提供”）HTML、CSS 和 JavaScript 文件。例如，如果你在浏览器中输入\
+  \ `createwithdata.com`，浏览器会连接到一个网页服务器，并请求构成该网站的文件。网页服务器通过将请求的文件发送回浏览器来响应。\n\n当你在自己的计算机上创建网站时，不一定需要运行自己的网页服务器。（你可以在大多数网页浏览器中直接打开\
+  \ HTML 文件。）但是，如果你需要从 Web 应用程序内部发出请求（这在基于 Web 的数据可视化中很常见），你将需要自己的本地网页服务器。（这是由于网页浏览器的安全限制。）如果你是一位经验丰富的开发者，并且能够轻松设置本地网页服务器，请随意跳过。\n\
+  \n运行本地网页服务器的选项（从最简单的开始）包括：\n\n*   Brackets 编辑器的内置网页服务器\n*   Visual Studio Code 插件\n\
+  *   Python、Ruby、PHP 或 Node 服务器\n\n另一个我尚未亲自探索的选项是 [Servez](https://greggman.github.io/servez/)，它是一个基于\
+  \ GUI 的简单网页服务器。\n\n#### 7.1.3.1 Brackets 网页服务器\n\n[Brackets](http://brackets.io/)\
+  \ 内置了网页服务器，因此这是目前最简单的选项。这个[视频](https://youtu.be/KJXdvaY9lTA?t=122)给出了很好的演示。如果你是代码编辑器新手，我推荐使用\
+  \ Brackets。\n\n#### 7.1.3.2 VS Code Live Server\n\nVisual Studio Code 有一个名为 [Live\
+  \ Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)\
+  \ 的网页服务器插件。\n\n安装 Live Server：\n\n*   从菜单栏中选择“查看”，然后选择“命令面板...”\n\n![](img/d717b39536c6d8db2b2de77247886680.png)\n\
+  \n在 VS Code 中打开命令面板\n\n*   输入“extension”并选择“扩展：安装扩展”\n\n![](img/758fc48409e013f521b425ce750d31e1.png)\n\
+  \n选择“扩展：安装扩展”\n\n*   在扩展搜索框中搜索“live server”（作者为 Ritwick Dey），然后点击“安装”\n\n![](img/a1d14e404fc8f56eec28c40e0dfd2567.png)\n\
+  \n搜索“live server”\n\n*   打开包含你代码的目录\n\n![](img/a4466b2227af9203170369748abdee9f.png)\n\
+  \n打开包含你代码的目录\n\n*   点击底部栏中的 **Go Live** 按钮\n\n![](img/7639d9be85c152e9a18293484e41967d.png)\n\
+  \n点击 Go Live 按钮\n\n你的网页浏览器应该会打开你的 Web 应用程序。如果没有，请打开网页浏览器并访问 `localhost:5500`。（如果“服务器已启动”消息中显示的不是\
+  \ 5500 而是其他端口号，请使用该端口号。）更详细的说明请参见[此处](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)。\n\
+  \n![](img/e7600c7555f3ff521f83a1b460d49485.png)\n\n服务器已启动\n\n#### 7.1.3.3 Python、Ruby、PHP、Node\n\
+  \n如果你是 Python、Ruby 或 PHP 开发者，可以使用该语言内置的网页服务器。这里有一些有用的说明[在此](https://gist.github.com/willurd/5720255)。MacOS\
+  \ 包含 Python 和 Ruby，因此如果你是 Mac 用户，可以使用其中之一。如果你是使用 Node 的 JavaScript 开发者，可以使用 [http-server](https://www.npmjs.com/package/http-server)。\n\
+  \n## 7.2 示例设置\n\n本节将引导你设置 Web 开发环境，并创建一个简单的网站（使用 HTML、CSS 和 JavaScript）。\n\n步骤如下：\n\
+  \n*   **为你的项目创建一个目录**\n*   选择并安装一个**代码编辑器**\n*   创建一个简单的 **HTML** 文件\n*   启动并运行一个本地\
+  \ **网页服务器**\n*   添加 **CSS** 和 **JavaScript** 文件\n\n我们将使用 VS Code 及其 Live Server\
+  \ 扩展。如果你习惯使用其他编辑器和网页服务器，请随意使用。\n\n### 7.2.1 创建项目目录\n\n使用文件资源管理器（Windows）或访达（Mac）创建一个将包含你项目的目录（或文件夹）。将其命名为\
+  \ `my_website`（或类似名称）。如果你计划有多个项目，你可能希望将其放在另一个名为 `coding_projects`（或类似名称）的目录中。\n\n\
+  ### 7.2.2 安装代码编辑器\n\n1. 从[此处](https://code.visualstudio.com/)下载 VS Code 并安装\n2.\
+  \ 运行 VS Code\n\n### 7.2.3 创建一个最小的 HTML 文件\n\n在本节中，你将创建一个简单的 HTML 文件。在 VS Code 中，从“文件”菜单中选择“新建”。VS\
+  \ Code 会创建一个新的（未保存且无标题）文件。\n\n以下代码是尽可能短且有效的 HTML 文档。它作为新网页的良好起点。将其复制并粘贴到你的新文档中。\n\
+  \n```\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\"\
+  >\n    <title>我的网页</title>\n  </head>\n\n  <body>\n    <h1>你好！</h1>\n  </body>\n\
+  </html>\n```\n\n`index.html`\n\n通常你只需要更改标题（在 `<title>` 标签之间）和内容（在 `<body>` 标签之间）。\n\
+  \n从“文件”菜单中选择“保存”，导航到你的项目目录，将文件命名为 `index.html`，然后点击“保存”。（将文件命名为 `index.html` 很重要。）文件保存后，你应该会在侧边栏中看到\
+  \ `index.html` 出现。\n\n### 7.2.4 安装 Live Server 扩展\n\n按照本章前面的说明安装 Live Server 扩展。\n\
+  \n### 7.2.5 启动服务器\n\n如果尚未操作，请从“文件”菜单中选择“打开文件夹...”，然后选择你的 `my_website` 目录。你应该会看到新目录出现在侧边栏中。现在点击底部栏中出现的\
+  \ **Go Live** 按钮。\n\n![](img/8dc438bb3ddde54df5c5ca1458b88a29.png)\n\n在 VS Code\
+  \ 中点击 Go Live 按钮\n\n确保你的浏览器指向 `localhost:5500`（使用底部栏中显示的端口号）。\n\n![](img/dee9aa4bc88e5e8d643c872b93f92954.png)\n\
+  \n服务器已启动消息（显示活动端口号）\n\n现在你的页面应该在网页浏览器中可见（它应该显示“你好！”）。尝试编辑你的 HTML 文件，保存它，然后刷新浏览器。你所做的更改应该可见。\n\
+  \n### 7.2.6 添加 CSS 和 JavaScript 文件\n\n在本节中，你将向网页添加一个 CSS 文件和一个 JavaScript 文件。向网页添加文件通常有两个步骤：\n\
+  \n*   创建文件并保存（CSS 文件扩展名为 `.css`，JavaScript 文件扩展名为 `.js`）\n*   在 `index.html` 文件中包含该文件\n\
+  \n#### 7.2.6.1 添加 CSS 文件\n\n\n\n\n\n从**文件**菜单中选择**新建**，并将以下 CSS 代码添加到新文件中：\n\n```\n\
+  h1 {\n  color: orange;\n}\n```\n\n`style.css`\n\n从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为\
+  \ `css` 的新目录。进入 `css` 目录，然后将新文件保存为 `style.css`。你的目标目录结构如下：\n\n```\nmy_website\n\
+  \  css\n    style.css\n  index.html\n```\n\n现在你需要在 `index.html` 中链接你的 CSS 文件。点击左侧边栏中的\
+  \ `index.html` 开始编辑你的 HTML 文件。添加包含 `<link>` 标签的行（如下高亮所示）：\n\n```\n<!DOCTYPE html>\n\
+  <html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <title>我的网页</title>\n\
+  \    <link rel=\"stylesheet\" href=\"css/style.css\">\n  </head>\n\n  <body>\n \
+  \   <h1>你好！</h1>\n  </body>\n</html>\n```\n\n`index.html`\n\n保存 `index.html` 并检查你的浏览器（你可能需要刷新页面）。标题现在应该是**橙色**。\n\
+  \n#### 7.2.6.2 添加一个 JavaScript 文件\n\n从**文件**菜单中选择**新建**，并将以下 JavaScript 代码添加到新文件中：\n\
+  \n```\n alert(\"Hello!\");\n```\n\n`main.js`\n\n从**文件**菜单中选择**保存**，当对话框出现时，在你的项目目录中创建一个名为\
+  \ `src` 的新目录。进入 `src` 目录，然后将新文件保存为 `main.js`。你的目标目录结构如下：\n\n```\nmy_website\n  css\n\
+  \    style.css\n  src\n    main.js\n  index.html\n```\n\n现在你需要在 `index.html` 中添加一个指向\
+  \ JavaScript 文件的链接。点击左侧边栏中的 `index.html` 开始编辑你的 HTML 文件。添加包含 `<script>` 标签的行（如下高亮所示）：\n\
+  \n```\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\"\
+  >\n    <title>我的网页</title>\n    <link rel=\"stylesheet\" href=\"css/style.css\"\
+  >\n  </head>\n\n  <body>\n    <h1>你好！</h1>\n    <script src=\"src/main.js\"></script>\n\
+  \  </body>\n</html>\n```\n\n`index.html`\n\n保存 `index.html` 并检查你的浏览器（你可能需要刷新页面）。应该会弹出一个显示“Hello!”的提示框。\n\
+  \n### 7.2.7 总结\n\n本节展示了如何设置一个包含以下组件的 Web 开发环境：\n\n*   一个代码编辑器\n\n*   一个 Web 浏览器\n\
+  \n*   一个本地 Web 服务器\n\n你学习了如何创建一个由 HTML 文件、CSS 文件和 JavaScript 文件组成的简单网站。这是大多数 Web\
+  \ 应用程序和基于 Web 的数据可视化的基础。\n\n"

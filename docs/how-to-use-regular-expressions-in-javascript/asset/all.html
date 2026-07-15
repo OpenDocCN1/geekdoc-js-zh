@@ -1,0 +1,2275 @@
+<p><img src="cover.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 472 751" preserveaspectratio="none">
+<image width="472" height="751" xlink:href="cover.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3">How to use Regular Expressions in
+JavaScript</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre5">VLIGHT</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre7">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre3">Table of Contents</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span id="part0000_split_001.html_toc"></span><a
+href="#part0000_split_002.html__Toc474090472"><span
+class="calibre10">Modifiers</span></a></p>
+<p><a href="#part0000_split_002.html__Toc474090473"><span
+class="calibre12">♥ </span><span class="calibre12">i</span></a></p>
+<p><a href="#part0000_split_003.html__Toc474090474"><span
+class="calibre12">♥ </span><span class="calibre12">g</span></a></p>
+<p><a href="#part0000_split_004.html__Toc474090475"><span
+class="calibre12">♥ </span><span class="calibre12">m</span></a></p>
+<p><a href="#part0000_split_005.html__Toc474090476"><span
+class="calibre10">Brackets</span></a></p>
+<p><a href="#part0000_split_005.html__Toc474090477"><span
+class="calibre12">♥ </span><span class="calibre12">[abc]</span></a></p>
+<p><a href="#part0000_split_006.html__Toc474090478"><span
+class="calibre12">♥ </span><span class="calibre12">[^abc]</span></a></p>
+<p><a href="#part0000_split_007.html__Toc474090479"><span
+class="calibre12">♥ </span><span class="calibre12">[0-9]</span></a></p>
+<p><a href="#part0000_split_008.html__Toc474090480"><span
+class="calibre12">♥ </span><span class="calibre12">[^0-9]</span></a></p>
+<p><a href="#part0000_split_009.html__Toc474090481"><span
+class="calibre12">♥ </span><span class="calibre12">(x|y)</span></a></p>
+<p><a href="#part0000_split_010.html__Toc474090482"><span
+class="calibre10">Metacharacters</span></a></p>
+<p><a href="#part0000_split_010.html__Toc474090483"><span
+class="calibre12">♥ </span><span class="calibre12">.</span></a></p>
+<p><a href="#part0000_split_011.html__Toc474090484"><span
+class="calibre12">♥ </span><span class="calibre12">\w</span></a></p>
+<p><a href="#part0000_split_012.html__Toc474090485"><span
+class="calibre12">♥ </span><span class="calibre12">\W</span></a></p>
+<p><a href="#part0000_split_013.html__Toc474090486"><span
+class="calibre12">♥ </span><span class="calibre12">\d</span></a></p>
+<p><a href="#part0000_split_014.html__Toc474090487"><span
+class="calibre12">♥ </span><span class="calibre12">\D</span></a></p>
+<p><a href="#part0000_split_015.html__Toc474090488"><span
+class="calibre12">♥ </span><span class="calibre12">\s</span></a></p>
+<p><a href="#part0000_split_016.html__Toc474090489"><span
+class="calibre12">♥ </span><span class="calibre12">\S</span></a></p>
+<p><a href="#part0000_split_017.html__Toc474090490"><span
+class="calibre12">♥ </span><span class="calibre12">\b</span></a></p>
+<p><a href="#part0000_split_018.html__Toc474090491"><span
+class="calibre12">♥ </span><span class="calibre12">\B</span></a></p>
+<p><a href="#part0000_split_019.html__Toc474090492"><span
+class="calibre12">♥ </span><span class="calibre12">\0</span></a></p>
+<p><a href="#part0000_split_020.html__Toc474090493"><span
+class="calibre12">♥ </span><span class="calibre12">\n</span></a></p>
+<p><a href="#part0000_split_021.html__Toc474090494"><span
+class="calibre12">♥ </span><span class="calibre12">\f</span></a></p>
+<p><a href="#part0000_split_022.html__Toc474090495"><span
+class="calibre12">♥ </span><span class="calibre12">\r</span></a></p>
+<p><a href="#part0000_split_023.html__Toc474090496"><span
+class="calibre12">♥ </span><span class="calibre12">\t</span></a></p>
+<p><a href="#part0000_split_024.html__Toc474090497"><span
+class="calibre12">♥ </span><span class="calibre12">\v</span></a></p>
+<p><a href="#part0000_split_025.html__Toc474090498"><span
+class="calibre12">♥ </span><span class="calibre12">\xxx</span></a></p>
+<p><a href="#part0000_split_026.html__Toc474090499"><span
+class="calibre12">♥ </span><span class="calibre12">\xdd</span></a></p>
+<p><a href="#part0000_split_027.html__Toc474090500"><span
+class="calibre12">♥ </span><span class="calibre12">\uxxxx</span></a></p>
+<p><a href="#part0000_split_028.html__Toc474090501"><span
+class="calibre10">Quantifiers</span></a></p>
+<p><a href="#part0000_split_028.html__Toc474090502"><span
+class="calibre12">♥ </span><span class="calibre12">n+</span></a></p>
+<p><a href="#part0000_split_029.html__Toc474090503"><span
+class="calibre12">♥ </span><span class="calibre12">n*</span></a></p>
+<p><a href="#part0000_split_030.html__Toc474090504"><span
+class="calibre12">♥ </span><span class="calibre12">n?</span></a></p>
+<p><a href="#part0000_split_031.html__Toc474090505"><span
+class="calibre12">♥ </span><span class="calibre12">n{X}</span></a></p>
+<p><a href="#part0000_split_032.html__Toc474090506"><span
+class="calibre12">♥ </span><span class="calibre12">n{X,Y}</span></a></p>
+<p><a href="#part0000_split_033.html__Toc474090507"><span
+class="calibre12">♥ </span><span class="calibre12">n{X,}</span></a></p>
+<p><a href="#part0000_split_034.html__Toc474090508"><span
+class="calibre12">♥ </span><span class="calibre12">n$</span></a></p>
+<p><a href="#part0000_split_035.html__Toc474090509"><span
+class="calibre12">♥ </span><span class="calibre12">^n</span></a></p>
+<p><a href="#part0000_split_036.html__Toc474090510"><span
+class="calibre12">♥ </span><span class="calibre12">?=n</span></a></p>
+<p><a href="#part0000_split_037.html__Toc474090511"><span
+class="calibre12">♥ </span><span class="calibre12">?!n</span></a></p>
+<p><a href="#part0000_split_038.html__Toc474090512"><span
+class="calibre10">RegExp Object Methods</span></a></p>
+<p><a href="#part0000_split_038.html__Toc474090513"><span
+class="calibre12">♥ </span><span class="calibre12">exec()</span></a></p>
+<p><a href="#part0000_split_039.html__Toc474090514"><span
+class="calibre12">♥ </span><span class="calibre12">test()</span></a></p>
+<p><a href="#part0000_split_040.html__Toc474090515"><span
+class="calibre12">♥ </span><span
+class="calibre12">toString()</span></a></p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<section id="part0000_split_002.html_calibre_pb_2"
+class="calibre13 calibre1">
+<h1 class="calibre13"><br />
+<span id="part0000_split_002.html__Toc474090472" class="calibre16"><span
+id="part0000_split_002.html_5Q-8ffc76318ada44a8a48723448a2fcdea"
+class="calibre17">Modifiers</span></span></h1>
+<h2 class="calibre18"><span id="part0000_split_002.html__Toc474090473"
+class="calibre16"><span class="calibre19">♥</span><span
+class="calibre20"> </span><span class="calibre21">i</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Perform case-insensitive matching</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a
+case-insensitive search for "Youtube" in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Visit youtube";</span></p>
+<p><span class="calibre28">    var pattern = /Youtube/i;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Youtube</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_003.html"></span></p>
+<section id="part0000_split_003.html_calibre_pb_5"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_003.html__Toc474090474" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">g</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Perform a global match (find all matches
+rather than stopping after the first match)</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for "Welcome" in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books! Again
+welcome";</span></p>
+<p><span class="calibre28">    var pattern = /Welcome/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Welcome</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_004.html"></span></p>
+<section id="part0000_split_004.html_calibre_pb_8"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_004.html__Toc474090475" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">m</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Perform multiline matching</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a multiline
+search for "Welcome" at the beginning of each line in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "\nWelcome to my books!
+\nWelcome again!";</span></p>
+<p><span class="calibre28">    var pattern = /^Welcome/m;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Welcome</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_11"
+class="calibre13 calibre1">
+<h1 class="calibre13"><br />
+<span id="part0000_split_005.html__Toc474090476" class="calibre16"><span
+class="calibre17">Brackets</span></span></h1>
+<h2 class="calibre18"><span id="part0000_split_005.html__Toc474090477"
+class="calibre16"><span class="calibre19">♥</span><span
+class="calibre20"> </span><span
+class="calibre21">[abc]</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find any character between the
+brackets</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for the character "o" in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /[o]/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">o,o,o,o</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<section id="part0000_split_006.html_calibre_pb_14"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_006.html__Toc474090478" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">[^abc]</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find any character NOT between the
+brackets</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for characters NOT inside the brackets [o] in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /[^o]/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W,e,l,c,m,e, ,t, ,m,y, ,b,k,s,!</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_007.html"></span></p>
+<section id="part0000_split_007.html_calibre_pb_17"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_007.html__Toc474090479" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">[0-9]</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find any digit between the
+brackets</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE html&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for the numbers 1 to 4 in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "1234567890";</span></p>
+<p><span class="calibre28">    var pattern = /[3-5]/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">3,4,5</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_008.html"></span></p>
+<section id="part0000_split_008.html_calibre_pb_20"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_008.html__Toc474090480" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">[^0-9]</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find any digit NOT between the
+brackets</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for numbers that are NOT 1 to 4 in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "1234567890";</span></p>
+<p><span class="calibre28">    var pattern = /[^3-5]/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">1,2,6,7,8,9,0</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_009.html"></span></p>
+<section id="part0000_split_009.html_calibre_pb_23"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_009.html__Toc474090481" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">(x|y)</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find any of the alternatives
+specified</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for any of the specified alternatives (2|0).&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "123456789024680";</span></p>
+<p><span class="calibre28">    var pattern = /(2|0)/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">2,0,2,0</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_010.html"></span></p>
+<section id="part0000_split_010.html_calibre_pb_26"
+class="calibre13 calibre1">
+<h1 class="calibre13"><br />
+<span id="part0000_split_010.html__Toc474090482" class="calibre16"><span
+class="calibre17">Metacharacters</span></span></h1>
+<h2 class="calibre18"><span id="part0000_split_010.html__Toc474090483"
+class="calibre16"><span class="calibre19">♥</span><span
+class="calibre20"> </span><span class="calibre21">.</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a single character, except newline or
+line terminator</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for "W.l" in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books! Welcome
+again!";</span></p>
+<p><span class="calibre28">    var pattern = /W.l/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Wel,Wel</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_011.html"></span></p>
+<section id="part0000_split_011.html_calibre_pb_29"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_011.html__Toc474090484" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\w</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a word character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for word characters in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!.";</span></p>
+<p><span class="calibre28">    var pattern = /\w/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_012.html"></span></p>
+<section id="part0000_split_012.html_calibre_pb_32"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_012.html__Toc474090485" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\W</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a non-word character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for non-word characters in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!.";</span></p>
+<p><span class="calibre28">    var pattern = /\W/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">, , ,!,.</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_013.html"></span></p>
+<section id="part0000_split_013.html_calibre_pb_35"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_013.html__Toc474090486" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\d</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a digit</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for digits in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books! 2nd 3rd
+4th";</span></p>
+<p><span class="calibre28">    var pattern = /\d/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">2,3,4</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_014.html"></span></p>
+<section id="part0000_split_014.html_calibre_pb_38"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_014.html__Toc474090487" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\D</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a non-digit character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span class="calibre25">="demo"&gt;Click the
+button to do a global search for non-digit characters in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">var str = "Welcome to my books! 2nd 3rd
+4th";</span></p>
+<p><span class="calibre28">var pattern = /\D/g;</span></p>
+<p><span class="calibre25">var result = str.match(pattern);</span></p>
+<p><span
+class="calibre25">document.getElementById("demo").innerHTML=result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W,e,l,c,o,m,e, ,t,o, ,m,y, ,b,o,o,k,s,!,
+,n,d, ,r,d, ,t,h</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_015.html"></span></p>
+<section id="part0000_split_015.html_calibre_pb_41"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_015.html__Toc474090488" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\s</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a whitespace character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for whitespace characters in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /\s/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">, ,</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_016.html"></span></p>
+<section id="part0000_split_016.html_calibre_pb_44"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_016.html__Toc474090489" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\S</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a non-whitespace character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to search for
+non-whitespace characters in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /\S/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W,e,l,c,o,m,e,t,o,m,y,b,o,o,k,s,!</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_017.html"></span></p>
+<section id="part0000_split_017.html_calibre_pb_47"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_017.html__Toc474090490" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\b</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a match at the beginning/end of a
+word</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for "boo" at the beginning or end of a word in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books!
+books.";</span></p>
+<p><span class="calibre28">    var pattern = /\bboo/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">boo,boo</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_018.html"></span></p>
+<section id="part0000_split_018.html_calibre_pb_50"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_018.html__Toc474090491" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\B</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a match not at the beginning/end of a
+word</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span class="calibre25">="demo"&gt;Click the
+button to do a global search for "ok"</span></p>
+<p><span class="calibre25">NOT at the beginning or end of a word in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">var str = "Welcome to my books!";</span></p>
+<p><span class="calibre28">var pattern = /\Bok/g;</span></p>
+<p><span class="calibre25">var result = str.match(pattern);</span></p>
+<p><span
+class="calibre25">document.getElementById("demo").innerHTML=result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">ok</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_019.html"></span></p>
+<section id="part0000_split_019.html_calibre_pb_53"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_019.html__Toc474090492" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\0</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a NUL character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the NUL character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Hello JavaScript.\0It is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\0/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">17</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_020.html"></span></p>
+<section id="part0000_split_020.html_calibre_pb_56"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_020.html__Toc474090493" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\n</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a new line character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the newline character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "JavaScript.\nIt is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\n/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">11</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_021.html"></span></p>
+<section id="part0000_split_021.html_calibre_pb_59"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_021.html__Toc474090494" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\f</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a form feed character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the form feed character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "JavaScript.\fIt is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\f/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">11</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_022.html"></span></p>
+<section id="part0000_split_022.html_calibre_pb_62"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_022.html__Toc474090495" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\r</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a carriage return character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the carriage return character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "JavaScript.\rIt is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\r/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">11</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_023.html"></span></p>
+<section id="part0000_split_023.html_calibre_pb_65"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_023.html__Toc474090496" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\t</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a tab character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the tab character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "JavaScript.\tIt is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\t/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">11</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_024.html"></span></p>
+<section id="part0000_split_024.html_calibre_pb_68"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_024.html__Toc474090497" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\v</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find a vertical tab character</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+position where the vertical tab character was found in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "JavaScript.\vIt is
+awesome!";</span></p>
+<p><span class="calibre28">    var pattern = /\v/;</span></p>
+<p><span class="calibre25">    var result =
+str.search(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">11</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_025.html"></span></p>
+<section id="part0000_split_025.html_calibre_pb_71"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_025.html__Toc474090498" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\xxx</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find the character specified by an octal
+number xxx</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for octal number 127 (W) in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /\127/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_026.html"></span></p>
+<section id="part0000_split_026.html_calibre_pb_74"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_026.html__Toc474090499" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\xdd</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find the character specified by a hexadecimal
+number dd</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for the hexadecimal number 57 (W) in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /\x57/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_027.html"></span></p>
+<section id="part0000_split_027.html_calibre_pb_77"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_027.html__Toc474090500" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">\uxxxx</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Find the Unicode character specified by a
+hexadecimal number xxxx</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for the hexadecimal number 0057 (W) in a
+string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /\u0057/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">W</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_028.html"></span></p>
+<section id="part0000_split_028.html_calibre_pb_80"
+class="calibre13 calibre1">
+<h1 class="calibre13"><br />
+<span id="part0000_split_028.html__Toc474090501" class="calibre16"><span
+class="calibre17">Quantifiers</span></span></h1>
+<h2 class="calibre18"><span id="part0000_split_028.html__Toc474090502"
+class="calibre16"><span class="calibre19">♥</span><span
+class="calibre20"> </span><span class="calibre21">n+</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains at least one
+n</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for at least one "o" in a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /o+/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">o,o,oo</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_029.html"></span></p>
+<section id="part0000_split_029.html_calibre_pb_83"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_029.html__Toc474090503" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n*</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains zero or more
+occurrences of n</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for an "b", followed by zero or more "o"
+characters.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books!
+book";</span></p>
+<p><span class="calibre28">    var pattern = /bo*/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">boo,boo</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_030.html"></span></p>
+<section id="part0000_split_030.html_calibre_pb_86"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_030.html__Toc474090504" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n?</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains zero or one
+occurrences of n</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for a "5", followed by zero or one "0"
+characters.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">   var str = "51, 5000, 350, 35";</span></p>
+<p><span class="calibre28">    var pattern = /50?/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">5,50,50,5</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_031.html"></span></p>
+<section id="part0000_split_031.html_calibre_pb_89"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_031.html__Toc474090505" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n{X}</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains a sequence
+of X n's</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for a substring that contains a sequence of three
+digits.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">   var str = "5,555,5555,555555";</span></p>
+<p><span class="calibre28">    var pattern = /\d{3}/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">555,555,555,555</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_032.html"></span></p>
+<section id="part0000_split_032.html_calibre_pb_92"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_032.html__Toc474090506" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n{X,Y}</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains a sequence
+of X to Y n's</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to global search
+for a substring that contains a sequence of three to five
+digits.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str =
+"5,55,555,5555,55555,5555555";</span></p>
+<p><span class="calibre28">    var pattern = /\d{3,5}/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">555,5555,55555,55555</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_033.html"></span></p>
+<section id="part0000_split_033.html_calibre_pb_95"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_033.html__Toc474090507" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n{X,}</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that contains a sequence
+of at least X n's</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to global search
+for a substring that contains a sequence of at least two
+digits.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "5,55,555,5555";</span></p>
+<p><span class="calibre28">    var pattern = /\d{2,}/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">55,555,5555</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_034.html"></span></p>
+<section id="part0000_split_034.html_calibre_pb_98"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_034.html__Toc474090508" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">n$</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string with n at the end of
+it</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to global search
+for "me" at the end of a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my books!
+Welcome";</span></p>
+<p><span class="calibre28">    var pattern = /me$/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">me</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_035.html"></span></p>
+<section id="part0000_split_035.html_calibre_pb_101"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_035.html__Toc474090509" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">^n</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string with n at the beginning of
+it</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global
+search for "Welcome" at the beginning of a string.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre28">    var pattern = /^Welcome/g;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Welcome</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_036.html"></span></p>
+<section id="part0000_split_036.html_calibre_pb_104"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_036.html__Toc474090510" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">?=n</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that is followed by a
+specific string n</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to global search
+for "is" followed by " all".&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Is this all you
+want?";</span></p>
+<p><span class="calibre28">    var pattern = /is(?= all)/;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">is</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_037.html"></span></p>
+<section id="part0000_split_037.html_calibre_pb_107"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_037.html__Toc474090511" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">?!n</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Matches any string that is not followed by a
+specific string n</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to do a global,
+case insensitive search for "is" not followed by "
+all".&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Is this all, there is
+another...";</span></p>
+<p><span class="calibre28">    var pattern = /is(?! all)/gi;</span></p>
+<p><span class="calibre25">    var result =
+str.match(pattern);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">Is,is</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_038.html"></span></p>
+<section id="part0000_split_038.html_calibre_pb_110"
+class="calibre13 calibre1">
+<h1 class="calibre13"><br />
+<span id="part0000_split_038.html__Toc474090512" class="calibre16"><span
+class="calibre17">RegExp Object Methods</span></span></h1>
+<h2 class="calibre18"><span id="part0000_split_038.html__Toc474090513"
+class="calibre16"><span class="calibre19">♥</span><span
+class="calibre20"> </span><span
+class="calibre21">exec()</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Tests for a match in a string. Returns the
+first match</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Syntax</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre27">RegExpObject</span><span
+class="calibre25">.</span><span class="calibre32">exec</span><span
+class="calibre25">(string)</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Parameters</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">string: </span><span
+class="calibre27">Required</span><span class="calibre25">, the string to
+be searched</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;The exec() method returns the
+matched text if it finds a match, otherwise it returns
+null.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to search a string
+for the character "o".&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre25">   var pattern = new RegExp("o");</span></p>
+<p><span class="calibre28">    var result =
+pattern.exec(str);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">o</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_039.html"></span></p>
+<section id="part0000_split_039.html_calibre_pb_113"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_039.html__Toc474090514" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">test()</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Tests for a match in a string. Returns true
+or false</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Syntax</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre27">RegExpObject</span><span
+class="calibre25">.</span><span class="calibre32">test</span><span
+class="calibre25">(string)</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Parameters</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">string: </span><span
+class="calibre27">Required</span><span class="calibre25">, the string to
+be searched</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;The test() method returns true if it
+finds a match, otherwise it returns false.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to search a string
+for the character "o".&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var str = "Welcome to my
+books!";</span></p>
+<p><span class="calibre25">   var pattern = new RegExp("o");</span></p>
+<p><span class="calibre28">    var result =
+pattern.test(str);</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">true</span></p>
+<p><span class="calibre28"> </span></p>
+</section>
+<p><span id="part0000_split_040.html"></span></p>
+<section id="part0000_split_040.html_calibre_pb_116"
+class="calibre31 calibre1">
+<h2 class="calibre31"><br />
+<span id="part0000_split_040.html__Toc474090515" class="calibre16"><span
+class="calibre19">♥</span><span class="calibre20"> </span><span
+class="calibre21">toString()</span></span></h2>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Description</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">Returns the string value of the regular
+expression</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Syntax</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre27">RegExpObject</span><span
+class="calibre25">.</span><span class="calibre32">toString</span><span
+class="calibre25">()</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Parameters</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre25">None</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre22">☺</span><span class="calibre23"> </span><span
+class="calibre3">Sample Code</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre25">&lt;!DOCTYPE </span><span
+class="calibre27">html</span><span class="calibre25">&gt;</span></p>
+<p><span class="calibre25">&lt;html&gt;</span></p>
+<p><span class="calibre25">&lt;body&gt;</span></p>
+<p><span class="calibre25">&lt;p&gt;Click the button to return the
+string value of the regular expression.&lt;/p&gt;</span></p>
+<p><span class="calibre25">&lt;button </span><span
+class="calibre27">onclick</span><span
+class="calibre25">="myFunction()"&gt;Test&lt;/button&gt;</span></p>
+<p><span class="calibre25">&lt;p </span><span
+class="calibre27">id</span><span
+class="calibre25">="demo"&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;script&gt;</span></p>
+<p><span class="calibre25">function myFunction() {</span></p>
+<p><span class="calibre25">    var pattern = new RegExp("Welcome to my
+books!", "g");</span></p>
+<p><span class="calibre28">    var result =
+pattern.toString();</span></p>
+<p><span class="calibre25">    document.getElementById("demo").innerHTML
+= result;</span></p>
+<p><span class="calibre25">}</span></p>
+<p><span class="calibre25">&lt;/script&gt;</span></p>
+<p><span class="calibre25"> </span></p>
+<p><span class="calibre25">&lt;/body&gt;</span></p>
+<p><span class="calibre25">&lt;/html&gt;</span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre26"> </span></p>
+<p><span class="calibre29">♣</span><span class="calibre30"> </span><span
+class="calibre3">Output</span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre28">/Welcome to my books!/g</span></p>
+<p><span class="calibre28"> </span></p>
+</section>

@@ -1,0 +1,2909 @@
+- fmt: '
+
+    ![](image_rsrcJJ.jpg)
+
+
+    First Steps in JavaScript (Node.js)
+
+
+    Ruhan Avila da Conceição
+
+
+    # Summary
+
+
+    [Summary](#part0002.xhtml)
+
+    [Notes on the Book](#part0003.xhtml)
+
+    [A brief history of JavaScript](#part0004.xhtml)
+
+    [Preparing the Programming Setup](#part0005.xhtml)
+
+    [Modules in JavaScript](#part0006.xhtml)
+
+    [NPM e NPX](#part0007.xhtml)
+
+    [First Steps in JavaScript](#part0008.xhtml)
+
+    [Advantages of Node.js](#part0009.xhtml)
+
+    [Storing Values in JavaScript](#part0010.xhtml)
+
+    [Data Types in JavaScript](#part0011.xhtml)
+
+    [Mathematics in JavaScript](#part0012.xhtml)
+
+    [Strings in JavaScript](#part0013.xhtml)
+
+    [Control Structures](#part0014.xhtml)
+
+    [Functions](#part0015.xhtml)
+
+    [Arrays in JavaScript](#part0016.xhtml)
+
+    [Objects in JavaScript](#part0017.xhtml)
+
+    [Functional Programming in JavaScript](#part0018.xhtml)
+
+    [Short-circuit Evaluation](#part0019.xhtml)
+
+    [About the Author](#part0020.xhtml)
+
+
+    # Notes on the Book
+
+
+    This book was written using ChatGPT as an aid tool in the development of this
+    material. All content produced by this tool was carefully reviewed and properly
+    organized by the author. It is important to note that the use of intelligent tools
+    for text creation is welcome, as long as the quality, truthfulness, and correctness
+    of what was produced are always observed.
+
+
+    # A brief history of JavaScript
+
+
+    JavaScript is a high-level programming language that was created in 1995 by Brendan
+    Eich, then an engineer at Netscape. The initial idea was to create a programming
+    language that could be executed in the browser and allow developers to add interactivity
+    and dynamism to web pages.
+
+
+    The first version of JavaScript was released along with the Netscape Navigator
+    2.0 browser in September 1995. The language was quickly adopted by other browsers,
+    such as Microsoft''s Internet Explorer, and became one of the main technologies
+    used in creating dynamic web pages.
+
+
+    Over the years, JavaScript has evolved and become an increasingly powerful language
+    capable of performing complex tasks both in the browser and on the server. In
+    2009, Ryan Dahl created Node.js, a platform that allows developers to run JavaScript
+    code on the server, opening up a host of new possibilities for the language.
+
+
+    Currently, JavaScript is one of the most popular programming languages in the
+    world, widely used in web applications, mobile apps, games, and other areas. The
+    language continues to evolve, with new features and functionalities being regularly
+    added to its specifications.
+
+
+    # Preparing the Programming Setup
+
+
+    ## Installing Node.js
+
+
+    To install Node.js, first go to the website https://nodejs.org/ and download the
+    LTS (Long Time Support) version.
+
+
+    The image below shows a screenshot of the Node.js page, and the arrow indicates
+    the option to be selected to download the LTS version.
+
+
+    After downloading, the installation process of Node.js is very similar to any
+    other application, without any major mysteries (:
+
+
+    ![](image_rsrcJK.jpg)
+
+
+    ## Installing Visual Studio Code
+
+
+    As a source code editor, I suggest Visual Studio Code (VS Code) because it is
+    cross-platform, free, and extensible.
+
+
+    To download this editor, go to https://code.visualstudio.com/ and click on the
+    button as indicated in the figure below.
+
+
+    Like Node.js, the installation process of VS Code does not require any knowledge
+    beyond the conventional to install the new program on your computer.
+
+
+    ![](image_rsrcJM.jpg)
+
+
+    # Modules in JavaScript
+
+
+    In Node.js, modules are files that contain JavaScript code that can be reused
+    in different parts of a program. Each module is an independent unit of code that
+    can be imported or exported to other parts of the program, making the code more
+    modular and easy to maintain.
+
+
+    Modules in Node.js are organized in a CommonJS module system, which defines how
+    modules can be defined, loaded, and exported. Each module has its own scope, meaning
+    the variables and functions defined in a module are not visible outside of it
+    unless they are explicitly exported.
+
+
+    To use a module in a Node.js program, it is necessary to import it using the `require()`
+    function. For example, to use the `fs` module, which is used to perform file read
+    and write operations, simply use the following code:
+
+
+    ![](image_rsrcJN.jpg)
+
+
+    The `require()` function is a synchronous function that loads the specified module
+    and returns the object exported by it. It is possible to export values from a
+    module using the `module.exports` variable, which is a special property of the
+    module object. For example, to export a function in a module, simply do the following:
+
+
+    ![](image_rsrcJP.jpg)
+
+
+    To import the `sayHello()` function in another file, just use the `require()`
+    and access the `sayHello` property of the imported object:
+
+
+    ![](image_rsrcJR.jpg)
+
+
+    This way, modules in Node.js allow developers to organize and reuse code more
+    efficiently, making it easier to maintain and develop more complex applications.
+
+
+    # NPM e NPX
+
+
+    The Node.js package manager is NPM (Node Package Manager), which is used to install,
+    manage, and share software packages and modules written in JavaScript. It comes
+    included with Node.js and is used by developers around the world to manage their
+    project dependencies.
+
+
+    NPM allows you to install packages globally or locally to a specific project.
+    To install a package locally, simply navigate to the root directory of your project
+    and run the following command in the terminal:
+
+
+    ![](image_rsrcJS.jpg)
+
+
+    This will install the package in the `node_modules` directory of your project
+    and add an entry in the `package.json` file to track your project''s dependencies.
+
+
+    On the other hand, `npx` is a utility that was introduced in NPM from version
+    5.2.0. It allows you to run packages directly without having to install them globally
+    on your system or locally in the project.
+
+
+    `npx` downloads the requested package and runs it immediately, instead of installing
+    it permanently in your system or project. This is useful when you need to run
+    a package only once or when you want to test a package without installing it permanently.
+
+
+    For example, if you want to run a script in the `create-react-app` package using
+    `npx`, simply type the following command:
+
+
+    ![](image_rsrcJT.jpg)
+
+
+    This will download and execute the `create-react-app` package with the argument
+    `my-app`, creating a new React application in the `my-app` directory.
+
+
+    In summary, NPM is used to manage the dependencies of your project, while `npx`
+    is used to execute packages without installing them globally or locally. Both
+    are useful tools for JavaScript development.
+
+
+    # First Steps in JavaScript
+
+
+    First, create a folder to develop your Node.js project and then launch VS Code.
+    In the editor, click on File > Open Folder and open the folder you just created.
+    In the example, the folder I created is called `ProjetoNode`.
+
+
+    On the left, click New File and then name it `helloworld.js`. In this file, add
+    the following code:
+
+
+    ```
+
+    console.log("Hello World")
+
+    ```
+
+
+    Then, click Terminal > New Terminal to open a new terminal instance within VS
+    Code, and enter the following command:
+
+
+    ```
+
+    node helloworld.js
+
+    ```
+
+
+    If everything goes well, the following sentence will appear in the terminal: Hello
+    World.
+
+
+    # Advantages of Node.js
+
+
+    One of the major advantages of Node.js is the ease of developing server-side applications.
+    To see this in action, create a new file in VS Code called `server.js` and insert
+    the following code lines:
+
+
+    ![](image_rsrcJU.jpg)
+
+
+    So, in the terminal, run the following command:
+
+
+    ```
+
+    node server.js
+
+    ```
+
+
+    You are now running an HTTP server in Node.js that will listen for requests on
+    port 8080. To access the local server, simply go to the following link http://localhost:8080
+    in your browser.
+
+
+    # Storing Values in JavaScript
+
+
+    In JavaScript, variables are used to store values that can be used in different
+    parts of a program. To declare a variable in JavaScript, you can use the keywords
+    `var`, `let`, or `const`, followed by the variable name:
+
+
+    ![](image_rsrcJV.jpg)
+
+    '
+  raw: '
+
+
+    ![](image_rsrcJJ.jpg)
+
+
+    First Steps in JavaScript (Node.js)
+
+
+    Ruhan Avila da Conceição
+
+
+    # Summary
+
+
+    [Summary](#part0002.xhtml)
+
+
+    [Notes on the Book](#part0003.xhtml)
+
+
+    [A brief history of JavaScript](#part0004.xhtml)
+
+
+    [Preparing the Programming Setup](#part0005.xhtml)
+
+
+    [Modules in JavaScript](#part0006.xhtml)
+
+
+    [NPM e NPX](#part0007.xhtml)
+
+
+    [First Steps in JavaScript](#part0008.xhtml)
+
+
+    [Advantages of Node.js](#part0009.xhtml)
+
+
+    [Storing Values in JavaScript](#part0010.xhtml)
+
+
+    [Data Types in JavaScript](#part0011.xhtml)
+
+
+    [Mathematics in JavaScript](#part0012.xhtml)
+
+
+    [Strings in JavaScript](#part0013.xhtml)
+
+
+    [Control Structures](#part0014.xhtml)
+
+
+    [Functions](#part0015.xhtml)
+
+
+    [Arrays in JavaScript](#part0016.xhtml)
+
+
+    [Objects in JavaScript](#part0017.xhtml)
+
+
+    [Functional Programming in JavaScript](#part0018.xhtml)
+
+
+    [Short-circuit Evaluation](#part0019.xhtml)
+
+
+    [About the Author](#part0020.xhtml)
+
+
+    # Notes on the Book
+
+
+    This book was written using ChatGPT as an aid tool in the development of this
+    material. All content produced by this tool was carefully reviewed and properly
+    organized by the author. It is important to note that the use of intelligent tools
+    for text creation is welcome, as long as the quality, truthfulness, and correctness
+    of what was produced are always observed.
+
+
+    # A brief history of JavaScript
+
+
+    JavaScript is a high-level programming language that was created in 1995 by Brendan
+    Eich, then an engineer at Netscape. The initial idea was to create a programming
+    language that could be executed in the browser and allow developers to add interactivity
+    and dynamism to web pages.
+
+
+    The first version of JavaScript was released along with the Netscape Navigator
+    2.0 browser in September 1995\. The language was quickly adopted by other browsers,
+    such as Microsoft''s Internet Explorer, and became one of the main technologies
+    used in creating dynamic web pages.
+
+
+    Over the years, JavaScript has evolved and become an increasingly powerful language
+    capable of performing complex tasks both in the browser and on the server. In
+    2009, Ryan Dahl created Node.js, a platform that allows developers to run JavaScript
+    code on the server, opening up a host of new possibilities for the language.
+
+
+    Currently, JavaScript is one of the most popular programming languages in the
+    world, widely used in web applications, mobile apps, games, and other areas. The
+    language continues to evolve, with new features and functionalities being regularly
+    added to its specifications.
+
+
+    # Preparing the Programming Setup
+
+
+    Installing Node.js
+
+
+    To install Node.js, first go to the website https://nodejs.org/ and download the
+    LTS (Long Time Support) version.
+
+
+    The image below shows a screenshot of the Node.js page, and the arrow indicates
+    the option to be selected to download the LTS version.
+
+
+    After downloading, the installation process of Node.js is very similar to any
+    other application, without any major mysteries (:
+
+
+    ![](image_rsrcJK.jpg)
+
+
+    Installing Visual Studio Code
+
+
+    As a source code editor, I suggest Visual Studio Code (VS Code) because it is
+    cross-platform, free, and extensible.
+
+
+    To download this editor, go to https://code.visualstudio.com/ and click on the
+    button as indicated in the figure below.
+
+
+    Like Node.js, the installation process of VS Code does not require any knowledge
+    beyond the conventional to install the new program on your computer.
+
+
+    ![](image_rsrcJM.jpg)
+
+
+    # Modules in JavaScript
+
+
+    In Node.js, modules are files that contain JavaScript code that can be reused
+    in different parts of a program. Each module is an independent unit of code that
+    can be imported or exported to other parts of the program, making the code more
+    modular and easy to maintain.
+
+
+    Modules in Node.js are organized in a CommonJS module system, which defines how
+    modules can be defined, loaded, and exported. Each module has its own scope, meaning
+    the variables and functions defined in a module are not visible outside of it
+    unless they are explicitly exported.
+
+
+    To use a module in a Node.js program, it is necessary to import it using the require()
+    function. For example, to use the fs module, which is used to perform file read
+    and write operations, simply use the following code:
+
+
+    ![](image_rsrcJN.jpg)
+
+
+    The require() function is a synchronous function that loads the specified module
+    and returns the object exported by it. It is possible to export values from a
+    module using the module.exports variable, which is a special property of the module
+    object. For example, to export a function in a module, simply do the following:
+
+
+    ![](image_rsrcJP.jpg)
+
+
+    To import the sayHello() function in another file, just use the require() and
+    access the sayHello property of the imported object:
+
+
+    ![](image_rsrcJR.jpg)
+
+
+    This way, modules in Node.js allow developers to organize and reuse code more
+    efficiently, making it easier to maintain and develop more complex applications.
+
+
+    # NPM e NPX
+
+
+    The Node.js package manager is NPM (Node Package Manager), which is used to install,
+    manage, and share software packages and modules written in JavaScript. It comes
+    included with Node.js and is used by developers around the world to manage their
+    project dependencies.
+
+
+    NPM allows you to install packages globally or locally to a specific project.
+    To install a package locally, simply navigate to the root directory of your project
+    and run the following command in the terminal:
+
+
+    ![](image_rsrcJS.jpg)
+
+
+    This will install the package in the node_modules directory of your project and
+    add an entry in the package.json file to track your project''s dependencies.
+
+
+    On the other hand, npx is a utility that was introduced in NPM from version 5.2.0\.
+    It allows you to run packages directly without having to install them globally
+    on your system or locally in the project.
+
+
+    npx downloads the requested package and runs it immediately, instead of installing
+    it permanently in your system or project. This is useful when you need to run
+    a package only once or when you want to test a package without installing it permanently.
+
+
+    For example, if you want to run a script in the create-react-app package using
+    npx, simply type the following command:
+
+
+    ![](image_rsrcJT.jpg)
+
+
+    This will download and execute the create-react-app package with the argument
+    my-app, creating a new React application in the my-app directory.
+
+
+    In summary, NPM is used to manage the dependencies of your project, while npx
+    is used to execute packages without installing them globally or locally. Both
+    are useful tools for JavaScript development.
+
+
+    # First Steps in JavaScript
+
+
+    First, create a folder to develop your Node.js project and then launch VS Code.
+    In the editor, click on File > Open Folder and open the folder you just created.
+    In the example, the folder I created is called ProjetoNode.
+
+
+    On the left, click New File and then name it helloworld.js. In this file, add
+    the following code:
+
+
+    console.log("Hello World")
+
+
+    Then, click Terminal > New Terminal to open a new terminal instance within VS
+    Code, and enter the following command:
+
+
+    node helloworld.js
+
+
+    If everything goes well, the following sentence will appear in the terminal: Hello
+    World.
+
+
+    # Advantages of Node.js
+
+
+    One of the major advantages of Node.js is the ease of developing server-side applications.
+    To see this in action, create a new file in VS Code called server.js and insert
+    the following code lines:
+
+
+    ![](image_rsrcJU.jpg)
+
+
+    So, in the terminal, run the following command:
+
+
+    node server.js
+
+
+    You are now running an HTTP server in Node.js that will listen for requests on
+    port 8080\. To access the local server, simply go to the following link http://localhost:8080
+    in your browser.
+
+
+    # Storing Values in JavaScript
+
+
+    In JavaScript, variables are used to store values that can be used in different
+    parts of a program. To declare a variable in JavaScript, you can use the keywords
+    var, let, or const, followed by the variable name:
+
+
+    ![](image_rsrcJV.jpg)'
+  toc: []
+  trans: '
+
+
+    ![](img/image_rsrcJJ.jpg)
+
+
+    JavaScript（Node.js）入门指南
+
+
+    Ruhan Avila da Conceição
+
+
+    # 摘要
+
+
+    摘要
+
+    本书说明
+
+    JavaScript 简史
+
+    准备编程环境
+
+    JavaScript 中的模块
+
+    NPM 与 NPX
+
+    JavaScript 入门
+
+    Node.js 的优势
+
+    JavaScript 中的值存储
+
+    JavaScript 中的数据类型
+
+    JavaScript 中的数学运算
+
+    JavaScript 中的字符串
+
+    控制结构
+
+    函数
+
+    JavaScript 中的数组
+
+    JavaScript 中的对象
+
+    JavaScript 中的函数式编程
+
+    短路求值
+
+    关于作者
+
+
+    # 本书说明
+
+
+    本书在编写过程中使用了 ChatGPT 作为辅助工具。所有由该工具生成的内容均经过作者仔细审阅并妥善整理。需要强调的是，只要始终关注所生成内容的质量、真实性和正确性，使用智能工具进行文本创作是值得提倡的。
+
+
+    # JavaScript 简史
+
+
+    JavaScript 是一种高级编程语言，由当时任职于 Netscape 的工程师 Brendan Eich 于 1995 年创建。最初的想法是创建一种能够在浏览器中执行的编程语言，使开发者能够为网页添加交互性和动态效果。
+
+
+    JavaScript 的第一个版本于 1995 年 9 月随 Netscape Navigator 2.0 浏览器一同发布。该语言很快被其他浏览器（如微软的
+    Internet Explorer）采用，并成为创建动态网页的主要技术之一。
+
+
+    多年来，JavaScript 不断演进，成为一门功能日益强大的语言，能够在浏览器和服务器端执行复杂任务。2009 年，Ryan Dahl 创建了 Node.js，这是一个允许开发者在服务器上运行
+    JavaScript 代码的平台，为该语言开辟了大量新的可能性。
+
+
+    如今，JavaScript 是世界上最流行的编程语言之一，广泛应用于 Web 应用、移动应用、游戏及其他领域。该语言仍在持续发展，其规范中定期添加新的特性和功能。
+
+
+    # 准备编程环境
+
+
+    ## 安装 Node.js
+
+
+    要安装 Node.js，首先访问网站 https://nodejs.org/ 并下载 LTS（长期支持）版本。
+
+
+    下图展示了 Node.js 页面的截图，箭头指示了下载 LTS 版本需要选择的选项。
+
+
+    下载完成后，Node.js 的安装过程与其他应用程序非常相似，没有什么特别之处（:）
+
+
+    ![](img/image_rsrcJK.jpg)
+
+
+    ## 安装 Visual Studio Code
+
+
+    作为源代码编辑器，我推荐 Visual Studio Code（VS Code），因为它跨平台、免费且可扩展。
+
+
+    要下载此编辑器，请访问 https://code.visualstudio.com/ 并按下图所示点击按钮。
+
+
+    与 Node.js 类似，VS Code 的安装过程不需要任何超出常规安装新程序的知识。
+
+
+    ![](img/image_rsrcJM.jpg)
+
+
+    # JavaScript 中的模块
+
+
+    在 Node.js 中，模块是包含 JavaScript 代码的文件，这些代码可以在程序的不同部分重复使用。每个模块都是一个独立的代码单元，可以导入或导出到程序的其他部分，从而使代码更加模块化且易于维护。
+
+
+    Node.js 中的模块采用 CommonJS 模块系统进行组织，该系统定义了模块的定义、加载和导出方式。每个模块都有自己的作用域，这意味着在模块中定义的变量和函数除非被显式导出，否则在模块外部不可见。
+
+
+    要在 Node.js 程序中使用模块，需要使用 `require()` 函数将其导入。例如，要使用用于执行文件读写操作的 `fs` 模块，只需使用以下代码：
+
+
+    ![](img/image_rsrcJN.jpg)
+
+
+    `require()` 函数是一个同步函数，它加载指定的模块并返回该模块导出的对象。可以使用 `module.exports` 变量从模块中导出值，该变量是模块对象的一个特殊属性。例如，要在模块中导出一个函数，只需执行以下操作：
+
+
+    ![](img/image_rsrcJP.jpg)
+
+
+    要在另一个文件中导入 `sayHello()` 函数，只需使用 `require()` 并访问导入对象的 `sayHello` 属性：
+
+
+    ![](img/image_rsrcJR.jpg)
+
+
+    这样，Node.js 中的模块使开发者能够更高效地组织和重用代码，从而更容易维护和开发更复杂的应用程序。
+
+
+    # NPM 与 NPX
+
+
+    Node.js 的包管理器是 NPM（Node Package Manager），用于安装、管理和共享用 JavaScript 编写的软件包和模块。它随 Node.js
+    一起提供，被世界各地的开发者用来管理项目依赖。
+
+
+    NPM 允许全局安装包，也可以针对特定项目进行本地安装。要本地安装一个包，只需导航到项目的根目录，并在终端中运行以下命令：
+
+
+    ![](img/image_rsrcJS.jpg)
+
+
+    这会将包安装到项目的 `node_modules` 目录中，并在 `package.json` 文件中添加一条记录以跟踪项目的依赖关系。
+
+
+    另一方面，`npx` 是一个从 NPM 5.2.0 版本开始引入的实用工具。它允许直接运行包，而无需在系统上全局安装或在项目中本地安装。
+
+
+    `npx` 会下载请求的包并立即运行，而不是永久安装到系统或项目中。当你只需要运行一次某个包，或者想在不永久安装的情况下测试一个包时，这非常有用。
+
+
+    例如，如果你想使用 `npx` 运行 `create-react-app` 包中的脚本，只需输入以下命令：
+
+
+    ![](img/image_rsrcJT.jpg)
+
+
+    这会下载并执行 `create-react-app` 包，参数为 `my-app`，从而在 `my-app` 目录中创建一个新的 React 应用程序。
+
+
+    总之，NPM 用于管理项目的依赖关系，而 `npx` 用于执行包而不进行全局或本地安装。两者都是 JavaScript 开发中有用的工具。
+
+
+    # JavaScript 入门
+
+
+    首先，创建一个文件夹来开发你的 Node.js 项目，然后启动 VS Code。在编辑器中，点击 File > Open Folder，然后打开你刚刚创建的文件夹。在示例中，我创建的文件夹名为
+    `ProjetoNode`。
+
+
+    在左侧，点击 New File，然后将其命名为 `helloworld.js`。在该文件中，添加以下代码：
+
+
+    ```
+
+    console.log("Hello World")
+
+    ```
+
+
+    然后，点击 Terminal > New Terminal 在 VS Code 中打开一个新的终端实例，并输入以下命令：
+
+
+    ```
+
+    node helloworld.js
+
+    ```
+
+
+    如果一切顺利，终端中将显示以下句子：Hello World。
+
+
+    # Node.js 的优势
+
+
+    Node.js 的一大优势是开发服务器端应用程序的便捷性。要实际体验这一点，请在 VS Code 中创建一个名为 `server.js` 的新文件，并插入以下代码行：
+
+
+    ![](img/image_rsrcJU.jpg)
+
+
+    然后，在终端中运行以下命令：
+
+
+    ```
+
+    node server.js
+
+    ```
+
+
+    现在，你正在 Node.js 中运行一个 HTTP 服务器，它将监听 8080 端口的请求。要访问本地服务器，只需在浏览器中打开以下链接 http://localhost:8080。
+
+
+    # JavaScript 中的值存储
+
+
+    在 JavaScript 中，变量用于存储可以在程序不同部分使用的值。要声明 JavaScript 中的变量，可以使用关键字 `var`、`let` 或 `const`，后跟变量名：
+
+
+    ![](img/image_rsrcJV.jpg)
+
+
+    '
+- fmt: '
+
+    The `var` keyword was the old way of declaring variables in JavaScript, but it
+    is still supported in newer versions of the language. Variables declared with
+    `var` have function or global scope.
+
+
+    The `let` keyword is used to declare variables with block scope, which means they
+    can only be accessed within the block they were declared in.
+
+
+    The `const` keyword is used to declare constants, which are values that cannot
+    be changed after they are assigned.
+
+
+    It is important to remember that in JavaScript, variables are dynamically typed,
+    which means you do not need to declare the variable type beforehand. The variable
+    type is automatically defined during program execution, based on the value assigned
+    to the variable.
+
+
+    # Data Types in JavaScript
+
+
+    In JavaScript, there are six primitive data types:
+
+
+    number: represents numbers, including integers and floating point numbers. For
+    example, 10, 3.14, -5.
+
+
+    string: represents a sequence of characters. It can be delimited by single or
+    double quotes. For example, `"Hello, world!"`, `''JavaScript''`.
+
+
+    boolean: represents a logical value `true` or `false`.
+
+
+    `null`: represents a null value, i.e., absence of value.
+
+
+    `undefined`: represents a variable that has been declared but not yet assigned
+    a value.
+
+
+    symbol: represents a unique and immutable value that can be used as an identifier
+    for object properties.
+
+
+    In addition to these six primitive types, in JavaScript, there are also two complex
+    data types:
+
+
+    object: represents a collection of key-value pairs. Objects in JavaScript can
+    contain properties and methods. For example, `{ name: ''John'', age: 25 }`.
+
+
+    function: is a special type of object that can be called and can have properties
+    and methods associated with it. Functions in JavaScript are used to define blocks
+    of code that can be called anywhere in the program.
+
+
+    It is important to remember that in JavaScript, variables are dynamically typed,
+    which means that the type of the variable is automatically defined during program
+    execution, based on the value assigned to the variable. Additionally, variables
+    can change type during program execution. For example, a variable that contains
+    a number can be later assigned with a string.
+
+
+    # Mathematics in JavaScript
+
+
+    JavaScript supports a wide variety of mathematical operations, including basic
+    arithmetic operations such as addition, subtraction, multiplication, and division.
+    Additionally, it is also possible to perform more complex operations such as trigonometric,
+    exponential, and logarithmic calculations.
+
+
+    Here are some examples of mathematical operations in JavaScript:
+
+
+    ![](image_rsrcJW.jpg)
+
+
+    In addition, JavaScript also provides a variety of predefined mathematical functions
+    in the `Math` object. These functions include, among others, `Math.floor()` for
+    rounding down, `Math.ceil()` for rounding up, and `Math.random()` for generating
+    a random number between 0 and 1.
+
+
+    ![](image_rsrcJX.jpg)
+
+
+    These are just a few examples of the many mathematical operations that can be
+    performed in JavaScript.
+
+
+    # Strings in JavaScript
+
+
+    In JavaScript, a string is a sequence of characters, such as `"Hello, world!"`.
+    Strings are one of the primitive data types in JavaScript and are created using
+    single or double quotes.
+
+
+    Here''s an example of a string in JavaScript:
+
+
+    ![](image_rsrcJY.jpg)
+
+
+    ## Representation of Strings
+
+
+    In JavaScript, there are two main ways to represent strings: with double quotes
+    and with single quotes. Both forms are equivalent and you can choose which one
+    to use according to your personal preferences or the conventions adopted by the
+    project or team.
+
+
+    For example, the following lines of code create a string with double quotes and
+    a string with single quotes:
+
+
+    ![](image_rsrcJZ.jpg)
+
+
+    Additionally, you can use the escape character `\` to insert special characters
+    into a string, such as single or double quotes, backslashes, new lines, and others.
+    For example:
+
+
+    ![](image_rsrcK0.jpg)
+
+
+    Another way to represent strings in JavaScript is by using the backtick (`), which
+    is known as a template string. Template strings allow for the incorporation of
+    JavaScript expressions in a string using the syntax `${expression}`. For example:
+
+
+    ![](image_rsrcK1.jpg)
+
+
+    In this case, the variable `fullName` contains the string `"John Sullivan"`, which
+    is composed by concatenating the variables `firstName` and `lastName` using the
+    template string syntax.
+
+
+    In summary, in JavaScript, you can represent strings with single quotes, double
+    quotes or template strings, and you can use the escape character to insert special
+    characters in a string.
+
+
+    ## Operations with Strings
+
+
+    In JavaScript, it is possible to perform several operations on strings. Some of
+    these operations include:
+
+
+    Concatenation: the operation of joining two or more strings into a single string.
+    This is done using the addition operator (`+`) or the `concat()` method. Here
+    is an example:
+
+
+    ![](image_rsrcK2.jpg)
+
+
+    Length: the operation of counting the number of characters in a string. This is
+    done using the `length` property. Here is an example:
+
+
+    ![](image_rsrcK3.jpg)
+
+
+    Access to individual characters: it is possible to access individual characters
+    in a string using brackets (`[]`). Here is an example:
+
+
+    ![](image_rsrcK4.jpg)
+
+
+    Character substitution: it is possible to substitute characters in a string using
+    the `replace()` method. Here is an example:
+
+
+    ![](image_rsrcK5.jpg)
+
+
+    These are just a few of the operations that can be performed on strings in JavaScript.
+    There are many others, including string comparison, conversion to uppercase and
+    lowercase letters, and much more.
+
+
+    # Control Structures
+
+
+    ## Conditional - IF/Else
+
+
+    `if/else` is one of the most commonly used control structures in JavaScript. It
+    is used to execute different blocks of code based on a condition.
+
+
+    The basic syntax of `if/else` is as follows:
+
+
+    ![](image_rsrcK6.jpg)
+
+
+    The `condition` is an expression that returns a boolean value (`true` or `false`).
+    If the `condition` is `true`, the code block inside the first set of curly braces
+    will be executed. If the `condition` is `false`, the code block inside the second
+    set of curly braces will be executed.
+
+
+    Additionally, it is possible to chain multiple `if/else` structures using the
+    `else if` keyword. Here is an example:
+
+
+    ![](image_rsrcK7.jpg)
+
+
+    In this case, the first condition to be evaluated is `condition1`. If it is `true`,
+    the first code block will be executed and the rest will be ignored. Otherwise,
+    `condition2` will be evaluated and so on.
+
+
+    `if/else` is a very useful control structure in JavaScript, allowing you to create
+    complex logic in your programs.
+
+
+    ## Inline Conditional - IF/Else Inline
+
+
+    The inline `if` in JavaScript is a way to write a conditional statement in a single
+    line of code. Instead of using the conventional syntax of an `if` block with curly
+    braces and an optional `else` statement, you can use the ternary operator to create
+    a more compact statement.
+
+
+    The basic syntax of the inline `if` is as follows:
+
+
+    ![](image_rsrcK8.jpg)
+
+
+    In this example, the `condition` is evaluated first. If it is `true`, the `true`
+    expression is returned. Otherwise, the `false` expression is returned.
+
+
+    Here''s a practical example:
+
+
+    ![](image_rsrcK9.jpg)
+
+
+    In this example, the condition evaluates if the `age` is greater than or equal
+    to 18. If it''s `true`, the variable `status` is set to `"adult"`. Otherwise,
+    the variable `status` is set to `"minor"`.
+
+
+    The inline `if` is a convenient and readable way to write simple conditional statements
+    in JavaScript, especially when you need more concise code. However, for more complex
+    statements or multiple conditions, using the conventional `if` syntax may be more
+    appropriate.
+
+
+    ## Looping Structures
+
+
+    The looping structures in JavaScript allow a block of code to be executed multiple
+    times based on a certain condition. The two main looping structures are `while`
+    and `for`.
+
+
+    `while` is a looping structure that executes a block of code while a specific
+    condition is `true`. The basic syntax of `while` is as follows:
+
+
+    ![](image_rsrcKA.jpg)
+
+    '
+  raw: 'The var keyword was the old way of declaring variables in JavaScript, but
+    it is still supported in newer versions of the language. Variables declared with
+    var have function or global scope.
+
+
+    The let keyword is used to declare variables with block scope, which means they
+    can only be accessed within the block they were declared in.
+
+
+    The const keyword is used to declare constants, which are values that cannot be
+    changed after they are assigned.
+
+
+    It is important to remember that in JavaScript, variables are dynamically typed,
+    which means you do not need to declare the variable type beforehand. The variable
+    type is automatically defined during program execution, based on the value assigned
+    to the variable.
+
+
+    # Data Types in JavaScript
+
+
+    In JavaScript, there are six primitive data types:
+
+
+    number: represents numbers, including integers and floating point numbers. For
+    example, 10, 3.14, -5.
+
+
+    string: represents a sequence of characters. It can be delimited by single or
+    double quotes. For example, "Hello, world!", ''JavaScript''.
+
+
+    boolean: represents a logical value true or false.
+
+
+    null: represents a null value, i.e., absence of value.
+
+
+    undefined: represents a variable that has been declared but not yet assigned a
+    value.
+
+
+    symbol: represents a unique and immutable value that can be used as an identifier
+    for object properties.
+
+
+    In addition to these six primitive types, in JavaScript, there are also two complex
+    data types:
+
+
+    object: represents a collection of key-value pairs. Objects in JavaScript can
+    contain properties and methods. For example, { name: ''John'', age: 25 }.
+
+
+    function: is a special type of object that can be called and can have properties
+    and methods associated with it. Functions in JavaScript are used to define blocks
+    of code that can be called anywhere in the program.
+
+
+    It is important to remember that in JavaScript, variables are dynamically typed,
+    which means that the type of the variable is automatically defined during program
+    execution, based on the value assigned to the variable. Additionally, variables
+    can change type during program execution. For example, a variable that contains
+    a number can be later assigned with a string.
+
+
+    # Mathematics in JavaScript
+
+
+    JavaScript supports a wide variety of mathematical operations, including basic
+    arithmetic operations such as addition, subtraction, multiplication, and division.
+    Additionally, it is also possible to perform more complex operations such as trigonometric,
+    exponential, and logarithmic calculations.
+
+
+    Here are some examples of mathematical operations in JavaScript:
+
+
+    ![](image_rsrcJW.jpg)
+
+
+    In addition, JavaScript also provides a variety of predefined mathematical functions
+    in the Math object. These functions include, among others, Math.floor() for rounding
+    down, Math.ceil() for rounding up, and Math.random() for generating a random number
+    between 0 and 1.
+
+
+    ![](image_rsrcJX.jpg)
+
+
+    These are just a few examples of the many mathematical operations that can be
+    performed in JavaScript.
+
+
+    # Strings in JavaScript
+
+
+    In JavaScript, a string is a sequence of characters, such as "Hello, world!".
+    Strings are one of the primitive data types in JavaScript and are created using
+    single or double quotes.
+
+
+    Here''s an example of a string in JavaScript:
+
+
+    ![](image_rsrcJY.jpg)
+
+
+    Representation of Strings
+
+
+    In JavaScript, there are two main ways to represent strings: with double quotes
+    and with single quotes. Both forms are equivalent and you can choose which one
+    to use according to your personal preferences or the conventions adopted by the
+    project or team.
+
+
+    For example, the following lines of code create a string with double quotes and
+    a string with single quotes:
+
+
+    ![](image_rsrcJZ.jpg)
+
+
+    Additionally, you can use the escape character \ to insert special characters
+    into a string, such as single or double quotes, backslashes, new lines, and others.
+    For example:
+
+
+    ![](image_rsrcK0.jpg)
+
+
+    Another way to represent strings in JavaScript is by using the backtick (`), which
+    is known as a template string. Template strings allow for the incorporation of
+    JavaScript expressions in a string using the syntax ${expression}. For example:
+
+
+    ![](image_rsrcK1.jpg)
+
+
+    In this case, the variable fullName contains the string "John Sullivan", which
+    is composed by concatenating the variables firstName and lastName using the template
+    string syntax.
+
+
+    In summary, in JavaScript, you can represent strings with single quotes, double
+    quotes or template strings, and you can use the escape character to insert special
+    characters in a string.
+
+
+    Operations with Strings
+
+
+    In JavaScript, it is possible to perform several operations on strings. Some of
+    these operations include:
+
+
+    Concatenation: the operation of joining two or more strings into a single string.
+    This is done using the addition operator (+) or the concat() method. Here is an
+    example:
+
+
+    ![](image_rsrcK2.jpg)
+
+
+    Length: the operation of counting the number of characters in a string. This is
+    done using the length property. Here is an example:
+
+
+    ![](image_rsrcK3.jpg)
+
+
+    Access to individual characters: it is possible to access individual characters
+    in a string using brackets ([]). Here is an example:
+
+
+    ![](image_rsrcK4.jpg)
+
+
+    Character substitution: it is possible to substitute characters in a string using
+    the replace() method. Here is an example:
+
+
+    ![](image_rsrcK5.jpg)
+
+
+    These are just a few of the operations that can be performed on strings in JavaScript.
+    There are many others, including string comparison, conversion to uppercase and
+    lowercase letters, and much more.
+
+
+    # Control Structures
+
+
+    Conditional - IF/Else
+
+
+    "If/else" is one of the most commonly used control structures in JavaScript. It
+    is used to execute different blocks of code based on a condition.
+
+
+    The basic syntax of "if/else" is as follows:
+
+
+    ![](image_rsrcK6.jpg)
+
+
+    The condition is an expression that returns a boolean value (true or false). If
+    the condition is true, the code block inside the first set of curly braces will
+    be executed. If the condition is false, the code block inside the second set of
+    curly braces will be executed.
+
+
+    Additionally, it is possible to chain multiple "if/else" structures using the
+    "else if" keyword. Here is an example:
+
+
+    ![](image_rsrcK7.jpg)
+
+
+    In this case, the first condition to be evaluated is "condition1". If it is true,
+    the first code block will be executed and the rest will be ignored. Otherwise,
+    "condition2" will be evaluated and so on.
+
+
+    "If/else" is a very useful control structure in JavaScript, allowing you to create
+    complex logic in your programs.
+
+
+    Inline Conditional - IF/Else Inline
+
+
+    The inline "if" in JavaScript is a way to write a conditional statement in a single
+    line of code. Instead of using the conventional syntax of an "if" block with curly
+    braces and an optional "else" statement, you can use the ternary operator to create
+    a more compact statement.
+
+
+    The basic syntax of the inline "if" is as follows:
+
+
+    ![](image_rsrcK8.jpg)
+
+
+    In this example, the "condition" is evaluated first. If it is true, the "true
+    expression" is returned. Otherwise, the "false expression" is returned.
+
+
+    Here''s a practical example:
+
+
+    ![](image_rsrcK9.jpg)
+
+
+    In this example, the condition evaluates if the age is greater than or equal to
+    18\. If it''s true, the variable status is set to "adult". Otherwise, the variable
+    status is set to "minor".
+
+
+    The inline "if" is a convenient and readable way to write simple conditional statements
+    in JavaScript, especially when you need more concise code. However, for more complex
+    statements or multiple conditions, using the conventional "if" syntax may be more
+    appropriate.
+
+
+    Looping Structures
+
+
+    The looping structures in JavaScript allow a block of code to be executed multiple
+    times based on a certain condition. The two main looping structures are "while"
+    and "for".
+
+
+    While is a looping structure that executes a block of code while a specific condition
+    is true. The basic syntax of "while" is as follows:
+
+
+    ![](image_rsrcKA.jpg)'
+  toc: []
+  trans: '
+
+
+    `var` 关键字是 JavaScript 中声明变量的旧方式，但在该语言的新版本中仍然支持。使用 `var` 声明的变量具有函数作用域或全局作用域。
+
+
+    `let` 关键字用于声明具有块级作用域的变量，这意味着它们只能在声明它们的块内被访问。
+
+
+    `const` 关键字用于声明常量，即赋值后无法更改的值。
+
+
+    需要记住的是，在 JavaScript 中，变量是动态类型的，这意味着你无需事先声明变量类型。变量类型会在程序执行过程中根据赋给变量的值自动定义。
+
+
+    # JavaScript 中的数据类型
+
+
+    在 JavaScript 中，有六种原始数据类型：
+
+
+    number：表示数字，包括整数和浮点数。例如，10、3.14、-5。
+
+
+    string：表示字符序列。可以用单引号或双引号界定。例如，`"Hello, world!"`、`''JavaScript''`。
+
+
+    boolean：表示逻辑值 `true` 或 `false`。
+
+
+    `null`：表示空值，即没有值。
+
+
+    `undefined`：表示已声明但尚未赋值的变量。
+
+
+    symbol：表示唯一且不可变的值，可用作对象属性的标识符。
+
+
+    除了这六种原始类型，JavaScript 中还有两种复杂数据类型：
+
+
+    object：表示键值对的集合。JavaScript 中的对象可以包含属性和方法。例如，`{ name: ''John'', age: 25 }`。
+
+
+    function：是一种特殊类型的对象，可以被调用，并且可以拥有与之关联的属性和方法。JavaScript 中的函数用于定义可在程序任何位置调用的代码块。
+
+
+    需要记住的是，在 JavaScript 中，变量是动态类型的，这意味着变量类型会在程序执行过程中根据赋给变量的值自动定义。此外，变量在程序执行过程中可以改变类型。例如，一个包含数字的变量稍后可以被赋值为字符串。
+
+
+    # JavaScript 中的数学运算
+
+
+    JavaScript 支持多种数学运算，包括基本的算术运算，如加法、减法、乘法和除法。此外，还可以执行更复杂的运算，如三角函数、指数和对数计算。
+
+
+    以下是 JavaScript 中数学运算的一些示例：
+
+
+    ![](img/image_rsrcJW.jpg)
+
+
+    此外，JavaScript 还在 `Math` 对象中提供了多种预定义的数学函数。这些函数包括 `Math.floor()`（向下取整）、`Math.ceil()`（向上取整）以及
+    `Math.random()`（生成 0 到 1 之间的随机数）等。
+
+
+    ![](img/image_rsrcJX.jpg)
+
+
+    这些只是 JavaScript 中可执行的众多数学运算中的几个例子。
+
+
+    # JavaScript 中的字符串
+
+
+    在 JavaScript 中，字符串是一个字符序列，例如 `"Hello, world!"`。字符串是 JavaScript 中的原始数据类型之一，使用单引号或双引号创建。
+
+
+    以下是 JavaScript 中字符串的一个示例：
+
+
+    ![](img/image_rsrcJY.jpg)
+
+
+    ## 字符串的表示
+
+
+    在 JavaScript 中，有两种主要的字符串表示方式：双引号和单引号。两种形式是等价的，你可以根据个人偏好或项目/团队采用的约定来选择使用哪一种。
+
+
+    例如，以下代码行分别创建了一个双引号字符串和一个单引号字符串：
+
+
+    ![](img/image_rsrcJZ.jpg)
+
+
+    此外，你可以使用转义字符 `\` 在字符串中插入特殊字符，例如单引号、双引号、反斜杠、换行符等。例如：
+
+
+    ![](img/image_rsrcK0.jpg)
+
+
+    在 JavaScript 中表示字符串的另一种方式是使用反引号（`），这被称为模板字符串。模板字符串允许使用 `${expression}` 语法在字符串中嵌入
+    JavaScript 表达式。例如：
+
+
+    ![](img/image_rsrcK1.jpg)
+
+
+    在这个例子中，变量 `fullName` 包含字符串 `"John Sullivan"`，它是通过模板字符串语法连接变量 `firstName` 和 `lastName`
+    组成的。
+
+
+    总之，在 JavaScript 中，你可以使用单引号、双引号或模板字符串来表示字符串，并且可以使用转义字符在字符串中插入特殊字符。
+
+
+    ## 字符串的操作
+
+
+    在 JavaScript 中，可以对字符串执行多种操作。其中一些操作包括：
+
+
+    连接：将两个或多个字符串合并为一个字符串的操作。这通过加法运算符（`+`）或 `concat()` 方法完成。示例如下：
+
+
+    ![](img/image_rsrcK2.jpg)
+
+
+    长度：计算字符串中字符数量的操作。这通过 `length` 属性完成。示例如下：
+
+
+    ![](img/image_rsrcK3.jpg)
+
+
+    访问单个字符：可以使用方括号（`[]`）访问字符串中的单个字符。示例如下：
+
+
+    ![](img/image_rsrcK4.jpg)
+
+
+    字符替换：可以使用 `replace()` 方法替换字符串中的字符。示例如下：
+
+
+    ![](img/image_rsrcK5.jpg)
+
+
+    这些只是 JavaScript 中可对字符串执行的几个操作。还有许多其他操作，包括字符串比较、大小写转换等等。
+
+
+    # 控制结构
+
+
+    ## 条件语句 - IF/Else
+
+
+    `if/else` 是 JavaScript 中最常用的控制结构之一。它用于根据条件执行不同的代码块。
+
+
+    `if/else` 的基本语法如下：
+
+
+    ![](img/image_rsrcK6.jpg)
+
+
+    `condition` 是一个返回布尔值（`true` 或 `false`）的表达式。如果 `condition` 为 `true`，则执行第一组花括号内的代码块。如果
+    `condition` 为 `false`，则执行第二组花括号内的代码块。
+
+
+    此外，可以使用 `else if` 关键字链式连接多个 `if/else` 结构。示例如下：
+
+
+    ![](img/image_rsrcK7.jpg)
+
+
+    在这种情况下，首先评估的是 `condition1`。如果它为 `true`，则执行第一个代码块，其余部分被忽略。否则，评估 `condition2`，以此类推。
+
+
+    `if/else` 是 JavaScript 中非常有用的控制结构，允许你在程序中创建复杂的逻辑。
+
+
+    ## 内联条件语句 - IF/Else 内联
+
+
+    JavaScript 中的内联 `if` 是一种在一行代码中编写条件语句的方式。你可以使用三元运算符来创建更紧凑的语句，而不是使用带有花括号和可选 `else`
+    语句的传统 `if` 块语法。
+
+
+    内联 `if` 的基本语法如下：
+
+
+    ![](img/image_rsrcK8.jpg)
+
+
+    在这个例子中，首先评估 `condition`。如果它为 `true`，则返回 `true` 表达式。否则，返回 `false` 表达式。
+
+
+    以下是一个实际示例：
+
+
+    ![](img/image_rsrcK9.jpg)
+
+
+    在这个例子中，条件评估 `age` 是否大于或等于 18。如果为 `true`，则变量 `status` 被设置为 `"adult"`。否则，变量 `status`
+    被设置为 `"minor"`。
+
+
+    内联 `if` 是在 JavaScript 中编写简单条件语句的一种便捷且可读的方式，尤其是在需要更简洁的代码时。然而，对于更复杂的语句或多个条件，使用传统的
+    `if` 语法可能更合适。
+
+
+    ## 循环结构
+
+
+    JavaScript 中的循环结构允许根据特定条件多次执行代码块。两种主要的循环结构是 `while` 和 `for`。
+
+
+    `while` 是一种循环结构，它在特定条件为 `true` 时执行代码块。`while` 的基本语法如下：
+
+
+    ![](img/image_rsrcKA.jpg)
+
+
+    '
+- fmt: '
+
+    In this example, the block of code will be executed while the condition is true.
+    The condition is checked at the beginning of each loop iteration.
+
+
+    On the other hand, `for` is another looping structure that executes a block of
+    code several times based on a fixed number of iterations. The basic syntax of
+    `for` is as follows:
+
+
+    ![](image_rsrcKB.jpg)
+
+
+    In this example, the initialization is executed before the first loop iteration.
+    The condition is checked before each loop iteration and, if it is true, the block
+    of code is executed. After each loop iteration, the final expression is executed.
+
+
+    In addition, JavaScript also has the `do/while` structure, which is similar to
+    `while`, but checks the condition at the end of each loop iteration instead of
+    at the beginning. The basic syntax of `do/while` is as follows:
+
+
+    ![](image_rsrcKC.jpg)
+
+
+    Finally, JavaScript has the `break` statement, which allows you to exit a loop
+    prematurely, and the `continue` statement, which allows you to skip to the next
+    iteration of the loop. These statements are useful for controlling the flow of
+    execution within the loop.
+
+
+    # Functions
+
+
+    In JavaScript, functions are first-class objects, which means they can be treated
+    like any other object. Functions can be stored in variables, passed as arguments
+    to other functions, returned as values from other functions, and more. Here is
+    a simple example of how to create a function in JavaScript:
+
+
+    ![](image_rsrcKD.jpg)
+
+
+    In this example, the function `sum` takes two arguments, `a` and `b`, and returns
+    their sum.
+
+
+    It is also possible to create anonymous functions in JavaScript, which are nameless
+    functions that are stored in variables or passed as arguments to other functions.
+    Here is an example:
+
+
+    ![](image_rsrcKE.jpg)
+
+
+    In this example, the anonymous function is stored in a variable called `sum`.
+
+
+    Functions in JavaScript can also be defined using arrow function expressions.
+    Arrow functions were introduced in ECMAScript 6 and are a more concise way to
+    create functions in JavaScript. Here is an example:
+
+
+    ![](image_rsrcKF.jpg)
+
+
+    In this example, the arrow function takes two arguments, `a` and `b`, and returns
+    their sum.
+
+
+    Functions in JavaScript can also have default arguments, which are used when no
+    value is provided for that argument. Here is an example:
+
+
+    ![](image_rsrcKG.jpg)
+
+
+    # Arrays in JavaScript
+
+
+    In JavaScript, an array is a collection of values that can be accessed through
+    a numeric index. Arrays are one of the primitive data types in JavaScript and
+    can contain any type of data, including other arrays.
+
+
+    Here is an example of how to create an array in JavaScript:
+
+
+    ![](image_rsrcKH.jpg)
+
+
+    In this example, `numbers` is an array of numbers that contains the values 1,
+    2, 3, 4, and 5. The elements of an array can be accessed using brackets (`[]`).
+    The index of the first element of an array is 0. Here is an example:
+
+
+    ![](image_rsrcKJ.jpg)
+
+
+    Arrays in JavaScript also have several methods that can be used to perform operations
+    on their elements. Here are some examples:
+
+
+    `push()`: adds one or more elements to the end of the array. Here''s an example:
+
+
+    ![](image_rsrcKK.jpg)
+
+
+    `pop()`: removes the last element of the array and returns that element. Here''s
+    an example:
+
+
+    ![](image_rsrcKM.jpg)
+
+
+    `slice()`: returns a copy of a portion of the array. Here''s an example:
+
+
+    ![](image_rsrcKN.jpg)
+
+
+    `join()`: returns all elements of an array in a single string.
+
+
+    ![](image_rsrcKP.jpg)
+
+
+    These are just a few examples of the methods available in arrays in JavaScript.
+    There are many others, including `shift()`, `unshift()`, `splice()`, `concat()`,
+    `reverse()`, `sort()`, among others.
+
+
+    ## Multidimensional Arrays
+
+
+    A multidimensional array in JavaScript is an array that contains other arrays.
+    It is a way to store data in multiple dimensions, allowing you to create complex
+    data structures.
+
+
+    To create a multidimensional array, you need to create an array inside another
+    array. For example, to create a 2x3 array (two rows and three columns), you can
+    use the following syntax:
+
+
+    ![](image_rsrcKR.jpg)
+
+
+    In this example, `matrix` is a multidimensional array that contains two nested
+    arrays, each with three values.
+
+
+    You can access the values of a multidimensional array using the same syntax you
+    would use to access values in a one-dimensional array, but specifying the index
+    for each dimension. For example, to access the value 5 in the array `matrix`,
+    you can use the following line of code:
+
+
+    ![](image_rsrcKS.jpg)
+
+
+    In this case, `matrix[1]` returns the second nested array, and `matrix[1][1]`
+    returns the second value in the second nested array, which is 5.
+
+
+    You can also create multidimensional arrays with more than two dimensions by simply
+    nesting more arrays inside the array. However, arrays with more than two or three
+    dimensions can become difficult to work with and are generally avoided in JavaScript
+    programming.
+
+
+    # Objects in JavaScript
+
+
+    In JavaScript, an object is a collection of key-value pairs. Each key is a string
+    that identifies a value in the object. The value can be any type of JavaScript
+    data, including other objects.
+
+
+    To create an object in JavaScript, we can use the object literal syntax, which
+    consists of curly braces `{}` with key-value pairs separated by commas:
+
+
+    ![](image_rsrcKT.jpg)
+
+
+    In this example, `person` is an object that has three properties: `name`, `age`,
+    and `address`. The `address` property is another object with its own properties.
+    We can access the properties of an object using either dot notation or bracket
+    notation:
+
+
+    ![](image_rsrcKU.jpg)
+
+
+    We can also add, modify, and delete properties of an object using dot or bracket
+    notation:
+
+
+    ![](image_rsrcKV.jpg)
+
+
+    In addition, we can loop through the properties of an object using a `for...in`
+    loop:
+
+
+    ![](image_rsrcKW.jpg)
+
+
+    This loop will display all properties and their values in the `person` object.
+
+
+    In summary, objects are a fundamental part of JavaScript and are widely used in
+    programming to represent complex and structured data.
+
+
+    # Functional Programming in JavaScript
+
+
+    ## ForEach
+
+
+    The `forEach` function is one of the most useful functions for iterating through
+    arrays in JavaScript. The `forEach` function executes a callback function for
+    each element in the array, but it doesn''t return a new array. Instead, it simply
+    iterates through the array and executes the function on each element.
+
+
+    Here is a simple example:
+
+
+    ![](image_rsrcKX.jpg)
+
+
+    This code displays each element of the `numbers` array in the console.
+
+
+    The callback function that is passed to `forEach` receives three arguments: the
+    current element, the index of the element, and the array itself. For example:
+
+
+    ![](image_rsrcKY.jpg)
+
+
+    This code displays each element of the array, the index of the element, and the
+    array itself in the console.
+
+
+    The `forEach` function is useful for performing an action on each element of an
+    array. However, if you need to create a new array from the original array, it''s
+    better to use the `map`, `filter`, or `reduce` functions.
+
+
+    ## Map
+
+
+    The `map` function is used to create a new array with the result of applying a
+    function to each element of the original array. The `map` function does not modify
+    the original array, but returns a new array with the same number of elements.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcKZ.jpg)
+
+
+    In this example, the `map` function is used to create a new array `square` that
+    contains the square of each number in the `numeros` array.
+
+
+    The `map` function takes a callback function as an argument. This function is
+    called for each element of the array and should return the value to be added to
+    the new array. The callback function can have up to three arguments: the current
+    element, the index of the element, and the array itself. For example:
+
+
+    ![](image_rsrcM0.jpg)
+
+
+    In this example, the `map` function is used to create a new array `upperFruits`
+    that contains all the fruits from the `fruits` array in uppercase letters. The
+    callback function prints each fruit and its index before transforming the fruit
+    into uppercase and returning it.
+
+    '
+  raw: 'In this example, the block of code will be executed while the condition is
+    true. The condition is checked at the beginning of each loop iteration.
+
+
+    On the other hand, for is another looping structure that executes a block of code
+    several times based on a fixed number of iterations. The basic syntax of "for"
+    is as follows:
+
+
+    ![](image_rsrcKB.jpg)
+
+
+    In this example, the initialization is executed before the first loop iteration.
+    The condition is checked before each loop iteration and, if it is true, the block
+    of code is executed. After each loop iteration, the final expression is executed.
+
+
+    In addition, JavaScript also has the do/while structure, which is similar to "while",
+    but checks the condition at the end of each loop iteration instead of at the beginning.
+    The basic syntax of "do/while" is as follows:
+
+
+    ![](image_rsrcKC.jpg)
+
+
+    Finally, JavaScript has the break statement, which allows you to exit a loop prematurely,
+    and the continue statement, which allows you to skip to the next iteration of
+    the loop. These statements are useful for controlling the flow of execution within
+    the loop.
+
+
+    # Functions
+
+
+    In JavaScript, functions are first-class objects, which means they can be treated
+    like any other object. Functions can be stored in variables, passed as arguments
+    to other functions, returned as values from other functions, and more. Here is
+    a simple example of how to create a function in JavaScript:
+
+
+    ![](image_rsrcKD.jpg)
+
+
+    In this example, the function "sum" takes two arguments, a and b, and returns
+    their sum.
+
+
+    It is also possible to create anonymous functions in JavaScript, which are nameless
+    functions that are stored in variables or passed as arguments to other functions.
+    Here is an example:
+
+
+    ![](image_rsrcKE.jpg)
+
+
+    In this example, the anonymous function is stored in a variable called "sum".
+
+
+    Functions in JavaScript can also be defined using arrow function expressions.
+    Arrow functions were introduced in ECMAScript 6 and are a more concise way to
+    create functions in JavaScript. Here is an example:
+
+
+    ![](image_rsrcKF.jpg)
+
+
+    In this example, the arrow function takes two arguments, a and b, and returns
+    their sum.
+
+
+    Functions in JavaScript can also have default arguments, which are used when no
+    value is provided for that argument. Here is an example:
+
+
+    ![](image_rsrcKG.jpg)
+
+
+    # Arrays in JavaScript
+
+
+    In JavaScript, an array is a collection of values that can be accessed through
+    a numeric index. Arrays are one of the primitive data types in JavaScript and
+    can contain any type of data, including other arrays.
+
+
+    Here is an example of how to create an array in JavaScript:
+
+
+    ![](image_rsrcKH.jpg)
+
+
+    In this example, numbers is an array of numbers that contains the values 1, 2,
+    3, 4, and 5\. The elements of an array can be accessed using brackets ([]). The
+    index of the first element of an array is 0\. Here is an example:
+
+
+    ![](image_rsrcKJ.jpg)
+
+
+    Arrays in JavaScript also have several methods that can be used to perform operations
+    on their elements. Here are some examples:
+
+
+    push():adds one or more elements to the end of the array. Here''s an example:
+
+
+    ![](image_rsrcKK.jpg)
+
+
+    pop(): removes the last element of the array and returns that element. Here''s
+    an example:
+
+
+    ![](image_rsrcKM.jpg)
+
+
+    slice(): returns a copy of a portion of the array. Here''s an example:
+
+
+    ![](image_rsrcKN.jpg)
+
+
+    join(): returns all elements of an array in a single string
+
+
+    ![](image_rsrcKP.jpg)
+
+
+    These are just a few examples of the methods available in arrays in JavaScript.
+    There are many others, including shift(), unshift(), splice(), concat(), reverse(),
+    sort(), among others.
+
+
+    Multidimensional Arrays
+
+
+    A multidimensional array in JavaScript is an array that contains other arrays.
+    It is a way to store data in multiple dimensions, allowing you to create complex
+    data structures.
+
+
+    To create a multidimensional array, you need to create an array inside another
+    array. For example, to create a 2x3 array (two rows and three columns), you can
+    use the following syntax:
+
+
+    ![](image_rsrcKR.jpg)
+
+
+    In this example, matrix is a multidimensional array that contains two nested arrays,
+    each with three values.
+
+
+    You can access the values of a multidimensional array using the same syntax you
+    would use to access values in a one-dimensional array, but specifying the index
+    for each dimension. For example, to access the value 5 in the array matrix, you
+    can use the following line of code:
+
+
+    ![](image_rsrcKS.jpg)
+
+
+    In this case, matrix[1] returns the second nested array, and matrix[1][1] returns
+    the second value in the second nested array, which is 5.
+
+
+    You can also create multidimensional arrays with more than two dimensions by simply
+    nesting more arrays inside the array. However, arrays with more than two or three
+    dimensions can become difficult to work with and are generally avoided in JavaScript
+    programming.
+
+
+    # Objects in JavaScript
+
+
+    In JavaScript, an object is a collection of key-value pairs. Each key is a string
+    that identifies a value in the object. The value can be any type of JavaScript
+    data, including other objects.
+
+
+    To create an object in JavaScript, we can use the object literal syntax, which
+    consists of curly braces {} with key-value pairs separated by commas:
+
+
+    ![](image_rsrcKT.jpg)
+
+
+    In this example, person is an object that has three properties: name, age, and
+    address. The address property is another object with its own properties. We can
+    access the properties of an object using either dot notation or bracket notation:
+
+
+    ![](image_rsrcKU.jpg)
+
+
+    We can also add, modify, and delete properties of an object using dot or bracket
+    notation:
+
+
+    ![](image_rsrcKV.jpg)
+
+
+    In addition, we can loop through the properties of an object using a for...in
+    loop:
+
+
+    ![](image_rsrcKW.jpg)
+
+
+    This loop will display all properties and their values in the person object.
+
+
+    In summary, objects are a fundamental part of JavaScript and are widely used in
+    programming to represent complex and structured data.
+
+
+    # Functional Programming in JavaScript
+
+
+    ForEach
+
+
+    The forEach function is one of the most useful functions for iterating through
+    arrays in JavaScript. The forEach function executes a callback function for each
+    element in the array, but it doesn''t return a new array. Instead, it simply iterates
+    through the array and executes the function on each element.
+
+
+    Here is a simple example:
+
+
+    ![](image_rsrcKX.jpg)
+
+
+    This code displays each element of the numbers array in the console.
+
+
+    The callback function that is passed to forEach receives three arguments: the
+    current element, the index of the element, and the array itself. For example:
+
+
+    ![](image_rsrcKY.jpg)
+
+
+    This code displays each element of the array, the index of the element, and the
+    array itself in the console.
+
+
+    The forEach function is useful for performing an action on each element of an
+    array. However, if you need to create a new array from the original array, it''s
+    better to use the map, filter, or reduce functions.
+
+
+    Map
+
+
+    The map function is used to create a new array with the result of applying a function
+    to each element of the original array. The map function does not modify the original
+    array, but returns a new array with the same number of elements.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcKZ.jpg)
+
+
+    In this example, the map function is used to create a new array square that contains
+    the square of each number in the numeros array.
+
+
+    The map function takes a callback function as an argument. This function is called
+    for each element of the array and should return the value to be added to the new
+    array. The callback function can have up to three arguments: the current element,
+    the index of the element, and the array itself. For example:
+
+
+    ![](image_rsrcM0.jpg)
+
+
+    In this example, the map function is used to create a new array upperFruits that
+    contains all the fruits from the fruits array in uppercase letters. The callback
+    function prints each fruit and its index before transforming the fruit into uppercase
+    and returning it.'
+  toc: []
+  trans: '
+
+
+    在这个例子中，只要条件为真，代码块就会执行。条件在每个循环迭代开始时被检查。
+
+
+    另一方面，`for` 是另一种循环结构，它基于固定的迭代次数多次执行代码块。`for` 的基本语法如下：
+
+
+    ![](img/image_rsrcKB.jpg)
+
+
+    在这个例子中，初始化在第一次循环迭代之前执行。条件在每个循环迭代之前被检查，如果为真，则执行代码块。每次循环迭代之后，执行最终表达式。
+
+
+    此外，JavaScript 还有 `do/while` 结构，它与 `while` 类似，但在每个循环迭代结束时检查条件，而不是在开始时。`do/while`
+    的基本语法如下：
+
+
+    ![](img/image_rsrcKC.jpg)
+
+
+    最后，JavaScript 有 `break` 语句，允许你提前退出循环，以及 `continue` 语句，允许你跳到循环的下一次迭代。这些语句对于控制循环内的执行流程非常有用。
+
+
+    # 函数
+
+
+    在 JavaScript 中，函数是一等对象，这意味着它们可以像任何其他对象一样被处理。函数可以存储在变量中，作为参数传递给其他函数，作为值从其他函数返回，等等。以下是在
+    JavaScript 中创建函数的一个简单示例：
+
+
+    ![](img/image_rsrcKD.jpg)
+
+
+    在这个例子中，函数 `sum` 接受两个参数 `a` 和 `b`，并返回它们的和。
+
+
+    在 JavaScript 中也可以创建匿名函数，这些函数没有名称，存储在变量中或作为参数传递给其他函数。示例如下：
+
+
+    ![](img/image_rsrcKE.jpg)
+
+
+    在这个例子中，匿名函数存储在一个名为 `sum` 的变量中。
+
+
+    JavaScript 中的函数也可以使用箭头函数表达式来定义。箭头函数是在 ECMAScript 6 中引入的，是一种更简洁的创建函数的方式。示例如下：
+
+
+    ![](img/image_rsrcKF.jpg)
+
+
+    在这个例子中，箭头函数接受两个参数 `a` 和 `b`，并返回它们的和。
+
+
+    JavaScript 中的函数还可以有默认参数，当没有为该参数提供值时使用。示例如下：
+
+
+    ![](img/image_rsrcKG.jpg)
+
+
+    # JavaScript 中的数组
+
+
+    在 JavaScript 中，数组是一个可以通过数字索引访问的值的集合。数组是 JavaScript 中的基本数据类型之一，可以包含任何类型的数据，包括其他数组。
+
+
+    以下是在 JavaScript 中创建数组的示例：
+
+
+    ![](img/image_rsrcKH.jpg)
+
+
+    在这个例子中，`numbers` 是一个数字数组，包含值 1、2、3、4 和 5。数组的元素可以使用方括号（`[]`）访问。数组第一个元素的索引是 0。示例如下：
+
+
+    ![](img/image_rsrcKJ.jpg)
+
+
+    JavaScript 中的数组还有几个方法，可用于对其元素执行操作。以下是一些示例：
+
+
+    `push()`：将一个或多个元素添加到数组末尾。示例如下：
+
+
+    ![](img/image_rsrcKK.jpg)
+
+
+    `pop()`：移除数组的最后一个元素并返回该元素。示例如下：
+
+
+    ![](img/image_rsrcKM.jpg)
+
+
+    `slice()`：返回数组一部分的副本。示例如下：
+
+
+    ![](img/image_rsrcKN.jpg)
+
+
+    `join()`：将数组的所有元素以单个字符串形式返回。
+
+
+    ![](img/image_rsrcKP.jpg)
+
+
+    这些只是 JavaScript 数组中可用方法的一小部分示例。还有许多其他方法，包括 `shift()`、`unshift()`、`splice()`、`concat()`、`reverse()`、`sort()`
+    等。
+
+
+    ## 多维数组
+
+
+    JavaScript 中的多维数组是包含其他数组的数组。它是一种以多个维度存储数据的方式，允许你创建复杂的数据结构。
+
+
+    要创建多维数组，你需要在另一个数组内部创建一个数组。例如，要创建一个 2x3 数组（两行三列），可以使用以下语法：
+
+
+    ![](img/image_rsrcKR.jpg)
+
+
+    在这个例子中，`matrix` 是一个多维数组，包含两个嵌套数组，每个数组有三个值。
+
+
+    你可以使用与访问一维数组值相同的语法来访问多维数组的值，但需要为每个维度指定索引。例如，要访问数组 `matrix` 中的值 5，可以使用以下代码行：
+
+
+    ![](img/image_rsrcKS.jpg)
+
+
+    在这种情况下，`matrix[1]` 返回第二个嵌套数组，而 `matrix[1][1]` 返回第二个嵌套数组中的第二个值，即 5。
+
+
+    你也可以通过简单地在数组中嵌套更多数组来创建具有两个以上维度的多维数组。然而，具有两个或三个以上维度的数组可能变得难以处理，在 JavaScript 编程中通常避免使用。
+
+
+    # JavaScript 中的对象
+
+
+    在 JavaScript 中，对象是键值对的集合。每个键是一个字符串，用于标识对象中的值。值可以是任何类型的 JavaScript 数据，包括其他对象。
+
+
+    要在 JavaScript 中创建对象，我们可以使用对象字面量语法，它由花括号 `{}` 组成，键值对之间用逗号分隔：
+
+
+    ![](img/image_rsrcKT.jpg)
+
+
+    在这个例子中，`person` 是一个具有三个属性的对象：`name`、`age` 和 `address`。`address` 属性是另一个具有自身属性的对象。我们可以使用点表示法或方括号表示法来访问对象的属性：
+
+
+    ![](img/image_rsrcKU.jpg)
+
+
+    我们还可以使用点表示法或方括号表示法来添加、修改和删除对象的属性：
+
+
+    ![](img/image_rsrcKV.jpg)
+
+
+    此外，我们可以使用 `for...in` 循环遍历对象的属性：
+
+
+    ![](img/image_rsrcKW.jpg)
+
+
+    这个循环将显示 `person` 对象中的所有属性及其值。
+
+
+    总之，对象是 JavaScript 的基本组成部分，在编程中广泛用于表示复杂和结构化的数据。
+
+
+    # JavaScript 中的函数式编程
+
+
+    ## ForEach
+
+
+    `forEach` 函数是 JavaScript 中用于遍历数组的最有用的函数之一。`forEach` 函数为数组中的每个元素执行一个回调函数，但它不会返回一个新数组。相反，它只是遍历数组并对每个元素执行该函数。
+
+
+    以下是一个简单的示例：
+
+
+    ![](img/image_rsrcKX.jpg)
+
+
+    这段代码在控制台中显示 `numbers` 数组的每个元素。
+
+
+    传递给 `forEach` 的回调函数接收三个参数：当前元素、元素的索引以及数组本身。例如：
+
+
+    ![](img/image_rsrcKY.jpg)
+
+
+    这段代码在控制台中显示数组的每个元素、元素的索引以及数组本身。
+
+
+    `forEach` 函数对于对数组的每个元素执行操作非常有用。但是，如果需要从原始数组创建一个新数组，最好使用 `map`、`filter` 或 `reduce`
+    函数。
+
+
+    ## Map
+
+
+    `map` 函数用于创建一个新数组，该数组包含对原始数组的每个元素应用函数后的结果。`map` 函数不会修改原始数组，而是返回一个具有相同元素数量的新数组。
+
+
+    以下是一个简单的示例：
+
+
+    ![](img/image_rsrcKZ.jpg)
+
+
+    在这个例子中，`map` 函数用于创建一个新数组 `square`，其中包含 `numeros` 数组中每个数字的平方。
+
+
+    `map` 函数接受一个回调函数作为参数。该函数为数组的每个元素调用，并应返回要添加到新数组中的值。回调函数最多可以有三个参数：当前元素、元素的索引以及数组本身。例如：
+
+
+    ![](img/image_rsrcM0.jpg)
+
+
+    在这个例子中，`map` 函数用于创建一个新数组 `upperFruits`，其中包含 `fruits` 数组中所有水果的大写形式。回调函数在将水果转换为大写并返回之前，打印每个水果及其索引。
+
+
+    '
+- fmt: '
+
+    The `map` function is one of the most useful and powerful functions in JavaScript,
+    and is widely used in functional programming to transform data.
+
+
+    ## Filter
+
+
+    The `filter` function is used to create a new array with all elements of the original
+    array that pass a test specified by a callback function. The new array will only
+    contain elements that satisfy the condition specified in the callback function.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcM1.jpg)
+
+
+    In this example, the `filter` function is used to create a new array `evenNumbers`
+    that contains only the even numbers from the `numbers` array.
+
+
+    The `filter` function takes a callback function as an argument. This function
+    is called for each element in the array and should return a boolean value that
+    indicates whether the element should be included in the new array. The callback
+    function can have up to three arguments: the current element, the index of the
+    element, and the array itself. For example:
+
+
+    ![](image_rsrcM2.jpg)
+
+
+    In this example, the `filter` function is used to create a new array `fruitsWithE`
+    that contains only the fruits from the `fruits` array that contain the letter
+    "e". The callback function prints each fruit and its index before testing whether
+    the fruit contains the letter "e" and returning a boolean value.
+
+
+    The `filter` function is one of the most useful and powerful functions in JavaScript
+    and is widely used in functional programming to filter data.
+
+
+    ## Reduce
+
+
+    The `reduce` function is used to reduce all the elements of an array to a single
+    value. It executes a callback function for each element of the array, passing
+    an accumulator and the current element as arguments, and returns an accumulated
+    value that results from the execution of the callback function on each element.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcM3.jpg)
+
+
+    In this example, the `reduce` function is used to sum all the numbers in the `numbers`
+    array. The callback function takes two arguments: the accumulator and the current
+    element. In the first iteration, the accumulator is the initial value passed as
+    the second argument (zero) and the current element is the first element of the
+    array (1). In the second iteration, the accumulator is the sum of the initial
+    value and the first element (1+2=3) and the current element is the second element
+    of the array (2), and so on. The final result is the sum of all the elements in
+    the array.
+
+
+    The `reduce` function can also take an optional third argument, which is the initial
+    value of the accumulator. If this argument is not provided, the first element
+    of the array will be used as the initial value.
+
+
+    ![](image_rsrcM4.jpg)
+
+
+    In this example, the `reduce` function is used to calculate the product of all
+    the numbers in the `numbers` array. Since no initial value is provided, the first
+    element of the array (1) is used as the initial value of the accumulator.
+
+
+    The `reduce` function is one of the most powerful and flexible functions in JavaScript,
+    and it is widely used in functional programming to transform data and perform
+    complex operations on arrays.
+
+
+    # Short-circuit Evaluation
+
+
+    Short-circuit evaluation is a technique in JavaScript (and other programming languages)
+    that allows for evaluating a logical expression by stopping as soon as the result
+    can be determined, without the need to evaluate the entire expression. This is
+    possible because the logical operators AND (`&&`) and OR (`||`) are implemented
+    this way in JavaScript.
+
+
+    The logical operator AND returns `true` only if both expressions are `true`. If
+    the first expression is `false`, the result is `false` and the second expression
+    is not evaluated. For example:
+
+
+    ![](image_rsrcM5.jpg)
+
+
+    In this case, the second expression is not evaluated if the first expression is
+    `false` (if `x` is not greater than 0).
+
+
+    The logical operator OR returns `true` if at least one of the expressions is `true`.
+    If the first expression is `true`, the result is `true` and the second expression
+    is not evaluated. For example:
+
+
+    ![](image_rsrcM6.jpg)
+
+
+    In this case, the second expression is not evaluated because the first expression
+    (`y`) is `false` (`null`).
+
+
+    The short-circuit evaluation technique can be useful for improving code performance
+    and making it more readable in certain situations. However, it is important to
+    use it with care and ensure that the program logic is correct.
+
+
+    ## Short-circuit Evaluation em Funções
+
+
+    Short-circuit evaluation can also be used with functions in JavaScript. In some
+    cases, it is possible to use this technique to improve code performance or avoid
+    errors.
+
+
+    For example, imagine you have a function that receives an object as a parameter
+    and needs to check if a certain property exists in the object before accessing
+    it. You could write the following code:
+
+
+    ![](image_rsrcM7.jpg)
+
+
+    In this case, the logical expression `object && object.property` uses short-circuit
+    evaluation to ensure that the code inside the `if` statement is only executed
+    if the `object` exists and the `property` also exists.
+
+
+    Another example where short-circuit evaluation can be useful is when you need
+    to set a default value for a variable or function parameter. Instead of using
+    an `if`/`else` statement to check if the variable or parameter is `undefined`,
+    you can use the logical OR operator to set a default value:
+
+
+    ![](image_rsrcM8.jpg)
+
+
+    In this case, if the value of `options.defaultValue` is `undefined`, the default
+    value will be used instead.
+
+
+    # About the Author
+
+
+    Ruhan Conceição graduated in Computer Engineering (2015) from the Federal University
+    of Pelotas and has a Master''s degree in Computing (2016) from the same university.
+    Since 2018, he has been a professor at the Federal Institute of Education, Science
+    and Technology of Rio Grande do Sul in the field of Informatics, where he teaches,
+    among other subjects, Object Oriented Programming, Visual Programming, and Mobile
+    Devices Programming.
+
+
+    In 2014, while still an undergraduate student, Ruhan received the title of Gaúcho
+    Researcher in the Young Innovator category due to his academic and scientific
+    trajectory during his years at the university. His research topic has always been
+    related to the algorithmic development of efficient solutions for real-time video
+    coding. Regarding scientific research, Ruhan has accumulated dozens of papers
+    published in national and international conferences, as well as articles in highly
+    relevant scientific journals, and two computer programs registered in the National
+    Institute of Intellectual Property.
+
+
+    Among his hobbies, Ruhan Conceição has a podcast called R-Cast (@rcasttv on social
+    media), where he invites guests to talk about various topics, including technology,
+    politics, education, health, culture, music, etc.
+
+    '
+  raw: 'The map function is one of the most useful and powerful functions in JavaScript,
+    and is widely used in functional programming to transform data.
+
+
+    Filter
+
+
+    The filter function is used to create a new array with all elements of the original
+    array that pass a test specified by a callback function. The new array will only
+    contain elements that satisfy the condition specified in the callback function.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcM1.jpg)
+
+
+    In this example, the filter function is used to create a new array evenNumbers
+    that contains only the even numbers from the numbers array.
+
+
+    The filter function takes a callback function as an argument. This function is
+    called for each element in the array and should return a boolean value that indicates
+    whether the element should be included in the new array. The callback function
+    can have up to three arguments: the current element, the index of the element,
+    and the array itself. For example:
+
+
+    ![](image_rsrcM2.jpg)
+
+
+    In this example, the filter function is used to create a new array fruitsWithE
+    that contains only the fruits from the fruits array that contain the letter "e".
+    The callback function prints each fruit and its index before testing whether the
+    fruit contains the letter "e" and returning a boolean value.
+
+
+    The filter function is one of the most useful and powerful functions in JavaScript
+    and is widely used in functional programming to filter data.
+
+
+    Reduce
+
+
+    The reduce function is used to reduce all the elements of an array to a single
+    value. It executes a callback function for each element of the array, passing
+    an accumulator and the current element as arguments, and returns an accumulated
+    value that results from the execution of the callback function on each element.
+
+
+    Here''s a simple example:
+
+
+    ![](image_rsrcM3.jpg)
+
+
+    In this example, the reduce function is used to sum all the numbers in the numbers
+    array. The callback function takes two arguments: the accumulator and the current
+    element. In the first iteration, the accumulator is the initial value passed as
+    the second argument (zero) and the current element is the first element of the
+    array (1). In the second iteration, the accumulator is the sum of the initial
+    value and the first element (1+2=3) and the current element is the second element
+    of the array (2), and so on. The final result is the sum of all the elements in
+    the array.
+
+
+    The reduce function can also take an optional third argument, which is the initial
+    value of the accumulator. If this argument is not provided, the first element
+    of the array will be used as the initial value.
+
+
+    ![](image_rsrcM4.jpg)
+
+
+    In this example, the reduce function is used to calculate the product of all the
+    numbers in the numbers array. Since no initial value is provided, the first element
+    of the array (1) is used as the initial value of the accumulator.
+
+
+    The reduce function is one of the most powerful and flexible functions in JavaScript,
+    and it is widely used in functional programming to transform data and perform
+    complex operations on arrays.
+
+
+    # Short-circuit Evaluation
+
+
+    Short-circuit evaluation is a technique in JavaScript (and other programming languages)
+    that allows for evaluating a logical expression by stopping as soon as the result
+    can be determined, without the need to evaluate the entire expression. This is
+    possible because the logical operators AND (&&) and OR (||) are implemented this
+    way in JavaScript.
+
+
+    The logical operator AND returns true only if both expressions are true. If the
+    first expression is false, the result is false and the second expression is not
+    evaluated. For example:
+
+
+    ![](image_rsrcM5.jpg)
+
+
+    In this case, the second expression is not evaluated if the first expression is
+    false (if x is not greater than 0).
+
+
+    The logical operator OR returns true if at least one of the expressions is true.
+    If the first expression is true, the result is true and the second expression
+    is not evaluated. For example:
+
+
+    ![](image_rsrcM6.jpg)
+
+
+    In this case, the second expression is not evaluated because the first expression
+    (y) is false (null).
+
+
+    The short-circuit evaluation technique can be useful for improving code performance
+    and making it more readable in certain situations. However, it is important to
+    use it with care and ensure that the program logic is correct.
+
+
+    Short-circuit Evaluation em Funções
+
+
+    Short-circuit evaluation can also be used with functions in JavaScript. In some
+    cases, it is possible to use this technique to improve code performance or avoid
+    errors.
+
+
+    For example, imagine you have a function that receives an object as a parameter
+    and needs to check if a certain property exists in the object before accessing
+    it. You could write the following code:
+
+
+    ![](image_rsrcM7.jpg)
+
+
+    In this case, the logical expression object && object.property uses short-circuit
+    evaluation to ensure that the code inside the if statement is only executed if
+    the object exists and the property also exists.
+
+
+    Another example where short-circuit evaluation can be useful is when you need
+    to set a default value for a variable or function parameter. Instead of using
+    an if/else statement to check if the variable or parameter is undefined, you can
+    use the logical OR operator to set a default value:
+
+
+    ![](image_rsrcM8.jpg)
+
+
+    In this case, if the value of options.defaultValue is undefined, the default value
+    will be used instead.
+
+
+    # About the Author
+
+
+    Ruhan Conceição graduated in Computer Engineering (2015) from the Federal University
+    of Pelotas and has a Master''s degree in Computing (2016) from the same university.
+    Since 2018, he has been a professor at the Federal Institute of Education, Science
+    and Technology of Rio Grande do Sul in the field of Informatics, where he teaches,
+    among other subjects, Object Oriented Programming, Visual Programming, and Mobile
+    Devices Programming.
+
+
+    In 2014, while still an undergraduate student, Ruhan received the title of Gaúcho
+    Researcher in the Young Innovator category due to his academic and scientific
+    trajectory during his years at the university. His research topic has always been
+    related to the algorithmic development of efficient solutions for real-time video
+    coding. Regarding scientific research, Ruhan has accumulated dozens of papers
+    published in national and international conferences, as well as articles in highly
+    relevant scientific journals, and two computer programs registered in the National
+    Institute of Intellectual Property.
+
+
+    Among his hobbies, Ruhan Conceição has a podcast called R-Cast (@rcasttv on social
+    media), where he invites guests to talk about various topics, including technology,
+    politics, education, health, culture, music, etc.'
+  toc: []
+  trans: '
+
+    `map` 函数是 JavaScript 中最有用、最强大的函数之一，广泛应用于函数式编程中，用于转换数据。
+
+
+    ## 过滤
+
+
+    `filter` 函数用于创建一个新数组，其中包含原数组中所有通过回调函数指定测试的元素。新数组仅包含满足回调函数中指定条件的元素。
+
+
+    以下是一个简单示例：
+
+
+    ![](img/image_rsrcM1.jpg)
+
+
+    在此示例中，`filter` 函数用于创建一个新数组 `evenNumbers`，该数组仅包含 `numbers` 数组中的偶数。
+
+
+    `filter` 函数接受一个回调函数作为参数。该函数会为数组中的每个元素调用，并应返回一个布尔值，指示该元素是否应包含在新数组中。回调函数最多可接受三个参数：当前元素、元素索引和数组本身。例如：
+
+
+    ![](img/image_rsrcM2.jpg)
+
+
+    在此示例中，`filter` 函数用于创建一个新数组 `fruitsWithE`，该数组仅包含 `fruits` 数组中包含字母 "e" 的水果。回调函数在测试水果是否包含字母
+    "e" 并返回布尔值之前，会打印每个水果及其索引。
+
+
+    `filter` 函数是 JavaScript 中最有用、最强大的函数之一，广泛应用于函数式编程中，用于过滤数据。
+
+
+    ## 归约
+
+
+    `reduce` 函数用于将数组的所有元素归约为单个值。它对数组的每个元素执行一个回调函数，将累加器和当前元素作为参数传递，并返回一个累加值，该值是对每个元素执行回调函数的结果。
+
+
+    以下是一个简单示例：
+
+
+    ![](img/image_rsrcM3.jpg)
+
+
+    在此示例中，`reduce` 函数用于对 `numbers` 数组中的所有数字求和。回调函数接受两个参数：累加器和当前元素。在第一次迭代中，累加器是作为第二个参数传递的初始值（零），当前元素是数组的第一个元素（1）。在第二次迭代中，累加器是初始值与第一个元素之和（1+2=3），当前元素是数组的第二个元素（2），依此类推。最终结果是数组中所有元素的总和。
+
+
+    `reduce` 函数还可以接受一个可选的第三个参数，即累加器的初始值。如果未提供此参数，则数组的第一个元素将用作初始值。
+
+
+    ![](img/image_rsrcM4.jpg)
+
+
+    在此示例中，`reduce` 函数用于计算 `numbers` 数组中所有数字的乘积。由于未提供初始值，数组的第一个元素（1）被用作累加器的初始值。
+
+
+    `reduce` 函数是 JavaScript 中最强大、最灵活的函数之一，广泛应用于函数式编程中，用于转换数据并对数组执行复杂操作。
+
+
+    # 短路求值
+
+
+    短路求值是 JavaScript（以及其他编程语言）中的一种技术，它允许在确定结果后立即停止计算逻辑表达式，而无需计算整个表达式。这是因为 JavaScript
+    中的逻辑运算符 AND（`&&`）和 OR（`||`）正是以这种方式实现的。
+
+
+    逻辑运算符 AND 仅在两个表达式都为 `true` 时返回 `true`。如果第一个表达式为 `false`，则结果为 `false`，并且不会计算第二个表达式。例如：
+
+
+    ![](img/image_rsrcM5.jpg)
+
+
+    在这种情况下，如果第一个表达式为 `false`（如果 `x` 不大于 0），则不会计算第二个表达式。
+
+
+    逻辑运算符 OR 在至少一个表达式为 `true` 时返回 `true`。如果第一个表达式为 `true`，则结果为 `true`，并且不会计算第二个表达式。例如：
+
+
+    ![](img/image_rsrcM6.jpg)
+
+
+    在这种情况下，不会计算第二个表达式，因为第一个表达式（`y`）为 `false`（`null`）。
+
+
+    短路求值技术可用于提高代码性能，并在某些情况下使代码更易读。然而，务必谨慎使用，并确保程序逻辑正确。
+
+
+    ## 函数中的短路求值
+
+
+    短路求值也可以与 JavaScript 中的函数一起使用。在某些情况下，可以使用此技术来提高代码性能或避免错误。
+
+
+    例如，假设你有一个函数，它接收一个对象作为参数，并且需要在访问某个属性之前检查该属性是否存在于对象中。你可以编写以下代码：
+
+
+    ![](img/image_rsrcM7.jpg)
+
+
+    在这种情况下，逻辑表达式 `object && object.property` 使用短路求值来确保仅当 `object` 存在且 `property` 也存在时，才执行
+    `if` 语句内的代码。
+
+
+    短路求值有用的另一个示例是，当你需要为变量或函数参数设置默认值时。你可以使用逻辑 OR 运算符来设置默认值，而不是使用 `if`/`else` 语句检查变量或参数是否为
+    `undefined`：
+
+
+    ![](img/image_rsrcM8.jpg)
+
+
+    在这种情况下，如果 `options.defaultValue` 的值为 `undefined`，则将使用默认值。
+
+
+    # 关于作者
+
+
+    Ruhan Conceição 于 2015 年毕业于佩洛塔斯联邦大学计算机工程专业，并于 2016 年在该校获得计算机硕士学位。自 2018 年起，他担任南里奥格兰德联邦教育、科学与技术学院信息学领域的教授，教授面向对象编程、可视化编程和移动设备编程等课程。
+
+
+    2014 年，Ruhan 还在读本科时，因其在大学期间的学术和科学轨迹，获得了“青年创新者”类别中的“高乔研究者”称号。他的研究课题始终与实时视频编码的高效算法开发相关。在科学研究方面，Ruhan
+    已在国内外会议上发表数十篇论文，并在高影响力的科学期刊上发表文章，此外还在国家知识产权局注册了两项计算机程序。
+
+
+    在业余爱好方面，Ruhan Conceição 有一个名为 R-Cast（社交媒体上为 @rcasttv）的播客，他邀请嘉宾讨论各种话题，包括技术、政治、教育、健康、文化、音乐等。
+
+    '

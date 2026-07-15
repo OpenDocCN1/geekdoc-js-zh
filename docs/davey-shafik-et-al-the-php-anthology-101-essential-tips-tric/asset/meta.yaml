@@ -1,0 +1,45 @@
+name: Davey Shafik Et Al The Php Anthology 101 Essential Tips Tricks And Hacks Sitepoint
+  Pty Ltd 2007
+name_cn: PHP 文集：101个必备技巧、窍门和黑客方法
+slug: davey-shafik-et-al-the-php-anthology-101-essential-tips-tric
+toc:
+- - '##'
+  - 使用PDO操作数据库
+- - '##'
+  - 字符串
+- - '##'
+  - 日期与时间
+- - '##'
+  - 表单、表格和漂亮的 URL
+- - '##'
+  - 文件操作
+- - '##'
+  - 电子邮件
+- - '##'
+  - 图像
+- - '##'
+  - 错误处理
+- - '##'
+  - 访问控制
+- - '##'
+  - 缓存
+- - '##'
+  - XML 与 Web 服务
+- - '##'
+  - 最佳实践
+- - '##'
+  - 如何编写可移植的 PHP 代码？
+- - '##'
+  - 什么是 OOP？
+- - '##'
+  - 总结
+- - '##'
+  - 讨论
+- - '##'
+  - 解决方案
+- - '##'
+  - 引言
+- - '##'
+  - 前言
+- - '##'
+  - 文档大纲

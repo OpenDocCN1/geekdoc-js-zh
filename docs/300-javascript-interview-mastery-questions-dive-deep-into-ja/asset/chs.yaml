@@ -1,0 +1,1041 @@
+- "# 300 道 JavaScript 面试精通题：深入 JavaScript 理论、语法与 API，自信应对面试\n\n\n\n\n## 引言\n本书包含涵盖\
+  \ JavaScript 语法、规则、功能及理论的问题。旨在帮助你提升 JavaScript 知识，同时让你接触到 JavaScript 中的一些边界情况和特殊场景。我发现，这类例子最能巩固开发者对这门有趣语言的理解。\n\
+  \n本书中有少数问题针对浏览器中运行的 JavaScript，但大多数问题与环境无关。少数问题还涉及 TypeScript，但会特别标注。本书分为 4 个“测试”，每个问题都链接到书末的答案。\n\
+  \n作为额外福利，下面两个链接提供了另外 50 道免费 JavaScript 面试精通题和 50 道免费 TypeScript 面试精通题。\n\n[50 道\
+  \ JavaScript 面试精通题](https://medium.com/the-clever-dev/50-difficult-javascript-interview-questions-88e6e92367e7?source=friends_link&sk=321a35a056e98aef103cc540794bd79f)（发布在我的\
+  \ Medium.com 专栏上）。\n\n[50 道 TypeScript 面试精通题](https://medium.com/the-clever-dev/50-difficult-typescript-interview-questions-a7103299e210?source=friends_link&sk=d6f5b58ec947559175b3972498395fa9)（发布在我的\
+  \ Medium.com 专栏上）。\n\n## 关于作者\n如果你喜欢本书并希望继续与我一起学习 JavaScript，请查看以下内容：\n\n* [我的 Medium.com\
+  \ 作品集](https://medium.com/@jonathan.middaugh) – 包含 JavaScript 文章以及我偶尔从事的开发者副业\n\
+  * [我的 YouTube 频道](https://www.youtube.com/channel/UCb6AZy0_D1y661PMZck3jOw) – 与我的\
+  \ Medium.com 作品集相同，但我喜欢制作视频时的互动感。此外，我相信它们能以不同方式帮助不同的人学习\n* [Twitter](https://twitter.com/SDevpreneur)\
+  \ – 在此关注我，获取最新文章动态以及开发者社区中有趣的内容\n\n\n\n\n\n## 测试 1 问题\n\n**问题 1.** 以下哪个会先打印？\n\n\
+  ```\nsetTimeout(() => {console.log('setTimeout wins');},0);\nqueueMicrotask(() =>\
+  \ {console.log('queueMicrotask wins');});\n```\n\n- A) `setTimeout` 胜出\n- B) `queueMicrotask`\
+  \ 胜出\n- C) 编译时错误\n\n答案是 B。来自 `queueMicrotask` 的任务在调用栈清空后、事件循环被调用前执行。来自 `setTimeout`\
+  \ 的任务属于事件队列的一部分。\n\n问题 1 已回答。\n\n**问题 2.** 下面的代码会向控制台输出什么，为什么？\n\n```\nlet x = 10;\n\
+  const byValue = (y) => {y = 20;}\nbyValue(x);\nconsole.log(x);\n```\n\n- A) 20\n\
+  - B) 10\n- C) 编译时错误\n\n问题 2 已回答。\n\n**问题 3.** 考虑以下代码。它会向控制台输出什么，为什么？\n\n```\nlet\
+  \ x = 5;\nlet x = 10;\nconsole.log(x);\n```\n\n- A) 5\n- B) 10\n- C) 会抛出编译错误\n\n\
+  问题 3 已回答。\n\n**问题 4.** 考虑以下代码。每一行输出什么？\n\n```\nconsole.log(new String(\"yes\") ===\
+  \ new String(\"yes\")); // 第 1 行\nconsole.log(\"yes\" === \"yes\"); // 第 2 行\n```\n\
+  \n- A) 第 1 行输出 true，第 2 行输出 true\n- B) 第 1 行输出 false，第 2 行输出 true\n- C) 第 1 行输出\
+  \ true，第 2 行输出 false\n- D) 第 1 行输出 false，第 2 行输出 false\n\n问题 4 已回答。\n\n**问题 5.**\
+  \ 下面的代码会向控制台输出什么，为什么？\n\n```\nconst x = new String(\"tricky\");\nconst y = x;\n\
+  console.log(x === y);\n```\n\n- A) True\n- B) False\n\n问题 5 已回答。\n\n**问题 6.** 在\
+  \ JavaScript 中，数组是对象还是原始类型？\n\n- A) 对象\n- B) 原始类型\n\n问题 6 已回答。\n\n**问题 7.** 下面异步函数的返回类型是什么？\n\
+  \n```\nasync function goodbye() {return ‘goodbye’;}\n```\n\n- A) string\n- B) `Promise`\n\
+  - C) Async\n\n问题 7 已回答。\n\n**问题 8.** 判断对错？`await` 关键字会阻塞应用中所有 JavaScript 代码的执行，直到等待的\
+  \ `Promise` 被返回。\n\n- A) 正确\n- B) 错误\n\n问题 8 已回答。\n\n**问题 9.** 回忆一下，函数在 JavaScript\
+  \ 中是对象。以下代码会打印什么？\n\n```\nfunction myFunc() {}\nconsole.log(typeof myFunc);\n```\n\
+  \n- A) object\n- B) function\n- C) true\n- D) 会抛出错误\n\n问题 9 已回答。\n\n**问题 10.** 判断对错？以下语法对于打印‘goodbye’是有效的。\n\
+  \n```\nlet goodbye = async () => { return \"Goodbye\" };\ngoodbye().then(console.log);\n\
+  ```\n\n- A) 正确\n- B) 错误\n\n问题 10 已回答。\n\n**问题 11.** 以下哪一项不是 `typeof` 和 `instanceof`\
+  \ 之间的区别？\n\n- A) `typeof` 返回一个类型，而 `instanceof` 返回一个布尔值\n- B) `instanceof` 需要 TypeScript，而\
+  \ `typeof` 不需要\n- C) `typeof` 右侧是变量名，而 `instanceof` 左侧和右侧都是值\n\n问题 11 已回答。\n\n**问题\
+  \ 12.** 以下哪个方法会在所有 promise 都完成时解决，或者一旦有一个 promise 被拒绝就立即拒绝？\n\n- A) `Promise.race()`\n\
+  - B) `Promise.any()`\n- C) `Promise.all()`\n- D) `Promise.resolve()`\n\n问题 12 已回答。\n\
+  \n**问题 13.** 下面的代码会向控制台输出什么，为什么？\n\n```\nlet x = 10;\nfunction myFunc(y){y = 12;}\n\
+  myFunc(x);\nconsole.log(x);\n```\n\n- A) 10\n- B) 12\n- C) undefined\n\n问题 13 已回答。\n\
+  \n**问题 14.** 下面的代码会向控制台输出什么，为什么？\n\n```\nconsole.log(11 & 3);\n```\n\n- A) 11\n\
+  - B) 1\n- C) 2\n- D) 3\n\n问题 14 已回答。\n\n**问题 15.** `Object.[[Prototype]]` 的值是什么？\n\
+  \n- A) `Object`\n- B) `null`\n- C) `{}`\n\n问题 15 已回答。\n\n**问题 16.** `??`（空值合并运算符）的作用是什么？\n\
+  \n问题 16 已回答。\n\n**问题 17.** 哪个运算符会返回一个操作数除以另一个操作数的余数？\n\n- A) `$`\n- B) `#`\n- C)\
+  \ `%`\n- D) 以上都不是\n\n问题 17 已回答。\n\n**问题 18.** 判断对错？`getElementsByTagName` 是一个 JavaScript\
+  \ 函数。\n\n- A) 正确\n- B) 错误\n\n问题 18 已回答。\n\n**问题 19.** 请给出一个在 JavaScript 中使用事件委托的例子。\n\
+  \n问题 19 已回答。\n\n**问题 20.** 下面的代码会求值为 true 还是 false？\n\n```\nBigInt(10000000000000000000)\
+  \ === 10000000000000000000\n```\n\n- A) true\n- B) false\n\n问题 20 已回答。\n\n**问题 21.**\
+  \ 以下哪一项不是 JavaScript 内置的错误类型？\n\n- A) `Error`\n- B) `EvalError`\n- C) `SyntaxError`\n\
+  - D) `TypeError`\n- E) `UndefinedError`\n\n问题 21 已回答。\n\n**问题 22.** 数字在 JavaScript\
+  \ 中是如何存储的？请选择所有适用的选项。\n\n- A) 双精度\n- B) 64 位\n- C) 浮点数\n\n问题 22 已回答。\n\n**问题 23.**\
+  \ 如果一个函数没有指定返回值，它会返回什么值？\n\n- A) `null`\n- B) `undefined`\n- C) 什么也不返回\n\n问题 23\
+  \ 已回答。\n\n**问题 24.** 调用一个对象上可能存在也可能不存在的方法的语法是什么？\n\n问题 24 已回答。\n\n**问题 25.** 以下哪一项不是有效的\
+  \ Promise 方法？\n\n- A) `Promise.some()`\n- B) `Promise.allSettled()`\n- C) `Promise.reject()`\n\
+  - D) `Promise.race`\n\n问题 25 已回答。\n\n**问题 26.** 如何根据变量值动态访问对象属性？\n\n问题 26 已回答。\n\
+  \n**问题 27.** 判断对错？字符串在创建后可以被修改。\n\n- A) 正确\n- B) 错误\n\n问题 27 已回答。\n\n**问题 28.**\
+  \ 判断对错？JavaScript 是同步的。\n\n- A) 正确\n- B) 错误\n\n问题 28 已回答。\n\n**问题 29.** 判断对错？在 `Promise`\
+  \ 链中，嵌套的 `catch` 可以捕获链中更上层抛出的错误？\n\n- A) 正确\n- B) 错误\n\n问题 29 已回答。\n\n**问题 30.**\
+  \ 判断对错？`Map` 对象的键可以是字符串以外的类型，例如数字。\n\n- A) 正确\n- B) 错误\n\n问题 30 已回答。\n\n**问题 31.**\
+  \ 下面的代码会向控制台输出什么，为什么？\n\n```\nconst map = new Map();\nmap.set({},1);\nconsole.log(map.get({}));\n\
+  ```\n\n- A) undefined\n- B) 1\n- C) 编译时错误\n\n问题 31 已回答。\n\n**问题 32.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```\nlet map1 = new Map([['a', 1],['b', 1],['c', 1],]);\nlet map2 = new Map([['a',\
+  \ 2],['b', 2]]);\nlet spreadMap = new Map([...map1, ...map2]);\n```\n\n- A) `Map(3)\
+  \ {\"a\" => 1, \"b\" => 1, \"c\" => 1}`\n- B) `Map(3) {\"a\" => 2, \"b\" => 2, \"\
+  c\" => 1}`\n- C) `Map(5) {\"a\" => 1, \"b\" => 1, \"c\" => 1, \"a\" => 2, \"b\"\
+  \ => 2}`\n\n问题 32 已回答。\n\n**问题 33.** 判断对错？方括号表示法可以像点表示法一样进行链式调用？\n\n- A) 正确\n- B)\
+  \ 错误\n\n问题 33 已回答。\n\n**问题 34.** 下面的代码会向控制台输出什么，为什么？\n\n```\nclass Person {name:\
+  \ string;DOB: string;}\nconsole.log(typeof Person);\n```\n\n- A) `\"class\"`\n-\
+  \ B) `\"function\"`\n- C) `\"object\"`\n\n问题 34 已回答。\n\n**问题 35.** 检查下面的代码。诊断将会发生的错误。假设\
+  \ `handleResponse` 和 `handleError` 已正确定义。\n\n```\npromise.then(function(response)\
+  \ {\n  this.handleResponse();\n},\nfunction(error) {\n  this.handleError();\n});\n\
+  ```\n\n问题 35 已回答。\n\n**问题 36.** 哪些类型的属性会出现在 `for...in` 循环中？\n\n- A) 可执行属性\n- B)\
+  \ 可枚举属性\n- C) 可迭代属性\n\n问题 36 已回答。\n\n**问题 37.** 判断对错？`.bind(this)` 会立即调用绑定的函数。\n\
+  \n- A) 正确\n- B) 错误\n\n问题 37 已回答。\n\n**问题 38.** 代码会打印什么？\n\n```\nfunction getName()\
+  \ {\n  var name = \"Jon\";\n  function printName() {\n    console.log(name);\n \
+  \ }\n  printName();\n}\ngetName();\n```\n\n- A) Jon\n- B) undefined\n- C) 编译时错误\n\
+  \n问题 38 已回答。\n\n**问题 39.** 判断对错？`await` 关键字必须与 `async` 函数一起使用？\n\n- A) 正确\n- B)\
+  \ 错误\n\n问题 39 已回答。\n\n**问题 40.** 函数在递归中引用自身有哪三种方式？请选择三个答案。\n\n- A) 使用 `self.run`\n\
+  - B) 函数名\n- C) 一个指向该函数的作用域内变量\n- D) 使用 `arguments.callee`\n\n问题 40 已回答。\n\n**问题\
+  \ 41.** 下面的代码会向控制台输出什么，为什么？\n\n```\nconst test = (incrementer) => {\n  if (incrementer\
+  \ < 0){\n    return;\n  }\n  console.log('first: ' + incrementer);\n  test(incrementer\
+  \ - 1);\n  console.log('second: ' + incrementer)\n}\ntest(2);\n```\n\n问题 41 已回答。\n\
+  \n\n\n\n\n### Q42. 正确还是错误？\n\n`Promise.any()` 和 `Promise.race()` 的区别在于，`Promise.race()`\
+  \ 返回第一个状态确定的 Promise（无论是 fulfilled 还是 rejected），而 `Promise.any()` 会持续等待直到有一个 Promise\
+  \ 状态变为 fulfilled，只有在所有 Promise 都被 rejected 时才会 reject。\n\nA) 正确\nB) 错误\n\nQ42 答案。\n\
+  \n\n\n\n\n# JavaScript 问答集\n\n## 测试 1 答案\n\n**Q1 已回答。** 以下哪个会先打印？\n\n```javascript\n\
+  setTimeout(() => {\n  console.log('setTimeout wins');\n}, 0);\nqueueMicrotask(()\
+  \ => {\n  console.log('queueMicrotask wins');\n});\n```\n\nA) `setTimeout` 胜出  \n\
+  B) `queueMicrotask` 胜出  \nC) 编译时错误\n\nQ1 未回答。\n\n**Q2 已回答。** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nlet x = 10;\nconst byValue = (y) => {\n  y = 20;\n}\nbyValue(x);\n\
+  console.log(x);\n```\n\nA) 20  \nB) 10  \nC) 编译时错误\n\n答案是 B。与对象不同，当原始值被传递给函数时，只传递其值，而不是内存位置的引用。因此，对参数的更改只影响函数作用域内的参数。\n\
+  \nQ2 未回答。\n\n**Q3 已回答。** 考虑以下代码。它会向控制台输出什么，为什么？\n\n```javascript\nlet x = 5;\nlet\
+  \ x = 10;\nconsole.log(x);\n```\n\nA) 5  \nB) 10  \nC) 它会抛出一个编译器错误。\n\n答案是 C。然而，下面的代码可以工作，因为声明的作用域不同（尽管这不是干净的代码）。\n\
+  \n```javascript\nlet x = 5;\nif(x){\n  let x = 10;\n  console.log(x);\n}\n```\n\n\
+  Q3 未回答。\n\n**Q4 已回答。** 考虑以下代码。每一行输出什么？\n\n```javascript\nconsole.log(new String(\"\
+  yes\") === new String(\"yes\")); // 第 1 行\nconsole.log(\"yes\" === \"yes\"); //\
+  \ 第 2 行\n```\n\nA) 第 1 行打印 `true`，第 2 行打印 `true`  \nB) 第 1 行打印 `false`，第 2 行打印 `true`\
+  \  \nC) 第 1 行打印 `true`，第 2 行打印 `false`  \nD) 第 1 行打印 `false`，第 2 行打印 `false`\n\n\
+  答案是 B。第 1 行比较两个对象，发现它们各自是唯一的（字面上不是同一个对象），因此结果为 `false`。即使是 `==` 宽松检查，第 1 行也会得到 `false`。第\
+  \ 2 行通过，因为它比较的是两个字符串原始值，而不是字符串对象。\n\nQ4 未回答。\n\n**Q5 已回答。** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconst x = new String(\"tricky\");\nconst y = x;\nconsole.log(x\
+  \ === y);\n```\n\nA) `true`  \nB) `false`\n\n答案是 A。与上一个问题不同，这里只创建了一个唯一对象，两个常量（`x`\
+  \ 和 `y`）指向内存中的这个唯一对象。\n\nQ5 未回答。\n\n**Q6 已回答。** 在 JavaScript 中，数组是对象还是原始值？\n\nA)\
+  \ 对象  \nB) 原始值\n\n答案是 A。数组是 JavaScript 中一种特殊的对象。它们拥有其他对象没有的属性，这些属性继承自 `Array.prototype`。\n\
+  \nQ6 未回答。\n\n**Q7 已回答。** 下面 `async` 函数的返回类型是什么？\n\n```javascript\nasync function\
+  \ goodbye() {\n  return 'goodbye';\n}\n```\n\nA) `string`  \nB) `Promise`  \nC)\
+  \ `Async`\n\n答案是 B。`async` 函数返回 Promise。要实际消费 Promise 兑现时返回的值，你需要一个 `.then` 语句，例如\
+  \ `goodbye.then((value) => console.log(value));`。\n\nQ7 未回答。\n\n**Q8 已回答。** 判断对错？`await`\
+  \ 关键字会阻塞应用中所有 JavaScript 代码的执行，直到等待的 Promise 返回。\n\nA) 正确  \nB) 错误\n\n答案是 B。`await`\
+  \ 关键字只阻塞包含 `await` 关键字的特定 `async` 函数内部的代码执行。调用 `await` 所在 async 函数的调用者可以在等待 async\
+  \ 函数解析的同时继续执行。这被称为分割执行流。\n\nQ8 未回答。\n\n**Q9 已回答。** 回忆一下，函数在 JavaScript 中是对象。以下代码会打印什么？\n\
+  \n```javascript\nfunction myFunc() {}\nconsole.log(typeof myFunc);\n```\n\nA) `object`\
+  \  \nB) `function`  \nC) `true`  \nD) 它抛出一个错误\n\n答案是 B。尽管函数在 JavaScript 中确实是对象，但\
+  \ `typeof myFunc` 打印的是 “function”。\n\nQ9 未回答。\n\n**Q10 已回答。** 判断对错？以下语法对于打印 ‘goodbye’\
+  \ 是有效的。\n\n```javascript\nlet goodbye = async () => { return \"Goodbye\" };\ngoodbye().then(console.log);\
+  \ // 第 2 行\n```\n\nA) 正确  \nB) 错误\n\n答案是 A。第 2 行是将 async 函数的返回值传递给回调的一种有效简写。\n\n\
+  Q10 未回答。\n\n**Q11 已回答。** 以下哪一项不是 `typeof` 和 `instanceof` 之间的区别？\n\nA) `typeof` 返回一个类型，`instanceof`\
+  \ 返回一个布尔值  \nB) `instanceof` 需要 TypeScript，而 `typeof` 不需要  \nC) `typeof` 在右侧接受变量名，而\
+  \ `instanceof` 在左侧和右侧都接受值\n\n答案是 B。`typeof` 和 `instanceof` 都不需要 TypeScript，两者都是\
+  \ JavaScript 原生的。\n\nQ11 未回答。\n\n**Q12 已回答。** 以下哪个在所有 Promise 都兑现时解析，或者一旦有一个 Promise\
+  \ 被拒绝就拒绝？\n\nA) `Promise.race()`  \nB) `Promise.any()`  \nC) `Promise.all()`  \n\
+  D) `Promise.resolve()`\n\n答案是 C。如果你希望执行等待所有 Promise 解析（或任何一个失败），`Promise.all()`\
+  \ 很有用。此外，以上所有都是有效的 Promise 函数。\n\nQ12 未回答。\n\n**Q13 已回答。** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nlet x = 10;\nfunction myFunc(y){\n  y = 12;\n}\nmyFunc(x);\nconsole.log(x);\n\
+  ```\n\nA) 10  \nB) 12  \nC) `undefined`\n\n答案是 A。原始值是按值传递，而不是按引用传递，因此在函数中“更改它们”不会影响原始变量。\n\
+  \nQ13 未回答。\n\n**Q14 已回答。** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nconsole.log(11\
+  \ & 3);\n```\n\nA) 11  \nB) 1  \nC) 2  \nD) 3\n\n答案是 D。`&` 是一个位运算符（与 `&&` 非常不同）。`11\
+  \ & 3` 等同于（二进制）`1011 & 0011`。只有同时为 1 的位才保留为 1，因此输出是 `0011`，即 3 的二进制表示。\n\nQ14 未回答。\n\
+  \n**Q15 已回答。** `Object.[[Prototype]]` 的值是什么？\n\nA) `Object`  \nB) `null`  \nC) `{}`\n\
+  \n答案是 B。虽然 `Object` 位于原型链的顶端，但当浏览器查找访问属性的值时，它会遍历原型链，直到找到该值或没有更多原型可遍历。`Object.[[Prototype]]`\
+  \ 的值是 `null`，而返回的值是 `undefined`。\n\n更多阅读请参见：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain\n\
+  \nQ15 未回答。\n\n**Q16 已回答。** 空值合并运算符是做什么的？\n\n当左侧操作数为 `null` 或 `undefined` 时，它返回右侧操作数。否则，返回左侧操作数。语法是\
+  \ `??`。\n\nQ16 未回答。\n\n**Q17 已回答。** 哪个运算符会返回一个操作数除以另一个操作数后的余数？\n\nA) `$`  \nB) `#`\
+  \  \nC) `%`  \nD) 以上都不是\n\n答案是 C。\n\nQ17 未回答。\n\n**Q18 已回答。** 判断对错？`getElementsByTagName`\
+  \ 是一个 JavaScript 函数。\n\nA) 正确  \nB) 错误\n\n答案是 B。`getElementsByTagName` 实际上是 Web\
+  \ API 函数。它像普通的 JS 函数一样可用，但无论使用何种语言都可以访问。\n\nQ18 未回答。\n\n**Q19 已回答。** 给出一个在 JavaScript\
+  \ 中使用事件委托的例子。\n\n一个例子：如果你想要监听事件的元素可能在页面加载时不存在，请使用事件委托。相反，将事件处理程序放在父元素上，并查看 `event.target`。\n\
+  \n现代框架和库（如 React）使得这一点不那么必要。\n\nQ19 未回答。\n\n**Q20 已回答。** 下面的代码求值为 `true` 还是 `false`？\n\
+  \n```javascript\nBigInt(10000000000000000000) === 10000000000000000000\n```\n\n\
+  A) `true`  \nB) `false`\n\n答案是 B。然而，`BigInt(10000000000000000000) == 10000000000000000000`\
+  \ 是 `true`。\n\nQ20 未回答。\n\n**Q21 已回答。** 以下哪一项不是内置的 JS 错误类型？\n\nA) `Error`  \nB)\
+  \ `EvalError`  \nC) `SyntaxError`  \nD) `TypeError`  \nE) `UndefinedError`\n\n答案是\
+  \ E。\n\nQ21 未回答。\n\n**Q22 已回答。** 数字在 JavaScript 中是如何存储的？选择所有适用的选项。\n\nA) 双精度  \n\
+  B) 64 位  \nC) 浮点数\n\nA、B 和 C 都是正确的。\n\nQ22 未回答。\n\n**Q23 已回答。** 如果一个函数没有指定返回值，它返回什么值？\n\
+  \nA) `null`  \nB) `undefined`  \nC) `nothing`\n\n答案是 B。\n\nQ23 未回答。\n\n**Q24 已回答。**\
+  \ 调用一个对象上可能存在也可能不存在的方法的语法是什么？\n\n```javascript\nlet value = myAPI.testMethod?.();\n\
+  ```\n\nQ24 未回答。\n\n**Q25 已回答。** 以下哪一项不是有效的 Promise 方法？\n\nA) `Promise.some()`  \n\
+  B) `Promise.allSettled()`  \nC) `Promise.reject()`  \nD) `Promise.race()`\n\n答案是\
+  \ A。\n\nQ25 未回答。\n\n**Q26 已回答。** 如何根据变量值动态访问对象属性？\n\n用变量示例回答：\n\n```javascript\n\
+  let key = 'someValue';\nmyObject[key];\n```\n\nQ26 未回答。\n\n**Q27 已回答。** 判断对错？字符串在创建后可以被修改。\n\
+  \nA) 正确  \nB) 错误\n\n答案是 B。字符串在 JavaScript 中是不可变的。然而，指向字符串的变量当然可以重新赋值为另一个字符串。\n\n\
+  Q27 未回答。\n\n**Q28 已回答。** 判断对错？JavaScript 是同步的。\n\nA) 正确  \nB) 错误\n\n答案是 A。JavaScript\
+  \ 运行时中的队列是同步的，因此该语言是同步的。\n\nQ28 未回答。\n\n**Q29 已回答。** 判断对错？Promise 链中嵌套的 `catch`\
+  \ 可以捕获 Promise 链中更上层抛出的错误？\n\nA) 正确  \nB) 错误\n\n答案是 B。根据 MDN 文档：“嵌套是一种控制结构，用于限制\
+  \ `catch` 语句的作用域。具体来说，嵌套的 `catch` 只捕获其作用域及以下范围内的失败，而不是嵌套作用域之外链中更上层的错误”。\n\n更多阅读请参见：https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises\n\
+  \nQ29 未回答。\n\n**Q30 已回答。** 判断对错？`Map` 对象可以具有字符串以外的类型的键，例如数字。\n\nA) 正确  \nB) 错误\n\
+  \n答案是 A。\n\nQ30 未回答。\n\n**Q31 已回答。** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nconst\
+  \ map = new Map();\nmap.set({},1);\nconsole.log(map.get({}));\n```\n\nA) `undefined`\
+  \  \nB) 1  \nC) 编译时错误\n\n答案是 A。`map.get({})` 是有效的语法，但 `set` 中的对象和 `get` 中的对象是内存中两个不同的空对象。因此，getter\
+  \ 不返回值。如果用于 `map.set` 的对象首先被赋值给一个 `const`，然后该 `const` 被用于 `get`，则会返回适当的值。\n\nQ31\
+  \ 未回答。\n\n**Q32 已回答。** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet map1 = new Map([['a',\
+  \ 1],['b', 1],['c', 1]]);\nlet map2 = new Map([['a', 2],['b', 2]]);\nlet spreadMap\
+  \ = new Map([...map1, ...map2]);\n```\n\nA) `Map(3) {\"a\" => 1, \"b\" => 1, \"\
+  c\" => 1}`  \nB) `Map(3) {\"a\" => 2, \"b\" => 2, \"c\" => 1}`  \nC) `Map(5) {\"\
+  a\" => 1, \"b\" => 1, \"c\" => 1, \"a\" => 2, \"b\" => 2}`\n\n答案是 B。第二个映射中的任何相同键都会覆盖第一个映射中的键。\n\
+  \nQ32 未回答。\n\n**Q33 已回答。** 判断对错？括号表示法可以像点表示法一样链式使用？\n\nA) 正确  \nB) 错误\n\n答案是 A。`obj.prop1.prop2`\
+  \ 和 `obj['prop1']['prop2']` 是等价的。\n\nQ33 未回答。\n\n**Q34 已回答。** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nclass Person {\n  name: string;\n  DOB: string;\n}\nconsole.log(typeof\
+  \ Person);\n```\n\nA) `\"class\"`  \nB) `\"function\"`  \nC) `\"object\"`\n\n答案是\
+  \ B。这提醒我们，类只是让 JavaScript 感觉更面向对象的语法糖。\n\nQ34 未回答。\n\n**Q35 已回答。** 检查下面的代码。诊断将发生的错误。假设\
+  \ `handleResponse` 和 `handleError` 已正确定义。\n\n```javascript\npromise.then(function(response)\
+  \ {\n  this.handleResponse();\n},\nfunction(error) {\n  this.handleError();\n});\n\
+  ```\n\n答案是 `this` 的作用域不正确。相反，代码需要一种方法来获得 `this` 的正确作用域，例如使用 `bind` 或 `var self =\
+  \ this;`。\n\nQ35 未回答。\n\n**Q36 已回答。** 哪些类型的属性会出现在 `for...in` 循环中？\n\nA) 可执行属性  \n\
+  B) 可枚举属性  \nC) 可迭代属性\n\n答案是 B。\n\nQ36 未回答。\n\n**Q37 已回答。** 判断对错？`.bind(this)` 会立即调用绑定的函数。\n\
+  \nA) 正确  \nB) 错误\n\n答案是 B。\n\nQ37 未回答。\n\n**Q38 已回答。** 代码会打印什么？\n\n```javascript\n\
+  function getName() {\n  var name = \"Jon\";\n  function printName() {\n    console.log(name);\n\
+  \  }\n  printName();\n}\ngetName();\n```\n\nA) `Jon`  \nB) `undefined`  \nC) 编译时错误\n\
+  \n答案是 A。内部函数可以访问外部作用域中声明的变量。\n\nQ38 未回答。\n\n**Q39 已回答。** 判断对错？`await` 关键字是 `async`\
+  \ 函数所必需的？\n\nA) 正确  \nB) 错误\n\n答案是 B。`async` 函数返回一个 Promise，并且有许多用途。`await` 关键字增加了可能不需要的额外功能和开销。参见[此处](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)的示例。\n\
+  \nQ39 未回答。\n\n**Q40 已回答。** 函数可以通过哪三种方式引用自身进行递归？选择三个答案。\n\nA) 使用 `self.run`  \nB)\
+  \ 函数的名称  \nC) 作用域内引用该函数的变量  \nD) 使用 `arguments.callee`\n\n答案是 B、C、D。\n\nQ40 未回答。\n\
+  \n---\n\n## 测试 2 问题\n\n**Q1.** 考虑以下代码：\n\n```typescript\nclass Person {\n  firstName:\
+  \ string;\n  lastName: string;\n}\nconst myPerson = new Person();\nconsole.log(myPerson.a);\n\
+  ```\n\n解释原型链如何用于确定 `myPerson.a` 是 `undefined`？\n\nQ1 已回答。\n\n**Q2.** `class` 关键字在\
+  \ JavaScript 中做什么？\n\nA) 它传达了超越典型对象的实际含义  \nB) 它是让 JavaScript 更面向对象的语法糖  \nC) 它创建了一个可用于继承的类似接口的对象\n\
+  \nQ2 已回答。\n\n**Q3.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet x = 10;\nif(x){\n\
+  \  let x = 12;\n  console.log(x);\n}\n```\n\nA) 10  \nB) 12  \nC) 它会抛出一个错误\n\nQ3\
+  \ 已回答。\n\n**Q4.** 判断对错？来自 `queueMicrotask` 队列的任务以后进先出的方式执行。\n\nA) 正确  \nB) 错误\n\n\
+  Q4 已回答。\n\n**Q5.** 遵循“干净代码”原则，这个函数应该叫什么名字？\n\n```javascript\nconst pntDT = () =>\
+  \ {\n  const today = new Date();\n  const time = today.getHours() + \":\" + today;\n\
+  \  console.log(time);\n};\npntDT();\n```\n\nQ5 已回答。\n\n**Q6.** 以下哪一项不是创建和注册新自定义元素的步骤？\n\
+  \nA) 在 DOM 中创建一个 HTML 容器  \nB) 创建一个定义元素行为的 JavaScript 类  \nC) 使用 `CustomElementRegistry`\
+  \ 对象注册该类和一个表示元素名称的 DOMString\n\nQ6 已回答。\n\n**Q7.** 简要解释 Shadow DOM API。\n\nQ7 已回答。\n\
+  \n**Q8.** 哪个方法将影子 DOM 树附加到指定元素并返回对其 `ShadowRoot` 的引用？\n\nA) `Element.shadowAdd()`\
+  \  \nB) `Element.setDOMShadow()`  \nC) `Element.attachShadow()`\n\nQ8 已回答。\n\n**Q9.**\
+  \ `arr[2][1]` 会返回什么值？\n\n```javascript\nconst arr = [[\"a\", \"b\", \"c\"],\n  \
+  \           [\"d\", \"e\", \"f\"],\n             [\"g\", \"h\", \"i\"]];\n```\n\n\
+  A) `d`  \nB) `h`  \nC) `b`  \nD) 以上都不是\n\nQ9 已回答。\n\n**Q10.** 下面的代码会向 `<app>` 输出什么？\n\
+  \n```javascript\ndocument.getElementById(\"app\").innerHTML = `<div>hewohewo2</div>`\n\
+  ```\n\nA) `hewo      hewo2`  \nB) `hewohewo2`  \nC) `hewo hewo2`  \nD) 无法编译\n\n\
+  Q10 已回答。\n\n**Q11.** jQuery 使用什么模式来创建其全局可用的 jQuery 对象的单个实例？\n\nA) OOP  \nB) 工厂 \
+  \ \nC) 单例  \nD) 无\n\nQ11 已回答。\n\n**Q12.** `window.localStorage` 和 `window.sessionStorage`\
+  \ 有什么区别？选择最佳答案。\n\nA) `localStorage` 在 Web 浏览器中存储键/值对，并且 `localStorage` 在浏览器关闭后删除\
+  \  \nB) `sessionStorage` 在 Web 浏览器中存储键/值对，并且 `sessionStorage` 在浏览器关闭后删除  \nC) 两者都在\
+  \ Web 浏览器中存储键/值对，但 `localStorage` 在浏览器关闭后删除  \nD) 两者都在 Web 浏览器中存储键/值对，但 `sessionStorage`\
+  \ 在浏览器关闭后删除\n\nQ12 已回答。\n\n**Q13.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet arr1\
+  \ = [1, 2, 3];\narr1.push(4);\narr1.pop();\narr1.slice(1, 2);\narr1.splice(1, 2);\n\
+  console.log(arr1);\n```\n\nA) 1  \nB) `[1]`  \nC) `[1,2]`  \nD) `[2,3]`  \nE) 什么都不打印。\n\
+  \nQ13 已回答。\n\n**Q14.** 判断对错：`!` 运算符返回一个布尔值。选择一个选项。\n\nA) 正确  \nB) 错误\n\nQ14 已回答。\n\
+  \n**Q15.** 评估下面的代码。如果 `div` 和 `button` 都有点击监听器，如何阻止按钮上的点击冒泡到 `div`？\n\n```html\n\
+  <div><button>Click Me!</button></div>\n```\n\nA) 在按钮的 clickHandler 中使用 `Event.stopPropagation`\
+  \  \nB) 在 div 的 clickHandler 中使用 `Event.stopPropagation`  \nC) 在按钮的 clickHandler\
+  \ 中使用 `Event.stopBubble`  \nD) 在 div 的 clickHandler 中使用 `Event.stopBubble`\n\nQ15\
+  \ 已回答。\n\n**Q16.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet xyz = \"\";\nxyz ||=\
+  \ \"abc\";\nconsole.log(xyz);\n```\n\nA) `abc`  \nB) `''`  \nC) 编译时错误\n\nQ16 已回答。\n\
+  \n**Q17.** 以下两个函数的输出有什么区别？\n\n```javascript\nvoid function voidExample() {\n  console.log(\"\
+  No Error!\");\n}();\n\nfunction noVoidExample() {\n  console.log(\"No Error!\");\n\
+  }();\n```\n\nA) 函数 `noVoidExample` 执行并打印 `No Error`，而 `voidExample` 抛出一个错误。  \n\
+  B) 函数 `voidExample` 执行并打印 `No Error`，而 `noVoidExample` 抛出一个错误。  \nC) 两者都抛出一个错误\n\
+  \nQ17 已回答。\n\n**Q18.** 以下哪一项不是 `NodeList` 和 `Array` 之间的区别？\n\nA) `NodeList` 是 Web\
+  \ API，`Array` 是 JavaScript API  \nB) `NodeList` 不能包含超过 10 个项目  \nC) `NodeList` 属性可能是实时属性，如果\
+  \ DOM 更新（如 `childNode`），它们会更新  \nD) 许多数组函数在 `NodeList` 上不可用\n\nQ18 已回答。\n\n**Q19.**\
+  \ JavaScript 中哪些 ES6 数组函数返回一个新数组？选择所有正确的答案。\n\nA) `map()`  \nB) `forEach()`  \n\
+  C) `filter()`  \nD) `find()`\n\nQ19 已回答。\n\n**Q20.** JavaScript 使用数字原始值可以可靠表示的最大整数是多少？\n\
+  \nA) 2⁵³ - 1  \nB) 2³² - 1  \nC) 2⁶³ - 1  \nD) JavaScript 可以表示无限大的数字\n\nQ20 已回答。\n\
+  \n**Q21.** 哪个函数会将字符串修改为符合 URI 规范？\n\nA) `JSON.stringify()`  \nB) `encodeURI()` \
+  \ \nC) `encodeString()`  \nD) `JSON.parse()`\n\nQ21 已回答。\n\n**Q22.** 在 JS 中，64 位如何分配给一个数字来存储数字？\n\
+  \nQ22 已回答。\n\n**Q23.** 在计算机科学中，`null` 和 `undefined` 有什么区别？\n\nQ23 已回答。\n\n**Q24.**\
+  \ JavaScript 中减号（`-`）的技术名称是什么？\n\nA) 一元减法  \nB) 二元否定  \nC) 一元否定  \nD) 二元减法\n\nQ24\
+  \ 已回答。\n\n**Q25.** 判断对错？`super` 关键字不能在构造函数之外使用。\n\nA) 正确  \nB) 错误\n\nQ25 已回答。\n\n\
+  **Q26.** 访问 `cat` 对象上的 `color` 值的两种方法是什么？\n\n```javascript\nconst cat = {color:\
+  \ \"orange\"};\n```\n\nQ26 已回答。\n\n**Q27.** JavaScript 运行时中的栈是什么？\n\nQ27 已回答。\n\n\
+  **Q28.** 十六进制转义序列的语法是什么？\n\nA) `'\\xab1'`  \nB) `'\\10ab'`  \nC) `'\\x'`\n\nQ28\
+  \ 已回答。\n\n**Q29.** 编写代码，在纯 JavaScript（无 TypeScript）中创建一个自定义的抽象类？`abstract` 关键字在\
+  \ ES2015 中不可用。\n\nQ29 已回答。\n\n**Q30.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nconst\
+  \ badMap = new Map();\nbadMap.set('a', 1);\nbadMap.b = 2\nconsole.log(badMap)\n\
+  ```\n\nA) `Map(1) {\"a\" => 1}`  \nB) `Map(1) {\"b\" => 2}`  \nC) `Map(2) {\"a\"\
+  \ => 1, \"b\" => 2}`  \nD) 编译时错误\n\nQ30 已回答。\n\n**Q31.** 面向对象编程（OOP）的好处是什么？选择三个答案。\n\
+  \nA) 代码是可插拔或模块化的，因此类的源代码可以独立于应用程序的其余代码进行维护。  \nB) 对象的代码保持私有，这意味着其他对象只与对象的方法交互，因此内部代码被隐藏。\
+  \  \nC) 对象易于重用。它们可以插入到代码的多个部分。  \nD) 面向对象的代码执行速度更快，计算机资源使用最小化。\n\nQ31 已回答。\n\n**Q32.**\
+  \ 假设 `const map` 具有以下值：`Map(2) {\"a\" => 2, \"b\" => 2}`。在一行中，将 `map` 转换为二维数组。\n\
+  \nQ32 已回答。\n\n**Q33.** 判断对错？在 JavaScript 中，只有自定义类和对象可以被扩展？\n\nA) 正确  \nB) 错误\n\n\
+  Q33 已回答。\n\n**Q34.** 判断对错？只要创建了实例，实例级变量就可以在类中的任何位置访问。\n\nA) 正确  \nB) 错误\n\nQ34 已回答。\n\
+  \n**Q35.** 为什么这段代码无法编译？选择一个选项。\n\n```typescript\nlet i: number;\nif(5%3>2){\n  i=0;\n\
+  } else if(5%3>1){\n  i=1;\n}\nconsole.log(i);\n```\n\nA) 它编译正常  \nB) `5%3>2` 和 `5%3>1`\
+  \ 不返回布尔值，因此不能在 `if` 语句中使用  \nC) `i` 是一个局部变量，其值从未显式定义\n\nQ35 已回答。\n\n**Q36.** 判断对错？`length`\
+  \ 是字符串上的方法，是数组上的属性？\n\nA) 正确  \nB) 错误\n\nQ36 已回答。\n\n**Q37.** `function.call` 的第一个参数是什么？\n\
+  \nA) 被调用函数的参数  \nB) 它不接受任何选项  \nC) 调用该函数的实例对象\n\nQ37 已回答。\n\n**Q38.** `printName`\
+  \ 这种函数的技术名称是什么？选择所有正确的选项。\n\n```javascript\nfunction getName() {\n  var name = \"\
+  Jon\";\n  function printName() {\n    console.log(name);\n  }\n  printName();\n\
+  }\ngetName();\n```\n\nA) 内部函数  \nB) 包含函数  \nC) 闭包\n\nQ38 已回答。\n\n**Q39.** 判断对错？箭头函数只有在有多个参数时才需要括号。\n\
+  \nA) 正确  \nB) 错误\n\nQ39 已回答。\n\n**Q40.** 判断对错？类级变量可以在类中的任何位置访问。\n\nA) 正确  \nB) 错误\n\
+  \nQ40 已回答。\n\n**Q41.** 当你尝试给 `const` 赋值新值时，会抛出什么类型的错误？\n\nA) `ReferenceError`  \n\
+  B) `Error`  \nC) `RangeError`  \nD) `TypeError`\n\nQ41 已回答。\n\n**Q42.** 关于 getter\
+  \ 和 setter，以下哪些是正确的？选择 2 个选项。\n\nA) Getter 和 setter 提高了代码的可重用性。  \nB) Getter 和 setter\
+  \ 是面向对象编程的组成部分  \nC) Getter 和 setter 控制程序的流程  \nD) Getter 和 setter 维护封装\n\nQ42 已回答。\n\
+  \n**Q43.** 重写和重载是哪个面向对象编程原则的例子？\n\nA) 继承  \nB) 抽象  \nC) 多态  \nD) 封装\n\nQ43 已回答。\n\
+  \n**Q44.** 判断对错：`static` 变量不能在非静态方法中修改？\n\nA) 正确  \nB) 错误\n\nQ44 已回答。\n\n**Q45.**\
+  \ 如果 `str === 'test1'`，下面的代码会发生什么？\n\n```javascript\nswitch (str) {\n  case \"test1\"\
+  :\n  case \"test2\":\n    console.log(\"At test2\");\n}\n```\n\nA) 打印 “At test2”\
+  \  \nB) 什么都不做  \nC) 运行时错误\n\nQ45 已回答。\n\n**Q46.** 当 JavaScript 被描述为具有“一等函数”时，这意味着什么？\n\
+  \nA) 函数可以是递归的  \nB) 函数可以是匿名的  \nC) 函数像任何其他变量一样被对待  \nD) 函数使用花括号语法\n\nQ46 已回答。\n\n\
+  **Q47.** 判断对错？以下代码可以编译。\n\n```javascript\nasync function promiseMe() {\n  try {\n\
+  \    let z = await Promise.reject(30);\n  }\n}\n```\n\nA) 正确  \nB) 错误\n\nQ47 已回答。\n\
+  \n**Q48.** 判断对错？`Date.getDate()` 返回月份中的日期，值为 1-31，而 `Date.getDay()` 返回星期中的日期，值为\
+  \ 0-6。\n\nA) 正确  \nB) 错误\n\nQ48 已回答。\n\n**Q49.** 异步操作被放入什么类型的队列？\n\nA) 阻塞队列  \n\
+  B) 事件队列  \nC) 异步队列\n\nQ49 已回答。\n\n**Q50.** JavaScript 长期以来提供了哪三个函数用于在时间过去后执行代码？选择三个答案。\n\
+  \nA) `setTimeout()`  \nB) `setInterval()`  \nC) `callAsyncLoop()`  \nD) `requestAnimationFrame`\n\
+  \nQ50 已回答。\n\n**Q51.** 如果你想测量代码块的执行时间，可能会调用哪个 Web API？\n\nA) `window.now()`  \n\
+  B) `window.timer()`  \nC) `performance.now()`  \nD) `performance.timer()`\n\nQ51\
+  \ 已回答。\n\n**Q52.** 什么是 MIME 类型？\n\nQ52 已回答。\n\n**Q53.** 导出以下变量的简单语法是什么？\n\n```javascript\n\
+  let myLet = 10;\n```\n\nQ53 已回答。\n\n**Q54.** 哪个函数属性返回函数期望的参数数量？\n\nA) `Function.argsLength`\
+  \  \nB) `Function.length`  \nC) `Function.parameters`\n\nQ54 已回答。\n\n**Q55.** “仅为副作用导入模块”是什么意思？\n\
+  \nQ55 已回答。\n\n**Q56.** 判断对错？以下代码编译并打印 3？\n\n```javascript\nconst test = () => {\n\
+  \  return1 + 2;\n}\nconsole.log(test());\n```\n\nA) 正确  \nB) 错误\n\nQ56 已回答。\n\n\
+  **Q57.** 判断对错？以下两者是等价的。\n\n```javascript\nvar a, z = 1;\na = z;\n```\n\n和\n\n```javascript\n\
+  var a = z = 1;\n```\n\nA) 正确  \nB) 错误\n\nQ57 已回答。\n\n**Q58.** 判断对错？下面的代码返回 3。\n\n\
+  ```javascript\nconst arr = [1, 2];\nconst reduced = arr.reduce((accumulator, element)\
+  \ => accumulator);\n```\n\nA) 正确  \nB) 错误\n\nQ58 已回答。\n\n**Q59.** `\"use strict\"\
+  ;` 指令必须放在文件的什么位置？\n\nA) 顶部  \nB) 中间  \nC) 底部  \nD) 作为导入\n\nQ59 已回答。\n\n**Q60.**\
+  \ 如何在纯 JavaScript（无 TypeScript）中使用组合？\n\nQ60 已回答。\n\n**Q61.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nfor(let i = 1, j = 10; i< 5 < j; i += j/i){\n  console.log(Math.ceil(++i));\n\
+  }\n```\n\nA) 什么都不输出  \nB) 除以零错误  \nC) 1, 12  \nD) 它会进入无限循环\n\nQ61 已回答。\n\n**Q62.**\
+  \ 展示如何在不使用冒号 `:` 的情况下构造对象字面量。\n\nQ62 已回答。\n\n**Q63.** JavaScript 中数组的最大大小是多少？\n\n\
+  A) 2¹⁶ - 1  \nB) 2³² – 1  \nC) 2¹⁶ – 1  \nD) 2⁸ - 1\n\nQ63 已回答。\n\n**Q64.** 如果一个函数被调用时传递的参数少于声明的参数数量，缺失的参数会被赋予什么值？\n\
+  \nA) `null`  \nB) `undefined`  \nC) 0\n\nQ64 已回答。\n\n**Q65.** 什么是事件捕获阶段？\n\nQ65\
+  \ 已回答。\n\n**Q66.** 判断对错？Setter 在冻结对象上仍然有效。\n\nA) 正确  \nB) 错误\n\nQ66 已回答。\n\n**Q67.**\
+  \ `3 > 2 > 1` 返回什么？\n\nA) `true`  \nB) `false`  \nC) 0\n\nQ67 已回答。\n\n**Q68.** 以下两段代码返回相同的值。它们发生的方式有什么区别？\n\
+  \n```javascript\n'123'.length;  //第 1 行\nnew String(123).length;  //第 2 行\n```\n\
+  \nA) 第 1 行使用显式强制转换，第 2 行使用隐式强制转换  \nB) 第 1 行使用隐式强制转换，第 2 行使用显式强制转换  \nC) 没有区别\n\n\
+  Q68 已回答。\n\n**Q69.** 以下哪种情况不是使用匿名函数的时候？\n\nA) 作为类方法  \nB) 在闭包中  \nC) 作为回调  \nD)\
+  \ 作为 IIFE（立即调用函数表达式）\n\nQ69 已回答。\n\n**Q70.** 在 Web 浏览器中，布局时间和绘制时间有什么区别？\n\nQ70 已回答。\n\
+  \n**Q71.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet a = 8\na >>>= 3;\nconsole.log(a);\n\
+  ```\n\nA) 1  \nB) 10  \nC) 4\n\nQ71 已回答。\n\n**Q72.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  console.log([1, 2,,3].join(', '));\n```\n\nA) lint 错误  \nB) 1, 2, 3  \nC) 1, 2,\
+  \ , 3\n\nQ72 已回答。\n\n**Q73.** 给出一个如何避免网络调用中的竞态条件的例子？\n\nQ73 已回答。\n\n**Q74.** 什么是纯函数？\n\
+  \nQ74 已回答。\n\n**Q75.** 什么是柯里化？\n\nQ75 已回答。\n\n---\n\n## 测试 3 问题\n\n**Q1.** 判断对错？编译器会为下面的代码抛出一个错误。\n\
+  \n```javascript\nconst x = 10;\nx = 12;\n```\n\nA) 正确  \nB) 错误\n\nQ1 已回答。\n\n**Q2.**\
+  \ 下面代码的 TypeScript 类型是什么？\n\n```typescript\nconst x = \"hello\"\n```\n\nA) `\"hello\"\
+  `  \nB) `const`  \nC) `string`  \nD) 没有分配类型\n\nQ2 已回答。\n\n**Q3.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nlet person = {\n  age: 25,\n  name: 'Justin'\n}\nconst byRef =\
+  \ (myObj) => {\n  myObj.age = 30\n}\nbyRef(person);\nconsole.log(person.age);\n\
+  ```\n\nA) 25  \nB) 30  \nC) 编译时错误\n\nQ3 已回答。\n\n**Q4.** 下面的代码会向控制台输出什么，为什么？\n\n\
+  ```javascript\nlet x;\nif(x = true === true){\n  console.log(x);\n} else {\n  console.log('Not\
+  \ x');\n}\n```\n\nA) `true`  \nB) `false`  \nC) `Not x`  \nD) 编译时错误\n\nQ4 已回答。\n\
+  \n**Q5.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet x = 10;\nfunction myFunc(y){\n\
+  \  y = 12;\n}\nconsole.log(myFunc(x));\n```\n\nA) 10  \nB) 12  \nC) `undefined`\n\
+  \nQ5 已回答。\n\n**Q6.** 假设下面的聚合函数计算你的年龄天数，组合你的名和姓，并拆分你的地址。选择所有它违反干净代码原则的方式。\n\n```javascript\n\
+  const aggregator = (DOB, firstName, lastName, address, skills) => {...}\n```\n\n\
+  A) 函数命名不当  \nB) 函数应该使用 `function` 关键字而不是 lambda 函数  \nC) 函数做了太多事情，应该拆分  \nD) 函数没有对\
+  \ `skills` 参数做任何操作\n\nQ6 已回答。\n\n**Q7.** 从 JS 的角度来看，DOM 的技术定义是什么？\n\nQ7 已回答。\n\n\
+  **Q8.** 给定 `FancyButton` 类，如何扩展 button 以创建一个名为 `fancy-button` 的自定义元素？\n\nA) `customElements.extend('fancy-button',\
+  \ FancyButton, { extends: 'button' });`  \nB) `customElements.extend('fancy-button',\
+  \ FancyButton, { implements: 'button' });`  \nC) `customElements.define('fancy-button',\
+  \ FancyButton, { extends: 'button' });`  \nD) `customElements.define('fancy-button',\
+  \ FancyButton, { implements: 'button' });`\n\nQ8 已回答。\n\n**Q9.** 以下哪个是正确的字符串插值语法？\n\
+  \n```javascript\nconst x = 'me';\n```\n\nA) `` `Pick ${x}` ``  \nB) `` `Pick &{x}`\
+  \ ``  \nC) `'Pick ${x}'`  \nD) `'Pick &{x}'`\n\nQ9 已回答。\n\n**Q10.** 将对象实例总数限制为一个的模式名称是什么？\n\
+  \nA) 单例  \nB) 工厂  \nC) 设计  \nD) OOP\n\nQ10 已回答。\n\n**Q11.** 以下哪一项不是 `Set` 对象上的方法？\n\
+  \nA) `add()`  \nB) `next()`  \nC) `clear()`  \nD) `delete()`  \nE) `entries()`\n\
+  \nQ11 已回答。\n\n**Q12.** 哪个 window 方法允许你在浏览器内存中存储持久的键/值对？\n\nA) `window.browserStorage`\
+  \  \nB) `window.localStorage`  \nC) `window.persistentStorage`  \nD) 没有方法允许这样做\n\
+  \nQ12 已回答。\n\n**Q13.** 所有位运算都是在多少位的二进制数上执行的？\n\nA) 8  \nB) 16  \nC) 32  \nD) 64\n\
+  \nQ13 已回答。\n\n**Q14.** 什么时候 `delete` 运算符不会从对象中删除属性？\n\nQ14 已回答。\n\n**Q15.** 如果你需要获取对象的属性，应该调用什么方法？\n\
+  \nA) `Object.getKeyValues`  \nB) `Object.getList`  \nC) `Object.getNames`  \nD)\
+  \ `Object.getOwnPropertyNames`\n\nQ15 已回答。\n\n**Q16.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  console.log(2 * 3 ** 3);\n```\n\nA) 216  \nB) 18  \nC) 54  \nD) 编译时错误\n\nQ16 已回答。\n\
+  \n**Q17.** 评估下面的代码。一个字符的更改可以防止这一行抛出错误？\n\n```javascript\nconst dog = {\n  color:\
+  \ \"brown\",\n  breed: {\n    pure: true\n  }\n};\nconsole.log(dog.hair.short)\n\
+  ```\n\nQ17 已回答。\n\n**Q18.** 哪些数组函数在 `NodeList` 上不可用？选择所有适用的。\n\nA) `forEach()` \
+  \ \nB) `join()`  \nC) `filter()`  \nD) `map()`\n\nQ18 已回答。\n\n**Q19.** 以下哪一项不是 JSON\
+  \ 方法？\n\nA) `reverse()`  \nB) `parse()`  \nC) `stringify()`\n\nQ19 已回答。\n\n**Q20.**\
+  \ 判断对错？JavaScript 中有一个全局的 `Map` 对象。\n\nA) 正确  \nB) 错误\n\nQ20 已回答。\n\n**Q21.** `WeakSet`\
+  \ 对象是弱的是什么意思？\n\nQ21 已回答。\n\n**Q22.** 克服浮点数不精确性的一种方法是什么？\n\nA) 乘法和除法  \nB) 它按原样工作\
+  \  \nC) 通过扩展函数运行\n\nQ22 已回答。\n\n**Q23.** 评估下面的代码。如何重构它以使用更少的代码？\n\n```javascript\n\
+  const temp = object.prop1;\nconst test = ((temp === null || temp === undefined))\
+  \ ? undefined : temp.prop2;\n```\n\nQ23 已回答。\n\n**Q24.** 评估下面的代码。循环的第一个和最后一个输出是什么？\n\
+  \n```javascript\nfor(let i = 0; i <= 10; ++i){\n  console.log(i);\n}\n```\n\nA)\
+  \ 0, 9  \nB) 0, 10  \nC) 1, 9  \nD) 1, 10\n\nQ24 已回答。\n\n**Q25.** 在下面的 `MyChild`\
+  \ 类上创建一个函数，调用父类的 `printSomething` 方法。\n\n```javascript\nclass MyParent {\n  constructor(){}\n\
+  \  printSomething(){\n    console.log(5);\n  }\n}\nclass MyChild extends MyParent\
+  \ {\n  constructor(){\n    super()\n  }\n  printSomething(){\n    console.log(10);\n\
+  \  }\n}\n```\n\nQ25 已回答。\n\n**Q26.** 下面的代码返回什么，为什么？\n\n```javascript\nconst value\
+  \ = 10 / -0;\n```\n\nA) `NaN`  \nB) `-NaN`  \nC) `Infinity`  \nD) `-Infinity`\n\n\
+  Q26 已回答。\n\n**Q27.** JavaScript 运行时中的堆是什么？\n\nQ27 已回答。\n\n**Q28.** 当在字符串字面量值上调用\
+  \ String 对象方法时，JavaScript 如何在幕后处理它？\n\nQ28 已回答。\n\n**Q29.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconst obj = {\n  a: 1,\n  b: 2\n};\nconst arr = [];\nconsole.log(arr[0]\
+  \ = {...obj});\n```\n\nA) 1, 2  \nB) `{...obj}`  \nC) `{a: 1, b: 2}`  \nD) 无法编译\n\
+  \nQ29 已回答。\n\n**Q30.** `Map.delete(key)` 返回什么？\n\nA) 没有返回值  \nB) 总是 `true`  \nC)\
+  \ 总是 `false`  \nD) 如果键被删除则返回 `true`，如果项目不存在且未被删除则返回 `false`\n\nQ30 已回答。\n\n**Q31.**\
+  \ 以下哪一项不是使用 TypeScript 时继承的例子？选择一个选项。\n\nA) 一个对象具有其超类拥有的字段  \nB) 一个对象具有其超类拥有的方法\
+  \  \nC) 一个对象具有其接口拥有的方法  \nD) 一个对象具有其超类拥有的静态字段\n\nQ31 已回答。\n\n**Q32.** 判断对错？在 JavaScript\
+  \ 中，一个对象只能有一个子类，但可以有无限多个父类。\n\nA) 正确  \nB) 错误\n\nQ32 已回答。\n\n**Q33.** 判断对错？一个对象可以实现多个接口。假设\
+  \ TypeScript 已启用。\n\nA) 正确  \nB) 错误\n\nQ33 已回答。\n\n**Q34.** 代码会打印什么？选择一个选项。\n\n\
+  ```javascript\nclass MyClass {\n  static staticMethod() {\n    return this.name;\n\
+  \  }\n  constructor() {\n    this.name = 'Jon';\n  }\n}\nconst me = new MyClass();\n\
+  console.log(MyClass.staticMethod());\n```\n\nA) `Jon`  \nB) `MyClass`  \nC) 编译时错误\
+  \  \nD) 运行时错误\n\nQ34 已回答。\n\n**Q35.** 判断对错？`String` 是一种原始数据类型。\n\nA) 正确  \nB) 错误\n\
+  \nQ35 已回答。\n\n**Q36.** 展示两种使现有数组为空的方法。\n\nQ36 已回答。\n\n**Q37.** 代码执行后 `str` 的值是什么？\n\
+  \n```javascript\nconst str = \"  this\".concat(\"that   \").substring(3).trim().valueOf(2);\n\
+  ```\n\nA) 2  \nB) `h`  \nC) `histhat`  \nD) 无法编译\n\nQ37 已回答。\n\n**Q38.** JavaScript\
+  \ 中的生成器函数是什么？\n\nQ38 已回答。\n\n**Q39.** 以下哪一个是类的有效修饰符，假设 TypeScript 已启用？选择一个选项。\n\n\
+  A) `private`  \nB) `final`  \nC) `abstract`  \nD) `public`  \nE) `default`\n\nQ39\
+  \ 已回答。\n\n**Q40.** 以下哪一项不是 JavaScript 中的保留字？选择一个选项。\n\nA) `abstract`  \nB) `compile`\
+  \  \nC) `do`  \nD) `enum`\n\nQ40 已回答。\n\n**Q41.** 这段代码的输出是什么？\n\n```javascript\n\
+  class TestClass{\n  constructor() {\n    this.myInt = 5;\n  }\n  mainMethod(){\n\
+  \    const test = new TestClass();\n    test.myInt = 6;\n    console.log(test.incrementIntAgain(test.incrementInt(test.myInt)));\n\
+  \  }\n  incrementInt (theirInt) {\n    return theirInt++;\n  }\n  incrementIntAgain\
+  \ (theirInt) {\n    return ++theirInt;\n  }\n}\n```\n\nA) 5  \nB) 6  \nC) 7  \n\
+  D) 8\n\nQ41 已回答。\n\n**Q42.** 这段代码的输出是什么？\n\n```javascript\nclass TestClass{\n  constructor()\
+  \ {\n    this.myInt = 5;\n  }\n  mainMethod(){\n    const test = new TestClass();\n\
+  \    test.myInt = 6;\n    console.log(test.incrementIntAgain(test.incrementInt(test.myInt)));\n\
+  \  }\n  incrementInt (theirInt) {\n    return theirInt++;\n  }\n  incrementIntAgain\
+  \ (theirInt) {\n    return ++theirInt;\n  }\n}\n```\n\nA) 5  \nB) 6  \nC) 7  \n\
+  D) 8\n\nQ42 已回答。\n\n**Q43.** 判断对错：实例级对象可以访问静态变量？\n\nA) 正确  \nB) 错误\n\nQ43 已回答。\n\
+  \n**Q44.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nfunction Dog(name) {\n  this.name\
+  \ = name;\n}\nconst buddy = new Dog(\"buddy\");\nconst rover = Object.create(buddy);\n\
+  console.log(Object.getPrototypeOf(rover));\nconsole.log(Object.getPrototypeOf(buddy));\n\
+  ```\n\nQ44 已回答。\n\n**Q45.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet x = (1, 2,\
+  \ 3);\nconsole.log(x);\n```\n\nA) 1  \nB) 2  \nC) 3  \nD) 编译时错误\n\nQ45 已回答。\n\n\
+  **Q46.** `RegExp` 字面量表示法和构造函数之间的一些区别是什么？选择所有适用的。\n\nA) 字面量表示法的参数用斜杠括起来，没有引号  \n\
+  B) 字面量表示法在编译时求值  \nC) 构造函数不使用斜杠，但使用引号  \nD) 构造函数在运行时求值\n\nQ46 已回答。\n\n**Q47.** 打印顺序是什么？\n\
+  \n```javascript\nfunction resolveQuickly(x) {\n  return new Promise(resolve => {\n\
+  \    setTimeout(() => {\n      console.log(x)\n    }, 1);\n  });\n}\nasync function\
+  \ asyncTest() {\n  var x = resolveQuickly(10);\n  console.log(5);\n}\nasyncTest();\n\
+  ```\n\nA) 10, 5  \nB) 5, 10  \nC) 什么都不打印。\n\nQ47 已回答。\n\n**Q48.** JavaScript 这个名字从何而来？\n\
+  \nQ48 已回答。\n\n**Q49.** 以下哪一项不是 Promise 相对于旧式回调的优势？\n\nA) 执行速度  \nB) `.then()` 链式调用\
+  \  \nC) Promise 回调总是按照它们在事件队列中放置的顺序被调用  \nD) 更好的错误处理  \nE) Promise 避免了控制反转\n\nQ49\
+  \ 已回答。\n\n**Q50.** 判断对错？`do-while` 循环总是至少执行一次。\n\nA) 正确  \nB) 错误\n\nQ50 已回答。\n\n\
+  **Q51.** 展示一个递归调用 `setTimeout` 来模拟 `setInterval` 的例子。\n\nQ51 已回答。\n\n**Q52.** JSON\
+  \ 支持哪些数据类型？选择所有适当的答案。\n\nA) `string`  \nB) `number`  \nC) `object`  \nD) `null`\
+  \  \nE) `array`  \nF) `boolean`\n\nQ52 已回答。\n\n**Q53.** 将 `theFunction` 作为默认导出的两种语法是什么？\n\
+  \nQ53 已回答。\n\n**Q54.** 函数声明和函数表达式在语法上有什么区别？\n\nQ54 已回答。\n\n**Q55.** 判断对错？`import`\
+  \ 可以作为函数调用。\n\nA) 正确  \nB) 错误\n\nQ55 已回答。\n\n**Q56.** 下面的代码会向控制台打印什么，为什么？\n\n```javascript\n\
+  console.log(x)\nx = 5;\nif(x){\n  var x = 10;\n  console.log(x);\n}\n```\n\nA) 5,\
+  \ 10  \nB) 10, 10  \nC) 5, 5\n\nQ56 已回答。\n\n**Q57.** 数组 `reduce()` 的目的是什么？\n\nA)\
+  \ 将数组减少为回调  \nB) 将数组减少为复合函数  \nC) 将数组减少为单个值。\n\nQ57 已回答。\n\n**Q58.** 什么是记忆化？\n\n\
+  A) 通过缓存先前计算的结果来提高函数性能  \nB) JavaScript 中不可用的东西  \nC) 为将来的对象使用创建对象属性的组合\n\nQ58 已回答。\n\
+  \n**Q59.** 在 JavaScript 中创建一个抽象类的例子。\n\nQ59 已回答。\n\n**Q60.** 给出一个使用 `String.prototype.match`\
+  \ 将字符串通过正则表达式运行的例子。\n\nQ60 已回答。\n\n**Q61.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  for(let i = 6; i > 0; i-=2){\n  if(i%2){\n    continue;\n  }\n  console.log(i)\n\
+  }\n```\n\nA) 什么都不输出  \nB) 4, 2, 0  \nC) 6, 4, 2  \nD) 4, 2\n\nQ61 已回答。\n\n**Q62.**\
+  \ 判断对错？对象上重复的属性名被视为语法错误。\n\nA) 正确  \nB) 错误\n\nQ62 已回答。\n\n**Q63.** 判断对错？以下语法不正确。\n\
+  \n```javascript\nfunction foo(arg) {\n  let arg = 1;\n}\n```\n\nA) 正确  \nB) 错误\n\
+  \nQ63 已回答。\n\n**Q64.** 包含传递给函数的所有对象值的类数组对象的名称是什么？\n\nA) `arguments`  \nB) `args`\
+  \  \nC) `params`  \nD) `parameters`\n\nQ64 已回答。\n\n**Q65.** 下面代码中的第三个参数 `true` 用于什么？\n\
+  \n```javascript\nelement.addEventListener(\"click\", e => console.log(element.eventPhase),\
+  \ true);\n```\n\nA) 启用捕获阶段的事件捕获  \nB) 启用冒泡阶段的事件捕获  \nC) 它在 `addEventListener` 函数中未使用\n\
+  \nQ65 已回答。\n\n**Q66.** 在考虑强制转换时，什么是包装对象？\n\nQ66 已回答。\n\n**Q67.** `3 > 2 == 1` 返回什么？\n\
+  \nA) `true`  \nB) `false`  \nC) 0\n\nQ67 已回答。\n\n**Q68.** JavaScript 中的真值是什么？\n\n\
+  Q68 已回答。\n\n**Q69.** 以下语法的名称是什么？\n\n```javascript\n(function() {\n  console.log('IIFE');\n\
+  })();\n```\n\nQ69 已回答。\n\n**Q70.** 箭头函数的作用域是什么？\n\nA) 全局  \nB) 它们被定义时的作用域  \nC)\
+  \ 块级\n\nQ70 已回答。\n\n**Q71.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet a = 8\na\
+  \ >>>= 5;\nconsole.log(a);\n```\n\nA) -1  \nB) -1167541818  \nC) 0\n\nQ71 已回答。\n\
+  \n**Q72.** 判断对错？数组上的 `shift` 和 `pop` 方法返回一个新数组，而不改变原始数组的值。\n\nA) 正确  \nB) 错误\n\n\
+  Q72 已回答。\n\n**Q73.** 判断对错？分配给 `const` 的对象是不可变的。\n\nA) 正确  \nB) 错误\n\nQ73 已回答。\n\n\
+  **Q74.** 命令式编程和声明式编程有什么区别？\n\nQ74 已回答。\n\n**Q75.** 语句和表达式有什么区别？\n\nA) 语句执行一个动作，表达式求值为一个值\
+  \  \nB) 语句求值为一个值，表达式执行一个动作  \nC) 以上都不正确\n\nQ75 已回答。\n\n---\n\n## 测试 4 问题\n\n**Q1.**\
+  \ 判断对错？评估下面的代码。`bark()` 现在是 `Dog` 类上的一个函数。\n\n```javascript\nclass Dog {\n  noise:\
+  \ string;\n  legs: number;\n}\nDog.bark = () => {\n  console.log('woof');\n}\nlet\
+  \ dog = new Dog();\ndog.bark();\n```\n\nA) 正确  \nB) 错误\n\nQ1 已回答。\n\n**Q2.** 判断对错？评估下面的代码。`bark()`\
+  \ 现在是 `Puppy` 类上的一个函数。\n\n```javascript\nclass Dog {\n  noise: string;\n  legs:\
+  \ number;\n}\nDog.prototype.bark = () => {\n  console.log('woof');\n}\nclass Puppy\
+  \ extends Dog {\n  pottyTrained: boolean;\n}\nlet dog = new Puppy();\ndog.bark();\n\
+  ```\n\nA) 正确  \nB) 错误\n\nQ2 已回答。\n\n**Q3.** 评估下面的代码。`getDOB` 函数有什么问题？此问题已启用 TypeScript。\n\
+  \n```typescript\nconst getDOB = (firstName: string, lastName: string) => {\n  return\
+  \ `${firstName} ${lastName}`;\n}\n```\n\nA) `getDOB` 在字符串插值中有不正确的语法  \nB) 参数的类型错误\
+  \  \nC) 它返回 `undefined`  \nD) 它命名不当\n\nQ3 已回答。\n\n**Q4.** 以下哪一个是自定义元素的控制器？\n\nA)\
+  \ `CustomHTML` 对象  \nB) `HTMLElementRegistry` 对象  \nC) `CustomController` 对象  \n\
+  D) `CustomElementRegistry` 对象\n\nQ4 已回答。\n\n**Q5.** 自定义元素应该扩展哪个类？\n\nA) `DOMElement`\
+  \  \nB) `HTMLElement`  \nC) `CustomElement`\n\nQ5 已回答。\n\n**Q6.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nlet x = 2.2 + 4.4 === 6.6;\nconsole.log(x);\n```\n\nA) `undefined`\
+  \  \nB) `true`  \nC) `false`  \nD) 无法编译  \nE) 6.6\n\nQ6 已回答。\n\n**Q7.** 下面的 ES6\
+  \ 之前的代码会向控制台输出什么，为什么？TypeScript 未启用。\n\n```javascript\nfunction SomeClass() {\n\
+  \  this.publicVar = 10;\n}\nSomeClass.staticVar = 10;\nconst myClass = new SomeClass();\n\
+  myClass.publicVar = 12;\nmyClass.staticVar = 15;\nconst myClass2 = new SomeClass();\n\
+  console.log(myClass2.publicVar);\nconsole.log(myClass2.staticVar);\nconsole.log(SomeClass.staticVar);\n\
+  ```\n\nA) 10, undefined, 12  \nB) 10, 12, 12  \nC) 10, 15, 15  \nD) 12, undefined,\
+  \ 10  \nE) 10, undefined, 10\n\nQ7 已回答。\n\n**Q8.** 编写一个函数，用一行代码打印下面字符串中的不同元音字母。\n\
+  \n```javascript\nconst str = \"abcdeeef\";\n```\n\nQ8 已回答。\n\n**Q9.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconsole.log(Math.floor(2.1) === new Float32Array(2.1));\n```\n\n\
+  A) `true`  \nB) `false`  \nC) 编译时错误\n\nQ9 已回答。\n\n**Q10.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconsole.log(Math.sin(Math.PI) === 0);\n```\n\nA) `true`  \nB) `false`\n\
+  \nQ10 已回答。\n\n**Q11.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nz = 10;\nconsole.log(z);\n\
+  ```\n\nA) 10  \nB) 编译时错误  \nC) `z`\n\nQ11 已回答。\n\n**Q12.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nlet max;\nconst numberArray = [3, 5, 2];\nnumberArray.forEach((element)\
+  \ => {\n  if (max < element) {\n    max = element;\n  }\n});\nconsole.log(max);\n\
+  ```\n\nA) 3  \nB) 5  \nC) 2  \nD) `undefined`\n\nQ12 已回答。\n\n**Q13.** 哪个位运算符反转 32\
+  \ 位数字的位？\n\nA) `>>`  \nB) `|`  \nC) `&`  \nD) `~`\n\nQ13 已回答。\n\n**Q14.** 哪个运算符可以从对象中删除属性？\n\
+  \nA) `remove`  \nB) `delete`  \nC) `return`  \nD) `configure`\n\nQ14 已回答。\n\n**Q15.**\
+  \ 访问下面 getter 的正确语法是什么？\n\n```javascript\nconst obj = {\n  count: [1, 2, 3],\n \
+  \ get last() {\n    return this.count.pop();\n  }\n};\n```\n\nA) `obj.get(last)`\
+  \  \nB) `obj.getLast`  \nC) `obj.last`\n\nQ15 已回答。\n\n**Q16.** 什么时候可能会使用 `new.target`？\n\
+  \nQ16 已回答。\n\n**Q17.** 你会使用什么方法将 `NodeList` 转换为数组？\n\nA) `Array.to()`  \nB) `Array.from()`\
+  \  \nC) `NodeList.to()`  \nD) `NodeList.from()`\n\nQ17 已回答。\n\n**Q18.** 判断对错？有两种\
+  \ `NodeList`：静态和动态。\n\nA) 正确  \nB) 错误\n\nQ18 已回答。\n\n**Q19.** `Atomics` 不与哪个对象一起使用？\n\
+  \nA) `Buffer`  \nB) `SharedArrayBuffer`  \nC) `ArrayBuffer`\n\nQ19 已回答。\n\n**Q20.**\
+  \ 哪种 JavaScript 错误类型通常用作用户定义错误对象的基础？\n\nA) `ReferenceError`  \nB) `SyntaxError`\
+  \  \nC) `TypeError`  \nD) `Error`\n\nQ20 已回答。\n\n**Q21.** 哪个属性保证无论环境如何都能访问全局对象？\n\
+  \nA) `self`  \nB) `globalThis`  \nC) `this`  \nD) `window`\n\nQ21 已回答。\n\n**Q22.**\
+  \ 关于 `undefined`，以下哪一项是不正确的？\n\nA) 它是全局对象的一个属性  \nB) 它是全局作用域中的一个变量  \nC) `undefined`\
+  \ 的初始值是原始值 `undefined`  \nD) 它有一个名为 `Undefined` 的对应对象\n\nQ22 已回答。\n\n**Q23.** 判断对错？可选链可以像下面这样堆叠？\n\
+  \n```javascript\nlet stateStats = state.area?.land?.sqmiles;\n```\n\nA) 正确  \nB)\
+  \ 错误\n\nQ23 已回答。\n\n**Q24.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nconst a;\na.test\
+  \ ??= 25;\nconsole.log(a.test);\n```\n\nA) `undefined`  \nB) 25  \nC) 编译时错误\n\n\
+  Q24 已回答。\n\n**Q25.** JavaScript 中括号 `()` 的技术名称是什么？\n\nA) 分组运算符  \nB) 括号运算符  \nC)\
+  \ 绑定运算符\n\nQ25 已回答。\n\n**Q26.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet str =\
+  \ new String('aaa');\nstr.concat('bbb').concat('ccc');\nconsole.log(str);\n```\n\
+  \nA) `aaa`  \nB) `aaabbbccc`  \nC) `ccc`  \nD) `bbbccc`\n\nQ26 已回答。\n\n**Q27.**\
+  \ JavaScript 运行时中的队列是什么？\n\nQ27 已回答。\n\n**Q28.** 判断对错？纯 JavaScript（无 TypeScript）从\
+  \ ES2015 开始就有抽象类。\n\nA) 正确  \nB) 错误\n\nQ28 已回答。\n\n**Q29.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconst b = {\n  a: 1,\n  b: 2,\n  3: 3\n}\nfor(key in b){\n  console.log(b[key]);\n\
+  }\n```\n\nA) 1 2 3  \nB) 1 2  \nC) Uncaught SyntaxError: Unexpected number\n\nQ29\
+  \ 已回答。\n\n**Q30.** 使用多个键/值对初始化 `Map` 对象的语法是什么？\n\nQ30 已回答。\n\n**Q31.** 判断对错？接口可以扩展另一个接口。假设\
+  \ TypeScript 已启用。\n\nA) 正确  \nB) 错误\n\nQ31 已回答。\n\n**Q32.** 判断对错？假设 TypeScript 已启用。一个对象继承其父类的所有字段和方法。\n\
+  \nA) 正确  \nB) 错误\n\nQ32 已回答。\n\n**Q33.** 以下哪些是 TypeScript 接口方法的有效修饰符？选择所有正确的答案。\n\
+  \nA) `public`  \nB) `protected`  \nC) `private`  \nD) `abstract`  \nE) 以上都不是。\n\n\
+  Q33 已回答。\n\n**Q34.** 判断对错？`static` 关键字在 JavaScript 中不是有效的修饰符。相反，需要像 TypeScript 这样的类型超集才能使\
+  \ `static` 工作。\n\nA) 正确  \nB) 错误\n\nQ34 已回答。\n\n**Q35.** 哪一行代码块会打印以下字符：`☃⌨ ὀ˿`？\n\
+  \nQ35 已回答。\n\n**Q36.** 数组中的位置 3 有什么（如果有的话）？\n\n```javascript\nconst arr = [1, 2];\n\
+  arr.length = 3;\n```\n\nA) 它是空的  \nB) 它实际上没有被创建  \nC) `null`\n\nQ36 已回答。\n\n**Q37.**\
+  \ 写一个一行示例，反转 `array.reduce` 函数。\n\nQ37 已回答。\n\n**Q38.** 箭头函数的一些限制是什么？选择所有正确的选项。\n\
+  \nA) 箭头函数不应作为方法使用  \nB) 箭头函数没有 `arguments`、`super` 或 `new.target` 关键字  \nC) 箭头函数不能在其主体中使用\
+  \ `yield` 关键字  \nD) 箭头函数不能用作构造函数\n\nQ38 已回答。\n\n**Q39.** 传统函数和箭头函数的默认作用域有什么区别？\n\
+  \nQ39 已回答。\n\n**Q40.** 关于访问修饰符，以下哪些通常是正确的？\n\nA) 字段应具有尽可能窄的访问修饰符  \nB) 方法应具有尽可能宽的访问修饰符\
+  \  \nC) 除非字段是常量，否则避免使用公共字段\n\nQ40 已回答。\n\n**Q41.** 如果在 `for` 循环中忘记括号，会抛出什么类型的错误？\n\
+  \nA) `SyntaxError`  \nB) `TypeError`  \nC) `ReferenceError`\n\nQ41 已回答。\n\n**Q42.**\
+  \ 判断对错？下面的代码是重载的例子。\n\n```javascript\nconsole.log({a: 1}.toString = 'Test');\n```\n\
+  \nA) 正确  \nB) 错误\n\nQ42 已回答。\n\n**Q43.** 判断对错？JavaScript 支持类上的静态变量。\n\nA) 正确  \n\
+  B) 错误\n\nQ43 已回答。\n\n**Q44.** 给出一个使用新的 ES6 语法创建父/子关系的例子。\n\nQ44 已回答。\n\n**Q45.**\
+  \ 判断对错？`try` 语句必须始终后跟至少一个 `catch` 语句。\n\nA) 正确  \nB) 错误\n\nQ45 已回答。\n\n**Q46.**\
+  \ 判断对错？当 `RegExp` 会变化时使用 `RegExp` 字面量表示法，当 `RegExp` 保持不变时使用 `RegExp` 构造函数。\n\nA)\
+  \ 正确  \nB) 错误\n\nQ46 已回答。\n\n**Q47.** 判断对错？Promise 在 JavaScript 中是异步的。\n\nA) 正确\
+  \  \nB) 错误\n\nQ47 已回答。\n\n**Q48.** Web Workers 的目的是什么？\n\nA) 在主线程之外的单独线程上执行昂贵的任务\
+  \  \nB) 将事件卸载到不同的对象  \nC) 加速原型继承\n\nQ48 已回答。\n\n**Q49.** `Promise.resolve()` 返回什么类型的对象？\n\
+  \nQ49 已回答。\n\n**Q50.** `setTimeout()` 和 `setInterval()` 有什么区别？选择两个选项。\n\nA) `setTimeout`\
+  \ 在指定时间过去后执行一次  \nB) `setInterval` 以给定的延迟重复执行  \nC) `setTimeout` 以给定的延迟重复执行  \n\
+  D) `setInterval` 在指定时间过去后执行一次\n\nQ50 已回答。\n\n**Q51.** 判断对错？`setInterval` 的间隔时间包括执行代码所花费的时间。\n\
+  \nA) 正确  \nB) 错误\n\nQ51 已回答。\n\n**Q52.** 判断对错？下面的代码可以编译。\n\n```javascript\nconst\
+  \ array = [1, 2, 3];\nfor (let i = 0; i < array1.length; array1[i++] = String.fromCharCode(96\
+  \ + i));\n```\n\nA) 正确  \nB) 错误\n\nQ52 已回答。\n\n**Q53.** 导入默认导出与导入命名非默认导出有什么区别？\n\
+  \nA) 花括号  \nB) 默认导出中从不包含名称  \nC) 没有区别\n\nQ53 已回答。\n\n**Q54.** 判断对错？函数声明会被提升，函数表达式不会被提升。\n\
+  \nA) 正确  \nB) 错误\n\nQ54 已回答。\n\n**Q55.** 哪个语句会显示导入模块的 URL？\n\nA) `import.path` \
+  \ \nB) `path.show`  \nC) `path.directory`  \nD) `import.meta`\n\nQ55 已回答。\n\n**Q56.**\
+  \ `console.log`、`console.error` 和 `console.warn` 有什么区别？\n\nQ56 已回答。\n\n**Q57.**\
+  \ 在以下文档中看到 `prototype` 的意义是什么：`Array.prototype.reduce()` 与 `Array.from()`？选择所有正确的答案。\n\
+  \nA) `prototype` 表示 `reduce` 是一个实例级方法  \nB) 缺少 `prototype` 表示 `from` 是一个类级方法  \n\
+  C) `prototype` 表示 `reduce` 继承自 `Object`\n\nQ57 已回答。\n\n**Q58.** 最大调用栈超出错误是如何触发的？\n\
+  \nQ58 已回答。\n\n**Q59.** 以下哪一项不是 Web API `window` 对象上用于调整大小的可用方法？\n\nA) `resizeFrom()`\
+  \  \nB) `resizeBy()`  \nC) `resizeTo()`  \nD) `sizeToContent()`\n\nQ59 已回答。\n\n\
+  **Q60.** `String.prototype.replace()` 可以接受哪两种类型作为第一个参数？选择所有正确的选项。\n\nA) `String`\
+  \  \nB) `regex`  \nC) `Object`\n\nQ60 已回答。\n\n**Q61.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  for(let i = 6; i < 10; i*1.5){\n  if(i%2){\n    continue;\n  }\n  console.log(i)\n\
+  }\n```\n\nA) 6  \nB) 6, 9  \nC) 它进入无限循环  \nD) Lint 错误\n\nQ61 已回答。\n\n**Q62.** `Object.assign()`\
+  \ 和展开语法之间的一个区别是什么？\n\nA) 展开语法调用 setter，`Object.assign()` 不调用  \nB) `Object.assign`\
+  \ 调用 setter，展开语法不调用  \nC) 它们的行为实际上相同\n\nQ62 已回答。\n\n**Q63.** 给出一个一行检查对象 `dog` 上是否存在属性的例子。\n\
+  \n```javascript\nconst dog = { sound: 'woof', legs: 4 }\n```\n\nQ63 已回答。\n\n**Q64.**\
+  \ 以下哪一项不是将 `arguments` 函数对象转换为数组的方法？\n\nA) `arguments.assign(arguments)`  \nB) `Array.prototype.slice.call(arguments);`\
+  \  \nC) `Array.from(arguments);`  \nD) `[...arguments]`\n\nQ64 已回答。\n\n**Q65.**\
+  \ 事件处理的目标阶段是什么？\n\nQ65 已回答。\n\n**Q66.** 双感叹号（`!!`）是做什么的？\n\nA) 什么都不做  \nB) 返回对象的真值\
+  \  \nC) 抛出一个错误\n\nQ66 已回答。\n\n**Q67.** `1 < 2 < 3` 返回什么？\n\nA) `true`  \nB) `false`\n\
+  \nQ67 已回答。\n\n**Q68.** JavaScript 如何在布尔上下文中评估值或对象的真值或假值？\n\nA) 类型强制转换  \nB) 它是每个对象上的一个属性\
+  \  \nC) 某些值永远没有真值或假值\n\nQ68 已回答。\n\n**Q69.** 使用 IIFE 的目的是什么？选择所有可能的答案。\n\nA) 设置变量值\
+  \  \nB) 在对象上初始化值  \nC) 在闭包中用于初始化值  \nD) 运行一次性函数\n\nQ69 已回答。\n\n**Q70.** 什么是词法作用域的例子？选择所有可能的答案。\n\
+  \nA) 作用域根据变量输入动态定义  \nB) `let self = this;` //在父函数中，然后 `self` 对内部函数可用  \nC) 内部函数的作用域包含父函数的作用域\n\
+  \nQ70 已回答。\n\n**Q71.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\nlet a = 3;\na <<= 1;\n\
+  console.log(a);\n```\n\nA) 3  \nB) 4  \nC) 6  \nD) 8\n\nQ71 已回答。\n\n**Q72.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nbadCode = () => {\n  let arr = [1,2,3,4];\n  const inner = () =>\
+  \ {\n    return arr.pop(2)\n  }\n  return inner;\n}\nconsole.log(badCode()());\n\
+  ```\n\nA) linting 错误  \nB) 3, 4  \nC) 34  \nD) 4\n\nQ72 已回答。\n\n**Q73.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconst obj = { a: 1 };\nlet obj2 = obj;\nobj2.a = 2;\nconsole.log(obj.a);\n\
+  ```\n\nA) 1  \nB) 2  \nC) `undefined`\n\nQ73 已回答。\n\n**Q74.** 编程中的副作用是什么？\n\nQ74\
+  \ 已回答。\n\n**Q75.** 判断对错？`Array.prototype.filter()` 返回一个包含所有未通过提供的函数测试的项目的数组。\n\n\
+  A) 正确  \nB) 错误\n\nQ75 已回答。\n\n---\n\n## 附加问题（来自原文）\n\n**Q43.** 判断对错？JavaScript 不支持重载？\n\
+  \nA) 正确  \nB) 错误\n\nQ43 已回答。\n\n**Q44.** 不使用类语法，从父对象创建一个子对象。\n\nQ44 已回答。\n\n**Q45.**\
+  \ 在数组的 `forEach` 循环中，`return` 语句做什么？\n\nA) 什么都不做  \nB) 返回指定的值  \nC) 结束该循环\n\nQ45\
+  \ 已回答。\n\n**Q46.** 判断对错？`for` 循环中最多有三个参数。\n\nA) 正确  \nB) 错误\n\nQ46 已回答。\n\n**Q47.**\
+  \ 判断对错？`RegExp` 没有任何属性。\n\nA) 正确  \nB) 错误\n\nQ47 已回答。\n\n**Q48.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nfunction resolveQuickly(x) {\n  return new Promise(resolve => {\n\
+  \    console.log(x)\n  });\n}\nasync function asyncTest() {\n  var x = resolveQuickly(10);\n\
+  \  console.log(5);\n}\nasyncTest();\n```\n\nA) 10, 5  \nB) 5, 10  \nC) 它不打印\n\n\
+  Q48 已回答。\n\n**Q49.** 什么是阻塞？\n\nQ49 已回答。\n\n**Q50.** 以下哪一项不是 Promise 的有效状态？\n\nA)\
+  \ 待定  \nB) 已兑现  \nC) 已拒绝  \nD) 已完成\n\nQ50 已回答。\n\n**Q51.** 哪个函数在浏览器下次重绘显示之前执行指定的代码块？\n\
+  \nA) `requestAnimationFrame()`  \nB) `setTimeout()`  \nC) `requestRepaintDelay()`\n\
+  \nQ51 已回答。\n\n**Q52.** 假设你想在动画上实现 60fps 的刷新率。编写一个 `setInterval` 函数，以 60fps 触发下面的伪代码\
+  \ `animate` 函数。\n\n```javascript\nfunction animate() {...}\n```\n\nQ52 已回答。\n\n\
+  **Q53.** JavaScript 中的两种导出类型是什么？\n\nA) 抽象  \nB) 整体  \nC) 默认  \nD) 命名\n\nQ53 已回答。\n\
+  \n**Q54.** 你会使用什么语句来迭代异步对象？\n\nA) `if async then`  \nB) `for await…of`  \nC) `async\
+  \ iterable`  \nD) `do while async`\n\nQ54 已回答。\n\n**Q55.** 为什么在导入模块时使用别名？\n\nQ55\
+  \ 已回答。\n\n**Q56.** 判断对错？下面的代码产生相同的输出。\n\n```javascript\nvar i, j;\nloop1:\nfor (i\
+  \ = 0; i < 5; i++) {\n  loop2:\n  for (j = 0; j < 5; j++) {\n    if (i === 1 &&\
+  \ j === 1) {\n      continue loop1;\n    }\n    console.log(`i: ${i}, j: ${j}`)\n\
+  \  }\n}\nvar i, j\nloop1:\nfor (i = 0; i < 5; i++) {\n  loop2:\n  for (j = 0; j\
+  \ < 5; j++) {\n    if (i === 1 && j === 1) {\n      break loop2;\n    }\n    console.log(`i:\
+  \ ${i}, j: ${j}`)\n  }\n}\n```\n\nA) 正确  \nB) 错误\n\nQ56 已回答。\n\n**Q57.** 判断对错？以下两者是等价的。\n\
+  \n```javascript\nvar a = 1;\nvar z = a;\n```\n\n和\n\n```javascript\nvar a, z = a\
+  \ = 1;\n```\n\nA) 正确  \nB) 错误\n\nQ57 已回答。\n\n**Q58.** 使用 reducer 找到下面数组的最小值。\n\n\
+  ```javascript\nconst arr = [5, 10, 12, 4, 2];\n```\n\nQ58 已回答。\n\n**Q59.** JavaScript\
+  \ 中的子程序是什么？\n\nQ59 已回答。\n\n**Q60.** 判断对错？你可能使用事件处理程序 `cut` 和 `copy` 来阻止用户将内容从浏览器复制到剪贴板？\n\
+  \nA) 正确  \nB) 错误\n\nQ60 已回答。\n\n**Q61.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  let i = 10\nfor(; i< 12;){\n  console.log(++i);\n}\n```\n\nA) lint 错误  \nB) 运行时错误\
+  \  \nC) 无限循环  \nD) 11, 12\n\nQ61 已回答。\n\n**Q62.** 创建新对象的三种方法是什么？\n\nA) `new Object()`\
+  \  \nB) `Object.create()`  \nC) 工厂模式  \nD) 字面量表示法\n\nQ62 已回答。\n\n**Q63.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconst a = {x: 1}\nconst b = {...a}\nconst c = {};\nObject.assign(c,\
+  \ a);\na.x = 2;\nconsole.log(a.x);\nconsole.log(b.x);\nconsole.log(c.x);\n```\n\n\
+  A) 1, 1, 1  \nB) 2, 2, 2  \nC) 1, 2, 2  \nD) 2, 1, 1  \nE) 2, 1, 2  \nF) 2, 2, 1\n\
+  \nQ63 已回答。\n\n**Q64.** 实现一个经典的闭包例子，每次调用时递增。\n\nQ64 已回答。\n\n**Q65.** 如果 `myFunction`\
+  \ 被调用为 `myFunction(5);`，返回值是什么？\n\n```javascript\nfunction myFunction(x, y) {\n\
+  \  const arr = Array.prototype.slice.call(arguments);\n  return arr.length;\n}\n\
+  ```\n\nA) 0  \nB) 1  \nC) 2\n\nQ65 已回答。\n\n**Q66.** `Object.seal()` 会做以下哪些？选择所有适用的。\n\
+  \nA) 阻止添加新属性  \nB) 将所有现有属性标记为不可配置  \nC) 阻止更改现有属性的值\n\nQ66 已回答。\n\n**Q67.** `Object.freeze()`\
+  \ 会做以下哪些？选择所有适用的。\n\nA) 阻止添加新属性  \nB) 阻止删除现有属性  \nC) 阻止更改属性的可枚举性  \nD) 阻止更改属性的可配置性\
+  \  \nE) 阻止更改属性的可写性  \nF) 阻止更改属性的值  \nG) 阻止更改对象的原型\n\nQ67 已回答。\n\n**Q68.** `event.target`\
+  \ 和 `event.currentTarget` 有什么区别？\n\nA) `event.currentTarget` 返回触发监听器所附加到的元素  \n\
+  B) `event.target` 返回触发事件的最细粒度元素。  \nC) `event.target` 返回触发监听器所附加到的元素  \nD) `event.currentTarget`\
+  \ 返回触发事件的最细粒度元素。\n\nQ68 已回答。\n\n**Q69.** 如果你需要稍后调用一个匿名函数，请展示创建该匿名函数时使用的语法。\n\nQ69\
+  \ 已回答。\n\n**Q70.** 数组 `sort()` 方法的默认排序是什么？\n\nA) 按数值从大到小  \nB) 按数值从小到大  \nC) 按字符值从大到小\
+  \  \nD) 按字符值从小到大\n\nQ70 已回答。\n\n**Q71.** 下面的代码会向控制台输出什么，为什么？\n\n```javascript\n\
+  let scope = \"global\";\ngetScope = () => {\n  var scope = \"local\";\n  const inner\
+  \ = () => {\n    return scope;\n  }\n  return inner;\n}\ngetScope()();\n```\n\n\
+  A) `global`  \nB) `local`  \nC) `undefined`\n\nQ71 已回答。\n\n**Q72.** 下面的代码会向控制台输出什么，为什么？\n\
+  \n```javascript\nconsole.log(3 + '2');\n```\n\nA) 32  \nB) 5  \nC) 运行时错误\n\nQ72\
+  \ 已回答。\n\n**Q73.** 什么是竞态条件？\n\nQ73 已回答。\n\n**Q74.** 什么是函数式编程？\n\nQ74 已回答。\n\n**Q75.**\
+  \ 什么是高阶函数？\n\nA) 由多个函数或接口组成的函数  \nB) 可以接受函数作为参数，或返回另一个函数的函数  \nC) 作为子对象超类的函数\n\n\
+  Q75 已回答。\n\n\n\n\n\n## 测试 1 答案\n\n## 测试 1\n\n### Q41\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  const test = (incrementer) => {\n  if (incrementer < 0){\n    return;\n  }\n  console.log('first:\
+  \ ' + incrementer);\n  test(incrementer - 1);\n  console.log('second: ' + incrementer)\n\
+  }\ntest(2);\n```\n输出如下：\n\"first: 2\"\n\"first: 1\"\n\"first: 0\"\n\"second: 0\"\
+  \n\"second: 1\"\n\"second: 2\"\n\n这个函数是递归的。观察它如何堆叠函数调用以及代码执行的顺序很有趣。\n\n### Q42\n\
+  判断对错？`Promise.any()` 和 `Promise.race()` 的区别在于 `Promise.race()` 返回第一个落定的 Promise（无论兑现还是拒绝），而\
+  \ `Promise.any()` 会继续解析直到有一个 Promise 被兑现，并且只有当所有 Promise 都被拒绝时才会拒绝。\nA) 正确\nB) 错误\n\
+  \n答案是 A。`Promise.any()` 和 `Promise.race()` 非常相似。\n\n### Q43\n判断对错？JavaScript 不支持重载？\n\
+  A) 正确\nB) 错误\n\n答案是 A。虽然 JavaScript 本身不支持重载，但 TypeScript 支持。此外，可以通过让函数在未传入所有可能参数时返回不同输出来模拟重载。\n\
+  \n### Q44\n不使用 class 语法，从父对象创建一个子对象。\n\n一个示例解决方案：\n```javascript\nfunction Dog(name)\
+  \ {\n  this.name = name;\n}\nconst buddy = new Dog(\"buddy\");\nconst rover = Object.create(buddy);\n\
+  ```\n如果你检查 `Object.getPrototypeOf(rover)`，你会看到 `buddy` 是 `rover` 的父原型。\n\n### Q45\n\
+  在数组的 `forEach` 循环中，`return` 语句的作用是什么？\nA) 什么都不做\nB) 返回指定的值\nC) 结束该次循环\n\n答案是 A。如果你需要从循环中返回值，不要使用\
+  \ `forEach` 循环。\n\n### Q46\n判断对错？`for` 循环中最多有三个参数。\nA) 正确\nB) 错误\n\n答案是 B。例如：\n\
+  ```javascript\nfor (var i = 0, j = 0; i <= 10; i++, j++){\n  …\n}\n```\n这是有效的 `for`\
+  \ 循环语法。\n\n### Q47\n判断对错？`RegExp` 没有任何属性。\nA) 正确\nB) 错误\n\n答案是 B。`RegExp` 有很多属性，例如\
+  \ `.flags` 和 `.global`。\n\n### Q48\n```javascript\nfunction resolveQuickly(x) {\n\
+  \  return new Promise(resolve => {\n    console.log(x)\n  });\n}\nasync function\
+  \ asyncTest() {\n  var x = resolveQuickly(10);\n  console.log(5);\n}\nasyncTest();\n\
+  ```\nA) 10, 5\nB) 5, 10\nC) 它不会打印任何内容\n\n答案是 A。这个函数在 `Promise` 中没有任何异步操作，所以 `Promise`\
+  \ 是同步解析的。\n\n### Q49\n什么是阻塞？\n答案：当一个缓慢或耗时的进程阻止剩余代码的执行，直到它完成时，就称为阻塞。\n\n### Q50\n\
+  以下哪个不是 `Promise` 的有效状态？\nA) Pending（待定）\nB) Fulfilled（已兑现）\nC) Rejected（已拒绝）\nD)\
+  \ Completed（已完成）\n\n答案是 D。\n\n### Q51\n哪个函数会在浏览器下一次重绘显示之前执行指定的代码块？\nA) `requestAnimationFrame()`\n\
+  B) `setTimeout()`\nC) `requestRepaintDelay()`\n\n答案是 A。\n\n### Q52\n假设你想在动画中达到 60fps\
+  \ 的刷新率。编写一个 `setInterval` 函数，以 60fps 触发下面伪代码中的 `animate` 函数。\n```javascript\nfunction\
+  \ animate() {...}\n```\n答案：`setInterval(animate, Math.ceil(1000/60))`\n\n### Q53\n\
+  JavaScript 中有哪两种导出方式？\nA) Abstract（抽象）\nB) Whole（整体）\nC) Default（默认）\nD) Named（命名）\n\
+  \n答案是 C、D。\n\n### Q54\n你会使用什么语句来迭代异步对象？\nA) if async then\nB) `for await…of`\nC)\
+  \ async iterable\nD) do while async\n\n答案是 B。\n\n### Q55\n为什么在导入模块时要使用别名？\n答案：可能是因为模块名称很长，或者名称不能正确表达代码的功能。\n\
+  ```javascript\nimport {longLongLongLongName as shortName}\n```\n\n### Q56\n判断对错？下面的代码输出相同的结果。\n\
+  ```javascript\nvar i, j;\nloop1:for (i = 0; i < 5; i++) {\n  loop2:for (j = 0; j\
+  \ < 5; j++) {\n    if (i === 1 && j === 1) {continue loop1;}\n    console.log(`i:\
+  \ ${i}, j: ${j}`)\n  }\n}\n\nvar i, j\nloop1:for (i = 0; i < 5; i++) {\n  loop2:for\
+  \ (j = 0; j < 5; j++) {\n    if (i === 1 && j === 1) {break loop2;}\n    console.log(`i:\
+  \ ${i}, j: ${j}`)\n  }\n}\n```\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q57\n判断对错？以下两者等价。\n\
+  `var a = 1; var z = a;`\n和\n`var a, z = a = 1;`\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q58\n\
+  使用 reducer 找出下面数组的最小值。\n`const arr = [5, 10, 12, 4, 2];`\n\n一个可能的答案：\n```javascript\n\
+  const reducedVal = arr.reduce((accumulator, element) => {\n  if (accumulator > element)\
+  \ {\n    return element;\n  }\n  return accumulator;\n});\n```\n\n### Q59\nJavaScript\
+  \ 中的子程序是什么？\n答案：子程序是在主程序中遇到的一个函数，它被保存到一个对象中并存储起来供以后使用。执行作用域（变量、参数等）与子程序一起存储。\n\n\
+  ### Q60\n判断对错？你可以使用 `eventHandlers` 的 cut 和 copy 来阻止用户将内容从浏览器复制到剪贴板？\nA) 正确\nB)\
+  \ 错误\n\n答案是 A。这些事件处理程序是 Web API 的一部分。\n\n### Q61\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  let i = 10\nfor(; i < 12;){\n  console.log(++i);\n}\n```\nA) lint 错误\nB) 运行时错误\n\
+  C) 无限循环\nD) 11, 12\n\n答案是 D。`for` 循环不需要三个语句，第一个可以为空。\n\n### Q62\n创建新对象的三种方式是什么？\n\
+  A) `new Object()`\nB) `Object.create()`\nC) 工厂模式\nD) 字面量表示法\n\n答案是 A、B、D。字面量表示法的例子：`const\
+  \ obj = { a: 1 }`\n\n### Q63\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst a = {x:\
+  \ 1}\nconst b = {...a}\nconst c = {};\nObject.assign(c, a);\na.x = 2;\nconsole.log(a.x);\n\
+  console.log(b.x);\nconsole.log(c.x);\n```\nA) 1, 1, 1\nB) 2, 2, 2\nC) 1, 2, 2\n\
+  D) 2, 1, 1\nE) 2, 1, 2\nF) 2, 2, 1\n\n答案是 D。\n\n### Q64\n实现一个经典的闭包示例，每次调用时递增。\n\n\
+  一个可能的答案：\n```javascript\nvar increment = (function () {\n  var incrementer = 0;\n\
+  \  return function () {\n    incrementer += 1; \n    return incrementer\n  }\n})();\n\
+  console.log(increment()); //输出 1\nconsole.log(increment()); //输出 2\nconsole.log(increment());\
+  \ //输出 3\n```\n\n### Q65\n如果 `myFunction` 被调用为 `myFunction(5)`，返回值是什么？\n```javascript\n\
+  function myFunction(x, y) {\n  const arr = Array.prototype.slice.call(arguments);\n\
+  \  return arr.length;\n}\n```\nA) 0\nB) 1\nC) 2\n\n答案是 B。\n\n### Q66\n`Object.seal()`\
+  \ 做了以下哪些事情？选择所有适用的。\nA) 阻止添加新属性\nB) 将所有现有属性标记为不可配置\nC) 阻止更改现有属性的值\n\n答案是 A、B。一个类似但更严格的函数是\
+  \ `Object.freeze()`。\n\n### Q67\n`Object.freeze()` 做了以下哪些事情？选择所有适用的。\nA) 阻止添加新属性\n\
+  B) 阻止删除现有属性\nC) 阻止更改属性的可枚举性\nD) 阻止更改属性的可配置性\nE) 阻止更改属性的可写性\nF) 阻止更改属性的值\nG) 阻止更改对象的原型\n\
+  \n答案是以上所有。\n\n### Q68\n`event.target` 和 `event.currentTarget` 有什么区别？\nA) `event.currentTarget`\
+  \ 返回触发监听器所附加到的元素\nB) `event.target` 返回事件触发的最具体元素\nC) `event.target` 返回触发监听器所附加到的元素\n\
+  D) `event.currentTarget` 返回事件触发的最具体元素\n\n答案是 A、B。`event.currentTarget` 会随着事件冒泡而改变，`event.target`\
+  \ 保持不变。\n\n### Q69\n如果你需要稍后调用一个匿名函数，请展示创建该匿名函数的语法。\n\n一个可能的答案：\n```javascript\n\
+  let caller = function () {\n  console.log('call me maybe');\n};\n```\n该函数是匿名的，但被存储到一个变量中以供后续引用。\n\
+  \n### Q70\n`Array.sort()` 方法的默认排序是什么？\nA) 按数值从大到小\nB) 按数值从小到大\nC) 按字符值从大到小\nD) 按字符值从小到大\n\
+  \n答案是 D。例如，10 会排在 2 之前，因为 '1' 会与 '2' 进行比较。\n\n### Q71\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  let scope = \"global\";\ngetScope = () => {\n  var scope = \"local\";\n  const inner\
+  \ = () => {\n    return scope\n  }\n  return inner;\n}\ngetScope()();\n```\nA) global\n\
+  B) local\nC) undefined\n\n答案是 B。内部箭头函数的作用域是它被定义的位置。\n\n### Q72\n下面的代码会向控制台输出什么，为什么？\n\
+  `console.log(3 + ‘2’);`\nA) 32\nB) 5\nC) 运行时错误\n\n答案是 A。3 会被强制转换为字符串。\n\n### Q73\n\
+  什么是竞态条件？\n答案：竞态条件是指两个线程或异步进程必须以正确的顺序完成并更新某些共享状态，否则会出现错误或意外结果。\n\n### Q74\n什么是函数式编程？\n\
+  答案：一种使用声明式代码和纯函数的编程范式。\n\n### Q75\n什么是高阶函数？\nA) 由多个函数或接口组成的函数\nB) 可以接受函数作为参数，或者返回另一个函数的函数\n\
+  C) 作为子对象超类的函数\n\n答案是 B。\n\n## 测试 2 答案\n\n### Q1\n考虑以下代码：\n```typescript\nclass Person\
+  \ {\n  firstName: string;\n  lastName: string;\n}\nconst myPerson = new Person();\n\
+  console.log(myPerson.a);\n```\n解释原型链如何确定 `myPerson.a` 是 `undefined`？\n\n浏览器检查 `myPerson.[[Prototype]]`，没有看到名为\
+  \ `a` 的属性。然后浏览器检查 `myPerson.[[Prototype]].[[Prototype]]`（即 `Object` 原型），也没有看到名为\
+  \ `a` 的属性。然后浏览器检查 `myPerson.[[Prototype]].[[Prototype]].[[Prototype]]`，它是 `null`，所以浏览器返回\
+  \ `undefined`。\n\n### Q2\nJavaScript 中的 `class` 关键字有什么作用？\nA) 它传达了超越普通对象的实际含义\n\
+  B) 它是使 JavaScript 更面向对象的语法糖\nC) 它创建了一个类似接口的对象，可用于继承\n\n答案是 B。即使使用了 `class` 关键字，JavaScript\
+  \ 仍然使用原型继承。\n\n### Q3\n下面的代码会向控制台输出什么，为什么？\n```javascript\nlet x = 10;\nif(x){\n\
+  \  let x = 12;\n  console.log(x);\n}\n```\nA) 10\nB) 12\nC) 会抛出错误\n\n答案是 B。内部的 `x`\
+  \ 优先于外部的 `x` 变量。\n\n### Q4\n判断对错？来自 `queueMicrotask` 队列的任务以后进先出的方式执行。\nA) 正确\nB)\
+  \ 错误\n\n答案是 B。任务实际上以先进先出的顺序执行。\n\n### Q5\n对于这个函数，遵循“整洁代码”原则的名称会是什么？\n```javascript\n\
+  const pntDT = () => {\n  const today = new Date();\n  const time = today.getHours()\
+  \ + \":\" + today;\n  console.log(time);\n};\npntDT();\n```\n有很多可能的函数名称可以更好地符合整洁代码原则。例如，`printDateAndTime()`\
+  \ 是一个更好的名称，因为它不会让人对函数的功能产生疑问。\n\n### Q6\n以下哪一项不是创建和注册新自定义元素的步骤？\nA) 在 DOM 中创建一个\
+  \ HTML 容器\nB) 创建一个定义元素行为的 JavaScript 类\nC) 使用 `CustomElementRegistry` 对象注册该类和一个表示元素名称的\
+  \ `DOMString`\n\n答案是 A。\n\n### Q7\n简要解释 Shadow DOM API。\nShadow DOM API 提供了一种将隐藏的独立\
+  \ DOM 附加到元素上的方法，该 DOM 无法通过常规的 JS DOM 操作 API 访问。Shadow DOM 为 Web 组件提供了封装。隐藏的 DOM\
+  \ 树附加到常规 DOM 树中的元素上。\n\n### Q8\n哪个方法将影子 DOM 树附加到指定元素并返回对其 `ShadowRoot` 的引用？\nA)\
+  \ `Element.shadowAdd()`\nB) `Element.setDOMShadow()`\nC) `Element.attachShadow()`\n\
+  \n答案是 C。\n\n### Q9\n`arr[2][1]` 会返回什么值？\n```javascript\nconst arr = [[\"a\", \"\
+  b\", \"c\"],[\"d\", \"e\", \"f\"],[\"g\", \"h\", \"i\"]];\n```\nA) d\nB) h\nC) b\n\
+  D) 以上都不是\n\n答案是 B。首先，JavaScript 中的数组是从零开始的。因此，`arr[2][1]` 会访问外层数组的第 3 个元素和内层数组的第\
+  \ 2 个元素，返回值是 \"h\"。\n\n### Q10\n下面的代码会向 `<app>` 输出什么？\n```javascript\ndocument.getElementById(\"\
+  app\").innerHTML = `<div>hewohewo2</div>`\n```\nA) hewo hewo2\nB) hewohewo2\nC)\
+  \ hewo hewo2\nD) 无法编译\n\n答案是 C。\n\n### Q11\njQuery 使用什么模式来创建其全局可用的 jQuery 对象的单个实例？\n\
+  A) OOP\nB) 工厂模式\nC) 单例模式\nD) 无\n\n答案是 C。全局创建了一个 jQuery 对象的实例。\n\n### Q12\n`window.localStorage`\
+  \ 和 `window.sessionStorage` 有什么区别？选择最佳答案。\nA) `localStorage` 在 Web 浏览器中存储键/值对，并且\
+  \ `localStorage` 在浏览器关闭后删除\nB) `sessionStorage` 在 Web 浏览器中存储键/值对，并且 `sessionStorage`\
+  \ 在浏览器关闭后删除\nC) 两者都在 Web 浏览器中存储键/值对，但 `localStorage` 在浏览器关闭后删除\nD) 两者都在 Web 浏览器中存储键/值对，但\
+  \ `sessionStorage` 在浏览器关闭后删除\n\n答案是 D。\n\n### Q13\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  let arr1 = [1, 2, 3];\narr1.push(4);\narr1.pop();\narr1.slice(1, 2);\narr1.splice(1,\
+  \ 2);\nconsole.log(arr1);\n```\nA) 1\nB) [1]\nC) [1,2]\nD) [2,3]\nE) 不打印任何内容。\n\n\
+  答案是 B。\n\n### Q14\n判断对错：`!` 运算符返回一个布尔值。选择一个选项。\nA) 正确\nB) 错误\n\n答案是 A。`!` 可以用于 `if`\
+  \ 语句等场景。`if` 语句需要在求值中返回布尔值，例如 `if(x !== y)`。\n\n### Q15\n评估下面的代码。如果 `div` 和 `button`\
+  \ 都有点击监听器，如何阻止按钮上的点击事件冒泡到 div？\n```html\n<div><button>Click Me!</button></div>\n\
+  ```\nA) 在按钮的 `clickHandler` 中使用 `Event.stopPropagation`\nB) 在 div 的 `clickHandler`\
+  \ 中使用 `Event.stopPropagation`\nC) 在按钮的 `clickHandler` 中使用 `Event.stopBubble`\nD)\
+  \ 在 div 的 `clickHandler` 中使用 `Event.stopBubble`\n\n答案是 A。\n\n### Q16\n下面的代码会向控制台输出什么，为什么？\n\
+  ```javascript\nlet xyz = \"\";\nxyz ||= \"abc\";\nconsole.log(xyz);\n```\nA) abc\n\
+  B) ‘’\nC) 编译时错误\n\n如果启用了实验性语法，答案是 A。否则，会出现编译时错误。\n\n### Q17\n下面两个函数的输出有什么区别？\n```javascript\n\
+  void function voidExample() {\n  console.log(\"No Error!\");\n}();\n\nfunction noVoidExample()\
+  \ {\n  console.log(\"No Error!\");\n}();\n```\nA) 函数 `noVoidExample` 执行并打印 \"No\
+  \ Error\"，而 `voidExample` 抛出错误。\nB) 函数 `voidExample` 执行并打印 \"No Error\"，而 `noVoidExample`\
+  \ 抛出错误。\nC) 两者都抛出错误\n\n答案是 B。`void` 关键字允许执行那些可能无法正常执行的函数。\n\n### Q18\n以下哪一项不是 `NodeList`\
+  \ 和 `Array` 的区别？\nA) `NodeList` 是 Web API，`Array` 是 JavaScript API\nB) `NodeList`\
+  \ 不能包含超过 10 个项目\nC) `NodeList` 的属性可能是实时的，如果 DOM 更新（如 `childNode`），它们也会更新\nD) 许多数组函数在\
+  \ `NodeList` 上不可用\n\n答案是 B。\n\n### Q19\nJavaScript 中哪些 ES6 数组函数返回一个新数组？选择所有正确的答案。\n\
+  A) `map()`\nB) `forEach()`\nC) `filter()`\nD) `find()`\n\n答案是 A、C。\n\n### Q20\n\
+  JavaScript 使用 number 原始类型可以可靠表示的最大整数是多少？\nA) 2⁵³ - 1\nB) 2³² - 1\nC) 2⁶³ - 1\nD)\
+  \ JavaScript 可以表示无限大的数字\n\n答案是 A。\n\n### Q21\n哪个函数会将字符串修改为符合 URI 规范？\nA) `JSON.stringify()`\n\
+  B) `encodeURI()`\nC) `encodeString()`\nD) `JSON.parse()`\n\n答案是 B。\n\n### Q22\n\
+  在 JS 中，用于存储数字的 64 位是如何分配的？\n答案：52 位用于数值，11 位用于指数，1 位用于符号。\n\n### Q23\n在计算机科学中，`null`\
+  \ 和 `undefined` 有什么区别？\n`undefined` 表示变量没有值，因为开发者尚未设置。`null` 表示变量被有意设置为没有值。\n\n\
+  ### Q24\nJavaScript 中减号（`-`）的技术名称是什么？\nA) 一元减法\nB) 二元否定\nC) 一元否定\nD) 二元减法\n\n答案是\
+  \ C。\n\n### Q25\n判断对错？`super` 关键字不能在构造函数之外使用。\nA) 正确\nB) 错误\n\n答案是 B。例如，`super.functionOnParent([arguments])`。这用于在子对象覆盖了父对象的函数时，调用父对象上的函数。\n\
+  \n### Q26\n访问 `cat` 对象上的 color 值的两种方式是什么？\n`const cat = {color: \"orange\"};`\n\
+  答案：`cat.color` 和 `cat['color']`\n\n### Q27\nJavaScript 运行时中的栈是什么？\n栈是一系列帧（函数调用）。最近的函数调用位于栈顶，必须执行并从栈中弹出，然后才能完成下一个函数调用。当一个函数调用另一个函数时，新调用的函数被放在栈顶。栈是后进先出的，这意味着最近添加的函数必须首先执行。\n\
+  \n### Q28\n十六进制转义序列的语法是什么？\nA) ‘\\zfg’\nB) ‘\\10ab’\nC) ‘\\x’\n\n答案是 C。例如，`'\\xB1'`\
+  \ 变成 \"±\"。\n\n### Q29\n编写代码，在原生 JavaScript（无 TypeScript）中创建一个自定义抽象类？`abstract`\
+  \ 关键字在 ES2015 中不可用。\n\n示例答案：\n```javascript\nclass MyAbstract {\n  constructor()\
+  \ {\n    if(new.target === MyAbstract) {\n      throw new Error(‘Error Message’);\n\
+  \    }\n  }\n}\n```\n\n### Q30\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst badMap\
+  \ = new Map();\nbadMap.set('a', 1);\nbadMap.b = 2\nconsole.log(badMap)\n```\nA)\
+  \ Map(1) {\"a\" => 1}\nB) Map(1) {\"b\" => 2}\nC) Map(2) {\"a\" => 1, “b” => 2}\n\
+  D) 编译时错误\n\n答案是 A。`badMap.b` 会在 `badMap` 对象上设置值 `b`，但 `b` 的设置方式没有正确与 `Map` 结构交互。\n\
+  \n### Q31\n面向对象编程（OOP）的好处有哪些？选择三个答案。\nA) 代码是可插拔或模块化的，因此类的源代码可以独立于应用程序的其他代码进行维护。\n\
+  B) 对象的代码保持私有，这意味着其他对象只与对象的方法交互，因此内部代码被隐藏。\nC) 对象易于重用。它们可以插入到代码的多个部分。\nD) 面向对象代码执行更快，计算机资源使用最小化。\n\
+  \n答案是 A、B、C。\n\n### Q32\n假设 `const map` 有以下值：`Map(2) {\"a\" => 2, \"b\" => 2}`。用一行代码将\
+  \ `map` 转换为二维数组。\n答案：`[…map]` 或 `Array.from(map)` 都可以实现。\n\n### Q33\n判断对错？在 JavaScript\
+  \ 中，只有自定义类和对象可以被扩展？\nA) 正确\nB) 错误\n\n答案是 B。例如，自定义类和对象扩展了 `Object`。任何内置对象都可以被扩展。\n\
+  \n### Q34\n判断对错？只要创建了实例，实例级变量就可以在类中的任何位置访问。\nA) 正确\nB) 错误\n\n答案是 B。实例级变量不能在静态方法中访问。\n\
+  \n### Q35\n假设启用了 TypeScript。为什么下面的代码无法编译？选择一个选项。\n```typescript\nlet i: number;\n\
+  if(5%3>2){\n  i=0;\n} else if(5%3>1){\n  i=1;\n}\nconsole.log(i);\n```\nA) 编译正常\n\
+  B) 5%3>2 和 5%3>1 不返回布尔值，因此不能在 if 语句中使用\nC) `i` 是一个局部变量，其值从未显式定义\n\n答案是 A。TypeScript\
+  \ 可能会抱怨 `i` 在赋值之前被使用，但它会编译。\n\n### Q36\n判断对错？`length` 是字符串上的方法，是数组上的属性？\nA) 正确\n\
+  B) 错误\n\n答案是 B。`length` 是字符串上的属性，是数组上的属性。\n\n### Q37\n`function.call` 的第一个参数是什么？\n\
+  A) 被调用函数的参数\nB) 不接受任何选项\nC) 调用函数的实例对象\n\n答案：调用函数的对象，例如 `person.fullName.call(person2);`，其中\
+  \ `person2` 具有调用 `person.fullName` 函数所需的属性。可以将其视为设置作用域的一种方式。\n\n### Q38\n`printName`\
+  \ 这种函数的技术名称是什么？选择所有正确的选项。\n```javascript\nfunction getName() {\n  var name = \"\
+  Jon\";\n  function printName() {\n    console.log(name);\n  }\n  printName();\n\
+  }\ngetName();\n```\nA) 内部函数\nB) 包含函数\nC) 闭包\n\n答案是 A、C。\n\n### Q39\n判断对错？箭头函数只有在有多个参数时才需要括号。\n\
+  A) 正确\nB) 错误\n\n错误。箭头函数在零个参数时也需要括号。如果只有一个参数，括号是可选的。\n\n### Q40\n判断对错？类级变量可以在类中的任何位置访问。\n\
+  A) 正确\nB) 错误\n\n答案是 A。类级变量，也称为静态变量，可以在任何方法中访问，包括静态方法和构造函数。\n\n### Q42\n当你尝试给 `const`\
+  \ 赋值新值时，会抛出什么类型的错误？\nA) ReferenceError\nB) Error\nC) RangeError\nD) TypeError\n\n\
+  答案是 D。\n\n### Q43\n重写和重载是哪种面向对象编程原则的例子？\nA) 继承\nB) 抽象\nC) 多态\nD) 封装\n\n答案是 C。\n\n\
+  ### Q44\n判断对错：静态变量不能在非静态方法中修改？\nA) 正确\nB) 错误\n\n答案是 B。非静态方法可以使用 `Class.Static` 语法引用和修改静态变量，如下所示。\n\
+  ```javascript\nclass Test {\n  static MAX = 10;\n  getMax() {\n    Test.MAX = 12;\n\
+  \    console.log(Test.MAX);\n  }\n}\n```\n\n### Q45\n如果 `str === 'test1'`，下面的代码会发生什么？\n\
+  ```javascript\nswitch (str) {\n  case \"test1\":\n  case \"test2\":\n    console.log(\"\
+  At test2\");\n}\n```\nA) 打印 \"At test2\"\nB) 什么都不做\nC) 运行时错误\n\n答案是 A。如果没有指定 `break`，匹配后会穿透所有剩余的\
+  \ case，直到遇到 `break` 关键字。\n\n### Q46\n当 JavaScript 被描述为拥有“一等函数”时，这意味着什么？\nA) 函数可以是递归的\n\
+  B) 函数可以是匿名的\nC) 函数被当作任何其他变量一样对待\nD) 函数使用花括号语法\n\n答案是 C。这允许函数作为参数传递、从函数返回等。\n\n###\
+  \ Q47\n判断对错？下面的代码可以编译。\n```javascript\nasync function promiseMe() {\n  try {\n \
+  \   let z = await Promise.reject(30);\n  }\n}\n```\nA) 正确\nB) 错误\n\n答案是 B。拒绝一个原始值不是问题。但是，`try`\
+  \ 没有对应的 `catch` 或 `finally` 是有问题的。\n\n### Q48\n判断对错？`Date.getDate()` 返回月份中的日期，值为\
+  \ 1-31，而 `Date.getDay()` 返回星期中的天数，值为 0-6。\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q49\n异步操作被放入什么类型的队列？\n\
+  A) 阻塞队列\nB) 事件队列\nC) 异步队列\n\n答案是 B。\n\n### Q50\nJavaScript 长期以来提供了哪三个函数用于在时间过后执行代码？选择三个答案。\n\
+  A) `setTimeout()`\nB) `setInterval()`\nC) `callAsyncLoop()`\nD) `requestAnimationFrame`\n\
+  \n答案是 A、B、D。\n\n### Q51\n如果你想测量代码块的执行时间，可以调用哪个 Web API？\nA) `window.now()`\nB) `window.timer()`\n\
+  C) `performance.now()`\nD) `performance.timer()`\n\n答案是 C。例如：\n```javascript\nconst\
+  \ t0 = performance.now();\nrunFunction();\nconst t1 = performance.now();\nconsole.log(t0\
+  \ - t1);\n```\n\n### Q52\n什么是 MIME 类型？\nMIME 类型是随文件一起发送的字符串，指示文件类型。例如，JSON 文件发送的\
+  \ MIME 类型是 `‘application/json’`。\n\n### Q53\n导出以下变量的简单语法是什么？\n`let myLet = 10;`\n\
+  答案：`export let myLet = 10;`\n\n### Q54\n哪个函数属性返回函数期望的参数数量？\nA) `Function.argsLength`\n\
+  B) `Function.length`\nC) `Function.parameters`\n\n答案是 B。\n\n### Q55\n“仅为了副作用而导入模块”是什么意思？\n\
+  答案：导入模块时不指定要导入的任何内容，即\n`import '/someLib/my-class.js';`\n\n### Q56\n判断对错？下面的代码编译并打印\
+  \ 3？\n```javascript\nconst test = () => {\n  return1 + 2;\n}\nconsole.log(test());\n\
+  ```\nA) 正确\nB) 错误\n\n答案是 B。如果省略分号，编译器会自动在 `return` 语句后放置分号。\n\n### Q57\n判断对错？以下两者等价。\n\
+  `var a, z = 1; a = z;`\n和\n`var a = z = 1;`\nA) 正确\nB) 错误\n\n答案是 B。`z` 被全局声明。\n\n\
+  ### Q58\n判断对错？下面的代码返回 3。\n```javascript\nconst arr = [1, 2];\nconst reduced = arr.reduce((accumulator,element)\
+  \ => accumulator);\n```\nA) 正确\nB) 错误\n\n答案是 B。累加器没有使用 `+=` 返回。下面的语句会得到期望的结果：\n\
+  `const reduced = arr.reduce((accumulator, element) => accumulator + element);`\n\
+  \n### Q59\n`\"use strict\";` 指令必须放在文件的什么位置？\nA) 顶部\nB) 中间\nC) 底部\nD) 作为导入\n\n答案是\
+  \ A。\n\n### Q60\n如何在原生 JavaScript（无 TypeScript）中使用组合？\n一个例子：创建不是任何对象方法的函数。使用 `Object.assign(obj)`\
+  \ 将所需的函数作为方法分配给 `obj`。\n\n### Q61\n下面的代码会向控制台输出什么，为什么？\n```javascript\nfor(let i\
+  \ = 1, j = 10; i < 5 < j; i += j/i){\n  console.log(Math.ceil(++i));\n}\n```\nA)\
+  \ 什么都不输出\nB) 除以零错误\nC) 1, 12\nD) 会进入无限循环\n\n答案是 D。`i < 5 < j` 会这样求值：`(i < 5) < j`。在上面的代码中，第一次迭代时\
+  \ `i < 5` 为 false。然后 `false < j` 求值为 true。\n\n### Q62\n展示如何在不使用冒号 `:` 的情况下构造对象字面量。\n\
+  ```javascript\nlet a = 1, b = 2, c = 3;\nlet obj = { a, b, c }\n```\n\n### Q63\n\
+  JavaScript 中数组的最大大小是多少？\nA) 2¹⁶ - 1\nB) 2³² – 1\nC) 2¹⁶\nD) 2³²\n\n答案是 B。如果你尝试设置超过\
+  \ 2³² – 1 的值，你会得到 `RangeError`。\n\n### Q64\n如果一个函数被调用时传入的参数少于声明的参数数量，缺失的参数会被赋予什么值？\n\
+  A) null\nB) undefined\nC) 0\n\n答案是 B。\n\n### Q65\n什么是事件捕获阶段？\n事件从祖先元素（`window`、`div`\
+  \ 等）向下传递到最具体元素的阶段。\n\n### Q66\n判断对错？Setter 在冻结对象上仍然有效。\nA) 正确\nB) 错误\n\n答案是 B。Setter\
+  \ 仍然存在并且可以被调用，但它们实际上不会改变值。\n\n### Q67\n`3 > 2 > 1` 返回什么？\nA) true\nB) false\nC)\
+  \ 0\n\n答案是 B。`3 > 2` 求值为 `true`。然后 `true > 1` 求值为 `false`。\n\n### Q68\n下面两段代码返回相同的值。它们发生的方式有什么区别？\n\
+  `‘123’.length;` //第 1 行\n`new String(123).length;` //第 2 行\nA) 第 1 行使用显式强制转换，第 2\
+  \ 行使用隐式强制转换\nB) 第 1 行使用隐式强制转换，第 2 行使用显式强制转换\nC) 没有区别\n\n答案是 B。\n\n### Q69\n以下哪种情况不是使用匿名函数的时机？\n\
+  A) 作为类方法\nB) 在闭包中\nC) 作为回调\nD) 作为 IIFE（立即调用函数表达式）\n\n答案是 A。\n\n### Q70\n在 Web 浏览器中，布局时间和绘制时间有什么区别？\n\
+  布局时间是计算每个要绘制的对象位置所需的时间。绘制时间是实际在屏幕上绘制点所需的时间。\n\n### Q71\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  let a = 8\na >>>= 3;\nconsole.log(a);\n```\nA) 1\nB) 10\nC) 4\n\n答案是 A。`>>>=` 被称为无符号右移赋值运算符。\n\
+  \n### Q72\n下面的代码会向控制台输出什么，为什么？\n`console.log([1, 2,,3].join(', '));`\nA) lint 错误\n\
+  B) 1, 2, 3\nC) 1, 2, , 3\n\n答案是 C。数组可以有空白位置。\n\n### Q73\n给出一个避免网络调用竞态条件的例子。\n一个可能的答案：创建取消令牌或在网络调用中使用取消\
+  \ API。当你发出新请求时，取消之前的请求。\n\n### Q74\n什么是纯函数？\n答案：给定相同的输入，总是返回相同输出且没有副作用的函数。\n\n###\
+  \ Q75\n什么是柯里化？\n答案：将具有多个参数的单个函数转换为多次调用、每次只接受一个参数的函数。\n\n## 测试 3 答案\n\n### Q1\n判断对错？编译器会为下面的代码抛出错误。\n\
+  ```javascript\nconst x = 10;\nx = 12;\n```\nA) 正确\nB) 错误\n\n答案是 A。`const` 关键字表示一个不能更改的值。\n\
+  \n### Q2\n下面代码的 TypeScript 类型是什么？\n`const x = “hello”`\nA) \"hello\"\nB) const\n\
+  C) string\nD) 没有分配类型\n\n答案是 A。由于 `const` 值不能更改，类型可以锁定为实际的字符串字面量值。\n\n### Q3\n下面的代码会向控制台输出什么，为什么？\n\
+  ```javascript\nlet person = {age: 25,name: 'Justin'}\nconst byRef = (myObj) => {\n\
+  \  myObj.age = 30\n}\nbyRef(person);\nconsole.log(person.age);\n```\nA) 25\nB) 30\n\
+  C) 编译时错误\n\n答案是 B。内存中 `person` 对象的引用被传递给了 `byRef` 函数。\n\n### Q4\n下面的代码会向控制台输出什么，为什么？\n\
+  ```javascript\nlet x;\nif(x = true === true){\n  console.log(x);\n} else {\n  console.log('Not\
+  \ x');\n}\n```\nA) true\nB) false\nC) Not x\nD) 编译时错误\n\n答案是 A。变量可以在 `if` 语句的求值中被赋值。\n\
+  \n### Q5\n下面的代码会向控制台输出什么，为什么？\n```javascript\nlet x = 10;\nfunction myFunc(y){\n\
+  \  y = 12;\n}\nconsole.log(myFunc(x));\n```\nA) 10\nB) 12\nC) undefined\n\n答案是 C。`myFunc`\
+  \ 没有返回值。\n\n### Q6\n假设下面的聚合函数计算你的年龄天数、组合你的名和姓、并拆分你的地址。选择所有它违反整洁代码原则的方式。\n`const\
+  \ aggregator = (DOB, firstName, lastName, address, skills) => {...}`\nA) 函数命名不当\n\
+  B) 函数应该使用 `function` 关键字而不是 lambda 函数\nC) 函数做了太多事情，应该被拆分\nD) 函数没有对 `skills` 参数做任何操作\n\
+  \n答案是 A、C、D。\n\n### Q7\n从 JS 的角度来看，DOM 的技术定义是什么？\n来自 MDN Web 文档：DOM 是“一个由连接节点组成的树状结构，表示标记文档中出现的不同元素和文本字符串”。\n\
+  \n### Q8\n给定 `FancyButton` 类，如何扩展 button 来创建一个名为 `fancy-button` 的自定义元素？\nA) `customElements.extend('fancy-button',\
+  \ FancyButton, { extends: 'button' });`\nB) `customElements.extend('fancy-button',\
+  \ FancyButton, { implements: 'button' });`\nC) `customElements.define('fancy-button',\
+  \ FancyButton, { extends: 'button' });`\nD) `customElements.define('fancy-button',\
+  \ FancyButton, { implements: 'button' });`\n\n答案是 C。\n\n### Q9\n以下哪个是正确的字符串插值语法？\n\
+  `const x = ‘me’;`\nA) `` `Pick ${x}` ``\nB) `` `Pick &{x}` ``\nC) ‘Pick ${x}’\n\
+  D) ‘Pick &{x}’\n\n答案是 A。\n\n### Q10\n将对象实例总数限制为一个的模式名称是什么？\nA) 单例模式\nB) 工厂模式\nC)\
+  \ 设计模式\nD) OOP\n\n答案是 A。\n\n### Q11\n以下哪个不是 `Set` 对象上的方法？\nA) `add()`\nB) `next()`\n\
+  C) `clear()`\nD) `delete()`\nE) `entries()`\n\n答案是 B。\n\n### Q12\n哪个 window 方法允许你在浏览器内存中存储持久的键/值对？\n\
+  A) `window.browserStorage`\nB) `window.localStorage`\nC) `window.persistentStorage`\n\
+  D) 没有这样的方法\n\n答案是 B。\n\n### Q13\n所有位运算都是在多少位的二进制数上执行的？\nA) 8\nB) 16\nC) 32\nD) 64\n\
+  \n答案是 C。\n\n### Q14\n`delete` 运算符在什么时候不会从对象中移除属性？\n当对象被创建为不可配置时，如下所示：\n```javascript\n\
+  var Car = {};\nObject.defineProperty(Car, 'name', {configurable: false})\n```\n\n\
+  ### Q15\n如果你需要获取对象的属性，应该调用哪个方法？\nA) `Object.getKeyValues`\nB) `Object.getList`\n\
+  C) `Object.getNames`\nD) `Object.getOwnPropertyNames`\n\n答案是 D。例如：\n```javascript\n\
+  const xy = {a: 1, b: 2};\nconsole.log(Object.getOwnPropertyNames(xy));\n```\n\n\
+  ### Q16\n下面的代码会向控制台输出什么，为什么？\n`console.log(2 * 3 ** 3);`\nA) 216\nB) 18\nC) 54\n\
+  D) 编译时错误\n\n答案是 C。`**` 是指数运算符，优先级高于 `*`。\n\n### Q17\n评估下面的代码。一个字符的更改可以防止这一行抛出错误？\n\
+  ```javascript\nconst dog = {color: \"brown\",breed: {pure: true}};\nconsole.log(dog.hair.short);\n\
+  ```\n答案：将 `console.log(dog.hair.short);` 改为 `console.log(dog.hair?.short);`。这称为可选链。\n\
+  \n### Q18\n哪些数组函数在 `NodeList` 上不可用？选择所有适用的。\nA) `forEach()`\nB) `join()`\nC) `filter()`\n\
+  D) `map()`\n\n答案是 A。\n\n### Q19\n以下哪个不是 JSON 方法？\nA) `reverse()`\nB) `parse()`\n\
+  C) `stringify()`\n\n答案是 A。`JSON` 对象只有两个方法：`parse` 和 `stringify`。\n\n### Q20\n判断对错？JavaScript\
+  \ 中有一个全局的 `Map` 对象。\nA) 正确\nB) 错误\n\n答案是 A。不要与 `Array.map()` 混淆。\n\n### Q21\n`WeakSet`\
+  \ 对象中的“弱”是什么意思？\n来自 MDN 文档：“如果存储在 `WeakSet` 中的对象没有其他引用，这些对象可以被垃圾回收。”\n\n### Q22\n\
+  克服浮点数不精确性的一种方法是什么？\nA) 乘法和除法\nB) 它本身就可以工作\nC) 通过扩展函数运行\n\n答案是 A。例如：`const x = (0.1\
+  \ * 10 + 0.1 * 10) / 10;`\n\n### Q23\n评估下面的代码。如何重构它以使用更少的代码？\n```javascript\nconst\
+  \ temp = object.prop1;\nconst test = ((temp === null || temp === undefined)) ? undefined\
+  \ : temp.prop2;\n```\n一个可能的答案：`object.prop1?.prop2;`\n\n### Q24\n评估下面的代码。循环的第一个和最后一个输出是什么？\n\
+  ```javascript\nfor(let i = 0; i <= 10; ++i){\n  console.log(i);\n}\n```\nA) 0, 9\n\
+  B) 0, 10\nC) 1, 9\nD) 1, 10\n\n答案是 B。\n\n### Q25\n在下面的 `MyChild` 类上创建一个函数，调用父类的\
+  \ `printSomething` 方法。\n```javascript\nclass MyParent {\n  constructor(){}\n  printSomething(){\n\
+  \    console.log(5);\n  }\n}\nclass MyChild extends MyParent {\n  constructor(){\n\
+  \    super()\n  }\n  printSomething(){\n    console.log(10);\n  }\n}\n```\n一个示例答案：\n\
+  ```javascript\nprintSomethingOld(){\n  super.printSomething()\n}\n```\n\n### Q26\n\
+  下面的代码返回什么，为什么？\n`const value = 10 / -0;`\nA) NaN\nB) -NaN\nC) Infinity\nD) -Infinity\n\
+  \n答案是 D。\n\n### Q27\nJavaScript 运行时中的堆是什么？\n堆是存储对象的内存区域。\n\n### Q28\n当在字符串字面量值上调用\
+  \ `String` 对象方法时，JavaScript 在幕后如何处理？\n答案：JavaScript 自动将字符串字面量转换为临时的 `String` 对象，调用方法，然后丢弃临时的\
+  \ `String` 对象。\n\n### Q29\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst obj = {a: 1,b:\
+  \ 2};\nconst arr = [];\nconsole.log(arr[0] = {…obj});\n```\nA) 1, 2\nB) {…obj}\n\
+  C) {a: 1, b: 2}\nD) 无法编译\n\n答案是 C。`…` 语法被称为展开运算符。\n\n### Q30\n`Map.delete(key)`\
+  \ 返回什么？\nA) 没有返回值\nB) 总是 true\nC) 总是 false\nD) 如果键被删除则返回 true，如果项目不存在且未被删除则返回 false\n\
+  \n答案是 D。\n\n### Q31\n以下哪一项不是使用 TypeScript 时继承的例子？选择一个选项。\nA) 对象具有其超类拥有的字段\nB) 对象具有其超类拥有的方法\n\
+  C) 对象具有其接口拥有的方法\nD) 对象具有其超类拥有的静态字段\n\n答案是 C。接口是一种组合形式，而不是继承。\n\n### Q32\n判断对错？在\
+  \ JavaScript 中，一个对象只能有一个子类，但可以有无限多个父类。\nA) 正确\nB) 错误\n\n答案是 B。一个对象只能有一个父类，但可以有无限多个子类。\n\
+  \n### Q33\n判断对错？一个对象可以实现多个接口。假设启用了 TypeScript。\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q34\n\
+  下面的代码打印什么？选择一个选项。\n```javascript\nclass MyClass {\n  static staticMethod() {\n \
+  \   return this.name;\n  }\n  constructor() {\n    this.name = 'Jon';\n  }\n}\n\
+  const me = new MyClass();\nconsole.log(MyClass.staticMethod());\n```\nA) Jon\nB)\
+  \ MyClass\nC) 编译时错误\nD) 运行时错误\n\n答案是 B。`staticMethod` 中的 `this` 关键字的作用域不是实例级别。\n\
+  \n### Q35\n判断对错？`String` 是一种原始数据类型。\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q36\n展示两种使现有数组为空的方法。\n\
+  两个可能的答案：`array.length = 0`，`array.splice(0, array.length)`\n\n### Q37\n代码执行后 `str`\
+  \ 的值是什么？\n`const str = \"  this\".concat(\"that   \").substring(3).trim().valueOf(2);`\n\
+  A) 2\nB) h\nC) histhat\nD) 无法编译\n\n答案是 C。\n\n### Q38\nJavaScript 中的生成器函数是什么？\n答案：生成器是可以退出并在之后重新进入的函数。\n\
+  \n### Q39\n以下哪个是类的有效修饰符，假设启用了 TypeScript？选择一个选项。\nA) private\nB) final\nC) abstract\n\
+  D) public\nE) default\n\n答案是 C。\n\n### Q40\n以下哪个不是 Java 中的保留字？选择一个选项。\nA) abstract\n\
+  B) compile\nC) do\nD) enum\n\n答案是 B。\n\n### Q41\n这段代码的输出是什么？\n```javascript\nclass\
+  \ TestClass{\n  constructor() {\n    this.myInt = 5;\n  }\n  mainMethod(){\n   \
+  \ const test = new TestClass();\n    test.myInt = 6;\n    console.log(test.incrementIntAgain(test.incrementInt(test.myInt)));\n\
+  \  }\n  incrementInt (theirInt) {\n    return theirInt++;\n  }\n  incrementIntAgain\
+  \ (theirInt) {\n    return ++theirInt;\n  }\n}\n```\nA) 5\nB) 6\nC) 7\nD) 8\n\n\
+  答案是 C。\n\n### Q42\n```java\nPackage Exam;\npublic class Tester{\n  private int myInt\
+  \ = 5;\n  public static void main(String []args){\n    Tester test = new Tester();\n\
+  \    test.myInt = 6;\n    System.out.println(test.incrementIntAgain(test.incrementInt(test.myInt)));\n\
+  \  }\n  public int incrementInt (int theirInt) {\n    return theirInt++;\n  }\n\
+  \  public int incrementIntAgain (int theirInt) {\n    return ++theirInt;\n  }\n\
+  }\n```\n这段代码的输出是什么？\nA) 5\nB) 6\nC) 7\nD) 8\n\n答案是 C。\n\n### Q43\n判断对错：实例级对象可以访问静态变量？\n\
+  A) 正确\nB) 错误\n\n答案是 B。静态变量只能直接从类访问，即 `Class.StaticVar`。\n\n### Q44\n下面的代码向控制台输出什么，为什么？\n\
+  ```javascript\nfunction Dog(name) {\n  this.name = name;\n}\nconst buddy = new Dog(\"\
+  buddy\");\nconst rover = Object.create(buddy);\nconsole.log(Object.getPrototypeOf(rover));\n\
+  console.log(Object.getPrototypeOf(buddy));\n```\n答案：`Dog {name: \"buddy\"}` 和 `Dog`\
+  \ 类的引用。\n\n### Q45\n下面的代码向控制台输出什么，为什么？\n`let x = (1, 2, 3); console.log(x);`\nA)\
+  \ 1\nB) 2\nC) 3\nD) 编译时错误\n\n答案是 C。逗号分隔符返回最后一个值。\n\n### Q46\n`RegExp` 字面量表示法和构造函数之间的一些区别是什么？选择所有适用的。\n\
+  A) 字面量表示法的参数用斜杠括起来，没有引号\nB) 字面量表示法在编译时求值\nC) 构造函数不使用斜杠，但使用引号\nD) 构造函数在运行时求值\n\n\
+  以上所有都是正确的。\n\n### Q47\n打印顺序是什么？\n```javascript\nfunction resolveQuickly(x) {\n \
+  \ return new Promise(resolve => {\n    setTimeout(() => {\n      console.log(x)\n\
+  \    }, 1);\n  });\n}\nasync function asyncTest() {\n  var x = resolveQuickly(10);\n\
+  \  console.log(5);\n}\nasyncTest();\n```\nA) 10, 5\nB) 5, 10\nC) 什么都不打印。\n\n答案是\
+  \ B。\n\n### Q48\nJavaScript 这个名字从何而来？\nJavaScript 最初于 1995 年在 Netscape 开发，原本应该叫\
+  \ LiveScript。然而，由于 Java 是一种流行的语言，名字被改成了 JavaScript。\n\n### Q49\n以下哪一项不是 Promise\
+  \ 相对于旧式回调的优势？\nA) 执行速度\nB) `.then()` 链式调用\nC) Promise 回调总是按照它们在事件队列中放置的顺序被调用\nD)\
+  \ 更好的错误处理\nE) Promise 避免了控制反转\n\n答案是 A。\n\n### Q50\n判断对错？`do-while` 循环总是至少执行一次。\n\
+  A) 正确\nB) 错误\n\n答案是 A。\n\n### Q51\n展示一个递归调用 `setTimeout` 来模拟 `setInterval` 的例子。\n\
+  ```javascript\nsetTimeout(function recur() {\n  console.log('called me');\n  setTimeout(recur,\
+  \ 1000);\n}, 1000);\n```\n\n### Q52\nJSON 支持哪些数据类型？选择所有合适的答案。\nA) 字符串\nB) 数字\nC)\
+  \ 对象\nD) null\nE) 数组\nF) 布尔值\n\n以上所有都是正确的。\n\n### Q53\n将 `theFunction` 作为默认导出的两种语法是什么？\n\
+  答案：\n`export { theFunction as default };`\n`export default function theFunction\
+  \ () { ... }`\n\n### Q54\n函数声明和函数表达式在语法上有什么区别？\n答案：\n```javascript\nfunction myFunc()\
+  \ {\n  console.log('hoisted');\n}\nvar myFunc2 = function () {\n  console.log('not\
+  \ hoisted')\n}\n```\n\n### Q55\n判断对错？`import` 可以作为函数调用。\nA) 正确\nB) 错误\n\n答案是 A。`import`\
+  \ 可以动态调用，并返回一个 promise。\n\n### Q56\n下面的代码向控制台打印什么，为什么？\n```javascript\nconsole.log(x)\n\
+  x = 5;\nif(x){\n  var x = 10;\n  console.log(x);\n}\n```\nA) 5, 10\nB) 10, 10\n\
+  C) 5, 5\n\n答案是 B。\n\n### Q57\n`Array.reduce()` 的目的是什么？\nA) 将数组减少为回调\nB) 将数组减少为复合函数\n\
+  C) 将数组减少为单个值。\n\n答案是 C。\n\n### Q58\n什么是记忆化？\nA) 通过缓存先前计算的结果来提高函数性能\nB) JavaScript\
+  \ 中不可用的东西\nC) 为将来使用对象而创建对象属性的组合\n\n答案是 A。\n\n### Q59\n在 JavaScript 中创建一个抽象类的例子。\n\
+  答案：只有在启用了 TypeScript 或其他类型超集时才能创建抽象类。\n```typescript\nabstract class Printer {\n\
+  \  constructor() {}\n  print1(): void {\n    console.log(\"printing\");\n  }\n \
+  \ abstract print2(): void;\n}\n```\n\n### Q60\n给出一个使用 `String.prototype.match` 通过正则表达式运行字符串的例子。\n\
+  一个可能的答案：\n```javascript\nconst sentence = 'Heyo!';\nconst regex = /[A-Z]/g;\nconsole.log(sentence.match(regex));\n\
+  ```\n\n### Q61\n下面的代码会向控制台输出什么，为什么？\n```javascript\nfor(let i = 6; i > 0; i-=2){\n\
+  \  if(i%2){\n    continue;\n  }\n  console.log(i)\n}\n```\nA) 什么都不输出\nB) 4, 2, 0\n\
+  C) 6, 4, 2\nD) 4, 2\n\n答案是 C。\n\n### Q62\n判断对错？对象上重复的属性名被认为是语法错误。\nA) 正确\nB) 错误\n\
+  \n答案是 B。自 ECMAScript 2015 起，这不再是错误。\n\n### Q63\n判断对错？以下是错误的语法。\n```javascript\n\
+  function foo(arg) {\n  let arg = 1;\n}\n```\nA) 正确\nB) 错误\n\n答案是 A。这被称为形式参数的重声明。\n\
+  \n### Q64\n包含传递给函数的所有对象值的类数组对象的名称是什么？\nA) `arguments`\nB) `args`\nC) `params`\n\
+  D) `parameters`\n\n答案是 A。\n\n### Q65\n下面代码中的第三个参数 `true` 是用来做什么的？\n`element.addEventListener(\"\
+  click\", e => console.log(element.eventPhase), true);`\nA) 启用捕获阶段的事件捕获\nB) 启用冒泡阶段的事件捕获\n\
+  C) 在 `addEventListener` 函数中不使用\n\n答案是 A。\n\n### Q66\n在考虑强制转换时，什么是包装对象？\n为了“赋予”原始类型属性而包裹在原始类型周围的对象。例如：\n\
+  ```javascript\nconst str = ‘123’;\nconsole.log(str.length); //返回 3\n```\n\n### Q67\n\
+  `3 > 2 == 1` 返回什么？\nA) true\nB) false\nC) 0\n\n答案是 A。`3 > 2` 返回 `true`，`true ==\
+  \ 1` 返回 `true`。\n\n### Q68\nJavaScript 如何在布尔上下文中评估值或对象的真值或假值？\nA) 类型强制转换\nB) 它是每个对象上的一个属性\n\
+  C) 某些值永远没有真值或假值\n\n答案是 A。\n\n### Q69\n使用 IIFE 的目的是什么？选择所有可能的答案。\nA) 设置变量值\nB) 初始化对象上的值\n\
+  C) 在闭包中用于初始化值\nD) 运行一次性函数\n\n答案是 A、C、D。\n\n### Q70\n什么是词法作用域的例子？选择所有可能的答案。\nA) 基于变量输入动态定义的作用域\n\
+  B) `let self = this;` //在父函数中，然后 `self` 对内部函数可用\nC) 内部函数的作用域包含父函数的作用域\n\n答案是 B、C。\n\
+  \n### Q71\n下面的代码会向控制台输出什么，为什么？\n```javascript\nlet a = 3;\na <<= 1;\nconsole.log(a);\n\
+  ```\nA) 3\nB) 4\nC) 6\nD) 8\n\n答案是 C。\n\n### Q72\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  badCode = () => {\n  let arr = [1,2,3,4];\n  const inner = () => {\n    return arr.pop(2)\n\
+  \  }\n  return inner;\n}\nconsole.log(badCode()());\n```\nA) lint 错误\nB) 3, 4\n\
+  C) 34\nD) 4\n\n答案是 D。`pop` 不接受任何参数。\n\n### Q73\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  const obj = { a: 1 };\nlet obj2 = obj;\nobj2.a = 2;\nconsole.log(obj.a);\n```\n\
+  A) 1\nB) 2\nC) undefined\n\n答案是 B。\n\n### Q74\n编程中的副作用是什么？\n答案：副作用是指函数修改了影响应用程序其他部分的状态或可观察值。\n\
+  \n### Q75\n判断对错？`Array.prototype.filter()` 返回一个包含所有未通过提供的函数测试的项的数组。\nA) 正确\nB) 错误\n\
+  \n答案是 B。\n\n## 测试 4 答案\n\n### Q1\n判断对错？评估下面的代码。`bark()` 现在是 `Dog` 类上的一个函数。\n```javascript\n\
+  class Dog {\n  noise: string;\n  legs: number;\n}\nDog.bark = () => {\n  console.log('woof');\n\
+  }\nlet dog = new Dog();\ndog.bark();\n```\nA) 正确\nB) 错误\n\n答案是 B。正确的语法是 `Dog.prototype.bark`。\n\
+  \n### Q2\n判断对错？评估下面的代码。`bark()` 现在是 `Puppy` 类上的一个函数。\n```javascript\nclass Dog {\n\
+  \  noise: string;\n  legs: number;\n}\nDog.prototype.bark = () => {\n  console.log('woof');\n\
+  }\nclass Puppy extends Dog {\n  pottyTrained: boolean;\n}\nlet dog = new Puppy();\n\
+  dog.bark();\n```\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q3\n评估下面的代码。`getDOB` 函数有什么问题？本题启用了\
+  \ TypeScript。\n```typescript\nconst getDOB = (firstName: string, lastName: string)\
+  \ => {\n  return `${firstName} ${lastName}`\n}\n```\nA) `getDOB` 在字符串插值中有错误的语法\n\
+  B) 参数的类型错误\nC) 它返回 undefined\nD) 命名不当\n\n答案是 D。\n\n### Q4\n以下哪个是自定义元素的控制器？\nA) `CustomHTML`\
+  \ 对象\nB) `HTMLElementRegistry` 对象\nC) `CustomController` 对象\nD) `CustomElementRegistry`\
+  \ 对象\n\n答案是 D。\n\n### Q5\n自定义元素应该扩展哪个类？\nA) `DOMElement`\nB) `HTMLElement`\nC) `CustomElement`\n\
+  \n答案是 A。\n\n### Q6\n下面的代码会向控制台输出什么，为什么？\n`let x = 2.2 + 4.4 === 6.6; console.log(x);`\n\
+  A) undefined\nB) True\nC) False\nD) 无法编译\nE) 6.6\n\n答案是 C。\n\n### Q7\n下面的 pre-es6\
+  \ 代码会向控制台输出什么，为什么？未启用 TypeScript。\n```javascript\nfunction SomeClass() {\n  this.publicVar\
+  \ = 10;\n}\nSomeClass.staticVar = 10;\nconst myClass = new SomeClass();\nmyClass.publicVar\
+  \ = 12;\nmyClass.staticVar = 15;\nconst myClass2 = new SomeClass();\nconsole.log(myClass2.publicVar);\n\
+  console.log(myClass2.staticVar);\nconsole.log(SomeClass.staticVar);\n```\nA) 10,\
+  \ undefined, 12\nB) 10, 12, 12\nC) 10, 15, 15\nD) 12, undefined, 10\nE) 10, undefined,\
+  \ 10\n\n答案是 E。\n\n### Q8\n编写一个函数，用一行代码打印下面字符串中的不同元音字母。\n`const str = \"abcdeeef\"\
+  ;`\n一个可能的答案：`console.log(...new Set(str));`\n\n### Q9\n下面的代码会向控制台输出什么，为什么？\n`console.log(Math.floor(2.1)\
+  \ === new Float32Array(2.1));`\nA) True\nB) False\nC) 编译时错误\n\n答案是 B。\n\n### Q10\n\
+  下面的代码会向控制台输出什么，为什么？\n`console.log(Math.sin(Math.PI) === 0);`\nA) True\nB) False\n\
+  \n答案是 B。`Math.PI` 是一个近似值。\n\n### Q11\n下面的代码会向控制台输出什么，为什么？\n```javascript\nz = 10;\n\
+  console.log(z);\n```\nA) 10\nB) 编译时错误\nC) z\n\n答案取决于严格模式。如果未启用，答案是 A。如果启用，答案是 B。\n\
+  \n### Q12\n下面的代码会向控制台输出什么，为什么？\n```javascript\nlet max;\nconst numberArray = [3,\
+  \ 5, 2];\nnumberArray.forEach((element) => {\n  if (max < element) {\n    max =\
+  \ element;\n  }\n});\nconsole.log(max);\n```\nA) 3\nB) 5\nC) 2\nD) undefined\n\n\
+  答案是 D。\n\n### Q13\n哪个位运算符反转 32 位数字的位？\nA) `>>`\nB) `|`\nC) `&`\nD) `~`\n\n答案是 D。\n\
+  \n### Q14\n哪个运算符可以从对象中移除属性？\nA) remove\nB) delete\nC) return\nD) configure\n\n答案是\
+  \ B。\n\n### Q15\n访问下面 getter 的正确语法是什么？\n```javascript\nconst obj = {\n  count: [1,\
+  \ 2, 3],\n  get last() {\n    return this.count.pop();\n  }\n};\n```\nA) `obj.get(last)`\n\
+  B) `obj.getLast`\nC) `obj.last`\n\n答案是 C。\n\n### Q16\n什么时候可能会使用 `new.target`？\n\
+  当你想要在类或某些函数没有使用 `new` 关键字调用时抛出特定错误时。\n\n### Q17\n你会使用哪个方法将 nodelist 转换为数组？\nA) `Array.to()`\n\
+  B) `Array.from()`\nC) `NodeList.to()`\nD) `NodeLIst.from()`\n\n答案是 B。\n\n### Q18\n\
+  判断对错？有两种 `NodeList`：静态和动态。\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q19\n`Atomics` 不与哪个对象一起使用？\n\
+  A) Buffer\nB) `SharedArrayBuffer`\nC) `ArrayBuffer`\n\n答案是 A。\n\n### Q20\n哪种 JavaScript\
+  \ 错误类型通常用作自定义错误对象的基础？\nA) ReferenceError\nB) SyntaxError\nC) TypeError\nD) Error\n\
+  \n答案是 D。\n\n### Q21\n哪个属性保证无论环境如何都能访问全局对象？\nA) self\nB) `globalThis`\nC) this\n\
+  D) window\n\n答案是 B。\n\n### Q22\n关于 `undefined`，以下哪一项是不正确的？\nA) 它是全局对象的一个属性\nB) 它是全局作用域中的一个变量\n\
+  C) `undefined` 的初始值是原始值 `undefined`\nD) 它有一个名为 `Undefined` 的对应对象\n\n答案是 D。\n\n###\
+  \ Q23\n判断对错？可选链可以像下面这样堆叠？\n`let stateStats = state.area?.land?.sqmiles;`\nA) 正确\n\
+  B) 错误\n\n答案是 A。\n\n### Q24\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst a;\na.test\
+  \ ??= 25;\nconsole.log(a.test);\n```\nA) undefined\nB) 25\nC) 编译时错误\n\n答案是 C。\n\n\
+  ### Q25\nJavaScript 中括号 `()` 的技术名称是什么？\nA) 分组运算符\nB) 括号运算符\nC) 绑定运算符\n\n答案是 A。\n\
+  \n### Q26\n下面的代码向控制台输出什么，为什么？\n```javascript\nlet str = new String('aaa');\nstr.concat('bbb').concat('ccc');\n\
+  console.log(str);\n```\nA) aaa\nB) aaabbbccc\nC) ccc\nD) bbbccc\n\n答案是 A。`concat`\
+  \ 返回一个新字符串。\n\n### Q27\nJavaScript 运行时中的队列是什么？\n队列是要处理的消息列表。队列是先进先出的，意味着最旧的消息先被处理。\n\
+  \n### Q28\n判断对错？原生 JavaScript（无 TypeScript）从 ES2015 开始就有抽象类。\nA) 正确\nB) 错误\n\n答案是\
+  \ B。\n\n### Q29\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst b = {a: 1,b: 2,3: 3}\n\
+  for(key in b){\n  console.log(b[key]);\n}\n```\nA) 1 2 3\nB) 1 2\nC) Uncaught SyntaxError:\
+  \ Unexpected number\n\n答案是 C。在 JavaScript 中，键必须是字符串。\n\n### Q30\n用多个键/值对初始化 `Map`\
+  \ 对象的语法是什么？\n答案：创建一个新的 `Map` 对象，并用一个二维数组的键/值对初始化。例如：`const map = new Map([['a',1],\
+  \ ['b',2],['c',3]]);`\n\n### Q31\n判断对错？一个接口可以扩展另一个接口。假设启用了 TypeScript。\nA) 正确\n\
+  B) 错误\n\n答案是 A。\n\n### Q32\n判断对错？假设启用了 TypeScript。一个对象继承其父类的所有字段和方法。\nA) 正确\nB)\
+  \ 错误\n\n答案是 B。对象不会继承具有 `private` 修饰符的字段和方法。\n\n### Q33\n以下哪些是 TypeScript 接口方法的有效修饰符？选择所有正确的答案。\n\
+  A) public\nB) protected\nC) private\nD) abstract\nE) 以上都不是。\n\n答案是 E。\n\n### Q34\n\
+  判断对错？`static` 关键字在 JavaScript 中不是有效的修饰符。相反，需要像 TypeScript 这样的类型超集才能使 static 工作。\n\
+  A) 正确\nB) 错误\n\n答案是 B。\n\n### Q35\n哪一行代码块将打印以下字符：☃⌨ ὀ˿\n一个可能的答案：`console.log(String.fromCodePoint(9731,\
+  \ 9000, 8000, 0x2FF));`\n\n### Q36\n数组中的位置 3 有什么（如果有的话）？\n```javascript\nconst arr\
+  \ = [1, 2];\narr.length = 3;\n```\nA) 它是空的\nB) 它实际上没有被创建\nC) null\n\n答案是 A。\n\n\
+  ### Q37\n写一个一行代码的例子来反转 `array.reduce` 函数。\n答案：实际上有一个内置的数组函数叫做 `Array.reduceRight`。\n\
+  \n### Q38\n箭头函数的一些限制是什么？选择所有正确的选项。\nA) 箭头函数不应作为方法使用\nB) 箭头函数没有 `arguments`、`super`\
+  \ 或 `new.target` 关键字\nC) 箭头函数不能在函数体中使用 `yield` 关键字\nD) 箭头函数不能用作构造函数\n\n答案是以上所有。\n\
+  \n### Q39\n传统函数和箭头函数的默认作用域有什么区别？\n答案：传统函数默认 `this` 指向 window 作用域。箭头函数在其创建的作用域中执行。\n\
+  \n### Q40\n关于访问修饰符，以下哪些通常是正确的？\nA) 字段应具有尽可能窄的访问修饰符\nB) 方法应具有尽可能宽的访问修饰符\nC) 除非字段是常量，否则避免使用公共字段\n\
+  \n答案是 A、C。\n\n### Q41\n如果你在 `for` 循环中忘记了一个括号，会抛出什么类型的错误？\nA) SyntaxError\nB) TypeError\n\
+  C) ReferenceError\n\n答案是 A。\n\n### Q42\n判断对错？下面的代码是重载的例子。\n`console.log({a: 1}.toString\
+  \ = 'Test');`\nA) 正确\nB) 错误\n\n答案是 B。这里覆盖了默认的 `toString` 方法。\n\n### Q43\n判断对错？JavaScript\
+  \ 支持类上的静态变量。\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q44\n给出一个使用新的 ES6 语法创建父/子关系的例子。\n```javascript\n\
+  let dog = { name: \"buddy\", legs: 4 };\nlet animal = { type: \"mammal\" };\nObject.setPrototypeOf(dog,\
+  \ animal);\nconsole.log(Object.getPrototypeOf(dog));\n```\n\n### Q45\n判断对错？`try`\
+  \ 语句必须始终后跟至少一个 `catch` 语句。\nA) 正确\nB) 错误\n\n答案是 B。`try` 语句后面可以跟一个 `finally` 语句。\n\
+  \n### Q46\n判断对错？当 `RegExp` 会变化时使用 `RegExp` 字面量表示法，当 `RegExp` 保持不变时使用 `RegExp` 构造函数。\n\
+  A) 正确\nB) 错误\n\n答案是 B。\n\n### Q47\n判断对错？Promise 在 JavaScript 中是异步的。\nA) 正确\nB) 错误\n\
+  \n答案是 B。Promise 是同步的，但它们经常做异步的事情。\n\n### Q48\nWeb Workers 的目的是什么？\nA) 在与主线程不同的线程上执行昂贵的任务\n\
+  B) 将事件卸载到不同的对象\nC) 加速原型继承\n\n答案是 A。\n\n### Q49\n`Promise.resolve()` 返回什么类型的对象？\n\
+  答案：一个处于已解决状态且具有给定解决值的 promise。\n\n### Q50\n`setTimeout()` 和 `setInterval()` 有什么区别？选择两个选项。\n\
+  A) `setTimeout` 在指定时间过后执行一次\nB) `setInterval` 以给定的延迟重复执行\nC) `setTimeout` 以给定的延迟重复执行\n\
+  D) `setInterval` 在指定时间过后执行一次\n\n答案是 A、B。\n\n### Q51\n判断对错？`setInterval` 的间隔时间包括执行代码所花费的时间。\n\
+  A) 正确\nB) 错误\n\n答案是 A。\n\n### Q52\n判断对错？下面的代码可以编译。\n```javascript\nconst array =\
+  \ [1, 2, 3];\nfor (let i = 0; i < array1.length; array1[i++] = String.fromCharCode(96\
+  \ + i));\n```\nA) 正确\nB) 错误\n\n答案是 A。\n\n### Q53\n导入默认导出与导入命名（非默认）导出有什么区别？\nA) 花括号\n\
+  B) 默认导出中从不包含名称\nC) 没有区别\n\n答案是 A。\n\n### Q54\n判断对错？函数声明会被提升，函数表达式不会被提升。\nA) 正确\n\
+  B) 错误\n\n答案是 A。\n\n### Q55\n哪个语句会显示导入模块的 URL？\nA) `import.path`\nB) `path.show`\n\
+  C) `path.directory`\nD) `import.meta`\n\n答案是 D。\n\n### Q56\n`console.log`、`console.error`\
+  \ 和 `console.warn` 有什么区别？\n这三个函数在不同浏览器中记录方式不同，但通常 `error` 带有“错误”图标或红色，`warn` 带有“警告”图标或黄色。\n\
+  \n### Q57\n在以下文档中看到 `prototype` 的意义是什么：`Array.prototype.reduce()` 与 `Array.from()`\
+  \ 相对？选择所有正确的答案。\nA) `prototype` 表示 `reduce` 是一个实例级方法\nB) 缺少 `prototype` 表示 `from`\
+  \ 是一个类级方法\nC) `prototype` 表示 `reduce` 继承自 `Object`\n\n答案是 A、B。\n\n### Q58\n“最大调用栈超出”错误是如何触发的？\n\
+  答案：通常是一个函数递归调用自身，导致等待执行的函数调用“栈”增长，直到达到最大值。\n\n### Q59\n以下哪个不是 Web API `window` 对象上用于调整大小的可用方法？\n\
+  A) `resizeFrom()`\nB) `resizeBy()`\nC) `resizeTo()`\nD) `sizeToContent()`\n\n答案是\
+  \ A。\n\n### Q60\n`String.prototype.replace()` 可以接受哪两种类型作为第一个参数？选择所有正确的选项。\nA) 字符串\n\
+  B) 正则表达式\nC) 对象\n\n答案是 A、B。\n\n### Q61\n下面的代码会向控制台输出什么，为什么？\n```javascript\nfor(let\
+  \ i = 6; i < 10; i*1.5){\n  if(i%2){\n    continue;\n  }\n  console.log(i)\n}\n\
+  ```\nA) 6\nB) 6, 9\nC) 进入无限循环\nD) lint 错误\n\n答案是 C。`i*1.5` 不会改变 `i` 的值。\n\n### Q62\n\
+  以下哪一项是 `Object.assign()` 和展开语法之间的区别？\nA) 展开语法调用 setter，`Object.assign()` 不调用\nB)\
+  \ `Object.assign` 调用 setter，展开语法不调用\nC) 它们实际上行为相同\n\n答案是 B。\n\n### Q63\n给出一个一行代码检查属性是否存在于对象\
+  \ `dog` 上的例子。\n`const dog = { sound: ‘woof’, legs: 4 }`\n一个可能的答案：`let propExists\
+  \ = ‘sound’ in dog;`\n\n### Q64\n以下哪一项不是将 `arguments` 函数对象转换为数组的方法？\nA) `arguments.assign(arguments)`\n\
+  B) `Array.prototype.slice.call(arguments);`\nC) `Array.from(arguments);`\nD) `[...arguments]`\n\
+  \n答案是 A。\n\n### Q65\n事件处理的目标阶段是什么？\n目标阶段是事件处理的三个阶段中的第二个阶段。第一个是捕获，第三个是冒泡。\n\n###\
+  \ Q66\n双感叹号（`!!`）的作用是什么？\nA) 什么都不做\nB) 返回对象的真值\nC) 抛出错误\n\n答案是 B。例如：`!!0` 返回 `false`。\n\
+  \n### Q67\n`1 < 2 < 3`\nA) true\nB) false\n\n答案是 A。`1 < 2` 返回 `true`，`true < 3`\
+  \ 返回 `true`。\n\n### Q68\nJavaScript 如何在布尔上下文中评估值或对象的真值或假值？\nA) 类型强制转换\nB) 它是每个对象上的一个属性\n\
+  C) 某些值永远没有真值或假值\n\n答案是 A。\n\n### Q69\n使用 IIFE 的目的是什么？选择所有可能的答案。\nA) 设置变量值\nB) 初始化对象上的值\n\
+  C) 在闭包中用于初始化值\nD) 运行一次性函数\n\n答案是 A、C、D。\n\n### Q70\n什么是词法作用域的例子？选择所有可能的答案。\nA) 基于变量输入动态定义的作用域\n\
+  B) `let self = this;` //在父函数中，然后 `self` 对内部函数可用\nC) 内部函数的作用域包含父函数的作用域\n\n答案是 B、C。\n\
+  \n### Q71\n下面的代码会向控制台输出什么，为什么？\n```javascript\nlet a = 3;\na <<= 1;\nconsole.log(a);\n\
+  ```\nA) 3\nB) 4\nC) 6\nD) 8\n\n答案是 C。\n\n### Q72\n下面的代码会向控制台输出什么，为什么？\n```javascript\n\
+  badCode = () => {\n  let arr = [1,2,3,4];\n  const inner = () => {\n    return arr.pop(2)\n\
+  \  }\n  return inner;\n}\nconsole.log(badCode()());\n```\nA) lint 错误\nB) 3, 4\n\
+  C) 34\nD) 4\n\n答案是 D。\n\n### Q73\n下面的代码会向控制台输出什么，为什么？\n```javascript\nconst obj\
+  \ = { a: 1 };\nlet obj2 = obj;\nobj2.a = 2;\nconsole.log(obj.a);\n```\nA) 1\nB)\
+  \ 2\nC) undefined\n\n答案是 B。\n\n### Q74\n编程中的副作用是什么？\n答案：副作用是指函数修改了影响应用程序其他部分的状态或可观察值。\n\
+  \n### Q75\n判断对错？`Array.prototype.filter()` 返回一个包含所有未通过提供的函数测试的项的数组。\nA) 正确\nB) 错误\n\
+  \n答案是 B。\n\n"

@@ -1,0 +1,6446 @@
+<p><img src="image_rsrc2BF.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMidYMid meet" viewbox="0 0 1360 1920" height="100%" width="100%">
+<image xlink:href="image_rsrc2BF.jpg" height="1920" width="1360"></image>
+</svg>
+</div>
+<p><span id="part0001.xhtml"></span></p>
+<div class="class_sF">
+Line tracer (micro:bit version) 2nd edition <span
+id="part0001.xhtml_page_1"></span> table of contents
+</div>
+<div id="part0001.xhtml_Table_of_Contents" class="class_sH">
+<a href="#part0002.xhtml" class="class_s2A9">Introduction</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml" class="class_s2A9">[1] Overall
+configuration</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a28Y" class="class_s2A9">(1) Hardware
+preparation</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a28Z" class="class_s2A9">(2) Preparation of cam
+program robot</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a290" class="class_s2A9">(3) Preparation of
+substrate</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a291" class="class_s2A9">(4) Preparation for
+software creation</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a292" class="class_s2A9">(5) Confirmation of
+forward / backward movement</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a293" class="class_s2A9">(6) RGB LED
+display</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a294" class="class_s2A9">[2] Acquisition of
+sensor value and LCD display</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a295" class="class_s2A9">(1) Acquisition of
+sensor value</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a296" class="class_s2A9">(2) Program
+preparation</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a297" class="class_s2A9">(3) Flow chart</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a298" class="class_s2A9">(4) Display of sensor
+value</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a299" class="class_s2A9">(5) Background</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a29A" class="class_s2A9">[3] Operation
+policy</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29B" class="class_s2A9">(1) The center of the
+road</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29C" class="class_s2A9">(2) Operation
+procedure</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29D" class="class_s2A9">(3) Flow chart</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29E" class="class_s2A9">(4) Fuzzy
+calculation</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29F" class="class_s2A9">(5) Motor reversal</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a29G" class="class_s2A9">[4] Creation of main
+program</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29H" class="class_s2A9">(1) Variable
+definition</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29J" class="class_s2A9">(2) Main program</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a29K" class="class_s2A9">[5] Creation of
+timer</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29M" class="class_s2A9">(1) Common part</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29N" class="class_s2A9">(2) Running time</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29P" class="class_s2A9">(3) PWM output</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29R" class="class_s2A9">(4) Initialization</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a29S" class="class_s2A9">[6] Preparation for
+debugging</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29T" class="class_s2A9">(1) Monitor
+configuration</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29U" class="class_s2A9">(2) Cam robot side</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29V" class="class_s2A9">(3) micro:bit side for
+relay</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29W" class="class_s2A9">(4) PC side</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29X" class="class_s2A9">(5) Command</a>
+</div>
+<div id="part0001.xhtml_page_2" class="class_sN">
+<a href="#part0003.xhtml_a29Y" class="class_s2A9">(6) Receiving
+program</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a29Z" class="class_s2A9">(7) Response
+program</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a2A0" class="class_s2A9">(8) Confirm</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a2A1" class="class_s2A9">[7] To smooth
+control</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a2A2" class="class_s2A9">(1) Dead zone</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a2A3" class="class_s2A9">(2) Noise removal</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a2A4" class="class_s2A9">[8] Response when
+protruding the road</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a2A5" class="class_s2A9">(1) Flow chart</a>
+</div>
+<div class="class_sN">
+<a href="#part0003.xhtml_a2A6" class="class_s2A9">(2) Add to main
+loop</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a2A7" class="class_s2A9">[9] All programs
+posted</a>
+</div>
+<div class="class_sK">
+<a href="#part0003.xhtml_a2A8" class="class_s2A9">Afterword</a>
+</div>
+<p><span id="part0002.xhtml"></span></p>
+<div id="part0002.xhtml_a28W" class="heading_s26">
+Introduction
+</div>
+<div class="class_s28">
+Swinging both hands…, are you walking?
+</div>
+<div class="class_s2A">
+And wearing caterpillar rubber shoes, you're standing out!
+</div>
+<div class="class_s2A">
+You can easily go up the slopes around here, can't you!
+</div>
+<div class="class_s28">
+What!  "Walking along the black line"?
+</div>
+<div class="class_s2A">
+I see‥ Oh dear!  You are stepping back when stick out!
+</div>
+<div class="class_s2A">
+You never fall even if protrude a little!
+</div>
+<div class="class_s28">
+Oh!!  You have a big body, but you turn smoothly, don't you!  I'm
+impressed!
+</div>
+<div class="class_s2A">
+I like it!  What's your name?
+</div>
+<div class="class_s2A">
+"Cam robot"
+</div>
+<div class="class_s2A">
+Huh, ~ cam?  Where is the cam attached?
+</div>
+<div class="class_s2A">
+"Little modified so as to use a microcomputer instead of a cam."
+</div>
+<div class="class_s28">
+Oh ~!  Using a microcomputer~
+</div>
+<div class="class_s2A">
+So, what kind of trick does that microcomputer do internally?
+</div>
+<div class="class_s2A">
+"That's written in this book!"
+</div>
+<div class="class_s2A">
+Huh?  Let's see…
+</div>
+<div class="class_s2T">
+……So, using a microcomputer called “micro:bit” on a commercially
+available cam robot, this project makes the robot move along a black
+line.
+</div>
+<div class="class_sF">
+It can utilize a useful free tool called MakeCode. It can also write
+with MakeCode block editor, but the screen may tend to be complicated,
+so it is better to switch to Javascript.
+</div>
+<div class="class_sF">
+When using the recent Javascript editor, it can tell you where and why
+an error occurred.
+</div>
+<div class="class_s2T">
+The goal of line tracing is clear, and it is simple Javascript for
+micro:bit, so even middle school and high school students can fully use
+it.
+</div>
+<div class="class_sF">
+Like almost everything in the world, seemingly complex behaviors are
+made up of simple, small parts.
+</div>
+<div class="class_sF">
+So, let's go forward with confidence!
+</div>
+<div id="part0002.xhtml_page_4" class="class_s30">
+This book will help you.
+</div>
+<div class="class_s34-0">
+<img src="image_rsrc2BG.jpg" class="class_s34-1" />
+</div>
+<div class="class_s2T">
+The URL of the video sample is as follows.
+</div>
+<div class="class_sF">
+In the 2nd edition, RGB LED display has been added. Also, only the
+programs that run along the center of the road are dealt with so that it
+can handle cases where roads intersect.
+</div>
+<div class="class_sF">
+https://youtu.be/LIoKmstp0kk
+</div>
+<div class="class_s2T">
+"Note"
+</div>
+<div class="class_sF">
+If [Bad response for 130-&gt;255] is displayed when downloading the
+program to the micro:bit, you need to update the firmware of the
+micro:bit.
+</div>
+<div class="class_sF">
+As our firmware version was 241, we updated it to the latest version
+(253) and it solved.
+</div>
+<div class="class_sF">
+If applicable, please update as described below.
+</div>
+<div class="class_s2T">
+Troubleshooting downloads with WebUSB
+</div>
+<div class="class_sF">
+https://makecode.microbit.org/device/usb/webusb/troubleshoot
+</div>
+<p><span id="part0003.xhtml"></span></p>
+<div id="part0003.xhtml_a28X" class="heading_s3M">
+[1] Overall configuration
+</div>
+<div class="class_s3S-0">
+<img src="image_rsrc2BH.jpg" class="class_s3S-1" />
+</div>
+<div class="class_s3U">
+Configuration example:
+</div>
+<div id="part0003.xhtml_page_6" class="class_s3Y-0">
+<img src="image_rsrc2BJ.jpg" class="class_s3Y-1" />
+</div>
+<div id="part0003.xhtml_a28Y" class="heading_s40">
+(1) Hardware preparation
+</div>
+<div class="class_sF">
+1) Cam program robot work set70227（Tamiya No.227）
+</div>
+<div class="class_s43">
+＞Reference page  https://www.amazon.co.jp/dp/B073S47B11
+</div>
+<div class="class_s47-0">
+<img src="image_rsrc2BK.jpg" class="class_s47-1" />
+</div>
+<div class="class_s49">
+2) micro:bit<br />
+<span class="class_s2AH">​</span> ＞Reference page 
+https://www.amazon.co.jp/BBC-micro-bit/dp/B074M58PL7
+</div>
+<div id="part0003.xhtml_page_7" class="class_s4D-0">
+<img src="image_rsrc2BM.jpg" class="class_s4D-1" />
+</div>
+<div class="class_s2T">
+3) Motor driver expansion board（DFROBOT SKU_DFR0548）
+</div>
+<div class="class_s4G">
+<span class="class_s2AC">​</span> ＞Reference
+page  https://www.switch-science.com/catalog/4016/
+</div>
+<div class="class_s4M-0">
+<img src="image_rsrc2BN.jpg" class="class_s4M-1" />
+</div>
+<div class="class_s2T">
+4) Reflective photo sensor (ROHM RPR-220)  2 pieces
+</div>
+<div class="class_s4G">
+<span class="class_s2AC">​</span> ＞Reference
+page  http://akizukidenshi.com/catalog/g/gI-11401/
+</div>
+<div class="class_s4U-0">
+<img src="image_rsrc2BP.jpg" class="class_s4U-1" />
+</div>
+<div class="class_s2T">
+5) LCD panel（I2C AQM1602）
+</div>
+<div class="class_s4G">
+<span class="class_s2AC">​</span> ＞Reference
+page  http://akizukidenshi.com/catalog/g/gK-08896/
+</div>
+<div id="part0003.xhtml_page_8" class="class_s50-0">
+<img src="image_rsrc2BR.jpg" class="class_s50-1" />
+</div>
+<div class="class_s2T">
+6) Bidirectional voltage level conversion module for I2C bus（FXMA2102）
+</div>
+<div class="class_s43">
+＞Reference page  http://akizukidenshi.com/catalog/g/gM-05825/
+</div>
+<div class="class_s56-0">
+<img src="image_rsrc2BS.jpg" class="class_s56-1" />
+</div>
+<div class="class_s2T">
+7) 4 AA battery boxes
+</div>
+<div class="class_s43">
+＞Reference page  https://www.amazon.co.jp/dp/B01H1P6KEQ
+</div>
+<div class="class_s5C-0">
+<img src="image_rsrc2BT.jpg" class="class_s5C-1" />
+</div>
+<div class="class_s2T">
+8) Rechargeable nickel-metal hydride battery 4 pieces
+</div>
+<div class="class_s43">
+＞Reference page  https://www.amazon.co.jp/dp/B00CWNMR5Y
+</div>
+<div id="part0003.xhtml_page_9" class="class_s5J-0">
+<img src="image_rsrc2BU.jpg" class="class_s5J-1" />
+</div>
+<div class="class_s2T">
+9) RGB LED module with built-in microcomputer 4 pieces
+</div>
+<div class="class_s43">
+＞Reference page  http://akizukidenshi.com/catalog/g/gM-08414/
+</div>
+<div class="class_s5S-0">
+<img src="image_rsrc2BV.jpg" class="class_s5S-1" />
+</div>
+<div id="part0003.xhtml_a28Z" class="heading_s40">
+(2) Preparation of cam program robot
+</div>
+<div class="class_sF">
+The following pages are very useful for assembly.
+</div>
+<div class="class_sF">
+1) Explanation page on how to assemble
+</div>
+<div class="class_s30">
+https://sanuki-tech.net/micro-bit/tamiya/assembly-cam-program-robot/
+</div>
+<div class="class_s60-0">
+<img src="image_rsrc2BW.jpg" class="class_s60-1" />
+</div>
+<div class="class_s2T">
+Assemble except for No.1, No.6, and No.7 of the assembly manual attached
+to the cam robot.
+</div>
+<div class="class_sF">
+No.14 and No.17 battery boxes are made according to the above
+explanation page.
+</div>
+<div id="part0003.xhtml_page_10" class="class_s2T">
+2) Explanation page on how to incorporate micro:bit
+</div>
+<div class="class_s30">
+https://sanuki-tech.net/micro-bit/tamiya/mounting-of-microbit/
+</div>
+<div class="class_s68-0">
+<img src="image_rsrc2BX.jpg" class="class_s68-1" />
+</div>
+<div class="class_s2T">
+3) Explanation page of method to control cam robot
+</div>
+<div class="class_s30">
+https://sanuki-tech.net/micro-bit/tamiya/programming-of-cam-program-robot/
+</div>
+<div class="class_s6E-0">
+<img src="image_rsrc2BY.jpg" class="class_s6E-1" />
+</div>
+<div id="part0003.xhtml_a290" class="heading_s40">
+(3) Preparation of substrate
+</div>
+<div class="class_s30">
+The photo sensor board, LCD board, and RGB LED board were created as
+shown below.
+</div>
+<div id="part0003.xhtml_page_11" class="class_s6M-0">
+<img src="image_rsrc2BZ.jpg" class="class_s6M-1" />
+</div>
+<div class="class_s6P">
+
+</div>
+<div class="class_s6U-0">
+<img src="image_rsrc2C0.jpg" class="class_s6U-1" />
+</div>
+<div class="class_s6P">
+
+</div>
+<div class="class_s6Z-0">
+<img src="image_rsrc2C1.jpg" class="class_s6Z-1" />
+</div>
+<div class="class_s6P">
+
+</div>
+<div id="part0003.xhtml_page_12" class="class_s74-0">
+<img src="image_rsrc2C2.jpg" class="class_s74-1" />
+</div>
+<div class="class_s2T">
+The photo has four photo sensors, but only the center two are used.
+</div>
+<div class="class_s30">
+The motor driver expansion board has the following configuration.
+</div>
+<div class="class_s7A-0">
+<img src="image_rsrc2C3.jpg" class="class_s7A-1" />
+</div>
+<div id="part0003.xhtml_a291" class="heading_s40">
+(4) Preparation for software creation
+</div>
+<div class="class_sF">
+1) Makecode editor
+</div>
+<div class="class_sF">
+Download the Makecode editor from the URL below.
+</div>
+<div class="class_s30">
+https://www.microsoft.com/en-us/p/makecode-for-micro-bit/9pjc7sv48lcx?activetab=pivot:overviewtab
+</div>
+<div class="class_s3S-0">
+<img src="image_rsrc2C4.jpg" class="class_s3S-1" />
+</div>
+<div class="class_s3U">
+2) Add a driver and check the ON / OFF operation of the motor.
+</div>
+<div class="class_s7P-0">
+<img src="image_rsrc2C5.jpg" class="class_s7P-1" />
+</div>
+<div class="class_s2T">
+Add a driver to operate the motor to the program.
+</div>
+<div class="class_s30">
+Go to "New project", "Advanced block", "Extension" in the MakeCode
+editor, and enter "https://github.com/DFRobot/pxt-motor" in the search
+field. Then, "motor" is displayed, so click it.
+</div>
+<div id="part0003.xhtml_page_14" class="class_s7W-0">
+<img src="image_rsrc2C6.jpg" class="class_s7W-1" />
+</div>
+<div class="class_s3U">
+This will add "DF-Driver" to the list of blocks.
+</div>
+<div class="class_s81-0">
+<img src="image_rsrc2C7.jpg" class="class_s81-1" />
+</div>
+<div class="class_s2T">
+Facing the direction of travel of the cam robot, each motor is connected
+to the following terminals.
+</div>
+<div class="class_sF">
+Left motor ... M1 terminal
+</div>
+<div class="class_sF">
+Right motor ... M2 terminal
+</div>
+<div class="class_s3U">
+Click "DF-Driver" in the block editor to display the items shown below.
+</div>
+<div id="part0003.xhtml_page_15" class="class_s89-0">
+<img src="image_rsrc2C8.jpg" class="class_s89-1" />
+</div>
+<div class="class_s2T">
+Select "Motor" and specify the motor, rotation direction, and speed.
+</div>
+<div class="class_s30">
+The speed is a value from 0 to 255, but let's check with a value of
+about 100 at first.
+</div>
+<div class="class_s8F-0">
+<img src="image_rsrc2C9.jpg" class="class_s8F-1" />
+</div>
+<div class="class_s3U">
+Press the "Download" button to write the program to micro:bit.
+</div>
+<div class="class_s8M-0">
+<img src="image_rsrc2CA.jpg" class="class_s8M-1" />
+</div>
+<div class="class_s2T">
+Turn on the cam robot and operate the motor.
+</div>
+<div class="class_sF">
+Does the motor work?
+</div>
+<div class="class_sF">
+Stop temporarily (turn off the power at this stage) and rewrite the
+speed value.
+</div>
+<div class="class_sF">
+"Download" again and watch the motor turn from low to high speed.
+</div>
+<div id="part0003.xhtml_page_16" class="class_s2T">
+Next, let's switch to the Javascript editor. On the Javascript screen,
+the one written with the block editor is displayed as follows.
+</div>
+<div class="class_s2T">
+motor.MotorRun(motor.Motors.M1, motor.Dir.CW, 100)
+</div>
+<div class="class_sF">
+motor.MotorRun(motor.Motors.M2, motor.Dir.CW, 100)
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_s2T">
+Use these, prepare forward and backward programs.
+</div>
+<div id="part0003.xhtml_a292" class="class_s90">
+(5) Confirmation of forward / backward movement
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//Heading to the forward direction of the cam robot, M1: left wheel, M2:
+right wheel
+</div>
+<div class="class_sF">
+function Advance(speed1: number, speed2: number) {
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M1, motor.Dir.CW, speed1)
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M2, motor.Dir.CW, speed2)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function FallBack(speed1: number, speed2: number) {
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M1, motor.Dir.CCW, speed1)
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M2, motor.Dir.CCW, speed2)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function MotorStop(){
+</div>
+<div class="class_s95">
+motor.motorStopAll()
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Let's call these functions from the main loop.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+// main loop
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+Advance(80, 80)
+</div>
+<div class="class_s95">
+basic.pause(1000)  //ms
+</div>
+<div class="class_s95">
+MotorStop()
+</div>
+<div class="class_s95">
+basic.pause(1000)  //ms
+</div>
+<div class="class_s95">
+FallBack(80, 80<span id="part0003.xhtml_page_17"></span> )
+</div>
+<div class="class_s95">
+basic.pause(1000)  //ms
+</div>
+<div class="class_s95">
+MotorStop()
+</div>
+<div class="class_s95">
+basic.pause(1000)  //ms
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+If the argument of Advance (80, 80) is set to a minus value, the motor
+reverses, so it is possible to use Advance (-80, -80) instead of
+FallBack (80, 80).
+</div>
+<div class="class_sF">
+When changing the traveling direction of the cam robot, you can change
+the direction greatly by changing the left and right rotation directions
+like Advance (80, -80).
+</div>
+<div id="part0003.xhtml_a293" class="heading_s40">
+(6) RGB LED display
+</div>
+<div class="class_sF">
+Although not directly related to driving control, this color-changing
+LED is excellent for enjoying the operation of the Cam robot. In this
+book, the LED display color is changed separately for left and right
+according to the wheel speed and the optical sensor value. You can check
+the changes in the sensor value and speed even from a distance, which
+may be useful for reviewing the driving software.
+</div>
+<div class="class_s30">
+From the Makecode editor, press "advanced block" "extension" and click
+“neopixel” displayed on the screen.
+</div>
+<div class="class_sA6-0">
+<img src="image_rsrc2CB.jpg" class="class_sA6-1" />
+</div>
+<div class="class_s3U">
+"Neopixel" is added to the block list.
+</div>
+<div id="part0003.xhtml_page_18" class="class_sAB-0">
+<img src="image_rsrc2CC.jpg" class="class_sAB-1" />
+</div>
+<div class="class_s3U">
+When you click "Neopixel", the items shown below are displayed.
+</div>
+<div class="class_sAG-0">
+<img src="image_rsrc2CD.jpg" class="class_sAG-1" />
+</div>
+<div class="class_s3U">
+Among this, use the tool shown below.
+</div>
+<div class="class_sAN-0">
+<img src="image_rsrc2CE.jpg" class="class_sAN-1" />
+</div>
+<div class="class_s30">
+let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
+</div>
+<div class="class_sAU-0">
+<img src="image_rsrc2CF.jpg" class="class_sAU-1" />
+</div>
+<div class="class_s30">
+strip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+</div>
+<div id="part0003.xhtml_page_19" class="class_sAZ-0">
+<img src="image_rsrc2CG.jpg" class="class_sAZ-1" />
+</div>
+<div class="class_sF">
+strip.show()
+</div>
+<div class="class_s2T">
+Using this tool, I have been prepared with the following functions.
+</div>
+<div class="class_s30">
+The color assignment according to the speed and sensor value is shown in
+the figure below.
+</div>
+<div class="class_sB6-0">
+<img src="image_rsrc2CH.jpg" class="class_sB6-1" />
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+let item = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
+</div>
+<div class="class_sF">
+let colorTable = [0X0000ff, 0x00ffff, 0x00ff00, 0xffff00, 0xff00ff]
+</div>
+<div class="class_sF">
+//For speed
+</div>
+<div class="class_sF">
+function NeoSpeed(pos: number, speed: number) {
+</div>
+<div class="class_s95">
+//-40...60...120
+</div>
+<div class="class_s95">
+let index = 0
+</div>
+<div class="class_s95">
+if (speed &lt; 0)
+</div>
+<div class="class_sBG">
+item.setPixelColor(pos, colorTable[0])
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+if (speed &gt;= 60) {  //60...120
+</div>
+<div class="class_sBM">
+speed -= 60 //0..60
+</div>
+<div class="class_sBM">
+index = speed / 15  //0...3
+</div>
+<div class="class_sBM">
+if (index &gt; 3)
+</div>
+<div class="class_sBS">
+index = 3
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_sBG">
+els<span id="part0003.xhtml_page_20"></span> e
+</div>
+<div class="class_sBM">
+index = 0
+</div>
+<div class="class_sBG">
+index += 1
+</div>
+<div class="class_sBG">
+item.setPixelColor(pos, colorTable[index])
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return index
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//For sensor
+</div>
+<div class="class_sF">
+function NeoSensor(pos: number, sensor: number) {
+</div>
+<div class="class_s95">
+//0...1023
+</div>
+<div class="class_s95">
+let index = 0
+</div>
+<div class="class_s95">
+sensor -= 300
+</div>
+<div class="class_s95">
+if (sensor &gt;= 0) {
+</div>
+<div class="class_sBG">
+index = sensor / 200    //0,1,2,3..
+</div>
+<div class="class_sBG">
+index += 1
+</div>
+<div class="class_sBG">
+if (index &gt; 4)
+</div>
+<div class="class_sBM">
+index = 4
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+item.setPixelColor(pos, colorTable[4 - index])
+</div>
+<div class="class_s95">
+return index
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//0=left front, 1=left rear, 2=right rear, 3=right front
+</div>
+<div class="class_sF">
+//Display only when the values are different
+</div>
+<div class="class_sF">
+let oldIndex = 0
+</div>
+<div class="class_sF">
+function NeoShow() {
+</div>
+<div class="class_s95">
+let a = NeoSensor(0, leftSensor)
+</div>
+<div class="class_s95">
+let b = NeoSensor(3, rightSensor)
+</div>
+<div class="class_s95">
+let c = NeoSpeed(1, speedLeft)
+</div>
+<div class="class_s95">
+let d = NeoSpeed(2, speedRight)
+</div>
+<div class="class_s95">
+let val = a &lt;&lt; 12 + b &lt;&lt; 8 + c &lt;&lt; 4 + d
+</div>
+<div class="class_s95">
+if (oldIndex != val) {
+</div>
+<div class="class_sBG">
+oldIndex = val
+</div>
+<div class="class_sBG">
+item.show()
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a294" class="heading_sCZ">
+[2] Acquisition of sensor value and LCD display
+</div>
+<div id="part0003.xhtml_page_21" class="class_sF">
+Now, our aim is to change the rotation speed of the left and right
+motors and adjust the direction in which to operate the cam robot along
+the line.
+</div>
+<div class="class_sF">
+This judgment is based on the values of the left and right sensors.
+</div>
+<div class="class_sF">
+So next, let's get the sensor value.
+</div>
+<div id="part0003.xhtml_a295" class="heading_s40">
+(1) Acquisition of sensor value
+</div>
+<div class="class_sF">
+Facing the traveling direction of the cam robot,
+</div>
+<div class="class_sF">
+Left side sensor is connected to P0 terminal,
+</div>
+<div class="class_sF">
+Right side sensor is connected to P1 terminal.
+</div>
+<div class="class_s3U">
+When writing in the block editor as shown below,
+</div>
+<div class="class_sDB-0">
+<img src="image_rsrc2CJ.jpg" class="class_sDB-1" />
+</div>
+<div class="class_s2T">
+In Javascript, it is expressed as follows.
+</div>
+<div class="class_s2T">
+let leftSensor = 0
+</div>
+<div class="class_sF">
+let rightSensor = 0
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+leftSensor = pins.analogReadPin(AnalogPin.P0)
+</div>
+<div class="class_s95">
+rightSensor = pins.analogReadPin(AnalogPin.P1)
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_s2T">
+We can use this to get sensor values.
+</div>
+<div class="class_sF">
+This value is from 0 to 1023 because micro:bit analog input conversion
+is 10 bits.
+</div>
+<div class="class_sF">
+However, it is difficult to confirm the value with the micro:bit LED
+panel, so let's display it on the external LCD panel.
+</div>
+<div id="part0003.xhtml_page_22" class="class_s2T">
+In the future, as the program becomes longer, it will be necessary to
+edit efficiently.
+</div>
+<div class="class_sF">
+In the current version of the Makecode editor, switching between blocks
+and Javascript will change the position of functions and variables.
+</div>
+<div class="class_sF">
+As a countermeasure,
+</div>
+<div class="class_sF">
+1) Do not switch to block
+</div>
+<div class="class_sF">
+2) There is a method of editing Javascript with another editor
+(development environment) and pasting it on the Javascript screen of
+Makecode.
+</div>
+<div class="class_s2T">
+We use Microsoft Visual Studio Community 2019 because it is difficult to
+edit Javascript with Makecode editor. Please refer to this method as
+well.
+</div>
+<div id="part0003.xhtml_a296" class="heading_s40">
+(2) Program preparation
+</div>
+<div class="class_sF">
+Now, create the software according to the instructions for the LCD panel
+(I2C AQM1602).
+</div>
+<div class="class_sF">
+Create the following basic program and call it from the LCD display
+program.
+</div>
+<div class="class_sF">
+1) Initial setting
+</div>
+<div class="class_sF">
+2) Write commands and characters
+</div>
+<div class="class_sF">
+In the initial setting, the following commands are sent in order, but it
+is necessary to leave more time than the internal processing time
+between commands.
+</div>
+<div class="class_sF">
+Initialization could not be performed even for a time that was a little
+more than the microsecond written in the AQM1602 manual, so here we
+drastically set it to a long time (millisecond).
+</div>
+<div class="class_sF">
+Also, since the I2C transmission method prepared in the block editor is
+slightly different from the method shown in the AQM1602 manual, here we
+use a buffer method. A description of the buffer is provided below.
+</div>
+<div class="class_sF">
+https://makecode.microbit.org/types/buffer
+</div>
+<div class="class_s2T">
+The signal sent to the LCD with I2C is as shown below.
+</div>
+<div class="class_sF">
+The LCD address is 0x3E.
+</div>
+<div class="class_sF">
+In the figure below, the command (0x80) for specifying the display <span
+id="part0003.xhtml_page_23"></span> matrix and the display data
+("ABC123") are sent.
+</div>
+<div class="class_sEB-0">
+<img src="image_rsrc2CK.jpg" class="class_sEB-1" />
+</div>
+<div class="class_s2T">
+Command section expansion
+</div>
+<div class="class_sEG-0">
+<img src="image_rsrc2CM.jpg" class="class_sEG-1" />
+</div>
+<div class="class_s2T">
+Data section expansion
+</div>
+<div class="class_sAN-0">
+<img src="image_rsrc2CN.jpg" class="class_sAN-1" />
+</div>
+<div id="part0003.xhtml_a297" class="heading_s40">
+(3) Flow chart
+</div>
+<div class="class_s30">
+Create the LCD initialization according to the flowchart below.
+</div>
+<div id="part0003.xhtml_page_24" class="class_sEU-0">
+<img src="image_rsrc2CP.jpg" class="class_sEU-1" />
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+// LCD Initialize
+</div>
+<div class="class_sF">
+let initList = [0x38, 0x39, 0x14, 0x73, 0x56, 0x6C, 0x38, 0x01, 0x0C]
+</div>
+<div class="class_sF">
+// For AQM1602
+</div>
+<div class="class_sF">
+function InitLcd() <span id="part0003.xhtml_page_25"></span> {
+</div>
+<div class="class_s95">
+basic.pause(100)
+</div>
+<div class="class_s95">
+let len = initList.length
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; len; n++) {
+</div>
+<div class="class_sBG">
+WriteCommand(0, initList[n])
+</div>
+<div class="class_sBG">
+basic.pause(10)
+</div>
+<div class="class_sBG">
+if (n == 5)
+</div>
+<div class="class_sBM">
+basic.pause(300)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s30">
+Write commands and character strings according to the flowchart below.
+</div>
+<div class="class_sFE-0">
+<img src="image_rsrc2CR.jpg" class="class_sFE-1" />
+</div>
+<div id="part0003.xhtml_page_26" class="class_sFJ-0">
+<img src="image_rsrc2CS.jpg" class="class_sFJ-1" />
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+// LCD
+</div>
+<div class="class_sF">
+function WriteCommand(regi: number, data: number) {
+</div>
+<div class="class_s95">
+let cmd = pins.createBuffer(2);
+</div>
+<div class="class_s95">
+cmd[0] = regi
+</div>
+<div class="class_s95">
+cmd[1] = data
+</div>
+<div class="class_s95">
+pins.i2cWriteBuffer(0x3e, cmd, false);
+</div>
+<div class="class_s95">
+control.waitMicros(30)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+// LCD
+</div>
+<div class="class_sF">
+function WriteString(col: number, row: number, str: string) {
+</div>
+<div class="class_s95">
+if (row == 0)
+</div>
+<div class="class_sBG">
+WriteCommand(0, 128 + col)
+</div>
+<div class="class_s95">
+else if (row == 1)
+</div>
+<div class="class_sBG">
+WriteCommand(0, 192 + col)
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+retur<span id="part0003.xhtml_page_27"></span> n
+</div>
+<div class="class_s95">
+let len = str.length
+</div>
+<div class="class_s95">
+let buff = pins.createBuffer(len + 1)
+</div>
+<div class="class_s95">
+buff[0] = 64
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt;= len - 1; n++)
+</div>
+<div class="class_sBG">
+buff[n + 1] = str.charCodeAt(n)
+</div>
+<div class="class_s95">
+pins.i2cWriteBuffer(0x3e, buff, false)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Since the sensor value changes from 0 to 1023, it is always displayed in
+the area of 4 characters, and when the number of digits is small, it is
+filled with spaces.
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//LCD
+</div>
+<div class="class_sF">
+function FillSpace(str: string, len: number) {
+</div>
+<div class="class_s95">
+let m = len - str.length
+</div>
+<div class="class_s95">
+if (m &gt; 0) {
+</div>
+<div class="class_sBG">
+for (let n = 0; n &lt; m; n++)
+</div>
+<div class="class_sBM">
+str += " "
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return str
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a298" class="heading_s40">
+(4) Display of sensor value
+</div>
+<div class="class_sF">
+Let's display the left and right sensor values on the LCD.
+</div>
+<div class="class_s30">
+Write the values of right sensor and left sensor on the first line of
+the LCD.
+</div>
+<div class="class_sGY-0">
+<img src="image_rsrc2CT.jpg" class="class_sGY-1" />
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div id="part0003.xhtml_page_28" class="class_sF">
+let leftSensor = 0
+</div>
+<div class="class_sF">
+let rightSensor = 0
+</div>
+<div class="class_sF">
+//LCD
+</div>
+<div class="class_sF">
+function ShowLcd() {
+</div>
+<div class="class_s95">
+let str1 = Math.round(rightSensor).toString()
+</div>
+<div class="class_s95">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_s95">
+WriteString(0, 0, str1)
+</div>
+<div class="class_s95">
+str1 = Math.round(leftSensor).toString()
+</div>
+<div class="class_s95">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_s95">
+WriteString(12, 0, str1)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a299" class="heading_s40">
+(5) Background
+</div>
+<div class="class_sF">
+During the operation of the cam robot, sensor values are always
+required, so capture them in the background.
+</div>
+<div class="class_s30">
+In Javascript of Makecode, how to write is to open "New project" and
+select "Run in background" from "Advanced block" "Control".
+</div>
+<div class="class_sHJ-0">
+<img src="image_rsrc2CU.jpg" class="class_sHJ-1" />
+</div>
+<div class="class_s2T">
+If you switch to Javascript, you will find that you should write as
+follows.
+</div>
+<div class="class_s2T">
+control.inBackground(function () {
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+In this function, write the part that captures the left and right sensor
+values.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sK">
+/<span class="class_s2AE">/</span> <span
+id="part0003.xhtml_page_29"></span> Background worker
+</div>
+<div class="class_sF">
+control.inBackground(function () {
+</div>
+<div class="class_s95">
+while (true) {
+</div>
+<div class="class_sBG">
+leftSensor = pins.analogReadPin(AnalogPin.P0)
+</div>
+<div class="class_sBG">
+rightSensor = pins.analogReadPin(AnalogPin.P1)
+</div>
+<div class="class_sBG">
+basic.pause(5)  //ms
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+The background also uses CPU time, so the above basic.pause () is
+required. Without this, most of the CPU time will be taken in the
+background and the main program will not run.
+</div>
+<div class="class_sF">
+The time of pause () is determined in consideration of the control cycle
+of fuzzy control that follows.
+</div>
+<div class="class_sF">
+Now that we are ready, call the LCD display function in the main loop.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Starting point
+</div>
+<div class="class_sF">
+InitLcd()
+</div>
+<div class="class_sF">
+// main loop
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+ShowLcd()
+</div>
+<div class="class_s95">
+basic.pause(500)  //ms
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+How is it?  Did it display?
+</div>
+<div class="class_sF">
+When moving the black paper under the sensor, does it change the value?
+</div>
+<div class="class_sF">
+The left and right values are different on the handmade sensor board of
+the cam robot used this time.
+</div>
+<div class="class_s30">
+Whether it is due to the influence of ambient light, differences in
+component constants, or because the mounting position is not accurate,
+for example, as shown in the figure below.
+</div>
+<div id="part0003.xhtml_page_30" class="class_s3Y-0">
+<img src="image_rsrc2CV.jpg" class="class_s3Y-1" />
+</div>
+<div class="class_s2T">
+If OK, you have got a way to know the most important sensor values, so
+let's move on to the next step.
+</div>
+<div id="part0003.xhtml_a29A" class="heading_sCZ">
+[3] Operation policy
+</div>
+<div class="class_sF">
+Now, with what kind of policy do you control the movement of the cam
+robot?
+</div>
+<div class="class_sF">
+Moving along the road, but along which part of the road do you move?
+</div>
+<div class="class_sF">
+In the center of the road? Or the edge of the road?
+</div>
+<div class="class_sF">
+The sensor concentration of the board created this time is as shown
+below.
+</div>
+<div class="class_sF">
+Since a lot of light is reflected on white paper, the value is low due
+to the hardware configuration. On black paper, the value input to the
+microcomputer is high because there is little reflected light.
+</div>
+<div class="class_s30">
+The figure below shows the values of each sensor when the black paper is
+moved from right to left by hand.
+</div>
+<div id="part0003.xhtml_page_31" class="class_sJZ-0">
+<img src="image_rsrc2CW.jpg" class="class_sJZ-1" />
+</div>
+<div id="part0003.xhtml_a29B" class="heading_s40">
+(1) The center of the road
+</div>
+<div class="class_sF">
+If you want to control the cam robot to the center of the road, you will
+control so that the slope of the straight line connecting the left and
+right sensor values is horizontal (that is so that the difference
+between the left and right sensor values to 0).
+</div>
+<div class="class_s30">
+Even if there is a difference in the sensor values on the left and right
+in the same black area, there should be somewhere where the inclination
+is almost horizontal. Control it with the goal.
+</div>
+<div class="class_s3S-0">
+<img src="image_rsrc2CX.jpg" class="class_s3S-1" />
+</div>
+<div id="part0003.xhtml_page_32" class="class_s2T">
+To respond to the intersection of road lines, the second edition of this
+book only deals with running along the center of the road.
+</div>
+<div class="class_s2T">
+What explained here is only an example.
+</div>
+<div class="class_sF">
+Besides this, your readers may find innovative ways.
+</div>
+<div class="class_sF">
+There is no right answer for control. Failure is natural.
+</div>
+<div class="class_sF">
+The most important thing is to think of various ways for yourself and
+try hard.
+</div>
+<div id="part0003.xhtml_a29C" class="heading_s40">
+(2) Operation procedure
+</div>
+<div class="class_sF">
+After turning on the power,
+</div>
+<div class="class_sF">
+1) Place the cam robot on the white part of the paper on which the
+course is drawn and press the B button to read the white sensor value.
+</div>
+<div class="class_s30">
+To confirm that you have pressed it, it will display the number 1 on the
+micro:bit LED screen.
+</div>
+<div class="class_sKJ-0">
+<img src="image_rsrc2CY.jpg" class="class_sKJ-1" />
+</div>
+<div class="class_s2T">
+2) Place the left and right sensors on the black part of the paper and
+press the B button to read the black sensor value.
+</div>
+<div class="class_s30">
+Similarly, the number 2 is displayed on the LED screen of mcro:bit.
+</div>
+<div id="part0003.xhtml_page_33" class="class_sKS-0">
+<img src="image_rsrc2CZ.jpg" class="class_sKS-1" />
+</div>
+<div class="class_s2T">
+The order of 1) and 2) can be reversed. At the end of this operation,
+the white and black representative values and the median value are
+determined. If this operation is omitted, the default value will be
+used.
+</div>
+<div class="class_s30">
+3) Place the two central sensors on the line and press the A button to
+start.
+</div>
+<div class="class_sKY-0">
+<img src="image_rsrc2D0.jpg" class="class_sKY-1" />
+</div>
+<div class="class_s2T">
+4) Press the B button to stop at any time. Since the typical values of
+black and white are remembered, the operation can be restarted simply by
+pressing the A button.
+</div>
+<div id="part0003.xhtml_a29D" class="heading_s40">
+(3) Flow chart
+</div>
+<div class="class_s30">
+The flowchart is as shown below.
+</div>
+<div class="class_sM5-0">
+<img src="image_rsrc2D1.jpg" class="class_sM5-1" />
+</div>
+<div id="part0003.xhtml_a29E" class="heading_s40">
+(4) Fuzzy calculation
+</div>
+<div class="class_sF">
+The above fuzzy calculation is described in detail in "Fuzzy &amp; PID2"
+of the same "Discover How" series as this document but uses its own
+<span id="part0003.xhtml_page_35"></span> fuzzy calculation.
+</div>
+<div class="class_s30">
+This is determined as the following diagram shows.
+</div>
+<div class="class_sAN-0">
+<img src="image_rsrc2D2.jpg" class="class_sAN-1" />
+</div>
+<div class="class_s2T">
+The meaning of "fuzzyList []" below is as follows.
+</div>
+<div class="class_sK">
+fuzzyList[0]<span class="class_s2AK">​</span> Maximum deviation value
+(horizontal axis)
+</div>
+<div class="class_sK">
+fuzzyList[1]<span class="class_s2AK">​</span> Maximum deviation change
+(vertical axis)
+</div>
+<div class="class_sK">
+fuzzyList[2]<span class="class_s2AK">​</span> Output maximum value
+</div>
+<div class="class_sF">
+The fuzzy calculation program is as follows.
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//Fuzzy
+</div>
+<div class="class_sF">
+//fuzzyList[2] is multiplied by 10, so the result should be 1/10
+</div>
+<div class="class_sF">
+let fuzzyList = [200, 40, 200]
+</div>
+<div class="class_sF">
+let oldDiff = 0
+</div>
+<div class="class_sF">
+let fuzResult = 0
+</div>
+<div class="class_sF">
+let target = 0
+</div>
+<div class="class_sF">
+//Fuzzy  Calculate the amount to suppress
+</div>
+<div id="part0003.xhtml_page_36" class="class_sF">
+function Fuzzy(val: number) {
+</div>
+<div class="class_s95">
+let x0 = target - val  //Deviation from median
+</div>
+<div class="class_s95">
+let y0 = x0 - oldDiff   //Deviation change amount
+</div>
+<div class="class_s95">
+oldDiff = x0
+</div>
+<div class="class_s95">
+let dv = fuzzyList[0]     //Maximum deviation
+</div>
+<div class="class_s95">
+let ddv = fuzzyList[1]    //Maximum difference in deviation change
+</div>
+<div class="class_s95">
+let lout = -fuzzyList[2]    //Output maximum value
+</div>
+<div class="class_s95">
+let a = ddv / dv //Slope = deviation change amount / deviation
+</div>
+<div class="class_s95">
+let d = x0 + a * y0 //numerator
+</div>
+<div class="class_s95">
+let x1 = d / (a * a + 1)    //X coordinate of intersection = numerator /
+denominator
+</div>
+<div class="class_s95">
+let lx = dv   //Deviation
+</div>
+<div class="class_s95">
+let result = (x1 * lout) / lx
+</div>
+<div class="class_s95">
+//Limit output
+</div>
+<div class="class_s95">
+let limit = fuzzyList[2]
+</div>
+<div class="class_s95">
+if (result &lt; -limit)
+</div>
+<div class="class_sBG">
+result = -limit
+</div>
+<div class="class_s95">
+else if (result &gt; limit)
+</div>
+<div class="class_sBG">
+result = limit
+</div>
+<div class="class_s95">
+return result / 10
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29F" class="heading_s40">
+(5) Motor reversal
+</div>
+<div class="class_sF">
+By the way, if the motor speed is lower than a certain value, the wheels
+hardly move.
+</div>
+<div class="class_sF">
+An example: Advance(80, 30)   Right wheel does not move
+</div>
+<div class="class_sF">
+Therefore, as shown in the figure below, we reverse the motor at a
+certain speed or less.
+</div>
+<div class="class_sF">
+For example,
+</div>
+<div class="class_sF">
+If "fuzzyList = [200, 40, 200]", the output range of Fuzzy is -20～20.
+</div>
+<div class="class_s30">
+If "speedList = [60, 80, 100, 120]", the range of speed is "Center speed
+± Fuzzy", so it is as shown in the table below.
+</div>
+<div id="part0003.xhtml_page_37" class="class_s3S-0">
+<img src="image_rsrc2D3.jpg" class="class_s3S-1" />
+</div>
+<div class="class_s3U">
+When fuzzyList = [200, 40, 300], the output range of Fuzzy is -30 to 30,
+so it is as shown in the table below.
+</div>
+<div class="class_s3S-0">
+<img src="image_rsrc2D4.jpg" class="class_s3S-1" />
+</div>
+<div class="class_s3U">
+This is shown in the figure below.
+</div>
+<div id="part0003.xhtml_page_38" class="class_sM5-0">
+<img src="image_rsrc2D5.jpg" class="class_sM5-1" />
+</div>
+<div class="class_s2T">
+The program to limit the motor speed is as follows.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+let speedList = [60, 80, 100, 120]    //SLOW,LOW,MID,HIGH
+</div>
+<div class="class_sF">
+let S_SLOW = speedList[0]  //SLOW
+</div>
+<div class="class_sF">
+let S_LOW = speedList[1]    //LOW
+</div>
+<div class="class_sF">
+let S_MID = speedList[2]    //MID
+</div>
+<div class="class_sF">
+let S_HIGH = speedList[3]  //HIGH
+</div>
+<div class="class_sF">
+let speedLeft = 0
+</div>
+<div class="class_sF">
+let speedRight = 0
+</div>
+<div class="class_sF">
+//Speed limit
+</div>
+<div class="class_sF">
+function Restrict(spLeft: number, spRight:number) {
+</div>
+<div class="class_s95">
+if (spLeft &gt; S_HIGH)
+</div>
+<div class="class_sBG">
+speedLeft = S_HIGH
+</div>
+<div class="class_s95">
+else if (spLeft &lt; S_LOW)
+</div>
+<div class="class_sBG">
+speedLeft = spLeft - S_SLOW * 2
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+speedLeft = spLef<span id="part0003.xhtml_page_39"></span> t
+</div>
+<div class="class_s95">
+if (spRight &gt; S_HIGH)
+</div>
+<div class="class_sBG">
+speedRight = S_HIGH
+</div>
+<div class="class_s95">
+else if (spRight &lt; S_LOW)
+</div>
+<div class="class_sBG">
+speedRight = spRight - S_SLOW * 2
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+speedRight = spRight
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29G" class="heading_sCZ">
+[4] Creation of main program
+</div>
+<div class="class_sF">
+Let's write the main program according to the previous flowchart.
+</div>
+<div class="class_s30">
+The flowchart of the fuzzy control part (*1) is as follows.
+</div>
+<div class="class_sPZ-0">
+<img src="image_rsrc2D6.jpg" class="class_sPZ-1" />
+</div>
+<div class="class_s6P">
+
+</div>
+<div id="part0003.xhtml_page_40" class="class_sR4-0">
+<img src="image_rsrc2D7.jpg" class="class_sR4-1" />
+</div>
+<div id="part0003.xhtml_a29H" class="heading_s40">
+(1) Variable definition
+</div>
+<div class="class_sF">
+Define various variables.
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//Sensor value
+</div>
+<div class="class_sF">
+let roadList = [250, 450, 650]    //WHITE, GRAY, BLACK
+</div>
+<div class="class_sF">
+let R_WHITE = roadList[0]    //WHITE
+</div>
+<div class="class_sF">
+let R_GRAY = roadList[1]    //GRAY
+</div>
+<div class="class_sF">
+let R_BLACK = roadList[2]    //BLACK
+</div>
+<div class="class_sF">
+let offset = [30, 40]   //White, Black
+</div>
+<div class="class_sF">
+let offRoad = 0
+</div>
+<div class="class_sF">
+let onRoad = 0
+</div>
+<div class="class_sF">
+let leftVal = 0
+</div>
+<div class="class_sF">
+let rightVal = 0
+</div>
+<div class="class_sF">
+//Sequence steps
+</div>
+<div class="class_sF">
+let Step = {
+</div>
+<div class="class_s95">
+STOP: 0,
+</div>
+<div class="class_s95">
+START: 1<span id="part0003.xhtml_page_41"></span> ,
+</div>
+<div class="class_s95">
+FORWARD: 2,
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+let step = Step.STOP
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29J" class="heading_s40">
+(2) Main program
+</div>
+<div class="class_sF">
+The main program is as follows.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+function IsStart() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.A)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function IsStop() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.B)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Starting point
+</div>
+<div class="class_sF">
+InitLcd()
+</div>
+<div class="class_sF">
+//Main Loop
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+if (IsStart() == true &amp;&amp; step == Step.STOP) {  //Start
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+step = Step.START
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (IsStop() == true &amp;&amp; step != Step.STOP) { //Stop
+</div>
+<div class="class_sBG">
+MotorStop()
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+step = Step.STOP
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+switch (step) {
+</div>
+<div class="class_sBG">
+case Step.STOP: //While stopped
+</div>
+<div class="class_sBM">
+//Get sensor values and set roadList
+</div>
+<div class="class_sBM">
+if (IsStop() == true) {
+</div>
+<div class="class_sBS">
+if (leftSensor &lt; R_GRAY &amp;&amp; rightSensor &lt; R_GRAY) {
+</div>
+<div class="class_sSP">
+R_WHITE = Math.max(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(1)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (leftSensor &gt; R_GRAY &amp;&amp; rightSensor &gt; R_GRAY)
+<span id="part0003.xhtml_page_42"></span> {
+</div>
+<div class="class_sSP">
+R_BLACK = Math.min(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(2)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+R_GRAY = (R_WHITE + R_BLACK) / 2
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.START:    //Start moving forward
+</div>
+<div class="class_sBM">
+offRoad = R_WHITE + offset[0]
+</div>
+<div class="class_sBM">
+onRoad = R_BLACK - offset[1]
+</div>
+<div class="class_sBM">
+speedLeft = S_LOW
+</div>
+<div class="class_sBM">
+speedRight = S_LOW
+</div>
+<div class="class_sBM">
+basic.pause(500)
+</div>
+<div class="class_sBM">
+Advance(speedLeft, speedRight)    //Start moving forward
+</div>
+<div class="class_sBM">
+step = Step.FORWARD
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.FORWARD: //While moving forward
+</div>
+<div class="class_sBM">
+//Use the value at the time of judgment
+</div>
+<div class="class_sBM">
+leftVal = leftSensor
+</div>
+<div class="class_sBM">
+rightVal = rightSensor
+</div>
+<div class="class_sBM">
+let speed = S_LOW
+</div>
+<div class="class_sBM">
+if (leftVal &lt; offRoad) {
+</div>
+<div class="class_sBS">
+speed = S_LOW
+</div>
+<div class="class_sBS">
+fuzResult = Fuzzy(leftVal - R_GRAY)
+</div>
+<div class="class_sBS">
+led.plot(1, 4)
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else if (rightVal &lt; offRoad) {
+</div>
+<div class="class_sBS">
+speed = S_LOW
+</div>
+<div class="class_sBS">
+fuzResult = Fuzzy(R_GRAY - rightVal)
+</div>
+<div class="class_sBS">
+led.plot(2, 4)
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else {
+</div>
+<div class="class_sBS">
+speed = S_MID
+</div>
+<div class="class_sBS">
+//Perform Fuzzy calculation (deviation)
+</div>
+<div class="class_sTW">
+//Control so that the density difference between the left and right
+sensors is 0
+</div>
+<div class="class_sBS">
+fuzResult = Fuzzy(leftVal - rightVal)
+</div>
+<div class="class_sBS">
+led.plot(3, 4<span id="part0003.xhtml_page_43"></span> )
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+let spLeft = speed - fuzResult
+</div>
+<div class="class_sBM">
+let spRight = speed + fuzResult
+</div>
+<div class="class_sBM">
+Restrict(spLeft, spRight)  //Speed limit
+</div>
+<div class="class_sBM">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBM">
+basic.pause(timeTable[Timer.PERIOD]) //Control cycle
+</div>
+<div class="class_sBM">
+for (let n = 0; n &lt; 4; n++)
+</div>
+<div class="class_sBS">
+led.unplot(n, 4)
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Download this program to micro:bit and see how it works.
+</div>
+<div class="class_sF">
+How is it?
+</div>
+<div id="part0003.xhtml_a29K" class="heading_sCZ">
+[5] Creation of timer
+</div>
+<div class="class_sF">
+After confirming the movement to some extent, let's make it possible to
+confirm the white and black sensor values on the LCD screen performed
+before starting.
+</div>
+<div class="class_sF">
+The display interval on the LCD screen is, for example, if set 0.1
+seconds which is too fast for human eyes to follow the change, so let's
+use 0.5 seconds here.
+</div>
+<div class="class_sF">
+Also, within this 0.5 sec time, the wheels are controlled according to
+the sensor value, we can't write as "basic.pause (500) // ms".
+</div>
+<div class="class_sF">
+So let's run a timer outside of the main loop, and from time to time,
+check the elapsed timer time from the main loop.
+</div>
+<div class="class_sF">
+Here we will discuss how to use the running timer and how to use the PWM
+timer.
+</div>
+<div id="part0003.xhtml_a29M" class="heading_sUM">
+(1) Common part
+</div>
+<div class="class_sF">
+First, it will describe the parts that are common to the two timers.
+</div>
+<div class="class_sK">
+TIMERSIZE<span class="class_s2AJ">​</span> <span
+class="class_s2AH">​</span> Number of timers
+</div>
+<div class="class_sK">
+timeValue[]<span class="class_s2B4">​</span> <span
+class="class_s2AH">​</span> Downcount value
+</div>
+<div class="class_sK">
+timeTable[]<span class="class_s2B5">​</span> <span
+class="class_s2AH">​</span> Timer setting value (ms)
+</div>
+<div class="class_sK">
+State<span class="class_s2B9">​</span> <span class="class_s2AH">​</span>
+Timer status (OFF, ON, UP)
+</div>
+<div id="part0003.xhtml_page_44" class="class_sF">
+I have prepared 5 timers, each of which will be used for the following
+purposes.
+</div>
+<div class="class_sUW">
+SHOW<span class="class_s2B1">​</span> <span class="class_s2AH">​</span>
+LCD display cycle
+</div>
+<div class="class_sUW">
+PERIOD<span class="class_s2BC">​</span> <span class="class_s2AH">​</span>
+Control cycle
+</div>
+<div class="class_sUW">
+SURE<span class="class_s2AG">​</span> <span class="class_s2AH">​</span>
+Overhang confirmation time
+</div>
+<div class="class_sUW">
+WAIT<span class="class_s2B6">​</span> <span class="class_s2AH">​</span>
+Waiting time
+</div>
+<div class="class_sUW">
+BACK<span class="class_s2BA">​</span> <span class="class_s2AH">​</span>
+Retreat time limit
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+let TIMERSIZE = 5
+</div>
+<div class="class_sF">
+let timeValue = [0, 0, 0, 0, 0]
+</div>
+<div class="class_sF">
+let Timer = {
+</div>
+<div class="class_s95">
+SHOW: 0,
+</div>
+<div class="class_s95">
+PERIOD: 1,
+</div>
+<div class="class_s95">
+SURE: 2,
+</div>
+<div class="class_s95">
+WAIT: 3,
+</div>
+<div class="class_s95">
+BACK: 4
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sK">
+let timeTable = [500, 2, 200, 400, 4000]<span class="class_s2AT">​</span>
+//ms
+</div>
+<div class="class_sF">
+let State = {
+</div>
+<div class="class_s95">
+OFF: 0,
+</div>
+<div class="class_s95">
+ON: 1,
+</div>
+<div class="class_s95">
+UP: 2
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+These are common timer operation functions.
+</div>
+<div class="class_sK">
+OnTimer()<span class="class_s2BB">​</span> <span
+class="class_s2AH">​</span> Start the specified timer
+</div>
+<div class="class_sK">
+OffTimer()<span class="class_s2AM">​</span> <span
+class="class_s2AH">​</span> Stop the specified timer
+</div>
+<div class="class_sK">
+CheckTimer()<span class="class_s2AU">​</span> Check if the specified
+timer has expired
+</div>
+<div class="class_sK">
+InitTimer()<span class="class_s2AV">​</span> <span
+class="class_s2AH">​</span> Initialize timer
+</div>
+<div id="part0003.xhtml_a29N" class="heading_s40">
+(2) Running time
+</div>
+<div class="class_s30">
+Use "input" and "other uptime" from blocks in the Makecode editor.
+</div>
+<div id="part0003.xhtml_page_45" class="class_sVW-0">
+<img src="image_rsrc2D8.jpg" class="class_sVW-1" />
+</div>
+<div class="class_s3U">
+You can find out the elapsed time by doing the following.
+</div>
+<div class="class_sW1-0">
+<img src="image_rsrc2D9.jpg" class="class_sW1-1" />
+</div>
+<div class="class_s2T">
+let elapsed = 0
+</div>
+<div class="class_sF">
+let startTime = input.runningTime()
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+elapsed = input.runningTime() - startTime
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_s2T">
+1) Running timer
+</div>
+<div class="class_sF">
+Let's configure the timer with running time.
+</div>
+<div class="class_sF">
+Add the following variables and constants.
+</div>
+<div class="class_sK">
+startTime[]<span class="class_s2BD">​</span> <span
+class="class_s2AH">​</span> Timer start time
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//Timer
+</div>
+<div class="class_sF">
+let startTime = [0, 0, 0, 0, 0]
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_page_46" class="class_s2T">
+2) Running time timer operation
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+// Timer
+</div>
+<div class="class_sF">
+function OnTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+startTime[n] = input.runningTime()
+</div>
+<div class="class_sBG">
+timeValue[n] = timeTable[n]
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function OffTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+timeValue[n] = 0
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function CheckTimer(n: number) {
+</div>
+<div class="class_s95">
+let result = 0
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+if (timeValue[n] == 0)
+</div>
+<div class="class_sBM">
+result = State.OFF
+</div>
+<div class="class_sBG">
+else {
+</div>
+<div class="class_sBM">
+let elapsedTime = input.runningTime() - startTime[n]
+</div>
+<div class="class_sBM">
+if (timeValue[n] &lt;= elapsedTime)  //ms
+</div>
+<div class="class_sBS">
+result = State.UP
+</div>
+<div class="class_sBM">
+else
+</div>
+<div class="class_sBS">
+result = State.ON
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return result
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function InitTimer() {
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; TIMERSIZE; n++)
+</div>
+<div class="class_sBG">
+timeValue[n] = 0
+</div>
+<div class="class_s95">
+OnTimer(Timer.SHOW)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29P" class="heading_s40">
+(3) PWM output
+</div>
+<div id="part0003.xhtml_page_47" class="class_sF">
+The other is to use the accurate PWM output provided in the CPU as shown
+below. In the figure below, the P12 and P16 terminals are connected.
+</div>
+<div class="class_sXR-0">
+<img src="image_rsrc2DA.jpg" class="class_sXR-1" />
+</div>
+<div class="class_s6P">
+
+</div>
+<div class="class_sJZ-0">
+<img src="image_rsrc2DB.jpg" class="class_sJZ-1" />
+</div>
+<div class="class_s2T">
+pins.onPulsed(DigitalPin.P16, PulseValue.High, function () {
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+pins.analogWritePin(AnalogPin.P12, 512)
+</div>
+<div class="class_sF">
+pins.analogSetPeriod(AnalogPin.P12, 10000)
+</div>
+<div class="class_s3U">
+The figure below shows the PWM output waveform with the above <span
+id="part0003.xhtml_page_48"></span> settings. (Cycle 10ms)
+</div>
+<div class="class_sY4-0">
+<img src="image_rsrc2DC.jpg" class="class_sY4-1" />
+</div>
+<div class="class_s2T">
+1) PWM timer
+</div>
+<div class="class_sF">
+Configure a timer that uses the PWM output.
+</div>
+<div class="class_sK">
+timeState[]<span class="class_s2AR">​</span> <span
+class="class_s2AH">​</span> Timer status (OFF, ON, UP)
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+let timeState = [0, 0, 0, 0, 0]
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+2) PWM timer operation
+</div>
+<div class="class_sK">
+pins.onPulsed()<span class="class_s2AN">​</span> This is called by the
+PWM pulse and counts down.
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+//Called every 10ms
+</div>
+<div class="class_sF">
+pins.onPulsed(DigitalPin.P16, PulseValue.High, function () {
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; TIMERSIZE; n++) {
+</div>
+<div class="class_sBG">
+if (timeState[n] == State.ON) {
+</div>
+<div class="class_sBM">
+if (timeValue[n] &gt; 0)
+</div>
+<div class="class_sBS">
+timeValue[n] -= 10
+</div>
+<div class="class_sBM">
+if (timeValue[n] &lt;= 0) {
+</div>
+<div class="class_sBS">
+timeState[n] = State.UP
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+// Timer
+</div>
+<div id="part0003.xhtml_page_49" class="class_sF">
+function OnTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+timeValue[n] = timeTable[n]
+</div>
+<div class="class_sBG">
+timeState[n] = State.ON
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function OffTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+timeState[n] = State.OFF
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function CheckTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE)
+</div>
+<div class="class_sBG">
+return timeState[n]
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+return State.OFF
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function InitTimer() {
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; TIMERSIZE; n++) {
+</div>
+<div class="class_sBG">
+timeValue[n] = 0
+</div>
+<div class="class_sBG">
+timeState[n] = State.OFF
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+OnTimer(Timer.SHOW)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Although there is no big difference between the two methods, using the
+PWM output will slightly shorten the time to check for time-up as you do
+not need to calculate the running time.
+</div>
+<div class="class_s30">
+1) Processing time when using PWM output (about 20us)
+</div>
+<div id="part0003.xhtml_page_50" class="class_sY4-0">
+<img src="image_rsrc2DD.jpg" class="class_sY4-1" />
+</div>
+<div class="class_s3U">
+2) Processing time when running time is used (about 93us)
+</div>
+<div class="class_sY4-0">
+<img src="image_rsrc2DE.jpg" class="class_sY4-1" />
+</div>
+<div class="class_s2T">
+However, there is no big difference in the cycle time of the main loop,
+so it doesn't matter which one you use.
+</div>
+<div class="class_sF">
+The figure below shows the cycle time measured while performing
+operation control, but it is a guideline because it varies depending on
+the processing loop.
+</div>
+<div class="class_s30">
+1) Cycle time when using PWM output (36ms for short)
+</div>
+<div id="part0003.xhtml_page_51" class="class_sY4-0">
+<img src="image_rsrc2DF.jpg" class="class_sY4-1" />
+</div>
+<div class="class_s3U">
+2) Cycle time when running time is used (35ms for short)
+</div>
+<div class="class_sY4-0">
+<img src="image_rsrc2DG.jpg" class="class_sY4-1" />
+</div>
+<div class="class_s108">
+And, since the control cycle is also included in the timer list, change
+it as follows.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sBM">
+:
+</div>
+<div class="class_sBM">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBM">
+basic.pause(timeTable[Timer.PERIOD]) //Control cycle
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBM">
+:
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29R" class="heading_s40">
+(4) Initialization
+</div>
+<div class="class_sF">
+First, initialize the timer and LCD. When using the PWM timer, start
+here.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Operation
+</div>
+<div class="class_sF">
+function Initial() {
+</div>
+<div class="class_s95">
+InitTimer()
+</div>
+<div class="class_s95">
+InitLcd()
+</div>
+<div class="class_s95">
+// For PWM timer
+</div>
+<div class="class_s95">
+pins.analogWritePin(AnalogPin.P12, 512)     //Duty 50%
+</div>
+<div class="class_s95">
+pins.analogSetPeriod(AnalogPin.P12, 10000)  //Period 10ms
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+The LCD display function is called periodically from the main loop as
+shown below.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Starting point
+</div>
+<div class="class_sF">
+Initial()
+</div>
+<div class="class_sF">
+//Main Loop
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_sBG">
+(The part indicated by the button as mentioned above)
+</div>
+<div class="class_s95">
+switch (step) {
+</div>
+<div class="class_sBG">
+(Control part as mentioned above)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+if (CheckTimer(Timer.SHOW) == State.UP) {
+</div>
+<div class="class_sBG">
+OnTimer(Timer.SHOW)
+</div>
+<div class="class_sBG">
+ShowLcd()
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Add so that the center value of the left and right sensors is also
+displayed on the LCD screen.
+</div>
+<div class="class_sF">
+Also, it is convenient to be able to display the motor speed, so let's
+<span id="part0003.xhtml_page_53"></span> switch the display screen as
+shown in the figure.
+</div>
+<div class="class_s30">
+1) Display of left and right sensors and fuzzy calculation results
+(screen = 0)
+</div>
+<div class="class_s11J-0">
+<img src="image_rsrc2DH.jpg" class="class_s11J-1" />
+</div>
+<div class="class_s3U">
+2) Motor speed and fuzzy calculation results (screen = 1)
+</div>
+<div class="class_s11R-0">
+<img src="image_rsrc2DJ.jpg" class="class_s11R-1" />
+</div>
+<div class="class_s2T">
+3) LCD screen OFF (screen = 2)
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+let Screen = {
+</div>
+<div class="class_s95">
+Sensor: 0,
+</div>
+<div class="class_s95">
+Speed: 1,
+</div>
+<div class="class_s95">
+Off:2
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+let screen = Screen.Sensor
+</div>
+<div class="class_sF">
+//LCD
+</div>
+<div class="class_sF">
+function ShowLcd() {
+</div>
+<div class="class_sUW">
+led.toggle(4, 3)<span class="class_s2AS">​</span> //Ready lamp
+</div>
+<div class="class_s95">
+let str1 = ""
+</div>
+<div class="class_s95">
+switch (screen) <span id="part0003.xhtml_page_54"></span> {
+</div>
+<div class="class_sBG">
+case Screen.Sensor:
+</div>
+<div class="class_sBM">
+str1 = Math.round(rightSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 0, str1)
+</div>
+<div class="class_sBM">
+let val = (rightSensor + leftSensor) / 2 //Center
+</div>
+<div class="class_sBM">
+str1 = Math.round(val).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(leftSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(fuzResult).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 1, str1)
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Screen.Speed:
+</div>
+<div class="class_sBM">
+str1 = Math.round(rightSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(leftSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(speedRight).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 1, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(fuzResult).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 1, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(speedLeft).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 1, str1)
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Now the sensor value should be displayed on the LCD screen <span
+id="part0003.xhtml_page_55"></span> periodically. How is it?
+</div>
+<div id="part0003.xhtml_a29S" class="heading_sCZ">
+[6] Preparation for debugging
+</div>
+<div class="class_sF">
+Now that you have some movement, you may want to adjust the movement
+further. The speed constants and fuzzy constants are written in the
+program are temporary according to our environment, so please adapt to
+your environment.
+</div>
+<div class="class_sF">
+However, rewriting the program each time is time-consuming.
+</div>
+<div class="class_s2T">
+So, if you can afford it, it is very convenient if you can use another
+micro:bit and rewrite these values from an external PC.
+</div>
+<div class="class_sF">
+This is very useful for checking the program flow later.
+</div>
+<div id="part0003.xhtml_a29T" class="heading_s40">
+(1) Monitor configuration
+</div>
+<div class="class_s30">
+It is like the image below.
+</div>
+<div class="class_s3S-0">
+<img src="image_rsrc2DK.jpg" class="class_s3S-1" />
+</div>
+<div class="class_s2T">
+micro:bit's built-in wireless communication function makes it easy to
+implement.
+</div>
+<div id="part0003.xhtml_a29U" class="heading_s40">
+(2) Cam robot side
+</div>
+<div class="class_s30">
+Use the following functions on the cam robot side.
+</div>
+<div id="part0003.xhtml_page_56" class="class_s13T-0">
+<img src="image_rsrc2DM.jpg" class="class_s13T-1" />
+</div>
+<div class="class_s2T">
+When switching to Javascript, it is as follows.
+</div>
+<div class="class_sF">
+--------------------------------------------
+</div>
+<div class="class_sF">
+radio.onReceivedString(function (receivedString) {
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+radio.setTransmitPower(7)
+</div>
+<div class="class_sF">
+radio.setGroup(1)
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+radio.sendString("12345")
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+--------------------------------------------
+</div>
+<div id="part0003.xhtml_a29V" class="heading_s40">
+(3) micro:bit side for relay
+</div>
+<div class="class_s30">
+In addition, on the micro:bit side dedicated to transmission and
+reception, prepare the following block and write it.
+</div>
+<div id="part0003.xhtml_page_57" class="class_sEB-0">
+<img src="image_rsrc2DN.jpg" class="class_sEB-1" />
+</div>
+<div id="part0003.xhtml_a29W" class="heading_s40">
+(4) PC side
+</div>
+<div class="class_sF">
+Download the driver for serial communication from the following URL and
+set it on the PC that performs serial communication with this dedicated
+transmission/reception micro:bit.
+</div>
+<div class="class_sF">
+(Download URL)
+</div>
+<div class="class_sF">
+https://os.mbed.com/docs/mbed-os/v5.15/tutorials/windows-serial-driver.html
+</div>
+<div class="class_s2T">
+In addition, terminal software is required on the PC side that has the
+function of displaying character strings sent from micro:bit and easily
+sending command strings to micro:bit.
+</div>
+<div class="class_sF">
+We use the following two terminal softwares.
+</div>
+<div id="part0003.xhtml_page_58" class="class_sF">
+1) Tera Term
+</div>
+<div class="class_s30">
+https://ttssh2.osdn.jp/
+</div>
+<div class="class_s14M-0">
+<img src="image_rsrc2DP.jpg" class="class_s14M-1" />
+</div>
+<div class="class_s2T">
+2) RS232C test tool (Rs232cTool)
+</div>
+<div class="class_sF">
+http://nonsoft.la.coocan.jp/Download/Rs232cTool/index.html
+</div>
+<div class="class_s30">
+There is software in various languages, but this is Japanese software.
+</div>
+<div id="part0003.xhtml_page_59" class="class_s14V-0">
+<img src="image_rsrc2DR.jpg" class="class_s14V-1" />
+</div>
+<div class="class_s2T">
+micro:bit serial communication baud rate is fixed at 115200.
+</div>
+<div class="class_sF">
+Write the transmission character string and press the "TEXT
+transmission" button to send it to micro:bit.
+</div>
+<div id="part0003.xhtml_a29X" class="heading_s40">
+(5) Command
+</div>
+<div class="class_sF">
+The following constants used in the program can be changed externally.
+</div>
+<div class="class_sK">
+1) Fuzzy constant list<span class="class_s2B0">​</span> fuzzyList[]
+</div>
+<div class="class_sK">
+2) Speed constant list<span class="class_s2AB">​</span> speedList[]
+</div>
+<div class="class_sK">
+3) Timer table<span class="class_s2AX">​</span> timeTable []
+</div>
+<div class="class_sK">
+4) LCD display instruction<span class="class_s2AY">​</span> screen
+</div>
+<div class="class_sK">
+5) Dead zone value<span class="class_s2AP">​</span> <span
+class="class_s2AH">​</span> dZone
+</div>
+<div class="class_sK">
+6) Retraction offset<span class="class_s2B7">​</span> offset[]
+</div>
+<div class="class_sK">
+7) Start / stop instruction<span class="class_s2AZ">​</span> step
+</div>
+<div class="class_sF">
+8) Referencing the current setting
+</div>
+<div class="class_s2T">
+The format of the command sent from the terminal software is as follows.
+For the convenience of micro:bit serial communication, the terminal
+symbol is #.
+</div>
+<div class="class_sF">
+1) Write fuzzy constant list  fuzzyList = [200, 40, 200]
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> F (list order) = (value)#
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> <span
+id="part0003.xhtml_page_60"></span> Example:  F0=200#, F1=40#, F2=200#
+</div>
+<div class="class_sF">
+2) Write the speed constant list  speedList = [60, 80, 100, 120]
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> S (list order) = (value)#
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Example:  S0=60#, S1=80#, S2=100#,
+S3=120#
+</div>
+<div class="class_sF">
+3) Writing the timer table  timeTable = [500, 2, 200, 400, 4000]
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> T (list order) = (value)#
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Example:  T0=500#, T1=2#, T2=200#,
+T3=400#, T4=4000#
+</div>
+<div class="class_sF">
+4) LCD screen display instruction   screen
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> D (display screen number)#
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Example:  D0#, D1#, D2#
+</div>
+<div class="class_sK">
+5) Dead zone value   dZone<span class="class_s2B3">​</span> <span
+class="class_s2AH">​</span> (We will use it in the future)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> (Set the dead zone for fuzzy
+calculation. It is smaller than fuzzyList [0].)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Z (dead zone value)＃
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Example:  Z20#
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> (If the deviation is within this
+number, the fuzzy calculation returns 0)
+</div>
+<div class="class_sK">
+6) Retraction offset   offset = [30, 40] <span
+class="class_s2B8">​</span> (We will use it in the future)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> It is for adjusting values when the
+sensor detects the line when moving backward.
+</div>
+<div class="class_sF">
+7) Start / stop instruction   step
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> R (start / stop selection)＃
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Example:  R0#   (Stop)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> <span class="class_s2AH">​</span>
+R1#   (Start)
+</div>
+<div class="class_sF">
+8) Referencing the current setting
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> (Queries the current settings from 1 to
+6 above)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q (inquiry number)＃
+</div>
+<div class="class_sK">
+Example:  Q0#<span class="class_s2B2">​</span> (Fuzzy constant list)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q1#<span class="class_s2AD">​</span>
+(List of speed constants)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q2#<span class="class_s2AD">​</span>
+(Timer table 1)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q3#<span class="class_s2AD">​</span>
+(Timer table 2)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q4#<span class="class_s2AD">​</span>
+(LCD display screen number)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q5#<span class="class_s2AD">​</span>
+(Dead zone value)
+</div>
+<div class="class_sK">
+<span class="class_s2AC">​</span> Q6#<span class="class_s2AD">​</span>
+(offset)
+</div>
+<div id="part0003.xhtml_a29Y" class="heading_s40">
+(6) Receiving program
+</div>
+<div class="class_sF">
+The program when the character string was received wirelessly was as
+follows.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+let dZone = 20  //dead zone
+</div>
+<div class="class_sF">
+let offset = [30, 40]
+</div>
+<div class="class_sF">
+//Radio
+</div>
+<div class="class_sF">
+radio.onReceivedString(function (receivedString) {
+</div>
+<div class="class_s95">
+let str = receivedString
+</div>
+<div class="class_s95">
+//DispString(str)
+</div>
+<div class="class_s95">
+let k = 0
+</div>
+<div class="class_s95">
+let data = 0
+</div>
+<div class="class_s95">
+//First, take out the first character
+</div>
+<div class="class_s95">
+let header = str[0]
+</div>
+<div class="class_s95">
+//Find the '=' position
+</div>
+<div class="class_s95">
+let m = str.indexOf('=')
+</div>
+<div class="class_s95">
+//If '=' does not exist
+</div>
+<div class="class_s95">
+if (m == -1) {
+</div>
+<div class="class_sBG">
+//Find the position of '#'
+</div>
+<div class="class_sBG">
+let n = str.indexOf('#')
+</div>
+<div class="class_sBG">
+//If '#' does not exist
+</div>
+<div class="class_sBG">
+if (n == -1)
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_sBG">
+//Extract characters from 1 to n-1 in str
+</div>
+<div class="class_sBG">
+let str1 = str.slice(1, n)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+k = parseInt(str1)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+//Extract characters from 1 to m-1 in str
+</div>
+<div class="class_sBG">
+let str1 = str.slice(1, m)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+k = parseInt(str1)
+</div>
+<div class="class_sBG">
+//Find the position of '#'
+</div>
+<div class="class_sBG">
+let n = str.indexOf('#')
+</div>
+<div class="class_sBG">
+//If '#' does not exis<span id="part0003.xhtml_page_62"></span> t
+</div>
+<div class="class_sBG">
+if (n == -1)
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_sBG">
+//Extract characters from position m + 1 to n-1 of str
+</div>
+<div class="class_sBG">
+str1 = str.slice(m + 1, n)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+data = parseInt(str1)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+if (header == 'F') { //Fuzzy
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 2)
+</div>
+<div class="class_sBM">
+fuzzyList[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'S') { //Speed
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 3)
+</div>
+<div class="class_sBM">
+speedList[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'D') { //Display
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 2)
+</div>
+<div class="class_sBM">
+screen = k
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s181">
+else if (header == 'T') { //Timer
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt; TIMERSIZE)
+</div>
+<div class="class_sBM">
+timeTable[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s181">
+else if (header == 'R') { //Run
+</div>
+<div class="class_sBG">
+if (k == 0) {
+</div>
+<div class="class_sBM">
+MotorStop()
+</div>
+<div class="class_sBM">
+step = Step.STOP
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_sBG">
+else if (k == 1)
+</div>
+<div class="class_sBM">
+step = Step.START
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'Z') { //Dead zone
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= fuzzyList[0])
+</div>
+<div class="class_sBM">
+dZone = k
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'B') { //Back offset
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 1<span
+id="part0003.xhtml_page_63"></span> )
+</div>
+<div class="class_sBM">
+offset[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s18P">
+else if (header == 'Q') {    //Query
+</div>
+<div class="class_sBG">
+if (k == 0)     //Fuzzy
+</div>
+<div class="class_sBM">
+header = 'F'
+</div>
+<div class="class_sBG">
+else if (k == 1)    //Speed
+</div>
+<div class="class_sBM">
+header = 'S'
+</div>
+<div class="class_sBG">
+else if (k == 2)    //Timer1
+</div>
+<div class="class_sBM">
+header = 'T'
+</div>
+<div class="class_sBG">
+else if (k == 3)    //Timer2
+</div>
+<div class="class_sBM">
+header = 'U'
+</div>
+<div class="class_sBG">
+else if (k == 4)    //Display
+</div>
+<div class="class_sBM">
+header = 'D'
+</div>
+<div class="class_sBG">
+else if (k == 5)    //Dead zone
+</div>
+<div class="class_sBM">
+header = 'Z'
+</div>
+<div class="class_sBG">
+else if (k == 6)    // Back offset
+</div>
+<div class="class_sBM">
+header = 'B'
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+basic.pause(50)  //ms
+</div>
+<div class="class_s95">
+SendRadio(header)
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a29Z" class="heading_s40">
+(7) Response program
+</div>
+<div class="class_sF">
+The program that responds wirelessly is as follows. Due to micro:bit's
+wireless communication, the maximum number of characters that can be
+sent at one time is 18 one-byte characters.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+function SendRadio(str: string) {
+</div>
+<div class="class_s95">
+let str1 = ""
+</div>
+<div class="class_s95">
+let str2 = ""
+</div>
+<div class="class_s95">
+let str3 = ""
+</div>
+<div class="class_s95">
+let str4 = ""
+</div>
+<div class="class_s95">
+switch (str) {
+</div>
+<div class="class_sBG">
+case 'F':
+</div>
+<div class="class_sBM">
+str1 = fuzzyList[0].toString(<span id="part0003.xhtml_page_64"></span> )
+</div>
+<div class="class_sBM">
+str2 = fuzzyList[1].toString()
+</div>
+<div class="class_sBM">
+str3 = fuzzyList[2].toString()
+</div>
+<div class="class_sBM">
+str4 = "Fuzzy " + str1 + ": " + str2 + ": " + str3
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s19U">
+case 'S':  /<span class="class_s2AE">/</span> speedList [0] is omitted
+due to character limit
+</div>
+<div class="class_sBM">
+str1 = speedList[1].toString()
+</div>
+<div class="class_sBM">
+str2 = speedList[2].toString()
+</div>
+<div class="class_sBM">
+str3 = speedList[3].toString()
+</div>
+<div class="class_sBM">
+str4 = "Speed " + str1 + ": " + str2 + ": " + str3
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s19U">
+case 'T':  /<span class="class_s2AE">/</span> timeTable [1] is omitted
+due to character limit
+</div>
+<div class="class_sBM">
+str1 = timeTable[0].toString()
+</div>
+<div class="class_sBM">
+str2 = timeTable[2].toString()
+</div>
+<div class="class_sBM">
+str4 = "Time1 " + str1 + ": " + str2
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'U':
+</div>
+<div class="class_sBM">
+str1 = timeTable[3].toString()
+</div>
+<div class="class_sBM">
+str2 = timeTable[4].toString()
+</div>
+<div class="class_sBM">
+str4 = "Time2 " + str1 + ": " + str2
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'D':
+</div>
+<div class="class_sBM">
+str1 = screen.toString()
+</div>
+<div class="class_sBM">
+str4 = "Screen " + str1
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'Z':   //Dead zone
+</div>
+<div class="class_sBM">
+str1 = dZone.toString()
+</div>
+<div class="class_sBM">
+str4 = "Zone " + str1
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'B':   //Back offset
+</div>
+<div class="class_sBM">
+str1 = offset[0].toString()
+</div>
+<div class="class_sBM">
+str2 = offset[1].toString()
+</div>
+<div class="class_sBM">
+str4 = "Offset " + str1 + ": " + str2
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+default:
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+radio.sendString(str4)
+</div>
+<div id="part0003.xhtml_page_65" class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Add the initial settings for wireless communication to the
+initialization section.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Operation
+</div>
+<div class="class_sF">
+function Initial() {
+</div>
+<div class="class_s95">
+：
+</div>
+<div class="class_s95">
+：
+</div>
+<div class="class_s95">
+radio.setTransmitPower(7)
+</div>
+<div class="class_s95">
+radio.setGroup(1)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a2A0" class="heading_s40">
+(8) Confirm
+</div>
+<div class="class_sF">
+Then download it and send an inquiry command from the terminal software
+on your PC.
+</div>
+<div class="class_s30">
+Is the current setting displayed?
+</div>
+<div id="part0003.xhtml_page_66" class="class_s1BD-0">
+<img src="image_rsrc2DS.jpg" class="class_s1BD-1" />
+</div>
+<div class="class_s2T">
+Do other configuration commands work correctly?
+</div>
+<div id="part0003.xhtml_a2A1" class="heading_sCZ">
+[7] To smooth control
+</div>
+<div id="part0003.xhtml_a2A2" class="heading_s1BH">
+(1) Dead zone
+</div>
+<div class="class_sK">
+Due to the time lag from the detection of the sensor to the reflection
+of the actual movement, you may see behavior like shaking its head<span
+class="class_s2AE">.</span>
+</div>
+<div class="class_sF">
+If the difference from the target value is small, how will the behavior
+change if it is ignored?
+</div>
+<div class="class_s30">
+This is called the dead zone, and as shown in the figure below, it
+controls the output in a certain input range and performs smooth
+control, and is mainly used in the industrial field.
+</div>
+<div id="part0003.xhtml_page_67" class="class_s8F-0">
+<img src="image_rsrc2DT.jpg" class="class_s8F-1" />
+</div>
+<div class="class_s2T">
+As shown below, when the difference from the target value in the fuzzy
+calculation is small, the program can be realized simply by returning
+the control amount = 0.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+function Fuzzy(val: number) {
+</div>
+<div class="class_s95">
+let x0 = target - val  //Deviation from median
+</div>
+<div class="class_s95">
+if (-dZone &lt; x0 &amp;&amp; x0 &lt; dZone) {   //Dead zone
+</div>
+<div class="class_sBG">
+oldDiff = 0
+</div>
+<div class="class_sBG">
+return 0
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+：
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a2A3" class="heading_s40">
+(2) Noise removal
+</div>
+<div class="class_sF">
+In general, digital signals and analog signals input to the CPU board
+from outside have noise.
+</div>
+<div class="class_sF">
+Here, since the sensor value is an analog signal, the method of taking
+the median value is used to eliminate sudden values.
+</div>
+<div class="class_sF">
+Change the background worker by adding the following function to use the
+median value of three consecutively entered values.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Find the median of three values
+</div>
+<div class="class_sF">
+function CalcMedian(a: number, b: number, c: number) {
+</div>
+<div class="class_s95">
+let center = <span id="part0003.xhtml_page_68"></span> 0
+</div>
+<div class="class_s95">
+if (a &lt; b) {
+</div>
+<div class="class_sBG">
+if (c &lt; a)
+</div>
+<div class="class_sBM">
+center = a
+</div>
+<div class="class_sBG">
+else if (c &gt; b)
+</div>
+<div class="class_sBM">
+center = b
+</div>
+<div class="class_sBG">
+else
+</div>
+<div class="class_sBM">
+center = c
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+if (c &lt; b)
+</div>
+<div class="class_sBM">
+center = b
+</div>
+<div class="class_sBG">
+else if (c &gt; a)
+</div>
+<div class="class_sBM">
+center = a
+</div>
+<div class="class_sBG">
+else
+</div>
+<div class="class_sBM">
+center = c
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return center
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Background worker
+</div>
+<div class="class_sF">
+control.inBackground(function () {
+</div>
+<div class="class_s95">
+let pointer = 0
+</div>
+<div class="class_s95">
+let buffL = [0, 0, 0]
+</div>
+<div class="class_s95">
+let buffR = [0, 0, 0]
+</div>
+<div class="class_sUW">
+let buffSize = 3<span class="class_s2AW">​</span> //buffL.length
+</div>
+<div class="class_s95">
+while (true) {
+</div>
+<div class="class_sBG">
+buffL[pointer] = pins.analogReadPin(AnalogPin.P0)
+</div>
+<div class="class_sBG">
+buffR[pointer] = pins.analogReadPin(AnalogPin.P1)
+</div>
+<div class="class_sBG">
+if (++pointer &gt;= buffSize)
+</div>
+<div class="class_sBM">
+pointer = 0
+</div>
+<div class="class_sBG">
+leftSensor = CalcMedian(buffL[0], buffL[1], buffL[2])
+</div>
+<div class="class_sBG">
+rightSensor = CalcMedian(buffR[0], buffR[1], buffR[2])
+</div>
+<div class="class_sBG">
+basic.pause(5)  //ms
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a2A4" class="heading_sCZ">
+[8] Response when protruding the road
+</div>
+<div id="part0003.xhtml_page_69" class="class_sF">
+Now, we are going to think about how to deal with it if it protrudes off
+the road.
+</div>
+<div class="class_sF">
+For example,
+</div>
+<div class="class_sF">
+1) Check if it has surely stuck out the road. (By timer)
+</div>
+<div class="class_sF">
+2) If it protrudes, stop temporarily and start retreating.
+</div>
+<div class="class_sF">
+3) If one of the sensors detects a road during the retreat, it is
+determined that there is a road in that direction, and it slightly turns
+the vehicle in that direction.
+</div>
+<div class="class_sF">
+4) After a little advance, when both sensors detect the road, restart
+again.
+</div>
+<div class="class_s2T">
+It is the method shown below.
+</div>
+<div class="class_s30">
+After protrudes, if the left sensor detects the road first when it
+backs, it changes the direction of travel a little so that the body
+turns to the left.
+</div>
+<div class="class_s1DT-0">
+<img src="image_rsrc2DU.jpg" class="class_s1DT-1" />
+</div>
+<div class="class_s3U">
+Similarly, after protrudes, if the right sensor detects the road first
+when it backs, it changes the direction of travel a little so that the
+body turns to the right.
+</div>
+<div class="class_s1DT-0">
+<img src="image_rsrc2DV.jpg" class="class_s1DT-1" />
+</div>
+<div id="part0003.xhtml_a2A5" class="heading_s40">
+(1) Flow chart
+</div>
+<div class="class_s30">
+The flowchart shown below is created using this method.
+</div>
+<div class="class_s1E3-0">
+<img src="image_rsrc2DW.jpg" class="class_s1E3-1" />
+</div>
+<div class="class_s2T">
+In each case, for checking how the sensor value is used, so let's add
+the following functions.
+</div>
+<div id="part0003.xhtml_page_71" class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Send sensor values
+</div>
+<div class="class_sF">
+function SendRadio2(str1: string, val1: number, val2: number) {
+</div>
+<div class="class_s95">
+let str2 = Math.round(val1).toString()
+</div>
+<div class="class_s95">
+let str3 = Math.round(val2).toString()
+</div>
+<div class="class_s95">
+let str4 = str1 + ": " + str2 + ": " + str3
+</div>
+<div class="class_s95">
+radio.sendString(str4)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a2A6" class="heading_s40">
+(2) Add to main loop
+</div>
+<div class="class_sF">
+Add sections related to retreat.
+</div>
+<div class="class_sF">
+We use “offset[]” to expand the range slightly to determine whether it
+is on the road or not.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Sequence steps
+</div>
+<div class="class_sF">
+let Step = {
+</div>
+<div class="class_s95">
+STOP: 0,
+</div>
+<div class="class_s95">
+START: 1,
+</div>
+<div class="class_s95">
+FORWARD: 2,
+</div>
+<div class="class_s95">
+GOBACK: 3,
+</div>
+<div class="class_s95">
+BACK: 4,
+</div>
+<div class="class_s95">
+RESTART: 5,
+</div>
+<div class="class_s95">
+GOSTOP: 6
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+Create a program according to the flowchart above.
+</div>
+<div class="class_s2T">
+===========================
+</div>
+<div class="class_sF">
+//Main Loop
+</div>
+<div class="class_sF">
+function IsStart() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.A)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function IsStop() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.B)
+</div>
+<div id="part0003.xhtml_page_72" class="class_sF">
+}
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+if (IsStart() == true &amp;&amp; step == Step.STOP) {  //Start
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+step = Step.START
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (IsStop() == true &amp;&amp; step != Step.STOP) {
+</div>
+<div class="class_sBG">
+MotorStop()
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+OnTimer(Timer.WAIT)
+</div>
+<div class="class_sBG">
+step = Step.STOP
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+switch (step) {
+</div>
+<div class="class_sBG">
+case Step.STOP: // While stopped
+</div>
+<div class="class_sBM">
+if (CheckTimer(Timer.WAIT) == State.ON)
+</div>
+<div class="class_sBS">
+break
+</div>
+<div class="class_sBM">
+//Get sensor values and set a target
+</div>
+<div class="class_sBM">
+if (IsStop() == true) {
+</div>
+<div class="class_sBS">
+if (leftSensor &lt; R_GRAY &amp;&amp; rightSensor &lt; R_GRAY) {
+</div>
+<div class="class_sSP">
+R_WHITE = Math.max(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(1)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (leftSensor &gt; R_GRAY &amp;&amp; rightSensor &gt; R_GRAY) {
+</div>
+<div class="class_sSP">
+R_BLACK = Math.min(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(2)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+R_GRAY = (R_WHITE + R_BLACK) / 2
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.START:    //Start moving forward
+</div>
+<div class="class_sBM">
+offRoad = R_WHITE + offset[0]
+</div>
+<div class="class_sBM">
+onRoad = R_BLACK - offset[1]
+</div>
+<div class="class_sBM">
+speedLeft = S_LOW
+</div>
+<div class="class_sBM">
+speedRight = S_LOW
+</div>
+<div class="class_sBM">
+basic.pause(500)
+</div>
+<div class="class_sBM">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBM">
+OffTimer(Timer.SURE<span id="part0003.xhtml_page_73"></span> )
+</div>
+<div class="class_sBM">
+step = Step.FORWARD
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.FORWARD: //While moving forward
+</div>
+<div class="class_sBM">
+//Use the value at the time of judgment
+</div>
+<div class="class_sBM">
+leftVal = leftSensor
+</div>
+<div class="class_sBM">
+rightVal = rightSensor
+</div>
+<div class="class_sBM">
+//Check for a certain amount of time whether both sensors have left the
+road or not
+</div>
+<div class="class_sBM">
+if (leftVal &lt; offRoad &amp;&amp; rightVal &lt; offRoad) {
+</div>
+<div class="class_sBS">
+let state = CheckTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+if (state == State.OFF)
+</div>
+<div class="class_sSP">
+OnTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+else if (state == State.UP){
+</div>
+<div class="class_sSP">
+//Stop once and start retreating
+</div>
+<div class="class_sSP">
+MotorStop()
+</div>
+<div class="class_sSP">
+OnTimer(Timer.WAIT)
+</div>
+<div class="class_sSP">
+led.plot(0, 4)
+</div>
+<div class="class_sSP">
+step = Step.GOBACK
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When either sensor is on the road
+</div>
+<div class="class_sBM">
+else {
+</div>
+<div class="class_sBS">
+OffTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+let speed = S_LOW
+</div>
+<div class="class_sBS">
+if (leftVal &lt; offRoad) {
+</div>
+<div class="class_sSP">
+speed = S_LOW
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(leftVal - R_GRAY)
+</div>
+<div class="class_sSP">
+led.plot(1, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (rightVal &lt; offRoad) {
+</div>
+<div class="class_sSP">
+speed = S_LOW
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(R_GRAY - rightVal)
+</div>
+<div class="class_sSP">
+led.plot(2, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else {
+</div>
+<div class="class_sSP">
+speed = S_MID
+</div>
+<div class="class_sSP">
+//Perform Fuzzy calculation (deviation<span
+id="part0003.xhtml_page_74"></span> )
+</div>
+<div class="class_sSP">
+//Control so that the density difference between the left and right
+sensors is 0
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(leftVal - rightVal)
+</div>
+<div class="class_sSP">
+led.plot(3, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+let spLeft = speed - fuzResult
+</div>
+<div class="class_sBS">
+let spRight = speed + fuzResult
+</div>
+<div class="class_sBS">
+Restrict(spLeft, spRight)  //Speed limit
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+basic.pause(timeTable[Timer.PERIOD]) //Control cycle
+</div>
+<div class="class_sBS">
+for (let n = 0; n &lt; 4; n++)
+</div>
+<div class="class_sSP">
+led.unplot(n, 4)
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.GOBACK: //Start retreat
+</div>
+<div class="class_sBM">
+if (CheckTimer(Timer.WAIT) == State.UP) {
+</div>
+<div class="class_sBS">
+SendRadio2("BACK", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+FallBack(S_LOW, S_LOW)    //Retreat at low speed
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+step = Step.BACK
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.BACK:    //Retreating
+</div>
+<div class="class_sBM">
+leftVal = leftSensor
+</div>
+<div class="class_sBM">
+rightVal = rightSensor
+</div>
+<div class="class_sBM">
+//When the left sensor detects the road
+</div>
+<div class="class_sBM">
+if (leftVal &gt; onRoad &amp;&amp; rightVal &lt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("L-ON", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+speedLeft = -S_SLOW
+</div>
+<div class="class_sBS">
+speedRight = S_LOW //Speed up the right motor
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+led.plot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.RESTART
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When the right sensor detects the roa<span
+id="part0003.xhtml_page_75"></span> d
+</div>
+<div class="class_sBM">
+else if (rightVal &gt; onRoad &amp;&amp; leftVal &lt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("R-ON", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+speedLeft = S_LOW //Speed up the left motor
+</div>
+<div class="class_sBS">
+speedRight = -S_SLOW
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+led.plot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.RESTART
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When the both sensors detect the road
+</div>
+<div class="class_sBM">
+else if (leftVal &gt; onRoad &amp;&amp; rightVal &gt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+led.unplot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.START
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else if (CheckTimer(Timer.BACK) == State.UP) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+step = Step.GOSTOP
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.RESTART: //Restart
+</div>
+<div class="class_sBM">
+if (leftSensor &gt; onRoad &amp;&amp; rightSensor &gt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("RES", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+led.unplot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.START
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else if (CheckTimer(Timer.BACK) == State.UP) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+step = Step.GOSTOP
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.GOSTOP:
+</div>
+<div class="class_sBM">
+//Help Mark
+</div>
+<div class="class_sBM">
+basic.showIcon(IconNames.Chessboard)
+</div>
+<div class="class_sBM">
+OnTimer(Timer.WAIT<span id="part0003.xhtml_page_76"></span> )
+</div>
+<div class="class_sBM">
+step = Step.STOP
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_s2T">
+How is it? Did it go well?
+</div>
+<div class="class_sF">
+It seems that retreating is more tuff than moving forward.
+</div>
+<div class="class_sF">
+On the climbing mountain world, it's like saying that you need more
+courage to turn back, rather than aiming for the summit?
+</div>
+<div class="class_s2T">
+That's it for the whole explanation.
+</div>
+<div class="class_sF">
+After that, if the movement is not desirable even if adjust the
+parameters, please make improvements boldly.
+</div>
+<div class="class_sF">
+We most look forward to improving with your own ideas.
+</div>
+<div class="class_s2T">
+Finally, as many source codes are scattered in the text, we have posted
+all the programs here.
+</div>
+<div class="class_sF">
+It also includes the RGB LED display.
+</div>
+<div id="part0003.xhtml_a2A7" class="heading_sCZ">
+[9] All programs posted
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div class="class_sF">
+// JavaScript source code
+</div>
+<div class="class_sF">
+//Motor ====================
+</div>
+<div class="class_sF">
+//Heading  to the forward direction of the cam robot, M1: left wheel,
+M2: right wheel
+</div>
+<div class="class_sF">
+function Advance(speed1: number, speed2: number) {
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M1, motor.Dir.CW, speed1)
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M2, motor.Dir.CW, speed2)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function FallBack(speed1: number, speed2: number) {
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M1, motor.Dir.CCW, speed1)
+</div>
+<div class="class_s95">
+motor.MotorRun(motor.Motors.M2, motor.Dir.CCW, speed2)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function MotorStop() {
+</div>
+<div class="class_s95">
+motor.motorStopAll()
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Specify the speed of the motor to be controlled with a value from
+<span id="part0003.xhtml_page_77"></span> 0 to 255
+</div>
+<div class="class_sF">
+let speedList = [60, 80, 100, 120]    //SLOW,LOW,MID,HIGH
+</div>
+<div class="class_sF">
+let S_SLOW = speedList[0]  //SLOW
+</div>
+<div class="class_sF">
+let S_LOW = speedList[1]    //LOW
+</div>
+<div class="class_sF">
+let S_MID = speedList[2]    //MID
+</div>
+<div class="class_sF">
+let S_HIGH = speedList[3]  //HIGH
+</div>
+<div class="class_sF">
+let speedLeft = 0
+</div>
+<div class="class_sF">
+let speedRight = 0
+</div>
+<div class="class_sF">
+//Speed limit
+</div>
+<div class="class_sF">
+function Restrict(spLeft: number, spRight: number) {
+</div>
+<div class="class_s95">
+if (spLeft &gt; S_HIGH)
+</div>
+<div class="class_sBG">
+speedLeft = S_HIGH
+</div>
+<div class="class_s95">
+else if (spLeft &lt; S_LOW)
+</div>
+<div class="class_sBG">
+speedLeft = spLeft - S_SLOW * 2
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+speedLeft = spLeft
+</div>
+<div class="class_s95">
+if (spRight &gt; S_HIGH)
+</div>
+<div class="class_sBG">
+speedRight = S_HIGH
+</div>
+<div class="class_s95">
+else if (spRight &lt; S_LOW)
+</div>
+<div class="class_sBG">
+speedRight = spRight - S_SLOW * 2
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+speedRight = spRight
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//NeoPixel  ====================
+</div>
+<div class="class_sF">
+let item = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
+</div>
+<div class="class_sF">
+let colorTable = [0X0000ff, 0x00ffff, 0x00ff00, 0xffff00, 0xff00ff]
+</div>
+<div class="class_sF">
+//For speed
+</div>
+<div class="class_sF">
+function NeoSpeed(pos: number, speed: number) {
+</div>
+<div class="class_s95">
+//-40...60...120
+</div>
+<div class="class_s95">
+let index = 0
+</div>
+<div class="class_s95">
+if (speed &lt; 0)
+</div>
+<div class="class_sBG">
+item.setPixelColor(pos, colorTable[0])
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+if (speed &gt;= 60) {  //60...120
+</div>
+<div class="class_sBM">
+speed -= 60 //0..60
+</div>
+<div class="class_sBM">
+index = speed / 15  //0...3
+</div>
+<div class="class_sBM">
+if (index &gt; 3<span id="part0003.xhtml_page_78"></span> )
+</div>
+<div class="class_sBS">
+index = 3
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_sBG">
+else
+</div>
+<div class="class_sBM">
+index = 0
+</div>
+<div class="class_sBG">
+index += 1
+</div>
+<div class="class_sBG">
+item.setPixelColor(pos, colorTable[index])
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return index
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//For sensor
+</div>
+<div class="class_sF">
+function NeoSensor(pos: number, sensor: number) {
+</div>
+<div class="class_s95">
+//0...1023
+</div>
+<div class="class_s95">
+let index = 0
+</div>
+<div class="class_s95">
+sensor -= 300
+</div>
+<div class="class_s95">
+if (sensor &gt;= 0) {
+</div>
+<div class="class_sBG">
+index = sensor / 200    //0,1,2,3..
+</div>
+<div class="class_sBG">
+index += 1
+</div>
+<div class="class_sBG">
+if (index &gt; 4)
+</div>
+<div class="class_sBM">
+index = 4
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+item.setPixelColor(pos, colorTable[4 - index])
+</div>
+<div class="class_s95">
+return index
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//0=left front, 1=left rear, 2=right rear, 3=right front
+</div>
+<div class="class_sF">
+//Display only when the values are different
+</div>
+<div class="class_sF">
+let oldIndex = -1
+</div>
+<div class="class_sF">
+function NeoShow() {
+</div>
+<div class="class_s95">
+let a = NeoSensor(0, leftSensor)
+</div>
+<div class="class_s95">
+let b = NeoSensor(3, rightSensor)
+</div>
+<div class="class_s95">
+let c = NeoSpeed(1, speedLeft)
+</div>
+<div class="class_s95">
+let d = NeoSpeed(2, speedRight)
+</div>
+<div class="class_s95">
+let val = a &lt;&lt; 12 + b &lt;&lt; 8 + c &lt;&lt; 4 + d
+</div>
+<div class="class_s95">
+if (oldIndex != val) {
+</div>
+<div class="class_sBG">
+oldIndex = val
+</div>
+<div class="class_sBG">
+item.show()
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div id="part0003.xhtml_page_79" class="class_sF">
+//Sensor Pin connection
+</div>
+<div class="class_sF">
+//leftSensor=P0,rightSensor=P1,exLeft=P2,exRight=P4(no connection)
+</div>
+<div class="class_sF">
+// LCD ====================
+</div>
+<div class="class_sF">
+let initList = [0x38, 0x39, 0x14, 0x73, 0x56, 0x6C, 0x38, 0x01, 0x0C]
+</div>
+<div class="class_sF">
+// For AQM1602
+</div>
+<div class="class_sF">
+function InitLcd() {
+</div>
+<div class="class_s95">
+basic.pause(100)
+</div>
+<div class="class_s95">
+let len = initList.length
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; len; n++) {
+</div>
+<div class="class_sBG">
+WriteCommand(0, initList[n])
+</div>
+<div class="class_sBG">
+basic.pause(10)
+</div>
+<div class="class_sBG">
+if (n == 5)
+</div>
+<div class="class_sBM">
+basic.pause(300)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+// LCD
+</div>
+<div class="class_sF">
+function WriteCommand(regi: number, data: number) {
+</div>
+<div class="class_s95">
+let cmd = pins.createBuffer(2);
+</div>
+<div class="class_s95">
+cmd[0] = regi
+</div>
+<div class="class_s95">
+cmd[1] = data
+</div>
+<div class="class_s95">
+pins.i2cWriteBuffer(0x3e, cmd, false);
+</div>
+<div class="class_s95">
+control.waitMicros(30)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+// LCD
+</div>
+<div class="class_sF">
+function WriteString(col: number, row: number, str: string) {
+</div>
+<div class="class_s95">
+if (row == 0)
+</div>
+<div class="class_sBG">
+WriteCommand(0, 128 + col)
+</div>
+<div class="class_s95">
+else if (row == 1)
+</div>
+<div class="class_sBG">
+WriteCommand(0, 192 + col)
+</div>
+<div class="class_s95">
+else
+</div>
+<div class="class_sBG">
+return
+</div>
+<div class="class_s1RX">
+let len = str.length
+</div>
+<div class="class_s95">
+let buff = pins.createBuffer(len + 1)
+</div>
+<div class="class_s95">
+buff[0] = 6<span id="part0003.xhtml_page_80"></span> 4
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt;= len - 1; n++)
+</div>
+<div class="class_sBG">
+buff[n + 1] = str.charCodeAt(n)
+</div>
+<div class="class_s95">
+pins.i2cWriteBuffer(0x3e, buff, false)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//LCD
+</div>
+<div class="class_sF">
+function FillSpace(str: string, len: number) {
+</div>
+<div class="class_s95">
+let m = len - str.length
+</div>
+<div class="class_s95">
+if (m &gt; 0) {
+</div>
+<div class="class_sBG">
+for (let n = 0; n &lt; m; n++)
+</div>
+<div class="class_sBM">
+str += " "
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return str
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Sensor
+</div>
+<div class="class_sF">
+let leftSensor = 0
+</div>
+<div class="class_sF">
+let rightSensor = 0
+</div>
+<div class="class_sF">
+//Screen0-----
+</div>
+<div class="class_sF">
+//rightSensor   Center    leftSensor
+</div>
+<div class="class_sF">
+//                   Fuzzy
+</div>
+<div class="class_sF">
+//Screen1-----
+</div>
+<div class="class_sF">
+//rightSensor              leftSensor
+</div>
+<div class="class_sF">
+//speedRight   Fuzzy   speedLeft
+</div>
+<div class="class_sF">
+let Screen = {
+</div>
+<div class="class_s95">
+Sensor: 0,
+</div>
+<div class="class_s95">
+Speed: 1,
+</div>
+<div class="class_s95">
+Off: 2
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+let screen = Screen.Sensor
+</div>
+<div class="class_sF">
+//LCD
+</div>
+<div class="class_sF">
+function ShowLcd() {
+</div>
+<div class="class_s95">
+led.toggle(4, 3)    //Ready lamp
+</div>
+<div class="class_s95">
+let str1 = ""
+</div>
+<div class="class_s95">
+switch (screen) {
+</div>
+<div class="class_sBG">
+case Screen.Sensor:
+</div>
+<div class="class_sBM">
+str1 = Math.round(rightSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 0, str1<span id="part0003.xhtml_page_81"></span> )
+</div>
+<div class="class_sBM">
+let val = (rightSensor + leftSensor) / 2 //Center
+</div>
+<div class="class_sBM">
+str1 = Math.round(val).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(leftSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(fuzResult).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 1, str1)
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Screen.Speed:
+</div>
+<div class="class_sBM">
+str1 = Math.round(rightSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(leftSensor).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 0, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(speedRight).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(0, 1, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(fuzResult).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(6, 1, str1)
+</div>
+<div class="class_sBM">
+str1 = Math.round(speedLeft).toString()
+</div>
+<div class="class_sBM">
+str1 = FillSpace(str1, 4)
+</div>
+<div class="class_sBM">
+WriteString(12, 1, str1)
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Fuzzy ====================
+</div>
+<div class="class_sF">
+//micro: bit analog input resolution is 10 bits
+</div>
+<div class="class_sF">
+//fuzzyList[0] : Fuzzy The Maximum deviation
+</div>
+<div class="class_sF">
+//fuzzyList[1] : Fuzzy The maximum difference in deviation change
+</div>
+<div class="class_sF">
+//fuzzyList[2] : Fuzzy Maximum output
+</div>
+<div class="class_sF">
+//fuzzyList[2] is multiplied by 10, so the result should be 1/10
+</div>
+<div class="class_sF">
+let fuzResult = 0
+</div>
+<div id="part0003.xhtml_page_82" class="class_sF">
+let target = 0
+</div>
+<div class="class_sF">
+//Fuzzy  Calculate the amount to suppress
+</div>
+<div class="class_sF">
+let fuzzyList = [200, 40, 200]
+</div>
+<div class="class_sF">
+let oldDiff = 0
+</div>
+<div class="class_sF">
+let dZone = 20  //dead zone
+</div>
+<div class="class_sF">
+function Fuzzy(val: number) {
+</div>
+<div class="class_s95">
+let x0 = target - val  //Deviation from median
+</div>
+<div class="class_s95">
+if (-dZone &lt; x0 &amp;&amp; x0 &lt; dZone) {   //Dead zone
+</div>
+<div class="class_sBG">
+oldDiff = 0
+</div>
+<div class="class_sBG">
+return 0
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+let y0 = x0 - oldDiff   //Deviation change amount
+</div>
+<div class="class_s95">
+oldDiff = x0
+</div>
+<div class="class_s95">
+let dv = fuzzyList[0]     //Maximum deviation
+</div>
+<div class="class_s95">
+let ddv = fuzzyList[1]    //Maximum difference in deviation change
+</div>
+<div class="class_s95">
+let lout = -fuzzyList[2]    //Output maximum value
+</div>
+<div class="class_s95">
+let a = ddv / dv //Slope = deviation change amount / deviation
+</div>
+<div class="class_s95">
+let d = x0 + a * y0 //numerator
+</div>
+<div class="class_s95">
+let x1 = d / (a * a + 1)    //X coordinate of intersection = numerator /
+denominator 
+</div>
+<div class="class_s95">
+let lx = dv   //Deviation
+</div>
+<div class="class_s95">
+let result = (x1 * lout) / lx
+</div>
+<div class="class_s95">
+//Limit output
+</div>
+<div class="class_s95">
+let limit = fuzzyList[2]
+</div>
+<div class="class_s95">
+if (result &lt; -limit)
+</div>
+<div class="class_sBG">
+result = -limit
+</div>
+<div class="class_s95">
+else if (result &gt; limit)
+</div>
+<div class="class_sBG">
+result = limit
+</div>
+<div class="class_s95">
+return result / 10
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+// Timer ====================
+</div>
+<div class="class_sF">
+let TIMERSIZE = 5
+</div>
+<div class="class_sF">
+let startTime = [0, 0, 0, 0, 0]
+</div>
+<div class="class_sF">
+let timeValue = [0, 0, 0, 0, 0]
+</div>
+<div class="class_sF">
+let Timer = {
+</div>
+<div class="class_s95">
+SHOW: 0<span id="part0003.xhtml_page_83"></span> ,
+</div>
+<div class="class_s95">
+PERIOD: 1,
+</div>
+<div class="class_s95">
+SURE: 2,
+</div>
+<div class="class_s95">
+WAIT: 3,
+</div>
+<div class="class_s95">
+BACK: 4
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+let timeTable = [500, 2, 200, 400, 4000]  //ms
+</div>
+<div class="class_sF">
+let State = {
+</div>
+<div class="class_s95">
+OFF: 0,
+</div>
+<div class="class_s95">
+ON: 1,
+</div>
+<div class="class_s95">
+UP: 2
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+// Timer
+</div>
+<div class="class_sF">
+function OnTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+startTime[n] = input.runningTime()
+</div>
+<div class="class_sBG">
+timeValue[n] = timeTable[n]
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function OffTimer(n: number) {
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+timeValue[n] = 0
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function CheckTimer(n: number) {
+</div>
+<div class="class_s95">
+let result = 0
+</div>
+<div class="class_s95">
+if (n &lt; TIMERSIZE) {
+</div>
+<div class="class_sBG">
+if (timeValue[n] == 0)
+</div>
+<div class="class_sBM">
+result = State.OFF
+</div>
+<div class="class_sBG">
+else {
+</div>
+<div class="class_sBM">
+let elapsedTime = input.runningTime() - startTime[n]
+</div>
+<div class="class_sBM">
+if (timeValue[n] &lt;= elapsedTime)  //ms
+</div>
+<div class="class_sBS">
+result = State.UP
+</div>
+<div class="class_sBM">
+else
+</div>
+<div class="class_sBS">
+result = State.ON
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return result
+</div>
+<div id="part0003.xhtml_page_84" class="class_sF">
+}
+</div>
+<div class="class_sF">
+function InitTimer() {
+</div>
+<div class="class_s95">
+for (let n = 0; n &lt; TIMERSIZE; n++)
+</div>
+<div class="class_sBG">
+timeValue[n] = 0
+</div>
+<div class="class_s95">
+OnTimer(Timer.SHOW)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//radio====================
+</div>
+<div class="class_sF">
+//11500 =&gt;14400byte/sec, 20byte/line, 720line/sec,
+=&gt;1.39ms/line=&gt;about 2ms
+</div>
+<div class="class_sF">
+//When a character string is received wirelessly
+</div>
+<div class="class_sF">
+radio.onReceivedString(function (receivedString) {
+</div>
+<div class="class_s95">
+let str = receivedString
+</div>
+<div class="class_s95">
+//DispString(str)
+</div>
+<div class="class_s95">
+let k = 0
+</div>
+<div class="class_s95">
+let data = 0
+</div>
+<div class="class_s95">
+//First, take out the first character
+</div>
+<div class="class_s95">
+let header = str[0]
+</div>
+<div class="class_s95">
+//Find the '=' position
+</div>
+<div class="class_s95">
+let m = str.indexOf('=')
+</div>
+<div class="class_s95">
+//If '=' does not exist
+</div>
+<div class="class_s95">
+if (m == -1) {
+</div>
+<div class="class_sBG">
+//Find the position of '#'
+</div>
+<div class="class_sBG">
+let n = str.indexOf('#')
+</div>
+<div class="class_sBG">
+//If '#' does not exist
+</div>
+<div class="class_sBG">
+if (n == -1)
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_sBG">
+//Extract characters from 1 to n-1 in str
+</div>
+<div class="class_sBG">
+let str1 = str.slice(1, n)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+k = parseInt(str1)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+//Extract characters from 1 to m-1 in str
+</div>
+<div class="class_sBG">
+let str1 = str.slice(1, m)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+k = parseInt(str1)
+</div>
+<div class="class_sBG">
+//Find the position of '#<span id="part0003.xhtml_page_85"></span> '
+</div>
+<div class="class_sBG">
+let n = str.indexOf('#')
+</div>
+<div class="class_sBG">
+//If '#' does not exist
+</div>
+<div class="class_sBG">
+if (n == -1)
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_sBG">
+//Extract characters from position m + 1 to n-1 of str
+</div>
+<div class="class_sBG">
+str1 = str.slice(m + 1, n)
+</div>
+<div class="class_sBG">
+//Convert str1 to a number
+</div>
+<div class="class_sBG">
+data = parseInt(str1)
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+//Display on LCD
+</div>
+<div class="class_s95">
+//DispNumber(k, data)
+</div>
+<div class="class_s95">
+if (header == 'F') { //Fuzzy
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 2)
+</div>
+<div class="class_sBM">
+fuzzyList[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'S') { //Speed
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 3)
+</div>
+<div class="class_sBM">
+speedList[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'D') { //Display
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= 2)
+</div>
+<div class="class_sBM">
+screen = k
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'T') { //Timer
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt; TIMERSIZE)
+</div>
+<div class="class_sBM">
+timeTable[k] = data
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'R') { //Run
+</div>
+<div class="class_sBG">
+if (k == 0) {
+</div>
+<div class="class_sBM">
+MotorStop()
+</div>
+<div class="class_sBM">
+step = Step.STOP
+</div>
+<div class="class_sBG">
+}
+</div>
+<div class="class_sBG">
+else if (k == 1)
+</div>
+<div class="class_sBM">
+step = Step.START
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'Z') { //Dead zone
+</div>
+<div class="class_sBG">
+if (k &gt;= 0 &amp;&amp; k &lt;= fuzzyList[0]<span
+id="part0003.xhtml_page_86"></span> )
+</div>
+<div class="class_sBM">
+dZone = k
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (header == 'Q') {    //Query
+</div>
+<div class="class_sBG">
+if (k == 0)     //Fuzzy
+</div>
+<div class="class_sBM">
+header = 'F'
+</div>
+<div class="class_sBG">
+else if (k == 1)    //Speed
+</div>
+<div class="class_sBM">
+header = 'S'
+</div>
+<div class="class_sBG">
+else if (k == 2)    //Timer1
+</div>
+<div class="class_sBM">
+header = 'T'
+</div>
+<div class="class_sBG">
+else if (k == 3)    //Timer2
+</div>
+<div class="class_sBM">
+header = 'U'
+</div>
+<div class="class_sBG">
+else if (k == 4)    //Display
+</div>
+<div class="class_sBM">
+header = 'D'
+</div>
+<div class="class_sBG">
+else if (k == 5)    //Dead zone
+</div>
+<div class="class_sBM">
+header = 'Z'
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+basic.pause(50)  //ms
+</div>
+<div class="class_s95">
+SendRadio(header)
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+//Respond to 'Query'
+</div>
+<div class="class_sF">
+function SendRadio(str: string) {
+</div>
+<div class="class_s95">
+let str1 = ""
+</div>
+<div class="class_s95">
+let str2 = ""
+</div>
+<div class="class_s95">
+let str3 = ""
+</div>
+<div class="class_s95">
+let str4 = ""
+</div>
+<div class="class_s95">
+switch (str) {
+</div>
+<div class="class_sBG">
+case 'F':
+</div>
+<div class="class_sBM">
+str1 = fuzzyList[0].toString()
+</div>
+<div class="class_sBM">
+str2 = fuzzyList[1].toString()
+</div>
+<div class="class_sBM">
+str3 = fuzzyList[2].toString()
+</div>
+<div class="class_sBM">
+str4 = "Fuzzy " + str1 + ": " + str2 + ": " + str3
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'S': // speedList [0] is omitted due to character limit
+</div>
+<div class="class_sBM">
+str1 = speedList[1].toString()
+</div>
+<div class="class_sBM">
+str2 = speedList[2].toString()
+</div>
+<div class="class_sBM">
+str3 = speedList[3].toString()
+</div>
+<div class="class_sBM">
+str4 = "Speed " + str1 + ": " + str2 + ": " + str<span
+id="part0003.xhtml_page_87"></span> 3
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'T':
+</div>
+<div class="class_sBM">
+str1 = timeTable[0].toString()
+</div>
+<div class="class_sBM">
+str2 = timeTable[1].toString()
+</div>
+<div class="class_sBM">
+str4 = "Time1 " + str1 + ": " + str2
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'U':
+</div>
+<div class="class_sBM">
+str1 = timeTable[2].toString()
+</div>
+<div class="class_sBM">
+str2 = timeTable[3].toString()
+</div>
+<div class="class_sBM">
+str4 = "Time2 " + str1 + ": " + str2
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'D':
+</div>
+<div class="class_sBM">
+str1 = screen.toString()
+</div>
+<div class="class_sBM">
+str4 = "Screen " + str1
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case 'Z':   //Dead zone
+</div>
+<div class="class_sBM">
+str1 = dZone.toString()
+</div>
+<div class="class_sBM">
+str4 = "Zone " + str1
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+default:
+</div>
+<div class="class_sBM">
+return
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+radio.sendString(str4)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Send sensor values
+</div>
+<div class="class_sF">
+function SendRadio2(str1: string, val1: number, val2: number) {
+</div>
+<div class="class_s95">
+let str2 = Math.round(val1).toString()
+</div>
+<div class="class_s95">
+let str3 = Math.round(val2).toString()
+</div>
+<div class="class_s95">
+let str4 = str1 + ": " + str2 + ": " + str3
+</div>
+<div class="class_s95">
+radio.sendString(str4)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Operation  ====================
+</div>
+<div class="class_sF">
+function Initial() {
+</div>
+<div class="class_s95">
+InitTimer()
+</div>
+<div class="class_s95">
+InitLcd()
+</div>
+<div class="class_s95">
+radio.setTransmitPower(7)
+</div>
+<div class="class_s95">
+radio.setGroup(1)
+</div>
+<div id="part0003.xhtml_page_88" class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Sensor value
+</div>
+<div class="class_sF">
+let roadList = [250, 450, 650]    //WHITE, GRAY, BLACK, Default value
+</div>
+<div class="class_sF">
+let R_WHITE = roadList[0]    //WHITE
+</div>
+<div class="class_sF">
+let R_GRAY = roadList[1]    //GRAY
+</div>
+<div class="class_sF">
+let R_BLACK = roadList[2]    //BLACK
+</div>
+<div class="class_sF">
+let offset = [30, 40]   //White, Black
+</div>
+<div class="class_sF">
+let offRoad = 0
+</div>
+<div class="class_sF">
+let onRoad = 0
+</div>
+<div class="class_sF">
+let leftVal = 0
+</div>
+<div class="class_sF">
+let rightVal = 0
+</div>
+<div class="class_sF">
+//Sequence steps
+</div>
+<div class="class_sF">
+let Step = {
+</div>
+<div class="class_s95">
+STOP: 0,
+</div>
+<div class="class_s95">
+START: 1,
+</div>
+<div class="class_s95">
+FORWARD: 2,
+</div>
+<div class="class_s95">
+GOBACK: 3,
+</div>
+<div class="class_s95">
+BACK: 4,
+</div>
+<div class="class_s95">
+RESTART: 5,
+</div>
+<div class="class_s95">
+GOSTOP: 6
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+let step = Step.STOP
+</div>
+<div class="class_sF">
+function IsStart() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.A)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+function IsStop() {
+</div>
+<div class="class_s95">
+return input.buttonIsPressed(Button.B)
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Starting point  ====================
+</div>
+<div class="class_sF">
+Initial()
+</div>
+<div class="class_sF">
+//Main Loop ====================
+</div>
+<div class="class_sF">
+basic.forever(function () {
+</div>
+<div class="class_s95">
+if (IsStart() == true &amp;&amp; step == Step.STOP) {  //Start
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+screen = Screen.Off
+</div>
+<div class="class_sBG">
+step = Step.STAR<span id="part0003.xhtml_page_89"></span> T
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else if (IsStop() == true &amp;&amp; step != Step.STOP) { //Stop
+</div>
+<div class="class_sBG">
+MotorStop()
+</div>
+<div class="class_sBG">
+basic.clearScreen()
+</div>
+<div class="class_sBG">
+screen = Screen.Sensor
+</div>
+<div class="class_sBG">
+OnTimer(Timer.WAIT)
+</div>
+<div class="class_sBG">
+step = Step.STOP
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+switch (step) {
+</div>
+<div class="class_sBG">
+case Step.STOP: //While stopped
+</div>
+<div class="class_sBM">
+if (CheckTimer(Timer.WAIT) == State.ON)
+</div>
+<div class="class_sBS">
+break
+</div>
+<div class="class_sBM">
+//Get sensor values and set roadList
+</div>
+<div class="class_sBM">
+if (IsStop() == true) {
+</div>
+<div class="class_sBS">
+if (leftSensor &lt; R_GRAY &amp;&amp; rightSensor &lt; R_GRAY) {
+</div>
+<div class="class_sSP">
+R_WHITE = Math.max(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(1)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (leftSensor &gt; R_GRAY &amp;&amp; rightSensor &gt; R_GRAY) {
+</div>
+<div class="class_sSP">
+R_BLACK = Math.min(leftSensor, rightSensor)
+</div>
+<div class="class_sSP">
+basic.showNumber(2)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+R_GRAY = (R_WHITE + R_BLACK) / 2
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.START:    //Start moving forward
+</div>
+<div class="class_sBM">
+offRoad = R_WHITE + offset[0]
+</div>
+<div class="class_sBM">
+onRoad = R_BLACK - offset[1]
+</div>
+<div class="class_sBM">
+speedLeft = S_LOW
+</div>
+<div class="class_sBM">
+speedRight = S_LOW
+</div>
+<div class="class_sBM">
+basic.pause(500)
+</div>
+<div class="class_sBM">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBM">
+OffTimer(Timer.SURE)
+</div>
+<div class="class_sBM">
+step = Step.FORWARD
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.FORWARD: //While moving forward
+</div>
+<div class="class_sBM">
+//Use the value at the time of judgmen<span
+id="part0003.xhtml_page_90"></span> t
+</div>
+<div class="class_sBM">
+leftVal = leftSensor
+</div>
+<div class="class_sBM">
+rightVal = rightSensor
+</div>
+<div class="class_sBM">
+//Check for a certain amount of time whether both sensors have left the
+road or not
+</div>
+<div class="class_sBM">
+if (leftVal &lt; offRoad &amp;&amp; rightVal &lt; offRoad) {
+</div>
+<div class="class_sBS">
+let state = CheckTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+if (state == State.OFF) {
+</div>
+<div class="class_sSP">
+Advance(speedLeft / 2, speedRight / 2)
+</div>
+<div class="class_sSP">
+basic.pause(timeTable[Timer.PERIOD])
+</div>
+<div class="class_sSP">
+OnTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (state == State.UP) {
+</div>
+<div class="class_sSP">
+//Stop once and start retreating
+</div>
+<div class="class_sSP">
+MotorStop()
+</div>
+<div class="class_sSP">
+OnTimer(Timer.WAIT)
+</div>
+<div class="class_sSP">
+led.plot(0, 4)
+</div>
+<div class="class_sSP">
+step = Step.GOBACK
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When either sensor is on the road
+</div>
+<div class="class_sBM">
+else {
+</div>
+<div class="class_sBS">
+OffTimer(Timer.SURE)
+</div>
+<div class="class_sBS">
+let speed = S_LOW
+</div>
+<div class="class_sBS">
+if (leftVal &lt; offRoad) {
+</div>
+<div class="class_sSP">
+speed = S_LOW
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(leftVal - R_GRAY)
+</div>
+<div class="class_sSP">
+led.plot(1, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else if (rightVal &lt; offRoad) {
+</div>
+<div class="class_sSP">
+speed = S_LOW
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(R_GRAY - rightVal)
+</div>
+<div class="class_sSP">
+led.plot(2, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+else {
+</div>
+<div class="class_sSP">
+//Perform Fuzzy calculation (deviation)
+</div>
+<div class="class_sSP">
+//Control so that the density difference between the left and right
+sensors is <span id="part0003.xhtml_page_91"></span> 0
+</div>
+<div class="class_sSP">
+fuzResult = Fuzzy(leftVal - rightVal)
+</div>
+<div class="class_sSP">
+speed = S_MID
+</div>
+<div class="class_sSP">
+led.plot(3, 4)
+</div>
+<div class="class_sBS">
+}
+</div>
+<div class="class_sBS">
+let spLeft = speed - fuzResult
+</div>
+<div class="class_sBS">
+let spRight = speed + fuzResult
+</div>
+<div class="class_sBS">
+Restrict(spLeft, spRight)  //Speed limit
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+basic.pause(timeTable[Timer.PERIOD]) //Control cycle
+</div>
+<div class="class_sBS">
+for (let n = 0; n &lt; 4; n++)
+</div>
+<div class="class_sSP">
+led.unplot(n, 4)
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.GOBACK: //Start retreat
+</div>
+<div class="class_sBM">
+if (CheckTimer(Timer.WAIT) == State.UP) {
+</div>
+<div class="class_sBS">
+SendRadio2("BACK", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+FallBack(S_SLOW, S_SLOW)    //Retreat at low speed
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+step = Step.BACK
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.BACK:    //Retreating
+</div>
+<div class="class_sBM">
+//Use the value at the time of judgment
+</div>
+<div class="class_sBM">
+leftVal = leftSensor
+</div>
+<div class="class_sBM">
+rightVal = rightSensor
+</div>
+<div class="class_sBM">
+//When the left sensor detects the road
+</div>
+<div class="class_sBM">
+if (leftVal &gt; onRoad &amp;&amp; rightVal &lt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("L-ON", leftVal, rightVal)
+</div>
+<div class="class_sBS">
+speedLeft = -S_SLOW
+</div>
+<div class="class_sBS">
+speedRight = S_LOW //Speed up the right motor
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+led.plot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.RESTART
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When the right sensor detects the roa<span
+id="part0003.xhtml_page_92"></span> d
+</div>
+<div class="class_sBM">
+else if (rightVal &gt; onRoad &amp;&amp; leftVal &lt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("R-ON", leftVal, rightVal)
+</div>
+<div class="class_sBS">
+speedLeft = S_LOW //Speed up the left motor
+</div>
+<div class="class_sBS">
+speedRight = -S_SLOW
+</div>
+<div class="class_sBS">
+Advance(speedLeft, speedRight)
+</div>
+<div class="class_sBS">
+OnTimer(Timer.BACK)
+</div>
+<div class="class_sBS">
+led.plot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.RESTART
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+//When the both sensors detect the road
+</div>
+<div class="class_sBM">
+else if (leftVal &gt; onRoad &amp;&amp; rightVal &gt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+led.unplot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.START
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else if (CheckTimer(Timer.BACK) == State.UP) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+step = Step.GOSTOP
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.RESTART: //Restart
+</div>
+<div class="class_sBM">
+if (leftSensor &gt; onRoad &amp;&amp; rightSensor &gt; onRoad) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+SendRadio2("RES", leftSensor, rightSensor)
+</div>
+<div class="class_sBS">
+led.unplot(4, 4)
+</div>
+<div class="class_sBS">
+step = Step.START
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+else if (CheckTimer(Timer.BACK) == State.UP) {
+</div>
+<div class="class_sBS">
+MotorStop()
+</div>
+<div class="class_sBS">
+step = Step.GOSTOP
+</div>
+<div class="class_sBM">
+}
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_sBG">
+case Step.GOSTOP:
+</div>
+<div class="class_sBM">
+//Help Mark
+</div>
+<div class="class_sBM">
+basic.showIcon(IconNames.Chessboard)
+</div>
+<div class="class_sBM">
+OnTimer(Timer.WAIT<span id="part0003.xhtml_page_93"></span> )
+</div>
+<div class="class_sBM">
+step = Step.STOP
+</div>
+<div class="class_sBM">
+break
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+if (CheckTimer(Timer.SHOW) == State.UP) {
+</div>
+<div class="class_sBG">
+OnTimer(Timer.SHOW)
+</div>
+<div class="class_sBG">
+ShowLcd()
+</div>
+<div class="class_sBG">
+NeoShow()
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+//Calculate the median
+</div>
+<div class="class_sF">
+function CalcMedian(a: number, b: number, c: number) {
+</div>
+<div class="class_s95">
+let center = 0
+</div>
+<div class="class_s95">
+if (a &lt; b) {
+</div>
+<div class="class_sBG">
+if (c &lt; a)
+</div>
+<div class="class_sBM">
+center = a
+</div>
+<div class="class_sBG">
+else if (c &gt; b)
+</div>
+<div class="class_sBM">
+center = b
+</div>
+<div class="class_sBG">
+else
+</div>
+<div class="class_sBM">
+center = c
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+else {
+</div>
+<div class="class_sBG">
+if (c &lt; b)
+</div>
+<div class="class_sBM">
+center = b
+</div>
+<div class="class_sBG">
+else if (c &gt; a)
+</div>
+<div class="class_sBM">
+center = a
+</div>
+<div class="class_sBG">
+else
+</div>
+<div class="class_sBM">
+center = c
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_s95">
+return center
+</div>
+<div class="class_sF">
+}
+</div>
+<div class="class_sF">
+//Background worker
+</div>
+<div class="class_sF">
+control.inBackground(function () {
+</div>
+<div class="class_s95">
+let pointer = 0
+</div>
+<div class="class_s95">
+let buffL = [0, 0, 0]
+</div>
+<div class="class_s95">
+let buffR = [0, 0, 0]
+</div>
+<div class="class_s95">
+let buffSize = 3    //buffL.length
+</div>
+<div class="class_s95">
+while (true) <span id="part0003.xhtml_page_94"></span> {
+</div>
+<div class="class_sBG">
+buffL[pointer] = pins.analogReadPin(AnalogPin.P0)
+</div>
+<div class="class_sBG">
+buffR[pointer] = pins.analogReadPin(AnalogPin.P1)
+</div>
+<div class="class_sBG">
+if (++pointer &gt;= buffSize)
+</div>
+<div class="class_sBM">
+pointer = 0
+</div>
+<div class="class_sBG">
+leftSensor = CalcMedian(buffL[0], buffL[1], buffL[2])
+</div>
+<div class="class_sBG">
+rightSensor = CalcMedian(buffR[0], buffR[1], buffR[2])
+</div>
+<div class="class_sBG">
+basic.pause(5)  //ms
+</div>
+<div class="class_s95">
+}
+</div>
+<div class="class_sF">
+})
+</div>
+<div class="class_sF">
+===========================
+</div>
+<div id="part0003.xhtml_a2A8" class="heading_sCZ">
+Afterword
+</div>
+<div class="class_sF">
+Thank you very much for reading this far.
+</div>
+<div class="class_sF">
+What did you think?
+</div>
+<div class="class_sF">
+Even though the result of the fuzzy calculation is a plus or minus
+value, I thought it was convenient to be able to change the speed of
+both wheels without changing CW or CCW in the Motor() function.
+</div>
+<div class="class_sF">
+However, it was surprising that subtle differences in the fuzzy
+parameters (fuzzyList []) and the speed parameters (speedList [])
+drastically changed the behavior.
+</div>
+<div class="class_sF">
+And at first, the control along the road edge worked better, but after
+adjusting the parameters, the operation along the center of the road
+became best. This was also surprised.
+</div>
+<div class="class_sF">
+And, as I mentioned earlier, in the second edition, only the method
+along the center of the road was explained so that it can handle the
+case where the road intersects.
+</div>
+<div class="class_sF">
+There are still many parts that need to be explored and improved.
+</div>
+<div class="class_sF">
+To do this, we need your ideas, who come along with us so far.
+</div>
+<div class="class_sF">
+Long ago, to the question "What do you need to go well with a
+computer?", which I have seen an article that reads, "It's Oriental
+patience."
+</div>
+<div class="class_sF">
+Rather than throwing it away immediately, we need courageously
+challenging to find something new, "there may be lurking something
+treasure in this challenging problem?"
+</div>
+<div class="class_sF">
+The journey may be long, but "patience" is there to support you.
+</div>
+<div class="class_sF">
+With this book as a foothold, we look forward to your future success.
+</div>
+<div id="part0003.xhtml_page_95" class="class_s30">
+Once again, thank you very much.
+</div>

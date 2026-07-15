@@ -1,0 +1,2 @@
++   [JavaScript 解码指南：针对不那么简单的 JavaScript 概念、库、工具和框架的简单指南（英文版）](README.md)
++   [JavaScript 解码指南：针对不那么简单的 JavaScript 概念、库、工具和框架的简单指南（英文版）](decoding-javascript-a-simple-guide-for-the-not-so-simple-jav_0.md)

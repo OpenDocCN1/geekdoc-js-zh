@@ -1,0 +1,93 @@
+name: Hands-On Web Application with Javascript Frameworks and NoSQL. Collective knowledge
+  from Programmer to Programmer
+name_cn: 使用JavaScript框架和NoSQL的Web应用实用指南：程序员到程序员的集体智慧
+slug: hands-on-web-application-with-javascript-frameworks-and-nosq
+toc:
+- - '###'
+  - 关于 Javascript 的一些有趣事实
+- - '####'
+  - Javascript 对象定义
+- - '####'
+  - 为对象定义属性
+- - '####'
+  - Javascript 中有趣的嵌套对象访问
+- - '###'
+  - 关于 Javascript 函数的有趣事实
+- - '####'
+  - 函数声明——
+- - '####'
+  - 现在……函数内部可以访问一个额外的变量——称为 arguments
+- - '####'
+  - Javascript 中的匿名函数
+- - '###'
+  - 1> 在 HTML 页面中添加了 `prototype.js`、`d3.js` 以及 d3 相关 JavaScript 类的引用
+- - '###'
+  - 2> 放置了 `d3.js` 相关的类初始化代码——
+- - '###'
+  - 3> d3 相关的柱状图代码——
+- - '###'
+  - controllers.js
+- - '###'
+  - RTcontroller.js
+- - '###'
+  - Angular.js 测试规范编码——
+- - '###'
+  - 那么什么是 Angular.js 指令？
+- - '###'
+  - 直接来自 angularjs.org——
+- - '###'
+  - 主要 HTML 代码片段
+- - '###'
+  - Angular 方式的代码
+- - '###'
+  - 参考资料：
+- - '###'
+  - 首先——柱状图图片——
+- - '###'
+  - 现在是在 HTML 中的带注释代码片段——
+- - '###'
+  - 封装了柱状图 D3.js 代码的 Angular 指令
+- - '###'
+  - 与 d3 相关的柱状图代码
+- - '###'
+  - 对 UI 进行一点装饰——使用 Google 字体，我们使用了——
+- - '###'
+  - 另一个给读者的提示——阅读[入门：构建 Chrome 扩展](https://developer.chrome.com/extensions/getstarted.html)后，我们将了解配置文件——`manifest.jon`。
+- - '###'
+  - 以下是权限代码片段：
+- - '###'
+  - 架构概览 -
+- - '###'
+  - 安装 -
+- - '###'
+  - 配置代码 -
+- - '###'
+  - 1. Node.js 用于服务器端开发
+- - '###'
+  - 2. 使用 express.js 创建基于 REST 的 Web 服务
+- - '###'
+  - 3. 数据库 – MongoDB
+- - '###'
+  - 4. Node.js MongoDB 模块扩展（mongojs）
+- - '###'
+  - 5. Highchart.js 通过异步调用（Ajax）生成图表
+- - '###'
+  - 6. 使用跨域策略从 Node.js 访问 REST 服务到 Ajax 调用
+- - '###'
+  - 1> Angular.js 用于客户端开发——应用前端
+- - '###'
+  - 2> Node.js 用于服务器端开发
+- - '###'
+  - 3> Socket.IO 用于服务器与客户端通信
+- - '###'
+  - 4> Node.js 的 Socket.IO 模块扩展
+- - '###'
+  - 架构概览
+- - '###'
+  - 安装
+- - '###'
+  - 配置代码
+- - '###'
+  - 客户端部分 -
+- - '###'
+  - Javascript 部分 (Backbone.js)

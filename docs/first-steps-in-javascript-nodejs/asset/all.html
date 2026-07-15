@@ -1,0 +1,779 @@
+<p><img src="image_rsrcJJ.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMidYMid meet" viewbox="0 0 1357 1920" height="100%" width="100%">
+<image xlink:href="image_rsrcJJ.jpg" height="1920" width="1357"></image>
+</svg>
+<p><span id="part0001.xhtml"></span></p>
+<p>First Steps in JavaScript (Node.js)</p>
+<p>Ruhan Avila da Conceição</p>
+<p><span id="part0002.xhtml"></span></p>
+<h1 class="heading_sS-2">Summary</h1>
+<p><a href="#part0002.xhtml" class="class_sH7">Summary</a></p>
+<p><a href="#part0003.xhtml" class="class_sH7">Notes on the Book</a></p>
+<p><a href="#part0004.xhtml" class="class_sH7">A brief history of
+JavaScript</a></p>
+<p><a href="#part0005.xhtml" class="class_sH7">Preparing the Programming
+Setup</a></p>
+<p><a href="#part0006.xhtml" class="class_sH7">Modules in
+JavaScript</a></p>
+<p><a href="#part0007.xhtml" class="class_sH7">NPM e NPX</a></p>
+<p><a href="#part0008.xhtml" class="class_sH7">First Steps in
+JavaScript</a></p>
+<p><a href="#part0009.xhtml" class="class_sH7">Advantages of
+Node.js</a></p>
+<p><a href="#part0010.xhtml" class="class_sH7">Storing Values in
+JavaScript</a></p>
+<p><a href="#part0011.xhtml" class="class_sH7">Data Types in
+JavaScript</a></p>
+<p><a href="#part0012.xhtml" class="class_sH7">Mathematics in
+JavaScript</a></p>
+<p><a href="#part0013.xhtml" class="class_sH7">Strings in
+JavaScript</a></p>
+<p><a href="#part0014.xhtml" class="class_sH7">Control
+Structures</a></p>
+<p><a href="#part0015.xhtml" class="class_sH7">Functions</a></p>
+<p><a href="#part0016.xhtml" class="class_sH7">Arrays in
+JavaScript</a></p>
+<p><a href="#part0017.xhtml" class="class_sH7">Objects in
+JavaScript</a></p>
+<p><a href="#part0018.xhtml" class="class_sH7">Functional Programming in
+JavaScript</a></p>
+<p><a href="#part0019.xhtml" class="class_sH7">Short-circuit
+Evaluation</a></p>
+<p><a href="#part0020.xhtml" class="class_sH7">About the Author</a></p>
+<p><span id="part0003.xhtml"></span></p>
+<h1 class="heading_sS-0">Notes on the Book</h1>
+<p>This book was written using ChatGPT as an aid tool in the development
+of this material. All content produced by this tool was carefully
+reviewed and properly organized by the author. It is important to note
+that the use of intelligent tools for text creation is welcome, as long
+as the quality, truthfulness, and correctness of what was produced are
+always observed.</p>
+<p><span id="part0004.xhtml"></span></p>
+<h1 class="heading_sS-1">A brief history of JavaScript</h1>
+<p>JavaScript is a high-level programming language that was created in
+1995 by Brendan Eich, then an engineer at Netscape. The initial idea was
+to create a programming language that could be executed in the browser
+and allow developers to add interactivity and dynamism to web pages.</p>
+<p>The first version of JavaScript was released along with the Netscape
+Navigator 2.0 browser in September 1995. The language was quickly
+adopted by other browsers, such as Microsoft's Internet Explorer, and
+became one of the main technologies used in creating dynamic web
+pages.</p>
+<p>Over the years, JavaScript has evolved and become an increasingly
+powerful language capable of performing complex tasks both in the
+browser and on the server. In 2009, Ryan Dahl created Node.js, a
+platform that allows developers to run JavaScript code on the server,
+opening up a host of new possibilities for the language.</p>
+<p>Currently, JavaScript is one of the most popular programming
+languages in the world, widely used in web applications, mobile apps,
+games, and other areas. The language continues to evolve, with new
+features and functionalities being regularly added to its
+specifications.</p>
+<p><span id="part0005.xhtml"></span></p>
+<h1 class="heading_s29">Preparing the Programming Setup</h1>
+<p>Installing Node.js</p>
+<p>To install Node.js, first go to the website https://nodejs.org/ and
+download the LTS (Long Time Support) version.</p>
+<p>The image below shows a screenshot of the Node.js page, and the arrow
+indicates the option to be selected to download the LTS version.</p>
+<p>After downloading, the installation process of Node.js is very
+similar to any other application, without any major mysteries (:</p>
+<div class="class_s2K-0">
+<img src="image_rsrcJK.jpg" class="class_s2K-1" />
+</div>
+<p>Installing Visual Studio Code</p>
+<p>As a source code editor, I suggest Visual Studio Code (VS Code)
+because it is cross-platform, free, and extensible.</p>
+<p>To download this editor, go to https://code.visualstudio.com/ and
+click on the button as indicated in the figure below.</p>
+<p>Like Node.js, the installation process of VS Code does not require
+any knowledge beyond the conventional to install the new program on your
+computer.</p>
+<div class="class_s2V-0">
+<img src="image_rsrcJM.jpg" class="class_s2V-1" />
+</div>
+<p><span id="part0006.xhtml"></span></p>
+<h1 class="heading_sS-0">Modules in JavaScript</h1>
+<p>In Node.js, modules are files that contain JavaScript code that can
+be reused in different parts of a program. Each module is an independent
+unit of code that can be imported or exported to other parts of the
+program, making the code more modular and easy to maintain.</p>
+<p>Modules in Node.js are organized in a CommonJS module system, which
+defines how modules can be defined, loaded, and exported. Each module
+has its own scope, meaning the variables and functions defined in a
+module are not visible outside of it unless they are explicitly
+exported.</p>
+<p>To use a module in a Node.js program, it is necessary to import it
+using the require() function. For example, to use the fs module, which
+is used to perform file read and write operations, simply use the
+following code:</p>
+<div class="class_s38-0">
+<img src="image_rsrcJN.jpg" class="class_s38-1" />
+</div>
+<p>The <span class="class_sH6">require()</span> function is a
+synchronous function that loads the specified module and returns the
+object exported by it. It is possible to export values from a module
+using the module.exports variable, which is a special property of the
+module object. For example, to export a function in a module, simply do
+the following:</p>
+<div class="class_s3E-0">
+<img src="image_rsrcJP.jpg" class="class_s3E-1" />
+</div>
+<p>To import the <span class="class_sH6">sayHello()</span> function in
+another file, just use the <span class="class_sH6">require()</span> and
+access the <span class="class_sH6">sayHello</span> property of the
+imported object:</p>
+<div class="class_s3K-0">
+<img src="image_rsrcJR.jpg" class="class_s3K-1" />
+</div>
+<p>This way, modules in Node.js allow developers to organize and reuse
+code more efficiently, making it easier to maintain and develop more
+complex applications.</p>
+<p><span id="part0007.xhtml"></span></p>
+<h1 class="heading_sS-0">NPM e NPX</h1>
+<p>The Node.js package manager is NPM (<span class="class_sH6">Node
+Package Manager</span>), which is used to install, manage, and share
+software packages and modules written in JavaScript. It comes included
+with Node.js and is used by developers around the world to manage their
+project dependencies.</p>
+<p>NPM allows you to install packages globally or locally to a specific
+project. To install a package locally, simply navigate to the root
+directory of your project and run the following command in the
+terminal:</p>
+<div class="class_s40-0">
+<img src="image_rsrcJS.jpg" class="class_s40-1" />
+</div>
+<p>This will install the package in the node_modules directory of your
+project and add an entry in the package.json file to track your
+project's dependencies.</p>
+<p>On the other hand, <span class="class_sH4">npx</span> is a utility
+that was introduced in NPM from version 5.2.0. It allows you to run
+packages directly without having to install them globally on your system
+or locally in the project.</p>
+<p><span class="class_sH4">npx</span> downloads the requested package
+and runs it immediately, instead of installing it permanently in your
+system or project. This is useful when you need to run a package only
+once or when you want to test a package without installing it
+permanently.</p>
+<p>For example, if you want to run a script in the <span
+class="class_sH6">create-react-app</span> package using <span
+class="class_sH6">npx</span>, simply type the following command:</p>
+<div class="class_s48-0">
+<img src="image_rsrcJT.jpg" class="class_s48-1" />
+</div>
+<p>This will download and execute the create-react-app package with the
+argument my-app, creating a new React application in the my-app
+directory.</p>
+<p>In summary, NPM is used to manage the dependencies of your project,
+while npx is used to execute packages without installing them globally
+or locally. Both are useful tools for JavaScript development.</p>
+<p><span id="part0008.xhtml"></span></p>
+<h1 class="heading_sS-1">First Steps in JavaScript</h1>
+<p>First, create a folder to develop your Node.js project and then
+launch VS Code. In the editor, click on File &gt; Open Folder and open
+the folder you just created. In the example, the folder I created is
+called ProjetoNode.</p>
+<p>On the left, click New File and then name it helloworld.js. In this
+file, add the following code:</p>
+<p>console.log("Hello World")</p>
+<p>Then, click Terminal &gt; New Terminal to open a new terminal
+instance within VS Code, and enter the following command:</p>
+<p>node helloworld.js</p>
+<p>If everything goes well, the following sentence will appear in the
+terminal: <span class="class_sH6">Hello World</span>.</p>
+<p><span id="part0009.xhtml"></span></p>
+<h1 class="heading_sS-0">Advantages of Node.js</h1>
+<p>One of the major advantages of Node.js is the ease of developing
+server-side applications. To see this in action, create a new file in VS
+Code called <span class="class_sH6">server.js</span> and insert the
+following code lines:</p>
+<div class="class_s54-0">
+<img src="image_rsrcJU.jpg" class="class_s54-1" />
+</div>
+<p>So, in the terminal, run the following command:</p>
+<p>node server.js</p>
+<p>You are now running an HTTP server in Node.js that will listen for
+requests on port 8080. To access the local server, simply go to the
+following link <span class="class_sHA">http://localhost:8080</span> in
+your browser.</p>
+<p><span id="part0010.xhtml"></span></p>
+<h1 class="heading_sS-0">Storing Values in JavaScript</h1>
+<p>In JavaScript, variables are used to store values that can be used in
+different parts of a program. To declare a variable in JavaScript, you
+can use the keywords <span class="class_sHA">var</span>, <span
+class="class_sHA">let</span>, or <span class="class_sHA">const</span>,
+followed by the variable name:</p>
+<div class="class_s5K-0">
+<img src="image_rsrcJV.jpg" class="class_s5K-1" />
+</div>
+<p>The <span class="class_sHA">var</span> keyword was the old way of
+declaring variables in JavaScript, but it is still supported in newer
+versions of the language. Variables declared with var have function or
+global scope.</p>
+<p>The <span class="class_sHA">let</span> keyword is used to declare
+variables with block scope, which means they can only be accessed within
+the block they were declared in.</p>
+<p>The <span class="class_sHA">const</span> keyword is used to declare
+constants, which are values that cannot be changed after they are
+assigned.</p>
+<p>It is important to remember that in JavaScript, variables are
+dynamically typed, which means <span class="class_sH4">you do not need
+to declare the variable type beforehand</span>. The variable type is
+automatically defined during program execution, based on the value
+assigned to the variable.</p>
+<p><span id="part0011.xhtml"></span></p>
+<h1 class="heading_sS-1">Data Types in JavaScript</h1>
+<p>In JavaScript, there are six primitive data types:</p>
+<p><span class="class_sH4">number:</span> represents numbers, including
+integers and floating point numbers. For example, 10, 3.14, -5.</p>
+<p><span class="class_sH4">string:</span> represents a sequence of
+characters. It can be delimited by single or double quotes. For example,
+"Hello, world!", 'JavaScript'.</p>
+<p><span class="class_sH4">boolean:</span> represents a logical value
+true or false.</p>
+<p><span class="class_sH4">null:</span> represents a null value, i.e.,
+absence of value.</p>
+<p><span class="class_sH4">undefined:</span> represents a variable that
+has been declared but not yet assigned a value.</p>
+<p><span class="class_sH4">symbol:</span> represents a unique and
+immutable value that can be used as an identifier for object
+properties.</p>
+<p>In addition to these six primitive types, in JavaScript, there are
+also two complex data types:</p>
+<p><span class="class_sH4">object:</span> represents a collection of
+key-value pairs. Objects in JavaScript can contain properties and
+methods. For example, { name: 'John', age: 25 }.</p>
+<p><span class="class_sH4">function:</span> is a special type of object
+that can be called and can have properties and methods associated with
+it. Functions in JavaScript are used to define blocks of code that can
+be called anywhere in the program.</p>
+<p>It is important to remember that in JavaScript, variables are
+dynamically typed, which means that the type of the variable is
+automatically defined during program execution, based on <span
+id="part0011.xhtml_page_15"></span>the value assigned to the variable.
+Additionally, variables can change type during program execution. For
+example, a variable that contains a number can be later assigned with a
+string.</p>
+<p><span id="part0012.xhtml"></span></p>
+<h1 class="heading_sS-0">Mathematics in JavaScript</h1>
+<p>JavaScript supports a wide variety of mathematical operations,
+including basic arithmetic operations such as addition, subtraction,
+multiplication, and division. Additionally, it is also possible to
+perform more complex operations such as trigonometric, exponential, and
+logarithmic calculations.</p>
+<p>Here are some examples of mathematical operations in JavaScript:</p>
+<div class="class_s6P-0">
+<img src="image_rsrcJW.jpg" class="class_s6P-1" />
+</div>
+<p>In addition, JavaScript also provides a variety of predefined
+mathematical functions in the Math object. These functions include,
+among others, <span class="class_sH6">Math.floor()</span> for rounding
+down, <span class="class_sH6">Math.ceil()</span> for rounding up, and
+<span class="class_sH6">Math.random()</span> for generating a random
+number between 0 and 1.</p>
+<div id="part0012.xhtml_page_17" class="class_s6P-0">
+<img src="image_rsrcJX.jpg" class="class_s6P-1" />
+</div>
+<p>These are just a few examples of the many mathematical operations
+that can be performed in JavaScript.</p>
+<p><span id="part0013.xhtml"></span></p>
+<h1 class="heading_sS-0">Strings in JavaScript</h1>
+<p>In JavaScript, a string is a sequence of characters, such as "Hello,
+world!". Strings are one of the primitive data types in JavaScript and
+are created using single or double quotes.</p>
+<p>Here's an example of a string in JavaScript:</p>
+<div class="class_s77-0">
+<img src="image_rsrcJY.jpg" class="class_s77-1" />
+</div>
+<p>Representation of Strings</p>
+<p>In JavaScript, there are two main ways to represent strings: with
+double quotes and with single quotes. Both forms are equivalent and you
+can choose which one to use according to your personal preferences or
+the conventions adopted by the project or team.</p>
+<p>For example, the following lines of code create a string with double
+quotes and a string with single quotes:</p>
+<div class="class_s7E-0">
+<img src="image_rsrcJZ.jpg" class="class_s7E-1" />
+</div>
+<p>Additionally, you can use the escape character <span
+class="class_sH4">\</span> to insert special characters into a string,
+such as single or double quotes, backslashes, new lines, and others. For
+example:</p>
+<div class="class_s7K-0">
+<img src="image_rsrcK0.jpg" class="class_s7K-1" />
+</div>
+<p>Another way to represent strings in JavaScript is by using the
+backtick (`), which is known as a<span class="class_sH4"> template
+string</span>. Template strings allow for the incorporation of
+JavaScript expressions in a string using the syntax <span
+class="class_sH6">${expression}</span>. For example:</p>
+<div class="class_s7S-0">
+<img src="image_rsrcK1.jpg" class="class_s7S-1" />
+</div>
+<p>In this case, the variable <span class="class_sH6">fullName</span>
+contains the string "John Sullivan", which is composed by concatenating
+the variables <span class="class_sH6">firstName</span> and <span
+class="class_sH6">lastName</span> using the template string syntax.</p>
+<p>In summary, in JavaScript, you can represent strings with single
+quotes, double quotes or template strings, and you can use the escape
+character to insert special characters in a string.</p>
+<p>Operations with Strings</p>
+<p>In JavaScript, it is possible to perform several operations on
+strings. Some of these operations include:</p>
+<p><span class="class_sH4">Concatenation:</span> the operation of
+joining two or more strings into a single string. This is done using the
+addition operator (+) or the concat() method. Here is an example:</p>
+<div class="class_s81-0">
+<img src="image_rsrcK2.jpg" class="class_s81-1" />
+</div>
+<p><span class="class_sH4">Length:</span> the operation of counting the
+number of characters in a string. This is done using the length
+property. Here is an example:</p>
+<div class="class_s86-0">
+<img src="image_rsrcK3.jpg" class="class_s86-1" />
+</div>
+<p><span class="class_sH4">Access to individual characters:</span> it is
+possible to access individual characters in a string using brackets
+([]). Here is an example:</p>
+<div id="part0013.xhtml_page_20" class="class_s8B-0">
+<img src="image_rsrcK4.jpg" class="class_s8B-1" />
+</div>
+<p><span class="class_sH4">Character substitution:</span> it is possible
+to substitute characters in a string using the replace() method. Here is
+an example:</p>
+<div class="class_s8G-0">
+<img src="image_rsrcK5.jpg" class="class_s8G-1" />
+</div>
+<p>These are just a few of the operations that can be performed on
+strings in JavaScript. There are many others, including string
+comparison, conversion to uppercase and lowercase letters, and much
+more.</p>
+<p><span id="part0014.xhtml"></span></p>
+<h1 class="heading_s29">Control Structures</h1>
+<p>Conditional - IF/Else</p>
+<p>"If/else" is one of the most commonly used control structures in
+JavaScript. It is used to execute different blocks of code based on a
+condition.</p>
+<p>The basic syntax of "if/else" is as follows:</p>
+<div class="class_s8Y-0">
+<img src="image_rsrcK6.jpg" class="class_s8Y-1" />
+</div>
+<p>The condition is an expression that returns a boolean value (true or
+false). If the condition is true, the code block inside the first set of
+curly braces will be executed. If the condition is false, the code block
+inside the second set of curly braces will be executed.</p>
+<p>Additionally, it is possible to chain multiple "if/else" structures
+using the "else if" keyword. Here is an example:</p>
+<div class="class_s8Y-0">
+<img src="image_rsrcK7.jpg" class="class_s8Y-1" />
+</div>
+<p>In this case, the first condition to be evaluated is "condition1". If
+it is true, the first code block will be executed and the rest will be
+ignored. Otherwise, "condition2" will be evaluated and so on.</p>
+<p>"If/else" is a very useful control structure in JavaScript, allowing
+you to create complex logic in your programs.</p>
+<p>Inline Conditional - IF/Else Inline</p>
+<p>The inline "if" in JavaScript is a way to write a conditional
+statement in a single line of code. Instead of using the <span
+id="part0014.xhtml_page_22"></span>conventional syntax of an "if" block
+with curly braces and an optional "else" statement, you can use the
+ternary operator to create a more compact statement.</p>
+<p>The basic syntax of the inline "if" is as follows:</p>
+<div class="class_s9C-0">
+<img src="image_rsrcK8.jpg" class="class_s9C-1" />
+</div>
+<p>In this example, the "condition" is evaluated first. If it is true,
+the "true expression" is returned. Otherwise, the "false expression" is
+returned.</p>
+<p>Here's a practical example:</p>
+<div class="class_s9J-0">
+<img src="image_rsrcK9.jpg" class="class_s9J-1" />
+</div>
+<p>In this example, the condition evaluates if the age is greater than
+or equal to 18. If it's true, the variable status is set to "adult".
+Otherwise, the variable status is set to "minor".</p>
+<p>The inline "if" is a convenient and readable way to write simple
+conditional statements in JavaScript, especially when you need more
+concise code. However, for more complex statements or multiple
+conditions, using the conventional "if" syntax may be more
+appropriate.</p>
+<p>Looping Structures</p>
+<p>The looping structures in JavaScript allow a block of code to be
+executed multiple times based on a certain condition. The two main
+looping structures are "while" and "for".</p>
+<p><span class="class_sH4">While</span> is a looping structure that
+executes a block of code while a specific condition is true. The basic
+syntax of "while" is as follows:</p>
+<div class="class_s9V-0">
+<img src="image_rsrcKA.jpg" class="class_s9V-1" />
+</div>
+<p>In this example, the block of code will be executed while the
+condition is true. The condition is checked at the beginning of each
+loop iteration.</p>
+<p>On the other hand, <span class="class_sH4">for</span> is another
+looping structure that executes a block of code several times based on a
+fixed number of iterations. The basic syntax of "for" is as follows:</p>
+<div class="class_sA1-0">
+<img src="image_rsrcKB.jpg" class="class_sA1-1" />
+</div>
+<p>In this example, the <span class="class_sH6">initialization</span> is
+executed before the first loop iteration. The <span
+class="class_sH6">condition</span> is checked before each loop iteration
+and, if it is true, the block of code is executed. After each loop
+iteration, the <span class="class_sH6">final expression</span> is
+executed.</p>
+<p>In addition, JavaScript also has the <span
+class="class_sH4">do/while</span> structure, which is similar to
+"while", but checks the condition at the end of each loop iteration
+instead of at the beginning. The basic syntax of "do/while" is as
+follows:</p>
+<div class="class_sA7-0">
+<img src="image_rsrcKC.jpg" class="class_sA7-1" />
+</div>
+<p>Finally, JavaScript has the <span class="class_sH4">break</span>
+statement, which allows you to exit a loop prematurely, and the <span
+class="class_sH4">continue</span> statement, which allows you to skip to
+the next iteration of the loop. These statements are useful for
+controlling the flow of execution within the loop.</p>
+<p><span id="part0015.xhtml"></span></p>
+<h1 class="heading_sS-0">Functions</h1>
+<p>In JavaScript, functions are first-class objects, which means they
+can be treated like any other object. Functions can be stored in
+variables, passed as arguments to other functions, returned as values
+from other functions, and more. Here is a simple example of how to
+create a function in JavaScript:</p>
+<div class="class_sAK-0">
+<img src="image_rsrcKD.jpg" class="class_sAK-1" />
+</div>
+<p>In this example, the function "sum" takes two arguments, <span
+class="class_sH6">a</span> and <span class="class_sH6">b</span>, and
+returns their sum.</p>
+<p>It is also possible to create anonymous functions in JavaScript,
+which are nameless functions that are stored in variables or passed as
+arguments to other functions. Here is an example:</p>
+<div class="class_sAT-0">
+<img src="image_rsrcKE.jpg" class="class_sAT-1" />
+</div>
+<p>In this example, the anonymous function is stored in a variable
+called "<span class="class_sH6">sum</span>".</p>
+<p>Functions in JavaScript can also be defined using arrow function
+expressions. Arrow functions were introduced in ECMAScript 6 and are a
+more concise way to create functions in JavaScript. Here is an
+example:</p>
+<div class="class_sAZ-0">
+<img src="image_rsrcKF.jpg" class="class_sAZ-1" />
+</div>
+<p>In this example, the arrow function takes two arguments, a and b, and
+returns their sum.</p>
+<p>Functions in JavaScript can also have default arguments, which are
+used when no value is provided for that argument. Here is an
+example:</p>
+<div class="class_sB5-0">
+<img src="image_rsrcKG.jpg" class="class_sB5-1" />
+</div>
+<p><span id="part0016.xhtml"></span></p>
+<h1 class="heading_sS-0">Arrays in JavaScript</h1>
+<p>In JavaScript, an array is a collection of values that can be
+accessed through a numeric index. Arrays are one of the primitive data
+types in JavaScript and can contain any type of data, including other
+arrays.</p>
+<p>Here is an example of how to create an array in JavaScript:</p>
+<div class="class_sBH-0">
+<img src="image_rsrcKH.jpg" class="class_sBH-1" />
+</div>
+<p>In this example, <span class="class_sH6">numbers</span> is an array
+of numbers that contains the values 1, 2, 3, 4, and 5. The elements of
+an array can be accessed using brackets ([]). The index of the first
+element of an array is 0. Here is an example:</p>
+<div class="class_sBP-0">
+<img src="image_rsrcKJ.jpg" class="class_sBP-1" />
+</div>
+<p>Arrays in JavaScript also have several methods that can be used to
+perform operations on their elements. Here are some examples:</p>
+<p><span class="class_sH4">push()</span>:adds one or more elements to
+the end of the array. Here's an example:</p>
+<div class="class_s3E-0">
+<img src="image_rsrcKK.jpg" class="class_s3E-1" />
+</div>
+<p><span class="class_sH4">pop()</span>: removes the last element of the
+array and returns that element. Here's an example:</p>
+<div class="class_sC0-0">
+<img src="image_rsrcKM.jpg" class="class_sC0-1" />
+</div>
+<p><span class="class_sH4">slice()</span>: returns a copy of a portion
+of the array. Here's an example:</p>
+<div class="class_sC5-0">
+<img src="image_rsrcKN.jpg" class="class_sC5-1" />
+</div>
+<p><span class="class_sH4">join()</span>: returns all elements of an
+array in a single string</p>
+<div class="class_sCA-0">
+<img src="image_rsrcKP.jpg" class="class_sCA-1" />
+</div>
+<p>These are just a few examples of the methods available in arrays in
+JavaScript. There are many others, including <span
+class="class_sH4">shift()</span>,<span class="class_sH4">
+unshift()</span>, <span class="class_sH4">splice()</span>, <span
+class="class_sH4">concat()</span>, <span
+class="class_sH4">reverse()</span>, <span
+class="class_sH4">sort()</span>, among others.</p>
+<p>Multidimensional Arrays</p>
+<p>A multidimensional array in JavaScript is an array that contains
+other arrays. It is a way to store data in multiple dimensions, allowing
+you to create complex data structures.</p>
+<p>To create a multidimensional array, you need to create an array
+inside another array. For example, to create a 2x3 array (two rows and
+three columns), you can use the following syntax:</p>
+<div class="class_sCJ-0">
+<img src="image_rsrcKR.jpg" class="class_sCJ-1" />
+</div>
+<p>In this example, <span class="class_sH6">matrix</span> is a
+multidimensional array that contains two nested arrays, each with three
+values.</p>
+<p>You can access the values of a multidimensional array using the same
+syntax you would use to access values in a one-dimensional array, but
+specifying the index for each dimension. For example, to access the
+value 5 in the array matrix, you can use the following line of code:</p>
+<div class="class_sCS-0">
+<img src="image_rsrcKS.jpg" class="class_sCS-1" />
+</div>
+<p>In this case, <span class="class_sH6">matrix[1]</span> returns the
+second nested array, and <span class="class_sH6">matrix[1][1]</span>
+returns the second value in the second nested array, which is 5.</p>
+<p>You can also create multidimensional arrays with more than two
+dimensions by simply nesting more arrays inside the array. However,
+arrays with more than two or three dimensions can become difficult to
+work with and are generally avoided in JavaScript programming.</p>
+<p><span id="part0017.xhtml"></span></p>
+<h1 class="heading_sS-0">Objects in JavaScript</h1>
+<p>In JavaScript, an object is a collection of key-value pairs. Each key
+is a string that identifies a value in the object. The value can be any
+type of JavaScript data, including other objects.</p>
+<p>To create an object in JavaScript, we can use the object literal
+syntax, which consists of curly braces {} with key-value pairs separated
+by commas:</p>
+<div class="class_s77-0">
+<img src="image_rsrcKT.jpg" class="class_s77-1" />
+</div>
+<p>In this example, <span class="class_sH6">person</span> is an object
+that has three properties: <span class="class_sH6">name</span>, <span
+class="class_sH6">age</span>, and <span
+class="class_sH6">address</span>. The <span
+class="class_sH6">address</span> property is another object with its own
+properties. We can access the properties of an object using either dot
+notation or bracket notation:</p>
+<div class="class_sDA-0">
+<img src="image_rsrcKU.jpg" class="class_sDA-1" />
+</div>
+<p>We can also add, modify, and delete properties of an object using dot
+or bracket notation:</p>
+<div class="class_s6P-0">
+<img src="image_rsrcKV.jpg" class="class_s6P-1" />
+</div>
+<p>In addition, we can loop through the properties of an object using a
+for...in loop:</p>
+<div class="class_sDK-0">
+<img src="image_rsrcKW.jpg" class="class_sDK-1" />
+</div>
+<p>This loop will display all properties and their values in the person
+object.</p>
+<p>In summary, objects are a fundamental part of JavaScript and are
+widely used in programming to represent complex and structured data.</p>
+<p><span id="part0018.xhtml"></span></p>
+<h1 class="heading_s29">Functional Programming in JavaScript</h1>
+<p>ForEach</p>
+<p>The <span class="class_sH6">forEach</span> function is one of the
+most useful functions for iterating through arrays in JavaScript. The
+forEach function executes a callback function for each element in the
+array, but it doesn't return a new array. Instead, it simply iterates
+through the array and executes the function on each element.</p>
+<p>Here is a simple example:</p>
+<div class="class_sE2-0">
+<img src="image_rsrcKX.jpg" class="class_sE2-1" />
+</div>
+<p>This code displays each element of the <span
+class="class_sH6">numbers</span> array in the console.</p>
+<p>The callback function that is passed to forEach receives three
+arguments: the current element, the index of the element, and the array
+itself. For example:</p>
+<div class="class_s6P-0">
+<img src="image_rsrcKY.jpg" class="class_s6P-1" />
+</div>
+<p>This code displays each element of the array, the index of the
+element, and the array itself in the console.</p>
+<p>The forEach function is useful for performing an action on each
+element of an array. However, if you need to create a new array from the
+original array, it's better to use the map, filter, or reduce
+functions.</p>
+<p>Map</p>
+<p>The <span class="class_sH6">map</span> function is used to create a
+new array with the result <span id="part0018.xhtml_page_32"></span>of
+applying a function to each element of the original array. The <span
+class="class_sH6">map</span> function does not modify the original
+array, but returns a new array with the same number of elements.</p>
+<p>Here's a simple example:</p>
+<div class="class_sEG-0">
+<img src="image_rsrcKZ.jpg" class="class_sEG-1" />
+</div>
+<p>In this example, the map function is used to create a new array <span
+class="class_sH6">square</span> that contains the square of each number
+in the numeros array.</p>
+<p>The <span class="class_sH6">map</span> function takes a callback
+function as an argument. This function is called for each element of the
+array and should return the value to be added to the new array. The
+callback function can have up to three arguments: the current element,
+the index of the element, and the array itself. For example:</p>
+<div class="class_sER-0">
+<img src="image_rsrcM0.jpg" class="class_sER-1" />
+</div>
+<p>In this example, the map function is used to create a new array
+upperFruits that contains all the fruits from the <span
+class="class_sH6">fruits</span> array in uppercase letters. The callback
+function prints each fruit and its index before transforming the fruit
+into uppercase and returning it.</p>
+<p>The map function is one of the most useful and powerful functions in
+JavaScript, and is widely used in functional programming to transform
+data.</p>
+<p>Filter</p>
+<p>The filter function is used to create a new array with all elements
+of the original array that pass a test specified by a <span
+id="part0018.xhtml_page_33"></span>callback function. The new array will
+only contain elements that satisfy the condition specified in the
+callback function.</p>
+<p>Here's a simple example:</p>
+<div class="class_sF0-0">
+<img src="image_rsrcM1.jpg" class="class_sF0-1" />
+</div>
+<p>In this example, the filter function is used to create a new array
+<span class="class_sH6">evenNumbers</span> that contains only the even
+numbers from the numbers array.</p>
+<p>The filter function takes a callback function as an argument. This
+function is called for each element in the array and should return a
+boolean value that indicates whether the element should be included in
+the new array. The callback function can have up to three arguments: the
+current element, the index of the element, and the array itself. For
+example:</p>
+<div class="class_s2V-0">
+<img src="image_rsrcM2.jpg" class="class_s2V-1" />
+</div>
+<p>In this example, the filter function is used to create a new array
+<span class="class_sH6">fruitsWithE</span> that contains only the fruits
+from the fruits array that contain the letter "e". The callback function
+prints each fruit and its index before testing whether the fruit
+contains the letter "e" and returning a boolean value.</p>
+<p>The filter function is one of the most useful and powerful functions
+in JavaScript and is widely used in functional programming to filter
+data.</p>
+<p>Reduce</p>
+<p>The reduce function is used to reduce all the elements of an <span
+id="part0018.xhtml_page_34"></span>array to a single value. It executes
+a callback function for each element of the array, passing an
+accumulator and the current element as arguments, and returns an
+accumulated value that results from the execution of the callback
+function on each element.</p>
+<p>Here's a simple example:</p>
+<div class="class_sFF-0">
+<img src="image_rsrcM3.jpg" class="class_sFF-1" />
+</div>
+<p>In this example, the reduce function is used to sum all the numbers
+in the numbers array. The callback function takes two arguments: the
+accumulator and the current element. In the first iteration, the
+accumulator is the initial value passed as the second argument (zero)
+and the current element is the first element of the array (1). In the
+second iteration, the accumulator is the sum of the initial value and
+the first element (1+2=3) and the current element is the second element
+of the array (2), and so on. The final result is the sum of all the
+elements in the array.</p>
+<p>The reduce function can also take an optional third argument, which
+is the initial value of the accumulator. If this argument is not
+provided, the first element of the array will be used as the initial
+value.</p>
+<div class="class_sFN-0">
+<img src="image_rsrcM4.jpg" class="class_sFN-1" />
+</div>
+<p>In this example, the reduce function is used to calculate the product
+of all the numbers in the numbers array. Since no initial value is
+provided, the first element of the array (1) is used as the initial
+value of the accumulator.</p>
+<p>The reduce function is one of the most powerful and flexible
+functions in JavaScript, and it is widely used in functional <span
+id="part0018.xhtml_page_35"></span>programming to transform data and
+perform complex operations on arrays.</p>
+<p><span id="part0019.xhtml"></span></p>
+<h1 class="heading_sS-0">Short-circuit Evaluation</h1>
+<p>Short-circuit evaluation is a technique in JavaScript (and other
+programming languages) that allows for evaluating a logical expression
+by stopping as soon as the result can be determined, without the need to
+evaluate the entire expression. This is possible because the logical
+operators AND (<span class="class_sH4">&amp;&amp;</span>) and OR (<span
+class="class_sH4">||</span>) are implemented this way in JavaScript.</p>
+<p>The logical operator AND returns true only if both expressions are
+true. If the first expression is false, the result is false and the
+second expression is not evaluated. For example:</p>
+<div class="class_sG3-0">
+<img src="image_rsrcM5.jpg" class="class_sG3-1" />
+</div>
+<p>In this case, the second expression is not evaluated if the first
+expression is false (if <span class="class_sH6">x</span> is not greater
+than 0).</p>
+<p>The logical operator OR returns true if at least one of the
+expressions is true. If the first expression is true, the result is true
+and the second expression is not evaluated. For example:</p>
+<div class="class_sG9-0">
+<img src="image_rsrcM6.jpg" class="class_sG9-1" />
+</div>
+<p>In this case, the second expression is not evaluated because the
+first expression (<span class="class_sH6">y</span>) is false (<span
+class="class_sH6">null</span>).</p>
+<p>The short-circuit evaluation technique can be useful for improving
+code performance and making it more readable in certain situations.
+However, it is important to use it with care and ensure that the program
+logic is correct.</p>
+<p>Short-circuit Evaluation em Funções</p>
+<p>Short-circuit evaluation can also be used with functions in
+JavaScript. In some cases, it is possible to use this technique to <span
+id="part0019.xhtml_page_37"></span>improve code performance or avoid
+errors.</p>
+<p>For example, imagine you have a function that receives an object as a
+parameter and needs to check if a certain property exists in the object
+before accessing it. You could write the following code:</p>
+<div class="class_sGJ-0">
+<img src="image_rsrcM7.jpg" class="class_sGJ-1" />
+</div>
+<p>In this case, the logical expression object &amp;&amp;
+object.property uses short-circuit evaluation to ensure that the code
+inside the if statement is only executed if the object exists and the
+property also exists.</p>
+<p>Another example where short-circuit evaluation can be useful is when
+you need to set a default value for a variable or function parameter.
+Instead of using an if/else statement to check if the variable or
+parameter is undefined, you can use the logical OR operator to set a
+default value:</p>
+<div class="class_s8Y-0">
+<img src="image_rsrcM8.jpg" class="class_s8Y-1" />
+</div>
+<p>In this case, if the value of options.defaultValue is undefined, the
+default value will be used instead.</p>
+<p><span id="part0020.xhtml"></span></p>
+<h1 class="heading_sS-0">About the Author</h1>
+<p>Ruhan Conceição graduated in Computer Engineering (2015) from the
+Federal University of Pelotas and has a Master's degree in Computing
+(2016) from the same university. Since 2018, he has been a professor at
+the Federal Institute of Education, Science and Technology of Rio Grande
+do Sul in the field of Informatics, where he teaches, among other
+subjects, Object Oriented Programming, Visual Programming, and Mobile
+Devices Programming.</p>
+<p>In 2014, while still an undergraduate student, Ruhan received the
+title of Gaúcho Researcher in the Young Innovator category due to his
+academic and scientific trajectory during his years at the university.
+His research topic has always been related to the algorithmic
+development of efficient solutions for real-time video coding. Regarding
+scientific research, Ruhan has accumulated dozens of papers published in
+national and international conferences, as well as articles in highly
+relevant scientific journals, and two computer programs registered in
+the National Institute of Intellectual Property.</p>
+<p>Among his hobbies, Ruhan Conceição has a podcast called R-Cast
+(@rcasttv on social media), where he invites guests to talk about
+various topics, including technology, politics, education, health,
+culture, music, etc.</p>

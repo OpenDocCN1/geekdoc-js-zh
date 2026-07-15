@@ -1,0 +1,3764 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 741 1186" preserveaspectratio="none">
+<image width="741" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3">Express.js</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Guide Book on Web framework for
+Node.js</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre4">By Rick L.</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre6">Copyright©2016 Rick L.</span></p>
+<p><span class="calibre6">All Rights Reserved</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre11">Copyright © 2016 by Rick L.</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre6">Table of Contents</span></p>
+<p><span id="part0000_split_002.html_toc" class="calibre13"></span><a
+href="#part0000_split_004.html__Toc445557340" class="calibre13"><span
+class="calibre14">Introduction</span></a></p>
+<p><a href="#part0000_split_005.html__Toc445557341"
+class="calibre13"><span class="calibre14">Chapter 1- Overview of
+ExpressJS</span></a></p>
+<p><a href="#part0000_split_006.html__Toc445557342"
+class="calibre13"><span class="calibre14">Chapter 2-
+Session</span></a></p>
+<p><a href="#part0000_split_009.html__Toc445557343"
+class="calibre13"><span class="calibre14">Chapter 3-
+serve-index</span></a></p>
+<p><a href="#part0000_split_010.html__Toc445557345"
+class="calibre13"><span class="calibre14">Chapter 4- cookie-
+Sessions</span></a></p>
+<p><a href="#part0000_split_011.html__Toc445557346"
+class="calibre13"><span class="calibre14">Chapter 5- Morgan in
+ExpressJS</span></a></p>
+<p><a href="#part0000_split_012.html__Toc445557349"
+class="calibre13"><span class="calibre14">Chapter 6- CORS</span></a></p>
+<p><a href="#part0000_split_015.html__Toc445557351"
+class="calibre13"><span class="calibre14">Chapter 7-
+Express-Paginate</span></a></p>
+<p><a href="#part0000_split_016.html__Toc445557352"
+class="calibre13"><span class="calibre14">Chapter 8-
+Multer</span></a></p>
+<p><a href="#part0000_split_018.html__Toc445557353"
+class="calibre13"><span class="calibre14">Chapter 9-
+Compression</span></a></p>
+<p><a href="#part0000_split_020.html__Toc445557355"
+class="calibre13"><span class="calibre14">Chapter 10-
+csurf</span></a></p>
+<p><a href="#part0000_split_023.html__Toc445557356"
+class="calibre13"><span class="calibre14">Chapter 11-
+body-parser</span></a></p>
+<p><a href="#part0000_split_025.html__Toc445557358"
+class="calibre13"><span class="calibre14">Chapter 12-
+Flash</span></a></p>
+<p><a href="#part0000_split_026.html__Toc445557359"
+class="calibre13"><span class="calibre14">method-override</span></a></p>
+<p><a href="#part0000_split_028.html__Toc445557360"
+class="calibre13"><span class="calibre14">Chapter 13-
+serve-favicon</span></a></p>
+<p><a href="#part0000_split_029.html__Toc445557362"
+class="calibre13"><span class="calibre14">Chapter 14-
+response-time</span></a></p>
+<p><a href="#part0000_split_031.html__Toc445557365"
+class="calibre13"><span class="calibre14">Chapter 15-
+express-namespace</span></a></p>
+<p><a href="#part0000_split_032.html__Toc445557366"
+class="calibre13"><span class="calibre14">Chapter 16-
+express-expose</span></a></p>
+<p><a href="#part0000_split_037.html__Toc445557367"
+class="calibre13"><span class="calibre14">Chapter 17-
+connect-render</span></a></p>
+<p><a href="#part0000_split_038.html__Toc445557368"
+class="calibre13"><span class="calibre14">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre15">Disclaimer</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre15">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre11"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+<p><span class="calibre15"> </span></p>
+<div id="part0000_split_003.html_calibre_pb_6" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<section id="part0000_split_004.html_calibre_pb_8"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_004.html__Toc445557340"
+class="calibre13"><span
+id="part0000_split_004.html_3A-3e2b995fb2964d47a86c484ecf81b401"
+class="calibre19">Introduction</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">ExpressJS is one of the most useful and
+interesting Node frameworks. It is used for the development of both web
+and mobile applications. These types of applications are the mostly
+widely used in software environments. This shows the need for you to
+know how this framework can be used for development. The framework has
+numerous modules which can be used for the purpose of enhancing the look
+and feel of your applications. </span></p>
+<div id="part0000_split_004.html_calibre_pb_9" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_12"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_005.html__Toc445557341"
+class="calibre13"><span class="calibre19">Chapter 1- Overview of
+ExpressJS</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">ExpressJS is a Node framework which is very
+flexible and provides developers with numerous features for the
+development of web and mobile applications. The framework can be used
+for the development of APIs. In this book, we will discuss the various
+features of ExpressJS. </span></p>
+<div id="part0000_split_005.html_calibre_pb_13" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<section id="part0000_split_006.html_calibre_pb_16"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_006.html__Toc445557342"
+class="calibre13"><span class="calibre19">Chapter 2-
+Session</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">To install this in Express, just execute the
+following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install express-session</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The above command will install the session
+into your system. To use it in your program, you have to use the
+“</span><span class="calibre24">require”</span><span class="calibre11">
+command. This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> session
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-session')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The session middleware can be created by use
+of the given “</span><span class="calibre24">options.”</span><span
+class="calibre11"> You should know that the data for the session should
+not be saved in the cookie itself, but here, only the session ID is
+stored. The data for the session is stored on the server side for the
+app. However, “</span><span class="calibre24">MemoryStore,”</span><span
+class="calibre11"> which is the default server-side session storage was
+not developed for use in a production environment. In most cases, it
+will leak and not scale past a single process. It was developed for the
+purpose of debugging. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">“express-session” will accept the following
+properties in the object for options:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Cookie</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">These are the settings for the cookie of the
+session ID. Consider the example given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">{ path: '/', httpOnly: true, secure: false,
+maxAge: null }.</span></p>
+<div id="part0000_split_006.html_calibre_pb_17" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_007.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre25">Genid</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is a function which is called for
+generation of a new session ID. The function provided should return a
+string which will be used as the session ID. “req” is given to the
+function as the first argument in case there is a need for a value to be
+attached to the “req” when the ID is being generated. The default value
+for this will be a function which can use “uid2” for the generation of
+the IDs. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Note: To avoid confliction of the sessions,
+make sure that the generated IDs are unique, that is, they should be
+different from each other. Consider the example given below which shows
+how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.use(session({</span></p>
+<p><span class="calibre15">    genid</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15">(req)
+{</span></p>
+<p><span class="calibre11">    return</span><span class="calibre15">
+genuuid() // using UUIDs for the session IDs</span></p>
+<p><span class="calibre15">},</span></p>
+<p><span class="calibre15">    secret</span><span
+class="calibre11">:</span><span class="calibre15"> ' my secret
+'</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre25">Name</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is the name of the session ID cookie
+which is to be set in the response. Note that it is read from the
+request. The default value for this is the “</span><span
+class="calibre24">connect.sid.</span><span class="calibre11">” For those
+who have multiple apps which are running on the same host, then the
+session cookies have to be separated from each other. To achieve this,
+one has to set different names in each of the apps. </span></p>
+<div id="part0000_split_007.html_calibre_pb_19" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_008.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Proxy</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Whenever you are setting secure cookies, you
+have to trust the reverse proxy. This can be done via the header for
+“</span><span class="calibre24">X-Forwarded-Proto.</span><span
+class="calibre11">” The default value for this is “</span><span
+class="calibre24">undefined.”</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">The possible values for this are explained
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ol type="1">
+<li><span class="calibre11">“true”- the header “X-Forwarded-Proto” will
+be used. </span></li>
+</ol>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre11">“false”- all of the headers will be ignored,
+and the connection will be considered only if a direct “TLS/SSL”
+connection exists. </span></li>
+</ol>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ol start="3" type="1">
+<li><span class="calibre11">“Undefined”- this will use the settings for
+“trust proxy” from the Express itself. </span></li>
+</ol>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Resave</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This will force the session to be saved back
+to the session store. This happens whether or not the session was
+modified during the request. The necessity of this will depend on your
+session store. However, if a client makes parallel requests, race
+conditions may be created. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Rolling</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The cookie will be forced to be set on each
+of the responses. The expiration date is also reset. The default value
+for this is “</span><span class="calibre24">false.”</span><span
+class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre31">saveUninitialized</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">With this, a session which was not
+initialized will be saved to the session store. An uninitialized session
+is one which is new and not modified in any way. The default setting for
+this is “</span><span class="calibre24">true.”</span><span
+class="calibre11"> However, this has deprecated and is expected to
+change in the future. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Required option</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">This is the secret which is used for signing
+the cookie for the session ID. It can be made up of an array of secrets
+or a string just for a single secret. In case you provide an array of
+secrets, only the first element in the array will be used for signing
+the cookie for the session ID. The rest of the elements will be used for
+verification of the signature in requests. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Store</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is the instance of the session store.
+Its default is a new </span><span
+class="calibre24">“MemoryStore</span><span class="calibre11">” instance.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Consider the example given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">    application.set('trust proxy',
+</span><span class="calibre11">1</span><span class="calibre15">) //
+trusting the first proxy</span></p>
+<p><span class="calibre15">application.use(session({</span></p>
+<p><span class="calibre15">    secret</span><span
+class="calibre11">:</span><span class="calibre15"> 'my
+secret',</span></p>
+<p><span class="calibre15">    resave</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15">,</span></p>
+<p><span class="calibre15">     saveUninitialized</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15">,</span></p>
+<p><span class="calibre15">cookie</span><span
+class="calibre11">:</span><span class="calibre15"> { secure</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15"> }</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">We need to be able to use the cookies in a
+production environment, and at the same time allow for testing in a
+development environment. The setup can be enabled by use of the
+“</span><span class="calibre24">NODE_ENV.” </span><span
+class="calibre11"> Consider the example given below, which shows how
+this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> session
+</span><span class="calibre11">=</span><span class="calibre15">
+{</span></p>
+<p><span class="calibre15">    secret</span><span
+class="calibre11">:</span><span class="calibre15"> ' my secret
+',</span></p>
+<p><span class="calibre15">    cookie</span><span
+class="calibre11">:</span><span class="calibre15"> {}</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(application.get('env') </span><span class="calibre11">===</span><span
+class="calibre15"> 'production') {</span></p>
+<p><span class="calibre15">     application.set('trust proxy',
+</span><span class="calibre11">1</span><span class="calibre15">) //
+trusting the first proxy</span></p>
+<p><span class="calibre15">     session.</span><span
+class="calibre11">cookie</span><span class="calibre15">.secure
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">true</span><span class="calibre15"> //
+serving secure cookies</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">   
+application.use(session(session))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The default setting for “</span><span
+class="calibre24">cookie.maxAge</span><span class="calibre11">” is
+“</span><span class="calibre24">null,</span><span class="calibre11">”
+and it will never expire, which means that the cookie will become a
+browser-session cookie. The cookie is only removed once the user has
+closed the browser. The session is also removed. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre31">req.session</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For session data to be stored and accessed,
+you should use the property “req.session,” and the store initializes
+this as a JSON. The session objects will then be left fine. Consider the
+example given below, which shows a view counter which is specific to a
+user:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.use(session({ secret</span><span
+class="calibre11">:</span><span class="calibre15"> ' my secret ',
+cookie</span><span class="calibre11">:</span><span class="calibre15"> {
+maxAge</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">50000</span><span class="calibre15">
+}}))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15">(req, res,
+next) {</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> session
+</span><span class="calibre11">=</span><span class="calibre15">
+req.session</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(session.views) {</span></p>
+<p><span class="calibre15">session.views</span><span
+class="calibre11">++</span></p>
+<p><span class="calibre15">res.setHeader('Content-Type',
+'text/html')</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">write</span><span class="calibre15">('&lt;p&gt;views:
+' </span><span class="calibre11">+</span><span class="calibre15">
+session.views </span><span class="calibre11">+</span><span
+class="calibre15"> '&lt;/p&gt;')</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">write</span><span class="calibre15">('&lt;p&gt;will
+expires in: ' </span><span class="calibre11">+</span><span
+class="calibre15"> (session.</span><span
+class="calibre11">cookie</span><span class="calibre15">.maxAge
+</span><span class="calibre11">/</span><span class="calibre15">
+</span><span class="calibre11">1000</span><span class="calibre15">)
+</span><span class="calibre11">+</span><span class="calibre15">
+'s&lt;/p&gt;')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">res.end()</span></p>
+<p><span class="calibre15">} </span><span
+class="calibre11">else</span><span class="calibre15"> {</span></p>
+<p><span class="calibre15">session.views </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">1</span></p>
+<p><span class="calibre15">res.end(' This is a demo for sessions.
+Refresh the page!')</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h4 class="calibre34"><span
+class="calibre35">Session.regenerate()</span></h4>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This method is invoked when we want to
+generate the session. After this, a new session instance and SID will be
+initialized at the </span><span
+class="calibre24">“req.session.</span><span class="calibre11">” This is
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">req.session.regenerate(</span><span
+class="calibre11">function</span><span class="calibre15">(error)
+{</span></p>
+<p><span class="calibre15">// a new session should be added
+here</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h4 class="calibre34"><span
+class="calibre35">Session.destroy()</span></h4>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">With this, the session is destroyed, and the
+“req.session” removed. It will then be regenerated in the next request.
+This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">req.session.destroy(</span><span
+class="calibre11">function</span><span class="calibre15">(error)
+{</span></p>
+<p><span class="calibre15">// a session cannot be accessed
+here.</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h4 class="calibre34"><span
+class="calibre35">Session.reload()</span></h4>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is used for reloading the session as
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">req.session.</span><span
+class="calibre11">reload</span><span class="calibre15">(</span><span
+class="calibre11">function</span><span class="calibre15">(error)
+{</span></p>
+<p><span class="calibre15">// the session has been updated</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<h4 class="calibre34"><span class="calibre35">Session.save()</span></h4>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is for saving the session as shown
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">req.session.save(</span><span
+class="calibre11">function</span><span class="calibre15">(error)
+{</span></p>
+<p><span class="calibre15">// session has been saved</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, which uses
+the “express-session” so as to store the page views for the
+user:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> purl
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('parseurl')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> session
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-session')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.use(session({</span></p>
+<p><span class="calibre15">secret</span><span
+class="calibre11">:</span><span class="calibre15"> ' my secret
+',</span></p>
+<p><span class="calibre15">resave</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15">,</span></p>
+<p><span class="calibre15">saveUninitialized</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> vws
+</span><span class="calibre11">=</span><span class="calibre15">
+req.session.views</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(</span><span class="calibre11">!</span><span class="calibre15">vws)
+{</span></p>
+<p><span class="calibre15">vws </span><span
+class="calibre11">=</span><span class="calibre15"> req.session.views
+</span><span class="calibre11">=</span><span class="calibre15">
+{}</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">// getting the url pathname</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> pathname
+</span><span class="calibre11">=</span><span class="calibre15">
+purl(req).</span><span class="calibre11">pathname</span></p>
+<p><span class="calibre15">// counting the views</span></p>
+<p><span class="calibre15">vws[pathname] </span><span
+class="calibre11">=</span><span class="calibre15"> (vws[pathname]
+</span><span class="calibre11">||</span><span class="calibre15">
+</span><span class="calibre11">0</span><span class="calibre15">)
+</span><span class="calibre11">+</span><span class="calibre15">
+</span><span class="calibre11">1</span></p>
+<p><span class="calibre15">next()</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.get('/foo', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('you have viewed
+this page ' </span><span class="calibre11">+</span><span
+class="calibre15"> req.session.vws['/test'] </span><span
+class="calibre11">+</span><span class="calibre15"> ' times')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.get('/bar', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('you have viewed
+this page ' </span><span class="calibre11">+</span><span
+class="calibre15"> req.session.vws['/bar'] </span><span
+class="calibre11">+</span><span class="calibre15"> ' times')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how sessions can be used in
+ExpressJS. </span></p>
+<div id="part0000_split_008.html_calibre_pb_21" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_009.html"></span></p>
+<section id="part0000_split_009.html_calibre_pb_24"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_009.html__Toc445557343"
+class="calibre13"><span class="calibre19">Chapter 3-
+serve-index</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is used for serving pages having
+listings of a directory to a particular path. It can be installed by
+executing the command given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install serve-index</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The above command will install the
+“</span><span class="calibre24">serve-index”</span><span
+class="calibre11"> to your computer. To use it in your program, it has
+to be included or called by use of the “</span><span
+class="calibre24">require”</span><span class="calibre11"> method. This
+is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> svIndex
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-index')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The API will then be included in your
+program.</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_009.html__Toc445557344"><span
+class="calibre37">serveIndex(path, options)</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This will return the middleware which serves
+the index of the directory in the “path” you have given. The path here
+is based off of the value for “</span><span
+class="calibre24">req.url.</span><span class="calibre11">” For you to
+change the URL base, make use of the “</span><span
+class="calibre24">app.use.</span><span class="calibre11">”</span></p>
+<p><span class="calibre11">The following properties are accepted by the
+serve index in the options object:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Filter</span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre11">This filter function is applied to files. Its
+default value is “false.” It is called for each of the files, and it
+uses the signature “</span><span class="calibre24">filter(filename,
+index, files, dir).”</span><span class="calibre11"> “Filename” will be
+the file’s name, “</span><span class="calibre24">index”</span><span
+class="calibre11"> will be the array index, and “files” is the array of
+the files, while “</span><span class="calibre24">dir”</span><span
+class="calibre11"> will be the absolute path in which the file is
+located. </span></p>
+<p><span class="calibre11"> </span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre25">Hidden</span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre11">This is used for displaying the hidden files.
+Its default value is “</span><span class="calibre24">false.”</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Icons</span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre11">This is for displaying icons. It default
+value is “</span><span class="calibre24">false.”</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Stylesheet</span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre11">This is an optional path which leads to the
+CSS stylesheet. Its default value is the built-in stylesheet.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Template</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is an optional path which leads to an
+HTML template, and is used for rendering the HTML string. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">View</span></p>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<h5 class="calibre38"><span class="calibre39"> </span></h5>
+<p><span class="calibre11">This is the display mode. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+how all the above can be used:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> fhandler
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('finalhandler')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> http
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('http')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> svIndex
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-index')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> svStatic
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-static')</span></p>
+<p><span class="calibre15">// The Serve directory works to indexe for
+public/ftp folder (having icons)</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> index
+</span><span class="calibre11">=</span><span class="calibre15">
+svIndex('public/ftp', {'icons'</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15">})</span></p>
+<p><span class="calibre15">// Serving up the public/ftp folder
+files</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> serve
+</span><span class="calibre11">=</span><span class="calibre15">
+svStatic('public/ftp')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// Creating a server</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> server
+</span><span class="calibre11">=</span><span class="calibre15">
+http.createServer(</span><span class="calibre11">function</span><span
+class="calibre15"> onRequest(req, res){</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> done
+</span><span class="calibre11">=</span><span class="calibre15">
+fhandler(req, res)</span></p>
+<p><span class="calibre15">serve(req, res, </span><span
+class="calibre11">function</span><span class="calibre15"> onNext(error)
+{</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+</span><span class="calibre11">return</span><span class="calibre15">
+done(error)</span></p>
+<p><span class="calibre15">index(req, res, done)</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">// Listen</span></p>
+<p><span class="calibre15">server.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">)</span></p>
+<p><span class="calibre11">To serve the directory indexes with express,
+do the following:</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express   
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> svIndex
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-index')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// Serving URLs like the /ftp/thing as
+public/ftp/thing</span></p>
+<p><span class="calibre15">application.use('/ftp', svIndex('public/ftp',
+{'icons'</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">true</span><span
+class="calibre15">}))</span></p>
+<p><span class="calibre15">application.listen()</span></p>
+<div id="part0000_split_009.html_calibre_pb_25" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_010.html"></span></p>
+<section id="part0000_split_010.html_calibre_pb_28"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_010.html__Toc445557345"
+class="calibre13"><span class="calibre19">Chapter 4- cookie-
+Sessions</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a module which is used for providing
+guest sessions so that each of the visitors will have a session, whether
+authenticated or not. In case the session is new, the property
+“Set-Cookie” will be produced, regardless of whether you are populating
+the session. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">It can be installed by use of the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install cookie-session</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For the API to be used in the program, we
+have to use the “</span><span class="calibre24">require”</span><span
+class="calibre11"> command as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+cookieSession </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('cookie-session')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The following options are accepted in the
+cookie session in the options object:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Name</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is the name of the cookie which is to be
+set. Its default value is “</span><span
+class="calibre24">session”</span><span class="calibre11">. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Keys</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is the list of the keys to be used for
+signing and verifying the cookie values. Cookies which have been set are
+always signed with the “keys[0].” The rest of the keys will then be
+valid for the purpose of verification, and this will allow for the
+rotation to be done. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Secret</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is a string which will be used as a
+secret key in case the “keys” are not provided. There is also a number
+of cookie options which you need to know how to use.</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">If you need to destroy a particular session,
+do it as follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">req.session </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">null</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the simple view counter example
+given below. Here is the example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+cookieSession </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('cookie-session')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">appliation.set('trust proxy', </span><span
+class="calibre11">1</span><span class="calibre15">) // trusting the
+first proxy</span></p>
+<p><span class="calibre15">application.use(cookieSession({</span></p>
+<p><span class="calibre15">     name</span><span
+class="calibre11">:</span><span class="calibre15"> 'session',</span></p>
+<p><span class="calibre15">     keys</span><span
+class="calibre11">:</span><span class="calibre15"> ['key1',
+'key2']</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre15">     // Updating the views</span></p>
+<p><span class="calibre15">     req.session.views </span><span
+class="calibre11">=</span><span class="calibre15"> (req.session.views
+</span><span class="calibre11">||</span><span class="calibre15">
+</span><span class="calibre11">0</span><span class="calibre15">)
+</span><span class="calibre11">+</span><span class="calibre15">
+</span><span class="calibre11">1</span></p>
+<p><span class="calibre15">     // Writing the response</span></p>
+<p><span class="calibre15">      res.end(req.session.views </span><span
+class="calibre11">+</span><span class="calibre15"> ' views')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">)</span></p>
+<p><span class="calibre11">Consider the next example given
+below:</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+cookieSession </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('cookie-session')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.set('trust proxy', </span><span
+class="calibre11">1</span><span class="calibre15">) // trusting the
+first proxy</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.use(cookieSession({</span></p>
+<p><span class="calibre15">name</span><span
+class="calibre11">:</span><span class="calibre15"> 'session',</span></p>
+<p><span class="calibre15">keys</span><span
+class="calibre11">:</span><span class="calibre15"> ['key1',
+'key2']</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15">// This will allow you to set
+req.session.maxAge for letting certain sessions</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// have a different value other than the
+default one.</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre15">req.sessionOptions.maxAge </span><span
+class="calibre11">=</span><span class="calibre15"> req.session.maxAge
+</span><span class="calibre11">||</span><span class="calibre15">
+req.sessionOptions.maxAge</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">// ... the logic should be added here
+...</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">You have to note that the entire session
+object will be encoded and stored in a cookie. The maximum cookie size
+limit on the different browsers can then be exceeded. If  the session
+object is large enough and it can exceed the limit of the browser when
+it has been encoded, what will happen in most cases is that the browser
+will refuse or avoid storing the cookie. </span></p>
+<div id="part0000_split_010.html_calibre_pb_29" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_011.html"></span></p>
+<section id="part0000_split_011.html_calibre_pb_32"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_011.html__Toc445557346"
+class="calibre13"><span class="calibre19">Chapter 5- Morgan in
+ExpressJS</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is  logger middleware for the HTTP
+request for Node.js. To use the API in your program, you have to use the
+“</span><span class="calibre24">require”</span><span class="calibre11">
+keyword as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The following format is used for creating
+this:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_011.html__Toc445557347"><span
+class="calibre40">morgan(format, options)</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">As shown in the above format, we have two
+parameters or arguments. </span></p>
+<p><span class="calibre11">The following properties are accepted by
+Morgan in the options object:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Immediate</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The log line should be written on request
+rather than on response. This will mean that the requests will always be
+logged even if the server itself crashes, but it will be impossible for
+us to log the data from the response. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Skip</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is a function used for the determination
+of whether or not logging was skipped. The default value for this is
+“</span><span class="calibre24">false,”</span><span class="calibre11">
+Consider the example given below, which shows how the function can be
+called:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">// EXAMPLE: only the log error
+responses</span></p>
+<p><span class="calibre15">morgan('combined', {</span></p>
+<p><span class="calibre15">skip</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res) {
+</span><span class="calibre11">return</span><span class="calibre15">
+res.statusCode </span><span class="calibre11">&lt;</span><span
+class="calibre15"> </span><span class="calibre11">400</span><span
+class="calibre15"> }</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">Stream</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is an output stream which is used for
+writing log lines, and its default value is “</span><span
+class="calibre24">process.stdout.</span><span
+class="calibre11">”</span></p>
+<p><span class="calibre11"> </span></p>
+<p><br />
+<span class="calibre11">Consider the example given below, which shows
+how all the requests can be logged in the Apache combined format to the
+STDOUT. Here is the example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span
+class="calibre15">application.use(morgan('combined'))</span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_011.html__Toc445557348"><span
+class="calibre37">vanilla http server</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">An example which demonstrates how this can be
+done is given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> fhandler
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('finalhandler')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> http
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('http')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre15">// creating the "middleware"</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> logger
+</span><span class="calibre11">=</span><span class="calibre15">
+morgan('combined')</span></p>
+<p><span class="calibre15">http.createServer(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> done
+</span><span class="calibre11">=</span><span class="calibre15">
+finalhandler(req, res)</span></p>
+<p><span class="calibre15">logger(req, res, </span><span
+class="calibre11">function</span><span class="calibre15"> (error)
+{</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+</span><span class="calibre11">return</span><span class="calibre15">
+done(error)</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// responding to the request</span></p>
+<p><span class="calibre15">res.setHeader('content-type',
+'text/plain')</span></p>
+<p><span class="calibre15">res.end('hello, there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre25">Writing Logs to a File</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+how the requests can be logged in Apache combined format to our file
+“</span><span class="calibre24">access.log”</span><span
+class="calibre11">:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> fs
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('fs')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// creating a write stream (in the append
+mode)</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> aLogStream
+</span><span class="calibre11">=</span><span class="calibre15">
+fs.createWriteStream(</span><span
+class="calibre11">__dirname</span><span class="calibre15"> </span><span
+class="calibre11">+</span><span class="calibre15"> '/access.log',
+{flags</span><span class="calibre11">:</span><span class="calibre15">
+'a'})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// setting up the logger</span></p>
+<p><span class="calibre15">application.use(morgan('combined',
+{stream</span><span class="calibre11">:</span><span class="calibre15">
+aLogStream}))</span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<h4 class="calibre34"><span class="calibre41"> </span></h4>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre25">log file rotation</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">In the example given below, the app will log
+all the requests in the Apache combined format to any of the log files
+in our directory “log/” by use of the file-stream-rotator module. The
+example is as follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+FStreamRotator </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('file-stream-rotator')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> fs
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('fs')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> lDirectory
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">__dirname</span><span class="calibre15">
+</span><span class="calibre11">+</span><span class="calibre15">
+'/log'</span></p>
+<p><span class="calibre15">// ensuring the log directory
+exists</span></p>
+<p><span class="calibre15">fs.existsSync(lDirectory) </span><span
+class="calibre11">||</span><span class="calibre15">
+fs.mkdirSync(lDirectory)</span></p>
+<p><span class="calibre15">// creating a rotating write
+stream</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> aLogStream
+</span><span class="calibre11">=</span><span class="calibre15">
+FStreamRotator.getStream({</span></p>
+<p><span class="calibre15">filename</span><span
+class="calibre11">:</span><span class="calibre15"> lDirectory
+</span><span class="calibre11">+</span><span class="calibre15">
+'/access-%DATE%.log',</span></p>
+<p><span class="calibre15">frequency</span><span
+class="calibre11">:</span><span class="calibre15"> 'daily',</span></p>
+<p><span class="calibre15">verbose</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">// setting up the logger</span></p>
+<p><span class="calibre15">application.use(morgan('combined',
+{stream</span><span class="calibre11">:</span><span class="calibre15">
+aLogStream}))</span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre25">Custom token formats</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">In the next app, we will use the custom token
+formats. It works by adding an ID to all of the requests, and will then
+display it by use of the “:id” token. Here is the app:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> morgan
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('morgan')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> id
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('node-uuid')</span></p>
+<p><span class="calibre15">morgan.token('id', </span><span
+class="calibre11">function</span><span class="calibre15"> getId(req)
+{</span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+req.</span><span class="calibre11">id</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.use(assignid)</span></p>
+<p><span class="calibre15">app.use(morgan(':id :method :url
+:response-time'))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">app.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+world!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+assignId(req, res, next) {</span></p>
+<p><span class="calibre15">req.</span><span
+class="calibre11">id</span><span class="calibre15"> </span><span
+class="calibre11">=</span><span class="calibre15"> uuid.v4()</span></p>
+<p><span class="calibre15">next()</span></p>
+<p><span class="calibre15">}</span></p>
+<div id="part0000_split_011.html_calibre_pb_33" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_012.html"></span></p>
+<section id="part0000_split_012.html_calibre_pb_36"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_012.html__Toc445557349"
+class="calibre13"><span class="calibre19">Chapter 6-
+CORS</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a Node.js package which provides an
+ExpressJS/Connect middleware which can be used for enabling of the
+various options for CORS. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To install it via npm command, execute the
+command given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install cors</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This can be used as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre15">application.use(cors());</span></p>
+<p><span class="calibre15">application.get('/products/:id', </span><span
+class="calibre11">function</span><span class="calibre15">(req, res,
+next){</span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has CORS
+enabled for all the origins!'});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">(' web server which
+is CORS enabled listening on port 80');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">To enable CORS for a single route, do it as
+follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre15">application.get('/products/:id', cors(),
+</span><span class="calibre11">function</span><span
+class="calibre15">(req, res, next){</span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has the CORS
+enabled for all the origins!'});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">(' web server which
+is CORS enabled now listening on port 80');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">To configure the CORS, do it as
+follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cOptions
+</span><span class="calibre11">=</span><span class="calibre15">
+{</span></p>
+<p><span class="calibre15">origin</span><span
+class="calibre11">:</span><span class="calibre15">
+'http://sample.com'</span></p>
+<p><span class="calibre15">};</span></p>
+<p><span class="calibre15">application.get('/products/:id',
+cors(cOptions), </span><span class="calibre11">function</span><span
+class="calibre15">(req, res, next){</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has CORS
+enabled only for sample.com.'});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">(' web server which
+is CORS-enabled is now listening on port 80');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_012.html__Toc445557350"><span
+class="calibre43">Configuration of CORS w/ Dynamic Origin can be done as
+follows:</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> whitelist
+</span><span class="calibre11">=</span><span class="calibre15">
+['http://sample1.com', 'http://sample2.com'];</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cOptions
+</span><span class="calibre11">=</span><span class="calibre15">
+{</span></p>
+<p><span class="calibre15">origin</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15">(origin,
+callback){</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+orIsWhitelisted </span><span class="calibre11">=</span><span
+class="calibre15"> whitelist.</span><span
+class="calibre11">indexOf</span><span class="calibre15">(origin)
+</span><span class="calibre11">!==</span><span class="calibre15">
+</span><span class="calibre11">-1</span><span
+class="calibre15">;</span></p>
+<p><span class="calibre15">callback(</span><span
+class="calibre11">null</span><span class="calibre15">,
+orIsWhitelisted);</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">};</span></p>
+<p><span class="calibre15">application.get('/products/:id',
+cors(cOptions), </span><span class="calibre11">function</span><span
+class="calibre15">(req, res, next){</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has CORS
+enabled for the whitelisted domain.'});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">('CORS-enabled web
+server listening on port 80');</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<div id="part0000_split_012.html_calibre_pb_37" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">How to enable CORS Pre-Flight</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">Certain requests for CORS are considered to
+be complex, and these need an initial OPTIONS request. A CORS request
+which uses the HTTP verb is considered to be complex compared to the one
+which uses POST/GET/HEAD or the one using custom headers. For
+pre-fighting to be enabled, a new OPTIONS handler has to be added for
+the route which needs to be supported. This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre15">application.</span><span
+class="calibre11">options</span><span
+class="calibre15">('/products/:id', cors()); // enabling a pre-flight
+request for the DELETE request</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.del('/products/:id', cors(),
+</span><span class="calibre11">function</span><span
+class="calibre15">(req, res, next){</span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has CORS
+enabled for all the origins!'});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">(' The web server
+which is CORS-enabled is listening on port 80');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Pre-flight can also be enabled across the
+board as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.options('*', cors()); //
+including before the other routes</span></p>
+<div id="part0000_split_013.html_calibre_pb_39" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Asynchronous configuration of CORS</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">, cors </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">require</span><span
+class="calibre15">('cors')</span></p>
+<p><span class="calibre15">, application </span><span
+class="calibre11">=</span><span class="calibre15"> express();</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> whitelist
+</span><span class="calibre11">=</span><span class="calibre15">
+['http://sample1.com', 'http://sample2.com'];</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+cOptionsDelegate </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">function</span><span
+class="calibre15">(req, callback){</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+cOptions;</span></p>
+<p><span class="calibre11">if</span><span
+class="calibre15">(whitelist.</span><span
+class="calibre11">indexOf</span><span
+class="calibre15">(req.header('Origin')) </span><span
+class="calibre11">!==</span><span class="calibre15"> </span><span
+class="calibre11">-1</span><span class="calibre15">){</span></p>
+<p><span class="calibre15">cOptions </span><span
+class="calibre11">=</span><span class="calibre15"> { origin</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15"> }; // reflecting
+(enabling) the requested origin in our CORS response</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span><span
+class="calibre11">else</span><span class="calibre15">{</span></p>
+<p><span class="calibre15">cOptions </span><span
+class="calibre11">=</span><span class="calibre15"> { origin</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15"> }; // disabling
+the CORS for our request</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">callback(</span><span
+class="calibre11">null</span><span class="calibre15">, cOptions); //
+callback needs two parameters: error and the options</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">};</span></p>
+<p><span class="calibre15">application.get('/products/:id',
+cors(cOptionsDelegate), </span><span
+class="calibre11">function</span><span class="calibre15">(req, res,
+next){</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">res.json({msg</span><span
+class="calibre11">:</span><span class="calibre15"> 'This has CORS
+enabled for the whitelisted domain.'});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">80</span><span class="calibre15">, </span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">log</span><span class="calibre15">(' web server  with
+CORS enabled is listening on port 80');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be done. </span></p>
+<div id="part0000_split_014.html_calibre_pb_41" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<section id="part0000_split_015.html_calibre_pb_44"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_015.html__Toc445557351"
+class="calibre13"><span class="calibre19">Chapter 7-
+Express-Paginate</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is to be used together with the
+pagination plugins for databases such as the MongoDB. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To install, execute the command given
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">npm install -S express-paginate</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For it to be used in the program, one has to
+use the “</span><span class="calibre24">require”</span><span
+class="calibre11"> keyword so as to include it into the program This is
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> paginate
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-paginate');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">With “</span><span
+class="calibre24">paginate,”</span><span class="calibre11"> a new
+instance of “</span><span
+class="calibre24">express-paginate”</span><span class="calibre11"> will
+be created. Consider the example given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">// # app.js</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> paginate
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-paginate');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express();</span></p>
+<p><span class="calibre15">// keeping this before all the routes that
+will use pagination</span></p>
+<p><span
+class="calibre15">application.use(paginate.middleware(</span><span
+class="calibre11">10</span><span class="calibre15">, </span><span
+class="calibre11">50</span><span class="calibre15">));</span></p>
+<p><span class="calibre15">application.get('/users', </span><span
+class="calibre11">function</span><span class="calibre15">(req, res,
+next) {</span></p>
+<p><span class="calibre15">// we are assuming that `Users`was previously
+defined in our example</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// as `var Users = database.model('Users')`
+for those using `mongoose`</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// and that the Mongoose plugin
+`mongoose-paginate` has been added. </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// to the model for Users via the
+`User.plugin(require('mongoose-paginate'))`</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Users.paginate({}, { page</span><span
+class="calibre11">:</span><span class="calibre15"> req.query.page,
+limit</span><span class="calibre11">:</span><span class="calibre15">
+req.query.limit }, </span><span class="calibre11">function</span><span
+class="calibre15">(error, users, pageCount, itemCount) {</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+</span><span class="calibre11">return</span><span class="calibre15">
+next(error);</span></p>
+<p><span class="calibre15">res.format({</span></p>
+<p><span class="calibre15">html</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15">() {</span></p>
+<p><span class="calibre15">res.render('users', {</span></p>
+<p><span class="calibre15">users</span><span
+class="calibre11">:</span><span class="calibre15"> users,</span></p>
+<p><span class="calibre15">pageCount</span><span
+class="calibre11">:</span><span class="calibre15"> pageCount,</span></p>
+<p><span class="calibre15">itemCount</span><span
+class="calibre11">:</span><span class="calibre15"> itemCount</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">},</span></p>
+<p><span class="calibre15">json</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15">() {</span></p>
+<p><span class="calibre15">// Created by the API response for list
+objects</span></p>
+<p><span class="calibre15">res.json({</span></p>
+<p><span class="calibre15">object</span><span
+class="calibre11">:</span><span class="calibre15"> 'list',</span></p>
+<p><span class="calibre15">has_more</span><span
+class="calibre11">:</span><span class="calibre15">
+paginate.hasNextPages(req)(pageCount),</span></p>
+<p><span class="calibre15">data</span><span
+class="calibre11">:</span><span class="calibre15"> users</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">);</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">The second code for the app should be as
+follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">//- users.jade</span></p>
+<p><span class="calibre15">h1 Users</span></p>
+<p><span class="calibre15">//- a link for sorting by name will be
+created by this</span></p>
+<p><span class="calibre15">//- you must have noticed that we only have
+to pass the querystring param</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">//- which is to be modified here, but not the
+entire querystring</span></p>
+<p><span class="calibre15">a</span><span class="calibre11">(</span><span
+class="calibre15">href=paginate.</span><span
+class="calibre11">href</span><span class="calibre15">({ sort</span><span
+class="calibre11">:</span><span class="calibre15"> 'name' })</span><span
+class="calibre11">)</span><span class="calibre15"> Sorting by
+name</span></p>
+<p><span class="calibre15">//- this will assume that you have `?age=1`
+or `?age=-1` in the querystring</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">//- so the values will be negated by this and
+you will be given</span></p>
+<p><span class="calibre15">//- an opposite sorting order ( that is, desc
+with -1 or asc with 1)</span></p>
+<p><span class="calibre15">a</span><span class="calibre11">(</span><span
+class="calibre15">href=paginate.</span><span
+class="calibre11">href</span><span class="calibre15">({ sort</span><span
+class="calibre11">:</span><span class="calibre15"> req.query.age
+</span><span class="calibre11">===</span><span class="calibre15"> '1'
+</span><span class="calibre11">?</span><span class="calibre15">
+</span><span class="calibre11">-1</span><span class="calibre15">
+</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">1</span><span class="calibre15">
+})</span><span class="calibre11">)</span><span class="calibre15"> Sort
+by age</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">ul</span></p>
+<p><span class="calibre11">each</span><span class="calibre15"> myuser
+</span><span class="calibre11">in</span><span class="calibre15">
+users</span></p>
+<p><span class="calibre15">li</span><span
+class="calibre11">=</span><span class="calibre15">
+myuser.email</span></p>
+<p><span class="calibre11">include</span><span class="calibre15">
+_paginate</span></p>
+<p><span class="calibre11">The third code should be as
+follows:</span></p>
+<p><span class="calibre15">//- _paginate.jade</span></p>
+<p><span class="calibre15">//- In this example, we will make use of the
+Bootstrap 3.x pagination classes</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+paginate.hasPreviousPages </span><span class="calibre11">||</span><span
+class="calibre15"> paginate.hasNextPages(pageCount)</span></p>
+<p><span class="calibre11">.navigation.well-sm#pagination</span></p>
+<p><span class="calibre15">ul</span><span
+class="calibre11">.pager</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+paginate.hasPreviousPages</span></p>
+<p><span class="calibre15">li</span><span
+class="calibre11">.previous</span></p>
+<p><span class="calibre15">a</span><span class="calibre11">(</span><span
+class="calibre15">href=paginate.</span><span
+class="calibre11">href</span><span class="calibre15">(</span><span
+class="calibre11">true</span><span class="calibre15">)</span><span
+class="calibre11">).prev</span></p>
+<p><span class="calibre15">i</span><span
+class="calibre11">.fa.fa-arrow-circle-left</span></p>
+<p><span class="calibre15">|  Previous</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+paginate.hasNextPages(pageCount)</span></p>
+<p><span class="calibre15">li</span><span
+class="calibre11">.next</span></p>
+<p><span class="calibre15">a</span><span class="calibre11">(</span><span
+class="calibre15">href=paginate.</span><span
+class="calibre11">href</span><span class="calibre15">()</span><span
+class="calibre11">).next</span></p>
+<p><span class="calibre15">| Next</span><span
+class="calibre11">&amp;nbsp;</span></p>
+<p><span class="calibre15">i</span><span
+class="calibre11">.fa.fa-arrow-circle-right</span></p>
+<div id="part0000_split_015.html_calibre_pb_45" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_016.html"></span></p>
+<section id="part0000_split_016.html_calibre_pb_48"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_016.html__Toc445557352"
+class="calibre13"><span class="calibre19">Chapter 8-
+Multer</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is  middleware in Node.js which is used
+to handle “</span><span
+class="calibre24">multipart/form-data.</span><span class="calibre11">”
+This is used for the purpose of uploading files to the server. To
+maximize its efficiency, it is built on top of “busboy.”  You have to
+note that any form which is not multipart cannot be handled by Multer.
+</span></p>
+<p><span class="calibre11">The installation of this can be done by
+execution of the following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install --save multer</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">It works by adding a “</span><span
+class="calibre24">body”</span><span class="calibre11"> and a
+“</span><span class="calibre24">file/files”</span><span
+class="calibre11"> object to the “</span><span
+class="calibre24">request”</span><span class="calibre11"> object. In the
+“</span><span class="calibre24">body”</span><span class="calibre11">
+object, the values for the form fields will be stored. The “</span><span
+class="calibre24">file/files”</span><span class="calibre11"> object will
+contain the files which have been uploaded to the server. </span></p>
+<p><span class="calibre11">Consider the example given below which shows
+how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> multer 
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('multer')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> uploadfile
+</span><span class="calibre11">=</span><span class="calibre15"> multer({
+dest</span><span class="calibre11">:</span><span class="calibre15">
+'uploads/' })</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.post('/profile',
+uploadfile.single('avatar'), </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+next) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// req.file is our `avatar` file</span></p>
+<p><span class="calibre15">// req.body is for holding the text fields,
+if any are available</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.post('/photos/upload',
+uploadfile.array('photos', </span><span class="calibre11">12</span><span
+class="calibre15">), </span><span class="calibre11">function</span><span
+class="calibre15"> (req, res, next) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// req.files is an array of `photos` for
+files</span></p>
+<p><span class="calibre15">// req.body will contain the text fields, if
+there were any</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cUpload
+</span><span class="calibre11">=</span><span class="calibre15">
+uploadfile.fields([{ name</span><span class="calibre11">:</span><span
+class="calibre15"> 'avatar', maxCount</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">1</span><span class="calibre15"> }, { name</span><span
+class="calibre11">:</span><span class="calibre15"> 'gallery',
+maxCount</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">8</span><span class="calibre15">
+}])</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.post('/cool-profile', cUpload,
+</span><span class="calibre11">function</span><span class="calibre15">
+(req, res, next) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// req.files is our object (String -&gt;
+Array) where fieldname is our key, and the value is an array of the
+files</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">//</span></p>
+<p><span class="calibre15">// example</span></p>
+<p><span class="calibre15">//  req.files['avatar'][0] -&gt;
+File</span></p>
+<p><span class="calibre15">//  req.files['gallery'] -&gt;
+Array</span></p>
+<p><span class="calibre15">//</span></p>
+<p><span class="calibre15">// req.body which contains the text fields,
+if any were available</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For those who are in need of handling a text
+which is in multipart form, any of the Multer methods can be used. These
+methods include the “</span><span class="calibre24">single(),”
+“.array(),” and “fields().” </span><span class="calibre11">Consider the
+example given below, which shows how the “</span><span
+class="calibre24">.array()”</span><span class="calibre11"> can be
+used:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> multer 
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('multer')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> uploadfile
+</span><span class="calibre11">=</span><span class="calibre15">
+multer()</span></p>
+<p><span class="calibre15">application.post('/profile',
+uploadfile.array(), </span><span class="calibre11">function</span><span
+class="calibre15"> (req, res, next) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// req.body has our text fields</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">With Multer, an options object is accepted,
+in which the most basic one is our “</span><span
+class="calibre24">dest”</span><span class="calibre11"> property, and it
+specifies the destination of our uploaded files. If the options object
+is omitted, the files which you upload will be kept in the memory other
+than in the disk. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To avoid conflicts brought by naming, the
+Multer will rename the files and this is its default setting. The rest
+of the function can be customized according to what you need.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">There exists a variety of options which can
+be passed to the Multer, so make sure that you understand how these can
+be passed. </span></p>
+<p><span class="calibre11">In a normal web application, only the
+“</span><span class="calibre24">dest”</span><span class="calibre11">
+property might be required, and this can be configured as shown
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> uploadfile
+</span><span class="calibre11">=</span><span class="calibre15"> multer({
+dest</span><span class="calibre11">:</span><span class="calibre15">
+'uploads/' })</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For those who are in need of exercising a
+greater control on your uploaded files, just use the “</span><span
+class="calibre24">storage”</span><span class="calibre11"> property other
+than the “</span><span class="calibre24">dest”</span><span
+class="calibre11"> property. “</span><span
+class="calibre24">DiskStorage</span><span class="calibre11">” and
+“</span><span class="calibre24">MemoryStorage</span><span
+class="calibre11">” storage engines are shipped with Multer. You can use
+third parties so as to access more storage engines. </span></p>
+<p><span class="calibre11">If you need to exercise full control of your
+files which are stored on the disk, use the disk storage engine. This is
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> storage
+</span><span class="calibre11">=</span><span class="calibre15">
+multer.diskStorage({</span></p>
+<p><span class="calibre15">destination</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15"> (req, file,
+cb) {</span></p>
+<p><span class="calibre15">cb(</span><span
+class="calibre11">null</span><span class="calibre15">,
+'/tmp/file-uploads')</span></p>
+<p><span class="calibre15">},</span></p>
+<p><span class="calibre15">filename</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15"> (req, file,
+cb) {</span></p>
+<p><span class="calibre15">cb(</span><span
+class="calibre11">null</span><span class="calibre15">, file.fdname
+</span><span class="calibre11">+</span><span class="calibre15"> '-'
+</span><span class="calibre11">+</span><span class="calibre15">
+</span><span class="calibre11">Date</span><span
+class="calibre15">.now())</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> uploadfile
+</span><span class="calibre11">=</span><span class="calibre15"> multer({
+storage</span><span class="calibre11">:</span><span class="calibre15">
+storage })</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The only two options which are available
+include the “</span><span class="calibre24">filename”</span><span
+class="calibre11"> and “</span><span
+class="calibre24">destination.”</span><span class="calibre11"> They are
+the functions which determine how the files are to be stored.
+The”</span><span class="calibre24">destination”</span><span
+class="calibre11"> property will determine the folder in the directory
+in which the uploaded file is to be stored.  This can also be specified
+as a path in the program. If this property is not specified, then the
+default path is used in the operating system. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre25">File Filter</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This property can be used for setting the
+files which are to be uploaded and the ones which are to be skipped.
+This function should be used as shown in the example given
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+fileFilter (req, file, cb) {</span></p>
+<p><span class="calibre15">// The function will call the `cb` with a
+boolean</span></p>
+<p><span class="calibre15">// to indicate that the file should be
+accepted</span></p>
+<p><span class="calibre15">// if the file is to be rejected, pass
+`false`, like so:</span></p>
+<p><span class="calibre15">cb(</span><span
+class="calibre11">null</span><span class="calibre15">, </span><span
+class="calibre11">false</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">// for the file to be accepted, pass `true`,
+like so:</span></p>
+<p><span class="calibre15">cb(</span><span
+class="calibre11">null</span><span class="calibre15">, </span><span
+class="calibre11">true</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">// you can pass an error since something may
+go wrong at some point:</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">cb(</span><span
+class="calibre11">new</span><span class="calibre15"> Error('I have no
+clue!'))</span></p>
+<p><span class="calibre15">}</span></p>
+<div id="part0000_split_016.html_calibre_pb_49" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Error Handling</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">When an error has been encountered, the
+Multer will pass it to Express. The standard Express error way can be
+used for the purpose of displaying an error. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">For you to catch the errors which are
+originating from the Multer, just call the middleware function on your
+own. This is shown in the example given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> uploadfile
+</span><span class="calibre11">=</span><span class="calibre15">
+multer().single('avatar')</span></p>
+<p><span class="calibre15">application.post('/profile', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">uploadfile(req, res, </span><span
+class="calibre11">function</span><span class="calibre15"> (error)
+{</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+{</span></p>
+<p><span class="calibre15">// An error has occurred when
+uploading</span></p>
+<p><span class="calibre11">return</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">// Everything was okay</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11">That is how it can be used. </span></p>
+<div id="part0000_split_017.html_calibre_pb_51" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<section id="part0000_split_018.html_calibre_pb_54"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_018.html__Toc445557353"
+class="calibre13"><span class="calibre19">Chapter 9-
+Compression</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is  middleware available in Node.js. It
+supports the following compression codes:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ul>
+<li><span class="calibre11">deflate</span></li>
+<li><span class="calibre11">gzip</span></li>
+</ul>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To install this middleware in your system,
+execute the following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install compression</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">To include this API in your program, use the
+“</span><span class="calibre24">require”</span><span class="calibre11">
+keyword as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+compression </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('compression')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">There are different options which can be used
+so as to return the compression middleware. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre46">.filter</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">This is the default filter function. It is
+used for construction of a custom filter function which will be an
+extension of our default function. The example given below shows how
+this can be used:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span
+class="calibre15">application.use(compression({filter</span><span
+class="calibre11">:</span><span class="calibre15">
+compress}))</span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+compress(req, res) {</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(req.</span><span class="calibre11">headers</span><span
+class="calibre15">['x-no-compression']) {</span></p>
+<p><span class="calibre15">// responses having this header request
+should not be compressed.</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+</span><span class="calibre11">false</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">// fallback to standard filter
+function</span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+compression.filter(req, res)</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre46">red.flush()</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">With this module, the response which has been
+compressed partially is flushed to the client. Let us give examples of
+these.</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_018.html__Toc445557354"><span
+class="calibre37">express/connect</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This module can be used by use of the
+“</span><span class="calibre24">app.use,”</span><span class="calibre11">
+which is available in either Express and connect. Requests passed
+through the middleware are always compressed. Consider the example given
+below which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+compression </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('compression')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// compressing all of the requests</span></p>
+<p><span class="calibre15">application.use(compression())</span></p>
+<p><span class="calibre15">// adding all the routes</span></p>
+<p><span class="calibre11">That is how it can be done.</span></p>
+<div id="part0000_split_018.html_calibre_pb_55" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Server-Sent Events</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">The working of this module with server-side
+is not done out of the box. For content to be compressed, a window for
+the output has to be buffered up so that we can get a good compression.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To do all this, we have to call the
+“</span><span class="calibre24">red.flush()”</span><span
+class="calibre11"> for those who need the data written so as to make it
+to our client. This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+compression </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('compression')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+express     </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// compressing the responses</span></p>
+<p><span class="calibre15">application.use(compression())</span></p>
+<p><span class="calibre15">// the server-sent event stream</span></p>
+<p><span class="calibre15">application.get('/events', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.setHeader('Content-Type',
+'text/event-stream')</span></p>
+<p><span class="calibre15">res.setHeader('Cache-Control',
+'no-cache')</span></p>
+<p><span class="calibre15">// sending a ping approx after every 2
+seconds</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> timer
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">setInterval</span><span
+class="calibre15">(</span><span class="calibre11">function</span><span
+class="calibre15"> () {</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">write</span><span class="calibre15">('data:
+ping\n\n')</span></p>
+<p><span class="calibre15">// !!! our most important part for the
+program</span></p>
+<p><span class="calibre15">res.flush()</span></p>
+<p><span class="calibre15">}, </span><span
+class="calibre11">2000</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">res.on('close', </span><span
+class="calibre11">function</span><span class="calibre15"> ()
+{</span></p>
+<p><span class="calibre11">clearInterval</span><span
+class="calibre15">(timer)</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">})</span></p>
+<div id="part0000_split_019.html_calibre_pb_57" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<section id="part0000_split_020.html_calibre_pb_60"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_020.html__Toc445557355"
+class="calibre13"><span class="calibre19">Chapter 10-
+csurf</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a token middleware for CSRF. It acts
+as a middleware for protection purposes. For it to be used, one has to
+begin by initializing a cookie-parser or a session middleware. It can be
+installed into one’s computer by executing the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install csurf</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">To use the API in your program, use the
+“</span><span class="calibre24">require”</span><span class="calibre11">
+command as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> csurf
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('csurf')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be included into the
+program. </span></p>
+<p><span class="calibre11">The options for this module take multiple and
+different objects which you can learn how to use. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+a code for the server-side which can be used for generation of the CSRF
+form which can be used for posting back. This is the example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('cookie-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> csrf
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('csurf')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">// setting up the route
+middlewares</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+csrfProtection </span><span class="calibre11">=</span><span
+class="calibre15"> csrf({ cookie</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15"> })</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> pForm
+</span><span class="calibre11">=</span><span class="calibre15">
+bParser.urlencoded({ extended</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15"> })</span></p>
+<p><span class="calibre15">// creating an express app</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// parsing cookies</span></p>
+<p><span class="calibre15">// this is needed because "cookie" is true in
+the csrfProtection</span></p>
+<p><span class="calibre15">application.use(cParser())</span></p>
+<p><span class="calibre15">application.get('/form', csrfProtection,
+</span><span class="calibre11">function</span><span
+class="calibre15">(req, res) {</span></p>
+<p><span class="calibre15">// passing the csrfToken to our
+view</span></p>
+<p><span class="calibre15">res.render('send', { csrfToken</span><span
+class="calibre11">:</span><span class="calibre15"> req.csrfToken()
+})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.post('/process', pForm,
+csrfProtection, </span><span class="calibre11">function</span><span
+class="calibre15">(req, res) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('The data is now
+being processed')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Inside your view, the value for csrfToken
+should be set to the value of a hidden input field “_csrf.” This is
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">&lt;form action="/process"
+method="POST"&gt;</span></p>
+<p><span class="calibre15">&lt;input type="hidden" name="_csrf"
+value="{{csrfToken}}"&gt;</span></p>
+<p><span class="calibre15">Best color: &lt;input type="text"
+name="bestColor"&gt;</span></p>
+<p><span class="calibre15">&lt;button
+type="submit"&gt;Submit&lt;/button&gt;</span></p>
+<p><span class="calibre15">&lt;/form&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">That is how simply it can be done.
+</span></p>
+<div id="part0000_split_020.html_calibre_pb_61" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_021.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Ignoring the Routes</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">In API areas for the websites in which we
+will have our requests fully authenticated, the CSRF should be disabled.
+API routing can be ignored by the use of routers and Express. Consider
+the example given below, which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('cookie-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> csrf
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('csurf')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre15">// setting up the route
+middlewares</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+csrfProtection </span><span class="calibre11">=</span><span
+class="calibre15"> csrf({ cookie</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15"> })</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> pForm
+</span><span class="calibre11">=</span><span class="calibre15">
+bParser.urlencoded({ extended</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15"> })</span></p>
+<p><span class="calibre15">// creating an  express app</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// parsing cookies</span></p>
+<p><span class="calibre15">// this is needed because "cookie" is true in
+the csrfProtection</span></p>
+<p><span class="calibre15">application.use(cParser())</span></p>
+<p><span class="calibre15">// creating an api router</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> api
+</span><span class="calibre11">=</span><span class="calibre15">
+createApiRouter()</span></p>
+<p><span class="calibre15">// mounting the api before the csrf is
+appended to our app stack</span></p>
+<p><span class="calibre15">application.use('/api', api)</span></p>
+<p><span class="calibre15">// adding the csrf, after the "/api" has been
+mounted</span></p>
+<p><span class="calibre15">appliation.use(csrfProtection)</span></p>
+<p><span class="calibre15">application.get('/form', </span><span
+class="calibre11">function</span><span class="calibre15">(req, res)
+{</span></p>
+<p><span class="calibre15">// passing the csrfToken to our
+view</span></p>
+<p><span class="calibre15">res.render('send', { csrfToken</span><span
+class="calibre11">:</span><span class="calibre15"> req.csrfToken()
+})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.post('/process', pForm,
+</span><span class="calibre11">function</span><span
+class="calibre15">(req, res) {</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('csrf was required
+for getting here')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+createApiRouter() {</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> router
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">new</span><span class="calibre15">
+express.Router()</span></p>
+<p><span class="calibre15">router.post('/getProfile', </span><span
+class="calibre11">function</span><span class="calibre15">(req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">(' there is no csrf
+here to get')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+router</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be done.</span></p>
+<div id="part0000_split_021.html_calibre_pb_63" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_022.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Custom error handling</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">When the validation of the CSRF has failed,
+an error with “err.code === 'EBADCSRFTOKEN'” will be thrown. This can
+also be used so as to display error messages. Consider the example given
+below, which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> cParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('cookie-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> csrf
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('csurf')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.use(bParser.urlencoded({
+extended</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">false</span><span class="calibre15">
+}))</span></p>
+<p><span class="calibre15">application.use(cParser())</span></p>
+<p><span class="calibre15">application.use(csrf({ cookie</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15"> }))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// the error handler</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (error, req,
+res, next) {</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(error.</span><span class="calibre11">code</span><span
+class="calibre15"> </span><span class="calibre11">!==</span><span
+class="calibre15"> 'EBADCSRFTOKEN') </span><span
+class="calibre11">return</span><span class="calibre15">
+next(error)</span></p>
+<p><span class="calibre15">// handling the CSRF token errors is done
+here</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">status</span><span class="calibre15">(</span><span
+class="calibre11">403</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">(' The form was
+tampered with')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be done. </span></p>
+<div id="part0000_split_022.html_calibre_pb_65" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_023.html"></span></p>
+<section id="part0000_split_023.html_calibre_pb_68"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_023.html__Toc445557356"
+class="calibre13"><span class="calibre19">Chapter 11-
+body-parser</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is the Node.js middleware for body
+parsing. However, it does not handle multipart bodies because of their
+large and complex nature. When dealing with multipart bodies, you might
+have to deal with the following modules:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ul>
+<li><a href="https://www.npmjs.org/package/multer#readme"><span
+class="calibre11">multer</span></a></li>
+<li><a href="https://www.npmjs.org/package/busboy#readme"><span
+class="calibre11">busboy</span></a><span class="calibre11"> and
+</span><a
+href="https://www.npmjs.org/package/connect-busboy#readme"><span
+class="calibre11">connect-busboy</span></a></li>
+<li><a href="https://www.npmjs.org/package/formidable#readme"><span
+class="calibre11">formidable</span></a></li>
+<li><a href="https://www.npmjs.org/package/multiparty#readme"><span
+class="calibre11">multiparty</span></a><span class="calibre11"> and
+</span><a
+href="https://www.npmjs.org/package/connect-multiparty#readme"><span
+class="calibre11">connect-multiparty</span></a></li>
+</ul>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">The module provides the user with the
+following parsers:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<ul>
+<li><a
+href="https://github.com/expressjs/body-parser#bodyparserurlencodedoptions"><span
+class="calibre11">URL-encoded form body parser</span></a></li>
+<li><a
+href="https://github.com/expressjs/body-parser#bodyparserrawoptions"><span
+class="calibre11">Raw body parser</span></a></li>
+<li><a
+href="https://github.com/expressjs/body-parser#bodyparserjsonoptions"><span
+class="calibre11">JSON body parser</span></a></li>
+<li><a
+href="https://github.com/expressjs/body-parser#bodyparsertextoptions"><span
+class="calibre11">Text body parser</span></a></li>
+</ul>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To install it, just execute the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install body-parser</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">To use the API, include it in your program by
+use of the “require” command. This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">With the object “</span><span
+class="calibre24">bParser,”</span><span class="calibre11"> various
+factories are exposed for the purpose of creation of middlewares. The
+property “req.body” will be populated by all middlewares by use of the
+parsed body or an error will be parsed to the callback. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">In Express, a generic JSON and URL-encoded
+parser can be added as a top-level middleware. With this, the bodies of
+all the incoming requests will be parsed. Consider the simple example
+given below, which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// parsing the
+application/x-www-form-urlencoded</span></p>
+<p><span class="calibre15">application.use(bParser.urlencoded({
+extended</span><span class="calibre11">:</span><span class="calibre15">
+</span><span class="calibre11">false</span><span class="calibre15">
+}))</span></p>
+<p><span class="calibre15">// parsing the application/json</span></p>
+<p><span class="calibre15">application.use(bParser.json())</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.setHeader('Content-Type',
+'text/plain')</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">write</span><span class="calibre15">('you
+posted:\n')</span></p>
+<p><span class="calibre15">res.end(</span><span
+class="calibre11">JSON</span><span
+class="calibre15">.stringify(req.</span><span
+class="calibre11">body</span><span class="calibre15">, </span><span
+class="calibre11">null</span><span class="calibre15">, </span><span
+class="calibre11">2</span><span class="calibre15">))</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_023.html__Toc445557357"><span
+class="calibre37">express route-specific</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">Body parsers can be added to the routes which
+need them. This is possible in Express and it can easily be done. This
+is the most easy and recommended way that  the body-parser can be used
+in Express. Consider the example given below, which shows how this can
+be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> bParser
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('body-parser')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">// creating an application/json
+parser</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> jParser
+</span><span class="calibre11">=</span><span class="calibre15">
+bodyParser.json()</span></p>
+<p><span class="calibre15">// creating an
+application/x-www-form-urlencoded parser</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+urlenParser </span><span class="calibre11">=</span><span
+class="calibre15"> bParser.urlencoded({ extended</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15"> })</span></p>
+<p><span class="calibre15">// POST /login which will get the urlencoded
+bodies</span></p>
+<p><span class="calibre15">application.post('/login', urlenParser,
+</span><span class="calibre11">function</span><span class="calibre15">
+(req, res) {</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(</span><span class="calibre11">!</span><span
+class="calibre15">req.</span><span class="calibre11">body</span><span
+class="calibre15">) </span><span class="calibre11">return</span><span
+class="calibre15"> res.sendStatus(</span><span
+class="calibre11">400</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('welcome, '
+</span><span class="calibre11">+</span><span class="calibre15">
+req.</span><span class="calibre11">body</span><span
+class="calibre15">.username)</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">// POST /api/users will get the JSON
+bodies</span></p>
+<p><span class="calibre15">application.post('/api/users', jParser,
+</span><span class="calibre11">function</span><span class="calibre15">
+(req, res) {</span></p>
+<p><span class="calibre11">if</span><span class="calibre15">
+(</span><span class="calibre11">!</span><span
+class="calibre15">req.</span><span class="calibre11">body</span><span
+class="calibre15">) </span><span class="calibre11">return</span><span
+class="calibre15"> res.sendStatus(</span><span
+class="calibre11">400</span><span class="calibre15">)</span></p>
+<p><span class="calibre15">// create a user in the req.body</span></p>
+<p><span class="calibre15">})</span></p>
+<div id="part0000_split_023.html_calibre_pb_69" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_024.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Changing the content type for
+parsers</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">With all parsers, a type option is accepted
+and with this, the content-type will be changeable and this should be
+the one to be parsed by the middleware. Consider the example given
+below, which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">// parsing the various and different custom
+JSON types as a JSON</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">application.use(bodyParser.json({
+type</span><span class="calibre11">:</span><span class="calibre15">
+'application/*+json' }))</span></p>
+<p><span class="calibre15">// parsing a custom thing into the
+Buffer</span></p>
+<p><span class="calibre15">application.use(bParser.raw({
+type</span><span class="calibre11">:</span><span class="calibre15">
+'application/vnd.custom-type' }))</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// parsing the HTML body into the
+string</span></p>
+<p><span class="calibre15">application.use(bParser.</span><span
+class="calibre11">text</span><span class="calibre15">({ type</span><span
+class="calibre11">:</span><span class="calibre15"> 'text/html'
+}))</span></p>
+<div id="part0000_split_024.html_calibre_pb_71" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_025.html"></span></p>
+<section id="part0000_split_025.html_calibre_pb_74"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_025.html__Toc445557358"
+class="calibre13"><span class="calibre19">Chapter 12-
+Flash</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is the simplest manner in which Express
+can be implemented. To install it, execute the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">npm i flash</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.use(session()); // the session
+middleware</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">require</span><span
+class="calibre15">('flash')());</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">// flashing a message</span></p>
+<p><span class="calibre15">req.flash('info', 'hello there!');</span></p>
+<p><span class="calibre15">next();</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the second example given
+below:</span></p>
+<p><span class="calibre11">for</span><span class="calibre15"> msge
+</span><span class="calibre11">in</span><span class="calibre15">
+flash</span></p>
+<p><span class="calibre15">a</span><span
+class="calibre11">.alert(</span><span class="calibre15">class='alert-'
+</span><span class="calibre11">+</span><span class="calibre15">
+msge.</span><span class="calibre11">type)</span></p>
+<p><span class="calibre15">p</span><span class="calibre11">=</span><span
+class="calibre15"> message.msge</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Here is the final example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">while</span><span class="calibre15"> msge
+</span><span class="calibre11">=</span><span class="calibre15">
+flash.</span><span class="calibre11">shift</span><span
+class="calibre15">() // consuming the messages as jade has read
+them</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">a</span><span
+class="calibre11">.alert(</span><span class="calibre15">class='alert-'
+</span><span class="calibre11">+</span><span class="calibre15">
+msge.</span><span class="calibre11">type)</span></p>
+<p><span class="calibre15">p</span><span class="calibre11">=</span><span
+class="calibre15"> message.msge</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">An array of f</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Lash messages can be as shown
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">{</span></p>
+<p><span class="calibre15">"type": "info",</span></p>
+<p><span class="calibre15">"message": "message"</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+</section>
+<p><span id="part0000_split_026.html"></span></p>
+<section id="part0000_split_026.html_calibre_pb_75"
+class="calibre47 calibre1">
+<h1 class="calibre47"><a
+href="https://github.com/expressjs/method-override"><span
+class="calibre48">method-override</span></a><span
+id="part0000_split_026.html__Toc445557359"></span><span
+class="calibre49"> </span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is used for overriding HTTP verbs. With
+it, one can use HTTP verbs such as “DELETE” and “PUT” in places where
+they are not supported by the client. To install it in your system,
+execute the following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install method-override</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For this module to be used, you have to know
+that a bit has to be used before any of the modules which are in need of
+the request methods. </span></p>
+<div id="part0000_split_026.html_calibre_pb_76" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_027.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre25">Using the header to override</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">For the header to be used for overriding, the
+header name has to be specified as a string argument to the function
+“</span><span class="calibre24">methodOverride,</span><span
+class="calibre11">” For the call to be made, the POST request has to be
+sent to the URL having the header as the overridden method. Consider the
+example given below showing, how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+connect        </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('connect')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+mthdOverride </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('method-override')</span></p>
+<p><span class="calibre15">// overriding with the X-HTTP-Method-Override
+header in our request</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span
+class="calibre15">application.use(mthdOverride('X-HTTP-Method-Override'))</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+how this can be used with “</span><span
+class="calibre24">XMLHttpRequest</span><span
+class="calibre11">”:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> c
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">new</span><span class="calibre15">
+XMLHttpRequest()</span></p>
+<p><span class="calibre15">c.onload </span><span
+class="calibre11">=</span><span class="calibre15"> onload</span></p>
+<p><span class="calibre15">c.</span><span
+class="calibre11">open</span><span class="calibre15">('post',
+'/resource', </span><span class="calibre11">true</span><span
+class="calibre15">)</span></p>
+<p><span class="calibre15">c.</span><span
+class="calibre11">setRequestHeader</span><span
+class="calibre15">('X-HTTP-Method-Override', 'DELETE')</span></p>
+<p><span class="calibre15">c.</span><span
+class="calibre11">send</span><span class="calibre15">()</span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+onload() {</span></p>
+<p><span class="calibre11">alert</span><span class="calibre15">('The
+response was obtained: ' </span><span class="calibre11">+</span><span
+class="calibre15"> this.responseText)</span></p>
+<p><span class="calibre15">}</span></p>
+<div id="part0000_split_027.html_calibre_pb_78" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_028.html"></span></p>
+<section id="part0000_split_028.html_calibre_pb_81"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_028.html__Toc445557360"
+class="calibre13"><span class="calibre19">Chapter 13-
+serve-favicon</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a Node.js middleware which is used
+for the purpose of serving favicons. A favicon is just a visual cue
+which browsers and other client software use for the purpose of
+identifying a site. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">The module can be installed into the system
+by executing the following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">npm install serve-favicon</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, showing how
+this can be used in express:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> favicon
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-favicon');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express();</span></p>
+<p><span class="calibre15">application.use(favicon(</span><span
+class="calibre11">__dirname</span><span class="calibre15"> </span><span
+class="calibre11">+</span><span class="calibre15">
+'/public/favicon.ico'));</span></p>
+<p><span class="calibre15">// Addition of your routes should be done
+here.</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">);</span></p>
+<p><span class="calibre11">In connect, this can be done as
+follows:</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> connect
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('connect');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> favicon
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-favicon');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> connect();</span></p>
+<p><span class="calibre15">application.use(favicon(</span><span
+class="calibre11">__dirname</span><span class="calibre15"> </span><span
+class="calibre11">+</span><span class="calibre15">
+'/public/favicon.ico'));</span></p>
+<p><span class="calibre15">// Addition of your middleware should be done
+here, etc.</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">);</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_028.html__Toc445557361"><span
+class="calibre37">vanilla http server</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a type of middleware which can be
+used everywhere, including outside Express and connect. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">The example given below shows how this can be
+done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> http
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('http');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> favicon
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('serve-favicon');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> fnhandler
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('finalhandler');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> _favicon
+</span><span class="calibre11">=</span><span class="calibre15">
+favicon(</span><span class="calibre11">__dirname</span><span
+class="calibre15"> </span><span class="calibre11">+</span><span
+class="calibre15"> '/public/favicon.ico');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> server
+</span><span class="calibre11">=</span><span class="calibre15">
+http.createServer(</span><span class="calibre11">function</span><span
+class="calibre15"> onRequest(req, res) {</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> done
+</span><span class="calibre11">=</span><span class="calibre15">
+fnhandler(req, res);</span></p>
+<p><span class="calibre15">_favicon(req, res, </span><span
+class="calibre11">function</span><span class="calibre15"> onNext(error)
+{</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+</span><span class="calibre11">return</span><span class="calibre15">
+done(error);</span></p>
+<p><span class="calibre15">// just continue with processing of the
+request here, etc.</span></p>
+<p><span class="calibre15">res.statusCode </span><span
+class="calibre11">=</span><span class="calibre15"> </span><span
+class="calibre11">404</span><span class="calibre15">;</span></p>
+<p><span class="calibre15">res.end('hello');</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">server.listen(</span><span
+class="calibre11">3000</span><span class="calibre15">);</span></p>
+<div id="part0000_split_028.html_calibre_pb_82" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_029.html"></span></p>
+<section id="part0000_split_029.html_calibre_pb_85"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_029.html__Toc445557362"
+class="calibre13"><span class="calibre19">Chapter 14-
+response-time</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is the node.js response time header. It
+works by creating a middleware for recording the response time of its
+requests in the HTTP servers. The response time in this case will be the
+time when the request has entered the middleware to the time when the
+headers have been written to the client. </span></p>
+<p><span class="calibre11">This module can be installed by executing the
+following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install response-</span><span
+class="calibre11">time</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The module can be included into the program
+by use of the “</span><span class="calibre24">require” </span><span
+class="calibre11">keyword as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> respTime
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('response-time')</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, which shows
+how this can be used in both the Express and the connect:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> respTime
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('response-time')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre15">application.use(respTime())</span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_029.html__Toc445557363"><span class="calibre43">That
+is how it can be used.</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<h3 class="calibre36"><span
+id="part0000_split_029.html__Toc445557364"><span
+class="calibre37">vanilla http server</span></span></h3>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This can be used as follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+finalhandler </span><span class="calibre11">=</span><span
+class="calibre15"> </span><span class="calibre11">require</span><span
+class="calibre15">('finalhandler')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> http
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('http')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> respTime
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('response-time')</span></p>
+<p><span class="calibre15">// creating the "middleware"</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+_responseTime </span><span class="calibre11">=</span><span
+class="calibre15"> respTime()</span></p>
+<p><span class="calibre15">http.createServer(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> done
+</span><span class="calibre11">=</span><span class="calibre15">
+fnhandler(req, res)</span></p>
+<p><span class="calibre15">_responseTime(req, res, </span><span
+class="calibre11">function</span><span class="calibre15"> (err)
+{</span></p>
+<p><span class="calibre11">if</span><span class="calibre15"> (error)
+</span><span class="calibre11">return</span><span class="calibre15">
+done(error)</span></p>
+<p><span class="calibre15">// responding to the request</span></p>
+<p><span class="calibre15">res.setHeader('content-type',
+'text/plain')</span></p>
+<p><span class="calibre15">res.end('hello, there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how the module can be
+used.</span></p>
+<div id="part0000_split_029.html_calibre_pb_86" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_030.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Response time metris</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> respTime
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('response-time')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> StatsD
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('node-statsd')</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> express()</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> statistics
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">new</span><span class="calibre15">
+StatsD()</span></p>
+<p><span class="calibre15">statistics.socket.on('error', </span><span
+class="calibre11">function</span><span class="calibre15"> (err)
+{</span></p>
+<p><span class="calibre15">console.</span><span
+class="calibre11">error</span><span
+class="calibre15">(err.stack)</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">application.use(respTime(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res,
+time) {</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> stat
+</span><span class="calibre11">=</span><span class="calibre15">
+(req.</span><span class="calibre11">method</span><span
+class="calibre15"> </span><span class="calibre11">+</span><span
+class="calibre15"> req.url).</span><span
+class="calibre11">toLowerCase</span><span
+class="calibre15">()</span></p>
+<p><span class="calibre15">.</span><span
+class="calibre11">replace</span><span class="calibre15">(/</span><span
+class="calibre11">[:</span><span class="calibre15">\.</span><span
+class="calibre11">]</span><span class="calibre15">/g, '')</span></p>
+<p><span class="calibre15">.</span><span
+class="calibre11">replace</span><span class="calibre15">(/\//g,
+'_')</span></p>
+<p><span class="calibre15">statistics.timing(stat, time)</span></p>
+<p><span class="calibre15">}))</span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.</span><span
+class="calibre11">send</span><span class="calibre15">('hello,
+there!')</span></p>
+<p><span class="calibre15">})</span></p>
+<div id="part0000_split_030.html_calibre_pb_88" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_031.html"></span></p>
+<section id="part0000_split_031.html_calibre_pb_91"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_031.html__Toc445557365"
+class="calibre13"><span class="calibre19">Chapter 15- </span></span><a
+href="https://github.com/expressjs/express-namespace"
+class="calibre13"><span
+class="calibre50">express-namespace</span></a><span class="calibre19">
+</span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">With this, namespaced routing capabilities
+are added to Express. To install it into the system, one can execute the
+following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install express-namespace</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Consider the example given below, which can
+be used for responding to any of the requests. Here is the
+example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">GET /forum/12</span></p>
+<p><span class="calibre15">GET /forum/12/view</span></p>
+<p><span class="calibre15">GET /forum/12/edit</span></p>
+<p><span class="calibre15">GET /forum/12/thread/5</span></p>
+<p><span class="calibre15">DELETE /forum/12</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For the module to be used, one must use the
+“</span><span class="calibre24">app.namespace()”</span><span
+class="calibre11"> and “</span><span
+class="calibre24">require('express-namespace').” </span><span
+class="calibre11"> The module will then be made available to you.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To use it, we have to pass a callback
+function, and then perform a routing to the method. After each of the
+callbacks, the invocation will be completed, and the namespace will be
+stored together with its state. This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.namespace('/forum/:id',
+function(){</span></p>
+<p><span class="calibre15">application.get('/(view)?', function(req,
+res){</span></p>
+<p><span class="calibre15">res.send('GET forum ' +
+req.params.id);</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.get('/edit', function(req,
+res){</span></p>
+<p><span class="calibre15">res.send('GET forum ' + req.params.id + '
+edit the page');</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.namespace('/thread',
+function(){</span></p>
+<p><span class="calibre15">application.get('/:tid', function(req,
+res){</span></p>
+<p><span class="calibre15">res.send('GET forum ' + req.params.id + '
+thread ' + req.params.tid);</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.del('/', function(req,
+res){</span></p>
+<p><span class="calibre15">res.send('DELETE the forum ' +
+req.params.id);</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The current namespace can also be accessed
+via the “</span><span
+class="calibre24">app.currentNamespace.</span><span class="calibre11">”
+You should also know how to run the tests. However, before doing this,
+make sure that you have all of the sub-modules installed into the
+system. These can be installed by executing the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ git submodule update –init</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11"> The tests can be run by executing the
+following command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ make test</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how the module can be
+used.</span></p>
+<div id="part0000_split_031.html_calibre_pb_92" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_032.html"></span></p>
+<section id="part0000_split_032.html_calibre_pb_95"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_032.html__Toc445557366"
+class="calibre13"><span class="calibre19">Chapter 16- </span></span><a
+href="https://github.com/expressjs/express-expose"
+class="calibre13"><span class="calibre50">express-expose</span></a><span
+class="calibre19"> </span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is used for exposing the objects,
+functions, and raw js to the client side. This feature is good for
+sharing of settings, utils, and the current data for the user. The
+helpers and the local variables are also exposed to the client side.
+</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">To install this module, execute the command
+given below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">npm install -S express-expose</span></p>
+<p><span class="calibre11">It can be used as shown below:</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> expose
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-expose');</span></p>
+<p><span class="calibre15">application </span><span
+class="calibre11">=</span><span class="calibre15">
+expose(application);</span></p>
+<p><span class="calibre15">application.expose(...);</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The above is how the module can be used in
+express 4.x. In express 2.x and 3.x, it can be done as
+follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> express
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> expose
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('express-expose');</span></p>
+<p><span class="calibre15">application.expose(...);</span></p>
+<div id="part0000_split_032.html_calibre_pb_96" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_033.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">How to express the objects</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">One way that objects can be exposed to the
+client side is by exposing the properties, and most probably the Express
+configuration. When the “</span><span
+class="calibre24">app.expose(object)”</span><span class="calibre11"> is
+exposed, the properties will be exposed to the “</span><span
+class="calibre24">application.*”</span><span class="calibre11"> The
+example given below shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.set('views', </span><span
+class="calibre11">__dirname</span><span class="calibre15"> </span><span
+class="calibre11">+</span><span class="calibre15"> '/views');</span></p>
+<p><span class="calibre15">application.set(' the view engine ',
+'jade');</span></p>
+<p><span class="calibre15">application.set('title', ' Sample
+');</span></p>
+<p><span class="calibre15">application.set('default language',
+'en');</span></p>
+<p><span
+class="calibre15">application.expose(application.settings);</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Helper methods can also be exposed by another
+use case. This can be in the same way that you are currently exposing.
+This is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.expose({ en</span><span
+class="calibre11">:</span><span class="calibre15"> 'English',
+fr</span><span class="calibre11">:</span><span class="calibre15">
+'French' }, 'application', 'languages');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">You then need to output your default buffer
+to your template. For jade users, it can be done as follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">script</span><span
+class="calibre11">!=</span><span class="calibre15">
+javascript</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">For EJS users, this can be done as
+follows:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">&lt;script&gt;</span><span
+class="calibre11">&lt;%-</span><span class="calibre15"> javascript
+</span><span class="calibre11">%&gt;</span><span
+class="calibre15">&lt;/script&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">Raw JavaScript strings can also be exposed as
+shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.expose('var some =
+"variable";');</span></p>
+<div id="part0000_split_033.html_calibre_pb_98" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_034.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Exposing Functions</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">A named function can easily be exposed. You
+only have to pass it with a default name for the buffer to replace it
+with a template name. An example of this is shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.expose(</span><span
+class="calibre11">function</span><span class="calibre15">
+someFunction(){</span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+'yes';</span></p>
+<p><span class="calibre15">}, 'foot');</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be done.</span></p>
+<div id="part0000_split_034.html_calibre_pb_100" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_035.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Self-Calling Functions</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">An anonymous function can also be passed, and
+this will execute itself so as to create a wrapper function. Consider
+the example given below, which shows how this can be done:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.expose(</span><span
+class="calibre11">function</span><span class="calibre15">(){</span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+notify() {</span></p>
+<p><span class="calibre11">alert</span><span class="calibre15">('this
+will be executed finely:D');</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">notify();</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">That is how it can be done.</span></p>
+<div id="part0000_split_035.html_calibre_pb_102" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_036.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Request-Level Exposure</span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">All the above which has been discussed can be
+applied to the request-level. Consider the example given below showing
+how to do this. Here is the example:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">application.get('/', </span><span
+class="calibre11">function</span><span class="calibre15">(req,
+res){</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> user
+</span><span class="calibre11">=</span><span class="calibre15"> {
+name</span><span class="calibre11">:</span><span class="calibre15">
+'john' };</span></p>
+<p><span class="calibre15">res.expose(user,
+'application.current.user');</span></p>
+<p><span class="calibre15">res.render('index', { layout</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">false</span><span class="calibre15"> });</span></p>
+<p><span class="calibre15">});</span></p>
+<div id="part0000_split_036.html_calibre_pb_104" class="calibre8">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_037.html"></span></p>
+<section id="part0000_split_037.html_calibre_pb_107"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_037.html__Toc445557367"
+class="calibre13"><span class="calibre19">Chapter 17-
+connect-render</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">This is a helper for the template render in
+connect. It can be installed by executing the following
+command:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">$ npm install connect-render</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">It can be used as shown below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> connect
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('connect');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15"> render
+</span><span class="calibre11">=</span><span class="calibre15">
+</span><span class="calibre11">require</span><span
+class="calibre15">('connect-render');</span></p>
+<p><span class="calibre11">var</span><span class="calibre15">
+application </span><span class="calibre11">=</span><span
+class="calibre15"> connect(</span></p>
+<p><span class="calibre15">render({</span></p>
+<p><span class="calibre15">root</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">__dirname</span><span class="calibre15"> </span><span
+class="calibre11">+</span><span class="calibre15"> '/views',</span></p>
+<p><span class="calibre15">layout</span><span
+class="calibre11">:</span><span class="calibre15">
+'layout.html',</span></p>
+<p><span class="calibre15">cache</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">true</span><span class="calibre15">, // `false` for
+the debug</span></p>
+<p><span class="calibre15">helpers</span><span
+class="calibre11">:</span><span class="calibre15"> {</span></p>
+<p><span class="calibre15">sitename</span><span
+class="calibre11">:</span><span class="calibre15"> 'connect-render
+sample site',</span></p>
+<p><span class="calibre15">starttime</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">new</span><span class="calibre15"> Date().</span><span
+class="calibre11">getTime</span><span class="calibre15">(),</span></p>
+<p><span class="calibre15">now</span><span
+class="calibre11">:</span><span class="calibre15"> </span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre11">return</span><span class="calibre15">
+</span><span class="calibre11">new</span><span class="calibre15">
+Date();</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">})</span></p>
+<p><span class="calibre15">);</span></p>
+<p><span class="calibre15">application.use(</span><span
+class="calibre11">function</span><span class="calibre15"> (req, res)
+{</span></p>
+<p><span class="calibre15">res.render('index.html', { url</span><span
+class="calibre11">:</span><span class="calibre15"> req.url
+});</span></p>
+<p><span class="calibre15">});</span></p>
+<p><span class="calibre15">application.listen(</span><span
+class="calibre11">8080</span><span class="calibre15">);</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre11">The API can be used as shown
+below:</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre15">/**</span></p>
+<p><span class="calibre15">* connect-render: A Template Render helper
+for the connect</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* Use case:</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* var render =
+require('connect-render');</span></p>
+<p><span class="calibre15">* var connect =
+require('connect');</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* connect(</span></p>
+<p><span class="calibre15">*   render({</span></p>
+<p><span class="calibre15">*     root: __dirname + '/views',</span></p>
+<p><span class="calibre15">*     cache: true, // must be set to `true`
+in the production env</span></p>
+<p><span class="calibre15">*     layout: 'layout.html', // or false if
+there is no layout</span></p>
+<p><span class="calibre15">*     open: "&lt;%", </span></p>
+<p><span class="calibre15">*     close: "%&gt;", // the default ejs
+close tag is '%&gt;'</span></p>
+<p><span class="calibre15">*     helpers: {</span></p>
+<p><span class="calibre15">*       config: config,</span></p>
+<p><span class="calibre15">*       sitename: 'NodeBlog
+Engine',</span></p>
+<p><span class="calibre15">*       _csrf: function (req, res)
+{</span></p>
+<p><span class="calibre15">*         return req.session ?
+req.session._csrf : "";</span></p>
+<p><span class="calibre15">*       },</span></p>
+<p><span class="calibre15">*     }</span></p>
+<p><span class="calibre15">*   });</span></p>
+<p><span class="calibre15">* );</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* res.render('index.html', { title: 'Index
+Page', items: items });</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* // no layout</span></p>
+<p><span class="calibre15">* res.render('blue.html', { items: items,
+layout: false });</span></p>
+<p><span class="calibre15">*</span></p>
+<p><span class="calibre15">* </span><span
+class="calibre11">@param</span><span class="calibre15"> {Object}
+[options={}] for the render options.</span></p>
+<p><span class="calibre15">*  - {String} layout, layout name, the
+default one is `'layout.html'`.</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">*    Set `layout=''` or `layout=false`
+meaning that no layout.</span></p>
+<p><span class="calibre15">*  - {String} root, the root dir for view
+files.</span></p>
+<p><span class="calibre15">*  - {Boolean} cache, the cache view content,
+the default is `true`.</span></p>
+<p><span class="calibre15">*    Must be set `cache = true` on
+production.</span></p>
+<p><span class="calibre15">*  - {String} viewExt, the view file extname,
+the default is `''`.</span></p>
+<p><span class="calibre15">* </span><span
+class="calibre11">@return</span><span class="calibre15"> {Function}
+rendering middleware for the `connect`</span></p>
+<p><span class="calibre15">*/</span></p>
+<p><span class="calibre11">function</span><span class="calibre15">
+middleware(options) {}</span></p>
+<div id="part0000_split_037.html_calibre_pb_108" class="calibre8">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_038.html"></span></p>
+<section id="part0000_split_038.html_calibre_pb_110"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_038.html__Toc445557368"
+class="calibre13"><span class="calibre19">Conclusion</span></span></h1>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre11">It can be said that ExpressJS is a Node
+framework. It provides developers with a framework which they can use to
+create web and mobile applications. It has numerous features which
+developers can take advantage of so as to create their applications. It
+works by use of its middleware. The framework also provides developers
+with numerous modules which they can use for the development of their
+applications. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">Each of these modules has its own command
+which can be used for its installation. To use of any of its modules,
+you have to begin by installing it. It supports the use of sessions
+which are very useful in the creation of web applications. It has a
+variety of options which you can use for the purpose of development. You
+should learn how to use the different options which are available for
+each ExpressJS module.  The serve-index module is used for serving pages
+having listings of a directory to a particular path. </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre11">This is very interesting in development. With
+the “cookie-sessions” module, one can provide guest sessions so that
+each of the visitors will have a session, whether authenticated or not.
+This is also one of the best and interesting features in Express. This
+Node framework is very easy to learn even for beginners. This book helps
+you in learning how to use it. </span></p>
+</section>

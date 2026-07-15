@@ -1,0 +1,1673 @@
+- "# 使用JavaScript框架和NoSQL的Web应用实用指南：程序员到程序员的集体智慧\n\n## 前言\n\n### 为什么写这本书？\n\n在过去的几年里，我们接触了不同的客户端项目，这些项目传统上基于\
+  \ J2ee 或其他开源技术（如 PHP、Ruby 等）构建。另一方面，2013 年见证了 Angular.js、Backbone.js 等 JavaScript\
+  \ 框架的日益流行，这些框架在客户端开发中获得了动力。这些强烈的变革之风带来了结构化的框架、编码以及开发与生产环境中的性能提升，变得绝对必要。此外，新兴的小型项目和初创公司对采用这些新技术表现出越来越大的兴趣。2013\
+  \ 年，存储非结构化数据的新兴趋势被统称为 NoSQL。很明显，这些新趋势伴随着围绕 JavaScript 和 NoSQL 相关存储库的新软件工具集而来。如今，JavaScript\
+  \ 不仅用于客户端验证。它还通过 Node.js 平台为 Web 应用提供服务器端开发。在本书中，我们尝试展示使用其中一些工具进行初创实验的实践。\n\n###\
+  \ 目标是什么？\n\n\n\n\n本书旨在展示上述部分工具在实际应用中的使用方法，以及如何利用这些工具开始开发应用程序。书中借助这些工具介绍了一些概念验证应用。此外，还简要描述了这些工具的一些重要方面。作为一名从职业生涯初期就开始从事开发的程序员，我一直试图寻找可以组合起来在工作中产生新概念的代码。本书正是我基于这种敏锐洞察力所付出的努力和实验性观点的集体成果。因此，新鲜知识将不断更新。我个人认为，使用像\
+  \ Javascript 和 NoSql 相关产品这样的新技术很有趣，并且我完全享受这个阶段。另外，需要说明的是，我并非作者，而是一名职业程序员；所以我的本意并非用理论和解释来写作，而是更倾向于包含实际的工作示例。\n\
+  \n### 本书适合谁？\n\n具有 Web 编程背景并了解 Javascript 的人会发现本书很有用，因为本书汇集了基于 Javascript 的工具及其不同应用领域的使用知识。本书各章节通过工具的重要方面进行讲解，并涵盖了各种代码解释，而不仅仅是原始理论。值得一提的是，我尽量在需要时融入概念的解释。本书不适合初级程序员，而是适合具有中级知识的程序员，以及已经掌握了传统的\
+  \ J2ee、PHP、Dot net 或其他开源 Web 技术（像我一样）的高级程序员。\n\n## 使用 Javascript 启动 Web 服务器\n\n\
+  我们发现像 `node.js` 平台这样的服务器端 Javascript 框架在开发中非常有用。我们在本书的章节中没有过多解释 `node.js`，但下面是对\
+  \ `node.js` 的一点介绍，本书中的大多数概念验证都使用了它。\n\n如今，开发人员都知道 `Node.js` 是一个服务器端 Javascript 执行平台。\n\
+  \n根据 `nodejs.org` 的说法：\n\n> “Node.js 是一个基于 Chrome V8 引擎构建的平台，用于轻松构建快速、可扩展的网络应用程序。Node.js\
+  \ 使用事件驱动、非阻塞 I/O 模型，使其轻量且高效，非常适合跨分布式设备运行的数据密集型实时应用程序。”\n\n现在，`node.js` 开辟了一种执行或服务\
+  \ Web 请求或任何其他类型服务器请求的新方式——称为非阻塞 I/O 操作。\n\n我们遇到了以下链接 - http://code.danyork.com/2011/01/25/node-js-doctors-offices-and-fast-food-restaurants-understanding-event-driven-programming/，它以一种极好的方式展示了\
+  \ `node.js` 的非阻塞概念，并与现实生活中的工作场景相关联。\n\n由于我过去 5-6 年一直作为 J2ee 程序员，我了解并理解了 J2ee 环境中的\
+  \ Servlet 编程模型，这是一种多线程编程模型，即当 Web 请求到达基于 Java 的 Web 服务器时，请求会命中 Servlet，Servlet 会打开一个新线程来处理请求并将数据响应回客户端。所有数据库相关方法或任何服务器资源密集型调用（本质上是共享的）都需要从\
+  \ Servlet 中小心处理，以避免死锁或其他与共享对象相关的不必要情况。\n\n尽管通过这种方式，进程被分割成线程，并在线程内服务 Web 请求，与服务器进程相比，线程的开销相对较小。但是，如果某个数据库调用在请求和响应的执行过程中（在线程调用内）花费了相当长的时间，那么它将因为同步活动而阻塞客户端，这就是阻塞\
+  \ I/O 操作。\n\n现在是时候理解非阻塞 I/O 了，`node.js` 平台正是基于此定义的。\n\n首先，`node.js` 应用程序环境将在单线程编程模型上运行。\n\
+  \n`node.js` 中的所有 Web 请求和服务器请求调用都是非阻塞 I/O。一个 Web 请求到达 `node.js` Web 服务器，Web 服务器接受该请求并将其交给一个监听器对象来处理响应。同时，该\
+  \ Web 服务器将保持就绪状态以接受任何新的 Web 请求。而之前的响应处理将留在队列中，以执行其余操作。现在，`node.js` 环境负责准备 Web 响应，这又可能涉及从实际应用程序中调用数据库。此外，这个数据库查询也可以包含回调函数，当数据库响应准备就绪时进行处理。这些操作在队列中执行，也称为事件驱动编程，并且所有这些操作本质上是异步的。\n\
+  \n所以这里要讨论的重点是，`node.js` 上下文中的所有函数调用都是非阻塞输入输出操作。在 `node.js` 环境中，执行操作由一个对象完成，而操作的结果由回调函数处理。\n\
+  \n为了理解 `node.js`，我们推荐一本优秀的书籍 (http://www.nodebeginner.org/)。\n\n在本书接下来的大部分应用程序中，我们都使用了基于\
+  \ `node.js` 的 Web 服务器。\n\n## Javascript 的面向对象方式——一些有趣的研究\n\n随着我们走向前端 Web 应用程序开发中客户端\
+  \ MVC 的世界，新的 Javascript 框架变得极其重要。我们在这里发布了 Javascript 中的面向对象编程和其他有趣的事实，并附有功能示例。以下是带注释的代码——\n\
+  \n### 关于 Javascript 的一些有趣事实\n\n#### Javascript 对象定义\n\n```\n1 var newObject = new\
+  \ Object();\n2 var newObj = {};\n```\n\n#### 为对象定义属性\n\n```\n1 newObject.blogname\
+  \ = \"PhloxBlog\";\n2 var blogname = newObject.blogname;\n3 \n4 console.log(blogname);\n\
+  5 \n6 newObj[\"blogtitle\"] = \"Technical Blogs\";\n7 var blogtitle = newObj[\"\
+  blogtitle\"];\n8 \n9 console.log(blogtitle);\n```\n\n#### Javascript 中有趣的嵌套对象访问\n\
+  \n以下类型的 Javascript 类使用字面量表示法定义。在一个类中，变量被定义为属性，函数被定义为该类的方法。\n\n```\n1 var nestedaddress\
+  \ = {\n2 \tState: \"West Bengal\",\n3 \taddress: {\n4 \t\tstreetname: \"4C, Chidam\
+  \ Mudi Lane\",\n5 \t\tcity : \"Kolkata\",\n6 \t\tpincode: \"700006\"\n7 \t}\n8 }\n\
+  9 console.log(nestedaddress.address.city);\n```\n\n### 关于 Javascript 函数的有趣事实\n\n\
+  #### 函数声明——\n\n```\n1 function averageout(x, y) {\n2 \tvar avg = (x + y)/2;\n3 \t\
+  return avg;\n4 }\n5 \n6 console.log(averageout()); \n7 console.log(averageout(2,3));\
+  \ \n8 console.log(averageout(2,3,4)); \n```\n\n在上面的例子中，第一次调用函数将返回 `NaN`。第二次调用时，函数将对两个参数起作用；最后一次调用时，多余的第三个参数将被忽略。\n\
+  \n#### 现在……函数内部可以访问一个额外的变量——称为 arguments\n\n```\n1 function averageoutonarguments()\
+  \ {\n2 \tvar sum = 0;\n3 \tfor (var i = 0, j = arguments.length; i < j; i++) { \t\
+  \t\t\n4                     sum += arguments[i]; \t\t\n5             }\n6 \treturn\
+  \ sum/arguments.length; \t\n7    }\n8 \n9 console.log(averageoutonarguments(1, 2,\
+  \ 3, 4)); \n```\n\n在 Javascript 中，所有参数都被称为 arguments。我们可以用任意数量的参数或不带参数调用函数，如上例所示。\n\
+  \n#### Javascript 中的匿名函数\n\n```\n1 var simpleFunction = function() \t{ \t  \n2 \
+  \ var aStringvalue = 'My Value in Moon'; \t  \n3  function oneMoreString(val) {\
+  \ \t\t\t\n4      return 'Altered Value is ' + ' ' +val; \t\t\n5  } \t\t\n6  console.log(oneMoreString(aStringvalue));\
+  \ \t\n7 }\n8 \n9 simpleFunction(); \n```\n\n\n\n在上面的示例中，`simpleFunction` 使用匿名函数定义，并从该函数内部返回字符串。\n\
+  \n### JavaScript 是一种基于原型的语言，不包含 class 语句\n\n```\n 1 function makeAddressWith(streetno,\
+  \ streetaddress, city, state, country, pincode) { \t\t\n 2 \treturn { \t\t\t\n 3\
+  \ \t       streetno: streetno ,\n 4 \t       streetaddress: streetaddress,\n 5 \t\
+  \       city: city, \t\t\t\n 6 \t       state: state, \t\t\t\n 7 \t       country:\
+  \ country, \t\t\t\n 8 \t       pincode: pincode \t\t\n 9 \t} \t\n10 } \t \t\n11\
+  \     \n12 function fullAddress(address) { \t\t\n13       return 'Full Address is\
+  \ -->>' + '\\n' + address.streetno + ' ' + \n14               address.streetaddress\
+  \ + '\\n' + address.city + ' ' + \n15               address.pincode + '\\n' + address.state\
+  \ + ' ' + address.country;\n16 }\n17     \n18 function addressWithCityAndPincode(address)\
+  \ {\n19 \treturn 'City and Pincode is -->>' + '\\n' + \n20 \t\taddress.city + '\
+  \ ' + address.pincode ;\n21 }\n22     \n23 address = makeAddressWith(\"4C\", \"\
+  Chidam Mudi Lane\", \"Kolkata\", \n24 \t\t\t  \"West Bengal\", \"India\", \"700006\"\
+  );\n25     \n26 console.log(fullAddress(address));\n27 console.log(addressWithCityAndPincode(address));\n\
+  ```\n\n### 现在更简洁的类定义\n\n```\n 1 function makeAnotherAddressWith(streetno, streetaddress,\
+  \ city, \n 2 \t\tstate, country, pincode) {\n 3 \treturn {\n 4 \t\tstreetno: streetno\
+  \ ,\n 5 \t\tstreetaddress: streetaddress, \n 6 \t\tcity: city,\n 7 \t\tstate: state,\n\
+  \ 8 \t\tcountry: country,\n 9 \t\tpincode: pincode,\n10 \t\tfullAddress: function()\
+  \ {\n11 \t\t          return 'Full Address is (another function) -->>' + '\\n' +\
+  \ \n12 \t\t\t\taddress.streetno + ' ' + address.streetaddress + '\\n' + \n13   \
+  \                              address.city + ' ' + address.pincode + \n14     \
+  \                            '\\n' + address.state + ' ' + address.country;\n15\
+  \ \t\t},\n16 \t\taddressWithCityAndPincode: function() {\n17 \t\t\treturn 'City\
+  \ and Pincode is (another function) -->>' + '\\n' \n18 \t\t\t+ address.city + '\
+  \ ' +  address.pincode ;\n19 \t\t}\n20 \t}\n21 }\n22     \n23 anotheraddress = makeAnotherAddressWith(\"\
+  4C\", \"Chidam Mudi Lane\", \"Kolkata\", \n24                                  \
+  \               \"West Bengal\", \"India\", \"700006\");\n25 \n26 console.log(anotheraddress.fullAddress());\n\
+  27 console.log(anotheraddress.addressWithCityAndPincode());\n```\n\n### 接下来是原型的使用。SomeObject.prototype\
+  \ 将被 SomeObject 的所有实例使用。\n\n在下面查找 `this` 和 `new` 的用法——\n\n```\n 1 function AddressWithPrototype(streetno,\
+  \ streetaddress, city, state, \n 2 \t\tcountry, pincode) {\n 3 \t\tthis.streetno\
+  \ = streetno;\n 4 \t\tthis.streetaddress = streetaddress;\n 5 \t\tthis.city = city;\n\
+  \ 6 \t\tthis.state = state;\n 7 \t\tthis.country = country;\n 8 \t\tthis.pincode\
+  \ =  pincode;\n 9 \t}\n10 \n11 AddressWithPrototype.prototype.fullAddress = function()\
+  \ {\n12 \treturn 'Full Address is (prototype) -->>' + '\\n' + this.streetno + \n\
+  13 \t\t' ' + this.streetaddress + '\\n' \n14                     + this.city + '\
+  \ ' + this.pincode + \n15                       '\\n' + this.state + ' ' + this.country;\n\
+  16 }\n17 \n18 AddressWithPrototype.prototype.addressWithCityAndPincode = function()\
+  \ {\n19 \treturn 'City and Pincode is (prototype) -->>' + '\\n' + this.city + \n\
+  20 \t\t' ' + this.pincode ;\n21 }\n22 \n23 address1 = new AddressWithPrototype(\"\
+  4C\", \"Chidam Mudi Lane\", \"Kolkata\", \n24 \t\t\t\t\t\"West Bengal\", \"India\"\
+  , \"700006\");\n25 console.log(address1.fullAddress());\n26 address2 = new AddressWithPrototype(\"\
+  5C\", \"Chidam Mudi Lane\", \"Kolkata\", \n27 \t\t\t\t\t\"West Bengal\", \"India\"\
+  , \"700034\");\n28 console.log(address2.addressWithCityAndPincode());\n```\n\n###\
+  \ 在原型上添加额外的方法\n\n```\n1 AddressWithPrototype.prototype.addressWithStateAndCountry\
+  \ = function() {\n2 \treturn 'State and Country is (prototype) -->>' \n3 \t\t+ '\\\
+  n' + this.state + ' ' + this.country ;\n4 }\n5 \n6 address3 = new AddressWithPrototype(\"\
+  5C\", \"Chidam Mudi Lane\", \"Kolkata\", \n7 \t\t\t\t\t\"East Bengal\", \"India\"\
+  , \"700034\");\n8 console.log(address3.addressWithStateAndCountry());\n```\n\n###\
+  \ 内部函数\n\n```\n1 function anOuterFunction() {\n2 \tvar a = 1;\n3 \tfunction innerFunction()\
+  \ {\n4 \t\treturn a + 1;\n5 \t}\n6 \treturn innerFunction();\n7 }\n8 console.log(anOuterFunction());\n\
+  ```\n\n### JavaScript 闭包（巧妙且令人困惑……）\n\n```\n 1 function closureFunction(a) {\n 2\
+  \ \treturn function(b) {\n 3 \t\treturn a + b;\n 4 \t}\n 5 }\n 6 x = closureFunction(5);\n\
+  \ 7 y = closureFunction(20);\n 8 \n 9 console.log(x(6));\n10 console.log(y(7));\n\
+  ```\n\n输出将是 - `javascript 11 27`\n\n### JavaScript 中的类\n\n```\n 1 function Blog()\
+  \ { }\n 2 \n 3 // The Object (Class Instances) in javascript\n 4 \n 5 function BlogAuthor()\
+  \ { }\n 6 \n 7 var firstPerson = new BlogAuthor();\n 8 var secondPerson = new BlogAuthor();\n\
+  \ 9 \n10 // The Constructor in jaascript\n11 \n12 function BlogContent() {\n13 \
+  \  console.log('BlogContent instantiated');\n14 }\n15 \n16 var content1 = new BlogContent();\n\
+  17 var content2 = new BlogContent();\n18 \n19 // The property (object attribute)\
+  \ in javascript\n20 \n21 function BlogModerator(name) {\n22   this.name = name;\n\
+  23   console.log('BlogModerator instantiated');\n24 }\n25 \n26 var bm = new BlogModerator('My\
+  \ Name');\n27 \n28 // display the blog moderator name\n29 console.log('Blog moderator\
+  \ is  ' + bm.name); \n30 \n31 // The methods\n32 \n33 function BlogComment(username)\
+  \ {\n34   this.username = username;\n35   console.log('Blog Comment instantiated');\n\
+  36 }\n37 \n38 BlogComment.prototype.comment = function()\n39 {\n40   console.log('This\
+  \ is a nice one by '+ this.username);\n41 };\n42 \n43 var comment1 = new BlogComment('Bob');\n\
+  44 var comment2 = new BlogComment('Michael');\n45 \n46 // call the BlogComment comment\
+  \ method.\n47 \n48 comment1.comment(); \n49 comment2.comment(); \n```\n\n### JavaScript\
+  \ 中的继承\n\n```\n 1 // define the Post Class\n 2 \n 3 function Post() {}\n 4 \n 5\
+  \ Post.prototype.createpost = function(){\n 6   console.log('A post is created in\
+  \ draft mode');\n7 };\n 8 Post.prototype.save = function(){\n 9   console.log('Post\
+  \ is saved');\n10 };\n11 \n12 // define the Technical Post class\n13 function TechnicalPost()\
+  \ {\n14   // Call the parent constructor\n15   Post.call(this);\n16 }\n17 \n18 //\
+  \ inherit Post\n19 TechnicalPost.prototype = new Post();\n20 \n21 // correct the\
+  \ constructor pointer because previously it points to Post\n22 TechnicalPost.prototype.constructor\
+  \ = TechnicalPost;\n23 \n24 // replace the save method\n25 TechnicalPost.prototype.save\
+  \ = function(){\n26   console.log('Post is now TechnicalPost');\n27 }\n28 \n29 //\
+  \ add publish method\n30 TechnicalPost.prototype.publish = function(){\n31   console.log('TechnicalPost\
+  \ is published');\n32 }\n33 \n34 var post = new TechnicalPost();\n35 post.createpost();\n\
+  36 post.save();\n37 post.publish();\n38 \n39 // check inheritance\n40 console.log(post\
+  \ instanceof Post); // true\n41 console.log(post instanceof TechnicalPost); // true\n\
+  42 \n43 // Using Object.create the inheritance line would instead be\n44 \n45 TechnicalPost.prototype\
+  \ = Object.create(Post.prototype);\n```\n\n### 封装\n\n在上面的例子中，`TechnicalPost` 不需要知道\
+  \ `Post` 类的 `createpost()` 方法的具体实现，但可以使用该方法；除非我们需要重写或使用它，否则 `TechnicalPost` 类不需要定义该方法。这就是封装，通过它每个类都继承其父类的方法，并且只需要定义它想要更改的内容。此外，子类还可以定义其他方法。\n\
+  \n**参考资料：**\n\n[面向对象 JavaScript 简介](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)\n\
+  \n[JavaScript 再介绍（JS 教程）](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)\n\
+  \n## 一个具有最小效果的简单 jQuery 图片滑块插件\n\n我们尝试制作一个简单的 jQuery 图片滑块插件，以便更详细地理解 jQuery 动画和插件功能。该图片滑块插件具有从上下左右滑动整个内容的功能，这些功能可在\
+  \ HTML 页面中进行配置。\n\n这里我们详细介绍了该插件的代码。\n\n\n\n我们已经参考了文章 [如何创建你自己的 jQuery 滑块插件](http://www.script-tutorials.com/how-to-create-your-own-jquery-slider-plugin/)\
+  \ 来制作这个插件。\n\n因此，感谢 (script-tutorials.com) 提供了这个。下面是代码部分。\n\n我们在 HTML 或 jQuery 代码的注释部分解释了代码。\n\
+  \n### HTML 部分\n\n```html\n 1 <!DOCTYPE html>\n 2 <html>\n 3 <head>\n 4     <script\
+  \ src=\"http://code.jquery.com/jquery-1.10.1.min.js\"></script>\n 5     <link rel=\"\
+  stylesheet\" href=\"main.css\" type=\"text/css\" />\n 6     <script type=\"text/javascript\"\
+  \ src=\"jquery.slider.js\"></script> \n 7 \t<!-- the plugin file -->\n 8     <script>\n\
+  \ 9         $(document).ready( function() {\n10            $('#slider').plainSlider('down',3000);\
+  \ // Plugin method calling\n11         });\n12     </script>\n13 </head>\n14 <body>\n\
+  15    <div class=\"example\">\n16       <div>\n17           <ul id=\"slider\">\n\
+  18               <li><img src=\"Chrysanthemum.jpg\" alt=\"\" width=\"480\" height=\"\
+  310\"/>\n19 \t\t<p>这是第一张</p>\n20 \t      </li>\n21               <li><img src=\"\
+  Desert.jpg\" width=\"480\" height=\"310\" alt=\"\" />\n22                 <p>这是第二张</p>\n\
+  23               </li>\n24           </ul>\n25      </div>\n26    </div>\n27 </body>\n\
+  28 </html>\n```\n\n### jQuery 插件代码\n\n```javascript\n 1 (function($){\n 2 $.fn.plainSlider\
+  \ = function(direction,timediff) { \n 3 \t// Plugin Method and taking parameters\n\
+  \ 4      var slides;\n 5      var allcount;\n 6      var i;\n 7 \n 8      function\
+  \ run() {\n 9         if(direction==='up') //use of slideUp Method from parameter\
+  \ checking\n10           {\n11              $(slides[i]).slideUp(3000);\n12    \
+  \          i++;\n13              if (i >= allcount) i = 0;\n14              $(slides[i]).show(3000);\n\
+  15           }\n16         else if(direction==='down') \n17           {\n18    \
+  \          //use of slideDown Method from parameter checking\n19              $(slides[i]).hide(3000);\n\
+  20              i++;\n21              if (i >= allcount) i = 0;\n22            \
+  \  $(slides[i]).slideDown(3000);\n23           }\n24         else if(direction==='left')\
+  \  \n25           {\n26 \t     //use of left to right animate from parameter checking\n\
+  27              $(slides[i]).show();\n28              var position = $(slides[i]).position();\n\
+  29              if(position.left===500)\n30                {\n31               \
+  \   $(slides[i]).css({ left: 0});\n32                };\n33              $(slides[i]).animate({\"\
+  left\": \"+=500px\"}, 3000);\n34              i++;\n35              if (i >= allcount)\
+  \ i = 0;\n36            }\n37         else  //use of right to left animate from\
+  \ parameter checking\n38           {\n39              $(slides[i]).show();\n40 \
+  \             var position = $(slides[i]).position();\n41              if(position.left<0)\n\
+  42                 {\n43                   $(slides[i]).css({ left: 0});\n44   \
+  \              };\n45              $(slides[i]).animate({\"left\": \"-=500px\"},\
+  \ 3000);\n46              i++;\n47              if (i >= allcount) i = 0;\n48  \
+  \          }\n49            setTimeout(run, timediff); \n50 \t\t//use of time parameter\
+  \ to run the method in Plugin\n51          }\n52 \n53         slides = $(this).children();\n\
+  54         allcount = slides.length;\n55         i=0;\n56 \t//use of time parameter\
+  \ to run the method in Plugin\n57         setTimeout(run, timediff); \n58      };\n\
+  59 })(jQuery);\n```\n\n读者可以在此处查看代码 [这里](http://www.phloxblog.in/wp-content/uploads/2013/06/imagesliderplugin.zip)。\n\
+  \n## 使用 d3.js 和 Prototype.js 的简单柱状图——基于 Javascript 类的方法\n\n![AngularD3BarGraph](img/00003.jpeg)\n\
+  \n我们正在努力将客户端的 JavaScript 代码转换为面向对象的方法。\n\n因此，我们在前一章中学习了 JavaScript OOP 的过程。在这里，我们尝试将\
+  \ `d3.js` 代码分离出来放入 JavaScript 框架中，为此我们采用了 `prototype.js` 来为 `d3.js` 代码分离创建 JavaScript\
+  \ 类。\n\n那么，我们在 HTML 中到底做了什么？\n\n### 1> 在 HTML 页面中添加了 `prototype.js`、`d3.js` 以及 d3\
+  \ 相关 JavaScript 类的引用\n\n```html\n1 <script type=\"text/javascript\" src=\"js/prototype.js\"\
+  ></script>\n2 <script src=\"js/barGraphProto.js\"></script>\n3 <script src=\"http://d3js.org/d3.v3.min.js\"\
+  ></script>\n```\n\n### 2> 放置了 `d3.js` 相关的类初始化代码——\n\n```javascript\n1 var   ourGraph\
+  \ = new BarGraph('sample.json','Year',905,'Frequency',6,'.0%'); \n2 //d3 related\
+  \ Variable initialisation\n3 ourGraph.workOnElement('#d3bar'); // Work on particular\
+  \ element\n4 ourGraph.generateGraph(); // generate the actual bar graph\n```\n\n\
+  ### 3> d3 相关的柱状图代码——\n\n\n\n\n\n```\n 1 // properties are directly passed to `create`\
+  \ method\n 2 var BarGraph = Class.create({ // prototype class creation\n 3 initialize:\
+  \ function(datajson,xaxisName,xaxisPos,yaxisName,yaxisPos,d3Format) {\n 4      \
+  \           this.datajson = datajson;\n 5                 this.xaxisName = xaxisName;\n\
+  \ 6                 this.xaxisPos = xaxisPos;\n 7                 this.yaxisName\
+  \ = yaxisName;\n 8                 this.yaxisPos = yaxisPos;\n 9               \
+  \  this.d3Format = d3Format;\n10                 // Taking all the variables and\
+  \ set in Class \n11 \t\t//Instance Variables (d3 property specific)\n12        \
+  \     },\n13 workOnElement: function(element) {\n14                 this.element\
+  \ = element;\n15                 // Taking the DOM Element on which the graph will\
+  \ be drawn\n16             },\n17 generateGraph: function() {\n18 \n19         \
+  \       //d3 specific coding\n20                var margin = {top: 20, right: 20,\
+  \ bottom: 30, left: 40},\n21                    width = 960 - margin.left - margin.right,\n\
+  22                    height = 500 - margin.top - margin.bottom;\n23 \n24      \
+  \         var formatPercent = d3.format(this.d3Format);\n25 \t      //setting the\
+  \ instance variable to d3 property\n26 \n27               var x = d3.scale.ordinal()\n\
+  28                    .rangeRoundBands([0, width], .1);\n29 \n30               var\
+  \ y = d3.scale.linear()\n31                       .range([height, 0]);\n32 \n33\
+  \               var xAxis = d3.svg.axis()\n34                       .scale(x)\n\
+  35                       .orient(\"bottom\");\n36 \n37               var yAxis =\
+  \ d3.svg.axis()\n38                       .scale(y)\n39                       .orient(\"\
+  left\")\n40                       .tickFormat(formatPercent);\n41 \n42         \
+  \      var svg = d3.select(this.element).append(\"svg\")\n43                   \
+  \    .attr(\"width\", width + margin.left + margin.right)\n44                  \
+  \     .attr(\"height\", height + margin.top + margin.bottom)\n45               \
+  \        .append(\"g\")\n46                       .attr(\"transform\", \n47    \
+  \                         \"translate(\" + margin.left + \",\" + margin.top + \"\
+  )\");\n48 \n49              d3.json(this.datajson, function(error, data) { \n50\
+  \                       // getting the data\n51                       if (error)\
+  \ return console.warn(error);\n52 \n53                       x.domain(data.map(function(d)\
+  \ { return d.letter; }));\n54                       y.domain([0, d3.max(data, function(d)\
+  \ \n55                                          { return d.frequency; })]);\n56\
+  \ \n57              svg.append(\"g\")\n58                      .attr(\"class\",\
+  \ \"x axis\")\n59                      .attr(\"transform\", \"translate(0,\" + height\
+  \ + \")\")\n60                      .call(xAxis)\n61                      .append(\"\
+  text\")\n62                      .attr(\"x\", this.xaxisPos)\n63               \
+  \       .attr(\"dx\", \".71em\")\n64                      .style(\"text-anchor\"\
+  , \"end\")\n65                      .text(this.xaxisName);\n66 \n67            \
+  \  svg.append(\"g\")\n68                      .attr(\"class\", \"y axis\")\n69 \
+  \                     .call(yAxis)\n70                      .append(\"text\")\n\
+  71                      .attr(\"transform\", \"rotate(-90)\")\n72              \
+  \        .attr(\"y\", this.yaxisPos)\n73                      .attr(\"dy\", \".71em\"\
+  )\n74                      .style(\"text-anchor\", \"end\")\n75                \
+  \      .text(this.yaxisName);\n76 \n77              svg.selectAll(\".bar\")\n78\
+  \                      .data(data)\n79                      .enter().append(\"rect\"\
+  )\n80                      .attr(\"class\", \"bar\")\n81                      .attr(\"\
+  x\", function(d) { return x(d.letter); })\n82                      .attr(\"width\"\
+  , x.rangeBand())\n83                      .attr(\"y\", function(d) { return y(d.frequency);\
+  \ })\n84                      .attr(\"height\", function(d) { return height - y(d.frequency);\
+  \ });\n85         }.bind(this)); // the bind syntax is important. \n86         \
+  \               // Otherwise class instance variables will not be\n87          \
+  \              // accessible in inner function\n88      }\n89 });\n```\n\n[此处](http://www.phloxblog.in/wp-content/uploads/2013/07/simpleProto.zip)是供读者感兴趣的代码。我们将在\
+  \ Angular.js 指令部分重用与 d3 相关的 JavaScript 类代码。\n\n## Angular.js 应用程序开发中的概念\n\n在本章中，我们将逐一讨论\
+  \ Angular.js 应用程序开发中一些众所周知的概念。\n\n### 1. ng-app\n\n它是一个 Angular 指令，用于定义 HTML body\
+  \ 或 HTML body 的一部分作为 Angular.js 应用程序。\n\n### 2. Angular 表达式\n\n像`{{ some_angular_variable\
+  \ }}`这样的代码会计算变量值。这就是 Angular 表达式。\n\n### 3. Angular 视图模板\n\nAngular.js 视图模板是一个部分，它将被来自\
+  \ Angular 模型的数据替换。\n\n### 4. Angular 控制器\n\nAngular 控制器是一种 JavaScript 函数形式，在其中，DOM\
+  \ 元素属性的变量值被绑定，并且与 DOM 元素属性绑定的变量的呈现逻辑在 JavaScript 函数（控制器）的控制下被控制和更改。因此，变量值的呈现逻辑应在\
+  \ Angular 控制器中控制，这些变量通过`ng-model`指令或 Angular 表达式与 DOM 元素绑定，Angular 框架提供变量与 DOM 元素的自动绑定，即在指定位置，每当控制器中的变量值发生变化时，该变化将自动影响\
+  \ DOM 元素。\n\n### 5. Angular 作用域变量\n\n在 Angular.js 应用程序中，JavaScript 变量值将在 Angular\
+  \ 作用域生命周期内存在。因此，所有变量都可以被观察其值的变化并对此采取行动——在 Angular.js 应用程序的各自作用域内。\n\n### 6. Angular\
+  \ MVC\n\n#### A. Angular 模型\n\n模型是数据，可以通过 Angular 作用域的属性访问。\n\n#### B. Angular 控制器\n\
+  \nAngular 控制器是一种 JavaScript 函数形式，在其中，DOM 元素属性的变量值被绑定，并且与 DOM 元素属性绑定的变量的呈现逻辑在 JavaScript\
+  \ 函数（控制器）的控制下被控制和更改。\n\n#### C. Angular 视图\n\n在 Angular 框架中，视图由 HTML 元素和 Angular\
+  \ 表达式组成，这些元素和表达式在 Angular 控制器和 Angular 模型中处理后，在浏览器中渲染。\n\n下面是一个 Angular 示例：\n\n\
+  #### 一个 Angular 模型示例\n\n```\n 1 [\n 2 \t{\n 3 \t   \"Product\": \"REL\",\n 4 \t\
+  \   \"BBP\": \"10\",\n 5 \t   \"BSP\": \"10.2\",\n 6 \t   \"LTP\": \"10.1\"\n 7\
+  \ \t},\n 8 \t{\n 9 \t   \"Product\": \"BEL\",\n10 \t   \"BBP\": \"20\",\n11 \t \
+  \  \"BSP\": \"20.4\",\n12 \t   \"LTP\": \"20\"\n13 \t},\n14 \t{\n15 \t   \"Product\"\
+  : \"MTL\",\n16 \t   \"BBP\": \"50\",\n17 \t   \"BSP\": \"50.5\",\n18 \t   \"LTP\"\
+  : \"50.1\"\n19 \t},\n20 \t{\n21 \t   \"Product\": \"BSL\",\n22 \t   \"BBP\": \"\
+  100\",\n23 \t   \"BSP\": \"101\",\n24 \t   \"LTP\": \"100.2\"\n25 \t}\n26 ]\n```\n\
+  \n#### HTML 中的 Angular 代码片段\n\n```\n 1 ...\n 2 <html lang=\"en\" ng-app=\"stocksample\"\
+  > \n 3 <!--Angular Directive for Angular Application Definition -->\n 4 ...\n 5\
+  \ <body ng-controller=\"StockListCtrl\">  \n 6 <!--Angular Controller to control\
+  \ Angular Model Data for View in HTML Body-->\n 7 ....\n 8 <table>\n 9 <tbody>\n\
+  10      <tr ng-repeat=\"stock in stocks\"> <!-- The Angular Scope Variable for the\
+  \ Model -->\n11          <td>{{stock.Product}}</td>   <!-- Angular Expressions -->\n\
+  12          <td>{{stock.BBP}}</td>\n13          <td>{{stock.BSP}}</td>\n14     \
+  \     <td>{{stock.LTP}}</td>\n15      </tr>\n16 </tbody>\n17 </table>\n18 </body>\n\
+  ```\n\n#### Angular 控制器\n\n```\n1 function StockListCtrl($scope, $http) {// Dependency\
+  \ Injection for Angular Service\n2 \t$http.get('stocks.json').success(function(data)\
+  \ { // Angular $http Service\n3 \t $scope.stocks = data;\n4 \t});\n5 }\n```\n\n\
+  在接下来的章节中，我们将讨论 Angular 服务以及 Angular 应用程序中的依赖注入。\n\n**参考文献：**\n\n\n\n\n\n[Angular.js\
+  \ 文档](http://docs.angularjs.org/tutorial)\n\n## Angular.js 服务与依赖注入\n\n在本章中，我们将尝试通过一些代码示例来解释\
+  \ Angular.js 的服务定义。\n\n首先是在 Angular Factory 中声明服务并在 Angular Controller 中访问它的示例——\n\
+  \n### 以下是 Controller\n\n```\n1 app.controller('StockListCtrl', function($scope,stockService)\
+  \ { \n2     // 将 Angular 放入服务中\n3     stockService.getStocks(function(data){   \
+  \                   \n4         // 访问控制器方法\n5         console.log(data);\n6    \
+  \     $scope.stocks = data;\n7     });\n8 });\n```\n\n### 以下是上述在 Angular Factory\
+  \ 中的 stockService\n\n```\n 1 app.factory('stockService', function($http) {\n 2 \
+  \    // 服务声明并引入内置的 $http 服务\n 3     return {\n 4         getStocks: function(callback)\
+  \ {      \n 5             // 将方法作为服务的公共方法返回\n 6             $http.get('stocks.json').success(function(data)\
+  \ { \n 7                  // 访问外部资源\n 8                  callback(data);       \
+  \      \n 9                  // 使用数据调用回调函数，\n10                  // 以便在方法访问级别进行操作\n\
+  11             });\n12         }\n13     }\n14 });\n```\n\n第二个是 Service Provider\
+  \ 的示例——\n\n```\n 1 app.config(function($provide) {                    \n 2 \t//\
+  \ Angular 应用配置部分\n 3   $provide.provider('stockService', function() {   \n 4 \t\
+  // 使用内置的 provide 服务创建服务提供者\n 5     this.$get = function($http) {               \
+  \   \n 6         // 获取服务的约定——$get\n 7         // ——服务将通过此调用被实例化\n 8       return\
+  \ {\n 9 \t  getStocks: function(callback) {          \n10                 // 将方法作为服务的公共方法返回\
+  \                    \\\n11    \n12 \t\t$http.get('stocks.json').success(function(data)\
+  \ { \n13                         // 访问外部资源\n14 \t\t\tcallback(data);      \n15 \
+  \                        // 使用数据调用回调函数，\n16                         // 以便在方法访问级别进行操作\
+  \     \n17 \t\t});   \n18 \t     }\n19 \t }\n20       };\n21   });\n22 });\n```\n\
+  \n对于上述服务，我们可以重用之前指定的同一个控制器。\n\n### 现在介绍一些从 Angular 依赖注入服务中获取服务的方法——\n\nAngular 注入器（`$injector`）负责创建自定义\
+  \ Angular 服务的实例。当 Angular 应用被创建时，注入器会在 Angular 环境中被实例化。\n\n### 在 Angular.js 中使用依赖注入的第一种方式\n\
+  \n```\n 1 app.controller('StockListCtrl', function($scope,$injector ) {\n 2 \tvar\
+  \ stkService = $injector.get('stockService'); \n 3         // 从 Angular 的 $injector\
+  \ 对象中获取服务，该对象\n 4         // 负责将服务从 Angular 应用配置推送到\n 5         // 其他函数或控制器中\n 6\
+  \ \tstkService.getStocks(function(data){\n 7 \t   console.log(data);\n 8       \
+  \     $scope.stocks = data;\n 9         });\n10    });\n```\n\n### 在 Angular.js\
+  \ 中使用依赖注入的另一种方式——推荐方式，如 Angular 文档所述\n\n```\n1 app.controller('StockListCtrl',\n\
+  2     ['$scope', 'stockService', function($scope,stockService ) {  \n3         //\
+  \ 引入依赖\n4 \tstockService.getStocks(function(data){                   \n5       \
+  \  // stockService 在此处被注入到控制器中\n6 \t  console.log(data);\n7           $scope.stocks\
+  \ = data;\n8         });\n9   }]);\n```\n\n读者可以通过以下参考资料深入了解 Angular.js 服务——\n\n\
+  [`github.com/angular/angular.js/wiki/Understanding-Dependency-Injection`](https://github.com/angular/angular.js/wiki/Understanding-Dependency-Injection)\n\
+  \n[`stackoverflow.com/questions/13937318/convert-angular-http-get-function-to-a-service`](http://stackoverflow.com/questions/13937318/convert-angular-http-get-function-to-a-service)\n\
+  \n## Angular.js $watch 与 $observe——简要介绍\n\n### Angular.js $watch——\n\nAngular.js\
+  \ 的 `$watch` 事件在检测到 DOM 属性变量值发生变化时触发。对于 `$watch` 表达式，每当检测到上下文中的当前值与之前的值不同时，监听器就会触发。为了理解\
+  \ `$watch` 表达式，我们提供了一个简单的可运行示例。我们创建了一个输入文本框，它通过 `ng-model` 绑定到 `watchtext`。我们可以更改文本框的值，并在\
+  \ HTML 页面中看到之前的值和当前的值。\n\n#### HTML 代码如下——\n\n```\n 1 <form name=\"myForm\" ng-controller=\"\
+  Ctrl\">\n 2  A word: <input type=\"text\" name=\"input\" ng-model=\"watchtext\"\
+  \ />\n 3  <br/>\n 4  Word changed {{counter}} times.\n 5  <br/>\n 6  Last value\
+  \ of counter was {{lastvalue}}\n 7  <br/>\n 8  Current value of counter is {{currentvalue}}\n\
+  \ 9  <br/>\n10 \n11   <button ng-click=\"initCounter()\" >\n12        Counter =\
+  \ 0\n13   </button>\n14 </form>\n```\n\n这里我们有一个 Angular.js 控制器——`\"ctrl\"`。其他代码在\
+  \ JavaScript 代码中已有注释。\n\n#### Angular.js 代码如下——\n\n```\n 1 function Ctrl($scope)\
+  \ {\n 2 \tvar scope = $scope;\n 3 \tscope.watchtext = 'First Value'; // 在此处初始化 watchtext\n\
+  \ 4 \tscope.counter = 0;\n 5 \tscope.lastvalue = '';\n 6 \tscope.currentvalue =\
+  \ '';\n 7 \n 8 \t$scope.initCounter = function() {\n 9 \t\tscope.counter = 0; //\
+  \ 在此处初始化 counter 变量\n10 \t}\n11 \n12 \tscope.$watch('watchtext', function(newValue,\
+  \ oldValue) { \n13 \t\tscope.counter = scope.counter + 1; \n14 \t\tscope.lastvalue\
+  \ = oldValue;\n15 \t\tscope.currentvalue = newValue;\n16 \t});\n17 \t// lastvalue\
+  \ 和 currentvalue 通过 Angular 表达式在 HTML 页面中更新。\n18 \t// 这些值在 watch 函数中被更新。\n19 }\n\
+  ```\n\n### Angular $observe——\n\n在 Angular 指令的链接阶段，`$observe` 函数是获取所有属性值以进一步执行指令代码的位置。HTML\
+  \ 代码如下——\n\n```\n1 <div id=\"bar\" sample-directive time-interval=1000 datajson=\"\
+  sample.json\"> \n2 <!-- 设置属性值 -->\n3  scope.firstvalue is {{firstvalue}}<br/>\n\
+  4  scope.secondvalue is {{secondvalue}}<br/>\n5 </div>\n```\n\n下面是一个属性指令——`\"AngularExample\"\
+  `，仅用于示例说明。代码中已有注释。Angular.js 代码如下——\n\n```\n 1 angular.module('AngularExample',\
+  \ [])\n 2 .directive('sampleDirective', function ($timeout) {// Angular 指令\n 3 \
+  \  return {\n 4         restrict: 'A', // 仅属性指令\n 5     scope: {\n 6           \
+  \  timeInterval: '@', // 使用 @ 获取变量值，\n 7                                // 这些值在链接函数中不能立即使用\n\
+  \ 8 \tdatajson: '@'      // 同上\n 9         },\n10         link: function (scope,\
+  \ elem, attrs) {\n11 \tconsole.log(scope.timeInterval);\n12 \tattrs.$observe('timeInterval',\
+  \ function(value) { \n13 \t\t// 仅在 observe 函数中从 HTML DOM 获取属性值\n14 \t\tconsole.log('timeInterval\
+  \ has changed value to ' + value);\n15 \t\tscope.firstvalue = value;\n16 \t  });\n\
+  17 \tattrs.$observe('datajson', function(value) {\n18 \t\tconsole.log('datajson\
+  \ has changed value to ' + value);\n19 \t\tscope.secondvalue = value;\n20 \t  });\n\
+  21 \tconsole.log(scope.firstvalue);\n22 \n23 \tvar t = $timeout( function() { \n\
+  24                 // 使用 timeout 函数——展示一段时间后属性变量的变化。\n25                 // 这是通过跟踪\
+  \ Angular 变量来改变 HTML DOM 展示的位置。\n26 \n27 \t    scope.firstvalue = 'new--' + ' and\
+  \ old--1' ;\n28 \t    scope.secondvalue = 'new--' + ' and old--2' ;\n29 \n30 \t\
+  }, 2000);\n31         }\n32     }\n33 });\n```\n\n读者可以在此处查看完整的 plunker——\n\n[`plnkr.co/VTVep9yW5hr8HKK2KtDX`](http://plnkr.co/VTVep9yW5hr8HKK2KtDX)\n\
+  \n\n\n\n\n## Angular.js Promise 与 Deferred API - 实现详解\n\n### Angular.js Promise\
+  \ -\n\nAngular.js 中的 Promise 充当一个占位符，JavaScript 对象通过它异步返回某些结果数据，且不保证固定的响应时间。Angular.js\
+  \ 中 Deferred 和 Promise API 的组合，确保了在客户端代码中通过异步系统处理成功和拒绝回调。\n\n### Angular.js Deferred\
+  \ API -\n\nDeferred 对象通过 `$q.defer()` 构建。该 API 用于通知异步工作的成功或失败完成，这些工作位于 Deferred\
+  \ API 的上下文中。`deferred 对象` 通过 `.resolve(arg)` 和 `.reject(arg)` 方法处理成功和拒绝情况。\n\n###\
+  \ Angular.js Promise API -\n\n`deferred.promise` 在 Angular.js 中返回一个 Promise 实例。在\
+  \ Deferred 对象中完成任务后，我们可以访问 Promise 对象中的结果。`promise.then(success, error)` – 这一部分始终向\
+  \ UI 返回一个确定的结果（成功或错误），位于成功或错误回调中。其中一个方法（resolve 或 reject）会携带结果或拒绝原因被调用。\n\n### Angular.js\
+  \ Promise 链 -\n\n由于 `promise.then` 中派生的对象本身也是一个 Promise 对象，因此我们可以在此建立 Promise 链。为了实现\
+  \ Promise 功能，Angular.js 中提供了 `$q service` 功能。这里的 `$q` 与 Angular 作用域模型集成，并被 Angular\
+  \ 模板引擎识别。下面是展示 `Promise` 功能的带注释代码库：\n\n```\n 1     'use strict';\n 2     \n 3  \
+  \   var app = angular.module('angularjs-promise', []); // 创建应用\n 4     \n 5    \
+  \ app.controller('PhoneListCtrl', function($scope, phoneService) { \n 6 \t\t// Angular\
+  \ 控制器定义，注入服务\n 7             phoneService.getPhones().then(function(data) {// Angular\
+  \ promise\n 8                 $scope.phones = data;\n 9             });\n10    \
+  \    });\n11     \n12     app.factory('phoneService', function($http, $q) {\n13\
+  \ \t\t// Angular 服务声明\n14         return {\n15             getPhones: function()\
+  \ {                                 \n16                 var deferred = $q.defer();\
+  \ // Deferred 对象声明\n17                 $http.get('phones.json').success(function(data)\
+  \ {   \n18 \t\t\t\t// 异步服务调用\n19                      deferred.resolve(data);\n\
+  20                 }).error(function(){\n21                      deferred.reject();\n\
+  22                 });\n23             return deferred.promise;\n24          }\n\
+  25        }\n26     });\n```\n\n为了理解完整功能，我们制作了一个 plunker，链接如下：\n\n[`plnkr.co/hBbq6qiCXZXttkFEnZWj`](http://plnkr.co/hBbq6qiCXZXttkFEnZWj)\n\
+  \n参考资料：\n\n[Angular.js 文档](http://docs.angularjs.org/api/ng.$q)\n\n## JavaScript\
+  \ 测试框架 - Jasmine - 快速学习\n\n如今，各种基于 JavaScript 的应用越来越流行。因此，在开发工作的各个方面，自动化测试 JavaScript\
+  \ 代码的需求日益明显。以下是对\n\n### JavaScript 测试框架 - Jasmine\n\n的简要学习\n\n#### 安装与运行部分 -\n\n\
+  从[此处](https://github.com/pivotal/jasmine/downloads)安装 Jasmine 独立版框架。解压文件夹。将测试规范代码放入\
+  \ Jasmine 独立版文件夹中 spec 文件夹内的 `<<你的功能规范>>.js` 文件中。将 JavaScript 代码放入 Jasmine 独立版文件夹中\
+  \ src 文件夹内的 `<<你的功能>>.js` 文件中。\n\n现在，在 `Jasmine 安装文件夹` 中的 `SpecRunner.html` 文件的\
+  \ `在此处包含源文件` 部分，添加源 JavaScript 文件的 script 标签。在 `Jasmine 安装文件夹` 中的 `SpecRunner.html`\
+  \ 文件的 `在此处包含规范文件` 部分，添加规范 JavaScript 文件的 script 标签。现在，如果我们运行 `SpecRunner.html`，示例规范应该通过，并且消息会显示在\
+  \ `SpecRunner.html` 文件中。安装部分到此结束。\n\n#### Jasmine 中需要理解的一些要点 -\n\n1. Jasmine 是一个适合行为驱动开发的\
+  \ JavaScript 测试框架。\n2. `describe` 是 Jasmine 测试套件中的一个关键字。\n3. Jasmine 测试框架中的测试由 `describe`\
+  \ 块内的 `it` 定义。\n4. 这些是 Jasmine 框架下的独立测试单元。\n5. 在 `describe` 和 `it` 块中，可以运行任何可执行的\
+  \ JavaScript 函数。\n6. 在 `describe` 函数中声明的任何变量，在该 `describe` 函数块内的所有 `it` 函数中均可使用。\n\
+  7. 期望（Expectations）是期望实际值与函数返回的值进行比较的函数。\n8. 匹配器（Matchers）对实际值和期望值进行布尔比较。它向 Jasmine\
+  \ 报告期望为真或假。\n\n### 以下是一些用于测试的代码，并在注释中进行了说明 -\n\n我们的 JavaScript 源文件代码 -\n\n（基于原型的\
+  \ JavaScript 类的最小代码） -\n\n如果读者不熟悉 JavaScript 类，可以阅读《面向对象方式下的 JavaScript – 第一章中的一些有趣研究》。\n\
+  \n```\n 1     // 简单的 JavaScript 函数\n 2  \n 3     function helloWorld() {\n 4   \
+  \      return \"Hello world!\";\n 5     }\n 6     \n 7     function checkArraylength()\
+  \ {\n 8     \tvar arr = new Array();\n 9     \tarr[0] = 12;\n10     \treturn arr.length;\n\
+  11     }\n12     \n13     // 基于原型的 JavaScript 类\n14 \n15     function AddressWithPrototype(streetno,\
+  \ streetaddress, \n16                                   city, state, country, pincode)\
+  \ {\n17     \t\t\tthis.streetno = streetno;\n18     \t\t\tthis.streetaddress = streetaddress;\n\
+  19     \t\t\tthis.city = city;\n20     \t\t\tthis.state = state;\n21     \t\t\t\
+  this.country = country;\n22     \t\t\tthis.pincode =  pincode;\n23     \t\t}\n24\
+  \     \n25     AddressWithPrototype.prototype.fullAddress = function() {\n26   \
+  \  \treturn '完整地址是（原型）-->>' + '\\n' + this.streetno + \n27 \t\t\t' ' + this.streetaddress\
+  \ + '\\n'\n28                          + this.city + ' ' + this.pincode + '\\n'\
+  \ + \n29 \t\t\t this.state + ' ' + this.country;\n30     }\n31     \n32     AddressWithPrototype.prototype.changeAddressForCity\
+  \ = function() {\n33         this.city = 'Delhi';\n34     \treturn '完整地址是（原型）-->>'\
+  \ + '\\n' + this.streetno \n35 \t\t\t + ' ' + this.streetaddress + '\\n'\n36   \
+  \                       + this.city + ' ' + this.pincode + '\\n' \n37 \t\t     \
+  \    + this.state + ' ' + this.country;\n38     }\n```\n\n### 我们的测试规范代码如下 -\n\n\n\
+  \n\n\n```\n 1     describe(\"Hello world\", function() {  // Jasmine 测试套件\n 2  \
+  \       it(\"says hello\", function() {     \n 3 \t\t// 单个测试组件 - 引用我们的源 JavaScript\
+  \ 文件代码\n 4             expect(helloWorld()).toEqual(\"Hello world!\");  \n 5 \t\t\
+  // 与函数输出进行相等性检查\n 6         }); \n 7     \n 8         it(\"says world1\", function()\
+  \ {\n 9             expect(helloWorld()).toContain(\"world\");      \n10 \t\t//\
+  \ 检查函数输出中是否包含特定值\n11         });\n12     \n13         // 添加自定义匹配器\n14         beforeEach(function()\
+  \ {\n15             this.addMatchers({\n16                 toContainElementMoreThanZero:\
+  \ function() {  \n17 \t\t\t// 创建自定义匹配器\n18                     return (this.actual\
+  \ > 0);\n19                 }\n20             });\n21         });\n22      \n23\
+  \         it('contains more than one array element', function() {\n24          \
+  \   expect(checkArraylength()).toContainElementMoreThanZero(); \n25 \t\t// 应用自定义匹配器\n\
+  26         });\n27         \n28         var newAddress;\n29         \n30       \
+  \  beforeEach(function() {\n31     \t\tnewAddress = new AddressWithPrototype(\"\
+  4C\", \"Chidam Mudi Lane\", \n32                     \"Kolkata\", \"West Bengal\"\
+  , \"India\", \"700006\");  \n33 \t\t\t// 引用源 JavaScript 类\n34         });\n35  \
+  \       \n36         it(\"calls the fullAddress() function\", function() {\n37 \
+  \            spyOn(newAddress, \"fullAddress\");  \n38 \t\t// 将检查类的 fullAddress\
+  \ 方法是否被调用\n39             newAddress.fullAddress();\n40             expect(newAddress.fullAddress).toHaveBeenCalled();\
+  \ \n41 \t\t// 确保方法被调用\n42         });\n43         \n44         it(\"calls with 'Delhi'\
+  \ as argument\", function() {\n45             spyOn(newAddress, \"changeAddressForCity\"\
+  );\n46             newAddress.changeAddressForCity(\"Delhi\");\n47     \t    expect(newAddress.changeAddressForCity).toHaveBeenCalledWith(\"\
+  Delhi\"); \n48 \t\t// 以 'Delhi' 作为参数调用\n49         });\n50         \n51        \
+  \ it(\"not called with 'Kolkata' as argument\", function() {\n52             spyOn(newAddress,\
+  \ \"changeAddressForCity\");\n53             newAddress.changeAddressForCity(\"\
+  Delhi\");\n54     \texpect(newAddress.changeAddressForCity).not.toHaveBeenCalledWith(\"\
+  Kolkata\"); \n55         })\n56         \n57         it(\"return delhi as city\"\
+  , function() {\n58             newAddress.changeAddressForCity();\n59          \
+  \   expect(newAddress.fullAddress()).toContain(\"Delhi\");\n60         });\n61 \
+  \    });\n```\n\n### 异步功能测试\n\n```\n 1     describe(\"async tests\", function(){\n\
+  \ 2      var flag, value;\n 3      it(\"should simulate an asynchronous call\",\
+  \ function () { \n 4       runs(function() { \n 5         flag  = false; \n 6  \
+  \       value = 0; \n 7     \n 8         setTimeout(function() { // 该函数将在 500 毫秒后被调用\n\
+  \ 9 \t\t\t        \n10           value++; \n11           flag = true; \n12     \
+  \    }, 500); \n13       });  \n14     \n15       waitsFor(function() {     \n16\
+  \ \t\t// 等待直到函数调用返回值\n17         return flag; \n18       }, \"The Value should be\
+  \ incremented\", 5000);  \n19 \t// 如果等待 5 秒后仍未得到结果，则退出框架方法\n20          \n21   \
+  \    runs(function() {  \n22         expect(flag).toEqual(true);   \n23        \
+  \ expect(value).toEqual(1); \n24       }); \n25      }); \n26     });\n```\n\n与\
+  \ Jasmine 相关的其他要点如下——\n\n我们可以在 Jasmine 测试中使用的一些关键特性\n\n#### 场景 1 -\n\n```\n1 var\
+  \ a; \n2 a = true; \n3 expect(a).toBe(true); <-- 这里 .toBe 是测试的关键字\n4 expect(false).not.toBe(true);\
+  \ <-- 使用 not 关键字的另一种测试变体\n```\n\n#### 场景 2 - 正则表达式的匹配器\n\n```\n1 var message = 'It\
+  \ is an address'; \n2 expect(message).toMatch('address'); <-- 这里 .toMatch 是测试的关键字\n\
+  3 expect(message).toMatch(/address/); \n```\n\n#### 场景 3 - 与 'undefined' 比较的匹配器\n\
+  \n```\n1 var person = 'Piyas De'; \n2 expect(person).toBeDefined(); <-- 这里 .toBeDefined\
+  \ 是测试的关键字 \n3 expect(aotherperson).not.toBeDefined(); \n4 \n5 或者 \n6 \n7 expect(aotherperson).toBeUndefined();\
+  \ <-- 这里 .toBeUndefined 是测试的关键字\n```\n\n#### 场景 4 - 小于检查\n\n```\n1 var amount =\
+  \ 10; \n2 var anotheramount = 12; \n3 expect(anotheramount).not.toBeLessThan(amount);\
+  \ <-- 这里 .toBeLessThan 是测试的关键字 \n4 \t\t\t\t\t\t    \n```\n\n#### 场景 5 - 抛出检查\n\n\
+  ```\n 1 function checkThrow() \n 2 { \n 3 \treturn aVariable; \n 4 } \n 5 \n 6 expect(checkThrow()).toThrow();\
+  \ <-- 这里 .toThrow 是测试的关键字\n 7 \n 8 function checkNotThrow() \n 9 { \n10 \treturn\
+  \ 1; \n11 } \n12 \n13 expect(checkNotThrow()).not.toThrow(); \n```\n\n有关 Jasmine\
+  \ 中测试函数的所有详细信息，请参阅——\n\n#### 参考资料——\n\n[Jasmine 文档](http://pivotal.github.io/jasmine/)\n\
+  \n## 使用 Jasmine 进行 Angular.js 测试\n\n在本章中，我们将尝试讨论使用 Jasmine 测试框架进行 Angular.js 客户端测试。我们已经介绍了使用\
+  \ Jasmine 框架对客户端控制器和 Angular Mock 服务的测试。代码中已添加注释以帮助理解测试。\n\n我们的两个示例控制器是——\n\n###\
+  \ controllers.js\n\n```\n 1     // 该控制器在 $scope 变量中返回三个 JSON 元素\n 2     function\
+  \ PhoneListCtrl($scope) {\n 3       $scope.phones = [\n 4         {\"name\": \"\
+  Nexus S\",\n 5          \"snippet\": \"Fast just got faster with Nexus S.\"},\n\
+  \ 6         {\"name\": \"Motorola XOOM™ with Wi-Fi\",\n 7          \"snippet\":\
+  \ \"The Next, Next Generation tablet.\"},\n 8         {\"name\": \"MOTOROLA XOOM™\"\
+  ,\n 9          \"snippet\": \"The Next, Next Generation tablet.\"}\n10       ];\n\
+  11     }\n```\n\n以及\n\n### RTcontroller.js\n\n在该控制器中，我们创建了一个服务，通过 `$http` 和 `$q`\
+  \ 对象将数据返回到 Angular `$scope` 的 \"stocks\" 变量中。\n\n```\n 1     var app = angular.module('angularjstest',\
+  \ []); \n 2     \n 3     app.controller('StockListCtrl', function($scope, stockService)\
+  \ { \n 4 \t\t// Angular 控制器定义\n 5                 // 带有服务注入\n 6             stockService.getStocks().then(function(data)\
+  \ {           \n 7 \t\t// Angular promise\n 8                 $scope.stocks = data;\n\
+  \ 9             });\n10        });\n11     \n12     app.factory('stockService',\
+  \ function($http, $q) {               \n13 \t\t// Angular 服务声明\n14         return\
+  \ {\n15             getStocks: function() {                                 \n16\
+  \                 var deferred = $q.defer();                          \n17 \t\t\t\
+  // 延迟对象声明\n18                 $http.get('stocks.json').success(function(data) {\
+  \   \n19 \t\t\t// 异步服务调用\n20                      deferred.resolve(data);\n21  \
+  \               }).error(function(){\n22                      deferred.reject();\n\
+  23                 });\n24             return deferred.promise;\n25          }\n\
+  26        }\n27     });\n```\n\n以下代码是用于测试的规范文件，可以通过 `testrunner.html` 运行，该文件是 Jasmine\
+  \ 框架中的默认测试文件。我们仅针对示例工作修改了此文件。源文件需要包含在 `testrunner.html` 的 `<!-- include source files\
+  \ here...-->` 部分中\n\n`<script type=\"text/javascript\" src=\"src/controllers.js\"\
+  ></script>`\n\n`<script type=\"text/javascript\" src=\"src/RTcontroller.js\"></script>`\n\
+  \n同时，规范文件需要包含在 `testrunner.html` 的 `<!-- include spec files here...-->` 部分中 `<script\
+  \ type=\"text/javascript\" src=\"spec/ControllerSpec.js\"></script>`\n\n现在来看规范文件——\n\
+  \n### Angular.js 测试规范编码——\n\n```\n 1     // 该控制器在 $scope 变量中返回三个 JSON 元素\n 2   \
+  \  function PhoneListCtrl($scope) {\n 3       $scope.phones = [\n 4         {\"\
+  name\": \"Nexus S\",\n 5          \"snippet\": \"Fast just got faster with Nexus\
+  \ S.\"},\n 6         {\"name\": \"Motorola XOOM™ with Wi-Fi\",\n 7          \"snippet\"\
+  : \"The Next, Next Generation tablet.\"},\n 8         {\"name\": \"MOTOROLA XOOM™\"\
+  ,\n 9          \"snippet\": \"The Next, Next Generation tablet.\"}\n10       ];\n\
+  11     }\n```\n\n\n\n\n\n```javascript\n 1     describe('Controller function', function()\
+  \ {  // Jasmine 测试套件\n 2     \n 3       describe('PhoneListCtrl', function() { \
+  \     \n 4 \t\t// Angular 控制器的内部测试套件\n 5         var scope;\n 6     \n 7       \
+  \  beforeEach(inject(function($rootScope, $controller) {  \n 8 \t\t\t// 无头浏览器情况下的数据初始化\n\
+  \ 9                         // $rootScope 是 Angular 内置对象，用于创建 Angular 作用域\n10 \t\
+  \                // angular 作用域将由此创建\n11 \t  scope = $rootScope.$new();\n12    \
+  \       var ctrl = $controller(PhoneListCtrl, {$scope: scope}); \n13 \t\t\t// 将在测试环境中为\
+  \ PhoneListCtrl 控制器创建控制器对象\n14                         // 在测试环境中为 PhoneListCtrl\
+  \ 控制器创建控制器对象\n15         }));\n16     \n17         it('should create \"phones\"\
+  \ model with 3 phones', function() { \n18           expect(scope.phones.length).toBe(3);\
+  \ \n19 \t\t// 单个测试组件 - 参考上述 Angular 控制器的源代码\n20 \t\t// 参考上述 Angular 控制器的源代码\n21\
+  \         });                                    \n22       });\n23     \n24   \
+  \    describe('StockListCtrl', function() {\n25          var scope;\n26        \
+  \  var $httpBackend, $rootScope, createController, _stockService;\n27     \n28 \
+  \    \t beforeEach(function () {\n29                 module(\"angularjstest\");\
+  \   // Angular 模块初始化\n30             }); \n31     \n32         beforeEach(inject(function($rootScope,\
+  \ $controller, \n33 \t\t\t\t\t$injector ,stockService) {\n34     \n35     \t  $httpBackend\
+  \ = $injector.get('$httpBackend'); \n36 \t\t// 用于测试环境的模拟对象，配合 $http 服务\n37     \t\
+  \  $httpBackend.when('GET', 'stocks.json')\n38 \t\t\t.respond([{\"Product\": \"\
+  REL\", \"BBP\": \"10\", \n39                                    \"BSP\": \"10.2\"\
+  , \"LTP\": \"10.1\"}]); \n40                         // 通过创建 $httpbackend 服务发送模拟数据\n\
+  41     \t  $rootScope = $injector.get('$rootScope');\n42     \t  scope = $rootScope.$new();\n\
+  43     \t  var $controller = $injector.get('$controller'); \n44 \t\t// 为测试环境创建 Angular\
+  \ 控制器\n45     \t  _stockService = stockService;\n46     \t  spyOn(stockService,\
+  \ 'getStocks').andCallThrough(); \n47 \t\t\t// 通过 spyOn 确保调用了 'getStocks' 方法\n48\
+  \     \t  createController = function() { // 创建控制器的方法\n49                   return\
+  \ $controller('StockListCtrl', \n50 \t\t\t{'$scope' : scope }, {stockService : _stockService});\n\
+  51               }; \n52     \n53         }));\n54     \n55         it('should call\
+  \ getStocks', function() {\n56     \t  var controller = createController();\n57\
+  \     \t  expect(_stockService.getStocks).toHaveBeenCalled(); \n58 \t\t\t\t// 服务方法是否被调用\n\
+  59     \t  $httpBackend.flush();\n60         });\n61         it('should have more\
+  \ than 0 stock', function() {\n62     \t  var controller = createController();\n\
+  63     \t  $httpBackend.flush();\n64               expect(scope.stocks.length).not.toBe(0);\
+  \ \n65 \t\t// 期望从此处返回一些股票数据 -\n66                 // 我们已在上方创建了模拟服务\n67     \n68\
+  \         });\n69       });\n70     });\n```\n\n因此，在本章中，我们介绍了在有无 Angular 服务的情况下测试\
+  \ Angular 控制器的方法。\n\n## Angular.js 指令下的 jQuery 插件——一种更简洁的 HTML 方法\n\n![angular-jquery-image-slider](img/00004.jpeg)\n\
+  \nangular-jquery-image-slider\n\n在上一章中，我们介绍了如何从头构建一个 jQuery 插件。这里我们将介绍一种简洁的方法，通过\
+  \ Angular.js 指令生成干净的 HTML，该指令将封装上述 jQuery 插件的功能。该插件已可配置图片移动方向——左、右、上、下。\n\n### 那么什么是\
+  \ Angular.js 指令？\n\n### 直接来自 angularjs.org——\n\n> 指令是一种教 HTML 新技巧的方式。在 DOM 编译期间，指令会与\
+  \ HTML 进行匹配并执行。这使得指令能够注册行为或转换 DOM。\n\n简单来说，我们理解到：在 Angular.js 框架下，我们可以在网页中引入绑定我们规则的新\
+  \ HTML 标签。同时，我们始终可以分离并最小化 HTML 页面中 JavaScript 代码的使用。从本次练习中我们学到的另一件事是，我们可以在 Angular.js\
+  \ 框架封装内，以最小的调整使用现有的复杂 jQuery 插件。现在让我们来看代码。与之前的文章一样，我们将在 HTML 和 JavaScript 代码中添加注释。\n\
+  \n### 主要 HTML 代码片段\n\n```html\n 1     <div class=\"example\" >\n 2         <div\
+  \ image-slider slider-id =\"'slider'\" time-interval=\"3000\" \n 3 \t\t\t\t\t\t\t\
+  my-direction=\"'down'\" >\n 4         <!-- imageSlider 是我们的 Angular 指令名称 -->\n 5\
+  \         <!-- sliderId, timeInterval, myDirection 是三个变量 -->\n 6         <!-- 用于插件运行的\
+  \ UL 元素的 id -->\n 7         <!-- timeInterval 是插件运行的时间间隔，myDirection 是图片滑动的方向 -->\n\
+  \ 8             <ul id=\"slider\">\n 9                 <li><img src=\"Chrysanthemum.jpg\"\
+  \ alt=\"\" width=\"480\" height=\"310\"/>\n10 \t\t\t\t\t\t\t<p>这是第一张幻灯片</p></li>\n\
+  11                 <li><img src=\"Desert.jpg\" width=\"480\" height=\"310\" \n12\
+  \ \t\t\t\t\t\talt=\"\" /><p>这是第二张幻灯片</p></li>\n13             </ul>\n14        \
+  \ </div>\n15     </div>\n```\n\n### Angular 方式的代码\n\n```javascript\n 1 angular.module('AngularSlider',\
+  \ [])\n 2 .directive('imageSlider', function () { // Angular 指令声明\n 3      return\
+  \ {\n 4          restrict: 'A',                 // 该指令为属性类型\n 5          scope:\
+  \ {\n 6              timeInterval: '=',         // 三个初始化变量\n 7              myDirection:\
+  \ '=',\n 8              sliderId: '='\n 9          },\n10          link: function\
+  \ (scope, elem, attrs) {\n11              $('#'+scope.sliderId).plainSlider(scope.myDirection,\n\
+  12 \t\t\t\t\t\t\tscope.timeInterval);\n13              // 在 link 函数中调用 jQuery 插件方法\n\
+  14 \t     // 针对特定的 DOM 元素\n15          }\n16      }\n17 });\n```\n\n此处使用的特定 jQuery\
+  \ 插件相关信息可在《\"Simple jQuery Image Slider Plugin with minimal effects\"》章节中找到。我们的代码可在\
+  \ [Github](https://github.com/piyasde/angulardicective) 中找到。\n\n### 参考资料：\n\n1>\
+  \ [`docs.angularjs.org/guide/directive`](http://docs.angularjs.org/guide/directive)\n\
+  \n2> [`www.befundoo.com/university/tutorials/angularjs-directives-tutorial/`](http://www.befundoo.com/university/tutorials/angularjs-directives-tutorial/).\n\
+  \n## Angular.js 指令中的 D3.js——摆脱 HTML 页面中的 D3 svg 代码\n\n我们在项目中曾使用 **D3.js** 代码生成图表。就我个人而言，这段代码对于初学者来说有些复杂。最近我正在学习\
+  \ **Angular.js** 和 **Angular 指令**。因此我想到引入一个 Angular 指令来封装 D3.js 的复杂功能。于是就有了本章的结果——**借助\
+  \ D3.js 通过 Angular 指令创建柱状图**。\n\n我从 [`bl.ocks.org/mbostock/3885304`](http://bl.ocks.org/mbostock/3885304)\
+  \ 学习了 D3.js 代码。上一章也是我们关于创建 Angular 指令的文档。\n\n### 首先——柱状图图片——\n\n![AngularD3BarGraph](img/00003.jpeg)\n\
+  \nAngularD3BarGraph\n\n### 现在是在 HTML 中的带注释代码片段——\n\n```html\n 1 <body>\n 2 \t<div\
+  \ id=\"d3bar\" angulard3-bar-graph datajson=\"'sample.json'\" \n 3 \t       xaxis-name\
+  \ = \"'Year'\" \n 4 \t       xaxis-pos = \"905\"  \n 5 \t       yaxis-name = \"\
+  'Frequency'\" \n 6 \t       yaxis-pos = \"6\" \n 7 \t       d3-format= \"'.0%'\"\
+  \ >\n 8 \t<!-- angular 指令是 angulard3-bar-graph -->\n 9 \t<!-- 指令变量为 xaxis-name,\
+  \ yaxis-name, xaxis-pos, yaxis-pos -->\n10 \t<!-- y 轴数据格式 (d3-format) -->\n11 \t\
+  <!-- 以及 datajson 变量，它保存外部数据源 -->\n12 \t</div>\n13 </body>\n```\n\n下面是\n\n### 封装了柱状图\
+  \ D3.js 代码的 Angular 指令\n\n\n\n\n\n```\n 1     angular.module('AngularD3BarGraph',\
+  \ []) // Angular Module Name\n 2         .directive('angulard3BarGraph', function\
+  \ () { \n 3 \t\t// Angular Directive\n 4             return {\n 5              \
+  \   restrict: 'A', // Directive Scope is Attribute\n 6                 scope: {\n\
+  \ 7                     datajson: '=',\n 8                     xaxisName: '=',\n\
+  \ 9                     xaxisPos: '=',\n10                     yaxisName: '=',\n\
+  11                     yaxisPos: '=',\n12                     d3Format: '='\n13\
+  \                     // All the Angular Directive Vaiables used as d3.js parameters\n\
+  14                 },\n15                 link: function (scope, elem, attrs) {\n\
+  16                     // The d3.js code for generation of bar graph. \n17 \t\t\
+  \    // further reading should be done from \n18 \t\t    //\thttp://d3js.org/\n\
+  19                     var margin = {top: 20, right: 20, bottom: 30, left: 40},\n\
+  20                         width = 960 - margin.left - margin.right,\n21       \
+  \                  height = 500 - margin.top - margin.bottom;\n22     \n23     \
+  \                var formatPercent = d3.format(scope.d3Format); \n24 \t\t\t\t//\
+  \ formatting via angular variable\n25     \n26                     var x = d3.scale.ordinal()\n\
+  27                            .rangeRoundBands([0, width], .1);\n28     \n29   \
+  \                 var y = d3.scale.linear()\n30                            .range([height,\
+  \ 0]);\n31     \n32                    var xAxis = d3.svg.axis()\n33           \
+  \                 .scale(x)\n34                            .orient(\"bottom\");\n\
+  35     \n36                    var yAxis = d3.svg.axis()\n37                   \
+  \         .scale(y)\n38                            .orient(\"left\")\n39       \
+  \                     .tickFormat(formatPercent);\n40     \n41                 \
+  \   var svg = d3.select(\"#\"+elem[0].id).append(\"svg\") \n42 \t\t\t// selecting\
+  \ the DOM element by d3.js\n43                         // - getting from Angular\
+  \ context  \n44                        .attr(\"width\", width + margin.left + margin.right)\n\
+  45                        .attr(\"height\", height + margin.top + margin.bottom)\n\
+  46                        .append(\"g\")\n47                            .attr(\"\
+  transform\", \n48 \t\t\t\t\"translate(\" + margin.left + \",\" + margin.top + \"\
+  )\");\n49     \n50                   d3.json(scope.datajson, function(error, data)\
+  \ { \n51 \t\t\t// external data filename- angular directive variable\n52       \
+  \                if (error) return console.warn(error);\n53     \n54           \
+  \            x.domain(data.map(function(d) { return d.letter; }));\n55         \
+  \              y.domain([0, d3.max(data, function(d) \n56 \t\t\t\t\t{ return d.frequency;\
+  \ })]);\n57     \n58                       svg.append(\"g\")\n59               \
+  \            .attr(\"class\", \"x axis\")\n60                           .attr(\"\
+  transform\", \"translate(0,\" + height + \")\")\n61                           .call(xAxis)\n\
+  62                           .append(\"text\")\n63                             \
+  \  .attr(\"x\", scope.xaxisPos)\n64                               .attr(\"dx\",\
+  \ \".71em\")\n65                               .style(\"text-anchor\", \"end\")\n\
+  66                               .text(scope.xaxisName);\n67                   \
+  \    // x axis legend setting from angular variables\n68                       svg.append(\"\
+  g\")\n69                           .attr(\"class\", \"y axis\")\n70            \
+  \               .call(yAxis)\n71                           .append(\"text\")\n72\
+  \                               .attr(\"transform\", \"rotate(-90)\")\n73      \
+  \                         .attr(\"y\", scope.yaxisPos)\n74                     \
+  \          .attr(\"dy\", \".71em\")\n75                               .style(\"\
+  text-anchor\", \"end\")\n76                               .text(scope.yaxisName);\n\
+  77                       // y axis legend setting from angular variables\n78   \
+  \                    svg.selectAll(\".bar\")\n79                           .data(data)\n\
+  80                           .enter().append(\"rect\")\n81                     \
+  \      .attr(\"class\", \"bar\")\n82                           .attr(\"x\", function(d)\
+  \ { return x(d.letter); })\n83                           .attr(\"width\", x.rangeBand())\n\
+  84                           .attr(\"y\", function(d) { return y(d.frequency); })\n\
+  85                           .attr(\"height\", function(d) \n86 \t\t\t\t{ return\
+  \ height - y(d.frequency); });\n87                       });\n88               \
+  \    }\n89                }\n90            });\n```\n\n代码可以从 [GitHub](https://github.com/piyasde/d3)\
+  \ 下载。\n\n## 在 Angular 指令中使用 d3.js 和 Prototype.js 的简单柱状图——基于 JavaScript 类的方法\n\n\
+  ![AngularD3 柱状图](img/00003.jpeg)\n\n我们最近正在努力将客户端 JavaScript 代码转换为面向对象的方式。因此，我们经历了\
+  \ JavaScript OOP 的学习过程，并撰写了上一章——JavaScript 的 OOP 方式——一些有趣的研究。在学习 `d3.js` 图形创建的过程中，我们在\
+  \ `Angular.js` 指令中编写了 `D3.js`——这让我们从 HTML 页面中的 D3 SVG 代码中解脱出来。\n\n现在我们正尝试将 `d3.js`\
+  \ 代码分离出来，放入 JavaScript 框架中，为此我们采用了 `prototype.js` 来为 `d3.js` 代码分离创建 JavaScript 类。我们创建了\
+  \ Angular 指令，并通过在 `prototype.js` 中创建类来分离与 `d3.js` 相关的代码，然后在 Angular 指令的链接函数中访问该类实例的相关代码。那么，我们在\
+  \ HTML 中到底做了什么呢？\n\n### 1> 在 HTML 页面中添加 `angular.js`、`prototype.js`、`d3.js` 以及 d3\
+  \ 相关 JavaScript 类的引用\n\n```\n1 <script type=\"text/javascript\" src=\"js/prototype.js\"\
+  ></script>\n2 <script src=\"js/barGraphProto.js\"></script>\n3 <script src=\"http://d3js.org/d3.v3.min.js\"\
+  ></script>\n4 <script type=\"text/javascript\" \n5 \tsrc=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js\"\
+  >\n6 </script>\n```\n\n### 2> 在 HTML 中放置与 `d3.js` 相关的 Angular 指令——\n\n```\n 1 <div\
+  \ id=\"d3bar\" angulard3-bar-graph datajson=\"'sample.json'\" \n 2             \
+  \   xaxis-name = \"'Year'\" \n 3                xaxis-pos = \"905\"  \n 4      \
+  \          yaxis-name = \"'Frequency'\" \n 5                yaxis-pos = \"6\" \n\
+  \ 6                d3-format= \"'.0%'\" >\n 7 \t<!-- angular directive is angulard3-bar-graph\
+  \ -->\n 8 \t<!-- directive variables are xaxis-name,yaxis-name,xaxis-pos,\n 9 \t\
+  \    yaxis-pos,y axis data format(d3-format)\n10 \t    and finally the datajson\
+  \ variable which is holding the external data source -->\n11 </div>\n```\n\n###\
+  \ 3> Angular 指令中的代码——\n\n```\n 1     angular.module('AngularD3BarGraph', []) //\
+  \ Angular Module Name\n 2         .directive('angulard3BarGraph', function () {\
+  \ // Angular Directive\n 3             return {\n 4                 restrict: 'A',\
+  \ // Directive Scope is Attribute\n 5             scope: {\n 6                 datajson:\
+  \ '=',\n 7                 xaxisName: '=',\n 8                 xaxisPos: '=',\n\
+  \ 9                 yaxisName: '=',\n10                 yaxisPos: '=',\n11     \
+  \            d3Format: '='\n12                 // All the Angular Directive Vaiables\
+  \ used as d3.js parameters\n13            },\n14            link: function (scope,\
+  \ elem, attrs) {\n15                  var ourGraph = new BarGraph(scope.datajson,scope.xaxisName,\n\
+  16 \t\t\t\t\t     scope.xaxisPos,scope.yaxisName,\n17                          \
+  \                    scope.yaxisPos,scope.d3Format);\n18                  //d3 related\
+  \ Variable initialisation\n19                  ourGraph.workOnElement('#'+elem[0].id);\
+  \ // Work on particular element\n20                  ourGraph.generateGraph(); \
+  \ // generate the actual bar graph\n21            }\n22         }\n23     });\n\
+  ```\n\n### 4> 与 `d3` 相关的柱状图代码——\n\n\n\n\n\n```\n 1     // properties are directly\
+  \ passed to `create` method\n 2     var BarGraph = Class.create({ // prototype class\
+  \ creation\n 3         initialize: function(datajson,xaxisName,xaxisPos,yaxisName,yaxisPos,d3Format)\
+  \ {\n 4                         this.datajson = datajson;\n 5                  \
+  \       this.xaxisName = xaxisName;\n 6                         this.xaxisPos =\
+  \ xaxisPos;\n 7                         this.yaxisName = yaxisName;\n 8        \
+  \                 this.yaxisPos = yaxisPos;\n 9                         this.d3Format\
+  \ = d3Format;\n10                         // Taking all the variables and set in\
+  \ Class \n11 \t\t\t// Instance Variables (d3 property specific)\n12            \
+  \         },\n13         workOnElement: function(element) {\n14                \
+  \         this.element = element;\n15                         // Taking the DOM\
+  \ Element on which the graph will be drawn \n16                     },\n17     \
+  \    generateGraph: function() {\n18     \n19                        //d3 specific\
+  \ coding\n20                        var margin = {top: 20, right: 20, bottom: 30,\
+  \ left: 40},\n21                            width = 960 - margin.left - margin.right,\n\
+  22                            height = 500 - margin.top - margin.bottom;\n23   \
+  \  \n24                       var formatPercent = d3.format(this.d3Format);\n25\
+  \                          //setting the instance variable to d3 property\n26  \
+  \   \n27                       var x = d3.scale.ordinal()\n28                  \
+  \          .rangeRoundBands([0, width], .1);\n29     \n30                      \
+  \ var y = d3.scale.linear()\n31                               .range([height, 0]);\n\
+  32     \n33                       var xAxis = d3.svg.axis()\n34                \
+  \               .scale(x)\n35                               .orient(\"bottom\");\n\
+  36     \n37                       var yAxis = d3.svg.axis()\n38                \
+  \               .scale(y)\n39                               .orient(\"left\")\n\
+  40                               .tickFormat(formatPercent);\n41     \n42      \
+  \                 var svg = d3.select(this.element).append(\"svg\")\n43        \
+  \                       .attr(\"width\", width + margin.left + margin.right)\n44\
+  \                               .attr(\"height\", height + margin.top + margin.bottom)\n\
+  45                               .append(\"g\")\n46                            \
+  \   .attr(\"transform\", \n47 \t\t\t\t   \"translate(\" + margin.left + \",\" +\
+  \ margin.top + \")\");\n48     \n49                      d3.json(this.datajson,\
+  \ function(error, data) { // getting the data\n50                              \
+  \ if (error) return console.warn(error);\n51     \n52                          \
+  \     x.domain(data.map(function(d) { return d.letter; }));\n53                \
+  \               y.domain([0, d3.max(data, function(d) \n54                     \
+  \                                     { return d.frequency; })]);\n55     \n56 \
+  \                     svg.append(\"g\")\n57                              .attr(\"\
+  class\", \"x axis\")\n58                              .attr(\"transform\", \"translate(0,\"\
+  \ + height + \")\")\n59                              .call(xAxis)\n60          \
+  \                    .append(\"text\")\n61                              .attr(\"\
+  x\", this.xaxisPos)\n62                              .attr(\"dx\", \".71em\")\n\
+  63                              .style(\"text-anchor\", \"end\")\n64           \
+  \                   .text(this.xaxisName);\n65     \n66                      svg.append(\"\
+  g\")\n67                              .attr(\"class\", \"y axis\")\n68         \
+  \                     .call(yAxis)\n69                              .append(\"text\"\
+  )\n70                              .attr(\"transform\", \"rotate(-90)\")\n71   \
+  \                           .attr(\"y\", this.yaxisPos)\n72                    \
+  \          .attr(\"dy\", \".71em\")\n73                              .style(\"text-anchor\"\
+  , \"end\")\n74                              .text(this.yaxisName);\n75     \n76\
+  \                      svg.selectAll(\".bar\")\n77                             \
+  \ .data(data)\n78                              .enter().append(\"rect\")\n79   \
+  \                           .attr(\"class\", \"bar\")\n80                      \
+  \        .attr(\"x\", function(d) { return x(d.letter); })\n81                 \
+  \             .attr(\"width\", x.rangeBand())\n82                              .attr(\"\
+  y\", function(d) { return y(d.frequency); })\n83                              .attr(\"\
+  height\", function(d) \n84 \t\t\t\t  { return height - y(d.frequency); });\n85 \
+  \                }.bind(this)); // the bind syntax is important. \n86 \t\t\t   \
+  \    // Otherwise class instance variables will \n87                           \
+  \     // not be accessible in inner function\n88              }\n89         });\n\
+  ```\n\n[这里](http://www.phloxblog.in/wp-content/uploads/2013/07/angularProto.zip)是供读者感兴趣的代码。我们将在下一章中在\
+  \ Angular.js 指令中重用与 d3 相关的 JavaScript 类代码。\n\n## 使用 d3.js 和 Prototype.js 在 Angular\
+  \ 指令中的简单柱状图 – 基于元素的指令定义\n\n![AngularD3 柱状图](img/00003.jpeg)\n\nAngularD3 柱状图\n\n\
+  我们最近正在努力将客户端 JavaScript 代码转换为面向对象的方法。因此，我们经历了 JavaScript OOP 的学习过程，并撰写了上一章——`Javascript\
+  \ in OOP Way -- some interesting study`，在学习 d3.js 图形创建的同时，我们编写了`D3.js in Angular.js\
+  \ Directive -- a relief from D3 svg code in HTML Page`。\n\n我们已经将 d3.js 代码分离出来放入\
+  \ JavaScript 类中，为此我们使用了 prototype.js 来创建用于 d3.js 代码分离的 JavaScript 类。因此，`Simple Bar\
+  \ Graph with d3.js and Prototype.js - a Javascript Class based Approach`是我们之前的章节之一。当前章节是\
+  \ Angular 指令的一个变体——它是一个基于元素的指令。\n\n**示例 -**\n\n在 HTML 中，我们想要引入新的标签元素，比如`<bargraph\
+  \ />`。我们创建了 Angular 指令，并通过在 prototype.js 中创建类来分离 d3.js 相关代码，然后在 Angular 指令的`Complie`函数中访问类实例相关代码。那么我们在\
+  \ HTML 中到底做了什么？\n\n### 1> 在 HTML 页面中添加了`angular.js`、`prototype.js`、`d3.js`以及 d3\
+  \ 相关 JavaScript 类的引用\n\n```\n1      <script type=\"text/javascript\" src=\"js/prototype.js\"\
+  ></script>\n2      <script src=\"js/barGraphProto.js\"></script>\n3      <script\
+  \ src=\"http://d3js.org/d3.v3.min.js\"></script>\n4      <script type=\"text/javascript\"\
+  \ \n5 \tsrc=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js\"\
+  >\n6      </script>\n```\n\n### 2> 将 d3.js 相关的 Angular 指令放入 HTML 中 -\n\n```\n 1\
+  \     <bargraph id=\"d3bar\" \n 2               datajson=\"sample.json\" \n 3  \
+  \             xaxis-name = \"'Year'\" \n 4               xaxis-pos = \"905\" \n\
+  \ 5               yaxis-name = \"'Frequency'\" \n 6               yaxis-pos = \"\
+  6\" \n 7               d3-format= \"'.0%'\" />\n 8        <!-- angular directive\
+  \ is bargraph -->\n 9        <!-- here \"d3bar\" is the id of bargraph tag directive\
+  \ variables are \n10 \t    xaxis-name,yaxis-name,xaxis-pos,yaxis-pos,\n11      \
+  \       yaxis data format(d3-format) and finally the datajson variable \n12 \t \
+  \   which is holding the external data source -->\n```\n\n### 3> Angular 指令中的代码\
+  \ -\n\n\n\n\n\n```\n 1 angular.module('AngularD3BarGraph', []) // Angular Module\
+  \ Name\n 2 .directive('bargraph', function () { // Angular Directive\n 3     return\
+  \ {\n 4         restrict: 'E', // Directive Scope is Element\n 5         replace:\
+  \ true, // replace original markup with template\n 6         transclude: false,\
+  \ // not to copy original HTML DOM\n 7         compile: function (elem, attrs) {\
+  \ // the compilation of DOM is done here.\n 8 \t// It is responsible for produce\
+  \ HTML DOM or it returns a \n 9 \t// combined link function. Further Docuumentation\
+  \ on this - \n10 \t// http://docs.angularjs.org/guide/directive\n11 \n12 \n13  \
+  \           var html = \"<div id='\" + attrs.id + \"' ></div>\"; \n14 \t\t\t// the\
+  \ HTML to be produced\n15             var newElem = $(html);\n16             elem.replaceWith(newElem);\
+  \ // Replacement of the element.\n17             var ourGraph = new BarGraph(attrs.datajson,attrs.xaxisName,\n\
+  18 \t\t\t\t\tattrs.xaxisPos,attrs.yaxisName,\n19 \t\t\t                attrs.yaxisPos,attrs.d3Format);\n\
+  20 \n21 \t\t                //d3 related Variable initialisation             \n\
+  22 \n23             ourGraph.workOnElement('#'+attrs.id);\n24             // Work\
+  \ on particular element\n25             ourGraph.generateGraph();  // generate the\
+  \ actual bar graph\n26    }\n27 }\n28 });\n```\n\n### 与 d3 相关的柱状图代码\n\n```\n 1 \
+  \    // properties are directly passed to `create` method\n 2     var BarGraph =\
+  \ Class.create({ // prototype class creation\n 3         initialize: function(datajson,xaxisName,xaxisPos,yaxisName,yaxisPos,d3Format)\
+  \ {\n 4                         this.datajson = datajson;\n 5                  \
+  \       this.xaxisName = xaxisName;\n 6                         this.xaxisPos =\
+  \ xaxisPos;\n 7                         this.yaxisName = yaxisName;\n 8        \
+  \                 this.yaxisPos = yaxisPos;\n 9                         this.d3Format\
+  \ = d3Format;\n10                         // Taking all the variables and set in\
+  \ Class \n11 \t\t\t// Instance Variables (d3 property specific)\n12            \
+  \         },\n13         workOnElement: function(element) {\n14                \
+  \         this.element = element;\n15                         // Taking the DOM\
+  \ Element on which the graph will be drawn\n16                     },\n17      \
+  \   generateGraph: function() {\n18     \n19                        //d3 specific\
+  \ coding\n20 \n21                        var margin = {top: 20, right: 20, bottom:\
+  \ 30, left: 40},\n22                            width = 960 - margin.left - margin.right,\n\
+  23                            height = 500 - margin.top - margin.bottom;\n24   \
+  \  \n25                       var formatPercent = d3.format(this.d3Format);\n26\
+  \ \t\t\t//setting the instance variable to d3 property\n27     \n28            \
+  \           var x = d3.scale.ordinal()\n29                            .rangeRoundBands([0,\
+  \ width], .1);\n30     \n31                       var y = d3.scale.linear()\n32\
+  \                               .range([height, 0]);\n33     \n34              \
+  \         var xAxis = d3.svg.axis()\n35                               .scale(x)\n\
+  36                               .orient(\"bottom\");\n37     \n38             \
+  \          var yAxis = d3.svg.axis()\n39                               .scale(y)\n\
+  40                               .orient(\"left\")\n41                         \
+  \      .tickFormat(formatPercent);\n42     \n43                       var svg =\
+  \ d3.select(this.element).append(\"svg\")\n44                               .attr(\"\
+  width\", width + margin.left + margin.right)\n45                               .attr(\"\
+  height\", height + margin.top + margin.bottom)\n46                             \
+  \  .append(\"g\")\n47                               .attr(\"transform\", \"translate(\"\
+  \ + margin.left + \",\" + margin\\\n48 .top + \")\");\n49     \n50             \
+  \         d3.json(this.datajson, function(error, data) { // getting the data\n51\
+  \                               if (error) return console.warn(error);\n52     \n\
+  53                               x.domain(data.map(function(d) { return d.letter;\
+  \ }));\n54                               y.domain([0, d3.max(data, function(d) {\
+  \ return d.frequency; \\\n55 })]);\n56     \n57                      svg.append(\"\
+  g\")\n58                              .attr(\"class\", \"x axis\")\n59         \
+  \                     .attr(\"transform\", \"translate(0,\" + height + \")\")\n\
+  60                              .call(xAxis)\n61                              .append(\"\
+  text\")\n62                              .attr(\"x\", this.xaxisPos)\n63       \
+  \                       .attr(\"dx\", \".71em\")\n64                           \
+  \   .style(\"text-anchor\", \"end\")\n65                              .text(this.xaxisName);\n\
+  66     \n67                      svg.append(\"g\")\n68                         \
+  \     .attr(\"class\", \"y axis\")\n69                              .call(yAxis)\n\
+  70                              .append(\"text\")\n71                          \
+  \    .attr(\"transform\", \"rotate(-90)\")\n72                              .attr(\"\
+  y\", this.yaxisPos)\n73                              .attr(\"dy\", \".71em\")\n\
+  74                              .style(\"text-anchor\", \"end\")\n75           \
+  \                   .text(this.yaxisName);\n76     \n77                      svg.selectAll(\"\
+  .bar\")\n78                              .data(data)\n79                       \
+  \       .enter().append(\"rect\")\n80                              .attr(\"class\"\
+  , \"bar\")\n81                              .attr(\"x\", function(d) { return x(d.letter);\
+  \ })\n82                              .attr(\"width\", x.rangeBand())\n83      \
+  \                        .attr(\"y\", function(d) { return y(d.frequency); })\n\
+  84                              .attr(\"height\", function(d) { return height -\
+  \ y(d.frequency);\\\n85  });\n86                 }.bind(this)); // the bind syntax\
+  \ is important. \n87 \t\t\t       // Otherwise class instance variables will not\
+  \ be\n88                                // accessible in inner function\n89    \
+  \          }\n90         });\n```\n\n[此处](http://www.phloxblog.in/wp-content/uploads/2013/07/angularElementProto.zip)是供读者参考的代码。\n\
+  \n## 创建 Google Chrome 扩展以添加自定义 RSS 订阅阅读器\n\n我们制作了一个 RSS 订阅阅读器，它能够通过标签导航在同一页面中读取多个\
+  \ RSS 订阅。我们使用了 `Bootstrap.js` 和 CSS，从开发者的角度为应用程序提供了标准 UI。接下来，我们尝试将这个 RSS 订阅阅读器作为\
+  \ Google Chrome 扩展提供。其背后的想法是——当我们连接互联网并打开 Google Chrome 浏览器，点击一个图标时，所有与我们相关的当前新闻都能随时可用。下面是该订阅阅读器的图示。\n\
+  \n![RSS 订阅阅读器](img/00005.jpeg)\n\nRSS 订阅阅读器\n\n我们使用了一些技术和技巧来实现这一点。下面列出如下：\n\n**1>\
+  \ 我们制作了一个自定义的 PHP RSS 订阅阅读器**\n\n**2> 我们集成了 `bootstrap.js` 和 CSS，以创建带有标签导航的标准 UI**\n\
+  \n**3> 我们使阅读器支持跨域 Ajax 请求**\n\n**4> 我们制作了一个 Google Chrome 扩展**\n\n**5> 我们使用了 Google\
+  \ 字体来装饰内容**\n\n**6> 我们授予了 Google Chrome 扩展从外部 URL 读取订阅的权限**\n\n关于第 1、2 和 3 点，读者应阅读[使用\
+  \ Bootstrap.js 和 CSS 创建 RSS 订阅阅读器并进行装饰](http://www.phloxblog.in/creating-rss-feed-reader-decorating-bootstrap-js/)。\n\
+  \n现在，要制作 Chrome 扩展，读者应阅读[入门：构建 Chrome 扩展](https://developer.chrome.com/extensions/getstarted.html)。\n\
+  \n### 对 UI 进行一点装饰——使用 Google 字体，我们使用了——\n\n```\n1     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab'\
+  \ rel='stylesheet' type\\\n2 ='text/css'>\n3     <style>\n4     body {\n5     .....\n\
+  6     \n7     font-family: 'Josefin Slab', serif;\n8     }\n9     </style>\n```\n\
+  \n### 另一个给读者的提示——阅读[入门：构建 Chrome 扩展](https://developer.chrome.com/extensions/getstarted.html)后，我们将了解配置文件——`manifest.jon`。\n\
+  \n\n\n\n\n现在，要使 Chrome 扩展程序能够访问互联网上的任何外部内容，我们需要在 `manifest.json` 中授予相应的权限。\n\n###\
+  \ 以下是权限代码片段：\n\n```\n1     ....\n2       \"permissions\": [\n3         \"http://phloxblog.in/\"\
+  \n4       ],\n5     ....\n```\n\n因为我们通过自己托管的服务器获取外部订阅源内容。\n\n**编码：**\n\n服务端的 PHP\
+  \ 代码可以在此处下载：[这里](http://www.phloxblog.in/wp-content/uploads/2013/06/rss.zip)。Google\
+  \ Chrome 扩展程序的完整代码也可在此处获取：[这里](http://www.phloxblog.in/wp-content/uploads/2013/06/ExperimentGC.zip)。\n\
+  \n因此，我们在此提供了未打包版本的扩展程序，读者可以自行试验，并根据自己的想法使其更加实用。\n\n## 在 Google Chrome 扩展程序中使用 Angular.js、HTML5\
+  \ LocalStorage 和 Bootstrap 装饰的任务列表\n\n我们曾设想创建一个每日任务列表作为 Google Chrome 扩展程序，并附带与每日感兴趣新闻相关的新闻订阅源阅读器。以下是使用以下集成工具制作的\
+  \ Chrome 扩展程序：\n\n### 1. Angular.js\n\n用于实现任务列表和任务添加功能。\n\n### 2. HTML5 LocalStorage\n\
+  \n用于将任务数据保存在临时存储中，并从中提供数据。\n\n### 3. 集成我们自己的个人订阅源阅读器\n\n以便获取有用的新闻。\n\n### 4. 制作一个极简的\
+  \ Google Chrome 扩展程序\n\n使其可在 Google Chrome 浏览器中使用。\n\n以下是我们之前的相关文章：\n\n**HTML5 和\
+  \ LocalStorage：**\n\nA. [HTML5 LocalStorage 和 Json 对象 – 一些操作](http://www.phloxblog.in/html5-localstorage-json-object-operations/)\n\
+  \n**RSS 订阅源阅读器：**\n\nB. [创建 RSS 订阅源阅读器并使用 Bootstrap.js 和 CSS 进行装饰](http://www.phloxblog.in/creating-google-chrome-extension-add-custom-rss-feed-reader/)\n\
+  \n**在 Google Chrome 扩展程序中集成订阅源阅读器：**\n\nC. [创建 Google Chrome 扩展程序以添加自定义 RSS 订阅源阅读器](http://www.phloxblog.in/creating-google-chrome-extension-add-custom-rss-feed-reader/)\n\
+  \n[这里](http://www.phloxblog.in/wp-content/uploads/2013/06/Experiment1.zip) 是我们使用\
+  \ Angular.js、HTML5 LocalStorage 和 RSS 订阅源阅读器的工作代码库。\n\n读者也可以在 [github](https://github.com/piyasde/Experiment)\
+  \ 上找到代码。另外，[这里](http://www.phloxblog.in/wp-content/uploads/2013/06/Experiment19032013.zip)\
+  \ 是我们的 Google Chrome 扩展程序。\n\n读者可以在 [Google Chrome 网上应用店](https://chrome.google.com/webstore/detail/task-list-and-feed-reader/igiphijnjbhhpkbdgmjdlfdoacojddig)\
+  \ 中体验它。\n\n我们在本文前面提到的文章中已经讨论了制作 RSS 订阅源阅读器、Bootstrap 集成以及制作 Google Chrome 扩展程序的部分。以下是扩展程序的图片：\n\
+  \n![任务列表和订阅源阅读器](img/00006.jpeg)\n\n任务列表和订阅源阅读器\n\n这里我们主要展示和讨论 **Angular.js 和 HTML5\
+  \ LocalStorage 的集成**。\n\n我们将在代码中内联注释以帮助理解。\n\n### Angular.js 中的 HTML 模板\n\n用于显示任务列表的代码（`listtodo.html`）如下：\n\
+  \n```\n 1 <form ng-submit=\"clear()\">  \n 2 <!-- 提交此表单时，将触发控制器中的 clear 方法 -->\n\
+  \ 3 <div style=\"float:right;\"><center><button type=\"submit\" >\n 4 \t\t\tClear\
+  \ Tasks</button></center></div>\n 5   <ul style=\"list-style-type:none\">\n 6  \
+  \    <li ng-repeat=\"todo in todos\" > \n 7 \t<!-- 我们最喜欢的 angular.js 重复器功能 -->\n\
+  \ 8         <p>{{todo.task}}</p> \n 9 \t<!-- todo 对象中的任务元素将在此处显示。它是一个 Json 元素 -->\n\
+  10      </li>\n11   </ul>\n12 </form>\n```\n\n#### 用于显示添加任务的代码（`addtodo.html`）如下：\n\
+  \n```\n 1 <form ng-submit=\"save()\"> <!-- 控制器中将数据保存到 localstorage 的方法 -->\n 2 <fieldset>\n\
+  \ 3   <legend>New Task</legend>\n 4   <div class=\"control-group\">\n 5      <center><input\
+  \ type=\"text\" placeholder=\"Task...\" ng-model=\"task\" \n 6 \t\t\t\t\t\tsize=50\
+  \ required/></center> \n 7 \t<!--Angular.js 模型-->\n 8   </div>\n 9 </fieldset>\n\
+  10 <p>\n11    <div><center><button type=\"submit\" >Remember it...</button></center></div>\n\
+  12 </p>\n13 </form>\n```\n\n#### `index.html` 中的主要代码片段如下：\n\n```\n 1 <html lang=\"\
+  en\" ng-app=\"taskslist\" ng-csp=\"\"> \n 2 <!-- 在 Chrome 扩展程序中启用 angular.js (ng-csp)-->\n\
+  \ 3 .....\n 4 <div ng-controller=\"TaskListCtrl\" > \n 5 <!-- Angular 控制器，负责在视图中渲染数据\
+  \ -->\n 6 .....\n 7 <div id=\"addtodo\" class=\"tab-pane fade\" ng-include=\"'views/addtodo.html'\"\
+  ></div> \n 8 <div id=\"listtodo\" class=\"tab-pane fade active in\" ng-include=\"\
+  'views/listtodo.html'\"></div>\n 9 <!-- 使用 ng-include 添加 angular 模板 -->\n```\n\n\
+  #### 现在，控制器中的主要代码片段：\n\n```\n 1       /* 控制器 */\n 2       function TaskListCtrl($scope,$location)\
+  \ {\n 3     \n 4         $scope.save = function() {\n 5               var tmpVar\
+  \ = {}; \n 6     \t  tmpVar.task = this.task; \n 7 \t\t// 新的 json 对象，用于从 angular.js\
+  \ 模型获取数据\n 8     \t  this.task = '';\n 9     \t  $scope.todos.push(tmpVar); \n10\
+  \ \t\t// 将 json 对象推入 angular $scope 变量中的数组\n11     \t  localStorage.setItem(\"todoList\"\
+  , JSON.stringify($scope.todos)); \n12 \t\t\t// 将数组保存到 html5 本地存储\n13     \t  console.log($scope.todos.length);\n\
+  14     \t  $scope.list();\n15         };\n16     \n17         //数据加载\n18       \
+  \  $scope.list = function(){ \t \n19     \t  if(typeof $scope.todos ==='undefined')\n\
+  20     \t  {\n21     \t\t  if(localStorage.getItem(\"todoList\") ===null)\n22  \
+  \   \t\t  {\n23     \t\t  \t$scope.todos = [];\n24     \t\t  }\n25     \t\t  else\n\
+  26     \t\t  {\n27     \t\t  \t$scope.todos = JSON.parse(localStorage.getItem(\"\
+  todoList\")); \n28 \t\t\t// 从 localstorage 获取值\n29     \t\t  }\n30     \t  } \n\
+  31     \t  else\n32     \t  {\n33     \t\t  console.log('length'+$scope.todos.length);\n\
+  34     \t  }\n35     \t};\n36     \n37         $scope.clear = function(){ \t\n38\
+  \     \t\t  $scope.todos = [];\n39     \t\t  localStorage.setItem(\"todoList\",\
+  \ JSON.stringify($scope.todos)); \n40                       // 清除 HTML5 localstorage\
+  \ 中特定存储变量的所有值\n41     \t};\n42     \n43        $scope.list(); \n44 \t// 每当我们通过这个\
+  \ angular 控制器时，都会触发 list 方法\n45        if(!$scope.$$phase) {\n46     \t$scope.$apply();\
+  \ // 应用 angular $scope 中的所有更改\n47        }\n48     }\n```\n\n## 图数据库的初步概念\n\n我们将逐步尝试在文章中结合\
+  \ neo4j（一种图数据库）来阐明图数据库的概念。\n\n以下是我们的第一篇文章，描述了图数据库的快速入门概念。\n\n**图：**\n\n图由相互连接的节点中的信息组成。一个图也可以只包含一个节点。一个特定的节点可以拥有多个属性，以键值对的形式存在。此外，节点可以通过多种方式连接，我们称之为关系。\n\
+  \n**示例：**\n\n学校信息是一个单独的节点。学生和教师是不同的节点，通过关系连接。\n\n学生（节点）在（关系）学校（节点）学习。\n\n教师（节点）在（关系）学校（节点）教学。\n\
+  \n学校有名称、地址、建校年份、认证等，这些可以描述为属性。\n\n学生有姓名、地址、入学年份、班级等，这些可以描述为属性。\n\n教师有姓名、地址、入职年份、最高学历等，这些可以描述为属性。\n\
+  \n**节点：**\n\n节点是图中每一组实体信息的集合。\n\n**示例：**\n\n如果我们将学校信息系统视为一个图，\n\n学校本身是学校图中的一个节点。\n\
+  \n每个学生是学校图中的一个节点。\n\n同样，每个教师也是学校图中的一个节点。\n\n**关系：**\n\n节点通过某些信息连接起来——这些信息就是图中的关系。\n\
+  \n**示例：**\n\n学生在学校学习。\n\n教师在学校教学。\n\n\n\n\n\n这里 `study` 和 `teach` 是学校图中节点之间的关系信息。\n\
+  \n## 标签\n\n当节点在图中形成一组，并通过某些信息进行标识时，这些信息就被称为标签。\n\n### 示例\n\n在学校图中，我们可以为学校图中的所有学生标记\
+  \ `(All Students)` 标签。\n\n同样，可以为相应的学生赋予 `(5th Class Students)`、`(6th Class Students)`\
+  \ 标签。\n\n这里的 `(All Students)`、`(5th Class Students)`、`(6th Class Students)` 可以称为子图。\n\
+  \n## 节点遍历\n\n当我们在所有节点的图中查找某些特定信息时，我们会按照某种预先确定的最优方式处理信息，这称为图遍历。\n\n### 示例\n\n在学校图中，要获取诸如“教授五年级学生的老师姓名”这样的信息，我们可以通过以下方式遍历：\n\
+  \n在 `(Particular School)` –>> `study by` –>> `(5th Class Students)` –>> `Teached\
+  \ by` –>> `(Teachers)`\n\n注意：以上是遍历信息，可用于理解图中的遍历。\n\n## 索引\n\n当我们想要获取节点或关系的特定信息集时，我们将所有这些信息放入特定的映射中，这些映射称为索引。\n\
+  \n### 示例\n\n在学校图中，我们可以为 `(Science Subject Teachers)`、`(Art Subject Teachers)` 等设置特定的节点集，并将其放入索引中。\n\
+  \n在我们后续关于图数据库的文章中，我们将描述一个可以使用图数据库的案例研究。\n\n然后，我们将描述在 `neo4j` 上下文中通过 `Cypher Query`\
+  \ 从图数据库获得的模式和信息。\n\n## 基于 Neo4j Cypher 查询的图数据库案例研究\n\n我们在此展示一个与图数据库模型相关的典型案例研究。\n\
+  \n### 图数据库案例研究\n\n#### 节点\n\n- 实体 – `User`（表示为节点）\n- 实体 – `Organisation`（表示为节点）\n\
+  - 实体 – `Project`（表示为节点）\n- 实体 – `Skill`（表示为节点）\n\n#### 关系\n\n- 用户在组织中工作 –（关系 – `worked`）\n\
+  - 用户关注组织 –（关系 – `following`）\n- 用户完成过项目 –（关系 – `has done`）\n- 用户拥有技能 –（关系 – `has`）\n\
+  - 用户是用户的朋友 –（关系 – `is Friend`）\n\n### 图数据库表示的图解模型\n\n![图数据库图解](img/00007.gif)\n\n\
+  图数据库图解\n\n## 示例图数据库的 Neo4j Cypher 查询快速浏览\n\n我们尝试展示不同的 Neo4j Cypher 查询，以展示图数据库的不同功能。\n\
+  \n要开始了解图数据库的基本概念，请阅读前面章节中的《图数据库基本概念》和《基于 Neo4j Cypher 查询的图数据库案例研究》。\n\n### 安装\n\n\
+  从 (http://www.neo4j.org/download) 安装 Neo4J。\n\n在 Windows 中启动 Neo4j 服务器：\n\n`neo4j.bat\
+  \ start`\n\n然后打开浏览器访问地址 – `http://localhost:7474`\n\n以下是我们之前在数据控制台上测试过的 Cypher 查询，这些查询与前一章节中提到的模型相关。\n\
+  \n### 创建节点\n\n```\nCREATE (user {entitytype:'user', name : 'bill'}) return user;\n\
+  ```\n\n```\nCREATE (company {entitytype:'company', name : 'CTS'}) return company;\n\
+  ```\n\n```\nCREATE (project {entitytype:'project', name : 'ABC Insurance'}) return\
+  \ project;\n```\n\n```\nCREATE (skill {entitytype:'skill', name : 'HTML, CSS'})\
+  \ return skill;\n```\n\n这里展示了一些节点创建的示例。\n\n### 创建关系\n\n```\nSTART user=node(1),\
+  \ company=node(9) CREATE relation = user-[:WORKS_AT]->company return relation;\n\
+  ```\n\n```\nSTART user=node(7), company=node(9) CREATE relation = user-[:FOLLOWS]->company\
+  \ return relation;\n```\n\n```\nSTART user=node(5), skill=node(12) CREATE relation\
+  \ = user-[:HAS_SKILL]->skill return relation;\n```\n\n```\nSTART user=node(6), seconduser=node(7)\
+  \ CREATE relation = user-[:FRIEND]->seconduser return relation;\n```\n\n```\nSTART\
+  \ user=node(6), work=node(11) CREATE relation = user-[:CURRENT_ENGADGEMENT]->work\
+  \ return relation;\n```\n\n```\nSTART user=node(6), work=node(11) CREATE relation\
+  \ = user-[:CURRENT_ENGADGEMENT]->work return relation;\n```\n\n```\nSTART company=node(9),\
+  \ project=node(11) CREATE relation = company-[:EXECUTING_UNDER]->project return\
+  \ relation;\n```\n\n这里展示了一些关系创建的示例。\n\n### 删除节点\n\n```\nSTART nullnode=node(0),\
+  \ DELETE nullnode;\n```\n\n// 删除一个节点\n\n### 获取节点和关系\n\n```\nstart n = node(*) return\
+  \ n;\n```\n\n// 查看所有节点\n\n```\nstart r = relationship(*) return r;\n```\n\n// 查看所有关系\n\
+  \n```\nstart n = node:node_auto_index(name = 'john') return n;\n```\n\n// 选择特定用户\
+  \ –> 通过索引选择数据\n\n```\nSTART n=node(*) WHERE has(n.name) RETURN n;\n```\n\n// 选择具有\
+  \ name 属性的节点\n\n```\nSTART n=node(*) WHERE has(n.name) and (n.entitytype = 'skill')\
+  \ RETURN n;\n```\n\n// 选择 entitytype = 'Skill' 的节点\n\n#### 索引\n\n// 获取节点和关系中的索引\n\
+  \n```\nSTART n=node(*) WHERE has(n.name) and n.name =~ 'j.*' return n;\n```\n\n\
+  // 从索引中选择节点名称以 \"j\" 开头的节点\n\n```\nSTART n=node(*) WHERE has(n.name) and n.name\
+  \ =~ '.*j.*' return n;\n```\n\n// 从索引中选择节点名称包含 \"j\" 的节点\n\n```\nstart n = node(6)\
+  \ match(n)–(x) return x;\n```\n\n// 返回与节点 6 相关的所有节点\n\n```\nstart n = node:node_auto_index(name='andrew')\
+  \ match(n)–(x) return x;\n```\n\n// 返回与节点名称 'andrew' 相关的所有节点\n\n```\nstart n = node:node_auto_index(name='andrew')\
+  \ match(n)<–(x) return x;\n```\n\n// 返回所有与 'andrew' 有入向关系的节点\n\n```\nstart n = node:node_auto_index(name='andrew')\
+  \ match(n)–>(x) return x;\n```\n\n// 返回所有与 'andrew' 有出向关系的节点\n\n// 注意：这里将返回 andrew\
+  \ 具有出向关系的所有实体类型（skill, project, user, company）\n\n```\nSTART n=node:node_auto_index(name='andrew')\
+  \ MATCH (n)-[:WORKS_AT]->(x) RETURN x;\n```\n\n// 按关系类型和出向节点匹配\n\n```\nSTART n=node:node_auto_index(name='linda')\
+  \ MATCH (n)-[:FRIEND]->(x) RETURN x;\n```\n\n// 这里的结果将是 'andrew'，他是 'linda' 的出向关系\n\
+  \n```\nSTART n=node:node_auto_index(name='linda') MATCH (n)<-[:FRIEND]-(x) RETURN\
+  \ x;\n```\n\n// 这里的结果将是 'john'，对于他来说 'linda' 是出向关系\n\n```\nSTART n=node:node_auto_index(name='andrew')\
+  \ MATCH (n)-[r:WORKS_AT]->() return r;\n```\n\n// 按关系类型匹配并使用标识符\n\n```\nSTART a=node:node_auto_index(name='andrew')\
+  \ MATCH (a)-[:WORKS_AT]->(b)<-[:WORKS_AT]-(c) return a,b,c\n```\n\n// 返回多个关系\n\n\
+  // 这里将返回所有在 'IBM' 工作的人，因为 'andrew' 在 'IBM' 工作\n\n```\nSTART n=node(*) WHERE has(n.name)\
+  \ and (n.name =~ 'john.*') RETURN n;\n```\n\n// 查询中的 WHERE 条件、'节点中存在属性' 子句以及 LIKE\
+  \ 子句\n\n```\nSTART n=node(*) WHERE n.entitytype? = \"skill\" RETURN n;\n```\n\n\
+  // 如果节点缺少属性，则默认为 true，并返回所有其他匹配的节点\n\n```\nSTART n=node(*) WHERE n.entitytype! =\
+  \ \"skill\" RETURN n;\n```\n\n// 仅返回匹配的节点。注意：\"!=\" 和 \"! =\" 不同\n\n```\nSTART persons=node(*),\
+  \ company=node:node_auto_index(name='IBM') WHERE has(persons.name) and (persons.entitytype='user')\
+  \ and not(persons–>company) RETURN persons;\n```\n\n// 将返回与 'IBM' 没有关系的人员\n\n```\n\
+  START persons=node(*), company=node:node_auto_index(name='IBM') WHERE has(persons.name)\
+  \ and (persons.entitytype='user') and (persons–>company) RETURN persons;\n```\n\n\
+  // 将返回与 'IBM' 有关系的人员（注意这里的 'WORKS_AT' 和 'FOLLOWS' 关系）\n\n```\nSTART persons=node(*),\
+  \ company=node:node_auto_index(name='IBM') WHERE has(persons.name) and (persons.entitytype='user')\
+  \ and (persons-[:WORKS_AT]->company) RETURN persons;\n```\n\n// 将返回与 'IBM' 有关系的人员（仅\
+  \ 'WORKS_AT' 关系）\n\n\n\n\n\n```cypher\nSTART me=node:node_auto_index(name='andrew')\
+  \ MATCH me-->friend where (friend.entitytype='user') RETURN count(friend),friend;\n\
+  // Return only those users who are outbound to 'andrew'\n```\n\n```cypher\nSTART\
+  \ me=node:node_auto_index(name='andrew') MATCH me<--friend<--friend_of_friend where\
+  \ (friend_of_friend.entitytype='user') RETURN count(friend_of_friend),friend_of_friend;\n\
+  // This is a 'friend of friend' relationship. Here 'John' is friend of 'linda' and\
+  \ 'linda' is friend of 'andrew'\n```\n\n```cypher\nSTART me=node:node_auto_index(name='andrew'),company=node:node_auto_index(name='CTS')\
+  \ MATCH me<--friend<--friend_of_friend where (friend_of_friend.entitytype='user')\
+  \ and (friend_of_friend-[:WORKS_AT]->company) RETURN count(friend_of_friend),friend_of_friend,company;\n\
+  // This is a 'friend of friend' relationship. Here 'John' is friend of 'linda' and\
+  \ 'linda' is friend of 'andrew' and he is returned as he is working in 'CTS'\n```\n\
+  \n```cypher\nSTART me=node:node_auto_index(name='andrew'),company=node(8,9) MATCH\
+  \ me<--friend<--friend_of_friend where (friend_of_friend.entitytype='user') and\
+  \ (friend_of_friend-[:WORKS_AT]->company) RETURN count(friend_of_friend),friend_of_friend,company;\n\
+  // Same Query of above for selection of all the companies\n```\n\n```cypher\nstart\
+  \ n = node:node_auto_index(name='UI Restructuring') match n<--x<-[:WORKS_AT]-x1\
+  \ return x1;\n// Here the project is done in 'IBM' and nodes – 'x1' are working\
+  \ in the company;\n```\n\n```cypher\nstart n = node:node_auto_index(name='UI Restructuring')\
+  \ match n<--x<-[:FOLLOWS]-x1 return x1;\n// Here the project is done in 'IBM' and\
+  \ nodes – 'x1' are following the company;\n```\n\n```cypher\nSTART n=node:node_auto_index(name='jude')\
+  \ MATCH (n)-[:WORKS_AT]->x<-[:FOLLOWS]-x1 return x1;\n// return all the nodes which\
+  \ follows the company on which 'jude' is working;\n```\n\n```cypher\nSTART n=node:node_auto_index(name='CTS')\
+  \ MATCH (n)<-[r:WORKS_AT]-() RETURN type(r), count(*);\n// How much nodes are in\
+  \ the graph who are with 'WORKS_AT' in 'CTS'\n```\n\n```cypher\nSTART n=node(*)\
+  \ RETURN distinct(n.entitytype?); // Select distinct entity types\n```\n\n```cypher\n\
+  START person=node:node_auto_index('name: *') MATCH person-[?:WORKS_AT]->company\
+  \ where person.entitytype ='user' RETURN person.name\n// return all the nodes with\
+  \ 'WORKS_AT' relationship\n```\n\n```cypher\nSTART begin = node(4), end = node(7)\
+  \ MATCH p = begin -[*]-> end foreach(n in nodes(p) : SET n.network = true);\n//\
+  \ Updating connecting nodes and example of loop in cypher query\n```\n\n```cypher\n\
+  START begin = node(4), end = node(7) MATCH p = begin -[*]-> end return *; // showing\
+  \ the result of updation in connecting nodes\n```\n\n```cypher\nSTART n=node(1)\
+  \ MATCH p=n-[*..]->b WHERE ANY(x in nodes(p) WHERE x.network? = true) RETURN p;\n\
+  // Example of Predicates\n```\n\n### 参考资料\n\n1. `http://docs.neo4j.org/refcard/1.9/`\n\
+  2. `http://java.dzone.com/articles/10-caveats-neo4j-users-should`\n3. `http://docs.neo4j.org/chunked/milestone/cypher-query-lang.html`\n\
+  \n我们展示了一些可以在图数据库实际应用中使用的查询。由于这是一种新型的 NoSQL 数据库，以上内容是我们提供的一些 neo4j Cypher 查询示例的介绍。\n\
+  \n## 使用 Node.js、Express.js REST 服务和 Neo4j（neo4j-js 模块）开发 Web 应用程序\n\n本文是一个概念验证，旨在使用基于\
+  \ JavaScript 的 Web 服务器（Node.js）和 Neo4j 构建 Web 应用程序。\n\n为了实现这一目标，我们选择了：\n\n1. Node.js\
+  \ 用于服务器端开发\n2. 基于 REST 的 Web 服务创建，使用 `express.js`\n3. 图数据库 – Neo4j\n4. Node.js Neo4j\
+  \ 模块扩展（`neo4j-js`）\n\n我们创建了一个基于 JavaScript 的 Web 服务器的概念验证，重点在于使用基于 JavaScript 的框架\
+  \ Node.js 处理 Neo4j（图数据库）。\n\n我们借助了 Neo4j-js 模块，该模块在 Neo4j 官网以及 [Bret Copeland 的\
+  \ Github 项目贡献](https://github.com/bretcope/neo4j-js) 中有所讨论。\n\n我们根据之前关于 Neo4j 章节的知识，为本应用程序采用了\
+  \ Neo4j 图数据库的参考数据模型。\n\n首先是架构图——\n\n![架构](img/00008.jpeg)\n\n架构\n\n以下是具体步骤——\n\n\
+  ### 安装\n\n1. 从[此处](http://nodejs.org/download/)下载并安装 Node.js。\n2. 要开发应用程序，我们需要为\
+  \ Node.js 安装 `neo4j-js` 模块\n\n   命令 – `npm install neo4j-js`（需连接互联网）\n\n3. 我们需要为\
+  \ Node.js 安装 `express.js`\n\n   命令 – `npm install express`（需连接互联网）\n\n4. 我们需要安装\
+  \ `http-status`\n\n   命令 – `npm install http-status`（需连接互联网）\n\n### 配置代码\n\n现在，我们将描述代码部分——\n\
+  \n```javascript\n1 var application_root = __dirname,\n2     express = require(\"\
+  express\"),\n3     path = require(\"path\"),\n4     HTTPStatus = require('http-status');\
+  \ // To return http status for error codes\n5 \n6 var config = require('./config');\n\
+  ```\n\n这里我们根据 Node.js 的概念，在 JavaScript 变量中初始化了 `express.js`。\n\n我们引入了另一个 js 文件——`config.js`，用于存放所有与\
+  \ Neo4j 配置相关的信息。\n\n```javascript\n1 var app = express();\n```\n\n这里我们在 `app` 变量中初始化了\
+  \ express Web 服务器。\n\n```javascript\n1 var neo4j = require('neo4j-js');\n```\n\n\
+  这里我们使 Node.js 的 `neo4j-js` 模块可用。\n\n```javascript\n1 var neo4jurl = process.env.NEO4J_URL\
+  \ ;\n2 neo4jurl = neo4jurl +'/db/data/';\n```\n\n这里从配置文件中设置了 Neo4j 数据库服务器的 URL。\n\
+  \n```javascript\n1 var query = [ 'START me=node:node_auto_index(name={inputusername})\
+  \ MATCH me<--friend<--fri\\\n2 end_of_friend where \n3 \t    (friend_of_friend.entitytype={inputentitytype})\
+  \ RETURN friend_of_friend;'];\n4 \n5 var insertquery = [ 'CREATE (user {entitytype:{inputentitytype},\
+  \ name : {inputname}}) retu\\\n6 rn user;' ];\n7 \n8 var queryforallrelation = [\
+  \ 'start n = node:node_auto_index(name={inputusername}) match(n)\\\n9 --(x)  return\
+  \ x;'];\n```\n\n这里所有查询变量都设置为 Neo4j Cypher 查询。\n\n```javascript\n1 // Express Config\n\
+  2 \n3 app.configure(function () {\n4   app.use(express.bodyParser());\n5   app.use(express.methodOverride());\n\
+  6   app.use(app.router);\n7   app.use(express.static(path.join(application_root,\
+  \ \"public\")));\n8   app.use(express.errorHandler({ dumpExceptions: true, showStack:\
+  \ true }));\n9 });\n```\n\n这里我们进行了与 `express.js` 相关的配置。\n\n### REST 服务代码\n\n```javascript\n\
+  1 app.get('/api', function (req, res) {\n2   res.send('Our Sample API is up...');\n\
+  3 });\n```\n\n这里我们创建了第一个基于 REST 的 Web 服务，并测试了 `express.js` 是否正常运行。\n\n我们的示例 API\
+  \ 将是：`http://127.0.0.1:1212/api`（GET 方法）\n\n```javascript\n 1 app.get('/friendoffriend/:username',\
+  \ function (req, res){\n 2 \tres.set({'Content-Type': 'text/json'}); // setting\
+  \ content type\n 3 \tusername = req.params.username;\n 4 \ttype = 'user';\n 5 \t\
+  neo4j.connect(neo4jurl, function (err, graph) { //Connecting neo4J\n 6 \tgraph.query(query.join('\\\
+  n'), {inputusername : username, inputentitytype :type} ,\n 7              function\
+  \ (err, results) {\t// Query to Neo4j Database through Neo4j-js Module\n 8 \t\t\
+  if (err) {\n 9 \t\t\tres.send(HTTPStatus.INTERNAL_SERVER_ERROR,'Internal Server\
+  \ Error'); \n10                         // Return Http Status for Error\n11 \t\t\
+  }\n12 \t\telse {\n13 \t\t\tres.send(HTTPStatus.OK,JSON.stringify(results)); \n14\
+  \                         // Return the json in response\n15 \t\t}\n16 \t     });\t\
+  \n17      });\n18 });\n```\n\n这里我们创建了 REST API，用于从 Neo4j 节点集合中获取用户信息，并通过 Neo4j-js\
+  \ 扩展库实现。我们使用 Cypher 查询语言编写了一个“朋友的朋友”查询。\n\n有关 Neo4j Cypher 查询的更多信息，请参阅前一章——示例图数据库的\
+  \ Neo4j Cypher 查询。\n\n我们的示例 API 将是：`http://127.0.0.1:1212/friendoffriend/andrew`（GET\
+  \ 方法）\n\n\n\n\n\n```javascript\n 1 app.get('/insertuser/:username', function (req,\
+  \ res){\n 2 \tres.set({'Content-Type': 'text/json'});\n 3 \tusername = req.params.username;\n\
+  \ 4 \ttype = 'user';\n 5 \tneo4j.connect(neo4jurl, function (err, graph) { // Connection\
+  \ to neo4J\n 6 \tgraph.query(insertquery.join('\\n'), {inputname : username, inputentitytype\
+  \ :type} \n 7              ,function (err, results) {\t// Query to Neo4j through\
+  \ neo4j-js module\n 8 \t\tif (err) {\n 9 \t\t\tres.send(HTTPStatus.INTERNAL_SERVER_ERROR,'Internal\
+  \ Server Error');\n10                         // Return Http Status for Error\n\
+  11 \t\t}\n12 \t\telse {\n13 \t\t\tres.send(HTTPStatus.OK,JSON.stringify(results));\n\
+  14                         // Return the json in response \n15 \t\t}\n16 \t    });\t\
+  \n17        });\n18 });\n```\n\n这里我们通过 REST Web 服务调用，使用 Cypher 查询在数据库中插入了一个节点。\n\
+  \n我们的示例 API 将是 - `http://127.0.0.1:1212/insertuser/anotheruser`（GET 方法）\n\n```javascript\n\
+  \ 1 //Cypher Query with Javascript Callback Example\n 2 \n 3 function neo4jQuery(neo4jurl,\
+  \ query, parameters, giveresults) { \n 4         //Function with query, parameter\
+  \ and callback as arguments\n 5 \tneo4j.connect(neo4jurl, function (err, graph)\
+  \ {  // Connection to neo4J\n 6 \t\tgraph.query(query.join('\\n'), {inputusername\
+  \ : 'andrew'} ,\n 7                         function (err, results) { // Query to\
+  \ Neo4j through neo4j-js module\n 8 \n 9 \t\t\tif (err) {\n10 \t\t\t\tgiveresults(HTTPStatus.INTERNAL_SERVER_ERROR);\
+  \  \n11 \t\t\t\t// Return Http Status in callback\n12 \t\t\t}\n13 \t\t\telse {\n\
+  14 \t\t\t\tgiveresults(JSON.stringify(results));  \n15 \t\t\t\t// Return the json\
+  \ in callback\n16 \t\t\t}\n17 \t\t});\t\n18 \t});\n19 }\n20 \n21 \n22 //Below is\
+  \ a separation of REST related code and neo4j related code via a javascript callb\\\
+  \n23 ack function\n24 \n25 app.get('/allrelations/:username', function (req, res){\n\
+  26 \tres.set({'Content-Type': 'text/json'});\n27 \tusername = req.params.username;\n\
+  28 \tparameters = {inputusername : username};\n29 \tneo4jQuery(neo4jurl, queryforallrelation,\
+  \ parameters, function(results){ // the previous \\\n30 function is called\n31 \t\
+  \tres.send(results);\n32 \t});\n33 });\n```\n\n我们的示例 API 将是 - `http://127.0.0.1:1212/allrelations/andrew`（GET\
+  \ 方法）\n\n上面我们展示了另一个来自 Node.js 的查询示例，包含查询、参数和回调函数。\n\n```javascript\n1 // Launch\
+  \ server\n2 app.listen(1212);\n```\n\n我们让服务器监听 1212 端口。\n\n要运行应用程序，我们应该在命令行中使用 -\
+  \ `node neo4jtest.js`。\n\n## MongoDB 快速入门\n\n我们在项目工作中使用了一些 MongoDB 中的有用命令。以下是 MongoDB\
+  \ 命令的快速参考，这些命令可以在 MongoDB shell 中执行。我们已经在 MongoDB shell 中使用测试数据示例测试了所有命令。\n\n我们可以从[这里](http://www.mongodb.org/downloads)下载\
+  \ MongoDB。\n\n启动 MongoDB\n\n我们应该使用 -\n\n`mongod –dbpath <<我们的 MongoDB 数据目录>>`\n\n\
+  现在从 shell 启动数据库 -\n\n`mongo` // 启动数据库\n\n`db` // 测试当前数据库\n\n`show dbs` // 显示所有数据库\n\
+  \n`use userdb` // 切换到数据库或创建新数据库\n\n// 现在向集合中插入数据\n\n`user = { username : “firstuser”,password:”firstuser”,email:”firstuser@gmail.com”\
+  \ }` // 准备数据\n\n`db.users.insert(user);` // 将数据插入 things 集合\n\n`show collections;`\
+  \ // 查看 MongoDB 中的所有集合，这里我们应该看到之前创建的 “users” 集合\n\n`db.users.find();` // 查看集合中的所有文档\n\
+  \n`db.users.find(0);` // 按索引查找集合\n\n`db.users.find({username:”firstuser”});` //\
+  \ 按 JSON 元素查找集合中的文档\n\n// 使用 JSON 中的游标 -\n\n```javascript\n1 var c = db.users.find();\n\
+  2 while ( c.hasNext() ) printjson( c.next() )\n```\n\n// CRUD 操作 -\n\n// 数据插入\n\n\
+  `user = { username : “firstuser”,password:”firstuser”,email:”firstuser@gmail.com”\
+  \ }` // 准备数据\n\n// 以下命令可用于带 “_id” 或不带 “_id” 的插入\n\n`db.users.insert(user);` // 将数据插入\
+  \ things 集合。\n\n// 不带 “_id” 字段插入数据\n\n`db.users.save({username:”thirduser”,password:”thirduser”,email:”thirduser@gmail.com”});`\n\
+  \n`db.users.find();` // 确认操作\n\n// 如果未找到 “_id”，则带 “_id” 字段插入数据到集合\n\n`db.users.save({_id:10,username:”fourthuser”,password:”fourthuser”,\
+  \ email:”fourthuser1@gmail.com”});`\n\n// 如果找到 “_id”，则更新集合中的数据\n\n`db.users.save({_id:10,username:”fourthuser1″,password:”fourthuser1″,\
+  \ email:”fourthuser1@gmail.com”});`\n\n// 使用 upsert 标志进行相同操作，即如果找到 “_id” 则更新，否则插入\
+  \ // 遵循操作 – 如果找到用户名为 “fifthuser” 则更新，否则插入\n\n```\ndb.users.update({username:\"fifthuser\"\
+  },\n{_id:11,username:\"fifthuser\",password:\"fifthuser\",\nemail:\"fifthhuser@gmail.com\"\
+  },{upsert:true});\n```\n\n`db.users.find();` // 数据应已插入\n\n```\ndb.users.update({username:\"\
+  fifthuser\"},\n{_id:11,username:\"fifthuser1\",password:\"fifthuser1\",\nemail:\"\
+  fifthhuser1@gmail.com\"},{upsert:true});\n```\n\n`db.users.find();` // 数据应已更新\n\n\
+  // 从 MongoDB 中选择数据\n\n`db.users.find({username: { $in: [ 10, 11 ] }});` `db.users.find({username:\
+  \ { $in: [ “firstuser”, “seconduser” ] }});`\n\n// 使用 find 操作的查询游标 -\n\n```javascript\n\
+  1 var myCursor = db.users.find( { username: /.*user.*/ } );\n2 myCursor.forEach(printjson);\n\
+  ```\n\n// 更新文档中的字段 // 设置新字段\n\n`db.users.update({ _id: 10 },{$set: { ‘username’:\
+  \ ‘sixthuser’ },});` `db.users.update({ _id: 10 },{$set: { ‘useraddress’: ‘sixthuser\
+  \ address’ },});` `db.users.find();`\n\n// 取消设置文档中的字段\n\n`db.users.update({ _id:\
+  \ 10 },{ $unset: { useraddress: ‘sixthuser address’ } });` `db.users.find();`\n\n\
+  // 从集合中删除文档\n\n`db.users.remove( { ‘username’ : ‘fifttuser1′ } );`\n\n参考链接 -\n\n\
+  (http://docs.mongodb.org/manual/core/update/)\n\n(http://docs.mongodb.org/manual/core/delete/)\n\
+  \n(http://docs.mongodb.org/manual/core/read/)\n\n(http://docs.mongodb.org/manual/core/create/)\n\
+  \n## 使用 Angular.js、Node.js 和 MongoDB（MongoJS 模块）的单页应用\n\n本文旨在概念验证，使用基于 JavaScript\
+  \ 的 Web 服务器构建 Web 应用程序。这种技术栈通常被称为 [MEAN Stack](http://blog.mongodb.org/post/49262866911/the-mean-stack-mongodb-expressjs-angularjs-and)。\n\
+  \n为了实现这一点，我们选择了 -\n\n1. Angular.js 用于客户端开发 – 单页应用\n2. Angular.js 和 Node.js 之间的跨域通信\n\
+  3. Node.js 用于服务器端开发\n4. 使用 express.js 创建基于 REST 的 Web 服务\n5. 数据库 – MongoDB\n6. Node.js\
+  \ MongoDB 模块扩展（mongojs）\n\n我们创建了一个基于 JavaScript 的 Web 服务器的概念验证，重点在于使用基于 JavaScript\
+  \ 的框架 Node.js 和客户端 Angular.js 处理 NoSQL（MongoDB）。\n\n我们的初始代码可以从[这里](https://github.com/piyasde/NodeMongoDBAngular)下载。\n\
+  \n### 架构概览 -\n\n![架构图](img/00009.gif)\n\n架构图\n\n以下是步骤 -\n\n### 安装 -\n\n- A> 从[这里](http://nodejs.org)下载并安装\
+  \ Node.js。\n\n```\n1     命令 – npm install mongojs（需要连接互联网）\n```\n\n- B> 要开发应用程序，我们需要为\
+  \ Node.js 安装 mongojs 模块\n\n```\n1     命令 – npm install mongojs（需要连接互联网）\n```\n\n\
+  - C> 我们需要为 Node.js 安装 express.js\n\n```\n1     命令 – npm install express（需要连接互联网）\n\
+  ```\n\n### 配置代码 -\n\n现在，我们将尝试描述代码部分 -\n\n```javascript\n1 var application_root =\
+  \ __dirname,\n2     express = require(\"express\"),\n3     path = require(\"path\"\
+  );\n```\n\n这里我们根据 Node.js 的概念，在 JavaScript 变量中初始化了 express.js。\n\n```javascript\n\
+  1 var app = express();\n```\n\n\n\n\n这里我们在 `app` 变量中初始化了 Express Web 服务器。\n\n```\n\
+  1 var databaseUrl = \"sampledb\"; \n2 var collections = [\"things\"]\n3 var db =\
+  \ require(\"mongojs\").connect(databaseUrl, collections);\n```\n\n这里我们使用 Node.js\
+  \ 的 `mongojs` 模块扩展库建立了与 MongoDB 数据库的连接。\n\n```\n1 // Config\n2 \n3 app.configure(function\
+  \ () {\n4   app.use(express.bodyParser());\n5   app.use(express.methodOverride());\n\
+  6   app.use(app.router);\n7   app.use(express.static(path.join(application_root,\
+  \ \"public\")));\n8   app.use(express.errorHandler({ dumpExceptions: true, showStack:\
+  \ true }));\n9 });\n```\n\n这里我们完成了与 `express.js` 相关的配置。\n\n### REST 服务代码\n\n```\n\
+  1 app.get('/api', function (req, res) {\n2   res.send('Our Sample API is up...');\n\
+  3 });\n```\n\n这里我们创建了第一个基于 REST 的 Web 服务，并测试了 `express.js` 是否正常运行。\n\n我们的示例 API\
+  \ 将是：`http://127.0.0.1:1212/api`（GET 方法）\n\n```\n 1 app.get('/getangularusers',\
+  \ function (req, res) {\n 2 \tres.header(\"Access-Control-Allow-Origin\", \"http://localhost\"\
+  );\n 3 \tres.header(\"Access-Control-Allow-Methods\", \"GET, POST\");\n 4      \
+  \   // 以上两行是跨域通信所必需的\n 5         // （允许作为跨域请求发送的方法）\n 6 \tdb.things.find('', function(err,\
+  \ users) { \n 7 \t\t\t\t// 通过 Mongo JS 模块在 MongoDB 中查询\n 8 \tif( err || !users)\
+  \ console.log(\"No users found\");\n 9 \t  else \n10 \t{\n11 \t\tres.writeHead(200,\
+  \ {'Content-Type': 'application/json'}); \n12 \t\t\t\t\t\t// 通过 json 发送数据\n13 \t\
+  \tstr='[';\n14 \t\tusers.forEach( function(user) {\n15 \t\t\tstr = str + '{ \"name\"\
+  \ : \"' + user.username + '\"},' +'\\n';\n16 \t\t});\n17 \t\tstr = str.trim();\n\
+  18 \t\tstr = str.substring(0,str.length-1);\n19 \t\tstr = str + ']';\n20 \t\tres.end(\
+  \ str);\n21                 // 在此处准备 JSON 数组\n22 \t}\n24   });\n25 });\n```\n\n\
+  这里我们创建了另一个 REST API，用于从用户集合中获取所有用户名，并执行了 `mongojs` 查询。\n\n我们的示例 API 将是：`http://127.0.0.1:1212/getangularusers`（GET\
+  \ 方法）\n\n```\n 1 app.post('/insertangularmongouser', function (req, res){\n 2  \
+  \ console.log(\"POST: \");\n 3   res.header(\"Access-Control-Allow-Origin\", \"\
+  http://localhost\");\n 4   res.header(\"Access-Control-Allow-Methods\", \"GET, POST\"\
+  );\n 5   // 以上两行是跨域通信所必需的\n 6   // （允许作为跨域请求发送的方法）\n 7   console.log(req.body);\n\
+  \ 8   console.log(req.body.mydata);\n 9   var jsonData = JSON.parse(req.body.mydata);\n\
+  10 \n11   db.things.save({email: jsonData.email, password: jsonData.password, \n\
+  12 \t\t\t\t\tusername: jsonData.username},\n13        function(err, saved) { //\
+  \ 通过 Mongo JS 模块在 MongoDB 中查询\n14            if( err || !saved ) res.end( \"User\
+  \ not saved\"); \n15            else res.end( \"User saved\");\n16        });\n\
+  17 });\n```\n\n这里我们创建了一个 POST 请求，通过 REST 调用来创建用户。\n\n我们的示例 API 将是：`http://127.0.0.1:1212/insertangularmongouser`（POST\
+  \ 方法）\n\n```\n1 // Launch server\n2 app.listen(1212);\n```\n\n我们让服务器监听 1212 端口。\n\
+  \n现在在命令行中运行 `node appmongodbangular.js`。\n\n### Angular.js 部分\n\n以下是 Angular 控制器中的代码：\n\
+  \n```\n 1 'use strict';\n 2 \n 3 var myApp = angular.module('myApp', []); \n 4 //\
+  \ 将 Angular 应用赋值给 JavaScript 变量\n 5 \n 6 // 以下代码用于允许通过 angular.js 从 Web 服务器发起跨域请求\n\
+  \ 7 myApp.config(['$httpProvider', function($httpProvider) {\n 8         $httpProvider.defaults.useXDomain\
+  \ = true;\n 9         delete $httpProvider.defaults.headers.common['X-Requested-With'];\n\
+  10     }\n11 ]);\n12 \n13 /* 控制器 */\n14 \n15 function UserListCtrl($scope, $http,\
+  \ $templateCache) {\n16 \n17   var method = 'POST';\n18   var inserturl = 'http://localhost:1212/insertangularmongouser';\n\
+  19 \t\t// Node.js 服务器运行的 URL\n20   $scope.codeStatus = \"\";\n21   $scope.save =\
+  \ function() {\n22     // 从 Angular 模型准备要发送到服务器的 JSON 数据\n23     var formData =\
+  \ {\n24       'username' : this.username,\n25       'password' : this.password,\n\
+  26 \t  'email' : this.email\n27     };\n28 \n29 \tthis.username = '';\n30 \tthis.password\
+  \ = '';\n31 \tthis.email = '';\n32 \n33 \tvar jdata = 'mydata='+JSON.stringify(formData);\
+  \ // 数据必须是字符串\n34 \n35 \t$http({ \n36 \t\t// 使用 Angular $http 服务通过 REST 通信将数据发送到\
+  \ Node 服务器\n37             method: method,\n38             url: inserturl,\n39 \
+  \            data:  jdata ,\n40             headers: {'Content-Type': 'application/x-www-form-urlencoded'},\n\
+  41             cache: $templateCache\n42         }).\n43         success(function(response)\
+  \ {\n44 \t\tconsole.log(\"success\"); // 在回调中获取成功响应\n45                 $scope.codeStatus\
+  \ = response.data;\n46 \t\tconsole.log($scope.codeStatus);\n47 \n48         }).\n\
+  49         error(function(response) {\n50 \t\tconsole.log(\"error\"); // 在回调中获取错误响应\n\
+  51                 $scope.codeStatus = response || \"Request failed\";\n52 \t\t\
+  console.log($scope.codeStatus);\n53         });\n54 \t$scope.list();// 调用 Angular\
+  \ 控制器中的 list 函数\n55 \t\t      // 在 HTML 中显示所有当前数据\n56         return false;\n57\
+  \   };\t\n58 \n59   $scope.list = function() {\n60 \t  var url = 'http://localhost:1212/getangularusers';\n\
+  61 \t\t\t// Node.js 服务器运行的 URL\t\n62 \t  $http.get(url).success(function(data) {\n\
+  63 \t\t$scope.users = data;\n64 \t  });\n65           // 使用 Angular $http 服务通过 REST\
+  \ 通信从 Node 服务器获取数据\n66   };\n67 \n68   $scope.list();\n69 }\n```\n\n### Angular\
+  \ 模板和 HTML\n\n```\n1  <html lang=\"en\" ng-app=\"myApp\">\n2 .....\n```\n\n我们在上述代码中引用了\
+  \ Angular 应用\n\n```\n1 <body ng-controller=\"UserListCtrl\">\n2 .....\n```\n\n我们在上述代码中引用了\
+  \ Angular 控制器\n\n```\n1 Search: <input ng-model=\"user\">\n2 <div class=\"span10\"\
+  >\n3     <!--Body content-->\n4     <ul class=\"users\">\n5         <li ng-repeat=\"\
+  user in users | filter:user \">\n6             {{user.name}}\n7         </li>\n\
+  8     </ul>\n9 </div>\n```\n\n我们使用了 ng-repeat 标签从 REST 通信中获取用户数据模型，并在 HTML 中显示\n\
+  \n```\n 1 <form name=\"myform\" id=\"myform1\" ng-submit=\"save()\">\n 2     <fieldset>\n\
+  \ 3         <legend>New User</legend>\n 4             <div class=\"control-group\"\
+  >\n 5                 <center><input type=\"text\" placeholder=\"User…\" \n 6 \t\
+  \t\t\tng-model=\"username\" size=50 required/></center>\n 7                 <center><input\
+  \ type=\"text\" placeholder=\"Password…\" \n 8 \t\t\t\tng-model=\"password\" size=50\
+  \ required/></center>\n 9                 <center><input type=\"text\" placeholder=\"\
+  Email…\" \n10 \t\t\t\tng-model=\"email\" size=50 required/></center>\n11       \
+  \      </div>\n12     </fieldset>\n13     <p>\n14          <div><center><button\
+  \ type=\"submit\" >Save now...</button></center></div>\n15     </p>\n16 </form>\n\
+  ```\n\n我们使用了 ng-submit 标签通过 REST 通信发送 `user` 数据模型，并将其发送到 Node 服务器以保存到 MongoDB。\n\
+  \n读者可以在 [GitHub](https://github.com/piyasde/NodeMongoDBAngular) 下载完整的源代码。\n\n##\
+  \ 使用 Highchart.js、Node.js、Express.js 和 MongoDB（Mongo-JS 模块）的 Web 应用\n\n![HighChart](img/00010.jpeg)\n\
+  \nHighChart\n\n该应用是另一个概念验证，旨在使用基于 JavaScript 的 Web 服务器构建用于生成图表的 Web 应用。\n\n在本应用中，我们使用了以下工具和技术：\n\
+  \n### 1. Node.js 用于服务器端开发\n\n### 2. 使用 express.js 创建基于 REST 的 Web 服务\n\n### 3. 数据库\
+  \ – MongoDB\n\n### 4. Node.js MongoDB 模块扩展（mongojs）\n\n### 5. Highchart.js 通过异步调用（Ajax）生成图表\n\
+  \n### 6. 使用跨域策略从 Node.js 访问 REST 服务到 Ajax 调用\n\n处理基于 JavaScript 框架 Node.js 的 NoSQL（MongoDB）。\n\
+  \n\n\n我们的初始代码可以从[这里](https://github.com/piyasde/NodeMongoDBHighchart1)下载。\n\n###\
+  \ 架构概览\n\n![架构](img/00011.gif)\n\n架构\n\n以下是步骤——\n\n### 安装\n\n#### A. 从[这里](http://nodejs.org/download/)下载并安装\
+  \ Node.js。\n\n#### B. 开发应用需要安装 Node.js 的 `mongojs` 模块\n\n```\n1     Command – npm\
+  \ install mongojs (should be connected to internet)\n```\n\n#### C. 需要安装 Node.js\
+  \ 的 `express.js`\n\n```\n1     Command – npm install express (should be connected\
+  \ to internet)\n```\n\n## 服务器端应用\n\n### 配置代码\n\n现在，我们来描述代码部分——\n\n```\n1 var application_root\
+  \ = __dirname,\n2     express = require(\"express\"),\n3     path = require(\"path\"\
+  );\n```\n\n这里我们根据 Node.js 的概念，在 JavaScript 变量中初始化了 `express.js`。\n\n```\n1 var app\
+  \ = express();\n```\n\n这里我们在 `app` 变量中初始化了 express 网络服务器。\n\n```\n1 var databaseUrl\
+  \ = \"faodb\"; \n2 var collections = [\"seeds\"]\n3 var db = require(\"mongojs\"\
+  ).connect(databaseUrl, collections);\n```\n\n这里我们使用 Node.js 的 `mongojs` 模块扩展库建立了与\
+  \ MongoDB 数据库的连接。\n\n```\n1 // Config\n2 \n3 app.configure(function () {\n4   app.use(express.bodyParser());\n\
+  5   app.use(express.methodOverride());\n6   app.use(app.router);\n7   app.use(express.static(path.join(application_root,\
+  \ \"public\")));\n8   app.use(express.errorHandler({ dumpExceptions: true, showStack:\
+  \ true }));\n9 });\n```\n\n这里我们完成了与 `express.js` 相关的配置。\n\n### REST 服务代码\n\n```\n\
+  1 app.get('/api', function (req, res) {\n2   res.header(\"Access-Control-Allow-Origin\"\
+  , \"*\"); // Configuration for Cross-Domain-Policy\n3   res.send('Our Sample API\
+  \ is up...');\n4 });\n```\n\n这里我们创建了第一个基于 REST 的网络服务，并测试了 `express.js` 是否正常运行。\n\
+  \n我们的示例 API 将是——`http://127.0.0.1:1212/api`（GET 方法）\n\n```\n 1 app.get('/getseeddata/:seedname',\
+  \ function (req, res) {\n 2     res.header(\"Access-Control-Allow-Origin\", \"*\"\
+  );\n 3     seed = req.params.seedname;\n 4 \tdb.seeds.find({seedname:seed}, function(err,\
+  \ seeds) {\n 5 \tif( err || !seeds) console.log(\"No seeds found\");\n 6 \t  else\
+  \ \n 7 \t{\n 8 \t\tres.writeHead(200, {'Content-Type': 'text/json'});\n 9 \t\tseedscollection\
+  \ = seeds[0].seedprice;\n10 \t\tstr = '[';\n11 \t\t//console.log(seedscollection);\n\
+  12 \n13 \t\tseedscollection.forEach( function(seed) {\n14 \t\t   str = str + '{\"\
+  month\":\"'+ seed.mmonth + '\",\"price\":\"'+ seed.price +'\"},';\n15 \t\t});\n\
+  16 \t\tstr = str.substring(0,str.length-1)\n17 \t\tstr = str + ']';\n18 \t\tres.end(JSON.stringify(str));\n\
+  19 \t}\n20   });\n21 });\n```\n\n这里我们创建了另一个 REST API，用于从种子集合中获取特定种子的价格信息，并执行了 `mongojs`\
+  \ 查询。\n\n我们的示例 API 将是——`http://127.0.0.1:1212/getseeddata/Arachide`（GET 方法）\n\n\
+  现在我们需要在命令 shell 中运行 `node appmongodbhighchart.js` 来启动 Node 服务器。\n\n## 客户端应用\n\n\
+  ### Highchart 代码说明\n\n```\n 1 <script type=\"text/javascript\">\n 2     var myAjaxChart;\n\
+  \ 3     var mydata = []; // Javascript Array Declaration\n 4 $(document).ready(function\
+  \ () { \n 5 \n 6 $(\"#seedselect\").change(function() { // On change event of HTML\
+  \ Select Control\n 7     mydata = [];\n 8     requestData($(this).val()); // Parameterised\
+  \ Function calling for Ajax and Highchart I\\\n 9 nitiation\n10 });\n11 \n12 function\
+  \ requestData(data) {\n13 $.ajax({\n14     url: 'http://localhost:1212/getseeddata/'+data,\
+  \ // Node.js Server REST Call\n15     type: \"GET\",\n16     dataType: \"json\"\
+  ,\n17     success: function(seed) {\n18         var jsonobj = seed;\n19        \
+  \ var obj = jQuery.parseJSON(jsonobj);\n20         for(i=0;i<obj.length;i++)\n21\
+  \         {\n22             mydata.push(parseInt(obj[i].price)); // Filling of Array\
+  \ after Ajax Call\n23         }\n24         // Initialising the Highchart Object\
+  \ within the success callback\n25         //Chart\n26         var options ={\n27\
+  \             chart: {\n28             renderTo: 'container', // Initialising the\
+  \ DIV with Highchart Object\n29             type: 'line',\n30             marginRight:\
+  \ 130,\n31             marginBottom: 25,\n32          },\n33          // Other Highchart\
+  \ Properties\n34          title: {\n35            text: 'Price Data',\n36      \
+  \      x: -20 //center\n37          },\n38          xAxis: {\n39          },\n40\
+  \          yAxis: {\n41               title: {\n42               text: 'Price (Rs)'\n\
+  43          },\n44          plotLines: [{\n45               value: 0,\n46      \
+  \         width: 1,\n47               color: '#808080'\n48         }]\n49      },\n\
+  50      tooltip: {\n51              valueSuffix: 'Rs'\n52      },\n53      legend:\
+  \ {\n54            layout: 'vertical',\n55            align: 'right',\n56      \
+  \      verticalAlign: 'top',\n57            x: -10,\n58            y: 100,\n59 \
+  \           borderWidth: 0\n60       }\n61       ,\n62       series: [{\n63    \
+  \        name: 'Price',\n64            data: mydata  // Here the previously populated\
+  \ javascript array will be initial\\\n65 ised in data parameter\n66       }],\n\
+  67      };\n68      var chardata = new Highcharts.Chart(options);\n69    },\n70\
+  \    cache: false\n71   });\n72  }\n73 });\n```\n\n## 使用 Angular.js、Node.js 和 Socket.io\
+  \ 实现实时数据更新\n\n本文是一个概念验证，旨在使用基于 JavaScript 的网络服务器配合 `Socket.IO`、Angular.js 和 Node.js\
+  \ 构建实时网络应用。我们模拟了一个场景，包含 4 种产品及其最佳买入价、最佳卖出价和最后成交价。\n\n![示意图](img/00012.jpeg)\n\n\
+  为了实现这一目标，我们选择了——\n\n### 1> Angular.js 用于客户端开发——应用前端\n\n### 2> Node.js 用于服务器端开发\n\
+  \n### 3> Socket.IO 用于服务器与客户端通信\n\n### 4> Node.js 的 Socket.IO 模块扩展\n\n我们创建了一个基于 JavaScript\
+  \ 的网络服务器 Node.js 的概念验证，重点在于使用 `Socket.IO` 处理实时应用，并在客户端使用 Angular.js。\n\n### 架构概览\n\
+  \n![Angular.js NodeJS SocketIO](img/00013.jpeg)\n\nAngular.js NodeJS SocketIO\n\n\
+  以下是步骤——\n\n### 安装\n\nA. 从[这里](http://nodejs.org/download/)下载并安装 `Node.js`。\n\nB.\
+  \ 开发应用需要安装 Node.js 的 `socket.io` 模块 命令——`npm install socket.io`（需连接互联网）\n\n### 配置代码\n\
+  \n现在，我们来描述代码部分——\n\n```\n1     var http = require('http');\n2     var url = require('url');\n\
+  3     var fs = require('fs');\n4     \n5     // use socket.io\n6     var io = require('socket.io').listen(server);\n\
+  ```\n\n这里我们根据 Node.js 的概念，在 JavaScript 变量中初始化了 `http`、`url` 和 `filesystem` 对象。同时，我们在\
+  \ Node.js 环境中初始化了 `socket.io` 变量。\n\n```\n 1     server = http.createServer(function(req,\
+  \ res){ // Server creation\n 2     ....\n 3     case '/angulartableRT.html':\n 4\
+  \                 fs.readFile(__dirname + path, function(err, data){\n 5       \
+  \              if (err){ \n 6                         return send404(res);\n 7 \
+  \                    }\n 8                     res.writeHead(200, {'Content-Type':\
+  \ path == 'json.js' ? \n 9 \t\t\t\t\t'text/javascript' : 'text/html'});\n10    \
+  \                 res.write(data, 'utf8');\n11                     res.end();\n\
+  12                 });\t\n13     ....\n14     server.listen(8001);\n15     ....\n\
+  ```\n\n\n\n\n在上述代码中，我们展示了 Node 应用的一些重要部分。第一部分，我们通过 `http.createServer` 编写了服务器的创建。接着，我们允许客户端浏览器从\
+  \ Node.js 服务器访问资源——`angulartableRT.html`。现在服务器正在监听 8001 端口。读者可以在本章末尾链接的 GITHUB 中获取完整代码。现在最重要的是——`socket.io\
+  \ 与 Node.js 的通信`。我们在下方注释了 Node.js 的 socket.io 特定代码。\n\n```\n 1     // define interactions\
+  \ with client\n 2     io.sockets.on('connection', function(socket){ \n 3       \
+  \  //send data to client\n 4         setInterval(function(){\n 5     \n 6     \t\
+  \tfor(i=0;i<serverjson.length;i++) \n 7 \t\t// A simulation of data from server\
+  \ instead of database calling\n 8     \t\t{\n 9     \t\t\tserverjson[i].BBP = Math.round((parseInt(serverjson[i].BBP)\
+  \ \n10 \t\t\t\t\t\t+ Math.random())*100)/100;\n11     \t\t\tserverjson[i].BSP =\
+  \ Math.round((parseInt(serverjson[i].BSP) \n12 \t\t\t\t\t\t+ Math.random())*100)/100;\n\
+  13     \t\t\tserverjson[i].LTP = Math.round((parseInt(serverjson[i].LTP) \n14 \t\
+  \t\t\t\t\t+ Math.random())*100)/100;\n15     \t\t}\n16     \n17     \t\tvar serverjsonstr\
+  \ = JSON.stringify(serverjson);\n18     \n19     \t\tsocket.emit('msg', {'msg':\
+  \ serverjsonstr}); // Emitting Messages from Server\n20     \t\tsocket.emit('msgWrite',\
+  \ msgWrite);\n21         }, 1000);\n22     \n23     });\n```\n\n现在在命令行中运行 `node\
+  \ server.js`。这是我们的 Node.js 特定代码文件。我们的示例应用将运行在——\n\n[`localhost:8001/`](http://127.0.0.1:1212/getallusers)\n\
+  \n### Angular.js 部分\n\n以下是 Angular 控制器中的代码，并讨论了与 Socket 相关的代码。\n\n```\n 1     /*\
+  \ Controllers */\n 2     app.controller('StockListCtrl', function($scope, socket)\
+  \ { \n 3       $scope.stocks = [];\n 4       socket.on('msg', function(data) { **//\
+  \ Listening in Socket in Angular Controller**\n 5     \t\t$scope.stocks = JSON.parse(data.msg);\n\
+  \ 6     \n 7     \t});\n 8     \n 9     });\n10     \n11     //Getting value from\
+  \ server data change event\n12     app.factory('socket', function($rootScope) {\n\
+  13     \tvar socket = io.connect(); // Connection to the server socket\n14     \t\
+  return {\n15     \t\ton: function(eventName, callback) { \n16 \t\t\t// Return callback\
+  \ to the actual function to manipulate it.\n17     \t\t\tsocket.on(eventName, function()\
+  \ { \n18     \t\t\t\tvar args = arguments;   \n19     \t\t\t\t$rootScope.$apply(function()\
+  \ {\n20     \t\t\t\t\tcallback.apply(socket, args);\n21     \t\t\t\t});\n22    \
+  \ \t\t\t});\n23     \t\t}\n24     \t};\n25     });\n```\n\n### Angular HTML 绑定\n\
+  \n```\n1      <script src=\"http://localhost:8001/socket.io/socket.io.js\"></script>\
+  \ \n2      // Important to know\n3      // **Access socket.io.js from Angular.js**\
+  \ \n4     .....\n```\n\n以下是 Angular HTML 与控制器的动态绑定——\n\n```\n 1     <body ng-controller=\"\
+  StockListCtrl\">\n 2          <div>\n 3               <table class=\"table\">\n\
+  \ 4                     ...\n 5                   <tbody>\n 6                  \
+  \      <tr ng-repeat=\"stock in stocks\"> \n 7 \t\t\t   <!-- Dynamic Binding of\
+  \ Angular Template with Data -->\n 8                            <td>{{stock.Product}}</td>\n\
+  \ 9                            <td>{{stock.BBP}}</td>\n10                      \
+  \      <td>{{stock.BSP}}</td>\n11                            <td>{{stock.LTP}}</td>\n\
+  12                        </tr>\n13                   </tbody>\n14             \
+  \  </table>\n15          </div>\n16     </body>\n```\n\n读者可以在 [GitHub](https://github.com/piyasde/NodeSocketIO)\
+  \ 下载完整源代码。\n\n## 使用 Angular.js、Node.js 和 CouchDB（Cradle 模块）构建单页应用\n\n本文旨在概念验证，使用基于\
+  \ JavaScript 的 Web 服务器配合 CouchDB、Angular.js 和 Node.js 构建 Web 应用。\n\n这次我们尝试了 CouchDB，根据\
+  \ [Apache CouchDB](http://couchdb.apache.org/) 网站的定义——\n\n> Apache CouchDB™ 是一种数据库，它使用\
+  \ JSON 作为文档格式，JavaScript 用于 MapReduce 查询，并通过常规 HTTP 提供 API。\n\n为了实现这一目标，我们选择了——\n\
+  \n1. Angular.js 用于客户端开发——单页应用\n2. Angular.js 与 Node.js 之间的跨域通信\n3. Node.js 用于服务器端开发\n\
+  4. 使用 express.js 创建基于 REST 的 Web 服务\n5. 数据库——CouchDB\n6. Node.js Cradle 模块扩展（用于与\
+  \ CouchDB 通信）\n7. 使用 Map-Reduce 创建 CouchDB 视图以获取数据\n\n我们创建了一个基于 JavaScript 的 Web\
+  \ 服务器的概念验证，重点在于使用基于 JavaScript 的框架 Node.js 和客户端 Angular.js 处理 NoSQL（CouchDB）。\n\n\
+  我们的初始代码可以 [在此处](https://github.com/piyasde/NodeCouchDBAngular) 下载。\n\n### 架构概览\n\
+  \n![架构图](img/00014.gif)\n\n架构图\n\n以下是步骤——\n\n### 安装\n\nA. 从 [此处](http://nodejs.org/download/)\
+  \ 下载并安装 Node.js。\n\nB. 开发应用需要安装 Node.js 的 mongojs 模块\n\n命令 – `npm install cradle`（需要连接互联网）\n\
+  \nC. 需要安装 Node.js 的 express.js\n\n命令 – `npm install express`（需要连接互联网）\n\n### 配置代码\n\
+  \n现在，我们将尝试描述代码部分——\n\n```\n1 var application_root = __dirname,\n2     express =\
+  \ require(\"express\"),\n3     path = require(\"path\");\n```\n\n这里我们根据 Node.js\
+  \ 的概念，在 JavaScript 变量中初始化了 express.js。\n\n```\n1 var app = express();\n```\n\n这里我们在\
+  \ app 变量中初始化了 express Web 服务器。\n\n```\n1 var databaseUrl = \"sampledb\";\n2 var\
+  \ cradle = require('cradle');\n3 var connection = new(cradle.Connection)('http://couchadmin:couchadmin@localhost',\
+  \ 5984, {\n4 auth: { username: 'couchadmin', password: 'couchadmin' }\n5 });\n6\
+  \ var db = connection.database(databaseUrl);\n```\n\n这里我们使用 Node.js 的 mongojs 模块扩展库建立了与\
+  \ mongodb 数据库的连接。\n\n```\n1 // Config\n2 \n3 app.configure(function () {\n4   app.use(express.bodyParser());\n\
+  5   app.use(express.methodOverride());\n6   app.use(app.router);\n7   app.use(express.static(path.join(application_root,\
+  \ \"public\")));\n8   app.use(express.errorHandler({ dumpExceptions: true, showStack:\
+  \ true }));\n9 });\n```\n\n这里我们进行了与 express.js 相关的配置。\n\n### REST 服务代码\n\n```\n\
+  1 app.get('/api', function (req, res) {\n2   res.header(\"Access-Control-Allow-Origin\"\
+  , \"http://localhost\");\n3   res.send('Our Sample API is up...');\n4 });\n```\n\
+  \n这里我们创建了第一个基于 REST 的 Web 服务，并测试 express.js 是否正常运行。\n\n我们的示例 API 将是——http://127.0.0.1:1212/api（GET\
+  \ 方法）\n\n```\n 1 app.get('/getangularusers', function (req, res) {\n 2 \tres.header(\"\
+  Access-Control-Allow-Origin\", \"http://localhost\");\n 3 \tres.header(\"Access-Control-Allow-Methods\"\
+  , \"GET, POST\");\n 4         // The above 2 lines are required for Cross Domain\
+  \ Communication(Allowing the meth\\\n 5 ods            \n 6         // that come\
+  \ as Cross Domain Request\n 7         res.writeHead(200, {'Content-Type': 'application/json'});\n\
+  \ 8         str='[';\n 9         db.view('characters/all', function (err, response)\
+  \ { //Query in CouchDB View\n10              response.forEach(function (row) {\n\
+  11              str = str + '{ \"name\" : \"' + row.username + '\"},' +'\\n';\n\
+  12         });\n13         str = str.trim();\n14         str = str.substring(0,str.length-1);\n\
+  15         str = str + ']';\n16         res.end( str);\n17       });\n18 });\n```\n\
+  \n这里我们创建了另一个 REST API，用于从用户集合中获取所有用户名，并执行了查询。\n\n### CouchDB 视图创建\n\n在运行 Angular\
+  \ 客户端应用以从 CouchDB 获取特定数据集之前，需要执行此视图创建。\n\n另外请注意，要运行此视图创建，我们应该设置——\n\n`[httpd]` `authentication_handlers\
+  \ = {couch_httpd_auth, null_authentication_handler}`\n\n\n\n\n\n在`<<CouchDB Installation\
+  \ folder>>/etc/couchdb`文件夹的`local.ini`文件中，无需管理员身份即可执行此映射函数。\n\n此特定功能我们花了一些时间才发现。\n\
+  \n```\n 1 app.get('/createview', function (req, res) { // Before running the Angular\
+  \ Application, th\\\n 2 e view must be created\n 3 \tdb.save('_design/characters',\
+  \ { // Main View Family Name\n 4       all: { // A particular set of data selection\
+  \ by javascript map-reduce\n 5           map: function (doc) {\n 6             \
+  \  if (doc.username) emit(doc.username, doc); // specific code to execute map f\\\
+  \n 7 unction on each document\n 8           }\n 9       }\n10    });\n11 });\n```\n\
+  \n我们的示例 API 为：`http://127.0.0.1:1212/getangularusers`（GET 方法）\n\n```\n 1 app.post('/insertangularcouchuser',\
+  \ function (req, res){\n 2   console.log(\"POST: \");\n 3   res.header(\"Access-Control-Allow-Origin\"\
+  , \"http://localhost\");\n 4   res.header(\"Access-Control-Allow-Methods\", \"GET,\
+  \ POST\");\n 5   // The above 2 lines are required for Cross Domain Communication(Allowing\
+  \ the methods th\\\n 6 at come as Cross \n 7   // Domain Request\n 8   console.log(req.body);\n\
+  \ 9   console.log(req.body.mydata);\n10   var jsonData = JSON.parse(req.body.mydata);\n\
+  11   var doc = {email: jsonData.email, password: jsonData.password, username: jsonData.userna\\\
+  \n12 me};\n13   db.save('\\''+Math.random()+'\\'', doc, function (err, res) {\n\
+  14       if (err) {\n15           // Handle error\n16           res += ' SAVE ERROR:\
+  \ Could not save record!!\\n';\n17       } else {\n18           // Handle success\n\
+  19           res += ' SUCESSFUL SAVE\\n';\n20       }\n21    });\n22 });\n```\n\n\
+  这里我们通过 REST 调用发送了一个 POST 请求来创建用户。\n\n我们的示例 API 为：`http://127.0.0.1:1212/insertangularcouchuser`（POST\
+  \ 方法）\n\n```\n1 // Launch server\n2 app.listen(1212);\n```\n\n我们让服务器监听 1212 端口。\n\
+  \n现在在命令行中运行`node appcouchdbangular.js`。这是我们的 Node.js 特定代码文件。\n\n参考资料：\n\n1. http://wiki.apache.org/couchdb/Setting_up_an_Admin_account\n\
+  2. http://guide.couchdb.org/draft/security.html\n3. https://github.com/cloudhead/cradle\n\
+  \n### Angular.js 部分 -\n\n以下是 Angular 控制器中的代码：\n\n```\n 1 'use strict';\n 2 \n 3\
+  \ var myApp = angular.module('myApp', []); // Taking Angular Application in Javascript\
+  \ Varia\\\n 4 ble\n 5 \n 6 // Below is the code to allow cross domain request from\
+  \ web server through angular.js\n 7 myApp.config(['$httpProvider', function($httpProvider)\
+  \ {\n 8         $httpProvider.defaults.useXDomain = true;\n 9         delete $httpProvider.defaults.headers.common['X-Requested-With'];\n\
+  10     }\n11 ]);\n12 \n13 /* Controllers */\n14 \n15 function UserListCtrl($scope,\
+  \ $http, $templateCache) {\n16 \n17   var method = 'POST';\n18   var inserturl =\
+  \ 'http://localhost:1212/insertangularcouchuser';// URL where the Node.js \\\n19\
+  \ server is running\n20   $scope.codeStatus = \"\";\n21   $scope.save = function()\
+  \ {\n22     // Preparing the Json Data from the Angular Model to send in the Server.\
+  \ \n23     var formData = {\n24       'username' : this.username,\n25       'password'\
+  \ : this.password,\n26 \t  'email' : this.email\n27     };\n28 \n29 \tthis.username\
+  \ = '';\n30 \tthis.password = '';\n31 \tthis.email = '';\n32 \n33 \tvar jdata =\
+  \ 'mydata='+JSON.stringify(formData); // The data is to be string.\n34 \n35 \t$http({\
+  \ // Accessing the Angular $http Service to send data via REST Communication to\
+  \ Nod\\\n36 e Server.\n37             method: method,\n38             url: inserturl,\n\
+  39             data:  jdata ,\n40             headers: {'Content-Type': 'application/x-www-form-urlencoded'},\n\
+  41             cache: $templateCache\n42         }).\n43         success(function(response)\
+  \ {\n44 \t\tconsole.log(\"success\"); // Getting Success Response in Callback\n\
+  45                 $scope.codeStatus = response.data;\n46 \t\tconsole.log($scope.codeStatus);\n\
+  47 \n48         }).\n49         error(function(response) {\n50 \t\tconsole.log(\"\
+  error\"); // Getting Error Response in Callback\n51                 $scope.codeStatus\
+  \ = response || \"Request failed\";\n52 \t\tconsole.log($scope.codeStatus);\n53\
+  \         });\n54 \t$scope.list();// Calling the list function in Angular Controller\
+  \ to show all current data\\\n55  in HTML\n56         return false;\n57   };\t\n\
+  58 \n59   $scope.list = function() {\n60 \t  var url = 'http://localhost:1212/getangularusers';//\
+  \ URL where the Node.js server is ru\\\n61 nning\t\n62 \t  $http.get(url).success(function(data)\
+  \ {\n63 \t\t$scope.users = data;\n64 \t  });\n65           // Accessing the Angular\
+  \ $http Service to get data via REST Communication from N\\\n66 ode Server \n67\
+  \   };\n68 \n69   $scope.list();\n70 }\n```\n\n### Angular 模板和 HTML\n\n```\n1 <html\
+  \ lang=\"en\" ng-app=\"myApp\">\n2 .....\n```\n\n我们在上面的代码中引用了 Angular 应用。\n\n```\n\
+  1 <body ng-controller=\"UserListCtrl\">\n2 .....\n```\n\n我们在上面的代码中引用了 Angular 控制器。\n\
+  \n```\n1 Search: <input ng-model=\"user\">\n2 <div class=\"span10\">\n3     <!--Body\
+  \ content-->\n4     <ul class=\"users\">\n5         <li ng-repeat=\"user in users\
+  \ | filter:user \">\n6             {{user.name}}\n7         </li>\n8     </ul>\n\
+  9 </div>\n```\n\n我们使用了`ng-repeat`标签从 REST 通信中获取用户数据模型并显示在 HTML 中。\n\n```\n 1 <form\
+  \ name=\"myform\" id=\"myform1\" ng-submit=\"save()\">\n 2     <fieldset>\n 3  \
+  \       <legend>New User</legend>\n 4             <div class=\"control-group\">\n\
+  \ 5                 <center><input type=\"text\" placeholder=\"User…\" ng-model=\"\
+  username\" size=50\\\n 6  required/></center>\n 7                 <center><input\
+  \ type=\"text\" placeholder=\"Password…\" ng-model=\"password\" siz\\\n 8 e=50 required/></center>\n\
+  \ 9                 <center><input type=\"text\" placeholder=\"Email…\" ng-model=\"\
+  email\" size=50 r\\\n10 equired/></center>\n11             </div>\n12     </fieldset>\n\
+  13     <p>\n14          <div><center><button type=\"submit\" >Save now...</button></center></div>\n\
+  15     </p>\n16 </form>\n```\n\n我们使用了`ng-submit`标签通过 REST 通信发送用户数据模型，并发送到 Node 服务器以保存到\
+  \ CouchDB。\n\n读者可以在 [GitHub](https://github.com/piyasde/NodeCouchDBAngular) 下载完整的源代码。\n\
+  \n## 使用 Google DART、Node.js 和 MongoDB 处理 POST 请求\n\n本章介绍如何使用 DART 和 MongoDB 处理 GET\
+  \ 和 POST 请求。我们尝试使用基于 JavaScript 的 Web 服务器 Node.js 创建一个概念验证，重点在于使用基于 JavaScript 的框架\
+  \ Node.js 和客户端 Google DART 处理 NoSQL（MongoDB）。\n\n为了实现这一点，我们选择了：\n\n1. DART 用于客户端开发\n\
+  2. DART 与 Node.js 之间的跨域通信\n3. Node.js 用于服务器端开发\n4. 使用 express.js 创建基于 REST 的 Web\
+  \ 服务\n5. 数据库 – MongoDB\n6. Node.js MongoDB 模块扩展（mongojs）\n\n代码可以在 [Github](https://github.com/piyasde/NodeMongoDBDART)\
+  \ 找到。\n\n![Architecture at a glance](img/00015.gif)\n\n架构概览\n\n以下是步骤：\n\n### 安装\
+  \ -\n\n从 [这里](http://nodejs.org/download) 下载并安装 Node.js。\n\nB> 要开发此应用，我们需要为 Node.js\
+  \ 安装 mongojs 模块。\n\n命令 – `npm install mongojs`（需要连接互联网）\n\n我们需要为 Node.js 安装 express.js。\n\
+  \n命令 – `npm install express`（需要连接互联网）\n\n### 配置代码 -\n\n现在，我们将描述代码部分：\n\n```\n1 var\
+  \ application_root = __dirname,\n2     express = require(\"express\"),\n3     path\
+  \ = require(\"path\");\n```\n\n这里我们根据 Node.js 的概念在 JavaScript 变量中初始化了 express.js。\n\
+  \n```\n1 var app = express();\n```\n\n这里我们在`app`变量中初始化了 express Web 服务器。\n\n```\n\
+  1 var databaseUrl = \"sampledb\"; \n2 var collections = [\"things\"]\n3 var db =\
+  \ require(\"mongojs\").connect(databaseUrl, collections);\n```\n\n这里我们使用 Node.js\
+  \ 的 mongojs 模块扩展库建立了与 MongoDB 数据库的连接。\n\n\n\n\n\n```\n1 // Config\n2 \n3 app.configure(function\
+  \ () {\n4   app.use(express.bodyParser());\n5   app.use(express.methodOverride());\n\
+  6   app.use(app.router);\n7   app.use(express.static(path.join(application_root,\
+  \ \"public\")));\n8   app.use(express.errorHandler({ dumpExceptions: true, showStack:\
+  \ true }));\n9 });\n```\n\n这里我们进行了与 express.js 相关的配置。\n\n### REST 服务代码 -\n\n```\n\
+  1 app.get('/api', function (req, res) {\n2   res.send('Our Sample API is up...');\n\
+  3 });\n```\n\n这里我们创建了第一个基于 REST 的 Web 服务，并测试了 express.js 是否正常运行。\n\n我们的示例 API 将是\
+  \ - [`127.0.0.1:1212/api`](http://127.0.0.1:1212/getallusers) (GET 方法)\n\n```\n\
+  \ 1 app.get('/getdartusers', function (req, res) {\n 2 \tres.header(\"Access-Control-Allow-Origin\"\
+  , \"http://127.0.0.1:3030\");\n 3 \tres.header(\"Access-Control-Allow-Methods\"\
+  , \"GET, POST\");\n 4         // The above 2 lines are required for Cross Domain\
+  \ Communication\n 5         // (Allowing the methods that come as Cross Domain Request\n\
+  \ 6 \tdb.things.find('', function(err, users) { // Query in MongoDB via Mongo JS\
+  \ Module\n 7 \tif( err || !users) console.log(\"No users found\");\n 8 \t  else\
+  \ \n 9 \t{\n10 \t\tres.writeHead(200, {'Content-Type': 'application/json'}); //\
+  \ Sending data via json\n11 \t\tstr='[';\n12 \t\tusers.forEach( function(user) {\n\
+  13 \t\t\tstr = str + '{ \"name\" : \"' + user.username + '\"},' +'\\n';\n14 \t\t\
+  });\n15 \t\tstr = str.trim();\n16 \t\tstr = str.substring(0,str.length-1);\n17 \t\
+  \tstr = str + ']';\n18 \t\tres.end( str);\n19                 **// Prepared the\
+  \ jSon Array here**\n20 \t}\n21   });\n22 });\n```\n\n这里我们创建了另一个 REST API，用于从用户集合中获取所有用户名，并执行了\
+  \ mongojs 查询。\n\n我们的示例 API 将是 - [`127.0.0.1:1212/getangularusers`](http://127.0.0.1:1212/getallusers)\
+  \ (GET 方法)\n\n### 处理 POST 请求\n\n我们看到请求以两部分形式到达服务器——一部分是 **HTTP OPTIONS** 方法，另一部分是\
+  \ **HTTP POST** 方法。\n\n这些的代码如下所示 -\n\n```\n 1 app.all('/insertdartmongouser', function(req,\
+  \ res, next) {\n 2 \n 3   if (req.method === 'OPTIONS') {\n 4       console.log('!OPTIONS');\n\
+  \ 5 \n 6       var headers = {}; // Header values inclusion - OPTIONS handling\n\
+  \ 7       // IE8 does not allow domains to be specified, just the *\n 8       headers[\"\
+  Access-Control-Allow-Origin\"] = \"*\";\n 9       headers[\"Access-Control-Allow-Methods\"\
+  ] = \"POST, GET, PUT, DELETE, OPTIONS\";\n10       headers[\"Access-Control-Allow-Credentials\"\
+  ] = false;\n11       headers[\"Access-Control-Max-Age\"] = '86400'; // 24 hours\n\
+  12       headers[\"Access-Control-Allow-Headers\"] = \"X-Requested-With, X-HTTP-Method-Override,\\\
+  \n13  Content-Type, Accept\";\n14       res.writeHead(200, headers);\n15       res.end();\n\
+  16   } else {\n17 \tnext(); // If the http request method is not 'OPTIONS' then\
+  \ go to next handling - which i\\\n18 s 'POST' here.\n19   }\n20 });\n```\n\n以及\
+  \ node.js 中的 POST 方法代码 -\n\n```\n 1 app.post('/insertdartmongouser', function (req,\
+  \ res){\n 2     console.log(\"POST: \");\n 3     res.header(\"Access-Control-Allow-Origin\"\
+  , \"*\");\n 4     res.header(\"Access-Control-Allow-Methods\", \"GET,POST,OPTIONS\"\
+  );\n 5     console.log(\"got method\"+req.method);\n 6     var alldata = '';\n 7\
+  \     req.on('data', function(chunk) { **// Getting the body information in node.js\
+  \ \n 8 \t\t\t\t       // request 'on data arrive' condition**\n 9 \tconsole.log(\"\
+  Received body data:\"); **// this is an asynchronous event in node.js post**\n10\
+  \ \tconsole.log(chunk.toString());\n11 \talldata = chunk.toString();\n12 \tvar jsonData\
+  \ = JSON.parse(alldata);\n13 \tconsole.log(jsonData.username);\n14 \tconsole.log(jsonData.password);\n\
+  15 \tconsole.log(jsonData.email);\n16 \tdb.things.save({email: jsonData.email, password:\
+  \ jsonData.password, username: jsonData.us\\\n17 ername}, \n18 \tfunction(err, saved)\
+  \ {  // Calling the function\n19 \t    if( err || !saved ) res.end( \"User not saved\"\
+  ); \n20 \t    else res.end( \"User saved\");\n21 \t});\n22    });\n23 });\n```\n\
+  \n这里我们通过 REST 调用创建了一个 POST 请求来创建用户。\n\n我们的示例 API 将是 – http://127.0.0.1:1212/insertdartmongouser\
+  \ (POST 方法)\n\n```\n1 // Launch server\n2 app.listen(1212);\n```\n\n我们让服务器监听 1212\
+  \ 端口。\n\n现在在命令行中运行 `node appmongodbdart.js`。\n\n### DART 部分 -\n\n以下是 DART 源代码中的代码\
+  \ -\n\n```\n 1 // Importing Core DART libraries\n 2 \n 3 import 'dart:html';\n 4\
+  \ import 'dart:json' as json;\n 5 import 'package:web_ui/web_ui.dart';\n 6 \n 7\
+  \ var wordList; // Variables in DART\n 8 \n 9 var saveUser;\n10 var httpPostRequest;\n\
+  11 @observable String serverResponse = '';\n12 \n13 void main() { // Main Entrypoint\
+  \ of the Program\n14     wordList = query('#userList');  // Assigning variable to\
+  \ 'wordlist' DOM Element\n15     query('#getUsers').onClick.listen(makeRequest);\
+  \ \n16 \t// Register 'makeRequest' to an event listener\n17     query('#saveUser').onClick.listen(makePostRequest);\n\
+  18 }\n19 \n20 **// A get Request**\n21 \n22 void makeRequest(Event e) {\n23    \
+  \ var path = 'http://127.0.0.1:1212/getdartusers'; \n24 \t// Asynchronous request\
+  \ path (Cross Domain Request)\n25     var httpRequest = new HttpRequest();\n26 \
+  \    httpRequest\n27         ..open('GET', path)\n28         ..onLoadEnd.listen((e)\
+  \ => requestComplete(httpRequest))\n29         ..send(''); // Preparing the http\
+  \ request and send to server\n30 }\n31 \n32 **//A post request**\n33 \n34 void makePostRequest(Event\
+  \ e) {\n35   //var path = 'sample.json';\n36   e.preventDefault();\n37   print ('post\
+  \ request');\n38   var path1 = 'http://127.0.0.1:1212/insertdartmongouser';// URL\
+  \ for the REST Calling\n39   httpPostRequest = new HttpRequest();\n40   httpPostRequest.onReadyStateChange.listen(onData(e));\
+  \ \n41 \n42   httpPostRequest.open('POST', path1);\n43   httpPostRequest.send(userJsonData());\n\
+  44 }\n45 \n46 String userJsonData() {\n47   // Put date in the map.\n48   print\
+  \ ('userJsonData');\n49 \n50   var usernm = query('#usernameid');\n51   var passwd\
+  \ = query('#passwordid');\n52   var eml = query('#emailid');\n53 \n54   theData['username']\
+  \ = usernm.value;\n55   theData['password'] = passwd.value;\n56   theData['email']\
+  \ = eml.value;\n57   usernm.value='';\n58   passwd.value='';\n59   eml.value='';\n\
+  60   print(\"mydata=\"+json.stringify(theData));\n61   return json.stringify(theData);\n\
+  62 }\n63 \n64 void onData(Event e) {\n65   print ('onData');\n66 \n67   if (httpPostRequest.readyState\
+  \ == HttpRequest.DONE && httpPostRequest.status == 200) {\n68       // Data saved\
+  \ OK.\n69       serverResponse = httpPostRequest.responseText;\n70       print (serverResponse);\n\
+  71   } else if (httpPostRequest.readyState == HttpRequest.DONE &&\n72       httpPostRequest.status\
+  \ == 0) {\n73       // Status is 0...most likely the server isn't running.\n74 \
+  \      serverResponse = 'No server';\n75       print (serverResponse);\n76   }\n\
+  77 }\n78 \n79 requestComplete(HttpRequest request) {\n80     print(request.status);\n\
+  81     print(request.statusText);\n82 \n83     if (request.status == 200) {\n84\
+  \         List samples = json.parse(request.responseText); // Parsing JSON and put\
+  \ in DART L\\\n85 ist\n86         wordList.children.clear();\n87         for (int\
+  \ i = 0; i < samples.length; i++) {\n88             var myObject = samples[i];\n\
+  89             wordList.children.add(new LIElement()..text = myObject['name']);\
+  \ // Adding dat\\\n90 a to DOM Element\n91            }\n92      } else {\n93  \
+  \          wordList.children.add(new LIElement()..text =\n94                'Request\
+  \ failed, status={$request.status}');\n95      }\n96 }\n```\n\n编写此解决方案非常有用的参考资料\
+  \ -\n\nhttps://gist.github.com/nilcolor/816580\n\nhttp://stackoverflow.com/questions/17689986/jquery-ajax-sending-both-options-and-post-how-to-handle-with-express-js-node-j\n\
+  \nhttp://blog.frankgrimm.net/2010/11/howto-access-http-message-body-post-data-in-node-js/\n\
+  \n### DART 代码参考和 HTML\n\n\n\n\n\n```html\n<!DOCTYPE html>\n<html>\n    <head>\n\
+  \        <meta charset=\"utf-8\">\n        <title>用户</title>\n        <link rel=\"\
+  stylesheet\" href=\"<<css file reference>>\">\n    </head>\n    <body>\n       \
+  \  <h1>所有用户</h1>\n         <button id=\"getUsers\">获取用户</button>\n         <div>\n\
+  \              <ul id=\"userList\">\n              </ul>\n         </div>\n    \
+  \     <div>\n             <h1>输入用户：</h1>\n             <form name=\"dartform\" id=\"\
+  dartform\" method=\"POST\" \n\t\t\t\t\taction=\"http://127.0.0.1:1212/insertdartmongouser\"\
+  >\n                  名称：<input type=\"text\" name =\"username\" id=\"usernameid\"\
+  \ value=\"\" />\n                  密码：<input type=\"text\" name =\"password\" id=\"\
+  passwordid\" value=\"\" \\\n/>\n                  邮箱：<input type=\"text\" name =\"\
+  email\" id=\"emailid\" value=\"\" />\n                  <button id=\"saveUser\"\
+  \ >保存</button>\n             </form>\n         </div>\n         <script type=\"\
+  application/dart\" src=\"users.dart\"></script> <!--Dart 文件引用 \\\n-->\n        \
+  \ <!-- 要使下一行生效，pubspec.yaml 文件中必须依赖 'browser' -->\n         <script src=\"packages/browser/dart.js\"\
+  ></script>\n    </body>\n</html>\n```\n\n我们使用了 Dart 异步代码，通过 REST 通信发送用户数据模型，并发送到\
+  \ Node 服务器以从 MongoDB 获取数据。\n\n读者可以在 [GitHub](https://github.com/piyasde/NodeMongoDBDART)\
+  \ 下载完整的源代码。\n\n## 使用 Should.js 进行 Node.js 单元测试\n\nshould.js 是 Node.js 单元测试的 JavaScript\
+  \ 库之一。在机器上安装 Node.js 后，我们需要通过 npm（Node 包管理器）安装 should.js。\n\n要安装 should.js，需要在终端中运行：\n\
+  \n`npm install should`\n\n要在任何给定的 JavaScript 文件中启用 should.js，我们需要包含：\n\n`require('should');`\n\
+  \n以下是一些单行测试：\n\n布尔变量功能测试：\n\n```javascript\ntrue.should.be.ok;\n\nfalse.should.not.be.ok;\n\
+  \ntrue.should.be.true;\n\n'1'.should.not.be.true;\n\nfalse.should.be.false;\n\n\
+  ''.should.not.be.false;\n```\n\n检查数组功能：\n\n```javascript\n[].should.be.empty; //\
+  \ 数组为空\n\n[1,2,3].should.eql([1,2,3]); // 数组包含与预期相同的值\n\n[1, 2, 3].should.have.length(3);\
+  \ // 数组长度检查\n\n[1,2,3].should.containEql(1); // 数组包含预期值\n\n[].should.be.an.instanceOf(Array);\
+  \ // 数组实例\n```\n\n检查一些字符串功能：\n\n```javascript\n''.should.be.empty; // 空字符串\n\n'foobar'.should.endWith('bar');\
+  \ // 字符串以预期字符串结尾\n\n'foobar'.should.not.endWith('foo'); // 字符串不应以预期字符串结尾\n\n'test'.should.equal('test');\
+  \ // 字符串相等性检查\n```\n\n检查一些数字功能：\n\n```javascript\n(4).should.equal(4);\n\n(10).should.be.above(5);\n\
+  \n(15).should.be.within(10, 15);\n\n(10).should.not.be.below(5);\n```\n\nUndefined\
+  \ 和 Infinity 检查：\n\n```javascript\n(undefined + 0).should.be.NaN;\n\n(1/0).should.be.Infinity;\n\
+  ```\n\nJSON 功能检查：\n\n```javascript\n({ foo: 'bar' }).should.eql({ foo: 'bar' });\
+  \ // JSON 相等性检查\n\n({}).should.be.an.Object; // 一个对象\n\nvar jsonVar = {a:1, b:2};\
+  \ \n\njsonVar.should.have.property('a'); // JSON 属性检查\n\nvar obj = { foo: 'bar',\
+  \ baz: 'raz' }; \n\n(obj).should.containEql({ foo: 'bar', baz: 'raz' }); // JSON\
+  \ 包含预期值\n\nobj.should.have.keys('foo', 'baz'); // JSON 包含这些键\n\nobj.should.have.keys(['foo',\
+  \ 'baz']);\n```\n\n函数应抛出错误：\n\n```javascript\n(function(){\n  throw new Error('fail');\n\
+  }).should.throw();\n\nvar user = {\n    name: 'tj'\n};\n\nuser.should.have.property('name',\
+  \ 'tj');\n```\n\n要使用 'Describe' 独立测试功能，我们需要安装自动测试运行器。这里 `mocha` 是一个自动测试运行器，它将运行测试并在控制台中显示结果。\n\
+  \n现在我们需要安装 mocha：\n\n`npm install -g mocha`\n\n现在用于测试的函数：\n\n```javascript\nfunction\
+  \ sumTwoNumbers(firstNum,secondNum)\n{\n\treturn (parseInt(firstNum) + parseInt(secondNum));\n\
+  }\n```\n\n要测试这个函数，我们需要运行：\n\n`mocha ourfilename.js`\n\n这里 `ourfilename.js` 应该是测试用例文件的名称。\n\
+  \n## 使用 Backbone.js 开发 Java REST Web 应用程序\n\n最近在我们的基于 J2ee 的 Web 应用程序开发中，我们探索了 JavaScript\
+  \ MVC 框架来开发结构化的用户界面开发。在 JavaScript 框架中，我们找到了足够的 Backbone.js 文档，用于开发基于 J2ee 应用程序后端的示例概念验证。\n\
+  \n我们撰写这篇文章是因为我们在网络上没有找到使用 backbone.js 作为 UI 开发工具的完整 Java Web 应用程序。在开发 POC 的过程中，我们修改了\
+  \ backbone.js 部分的代码。\n\n我们从 *Backbone.js Wine Cellar 教程 — 第 2 部分：CRUD*（作者 **Christophe\
+  \ Coenraets**）中学习了相关知识，并使用他的示例 POC 开发了一个以 Backbone.js 作为 Web 层开发框架的 J2ee Web 应用程序。主要应用程序的功劳归功于他。\n\
+  \n我们已将示例应用程序上传到 GitHub（这里是链接）。\n\n以下是整个项目的基本理解：\n\nJ2ee 项目基于 Java Jersey REST 框架。数据库模式附在项目源代码中，文件名为\
+  \ `cellar.sql`。\n\n**开发环境：**\n\n1.  数据库 – MySql\n2.  基于 REST 的 Web 服务开发 – Java Jersey。\n\
+  3.  UI 开发 – Backbone.js\n\n**部署环境：**\n\n1.  Apache Tomcat 7（我们已在其上测试过。）\n\n下面我们将尝试给出服务器端开发和客户端开发的概念和代码片段。\n\
+  \n### 服务器端 -\n\nA. `ConnectionHelper.java` – 用于与 MySql 数据库建立连接。\n\nB. `Wine.java`\
+  \ – 用作数据库中表的简单 POJO 类。\n\nC. `WineDAO.java` – 用于编写与 MySql 表中插入/更新/删除/选择相关的 JDBC\
+  \ 代码。所有数据库操作方法都写在这里。\n\nD. `WineResource.java` – 与基于 REST API 的 Web 服务相关的重要类。方法签名如下：\n\
+  \n```java\n@GET @Path(\"wines\")\n@Produces(MediaType.APPLICATION_JSON) \npublic\
+  \ List findAll() {\n\n    // 从数据库获取所有数据\n\n}\n\n\n@GET @Path(\"search/{query}\"\
+  )\n@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\npublic\
+  \ List<Wine> findByName(@PathParam(\"query\") String query) {\n   // 根据产品名称从数据库获取特定数据\n\
+  \n\n}\n@GET \n@GET @Path(\"{id}\")\n@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML\
+  \ })\npublic Wine findById(@PathParam(\"id\") String id) {\n\t// 根据 ID 从数据库获取特定数据\n\
+  }\n\n\n@POST\n@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})\n\
+  @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\npublic Wine\
+  \ create(Wine wine) {\n       // 使用简单 POJO Wine 将数据插入数据库\n}\n\n\n@PUT @Path(\"{id}\"\
+  )\n@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})\n@Produces({\
+  \ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })\npublic Wine update(Wine\
+  \ wine) {\n\t// 使用特定 ID 更新数据\t\n}\n\n\n@DELETE @Path(\"{id}\")\n@Produces({ MediaType.APPLICATION_JSON,\
+  \ MediaType.APPLICATION_XML })\npublic void remove(@PathParam(\"id\") int id) {\n\
+  \t// 删除具有选定 ID 的特定记录\n}\n```\n\n所有基于 REST 的 API 都可以使用类 `Test.java` 进行测试：\n\n此处测试的特定行：\n\
+  \n```java\nSystem.out.println(service.path(\"rest\").path(\"wines\").accept(MediaType.APPLICATION_JSON).get(String.class));\n\
+  ```\n\n现在简单解释一下如何对基于 Jersey 的 REST Web 服务进行测试：\n\n\n\n\n我们可以进一步深入查看 `web.xml` 中的以下行：\n\
+  \n`<init-param> <param-name>com.sun.jersey.config.property.packages</param-name>\
+  \ <param-value>org.webphlox.brandserver.sample</param-value> </init-param>`\n\n\
+  *   用于让 Java Jersey 服务器扫描基于 REST 的 Web 服务资源所在的包。\n\n```\n1 <servlet-mapping>\n2\
+  \    <servlet-name>Jersey REST Service</servlet-name>\n3    <url-pattern>/rest/*</url-pattern>\n\
+  4 </servlet-mapping>\n```\n\n*   用于标识基于 REST 的 Web 服务的路径，此处为 `/rest/`。\n\n因此，在上述测试方法中，\n\
+  \n`service.path(\"rest\")`\n\n对应的是 url-pattern，\n\n而 `.path(\"wines\")` 用于获取特定的方法。同时，它将以\
+  \ json 格式输出结果。\n\n### 客户端部分 -\n\nHTML 部分 -\n\n在客户端，`index.html` 用于 backbone.js 模板\
+  \ -\n\n```\n1 <script type=\"text/template\" id=\"tpl-header\">\n2    <button class=\"\
+  new\">New Wine</button>\n3 </script>\n```\n\n*   这里的按钮用于添加新数据。\n\n```\n1 <script\
+  \ type=\"text/template\" id=\"tpl-wine-list-item\">\n2    <a href='#wines/<%= id\
+  \ %>'><%= name %></a>\n3 <!-- <%= id %> 和 <%= name %> 用作模板变量。\n4 </script>\n```\n\
+  \n*   用于以表格形式显示数据列表。\n\n```\n 1 <script type=\"text/template\" id=\"tpl-wine-details\"\
+  >\n 2 <div class=\"form-left-col\">\n 3 <label>Id:</label>\n 4 <input type=\"text\"\
+  \ id=\"wineId\" name=\"id\" value=\"<%= id %>\" disabled />\n 5 <label>Name:</label>\n\
+  \ 6 <input type=\"text\" id=\"name\" name=\"name\" value=\"<%= name %>\" required/>\n\
+  \ 7 <label>Grapes:</label>\n 8 <input type=\"text\" id=\"grapes\" name=\"grapes\"\
+  \ value=\"<%= grapes %>\"/>\n 9 <label>Country:</label>\n10 <input type=\"text\"\
+  \ id=\"country\" name=\"country\" value=\"<%= country %>\"/>\n11 <label>Region:</label>\n\
+  12 <input type=\"text\" id=\"region\" name=\"region\" value=\"<%= region %>\"/>\n\
+  13 <label>Year:</label>\n14 <input type=\"text\" id=\"year\" name=\"year\" value=\"\
+  <%= year %>\"/>\n15 <button class=\"save\">Save</button>\n16 <button class=\"delete\"\
+  >Delete</button>\n17 </div>\n18 \n19 <div class=\"form-right-col\">\n20 <img height=\"\
+  300\" src=\"pics/<%= picture %>\"/>\n21 <label>Notes:</label>\n22 <textarea id=\"\
+  description\" name=\"description\"><%= description %></textarea>\n23 </div>\n24\
+  \ \n25 </script>\n```\n\n*   用于显示特定数据项的详细信息。\n\n### Javascript 部分 (Backbone.js)\n\
+  \n所有与 javascript 相关的代码都可以在 `main.js` 中找到。\n\n首先，我们需要定义由 backbone javascript 处理的数据模型（Model）。\n\
+  \n```\n 1 // Models \n 2 \n 3 window.Wine = Backbone.Model.extend({\n 4 urlRoot:\"\
+  http://localhost:8080/brandserver/rest/wines\",\n 5 defaults:{\n 6 \"id\":null,\n\
+  \ 7 \"name\":\"\",\n 8 \"grapes\":\"\",\n 9 \"country\":\"USA\",\n10 \"region\"\
+  :\"California\",\n11 \"year\":\"\",\n12 \"description\":\"\",\n13 \"picture\":\"\
+  \"\n14 }\n15 });\n16 \n17 window.WineCollection = Backbone.Collection.extend({\n\
+  18 model:Wine,\n19 url:\"http://localhost:8080/brandserver/rest/wines\"\n20 });\n\
+  ```\n\n`urlRoot` 是基于 REST 的 Web 服务调用点（端点）。这里我们指定了数据选择/插入/更新/删除所需的 URL。模型（Model）是\
+  \ `Wine`，它将用于存储来自 Web 服务端点的数据并进行操作，它是集合（Collection）`WineCollection` 的一部分。\n\n`default`\
+  \ 参数用于在添加数据时初始化一个新模型。\n\n应用程序中有三个视图（View）：\n\nA. `WineListView` – 包含一个项目视图（Item\
+  \ View）集合 - `WineListItemView`\n\nB. `WineListItemView` – 负责渲染模型模板 – `WineView`\n\
+  \nC. `WineView` – 包含添加、删除和更新的核心方法 -\n\n有趣的方法是 – 1> `saveWine` 和 2> `deleteWine`\n\
+  \nD. `HeaderView` – 负责初始化用于添加新模板的视图。\n\n有趣的方法是 – `newWine`\n\n路由器（Router） - `AppRouter`\
+  \ 负责应用程序的初始路由。\n\n### 客户端 JavaScript MVC 中的 Backbone.js\n\n本文是 [基于 Backbone.js 的\
+  \ Java Web 项目应用](http://www.phloxblog.in/developing-java-web-applications-backbone-js)\
+  \ 的扩展。\n\n项目代码可以 [在此处](https://github.com/piyasde/GitHub_Projects) 下载。\n\n在 Backbone.js\
+  \ JavaScript MVC 框架中，模型（Model）指的是客户端用于数据操作、客户端验证、从服务器端获取数据以及最终提交到服务器端的中间数据持有对象。\n\
+  \n在我们的例子中，模型代码如下：\n\n```\n 1 window.Wine = Backbone.Model.extend({\n 2 urlRoot:\"\
+  http://localhost:8080/brandserver/rest/wines\",\n 3      defaults:{\n 4      \"\
+  id\":null,\n 5      \"name\":\"\",\n 6      \"grapes\":\"\",\n 7      \"country\"\
+  :\"USA\",\n 8      \"region\":\"California\",\n 9      \"year\":\"\",\n10      \"\
+  description\":\"\",\n11      \"picture\":\"\"\n12     }\n13 });\n```\n\n这里，`defaults`\
+  \ 属性用于新模型数据实例化时的数据。\n\n我们还可以在 `AppRouter` 的 `newwine` 函数中看到模型数据的实例化：\n\n```\n1 app.wineView\
+  \ = new WineView({model:new Wine( \n2 \t\t{id:null,name:\"\",\n3 \t\t grapes:\"\"\
+  ,\n4                  country:\"\",\n5                  region:\"\",\n6        \
+  \          year:\"\",\n7                  description:\"\", \n8                \
+  \  picture:\"generic.jpg\" }\n9  )}); // 模型实例化\n```\n\n这里我们向 `Wine` 模型的属性传递了一些值。\n\
+  \n在模型中，`urlRoot` 指定了基于 REST 的 Web 服务的主 URL 路径。\n\n在我们的例子中，它是：\n\n`urlRoot:\"http://localhost:8080/brandserver/rest/wines\"\
+  `\n\n现在在 -\n\n```\n1 window.WineCollection = Backbone.Collection.extend({\n2   \
+  \  model:Wine,\n3     url:\"http://localhost:8080/brandserver/rest/wines\"\n4 });\n\
+  ```\n\n名为 `WineCollection` 的集合使用模型 `Wine` 进行初始化，期望通过调用基于 REST 的 Web 服务从服务器获取相同的\
+  \ json 数据。\n\n有趣的是，当执行以下代码时，`AppRouter` 会调用 `list` 函数，该函数实际上在内部发起了一个基于 REST 的 Web\
+  \ 服务调用：\n\n```\n1 this.wineList = new WineCollection();\n2 this.wineListView = new\
+  \ WineListView({model:this.wineList});\n3 this.wineList.fetch(); // 调用服务器获取所有数据（REST\
+  \ Web 服务）\n```\n\n现在有趣的是模型保存函数 – `saveWine` -\n\n```\n 1     var win = new Wine(this.model);\n\
+  \ 2 \n 3     win.set({\n 4         name:$('#name').val(),\n 5         grapes:$('#grapes').val(),\n\
+  \ 6         country:$('#country').val(),\n 7         region:$('#region').val(),\n\
+  \ 8         year:$('#year').val(),\n 9         description:$('#description').val()\n\
+  10    });\n11 \n12    // 部分代码片段\n13    app.wineList.create(win, {  // 内部调用 REST\
+  \ Web 服务\n14        success:function () {\n15             \talert('Wine saved successfully');\n\
+  16                \tapp.navigate('', true);// 初始化状态\n17                 window.history.back();\
+  \ \n18              }\n19       });\n20    // 上述代码片段用于将新模型保存到服务器。create 函数很重要。此\n\
+  21    // 回调函数在实例化新模型并为其属性设置值后被调用。\n22 \n23    win.save(); // 内部调用 REST Web 服务\n\
+  24    alert('Wine updated successfully');\n25    app.navigate('', true); // 初始化状态\n\
+  26    window.history.back();\n27    // 上述代码片段用于将模型更新到服务器。save 函数很重要。此\n28    //\
+  \ 回调函数在设置现有模型属性的值后被调用。\n```\n\n现在来看 `deleteWine` 函数 -\n\n\n\n\n\n```\n 1     var\
+  \ win = new Wine(this.model); // Instantiate variable with current model.\n 2  \
+  \   win.destroy({ // REST Web Service Calling\n 3          success:function () {\
+  \  \n 4                 alert('Wine deleted successfully');\n 5                \
+  \ app.navigate('', true);\n 6                 //window.history.back();\n 7     \
+  \        }\n 8         });\n 9 \n10    // The above Code snippet is used for deleting\
+  \ a model to the server. The destory funct\\\n11 ion is important. This     \n12\
+  \    // callback function is called to delete corresponding row in database of the\
+  \ current m\\\n13 odel. \n```\n\n### 客户端 JavaScript MVC 中的 Backbone.js 路由\n\n在 Backbone.js\
+  \ JavaScript MVC 框架中，路由用于通过哈希标签（#）导航网站 URL。\n\nBackbone.js 中的所有路由都包含路由及其映射函数。在我们的案例中，路由指的是——\n\
+  \n```\n 1 // Router\n 2 var AppRouter = Backbone.Router.extend({\n 3 \n 4 \tinitialize:function\
+  \ () {\n 5         // Function is called at the time of initialization of Router.\n\
+  \ 6     },\n 7 \n 8     routes:{\n 9         \"wines/new\":\"newWine\", // a router\
+  \ mapping to a particular function newWine\n10         // Other code snippets //\
+  \ Other route paths...\n11     },\n12 \n13     list:function () {\n14         //\
+  \ Code to fetch the value from database using the REST based web service.\n15  \
+  \       $('#sidebar').html(this.wineListView.render().el); // Rendering a html fragment\
+  \ - \\\n16 template by Backbone View.\n17     },\n18 \n19     // Other code snippets....\n\
+  20     newWine:function () {\n21         // mapped function from route. \n22   \
+  \      // New Model initialisation and html template rendering code to be here.\n\
+  23     }\n24 });\n```\n\n```\n1 var app = new AppRouter(); // Backbone router initialisation\n\
+  2 Backbone.history.start(); //  Start Backbone history to capture navigation pattern\
+  \ in brow\\\n3 ser for later use.\n```\n\n### 客户端 JavaScript MVC 中的 Backbone.js\
+  \ 视图\n\nBackbone.js 视图用于渲染客户端应用程序数据模型。它们用于监听事件并据此执行操作。我们将结合 JavaScript 模板库，在应用程序中针对其中一个视图解释视图功能。\n\
+  \n```\n 1 window.HeaderView = Backbone.View.extend({\n 2 \n 3     template:_.template($('#tpl-header').html()),\
+  \ // Here template controls the DOM Elemen\\\n 4 t in the HTML.\n 5 \n 6     initialize:function\
+  \ () {\n 7        // This function will be called at the initialisation of a View...\n\
+  \ 8         this.render(); // render function loads the template in the el property\
+  \ of backbon\\\n 9 e.js\n10     },\n11 \n12     render:function (eventName) {\n\
+  13         $(this.el).html(this.template());\n14         // Above el is a property\
+  \ of backbone view. This is created as empty div element i\\\n15 n browser and the\
+  \ control on        \n16         // the Div element is done completely by the Backbone.js.\
+  \ As this binds the contai\\\n17 ner element, all the events \n18         // will\
+  \ trigger for this element. \n19         return this;\n20     },\n21 \n22     events:{\n\
+  23         \"click .new\":\"newWine\" \n24         // here the listening for click\
+  \ event is happening. And it will call the mapped ne\\\n25 wWine function \n26 \
+  \    },\n27 \n28     newWine:function (event) {\n29         // when Button is clicked,\
+  \ this function is called for the Click event trigger.\n30         app.navigate(\"\
+  wines/new\", true);\n31         return false;\n32   }\n33 });\n```\n\n项目代码可在此处下载：[这里](https://github.com/piyasde/GitHub_Projects)。\n\
+  \n**更多资源：**\n\n[什么是视图？](http://backbonetutorials.com/what-is-a-view)\n\n[Backbone.js\
+  \ 教程：列表视图](http://dailyjs.com/2012/12/27/backbone-tutorial-5)\n\n[什么是路由？](http://backbonetutorials.com/what-is-a-router)\n\
+  \n1.  [Backbone.js 经验教训与改进示例应用](http://coenraets.org/blog/2012/01/backbone-js-lessons-learned-and-improved-sample-app)\n\
+  \n2.  [完全掌握 Backbone.js](http://javascriptissexy.com/learn-backbone-js-completely)\n\
+  \n"
