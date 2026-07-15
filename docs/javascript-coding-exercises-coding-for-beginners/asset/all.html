@@ -1,0 +1,2220 @@
+<p><img src="image_rsrcWT.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<div>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="100%" preserveaspectratio="xMidYMid meet" version="1.1" viewbox="0 0 1595 1595" width="100%">
+<image height="1595" width="1595" xlink:href="image_rsrcWT.jpg"></image>
+</svg>
+</div>
+<p><span id="part0001.xhtml"></span></p>
+<div id="part0001.xhtml_page_1" class="class_sF">
+JAVASCRIPT
+</div>
+<div class="class_sF">
+CODING EXERCISES
+</div>
+<div class="class_sJ">
+CODING FOR BEGINNERS
+</div>
+<div class="class_sM">
+JJ TAM
+</div>
+<p><span id="part0002.xhtml"></span></p>
+<div id="part0002.xhtml_Table_of_Contents" class="class_sV">
+<a href="#part0003.xhtml" class="class_sWP">Display the current day and
+time</a>
+</div>
+<div class="class_sX">
+<a href="#part0004.xhtml" class="class_sWP">Print the contents</a>
+</div>
+<div class="class_sX">
+<a href="#part0005.xhtml" class="class_sWP">Display the current date</a>
+</div>
+<div class="class_sX">
+<a href="#part0006.xhtml" class="class_sWP">Find the area of a
+triangle</a>
+</div>
+<div class="class_sX">
+<a href="#part0007.xhtml" class="class_sWP">Check whether a given year
+is a leap year</a>
+</div>
+<div class="class_sX">
+<a href="#part0008.xhtml" class="class_sWP">Calculate multiplication and
+division</a>
+</div>
+<div class="class_sX">
+<a href="#part0009.xhtml" class="class_sWP">Convert temperatures</a>
+</div>
+<div class="class_sX">
+<a href="#part0010.xhtml" class="class_sWP">Find the largest</a>
+</div>
+<div class="class_sX">
+<a href="#part0011.xhtml" class="class_sWP">Reverse a given string</a>
+</div>
+<div class="class_sX">
+<a href="#part0012.xhtml" class="class_sWP">Replace every character</a>
+</div>
+<div class="class_sX">
+<a href="#part0013.xhtml" class="class_sWP">Capitalize The First
+Letter</a>
+</div>
+<div class="class_sX">
+<a href="#part0014.xhtml" class="class_sWP">Convert number to hours and
+minutes</a>
+</div>
+<div class="class_sX">
+<a href="#part0015.xhtml" class="class_sWP">Count vowels in a given
+string</a>
+</div>
+<div class="class_sX">
+<a href="#part0016.xhtml" class="class_sWP">Create a new string</a>
+</div>
+<div class="class_sX">
+<a href="#part0017.xhtml" class="class_sWP">Concatenate two strings</a>
+</div>
+<div class="class_sX">
+<a href="#part0018.xhtml" class="class_sWP">Move last three
+character</a>
+</div>
+<div class="class_sX">
+<a href="#part0019.xhtml" class="class_sWP">Compute the sum</a>
+</div>
+<div class="class_sX">
+<a href="#part0020.xhtml" class="class_sWP">Add two digits</a>
+</div>
+<div class="class_sX">
+<a href="#part0021.xhtml" class="class_sWP">Check whether a given year
+is a leap</a>
+</div>
+<div id="part0002.xhtml_page_3" class="class_sX">
+<a href="#part0022.xhtml" class="class_sWP">Check given positive
+number</a>
+</div>
+<div class="class_sX">
+<a href="#part0023.xhtml" class="class_sWP">Check a string starts with
+'Java'</a>
+</div>
+<div class="class_sX">
+<a href="#part0024.xhtml" class="class_sWP">Check two given integer
+values</a>
+</div>
+<div class="class_sX">
+<a href="#part0025.xhtml" class="class_sWP">Find a value which is
+nearest to 100</a>
+</div>
+<p><span id="part0003.xhtml"></span></p>
+<div id="part0003.xhtml_aVZ" class="heading_s1T">
+Display the current day and time
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript current day and time&lt;/title&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;body&gt;&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+var today = new Date();
+</div>
+<div class="heading_s1Z">
+var day = today.getDay();
+</div>
+<div class="heading_s1Z">
+var daylist = ["Sunday","Monday","Tuesday","Wednesday
+","Thursday","Friday","Saturday"];
+</div>
+<div class="heading_s1Z">
+console.log("Today is : " + daylist[day] + ".");
+</div>
+<div class="heading_s1Z">
+var hour = today.getHours();
+</div>
+<div class="heading_s1Z">
+var minute = today.getMinutes();
+</div>
+<div class="heading_s1Z">
+var second = today.getSeconds();
+</div>
+<div class="heading_s1Z">
+var prepand = (hour &gt;= 12)? " PM ":" AM ";
+</div>
+<div class="heading_s1Z">
+hour = (hour &gt;= 12)? hour - 12: hour;
+</div>
+<div class="heading_s1Z">
+if (hour===0 &amp;&amp; prepand===' PM ')
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+if (minute===0 &amp;&amp; second===0)
+</div>
+<div id="part0003.xhtml_page_5" class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+hour=12;
+</div>
+<div class="heading_s1Z">
+prepand=' Noon';
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+else
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+hour=12;
+</div>
+<div class="heading_s1Z">
+prepand=' PM';
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+if (hour===0 &amp;&amp; prepand===' AM ')
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+if (minute===0 &amp;&amp; second===0)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+hour=12;
+</div>
+<div class="heading_s1Z">
+prepand=' Midnight';
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+else
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+hour=12;
+</div>
+<div class="heading_s1Z">
+prepand=' AM';
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1X">
+console.log("Current Time : "+hour + prepand + " : " + minute + " : " +
+second);
+</div>
+<p><span id="part0004.xhtml"></span></p>
+<div id="part0004.xhtml_aW0" class="heading_s3H">
+Print the contents
+</div>
+<div class="heading_s3K">
+of the current window
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1X">
+&lt;meta charset=utf-8 /&gt;
+</div>
+<div class="heading_s1X">
+&lt;title&gt;Print the current page.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;p&gt;&lt;/p&gt;
+</div>
+<div class="heading_s1X">
+&lt;p&gt;Click the button to print the current page.&lt;/p&gt;
+</div>
+<div class="heading_s1X">
+&lt;button onclick="print_current_page()"&gt;Print this
+page&lt;/button&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s42">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function print_current_page()
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1X">
+window.print();
+</div>
+<div class="heading_s1X">
+}
+</div>
+<p><span id="part0005.xhtml"></span></p>
+<div id="part0005.xhtml_aW1" class="heading_s1T">
+Display the current date
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;Write a JavaScript program to get the current
+date.&lt;/title&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;body&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/body&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/html&gt;
+</div>
+<div class="heading_s4S">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+var today = new Date();
+</div>
+<div class="heading_s1X">
+var dd = today.getDate();
+</div>
+<div class="heading_s4W">
+var mm = today.getMonth()+1;
+</div>
+<div class="heading_s1X">
+var yyyy = today.getFullYear();
+</div>
+<div class="heading_s1X">
+if(dd&lt;10)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s51">
+dd='0'+dd;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+if(mm&lt;10)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s51">
+mm='0'+mm;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+today = mm+'-'+dd+'-'+yyyy;
+</div>
+<div id="part0005.xhtml_page_8" class="heading_s1X">
+console.log(today);
+</div>
+<div class="heading_s1X">
+today = mm+'/'+dd+'/'+yyyy;
+</div>
+<div class="heading_s1X">
+console.log(today);
+</div>
+<div class="heading_s1X">
+today = dd+'-'+mm+'-'+yyyy;
+</div>
+<div class="heading_s1X">
+console.log(today);
+</div>
+<div class="heading_s1X">
+today = dd+'/'+mm+'/'+yyyy;
+</div>
+<div class="heading_s1X">
+console.log(today);
+</div>
+<p><span id="part0006.xhtml"></span></p>
+<div id="part0006.xhtml_aW2" class="heading_s1T">
+Find the area of a triangle
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1X">
+&lt;meta charset=utf-8 /&gt;
+</div>
+<div class="heading_s1X">
+&lt;title&gt;The area of a triangle&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+var side1 = 5;
+</div>
+<div class="heading_s1X">
+var side2 = 6;
+</div>
+<div class="heading_s1X">
+var side3 = 7;
+</div>
+<div class="heading_s1X">
+var s = (side1 + side2 + side3)/2;
+</div>
+<div class="heading_s1X">
+var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+</div>
+<div class="heading_s1X">
+console.log(area);
+</div>
+<p><span id="part0007.xhtml"></span></p>
+<div id="part0007.xhtml_aW3" class="heading_s1T">
+Check whether a given year is a leap year
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1X">
+&lt;meta charset=utf-8 /&gt;
+</div>
+<div class="heading_s1X">
+&lt;title&gt;Find Leap Year&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIT CODE
+</div>
+<div class="heading_s1X">
+function leapyear(year)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1X">
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+console.log(leapyear(2016));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(2000));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(1700));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(1800));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(100));
+</div>
+<div class="heading_s71">
+OUTPUT
+</div>
+<div class="class_s73">
+true
+</div>
+<div id="part0007.xhtml_page_11" class="class_s73">
+true
+</div>
+<div class="class_s73">
+false
+</div>
+<div class="class_s73">
+false
+</div>
+<div class="class_s73">
+false
+</div>
+<p><span id="part0008.xhtml"></span></p>
+<div id="part0008.xhtml_aW4" class="heading_s1T">
+Calculate multiplication and division
+</div>
+<div class="heading_s3K">
+of two numbers
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1X">
+&lt;meta charset=utf-8 /&gt;
+</div>
+<div class="heading_s1X">
+&lt;title&gt;JavaScript program to calculate multiplication and division
+of two numbers &lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;style type="text/css"&gt;
+</div>
+<div class="heading_s1X">
+body {margin: 30px;}
+</div>
+<div class="heading_s1X">
+&lt;/style&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;form&gt;
+</div>
+<div class="heading_s1X">
+1st Number : &lt;input type="text" id="firstNumber" /&gt;&lt;br&gt;
+</div>
+<div class="heading_s1X">
+2nd Number: &lt;input type="text" id="secondNumber" /&gt;&lt;br&gt;
+</div>
+<div class="heading_s1X">
+&lt;input type="button" onClick="multiplyBy()" Value="Multiply" /&gt;
+</div>
+<div class="heading_s1X">
+&lt;input type="button" onClick="divideBy()" Value="Divide" /&gt;
+</div>
+<div class="heading_s1X">
+&lt;/form&gt;
+</div>
+<div class="heading_s1X">
+&lt;p&gt;The Result is : &lt;br&gt;
+</div>
+<div class="heading_s1X">
+&lt;span id = "result"&gt;&lt;/span&gt;
+</div>
+<div class="heading_s1X">
+&lt;/p&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div id="part0008.xhtml_page_13" class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function multiplyBy()
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s89">
+num1 = document.getElementById("firstNumber").value;
+</div>
+<div class="heading_s89">
+num2 = document.getElementById("secondNumber").value;
+</div>
+<div class="heading_s89">
+document.getElementById("result").innerHTML = num1 * num2;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+function divideBy()
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s89">
+num1 = document.getElementById("firstNumber").value;
+</div>
+<div class="heading_s89">
+num2 = document.getElementById("secondNumber").value;
+</div>
+<div class="heading_s1X">
+document.getElementById("result").innerHTML = num1 / num2;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s8M">
+OUTPUT
+</div>
+<div class="class_s8S-1">
+<img src="image_rsrcWU.jpg" class="class_s8S-0" />
+</div>
+<p><span id="part0009.xhtml"></span></p>
+<div id="part0009.xhtml_aW5" class="heading_s1T">
+Convert temperatures
+</div>
+<div class="heading_s3K">
+To and from celsius, Fahrenheit in JAVASCRIPT
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;html&gt;
+</div>
+<div class="heading_s1Z">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;Write a JavaScript program to convert temperatures to and
+from celsius, fahrenheit&lt;/title&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1Z">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function cToF(celsius)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+var cTemp = celsius;
+</div>
+<div class="heading_s1Z">
+var cToFahr = cTemp * 9 / 5 + 32;
+</div>
+<div class="heading_s1Z">
+var message = cTemp+'\xB0C is ' + cToFahr + ' \xB0F.';
+</div>
+<div class="heading_s51">
+console.log(message);
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+function fToC(fahrenheit)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+var fTemp = fahrenheit<span id="part0009.xhtml_page_15"></span> ;
+</div>
+<div class="heading_s1Z">
+var fToCel = (fTemp - 32) * 5 / 9;
+</div>
+<div class="heading_s1Z">
+var message = fTemp+'\xB0F is ' + fToCel + '\xB0C.';
+</div>
+<div class="heading_s51">
+console.log(message);
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+cToF(60);
+</div>
+<div class="heading_s1X">
+fToC(45);
+</div>
+<div class="heading_s9W">
+OUTPUT
+</div>
+<div class="class_s73">
+60°C is 140 °F.
+</div>
+<div class="class_s73">
+45°F is 7.222222222222222°C.
+</div>
+<p><span id="part0010.xhtml"></span></p>
+<div id="part0010.xhtml_aW6" class="heading_s1T">
+Find the largest
+</div>
+<div class="heading_s3K">
+Of three given integers
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to find the largest of three given
+integers.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function max_of_three(x, y, z)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+max_val = 0;
+</div>
+<div class="heading_s1Z">
+if (x &gt; y)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+max_val = x;
+</div>
+<div class="heading_s1Z">
+} else
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+max_val = y;
+</div>
+<div id="part0010.xhtml_page_17" class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+if (z &gt; max_val)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+max_val = z;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+return max_val;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(max_of_three(1,0,1));
+</div>
+<div class="heading_s1X">
+console.log(max_of_three(0,-10,-20));
+</div>
+<div class="heading_s1X">
+console.log(max_of_three(1000,510,440));
+</div>
+<div class="class_sB7">
+<span class="class_sWR">Output:</span>
+</div>
+<div class="class_sB9">
+1
+</div>
+<div class="class_s73">
+0
+</div>
+<div class="class_s73">
+1000
+</div>
+<p><span id="part0011.xhtml"></span></p>
+<div id="part0011.xhtml_aW7" class="heading_s1T">
+Reverse a given string
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to reverse a given string.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function string_reverse(str)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s51">
+return str.split("").reverse().join("");
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(string_reverse("jsresource"));
+</div>
+<div class="heading_s1X">
+console.log(string_reverse("www"));
+</div>
+<div class="heading_s1X">
+console.log(string_reverse("JavaScript"));
+</div>
+<div class="heading_s9W">
+OUTPUT
+</div>
+<div class="class_s73">
+ecruosersj
+</div>
+<div class="class_s73">
+www
+</div>
+<div class="class_s73">
+tpircSavaJ
+</div>
+<p><span id="part0012.xhtml"></span></p>
+<div id="part0012.xhtml_aW8" class="heading_s1T">
+Replace every character
+</div>
+<div class="heading_s3K">
+with the character following it in the alphabet
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to replace every character in a given
+string with the character following it in the alphabet.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function string_reverse(str)
+</div>
+<div class="heading_s1X">
+function LetterChanges(text) {
+</div>
+<div class="heading_s1X">
+//https://goo.gl/R8gn7u
+</div>
+<div class="heading_s1X">
+var s = text.split('');
+</div>
+<div class="heading_s1X">
+for (var i = 0; i &lt; s.length; i++) {
+</div>
+<div class="heading_s1X">
+// Caesar cipher
+</div>
+<div class="heading_s1X">
+switch(s[i]) {
+</div>
+<div class="heading_s1X">
+case ' ':
+</div>
+<div class="heading_s1X">
+break;
+</div>
+<div id="part0012.xhtml_page_20" class="heading_s1X">
+case 'z':
+</div>
+<div class="heading_s1X">
+s[i] = 'a';
+</div>
+<div class="heading_s1X">
+break;
+</div>
+<div class="heading_s1X">
+case 'Z':
+</div>
+<div class="heading_s1X">
+s[i] = 'A';
+</div>
+<div class="heading_s1X">
+break;
+</div>
+<div class="heading_s1X">
+default:
+</div>
+<div class="heading_s1X">
+s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+// Upper-case vowels
+</div>
+<div class="heading_s1X">
+switch(s[i]) {
+</div>
+<div class="heading_s1X">
+case 'a': case 'e': case 'i': case 'o': case 'u':
+</div>
+<div class="heading_s1X">
+s[i] = s[i].toUpperCase();
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+return s.join('');
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+console.log(LetterChanges("PYTHON"));
+</div>
+<div class="heading_s1X">
+console.log(LetterChanges("W3R"));
+</div>
+<div class="heading_s1X">
+console.log(LetterChanges("php"));
+</div>
+<div class="heading_sDU">
+Output:
+</div>
+<div class="class_s73">
+QZUIPO
+</div>
+<div class="class_s73">
+X4S
+</div>
+<div class="class_s73">
+qIq
+</div>
+<p><span id="part0013.xhtml"></span></p>
+<div id="part0013.xhtml_aW9" class="heading_s1T">
+Capitalize The First Letter
+</div>
+<div class="heading_s3K">
+Of Each Word
+</div>
+<div class="heading_s9W">
+Of A Given String
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to capitalize the first letter of each
+word of a given string.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function capital_letter(str)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s51">
+str = str.split(" ");
+</div>
+<div class="heading_sEP">
+for (var i = 0, x = str.length; i &lt; x; i++) {
+</div>
+<div class="heading_s89">
+str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+</div>
+<div class="heading_s51">
+}
+</div>
+<div class="heading_sEP">
+return str.join(" ");
+</div>
+<div id="part0013.xhtml_page_22" class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(capital_letter("Write a JavaScript program to capitalize the
+first letter of each word of a given string."));
+</div>
+<div class="heading_s1V">
+OUTPUT
+</div>
+<div>
+<span class="class_sWR">Output:</span>
+</div>
+<div class="class_sB9">
+Write A JavaScript Program To Capitalize The First Letter Of Each Word
+Of A Given String.
+</div>
+<p><span id="part0014.xhtml"></span></p>
+<div id="part0014.xhtml_aWA" class="heading_s1T">
+Convert number to hours and minutes
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to convert a given number to hours and
+minutes.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function time_convert(num)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+var hours = Math.floor(num / 60); 
+</div>
+<div class="heading_s1Z">
+var minutes = num % 60;
+</div>
+<div class="heading_s1Z">
+return hours + ":" + minutes;        
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(time_convert(71));
+</div>
+<div class="heading_s1X">
+console.log(time_convert(450));
+</div>
+<div class="heading_s1X">
+console.log(time_convert(1441));
+</div>
+<div id="part0014.xhtml_page_24" class="heading_sFX">
+OUTPUT
+</div>
+<div class="class_s73">
+1:11
+</div>
+<div class="class_s73">
+7:30
+</div>
+<div class="class_s73">
+24:1
+</div>
+<p><span id="part0015.xhtml"></span></p>
+<div id="part0015.xhtml_aWB" class="heading_s1T">
+Count vowels in a given string
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to count the number of vowels in a given
+string.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function vowel_Count(str)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_sGP">
+return str.replace(/[^aeiou]/g, "").length;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(vowel_Count("Python"));
+</div>
+<div class="heading_s1X">
+console.log(vowel_Count("htmlresource.com"));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div id="part0015.xhtml_page_26" class="class_s73">
+1
+</div>
+<div class="class_s73">
+5
+</div>
+<p><span id="part0016.xhtml"></span></p>
+<div id="part0016.xhtml_aWC" class="heading_s3H">
+Create a new string
+</div>
+<div class="heading_s9W">
+HTML CODE
+</div>
+<div class="class_s73">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="class_s73">
+&lt;html&gt;
+</div>
+<div class="class_s73">
+&lt;head&gt;
+</div>
+<div class="class_sH8">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="class_sH8">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="class_sH8">
+&lt;title&gt;JavaScript program to create a new string without the first
+and last character.&lt;/title&gt;
+</div>
+<div class="class_s73">
+&lt;/head&gt;
+</div>
+<div class="class_s73">
+&lt;body&gt;
+</div>
+<div class="class_sHE">
+&lt;/body&gt;
+</div>
+<div class="class_s73">
+&lt;/html&gt;
+</div>
+<div class="heading_s9W">
+JAVASCRIPT CODE
+</div>
+<div class="class_s73">
+function without_first_end(str) {
+</div>
+<div class="class_sH8">
+return str.substring(1, str.length - 1);
+</div>
+<div class="class_s73">
+}
+</div>
+<div class="class_s73">
+console.log(without_first_end('JavaScript'));
+</div>
+<div class="class_s73">
+console.log(without_first_end('JS'));
+</div>
+<div class="class_s73">
+console.log(without_first_end('PHP'));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div id="part0016.xhtml_page_28" class="class_s73">
+avaScrip
+</div>
+<div class="class_sHE">
+H
+</div>
+<p><span id="part0017.xhtml"></span></p>
+<div id="part0017.xhtml_aWD" class="heading_s1T">
+Concatenate two strings
+</div>
+<div class="heading_s3K">
+Except their first character
+</div>
+<div class="heading_s9W">
+HTML CODE
+</div>
+<div class="class_s73">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="class_s73">
+&lt;html&gt;
+</div>
+<div class="class_s73">
+&lt;head&gt;
+</div>
+<div class="class_sH8">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="class_sH8">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="class_sH8">
+&lt;title&gt;JavaScript program to concatenate two strings except their
+first character.&lt;/title&gt;
+</div>
+<div class="class_s73">
+&lt;/head&gt;
+</div>
+<div class="class_s73">
+&lt;body&gt;
+</div>
+<div class="class_sHE">
+&lt;/body&gt;
+</div>
+<div class="class_s73">
+&lt;/html&gt;
+</div>
+<div class="heading_s9W">
+JAVASCRIPT CODE
+</div>
+<div class="class_s73">
+function concatenate(str1, str2) {
+</div>
+<div class="class_sH8">
+str1 = str1.substring(1, str1.length);
+</div>
+<div class="class_sH8">
+str2 = str2.substring(1, str2.length);
+</div>
+<div class="class_sH8">
+return str1 + str2;
+</div>
+<div class="class_s73">
+}
+</div>
+<div id="part0017.xhtml_page_30" class="class_sHE">
+console.log(concatenate("PHP","JS"));
+</div>
+<div class="class_s73">
+console.log(concatenate("A","B"));
+</div>
+<div class="class_s73">
+console.log(concatenate("AA","BB"));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div class="class_s73">
+HPS
+</div>
+<div class="class_sHE">
+AB
+</div>
+<p><span id="part0018.xhtml"></span></p>
+<div id="part0018.xhtml_aWE" class="heading_s1T">
+Move last three character
+</div>
+<div class="heading_s3K">
+start of a specified string
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to move last three character to the
+start of a given string. The string length must be 3.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function right_three(str) {
+</div>
+<div class="heading_sKD">
+if (str.length &gt; 1)
+</div>
+<div class="heading_sKF">
+{
+</div>
+<div class="heading_sKH">
+return str.slice(-3) + str.slice(0, -3);
+</div>
+<div class="heading_sKF">
+}
+</div>
+<div class="heading_s1Z">
+return str;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+console.log(right_three("Python"));
+</div>
+<div class="heading_s1X">
+console.log(right_three("JavaScript"));
+</div>
+<div class="heading_s1X">
+console.log(right_three("Hi"));
+</div>
+<div id="part0018.xhtml_page_32" class="heading_sFX">
+Output:
+</div>
+<div class="class_s73">
+honPyt
+</div>
+<div class="class_s73">
+iptJavaScr
+</div>
+<div class="class_s73">
+Hi
+</div>
+<p><span id="part0019.xhtml"></span></p>
+<div id="part0019.xhtml_aWF" class="heading_s1T">
+Compute the sum
+</div>
+<div class="heading_s3K">
+Of three elements of a given array
+</div>
+<div class="heading_s9W">
+Of integers of length 3
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to compute the sum of three elements of
+an given integers of length 3.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s42">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function sum_three(nums)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+return nums[0] + nums[1] + nums[2];
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(sum_three([10, 32, 20]));
+</div>
+<div class="heading_s1X">
+console.log(sum_three([5, 7, 9]));
+</div>
+<div id="part0019.xhtml_page_34" class="heading_s1X">
+console.log(sum_three([0, 8, -11]));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div class="class_s73">
+62
+</div>
+<div class="class_s73">
+21
+</div>
+<div class="class_s73">
+-3
+</div>
+<p><span id="part0020.xhtml"></span></p>
+<div id="part0020.xhtml_aWG" class="heading_s1T">
+Add two digits
+</div>
+<div class="heading_s3K">
+Of a given positive integer
+</div>
+<div class="heading_s9W">
+Of length two
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to add two digits of a given positive
+integer of length two.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function add_two_digits(n)
+</div>
+<div class="heading_sNH">
+{
+</div>
+<div class="heading_sNK">
+return n % 10 + Math.floor(n / 10);
+</div>
+<div class="heading_sNH">
+}
+</div>
+<div class="heading_s1X">
+console.log(add_two_digits(25))
+</div>
+<div class="heading_s1X">
+console.log(add_two_digits(50))
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div id="part0020.xhtml_page_36" class="class_s73">
+7
+</div>
+<div class="class_s73">
+5
+</div>
+<p><span id="part0021.xhtml"></span></p>
+<div id="part0021.xhtml_aWH" class="heading_s1T">
+Check whether a given year is a leap
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1X">
+&lt;meta charset=utf-8 /&gt;
+</div>
+<div class="heading_s1X">
+&lt;title&gt;Find Leap Year&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function leapyear(year)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1X">
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s1X">
+console.log(leapyear(2016));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(2000));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(1700));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(1800));
+</div>
+<div class="heading_s1X">
+console.log(leapyear(100));
+</div>
+<div class="heading_s9W">
+OUTPUT
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+true
+</div>
+<div id="part0021.xhtml_page_38" class="class_s73">
+false
+</div>
+<div class="class_s73">
+false
+</div>
+<div class="class_s73">
+false
+</div>
+<p><span id="part0022.xhtml"></span></p>
+<div id="part0022.xhtml_aWJ" class="heading_s1T">
+Check given positive number
+</div>
+<div class="heading_s3K">
+Multiple of 3 or a multiple of 7
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to check whether a given positive number
+is a multiple of 3 or a multiple of 7. &lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s42">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function test37(x)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+if (x % 3 == 0 || x % 7 == 0)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return true;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+else <span id="part0022.xhtml_page_40"></span> {
+</div>
+<div class="heading_s51">
+return false;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(test37(12));
+</div>
+<div class="heading_s1X">
+console.log(test37(14));
+</div>
+<div class="heading_s1X">
+console.log(test37(10));
+</div>
+<div class="heading_s1X">
+console.log(test37(11));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+false
+</div>
+<div class="class_s73">
+false
+</div>
+<p><span id="part0023.xhtml"></span></p>
+<div id="part0023.xhtml_aWK" class="heading_s1T">
+Check a string starts with 'Java'
+</div>
+<div class="heading_s3K">
+And false otherwise
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to check whether a string starts with
+'Java' and false otherwise.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function start_spec_str(str)
+</div>
+<div class="heading_s1X">
+{
+</div>
+<div class="heading_s1Z">
+if (str.length &lt; 4)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return false;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+front = str.substring(0, 4);
+</div>
+<div class="heading_s1Z">
+if (front == 'Java')
+</div>
+<div id="part0023.xhtml_page_42" class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return true;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_sNH">
+else
+</div>
+<div class="heading_sNH">
+{
+</div>
+<div class="heading_s51">
+return false;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(start_spec_str("JavaScript"));
+</div>
+<div class="heading_s1X">
+console.log(start_spec_str("Java"));
+</div>
+<div class="heading_s1X">
+console.log(start_spec_str("Python"));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+false
+</div>
+<p><span id="part0024.xhtml"></span></p>
+<div id="part0024.xhtml_aWM" class="heading_s1T">
+Check two given integer values
+</div>
+<div class="heading_s3K">
+In the range 50..99
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to check whether two given integer
+values are in the range 50..99 (inclusive). Return true if either of
+them are in the said range.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function check_numbers(x, y)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+if ((x &gt;= 50 &amp;&amp; x &lt;= 99) || (y &gt;= 50 &amp;&amp; y &lt;=
+99))
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return true;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+els<span id="part0024.xhtml_page_44"></span> e
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return false;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(check_numbers(12, 101));
+</div>
+<div class="heading_s1X">
+console.log(check_numbers(52, 80));
+</div>
+<div class="heading_s1X">
+console.log(check_numbers(15, 99));
+</div>
+<div class="heading_s9W">
+OUTPUT
+</div>
+<div class="class_s73">
+false
+</div>
+<div class="class_s73">
+true
+</div>
+<div class="class_s73">
+true
+</div>
+<p><span id="part0025.xhtml"></span></p>
+<div id="part0025.xhtml_aWN" class="heading_s1T">
+Find a value which is nearest to 100
+</div>
+<div class="heading_s1V">
+HTML CODE
+</div>
+<div class="heading_s1X">
+&lt;!DOCTYPE html&gt;
+</div>
+<div class="heading_s1X">
+&lt;html&gt;
+</div>
+<div class="heading_s1X">
+&lt;head&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta charset="utf-8"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;meta name="viewport" content="width=device-width"&gt;
+</div>
+<div class="heading_s1Z">
+&lt;title&gt;JavaScript program to find a value which is nearest to 100
+from two different given integer values.&lt;/title&gt;
+</div>
+<div class="heading_s1X">
+&lt;/head&gt;
+</div>
+<div class="heading_s1X">
+&lt;body&gt;
+</div>
+<div class="heading_s4W">
+&lt;/body&gt;
+</div>
+<div class="heading_s1X">
+&lt;/html&gt;
+</div>
+<div class="heading_s1V">
+JAVASCRIPT CODE
+</div>
+<div class="heading_s1X">
+function near_100(x, y) {
+</div>
+<div class="heading_s1Z">
+if (x != y)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s1Z">
+x1 = Math.abs(x - 100);
+</div>
+<div class="heading_s1Z">
+y1 = Math.abs(y - 100);
+</div>
+<div class="heading_sGP">
+if (x1 &lt; y1)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return x;
+</div>
+<div id="part0025.xhtml_page_46" class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+if (y1 &lt; x1)
+</div>
+<div class="heading_s1Z">
+{
+</div>
+<div class="heading_s51">
+return y;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+return 0;
+</div>
+<div class="heading_s1Z">
+}
+</div>
+<div class="heading_s1Z">
+else
+</div>
+<div class="heading_s51">
+return false;
+</div>
+<div class="heading_s1X">
+}
+</div>
+<div class="heading_s4W">
+console.log(near_100(90, 89));
+</div>
+<div class="heading_s1X">
+console.log(near_100(-90, -89));
+</div>
+<div class="heading_s1X">
+console.log(near_100(90, 90));
+</div>
+<div class="heading_s9W">
+Output:
+</div>
+<div class="class_s73">
+90
+</div>
+<div class="class_s73">
+-89
+</div>
+<div class="class_sVU">
+false
+</div>

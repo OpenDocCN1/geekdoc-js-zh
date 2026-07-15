@@ -1,0 +1,2619 @@
+- fmt: "\n![](cover.jpeg)\n\n# JAVASCRIPT: CODING PRACTICE EXERCISES\n## CODING FOR\
+    \ BEGINNERS\nJJ TAM\n\n## Table of Contents\n- [JavaScript: Find the first not\
+    \ repeated character]\n- [JavaScript: Find the longest word within a string]\n\
+    - [JavaScript: Counts the number of vowels within a string]\n- [JavaScript: Check\
+    \ a number is prime or not]\n- [JavaScript: Get the data type]\n- [JavaScript:\
+    \ Find the second lowest and second greatest from an array\n- [Calculate multiplication\
+    \ and division]\n- [Convert temperatures]\n- [Find the largest]\n- [Reverse a\
+    \ given string]\n- [Replace every character]\n- [Create a new string]\n- [Concatenate\
+    \ two strings]\n- [Move last three character]\n- [Compute the sum]\n- [Add two\
+    \ digits]\n- [Check whether a given year is a leap]\n- [Check given positive number]\n\
+    - [Check a string starts with 'Java']\n- [Check two given integer values]\n- [Find\
+    \ a value which is nearest to 100]\n\n# JavaScript functions – Exercises\n\n##\
+    \ JavaScript: Find the first not repeated character\nSample arguments: `'abacddbec'`\n\
+    Expected output: `'e'`\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <title>find the first not repeated character.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\n\
+    function find_FirstNotRepeatedChar(str) {\n  var arra1 = str.split('');\n  var\
+    \ result = '';\n  var ctr = 0;\n  for (var x = 0; x < arra1.length; x++) {\n \
+    \   ctr = 0;\n    for (var y = 0; y < arra1.length; y++) {\n      if (arra1[x]\
+    \ === arra1[y]) {\n        ctr+= 1;\n      }\n    }\n    if (ctr < 2) {\n    \
+    \  result = arra1[x];\n      break;\n    }\n  }\n  return result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n\
+    ```\n\n### OUTPUT\n`e`\n\n### FLOWCHART\n![](OEBPS/Image00000.jpg)\n\n# JavaScript:\
+    \ Find the longest word within a string\nExample string: `'Web Development Tutorial'`\n\
+    Expected Output: `'Development'`\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=utf-8 />\n<title>Find the longest word within a\
+    \ string</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\
+    ```javascript\nfunction find_longest_word(str) {\n  var array1 = str.match(/\\\
+    w[a-z]{0,}/gi);\n  var result = array1[0];\n  for(var x = 1 ; x < array1.length\
+    \ ; x++) {\n    if(result.length < array1[x].length) {\n      result = array1[x];\n\
+    \    }\n  }\n  return result;\n}\nconsole.log(find_longest_word('Web Development\
+    \ Tutorial'));\n```\n\n### OUTPUT\n`Development`\n\n### EXPLANATION\nAssume `str`\
+    \ equals `'Web Development Tutorial'`. When a string is matched against a regular\
+    \ expression, the `match()` method is used to obtain matches. As result of `str.match(/w[a-z]{0,}/gi)`,\
+    \ `[\"Web\", \"Development\", \"Tutorial\"]` is returned. The `for` loop compares\
+    \ the `length` of each array element to the previous one and returns the longest\
+    \ string. The `length` property is an integer that is always greater than the\
+    \ array's index.\nSyntax: `arr.length`\n\n### FLOWCHART\n![](OEBPS/Image0001.jpg)\n\
+    \n# JavaScript: Counts the number of vowels within a string\nExample string: `'The\
+    \ quick fox'`\nExpected Output: `5`\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=utf-8 />\n<title>Counts the number of vowels within\
+    \ a string</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\
+    ```javascript\nfunction vowel_count(str1) {\n  var vowel_list = 'aeiouIOU';\n\
+    \  var vcount = 0;\n  for(var x = 0; x < str1.length; x++) {\n    if (vowel_list.indexOf(str1[x])\
+    \ !== -1) {\n      vcount += 1;\n    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"\
+    The quick fox\"));\n```\n\n### OUTPUT\n`5`\n\n### EXPLANATION\nThe `indexOf()`\
+    \ method returns the first occurrence of the defined value within the calling\
+    \ String object, starting at `fromIndex`. If the value cannot be found, it returns\
+    \ `-1`.\nSyntax: `str.indexOf(searchValue[, fromIndex])`\nParameters:\n- `searchValue`:\
+    \ A string that represents the value to sought.\n- `fromIndex` (Optional): The\
+    \ index at which the string's search should begin. Any integer can be used.\n\
+    If the condition `vowel_list.indexOf(str1[x])!== -1` is met, the character(s)\
+    \ of the string will be counted as vowels.\n\n### FLOWCHART\n![](OEBPS/Image0002.jpg)\n\
+    \n# JavaScript: Check a number is prime or not\n![](OEBPS/Image0003.jpg)\n\n###\
+    \ HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n\
+    <title>Check a number is prime or not</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n### JAVASCRIPT CODE\n```javascript\nfunction test_prime(n) {\n  if (n===1)\
+    \ {\n    return false;\n  } else if(n === 2) {\n    return true;\n  }else {\n\
+    \    for(var x = 2; x < n; x++) {\n      if(n % x === 0) {\n        return false;\n\
+    \      }\n    }\n    return true;\n  }\n}\nconsole.log(test_prime(37));\n```\n\
+    \n### OUTPUT\n`True`\n\nFLOWCHART\n![](OEBPS/Image0004.jpg)\n\n# JavaScript: Get\
+    \ the data type\nWe going to Create a JavaScript function which takes an argument\
+    \ and returns the type.\nNote six possible values: object, boolean, number, string,\
+    \ or undefined.\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta\
+    \ charset=utf-8 />\n<title>Detect JavaScript Data Types</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction detect_data_type(value)\
+    \ {\n  var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;\n\
+    \  if (typeof value === \"object\" || typeof value === \"function\") {\n    for\
+    \ (x = 0, len = dtypes.length; x < len; x++) {\n      if (value instanceof dtypes[x])\
+    \ {\n        return dtypes[x];\n      }\n    }\n  }\n  return typeof value;\n\
+    }\nconsole.log(detect_data_type(12));\nconsole.log(detect_data_type('w3resource'));\n\
+    console.log(detect_data_type(false));\n```\n\n### OUTPUT\n`number`\n`string`\n\
+    `Boolean`\n\n# JavaScript: Find the second lowest and second greatest from an\
+    \ array\n![](OEBPS/Image0005.jpg)\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n<meta charset=utf-8 />\n<title>Find the second lowest and second\
+    \ greatest numbers from an array</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n### JAVASCRIPT CODE\n```javascript\nfunction Second_Greatest_Lowest(arr_num)\
+    \ {\n  arr_num.sort(function(x,y) {\n    return x-y;\n  });\n  var uniqa = [arr_num[0]];\n\
+    \  var result = [];\n  for(var j=1; j < arr_num.length; j++) {\n    if(arr_num[j-1]\
+    \ !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n\
+    \  return result.join(',');\n}\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n\
+    ```\n\n#### OUTPUT\n`2,4`\n"
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    JAVASCRIPT
+
+
+    CODING PRACTICE EXERCISES
+
+
+    CODING FOR BEGINNERS
+
+
+    JJ TAM
+
+
+    [JavaScript functions – Exercises](#text00002.html__Toc68199568)
+
+
+    [JavaScript: Find the first not repeated character](#text00002.html__Toc68199569)
+
+
+    [JavaScript: Find the longest word within a string](#text00003.html__Toc68199570)
+
+
+    [JavaScript: Counts the number of vowels within a string](#text00004.html__Toc68199571)
+
+
+    [JavaScript: Check a number is prime or not](#text00005.html__Toc68199572)
+
+
+    [JavaScript: Get the data type](#text00006.html__Toc68199573)
+
+
+    [JavaScript: Find the second lowest and second greatest](#text00007.html__Toc68199574)
+
+
+    [JAVASCRIPT BASICS](#text00008.html__Toc68199575)
+
+
+    [Calculate multiplication and division](#text00008.html__Toc68199576)
+
+
+    [Convert temperatures](#text00009.html__Toc68199577)
+
+
+    [Find the largest](#text00010.html__Toc68199578)
+
+
+    [Reverse a given string](#text00011.html__Toc68199579)
+
+
+    [Replace every character](#text00012.html__Toc68199580)
+
+
+    [Create a new string](#text00013.html__Toc68199581)
+
+
+    [Concatenate two strings](#text00014.html__Toc68199582)
+
+
+    [Move last three character](#text00015.html__Toc68199583)
+
+
+    [Compute the sum](#text00016.html__Toc68199584)
+
+
+    [Add two digits](#text00017.html__Toc68199585)
+
+
+    [Check whether a given year is a leap](#text00018.html__Toc68199586)
+
+
+    [Check given positive number](#text00019.html__Toc68199587)
+
+
+    [Check a string starts with ''Java''](#text00020.html__Toc68199588)
+
+
+    [Check two given integer values](#text00021.html__Toc68199589)
+
+
+    [Find a value which is nearest to 100](#text00022.html__Toc68199590)
+
+
+    # JavaScript functions – Exercises
+
+
+    # JavaScript: Find the first not repeated character
+
+
+    Sample arguments  : ''abacddbec''
+
+
+    Expected output  : ''e''
+
+
+    ## HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <title>find the first not repeated character.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ## JAVASCRIPT CODE
+
+
+    function find_FirstNotRepeatedChar(str) {
+
+
+      var arra1 = str.split('''');
+
+
+      var result = '''';
+
+
+      var ctr = 0;
+
+
+      for (var x = 0; x < arra1.length; x++) {
+
+
+        ctr = 0;
+
+
+        for (var y = 0; y < arra1.length; y++)
+
+
+        {
+
+
+          if (arra1[x] === arra1[y]) {
+
+
+            ctr+= 1;
+
+
+          }
+
+
+        }
+
+
+        if (ctr < 2) {
+
+
+          result = arra1[x];
+
+
+          break;
+
+
+        }
+
+
+      }
+
+
+      return result;
+
+
+    }
+
+
+    console.log(find_FirstNotRepeatedChar(''abacddbec''));
+
+
+    ### OUTPUT
+
+
+    e
+
+
+    ### FLOWCHART
+
+
+    ![](OEBPS/Image00000.jpg)
+
+
+    # JavaScript: Find the longest word within a string
+
+
+    Example string : ''Web Development Tutorial''
+
+
+    Expected Output:  ''Development''
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Find the longest word within a string</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function find_longest_word(str)
+
+
+    ##### {
+
+
+    #####   var array1 = str.match(/\w[a-z]{0,}/gi);
+
+
+    #####   var result = array1[0];
+
+
+    #####   for(var x = 1 ; x < array1.length ; x++)
+
+
+    #####   {
+
+
+    #####     if(result.length < array1[x].length)
+
+
+    #####     {
+
+
+    #####     result = array1[x];
+
+
+    #####     }
+
+
+    #####   }
+
+
+    #####   return result;
+
+
+    ##### }
+
+
+    ##### console.log(find_longest_word(''Web Development Tutorial''));
+
+
+    ### OUTPUT
+
+
+    Development
+
+
+    ### EXPLANATION
+
+
+    Assume that str equals ''@Web Production #Tutorial''.
+
+
+    When a string is matched against a regular expression, the match() method is used
+    to obtain the matches.
+
+
+    As a result of str.match(/w[a-z]0,/gi), ["Web", "Development", "Tutorial"] will
+    be returned.
+
+
+    The for loop compares the length of each array element to the previous one and
+    returns the longest string.
+
+
+    The length property is a 32-bit unsigned integer that is always numerically greater
+    than the array''s highest index.
+
+
+    Syntax -> arr.length
+
+
+    #### FLOWCHART
+
+
+    ![](OEBPS/Image00001.jpg)
+
+
+    # JavaScript: Counts the number of vowels within a string
+
+
+    Example string : ''The quick brown fox''
+
+
+    Expected Output:  5
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Counts the number of vowels within a string</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function vowel_count(str1)
+
+
+    ##### {
+
+
+    #####   var vowel_list = ''aeiouAEIOU'';
+
+
+    #####   var vcount = 0;
+
+
+    #####   for(var x = 0; x < str1.length ; x++)
+
+
+    #####   {
+
+
+    #####     if (vowel_list.indexOf(str1[x]) !== -1)
+
+
+    #####     {
+
+
+    #####       vcount += 1;
+
+
+    #####     }
+
+
+    #####   }
+
+
+    #####   return vcount;
+
+
+    ##### }
+
+
+    ##### console.log(vowel_count("The quick brown fox"));
+
+
+    #### OUTPUT
+
+
+    5
+
+
+    ### EXPLANATION
+
+
+    The indexOf() method returns the index of the first occurrence of the defined
+    value within the calling String object, starting at fromIndex. If the value cannot
+    be found, it returns -1.
+
+
+    Syntax -> str.indexOf(searchValue[, fromIndex])
+
+
+    Parameters include:
+
+
+    searchValue : A string that represents the value to be sought.
+
+
+    fromIndex(Optional)-> The index at which the string''s forward search should begin.
+    Any integer can be used.
+
+
+    If the condition (vowel list.indexOf(str1[x])!== -1) is met, the character(s)
+    of the string will be counted as vowels.
+
+
+    ### FLOWCHART
+
+
+    ![](OEBPS/Image00002.jpg)
+
+
+    # JavaScript: Check a number is prime or not
+
+
+    ![](OEBPS/Image00003.jpg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Check a number is prime or not</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function test_prime(n)
+
+
+    ##### {
+
+
+    #####   if (n===1)
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    #####   else if(n === 2)
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }else
+
+
+    #####   {
+
+
+    #####     for(var x = 2; x < n; x++)
+
+
+    #####     {
+
+
+    #####       if(n % x === 0)
+
+
+    #####       {
+
+
+    #####         return false;
+
+
+    #####       }
+
+
+    #####     }
+
+
+    #####     return true; 
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(test_prime(37));
+
+
+    ### OUTPUT
+
+
+    True
+
+
+    FLOWCHART
+
+
+    ![](OEBPS/Image00004.jpg)
+
+
+    # JavaScript: Get the data type
+
+
+    #### We going to Create a JavaScript function which takes an argument and returns
+    the type.
+
+
+    #### Note six possible values: object, boolean, method, number, string, or undefined.
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Detect JavaScript Data Types</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function detect_data_type(value)
+
+
+    ##### {
+
+
+    ##### var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
+
+
+    ##### if (typeof value === "object" || typeof value === "function")
+
+
+    #####     {
+
+
+    #####      for (x = 0, len = dtypes.length; x < len; x++)
+
+
+    #####      {
+
+
+    #####             if (value instanceof dtypes[x])
+
+
+    #####             {
+
+
+    #####                 return dtypes[x];
+
+
+    #####             }
+
+
+    #####       }
+
+
+    #####     }
+
+
+    #####     return typeof value;
+
+
+    ##### }
+
+
+    ##### console.log(detect_data_type(12));
+
+
+    ##### console.log(detect_data_type(''w3resource''));
+
+
+    ##### console.log(detect_data_type(false));
+
+
+    #### OUTPUT
+
+
+    number
+
+
+    string
+
+
+    Boolean
+
+
+    # JavaScript: Find the second lowest and second greatest
+
+
+    ## numbers from an array
+
+
+    ![](OEBPS/Image00005.jpg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Find the second lowest and second greatest numbers from an array</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function Second_Greatest_Lowest(arr_num)
+
+
+    ##### {
+
+
+    #####   arr_num.sort(function(x,y)
+
+
+    #####            {
+
+
+    #####            return x-y;
+
+
+    #####            });
+
+
+    #####   var uniqa = [arr_num[0]];
+
+
+    #####   var result = [];
+
+
+    #####   for(var j=1; j < arr_num.length; j++)
+
+
+    #####   {
+
+
+    #####     if(arr_num[j-1] !== arr_num[j])
+
+
+    #####     {
+
+
+    #####       uniqa.push(arr_num[j]);
+
+
+    #####     }
+
+
+    #####   }
+
+
+    #####     result.push(uniqa[1],uniqa[uniqa.length-2]);
+
+
+    #####   return result.join('','');
+
+
+    #####   }
+
+
+    ##### console.log(Second_Greatest_Lowest([1,2,3,4,5]));
+
+
+    #### OUTPUT
+
+
+    2,4'
+  toc: []
+  trans: "\n\n![](img/cover.jpeg)\n\n# JAVASCRIPT：编程练习题\n## 初学者编程\nJJ TAM\n\n## 目录\n\
+    - [JavaScript: 查找第一个不重复的字符]\n- [JavaScript: 查找字符串中最长的单词]\n- [JavaScript: 统计字符串中元音的数量]\n\
+    - [JavaScript: 检查数字是否为质数]\n- [JavaScript: 获取数据类型]\n- [JavaScript: 查找数组中的第二小和第二大\n\
+    - [计算乘法和除法]\n- [转换温度]\n- [寻找最大值]\n- [反转给定字符串]\n- [替换每个字符]\n- [创建一个新字符串]\n- [拼接两个字符串]\n\
+    - [移动最后三个字符]\n- [计算和]\n- [相两个数字]\n- [检查给定年份是否为闰年]\n- [检查给定的正数]\n- [检查字符串是否以'Java'\
+    \ 开头]\n- [检查两个给定的整数值]\n- [查找接近 100 的数值]\n\n# JavaScript 函数 – 练习题\n\n## JavaScript:\
+    \ 查找第一个不重复的字符\n示例参数：`'abacddbec'`\n预期输出：`'e'`\n\n### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>查找第一个不重复的字符。</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ find_FirstNotRepeatedChar(str) {\n  var arra1 = str.split('');\n  var result\
+    \ = '';\n  var ctr = 0;\n  for (var x = 0; x < arra1.length; x++) {\n    ctr =\
+    \ 0;\n    for (var y = 0; y < arra1.length; y++) {\n      if (arra1[x] === arra1[y])\
+    \ {\n        ctr+= 1;\n      }\n    }\n    if (ctr < 2) {\n      result = arra1[x];\n\
+    \      break;\n    }\n  }\n  return result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n\
+    ```\n\n### 输出\n`e`\n\n### 流程图\n![](img/Image00000.jpg)\n\n# JavaScript: 查找字符串中最长的单词\n\
+    示例字符串：`'Web Development Tutorial'`\n预期输出：`'Development'`\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>查找字符串中最长的单词</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ find_longest_word(str) {\n  var array1 = str.match(/\\w[a-z]{0,}/gi);\n  var\
+    \ result = array1[0];\n  for(var x = 1 ; x < array1.length ; x++) {\n    if(result.length\
+    \ < array1[x].length) {\n      result = array1[x];\n    }\n  }\n  return result;\n\
+    }\nconsole.log(find_longest_word('Web Development Tutorial'));\n```\n\n### 输出\n\
+    `Development`\n\n### 解析\n假设 `str` 等于 `'Web Development Tutorial'`。当字符串与正则表达式进行匹配时，使用\
+    \ `match()` 方法获取匹配项。作为 `str.match(/w[a-z]{0,}/gi)` 的结果，返回了 `[\"Web\", \"Development\"\
+    , \"Tutorial\"]`。`for` 循环将每个数组元素的 `length` 与前一个元素进行比较，并返回最长的字符串。`length` 属性是一个整数，始终大于数组的索引。\n\
+    语法：`arr.length`\n\n### 流程图\n![](img/Image0001.jpg)\n\n# JavaScript: 统计字符串中元音的数量\n\
+    示例字符串：`'The quick fox'`\n预期输出：`5`\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=utf-8 />\n<title>统计字符串中元音的数量</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction vowel_count(str1)\
+    \ {\n  var vowel_list = 'aeiouIOU';\n  var vcount = 0;\n  for(var x = 0; x < str1.length;\
+    \ x++) {\n    if (vowel_list.indexOf(str1[x]) !== -1) {\n      vcount += 1;\n\
+    \    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"The quick fox\"));\n\
+    ```\n\n### 输出\n`5`\n\n### 解析\n`indexOf()` 方法返回调用 String 对象中定义的指定值第一次出现的位置，从 `fromIndex`\
+    \ 开始。如果找不到该值，则返回 `-1`。\n语法：`str.indexOf(searchValue[, fromIndex])`\n参数：\n- `searchValue`:\
+    \ 代表要查找的值的字符串。\n- `fromIndex`（可选）：字符串搜索开始的索引。可以使用任何整数。\n如果满足条件 `vowel_list.indexOf(str1[x])!==\
+    \ -1`，则字符串中的字符将被计数为元音。\n\n### 流程图\n![](img/Image0002.jpg)\n\n# JavaScript: 检查数字是否为质数\n\
+    ![](img/Image0003.jpg)\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <meta charset=utf-8 />\n<title>检查数字是否为质数</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n### JAVASCRIPT 代码\n```javascript\nfunction test_prime(n) {\n  if (n===1)\
+    \ {\n    return false;\n  } else if(n === 2) {\n    return true;\n  }else {\n\
+    \    for(var x = 2; x < n; x++) {\n      if(n % x === 0) {\n        return false;\n\
+    \      }\n    }\n    return true;\n  }\n}\nconsole.log(test_prime(37));\n```\n\
+    \n### 输出\n`True`\n\n 流程图\n![](img/Image0004.jpg)\n\n# JavaScript: 获取数据类型\n我们将创建一个\
+    \ JavaScript 函数，接收参数并返回类型。\n注意可能的返回值：对象、布尔值、数字、字符串或未定义。\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>检测数据类型</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ detect_data_type(value) {\n  var dtypes = [Function, RegExp, Number, String,\
+    \ Boolean], x, len;\n  if (typeof value === \"object\" || typeof value === \"\
+    function\") {\n    for (x = 0, len = dtypes.length; x < len; x++) {\n      if\
+    \ (value instanceof dtypes[x]) {\n        return dtypes[x];\n      }\n    }\n\
+    \  }\n  return typeof value;\n}\nconsole.log(detect_data_type(12));\nconsole.log(detect_data_type('w3resource'));\n\
+    console.log(detect_data_type(false));\n```\n\n### 输出\n`number`\n`string`\n`Boolean`\n\
+    \n# JavaScript: 查找数组中的第二小和第二大\n![](img/Image0005.jpg)\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>查找数组中的第二小和第二大数字</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ Second_Greatest_Lowest(arr_num) {\n  arr_num.sort(function(x,y) {\n    return\
+    \ x-y;\n  });\n  var uniqa = [arr_num[0]];\n  var result = [];\n  for(var j=1;\
+    \ j < arr_num.length; j++) {\n    if(arr_num[j-1] !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n\
+    \    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+    }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n#### 输出\n`2,4`\n\n"
+- fmt: "\n### FLOWCHART\n\n![](OEBPS/Image00006.jpg)\n\n# JAVASCRIPT BASICS\n\n# Calculate\
+    \ multiplication and division\n\n## of two numbers\n\n### HTML CODE\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8 />\n  <title>JavaScript\
+    \ program to calculate multiplication and division of two numbers </title>\n \
+    \ <style type=\"text/css\">\n    body {margin: 30px;}\n  </style>\n</head>\n<body>\n\
+    <form>\n  1st Number : <input type=\"text\" id=\"firstNumber\" /><br>\n  2nd Number:\
+    \ <input type=\"text\" id=\"secondNumber\" /><br>\n  <input type=\"button\" onClick=\"\
+    multiplyBy()\" Value=\"Multiply\" />\n  <input type=\"button\" onClick=\"divideBy()\"\
+    \ Value=\"Divide\" />\n</form>\n<p>The Result is : <br>\n  <span id = \"result\"\
+    ></span\n</p>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction\
+    \ multiplyBy()\n{\n    num1 = document.getElementById(\"firstNumber\").value;\n\
+    \    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 * num2;\n}\nfunction divideBy()\n{\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    \    document.getElementById(\"result\").innerHTML = num1 / num2;\n}\n```\n\n\
+    ### EXPLANATION\n\n`document.getElementById(id).value`: The `value` property of\
+    \ a text field sets or returns the value of the `value` attribute.\n\n`document.getElementById(\"\
+    result\").innerHTML`: The `innerHTML` property of an element sets or returns the\
+    \ HTML content (inner HTML).\n\n#### OUTPUT\n\n![](OEBPS/Image00007.jpg)\n\n#\
+    \ Convert temperatures\n\n## To and from celsius, Fahrenheit in JAVASCRIPT\n\n\
+    ### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n  <meta charset=\"\
+    utf-8\">\n  <title>Write a JavaScript program to convert temperatures to and from\
+    \ celsius, fahrenheit</title>\n  </head>\n  <body>\n</body>\n  </html>\n```\n\n\
+    ### JAVASCRIPT CODE\n```javascript\nfunction cToF(celsius)\n{\n  var cTemp = celsius;\n\
+    \  var cToFahr = cTemp * 9 / 5 + 32;\n  var message = cTemp+'\\xB0C is ' + cToFahr\
+    \ + ' \\xB0F.';\n    console.log(message);\n}\nfunction fToC(fahrenheit)\n{\n\
+    \  var fTemp = fahrenheit;\n  var fToCel = (fTemp - 32) * 5 / 9;\n  var message\
+    \ = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n  console.log(message);\n}\ncToF(60);\n\
+    fToC(45);\n```\n\n### OUTPUT\n60°C is 140 °F.\n45°F is 7.22222222222222°C.\n\n\
+    ### EXPLANATION\nThe following formulas can be used to make exact conversion (Fahrenheit\
+    \ to Celsius / Celsius to Fahrenheit):\nFahrenheit to Celsius: `(F − 32) ÷ 1.8\
+    \ = °C`\nCelsius to Fahrenheit: `(C × 1.8) + 32 = °F`\nThe following is rough\
+    \ conversion between degrees Celsius and degrees Fahrenheit:\nTo convert from\
+    \ Fahrenheit to Celsius, deduct 30 and divide by two.\nTo convert from Celsius\
+    \ to Fahrenheit, multiply the number by two and add 30.\n\n# Find the largest\
+    \ of three given integers\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width-width\"\
+    >\n  <title>JavaScript program to find the largest of three integers.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\n\
+    function max_of_three(x, y, z)\n{\n  max_val = 0;\n  if (x > y)\n  {\n    max_val\
+    \ = x;\n  } else {\n    max_val = y;\n  }\n  if (z > max_val)\n  {\n    max_val\
+    \ = z;\n  }\n  return max_val;\n}\nconsole.log(max_of_three(1,0,1));\nconsole.log(max_of_three(0,-10,-20));\n\
+    console.log(max_of_three(1000,510,440));\n```\n### OUTPUT\n1\n0\n1000\n\n### FLOWCHART\n\
+    ![](OEBPS/Image0008.jpg)\n\n# Reverse a given string\n\n### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width-width\">\n  <title>JavaScript program to reverse a given string.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\n\
+    function string_reverse(str)\n{\n  return str.split(\"\").reverse().join(\"\"\
+    );\n}\nconsole.log(string_reverse(\"jsresource\"));\nconsole.log(string_reverse(\"\
+    www\"));\nconsole.log(string_reverse(\"JavaScript\"));\n```\n### OUTPUT\necruosersj\n\
+    www\ntpircSavaJ\n\n# Replace every character with the character following it in\
+    \ the alphabet\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width-width\">\n  <title>JavaScript\
+    \ program to replace every character in a given string with the character following\
+    \ it in the alphabet.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction LetterChanges(text) {\n  //https://goo.gl/R8gn7u\n\
+    \  var s = text.split('');\n  for (var i = 0; i < s.length; i++) {\n    // Caesar\
+    \ cipher\n    switch(s[i]) {\n      case ' ':\n        break;\n      case 'z':\n\
+    \        s[i] = 'a';\n        break;\n      case 'Z':\n        s[i] = 'A';\n \
+    \       break;\n      default:\n        s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));\n\
+    \    }\n    // Upper-case vowels\n    switch(s[i]) {\n      case 'a': case 'e':\
+    \ case 'i': case 'o': case 'u':\n        s[i] = s[i].toUpperCase();\n    }\n \
+    \ }\n  return s.join('');\n}\nconsole.log(LetterChanges(\"PYTHON\"));\nconsole.log(LetterChanges(\"\
+    W3R\"));\nconsole.log(LetterChanges(\"php\"));\n```\n### Output:\nQZUIPO\nX4S\n\
+    qIq\n\n# Create a new string\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width-device\"\
+    >\n  <title>JavaScript program to create a new string without the first and last\
+    \ character.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction without_first_end(str) {\n  return str.substring(1,\
+    \ str.length - 1);\n}\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+    console.log(without_first_end('PHP'));\n```\n### Output:\navaScrip\nH\n\n# Concatenate\
+    \ two strings except their first character\n\n### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width-device\">\n  <title>JavaScript program to concatenate two strings\
+    \ their first character.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n###\
+    \ JAVASCRIPT CODE\n```javascript\nfunction concatenate(str1, str2) {\n  str1 =\
+    \ str1.substring(1, str1.length);\n  str2 = str2.substring(1, str2.length);\n\
+    \  return str1 + str2;\n}\nconsole.log(concatenate(\"PHP\",\"JS\"));\nconsole.log(concatenate(\"\
+    A\",\"B\"));\nconsole.log(concatenate(\"AA\",\"BB\"));\n```\n### Output:\nHPS\n\
+    AB\n\n# Move last three character start of a specified string\n\n### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta\
+    \ name=\"viewport\" content=\"width-width\">\n  <title>JavaScript program to move\
+    \ last three character to the start of a given string. The string length must\
+    \ be 3.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\
+    ```javascript\nfunction right_three(str)\n{\n  if (str.length > 1)\n  {\n    return\
+    \ str.slice(-3) + str.slice(0, -3);\n  }\n  return str;\n}\nconsole.log(right_three(\"\
+    Python\"));\nconsole.log(right_three(\"JavaScript\"));\nconsole.log(right_three(\"\
+    Hi\"));\n```\n### Output:\nhonPyt\niptJavaScr\nHi\n\n# Compute the sum of three\
+    \ elements of a given array of integers of length 3\n\n### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width-device\">\n```\n"
+  raw: '### FLOWCHART
+
+
+    ![](OEBPS/Image00006.jpg)
+
+
+    # JAVASCRIPT BASICS
+
+
+    # Calculate multiplication and division
+
+
+    ## of two numbers
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>JavaScript program to calculate multiplication and division of two
+    numbers </title>
+
+
+    ##### <style type="text/css">
+
+
+    ##### body {margin: 30px;}
+
+
+    ##### </style>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### <form>
+
+
+    ##### 1st Number : <input type="text" id="firstNumber" /><br>
+
+
+    ##### 2nd Number: <input type="text" id="secondNumber" /><br>
+
+
+    ##### <input type="button" onClick="multiplyBy()" Value="Multiply" />
+
+
+    ##### <input type="button" onClick="divideBy()" Value="Divide" />
+
+
+    ##### </form>
+
+
+    ##### <p>The Result is : <br>
+
+
+    ##### <span id = "result"></span>
+
+
+    ##### </p>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function multiplyBy()
+
+
+    ##### {
+
+
+    #####         num1 = document.getElementById("firstNumber").value;
+
+
+    #####         num2 = document.getElementById("secondNumber").value;
+
+
+    #####         document.getElementById("result").innerHTML = num1 * num2;
+
+
+    ##### }
+
+
+    ##### function divideBy()
+
+
+    ##### {
+
+
+    #####         num1 = document.getElementById("firstNumber").value;
+
+
+    #####         num2 = document.getElementById("secondNumber").value;
+
+
+    ##### document.getElementById("result").innerHTML = num1 / num2;
+
+
+    ##### }
+
+
+    ### EXPLANATION
+
+
+    document.getElementById(id).value: The value property of a text field sets or
+    returns the value of the value attribute.
+
+
+    document.getElementById("result").innerHTM : The innerHTML property of an element
+    sets or returns the HTML content (inner HTML).
+
+
+    #### OUTPUT
+
+
+    ![](OEBPS/Image00007.jpg)
+
+
+    # Convert temperatures
+
+
+    ## To and from celsius, Fahrenheit in JAVASCRIPT
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    #####   <html>
+
+
+    #####   <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <title>Write a JavaScript program to convert temperatures to and from
+    celsius, fahrenheit</title>
+
+
+    #####   </head>
+
+
+    #####   <body>
+
+
+    ##### </body>
+
+
+    #####   </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function cToF(celsius)
+
+
+    ##### {
+
+
+    #####   var cTemp = celsius;
+
+
+    #####   var cToFahr = cTemp * 9 / 5 + 32;
+
+
+    #####   var message = cTemp+''\xB0C is '' + cToFahr + '' \xB0F.'';
+
+
+    #####     console.log(message);
+
+
+    ##### }
+
+
+    ##### function fToC(fahrenheit)
+
+
+    ##### {
+
+
+    #####   var fTemp = fahrenheit;
+
+
+    #####   var fToCel = (fTemp - 32) * 5 / 9;
+
+
+    #####   var message = fTemp+''\xB0F is '' + fToCel + ''\xB0C.'';
+
+
+    #####     console.log(message);
+
+
+    ##### }
+
+
+    ##### cToF(60);
+
+
+    ##### fToC(45);
+
+
+    ### OUTPUT
+
+
+    60°C is 140 °F.
+
+
+    45°F is 7.222222222222222°C.
+
+
+    ### EXPLANATION
+
+
+    The following formulas can be used to make an exact conversion (Fahrenheit to
+    Celsius / Celsius to Fahrenheit):
+
+
+    Fahrenheit to Celsius : (°F − 32) ÷ 1.8 = °C
+
+
+    Celsius to Fahrenheit : (°C × 1.8) + 32 = °F
+
+
+    The following is a rough conversion between degrees Celsius and degrees Fahrenheit:
+
+
+    To convert from Fahrenheit to Celsius, deduct 30 and divide by two.
+
+
+    To convert from Celsius to Fahrenheit, multiply the number by two and add 30.
+
+
+    # Find the largest
+
+
+    ## Of three given integers
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to find the largest of three given integers.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function max_of_three(x, y, z)
+
+
+    ##### {
+
+
+    #####   max_val = 0;
+
+
+    #####   if (x > y)
+
+
+    #####   {
+
+
+    #####     max_val = x;
+
+
+    #####   } else
+
+
+    #####   {
+
+
+    #####     max_val = y;
+
+
+    #####   }
+
+
+    #####   if (z > max_val)
+
+
+    #####   {
+
+
+    #####     max_val = z;
+
+
+    #####   }
+
+
+    #####   return max_val;
+
+
+    ##### }
+
+
+    ##### console.log(max_of_three(1,0,1));
+
+
+    ##### console.log(max_of_three(0,-10,-20));
+
+
+    ##### console.log(max_of_three(1000,510,440));
+
+
+    Output:
+
+
+    1
+
+
+    0
+
+
+    1000
+
+
+    ### FLOWCHART
+
+
+    ![](OEBPS/Image00008.jpg)
+
+
+    # Reverse a given string
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to reverse a given string.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function string_reverse(str)
+
+
+    ##### {
+
+
+    #####     return str.split("").reverse().join("");
+
+
+    ##### }
+
+
+    ##### console.log(string_reverse("jsresource"));
+
+
+    ##### console.log(string_reverse("www"));
+
+
+    ##### console.log(string_reverse("JavaScript"));
+
+
+    ### OUTPUT
+
+
+    ecruosersj
+
+
+    www
+
+
+    tpircSavaJ
+
+
+    # Replace every character
+
+
+    ## with the character following it in the alphabet
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to replace every character in a given string
+    with the character following it in the alphabet.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function string_reverse(str)
+
+
+    ##### function LetterChanges(text) {
+
+
+    ##### //https://goo.gl/R8gn7u
+
+
+    ##### var s = text.split('''');
+
+
+    ##### for (var i = 0; i < s.length; i++) {
+
+
+    ##### // Caesar cipher
+
+
+    ##### switch(s[i]) {
+
+
+    ##### case '' '':
+
+
+    ##### break;
+
+
+    ##### case ''z'':
+
+
+    ##### s[i] = ''a'';
+
+
+    ##### break;
+
+
+    ##### case ''Z'':
+
+
+    ##### s[i] = ''A'';
+
+
+    ##### break;
+
+
+    ##### default:
+
+
+    ##### s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+
+
+    ##### }
+
+
+    ##### // Upper-case vowels
+
+
+    ##### switch(s[i]) {
+
+
+    ##### case ''a'': case ''e'': case ''i'': case ''o'': case ''u'':
+
+
+    ##### s[i] = s[i].toUpperCase();
+
+
+    ##### }
+
+
+    ##### }
+
+
+    ##### return s.join('''');
+
+
+    ##### }
+
+
+    ##### console.log(LetterChanges("PYTHON"));
+
+
+    ##### console.log(LetterChanges("W3R"));
+
+
+    ##### console.log(LetterChanges("php"));
+
+
+    ### Output:
+
+
+    QZUIPO
+
+
+    X4S
+
+
+    qIq
+
+
+    # Create a new string  
+
+
+    ### HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to create a new string without the first and last
+    character.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    function without_first_end(str) {
+
+
+      return str.substring(1, str.length - 1);
+
+
+    }
+
+
+    console.log(without_first_end(''JavaScript''));
+
+
+    console.log(without_first_end(''JS''));
+
+
+    console.log(without_first_end(''PHP''));
+
+
+    ### Output:
+
+
+    avaScrip
+
+
+    H
+
+
+    # Concatenate two strings
+
+
+    ## Except their first character
+
+
+    ### HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to concatenate two strings except their first character.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    function concatenate(str1, str2) {
+
+
+      str1 = str1.substring(1, str1.length);
+
+
+      str2 = str2.substring(1, str2.length);
+
+
+      return str1 + str2;
+
+
+    }
+
+
+    console.log(concatenate("PHP","JS"));
+
+
+    console.log(concatenate("A","B"));
+
+
+    console.log(concatenate("AA","BB"));
+
+
+    ### Output:
+
+
+    HPS
+
+
+    AB
+
+
+    # Move last three character
+
+
+    ## start of a specified string
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to move last three character to the start of
+    a given string. The string length must be 3.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function right_three(str) {
+
+
+    #####      if (str.length > 1)
+
+
+    #####        {
+
+
+    #####          return str.slice(-3) + str.slice(0, -3);
+
+
+    #####        }
+
+
+    #####   return str;
+
+
+    ##### }
+
+
+    ##### console.log(right_three("Python"));
+
+
+    ##### console.log(right_three("JavaScript"));
+
+
+    ##### console.log(right_three("Hi"));
+
+
+    ### Output:
+
+
+    honPyt
+
+
+    iptJavaScr
+
+
+    Hi
+
+
+    # Compute the sum
+
+
+    ## Of three elements of a given array
+
+
+    ### Of integers of length 3
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">'
+  toc: []
+  trans: "\n\n### 流程图\n\n![](img/Image00006.jpg)\n\n# JAVASCRIPT 基础\n\n# 计算两个数字的乘法和除法\n\
+    \n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+    utf-8 />\n  <title>计算两个数字乘法和除法的 JavaScript 程序</title>\n  <style type=\"text/css\"\
+    >\n    body {margin: 30px;}\n  </style>\n</head>\n<body>\n<form>\n  第一个数字： <input\
+    \ type=\"text\" id=\"firstNumber\" /><br>\n  第二个数字： <input type=\"text\" id=\"\
+    secondNumber\" /><br>\n  <input type=\"button\" onClick=\"multiplyBy()\" Value=\"\
+    乘法\" />\n  <input type=\"button\" onClick=\"divideBy()\" Value=\"除法\" />\n</form>\n\
+    <p>结果为： <br>\n  <span id = \"result\"></span\n</p>\n</body>\n</html>\n```\n\n\
+    ### JAVASCRIPT 代码\n```javascript\nfunction multiplyBy()\n{\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    \    document.getElementById(\"result\").innerHTML = num1 * num2;\n}\nfunction\
+    \ divideBy()\n{\n    num1 = document.getElementById(\"firstNumber\").value;\n\
+    \    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n### 解析\n\n`document.getElementById(id).value`:\
+    \ 文本字段的 `value` 属性用于设置或返回 `value` 属性的值。\n\n`document.getElementById(\"result\"\
+    ).innerHTML`: 元素的 `innerHTML` 属性用于设置或返回 HTML 内容（内部 HTML）。\n\n#### 输出\n\n![](img/Image00007.jpg)\n\
+    \n# 温度转换\n\n## 在 JAVASCRIPT 中摄氏度和华氏度之间转换\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n\
+    <html>\n  <head>\n  <meta charset=\"utf-8\">\n  <title>编写一个 JavaScript 程序将温度在摄氏度和华氏度之间进行转换</title>\n\
+    \  </head>\n  <body>\n</</body>>\n  </html>\n```\n\n### JAVASCRIPT 代码\n```javascript\n\
+    function cToF(celsius)\n{\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 /\
+    \ 5 + 32;\n  var message = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n    console.log(message);\n\
+    }\nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp\
+    \ - 32) * 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n \
+    \ console.log(message);\n}\ncToF(60);\nfToC(45);\n```\n\n### 输出\n60°C 是 140 °F。\n\
+    45°F 是 7.22222222222222°C。\n\n### 解析\n可以使用以下公式进行精确转换（华氏度转摄氏度 / 摄氏度转华氏度）：\n华氏度转摄氏度：`(F\
+    \ − 32) ÷ 1.8 = °C`\n摄氏度转华氏度：`(C × 1.8) + 32 = °F`\n以下是摄氏度与华氏度之间的粗略转换：\n将华氏度转换为摄氏度，减去\
+    \ 30 并除以 2。\n将摄氏度转换为华氏度，将该数字乘以 2 并加上 30。\n\n# 找出三个给定整数中的最大值\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width-width\">\n  <title>找出三个整数中最大值的 JavaScript 程序。</title>\n  </head>\n\
+    \  <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ max_of_three(x, y, z)\n{\n  max_val = 0;\n  if (x > y)\n  {\n    max_val = x;\n\
+    \  } else {\n    max_val = y;\n  }\n  if (z > max_val)\n  {\n    max_val = z;\n\
+    \  }\n  return max_val;\n}\nconsole.log(max_of_three(1,0,1));\nconsole.log(max_of_three(0,-10,-20));\n\
+    console.log(max_of_three(1000,510,440));\n```\n### 输出\n1\n0\n1000\n\n### 流程图\n\
+    ![](img/Image0008.jpg)\n\n# 反转给定字符串\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width-width\">\n  <title>反转给定字符串的 JavaScript 程序。</title>\n  </head>\n  <body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction string_reverse(str)\n\
+    {\n  return str.split(\"\").reverse().join(\"\");\n}\n```\n[/content] (注：由于提供的提供的文本在反转字符串代码部分似乎截断，此处根据常见逻辑补全了翻译，但若严格遵循原文截断状态，应保持原样。重新审视原文，原文中反转字符串代码在\
+    \ `return str.reverse` 处被截断了，我将按原文截断内容翻译。)\n\n**修正：严格按照原文截断的内容翻译：**\n\n[content]\n\
+    ```javascript\nfunction string_reverse(str)\n{\n  return str.reverse\n```\n"
+- fmt: "\n# JavaScript program to compute the sum of three elements of an given integers\
+    \ of length 3.\n\n### JAVASCRIPT CODE\n```javascript\nfunction sum_three(nums)\
+    \ {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10, 32,\
+    \ 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8, -11]));\n\
+    ```\n\n### Output:\n62\n21\n-3\n\n# Add two digits\n\n Of a given positive integer\n\
+    \n## Of length two\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to add two digits of a given positive integer of\
+    \ length two.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n\
+    \ / 10);\n}\nconsole.log(add_two_digits(25))\nconsole.log(add_two_digits(50))\n\
+    ```\n\n### Output:\n7\n5\n\n# Check whether a given year is a leap\n\n### HTML\
+    \ CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8 />\n \
+    \ <title>Find Leap Year</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n###\
+    \ JAVASCRIPT CODE\n```javascript\nfunction leapyear(year) {\n  return (year %\
+    \ 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\n\
+    console.log(leapyear(2000));\nconsole.log(leapyear(1700));\nconsole.log(leapyear(1800));\n\
+    console.log(leapyear(100));\n```\n\n### OUTPUT\ntrue\ntrue\nfalse\nfalse\nfalse\n\
+    \n# Check given positive number\n\n## Multiple of 3 or a multiple of 7\n\n###\
+    \ HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript\
+    \ program to check whether a given positive number is a multiple of 3 or a multiple\
+    \ of 7\\. </title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\
+    ```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return\
+    \ true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(test37(12));\n\
+    console.log(test37(14));\nconsole.log(test37(10));\nconsole.log(test37(11))\n\
+    ```\n\n### Output:\ntrue\ntrue\nfalse\nfalse\n\n# Check a string starts with 'Java'\n\
+    \n## And false otherwise\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to check whether a string starts with 'Java' and\
+    \ false otherwise.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction start_spec_str(str) {\n  if (str.length < 4) {\n\
+    \    return false;\n  }\n  front = str.substring(0, 4);\n  if (front == 'Java')\
+    \ {\n    return true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(start_spec_str(\"\
+    JavaScript\"));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"\
+    Python\"))\n```\n\n### Output:\ntrue\ntrue\nfalse\n\n# Check two given integer\
+    \ values\n\n## In the range 50..99\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width=device-width\">\n  <title>JavaScript program to check whether given integer\
+    \ values are in the range 50..99 (inclusive). Return true if either of them are\
+    \ in the said range.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction check_numbers(x, y) {\n  if ((x >= 50 && x <=\
+    \ 99) || (y >= 50 && y <= 99)) {\n    return true;\n  }\n  else {\n    return\
+    \ false;\n  }\n}\nconsole.log(check_numbers(12, 101));\nconsole.log(check_numbers(52,\
+    \ 80));\nconsole.log(check_numbers(15, 99));\n```\n\n### OUTPUT\nfalse\ntrue\n\
+    true\n\n# Find a value which is nearest to 100\n\n### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>JavaScript program to find a value\
+    \ which is nearest to 100 from two different integer values.</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction\
+    \ near_100(x, y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y\
+    \ - 100);\n    if (x1 < y1) {\n      return x;\n    }\n    if (y1 < x1) {\n  \
+    \    return y;\n    }\n    return 0;\n  }\n  else {\n    return false;\n  }\n\
+    }\nconsole.log(near_100(90, 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90,\
+    \ 90));\n```\n\n### Output:\n90\n-89\nfalse\n"
+  raw: '#####   <title>JavaScript program to compute the sum of three elements of
+    an given integers of length 3.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function sum_three(nums)
+
+
+    ##### {
+
+
+    #####   return nums[0] + nums[1] + nums[2];
+
+
+    ##### }
+
+
+    ##### console.log(sum_three([10, 32, 20])); 
+
+
+    ##### console.log(sum_three([5, 7, 9]));
+
+
+    ##### console.log(sum_three([0, 8, -11]));
+
+
+    ### Output:
+
+
+    62
+
+
+    21
+
+
+    -3
+
+
+    # Add two digits
+
+
+    ## Of a given positive integer
+
+
+    ### Of length two
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to add two digits of a given positive integer
+    of length two.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function add_two_digits(n)
+
+
+    #####    {
+
+
+    #####       return n % 10 + Math.floor(n / 10);
+
+
+    #####    }
+
+
+    ##### console.log(add_two_digits(25))
+
+
+    ##### console.log(add_two_digits(50))
+
+
+    ### Output:
+
+
+    7
+
+
+    5
+
+
+    # Check whether a given year is a leap
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Find Leap Year</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function leapyear(year)
+
+
+    ##### {
+
+
+    ##### return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+
+    ##### }
+
+
+    ##### console.log(leapyear(2016));
+
+
+    ##### console.log(leapyear(2000));
+
+
+    ##### console.log(leapyear(1700));
+
+
+    ##### console.log(leapyear(1800));
+
+
+    ##### console.log(leapyear(100));
+
+
+    ### OUTPUT
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    false
+
+
+    # Check given positive number
+
+
+    ## Multiple of 3 or a multiple of 7
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to check whether a given positive number is
+    a multiple of 3 or a multiple of 7\. </title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function test37(x)
+
+
+    ##### {
+
+
+    #####   if (x % 3 == 0 || x % 7 == 0)
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####   else {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(test37(12));
+
+
+    ##### console.log(test37(14));
+
+
+    ##### console.log(test37(10));
+
+
+    ##### console.log(test37(11));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    # Check a string starts with ''Java''
+
+
+    ## And false otherwise
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to check whether a string starts with ''Java''
+    and false otherwise.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function start_spec_str(str)
+
+
+    ##### {
+
+
+    #####   if (str.length < 4)
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    #####   front = str.substring(0, 4);
+
+
+    #####   if (front == ''Java'')
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####    else
+
+
+    #####    {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(start_spec_str("JavaScript"));
+
+
+    ##### console.log(start_spec_str("Java"));
+
+
+    ##### console.log(start_spec_str("Python"));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    # Check two given integer values
+
+
+    ## In the range 50..99
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to check whether two given integer values are
+    in the range 50..99 (inclusive). Return true if either of them are in the said
+    range.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function check_numbers(x, y)
+
+
+    #####   {
+
+
+    #####   if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####   else
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(check_numbers(12, 101));
+
+
+    ##### console.log(check_numbers(52, 80));
+
+
+    ##### console.log(check_numbers(15, 99));
+
+
+    ### OUTPUT
+
+
+    false
+
+
+    true
+
+
+    true
+
+
+    # Find a value which is nearest to 100
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to find a value which is nearest to 100 from
+    two different given integer values.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function near_100(x, y) {
+
+
+    #####   if (x != y)
+
+
+    #####   {
+
+
+    #####   x1 = Math.abs(x - 100);
+
+
+    #####   y1 = Math.abs(y - 100);
+
+
+    #####   if (x1 < y1)
+
+
+    #####   {
+
+
+    #####     return x;
+
+
+    #####   }
+
+
+    #####   if (y1 < x1)
+
+
+    #####   {
+
+
+    #####     return y;
+
+
+    #####   }
+
+
+    #####   return 0;
+
+
+    #####   }
+
+
+    #####   else
+
+
+    #####     return false;
+
+
+    ##### }
+
+
+    ##### console.log(near_100(90, 89));
+
+
+    ##### console.log(near_100(-90, -89));
+
+
+    ##### console.log(near_100(90, 90));
+
+
+    ### Output:
+
+
+    90
+
+
+    -89
+
+
+    false'
+  toc: []
+  trans: "\n\n# 计算长度为 3 的整数数组三个元素之和的 JavaScript 程序\n\n### JAVASCRIPT 代码\n```javascript\n\
+    function sum_three(nums) {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10,\
+    \ 32, 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+    \ -11]));\n```\n\n### 输出:\n62\n21\n-3\n\n# 相加两个数字\n\n 针对一个给定的正整数\n\n## 长度为二\n\n\
+    ### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>计算给定两位正整数两个数字之和的\
+    \ JavaScript 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ 代码\n```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n\
+    \ / 10);\n}\nconsole.log(add_two_digits(25))\nconsole.log(add_two_digits(50))\n\
+    ```\n\n### 输出:\n7\n5\n\n# 检查给定年份是否为闰年\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=utf-8 />\n  <title>查找闰年</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction leapyear(year)\
+    \ {\n  return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\n\
+    console.log(leapyear(2016));\nconsole.log(leapyear(2000));\nconsole.log(leapyear(1700));\n\
+    console.log(leapyear(1800));\nconsole.log(leapyear(100));\n```\n\n### 输出\ntrue\n\
+    true\nfalse\nfalse\nfalse\n\n# 检查给定的正数\n\n## 3 的倍数或 7 的倍数\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>检查给定的正整数是否为 3 的倍数或 7 的倍数的 JavaScript\
+    \ 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\n\
+    function test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return true;\n  }\n\
+    \  else {\n    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+    console.log(test37(10));\nconsole.log(test37(11))\n```\n\n### 输出:\ntrue\ntrue\n\
+    false\nfalse\n\n# 检查字符串是否以 'Java' 开头\n\n## 否则为 false\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>检查字符串是否以 'Java' 开头否则为 false 的 JavaScript\
+    \ 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\n\
+    function start_spec_str(str) {\n  if (str.length < 4) {\n    return false;\n \
+    \ }\n  front = str.substring(0, 4);\n  if (front == 'Java') {\n    return true;\n\
+    \  }\n  else {\n    return false;\n  }\n}\nconsole.log(start_spec_str(\"JavaScript\"\
+    ));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"Python\"\
+    ))\n```\n\n### 输出:\ntrue\ntrue\nfalse\n\n# 检查两个给定的整数\n\n 在 50..99 范围内\n\n### HTML\
+    \ 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <meta name=\"viewport\" content=\"width=device-width\">\n  <title>检查给定的整数是否在\
+    \ 50..99 范围内（包含边界）。如果其中任意一个在范围内，则返回 true。</title>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction check_numbers(x, y)\
+    \ {\n  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {\n    return true;\n\
+    \  }\n  else {\n    return false;\n  }\n}\nconsole.log(check_numbers(12, 101));\n\
+    console.log(check_numbers(52, 80));\nconsole.log(check_numbers(15, 99));\n```\n\
+    \n### 输出\nfalse\ntrue\ntrue\n\n# 查找距离 100 最近的值\n\n### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>从两个不同的整数中找到距离 100 最近值的 JavaScript\
+    \ 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\n\
+    function near_100(x, y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1\
+    \ = Math.abs(y - 100);\n    if (x1 < y1) {\n      return x;\n    }\n    if (y1\
+    \ < x1) {\n      return y;\n    }\n    return 0;\n  }\n  else {\n    return false;\n\
+    \  }\n}\nconsole.log(near_100(90, 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90,\
+    \ 90));\n```\n\n### 输出:\n90\n-89\nfalse\n\n"

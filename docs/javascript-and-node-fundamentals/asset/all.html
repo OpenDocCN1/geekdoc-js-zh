@@ -1,0 +1,3252 @@
+<p><img src="images/title_page.jpg" /></p>
+<p><span id="title_page.xhtml"></span></p>
+<div id="title_page.xhtml_cover-image">
+<img src="images/title_page.jpg"
+alt="JavaScript and Node FUNdamentals" />
+</div>
+<p><span id="verso_page.xhtml"></span></p>
+<h2>JavaScript and Node FUNdamentals</h2>
+<h3>A Collection of Essential Basics</h3>
+<p> </p>
+<h4>Azat Mardan</h4>
+<p> </p>
+<p>This book is for sale at <a
+href="http://leanpub.com/jsfun">http://leanpub.com/jsfun</a></p>
+<p>This version was published on 2014-05-29</p>
+<p><img src="images/leanpub-logo.png" id="publisher-logo"
+alt="publisher&#39;s logo" /></p>
+<p>*   *   *   *   *</p>
+<p>This is a <a href="http://leanpub.com">Leanpub</a> book. Leanpub
+empowers authors and publishers with the Lean Publishing process. <a
+href="http://leanpub.com/manifesto">Lean Publishing</a> is the act of
+publishing an in-progress ebook using lightweight tools and many
+iterations to get reader feedback, pivot until you have the right book
+and build traction once you do.</p>
+<p>*   *   *   *   *</p>
+<div>
+© 2013 - 2014 Azat Mardan
+</div>
+<p><span id="toc.xhtml"></span></p>
+<h2 id="toc.xhtml_toc">Table of Contents</h2>
+<ul>
+<li><a
+href="#chap01.xhtml_leanpub-auto-javascript-fundamentals-the-powerful-and-misunderstood-language-of-the-web"><span
+class="section-number">1 </span>JavaScript FUNdamentals: The Powerful
+and Misunderstood Language of The Web</a>
+<ul>
+<li><a href="#chap01.xhtml_leanpub-auto-expressiveness"><span
+class="section-number">1.1 </span>Expressiveness</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-loose-typing"><span
+class="section-number">1.2 </span>Loose Typing</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-object-literal-notation"><span
+class="section-number">1.3 </span>Object Literal Notation</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-functions"><span
+class="section-number">1.4 </span>Functions</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-arrays"><span
+class="section-number">1.5 </span>Arrays</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-prototypal-nature"><span
+class="section-number">1.6 </span>Prototypal Nature</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-conventions"><span
+class="section-number">1.7 </span>Conventions</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-no-modules"><span
+class="section-number">1.8 </span>No Modules</a></li>
+<li><a
+href="#chap01.xhtml_leanpub-auto-immediately-invoked-function-expressions-iifes"><span
+class="section-number">1.9 </span>Immediately-Invoked Function
+Expressions (IIFEs)</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-keyword-this"><span
+class="section-number">1.10 </span>Keyword “this”</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-pitfalls"><span
+class="section-number">1.11 </span>Pitfalls</a></li>
+<li><a href="#chap01.xhtml_leanpub-auto-further-learning"><span
+class="section-number">1.12 </span>Further Learning</a></li>
+</ul></li>
+<li><a
+href="#chap02.xhtml_leanpub-auto-coffeescript-fundamentals-the-better-javascript"><span
+class="section-number">2 </span>CoffeeScript FUNdamentals: The Better
+JavaScript</a>
+<ul>
+<li><a
+href="#chap02.xhtml_leanpub-auto-semicolons-whitespace-and-parentheses"><span
+class="section-number">2.1 </span>Semicolons, Whitespace and
+Parentheses</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-vars"><span
+class="section-number">2.2 </span>Vars</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-conditions"><span
+class="section-number">2.3 </span>Conditions</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-functions-1"><span
+class="section-number">2.4 </span>Functions</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-classes"><span
+class="section-number">2.5 </span>Classes</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-arrays-and-slicing"><span
+class="section-number">2.6 </span>Arrays and Slicing</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-splats"><span
+class="section-number">2.7 </span>Splats</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-comprehensions"><span
+class="section-number">2.8 </span>Comprehensions</a></li>
+<li><a href="#chap02.xhtml_leanpub-auto-conclusion"><span
+class="section-number">2.9 </span>Conclusion</a></li>
+</ul></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-backbonejs-fundamentals-the-cornerstone-of-javascript-mv-frameworks"><span
+class="section-number">3 </span>Backbone.js FUNdamentals: The
+Cornerstone of JavaScript MV* Frameworks</a>
+<ul>
+<li><a
+href="#chap03.xhtml_leanpub-auto-typical-backbonejs-app-structure"><span
+class="section-number">3.1 </span>Typical Backbone.js App
+Structure</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-setting-up-backbonejs-app-from-scratch"><span
+class="section-number">3.2 </span>Setting up Backbone.js App from
+Scratch</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-dependencies-for-the-backbonejs-project"><span
+class="section-number">3.3 </span>Dependencies for the Backbone.js
+Project</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-working-with-backbonejs-collections"><span
+class="section-number">3.4 </span>Working with Backbone.js
+Collections</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-event-binding-with-backbonejs-and-jquery"><span
+class="section-number">3.5 </span>Event Binding with Backbone.js and
+jQuery</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-backbonejs-views-and-subviews-with-underscorejs"><span
+class="section-number">3.6 </span>Backbone.js Views and Subviews with
+Underscore.js</a></li>
+<li><a
+href="#chap03.xhtml_leanpub-auto-super-simple-backbone-starter-kit"><span
+class="section-number">3.7 </span>Super Simple Backbone Starter
+Kit</a></li>
+<li><a href="#chap03.xhtml_leanpub-auto-conclusion-1"><span
+class="section-number">3.8 </span>Conclusion</a></li>
+</ul></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-nodejs-fundamentals-javascript-on-the-server"><span
+class="section-number">4 </span>Node.js FUNdamentals: JavaScript on The
+Server</a>
+<ul>
+<li><a
+href="#chap04.xhtml_leanpub-auto-read-eval-print-loop-aka-console-in-nodejs"><span
+class="section-number">4.1 </span>Read-Eval-Print Loop (a.k.a. Console)
+in Node.js</a></li>
+<li><a href="#chap04.xhtml_leanpub-auto-launching-nodejs-scripts"><span
+class="section-number">4.2 </span>Launching Node.js Scripts</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-nodejs-process-information"><span
+class="section-number">4.3 </span>Node.js Process Information</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-accessing-global-scope-in-nodejs"><span
+class="section-number">4.4 </span>Accessing Global Scope in
+Node.js</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-exporting-and-importing-modules"><span
+class="section-number">4.5 </span>Exporting and Importing
+Modules</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-buffer-is-a-nodejs-super-data-type"><span
+class="section-number">4.6 </span>Buffer is a Node.js Super Data
+Type</a></li>
+<li><a href="#chap04.xhtml_leanpub-auto-dirname-vs-processcwd"><span
+class="section-number">4.7 </span>__dirname vs. process.cwd</a></li>
+<li><a href="#chap04.xhtml_leanpub-auto-handy-utilities-in-nodejs"><span
+class="section-number">4.8 </span>Handy Utilities in Node.js</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-reading-and-writing-fromto-the-file-system-in-nodejs"><span
+class="section-number">4.9 </span>Reading and Writing from/to The File
+System in Node.js</a></li>
+<li><a href="#chap04.xhtml_leanpub-auto-streaming-data-in-nodejs"><span
+class="section-number">4.10 </span>Streaming Data in Node.js</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-installing-nodejs-modules-with-npm"><span
+class="section-number">4.11 </span>Installing Node.js Modules with
+NPM</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-hello-world-server-with-http-nodejs-module"><span
+class="section-number">4.12 </span>Hello World Server with HTTP Node.js
+Module</a></li>
+<li><a href="#chap04.xhtml_leanpub-auto-debugging-nodejs-programs"><span
+class="section-number">4.13 </span>Debugging Node.js Programs</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-taming-callbacks-in-nodejs"><span
+class="section-number">4.14 </span>Taming Callbacks in Node.js</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-introduction-to-nodejs-with-ryan-dahl"><span
+class="section-number">4.15 </span>Introduction to Node.js with Ryan
+Dahl</a></li>
+<li><a
+href="#chap04.xhtml_leanpub-auto-moving-forward-with-expressjs"><span
+class="section-number">4.16 </span>Moving Forward with
+Express.js</a></li>
+</ul></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-expressjs-fundamentals-the-most-popular-nodejs-framework"><span
+class="section-number">5 </span>Express.js FUNdamentals: The Most
+Popular Node.js Framework</a>
+<ul>
+<li><a href="#chap05.xhtml_leanpub-auto-expressjs-installation"><span
+class="section-number">5.1 </span>Express.js Installation</a></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-expressjs-command-line-interface"><span
+class="section-number">5.2 </span>Express.js Command-Line
+Interface</a></li>
+<li><a href="#chap05.xhtml_leanpub-auto-routes-in-expressjs"><span
+class="section-number">5.3 </span>Routes in Express.js</a></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-middleware-as-the-backbone-of-expressjs"><span
+class="section-number">5.4 </span>Middleware as The Backbone of
+Express.js</a></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-configuration-of-an-expressjs-app"><span
+class="section-number">5.5 </span>Configuration of an Express.js
+App</a></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-jade-is-haml-for-expressjsnodejs"><span
+class="section-number">5.6 </span>Jade is Haml for
+Express.js/Node.js</a></li>
+<li><a
+href="#chap05.xhtml_leanpub-auto-conclusion-about-the-expressjs-framework"><span
+class="section-number">5.7 </span>Conclusion About The Express.js
+Framework</a></li>
+<li><a href="#chap05.xhtml_leanpub-auto-update"><span
+class="section-number">5.8 </span>Update</a></li>
+</ul></li>
+<li><a href="#chap06.xhtml_about-the-author"><span
+class="section-number">6 </span>About the Author</a>
+<ul>
+<li><a href="#chap06.xhtml_leanpub-auto-errata"><span
+class="section-number">6.1 </span>Errata</a></li>
+<li><a href="#chap06.xhtml_leanpub-auto-contact-us"><span
+class="section-number">6.2 </span>Contact Us</a></li>
+</ul></li>
+</ul>
+<p><span id="chap00.xhtml"></span></p>
+<div>
+<blockquote>
+<p>If it’s not fun, it’s not JavaScript.</p>
+</blockquote>
+</div>
+<p><span id="chap01.xhtml"></span></p>
+<h2
+id="chap01.xhtml_leanpub-auto-javascript-fundamentals-the-powerful-and-misunderstood-language-of-the-web"><span
+class="section-number">1 </span>JavaScript FUNdamentals: The Powerful
+and Misunderstood Language of The Web</h2>
+<h3 id="chap01.xhtml_leanpub-auto-expressiveness"><span
+class="section-number">1.1 </span>Expressiveness</h3>
+<p>Programming languages like BASIC, Python, C has boring machine-like
+nature which requires developers to write extra code that’s not directly
+related to the solution itself. Think about line numbers in BASIC or
+interfaces, classes and patterns in Java.</p>
+<p>On the other hand JavaScript inherits the best traits of pure
+mathematics, LISP, C# which lead to a great deal of <a
+href="http://en.wikipedia.org/wiki/Expressive_power">expressiveness</a>
+(and fun!).</p>
+<p>More about Expressive Power in this post: <a
+href="http://stackoverflow.com/questions/638881/what-does-expressive-mean-when-referring-to-programming-languages">What
+does “expressive” mean when referring to programming languages?</a></p>
+<p>The quintessential Hello World example in Java (remember, Java is to
+JavaScript is what ham to a hamster):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 public class HelloWorld {
+2     public static void main(String[] args) {
+3         System.out.println(&quot;Hello World&quot;);
+4     }
+5 }</code></pre>
+</div>
+</div>
+<p>The same example in JavaScript:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log(&#39;Hello World&#39;)</code></pre>
+</div>
+</div>
+<p>or from within an HTML page:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &lt;script&gt;
+2 document.write(&#39;Hello World&#39;)
+3 &lt;/script&gt;</code></pre>
+</div>
+</div>
+<p>JavaScript allows programmers to focus on the solution/problem rather
+that to jump through hoops and API docs.</p>
+<h3 id="chap01.xhtml_leanpub-auto-loose-typing"><span
+class="section-number">1.2 </span>Loose Typing</h3>
+<p>Automatic type casting works well most of the times. It a great
+feature that saves a lot of time and mental energy! There’re only a few
+primitives types:</p>
+<ol>
+<li>String</li>
+<li>Number (both integer and real)</li>
+<li>Boolean</li>
+<li>Undefined</li>
+<li>Null</li>
+</ol>
+<p>Everything else is an object, i.e., mutable keyed collections. Read
+Stackoverflow on <a
+href="http://stackoverflow.com/questions/3200211/what-does-immutable-mean">What
+does immutable mean?</a></p>
+<p>Also, in JavaScript there are String, Number and Boolean objects
+which contain helpers for the primitives:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &#39;a&#39; === new String(&#39;a&#39;) //false</code></pre>
+</div>
+</div>
+<p>but</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &#39;a&#39; === new String(&#39;a&#39;).toString() //true</code></pre>
+</div>
+</div>
+<p>or</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &#39;a&#39; == new String(&#39;a&#39;) //true</code></pre>
+</div>
+</div>
+<p>By the way, <code>==</code> performs automatic type casting while
+<code>===</code> not.</p>
+<h3 id="chap01.xhtml_leanpub-auto-object-literal-notation"><span
+class="section-number">1.3 </span>Object Literal Notation</h3>
+<p>Object notation is super readable and compact:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var obj = {
+2    color: &quot;green&quot;,
+3    type: &quot;suv&quot;,
+4    owner: {
+5       ...
+6    }
+7 }</code></pre>
+</div>
+</div>
+<p>Remember that functions are objects?</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var obj = function () {
+2    this.color: &quot;green&quot;,
+3    this.type: &quot;suv&quot;,
+4    this.owner: {
+5       ...
+6    }
+7 }</code></pre>
+</div>
+</div>
+<h3 id="chap01.xhtml_leanpub-auto-functions"><span
+class="section-number">1.4 </span>Functions</h3>
+<p>Functions are <strong>first-class citizens</strong>, and we treat
+them as variables, because they are objects! Yes, functions can even
+have properties/attributes.</p>
+<h4 id="chap01.xhtml_leanpub-auto-create-a-function"><span
+class="section-number">1.4.1 </span>Create a Function</h4>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var f = function f () {
+2    console.log(&#39;Hi&#39;);
+3    return true;
+4 }</code></pre>
+</div>
+</div>
+<p>or</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 function f () {
+2   console.log(&#39;Hi&#39;);
+3   return true;
+4 }</code></pre>
+</div>
+</div>
+<p>Function with a property (remember functions are just object that can
+be invoked, i.e. initialized):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var f = function () {console.log(&#39;Boo&#39;);}
+2 f.boo = 1;
+3 f(); //outputs Boo
+4 console.log(f.boo); //outputs 1</code></pre>
+</div>
+</div>
+<p><strong>Note</strong>: the return keyword is optional. In case its
+omitted the function will return <code>undefined</code> upon
+invocation.</p>
+<h4 id="chap01.xhtml_leanpub-auto-pass-functions-as-params"><span
+class="section-number">1.4.2 </span>Pass Functions as Params</h4>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var convertNum = function (num) {
+2  return num + 10;
+3 }
+4 
+5 var processNum = function (num, fn) {
+6    return fn(num);
+7 }
+8 
+9 processNum(10, convertNum);</code></pre>
+</div>
+</div>
+<h4 id="chap01.xhtml_leanpub-auto-invocation-vs-expression"><span
+class="section-number">1.4.3 </span>Invocation vs. Expression</h4>
+<p>Function definition:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 function f () {};</code></pre>
+</div>
+</div>
+<p>Invocation:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 f();</code></pre>
+</div>
+</div>
+<p>Expression (because it resolve to some value which could be a number,
+a string, an object or a boolean):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 function f() {return false;}
+2 f();</code></pre>
+</div>
+</div>
+<p>Statement:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 function f(a) {console.log(a);}</code></pre>
+</div>
+</div>
+<h3 id="chap01.xhtml_leanpub-auto-arrays"><span
+class="section-number">1.5 </span>Arrays</h3>
+<p>Arrays are also objects which have some special methods inherited
+from <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Properties">Array.prototype</a>
+global object. Nevertheless, JavaScript Arrays are <strong>not</strong>
+real arrays. Instead, they are objects with unique integer (usually
+0-based) keys.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var arr = [];
+2 var arr2 = [1, &quot;Hi&quot;, {a:2}, function () {console.log(&#39;boo&#39;);}];
+3 var arr3 = new Array();
+4 var arr4 = new Array(1,&quot;Hi&quot;, {a:2}, function () {console.log(&#39;boo&#39;);});</code></pre>
+</div>
+</div>
+<h3 id="chap01.xhtml_leanpub-auto-prototypal-nature"><span
+class="section-number">1.6 </span>Prototypal Nature</h3>
+<p>There are <strong>no classes</strong> in JavaScript because objects
+inherit directly from other objects which is called prototypal
+inheritance: There are a few types of inheritance patterns in JS:</p>
+<ul>
+<li>Classical</li>
+<li>Pseudo-classical</li>
+<li>Functional</li>
+</ul>
+<p>Example of the functional inheritance pattern:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var user = function (ops) {
+ 2   return { firstName: ops.name || &#39;John&#39;
+ 3          , lastName: ops.name || &#39;Doe&#39;
+ 4          , email: ops.email || &#39;test@test.com&#39;
+ 5          , name: function() { return this.firstName + this.lastName}
+ 6          }
+ 7 }
+ 8 
+ 9 var agency = function(ops) {
+10   ops = ops || {}
+11   var agency = user(ops)
+12   agency.customers = ops.customers || 0
+13   agency.isAgency = true
+14   return agency
+15 }</code></pre>
+</div>
+</div>
+<h3 id="chap01.xhtml_leanpub-auto-conventions"><span
+class="section-number">1.7 </span>Conventions</h3>
+<p>Most of these conventions (with semi-colons being an exception) are
+stylistic, and highly preferential and don’t impact the execution.</p>
+<h4 id="chap01.xhtml_leanpub-auto-semi-colons"><span
+class="section-number">1.7.1 </span>Semi-Colons</h4>
+<p>Optional semi-colons, except for two cases:</p>
+<ol>
+<li>In for loop construction:
+<code>for (var i=0; i++; i&lt;n)</code></li>
+<li>When a new line starts with parentheses, e.g., Immediately-Invoked
+Function Expression (IIFE): <code>;(function(){...}())</code></li>
+</ol>
+<h4 id="chap01.xhtml_leanpub-auto-camelcase"><span
+class="section-number">1.7.2 </span>camelCase</h4>
+<p>cameCase, except for class names which are CapitalCamelCase,
+e.g.,</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var MainView = Backbone.View.extend({...})
+2 var mainView = new MainView()</code></pre>
+</div>
+</div>
+<h4 id="chap01.xhtml_leanpub-auto-naming"><span
+class="section-number">1.7.3 </span>Naming</h4>
+<p><code>_</code>,<code>$</code> are perfectly legitimate characters for
+the literals (jQuery and Underscore libraries use them a lot).</p>
+<p>Private methods and attributes start with _ (does nothing by
+itself!).</p>
+<h4 id="chap01.xhtml_leanpub-auto-commas"><span
+class="section-number">1.7.4 </span>Commas</h4>
+<p>Comma-first approach</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var obj = { firstName: &quot;John&quot;
+2           , lastName: &quot;Smith&quot;
+3           , email: &quot;johnsmith@gmail.com&quot;
+4           }</code></pre>
+</div>
+</div>
+<h4 id="chap01.xhtml_leanpub-auto-indentation"><span
+class="section-number">1.7.5 </span>Indentation</h4>
+<p>Usually it’s either tab, 4 or 2 space indentation with their
+supporters’ camps being almost religiously split between the
+options.</p>
+<h4 id="chap01.xhtml_leanpub-auto-white-spaces"><span
+class="section-number">1.7.6 </span>White spaces</h4>
+<p>Usually, there is a space before and after <code>=</code>,
+<code>+</code>, <code>{</code> and <code>}</code> symbols. There is no
+space on invocation, e.g., <code>arr.push(1);</code>, but there’s a
+space when we define an anonymous function:
+<code>function () {}</code>.</p>
+<h3 id="chap01.xhtml_leanpub-auto-no-modules"><span
+class="section-number">1.8 </span>No Modules</h3>
+<p>At least until <a href="https://wiki.mozilla.org/ES6_plans">ES6</a>,
+everything is in the global scope, a.k.a. <code>window</code> and
+included via <code>&lt;script&gt;</code> tags. However, there are
+external libraries that allow for workarounds:</p>
+<ul>
+<li><a href="http://www.commonjs.org/">CommonJS</a></li>
+<li>AMD and <a href="http://requirejs.org/">Require.js</a></li>
+</ul>
+<p>Node.js uses CommonJS-like syntax and <strong>has</strong> build-in
+support for modules.</p>
+<p>To hide your code from global scope, make private attributes/methods
+use closures and <a
+href="http://en.wikipedia.org/wiki/Immediately-invoked_function_expression">immediately-invoked
+function expressions</a> (or IIFEs).</p>
+<h3
+id="chap01.xhtml_leanpub-auto-immediately-invoked-function-expressions-iifes"><span
+class="section-number">1.9 </span>Immediately-Invoked Function
+Expressions (IIFEs)</h3>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 (function () {
+2 window.yourModule = {
+3 ...
+4 };
+5 }());</code></pre>
+</div>
+</div>
+<p>This snippet show an example of a object with private attribute and
+method:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 (function () {
+ 2   window.boo = function() {
+ 3     var _a = 1;
+ 4     var inc = function () {
+ 5       _a++;
+ 6       console.log(_a);
+ 7       return _a;
+ 8     };
+ 9     return {
+10       increment: inc
+11     };
+12   }
+13 }());
+14 var b = window.boo();
+15 b.increment();</code></pre>
+</div>
+</div>
+<p>Now try this:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 b.increment();
+2 b.increment();
+3 b.increment();</code></pre>
+</div>
+</div>
+<h3 id="chap01.xhtml_leanpub-auto-keyword-this"><span
+class="section-number">1.10 </span>Keyword “this”</h3>
+<p>Mutates/changes a lot (especially in jQuery)! Rule of thumb is to
+re-assign to a locally scoped variable before attempting to use
+<code>this</code> inside of a closure:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var app = this
+2 $(&#39;a&#39;).click(function(e){
+3   console.log(this) //most likely the event or the      target anchor element
+4   console.log(app) //that&#39;s what we want!
+5   app.processData(e)
+6  })</code></pre>
+</div>
+</div>
+<p><em>When in doubt: console.log!</em></p>
+<h3 id="chap01.xhtml_leanpub-auto-pitfalls"><span
+class="section-number">1.11 </span>Pitfalls</h3>
+<p>JS is the only language that programmers think they shouldn’t learn.
+Things like <code>===</code> vs. <code>==</code>, global scope leakage,
+DOM, etc. might lead to problems down the road. This is why it’s
+important to understand the language or use something like CoffeeScript,
+that take a way most of the issues.</p>
+<h3 id="chap01.xhtml_leanpub-auto-further-learning"><span
+class="section-number">1.12 </span>Further Learning</h3>
+<p>If you liked this articled and would like to explore JavaScript more,
+take a look at this amazing <strong>free</strong> resource: <a
+href="http://eloquentjavascript.net/">Eloquent JavaScript: A Modern
+Introduction to Programming</a>.</p>
+<p>Of course for more advanced JavaScript enthusiasts and pros, there’s
+my book <a href="http://rpjs.co">Rapid Prototyping with JS</a> and
+intensive programming school <a
+href="http://hackreactor.com">HackReactor</a>, where I teach
+part-time.</p>
+<p><span id="chap02.xhtml"></span></p>
+<h2
+id="chap02.xhtml_leanpub-auto-coffeescript-fundamentals-the-better-javascript"><span
+class="section-number">2 </span>CoffeeScript FUNdamentals: The Better
+JavaScript</h2>
+<p>The CoffeeScript is a language that was built on top of JavaScript.
+CoffeeScript has some added benefits and its code is compiled into
+native JavaScript for execution. The CoffeeScript pros include: better
+syntax, function and class construction patterns, automatic
+<code>var</code> insertion, comprehensions and others.</p>
+<p>Most of these perks will be obvious once we take a look at some
+examples. This quick language reference can get you started with
+CoffeeScript:</p>
+<ul>
+<li>Semicolons, Whitespace and Parentheses</li>
+<li>Vars</li>
+<li>Conditions</li>
+<li>Functions</li>
+<li>Classes</li>
+<li>Arrays</li>
+<li>Splats</li>
+<li>Comprehensions</li>
+</ul>
+<h3
+id="chap02.xhtml_leanpub-auto-semicolons-whitespace-and-parentheses"><span
+class="section-number">2.1 </span>Semicolons, Whitespace and
+Parentheses</h3>
+<p>While in JavaScript, semicolons are redundant and optional; in
+CoffeeScript they are banned.</p>
+<p>The whitespace and indentation (typically two-space) are parts of the
+CoffeeScript language.</p>
+<p>Parentheses for function invocation are optional (except when there
+are no arguments). The same goes for curly braces for object literals.
+We can even next objects without curly braces:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 a =
+ 2   x: 1
+ 3   y: -20
+ 4   z: () -&gt;
+ 5     console.log a.x+a.y
+ 6 
+ 7 a.z()
+ 8 
+ 9 b = [
+10   1,
+11   2,
+12     x: 10
+13     y: 20
+14 ]</code></pre>
+</div>
+</div>
+<p>Translates into this JavaScript:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var a, b;
+ 2 
+ 3 a = {
+ 4   x: 1,
+ 5   y: -20,
+ 6   z: function() {
+ 7     return console.log(a.x + a.y);
+ 8   }
+ 9 };
+10 
+11 a.z();
+12 
+13 b = [
+14   1, 2, {
+15     x: 10,
+16     y: 20
+17   }
+18 ];</code></pre>
+</div>
+</div>
+<p>As you might have noticed, the logical block’s curly braces that we
+use to write code for functions (i.e., <code>{}</code>) are also
+replaced by indentation. Let’s not forget that functions are just
+objects in JavaScript. :-)</p>
+<h3 id="chap02.xhtml_leanpub-auto-vars"><span class="section-number">2.2
+</span>Vars</h3>
+<p>CoffeeScript automatically inserts <code>var</code> keywords for us
+and prohibits manual usage of <code>var</code>. For example,
+<code>a</code>,<code>b</code>, and <code>c</code> variable declarations
+will have the <code>var</code> in the JavaScript code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = 10
+2 b = &#39;x&#39;
+3 c = [1,2,3]</code></pre>
+</div>
+</div>
+<p>JavaScript code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var a, b, c;
+2 
+3 a = 10;
+4 
+5 b = &#39;x&#39;;
+6 
+7 c = [1, 2, 3];</code></pre>
+</div>
+</div>
+<p>CoffeeScript always puts <code>var</code>s at the top of the scope
+where this particular variable was encountered first. The scope is
+defined by the function or window. For example, the anonymous function
+<code>d</code> will have <code>e</code> scoped to it, because
+CoffeeScript first saw <code>e</code> inside of the function:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = 10
+2 b = &#39;x&#39;
+3 c = [1,2,3]
+4 
+5 d = () -&gt;
+6   e = a
+7   console.log e
+8 d()</code></pre>
+</div>
+</div>
+<p>JavaScript output:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var a, b, c, d;
+ 2 
+ 3 a = 10;
+ 4 
+ 5 b = &#39;x&#39;;
+ 6 
+ 7 c = [1, 2, 3];
+ 8 
+ 9 d = function() {
+10   var e;
+11   e = a;
+12   return console.log(e);
+13 };
+14 
+15 d();</code></pre>
+</div>
+</div>
+<h3 id="chap02.xhtml_leanpub-auto-conditions"><span
+class="section-number">2.3 </span>Conditions</h3>
+<p>Conditions are more readable by humans (English-like?) in
+CoffeeScript:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = b = c = d = 1
+2 if a is b or b isnt c and not c is d
+3   console.log &#39;true&#39;
+4 else
+5   console.log &#39;false&#39;</code></pre>
+</div>
+</div>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var a, b, c, d;
+2 
+3 a = b = c = d = 1;
+4 
+5 if (a === b || b !== c &amp;&amp; !c === d) {
+6   console.log(&#39;true&#39;);
+7 } else {
+8   console.log(&#39;false&#39;);
+9 }</code></pre>
+</div>
+</div>
+<p>So <code>is</code> is <code>===</code>, <code>isnt</code> is
+<code>!==</code>, <code>not</code> is <code>!</code>, <code>and</code>
+is <code>&amp;&amp;</code>, and <code>or</code> is <code>||</code>.</p>
+<p>In CoffeeScript some fancy and arguably more readable constructions
+are possible:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log a if a is not null
+2 if a isnt null then console.log a
+3 if not a is null then console.log a
+4 unless a is null then console.log a</code></pre>
+</div>
+</div>
+<p>Note: <code>unless</code> is just a shortcut for
+<code>if not</code>.</p>
+<h3 id="chap02.xhtml_leanpub-auto-functions-1"><span
+class="section-number">2.4 </span>Functions</h3>
+<p>Functions in CoffeeScript are defined with arrows
+<code>()-&gt;</code> and and fat arrows <code>()=&gt;</code> (more on
+this later):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = (x,y) -&gt; console.log x+y
+2 a(10,-5)</code></pre>
+</div>
+</div>
+<p>JavaScript code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var a;
+2 
+3 a = function(x, y) {
+4   return console.log(x + y);
+5 };
+6 
+7 a(10, -5);</code></pre>
+</div>
+</div>
+<p>Longer expressions can be on multiple lines using indentation, while
+the default values can be assigned right in the function signature
+(i.e., <code>(name=value)</code>):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = (x, y, z=15) -&gt;
+2  sum = x + y + z
+3  console.log sum
+4 a(10,-5)</code></pre>
+</div>
+</div>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var a;
+ 2 
+ 3 a = function(x, y, z) {
+ 4   var sum;
+ 5   if (z == null) {
+ 6     z = 15;
+ 7   }
+ 8   sum = x + y + z;
+ 9   return console.log(sum);
+10 };
+11 
+12 a(10, -5);</code></pre>
+</div>
+</div>
+<p>So back to the far arrow, it does two things: 1. Defines a function
+2. Binds the new function’s scope to the current value of
+<code>this</code></p>
+<p>Remember that <code>this</code> is dynamically scoped, i.e., its
+meaning changes based on where it is situated in the code (what’s the
+scope). For example, if we have a jQuery event handler
+<code>click</code>, we might want to use <code>this</code> as the object
+in which we defined the handler, not as the DOM element to which the
+handler is bound.</p>
+<p>For example, this CoffeeScript code will return <code>window</code>
+object both times (that’s what we want):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log @
+2 $(&#39;div&#39;).click ()=&gt;
+3   console.log @</code></pre>
+</div>
+</div>
+<p>The JavaScript code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log(this);
+2 
+3 $(&#39;div&#39;).click((function(_this) {
+4   return function() {
+5     return console.log(_this);
+6   };
+7 })(this));</code></pre>
+</div>
+</div>
+<p>However, with single arrows it’s back to the DOM scope for the event
+handler, (this might be bad if unexpected):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log @
+2 $(&#39;div&#39;).click ()-&gt;
+3   console.log @</code></pre>
+</div>
+</div>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log(this);
+2 
+3 $(&#39;div&#39;).click(function() {
+4   return console.log(this);
+5 });</code></pre>
+</div>
+</div>
+<p>Traditionally for the snippet above, without the CoffeeScript’s far
+arrows, you would see workarounds like these which use interim variables
+like <code>that</code>, <code>self</code>, or <code>_this</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 console.log(this);
+2 var that = this;
+3 $(&#39;div&#39;).click(function() {
+4   return console.log(that);
+5 });</code></pre>
+</div>
+</div>
+<h3 id="chap02.xhtml_leanpub-auto-classes"><span
+class="section-number">2.5 </span>Classes</h3>
+<p>Classes are probably the most yummiest and the most complex and
+confusing feature in CoffeeScript. In JavaScript classes are absent at
+all! We use prototypes instead, so the objects inherit from other
+objects. We can also use factories, i.e., the functions that create
+objects.</p>
+<p>However, if a developer wants to implement a class, it could be
+really tricky and often requires a good understanding of
+pseudo-classical instantiation patterns. This is not the case with
+CoffeeScript, which introduces <code>class</code> keyword. Inside of the
+<code>class</code> we can use <code>constructor</code> method and
+<code>super</code> call, for the initialization logic and the invocation
+of the parent’s methods correspondingly.</p>
+<p>For example, we have a parent class <code>Vehicle</code> from which
+we extend two classes <code>Compact</code> and <code>Suv</code>. In
+these classes, we write custom <code>move</code> methods with the
+<code>super</code> call, that allows us to re-use the logic from the
+parent class <code>Vehicle</code>.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 class Vehicle
+ 2   constructor: (@name) -&gt;
+ 3 
+ 4   move: (meters) -&gt;
+ 5     console.log @name + &quot; moved #{meters} miles.&quot;
+ 6 
+ 7 class Compact extends Vehicle
+ 8   move: -&gt;
+ 9     console.log &quot;Cruising...&quot;
+10     super 5
+11 
+12 class Suv extends Vehicle
+13   move: -&gt;
+14     console.log &quot;Speeding...&quot;
+15     super 45
+16 
+17 camry = new Compact &quot;Camry&quot;
+18 caddi = new Suv &quot;Cadillac&quot;
+19 
+20 camry.move()
+21 caddi.move()</code></pre>
+</div>
+</div>
+<p>The console outputs this:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 Cruising...
+2 Camry moved 5 miles.
+3 Speeding...
+4 Cadillac moved 45 miles.</code></pre>
+</div>
+</div>
+<p>The JavaScript output is quite lengthy, so no wonder developers often
+prefer functional or other patterns:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var Compact, Suv, Vehicle, caddi, camry,
+ 2   __hasProp = {}.hasOwnProperty,
+ 3   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.c\
+ 4 all(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor \
+ 5 = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child\
+ 6 .__super__ = parent.prototype; return child; };
+ 7 
+ 8 Vehicle = (function() {
+ 9   function Vehicle(name) {
+10     this.name = name;
+11   }
+12 
+13   Vehicle.prototype.move = function(meters) {
+14     return console.log(this.name + (&quot; moved &quot; + meters + &quot; miles.&quot;));
+15   };
+16 
+17   return Vehicle;
+18 
+19 })();
+20 
+21 Compact = (function(_super) {
+22   __extends(Compact, _super);
+23 
+24   function Compact() {
+25     return Compact.__super__.constructor.apply(this, arguments);
+26   }
+27 
+28   Compact.prototype.move = function() {
+29     console.log(&quot;Cruising...&quot;);
+30     return Compact.__super__.move.call(this, 5);
+31   };
+32 
+33   return Compact;
+34 
+35 })(Vehicle);
+36 
+37 Suv = (function(_super) {
+38   __extends(Suv, _super);
+39 
+40   function Suv() {
+41     return Suv.__super__.constructor.apply(this, arguments);
+42   }
+43 
+44   Suv.prototype.move = function() {
+45     console.log(&quot;Speeding...&quot;);
+46     return Suv.__super__.move.call(this, 45);
+47   };
+48 
+49   return Suv;
+50 
+51 })(Vehicle);
+52 
+53 camry = new Compact(&quot;Camry&quot;);
+54 
+55 caddi = new Suv(&quot;Cadillac&quot;);
+56 
+57 camry.move();
+58 
+59 caddi.move();</code></pre>
+</div>
+</div>
+<h3 id="chap02.xhtml_leanpub-auto-arrays-and-slicing"><span
+class="section-number">2.6 </span>Arrays and Slicing</h3>
+<p>Arrays in CoffeeScript can be defined just as they are in native
+JavaScript: <code>arr = [1, 2, 3]</code>. But we can do so much more
+with arrays in CoffeeScript! For example, we can use a range when
+defining an array (useful in iterators and comprehensions) and use
+slice:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 arr = [1..10]
+2 slicedArr = arr[2..4]
+3 console.log arr, slicedArr</code></pre>
+</div>
+</div>
+<p>The console outputs:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] [3, 4, 5]</code></pre>
+</div>
+</div>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var arr, slicedArr;
+2 
+3 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+4 
+5 slicedArr = arr.slice(2, 5);
+6 
+7 console.log(arr, slicedArr);</code></pre>
+</div>
+</div>
+<p>Trivia fact: for array declarations with 20+ items (e.g., range of
+<code>[0..20]</code> and larger), CoffeeScript compiler will switch to
+the <code>for</code> loop.</p>
+<h3 id="chap02.xhtml_leanpub-auto-splats"><span
+class="section-number">2.7 </span>Splats</h3>
+<p>Splats is a better way of using a variable number of arguments and
+<code>arguments</code> object (from native JavaScript):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = (x...) -&gt;
+2  sum = 0
+3  x.forEach (item) -&gt; sum += item
+4  console.log sum
+5 a(10,-5, 15)</code></pre>
+</div>
+</div>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var a,
+ 2   __slice = [].slice;
+ 3 
+ 4 a = function() {
+ 5   var sum, x;
+ 6   x = 1 &lt;= arguments.length ? __slice.call(arguments, 0) : [];
+ 7   sum = 0;
+ 8   x.forEach(function(item) {
+ 9     return sum += item;
+10   });
+11   return console.log(sum);
+12 };
+13 
+14 a(10, -5, 15);</code></pre>
+</div>
+</div>
+<p>Spats work with invocations too. For example, our <code>sum</code>
+function from the previous example needs to treat the array not as a
+first element, but as all <code>arguments</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 a = (x...) -&gt;
+2  sum = 0
+3  x.forEach (item) -&gt; sum += item
+4  console.log sum
+5 
+6 a [-5..50]...</code></pre>
+</div>
+</div>
+<p>The output is <code>1260</code>. And the JavaScript:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var a, _i, _results,
+ 2   __slice = [].slice;
+ 3 
+ 4 a = function() {
+ 5   var sum, x;
+ 6   x = 1 &lt;= arguments.length ? __slice.call(arguments, 0) : [];
+ 7   sum = 0;
+ 8   x.forEach(function(item) {
+ 9     return sum += item;
+10   });
+11   return console.log(sum);
+12 };
+13 
+14 a.apply(null, (function() {
+15   _results = [];
+16   for (_i = -5; _i &lt;= 50; _i++){ _results.push(_i); }
+17   return _results;
+18 }).apply(this));</code></pre>
+</div>
+</div>
+<h3 id="chap02.xhtml_leanpub-auto-comprehensions"><span
+class="section-number">2.8 </span>Comprehensions</h3>
+<p>The last but not least topic is comprehensions. They are probably the
+most used feature in CoffeeScript and replace (or at least try to
+replace) <strong>all loops</strong>.</p>
+<p>For example, a simple iteration over an array:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 arr = [
+2   &#39;x&#39;,
+3   &#39;y&#39;,
+4   &#39;z&#39;
+5 ]
+6 
+7 for a in arr
+8   console.log a</code></pre>
+</div>
+</div>
+<p>The console output is:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 x
+2 y
+3 z</code></pre>
+</div>
+</div>
+<p>The compiled code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var a, arr, _i, _len;
+2 
+3 arr = [&#39;x&#39;, &#39;y&#39;, &#39;z&#39;];
+4 
+5 for (_i = 0, _len = arr.length; _i &lt; _len; _i++) {
+6   a = arr[_i];
+7   console.log(a);
+8 }</code></pre>
+</div>
+</div>
+<p>As is the case with conditions, comprehensions might be reversed in
+order, e.g., <code>console.log a for a in arr</code>. Then, we can get
+an index which will be the second parameter, e.g.,
+<code>console.log a, i for a, i in arr </code> outputs:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 x 0
+2 y 1
+3 z 2</code></pre>
+</div>
+</div>
+<p>The <code>when</code> clause acts like a <code>filter</code> method;
+in other words, we can apply a test to the iterator:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 arr = [&#39;x&#39;, &#39;y&#39;, &#39;z&#39;]
+2 console.log a, i for a, i in arr when a isnt &#39;y&#39;</code></pre>
+</div>
+</div>
+<p>The console outputs:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 x 0
+2 z 2</code></pre>
+</div>
+</div>
+<p>To step with an increment we can use <code>by</code>:
+<code>evens = (x for x in [0..10] by 2)</code>. In addition, for
+iterating over objects we can use <code>of</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 obj =
+2   &#39;x&#39;: 10
+3   &#39;y&#39;:-2
+4   &#39;z&#39;: 50
+5 
+6 coordinates = for key, value of obj
+7   &quot;coordinate #{key} is #{value}pt&quot;
+8 console.log coordinates</code></pre>
+</div>
+</div>
+<p>The console output is:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 [&quot;coordinate x is 10pt&quot;, &quot;coordinate y is -2pt&quot;, &quot;coordinate z is 50pt&quot;]</code></pre>
+</div>
+</div>
+<p>The JavaScript code is:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var coordinates, key, obj, value;
+ 2 
+ 3 obj = {
+ 4   &#39;x&#39;: 10,
+ 5   &#39;y&#39;: -2,
+ 6   &#39;z&#39;: 50
+ 7 };
+ 8 
+ 9 coordinates = (function() {
+10   var _results;
+11   _results = [];
+12   for (key in obj) {
+13     value = obj[key];
+14     _results.push(&quot;coordinate &quot; + key + &quot; is &quot; + value + &quot;pt&quot;);
+15   }
+16   return _results;
+17 })();</code></pre>
+</div>
+</div>
+<h3 id="chap02.xhtml_leanpub-auto-conclusion"><span
+class="section-number">2.9 </span>Conclusion</h3>
+<p>This CoffeeScript FUNdamentals is a concise overview that should
+highlight major pros of this language, which has many more useful
+features. We hope that classes, arrow function declaration,
+comprehensions, splats, and the clean syntax were enough to spark
+interest and lead to more exploration and experimentation with
+CoffeeScript.</p>
+<p>Here’s the list of further CoffeeScirpt reading:</p>
+<ul>
+<li><a href="http://webapplog.com/coffeescript-quirks/">CoffeeScript
+Quirks</a></li>
+<li><a href="http://arcturo.github.io/library/coffeescript/">The Little
+Book on CoffeeScript</a></li>
+<li><a href="http://coffeescriptcookbook.com/">CoffeeScript
+Cookbook</a></li>
+<li><a href="http://autotelicum.github.io/Smooth-CoffeeScript/">Smooth
+CoffeeScript</a></li>
+<li><a
+href="https://leanpub.com/coffeescript-ristretto/read">CoffeeScript
+Ristretto</a></li>
+</ul>
+<p><span id="chap03.xhtml"></span></p>
+<h2
+id="chap03.xhtml_leanpub-auto-backbonejs-fundamentals-the-cornerstone-of-javascript-mv-frameworks"><span
+class="section-number">3 </span>Backbone.js FUNdamentals: The
+Cornerstone of JavaScript MV* Frameworks</h2>
+<p>If you are reading this chapter, you’re probably familiar with the
+benefits of using an MV* (asterisk means a controller, another view or
+something else) over plain jQuery that grows into unmanageable spaghetti
+code with time and added complexity.</p>
+<p>Backbone.js is the cornerstone of all JavaScript frameworks because
+it’s one of the most mature (i.e., dependable) and popular solutions in
+the ever-growing multitudes of browser JavaScript MV*
+(model-view-controllers and model-view-something) frameworks. If we draw
+a quick comparison between Backbone.js and other frameworks (not a fair
+one but still might be useful for some readers), it will be somewhere in
+the middle in complexity and features between <a
+href="http://spinejs.com/">Spine</a>&amp;<a
+href="http://knockoutjs.com/">KnockoutJS</a> (the lighter side) and <a
+href="http://emberjs.com/">Ember.js</a>&amp;<a
+href="https://angularjs.org/">Angular.js</a> (heavier side). Which one
+to choose depends on whether developers will have to customize a lot (go
+with lightweights) or use right-out-of-the-box (go with
+heavyweights).</p>
+<p>A bit of trivia: Backbone.js was created by the same person (<a
+href="https://twitter.com/jashkenas">Jeremy Ashmenas</a>) that brought
+CoffeeScript and Underscore.js to the world!</p>
+<p>Therefore, we’ll demonstrate how to build a Backbone.js simple
+application from scratch. This is not your typical to-do list, examples
+of which you can find plenty at <a
+href="http://todomvc.com/">TodoMVC</a>, but a simplified application
+that is easier to understand but that still uses all components: views,
+collections, subviews, models, and event binding. The example is the
+apple database application.</p>
+<p>In this chapter we’ll cover following:</p>
+<ul>
+<li>Typical Backbone.js App Structure</li>
+<li>Setting up Backbone.js App from Scratch</li>
+<li>Dependencies for the Backbone.js Project</li>
+<li>Working with Backbone.js Collections</li>
+<li>Event Binding with Backbone.js and jQuery</li>
+<li>Backbone.js View and Subviews with Backbone.js Underscore.js</li>
+<li>Super Simple Backbone Starter Kit</li>
+<li>Conclusion</li>
+</ul>
+<h3
+id="chap03.xhtml_leanpub-auto-typical-backbonejs-app-structure"><span
+class="section-number">3.1 </span>Typical Backbone.js App Structure</h3>
+<p>There are just four classes in Backbone.js:</p>
+<ul>
+<li>Router: mapping of URL to methods</li>
+<li>View: methods related to browser&amp;user events, HTML output
+(rendering)</li>
+<li>Collection: a list of models with extra helpers such as
+<code>fetch()</code></li>
+<li>Model: an individual data item with extra helpers</li>
+</ul>
+<p>A typical Backbone.js app will have the main Router class. From that
+class all the routes (URL paths) will be defined. The router can create
+and call methods of other classes such as Views, Collections, and
+Models. For example, for path <code>/books</code> we’ll render books
+view.</p>
+<p>The recommended usage is that Views usually have one Collection or
+one Model. A Collection is just a list of Models. However, this is not
+written in stone. Backbone.js is very flexible and should be used
+according to the specific needs. For example, an application can have a
+Model that has Views and each View that has collections.</p>
+<p>In our concise example, we’ll have one main Router that has Views.
+These Views will have models and collections.</p>
+<h3
+id="chap03.xhtml_leanpub-auto-setting-up-backbonejs-app-from-scratch"><span
+class="section-number">3.2 </span>Setting up Backbone.js App from
+Scratch</h3>
+<p>Firstly, we’re going to build a typical starter “Hello World”
+application using Backbone.js and the model-view-controller (MVC)
+architecture. I know it might sound like overkill in the beginning, but
+as we go along we’ll add more and more complexity, including Models,
+Subviews and Collections. The structure of the project is keep it simple
+stupid:</p>
+<ul>
+<li><code>index.html</code>: the main file and all the application’s
+JavaScript code</li>
+<li><code>jquery.js</code>: jQuery library</li>
+<li><code>underscore.js</code>: Underscore.js library</li>
+<li><code>backbone.js</code>: Backbone.js library</li>
+</ul>
+<p>A full source code for the “Hello World” app is available at GitHub
+under <a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/hello-world">github.com/azat-co/rpjs/backbone/hello-world</a>.</p>
+<p>jQuery, Underscore are required dependencies for Backbone.js.</p>
+<h3
+id="chap03.xhtml_leanpub-auto-dependencies-for-the-backbonejs-project"><span
+class="section-number">3.3 </span>Dependencies for the Backbone.js
+Project</h3>
+<p>To build our apple database, we’ll need to download the following
+libraries:</p>
+<ul>
+<li><a href="http://code.jquery.com/jquery-1.9.0.js">jQuery 1.9
+development source file</a></li>
+<li><a href="http://underscorejs.org/underscore.js">Underscore.js
+development source file</a></li>
+<li><a href="http://backbonejs.org/backbone.js">Backbone.js development
+source file</a></li>
+</ul>
+<p>Alternatively, you can hot-like these libraries from some CDNs (e.g.,
+<a href="https://developers.google.com/speed/libraries/devguide">Google
+Hosted Libraries</a>), but then we’ll need an internet connection every
+time you run your app.</p>
+<p>Include these frameworks in the newly created <code>index.html</code>
+file like this:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 &lt;!DOCTYPE&gt;
+ 2 &lt;html&gt;
+ 3 &lt;head&gt;
+ 4   &lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+ 5   &lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+ 6   &lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;
+ 7 
+ 8   &lt;script&gt;
+ 9     //TODO write some awesome JS code!
+10   &lt;/script&gt;
+11 
+12 &lt;/head&gt;
+13 &lt;body&gt;
+14 &lt;/body&gt;
+15 &lt;/html&gt;</code></pre>
+</div>
+</div>
+<table class="information sidebarish">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td class="sidebar-icon"><img src="images/leanpub_information.png"
+class="sidebar-image" alt="information" /></td>
+<td><h3 id="chap03.xhtml_leanpub-auto-note">Note</h3>
+<p>We can also put <code>&lt;script&gt;</code> tags right after the
+<code>&lt;/body&gt;</code> tag in the end of the file. This will change
+the order in which scripts and the rest of HTML are loaded and impact
+performance in large files.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Some developers shy away from using Backbone Router (it’s an optional
+class/component), but we always find that Router brings more benefits
+and clarity. In a way, it serves as a starting point of your application
+and helps to understand the foundation and how all the pieces fit
+together such as views, models, etc. So, let’s define a simple
+Backbone.js Router inside of a <code>&lt;script&gt;</code> tag:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   var router = Backbone.Router.extend({
+3   });
+4   ...</code></pre>
+</div>
+</div>
+<table class="information sidebarish">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td class="sidebar-icon"><img src="images/leanpub_information.png"
+class="sidebar-image" alt="information" /></td>
+<td><h3 id="chap03.xhtml_leanpub-auto-note-1">Note</h3>
+<p>For now, to Keep It Simple Stupid (KISS), we’ll be putting all of our
+JavaScript code right into the <code>index.html</code> file. This is not
+a good idea for a real development or production code. We’ll refactor it
+later.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Then set up a special <code>routes</code> property inside of an
+<code>extend</code> call:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var router = Backbone.Router.extend({
+2     routes: {
+3     }
+4   });</code></pre>
+</div>
+</div>
+<p>The Backbone.js <code>routes</code> property needs to be in the
+following format: <code>'path/:param': 'action'</code> which will result
+in the <code>filename#path/param</code> URL triggering a function named
+<code>action</code> (defined in the Router object). For now, we’ll add a
+single <code>home</code> route:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var router = Backbone.Router.extend({
+2     routes: {
+3       &#39;&#39;: &#39;home&#39;
+4     }
+5   });</code></pre>
+</div>
+</div>
+<p>This is good, but now we need to add a <code>home</code> function
+(the right part of the <code>route: action</code> key-value pair):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var router = Backbone.Router.extend({
+2     routes: {
+3       &#39;&#39;: &#39;home&#39;
+4     },
+5     home: function(){
+6       //TODO render html
+7     }
+8   });</code></pre>
+</div>
+</div>
+<p>We’ll come back to the <code>home</code> function later to add more
+logic for creating and rendering of a View. Right now, we should define
+our <code>homeView</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var homeView = Backbone.View.extend({
+2   });</code></pre>
+</div>
+</div>
+<p>Does it look familiar to you? Right, Backbone.js uses similar syntax
+for all of its components, such as <code>Backbone.View</code>,
+<code>Backbone.Router</code>, <code>Backbone.Model</code> and
+<code>Backbone.Collection</code>. The class is followed by the
+<code>extend</code> function and a JSON object as a parameter to it.
+This object often contains some initialization options or attributes of
+the class.</p>
+<p>There are multiple ways to proceed from now on, but the best practice
+is to use the <code>el</code> and <code>template</code> properties,
+which are <em>magical</em>, i.e., special in Backbone.js, because they
+allow us to do two things:</p>
+<ol>
+<li><code>el</code>: attach the Backbone View object to a Document
+Object Model (DOM) element</li>
+<li><code>template</code>: store the Underscore (in this case we use
+Underscore but it can be changed to another library) template</li>
+</ol>
+<p>Here’s the code for the home view:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var homeView = Backbone.View.extend({
+2     el: &#39;body&#39;,
+3     template: _.template(&#39;Hello World&#39;)
+4   });</code></pre>
+</div>
+</div>
+<p>The property <code>el</code> is just a string that holds the jQuery
+selector (you can use class name with ‘.’ and id name with ‘#’). The
+template property has been assigned an Underscore.js function
+<code>template</code> with just a plain text ‘Hello World’.</p>
+<p>To render our <code>homeView</code> we use <code>this.$el</code>
+which is a compiled jQuery object referencing element in an
+<code>el</code> property, and the jQuery <code>.html()</code> function
+to replace HTML with <code>this.template()</code> value. Here is what
+the full code for our home Backbone.js View looks like:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var homeView = Backbone.View.extend({
+2     el: &#39;body&#39;,
+3     template: _.template(&#39;Hello World&#39;),
+4     render: function(){
+5       this.$el.html(this.template({}));
+6     }
+7   });</code></pre>
+</div>
+</div>
+<p>Now, if we go back to the <code>router</code> we can add these two
+lines to the <code>home</code> function:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   var router = Backbone.Router.extend({
+ 2     routes: {
+ 3       &#39;&#39;: &#39;home&#39;
+ 4     },
+ 5     initialize: function(){
+ 6       // some awesome code that will be executed during object&#39;s creation
+ 7     },
+ 8     home: function(){
+ 9       this.homeView = new homeView;
+10       this.homeView.render();
+11     }
+12   });</code></pre>
+</div>
+</div>
+<p>The first line will create the <code>homeView</code> object and
+assign it to the <code>homeView</code> property of the router. The
+second line will call the <code>render()</code> method in the
+<code>homeView</code> object, triggering the “Hello World” output.</p>
+<p>Finally, to start a Backbone app, we call <code>new Router</code>
+inside of a document-ready wrapper to make sure that the file’s DOM is
+fully loaded. The <code>app</code> variable is made global in this
+sense, this helps to access some Router properties (it’s a good idea to
+use a prefix specific to your application):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var app;
+2 $(document).ready(function(){
+3   app = new router;
+4   Backbone.history.start();
+5 })</code></pre>
+</div>
+</div>
+<p>Confused so far? Don’t be because here is the full code of the
+<code>index.html</code> file:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 &lt;!DOCTYPE&gt;
+ 2 &lt;html&gt;
+ 3 &lt;head&gt;
+ 4   &lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+ 5   &lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+ 6   &lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;
+ 7 
+ 8   &lt;script&gt;
+ 9 
+10     var app;
+11 
+12     var router = Backbone.Router.extend({
+13       routes: {
+14         &#39;&#39;: &#39;home&#39;
+15       },
+16       initialize: function(){
+17        //some code to execute
+18        //when the object is instantiated
+19       },
+20       home: function(){
+21         this.homeView = new homeView;
+22         this.homeView.render();
+23       }
+24     });
+25 
+26     var homeView = Backbone.View.extend({
+27       el: &#39;body&#39;,
+28       template: _.template(&#39;Hello World&#39;),
+29       render: function(){
+30         this.$el.html(this.template({}));
+31       }
+32     });
+33 
+34     $(document).ready(function(){
+35       app = new router;
+36       Backbone.history.start();
+37     })
+38 
+39   &lt;/script&gt;
+40 &lt;/head&gt;
+41 &lt;body&gt;
+42   &lt;div&gt;&lt;/div&gt;
+43 &lt;/body&gt;
+44 &lt;/html&gt;</code></pre>
+</div>
+</div>
+<p>Open <code>index.html</code> in the browser to see if it works, i.e.,
+the “Hello World” message should be on the page.</p>
+<h3
+id="chap03.xhtml_leanpub-auto-working-with-backbonejs-collections"><span
+class="section-number">3.4 </span>Working with Backbone.js
+Collections</h3>
+<p>Backbone Collections are useful classes that developers can use for
+storing any sets of data that belong to the same type. In other words,
+Collections are sets or lists of models, and they (collections) can have
+their own custom methods and logic as well as some built-in Backbone
+methods.</p>
+<p>The full source code of Backbone Collections example is under the
+GitHub’s <a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/collections">rpjs/backbone/collections</a>.</p>
+<p>This example is about Backbone Collections, and it’s built on top of
+the previous “Hello World” example from the <strong>Setting up
+Backbone.js App from Scratch</strong> which is available for download at
+<a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/hello-world">rpjs/backbone/hello-world</a>.</p>
+<p>We should add some data to play around with and to hydrate our views.
+To do this, add this right after the <code>script</code> tag and before
+the other code:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   var appleData = [
+ 2     {
+ 3       name: &quot;fuji&quot;,
+ 4       url: &quot;img/fuji.jpg&quot;
+ 5     },
+ 6     {
+ 7       name: &quot;gala&quot;,
+ 8       url: &quot;img/gala.jpg&quot;
+ 9     }
+10   ];</code></pre>
+</div>
+</div>
+<p>Grab the images (see picture below) from GitHub: <a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/collections/img">https://github.com/azat-co/rpjs/tree/master/backbone/collections/img</a>,
+or add your own.</p>
+<div class="image-with-caption center">
+<img src="images/fuji.jpg" alt="Fuji apple illustration" />
+<p>Fuji apple illustration</p>
+</div>
+<div class="image-with-caption center">
+<img src="images/gala.jpg" alt="Gala apple illustration" />
+<p>Gala apple illustration</p>
+</div>
+<p>This is our apple <em>database</em>. :-) Or to be more accurate, our
+REST API endpoint-substitute, which provides us with names and image
+URLs of the apples (data models). If you want some real-world servers,
+you can use:</p>
+<ul>
+<li><a href="http://parse.com">Parse.com</a>: back-end-as-a-service
+provider</li>
+<li><a
+href="http://webapplog.com/express-js-4-node-js-and-mongodb-rest-api-tutorial/">Node.js
+and MongoDB REST API</a>: a free-JSON API built with Node.js, Express.js
+and MongoDB</li>
+</ul>
+<table class="information sidebarish">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td class="sidebar-icon"><img src="images/leanpub_information.png"
+class="sidebar-image" alt="information" /></td>
+<td><h3 id="chap03.xhtml_leanpub-auto-note-2">Note</h3>
+<p>This mock dataset can be easily substituted by assigning REST API
+endpoints of your back-end to <code>url</code> properties in Backbone.js
+Collections and/or Models, and calling the <code>fetch()</code> method
+on them.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Now to make the User Experience (UX) a little bit better, we can add
+a new route to the <code>routes</code> object in the Backbone Route:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   routes: {
+3     &#39;&#39;: &#39;home&#39;,
+4     &#39;apples/:appleName&#39;: &#39;loadApple&#39;
+5   },
+6   ...</code></pre>
+</div>
+</div>
+<p>This will allow users to go to
+<code>index.html#apples/SOMENAME</code> and expect to see some
+information about an apple. This information will be fetched and
+rendered by the <code>loadApple</code> function in the Backbone Router
+definition:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   loadApple: function(appleName){
+2     this.appleView.render(appleName);
+3   }</code></pre>
+</div>
+</div>
+<p>Have you noticed an <code>appleName</code> variable? It’s exactly the
+same name as the one that we’ve used in <code>route</code>. This is how
+we can access query string parameters (e.g.,
+<code>?param=value&amp;q=search</code>) in Backbone.js.</p>
+<p>Now we’ll need to refactor some more code to create a Backbone
+Collection, populate it with data in our <code>appleData</code>
+variable, and to pass the collection to <code>homeView</code> and
+<code>appleView</code>. Conveniently enough, we do it all in the Router
+constructor method <code>initialize</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   initialize: function(){
+2     var apples = new Apples();
+3     apples.reset(appleData);
+4     this.homeView = new homeView({collection: apples});
+5     this.appleView = new appleView({collection: apples});
+6   },</code></pre>
+</div>
+</div>
+<p>At this point, we’re pretty much done with the Router class, and it
+should look like this:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   var router = Backbone.Router.extend({
+ 2     routes: {
+ 3       &#39;&#39;: &#39;home&#39;,
+ 4       &#39;apples/:appleName&#39;: &#39;loadApple&#39;
+ 5     },
+ 6     initialize: function(){
+ 7       var apples = new Apples();
+ 8       apples.reset(appleData);
+ 9       this.homeView = new homeView({collection: apples});
+10       this.appleView = new appleView({collection: apples});
+11     },
+12     home: function(){
+13       this.homeView.render();
+14     },
+15     loadApple: function(appleName){
+16       this.appleView.render(appleName);
+17     }
+18   });</code></pre>
+</div>
+</div>
+<p>Let’s modify our <code>homeView</code> a bit to see the whole
+<em>database</em>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var homeView = Backbone.View.extend({
+2     el: &#39;body&#39;,
+3     template: _.template(&#39;Apple data: &lt;%= data %&gt;&#39;),
+4     render: function(){
+5       this.$el.html(this.template({
+6       data: JSON.stringify(this.collection.models)
+7     }));
+8     }
+9   });</code></pre>
+</div>
+</div>
+<p>For now, we just output the string representation of the JSON object
+in the browser. This is not user-friendly at all, but later we’ll
+improve it by using a list and subviews.</p>
+<p>So far, our apple Backbone Collection is very clean and simple:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var Apples = Backbone.Collection.extend({
+2   });</code></pre>
+</div>
+</div>
+<table class="information sidebarish">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td class="sidebar-icon"><img src="images/leanpub_information.png"
+class="sidebar-image" alt="information" /></td>
+<td><h3 id="chap03.xhtml_leanpub-auto-note-3">Note</h3>
+<p>Backbone automatically creates models inside of a collection when we
+use the <code>fetch()</code> or <code>reset()</code> functions.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Apple view is not any more complex; it has only two properties:
+<code>template</code> and <code>render</code>. In a template, we want to
+display <code>figure</code>, <code>img</code> and
+<code>figcaption</code> tags with specific values. The Underscore.js
+template engine is handy at this task:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var appleView = Backbone.View.extend({
+2     template: _.template(
+3           &#39;&lt;figure&gt;\
+4              &lt;img src=&quot;&lt;%= attributes.url %&gt;&quot;/&gt;\
+5              &lt;figcaption&gt;&lt;%= attributes.name %&gt;&lt;/figcaption&gt;\
+6            &lt;/figure&gt;&#39;),
+7   ...
+8   });</code></pre>
+</div>
+</div>
+<p>To make a JavaScript string, which has HTML tags in it, more readable
+we can use the backslash line breaker escape (<code>\</code>) symbol, or
+close strings and concatenate them with a plus sign (<code>+</code>).
+This is an example of <code>appleView</code> above, which is refactored
+using the latter approach:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   var appleView = Backbone.View.extend({
+2     template: _.template(
+3         &#39;&lt;figure&gt;&#39;+
+4           +&#39;&lt;img src=&quot;&lt;%= attributes.url %&gt;&quot;/&gt;&#39;+
+5           +&#39;&lt;figcaption&gt;&lt;%= attributes.name %&gt;&lt;/figcaption&gt;&#39;+
+6         +&#39;&lt;/figure&gt;&#39;),
+7   ...</code></pre>
+</div>
+</div>
+<p>Please note the ‘&lt;%=’ and ‘%&gt;’ symbols; they are the
+instructions for Undescore.js to print values in properties
+<code>url</code> and <code>name</code> of the <code>attributes</code>
+object.</p>
+<p>Finally, we’re adding the render function to the
+<code>appleView</code> class.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   render: function(appleName){
+2     var appleModel = this.collection.where({name:appleName})[0];
+3     var appleHtml = this.template(appleModel);
+4     $(&#39;body&#39;).html(appleHtml);
+5   }</code></pre>
+</div>
+</div>
+<p>We find a model within the collection via <code>where()</code> method
+and use <code>[]</code> to pick the first element. Right now, the
+<code>render</code> function is responsible for both loading the data
+and rendering it. Later we’ll refactor the function to separate these
+two functionalities into different methods.</p>
+<p>The whole app, which is in the <a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/collections">rpjs/backbone/collections/index.html</a>
+folder, looks like this:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 &lt;!DOCTYPE&gt;
+ 2 &lt;html&gt;
+ 3 &lt;head&gt;
+ 4   &lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+ 5   &lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+ 6   &lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;
+ 7 
+ 8   &lt;script&gt;
+ 9    var appleData = [
+10       {
+11         name: &quot;fuji&quot;,
+12         url: &quot;img/fuji.jpg&quot;
+13       },
+14       {
+15         name: &quot;gala&quot;,
+16         url: &quot;img/gala.jpg&quot;
+17       }
+18     ];
+19     var app;
+20     var router = Backbone.Router.extend({
+21       routes: {
+22         &quot;&quot;: &quot;home&quot;,
+23         &quot;apples/:appleName&quot;: &quot;loadApple&quot;
+24       },
+25       initialize: function(){
+26         var apples = new Apples();
+27         apples.reset(appleData);
+28         this.homeView = new homeView({collection: apples});
+29         this.appleView = new appleView({collection: apples});
+30       },
+31       home: function(){
+32         this.homeView.render();
+33       },
+34       loadApple: function(appleName){
+35         this.appleView.render(appleName);
+36       }
+37     });
+38 
+39     var homeView = Backbone.View.extend({
+40       el: &#39;body&#39;,
+41       template: _.template(&#39;Apple data: &lt;%= data %&gt;&#39;),
+42       render: function(){
+43         this.$el.html(this.template({
+44         data: JSON.stringify(this.collection.models)
+45       }));
+46       }
+47       //TODO subviews
+48     });
+49 
+50     var Apples = Backbone.Collection.extend({
+51 
+52     });
+53     var appleView = Backbone.View.extend({
+54       template: _.template(&#39;&lt;figure&gt;\
+55                   &lt;img src=&quot;&lt;%= attributes.url %&gt;&quot;/&gt;\
+56                   &lt;figcaption&gt;&lt;%= attributes.name %&gt;&lt;/figcaption&gt;\
+57                 &lt;/figure&gt;&#39;),
+58       //TODO re-write with load apple and event binding
+59       render: function(appleName){
+60         var appleModel = this.collection.where({
+61           name:appleName
+62         })[0];
+63         var appleHtml = this.template(appleModel);
+64         $(&#39;body&#39;).html(appleHtml);
+65       }
+66     });
+67     $(document).ready(function(){
+68       app = new router;
+69       Backbone.history.start();
+70     })
+71 
+72   &lt;/script&gt;
+73 &lt;/head&gt;
+74 &lt;body&gt;
+75   &lt;div&gt;&lt;/div&gt;
+76 &lt;/body&gt;
+77 &lt;/html&gt;</code></pre>
+</div>
+</div>
+<p>Open <code>collections/index.html</code> file in your browser. You
+should see the data from our “database”, i.e.,
+<code>Apple data: [{"name":"fuji","url":"img/fuji.jpg"},{"name":"gala","url":"img/gala.jpg"}]</code>.</p>
+<p>Now, let’ go to <code>collections/index.html#apples/fuji</code> or
+<code>collections/index.html#apples/gala</code> in your browser. We
+expect to see an image with a caption. It’s a detailed view of an item,
+which in this case is an apple. Nice work!</p>
+<h3
+id="chap03.xhtml_leanpub-auto-event-binding-with-backbonejs-and-jquery"><span
+class="section-number">3.5 </span>Event Binding with Backbone.js and
+jQuery</h3>
+<p>In real life, getting data does not happen instantaneously, so let’s
+refactor our code to simulate it. For a better UI/UX, we’ll also have to
+show a loading icon (a.k.a., spinner or ajax-loader, see the picture
+below) to users to notify them that the information is being loaded.</p>
+<div class="image-with-caption center">
+<img src="images/spinner.png" alt="Spinner GIF" />
+<p>Spinner GIF</p>
+</div>
+<p>It’s a good thing that we have event binding in Backbone. The event
+binding is not an exclusive to Backbone feature, because it is part of
+jQuery. But without Backbone organization and code structure, things
+tend to end up messier (with plain jQuery). For example, we’ll have to
+pass a function that renders HTML as a callback to the data loading
+function, to make sure that the rendering function is not executed
+before we have the actual data to display.</p>
+<p>Therefore, when a user goes to detailed view
+(<code>apples/:id</code>) we only call the function that loads the data.
+Then, with the proper event listeners, our view will automagically (this
+is not a typo) update itself; when there is a new data (or on a data
+change, Backbone.js supports multiple and even custom events).</p>
+<p>Let’s change the code in the router:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2     loadApple: function(appleName){
+3       this.appleView.loadApple(appleName);
+4     }
+5   ...</code></pre>
+</div>
+</div>
+<p>Everything else remains the same until we get to the
+<code>appleView</code> class. We’ll need to add a constructor or an
+<code>initialize</code> method, which is a special word/property in the
+Backbone.js framework. It’s called each time we create an instance of an
+object, i.e., <code>var someObj = new SomeObject()</code>. We can also
+pass extra parameters to the <code>initialize</code> function, as we did
+with our views (we passed an object with the key <code>collection</code>
+and the value of <code>apples</code> Backbone Collection). Read more on
+Backbone.js constructors at <a
+href="http://backbonejs.org/#View-constructor">backbonejs.org/#View-constructor</a>.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   var appleView = Backbone.View.extend({
+3     initialize: function(){
+4       //TODO: create and setup model (aka an apple)
+5     },
+6   ...</code></pre>
+</div>
+</div>
+<p>Great, we have our <code>initialize</code> function. Now we need to
+create a model which will represent a single apple and set up proper
+event listeners on the model. We’ll use two types of events,
+<code>change</code> and a custom event called <code>spinner</code>. To
+do that, we are going to use the <code>on()</code> function, which takes
+these properties: <code>on(event, actions, context)</code> — read more
+about it at <a
+href="http://backbonejs.org/#Events-on">backbonejs.org/#Events-on</a>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   var appleView = Backbone.View.extend({
+3       this.model = new (Backbone.Model.extend({}));
+4       this.model.bind(&#39;change&#39;, this.render, this);
+5       this.bind(&#39;spinner&#39;,this.showSpinner, this);
+6     },
+7   ...</code></pre>
+</div>
+</div>
+<p>The code above basically boils down to two simple things:</p>
+<ol>
+<li>Call <code>render()</code> function of <code>appleView</code> object
+when the model has changed</li>
+<li>Call <code>showSpinner()</code> method of <code>appleView</code>
+object when event <code>spinner</code> has been fired.</li>
+</ol>
+<p>So far, so good, right? But what about the spinner, a GIF icon? Let’s
+create a new property in <code>appleView</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2     templateSpinner: &#39;&lt;img src=&quot;img/spinner.gif&quot; width=&quot;30&quot;/&gt;&#39;,
+3   ...</code></pre>
+</div>
+</div>
+<p>Remember the <code>loadApple</code> call in the router? This is how
+we can implement the function in <code>appleView</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   ...
+ 2   loadApple:function(appleName){
+ 3     this.trigger(&#39;spinner&#39;);
+ 4     //show spinner GIF image
+ 5     var view = this;
+ 6     //we&#39;ll need to access that inside of a closure
+ 7     setTimeout(function(){
+ 8     //simulates real time lag when
+ 9     //fetching data from the remote server
+10       view.model.set(view.collection.where({
+11         name:appleName
+12       })[0].attributes);
+13     },1000);
+14   },
+15   ...</code></pre>
+</div>
+</div>
+<p>The first line will trigger the <code>spinner</code> event (the
+function for which we still have to write).</p>
+<p>The second line is just for scoping issues (so we can use
+<code>appleView</code> inside of the closure).</p>
+<p>The <code>setTimeout</code> function is simulating a time lag of a
+real remote server response. Inside of it, we assign attributes of a
+selected model to our view’s model by using a <code>model.set()</code>
+function and a <code>model.attributes</code> property (which returns the
+properties of a model).</p>
+<p>Now we can remove an extra code from the <code>render</code> method
+and implement the <code>showSpinner</code> function:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   render: function(appleName){
+2     var appleHtml = this.template(this.model);
+3     $(&#39;body&#39;).html(appleHtml);
+4   },
+5   showSpinner: function(){
+6     $(&#39;body&#39;).html(this.templateSpinner);
+7   }
+8   ...</code></pre>
+</div>
+</div>
+<p>That’s all! Open <code>index.html#apples/gala</code> or
+<code>index.html#apples/fuji</code> in your browser and enjoy the
+loading animation while waiting for an apple image to load.</p>
+<p>The full code of the <code>index.html</code> file:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 &lt;!DOCTYPE&gt;
+ 2 &lt;html&gt;
+ 3 &lt;head&gt;
+ 4   &lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+ 5   &lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+ 6   &lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;
+ 7 
+ 8   &lt;script&gt;
+ 9    var appleData = [
+10       {
+11         name: &quot;fuji&quot;,
+12         url: &quot;img/fuji.jpg&quot;
+13       },
+14       {
+15         name: &quot;gala&quot;,
+16         url: &quot;img/gala.jpg&quot;
+17       }
+18     ];
+19     var app;
+20     var router = Backbone.Router.extend({
+21       routes: {
+22         &quot;&quot;: &quot;home&quot;,
+23         &quot;apples/:appleName&quot;: &quot;loadApple&quot;
+24       },
+25       initialize: function(){
+26         var apples = new Apples();
+27         apples.reset(appleData);
+28         this.homeView = new homeView({collection: apples});
+29         this.appleView = new appleView({collection: apples});
+30       },
+31       home: function(){
+32         this.homeView.render();
+33       },
+34       loadApple: function(appleName){
+35         this.appleView.loadApple(appleName);
+36 
+37       }
+38     });
+39 
+40     var homeView = Backbone.View.extend({
+41       el: &#39;body&#39;,
+42       template: _.template(&#39;Apple data: &lt;%= data %&gt;&#39;),
+43       render: function(){
+44         this.$el.html(this.template({
+45           data: JSON.stringify(this.collection.models)
+46         }));
+47       }
+48       //TODO subviews
+49     });
+50 
+51     var Apples = Backbone.Collection.extend({
+52 
+53     });
+54     var appleView = Backbone.View.extend({
+55       initialize: function(){
+56         this.model = new (Backbone.Model.extend({}));
+57         this.model.on(&#39;change&#39;, this.render, this);
+58         this.on(&#39;spinner&#39;,this.showSpinner, this);
+59       },
+60       template: _.template(&#39;&lt;figure&gt;\
+61                 &lt;img src=&quot;&lt;%= attributes.url %&gt;&quot;/&gt;\
+62                 &lt;figcaption&gt;&lt;%= attributes.name %&gt;&lt;/figcaption&gt;\
+63                 &lt;/figure&gt;&#39;),
+64       templateSpinner: &#39;&lt;img src=&quot;img/spinner.gif&quot; width=&quot;30&quot;/&gt;&#39;,
+65 
+66       loadApple:function(appleName){
+67         this.trigger(&#39;spinner&#39;);
+68         var view = this; //we&#39;ll need to access
+69         //that inside of a closure
+70         setTimeout(function(){ //simulates real time
+71         //lag when fetching data from the remote server
+72           view.model.set(view.collection.where({
+73             name:appleName
+74           })[0].attributes);
+75         },1000);
+76 
+77       },
+78 
+79       render: function(appleName){
+80         var appleHtml = this.template(this.model);
+81         $(&#39;body&#39;).html(appleHtml);
+82       },
+83       showSpinner: function(){
+84         $(&#39;body&#39;).html(this.templateSpinner);
+85       }
+86 
+87     });
+88     $(document).ready(function(){
+89       app = new router;
+90       Backbone.history.start();
+91     })
+92 
+93   &lt;/script&gt;
+94 &lt;/head&gt;
+95 &lt;body&gt;
+96   &lt;a href=&quot;#apples/fuji&quot;&gt;fuji&lt;/a&gt;
+97   &lt;div&gt;&lt;/div&gt;
+98 &lt;/body&gt;
+99 &lt;/html&gt;</code></pre>
+</div>
+</div>
+<h3
+id="chap03.xhtml_leanpub-auto-backbonejs-views-and-subviews-with-underscorejs"><span
+class="section-number">3.6 </span>Backbone.js Views and Subviews with
+Underscore.js</h3>
+<p>This example is available at <a
+href="https://github.com/azat-co/rpjs/tree/master/backbone/subview">rpjs/backbone/subview</a>.</p>
+<p>Subviews are Backbone Views that are created and used inside of
+another Backbone View. A subviews concept is a great way to abstract
+(separate) UI events (e.g., clicks) and templates for similarly
+structured elements (e.g., apples).</p>
+<p>A use case of a Subview might include a row in a table, a list item
+in a list, a paragraph, a new line, etc.</p>
+<p>We’ll refactor our home page to show a nice list of apples. Each list
+item will have an apple name and a “buy” link with an
+<code>onClick</code> event. Let’s start by creating a subview for a
+single apple with our standard Backbone <code>extend()</code>
+function:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   ...
+ 2   var appleItemView = Backbone.View.extend({
+ 3     tagName: &#39;li&#39;,
+ 4     template: _.template(&#39;&#39;
+ 5            +&#39;&lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;&#39;
+ 6           +&#39;&lt;%=name%&gt;&#39;
+ 7           +&#39;&lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;&#39;),
+ 8     events: {
+ 9       &#39;click .add-to-cart&#39;: &#39;addToCart&#39;
+10     },
+11     render: function() {
+12       this.$el.html(this.template(this.model.attributes));
+13     },
+14     addToCart: function(){
+15       this.model.collection.trigger(&#39;addToCart&#39;, this.model);
+16     }
+17   });
+18   ...</code></pre>
+</div>
+</div>
+<p>Now we can populate the object with <code>tagName</code>,
+<code>template</code>, <code>events</code>, <code>render</code> and
+<code>addToCart</code> properties/methods.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   tagName: &#39;li&#39;,
+3   ...</code></pre>
+</div>
+</div>
+<p><code>tagName</code> automatically allows Backbone.js to create an
+HTML element with the specified tag name, in this case
+<code>&lt;li&gt;</code> — list item. This will be a representation of a
+single apple, a row in our list.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   template: _.template(&#39;&#39;
+3          +&#39;&lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;&#39;
+4         +&#39;&lt;%=name%&gt;&#39;
+5         +&#39;&lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;&#39;),
+6   ...</code></pre>
+</div>
+</div>
+<p>The template is just a string with Undescore.js instructions. They
+are wrapped in <code>&lt;%</code> and <code>%&gt;</code> symbols.
+<code>&lt;%=</code> simply means print a value. The same code can be
+written with backslash escapes:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   template: _.template(&#39;\
+3          &lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;\
+4         &lt;%=name%&gt;\
+5         &lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;\
+6         &#39;),
+7   ...</code></pre>
+</div>
+</div>
+<p>Each <code>&lt;li&gt;</code> will have two anchor elements
+(<code>&lt;a&gt;</code>), links to a detailed apple view
+(<code>#apples/:appleName</code>) and a <code>buy</code> button. Now
+we’re going to attach an event listener to the <code>buy</code>
+button:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   events: {
+3     &#39;click .add-to-cart&#39;: &#39;addToCart&#39;
+4   },
+5   ...</code></pre>
+</div>
+</div>
+<p>The syntax follows this rule:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 event + jQuery element selector: function name</code></pre>
+</div>
+</div>
+<p>Both the key and the value (right and left parts separated by the
+colon) are strings. For example:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &#39;click .add-to-cart&#39;: &#39;addToCart&#39;</code></pre>
+</div>
+</div>
+<p>or</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 &#39;click #load-more&#39;: &#39;loadMoreData&#39;</code></pre>
+</div>
+</div>
+<p>To render each item in the list, we’ll use the jQuery
+<code>html()</code> function on the <code>this.$el</code> jQuery object,
+which is the <code>&lt;li&gt;</code> HTML element based on our
+<code>tagName</code> attribute:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   render: function() {
+3     this.$el.html(this.template(this.model.attributes));
+4   },
+5   ...</code></pre>
+</div>
+</div>
+<p>The <code>addToCart</code> method will use the <code>trigger()</code>
+function to notify the collection that this particular model (apple) is
+up for the purchase by the user:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2     addToCart: function(){
+3       this.model.collection.trigger(&#39;addToCart&#39;, this.model);
+4     }
+5   ...</code></pre>
+</div>
+</div>
+<p>Here is the full code of the <code>appleItemView</code> Backbone View
+class:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   ...
+ 2   var appleItemView = Backbone.View.extend({
+ 3     tagName: &#39;li&#39;,
+ 4     template: _.template(&#39;&#39;
+ 5            +&#39;&lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;&#39;
+ 6           +&#39;&lt;%=name%&gt;&#39;
+ 7           +&#39;&lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;&#39;),
+ 8     events: {
+ 9       &#39;click .add-to-cart&#39;: &#39;addToCart&#39;
+10     },
+11     render: function() {
+12       this.$el.html(this.template(this.model.attributes));
+13     },
+14     addToCart: function(){
+15       this.model.collection.trigger(&#39;addToCart&#39;, this.model);
+16     }
+17   });
+18   ...</code></pre>
+</div>
+</div>
+<p>Easy peasy! But what about the master view, which is supposed to
+render all of our items (apples) and provide a wrapper
+<code>&lt;ul&gt;</code> container for <code>&lt;li&gt;</code> HTML
+elements? We need to modify and enhance our <code>homeView</code>.</p>
+<p>To begin with, we can add extra properties of string type
+understandable by jQuery as selectors to <code>homeView</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   el: &#39;body&#39;,
+3   listEl: &#39;.apples-list&#39;,
+4   cartEl: &#39;.cart-box&#39;,
+5   ...</code></pre>
+</div>
+</div>
+<p>We can use properties from above in the template, or just hard-code
+them (we’ll refactor our code later) in <code>homeView</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2   template: _.template(&#39;Apple data: \
+3     &lt;ul class=&quot;apples-list&quot;&gt;\
+4     &lt;/ul&gt;\
+5     &lt;div class=&quot;cart-box&quot;&gt;&lt;/div&gt;&#39;),
+6   ...</code></pre>
+</div>
+</div>
+<p>The <code>initialize</code> function will be called when
+<code>homeView</code> is created (<code>new homeView()</code>) — in it
+we render our template (with our favorite by now <code>html()</code>
+function), and attach an event listener to the collection (which is a
+set of apple models):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2     initialize: function() {
+3       this.$el.html(this.template);
+4       this.collection.on(&#39;addToCart&#39;, this.showCart, this);
+5     },
+6   ...</code></pre>
+</div>
+</div>
+<p>The syntax for the binding event is covered in the previous section.
+In essence, it is calling the <code>showCart()</code> function of
+<code>homeView</code>. In this function, we append
+<code>appleName</code> to the cart (along with a line break, a
+<code>&lt;br/&gt;</code> element):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1   ...
+2     showCart: function(appleModel) {
+3       $(this.cartEl).append(appleModel.attributes.name+&#39;&lt;br/&gt;&#39;);
+4     },
+5   ...</code></pre>
+</div>
+</div>
+<p>Finally, here is our long-awaited <code>render()</code> method, in
+which we iterate through each model in the collection (each apple),
+create an <code>appleItemView</code> for each apple, create an
+<code>&lt;li&gt;</code> element for each apple, and append that element
+to <code>view.listEl</code> — <code>&lt;ul&gt;</code> element with a
+class apples-list in the DOM:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   ...
+ 2   render: function(){
+ 3     view = this;
+ 4     //so we can use view inside of closure
+ 5     this.collection.each(function(apple){
+ 6       var appleSubView = new appleItemView({model:apple});
+ 7       // creates subview with model apple
+ 8       appleSubView.render();
+ 9       // compiles template and single apple data
+10       $(view.listEl).append(appleSubView.$el);
+11       //append jQuery object from single
+12       //apple to apples-list DOM element
+13     });
+14   }
+15   ...</code></pre>
+</div>
+</div>
+<p>Let’s make sure we didn’t miss anything in the <code>homeView</code>
+Backbone View:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1   ...
+ 2   var homeView = Backbone.View.extend({
+ 3     el: &#39;body&#39;,
+ 4     listEl: &#39;.apples-list&#39;,
+ 5     cartEl: &#39;.cart-box&#39;,
+ 6     template: _.template(&#39;Apple data: \
+ 7       &lt;ul class=&quot;apples-list&quot;&gt;\
+ 8       &lt;/ul&gt;\
+ 9       &lt;div class=&quot;cart-box&quot;&gt;&lt;/div&gt;&#39;),
+10     initialize: function() {
+11       this.$el.html(this.template);
+12       this.collection.on(&#39;addToCart&#39;, this.showCart, this);
+13     },
+14     showCart: function(appleModel) {
+15       $(this.cartEl).append(appleModel.attributes.name+&#39;&lt;br/&gt;&#39;);
+16     },
+17     render: function(){
+18       view = this; //so we can use view inside of closure
+19       this.collection.each(function(apple){
+20         var appleSubView = new appleItemView({model:apple});
+21         // create subview with model apple
+22         appleSubView.render();
+23         // compiles tempalte and single apple data
+24         $(view.listEl).append(appleSubView.$el);
+25         //append jQuery object from single apple
+26         //to apples-list DOM element
+27       });
+28     }
+29   });
+30   ...</code></pre>
+</div>
+</div>
+<p>You should be able to click on the buy, and the cart will populate
+with the apples of your choice. Looking at an individual apple does not
+require typing its name in the URL address bar of the browser anymore.
+We can click on the name, and it opens a new window with a detailed
+view.</p>
+<div class="image-with-caption center">
+<img src="images/backbone-subview1.png"
+alt="The list of apples rendered by subviews." />
+<p>The list of apples rendered by subviews.</p>
+</div>
+<p>By using subviews, we reused the template for all of the items
+(apples) and attached a specific event to each of them. Those events are
+smart enough to pass the information about the model to other objects:
+views and collections.</p>
+<p>Just in case, here is the full code for the subviews example, which
+is also available at <a
+href="https://github.com/azat-co/rpjs/blob/master/backbone/subview/index.html">rpjs/backbone/subview/index.html</a>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>  1 &lt;!DOCTYPE&gt;
+  2 &lt;html&gt;
+  3 &lt;head&gt;
+  4   &lt;script src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+  5   &lt;script src=&quot;underscore.js&quot;&gt;&lt;/script&gt;
+  6   &lt;script src=&quot;backbone.js&quot;&gt;&lt;/script&gt;
+  7 
+  8   &lt;script&gt;
+  9    var appleData = [
+ 10       {
+ 11         name: &quot;fuji&quot;,
+ 12         url: &quot;img/fuji.jpg&quot;
+ 13       },
+ 14       {
+ 15         name: &quot;gala&quot;,
+ 16         url: &quot;img/gala.jpg&quot;
+ 17       }
+ 18     ];
+ 19     var app;
+ 20     var router = Backbone.Router.extend({
+ 21       routes: {
+ 22         &quot;&quot;: &quot;home&quot;,
+ 23         &quot;apples/:appleName&quot;: &quot;loadApple&quot;
+ 24       },
+ 25       initialize: function(){
+ 26         var apples = new Apples();
+ 27         apples.reset(appleData);
+ 28         this.homeView = new homeView({collection: apples});
+ 29         this.appleView = new appleView({collection: apples});
+ 30       },
+ 31       home: function(){
+ 32         this.homeView.render();
+ 33       },
+ 34       loadApple: function(appleName){
+ 35         this.appleView.loadApple(appleName);
+ 36 
+ 37       }
+ 38     });
+ 39     var appleItemView = Backbone.View.extend({
+ 40       tagName: &#39;li&#39;,
+ 41       // template: _.template(&#39;&#39;
+ 42       //    +&#39;&lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;&#39;
+ 43       //    +&#39;&lt;%=name%&gt;&#39;
+ 44       //    +&#39;&lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;&#39;),
+ 45       template: _.template(&#39;\
+ 46              &lt;a href=&quot;#apples/&lt;%=name%&gt;&quot; target=&quot;_blank&quot;&gt;\
+ 47             &lt;%=name%&gt;\
+ 48             &lt;/a&gt;&amp;nbsp;&lt;a class=&quot;add-to-cart&quot; href=&quot;#&quot;&gt;buy&lt;/a&gt;\
+ 49             &#39;),
+ 50 
+ 51       events: {
+ 52         &#39;click .add-to-cart&#39;: &#39;addToCart&#39;
+ 53       },
+ 54       render: function() {
+ 55         this.$el.html(this.template(this.model.attributes));
+ 56       },
+ 57       addToCart: function(){
+ 58         this.model.collection.trigger(&#39;addToCart&#39;, this.model);
+ 59       }
+ 60     });
+ 61 
+ 62     var homeView = Backbone.View.extend({
+ 63       el: &#39;body&#39;,
+ 64       listEl: &#39;.apples-list&#39;,
+ 65       cartEl: &#39;.cart-box&#39;,
+ 66       template: _.template(&#39;Apple data: \
+ 67         &lt;ul class=&quot;apples-list&quot;&gt;\
+ 68         &lt;/ul&gt;\
+ 69         &lt;div class=&quot;cart-box&quot;&gt;&lt;/div&gt;&#39;),
+ 70       initialize: function() {
+ 71         this.$el.html(this.template);
+ 72         this.collection.on(&#39;addToCart&#39;, this.showCart, this);
+ 73       },
+ 74       showCart: function(appleModel) {
+ 75         $(this.cartEl).append(appleModel.attributes.name+&#39;&lt;br/&gt;&#39;);
+ 76       },
+ 77       render: function(){
+ 78         view = this; //so we can use view inside of closure
+ 79         this.collection.each(function(apple){
+ 80           var appleSubView = new appleItemView({model:apple});
+ 81           // create subview with model apple
+ 82           appleSubView.render();
+ 83           // compiles tempalte and single apple data
+ 84           $(view.listEl).append(appleSubView.$el);
+ 85           //append jQuery object from
+ 86           //single apple to apples-list DOM element
+ 87         });
+ 88       }
+ 89     });
+ 90 
+ 91     var Apples = Backbone.Collection.extend({
+ 92     });
+ 93 
+ 94     var appleView = Backbone.View.extend({
+ 95       initialize: function(){
+ 96         this.model = new (Backbone.Model.extend({}));
+ 97         this.model.on(&#39;change&#39;, this.render, this);
+ 98         this.on(&#39;spinner&#39;,this.showSpinner, this);
+ 99       },
+100       template: _.template(&#39;&lt;figure&gt;\
+101                 &lt;img src=&quot;&lt;%= attributes.url %&gt;&quot;/&gt;\
+102                 &lt;figcaption&gt;&lt;%= attributes.name %&gt;&lt;/figcaption&gt;\
+103               &lt;/figure&gt;&#39;),
+104       templateSpinner: &#39;&lt;img src=&quot;img/spinner.gif&quot; width=&quot;30&quot;/&gt;&#39;,
+105       loadApple:function(appleName){
+106         this.trigger(&#39;spinner&#39;);
+107         var view = this;
+108         //we&#39;ll need to access that inside of a closure
+109         setTimeout(function(){
+110         //simulates real time lag when fetching data
+111         // from the remote server
+112           view.model.set(view.collection.where({
+113             name:appleName
+114           })[0].attributes);
+115         },1000);
+116       },
+117       render: function(appleName){
+118         var appleHtml = this.template(this.model);
+119         $(&#39;body&#39;).html(appleHtml);
+120       },
+121       showSpinner: function(){
+122         $(&#39;body&#39;).html(this.templateSpinner);
+123       }
+124     });
+125 
+126     $(document).ready(function(){
+127       app = new router;
+128       Backbone.history.start();
+129     })
+130 
+131   &lt;/script&gt;
+132 &lt;/head&gt;
+133 &lt;body&gt;
+134   &lt;div&gt;&lt;/div&gt;
+135 &lt;/body&gt;
+136 &lt;/html&gt;</code></pre>
+</div>
+</div>
+<p>The link to an individual item, e.g.,
+<code>collections/index.html#apples/fuji</code>, also should work
+independently, by typing it in the browser address bar.</p>
+<h3
+id="chap03.xhtml_leanpub-auto-super-simple-backbone-starter-kit"><span
+class="section-number">3.7 </span>Super Simple Backbone Starter Kit</h3>
+<p>To jump-start your Backbone.js development, consider using <a
+href="https://github.com/azat-co/super-simple-backbone-starter-kit">Super
+Simple Backbone Starter Kit</a> by <a href="http://azat.co">Azator</a>,
+or similar projects like:</p>
+<ul>
+<li><a href="http://backboneboilerplate.com/">Backbone
+Boilerplate</a></li>
+<li><a
+href="http://coenraets.org/blog/2012/02/sample-app-with-backbone-js-and-twitter-bootstrap/">Sample
+App with Backbone.js and Twitter Bootstrap</a></li>
+<li>More <a
+href="https://github.com/documentcloud/backbone/wiki/Tutorials%2C-blog-posts-and-example-sites">Backbone.js
+tutorials</a></li>
+</ul>
+<h3 id="chap03.xhtml_leanpub-auto-conclusion-1"><span
+class="section-number">3.8 </span>Conclusion</h3>
+<p>The already-mentioned in this chapter, and reputable <a
+href="https://github.com/addyosmani">Addy’s</a> <a
+href="http://todomvc.com/">TodoMVC</a> resource contains <strong>a
+lot</strong> of browser JavaScript MV* frameworks with tutorials and
+examples. I often get asked “What do you think of X or Y?” The main
+point is not to get into analysis paralysis when choosing a front-end
+framework. Learn the foundation with Backbone.js, just because it’s not
+so bloated and complicated, yet so widely-used and powerful in the right
+hands. Then pick a few newer and shinier libraries (e.g., React.js,
+Angular.js) and see how they fit the particular goals of project at
+hand.</p>
+<p><span id="chap04.xhtml"></span></p>
+<h2
+id="chap04.xhtml_leanpub-auto-nodejs-fundamentals-javascript-on-the-server"><span
+class="section-number">4 </span>Node.js FUNdamentals: JavaScript on The
+Server</h2>
+<p>Node.js is a highly efficient and scalable non-blocking I/O platform
+that was build on top of Google Chrome V8 engine and its ECMAScript.
+This means that most front-end JavaScript (another implementation of
+ECMAScript) objects, functions and methods are available in Node.js.
+Please refer to <a
+href="http://webapplog.com/js-fundamentals/">JavaScript FUNdamentals</a>
+if you need a refresher on JS-specific basics.</p>
+<div class="image-with-caption center">
+<img src="images/node-fun-site.png" />
+</div>
+<p>Developers can install Node.js from its <a
+href="http://nodejs.org">website</a> and follow this overview of main
+Node.js concepts. For more meticulous Node.js instructions, take a look
+at <a href="http://rpjs.co">Rapid Prototyping with JS: Agile JavaScript
+Development</a> and <a href="http://nodeschool.io">Node School</a>.</p>
+<div class="image-with-caption center">
+<img src="images/node-fun-school.png" />
+</div>
+<h3
+id="chap04.xhtml_leanpub-auto-read-eval-print-loop-aka-console-in-nodejs"><span
+class="section-number">4.1 </span>Read-Eval-Print Loop (a.k.a. Console)
+in Node.js</h3>
+<p>Like in many other programming language and platforms, Node.js has a
+read-eval-print loop tool which is opened by <code>$ node</code>
+command. The prompt changes to <code>&gt;</code> and we can execute
+JavaScript akin to Chrome Developer Tools console. There are slight
+deviations in ECMAScript implementations in Node.js and browsers (e.g.,
+<code>{}+{}</code>), but for the most part the results are similar.</p>
+<div class="image-with-caption center">
+<img src="images/node-fun-console.png" />
+</div>
+<p>So as you see, we can write JavaScript in the console all day long,
+but sometime we can to save script so we can run them later.</p>
+<h3 id="chap04.xhtml_leanpub-auto-launching-nodejs-scripts"><span
+class="section-number">4.2 </span>Launching Node.js Scripts</h3>
+<p>To start a Node.js script from a file, simply run
+<code>$ node filename</code>, e.g., <code>$ node program.js</code>. If
+all we need is a quick set of statements, there’s a <code>-e</code>
+option that allow to run inline JavaScript/Node.js, e.g.,
+<code>$ node -e "console.log(new Date());"</code>.</p>
+<h3 id="chap04.xhtml_leanpub-auto-nodejs-process-information"><span
+class="section-number">4.3 </span>Node.js Process Information</h3>
+<p>Each Node.js script that is running is a process in its essence. For
+example, <code>ps aux | grep 'node'</code> will output all Node.js
+programs running on a machine. Conveniently, developers can access
+useful process information in code with <code>process</code> object,
+e.g., <code>node -e "console.log(process.pid)"</code>:</p>
+<div class="image-with-caption center">
+<img src="images/node-fun-process.png"
+alt="Node.js process examples using pid and cwd." />
+<p>Node.js process examples using pid and cwd.</p>
+</div>
+<h3
+id="chap04.xhtml_leanpub-auto-accessing-global-scope-in-nodejs"><span
+class="section-number">4.4 </span>Accessing Global Scope in Node.js</h3>
+<p>As you know from <a href="http://webapplog.com/">JS FUNdamentals</a>,
+browser JavaScript by default puts everything into its global scope.
+This was coined as one of the bad part of JavaScript in Douglas
+Crockford’s famous [JavaScript: The Good Parts]. Node.js was designed to
+behave differently with everything being local by default. In case we
+need to access globals, there is a <code>global</code> object. Likewise,
+when we need to export something, we should do so explicitly.</p>
+<p>In a sense, <code>window</code> object from front-end/browser
+JavaScript metamorphosed into a combination of <code>global</code> and
+<code>process</code> objects. Needless to say, the <code>document</code>
+object that represent DOM of the webpage is nonexistent in Node.js.</p>
+<h3 id="chap04.xhtml_leanpub-auto-exporting-and-importing-modules"><span
+class="section-number">4.5 </span>Exporting and Importing Modules</h3>
+<p>Another <em>bad part</em> in browser JavaScript is that there’s no
+way to include modules. Scripts are supposed to be linked together using
+a different language (HTML) with a lacking dependency management. <a
+href="http://www.commonjs.org/">CommonJS</a> and <a
+href="http://requirejs.org/">RequireJS</a> solve this problem with
+AJAX-y approach. Node.js borrowed many things from the CommonJS
+concept.</p>
+<p>To export an object in Node.js, use
+<code>exports.name = object;</code>, e.g.,</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var messages = {
+ 2   find: function(req, res, next) {
+ 3   ...
+ 4   },
+ 5   add: function(req, res, next) {
+ 6   ...
+ 7   },
+ 8   format: &#39;title | date | author&#39;
+ 9 }
+10 exports.messages = messages;</code></pre>
+</div>
+</div>
+<p>While in the file where we import aforementioned script (assuming the
+path and the file name is <code>route/messages.js</code>):</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var messages = require(&#39;./routes/messages.js&#39;);</code></pre>
+</div>
+</div>
+<p>However, sometime it’s more fitting to invoke a constructor, e.g.,
+when we attach properties to Express.js app (more on Express.js in <a
+href="http://webapplog.com/express-js-fundamentals/">Express.js
+FUNdamentals: An Essential Overview of Express.js</a>). In this case
+<code>module.exports</code> is needed:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 module.exports = function(app) {
+2   app.set(&#39;port&#39;, process.env.PORT || 3000);
+3   app.set(&#39;views&#39;, __dirname + &#39;/views&#39;);
+4   app.set(&#39;view engine&#39;, &#39;jade&#39;);
+5   return app;
+6 }</code></pre>
+</div>
+</div>
+<p>In the file that includes the example module above:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 ...
+2 var app = express();
+3 var config = require(&#39;./config/index.js&#39;);
+4 app = config(app);
+5 ...</code></pre>
+</div>
+</div>
+<p>The more succinct code:
+<code>var = express(); require('./config/index.js')(app);</code>.</p>
+<p>The most common mistake when including modules is a wrong path to the
+file. For core Node.js modules, just use the name without any path,
+e.g., require(‘name’). Same goes for modules in
+<code>node_modules</code> folder. More on that later in the NPM
+section.</p>
+<p>For all other files, use <code>.</code> with or without a file
+extension, e.g.,</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var keys = require(&#39;./keys.js&#39;),
+2   messages = require(&#39;./routes/messages.js&#39;);</code></pre>
+</div>
+</div>
+<p>In addition, for the latter category it’s possible to use a longer
+looking statements with <code>__dirname</code> and
+<code>path.join()</code>, e.g., require(path.join(__dirname, ,’routes’,
+‘messages’));`</p>
+<p>If <code>require()</code> points to a folder, Node.js will attempt to
+read <code>index.js</code> file in that folder.</p>
+<h3
+id="chap04.xhtml_leanpub-auto-buffer-is-a-nodejs-super-data-type"><span
+class="section-number">4.6 </span>Buffer is a Node.js Super Data
+Type</h3>
+<p>Buffer is a Node.js addition to four primitives (boolean, string,
+number and RegExp) and all-encompassing objects (array and functions are
+also objects) in front-end JavaScript. We can think of buffers as
+extremely efficient data stores. In fact, Node.js will try to use
+buffers any time it can, e.g., reading from file system, receiving
+packets over the network.</p>
+<h3 id="chap04.xhtml_leanpub-auto-dirname-vs-processcwd"><span
+class="section-number">4.7 </span>__dirname vs. process.cwd</h3>
+<p><code>__dirname</code> is an absolute path to the file in which this
+global variable was called, while <code>process.cwd</code> is an
+absolute path to the process that runs this script. The latter might not
+be the same as the former if we started the program from a different
+folder, e.g., <code>$ node ./code/program.js</code>.</p>
+<h3 id="chap04.xhtml_leanpub-auto-handy-utilities-in-nodejs"><span
+class="section-number">4.8 </span>Handy Utilities in Node.js</h3>
+<p>Although, the core of the Node.js platform was intentionally kept
+small it has some essential utilities such as</p>
+<ul>
+<li><a href="http://nodejs.org/api/url.html">URL</a></li>
+<li><a href="http://nodejs.org/api/crypto.html">Crypto</a></li>
+<li><a href="http://nodejs.org/api/path.html">Path</a></li>
+<li><a href="http://nodejs.org/api/string_decoder.html">String
+Decoder</a></li>
+</ul>
+<p>The method that we use in this tutorials is <code>path.join</code>
+and it concatenates path using an appropriate folder separator
+(<code>/</code> or <code>\\</code>).</p>
+<h3
+id="chap04.xhtml_leanpub-auto-reading-and-writing-fromto-the-file-system-in-nodejs"><span
+class="section-number">4.9 </span>Reading and Writing from/to The File
+System in Node.js</h3>
+<p>Reading from files is done via the core <code>fs</code> <a
+href="http://nodejs.org/api/fs.html">module</a>. There are two sets of
+methods: async and sync. In most cases developers should use async
+methods, e.g., <a
+href="http://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback">fs.readFile</a>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var fs = require(&#39;fs&#39;);
+2 var path = require(&#39;path&#39;);
+3 fs.readFile(path.join(__dirname, &#39;/data/customers.csv&#39;), {encoding: &#39;utf-8&#39;}, fun\
+4 ction (err, data) {
+5   if (err) throw err;
+6   console.log(data);
+7 });</code></pre>
+</div>
+</div>
+<p>And the writing to the file:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var fs = require(&#39;fs&#39;);
+2 fs.writeFile(&#39;message.txt&#39;, &#39;Hello World!&#39;, function (err) {
+3   if (err) throw err;
+4   console.log(&#39;Writing is done.&#39;);
+5 });</code></pre>
+</div>
+</div>
+<h3 id="chap04.xhtml_leanpub-auto-streaming-data-in-nodejs"><span
+class="section-number">4.10 </span>Streaming Data in Node.js</h3>
+<p>Streaming data is a term that mean an application processes the data
+while it’s still receiving it. This is useful for extra large datasets,
+like video or database migrations.</p>
+<p>Here’s a basic example on using streams that output the binary file
+content back:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var fs = require(&#39;fs&#39;);
+2 fs.createReadStream(&#39;./data/customers.csv&#39;).pipe(process.stdout);</code></pre>
+</div>
+</div>
+<p>By default, Node.js uses buffers for streams.</p>
+<p>For a more immersive training, take a loot at <a
+href="http://npmjs.org/stream-adventure">stream-adventure</a> and <a
+href="https://github.com/substack/stream-handbook">Stream
+Handbook</a>.</p>
+<h3
+id="chap04.xhtml_leanpub-auto-installing-nodejs-modules-with-npm"><span
+class="section-number">4.11 </span>Installing Node.js Modules with
+NPM</h3>
+<p>NPM comes with the Node.js platform and allows for seamless Node.js
+package management. The way <code>npm install</code> work is similar to
+Git in a way how <a
+href="https://npmjs.org/doc/files/npm-folders.html">it traverses the
+working tree to find a current project</a>. For starter, keep in mind
+that we need either the <code>package.json</code> file or the
+<code>node_modules</code> folder, in order to install modules locally
+with <code>$ npm install name</code>, for example
+<code>$ npm install superagent</code>; in the program.js:
+<code>var suparagent = requier('superagent');</code>.</p>
+<p>The best thing about NPM is that it keep all the dependencies local,
+so if module A uses module B v1.3 and module C uses module B v2.0 (with
+breaking changes comparing to v1.3), both A and C will have their own
+localized copies of different versions of B. This proves to be a more
+superior strategy unlike Ruby and other platforms that use global
+installations by default.</p>
+<p>The best practice is <strong>not to include</strong> a
+<code>node_modules</code> folder into Git repository when the project is
+a module that supposed to be use in other application. However, it’s
+recommended <strong>to include</strong> <code>node_modules</code> for
+deployable applications. This prevents a breakage caused by unfortunate
+dependency update.</p>
+<p>Note: The NPM creator like to call it <code>npm</code> (<a
+href="http://npmjs.org/doc/misc/npm-faq.html#Is-it-npm-or-NPM-or-Npm">lowercase</a>).</p>
+<h3
+id="chap04.xhtml_leanpub-auto-hello-world-server-with-http-nodejs-module"><span
+class="section-number">4.12 </span>Hello World Server with HTTP Node.js
+Module</h3>
+<p>Although, Node.js can be use for a wide variety of tasks, it’s mostly
+knows for building web applications. Node.js is thrives in the network
+due to its asynchronous nature and build-in modules such as net and
+http.</p>
+<p>Here’s a quintessential Hello World examples where we create a server
+object, define request handler (function with req and res arguments),
+pass some data back to the recipient and start up the whole thing.</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 var http = require(&#39;http&#39;);
+2 http.createServer(function (req, res) {
+3   res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
+4   res.end(&#39;Hello World\n&#39;);
+5 }).listen(1337, &#39;127.0.0.1&#39;);
+6 console.log(&#39;Server running at http://127.0.0.1:1337/&#39;);]</code></pre>
+</div>
+</div>
+<p>The req and res parameters have all the information about a given
+HTTP request and response correspondingly. In addition, req and res can
+be used as streams (look in the previous section).</p>
+<h3 id="chap04.xhtml_leanpub-auto-debugging-nodejs-programs"><span
+class="section-number">4.13 </span>Debugging Node.js Programs</h3>
+<p>The best debugger is <code>console.log()</code>, but sometime we need
+to see the call stack and orient ourselves in async code a bit more. To
+do that, put <code>debugger</code> statements in your code and use
+<code>$ node debug program.js</code> to start <a
+href="http://nodejs.org/api/debugger.html">the debugging process</a>.
+For more developer-friendly interface, download <a
+href="https://github.com/node-inspector/node-inspector">node
+inspector</a>.</p>
+<h3 id="chap04.xhtml_leanpub-auto-taming-callbacks-in-nodejs"><span
+class="section-number">4.14 </span>Taming Callbacks in Node.js</h3>
+<p><a
+href="https://github.com/maxogden/art-of-node#callbacks">Callbacks</a>
+are able to Node.js code asynchronous, yet programmers unfamiliar with
+JavaScript, who come from Java or PHP, might be surprised when they see
+Node.js code described on <a href="http://callbackhell.com/">Callback
+Hell</a>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 fs.readdir(source, function(err, files) {
+ 2   if (err) {
+ 3     console.log(&#39;Error finding files: &#39; + err)
+ 4   } else {
+ 5     files.forEach(function(filename, fileIndex) {
+ 6       console.log(filename)
+ 7       gm(source + filename).size(function(err, values) {
+ 8         if (err) {
+ 9           console.log(&#39;Error identifying file size: &#39; + err)
+10         } else {
+11           console.log(filename + &#39; : &#39; + values)
+12           aspect = (values.width / values.height)
+13           widths.forEach(function(width, widthIndex) {
+14             height = Math.round(width / aspect)
+15             console.log(&#39;resizing &#39; + filename + &#39;to &#39; + height + &#39;x&#39; + height)
+16             this.resize(width, height).write(destination + &#39;w&#39; + width + &#39;_&#39; + fi\
+17 lename, function(err) {
+18               if (err) console.log(&#39;Error writing file: &#39; + err)
+19             })
+20           }.bind(this))
+21         }
+22       })
+23     })
+24   }
+25 })</code></pre>
+</div>
+</div>
+<p>There’s nothing to be afraid of here as long as two-space indentation
+is used. ;-) However, callback code can be re-write with the use of
+event emitters, promises or by utilizing the async library.</p>
+<h3
+id="chap04.xhtml_leanpub-auto-introduction-to-nodejs-with-ryan-dahl"><span
+class="section-number">4.15 </span>Introduction to Node.js with Ryan
+Dahl</h3>
+<p>Last, but not least, take a few minutes and watch this <a
+href="http://www.youtube.com/embed/jo_B4LTHi3I">Introduction to Node.js
+with Ryan Dahl video</a>.</p>
+<h3 id="chap04.xhtml_leanpub-auto-moving-forward-with-expressjs"><span
+class="section-number">4.16 </span>Moving Forward with Express.js</h3>
+<p>After you’ve mastered Node.js basics in this article, you might want
+to read <a
+href="http://webapplog.com/express-js-fundamentals">Express.js
+FUNdamentals: An Essential Overview of Express.js</a> and consider
+working on <a href="http://webapplog.com/expressworks">an interactive
+class</a> about the Express.js framework which is as of today is the
+most popular module on NPM.</p>
+<div class="image-with-caption center">
+<img src="images/finished.png" />
+</div>
+<p><span id="chap05.xhtml"></span></p>
+<h2
+id="chap05.xhtml_leanpub-auto-expressjs-fundamentals-the-most-popular-nodejs-framework"><span
+class="section-number">5 </span>Express.js FUNdamentals: The Most
+Popular Node.js Framework</h2>
+<p>Express.js is an amazing framework for Node.js projects and used in
+the majority of such web apps. Unfortunately, there’s a lack of
+tutorials and examples on how to write good production-ready code. To
+mitigate this need, we released <a
+href="http://expressjsguide.com">Express.js Guide: The Comprehesive Book
+on Express.js</a>. However, all things start from basics, and for that
+reason we’ll give you a taste of the framework in this post, so you can
+decide if you want to continue the learning further.</p>
+<h3 id="chap05.xhtml_leanpub-auto-expressjs-installation"><span
+class="section-number">5.1 </span>Express.js Installation</h3>
+<p>Assuming you downloaded and installed Node.js (and NPM with it), run
+this command:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 $ sudo npm install -g express@3.4.3</code></pre>
+</div>
+</div>
+<h3
+id="chap05.xhtml_leanpub-auto-expressjs-command-line-interface"><span
+class="section-number">5.2 </span>Express.js Command-Line Interface</h3>
+<p>Now we can use command-line interface (CLI) to spawn new Express.js
+apps:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 $ express -c styl expressfun
+2 $ cd expressfun &amp;&amp; npm install
+3 $ node app</code></pre>
+</div>
+</div>
+<p>Open browser at <a
+href="http://localhost:3000">http://localhost:3000</a>.</p>
+<p>Here is the full code of <code>expressfun/app.js</code> if you don’t
+have time to create an app right now:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code> 1 var express = require(&#39;express&#39;);
+ 2 var routes = require(&#39;./routes&#39;);
+ 3 var user = require(&#39;./routes/user&#39;);
+ 4 var http = require(&#39;http&#39;);
+ 5 var path = require(&#39;path&#39;);
+ 6 
+ 7 var app = express();
+ 8 
+ 9 // all environments
+10 app.set(&#39;port&#39;, process.env.PORT || 3000);
+11 app.set(&#39;views&#39;, __dirname + &#39;/views&#39;);
+12 app.set(&#39;view engine&#39;, &#39;jade&#39;);
+13 app.use(express.favicon());
+14 app.use(express.logger(&#39;dev&#39;));
+15 app.use(express.bodyParser());
+16 app.use(express.methodOverride());
+17 app.use(app.router);
+18 app.use(express.static(path.join(__dirname, &#39;public&#39;)));
+19 
+20 // development only
+21 if (&#39;development&#39; == app.get(&#39;env&#39;)) {
+22   app.use(express.errorHandler());
+23 }
+24 
+25 app.get(&#39;/&#39;, routes.index);
+26 app.get(&#39;/users&#39;, user.list);
+27 
+28 http.createServer(app).listen(app.get(&#39;port&#39;), function(){
+29   console.log(&#39;Express server listening on port &#39; + app.get(&#39;port&#39;));
+30 });</code></pre>
+</div>
+</div>
+<h3 id="chap05.xhtml_leanpub-auto-routes-in-expressjs"><span
+class="section-number">5.3 </span>Routes in Express.js</h3>
+<p>If you open the <code>expressfun/app.js</code>, you’ll see two routes
+in the middle:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 ...
+2 app.get(&#39;/&#39;, routes.index);
+3 app.get(&#39;/users&#39;, user.list);
+4 ...</code></pre>
+</div>
+</div>
+<p>The first one is basically takes care of all the requests to the home
+page, e.g., <code>http://localhost:3000/</code> and the latter of
+requests to <code>/users</code>, such as
+<code>http://localhost:3000/users</code>. Both of the routes process
+URLs case insensitively and in a same manner as with trailing
+slashes.</p>
+<p>The request handler itself (<code>index.js</code> in this case) is
+straightforward: every thing from the HTTP request is in
+<code>req</code> and write results to the response in
+<code>res</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 exports.list = function(req, res){
+2   res.send(&quot;respond with a resource&quot;);
+3 };</code></pre>
+</div>
+</div>
+<h3
+id="chap05.xhtml_leanpub-auto-middleware-as-the-backbone-of-expressjs"><span
+class="section-number">5.4 </span>Middleware as The Backbone of
+Express.js</h3>
+<p>Each line above the routes is a middleware:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 app.use(express.favicon());
+2 app.use(express.logger(&#39;dev&#39;));
+3 app.use(express.bodyParser());
+4 app.use(express.methodOverride());
+5 app.use(app.router);
+6 app.use(express.static(path.join(__dirname, &#39;public&#39;)));</code></pre>
+</div>
+</div>
+<p>The middleware is a pass thru functions that add something useful to
+the request as it travels along each of them, for example
+<code>req.body</code> or <code>req.cookie</code>. For more middleware
+writings check out <a
+href="http://webapplog.com/intro-to-express-js-parameters-error-handling-and-other-middleware/">Intro
+to Express.js: Parameters, Error Handling and Other Middleware</a>.</p>
+<h3
+id="chap05.xhtml_leanpub-auto-configuration-of-an-expressjs-app"><span
+class="section-number">5.5 </span>Configuration of an Express.js
+App</h3>
+<p>Here is how we define configuration in a typical Express.js app:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 app.set(&#39;port&#39;, process.env.PORT || 3000);
+2 app.set(&#39;views&#39;, __dirname + &#39;/views&#39;);
+3 app.set(&#39;view engine&#39;, &#39;jade&#39;);</code></pre>
+</div>
+</div>
+<p>An ordinary settings involves a name (e.g., <code>views</code>) and a
+value (e.g., path to the folder where out templates/views live). There
+are more than one way to define a certain settings, e.g,
+<code>app.enable</code> for boolean flags.</p>
+<h3
+id="chap05.xhtml_leanpub-auto-jade-is-haml-for-expressjsnodejs"><span
+class="section-number">5.6 </span>Jade is Haml for
+Express.js/Node.js</h3>
+<p>Jade template engine is akin to Ruby on Rails’ Haml in the way it
+uses whitespace and indentation, e.g., <code>layout.jade</code>:</p>
+<div class="code-block">
+<div class="highlight">
+<pre class="lineno"><code>1 doctype 5
+2 html
+3   head
+4     title= title
+5     link(rel=&#39;stylesheet&#39;, href=&#39;/stylesheets/style.css&#39;)
+6   body
+7     block content</code></pre>
+</div>
+</div>
+<p>Other than that, it’s possible to utilize full-blown JavaScript code
+inside of Jade templates.</p>
+<h3
+id="chap05.xhtml_leanpub-auto-conclusion-about-the-expressjs-framework"><span
+class="section-number">5.7 </span>Conclusion About The Express.js
+Framework</h3>
+<p>As you’ve seen, it’s effortless to create MVC web apps with
+Express.js. The framework is splendid for REST APIs as well. If you
+interested in them, visit the <a
+href="http://webapplog.com/tutorial-node-js-and-mongodb-json-rest-api-server-with-mongoskin-and-express-js/">Tutorial:
+Node.js and MongoDB JSON REST API server with Mongoskin and
+Express.js</a> and <a
+href="http://webapplog.com/intro-to-express-js-simple-rest-api-app-with-monk-and-mongodb/">Intro
+to Express.js: Simple REST API app with Monk and MongoDB</a>.</p>
+<p>If you want to know what are the other middlewares and
+configurations, check out <a
+href="http://expressjs.com/api.html">Express.js API docs</a>, <a
+href="http://www.senchalabs.org/connect/">Connect docs</a> and of course
+our book â€” <a href="http://expressjsguide.com">Express.js Guide</a>.
+For those who already familiar with some basics of Express.js, I
+recommend going through <a
+href="http://webapplog.com/expressworks">ExpressWorks</a> â€” an
+automated Express.js workshop.</p>
+<h3 id="chap05.xhtml_leanpub-auto-update"><span
+class="section-number">5.8 </span>Update</h3>
+<p>For migrating from Express.js 3.x to 4.x take a look at this guide:
+<a
+href="http://webapplog.com/migrating-express-js-3-x-to-4-x-middleware-route-and-other-changes/">Migrating
+Express.js 3.x to 4.x: Middleware, Route and Other Changes</a>.</p>
+<p><span id="chap06.xhtml"></span></p>
+<h2 id="chap06.xhtml_about-the-author"><span class="section-number">6
+</span>About the Author</h2>
+<div class="image-with-caption center">
+<img src="images/azat.jpg"
+alt="Azat Mardan: A software engineer, author and yogi." />
+<p>Azat Mardan: A software engineer, author and yogi.</p>
+</div>
+<p>Azat Mardan has over 12 years of experience in web, mobile and
+software development. With a Bachelor’s Degree in Informatics and a
+Master of Science in Information Systems Technology degree, Azat
+possesses deep academic knowledge as well as extensive practical
+experience.</p>
+<p>Currently, Azat works as a Senior Software Engineer at <a
+href="http://docusign.com">DocuSign</a>, where his team rebuilds 50
+million user product (DocuSign web app) using the tech stack of Node.js,
+Express.js, Backbone.js, CoffeeScript, Jade, Stylus and Redis.</p>
+<p>Recently, he worked as an engineer at the curated social media news
+aggregator website <a href="http://storify.com">Storify.com</a>
+(acquired by <a href="http://livefyre.com">LiveFyre</a>). Before that,
+Azat worked as a CTO/co-founder at <a
+href="http://www.crunchbase.com/company/gizmo">Gizmo</a> — an enterprise
+cloud platform for mobile marketing campaigns, and he has undertaken the
+prestigious <a href="http://500.co/">500 Startups</a> business
+accelerator program. Previously, he was developing mission-critical
+applications for government agencies in Washington, DC: <a
+href="http://nih.gov">National Institutes of Health</a>, <a
+href="http://ncbi.nlm.nih.gov">National Center for Biotechnology
+Information</a>, <a href="http://fdic.gov">Federal Deposit Insurance
+Corporation</a>, and <a href="http://lockheedmartin.com">Lockheed
+Martin</a>. Azat is a frequent attendee at Bay Area tech meet-ups and
+hackathons (<a href="http://angelhack.com">AngelHack</a>, and was a
+hackathon ’12 finalist with team <a
+href="http://fashionmetric.com">FashionMetric.com</a>).</p>
+<p>In addition, Azat teaches technical classes at <a
+href="http://generalassemb.ly">General Assembly</a> and <a
+href="http://hackreactor.com">Hack Reactor</a>, <a
+href="http://parisoma.com">pariSOMA</a> and <a
+href="http://marakana.com">Marakana</a> (acquired by Twitter) to much
+acclaim.</p>
+<p>In his spare time, he writes about technology on his blog: <a
+href="http://webapplog.com">webAppLog.com</a> which is <a
+href="http://expressjsguide.com/assets/img/expressjs-tutorial.png">number
+one</a> in “express.js tutorial” Google search results. Azat is also the
+author of <a href="http://expressjsguide.com">Express.js Guide</a>, <a
+href="http://rpjs.co">Rapid Prototyping with JS</a> and <a
+href="http://leanpub.com/ohmyjs">Oh My JS</a>.</p>
+<h3 id="chap06.xhtml_leanpub-auto-errata"><span
+class="section-number">6.1 </span>Errata</h3>
+<p>Please help us make this book better by submitting issues via other
+means of communication listed below in the <strong>Contact Us</strong>
+section.</p>
+<h3 id="chap06.xhtml_leanpub-auto-contact-us"><span
+class="section-number">6.2 </span>Contact Us</h3>
+<p>Let’s be friends on the Internet!</p>
+<ul>
+<li>Tweet Node.js question on Twitter: <a
+href="https://twitter.com/azat_co">@azat_co</a></li>
+<li>Follow Azat on Facebook: <a
+href="https://www.facebook.com/profile.php?id=1640484994">facebook.com/profile.php?id=1640484994</a></li>
+<li>GitHub: <a
+href="https://github.com/azat-co">github.com/azat-co</a></li>
+</ul>
+<p><strong>Other Ways to Reach Us</strong></p>
+<ul>
+<li>Email Azat directly: <a href="mailto:hi@azat.co">hi@azat.co</a></li>
+<li>Google Group: <a
+href="mailto:rpjs@googlegroups.com">rpjs@googlegroups.com</a> and <a
+href="https://groups.google.com/forum/#!forum/rpjs">https://groups.google.com/forum/#!forum/rpjs</a></li>
+<li>Blog: <a href="http://webapplog.com">webapplog.com</a></li>
+<li><a href="http://hackhall.com">HackHall</a>: community for hackers,
+hipsters and pirates</li>
+</ul>
+<p><strong>Share on Twitter</strong> with ClickToTweet link: <a
+href="http://clicktotweet.com/HDUx0">http://clicktotweet.com/HDUx0</a>,
+or just click:</p>
+<blockquote>
+<p><a href="http://ctt.ec/VQcEb">“I’ve finished JavaScript and Node.js
+FUNdamentals: A Collection of Essential Basics by @azat_co #nodejs
+https://leanpub.com/jsfun”</a></p>
+</blockquote>

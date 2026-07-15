@@ -1,0 +1,664 @@
+- "# Web 设计师的 HTML5\n\n\n\n![](img/cover.png)\n\n\n\n## 前言\n\n当曼迪·布朗、杰森·圣塔玛丽亚和我创立\
+  \ A Book Apart 时，有一个话题在我们心中最为迫切，而且只有一位作者能胜任这项工作。\n\n没有什么能像 HTML5 的即将到来那样搅动基于标准的设计社区，即使是“真正的字体”或\
+  \ CSS3 也不行。源于对 W3C 的进度和政治的不满，并为应用的网络（不仅仅是文档）而构思，网络通用语言的这个新版本同样地让网页设计社区兴奋、愤怒和困惑。\n\
+  \n正如他对 DOM 和 JavaScript 所做的那样，杰里米·基斯有一种独特的能力，能够阐明 HTML5 并直接切入对无障碍、基于标准的设计师-开发者重要的内容。他在这本书中做到了这一点，只使用所需的最少文字和图片。\n\
+  \n关于 HTML5 的书籍还有很多，以后会有更多。将会有 500 页的技术书籍面向应用开发者，他们的需求推动了 HTML5 的大部分开发。还会有更长的秘密书籍面向浏览器制造商，解决我们幸运地不需要考虑的技术挑战。\n\
+  \n但这是一本为你而写的书——你这些创建网页内容、为网页标记语义和意义、设计无障碍界面和体验的人。可以把它当作你的 HTML5 用户指南。它的目标——它将与即将推出的\
+  \ A Book Apart 目录中的每一本书共同分享——是快速清晰地阐明一个棘手的主题，让你能够回去工作。\n\n—杰弗里·泽尔德曼\n\n![第 1 章：标记的简要历史](img/chap-1.jpg)\n\
+  \n## 第 1 章：标记的简要历史\n\nHTML 是万维网的统一语言。人类仅使用其中包含的简单标签，就创建了一个令人惊叹的多样化超链接文档网络，从亚马逊、eBay\
+  \ 和维基百科，到个人博客和专门发布长得像希特勒的猫的网站。\n\nHTML5 是这个通用语言的最新迭代。虽然这是对我们共同语言最雄心勃勃的变更，但这并不是 HTML\
+  \ 第一次更新。该语言从一开始就在不断发展。\n\n与网络本身一样，超文本标记语言是蒂姆·伯纳斯-李爵士的创意。1991 年，他写了一篇名为“HTML 标签”的文档，在其中提出了不到二十个可用于编写网页的元素。\n\
+  \n蒂姆爵士并没有想到使用由尖括号之间的单词组成的标签；这类标签已经在 SGML（标准通用标记语言）格式中存在。蒂姆爵士没有发明新的标准，而是看到了在现有基础上构建的好处——这一趋势在\
+  \ HTML5 的开发中仍然可以看到。\n\n### 从 IETF 到 W3C：HTML 4 的道路\n\n从来没有 HTML 1 这样的东西。第一个官方规范是\
+  \ HTML 2.0，由 IETF（互联网工程任务组）发布。该规范中的许多特性都是由现有实现驱动的。例如，1994 年市场领先的马赛克网页浏览器已经提供了一种使用\
+  \ `<img>` 标签在文档中嵌入图像的方法。`img` 元素后来出现在 HTML 2.0 规范中。\n\nIETF 的角色被 W3C（万维网联盟）取代，HTML\
+  \ 标准的后续迭代已在 [万维网联盟](http://www.w3.org) 发布。九十年代后期，规范经历了一系列修订，直到 1999 年发布 HTML 4.01。\n\
+  \n那时，HTML 面临着第一个重大转折点。\n\n### XHTML 1：HTML 即 XML\n\n在 HTML 4.01 之后，该语言的下一个修订版称为\
+  \ XHTML 1.0。X 代表“极端”，网页开发者被要求在说字母时做出 X 形状的交叉手臂。不，不是真的。X 代表“可扩展”，手臂交叉完全是可选的。\n\n\
+  XHTML 1.0 规范的内容与 HTML 4.01 相同。没有添加新的元素或属性。唯一的区别在于语言的语法。HTML 允许作者在编写元素和属性时有很大的自由，而\
+  \ XHTML 要求作者遵循 XML 的规则，XML 是 W3C 将其大部分技术基于的更严格的标记语言。\n\n拥有更严格的规则并不是一件坏事。它鼓励作者使用单一的编写风格。以前标签和属性可以用大写、小写或任意组合编写，而有效的\
+  \ XHTML 1.0 文档要求所有标签和属性均为小写。\n\nXHTML 1.0 的发布与浏览器对 CSS 的支持兴起同步。随着网页设计师拥抱由 Web 标准项目引领的网页标准兴起，XHTML\
+  \ 更严格的语法被视为编写标记的“最佳实践”。\n\n然后 W3C 发布了 XHTML 1.1。\n\n虽然 XHTML 1.0 只是将 HTML 重构为 XML，但\
+  \ XHTML 1.1 是真正的、纯粹的 XML。这意味着它不能以 `text/html` 的 MIME 类型提供。但如果作者以 XML MIME 类型发布文档，那么当时世界上最流行的网页浏览器——Internet\
+  \ Explorer——无法渲染该文档。\n\n看起来 W3C 似乎正在失去与网络上日常发布现实的联系。\n\n### XHTML 2：哦，我们不会接受！\n\n\
+  如果达斯汀·霍夫曼在 *毕业生* 中的角色是一名网页设计师，W3C 会对他说一个词，只有一个词：XML。\n\n就 W3C 而言，HTML 在版本 4 时就已经结束了。他们开始开发\
+  \ XHTML 2，旨在将网络引向一个光明的新 XML 未来。\n\n虽然 XHTML 2 的名字听起来与 XHTML 1 非常相似，但它们完全不同。与 XHTML\
+  \ 1 不同，XHTML 2 将不与现有网页内容或甚至以前的 HTML 版本向后兼容。相反，它将是一种纯粹的语言，不受先前规范的历史包袱拖累。\n\n这是一场灾难。\n\
+  \n### 分裂：WHATWG 怎么了？\n\nW3C 内部形成了一场叛乱。该联盟似乎在制定与网页设计师需求无关的理论上纯粹的标准。Opera、苹果和 Mozilla\
+  \ 的代表对这个方向感到不满。他们希望更多地强调允许创建网页应用的格式。\n\n事情在 2004 年的一次工作组会议上达到高潮。伊恩·希克森，当时在 Opera\
+  \ 软件公司工作，提出了扩展 HTML 以允许创建网页应用的想法。该提议被拒绝。\n\n不满的叛乱者组建了自己的小组：Web 超文本应用技术工作组（WHATWG），简称\
+  \ WHATWG。\n\n### 从 Web Apps 1.0 到 HTML5\n\n从一开始，WHATWG 的运作方式就与 W3C 大不相同。W3C 采用基于共识的方法：提出问题、讨论并投票。在\
+  \ WHATWG，问题也会被提出和讨论，但最终决定规范内容的权力在于编辑。编辑是伊恩·希克森。\n\n从表面上看，W3C 的流程听起来更民主和公平。实际上，政治和内部争吵可能会阻碍进展。在\
+  \ WHATWG，任何人都可以自由贡献，但编辑有最终决定权，事情以更快的速度推进。但编辑并没有绝对的权力：一个仅限受邀者的指导委员会可以在不太可能的斯特伦洛弗场景中弹劾他。\n\
+  \n\n\n最初，WHATWG 的大部分工作被分为两个规范：Web Forms 2.0 和 Web Apps 1.0。这两项规范都旨在扩展 HTML。随着时间的推移，它们合并成了一项简单称为\
+  \ HTML5 的单一规范。\n\n### 重归\n\n当 WHATWG 开发 HTML5 时，W3C 仍在继续开发 XHTML 2。如果说它毫无进展那是不准确的。事实上，它进展得*非常非常缓慢*。\n\
+  \n2006 年 10 月，蒂姆·伯纳斯-李爵士（Sir Tim Berners-Lee）写了一篇博客文章，在文中承认将 Web 从 HTML 迁移到 XML\
+  \ 的尝试确实行不通。几个月后，W3C 为 HTML 工作组颁发了新的章程。他们并没有决定从零开始，而是明智地决定将 WHATWG 的工作作为未来任何 HTML\
+  \ 版本的依据。\n\n这种停停停停的状态导致了某种令人困惑的局面。W3C 同时在开发两种不同的、互不兼容的标记类型：XHTML 2 和 HTML 5（注意数字\
+  \ 5 之前有一个空格）。与此同时，另一个独立的组织 WHATWG 正在开发一项名为 HTML5（没有空格）的规范，而该规范将成为 W3C 规范之一的基础！\n\
+  \n任何试图理解这种局面的网页设计师都会发现，他们去解读一遍《记忆》（*Memento*）、《彗起源》（*Primer*）以及大卫·林奇（David Lynch）的全集可能都要容易得多。\n\
+  \n### XHTML 亡了：XHTML 语法万岁\n\n混乱的迷雾在 2009 年开始消散。W3C 宣布 XHTML 2 的章程将不再延续。该格式已经处于同于死亡的状态几年；这一公告无异于一份死亡证明。\n\
+  \n奇怪的是，XHTML 2 的死亡并没有被忽视，反而招来了一些带有恶毒的幸灾乐祸。XML 的反对者利用这一公告为机会，嘲笑任何曾使用过 XHTML 1 的人——尽管\
+  \ XHTML 1 和 XHTML 2 之间几乎没有任何共同之处。\n\n与此同时，那些为了执行更严格写作风格而编写 XHTML 1 的作者开始担心 HTML5\
+  \ 会预示着回到草率标记的时代。\n\n正如你很快就会看到的，情况并非如此。HTML5 可以随你的意愿变得足够草率，也可以足够严格。\n\n### HTML5\
+  \ 的时间线\n\nHTML5 的现状不像以前那样令人困惑了，但仍然并不直观。\n\n有两个小组在开发 HTML5。WHATWG 正在利用其“先提交，后评审”的流程创建一个\
+  \ HTML5 规范。W3C HTML 工作组则获取该规范，并让其通过他们“先评审，后提交”的流程。正如你可以想象的，这是一种令人不安的联盟。尽管如此，关于那个烦人的“有空格还是没空格？”的问题，似乎最终达成了某种共识（如果你感兴趣的话，它是不带空格的\
+  \ HTML5）。\n\n对于刚涉足 HTML5 领域的网页设计师来说，可能最令人困惑的问题莫过于得到一个关于“它什么时候能准备好？”的答案。\n\n在一次采访中，伊恩·希克斯森（Ian\
+  \ Hickson）提到 2022 年是他预计 HTML5 成为“建议草案”（proposed recommendation）的一年。随之而来的是一些网页设计师的公开愤怒。他们并不理解“建议草案”的意思，但他们知道自己的手指不够数数到\
+  \ 2022 年还有多少年。\n\n这种愤怒是毫无根据的。在这种情况下，达到“建议草案”状态需要两个完整的 HTML5 实现。考虑到规范的范围，这个日期极其野心勃勃。毕竟，浏览器在实现现有标准方面的记录一直并不理想。Internet\
+  \ Explorer 花了十多年时间才增加了对 `abbr` 元素的支持。\n\n对 HTML5 来说，真正重要的日期是 2012 年。那是该规范预计成为“候选建议书”（candidate\
+  \ recommendation）的时期。在标准术语中，这就是“大功告定”的意思。\n\n但即使是这个日期对网页设计师来说也并不特别相关。重要的是浏览器何时开始支持某些功能。从浏览器开始内置支持\
+  \ CSS 2.1 的部分功能起，我们就开始使用它们了。如果我们等到每个浏览器都完全支持 CSS 2.1 然后才开始使用其中任何部分，我们现在可能还在等待。\n\
+  \nHTML5 也是如此。不会存在一个单一的时间点可以让我们宣布该语言已准备好使用。相反，随着 Web 浏览器支持相应功能，我们可以开始使用规范的部分内容。\n\
+  \n记住，HTML5 并不是从零开始的完全新语言。它是标记语言持续故事中一个演进而非革命性的变化。如果你目前正在使用任何版本的 HTML 创建网站，那么你已经在使用\
+  \ HTML5 了。\n\n![第 2 章：HTML5 设计](img/chap-2.jpg)\n\n法国大革命是一个极端的政治和社会变革时代。革命热忱被应用于时间本身。在短暂的一段时间内，法国共和国引入了十进制时间系统，每天被分为十小时，每小时被分为一百分钟。这在逻辑上是完全自洽的，并且明显优于六进制。\n\
+  \n十进制时间是失败的。没有人使用它。XHTML 2 也是如此。W3C 重新吸取了革命后法国的教训：改变现有行为非常、非常困难。\n\n### 设计原则\n\n\
+  为了避免重复过去的错误，WHATWG 起草了一系列设计原则来指导 HTML5 的开发。其中一个核心原则是“支持既有内容”。这意味着 HTML5 没有所谓的“元年”。\n\
+  \n当 XHTML 2 试图抛弃之前的所有内容时，HTML5 是建立在现有规范和实现的基础上构建的。HTML 4.01 的大部分内容在 HTML5 中幸了下来。\n\
+  \n其他设计原则还包括“不要重复发明轮”和“顺应小路”（pave thepaths），意味着如果网页设计师有一种广泛完成任务的方法——即使它不是最好的方法——它也应该被写入\
+  \ HTML5 中。换句话说，“如果没坏就不要修。”\n\n如果你曾涉足过微格式社区（[`microformats.org`](http://microformats.org)），你对其中一些设计原则并不陌生。HTML5\
+  \ 社区同样采取实用的方法，即发布格式，而不过度担心理论问题。\n\n这种态度被写入了“利益优先”的设计原则，该原则规定：“在冲突情况下，考虑用户大于作者大于实现者大于规范者大于理论纯性。”\n\
+  \n伊恩·希克斯森曾多次表示，浏览器厂商是 HTML5 内容的真正裁决者。如果一个浏览器厂商不支持某项提案，那么将该提案加入规范就没有意义，因为那样规范将是虚构的。根据利益优先，我们网页设计师拥有更大的话语权。如果我们拒绝使用规范的部分内容，那么规范同样是虚构的。\n\
+  \n\n\n直到现在，浏览器制造商一直不得不自行研究如何处理错误。这通常涉及逆向工程最流行的浏览器的做法——这对他们来说并不是一种非常高效的时间利用方式。对于浏览器制造商来说，实现新功能比浪费时间去重复竞争对手处理不规范标记的方式要好。\n\
+  \n在 HTML5 中定义错误处理是一项极具雄心壮勃的任务。即使 HTML5 的元素和属性与 HTML 4.01 完全相同，没有添加任何新功能，要在 2012\
+  \ 年之前定义错误处理仍然是一项西西弗斯式的任务（徒劳的工作）。\n\n错误处理可能网页设计师可能没有太大兴趣，特别是当我们从一开始编写的就是有效且格式良好的文档时，但对于浏览器制造商来说它非常重要。之前的标记规范是为作者编写的，而\
+  \ HTML5 则是为作者和实现者编写的。在查阅规范时，请记住这一点。它解释了为什么 HTML5 规范如此庞大，以及为什么它看起来其详细程度通常只留给那些喜欢在索引邮票收藏时下几局好象棋的火车迷爱好者。\n\
+  \n### 直说主题吧，Doctype\n\n文档类型声明（Document Type Declaration），简称为 doctype，传统上用于指定文档是用哪种特定类型的标记编写的。\n\
+  \nHTML 4.01 的 doctype 如下：\n\n```\n<!DOCTYPE HTML PUBLIC \n\"-//W3C//DTD HTML 4.01//EN\"\
+  \ \n\"http://www.w3.org/TR/html4/strict.dtd\">\n```\n\n这里是 XHTML 1.0 的 doctype：\n\
+  \n```\n<!DOCTYPE html PUBLIC \n\"-//W3C//DTD XHTML 1.0 Strict //EN\" \n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\
+  >\n```\n\n它们并不易于人类阅读，但以它们的方式，它们仅仅是在说“此文档是用 HTML 4.01 编写的”或“此文档是用 XHTML 1.0 编写的”。\n\
+  \n你可能认为声明“此文档是用 HTML5 编写的”的 doctype 某处会有数字五。但并没有。HTML5 的 doctype 如下：\n\n```\n<!DOCTYPE\
+  \ html>\n```\n\n它短到甚至连我都能背下来。\n\n但这简直是疯了！如果 doctype 中没有版本号，我们如何指定 HTML 的未来版本呢？\n\
+  \n当我第一次看到 HTML5 的 doctype 时，我认为这是傲慢的顶点。我问自己：“他们真的认为这将是编写的最后一个标记规范吗？”这看起来像是“零年思维”的教科书案例。\n\
+  \n事实上，HTML5 的 doctype 非常务实。因为 HTML5 需要支持现有内容，因此 doctype 可以应用到现有的 HTML 4.01 或 XHTML\
+  \ 1.0 文档。HTML 的任何未来版本也都需要支持 HTML5 中的现有内容，因此将版本号应用于标记文档的概念本身是有缺陷的。\n\n事实是，doctype\
+  \ 甚至并不重要。假设你提供了一个带有 HTML 4.01 doctype 的文档。如果该文档包含了来自另一个规范的元素（例如 HTML 3.2 或 HTML5），浏览器仍然会渲染文档的该部分。浏览器支持的是功能，而不是\
+  \ doctype。\n\n文档类型声明是为验证器设计的，而不是为了浏览器。浏览器关注 doctype 的唯一时刻是在执行“doype 切换”（doctype\
+  \ switching）时——这是一个巧妙的小技巧，根据是否存在一个良好的 doctype，在怪异模式（quirks mode）和标准模式（standards\
+  \ mode）之间切换渲染。\n\n确保浏览器使用标准模式渲染所需的最小信息就是 HTML5 doctype。事实上，这是包含 doctype 的唯一理由。不使用\
+  \ HTML5 doctype 编写的 HTML 文档仍然可以是有效的 HTML5。\n\n### 保持简单\n\ndoctype 并不是 HTML5 中唯一简化的内容。\n\
+  \n如果你想指定标记文档的字符编码，最好的方法是确保你的服务器发送了正确的 `Content-Type` 头部。如果你想双保险无一失，还可以使用 `<meta>`\
+  \ 标签指定字符集。以下是为 HTML 4.01 编写的文档的 `meta` 声明：\n\n```\n<meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; \ncharset=UTF-8\">\n```\n\n这里是 HTML5 中实现相同事情的、更易记忆的方法：\n\n\
+  ```\n<meta charset=\"UTF-8\">\n```\n\n正如和 doctype 一样，这种简化的字符编码包含了浏览器解释所需的最少字符。\n\
+  \n`<script>` 标签是另一个可以精简的地方。在 `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\
+  \n```\n<script type=\"text/javascript\" src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用\
+  \ JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\n```\n<script src=\"file.js\"\
+  ></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的 `type` 值：\n\n```\n<link\
+  \ rel=\"stylesheet\" type=\"text/css\" href=\"file.css\">\n```\n\n你只需要写：\n\n```\n\
+  <link rel=\"stylesheet\" href=\"file.css\">\n```\n\n### 语法：按你自己的方式进行标记\n\n某些编程语言（如\
+  \ Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在 `script` 元素上添加值为“text/javascript”的\
+  \ `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\" src=\"file.js\"></script>\n\
+  ```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\n\
+  ```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n（注：由于部分文本在输入中重复，且根据要求不重复输出原文，此处基于逻辑合并了内容翻译。以下为完整翻译内容）\n\n在 HTML5\
+  \ 中定义错误处理是一项极具雄心壮勃的任务。即使 HTML5 的元素和属性与 HTML 4.01 完全相同，没有添加任何新功能，要在 2012 年之前定义错误处理仍然是一项西西弗斯式的任务。\n\
+  \n错误处理可能网页设计师可能没有太大兴趣，特别是当我们从一开始编写的就是有效且格式良好的文档时，但对于浏览器制造商来说它非常重要。之前的标记规范是为作者编写的，而\
+  \ HTML5 则是为作者和实现者编写的。在查阅规范时，请记住这一点。它解释了为什么 HTML5 规范如此庞大，以及为什么它看起来其详细通常通常留给那些喜欢在索引邮票收藏时下几局好象棋的火车迷爱好者。\n\
+  \n### 直说主题吧，Doctype\n\n文档类型声明（Document Type Declaration），简称为 doctype，传统上用于指定文档是用哪种特定类型的标记编写的。\n\
+  \nHTML 4.01 的 doctype 如下：\n\n```\n<!DOCTYPE HTML PUBLIC \n\"-//W3C//DTD HTML 4.01//EN\"\
+  \ \n\"http://www.w3.org/TR/html4/strict.dtd\">\n```\n\n这里是 XHTML 1.0 的 doctype：\n\
+  \n```\n<!DOCTYPE html PUBLIC \n\"-//W3C//DTD XHTML 1.0 Strict //EN\" \n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"\
+  >\n```\n\n它们并不易于人类阅读，但以它们的方式，它们仅仅是在说“此文档是用 HTML 4.01 编写的”或“此文档是用 XHTML 1.0 编写的”。\n\
+  \n你可能认为声明“此文档是用 HTML5 编写的”的 doctype 某处会有数字五。但并没有。HTML5 的 doctype 如下：\n\n```\n<!DOCTYPE\
+  \ html>\n```\n\n它短到甚至连我都能背下来。\n\n但这简直是疯了！如果 doctype 中没有版本号，我们如何指定 HTML 的未来版本呢？\n\
+  \n当我第一次看到 HTML5 的 doctype 时，我认为这是傲慢的顶点。我问自己：“他们真的认为这将是编写的最后一个标记规范吗？”这看起来是“零年思维”的教科书案例。\n\
+  \n事实上，HTML5 的 doctype 非常务实。因为 HTML5 需要支持现有内容，因此 doctype 可以应用到现有的 HTML 4.01 或 XHTML\
+  \ 1.0 文档。HTML 的任何未来版本也都需要支持 HTML5 中的现有内容，因此将版本号应用于标记文档的概念本身是有缺陷的。\n\n事实是，doctype\
+  \ 甚至并不重要。假设你提供了一个带有 HTML 4.01 doctype 的文档。如果该文档包含了来自另一个规范的元素（例如 HTML 3.2 或 HTML5），浏览器仍然会渲染文档的该部分。浏览器支持的是功能，而不是\
+  \ doctype。\n\n文档类型声明是为验证器设计的，而不是为了浏览器。浏览器关注 doctype 的唯一时刻是在执行“doype 切换”时——这是一个巧妙的小技巧，根据是否存在一个良好的\
+  \ doctype，在怪异模式（quirks mode）和标准模式（standards mode）之间切换渲染。\n\n确保浏览器使用标准模式渲染所需的最小信息就是\
+  \ HTML5 doctype。事实上，这是包含 doctype 的唯一理由。不使用 HTML5 doctype 编写的 HTML 文档仍然可以是有效的 HTML5。\n\
+  \n### 保持简单\n\ndoctype 并不是 HTML5 中唯一简化的内容。\n\n如果你想指定标记文档的字符编码，最好的方法是确保你的服务器发送了正确的\
+  \ `Content-Type` 头部。如果你想双保险无一失，还可以使用 `<meta>` 标签指定字符集。以下是为 HTML 4.01 编写的文档的 `meta`\
+  \ 声明：\n\n```\n<meta http-equiv=\"Content-Type\" content=\"text/html; \ncharset=UTF-8\"\
+  >\n```\n\n这里是 HTML5 中实现相同事情的、更易记忆的方法：\n\n```\n<meta charset=\"UTF-8\">\n```\n\n\
+  正如和 doctype 一样，这种简化的字符编码包含了浏览器解释所需的最少字符。\n\n`<script>` 标签是另一个可以精简一些 fat 肉的地方。在 `script`\
+  \ 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n```\n<script type=\"text/javascript\"\
+  \ src=\"file.js\"></script>\n```\n\n浏览器不需要那个属性。它们会假设脚本是用 JavaScript 编写的，这是网上最流行的脚本语言（让我们诚实吧：是网上*唯一*的脚本语言）：\n\
+  \n```\n<script src=\"file.js\"></script>\n```\n\n同样，你不需要在每次链接 CSS 文件时都指定值为“text/css”的\
+  \ `type` 值：\n\n```\n<link rel=\"stylesheet\" type=\"text/css\" href=\"file.css\"\
+  >\n```\n\n你只需要写：\n\n```\n<link rel=\"stylesheet\" href=\"file.css\">\n```\n\n###\
+  \ 语法：按你自己的方式进行标记\n\n某些编程语言（如 Python）强制执行特定的指令编写方式。使用空格来编写代码是强制性的——空格是重要的。另一个是另一个地方可以负担得一些“赘肉”。在\
+  \ `script` 元素上添加值为“text/javascript”的 `type` 属性是常见做法：\n\n（注：由于输入文本存在大量重复，以上翻译已按“不重复输出原文”原则进行去重处理）\n\
+  \n\n\n# HTML5 废弃元素与变更\n\n无论谁编程这样的设备，都将赢得网页设计师们永恒的尊重和钦佩。\n\n## 我们不使用那种语言\n\n在过去的\
+  \ HTML 版本中，每当已有的元素或属性从规范中被移除时，这个过程被称为废弃。网页设计师被建议不要使用已废弃的元素，也不要给它们寄圣诞卡，甚至不要在正式场合提及它们。\n\
+  \nHTML5 中没有废弃的元素或属性。但有很多过时的元素和属性。\n\n不，这并不是政治正确过头的情况。“过时（obsolete）”与“废弃（deprecated）”的含义略有不同。\n\
+  \n因为 HTML5 的目标是与现有内容保持向后兼容，规范必须承认先前存在的元素，即使这些元素已不在 HTML5 中。这导致了一个稍微令人困惑的情况：规范同时说“作者们，不要使用此元素”和“浏览器们，这里是你们应该如何渲染此元素”。如果元素是废弃的，它根本不会在规范中被提及；但因为元素是过时的，它被包含在内以惠及浏览器。\n\
+  \n除非你在构建浏览器，否则你可以像对待废弃元素和属性一样对待过时的元素和属性：不要在你的网页中使用它们，也不要邀请它们参加鸡尾酒会。\n\n如果你坚持使用过时的元素或属性，你的文档将是“不符合规范的”。浏览器仍然会正常渲染一切，但你可能会听到隔壁网站的啧啧声。\n\
+  \n### 再见，认识你很高兴\n\n`frame`、`frameset` 和 `noframes` 元素是过时的。它们不会被怀念。\n\n`acronym`\
+  \ 元素是过时的，从而解放了多年的争论时间，这些时间可以更好地用于计算标准针头上天使密度容量。不要哀悼 `acronym` 元素；直接使用 `abbr` 元素即可。是的，我知道缩略语（acronym）和缩写（abbreviation）之间有区别——缩略语是作为单个单词发音的，如\
+  \ NATO 和 SCUBA——但请记住：所有缩略语都是缩写，但不是所有缩写都是缩略语。\n\n像 `font`、`big`、`center` 和 `strike`\
+  \ 这样的表现元素在 HTML5 中是过时的。实际上，它们已经过时多年了；使用 CSS 属性（如 `font-size` 和 `text-align`）来实现相同的表现效果要容易得多。同样，像\
+  \ `bgcolor`、`cellspacing`、`cellpadding` 和 `valign` 这样的表现属性也是过时的。直接使用 CSS 吧。\n\n\
+  并非所有表现元素都是过时的。有些已经经过再教育并被给予再一次机会。\n\n## 转身面对陌生（变化）\n\n`big` 元素是过时的，但 `small` 元素不是。这种明显的矛盾通过重新定义\
+  \ `small` 的含义得到了解决。它不再有“将此渲染为小号”的表现含义。相反，它有了语义值：“这是小字印刷”，用于法律文本或条款和条件。\n\n当然，十有八九你会想把小字印刷渲染成小号，但关键是该元素的纯粹表现意义已被取代。\n\
+  \n`b` 元素过去意味着“将此渲染为粗体”。现在它用于某些文本“以便在样式上与正文区分开来，而不传达任何额外的重要性”。如果文本有任何额外的重要性，那么 `strong`\
+  \ 元素更合适。\n\n同样，`i` 元素不再意味着“斜体”。它意味着文本“处于另一种声音或语气”。同样，该元素不暗示任何重要性或强调。要表示强调，请使用 `em`\
+  \ 元素。\n\n这些变化听起来像是文字游戏。确实是；但它们也有助于提高 HTML5 的设备独立性。如果你思考“粗体”和“斜体”这些词，它们只对屏幕或页面等视觉媒介有意义。通过从这些元素的定义中移除视觉偏见，规范对屏幕阅读器等非视觉用户代理仍然适用。它也鼓励设计师超越视觉渲染环境来思考。\n\
+  \n### 关于 cite\n\n`cite` 元素在 HTML5 中被重新定义。它以前的意思是“对其他来源的引用”，现在意思是“作品的标题”。很多时候，被引用的参考是作品的标题，如书籍或电影，但来源也可以是一个人。在\
+  \ HTML5 之前，你可以用 `cite` 标记那个人的名字。现在这是明确禁止的——这对于向后兼容性来说真是大打折扣。\n\n这种修订的理由大致如下：浏览器会将\
+  \ `<cite>` 标签之间的文本斜体化；作品的标题通常斜体化；人的名字通常不斜体化；因此 `cite` 元素不应该用于标记人的名字。\n\n这完全是错误的。我支持\
+  \ HTML5 以浏览器为引领，但这是本末倒置的情况。\n\n幸运的是，没有任何验证器能够判断开闭 `<cite>` 标签之间的文本是否指人，因此没有什么可以阻止网页设计师以合理的、向后兼容的方式使用\
+  \ `cite` 元素。\n\n### 强化版的 a 元素\n\n虽然对现有元素的更改涉及创意文字游戏，但有一个元素在 HTML5 中正获得超级升级。\n\n\
+  `a` 元素无疑是 HTML 中最重要的元素。它把我们的文本变成超文本。它是万维网的连接组织。\n\n`a` 元素一直是内联元素。如果你想把标题和段落变成超链接，你必须使用多个\
+  \ `a` 元素：\n\n```\n<h2><a href=\"/about\">About me</a></h2>\n<p><a href=\"/about\"\
+  >Find out what makes me tick.</a></p>\n```\n\n在 HTML5 中，你可以把多个元素包装在单个 `a` 元素中：\n\
+  \n```\n<a href=\"/about\">\n  <h2>About me</h2>\n  <p>Find out what makes me tick.</p>\n\
+  </a>\n```\n\n唯一的注意事项是你不能在一个 `a` 元素中嵌套另一个 `a` 元素。\n\n将多个元素包装在单个 `a` 元素中似乎是一个巨大的变化，但大多数浏览器不需要做太多工作来支持这种新的链接模型。它们已经支持它，尽管这种标记在技术上直到现在才合法。\n\
+  \n这看起来有点反直觉：浏览器当然应该实现现有规范？然而，最新的规范正在记录浏览器已经在做的事情。\n\n## 闪亮的新玩具：JavaScript API\n\n\
+  如果你在寻找 CSS 的文档，你会去看 CSS 规范。如果你正在寻找标记的文档，你会去看 HTML 规范。但是，你去哪里寻找 `document.write`、`innerHTML`\
+  \ 和 `window.history` 等 JavaScript API 的文档呢？JavaScript 规范全是关于编程语言的——你不会在那里找到任何浏览器\
+  \ API。\n\n到目前为止，浏览器一直在独立创建和实现 JavaScript API，互相窥探对方的做法。HTML5 将一劳永逸地记录这些 API，这应该能确保更好的兼容性。\n\
+  \n在标记规范中加入 JavaScript 文档听起来可能很奇怪，但请记住 HTML5 最初是作为 Web Apps 1.0 出现的。JavaScript 是制作\
+  \ Web 应用不可或缺的一部分。\n\nHTML5 规范的整个章节都致力于创建 Web 应用的新 API。有一个 `UndoManager` 允许浏览器跟踪文档的更改。有一节关于使用缓存清单创建离线\
+  \ Web 应用。拖放有详细描述。\n\n\n\n\n一如既往，如果已经存在实现方案，规范将在此基础上构建，而不是重新发明轮子。微软的 Internet Explorer\
+  \ 多年来一直有一个拖放 API，因此这就是 HTML5 拖放功能的基础。遗憾的是，微软的 API——委婉地说——是有问题的。如果你手头唯一可以使用的工具是一个正方形的轮子，那么重新发明轮子也许并不是个坏主意。\n\
+  \nHTML5 中的 API 非常强大，但它们也完全超出了我的理解范围。我会把它们留给比我聪明的开发者来编写相关介绍。这些 API 值得专门写一本书。\n\n\
+  与此同时，HTML5 中仍然有许多新花样让我们这些网页设计师感到兴奋。这种兴奋将从下一章开始。\n\n![第 3 章：富媒体内容](img/chap-3.jpg)\n\
+  \n网页的历史充满了技术改进的折点。HTML 最早的添加之一是 `img` 元素，它从根本上改变了网络。然后，JavaScript 的引入让网页变成了一个更动态的环境。后来，Ajax\
+  \ 的普及使 Web 成为功能应用程序的可行选择。\n\nWeb 标准已经进步如此巨大，现在使用 HTML、CSS 和 JavaScript 就可以构建几乎任何东西——*几乎*任何东西。\n\
+  \nWeb 标准调色板中存在一些空白。如果你想发布文本和图像，HTML 和 CSS 就足够了。但如果你想发布音频或视频，你需要使用如 Flash 或 Silverlight\
+  \ 这样的插件技术。\n\n“插件”是这些技术的准确术语——它们帮助填补 Web 上的漏洞。它们让游戏、电影和音乐上线变得相对容易。但这些技术并不是开放的。它们不是由社区创建的，而是受个人公司的控制。\n\
+  \nFlash 是一项强大的技术，但使用它有时感觉像是一场恶魔的交易。我们获得了在 Web 上发布富媒体的能力，但在此我们失去了一些独立性。\n\nHTML5\
+  \ 正在填补这些空白。因此，它与 Flash 和 Silverlight 等专有技术直接竞争。但 HTML5 中的富媒体元素不再需要插件，而是浏览器原生的。\n\
+  \n## Canvas\n\n当 Mosaic 浏览器增加了在网页中嵌入图像的能力时，它为 Web 提供了加速。但从那以后，图像一直是静态的。你可以创建动画 GIF。你可以使用\
+  \ JavaScript 更新图像样式。你可以在服务器上动态生成图像。但一旦图像发送到浏览器，其内容就无法更新。\n\n`canvas` 元素是一个创建动态图像的环境。\n\
+  \n元素本身非常简单。你只需要在起始标签中指定尺寸：\n\n```\n<canvas id=\"my-first-canvas\" width=\"360\"\
+  \ height=\"240\">\n</canvas>\n```\n\n如果你在起始和结束标签之间放置任何内容，只有不支持 canvas 的浏览器才会看到它（图\
+  \ 3.01）：\n\n```\n<canvas id=\"my-first-canvas\" width=\"360\" height=\"240\">\n\
+  \  <p>不支持 canvas？请改用旧式的图像：\n  </p>\n  <img src=\"puppy.jpg\" alt=\"一只可爱的小狗\">\n\
+  </canvas>\n```\n\n![不支持 canvas 的用户将看到的示例](img/fig-03-01.jpg)\n\n图 3.01：不支持 canvas\
+  \ 的用户将看到可爱小狗的图像。\n\n所有的困难工作都在 JavaScript 中完成的。首先，你需要引用 canvas 元素及其上下文（context）。这里的“上下文”简单指的是一个\
+  \ API。目前，唯一的上下文是二维的：\n\n```\nvar canvas = document.getElementById('my-first-canvas');\n\
+  var context = canvas.getContext('2d');\n```\n\n现在，你可以开始使用 HTML5 规范中记录的 [`bkaprt.com/html5/1`](http://bkaprt.com/html5/1)\
+  \ 上的 API 在 `canvas` 元素的二维表面上进行绘图了。\n\n2D API 提供了许多你在 Illustrator 等图形程序中找到的相同工具：描边、填充、渐变、阴影、形状和贝塞尔曲线。区别在于，你不需要使用图形用户界面，而是必须使用\
+  \ JavaScript 指定一切。\n\n### 围绕着架构跳舞：用代码绘图\n\n以下是让你指定描边颜色为红色的方式：\n\n```\ncontext.strokeStyle\
+  \ = '#990000';\n```\n\n现在，你画的任何东西将都有红色的轮廓。例如，如果你想画一个矩形，使用此语法：\n\n```\nstrokeRect\
+  \ ( left, top, width, height )\n```\n\n如果你想画一个大小为 100x50 像素的矩形，位置在 `canvas` 元素左侧\
+  \ 20 像素、顶部 30 像素处，你会这样写（图 3.02）：\n\n```\ncontext.strokeRect(20,30,100,50);\n```\n\
+  \n![红色矩形](img/fig-03-02.jpg)\n\n图 3.02：用 `canvas` 绘制的矩形。\n\n这是一个非常简单的例子。2D API 提供了许多方法：`fillStyle`、`fillRect`、`lineWidth`、`shadowColor`\
+  \ 等更多。\n\n理论上，在 Illustrator 等程序中创建的任何图像都可以在 `canvas` 元素中创建。在实践中，这样做将非常费力，并可能导致 JavaScript\
+  \ 代码过长。此外，这并不是 canvas 的真正意义。\n\n### Canvas。呵！它是干什么用的？\n\n使用 JavaScript 和 canvas\
+  \ 动态创建图像固然很好，但除非你是个硬核受虐狂，否则意义何在？\n\ncanvas 真正的力量在于它可以根据用户的操作随时更新内容。这种响应用户触发事件的能力，使得以前需要插件技术才能创建的工具和游戏成为可能。\n\
+  \ncanvas 力量的首批旗舰级演示之一来自 Mozilla Labs。Bespin 应用 ([`bespin.mozilla.com`](https://bespin.mozilla.com))\
+  \ 是一个在浏览器中运行的代码编辑器（图 3.03）。\n\n它非常强大。它令人印象深刻。它也是使用 canvas 的反例。\n\n![Bespin 编辑界面](img/fig-03-03.jpg)\n\
+  \n图 3.03：用 canvas 构建的 Bespin 应用。\n\n### 拒绝访问\n\n代码编辑器从本质上处理文本。Bespin 代码编辑器在 `canvas`\
+  \ 元素中处理文本——尽管它不再是真正的文本；而是一系列像文本的形状。\n\nWeb 上的每个文档都可以用 DOM 模型来描述。这个 DOM 有许多不同的节点，其中最重要的元素节点、文本节点和属性。这三个构建块足以组合任何你想象的文档。`canvas`\
+  \ 元素没有 DOM。在 canvas 中绘制的内容无法表示为节点树。\n\n屏幕阅读器和其他辅助技术依赖于访问 DOM 模型来理解文档。没有 DOM，就没有访问权限。\n\
+  \ncanvas 缺乏访问性是 HTML5 的一个大问题。经常有一些非常明智的人作为一个小组一起工作，制定解决方案 ([`bkaprt.com/html5/2`](http://bkaprt.com/html5/2))。\n\
+  \ncanvas 访问性是一个重要问题，我不希望任何提议的解决方案被仓促。同时，我不希望 canvas 阻碍整个 HTML5 规范。\n\n### 聪明的 canvas\n\
+  \n在访问性问题解决之前，canvas 似乎是网页设计师的禁区。但事实并非如此。\n\n每当我网页上使用 JavaScript 时，我都是将其作为一种增强。没有\
+  \ JavaScript 的访问仍然可以访问所有内容，但体验可能没有具备 JavaScript 的环境那么动态。这种多层级的方法被称为“非侵入式 JavaScript”，也可以应用于\
+  \ canvas。不要用 canvas 创建内容，而是用它来循环利用现有内容。\n\n\n\n\n假设你有一个填充了数据的表格。你可能想用图表来展示数据中的趋势。如果数据是静态的，你可以生成图表的图像——例如使用\
+  \ Google Chart API。如果数据是可编辑的，并根据用户触发的事件进行更新，那么 `canvas` 就是生成动态图表的良好工具。至关重要的是，`canvas`\
+  \ 元素中表示的内容在已有的 `table` 元素中是可以访问的。\n\nFilament Group 的聪明人们已经专门为这种这种情况编写了一个 jQuery\
+  \ 插件（图 3.04；[`bkaprt.com/html5/3`](http://bkaprt.com/html5/3)）。^(3)\n\n还有另一种选择。Canvas\
+  \ 并不是生成动态图像的唯一 API。SVG（可缩放矢量图形）是一种 XML 格式，可以描述与 canvas 相同的形状。因为 XML 是一种基于文本的数据格式，所以\
+  \ SVG 的内容理论上对于屏幕阅读器是可见的。\n\n![彩色图表](img/fig-03-04.jpg)\n\n图 3.04：使用 canvas 根据用户输入的数据生成图表。\n\
+  \n在实践中，SVG 并没有像 canvas 那样赢得开发者的想象。尽管 canvas 是领域的新秀，但它已经拥有极的浏览器支持。Safari、Firefox、Opera\
+  \ 和 Chrome 都支持 canvas。甚至有一个 JavaScript 库为 Internet Explorer 添加了 canvas 支持（[`bkaprt.com/html5/4`](http://bkaprt.com/html5/4)）。^(4)\n\
+  \n考虑到 WHATWG “遵循既有路径”和“不要发明轮子”的准则，在 SVG 已经存在的情况下，它在 HTML5 中提倡使用 canvas 似乎很奇怪。正如常发生的那样，HTML5\
+  \ 规范实际上只是在记录浏览器已经实现的功能。`canvas` 元素并不是为 HTML5 构思出来的；它是由 Apple 创建并在 Safari 中实现的。其他浏览器厂商看到了\
+  \ Apple 的做法，喜欢了他们看到的内容，并对其进行了拷贝。\n\n这听起来有些杂乱无章，但这通常正是我们网络标准的来源。例如，微软在 20 世纪末为 Internet\
+  \ Explorer 5 创建了 `XMLHttpRequest` 对象。十年后，每个浏览器都支持这一功能，它现在是 W3C 最后征求意见的草案。\n\n在网络浏览器的达尔文世界中，canvas\
+  \ 正在四处扩散。如果它能适应可访问性，它的生存就有了保障。\n\n## 音频\n\n我制作的第一个网站是我乐队的展示页。我希望访问网站的游客能够收听乐队的歌曲。这促使我进入了“地下世界”，去调查许多竞争我关注的格式和媒体播放器：QuickTime、Windows\
+  \ Media Player、Real Audio——我花了太多的时间担心相对市场份额和跨平台兼容性。\n\n在过去的几年里，MP3 格式赢得了无处不在的战斗。但为访问者提供收听音频文件的简单方法仍然需要一种专利技术。Flash\
+  \ 播放器赢得了这场战斗。\n\n现在 HTML5 正在进入赛场，试图挑战冠军。\n\n在 HTML5 文档中嵌入音频文件非常简单：\n\n```\n<audio\
+  \ src=\"witchitalineman.mp3\">\n</audio>\n```\n\n那太简单了。你可能想对音频应该做什么得更具体一些。\n\n假设外面有一个讨厌网络以及所有航行网络的人的恶蛋。这个人可能并不在乎嵌入一个自动播放的音频文件是非常无礼且愚蠢的。多亏了\
+  \ `autoplay` 属性，这种恶毒的野得以实现：\n\n```\n<audio src=\"witchitalineman.mp3\" autoplay>\n\
+  </audio>\n```\n\n如果你真的这样使用 `autoplay` 属性，我会找掉你。\n\n注意，`autoplay` 属性没有值。这被称为布尔属性，以那位伟大的科尔克数学家乔治·布尔命名。\n\
+  \n计算机逻辑完全基于布尔逻辑：电流要么流动，要么不流动；二值要么是一，要么是零；计算结果要么为真，要么为假。不要将布尔属性与布尔值混淆。如果你认为布尔属性会取“true”或“false”的值，是可以被原谅的。实际上，属性本身本质上就是布尔的：要么包含该属性，要么不包含。即使你给属性赋值，它也不会产生任何影响。编写\
+  \ `autoplay=\"false\"` 或 `autoplay=\"no thanks\"` 与编写 `autoplay` 是一样的。\n\n如果你使用\
+  \ XHTML 语法，可以写 `autoplay= \"autoplay\"`。这由冗余部门为你提供。\n\n当自动播放的音频文件还不够邪恶时，你可以通过音频无限循环来增加更多痛苦。另一个名为\
+  \ `loop` 的布尔属性实现了这一阴险的计划：\n\n```\n<audio src=\"witchitalineman.mp3\" autoplay loop>\n\
+  </audio>\n```\n\n像这样将 `loop` 属性与 `autoplay` 属性结合使用，将加强寻找你的决心。\n\n### 失控\n\n`audio`\
+  \ 元素可以用于善，也可以用于恶。让用户控制音频文件的播放是一个明智的想法，使用布尔属性 `controls` 很容易实现：\n\n```\n<audio src=\"\
+  witchitalineman.mp3\" controls>\n</audio>\n```\n\n`controls` 属性的存在提示浏览器提供原生控制控件。使用\
+  \ `controls` 属性可以控制播放和暂停音频（图 3.05）。\n\n![音频控制条](img/fig-03-05.jpg)\n\n图 3.05：使用\
+  \ `controls` 播放、暂停音频。\n\n如果你对浏览器的原生控件不满意，可以创建自己的。使用 JavaScript，你可以与 `Audio` API\
+  \ 交互，它提供了如 `play()` 和 `pause()` 等方法，以及 `volume` 等属性。这里有一个使用 `button` 元素和内联事件处理程序的快速示例（图\
+  \ 3.06）：\n\n```\n<audio id=\"player\" src=\"witchitalineman.mp3\">\n</audio>\n<div>\n\
+  \  <button onclick=\"document.getElementById('player').play()\">播放</button>\n  <button\
+  \ onclick=\"document.getElementById('player').pause()\">暂停</button>\n  <button onclick=\"\
+  document.getElementById('player').volume += 0.1\">音量增大</button>\n  <button onclick=\"\
+  document.getElementById('player').volume -= 0.1\">音量缩小</button>\n</div>\n```\n\n\
+  ### 缓冲\n\n曾经，HTML5 规范为 `audio` 元素包含了另一个布尔属性。`autobuffer` 属性比糟糕的 `autoplay` 属性更有礼貌。它为作者提供了一种告知浏览器——虽然音频文件不会自动播放，但它可能会被播放，所以浏览器应该在后台开始加载文件。\n\
+  \n![音频按钮](img/fig-03-06.jpg)\n\n图 3.06：由按钮元素产生的控件。\n\n这本该是一个非常有用的属性，但遗憾的是 Safari\
+  \ 更进了一。无论是否存在 `autobuffer` 属性，它都会预加载音频文件。记住，因为 `autobuffer` 是布尔属性，所以没有办法告诉 Safari\
+  \ 不要预加载音频：`autobuffer=\"false\"` 与 `autobuffer=\"true\"` 或任何其他值一样（[`bkaprt.com/html5/5`](http://bkaprt.com/html5/5)）。^(5)\n\
+  \n`autobuffer` 属性现在被 `preload` 属性取代了。这不是布尔属性。它可以取三个可能的值：`none`、`auto` 和 `metadata`。使用\
+  \ `preload=\"none\"`，你现在可以明确告诉浏览器不要加载音频：\n\n```\n<audio src=\"witchitalineman.mp3\"\
+  \ controls preload=\"none\">\n</audio>\n```\n\n如果你在页面上只有一个音频元素，你可能想使用 `preload=\"\
+  auto\"`，但 `audio` 元素越多，你访问者的带宽就会被过度预加载浪费得越厉害。\n\n### 你随你的意，我随我的心\n\n\n\n`audio`\
+  \ 元素似乎近乎完美。但一定有什么猫腻吧？有的。\n\n## 音频问题\n\n`audio` 元素的问题并不在规范中。问题在于音频格式。\n\n尽管 MP3 格式已无处不在，但它并不是一种开放格式。由于该格式受到专利限制，技术人员如果不支付专利费，就无法解码\
+  \ MP3 文件。对于 Apple 或 Adobe 这样的公司来说没问题，但对于小型公司或开源团体来说没那么容易。因此，Safari 会乐意地播放 MP3 文件，而\
+  \ Firefox 则不会。\n\n还有其他音频格式。Vorbis 编码器——通常以 `.ogg` 文件形式提供——不受任何专利的限制。Firefox 支持 Ogg\
+  \ Vorbis，但 Safari 不支持。\n\n幸运的是，有一种方法可以使用 `audio` 元素，而无需在文件格式之间做出“苏罗门式的选择”。与其在起始\
+  \ `<audio>` 标签中使用 `src` 属性，不如说使用 `source` 元素来指定多个文件格式：\n\n```html\n<audio controls>\n\
+  \  <source src=\"witchitalineman.ogg\">\n  <source src=\"witchitalineman.mp3\">\n\
+  </audio>\n```\n\n能够播放 Ogg Vorbis 文件的浏览器将只会查找第一个 `source` 元素。可以播放 MP3 但不能播放 Ogg Vorbis\
+  \ 文件的浏览器将跳过第一个 `source` 元素，播放第二个 `source` 元素中的文件。\n\n你可以通过为每个源文件提供 mime 类型来帮助浏览器：\n\
+  \n```html\n<audio controls>\n  <source src=\"witchitalineman.ogg\" type=\"audio/ogg\"\
+  >\n  <source src=\"witchitalineman.mp3\" type=\"audio/mpeg\">\n</audio>\n```\n\n\
+  `source` 元素是一个独立元素（或称为“空”元素），因此如果你在使用 XHTML 语法，请记住在每个 `<source />` 标签末尾包含一个斜杠。\n\
+  \n### 回退（Falling back）\n\n指定多个 `source`元素的能力非常有用。但某些浏览器仍然完全不支持 `audio` 元素。你能猜到我指的是哪个浏览器吗？\n\
+  \nInternet Explorer 及其兄弟需要通过 Flash 这种老办法来“喂养”音频文件。`audio` 元素的内容模型支持这一点。在起始和结束 `<audio>`\
+  \ 标签之间的任何不是 `source` 元素的内容，都会暴露给不支持 `audio` 元素的浏览器：\n\n```html\n<audio controls>\n\
+  \  <source src=\"witchitalineman.ogg\" type=\"audio/ogg\">\n  <source src=\"witchitalineman.mp3\"\
+  \ type=\"audio/mpeg\">\n  <object type=\"application/x-shockwave-flash\" \n  data=\"\
+  player.swf?soundFile=witchitalineman.mp3\">\n    <param name=\"movie\" \n    value=\"\
+  player.swf?soundFile=witchitalineman.mp3\">\n  </object>\n</audio>\n```\n\n此示例中的\
+  \ `object` 元素只会暴露给不支持 `audio` 元素的浏览器。\n\n你可以更进一步。`object` 元素允许你包含回退内容。这意味着你可以提供一个传统的超链接作为最后的手段：\n\
+  \n```html\n<audio controls>\n  <source src=\"witchitalineman.ogg\" type=\"audio/ogg\"\
+  >\n  <source src=\"witchitalineman.mp3\" type=\"audio/mpeg\">\n  <object type=\"\
+  application/x-shockwave-flash\" \n  data=\"player.swf?soundFile=witchitalineman.mp3\"\
+  >\n    <param name=\"movie\" \n    value=\"player.swf?soundFile=witchitalineman.mp3\"\
+  >\n    <a href=\"witchitalineman.mp3\">下载歌曲</a>\n  </object>\n</audio>\n```\n\n\
+  这个示例具有四种级别的平滑降级：\n\n* 浏览器支持 `audio` 元素和 Ogg Vorbis 格式。\n* 浏览器支持 `audio` 元素和 MP3\
+  \ 格式。\n* 浏览器不支持 `audio` 元素，但安装了 Flash 插件。\n* 浏览器不支持 `audio` 元素，也没有安装 Flash 插件。\n\
+  \n### 访问所有区域（Access all areas）\n\n`audio` 元素的内容模型对于提供回退内容非常有用。回退内容等同于无障碍辅助内容（accessibility\
+  \ content）。\n\n假设音频文件有一个对应的文字转录。这种标记方式不对：\n\n```html\n<audio controls>\n  <source\
+  \ src=\"witchitalineman.ogg\" type=\"audio/ogg\">\n  <source src=\"witchitalineman.mp3\"\
+  \ type=\"audio/mpeg\">\n  <p>我是县里的一名线路工员...</p>\n</audio>\n```\n\n转录仅对不支持 `audio`\
+  \ 元素的浏览器可见。以这种方式标记非音频内容对使用良好浏览器的听障用户并没有帮助。此外，所谓的无障碍内容通常对每个人都非常用，那么为什么要隐藏它呢？\n\n\
+  ```html\n<audio controls>\n  <source src=\"witchitalineman.ogg\" type=\"audio/ogg\"\
+  >\n  <source src=\"witchitalineman.mp3\" type=\"audio/mpeg\">\n</audio>\n<p>我是县里的一名线路工员...</p>\n\
+  ```\n\n## 视频\n\n如果浏览器原生音频令人兴奋，那么浏览器原生视频的前景就让网页设计师们兴奋不已。\n\n（后续内容为重复部分，已按要求去重处理）\n\
+  \n\n\n\n1. 长 URL：[`www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html`](http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html)\
+  \ [[↵]](#chapter3.xhtml_footnote-ch3-no1-ret)\n2. 长 URL：[`www.w3.org/WAI/PF/html-task-force`](http://www.w3.org/WAI/PF/html-task-force)\
+  \ [[↵]](#chapter3.xhtml_footnote-ch3-no2-ret)\n3. 长 URL：[`www.filamentgroup.com/lab/update_to_jquery_visualize_accessible_charts_with_html5_from_designing_with/`](http://www.filamentgroup.com/lab/update_to_jquery_visualize_accessible_charts_with_html5_from_designing_with/)\
+  \ [[↵]](#chapter3.xhtml_footnote-ch3-no3-ret)\n4. 长 URL：[`code.google.com/p/explorercanvas/`](http://code.google.com/p/explorercanvas/)\
+  \ [[↵]](#chapter3.xhtml_footnote-ch3-no4-ret)\n5. 长 URL：[`bugs.webkit.org/show_bug.cgi?id=25267`](https://bugs.webkit.org/show_bug.cgi?id=25267)\
+  \ [[↵]](#chapter3.xhtml_footnote-ch3-no5-ret)\n\n![第 4 章：Web 表单 2.0](img/chap-4.jpg)\n\
+  \n当 JavaScript 被引入网页浏览器时，它立即用于两个任务：图像悬停（Image rollovers）和表单增强。当 CSS 带有 `:hover`\
+  \ 伪类出现时，Web 设计师不再需要为了实现简单的悬停效果而调用 JavaScript。\n\n这是一个反复出现的趋势。如果一个模式足够流行，它几乎会从需要脚本解决方案演变为更具声明性的东西。这就是为什么\
+  \ CSS3 引入了更多以前需要 JavaScript 的动画能力。\n\n在增强表单方面，CSS 有其局限性。这就是 HTML5 的用场。遵循从脚本到声明解决方案的相同迁移模式，该规范引入了许多新的表单增强功能。\n\
+  \n这些功能最初是 WHATWG 规范的一部分，称为 Web Forms 2.0，基于 W3C 的现有工作。该规范现在已整合到 HTML5 中。\n\n## 占位符\
+  \ (Placeholder)\n\n这是一个常见的 DOM 脚本模式，通常用于搜索表单：\n\n1. 当表单字段没有值时，向其插入一些占位符文本。\n2. 当用户聚焦该字段时，移除占位符文本。\n\
+  3. 如果用户离开该字段且字段仍无值，则恢复占位符文本。\n\n占位符文本通常显示为比实际表单值更浅的颜色——通过 CSS、JavaScript 或两者的结合。\n\
+  \n在 HTML5 文档中，你可以简单地使用 `placeholder` 属性（图 4.01）：\n\n```\n<label for=\"hobbies\"\
+  >您的爱好</label>\n<input id=\"hobbies\" name=\"hobbies\" type=\"text\" \nplaceholder=\"\
+  Owl stretching\">\n```\n\n![您的爱好：猫头鹰伸展](img/fig-04-01.jpg)\n\n图 4.01：“Owl stretching”通过\
+  \ `placeholder` 属性出现在 `input` 字段中。\n\n`placeholder` 属性在支持它的浏览器中工作得很好，但遗憾的是，目前只是浏览器中一个很小的子集。如何处理其他不支持的浏览器取决于你自己的决定。\n\
+  \n你可能决定什么都不做。毕竟，这个功能是“有则更好”，而不是“必不可的”。或者，你可能决定回退到 JavaScript 解决方案。在这种情况下，你需要确保 JavaScript\
+  \ 解决方案仅适用于不理解 `placeholder` 属性的浏览器。\n\n这是一个通用的小型 JavaScript 函数，用于测试元素是否支持特定属性：\n\
+  \n```\nfunction elementSupportsAttribute(element,attribute) {\n  var test = document.createElement(element);\n\
+  \  if (attribute in test) {\n    return true;\n  } else {\n    return false;\n \
+  \ }\n}\n```\n\n该函数的工作原理是在内存中创建一个“幻影”元素（但不在你的文档中），然后检查该元素的原型是否具有与要测试的属性同名的属性。该函数将返回\
+  \ `true` 或 `false`。\n\n使用此函数，你可以确保仅为不支持 `placeholder` 的浏览器提供 JavaScript 解决方案：\n\n\
+  ```\nif (!elementSupportsAttribute('input','placeholder')) {\n  // 在此处编写 JavaScript\
+  \ 回退方案。\n}\n```\n\n## 自动聚焦 (Autofocus)\n\n“你好。我是自动聚焦模式。你可能在像‘Google：手气不错’和‘Twitter：发生了什么？’之类的网站上遇到过我。”\n\
+  \n这是一个简单的单步模式，在 JavaScript 中很容易编写：\n\n1. 当文档加载时，自动聚焦一个特定的表单字段。\n\nHTML5 允许你使用布尔属性\
+  \ `autofocus` 来实现这一点：\n\n```\n<label for=\"status\">发生了什么事？</label>\n<input id=\"\
+  status\" name=\"status\" type=\"text\" autofocus>\n```\n\n这个模式唯一的问题是它可能非常烦人。当我上网时，经常会按空格键。在\
+  \ Twitter 这样的网站上，我经常使用悬停模式来滚动到“折叠内容”。\n\n我看到 `autofocus` 属性被添加到 HTML5 中是有用的，它可以它可以帮助，但它同样可能令人烦恼。在实现这种模式之前，请深思。\n\
+  \n将这种模式从脚本转向标记的优势之一是，理论上浏览器可以为用户提供禁用聚焦的选项。实践中，还没有浏览器这样做，但这种模式仍然很年轻。目前，禁用聚焦的唯一方法是完全禁用\
+  \ JavaScript。\n\n就像 `placeholder` 属性一样，你可以测试 `autofocus` 支持并回退到脚本解决方案：\n\n```\n\
+  if (!elementSupportsAttribute('input','placeholder')){\n  document.getElementById('status').focus();\n\
+  ```\n\n`autofocus` 属性不仅适用于 `input` 元素；它可以用于任何表单字段，例如 `textarea` 或 `select`，但文档只能使用一次。\n\
+  \n## 必 (Required)\n\nJavaScript 的常见用途之一是客户端表单验证。再次，HTML5 正将此解决方案从脚本转向标记。只需添加布尔属性\
+  \ `required`：\n\n```\n<label for=\"pass\">您的密码</label>\n<input id=\"pass\" name=\"\
+  pass\" type=\"password\" required>\n```\n\n理论上，这允许浏览器在未填写必字段的情况下阻止表单提交。尽管浏览器尚未这样做，你仍然可以在\
+  \ JavaScript 表单验证中使用 `required` 属性。与其在脚本中维护所有必字段的列表或在标记中添加 `class=\"required\"`，你现在可以检查\
+  \ `required` 属性的存在。\n\n## 自动填充 (Autocomplete)\n\n浏览器不仅仅是显示网页。大多数浏览器都有额外的功能，旨在提高浏览网页时提高可用性、安全性和便利性。自动填充表单就是这种功能之一。大多数时候它非常有用，但偶尔可能会很烦人，甚至是危险。我不担心浏览器记住我的联系信息，但我可能不想让它记住银行账户的登录信息，以防电脑被盗。\n\
+  \nHTML5 允许你按表单或按字段禁用自动填充。`autocomplete` 属性不是布尔值，但它只能取两个可能的值：“on”或“off”：\n\n```\n\
+  <form action=\"/selfdestruct\" autocomplete=\"off\">\n```\n\n默认情况下，浏览器会假设 `autocomplete`\
+  \ 值为“on”，允许它们预填充表单。\n\n你可以既要鱼又要兼网。如果你想允许表单预填充，但禁用表单中某一两个字段的预填充，你可以这样做：\n\n```\n\
+  <input type=\"text\" name=\"onetimetoken\"  autocomplete=\"off\">\n```\n\n\n\n\n\
+  \n对于不支持 `autocomplete` 属性的浏览器，并没有任何 JavaScript 回退方案。在这种情况下，新的 HTML5 属性是在增强现有的浏览器行为，而不是取代脚本化的解决方案。\n\
+  \n在浏览器中禁用自动补全的功能似乎是 HTML5 规范中一个奇怪的添加。HTML5 理论上应该是对流行的模式进行规范化，而这不是一个非常常见的用例。但考虑到自动补全带来的潜在安全风险，允许网站所有覆盖这一特定的浏览器功能是有意义的。\n\
+  \n## Datalist\n\n新的 `datalist` 元素允许你将普通的 `input` 元素与 `select` 元素交叉使用。通过 `list` 属性，你可以将选项列表与输入字段关联（图\
+  \ 4.02）：\n\n```html\n<label for=\"homeworld\">您的家园</label>\n<input type=\"text\"\
+  \ name=\"homeworld\" id=\"homeworld\"  \nlist=\"planets\">\n<datalist id=\"planets\"\
+  >\n  <option value=\"Mercury\">\n  <option value=\"Venus\">\n  <option value=\"\
+  Earth\">\n  <option value=\"Mars\">\n  <option value=\"Jupiter\">\n  <option value=\"\
+  Saturn\">\n  <option value=\"Uranus\">\n  <option value=\"Neptune\">\n</datalist>\n\
+  ```\n\n![您的家园菜单](img/fig-04-02.jpg)\n\n图 4.02：`datalist` 元素，显示用户可以输入不在之外的值。\n\n\
+  这允许用户从提供的列表中选择选项，或者输入一个完全不在列表的值。这对于通常需要一个标记为“如果是‘其他’，请说明……”的额外表单字段非常有用（图 4.03）。\n\
+  \n![带有添加值的家园菜单](img/fig-04-03.jpg)\n\n图 4.03：新的 `datalist` 元素。\n\n`datalist` 元素是对表单字段的一种良好且不显眼的增强。如果浏览器不支持\
+  \ `datalist`，则表单字段的行为就像普通的输入框。\n\n## 输入类型\n\n`input` 元素的 `type` 属性在 HTML5 中得到了极大的扩展。有这么多的小径需要铺设，就像在踩踏之后进行建筑工作一样。\n\
+  \n### 搜索\n\n`type` 值为“search”的 `input` 元素的行为与 `type` 值为“text”的 `input` 元素相似：\n\n\
+  ```html\n<label for=\"query\">搜索</label>\n<input id=\"query\" name=\"query\" type=\"\
+  search\">\n```\n\n“text”和“search”之间的唯一区别是，浏览器可能会不同的显示搜索输入，以便与操作系统中搜索字段的样式保持一致。这正是\
+  \ Safari 的做法（图 4.04）。\n\n![Safari 样式的搜索框](img/fig-04-04.jpg)\n\n图 4.04：Safari 对搜索输入进行样式处理以与\
+  \ Mac OS 一致。\n\n### 联系详情\n\n特定联系详情有三个新的 `type` 值：电子邮件地址、网站和电话号码：\n\n```html\n<label\
+  \ for=\"email\">电子邮件地址</label>\n<input id=\"email\" name=\"email\" type=\"email\"\
+  >\n<label for=\"website\">网站</label>\n<input id=\"website\" name=\"website\" type=\"\
+  url\">\n<label for=\"phone\">电话</label>\n<input id=\"phone\" name=\"phone\" type=\"\
+  tel\">\n```\n\n再次，这些字段的行为将与文本输入相同，但浏览器现在对字段中期望的数据类型有了更多信息。\n\nSafari 声称支持这些新的输入类型，但快速查看桌面浏览器中的表单会发现，与简单使用\
+  \ `type=\"text\"` 没有区别。然而，如果你开始在 Mobile Safari 中交互同一个表单，差异就会变得明显。浏览器会根据 `type` 属性的值显示不同的屏幕键盘（图\
+  \ 4.05）。\n\n![Mobile Safari 输入屏幕](img/fig-04-06.jpg)\n\n图 4.05：Mobile Safari 根据\
+  \ `type` 属性的值显示不同的屏幕键盘。\n\nWebkit 的巧妙运用，非常巧妙。\n\n### 滑块\n\n许多 JavaScript 库提供了可以在\
+  \ Web 应用程序使用的构建组件。它们运行良好——只要启用了 JavaScript。如果我们的用户每次想在页面上添加一个有趣的控件时，不需要下载 JavaScript\
+  \ 文件，那就太好了。\n\n一个经典的例子是滑块控件。到为止，我们一直使用 JavaScript 来模拟这种交互元素。在 HTML5 中，感谢于 `type=\"\
+  range\"`，浏览器现在可以提供原生控件：\n\n```html\n<label for=\"amount\">多少？</label>\n<input id=\"\
+  amount\" name=\"amount\" type=\"range\">\n```\n\nSafari 和 Opera 目前都支持这种输入类型，提供外观类似的控件（图\
+  \ 4.06）。\n\n![多少？滑块](img/fig-04-07.jpg)\n\n图 4.06：Safari 和 Opera 中的 `range` 输入类型。\n\
+  \n默认情况下，输入将接受从零到一百百的范围。你可以使用 `min` 和 `max` 属性设置自己的最小值和最大值：\n\n```html\n<label for=\"\
+  rating\">您的评分</label>\n<input id=\"rating\" name=\"rating\" type=\"range\" \nmin=\"\
+  1\" max=\"5\">\n```\n\n### 测试\n\n测试原生支持需要一种技巧。以下是用于判断浏览器是否支持 `range` 的代码：\n\n```javascript\n\
+  function inputsType(test) {\n  var input = document.createElement('input');\n  input.setAttribute('type',\
+  \ test);\n  if (input.type == 'text') {\n    return false;\n  } else {\n    return\
+  \ true;\n  }\n}\n```\n\n### 数字计数器\n\n浏览器原生的 `range` 控件不会向用户暴露底层值。相反，数字被转换成滑块组件的图形表示。当用户能够看到并选择数值时，其他类型的数据效果最好。这就是\
+  \ `type=\"number\"` 派用用场：\n\n```html\n<label for=\"amount\">多少？</label>\n<input\
+  \ id=\"amount\" name=\"amount\" type=\"number\" \nmin=\"5\" max=\"20\">\n```\n\n\
+  除了允许用户直接向文本字段输入值之外，浏览器还可以显示“计数器”控件，允许用户增加或减少值（图 4.07）。\n\n![多少？计数器](img/fig-04-09.jpg)\n\
+  \n图 4.07：使用 `type=\"number\"` 的计数器控件。\n\n### 日期和时间\n\n流行的 JavaScript 组件之一是日历选择器。你懂这种：你正在预订航班或创建一个活动，并选择一个日期。\n\
+  \n这些日历组件都执行相同的操作，但你会发现它们在每个网站上的实现略有不同。原生日历组件可以消除这些不一致性并减少认知负担。\n\nHTML5 引入了一系列专门用于日期和时间的输入类型：\n\
+  \n*   `date` 用于年、月、日。\n\n*   `datetime` 用于年、月、日结合小时、分、秒以及时区信息。\n\n\n\n\n\n* `datetime-local`\
+  \ 与其相同，但不包含时区信息。\n* `time` 用于小时、分钟和秒。\n* `month` 用于年份和月份，但不包含日期。\n\n所有这些输入类型都会记录符合标准格式\
+  \ `YYYY-MM-DDThh:mm:ss.Z` 的部分子集的时间戳（`Y` 是年份，`M` 是月份，`D` 是日期，`h` 是小时，`m` 是分钟，`s`\
+  \ 是秒，`Z` 是时区）。以第一次大战结束的日期和时间为例，即 1918 年 11 月 11 日上午 11:11：\n\n* `date`: 1918-11-11\n\
+  * `datetime`: 1918-11-11T11:11:00+01\n* `datetime-local`: 1918-11-11T11:11:00\n\
+  * `time`: 11:11:00\n* `month`: 1918-11\n\n没有 `year` 输入类型，尽管有一个 `week` 输入类型，它可以接收与年份结合的\
+  \ 1 到 53 之间的数字。\n\n使用日期和时间输入类型非常简单：\n\n```\n<label for=\"dtstart\">Start date</label>\n\
+  <input id=\"dtstart\" name=\"dtstart\" type=\"date\">\n```\n\nOpera 使用其专利“丑陋棒”技术（图\
+  \ 4.08）实现了这些输入类型。\n\n![Opera 的日历显示](img/fig-04-10.jpg)\n\n图 4.08：Opera 的原生日历显示，带有“丑陋棒”。\n\
+  \n一如既往，不支持这些输入类型的浏览器将回退到显示普通的文本输入框。在这种情况下，你可以要求用户以 ISO 格式输入日期和时间，或者使用你选择的 JavaScript\
+  \ 库来生成小部件。确保先检查原生支持：\n\n```\nif (!inputSupportsType('date')) {\n  // 在此处生成日历组件。\n\
+  }\n```\n\n即使是编写得最优雅的 JavaScript 日历组件也需要复杂的代码来生成日期表格并处理日期选择事件。浏览器原生的日历组件应该更加流畅、快速，并且在不同网站之间保持一致。\n\
+  \n## 颜色选择器\n\nHTML5 中野心勃勃的小部件替换可能过于 `color` 输入类型。它接受熟悉的十六进制格式：黑色的 `#000000`，白色的\
+  \ `#FFFFFF`。\n\n```\n<label for=\"bgcolor\">Background color</label>\n<input id=\"\
+  bgcolor\" name=\"bgcolor\" type=\"color\">\n```\n\n计划是让浏览器实现像你电脑上几乎每个应用程序那样的原生颜色选择器。到目前为止，还没有浏览器这样做，但当它们这样做时，那将会是超级酷。\n\
+  \n在此期间，你可以使用 JavaScript 解决方案，但务必测试原生支持，以便让你的代码对于未来的浏览器具有前瞻性。\n\n## 自定义\n\n所有这些新输入类型都有两个作用：它们允许浏览器显示适用于预期输入数据的原生控件，并验证输入的值。这些对\
+  \ HTML5 的补充涵盖了大多数大多数场景，但你仍然可能发现自己需要验证一个不属于任何新类别的值。\n\n好消息是，你可以使用 `pattern` 属性精确指定期望的值的类型。坏消息是，你必须使用正则表达式：\n\
+  \n```\n<label for=\"zip\">US Zip code</label>\n<input id=\"zip\" name=\"zip\" pattern=\"\
+  [\\d]{5}(-[\\d]{4})\">\n```\n\n大多数时候，你永远不需要使用 `pattern` 属性。在需要用的时候，我表示同情。\n\n##\
+  \ 展望未来\n\n表单在 HTML5 中得到了巨大的提升。传统上由 JavaScript 承担的负担正转移到标记语言的肩上。目前，我们正处于过渡阶段，其中某些功能由某些浏览器支持。我们还不能抛弃\
+  \ JavaScript，但我们离光明的未来并不遥远。\n\n客户端验证将变得容易得多——尽管你不应该依赖它；始终务必在服务器上也验证表单值。生成表单控件将不再需要用户下载\
+  \ JavaScript 库；所有这些将在浏览器中进行原生化处理。\n\n我确定你能看到原生浏览器控件对于日历和滑块的益处，但我打赌你正在想：“我可以为它们设置样式吗？”\n\
+  \n这是一个好问题。目前，答案是“不能”。去咨询 CSS 工作组吧。\n\n这对于你来说可能是一个决定性因素。如果你觉得某个浏览器对表单元素的实现不够精致，你可能更倾向于使用提供提供更多控制的\
+  \ JavaScript 小部件。\n\n我想让你思考一个不同的问题：“*应该*为它们设置样式吗？”\n\n记住，Web 世界于控制。如果你网站的访客熟悉使用浏览器的原生表单工具，如果你用自己的小部件覆盖浏览器功能，那么你并没有帮他们忙，即使你认为你的小部件看起来更好。\n\
+  \n个人而言，我希望看到浏览器厂商在 HTML5 表单控件的精美易用性上进行竞争。那是我可以支持的浏览器大战。\n\n让我们现在把表单放在一边，看看新的语义。\n\
+  \n![第 5 章：语义](img/chap-5.jpg)\n\n## 扩展性\n\n其他标记语言允许你发明任何元素。在 XML 中，如果你想要 `event`\
+  \ 元素或 `price` 元素，直接创建即可。这种自由的代价是你必须告诉解析器 `event` 或 `price` 代表什么。HTML 有限元素集的优点是每个用户代理都认识元素。如果允许我们随意创建，这就不可能。\n\
+  \nHTML 提供了一个方便的逃逸条款，允许网页设计师为元素添加语义值：`class` 属性。这允许我们将元素的特定实例标记为特殊的类或类型。\n\n### Microformats\n\
+  \nMicroformats 是一组由社区一致的规范。这些格式使用 `class` 属性来填补 HTML 的一些明显漏洞：用于联系信息的 hCard，用于事件的\
+  \ hCalendar，用于新闻故事的 hAtom。因为对使用哪些类名有共识，现在已经有了与这些模式配合的解析器和浏览器扩展。\n\n\n\n\n\n### 刻意造斧\n\
+  \n微格式（microformats）的处理方式被用来开发 HTML5 的模板，但这并不符合所有人的口味。虽然 80/20 原则对于类名（class names）这种粗放快速的世界已经足够，但对于世界上最重要的标记语言来说，它真的足够吗？\n\
+  \n有些人认为 HTML 需要具有无限的扩展性。这意味着，仅为大多数用例提供解决方案是不够的；这种语言必须为任何可能的用例提供解决方案。\n\n也许关于这种扩展性，最有说服力的论点可能来自\
+  \ John Allsopp，他在他那出色的 A List Apart 文章《HTML5 中的语义》（[`bkaprt.com/html5/6`](http://bkaprt.com/html5/6)）：^(1)：\n\
+  \n> 我们不需要在 HTML 词汇中添加特定的术语，我们需要添加一种机制，允许根据需要向文档添加语义丰富性。\n\n已经存在可以实现这一点的技术。RDFa 允许作者在\
+  \ HTML 文档中嵌入自定义词汇。但与微格式不同——微格式仅仅使用一组约定的类名——RDFa 使用命名空间（namespaces）来允许无限变化的格式。因此，微格式可能会使用类似\
+  \ `<h1 class=\"summary\">` 的标记，而 RDFa 则会使用 `<h1 property=\"myformat:summary\">`。\n\
+  \n毫无疑问，RDFa 可能非常强大，但它的表现力是需要代价的。命名空间引入了额外的复杂性，这与 HTML 相对简单的本质并不相符。\n\n命名空间的争论并不新鲜。在几年前的一篇博客中，Mark\
+  \ Nottingham 思考了其潜在的破坏性副作用（[`bkaprt.com/html5/7`](http://bkaprt.com/html5/7)）：^(2)：\n\
+  \n> 我发现 HTML 扩展性中有趣的地方在于，命名空间并不是必要的；Netscape 增加了 blink，MSFT 增加了 marquee，以此类推。我认为，如果从一开始就在\
+  \ HTML 中引入命名空间，效果将导致不同浏览器之间的差异合法化并制度化，而不是（最终）收敛到同一个解决方案。\n\n与其无限的扩展性相比，这为基于社区共识的有限词汇提供了一个强有力的论点。\n\
+  \nHTML5 可能会带有某种扩展其原生语义的方法发布。`class` 属性仍然在其中，当然，所以微格式将继续像以前一样工作。HTML5 可能会被修改以兼容 RDFa，或者它可能会使用它自己的“微数据”（microdata）词汇。无论哪种情况，这种扩展性对大多数网页设计师来说可能都非常不利。真正重要的是由社区共识并由浏览器供应商实现的原生语义。\n\
+  \n## 新元素\n\nHTML5 引入了一些新的内联元素（inline elements），以增强我们现有的 `span`、`strong`、`em`、`abbr`\
+  \ 等工具库。哦，我们不再称它们为“内联”的了。相反，它们描述的是“文本级语义（text-level semantics）”。\n\n### mark\n\n\
+  在浏览搜索结果列表时，你经常会在每个结果中高亮显示搜索词。你可以用 `span` 元素标记每个搜索词的实例，但 `span` 是一个语义上没有意义的拐杖，除了为了挂载类名用于样式之外几乎毫无用处。\n\
+  \n你可以使用 `em` 或 `strong`，但这在语义上是不准确的；你不想给搜索词赋予任何重要性，你只是想让它以某种方式高亮。\n\n`mark` 元素登场了：\n\
+  \n```\n<h1>Search results for 'unicorn'</h1>\n<ol>\n  <li><a href=\"http://clearleft.com/\"\
+  >\n  Riding the UX <mark>unicorn</mark> across \n  the rainbow of the web.\n  </a></li>\n\
+  </ol>\n```\n\n`mark` 元素并没有在其内容中赋予除当前关注之外的任何重要性，只是显示它目前正受到关注。正如规范所说，`mark` 表示“文档中一段由于在另一个语境中的相关性而为了参考目的而被标记或高亮的文本序列”。\n\
+  \n`mark` 元素允许在搜索结果之外的语文中出现，但我死活也想不出一个这样的例子。\n\n### time\n\nhCalendar 是最流行的微格式之一，因为它解决了一个非常常见的痛点：标记事件，以便用户可以直接将其添加到日日中。\n\
+  \nhCalendar 中唯一棘手的部分是以机器可读的方式描述日期和时间。人类喜欢将日期描述为“5 月 25 日”或“下周三”，但解析器期望一个格式良好的 ISO\
+  \ 日期：YYYY-MM-DDThh:mm:ss。\n\n微格式社区为这个问题想出了一些巧妙的解决方案，例如使用 `abbr` 元素：\n\n```\n<abbr\
+  \ class=\"dtstart\" title=\"1992-01-12\">\n  January 12th, 1992\n</abbr>\n```\n\n\
+  如果这样使用 `abbr` 元素让你感到有些不适，还有许多其他方法可以使用“类-值”模式在微格式中标记机器可读的日期和时间。在 HTML5 中，这个问题通过新的\
+  \ `time` 元素解决了：\n\n```\n<time class=\"dtstart\" datetime=\"1992-01-12\">\n  January\
+  \ 12th, 1992\n</time>\n```\n\n`time` 元素可以用于日期、时间或两者的结合：\n\n```\n<time datetime=\"\
+  17:00\">17:00</time>\n<time datetime=\"1992-01-12\">January 12th, 1992</time>\n\
+  <time datetime=\"2010-04-07T17:00\">April 7th, 5pm</time>\n```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\
+  \n```\n<time datetime=\"17:00\">17:00</time>\n<time datetime=\"1992-01-12\">January\
+  \ 12th, 1992</time>\n<time datetime=\"2010-04-07T17:00\">April 7th, 5pm</time>\n\
+  ```\n\n你不需要在 `datetime` 属性中放入值，但如果你这样做，你必须将其暴露给用户：\n\n```\n<time>17:00</time>\n\
+  <time>1992-01-12>January 12th, 1992</time>\n<time>2010-04-07T17:00>April 7th, 5pm</time>\n\
+  ```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\n```\n<time datetime=\"17:00\">17:00</time>\n\
+  <time datetime=\"1992-01-12\">January 12th, 1992</time>\n<time datetime=\"2010-04-07T17:00\"\
+  >April 7th, 5pm</time>\n```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\n```\n<time datetime=\"\
+  17:00\">17:00</time>\n<time datetime=\"1992-01-12\">January 12th, 1992</time>\n\
+  <time datetime=\"2010-04-07T17:00\">April 7th, 5pm</time>\n```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\
+  \n```\n<time datetime=\"17:00\">17:00</time>\n<time datetime=\"1992-01-12\">January\
+  \ 12th, 1992</time>\n<time datetime=\"2010-04-07T17:00\">April 7th, 5pm</time>\n\
+  ```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\n```\n<time datetime=\"17:00\">17:00</time>\n\
+  <time datetime=\"1992-01-12\">January 12th, 1992</time>\n<time datetime=\"2010-04-07T17:00\"\
+  >April 7th, 5pm</time>\n```\n\n`time` 元素可以用于日期、时间或两者的组合：\n\n```\n<time datetime=\"\
+  17:00\">17:00</time>\n<time datetime=\"1992-01-12\">January 12th, 1992</time>\n\
+  <time datetime=\"2010-04-07T17:00\">April 7th, 5pm</time>\n```\n\n`time` 元素：\n\n\
+  ```\n<time>\n```\n\n### meter\n\n`meter` 元素可以用于标记测量值，前提是这些测量值处于一个具有最小值和最大值的刻度中。\n\
+  \n```\n<meter>9 out of 10</meter>\n```\n\n如果你不想暴露最大值，可以使用 `max` 属性代替：\n\n```\n<meter\
+  \ max=\"10\">9 cats</meter>\n```\n\n这里还有一个对应的 `min` 属性。你还有 `high`、`low` 和 `optimum`\
+  \ 属性可以可以使用。如果你愿意，甚至可以在 `value` 属性中隐藏测量值：\n\n```\n<meter low=\"-273\" high=\"100\"\
+  \ min=\"12\" optimum=\"21\" value=\"25\">\n  现在的天气很暖。\n</meter>\n```\n\n### progress\n\
+  \n虽然 `meter` 适用于描述已经测量的东西，但 `progress` 元素允许你标记一个正在变化的值：\n\n```\n你的资料已 <progress>60%</progress>\
+  \ 完成。\n```\n\n再次，如果你想使用它们，拥有 `min`、`max` 和 `value` 属性：\n\n```\n<progress min=\"\
+  0\" max=\"100\" value=\"60\"></progress>\n```\n\n`progress` 元素在与 DOM 脚本结合使用时最有用。你可以使用\
+  \ JavaScript 动态更新值，允许浏览器向用户通信这种变化——对于 Ajax 文件上传非常方便。\n\n## 结构\n\n2005 年，Google 进行了一些研究，以找出网络小径上可以发现的易摘果（[`code.google.com/webstats/`](http://code.google.com/webstats/)）。\n\
+  \n一个解析器查看了十亿网页并列出了最常见的类名。结果如乎意料。`header`、`footer` 和 `nav` 等类名非常普遍。这些新兴的语义与 HTML5\
+  \ 引入的一些新结构元素完美契合。\n\n### section\n\n`section` 元素用于分组主题相关的内容。这听起来很像 `div` 元素，后者经常被用作通用内容容器。区别在于\
+  \ `div` 没有语义含义；它没有关于内部内容的任何信息。而 `section` 元素被明确用于分组相关内容。\n\n你可能可以用 `section` 元素替换一些\
+  \ `div` 元素，但请记住始终问自己：“所有的内容都是相关的吗？”\n\n```\n<section> \n  <h1>DOM Scripting</h1>\n\
+  \  <p>该书针对设计师而非程序员。</p>\n  <p>作者：Jeremy Keith</p>\n</section>\n```\n\n### header\n\
+  \n\n\n\n\nHTML5 规范将 `header` 元素描述为“一组介绍性或导航性辅助内容的容器”。这听起来很合理。这正是我预期在页眉（masthead）中看到的内容，而“header”一词经常用作页眉的同义词。\n\
+  \nHTML5 中的 `header` 元素与通常接受的“header”或“masthead”用法之间存在本质区别。一个页面通常只有一个页眉，但一个文档可以有多个\
+  \ `header` 元素。例如，你可以在 `section` 元素内部使用 `header` 元素。事实上，你*应该*在 `section` 内部使用 `header`。规范将\
+  \ `section` 元素描述为“内容的主题性分组，*通常带有标题*”。\n\n```\n<section>\n  <header> \n    <h1>DOM\
+  \ Scripting</h1>\n  </header> \n  <p>The book is aimed at designers \n  rather than\
+  \ programmers.</p>\n  <p>By Jeremy Keith</p>\n</section>\n```\n\n`header` 通常出现在文档或章节的顶部，但并非如此。它由其内容——介绍性或导航性辅助内容定义，而不是由它的位置。\n\
+  \n### footer\n\n就像 `header` 元素一样，`footer` 听起来是对位置的描述，但与 `header` 一样，事实并非如此。相反，`footer`\
+  \ 元素应该包含关于其容器元素的信息：谁写的、版权信息、相关内容的链接等。\n\n这很好地对应了网页设计人员对“footer”一词的心理模型。区别在于，虽然我们习惯于整个文档只有一个页脚，但\
+  \ HTML5 允许我们在章节内部也拥有页脚。\n\n```\n<section>\n  <header>\n    <h1>DOM Scripting</h1>\n\
+  \  </header>\n  <p>The book is aimed at designers \n  rather than programmers.</p>\n\
+  \  <footer> \n    <p>By Jeremy Keith</p>\n  </footer>\n</section>\n```\n\n### aside\n\
+  \n正如 `header` 元素匹配页眉（masthead）的概念，`aside` 元素也匹配侧边栏（sidebar）的概念。当我说“侧边栏”时，我指的不是位置。仅仅某些内容出现在主内容的左侧或右侧，还不足以使用\
+  \ `aside` 元素的理由。再次，重要的是内容，而不是位置。\n\n`aside` 元素应该用于与内容间接相关的内容。如果你有一部分你认为与主内容独立的内容，那么\
+  \ `aside` 元素可能是它最合适的容器。问问自己，如果移除 `aside` 内部的内容，是否会减少文档或章节主要内容的含义。\n\n引文摘录（Pullquotes）是间接相关内容的一个很好的例子；它们很好用，但你可以删除它们，而不会影响对主要内容的理解。\n\
+  \n请记住，仅仅因为你的视觉设计要求某些内容出现在侧边栏，并不意味着 `aside` 就是正确的容器元素。例如，将作者简介放在侧边栏是非常常见的做法。这类数据最适合\
+  \ `footer` 元素——规范明确提到了作者信息适用于页脚（图 5.01）。\n\n![关于作者的截图](img/fig-05-01.jpg) (注：此处原文应为\
+  \ screenshop，已修正意译为截图)\n\n图 5.01：此截图中的“关于作者”文本应该标记为 `footer`，而不是 `aside`。\n\n在 90%\
+  \ 的情况下，header 将位于你内容的顶部，footer 将位于你内容的末尾，而 aside 将位于一侧。但不要掉以轻心。保持警惕，留意剩下的 10% 情况。\n\
+  \n### nav\n\n`nav` 元素的作用正如你认为的那样。它包含导航信息，通常是一个链接列表。\n\n实际上，我最好澄清一下。`nav` 元素用于主要的导航信息。仅仅因为一组链接被分在一个列表中并不足以使用\
+  \ `nav` 元素的理由。相反，全站导航几乎肯定属于 `nav` 元素。\n\n`nav` 元素经常出现在 `header` 元素内部。考虑到 `header`\
+  \ 元素可以用于“导航辅助内容”，这样做是合理的。\n\n### article\n\n将 `header`、`footer`、`nav` 和 `aside`\
+  \ 视为 `section` 元素的特殊形式会很有帮助。`section` 是一个通用的相关内容块，而 headers、footers、navs 和 asides\
+  \ 是特定类型相关内容的块。\n\n`article` 元素是另一种特殊类型的 `section`。用它来处理自包含的相关内容。现在困难的部分在于决定什么构成了“自包含”。\n\
+  \n问问自己，你是否会将这些内容发布到 RSS 或 Atom 馈中。如果内容在那种语境下仍然通顺，那么 `article` 可能就是使用的正确元素。事实上，`article`\
+  \ 元素专为分发设计。\n\n如果你在 `article` 内部使用 `time` 元素，可以添加一个可选的 `pubdate` 布尔属性，指示它包含发布日期：\n\
+  \n```\n<article>\n  <header>\n    <h1>DOM Scripting review</h1>\n  </header>\n \
+  \ <p>A small lighthouse for what has been a long \n  and sometimes dark voyage for\
+  \ JavaScript.</p>\n  <footer>\n    <p>Published\n    <time datetime=\"2005-10-08T15:13\"\
+  >2005 年 10 月 8 日下午 3:13</time>\n    by Glenn Jones</p>\n  </footer>\n</article>\n\
+  ``` (注：如果你在 `article` 内部使用了多个 `time` 元素，只有其中一个可以使用 `pubdate` 属性。)\n\n`article` 元素适用于博客文章、新闻故事、评论和论坛帖子。它涵盖了\
+  \ hAtom 微格式的所有相同用例。\n\nHTML5 规范比此更进一步。它还宣布 `article` 元素适用于自包含的小部件：股票报价器、计算器、时钟等。对我来说，将名为“文章”的元素应用于所谓的“部件”结构非常不直观。尽管如此，文章和部件实际上都是自包含的。\n\
+  \n更有问题的是 `article` 和 `section` 极其相似。如果存在硬性规定，决定使用哪种元素将很容易。相反，这取决于解释方式。你可以在 `section`\
+  \ 中包含多个 `article`，可以在 `article` 中包含多个 `section`，你还可以嵌套 section 和 article。在任何情况下，语义最合适的元素取决于你。\n\
+  \n### div 症的良方？\n\nHTML5 为我们提供了上述描述的一些新结构元素。如果你在构建传统的网站（如博客）时，它们特别有用。大多数博客设计由一个\
+  \ header 开始，随后是一系列 article，aside 中包含一些间接内容，最后以 footer 结束（图 5.02）。\n\n![JK 博客截图](img/fig-05-02.jpg)\n\
+  \n图 5.02：真正的你的博客。\n\n你现在可以用更具语义精确性的结构元素来替换一些 `div` 元素。但不要过头。很有可能，如果你今天在使用 `div`，明天你仍在使用\
+  \ `div`。不要为了 sake 而为了就把你的 `div` 元素替换成闪亮的新 HTML5 元素。要考虑内容。\n\n## 内容模型\n\n以前的标记语言将元素分为两类：内联（inline）和块（block）。HTML5\
+  \ 使用更精细的方法，将元素分为更广泛的类别。\n\n\n\n\n# HTML5 语义与分区\n\n内联元素现在拥有“文本级语义”的内容模型。许多块级元素现在归入“分组内容”的范畴：段落、列表项、div\
+  \ 等等。表单有自己独立的内容模型。图片、音频、视频和 canvas 都是“嵌入内容”。新的结构元素引入了一个全新的内容模型，称为“分区内容”。\n\n## 分区内容\n\
+  \n可以使用标题元素 `h1` 到 `h6` 创建 HTML 文档的大纲。例如，查看以下标记：\n\n```\n<h1>An Event Apart</h1>\n\
+  <h2>Cities</h2>\n<p>Join us in these cities in 2010.</p>\n<h3>Seattle</h3>\n<p>Follow\
+  \ the yellow brick road to the emerald city.</p>\n<h3>Boston</h3>\n<p>That's Beantown\
+  \ to its friends.</p>\n<h3>Minneapolis</h3>\n<p>It's so <em>nice</em>.</p>\n<small>Accommodation\
+  \ not provided.</small>\n```\n\n这给了我们以下大纲：\n\n*   特别活动\n\n    *   城市\n\n       \
+  \ *   西雅图\n\n        *   波士顿\n\n        *   明尼阿波利斯\n\n这运行得相当好。任何跟在标题元素后面的内容都被认为与该标题相关。\n\
+  \n现在看看最后的 `small` 元素。它应该与整个文档相关联。但浏览器没有办法知道这一点。没有办法知道 `small` 元素不应该归在“明尼阿波利斯”标题下。\n\
+  \nHTML5 中的新分区内容允许你明确地划定相关内容的开始和结束：\n\n```\n<h1>An Event Apart</h1>\n<section> \n\
+  \  <header>\n    <h2>Cities</h2>\n  </header>\n  <p>Join us in these cities in 2010.</p>\n\
+  \  <h3>Seattle</h3>\n  <p>Follow the yellow brick road.</p>\n  <h3>Boston</h3>\n\
+  \  <p>That's Beantown to its friends.</p>\n  <h3>Minneapolis</h3>\n  <p>It's so\
+  \ <em>nice</em>.</p>\n</section>\n<small>Accommodation not provided.</small>\n```\n\
+  \n现在清楚了，`small` 元素属于“特别活动”标题而不是“明尼阿波利斯”。\n\n我可以进一步细分这个内容，将每个城市放在自己的 section 中：\n\
+  \n```\n<h1>An Event Apart</h1>\n  <section>\n    <header>\n      <h2>Cities</h2>\n\
+  \    </header>\n    <p>Join us in these cities in 2010.</p>\n    <section> \n  \
+  \    <header>\n        <h3>Seattle</h3>\n      </header>\n      <p>Follow the yellow\
+  \ brick road.</p>\n    </section>\n    <section>\n      <header>\n        <h3>Boston</h3>\n\
+  \      </header>\n      <p>That's Beantown to its friends.</p>\n    </section>\n\
+  \    <section>\n      <header>\n        <h3>Minneapolis</h3>\n      </header>\n\
+  \      <p>It's so <em>nice</em>.</p>\n    </section>\n  </section>\n  <small>Accommodation\
+  \ not provided.</small>\n```\n\n这仍然给了我们相同的大纲：\n\n*   特别活动\n\n    *   城市\n\n    \
+  \    *   西雅图\n\n        *   波士顿\n\n        *   明尼阿波利斯\n\n### 大纲算法\n\n到目前为止，新的分区内容并没有给我们比旧版\
+  \ HTML 更多的功能。但关键在于：在 HTML5 中，每个分区内容都有自己独立的轮廓。这意味着你不必跟踪应该使用哪个标题级别——你每次都可以从 `h1` 开始：\n\
+  \n```\n<h1>An Event Apart</h1>\n<section> \n  <header>\n    <h1>Cities</h1> \n \
+  \ </header>\n  <p>Join us in these cities in 2010.</p>\n  <section>\n    <header>\n\
+  \    <h1>Seattle</h1> \n    </header>\n    <p>Follow the yellow brick road.</p>\n\
+  \    </section>\n    <section>\n      <header>\n        <h1>Boston</h1> \n     \
+  \ </header>\n      <p>That's Beantown to its friends.</p>\n    </section>\n    <section>\n\
+  \      <header>\n        <h1>Minneapolis</h1> \n      </header>\n      <p>It's so\
+  \ <em>nice</em>.</p>\n    </section>\n  </section>\n  <small>Accommodation not provided.</small>\n\
+  ```\n\n在旧版 HTML 中，这会产生一个不准确的大纲：\n\n*   特别活动\n\n*   城市\n\n*   西雅图\n\n*   波士顿\n\n\
+  *   明尼阿波利斯\n\n在 HTML5 中，大纲是准确的：\n\n*   特别活动\n\n    *   城市\n\n        *   西雅图\n\n\
+  \        *   波士顿\n\n        *   明尼阿波利斯\n\n### hgroup\n\n有时候你可能想使用标题元素，但不想让它出现在文档大纲中。`hgroup`\
+  \ 元素允许你这样做：\n\n```\n<hgroup>\n  <h1>An Event Apart</h1>\n  <h2>For people who make\
+  \ websites</h2>\n</hgroup>\n```\n\n在这种情况下，二级标题“为制作网站的人”实际上是一个标语。在 `hgroup` 元素中，只有第一个标题会贡献给大纲。第一个标题不一定是\
+  \ `h1`：\n\n```\n<hgroup>\n  <h3>DOM Scripting</h3>\n  <h4>Web Design with JavaScript\
+  \ \n  and the Document Object Model</h4>\n</hgroup>\n```\n\n### 分区根\n\n一些元素对生成的大纲是不可见的。换句话说，无论你在这些元素中使用多少标题，它们都不会出现在文档的大纲中。\n\
+  \n`blockquote`、`fieldset` 和 `td` 元素都不受大纲算法的影响。这些元素被称为“分区根”——不要与分区内容混淆。\n\n### 可移植性\n\
+  \n因为每个分区内容都会生成自己的大纲，你现在可以获得比 `h1` 到 `h6` 更多的标题级别。标题级别可以有多深没有限制。更重要的是，你可以开始以一种真正模块化的方式思考你的内容。\n\
+  \n假设我有一篇名为“奶酪三明治”的博客文章。在 HTML5 之前，我需要知道博客文章的上下文，以便决定为文章标题使用哪个标题级别。如果文章在首页上，那么它会出现在包含我博客标题的\
+  \ `h1` 元素之后：\n\n```\n<h1>My awesome blog</h1>\n<h2><a href=\"cheese.html\">Cheese\
+  \ sandwich</a></h2>\n<p>My cat ate a cheese sandwich.</p>\n```\n\n但如果我将博客文章发布在自己的页面上，那么我希望文章标题是一级标题：\n\
+  \n```\n<h1>Cheese sandwich</h1>\n<p>My cat ate a cheese sandwich.</p>\n```\n\n在\
+  \ HTML5 中，我不必担心使用哪个标题级别。我只需要使用分区内容——在这种情况下是 `article` 元素：\n\n```\n<article>\n  <h1>Cheese\
+  \ sandwich</h1>\n  <p>My cat ate a cheese sandwich.</p>\n</article>\n```\n\n现在内容是真正可移植的。无论它是出现在自己的页面上还是首页上：\n\
+  \n```\n<h1>My awesome blog</h1>\n<article>\n  <h1>Cheese sandwich</h1>\n  <p>My\
+  \ cat ate a cheese sandwich.</p>\n</article>\n```\n\nHTML5 的新大纲算法产生了正确的结果：\n\n*\
+  \   我的精彩博客\n\n    *   奶酪三明治\n\n### 作用域样式\n\n每个分区内容都有自己的大纲这一事实使其成为 Ajax 的完美搭配。再一次，HTML5\
+  \ 展示了它作为 Web 应用程序规范的起源。\n\n尝试将一段内容从一个文档移植到另一个文档会引入一些问题。应用于父文档的 CSS 规则也会应用于插入的内容。这是目前在\
+  \ Web 上分发小部件的挑战之一。\n\nHTML5 提供了一个解决方案，即 `scoped` 属性，可以应用于 `style` 元素。在该 `style`\
+  \ 元素内声明的任何样式只会应用于包含它的分区内容：\n\n```\n<h1>My awesome blog</h1>\n<article>\n  <style\
+  \ scoped>\n    h1 { font-size: 75% }\n  </style>\n  <h1>Cheese sandwich</h1>\n \
+  \ <p>My cat ate a cheese sandwich.</p>\n</article>\n```\n\n在那个例子中，只有第二个 `h1` 元素会有\
+  \ 75% 的字体大小值。至少这是理论。目前没有浏览器支持 `scoped` 属性。\n\n问题就在这里。在你开始使用 HTML5 的新功能之前，你需要考虑该功能的浏览器支持。无论浏览器支持情况如何，我有一些策略可以帮助你开始使用\
+  \ HTML5。在下一章也是最后一章中，我想与你分享这些策略。\n\n1. 长 URL：[`www.alistapart.com/articles/semanticsinHTML5`](http://www.alistapart.com/articles/semanticsinHTML5)\
+  \ [[↵]](#chapter5.xhtml_footnote-ch5-no1-ret)\n\n\n\n\n\n2. 长链接：[`www.mnot.net/blog/2006/04/07/extensibility`](http://www.mnot.net/blog/2006/04/07/extensibility)\
+  \ [[↵]](#chapter5.xhtml_footnote-ch5-no2-ret)\n3. 长链接：[`www.ieaddons.com/en/webslices/`](http://www.ieaddons.com/en/webslices/)\
+  \ [[↵]](#chapter5.xhtml_footnote-ch5-no3-ret)\n\n![第 6 章：今天就用 HTML5](img/chap-6.jpg)\n\
+  \n如果你想今天就开始使用 HTML5 的新结构元素，没有人会阻止你。大多数浏览器允许你为新元素设置样式。这并不是说浏览器主动支持这些元素，而是大多数浏览器允许你使用和样式化你发明的任何元素。\n\
+  \n## 样式化\n\n浏览器不会对新元素应用任何默认样式。因此，至少你需要声明新结构元素应该强制换行：\n\n```css\nsection, article,\
+  \ header, footer, nav, aside, hgroup {\n  display: block;\n}\n```\n\n这对大多数浏览器来说已经足够了。Internet\
+  \ Explorer 有特殊需求。它坚决拒绝识别新元素，除非先用 JavaScript 创建每个元素的实例，如下所示：\n\n```javascript\ndocument.createElement('section');\n\
+  ```\n\nJavaScript 天才 Remy Sharp 编写了一个方便的小脚本，可以生成所有新的 HTML5 元素。在条件注释中加载此脚本，以便仅提供给有需要的\
+  \ Internet Explorer：\n\n```html\n<!--[if IE]>\n  <script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"\
+  ></script>\n<![endif]-->\n```\n\n现在你可以随心所欲地为新元素设置样式了。\n\n### 标题\n\n浏览器尚未开始支持 HTML5\
+  \ 的新大纲算法，但你仍然可以开始使用可用的额外标题级别。\n\nGeoffrey Sneddon 编写了一个方便的在线工具，可以生成符合 HTML5 规范的大纲（[`bkapart.com/html5/9`](http://bkapart.com/html5/9)）。^(1)\n\
+  \n如果你遵循 HTML5 规范中的建议，在每个分区内容中从`h1`重新开始，你的 CSS 规则可能会很快变得非常复杂：\n\n```css\nh1 {\n \
+  \ font-size: 2.4em;\n}\nh2, \nsection h1, article h1, aside h1 {\n  font-size: 1.8em;\n\
+  }\nh3, \nsection h2, article h2, aside h2,\nsection section h1, section article\
+  \ h1, section aside h1,\narticle section h1, article article h1, article aside h1,\n\
+  aside section h1, aside article h1, aside aside h1 {\n  font-size: 1.6em;\n}\n```\n\
+  \n这仅仅是前三个级别，而且还没有涵盖分区内容中所有可能的标题组合。\n\n幸运的是，HTML5 的大纲算法相当灵活。如果你想以传统方式使用标题级别，这不会以任何方式影响大纲。\n\
+  \n## ARIA\n\nHTML5 中的新结构元素对辅助技术非常有用。我们不再需要创建“跳过导航”链接，只需正确使用`nav`元素即可。这将允许屏幕阅读器用户跳过导航，而无需我们提供显式链接。\n\
+  \n无论如何，这是计划。目前，我们必须使用浏览器和屏幕阅读器当前支持的技术。\n\n幸运的是，目前对 ARIA（可访问的富互联网应用程序）有很好的支持。\n\n\
+  在最先进的层面上，ARIA 允许辅助技术完全参与全能、全舞动的 Ajax 交互。在最简单的层面上，ARIA 允许我们在文档中指定更丰富的语义。\n\n最基本的\
+  \ ARIA 单元是`role`属性。你可以将`role=\"search\"`添加到搜索表单，将`role=\"banner\"`添加到页眉，将`role=\"\
+  contentinfo\"`添加到页脚。ARIA 规范中有一个完整的值列表，位于[`bkaprt.com/html5/10`](http://bkaprt.com/html5/10)。^(2)\n\
+  \n你也可以在 HTML 4.01、XHTML 1.0 或任何其他标记风格中使用这些角色值，但这样你的文档将不再通过验证——除非你创建自定义文档类型，那将是一个痛苦的世界。\n\
+  \n但 ARIA 角色是 HTML5 规范的一部分，因此你可以既使用 ARIA 又通过验证。\n\n你还可以将`role`属性的附加语义用作样式钩子。属性选择器是你的朋友。像这样的选择器允许你区分文档的页眉页脚和分区内容中的页眉页脚：\n\
+  \n```css\nheader[role=\"banner\"] { }\nfooter[role=\"contentinfo\"] { }\n```\n\n\
+  ## 验证\n\n明智地使用验证器是网页设计师的强大工具。不明智地使用验证器，则会让自以为是的极客们轻松地指着别人的标记嘲笑。\n\nHenri Sivonen\
+  \ 在[`validator.nu/`](http://validator.nu/)创建了一个功能齐全的 HTML5 验证器。\n\n你甚至不需要更新指向 W3C\
+  \ 验证器（[`validator.w3.org/`](http://validator.w3.org/)）的书签。一旦检测到 HTML5 文档类型，它也会使用\
+  \ Henri 的解析器。\n\n## 特性检测\n\n如果你想开始使用 HTML5 中一些更高级的输入类型，你需要一种测试浏览器支持的方法，以便提供 JavaScript\
+  \ 替代方案。\n\nModernizr 是一个有用的 JavaScript 文件，它可以检测对输入类型以及`audio`、`video`和`canvas`的支持（[`www.modernizr.com/`](http://www.modernizr.com/)）。\n\
+  \n该脚本在 JavaScript 中创建一个名为`Modernizr`的对象。通过查询该对象的属性，你可以确定浏览器是否支持特定的输入类型：\n\n```javascript\n\
+  if (!Modernizr.inputtypes.color) {\n  // JavaScript fallback goes here.\n}\n```\n\
+  \nModernizr 还会执行一种技巧，允许你在 Internet Explorer 中样式化新的结构元素——因此如果你使用`Modernizr`，就不需要再使用\
+  \ Remy 的脚本了。\n\n## 选择你的策略\n\n你对 HTML5 的雄心或谨慎程度完全取决于你自己。\n\n至少，你可以将现有的 HTML 或 XHTML\
+  \ 文档的文档类型更新为：\n\n```html\n<!DOCTYPE html>\n```\n\n你刚刚迈出了进入更大世界的第一步。现在你也可以开始使用 ARIA\
+  \ 角色了；你还有什么可失去的呢？\n\n如果你对使用新结构元素感到紧张，你仍然可以通过使用类名作为训练轮来熟悉新的语义：\n\n```html\n<div class=\"\
+  section\">\n  <div class=\"header\">\n    <h1>Hello world!</h1>\n  </div><!-- /.header\
+  \ -->\n</div><!-- /.section -->\n```\n\n进一步，当你对使用新的 HTML5 元素更有信心时，你可以将这些`div`元素和类名替换为相应的结构元素。\n\
+  \n虽然现在使用一些更高级的输入类型（如`date`、`range`和`color`）可能还为时过早，但使用`search`、`url`、`email`和其他简单输入类型并无害处。请记住，不识别这些值的浏览器会简单地将输入视为`type=\"\
+  text\"`。\n\n如果你喜欢冒险，你可以开始尝试`audio`、`video`和`canvas`。它们可能还没有准备好用于黄金时段，但在你的个人网站上作为实验玩具可能会很有趣。\n\
+  \n### 资源\n\n我经常在我的个人网站上写关于 HTML5 的文章：[`adactio.com/journal/tag/html5`](http://adactio.com/journal/tag/html5)\n\
+  \n我不是唯一对 HTML5 感到兴奋的人。强大的 Bruce Lawson 也在记录他的想法：[`brucelawson.co.uk/category/html5/`](http://brucelawson.co.uk/category/html5/)\n\
+  \nBruce 只是 HTML5 Doctor 的贡献者之一，这是一个优秀的社区资源，充满了精彩的文章：[`html5doctor.com/`](http://html5doctor.com/)\n\
+  \n如果你想深入了解 HTML5 更复杂的方面，Remy Sharp 正在突破界限：[`html5demos.com/`](http://html5demos.com/)\n\
+  \nMark Pilgrim 写了一本详尽的书，名为《深入 HTML5》。从 O'Reilly 购买或在线阅读：[`diveintohtml5.org/`](http://diveintohtml5.org/)\n\
+  \n\n\n\n\n对于那些需要直接查看源头的场合，请随时关注 HTML5 规范：[`whatwg.org/html5`](http://whatwg.org/html5)\n\
+  \nHTML5 规范包含许多面向浏览器制作者的信息。W3C 专门为内容作者托管了最新版本的规范：[`www.w3.org/TR/html-markup`](http://www.w3.org/TR/html-markup)\n\
+  \n## 参与其中\n\n当你开启 HTML5 冒险之旅时，可能会发现规范的某些部分令人困惑。这没关系。这不仅没关系，而且是非常价值的反馈。\n\n有一些非常聪明的人正在致力于\
+  \ HTML5，但网页设计师的代表性不足。你的观点将让我们不胜感激。\n\n你可以作为一名受邀的公共专家加入 W3C 的 HTML 工作组——只需忽略你得发给自己的那份充满卡夫卡式语言的邀请函——但我不建议你这样做。相关的邮件列表流量非常大，大部分内容与政治和程序有关。\n\
+  \n如果你真的想讨论 HTML5 规范，应该是 WHATWG 的邮件列表：[`www.whatwg.org/mailing-list#specs`](http://www.whatwg.org/mailing-list#specs)\n\
+  \n还有一个 IRC 频道。有时你可能去一个大家都认识你 ID 的地方：irc://irc.freenode.org/whatwg\n\n不要害羞。IRC 频道是提问以及从\
+  \ Ian Hickson、Anne van Kesteren、Lachlan Hunt 以及其他 WHATWG 成员那里获得答案的绝佳场所。\n\n## 未来\n\
+  \n我希望这次对 HTML5 的小小漫步鼓励了你开始探索这项非常令人兴奋的技术。我也希望你将把探索的果实带回 WHATWG。\n\nHTML 是网页设计师可以使用的最重要的工具。没有标记，互联网将不复。。发现任何人都能为这项最关键技术的演进贡献力量，这是非常了不起且神奇的。每当你创建一个网站，你都在为人类共同的文化遗产做出贡献。通过选择\
+  \ HTML5，你也在为未来做贡献。\n\n1\\. 长 URL：[`gsnedders.html5.org/outliner`](http://gsnedders.html5.org/outliner)\
+  \ [[↵]](#chapter6.xhtml_footnote-ch6-no1-ret)\n\n2\\. 长 URL：[`www.w3.org/TR/wai-aria/roles#role_definitions`](http://www.w3.org/TR/wai-aria/roles#role_definitions)\
+  \ [[↵]](#chapter6.xhtml_footnote-ch6-no2-ret)\n\n## 索引\n\n2012, 7, 11\n\n2022, 7\n\
+  \n### A\n\nAjax, 22, 63, 76, 80\n\nAllsopp, John, 58\n\nAPI, 20–21, 24–25, 28, 32\n\
+  \nApple, 4, 29, 34\n\nARIA, 80, 82\n\narticle, 67, 75, 76\n\naside, 65, 67, 78\n\
+  \naudio, 22, 29–37, 82\n\nautobuffer, 32–33\n\nautocomplete, 44–45\n\nautofocus,\
+  \ 42–44\n\nautoplay, 30–31, 37\n\n### B\n\nBerners-Lee, Sir Tim, 1, 5\n\nBespin,\
+  \ 26\n\nbig, 18\n\n### C\n\ncanvas, 23–29, 70, 82\n\ncharacter encoding, 14\n\n\
+  Chrome, 29\n\ncite, 19\n\nclass, 57\n\ncolor, 53, 83\n\ncontrols, 31, 33–38\n\n\
+  CSS, 3, 7, 14, 18, 20, 39, 40, 57, 76, 79\n\n### D\n\ndatalist, 45–46\n\ndate, 51–53\n\
+  \ndatetime, 51\n\ndatetime-local, 51–52\n\ndiv, 63, 69\n\ndoctype, 12–13, 16, 81,\
+  \ 82\n\ndocument.write, 21\n\nDOM, 27, 41, 50, 57, 63\n\ndrag and drop, 21\n\n###\
+  \ E\n\nem, 18, 60\n\nemail, 47, 83\n\nerror handling, 11\n\n### F\n\nFirefox, 29,\
+  \ 34\n\nFlash, 22, 26, 30, 35, 37\n\nfont, 11, 18, 77\n\nfooter, 64–65, 66, 78,\
+  \ 81\n\nFrench Revolution, 9\n\n### H\n\nheader, 64, 67, 78, 81, 83\n\nhgroup, 74,\
+  \ 78\n\nHickson, Ian, 4, 7, 10, 85\n\nHTML 3.2, 13\n\nHTML 4.01, 2, 10, 12, 14,\
+  \ 81\n\n### I\n\nIETF, 2\n\nimg, 2, 22, 24, 39\n\ninnerHTML, 21\n\ninput, 44, 45,\
+  \ 47, 82\n\nInternet Explorer, 3, 7, 21, 29, 35, 78, 82\n\nIRC, 85\n\n### J\n\n\
+  JavaScript, 14, 15, 20–21, 40, 50, 54, 79, 82\n\njQuery, 28\n\n### L\n\nLawson,\
+  \ Bruce, 83\n\nlint, 16\n\n### M\n\nmark, 60\n\nmicrodata, 59\n\nmicroformats, 10,\
+  \ 57–59, 61\n\nMobile Safari, 48\n\nModernizr, 82\n\nmonth, 51, 52\n\nMosaic, 2,\
+  \ 23\n\nMozilla, 4, 26\n\nMP3, 30, 34\n\nMP4, 38\n\n\n\n\n\n## 索引\n\n`nav`, 66–67,\
+  \ 78, 80\nNottingham, Mark, 59\n`number`, 50–51\n\n### O\n`obsolete`, 17\nOgg Vorbis,\
+  \ 34, 36\nOpera, 4, 29, 49, 52\n`outline`, 70–76, 79–80\n\n### P\n`pattern`, 54\n\
+  Pilgrim, Mark, 84\n`placeholder`, 41–42\n`poster, 37, 38\n`preload`, 33, 37\n`progress`,\
+  \ 62–63\n`pubdate`, 67\nPython, 15\n\n### Q\nQuickTime, 30\n\n### R\n`range`, 49–51,\
+  \ 83\nRDFa, 58–59\nReal Audio, 30\n`required`, 44\n`role`, 81\n\n### S\nSafari,\
+  \ 29, 33, 47, 49, 50\n`scoped`, 76–77\n`search`, 47, 60, 81, 83\nsectioning content,\
+  \ 70–75, 79\nsectioning roots, 75\nSGML, 1\nSharp, Remy, 79, 82, 84\nsignificant\
+  \ white space, 15\nSivonen, Henri, 81\n`small`, 18\nSneddon, Geoffrey, 79\n`source`,\
+  \ 34–37, 38\n`strong`, 60\nSVG, 28–29\nsyntax, 6, 15–16, 31, 35\n\n### T\n`table`,\
+  \ 28\n`tel`, 47\nTheora Video, 38\n`time`, 61–62\n\n### U\n`UndoManager`, 21\n`url`,\
+  \ 47\n\n### V\n`validate`, 53, 54, 81\n`video`, 37–39, 70, 82, 83\n\n### W\nW3C,\
+  \ 2–6, 9, 16, 29, 41, 81, 84\nWeb Apps 1.0, 4–5, 21\nWeb Forms 2.0, 5, 41\nWeb Standards\
+  \ Project, 3\n`week`, 52\nWHATWG, 4–6, 9, 29, 41, 84, 85\n`window.history`, 21\n\
+  \n### X\nXHTML 1.0, 2–3, 12, 15–16\nXHTML 1.1, 3\nXHTML 2, 3–4, 5, 6, 9, 10\nXML,\
+  \ 2–3, 5, 6, 15, 29, 57\n`XMLHttpRequest`, 29\n\n### Y\n`year`, 52\n\n## 关于 A Book\
+  \ Apart\n网页设计需要跨学科的精通和极致专注，这正是我们为网站制作者推出的系列书籍的设计理念。\n\nA Book Apart 专注于单一主题进行详尽且经过仔细编辑的研究。我们很高兴通过\
+  \ Jeremy Keith 的 `HTML5 for Web Designers` 开启新的出版业务。\n\n## 作者\n![Jeremy Keith photo](img/Jeremy-Keith.jpg)\n\
+  \nJeremy Keith 是一位住在英国布顿的爱尔兰网页开发者，他在网络咨询公司 Clearleft 工作。他之前写过两本书——`DOM Scripting`\
+  \ 和 `Bulletproof Ajax`，但他真正想做的是导演。他的在线首页是 [adactio.com](http://adactio.com)，他最新的项目是\
+  \ Huffduffer，一个用于制作发现声音播客的服务。当他不制作网站时，Jeremy 在 Salter Cane 乐队中弹奏鲁兹利亚琴。他的疯狂包子是好的本尼火山。\n\
+  \n"

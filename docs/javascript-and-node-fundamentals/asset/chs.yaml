@@ -1,0 +1,534 @@
+- "# JavaScript 和 Node 基础指南\n\n\n\n![](img/title_page.jpg)\n\n![JavaScript 和 Node\
+  \ 基础](img/title_page.jpg)\n\n本书可在 [`leanpub.com/jsfun`](http://leanpub.com/jsfun)\
+  \ 售卖\n\n\n> 如果不好玩，那就不是 JavaScript。\n\n# 1 JavaScript 基础：Web 强大且被误解的语言\n\n## 1.1\
+  \ 表达能力\n\nBASIC、Python、C 等编程语言具有枯燥的机器本质，这要求开发者编写与解决方案本身无直接关系的额外代码。想想 BASIC 中的行号或\
+  \ Java 中的接口、类和模式。\n\n相反，JavaScript 继承了纯数学、LISP 和 C# 的优秀特性，这带来了大量的[表达能力](http://en.wikipedia.org/wiki/Expressive_power)（以及乐趣！）。\n\
+  \n在这篇文章中有关于表达能力的更多信息：[在指代编程语言时，“表达性”意味着什么？](http://stackoverflow.com/questions/638881/what-does-expressive-mean-when-referring-to-programming-languages)\n\
+  \nJava 中经典的 Hello World 示例（记住，Java 之于 JavaScript 就像火腿之ハム鼠）：\n\n```\npublic class\
+  \ HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"\
+  Hello World\");\n    }\n}\n```\n\nJavaScript 中相同的示例：\n\n```\nconsole.log('Hello\
+  \ World')\n```\n\n或者在 HTML 页面中：\n\n\n\n\n\n```javascript\n1 <script>\n2 document.write('Hello\
+  \ World')\n3 </script>\n```\n\nJavaScript 允许程序员专注于解决方案/问题，而不是在各种关卡和 API 文档中来跳去。\n\
+  \n## 1.2 弱类型 (Loose Typing)\n\n自动类型转换在大多数情况下都能良好工作。这是一个可以节省大量时间和精力精力的绝佳特性！它只有几种原始数据类型：\n\
+  \n1. `String`\n2. `Number`（包括整数和浮点数）\n3. `Boolean`\n4. `Undefined`\n5. `Null`\n\n\
+  其他所有内容都是对象，即可变的键值对集合。在 Stackoverflow 上阅读关于[什么是不可变性（immutable）意味着什么？](http://stackoverflow.com/questions/3200211/what-does-immutable-mean)\
+  \ 的文章。\n\n此外，在 JavaScript 中，存在 `String`、`Number` 和 `Boolean` 对象，它们包含了为原始类型提供的辅助方法：\n\
+  \n```javascript\n1 'a' === new String('a') //false\n```\n\n但是\n\n```javascript\n\
+  1 'a' === new String('a').toString() //true\n```\n\n或者\n\n```javascript\n1 'a' ==\
+  \ new String('a') //true\n```\n\n顺带一提，`==` 会执行自动类型转换，而 `===` 则不会。\n\n## 1.3 对象字面量符号\
+  \ (Object Literal Notation)\n\n对象表示法非常易读且紧凑：\n\n```javascript\n1 var obj = {\n2\
+  \    color: \"green\",\n3    type: \"suv\",\n4    owner: {\n5       ...\n6    }\n\
+  7 }\n```\n\n记得函数也是对象吗？\n\n```javascript\n1 var obj = function () {\n2    this.color:\
+  \ \"green\",\n3    this.type: \"suv\",\n4    this.owner: {\n5       ...\n6    }\n\
+  7 }\n```\n\n## 1.4 函数 (Functions)\n\n函数是“一等公民”（first-class citizens），我们把它们视为变量，因为它们是对象！是的，函数甚至可以拥有属性/特征。\n\
+  \n### 1.4.1 创建函数\n\n```javascript\n1 var f = function f () {\n2    console.log('Hi');\n\
+  3    return true;\n4 }\n```\n\n或者\n\n```javascript\n1 function f () {\n2   console.log('Hi');\n\
+  3   return true;\n4 }\n```\n\n带有属性的函数（记得函数只是可以调用的对象，即已初始化）：\n\n```javascript\n1\
+  \ var f = function () {console.log('Boo');}\n2 f.boo = 1;\n3 f(); //输出 Boo\n4 console.log(f.boo);\
+  \ //输出 1\n```\n\n**注意**：`return` 关键字是可选的。如果省略，函数在调用时将返回 `undefined`。\n\n### 1.4.2\
+  \ 将函数作为参数传递\n\n```javascript\n1 var convertNum = function (num) {\n2  return num\
+  \ + 10;\n3 }\n4 \n5 var processNum = function (num, fn) {\n6    return fn(num);\n\
+  7 }\n8 \n9 processNum(10, convertNum);\n```\n\n### 1.4.3 调用与表达式 (Invocation vs.\
+  \ Expression)\n\n函数定义：\n\n```javascript\n1 function f () {};\n```\n\n调用：\n\n```javascript\n\
+  1 f();\n```\n\n表达式（因为它可以解析为某些值，可以是数字、字符串、对象或布尔值）：\n\n```javascript\n1 function f()\
+  \ {return false;}\n2 f();\n```\n\n语句：\n\n```javascript\n1 function f(a) {console.log(a);}\n\
+  ```\n\n## 1.5 数组 (Arrays)\n\n数组也是对象，继承了一些来自 [Array.prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype#Properties)\
+  \ 全局对象的特殊方法。尽管如此，JavaScript 数组并不是真正的数组。相反，它们是具有唯一整数键（通常从 0 开始）的对象。\n\n```javascript\n\
+  1 var arr = [];\n2 var arr2 = [1, \"Hi\", {a:2}, function () {console.log('boo');}];\n\
+  3 var arr3 = new Array();\n4 var arr4 = new Array(1,\"Hi\", {a:2}, function () {console.log('boo');});\n\
+  ```\n\n## 1.6 原型本质 (Prototypal Nature)\n\nJavaScript 中没有“类”，因为对象直接继承自其他对象，这被称为原型继承：JS\
+  \ 中有几种继承模式：\n\n* 经典继承 (Classical)\n* 伪类继承 (Pseudo-classical)\n* 函数继承 (Functional)\n\
+  \n函数继承模式的示例：\n\n```javascript\n 1 var user = function (ops) {\n 2   return { firstName:\
+  \ ops.name || 'John'\n 3          , lastName: ops.name || 'Doe'\n 4          , email:\
+  \ ops.email || 'test@test.com'\n 5          , name: function() { return this.firstName\
+  \ + this.lastName}\n 6          }\n 7 }\n 8 \n9 var agency = function(ops) {\n10\
+  \   ops = ops || {}\n11   var agency = user(ops)\n12   agency.customers = ops.customers\
+  \ || 0\n13   agency.isAgency = true\n14   return agency\n15 }\n```\n\n## 1.7 约定\
+  \ (Conventions)\n\n这些约定中（分号除外）大部分是风格上的，取决于个人偏好，且不影响执行。\n\n### 1.7.1 分号\n\n分号是可选的，有两种情况例外：\n\
+  \n1. 在 for 循环构造中：`for (var i=0; i++; i<n)`\n2. 当新行以括号开头时\n\n### 1.7.2 驼峰命名法 (camelCase)\n\
+  \n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\n### 1.7.3 命名 (Naming)\n\n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\
+  \n### 1.7.4 逗号 (Comas)\n\n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\n### 1.7.5 缩进 (Indentation)\n\
+  \n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\n### 1.7.6 空格 (Spaces)\n\n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\
+  \n### 1.7.7 模块 (Modules)\n\n大部分约定是风格上的，取决于个人偏好，且不影响执行。\n\n* [CommonJS](http://www.commonjs.org/)\n\
+  * [Require.js](https://requirejs.org/)\n\n[立即执行函数表达式](https://en.wikipedia.org/wiki/Immediately-invoked_function)\n\
+  \n## 1.9 立即执行函数表达式 (IIFEs)\n\n```javascript\n1 (function () {\n2 yourModule = {\n\
+  3 ...\n4 };\n5 }());\n```\n\n这段代码展示了一个私有属性示例：\n\n```javascript\n 1 (function ()\
+  \ {\n 2   window.boo = function() {\n 3     var _a = 1;\n 4     inc = function ()\
+  \ {\n 5       _a++;\n 6       console.log(_a);\n 7       return _a;\n 8     };\n\
+  \ 9     return {\n10       increment: inc\n11     };\n12   }\n13 }());\n14 var b\
+  \ = window.boo();\n15 b.increment();\n```\n\n现在尝试这个：\n\n`this` 关键字\n\n在在 jQuery\
+  \ 中会发生变化！规则是在闭包中使用 `this` 之前将其重新赋值给局部作用域变量：\n\n```javascript\n1 var app = this\n\
+  2 $('a').click(function(e){\n3   console.log(this) //可能是事件或目标锚点元素\n4   console.log(app)\
+  \ //这正是我们要的！\n5   app.processData(e)\n6  })\n```\n\n*如果不确定：console.log!*\n\n## 1.11\
+  \ 陷阱 (Pitfalls)\n\nJS 是程序员认为不应该学习的语言。像 `===` 与 `==`、全局作用域泄漏、DOM 等问题可能会以后导致问题。这就是为什么理解这种语言或使用像\
+  \ CoffeeScript 这样可以解决大部分问题的工具很重要。\n\n## 1.12 进一步学习\n\n如果你喜欢这篇文章并想进一步探索 JavaScript，请查看这个非常棒的免费资源：[Eloquent\
+  \ JavaScript: 现代编程导论](http://eloquentjavascript.net/)。\n\n## 2 CoffeeScript 基础：更好的\
+  \ JavaScript\n\nCoffeeScript 是一种构建在 JavaScript 之上的语言。CoffeeScript 具有一些额外的优势，并且它的代码会被编译成原生\
+  \ JavaScript 进行执行。CoffeeScript 的优点包括：更好的语法、函数和类构造模式、自动插入 `var`、推导式等。\n\n\n\n\n一旦我们看了一些示例，这些优点中的大部分将显而易见。这份快速语言参考可以帮助你开始学习\
+  \ CoffeeScript：\n\n*   分号、空格和括号\n*   变量 (Vars)\n*   条件\n*   函数\n*   类\n*   数组\n\
+  *   通散运算符 (Splats)\n*   推导式 (Comprehensions)\n\n### 2.1 分号、空格和括号\n\n在 JavaScript\
+  \ 中，分号是冗余且可选的；而在 CoffeeScript 中，它们是被禁止的。\n\n空格和缩进（通常为两个空格）是 CoffeeScript 语言的一部分。\n\
+  \n函数调用的括号是可选的（除非没有参数）。对象字面量的大括号也是如此（也是可选的）。我们甚至可以在不使用大括号的情况下定义对象：\n\n```\n 1 a =\n\
+  \ 2   x: 1\n 3   y: -20\n 4   z: () ->\n 5     console.log a.x+a.y\n 6 \n 7 a.z()\n\
+  \ 8 \n 9 b = [\n10   1,\n11   2,\n12     x: 10\n13     y: 20\n14 ]\n```\n\n翻译为以下\
+  \ JavaScript：\n\n```\n 1 var a, b;\n 2 \n3 a = {\n 4   x: 1,\n 5   y: -20,\n 6 \
+  \  z: function() {\n 7     return console.log(a.x + a.y);\n 8   }\n 9 };\n10 \n\
+  11 a.z();\n12 \n13 b = [\n14   1, 2, {\n15     x: 10,\n16     y: 20\n17   }\n18\
+  \ ];\n```\n\n正如你可能注意到的，我们用于编写函数代码逻辑块大括号（即 `{}`）也被缩进取代了。不要忘记函数在 JavaScript 中仅仅是对象。:-\n\
+  \n### 2.2 变量\n\nCoffeeScript 会自动为我们插入 `var` 关键字，并禁止手动使用 `var`。例如，`a`、`b` 和 `c` 变量声明将在\
+  \ JavaScript 代码中带有 `var`：\n\n```\n1 a = 10\n2 b = 'x'\n3 c = [1,2,3]\n```\n\nJavaScript\
+  \ 代码：\n\n```\n1 var a, b, c;\n 2 \n3 a = 10;\n 4 \n5 b = 'x';\n 6 \n7 c = [1, 2,\
+  \ 3];\n```\n\nCoffeeScript 总是将 `var`  放在该特定变量首次出现的作用域顶部。作用域由函数或窗口定义。例如，匿名函数 `d`\
+  \ 将 `e` 作用域于其内部，因为 CoffeeScript 首次在函数内部看到了 `e`：\n\n```\n1 a = 10\n2 b = 'x'\n3 c\
+  \ = [1,2,3]\n 4 \n5 d = () ->\n6   e = a\n7   console.log e\n8 d()\n```\n\nJavaScript\
+  \ 输出：\n\n```\n 1 var a, b, c, d;\n 2 \n3 a = 10;\n 4 \n5 b = 'x';\n 6 \n7 c = [1,\
+  \ 2, 3];\n 8 \n 9 d = function() {\n10   var e;\n11   e = a;\n12   return console.log(e);\n\
+  13 };\n14 \n15 d();\n```\n\n### 2.3 条件\n\nCoffeeScript 中的条件对人类来说更具读性（更像英语？）：\n\n\
+  ```\n1 a = b = c = d = 1\n2 if a is b or b isnt c and not c is d\n3   console.log\
+  \ 'true'\n4 else\n5   console.log 'false'\n```\n\n```\n1 var a, b, c, d;\n 2 \n\
+  3 a = b = c = d = 1;\n 4 \n5 if (a === b || b !== c && !c === d) {\n6   console.log('true');\n\
+  7 } else {\n8   console.log('false');\n9 }\n```\n\n所以 `is` 等于 `===`，`isnt` 等于 `!==`，`not`\
+  \ 等于 `!`，`and` 等于 `&&`，而 `or` 等于 `||`。\n\n在 CoffeeScript 中可以实现一些花哨且可以说更易读的构造：\n\n\
+  ```\n1 console.log a if a is not null\n2 if a isnt null then console.log a\n3 if\
+  \ not a is null then console.log a\n4 unless a is null then console.log a\n```\n\
+  \n注意：`unless` 只是 `if not` 的简写形式。\n\n### 2.4 函数\n\nCoffeeScript 中的函数使用箭头 `()->` 和胖箭头\
+  \ `()=>` 定义（稍后详细介绍）：\n\n```\n1 a = (x,y) -> console.log x+y\n2 a(10,-5)\n```\n\n\
+  JavaScript 代码：\n\n```\n1 var a;\n 2 \n3 a = function(x, y) {\n4   return console.log(x\
+  \ + y);\n5 };\n 6 \n7 a(10, -5);\n```\n\n较表达式可以使用缩进跨多行显示，而默认值可以直接赋值在函数签名中（即 `(name=value)`）：\n\
+  \n```\n1 a = (x,y) -> console.log x+y\n2 a(10,-5)\n```\n\n\n\n```\n 1 var Compact,\
+  \ Suv, Vehicle, caddi, camry,\n 2   __hasProp = {}.hasOwnProperty,\n 3   __extends\
+  \ = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent,\
+  \ key)) child[key] = parent[key]; } function ctor() { this.constructor \\\n 5 =\
+  \ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child\\\
+  \n 6 .__super__ = parent.prototype; return child; };\n 7 \n 8 Vehicle = (function()\
+  \ {\n 9   function Vehicle(name) {\n10     this.name = name;\n11   }\n12 \n13  \
+  \ Vehicle.prototype.move = function(meters) {\n14     return console.log(this.name\
+  \ + (\" moved \" + meters + \" miles.\"));\n15   };\n16 \n17   return Vehicle;\n\
+  18 \n19 })();\n20 \n21 Compact = (function(_super) {\n22   __extends(Compact, _super);\n\
+  23 \n24   function Compact() {\n25     return Compact.__super__.constructor.apply(this,\
+  \ arguments);\n26   }\n27 \n28   Compact.prototype.move = function() {\n29     console.log(\"\
+  Cruising...\");\n30     return Compact.__super__.move.call(this, 5);\n31   };\n\
+  32 \n33   return Compact;\n34 \n35 })(Vehicle);\n36 \n37 Suv = (function(_super)\
+  \ {\n38   __extends(Suv, _super);\n39 \n40   function Suv() {\n41     return Suv.__super__.constructor.apply(this,\
+  \ arguments);\n42   }\n43 \n44   Suv.prototype.move = function() {\n45     console.log(\"\
+  Speeding...\");\n46     return Suv.__super__.move.call(this, 45);\n47   };\n48 \n\
+  49   return Suv;\n50 \n51 })(Vehicle);\n52 \n53 camry = new Compact(\"Camry\");\n\
+  54 \n55 caddi = new Suv(\"Cadillac\");\n56 \n57 camry.move();\n58 \n59 caddi.move();\n\
+  ```\n\n### 2.6 数组与切片\n\nCoffeeScript 中的数组定义方式与原生 JavaScript 完全一样：`arr = [1, 2, 3]`。但在\
+  \ CoffeeScript 中，我们可以对数组进行远更多的操作！例如，我们可以在定义数组时使用范围（在迭代器和列表推导式中非常用），并使用切片（slice）：\n\
+  \n```\n1 arr = [1..10]\n2 slicedArr = arr[2..4]\n3 console.log arr, slicedArr\n\
+  ```\n\n控制台输出：\n\n```\n1 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] [3, 4, 5]\n```\n\n```\n\
+  1 var arr, slicedArr;\n2 \n3 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n4 \n5 slicedArr\
+  \ = arr.slice(2, 5);\n6 \n7 console.log(arr, slicedArr);\n```\n\n冷知识：对于包含 20 个及以上元素的数组声明（例如范围为\
+  \ `[0..20]` 及更大的范围），CoffeeScript 编译器将切换到 `for` 循环。\n\n### 2.7 Splats（星号运算符）\n\n\
+  Splats 是使用变数量参数和 `arguments` 对象（来自原生 JavaScript）的一种更好方式：\n\n```\n1 a = (x...) ->\n\
+  2  sum = 0\n3  x.forEach (item) -> sum += item\n4  console.log sum\n5 a(10,-5, 15)\n\
+  ```\n\n```\n 1 var a,\n2   __slice = [].slice;\n3 \n4 a = function() {\n5   var\
+  \ sum, x;\n6   x = 1 <= arguments.length ? __slice.call(arguments, 0) : [];\n7 \
+  \  sum = 0;\n8   x.forEach(function(item) {\n9     return sum += item;\n10   });\n\
+  11   return console.log(sum);\n12 };\n13 \n14 a(10, -5, 15);\n```\n\nSplats 也适用于函数调用。例如，我们上一个示例中的\
+  \ `sum` 函数需要将数组视为所有的 `arguments`，而不是仅仅第一个元素：\n\n```\n1 a = (x...) ->\n2  sum = 0\n\
+  3  x.forEach (item) -> sum += item\n4  console.log sum\n5 a [-5..50]...\n```\n\n\
+  输出是 `1260`。对应的 JavaScript 代码：\n\n```\n1 var a, _i,results,\n2   __slice = [].slice;\n\
+  3 \n4 a = function() {\n5   var sum, x;\n6   x = 1 <= arguments.length ? __slice.call(arguments,\
+  \ 0) : [];\n7   sum = 0;\n8   x.forEach(function(item) {\n9     return sum += item;\n\
+  10   });\n11   return console.log(sum);\n12 };\n```\n\n### 2.8 列表推导式（Comprehensions）\n\
+  \n列表推导式是 CoffeeScript 中非常强大的功能之一，允许我们用简洁的语法创建新数组。它们可以替代复杂的 `for` 循环、`map` 和 `filter`\
+  \ 操作。\n\n例如，过滤一个数组中的偶数：\n\n```\n1 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n2 evens\
+  \ = [n for n in numbers if n % 2 == 0]\n```\n\n或者对每个元素进行转换：\n\n```\n1 numbers =\
+  \ [1, 2, 3]\n2 squared = [n * n for n in numbers]\n```\n\n列表推导式在处理数据转换时非常高效，能够显著提高代码的可读性。\n\
+  \n\n\n\n# Backbone.js 与 Underscore.js 视图与子视图\n\n# 超简单 Backbone 启动包\n\n# 结论\n\n##\
+  \ 3.1 典型的 Backbone.js 应用结构\n\n在 `Backbone.js` 中只有四个类：\n\n* `Router`：`URL` 到方法的映射\n\
+  * `View`：与浏览器和用户事件、HTML 输出（渲染）相关的方法\n* `Collection`：模型列表，并带有如 `fetch()` 等额外的辅助方法\n\
+  * `Model`：单个数据项，带有额外的辅助方法\n\n一个典型的 `Backbone.js` 应用有一个主 `Router` 类。所有的路由（URL 路径）都从该类中定义。路由器可以创建并调用其他类的方法，例如\
+  \ `Views`、`Collections` 和 `Models`。例如，对于路径 `/books`，我们将渲染书籍视图。\n\n推荐的用法是 `Views`\
+  \ 通常只包含一个 `Collection` 或一个 `Model`。`Collection` 只是 `Models` 的列表。然而，这并不是固定不变的。`Backbone.js`\
+  \ 非常灵活，应该根据具体需求使用。例如，一个应用可以有一个拥有 `Views` 的 `Model`，而每个 `View` 又拥有 `collections`。\n\
+  \n在我们的简洁示例中，我们将有一个拥有 `Views` 的主 `Router`。这些 `Views` 将拥有模型和集合。\n\n## 3.2 从零开始设置 Backbone.js\
+  \ 应用\n\n首先，我们将使用 `Backbone.js` 和模型-视图-控制器（MVC）架构构建一个典型的启动“Hello World”应用程序。我知道这在开始听起来可能有些过度设计，但随着学习的进行，我们将增加越来越多的复杂度，包括\
+  \ `Models`、`Subviews` 和 `Collections`。项目的结构遵循“简单至上”原则：\n\n* `index.html`：主文件以及所有的应用程序\
+  \ JavaScript 代码\n* `jquery.js`：`jQuery` 库\n* `underscore.js`：`Underscore.js` 库\n\
+  * `backbone.js`：`Backbone.js` 库\n\n“Hello World”应用的完整源代码可以在 GitHub 的 [github.com/azat-co/rpjs/backbone/hello-world](https://github.com/azat-co/rpjs/tree/master/backbone/hello-world)\
+  \ 找到。\n\n`jQuery` 和 `Underscore` 是 `Backbone.js` 的必要依赖。\n\n## 3.3 Backbone.js 项目的依赖\n\
+  \n为了构建我们的苹果数据库，我们需要下载以下库：\n\n* [jQuery 1.9 开发源文件](http://code.jquery.com/jquery-1.9.0.js)\n\
+  * [Underscore.js 开发源文件](http://underscorejs.org/underscore.js)\n* [Backbone.js 开发源文件](http://backbonejs.org/backbone.js)\n\
+  \n或者，你也可以从某些 CDN 热引入这些库（例如 [Google 托管库](https://developers.google.com/speed/libraries/devguide)），但这样每次运行应用都需要连接网络。\n\
+  \n在新创建的 `index.html` 文件中这样引入这些框架：\n\n```\n 1 <!DOCTYPE>\n 2 <html>\n 3 <head>\n\
+  \ 4   <script src=\"jquery.js\"></script>\n 5   <script src=\"underscore.js\"></script>\n\
+  \ 6   <script src=\"backbone.js\"></script>\n 7 \n 8   <script>\n 9     //TODO 写一些酷的\
+  \ JS 代码！\n10   </script>\n 11 \n 12 </head>\n 13 <body>\n 14 </body>\n 15 </html>\n\
+  ```\n\n| ![information](img/leanpub_information.png) |  \n\n### 注意事项\n我们也可以在文件末尾的\
+  \ `</</body>` 标签之后直接放置 `<script>` 标签。这会改变脚本和 HTML 其他部分的加载顺序，并对大文件的性能产生影响。\n\n一些开发者倾向于避开使用\
+  \ `Backbone Router`（它是一个可选的类/组件），但我们总是发现 `Router` 带来了更多好处和清晰度。在某种程度上，它是你应用程序的起点，有助于理解基础以及所有部分（如视图、模型等）是如何组合在一起的。所以，让我们在\
+  \ `<script>` 标签内部定义一个简单的 `Backbone.js` `Router`：\n\n\n\n```\n1   ...\n2   var router\
+  \ = Backbone.Router.extend({\n3   });\n4   ...\n```\n\n| ![information](img/leanpub_information.png)\
+  \ |  \n\n### 注意事项\n目前，为了保持简单至上（KISS），我们将所有的 JavaScript 代码直接放入 `index.html` 文件中。这对于实际开发或生产代码不是一个好主意。我们稍后会重构。\n\
+  \n然后在 `extend` 调用中设置一个特殊的 `routes` 属性：\n\n```\n1   var router = Backbone.Router.extend({\n\
+  2     routes: {\n3     }\n4   });\n```\n\n`Backbone.js` 的 `routes` 属性需要遵循以下格式：`'path/:param':\
+  \ 'action'`，这将导致 `filename#path/param` URL 触发名为 `action` 的函数（定义在 `Router` 对象中）。目前，我们将添加单个的\
+  \ `home` 路由：\n\n```\n1   var router = Backbone.Router.extend({\n2     routes: {\n\
+  3       '': 'home'\n4     }\n5   });\n```\n\n这很好，但现在我们需要在 `extend` 块中添加一个 `home`\
+  \ 方法：\n\n```\n1   var router = Backbone.Router.extend({\n2     routes: {\n3    \
+  \   '': 'home'\n4     },\n5     home: function(){\n6       // TODO 逻辑\n7     }\n\
+  8   });\n```\n\n第一行将创建 `homeView` 对象并将其赋值给路由的 `homeView` 属性。第二行将调用 `homeView` 对象中的\
+  \ `render()` 方法，触发渲染。\n\n\n\n\n\n```html\n 1 <!DOCTYPE>\n 2 <html>\n 3 <head>\n\
+  \ 4   <script src=\"jquery.js\"></script>\n 5   <script src=\"underscore.js\"></script>\n\
+  \ 6   <script src=\"backbone.js\"></script>\n 7 \n 8   <script>\n 9 \n10     var\
+  \ app;\n11 \n12     var router = Backbone.Router.extend({\n13       routes: {\n\
+  14         '': 'home'\n15       },\n16       initialize: function(){\n17       \
+  \ //在对象实例化时执行\n18        //执行的某些代码\n19       },\n20       home: function(){\n21\
+  \         this.homeView = new homeView;\n22         this.homeView.render();\n23\
+  \       }\n24     });\n25 \n26     var homeView = Backbone.View.extend({\n27   \
+  \    el: 'body',\n28       template: _.template('Hello World'),\n29       render:\
+  \ function(){\n30         this.$el.html(this.template({}));\n31       }\n32    \
+  \ });\n33 \n34     $(document).ready(function(){\n35       app = new router;\n36\
+  \       Backbone.history.start();\n37     })\n38 \n39   </script>\n40 </head>\n\
+  41 <body>\n42   <div></</div>>\n43 </body>\n44 </html>\n```\n\n在浏览器中打开 `index.html`\
+  \ 检查它是否能正常工作，即页面上应该显示“Hello World”消息。\n\n## 3.4 使用 Backbone.js Collections\n\nBackbone\
+  \ Collections 是非常有用的类，开发者可以使用它们来存储任何属于相同类型的数据。换句话说，Collections 是模型（models）的集合或列表，它们（collections）拥有自己的自定义方法和逻辑，以及一些内置的\
+  \ Backbone 方法。\n\nBackbone Collections 示例的源代码位于 GitHub 的 [`rpjs/backbone/collections`](https://github.com/azat-co/rpjs/tree/master/backbone/collections)\
+  \ 下。\n\n这个示例关于 Backbone Collections 的，它是基于之前的**从零构建 Backbone.js 应用**中的“Hello World”示例构建的，该示例可以在\
+  \ [`rpjs/backbone/hello-world`](https://github.com/azat-co/rpjs/tree/master/backbone/hello-world)\
+  \ 下载。\n\n我们应该添加一些数据以便于测试和填充我们的视图。为了做到，请在 `script` 标签之后、其他代码之前添加以下内容：\n\n```\n 1\
+  \   var appleData = [\n 2     {\n 3       name: \"fuji\",\n 4       url: \"img/fuji.jpg\"\
+  \n 5     },\n 6     {\n 7       name: \"gala\",\n 8       url: \"img/gala.jpg\"\n\
+  \ 9     }\n10   ];\n```\n\n从 GitHub 获取图片（见下图）：[`github.com/azat-co/rpjs/tree/master/backbone/collections/img`](https://github.com/azat-co/rpjs/tree/master/backbone/collections/img)，或者添加你自己的图片。\n\
+  \n![富士苹果苹果插图](img/fuji.jpg)\n\n富士苹果插图\n\n![佳拉苹果插图](img/gala.jpg)\n\n佳拉苹果插图\n\n这是我们的苹果*数据库*。:-)\
+  \ 或者更准确地说，是我们的 REST API 端点替代方案，它我们提供了苹果数据模型的名称和图像 URL。如果你需要真实的服务器，可以使用：\n\n* [Parse.com](http://parse.com):\
+  \ 后端即服务提供商\n* [Node.js and MongoDB REST API](http://webapplog.com/express-js-4-node-js-and-mongodb-rest-api-tutorial/):\
+  \ 使用 Node.js, Express.js 和 MongoDB 构建的免费 JSON API\n\n| ![信息](img/leanpub_information.png)\
+  \ |  \n\n### 注意\n\n此模拟数据集可以通过将后端的 REST API 端点分配给 Backbone.js Collections 和/或 Models\
+  \ 中的 `url` 属性，并对它们调用 `fetch()` 方法来轻松替换。 |\n\n现在为了让用户体验（UX）更好一点，我们可以在 Backbone Route\
+  \ 的 `routes` 对象中添加新路由：\n\n```\n1   ...\n2   routes: {\n3     '': 'home',\n4    \
+  \ 'apples/:appleName': 'loadApple'\n5   },\n6   ...\n```\n\n这将允许用户访问 `index.html#apples/SOMENAME`\
+  \ 并期望看到一些关于苹果的信息。这些信息将由 Backbone Router 定义中的 `loadApple` 函数获取并渲染：\n\n```\n1   loadApple:\
+  \ function(appleName){\n2     this.appleView.render(appleName);\n3   }\n```\n\n\
+  你注意到一个 `appleName` 变量了吗？它与我们在 `route` 中使用的名称完全相同。这就是我们如何在 Backbone.js 中访问查询字符串参数（例如，`?param=value&q=search`）的方式。\n\
+  \n现在我们需要重构一些代码来创建一个 Backbone Collection，用 `appleData` 变量中的数据填充它，并将集合传递给 `appleData`\
+  \ 变量。\n\n```\n1   var Apples = Backbone.Collection.extend({\n2   });\n```\n\n| ![信息](img/leanpub_information.png)\
+  \ |  \n\n### 注意\n\n当我们使用 `fetch()` 或 `reset()` 函数时，Backbone 会自动在集合内部创建模型。 |\n\n\
+  苹果视图并不复杂，它只有两个属性：`template` 和 `render`。在模板中，我们想要显示 `figure`、`img` 和 `figcaption`\
+  \ 标签。Underscore 的模板引擎处理此任务非常方便：\n\n```javascript\n1   var appleView = Backbone.View.extend({\n\
+  2     template: _.template(\n3           '<figure>\\\n4              <img src=\"\
+  <%= attributes.url %>\">\\\n5              <figcaption><%= attributes.name %></figcaption>\\\
+  \n6            </figure>'),\n```\n\n为了让包含 HTML 标签的 JavaScript 字符串具可读性，可以使用换行符（`\\\
+  `），或者关闭字符串并使用加号（`+`）拼接。这是上面 `appleView` 使用后者的方法的示例：\n\n```javascript\n1   var appleView\
+  \ = Backbone.View.extend({\n2     template: _.template(\n3         '<figure>'+\n\
+  4           +'<img src=\"<%= attributes.url %>\">'+\n5           +'<figcaption><%=\
+  \ attributes.name %></figcaption>'+\n6         +'</figure>'),\n```\n\n注意 `<%=` 和\
+  \ `%>` 符号，它们是打印 attributes 对象中 `url` 和 `name` 值的指令。\n\n最后，我们将 `render` 函数添加到 `appleView`\
+  \ 类中。\n\n```javascript\n1   render: function(appleName){\n2     var appleModel =\
+  \ this.collection.where({name:appleName})[0];\n3     var appleHtml = this.template(appleModel);\n\
+  4     $('body').html(appleHtml);\n5   }\n```\n\n我们通过 `where()` 方法在集合中查找模型并使用 `[]`\
+  \ 选择第一个元素。现在，`render` 函数负责加载数据并渲染数据。稍我们将重构该函数，将这两个功能分离到不同的方法中。\n\n整个应用位于 [`rpjs/backbone/collections/index.html](https://github.com/azat-co/rpjs/tree/master/backbone/collections)\
+  \ 文件夹，看起来如下：\n\n\n\n\n```html\n<!DOCTYPE html>\n<html\n<head>\n  <script src=\"\
+  jquery.js\"></script>\n  <script src=\"underscore.js\"></script>\n  <script src=\"\
+  backbone.js\"></script>\n\n  <script>\n    var appleData = [\n      {\n        name:\
+  \ \"fuji\",\n        url: \"img/fuji.jpg\"\n      },\n      {\n        name: \"\
+  gala\",\n        url: \"img/gala.jpg\"\n      }\n    ];\n    var app;\n    var router\
+  \ = Backbone.Router.extend({\n      routes: {\n        \"\": \"home\",\n       \
+  \ \"apples/:appleName\": \"loadApple\"\n      },\n      initialize: function(){\n\
+  \        var apples = new Apples();\n        apples.reset(appleData);\n        this.homeView\
+  \ = new homeView({collection: apples});\n        this.appleView = new appleView({collection:\
+  \ apples});\n      },\n      home: function(){\n        this.homeView.render();\n\
+  \      },\n      loadApple: function(appleName){\n        this.appleView.render(appleName);\n\
+  \      }\n    });\n\n    var homeView = Backbone.View.extend({\n      el: 'body',\n\
+  \      template: _.template('Apple data: <%= data %>'),\n      render: function(){\n\
+  \        this.$el.html(this.template({\n        data: JSON.stringify(this.collection.models)\n\
+  \        }));\n      }\n      //TODO subviews\n    });\n\n    var Apples = Backbone.Collection.extend({\n\
+  \n    });\n    var appleView = Backbone.View.extend({\n      template: _.template('<figure>\\\
+  \n                  <img src=\"<%= attributes.url %>\"/>\\\n                  <figcaption><%=\
+  \ attributes.name %></figcaption>\\\n                </figure>'),\n      //TODO\
+  \ re-write with load apple and event binding\n      render: function(appleName){\n\
+  \        var appleModel = this.collection.where({\n          name:appleName\n  \
+  \      })[0];\n        var appleHtml = this.template(appleModel);\n        $('body').html(appleHtml);\n\
+  \      }\n    });\n    $(document).ready(function(){\n      app = new router;\n\
+  \      Backbone.history.start();\n    })\n\n  </script>\n</head>\n<body>\n  <div></div>\n\
+  </body>\n</html>\n```\n\n在浏览器中打开 `collections/index.html` 文件。你将能够看到来自我们“数据库”的数数据，即：`Apple\
+  \ data: [{\"name\":\"fuji\",\"url\":\"img/fuji.jpg\"},{\"name\":\"gala\",\"url\"\
+  :\"img/gala.jpg\"}]`。\n\n现在，让我们在浏览器中访问 `collections/index.html#apples/fuji` 或 `collections/index.html#apples/gala`。我们期望看到一张带有说明的图片。这是项的详细视图，在这个例中是一个苹果。干得好！\n\
+  \n## 3.5 使用 Backbone.js 和 jQuery 进行事件绑定\n\n在现实生活中，获取数据并不是瞬间完成的，因此让我们重构代码来模拟这一过程。为了获得更好的\
+  \ UI/UX，我们还需要向用户显示一个加载图标（也称为 spinner 或 ajax-loader，见下图），以通知他们信息正在加载。\n\n![Spinner\
+  \ GIF](img/spinner.png)\n\nSpinner GIF\n\n我们在 Backbone 中拥有事件绑定是一件好事。事件绑定并不是 Backbone\
+  \ 特有的功能，因为它是 jQuery 的一部分。但如果没有 Backbone 的组织和代码结构（使用纯 jQuery 的情况下），事情往往会变得更加混乱。例如，我们必须将一个渲染\
+  \ HTML 的函数作为回调传递给数据加载函数，以确保在有实际数据可供显示之前，不会执行渲染函数。\n\n因此，当用户进入详细视图（`apples/:id`）时，我们只调用加载数据的函数。然后，通过适当的事件监听器，我们的视图将自动（这不是笔误）更新自己；当有新数据时（或在数据发生变化时，Backbone.js\
+  \ 支持多个甚至是自定义事件）。\n\n让我们更改路由器中的代码：\n\n```\n...\n    loadApple: function(appleName){\n\
+  \      this.appleView.loadApple(appleName);\n    }\n...\n```\n\n在到达 `appleView`\
+  \ 类之前，其他内容保持不变。我们需要添加一个构造函数或一个 `initialize` 方法，这是 Backbone.js 框架中的一个特殊单词/属性。每当我们创建一个对象的实例时，它都会被调用，例如\
+  \ `var someObj = new SomeObject()`。我们还可以向 `initialize` 函数传递额外的参数，就像我们在视图中做的那样（我们传递了一个键为\
+  \ `collection` 值为 `apples` Backbone 集合的对象）。关于 Backbone.js 构造函数的更多信息，请访问 [backbonejs.org/#View-constructor](http://backbonejs.org/#View-constructor)。\n\
+  \n```\n...\nvar appleView = Backbone.View.extend({\n  initialize: function(){\n\
+  \    //TODO: 创建并设置模型（即一个苹果）\n  },\n...\n```\n\n太极了，我们有了 `initialize` 函数。现在我们需要创建一个代表单个苹果的模型，并在模型上设置适当的事件监听器。我们将使用两种事件：`change`\
+  \ 和一个名为 `spinner` 的自定义事件。为了做到，我们将使用 `on()` 函数，它接收这些属性：`on(event, actions, context)`\
+  \ —— 关于它的更多信息请参阅 [backbonejs.org/#Events-on](http://backbonejs.org/#Events-on)：\n\
+  \n```\n...\nvar appleView = Backbone.View.extend({\n    this.model = new (Backbone.Model.extend({}));\n\
+  \    this.bind('change', this.render);\n    this.bind('spinner',this.showSpinner);\n\
+  },\n...\n```\n\n上面的代码基本上归纳为两点：\n\n1. 当模型变化时调用 `appleView` 的 `render()`。\n2. 当触发\
+  \ `spinner` 事件时调用 `appleView` 的 `showSpinner()`。\n\n到为止一切顺利，对吧？但是 spinner，即 GIF\
+  \ 图标呢？我们在 `appleView` 中创建一个新属性：\n\n```\n...\n  templateSpinner: '<img src=\"spinner.gif\"\
+  \ width=\"30\"/>',\n...\n```\n\n记得路由器中的 `loadApple` 调用吗？这是我们在 `appleView` 中实现该函数的方法：\n\
+  \n```\n...\nloadApple:function(appleName){\n    this.trigger('spinner');\n    //\
+  \ 显示 spinner\n    var view = this;\n    // 我们在闭包内部访问它\n    setTimeout(function(){\n\
+  \    // 模拟从远程服务器获取数据的真实延迟\n      view.model.set(view.collection.where({\n      \
+  \  name:appleName\n      })[0].attributes);\n    },1000);\n},\n...\n```\n\n第一行将触发\
+  \ `spinner` 事件（我们仍然需要编写该函数）。\n\n第二行是为了作用域问题（以便我们在闭包中使用 `appleView`）。\n\n`setTimeout`\
+  \ 函数模拟了远程服务器响应的真实延迟。内部，我们通过使用 `model.set()` 函数和 `model.attributes` 属性（返回模型的属性）将选中模型的属性赋值给视图模型。\n\
+  \n现在我们可以从 `render` 方法中移除多余的代码并实现 `showSpinner` 函数：\n\n```\n  render: function(appleName){\n\
+  \    var appleHtml = this.template(this.model);\n    $('body').html(appleHtml);\n\
+  \  },\n  showSpinner: function(){\n    $('body').html(this.templateSpinner);\n \
+  \ }\n  ...\n```\n\n全部！在浏览器中打开 `index.html#apples/gala` 或 `index.html#apples/fuji`，并在等待苹果图片加载时享受加载动画。\n\
+  \n\n\n\n\n```html\n<!DOCTYPE>\n<html\n<head>\n  <script src=\"jquery.js\"></script>\n\
+  \  <script src=\"underscore.js\"></script>\n  <script src=\"backbone.js\"></script>\n\
+  \n  <script>\n    var appleData = [\n      {\n        name: \"fuji\",\n        url:\
+  \ \"img/fuji.jpg\"\n      },\n      {\n        name: \"gala\",\n        url: \"\
+  img/gala.jpg\"\n      }\n    ];\n    var app;\n    var router = Backbone.Router.extend({\n\
+  \      routes: {\n        \"\": \"home\",\n        \"apples/:appleName\": \"loadApple\"\
+  \n      },\n      initialize: function(){\n        var apples = new Apples();\n\
+  \        apples.reset(appleData);\n        this.homeView = new homeView({collection:\
+  \ apples});\n        this.appleView = new appleView({collection: apples});\n   \
+  \   },\n      home: function(){\n        this.homeView.render();\n      },\n   \
+  \   loadApple: function(appleName){\n        this.appleView.loadApple(appleName);\n\
+  \      }\n    });\n\n    var homeView = Backbone.View.extend({\n      el: 'body',\n\
+  \      template: _.template('Apple data: <%= data %>'),\n      render: function(){\n\
+  \        this.$el.html(this.template({\n          data: JSON.stringify(this.collection.models)\n\
+  \        }));\n      }\n      //TODO subviews\n    });\n\n    var Apples = Backbone.Collection.extend({\n\
+  \n    });\n    var appleView = Backbone.View.extend({\n      initialize: function(){\n\
+  \        this.model = new (Backbone.Model.extend({}));\n        this.model.on('change',\
+  \ this.render, this);\n        this.on('spinner',this.showSpinner, this);\n    \
+  \  },\n      template: _.template('<figure>\\\n                <img src=\"<%= attributes.url\
+  \ %>\"/>\\\n                <figcaption><%= attributes.name %></figcaption>\\\n\
+  \                </figure>'),\n      templateSpinner: '<img src=\"img/spinner.gif\"\
+  \ width=\"30\"/>',\n\n      loadApple:function(appleName){\n        this.trigger('spinner');\n\
+  \        var view = this; //we'll need to access\n        //that inside of a closure\n\
+  \        setTimeout(function(){ //simulates real time\n        //lag when fetching\
+  \ data from the remote server\n          view.model.set(view.collection.where({\n\
+  \            name:appleName\n          })[0].attributes);\n        },1000);\n  \
+  \    },\n\n      render: function(appleName){\n        var appleHtml = this.template(this.model);\n\
+  \        $('body').html(appleHtml);\n      },\n      showSpinner: function(){\n\
+  \        $('body').html(this.templateSpinner);\n      }\n\n    });\n    $(document).ready(function(){\n\
+  \      app = new router;\n      Backbone.history.start();\n    })\n\n  </script>\n\
+  </head>\n<body>\n  <a href=\"#apples/fuji\">fuji</a>a\n  <div></div>\n</body>\n\
+  </html>\n```\n\n## 3.6 结合 Underscore.js 的 Backbone.js 视图子视图\n\n此示例可以在 [rpjs/backbone/subview](https://github.com/azat-co/rpjs/tree/master/backbone/subview)\
+  \ 获取。\n\n子视图（Subviews）是在另一个 Backbone View 内部创建并使用的 View。子视图概念是抽象（分离）UI 事件（例如点击）以及针对结构相似元素（例如苹果）模板的极佳方法。\n\
+  \n子视图的用例可能表格中的行、列表中的列表项、段落、新行等。\n\n我们将重构主页以显示一个精美的苹果列表。每个列表项都将有一个苹果名称和一个带有 `onClick`\
+  \ 事件的“购买”链接。让我们先通过使用标准的 Backbone `extend()` 函数为单个苹果创建一个子视图：\n\n```javascript\n...\n\
+  var appleItemView = Backbone.View.extend({\n  tagName: 'li',\n  template: _.template('')\n\
+  \           +'<a href=\"#apples/<%=name%>\" target=\"_blank\">'\n           +'<%=name%>'\n\
+  \           +'</a>&nbsp;<a class=\"add-to-cart\" href=\"#\">buy</a>'),\n  events:\
+  \ {\n    'click .add-to-cart': 'addToCart'\n  },\n  render: function() {\n    this.$el.html(this.template(this.model.attributes));\n\
+  \  },\n  addToCart: function(){\n    this.model.collection.trigger('addToCart',\
+  \ this.model);\n  }\n});\n...\n```\n\n现在我们可以填充对象 `tagName`、`template`、`events`、`render`\
+  \ 和 `addToCart` 属性/方法。\n\n```javascript\n...\ntagName: 'li',\n...\n```\n\n`tagName`\
+  \ 自动允许 Backbone.js 创建带有指定标签名的 HTML 元素，在这种情况下是 `<li>` —— 列表项。这将是单个苹果的表示，即我们列表中的行。\n\
+  \n```javascript\n...\ntemplate: _.template('')\n         +'<a href=\"#apples/<%=name%>\"\
+  \ target=\"_blank\">'\n         +'<%=name%>'\n         +'</a>&nbsp;<a class=\"add-to-cart\"\
+  \ href=\"#\">buy</a>'),\n...\n```\n\n模板只是一个带有 Underscore.js 指令的字符串。它们被封装在 `<%` 和\
+  \ `%>` 符号中。`<%=` 仅仅意味着打印值。相同的代码可以使用反斜杠转义编写：\n\n```javascript\n...\ntemplate: _.template('\\\
+  \n         <a href=\"#apples/<%=name%>\" target=\"_blank\">\\\n         <%=name%>\\\
+  \n         </a>&nbsp;<a class=\"add-to-cart\" href=\"#\">buy</a>\\\n         '),\n\
+  ...\n```\n\n每个 `<li>` 将有两个锚点元素（`<a>`），分别指向详细苹果视图的链接（#apples/:appleName`）和一个“购买”按钮。现在我们将为“购买”按钮绑定事件监听器：\n\
+  \n```javascript\n...\nevents: {\n  'click .add-to-cart': 'addToCart'\n},\n...\n\
+  ```\n\n该语法遵循此规则：\n\n```javascript\n事件 + jQuery 元素选择器: 函数名\n```\n\n键和值（由冒号分隔的左右部分）都是字符串。例如：\n\
+  \n```javascript\n'click .add-to-cart': 'addToCart'\n```\n\n或者\n\n```javascript\n\
+  'click #load-more': 'loadMoreData'\n```\n\n要渲染列表中的每个项目，我们将对 `this.$el` 使用 jQuery\
+  \ 的 `html()` 函数，它是基于我们的 `tagName` 的 jQuery 元素：\n\n```javascript\n...\nrender: function()\
+  \ {\n  this.$el.html(this.model.attributes));\n},\n...\n```\n\n`addToCart` 方法将使用\
+  \ `trigger()` 通知集合该特定模型（苹果）供用户购买：\n\n```javascript\n...\naddToCart: function(){\n\
+  \  this.model.collection.trigger('addToCart', this.model);\n}\n...\n```\n\n这是 `appleItemView`\
+  \ Backbone 类的完整代码：\n\n```javascript\n...\nvar appleItemView = Backbone.View.extend({\n\
+  \  tagName: 'li',\n  template: _.template('')\n           +'<a href=\"#apples/<%=name%>\"\
+  \ target=\"_blank\">'\n           +'<%=name%>'\n           +'</a>&nbsp;<a class=\"\
+  add-to-cart\" href=\"#\">buy</a>'),\n  events: {\n    'click .add-to-cart': 'addToCart'\n\
+  \  },\n  render: function() {\n    this.$el.html(this.template(this.model.attributes));\n\
+  \  },\n  addToCart: function(){\n    this.model.collection.trigger('addToCart',\
+  \ this.model);\n  }\n});\n...\n```\n\n轻而易举！但是那个应该渲染我们所有项目（苹果）并为 `<li>` 元素提供 `<ul>`\
+  \ 容器的主视图呢？我们需要修改并增强我们的 `homeView`。\n\n首先，我们可以为 `homeView` 添加可被 jQuery 选择器识别的字符串类型额外属性：\n\
+  \n```javascript\n...\nel: 'body',\nlistEl: '.apples-list',\ncartEl: '.cart-box',\n\
+  ...\n```\n\n我们可以在模板中使用上述属性，或者直接在 `homeView` 中硬编码（我们稍后会重构代码）：\n\n```javascript\n\
+  ...\ntemplate: _.template('Apple data: \\\n  <ul class=\"apples-list\">\n  </ul>\\\
+  \n  <div class=\"cart-box\"></div>'),\n...\n```\n\n`initialize` 函数将在 `homeView`\
+  \ 创建（`new homeView()`）时被调用 —— 在其中我们渲染模板（使用我们现在最喜欢的 `html()` 函数），并为集合（一组苹果模型）附加事件监听器：\n\
+  \n```javascript\n...\ninitialize: function() {\n  this.$el.html(this.template);\n\
+  \  this.collection.on('addToCart', this.showCart, this);\n},\n...\n```\n\n\n\n\n\
+  绑定事件的语法在上一节中介绍过。本质上，它是调用了 `homeView` 的 `showCart()` 函数。在这个函数中，我们将 `appleName` 添加到购物车中（同时带有一个换行符，`<br/>`\
+  \ 元素）：\n\n```\n1   ...\n2     showCart: function(appleModel) {\n3       $(this.cartEl).append(appleModel.attributes.name+'<br/>');\n\
+  4     },\n5   ...\n```\n\n最后，是我们期待已久的 `render()` 方法，在该方法中，我们遍历集合中的每个模型（每个苹果），为每个苹果创建一个\
+  \ `appleItemView`，为每个苹果创建一个 `<li>` 元素，并将该元素添加到 `view.listEl` —— 即 DOM 中类名为 `apples-list`\
+  \ 的 `<ul>` 元素中：\n\n```\n 1   ...\n 2   render: function(){\n 3     view = this;\n\
+  \ 4     //这样我们可以在闭包内部使用 view\n 5     this.collection.each(function(apple){\n 6 \
+  \      var appleSubView = new appleItemView({model:apple});\n 7       //创建一个带有 model\
+  \ apple 的子视图\n 8       appleSubView.render();\n 9       //编译模板和单个苹果数据\n10      \
+  \ $(view.listEl).append(appleSubView.$el);\n11       //将来自单个\n12       //苹果的 jQuery\
+  \ 对象附加到 apples-list DOM 元素中\n13     });\n14   }\n15   ...\n```\n\n让我们确保在 `homeView`\
+  \ Backbone View 中没有漏掉任何内容：\n\n```\n 1   ...\n 2   var homeView = Backbone.View.extend({\n\
+  \ 3     el: 'body',\n 4     listEl: '.apples-list',\n 5     cartEl: '.cart-box',\n\
+  \ 6     template: _.template('Apple data: \\\n 7       <ul class=\"apples-list\"\
+  >\\\n 8       </ul>\\\n 9       <div class=\"cart-box\"></div>'),\n10     initialize:\
+  \ function() {\n11       this.$el.html(this.template);\n12       this.collection.on('addToCart',\
+  \ this.showCart, this);\n13     },\n14     showCart: function(appleModel) {\n15\
+  \       $(this.cartEl).append(appleModel.attributes.name+'<br/>');\n16     },\n\
+  17     render: function(){\n18       view = this; //这样我们可以在闭包内部使用 view\n19     \
+  \  this.collection.each(function(apple){\n20         var appleSubView = new appleItemView({model:apple});\n\
+  21         //创建一个带有 model apple 的子视图\n22         appleSubView.render();\n23    \
+  \     //编译模板和单个苹果数据\n24         $(view.listEl).append(appleSubView.$el);\n25   \
+  \      //将来自单个苹果\n26         //的 jQuery 对象附加到 apples-list DOM 元素中\n27       });\n\
+  28     }\n29   });\n30   ...\n你可以点击购买，购物车就会装入你选择的苹果。查看单个苹果不再需要在浏览器的 URL 地址栏中输入它的名称了。我们可以点击该名称，它会打开一个带有详细视图的新窗口。\n\
+  \n![由子视图渲染的苹果列表。](img/backbone-subview1.png)\n\n由子视图渲染的苹果列表。\n\n通过使用子视图，我们复用了所有项目（苹果）的模板，并为它们每一个附加了特定的事件。这些事件足够智能，可以将模型信息传递给其他对象：视图和集合。\n\
+  \n以防万一，这里是子视图示例的完整代码，也可以在 [rpjs/backbone/subview/index.html](https://github.com/azat-co/rpjs/blob/master/backbone/subview/index.html)\
+  \ 获取：\n\n```\n 1 <!DOCTYPE>\n  2 <html>\n  3 <head>\n  4   <script src=\"jquery.js\"\
+  ></script>\n  5   <script src=\"underscore.js\"></script>\n  6   <script src=\"\
+  backbone.js\"></script>\n  7 \n  8   <script>\n  9    var appleData = [\n 10   \
+  \    {\n 11         name: \"fuji\",\n 12         url: \"img/fuji.jpg\"\n 13    \
+  \   },\n 14       {\n 15         name: \"gala\",\n 16         url: \"img/gala.jpg\"\
+  \n 17       }\n 18     ];\n 19     var app;\n 20     var router = Backbone.Router.extend({\n\
+  \ 21       routes: {\n 22         \"\": \"home\",\n 23         \"apples/:appleName\"\
+  : \"loadApple\"\n 24       },\n 25       initialize: function(){\n 26         var\
+  \ apples = new Apples();\n 27         apples.reset(appleData);\n 28         this.homeView\
+  \ = new homeView({collection: apples});\n 29         this.appleView = new appleView({collection:\
+  \ apples});\n 30       },\n 31       home: function(){\n 32         this.homeView.render();\n\
+  \ 33       },\n 34       loadApple: function(appleName){\n 35         this.appleView.loadApple(appleName);\n\
+  \ 36              \n 37     });\n 39     var appleItemView = Backbone.View.extend({\n\
+  \ 40       tagName: 'li',\n 41       // template: _.template\n 42       //<a href=\"\
+  #name%\" target=\"_blank\">'\n 43       //<%=name%>\n 44       //&nbsp;<a class=\"\
+  add-cart\" href=\"#\"></a>\n 45       template: _.template('\\\n 46            \
+  \  <a href=\"#name%\" target=\"_blank\">\\\n 47             <%=name%>\\\n 48   \
+  \          &nbsp;<a class=\"add-cart\" href=\"#\"></a>\n 49       '),\n 50     \
+  \  \n 51       events: {\n 52         'click .add-cart': 'addToCart'\n 53      \
+  \ },\n 54       render: function() {\n 55         this.$el.html(this.template);\n\
+  \ 56       },\n 57       addToCart: function(){\n 58         this.collection.trigger('addToCart',\
+  \ this.model);\n 59       }\n 60     });\n 61     \n 62     var homeView = Backbone.View.extend({\n\
+  \ 63       el: 'body',\n 64       listEl: '.apples-list',\n 65       cartEl: '.cart-box',\n\
+  \ 66       template: _.template('Apple data: \\\n 67         <ul class=\"apples-list\"\
+  >\\\n 68         </ul>\\\n 69         <div class=\"cart-box\"></div>'),\n 70   \
+  \    initialize: function() {\n 71         this.$el.html(this.template);\n 72  \
+  \       this.collection.on('addToCart', this.showCart, this);\n 73       },\n 74\
+  \       showCart: function(appleModel) {\n 75         $(this.cartEl).append(appleModel.attributes.name+'<br/>');\n\
+  \ 76       },\n 77       render: function(){\n 78         view = this; //这样我们可以在闭包内部使用\
+  \ view\n 79         this.collection.each(function(apple){\n 80           var appleSubView\
+  \ = new appleItemView({model:apple});\n 81           //创建一个带有 model apple 的子视图\n\
+  \ 82           appleSubView.render();\n 83           //编译模板和单个苹果数据\n 84        \
+  \   $(view.listEl).append(appleSubView.$el);\n 85           //将来自单个苹果\n 86     \
+  \      //的 jQuery 对象附加到 apples-list DOM 元素中\n 87         });\n 88       }\n 89 \
+  \    });\n 90     \n 91     var Apples = Backbone.Collection.extend({\n 92     });\n\
+  \ 93     \n 94     var appleView = Backbone.View.extend({\n 95       initialize:\
+  \ function(){\n 96         this.model = new (Backbone.Model.extend({}));\n 97  \
+  \       this.model.on('change', this.render, this);\n 98         this.on('spinner',this.showSpinner,\
+  \ this);\n 99       },\n 100       template: _.template('<figure>\\\n 101      \
+  \           <img src=\"<%= attributes.url %>\"/>\\\n 102                 <figcaption><%=\
+  \ attributes.name %></figcaption>\\\n 103               </figure>'),\n 104     \
+  \  templateSpinner: '<img src=\"img/spinner.gif\" width=\"30\"/>',\n 105       loadApple:function(appleName){\n\
+  \ 106         this.trigger('spinner');\n 107         var view = this;\n 108    \
+  \     //我们需要在闭包内部访问它\n 109         setTimeout(function(){\n 110         //模拟从远程服务器\n\
+  \ 111         //获取数据时的实时延迟\n 112           view.model.set(view.collection.where({\n\
+  \ 113             name:appleName\n 114           })[0].attributes);\n 115      \
+  \   },1000);\n 116       },\n 117       render: function(appleName){\n 118     \
+  \    var appleHtml = this.template(this.model);\n 119         $('body').html(appleHtml);\n\
+  \ 120       },\n 121       showSpinner: function(){\n 122         $('body').html(this.templateSpinner);\n\
+  \ 123       }\n 124     });\n 125     \n 126     $(document).ready(function(){\n\
+  \ 127       app = new router;\n 128       Backbone.history.start();\n 129     })\n\
+  \ 130 \n 131   </script>\n 132 </head>\n 133 <body>\n 134   <div></div>\n 135 </body>\n\
+  \ 136 </html>\n```\n\n指向单个项目的链接，例如 `collections/index.html#apples/fuji`，也应该可以通过在浏览器地址栏中输入它来独立工作。\n\
+  \n## 3.7 Super Simple Backbone Starter Kit\n\n为了启动你的 Backbone.js 开发，可以考虑使用 [Azator]\
+  \ 提供的 [Super Simple Backbone Starter Kit](https://github.com/azat-co/super-simple-backbone-starter-kit)，或者类似的项目：\n\
+  \n\n\n\n\n*   [Backbone Boilerplate](http://backboneboilerplate.com/)\n*   [使用 Backbone.js\
+  \ 和 Twitter Bootstrap 的示例应用](http://coenraets.org/blog/2012/02/sample-app-with-backbone-js-and-twitter-bootstrap/)\n\
+  *   更多 [Backbone.js 教程](https://github.com/documentcloud/backbone/wiki/Tutorials%2C-blog-posts-and-example-sites)\n\
+  \n## 3.8 结论\n\n本章前面提到的著名的 [Addy’s](https://github.com/addyosmani) [TodoMVC](http://todomvc.com/)\
+  \ 资源包含了许多浏览器 JavaScript MV* 框架，并带有教程和示例。我经常被问到“你觉得 X 或 Y 怎么样？”关键在于不要在选择前端框架时陷入“分析瘫痪”。通过\
+  \ `Backbone.js` 学习基础知识，因为它并不臃肿和复杂，但在优秀的人手中却被广泛使用且功能强大。然后，选择几个更新、更亮眼的库（例如 `React.js`、`Angular.js`），看看它们如何适应当前项目的特定目标。\n\
+  \n## 4 Node.js 基础：服务器端的 JavaScript\n\nNode.js 是一个极其高效且可扩展的非阻塞 I/O 平台，构建在 Google\
+  \ Chrome V8 引擎及其 ECMAScript 之上。这意味着大多数前端 JavaScript（另一种 ECMAScript 实现）对象、函数和方法在\
+  \ Node.js 中都是可用的。如果你需要复习 JS 特有的基础，请参考 [JavaScript 基础](http://webapplog.com/js-fundamentals/)。\n\
+  \n![](img/node-fun-site.png)\n\n开发者可以从其[网站](http://nodejs.org) 安装 Node.js，并遵循此 Node.js\
+  \ 核心概念概述。关于更详细的 Node.js 指南，请查看 [JS 快速原型：敏捷 JavaScript 开发](http://rpjs.co) 和 [Node\
+  \ School](http://nodeschool.io)。\n\n![](img/node-fun-school.png)\n\n### 4.1 Node.js\
+  \ 中的读取-评估-打印循环（又名 Console）\n\n与许多其他编程语言和平台一样，Node.js 拥有一个通过 `$ node` 命令打开的读取-评估-打印循环工具。提示符会变为\
+  \ `>`，我们可以像 Chrome 开发者控制台一样执行 JavaScript。Node.js 和浏览器在 ECMAScript 实现上存在细微差异（例如 `{}+{}`），但在大多数情况下，结果是相似的。\n\
+  \n![](img/node-fun-console.png)\n\n正如你所看到的，我们可以在控制台中写一整天 JavaScript，但有时我们需要保存脚本以便稍后运行。\n\
+  \n### 4.2 启动 Node.js 脚本\n\n要从文件启动 Node.js 脚本，只需运行 `$ node filename`，例如 `$ node program.js`。如果只需要一组快速执行的语句，可以使用\
+  \ `-e` 选项来运行内联的 JavaScript/Node.js，例如 `$ node -e \"console.log(new Date());\"`。\n\
+  \n### 4.3 Node.js 进程信息\n\n每个正在运行的 Node.js 脚本本质上都是一个进程。例如，`ps aux | grep 'node'`\
+  \ 将输出机器上运行的所有 Node.js 程序。方便的是，开发者可以通过 `process` 对象在代码中访问有进程信息，例如 `node -e \"console.log(process.pid)\"\
+  `：\n\n![使用 pid 和 cwd 的 Node.js 进程示例](img/node-fun-process.png)\n\n使用 pid 和 cwd 的\
+  \ Node.js 进程示例。\n\n### 4.4 访问 Node.js 中的全局作用域\n\n如你从 [JS 基础](http://webapplog.com/)所示，浏览器\
+  \ JavaScript 默认将所有内容放入全局作用域。在 Douglas Crockford 著名的《JavaScript：好的部分》中，这被认为是 JavaScript\
+  \ 的缺点之一。Node.js 的设计不同，所有内容默认都是局部的。在我们需要访问全局变量时，有一个 `global` 对象。同样，当我们需要导出某些内容时，应该显式地进行。\n\
+  \n### 4.5 导出和导入模块\n\n浏览器 JavaScript 的另一个缺点是无法包含模块。脚本本应使用一种不同的语言（HTML）连接在一起，但缺乏依赖关系管理。[CommonJS](http://www.commonjs.org/)\
+  \ 和 [RequireJS](http://requirejs.org/) 通过类似 AJAX 的方法解决了这个问题。Node.js 借用了 CommonJS\
+  \ 概念的许多特性。\n\n在 Node.js 中导出一个对象，使用 `exports.name = object;`，例如：\n\n```\n 1 var messages\
+  \ = {\n 2   find: function(req, res, next) {\n 3   ...\n 4   },\n 5   add: function(req,\
+  \ res, next) {\n 6   ...\n 7   },\n 8   format: 'title | date | author'\n 9 }\n\
+  10 exports.messages = messages;\n```\n\n而在导入上述脚本的文件中（假设路径和文件名为 `route/messages.js`）：\n\
+  \n```\n1 var messages = require('./routes/messages.js');\n```\n\n\n\n\n\n```javascript\n\
+  1 var fs = require('fs');\n2 fs.writeFile('message.txt', 'Hello World!', function\
+  \ (err) {\n3   if (err) throw err;\n4   console.log('Writing is done.');\n5 });\n\
+  ```\n\n### 4.10 Node.js 中的数据流处理\n\n数据流（Streaming data）是一个术语，意味着应用程序在接收数据的同时对其进行处理。这对于大型数据集（如视频或数据库迁移）非常有用。\n\
+  \n这里是一个使用流并输出二进制文件内容的简单示例：\n\n```javascript\n1 var fs = require('fs');\n2 fs.createReadStream('./data/customers.csv').pipe(process.stdout);\n\
+  ```\n\n默认情况下，`Node.js` 对 `streams` 使用缓冲区（`buffers）。\n\n为了获得更沉浸式的训练，请查看 [stream-adventure](http://npmjs.org/stream-adventure)\
+  \ 和 [Stream Handbook](https://github.com/substack/stream-handbook)。\n\n### 4.11\
+  \ 使用 NPM 安装 Node.js 模块\n\n`NPM` 随 `Node.js` 平台一起提供，允许进行无缝的 `Node.js` 包管理。`npm install`\
+  \ 的工作方式与 `Git` 相似，之处在于[它会遍历工作树以寻找当前项目](https://npmjs.org/doc/files/npm-folders.html)。作为入门，请记住我们需要\
+  \ `package.json` 文件或 `node_modules` 文件夹，以便通过 `$ npm install name` 在本地安装模块，例如 `$\
+  \ npm install superagent`；在 `program.js` 中：`var suparagent = requier('superagent');`。\n\
+  \n`NPM` 的最大优点在于它将所有依赖项保留在本地，因此如果模块 `A` 使用模块 `B` `v1.3`，而模块 `C` 使用模块 `B` `v2.0`（与\
+  \ `v1.3` 相比有破坏性更改），那么 `A` 和 `C` 将拥有各自不同版本 `B` 的本地副本。这证明是一种更优的策略，与默认使用全局安装的 `Ruby`\
+  \ 等平台不同。\n\n当项目要在其他应用程序使用的模块时，最佳实践是不将 `node_modules` 文件夹包含在 `Git` 仓库中。然而，对于可部署的应用程序，建议包含\
+  \ `node_modules`。这可以防止因意外更新依赖导致的损坏。\n\n注意：`NPM` 的创建者喜欢称之为 `npm`（[小写](http://npmjs.org/doc/misc/npm-faq.html#Is-it-npm-or-NPM-or-Npm)）。\n\
+  \n### 4.12 使用 HTTP Node.js 模块创建 Hello World 服务器\n\n尽管 `Node.js` 可用于各种任务，但它主要以构建\
+  \ Web 而闻名。由于其异步性质以及如 `net` 和 `http` 等内置模块，`Node.js` 在网络领域非常出色。\n\n这是一个典型的 Hello\
+  \ World 示例，我们创建一个服务器对象，定义请求处理程序（带有 `req` 和 `res` 参数的函数），向接收者传回一些数据并启动整个过程。\n\n```javascript\n\
+  1 var http = require('http');\n2 http.createServer(function (req, res) {\n3   res.writeHead(200,\
+  \ {'Content-Type': 'text/plain'});\n4   res.end('Hello World\\n');\n5 }).listen(1337,\
+  \ '127.0.0.1');\n6 console.log('Server running at http://127.0.0.1:1337/');\n```\n\
+  \n`req` 和 `res` 参数分别拥有有关给定 `HTTP` 请求和响应的所有信息。此外，`req` 和 `res` 可以作为流使用（请看上一节）。\n\n\
+  ### 4.13 调试 Node.js 程序\n\n最好的调试器是 `console.log()`，但有时我们需要查看调用栈并在异步代码中更好地定位。要做到这一点，请在你的代码中放置\
+  \ `debugger` 语句，并使用 `$ node debug program.js` 来启动[调试过程](http://nodejs.org/api/debugger.html)。对于更友好的界面，请下载\
+  \ [node inspector](https://github.com/node-inspector/node-inspector)。\n\n### 4.14\
+  \ 驯服 Node.js 中的回调\n\n[回调](https://github.com/maxogden/art-of-node#callbacks) 能够让\
+  \ `Node.js` 代码异步化，但来自 `Java` 或 `PHP` 且熟悉 `JavaScript` 的程序员在看到描述[回调地狱](http://callbackhell.com/)\
+  \ 的 Node.js 代码时，可能会惊讶：\n\n```javascript\n 1 fs.readdir(source, function(err, files)\
+  \ {\n2   if (err) {\n3     console.log('Error finding files: ' + err)\n4   } else\
+  \ {\n5     files.forEach(function(filename, fileIndex) {\n6       console.log(filename)\n\
+  7       gm(source + filename).size(function(err, values) {\n8         if (err) {\n\
+  9           console.log('Error identifying file size: ' + err)\n10         } else\
+  \ {\n11           console.log(filename + ' : ' + values)\n12           aspect =\
+  \ (values.width / values.height)\n13           widths.forEach(function(width, widthIndex)\
+  \ {\n14             height = Math.round(width / aspect)\n15             console.log('resizing\
+  \ ' + filename + ' ' + height)\n16             })\n17             })\n18       \
+  \    }\n19         }\n20       })\n21     }\n22   }\n23 }\n```\n\n\n\n\n\n第一个路由基本上处理所有指向首页的请求，例如\
+  \ `http://localhost:3000/`；后者处理指向 `/users` 的请求，例如 `http://localhost:3000/users`。这两个条路由在处理\
+  \ URL 时均不区分大小写，并且处理末尾斜线的方式相同。\n\n请求处理程序本身（在此例中为 `index.js`）非常直观：HTTP 请求中的所有内容都在\
+  \ `req` 中，并将结果写入响应 `res` 中：\n\n```\n1 exports.list = function(req, res){\n2   res.send(\"\
+  respond with a resource\");\n3 };\n```\n\n### 5.4 中间件作为 Express.js 的核心\n\n路由上面的每一行都是中间件：\n\
+  \n```\n1 app.use(express.favicon());\n2 app.use(express.logger('dev'));\n3 app.use(express.bodyParser());\n\
+  4 app.use(express.methodOverride());\n5 app.use(app.router);\n6 app.use(express.static(path.join(__dirname,\
+  \ 'public')));\n```\n\n中间件是透传函数，当请求通过每个中间件时，会向请求中添加有用的内容，例如 `req.body` 或 `req.cookie`。更多关于中间件的编写请查看\
+  \ [Express.js 简介：参数、错误处理和其他中间件](http://webapplog.com/intro-to-express-js-parameters-error-handling-and-other-middleware/)。\n\
+  \n### 5.5 Express.js 应用的配置\n\n以下是我们在典型的 Express.js 应用中定义配置的方式：\n\n```\n1 app.set('port',\
+  \ process.env.PORT || 3000);\n2 app.set('views', __dirname + '/views');\n3 app.set('view\
+  \ engine', 'jade');\n```\n\n普通的设置涉及一个名称（例如 `views`）和一个值（例如模板/视图所在文件夹的路径）。定义特定设置有多种方法，例如用于布尔标志的\
+  \ `app.enable`。\n\n### 5.6 Jade 是适用于 Express.js/Node.js 的 Haml\n\nJade 模板引擎在利用空格和缩进方面与\
+  \ Ruby on Rails 的 Haml 相似，例如 `layout.jade`：\n\n```\n1 doctype 5\n2 html\n3   head\n\
+  4     title= title\n5     link(rel='stylesheet', href='/stylesheets/style.css')\n\
+  6   body\n7     block content\n```\n\n除此之外，还可以在 Jade 模板内部利用完整的 JavaScript 代码。\n\n\
+  ### 5.7 关于 Express.js 框架的总结\n\n如你所见，使用 Express.js 创建 MVC Web 应用是轻而易举的。该框架对于 REST\
+  \ API 同样出色。如果你感兴趣，请访问 [教程：使用 Mongo 和 Express.js 构建 Node.js 和 MongoDB JSON REST API\
+  \ 服务器](http://webapplog.com/tutorial-node-js-and-mongodb-json-rest-api-server-with-mongoskin-and-express-js/)\
+  \ 和 [Express.js 简介：使用 Monk 和 MongoDB 构建简单 REST API 应用](http://webapplog.com/intro-to-express-js-simple-rest-api-app-with-monk-and-mongodb/)。\n\
+  \n如果你想了解其他中间件和配置，请查看 [Express.js API 文档](http://expressjs.com/api.html)、[Connect\
+  \ 文档](http://www.senchalabs.org/connect/)，当然还有我们的书籍——[Express.js Guide](http://expressjsguide.com)。对于那些已经熟悉\
+  \ Express.js 基础的人，我推荐阅读 [ExpressWorks](http://webapplog.com/expressworks)。\n\n###\
+  \ 5.8 更新\n\n如果你想了解其他中间件和配置，请查看 [Express.js API 文档](http://expressjs.com/api.html)、[Connect\
+  \ 文档](http://www.senchalabs.org/connect/)，当然还有我们的书籍——[Express.js Guide](http://expressjsguide.com)。\n\
+  \n## 6 关于作者\n\nAzat Mardan 是一位拥有 12 年经验的软件工程师![images/azat.jpg]。Azat Mardan 拥有信息科学学士和硕士学位。\n\
+  \n在空余时间，他会在他的博客 [webapplog.com](http://webapplog.com) 上编写关于 Node.js、Express、Jade、Stylus、Redis、Backbone\
+  \ 等文章。他的博客在 [webapplog.com 在“express.js tutorial”搜索结果中](http://expressjsguide.com)\
+  \ 排名第一。他在 [General Assembly](http://generalas.com) 教授技术技术。\n\n此前，Azat 曾在 [Storify](http://storify.com)\
+  \ 担任 CTO。他是 [500 Startups](http://500.com) 的常客，并曾在 [Hack Reactor](http://hackreactor.com)\
+  \ 当导师。\n\n### 6.1 错误反馈\n\n请通过下方“联系我们”章节列出的其他通信方式帮助我们改进这本书。\n\n### 6.2 联系我们\n\n让我们在互联网上做朋友吧！\n\
+  \n*   在 Twitter 上向 Azat 提问 Node.js 问题：[@azat_co](https://twitter.com/azat_co)\n\
+  *   在 Twitter 上关注 Azat：[azat.co](https://azat.co)\n*   在 GitHub 上关注 Azat：[github.com/azat-co](https://github.com/azat-co)\n\
+  \n**其他联系方式**\n\n*   直接发送邮件给 Azat：`hi@azat.co`\n*   Google 群组：`rpjs@googlegroups.com`\
+  \ 和 [`groups.google.com/forum/#!forum/rpjs`](https://groups.google.com/forum/#!forum/rpjs)\n\
+  *   博客：[webapplog.com](http://webapplog.com)\n*   [HackHall](http://hackhall.com)：面向黑客、时髦人士和海盗的社区\n\
+  \n"

@@ -1,0 +1,169 @@
+name: Javascript Coding： Basics For Absolute Beginners： Step By Step Guide To Learn
+  Coding Quickly
+name_cn: Javascript 编码：绝对初学者基础指南：快速学习编码的步步指南
+slug: javascript-coding-basics-for-absolute-beginners-step-by-step
+toc:
+- - '#'
+  - Javascript 编码：绝对初学者基础指南：快速学习编码的步步指南
+- - '#'
+  - 学习 JavaScript
+- - '##'
+  - JavaScript 的特性
+- - '###'
+  - JavaScript 示例
+- - '#'
+  - JavaScript 注释
+- - '###'
+  - 优点 - JavaScript 注
+- - '##'
+  - JavaScript 注释 - 类型
+- - '##'
+  - 单行注释
+- - '###'
+  - 示例
+- - '##'
+  - 多行注释
+- - '#'
+  - JavaScript 变量
+- - '##'
+  - 正确的 JavaScript 变量
+- - '##'
+  - 错误的 JavaScript 变量
+- - '##'
+  - 示例 - JavaScript 变量
+- - '###'
+  - 输出
+- - '##'
+  - JavaScript 局部变量
+- - '##'
+  - JavaScript 全局变量
+- - '###'
+  - 在函数内部声明 JavaScript 全局变量
+- - '#'
+  - JavaScript 数据类型
+- - '#'
+  - JavaScript 运算符
+- - '##'
+  - JavaScript 算术运算符
+- - '##'
+  - JavaScript 比较运算符
+- - '##'
+  - JavaScript 位运算符
+- - '##'
+  - JavaScript 逻辑运算符
+- - '##'
+  - JavaScript 赋值运算符
+- - '##'
+  - JavaScript 特殊运算符
+- - '#'
+  - JavaScript If-else
+- - '###'
+  - JavaScript If 语句
+- - '###'
+  - JavaScript If...else 语句
+- - '###'
+  - JavaScript 中的 If...else if 语句
+- - '#'
+  - JavaScript Switch
+- - '#'
+  - JavaScript 循环
+- - '##'
+  - 1) JavaScript For 循环
+- - '##'
+  - 2) JavaScript while 循环
+- - '##'
+  - 3) Do while 循环
+- - '##'
+  - 4) JavaScript for in 循环
+- - '#'
+  - JavaScript 函数
+- - '##'
+  - JavaScript 函数语法
+- - '##'
+  - JavaScript 函数参数
+- - '##'
+  - 带返回值的函数
+- - '##'
+  - JavaScript 函数对象
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '###'
+  - 示例 2
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 示例
+- - '##'
+  - 示例
+- - '##'
+  - 示例
+- - '##'
+  - 定义方法 - JavaScript 对象
+- - '##'
+  - 示例
+- - '##'
+  - JavaScript 对象方法
+- - '#'
+  - JavaScript 数组
+- - '##'
+  - 1) JavaScript 数组字面量
+- - '##'
+  - 2) JavaScript 直接创建数组
+- - '##'
+  - 3) JavaScript 构造函数
+- - '##'
+  - JavaScript 数组方法
+- - '#'
+  - JavaScript 字符串
+- - '##'
+  - 1) 字符串字面量
+- - '##'
+  - 2) 字符串对象（使用 `new` 关键字）
+- - '##'
+  - JavaScript 字符串方法
+- - '#'
+  - JavaScript Date 对象
+- - '##'
+  - 构造函数
+- - '##'
+  - JavaScript Date 方法
+- - '###'
+  - JavaScript Date 示例
+- - '###'
+  - 示例 2
+- - '###'
+  - JavaScript 当前时间示例
+- - '###'
+  - 数字时钟示例
+- - '#'
+  - JavaScript 数学
+- - '##'
+  - JavaScript 数学方法
+- - '##'
+  - Math.sqrt(n)
+- - '##'
+  - Math.random()
+- - '##'
+  - Math.pow(m,n)
+- - '##'
+  - Math.floor(n)
+- - '##'
+  - Math.ceil(n)
+- - '##'
+  - Math.round(n)
+- - '#'
+  - JavaScript Number 对象
+- - '##'
+  - JavaScript Number 常数
+- - '##'
+  - JavaScript Number 方法
+- - '#'
+  - JavaScript 布尔
+- - '##'
+  - JavaScript 布尔示例
+- - '##'
+  - 布尔属性
+- - '##'
+  - 布尔方法

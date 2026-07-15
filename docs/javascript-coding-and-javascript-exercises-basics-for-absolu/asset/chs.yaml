@@ -1,0 +1,342 @@
+- "# JavaScript 编码与 JavaScript 练习：初学者基础指南\n\n\n\n![](img/cover00189.jpeg)\n\n\n##\
+  \ 学习 JavaScript\n\nJavaScript 是一种轻量级、跨平台的基于对象的脚本语言。\n\nJavaScript 是一种翻译型语言，而不是编译型语言。JavaScript\
+  \ 解析器（内置在浏览器中）负责为网络浏览器翻译 JavaScript 代码。\n\nJavaScript (`js`) 是一种轻量级的面向对象的编程语言，被许多网站用于编写网页。\n\
+  \n当应用于 HTML 文档时，它是一种解释型的、功能齐全编程语言，能够实现网站的动态交互。它首次发布于 1995 年，允许用户在 Netscape Navigator\
+  \ 浏览器的网页中添加程序。\n\n从那时起，所有其他图形浏览器都接纳了它。用户可以使用 JavaScript 创建现代 Web 应用，实现实时交互，而无需每次都重新加载页面。`Js`\
+  \ 用于标准网站以提供各种交互性和简易性。另一方面，JavaScript 与 Java 语言没有关系。\n\n## JavaScript 的特性\n\n由于内置了环境，所有流行的网络浏览器都支持\
+  \ JavaScript。\n\nJavaScript 的语法和结构基于 C 语言语言。因此它归类为结构化编程语言。JavaScript 是一种弱类型语言，对某些类型具有隐式转换（取决于操作）。JavaScript\
+  \ 是一种通过原型而非类进行继承的面向对象的编程语言。它是一种简单的解释型语言。该语言区分大小写。JavaScript 支持 Windows、macOS 和 Linux\
+  \ 在内的多种操作系统。它赋予了用户对浏览器的完全控制。\n\n![](img/image0126.jpeg)\n\n### JavaScript 示例\n```javascript\n\
+  <script>\ndocument.write(\"Hello by JavaScript\");\n</script>\n```\n\n### JavaScript\
+  \ 注释\n\nJavaScript 注释是传递信息的有效手段。它用于包含代码相关信息，例如警告或建议，以便终端用户理解。内置在浏览器中的 JavaScript\
+  \ 引擎忽略注释。\n\n#### 优点 - JavaScript 注释\n\n为了使其更易理解，它可以用于解释代码以便让终端用户理解。为了避免编写不必要的代码，它还可以防止代码运行。我们有时会添加代码来执行某些操作，但过一段时间后可能需要禁用这些代码。在这种情况下，利用注释是更好的。\n\
+  \n## JavaScript 注释 - 类型\n\n1. 单行注释\n2. 多行注释\n\n### 单行注释\n\n双斜杠 (`//`) 用于指示此类注释。在语句之前之后使用它都是适当的。让我们来看单行注释的示例，即放置在语句之前的注释。\n\
+  \n```javascript\n<script>\n//这是单行注释\ndocument.write(\"javascript\");\n</script>\n\
+  ```\n\n示例\n```javascript\n<script>\nvar a=10;\nvar b=20;\nvar c=a+b;//加上 a 和 b 的值\n\
+  document.write(c);//打印 10 和 20 的和\n</script>\n```\n\n### 多行注释\n\n它可以用于创建单行和多行注释。因此它更实用。它的符号是正斜杠后跟星号，然后是另一个正斜杠。它可能出现在语句之前、之后或中间。\n\
+  \n```javascript\n<script>\n/*这是多行注释。\n这些内容不会被显示*/\ndocument.write(\"example of javascript\
+  \ multiline comment\");\n</script>\n```\n\n# JavaScript 变量\n\nJavaScript 变量仅仅是存储位置的名称。在\
+  \ JavaScript 中，有两种变量：局部变量和全局变量。在声明 JavaScript 变量时，有一些需要遵循的指南（也称为标识符）。\n\n名称必须以字母（a\
+  \ 到 z 或 A 到 Z）、下划线 (`_`) 或美元符号 (`$`)开头。我们可以在初始字母后放置数字（0 到 9），例如 `value1`。JavaScript\
+  \ 中的变量区分大小写，所以 `x` 和 `X` 是两个独立的变量。\n\n## 正确的 JavaScript 变量\n```javascript\nvar x\
+  \ = 10;\nvar _value=\"sonoo\";\n```\n\n## 错误的 JavaScript 变量\n```javascript\nvar\
+  \ 123=30;\nvar *aa=320;\n```\n\n### 示例 - JavaScript 变量\n```javascript\n<script>\n\
+  var x = 10;\nvar y = 20;\nvar z=x+y;\ndocument.write(z);\n</script>\n```\n#### 输出\n\
+  30\n\n## JavaScript 局部变量\n\nJavaScript 中的局部变量在块或函数内部。只能从函数或块内部访问。考虑以下场景：\n\n```javascript\n\
+  <script>\nfunction abc(){\nvar x=10;//局部变量\n}\n</script>\n```\n或者，\n```javascript\n\
+  <script>\nIf(10<13){\nvar y=20;//JavaScript 局部变量\n}\n</script>\n```\n\n## JavaScript\
+  \ 全局变量\n\nJavaScript 中的全局变量可以从任何函数访问。全局变量是在函数外部或使用 window 对象声明的变量。考虑以下场景：\n\n```javascript\n\
+  <script>\nvar data=200;//全局变量\nfunction a(){\ndocument.writeln(data);\n}\nfunction\
+  \ b(){\ndocument.writeln(data);\n}\na();//调用 JavaScript 函数\nb();\n</script>\n```\n\
+  \n\n\n\n\nJavaScript 中的全局变量是在函数外部声明的，或者通过 `window` 对象声明。你可以从任何函数访问它。\n\n让我们来看一个简单的全局变量\
+  \ JavaScript 示例。\n\n```javascript\n<script>  \n  var value=50;//全局变量  \n  function\
+  \ a(){  \n  alert(value);  \n  }  \n  function b(){  \n  alert(value);  \n  }  \n\
+  </script>\n```\n\n### 在 JavaScript 函数内部声明全局变量\n\n你必须利用 `window` 对象在函数内部声明 JavaScript\
+  \ 全局变量。考虑以下场景：\n\n1.  `window.value=90;`\n\n现在它可以在任何函数内部声明，并从任何函数内部访问。考虑以下场景：\n\n\
+  ```javascript\nfunction m(){  \n  window.value=100;//通过 window 对象声明全局变量  \n}  \n\
+  function n(){  \n  alert(window.value);//从其他函数访问全局变量  \n} \n```\n\n### 在 JavaScript\
+  \ 中，全局变量的内部机制\n\n当你在函数外部声明变量时，它会被添加到 `window` 对象中。你也可以使用 `window` 对象来访问它。考虑以下场景：\n\
+  \n```javascript\nvar value=50;  \nfunction a(){  \n  alert(window.value);//访问全局变量\
+  \  \n} \n```\n\n# JavaScript 数据类型\n\nJavaScript 提供了不同的数据类型来存储各种类型的值。在 JavaScript\
+  \ 中，有两种数据类型。\n\n1. 原始数据类型（Primitive data type）\n2. 非原始（引用）数据类型\n\nJavaScript 是一种动态类型语言，这意味着你不需要指定变量的类型，因为\
+  \ JavaScript 引擎动态地使用它。要指定数据类型，必须使用 `var`。它可以存储任何类型的值，包括数字、字符串等。考虑以下场景：\n\n```javascript\n\
+  var a=40;//存储数字  \nvar b=\"Rahul\";//存储字符串  \n```\n\n![](img/image00127.jpeg)\n\
+  ![](img/image00128.jpeg)\n\n# JavaScript 运算符\n\nJavaScript 中的运算符是用于对操作数执行操作的符号。考虑以下场景：\n\
+  \n```javascript\nvar sum=10+20;  \n```\n\n在这里，`+` 是算术运算符\n\n而 `=` 是赋值运算符。\n\nJavaScript\
+  \ 中运算符的类型。\n\n1. 算术运算符\n2. 比较（关系）运算符\n3. 位运算符\n4. 逻辑运算符\n5. 赋值运算符\n6. 特殊运算符\n\n\
+  ## JavaScript 算术运算符\n\n为了对操作数进行算术操作，使用了算术运算符。JavaScript 算术运算符是下面列出的运算符。\n\n![](img/image00129.jpeg)\n\
+  \n## JavaScript 比较运算符\n\nJavaScript 中的比较运算符比较两个操作数。以下是比较运算符：\n\n![](img/image00130.jpeg)\n\
+  \n## JavaScript 位运算符\n\n在操作数上，位运算符执行按位操作。以下是位运算符：\n\n![](img/image00131.jpeg)\n\n\
+  ## JavaScript 逻辑运算符\n\nJavaScript 逻辑运算符是下面列出的运算符。\n\n![](img/image00132.jpeg)\n\n\
+  ## JavaScript 赋值运算符\n\n![](img/image00133.jpeg)\n\n## JavaScript 特殊运算符\n\n![](img/image00134.jpeg)\n\
+  \n# JavaScript If-else\n\n![](img/image00135.jpeg)\n\n### JavaScript If 语句\n\n只有当\
+  \ if 表达式为真时，它才会评估内容。JavaScript 中的 `if` 语句具有以下签名。\n\n```javascript\nif(expression){\
+  \  \n//要评估的内容  \n}  \n```\n\n![](img/image00136.jpeg)\n\n示例\n\n```javascript\n<script>\
+  \  \n  var a=20;  \n  if(a>10){  \n  document.write(\"value of a is greater than\
+  \ 10\");  \n  }  \n</script>\n```\n输出\nvalue of a is greater than 10\n\n### JavaScript\
+  \ If...else 语句\n\n它通过评估内容来确定条件是真是假。JavaScript 中 `if-else` 语句的语法所示：\n\n```javascript\n\
+  if(expression){  \n//如果条件为真，则评估的内容  \n}  \nelse{  \n//如果条件为假，则评估的内容  \n}  \n```\n\
+  \n![](img/image00137.jpeg)\n示例\n\n```javascript\n<script>  \n  var a=20;  \n  if(a%2==0){\
+  \  \n  document.write(\"a is even number\");  \n  }  \n  else{  \n  document.write(\"\
+  a is odd number\");  \n  }  \n</script>\n```\n输出\na is even\n\n### If...else 语句\
+  \ – 在 Javascript 中\n\n当一个或多个表达式为真时，它会分析内容。JavaScript 中的 `else if` 语句具有以下签名。\n\n\
+  ```javascript\nif(expression1){  \n//如果 expression1 为真，则评估的内容  \n}  \nelse if(expression2){\
+  \  \n//如果 expression2 为真，则评估的内容  \n}  \nelse if(expression3){  \n//如果 expression3\
+  \ 为真，则评估的内容  \n}  \nelse{  \n// 如果没有表达式为真，则评估的内容  \n}  \n```\n\n示例\n\n```javascript\n\
+  <script>  \n  var a=20;  \n  if(a==10){  \n  document.write(\"a is equal to 10\"\
+  );  \n  }  \n  else if(a==15){  \n  document.write(\"a is equal to 15\");  \n  }\
+  \  \n  else if(a==20){  \n  document.write(\"a is equal to 20\");  \n  }  \n  else{\
+  \  \n  document.write(\"a is not equal to 10, 15 or 20\");  \n  }  \n</script>\n\
+  ```\n输出\na is equal to 20\n\n# JavaScript Switch\n\n`switch` 语句用于将多个表达式组合到一起代码中。它与我们在上一页学过的\
+  \ `else if` 语句相同。然而，它比 `if..else..if` 更用，因为它可以用于整数、字符和其他变量。\n\n`switch` 语句的签名所示：\n\
+  \n```javascript\nswitch(expression){  \n  case value1:  \n  要执行的代码;  \n  break;\
+  \  \n  case value2:  \n  要执行的代码;  \n  break;  \n  ......\n  default:  \n  如果上述值都不匹配，则执行的代码；\
+  \  \n}  \n```\n\n简单示例 - switch 语句 - javascript。\n\n```javascript\n<script>  \n \
+  \ var grade='B';  \n  var result;  \n  switch(grade){  \n    case 'A': result=\"\
+  A Grade\";  \n    break;  \n    case 'B': result=\"B Grade\";  \n    break;  \n\
+  \    case 'C': result=\"C Grade\";  \n    break;  \n    default:  \n    result=\"\
+  No Grade\";  \n  }  \n  document.write(result);  \n</script>\n```\n输出\nB Grade\n\
+  \nswitch 语句的行为\n\n```javascript\n<script>  \n  var grade='B';  \n  var result; \
+  \ \n  switch(grade){  \n    case 'A':  \n    result+=\"A Grade\";  \n    case 'B':\
+  \  \n    result+=\"B Grade\";  \n    case 'C':  \n    result+=\"C Grade\";  \n \
+  \   default:  \n    result+=\"No Grade\";  \n  }  \n  document.write(result);  \n\
+  </script>\n```\n输出\nundefined B Grade No Grade\n\n# JavaScript 循环\n\n`for`、`while`、`do\
+  \ while` 和 `for-in` 循环用于在 JavaScript 中迭代代码段。它减少了代码的大小。它们最出现在数组中。\n\n1. for 循环\n\
+  2. while 循环\n3. do-while 循环\n4. for-in 循环\n\n## 1) JavaScript For 循环\n\nJavaScript\
+  \ 中的 `for` 循环按照指定的次数迭代组件。如果迭代次数已知，则应该使用它。`for` 循环的语法所示：\n\n```javascript\nfor(initialization;\
+  \ condition; increment) {  \n  要执行的代码  \n} \n```\n\n示例\n\n```javascript\n<script>\
+  \  \n  for (i=1; i<=5; i++) {  \n  document.write(i + \"<br/>\")  \n  }  \n</script>\n\
+  ```\n输出：\n1\n2\n3\n4\n5\n\n## 2) JavaScript while 循环\n\nJavaScript 中的 `while` 循环无限次迭代组件。如果迭代次数未知，则应该使用它。`while`\
+  \ 循环的语法所示：\n\n```javascript\nwhile(condition) {  \n  要执行的代码  \n} \n```\n\n示例\n\n\
+  ```javascript\n<script>  \n  var i=11;  \n  while (i<=15) {  \n  document.write(i\
+  \ + \"<br/>\");  \n  i++;  \n  }  \n</script>\n```\n输出\n11\n12\n13\n14\n15\n\n##\
+  \ 3) Do while 循环\n\nJavaScript `do while` 循环与 `while` 循环一样，无限迭代元素。无论条件是真是假，代码都至少执行一次。以下是\
+  \ `do while` 循环的语法：\n\n```javascript\ndo{\n  要执行的代码\n} \n```\n\n\n\n\n\n```javascript\n\
+  }while (condition);\n```\n\n### 示例\n\n```html\n<script>\n  var i=21;\n  do{\n  \
+  \  document.write(i + \"<br/>\");\n    i++;\n  }while (i<=25);\n</script>\n```\n\
+  \n**输出:**\n21\n22\n23\n24\n25\n\n## 4) JavaScript for in 循环\n\nJavaScript 的 `for\
+  \ in` 循环用于遍历对象的属性。\n\n# JavaScript 函数\n\n为了执行操作，需要 JavaScript 函数。为了重用代码，我们可以多次调用\
+  \ JavaScript 函数。\n\n### 使用 JavaScript 的优势\n\nJavaScript 函数主要有两个优势：\n\n ** **代码的可重用性**：因为我们可以多次调用函数，所以可以节省编码时间。\n\
+  - **更少的代码**：更少的代码意味着我们的程序更紧凑。为了完成一项常见任务，我们不需要每次都编写许多行代码。\n\n### JavaScript 函数语法\n\
+  \n```javascript\nfunction functionName([arg1, arg2, ...argN]){\n  //要要执行的代码\n}\n\
+  ```\n\n### 示例\n\n```html\n<script>\n  function msg(){\n    alert(\"hello! this is\
+  \ message\");\n  }\n</script>\n<input type=\"button\" onclick=\"msg()\" value=\"\
+  call function\"/>\n```\n\n### JavaScript 函数参数\n\n```html\n<script>\n  function getcube(number){\n\
+  \    alert(number*number*number);\n  }\n</script>\n<form>\n  <input type=\"button\"\
+  \ value=\"click\" onclick=\"getcube(4)\"/>\n</form>\n```\n\n### 带返回值的函数\n\n我们可以通过调用在程序中使用返回返回值的函数。让我们看一个返回返回值的函数作为示例。\n\
+  \n```html\n<script>\n  function getInfo(){\n    return \"hello javatpoint! How r\
+  \ u?\";\n  }\n</script>\n<script>\n  document.write(getInfo());\n</script>\n```\n\
+  \n**输出**\nhello javatpoint! How r u?\n\n### JavaScript 函数对象\n\nJavaScript 中的 `Function\
+  \ Object() { [native code] }` 用于生成一个新的 `Function` 对象。它在全局范围内运行代码。然而，当我们直接调用函数 `Object()\
+  \ { [native code] }` 时，会动态构建一个函数，但是不安全的。\n\n### 语法\n\n```javascript\nnew Function\
+  \ ([arg1[, arg2[, ....argn]],] functionBody)\n```\n\n![](img/image00138.jpeg)\n\
+  ![](img/image00139.jpeg)\n\n### JavaScript 函数对象\n\n### 示例\n\n```html\n<script>\n\
+  \  var add=new Function(\"num1\",\"num2\",\"return num1+num2\");\n  document.writeln(add(2,5));\n\
+  </script>\n```\n**输出:**\n7\n\n### 示例 2\n\n```html\n<script>\n  var pow=new Function(\"\
+  num1\",\"num2\",\"return Math.pow(num1,num2)\");\n  document.writeln(pow(2,3));\n\
+  </script>\n```\n**输出:**\n8\n\n# JavaScript 对象\n\nJavaScript 对象是一个基于状态和行为的实体（属性和方法）。例如，汽车、笔、自行车、椅子、玻璃杯、键盘和显示器。\n\
+  \nJavaScript 是一种面向对象的编程语言。在 JavaScript 中，一切皆都是对象。\n\nJavaScript 是一种基于模板的语言，而不是基于类的。要获取对象，我们不需要构建类。然而，我们直接指导对象的创建。\n\
+  \n![](img/image00140.jpeg)\n![](img/image00141.jpeg)\n\n**示例**\n\n```html\n<script>\n\
+  \  emp={id:102,name:\"Shyam Kumar\",salary:40000}\n  document.write(emp.id+\" \"\
+  +emp.name+\" \"+emp.salary);\n</script>\n```\n**输出**\n102 Shyam Kumar 40000\n\n\
+  ![](img/image00142.jpeg)\n\n**示例**\n\n```html\n<script>\n  var emp=new Object();\n\
+  \  emp.id=101;\n  emp.name=\"Ravi Malik\";\n  emp.salary=50000;\n  document.write(emp.id+\"\
+  \ \"+emp.name+\" \"+emp.salary);\n</script>\n```\n**输出**\n101 Ravi Malik 50000\n\
+  \n![](img/image00143.jpeg)\n\n**示例**\n\n```html\n<script>\n  function emp(id,name,salary){\n\
+  \    this.id=id;\n    this.name=name;\n    this.salary=salary;\n  }\n  e=new emp(103,\"\
+  Vimal Jaiswal\",30000);\n  document.write(e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n\
+  ```\n**输出**\n103 Vimal Jaiswal 30000\n\n## 定义方法 - JavaScript 对象\n\n在 JavaScript\
+  \ 对象中，我们可以指定方法。然而，在定义方法之前，我们必须向函数添加一个与方法同名的属性。\n\n**示例**\n\n```html\n<script>\n\
+  \  function emp(id,name,salary){\n    this.id=id;\n    this.name=name;\n    this.salary=salary;\n\
+  \    this.changeSalary=changeSalary;\n    function changeSalary(otherSalary){\n\
+  \      this.salary=otherSalary;\n    }\n  }\n  e=new emp(103,\"Sonoo Jaiswal\",30000);\n\
+  \  document.write(e.id+\" \"+e.name+\" \"+e.salary);\n  e.changeSalary(45000);\n\
+  \  document.write(\"<br>\"+e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n```\n\
+  **输出**\n103 Sonoo Jaiswal 30000\n103 Sonoo Jaiswal 45000\n\n## JavaScript 对象\n\n\
+  ![](img/image00144.jpeg)\n![](img/image00145.jpeg)\n![](img/image00146.jpeg)\n![](img/image00147.jpeg)\n\
+  \n# JavaScript 数组\n\nJavaScript 数组是一个表示相同类型对象的对象。在 JavaScript 中，有三种创建数组的方法：\n1.\
+  \ 数组字面量\n2. 直接（`new` 关键字）\n3. 数组构造函数\n\n### 1) 数组字面量\n\n双引号用于构建字符串字面量。以下是使用数组字面量创建数组的语法：\n\
+  \n```javascript\nvar arrayname=[\"value1\",\"value2\"...valueN];\n```\n\n**示例**\n\
+  \n```html\n<script>\n  var emp=[\"Sonoo\",\"Vimal\",\"Ratan\"];\n  for(i=0;i<emp.length;i++){\n\
+  \    document.write(emp[i]+\"<br>\");\n  }\n</script>\n```\n**输出:**\nSonoo\nVimal\n\
+  Ratan\n\n### 2) 直接创建数组\n\n`new` 关键字用于创建数组实例。以下是直接创建数组的语法：\n\n```javascript\nvar\
+  \ arrayname=new Array();\n```\n\n**示例**\n\n```html\n<script>\n  var emp=new Array();\n\
+  \  emp[0]=\"Arun\";\n  emp[1]=\"Varun\";\n  emp[2]=\"John\";\n  for(i=0;i<emp.length;i++){\n\
+  \    document.write(emp[i]+\"<br>\");\n  }\n</script>\n```\n**输出:****\n\n### 3)\
+  \ 数组构造函数\n\n为了不需要显式提供值，你必须通过向函数 `Array() { [native code] }` 传递参数来创建数组实例。\n\n```javascript\n\
+  var emp=new Array(\"value1\",\"value2\",\"value3\");\n```\n\n**示例**\n\n```html\n\
+  <script>\n  var emp=new Array(\"Jai\",\"Vijay\",\"Smith\");\n  for(i=0;i<emp.length;i++){\n\
+  \    document.write(emp[i]+\"<br>\");\n  }\n</script>\n```\n**输出:**\nJai\nVijay\n\
+  Smith\n\n## JavaScript 数组方法\n\n![](img/image00148.jpeg)\n![](img/image00149.jpeg)\n\
+  ![](img/image00150.jpeg)\n![](img/image00151.jpeg)\n![](img/image00152.jpeg)\n\n\
+  # JavaScript 字符串\n\nJavaScript 字符串是表示字符字符串的对象。在 JavaScript 中，有两种方法字符串：\n1. 字符串字面量\n\
+  2. 字符串对象（使用 `new` 关键字）\n\n### 1) 字符串字面量\n\n双引号用于构建字符串字面量。以下是使用字符串字面量创建字符串的语法：\n\n\
+  ```javascript\nvar stringname=\"string value\";\n```\n\n**示例**\n\n```html\n<script>\n\
+  \  var str=\"This is string literal\";\n  document.write(str);\n</script>\n```\n\
+  **输出:**\nThis is string literal\n\n### 2) 字符串对象（使用 `new` 关键字）\n\n以下是使用 `new` 关键字创建字符串对象的语法：\n\
+  \n```javascript\nvar stringname=new String(\"string literal\");\n```\n\n**示例**\n\
+  \n```html\n<script>\n  var stringname=new String(\"hello javascript string\");\n\
+  \  document.write(stringname);\n</script>\n```\n**输出:**\nhello javascript string\n\
+  \n## JavaScript 字符串方法\n\n![](img/image00153.jpeg)\n![](img/image00154.jpeg)\n![](img/image00155.jpeg)\n\
+  \n# JavaScript Date 对象\n\n你可以使用 JavaScript Date 对象获取年份、月份和日期。JavaScript Date 对象可以在网页上显示计时器。\n\
+  \n\n\n\n要生成日期对象（date object），你可以使用多种 `Date` 构造函数。它具有获取和设置日、月、年、小时、分钟和秒的方法。\n\n##\
+  \ 构造函数\n\n4 种 `Date` 构造函数的变体：\n\n1. `Date()`\n2. `Date(milliseconds)`\n3. `Date(dateString)`\n\
+  4. `Date(year, month, day, hours, minutes, seconds, milliseconds)`\n\n## JavaScript\
+  \ Date 方法\n\n![](img/image00156.jpeg)\n![](img/image00157.jpeg)\n![](img/image00158.jpeg)\n\
+  ![](img/image00159.jpeg)\n![](img/image00160.jpeg)\n\n### JavaScript Date \n\n1.\
+  \ 当前日期和时间：<span id=\"txt\"></span>\n\n2. <script>\n```javascript\nvar today=new\
+  \ Date();\ndocument.getElementById('txt').innerHTML=today;\n```\n</script>\n\n输出\n\
+  \nCurrent Date and Time: Sat Feb 12 2022 23:47:52 GMT+0530 (India Standard Time)\n\
+  \n示例 2\n\n1. <script>\n```javascript\nvar date=new Date();\nvar day=date.getDate();\n\
+  var month=date.getMonth()+1;\nvar year=date.getFullYear();\ndocument.write(\"<br>Date\
+  \ is: \"+day+\"/\"+month+\"/\"+year);\n```\n</script>\n\n### JavaScript 当前时间示例\n\
+  \n1. 当前时间：<span id=\"txt\"></span>\n\n2. <script>\n```javascript\nvar today=new\
+  \ Date();\nvar h=today.getHours();\nvar m=today.getMinutes();\nvar s=today.getSeconds();\n\
+  document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s;\n```\n</script>\n\n\
+  ### 数字钟示例\n\n让我们来看一个使用 JavaScript 日期对象显示数字钟的简单示例。\n\n在 JavaScript 中，你可以使用 `setTimeout()`\
+  \ 或 `setInterval()` 方法指定间隔时间。\n\n示例\n\n1. 当前时间：<span id=\"txt\"></span>\n\n2. <script>\n\
+  ```javascript\nwindow.onload=function(){getTime()}\nfunction getTime(){\n  var today=new\
+  \ Date();\n  var h=today.getHours();\n  var m=today.getMinutes();\n  var s=today.getSeconds();\n\
+  \  // 在数字小于 10 时前面加一个零\n  m=checkTime(m);\n  s=checkTime(s);\n  document.getElementById('txt').innerHTML=h+\"\
+  :\"+m+\":\"+s;\n  setTimeout(function(){getTime()},1000);\n}\n//setInterval(\"getTime()\"\
+  ,1000);//另一种方法\nfunction checkTime(i){\n  if (i<10){\n    i=\"0\" + i;\n  }\n  return\
+  \ i;\n}\n```\n</script>\n\n### JavaScript Math\n\n为了进行数学运算，JavaScript `math` 对象提供了各种常量和方法。与日期对象不同，它没有构造函数。\n\
+  \n### JavaScript Math 方法\n\n![](img/image00161.jpeg)\n![](img/image00162.jpeg)\n\
+  ![](img/image00163.jpeg)\n\n### Math.sqrt(n)\n\n`math.sqrt(n)` 方法返回数的平方根。\n\n1.\
+  \ 17 的平方根是：<span id=\"p1\"></span>\n\n2. <script>\n```javascript\ndocument.getElementById('p1').innerHTML=Math.sqrt(17);\n\
+  ```\n</script>\n\n输出：\n\n17 的平方根是：4.123105625617661\n\n### Math.random()\n\nJavaScript\
+  \ 中的 `math.random()` 方法返回一个 0 到 1 之间的随机数。\n\n1. 随机数是：<span id=\"p2\"></span>\n\n\
+  2. <script>\n```javascript\ndocument.getElementById('p2').innerHTML=Math.random();\n\
+  ```\n</script>\n\n输出：\n\n随机数是：0.02157876559753591\n\n### Math.pow(m,n)\n\n1. 3 的\
+  \ 4 次方是：<span id=\"p3\"></span>\n\n2. <script>\n```javascript\ndocument.getElementById('p3').innerHTML=Math.pow(3,4);\n\
+  ```\n</script>\n\n输出：\n\n3 的 4 次方是：81\n\n### Math.floor(n)\n\n`math.floor(n)` 方法返回数的最小整数。例如，3.7\
+  \ 返回 3，5.9 返回 5，以此类推。\n\n1. 4.6 的向下取整是：<span id=\"p4\"></span>\n\n2. <script>\n\
+  ```javascript\ndocument.getElementById('p4').innerHTML=Math.floor(4.6);\n```\n</script>\n\
+  \n输出：\n\n4.6 的向下取整是：4\n\n### Math.ceil(n)\n\nJavaScript 中的 `math.ceil(n)` 方法返回给定值的最大整数。例如，3.7\
+  \ 返回 4，5.9 返回 6，以此类推。\n\n1. 4.6 的向上取整是：<span id=\"p5\"></span>\n\n2. <script>\n\
+  ```javascript\ndocument.getElementById('p5').innerHTML=Math.ceil(4.6);\n```\n</script>\n\
+  \n输出：\n\n4.6 的向上取整是：5\n\n### Math.round(n)\n\nJavaScript 中的数学运算。`round(n)` 方法为提供的数字提供最近的舍入整数。如果小数部分等于或大于\
+  \ 0.5，则赋值为较大的值 1；否则，赋值为较小的值 0。例如，3.7 返回 4，3.3 返回 3，5.9 返回 6，以此类推。\n\n1. 4.3 的四舍五入是：<span\
+  \ id=\"p6\"></span>\n2. 4.7 的四舍五入是：<span id=\"p7\"></span>\n\n3. <script>\n```javascript\n\
+  document.getElementById('p6').innerHTML=Math.round(4.3);\ndocument.getElementById('p7').innerHTML=Math.round(4.7);\n\
+  ```\n</script>\n\n输出：\n\n4.3 的四舍五入是：4\n4.7 的四舍五入是：5\n\n### JavaScript Number\n\n\
+  `Number` 对象表示整数或浮点数。它用于转换和解析字符串表达式。`Number()` 构造函数返回指定参数的数值。如果参数无法转换为数字，则返回 `NaN`。\n\
+  \n`isNaN()` 方法判断值是否为 `NaN`。`Number.isFinite()` 方法判断值是否为有限数字。`Number.isInteger()`\
+  \ 方法判断值是否为整数。`Number.parseInt()` 和 `Number.parseFloat()` 方法分别将字符串解析为整数和浮点数。\n\n\
+  `Number.toString()` 方法返回数字的字符串表示。`Number.toFixed()` 方法返回带有小数点后指定数字数的数字字符串。\n\n`Number.prototype.toPrecision()`\
+  \ 和 `toExponential()` 方法用于格式化数字。`Number.MAX_VALUE` 和 `Number.MIN_VALUE` 常量代表最大和最小的数值。`Number.MAX_SAFE_INTEGER`\
+  \ 和 `Number.MIN_SAFE_INTEGER` 常量代表安全整数的范围。\n\n`Number.PI` 常量提供圆周长与直径比的值。`Number.E`\
+  \ 常量提供欧数的值。\n\n`Number.Object()` 用于创建 `Number` 对象。`Number.from()` 用于从数组或迭代对象创建数字。`Number.reverse()`\
+  \ 用于反转数组。`Number.sort()` 用于排序数组。`Number.map()` 用于映射数组。`Number.filter()` 用于过滤数组。`Number.reduce()`\
+  \ 用于归约数组到单个值。`Number.find()` 用于查找数组元素。`Number.findIndex()` 用于查找数组元素的索引。`Number.some()`\
+  \ 用于检查数组是否至少有一个元素通过测试。`Number.every()` 用于检查数组是否所有元素都通过测试。`Number.slice()` 用于提取数组部分。`Number.splice()`\
+  \ 用于修改数组。`Number.push()` 用于向数组添加元素。`Number.pop()` 用于移除最后一个元素。`Number.shift()` 用于移除第一个元素。`Number.unshift()`\
+  \ 用于在数组开头添加元素。`Number.concat()` 用于合并数组。`Number.join()` 用于将数组连接成字符串。\n\n（注：原文后续部分存在大量重复的描述，翻译时已根据要求进行处理并保留核心逻辑）\n\
+  \n\n\n\n#### 输出\n\n![](img/image00171.jpeg)\n\n### 拼接两个字符串\n\n### 排除它们的第一个字符\n\n\
+  #### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+  >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>除第一个字符外拼接两个字符串的\
+  \ JavaScript 程序</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+  \ CODE\n\n```javascript\nfunction concatenate(str1, str2) {\n  str1 = str1.substring(1,\
+  \ str1.length);\n  str2 = str2.substring(1, str2.length);\n  return str1 + str2;\n\
+  }\nconsole.log(concatenate(\"PHP\",\"JS\"));\nconsole.log(concatenate(\"A\",\"B\"\
+  ));\nconsole.log(concatenate(\"AA\",\"BB\"));\n```\n\n#### Output:\nHPS\nAB\n\n\
+  ### 创建一个新字符串 \n\n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+  \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n\
+  ![](img/image00172.jpeg)\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+  \ CODE\n\n```javascript\nfunction without_first_end(str) {\n  return str.substring(1,\
+  \ str.length - 1);\n}\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+  console.log(without_first_end('PHP'));\n```\n\n#### Output:\navaScrip\nH\n\n###\
+  \ 第一次未重复的字符\n\n## ![](img/image00173.jpeg)\n\n#### HTML CODE\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>查找第一个未重复的字符</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n\n```javascript\n\
+  function find_FirstNotRepeatedChar(str) {\n  var arra1 = str.split('');\n  var result\
+  \ = '';\n  var ctr = 0;\n  for (var x = 0; x < arra1.length; x++) {\n    ctr = 0;\n\
+  \    for (var y = 0; y < arra1.length; y++) {\n      if (arra1[x] === arra1[y])\
+  \ {\n        ctr+= 1;\n      }\n    }\n    if (ctr < 2) {\n      result = arra1[x];\n\
+  \      break;\n    }\n  }\n  return result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n\
+  ```\n\n#### 输出\ne\n\n### 统计字符串内元音的数量\n\n### ![](img/image00174.jpeg)\n\n#### HTML\
+  \ CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8 />\n \
+  \ <title>统计字符串内元音的数量</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+  \ CODE\n\n```javascript\nfunction vowel_count(str1) {\n  var vowel_list = 'aeiouAEIOU';\n\
+  \  var vcount = 0;\n  for(var x = 0; x < str1.length ; x++) {\n    if (vowel_list.indexOf(str1[x])\
+  \ !== -1) {\n      vcount += 1;\n    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"\
+  The quick brown fox\"));\n```\n\n#### 输出\n5\n\n### 查找字符串内最长的单词\n\n![](img/image00175.jpeg)\n\
+  \n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8\
+  \ />\n  <title>查找字符串内最长的单词</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n####\
+  \ JAVASCRIPT CODE\n\n```javascript\nfunction find_longest_word(str) {\n  var array1\
+  \ = str.match(/\\w[a-z]{0,}/gi);\n  var result = array1[0];\n  for(var x = 1 ; x\
+  \ < array1.length ; x++) {\n    if(result.length < array1[x].length) {\n      result\
+  \ = array1[x];\n    }\n  }\n  return result;\n}\nconsole.log(find_longest_word('Web\
+  \ Development Tutorial'));\n```\n\n#### 输出\nDevelopment\n\n### 检查数字是否为质数\n\n![](img/image00176.jpeg)\n\
+  \n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8\
+  \ />\n  <title>检查数字是否为质数</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n####\
+  \ JAVASCRIPT CODE\n\n```javascript\nfunction test_prime(n) {\n  if (n===1) {\n \
+  \   return false;\n  } else if(n === 2) {\n    return true;\n  }else {\n    for(var\
+  \ x = 2; x < n; x++) {\n      if(n % x === 0) {\n        return false;\n      }\n\
+  \    }\n    return true; \n  }\n}\nconsole.log(test_prime(37));\n```\n\n#### 输出\n\
+  True\n\n### 从数组中找到第二小的和第二数\n\n![](img/image00177.jpeg)\n\n#### HTML CODE\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8 />\n  <title>从数组中找到第二小的和第二大的数</title>\n\
+  </head>\n<body>\n</body>\n```\n\n#### JAVASCRIPT CODE\n\n```javascript\nfunction\
+  \ Second_Greatest_Lowest(arr_num) {\n  arr_num.sort(function(x,y) {\n    return\
+  \ x-y;\n  });\n  var uniqa = [arr_num[0]];\n  var result = [];\n  for(var j=1; j\
+  \ < arr_num.length; j++) {\n    if(arr_num[j-1] !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n\
+  \    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+  }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n#### 输出\n2,4\n\n###\
+  \ 获取数据类型\n\n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+  \ charset=utf-8 />\n  <title>检测数据类型</title>\n</head>\n<body>\n</body>\n</html>\n\
+  ```\n\n#### JAVASCRIPT CODE\n\n```javascript\nfunction detect_data_type(value) {\n\
+  \  var dtypes = [Function, Number, String, Object], x, len;\n  if (typeof value\
+  \ === \"object\") {\n    for (x = 0; x < dtypes.length; x++) {\n      if (value\
+  \ instanceof dtypes[x]) {\n        return dtypes[x];\n      }\n    }\n  }\n  return\
+  \ typeof value;\n}\nconsole.log(detect_data_type(12));\nconsole.log(detect_data_type('w'));\n\
+  console.log(detect_data_type(false));\n```\n\n#### 输出\nnumber\nstring\nboolean\n\
+  \n### 将给定的两位正整数的两个数字相和\n\n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  \  <meta charset=\"utf-8\">\n  <title>将给定的两位正整数的两个数字相加的 JavaScript 程序</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n\n```javascript\n\
+  function add_two_digits(n) {\n  return n % 10 + Math.floor(n / 10);\n}\nconsole.log(add_two_digits(25));\n\
+  console.log(add_two_digits(50));\n```\n\n#### 输出:\n7\n5\n\n### 检查给定的正数是否是 3 的倍数或\
+  \ 7 的倍数\n\n## ![](img/image00179.jpeg)\n\n#### HTML CODE\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+  width=device-width\">\n  <title>检查给定的正数是否是 3 的倍数或 7 的倍数的 JavaScript 程序</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n\n```javascript\n\
+  function test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return true;\n  } else\
+  \ {\n    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+  console.log(test37(10));\nconsole.log(test37(11));\n```\n\n#### 输出:\ntrue\ntrue\n\
+  false\nfalse\n\n\n\n\n\n### HTML\n<html\n<head>\n  <meta charset=\"utf-8\">\n  <meta\
+  \ name=\"viewport\" content=\"width=device-width\">\n  <title>检查字符串是否以 'Java' 开头否则返回\
+  \ false 的 JavaScript 程序</title>\n</head>\n<body>\n</body>\n</html>\n\n#### JAVASCRIPT\
+  \ 代码\n```javascript\nfunction start_spec_str(str)\n{\n  if (str.length < 4)\n  {\n\
+  \    return false;\n  }\n  front = str.substring(0, 4);\n  if (front == 'Java')\n\
+  \  {\n    return true;\n  }\n  else\n  {\n    return false;\n  }\n}\nconsole.log(start_spec_str(\"\
+  JavaScript\"));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"\
+  Python\"));\n```\n#### 输出:\ntrue\ntrue\nfalse\n\n### 寻找接近 100 的值\n#### HTML 代码\n\
+  ```html\n<!DOCTYPE html>\n<html\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"\
+  viewport\" content=\"width=device-width\">\n  ![](img/image00179.jpeg)\n</head>\n\
+  <body>\n</body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction near_100(x,\
+  \ y) {\n  if (x != y)\n  {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y - 100);\n\
+  \    if (x1 < y1)\n    {\n      return x;\n    }\n    if (y1 < x1)\n    {\n    \
+  \  return y;\n    }\n    return 0;\n  }\n  else\n    return false;\n}\nconsole.log(near_100(90,\
+  \ 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90, 90));\n```\n\
+  #### 输出:\n90\n-89\nfalse\n\n### 给定的两个整数值 - 检查\n## ![](img/image00180.jpeg)\n####\
+  \ HTML 代码\n```html\n<!DOCTYPE html>\n<html\n<head>\n  <meta charset=\"utf-8\">\n\
+  \  <meta name=\"viewport\" content=\"width=device-width\">\n  ![](img/image00181.jpeg)\n\
+  </head>\n<body>\n</body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ check_numbers(x, y)\n  {\n  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))\n\
+  \  {\n    return true;\n  }\n  else\n  {\n    return false;\n  }\n}\nconsole.log(check_numbers(12,\
+  \ 101));\nconsole.log(check_numbers(52, 80));\nconsole.log(check_numbers(15, 99));\n\
+  ```\n#### 输出\nfalse\ntrue\ntrue\n\n### 正数 - 检查\n## ![](img/image00182.jpeg)\n####\
+  \ HTML 代码\n```html\n<!DOCTYPE html>\n<html\n<head>\n  <meta charset=\"utf-8\">\n\
+  \  <meta name=\"viewport\" content=\"width=device-width\">\n  ![](img/image00183.jpeg)\n\
+  </head>\n<body>\n</body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ test37(x)\n{\n  if (x % 3 == 0 || x % 7 == 0)\n  {\n    return true;\n  }\n  else\
+  \ {\n    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+  console.log(test37(10));\nconsole.log(test37(11));\n```\n#### 输出:\ntrue\ntrue\n\
+  false\nfalse\n\n### 两个数的乘法和除法\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n<meta charset=utf-8 />\n![](img/image00184.jpeg)\n<style type=\"text/css\"\
+  >\nbody {margin: 30px;}\n</style>\n</head>\n<body>\n<form>\n第 1 数字 : <input type=\"\
+  text\" id=\"firstNumber\" /><br>\n第 2 数字: <input type=\"text\" id=\"secondNumber\"\
+  \ /><br>\n<input type=\"button\" onClick=\"multiplyBy()\" Value=\"Multiply\" />\n\
+  <input type=\"button\" onClick=\"divideBy()\" Value=\"Divide\" />\n</form>\n<p>结果为\
+  \ : <br>\n<span id = \"result\"></span></p>\n</body>\n</html>\n```\n#### JAVASCRIPT\
+  \ 代码\n```javascript\nfunction multiplyBy()\n{\n  num1 = document.getElementById(\"\
+  firstNumber\").value;\n  num2 = document.getElementById(\"secondNumber\").value;\n\
+  \  document.getElementById(\"result\").innerHTML = num1 * num2;\n}\nfunction divideBy()\n\
+  {\n  num1 = document.getElementById(\"firstNumber\").value;\n  num2 = document.getElementById(\"\
+  secondNumber\").value;\n  document.getElementById(\"result\").innerHTML = num1 /\
+  \ num2;\n}\n```\n#### 输出\n![](img/image00185.jpeg)\n\n### 字符串以 'Java' 开头 - 否则返回\
+  \ false\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+  utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>检查字符串是否以\
+  \ 'Java' 开头否则返回 false 的 JavaScript 程序</title>\n</head>\n<body>\n</body>\n</html>\n\
+  ```\n#### JAVASCRIPT 代码\n```javascript\nfunction start_spec_str(str)\n{\n  if (str.length\
+  \ < 4)\n  {\n    return false;\n  }\n  front = str.substring(0, 4);\n  if (front\
+  \ == 'Java')\n  {\n    return true;\n  }\n  else\n  {\n    return false;\n  }\n\
+  }\nconsole.log(start_spec_str(\"JavaScript\"));\nconsole.log(start_spec_str(\"Java\"\
+  ));\nconsole.log(start_spec_str(\"Python\"));\n```\n#### 输出:\ntrue\ntrue\nfalse\n\
+  \n### 转换温度\n## ![](img/image00187.jpeg)\n#### HTML 代码\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>编写一个在摄氏度和华氏度之间转换温度的 JavaScript\
+  \ 程序</title>\n</head>\n<body>\n</body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\n\
+  function cToF(celsius)\n{\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5\
+  \ + 32;\n  var message = cTemp+'xB0C is ' + cToFahr + ' \\xB0F.';\n  console.log(message);\n\
+  }\nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp\
+  \ - 32) * 5 / 9;\n  var message = fTemp+'xB0F is ' + fToCel+'xB0C.';\n  console.log(message);\n\
+  }\ncToF(60);\nfToC(45);\n```\n#### 输出\n![](img/image00188.jpeg)\n\n"

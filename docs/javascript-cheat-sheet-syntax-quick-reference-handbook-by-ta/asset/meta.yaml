@@ -1,0 +1,453 @@
+name: JavaScript Cheat Sheet, Syntax Quick Reference Handbook, by Table and Chart：
+  Syntax Quick Study Guide
+name_cn: JavaScript 快速查表，语法快速参考手册：语法快速学习指南
+slug: javascript-cheat-sheet-syntax-quick-reference-handbook-by-ta
+toc:
+- - '#'
+  - JavaScript 快速查表，语法快速参考手册：语法快速学习指南
+- - '##'
+  - 关于本书
+- - '##'
+  - 免责声明
+- - '#'
+  - 语法表
+- - '##'
+  - '`<script>` 语法：'
+- - '##'
+  - '`$` 语法：'
+- - '##'
+  - '`$` 语法：'
+- - '##'
+  - '`? :` 运算符语法：'
+- - '##'
+  - '`??` 语法：'
+- - '##'
+  - '`===` 语法：'
+- - '##'
+  - '`"+"` 字符串语法：'
+- - '##'
+  - '`abs()` 语法：'
+- - '##'
+  - '`acos()` 语法：'
+- - '##'
+  - '`acosh()` 语法：'
+- - '##'
+  - '`add()` 语法：'
+- - '#'
+  - 为指定的元素添加事件监听器
+- - '##'
+  - alert() 语法
+- - '##'
+  - anchors 语法
+- - '##'
+  - 匿名函数语法
+- - '##'
+  - appCodeName 语法
+- - '##'
+  - appendChild() 语法
+- - '##'
+  - 'apply() 语法 '
+- - '##'
+  - apply() 语法（续）
+- - '##'
+  - appName 语法
+- - '##'
+  - appVersion 语法
+- - '##'
+  - arguments 对象语法
+- - '##'
+  - 数组创建语法
+- - '##'
+  - 数组创建语法（另一种方式）
+- - '##'
+  - 箭头函数语法
+- - '##'
+  - asin() 语法
+- - '##'
+  - asinh() 语法
+- - '##'
+  - assert() 语法
+- - '##'
+  - at() 语法
+- - '##'
+  - atan() 语法
+- - '##'
+  - atanh() 语法
+- - '#'
+  - 获取 -1 到 1 之间数字的双曲反正切。
+- - '##'
+  - atob() 语法
+- - '##'
+  - availHeight 语法
+- - '##'
+  - availWidth 语法
+- - '##'
+  - back() 语法
+- - '##'
+  - baseURI 语法
+- - '##'
+  - blur() 语法
+- - '##'
+  - Boolean() 语法
+- - '##'
+  - break 语法
+- - '##'
+  - btoa() 语法
+- - '##'
+  - button 语法
+- - '##'
+  - call() 语法
+- - '##'
+  - cbrt() 语法
+- - '##'
+  - ceil() 语法
+- - '##'
+  - characterSet 语法
+- - '##'
+  - charAt() 语法
+- - '##'
+  - charCodeAt() 语法
+- - '##'
+  - checkbox 语法
+- - '##'
+  - checkValidity() 语法
+- - '##'
+  - childElementCount 语法
+- - '##'
+  - childNodes 语法
+- - '##'
+  - 类 & 方法 语法
+- - '##'
+  - 类 & 属性 语法
+- - '##'
+  - className 语法
+- - '##'
+  - clearInterval() 语法
+- - '##'
+  - cleartimeout() 语法
+- - '##'
+  - click() 语法
+- - '##'
+  - clientHeight & clientWidth 语法
+- - '##'
+  - clientX & clientY 语法
+- - '##'
+  - close() 语法
+- - '##'
+  - closed 语法
+- - '##'
+  - colorDepth 语法
+- - '##'
+  - comment 语法
+- - '##'
+  - concat() 语法 (String)
+- - '##'
+  - concat() 语法 (Array)
+- - '##'
+  - 三元运算符语法
+- - '##'
+  - confirm() 语法
+- - '##'
+  - 字符串连接语法
+- - '##'
+  - 字符串连接语法
+- - '##'
+  - console.log() 语法
+- - '##'
+  - const 语法
+- - '##'
+  - 构造函数 语法
+- - '##'
+  - continue 语法
+- - '##'
+  - cookie 读取语法
+- - '##'
+  - cookie 删除语法
+- - '##'
+  - cookie 写入
+- - '##'
+  - cookieEnabled 语法
+- - '##'
+  - cos() 语法
+- - '##'
+  - cosh() 语法
+- - '##'
+  - createElement( ) 语法
+- - '##'
+  - createText() 语法
+- - '##'
+  - 数据类型语法
+- - '###'
+  - 示例：
+- - '##'
+  - Date 对象语法
+- - '###'
+  - 示例：
+- - '##'
+  - Debugger 语法
+- - '###'
+  - 示例：
+- - '##'
+  - 删除数组元素语法
+- - '###'
+  - 示例：
+- - '##'
+  - delete() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - do-while 循环语法
+- - '###'
+  - 示例：
+- - '##'
+  - document.write() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - DOM 元素长度语法
+- - '###'
+  - 示例：
+- - '##'
+  - domain 语法
+- - '###'
+  - 示例：
+- - '##'
+  - element 语法
+- - '###'
+  - 示例：
+- - '##'
+  - endsWith() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - entries 语法
+- - '###'
+  - 示例：
+- - '##'
+  - eval() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - every() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - exec() 语法
+- - '###'
+  - 示例：
+- - '##'
+  - export 语法
+- - '###'
+  - 示例：
+- - '##'
+  - export default 语法
+- - '#'
+  - 将数据导出到任何需要导入数据的文件中。
+- - '##'
+  - 'extends 语法:'
+- - '##'
+  - 'filter() 语法:'
+- - '##'
+  - 'find() 语法:'
+- - '##'
+  - 'findIndex() 语法:'
+- - '##'
+  - 'floor() 语法:'
+- - '##'
+  - 'focus() 语法:'
+- - '##'
+  - 'for...in... 语法:'
+- - '##'
+  - 'for 循环语法:'
+- - '##'
+  - 'for...of...语法:'
+- - '##'
+  - 'foreach() 语法:'
+- - '#'
+  - 获取日期、月份、年份、日期、完整年份语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - 获取小时、分钟、秒语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - get() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getAttribute() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementById() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementById() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementById().attribute 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementById(id).style.property 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementsByClassName() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getElementsByTagName( ) 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getTime() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - timezoneOffset() 语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - 获取 UTC 小时、分钟、秒语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - 获取 UTC 月份、日期、年份、日期语法：
+- - '###'
+  - '示例： '
+- - '#'
+  - getUTCHours() 语法
+- - '#'
+  - '全局变量语法:'
+- - '#'
+  - 'go() 语法:'
+- - '#'
+  - 'has() 语法:'
+- - '#'
+  - 'haschildnodes() 语法:'
+- - '#'
+  - 'hash 语法:'
+- - '#'
+  - history.back() 语法
+- - '#'
+  - history.forward() 语法
+- - '#'
+  - history.go() 语法
+- - '#'
+  - hash 语法
+- - '#'
+  - hash 语法
+- - '#'
+  - history.back() 语法
+- - '#'
+  - history.forward() 语法
+- - '#'
+  - history.go() 语法
+- - '#'
+  - hash 语法
+- - '#'
+  - getUTCHours() 语法
+- - '#'
+  - 全局变量语法：
+- - '#'
+  - go() 语法：
+- - '#'
+  - has() 语法：
+- - '#'
+  - haschildnodes() 语法：
+- - '##'
+  - hash 语法：
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - getUTCHours() 语法
+- - '##'
+  - 全局变量语法：
+- - '##'
+  - go() 语法：
+- - '##'
+  - has() 语法：
+- - '##'
+  - haschildnodes() 语法：
+- - '##'
+  - hash 语法：
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - getUTCHours() 语法
+- - '##'
+  - 全局变量语法：
+- - '##'
+  - go() 语法：
+- - '##'
+  - has() 语法：
+- - '##'
+  - haschildnodes() 语法：
+- - '##'
+  - hash 语法：
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - history.back() 语法
+- - '##'
+  - history.forward() 语法
+- - '##'
+  - history.go() 语法
+- - '##'
+  - hash 语法
+- - '##'
+  - getUTCHours() 语法
+- - '##'
+  - 全局变量语法：
+- - '##'
+  - go go  语法：
+- - '##'
+  - has() 语法
+- - '##'
+  - haschildnodes() 语法
+- - '##'
+  - ' '

@@ -1,0 +1,194 @@
+name: JAVASCRIPT CODING AND JAVASCRIPT EXERCISES： BASICS FOR ABSOLUTE BEGINNERS
+name_cn: JavaScript 编码与 JavaScript 练习：初学者基础指南
+slug: javascript-coding-and-javascript-exercises-basics-for-absolu
+toc:
+- - '###'
+  - JavaScript 注释
+- - '####'
+  - 优点 - JavaScript 注释
+- - '###'
+  - JavaScript 函数语法
+- - '####'
+  - 示例
+- - '###'
+  - JavaScript 函数参数
+- - '###'
+  - 带返回值的函数
+- - '###'
+  - JavaScript 函数对象
+- - '###'
+  - 语法
+- - '###'
+  - JavaScript 函数对象
+- - '###'
+  - 示例
+- - '###'
+  - 示例 2
+- - '###'
+  - JavaScript Math
+- - '###'
+  - JavaScript Math 方法
+- - '###'
+  - Math.sqrt(n)
+- - '###'
+  - Math.random()
+- - '###'
+  - Math.pow(m,n)
+- - '###'
+  - Math.floor(n)
+- - '###'
+  - Math.ceil(n)
+- - '###'
+  - Math.round(n)
+- - '###'
+  - JavaScript Number
+- - '###'
+  - 输出
+- - '###'
+  - 拼接两个字符串
+- - '###'
+  - 排除它们的第一个字符
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 'Output:'
+- - '###'
+  - '创建一个新字符串 '
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 'Output:'
+- - '###'
+  - 第一次未重复的字符
+- - '####'
+  - '#### ![](img/image00173.jpeg)'
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 统计字符串内元音的数量
+- - '####'
+  - '#### ![](img/image00174.jpeg)'
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 查找字符串内最长的单词
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 检查数字是否为质数
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 从数组中找到第二小的和第二数
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 获取数据类型
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - 输出
+- - '###'
+  - 将给定的两位正整数的两个数字相和
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - '输出:'
+- - '###'
+  - 检查给定的正数是否是 3 的倍数或 7 的倍数
+- - '####'
+  - '#### ![](img/image00179.jpeg)'
+- - '####'
+  - HTML CODE
+- - '####'
+  - JAVASCRIPT CODE
+- - '####'
+  - '输出:'
+- - '###'
+  - HTML
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - '输出:'
+- - '###'
+  - 寻找接近 100 的值
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - '输出:'
+- - '###'
+  - 给定的两个整数值 - 检查
+- - '####'
+  - '#### ![](img/image00180.jpeg)'
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - 输出
+- - '###'
+  - 正数 - 检查
+- - '####'
+  - '#### ![](img/image00182.jpeg)'
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - 输出
+- - '###'
+  - 两个数的乘法和除法
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - 输出
+- - '###'
+  - 字符串以 'Java' 开头 - 否则返回 false
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - '输出:'
+- - '###'
+  - 转换温度
+- - '####'
+  - '#### ![](img/image00187.jpeg)'
+- - '####'
+  - HTML 代码
+- - '####'
+  - JAVASCRIPT 代码
+- - '####'
+  - 输出

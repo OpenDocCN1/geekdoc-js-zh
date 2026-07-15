@@ -1,0 +1,32 @@
+name: Javascript Coding Guide
+name_cn: Javascript 编码指南
+slug: javascript-coding-guide
+toc:
+- - '#'
+  - Javascript 编码指南
+- - '##'
+  - 引言
+- - '##'
+  - JS 问答简易小书
+- - '###'
+  - 问题 1：JavaScript：哪些是数学赋值运算符？
+- - '###'
+  - 问题 2：JavaScript：幂运算符是什么？
+- - '###'
+  - 问题 3：JavaScript：哪个 Math 方法返回 0 到 1 之间的随机小数值？
+- - '###'
+  - 问题 4：JavaScript：模板字符串是如何格式化的？
+- - '###'
+  - 问题 5：JavaScript：哪个 Number 方法根据给定数字是否为整数返回布尔值？
+- - '###'
+  - 问题 6：JavaScript：模板字符串的作用是什么？
+- - '###'
+  - 问题 7：JavaScript：哪个关键字声明一个可以更改值的变量？
+- - '###'
+  - 问题 8：JavaScript：变量如何插入模板字符串中？
+- - '###'
+  - 问题 9：JavaScript：单行注释是如何格式化的？
+- - '###'
+  - 问题 10：JavaScript：哪个运算符返回右侧变量的类型的字符串形式？
+- - '##'
+  - 结语

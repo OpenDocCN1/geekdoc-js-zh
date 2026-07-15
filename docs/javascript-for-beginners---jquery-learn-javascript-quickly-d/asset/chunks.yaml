@@ -1,0 +1,5077 @@
+- fmt: "\n![](Images/cover00083.jpeg)\n\n![](Images/image00082.jpeg)\n\n# `JavaScript`\
+    \ for Beginners - `JQuery`\n\nLearn JavaScript Quickly. Discover All You Need\
+    \ to Know\n\nJefferey Smith\n\n© Copyright 2022-All rights reserved.\n\nThe content\
+    \ contained within this book may not be reproduced, duplicated or transmitted\
+    \ without direct written permission from the author or the publisher.\n\nUnder\
+    \ no circumstances will any blame or legal responsibility be held against the\
+    \ publisher, or author, for any damages, reparation, or monetary loss due to the\
+    \ information contained within this book, either directly or indirectly.\n\n###\
+    \ Legal Notice:\n\nThis book is copyright protected. It is only for personal use.\
+    \ You cannot amend, distribute, sell, use, quote or paraphrase any part, or the\
+    \ content within this book, without the consent of the author or publisher.\n\n\
+    ### Disclaimer Notice:\n\nPlease note the information contained within this document\
+    \ is for educational and entertainment purposes only. All effort has been executed\
+    \ to present accurate, up to date, reliable, complete information. No warranties\
+    \ of any kind are declared or implied. Readers acknowledge that the author is\
+    \ not engaged in the rendering of legal, financial, medical or professional advice.\
+    \ The content within this book has been derived from various sources. Please consult\
+    \ a licensed professional before attempting any techniques outlined in this book.\n\
+    \nBy reading this document, the reader agrees that under no circumstances is the\
+    \ author responsible for any losses, direct or indirect, that are incurred as\
+    \ a result of the use of the information contained within this document, including,\
+    \ but not limited to, errors, omissions, or inaccuracies.\n\n# Table of Contents\n\
+    \n- [Introduction](#part0003.xhtml__Toc409041586)\n- [Learn JavaScript Quickly](#part0003.xhtml__Toc666781855)\n\
+    - [What Is JQuery ?](#part0003.xhtml__Toc1032966939)\n- [Chapter 1: JavaScript\
+    \ for Beginners](#part0004.xhtml__Toc817541425)\n    - [Syntax](#part0004.xhtml__Toc818356469)\n\
+    \    - [JavaScript in Browsers](#part0004.xhtml__Toc1631899095)\n    - [How to\
+    \ Get Started Writing JavaScript](#part0004.xhtml__Toc1814433828)\n    - [Datatypes\
+    \ in JavaScript](#part0004.xhtml__Toc921559796)\n    - [Numbers](#part0004.xhtml__Toc1003429208)\n\
+    \    - [BigInt](#part0004.xhtml__Toc445618965)\n    - [Strings](#part0004.xhtml__Toc1242467666)\n\
+    \    - [Null](#part0004.xhtml__Toc23079034)\n    - [Undefined](#part0004.xhtml__Toc1342267978)\n\
+    \    - [Booleans](#part0004.xhtml__Toc182194511)\n- [Chapter 2: JavaScript Programming](#part0005.xhtml__Toc1978949402)\n\
+    \    - [Functional Programming](#part0005.xhtml__Toc2123358325)\n    - [Types\
+    \ of Functions](#part0005.xhtml__Toc400122429)\n    - [Higher-Order Functions](#part0005.xhtml__Toc1086365446)\n\
+    \    - [What Are Conditional Statements?](#part0005.xhtml__Toc638084128)\n   \
+    \ - [Object-Oriented Programming](#part0005.xhtml__Toc1894089825)\n    - [Procedural\
+    \ Programming](#part0005.xhtml__Toc1817589294)\n    - [Fundamental Features of\
+    \ Procedural Programming](#part0005.xhtml__Toc268385683)\n    - [Applications\
+    \ of JavaScript Programming](#part0005.xhtml__Toc1042515481)\n- [Chapter 3: JavaScript\
+    \ Architecture](#part0006.xhtml__Toc238613294)\n    - [Typical JavaScript Application\
+    \ Architecture](#part0006.xhtml__Toc1021663309)\n    - [Framework-Based Architecture](#part0006.xhtml__Toc1963476598)\n\
+    \    - [JavaScript Engines](#part0006.xhtml__Toc1917462784)\n    - [Web API’s](#part0006.xhtml__Toc1657403806)\n\
+    \    - [Event Loops](#part0006.xhtml__Toc975382205)\n    - [Advanced JavaScript\
+    \ Architecture](#part0006.xhtml__Toc1506041884)\n- [Chapter 4: JavaScript and\
+    \ JQuery](#part0007.xhtml__Toc1803680846)\n    - [JavaScript Frameworks](#part0007.xhtml__Toc584817670)\n\
+    \    - [Features of JQuery](#part0007.xhtml__Toc2145411018)\n- [Chapter 5: JavaScript\
+    \ for Kids](#part0008.xhtml__Toc1672546396)\n    - [HTML and CSS](#part0008.xhtml__Toc2073821989)\n\
+    \    - [Important JavaScript Terms](#part0008.xhtml__Toc1066578313)\n    - [Data\
+    \ Types in JavaScript](#part0008.xhtml__Toc935705082)\n    - [Variables](#part0008.xhtml__Toc372566193)\n\
+    \    - [Arrays](#part0008.xhtml__Toc1805174746)\n    - [Objects](#part0008.xhtml__Toc2070474853)\n\
+    \    - [Conditionals and Loops](#part0008.xhtml__Toc645838383)\n    - [Functions](#part0008.xhtml__Toc1223351143)\n\
+    \    - [Three Ways to Write Your First Line of Code](#part0008.xhtml__Toc854224023)\n\
+    - [Conclusion](#part0009.xhtml__Toc1014974366)\n- [References](#part0010.xhtml__Toc1211561241)\n\
+    \n# Introduction\n\nProgramming is essentially telling a computer what to do,\
+    \ when to do it and how to do it. It controls most electronic objects. From computers,\
+    \ to vending machines and most importantly, the web.\n\nJavaScript has been coined\
+    \ the language of the web. This is because most, if not all websites use it. It\
+    \ is easy to learn and understand, plus it doesn’t cost too much to update and\
+    \ upgrade. A lot of the software that’s used is open source. There are also websites\
+    \ with free activities you can use.\n\nIt is a programming language that is rooted\
+    \ in text and it allows web pages to be interactive. It provides attractive elements\
+    \ that bring users to web pages. Common examples of JavaScript you use everyday\
+    \ are Amazon searchboxes, New York Times embedded videos or Twitter feed updates.\
+    \ So, in short, JavaScript adds behavior to web pages.\n\nMost of the time, JavaScript\
+    \ is used inside web browsers and on web-based.. Beyond that, it is used on servers,\
+    \ in software and on embedded hardware. Some examples of interactive features\
+    \ on web pages are zooming in and out of an image, playing audio and video on\
+    \ a web page and showing animations.\n\nIf you are just starting out and your\
+    \ goal is to become a software developer, then you must be well versed in JavaScript.\
+    \ It is the most established programming language in the world. Once you are able\
+    \ to master it, you will be able to develop front and back-end software. JavaScript\
+    \ is omnipresent and is pre-installed in every contemporary web browser, so you\
+    \ don’t have to go out of your way to study it.\n\nThere are many structures within\
+    \ JavaScript that developers can use when constructing mobile and web apps. JavaScript\
+    \ frameworks are bodies of code libraries that offer pre written code for everyday\
+    \ programming tasks and features. One such library is JQuery\n\n# Learn JavaScript\
+    \ Quickly\n\nWhen embarking on your coding journey, you may have a constant feeling\
+    \ of having a hard time. Your progress can seem slow and it’s easy to want to\
+    \ throw in the towel. Here is what I can recommend for you to learn expeditiously:\n\
+    \n1. Appropriately emphasize the amount that will bring the greatest benefit.\n"
+  raw: '
+
+
+    ![](Images/cover00083.jpeg)
+
+
+    ![](Images/image00082.jpeg)
+
+
+    JavaScript for Beginners - JQuery
+
+
+    Learn JavaScript Quickly. Discover All You Need to Know
+
+
+    Jefferey Smith
+
+
+    © Copyright 2022-All rights reserved.
+
+
+    The content contained within this book may not be reproduced, duplicated or transmitted
+    without direct written permission from the author or the publisher.
+
+
+    Under no circumstances will any blame or legal responsibility be held against
+    the publisher, or author, for any damages, reparation, or monetary loss due to
+    the information contained within this book, either directly or indirectly.
+
+
+    Legal Notice:
+
+
+    This book is copyright protected. It is only for personal use. You cannot amend,
+    distribute, sell, use, quote or paraphrase any part, or the content within this
+    book, without the consent of the author or publisher.
+
+
+    Disclaimer Notice:
+
+
+    Please note the information contained within this document is for educational
+    and entertainment purposes only. All effort has been executed to present accurate,
+    up to date, reliable, complete information. No warranties of any kind are declared
+    or implied. Readers acknowledge that the author is not engaged in the rendering
+    of legal, financial, medical or professional advice. The content within this book
+    has been derived from various sources. Please consult a licensed professional
+    before attempting any techniques outlined in this book.
+
+
+    By reading this document, the reader agrees that under no circumstances is the
+    author responsible for any losses, direct or indirect, that are incurred as a
+    result of the use of the information contained within this document, including,
+    but not limited to, errors, omissions, or inaccuracies.
+
+
+    # Table of Contents
+
+
+    [Introduction](#part0003.xhtml__Toc409041586)
+
+
+    [Learn JavaScript Quickly](#part0003.xhtml__Toc666781855)
+
+
+    [What Is JQuery ?](#part0003.xhtml__Toc1032966939)
+
+
+    [Chapter 1: JavaScript for Beginners](#part0004.xhtml__Toc817541425)
+
+
+    [Syntax](#part0004.xhtml__Toc818356469)
+
+
+    [JavaScript in Browsers](#part0004.xhtml__Toc1631899095)
+
+
+    [How to Get Started Writing JavaScript](#part0004.xhtml__Toc1814433828)
+
+
+    [Datatypes in JavaScript](#part0004.xhtml__Toc921559796)
+
+
+    [Numbers](#part0004.xhtml__Toc1003429208)
+
+
+    [BigInt](#part0004.xhtml__Toc445618965)
+
+
+    [Strings](#part0004.xhtml__Toc1242467666)
+
+
+    [Null](#part0004.xhtml__Toc23079034)
+
+
+    [Undefined](#part0004.xhtml__Toc1342267978)
+
+
+    [Booleans](#part0004.xhtml__Toc182194511)
+
+
+    [Chapter 2: JavaScript Programming](#part0005.xhtml__Toc1978949402)
+
+
+    [Functional Programming](#part0005.xhtml__Toc2123358325)
+
+
+    [Types of Functions](#part0005.xhtml__Toc400122429)
+
+
+    [Higher-Order Functions](#part0005.xhtml__Toc1086365446)
+
+
+    [What Are Conditional Statements?](#part0005.xhtml__Toc638084128)
+
+
+    [Object-Oriented Programming](#part0005.xhtml__Toc1894089825)
+
+
+    [Procedural Programming](#part0005.xhtml__Toc1817589294)
+
+
+    [Fundamental Features of Procedural Programming](#part0005.xhtml__Toc268385683)
+
+
+    [Applications of JavaScript Programming](#part0005.xhtml__Toc1042515481)
+
+
+    [Chapter 3: JavaScript Architecture](#part0006.xhtml__Toc238613294)
+
+
+    [Typical JavaScript Application Architecture](#part0006.xhtml__Toc1021663309)
+
+
+    [Framework-Based Architecture](#part0006.xhtml__Toc1963476598)
+
+
+    [JavaScript Engines](#part0006.xhtml__Toc1917462784)
+
+
+    [Web API’s](#part0006.xhtml__Toc1657403806)
+
+
+    [Event Loops](#part0006.xhtml__Toc975382205)
+
+
+    [Advanced JavaScript Architecture](#part0006.xhtml__Toc1506041884)
+
+
+    [Chapter 4: JavaScript and JQuery](#part0007.xhtml__Toc1803680846)
+
+
+    [JavaScript Frameworks](#part0007.xhtml__Toc584817670)
+
+
+    [Features of JQuery](#part0007.xhtml__Toc2145411018)
+
+
+    [Chapter 5: JavaScript for Kids](#part0008.xhtml__Toc1672546396)
+
+
+    [HTML and CSS](#part0008.xhtml__Toc2073821989)
+
+
+    [Important JavaScript Terms](#part0008.xhtml__Toc1066578313)
+
+
+    [Data Types in JavaScript](#part0008.xhtml__Toc935705082)
+
+
+    [Variables](#part0008.xhtml__Toc372566193)
+
+
+    [Arrays](#part0008.xhtml__Toc1805174746)
+
+
+    [Objects](#part0008.xhtml__Toc2070474853)
+
+
+    [Conditionals and Loops](#part0008.xhtml__Toc645838383)
+
+
+    [Functions](#part0008.xhtml__Toc1223351143)
+
+
+    [Three Ways to Write Your First Line of Code](#part0008.xhtml__Toc854224023)
+
+
+    [Conclusion](#part0009.xhtml__Toc1014974366)
+
+
+    [References](#part0010.xhtml__Toc1211561241)
+
+
+    Your FREE Gift
+
+
+    I have something for you. It won’t cost you a dime. This is a FREE 40-page PDF
+    guide. I’d like you to have free copies with my compliments. You can grab Your
+    copy by clicking on the following link and joining my mailing list.
+
+
+    FREE BOOKS [https://imris-kdp-publishing.com/](https://imris-kdp-publishing.com/)
+
+
+    Before we jump into this Book, I’d like to express my thanks. I realize there
+    are many books on this subject that you could otherwise spend your time reading.
+    You’re taking a chance on me. I appreciate it. Giving you a FREE PDF copy of this
+    amazing guide is my way of showing that appreciation. On that note, let’s dig
+    in. You’re going to love what’s coming your way in the following pages
+
+
+    # Introduction
+
+
+    Programming is essentially telling a computer what to do, when to do it and how
+    to do it. It is giving your computer a series of instructions to execute. Programming
+    controls most electronic objects. From computers, to vending machines, to cellphones
+    and most importantly, the web.
+
+
+    JavaScript has been coined the language of the web. This is because most, if not
+    all websites use it to make their pages appear more dynamic. It is easy to learn
+    and understand, plus it doesn’t cost too much to update and upgrade. A lot of
+    the software that’s used is open source. There are also lots of websites with
+    free activities you can use to practice.
+
+
+    It is a programming language that is rooted in text and it allows web pages to
+    be interactive. It provides attractive elements that bring users to web pages.
+    Common examples of JavaScript you use everyday are Amazon searchboxes, New York
+    Times embedded videos or Twitter feed updates. Making use of JavaScript improves
+    the user experience of a website by converting static pages to interactive or
+    animated pages. So, in short, JavaScript adds behavior to web pages.
+
+
+    Most of the time, JavaScript is used inside web browsers and on web-based apps.
+    Beyond that, it is used on servers, in software and on embedded hardware controls.
+    Some examples of interactive features on web pages are: zooming in and out on
+    an image, playing audio and video on a web page and showing animations.
+
+
+    If you are just starting out and your goal is to become a software developer,
+    then you must be well versed in JavaScript. It is the most established programming
+    language in the world. Once you are able to master it, you will be able to develop
+    front and back-end software. JavaScript is omnipresent and is pre-installed in
+    every contemporary web browser, so you don’t have to go out of your way to study
+    it.
+
+
+    There are many structures within JavaScript that developers can use when constructing
+    mobile and web apps. JavaScript frameworks are bodies of code libraries that offer
+    pre written code for everyday programming tasks and features. One such library
+    is JQuery.
+
+
+    At first, JavaScript was only used in Browsers to build interactive web pages
+    and it was referred to as Toy language by developers. That quickly changed when
+    it started receiving a lot of support and getting investment from large companies
+    like Google and Facebook. These days you can build full scale mobile apps, Real-time
+    networking apps, Command-Line tools and Games.
+
+
+    ## Learn JavaScript Quickly
+
+
+    When embarking on your coding journey, you may have a constant feeling of having
+    a hard time. Your progress can seem slow and it’s easy to want to throw in the
+    towel. Here is what I can recommend for you to learn expeditiously:
+
+
+    1.  Appropriately emphasize the amount that will bring the greatest benefit.'
+  toc: []
+  trans: "\n\n![](img/cover00083.jpeg)\n\n![](img/image00082.jpeg)\n\n# 学者入门 `JavaScript`\
+    \ - `JQuery`\n\n快速学习 JavaScript。探索你所需的一切\n\nJefferey Smith\n\n© 版权所有 2022。保留所有。\n\
+    \n未经作者或出版者的直接书面许可，不得复制、重复制或传输本书中所包含的内容。\n\n在任何情况下，对于由于书中包含的信息导致的直接或间接的任何损害、赔偿或金损失，出版者或作者不承担任何责任或法律责任。\n\
+    \n### 法律声明：\n\n本书受版权保护。它仅供个人使用。未经作者或出版者的同意，您不得修改、分发、销售、使用、引用或转述本书的任何部分或内容。\n\n\
+    ### 免责声明：\n\n请注意，本文档中包含的信息仅供教育和娱乐之用。我们已尽力提供准确、最新、可靠、完整的信息。不声明或暗示任何形式的保证。读者承认，作者并未从事提供法律、财务、医疗或专业建议。书中的内容源自各种来源。在尝试书中概述的任何技术之前，请咨询执业的专业人士。\n\
+    \n通过阅读本文，读者同意在任何情况下，作者对因使用本文档包含的信息而导致的任何直接或间接损失均不负责，包括但不限于错误、遗漏或不准确。\n\n# 目录\n\
+    \n- 引言\n- 快速学习 JavaScript\n- 什么是 JQuery ?\n- 第 1 章：入门 JavaScript\n    - 语法\n \
+    \   - 浏览器中的 JavaScript\n    - 如何开始编写 JavaScript\n    - JavaScript 中的数据类型\n   \
+    \ - 数字\n    - BigInt\n    - 字符串\n    - Null\n    - Undefined\n    - 布尔值\n- 第 2\
+    \ 章：JavaScript 编程\n    - 函数式编程\n    - 函数的类型\n    - 高阶函数\n    - 什么是条件语句？\n    -\
+    \ 面向对象编程\n    - 过程化编程\n    - 过程化编程的基础特征\n    - JavaScript 编程的应用\n- 第 3 章：JavaScript\
+    \ 架构\n    - 典型的 JavaScript 应用架构\n    - 基于框架的架构\n    - JavaScript 引擎\n    - Web\
+    \ API\n    - 事件循环\n    - 高级 JavaScript 架构\n- 第 4 章：JavaScript 与 JQuery\n    -\
+    \ JavaScript 框架\n    - JQuery 的特性\n- 第 5 章：儿童版 JavaScript\n    - HTML 和 CSS\n\
+    \    - 重要的 JavaScript 术语\n    - JavaScript 中的数据类型\n    - 变量\n    - 数组\n    - 对象\n\
+    \    - 条件与循环\n    - 函数\n    - 编写第一行代码的三种方法\n- 结\n- 参考文献\n\n# 引言\n\n编程本质上是告诉计算机做什么、什么时候做以及如何做。它控制着大多数设备。从计算机到自动售卖机，最重要的网页。\n\
+    \nJavaScript 被称为网页语言。这是因为大多数（如果不是所有）网站都在使用它。它很容易学习和理解，而且更新和升级的成本不高。很多软件都是开源的。\n\
+    \n"
+- fmt: '
+
+    Pinpoint the main components of `JavaScript` and study them more intensively.
+    Do not feel the need to study everything equally. The Pareto principle states
+    that in certain situations, 80% of the effects result from 20% of the causes.
+    So, if you focus on 20% of the content in this book that will bring about 80%
+    of the results you desire, you will be able to learn in record time. Key areas
+    to focus on are `Functions`, `Variables`, `Conditional statements`, `Objects`
+    and `Arrays`.
+
+
+    ### 2. Be diligent.
+
+
+    Watching tutorials and reading is extremely helpful when learning something new.
+    But, it would serve you better to devote more of your time to practicing. When
+    you learn to ride a bike, you have to actively move your limbs in order to move
+    forward. The same thing applies when learning `JavaScript`, you learn faster by
+    writing code on your machine. In addition to this, dedicating your time is essential.
+    Setting aside an hour to practice and write code at least five times a week will
+    greatly improve your knowledge.
+
+
+    Challenge yourself, and build an actual project with `JavaScript`, no matter how
+    small. Doing this will just cement everything you’ve learned. You will also be
+    able to identify what you might be struggling with and apply extra effort in those
+    areas.
+
+
+    ### 3. Learn how to troubleshoot errors.
+
+
+    When learning `JavaScript` you will come across bugs. Harnessing the skill to
+    solve those problems will always be useful. It will make you sharp as a programmer
+    and allow you to finish projects faster.
+
+
+    ## What Is JQuery ?
+
+
+    Many years ago, when programmers wanted to change the look and feel of the attributes
+    on their web pages, they had to include lots of font tags and color attributes.
+    This made their HTML pages become overloaded with code and it was very hard to
+    maintain. This meant that all web pages had to be maintained and modified manually.
+    After the invention of CSS they were able to change the appearance of websites
+    without having to write endless lines of code for each page. When `JavaScript`
+    came along, programmers began writing the `JavaScript` code into their HTML documents
+    because they weren’t well versed on it at the time. Eventually, they applied the
+    CSS theory to `JavaScript` and `JavaScript` libraries were born. Among all the
+    libraries in existence at the time, `JQuery` stood out and we still use it today.
+
+
+    When you google `JQuery`, all that comes up is that it is a `JavaScript` library,
+    but there is more to it than that. It simplifies the scripting of HTML on the
+    client-side. Its main objective is to make using `JavaScript` easier for you.
+    It can also be used to make adding animation easier. It basically takes a whole
+    lot of common tasks that need several lines of `JavaScript` to run and attaches
+    them to form a single line of code.
+
+
+    What do client-side mean and server-side mean?
+
+
+    Client-side and server-side are also referred to as front end and back end even
+    though they aren’t entirely the same thing. Client side is where the application
+    code runs and server-side is where the source code is stored.
+
+
+    Some of the most well known features of `JQuery` are:
+
+
+    - HTML manipulation
+
+    - DOM manipulation
+
+    - CSS manipulation
+
+    - Effects and Animation
+
+    - Ajax
+
+    - Utilities
+
+
+    `JQuery` became popular because there was a demand in the market for a tool to
+    simplify the coding experience. `JQuery` is faster than its counterparts and is
+    constantly being extended. It aids in writing User Interface function codes in
+    as few lines as possible. It is compatible with all browsers and is up to date
+    with their latest features.
+
+
+    # Chapter 1: JavaScript for Beginners
+
+
+    Before you can begin learning how to code, there are some Prerequisites. You have
+    to at least have a basic knowledge of `HTML` and `CSS`.
+
+
+    `HTML` stands for Hypertext Markup language. It is not considered a programming
+    language. Like its name suggests, it is a Markup language that is used when structuring
+    a web page. At its core, it is a very simple language that incorporates the elements
+    applied to text to give it a distinct meaning. You can use these elements to wrap,
+    markup or enclose components on your page and make them look or act a particular
+    way. It can determine whether the text in your document comes in the form of a
+    paragraph, has bullet points or comes in the form of a table. It can also embed
+    pictures and videos onto your page.
+
+
+    When you go on to any website, a number of files are dhed out to you. At a rudimentary
+    level your website will present you with an `HTML` page and a `script.js` page.
+    The `HTML` page is the bare bones of the web page. It tells the browser what to
+    show and where everything goes. So if there needs to be a title at the top, a
+    paragraph in the middle and a picture at the bottom, the `HTML` file is responsible
+    for relaying that information to the browser. This is all well and good but it’s
+    very limiting because the page will always be static and the data cannot change.
+    That’s where `JavaScript` comes in. `JavaScript` is able to manipulate the appearance
+    of the website by accessing the `DOM`. `DOM` stands for Document Object Model.
+    It tells `JavaScript` what is on the page and then allows it to make changes to
+    elements of the page. `DOM` makes it easier to read, access and obtain the content
+    of an `HTML` document. If we break it down even further, the `Document` is the
+    `HTML` file, the `object` is the tags and elements within the `HTML` file and
+    the `Model` is the Layout or structure. Without `DOM`, `JavaScript` would not
+    have a perception of any of the elements on a web page and would therefore not
+    be able to change or manipulate them. The `DOM` information is available through
+    an `API`. `API` stands for Application Programming Interface. It basically gives
+    `JavaScript` an opening to control things on the `HTML` page. The `API` acts as
+    the go between `JavaScript` and `HTML`.
+
+
+    `HTML` syntax is simply the way `HTML` is written. `HTML` elements are structured
+    a certain way; they are made up of the opening tag, the content and the closing
+    tag. The opening tag is where the element commences. Visually, it is the name
+    of the element wrapped in opening and closing angle brackets. For example, when
+    your element is a paragraph, the opening tag would look like this: `<p>`. The
+    content of the element goes in the middle, in this case it would be the text in
+    the paragraph. The closing tag marks where the element ends. It is similar to
+    the opening tag, but it has a forward slash after the first bracket. In this case
+    it would look like this: `</p>`. If you forget to insert the forward slash or
+    fail to include the closing tag altogether, you may not achieve the desired results.
+
+
+    Elements are split into two categories, namely: Block level and inline elements.
+    Block-level elements create blocks that you can actually see on a page, they take
+    up the full width of a web page by creating a line break. Inline elements take
+    up only as much as they need and are able to add content to a page without any
+    line breaks.
+
+
+    `CSS` or Cascading Style Sheets is a styling language used for describing the
+    appearance of a document written in `HTML`. It is used in the formatting and layout
+    of web pages. It is basically responsible for making your web page look really
+    good. `CSS` syntax is pretty straightforward. The first part of the syntax is
+    the `selector`, it is followed by opening and closing curly brackets. The brackets
+    are used to show the start and the end of the style that is going to be applied
+    to the `selector`. It can look something like this: `selector { property1: value;}`.
+    `Property` refers to color, size or length, while value refers to the text or
+    image the property is being applied to.
+
+
+    ## Syntax
+
+
+    In order to execute `JavaScript`, we have to put statements inside of `script`
+    HTML tags on a web page. For example:
+
+    ```
+
+    <script> JavaScript code </script> own```
+
+    The `script` tags are made up of two properties:
+
+
+    - **Language**: Defines the scripting language you are working with. The value
+    will always be `JavaScript`.
+
+    - **Type**: Stipulates the scripting language being used and should always be
+    set to ‘text/javascript’.
+
+    '
+  raw: 'Pinpoint the main components of JavaScript and study them more intensively.
+    Do not feel the need to study everything equally. The Pareto principle states
+    that in certain situations, 80% of the effects result from 20% of the causes.
+    So, if you focus on 20% of the content in this book that will bring about 80%
+    of the results you desire, you will be able to learn in record time. Key areas
+    to focus on are Functions, Variables, Conditional statements, Objects and Arrays.
+
+
+    2.  Be diligent.
+
+
+    Watching tutorials and reading is extremely helpful when learning something new.
+    But, it would serve you better to devote more of your time to practicing. When
+    you learn to ride a bike, you have to actively move your limbs in order to move
+    forward. The same thing applies when learning JavaScript, you learn faster by
+    writing code on your machine. In addition to this, dedicating your time is essential.
+    Setting aside an hour to practice and write code at least five times a week will
+    greatly improve your knowledge.
+
+
+    Challenge yourself, and build an actual project with JavaScript, no matter how
+    small. Doing this will just cement everything you’ve learned. You will also be
+    able to identify what you might be struggling with and apply extra effort in those
+    areas.
+
+
+    3.  Learn how to troubleshoot errors.
+
+
+    When learning JavaScript you will come across bugs. Harnessing the skill to solve
+    those problems will always be useful. It will make you sharp as a programmer and
+    allow you to finish projects faster.
+
+
+    ## What Is JQuery ?
+
+
+    Many years ago, when programmers wanted to change the look and feel of the attributes
+    on their web pages, they had to include lots of font tags and color attributes.
+    This made their HTML pages become overloaded with code and it was very hard to
+    maintain. This meant that all web pages had to be maintained and modified manually.
+    After the invention of CSS they were able to change the appearance of websites
+    without having to write endless lines of code for each page. When JavaScript came
+    along, programmers began writing the JavaScript code into their HTML documents
+    because they weren’t well versed on it at the time. Eventually, they applied the
+    CSS theory to JavaScript and JavaScript libraries were born. Among all the libraries
+    in existence at the time, JQuery stood out and we still use it today.
+
+
+    When you google JQuery, all that comes up is that it is a JavaScript library,
+    but there is more to it than that. It simplifies the scripting of HTML on the
+    client-side. Its main objective is to make using JavaScript easier for you. It
+    can also be used to make adding animation easier. It basically takes a whole lot
+    of common tasks that need several lines of JavaScript to run and attaches them
+    to form a single line of code.
+
+
+    What do client-side mean and server-side mean?
+
+
+    Client-side and server-side are also referred to as front end and back end even
+    though they aren’t entirely the same thing. Client side is where the application
+    code runs and server-side is where the source code is stored.
+
+
+    Some of the most well known features of JQuery are:
+
+
+    ● HTML manipulation
+
+
+    ● DOM manipulation
+
+
+    ● CSS manipulation
+
+
+    ● Effects and Animation
+
+
+    ● Ajax
+
+
+    ● Utilities
+
+
+    JQuery became popular because there was a demand in the market for a tool to simplify
+    the coding experience. JQuery is faster than its counterparts and is constantly
+    being extended. It aids in writing User Interface function codes in as few lines
+    as possible. It is compatible with all browsers and is up to date with their latest
+    features.
+
+
+    # Chapter 1: JavaScript for Beginners
+
+
+    Before you can begin learning how to code, there are some Prerequisites. You have
+    to at least have a basic knowledge of HTML and CSS.
+
+
+    HTML stands for Hypertext Markup language. It is not considered a programming
+    language. Like its name suggests, it is a Markup language that is used when structuring
+    a web page. At its core, it is a very simple language that incorporates the elements
+    applied to text to give it a distinct meaning. You can use these elements to wrap,
+    markup or enclose components on your page and make them look or act a particular
+    way. It can determine whether the text in your document comes in the form of a
+    paragraph, has bullet points or comes in the form of a table. It can also embed
+    pictures and videos onto your page.
+
+
+    When you go on to any website, a number of files are dished out to you. At a rudimentary
+    level your website will present you with an HTML page and a script.js page. The
+    HTML page is the bare bones of the web page. It tells the browser what to show
+    and where everything goes. So if there needs to be a title at the top, a paragraph
+    in the middle and a picture at the bottom, the HTML file is responsible for relaying
+    that information to the browser. This is all well and good but it’s very limiting
+    because the page will always be static and the data cannot change. That’s where
+    JavaScript comes in. JavaScript is able to manipulate the appearance of the website
+    by accessing the DOM. DOM stands for Document Object Model. It tells JavaScript
+    what is on the page and then allows it to make changes to elements of the page.
+    DOM makes it easier to read, access and obtain the content of an HTML document.
+    If we break it down even further, the Document is the HTML file, the object is
+    the tags and elements within the HTML file and the Model is the Layout or structure.
+    Without DOM, JavaScript would not have a perception of any of the elements on
+    a web page and would therefore not be able to change or manipulate them. The DOM
+    information is available through an API. API stands for Application Programming
+    Interface. It basically gives JavaScript an opening to control things on the HTML
+    page. The API acts as the go between for JavaScript and HTML.
+
+
+    HTML syntax is simply the way HTML is written. HTML elements are structured a
+    certain way; they are made up of the opening tag, the content and the closing
+    tag. The opening tag is where the element commences. Visually, it is the name
+    of the element wrapped in opening and closing angle brackets. For example, when
+    your element is a paragraph, the opening tag would look like this:  <p>. The content
+    of the element goes in the middle, in this case, it would be the text in the paragraph.
+    The closing tag marks where the element ends. It is similar to the opening tag,
+    but it has a forward slash after the first bracket. In this case it would look
+    like this:  </p>. If you forget to insert the forward slash or fail to include
+    the closing tag altogether, you may not achieve the desired results.
+
+
+    Elements are split into two categories, namely: Block level and inline elements.
+    Block-level elements create blocks that you can actually see on a page, they take
+    up the full width of a web page by creating a line break. Inline elements take
+    up only as much as they need and are able to add content to a page without any
+    line breaks.
+
+
+    CSS or Cascading Style Sheets is a styling language used for describing the appearance
+    of a document written in HTML. It is used in the formatting and layout of web
+    pages. It is basically responsible for making your web page look really good.
+    CSS syntax is pretty straightforward. The first part of the syntax is the selector,
+    it is followed by opening and closing curly brackets. The brackets are used to
+    show the start and the end of the style that is going to be applied to the selector.
+    It can look something like this: selector { property1: value;}. Property refers
+    to color, size or length, while value refers to the text or image the property
+    is being applied to.
+
+
+    ## Syntax
+
+
+    In order to execute JavaScript, we have to put statements inside of script HTML
+    tags on a web page. For example: <script> JavaScript code </script>. The script
+    tags are made up of two properties:
+
+
+    ➔ Language
+
+
+    Defines the scripting language you are working with. The value will always be
+    JavaScript.
+
+
+    ➔ Type
+
+
+    Stipulates the scripting language being used and should always be set to ‘text/javascript’.'
+  toc: []
+  trans: '
+
+
+    准确定 `JavaScript` 的核心组件并对其进行更深入的学习。不要觉得需要平等地学习所有内容。帕累托法则指出，在某些情况下，80% 的效果来自于 20%
+    的原因。因此，如果你专注于书中能带来 80% 预期结果的 20% 内容，你将能够以惊奇的速度进行学习。需要关注的关键领域包括 `Functions`、`Variables`、`Conditional
+    statements`、`Objects` 和 `Arrays`。
+
+
+    ### 2. 要勤奋。
+
+
+    在学习新知识时，观看教程和阅读非常有帮助。但是，投入更多时间在实践上对你更有帮助。当你学自行车时，你必须主动活动四肢才能前进。学习 `JavaScript`
+    也是如此，通过在机器上编写代码你会学得更快。此外，投入时间至关重要。每周至少花一小时练习和编写代码，将极大提高你的知识水平。
+
+
+    挑战自己，并用 `JavaScript` 构建一个实际项目，无论它有多小。这样做可以巩固你学到的一切知识。你还能识别出自己可能遇到困难的地方，并在那些领域投入额外努力。
+
+
+    ### 3. 学习如何排除错误。
+
+
+    在学习 `JavaScript` 时，你会遇到 Bug。掌握解决问题的技能将始终有用。它会让你成为一名敏锐的程序员，并让你能够更快地完成项目。
+
+
+    ## 什么是 JQuery？
+
+
+    许多年前，当程序员想要更改网页属性的外观和感受时，他们必须包含大量的字体标签和颜色属性。这导致他们的 HTML 页面充满了代码，非常难以维护。这意味着所有的网页都必须手动进行维护和修改。在
+    CSS 发明后，他们能够改变网站的外观，而无需为每个页面编写无尽的代码。当 `JavaScript` 出现时，程序员开始将 `JavaScript` 代码写在他们的
+    HTML 文档中，因为他们当时并不精通它。最终，他们将 CSS 理论应用于 `JavaScript`，`JavaScript` 库之诞生了。在当时存在的所有库中，`JQuery`
+    脱颖而出，我们今天仍在使用它。
+
+
+    当你谷歌搜索 `JQuery` 时，出现的只有它是一个 `JavaScript` 库，但它不止于此。它简化了客户端 HTML 的脚本编写。它的主要目标是让你使用
+    `JavaScript` 变得更容易。它还可以用于让添加动画变得更容易。它基本上将许多需要几行 `JavaScript` 才能运行的常见任务合并在一起，形成单行代码。
+
+
+    什么是客户端，什么是服务器端？
+
+
+    客户端和服务器端也被称为前端和后端，尽管它们并不完全相同。客户端是应用程序代码运行的地方，服务器端是存储源代码的地方。
+
+
+    `JQuery` 的一些最著名的特性包括：
+
+
+    - HTML 操作
+
+    - DOM 操作
+
+    - CSS 操作
+
+    - 效果和动画
+
+    - Ajax
+
+    - 工具函数
+
+
+    `JQuery` 变得流行是因为市场对能够简化编码体验的工具的需求。`JQuery` 比它的同类产品更快，并且不断被扩展。它有助于以尽可能少的行数编写用户界面函数代码。它兼容所有浏览器，并与最新功能保持同步。
+
+
+    # 第 1 章：初学者 JavaScript
+
+
+    在开始学习如何编码之前，有一些先决条件。你至少必须具备 `HTML` 和 `CSS` 的基础知识。
+
+
+    `HTML` 代表超文本标记语言。它不被视为编程语言。正如其名称所示，它是一种用于构建网页结构的标记语言。从核心上说，它是一种非常简单的语言，包含了应用于文本的元素以赋予其独特的含义。你可以使用这些元素来包裹、标记或封闭页面上的组件，并让它们看起来或表现具有特定的方式。它可以决定你文档中的文本是以段落形式、项目列表还是表格的形式出现。它还可以在页面上嵌入图片和视频。
+
+
+    当你访问任何网站时，会有许多文件发送给你。在基础层面上，你的网站将向你展示一个 `HTML` 页面和一个 `script.js` 页面。`HTML` 页面是网页的骨架。它告诉浏览器显示什么以及每个东西放在哪里。所以，如果顶部需要一个标题，中间一个段落，底部需要一张图片，`HTML`
+    文件负责将这些信息传递给浏览器。这很好，但它的限制很大，因为页面将始终是静态的，数据无法更改。这就是 `JavaScript` 发挥用场的地方。`JavaScript`
+    能够通过访问 `DOM` 来操作网站的外观`DOM` 代表文档对象模型。它告诉 `JavaScript` 页面上有什么，然后允许它更改页面元素。`DOM`
+    使读取、访问和获取 `HTML` 文档的内容变得更容易。如果我们进一步拆分，`Document`（文档）是 `HTML` 文件，`object`（对象）是
+    `HTML` 文件中的标签和元素，而 `Model`（模型）是布局或结构。没有 `DOM`，`JavaScript` 将对网页上的任何元素都无法感知，因此无法更改或操纵它们。`DOM`
+    信息通过 `API` 提供。`API` 代表应用程序编程接口。它基本上为 `JavaScript` 提供了一个控制 `HTML` 页面事务的入口。`API`充当了
+    `JavaScript` 和 `HTML` 之间的桥梁。
+
+
+    `HTML` 语法简单来说 `HTML` 的编写方式。`HTML` 元素以特定方式构造；它们由起始标签、内容和结束标签组成。起始标签是元素开始的地方。从视觉上看，它是包裹在起始和结束角括号中的元素名称。例如，当你的元素是一个段落时，起始标签看起来像这样：`<p>`。元素的内容放在中间，在这种情况下，就是段落中的文本。结束标签标记元素结束的地方。它与起始标签相似，但在第一个括号之后有一个斜杠。在这种情况下，它看起来像这样：`</p>`。如果你忘记插入斜杠或完全没有包含结束标签，可能无法达到预期的结果。
+
+
+    元素分为两类，即：块级元素和内联元素。块级元素创建你可以在页面上实际看到的块，它们通过创建换行来占据网页的完整宽度。内联元素仅占据它们所需的空间，并且能够在产生任何换行的情况下向页面添加内容。
+
+
+    `CSS` 或级联样式表是一种用于描述用 `HTML` 编写的文档外观的样式语言。它用于网页的格式和布局。它基本上负责让你的网页看起来非常漂亮。`CSS`
+    语法非常直观。语法的第一部分是 `selector`（选择器），后面跟着起始和结束大括号。括号用于显示将应用于 `selector` 的样式的开始和结束。它看起来像这样：`selector
+    { property1: value;}`。`Property`（属性）指颜色、大小或长度，而 `value`（值）指属性应用的文本或图像。
+
+
+    ## 语法
+
+
+    为了执行 `JavaScript`，我们必须将语句放在网页的 `script` HTML 标签内部。例如：
+
+    ```
+
+    <script> JavaScript code </script>```
+
+    `script` 标签由两个属性组成：
+
+
+    - **Language**（语言）：定义你正在使用的脚本语言。值将始终是 `JavaScript`。
+
+    - **Type**（类型）：规定正在使用的脚本语言，并应始终设置为‘text/javascript’。
+
+
+    '
+- fmt: '
+
+    Your segment will look like this:
+
+
+    ```html own<script language = “javascript” type = “text/javascript”> JavaScript
+    code </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    You have complete freedom to use spaces, tabs and newlines in your program, you
+    can also format and indent your code in a way that is simple to read and understand
+    for you, but JavaScript ignores these things. In JavaScript, simple statements
+    are usually followed by a semicolon, but you have the choice to omit it if your
+    statements are written on different lines.
+
+
+    If your statement looks like this:
+
+
+    ```html
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <!
+
+
+    var1=20
+
+
+    var2=30
+
+
+    // -–>
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    You can write it without semicolons. When your statement is written in a single
+    line format and looks like this:
+
+
+    ```html
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    var1=20; var2=30;
+
+
+    // -–>
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    Then you must make use of semicolons.
+
+
+    JavaScript is case sensitive, all variables and other identifiers must be written
+    in all caps.
+
+
+    Comments in JavaScript are used to add notes to your code, or deactivate portions
+    of the code without fully removing them. We produce comments by putting a forward
+    slash before a single line or adding a forward slash followed by an asterisk after
+    several lines. Commenting on code is a core feature of a lot of programming languages.
+
+
+    Here is an example of how to use comments in JavaScript:
+
+
+    ```javascript
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    //comment
+
+
+    /*
+
+
+    *multi-line comment
+
+
+    *multi-line comment line 2
+
+
+    */
+
+
+    //-- >
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    When a user operates a web page, JavaScript and HTML interact, this is called
+    an Event. That means that any and all actions performed on a web page are an event.
+    Developers code responses to all events. So if you scroll over any of the windows
+    on your browser, and you see the name of the website and web address, that is
+    a response to an event. There are many event types, two of them being:
+
+
+    - **Onload**: The `Onload` event gets activated when the page loads
+
+    - **Onmouseover**: Is activated when the cursor moves on or around an element
+
+
+    ### JavaScript in Browsers
+
+
+    JavaScript is supported on all current browsers, but sometimes you may have to
+    manually enable or disable it. This is how you manage it on each different browser:
+
+
+    #### Firefox:
+
+    - Open a new tab, select the address bar and then type in: `about: config`
+
+    - The warning page will appear, accept the risk and continue
+
+    - The list of configure options will appear in the browser
+
+    - Go to the search bar and type in `javascript.enabled`
+
+    - The toggle will appear and you will be able to switch between disabled and enabled
+    as you please.
+
+
+    #### Chrome:
+
+    - Click on the menu in the top right hand corner
+
+    - Click on settings
+
+    - Go down to the end of the page and click on `Show advanced settings`
+
+    - Go to the privacy section and click on the content settings button
+
+    - There you will find the `JavaScript` section, you will have the option to either
+    allow or disallow sites to run JavaScript.
+
+
+    #### Edge:
+
+    - Click on the settings and more button
+
+    - Select settings
+
+    - Find the `JavaScript` section
+
+    - Choose whether to enable or disable JavaScript with the toggle
+
+
+    ### How to Get Started Writing JavaScript
+
+
+    There are three methods of writing JavaScript. The first, is to write it directly
+    into the Browser. This is the easiest way because you don’t need to set anything
+    up and you can get started by trying out some simple comments. The downside is
+    that if you refresh the page, the code will disappear and you will have to start
+    from scratch. You can also only execute one command at a time.
+
+
+    If you are developing, you are going to need the able to save your code and execute
+    multiple commands at any given time. For that you are going to want to write JavaScript
+    in a simple text file and then send it to the browser to execute.
+
+    '
+  raw: 'Your segment will look like this:
+
+
+    <script language = “javascript” type = “text/javascript”> JavaScript code </script>  (JavaScript
+    - Syntax, n.d.)
+
+
+    You have complete freedom to use spaces, tabs and newlines in your program, you
+    can also format and indent your code in a way that is simple to read and understand
+    for you, but JavaScript ignores these things. In JavaScript, simple statements
+    are usually followed by a semicolon, but you have the choice to omit it if your
+    statements are written on different lines.
+
+
+    If your statement looks like this:
+
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! - -
+
+
+    var1=20
+
+
+    var2=30
+
+
+    // -–>
+
+
+    </script>  (JavaScript - Syntax, n.d.)
+
+
+    You can write it without semicolons. When your statement is written in a single
+    line format and looks like this:
+
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    var1=20; var2=30;
+
+
+    // -–>
+
+
+    </script>  (JavaScript - Syntax, n.d.)
+
+
+    Then you must make use of semicolons.
+
+
+    JavaScript is case sensitive, all variables and other identifiers must be written
+    in all caps.
+
+
+    Comments in JavaScript are used to add notes to your code, or deactivate portions
+    of the code without fully removing them. We produce comments by putting a forward
+    slash before a single line or adding a forward slash followed by an asterisk after
+    several lines. Commenting on code is a core feature of a lot of programming languages.
+
+
+    Here is an example of how to use comments in JavaScript:
+
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    //comment
+
+
+    /*
+
+
+    *multi-line comment
+
+
+    *multi-line comment line 2
+
+
+    */
+
+
+    //-- >
+
+
+    </script>  (JavaScript - Syntax, n.d.)
+
+
+    When a user operates a web page, JavaScript and HTML interact, this is called
+    an Event. That means that any and all actions performed on a web page are an event.
+    Developers code responses to all events. So if you scroll over any of the windows
+    on your browser, and you see the name of the website and web address, that is
+    a response to an event. There are many event types, two of them being:
+
+
+    Onload - The Onload event gets activated when the page loads
+
+
+    Onmouseover - Is activated when the cursor moves on or around an element
+
+
+    ### JavaScript in Browsers
+
+
+    JavaScript is supported on all current browsers, but sometimes you may have to
+    manually enable or disable it. This is how you manage it on each different browser:
+
+
+    Firefox:
+
+
+    ● Open a new tab, select the address bar and then type in: ‘about: config’
+
+
+    ● The warning page will appear, accept the risk and continue
+
+
+    ● The list of configure options will appear in the browser
+
+
+    ● Go to the search bar and type in javascript.enabled
+
+
+    ● The toggle will appear and you will be able to switch between disabled and enabled
+    as you please.
+
+
+    Chrome:
+
+
+    ● Click on the menu in the top right hand corner
+
+
+    ● Click on settings
+
+
+    ● Go down to the end of the page and click on Show advanced settings
+
+
+    ● Go to the privacy section and click on the content settings button
+
+
+    ● There you will find the JavaScript section, you will have the option to either
+    allow or disallow sites to run JavaScript.
+
+
+    Edge:
+
+
+    ● Click the settings and more button
+
+
+    ● Select settings
+
+
+    ● Find the JavaScript section
+
+
+    ● Choose whether to enable or disable JavaScript with the toggle
+
+
+    ### How to Get Started Writing JavaScript
+
+
+    There are three methods of writing JavaScript. The first, is to write it directly
+    into the Browser. This is the easiest way because you don’t need to set anything
+    up and you can get started by trying out some simple comments. The downside is
+    that if you refresh the page, the code will disappear and you will have to start
+    from scratch. You can also only execute one command at a time.
+
+
+    If you are developing, you are going to need to be able to save your code and
+    execute multiple commands at any given time. For that you are going to want to
+    write JavaScript in a simple text file and then send it to the browser to execute.
+    Browsers accept files with the extension .html. You can create HTML files with
+    Notepad in windows and with Textedit on Mac. Once you have written your code into
+    the file, you need to change the format to HTML. You can achieve this by selecting
+    the html extension when saving.
+
+
+    Even though you can write multiple lines of code and include various comments
+    and variables, there are some disadvantages to using a simple text editor. You
+    have to be extremely meticulous because they don’t help you in writing code. Keywords
+    are not highlighted, syntax errors cannot be detected and code completion is completely
+    up to you.
+
+
+    Another way you can write your code is with Special Code Editors. Special Code
+    Editors support various programming languages and have specialized features to
+    help you write your code. They highlight different keywords and alert you when
+    there is a syntax error. An editor that is available for free online is Visual
+    Studio Code.
+
+
+    When you are coding, you can put your code anywhere on the file, but the most
+    popular way to do it is either in the head or the body. We put script in the head
+    section if we want it to run when a user clicks on something. It will look something
+    like this:
+
+
+    <html>
+
+
+    <head>
+
+
+    <script type = “text/javascript”>
+
+
+    < ! - -
+
+
+    function sayHello() {
+
+
+    alert(“Hi there testing”)
+
+
+    }
+
+
+    //- - >
+
+
+    </script>
+
+
+    </head>
+
+
+    <body>
+
+
+    <input type = “button” onclick = “sayHello()” value = “Say Hello”
+
+
+    </body>
+
+
+    <html>  (JavaScript - Syntax, n.d.)
+
+
+    That code would produce a button, and once you click on that button there would
+    be a pop up that says Hi there testing.
+
+
+    ### Datatypes in JavaScript
+
+
+    Data Types are the values that are supported by a programming language. In JavaScript
+    you will work with six; Numbers, BigInt, Strings, Null, Undefined and Booleans.
+
+
+    #### Numbers
+
+
+    Before we can understand the numbers value, we need to have an idea of what ECMAscript
+    is. ECMA is a firm that sets standards for technology. ECMAScript is one of those
+    standards. ECMAScript carries specifications for scripting languages, numbers
+    and BigInt are built into it. JavaScript keeps to the ECMAScript specification.
+    This means that when we are actually coding we make use of JavaScript and not
+    ECMAScript. The number type is used to represent integer values and floating point
+    values. Integers do not have decimal points, and floating numbers do.
+
+
+    #### BigInt
+
+
+    BigInt is an abbreviation for Big Integer. An integer is a whole number without
+    decimals. This data type was created for JavaScript in early 2020 because the
+    number data type was limited. When the script encountered numbers higher than
+    2^53 - 1 they tended to lack accuracy thus affecting the efficacy of applications.
+
+
+    #### Strings
+
+
+    A string is a chain of one or more symbols. It could include anything from letters
+    to numbers. Strings are primitive which means they cannot change.
+
+
+    #### Null
+
+
+    Null is the value shown when there is no object.
+
+
+    #### Undefined
+
+
+    A variable that can’t be identified by its characteristics becomes undefined in
+    JavaScript. A lot of people are unsure what the difference between Null and Undefined
+    is. Undefined is a variable that has no value, while null is an empty value assigned
+    to a variable.
+
+
+    #### Booleans
+
+
+    Booleans only have two possible values. True or false. Boolean is usually used
+    with conditional statements in JavaScript.
+
+
+    Once you have a firm grasp on the Syntax and all the jargon, you’ll want to turn
+    your attention to programming, because it’s the fun part, but it is also going
+    to determine how your apps and websites turn out.
+
+
+    # Chapter 2: JavaScript Programming
+
+
+    The best way to get started with JavaScript programming, is having an understanding
+    of programming paradigms. We should be able to differentiate between them. There
+    are three paradigms; Functional programming, Object-oriented programming and Procedural
+    programming. A paradigm is a set of concepts and standards that make up legitimate
+    contributions to any given field. With regards to JavaScript, it’s really just
+    how you write and arrange your code.
+
+
+    ## Functional Programming'
+  toc: []
+  trans: '
+
+    你的代码段看起来所示：
+
+
+    ```html own<script language = “javascript” type = “text/javascript”> JavaScript
+    code </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    你可以完全自由地在程序中使用空格、制表符和换行符，你也可以以易于自己阅读和理解的方式对代码进行格式化和缩进，但 JavaScript 会忽略这些内容。在 JavaScript
+    中，简单语句后面通常跟着一个分号，但如果你的语句写在不同的行，你也可以选择省略分号。
+
+
+    如果你的语句看起来所示：
+
+
+    ```html
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <!
+
+
+    var1=20
+
+
+    var2=30
+
+
+    // -–>
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    你可以在没有分号的情况下编写它。当你的语句以单行格式编写且如下所示时：
+
+
+    ```html
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    var1=20; var2=30;
+
+
+    // -–>
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    那么你必须使用分号。
+
+
+    JavaScript 是区分大小写的，所有变量和其他标识符必须以全大写写（注：此处原文描述可能有误，JavaScript 是区分大小写而非强制全大写）。
+
+
+    JavaScript 中的注释用于为你的代码添加备注，或者在不完全删除代码的情况下禁用部分代码。我们通过在单行之前放置一个正斜杠 `/` 或在多行之后添加一个正斜杠加星号
+    `*/` 来生成注释。代码注释是许多编程语言的核心特性。
+
+
+    以下是如何在 JavaScript 中使用注释的示例：
+
+
+    ```javascript
+
+    <script language = “javascript” type = “text/javascript”>
+
+
+    <! --
+
+
+    //comment
+
+
+    /*
+
+
+    *multi-line comment
+
+
+    *multi-line comment line 2
+
+
+    */
+
+
+    //-- >
+
+
+    </script>
+
+    ```
+
+    (JavaScript - Syntax, n.d.)
+
+
+    当用户操作网页时，JavaScript 和 HTML 会相互交互，这被称为“事件”（Event）。这意味着在网页上执行的任何操作都是一个事件。开发者为所有事件编写响应代码。所以，如果你鼠标悬停在浏览器的任何窗口上，看到网站名称和网址，那就是对事件的响应。有很多事件类型，其中两种是：
+
+
+    -   **Onload**：页面加载时激活 `Onload` 事件
+
+    -   **Onmouseover**：当光标移动到元素上或元素周围时激活
+
+
+    ### 浏览器中的 JavaScript
+
+
+    所有当前浏览器都支持 JavaScript，但有时你可能需要手动启用或禁用它。以下是在不同浏览器中管理它的方法：
+
+
+    #### Firefox:
+
+    - 打开一个新标签页，选择地址栏，然后输入：`about: config`
+
+    - 将出现一个警告页面，接受风险并继续
+
+    - 浏览器中将出现配置选项列表
+
+    - 转到搜索栏并输入 `javascript.enabled`
+
+    - 将出现开关，你可以根据意愿在禁用和启用之间切换。
+
+
+    #### Chrome:
+
+    - 点击右上角的菜单
+
+    - 点击“设置”
+
+    - 滚动到页面底部并点击“显示高级设置”
+
+    - 进入“隐私”部分并点击“内容设置”按钮
+
+    - 在那里你将找到 `JavaScript` 部分，你会有允许或禁止网站运行 JavaScript 的选项。
+
+
+    #### Edge:
+
+    - 点击“设置和更多”按钮
+
+    - 选择“设置”
+
+    - 找到 `JavaScript` 部分
+
+    - 通过开关选择启用或禁用 JavaScript
+
+
+    ### 如何开始编写 JavaScript
+
+
+    编写 JavaScript 有三种方法。第一种是直接写在浏览器。这是最简单的方法，因为你不需要设置任何东西，可以通过尝试一些简单的注释来开始。缺点是如果你刷新页面，代码将会消失，你必须从头开始。而且你一次只能执行一条命令。
+
+
+    如果你正在进行开发，你将需要保存代码并在任何时候执行多个命令。为此，你可能希望在一个简单的文本文件中编写 JavaScript，然后将其发送到浏览器执行。
+
+    '
+- fmt: '
+
+    Functional programming in JavaScript
+
+
+    In this context, it is creating pure functions that focus solely on the outcome
+    and not the process. Pure functions are immutable, which means you can’t change
+    their state. They make use of conditional expressions and recursion when performing
+    calculations. They do not rely on anything beyond their parameters, so they are
+    predictable. If you have the same parameters, the outcome will always be the same.
+    Recursion is a pattern that programmers use when a line of code can be split into
+    several similar tasks but simpler.
+
+
+    ### Types of Functions
+
+    First class functions are treated as sole entities. They are independent. We can
+    use them the same way we do data. Functional programming uses arguments, return
+    values and variables as functions to create more intricate code. First class functions
+    are relatively pliable so some Object Oriented languages incorporate them too.
+
+
+    ### Higher-Order Functions
+
+    Higher-order functions work on other functions and take them as arguments. They
+    also return other functions as output.
+
+
+    Functional programming does not support loop statements or conditional statements
+    like `if`.
+
+
+    ### What Are Conditional Statements?
+
+    Conditional statements look at the conditions in the JavaScript code and then
+    make decisions based on that. Like the name suggests, a statement can either be
+    true or false. The code only gets executed if the condition is true. There are
+    four types of conditional statements:
+
+
+    - The `if` statement: Carries out part of the code if the condition is true.
+
+    - The `else` statement: Carries out the part of the code related to `else` if
+    the condition is false.
+
+    - The `else if` statement: Designates and tests a new condition if the first `if`
+    condition is false.
+
+    - The `switch-case` statement: Designates a number of substitute code blocks to
+    be carried out based on specific conditions.
+
+
+    # Object-Oriented Programming
+
+    JavaScript itself is not based in Object oriented language, but we can still use
+    it when programming. While functional programming is centered around functions
+    and logic, OOP or Object-oriented programming is not. It is a model that focuses
+    more on objects. It is the process of organizing your data in classes and then
+    in objects based on their class. In this case, an object is a data field with
+    its own features and properties. OOP is good for bigger programs that require
+    constant updating and maintenance. But that slows down their speed and results
+    in them using a lot of memory.
+
+
+    Before anything, you want to start off with an understanding of data-modeling.
+    Data modeling is when you take all the objects that you want to work with and
+    compare them. If your object was cars, you would want to compare them by make,
+    color and size.
+
+
+    The properties that make up Object-Oriented Programming are:
+
+    - Classes: Are the models used to create objects
+
+    - Objects: Are units that possess characteristics and can be organized by type
+
+    - Methods: Make JavaScript able to manipulate or change the data inside it
+
+    - Attributes: Are words we put in the start and end tags of `html` elements to
+    control what the tag does
+
+
+    ### Objects
+
+    Objects are made up of characteristics. If one of the characteristics has a function,
+    it’s considered a `method`. If it has no function then it’s just a property. A
+    property can be any of the primitive data types, but they are usually variables
+    located in objects.
+
+
+    The principles of OOP are:
+
+    - Encapsulation: Is a method used to hold vital information inside an object and
+    prevent additional information from being exposed. It gives the other objects
+    controlled access and aids in preventing any data corruption.
+
+    - Abstraction: Only shares pertinent attributes between objects and hides any
+    unnecessary code
+
+    - Inheritance: Is the operation by which one class can obtain properties (like
+    fields) from another
+
+    - Polymorphism: Is the process of representing one thing in different forms. In
+    JavaScript it means that different objects can share the same attributes.
+
+
+    OOP is easier to manage and it can be likened to the real world so it’s easier
+    to grasp.
+
+
+    # Procedural Programming
+
+    Procedural programming has a direct approach to organizing code. It aims to break
+    a program down into procedures. In this case, procedures are functions that are
+    conducted chronologically. It tells the computer to perform functions in sequence
+    until the desired outcome is reached.
+
+
+    ### Fundamental Features of Procedural Programming
+
+    - Predefined Functions: A Predefined function is a command identified by a name.
+    They are incorporated in complex programming languages but they are stored in
+    the JavaScript library and not the program itself.
+
+    - Local Variable: A local `Variable` is stated in the main structure of a method
+    and cannot exist outside of a certain field. Local variables can only be used
+    in the method they are written in. If a programmer attempted to write them outside
+    of the method, the code would fail.
+
+    - Global Variable: Global variables are written outside of methods and can be
+    used in all functions.
+
+    - Modularity: Modularity is when two different systems are tasked with different
+    actions but get grouped together to perform a singular task first. Each group
+    would perform their tasks in sequence until completion.
+
+    - Parameter Passing: Parameter passing is an operation used to pass guidelines
+    to functions, subroutines or procedures. They can be executed through passing
+    by value, reference, result and name.
+
+
+    ### Applications of JavaScript Programming
+
+    JavaScript can be found in nearly every aspect of software development. Some aspects
+    include:
+
+    - HTML Manipulation: JavaScript allows you to add, remove, and change the appearance
+    of any element of `HTML` to suit the requirements of any given device.
+
+    - User Notifications: It is critical to double-check user inputs before sending
+    it to the server, so JavaScript verifies those inputs on the front end.
+
+    - Back-End Data Loading: `Ajax` library allows back-end data to load while other
+    processing is happening. This ensures that there are no interruptions for the
+    client.
+
+    - Presentations: JavaScript lets you construct presentations to enhance a website’s
+    appearance.
+
+    - Server Applications: The Server Application is pretty much the same as the client
+    application because they both deliver and receive data. The only difference between
+    them is that they connect to the server differently.
+
+    - Client-Side Validation: Contributes to the overall user experience. It is an
+    initial check that is run to identify any invalid data on the client-side so that
+    the user can fix it.
+
+
+    A recurring term that we should expand on is the ‘client’.
+
+
+    Client-Side and Server-Side are expressions used to define where the application
+    code is executed. In a ‘serverless’ framework, the vendor distributes resources
+    to all processes that happen on the side of the server. Cloud service providers
+    still make use of servers to run code for developers, so the name can be misleading.
+
+
+    The Client-Server Model is a framework located on the web. It divides computers
+    into two sections. The first section requests services (the client) and the second
+    section serves the clients (the server). A server is contained within a high performance
+    computer, but it is not a computer itself. Servers are programs that aid in client
+    functionality. The client-server model is a constant cycle of requests and responses.
+    It is used because it has a larger capacity and is therefore more reliable than
+    a user device.
+
+
+    Now that you have an idea of what programming actually entails, you are ready
+    to learn about the skeleton of an application and what goes into constructing
+    it.
+
+
+    # Chapter 3: JavaScript Architecture
+
+    Understanding JavaScript Architecture can be helpful when you are learning how
+    to code. If you have a good understanding about how JavaScript works online, you
+    are at an advantage.
+
+
+    There are three types of JavaScript architecture. Typical, Framework based and
+    Advanced.
+
+
+    ## Typical JavaScript Application Architecture
+
+    '
+  raw: 'Functional programming in JavaScript In this context, it is creating pure
+    functions that focus solely on the outcome and not the process. Pure functions
+    are immutable, which means you can’t change their state. They make use of conditional
+    expressions and recursion when performing calculations. They do not rely on anything
+    beyond their parameters, so they are predictable. If you have the same parameters,
+    the outcome will always be the same. Recursion is a pattern that programmers use
+    when a line of code can be split into several similar tasks but simpler.
+
+
+    #### Types of Functions
+
+
+    First class functions are treated as sole entities. They are independent. We can
+    use them the same way we do data. Functional programming uses arguments, return
+    values and variables as functions to create more intricate code. First class functions
+    are relatively pliable so some Object Oriented languages incorporate them too.
+
+
+    #### Higher-Order Functions
+
+
+    Higher-order functions work on other functions and take them as arguments. They
+    also return other functions as output.
+
+
+    Functional programming does not support loop statements or conditional statements
+    like if.
+
+
+    #### What Are Conditional Statements?
+
+
+    Conditional statements look at the conditions in the JavaScript code and then
+    make decisions based on that. Like the name suggests, a statement can either be
+    true or false. The code only gets executed if the condition is true. There are
+    four types of conditional statements:
+
+
+    ● The if statement
+
+
+    Carries out part of the code if the condition is true.
+
+
+    ● The else statement
+
+
+    Carries out the part of the code related to else if the condition is false.
+
+
+    ● The else if statement
+
+
+    Designates and tests a new condition if the first if condition is false.
+
+
+    ● The switch-case statement
+
+
+    Designates a number of substitute code blocks to be carried out based on specific
+    conditions.
+
+
+    ## Object-Oriented Programming
+
+
+    JavaScript itself is not based in Object oriented language, but we can still use
+    it when programming. While functional programming is centered around functions
+    and logic, OOP or Object-oriented programming is not. It is a model that focuses
+    more on objects. It is the process of organizing your data in classes and then
+    in objects based on their class. In this case, an object is a data field with
+    its own features and properties. OOP is good for bigger programs that require
+    constant updating and maintenance. But that slows down their speed and results
+    in them using a lot of memory.
+
+
+    Before anything, you want to start off with an understanding of data-modeling.
+    Data modeling is when you take all the objects that you want to work with and
+    compare them. If your object was cars, you would want to compare them by make,
+    color and size.
+
+
+    The properties that make up Object-Oriented Programming are:
+
+
+    ● Classes–Are the models used to create objects
+
+
+    ● Objects–Are units that possess characteristics and can be organized by type
+
+
+    ● Methods–Make JavaScript able to manipulate or change the data inside it
+
+
+    ● Attributes–Are words we put in the start and end tags of html elements to control
+    what the tag does
+
+
+    Objects
+
+
+    Objects are made up of characteristics. If one of the characteristics has a function,
+    it’s considered a method. If it has no function then it’s just a property. A property
+    can be any of the primitive data types, but they are usually variables located
+    in objects.
+
+
+    The principles of OOP are:
+
+
+    ● Encapsulation–Is a method used to hold vital information inside an object and
+    prevent additional information from being exposed. It gives the other objects
+    controlled access and aids in preventing any data corruption.
+
+
+    ● Abstraction–Only shares pertinent attributes between objects and hides any unnecessary
+    code
+
+
+    ● Inheritance–Is the operation by which one class can obtain properties (like
+    fields) from another
+
+
+    ● Polymorphism–Is the process of representing one thing in different forms. In
+    JavaScript it means that different objects can share the same attributes.
+
+
+    OOP is easier to manage and it can be likened to the real world so it’s easier
+    to grasp.
+
+
+    ## Procedural Programming
+
+
+    Procedural programming has a direct approach to organizing code. It aims to break
+    a program down into procedures. In this case, procedures are functions that are
+    conducted chronologically. It tells the computer to perform functions in sequence
+    until the desired outcome is reached.
+
+
+    ### Fundamental Features of Procedural Programming
+
+
+    ● Predefined Functions
+
+
+    A Predefined function is a command identified by a name. They are incorporated
+    in complex programming languages but they are stored in the JavaScript library
+    and not the program itself.
+
+
+    ● Local Variable
+
+
+    A local Variable is stated in the main structure of a method and cannot exist
+    outside of a certain field. Local variables can only be used in the method they
+    are written in. If a programmer attempted to write them outside of the method,
+    the code would fail.
+
+
+    ● Global Variable
+
+
+    Global variables are written outside of methods and can be used in all functions.
+
+
+    ● Modularity
+
+
+    Modularity is when two different systems are tasked with different actions but
+    get grouped together to perform a singular task first. Each group would perform
+    their tasks in sequence until completion.
+
+
+    ● Parameter Passing
+
+
+    Parameter passing is an operation used to pass guidelines to functions, subroutines
+    or procedures. They can be executed through passing by value, reference, result
+    and name.
+
+
+    ### Applications of JavaScript Programming
+
+
+    JavaScript can be found in nearly every aspect of software development. Some aspects
+    include:
+
+
+    ● HTML Manipulation
+
+
+    JavaScript allows you to add, remove, and change the appearance of any element
+    of HTML to suit the requirements of any given device.
+
+
+    ● User Notifications
+
+
+    It is critical to double-check user inputs before sending it to the server, so
+    JavaScript verifies those inputs on the front end.
+
+
+    ● Back-End Data Loading
+
+
+    Ajax library allows back-end data to load while other processing is happening.
+    This ensures that there are no interruptions for the client.
+
+
+    ● Presentations
+
+
+    JavaScript lets you construct presentations to enhance a website’s appearance.
+
+
+    ● Server Applications
+
+
+    The Server Application is pretty much the same as the client application because
+    they both deliver and receive data. The only difference between them is that they
+    connect to the server differently.
+
+
+    ● Client-Side Validation
+
+
+    Contributes to the overall user experience. It is an initial check that is run
+    to identify any invalid data on the client-side so that the user can fix it.
+
+
+    A recurring term that we should expand on is the ‘client’.
+
+
+    Client-Side and Server-Side are expressions used to define where the application
+    code is executed. In a ‘serverless’ framework, the vendor distributes resources
+    to all processes that happen on the side of the server. Cloud service providers
+    still make use of servers to run code for developers, so the name can be misleading.
+
+
+    The Client-Server Model is a framework located on the web. It divides computers
+    into two sections. The first section requests services (the client) and the second
+    section serves the clients (the server). A server is contained within a high performance
+    computer, but it is not a computer itself. Servers are programs that aid in client
+    functionality. The client-server model is a constant cycle of requests and responses.
+    It is used because it has a larger capacity and is therefore more reliable than
+    a user device.
+
+
+    Now that you have an idea of what programming actually entails, you are ready
+    to learn about the skeleton of an application and what goes into constructing
+    it.
+
+
+    # Chapter 3: JavaScript Architecture
+
+
+    Understanding JavaScript Architecture can be helpful when you are learning how
+    to code. If you have a good understanding about how JavaScript works online, you
+    are at an advantage.
+
+
+    There are three types of JavaScript architecture. Typical, Framework based and
+    Advanced.
+
+
+    ## Typical JavaScript Application Architecture'
+  toc: []
+  trans: '
+
+    JavaScript 中的函数式编程
+
+
+    在这种语境下，函数式编程是指创建仅关注结果而非过程的纯函数。纯函数是不可变的，这意味着你不能改变它们的状态。它们在执行计算时使用条件表达式和递归。它们不依赖参数之外的任何内容，因此它们是可预测的。如果你提供相同的参数，结果将始终是相同的。递归是程序员当一行代码可以被拆分为几个相似但更简单的任务时使用的模式。
+
+
+    ### 函数的类型
+
+    一等函数被视为独立的实体。它们是独立的。我们可以像处理数据一样使用它们。函数式编程将参数、返回值和变量作为函数，以创建更复杂的代码。一等函数具有较强的活性，因此某些面向对象的对象的语言也包含了它们。
+
+
+    ### 高阶函数
+
+    高阶函数作用于其他函数，并将它们作为参数传入。它们还会返回其他函数作为输出。
+
+
+    函数式编程不支持循环语句或像 `if` 这样的条件语句。
+
+
+    ### 什么是条件语句？
+
+    条件语句查看 JavaScript 代码中的条件，并据此做出决定。正如名称所示，一个语句可以是真，也可以为假。只有当条件为真时，代码才会被执行。条件语句有四种：
+
+
+    - `if` 语句：如果条件为真，执行部分代码。
+
+    - `else` 语句：如果条件为假，执行与 `else` 相关的代码。
+
+    - `else if` 语句：如果第一个 `if` 条件为假，则指定并测试一个新的条件。
+
+    - `switch-case` 语句：根据特定条件指定多个待执行的替换块。
+
+
+    # 面向对象编程
+
+    JavaScript 本身不是基于面向对象的语言，但在编程时我们仍然可以使用它。虽然函数式编程以函数和逻辑为中心，但 OOP（或面向对象编程）不是。它是一种更关注对象的模型。它是将你的数据组织成类，然后根据这些类组织成对象的过程。在这种情况下，对象是一个具有自身特征和属性的数据字段。OOP
+    适用于需要不断更新和维护的大型程序。但这会降低它们的运行速度并导致消耗大量内存。
+
+
+    在开始任何之前，你想要先理解数据建模。数据建模是你取所有想要处理的对象并对其进行比较。如果你的对象是汽车，你将根据品牌、颜色和大小对它们进行比较。
+
+
+    构成面向对象程序的要素有：
+
+    - 类 (Classes)：用于创建对象的模型。
+
+    - 对象 (Objects)：拥有特征并可以按类型组织的单元。
+
+    - 方法 (Methods)：让 JavaScript 能够操作或更改其内部的数据。
+
+    - 属性 (Attributes)：我们放在 `html` 元素开始和结束标签中的词，用于控制标签的作用。
+
+
+    ### 对象
+
+    对象由特征组成。如果一个特征具有函数，它被认为是一个`method`。如果它没有函数，它只是一个属性。属性可以是任何原始数据类型，但它们通常是位于对象中的变量。
+
+
+    OOP 的原理是：
+
+    - 封装 (Encapsulation)：用于在对象内部持有重要信息并防止额外信息暴露的方法。它为其他对象提供了受控的访问并有助于防止任何数据损坏。
+
+    - 抽象 (Abstraction)：仅在对象之间共享相关的属性并隐藏任何不必要的代码
+
+    - 继承 (Inheritance)：类从另一个类获取属性（如字段）的操作。
+
+    - 多态 (Polymorphism)：以不同形式表示同一事的过程。在 JavaScript 中，这意味着不同的对象可以共享相同的属性。
+
+
+    OOP 更容易管理，并且类似于现实世界，因此更容易理解。
+
+
+    # 过程化编程
+
+    过程化编程有一种直接组织代码的方法。它的目标是将程序分解为过程。在这种情况下，过程是按顺序执行的函数。它告诉计算机顺序执行函数，直到达到预期结果。
+
+
+    ### 过程化编程的基本特征
+
+    - 预定义函数 (Predefined Functions)：预定义函数是由名称标识的命令。它们包含在复杂的编程语言中，但它们存储在 JavaScript
+    库中而不是程序本身中。
+
+    - 局部变量 (Local Variable)：局部`Variable`在方法的结构结构声明，不能存在特定字段之外。局部变量只能在编写它们的方法。如果程序员尝试在方法之外编写它们，代码将失败。
+
+    - 全局变量 (Global Variable)：全局变量写在方法之外，可以在所有函数中使用。
+
+    - 模块化 (Modularity)：模块化是指两个不同的系统被赋予不同的任务，但组合在一起首先执行单一任务。每个组将按顺序执行其任务直到完成。
+
+    - 参数传递 (Parameter Passing)：参数传递是用于向函数、子程序或过程传递指南的操作。它们可以通过值、引用、结果和名称传递执行。
+
+
+    ### JavaScript 编程的应用
+
+    JavaScript 几乎出现在软件开发的每一个方面。某些方面包括：
+
+    - HTML 操作：JavaScript 允许你添加、删除和更改任何 `HTML` 元素的外观，以适应任何设备设备。
+
+    - 用户通知：在将用户输入发送到服务器之前双检查用户输入至关重要，因此 JavaScript 在前端验证这些输入。
+
+    - 后端数据加载：`Ajax` 库允许在进行其他处理时加载后端数据。这确保了客户端不会中断。
+
+    - 演示文：JavaScript 让你构建演示文以增强网站的外观。
+
+    - 服务器应用程序：服务器应用程序与客户端应用程序几乎相同，因为它们都交付和接收数据。它们之间的唯一区别是连接到服务器的方式不同。
+
+    - 客户端验证：有助于整体用户体验。这是一个运行的初始检查，用于识别客户端上的任何无效数据，以便用户可以进行修复。
+
+
+    我们应该扩展的一个经常出现的术语是“客户端（client）”。
+
+
+    客户端（Client-Side）和服务端（Server-Side）是用于定义应用程序代码执行位置的表达式。在“无服务器”框架中，供应商将资源分发到所有发生在服务器端的进程。云服务提供商仍然利用服务器为开发者运行代码，因此该名称可能具有误导性。
+
+
+    客户端服务器模型（Client-Server Model）是位于网络上的框架。它将计算机分为两个部分。第一部分请求服务（客户端），第二部分为客户端提供服务（服务器）。服务器位于高性能计算机内部但它本身并不是计算机。服务器是辅助客户端功能的程序。客户端-服务器模型是请求和响应的持续循环。它被使用是因为它的容量更大，因此比用户设备更可靠。
+
+
+    现在你已经了解编程实际上包含什么，你已经准备好学习应用程序的骨架以及构建它的要素了。
+
+
+    # 第 3 章：JavaScript 架构
+
+    理解 JavaScript 架构对于你学习编程非常有帮助。如果你对 JavaScript 在网络上如何工作有良好的理解，你就处于优势。
+
+
+    有三种 JavaScript 架构。典型的、基于框架的和高级的。
+
+
+    ## 典型的 JavaScript 架构
+
+
+    '
+- fmt: '
+
+    Ordinarily, JavaScript applications use the bottom-up approach. The User Interface
+    is put at the center of development at all times. The User Interface and the server
+    link directly to the code from behind.
+
+
+    This JavaScript architecture is mostly used for simple programs like websites
+    that don’t require intricate frameworks. It simply can’t keep up with more complex
+    programs. It does allow you to interact with the screen, but it just does not
+    have the capacity for a large scale application.
+
+
+    SPAs or Single page applications make use of typical JavaScript Architecture.
+    They can be updated easily and they are still in demand today. SPAs can only be
+    used in a web browser, so they rely a lot on JavaScript. SPAs tend to be faster
+    than mobile apps because the script that was used to build them only needs to
+    be loaded once. From that point on its only job is to send data between the user
+    and the server.
+
+
+    ## Framework-Based Architecture
+
+    As time progressed, The capabilities of Typical application architecture were
+    not able to keep up with the needs of programmers around the world. Thus Framework
+    based Architecture was born. It is able to solve more complex problems because
+    it makes use of either the `MVC` or the `MVVM` patterns.
+
+
+    `MVC` stands for `Model View Controller`. It splits larger applications into different
+    sections that all have distinct functions. Each section is equipped to handle
+    different aspects of an application. The model represents everything data related.
+    It gets its commands from the controller and then carries out the user’s input.
+    The view controls everything User Interface related. It gets the input from the
+    user and then presents the data from the model to the user. The controller is
+    the connection between the two. It processes and manipulates data from either
+    side and then produces an output.
+
+
+    There are different adaptations of `MVC`:
+
+
+    - `HMVC`–Which stands for `Hierarchical Model view controller`. It is essentially
+    the same thing as `MVC`, but with layers and more capabilities It takes `MVC`
+    and repeats it in different parts of the application. Having it in layers does
+    wonders for app development. You can easily reuse the code and not have to worry
+    about constant maintenance.
+
+    - `MVA`–Which stands for `Model View Adapter`. Usually data travels from the controller
+    to the model, but with `MVA` the controller is the go-between and the `Model`
+    and `View` must pass it. `View` and `Model` do not actually intersect. Here, the
+    `Controller` acts as an adapter.
+
+    - `MVP`–Which stands for `Model View Presenter`. This one is slightly different
+    from `MVC`. The presenter is in charge of all the data in the application. It
+    sends that data to the model to process, receives it back and then passes it onto
+    the `View`.
+
+    - `MVVM`–Stands for `Model-View ViewModel` and is like an amalgamation of `MVC`
+    and `MVP` because it borrows from their patterns. Data and information are completely
+    separate from the User Interface. The controller is replaced by the `Viewmodel`
+    which connects the `Model` and the `View`. The `Viewmodel` updates the `Model`
+    every time it receives input and then adapts that data before sending it off to
+    the `View`.
+
+
+    The framework has a feature rich Runtime environment that renders and puts out
+    the Application. We can liken the Runtime environment to a vessel. It consists
+    of all the things we need to run JavaScript code. Namely:
+
+    - The `Engine`
+
+    - `Web API’s`
+
+    - `Event loops`
+
+    - `Call back queue`
+
+    - `Micro task queue`
+
+
+    ## JavaScript Engines
+
+    Engines take the intricate code written in JavaScript and convert it into a code
+    that the machine can understand. Each browser has its own engine. A few notable
+    engines are `V8`, `SpiderMonkey` and `JavaScript Core`.
+
+
+    ### V8
+
+    No two engines are the same, they all run differently but ultimately do the same
+    thing. In the `V8` engine, everything starts in the `Parser`. The `Parser` checks
+    for syntax and semantics. Syntax is the structure that the code comes in and Semantics
+    refers to what certain words and symbols in the code mean. The `parser` then analyzes
+    and breaks the code down to make it into Abstract Syntax Tree(AST)`. `AST` is
+    the representation of the source code in tree form. The `AST` then goes into the
+    `Interpreter`. The `Interpreter` converts the `AST` into `Byte Code`. This is
+    known as `ignition`. Sometimes code gets repeated up to one thousand times. When
+    this happens, the `Profiler` checks for the code repetition and tries to optimize
+    it. Once it gets the optimized code, it moves it on to the `Compiler`. The compiler
+    in the `V8` engine is called `TurboFan`. `Turbofan` releases the `Byte Code` in
+    its most optimized form.
+
+
+    ### SpiderMonkey
+
+    `SpiderMonkey` was actually the first engine and it was created in 1995. The Mozilla
+    foundation has kept it going and still makes use of it today. The engine converts
+    the JavaScript code into `ByteCode` first and then sends it to the `Interpreter`
+    and the `JIT Compiler`. `JIT` stands for `Just in Time`. The `JIT Compiler` optimizes
+    the code and sends any unused code to the `Garbage collector`.
+
+
+    ### Web API’s
+
+    `API` stands for Application Programming Interface. It is an interface that gives
+    the User a set of functions, while concealing the underlying mechanism of that
+    function. `Web API’s` are not actually part of JavaScript. They are located in
+    the browser, but they do give us access to the `JavaScript Engine`.
+
+
+    `Web API’s` are comprised of:
+
+    - A set timeout–Allows you to execute a block of code after a certain amount of
+    time (defined by you) has passed
+
+    - `DOM API’s` - Are made up of the interfaces that define how each of the elements
+    in HTML function. That includes any supporting types and interfaces they may rely
+    on.
+
+    - `Fetch`–`API` Gives JavaScript access to manipulate requests and responses in
+    the `Call Stack`
+
+    - `Local storage`–Lets JavaScript apps save important value pairs indefinitely
+
+    - `Console`–Registers any and all messages logged by JavaScript code
+
+    - `Location`–Allows users of the browser to share their Geographical location
+    at any given time
+
+
+    ### Event Loops
+
+    JavaScript is a single threaded code. This means that it can only run one command
+    at a time. These commands are synchronous because they run one after the other.
+    This doesn’t always work in programming so there are ways to make JavaScript asynchronous.
+    Things like `Call stacks` help to avoid any blocking that might happen in a synchronous
+    thread.
+
+
+    A `Call stack` is a mechanism used by the interpreter to keep track of functions
+    and their place in any given script. It allows functions to run concurrently.
+    When the script calls a function, the interpreter puts it in the call stack and
+    then conducts the function.
+
+
+    A `Callback Queue` is like a safe house where an unexecuted line of script stays
+    until it’s time for it to run.
+
+
+    The `Event Loop`’s job is to check the `Call Stack` and `Callback Queue`. If the
+    `Call Stack` is empty, `Event Loop` will take the statement in the `Callback Queue`
+    and push it to the `Call Stack`. It appears to be a pretty straightforward process,
+    but there is something called the `MicroTask Queue`. The `MicroTask queue` is
+    pretty much a carbon copy of the `Callback Queue` but it has a higher priority,
+    which means that any functions in it will be executed first.
+
+
+    `MPAs` or Multi Page applications are better built with Framework based architecture.
+    They are obviously larger than Single Page Applications and take more time to
+    build. Because it’s data heavy, a lot of information has to go back and forth
+    between the browser and the server. This makes it slower than an SPA.
+
+    '
+  raw: 'Ordinarily, JavaScript applications use the bottom-up approach. The User Interface
+    is put at the center of development at all times. The User Interface and the server
+    link directly to the code from behind.
+
+
+    This JavaScript architecture is mostly used for simple programs like websites
+    that don’t require intricate frameworks. It simply can’t keep up with more complex
+    programs. It does allow you to interact with the screen, but it just does not
+    have the capacity for a large scale application.
+
+
+    SPAs or Single page applications make use of typical JavaScript Architecture.
+    They can be updated easily and they are still in demand today. SPAs can only be
+    used in a web browser, so they rely a lot on JavaScript. SPAs tend to be faster
+    than mobile apps because the script that was used to build them only needs to
+    be loaded once. From that point on its only job is to send data between the user
+    and the server.
+
+
+    ## Framework-Based Architecture
+
+
+    As time progressed, The capabilities of Typical application architecture were
+    not able to keep up with the needs of programmers around the world. Thus Framework
+    based Architecture was born. It is able to solve more complex problems because
+    it makes use of either the MVC or the MVVM patterns.
+
+
+    MVC stands for Model View Controller. It splits larger applications into different
+    sections that all have distinct functions. Each section is equipped to handle
+    different aspects of an application. The model represents everything data related.
+    It gets its commands from the controller and then carries out the user’s input.
+    The view controls everything User Interface related. It gets the input from the
+    user and then presents the data from the model to the user.  The controller is
+    the connection between the two. It processes and manipulates data from either
+    side and then produces an output.
+
+
+    There are different adaptations of MVC:
+
+
+    HMVC–Which stands for Hierarchical Model view controller. It is essentially the
+    same thing as MVC, but with layers and more capabilities It takes MVC and repeats
+    it in different parts of the application. Having it in layers does wonders for
+    app development. You can easily reuse the code and not have to worry about constant
+    maintenance.
+
+
+    MVA–Which stands for Model View Adapter. Usually data travels from the controller
+    to the model, but with MVA the controller is the go-between and the Model and
+    View must pass it. View and Model do not actually intersect. Here, the Controller
+    acts as an adapter.
+
+
+    MVP–Which stands for Model View Presenter. This one is slightly different from
+    MVC. The presenter is in charge of all the data in the application. It sends that
+    data to the model to process, receives it back and then passes it onto the View.
+
+
+    MVVM–Stands for Model-View ViewModel and  is like an amalgamation of MVC and MVP
+    because it borrows from their patterns. Data and information are completely separate
+    from the User Interface. The controller is replaced by the Viewmodel which connects
+    the Model and the View. The Viewmodel updates the Model every time it receives
+    input and then adapts that data before sending it off to the View.
+
+
+    The framework has a feature rich Runtime environment that renders and puts out
+    the Application. We can liken the Runtime environment to a vessel. It consists
+    of all the things we need to run JavaScript code. Namely:
+
+
+    ● The Engine
+
+
+    ● Web API’s
+
+
+    ● Event loops
+
+
+    ● Call back queue
+
+
+    ● Micro task queue
+
+
+    ## JavaScript Engines
+
+
+    Engines take the intricate code written in JavaScript and convert it into a code
+    that the machine can understand. Each browser has its own engine. A few notable
+    engines are V8, SpiderMonkey and JavaScript Core.
+
+
+    V8
+
+
+    No two engines are the same, they all run differently but ultimately do the same
+    thing. In the V8 engine, everything starts in the Parser. The Parser checks for
+    syntax and semantics. Syntax is the structure that the code comes in and Semantics
+    refers to what certain words and symbols in the code mean. The parser then analyzes
+    and breaks the code down to make it into Abstract Syntax Tree(AST). AST is the
+    representation of the source code in tree form. The AST then goes into the Interpreter.
+    The Interpreter converts the AST into Byte Code. This is known as ignition. Sometimes
+    code gets repeated up to one thousand times. When this happens, the Profiler checks
+    for the code repetition and tries to optimize it. Once it gets the optimized code,
+    it moves it on to the Compiler. The compiler in the V8 engine is called TurboFan.
+    Turbofan releases the Byte Code in its most optimized form.
+
+
+    SpiderMonkey
+
+
+    SpiderMonkey  was actually the first engine and it was created in 1995\. The Mozilla
+    foundation has kept it going and still makes use of it today. The engine converts
+    the JavaScript code into ByteCode first and then sends it to the Interpreter and
+    the JIT  Compiler. JIT stands for Just in Time. The JIT Compiler optimizes the
+    code and sends any unused code to the Garbage collector.
+
+
+    ### Web API’s
+
+
+    API stands for Application Programming Interface. It is an interface that gives
+    the User a set of functions, while concealing the underlying mechanism of that
+    function. Web API’s are not actually part of JavaScript. They are located in the
+    browser, but they do give us access to the JavaScript Engine.
+
+
+    Web API’s are comprised of:
+
+
+    ● A set timeout–Allows you to execute a block of code after a certain amount of
+    time (defined by you) has passed
+
+
+    ● DOM API’s - Are made up of the interfaces that define how each of the elements
+    in HTML function. That includes any supporting types and interfaces they may rely
+    on.
+
+
+    ● Fetch–API Gives JavaScript access to manipulate requests and responses in the
+    Call Stack
+
+
+    ● Local storage–Lets JavaScript apps save important value pairs indefinitely
+
+
+    ● Console–Registers any and all messages logged by JavaScript code
+
+
+    ● Location–Allows users of the browser to share their Geographical location at
+    any given time
+
+
+    ### Event Loops
+
+
+    JavaScript is a single threaded code. This means that it can only run one command
+    at a time. These commands are synchronous because they run one after the other.
+    This doesn’t always work in programming so there are ways to make JavaScript asynchronous.
+    Things like Call stacks help to avoid any blocking that might happen in a synchronous
+    thread.
+
+
+    A Call stack is a mechanism used by the interpreter to keep track of functions
+    and their place in any given script. It allows functions to run concurrently.
+    When the script calls a function, the interpreter puts it in the call stack and
+    then conducts the function.
+
+
+    A Callback Queue is like a safe house where an unexecuted line of script stays
+    until it’s time for it to run.
+
+
+    The Event Loop’s job is to check the Call Stack and Callback Queue. If the Call
+    Stack is empty, Event Loop will take the statement in the Callback Queue and push
+    it to the Call Stack. It appears to be a pretty straightforward process, but there
+    is something called the MicroTask Queue. The MicroTask queue is pretty much a
+    carbon copy of the Callback Queue but it has a higher priority, which means that
+    any functions in it will be executed first.
+
+
+    MPAs or Multi Page applications are better built with Framework based architecture.
+    They are obviously larger than Single Page Applications and take more time to
+    build. Because it’s data heavy, a lot of information has to go back and forth
+    between the browser and the server. This makes it slower than an SPA. Some developers
+    use AJAX to lighten the load, but it’s still not as widely used because it’s simply
+    too much to maintain.
+
+
+    ## Advanced JavaScript Architecture'
+  toc: []
+  trans: '
+
+
+    通常情况下，JavaScript 应用采用自底向上的方法。用户界面始终处于开发的中心。用户界面与服务器通过后端代码直接相连。
+
+
+    这种 JavaScript 架构主要用于简单的程序，例如不需要复杂框架的网站。它无法应对更复杂的程序。它允许你与屏幕进行交互，但并不具备处理大型应用的能力。
+
+
+    SPA 或单页应用利用了典型的 JavaScript 架构。它们很容易更新，并且在今天仍然很有需求。SPA 只能在网页浏览器中使用，因此它们非常依赖 JavaScript。SPA
+    的速度通常比移动端应用更快，因为用于构建它们的脚本只需要加载一次。从那时刻起，它的唯一工作就是在用户和服务器之间传输数据。
+
+
+    ## 基于框架的架构
+
+    随着时间的推移，典型应用架构的能力已无法满足全球范围内程序员的需求。因此，基于框架的架构运而生。它可以解决更复杂的问题，因为它利用了 `MVC` 或 `MVVM`
+    模式。
+
+
+    `MVC` 代表 `Model View Controller`（模型-视图-控制器）。它将较大的应用程序分为不同的部分，每个部分都有独特的功能。每个部分都负责处理应用程序的不同方面。模型代表所有与数据相关的内容。它从控制器接收命令，然后执行用户的输入。视图控制所有与用户界面相关的内容。它从用户获取输入，然后将模型的数据呈现给用户。控制器是两者之间的连接。它处理并操作来自双方的数据，然后产生输出。
+
+
+    `MVC` 有不同的变体：
+
+
+    - `HMVC`–代表 `Hierarchical Model view controller`（分层模型视图控制器）。它本质上与 `MVC` 相同，但具有层次和更多功能。它将
+    `MVC` 重应用于应用程序的不同部分。分层对应用开发大有奇效。你可以轻松地重用代码，而不必担心持续维护。
+
+    - `MVA`–代表 `Model View Adapter`（模型-视图-适配器）。通常数据从控制器传输到模型，但在 `MVA` 中，控制器是中间人，`Model`
+    和 `View` 必须通过它传递。`View` 和 `Model` 实际上并不交叉。在这里，`Controller` 充当适配器。
+
+    - `MVP`–代表 `Model View Presenter`（模型-视图-演示器）。这与 `MVC` 取不同。演示器负责应用程序中所有的数据。它将这些数据发送到模型进行处理，接收返回，然后将其传递给
+    `View`。
+
+    - `MVVM`–代表 `Model-View ViewModel`（模型-视图-视图模型），类似于 `MVC` 和 `MVP` 的混合，因为它借鉴了它们的模式。数据和信息与用户界面完全分离。控制器被
+    `Viewmodel` 取代，它连接了 `Model` 和 `View`。`Viewmodel` 每次接收到输入都会更新 `Model`，并在发送到 `View`
+    之前对该数据进行适配。
+
+
+    框架拥有功能丰富的运行时，用于渲染并输出应用程序。我们可以将运行时环境比为一个容器。它包含了运行 JavaScript 代码所需的所有内容，即：
+
+    - `Engine`（引擎）
+
+    - `Web API’s`
+
+    - `Event loops`（事件循环）
+
+    - `Call back queue`（回调队列）
+
+    - `Micro task queue`（微任务队列）
+
+
+    ## JavaScript 引擎
+
+    引擎将 JavaScript JavaScript 的复杂代码转换为机器可以理解的代码。每个浏览器都有自己的引擎。一些著名的引擎是 `V8`、`SpiderMonkey`
+    和 `JavaScript Core`。
+
+
+    ### V8
+
+    没有两个引擎是相同的，它们的运行方式不同，但最终做的事情相同。在 `V8` 引擎中，一切始于 `Parser`（解析器）。`Parser` 检查语法和语义。语法是代码输入的结构，而语义指的是代码中某些单词和符号的含义。然后
+    `parser` 分析并拆解代码，生成抽象语法树 (`AST`)。`AST` 是源代码的树形表示。`AST` 然后进入 `Interpreter`（解释器）。`Interpreter`
+    将 `AST` 转换为字节码 (`Byte Code`)。这被称为 `ignition`。有时代码会重复高达千次。当这种情况发生时，`Profiler`（分析器）会检查代码重复并尝试对其优化。一旦获得优化后的代码，它就会移动到
+    `Compiler`（编译器）。V8 引擎中的编译器被称为 `TurboFan`。`Turbofan` 以最优化的形式发布 `Byte Code`。
+
+
+    ### SpiderMonkey
+
+    `SpiderMonkey` 实际上是第一个引擎，创建于 1995 年。Mozilla 基金一直在维护它，并在今天在使用。该引擎首先将 JavaScript
+    代码转换为 `ByteCode`，然后将其发送给 `Interpreter` 和 `JIT Compiler`。`JIT` 代表 `Just in Time`（即时编译）。`JIT
+    Compiler` 优化代码并将任何未使用的代码发送到 `Garbage collector`（垃圾回收器）。
+
+
+    ### Web API’s
+
+    `API` 代表 Application Programming Interface（应用程序接口）。它是一个为用户一组函数的接口，同时隐藏了该函数的底层机制。`Web
+    API’s` 实际上并不是 JavaScript 的一部分。它们位于浏览器中，但它们允许我们访问 `JavaScript Engine`。
+
+
+    `Web API’s` 包含：
+
+    - 一组 timeout–允许你在经过特定时间（由你定义）后执行一段代码。
+
+    - `DOM API’s` - 由定义 HTML 中每个元素如何工作方式的接口组成。这包括它们可能依赖的任何支持类型和接口。
+
+    - `Fetch`–`API` 让 JavaScript 能够操作 `Call Stack`（调用栈）中的请求和响应。
+
+    - `Local storage`–让 JavaScript 应用无限期保存重要的键值对。
+
+    - `Console`–注册由 JavaScript 代码记录的所有日志消息。
+
+    - `Location`–允许浏览器用户在任何时候共享他们的地理位置。
+
+
+    ### Event Loops
+
+    JavaScript 是单线程代码。这意味着它一次只能运行一个命令。这些命令是同步的，因为它们一个接一个地运行。这在编程中并不总是有效，所以有方法让 JavaScript
+    异步执行。像 `Call stacks`（调用栈）这样的机制有助于避免同步线程中可能发生的任何阻塞。
+
+
+    `Call stack` 是解释器用于跟踪函数及其在任何给定脚本中位置的机制。它允许函数并发运行。当脚本调用函数时，解释器将其放入调用栈中然后执行该函数。
+
+
+    `Callback Queue`（回调队列）像一个安全屋，未执行的脚本行留在那里，直到到了运行时间。
+
+
+    `Event Loop`（事件循环）的工作是检查 `Call Stack` 和 `Callback Queue`。如果 `Call Stack` 为空，`Event
+    Loop` 将提取 `Callback Queue` 中的语句并推入 `Call Stack`。这看起来是一个非常直接的过程，但有一个被称为 `MicroTask
+    Queue`（微任务队列）。`MicroTask queue` 几乎是 `Callback Queue` 的副本，但它具有更高的优先级，这意味着其中的任何函数都将先执行。
+
+
+    '
+- fmt: '
+
+    Even though Framework Architecture has more capabilities than typical architecture,
+    it still has its limits when it comes to constructing larger applications. The
+    only way it could grow to accommodate larger apps would be through constant maintenance
+    and development. `MVC` and `MVVM` patterns are convenient and allow for developers
+    to reuse code, but they present problems in the framework. The User Interface
+    became compromised because the controller was corresponding with the server while
+    manipulating the view. The need for a more feature rich architecture arose, then
+    Advanced JavaScript Architecture came to be. In this architecture the User interface
+    and server correspondence work completely separately, so it is easy to keep up
+    with any demands that larger apps might have.
+
+
+    Data computation and User Interface are completely separate in this instance.
+    The User Interface is no longer at the center, so the app becomes easier to manage
+    and use.
+
+
+    ## Universal Applications
+
+
+    Formally known as Isomorphic applications, they provide faster browser connection
+    because there is less code. They work on both the client and server side, ensuring
+    much easier engagement and less work for the programmer. The one downside is that
+    they are quite hard to debug.
+
+
+    # Chapter 4: JavaScript and JQuery
+
+
+    Let’s go through some of JavaScript’s most important features to give you a better
+    idea of how it works. The first feature is Variables. Variables are like storage
+    containers for values. Data can be placed in these containers and then you can
+    refer to it by naming the container. Every worthwhile programming task needs a
+    variable. If values were unable to change, your webpage would be less interactive.
+    You must declare your variable before you can use it in a JavaScript program.
+    The keyword for variable (as seen in Chapter One) is `var`.
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age;
+
+    var race;
+
+    // -- >
+
+    </script>
+
+    ```
+
+
+    You can also declare different variables with the same keyword. It would look
+    like this:
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age, race;
+
+    // -- >
+
+    </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    Variable initialization happens when we store a value in a variable. You can add
+    values at any point in time. We have created a variable called `race`, so we can
+    add the value ‘black’ to it at a later point and we can add the value for `age`
+    at the time of initialization. It would look like this:
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age = "39"
+
+    var race;
+
+    race= black;
+
+    // -- >
+
+    </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    The `var` keyword only needs to be used once, at the time of initialization.
+
+
+    A variable’s scope is the area of your program where it is defined. In JavaScript,
+    there are only two:
+
+
+    - **Global Variables**: Can be defined anywhere in your JavaScript code.
+
+    - **Local Variables**: Is only visible within the scope of the function in which
+    it is defined.
+
+
+    Local variables take precedence over global variables with the same name within
+    the body of a function. When a local variable or a function parameter has the
+    same name as a global variable, the global variable is effectively hidden. For
+    example:
+
+
+    ```html
+
+    <html>
+
+    <body onload = checkscope();>
+
+    <script type="text/javascript">
+
+    <! --
+
+    var myVar = "global"; // Global variable
+
+    function checkscope() {
+
+    var myVar = "local"; // Local variable
+
+    document.write(myVar);
+
+    }
+
+    // —->
+
+    </script>
+
+    <body>
+
+    </html>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    There are rules to naming your variables. The names of your variables are case
+    sensitive, so `race` and `Race` are two different variables. Variable names cannot
+    start with a number. They either have to start with a letter or an underscore.
+    If your variable was named `345age`, it would be invalid. But if it was named
+    `_345age` it would be valid.
+
+
+    There is a list of JavaScript reserved keywords that cannot be used as a variable
+    name. The list is as follows:
+
+
+    | abstract | boolean | break | byte | case | catch |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | char | class | const | continue | debugger | default |
+
+    | delete | do | double | else | enum | export |
+
+    | extends | false | final | finally | float | for |
+
+    | function | goto | if | implements | import | in |
+
+    | instanceof | int | interface | long | native | new |
+
+    | null | package | private | protected | public | return |
+
+    | short | static | super | switch | synchronized | this |
+
+    | throw | throws | transient | true | try | typeof |
+
+    | var | void | volatile | while | with | |
+
+
+    (JavaScript - Syntax, n.d.)
+
+
+    The lion’s share of applications work because of an interaction between a client
+    and a remote server. A client refers to the end user device. The client requests
+    data from the server, the server receives and processes the request and then the
+    client gets the data back in a readable format. For the most part, we do need
+    the client server model, but with JavaScript we can avoid it completely. JavaScript
+    helps to reduce the traffic by validating forms without input from the server.
+
+
+    The JavaScript Engine is a program that translates source code into a language
+    the computer understands. All browsers today come with a JavaScript engine and
+    each engine has two components: A `MemoryHeap` and a `Call Stack`. A `Memory Heap`
+    is where memory is allocated at any given time. A `Call Stack` processes information
+    added to it from the script.
+
+
+    ## JavaScript Frameworks
+
+
+    Frameworks for JavaScript enable the language to perform at its best with minimal
+    setup. They give developers the building blocks they need to create JavaScript
+    applications. The building blocks are a set of code libraries. The libraries generate
+    code that evokes specialized functionality for the sort of app being developed.
+    The framework establishes the structure of the whole application. There are several
+    JavaScript frameworks out there, but the most popular ones are :
+
+
+    | Framework | Description |
+
+    | :--- | :--- |
+
+    | Node.js | Node.js is a cross platform, open-source, back-end JavaScript runtime
+    environment that makes use of the V8 engine to execute JavaScript code outside
+    of a web browser. |
+
+    | Vue.js | Vue.js is an open-source JavaScript framework that creates user interfaces
+    and single page apps. It uses a model-view viewmodel (MVVM) architectural pattern.
+    |
+
+    | AngularJS | AngularJS was an open-source, front-end framework for constructing
+    single-page apps based on JavaScript. |
+
+    | Ember.js | Ember.js is an open-source, JavaScript client-side framework for
+    constructing web apps. It enables the development of client-side applications
+    by offering a comprehensive solution that includes data management and application
+    flow. |
+
+    | React | React is a front-end JavaScript toolkit for creating user interfaces
+    using UI components. |
+
+
+    ## Features of JQuery
+
+
+    ### HTML Manipulation
+
+    Elements in an HTML document can be manipulated because JQuery allows the user
+    access to the DOM.
+
+
+    ### DOM Manipulation
+
+    JQuery gives you access to the DOM’s API so that you can make any necessary changes
+    to your HTML document. You can add and subtract and rearrange elements as you
+    please. By doing this, your web page can display updated information without you
+    having to refresh the page a number of times.
+
+
+    ### CSS Manipulation
+
+    The JQuery library has lines of code that can be used to control and change elements
+    of CSS and DOM.
+
+
+    ### Effects and Animation
+
+    JQuery has an `animate` function that makes it easier to add different effects
+    and animations to your web page. It also lets you animate your HTML elements by
+    manipulating the CSS. Examples of these effects include: `show`, `hide`, `fade
+    in`, `fade out` and `slide`.
+
+
+    ### Ajax
+
+    Ajax stands for Asynchronous JavaScript and XML. It lets you put content from
+    a server or a database onto your website without having to refresh the site every
+    time. If you are visiting a website that is constantly receiving data, it would
+    be really inconvenient to have to refresh the page each time.
+
+
+    ### Utilities
+
+    '
+  raw: 'Even though Framework Architecture has more capabilities than typical architecture,
+    it still has its limits when it comes to constructing larger applications. The
+    only way it could grow to accommodate larger apps would be through constant maintenance
+    and development. MVC and MVVM patterns are convenient and allow for developers
+    to reuse code, but they present problems in the framework. The User Interface
+    became compromised because the controller was corresponding with the server while
+    manipulating the view. The need for a more feature rich architecture arose, then
+    Advanced JavaScript Architecture came to be. In this architecture the User interface
+    and server correspondence work completely separately, so it is easy to keep up
+    with any demands that larger apps might have.
+
+
+    Data computation and User Interface are completely separate in this instance.
+    The User Interface is no longer at the center, so the app becomes easier to manage
+    and use.
+
+
+    Universal Applications
+
+
+    Formally known as Isomorphic applications, they provide faster browser connection
+    because there is less code. They work on both the client and server side, ensuring
+    much easier engagement and less work for the programmer. The one downside is that
+    they are quite hard to debug.
+
+
+    # Chapter 4: JavaScript and JQuery
+
+
+    Let’s go through some of JavaScript’s most important features to give you a better
+    idea of how it works. The first feature is Variables. Variables are like storage
+    containers for values. Data can be placed in these containers and then you can
+    refer to it by naming the container. Every worthwhile programming task needs a
+    variable. If values were unable to change, your webpage would be less interactive.
+    You must declare your variable before you can use it in a JavaScript program.
+    The keyword for variable (as seen in Chapter One) is var.
+
+
+    <script type= “text/javascript”>
+
+
+    <! --
+
+
+    var age;
+
+
+    var race;
+
+
+    // -- >
+
+
+    </script>
+
+
+    You can also declare different variables with the same keyword. It would look
+    like this:
+
+
+    <script type= “text/javascript”>
+
+
+    <! --
+
+
+    var age, race;
+
+
+    // -- >
+
+
+    </script>  (JavaScript - Syntax, n.d.)
+
+
+    Variable initialization happens when we store a value in a variable. You can add
+    values at any point in time. We have created a variable called race, so we can
+    add the value ‘black’ to it at a later point and we can add the value for age
+    at the time of initialization. It would look like this:
+
+
+    <script type= “text/javascript”>
+
+
+    <! --
+
+
+    var age = “39”
+
+
+    var race;
+
+
+    race= black;
+
+
+    // -- >
+
+
+    </script>  (JavaScript - Syntax, n.d.)
+
+
+    The var keyword only needs to be used once, at the time of initialization.
+
+
+    A variable’s scope is the area of your program where it is defined. In JavaScript,
+    there are only two:
+
+
+    ● Global Variables–Can be defined anywhere in your JavaScript code.
+
+
+    ● Local Variables–Is only visible within the scope of the function in which it
+    is defined.
+
+
+    Local variables take precedence over global variables with the same name within
+    the body of a function. When a local variable or a function parameter has the
+    same name as a global variable, the global variable is effectively hidden. For
+    example:
+
+
+    <html>
+
+
+    <body onload = checkscope();>
+
+
+    <script type = “text/javascript”>
+
+
+    <! --
+
+
+    var myVar = “global”; // Global variable
+
+
+    function checkscope( ) {
+
+
+    var myVar = “local”; // Local variable
+
+
+    document.write(myVar);
+
+
+    }
+
+
+    // —->
+
+
+    </script>
+
+
+    <body>
+
+
+    <html>  (JavaScript - Syntax, n.d.)
+
+
+    There are rules to naming your variables. The names of your variables are case
+    sensitive, so race and Race are two different variables. Variable names cannot
+    start with a number. They either have to start with a letter or an underscore.
+    If your variable was named 345age, it would be invalid. But if it was named _345age
+    it would be valid.
+
+
+    There is a list of JavaScript reserved keywords that cannot be used as a variable
+    name. The list is as follows:
+
+
+    | abstract | boolean | break | byte | case | catch |
+
+
+    | char | class | const | continue | debugger | default |
+
+
+    | delete | do | double | else | enum | export |
+
+
+    | extends | false | final | finally | float | for |
+
+
+    | function | goto | if | implements | import | in |
+
+
+    | instanceof | int | interface | long | native | new |
+
+
+    | null | package | private | protected | public | return |
+
+
+    | short | static | super | switch | synchronized | this |
+
+
+    | throw | throws | transient | true | try | typeof |
+
+
+    | var | void | volatile | while | with |  |
+
+
+    (JavaScript - Syntax, n.d.)
+
+
+    The lion’s share of applications work because of an interaction between a client
+    and a remote server. A client refers to the end user device. The client requests
+    data from the server, the server receives and processes the request and then the
+    client gets the data back in a readable format. For the most part, we do need
+    the client server model, but with JavaScript we can avoid it completely. JavaScript
+    helps to reduce the traffic by validating forms without input from the server.
+
+
+    The JavaScript Engine is a program that translates source code into a language
+    the computer understands. All browsers today come with a JavaScript engine and
+    each engine has two components: A MemoryHeap and a Call Stack. A Memory Heap is
+    where memory is allocated at any given time. A Call Stack processes information
+    added to it from the script.
+
+
+    ## JavaScript Frameworks
+
+
+    Frameworks for JavaScript enable the language to perform at its best with minimal
+    setup. They give developers the building blocks they need to create JavaScript
+    applications. The building blocks are a set of code libraries. The libraries generate
+    code that evokes specialized functionality for the sort of app being developed.
+    The framework establishes the structure of the whole application. There are several
+    JavaScript frameworks out there, but the most popular ones are :
+
+
+    | Node.js | Node.js is a cross platform, open-source, back-end JavaScript runtime
+    environment that makes use of the V8 engine to execute JavaScript code outside
+    of a web browser. |
+
+
+    | Vue.js | Vue.js is an open-source JavaScript framework that creates user interfaces
+    and single page apps. It uses a model-view viewmodel (MVVM) architectural pattern.
+    |
+
+
+    | AngularJS | AngularJS was an open-source, front-end framework for constructing
+    single-page apps based on JavaScript. |
+
+
+    | Ember.js | Ember.js is an open-source, JavaScript client-side framework for
+    constructing web apps. It enables the development of client-side applications
+    by offering a comprehensive solution that includes data management and application
+    flow. |
+
+
+    | React | React is a front-end JavaScript toolkit for creating user interfaces
+    using UI components. React can be used as a foundation to create single-page or
+    mobile apps. |
+
+
+    (JavaScript - Syntax, n.d.)
+
+
+    ## Features of JQuery
+
+
+    HTML Manipulation
+
+
+    Elements in an HTML document can be manipulated because JQuery allows the user
+    access to the DOM.
+
+
+    DOM Manipulation
+
+
+    JQuery gives you access to the DOM’s API so that you can make any necessary changes
+    to your HTML document. You can add and subtract and rearrange elements as you
+    please. By doing this, your web page can display updated information without you
+    having to refresh the page a number of times.
+
+
+    CSS Manipulation
+
+
+    The JQuery library has lines of code that can be used to control and change elements
+    of CSS and DOM.
+
+
+    Effects and Animation
+
+
+    JQuery has an animate function that makes it easier to add different effects and
+    animations to your web page. It also lets you animate your HTML elements by manipulating
+    the CSS. Examples of these effects include: show, hide, fade in, fade out and
+    slide.
+
+
+    Ajax
+
+
+    Ajax stands for Asynchronous JavaScript and XML. It lets you put content from
+    a server or a database onto your website without having to refresh the site every
+    time. If you are visiting a website that is constantly receiving data, it would
+    be really inconvenient to have to refresh the page each time.
+
+
+    Utilities'
+  toc: []
+  trans: '
+
+
+    尽管框架架构（Framework Architecture）比典型架构具有更多功能，但在构建大型应用时仍然有其局限性。它增长以适应更大应用的唯一方法就是持续的维护和开发。`MVC`
+    和 `MVVM` 模式虽然方便并允许开发者复用代码，但它们在框架中存在问题。由于控制器在操作视图的同时与服务器进行通信，导致用户界面受到了损害。人们开始需要功能更丰富的架构，于是“高级
+    JavaScript 架构”（Advanced JavaScript Architecture）应运而生。在这种架构中，用户界面与服务器的通信完全分离工作，因此可以轻松应对大型应用可能提出的任何需求。
+
+
+    在这种情况下，数据计算和用户界面是完全分离的。用户界面不再处于中心，因此应用程序变得更容易管理和使用。
+
+
+    ## 通用应用
+
+
+    正式称为同构应用（Isomorphic applications），它们由于代码较少，因此提供了更快的浏览器连接。它们在客户端和服务器端均运行，确保了更简单的交互，并减少了程序员的工作量。唯一的缺点是它们非常难以调试。
+
+
+    # 第 4 章：JavaScript 和 JQuery
+
+
+    让我们回顾 JavaScript 的一些重要特性，以便让你更好地了解它的工作原理。第一个特性是变量（Variables）。变量就像存储值的容器。数据可以存放在这些容器中，然后你可以通过命名容器来引用它。每项有价值的编程任务都需要一个变量。如果值无法改变，你的网页交互性将会降低。在
+    JavaScript 程序中使用变量之前，你必须先声明它。变量的关键字（如第一章所示）是 `var`。
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age;
+
+    var race;
+
+    // -- >
+
+    </script>
+
+    ```
+
+
+    你也可以使用相同的关键字声明不同的变量。它看起来像：
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age, race;
+
+    // -- >
+
+    </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    当我们在变量中存储值时，就会发生初始化。你可以在任何时间添加值。我们创建了一个名为 `race` 的变量，因此我们可以稍后向它添加值‘black’，并可以在初始化时添加
+    `age` 的值。它看起来像：
+
+
+    ```html
+
+    <script type="text/javascript">
+
+    <! --
+
+    var age = "39"
+
+    var race;
+
+    race= black;
+
+    // -- >
+
+    </script>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    `var` 关键字只需要在初始化时使用一次。
+
+
+    变量的作用域（scope）是程序中定义它的区域。在 JavaScript 中只有两种：
+
+
+    -   **全局变量 (Global Variables)**：可以在 JavaScript 代码的任何地方定义。
+
+    -   **局部变量 (Local Variables)**：仅在定义的函数范围内可见。
+
+
+    在函数体内部，局部变量的优先级高于同名的全局变量。当局部变量或函数参数与全局变量同名时，全局变量实际上被隐藏了。例如：
+
+
+    ```html
+
+    <html>
+
+    <body onload = checkscope();>
+
+    <script type="text/javascript">
+
+    <! --
+
+    var myVar = "global"; // 全局变量
+
+    function checkscope() {
+
+    var myVar = "local"; // 局部变量
+
+    document.write(myVar);
+
+    }
+
+    // —->
+
+    </script>
+
+    <body>
+
+    </html>
+
+    ``` (JavaScript - Syntax, n.d.)
+
+
+    变量的命名遵循规则。变量名对大小写敏感，因此 `race` 和 `Race` 是两个不同的变量。变量名不能以数字开头。它们必须以字母或下划线开头。如果你的变量命名为
+    `345age`，它是无效的。但如果命名为 `_345age`，它是有效的。
+
+
+    有一组 JavaScript 保留关键字列表不能作为变量名。列表如下：
+
+
+    | abstract | boolean | break | byte | case | catch |
+
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+
+    | char | class | const | continue | debugger | default |
+
+    | delete | do | double | else | enum | export |
+
+    | extends | false | final | finally | float | for |
+
+    | function | goto | if | implements | import | in |
+
+    | instanceof | int | interface | long | native | new |
+
+    | null | package | private | protected | public | return |
+
+    | short | static | super | switch | synchronized | this |
+
+    | throw | throws | transient | true | try | typeof |
+
+    | var | void | volatile | while | with | |
+
+
+    (JavaScript - Syntax, n.d.)
+
+
+    大多数应用程序的运行是因为客户端与远程服务器之间的交互。客户端指的是终端用户设备。客户端向服务器请求数据，服务器接收并处理请求，然后客户端以可读格式获取数据。在大多数情况下，我们确实需要客户端服务器模型，但通过
+    JavaScript 我们可以完全避免。JavaScript 通过在无需从服务器输入的情况下验证表单来减少流量。
+
+
+    JavaScript 引擎是将源代码翻译成计算机理解的语言的程序。如今所有的浏览器都带有 JavaScript 引擎，每个引擎都有两个组件：`MemoryHeap`（内存堆）和
+    `Call Stack`（调用栈）。`Memory Heap` 是任何时刻分配内存的地方。`Call Stack` 处理来自脚本添加的信息。
+
+
+    ## JavaScript 框架
+
+
+    JavaScript 框架允许语言以最少的设置发挥最佳性能。它们为开发者提供了创建 JavaScript 应用所需的构建组件。这些构建组件是一组代码库。库生成的代码为正在开发的各类应用触发专门的功能。框架建立了整个应用程序的结构。目前有很多
+    JavaScript 框架，但最流行的有：
+
+
+    | 框架 |  |
+
+    | :--- | :--- |
+
+    | Node.js | Node.js 是一个跨平台、开源的后端 JavaScript 运行时环境，利用 V8 引擎在 Web 浏览器之外执行 JavaScript
+    代码。 |
+
+    | Vue.js | Vue.js 是一个用于创建界面和单页应用程序的开源 JavaScript 框架。它使用了模型-视图-视图模型（MVVM）架构模式。
+    |
+
+    | AngularJS | AngularJS 是一个基于 JavaScript 的构建单页应用程序的开源前端框架。 |
+
+    | Ember.js | Ember.js 是一个用于构建 Web 应用的开源 JavaScript 客户端框架。它通过提供包含数据管理和应用程序流的全面解决方案来实现客户端应用程序的。
+    |
+
+    | React | React 是一个用于使用 UI 组件创建界面的 JavaScript 工具包。 |
+
+
+    ## JQuery 的特性
+
+
+    ### HTML 操作
+
+    HTML 文档中的元素可以被操作，因为 JQuery 允许用户访问 DOM。
+
+
+    ### DOM 操作
+
+    JQuery 提供了对 DOM API 的访问，以便你对 HTML 文档进行任何更改。你可以根据意愿添加、删除和重新排列元素。通过这种方式，你的网页无需刷新多次即可显示更新的信息。
+
+
+    ### CSS 操作
+
+    JQuery 库包含用于控制和更改 CSS 和 DOM 元素的代码。
+
+
+    ### 效果与动画
+
+    JQuery 有一个 `animate` 函数，可以更容易在网页上添加不同的效果和动画。它还可以通过操作 CSS 来动画化 HTML 元素。这些效果包括：`show`、`hide`、`fade
+    in`、`fade out` 和 `slide`。
+
+
+    ### Ajax
+
+    Ajax 代表异步 JavaScript 和 XML。它允许你在不刷新网站的情况下，将来自服务器或数据库的内容放置到你的网站上。如果你访问的是一个不断接收数据的网站，每次都刷新页面将非常不方便。
+
+
+    ### 工具函数
+
+
+    '
+- fmt: '
+
+    Utilities are software programs that optimize a computer’s performance. Some utility
+    programs are good for keeping your computer virus free and others just make your
+    desktop look good.
+
+
+    JQuery can be considered legacy code because it was introduced in 2006. It has
+    stood the test of time and can be used in most applications that exist today.
+    JQuery is used on most, if not all wordpress sites. There are a whopping 455 million
+    of them as of 2022. It teaches you a lot about JavaScript and is the easiest coding
+    library to use.
+
+
+    # Chapter 5: JavaScript for Kids
+
+
+    It may be hard to believe, but there was a time when there was no internet! And
+    before that, no computers either! It’s probably really hard to imagine a world
+    without the two, but people used to exist and get by with fewer electronics.
+
+
+    Before the invention of cellphones, people used to communicate via telephone or
+    by writing letters and sending them through the post. Before online shopping,
+    people had to physically go to the shops and kids had to have their friends in
+    the room in order to play TV or computer games together.
+
+
+    With time, all those things changed. Things became faster and easier to do, and
+    we have computers to thank for that. A computer is a gadget that takes different
+    kinds of information and processes it, then gives us an answer. It works the same
+    way as a calculator. You tell the calculator the sum you want it to work out and
+    it gives you an answer.
+
+
+    Computers work with Operating systems. An operating system is a form of software
+    that basically runs the computer. It controls the hardware by taking information
+    in and giving information out. It is also responsible for the connection between
+    us, the users, and the computer.
+
+
+    These days, most people use computers to get on to the internet. The internet
+    is a network that connects millions of computers around the world. There are so
+    many websites that we can’t even count. The thing that makes these websites look
+    cool and do amazing things is JavaScript.
+
+
+    JavaScript is a language that we use to tell the computer what to do and how to
+    do it. When you type something on your keyboard or scroll around a page with your
+    mouse, the web page you are using responds to that. That’s because of JavaScript.
+
+
+    As amazing as JavaScript is, you can’t use it on its own to build your website.
+    Websites are built using three languages. HTML, CSS and JavaScript.
+
+
+    HTML lets you put content on your webpage. So all the things you can see, like
+    text and pictures.
+
+
+    CSS takes the content on your page and changes how it looks. So with CSS you can
+    make your text and pictures big or small. You can change colors that appear on
+    your page too !
+
+
+    And lastly, JavaScript tells the content on your page how to behave. That means
+    that it can make your text or pictures move around, and it can even add animation.
+
+
+    ## HTML and CSS
+
+
+    HTML is really easy to learn. It’s where some of the most successful programmers
+    and software developers started, and who knows? You could be the next Mark Zuckerberg!
+
+
+    HTML stands for Hypertext Markup Language. Hypertext describes the words or pictures
+    on your web page that are hyperlinks. A hyperlink is something you can click on
+    that takes you either to a different page or to a different part of the page you
+    are already on. Markup Language is a collection of letters called tags that tell
+    our web page how it should look.
+
+
+    HTML can be written in the notepad app on your computer.
+
+
+    In order to create a tag, we put them inside brackets that look like this `<>`.
+    Some of the most common tags are `<h>` for heading, `<p>` for paragraph and `<img>`
+    for images.
+
+
+    Tags can’t be alone, they always need something in between them. The thing we
+    put inside the tag is called content. The content is what actually shows up on
+    your web page. We can think of the tags like ‘the boss’ because the content will
+    always do what the tag says. Here’s how:
+
+
+    At the top of your web page, you’re going to want to have a heading. Your main
+    heading is going to be called `<h1>` so that the computer knows that it goes at
+    the very top of your web page. Your heading can be whatever you want it to be,
+    but for today it’s going to be ‘I am smart’. Once you put it inside the tags it’s
+    going to look like this: `<h1>I am smart</h1>`. The two tags show where your heading
+    should start and stop.
+
+
+    CSS stands for Cascading Style Sheets. Cascading means things that happen in a
+    sequence, or one after the other. If we think of it like a waterfall, styles can
+    fall from one sheet to another. This makes it possible for lots of different styles
+    to appear on the same HTML sheet and then on a webpage. Style sheets are files
+    that have font and styling settings.
+
+
+    ### Important JavaScript Terms
+
+
+    We can write JavaScript from scratch, but we don’t have to. There are coding libraries
+    that exist to make it easier to write script. A coding library is a collection
+    of code that has already been written. Most coding libraries are open source,
+    which means they are free to download and use. An example of a coding library
+    is JQuery.
+
+
+    In JQuery’s collection of code you will find:
+
+
+    - Variables–We can liken a variable to a case filled with something. Variables
+    hold one word or number at a time and can be sorted into one of three parts; type,
+    name and value.
+
+    - Keywords–Keywords are words with special meanings that have been set aside by
+    programmers.
+
+    - Functions–Are words within the script that we can use to get a task done
+
+    - Parameters–Sometimes functions need to have a bit of extra information in them
+    so they can perform properly. That extra information is called a parameter. Sometimes
+    they are called arguments too.
+
+    - Arrays–Arrays are like a bigger box for variables. They take variables that
+    are alike and group them together.
+
+
+    ### Data Types in JavaScript
+
+
+    A language is something people use to communicate. All Languages have words that
+    are unique to them. The same goes for programming languages. They each compose
+    their data a certain way. JavaScript has Primitive values and Objects.
+
+
+    Primitive Values are forms of data that cannot change. In JavaScript there are
+    seven:
+
+
+    - Number type
+
+    The number type is used to represent all numbers. It includes integers and floating
+    point values. Floating point values are numbers that have fractions.
+
+    - BigInt type
+
+    BigInt is short for Big Integer. An integer is a whole number without fractions.
+    5 is an integer but 5.5 is not. This data type was created for JavaScript in early
+    2020 because there was a problem with the number data type. It didn’t have a number
+    big enough for programmers to use, so in some situations they had problems when
+    coding.
+
+    - Null type
+
+    Null is the value we use to show that there is no object. In real life, Imagine
+    if you really wanted a glass of milk. You walk over to the fridge, grab a carton
+    of milk and start to pour into your glass, but nothing comes out. Your carton
+    of milk has a null value because it’s empty.
+
+    - Undefined type
+
+    We can compare Undefined to something that is unclear. A variable that can’t be
+    identified by its characteristics becomes undefined in JavaScript. A lot of people
+    are unsure what the difference between Null and Undefined is.
+
+    - Symbol type
+
+    A symbol is the newest primitive data type, it got added to JavaScript recently.
+    Symbols have a unique value and cannot be recreated. We use them when we want
+    to assign a specific value to an object so that it doesn’t clash with another
+    object.
+
+    - String type
+
+    A string is a chain of symbols. It could include anything from letters to numbers.
+
+    - Boolean type
+
+    A Boolean is a value that can represent a true or a false statement. We usually
+    use it with conditional statements when coding.
+
+
+    Objects are values that have their own characteristics and can be organized by
+    type. We assign characteristics to an object by using variables.
+
+
+    ### Variables
+
+    '
+  raw: 'Utilities are software programs that optimize a computer’s performance. Some
+    utility programs are good for keeping your computer virus free and others just
+    make your desktop look good.
+
+
+    JQuery can be considered legacy code because it was introduced in 2006\. It has
+    stood the test of time and can be used in most applications that exist today.
+    JQuery is used on most, if not all wordpress sites. There are a whopping 455 million
+    of them as of 2022\. It teaches you a lot about JavaScript and is the easiest
+    coding library to use.
+
+
+    # Chapter 5: JavaScript for Kids
+
+
+    It may be hard to believe, but there was a time when there was no internet! And
+    before that, no computers either! It’s probably really hard to imagine a world
+    without the two, but people used to exist and get by with fewer electronics.
+
+
+    Before the invention of cellphones, people used to communicate via telephone or
+    by writing letters and sending them through the post. Before online shopping,
+    people had to physically go to the shops and kids had to have their friends in
+    the room in order to play TV or computer games together.
+
+
+    With time, all those things changed. Things became faster and easier to do, and
+    we have computers to thank for that. A computer is a gadget that takes different
+    kinds of information and processes it, then gives us an answer. It works the same
+    way as a calculator. You tell the calculator the sum you want it to work out and
+    it gives you an answer.
+
+
+    Computers work with Operating systems. An operating system is a form of software
+    that basically runs the computer. It controls the hardware by taking information
+    in and giving information out. It is also responsible for the connection between
+    us, the users, and the computer.
+
+
+    These days, most people use computers to get on to the internet. The internet
+    is a network that connects millions of computers around the world. There are so
+    many websites that we can’t even count. The thing that makes these websites look
+    cool and do amazing things is JavaScript.
+
+
+    JavaScript is a language that we use to tell the computer what to do and how to
+    do it. When you type something on your keyboard or scroll around a page with your
+    mouse, the web page you are using responds to that. That’s because of JavaScript.
+
+
+    As amazing as JavaScript is, you can’t use it on its own to build your website.
+    Websites are built using three languages. HTML, CSS and JavaScript.
+
+
+    HTML lets you put content on your webpage. So all the things you can see, like
+    text and pictures.
+
+
+    CSS takes the content on your page and changes how it looks. So with CSS you can
+    make your text and pictures big or small. You can change colors that appear on
+    your page too !
+
+
+    And lastly, JavaScript tells the content on your page how to behave. That means
+    that it can make your text or pictures move around, and it can even add animation.
+
+
+    ## HTML and CSS
+
+
+    HTML is really easy to learn. It’s where some of the most successful programmers
+    and software developers started, and who knows? You could be the next Mark Zuckerberg!
+
+
+    HTML stands for Hypertext Markup Language. Hypertext describes the words or pictures
+    on your web page that are hyperlinks. A hyperlink is something you can click on
+    that takes you either to a different page or to a different part of the page you
+    are already on. Markup Language is a collection of letters called tags that tell
+    our web page how it should look.
+
+
+    HTML can be written in the notepad app on your computer.
+
+
+    In order to create a tag, we put them inside brackets that look like this <>.
+    Some of the most common tags are <h> for heading, <p> for paragraph and <img>
+    for images.
+
+
+    Tags can’t be alone, they always need something in between them. The thing we
+    put inside the tag is called content. The content is what actually shows up on
+    your web page. We can think of the tags like ‘the boss’ because the content will
+    always do what the tag says. Here’s how:
+
+
+    At the top of your web page, you’re going to want to have a heading. Your main
+    heading is going to be called <h1> so that the computer knows that it goes at
+    the very top of your web page. Your heading can be whatever you want it to be,
+    but for today it’s going to be ‘I am smart’. Once you put it inside the tags it’s
+    going to look like this: <h1>I am smart</h1>. The two tags show where your heading
+    should start and stop.
+
+
+    CSS stands for Cascading Style Sheets. Cascading means things that happen in a
+    sequence, or one after the other. If we think of it like a waterfall, styles can
+    fall from one sheet to another. This makes it possible for lots of different styles
+    to appear on the same HTML sheet and then on a webpage. Style sheets are files
+    that have font and styling settings.
+
+
+    ### Important JavaScript Terms
+
+
+    We can write JavaScript from scratch, but we don’t have to. There are coding libraries
+    that exist to make it easier to write script. A coding library is a collection
+    of code that has already been written. Most coding libraries are open source,
+    which means they are free to download and use. An example of a coding library
+    is JQuery.
+
+
+    In JQuery’s collection of code you will find:
+
+
+    Variables–We can liken a variable to a case filled with something. Variables hold
+    one word or number at a time and can be sorted into one of three parts; type,
+    name and value.
+
+
+    Keywords–Keywords are words with special meanings that have been set aside by
+    programmers.
+
+
+    Functions–Are words within the script that we can use to get a task done
+
+
+    Parameters–Sometimes functions need to have a bit of extra information in them
+    so they can perform properly. That extra information is called a parameter. Sometimes
+    they are called arguments too.
+
+
+    Arrays–Arrays are like a bigger box for variables. They take variables that are
+    alike and group them together.
+
+
+    ### Data Types in JavaScript
+
+
+    A language is something people use to communicate. All Languages have words that
+    are unique to them. The same goes for programming languages. They each compose
+    their data a certain way. JavaScript has Primitive values and Objects.
+
+
+    Primitive Values are forms of data that cannot change. In JavaScript there are
+    seven:
+
+
+    ● Number type
+
+
+    The number type is used to represent all numbers. It includes integers and floating
+    point values. Floating point values are numbers that have fractions.
+
+
+    ● BigInt type
+
+
+    BigInt is short for Big Integer. An integer is a whole number without fractions.
+    5 is an integer but 5.5 is not. This data type was created for JavaScript in early
+    2020 because there was a problem with the number data type. It didn’t have a number
+    big enough for programmers to use, so in some situations they had problems when
+    coding.
+
+
+    ● Null type
+
+
+    Null is the value we use to show that there is no object. In real life, Imagine
+    if you really wanted a glass of milk. You walk over to the fridge, grab a carton
+    of milk and start to pour into your glass, but nothing comes out. Your carton
+    of milk has a null value because it’s empty.
+
+
+    ● Undefined type
+
+
+    We can compare Undefined to something that is unclear. A variable that can’t be
+    identified by its characteristics becomes undefined in JavaScript. A lot of people
+    are unsure what the difference between Null and Undefined is.
+
+
+    ● Symbol type
+
+
+    A symbol is the newest primitive data type, it got added to JavaScript recently.
+    Symbols have a unique value and cannot be recreated. We use them when we want
+    to assign a specific value to an object so that it doesn’t clash with another
+    object.
+
+
+    ● String type
+
+
+    A string is a chain of symbols. It could include anything from letters to numbers.
+
+
+    ● Boolean type
+
+
+    A Boolean is a value that can represent a true or a false statement. We usually
+    use it with conditional statements when coding.
+
+
+    Objects are values that have their own characteristics and can be organized by
+    type. We assign characteristics to an object by using variables.
+
+
+    ### Variables'
+  toc: []
+  trans: '
+
+    实用程序是优化计算机性能的软件程序。某些实用程序有助于保持你的电脑免受病毒，而另一些则只是让你的桌面看起来更好看。
+
+
+    JQuery 可以被认为是遗留代码，因为它于 2006 年引入。它经受住了时间的考验，可以用于今天存在的大应用程序。大多数（不是全部）WordPress 站点在使用
+    JQuery。截至 2022 年，这类网站数量高达 4.55 亿。它能让你学到很多 JavaScript 的知识，而且是最容易使用的代码库。
+
+
+    # 第 5 章：少儿 JavaScript
+
+
+    这可能很难置信，但曾经有一段时间没有互联网的时代！在那之前，也没有计算机！想象一个没有这两者的世界可能非常困难，但人们过去确实过着电子产品较少的生活。
+
+
+    在手机发明之前，人们通过电话或写写信并通过邮政寄送来交流。在网上购物之前，人们必须亲自去商店，孩子们则必须有朋友在房间里才能一起玩电视或电脑游戏。
+
+
+    随着时间的推移，这一切都改变了。事情变得更快、更容易处理，而这都要归功于计算机。计算机是一种接收不同类型信息并对其进行处理，然后给出答案的设备。它的工作方式与计算器一样。你告诉计算器你想让它计算的和，它就会给你一个答案。
+
+
+    计算机通过操作系统工作。操作系统是一种基本上运行计算机运行的软件形式。它通过输入信息和输出信息来控制硬件。它还负责我们（用户）与计算机之间的连接。
+
+
+    如今，大多数人使用计算机接入互联网。互联网是一个连接了全球数百万台计算机的网络。网站多到我们甚至无法数清。让这些网站看起来很酷并能完成神奇事情的是 JavaScript。
+
+
+    JavaScript 是一种我们用来告诉计算机做什么以及如何做的语言。当你在键盘上输入内容或用鼠标在页面上滚动时，你正在使用的网页对此做出响应。这就是 JavaScript
+    的作用。
+
+
+    尽管 JavaScript 非常神奇，但你不能单独使用它来构建网站。网站是用三种语言构建的：HTML、CSS 和 JavaScript。
+
+
+    HTML 允许你在网页上放置内容。也就是你能看到的所有东西，如文字和图片。
+
+
+    CSS 获取你页面上的内容并改变它的外观。通过 CSS，你可以让文字和图片变大或变小。你还可以更改页面上显示的颜色！
+
+
+    最后，JavaScript 告诉页面上的内容如何行为。这意味着它可以让你的文字或图片移动，甚至可以添加动画。
+
+
+    ## HTML 和 CSS
+
+
+    学习 HTML 非常简单。一些最成功的程序员和软件开发人员是从这里开始，谁知道呢？你可能是下一个马克·扎克伯格！
+
+
+    HTML 代表超文本标记语言（Hypertext Markup Language）。超文本描述你网页上作为超链接的文字或图片。超链接是可以点击的内容，它可以带你进入另一个页面，或者你所在页面的不同部分。标记语言是一组被称为标签（tags）的字母集合，它们告诉我们的网页应该长什么样。
+
+
+    你可以在计算机上的记事本应用中编写 HTML。
+
+
+    为了创建一个标签，我们将它们放在像 `<>` 这样的括号内。最常见的标签有用于标题的 `<h>`、用于段落的 `<p>` 和用于图片的 `<img>`。
+
+
+    标签不能单独存在，它们总需要在中间放些东西。我们放在标签内部的东西被称为内容（content）。内容实际上显示在你网页上的东西。我们可以把标签想象成“老板”，因为内容总是会执行标签指定的任务。操作是这样的：
+
+
+    在网页的顶部，你可能想要一个标题。你的主标题将被称为 `<h1>`，这样计算机就知道它位于网页的最顶端。你的标题可以是你想要的任何内容，但对于今天它将是“我很聪明”。一旦你把它放在标签内，它看起来像这样：`<h1>I
+    am smart</h1>`。这两个标签显示了你的标题从哪里结束。
+
+
+    CSS 代表级联样式表（Cascading Style Sheets）。级联意味着事情按顺序发生，或者一个接一个。如果我们把它想象成瀑布，样式可以从一张表格流到另一张。这使得许多不同的样式出现在同一个
+    HTML 表格中并在网页上。样式表是包含字体和样式设置的文件。
+
+
+    ###  JavaScript 术语
+
+
+    我们可以从零开始编写 JavaScript，但不必这样做。存在一些代码库可以让编写脚本变得更容易。代码库是已经写好的代码集合。大多数代码库都是开源的，这意味着它们免费下载和使用。代码库的一个示例是
+    JQuery。
+
+
+    在 JQuery 的代码集中，你会找到：
+
+
+    - 变量（Variables）——我们可以把变量比作装满东西的箱子。变量一次存储一个单词或数字，可以分为三部分：类型、名称和值。
+
+    - 关键字（Keywords）——关键字是程序员预留的具有特殊含义的单词。
+
+    - 函数（Functions）——脚本中的单词，我们可以用它们来完成任务。
+
+    - 参数（Parameters）——有时函数需要一些额外信息才能正常执行。这些额外信息被称为参数。有时它们也被称为参数（arguments）。
+
+    - 数组（Arrays）——数组像是变量更大的箱子。它们接收相似的变量并将它们分组。
+
+
+    ### JavaScript 中的数据类型
+
+
+    语言是人们用来交流的工具。所有语言都有其特有的单词。编程语言也是如此。它们各要素以特定的方式组成数据。JavaScript 拥有原始值（Primitive
+    values）和对象（Objects）。
+
+
+    原始值是不能改变的数据形式。在 JavaScript 中有七种：
+
+
+    - 数字类型（Number type）
+
+    数字类型用于表示所有数字。它包括整数和浮点数。浮点数是带有小数的数字。
+
+    - BigInt 类型
+
+    BigInt 是 Big Integer（大整数）的缩写。整数是不带小数的整数。5 是整数但 5.5 不是。这种数据类型是在 2020 年初为 JavaScript
+    创建的，因为数字类型存在一个问题。它没有足够大的数字供程序员使用，因此在某些情况下他们在编码时会遇到问题。
+
+    - 空类型（Null type）
+
+    Null 是我们用来表示没有对象的值。在现实生活中，想象你真的想要一杯牛奶。你走向冰箱，拿一盒牛奶并开始倒进杯里，但什么也没有流出来。你的牛奶盒有一个 null
+    值，因为它是空的。
+
+    - 未定义类型（Undefined type）
+
+    我们可以将 Undefined 类比为不明确的东西。在 JavaScript 中，无法通过特征识别的变量会变成 undefined。许多人不确定 Null
+    和 Undefined 之间的区别是什么。
+
+    - 符号类型（Symbol type）
+
+    符号是最新的原始数据类型，最近被添加到 JavaScript 中。符号具有唯一值且无法重新创建。当我们想要给对象分配特定值以防止它与另一个对象冲突时，使用它们。
+
+    - 字符串类型（String type）
+
+    字符串是符号链。它可以包括从字母到数字的任何内容。
+
+    - 布尔类型（Boolean type）
+
+    布尔值是一个可以表示真或假陈述的值。我们在编码时通常将其与条件语句一起使用。
+
+
+    对象是具有自身特征并按类型组织的数值。我们通过使用变量给对象分配特征。
+
+
+    ### 变量
+
+
+    '
+- fmt: "\nThe word variable means something that doesn’t stay the same, something\
+    \ that can change at any time. In `JavaScript`, Variables hold on to values that\
+    \ can be changed at any time. Because of this, variables cannot have the same\
+    \ name. Variables have declarations and definitions. A `Declaration` is the part\
+    \ of the code where the variable is before any action takes place. The definition\
+    \ is where the variable is placed once it has a value and a place in the code.\n\
+    \n### Arrays\nIn `JavaScript`, an `Array` is one variable that we can use to keep\
+    \ different elements. Keeping several items of the same kind together makes it\
+    \ easier to work out where each element is by adding an offset to a base value.\
+    \ A real life example would be if a teacher had all her students sitting at their\
+    \ desks. The teacher would be able to pinpoint any student by knowing what number\
+    \ desk they’re sitting at. It makes coding easier, because we can have access\
+    \ to a whole list of elements just by typing in one word.\n\n### Objects\nObjects\
+    \ are words in your script that have characteristics and can be organized by type.\
+    \ Those characteristics are usually variables determined by the programmer.\n\n\
+    ### Conditionals and Loops\nConditional statements work out what is happening\
+    \ in your `JavaScript` code and then use boolean phrases to decide on the outcome.\
+    \ So the outcome on a conditional statement will either be true or false. There\
+    \ are four types of conditional statements:\n\n- The `if` statement: Runs a certain\
+    \ part of the code if the condition is true.\n- The `else` statement: Runs the\
+    \ part of the code related to `else` if the condition is false.\n- The `else if`\
+    \ statement: Gives and tests a new condition if the first `if` condition is false.\n\
+    - The `switch-case` statement: Gives a number of substitute code blocks to be\
+    \ carried out based on specific conditions.\n\nLoop statements help to keep your\
+    \ code short and sweet. Sometimes, you are going to have to perform the same action\
+    \ a number of times on your web application. If loop statements didn’t exist,\
+    \ a programmer would have to write the same line of code over and over again.\
+    \ There are three types of Loop statements:\n\n- The `while` loop: The `while`\
+    \ loop is straightforward. The `while` loop carries out a conditional statement\
+    \ over and over again if the statement is true. As soon as the statement becomes\
+    \ false, the loop stops running.\n- The `for` loop: The `for` loop is a bit more\
+    \ complex. It only runs a specific number of times and it’s made up of three parts:\n\
+    \    - The `Loop Initialization`: This gets your code ready to receive a starting\
+    \ value. This happens before the loop starts.\n    - The `Test Statement`: Tests\
+    \ if a condition is true. If it is true, then the loop will run. If it’s not true,\
+    \ then the loop will not run.\n    - The `Iteration Statement`: Lets you increase\
+    \ or decrease the number of times your loop runs.\n- The `for..in` loop: As we\
+    \ read before, objects have properties. The `for..in` loop’s purpose is to loop\
+    \ through an object’s characteristics.\n\n### Functions\nFunctions are used to\
+    \ wrap a specific piece of your code so you can reuse it without having to type\
+    \ it out more than once. Sometimes a developer needs the same action to take place\
+    \ on different parts or pages of the same website. Functions can be broken down\
+    \ into three parts:\n\n- `Function Statement`: The function statement reveals\
+    \ a function. The function gets saved and only works when it is called for.\n\
+    - `Function Expression`: A function expression does not give the name of the function.\
+    \ The name can be left out of the line of code and create an anonymous function.\n\
+    - `Function Declaration`: Names a function with its special parameters.\n\n##\
+    \ Three Ways to Write Your First Line of Code\nThe first way you can practice\
+    \ writing some code is to write it directly into the Browser. It’s really easy\
+    \ because you don’t need to set anything up and you can start off by trying out\
+    \ some simple comments.\n\n- First, open your web browser and find the search\
+    \ box.\n- Type in `about:blank` and click enter–Your browser tab should be empty.\n\
+    - Click on the menu and choose tools or more tools depending on your browser.\n\
+    - Choose Developer tools–A developer tag should appear.\n- Click on `Console`.\n\
+    - Type your first line of code!\n\nOnce you have gotten used to writing and using\
+    \ some basic `HTML` tags and content, you are going to be able to save your code\
+    \ and you might want to use lots of commands at the same time. For that you have\
+    \ to write your code in a simple text file and then send it to the browser so\
+    \ you can view it. Browsers accept files with the extension `.html`. You can create\
+    \ `HTML` files with Notepad in windows and with Textedit on Mac. Once you have\
+    \ written your code into the file, you need to change the format to `HTML`.\n\n\
+    **On Windows:**\n- Open Notepad\n- Define the document type by typing in `<!DOCTYPE\
+    \ html>`\n- Type in some tags and content e.g.:\n```html\n<h1>I AM SMART</h1>\n\
+    <p> I can code! </p>\n```\n- Click on file in the top left corner\n- Click on\
+    \ Save as\n- Look for: Save as type\n- Click on the drop down menu and choose\
+    \ the `.html` file extension.\n- Save your document\n\n**On Mac:**\n- Open Textedit\n\
+    - Go to the very top of the page and click on preferences\n- Choose the plain\
+    \ text option\n- Define the document type\n- Type in some tags and content\n-\
+    \ Click save and type `.html` at the end of your document name\n- Save your document\n\
+    \nYou have to be very careful, because you will be writing code all by yourself.\n\
+    \nAnother way you can write your code is with Special Code Editors. Special Code\
+    \ Editors know lots of programming languages and they have special features to\
+    \ help you write your code. They highlight different keywords and let you know\
+    \ when there is a syntax error. An editor that is available for free online is\
+    \ `Visual Studio Code`.\n\nNow that you have a basic knowledge of `HTML` and `JavaScript`,\
+    \ challenge yourself and do even more. By the end of your coding journey you should\
+    \ be able to create beautiful websites, build games and construct really cool\
+    \ apps.\n\n# Conclusion\nWhen you’re learning something new it’s not advisable\
+    \ to jump in the deep end. What you have here is a ten thousand foot view of `JavaScript`.\
+    \ Having a theoretical knowledge of it will always be beneficial to you and it’s\
+    \ something nobody can take away from you. Both theoretical and practical knowledge\
+    \ are important when learning to code, but having purely practical knowledge can\
+    \ be limiting. You need to have an understanding of the concepts behind the code\
+    \ you’ve set out to learn. Problem solving while coding will come easily to you,\
+    \ because you will have an in-depth knowledge of how everything works from the\
+    \ bottom up.\n\nThe software development field is constantly growing and changing,\
+    \ so knowing the fundamentals of `JavaScript` means that you will always be able\
+    \ to keep up with any updates.\n\nWhenever we say `JavaScript` is everywhere,\
+    \ we’re not just saying that, it is literally everywhere! It’s not just something\
+    \ we use on web browsers. It can also be used to program electronic toys, wifi\
+    \ connected coffee machines and mobile apps.\n\nAccording to the 2021 StackOverflow\
+    \ developer survey, `JavaScript` is used by 94.5% of all websites.\n\nAs far as\
+    \ career opportunities go, the possibilities are endless. The tech industry is\
+    \ always hiring and is one of the only career fields that is employee centric.\
+    \ They understand that employee satisfaction leads to productivity. You are constantly\
+    \ learning and also very likely to move up the ladder fairly quickly because there’s\
+    \ always room to grow.\n\nYou can become a front-end, back-end or full stack developer.\n\
+    \nA front-end developer uses `HTML`, `CSS` and `JavaScript` to build websites\
+    \ from scratch. It’s an exciting job because every website is different, so the\
+    \ chances of doing the same thing everyday are slim. Front end developers need\
+    \ to ensure they are up to date with all the changes happening in the field, so\
+    \ if there is a downside it’s that they need to constantly do research.\n"
+  raw: 'The word variable means something that doesn’t stay the same, something that
+    can change at any time. In JavaScript, Variables hold on to values that can be
+    changed at any time. Because of this, variables cannot have the same name. Variables
+    have declarations and definitions. A Declaration is the part of the code where
+    the variable is before any action takes place. The definition is where the variable
+    is placed once it has a value and a place in the code.
+
+
+    ### Arrays
+
+
+    In JavaScript, an Array is one variable that we can use to keep different elements.
+    Keeping several items of the same kind together makes it easier to work out where
+    each element is by adding an offset to a base value. A real life example would
+    be if a teacher had all her students sitting at their desks. The teacher would
+    be able to pinpoint any student by knowing what number desk they’re sitting at.
+    It makes coding easier, because we can have access to a whole list of elements
+    just by typing in one word.
+
+
+    ### Objects
+
+
+    Objects are words in your script that have characteristics and can be organized
+    by type. Those characteristics are usually variables determined by the programmer.
+
+
+    ### Conditionals and Loops
+
+
+    Conditional statements work out what is happening in your JavaScript code and
+    then use boolean phrases to decide on the outcome. So the outcome on a conditional
+    statement will either be true or false. There are four types of conditional statements:
+
+
+    ● The if statement
+
+
+    Runs a certain part of the code if the condition is true
+
+
+    ● The else statement
+
+
+    Runs the part of the code related to else if the condition is false
+
+
+    ● The else if statement
+
+
+    Gives and tests a new condition if the first if condition is false
+
+
+    ● The switch-case statement
+
+
+    Gives a number of substitute code blocks to be carried out based on specific conditions
+
+
+    Loop statements help to keep your code short and sweet. Sometimes, you are going
+    to have to perform the same action a number of times on your web application.
+    If loop statements didn’t exist, a programmer would have to write the same line
+    of code over and over again. There are three types of Loop statements:
+
+
+    ● The while loop
+
+
+    The while loop is straightforward. The while loop carries out a conditional statement
+    over and over again if the statement is true. As soon as the statement becomes
+    false, the loop stops running.
+
+
+    ● The for loop
+
+
+    The for loop is a bit more complex. It only runs a specific number of times and
+    it’s made up of three parts:
+
+
+    - The Loop Initialization
+
+
+    This gets your code ready to receive a starting value. This happens before the
+    loop starts.
+
+
+    - The Test Statement
+
+
+    Tests if a condition is true. If it is true, then the loop will run. If it’s not
+    true, then the loop will not run.
+
+
+    - The Iteration Statement
+
+
+    Lets you increase or decrease the number of times your loop runs
+
+
+    ● The for..in loop
+
+
+    As we read before, objects have properties. The for..in loop’s purpose is to loop
+    through an object’s characteristics.
+
+
+    ### Functions
+
+
+    Functions are used to wrap a specific piece of your code so you can reuse it without
+    having to type it out more than once. Sometimes a developer needs the same action
+    to take place on different parts or pages of the same website. Functions can be
+    broken down into three parts:
+
+
+    Function Statement
+
+
+    The function statement reveals a function. The function gets saved and only works
+    when it is called for.
+
+
+    Function Expression
+
+
+    A function expression does not give the name of the function. The name can be
+    left out of the line of code and create an anonymous function.
+
+
+    Function Declaration
+
+
+    Names a function with its special parameters
+
+
+    ## Three Ways to Write Your First Line of Code
+
+
+    The first way you can practice writing some code is to write it directly into
+    the Browser. It’s really easy because you don’t need to set anything up and you
+    can start off by trying out some simple comments.
+
+
+    ● First, open your web browser and find the search box.
+
+
+    ● Type in about:blank and click enter–Your browser tab should be empty.
+
+
+    ● Click on the menu and choose tools or more tools depending on your browser.
+
+
+    ● Choose Developer tools–A developer tag should appear.
+
+
+    ● Click on Console.
+
+
+    ● Type your first line of code!
+
+
+    Once you have gotten used to writing and using some basic HTML tags and content,
+    you are going to need to be able to save your code and you might want to use lots
+    of commands at the same time. For that you have to write your code in a simple
+    text file and then send it to the browser so you can view it. Browsers accept
+    files with the extension .html. You can create HTML files with Notepad in windows
+    and with Textedit on Mac. Once you have written your code into the file, you need
+    to change the format to HTML.
+
+
+    On Windows:
+
+
+    ● Open Notepad
+
+
+    ● Define the document type by typing in <!DOCTYPE html>
+
+
+    ● Type in some tags and content e.g.:
+
+
+    <h1>I AM SMART</h1>
+
+
+    <p> I can code! </p>
+
+
+    ● Click on file in the top left corner
+
+
+    ● Click on Save as
+
+
+    ● Look for: Save as type
+
+
+    ● Click on the drop down menu and choose the .html file extension.
+
+
+    ● Save your document
+
+
+    On Mac:
+
+
+    ● Open Textedit
+
+
+    ● Go to the very top of the page and click on preferences
+
+
+    ● Choose the plain text option
+
+
+    ● Define the document type
+
+
+    ● Type in some tags and content
+
+
+    ● Click save and type .html at the end of your document name
+
+
+    ● Save your document
+
+
+    You have to be very careful, because you will be writing code all by yourself.
+
+
+    Another way you can write your code is with Special Code Editors. Special Code
+    Editors know lots of programming languages and they have special features to help
+    you write your code. They highlight different keywords and let you know when there
+    is a syntax error. An editor that is available for free online is Visual Studio
+    Code.
+
+
+    Now that you have a basic knowledge of HTML and JavaScript, challenge yourself
+    and do even more research. By the end of your coding journey you should be able
+    to create beautiful websites, build games and construct really cool mobile apps.
+
+
+    # Conclusion
+
+
+    When you’re learning something new it’s not advisable to jump in at the deep end.
+    What you have here is a ten thousand foot view of JavaScript.Having a theoretical
+    knowledge of it will always be beneficial to you and it’s something nobody can
+    take away from you. Both theoretical and practical knowledge are important when
+    learning how to code, but having purely practical knowledge can be limiting. You
+    need to have an understanding of the concepts behind the code you’ve set out to
+    learn. Problem solving while coding will come easily to you, because you will
+    have an in-depth knowledge of how everything works from the bottom up.
+
+
+    The software development field is constantly growing and changing, so knowing
+    the fundamentals of JavaScript means that you will always be able to keep up with
+    any updates.
+
+
+    Whenever we say JavaScript is everywhere, we’re not just saying that, it is literally
+    everywhere! It’s not just something we use on web browsers. It can also be used
+    to program electronic toys, wifi connected coffee machines and mobile apps.
+
+
+    According to the 2021 StackOverflow developer survey, JavaScript is used by 94.5%
+    of all websites.
+
+
+    As far as career opportunities go, the possibilities are endless. The tech industry
+    is always hiring and is one of the only career fields that is employee centric.
+    They understand that employee satisfaction leads to productivity. You are constantly
+    learning and also very likely to move up the ladder fairly quickly because there’s
+    always room to grow.
+
+
+    You can become a front-end, back-end or full stack developer.
+
+
+    A front-end developer uses HTML, CSS and JavaScript to build websites from scratch.
+    It’s an exciting job because every website is different, so the chances of doing
+    the same thing everyday are slim. Front end developers need to ensure they are
+    up to date with all the changes happening in the field, so if there is a downside
+    it’s that they need to constantly do research.'
+  toc: []
+  trans: "\n“variable”（变量）一词意味着某种不变的东西，某种可以随时改变的事物。在 `JavaScript` 中，变量存储着可以随时更改的值。正如此，变量的名称不能相同。变量具有声明（declaration）和定义（definition）。`Declaration`\
+    \ 是代码中在任何操作发生之前变量所在的部分。定义则是变量在获得值并在代码中占据位置后所在的地方。\n\n### 数组\n在 `JavaScript` 中，`Array`（数组）是一个我们可以用它来存储不同元素的变量。将多个相同种类的项放在一起，更容易通过在基值上加上偏移量来确定每个元素的位置。现实生活中的例子是，如果老师所有的学生都坐在课桌旁，老师通过知道学生坐在几号桌子就能确定任何学生的位置。这让编码变得更容易，因为我们只需要输入单词就可以访问整个元素列表。\n\
+    \n### 对象\nObjects（对象）是你脚本中具有特征并可以按类型组织的单词。这些特征通常是由程序员确定的变量。\n\n### 条件语句和循环\n条件语句用于判断你的\
+    \ `JavaScript` 代码中正在发生什么，然后使用布尔短语来决定结果。因此，条件语句的结果要么为真（true），要么为假（false）。共有四种条件语句：\n\
+    \n- `if` 语句：如果条件为真，则运行某部分代码。\n- `else` 语句：如果条件为假，则运行与 `else` 相关的代码。\n- `else if`\
+    \ 语句：如果第一个 `if` 条件为假，则提供并测试一个新的条件。\n- `switch-case` 语句：根据特定条件提供若干个备选执行的代码块。\n\n\
+    循环语句有助于保持你的代码简洁明了。有时，你可能需要在你的 Web 应用程序上执行多次相同的操作。如果没有循环语句，程序员必须反复编写相同的行代码。循环语句有三种类型：\n\
+    \n- `while` 循环：`while` 循环非常直观。如果条件语句为真，`while` 循环会反复执行该条件语句。一旦语句变为假，循环就会停止运行。\n\
+    - `for` 循环：`for` 循环稍微复杂一点。它只运行指定的次数，由三部分组成：\n    - `Loop Initialization`（循环初始化）：这让你的代码准备好接收起始值。这发生在循环开始之前。\n\
+    \    - `Test Statement`（测试语句）：测试条件是否为真。如果为真，则循环运行。如果为假，则循环不运行。\n    - `Iteration\
+    \ Statement`（迭代语句）：让你增加或减少循环运行的次数。\n- `for..in` 循环：如我们之前提到的，对象具有属性。`for..in` 循环的目的是遍历对象的特征。\n\
+    \n### 函数\n函数用于封装你代码的特定部分，以便你可以重复使用而无需多次输入。有时，开发者可能需要在同一个网站的不同部分或页面执行相同的操作。函数可以拆分为三个部分：\n\
+    \n- `Function Statement`（函数语句）：函数语句展示一个函数。函数被保存并在仅被调用时才起作用。\n- `Function Expression`（函数表达式）：函数表达式不给出函数的名称。可以省略代码行中的名称并创建一个匿名函数。\n\
+    - `Function Declaration`（函数声明）：用其特殊参数命名函数。\n\n## 编写第一行代码的三种方法\n练习代码的第一种方法是直接写在浏览器中。这非常简单，因为你不需要设置任何东西，可以从尝试一些简单的注释开始。\n\
+    \n- 首先，打开你的浏览器并找到搜索框。\n- 输入 `about:blank` 并按回车——你的浏览器标签页应该是空的。\n- 点击菜单并根据你的浏览器选择“工具”或“更多工具”。\n\
+    - 选择“开发者工具”——应该会出现一个开发者标签。\n- 点击 `Console`（控制台）。\n- 输入你的第一行代码！\n\n一旦习惯了编写和使用一些基本的\
+    \ `HTML` 标签和内容，你就能保存你的代码，并且你可能想要同时使用很多命令。为了这样做，你必须在一个简单的文本文件中编写代码，然后将其发送到浏览器以便查看。浏览器接受扩展名为\
+    \ `.html` 的文件。你可以在 Windows 上使用记事本创建 `HTML` 文件，在 Mac 上使用 Textedit（文本编辑）。一旦你将代码写入文件，你就需要将格式更改为\
+    \ `HTML`。\n\n**在 Windows 上：**\n- 打开记事本\n- 通过输入 `<!DOCTYPE html>` 定义文档类型\n- 输入一些标签和内容，例如：\n\
+    ```html\n<h1>I AM SMART</h1>\n<p> I can code! </p>\n```\n- 点击左上角的“文件”\n- 点击“另存为”\n\
+    - 寻找：“保存类型”\n- 点击下拉菜单并选择 `.html` 文件扩展。\n- 保存你的文档\n\n**在 Mac 上：**\n- 打开 Textedit\n\
+    - 转到页面最顶部点击“偏好”\n- 选择“纯文本”选项\n- 定义文档类型\n- 输入一些标签和内容\n- 点击保存并在文件名末尾输入 `.html`\n\
+    - 保存你的文档\n\n你必须非常小心，因为你将独立编写代码。\n\n另一种编写代码的方法是使用特殊的代码编辑器。特殊的编辑器支持许多编程语言，并具有帮助你编写代码的特殊功能。它们会突出不同的关键词，并在出现语法错误时通知你。在线免费的编辑器是\
+    \ `Visual Studio Code`。\n\n现在你已经有了 `HTML` 和 `JavaScript` 的基础知识，请挑战自己做更多事情。在你编码之旅结束时，你应该能够创建漂亮的网站、构建游戏并制作非常酷的应用程序。\n\
+    \n# 结论\n当你学习新事物时，不建议直接进入深领域。你在这里拥有的是 `JavaScript` 的万米视角。拥有它的理论知识对你始终是有益的，而且没有人能夺走。在学习编程时，理论知识和实践知识都很重要，但仅有实践知识可能会受到局限。你需要理解你打算学习的代码背后的概念。在编码时解决问题将对你来说易如反掌，因为你对从底层开始的一切原理有深入了解。\n\
+    \n软件开发领域正在不断增长和变化，所以了解 `JavaScript` 的基础意味着你将始终跟上任何更新。\n\n每当我们说 `JavaScript` 无处不在时，我们不仅仅是在口说，它真的无处不在！它不仅仅是我们在网络浏览器上使用的东西。它还可以用于编写电子玩具、连接了\
+    \ wifi 的咖啡机和移动应用程序。\n\n根据 2021 年 StackOverflow 开发者调查，`JavaScript` 在所有网站中的使用率高达\
+    \ 94.5%。\n\n就职业机会而言，可能性是无限的。科技行业一直在招聘，并且是少数以员工为中心的职业领域之一。他们理解员工满意度会提高生产力。你不断在学习，而且很可能很快地晋升，因为总有成长空间。\n\
+    \n你可以成为前端开发者、后端开发者或全栈开发者。\n\n前端开发者使用 `HTML`、`CSS` 和 `JavaScript` 从零构建网站。这是一份令人兴奋的工作，因为每个网站都不同，所以每天做同样事情的机会微乎其微。前端开发者需要确保他们跟上了该领域发生的所有变化，所以如果说有缺点，那就是他们需要不断进行研究。\n"
+- fmt: '
+
+    A back-end developer works on the server-side. Back end development is the management
+    of the server and the database of any website. They create the environment that
+    makes it possible for front-end development to exist.
+
+
+    A full stack developer works on both the client-side and the server side. It’s
+    like being in the middle. They are responsible for everything that happens when
+    the front-end and back-end meet. Full stack developers can design software and
+    then debug it as well. Full stack developers can work on small programming projects
+    alone. Building a website for an individual can be done by one person.
+
+
+    There is a big demand in the Job market for `JavaScript` developers because not
+    all people who are employed in the tech industry have an in-depth knowledge of
+    it. The average basic salary of a `JavaScript` developer in the United States
+    is approximately $111,823 per annum.
+
+
+    There are a lot of self-taught `JavaScript` developers working today. With time,
+    discipline and the will to learn, you could be one too!
+
+
+    ## Your FREE Gift
+
+
+    You can grab Your copy by clicking on the following link and joining my mailing
+    list.
+
+
+    FREE BOOKS [https://imris-kdp-publishing.com/](https://imris-kdp-publishing.com/)
+
+
+    ## References
+
+
+    - A coding Nomad. (2020, November 18). Event loop explained in 3 minutes. [Video].
+    YouTube. https://www.youtube.com/watch?v=5YcMKYTZZvk
+
+    - akshitsaxenaa09\. (2021, September 20). Introduction to `Javascript` engines.
+    Geeks for Geeks. https://www.geeksforgeeks.org/introduction-to-javascript-engines/
+
+    - Aryan, A. (n.d.). Functional programming in `JavaScript`. Toptal Engineering
+    Blog. https://www.toptal.com/javascript/functional-programming-javascript#:~:text=Is%20JavaScript%20a%20functional%20programming
+
+    - Atnyla. (n.d.). What are the applications of `Javascript` programming? Atnyla.
+    https://www.atnyla.com/qanswer/what-are-the-applications-of-javascript-programming-/10/772
+
+    - Automation Step by step. (2020, November 26). What is `DOM` | Document Object
+    Model beginner tutorial. [Video]. YouTube. https://www.youtube.com/watch?v=ipkjfvl40s0
+
+    - Bhatia, S. (2021, January 8). What is procedural programming? Key features of
+    procedural programming. Hackr. https://hackr.io/blog/procedural-programming
+
+    - Brewster, C. (n.d.). `JavaScript` frameworks: What are they and how do they
+    work? Trio. https://trio.dev/blog/javascript-framework
+
+    - Code With Ania Kubow. (2020, May 14). `setTimeout` explained in 5 minutes! [Video].
+    YouTube. https://www.youtube.com/watch?v=z9lJb4D3nJY
+
+    - Cogan, B. (2010, May 18). HMVC: An introduction and application. Code Envato
+    Tuts+. https://code.tutsplus.com/tutorials/hmvc-an-introduction-and-application--net-11850
+
+    - DataFlair. (2019, February 27). `JavaScript` architecture - Architecture for
+    different applications. DataFlair. https://data-flair.training/blogs/javascript-architecture/
+
+    - Dorian Develops. (2020, September 18). Don’t waste your time learning `jQuery`
+    (2021 and beyond). [Video]. YouTube. https://www.youtube.com/watch?v=ZEEiHzMejRw
+
+    - Elliott, E. (2019, January 10). Higher order functions (Composing software).
+    Medium - JavaScript Scene. https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99#:~:text=A%20higher%20order%20function%20is
+
+    - Envisage Digital. (2020). 60+ WordPress market Share & CMS usage statistics
+    (2021). Envisage Digital. https://www.envisagedigital.co.uk/wordpress-market-share/
+
+    - freeCodeCamp. (2017, March 13). `for` loops - Beau teaches `JavaScript`. [Video].
+    YouTube. https://www.youtube.com/watch?v=24Wpg6njlYI
+
+    - FrontEnd NE. (2016, July 11). Large scale `JavaScript` application architecture
+    - Andrew Humphreys | February 2016. [Video]. YouTube. https://www.youtube.com/watch?v=1n4qWEEa8mI
+
+    - Geeks for Geeks. (2017, October 27). Introduction to arrays - GeeksforGeeks.
+    Geeks for Geeks. https://www.geeksforgeeks.org/introduction-to-arrays/
+
+    - Gillis, A. S., & Lewis, S. (2019). What is object-oriented programming (`OOP`))?
+    - Definition from WhatIs.com. Search App Architecture. https://searchapparchitecture.techtarget.com/definition/object-oriented-programming-OOP
+
+    - Hack Reactor. (2018, October 18). What is `JavaScript` used for? Hack Reactor.
+    https://www.hackreactor.com/blog/what-is-javascript-used-for
+
+    - Hague, K. (n.d.). 5 great reasons to consider a job in tech. The Muse. https://www.themuse.com/advice/5-great-reasons-to-consider-a-job-in-tech
+
+    - Hartman, J. (2020, January 11). `JavaScript` variable: Declare, assign a value
+    with example. Guru 99. https://www.guru99.com/using-variables-in-javascript.html
+
+    - Javascript. (2021, December 12). Recursion and stack. JavaScript. https://javascript.info/recursion
+
+    - JavaScript Tutorial. (n.d.). `JavaScript` functions. JavaScript Tutorial. https://www.javascripttutorial.net/javascript-function/
+
+    - Java T point. (n.d.). What is `jQuery`? Java T point. https://www.javatpoint.com/what-is-jquery
+
+    - Junior Developer Central. (2020, January 23). Should you learn `jQuery` in 2020\.
+    [Video]. YouTube.. https://www.youtube.com/watch?v=bGHG6XKs6tE
+
+    - Karate & Padawan Vlogs. (2015, April 13). `jQuery` basics - What is `jQuery`?
+    [Video]. YouTube. https://www.youtube.com/watch?v=U4UZVbQ8md0
+
+    - Krossing, D. (2017, April 18). 1: How to get started with `AJAX` | `AJAX` tutorial
+    for beginners | Learn `AJAX` | PHP | `JavaScript`. [Video]. YouTube. https://www.youtube.com/watch?v=tNKD0kfel6o
+
+    - Krossing, D. (2017, April 27). 7: How to animate elements using `jQuery` - Learn
+    `jQuery` front-end programming. [Video]. YouTube. https://www.youtube.com/watch?v=fW7rwCpD0FY
+
+    - Lagutin, V. (2021, September 15). How to learn `JavaScript` a little faster.
+    Free Code Camp. https://www.freecodecamp.org/news/how-to-learn-javascript-a-little-faster/
+
+    - Martin, M. (2021, December 18). What is functional programming? Tutorial with
+    example. Guru 99. https://www.guru99.com/functional-programming-tutorial.html#2
+
+    - MDN Contributors. (2021, September 15). Browser Console. MDN Docs. https://developer.mozilla.org/en-US/Tools/Browser_Console
+
+    - MDN Contributors. (2021, July 20). `undefined`. MDN Docs. https://developer.mozilla.org/en-US/docs/Global_Objects/undefined
+
+    - MDN Contributors. (2021, October 7). `Call stack` - MDN web glossary: Definitions
+    of web-related terms | MDN. Developer Mozilla. https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+
+    - MDN Contributors. (2021, October 13). Using `fetch`. MDN Docs. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+    - MDN Contributors. (2021, November 10). `function expression` - JavaScript |
+    MDN. Developer Mozilla. https://developer.mozilla.org/en-US/docs/Web/Reference/Operators/function
+
+    - MDN Contributors. (2022, January 21). `JavaScript` basics. MDN Docs. https://developer.mozilla.org/en-US/docs/Getting_started_with_the_web/JavaScript_basics
+
+    - Mohammed, A. (2020, May 11). Does theoretical knowledge matter? Linked In. https://www.linkedin.com/pulse/does-theoretical-knowledge-mohammed-zubair-ahmed#::text=Importance%20of%20theoretical%20knowledge%3A
+
+    - MuleSoft. (n.d.). What is an `API`? (Application programming interface). MuleSoft.
+    https://www.mulesoft.com/resources/api/what-is-an-api#::text=API%20is%20the%20acronym%20for
+
+    - Neoteric. (2016, December 2). Single-page application vs. multiple-page application.
+    Medium. https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-259158efe58
+
+    - Norton, D. (2020, March 20). How to save a text document as an html file (using
+    TextEdit on Mac). [Video]. YouTube. https://www.youtube.com/watch?v=koIiDBOpqkE
+
+    - Obaseki, N. (2020, December 29). `localStorage` in `JavaScript`: A complete
+    guide. LogRocket Blog. https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~text=localStorage%20is%20a%20property%20that
+
+    - Parish, A. (2021). JavaScript in the browser console  (Creative Coding). Creative-Coding.decontextualize.com.
+    https://creative-coding.decontextualize.com/browser-console/
+
+    '
+  raw: 'A back-end developer works on the server-side. Back end development is the
+    management of the server and the database of any website. They create the environment
+    that makes it possible for front-end development to exist.
+
+
+    A full stack developer works on both the client-side and the server side. It’s
+    like being in the middle. They are responsible for everything that happens when
+    the front-end and back-end meet. Full stack developers can design software and
+    then debug it as well. Full stack developers can work on small programming projects
+    alone. Building a website for an individual can be done by one person.
+
+
+    There is a big demand in the Job market for JavaScript developers because not
+    all people who are employed in the tech industry have an in-depth knowledge of
+    it. The average basic salary of a JavaScript developer in the United States is
+    approximately $111,823 per annum.
+
+
+    There are a lot of self-taught JavaScript developers working today. With time,
+    discipline and the will to learn, you could be one too!
+
+
+    Your FREE Gift
+
+
+    You can grab Your copy by clicking on the following link and joining my mailing
+    list.
+
+
+    FREE BOOKS [https://imris-kdp-publishing.com/](https://imris-kdp-publishing.com/)
+
+
+    # References
+
+
+    A coding Nomad. (2020, November 18). Event loop explained in 3 minutes. [Video].  YouTube.
+    https://www.youtube.com/watch?v=5YcMKYTZZvk
+
+
+    akshitsaxenaa09\. (2021, September 20). Introduction to Javascript engines. Geeks
+    for Geeks. https://www.geeksforgeeks.org/introduction-to-javascript-engines/
+
+
+    Aryan, A. (n.d.). Functional programming in JavaScript. Toptal Engineering Blog.
+    https://www.toptal.com/javascript/functional-programming-javascript#:~:text=Is%20JavaScript%20a%20functional%20programming
+
+
+    Atnyla. (n.d.). What are the applications of Javascript programming? Atnyla. https://www.atnyla.com/qanswer/what-are-the-applications-of-javascript-programming-/10/772
+
+
+    Automation Step by step. (2020, November 26). What is DOM | Document Object Model
+    beginner tutorial. [Video]. YouTube. https://www.youtube.com/watch?v=ipkjfvl40s0
+
+
+    Bhatia, S. (2021, January 8). What is procedural programming? Key features of
+    procedural programming. Hackr. https://hackr.io/blog/procedural-programming
+
+
+    Brewster, C. (n.d.). JavaScript frameworks: What are they and how do they work?
+    Trio. https://trio.dev/blog/javascript-framework
+
+
+    Code With Ania Kubow. (2020, May 14). setTimeout explained in 5 minutes! [Video].
+    YouTube. https://www.youtube.com/watch?v=z9lJb4D3nJY
+
+
+    Cogan, B. (2010, May 18). HMVC: An introduction and application. Code Envato Tuts+.
+    https://code.tutsplus.com/tutorials/hmvc-an-introduction-and-application--net-11850
+
+
+    DataFlair. (2019, February 27). JavaScript architecture - Architecture for different
+    applications. DataFlair. https://data-flair.training/blogs/javascript-architecture/
+
+
+    Dorian Develops. (2020, September 18). Don’t waste your time learning jQuery  (2021
+    and beyond). [Video]. YouTube. https://www.youtube.com/watch?v=ZEEiHzMejRw
+
+
+    Elliott, E. (2019, January 10). Higher order functions (Composing software). Medium
+    - JavaScript Scene. https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99#:~:text=A%20higher%20order%20function%20is
+
+
+    Envisage Digital. (2020). 60+ WordPress market Share & CMS usage statistics (2021).
+    Envisage Digital. https://www.envisagedigital.co.uk/wordpress-market-share/
+
+
+    freeCodeCamp. (2017, March 13). For loops - Beau teaches JavaScript. [Video].
+    YouTube. https://www.youtube.com/watch?v=24Wpg6njlYI
+
+
+    FrontEnd NE. (2016, July 11). Large scale JavaScript application architecture
+    - Andrew Humphreys | February 2016. [Video]. YouTube. https://www.youtube.com/watch?v=1n4qWEEa8mI
+
+
+    Geeks for Geeks. (2017, October 27). Introduction to arrays - GeeksforGeeks. Geeks
+    for Geeks. https://www.geeksforgeeks.org/introduction-to-arrays/
+
+
+    Gillis, A. S., & Lewis, S. (2019). What is object-oriented programming (OOP)?  -
+    Definition from WhatIs.com. Search App Architecture. https://searchapparchitecture.techtarget.com/definition/object-oriented-programming-OOP
+
+
+    Hack Reactor. (2018, October 18). What is JavaScript used for? Hack Reactor. https://www.hackreactor.com/blog/what-is-javascript-used-for
+
+
+    Hague, K. (n.d.). 5 great reasons to consider a job in tech. The Muse. https://www.themuse.com/advice/5-great-reasons-to-consider-a-job-in-tech
+
+
+    Hartman, J. (2020, January 11). JavaScript variable: Declare, assign a value with
+    example. Guru 99. https://www.guru99.com/using-variables-in-javascript.html
+
+
+    Javascript. (2021, December 12). Recursion and stack. Javascript. https://javascript.info/recursion
+
+
+    JavaScript Tutorial. (n.d.). JavaScript functions. JavaScript Tutorial. https://www.javascripttutorial.net/javascript-function/
+
+
+    Java T point. (n.d.). What is jQuery. Java T point. https://www.javatpoint.com/what-is-jquery
+
+
+    Junior Developer Central. (2020, January 23). Should you learn jQuery in 2020\.
+    [Video]. YouTube.. https://www.youtube.com/watch?v=bGHG6XKs6tE
+
+
+    Karate & Padawan Vlogs. (2015, April 13). jQuery basics - What is jQuery? [Video].
+    YouTube. https://www.youtube.com/watch?v=U4UZVbQ8md0
+
+
+    Krossing, D. (2017, April 18). 1: How to get started with AJAX | AJAX tutorial
+    for beginners | Learn AJAX | PHP | JavaScript. [Video]. YouTube. https://www.youtube.com/watch?v=tNKD0kfel6o
+
+
+    Krossing, D. (2017, April 27). 7: How to animate elements using jQuery - Learn
+    jQuery front-end programming. [Video]. YouTube. https://www.youtube.com/watch?v=fW7rwCpD0FY
+
+
+    Lagutin, V. (2021, September 15). How to learn JavaScript a little faster. Free
+    Code Camp. https://www.freecodecamp.org/news/how-to-learn-javascript-a-little-faster/
+
+
+    Martin, M. (2021, December 18). What is functional programming? Tutorial with
+    example. Guru 99. https://www.guru99.com/functional-programming-tutorial.html#2
+
+
+    MDN Contributors. (2021, July 15). Browser Console. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Tools/Browser_Console
+
+
+    MDN Contributors. (2021, July 20). undefined. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined
+
+
+    MDN Contributors. (2021, October 7). Call stack - MDN web docs glossary: Definitions
+    of web-related terms | MDN. Developer Mozilla. https://developer.mozilla.org/en-US/docs/Glossary/Call_stack
+
+
+    MDN Contributors. (2021, October 13). Using fetch. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+
+    MDN Contributors. (2021, November 10). Function expression - JavaScript | MDN.
+    Developer Mozilla. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
+
+
+    MDN Contributors. (2022, January 21). JavaScript basics. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
+
+    Mohammed, A. (2020, May 11). Does theoretical knowledge matter? Linked In. https://www.linkedin.com/pulse/does-theoretical-knowledge-matter-mohammed-zubair-ahmed#:~:text=Importance%20of%20theoretical%20knowledge%3A
+
+
+    MuleSoft. (n.d.). What is an API? (Application programming interface). MuleSoft.
+    https://www.mulesoft.com/resources/api/what-is-an-api#:~:text=API%20is%20the%20acronym%20for
+
+
+    Neoteric. (2016, December 2). Single-page application vs. multiple-page application.
+    Medium. https://medium.com/@NeotericEU/single-page-application-vs-multiple-page-application-2591588efe58
+
+
+    Norton, D. (2020, March 20). How to save a text document as an html file (using
+    TextEdit on Mac). [Video]. YouTube. https://www.youtube.com/watch?v=koIiDBOpqkE
+
+
+    Obaseki, N. (2020, December 29). localStorage in JavaScript: A complete guide.
+    LogRocket Blog. https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~:text=localStorage%20is%20a%20property%20that
+
+
+    Parish, A. (2021). JavaScript in the browser console  (Creative Coding). Creative-Coding.decontextualize.com.
+    https://creative-coding.decontextualize.com/browser-console/'
+  toc: []
+  trans: '
+
+
+    后端开发人员工作在服务器端。后端开发是对任何网站的服务器和数据库的管理。他们创建了让前端开发能够存在的环境。
+
+
+    全栈开发人员既在客户端又在服务器端工作。这就像处于中间位置。他们负责处理前端和后端相遇时发生的所有事情。全栈开发者既可以设计软件，也可以对其进行调试。全栈开发者可以独立完成小型编程项目。为个人构建网站可以由一个人完成。
+
+
+    劳动力市场对 `JavaScript` 开发人员有巨大需求，因为并不是所有在科技行业的人都对它有深入的了解。美国 `JavaScript` 开发人员的平均基本工资约为每年
+    111,823 美元。
+
+
+    现在有许多自学 `JavaScript` 开发人员在工作。凭借时间、自律和学习意愿，你也可以成为其中之一！
+
+
+    ## 你的免费赠品
+
+
+    你可以通过点击下方链接并加入我的邮件列表来获取你的副本。
+
+
+    免费书籍 [`imris-kdp-publishing.com/`](https://imris-kdp-publishing.com/)
+
+
+    ## 参考文献
+
+
+    - A coding Nomad. (2020, 11 月 18 日). 3 分钟解释事件循环。[视频]. YouTube. https://www.youtube.com/watch?v=5YcMKYTZZvk
+
+    - akshitsaxenaa09\. (2021, 9 月 20 日). `Javascript` 引擎简介。Geeks for Geeks. https://www.geeksforgeeks.org/introduction-to-javascript-engines/
+
+    - Aryan, A. (n.d.). `JavaScript` 中的函数式编程。Toptal Engineering Blog. https://www.toptal.com/javascript/functional-programming-javascript#:~:text=Is%20JavaScript%20a%20functional%20programming
+
+    - Atnyla. (n.d.). `Javascript` 编程的应用有哪些？Atnyla. https://www.atnyla.com/qanswer/what-are-the-applications-of-javascript-programming-/10/772
+
+    - Automation Step by step. (2020, 11 月 26 日). 什么是 `DOM` | 文档对象模型入门教程。[视频]. YouTube.
+    https://www.youtube.com/watch?v=ipkjfvl40s0
+
+    - Bhatia, S. (2021, 1 月 8 日). 什么是过程化编程？过程化编程的关键特征。Hackr. https://hackr.io/blog/procedural-programming
+
+    - Brewster, C. (n.d.). `JavaScript` 框架：它们是什么？是如何工作的？Trio. https://trio.dev/blog/javascript-framework
+
+    - Code With Ania Kubow. (2020, 5 月 14 日). 5 分钟让你懂 `setTimeout`！[视频]. YouTube.
+    https://www.youtube.com/watch?v=z9lJb4D3nJY
+
+    - Cogan, B. (2010, 5 月 18 日). HMVC: 介绍与应用。Code Envato Tuts+. https://code.tutsplus.com/tutorials/hmvc-an-introduction-and-application--net-11850
+
+    - DataFlair. (2019, 2 月 27 日). `JavaScript` 架构 - 针对不同应用的架构。DataFlair. https://data-flair.training/blogs/javascript-architecture/
+
+    - Dorian Develops. (2020, 9 月 18 日). 不要浪费时间在学习 `jQuery` 上（2021 年及以后）。[视频]. YouTube.
+    https://www.youtube.com/watch?v=ZEEiHzMejRw
+
+    - Elliott, E. (2019, 1 月 10 日). 高阶函数（软件组合）。Medium - JavaScript Scene. https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99#:~:text=A%20higher%20order%20function%20is
+
+    - Envisage Digital. (2020). 60+ WordPress 市场份额与 CMS 使用统计数据（2021）。Envisage Digital.
+    https://www.envisagedigital.co.uk/wordpress-market-share/
+
+    - freeCodeCamp. (2017, 3 月 13 日). `for` 循环 - Beau 教学 `JavaScript`。[视频]. YouTube.
+    https://www.youtube.com/watch?v=24Wpg6njlYI
+
+    - FrontEnd NE. (2016, 7 月 11 日). 大规模 `JavaScript` 应用架构 - Andrew Humphreys | 2016
+    年 2 月。[视频]. YouTube. https://www.youtube.com/watch?v=1n4qWEEa8mI
+
+    - Geeks for Geeks. (2017, 10 月 27 日). 数组简介 - GeeksforGeeks。Geeks for Geeks. https://www.geeksforgeeks.org/introduction-to-arrays/
+
+    - Gillis, A. S., & Lewis, S. (2019). 什么是面向对象编程 (`OOP`)？- 来自 WhatIs.com 的定义。Search
+    App Architecture. https://searchapparchitecture.techtarget.com/definition/object-oriented-programming-OOP
+
+    - Hack Reactor. (2018, 10 月 18 日). `JavaScript` 用什么？Hack Reactor. https://www.hackreactor.com/blog/what-is-javascript-used-for
+
+    - Hague, K. (n.d.). 考虑科技工作的 5 个棒理由。The Muse. https://www.themuse.com/advice/5-great-reasons-to-consider-a-job-in-tech
+
+    - Hartman, J. (2020, 1 月 11 日). `JavaScript` 变量：声明、赋值及示例。Guru 99. https://www.guru99.com/using-variables-in-javascript.html
+
+    - Javascript. (2021, 12 月 12 日). 递归与栈。JavaScript. https://javascript.info/recursion
+
+    - JavaScript Tutorial. (n.d.). `JavaScript` 函数。JavaScript Tutorial. https://www.javascripttutorial.net/javascript-function/
+
+    - Java T point. (n.d.). 什么是 `jQuery`？Java T point. https://www.javatpoint.com/what-is-jquery
+
+    - Junior Developer Central. (2020, 1 月 23 日). 你在 2020 年应该学习 `jQuery` 吗？[视频]. YouTube..
+    https://www.youtube.com/watch?v=bGHG6XKs6tE
+
+    - Karate & Padawan Vlogs. (2015, 4 月 13 日). `jQuery` 基础 - 什么是 `jQuery`？[视频]. YouTube.
+    https://www.youtube.com/watch?v=U4UZVbQ8md0
+
+    - Krossing, D. (2017, 4 月 18 日). 1: 如何开始使用 `AJAX` | 初学者 `AJAX` 教程 | 学习 `AJAX`
+    | PHP | `JavaScript`。[视频]. YouTube. https://www.youtube.com/watch?v=tNKD0kfel6o
+
+    - Krossing, D. (2017, 4 月 27 日). 7: 如何使用 `jQuery` 动画元素 - 学习 `jQuery` 前端编程。[视频].
+    YouTube. https://www.youtube.com/watch?v=fW7rwCpD0FY
+
+    - Lagutin, V. (2021, 9 月 15 日). 如何稍快地学习 `JavaScript`。Free Code Camp. https://www.freecodecamp.org/news/how-learn-javascript-a-little-faster/
+    (注：原文此处似乎有漏词，已按语意翻译)
+
+
+    '
+- fmt: '
+
+    # References and Resources
+
+
+    - Pavlutin, D. (2017, April 15). 7 tips to handle `undefined` in JavaScript. Dmitri
+    Pavlutin Blog. https://dmitripavlutin.com/7-tips-to-handle-undefined-in-javascript/#1-what-is-undefined
+
+    - Pavluti, D. (2020, September 22). Everything about `null` in JavaScript. Dmitri
+    Pavlutin Blog. https://dmitripavlutin.com/javascript-null/#1-the-concept-of-null
+
+    - Programiz. (n.d.). Getting started with JavaScript. Programiz. https://www.programiz.com/javascript/get-started
+
+    - Programming with Mosh. (2018, March 29). Object-oriented programming in 7 minutes
+    | Mosh. [Video]. YouTube. https://www.youtube.com/watch?v=pTB0EiLXUC8
+
+    - Rahmat, A. (2020, January 30). JavaScript `null` vs `undefined`. Medium. https://levelup.gitconnected.com/javascript-null-vs-undefined-2acda986f79f
+
+    - Ryan. (2020, December 7). JavaScript for kids | A beginner’s guide to getting
+    started in programming. ID Tech. https://www.idtech.com/blog/javascript-for-kids
+
+    - Sharma, R. (2021, March). How do you use the 80/20 Pareto principle in your
+    life? Quora. https://www.quora.com/How-do-you-use-the-80-20-Pareto-principle-in-your-life
+
+    - Smartcode. (2021, October 5). Number data type in JavaScript | Part 12 | JavaScript
+    | #SmartCode. [Video]. YouTube. https://www.youtube.com/watch?v=sHoX1oLaO1o
+
+    - Steele, C. (2019, January 11). The complete guide to JS symbols ES6\. [Video].
+    YouTube. https://www.youtube.com/watch?v=4J5hnOCj69w
+
+    - Team, D. (2019, February 25). Pros and cons of JavaScript - Weigh them and choose
+    wisely! DataFlair. https://data-flair.training/blogs/advantages-disadvantages-javascript/
+
+    - Tech World with Nana. (2020, May 1). Where to write JavaScript | Where to execute
+    JavaScript code JavaScript tutorial #3. [Video]. YouTube. https://www.youtube.com/watch?v=5N7Tq9e1U_0
+
+    - TheTechCave. (2016, May 20). The client server model | Clients and servers.
+    [Video]. YouTube. https://www.youtube.com/watch?v=L5BlpPU_muY
+
+    - The Net Ninja. (2015, August 15). JavaScript tutorial for beginners #11 - Booleans
+    in JavaScript. [Video]. YouTube. https://www.youtube.com/watch?v=B4ZCFdrBmbE
+
+    - Tutorials Point. (n.d.). JavaScript - `if...else` statement. Tutorials Point.
+    https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
+
+    - Tutorials Point. (n.d.). JavaScript - Syntax. Tutorials Point. https://www.tutorialspoint.com/javascript/javascript_syntax.htm
+
+    - Tutorials Point. (2019). MVC framework - Introduction - Tutorialspoint. Tutorials
+    Point. https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
+
+    - Tutorial Republic. (n.d.). How to create an HTML page - Tutorial Republic. Tutorial
+    Republic. https://www.tutorialrepublic.com/html-tutorial/html-get-started.php
+
+    - Tutorials Teacher. (n.d.). CSS manipulation using `jQuery`. Tutorials Teacher.
+    https://www.tutorialsteacher.com/jquery/jquery-css-manipulation
+
+    - Tyson, M. (2021, April 1). What is functional programming? A practical guide.
+    InfoWorld. https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
+
+    - Udondian, N. (2021, August 9). Hypertext markup language (HTML) syntax. Medium.
+    https://medium.com/@nseabasiudondian_56413/hypertext-markup-language-html-syntax-3d1e68366363
+
+    - Ukpaiugochi. (2021, June 3). How JavaScript works: Modularity and reusability
+    with MVC. Medium. https://blog.sessionstack.com/how-javascript-works-writing-modular-and-reusable-code-with-mvc-16c65cbd9f64
+
+    - W3 Schools. (n.d.). JavaScript function statement. W3 Schools. https://www.w3schools.com/jsref/jsref_function.asp
+
+    - Web Dev Simplified. (2018, August 22). Learn CSS in 20 minutes. [Video]. YouTube.
+    https://www.youtube.com/watch?v=1PnVor36_40&t=352s
+
+    - Webstack. (2020, August 28). JavaScript tutorial #7 | Symbol data type es6 |
+    Symbols in JavaScript es6. [Video]. YouTube. https://www.youtube.com/watch?v=c7aJyJeBOxQ
+
+    - What do client-side and server-side mean? | Client side vs. server side | Cloudflare.
+    (n.d.). Cloudflare. https://www.cloudflare.com/learning/serverless/glossary/client-side-vs-server-side/
+
+    '
+  raw: 'Pavlutin, D. (2017, April 15). 7 tips to handle undefined in JavaScript. Dmitri
+    Pavlutin Blog. https://dmitripavlutin.com/7-tips-to-handle-undefined-in-javascript/#1-what-is-undefined
+
+
+    Pavluti, D. (2020, September 22). Everything about null in JavaScript. Dmitri
+    Pavlutin Blog. https://dmitripavlutin.com/javascript-null/#1-the-concept-of-null
+
+
+    Programiz. (n.d.). Getting started with JavaScript. Programiz. https://www.programiz.com/javascript/get-started
+
+
+    Programming with Mosh. (2018, March 29). Object-oriented programming in 7 minutes
+    | Mosh. [Video]. YouTube.  https://www.youtube.com/watch?v=pTB0EiLXUC8
+
+
+    Rahmat, A. (2020, January 30). JavaScript null vs undefined. Medium. https://levelup.gitconnected.com/javascript-null-vs-undefined-2acda986f79f
+
+
+    Ryan. (2020, December 7). JavaScript for kids | A beginner’s guide to getting
+    started in programming. ID Tech. https://www.idtech.com/blog/javascript-for-kids
+
+
+    Sharma, R. (2021, March). How do you use the 80/20 Pareto principle in your life?
+    Quora. https://www.quora.com/How-do-you-use-the-80-20-Pareto-principle-in-your-life
+
+
+    Smartcode. (2021, October 5). Number data type in JavaScript | Part 12 | JavaScript
+    | #SmartCode. [Video]. YouTube. https://www.youtube.com/watch?v=sHoX1oLaO1o
+
+
+    Steele, C. (2019, January 11). The complete guide to JS symbols ES6\. [Video].
+    YouTube. https://www.youtube.com/watch?v=4J5hnOCj69w
+
+
+    Team, D. (2019, February 25). Pros and cons of JavaScript - Weigh them and choose
+    wisely! DataFlair. https://data-flair.training/blogs/advantages-disadvantages-javascript/
+
+
+    Tech World with Nana. (2020, May 1). Where to write JavaScript | Where to execute
+    JavaScript code JavaScript tutorial #3. [Video]. YouTube. https://www.youtube.com/watch?v=5N7Tq9e1U_0
+
+
+    TheTechCave. (2016, May 20). The client server model | Clients and servers. [Video].  YouTube.
+    https://www.youtube.com/watch?v=L5BlpPU_muY
+
+
+    The Net Ninja. (2015, August 15). JavaScript tutorial for beginners #11 - Booleans
+    in JavaScript. [Video]. YouTube. https://www.youtube.com/watch?v=B4ZCFdrBmbE
+
+
+    Tutorials Point. (n.d.). JavaScript - if...else statement. Tutorials Point. https://www.tutorialspoint.com/javascript/javascript_ifelse.htm
+
+
+    Tutorials Point. (n.d.). JavaScript - Syntax. Tutorials Point. https://www.tutorialspoint.com/javascript/javascript_syntax.htm
+
+
+    Tutorials Point. (2019). MVC framework - Introduction - Tutorialspoint. Tutorials
+    Point. https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
+
+
+    Tutorial Republic. (n.d.). How to create an HTML page  - Tutorial Republic. Tutorial
+    Republic. https://www.tutorialrepublic.com/html-tutorial/html-get-started.php
+
+
+    Tutorials Teacher. (n.d.). CSS manipulation using jQuery. Tutorials Teacher. https://www.tutorialsteacher.com/jquery/jquery-css-manipulation
+
+
+    Tyson, M. (2021, April 1). What is functional programming? A practical guide.
+    InfoWorld. https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html
+
+
+    Udondian, N. (2021, August 9). Hypertext markup language (HTML) syntax. Medium.
+    https://medium.com/@nseabasiudondian_56413/hypertext-markup-language-html-syntax-3d1e68366363
+
+
+    Ukpaiugochi. (2021, June 3). How JavaScript works: Modularity and reusability
+    with MVC. Medium. https://blog.sessionstack.com/how-javascript-works-writing-modular-and-reusable-code-with-mvc-16c65cbd9f64
+
+
+    W3 Schools. (n.d.). JavaScript function statement. W3 Schools. https://www.w3schools.com/jsref/jsref_function.asp
+
+
+    Web Dev Simplified. (2018, August 22). Learn CSS in 20 minutes. [Video]. YouTube.
+    https://www.youtube.com/watch?v=1PnVor36_40&t=352s
+
+
+    Webstack. (2020, August 28). JavaScript tutorial #7 | Symbol data type es6 | Symbols
+    in JavaScript es6. [Video]. YouTube. https://www.youtube.com/watch?v=c7aJyJeBOxQ
+
+
+    What do client-side and server-side mean? | Client side vs. server side | Cloudflare.
+    (n.d.). Cloudflare. https://www.cloudflare.com/learning/serverless/glossary/client-side-vs-server-side/'
+  toc: []
+  trans: '
+
+
+    # 参考与资源
+
+
+    - Pavlutin, D. (2017, 4 月 15 日). [处理 JavaScript 中 `undefined` 的 7 个技巧。Dmitri Pavlutin
+    Blog](https://dmitripavlutin.com/7-tips-to-handle-undefined-in-javascript/#1-what-is-undefined)
+
+    - Pavluti, D. (2020, 9 月 22 日). [关于 JavaScript 中 `null` 的一切。Dmitri Pavlutin Blog](https://dmitripavlutin.com/javascript-null/#1-the-concept-of-null)
+
+    - Programiz. (n.d.). [入门 JavaScript。Programiz](https://www.programiz.com/javascript/get-started)
+
+    - Programming with Mosh. (2018, 3 月 29 日). [7 分钟学会面向对象编程 | Mosh。[视频]。 YouTube](https://www.youtube.com/watch?v=pTB0EiLXUC8)
+
+    - Rahmat, A. (2020, 1 月 30 日). [JavaScript `null` vs `undefined`。Medium](https://levelup.gitconnected.com/javascript-null-vs-undefined-2acda986f79f)
+
+    - Ryan. (2020, 12 月 7 日). [儿童版 JavaScript | 编程入门指南。ID Tech](https://www.idtech.com/blog/javascript-for-kids)
+
+    - Sharma, R. (2021, 3 月). [你如何在生活中使用 80/20 帕累托法则？Quora](https://www.quora.com/How-do-you-use-the-80-20-Pareto-principle-in-your-life)
+
+    - Smartcode. (2021, 10 月 5 日). [JavaScript 数字数据类型 | 第 12 部分 | JavaScript | #SmartCode。[视频]。
+    YouTube](https://www.youtube.com/watch?v=sHoX1oLaO1o)
+
+    - Steele, C. (2019, 1 月 11 日). [ES6 JS symbols 完整指南。[视频]。 YouTube](https://www.youtube.com/watch?v=4J5hnOCj69w)
+
+    - Team, D. (2019, 2 月 25 日). [JavaScript 的优缺点 - 权衡并明智选择！DataFlair](https://data-flair.training/blogs/advantages-disadvantages-javascript/)
+
+    - Tech World with Nana. (2020, 5 月 1 日). [在哪里写 JavaScript | 在哪里执行 JavaScript 代码
+    JavaScript 教程 #3。[视频]。 YouTube](https://www.youtube.com/watch?v=5N7Tq9e1U_0)
+
+    - TheTechCave. (2016, 5 月 20 日). [客户端-服务器模型 | 客户端与服务器。[视频]。 YouTube](https://www.youtube.com/watch?v=L5BlpPU_muY)
+
+    - The Net Ninja. (2015, 8 月 15 日). [初学者 JavaScript 教程 #11 - JavaScript 中的布尔值。[视频]。
+    YouTube](https://www.youtube.com/watch?v=B4ZCFdrBmbE)
+
+    - Tutorials Point. (n.d.). [JavaScript - `if...else` 语句。Tutorials Point](https://www.tutorialspoint.com/javascript/javascript_ifelse.htm)
+
+    - Tutorials Point. (n.d.). [JavaScript - 语法。Tutorials Point](https://www.tutorialspoint.com/javascript/javascript_syntax.htm)
+
+    - Tutorials Point. (2019). [MVC 框架 - 简介 - Tutorialspoint。Tutorials Point](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)
+
+    - Tutorial Republic. (n.d.). [如何创建一个 HTML 页面 - Tutorial Republic。Tutorial Republic](https://www.tutorialrepublic.com/html-tutorial/html-get-started.php)
+
+    - Tutorials Teacher. (n.d.).使用 `jQuery` 操作 CSS。Tutorials Teacher](https://www.tutorialsteacher.com/jquery/jquery-css-manipulation)
+
+    - Tyson, M. (2021, 4 月 1 日). [什么是函数式编程？实用指南。InfoWorld](https://www.infoworld.com/article/3613715/what-is-functional-programming-a-practical-guide.html)
+
+    - Udondian, N. (2021, 8 月 9 日). [超文本标记语言 (HTML) 语法。Medium](https://medium.com/@nseabasiudondian_56413/hypertext-markup-language-html-syntax-3d1e68366363)
+
+    - Ukpaiugochi. (2021, 6 月 3 日). [JavaScript 工作原理：使用 MVC 实现模块化和可重用性。Medium](https://blog.sessionstack.com/how-javascript-works-writing-modular-and-reusable-code-with-mvc-16c65cbd9f64)
+
+    - W3 Schools. (n.d.). [JavaScript 函数语句。W3 Schools](https://www.w3schools.com/jsref/jsref_function.asp)
+
+    - Web Dev Simplified. (2018, 8 月 22 日). [20 分钟学会 CSS。[视频]。 YouTube](https://www.youtube.com/watch?v=1PnVor36_40&t=352s)
+
+    - Webstack. (2020, 8 月 28 日). [JavaScript 教程 #7 | es6 Symbol 数据类型 | JavaScript
+    中的 es6 Symbols。[视频]。 YouTube](https://www.youtube.com/watch?v=c7aJyJeBOxQ)
+
+    - [客户端和服务器是什么意思？ | 客户端对比服务器 | Cloudflare。(n.d.). Cloudflare](https://www.cloudflare.com/learning/serverless/glossary/client-side-vs-server-side/)
+
+
+    '

@@ -1,0 +1,30 @@
+name: JavaScript for Absolute Beginners (Eclectic programming)
+name_cn: 绝对初学者 JavaScript 入门指南
+slug: javascript-for-absolute-beginners-eclectic-programming
+toc:
+- - '#'
+  - 第 3 章：深入研究语法
+- - '##'
+  - 大写敏感
+- - '##'
+  - 空格
+- - '##'
+  - 标识符
+- - '##'
+  - 字面量
+- - '##'
+  - 注释
+- - '##'
+  - 分号
+- - '#'
+  - 第 4 章：现代标记和外部脚本
+- - '##'
+  - Type 属性
+- - '##'
+  - 如何判断你正在查看旧脚本
+- - '##'
+  - 注释的作用是什么？
+- - '##'
+  - 外部脚本
+- - '##'
+  - 创建 JavaScript 文件

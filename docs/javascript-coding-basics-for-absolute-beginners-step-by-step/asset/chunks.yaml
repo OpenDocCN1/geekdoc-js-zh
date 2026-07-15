@@ -1,0 +1,2845 @@
+- fmt: "\n![](Images/cover00124.jpeg)\n\n# JAVASCRIPT CODING: BASICS FOR ABSOLUTE\
+    \ BEGINNERS\nSTEP BY STEP GUIDE TO LEARN CODING QUICKLY J NEWMAN\n\n# Learn JavaScript\n\
+    \nJavaScript is a lightweight, cross-platform object-based scripting language.\n\
+    \nJavaScript is a translated language, not a compiled language. The JavaScript\
+    \ Translator (which is built within the browser) is in charge of translating JavaScript\
+    \ code for web browsers.\n\nJavaScript (`js`) is a lightweight object-oriented\
+    \ programming language that is used to script webpages by a number of websites.\n\
+    \nWhen applied to an HTML document, it is an interpreted, full-featured programming\
+    \ language that enables dynamic interactivity on websites. It was first released\
+    \ in 1995 to allow users to add programs to webpages in the Netscape Navigator\
+    \ browser.\n\nSince then, all other graphical web browsers have embraced it. Users\
+    \ can use JavaScript to create modern web applications that interact immediately\
+    \ without having to reload the page every time. Js is used on a standard website\
+    \ to provide many sorts of interactivity and simplicity.\n\nJavaScript, on the\
+    \ other hand, has no connection to the Java programming language.\n\n## Features\
+    \ of JavaScript\n\n- Because they have built-in execution environments, all popular\
+    \ web browsers support JavaScript.\n- The grammar and structure of JavaScript\
+    \ are based on the C programming language. As a result, it is classified as a\
+    \ structured programming language.\n- JavaScript is a weakly typed language with\
+    \ implicit casting of certain types (depending on the operation).\n- JavaScript\
+    \ is an object-oriented programming language that inherits through prototypes\
+    \ rather than classes.\n- It's a simple and interpretable language.\n- The language\
+    \ is case-sensitive.\n- JavaScript is compatible with a variety of operating systems,\
+    \ including Windows, macOS, and Linux.\n- It gives consumers complete control\
+    \ over their web browsers.\n\n![](Images/image00082.jpeg)\n\n### JavaScript Example\n\
+    \n```javascript\n<script>\n  document.write(\"Hello JavaScript by JavaScript\"\
+    );\n</script>\n```\n\n# JavaScript Comment\n\nJavaScript comments are an effective\
+    \ means of conveying information. It's used to include code-related information,\
+    \ such as warnings or suggestions, so that the end user can understand it.\n\n\
+    The JavaScript engine, which is incorporated in the browser, ignores the JavaScript\
+    \ comment.\n\n### Advantages - JavaScript comments\n\n- To make coding more understandable\
+    \ It can be used to explain the code so that the end user can understand it.\n\
+    - To avoid having to write unneeded code It can also be used to prevent the code\
+    \ from running. We sometimes add code to do a certain action. However, the code\
+    \ may need to be disabled after some time. It is preferable to utilise comments\
+    \ in this situation.\n\n## JavaScript Comments - Types\n\n1. Single-line Comment\n\
+    2. Multi-line Comment\n\n## Single line Comment\n\nDouble forward slashes (`//`)\
+    \ are used to indicate it. It's appropriate to use it both before and after the\
+    \ sentence.\n\nLet's look at an example of a single-line comment, which is one\
+    \ that is placed before the statement.\n\n```javascript\n<script>\n  // It is\
+    \ single line comment\n  document.write(\"hello javascript\");\n</script>\n```\n\
+    \n### EXAMPLE\n\n```javascript\n<script>\n  var a=10;\n  var b=20;\n  var c=a+b;//It\
+    \ adds values of a and b variable\n  document.write(c);//prints sum of 10 and\
+    \ 20\n</script>\n```\n\n## Multi line Comment\n\nIt can be used to create both\
+    \ single and multi-line comments. As a result, it is more practical.\n\nIt's symbolised\
+    \ by a forward slash followed by an asterisk, then another forward slash. Consider\
+    \ the following scenario:\n\n```javascript\n/* your code here */\n```\n\nIt might\
+    \ appear before, after, or in the middle of a statement.\n\n```javascript\n<script>\n\
+    \  /* It is multi line comment.\n  It will not be displayed */\n  document.write(\"\
+    example of javascript multiline comment\");\n</script>\n```\n\n# JavaScript Variable\n\
+    \nA JavaScript variable is nothing more than a storage location's name. In JavaScript,\
+    \ there are two sorts of variables: local variables and global variables.\n\n\
+    When declaring a JavaScript variable, there are some guidelines to follow (also\
+    \ known as identifiers).\n\n- A letter (a to z or A to Z), underscore (`_`), or\
+    \ dollar (`$`) sign must begin the name.\n- We can put numerals (0 to 9) after\
+    \ the initial letter, for example `value1`.\n- Variables in JavaScript are case\
+    \ sensitive, so `x` and `X` are two separate variables.\n\n## Correct JavaScript\
+    \ variables\n\n```javascript\nvar x = 10;\nvar _value=\"sonoo\";\n```\n\n## Incorrect\
+    \ JavaScript variables\n\n```javascript\nvar 123=30;\nvar *aa=320;\n```\n\n##\
+    \ Example - JavaScript variable\n\n```javascript\n<script>\n  var x = 10;\n  var\
+    \ y = 20;\n  var z=x+y;\n  document.write(z);\n</script>\n```\n\n### Output\n\
+    30\n\n## JavaScript local variable\n\nA local variable in JavaScript is declared\
+    \ within a block or function. It can only be accessed from within the function\
+    \ or block. Consider the following scenario:\n\n```javascript\n<script>\n  function\
+    \ abc(){\n    var x=10;//local variable\n  }\n</script>\n```\n\nOr,\n\n```javascript\n\
+    <script>\n  If(10<13){\n    var y=20;//JavaScript local variable\n  }\n</script>\n\
+    ```\n\n## JavaScript global variable\n\nA global variable in JavaScript can be\
+    \ accessed from any function. A global variable is one that is declared outside\
+    \ of the function or with the `window` object. Consider the following scenario:\n\
+    \n```javascript\n<script>\n  var data=200;//gloabal variable\n  function a(){\n\
+    \    document.writeln(data);\n  }\n  function b(){\n    document.writeln(data);\n\
+    \  }\n  a();//calling JavaScript function\n  b();\n</script>\n```\n\n# JavaScript\
+    \ Global Variable\n\nA global variable in JavaScript is declared outside of the\
+    \ function or with the `window` object. It's possible to go to it from any function.\n\
+    \nLet's look at a simple example of a global variable.\n\n```javascript\n<script>\n\
+    \  var value=50;//global variable\n  function a(){\n    alert(value);\n  }\n \
+    \ function b(){\n    alert(value);\n  }\n</script>\n```\n\n### Declaring a global\
+    \ variable in JavaScript within a function\n\nYou must utilise the `window` object\
+    \ to declare global variables inside a function. Consider the following scenario:\n\
+    \n```javascript\nwindow.value=90;\n```\n\nIt can now be declared within any function\
+    \ and accessed from within any function. Consider the following scenario:\n\n\
+    ```javascript\nfunction m(){\n  window.value=100;//declaring global variable by\
+    \ window object\n}\nfunction n(){\n  alert(window.value);//accessing global variable\
+    \ from other function\n}\n```\n\n# Javascript Data Types\n\nDifferent data types\
+    \ are available in JavaScript to hold various types of values. In JavaScript,\
+    \ there are two sorts of data types.\n\n1. Primitive data type\n2. Non-primitive\
+    \ (reference) data type\n"
+  raw: '
+
+
+    ![](Images/cover00124.jpeg)
+
+
+    JAVASCRIPT CODING:
+
+
+    BASICS FOR ABSOLUTE BEGINNERS
+
+
+    STEP BY STEP GUIDE TO LEARN CODING QUICKLY
+
+
+    J NEWMAN
+
+
+    [Learn JavaScript](#part0002.xhtml__Toc95745073)
+
+
+    [JavaScript Comment](#part0003.xhtml__Toc95745074)
+
+
+    [JavaScript Variable](#part0004.xhtml__Toc95745075)
+
+
+    [JavaScript Global Variable](#part0005.xhtml__Toc95745076)
+
+
+    [Javascript Data Types](#part0006.xhtml__Toc95745077)
+
+
+    [JavaScript Operators](#part0007.xhtml__Toc95745078)
+
+
+    [JavaScript If-else](#part0008.xhtml__Toc95745079)
+
+
+    [JavaScript Switch](#part0009.xhtml__Toc95745080)
+
+
+    [JavaScript Loops](#part0010.xhtml__Toc95745081)
+
+
+    [JavaScript Functions](#part0011.xhtml__Toc95745082)
+
+
+    [JavaScript Objects](#part0012.xhtml__Toc95745083)
+
+
+    [JavaScript Array](#part0013.xhtml__Toc95745084)
+
+
+    [JavaScript String](#part0014.xhtml__Toc95745085)
+
+
+    [JavaScript Date Object](#part0015.xhtml__Toc95745086)
+
+
+    [JavaScript Math](#part0016.xhtml__Toc95745087)
+
+
+    [JavaScript Number Object](#part0017.xhtml__Toc95745088)
+
+
+    [JavaScript Boolean](#part0018.xhtml__Toc95745089)
+
+
+    # Learn JavaScript
+
+
+    JavaScript is a lightweight, cross-platform object-based scripting language.
+
+
+    JavaScript is a translated language, not a compiled language. The JavaScript Translator
+    (which is built within the browser) is in charge of translating JavaScript code
+    for web browsers.
+
+
+    JavaScript (js) is a lightweight object-oriented programming language that is
+    used to script webpages by a number of websites.
+
+
+    When applied to an HTML document, it is an interpreted, full-featured programming
+    language that enables dynamic interactivity on websites. It was first released
+    in 1995 to allow users to add programs to webpages in the Netscape Navigator browser.
+
+
+    Since then, all other graphical web browsers have embraced it. Users can use JavaScript
+    to create modern web applications that interact immediately without having to
+    reload the page every time. Js is used on a standard website to provide many sorts
+    of interactivity and simplicity.
+
+
+    JavaScript, on the other hand, has no connection to the Java programming language.
+
+
+    ## Features of JavaScript
+
+
+    Because they have built-in execution environments, all popular web browsers support
+    JavaScript.
+
+
+    The grammar and structure of JavaScript are based on the C programming language.
+    As a result, it is classified as a structured programming language.
+
+
+    JavaScript is a weakly typed language with implicit casting of certain types (depending
+    on the operation).
+
+
+    JavaScript is an object-oriented programming language that inherits through prototypes
+    rather than classes.
+
+
+    It''s a simple and interpretable language.
+
+
+    The language is case-sensitive.
+
+
+    JavaScript is compatible with a variety of operating systems, including Windows,
+    macOS, and Linux.
+
+
+    It gives consumers complete control over their web browsers.
+
+
+    ![](Images/image00082.jpeg)
+
+
+    ### JavaScript Example
+
+
+    1.  <script>  
+
+
+    2.  document.write("Hello JavaScript by JavaScript");  
+
+
+    3.  </script>  
+
+
+    # JavaScript Comment
+
+
+    JavaScript comments are an effective means of conveying information. It''s used
+    to include code-related information, such as warnings or suggestions, so that
+    the end user can understand it.
+
+
+    The JavaScript engine, which is incorporated in the browser, ignores the JavaScript
+    comment.
+
+
+    #### Advantages - JavaScript comments
+
+
+    To make coding more understandable It can be used to explain the code so that
+    the end user can understand it.
+
+
+    To avoid having to write unneeded code It can also be used to prevent the code
+    from running. We sometimes add code to do a certain action. However, the code
+    may need to be disabled after some time. It is preferable to utilise comments
+    in this situation.
+
+
+    ## JavaScript Comments - Types
+
+
+    1.  Single-line Comment
+
+
+    2.  Multi-line Comment
+
+
+    ## Single line Comment
+
+
+    Double forward slashes (//) are used to indicate it. It''s appropriate to use
+    it both before and after the sentence.
+
+
+    Let''s look at an example of a single-line comment, which is one that is placed
+    before the statement.
+
+
+    1.  <script>  
+
+
+    2.  // It is single line comment  
+
+
+    3.  document.write("hello javascript");  
+
+
+    4.  </script>
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var a=10;  
+
+
+    3.  var b=20;  
+
+
+    4.  var c=a+b;//It adds values of a and b variable  
+
+
+    5.  document.write(c);//prints sum of 10 and 20  
+
+
+    6.  </script>
+
+
+    ## Multi line Comment
+
+
+    It can be used to create both single and multi-line comments. As a result, it
+    is more practical.
+
+
+    It''s symbolised by a forward slash followed by an asterisk, then another forward
+    slash. Consider the following scenario:
+
+
+    1.  /* your code here  */  
+
+
+    It might appear before, after, or in the middle of a statement.
+
+
+    1.  <script>  
+
+
+    2.  /* It is multi line comment.  
+
+
+    3.  It will not be displayed */  
+
+
+    4.  document.write("example of javascript multiline comment");  
+
+
+    5.  </script>  
+
+
+    # JavaScript Variable
+
+
+    A JavaScript variable is nothing more than a storage location''s name. In JavaScript,
+    there are two sorts of variables: local variables and global variables.
+
+
+    When declaring a JavaScript variable, there are some guidelines to follow (also
+    known as identifiers).
+
+
+    A letter (a to z or A to Z), underscore(_), or dollar($) sign must begin the name.
+
+
+    We can put numerals (0 to 9) after the initial letter, for example value1.
+
+
+    Variables in JavaScript are case sensitive, so x and X are two separate variables.
+
+
+    ## Correct JavaScript variables
+
+
+    1.  var x = 10;  
+
+
+    2.  var _value="sonoo";  
+
+
+    ## Incorrect JavaScript variables
+
+
+    1.  var  123=30;  
+
+
+    2.  var *aa=320;  
+
+
+    ## Example - JavaScript variable
+
+
+    1.  <script>  
+
+
+    2.  var x = 10;  
+
+
+    3.  var y = 20;  
+
+
+    4.  var z=x+y;  
+
+
+    5.  document.write(z);  
+
+
+    6.  </script>  
+
+
+    #### Output
+
+
+    30
+
+
+    ## JavaScript local variable
+
+
+    A local variable in JavaScript is declared within a block or function. It can
+    only be accessed from within the function or block. Consider the following scenario:
+
+
+    1.  <script>  
+
+
+    2.  function abc(){  
+
+
+    3.  var x=10;//local variable  
+
+
+    4.  }  
+
+
+    5.  </script>  
+
+
+    Or,
+
+
+    1.  <script>  
+
+
+    2.  If(10<13){  
+
+
+    3.  var y=20;//JavaScript local variable  
+
+
+    4.  }  
+
+
+    5.  </script>  
+
+
+    ## JavaScript global variable
+
+
+    A global variable in JavaScript can be accessed from any function. A global variable
+    is one that is declared outside of the function or with the window object. Consider
+    the following scenario:
+
+
+    1.  <script>  
+
+
+    2.  var data=200;//gloabal variable  
+
+
+    3.  function a(){  
+
+
+    4.  document.writeln(data);  
+
+
+    5.  }  
+
+
+    6.  function b(){  
+
+
+    7.  document.writeln(data);  
+
+
+    8.  }  
+
+
+    9.  a();//calling JavaScript function  
+
+
+    10.  b();  
+
+
+    11.  </script>
+
+
+    # JavaScript Global Variable
+
+
+    A global variable in JavaScript is declared outside of the function or with the
+    window object. It''s possible to go to it from any function.
+
+
+    Let''s look at a simple JavaScript example of a global variable.
+
+
+    1.  <script>  
+
+
+    2.  var value=50;//global variable  
+
+
+    3.  function a(){  
+
+
+    4.  alert(value);  
+
+
+    5.  }  
+
+
+    6.  function b(){  
+
+
+    7.  alert(value);  
+
+
+    8.  }  
+
+
+    9.  </script> 
+
+
+    ### Declaring a global variable in JavaScript within a function
+
+
+    You must utilise the window object to declare JavaScript global variables inside
+    a function. Consider the following scenario:
+
+
+    1.  window.value=90;  
+
+
+    It can now be declared within any function and accessed from within any function.
+    Consider the following scenario:
+
+
+    1.  function m(){  
+
+
+    2.  window.value=100;//declaring global variable by window object  
+
+
+    3.  }  
+
+
+    4.  function n(){  
+
+
+    5.  alert(window.value);//accessing global variable from other function  
+
+
+    6.  } 
+
+
+    #### In JavaScript, the internals of a global variable
+
+
+    When you declare a variable outside of a function, it is automatically added to
+    the window object. You can also use the window object to get to it. Consider the
+    following scenario:
+
+
+    1.  var value=50;  
+
+
+    2.  function a(){  
+
+
+    3.  alert(window.value);//accessing global variable   
+
+
+    4.  } 
+
+
+    # Javascript Data Types
+
+
+    Different data types are available in JavaScript to hold various types of values.
+    In JavaScript, there are two sorts of data types.
+
+
+    1.  Primitive data type
+
+
+    2.  Non-primitive (reference) data type'
+  toc: []
+  trans: "\n\n![](img/cover00124.jpeg)\n\n# JAVASCRIPT 编码：初学者入门\n快速学习编程的逐步指南 J NEWMAN\n\
+    \n# 学习 JavaScript\n\nJavaScript 是一种轻量级、跨平台的基于对象的脚本语言。\n\nJavaScript 是一种译译型语言，而不是编译型语言。JavaScript\
+    \ 翻译器（内置在浏览器中）负责为 Web 浏览器翻译 JavaScript 代码。\n\nJavaScript (`js`) 是一种轻量级的面向对象的编程语言，被许多网站用于编写网页脚本。\n\
+    \n当应用于 HTML 文档时，它是一种解释型的、功能完备的编程语言，能够实现网站上的动态交互。它首次发布于 1995 年，允许用户在 Netscape Navigator\
+    \ 浏览器中向网页添加程序。\n\n从那时起，所有其他图形网络浏览器都接受了它。用户可以使用 JavaScript 创建现代 Web 应用，实现即时交互，而无需每次都重新加载页面。Js\
+    \ 用于标准网站，以提供各种类型的交互性和简单性。\n\n另一方面，JavaScript 与 Java 编程语言没有关系。\n\n## JavaScript\
+    \ 的特性\n\n- 由于它们内置了执行环境，所有流行的网络浏览器都支持 JavaScript。\n- JavaScript 的语法和结构基于 C 语言语言。因此，它被归类为结构化语言。\n\
+    - JavaScript 是一种弱类型语言，并对某些类型进行隐式转换（取决于具体操作）。\n- JavaScript 是一种面向对象的编程语言，通过原型而非类进行继承。\n\
+    - 它是一种简单且可解释的语言。\n- 该语言对大小写敏感。\n- JavaScript 兼容多种操作系统，包括 Windows、macOS 和 Linux。\n\
+    - 它让用户对浏览器拥有完全控制权。\n\n![](img/image00082.jpeg)\n\n### JavaScript 示例\n\n```javascript\n\
+    <script>\n  document.write(\"Hello JavaScript by JavaScript\");\n</script>\n```\n\
+    \n# JavaScript 注释\n\nJavaScript 注释是传递信息的有效手段。它用于包含代码相关信息，如警告或建议，以便终端用户能够理解。\n\n\
+    集成在浏览器中的 JavaScript 引擎会忽略 JavaScript 注释。\n\n### 优点 - JavaScript 注\n\n- 使代码更易于理解：它可以解释代码，以便终端用户能够理解。\n\
+    - 避免编写不需要的代码：它也可以用于防止代码运行。我们有时添加代码来执行某些操作，但一段时间后可能需要禁用这些代码。在这种情况下，利用注释更为优。\n\n\
+    ## JavaScript 注释 - 类型\n\n1. 单行注释\n2. 多行注释\n\n## 单行注释\n\n使用双正斜杠 (`//`）来表示这种注释。在句子之前之后使用它都是合适的。\n\
+    \n让我们来看一个单行注释的示例，即在语句之前的注释。\n\n```javascript\n<script>\n  // 这是一个单行注释\n  document.write(\"\
+    hello javascript\");\n</script>\n```\n\n### 示例\n\n```javascript\n<script>\n  var\
+    \ a=10;\n  var b=20;\n  var c=a+b;//相加变量 a 和 b 的值\n  document.write(c);//打印 10\
+    \ 和 20 的和\n</script>\n```\n\n## 多行注释\n\n它可以用于创建单行和多行注释。因此，它更具实用。\n\n它的符号是一个正斜杠后跟星号，然后另一个正斜杠。考虑以下场景：\n\
+    \n```javascript\n/* 在此处输入你的代码 */\n```\n\n它可能出现在语句之前、之后或中间。\n\n```javascript\n\
+    <script>\n  /* 这是一个多行注释。\n  它将不会显示 */\n  document.write(\"example of javascript\
+    \ multiline comment\");\n</script>\n```\n\n# JavaScript 变量\n\nJavaScript 变量仅仅是存储位置的名称。在\
+    \ JavaScript 中，有两种变量：局部变量和全局变量。\n\n在声明 JavaScript 变量时，有一些需要遵循的指南（也称为标识符）。\n\n\
+    - 名称必须以字母（a 到 z 或 A 到 Z）、下划线 (`_`) 或美元符号 (`$`) 开始。\n- 可以在初始字母后放置数字（0 到 9），例如 `value1`。\n\
+    - JavaScript 中的变量对大小写敏感，因此 `x` 和 `X` 是两个不同的变量。\n\n## 正确的 JavaScript 变量\n\n```javascript\n\
+    var x = 10;\nvar _value=\"sonoo\";\n```\n\n## 错误的 JavaScript 变量\n\n```javascript\n\
+    var 123=30;\nvar *aa=320;\n```\n\n## 示例 - JavaScript 变量\n\n```javascript\n<script>\n\
+    \  var x = 10;\n  var y = 20;\n  var z=x+y;\n  document.write(z);\n</script>\n\
+    ```\n\n### 输出\n30\n\n## JavaScript 局部变量\n\nJavaScript 中的局部变量在块或函数内部声明。它只能从函数或块内部访问。考虑以下场景：\n\
+    \n```javascript\n<script>\n  function abc(){\n    var x=10;//局部变量\n  }\n</script>\n\
+    ```\n\n或者，\n\n```javascript\n<script>\n  If(10<13){\n    var y=20;//JavaScript\
+    \ 局部变量\n  }\n</script>\n```\n\n## JavaScript 全局变量\n\nJavaScript 中的全局变量可以从任何函数访问。全局变量是在函数外部或使用\
+    \ `window` 对象声明的变量。考虑以下场景：\n\n```javascript\n<script>\n  var data=200;//全局变量\n\
+    \  function a(){\n    document.writeln(data);\n  }\n  function b(){\n    document.writeln(data);\n\
+    \  }\n  a();//调用 JavaScript 函数\n  b();\n</script>\n```\n\n# JavaScript 全局变量\n\n\
+    JavaScript 中的全局变量在函数外部或使用 `window` 对象声明。可以从任何函数访问它。\n\n让我们来看一个全局变量的简单示例。\n\n```javascript\n\
+    <script>\n  var value=50;//全局变量\n  function a(){\n    alert(value);\n  }\n  function\
+    \ b(){\n    alert(value);\n  }\n</script>\n```\n\n### 在函数内部声明 JavaScript 全局变量\n\
+    \n你必须利用 `window` 对象在函数内部声明全局变量。考虑以下场景：\n\n```javascript\nwindow.value=90;\n```\n\
+    \n它现在可以在任何函数内部声明，并从任何函数内部访问。考虑以下场景：\n\n```javascript\nfunction m(){\n  window.value=100;//通过\
+    \ window 对象声明全局变量\n}\nfunction n(){\n  alert(window.value);//从其他函数访问全局变量\n}\n\
+    ```\n\n# JavaScript 数据类型\n\nJavaScript 提供了不同的数据类型来存储不同类型的值。在 JavaScript 中，有两种数据类型。\n\
+    \n1. 原生数据类型\n2. 非原生数据类型（引用类型）\n\n"
+- fmt: "\nJavaScript is a dynamic type language, which means you don't have to specify\
+    \ the type of a variable because the JavaScript engine uses it dynamically. To\
+    \ specify the data type, you must use `var`. It may store any type of value, including\
+    \ numbers, strings, and so on. Consider the following scenario:\n\n1. `var a=40;//holding\
+    \ number`\n2. `var b=\"Rahul\";//holding string`\n\n![](Images/image00083.jpeg)\n\
+    ![](Images/image00084.jpeg)\n\n# JavaScript Operators\n\nOperators in JavaScript\
+    \ are symbols that perform operations on operands. Consider the following scenario:\n\
+    \n1. `var sum=10+20;`\n\nHere, `+` is the arithmetic operator\nAnd `=` is the\
+    \ assignment operator.\n\nTypes of operators in JavaScript:\n\n1. Arithmetic Operators\n\
+    2. Comparison (Relational) Operators\n3. Bitwise Operators\n4. Logical Operators\n\
+    5. Assignment Operators\n6. Special Operators\n\n## JavaScript Arithmetic Operators\n\
+    \nTo conduct arithmetic operations on the operands, arithmetic operators are employed.\
+    \ JavaScript arithmetic operators are the operators listed below.\n\n![](Images/image00085.jpeg)\n\
+    \n## JavaScript Comparison Operators\n\nThe comparison operator in JavaScript\
+    \ compares the two operands. The following are the comparison operators:\n\n![](Images/image00086.jpeg)\n\
+    \n## JavaScript Bitwise Operators\n\nOn operands, the bitwise operators perform\
+    \ bitwise operations. The following are the bitwise operators:\n\n![](Images/image00087.jpeg)\n\
+    \n## JavaScript Logical Operators\n\nJavaScript logical operators are the operators\
+    \ listed below.\n\n![](Images/image00088.jpeg)\n\n## JavaScript Assignment Operators\n\
+    \n![](Images/image00089.jpeg)\n\n## JavaScript Special Operators\n\n![](Images/image00090.jpeg)\n\
+    \n# JavaScript If-else\n\n![](Images/image00091.jpeg)\n\n### JavaScript If statement\n\
+    \nOnly if expression is true does it assess the content. The `if` statement in\
+    \ JavaScript has the following signature.\n\n```javascript\nif(expression){\n\
+    \  //content to be evaluated\n}\n```\n\n![](Images/image00092.jpeg)\n\nEXAMPLE\n\
+    \n```javascript\n<script>\nvar a=20;\nif(a>10){\n  document.write(\"value of a\
+    \ is greater than 10\");\n}\n</script>\n```\n\nOUTPUT\nvalue of a is greater than\
+    \ 10\n\n### JavaScript If...else Statement\n\nIt determines if the condition is\
+    \ true or false by evaluating the content. The syntax for the `if-else` statement\
+    \ in JavaScript is shown below.\n\n```javascript\nif(expression){\n  //content\
+    \ to be evaluated if condition is true\n}\nelse{\n  //content to be evaluated\
+    \ if condition is false\n}\n```\n\n![](Images/image00093.jpeg)\n\nEXAMPLE\n\n\
+    ```javascript\n<script>\nvar a=20;\nif(a%2==0){\n  document.write(\"a is even\
+    \ number\");\n}\nelse{\n  document.write(\"a is odd number\");\n}\n</script>\n\
+    ```\n\nOUTPUT\na is even number\n\n### If...else if statement – in Javascript\n\
+    \nIt only analyses the content if one or more expressions are true. The `if else\
+    \ if` statement in JavaScript has the following signature.\n\n```javascript\n\
+    if(expression1){\n  //content to be evaluated if expression1 is true\n}\nelse\
+    \ if(expression2){\n  //content to be evaluated if expression2 is true\n}\nelse\
+    \ if(expression3){\n  //content to be evaluated if expression3 is true\n}\nelse{\n\
+    \  //content to be evaluated if no expression is true\n}\n```\n\nEXAMPLE\n\n```javascript\n\
+    <script>\nvar a=20;\nif(a==10){\n  document.write(\"a is equal to 10\");\n}\n\
+    else if(a==15){\n  document.write(\"a is equal to 15\");\n}\nelse if(a==20){\n\
+    \  document.write(\"a is equal to 20\");\n}\nelse{\n  document.write(\"a is not\
+    \ equal to 10, 15 or 20\");\n}\n</script>\n```\n\nOUTPUT\na is equal to 20\n\n\
+    # JavaScript Switch\n\nThe `switch` statement is used to combine numerous expressions\
+    \ into a single code. It's the same as `else if` statement we learnt the previous\
+    \ page. It is, however, more useful than `else..if` because it may be used with\
+    \ integers, characters, and other variables.\n\nThe `switch` statement's signature\
+    \ is shown below.\n\n```javascript\nswitch(expression){\n  case value1:\n    code\
+    \ to be executed\n    break;\n  case value2:\n    code to be executed\n    break;\n\
+    \  default:\n    code to be executed if above values are not matched;\n}\n```\n\
+    \nSimple example - switch - javascript.\n\n```javascript\n<script>\nvar grade='B';\n\
+    var result;\nswitch(grade){\n  case 'A': result=\"A Grade\"; break;\n  case 'B':\
+    \ result=\"B Grade\"; break;\n  case 'C': result=\"C Grade\"; break;\n  default:\
+    \ result=\"No Grade\";\n}\ndocument.write(result);\n</script>\n```\n\nOUTPUT\n\
+    B Grade\n\nBehaviour of switch statement\n\n```javascript\n<script>\nvar grade='B';\n\
+    var result;\nswitch(grade){\n  case 'A': result+=\"A Grade\";\n  case 'B': result+=\"\
+    B Grade\";\n  case 'C': result+=\"C Grade\";\n  default: result+=\"No Grade\"\
+    ;\n}\ndocument.write(result);\n</script>\n```\n\nOUTPUT\nundefined B Grade C Grade\
+    \ No Grade\n\n# JavaScript Loops\n\nThe `for`, `while`, `do while`, and `for-in`\
+    \ loops are used to iterate the piece of code in JavaScript. It reduces the size\
+    \ of the code. It's most commonly found in arrays.\n\n1. for loop\n2. while loop\n\
+    3. do-while loop\n4. for-in loop\n\n## 1) JavaScript For loop\n\nThe loop in JavaScript\
+    \ iterates the components for a set number of times. If the number of iterations\
+    \ is known, it should be used. The `for` loop's syntax is seen below.\n\n```javascript\n\
+    for (initialization; condition; increment){\n  code to be executed\n}\n```\n\n\
+    EXAMPLE\n\n```javascript\n<script>\nfor (i=1; i<=5; i++){\n  document.write(i\
+    \ + \"<br/>\")\n}\n</script>\n```\n\nOutput:\n1\n2\n3\n4\n5\n\n## 2) JavaScript\
+    \ while loop\n\nThe `while` loop in JavaScript iterates the components an infinite\
+    \ amount of times. If the number of iterations is unknown, it should be utilised.\
+    \ The `while` loop's syntax is seen below.\n\n```javascript\nwhile (condition){\n\
+    \  code to be executed\n}\n```\n\nEXAMPLE\n\n```javascript\n<script>\nvar i=11;\n\
+    while (i<=15){\n  document.write(i + \"<br/>\");\n}\n</script>\n```\n\nOUTPUT:\n\
+    11\n12\n13\n14\n15\n\n## 3) Do while loop\n\nThe `do while` loop, like the `while`\
+    \ loop, iterates the elements. Regardless of whether the condition is true or\
+    \ false, the code is performed at least once. The following is the syntax for\
+    \ the do while loop.\n\n```javascript\ndo{\n  code to be executed\n}while(condition);\n\
+    ```\n\nEXAMPLE\n\n```javascript\n<script>\nvar i=21;\ndo{\n  document.write(i\
+    \ + \"<br/>\");\n  i++;\n}while(i<=25);\n</script>\n```\n\nOUTPUT:\n21\n22\n23\n\
+    24\n25\n\n## 4) JavaScript for in loop\n\nThe `for in` loop is used to cycle through\
+    \ an object's properties.\n\n# JavaScript Functions\n\nTo conduct operations,\
+    \ JavaScript functions are needed. To reuse the code, we can call the JavaScript\
+    \ function many times.\n\nBenefits of Using JavaScript\n\nReusability of code:\
+    \ Because we can call a function multiple times, we can save time coding.\n\n\
+    Less coding means our program is more compact. To accomplish a common task, we\
+    \ don't need to write many lines of code each time.\n\n## JavaScript Function\
+    \ Syntax\n\n```javascript\nfunction functionName([arg1, arg2, ...argN]){\n  //code\
+    \ to be executed\n}\n```\n\nEXAMPLE\n\n```javascript\n<script>\nfunction msg(){\n\
+    \  alert(\"hello! this is message\");\n}\n</script>\n<input type=\"button\" onclick=\"\
+    msg()\" value=\"call function\"/>\n```\n\n## JavaScript Function Arguments\n\n\
+    ```javascript\n<script>\nfunction getcube(number){\n  alert(number*number*number);\n\
+    }\n</script>\n<form>\n  <input type=\"button\" value=\"click\" onclick=\"getcube(4)\"\
+    />\n</form>\n```\n\n## Function with Return Value\n\nWe can use a function that\
+    \ returns a value in our program by calling it. Let's look at a function that\
+    \ returns a value as an example.\n\n```javascript\n<script>\n```\n"
+  raw: 'JavaScript is a dynamic type language, which means you don''t have to specify
+    the type of a variable because the JavaScript engine uses it dynamically. To specify
+    the data type, you must use var. It may store any type of value, including numbers,
+    strings, and so on. Consider the following scenario:
+
+
+    1.  var a=40;//holding number  
+
+
+    2.  var b="Rahul";//holding string  
+
+
+    ![](Images/image00083.jpeg)
+
+
+    ![](Images/image00084.jpeg)
+
+
+    # JavaScript Operators
+
+
+    Operators in JavaScript are symbols that perform operations on operands. Consider
+    the following scenario:
+
+
+    1.  var sum=10+20;  
+
+
+    Here, + is the arithmetic operator
+
+
+    And = is the assignment operator.
+
+
+    Types of operators in JavaScript.
+
+
+    1.  Arithmetic Operators
+
+
+    2.  Comparison (Relational) Operators
+
+
+    3.  Bitwise Operators
+
+
+    4.  Logical Operators
+
+
+    5.  Assignment Operators
+
+
+    6.  Special Operators
+
+
+    ## JavaScript Arithmetic Operators
+
+
+    To conduct arithmetic operations on the operands, arithmetic operators are employed.
+    JavaScript arithmetic operators are the operators listed below.
+
+
+    ![](Images/image00085.jpeg)
+
+
+    ## JavaScript Comparison Operators
+
+
+    The comparison operator in JavaScript compares the two operands. The following
+    are the comparison operators:
+
+
+    ![](Images/image00086.jpeg)
+
+
+    ## JavaScript Bitwise Operators
+
+
+    On operands, the bitwise operators perform bitwise operations. The following are
+    the bitwise operators:
+
+
+    ![](Images/image00087.jpeg)
+
+
+    ## JavaScript Logical Operators
+
+
+    JavaScript logical operators are the operators listed below.
+
+
+    ![](Images/image00088.jpeg)
+
+
+    ## JavaScript Assignment Operators
+
+
+    ![](Images/image00089.jpeg)
+
+
+    ## JavaScript Special Operators
+
+
+    ![](Images/image00090.jpeg)
+
+
+    # JavaScript If-else
+
+
+    ![](Images/image00091.jpeg)
+
+
+    ### JavaScript If statement
+
+
+    Only if expression is true does it assess the content. The if statement in JavaScript
+    has the following signature.
+
+
+    1.  if(expression){  
+
+
+    2.  //content to be evaluated  
+
+
+    3.  }  
+
+
+    ![](Images/image00092.jpeg)
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var a=20;  
+
+
+    3.  if(a>10){  
+
+
+    4.  document.write("value of a is greater than 10");  
+
+
+    5.  }  
+
+
+    6.  </script>
+
+
+    OUTPUT
+
+
+    value of a is greater than 10
+
+
+    ### JavaScript If...else Statement
+
+
+    It determines if the condition is true or false by evaluating the content. The
+    syntax for the if-else statement in JavaScript is shown below.
+
+
+    1.  if(expression){  
+
+
+    2.  //content to be evaluated if condition is true  
+
+
+    3.  }  
+
+
+    4.  else{  
+
+
+    5.  //content to be evaluated if condition is false  
+
+
+    6.  }  
+
+
+    ![](Images/image00093.jpeg)
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var a=20;  
+
+
+    3.  if(a%2==0){  
+
+
+    4.  document.write("a is even number");  
+
+
+    5.  }  
+
+
+    6.  else{  
+
+
+    7.  document.write("a is odd number");  
+
+
+    8.  }  
+
+
+    9.  </script>
+
+
+    OUTPUT
+
+
+    a is even number
+
+
+    ### If...else if statement – in Javascript
+
+
+    It only analyses the content if one or more expressions are true. The if else
+    if statement in JavaScript has the following signature.
+
+
+    1.  if(expression1){  
+
+
+    2.  //content to be evaluated if expression1 is true  
+
+
+    3.  }  
+
+
+    4.  else if(expression2){  
+
+
+    5.  //content to be evaluated if expression2 is true  
+
+
+    6.  }  
+
+
+    7.  else if(expression3){  
+
+
+    8.  //content to be evaluated if expression3 is true  
+
+
+    9.  }  
+
+
+    10.  else{  
+
+
+    11.  //content to be evaluated if no expression is true  
+
+
+    12.  }  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var a=20;  
+
+
+    3.  if(a==10){  
+
+
+    4.  document.write("a is equal to 10");  
+
+
+    5.  }  
+
+
+    6.  else if(a==15){  
+
+
+    7.  document.write("a is equal to 15");  
+
+
+    8.  }  
+
+
+    9.  else if(a==20){  
+
+
+    10.  document.write("a is equal to 20");  
+
+
+    11.  }  
+
+
+    12.  else{  
+
+
+    13.  document.write("a is not equal to 10, 15 or 20");  
+
+
+    14.  }  
+
+
+    15.  </script>  
+
+
+    OUTPUT
+
+
+    a is equal to 20
+
+
+    # JavaScript Switch
+
+
+    The JavaScript switch statement is used to combine numerous expressions into a
+    single code. It''s the same as the else if statement we learnt on the previous
+    page. It is, however, more useful than if..else..if because it may be used with
+    integers, characters, and other variables.
+
+
+    The JavaScript switch statement''s signature is shown below.
+
+
+    1.  switch(expression){  
+
+
+    2.  case value1:  
+
+
+    3.  code to be executed;  
+
+
+    4.  break;  
+
+
+    5.  case value2:  
+
+
+    6.  code to be executed;  
+
+
+    7.  break;  
+
+
+    8.  ......  
+
+
+    10.  default:   
+
+
+    11.  code to be executed if above values are not matched;  
+
+
+    12.  }  
+
+
+    Simple example - switch statement - javascript.
+
+
+    1.  <script>  
+
+
+    2.  var grade=''B'';  
+
+
+    3.  var result;  
+
+
+    4.  switch(grade){  
+
+
+    5.  case ''A'':  result="A Grade";  
+
+
+    6.  break;  
+
+
+    7.  case ''B'':  
+
+
+    8.  result="B Grade";  
+
+
+    9.  break;  
+
+
+    10.  case ''C'':  
+
+
+    11.  result="C Grade";  
+
+
+    12.  break;  
+
+
+    13.  default:  
+
+
+    14.  result="No Grade";  
+
+
+    15.  }  
+
+
+    16.  document.write(result);  
+
+
+    17.  </script>  
+
+
+    OUTPUT
+
+
+    B Grade
+
+
+    Behaviour of switch statement
+
+
+    1.  <script>  
+
+
+    2.  var grade=''B'';  
+
+
+    3.  var result;  
+
+
+    4.  switch(grade){  
+
+
+    5.  case ''A'':  
+
+
+    6.  result+=" A Grade";  
+
+
+    7.  case ''B'':  
+
+
+    8.  result+=" B Grade";  
+
+
+    9.  case ''C'':  
+
+
+    10.  result+=" C Grade";  
+
+
+    11.  default:  
+
+
+    12.  result+=" No Grade";  
+
+
+    13.  }  
+
+
+    14.  document.write(result);  
+
+
+    15.  </script>  
+
+
+    OUTPUT
+
+
+    undefined B Grade C Grade No Grade
+
+
+    # JavaScript Loops
+
+
+    The for, while, do while, and for-in loops are used to iterate the piece of code
+    in JavaScript. It reduces the size of the code. It''s most commonly found in arrays.
+
+
+    1.  for loop
+
+
+    2.  while loop
+
+
+    3.  do-while loop
+
+
+    4.  for-in loop
+
+
+    ## 1) JavaScript For loop
+
+
+    The loop in JavaScript iterates the components for a set number of times. If the
+    number of iterations is known, it should be used. The for loop''s syntax is seen
+    below.
+
+
+    1.  for (initialization; condition; increment)  
+
+
+    2.  {  
+
+
+    3.  code to be executed  
+
+
+    4.  }  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  for (i=1; i<=5; i++)  
+
+
+    3.  {  
+
+
+    4.  document.write(i + "<br/>")  
+
+
+    5.  }  
+
+
+    6.  </script>  
+
+
+    Output:
+
+
+    1
+
+
+    2
+
+
+    3
+
+
+    4
+
+
+    5
+
+
+    ## 2) JavaScript while loop
+
+
+    The while loop in JavaScript iterates the components an infinite amount of times.
+    If the number of iterations is unknown, it should be utilised. The while loop''s
+    syntax is seen below.
+
+
+    1.  while (condition)  
+
+
+    2.  {  
+
+
+    3.  code to be executed  
+
+
+    4.  }  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var i=11;  
+
+
+    3.  while (i<=15)  
+
+
+    4.  {  
+
+
+    5.  document.write(i + "<br/>");  
+
+
+    6.  i++;  
+
+
+    7.  }  
+
+
+    8.  </script>
+
+
+    Output:
+
+
+    11
+
+
+    12
+
+
+    13
+
+
+    14
+
+
+    15
+
+
+    ## 3) Do while loop
+
+
+    The JavaScript do while loop, like the while loop, iterates the elements indefinitely.
+    Regardless of whether the condition is true or false, the code is performed at
+    least once. The following is the syntax for the do while loop.
+
+
+    1.  do{  
+
+
+    2.  code to be executed  
+
+
+    3.  }while (condition);  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var i=21;  
+
+
+    3.  do{  
+
+
+    4.  document.write(i + "<br/>");  
+
+
+    5.  i++;  
+
+
+    6.  }while (i<=25);  
+
+
+    7.  </script>  
+
+
+    Output:
+
+
+    21
+
+
+    22
+
+
+    23
+
+
+    24
+
+
+    25
+
+
+    ## 4) JavaScript for in loop
+
+
+    The JavaScript for in loop is used to cycle through an object''s properties.
+
+
+    # JavaScript Functions
+
+
+    To conduct operations, JavaScript functions are needed. To reuse the code, we
+    can call the JavaScript function many times.
+
+
+    Benefits of Using JavaScript
+
+
+    JavaScript functions have primarily two advantages.
+
+
+    Reusability of code: Because we can call a function multiple times, we can save
+    time coding.
+
+
+    Less coding means our program is more compact. To accomplish a common task, we
+    don''t need to write many lines of code each time.
+
+
+    ## JavaScript Function Syntax
+
+
+    1.  function functionName([arg1, arg2, ...argN]){  
+
+
+    2.  //code to be executed  
+
+
+    3.  }  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  function msg(){  
+
+
+    3.  alert("hello! this is message");  
+
+
+    4.  }  
+
+
+    5.  </script>  
+
+
+    6.  <input type="button" onclick="msg()" value="call function"/>
+
+
+    ## JavaScript Function Arguments
+
+
+    1.  <script>  
+
+
+    2.  function getcube(number){  
+
+
+    3.  alert(number*number*number);  
+
+
+    4.  }  
+
+
+    5.  </script>  
+
+
+    6.  <form>  
+
+
+    7.  <input type="button" value="click" onclick="getcube(4)"/>  
+
+
+    8.  </form>  
+
+
+    ## Function with Return Value
+
+
+    We can use a function that returns a value in our program by calling it. Let''s
+    look at a function that returns a value as an example.
+
+
+    1.  <script>  '
+  toc: []
+  trans: "\n\nJavaScript 是一种动态类型语言，这意味着你不需要指定变量的类型，因为 JavaScript 引擎会动态地使用它。要指定数据类型，你必须使用\
+    \ `var`。它可以存储任何类型的值，包括数字、字符串等。考虑以下场景：\n\n1. `var a=40;//持有数字`\n2. `var b=\"Rahul\"\
+    ;//持有字符串`\n\n![](img/image00083.jpeg)\n![](img/image00084.jpeg)\n\n# JavaScript\
+    \ 运算符\n\nJavaScript 中的运算符是对操作数执行操作的符号。考虑以下场景：\n\n1. `var sum=10+20;`\n\n在这里，`+`\
+    \ 是算术运算符\n而 `=` 是赋值运算符。\n\nJavaScript 运算符的类型：\n\n1. 算术运算符\n2. 比较（关系）运算符\n3. 位运算符\n\
+    4. 逻辑运算符\n5. 赋值运算符\n6. 特殊运算符\n\n## JavaScript 算术运算符\n\n为了对操作数进行算术运算，需要使用算术运算符。JavaScript\
+    \ 算术运算符是下面列出的运算符。\n\n![](img/image00085.jpeg)\n\n## JavaScript 比较运算符\n\nJavaScript\
+    \ 中的比较运算符用于比较两个操作数。以下是比较运算符：\n\n![](img/image00086.jpeg)\n\n## JavaScript 位运算符\n\
+    \n位运算符在操作数上执行位位操作。以下是位运算符：\n\n![](img/image00087.jpeg)\n\n## JavaScript 逻辑运算符\n\
+    \nJavaScript 逻辑运算符是下面列出的运算符。\n\n![](img/image00088.jpeg)\n\n## JavaScript 赋值运算符\n\
+    \n![](img/image00089.jpeg)\n\n## JavaScript 特殊运算符\n\n![](img/image00090.jpeg)\n\
+    \n# JavaScript If-else\n\n![](img/image00091.jpeg)\n\n### JavaScript If 语句\n\n\
+    只有当表达式为真时，才会评估内容。JavaScript 中的 `if` 语句具有以下签名。\n\n```javascript\nif(expression){\n\
+    \  //要评估的内容\n}\n```\n\n![](img/image00092.jpeg)\n\n示例\n\n```javascript\n<script>\n\
+    var a=20;\nif(a>10){\n  document.write(\"value of a is greater than 10\");\n}\n\
+    </script>\n```\n\n输出\nvalue of a is greater than 10\n\n### JavaScript If...else\
+    \ 语句\n\n它通过评估内容来确定条件是真是假。JavaScript 中 `if-else` 语句的语法所示。\n\n```javascript\nif(expression){\n\
+    \  // 如果条件为真，则评估的内容\n}\nelse{\n  // 如果条件为假，则评估的内容\n}\n```\n\n![](img/image00093.jpeg)\n\
+    \n示例\n\n```javascript\n<script>\nvar a=20;\nif(a%2==0){\n  document.write(\"a\
+    \ is even number\");\n}\nelse{\n  document.write(\"a is odd number\");\n}\n</script>\n\
+    ```\n\n输出\na is even number\n\n### JavaScript 中的 If...else if 语句\n\n只有当一个或多个表达式为真时，它才分析内容。JavaScript\
+    \ 中的 `if else if` 语句具有以下签名。\n\n```javascript\nif(expression1){\n  // 如果 expression1\
+    \ 为真，则评估的内容\n}\nelse if(expression2){\n  // 如果 expression2 为真，则评估的内容\n}\nelse\
+    \ if(expression3){\n  // 如果 expression3 为真，则评估的内容\n}\nelse{\n  // 如果没有表达式为真，则评估的内容\n\
+    }\n```\n\n示例\n\n```javascript\n<script>\nvar a=20;\nif(a==10){\n  document.write(\"\
+    a is equal to 10\");\n}\nelse if(a==15){\n  document.write(\"a is equal to 15\"\
+    );\n}\nelse if(a==20){\n  document.write(\"a is equal to 20\");\n}\nelse{\n  document.write(\"\
+    a is not equal to 10, 15 or 20\");\n}\n</script>\n```\n\n输出\na is equal to 20\n\
+    \n# JavaScript Switch\n\n`switch` 语句用于将多个表达式组合到单代码中。它与我们在上一页学到的 `else if` 语句相同。然而，它比\
+    \ `else..if` 更用，因为可以与整数、字符和其他变量一起。\n\n`switch` 语句的签名所示。\n\n```javascript\nswitch(expression){\n\
+    \  case value1:\n    要执行的代码\n    break;\n  case value2:\n    要执行的代码\n    break;\n\
+    \  default:\n    // 如果未匹配到上述值，则执行的代码；\n}\n```\n\n简单示例 - switch - javascript。\n\
+    \n```javascript\n<script>\nvar grade='B';\nvar result;\nswitch(grade){\n  case\
+    \ 'A': result=\"A Grade\"; break;\n  case 'B': result=\"B Grade\"; break;\n  case\
+    \ 'C': result=\"C Grade\"; break;\n  default: result=\"No Grade\";\n}\ndocument.write(result);\n\
+    </script>\n```\n\n输出\nB Grade\n\nswitch 语句的行为\n\n```javascript\n<script>\nvar\
+    \ grade='B';\nvar result;\nswitch(grade){\n  case 'A': result+=\"A Grade\";\n\
+    \  case 'B': result+=\"B Grade\";\n  case 'C': result+=\"C Grade\";\n  default:\
+    \ result+=\"No Grade\";\n}\ndocument.write(result);\n</script>\n```\n\n输出\nundefined\
+    \ B Grade C Grade No Grade\n\n# JavaScript 循环\n\n`for`、`while`、`do while` 和 `for-in`\
+    \ 循环用于在 JavaScript 中迭代代码。它减少了代码的大小。它最出现在数组中。\n\n1. for 循环\n2. while 循环\n3. do-while\
+    \ 循环\n4. for-in 循环\n\n## 1) JavaScript For 循环\n\nJavaScript 中的循环按指定的次数迭代组件。如果迭代次数已知，则应该使用它。`for`\
+    \ 循环的语法所示。\n\n```javascript\nfor (initialization; condition; increment){\n  要执行的代码\n\
+    }\n```\n\n示例\n\n```javascript\n<script>\nfor (i=1; i<=5; i++){\n  document.write(i\
+    \ + \"<br/>\")\n}\n</script>\n```\n\n输出：\n1\n2\n3\n4\n5\n\n## 2) JavaScript while\
+    \ 循环\n\nJavaScript 中的 `while` 循环无限次迭代组件。如果迭代次数未知，则应该使用它。`while` 循环的语法所示。\n\n```javascript\n\
+    while (condition){\n  要执行的代码\n}\n```\n\n示例\n\n```javascript\n<script>\nvar i=11;\n\
+    while (i<=15){\n  document.write(i + \"<br/>\");\n}\n</script>\n```\n\n输出：\n11\n\
+    12\n13\n14\n15\n\n## 3) Do while 循环\n\n`do while` 循环像 `while` 循环一样迭代元素。无论条件是真是假，代码至少都会执行一次。以下是\
+    \ `do while` 循环的语法。\n\n```javascript\ndo{\n  要执行的代码\n}while(condition);\n```\n\
+    \n示例\n\n```javascript\n<script>\nvar i=21;\ndo{\n  document.write(i + \"<br/>\"\
+    );\n  i++;\n}while(i<=25);\n</script>\n```\n\n输出\n21\n22\n23\n24\n25\n\n## 4)\
+    \ JavaScript for in 循环\n\n`for in` 循环用于遍历对象的属性。\n\n# JavaScript 函数\n\n为了执行操作，需要\
+    \ JavaScript 函数。为了重用代码，我们可以多次调用 JavaScript 函数。\n\n使用 JavaScript 的好处\n\n代码的可重用性：因为我们可以多次调用函数，所以可以节省编码时间。\n\
+    \n更少的代码意味着我们的程序更紧凑。为了完成常见任务，我们每次不需要编写许多行代码。\n\n## JavaScript 函数语法\n\n```javascript\n\
+    function functionName([arg1, arg2, ...argN]){\n  //要执行的代码\n}\n```\n\n示例\n\n```javascript\n\
+    <script>\nfunction msg(){\n  alert(\"hello! this is message\");\n}\n</script>\n\
+    <input type=\"button\" onclick=\"msg()\" value=\"call function\"/>\n```\n\n##\
+    \ JavaScript 函数参数\n\n```javascript\n<script>\nfunction getcube(number){\n  alert(number*number*number);\n\
+    }\n</script>\n<form>\n  <input type=\"button\" value=\"click\" onclick=\"getcube(4)\"\
+    />\n</form>\n```\n\n## 带返回值的函数\n\n我们可以通过调用在程序中使用返回返回值的函数。让我们看一个返回返回值的函数示例。\n\n\
+    ```javascript\n<script>\n```\n\n"
+- fmt: "\n```javascript\nfunction getInfo(){\n  return \"hello javatpoint! How r u?\"\
+    ;\n}\n</script> \n<script>\n  document.write(getInfo());\n</script>\n```\nOUTPUT\n\
+    hello javatpoint! How r u?\n\n## JavaScript Function Object\n\nThe `Function`\
+    \ `Object() { [native code] }` in JavaScript is used to generate a new `Function`\
+    \ object. It runs the code on a global scale. When we call the function `Object()\
+    \ { [native code] }` directly, however, a function is constructed dynamically\
+    \ but insecurely.\n\n## Syntax\n\n`new Function ([arg1[, arg2[, ....argn]],] functionBody)`\n\
+    \n![](Images/image00094.jpeg)\n![](Images/image00095.jpeg)\n\n## JavaScript Function\
+    \ Object\n\n## Example\n\n```javascript\n<script>\n  var add=new Function(\"num1\"\
+    ,\"num2\",\"return num1+num2\");\n  document.writeln(add(2,5));\n</script>\n```\n\
+    Output:\n7\n\n### Example 2\n\n```javascript\n<script>\n  var pow=new Function(\"\
+    num1\",\"num2\",\"return Math.pow(num1,num2)\");\n  document.writeln(pow(2,3));\n\
+    </script>\n```\nOutput:\n8\n\n# JavaScript Objects\n\nA javaScript object is a\
+    \ state and behavior-based entity (properties and method). For example, a car,\
+    \ a pen, a bicycle, a chair, a glass, a keyboard, and a monitor.\n\nJavaScript\
+    \ is an object-oriented programming language. In JavaScript, everything is an\
+    \ object.\n\nJavaScript is a template-based language, not a class-based one. To\
+    \ get the object, we don't need to build a class. However, we direct the creation\
+    \ of objects.\n\n![](Images/image00096.jpeg)\n![](Images/image00097.jpeg)\n\n\
+    ## EXAMPLE\n\n```javascript\n<script>\n  emp={id:102,name:\"Shyam Kumar\",salary:40000}\n\
+    \  document.write(emp.id+\" \"+emp.name+\" \"+emp.salary);\n</script>\n```\nOUTPUT\n\
+    102 Shyam Kumar 40000\n\n![](Images/image00098.jpeg)\n\n## EXAMPLE\n\n```javascript\n\
+    <script>\n  var emp=new Object();\n  emp.id=101;\n  emp.name=\"Ravi Malik\";\n\
+    \  emp.salary=50000;\n  document.write(emp.id+\" \"+emp.name+\" \"+emp.salary);\n\
+    </script>\n```\nOUTPUT\n101 Ravi 50000\n\n![](Images/image00099.jpeg)\n\n## EXAMPLE\n\
+    \n```javascript\n<script>\n  function emp(id,name,salary){\n    this.id=id;\n\
+    \    this.name=name;\n    this.salary=salary;\n  }\n  e=new emp(103,\"Vimal Jaiswal\"\
+    ,30000);\n  document.write(e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n```\n\
+    OUTPUT\n103 Vimal Jaiswal 30000\n\n## Defining method - JavaScript Object\n\n\
+    In a JavaScript object, we can specify methods. However, before we define the\
+    \ method, we must add a property to the function with the same name as the method.\n\
+    \n## EXAMPLE\n\n```javascript\n<script>\n  function emp(id,name,salary){\n   \
+    \ this.id=id;\n    this.name=name;\n    this.salary=salary;\n    this.changeSalary=changeSalary;\n\
+    \    function changeSalary(otherSalary){\n      this.salary=otherSalary;\n   \
+    \ }\n  }\n  e=new emp(103,\"Sonoo Jaiswal\",30000);\n  document.write(e.id+\"\
+    \ \"+e.name+\" \"+e.salary);\n  e.changeSalary(45000);\n  document.write(\"<br>\"\
+    +e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n```\nOUTPUT\n103 Sonoo Jaiswal\
+    \ 30000\n103 Sonoo Jaiswal 45000\n\n## JavaScript Object Methods\n![](Images/image00100.jpeg)\n\
+    ![](Images/image00101.jpeg)\n![](Images/image00102.jpeg)\n![](Images/image00103.jpeg)\n\
+    \n# JavaScript Array\n\nA JavaScript array is an object that represents group\
+    \ of objects of the same type. In JavaScript, there are three ways to create an\
+    \ array:\n\n1. By array literal\n2. By creating instance of `Array` directly (using\
+    \ `new` keyword)\n3. By using an `Array` constructor (using `new` keyword)\n\n\
+    ## 1) JavaScript array literal\n\nThe following is the syntax for generating an\
+    \ array with an array literal:\n`var arrayname=[value1,value2.....valueN];`\n\
+    Values are contained within `[]` and separated by comma. Let's have a look at\
+    \ a simple example of how to create and use an array in JavaScript.\n\n```javascript\n\
+    <script>\n  var emp=[\"Sonoo\",\"Vimal\",\"atan\"];\n  for(i=0;i<emp.length;i++){\n\
+    \    document.write(emp[i]+\"<br/>\n  }\n</script>\n```\nOutput\nSonoo\nVimal\n\
+    atan\n\n## 2) JavaScript Array directly\n\nThe following is the syntax for creating\
+    \ an array:\n`var arrayname=new Array();`\nIn this case, the `new` keyword is\
+    \ used to create an array object. Let's look at an example of generating an array\
+    \ from scratch.\n\n```javascript\n<script>\n  var i;\n  var emp=new Array();\n\
+    \  emp[0]=\"Arun\";\n  emp[1]=\"Varun\";\n  emp[2]=\"John\";\n  for(i=0;i<emp.length;i++){\n\
+    \    document.write(emp[i]+\"br>\");\n  }\n</script>\n```\nOutput\nArun\nVarun\n\
+    John\n\n## 3) JavaScript array constructor\n\nSo that we don't have to provide\
+    \ value explicitly, you must create an instance of array by passing arguments\
+    \ to the function `Array() { [native code] }`. The following is an example of\
+    \ using `Array() { [native code] }` to create an object.\n\n```javascript\n<script>\n\
+    \  var emp=new Array(\"Jai\",\"Smith\");\n  for(i=0;i<emp.length;i++){\n    document.write(emp[i]+\"\
+    br>\");\n  }\n</script>\n```\nOutput\nJai\nSmith\n\n## JavaScript Array Methods\n\
+    ![](Images/image00104.jpeg)\n![](Images/image00105.jpeg)\n![](Images/image00106.jpeg)\n\
+    ![](Images/image00107.jpeg)\n\n# JavaScript String\n\nA string in JavaScript is\
+    \ an object that represents string of characters. In JavaScript, there are two\
+    \ ways to make a string:\n\n1. By string literal\n2. By string object (using `new`\
+    \ keyword)\n\n## 1) By string literal\n\nDouble quotations are used to construct\
+    \ the string literal. The following is the syntax for creating a string using\
+    \ a string literal:\n`var stringname=\"value\";`\n\n### EXAMPLE\n```javascript\n\
+    <script>\n  var str=\"This is literal\";\n  document.write(str);\n</script>\n\
+    ```\nOutput:\nThis is literal\n\n## 2) By string object (using new keyword)\n\n\
+    The following is the syntax for creating a string object with the `new` keyword:\n\
+    `var stringname=new String(\"literal\");`\nThe `new` keyword is used to create\
+    \ a string instance. Let's look at an example of using the `new` keyword in JavaScript\
+    \ to create a string.\n\n```javascript\n<script>\n  var stringname=new String(\"\
+    hello string\");\n  document.write(stringname);\n</script>\n```\nOUTPUT\nhello\
+    \ string\n\n## JavaScript String Methods\n![](Images/image00109.jpeg)\n![](Images/image00110.jpeg)\n\
+    ![](Images/image00111.jpeg)\n\n# JavaScript Date Object\n\nYou may get the year,\
+    \ month, and day using the JavaScript date object. The JavaScript date object\
+    \ can be used to display a timer on a webpage. To generate a date object, you\
+    \ can use a variety of `Date` constructors. It has methods for retrieving and\
+    \ setting the day, month, year, hour, minute, and second.\n\n## Constructor\n\n\
+    4 variant of `Date` constructor:\n1. `Date()`\n2. `Date(milliseconds)`\n3. `Date(dateString)`\n\
+    4. `Date(year, month, day, hours, seconds, milliseconds)`\n\n## JavaScript Date\
+    \ Methods\n![](Images/image00112.jpeg)\n![](Images/image00113.jpeg)\n![](Images/image00114.jpeg)\n\
+    ![](Images/image00115.jpeg)\n![](Images/image00116.jpeg)\n\n### JavaScript Date\
+    \ Example\n\n```javascript\n<script>\n  var today=new Date();\n  document.getElementById('txt').innerHTML=today;\n\
+    </script>\n```\nOUTPUT\nCurrent Date and Time: Sat Feb 12 2022 23:47:52 GMT+0530\
+    \ (India Standard Time)\n\n### EXAMPLE 2\n```javascript\n<script>\n  var date=new\
+    \ Date();\n  var day=date.getDate();\n  var month=date.getMonth()+1;\n  var year=date.getFullYear();\n\
+    \  document.write(\"<br>Date is: \"+day+\"/\"+month+\"/\"+year);\n</script>\n\
+    ```\n\n### JavaScript Current Time Example\n\n```javascript\n<script>\n  var today=new\
+    \ Date();\n  var h=today.getHours();\n  var m=today.getMinutes();\n  var s=today.getSeconds();\n\
+    \  document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s;\n</script>\n```\n\
+    \n### Digital Clock Example\n\nLet's look at a simple example of using the JavaScript\
+    \ date object to display a digital clock. In JavaScript, you can specify interval\
+    \ using the `setTimeout()` or `setInterval()` methods.\n"
+  raw: '2.  function getInfo(){  
+
+
+    3.  return "hello javatpoint! How r u?";  
+
+
+    4.  }  
+
+
+    5.  </script>  
+
+
+    6.  <script>  
+
+
+    7.  document.write(getInfo());  
+
+
+    8.  </script>
+
+
+    OUTPUT
+
+
+    hello javatpoint! How r u?
+
+
+    ## JavaScript Function Object
+
+
+    The Function function Object() { [native code] } in JavaScript is used to generate
+    a new Function object. It runs the code on a global scale. When we call the function
+    Object() { [native code] } directly, however, a function is constructed dynamically
+    but insecurely.
+
+
+    ## Syntax
+
+
+    1.  new Function ([arg1[, arg2[, ....argn]],] functionBody)  
+
+
+    ![](Images/image00094.jpeg)
+
+
+    ![](Images/image00095.jpeg)
+
+
+    ## JavaScript Function Object
+
+
+    ## Example
+
+
+    1.  <script>  
+
+
+    2.  var add=new Function("num1","num2","return num1+num2");  
+
+
+    3.  document.writeln(add(2,5));  
+
+
+    4.  </script>  
+
+
+    Output:
+
+
+    7
+
+
+    ### Example 2
+
+
+    1.  <script>  
+
+
+    2.  var pow=new Function("num1","num2","return Math.pow(num1,num2)");  
+
+
+    3.  document.writeln(pow(2,3));  
+
+
+    4.  </script>
+
+
+    Output:
+
+
+    8
+
+
+    # JavaScript Objects
+
+
+    A javaScript object is a state and behavior-based entity (properties and method).
+    For example, a car, a pen, a bicycle, a chair, a glass, a keyboard, and a monitor.
+
+
+    JavaScript is an object-oriented programming language. In JavaScript, everything
+    is an object.
+
+
+    JavaScript is a template-based language, not a class-based one. To get the object,
+    we don''t need to build a class. However, we direct the creation of objects.
+
+
+    ![](Images/image00096.jpeg)
+
+
+    ![](Images/image00097.jpeg)
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  emp={id:102,name:"Shyam Kumar",salary:40000}  
+
+
+    3.  document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+
+    4.  </script> 
+
+
+    OUTPUT
+
+
+    102 Shyam Kumar 40000
+
+
+    ![](Images/image00098.jpeg)
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var emp=new Object();  
+
+
+    3.  emp.id=101;  
+
+
+    4.  emp.name="Ravi Malik";  
+
+
+    5.  emp.salary=50000;  
+
+
+    6.  document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+
+    7.  </script>  
+
+
+    OUTPUT
+
+
+    101 Ravi 50000
+
+
+    ![](Images/image00099.jpeg)
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  function emp(id,name,salary){  
+
+
+    3.  this.id=id;  
+
+
+    4.  this.name=name;  
+
+
+    5.  this.salary=salary;  
+
+
+    6.  }  
+
+
+    7.  e=new emp(103,"Vimal Jaiswal",30000);  
+
+
+    9.  document.write(e.id+" "+e.name+" "+e.salary);  
+
+
+    10.  </script>  
+
+
+    OUTPUT
+
+
+    103 Vimal Jaiswal 30000
+
+
+    ## Defining method - JavaScript Object
+
+
+    In a JavaScript object, we can specify methods. However, before we define the
+    method, we must add a property to the function with the same name as the method.
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  function emp(id,name,salary){  
+
+
+    3.  this.id=id;  
+
+
+    4.  this.name=name;  
+
+
+    5.  this.salary=salary;  
+
+
+    7.  this.changeSalary=changeSalary;  
+
+
+    8.  function changeSalary(otherSalary){  
+
+
+    9.  this.salary=otherSalary;  
+
+
+    10.  }  
+
+
+    11.  }  
+
+
+    12.  e=new emp(103,"Sonoo Jaiswal",30000);  
+
+
+    13.  document.write(e.id+" "+e.name+" "+e.salary);  
+
+
+    14.  e.changeSalary(45000);  
+
+
+    15.  document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+
+
+    16.  </script>
+
+
+    OUTPUT
+
+
+    103 Sonoo Jaiswal 30000
+
+
+    103 Sonoo Jaiswal 45000
+
+
+    ## JavaScript Object Methods
+
+
+    ![](Images/image00100.jpeg)
+
+
+    ![](Images/image00101.jpeg)
+
+
+    ![](Images/image00102.jpeg)
+
+
+    ![](Images/image00103.jpeg)
+
+
+    # JavaScript Array
+
+
+    A JavaScript array is an object that represents a group of objects of the same
+    type.
+
+
+    In JavaScript, there are three ways to create an array.
+
+
+    1.  By array literal
+
+
+    2.  By creating instance of Array directly (using new keyword)
+
+
+    3.  By using an Array constructor (using new keyword)
+
+
+    ## 1) JavaScript array literal
+
+
+    The following is the syntax for generating an array with an array literal:
+
+
+    1.  var arrayname=[value1,value2.....valueN];  
+
+
+    Values are contained within [] and separated by, as you can see (comma).
+
+
+    Let''s have a look at a simple example of how to create and use an array in JavaScript.
+
+
+    1.  <script>  
+
+
+    2.  var emp=["Sonoo","Vimal","Ratan"];  
+
+
+    3.  for (i=0;i<emp.length;i++){  
+
+
+    4.  document.write(emp[i] + "<br/>");  
+
+
+    5.  }  
+
+
+    6.  </script>
+
+
+    Output
+
+
+    Sonoo
+
+
+    Vimal
+
+
+    Ratan
+
+
+    ## 2) JavaScript Array directly 
+
+
+    The following is the syntax for directly creating an array:
+
+
+    1.  var arrayname=new Array();  
+
+
+    In this case, the new keyword is used to create an array object.
+
+
+    Let''s look at an example of generating an array from scratch.
+
+
+    1.  <script>  
+
+
+    2.  var i;  
+
+
+    3.  var emp = new Array();  
+
+
+    4.  emp[0] = "Arun";  
+
+
+    5.  emp[1] = "Varun";  
+
+
+    6.  emp[2] = "John";  
+
+
+    8.  for (i=0;i<emp.length;i++){  
+
+
+    9.  document.write(emp[i] + "<br>");  
+
+
+    10.  }  
+
+
+    11.  </script>  
+
+
+    Output
+
+
+    Arun
+
+
+    Varun
+
+
+    John
+
+
+    ## 3) JavaScript array constructor
+
+
+    So that we don''t have to provide value explicitly, you must create an instance
+    of array by passing arguments to the function Object() { [native code] }.
+
+
+    The following is an example of using the array function Object() { [native code]
+    } to create an object.
+
+
+    1.  <script>  
+
+
+    2.  var emp=new Array("Jai","Vijay","Smith");  
+
+
+    3.  for (i=0;i<emp.length;i++){  
+
+
+    4.  document.write(emp[i] + "<br>");  
+
+
+    5.  }  
+
+
+    6.  </script> 
+
+
+    Output
+
+
+    Jai
+
+
+    Vijay
+
+
+    Smith
+
+
+    ## JavaScript Array Methods
+
+
+    ![](Images/image00104.jpeg)
+
+
+    ![](Images/image00105.jpeg)
+
+
+    ![](Images/image00106.jpeg)
+
+
+    ![](Images/image00107.jpeg)
+
+
+    ![](Images/image00108.jpeg)
+
+
+    # JavaScript String
+
+
+    A string in JavaScript is an object that represents a string of characters.
+
+
+    In JavaScript, there are two ways to make a string.
+
+
+    1.  By string literal
+
+
+    2.  By string object (using new keyword)
+
+
+    ## 1) By string literal
+
+
+    Double quotations are used to construct the string literal. The following is the
+    syntax for creating a string using a string literal:
+
+
+    1.  var stringname="string value";  
+
+
+    EXAMPLE
+
+
+    1.  <script>  
+
+
+    2.  var str="This is string literal";  
+
+
+    3.  document.write(str);  
+
+
+    4.  </script> 
+
+
+    Output:
+
+
+    This is string literal
+
+
+    ## 2) By string object (using new keyword)
+
+
+    The following is the syntax for creating a string object with the new keyword:
+
+
+    1.  var stringname=new String("string literal");  
+
+
+    The new keyword is used to create a string instance.
+
+
+    Let''s look at an example of using the new keyword in JavaScript to create a string.
+
+
+    1.  <script>  
+
+
+    2.  var stringname=new String("hello javascript string");  
+
+
+    3.  document.write(stringname);  
+
+
+    4.  </script>
+
+
+    OUTPUT
+
+
+    hello javascript string
+
+
+    ## JavaScript String Methods
+
+
+    ![](Images/image00109.jpeg)
+
+
+    ![](Images/image00110.jpeg)
+
+
+    ![](Images/image00111.jpeg)
+
+
+    # JavaScript Date Object
+
+
+    You may get the year, month, and day using the JavaScript date object. The JavaScript
+    date object can be used to display a timer on a webpage.
+
+
+    To generate a date object, you can use a variety of Date constructors. It has
+    methods for retrieving and setting the day, month, year, hour, minute, and second.
+
+
+    ## Constructor
+
+
+    4 variant of Date constructor
+
+
+    1.  Date()
+
+
+    2.  Date(milliseconds)
+
+
+    3.  Date(dateString)
+
+
+    4.  Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+
+    ## JavaScript Date Methods
+
+
+    ![](Images/image00112.jpeg)
+
+
+    ![](Images/image00113.jpeg)
+
+
+    ![](Images/image00114.jpeg)
+
+
+    ![](Images/image00115.jpeg)
+
+
+    ![](Images/image00116.jpeg)
+
+
+    ### JavaScript Date Example
+
+
+    1.  Current Date and Time: <span id="txt"></span>  
+
+
+    2.  <script>  
+
+
+    3.  var today=new Date();  
+
+
+    4.  document.getElementById(''txt'').innerHTML=today;  
+
+
+    5.  </script>
+
+
+    OUTPUT
+
+
+    Current Date and Time: Sat Feb 12 2022 23:47:52 GMT+0530 (India Standard Time)
+
+
+    EXAMPLE 2
+
+
+    1.  <script>  
+
+
+    2.  var date=new Date();  
+
+
+    3.  var day=date.getDate();  
+
+
+    4.  var month=date.getMonth()+1;  
+
+
+    5.  var year=date.getFullYear();  
+
+
+    6.  document.write("<br>Date is: "+day+"/"+month+"/"+year);  
+
+
+    7.  </script>
+
+
+    ### JavaScript Current Time Example
+
+
+    1.  Current Time: <span id="txt"></span>  
+
+
+    2.  <script>  
+
+
+    3.  var today=new Date();  
+
+
+    4.  var h=today.getHours();  
+
+
+    5.  var m=today.getMinutes();  
+
+
+    6.  var s=today.getSeconds();  
+
+
+    7.  document.getElementById(''txt'').innerHTML=h+":"+m+":"+s;  
+
+
+    8.  </script>
+
+
+    ### Digital Clock Example
+
+
+    Let''s look at a simple example of using the JavaScript date object to display
+    a digital clock.
+
+
+    In JavaScript, you can specify interval using the setTimeout() or setInterval()
+    methods.
+
+
+    EXAMPLE'
+  toc: []
+  trans: "\n\n```javascript\nfunction getInfo(){\n  return \"hello javatpoint! How\
+    \ r u?\";\n}\n</script> \n<script>\n  document.write(getInfo());\n</script>\n\
+    ```\nOUTPUT\nhello javatpoint! How r u?\n\n## JavaScript 函数对象\n\nJavaScript 中的\
+    \ `Function` `Object() { [native code] }` 用于生成新的 `Function` 对象。它在全局范围内运行代码。然而，当我们直接调用函数\
+    \ `Object() { [native code] }` 时，会动态构建一个函数，但是不安全的。\n\n## 语法\n\n`new Function ([arg1[,\
+    \ arg2[, ....argn]],] functionBody)`\n\n![](img/image00094.jpeg)\n![](img/image00095.jpeg)\n\
+    \n## JavaScript 函数对象\n\n## 示例\n\n```javascript\n<script>\n  var add=new Function(\"\
+    num1\",\"num2\",\"return num1+num2\");\n  document.writeln(add(2,5));\n</script>\n\
+    ```\nOutput:\n7\n\n### 示例 2\n\n```javascript\n<script>\n  var pow=new Function(\"\
+    num1\",\"num2\",\"return Math.pow(num1,num2)\");\n  document.writeln(pow(2,3));\n\
+    </script>\n```\nOutput:\n8\n\n# JavaScript 对象\n\nJavaScript 对象是一个基于状态和行为的实体（属性和方法）。例如，汽车、笔、自行车、椅子、玻璃杯、键盘和显示器。\n\
+    \nJavaScript 是一种面向对象的编程语言。在 JavaScript 中，一切都是对象。\n\nJavaScript 是一种基于模板的语言，而不是基于类的。获取对象时我们不需要构建类。但是，我们直接创建对象。\n\
+    \n![](img/image00096.jpeg)\n![](img/image00097.jpeg)\n\n## 示例\n\n```javascript\n\
+    <script>\n  emp={id:102,name:\"Shyam Kumar\",salary:40000}\n  document.write(emp.id+\"\
+    \ \"+emp.name+\" \"+emp.salary);\n</script>\n```\nOUTPUT\n102 Shyam Kumar 40000\n\
+    \n![](img/image00098.jpeg)\n\n## 示例\n\n```javascript\n<script>\n  var emp=new\
+    \ Object();\n  emp.id=101;\n  emp.name=\"Ravi Malik\";\n  emp.salary=50000;\n\
+    \  document.write(emp.id+\" \"+emp.name+\" \"+emp.salary);\n</script>\n```\nOUTPUT\n\
+    101 Ravi 50000\n\n![](img/image00099.jpeg)\n\n## 示例\n\n```javascript\n<script>\n\
+    \  function emp(id,name,salary){\n    this.id=id;\n    this.name=name;\n    this.salary=salary;\n\
+    \  }\n  e=new emp(103,\"Vimal Jaiswal\",30000);\n  document.write(e.id+\" \"+e.name+\"\
+    \ \"+e.salary);\n</script>\n```\nOUTPUT\n103 Vimal Jaiswal 30000\n\n## 定义方法 -\
+    \ JavaScript 对象\n\n在 JavaScript 对象中，我们可以指定方法。然而，在定义方法之前，我们必须向函数添加一个与方法同名的属性。\n\
+    \n## 示例\n\n```javascript\n<script>\n  function emp(id,name,salary){\n    this.id=id;\n\
+    \    this.name=name;\n    this.salary=salary;\n    this.changeSalary=changeSalary;\n\
+    \    function changeSalary(otherSalary){\n      this.salary=otherSalary;\n   \
+    \ }\n  }\n  e=new emp(103,\"Sonoo Jaiswal\",30000);\n  document.write(e.id+\"\
+    \ \"+e.name+\" \"+e.salary);\n  e.changeSalary(45000);\n  document.write(\"<br>\"\
+    +e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n```\nOUTPUT\n103 Sonoo Jaiswal\
+    \ 30000\n103 Sonoo Jaiswal 45000\n\n## JavaScript 对象方法\n![](img/image00100.jpeg)\n\
+    ![](img/image00101.jpeg)\n![](img/image00102.jpeg)\n![](img/image00103.jpeg)\n\
+    \n# JavaScript 数组\n\nJavaScript 数组是一个表示相同类型对象组的对象。在 JavaScript 中，创建三种数组的方法：\n\n\
+    1. 通过数组字面量\n2. 直接创建 `Array` 实例（使用 `new` 关键字）\n3. 通过使用 `Array` 构造函数（使用 `new` 关键字）\n\
+    \n## 1) JavaScript 数组字面量\n\n以下是使用数组字面量生成数组的语法：\n`var arrayname=[value1,value2.....valueN];`\n\
+    值包含在 `[]` 中并用逗号分隔。让我们来看一个 JavaScript 中创建和使用数组的简单示例。\n\n```javascript\n<script>\n\
+    \  var emp=[\"Sonoo\",\"Vimal\",\"atan\"];\n  for(i=0;i<emp.length;i++){\n   \
+    \ document.write(emp[i]+\"<br/>\n  }\n</script>\n```\nOutput\nSonoo\nVimal\natan\n\
+    \n## 2) JavaScript 直接创建数组\n\n以下是创建数组的语法：\n`var arrayname=new Array();`\n在这种情况下，使用\
+    \ `new` 关键字创建日期对象。让我们看看使用 `new` 关键字创建数组的示例。\n\n```javascript\n<script>\n  var\
+    \ i;\n  var emp=new Array();\n  emp[0]=\"Arun\";\n  emp[1]=\"Varun\";\n  emp[2]=\"\
+    John\";\n  for(i=0;i<emp.length;i++){\n    document.write(emp[i]+\"<br>\");\n\
+    \  }\n</script>\n```\nOutput\nArun\nVarun\nJohn\n\n## 3) JavaScript 构造函数\n\n这样我们通过传递参数给\
+    \ `Array()` 来创建数组。\n\n```javascript\n<script>\n  var i;\n  var emp=new Array(\"\
+    Jai\",\"Smith\");\n  for(i=0;i<emp.length;i++){\n    document.write(emp[i]+\"\
+    br>\");\n  }\n</script>\n```\nOutput\nJai\nSmith\n\n## JavaScript 数组方法\n![](img/image00104.jpeg)\n\
+    ![](img/image00105.jpeg)\n![](img/image00106.jpeg)\n\n# JavaScript 字符串\n\nJavaScript\
+    \ 字符串是表示字符的对象。在 JavaScript 中，有两种方法可以制作字符串：\n\n1. 字符串字面量\n2. 字符串对象（使用 `new` 关键字）\n\
+    \n## 1) 字符串字面量\n\n以下是使用字符串字面量生成字符串的语法：\n`var stringname=\"value\";`\n值包含在双引号中。让我们来看一个\
+    \ JavaScript 中创建和使用字符串的简单示例。\n\n```javascript\n<script>\n  var str=\"This is\"\
+    ;\n  document.write(str);\n</script>\n```\nOutput\nThis is\n\n## 2) 字符串对象（使用 `new`\
+    \ 关键字）\n\n以下是使用 `new` 关键字创建字符串的语法：\n`var stringname=new String(\"value\");`\n\
+    `new` 关键字用于创建字符串实例。让我们看看使用 `new` 关键字创建字符串的示例。\n\n```javascript\n<script>\n  var\
+    \ str=new String(\"hello string\");\n  document.write(str);\n</script>\n```\n\
+    Output\nhello string\n\n## JavaScript 字符串方法\n![](img/image00107.jpeg)\n![](img/image00108.jpeg)\n\
+    \n# JavaScript Date 对象\n\n你可以使用 Date 对象获取年份、月份和日期。Date 对象可以用于在网页上显示计时器。要生成日期对象，你可以使用多种\
+    \ `Date` 构造函数。它具有获取和设置日、月、年、小时、分和秒的方法。\n\n## 构造函数\n\n`Date` 构造函数的 4 种变：\n1. `Date()`\n\
+    2. `Date(milliseconds)`\n3. `Date(dateString)`\n4. `Date(year, month, day, hours,\
+    \ seconds, milliseconds)`\n\n## JavaScript Date 方法\n![](img/image00109.jpeg)\n\
+    ![](img/image00110.jpeg)\n![](img/image00111.jpeg)\n\n### JavaScript Date 示例\n\
+    \n```javascript\n<script>\n  var today=new Date();\n  document.getElementById('txt').innerHTML=today;\n\
+    </script>\n```\nOUTPUT\nCurrent Date and Time: Sat Feb 12 2022 23:47:52 GMT+0530\
+    \ (India Standard Time)\n\n### 示例 2\n\n```javascript\n<script>\n  var date=new\
+    \ Date();\n  var day=date.getDate();\n  var month=date.getMonth()+1;\n  var year=date.getFullYear();\n\
+    \  document.write(\"<br>Date is: \"+day+\"/\"+month+\"/\"+year);\n</script>\n\
+    ```\n\n### JavaScript 当前时间示例\n\n```javascript\n<script>\n  var today=new Date();\n\
+    \  var h=today.getHours();\n  var m=today.getMinutes();\n  var s=today.getSeconds();\n\
+    \  document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s;\n</script>\n```\n\
+    \n### 数字时钟示例\n\n让我们来看一个使用 JavaScript 日对象显示数字时钟的简单示例。在 JavaScript 中，你可以使用 `setTimeout()`\
+    \ 或 `setInterval()` 方法来指定间隔。\n\n"
+- fmt: "\n1. Current Time: <span id=\"txt\"></span>\n\n```javascript\n<script>\n \
+    \ window.onload=function(){getTime();}\n  function getTime(){\n  var today=new\
+    \ Date();\n  var h=today.getHours();\n  var m=today.getMinutes();\n  var s=today.getSeconds();\n\
+    \  // add a zero in front of numbers<10 \n  m=checkTime(m);\n  s=checkTime(s);\n\
+    \  document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s;\n  setTimeout(function(){getTime()},1000);\n\
+    }\n//setInterval(\"getTime()\",1000);//another way\nfunction checkTime(i){\n \
+    \ if (i<10){\n    i=\"0\" + i;\n  }\n  return i;\n}\n</script>\n```\n\n# JavaScript\
+    \ Math\n\nTo conduct mathematical operations, the JavaScript math object exposes\
+    \ various constants and methods. It does not have constructors, unlike the date\
+    \ object.\n\n## JavaScript Math Methods\n\n![](Images/image00117.jpeg)\n![](Images/image00118.jpeg)\n\
+    ![](Images/image00119.jpeg)\n\n## Math.sqrt(n)\n\nThe square root of a number\
+    \ is returned by the JavaScript `math.sqrt(n)` method.\n\n1. Square Root of 17\
+    \ is: <span id=\"p1\"></span>\n\n```javascript\n<script>\n  document.getElementById('p1').innerHTML=Math.sqrt(17);\n\
+    </script>\n```\n\nOutput:\nSquare Root of 17 is: 4.123105625617661\n\n## Math.random()\n\
+    \nThe `math.random()` method in JavaScript returns a random number between 0 and\
+    \ 1.\n\n1. Random Number is: <span id=\"p2\"></span>\n\n```javascript\n<script>\n\
+    \  document.getElementById('p2').innerHTML=Math.random();\n</script>\n```\n\n\
+    Output:\nRandom Number is: 0.02157876559753591\n\n## Math.pow(m,n)\n\n1. 3 to\
+    \ the power of 4 is: <span id=\"p3\"></span>\n\n```javascript\n<script>\n  document.getElementById('p3').innerHTML=Math.pow(3,4);\n\
+    </script>\n```\n\nOutput:\n3 to the power of 4 is: 81\n\n## Math.floor(n)\n\n\
+    The JavaScript `math.floor(n)` method returns the number's lowest integer. For\
+    \ instance, 3 for 3.7, 5 for 5.9, and so on.\n\n1. Floor of 4.6 is: <span id=\"\
+    p4\"></span>\n\n```javascript\n<script>\n  document.getElementById('p4').innerHTML=Math.floor(4.6);\n\
+    </script>\n```\n\nOutput:\nFloor of 4.6 is: 4\n\n## Math.ceil(n)\n\nThe `math.ceil(n)`\
+    \ method in JavaScript returns the largest integer for a given value. For instance,\
+    \ 4 for 3.7, 6 for 5.9, and so on.\n\n1. Ceil of 4.6 is: <span id=\"p5\"></span>\n\
+    \n```javascript\n<script>\n  document.getElementById('p5').innerHTML=Math.ceil(4.6);\n\
+    </script>\n```\n\nOutput:\nCeil of 4.6 is: 5\n\n## Math.round(n)\n\nThe math in\
+    \ JavaScript. The `round(n)` method gives the nearest rounded integer for a supplied\
+    \ number. If the fractional component is equal to or higher than 0.5, it is assigned\
+    \ to the upper value 1; otherwise, it is assigned to the lower value 0. For instance,\
+    \ 4 for 3.7, 3 for 3.3, 6 for 5.9, and so on.\n\n1. Round of 4.3 is: <span id=\"\
+    p6\"></span><br>\n2. Round of 4.7 is: <span id=\"p7\"></span>\n\n```javascript\n\
+    <script>\n  document.getElementById('p6').innerHTML=Math.round(4.3);\n  document.getElementById('p7').innerHTML=Math.round(4.7);\n\
+    </script>\n```\n\nOutput:\nRound of 4.3 is: 4\nRound of 4.7 is: 5\n\n# JavaScript\
+    \ Number Object\n\nYou can represent a numeric value with the JavaScript number\
+    \ object. It could be either an integer or a floating-point number. The IEEE standard\
+    \ for representing floating-point numbers is followed by the JavaScript number\
+    \ object.\n\nIn JavaScript, you can make a number object with the `Number()` function\
+    \ Object() { [native code] }. Consider the following scenario:\n\n1. `var n=new\
+    \ Number(value);`\n\nIf the value cannot be converted to a number, it returns\
+    \ `NaN` (Not a Number), which the `isNaN()` method can validate.\n\nYou can also\
+    \ assign a number directly to a variable. Consider the following scenario:\n\n\
+    1. `var x=102;//integer value`\n2. `var y=102.7;//floating point value`\n3. `var\
+    \ z=13e4;//exponent value, output: 130000`\n4. `var n=new Number(16);//integer\
+    \ value by number object`\n\nOutput:\n102 102.7 130000 16\n\n## JavaScript Number\
+    \ Constants\n\n![](Images/image00120.jpeg)\n\n## JavaScript Number Methods\n\n\
+    ![](Images/image00121.jpeg)\n\n# JavaScript Boolean\n\nA Boolean object in JavaScript\
+    \ represents a value in one of two states: true or false. The `Boolean()` function\
+    \ Object() { [native code] } in JavaScript can be used to build a JavaScript Boolean\
+    \ object, as seen below.\n\n1. `Boolean b=new Boolean(value);`\n\n## JavaScript\
+    \ Boolean Example\n\n```javascript\n<script>\n  document.write(10<20);//true\n\
+    \  document.write(10<5);//false\n</script>\n```\n\n## Boolean Properties\n\n![](Images/image00122.jpeg)\n\
+    \n## Boolean Methods\n\n![](Images/image00123.jpeg)\n"
+  raw: '1.  Current Time: <span id="txt"></span>  
+
+
+    2.  <script>  
+
+
+    3.  window.onload=function(){getTime();}  
+
+
+    4.  function getTime(){  
+
+
+    5.  var today=new Date();  
+
+
+    6.  var h=today.getHours();  
+
+
+    7.  var m=today.getMinutes();  
+
+
+    8.  var s=today.getSeconds();  
+
+
+    9.  // add a zero in front of numbers<10  
+
+
+    10.  m=checkTime(m);  
+
+
+    11.  s=checkTime(s);  
+
+
+    12.  document.getElementById(''txt'').innerHTML=h+":"+m+":"+s;  
+
+
+    13.  setTimeout(function(){getTime()},1000);  
+
+
+    14.  }  
+
+
+    15.  //setInterval("getTime()",1000);//another way  
+
+
+    16.  function checkTime(i){  
+
+
+    17.  if (i<10){  
+
+
+    18.  i="0" + i;  
+
+
+    19.  }  
+
+
+    20.  return i;  
+
+
+    21.  }  
+
+
+    22.  </script>  
+
+
+    # JavaScript Math
+
+
+    To conduct mathematical operations, the JavaScript math object exposes various
+    constants and methods. It does not have constructors, unlike the date object.
+
+
+    ## JavaScript Math Methods
+
+
+    ![](Images/image00117.jpeg)
+
+
+    ![](Images/image00118.jpeg)
+
+
+    ![](Images/image00119.jpeg)
+
+
+    ## Math.sqrt(n)
+
+
+    The square root of a number is returned by the JavaScript math.sqrt(n) method.
+
+
+    1.  Square Root of 17 is: <span id="p1"></span>    
+
+
+    2.  <script>    
+
+
+    3.  document.getElementById(''p1'').innerHTML=Math.sqrt(17);    
+
+
+    4.  </script>  
+
+
+    Output:
+
+
+    Square Root of 17 is: 4.123105625617661
+
+
+    ## Math.random()
+
+
+    The math.random() method in JavaScript returns a random number between 0 and 1.
+
+
+    1.  Random Number is: <span id="p2"></span>    
+
+
+    2.  <script>    
+
+
+    3.  document.getElementById(''p2'').innerHTML=Math.random();    
+
+
+    4.  </script> 
+
+
+    Output:
+
+
+    Random Number is: 0.02157876559753591
+
+
+    ## Math.pow(m,n)
+
+
+    1.  3 to the power of 4 is: <span id="p3"></span>    
+
+
+    2.  <script>    
+
+
+    3.  document.getElementById(''p3'').innerHTML=Math.pow(3,4);    
+
+
+    4.  </script>
+
+
+    Output:
+
+
+    3 to the power of 4 is: 81
+
+
+    ## Math.floor(n)
+
+
+    The JavaScript math.floor(n) method returns the number''s lowest integer. For
+    instance, 3 for 3.7, 5 for 5.9, and so on.
+
+
+    1.  Floor of 4.6 is: <span id="p4"></span>    
+
+
+    2.  <script>    
+
+
+    3.  document.getElementById(''p4'').innerHTML=Math.floor(4.6);    
+
+
+    4.  </script>  
+
+
+    Output:
+
+
+    Floor of 4.6 is: 4
+
+
+    ## Math.ceil(n)
+
+
+    The math.ceil(n) method in JavaScript returns the largest integer for a given
+    value. For instance, 4 for 3.7, 6 for 5.9, and so on.
+
+
+    1.  Ceil of 4.6 is: <span id="p5"></span>    
+
+
+    2.  <script>    
+
+
+    3.  document.getElementById(''p5'').innerHTML=Math.ceil(4.6);    
+
+
+    4.  </script> 
+
+
+    Output:
+
+
+    Ceil of 4.6 is: 5
+
+
+    ## Math.round(n)
+
+
+    The math in JavaScript. The round(n) method gives the nearest rounded integer
+    for a supplied number. If the fractional component is equal to or higher than
+    0.5, it is assigned to the upper value 1; otherwise, it is assigned to the lower
+    value 0\. For instance, 4 for 3.7, 3 for 3.3, 6 for 5.9, and so on.
+
+
+    1.  Round of 4.3 is: <span id="p6"></span><br>    
+
+
+    2.  Round of 4.7 is: <span id="p7"></span>    
+
+
+    3.  <script>    
+
+
+    4.  document.getElementById(''p6'').innerHTML=Math.round(4.3);   
+
+
+    5.  document.getElementById(''p7'').innerHTML=Math.round(4.7);    
+
+
+    6.  </script>   
+
+
+    Output:
+
+
+    Round of 4.3 is: 4
+
+
+    Round of 4.7 is: 5
+
+
+    # JavaScript Number Object
+
+
+    You can represent a numeric value with the JavaScript number object. It could
+    be either an integer or a floating-point number. The IEEE standard for representing
+    floating-point numbers is followed by the JavaScript number object.
+
+
+    In JavaScript, you can make a number object with the Number() function Object()
+    { [native code] }. Consider the following scenario:
+
+
+    1.  var n=new Number(value);  
+
+
+    If the value cannot be converted to a number, it returns NaN (Not a Number), which
+    the isNaN() method can validate.
+
+
+    You can also assign a number directly to a variable. Consider the following scenario:
+
+
+    1.  var x=102;//integer value  
+
+
+    2.  var y=102.7;//floating point value  
+
+
+    3.  var z=13e4;//exponent value, output: 130000  
+
+
+    4.  var n=new Number(16);//integer value by number object  
+
+
+    Output:
+
+
+    102 102.7 130000 16
+
+
+    ## JavaScript Number Constants
+
+
+    ![](Images/image00120.jpeg)
+
+
+    ## JavaScript Number Methods
+
+
+    ![](Images/image00121.jpeg)
+
+
+    # JavaScript Boolean
+
+
+    A Boolean object in JavaScript represents a value in one of two states: true or
+    false. The Boolean() function Object() { [native code] } in JavaScript can be
+    used to build a JavaScript Boolean object, as seen below.
+
+
+    1.  Boolean b=new Boolean(value);  
+
+
+    ## JavaScript Boolean Example
+
+
+    1.  <script>  
+
+
+    2.  document.write(10<20);//true  
+
+
+    3.  document.write(10<5);//false  
+
+
+    4.  </script>
+
+
+    ## Boolean Properties
+
+
+    ![](Images/image00122.jpeg)
+
+
+    ## Boolean Methods
+
+
+    ![](Images/image00123.jpeg)'
+  toc: []
+  trans: "\n\n1. 当前时间：<span id=\"txt\"></span>\n\n```javascript\n<script>\n  window.onload=function(){getTime();}\n\
+    \  function getTime(){\n  var today=new Date();\n  var h=today.getHours();\n \
+    \ var m=today.getMinutes();\n  var s=today.getSeconds();\n  // add a zero in front\
+    \ of numbers<10 \n  m=checkTime(m);\n  s=checkTime(s);\n  document.getElementById('txt').innerHTML=h+\"\
+    :\"+m+\":\"+s;\n  setTimeout(function(){getTime()},1000);\n}\n//setInterval(\"\
+    getTime()\",1000);//another way\nfunction checkTime(i){\n  if (i<10){\n    i=\"\
+    0\" + i;\n  }\n  return i;\n}\n</script>\n```\n\n# JavaScript 数学\n\n为了进行数学运算，JavaScript\
+    \ math 对象暴露了各种常量和方法。与 date 对象不同，它没有构造函数。\n\n## JavaScript 数学方法\n\n![](img/image00117.jpeg)\n\
+    ![](img/image00118.jpeg)\n![](img/image00119.jpeg)\n\n## Math.sqrt(n)\n\nJavaScript\
+    \ `math.sqrt(n)` 方法返回数字的平方根。\n\n1. 17 的平方根是：<span id=\"p1\"></span>\n\n```javascript\n\
+    <script>\n  document.getElementById('p1').innerHTML=Math.sqrt(17);\n</script>\n\
+    ```\n\n输出：\n17 的平方根是：4.123105625617661\n\n## Math.random()\n\nJavaScript 中的 `math.random()`\
+    \ 方法返回一个 0 到 1 之间的随机数。\n\n1. 随机数是：<span id=\"p2\"></span>\n\n```javascript\n<script>\n\
+    \  document.getElementById('p2').innerHTML=Math.random();\n</script>\n```\n\n\
+    输出：\n随机数是：0.02157876559753591\n\n## Math.pow(m,n)\n\n1. 3 的 4 次方是：<span id=\"\
+    p3\"></span>\n\n```javascript\n<script>\n  document.getElementById('p3').innerHTML=Math.pow(3,4);\n\
+    </script>\n```\n\n输出：\n3 的 4 次方是：81\n\n## Math.floor(n)\n\nJavaScript `math.floor(n)`\
+    \ 方法返回数字的最小整数。例如，3.7 返回 3，5.9 返回 5，以此此类推。\n\n1. 4.6 的取整是：<span id=\"p4\"></span>\n\
+    \n```javascript\n<script>\n  document.getElementById('p4').innerHTML=Math.floor(4.6);\n\
+    </script>\n```\n\n输出：\n4.6 的取整是：4\n\n## Math.ceil(n)\n\nJavaScript `math.ceil(n)`\
+    \ 方法返回给定值的最大整数。例如，3.7 返回 4，5.9 返回 6，以此此类推。\n\n1. 4.6 的向上取整是：<span id=\"p5\"></span>\n\
+    \n```javascript\n<script>\n  document.getElementById('p5').innerHTML=Math.ceil(4.6);\n\
+    </script>\n```\n\n输出：\n4.6 的向上取整是：5\n\n## Math.round(n)\n\nJavaScript 中的数学运算。`round(n)`\
+    \ 方法为提供的数字提供最近的四舍五入整数。如果小数部分大于或等于 0.5，则赋值为较大的值 1；否则赋值为较小的值 0。例如，3.7 返回 4，3.3 返回\
+    \ 3，5.9 返回 6，以此此类推。\n\n1. 4.3 的四舍五入是：<span id=\"p6\"></span><br>\n2. 4.7 的四舍五入是：<span\
+    \ id=\"p7\"></span>\n\n```javascript\n<script>\n  document.getElementById('p6').innerHTML=Math.round(4.3);\n\
+    \  document.getElementById('p7').innerHTML=Math.round(4.7);\n</script>\n```\n\n\
+    输出：\n4.3 的四舍五入是：4\n4.7 的四舍五入是：5\n\n# JavaScript Number 对象\n\n你可以使用 JavaScript\
+    \ number 对象表示数值。它可以是整数或浮点数。JavaScript number 对象遵循表示浮点数的 IEEE 标准。\n\n在 JavaScript\
+    \ 中，你可以使用 `Number()` 函数创建数字对象 Object() { [native code] }。考虑以下场景：\n\n1. `var n=new\
+    \ Number(value);`\n\n如果该值无法转换为数字，它将返回 `NaN`（不是数字），可以使用 `isNaN()` 方法进行验证。\n\n你也可以直接将数字赋值给变量。考虑以下场景：\n\
+    \n1. `var x=102;//整数值`\n2. `var y=102.7;//浮点数值`\n3. `var z=13e4;//指数值，输出：130000`\n\
+    4. `var n=new Number(16);//通过数字对象的整数值`\n\n输出：\n102 102.7 130000 16\n\n## JavaScript\
+    \ Number 常数\n\n![](img/image00120.jpeg)\n\n## JavaScript Number 方法\n\n![](img/image00121.jpeg)\n\
+    \n# JavaScript 布尔\n\nJavaScript 中的 Boolean 对象表示两种状态之一的值：真（true）或假（false）。JavaScript\
+    \ 中的 `Boolean()` 函数 Object() { [native code] } 可用于构建 JavaScript 布尔对象，如下所示：\n\n\
+    1. `Boolean b=new Boolean(value);`\n\n## JavaScript 布尔示例\n\n```javascript\n<script>\n\
+    \  document.write(10<20);//true\n  document.write(10<5);//false\n</script>\n```\n\
+    \n## 布尔属性\n\n![](img/image00122.jpeg)\n\n## 布尔方法\n\n![](img/image00123.jpeg)\n\
+    \n"

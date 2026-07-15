@@ -1,0 +1,715 @@
+# JAVASCRIPT 编码练习：初学者编码指南
+
+
+
+![](img/image_rsrcWT.jpg)
+
+
+
+
+
+
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript current day and time</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+console.log("Today is : " + daylist[day] + ".");
+var hour = today.getHours();
+var minute = today.getMinutes();
+var second = today.getSeconds();
+var prepand = (hour >= 12)? " PM ":" AM ";
+hour = (hour >= 12)? hour - 12: hour;
+if (hour===0 && prepand===' PM '){
+if (minute===0 && second===0){
+hour=12;
+prepand=' Noon';
+}else{
+hour=12;
+prepand=' PM';
+}
+}
+if (hour===0 && prepand===' AM '){
+if (minute===0 && second===0){
+hour=12;
+prepand=' Midnight';
+}else{
+hour=12;
+prepand=' AM';
+}
+}
+console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+```
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Print the current page.</title>
+</head>
+<body>
+<p></p>
+<p>Click the button to print the current page.</p>
+<button onclick="print_current_page()">Print this page</button>
+</body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function print_current_page(){
+window.print();
+}
+```
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Write a JavaScript program to get the current date.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+if(dd<10){
+dd='0'+dd;
+}
+if(mm<10){
+mm='0'+mm;
+}
+today = mm+'-'+dd+'-'+yyyy;
+console.log(today);
+today = mm+'/'+dd+'/'+yyyy;
+console.log(today);
+today = dd+'-'+mm+'-'+yyyy;
+console.log(today);
+today = dd+'/'+mm+'/'+yyyy;
+console.log(today);
+```
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>The area of a triangle</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+var side1 = 5;
+var side2 = 6;
+var side3 = 7;
+var s = (side1 + side2 + side3)/2;
+var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+console.log(area);
+```
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Find Leap Year</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function leapyear(year){
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+console.log(leapyear(2016));
+console.log(leapyear(2000));
+console.log(leapyear(1700));
+console.log(leapyear(1800));
+console.log(leapyear(100));
+```
+输出:
+truefalsefalsefalse
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript program to calculate multiplication and division of two numbers </title>
+<style type="text/css">
+body {margin: 30px;}
+</style>
+</head>
+<body>
+<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id="result"></span></p>
+</body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function multiplyBy(){
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 * num2;
+}
+function divideBy(){
+num1 = document.getElementById("firstNumber").value;
+num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+```
+输出:
+image_rsrc.jpg
+
+
+JAVASCRIPT 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function cToF(celsius){
+var cTemp = celsius;
+var cToFahr = cTemp * 9 / 5 + 32;
+var message = cTemp+'°C is ' + cToFahr + '°F.';
+console.log(message);
+}
+function fToC(fahrenheit){
+var fTemp = fahrenheit ;
+var fToCel = (fTemp - 32) * 5 / 9;
+var message = fTemp+'°F is ' + fToCel + '°C.';
+console.log(message);
+}
+cToF(60);
+fToC(45);
+```
+输出:
+60°C is 140 °F.
+45°F is 7.2°C.
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to find the largest of three integers.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function max_of_three(x, y, z){
+max_val = 0;
+if (x > y){
+max_val = x;
+} else{
+max_val = y;
+}
+if (z > max_val){
+max_val = z;
+}
+return max_val;
+}
+console.log(max_of_three(1,0,1));
+console.log(max_of_three(0,-10,-20));
+console.log(max_of_three(100,5,10));
+```
+输出:
+100
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to reverse a given string.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function string_reverse(str){
+return str.split("").reverse().join("");
+}
+console.log(string_reverse("js"));
+console.log(string_reverse("www"));
+console.log(string_reverse("JavaScript"));
+```
+输出:
+sj
+www
+irc
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to replace every character in a given string with the character following it in the alphabet.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function string_reverse(str)
+function LetterChanges(text){
+var s = text.split('');
+for (var i = 0; i < s.length; i++) {
+// 撒撒密码
+switch(s[i]) {
+case ' ':break;
+case 'z':
+s[i] = 'a';
+break;
+case 'Z':
+s[i] = 'A';
+break;
+// 大写
+switch(s[i]) {
+case 'a': case 'e': case 'i': case 'o': case 'u':
+s[i] = s[i].toUpperCase();
+}
+}
+return s.join('');
+}
+console.log(LetterChanges("W"));
+console.log(LetterChanges("php"));
+```
+输出:
+QIPOX
+Sq
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to capitalize the first letter of each word of given string.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function capital_letter(str){
+str = str.split(" ");
+for (var i = 0, x = str.length; i < x; i++) {
+str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+}
+return str.join(" ");
+}
+console.log(capital_letter("Write a JavaScript program to capitalize the first letter of word given string."));
+```
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to convert a given number to hours and minutes.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function time_convert(num){
+var hours = Math.floor(num / 60);
+var minutes = num % 60;
+return hours + ":" + minutes;
+}
+console.log(time_convert(7));
+console.log(time_convert(45));
+console.log(time_convert(144));
+```
+输出:
+0:7
+0:45
+2:24
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to count the number of vowels in a given string.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function vowel_Count(str){
+return str.replace(/[^aeiou]/g, "").length;
+}
+console.log(vowel_Count("Python"));
+console.log(vowel_Count("html.com"));
+```
+输出:
+15
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to create a new string without the first and last character.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function without_first_end(str){
+return str.substring(1, str.length - 1);
+}
+console.log(without_first_end('JavaScript'));
+console.log(without_first_end('JS'));
+console.log(without_first_end('PHP'));
+```
+输出:
+avaScrip
+H
+ava
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to concatenate two strings except their first character.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function concatenate(str1, str2){
+str1 = str1.substring(1, str.length);
+str2 = str2.substring(1, str.length);
+return str1 + str2;
+}
+console.log(concatenate("PHP","JS"));
+console.log(concatenate("A","B"));
+console.log(concatenate("AA","BB"));
+```
+输出:
+HPSAB
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to move last three character to the start of a given string. The string length must be 3.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+if (str.length > 1){
+return str.slice(-3) + str.slice(0, -3);
+}
+return str;
+}
+console.log(right_three("Python"));
+console.log(right_three("JavaScript"));
+console.log(right_three("Hi"));
+```
+输出:
+honPytiptJavaScrHi
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to compute the sum of three elements of an given integers of length 3.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function sum_three(nums){
+return nums[0] + nums[1] + nums[2];
+}
+console.log(sum_three([10, 32, 20]));
+console.log(sum_three([5, 7, 9]));
+console.log(sum_three([0, 8, -11]));
+```
+输出:
+6221-3
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to add two digits of a positive integer of length two.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function add_two_digits(n){
+return n % 10 + Math.floor(n / 10);
+}
+console.log(add_two_digits(25));
+console.log(add_two_digits(50));
+```
+输出:
+75
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Find Leap Year</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function leapyear(year){
+return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+console.log(leapyear(2016));
+console.log(leapyear(2000));
+console.log(leapyear(1700));
+console.log(leapyear(1800));
+console.log(leapyear(100));
+```
+输出:
+truefalsefalsefalse
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to check whether a given number is a multiple of 3 or a 7.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function test37(x){
+if (x % 3 == 0 || x % 7 == 0){
+return true;}else {
+return false;}
+}
+console.log(test37(12));
+console.log(test37(45));
+console.log(test37(10));
+```
+输出:
+trueetruefalse
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to check whether a string starts with 'Java' and false.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function start_spec_str(str){
+if (str.length < 4){
+return false;}front = str.substring(0, 4);
+if (front == 'Java'){
+return true;}else{
+return false;}
+}
+console.log(start_spec_str("JavaScript"));
+console.log(start_spec_str("W"));
+console.log(start_spec_str("php"));
+```
+输出:
+true
+false
+
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to check whether two given integer values are in the range 50..99 (inclusive). Return true if either of them are in the said range.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function check_numbers(x, y){
+if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)){
+return true;}else e{
+return false;}
+}
+console.log(check_numbers(12, 101));
+console.log(check_numbers(52, 80));
+console.log(check_numbers(15, 99));
+```
+输出:
+falsetruetrue
+## 寻找接近 100 的值
+
+HTML 代码
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device">
+<title>JavaScript program to find a value which is nearest to 100 from two different given integer values.</title>
+</head>
+<body></body>
+</html>
+```
+
+JAVASCRIPT 代码
+```javascript
+function near_100(x, y) {
+if (x != y){
+x1 = Math.abs(x - 100);
+y1 = Math.abs(y - 100);
+if (x1 < y1){
+return x;
+}
+if (y1 < x1){
+return y;
+}
+return 0;}elsereturn false;
+}
+console.log(near_100(90, 89));
+console.log(near_100(-90, -89));
+console.log(near_100(90, 90));
+```
+输出:
+90
+-89
+false
+

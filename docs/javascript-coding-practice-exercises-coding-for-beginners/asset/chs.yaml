@@ -1,0 +1,146 @@
+- "# JAVASCRIPT 编码实践练习：初学者编码指南\n\n\n\n![](img/cover.jpeg)\n\n\n## 目录\n- [JavaScript:\
+  \ 查找第一个不重复的字符]\n- [JavaScript: 查找字符串中最长的单词]\n- [JavaScript: 统计字符串中元音的数量]\n- [JavaScript:\
+  \ 检查数字是否为质数]\n- [JavaScript: 获取数据类型]\n- [JavaScript: 查找数组中的第二小和第二大\n- [计算乘法和除法]\n\
+  - [转换温度]\n- [寻找最大值]\n- [反转给定字符串]\n- [替换每个字符]\n- [创建一个新字符串]\n- [拼接两个字符串]\n- [移动最后三个字符]\n\
+  - [计算和]\n- [相两个数字]\n- [检查给定年份是否为闰年]\n- [检查给定的正数]\n- [检查字符串是否以'Java' 开头]\n- [检查两个给定的整数值]\n\
+  - [查找接近 100 的数值]\n\n# JavaScript 函数 – 练习题\n\n## JavaScript: 查找第一个不重复的字符\n示例参数：`'abacddbec'`\n\
+  预期输出：`'e'`\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+  utf-8\">\n  <title>查找第一个不重复的字符。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\
+  \n### JAVASCRIPT 代码\n```javascript\nfunction find_FirstNotRepeatedChar(str) {\n\
+  \  var arra1 = str.split('');\n  var result = '';\n  var ctr = 0;\n  for (var x\
+  \ = 0; x < arra1.length; x++) {\n    ctr = 0;\n    for (var y = 0; y < arra1.length;\
+  \ y++) {\n      if (arra1[x] === arra1[y]) {\n        ctr+= 1;\n      }\n    }\n\
+  \    if (ctr < 2) {\n      result = arra1[x];\n      break;\n    }\n  }\n  return\
+  \ result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n```\n\n### 输出\n\
+  `e`\n\n### 流程图\n![](img/Image00000.jpg)\n\n## JavaScript: 查找字符串中最长的单词\n示例字符串：`'Web\
+  \ Development Tutorial'`\n预期输出：`'Development'`\n\n### HTML 代码\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>查找字符串中最长的单词</title>\n</head>\n\
+  <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction find_longest_word(str)\
+  \ {\n  var array1 = str.match(/\\w[a-z]{0,}/gi);\n  var result = array1[0];\n  for(var\
+  \ x = 1 ; x < array1.length ; x++) {\n    if(result.length < array1[x].length) {\n\
+  \      result = array1[x];\n    }\n  }\n  return result;\n}\nconsole.log(find_longest_word('Web\
+  \ Development Tutorial'));\n```\n\n### 输出\n`Development`\n\n### 解析\n假设 `str` 等于\
+  \ `'Web Development Tutorial'`。当字符串与正则表达式进行匹配时，使用 `match()` 方法获取匹配项。作为 `str.match(/w[a-z]{0,}/gi)`\
+  \ 的结果，返回了 `[\"Web\", \"Development\", \"Tutorial\"]`。`for` 循环将每个数组元素的 `length` 与前一个元素进行比较，并返回最长的字符串。`length`\
+  \ 属性是一个整数，始终大于数组的索引。\n语法：`arr.length`\n\n### 流程图\n![](img/Image0001.jpg)\n\n## JavaScript:\
+  \ 统计字符串中元音的数量\n示例字符串：`'The quick fox'`\n预期输出：`5`\n\n### HTML 代码\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>统计字符串中元音的数量</title>\n</head>\n\
+  <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction vowel_count(str1)\
+  \ {\n  var vowel_list = 'aeiouIOU';\n  var vcount = 0;\n  for(var x = 0; x < str1.length;\
+  \ x++) {\n    if (vowel_list.indexOf(str1[x]) !== -1) {\n      vcount += 1;\n  \
+  \  }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"The quick fox\"));\n```\n\
+  \n### 输出\n`5`\n\n### 解析\n`indexOf()` 方法返回调用 String 对象中定义的指定值第一次出现的位置，从 `fromIndex`\
+  \ 开始。如果找不到该值，则返回 `-1`。\n语法：`str.indexOf(searchValue[, fromIndex])`\n参数：\n- `searchValue`:\
+  \ 代表要查找的值的字符串。\n- `fromIndex`（可选）：字符串搜索开始的索引。可以使用任何整数。\n如果满足条件 `vowel_list.indexOf(str1[x])!==\
+  \ -1`，则字符串中的字符将被计数为元音。\n\n### 流程图\n![](img/Image0002.jpg)\n\n## JavaScript: 检查数字是否为质数\n\
+  ![](img/Image0003.jpg)\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <meta charset=utf-8 />\n<title>检查数字是否为质数</title>\n</head>\n<body>\n</body>\n</html>\n\
+  ```\n\n### JAVASCRIPT 代码\n```javascript\nfunction test_prime(n) {\n  if (n===1)\
+  \ {\n    return false;\n  } else if(n === 2) {\n    return true;\n  }else {\n  \
+  \  for(var x = 2; x < n; x++) {\n      if(n % x === 0) {\n        return false;\n\
+  \      }\n    }\n    return true;\n  }\n}\nconsole.log(test_prime(37));\n```\n\n\
+  ### 输出\n`True`\n\n 流程图\n![](img/Image0004.jpg)\n\n## JavaScript: 获取数据类型\n我们将创建一个\
+  \ JavaScript 函数，接收参数并返回类型。\n注意可能的返回值：对象、布尔值、数字、字符串或未定义。\n\n### HTML 代码\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>检测数据类型</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ detect_data_type(value) {\n  var dtypes = [Function, RegExp, Number, String, Boolean],\
+  \ x, len;\n  if (typeof value === \"object\" || typeof value === \"function\") {\n\
+  \    for (x = 0, len = dtypes.length; x < len; x++) {\n      if (value instanceof\
+  \ dtypes[x]) {\n        return dtypes[x];\n      }\n    }\n  }\n  return typeof\
+  \ value;\n}\nconsole.log(detect_data_type(12));\nconsole.log(detect_data_type('w3resource'));\n\
+  console.log(detect_data_type(false));\n```\n\n### 输出\n`number`\n`string`\n`Boolean`\n\
+  \n## JavaScript: 查找数组中的第二小和第二大\n![](img/Image0005.jpg)\n\n### HTML 代码\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>查找数组中的第二小和第二大数字</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ Second_Greatest_Lowest(arr_num) {\n  arr_num.sort(function(x,y) {\n    return\
+  \ x-y;\n  });\n  var uniqa = [arr_num[0]];\n  var result = [];\n  for(var j=1; j\
+  \ < arr_num.length; j++) {\n    if(arr_num[j-1] !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n\
+  \    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+  }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n### 输出\n`2,4`\n\n\n\
+  \n\n\n### 流程图\n\n![](img/Image00006.jpg)\n\n## JAVASCRIPT 基础\n\n## 计算两个数字的乘法和除法\n\
+  \n### HTML 代码\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\
+  \ />\n  <title>计算两个数字乘法和除法的 JavaScript 程序</title>\n  <style type=\"text/css\">\n\
+  \    body {margin: 30px;}\n  </style>\n</head>\n<body>\n<form>\n  第一个数字： <input\
+  \ type=\"text\" id=\"firstNumber\" /><br>\n  第二个数字： <input type=\"text\" id=\"secondNumber\"\
+  \ /><br>\n  <input type=\"button\" onClick=\"multiplyBy()\" Value=\"乘法\" />\n  <input\
+  \ type=\"button\" onClick=\"divideBy()\" Value=\"除法\" />\n</form>\n<p>结果为： <br>\n\
+  \  <span id = \"result\"></span\n</p>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\
+  ```javascript\nfunction multiplyBy()\n{\n    num1 = document.getElementById(\"firstNumber\"\
+  ).value;\n    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+  result\").innerHTML = num1 * num2;\n}\nfunction divideBy()\n{\n    num1 = document.getElementById(\"\
+  firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+  \    document.getElementById(\"result\").innerHTML = num1 / num2;\n}\n```\n\n###\
+  \ 解析\n\n`document.getElementById(id).value`: 文本字段的 `value` 属性用于设置或返回 `value` 属性的值。\n\
+  \n`document.getElementById(\"result\").innerHTML`: 元素的 `innerHTML` 属性用于设置或返回 HTML\
+  \ 内容（内部 HTML）。\n\n### 输出\n\n![](img/Image00007.jpg)\n\n## 温度转换\n\n### 在 JAVASCRIPT\
+  \ 中摄氏度和华氏度之间转换\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n  <head>\n  <meta\
+  \ charset=\"utf-8\">\n  <title>编写一个 JavaScript 程序将温度在摄氏度和华氏度之间进行转换</title>\n  </head>\n\
+  \  <body>\n</</body>>\n  </html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ cToF(celsius)\n{\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n\
+  \  var message = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n    console.log(message);\n\
+  }\nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp\
+  \ - 32) * 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n  console.log(message);\n\
+  }\ncToF(60);\nfToC(45);\n```\n\n### 输出\n60°C 是 140 °F。\n45°F 是 7.22222222222222°C。\n\
+  \n### 解析\n可以使用以下公式进行精确转换（华氏度转摄氏度 / 摄氏度转华氏度）：\n华氏度转摄氏度：`(F − 32) ÷ 1.8 = °C`\n摄氏度转华氏度：`(C\
+  \ × 1.8) + 32 = °F`\n以下是摄氏度与华氏度之间的粗略转换：\n将华氏度转换为摄氏度，减去 30 并除以 2。\n将摄氏度转换为华氏度，将该数字乘以\
+  \ 2 并加上 30。\n\n## 找出三个给定整数中的最大值\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width-width\"\
+  >\n  <title>找出三个整数中最大值的 JavaScript 程序。</title>\n  </head>\n  <body>\n</body>\n</html>\n\
+  ```\n\n### JAVASCRIPT 代码\n```javascript\nfunction max_of_three(x, y, z)\n{\n  max_val\
+  \ = 0;\n  if (x > y)\n  {\n    max_val = x;\n  } else {\n    max_val = y;\n  }\n\
+  \  if (z > max_val)\n  {\n    max_val = z;\n  }\n  return max_val;\n}\nconsole.log(max_of_three(1,0,1));\n\
+  console.log(max_of_three(0,-10,-20));\nconsole.log(max_of_three(1000,510,440));\n\
+  ```\n### 输出\n1\n0\n1000\n\n### 流程图\n![](img/Image0008.jpg)\n\n## 反转给定字符串\n\n###\
+  \ HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+  \  <meta name=\"viewport\" content=\"width-width\">\n  <title>反转给定字符串的 JavaScript\
+  \ 程序。</title>\n  </head>\n  <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n\
+  ```javascript\nfunction string_reverse(str)\n{\n  return str.split(\"\").reverse().join(\"\
+  \");\n}\n```\n[/content] (注：由于提供的提供的文本在反转字符串代码部分似乎截断，此处根据常见逻辑补全了翻译，但若严格遵循原文截断状态，应保持原样。重新审视原文，原文中反转字符串代码在\
+  \ `return str.reverse` 处被截断了，我将按原文截断内容翻译。)\n\n**修正：严格按照原文截断的内容翻译：**\n\n[content]\n\
+  ```javascript\nfunction string_reverse(str)\n{\n  return str.reverse\n```\n\n\n\n\
+  \n## 计算长度为 3 的整数数组三个元素之和的 JavaScript 程序\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ sum_three(nums) {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10,\
+  \ 32, 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+  \ -11]));\n```\n\n### 输出:\n62\n21\n-3\n\n## 相加两个数字\n\n 针对一个给定的正整数\n\n### 长度为二\n\n\
+  ### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+  >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>计算给定两位正整数两个数字之和的\
+  \ JavaScript 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+  \ 代码\n```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n\
+  \ / 10);\n}\nconsole.log(add_two_digits(25))\nconsole.log(add_two_digits(50))\n\
+  ```\n\n### 输出:\n7\n5\n\n## 检查给定年份是否为闰年\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n  <meta charset=utf-8 />\n  <title>查找闰年</title>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction leapyear(year)\
+  \ {\n  return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\n\
+  console.log(leapyear(2000));\nconsole.log(leapyear(1700));\nconsole.log(leapyear(1800));\n\
+  console.log(leapyear(100));\n```\n\n### 输出\ntrue\ntrue\nfalse\nfalse\nfalse\n\n\
+  ## 检查给定的正数\n\n### 3 的倍数或 7 的倍数\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+  >\n  <title>检查给定的正整数是否为 3 的倍数或 7 的倍数的 JavaScript 程序。</title>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction test37(x) {\n\
+  \  if (x % 3 == 0 || x % 7 == 0) {\n    return true;\n  }\n  else {\n    return\
+  \ false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\nconsole.log(test37(10));\n\
+  console.log(test37(11))\n```\n\n### 输出:\ntrue\ntrue\nfalse\nfalse\n\n## 检查字符串是否以\
+  \ 'Java' 开头\n\n### 否则为 false\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+  >\n  <title>检查字符串是否以 'Java' 开头否则为 false 的 JavaScript 程序。</title>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction start_spec_str(str)\
+  \ {\n  if (str.length < 4) {\n    return false;\n  }\n  front = str.substring(0,\
+  \ 4);\n  if (front == 'Java') {\n    return true;\n  }\n  else {\n    return false;\n\
+  \  }\n}\nconsole.log(start_spec_str(\"JavaScript\"));\nconsole.log(start_spec_str(\"\
+  Java\"));\nconsole.log(start_spec_str(\"Python\"))\n```\n\n### 输出:\ntrue\ntrue\n\
+  false\n\n## 检查两个给定的整数\n\n 在 50..99 范围内\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+  width=device-width\">\n  <title>检查给定的整数是否在 50..99 范围内（包含边界）。如果其中任意一个在范围内，则返回 true。</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ check_numbers(x, y) {\n  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {\n\
+  \    return true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(check_numbers(12,\
+  \ 101));\nconsole.log(check_numbers(52, 80));\nconsole.log(check_numbers(15, 99));\n\
+  ```\n\n### 输出\nfalse\ntrue\ntrue\n\n## 查找距离 100 最近的值\n\n### HTML 代码\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+  width=device-width\">\n  <title>从两个不同的整数中找到距离 100 最近值的 JavaScript 程序。</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+  \ near_100(x, y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y\
+  \ - 100);\n    if (x1 < y1) {\n      return x;\n    }\n    if (y1 < x1) {\n    \
+  \  return y;\n    }\n    return 0;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(near_100(90,\
+  \ 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90, 90));\n```\n\
+  \n### 输出:\n90\n-89\nfalse\n\n"
