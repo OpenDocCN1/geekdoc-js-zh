@@ -1,0 +1,765 @@
+- "# \n\nJavaScript 程序员的 50 个实用程序\n\n\n\n# 高级 JavaScript 50 个程序\n\n# 1. 网页加载倒计时\n\n\
+  ![](img/00001.jpeg)\n\n## 源代码：\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\"\
+  \ >\n\n<head>\n<title>加载页面倒计时</title>\n<meta http-equiv=\"Content-Type\"\ncontent=\"\
+  text/html; charset=UTF-8\" />\n<META HTTP-EQUIV=\"REFRESH\" CONTENT=\"10;\nURL=http://www.amazon.com\"\
+  >\n\n<script language=\"JavaScript\">\n\ntimeObject = new Date();\n\ncountStart\
+  \ = timeObject.getTime();\n\nfunction initTimer()\n\n{\n  var myTime = new Date();\n\
+  ```\n\n\n\n# 1. 计时器\n\n```html\n         var currentTime = myTime.getTime(); \n\n\
+           var diffTime = currentTime - countStart;\n\n         this.diffSeconds =\
+  \ diffTime/1000;      \n\n         return(this.diffSeconds);            \n\n}\n\n\
+    function getSeconds()\n\n{\n\n         var mySeconds0 = initTimer();\n\n        \
+  \ var mySeconds1 = \"\"+mySeconds0;\n\n         mySeconds1= 10 - eval(\n\nmySeconds1.substring(0,mySeconds1.indexOf(\"\
+  .\")))\n\n+ \" seconds\";\n\ndocument.myForm.timeElapse.value = mySeconds1;\n\n\
+  window.setTimeout('getSeconds()',1000);\n\n}\n\n</script>\n\n</head>\n\n<body  onLoad=\"\
+  window.setTimeout('getSeconds()',1)\">\n\n  center><br>\n\nLoad web page after 10\
+  \ seconds:<br><br>\n\n<form name=myForm>\n\n<input size=9 name=timeElapse></form>\n\
+  \n</center>\n\n</body>\n\n</html>\n```\n\n# 2. 确定要删除吗？\n\n![](img/00002.jpeg)\n\n\
+  ## 源代码\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n    <title>Confirm\
+  \ Delete</title>\n              <meta http-equiv=\"Content-Type\"\n             \
+  \ content=\"text/html; charset=UTF-8\" />\n    <script language=\"javascript\">\n\
+       function delOperation()\n    {\n       if(confirm(\"Are you sure to delete?\"\
+  ))\n          alert(\"Already deleted!\");\n       else\n          alert(\"Cancel\
+  \ deleted!\");\n    }\n    </script>\n</head>\n<body>\n<center>\n<br>Are you sure\
+  \ to delete?<br><br>\n<input id=\"deleteButton\" type=\"button\"\nvalue=\"Delete\"\
+  \ onClick=\"delOperation()\" />\n</center>\n</body>\n</html>\n```\n\n# 3. 滚动文字\n\
+  \n![](img/00003.jpeg)\n\n## 源代码\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\"\
+  \ >\n<head>\n<title>Marquee Text</title>\n<meta http-equiv=\"Content-Type\"\ncontent=\"\
+  text/html; charset=UTF-8\" />\n</head>\n<body>\n<div align=\"center\">\n  <p>&nbsp;</p>\n\
+    <p><span>The Text Scrolls Up Slowly\n    </span><br><br>\n  </p>\n</div>\n<marquee\
+  \ direction=up scrollamount=1\nscrolldelay=100 onmouseover='this.stop()'\nonmouseout='this.start()'\
+  \ height=60>\n<div align=\"center\">\n  <table>\n    <tr>\n      <td>\n        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</td>\n\
+      </tr>\n    <tr>\n      <td>\n        BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</td>\n\
+      </tr>\n    <tr>\n      <td>\n      CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</td>\n   \
+  \ </tr>\n    <tr>\n      <td>\n        DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</td>\n   \
+  \ </tr>\n    <tr>\n      <td> EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</td>\n    </tr>\n\
+      <tr>\n      <td>\n     FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</td>\n    </tr>\n\
+          <td>      GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</td>\n      </tr>\n    <tr>\n\
+        <td>\n        HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</td>\n    </tr>\n    <tr>\n\
+        <td>\n      KKKKKKKKKKKKKKKKKKKKKKKKKKKKK</td>\n  </table>\n</div>\n</marquee>\n\
+  </body>\n</html>\n```\n\n# 4. 统计字母数量\n\n![](img/00004.jpeg)\n\n## 源代码\n\n```html\n\
+  <html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n</head>\n<body>\n<p align=\"\
+  center\">&nbsp;</p>\n<p align=\"center\">Count how many leters<br>\n</p>\n<div align=\"\
+  center\">\n  <script language=\"JavaScript\">\nfunction cal(str)\n{\n    re=/[a-z\
+  \ & A-Z]/g;   \n    if(re.test(str))       \n    return str.match(re).length\n   \
+  \ else\n    return 0\n}\n</script>\n<input onBlur=\"alert(cal(this.value) )\">\n\
+  <input type=\"button\" value=\"Count Letters\">\n</div>\n</body>\n</body>\n</html>\n\
+  ```\n\n# 5. 搜索引擎\n\n![](img/00005.jpeg)\n\n## 源代码\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\"\
+  \ >\n<head>\n<title>Search Engine</title>\n<meta http-equiv=\"Content-Type\"\ncontent=\"\
+  text/html; charset=UTF-8\" />\n</head>\n<body><br><br>\n<form Name=\"myForm\">\n\
+  <div align=\"center\"><center><p>\n<script language=\"JavaScript\">\nvar formVariable;\n\
+  function makeSearch()\n{\ndocument.forms[formVariable +\ndocument.myForm.SearchSelect.\n\
+  selectedIndex].elements[0].value=\ndocument.myForm.SeachText.value;\ndocument.forms[formVariable+\n\
+  document.myForm.SearchSelect.selectedIndex].submit();\n}\n</script>\n</p>\n    <p><span\
+  \ style=\"font-size: 12pt\">Keyword:</span>\n        <input name=\"SeachText\" type=\"\
+  text\" size=\"21\"\nstyle=\" margin-left: 1px\">\n    </p>\n    <p><br>\n       \
+  \ <span style=\"font-size: 12pt\">Select Enginee:</span>\n        <select Name=\"\
+  SearchSelect\" size=\"1\" >\n          <option selected>Yahoo</option>\n         \
+  \ <option value=\"Google\">Google</option>\n          <option value=\"Bing\">Bing</option>\n\
+          </select>\n      </p>\n    <p><br>\n<input type=\"button\" value=\" SEARCH\
+  \ \"\nonClick=\"makeSearch()\">\n        <script language=\"JavaScript\">\nformVariable=document.forms.length\n\
+          </script>\n    </p>\n</center></div>\n</form>\n<form action=\"http://search.yahoo.com/bin/search\"\
+  \nmethod=\"get\">\n<input type=\"hidden\" name=\"p\" value>\n</form>\n<form action=\"\
+  http://www.google.com/search\">\n<input type=\"hidden\" name=\"q\" value>\n</form>\n\
+  <form action=\"http://www.bing.com/search\">\n<input type=\"hidden\" name=\"q\"\
+  \ value>\n</form>\n</body>\n</html>\n```\n\n# 6. 选择标签\n\n![](img/00006.jpeg)\n\n\
+  ## 源代码\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n    <title>Select\
+  \ Tag</title>\n<meta http-equiv=\"Content-Type\"\ncontent=\"text/html; charset=UTF-8\"\
+  \ />\n<style>\n.conts{visibility:hidden}\n.tab{border-top:solid thin #E0E0E0;\n\
+  border-right:solid thin gray;\nborder-left:solid thin #E0E0E0;\nfont-family:Verdana;\n\
+  font-size:10pt;\ntext-align:center;\nfont-weight:normal}\n.selTab{border-left:solid\
+  \ thin white;\nborder-top:solid thin white;\nborder-right:solid thin black;\nfont-weight:bold;\n\
+  text-align:center}\n</style>\n<script language=\"JavaScript\">\nfunction public_Labels(label1,\
+  \ label2,\nlabel3, label4, label5)\n{\nt1.innerText = label1;\nt2.innerText = label2;\n\
+  t3.innerText = label3;\nt4.innerText = label4;\nt5.innerText = label5;\n}\nfunction\
+  \ public_Texts(Texts1,\nTexts2, Texts3, Texts4, Texts5){\nt1Texts.innerHTML = Texts1;\n\
+  t2Texts.innerHTML = Texts2;\nt3Texts.innerHTML = Texts3;\nt4Texts.innerHTML = Texts4;\n\
+  t5Texts.innerHTML = Texts5;\ninit();\n}\nfunction init(){\ntabTexts.innerHTML =\
+  \ t1Texts.innerHTML;\n}\nvar nowTab;\nvar myTab;\nvar mark = true;\nfunction altertab(){\n\
+  if(mark == true){\nnowTab = t1;\nmyTab = t1base;\nmark = false;\n}\nif(window.event.srcElement.className\
+  \ == \"tab\")\n{\nnowTab.className = \"tab\";\nmyTab.style.backgroundColor = \"\
+  white\";\nnowTab = window.event.srcElement;\nmyTabID = nowTab.id + \"base\";\ntabContentID\
+  \ = nowTab.id + \"Texts\";\nmyTab = document.all(myTabID);\ntabContent = document.all(tabContentID);\n\
+  nowTab.className = \"selTab\";\nmyTab.style.backgroundColor = \"\";\ntabTexts.innerHTML\
+  \ = tabContent.innerHTML;\n}}\n</script>\n</head>\n<body BGCOLOR=\"white\" onclick=\"\
+  altertab()\" onLoad=\"init()\">\n<br><br>\n<table align=\"center\" CELLPADDING=\"\
+  0\" CELLSPACING=\"0\"\nbgcolor=\"yellow\" STYLE=\"width:400; height:300\">\n<tr><td\
+  \ ID=\"t1\" CLASS=\"selTab\" HEIGHT=\"25\">SELECT 1</td>\n<td ID=\"t2\" CLASS=\"\
+  tab\">SELECT 2</td>\n<td ID=\"t3\" CLASS=\"tab\">SELECT 3</td>\n<td ID=\"t4\" CLASS=\"\
+  tab\">SELECT 4</td>\n<td ID=\"t5\" CLASS=\"tab\">SELECT 5</td>\n</tr><tr>\n<td ID=\"\
+  t1base\" STYLE=\"height:2; background-colro:white\">\n</td>\n<td ID=\"t2base\" STYLE=\"\
+  height:2; background-color:white\">\n</td>\n<td ID=\"t3base\" STYLE=\"height:2;\
+  \ background-color:white\">\n</td>\n<td ID=\"t4base\" STYLE=\"height:2; background-color:white\"\
+  >\n</td>\n<td ID=\"t5base\" STYLE=\"height:2; background-color:white\">\n</td>\n\
+  </tr><tr><td HEIGHT=\"*\" COLSPAN=\"5\" ID=\"tabTexts\"\nSTYLE=\"border-left:solid\
+  \ thin white;border-bottom:solid\nthin white;border-right:solid thin white\">&nbsp;</td>\n\
+  </tr></table></div><div CLASS=\"conts\" ID=\"t1Texts\">\n<p align=\"center\">1.AAAAAAAAAA</p>\n\
+  </div><div CLASS=\"conts\" ID=\"t2Texts\">\n<p align=\"center\">2.BBBBBBBBBB</p>\n\
+  </div><div CLASS=\"conts\" ID=\"t3Texts\">\n<p align=\"center\">3.CCCCCCCCCC </p>\n\
+  </div><div CLASS=\"conts\" ID=\"t4Texts\">\n<p align=\"center\">4.DDDDDDDDDD </p>\n\
+  </div><div CLASS=\"conts\" ID=\"t5Texts\">\n<p align=\"center\">5.EEEEEEEEEE</p>\n\
+  </div>\n</body>\n</html>\n```\n\n# 7. 时间格式转换\n\n![](img/00007.jpeg)\n\n## 源代码\n\n\
+  ```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n<title>Time Format\
+  \ Conversion</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;\ncharset=UTF-8\"\
+  \ />\n<SCRIPT LANGUAGE=\"JavaScript\">\nfunction timeFormat() {\n```\n\n\n\n\n```javascript\n\
+  if (document.myForm.showFormat[0].checked) {\n    return true;\n}\nreturn false;\n\
+  }\n\nfunction showHours(nowHour) {\n    if (timeFormat() || (nowHour > 0 && nowHour\
+  \ < 13)) {\n        return (nowHour);\n    }\n    if (nowHour == 0) {\n        return\
+  \ (12);\n    }\n    return (nowHour-12);\n}\n\nfunction displayZero(timeVal) {\n\
+  \    if (timeVal > 9) {\n        return \"\" + timeVal;\n    }\n    return \"0\"\
+  \ + timeVal;\n}\n\nfunction AmPm() {\n    if (timeFormat()) {\n        return (\"\
+  \");\n    }\n    if (now.getHours() < 12) {\n        return (\" AM\");\n    }\n\
+  \    return (\" PM\");\n}\n\nfunction displayTime() {\n    now = new Date\n    document.myForm.showTime.value\
+  \ =\n        showHours(now.getHours()) + \":\" +\n        displayZero(now.getMinutes())\
+  \ + \":\" +\n        displayZero(now.getSeconds()) + AmPm()\n    setTimeout(\"displayTime()\"\
+  ,1000)\n}\n```\n</script>\n</head>\n<BODY onLoad=\"displayTime()\">\n<center><br><br>\n\
+  <form name=myForm>\n<input type=text name=showTime size=11><p>\n<input type=radio\
+  \ name=showFormat>24 小时格式<br>\n<input type=radio name=showFormat>12 小时格式<br>\n</form>\n\
+  </center>\n</body>\n</html\n\n# 8. 统计输入的字数\n\n![](img/00008.jpeg)\n\n## 源代码：\n\n\
+  ```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n<title>显示字数</title>\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\" />\n<script\
+  \ LANGUAGE=\"JavaScript\">\nfunction countWords(myContents)\n{\n    wordsNum=myContents.value.length;\n\
+  \    displayNum.innerText=wordsNum; }\n</script>\n</head>\n<body><br><br>\n<center>\n\
+  <textarea id=myContents rows=10 colors=38 onKeyUp=\"countWords(this) \" onKeyDown=\"\
+  countWords(this)\">\n</textarea>\n<br><h3>你输入的字数：</h3>\n<h1><div id=\"displayNum\"\
+  ></div></h1>\n</center>\n</body>\n</html\n```\n\n# 9. 禁止复制图片\n\n![](img/00009.jpeg)\n\
+  \n## 源代码：\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n \
+  \   <title>禁止复制图片</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"\
+  \ />\n    <script language=\"javascript\">\n    function stopCopying(control) {\n\
+  \        alert(\"禁止复制！版权所有！\");\n        window.close();\n    }\n    function findPhoto()\
+  \ {\n        if(document.images)\n        for(i=0;i<document.images.length;i++)\n\
+  \        document.images[i].onmousedown = stopCopying;\n    }\n    </script>\n</head>\n\
+  <body oncontextmenu=\"return false\" onLoad=\"findPhoto()\">\n<br><br>\n<div align=\"\
+  center\"><img src='' width=200 height=150 border=1 alt='我的照片'></div>\n</body>\n\
+  </html\n```\n\n# 10. 检查密码强度\n\n![](img/00010.jpeg)\n\n## 源代码：\n\n```html\n<html>\n\
+  <head>\n<title>密码强度</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;\
+  \ charset=UTF-8\"/>\n</head>\n<body <br><center>\n<form name=\"myForm\">\n<label\
+  \ for=\"pwd1\">密码</label>\n<input type=\"Password\" name=\"pwd1\" onBlur=\"valuate(this)\"\
+  \ />\n<br><br>\n<label for=\"pwd2\">重复密码</label>\n<input type=\"password\" name=\"\
+  pwd2\" />\n</form></center>\n<center><div id=\"showStrength\"></div></center>\n\
+  <script type=\"text/javascript\">\nfunction valuate(pwd) {\nvar t=pwd.value;\nvar\
+  \ id=getStrength(t);\nvar message=Array(4);\nmessage[0]=\"密码太短了！\";\nmessage[1]=\"\
+  密码强度弱！\";\nmessage[2]=\"密码强度中等！\";\nmessage[3]=\"密码强度强！\";\nvar myColor=Array(4);\n\
+  myColor[0]=\"black\";\nmyColor[1]=\"red\";\nmyColor[2]=\"orange\";\nmyColor[3]=\"\
+  green\";\nvar setWidth=300;\nvar setHeight=15;\nvar PWD=document.getElementById(\"\
+  showStrength\");\nPWD.style.fontSize=\"15px\";\nPWD.style.color=myColor[id];\nPWD.style.width=setWidth+\"\
+  px\";\nPWD.style.height=setHeight+\"px\";\nPWD.style.lineHeight=setHeight+\"px\"\
+  ;\nPWD.style.textIndent=\"0px\";\nPWD.innerHTML=\"强度: \" + message[id];\nfunction\
+  \ getStrength(p){\nif(p.length < 4){\nreturn 0;\n}\nvar level = 0;\nif (p.match(/[a-z]/ig)){\n\
+  level++;\n}\nif (p.match(/[0-9]/ig)){\nlevel++;\n}\nif (p.match(/[^a-z0-9]/ig)){\n\
+  level++;\n}\nif (p.length < 6 && level > 0){\nlevel--;\n}\nreturn level\n}\n</script>\n\
+  </body>\n</html\n```\n\n# 11. 打开硬盘\n\n![](img/00011.jpeg)\n\n## 源代码：\n\n```html\n\
+  <html xmlns=\"http://www.w3.org/1999/xhtml\" >\n<head>\n<title>打开硬盘</title>\n<meta\
+  \ http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n\
+  <body>\n<br><center><h3>打开硬盘</h3><br>\n<form action=\"c/\">\n<input type=\"submit\"\
+  \ value=\"C\"></form>\n<form action=\"d/\">\n<input type=\"submit\" value=\"D\"\
+  ></form>\n<form action=\"e/\">\n<input type=\"submit\" value=\"E\"></form>\n</center>\n\
+  </body>\n</html\n```\n\n# 12. 波浪文本\n\n![](img/00012.jpeg)\n![](img/00013.jpeg)\n\
+  \n## 源代码：\n\n```javascript\n<script language=\"JavaScript\">\nfunction makeWave(n)\
+  \ {\n    makeWaveText = \"JavaScript\";\n    display = \"\";\n    for (i = 0; i\
+  \ < makeWaveText.length; i++) {\n        size = 68*Math.abs(Math.sin((i+n)*34/makeWaveText.length));\n\
+  \        display += \"<font style='font-size: \"+ size + \"pt' color='green'>\"\
+  \ + makeWaveText.substring(i,i+1)+</font>\";\n    }\n    textDiv.innerHTML = display;\n\
+  \    if (n > makeWaveText.length) {\n        n=0\n    } else {\n        n++\n  \
+  \  }\n    setTimeout(\"makeWave(\" + n + \")\", 300);\n}\n</script>\n<body onload=makeWave(0);><br>\n\
+  <div id=\"textDiv\" align=\"center\">\n</div>\n</body\n```\n\n# 13. 文字广告\n\n![](img/00014.jpeg)\n\
+  \n## 源代码：\n\n```html\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"\
+  \ />\n<body onLoad=\"textAd();\"><br><br>\n<div align=\"center\">文字广告<br><br>\n\
+  <script language=\"JavaScript\">\nvar myText=\" >>>来到 JavaScript 世界！>>>\";\nmyText+=\"\
+  \ >>>JavaScript 是一门非常好的语言！>>>\";\nvar aLetter=50;\nfunction textAd(){\ndocument.forms[0].panel.value=myText.substring(myText.length-aLetter,\
+  \ myText.length);\nmyText=myText.substring(myText.length-1,myText.length)+myText;\n\
+  myText=myText.substring(0,myText.length-1);\nsetTimeout(\"textAd()\",200);\n}\n\
+  </script>\n</div>\n<form>\n  <div align=\"center\">\n    <input type=\"text\" name=\"\
+  panel\" value=\"\" size=\"38\">\n  </div>\n</form>\n</body\n```\n\n# 14. 网络时钟\n\n\
+  ![](img/00015.jpeg)\n\n## 源代码：\n\n```html\n<div align=\"center\"><br>\n  <br>\n\
+  \  <h2>网络时钟</h2>\n  <br>\n</div>\n<table bgcolor=\"green\" align=center>\n<tr><td><div\
+  \ id=\"showClock\"></div></td></tr>\n</table>\n<script language=\"javascript\">\n\
+  function webClock(){\nvar dataobj=new Date()\nvar hours=dataobj.getHours()\nvar\
+  \ minutes=dataobj.getMinutes()\nvar seconds=dataobj.getSeconds()\nif(minutes<=9)\n\
+  minutes=\"0\"+minutes\nif(seconds<=9)\nseconds=\"0\"+seconds\nEclock=\"<font size='7'\
+  \ color='white' face='Arial'>\"\n+hours+\":\"+minutes+\":\"+seconds+\"</font>\"\n\
+  showClock.innerHTML=Eclock;\nsetTimeout(\"webClock()\",1000)\n}\nwebClock();\n</script>\n\
+  ```\n\n# 15. 价格是多少？\n\n![](img/00016.jpeg)\n\n## 源代码：\n\n```html\n<html>\n<body><body>\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<SCRIPT\
+  \ LANGUAGE=\"JavaScript\">\nvar sum=0;\nfunction checkPrice(chk){\nif (chk.checked\
+  \ == false){\nsum -= eval(chk.value);\n}\nelse {\nsum += eval(chk.value);\n}\ndocument.priceForm.total.value\
+  \ = '$'+ eval(sum);\n}\n</script>\n<br>\n<form method=\"POST\" name=\"priceForm\"\
+  >\n<table align=center width=300>\n<tr>\n<td height=50 colspan=2>书籍价格：</td>\n</tr>\n\
+  <tr>\n<td>JAVA 8 小时：&nbsp; $500</td>\n<td width=30>\n<input type=\"checkbox\" name=\"\
+  b1\" value=500 onclick=\"checkPrice(this);\">\n</td>\n</tr>\n<tr>\n<td>LMAP 8 小时：$400</td>\n\
+  <td width=30>\n<input type=\"checkbox\" name=\"b2\" value=400 onclick=\"checkPrice(this);\"\
+  >\n</td>\n</tr>\n<tr>\n<td>HTML 8 小时：$450 </td>\n<td width=30>\n<input type=\"checkbox\"\
+  \ name=\"b3\" value=450 onclick=\"checkPrice(this);\">\n</td>\n</tr>\n<tr>\n<td\
+  \ colspan=2 align=right>总计：<input type=\"text\" name=\"total\"></td>\n</tr>\n</table>\n\
+  </form>\n</body>\n</html>\n```\n\n\n\n\n\n```html\n<input type=\"text\" name=\"\
+  total\" size=8 value='$0'\nonFocus=\"this.blur();\">\n</td>\n</tr>            \n\
+  </table>\n</form>\n</body>\n</html>\n```\n\n# 16. 进度条\n\n![](img/00017.jpeg)\n\n\
+  ## 源代码\n\n```html\n<html>\n<meta http-equiv=\"Content-Type\" content=\"text/html;\
+  \ charset=UTF-8\" />\n<body>\n<br><br>\n<form name=loading>\n<p align=center> <font\
+  \ color=\"green\" size=\"2\" face=\"Arial Black\">Please wait, Loading......</font>\n\
+  <br><br>\n<input type=text name=progress size=55 style=\"font-family:Arial Black;\
+  \ font-weight:bolder; color:green; background-color:#fef4d0; padding:0px; border-style:none;\"\
+  >\n<br><br>\n<input type=text name=percent size=50 style=\"font-family:Arial Black;\
+  \ color:green; text-align:center; border-width:medium; border-style:none;\">\n<script\
+  \ language=\"JavaScript\">\nvar loadingPercent=0 ;            \nvar mark=\"||\"\
+  \ ;\nvar sum=\"||\" ;\ncount() ;                \nfunction count(){\nloadingPercent=loadingPercent+2;\n\
+  sum =sum + mark;\ndocument.loading.progress.value=sum ;       \ndocument.loading.percent.value=loadingPercent+\"\
+  %\";    \nif (loadingPercent<99)  {\nsetTimeout(\"count()\",100);\n} \nelse {  \
+  \                 \nwindow.location.href = \"http://www.amazon.com\";\n} }\n</script>\n\
+  </p>\n</form>\n</body>\n</html>\n```\n\n# 17. 过滤不雅词汇\n\n![](img/00018.jpeg)\n\n\
+  ![](img/00019.jpeg)\n\n## 源代码\n\n```html\n<html>\n<head>\n<title>Filter Ungraceful\
+  \ Words</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"\
+  \ />\n<script language=\"javascript\">\nmessage=prompt(\"Filter \"fool, idiot, imbecile\
+  \ and moron\" words. Please enter your message: \",\"\");\nsubsitude = /fool|idiot|imbecile|moron/g;\n\
+  if (message.match(subsitude)){\nmessage=message.replace(subsitude,\"master\");\n\
+  message=message.bold().fontcolor(\"#FF0000\");\nmyText=\"Your message has a ungraceful\
+  \ word, which has been replaced by: \" + message;\n}\nelse{\nmessage=message.bold().fontcolor(\"\
+  #0000FF\");\nmyText=\"Yor message has no ungraceful word, you said:  \" + message;\n\
+  }\n</script>\n</head>\n<body>\n<script language=\"javascript\">\ndocument.write(myText)\n\
+  </script>\n<br>\n</body>\n</html>\n```\n\n# 18. 禁止复制密码\n\n![](img/00020.jpeg)\n\n\
+  ## 源代码\n\n```html\n<html>\n<head>\n<title>Forbid Copy Password</title>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n<script language=\"javascript\"\
+  >\nfunction noCopy(pwd){\nalert(\"Please don't copy password!\")\nwith(document.myForm){\n\
+  if (pwd == \"pwd1\") {\npwd1.blur()\npwd2.focus()\n}\nelse if(pwd == \"pwd2\"){\n\
+  pwd2.blur()\npwd1.focus()\n}}}\n</script>\n</head>\n<body>\n<form name=\"myForm\"\
+  >\n<p><br>\nPassword:\n<input type=\"password\" name=\"pwd1\" onSelect=\"noCopy(this.name)\"\
+  >\n</p>\n<p>Retype Password:\n<input type=\"password\" name=\"pwd2\" onSelect=\"\
+  noCopy(this.name)\">\n</p>\n<br>\n</form>\n</body>\n</html>\n```\n\n# 19. 世界时钟\n\
+  \n![](img/00021.jpeg)\n\n## 源代码\n\n```html\n<html>\n<head>\n<title>\nThe Time of\
+  \ Cities in the World\n</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;\
+  \ charset=UTF-8\" />\n<script language=\"javascript\">\nvar t\nfunction wordTime(){\n\
+  t=0\nnowDate= new Date()\nworldClock(\"New York\",-5)\nworldClock(\"Los Angeles\"\
+  ,-8)\nworldClock(\"London\",0)\nworldClock(\"Paris\",1)\nworldClock(\"Tokyo\",9)\n\
+  worldClock(\"Beijing\",8)\nsetTimeout(\"wordTime()\",1000)\n}\nfunction worldClock(city,diffTime){\n\
+  UTCh= nowDate.getUTCHours()\nUTCm= nowDate.getUTCMinutes()\nUTCs= nowDate.getUTCSeconds()\n\
+  UTCms= nowDate.getUTCMilliseconds()\nwith(document){\nforms[0][t].value=city + \"\
+  ：　\" + (UTCh+diffTime) + \":\" + (UTCm) + \":\" + (UTCs) + \".\" + (UTCms)\nt++\n\
+  }\n}\n</script>\n</head>\n<body onLoad=\"wordTime()\">\n<center>\n<br><br>World\
+  \ Clock<br><br>\n<form name=\"myForm\">\n<table align=\"center\">\n<tr><td>\n<input\
+  \ type=\"text\"><br><input type=\"text\"><br><input type=\"text\"><br>\n<input type=\"\
+  text\"><br><input type=\"text\"><br><input type=\"text\"><br>\n</tr>\n</table>\n\
+  </form>\n</center>\n</body>\n</html>\n```\n\n# 20. 将代码加密为数字\n\n![](img/00022.jpeg)\n\
+  \n## 源代码\n\n```html\n<html>\n<head>\n<title>Encrypt Code to Number</title>\n<meta\
+  \ http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n\
+  <SCRIPT LANGUAGE=\"JavaScript\">\nvar strInput;\nvar strOutput = \"\";\nvar numInput;\n\
+  var numOutput = \"\";\nvar txt = \"Please enter data!\";\nfunction StrToNum(form)\
+  \ {\nnumOutput = \"\";\nif(form.input.value == \"\") alert(txt);\nelse {\nstrInput\
+  \ = escape(form.input.value);\nfor(i = 0; i < strInput.length; i++) {\nnumOutput\
+  \ += strInput.charCodeAt(i) - 23;\n}\nform.output.value = numOutput;\nform.input.value\
+  \ = \"\";\n}\n}\nfunction NumToStr(form) {\nstrOutput = \"\";\nif(form.output.value\
+  \ == \"\") alert(e)\nelse {\nnumOutput = form.output.value; \nfor(i = 0; i < numOutput.length;\
+  \ i += 2) {\nnumInput = parseInt(numOutput.substr(i,[2])) + 23;\nnumInput = unescape('%'\
+  \ + numInput.toString(16));\nstrOutput += numInput;\n}\nform.input.value = unescape(strOutput);\n\
+  form.output.value = \"\";\n}\n}\n</script>\n<body>\n<br>\n<div align=\"center\"\
+  >Encrypt Code to Number\n</div>\n<center>\n<form>\n<table>\n<tr>\n<td align=center>\n\
+  <input name=input type=text size=20 value=\"JavaScript\">\n</td>\n<td align=center>\n\
+  <br>\n<input type=button value=\" Encode --> \" onClick=\"javascript:StrToNum(this.form)\"\
+  >\n<br>\n<input type=button value=\" <-- Decode \" onClick=\"javascript:NumToStr(this.form)\"\
+  >\n<br>\n</td>\n<td align=center>\n<input name=output type=text size=20 value=\"\
+  51749574607691828993\">\n</td>\n</tr>\n</table>\n</form>\n</center>\n</body>\n</html>\n\
+  ```\n\n# 21. 禁止复制文本\n\n![](img/00023.jpeg)\n\n## 源代码\n\n```html\n<html xmlns=\"\
+  http://www.w3.org/1999/xhtml\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"\
+  text/html; charset=UTF-8\" />\n<title>Cannot Copy</title>\n</head>\n<body oncontextmenu=\"\
+  return false\" ondragstart=\"return false\" onselectstart=\"return false\">\nYou\
+  \ are not able to copy these texts!\n</body>\n</html>\n```\n\n# 22. 检查电子邮件格式\n\n\
+  ![](img/00024.jpeg)\n\n## 源代码\n\n```html\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML\
+  \ 1.0 Transitional//EN\"\n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"\
+  >\n<html>\n<head>\n<title>Check Email Format</title>\n<meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; charset=UTF-8\" />\n<script type=\"text/javascript\">\nfunction\
+  \ checkemail( ){\nif(document.myForm.email.value.length!=0){\nif(document.myForm.email.value.charAt(0)==\"\
+  .\"||\n   document.myForm.email.value.charAt(0)==\"@\"||\n   document.myForm.email.value.indexOf('@',0)==-1||\n\
+  \  document.myForm.email.value.indexOf('.',0)==-1||\n          document.myForm.email.value.lastIndexOf('@')==document.myForm.email.value.length-1||\n\
+  \        document.myForm.email.value.lastIndexOf('.')==document.myForm.email.value.length-1\
+  \ ) {\nalert(\"E-mail format wrong!\");\ndocument.myForm.email.focus();\nreturn\
+  \ false;\n}\nelse {\nalert(\"Email Format Correct!\");}\n}\nelse{\nalert(\"Email\
+  \ cannot be empty!\");\ndocument.myForm.email.focus();\nreturn false;\n}\nreturn\
+  \ false;\n}\n</script>\n</head>\n<body>\n<center>\n  <h2>Check E-mail Format </h2>\n\
+  \  <hr>\n</center>\n<form name=\"myForm\" method=\"POST\" action onSubmit=\"return\
+  \ checkemail()\">\n  <div align=\"center\">E-mail:\n    <input type=\"text\" name=\"\
+  email\" id=\"email\" size=\"20\">\n    &nbsp;\n    <input type=\"submit\" value=\"\
+  Submit\" >\n  </div>\n</form>\n</body>\n</html>\n```\n\n# 23. 仅提交一次\n\n防止重复提交。\n\
+  \n![](img/00025.jpeg)\n\n## 源代码\n\n```html\n<script type=\"text/JavaScript\">\n\
+  function MM_popupMsg(message) {\n  alert(message);\n}\n</script>\n<body>\n<p>&nbsp;</p>\n\
+  <form>\n  <p align=center>&nbsp;</p>\n<table width=\"200\" align=\"center\">\n \
+  \ <tr>\n    <td>Username:</td>\n    <td><input type=text name=username size=30></td>\n\
+  \  </tr>\n  <tr>\n    <td>Password: </td>\n    <td><input type=password name=pwd\
+  \ size=30></td>\n  </tr>\n  <tr>\n    <td>Company: </td>\n    <td><input type=text\
+  \ name=danwei size=30></td>\n  </tr>\n  <tr>\n    <td>Contact: </td>\n    <td><input\
+  \ type=text name=lianxi size=30></td>\n  </tr>\n  <tr>\n    <td>Address: </td>\n\
+  \    <td><input type=text name=dizhi size=30></td>\n  </tr>\n</table>\n</form>\n\
+  </body>\n```\n\n\n\n\n# 32. 禁用部分脚本\n\n![](img/00034.jpeg)\n\n（未提供源代码）\n\n\n\n\n\n\
+  # 禁用部分脚本\n\n```html\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\
+  \n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"\
+  >\n<head>\n<title>禁用部分脚本</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;\
+  \ charset=UTF-8\" />\n</head>\n<body>\n<div align=\"center\">\n  <p>&nbsp;</p>\n\
+  \  <p>&nbsp;</p>\n  <p>部分脚本已禁用。\n    <noscript>\n    <script LANGUAGE=\"JavaScript\"\
+  >\n   alert(\"您无法看到此消息！\");\n    </script>\n    </noscript>\n      </p>\n</div>\n\
+  </body>\n</html>\n```\n\n# 33. 限制错误密码\n\n用户名：Smith   密码：123\n\n![](img/00035.jpeg)\n\
+  \n## 源代码\n\n```html\n<script language=\"JavaScript\">\nnumberTimes=0\nfunction checkpassword(){\n\
+  if (numberTimes== 3){\n              alert(\"您已输入错误密码三次，您不能再使用此系统了！\")\n       \
+  \       window.close();\n}else{\nif((document.myForm.username.value == \"Smith\"\
+  )&&(document.myForm.myPassword.value == \"123\")){\n                           \
+  \   alert(\"密码正确！\")\n                              window.location=\"http://www.amazon.com\"\
+  ;\n            }else{\n                              numberTimes=numberTimes+1\n\
+  \                              alert(\"密码错误，请重试！\")\n                          \
+  \    return false\n              }\n}\n}\n</script>\n</head>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n<body>\n<br>\n<form name=\"\
+  myForm\" method=\"post\">\n  <div align=\"center\"><p>&nbsp;</p><br>\n用户名：\n<input\
+  \ name=\"username\" type=\"text\"><br>\n密码：\n<input name=\"myPassword\" type=\"\
+  password\"><br>\n<input type=\"button\" name=\"submit\" value=\"提交\" onClick=\"\
+  checkpassword();\">\n  </p>\n<br>\n    <p>如果您输入错误密码三次，</p>\n    <p>您将不再允许继续使用此系统！</p>\n\
+  \  </div>\n</form>\n</body>\n```\n\n# 34. 文字处理\n\n![](img/00036.jpeg)\n\n## 源代码\n\
+  \n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n<title>文字处理</title>\n\
+  <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n</head>\n\
+  <body><br>\n<h1 id=\"myHeading\" align=\"center\" style=\"font-size: larger;\">请输入一个句子！</h1>\n\
+  <form name=\"myForm\" id=\"myForm\" action=\"#\" method=\"get\">\n  <p align=\"\
+  center\"><br />\n    <input type=\"text\" name=\"myText\" id=\"myText\" size=\"\
+  30\" />\n    <input type=\"button\" value=\"输入句子\"\nonclick=\"document.getElementById('myHeading').textContent=document.myForm.myText.value;document.getElementById('myHeading').innerText=document.myForm.myText.value;\"\
+  \ /></p>\n  <p align=\"center\">\n    <input type=\"button\" value=\"左对齐\"\nonclick=\"\
+  document.getElementById('myHeading').align='left';\" />\n    <input type=\"button\"\
+  \ value=\"居中对齐\"\nonclick=\"document.getElementById('myHeading').align='center';\"\
+  \ />\n    <input type=\"button\" value=\"右对齐\"\nonclick=\"document.getElementById('myHeading').align='right';\"\
+  \ /><br /><br />\n    <input type=\"button\" name=\"Submit\" value=\"72 px 字体\"\
+  \ onClick=\"document.getElementById('myHeading').style.fontSize='72'+'px';\">\n\
+  \    <input type=\"button\" value=\"36 px 字体\"\nonclick=\"document.getElementById('myHeading').style.fontSize='36'+'px';\"\
+  \ />\n    <input type=\"button\" value=\"18 px 字体\"\nonclick=\"document.getElementById('myHeading').style.fontSize='18'+'px';\"\
+  \ /><br /><br />\n    <input type=\"button\" value=\"红色\"\nonclick=\"document.getElementById('myHeading').style.color='red';\"\
+  \ />\n    <input type=\"button\" value=\"蓝色\"\nonclick=\"document.getElementById('myHeading').style.color='blue';\"\
+  \ />\n    <input type=\"button\" value=\"绿色\"\nonclick=\"document.getElementById('myHeading').style.color='green';\"\
+  \ /> <br /></p>\n</form>\n</body>\n</html>\n```\n\n# 35. 按时间问候\n\n![](img/00037.jpeg)\n\
+  \n## 源代码\n\n```html\n<html><head>\n<title>按时间问候</title></head>\n<body><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>\n\
+  <strong>按时间问候</strong><br><br>\n<script language=\"JavaScript\">\nvar now=new Date()\n\
+  var hr\nhr=now.getHours()\nif (hr==0) {document.write(\"现在是午夜 12 点，晚上安！明天早点起！\"\
+  )}\nif (hr==1) {document.write(\"现在是凌晨 1 点，睡觉时间了。\")}\nif (hr==2) {document.write(\"\
+  凌晨 2 点！你还没睡！\")}\nif (hr==3) {document.write(\"凌晨 3 点！你还在熬夜！\")}\nif (hr==4) {document.write(\"\
+  凌晨 4 点！熬了一整晚还是早起了？\")}\nif (hr==5) {document.write(\"早上 5 点！你起这么早在干什么呢？\")}\nif\
+  \ (hr==6) {document.write(\"早上 6 点！你准备吃早餐了吗？\")}\nif (hr==7) {document.write(\"\
+  早上 7 点！你想去上学还是去上班？\")}\nif (hr==8) {document.write(\"早上 8 点，你吃完早餐去上班了吗？\")}\nif\
+  \ (hr==9) {document.write(\"上午 9 点，你开始工作了吗？\")}\nif (hr==10) {document.write(\"\
+  上午 10 点，忙吗？\")}\nif (hr==11) {document.write(\"上午 11 点！午饭时间了。\")}\nif (hr==12) {document.write(\"\
+  中午 12 点！午饭时间了！\")}\nif (hr==13) {document.write(\"下午 1 点！你想休息一下吗？\")}\nif (hr==14)\
+  \ {document.write(\"下午 2 点！你在忙吗？\")}\nif (hr==15) {document.write(\"下午 3 点！你有这么多工作要做？\"\
+  )}\nif (hr==16) {document.write(\"下午 4 点！看起来你很累了！\")}\nif (hr==17) {document.write(\"\
+  下午 5 点！下班了！\")}\nif (hr==18) {document.write(\"晚上 6 点！下班后回家了吗！\")}\nif (hr==19)\
+  \ {document.write(\"晚上 7 点！晚饭时间！\")}\nif (hr==20) {document.write(\"晚上 8 点！上网时间？\"\
+  )}\nif (hr==21) {document.write(\"晚上 9 点！看电视时间！\")}\nif (hr==22) {document.write(\"\
+  晚上 10 点！你还在在线吗？\")}\nif (hr==23) {document.write(\"晚上 11 点！你累了！\")} \n</script></body></html>\n\
+  ```\n\n# 36. 闪烁文字\n\n![](img/0038.jpeg)\n\n## 源代码\n\n```html\n<html>\n<head>\n<title>闪烁文字</title>\n\
+  </head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"\
+  \ />\n<body>\n<br>\n<br>\n<script language=\"JavaScript\">\nfunction colorArray()\
+  \ {\nthis.length = colorArray.arguments.length;\nfor (var i = 0; i < this.length;\
+  \ i++) {\nthis[i] = colorArray.arguments[i];   }\n}\nvar twinkleText = \"<h1>看！我在闪烁！</h1>\"\
+  ;\nvar count = 0;\nvar color = new colorArray(\"#000000\", \"#FFCC33\", \"#0000FF\"\
+  ,\"#33ffff\",\"#CC6666\",\"#6699FF\");\ndocument.write('<div id=\"text\"><center>'+twinkleText+'</center></div>');\n\
+  function updateColor(){\ndocument.all.text.style.color = color[count];\n(count <\
+  \ color.length-1) ? count++ : count = 0;  }\nsetInterval(\"updateColor()\",200);\n\
+  </script>\n</body>\n</html>\n```\n\n# 37. 登录页面\n\n用户名：Smith   密码：123\n\n![](img/0039.jpeg)\n\
+  \n## 源代码\n\n```html\n<html><head>\n<title>登录：用户名，密码</title>\n</head>\n<meta http-equiv=\"\
+  Content-Type\" content=\"text/html; charset=UTF-8\" />\n<body>\n<br><br><center><br><br>\n\
+  <script language=JavaScript>\nfunction checking(){\nif(document.myForm.username.value=\"\
+  \"||document.myForm.passwrd.value==\"\")\n{window.alert(\"请输入用户名和密码。\");document.myForm.username.focus();}\n\
+  else{\nif(document.myForm.username.value==\"Smith\"&&document.myForm.passwrd.value==\"\
+  123\"){\n      window.alert(\"登录成功，欢迎，\"+document.myForm.username.value+\" !\")\n\
+  location.href=\"http://www.google.com\"; }\nelse{  window.alert(\"抱歉，密码错误！\")  }}\n\
+  } }\n</script>\n<form name=\"myForm\">\n<table border=2 cellpadding=5 cellspacing=0\
+  \ >\n  <tr><td colspan=2 align=center>\n     <font size=3 color=#993366><b>输入您的信息</b></font>\n\
+  \  </td></tr>\n  <tr><td>\n     <font size=3 color=#993366><b>用户名：</b></font></td>\n\
+  \     <td><input type=\"text\" name=\"username\" value=\"\" size=10>\n  </td></tr>\n\
+  \  <tr><td>\n\n\n\n\n\n```\n<font size=3 color=#993366><b>密码：</b></font></td>\n\n\
+       <td><input type=\"password\" name=\"passwrd\" value=\"\" size=10>\n\n  </td></tr>\n\
+  \n  <tr><td colspan=2 align=center>\n\n<input type=\"button\" name=\"btn\" value=\"\
+  \ 登录 \" onClick=\"checking();return false;\">\n\n  </td></tr>\n\n</table>\n\n</form>\n\
+  \n</center></body></html>\n```\n\n# 38. 设计窗口大小\n\n![](img/00040.jpeg)\n\n## :\n\n\
+  ```\n<html>\n\n<head>\n\n<title>设计窗口大小</title>\n\n<meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; charset=UTF-8\">\n\n</head>\n\n<body><br>\n\n<h3 align=\"\
+  center\">自行设计窗口大小。</h3> <br>\n\n<script language=JavaScript>\n\nfunction designWindow()\
+  \ {\n\nwindow.open(\"http://www.google.com\", '', 'toolbar=no, location=no, directories=no,\
+  \ menubar=no, scrollbars=no, resizable=no, width=' + document.windowSize.width.value\
+  \ + ',height=' + document.windowSize.height.value +'');\n\n}\n\n</script>\n\n<form\
+  \ name=\"windowSize\">\n\n<div align=\"center\">宽度：\n\n<input type=\"text\" name=\"\
+  width\" value=999 size=5 maxlength=3>\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高度：\n\n\
+  <input type=\"text\" name=\"height\" value=777 size=5 maxlength=3><br><br>\n\n<input\
+  \ type=\"button\" value=\"打开\" onClick=\"designWindow()\" >\n\n</div>\n\n</form>\n\
+  \n</body>\n\n</html>\n```\n\n# 39. 查看源代码\n\n![](img/00041.jpeg)\n\n## :\n\n```\n\
+  <html>\n\n<head>\n\n<title>查看源代码</title>\n\n</head>\n\n<body>\n\n<br><br>\n\n<h4\
+  \ align=\"center\">请输入网站的 URL。 </h4>\n\n<script language=JavaScript>\n\nfunction\
+  \ view(){\n\nvar sourceCodes=document.forms[0].URL.value\n\nwindow.location=\"view-source:\"\
+  +sourceCodes;\n\n}\n\n</script>\n\n<form>\n\n<div align=\"center\">\n\n<input type=\"\
+  text\" name=\"URL\" value=\"http://\" size=40 >\n\n</div>\n\n</form>\n\n<form>\n\
+  \n<div align=\"center\">\n\n<input type=\"button\" value=\"查看源代码\" onClick=view()>\n\
+  \n</div>\n\n</form>\n\n</body>\n\n</html>\n```\n\n# 40. 检查数字输入\n\n防止非数字输入。\n\n![](img/00042.jpeg)\n\
+  \n## :\n\n```\n<script language=\"javascript\">\n\nfunction checkDigitals()\n\n\
+  {\n\nif(isNaN(myForm.num.value)){\n\n              alert(\"请输入数字!\");\n\n             \
+  \ myForm.num.focus();\n\n              myForm.num.value=\"\"\n\n               return\
+  \ (false);\n\n}\n\nelse\n\n{\n\n              alert(\"输入正确!\");\n\n}\n\n}\n\n</script>\n\
+  \n<body>\n\n<br>\n\n<h4>\n\n<div align=\"center\">检查数字输入\n\n</div></h4>\n\n<form\
+  \ name=myForm>\n\n  <div align=\"center\">\n\n     <input type=text name=num size=25>\n\
+  \n     <input type=button onClick=\"checkDigitals()\" value= \"检查数字\">\n\n    </div>\n\
+  \n</form>\n\n</body>\n```\n\n# 41. 检查空输入\n\n防止无输入。\n\n![](img/00043.jpeg)\n\n##\
+  \ :\n\n```\n<html>\n\n<head>\n\n<title>检查空输入</title>\n\n<script language=\"JavaScript\"\
+  >\n\nfunction checkEmpty(myForm)\n\n{\n\nif (myForm.phone.value == \"\")     \n\n\
+  {\n\nalert(\"请输入电话号码!\");\n\nmyForm.email.focus();\n\nreturn (false);\n\n}\n\nif\
+  \ (myForm.email.value == \"\")\n\n{\n\nalert(\"请输入邮箱地址!\");\n\nmyForm.message.focus();\n\
+  \nreturn (false);\n\n}\n\nif (myForm.message.value == \"\")\n\n{\n\nalert(\"请留言!\"\
+  );\n\nmyForm.phone.focus();\n\nreturn (false);\n\n}\n\n}\n\n</script>\n\n</head>\n\
+  \n<body>\n\n<br>\n\n<center>\n\n  <p><strong>检查空输入</strong></p>\n\n  <br>\n\n</center>\n\
+  \n<form name=\"myForm\" method=\"post\" onSubmit=\"javascript:return checkEmpty(this);\"\
+  >\n\n<table width=\"36\" border=\"0\" cellspacing=\"1\" cellpadding=\"1\" align=\"\
+  center\">\n\n<tr>\n\n<td>电话：\n\n    <input type=text name=phone size=30>\n\n</tr>\n\
+  \n<tr>\n\n<td>邮箱：\n\n    <input type=\"text\" name=email size=\"30\">\n\n</tr>\n\
+  \n<tr>\n\n<td>消息：<br>\n\n    <textarea name=message cols=37 rows=6></textarea>\n\
+  \n</tr>\n\n<tr>\n\n<td>\n\n<div align=\"right\">\n\n    <input type=\"submit\" name=\"\
+  pub\" value=\"检查\">\n\n</div>\n\n</td>\n\n</tr>\n\n</table>\n\n</form>\n\n</body>\n\
+  ```\n\n# 2. 图片上传\n\n防止非图片上传\n\n![](img/0004.jpeg)\n\n## :\n\n```\n<html>\n\n<script\
+  \ language=JavaScript>\n\nfunction uploadPicture(){\n\n    myForm.myPicture.src=myForm.pic.value;\n\
+  \n          var checkFile;\n\n         checkFile=myForm.pic.value.substring(myForm.pic.value.lastIndexOf(\"\
+  .\")+1,myForm.pic.length); \n\n         checkFile=checkFile.toUpperCase();\n\n      \
+  \ switch(checkFile){\n\n            case \"GIF\":\n\n              alert(\"正在上传\
+  \ GIF 图片，好的!\");\n\n             break;\n\n            case \"JPG\":\n\n              \
+  \ alert(\"正在上传 JPG 图片，好的!\");\n\n             break;\n\n            case \"BMP\"\
+  :\n\n               alert(\"正在上传 BMP 图片，好的!\");\n\n            break;\n\n           case\
+  \ \"PNG\":\n\n               alert(\"正在上传 PNG 图片，好的!\");\n\n            break;\n\
+  \n           default:\n\n               alert(\"错误！只允许上传 gif, jpg, bmp, png 图片!\"\
+  )\n\n            break;\n\n          }}\n\n</script>\n\n<title>检查图片上传</title>\n\n\
+  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\n<body>\n\
+  \n<br>\n\n<p align=\"center\" >只允许上传 gif, jpg, bmp, png 图片! </p>\n\n<form name=\"\
+  myForm\" id=myForm>\n\n<p align=center>\n\n    <input name=pic type=\"file\">\n\n\
+  </p>\n\n<p align=\"center>\n\n    <input type=\"button\" value=\"上传\" onClick=\"\
+  uploadPicture()\">\n\n</p>\n\n<img name=\"myPicture\">\n\n</form>\n\n</\n>\n\n>\n\
+  ```\n\n# 43. 坐标\n\n![](img/0045.jpeg)\n\n## :\n\n```\n<html>\n\n<script language=\"\
+  JavaScript\">\n\nif (navigator.appName == 'Netscape'){\n\n    document.captureEvents(Event);\n\
+  \n    document.onmousemove = mousePosition;\n\n}\n\nfunction mousePosition(e) {\n\
+  \nmyForm.x.value = e.screenX;\n\nmyForm.y.value = e.screenY;\n\n}\n\n</script>\n\
+  \n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\n\
+  <body onMousemove=\"cursorCoordinates()\">\n\n<div align=\"center\"><p>&nbsp;</p></div>\n\
+  \n<form name=\"myForm\">\n\n  <div align=\"center\">\n\n    X: <input type=\"text\"\
+  \ name=\"x\" size=\"3\">\n\n    y: <input type=\"text\" name=\"y\" size=\"3\">\n\
+  \n  </div>\n\n</form>\n\n</body></html>\n```\n\n# 44. 防止恶意输入\n\n![](img/0046.jpeg)\n\
+  \n## :\n\n```\n<html>\n\n<head>\n\n<title>防止恶意输入</title>\n\n<meta http-equiv=\"\
+  content-type\" content=\"text/html; charset=utf-8\">\n\n<script type=\"text/JavaScript\"\
+  >\n\nfunction digital(field, event)\n\n{\n\n  var key, keyChar;\n\n  if (window.event) \
+  \ key = window.event.keyCode; \n\n  else if (event)  key = event.which;\n\n  else�\
+  \ return true;\n\nif (key == null || key == 0 || key == 8 || key == 13 || key ==\
+  \ 27)\n\n     return true;\n\n  keyChar =� String.fromCharCode(key);\n\n  if (/\\\
+  d/.test(keyChar)) {           \n\n            window.status = \"\";\n\n           \
+  \ return true;\n\n  }\n\n  else {\n\n      window.status = \"只允许数字输入!\";\n\n    \
+  \ return false;\n\n   }\n\n}}\n\n</script>\n\n</head>\n\n<body>\n\n<br>\n\n<center>\n\
+  \n<h2>防止恶意输入 </h2>\n\n</center>\n\n<div align=\"center\">\n\n  <p> 不允许任何字母或符号输入! \
+  \ </p>\n\n</div>\n\n<form name=\"myForm\" id=\"myForm\" action=\"#\" method=\"get\"\
+  >\n\n  <div align=\"center\">只允许数字输入:\n\n  <input type=\"text\" name=\"num\" id=\"\
+  num\"\n\nsize=\"10\" maxlength=\"10\"\n\n      onkeypress=\"return digital(this,\
+  \ event);\"\n\ntitle=\"防止恶意输入\">\n\n  </div>\n\n</form>\n\n</body>\n\n</html>\n\
+  ```\n\n# 45. 打字效果\n\n单词将逐字自动显示\n\n![](img/0047.jpeg)\n\n## :\n\n```\n<html>\n\n\
+  <head>\n\n<title>打字效果</title>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;\
+  \ charset=UTF-8\" />\n\n<script>\n\nvar i = 0\n\nvar displayWords= \"Hi!\" +\n```\n\
+  \n\n\n\"《8 小时学会 JavaScript》是一本非常好的书！\" + \"通过这本书你可以学到很多技能，如果你对编程感兴趣，你也可以学习《8 小时精通\
+  \ jQuery》、《8 小时精通 AngularJS》，这可以帮助你成为一名优秀的程序员。但你需要花费许多时间来学习所有这些程序，以便你可以在工作中轻松地使用它们...\"\
+  \n\n```javascript\nfunction marquee() {\n    var wordSize= displayWords.length\n\
+  \    document.show.typingEffect.value= document.show.typingEffect.value + displayWords.charAt(i)\n\
+  \    i++\n    var timeID= setTimeout(\"marquee()\",100)\n    if (i >= wordSize)\
+  \ {\n        clearTimeout(timeID); \n        i=0\n    }\n}\n```\n\n# 46. 设置背景颜色\n\
+  \n![](img/00048.jpeg)\n\n## 源代码：\n\n```html\n<html>\n<head>\n  <title>Choose backgroun\
+  \ color</title>\n  <script language=\"JavaScript\">\n    function chooseColor(form)\
+  \ {\n      if (form.color.value == \"\")\n        alert(\"Please enter the background\
+  \ color you like\")\n      else {\n        document.bgColor=(\"\"+form.color.value+\"\
+  \");\n      }\n    }\n  </script>\n  <meta http-equiv=\"Content-Type\" content=\"\
+  text/html; charset=UTF-8\" />\n</head>\n<body>\n  <div align=\"center\">\n    <p>&nbsp;</p>\n\
+  \    <p> Enter the background color you like.</p>\n    <br>\n  div>\n  <form>\n\
+  \    <div align=\"center\">\n      <input type=\"text\" name=\"color\">\n      <input\
+  \ type=\"button\" name=\"btn\" value=\"Click\" onClick=\"chooseColor(this.form)\"\
+  >\n    </div>\n  </form>\n</body>\n</</html>\n```\n\n# 47. 选择菜单\n\n![](img/00049.jpeg)\n\
+  \n## 源代码：\n\n```html\n<html>\n<head>\n  <meta http-equiv=\"Content-Type\" content=\"\
+  text/html;charset=utf-8\">\n  <title>select menu</title>\n</head>\n<body>\n  <br><center>\n\
+  \    <script type=\"text/javascript\">\n      function toWebsite(menu) {\n     \
+  \   var myChoice = menu.selectedIndex;\n        if (myChoice!= 0) {\n          window.location\
+  \ = menu.options[myChoice].value;\n        }\n      }\n    </script>\n    <form\
+  \ name=\"myForm\" id=\"myForm\" method=\"post\">\n      <h3>Select Menu</h3><br>\n\
+  \      <select name=\"sites\" id=\"sites\" onChange=\"toWebsite(this);\">\n    \
+  \    <option value=\"\" selected=\"seclected\">Select a website:</option>\n    \
+  \    <option value=\"http://www.amazon.com\">Amazon</option>\n        <option value=\"\
+  http://www.google.com\">Google</option>\n        <option value=\"http://www.yahoo.com\"\
+  >Yahoo</option>\n        <option value=\"http://www.apple.com\">Apple</option>\n\
+  \      </select>\n    </form>\n  </center>\n</body>\n</</html>\n```\n\n# 48. 文字向上滚动\n\
+  \n整个文本缓慢向上滑动\n\n![](img/00050.jpeg)\n\n## 源代码：\n\n```html\n<html>\n<head>\n  <title>Text\
+  \ scroll up</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"\
+  \ />\n</head>\n<body>\n  <br><br><br>\n  <center>\n    <div id=\"textSlideUp\" style=\"\
+  width:100%;height:100px;overflow:hidden\" onMouseOver=\"slideAmount=0\" onmouseout=\"\
+  slideAmount=1\">\n      AAAAAAAAAAAAAAAAAAAAAAAAAA<br/>\n      BBBBBBBBBBBBBBBBBBBBBBBBBB<br/>\n\
+  \      CCCCCCCCCCCCCCCCCCCCCCCCCC<br/>\n      DDDDDDDDDDDDDDDDDDDDDDDDDD<br/>\n\
+  \      EEEEEEEEEEEEEEEEEEEEEEEEEEE<br/>\n      FFFFFFFFFFFFFFFFFFFFFFFFFFF<br/>\n\
+  \      GGGGGGGGGGGGGGGGGGGGGGGGGGG<br/>\n      HHHHHHHHHHHHHHHHHHHHHHHHHHH<br/>\n\
+  \      IIIIIIIIIIIIIIIIIIIIIIIIIII<br/>\n      JJJJJJJJJJJJJJJJJJJJJJJJJJJ<br/>\n\
+  \      KKKKKKKKKKKKKKKKKKKKKKKKKKK<br/>\n      LLLLLLLLLLLLLLLLLLLLLLLLLLL<br/>\n\
+  \      MMMMMMMMMMMMMMMMMMMMMMMMMMM<br/>\n      NNNNNNNNNNNNNNNNNNNNNNNN<br/>\n \
+  \   </div>\n  </center>\n  <script language=\"javascript\">\n    var slideUp = document.getElementById(\"\
+  textSlideUp\");\n    var lineHigh = 42;\n    var lineNumber = 7;\n    var slideAmount\
+  \ = 1;\n    function move() {\n      slideUp.scrollTop += slideAmount;\n      if\
+  \ (slideUp.scrollTop == lineNumber * lineHigh) {\n        slideUp.scrollTop = 0;\n\
+  \        if (slideUp.scrollTop % lineHigh == 0) {\n          window.setTimeout(\"\
+  move()\", 5);\n        } else {\n          window.setTimeout(\"move()\", 60);\n\
+  \        }\n    }\n    slideUp.innerHTML += slideUp.innerHTML;\n    window.setTimeout(\"\
+  move()\",1000);\n  </script>\n</body>\n</</html>\n```\n\n# 49. 文字放大\n\n鼠标悬停时文字放大\
+  \ 200%\n\n![](img/00051.jpeg)\n\n## 源代码：\n\n```html\n<!DOCTYPE html PUBLIC \"-//W3C//DTD\
+  \ HTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/html1/transitional.dtd\">\n\
+  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n  <title>Magnify texts</title>\n\
+  \  <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n</head>\n\
+  <body>\n  <p align=\"center\">&nbsp;</p>\n  <p align=\"center\"><strong>following\
+  \ texts</strong></p>\n  <p><hr></p>\n  <p align=\"center\" onMouseOver=\"this.style='200%'\"\
+  \ onMouseOut=\"this.style='normal'\">\n    JavaScript in 8 Hours<br>\n    jQuery\
+  \ in 8 Hours<br>\n    Java in 8 Hours<br>\n  </p>\n</body>\n</</html>\n```\n\n#\
+  \ 50. 五星评价\n\n![](img/0052.jpeg)\n\n## 源代码：\n\n```html\n<html xmlns=\"http://www.w3.org/1999/xhtml\"\
+  >\n<head>\n  <title>Five star review</title>\n  <meta http-equiv=\"Content-Type\"\
+  \ content=\"text/html; charset=UTF-8\" />\n</head>\n<body>\n  <br><br><br>\n  <div\
+  \ align=\"center\">Please give a star review: <br><br></div>\n  <table width=\"\
+  200\" border=\"0\" align=\"center\">\n    <tr>\n      <td><center>\n        <script>\n\
+  \          var starNumber=0;\n          function stars() {\n            starNumber=event.target.id.slice(-1);\n\
+  \            for (var i=1;i<=5;i++) {\n              document.write('<span id=\"\
+  '+i+'\" onclick=\"stars()\" style=\"cursor:hand;\">☆</span>');\n            }\n\
+  \          }\n          function rating() {\n            alert(\"Your review is:\
+  \ \"+starNumber+\" stars. Thank you!\");\n          }\n          for (var j=1;j<=starNumber;j++)\
+  \ {\n            document.write('<button onclick=\"rating()\">Review</button>');\n\
+  \          }\n        </script>\n      </center></td>\n    </tr>\n  </table>\n</body>\n\
+  </</html>\n```\n\n# 附录\n\n# JavaScript 100 道测试与答案\n\n## 100 道测试\n\n**1.** 下面哪个标签用于\
+  \ JavaScript？\n1. `<?……?>`\n2. `<JavaScript…>…..</JavaScript>`\n3. `<script Language=”JavaScript”>……`\n\
+  4. `<script type “text/JavaScript”>……</script>`\n\n**2.** 关于 JavaScript 注释，哪个正确？\n\
+  1. `//` 用于多行注释\n2. `/* */` 用于单行注释\n3. `//` 和 `/* */` 都可以用于单行或多行注释。\n4. `//` 用于单行注释，`/*\
+  \ */` 用于多行注释。\n\n**3.** 下面哪个是不正确的？\n1. `a += b` 意味着 `a = (a + b)`\n2. `a != b` 意味着\
+  \ `a = (a ! b)`\n3. `a *= b` 意味着 `a = (a * b)`\n4. `a %= b` 意味着 `a = (a % b)`\n\n\
+  **4.** 下面哪个变量名是无效的？\n1. `10var`\n2. `varName`\n3. `my_var`\n4. `var10`\n\n**5.**\
+  \ 下面哪个运算符描述不正确？\n1. `+` 用于加法\n2. `–` 用于减法\n3. `*` 用于乘法\n4. `%` 用于除法\n\n**6.** 下面哪个命令不是显示文本的？\n\
+  A. `alert()`\nB. `document.write()`\nC. `console.writeline()`\nE. `document.getElementById().innerHTML`\n\
+  \n**7.** 下面哪个可以作为变量名？\n1. `nonVir`\n2. `var`\n3. `float`\n4. `try`\n\n**8.** 下面哪个数据类型描述不正确？\n\
+  A. `boolean` 返回 true 或 false。\nB. `integer` 是一个整数。\nC. `string` 是字符字符串中的字符。\nD.\
+  \ `number` 是整数或浮点数。\n\n**9.** 下面哪个转义序列描述不正确？\nA. `\\b` 用于 `backslash`（反斜杠）。\nB.\
+  \ `\\n` 用于 `newline`（换行）。\nC. `\\r` 用于 `return`（回车）。\nD. `\\t` 用于 `tap`（制表符）。\n\n\
+  **10.** 以下代码中哪一行是不正确的？\n```javascript\nfunction firstFunction( ){\n  var num = 100;\
+  \ // line 1\n  secondFunction( ); //line 2\n}\nfunction secondFunction( ){line3\n\
+  \  document.write( num ); // line4\n}\nfirstFunction();\n```\n1. line1\n2. line2\n\
+  3. line3\n4. line4\n\n**11.** 下面哪个是正确的命令？\n1. `if ( ) { } else { }`\n2. `if ( )\
+  \ then { } else { }`\n3. `if ( ) then { } then else { }`\n4. `if ( ) then { } if\
+  \ else { }`\n\n**12.** 下面哪个不是 JS 中的比较运算符？\nA. `==`\nB. `<=`\n\n\n\n\n\n# JavaScript\
+  \ 多选题\n\n## Question 13\n\n以下哪**不是** JS 中的逻辑运算符？\n\nA. $$\n\nB. &&\n\nC. ||\n\n\
+  D. !\n\n## Question 14\n\n以下代码中哪一行是不正确的？\n\n```javascript\nvar a = 10;   // line\
+  \ 1\nvar b = 3;     // line 2\nvar num = (a % b = 0) ? \"EVEN\" : \"ODD\";   //\
+  \  line 3\nalert ( num );   //  line 4\n```\n\n1. `line1`\n2. `line2`\n3. `line3`\n\
+  4. `line4`\n\n## Question 15\n\n以下代码中哪一行是不正确的？\n\n```javascript\nvar name = null;\
+  \   // line1\nname = prompt (\"Please Input Your Name\", \" \" );  // line2\nif\
+  \ ( name == \" \" )  //line3\ndocument.write( \"Hello\" + name );   // line4\n```\n\
+  \n1. `line1`\n2. `line2`\n3. `line3`\n4. `line4`\n\n## Question 16\n\n以下代码的输出是什么？\n\
+  \n```javascript\nvar num = 2;\nswitch (num){\ncase 1: document.write(\"A\");\ncase\
+  \ 2: document.write(\"B\");\ncase 3: document.write(\"C\");\ndefault:  document.write(\"\
+  D\");\n}\n```\n\n1. A\n2. B\n3. BC\n4. BCD\n\n## Question 17\n\n以下代码的输出是什么？\n\n\
+  ```javascript\nvar teststring = (\"JavaScript \" == \"Javascript\");\nalert( teststring);\n\
+  ```\n\nA. true\n\nB. false\n\nC. 1\n\nD. -1\n\n## Question 18\n\n以下代码的结果是什么？\n\n\
+  ```javascript\nvar x = 0, y = 50;\nwhile ( x < 10) {\ny--;\nx++;\n}\nalert ( \"\
+  x is: \" + x + \"   and y is: \" + y);\n```\n\n1. `x` 是 10 `y` 是 40\n2. `x` 是 11\
+  \ `y` 是 41\n3. `x` 是 12 `y` 是 42\n4. `x` 是 13 `y` 是 43\n\n## Question 19\n\n以下代码的输出是什么？\n\
+  \n```javascript\nvar x = 0, y = 50;\ndo {\ny--;\nx++;\n} while ( x < 10)\nalert\
+  \ ( \"x is: \" + x + \"  and y is: \" + y);\n```\n\n1. `x` 是 13 `y` 是 43\n2. `x`\
+  \ 是 12 `y` 是 42\n3. `x` 是 11 `y` 是 41\n4. `x` 是 10 `y` 是 40\n\n## Question 20\n\n\
+  以下代码的输出是什么？\n\n```javascript\nfor (var num = 1; num < 10; num ++) {\ndocument.write\
+  \ ( num + \" \" );\nif (num % 5 == 0)\nbreak;\n}\n```\n\n1. 1 2\n2. 1 2 3\n3. 1\
+  \ 2 3 4\n4. 1 2 3 4 5\n\n## Question 21\n\n以下代码的输出是什么？\n\n```javascript\nfor (var\
+  \ num = 1; num < 7; num++) {\nif (num == 5)\ncontinue;\ndocument.write ( num + \"\
+  \ \" );\n}\n```\n\n1. 1 2 3 4 5\n2. 1 2 3 4 6\n3. 1 2 3 4 7\n4. 1 2 3 4 8\n\n##\
+  \ Question 22\n\n创建数组时哪项是正确的？\n\n1. `var a = new Array { “A”, “B”, “C” };`\n2. `var\
+  \ a = new Array ( “A”, “B”, “C” );`\n3. `var a = new Array [ “A”, “B”, “C” ];`\n\
+  4. `var a = new Array < “A”, “B”, “C” >;`\n\n## Question 23\n\n以下代码中哪一行是不正确的？\n\n\
+  ```javascript\nvar a = new Array( ); // line1\na[0] = \"A\";   // line2\na[1] =\
+  \ \"B\";\nvar arraySize = a.length( );  // line3\nalert ( arraySize );  //line4\n\
+  ```\n\n1. `line1`\n2. `line2`\n3. `line3`\n4. `line4`\n\n## Question 24\n\n以下代码中哪一行是不正确的？\n\
+  \n```javascript\nvar a = new Array( 1, 2, 3 );  // line 1\nalert (a[1]);   // line\
+  \ 2\nalert (a[2]);   // line3\nalert (a[3]);   // line 4\n```\n\n1. `line1`\n2.\
+  \ `line2`\n3. `line3`\n4. `line4`\n\n## Question 25\n\n以下代码的输出是什么？\n\n```javascript\n\
+  var a = new Array( );\na[0] = \"A\";\na[1] = \"B\";\na[2] = \"C\";\nalert (a.join(\
+  \ \" - \" ));\n```\n\n1. A  B  C\n2. A, B, C\n3. A - B - C\n4. “A”, “B”, “C”\n\n\
+  ## Question 26\n\n以下哪个语句是正确的？\n\n`Array.slice(var m, var n);`\n\n1. 返回从 m 到 n 的元素。\n\
+  2. 返回从 m-1 到 n-1 的元素。\n3. 返回从 m-1 到 n 的元素。\n4. 返回从 m 到 n-1 的元素。\n\n## Question 27\n\
+  \n如果 `getMonth( )` 返回 11，意味着什么？\n\n1. 九月\n2. 十月\n3. 十一月\n4. 十二月\n\n## Question 28\n\
+  \n要获取格林威治标准时间，请使用 ___。\n\n1. `toGMTString( )`\n2. `getUTCHours( )`\n3. `getTimeZoneOffset(\
+  \ )`\n4. `getTime( )`\n\n## Question 29\n\n“window.settimeout( “myFunction( )”,10000\
+  \ )” 的意思是？\n\n1. 每 10000 秒调用一次 `myFunction`。\n2. 每 1000 秒调用一次 `myFunction`。\n3.\
+  \ 每 100 秒调用一次 `myFunction`。\n4. 每 10 秒调用一次 `myFunction`。\n\n## Question 30\n\n以下哪个函数是不正确的？\n\
+  \n1. `setDate( )`\n2. `setMonth( )`\n3. `setYear( )`\n4. `setHour( )`\n\n## Question\
+  \ 31\n\n`3 > 5 && false` 返回？\n\n1. true\n2. false\n3. 1\n4. -1\n\n## Question 32\n\
+  \nMath 方法的以下哪个描述是不正确的？\n\n1. `ceil( )` 返回一个大于等于参数的整数。\n2. `log( )` 返回数字的对数。\n3.\
+  \ `sqrt( )` 返回数字的平方根。\n4. `floor( )` 返回最接近的整数。\n\n## Question 33\n\n`math.ceil (7.5\
+  \ )` & `math.floor (7.5)` 的结果是什么？\n\n1. 7 8\n2. 7 7\n3. 8 8\n4. 8 7\n\n## Question\
+  \ 34\n\n`math.ceil(-7.5)` & `math.floor ( -7.5)` 的结果是什么？\n\n1. -7 -8\n2. -7 -7\n\
+  3. -8 -8\n4. -8 -7\n\n## Question 35\n\n`math.round (7.5 )` & `math.round (-7.5)`\
+  \ 的结果是什么？\n\n1. 8 -8\n2. 8 -7\n3. 7 -8\n4. 7 -7\n\n## Question 36\n\n`math.max(-5,\
+  \ -4)` 和 `math.min(-5, -4)` 的结果是？\n\n1. -5 -4\n2. -5 -5\n3. -4 -5\n4. -4 -4\n\n\
+  ## Question 37\n\n以下代码的输出是什么？\n\n```javascript\nvar str1 = \" \";\nvar str2 = null;\n\
+  if (str1 != str2) {\nalert(str1.length);\n}\n```\n\n1. 0\n2. 1\n3. null\n4. error\n\
+  \n## Question 38\n\n以下代码的输出是什么？\n\n```javascript\nvar str = \"JavaScript is very\
+  \ good!\";\nvar ch = str.charAt(3);\nalert( ch );\n```\n\n1. v\n2. a\n3. S\n4. error\n\
+  \n## Question 39\n\n以下代码的输出是什么？\n\n```javascript\nvar str = \"JavaScript is very\
+  \ good!\";\nvar sub = str.substr( 4, 6 );\nalert(sub);\n```\n\n1. aSc\n2. Scr\n\
+  3. arp\n4. Script\n\n## Question 40\n\n以下代码的输出是什么？\n\n```javascript\nvar num = 100;\n\
+  var str = num.toString( ) + 200;\nalert( str );\n```\n\n1. 300\n2. 200\n3. error\n\
+  4. 100200\n\n## Question 41\n\n以下代码中哪一行是不正确的？\n\n```javascript\nvar num = 100; \
+  \  // line 1\nif ( NaN )==){ // line 2\nnum++;   // line 3\nalert( num);   // line\
+  \ 4\n\n```\n\n1. `line1`\n2. `line2`\n3. `line3`\n4. `line4`\n\n## Question 42\n\
+  \n以下代码中哪一行是不正确的？\n\n```javascript\nvar str1 = \"JavaScript\";   // line 1\nvar str2\
+  \ = \"is very good.\";   // line 2\nvar myString = str1 + str2;   // line 3\ndocument.write\
+  \ ( myString.length( ));   // line 4\n```\n\n1. `line1`\n2. `line2`\n3. `line3`\n\
+  4. `line4`\n\n## Question 43\n\n以下代码的输出是什么？\n\n```javascript\nvar x = 100;\nvar\
+  \ y = 200;\nvar z = 300;\ndocument.write( eval ( x*2 + y - z ));\n```\n\n1. 100\n\
+  2. 200\n3. 300\n4. 400\n\n## Question 44\n\n以下代码中哪一行是不正确的？\n\n```javascript\nvar\
+  \ str1 = \"Hello \";  // line1\nvar str2 = \" World!\";   // line 2\nvar myString\
+  \ = concat(str1 + str2);  // line 3\ndocument.write( myString );  // line 4\n```\n\
+  \n1. `line1`\n2. `line2`\n3. `line3`\n4. `line4`\n\n## Question 45\n\n以下代码的输出是什么？\n\
+  \n```javascript\nvar str = \"Hello world!\";\nvar txt = str.lastIndexOf( \"o\" );\n\
+  document.write( txt );\n```\n\n1. world\n2. orld\n3. 6\n4. 7\n\n## Question 46\n\
+  \n以下代码的输出是什么？\n\n```javascript\nvar str = \"Hello world!\";\nvar txt = str.slice\
+  \ ( -1 );\ndocument.write( txt );\n```\n\n1. “ ”\n2. null\n3. !\n4. world!\n\n##\
+  \ Question 47\n\n如果 `getMonth( )` 返回 8，意味着 ___？\n\n1. 返回 8 意味着八月。\n2. 返回 8 意味着九月。\n\
+  3. 返回 8 意味着十月。\n4. 返回 8 意味着十一月。\n\n## Question 48\n\n以下代码的输出是什么？\n\n```javascript\n\
+  var x = -2;\nvar y = 4;\ndocument.write( Math.pow ( x, y ));\n```\n\n1. -2\n2. 4\n\
+  3. -8\n4. 16\n\n## Question 49\n\n以下代码的输出是什么？\n\n```javascript\nvar arr = new Array(0,1,2,3);\n\
+  var con = arr.join(  );\ndocument.write ( con );\n```\n\n1. 0-1-2-3\n2. 0,1,2,3\n\
+  3. 0_1_2_3\n4. 0 1 2 3\n\n## Question 50\n\n以下代码中哪一行是不正确的？\n\n```javascript\ntry\
+  \ {   // line 1\nx = y;    // line 2\n}\ncatch ( e) {   // line 3\ndocument.write\
+  \ ( e );  // line 4\n}\n```\n\n1. `line1`\n2. `line2`\n3. `line3`\n4. `line4`\n\n\
+  ## Question 51\n\n要判断浏览器是否支持 cookie，请使用 ___？\n\n1. `Navigator.cookieEnable`\n2.\
+  \ `Navigator.cookieUsed`\n3. `Navigator.cookieUtilized`\n4. `Navigator.cookieAllowed`\n\
+  \n## Question 52\n\n在 HTML 文档中，哪个元素先出现，<script> 元素还是 <form> 元素？\n\n1. <form> 元素在\
+  \ <script> 元素之前。\n2. <script> 元素在 <form> 元素之前。\n3. <form> 元素在 <script> 元素内部。\n4.\
+  \ <script> 元素在 <form> 元素内部。\n\n## Question 53\n\n输出是什么？\n\n```javascript\nvar a=6,\
+  \ b;\nb=++a-3; \nalert (b);\n```\n\n输出是什么？\n\n1. 2\n2. 3\n3. 4\n4. 5\n\n## Question\
+  \ 54\n\n输出是什么？\n\n```javascript\nvar a=6, b;\nb=a++-3; \nalert (b);\n```\n\n输出是什么？\n\
+  \n1. 2\n2. 3\n3. 4\n4. 5\n\n## Question 55\n\n以下哪项不是常量数据类型？\n\n1. 浮点数常量\n2. 布尔常量\n\
+  3. 字符串常量\n4. 双精度常量\n\n## Question 56\n\nJavaScript 通过 ___ 关键字声明变量？\n\n1. variable\n\
+  2. `var`\n3. myVariable\n4. myVar\n\n## Question 57\n\n哪个运算符的优先级更高？\n\n（从高到低）\n\n\
+  \n\n\n\n# JavaScript 和 HTML 测验\n\n## 运算符优先级\n\n以下哪种是正确的运算符优先级？\n\n1. `!` > `&&`\
+  \ > `||`\n2. `||` > `&&` > `!`\n3. `&&` > `!` > `||`\n4. `&&` > `||` > `!`\n\n###\
+  \ 第 58 \n\n“break”和“continue”的区别是 __ 和 __ ？\n\n1. 停止程序运行。继续程序运行。\n2. 继续程序运行。停止程序运行。\n\
+  3. 退出循环。进入下次循环。\n4. 进入下次循环。退出循环。\n\n### 第 59 \n\n在 JavaScript 中，使用 __ 关键字声明函数。\n\
+  \n1. `fun`\n2. `method`\n3. `var`\n4. `function`\n\n### 第 60 \n\n在 HTML 文档中，哪个 JS\
+  \ 命令应该先出现：函数定义还是函数调用？\n\n1. 函数调用出现在函数定义之前。\n2. 函数定义出现在函数调用之前。\n3. 函数调用出现在函数定义内部。\n\
+  4. 它们的顺序并不重要。\n\n### 第 61 \n\n在 JavaScript 函数中，使用 __ 关键字可以将结果值返回给调用者。\n\n1. regain\n\
+  2. `return`\n3. retrieve\n4. result\n\n### 第 62 \n\n在以下代码中，哪行是不正确的？\n\n```javascript\n\
+  var car;    // line 1\ncar = new Object( );   // line 2\ncar = \"Yellow\";   //\
+  \ line 3\nalert (\"The color of car is yellow\");  // line 4\n```\n\n1. line 1\n\
+  2. line 2\n3. line 3\n4. line 4-line 4\n\n### 第 63 \n\n在以下代码中，哪个答案是正确的？\n\n```javascript\n\
+  function car ( color, size ){\nthis.color = color;   // line 1\nthis.size = size;\
+  \      // line 2\n}\nvar myCar = new car (\"Yellow \", \" Large\");\nalert (myCar.color\
+  \ + myCar.size);    // line 3\n```\n\n1. line 1\n2. line 2\n3. line 3\n4. 以上全部正确。\n\
+  \n### 第 64 \n\n以下哪个命令可以显示浏览器名称？\n\n1. `navigator.userAgent`\n2. `navigator.platform`\n\
+  3. `navigator.plugin`\n4. `navigator.appName`\n\n### 第 65 \n\n以下中哪个命令不是 JavaScript\
+  \ 命令？\n\n1. `window.history.reverse( )`\n2. `window.history.back( )`\n3. `window.history.forward(\
+  \ )`\n4. `window.history.go( number )`\n\n### 第 66 \n\n以下哪个命令无法获取屏幕分辨率？\n\n1. `window.screen.availWidth`\n\
+  2. `window.screen.getHeight`\n3. `window.screen.width`\n4. `window.screen.height`\n\
+  \n### 第 67 \n\n以下哪些命令是 JavaScript 命令？（多选题）\n\n1. `window.scrollBy( )`\n2. `window.moveBy(\
+  \ )`\n3. `window.scrollTo( )`\n4. `window.moveTo( )`\n\n### 第 68 \n\n在以下代码中，哪行是不正确的？\n\
+  \n```javascript\nvar result = window.confirm( \"OK or Cancel?\");  // line 1\n(\
+  \ result = true) ?    // line 2\nalert ( \"OK button was clicked.\") :   // line\
+  \ 3\nalert ( \"Cancel button was clicked.\");   // line 4\n```\n\n1. line 1\n2.\
+  \ line 2\n3. line 3\n4. line 4\n\n### 第 69 \n\n在以下代码中，哪行是不正确的？\n\n```javascript\n\
+  var num = window.prompt ( \"How many car? Please enter 1, 2, 3 or other number.\
+  \ \");   // line 1\nif (num == \"1\")     //  line 2\nthen alert ( \"There is one\
+  \ car.\" );   //  line 3\nelse     // line 4\nalert ( \"There are two or more cars.\"\
+  );\n```\n\n1. line 1\n2. line 2\n3. line 3\n4. line 4\n\n### 第 70 \n\n在以下代码中，哪行是不正确的？\n\
+  \n```javascript\nvar win = window.open ( \"w.html\",    // line 1\n\"MyWindow\"\
+  ,    // line 2\nwidth = 300, height = 200, status = no );   // line 3\nwin.document.write(\"\
+  This is a small window.\");   // line 4\n```\n\n1. line 1\n2. line 2\n3. line 3\n\
+  4. line 4\n\n### 第 71 \n\n以下哪个陈述是不正确的？\n\n1. `document.getElementById( )` 通过其 ID\
+  \ 定位元素。\n2. `document.getElementByTagName( )` 通过标签名定位元素。\n3. `document.getElementByClass(\
+  \ )` 通过类名定位元素。\n4. `document.getElementByVariable` 通过变量名定位元素。\n\n### 第 72 \n\n以下哪个陈述是不正确的？\n\
+  \n1. `window.document.domain` 包含 URL 的域名。\n2. `window.document.URL` 包含完整的 URL 地址。\n\
+  3. `window.document.referrer` 包含带有该链接的网页的 URL。\n4. `window.document.title` 包含浏览器的\
+  \ 标题。\n\n### 第 73 \n\n以下哪个陈述是不正确的？\n\n1. `window.document.createElement( )` 可以动态创建一个新的\
+  \ HTML 元素。\n2. `window.document.createTextNode( )` 可以创建一个指定字符串的对象。\n3. `window.document.createID(\
+  \ )` 可以创建一个指定 ID 的元素。\n4. `hasNodes` 可以测试元素是否具有子元素。\n\n### 第 74 \n\n以下哪个陈述是正确的？（多选题）\n\
+  \n1. `setAttribute( )` 可以为 HTML 元素添加属性。\n2. `getAttribute( )` 可以获取赋值给属性的值。\n3. `appendChild(\
+  \ )` 可以将 HTML 元素添加到文档。\n4. `removeChild( )` 可以删除文档中的 HTML 元素。\n\n### 第 75 \n\n点击按钮返回上一页，使用以下代码：\n\
+  \n1. `onclick = \"history.withdraw( )\"`\n2. `onclick = \"history.backward( )\"\
+  `\n3. `onclick = \"history.previous( )\"`\n4. `onclick = \"history.back( )\"`\n\n\
+  ### 第 76 \n\n当光标离开对象时，使用 alert( ) 命令：\n\n1. `onUnload = alert(\"Is it?\")`\n2. `onFocus\
+  \ = alert(\"Is it?\")`\n3. `onMove = alert(\"Is it?\")`\n4. `onBlur = alert(\"Is\
+  \ it?\")`\n\n### 第 77 \n\n以下哪些属于按钮事件？（多选题）\n\n1. `onHelp` 事件\n2. `onReset` 事件\n\
+  3. `onScroll` 事件\n4. `onSubmit` 事件\n\n### 第 78 \n\n以下哪个不是鼠标事件？\n\n1. `onMouseUp`\
+  \ 事件\n2. `onMouseDown` 事件\n3. `onDbClick` 事件\n4. `onSClick` 事件\n\n### 第 79 \n\n\
+  以下代码中哪行是不正确的？\n\n```javascript\nwindow.onload( ) = welcome( );    // line 1\nfunction\
+  \ welcome( ){   // line 2\nalert ( \"Welcome to my site!\");   // line 3\nalert\
+  \ ( \"The page loaded\");   // line 4\n}\n```\n\n1. line 1\n2. line 2\n3. line 3\n\
+  4. line 4\n\n### 第 80 \n\n以下代码中哪行是不正确的？\n\n```javascript\ntry{\nvar num;   // line1\n\
+  var x = y;   // line 2\n}\ncatch(e){    // line 3\ndocument.write(e);   // line\
+  \ 4\n}\n```\n\n1. line 1\n2. line 2\n3. line 3\n4. line 4\n\n### 第 81 \n\n测试一个数字是奇数还是偶数，最好使用\
+  \ __ ？\n\n1. `if (num + 2 == 0)…`\n2. `if (num - 2 == 0)…`\n3. `if (num * 2 == 0)…`\n\
+  4. `if (num % 2 == 0)…`\n\n### 第 82 \n\n以下代码的输出是什么？\n\n```html\n<form id =\"f\"\
+  \ method =\"post\" action = \" >\n<input type =\"button\" id =\"b\" value =\"Please\
+  \ Click\" onclick=myFunction()>\n</form>\n<script>\nfunction myFunction(){\nvar\
+  \ message;\nmessage = document.forms.f.b.value;\nalert ( message );\n}\n</script>\n\
+  ```\n\n1. button\n2. b\n3. Please Click\n4. nothing\n\n### 第 83 \n\n以下代码中哪行是不正确的？\n\
+  \n```html\n<form id =\"f\" method =\"post\" action = \" >   <!-- line 1-->\n<input\
+  \ type =\"text\" id =\"t\" name =\"mytext\">\n</form>     <!-- line 2 -->\n<script>\n\
+  window.document.forms.f.t.value = \"JavaScript!\";\nwindow.document.forms.f.t.style.color\
+  \ = \"red\";  // line 3\nwindow.document.forms.f.t.style.font = \"18pt\";  // line\
+  \ 4\n</script>\n```\n\n1. line 1\n2. line 2\n3. line 3\n4. line 4\n\n### 第 84 \n\
+  \n以下代码的输出是什么？\n\n```javascript\nvar str = \"Hello world, welcome to my web site!.\"\
+  ;\nvar n = str.indexOf(\"JavaScript\");\ndocument.write ( n );\n```\n\n1. 1\n2.\
+  \ 0\n3. -1\n4. nothing\n\n### 第 85 \n\n检查邮箱格式是否错误，通常使用 __ 代码。（多选题）\n\n1. `email.value.indexOf(\"\
+  @\") == -1;`\n2. `email.value.indexOf(\"@\") == 0;`\n3. `email.value.indexOf(\"\
+  .\") == -1;`\n4. `email.value.indexOf(\".\") == 0;`\n\n### 第 86 \n\n哪个属性返回浏览器状态栏中的文本？\n\
+  \n1. `window.self`\n2. `window.parent`\n3. `window.top`\n4. `window.status`\n\n\
+  ### 第 87 \n\n以下哪个方法属于 Math 对象？\n\n1. `atan( )`\n2. `indexOf( )`\n3. `getDay( )`\n\
+  4. `setSecond( )`\n\n### 第 88 \n\n以下属性中哪个是不正确的？\n\n1. `location.hostname` 返回主机名。\n\
+  2. `location.port` 返回端口号。\n3. `location.ip` 返回 IP 地址。\n4. `location.host` 返回主机名和端口号。\n\
+  \n### 第 89 \n\n以下代码的输出是什么？\n\n```javascript\nvar sum = 0;\nfor ( var i = 1; i <\
+  \ 51; i ++ )\n{\nsum = sum + i;\n}\nalert (sum);\n```\n\n1. 2550\n2. 1275\n3. 637.5\n\
+  4. 318.75\n\n### 第 90 \n\n以下哪个陈述是正确的？\n\n`str.substring (var m, var n)`\n\n5. 返回从\
+  \ m 到 n 的子字符串。\n6. 返回从 m-1 到 n-1 的子字符串。\n7. 返回从 m-1 到 n 的子字符串。\n8. 返回从 m 到 n-1 的子字符串。\n\
+  \n### 第 91 \n\n以下哪些是 Array 对象的正确方法？（多选题）\n\n\n\n\n\n# JavaScript 测验\n\n## 数组方法\n\
+  \n1. `unshift( )` 在数组开头添加一个元素。\n2. `push( )` 在数组末尾添加一个元素。\n3. `shift( )` 从数组开头删除一个元素。\n\
+  4. `pop( )` 从数组末尾删除一个元素。\n\n## 问题\n\n### 第 92 题\n\n以下代码的输出是什么？\n\n```javascript\n\
+  var now = new Date( );\nvar today = now.getTime( );\ndocument.write(today);\n```\n\
+  \n1. 返回当前时间。\n2. 返回格林威治时间。\n3. 返回时区。\n4. 返回一个数字，表示当前时间与 1970 年 1 月 1 日之间的毫秒差。\n\n\
+  ### 第 93 题\n\n下列哪个陈述是不正确的？\n\n1. `clientX` / `clientY` 是事件发生时鼠标坐标到网页页面坐标的长度。\n2.\
+  \ `offsetX` / `offsetY` 是事件发生时鼠标坐标到触发元素坐标的长度。\n3. `screenX` / `screenY` 是事件发生时鼠标坐标到屏幕坐标的长度。\n\
+  4. `imageX` / `imageY` 是事件发生时鼠标坐标到图像坐标的长度。\n\n### 第 94 题\n\n在 DOM 中下列哪个陈述是正确的？\n\
+  \n1. `Element` 是一种 `Node`。\n2. `Node` 是一种 `Element`。\n3. `Element` 和 `Node` 是完全不同的。\n\
+  4. DOM 中根本没有 `Element` 和 `Node`。\n\n### 第 95 题\n\n以下代码的输出是什么？\n\n```javascript\n\
+  var myLine = document.createElement(\"hr\");\ndocument.body.appendChild(myLine);\n\
+  ```\n\n1. 单行换行符。\n2. 一条水平分割线。\n3. 可改变大小的标题。\n4. 一个超链接。\n\n### 第 96 题\n\n以下代码的输出是什么？\n\
+  \n```javascript\nvar myText = document.createTextNode(\"Hello Dom!\");\ndocument.body.appendChild(myText);\n\
+  ```\n\n1. `myText`\n2. `TextNode`\n3. `appenChild`\n4. Hello Dom!\n\n### 第 97 题\n\
+  \n以下代码的输出是什么？\n\n```html\n<p>Hello Dom!</p><br>\n<script>\nvar s = document.getElementsByTagName(\"\
+  p\")[0];\ns.setAttribute(\"align\", \"center\");\n</script>\n```\n\n1. Hello Dom!\
+  \ ( 在右侧 )\n2. Hello Dom! ( 在左侧)\n3. Hello Dom! ( 居中 )\n4. 什么都不显示。\n\n### 第 98 题\n\
+  \n以下代码的输出是什么？\n\n```html\n<p>Hello Dom!</p><br>\n<script>\nvar s = document.getElementsByTagName(\"\
+  p\")[0];\ns.setAttribute(\"align\", \"center\");\nvar attr = s.getAttribute( \"\
+  align\" );\ndocument.write( attr );\n</script>\n```\n\n1. Hello Dom!\n2. Align\n\
+  3. TagName\n4. Hello Dom!     center\n\n### 第 99 题\n\n以下代码的 alert 输出是什么？\n\n```html\n\
+  <ul id=\"color\"><li>Green</li><li>Yellow</li></ul>\n<script>\nvar child = document.getElementById(\"\
+  color\").hasChildNodes( );\nalert ( child );\n</script>\n```\n\n1. color\n2. `hasChildNodes`\n\
+  3. true\n4. false\n\n### 第 100 题\n\n在 Ajax 中，当 `readyState` 为 4 时，意味着请求过程处于阶段是 ___？\n\
+  \n1. 未初始化\n2. 正在发送数据\n3. 已接收数据\n4. 数据可用。\n\n### 第 101 题\n\n在 Ajax 中，当 `http status`\
+  \ 为 200 时，意味着请求结果是 ____？\n\n1. 请求成功。\n2. 未授权\n3. 禁止访问\n4. 未找到。\n\n### 第 102 题\n\n\
+  关于 Ajax 下列哪个陈述正确？（多选题）\n\n1. `readyState` 属性是从 0 到 4 的请求状态。\n2. `Http status` 返回数字\
+  \ 200, 401, 403 或 404。\n3. `onreadystatechange` 属性是一个状态事件。\n4. `responseText` 属性返回来自服务器的文本。\n\
+  \n## 答案\n\n| 题目 | 答案 | 题目 | 答案 |\n|---|---|---|---|\n| 1 | D | 26 | D |\n| 2 | D\
+  \ | 27 | D |\n| 3 | B | 28 | A |\n| 4 | A | 29 | D |\n| 5 | D | 30 | C |\n| 6 |\
+  \ C | 31 | B |\n| 7 | A | 32 | D |\n| 8 | B | 33 | D |\n| 9 | A | 34 | A |\n| 10\
+  \ | D | 35 | B |\n| 11 | A | 36 | C |\n| 12 | D | 37 | B |\n| 13 | A | 38 | B |\n\
+  | 14 | C | 39 | D |\n| 15 | C | 40 | D |\n| 16 | D | 41 | B |\n| 17 | B | 42 | D\
+  \ |\n| 18 | A | 43 | A |\n| 19 | D | 44 | C |\n| 20 | D | 45 | D |\n| 21 | B | 46\
+  \ | C |\n| 22 | B | 47 | B |\n| 23 | C | 48 | D |\n| 24 | D | 49 | B |\n| 25 | C\
+  \ | 50 | B |\n| 51 | A | 76 | D |\n| 52 | A | 77 | B |\n| 53 | C | 78 | D |\n| 54\
+  \ | B | 79 | A |\n| 55 | D | 80 | B |\n| 56 | B | 81 | D |\n| 57 | A | 82 | C |\n\
+  | 58 | C | 83 | D |\n| 59 | D | 84 | C |\n| 60 | B | 85 | A,C |\n| 61 | B | 86 |\
+  \ D |\n| 62 | C | 87 | A |\n| 63 | D | 88 | C |\n| 64 | D | 89 | B |\n| 65 | A |\
+  \ 90 | D |\n| 66 | B | 91 | A,B,C |\n| 67 | A,B,D | 92 | D |\n| 68 | B | 93 | D\
+  \ |\n| 69 | C | 94 | A |\n| 70 | C | 95 | B |\n| 71 | D | 96 | D |\n| 72 | D | 97\
+  \ | C |\n| 73 | C | 98 | D |\n| 74 | ABCD | 99 | C |\n| 75 | D | 100 | D |\n| 101\
+  \ | A | 102 | |\n\n## 结语\n\n时光过得真快！该告别了。\n\n### Ray 的著作\n\n- [Linux 命令行](https://www.amazon.com/Linux-Command-Line-Beginners-Guide/dp/B00OP0TZDY/ref=sr_1_20?ie=UTF8&qid=1420734172&sr=8-20&keywords=linux)\n\
+  - [8 小时掌握 JAVA](https://www.amazon.com/Java-Hours-Essential-Knowledge-Beginners-ebook/dp/B00UI926Y/ref=sr_1_205?s=digital-text&ie=UTF8&qid=1426071988&sr=1-205&keywords=java)\n\
+  - [8 小时掌握 PHP](https://www.amazon.com/PHP-MySQL-Minutes-Coding-Beginners-ebook/dp/B00U02LB0/ref=sr_1_23?ie=UTF8&qid=1424960929&sr=8-23&keywords=php)\n\
+  - [8 小时掌握 JavaScript](https://www.amazon.com/JAVCRIPT-Beginners-JavaScript-Simple-programming-ebook/dp/B00WH0ESWC/ref=sr_1_30?s=digital-text&ie=UTF8&qid=1429761426&sr=1-30&keywords=javascript)\n\
+  - [8 小时掌握 C++](https://www.amazon.com/Hours-Beginners-Simple-programming-coding-ebook/dp/B00XT1HRA8/ref=sr_1_16?ie=UTF8&qid=1432212644&sr=8-16&keywords=C%2B%2B)\n\
+  - [8 小时掌握 AngularJS](https://www.amazon.com/AngularJS-Angular-Beginners-JavaScript-programming-ebook/dp/B011PHIGIE/ref=sr_1_18?ie=UTF8&qid=1441492659&sr=8-18&keywords=AngularJS)\n\
+  - [8 小时掌握 JQuery](https://www.amazon.com/gp/product/B015C6CACM?*Version*=1&*entries*=0)\n\
+  - [8 小时掌握 Python](https://www.amazon.com/dp/B01FOJ4JPS)\n- [8 小时掌握 HTML CSS](https://www.amazon.com/dp/B01FBHNZ3U)\n\
+  - [8 小时掌握 C#](https://www.amazon.com/Beginners-Simple-Programming-Language-Coding-ebook/dp/B01LTFQHFQ/ref=asap_bc?ie=UTF8#nav-subnav)\n\
+  - [JavaScript 50 个实用程序](https://www.amazon.com/JavaScript-50-Useful-Program-Programmers-ebook/dp/B01HOSXPWK?ie=UTF8&ref_=asap_bc)\n\
+  - [PHP 100 道测试、答案与解析](http://www.amazon.com/PHP-Tests-Beginner-Answers-Explanations-ebook/dp/B00U4Z5BHS/ref=sr_1_117?s=digital-text&ie=UTF8&qid=1425242078&sr=8-117&keywords=php)\n\
+  \n"
