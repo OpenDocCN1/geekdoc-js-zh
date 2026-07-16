@@ -1,0 +1,262 @@
+- "# XML 编程：快速、简单高效学习 XML 编程的终极指南（操作系统、项目、XML 编程、DTD、HTML5、JavaScript）\n\n\n\n![](img/00005.jpeg)\n\
+  \n\n\n\n## 引言\n\n你是否曾觉得学习 XML 是一场噩梦？是否被海量的初学者指南搞得心灰意灭？我理解从一本几百页的书中提取核心内容的困难。为了自己创建一个简单的\
+  \ XML 文档而去阅读几千行代码并不无趣。如果我说我可以为你完成这项工作，你会有什么感觉？我已经为你读完了数百页的内容，并将将为你提供即取即用的“果汁”。\n\
+  \n本书是一份快速易懂的指南，是从那些像枕头一样厚的书籍、令人人生的冗长示例以及枯燥的高级术语中提取出来的。我写这本书时，考虑到了我作为初学者所面临的所有困难，因此提取的内容是简单、易懂且简洁的。\n\
+  \n通过这段简短的介绍，我请求你的关注，并欢迎你和我一起穿过这本书。\n\n## 第 1 章 - 标记语言包含什么？\n\n![](img/00001.jpeg)\n\
+  \n与所有人类语言一样，计算机语言也是为了通信而开发的。人与机的通信、程序与程序之间的通信通过各种计算机语言来实现。每种开发的语言都有一套规则和程序，我们称之为语法。语言可以根据其开发的通信类型进行分组。\n\
+  \n标记语言主要用于指示显示文本的软件；它们被设计在世界范围内传递信息。标记是元数据，当它添加到文本或文档中时，会增强其含义。准确来说，标记语言是一组标签，添加到文档中可以界定和突出该文档的不同部分。\n\
+  \n标记语言使用标签，标签包含了处理、定义和展示文本所需的必要规范。最流行的标记语言之一是超文本标记语言（HTML），它们具有预定义的呈现语义。它们更广泛的是语义化地描述网站的结构，并提供呈现的提示。`HTML`\
+  \ 中的预定义元素包括：标题、段落、列表、表格、图像和超链接。\n\n一个简单的 HTML 代码看起来像这样：\n\n### 代码段 1\n\n```html\n\
+  <HTML>\n<HEAD>\n<TITLE>Markup Language HTML</TITLE>\n</HEAD>\n<BODY>\n<H1>\nThis\
+  \ is a sample HTML page\n</H1>\n<P>\nSGML stands for Standard Generalized Markup\
+  \ Language.\n<BR>\n<B><I> SGML is not in itself a document language. </I></B>\n\
+  <UL>\n<LI><AHREF=”markuplanguage.htm”><B>Markup</B></A></LI>\n<LI><AHREF=”htmlpage.htm”><B>HTML\
+  \ Page</B></A></LI>\n<LI><AHREF=”xmlsampdocument.htm”><B>XML Sample</B></A></LI>\n\
+  </UL>\n</BODY>\n</HTML>\n```\n\n### 小贴士\n\n纯文本：John Mathews\n\nHTML 文件（显示纯文本，使用预定义标签）：\n\
+  \n```html\n<HTML>\n<HEAD><TITLE> Name </ TITLE ></ HEAD>\n<BODY><P> John Mathews\
+  \ </P><BODY>\n</HTML>\n```\n\n你在标记容器里发现什么吗？\n\n## 第 2 章 - 有了 HTML 为什么还要 XML？\n\n\
+  ![](img/00002.jpeg)\n\nXML 是可扩展标记语言（eXtensible Markup Language）的缩写；它们提供了计算机程序或计算机之间共享数据和信息的方法。HTML\
+  \ 允许用户使用预定义的呈现语义处理、定义和展示文本，而 XML 是一种元标记语言。与 HTML 或 `XML` 中的 `troff` 不同，XML 没有预定义的标签，你需要根据你的通信需求创建自己的标签和语义。此外，XML\
+  \ 专注于描述文档的结构和含义，它不显示文档看起来什么样。它不描述文档的格式，但可以使用样式表对 XML 文档进行格式化。一旦共享数据，由接收端计算机程序自行解释有用信息。最初，XML\
+  \ 是作为一种网络发布手段创建的，但后来，它们的用法在新领域展开了。\n\nXML 是人类可读的，与语言无关；它可以跨平台共享且不依赖于操作系统。XML 不仅用于渲染\
+  \ HTML，还渲染原始数据，例如这些数据可以被处理并输入数据库。现在产生了一个明显的问题，为什么要用 XML，简单的文本文件。\n\n### 代码段 2\n\n\
+  ```xml\n<items>\n<item>\n<name>Coffee Table</name>\n<type>Wooden Furniture</type>\n\
+  <color>black</color>\n</item>\n<item>\n<name>Rocking Chair</name>\n<type>Wooden\
+  \ Furniture</type>\n<color>brown</color>\n</item>\n<item>\n<name>Bean Bag</name>\n\
+  <type>Rexene Furniture</type>\n<color>black</color>\n</item>\n<item>\n<name>Wall\
+  \ Stickers</name>\n<type>Wall Decor</type>\n<color>blue</color>\n</item>\n</items>\n\
+  ```\n\n代码段 2 结合信息说明了 `XML` 数据代表商店的库存列表。\n\n以下是 XML 的一些实际用途：\n\n数据传输和存储：代码段 2 是使用\
+  \ `XML` 记录的完美示例。`XML` 使用标签标记每个信息字段，从而使数据处理（搜索、排序、过滤等）变得简单。\n\n文档发布：可以轻松地将样式表添加到\
+  \ `XML` 中以获得布局。\n\n计算机程序之间的信息交换：程序员对 XML 最流行的用途之一是在网络服务通信中的应用。`XML` 可以跨网络服务携带信息，而不依赖于构建网络服务的语言或平台。\n\
+  \n为操作系统创建 KVM 和启动：这是 `XML` 最不为人知的用法之一。可以使用 `XML` 创建内核虚拟机和引导。\n\n创建、格式化、存储、编码和交换：数学公式、化学分子结构、乐谱、DNA、RNA、蛋白质序列信息、复杂的电子商务交易、天文学数据、谱系数据等，都可以以所需的格式进行创建或交换。\n\
+  \n基于 XML 的操作系统\n\n基于 XML 的互联网操作系统（XIOS）是由一家名为 Xcerion 的公司提出的提议，该操作系统运行在网络浏览器中，预计将提供桌面计算体验和云计算的优势。提议的操作系统将带来许多好处，最重要的一点是\
+  \ XIOS 将成为有以来最安全的操作系统，因为它对大多数恶意软件免疫。其他优点包括：低开发成本、数据可移植性、平台和硬件无关以及内置协作。\n\n基于 XML\
+  \ 的接口定义语言\n\n\n\n\n\nWSDL - Web 服务描述语言（Web Services Description Language）是 XML 最重要的应用之一。WSDL\
+  \ 是一种描述 Web 服务提供的功能的 XML 文档。它还描述了如何使用提供的服务。虽然这种 XML 对人类可读且可编辑，但大多数是通过程序化生成和消费的。\n\
+  \n### 小贴士\n\n纯文本：`John Mathews`\n\nXML 文件（使用用户定义的标签将纯文本转换为可用的信息）：\n\n```xml\n<name>\n\
+  \  <firstname> John</firstname>\n  <lastname> Mathews</lastname>\n</name>\n```\n\
+  \nXML 不值得探索吗？\n\n## 第 3 章 - 学习语法与语义\n\n![](img/00003.jpeg)\n\n对于一个简单的标记语言来说，炒作得太过了了不是吗？让我们学习它、使用它，看看它到底有多好。学习使用一种语言的第一步是学习它遵循的规则。\n\
+  \n### XML 不是一种编程语言\n\n与编程语言不同，XML 不执行任何计算或算法来处理数据。它只是以结构化的方式存储数据，这些数据可以被 `XML Parser`\
+  \ 解析。\n\n### 代码片段 3\n\n```xml\n<?xml version='1.0' encoding=\"UTF-8\" standalone=\"\
+  no\" ?>\n<list:coffeeshopmanagementlist\nxmlns:list=\"http://www.xml.example.com/ns/list\"\
+  \nxmlns:csf=\"http://www.xml.example.com/ns/coffeeshopfurniture\"\nxmlns:a=\"http://www.xml.example.com/ns/attender\"\
+  >\n<list:coffeeshoptablelist>\n  <csf:name>Family Table</csf:name>\n  <csf:number>1</csf:number>\n\
+  \  <csf:seats>4</csf:seats>\n  <csf:type>Table and Chair</csf:type>\n  <a:tableattender>\n\
+  \    <a:name>John</a:name>\n    <a:experience>4years</a:experience>\n  </a:tableattender>\n\
+  </list:coffeeshoptablelist>\n<list:coffeeshoptablelist>\n  <csf:name>Corporate Table</csf:name>\n\
+  \  <csf:number>2</csf:number>\n  <csf:seats>6</csf:seats>\n  <csf:type>Sofa</csf:type>\n\
+  \  <a:tableattender>\n    <a:name>Peter</a:name>\n    <a:experience>2years</a:experience>\n\
+  \  </a:tableattender>\n</list:coffeeshoptablelist>\n</list:coffeeshopmanagementlist>\n\
+  ```\n\n### 颜色代码：\n\n- `XML version` 和编码类型\n- `Namespaces`（命名空间）\n- `Root Element`（根元素）\n\
+  - `Elements`（元素）\n\n### XML 声明\n\n如果 XML 包含声明，那么它应该是 XML 的第一行。在代码片段 3 中，蓝色标记的第一行是\
+  \ `XML declaration`，它通常以 `\"<?xml\"` 开始。XML 声明是区分大小敏感的，`\"<?xml\"` 应该始终小小写。XML 声明有三个参数\
+  \ `version`（表示 XML 的版本）、`encoding`（表示使用的编码类型）和 `standalone`（表示它是否是独立的 XML）。参数的使用顺序必须与前一个语句解释的顺序相同。参数\
+  \ `\"version\"` 是声明中的强制性参数。\n\n### XML 元素\n\n每个 XML 都有一个根元素，它的名称通常说明了 XML 中元素集合代表了什么。在代码片段\
+  \ 3 中，绿色标记的标签元素是该 XML 的根元素。`\"coffeeshopmanagementlist\"` 这个名称为我们提供了关于 XML 内容的提示。每个元素都带有标签（放在一对小于和大于符号\
+  \ `<>` 之间）。元素必须正确地嵌套。\n\n### 代码片段 4\n\n```xml\n<?xml version='1.0' >\n<shoes>\n\
+  \  <shoe>\n    <brand>Reebok</brand>\n    <size>4</size>\n    <color>Brown\n</shoes>\n\
+  </shoe>\n```\n\n代码片段 4 显示了元素嵌套不当。在关闭标签元素 `</shoes>` 之前，必须关闭标签元素 `</color>` 和 `</shoe>`。代码片段\
+  \ 5 显示了正确的嵌套方式。\n\n### 代码片段 5\n\n```xml\n<?xml version='1.0' >\n<shoes>\n  <shoe>\n\
+  \    <brand>Reebok</brand>\n    <size>4</size>\n    <color>Brown</color>\n  </shoe>\n\
+  </shoes>\n```\n\n XML 的元素可以有属性，它们被称为属性（attributes）。每个元素可以有一个或多个属性，且属性是区分大小敏感的。属性只能有一个值。在代码片段\
+  \ 6 中，元素 `\"emails\"` 具有属性 `\"date\"` 和 `\"from\"`，值分别为 `\"10/12/2014\"` 和 `\"Ann\"\
+  `。\n\n### 代码片段 6\n\n```xml\n<?xml version='1.0' >\n<organizer>\n  <emails date =\"\
+  10/12/2014\" from=\"Ann\" >4 </emails>\n  <calls>2</calls>\n  <messages> 25</messages>\n\
+  </ organizer>\n```\n\n### 代码片段 7\n\n```xml\n<?xml version='1.0' >\n<organizer>\n\
+  \  <emails date =\"10/12/2014\" from=\"Ann\" date =\"11/12/2014\">4 </emails>\n\
+  \  <calls>2</calls>\n  <messages> 25</messages>\n</ organizer>\n```\n\n在代码片段 7 中，属性\
+  \ `\"date\"` 有两个值 `\"10/12/2014\"` 和 `\"11/12/2014\"`，这是错误的。\n\n### 命名空间\n\n由于 XML\
+  \ 元素名称都是由用户定义的，因此词汇冲突的可能性更大。在代码片段 8 中，元素 `\"coffeeshoptablelist\"` 和 `\"tableattender\"\
+  ` 都有子元素 `\"name\"`。在这些情况下，为了避免混淆，我们采用命名空间。在代码片段 3 中，这个问题通过使用命名空间解决了。子元素 `\"name\"\
+  ` 根据其上下文带有一个前缀。当它位于 `\"coffeeshoptablelist\"` 下时，它有一个前缀 `\"csf\"`；当它位于 `\"tableattender\"\
+  ` 下时，它有一个前缀 `\"a\"`。这个前缀消除了消费端 XML 解释处理过程中可能的混淆。\n\n### 代码片段 8\n\n```xml\n<?xml\
+  \ version='1.0' >\n<coffeeshoptablelist>\n  <name>Family Table</name>\n  <number>1</number>\n\
+  \  <seats>4</seats>\n  <type>Table and Chair</type>\n  <tableattender>\n    <name>John</name>\n\
+  \    <experience>4years</experience>\n  </tableattender>\n</coffeeshoptablelist>\n\
+  ```\n\n命名空间声明以属性 `\"xmlns\"` 开始，随后是本地标识符。\n\n### 命名空间声明语法\n\n```xml\nxmlns:prefix=\"\
+  URI\"\n```\n\n命名空间声明示例\n\n```xml\nxmlns:list=\"http://www.xml.example.com/ns/list\"\
+  \n```\n\n其中，`URI` 是资源标识符。它是映射到互联网资源的字符串，通常是一个 `URL`（统一资源定位符）或 `URN`（统一资源名称）。\n\n\
+  ### 小贴士\n\n- XML 声明没有闭合标签。\n- XML 声明参数区分大小写。\n- XML 中只有一个根元素。\n- 所有的 XML 元素都区分大小写的。\n\
+  - 所有的 XML 元素必须有闭合标签。\n- 所有 XML 元素的值必须在单引号或双引号内。\n\n## 第 4 章 - 文档类型定义\n\n在实际应用中，XML\
+  \ 文档跨应用程序使用。因此，XML 文档必须符合标准。所以一个 XML 不仅应当是格式良好的（well formed），而且是有效的（valid）。\n\n\
+  ### 为什么用 DTD？\n\n文档类型定义（DTD）有助于构建有效的 XML。它是一个带有规则的文档，定义了 XML 文档的结构和合法元素。这使得 XML\
+  \ 文档具有可比性并适用于应用程序的数据交换。消费应用程序可以使用相同的 DTD 验证输入的 XML 文档。\n\n### 示例：\n\n如果 XML 文档包含一个元素\
+  \ `\"size\"`，它可以表示为 `<Size>` 或 `<size>` 或 `<SIZE>`。它可以有值，也可以为空；值可以是英寸或厘米。这些歧义在共享\
+  \ XML 之前必须进行检查并实现标准的表示方法。\n\n### 声明元素的 DTD 语法\n\n```dtd\n<!ELEMENT SIZE (#PCDATA)>\n\
+  ```\n\n### 如何创建 DTD\n\nDTD 可以是内部或外部的。内部 DTD 作为 XML 的一部分包含，而外部 DTD 是一个独立的文档。DTD 将\
+  \ XML 组件分为 5 个部分：\n\n- 元素\n- 属性\n- 实体\n- PCDATA\n- CDATA\n\n我们已经充分讨论了元素和属性，实体是 XML\
+  \ 文档中使用的特殊字符。实体包括：`<`, `>`, `&`, `'`, `\"` 。PCDATA 是会被解析器解析的文本，它们会被视为实体或标记。CDATA\
+  \ 是不会被解析器解析的文本。\n\n### DTD 中的元素声明\n\n```dtd\n<!ELEMENT element-name category>\n\
+  <!ELEMENT element-name EMPTY>\n<!ELEMENT element-name ANY>\n```\n\n其中，\n\n`element-name`\
+  \ 将替换为实际的元素名称，`element-name` 区分大小写。\n\n\n\n\n该类别定义了 `element-name` 中数据的类型。\n\n关键字\
+  \ `EMPTY` 表示该元素将没有值。\n\n关键字 `ANY` 表示该元素可以包含任何类型的内容。\n\n以下代码段示例了在 DTD 中声明带有子元素的各种语法：\n\
+  \n### 声明具有多个子元素的元素\n\n```xml\n<!ELEMENT camera (lens, body, filter)>\n```\n\n###\
+  \ 声明具有二一子元素的元素\n\n```xml\n<!ELEMENT camera (filter|adapter)>\n```\n\n### 声明具有零或一个子元素的元素\n\
+  \n```xml\n<!ELEMENT camera (lens?)>\n```\n\n### 声明具有零或多个子元素的元素\n\n```xml\n<!ELEMENT\
+  \ camera (lens*)>\n```\n\n### 声明至少有一个子元素的元素\n\n```xml\n<!ELEMENT camera (lens+)>\n\
+  ```\n\n### 声明只有一个子元素的元素\n\n```xml\n<!ELEMENT camera (lens)>\n```\n\n以下代码段展示了在 DTD\
+  \ 中声明属性的语法：\n\n### 通用语法\n\n```xml\n<!ATTLIST element-name attribute-name attribute-type\
+  \ attribute-value>\n```\n\n### 必须属性值\n\n```xml\n<!ATTLIST element-name attribute-name\
+  \ attribute-type #Required>\n```\n\n### 可选属性值\n\n```xml\n<!ATTLIST element-name\
+  \ attribute-name attribute-type #Implied>\n```\n\n### 固定属性值\n\n```xml\n<!ATTLIST\
+  \ element-name attribute-name attribute-type #Fixed \"value\">\n```\n\n### 字符数据类型属性值\n\
+  \n```xml\n<!ATTLIST element-name attribute-name CDATA attribute-value>\n```\n\n\
+  ### 枚举属性值\n\n```xml\n<!ATTLIST element-name attribute-name (en1|en2|..) attribute-value>\n\
+  ```\n\n### 唯一 ID 属性值\n\n```xml\n<!ATTLIST element-name attribute-name ID attribute-value>\n\
+  ```\n\n### ID 引用属性值\n\n```xml\n<!ATTLIST element-name attribute-name IDREF attribute-value>\n\
+  ```\n\n### ID 引用列表属性值\n\n```xml\n<!ATTLIST element-name attribute-name IDREFS attribute-value>\n\
+  ```\n\n### XML 名称属性值\n\n```xml\n<!ATTLIST element-name attribute-name NMTOKEN attribute-value>\n\
+  ```\n\n### XML 名称列表属性值\n\n```xml\n<!ATTLIST element-name attribute-name NMTOKENS\
+  \ attribute-value>\n```\n\n### 实体属性值\n\n```xml\n<!ATTLIST element-name attribute-name\
+  \ ENTITY attribute-value>\n```\n\n### 实体列表属性值\n\n```xml\n<!ATTLIST element-name\
+  \ attribute-name ENTITIES attribute-value>\n```\n\n### 符号名称属性值\n\n```xml\n<!ATTLIST\
+  \ element-name attribute-name NOTATION attribute-value>\n```\n\n### 预定义 XML 值属性值\n\
+  \n```xml\n<!ATTLIST element-name attribute-name xml: attribute-value>\n```\n\n```xml\n\
+  <?xml version=\"1.0\"?>\n<!DOCTYPE camera [\n<!ELEMENT camera (lens,body,filter)>\n\
+  <!ELEMENT lens      (#PCDATA)>\n<!ELEMENT body      (#PCDATA)>\n<!ELEMENT filter\
+  \ (#PCDATA)>\n]>\n<camera>\n<lens>Sigma 55-250mm</lens>\n<body>Canon 7D</body>\n\
+  <filter>Canon</filter>\n</camera>\n```\n\n下面是一个内部 DTD 的示例：\n\n```xml\n<?xml version=\"\
+  1.0\"?>\n<!ELEMENT camera (lens,body,filter)>\n<!ELEMENT lens      (#PCDATA)>\n\
+  <!ELEMENT body      (#PCDATA)>\n<!ELEMENT filter (#PCDATA)>\n```\n\n下面是一个外部 DTD\
+  \ 及其对应的有效 XML 示例：\n\n```xml\n<?xml version=\"1.0\"?>\n<!ELEMENT camera (lens,body,filter)>\n\
+  <!ELEMENT lens      (#PCDATA)>\n<!ELEMENT body      (#PCDATA)>\n<!ELEMENT filter\
+  \ (#PCDATA)>\n```\n\n上述 DTD 保存为 `camera.dtd`。XML 中包含了该文件，并遵循 DTD 的标准。\n\n```xml\n\
+  <?xml version=\"1.0\"?>\n<!DOCTYPE camera SYSTEM \"camera.dtd\">\n<camera>\n<lens>Sigma\
+  \ 55-250mm</lens>\n<body>Canon 7D</body>\n<filter>Canon</filter>\n</camera>\n```\n\
+  \n你准备好构建你自己的 XML 了吗？\n\n## 第 5 章 - 动手实践\n\n我们可以尝试一下运气吗？我们如何应用目前所学的知识？\n\n来吧，让我们尝试创建一个符合下方\
+  \ `excursion.dtd` 标准的 XML 文档：\n\n```xml\n<!DOCTYPE EXCURSION [ \n<!ELEMENT EXCURSION\
+  \ (PLACE+)>\n<!ELEMENT PLACE (TYPE, DAY+)>\n<!ELEMENT DAY ((DATE, WEEKDAY) | (DATE,\
+  \ WEEKEND))+>\n<!ELEMENT WEEKDAY (#PCDATA)>\n<!ELEMENT DATE (#PCDATA)>\n<!ELEMENT\
+  \ WEEKEND (#PCDATA)>\n<!ATTLIST EXCURSION THEME CDATA #REQUIRED>\n<!ATTLIST PLACE\
+  \ STATE CDATA #REQUIRED>\n<!ATTLIST DAY HOLIDAY CDATA #REQUIRED>\n]>\n```\n\n###\
+  \ 在继续之前，先尝试一下\n\n- 编写一个 XML 声明。\n- 包含 `excursion.dtd`。\n- 查看你是否已经识别了根元素和其他子元素。\n\
+  - 一个有效的 XML 必须是格式良好的（well-formed）。\n- 检查是否正确映射了所有属性。\n- 查看元素和属性值的数据类型。\n- 一旦你创建了\
+  \ XML，使用 DTD 对其进行自我验证。\n\n```xml\n<?xml version=\"1.0\"?>\n<!DOCTYPE EXCURSION SYSTEM\
+  \ \"excursion.dtd\">\n<EXCURSION THEME=\"OFFICE OUTING\">\n<PLACE STATE=\"TAMIL\
+  \ NADU\">\n<TYPE>HILL TREK</TYPE>\n<DAY HOLIDAY=\"NO\">\n<DATE>12/08/2015</DATE>\n\
+  <WEEKDAY>MOND</WEEKDAY>\n</DAY>\n<!-- 此处省略原文中重复的结构以保持逻辑一致 -->\n</PLACE>\n</EXCURSION>\n\
+  ```\n\n\n\n\n```java\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.DocumentBuilder;\n\
+  import org.w3c.dom.Document;\nimport org.w3c.dom.NodeList;\nimport org.w3c.dom.Node;\n\
+  import org.w3c.dom.Element;\nimport java.io.File;\n```\n\n创建文档构建器的实例。\n\n`DocumentBuilderFactory\
+  \ dbFactory = DocumentBuilderFactory.newInstance();`\n\n`DocumentBuilder dBuilder\
+  \ = dbFactory.newDocumentBuilder();`\n\n通过文档构建器解析 XML 文件并创建文档。\n\n`File xmlFile\
+  \ = new File(\"/user/organizer.xml\");`\n`Document doc = dBuilder.parse(xmlFile);`\n\
+  \n提取根元素并创建一个从根节点到子节点的循环。获取元素的值及其对应的属性。\n\n### 提取根元素\n\n`Element rootNode = document.getDocumentElement();`\n\
+  \n### 提取子元素\n\n`Node subElementNode = document.getElementsByTagName(\"emails\");`\n\
+  \n### 提取属性和值\n\n`Element subElement = (Element) subElementNode;`\n`String subElementAttribute\
+  \ = subElement.getAttribute(\"date\");`\n\n让我们来看一个 Java 完整示例代码及其输出，它演示了从 \"oraganizer.xml\"\
+  （代码段 9 所示）中解析和提取数据。\n\n### Java 类\n\n```java\nimport java.io.File;\nimport javax.xml.parsers.DocumentBuilderFactory;\n\
+  import javax.xml.parsers.DocumentBuilder;\nimport org.w3c.dom.Document;\nimport\
+  \ org.w3c.dom.NodeList;\nimport org.w3c.dom.Node;\nimport org.w3c.dom.Element;\n\
+  \npublic class ReadOrganizerXML {\n    public static void main(String[] args) {\n\
+  \        File xmlFile;\n        DocumentBuilderFactory dbFactory;\n        DocumentBuilder\
+  \ dBuilder;\n        Document document;\n        NodeList elementsNodeList;\n  \
+  \      try {\n            xmlFile = new File(\"/user/organizer.xml\");\n       \
+  \     dbFactory = DocumentBuilderFactory.newInstance();\n            dBuilder =\
+  \ dbFactory.newDocumentBuilder();\n            document = dBuilder.parse(xmlFile);\n\
+  \            document.getDocumentElement().normalize();\n            System.out.println(\"\
+  Root element :\" + document.getDocumentElement().getNodeName());\n            elementsNodeList\
+  \ = document.getElementsByTagName(\"organizer\");\n            for (int i = 0; i\
+  \ < elementsNodeList.getLength(); i++) {\n                Node elementNode = elementsNodeList.item(i);\n\
+  \                Element subElement = (Element) elementNode;\n                System.out.println(\"\
+  No. Of Emails : \" + subElement.getElementsByTagName(\"emails\").item(0).getTextContent());\n\
+  \                Element emailElement = (Element) subElement.getElementsByTagName(\"\
+  emails\").item(0);\n                System.out.println(\"Date of Email : \" + emailElement.getAttribute(\"\
+  date\"));\n                System.out.println(\"Email was From : \" + emailElement.getAttribute(\"\
+  from\"));\n                System.out.println(\"No. Of Calls : \" + subElement.getElementsByTagName(\"\
+  calls\").item(0).getTextContent());\n                System.out.println(\"No. Of\
+  \ Messages : \" + subElement.getElementsByTagName(\"messages\").item(0).getTextContent());\n\
+  \            }\n        } catch (Exception e) {\n            e.printStackTrace();\n\
+  \        }\n    }\n}\n```\n\n### 程序输出\n\n```text\nRoot element : organizers\nNo.\
+  \ Of Emails : 4\nDate of Email : 10/12/2014\nEmail was From : Ann\nNo. Of Calls\
+  \ : 2\nNo. Of Messages : 25\nNo. Of Emails : 1\nDate of Email : 12/12/2014\nEmail\
+  \ was From : Jan\nNo. Of Calls : 0\nNo. Of Messages : 4\n```\n\n### 使用 Javascript\
+  \ 解析 XML\n\n让我们考虑代码段 9 中的相同 XML 文档。使用 javascript 解析 XML 文档，必须遵循以下步骤：\n\n### 通过 javascript\
+  \ 加载 XML 文件。\n\n```javascript\nvar xmlDoc = new ActiveXObject(\"Microsoft.XMLDOM\"\
+  );\nfunction loadXML(xmlFile) {\n    xmlDoc.async=\"false\";\n    xmlDoc.onreadystatechange=verify;\n\
+  \    xmlDoc.load(xmlFile);\n    xmlObj=xmlDoc.documentElement;\n}\n```\n\n必须触发 `loadXML`\
+  \ 函数，XML 文档必须作为参数传递给函数。\n\n函数中的第二个语句调用了名为 `verify` 的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。\n\
+  \n```javascript\nfunction verify() {\n    if (xmlDoc.readyState != 4){\n       \
+  \ return false;\n    }\n}\n```\n\n要查看 XML 文档，可以使用 javascript 的 `alert` 函数。\n\n```javascript\n\
+  function viewOrganizerXML() {\n    loadXML(\"/user/organizer.xml\");\n    alert(xmlObj.xml);\n\
+  }\n```\n\n要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用 `getAttribute` 函数来获取属性值。\n\n```javascript\n\
+  function viewOrganizerData() {\n    // 解释数据的逻辑逻辑\n}\n```\n\n### 输出\n\n```text\n\
+  Root element : organizers\nNo. Of Emails : 4\nDate of Email : 10/12/2014\nEmail\
+  \ was From : Ann\nNo. Of Calls : 2\nNo. Of Messages : 25\nNo. Of Emails : 1\nDate\
+  \ of Email : 12/12/2014\nEmail was From : Jan\nNo. Of Calls : 0\nNo. Of Messages\
+  \ : 4\n```\n\n### 使用 Javascript 解析 XML\n\n让我们考虑代码段 9 中的相同 XML 文档。使用 javascript 解析\
+  \ XML 文档，必须遵循以下步骤：\n\n### 通过 javascript 加载 XML 文件。\n\n```javascript\nvar xmlDoc\
+  \ = new ActiveXObject(\"Microsoft.XMLDOM\");\nfunction loadXML(xmlFile) {\n    xmlDoc.async=\"\
+  false\";\n    xmlDoc.onreadystatechange=verify;\n    xmlDoc.load(xmlFile);\n   \
+  \ xmlObj=xmlDoc.documentElement;\n}\n```\n\n必须触发 `loadXML` 函数，XML 文档必须作为参数传递给函数。\n\
+  \n函数中的第二个语句调用了名为 `verify` 的另一个函数。该函数验证创建的 ActiveX DOM 对象是否处于就绪状态。\n\n```javascript\n\
+  function verify() {\n    if (xmlDoc.readyState != 4){\n        return false;\n \
+  \   }\n}\n```\n\n要查看 XML 文档，可以使用 javascript 的 `alert` 函数。\n\n```javascript\nfunction\
+  \ viewOrganizerXML() {\n    loadXML(\"/user/organizer.xml\");\n    alert(xmlObj.xml);\n\
+  }\n```\n\n要解释 XML 文档中的数据，必须访问子节点并返回它们的标签名，可以使用 `getAttribute` 函数来获取属性值。\n\n```javascript\n\
+  function viewOrganizerData() {\n    // 解释数据的逻辑\n}\n```\n\n### 输出\n\n```text\nRoot\
+  \ element : organizers\nNo. Of Emails : 4\nDate of Email : 10/12/2014\nEmail was\
+  \ From : Ann\nNo. Of Calls : 2\nNo. Of Messages : 25\nNo. Of Emails : 1\nDate of\
+  \ Email : 12/12/2014\nEmail was From : Jan\nNo. Of Calls : 0\nNo. Of Messages :\
+  \ 4\n```\n\n### SAX 解析器\n\nSAX 是 Simple API for XML 的简称，与 DOM 不同，它不会为 XML 文档创建对象。它可以从上到部读取。无法随机访问任何元素。SAX\
+  \ 可以处理大型文档，因为它不存储内容。\n\n### SAX 工作原理\n\n我们熟悉事件驱动编程吗？SAX 是基于事件驱动的。我们在每天使用的应用程序中看到它们。\n\
+  \n### 回调方法\n\n以下是在事件期间触发的回调方法。每个方法的名称说明了它遇到了何种标记。\n\n```java\nvoid startDocument()\n\
+  void endDocument()\nvoid startElement(String uri, String localName, String qName,\
+  \ Attributes atts)\nvoid endElement(String uri, String localName, String qName)\n\
+  void characters(char[] ch, int start, int length)\nvoid ignorableWhitespace(char[]\
+  \ ch, int start, int length)\nvoid processingInstruction(String target, String data)\n\
+  void setDocumentLocator(Locator locator)\nvoid skippedEntity(String name)\nvoid\
+  \ startPrefixMapping(String prefix, String uri)\nvoid endPrefixMapping(String prefix)\n\
+  ```\n\n\n\n\n\n```java\nimport org.xml.sax.helpers.DefaultHandler;\n```\n\n创建一个\
+  \ SAX 解析器实例。\n\n`SAXParserFactory factory = SAXParserFactory.newInstance();`\n\n\
+  `SAXParser saxParser = factory.newSAXParser();`\n\n创建一个扩展 `DefaultHandler` 的 Java\
+  \ 类并重写回调方法。\n\n### 创建一个扩展 DefaultHandler 的类\n\n```java\nclass SAXXMLHandler extends\
+  \ DefaultHandler {\n\n  ## 重写 startElement 方法\n  @Override\n  public void startElement(String\
+  \ uri, String localName, String qName, Attributes atts) throws SAXException {\n\
+  \    // 方法实现\n  }\n\n  ## 重写 endElement 方法\n  @Override\n  public void endElement(String\
+  \ uri, String localName, String qName) throws SAXException {\n    // 方法实现\n  }\n\
+  \n  ## 重写 characters 方法\n  @Override\n  public void characters(char ch[], int start,\
+  \ int length) throws SAXException {\n    // 方法实现\n  }\n}\n```\n\n-   通过 sax 解析器解析\
+  \ XML 文件，并触发 `SAXXMLHandler` 类中重写的回调方法。\n\n`File xmlFile = new File(\"/user/shoes.xml\"\
+  );`\n\n`SAXXMLHandler saxHandler = new SAXXMLHandler();`\n\n`saxParser.parse(xmlFile,\
+  \ saxHandler);`\n\n让我们来看一个完整的 Java 示例代码及其输出，它演示了从“shoes.xml”（如代码段 10 所示）中解析并提取数据。\n\
+  \n### Java 类\n\n```java\nimport java.io.File;\nimport javax.xml.parsers.SAXParser;\n\
+  import javax.xml.parsers.SAXParserFactory;\nimport org.xml.sax.Attributes;\nimport\
+  \ org.xml.sax.SAXException;\nimport org.xml.sax.helpers.DefaultHandler;\n\npublic\
+  \ class ReadShoesXML {\n  public static void main(String[] args){\n    File inputFile;\n\
+  \    SAXParserFactory factory;\n    SAXParser saxParser;\n    SAXXMLHandler saxHandler;\n\
+  \    try {\n      xmlFile = new File(\"/user/shoes.xml\");\n      factory = SAXParserFactory.newInstance();\n\
+  \      saxParser = factory.newSAXParser();\n      saxHandler = new SAXXMLHandler();\n\
+  \      saxParser.parse(xmlFile, saxHandler);    \n    } catch (Exception e) {\n\
+  \      e.printStackTrace();\n    }\n  }  \n}\n\nclass SAXXMLHandler extends DefaultHandler\
+  \ {\n  boolean brandFlag = false;\n  boolean sizeFlag = false;\n  boolean colorFlag\
+  \ = false;\n  boolean typeFlag = false;\n  String shoeItemNo = null;\n\n  @Override\n\
+  \  public void startElement(String uri, String localName, String qName, Attributes\
+  \ atts) throws SAXException {\n    if (qName.equalsIgnoreCase(\"shoe\")) {\n   \
+  \   shoeItemNo = atts.getValue(\"itemno\");\n    } else if (qName.equalsIgnoreCase(\"\
+  brand\")) {\n      brandFlag = true;\n    } else if (qName.equalsIgnoreCase(\"size\"\
+  )) {\n      sizeFlag = true;\n    } else if (qName.equalsIgnoreCase(\"color\"))\
+  \ {\n      colorFlag = true;\n    } else if (qName.equalsIgnoreCase(\"type\")) {\n\
+  \      typeFlag = true;\n    }\n  }\n\n  @Override\n  public void endElement(String\
+  \ uri, String localName, String qName) throws SAXException {\n    if (qName.equalsIgnoreCase(\"\
+  shoe\")) {\n      System.out.println(\"End Element :\" + qName);\n    }\n  }\n\n\
+  \  @Override\n  public void characters(char ch[], int start, int length) throws\
+  \ SAXException {\n    System.out.println(\"Shoe Item No: \" + shoeItemNo);\n   \
+  \ if (brandFlag) {\n      System.out.println(\"Brand: \" + new String(ch, start,\
+  \ length));\n      brandFlag = false;\n    } else if (sizeFlag) {\n      System.out.println(\"\
+  Size: \" + new String(ch, start, length));\n      sizeFlag = false;\n    } else\
+  \ if (colorFlag) {\n      System.out.println(\"Color: \" + new String(ch, start,\
+  \ length));\n      colorFlag = false;\n    } else if (typeFlag) {\n      System.out.println(\"\
+  Type: \" + new String(ch, start, length));\n      typeFlag = false;\n    }\n  }\n\
+  }\n```\n\n### 程序输出\n\n```\nShoe Item No: 1\nBrand: Reebok\nSize: 5\nColor: Brown\n\
+  Type: Sports Shoe\nEnd Element : shoe\nShoe Item No: 2\nBrand: Puma\nSize: 7\nColor:\
+  \ White\nType: Casual Shoe\nEnd Element : shoe\n```\n\n### 小贴士\n\n-   当解析的 XML 文件很大时，`DOM`\
+  \ 解析器消耗更多内存且速度非常慢。\n-   `DOM` 实现可能使用 10 字节内存来处理 1 字节的 XML。\n-   当 XML 数据被重复使用时，优先选择\
+  \ `DOM` 解析器。\n-   当 XML 文档深度嵌套时，优先选择 `DOM` 解析器。\n-   当 XML 文档通过流到达时，优先选择 `SAX` 解析器。\n\
+  -   当 XML 巨大时，优先选择 `SAX` 解析器。\n\n我告诉过你了，这个解析器听起来很有趣！！\n\n## 第 7 章 - HTML5，为什么在这里？\n\
+  \n`HTML5` 是 `HTML` 的增强版本，具有更多功能。`HTML5` 有什么如此迷人的地方？\n\n-   有新的 `canvas` 元素，有助于绘制图形。\n\
+  -   有新的媒体元素。\n-   有新的表单元素。\n-   有新的结构化元素。\n-   语法被简化了。\n-   有新的特定内容元素。\n-   支持本地存储。\n\
+  -   支持应用缓存。\n-   它现在是跨平台的。\n\n好吧，`HTML5` 看起来很棒，但我们为什么要在这里（XML 平台）讨论它呢？\n\n有一个原因，那就是\
+  \ `XHTML5`，它是 XML 序列化的 `HTML5`。改进后的 `HTML5` 现在已经和 `XML` 一样好了。`XHTML5` 是 `XML` 的良好格式语法与\
+  \ `HTML5` 功能的结合。根据所使用的媒体类型，可以选择 `HTML5` 或 `XHTML5`。\n\n### 总结\n\n`XML` 本身仅仅是一种良好格式文本的表示。它是一种定义结构化数据的机制。但它在信息交换中的应用提升了其作为标记语言的声誉。这本书介绍了创建和解释有效\
+  \ XML 文档的方法，并配有实时示例。\n\n祝大家在实践所学时顺利。\n\n"
