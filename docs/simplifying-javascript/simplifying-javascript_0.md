@@ -1,0 +1,7430 @@
+# JavaScript 简化指南
+
+
+
+![](img/cover.jpg)
+
+![Pragmatic Bookshelf](img/cover.jpg "Pragmatic Bookshelf")
+
+
+
+
+
+
+
+
+## 关于 Pragmatic Bookshelf
+
+Pragmatic Bookshelf 是一家敏捷出版公司。我们在这里是因为我们想要改善开发者的生活。我们通过创建由程序员为程序员编写的及时、实用的书籍来实现这一点。
+
+我们的 Pragmatic 课程、工作坊和其他产品可以帮助你和你的团队创建更好的软件并获得更多乐趣。更多信息以及最新的 Pragmatic 书籍，请访问我们的 [`pragprog.com`](http://pragprog.com)。
+
+我们的电子书不包含任何数字版权管理（DRM），并且一直都是无 DRM 的。我们首创了测试书（beta book）概念，你可以在书籍仍在编写时购买并阅读，并向作者提供反馈以帮助为所有人制作一本更好的书。所有购买者的免费资源包括源代码下载（如果适用）、勘误表和讨论论坛，均可在 pragprog.com 的书籍主页获取。我们在这里是为了让你的生活变得更轻松。
+
+### 新书公告
+
+想关注我们的最新书籍、公告以及偶尔的特别优惠吗？只需在 [pragprog.com](https://pragprog.com) 上创建一个账户（只需一个邮箱地址和一个密码）并勾选复选框接收通讯。你还可以在 twitter 上关注我们 @pragprog。
+
+### 关于电子书格式
+
+如果你直接从 [pragprog.com](https://pragprog.com) 购买，你将以一个价格获得所有可用格式的电子书。你可以通过 Dropbox 在所有设备（包括 iPhone/iPad、Android、笔记本电脑等）之间同步你的电子书。可以在有效期内获得免费更新。当然，你可以在需要时随时回来重新下载书籍。从 Amazon Kindle 商店购买的电子书受 Amazon 政策限制。Amazon 文件格式的限制可能会导致电子书在不同设备上的显示效果不同。更多信息请参阅我们的常见问题：[pragprog.com/frequently-asked-questions/ebooks](https://pragprog.com/frequently-asked-questions/ebooks)。要了解更多关于本书的信息并访问免费资源，请访问书籍主页 [`pragprog.com/book/es6tips`](https://pragprog.com/book/es6tips)。
+
+感谢你的持续支持，
+
+Andy Hunt
+
+The Pragmatic Programmers
+
+制作本书的团队包括：Andy Hunt（出版商）、Janet Furlow（运营副总裁）、Brian MacDonald（执行编辑）、Jacquelyn Carter（主管编辑）、Andrea Stewart（开发编辑）、Nancy Rapoport（校对）、Potomac Indexing, LLC（索引）、Gilson Graphics（排版）
+
+如客户支持，请联系 support@pragprog.com。
+
+国际版权，请联系 rights@pragprog.com。
+
+感谢 Bob 和 Eric 给了我基础。
+
+
+# 对《简化 JavaScript》的早期评价
+
+你可能应该把书中的每个 Tip 都写在便利签上，并贴满你的办公桌区域。这些简单、实用的建议将对简化你的 JavaScript 产生深远的影响。
+
+| → | Kyle Simpson |
+| | *You Don’t Know JS* 作者及 Open Web 传教士 |
+
+Joe 提供了一条清晰、有条的掌握关键 JavaScript 概念的路径。这不是一本枯燥的教科书。它是一本指南，充满了编写模块化、可维护且现代 JavaScript 的实用实战方法。
+
+| → | Cory House |
+| | Pluralsight 作者、国际演讲师及顾问，reactjsconsulting.com |
+
+这本书对于那些对 JavaScript 的过去经历留下了糟糕印象的资深开发者来说太棒了。通过此书理解现代 JavaScript，将让以前的批评者变成支持者。
+
+新开发者也将受益于那些用通俗易懂的语言编写的详尽解释——而不是那些通常在许多技术类书籍中充当入门障碍的、过分技术化的术语。
+
+| → | Sara Heins |
+| | 国际演讲师、Django Girls Kansas City 项目总监、Big 6 Media 首席 Web 开发人员 |
+
+这本书对于初以及中级及以上水平的人都是理想的。
+
+| → | Shreerang Patwardhan |
+| | *Mastering jQuery Mobile* 作者，Macy’s Inc. 高级软件工程师 |
+
+我会向我团队的其他人推荐这本书。我相信我团队的大多数，甚至所有人，都能从这本书中受益。
+
+| → | Nick McGinness |
+| | Direct Supply 软件工程师 |
+
+# 引言
+
+是否曾感觉自己醒来后，一切都变了？如果你看过现代 JavaScript，你可能会觉得自己醒在一个新世界，那里一切都不再一样了。
+
+昨天，你还在调整一个简单的 jQuery 折风琴面板。今天，你看着一些 JavaScript 代码，无处不在的 `$` 操作消失了。取而代之的是许多奇怪的 `...` 和奇怪的符号 `=>`（你很快就会学到展开运算符和箭头函数）。当然，有些东西看起来很熟悉，比如 `class`，但即使是它似乎也是不可预测的（私有方法在哪里？）。
+
+你感到困惑吗？也许有点兴奋？嗯，我有一个好消息告诉你：一切都变得更好了。
+
+当 ECMAScript 6 规范发布时（简称 ES6），JavaScript 代码发生了巨大的变化。这些变化是巨大的，以至于在读完这本书后，你可以一眼看出哪些代码是用预 ES6 语法编写的，哪些代码是用后 ES6 语法编写的。现在的 JavaScript 已经不同了。现代 JavaScript 是任何用后 ES6 语法编写的代码。
+
+编写现代 JavaScript 是一种享受。我是一个长期、不悔改的 JavaScript 粉丝，但我承认有时觉得旧语法有点笨拙，而且很难辩护。现代 JavaScript 更好。但它发生了巨大变化，追赶可能会很困难。
+
+## 如何使用这本书
+
+在书中，你将从零开始编写现代 JavaScript。我希望你学会用当代 JavaScript 的方式思考。你会看到每个语法点的建议，不仅关于如何使用，还有何时使用。
+
+此外，我不会介绍每一个微小的语法变化。我知道你的时间非常宝贵，所以我只会向你展示那些影响巨大且你会反复使用的语法。你可以在边缘情况出现时再处理。这本书将为你提供最好的特性，别无他物。
+
+
+
+
+在整书中，你将发现语法的变化并不是随机的——它们遵循一组简单的原则，旨在让语言更易读、更易写。现代 JavaScript 是简单、可预测、可读且灵活的。每一个新语法的出现都应该从这些标准来衡量评估，包括那些尚未纳入规范的语法。
+
+而且由于现代 JavaScript 的范式转移与语法变化一样一样多，你将花费一些时间来回顾旧的 JavaScript 概念，看看你如何在现代语境下使用它们。这非常重要，因为 JavaScript 以前主要是通过库（尤其是 `jQuery`）来编写的，人们很容易编写少量的代码让程序运行起来，而无需理解底层概念。随着越来越多的代码项目将 JavaScript 作为主要功能的一部分而不仅仅是少数插件，你将需要理解一些你之前可能忽略过的概念。
+
+例如，你可能安全地忽略了 `ES5` 中的语法变化。你可能连续多年都在使用 `map()` 和 `reduce()` 等数组方法，但你可能忽略了它们，因为当时浏览器尚未完全兼容，且编译器尚未成熟。数组方法现在是优秀代码中不可或缺的一部分。值得花点时间回顾一下它们。
+
+尽管如此，我知道你每天都有很多事情要做——这就是为什么本书采用了“技巧提示”格式，允许你随心所欲地进出。你不需要从头读到尾。我会引用之前和之后技巧中的语法，以便你可以根据需要跳跃阅读。在你的桌子上留一份副本，在休息时快速浏览一下，或者把它加载到手机上，以便在牙科候诊时快速看一个技巧。
+
+在学习新语法时，你能做的最重要的事情就是阅读代码。而最好的代码是真实的代码。你不会在书中看到 `foo-bar` 类的示例或大量的数学表达式。相反，你将处理字符串、对象、货币、电子邮件地址等内容。换句话说，你看到的代码示例将贴近生活。这为示例增加了一点复杂性，但最终将让你更容易内化这些思想，从而能够快速轻松地将它们应用到你的代码中。
+
+最后，每个示例在本书的仓库中都有。代码的测试覆盖率接近 100%，所以请尽管加入并尝试各种想法。为了让程序运行，你至少需要安装 `8.5` 版本的 `Node.js`。你偶尔也想在浏览器中尝试代码。请务必使用现代浏览器，如 `Chrome`、`Edge` 或 `Internet Explorer 11+`。
+
+## 本书的读者
+
+本书适用于任何有一点编程经验的人。拥有一些 JavaScript 经验会有帮助，但并非严格必要。我假设你了解一些基础编程概念，例如循环、条件判断、函数和类。简而言之，如果你见过现代 JavaScript 并渴望学习更多知识，那么这本书就是为你准备的。
+
+你可能会感觉自己醒来在一个陌生的新世界。这并不是坏事。事实上，这个新世界太棒了——咖啡正在煮着，新鲜烘焙的丹麦香味让这个世界成为了你想要醒来的地方。JavaScript 比任何时候都要好——是时候享受它了。
+
+## 在线资源
+
+你可以在 `github` 或本书的 `Pragmatic Bookshelf` 网站上找到代码。
+
+网站还包含一个实用的社区论坛，如果你在过程中需要帮助。提前感谢通过错误表单反馈书中代码或文本中的任何问题，该表单在书中网站上也可以找到。
+
+为了关注最新的语法变化，你可以在 Twitter 上关注我——`@joesmorgan`——或者访问在线 `thejoemorgan.com`。
+
+## 致谢
+
+首先，感谢任何发布过推特、写过博客文章、提交过拉请求、在会议上演讲、回答过 `Stack Overflow` 问题或为更大的 JavaScript 生态系统做过任何贡献的人。一种语言的好坏取决于它的社区。我们拥有最好的社区之一。
+
+感谢我的妻子 `Dyan` 和我的孩子们 `Theo` 和 `Bea` 忍我疯狂的日程。感谢我的父母 `Nathan` 和 `Lorraine` 给了我大量的木棍、绳子和胶带，这引导了我对构建和探索的一生热爱。非常感谢 `Martha Vogel` 提供的额外帮助，让我能抽出几小时宝贵的小时来写作。
+
+感谢威斯康星大学湖沼学中心的职员工、威斯康星大学的图书馆管理员、`MERIT` 图书馆的员工、约翰逊县图书馆的图书管理员和员工、`Red Nova Labs` 的工程师、堪萨斯大学的网络团队和市场营销部门、`Builder Designs` 的工程师、`DEG` 的员工，以及任何其他在编程和传达思想方面教过我的人。
+
+感谢 `Sara Heins`、`Ashley Sullins`、`Adam Braun` 和 `Katie McCurry` 在营销方面的帮助。
+
+感谢 `Pragmatic Programmers` 的优秀人士给予我编写 JavaScript 的机会。感谢 `Brian MacDonald` 帮助我起步。非常感谢我的编辑 `Andrea Stewart` 帮助我找到自己的风格并保持过程顺畅。
+
+最后，感谢所有的技术评审员：`Craig Hess`、`Frank Ruiz`、`Jessica Janiuk`、`Mark Poko`、`Nick McGinness`、`Ryan Heap`、`Shreerang Patwardhan`、`Stefan Turalski` 和 `Vasile Boris`。你们让我保持严谨并让这本书更好。
+
+Joe Morgan
+堪萨斯州劳伦斯，2018 年 4 月
+
+### 脚注
+
+- `https://github.com/jsmapr1/simplifying-js`
+- `https://pragprog.com/book/es6tips/simplifying-javascript`
+- `https://twitter.com/joesmorgan`
+- `http://thejoemorgan.com`
+
+
+
+
+
+你将学习两种新的变量声明类型。第一个是 `const`，它不允许你重新分配变量（你会发现这是一好事）。第二个是 `let`，允许重新赋值，但它是块作用域的，可以保护你免受潜在的作用域冲突。最后，你将学习如何使用模板字符串字量（template literals）从变量创建新字符串。
+
+本章中的提示将帮助你理解你的决策如何影响代码的其他部分，以及你的决策将如何影响最终可能接手并阅读你代码的人。
+
+我希望你在阅读这一章时，开始批判性地审视你每天编写的 JavaScript 代码。额外的收获是，只需通过寥寥技巧，你就能在编写更简单、更有表现力的 JavaScript 代码方面走得很好。如果你在评估变量声明时学到的思维方式流到了代码的其他部分，也不要感到惊讶。毕竟，这是你在编写代码时做的最常见的决策——一个你明天、下周、下个月还会做 10、20、100 次的决策。
+
+准备好了吗？很好。让我们开始吧。
+
+### 提示 1 | 使用 const 标识不变的值
+
+在这一提示中，你将学习使用 `const` 来避免重新赋值并向其他开发者传递你的意图。
+
+现代 JavaScript 引入了多种新的变量声明，这很棒。但也引入了一个新问题：哪种变量声明应该是默认选项？我们什么时候应该使用其他类型？
+
+过去，非全局变量赋值你只有一个选择：`var`。现在有很多不同的选项——`var`、`let` 和 `const`——每种都有其适用场景。尝试保持简单。在大多数情况下，`const` 是最佳选择，不是因为它允许你做得最多，而是因为它让你做得最少。它的限制让你的代码更具读性。
+
+#### ECMAScript 6
+
+ECMAScript 是 JavaScript 的官方技术规范。JavaScript 在 ECMAScript 5 和 ECMAScript 6 中包含了主要的语法变化，被称为 `ES5` 和 `ES6`。从以后，规范将每年更新。大多数开发者现在按年份引用该规范，例如 `ES2017`。
+
+`const` 是一种你不能在块范围内重新赋值的变量声明。换句话说，一旦确立它，它就无法更改。这并不意味着它是不可变的（immutable，即无法改变的值）。如果它被赋值给一个数组，数组中的项是可以更改的。我们稍后会详细查看。
+
+对于其他语言中有常量赋值的开发者来说，`const` 是首选声明可能看起来很奇怪。在那些语言中，常量通常用全大写字母编写，并且只在少数情况下表示永远不会改变的事，比如圆周率的首位数字。
+
+但在 JavaScript 中，`const` 是一个极好的默认选择，正是因为它不能被重新赋值。当你分配一个值时，你不仅是在声明一条信息，你还在信号你计划对该信息做什么。当你分配值并信号它们不会被改变时，你给了未来的开发者（包括你自己！）一种认知，让他们让他们在浏览代码时可以忘记某个值。当你阅读大量未见过的代码时，你会庆幸自己可以忘记你读到的部分内容。
+
+假设你正在修复一段代码中的 bug。你正在快速浏览代码以了解它是如何工作的，并看看是否能猜出问题可能在哪里。考虑两个程序：第一个程序使用 `const` 赋值变量，而第二个程序使用 `var` 赋值变量。
+
+[variables/const/const.js](http://media.pragprog.com/titles/es6tips/code/variables/const/const.js)
+
+```javascript
+const taxRate = 0.1;
+const total = 100 + (100 * taxRate);
+// 跳过 100 行代码
+return `Your Order is ${total}`;
+```
+
+[variables/const/const.js](http://media.pragprog.com/titles/es6tips/code/variables/const/const.js)
+
+```javascript
+var taxRate = 0.1;
+var total = 100 + (100 * taxRate);
+// 跳过 100 行代码
+return `Your Order is ${total}`;
+```
+
+它们看起来几乎完全相同，但第一个更容易理解。忽略掉代码块不应该是 100 行长这一事实；你有一大段代码，其中发生了很多变化。
+
+对于第一个代码块，你确切知道将返回什么：Your Order is 110。你知道这一点是因为 `total` 是一个不能重新赋值的常量。而在第二个代码块中，你完全不知道返回值是什么。你需要翻阅那额外的 100 行代码，寻找循环、条件、重新赋值或任何可能改变该值的因素。也许代码正在增加运费。也许总额中会添加额外的物品。也许将应用折扣，总额会下降。
+
+当使用 `var` 赋值时，你完全不知道总额是多少。当你用 `const` 赋值变量时，它移除了你在阅读代码时需要在大脑中保留的一条额外信息。考虑最后一个例子：
+
+[variables/const/const.js](http://media.pragprog.com/titles/es6tips/code/variables/const/const.js)
+
+```javascript
+const taxRate = 0.1;
+const shipping = 5.00;
+let total = 100 + (100 * taxRate) + shipping;
+// 跳过 100 行代码
+return `Your Order is ${total}`;
+```
+
+花点时间思考你从这段代码中可以确定的事情。你知道你无法确定 `total`。开发者们信号了 `taxRate` 和 `shipping` 是不变的（如果事实确实如此），但 `total` 并不是永久的。你知道这个值是不可信的。
+
+最好的情况是知道赋值不会改变。第二好的情况是知道它可能会改变。如果你看到开发者经常使用 `const` 而很少使用 `let`，你就可以猜出变化的区域。
+
+让所有变量赋值要么是“已知的”，要么是“已知的未知”。
+
+使用 `const` 时有一个重要的考虑因素：赋值给 `const` 的值并不是不可变的。换句话说，你不能重新赋值变量，但你可以更改该值。这看起来可能自矛盾，但在实践中确实如此。
+
+[variables/const/const.js](http://media.pragprog.com/titles/es6tips/code/variables/const/const.js)
+
+```javascript
+const discountable = [];
+// 跳过几行
+for (let i = 0; i < cart.length; i++) {
+  if (cart[i].discountAvailable) {
+    discountable.push(cart[i]);
+  }
+}
+```
+
+这是完全有效的代码。尽管 `discountable` 是用 `const` 赋值的，你仍然可以向它推送项目。这产生了我们之前看到的完全相同：你无法确定稍后在代码中看到什么。对于对象、数组或其他集合，你需要更加自律。
+
+关于你应该使用什么，还没有明确的共识，但最好的办法是尽可能避免变异（mutations）。
+
+这里是之前的代码不使用变异的示例。
+
+[variables/const/const.js](http://media.pragprog.com/titles/es6tips/code/variables/const/const.js)
+
+```javascript
+const discountable = cart.filter(item => item.discountAvailable);
+```
+
+结果相同。没有变异。如果代码令人困惑，你可以跳转到第 5 章 *简化循环* 获取更多关于数组方法的信息。
+
+目前，只需将 `const` 作为默认。一旦代码变化到 `const` 不再适的程度，你就可以尝试不同的声明。
+
+在下一个提示中，你将确切地看到 `const` 何时不再是一个合适的选择，以及为什么你应该使用新的声明：`let`。
+
+
+
+
+
+在本提示中，你将学习到，当值需要发生变化时，`let` 是最佳选择。
+
+你在上一个提示中已经看到，在处理变量时，最好避免重新赋值。但在确实需要重新赋值变量的情况下，你该怎么办？在这些情况下，你应该使用 `let`。
+
+`let` 与 `var` 类似，因为它可以被重新赋值，但与词级作用域的 `var` 不同，`let` 是块级作用域的。你将在提示 3 中深入探索作用域，使用块级作用域变量隔离信息。现在，只需知道块级作用域变量仅存在于块中，例如 `if` 块或 `for` 循环。在这些块之外，无法访问它们。按照规则，这意味着变量在声明它的大括号之外是不存在的。
+
+为了查看块级作用域变量或词级作用域变量如何改变代码，请考虑以下一个示例。这段代码寻找物品的最低价格。为了找到最低价格，它进行了三个简单的检查：
+
+- 如果没有库存：返回 0。
+- 如果有促销价和促销库存：返回促销价。
+- 如果没有促销价或没有促销库存：返回价格。
+
+[`variables/let/problem.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/problem.js)
+
+```javascript
+function getLowestPrice(item) {
+  var count = item.inventory;
+  var price = item.price;
+
+  if (item.salePrice) {
+    var count = item.saleInventory;
+    if (count > 0) {
+      price = item.salePrice;
+    }
+  }
+
+  if (count) {
+    return price;
+  }
+
+  return 0;
+}
+```
+
+花一点时间看看你是否能找到 bug。
+
+查看每个预期的结果并看看你能发现什么。或者，你也可以运行测试套件。
+
+你找到了吗？问题在于你向同一个变量名重新赋值了该变量。
+
+如果你有一个既没有库存也没有促销价的物品，`item.salePrice` 条件将被跳过，你将得到 0。
+
+[`variables/let/let.spec.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/let.spec.js)
+
+```javascript
+const item = {
+  inventory: 0,
+  price: 3,
+  salePrice: 0,
+  saleInventory: 0,
+};
+```
+
+接下来，如果你有促销价和促销库存，你会得到促销价。在这种情况下，返回的值将是 2。
+
+[`variables/let/let.spec.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/let.spec.js)
+
+```javascript
+const item = {
+  inventory: 3,
+  price: 3,
+  salePrice: 2,
+  saleInventory: 1,
+};
+```
+
+最后，如果你有促销价但没有促销库存，你预期获得常规价格 3。但你实际上得到的是 0。
+
+[`variables/let/let.spec.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/let.spec.js)
+
+```javascript
+const item = {
+  inventory: 3,
+  price: 3,
+  salePrice: 2,
+  saleInventory: 0,
+};
+```
+
+如果你仍然有点困惑，那没关系。这是一个很棘手的 bug。问题在于你在第 2 行到第 3 行声明了变量 `count`。由于有促销价，你进入了下一个 `if` 块。此时，你在第 6 行重新声明了变量 `count`。现在问题是，它被设置为了 0，因为已经没有更多的促销库存了。当你到达第 12 行的下一个 `if` 块时，库存数据是错误的。它看起来既没有促销库存，也没有常规价格库存。尽管你有常规库存，你也无意中检查了促销库存并返回了错误的值。
+
+你可能想认为这个问题是微不足道的。但如果像这样的 bug 进入生产环境，它们将非常微妙且难以捕捉。
+
+幸运的是，你可以使用 `let` 来避免这个问题。事实上，`let` 通过两种方式帮助你避免此问题。`let` 是块级作用域的，这意味着在块内部声明的任何变量在块外部都不存在。
+
+[`variables/let/let.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/let.js)
+
+```javascript
+function getLowestPrice(item) {
+  let count = item.inventory;
+  let price = item.price;
+
+  if (item.salePrice) {
+    let count = item.saleInventory;
+    if (count > 0) {
+      price = item.salePrice;
+    }
+  }
+
+  if (count) {
+    return price;
+  }
+
+  return 0;
+}
+```
+
+在这种情况下，在 `if` 块中使用 `let` 声明 `count` 变量不会与开头声明的 `count` 变量冲突。
+
+当然，`let` 不是唯一的块级作用域的变量声明。`const` 也是块级作用域的。因为你不需要重新赋值 `count`，你可以使用 `const`，尽管你可能需要使用 `let` 来声明 `price`，因为它可能会更新。为了保持代码清晰，最终代码应该是：
+
+[`variables/let/const.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/const.js)
+
+```javascript
+function getLowestPrice(item) {
+  const count = item.inventory;
+  let price = item.price;
+
+  if (item.salePrice) {
+    const saleCount = item.saleInventory;
+    if (saleCount > 0) {
+      price = item.salePrice;
+    }
+  }
+
+  if (count) {
+    return price;
+  }
+
+  return 0;
+}
+```
+
+此外，`let` 和 `const` 还有一种保护。你不能重新声明同名的变量。使用 `var` 时，你可以在同一作用域内重新声明同名变量。也就是说，你可以在第 10 行写 `var price = 1`，然后在 25 行写 `var price = 5` 而不冲突。如果你无意重用变量名，这是一个巨大的问题。使用 `let`，你无法犯这种错误。这段代码将产生 `TypeError`。
+
+[`variables/let/declaration.js`](http://media.pragprog.com/titles/es6tips/code/variables/let/declaration.js)
+
+```javascript
+function getLowestPriceDeclaration(item) {
+  const count = item.inventory;
+  let price = item.price;
+
+  if (!count) {
+    return 0;
+  }
+
+  // ...
+  let price = item.saleInventory ? item.salePrice : item.wholesalePrice;
+
+  return price;
+}
+```
+（注：上述示例包含了重声明错误）
+
+## 提示 3：使用块级作用域变量隔离信息
+
+在本提示中，你将学习 `let` 如何防止 `for` 循环和其他迭代中的作用域冲突。
+
+在某个时刻，每个开发者都会在 `for` 循环中错误地捕捉变量。传统的解决方案涉及到一些相当复杂的 JavaScript 概念。幸运的是，`let` 变量声明让这个问题消失了。
+
+记住，当你使用块级作用域变量声明时，你创建了一个仅在块内可的变量。在 `if` 块中声明的变量在大括号之外不可用。在 `for` 循环内部声明的变量在 `for` 循环的大括号之外不可用。但这意味着你无法访问在函数外部声明的变量。如果你在函数顶部声明一个块作用域变量，它在块内部是可以访问的。
+
+
+
+
+
+然而，如果你声明了一个词法作用域变量，它可以在函数内部的任何地方访问。在 `if` 块中创建的变量可以在函数的任何地方访问。事实上，由于一种被称为“提升”（hoisting）的编译过程，你甚至可以在变量声明之前访问它[6]。
+
+如果这一切听起来太抽象了，没关系。在实践中更容易理解。很有可能，如果你以前遇到过词法作用域问题，它可能发生在你为一系列 DOM 元素添加点击函数时：
+
+[variables/scope/scope.html](http://media.pragprog.com/titles/es6tips/code/variables/scope/scope.html)
+
+```html
+<!doctype html>
+<html lang="en">
+<body>
+  <ul style="cursor:pointer">
+    <li>Say Zero</li>
+    <li>Say One</li>
+    <li>Say Two</li>
+  </ul>
+  <script>
+    const items = document.querySelectorAll('li');
+    for (var i = 0; i< items.length; i++) {
+      items[i].addEventListener('click', () => {
+        alert(i);
+      })
+    }
+  </script>
+</body>
+</</html>
+```
+
+在浏览器中打开这段代码，并尝试点击列表元素之一。你会发现每次点击都会得到相同的结果：3。
+
+人们很容易认为这是浏览器的 bug，但它实际上与 JavaScript 分配变量的方式有关。它可以发生在任何地方，即使在普通的 JavaScript 代码中也是如此。让我们看看这个问题即使在没有 DOM 操作的纯 JavaScript 中是如何发生的。
+
+如果你将这段代码粘贴到浏览器控制台或 REPL 中，你将看到相同的问题。
+
+[variables/scope/problem.js](http://media.pragprog.com/titles/es6tips/code/variables/scope/problem.js)
+
+```javascript
+function addClick(items) {
+  for (var i = 0; i < items.length; i++) {
+    items[i].onClick = function () { return i; };
+  }
+  return items;
+}
+const example = [{}, {}];
+const clickSet = addClick(example);
+clickSet[0].onClick();
+```
+
+### 使用 REPL
+
+REPL 是“read evaluate print loop”（读取-求值打印循环）的缩写。它是你在编写代码时拥有的价值的工具之一。REPL 就是一个命令行界面，你在其中输入一些代码，REPL 会立即对其求值并返回结果。
+
+例如，输入 `2+2`，你将得到 `4`。当你不能完全记得语法并想快速检查时，这些工具非常棒。我永远记不住将字符串转换为大写的方法，这在我需要大喊某些内容时是个大问题。为了唤起记忆，我会进入 REPL 并输入 `'hi!'.upperCase()`，这会返回一个错误。然后我会再次尝试 `'hi!'.toUpperCase(); //HI!`，这有效，然后我就可以继续工作了。
+
+这些 REPL 在哪里？如果你在电脑上安装了 Node.js（你应该安装一个），进入命令行并输入 `node`，你就会进入一个 REPL。
+
+如果你在浏览器中调试代码，你也可以触手得及 REPL，尽管在大多数浏览器中它被称为 `console`。所有现代浏览器都拥有包含某种 `console` 的开发者工具。这是你可以输入 JavaScript 代码并查看即时结果的另一个地方。此外，这将帮助你检查该特定浏览器原生支持了哪些功能。
+
+无论你尝试哪个数组元素，都会得到相同的结果。
+
+### 为什么会发生这种情况？
+
+问题再次是作用域。使用 `var` 分配的变量是函数作用域的（再次，这在技术上被称为词法作用域）。这意味着它们将始终引用在函数内部被赋值的最后一个值。
+
+当你在示例的第 3 行设置一个新函数时，你是在说返回调用代码时 `i` 的值。你不是在说返回设置时 `i` 的值。结果，由于 `i` 属于函数，它的值在每次循环中都会发生变化。
+
+传统的解决方案是复杂的，甚至会让经验丰富的 JavaScript 开发者感到困惑。
+
+[variables/scope/curry.js](http://media.pragprog.com/titles/es6tips/code/variables/scope/curry.js)
+
+```javascript
+function addClick(items) {
+  for (let i = 0; i < items.length; i++) {
+    items[i].onClick = function () {
+      return i;
+    };
+  }
+  return items;
+}
+```
+
+它涉及到闭包（在函数内部创建变量）、高阶函数（返回其他函数）以及自执行函数。如果你还不理解这些概念，没关系。你将在技巧 34 使用部分应用函数维护单一职责 中学习更多内容。
+
+幸运的是，你不需要理解前面的代码。如果你使用 `let` 重写代码，你将得到相同的结果。在浏览器控制台或 REPL 中测试以下代码。
+
+[variables/scope/scope.js](http://media.pragprog.com/titles/es6tips/code/variables/scope/scope.js)
+
+```javascript
+function addClick(items) {
+  for (let i = 0; i < items.length; i++) {
+    items[i].onClick = function () {
+      return i;
+    };
+  }
+  return items;
+}
+```
+
+
+
+
+
+为了让事情变得复杂，你将把普通字符串与函数返回的字符串、赋值给变量的字符串以及在拼接之前转换的字符串结合在一起。你将使用一个函数（在其他地方实现），它将返回一个如 `pragprog.com/cloud` 的云提供商。你的函数将接受 `ID` 和 `width` 作为参数，但你需要解析 `width` 以确保它是一个整数。
+
+URL 变得特别丑陋，因为你必须在路由的不同部分之间添加斜杠，并加上如 `?`、`=` 和 `&` 等查询块。传统上，你必须使用 `+` 号组合每个部分。
+
+最终结果看起来如下：
+
+[variables/literals/problem.js](http://media.pragprog.com/titles/es6tips/code/variables/literals/problem.js)
+
+```javascript
+function generateLink(image, width) {
+  const widthInt = parseInt(width, 10);
+  return 'https://' + getProvider() + '/' + image + '?width=' + widthInt;
+}
+```
+
+这里涉及了很多操作，信息与 `+` 号的组合并没有什么帮助。而且这还是一个特别简单的 URL。它们很快变得复杂。如果路由更长，或者你需要额外的四个参数呢？这些东西会变得很长。
+
+幸运的是，你可以使用模板字符串（template literals）来大幅降低复杂性。模板字符串是一种简单的语法，允许你将字符串与 JavaScript 表达式组合在一起以创建一个新字符串。
+
+你只需要知道两点：第一，模板字符串是用反引号（``）括起来，而不是单引号或双引号。第二，任何不是字符串的内容（包括赋值给变量的字符串）都需要被特殊的标识符包围：一个 `$` 符号加上大括号内的变量或其他 JavaScript 代码：`${}`。
+
+你最经常会用它来组合字符串和变量。
+
+[variables/literals/literals.js](http://media.pragprog.com/titles/es6tips/code/variables/literals/literals.js)
+
+```javascript
+function greet(name) {
+  return `Hi, ${name}`;
+}
+greet('Leo');
+'Hi, Leo';
+```
+
+但你也可以执行 JavaScript 操作。例如，你可以在对象上调用方法。在这种情况下，你正在将字符串转换为大写：
+
+[variables/literals/literals.js](http://media.pragprog.com/titles/es6tips/code/variables/literals/literals.js)
+
+```javascript
+function yell(name) {
+  return `HI, ${name.toUpperCase()}`;
+}
+greet('Pankaj');
+'HI, PANKAJ!';
+```
+
+你甚至可以执行更复杂的计算，例如组合数学计算。实际上，你可以在大括号中执行任何操作，但只有执行返回字符串或整数的操作才有意义。
+
+[variables/literals/literals.js](http://media.pragprog.com/titles/es6tips/code/variables/literals/literals.js)
+
+```javascript
+function leapYearConverter(age) {
+  return `You'd be ${Math.floor(age / 4)} if born on a leap year.`;
+}
+leapYearConverter(34);
+// "You'd be 8 if born on a leap year."
+```
+
+尽量不要在大括号中做太多操作。这可能会让代码变得比其价值更加混乱。如果你需要进行重度的数据转换，请在模板字符串之外执行操作，并将结果赋值给变量。
+
+你现在拥有了所有的工具，可以将你原始的字符串拼接重写为单个模板字符串。花点时间尝试一下。
+
+你的解决方案可能像：
+
+[variables/literals/literals.js](http://media.pragprog.com/titles/es6tips/code/variables/literals/literals.js)
+
+```javascript
+function generateLink(image, width) {
+  return `https://${getProvider()}/${image}?width=${parseInt(width, 10)}`;
+}
+```
+
+这看起来不是显著清晰得多吗？模板字符串是对字符串拼接的极大改进，以至于你应该很少使用传统的拼接方式来组合字符串。只有当你组合两个没有额外信息的变量时，这样做才会更好。即使在这种情况下，你可能仍然使用模板字符串，因为那些反引号是其他开发者的线索，表明你正在返回一个字符串。
+
+在下一章中，你将学习如何使用数据集合。在新的集合和现有集合之间做出选择时，你将在本章的许多想法的基础上构建。
+
+### 脚注
+
+[[5]](#f_0012.xhtml_FNPTR-5)
+
+[`pragprog.com/titles/es6tips/source_code`](https://pragprog.com/titles/es6tips/source_code)
+
+[[6]](#f_0013.xhtml_FNPTR-6)
+
+[`developer.mozilla.org/en-US/docs/Glossary/Hoisting`](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+
+Copyright © 2018, The Pragmatic Bookshelf.
+
+# 第 2 章：使用数组管理数据集合
+
+古希腊诗人阿基洛霍库斯（Archilochus）写道：“狐狸知道很多，但豪猪知道重点。”伟大的历史学家哲赛亚·伯林说，所有的思想者要么是豪猪是狐狸。我认为语法也是如此。
+
+正如你所看到的，`const`是一只豪猪。它只能做一件事——创建一个不可变的声明。通过只做一件事，它让你的代码具有可读性和可预测性。正如你将在接下来的提示中看到的，数组方法都是豪猪。它们在数组上只能做一件事。但它们做得很好，所以你可以安全地预测结果，而无需深入细节。
+
+在大多数情况下，你希望坚持使用对某件事做得非常好的语法。但有时你需要的事情具有灵活性。数组是终极的狐狸，因为它可以做很多事情。事实上，它可以执行你对信息集合可能想要的几乎任何操作。更重要的是，许多其他集合使用了你最常与数组联系的概念。
+
+例如，当你有一个字符串 'hedgehog' 时，你有很多通常在数组上执行的可用操作。你可以获取其大小：`'hedgehog’.length` 将返回 8。你还可以通过索引挑出单个字母：`'hedgehog’[3]` 将返回 'g'。还有许多其他方法，列出所有方法将花费太长时间。
+
+这些方法并不专门属于数组（它们依赖于一个名为 `Iterator` 的属性），但它们与数组的联系最为直观。当你仔细研究数组时，你将对其他数据结构产生许多见解。数组知道很多。它们是狐狸。
+
+在本章中，你将看到数组变得比以往任何时候都好。它们不仅是许多数据需求的良好选择，而且具有新的语法，可以将许多常见操作简化为单行代码，同时减少可能导致细微 bug 的变异。请注意——你将在后的提示中看到相同的观点。
+
+首先，你将看到数据如何始终转换为数组，包括在必要时将其他集合（如对象）转换为数组。从那里开始，你将学习新语法，例如用于 `includes()` 来测试数组中的是否存在，以及至关重要的由三个点表示的扩展运算符（`...`）。扩展运算符在现代数组的使用中非常重要，接下来的两个提示将探索扩展运算符如何改变你在代码中使用数组的方式。请密切关注——你将在许多未来的提示中看到扩展运算符。
+
+为了保持代码的可读性，你应该坚持简单、可预测的方法（豪猪）。但为了让代码具有灵活性，你需要数组在结构之间移动。这是一个艰难的平衡，但你两者都需要。如果你对数组有清晰的理解，你在 JavaScript 中做的每件事都将变得更容易。
+
+是时候深入看看数组如何提供你在大多数集合中找不到的灵活性了。
+
+| 提示 5 | 使用数组创建灵活的集合 |
+
+在这个提示中，你将学习如何利用数组最大灵活性，并为你理解所有其他集合奠定基础。
+
+
+
+
+
+在 JavaScript 中，数据集合曾经只有两种结构：数组和对象。现在这个列表正在不断增加。现在有了 maps、sets、weakmaps、weaksets、对象和数组。
+
+在选择集合时，你必须问自己需要对信息进行什么操作。如果你需要对它们进行任何形式的操作（添加、删除、排序、过滤、修改所有成员），那么数组通常是最好的集合。即使你没有使用数组，你也几乎肯定会使用与数组关联的思路。
+
+数组具有惊人的灵活性。因为数组保留了顺序，你可以根据位置添加和删除项，或者确定它们是否具有位置。你可以通过排序来赋予数组新的顺序，正如你在提示 9 中看到的，*使用扩展运算符时要避免排序混淆*。
+
+[`arrays/arrays/arrays.js`](http://media.pragprog.com/titles/es6tips/code/arrays/arrays/arrays.js)
+
+```javascript
+const team = [
+  'Joe',
+  'Dyan',
+  'Bea',
+  'Theo',
+];
+
+function alphabetizeTeam(team) {
+  return [...team].sort();
+  // ['Bea', 'Dyan', 'Joe', 'Theo']
+}
+```
+
+有趣的是，顺序在技术上并不是保证的，但可以安全假设它在几乎所有情况下都能正常工作。
+
+通过 `map()`、`filter()` 和 `reduce()` 等数组方法，你可以用单行代码轻松地更改或更新信息，正如从提示 22 开始看到的，使用 map 创建相似大小的数组*](#f_0036.xhtml_tip.map)。
+
+[`arrays/arrays/arrays.js`](http://media.pragprog.com/titles/es6tips/code/arrays/arrays/arrays.js)
+
+```javascript
+const staff = [
+  {
+    name: 'Wesley',
+    position: 'musician',
+  },
+  {
+    name: 'Davis',
+    position: 'engineer',
+  },
+];
+
+function getMusicians(staff) {
+  return staff.filter(member => member.position === 'musician');
+  // [{name: 'Wesley', position: 'musician'}]
+}
+```
+
+你可能会注意到一些看起来很奇怪的语法。别担心——你很快就会接触。ES5 和 ES6 中的许多新语法都与数组有关。这应该说明它们在 JavaScript 社区中备受重视。
+
+尽管如此，你仍然需要使用其他集合。然而，对数组的深入理解将极大提高代码质量，因为数组是许多流行数据操作的核心。例如，如果你需要遍历一个对象，你做的第一件事就是使用 `Object.keys()` 将键获取到数组中然后对这些键进行迭代。你正在将数组作为对象和循环之间的桥梁。
+
+[`arrays/arrays/arrays.js`](http://media.pragprog.com/titles/es6tips/code/arrays/arrays/arrays.js)
+
+```javascript
+const game1 = {
+  player: 'Jim Jonas',
+  hits: 2,
+  runs: 1,
+  errors: 0,
+};
+
+const game2 = {
+  player: 'Jim Jonas',
+  hits: 3,
+  runs: 0,
+  errors: 1,
+};
+
+const total = {};
+
+const stats = Object.keys(game1);
+for (let i = 0; i < stats.length; i++) {
+  const stat = stats[i];
+  if (stat !== 'player') {
+    total[stat] = game1[stat] + game2[stat];
+  }
+}
+// {
+// hits: 5,
+// runs: 1,
+// errors: 1
+// }
+```
+
+数组之所以频繁出现是因为它们是可迭代的（iterable）。你可以在数组上执行的任何操作，也可以在可迭代的数据类型（如字符串）上执行，正如你在提示 7 中看到的，*使用扩展运算符的数组*。当你知道某项内容是规范的一部分后，你可以在它最终定稿之前使用该语法。这可能是危险的，但偶尔某些特性受欢迎，以至于在正式发布之前就已经被社区采纳了。新的语法特性（如 async 和 await 或对象展开）在它们正式发布之前就被使用了。
+
+## TC39 委员会
+
+某项内容是定稿规范的一部分意味着什么？JavaScript 规范由一个名为 TC39 的委员会决定。在定义其正式规范（spec）之前，他们会让语法更改的提案通过标准流程。当讨论仍处于评审流程中的特性时，你经常听到开发者提到“阶段 1”或“阶段 2”特性。这仅仅意味着它们仍在完善中，但已经在采纳的道路上了。一旦语法通过批准，浏览器就会开始进行原生实现。
+
+换句话之，总有新的语法更改在路上。在 ES6 之前，你会通过版本（如 ES5 或 ES6）来引用语法更改。从现在起，你将通过年份（如 ES2017、ES2018 等）看到语法更改。增加混乱的是，由于大多数 JavaScript 仍然需要编译成早期语法以兼容旧版浏览器，你可以在语法最终定稿之前使用它。这可能是危险的，但偶尔某些特性受欢迎，以至于在正式发布之前就已经被社区采纳了。
+
+
+
+
+
+人们很容易沉浸在语言中重大且令人兴奋的变化里（例如稍后看到的展开运算符），而忽略了那些简化常用任务的小幅变化。
+
+数组现在有了一项简单的改进，用于处理一个常见问题：测试是否存在。测试是否存在是一项重要操作，它在从三元运算符（提示 18，*使用三元运算符快速检查数据*）到短路逻辑（提示 19，*通过短路逻辑最大化效率*），以及大多数条件判断中关重要。
+
+使用 JavaScript 数组测试是否存在一直有些笨拙。例如，如果你想查看数组是否包含某个字符串，你需要检查该字符串是否具有位置（位置是可迭代对象的另一个特性）。如果位置存在，你会得到索引；如果不存在，你会得到 -1。问题在于，索引可以是 0，而 0 会被求值为 false（也称为假值 falsy）。这意味着该存在性可能为真，但检查结果可能评估为假。
+
+[arrays/includes/problem.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/problem.js)
+
+```javascript
+const sections = ['shipping'];
+
+function displayShipping(sections) {
+  if (sections.indexOf('shipping')) {
+    return true;
+  }
+  return false;
+}
+// false
+```
+
+由于这种不巧的情况（位置为 0 是假值），你必须将索引与数字进行比较，而不仅仅是测试它是否为真。这并不是什么大问题，但它是额外需要记忆的代码。可以跳转到提示 17，*使用假值缩短条件判断* 了解更多关于假值的信息。
+
+[arrays/includes/greater.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/greater.js)
+
+```javascript
+const sections = ['contact', 'shipping'];
+
+function displayShipping(sections) {
+  return sections.indexOf('shipping') > -1;
+}
+// true
+```
+
+幸运的是，ES2017 即将推出的另一个功能将消除这种样板代码比较。新的数组方法名为 `includes()`，^[10)，它将检查值是否存在于数组中并返回 true 或 false 的布尔值。
+
+你可以用一个简单的检查重写前面的代码。
+
+[arrays/includes/includes.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/includes.js)
+
+```javascript
+const sections = ['contact', 'shipping'];
+
+function displayShipping(sections) {
+  return sections.includes('shipping');
+}
+```
+
+这看起来可能是一个微不足道的改变，但在代码库中反复编写 -1，或者更糟糕的是，忘记编写导致在零索引值上得到假阴性结果后，这是一个令人欢迎的改变。
+
+现在你已经看到了数组对 JavaScript 是多么重要，当我们探索一些让它们变得更加兴奋和强大的新特性时，你将更深入地研究它们。熟悉数组是最好的做法，因为它们在 JavaScript 中无处不在。即使你没有直接使用它们，如果你发现学关于数组的很多知识开始出现在其他集合中，也不要感到惊讶。
+
+在下一个提示中，你将学习如何使用处理数组的最有趣且最强大的新技术：展开运算符。
+
+## 提示 7：使用展开运算符构建数组
+
+在这个提示中，你将学习如何使用展开运算符简化许多数组操作。
+
+正如你所看到的，数组为处理数据提供了惊人的灵活性。但数组包含的方法数量可能会让人困惑，并可能导致你在变异和副作用方面出现问题。幸运的是，展开运算符为你提供了一种用极少代码快速创建和操作数组的方法。
+
+展开运算符用三个点 (`...`) 表示，可能是 JavaScript 中使用最广泛的新特性。你可能会在几乎每个包含 ES6+ 语法的文件中发现它。
+
+尽管如此，很难严肃对待展开运算符。我确实没有这样做。它所做的事情如此平凡：它将数组转换为项目列表。事实证明，这个微小的动作有很多益处，我们将在接下来的几个提示中探索。
+
+益处不仅限于数组。你会反复看到展开运算符。它会出现在 `Map` 中，正如你在提示 14 中所示。你将在函数中使用剩余参数，正如你在提示 31 中所示。你还可以在 `generators` 中使用它，正如你在提示 58 中所示。
+
+要查看展开运算符有多强大，从一个简单的任务开始：从数组中删除一个项。
+
+[arrays/includes/problem.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/problem.js)
+
+```javascript
+function removeItem(items, removable) {
+  const updated = [];
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] !== removable) {
+      updated.push(items[i]);
+    }
+  }
+  return updated;
+}
+```
+
+这段代码并不糟。但它确实很多。存在的杂乱和循环越多，阅读和理解代码就越困难。
+
+在尝试简化时，你可能会遇到一个名为 `splice()` 的数组方法。它可以从数组中删除一个项，这正是你想要的！如果你重构前面的函数，它就会变得更简单。
+
+[arrays/includes/splice.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/splice.js)
+
+```javascript
+function removeItem(items, removable) {
+  const index = items.indexOf(removable);
+  items.splice(index, 1);
+  return items;
+}
+```
+
+`splice()` 的问题在于它会变异原始数组。看看下面的示例，看看你能否发现问题：
+
+[arrays/includes/splice.js](http://media.pragprog.com/titles/es6tips/code/arrays/includes/splice.js)
+
+```javascript
+const books = ['practical vim', 'moby dick', 'the dark tower'];
+const recent = removeItem(books, 'moby dick');
+const novels = removeItem(books, 'practical vim');
+```
+
+你认为 `novels` 数组将包含什么？
+
+
+
+
+书中唯一包含的一本书是“《黑塔”。当你第一次调用 `removeItem()` 时，你传入了书籍并返回了不包含“《莫比·迪克”的数组。但它也改变了 `books` 数组。当你将其传递给下一个函数时，它只剩下两个项目了。
+
+这就是为什么变异（mutations）可能是危险的，特别是当你在函数中使用它们时。你可能没有料到传递的信息会发生根本性的变化。注意，在这种情况下，你甚至用 `const` 赋值了 `books`。你可能认为它不会被修改，但事实并非总是如此。
+
+`Splice` 看起来是 `for` 循环的好替代方案，但变异可能会产生巨大的困惑，因此你最好尽可能避免它们。
+
+最后，还有一个最后的选项。数组还有一个名为 `slice()` 的方法，它可以返回数组的一部分而不改变原始数组。当你使用 `slice()` 时，你传递一个起始点（startpoint）和一个结束点（endpoint），你就能获取它们之间的所有内容。或者，你只需要传递一个起始点，就可以获取从该点一直到数组末尾的所有内容。然后你可以使用 `concat()` 将数组片段重新组合在一起。
+
+[arrays/spread/slice.js](http://media.pragprog.com/titles/es6tips/code/arrays/spread/slice.js)
+
+```javascript
+function removeItem(items, removable) {
+  const index = items.indexOf(removable);
+  return items.slice(0, index).concat(items.slice(index + 1));
+}
+```
+
+这段代码非常棒。你得到了一个新数组而不改变原始数组，并且避免了大量的代码。然而，返回的内容并不直观。另一个开发者需要知道 `concat()` 将两个数组合并成一个单一的扁数组。没有任何视觉线索可以告诉你正在做什么。
+
+这就是扩展运算符（spread operator）大显身场的地方。结合 `slice()`，扩展运算符将两个子数组都转换为列表，并将其放入方括号中。它看起来实际上像一个数组。更重要的是，它给你一个较小的数组，而不会影响较大的数组。
+
+[arrays/spread/spread.js](http://media.pragprog.com/titles/es6tips/code/arrays/spread/spread.js)
+
+```javascript
+function removeItem(items, removable) {
+  const index = items.indexOf(removable);
+  return [...items.slice(0, index), ...items.slice(index + 1)];
+}
+```
+
+注意这段代码的几点：没有变异。它易于阅读。它简单。它是可复用的。它是可预测的。简而言之，它具备你所喜欢的所有属性。
+
+你实际上可以进一步改进这段代码。正如你将在提示 23 中看到的，使用 filter() 和 find() 提取数据子集 所示，你可以传递一个函数来移除数组中的特定项。有许多方法可以执行相同的操作。选择最能传达你意图的那种。
+
+这只是开始。扩展运算符让你能够用极少数字符快速提取出数组中的项。而且你总是会将它们放回一个你可以快速轻松识别的结构中。
+
+如果你回看这四个示例，你会发现它们都能工作。但扩展运算符是最可读的且最容易预测的。
+
+使用扩展运算符的另一种流行方法是为函数创建一个参数列表。创建一个小型函数来格式化信息数组。
+
+[arrays/spread/spread.js](http://media.pragprog.com/titles/es6tips/code/arrays/spread/spread.js)
+
+```javascript
+const book = ['Reasons and Persons', 'Derek Parfit', 19.99];
+
+function formatBook(title, author, price) {
+  return `${title} by ${author} $${price}`;
+}
+```
+
+你如何将信息放入函数中？试一试。你可能想出了这样的代码：
+
+[arrays/spread/spread.js](http://media.pragprog.com/titles/es6tips/code/arrays/spread/spread.js)
+
+```javascript
+formatBook(book[0], book[1], book[2]);
+```
+
+但还有一个更简单的版本，如果书籍数据量发生变化，你不需要更改它。例如，假设你增加了出版年份。
+
+如果你想出了这样的代码，干得好。参数是参数列表，因此扩展运算符允许你快速轻松地将数组转换为参数列表。
+
+[arrays/spread/spread.js](http://media.pragprog.com/titles/es6tips/code/arrays/spread/spread.js)
+
+```javascript
+formatBook(...book);
+```
+
+有趣的地方在于：这并不是在参数中从数组快速提取信息的唯一方法。你也可以直接使用数组解构来提取。你将在提示 29 中更详细地探索解构：对象属性。
+
+而且不仅如此！一旦开始使用可变参数，扩展运算符就会真正大放异彩。如果你想查看，请跳到提示 31：参数数量。
+
+## 使用扩展运算符避免变异
+
+在提示中，你将学习如何通过扩展运算符创建新数组来避免变异。
+
+现在你已经看到了为什么变异是不好的，让我们从由 `push()` 方法引起的问题开始吧。想象有一个简单的函数，接收购物车并总结内容。该函数检查是否有许多折扣，如果有则返回错误对象。否则，如果购物车中有足够的物品，它会添加一份免费礼物。
+
+[arrays/push/push.js](http://media.pragprog.com/titles/es6tips/code/arrays/push.js)
+
+```javascript
+const cart = [
+  { name: 'The Foundation', price: 19.99, discount: false },
+  { name: 'Godel, Escher, Bach', price: 15.99, discount: false },
+  { name: 'Red Mars', price: 5.99, discount: true }
+];
+
+const reward = {
+  name: 'Guide to Science Fiction',
+  discount: true,
+  price: 0
+};
+
+function addFreeGift(cart) {
+  if (cart.length > 2) {
+    cart.push(reward);
+    return cart;
+  }
+  return cart;
+}
+
+function summarizeCart(cart) {
+  const discountable = cart.filter(item => item.discount);
+  if (discountable.length > 1) {
+    return {
+      error: 'Can only have one discount'
+    };
+  }
+}
+```
+
+当你使用 `push()` 添加项目时，你正在改变原始数组。幸运的是，你可以使用扩展运算符避免副作用。
+
+一些流行的库（如 Redux）根本不允许变异。大多数现代 JavaScript 采用函数式编程风格，这意味着你需要编写不包含副作用的代码。
+
+
+
+
+
+```javascript
+} {
+  const cartWithReward = addFreeGift(cart);
+  return {
+    discounts: discountable.length,
+    items: cartWithReward.length,
+    cart: cartWithReward,
+  };
+}
+```
+
+购物车是一个简单的数组，而礼物仅仅是添加的一个项。问题在于，这段代码只差一行之就会导致错误。像往常一样，花一点时间看看你是否能找到问题所在。
+
+这是一个说明为什么变异（mutation）看起来是无害的绝佳例子。如果六个月后，一位意图良好的开发者决定通过将所有变量声明移到函数顶部来清理代码，情况会如何呢？
+
+[arrays/push/push.js](http://media.pragprog.com/titles/es6tips/code/arrays/push/push.js)
+
+```javascript
+function summarizeCartUpdated(cart) {
+  const cartWithReward = addFreeGift(cart);
+  const discountable = cart.filter(item => item.discount);
+  if (discountable.length > 1) {
+    return {
+      error: 'Can only have one discount',
+    };
+  }
+  return {
+    discounts: discountable.length,
+    items: cartWithReward.length,
+    cart: cartWithReward,
+  };
+}
+```
+
+现在 Bug 暴露了。当你使用函数 `addFreeGift()` 时，你正在变异 `cart` 数组。如果项目超过两个，它将始终包含至少一个折扣。尽管你将返回值（添加了礼品的购物车）赋值给新变量，但你已经变异了原始的 `cart` 数组。每当有人拥有超过三个项目且有一个折扣的购物车时，他们就会收到错误。
+
+如果这里有测试，也许它是一个容易修复的问题。如果没有测试，谁知道多久之后客服会收到一封愤怒的邮件。
+
+你可能注意到，这些示例中的许多问题是变异发生在另一个函数中。观察得好！事实上，这正是变异可能如此危险的原因所在。当你调用一个函数时，你应该相信它不会改变任何提供的值。没有副作用的函数被称为“纯”函数，这也是你应该努力实现的目标。
+
+如果你在变异了输入的同时还从函数返回一个值，情况会变得更加困惑。后来的开发者可能会认为，既然返回值是更新后的值，那么原始值就没有改变。在这种情况下，他们就错了。输入值也被改变了。
+
+是时候修复问题了。它是如此不可简单——你应该立刻理解为什么展开运算符（spread operator）会变得如此流行。
+
+[arrays/push/push.js](http://media.pragprog.com/titles/es6tips/code/arrays/push/push.js)
+
+```javascript
+function addGift(cart) {
+  if (cart.length > 2) {
+    return [...cart, reward];
+  }
+  return cart;
+}
+
+function summarizeCartSpread(cart) {
+  const cartWithReward = addGift(cart);
+  const discountable = cart.filter(item => item.discount);
+  if (discountable.length > 1) {
+    return {
+      error: 'Can only have one discount',
+    };
+  }
+  return {
+    discounts: discountable.length,
+    items: cartWithReward.length,
+    cart: cartWithReward,
+  };
+}
+```
+
+你所做的获取当前数组并将其展开到方括号中，在末尾加上最新的项即可。
+
+本质上，你所做的是将内容重写为一个列表。注意，这是一个全新的数组，因此我们就不可能改变原始数组。我们只是在重用内容创建一个新数组。
+
+[arrays/push/push.js](http://media.pragprog.com/titles/es6tips/code/arrays/push/push.js)
+
+```javascript
+const titles = ['Moby Dick', 'White Teeth'];
+const moreTitles = [...titles, 'The Conscious Mind']; // ['Moby Dick', 'White Teeth', 'The Conscious Mind']
+```
+
+我最喜欢用这种方式创建新数组（我确定你也会喜欢）的原因是，你可以忘记很多方法。你不再需要它们了。快说！如何向数组开头添加新项？如何复制一个数组？提示：这与将同一个数组赋值给新变量不同。你必须去查一下吗？别担心，我还是得查。我的意思是，谁能记得 `slice()` 是用来复制的函数呢。这里是使用展开的写法：
+
+[arrays/push/push.js](http://media.pragprog.com/titles/es6tips/code/arrays/push/push.js)
+
+```javascript
+// Add to beginning
+const titles = ['Moby Dick', 'White Teeth'];
+titles.shift('The Conscious Mind');
+
+const moreTitles = ['Moby Dick', 'White Teeth'];
+constMoreTitles = ['The Conscious Mind', ...moreTitles];
+
+// Copy
+const toCopy = ['Moby Dick', 'White Teeth'];
+const copied = toCopy.slice();
+
+const moreCopies = ['Moby Dick', 'White Teeth'];
+const moreCopied = [...moreCopies];
+```
+
+当然，为了重复之前的一个观点，你是在传递你返回数组的意图。另一个开发者可能不记得 `slice()` 会创建一个新数组，但当他们看到方括号时，他们就会确切。在下一个技巧中，你将看到变异数组的方法，例如 `sort()`。
+
+## Tip 9：使用展开运算符避免排序混淆
+
+在这个技巧中，你将学习如何使用展开运算符对数组进行多次排序并得到相同的结果。到目前为止，你已经可以看到变异函数。当你有一个无法替换的函数时怎么办？答案相当简单：使用展开运算符创建原始数组的副本，然后变异那个副本。
+
+不要被答案的简单性欺骗了。变异 Bug 会在你最意想不到的时候出现。这发生在带有数据的应用程序中。如果你还没有写过显示数据的应用程序，等等——我保证你会做的。而且一旦你创建了那个数据表格，账户或项目经理的下一个请求就是让表格可以排序。
+
+跳过 UI 组件，纯看数据和函数。你需要编写一个接收员工数组并按名称或工年限进行排序的应用程序。
+
+从员工数组开始。
+
+[arrays/sort/sortMutate.js](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortMutate.js)
+
+```javascript
+const staff = [
+  { name: 'Joe', years: 10 },
+  { name: 'Theo', years: 5 },
+  { name: 'Dyan', years: 10 },
+];
+```
+
+接下来，添加几个自定义排序函数按名称或年龄排序。如果你不懂排序函数，别担心。这对示例并不是必要的。如果你感兴趣，可以查看 Mozilla Developer Network 排序文档。
+
+[arrays/sort/sortMutate.js](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortMutate.js)
+
+```javascript
+function sortByYears(a, b) {
+  if (a.years === b.years) {
+    return 0;
+  }
+  return a.years - b.years;
+}
+
+const sortByName = (a, b) => {
+  if (a.name === b.name) {
+    return 0;
+  }
+  return a.name > b.name ? 1 : -1;
+};
+```
+
+
+
+
+此时，你只需要在用户点击列标题时对数组调用 `sort` 函数即可。例如，如果用户选择按工龄年限排序，该函数将对数组进行排序并更新。
+
+[`arrays/sort/sortMutate.js`](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortMutate.js)
+
+```javascript
+staff.sort(sortByYears);
+[
+  { name: 'Theo', years: 5 },
+  { name: 'Joe', years: 10 },
+  { name: 'Dyan', years: 10 }
+];
+```
+
+现在棘手的地方：当你对数组进行排序时，你改变了它。尽管代码看起来已经执行完毕，但变化仍然存在。
+
+假设用户接着按用户名进行排序。同样，数组发生了变异。
+
+[`arrays/sort/sortMutate.js`](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortMutate.js)
+
+```javascript
+staff.sort(sortByName);
+[
+  { name: 'Dyan', years: 10 },
+  { name: 'Joe', years: 10 },
+  { name: 'Theo', years: 5 }
+];
+```
+
+没什么特别的，但看看如果用户返回并再次按工龄年限排序会发生什么。也许他们忘记了某个名字。也许他们需要不同的信息。谁知道呢？
+
+用户会看到什么结果？你认为用户应该看到什么结果？事实证明，第二次按名称排序产生完全不同的结果。
+
+[`arrays/sort/sortMutate.js`](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortMutate.js)
+
+```javascript
+staff.sort(sortByYears);
+[
+  { name: 'Theo', years: 5 },
+  { name: 'Dyan', years: 10 },
+  { name: 'Joe', years: 10 }
+];
+```
+
+这是一个简单的例子。想象一个包含数百员工的表格，许多员工具有相同的工龄。每当用户点击排序按钮时，他们看到的顺序略有不同。
+
+此时，你的用户对应用程序失去了信任。这正是你不希望看到的。变异（Mutations）可能会产生巨大影响。
+
+当你想要使用的方法必须变异数据时，该如何停止变异？答案很简单：不要变异数据。创建一个副本，然后执行变异。
+
+你代码中唯一需要更改的地方是在排序之前将原始数组展开到一个新数组中。
+
+[`arrays/sort/sortSpread.js`](http://media.pragprog.com/titles/es6tips/code/arrays/sort/sortSpread.js)
+
+```javascript
+[...staff].sort(sortByYears);
+[
+  { name: 'Theo', years: 5 },
+  { name: 'Dyan', years: 10 },
+  { name: 'Joe', years: 10 }
+];
+```
+
+
+
+你可能已经注意到我非常喜欢数组。但在很多情况下，它们并不是理想选择。正如你所看到的，数组中总是可以存储任何类型的信息——它们确实非常灵活——但这可能会让事情变得比必要的更加复杂。你最终往往掩盖的信息比你想要传达的信息要多。
+
+如果你有一组数据，并想在 UI 中根据条件地应用某些颜色，会怎样？你希望当数据低于阈值时显示为红色，当一切都在正常范围内时显示为绿色，当某些数据超过阈值时显示为蓝色。像往常一样，某位受过良好训练的聪明设计师挑选了这些颜色中最完美的色调（对我个人而言，我永远分不出它们的区别，但这就是为什么我不设计）。
+
+你可以把十六进制值放在数组里，但这传达不了多少信息。
+
+| | `const` colors = [`#d10202`, `'#19d836`, `'#0e33d8`]; |
+
+`#d10202` 到底是什么意思？它恰好是一种红色，但除非你预先知道，否则根本无法得知这一点。问题在于这些数据是相关的——它们都是颜色——但并不是互换的。与用户数组（其中所有用户在结构上是相似的，一个可以替换另一个）不同，不同的颜色有不同的用途（向用户传达数值）。当开发者想要红色的十六进制代码时，他们并不关心集合中还有其他什么值。他们不需要知道红色是第一个还是第三种颜色。在这种情况下，键值对集合（key-value collection）会更合适。你真的需要让未来的开发者对这些信息的含义有一个更清晰的认识。
+
+在数组不合适且你想要键值对集合的情况下，大多数开发者会首选对象（objects）。虽然对象很棒，但正如你将在接下来的提示中看到的，现在对于键值对集合来说有了更多的选项。
+
+TC39 委员会为集合增加了更多选项，因为对象是复杂的。它们可以作为键值对集合（这也是你在本章中使用它们的方式），也可以更接近具有构造函数、方法和属性的类。JavaScript 中的大多数事物，包括其他集合类型，其核心都是对象。
+
+本章将撇开对象属性、原型和关键字 `this` 的某些复杂性，转而研究对象如何被用作键值对集合。例如，`this` 关键字是一个巨大的话题，Kyle Simpson 在 [*You Don’t Know JS: this & Object Prototypes.* [Sim14]](#f_0071.xhtml_d8520e33) 中有深入的介绍。
+
+现在你已经主要将对象视为与其他集合类型（如 `Map`）竞争的集合，那么新的挑战就在于知道何时该刻意地选择普通对象（plain objects）作为问题的最佳解决方案，而不是作为默认选项。
+
+按照规则，当你想要共享不变的结构化键值数据时，对象是极棒的；但对于频繁更新或在运行时未知的动态信息，它们并不合适，正如你将在后面的提示中看到的那样。
+
+例如，如果你想共享你的颜色集合，对象是一个很棒的选择。数据不会改变。你不会动态地改变红色的十六进制值。在这种情况下，你可以通过添加键并将整个内容包裹在花括号中，将颜色数组转换为对象。当你通过这种方式（在花括号中使用键值对）创建对象时，你使用的是对象字面量语法（object literal syntax）。
+
+| | `const` colors = { |
+| | red: `'#d10202`, |
+| | green: `'#19d836`, |
+| | blue: `'#0e33d8` |
+| | } |
+
+当未来的开发者想要获取正确的红色时，他们不需要知道位置；他们直接调用即可：`colors.red`。或者，他们可以使用数组语法 `colors['red']`。这非常简单。这就是为什么对象对于检索静态信息如此有价值。
+
+这里的关键在于“静态信息”。对于不断更新、循环遍历、修改或排序的信息，对象并不好。在这些情况下，请使用 `Map`。对象在你知道信息所在何处时寻找信息的路径。配置文件通常是对象，因为它们在运行之前就已经设置好了，是静态信息的简单键值存储。
+
+[collections/object/object.js](http://media.pragprog.com/titles/es6tips/code/collections/object/object.js)
+
+| | `export` `const` config = { |
+| | endpoint: `'http://pragprog.com`, |
+| | key: `'secretkey`, |
+| | }; |
+
+但静态对象也可以通过程序定义。例如，你可以在函数中构建一个对象，然后将其传递给另一个函数。信息被收集、发送，然后在另一个函数中解包。通过这种方式，它是静态的，因为它没有被变异和更新。
+
+技巧在于，数据被设置后，每次都以相同的方式被检索。你不是在修改现有的对象；你是在每个函数中创建一个新对象。更重要的是，你在编写代码时已经就知道键名了。你不是使用变量来设置键。下一个函数预先知道它将获得什么。
+
+[collections/object/object.js](http://media.pragprog.com/titles/es6tips/code/collections/object/object.js)
+
+```javascript
+function getBill(item) {
+  return {
+    name: item.name,
+    due: twoWeeksNow(),
+    total: calculateTotal(item.price),
+  };
+}
+```
+
+const bill = getBill({name: 'Room Cleaning', price: 30 });
+
+```javascript
+function displayBill(bill) {
+  console.log(bill.name);
+  console.log(bill.due);
+  console.log(bill.total);
+}
+```
+
+在上一个示例中，对象被用于为传递传递的信息添加结构。你没有将 `displayBill()` 写成一个接收每个项目作为参数的函数，而是传递了整个对象，并由函数从中提取它需要的值。
+
+```javascript
+function displayBill(item) {
+  return {
+    name: item.name,
+    due: twoWeeksNow(),
+    total: calculateTotal(item.price),
+  };
+}
+```
+
+这就是对象远优于其他集合的地方。它们不仅快速清晰，而且通过解构（destructuring），从对象中提取数据比以往任何时候都快。如果你想看它的操作演示，请跳转到提示 29：使用解构访问对象属性。解构是为什么没有任何东西在快速查找方面能胜过对象的原因之一。
+
+
+
+考虑一个非常常见的问题。你有一个包含多个键值对的对象。问题在于这个对象是不完整的。当你有遗留数据且存在新字段时，或者当你从外部 API 获取数据并需要将其与你的数据模型匹配时，这种情况经常发生。无论哪种情况，问题都是：你想使用一个默认对象来填充剩余字段。
+
+如何创建一个既保留原始数据又添加默认值的新对象呢？当然，你不希望产生副作用或变异。
+
+花点时间写出代码。看看你想出什么。
+
+如果你写出代码，它看起来可能像这样：
+
+[collections/assign/problem.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/problem.js)
+
+```javascript
+const defaults = {
+  author: '',
+  title: '',
+  year: 2017,
+  rating: null,
+};
+
+const book = {
+  author: 'Joe Morgan',
+  title: 'Simplifying JavaScript',
+};
+
+function addBookDefaults(book, defaults) {
+  const fields = Object.keys(defaults);
+  const updated = {};
+  for (let i = 0; i < fields.length; i++) {
+    const field = fields[i];
+    updated[field] = book[field] || defaults[field];
+  }
+  return updated;
+}
+```
+
+这段代码没有问题，但它确实很冗长。幸运的是，这是一个常见的问题，因此 ES5 引入了 `Object.assign()` 来根据另一个对象（或多个对象）的键值创建并更新对象的字段。
+
+换句话说，`Object.assign()` 允许你通过另一个对象的属性来更新对象。
+
+那么 `Object.assign()` 是如何工作的呢？它非常简单。该方法接收一系列对象，并用外部对象的键值更新最内层的对象，然后返回更新后的第一个对象。最外对象的优先级高于任何内部对象。
+
+眼见为比解释容易，但当你发现它是有多简单时，你会喜欢上它的。以下是你如何使用 `Object.assign()` 重写 `addBookDefaults()` 的：
+
+[collections/assign/mutate.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/mutate.js)
+
+```javascript
+Object.assign(defaults, book);
+
+// {
+// author: 'Joe Morgan',
+// title: 'Simplifying JavaScript',
+// year: 2017,
+// rating: null,
+// }
+```
+
+你的九行函数缩减到了一行。但现在你可能已经发现这段代码存在一个问题。当它更新初始对象（默认对象）时，它也改变了原始对象。如果你用另一个书籍对象再次运行代码，将得到一个意外的结果。
+
+[collections/assign/mutate.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/mutate.js)
+
+```javascript
+const anotherBook = {
+  title: 'Another book',
+  year: 2016,
+};
+
+Object.assign(defaults, anotherBook);
+
+// {
+// author: 'Joe Morgan',
+// title: 'Simplifying JavaScript',
+// year: 2017,
+// rating: null,
+// }
+```
+
+你无意中改变了默认对象，让我“Joe”变成了默认作者，所以我开始为许多我从未写过的书获得名誉。
+
+幸运的是，解决方案很简单。只需让第一个对象成为空对象。这样做之后，返回的对象将是更新后的空对象。其他对象将不会发生变异。
+
+[collections/assign/assign.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/assign.js)
+
+```javascript
+const defaults = { author: '', title: '', year: 2017, rating: null };
+const book = { author: 'Joe Morgan', title: 'Simplifying JavaScript' };
+
+const updated = Object.assign({}, defaults, book);
+```
+
+
+
+在本提示中，你将学习如何使用对象展开运算符在减少语法开销的同时，获得 `Object.assign()` 的所有优势。
+
+在上一个提示中，你已经看到如何使用 `Object.assign()` 来复制对象，以及如何用来自另一个对象的新值来覆盖对象的值。这是一个非常有价值且很强大的工具。但是，哇——它看起来太丑了。
+
+展开运算符在 `ES6` 中是一个非常受欢迎的特性，因此类似的语法也被引入到了对象。对象展开运算符尚未正式纳入规范，但由于它使用非常广泛，未来很可能会被采纳。你可以在 github 上查看该提案。
+
+## 使用提议语法
+
+JavaScript 开发者热爱新语法。事实上，他们非常喜欢它，以至于往往在正式正式采纳之前就开始使用它。对象展开运算符以及类中的私有方法等情况就是如此。尽管规范尚未正式发布，你仍可以在许多代码库中看到它们。
+
+决定何时使用提议语法取决于偏好。我倾向于非常保守，只有当非常明确社区支持该更改且提案不太可能变化时，我才会采用提议语法。
+
+一旦你决定使用提议语法，你就需要对开发环境进行一些更改。如果你使用 `Babel` 编译代码以确保跨浏览器兼容，你只需要添加一个插件，一切就能正常运行。如果你使用的是 `Node.js`，情况可能会复杂一些。许多特性可以通过启动 `Node.js` 时使用 `--harmony` 标志来支持。
+
+尽管尽管尝试，但请注意，如果官方提案发生变化，你可能需要重构代码。
+
+对象展开运算符是如何工作的？嗯，很简单。它的工作方式类似于数组展开运算符——键值对像列表一样返回。你可以通过将信息放在展开运算符之前或之后来轻松添加信息。就像数组展开一样，你必须将其展开到某些东西中。
+
+[collections/objectSpread/objectSpread.js](http://media.pragprog.com/titles/es6tips/code/collections/objectSpread/objectSpread.js)
+
+```javascript
+const book = {
+  title: 'Reasons and Persons',
+  author: 'Derek Parfit',
+};
+
+const update = { ...book, year: 1984 };
+
+// { title: 'Reasons and Persons', author: 'Derek Parfit', year: 1984}
+```
+
+但它与数组展开不同的是，如果你添加了相同键的值，它将使用最后声明的值。
+
+通过这种方式，它就像是输入量更少的 `Object.assign()`。
+
+[collections/objectSpread/objectSpread.js](http://media.pragprog.com/titles/es6tips/code/collections/objectSpread/objectSpread.js)
+
+```javascript
+const book = {
+  title: 'Reasons and Persons',
+  author: 'Derek Parfit',
+};
+
+const update = { ...book, title: 'Reasons & Persons' };
+
+// { title: 'Reasons & Persons', author: 'Derek Parfit' }
+```
+
+就是这样！它获取了现有的最佳特性并将它们结合。当你发现 JavaScript 社区热情地拥抱它时，你不会意外。
+
+现在你有了一些很棒的新语法，尝试重写上一个提示中的函数。我会给你原始版本以及更新后的版本。但请自己试一下。这非常简单。
+
+使用 `Object.assign()` 添加或更新信息的方法：
+
+[collections/assign/assign.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/assign.js)
+
+```javascript
+const defaults = {
+  author: '',
+  title: '',
+  year: 2017,
+  rating: null,
+};
+
+const book = {
+  author: 'Joe Morgan',
+  title: 'Simplifying JavaScript',
+};
+
+const updated = Object.assign({}, defaults, book);
+```
+
+这是使用对象展开运算符的版本：
+
+[collections/objectSpread/objectSpread.js](http://media.pragprog.com/titles/es6tips/code/collections/objectSpread/objectSpread.js)
+
+```javascript
+const defaults = {
+  author: '',
+  title: '',
+  year: 2017,
+  rating: null,
+};
+
+const book = {
+  author: 'Joe Morgan',
+  title: 'ES6 Tips',
+};
+
+const bookWithDefaults = { ...defaults, ...book };
+
+// {
+// author: 'Joe Morgan',
+// title: 'ES6 Tips',
+// year: 2017,
+// rating: null,
+// }
+```
+
+你会遇到与使用 `Object.assign()` 相同的深度合并问题：你没有复制嵌套对象——你只复制了引用，这可能会导致变异产生问题。
+
+幸运的是，修复方法在视觉上没那么难看。这是原始代码。
+
+[collections/assign/assign.js](http://media.pragprog.com/titles/es6tips/code/collections/assign/assign.js)
+
+```javascript
+const employee2 = Object.assign(
+  {},
+  defaultEmployee,
+  {
+    name: Object.assign({}, defaultEmployee.name),
+  },
+);
+
+export { defaults };
+```
+
+现在，在看答案之前，请真的尝试一下。它很直观，但仍然稍微复杂一点。懂了吗？好的。这是使用对象展开运算符实现的相同更新。
+
+[collections/objectSpread/objectSpread.js](http://media.pragprog.com/titles/es6tips/code/collections/objectSpread/objectSpread.js)
+
+```javascript
+const employee = {
+  ...defaultEmployee,
+  name: {
+    ...defaultEmployee.name,
+  },
+};
+```
+
+优势是一而易见的。代码更具可读性。你以清晰的方式表达了创建对象的意图。你不需要担心变异，因为你不需要记住从一个空对象开始。
+
+对象展开是非常棒的——它对你的代码很有处，并为你提供了在代码库中集成实验性特性的机会。
+
+现有集合就这些了。在下一个提示中，你将能够尝试一些完全全新的集合，它们应该改进你的代码通信。首先是 `Map` 对象。
+
+## 提示 13：使用 Maps 清晰更新键值数据
+
+在本提示中，你将学习如何使用 `Map` 对象处理频繁更新的数据的键值集合。
+
+在提示 10 [使用对象进行静态键值查找] 中，你学到了应该有意识地使用对象，而不是将其作为默认集合。现在你有机会查看另一种替代方案：`Map`。
+
+`Map` 是一种特殊的集合，可以非常容易地完成某些事情。Mozilla 开发者网络（MDN）列出了许多 `Map` 比普通对象更好选择的情况。我鼓励你阅读完整列表，但本提示检查了两种特定情况：
+
+*   键值对被频繁地添加或删除。
+*   键不是字符串。
+
+在下一个提示中，你将看到另一个巨大的优势：使用 `Map` 遍历集合。现在，你只需要熟悉在 map 中添加或删除值即可。
+
+首先，思考键值对被频繁添加和删除意味着什么。考虑一个宠物领养网站。该网站有一份所有需要家的可爱狗的列表。因为人们对宠物有不同的期望（有些人想要大狗，有些人喜欢某些品种），你需要一种过滤动物的方法。
+
+你从一个动物集合开始：
+
+```javascript
+const dogs = [
+  {
+    name: 'max',
+    size: 'small',
+    breed: 'boston terrier',
+    color: 'black',
+  },
+  {
+    name: 'don',
+    size: 'large',
+    breed: 'labrador',
+    color: 'black',
+  },
+];
+```
+
+
+
+
+```json
+[
+  {
+    name: 'shadow',
+    size: 'medium',
+    breed: 'labrador',
+    color: 'chocolate'
+  }
+]
+```
+
+所有狗的集合是一个数组，这是合理的，因为集合中每个项的形状都是相同的。
+
+你还需要再创建一个集合：你的已应用过滤器列表。过滤器将是一个包含一个键（`color`）和一个对应值（`black`）的集合。用户需要能够添加过滤器、删除过滤器并清除所有过滤器值。
+
+如果你向集合中添加了键 `color` 和值 `black`，那么在代码库的其他地方，你将使用该信息对对象进行过滤，并得到一个包含两只狗的数组。不要担心实现细节。但如果你好奇，可以看下提示 23，使用 `filter()` 和 `find()` 提取数据子集了解如何过滤数组。
+
+为了理解为什么 `Map` 被加入规范中，请思考你会如何使用标准对象来解决这个问题。
+
+首先，你会创建一个空对象来存储新信息：
+
+```javascript
+let filters = {};
+```
+
+然后，你需要三个操作来更新对象上的信息：添加过滤器、删除过滤器、清除所有过滤器。
+
+[collections/map/problem.js](http://media.pragprog.com/titles/es6tips/code/collections/map/problem.js)
+
+```javascript
+function addFilters(filters, key, value) {
+  filters[key] = value;
+}
+
+function deleteFilters(filters, key) {
+  delete filters[key];
+}
+
+function clearFilters(filters) {
+  filters = {};
+  return filters;
+}
+```
+
+这里的奇怪之处在于，尽管你对集合执行了三个基本操作——设置键值、删除键值、清除所有键值——但你使用的是三种不同的范式。第一种（设置键值）使用对象本身的方法。第二种（删除键值）使用语言定义的运算符。第三种（清除所有数据）是重新赋值变量。这甚至不是对对象的操作，而是变量的重新赋值。当你“清除”一个对象时，你实际上是在写 `filters = new Object();`。
+
+相比之下，map 专门设计用于频繁更新键值对。接口清晰，方法名称具有可预测性，并且内置了诸如循环（你将在下一个提示中看到）的操作。这将让你成为一个更高效的开发者。你越能预测，创建速度就越快。
+
+### 浏览器引擎
+
+JavaScript 代码必须由引擎解释，但复杂的是有很多不同的引擎。最流行的是 V8 引擎，它驱动着 Chrome 和 Node。但还有 SpiderMonkey (Firefox) 和 Chakra (Internet Explorer/Edge)。功能可以通过不同的方式实现。而且某些语法变化除了代码清晰度外还有其他优势。
+
+由于 map 是更专门的集合，JavaScript 引擎的开发者可以优化代码以提高操作速度。对象的查找将是线性的，但当 map 原生实现时，它们的查找时间可以是对数级的。
+
+换句话说，大对象比大 map 开贵。
+
+你可以看到像 React 这样的项目纯粹性能考虑切换到原生实现的 map。你可能永远不需要为了性能在对象或 map 之间做出选择，但了解底层引擎确实区别对待它们是有好处。
+
+开始，你需要创建一个 `Map` 的新实例并添加一些数据。与使用大括号作为简单构造快捷方式的对象不同，你必须显式地创建 `Map` 的新实例。
+
+```javascript
+let filters = new Map();
+```
+
+注意你使用 `let` 分配了新 map。`let` 是更好的选择，因为你将通过添加某些数据来变异对象。你可能会有点困惑。在花大量时间学习为什么变异是不好的之后，这里有一个当你添加或删除数据时由于必须变异的对象。目前，不要担心变异。有一种避开变异对象的方法，你将在下一个提示中看到。
+
+创建实例后，你使用 `set()` 方法添加数据。要向过滤器列表添加 'labrador' 品种，你需要将键名 'breed' 作为第一个参数，将值 'labrador' 作为第二个参数传入。
+
+```javascript
+filters.set('breed', 'labrador');
+```
+
+要检索数据，使用 `get()` 方法，将键作为唯一参数传入。
+
+```javascript
+filters.get('breed');
+```
+
+
+
+
+此外，使用对象时，你对键的类型受到限制。对象只能使用特定类型的键。最重要的一点是，你不能将整数作为字符串，如果你想通过数字 ID 存储信息，这会导致问题。例如，你有一个错误代码对象：
+
+```javascript
+const errors = {
+  100: 'Invalid name',
+  110: 'Name should only contain letters',
+  200: 'Invalid color'
+};
+```
+
+你可能下意识地认为可以通过数字代码获取错误文本。
+
+```javascript
+function isDataValid(data) {
+  if(data.length < 10) {
+    return errors.100
+  }
+  return true;
+}
+```
+
+这段代码会抛出一个错误。整数作为键不能使用点语法进行访问。你仍然可以使用数组符号 `errors[100]` 来访问信息。但这实际上是一个小技巧。你之所以得到正确的结果，是因为当你创建错误错误对象时，它将所有整数转换成了字符串。当你使用数组语法时，它在查找之前也会将整数转换为字符串。如果你尝试获取键，它将返回一个字符串数组：
+
+```javascript
+Object.keys(errors);
+// ['100', '110', '200']
+```
+
+ Map 则不会有这个问题。它可以接受许多不同的类型作为键。
+
+```javascript
+let errors = new Map([
+  [100, 'Invalid name'],
+  [110, 'Name should only contain letters'],
+  [200, 'Invalid color']
+]);
+
+errors.get(100);
+// 'Invalid name'
+```
+
+如果你好奇的话，你也可以像对待对象一样从 Map 中获取键。
+
+```javascript
+errors.keys();
+// MapIterator { 100, 110, 200 }
+```
+
+注意发现什么奇怪的地方了吗？当你请求键时，你得到的不是像使用 `Object.keys()` 那样的数组。你没有得到一个对象，甚至不是另一个 Map；返回值是一个被称为 `MapIterator` 的东西。别担心——这实际上是件好事。`MapIterator` 让我们能够循环遍历数据。
+
+在下一个技巧中，你将看到 `MapIterator` 是如何让你一次又回到 Map 的杀手锏级功能。
+
+## 技巧 14：使用 Map 和扩展运算符迭代键值数据
+
+在这一技巧中，你将学习如何使用循环或扩展运算符直接对 Map 中的键值数据进行迭代。
+
+在上一个技巧中，你已经看到当经常添加或删除项目时，Map 是一个改进的键值集合。正如你所看到的，对象非常有用，但在某些情况下 Map 具有明显的优势。你可以在 Mozilla 开发者网络（Mozilla Developer Network）上看到这些优势。
+
+你已经探索了关于键设置时的若干优势。现在，你将探索 Map 的另一种建议用法：可用于迭代的集合。
+
+遍历对象是非常令人沮丧的。事实上，过去没有方法直接遍历它们。你总是被迫在循环数据之前对它们进行转换。现在情况好了一点。你现在可以使用 `for...in` 循环来遍历对象，但你只能访问对象的键。在某种程度上，这与遍历键数组没有太大区别。请查看技巧 27，*使用 for...in 和 for...each 减少循环混乱* 以获取更多关于 `for...in` 循环的知识。
+
+正如你看到的，遍历对象是复杂的。相反，你可以直接迭代 Map。
+
+从回到你的过滤器开始。假设你有一个过滤器对象，并你想列出已应用的过滤器。毕竟，你想让用户记住他们看到的是信息的子集。你会如何编写代码将对象转换为字符串呢？
+
+例如，你会如何将所有的键值转换为“key:value”格式的字符串呢？
+
+奇怪的地方在于，你不会遍历过滤器对象。相反，你将提取其他信息，然后对这些信息进行迭代。
+
+`collections/mapSpread/object.js`
+
+```javascript
+const filters = {
+  color: 'black',
+  breed: 'labrador'
+};
+
+function getAppliedFilters(filters) {
+  const keys = Object.keys(filters);
+  const applied = [];
+  for (const key of keys) {
+    applied.push(filters[key]);
+  }
+  return applied.join(', ');
+}
+```
+
+
+
+回到你最初使用 `for` 循环将键值对转换为字符串的方法。因为你可以直接对 `map` 进行迭代，所以不需要先提取键。此外，当你遍历 `map` 的条目（entries）时，你得到的是一对键值对，你可以使用解构赋值立即将其赋给变量。你将在提示 29 中进一步探讨这一点，*使用解构赋值访问对象属性*。
+
+这种结果更加简洁，并且可以帮助你避免了拆分你的数据结构。
+
+[collections/mapSpread/iterate.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSpread/iterate.js)
+
+```javascript
+function getAppliedFilters(filters) {
+  const applied = [];
+  for (const [key, value] of filters) {
+    applied.push(`${key}:${value}`);
+  }
+  return `Your filters are: ${applied.join(', ')}`.`;
+}
+// 'Your filters are: color:black, breed:labrador.'
+```
+
+当然，你很快发现自己遇到了和之前相同的排序问题。嗯，这对你来说有好消息也有坏消息：好消息是 `Map` 确实保留顺序。你拥有的第一个项目将始终是 `map` 中的第一个项目。坏消息是它没有像数组那样的内置 sort 方法。
+
+换句话说，你不能这样做：
+
+```javascript
+filters.sort()
+```
+
+突然之间，你的 map 看起来没那么好用了。幸运的是，有一个非常简单的解决方案：扩展运算符。
+
+扩展运算符在 `map` 上的工作方式与数组上相同。主要的区别在于它返回的是对的列表，而不是单个值。
+
+```javascript
+...filters;
+// ['color', 'black'], ['breed', 'labrador']
+```
+
+就像数组上的扩展运算符一样，你必须将其扩展到某些东西中，这意味着你可以轻松地创建一个键值对的数组：
+
+```javascript
+[...filters];
+// [['color', 'black'], ['breed', 'labrador']]
+```
+
+我希望这让你对如何解决排序问题有了思路。尝试一下，看看你想出什么。唯一的陷阱在于，由于你正在对一个数组进行排序，你应该提供一个显式的比较函数。这并不是严格必要的，因为默认的比较函数会将键值对数组转换为字符串，但明确你的意图会更好。一旦你在提示 20 中学会如何编写箭头函数，*使用箭头函数简化循环*，比较函数将只有一行代码。
+
+我打赌你想出了类似这样的简单代码。
+
+[collections/mapSpread/iterate.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSpread/iterate.js)
+
+```javascript
+function sortByKey(a, b) {
+  return a[0] > b[0] ? 1 : -1;
+}
+
+function getSortedAppliedFilters(filters) {
+  const applied = [];
+  for (const [key, value] of [...filters].sort(sortByKey)) {
+    applied.push(`${key}:${value}`);
+  }
+  return `Your filters are: ${applied.join(', ')}`.`;
+}
+// 'Your filters are: breed:labrador, color:black.'
+```
+
+现在仔细看——这很容易被忽略。在 `for` 循环初始化器赋值变量时，你迅速将 map 扩展成数组，然后对该数组进行了排序。现在你得到了你想要的结果。
+
+这里有一个小微的问题。如果你仔细阅读代码，可能会注意到有些变化。你开始时使用的是 `map`，但你的 `for` 循环实际上并没有在 `map` 上迭代。它迭代的是一个新数组。
+
+老实说，这不是什么问题。转换为数组没有问题。事实上，它给了你一个进一步简化函数的机会。
+
+既然你可以轻松地移动到数组，你不如使用你可以利用所有数组方法。因为你正在以相同的方式改变数组的每个值，你不需要像之前使用 `let applied = []` 那样创建一个新数组来收集结果。你可以直接使用 `map()` 方法。如果这对你来说是新的，请跳到提示 22，[*使用 map() 创建数组*]。
+
+[collections/mapSpread/mapSpread.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSpread/mapSpread.js)
+
+```javascript
+function getAppliedFilters(filters) {
+  const applied = [...filters].map(([key, value]) => {
+    return `${key}:${value}`;
+  });
+  return `Your filters are: ${applied.join(', ')}`.`;
+}
+// 'Your filters are: color:black, breed:labrador.'
+```
+
+就像数组上的扩展运算符一样，你必须将其扩展到某些东西中，这意味着你可以轻松地创建一个键值对的数组：
+
+```javascript
+[...filters];
+// [['color', 'black'], ['breed', 'labrador']]
+```
+
+扩展运算符在 `map` 上的工作方式与数组上相同。主要的区别在于它返回的是对的列表，而不是单个值。
+
+```javascript
+...filters;
+// ['color', 'black'], ['breed', 'labrador']
+```
+
+换句话说，你不能这样做：
+
+```javascript
+filters.sort()
+```
+
+
+
+
+[collections/mapSideEffects/sideEffects.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSideEffects/sideEffects.js)
+
+```javascript
+function applyDefaults(map, defaults) {
+  for (const [key, value] of defaults) {
+    if (!map.has(key)) {
+      map.set(key, value);
+    }
+  }
+}
+
+export { applyDefaults };
+```
+
+如果你的目标仅仅是合并默认值和用户数据，那么你已经成功了。但此时，你对变异（mutations）的怀疑应该已经产生了。考虑一下如何使用这个过滤器对象。你用它来过滤数据，但也用它来提醒用户他们已应用的过滤器（就像你在上一个技巧中通过创建一个字符串所的那样）。
+
+现在你已经修改了对象，在用户看来，他们应用了一堆自己从未选择过的默认值。注意，默认值包含一个状态（state）。你希望用户只看到他们所在州的动物，但你不希望他们直接更改状态。你更希望他们访问该状态的宠物领养页面。
+
+解决这个问题最简单的方法是创建一个 map 的副本。正如你可能记得的，你可以通过传入一个键对数组来创建一个新 map。你可以使用扩展运算符（spread operator）创建一个键对列表。
+
+考虑到这一点，请尝试更新代码，在变异之前创建一个副本。
+
+[collections/mapSideEffects/copy.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSideEffects/copy.js)
+
+```javascript
+function applyDefaults(map, defaults) {
+  const copy = new Map([...map]);
+  for (const [key, value] of defaults) {
+    if (!copy.has(key)) {
+      copy.set(key, value);
+    }
+  }
+  return copy;
+}
+```
+
+如果你得到了类似这样的结果，干得好！你得到了过滤器的副本，并将默认值应用到了副本上（注意，修改一个函数作用范围内的对象是可以的），然后返回了新的 map。现在你可以确保，你当前的过滤器 map 免受了副作用的影响，而你的新 map 包含了所有默认值和所有应用的信息。
+
+尽管如此，还有更好的办法。你仍然在手动检查大量键是否存在。幸运的是，这甚至不是必要的。Map 像对象一样，键只能有一个。所以，如果你尝试创建一个带有新键的 map，它将使用最后声明的该键的值。这就像是你正在更新值而不是设置值。
+
+```javascript
+const filters = new Map()
+  .set('color', 'black')
+  .set('color', 'brown');
+
+filters.get('color');
+// brown
+```
+
+有了这些知识，你可以结合对对象扩展运算符的了解，用一行代码合并两个 map。
+
+```javascript
+let filters = new Map()
+  .set('color', 'black');
+
+let filters2 = new Map()
+  .set('color', 'brown');
+
+let update = new Map([...filters, ...filters2]);
+
+update.get('color');
+// brown
+```
+
+现在当你再次更新该函数时，你会发现甚至不需要这个函数了。合并并创建 map 变成了一行代码。
+
+[collections/mapSideEffects/map.js](http://media.pragprog.com/titles/es6tips/code/collections/mapSideEffects/map.js)
+
+```javascript
+function applyDefaults(map, defaults) {
+  return new Map([...defaults, ...map]);
+}
+```
+
+Map 确实结合了许多其他数据结构中的优秀思想。这应该能给你一些启发，关于如何在代码中开始使用它们。
+
+在下一个技巧中，你将学习另一种新集合 Set，它在一件事上做得非常好。
+
+## 技巧 16：使用 Set 保持唯一值
+
+在这个技巧中，你将学习如何从数组中快速提取唯一项。`Set` 是一个非常简单的集合，它像一个只能包含一个实例的数组。`Set` 表现非常好，但你需要知道 `Set` 是一个...
+
+```javascript
+const dogs = [
+  {
+    name: 'golden retriever',
+    size: 'small',
+    breed: 'terrier',
+    color: 'black'
+  },
+  {
+    name: 'beagle',
+    size: 'medium',
+    breed: 'border collie',
+    color: 'brown'
+  },
+  {
+    name: 'labrador',
+    size: 'large',
+    breed: 'labrador',
+    color: 'black'
+  },
+  {
+    name: 'poodle',
+    size: 'small',
+    breed: 'boston terrier',
+    color: 'brown'
+  },
+  {
+    name: 'husky',
+    size: 'medium',
+    breed: 'husky',
+    color: 'black'
+  }
+];
+```
+
+你如何从数组中获取唯一项列表？你可以使用 `Set` 对象来处理提取唯一值的工作。`Set` 是一种常见的数据类型，你可能在其他语言中熟悉它。
+
+它的接口非常简单，在很多方面类似于 `Map`。主要的区别在于，它不是接收键对数组，而是可以通过传入一个扁数组作为参数创建一个新的 `Set` 。
+
+如果你将颜色数组传入 set，你就离成功了。
+
+```javascript
+const colors = ['black', 'black', 'brown'];
+const unique = new Set(colors);
+// Set {'black', 'brown'}
+```
+
+你可能注意到对象的值是一个只包含每个颜色一个实例的 Set。这看起来可能是一个问题。你需要的不是 Set——你想要一个唯一项的数组。
+
+[set/unique.js](http://media.pragprog.com/titles/es6tips/code/collections/unique.js)
+
+```javascript
+function getColors(dogs) {
+  return dogs.map(dog => dog.color);
+}
+
+getColors(dogs);
+// ['black', 'brown', 'black', 'brown', 'black']
+```
+
+问题是这只是第一部分。现在你有了颜色，你需要将它还原为数组。你可以通过多种方式提取它们。有 `for` 循环和 `reduce()` 函数。但目前，请坚持简单的 `for` 循环。
+
+[set/unique.js](http://media.pragprog.com/titles/es6tips/code/collections/unique.js)
+
+```javascript
+function getUnique(attributes) {
+  const unique = [];
+  for (const attribute of attributes) {
+    if (!unique.includes(attribute)) {
+      unique.push(attribute);
+    }
+  }
+  return unique;
+}
+
+const colors = getColors(dogs);
+getUnique(colors);
+// ['black', 'brown']
+```
+
+
+
+
+好，现在你可能已经猜到了解决方案：展开运算符（spread operator）。你可以像以前对 `Map` 那样在 `Set` 上使用展开运算符。唯一的区别是 `Set` 返回的是一个数组。这正是你想要的！现在，你可以将 `getUnique()` 函数重构为单行代码了。注意，你甚至可以在创建实例时使用展开运算符——你甚至将它赋值给变量。
+
+[`/collections/set/set.js`](http://media.pragprog.com/titles/es6tips/code/collections/set/set.js)
+
+```javascript
+function getUnique(attributes) {
+  return [...new Set(attributes)];
+}
+```
+
+也许这段代码仍然让你觉得不太妥。很好！这说明你的直觉正在变得敏锐。如果你觉得这样做效率很低，那么你是正确的。你首先遍历狗的数组来获取颜色数组；然后处理该数组以获取唯一值列表。难道你不能一次性完成这两步吗？
+
+你当然可以。`Set` 再次与 `Map` 相似，你拥有用于添加和检查值的方法。对于 `set`，你可以使用 `add()` 添加值，使用 `has()` 检查值。你还有 `delete()` 和 `clear()`，它们的工作方式与 `Map` 中完全相同。
+
+这意味着你可以在循环的过程中逐个地将项添加到 `set` 中，而不是通过传递值数组一次性添加。`set` 只能保留每个值的其中一个。如果你尝试添加一个 `set` 中尚不存在的值，它就会被添加。如果你尝试添加一个已经存在的值，它会被忽略。顺序会被保留，且值被添加的初始位置将保持。如果你尝试添加一个已经存在的项，它会保持原始位置。
+
+```javascript
+let names = new Set();
+names.add('joe');
+// Set { 'joe'}
+names.add('bea');
+// Set { 'joe', 'bea'}
+names.add('joe');
+// Set { 'joe', 'bea'}
+```
+
+你现在拥有了在一次遍历狗数组时获取唯一值的工具。你不需要先获取所有颜色，然后再获取所有唯一项。你可以在一个循环中获取它们。
+
+[`/collections/set/set.js`](http://media.pragprog.com/titles/es6tips/code/collections/set/set.js)
+
+```javascript
+function getUniqueColors(dogs) {
+  const unique = new Set();
+  for (const dog of dogs) {
+    unique.add(dog.color);
+  }
+  return [...unique];
+}
+```
+
+在这段代码中，你使用了一个简单的 `for` 循环。但你可以轻松地使用 `reduce()` 函数将此操作简化为单行。`reduce` 函数非常棒，你会喜欢它们的，但它们稍微复杂一些。你将在技巧 26 节 使用 reduce() 转换数组数据 中有机会深入探索它们，但这里有一个如何用一行代码获取唯一值的示例。
+
+[`/collections/set/set.js`](http://media.pragprog.com/titles/es6tips/code/collections/set/set.js)
+
+```javascript
+[dogs.reduce((colors, { color }) => colors.add(color), new Set())];
+```
+
+到这里，你可能对在代码中实验集合的所有新方法感到兴奋。还有一些你还没有触及的，例如 `WeakMap` 和 `WeakSet`，你应该尝试一下。JavaScript 文档最好的地方始终是 Mozilla 开发者网络（Mozilla Developer Network）。^([[18]](#f_0028.xhtml_FOOTNOTE-18))
+
+关于集合的讨论足够了。是时候开始构建了。下一步是学习使用控制结构来处理条件动作。
+
+在下一章中，你将看到如何对条件语句同样的简单性和可读性标准。
+
+### 脚注
+
+[[12]](#f_0024.xhtml_FNPTR-12)
+
+[`github.com/tc39/proposal-object-rest-spread`](https://github.com/tc39/proposal-object-rest-spread)
+
+[[13]](#f_0025.xhtml_FNPTR-13)
+
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+[[14]](#f_0025.xhtml_FNPTR-14)
+
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)#Keyed_collections_WeakSets
+
+[[15]](#f_0025.xhtml_FNPTR-15)
+
+[`github.com/facebook/pull/7232`](https://github.com/facebook/pull/7232)#issue-231516)
+
+[[16]](#f_0026.xhtml_FNPTR-16)
+
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+[[17]](#f_0026.xhtml_FNPTR-17)
+
+[`github.com/tc39/proposal-object-rest-spread`](https://github.com/tc39/proposal-object-rest-spread)
+
+[[18]](#f_0028.xhtml_FOOTNOTE-18)
+
+[`developer.mozilla.org/`](https://developer.mozilla.org/)
+
+# 第 4 章
+
+编写清晰的条件语句
+
+好，现在你可能已经猜到了解决方案：展开运算符。你可以像以前对 `Map` 那样在 `Set` 上使用展开运算符。唯一的区别是 `Set` 返回的是一个数组。这正是你想要的！现在，你可以将 `getUnique()` 函数重构为单行代码了。注意，你甚至可以在创建实例时使用展开运算符——你甚至不需要将它赋值给变量。
+
+
+
+是时候清理你条件语句中的杂乱代码了。通过真值（truthy values）、三元运算符和短路逻辑，你将编写出符合现代 JavaScript 代码的条件语句。当你进入数组方法和函数时，你会发现这些思想会反复出现。
+
+让我们开始整理你的“家务”吧。
+
+## 提示 17：使用假值（Falsy Values）缩短条件语句
+
+在这个提示中，你将学习如何使用假值和真值来检查来自不同类型的信息。
+
+你还记得你写过的第一行代码吗？我不记得，但如果那是某种条件语句，我不会感到意外。对某些信息做出一种响应，对其他信息做出不同的响应，这几乎是编程中最基础的操作了。
+
+我每天仍然会写很多条件语句，我打赌你也是如此。幸运的是，JavaScript 以及许多其他语言一样，为你提供了许多工具，可以用极少的代码快速地检查信息并重新赋值或标准化信息。
+
+快速检查值的秘诀在于理解原始值 `true` 和 `false`（也称为 `Boolean 类型`）与许多所谓的真值和假值之间的细微差别——这些值并不等同于布尔值 `true` 或 `false`，但在大多数情况下它们的行为就像它们一样。
+
+我打赌你以为我们要开始深入研究那个想法了。好了，再给我一秒钟来回顾另一个概念：等效性（equivalency）和标识性（identity）——如果一个值相同但类型不同，并且使用 `==` 进行检查，它就是等效的。
+
+| 1 == '1' | // true |
+
+相同的值（或具有严格相等性的值）意味着它们必须是相同的类型。
+
+| 1 === '1' | // false |
+| 1 === 1 | // true |
+
+对象（包括数组的实例）是通过它们的引用检查的（还记得 `Object.assign()` 中的引用吗？）。
+
+这个主题可以变得非常深奥，但现在我们想要识别那些等效于 `false` 或 `true` 但并不相同的值。
+
+好了。回到真值和假值。空字符串等于 `false`（但不相同）。换句话说，它是假值。
+
+| `'' == false` | // true |
+| `if ('') {` | |
+| `return 'I am not false!'` | |
+| `} else {` | |
+| `return 'I am false :(!'` | |
+| `}` | |
+| `// I am false :( | |
+
+这里是 Mozilla 开发者网络（MDN）提供的假值快速列表：
+
+* `false`
+* `null`
+* `0`
+* `NaN` (不是数字)
+* `"`
+* `""`
+
+值得记忆的是 `0`、`null` 和空字符串。希望你能记住 `false` 是一个假值。
+
+注意到有几个显眼缺失的项了吗？如果你好奇数组和对象的缺失（更不用说其他集合类型了），眼光不错。数组和对象，即使是空数组和空对象，也是真值。因此，你必须找到另一种方法通过 `[].length` 或 `Object.keys({}).length` 来检查空，这将给你一个 0 或者一个很不错的真值。
+
+好了，你可能在想为什么要关心假值和真值（当然，任何不是假值的都是真值）。它们之所以重要，是因为你可以缩短许多原本冗长的表达式。
+
+```javascript
+const employee = {
+  name: 'Eric',
+  equipmentTraining: '',
+}
+
+if (!employee.equipmentTraining) {
+  return 'Not authorized to operate machinery';
+}
+```
+
+你不需要代码知道关于他们何时接受过设备培训的任何信息。代码不需要知道它是日期还是证书名称。代码只需要知道该值存在，并且那里确实有东西。
+
+但有几个陷阱。这里事情变得复杂了。很容易在无意中创建一个假值。最常见的问题发生在你通过检查值的索引来测试数组中的是否存在时：
+
+```javascript
+['a', 'b'].indexOf('a') // 0，这是一个假值（falsy）
+```
+
+你在探索 `Array.includes()` 时已经见过这个问题了，所以它偷袭你身上的概率可能比以前要低。当你寻找未定义的键值数据时，会出现一个更微妙的问题。如果你尝试从一个未定义的键中提取值，你将得到 `undefined`，如果对象或 map 在代码的地方发生变化，可能会导致问题。
+
+让我们稍微修改一下对象，让 `equipmentTraining` 成为一个 `Boolean`。
+
+```javascript
+const employee = {
+  name: 'Eric',
+  equipmentTraining: true,
+}
+
+function Certs(employee) {
+  if (employee.equipmentTraining) {
+    delete employee.equipmentTraining;
+  }
+}
+
+function checkAuthorization() {
+  if (!employee.equipmentTraining) {
+    return 'Not authorized to operate machinery';
+  }
+  return `Hello, ${employee.name}`;
+}
+
+Certs(employee);
+checkAuthorization(); // 'Not authorized to operate machinery'
+```[/content]
+
+## 提示 18：使用三元运算符快速检查数据
+
+在这个提示中，你将学习如何使用三元运算符避免重新赋值。
+
+到为止，你可能已经注意到我喜欢简单的代码。我总是尝试将一个表达式减少到尽可能少的字符。这要归于一位审查过我第一份工作代码的前同事的。
+
+```javascript
+if (active) {
+  display = 'bold';
+} else {
+  display = 'normal';
+}
+```
+
+他看了一眼，随口说道：“你应该直接把它写成三元运算符。”
+
+“当然可以，”我同意道，虽然并不清楚他在说什么。在查阅之后，我将代码简化为了单行表达式，我的代码从此焕目一新。
+
+```javascript
+var display = active ? 'bold' : 'normal';
+```
+
+
+
+
+如果三元运算符并不新鲜，为什么它还应该引起你的兴趣呢？回到我们一直在探讨的一些宏大主题，三元表达式让你的代码不仅像我提到的那样更加简单，而且更具可预测性。这样做是因为它们减少了被重新赋值的变量数量。
+
+此外，随着新变量类型的出现，我们遇到了一些 `if/else` 语句过多的问题。如果你尝试检查一个变量并使用的是块作用域变量，你将无法在检查之外访问该变量。
+
+[conditionals/ternary/if.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/if.js)
+
+```javascript
+if (title === 'manager') {
+  const permissions = ['time', 'pay'];
+} else {
+  const permissions = ['time'];
+}
+permissions;
+// ReferenceError: permissions is not defined
+```
+
+现在，你被迫使用 `var`（它在块作用域外可访问），或者你必须用 `let` 定义变量然后在 `if/else` 块内部对其进行重新赋值。这是在块之前进行赋值的形式所示：
+
+[conditionals/ternary/if.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/if.js)
+
+```javascript
+let permissions;
+if (title === 'manager') {
+  permissions = ['time', 'pay'];
+} else {
+  permissions = ['time'];
+}
+```
+
+在 `let` 和 `const` 出现之前，你不需要那么担心变量何时创建的。现在，除了代码冗余之外，还有潜在的作用域冲突。
+
+三元表达式解决了这些问题。显而易见，它们减少了大量的额外代码。但它们还允许你直接将值赋值给 `const`，从而让代码更具预测性。你该如何使用 `const` 和三元运算符来重写前面的代码呢？
+
+[conditionals/ternary/ternary.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/ternary.js)
+
+```javascript
+const permissions = title === 'manager' ? ['time', 'pay'] : ['time'];
+```
+
+这清晰得多，而且你现在拥有了一个可预测的值。
+
+有一点你需要记住的注意事项：虽然你可以将多个三元表达式链在一起，但你应该避免这样做。假设还有另一种类型为 `supervisor` 的用户类型，他们看不到薪资率，但可以授权加班。你可能忍不住只想添加另一个三元表达式。没什么伤害，对吧？
+
+[conditionals/ternary/ternaryProblem.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/ternaryProblem.js)
+
+```javascript
+const permissions = title === 'supervisor' || title === 'manager' ?
+title === 'manager' ?
+  ['time', 'overtimeAuthorization', 'pay'] : ['time', 'overtimeAuthorization']
+: ['time'];
+```
+
+到这种程度，三元运算符就变得不可读并失去了简单性的价值。相反，你应该将检查完全移出块，放入一个独立的函数中（当然，还要有一个良好的测试）。这样，你仍然可以使用 `const` 而无需担心代码的过于冗余。
+
+[conditionals/ternary/ternaryProblem.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/ternaryProblem.js)
+
+```javascript
+function getTimePermissions({ title }) {
+  if (title === 'manager') {
+    return ['time', 'overtimeAuthorization', 'pay'];
+  }
+
+  if (title === 'supervisor') {
+    return ['time', 'overtimeAuthorization'];
+  }
+  return ['time'];
+}
+
+const permissions = getTimePermissions({ title: 'employee' });
+// ['time']
+```
+
+创建具有单一非抽象目的短函数没有坏处。事实上，这是编写整洁代码的好一步。你仍然获得了将返回值赋值给 `const` 的价值，并且一切都清晰可读。三元表达式可以简化问题，但请在它们能增加价值时使用，否则回归标准的 `if` 块。
+
+## 提示 19：通过短路求值最大效率
+
+在本技巧中，你将学习如何通过短路求值让条件判断变得更简单。在过去的几个技巧中，你一直在简化。但还有一个层次你可以使用：短路求值。
+
+顾如名，短路求值的目标是通过将最相关的信息放在前面来跳过信息。考虑以下内容，它们可以放在上一章。
+
+[conditionals/ternary/ternary.js](http://media.pragprog.com/titles/es6tips/code/conditionals/ternary/ternary.js)
+
+```javascript
+function getIconPath(icon) {
+  const path = icon.path ? icon.path : 'default.png';
+  return `https://assets.foo.com/${path}`;
+}
+```
+
+这里的目标非常明确。如果图标为真值（在这种情况下，它是被定义的且不是空字符串），那么你就想使用默认值。
+
+```javascript
+const icon = {
+  path: 'acme.png'
+};
+getIconPath(icon);
+// https://assets.foo.com/acme.png
+```
+
+你可能注意到你写了两次 `icon.path`。让我们假设数据总是有效的，花一点时间思考一下逻辑运算符是如何工作的。或运算符（符号为 `||`）如果任何一个值为真，则将返回真。这意味着只要其中一件事——任何一件事——返回真，你就不在乎其他值可能是什么。
+
+现在有趣的地方来了。因为你可以使用真值来测试一个布尔表达式（真或假），语言没有动力将值从某个真值改变。所以，如果 `||` 检查中的某个值返回真，你得到的是那个真值，而不是 `true`。
+
+迷了吗？别担心。这是一种很长的说法，意味着你可以直接从布尔检查中赋值。
+
+```javascript
+const name = 'joe' || 'I have no name';
+name
+// 'joe'
+```
+
+最好的部分是，你可以在表达式的末尾附加一个默认值。这意味着你永远不需要担心变量为假值，因为你知道末尾有一个真值在等待着。
+
+就是这样。你可以使用短路求值在某个真值发生时跳过信息。反过来又呢？如何在某个假值发生后停止表达式的执行呢？这也是可以的。
+
+短路求值的另一个流行用法是防止错误，特别是当你计划在特定集合上使用方法或操作时。
+
+考虑获取图标问题的细微调整。不是寻找图标集，而是从用户那里获取一组图像。第一张图像将用作缩略图。
+
+
+
+
+
+由于有很多图片，`images` 集合将是一个数组。你的代码需要能够处理以下表示形式：
+
+```javascript
+// 没有指定数组
+const userConfig1 = {
+}
+
+// 空数组
+const userConfig2 = {
+  images: []
+}
+
+// 包含元素的数组
+const userConfig3 = {
+  images: [
+    'me.png',
+    'work.png'
+  ]
+}
+```
+
+```|
+
+你起初可能会认为可以使用使用 `||` 运算符的短路逻辑来获取想要的值。但对于属性未定义的情况，这种方法行不可通。
+
+```javascript
+const userConfig1 = {
+}
+
+const img = userConfig1.images[0] || 'default.png';
+
+// TypeError: Cannot read property '0' of undefined
+```
+
+下一步可能是使用一系列嵌套的条件判断。
+
+[conditionals/shortCircuiting/conditional.js](http://media.pragprog.com/titles/es6tips/code/conditionals/shortCircuiting/conditional.js)
+
+```javascript
+function getFirstImage(userConfig) {
+  let img = 'default.png';
+  if (userConfig.images) {
+    img = userConfig.images[0];
+  }
+  return img;
+}
+```
+
+至少在那个示例中，如果 `images` 数组未定义，你不会报错。但如果数组中没有任何元素，就会产生问题。
+
+```javascript
+const userConfig = {
+  images: []
+}
+
+const img = getFirstImage(userConfig);
+
+// undefined
+```
+
+现在为了解决这个问题，你可能会再添加一个嵌套条件判断。
+
+[conditionals/shortCircuiting/conditional.js](http://media.pragprog.com/titles/es6tips/code/conditionals/shortCircuiting/conditional.js)
+
+```javascript
+function getImage(userConfig) {
+  let img = 'default.png';
+  if (userConfig.images) {
+    if (userConfig.images.length) {
+      img = userConfig.images[0];
+    }
+  }
+  return img;
+}
+```
+
+事情已经开始变得有点丑陋且难以阅读了。
+
+幸运的是，短路逻辑可以提供帮助。将条件判断与 `&&` 运算符结合，可以避免你之前看到的 `TypeError`。一个用 `&&` 运算符构建的逻辑字符串在遇到假值时就会停止执行。这意味着当你尝试调用一个不存在的方法时，不需要担心 `TypeError`。你可以安全地检查集合是否存在，然后在其上调用方法。
+
+[conditionals/shortCircuiting/shortCircuiting.js](http://media.pragprog.com/titles/es6tips/code/conditionals/shortCircuiting/shortCircuiting.js)
+
+```javascript
+function getImage(userConfig) {
+  if (userConfig.images && userConfig.images.length > 0) {
+    return userConfig.images[0];
+  }
+  return 'default.png';
+}
+```
+
+现在，这种方法并不完美，因为你只是在检查一个真值（truthy value），这意味着如果数据不规范且 `images` 被赋值为字符串，你将得到一个奇怪的结果（字符串的第一个字母）。但我会保持它的原样。在某些时候，你必须对你的数据有一定的信任，或者需要在数据流的上游找到一种方法来归一化数据。
+
+最后，你可以将短路逻辑与三元运算符结合，将这个检查简化为一行代码。首先将 `images` 属性提取到单独变量中。记住，如果它不存在，该变量仅仅是 `undefined`。
+
+[conditionals/shortCircuiting/ternary.js](http://media.pragprog.com/titles/es6tips/code/conditionals/shortCircuiting/ternary.js)
+
+```javascript
+function getImage(userConfig) {
+  const images = userConfig.images;
+  return (images && images.length > 0) ? images[0] : 'default.png';
+}
+```
+
+组合多个三元运算符时要小心。代码可能会变得很长。例如，你使用一个三元运算符检查值是否存在，如果存在，再使用另一个三元运算符检查其属性，以此此类推。这会变得非常难以阅读。
+
+
+
+
+我们将首先稍微超前，看看如何使用箭头函数。箭头函数可以将简单的循环变为单行代码。接下来，你将深入了解数组方法如何简化循环，以及你如何根据专门的循环预期的结果。从那里开始，我们将一个一个探索不同的数组方法。我们将从 `map()` 开始，它可以从每个集合中提取相同的信息。我们将查看一系列能够很好完成一项任务的专门循环，最后以最灵活的循环 `reduce()` 结束，它几乎可以完成任何操作。最后我们将探索更新后的 `for...of` 和 `for...in` 循环，它们使用清晰的变量名而不是索引。
+
+顶尖的技师总能为工作选择正确的工具。编码也是如此。如果你观察最优秀的代码，你会发现开发者总是使用符合他们意图的循环。这些新循环需要练习，并且可能会让人困惑。但你不知不觉中，你就能轻而易举地使用它们，并且你会喜欢你让代码变得如此清晰且富有表现力。特殊工具的存在是有原因的。是时候学习如何使用它们了。首先，看看 JavaScript 中最受欢迎的新特性之一：箭头函数。
+
+## 提示 20：使用箭头函数简化循环
+
+在本次提示中，你将学习用箭头函数过滤掉多余信息。
+
+在 JavaScript 中，你会看到很多回调函数。这些是作为参数传递给其他函数。你即将学习的大多数循环都依赖于回调。
+
+和大多数 ES6 之前的代码一样，函数是冗长的的。你必须显式地使用 `function` 关键字声明你正在创建一个函数，添加大括号表示函数体，使用 `return` 语句结束函数，等等。回调函数比你注入到它的函数还要长这并不稀奇。
+
+箭头函数改变了这一点，让编写函数变得简单而简短。现在学习它们将让你在未来的提示中看到的所有循环变得有趣得多。箭头函数结合数组方法导致一些人完全放弃了 `for` 循环，这并不意外。
+
+那么，箭头函数是什么呢？箭头函数尽可能地剥离了多余信息。
+
+一个函数中有多少多余信息？有很多。事实证明，不需要以下内容就可以通信函数：
+
+*   `function` 单词
+*   参数周围的括号
+*   `return` 单词
+*   大括号
+
+你只需要使用胖箭头 `=>` 来表示你将构建一个函数。你可能认为你刚刚丢失了让函数成为函数的所有特性。确实，你可以让函数处于最小状态，但仍然有一些你必须遵守的规则。
+
+在开始之前，你应该知道箭头函数看起来很简单，但它们实际上有很多微妙的特性。幸运的是，你现在不需要理解这些微妙之处。你会在提示 36 深入探索它们时遇到这些问题：使用箭头函数防止上下文混淆。首先，看一个仍然带有大部分额外内容（括号、大括号、return 语句）的函数。
+
+这是一个接收参数并返回稍作修改值的简单函数。在这种情况下，它接收一个 `name` 并返回首字母大写的名称。
+
+[loops/arrow/full.js](http://media.pragprog.com/titles/es6tips/code/loops/arrow/full.js)
+
+| | |
+| :--- | :--- |
+| `function capitalize(name) {` |
+| `return name[0].toUpperCase() + name.slice(1);` |
+| `}` |
+
+很简单，对吧？但在你将其转换为箭头函数之前，你应该注意到这是一个命名函数。这意味着名称是作为函数的一部分声明的，如下所示：
+
+| | |
+| :--- | :--- |
+| `function namedFunction() {` |
+| | |
+| `}` |
+
+这不是创建函数的唯一方法。你也可以创建一个匿名函数——没有名字的函数——并将其赋值给变量：
+
+| | |
+| :--- | :--- |
+| `const assignedFunction = function() {` |
+| | |
+| `}` |
+
+这是同一个函数的匿名函数形式。一切都完全一样，只是你将其赋值了一个变量。
+
+[loops/arrow/anonymous.js](http://media.pragprog.com/titles/es6tips/code/loops/arrow/anonymous.js)
+
+| | |
+| :--- | :--- |
+| `const capitalize = function (name) {` |
+| `return name[0].toUpperCase() + name.slice(1);` |
+| `};` |
+
+箭头函数版本使用了相同的思想：一个赋值给变量的匿名函数。你可以移除 `function` 关键字并将其替换为胖箭头。作为一个额外，如果你恰好有一个参数（许多数组方法都是如此），你可以省略括号。
+
+[loops/arrow/arrow.js](http://media.pragprog.com/titles/es6tips/code/loops/arrow/arrow.js)
+
+| | |
+| :--- | :--- |
+| `const capitalize = name => {` |
+| `return name[0].toUpperCase() + name.slice(1);` |
+| `};` |
+
+就这样了。（等等，让我重新检查一下流程）。
+
+箭头函数版本使用了相同的思想：一个赋值给变量的匿名函数。你可以移除 `function` 关键字并将其替换为胖箭头。作为一个额外，如果你恰好有一个参数（许多数组方法都是如此），你可以省略括号。
+
+```javascript
+const capitalize = name => {
+  return name[0].toUpperCase() + name.slice(1);
+};
+```
+
+就这样了。（实际上，文本说的是 "That's all there is to it" 然后继续后续变体）。让我们坚持提供的文本：
+
+That’s all there is to it. (等等，查看提供的文本："That’s all there is to it." 后面跟着提示中的一些变体，让我仔细读读提示文本）。
+
+*修正*：提示文本说："That’s all there is to it. (等等，提示文本实际上在块中有多个版本的逻辑)"。让我完全遵循提示的文本顺序。
+
+"That’s all there is to it. (等等，提示中提供的文本有点重复/结构奇怪)。让我根据提供的文本块重新格式化：
+
+That’s all there is to it. (等等，) 箭头函数版本使用了相同的思想：一个赋值给变量的匿名函数。你可以移除 `function` 关键字并将其替换为胖箭头。作为一个额外，如果你恰好有一个参数（许多数组方法都是如此），你可以省略括号。
+
+```javascript
+const capitalize = name => {
+  return name[0].toUpperCase() + name.slice(1);
+};
+```
+
+That’s all there is to it. (实际上，文本说 "That's all there is to it" 然后继续后续变体）。让我们坚持提供的文本：
+
+That’s all there is to it. (等等，查看提供的文本："That’s all there is to it." 后面跟着提示中的一些变体，让我仔细读读提示文本）。
+
+*修正*：提示文本说："That’s all there is to it. (等等，提示文本实际上在块中有多个版本的逻辑)"。让我完全遵循提示的文本顺序。
+
+
+
+
+
+```javascript
+function applyCustomGreeting(name, callback) {
+  return callback(capitalize(name));
+}
+```
+
+创建一个具名函数并将其传递是完全没有问题的。但通常，在调用原始函数时，创建一个匿名函数会更方便。换句话说，你可以调用 `applyCustomGreeting()` 函数，并传入一个随手编写的匿名函数。你不需要先将其赋值给变量。
+
+[loops/arrow/full.js](http://media.pragprog.com/titles/es6tips/code/loops/arrow/full.js)
+
+```javascript
+applyCustomGreeting('mark', function (name) {
+  return `Oh, hi ${name}!`;
+});
+```
+
+你在这里拥有的是什么？你有一个简单的匿名函数，它接收一个参数，函数体只有一行长度，而那一行仅仅是一个 `return` 语句。这正是箭头函数大显身的地方。那个匿名函数包含了太多你不需要的冗余代码。
+
+现在你已经拥有了工具，尝试将该匿名函数重写为箭头函数。你会得到类似这样的代码：
+
+[loops/arrow/arrow.js](http://media.pragprog.com/titles/es6tips/code/loops/arrow/arrow.js)
+
+```javascript
+applyCustomGreeting('mark', name => `Oh, hi ${name}!`);
+```
+
+我希望你喜欢这种，因为在你处理数组方法时，你会看到更多这种函数。数组方法和箭头函数是更新数据集合的便捷方式。
+
+在下一个技巧中，你将学习为什么数组方法可以防止许多变异和多余变量。你将开始理解为什么它们在 JavaScript 中变得如此流行。
+
+## 技巧 21：使用数组方法编写更短的循环
+
+在这个技巧中，你将学习如何使用数组方法将长循环简化为单行。
+
+在我们开始之前，我想让你知道 `for` 循环和 `for...of` 循环是好的。你会使用它们，而且也应该使用它们。它们永远不会消失。
+
+但你应该少用它们。为什么呢？原因很简单：它们是不必要的杂乱。你正在编写现代 JavaScript，这意味着你追求的是简单性、可读性和预测性，而传统的循环无法实现这些目标。数组方法可以。精通数组方法是提高 JavaScript 代码最快的方法。
+
+看这个基础循环，它将一个价格字符串数组转换为浮点值。
+
+[loops/methods/problem.js](http://media.pragprog.com/titles/es6tips/code/loops/methods/problem.js)
+
+```javascript
+const prices = ['1.0', '2.15'];
+const formattedPrices = [];
+for (let i = 0; i < prices.length; i++) {
+  formattedPrices.push(parseFloat(prices[i]));
+}
+```
+
+它确实很短。整个部分只占了四行。还不错。但考虑一个有五个函数的文件，每个函数里有一个循环。你刚刚给这个文件增加了 20 行代码。
+
+而且这个函数本身就很短了。如果你有一个数组包含一些非数字字符串，而你只想要可解析的数字呢？你的函数开始变得增长。
+
+[loops/methods/problem.js](http://media.pragprog.com/titles/es6tips/code/loops/methods/problem.js)
+
+```javascript
+const prices = ['1.0', 'negotiable', '2.15'];
+const formattedPrices = [];
+for (let i = 0; i < prices.length; i++) {
+  const price = parseFloat(prices[i]);
+  if (price) {
+    formattedPrices.push(price);
+  }
+}
+```
+
+
+
+
+现在你已经看到了所有的选项，我相信你已经迫不及待要开始了。好了，你不用再等待了！以下是如何使用数组方法来重写 `for` 循环。
+
+[loops/methods/methods.js](http://media.pragprog.com/titles/es6tips/code/loops/methods/methods.js)
+
+```javascript
+const prices = ['1.0', '2.15'];
+const formattedPrices = prices.map(price => parseFloat(price));
+// [1.0, 2.15];
+```
+
+尝试按照通常的标准来评估这段代码：简单、可读、可预测。
+
+它是简单的吗？是的。所有内容都挤在单行内。
+
+它是可读的吗？是的。你可以在一行内看到操作过程。随着文件的增长，行数的增长速度不会比简单操作的数量增长更快。
+
+它是可预测的吗？是的。值使用 `const` 赋值，所以你知道它不会改变。因为你使用了 `map()`，你知道你将得到一个大小完全相同的数组。一眼看上去，你就能看出目标是使用 `parseFloat()` 获取浮点值。所以你也知道数组将与原数组大小一致，且只有浮点值。
+
+我知道你想说什么：你可能解决了简单的循环，但那个删除假值的、更复杂的循环呢？
+
+幸运的是，数组方法可以链式调用。这意味着你可以紧接着上一个方法调用另一个方法，它会将结果向下传递给下一个项目。
+
+[loops/methods/methods.js](http://media.pragprog.com/titles/es6tips/code/loops/methods/methods.js)
+
+```javascript
+const prices = ['1.0', 'negotiable', '2.15'];
+const formattedPrices = prices.map(price => parseFloat(price))
+// [1.0, NaN, 2.15]
+.filter(price => price);
+// [1.0, 2.15]
+```
+
+首先，你将值转换为浮点数同时保持数组大小不变。然后，你通过提取假值来改变数组的大小，但不改变它的形状。
+
+这个过程更容易遵循，而且由于你可以将它们链式在一起，你仍然可以使用 `const` 为生成的数组赋值。
+
+现在我引起你的兴趣了吗？太棒了。因为是时候深入编写你自己的数组方法了。你会发现自己会反复使用相同的方法。但请记住——它们各有优劣。如果你在尝试将一个操作放入方法中时感到挫败，请尝试使用不同的方法，或者思考如何将该操作拆分成碎片并将其链起来。
+
+现在你已经有了基础，是时候上手了。在下一个技巧中，你将开始使用 `map()` 改变数组成员的形状。
+
+## Tip 22：使用 `map()` 创建大小相似的数组
+
+在这个技巧中，你将学习如何使用 `map()` 从数组中提取子集信息。
+
+在上一个技巧中，你看到了如何使用数组方法重写一个简单的 `for` 循环。现在你将开始探索如何使用特定的数组方法。
+
+你将从 `map()` 开始（不要与 `Map` 对象混淆）。它是非常常用的，你的新数组将接收你返回的信息并将其到一个全新的数组中。换句话说，返回值是透明的，而其他数组方法并非如此。这是从 `map()` 开始的另一个好理由：“map”这个名字并不十分直观。它到底是什么意思？当我第一次学习它时，我需要相当的经验才能一眼看出并理解 map 函数。
+
+你的目标是了解大多数数组方法是如何工作的。你的次要目标是获得足够的 `map()` 经验，以便你开始理解为什么它是最流行的方法之一。
+
+从一个简单的 map 函数开始。map 函数从输入数组中获取一条信息并返回新内容。有时，它返回部分信息。其他时候，它会转换信息并返回新值。这意味着它可以从数组中取单个属性，也可以取数组中的一个值并返回其修改后的版本。例如，它可以返回一个所有值都已转为大写或从整数转换为货币格式的数组。
+
+最简单的例子是从对象中提取特定信息。让我们从一组音乐家开始。
+
+[loops/map/map.js](http://media.pragprog.com/titles/es6tips/code/loops/map/map.js)
+
+```javascript
+const band = [
+  {
+    name: 'corbett',
+    instrument: 'guitar',
+  },
+  {
+    name: 'evan',
+    instrument: 'guitar',
+  },
+  {
+    name: 'sean',
+    instrument: 'bass',
+  },
+  {
+    name: 'brett',
+    instrument: 'drums',
+  }
+];
+```
+
+
+
+# 引言
+
+看看你取得的成就。你在保持代码更加透明的同时，删除了冗余代码：
+
+*   你知道你将得到一个数组。你不需要预先定义它。
+*   你知道它的大小与原始数组相同。
+*   你知道它将包含乐器，不再包含其他内容。
+
+可预测且简单。
+
+如果你理解了这一点，恭喜你——你理解了大多数数组方法。所有的数组方法都是接受一个回调函数，该函数作用于数组的每个成员。数组方法的类型决定了函数返回值的处理方式。但对于每个数组方法，编写函数本身是非常相似的。
+
+现在既然你已经将 `for` 循环重构为 `map` 方法，你可以迈出下一步，将命名函数转换为匿名函数。还记得你刚刚学到的箭头函数吗？现在是使用它们的完美时机。
+
+你只接收一个参数，所以不需要括号。函数体只有一行长，所以你不需要大括号或 `return` 语句。尽管试着写出来吧。通过练习，这些函数会变得简单得多。
+
+[loops/map/map.js](http://media.pragprog.com/titles/es6tips/code/loops/map/map.js)
+
+```javascript
+const instruments = band.map(member => member.instrument);
+// ['guitar', 'guitar', 'bass', 'drums']
+```
+
+`map()` 相当简单，但它非常灵活。当目标是获得一个大小相同的数组时，你可以将其用于任何地方——是的，任何地方。到为止，你只是从对象数组中提升数据。但你也可以转换信息，正如你在上一个技巧中使用 `parseInt()` 将字符串转换为数值时看到的那。
+
+在下一个技巧中，你将看到一个功能稍有不同的数组方法。你会保持数组项的形状，但通过对每个项进行真假检查，只返回一个子集。
+
+## 技巧 23：使用 `filter()` 和 `find()` 提取数据子集
+
+在本技巧中，你将学习如何在保留项形状的同时改变数组的大小。
+
+在上一个技巧中，你通过只从原始数组中提取相关信息创建了一个新数组。你可能会遇到这样的情况：你想保留数据的形状，但只想要总项的一个子集。也许你只想要住在某个城市的用户，但仍然需要他们所有的信息。数组方法 `filter()` 将执行完全相同的操作。与 `map()` 方法不同，你没有更改数组中的任何信息——你只是减少了返回的内容。
+
+作为一个例子，让我们过滤一个简单的字符串数组。你有一组人，你只需要名字是某种 Dave 形式的人（David, Davis, Davina 等）。在我的家乡，有一家三明治店每年给任何名叫 Joe/Joseph/Joanna 的人免费三明治，因此能够根据名称变体过滤人员是一项关键任务。你不想让你的 Daves 或 Joes 失去美味的午餐。
+
+从一个你想要简的同事列表开始。
+
+[loops/filter/full.js](http://media.pragprog.com/titles/es6tips/code/loops/filter/full.js)
+
+```javascript
+const team = [
+  'Michelle B',
+  'Dave L',
+  'Dave C',
+  'Courtney B',
+  'Davina M',
+];
+```
+
+你需要使用字符串上的 `match()` 方法检查字符串是否包含 “Dav” 的形式。如果字符串匹配正则表达式，该方法将返回一个信息数组；如果没有匹配，则返回 `null`。换句话说，如果存在正则匹配，`match()` 将返回一个真值（数组），如果没有，则返回一个假值（`null`）。
+
+```javascript
+'Dave'.match(/Dav*/);
+// ['Dav', index: 0, input: 'Dave']
+
+'Michelle'.match(/Dav*/);
+// null
+```
+
+传统上，你会用 `for` 循环来解决这个问题。正如你现在可能猜到的那样，解决方案并不优雅。
+
+[loops/filter/full.js](http://media.pragprog.com/titles/es6tips/code/loops/filter/full.js)
+
+```javascript
+const daves = [];
+for (let i = 0; i < team.length; i++) {
+  if (team[i].match(/Dav*/)) {
+    daves.push(team[i]);
+  }
+}
+```
+
+过滤函数可以在一行内完成完全相同的事情。像 `map()` 方法一样，你在数组上调用该方法并返回一个数组。
+
+（注：原文中存在多处重复句子，此处已根据核心逻辑进行了清理处理。）
+
+
+
+
+```javascript
+[
+  {
+    libraries: ['MERIT'],
+  },
+  {
+    name: 'Sarah',
+    libraries: ['Memorial', 'SLIS'],
+  },
+  {
+    name: 'Eliot',
+    libraries: ['College Library'],
+  },
+];
+```
+
+如果你写一个 `for` 循环来检查它，你会遍历每一个项，并在得到正确结果时跳出。
+
+[loops/filter/full.js](http://media.pragprog.com/titles/es6tips/code/loops/filter/full.js)
+
+```javascript
+let memorialInstructor;
+for (let i = 0; i < instructors.length; i++) {
+  if (instructors[i].libraries.includes('Memorial')) {
+    memorialInstructor = instructors[i];
+    break;
+  }
+}
+```
+
+这个循环会检查第一个讲师，并发现他不符合标准。第二个讲师符合标准，从而避免了查看第三个讲师的繁琐劳动。当然，在现实世界的数据中，可能有成百甚至上千个结果。在第一个匹配项处停止是一个非常不错的优化，可以避免遍历整个集合。
+
+这如何转化为一个 `find()` 函数呢？非常简单：`if` 块包含了你将其转换为 `find()` 函数所需的所有内容。利用来自 `filter()` 的思路，尝试把写写出来。
+
+你可能写出了类似下面的代码：
+
+[loops/filter/filter.js](http://media.pragprog.com/titles/es6tips/code/loops/filter/filter.js)
+
+```javascript
+const librarian = instructors.find(instructor => {
+  return instructor.libraries.includes('Memorial');
+});
+```
+
+再次，你将几行代码缩减为了简单的表达式（虽然可以写成单行，但它会超出打印页的范围！），同时用一个可预测的 `const` 替换了一个不稳定的 `let`。使用 `find()` 的唯一缺点是你无法完全确定返回值。如果没有匹配项，你将得到 `undefined`；而使用 `filter()`，如果没有匹配项，你将得到一个空数组。但利用你对短路逻辑的知识，你始终可以添加一个结合默认值的 `or` 语句。
+
+```javascript
+const image = [
+  {
+    path: './me.jpg',
+    profile: false
+  }
+];
+const profile = images.find(image => image.profile) || {path: './default.jpg'};
+```
+
+可能有一点让你对这个 `find()` 函数感到困扰：你硬编码了图书馆的名称 `Memorial`。数组函数的挑战在于它只接受一个参数，即正在被检查的项。如果你想添加第二个参数（一个用于检查该项的变量），就会出现问题。
+
+如果你想检查另一个位置怎么办？幸运的是，你不需要为每个图书馆都写一个函数。相反，你会使用一种名为 `currying`（柯里化）的技术将参数数量减少到一个。你将在技巧 34 中更多地看到这种技术，使用部分应用函数保持单一职责参数，但这是我最喜欢的技巧之一，所以我先让你领略一二。
+
+[loops/filter/filter.js](http://media.pragprog.com/titles/es6tips/code/loops/filter/filter.js)
+
+```javascript
+const findByLibrary = library => instructor => {
+  return instructor.libraries.includes(library);
+};
+const librarian = instructors.find(findByLibrary('MERIT'));
+
+// {
+// name: 'Jim',
+// libraries: ['MERIT'],
+// }
+```
+
+但不要走得太快。还有更多数组方法等待探索。
+
+在下一个技巧中，你将通过使用 `forEach()` 对数组中的每个项执行操作，而不获取任何返回值，从而打破返回新数组的模式。
+
+## 技巧 24：使用 forEach() 执行一致的操作
+
+在这个技巧中，你将学习如何使用 `forEach()` 对数组的每个成员应用操作。
+
+在这个技巧中，情况会有所不同。你目前为止探索的两种数组方法都会返回一个新的、修改过的数组。你要么通过提取每个项的子集改变了形状，要么通过只返回总项数的一部分改变了大小。
+
+在这个技巧中，你完全没有改变输入数组。相反，你将对每个成员执行某种操作。当你终于将数组调整到所需的大小和形状，然后想对这些数据做些什么时，这种情况很常见。
+
+例如，假设你有一个群成员的俱乐部，你想在安排下一次会议时编写一个脚本向每位俱乐部成员发送邀请。你需要一个逐个接收成员的函数，以便你可以使用其他信息（如姓名、电子邮件等）来定制消息。
+
+这是一份成员列表：
+
+[loops/forEach/forEach.js](http://media.pragprog.com/titles/es6tips/code/loops/forEach/forEach.js)
+
+```javascript
+const sailingClub = [
+  'yi hong',
+  'andy',
+  'darcy',
+  'jessi',
+  'alex',
+  'nathan'
+];
+```
+
+不要担心函数的具体实现。你只需要知道它接收数组中的一个成员。
+
+[loops/forEach/full.js](http://media.pragprog.com/titles/es6tips/code/loops/forEach/full.js)
+
+```javascript
+for (let i = 0; i < sailingClub.length; i++) {
+  sendEmail(sailingClub[i]);
+}
+```
+
+这真的没有更简单了。与其他方法不同，`forEach()` 的工作就像 `for` 循环。
+
+那么什么时候应该使用 `forEach()` 呢？最佳时机正是你想在函数范围之外执行操作时。换句话说，当你知道自己必须产生副作用时，就应该使用 `forEach()`。
+
+恰恰，这就是你在发送邀请时所做的。你正在产生副作用——发送电子邮件——但你没有修改任何数据（假设如此）。
+
+这是更新后的操作：
+
+[loops/forEach/forEach.js](http://media.pragprog.com/titles/es6tips/code/loops/forEach/forEach.js)
+
+```javascript
+sailingClub.forEach(member => sendEmail(member));
+```
+
+
+
+
+从三行缩减到一行并不糟糕，但这绝对不值得庆祝。
+
+那么其意义何在呢？意义在于你确实获得了一些可预测性。当你看到一个 `forEach()` 时，你就知道会产生副作用。正如你在提示 1 中学到的那样，[*使用 const 保持值不变*]](#f_0011.xhtml_tip.const)，如果你无法确定某些事，那么退而求的次优方案就是知道它可能存在不稳定性。
+
+尽管如此，将 `forEach()` 保留在工具箱中的最佳理由是，你可以通过一种被称为“链式调用”（chaining）的过程将其与其他数组方法结合。这意味着你可以对同一个数组执行多个操作，而无需每次都将输出保存到变量中。
+
+在下一个提示中，你将使用链式调用将多个操作组合成一个过程。
+
+## 提示 25：通过链式调用组合方法
+
+在本提示中，你将学习如何通过链式调用执行多个数组方法。
+
+链式调用是编程中的老概念。你可以在许多面向对象的语言中找到它.^([[20]](#f_0041.xhtml_FOOTNOTE-20)) 像许多编程概念一样，它听起来实际上比实际操作要复杂得多。
+
+这里有一个快速定义：链式调用是直接在返回的对象（在某些情况下是原始对象）上调用方法，而无需先对值进行重新赋值。
+
+好了，现在忘记那个定义吧。对于我们的目的，链式调用意味着你可以连续调用多个数组方法（只要你返回的是一个数组）。这是一种以非常清晰的方式执行多个操作的方便方法。
+
+回想上一个例子：向俱乐部成员发送通知。该示例是简化的（示例总是是这样的）。真实的俱乐部成员数组将包含多得的数据。它会包含成员状态、电子邮件地址、邮寄地址、职位等。
+
+为了保持简单，我们只添加两个字段：`active`（活跃）和 `email`（邮箱）。
+
+[`loops/chain/chain.js`](http://media.pragprog.com/titles/es6tips/code/loops/chain/chain.js)
+
+```javascript
+const sailors = [
+  {
+    name: 'yi hong',
+    active: true,
+    email: 'yh@yhproductions.io',
+  },
+  {
+    name: 'alex',
+    active: true,
+    email: '',
+  },
+  {
+    name: 'nathan',
+    active: false,
+    email: '',
+  },
+];
+```
+
+信息没有更多了，但你已经足够的信息来更精确地决定谁发送邮件。首先，你可以过滤掉所有非活跃的成员——他们不需要邀请。
+
+[`loops/chain/full.js`](http://media.pragprog.com/titles/es6tips/code/loops/chain/full.js)
+
+```javascript
+const active = sailors.filter(sailor => sailor.active);
+
+// {
+// name: 'yi hong',
+// active: true,
+// email: 'yh@yhproductions.io',
+// }
+// {
+// name: 'alex',
+// active: true,
+// email: '',
+// };
+```
+
+接下来，你可以规范电子邮件地址。如果成员设置了电子邮件，就使用它。否则，使用他们的默认俱乐部邮箱地址。
+
+[`loops/chain/full.js`](http://media.pragprog.com/titles/es6tips/code/loops/chain/full.js)
+
+```
+const emails = active.map(member => member.email || `${member.name}@wiscsail.io`);
+
+// [ 'yh@yhproductions.io', 'alex@wiscsail.io' ]
+```
+
+最后，在移除非活跃成员并规范化电子邮件地址后，你可以使用正确的成员信息调用 `sendInvitation()`。
+
+[`loops/chain/full.js`](http://media.pragprog.com/titles/es6tips/code/loops/chain/full.js)
+
+```javascript
+emails.forEach(sailor => sendEmail(sailor));
+```
+
+注意，你每次都将结果赋值给变量。使用链式调用，这是没有必要的。相反，你可以移除赋值给变量的中间步骤。
+
+
+
+
+
+你可能已经听厌了我说“好的代码是可预测的”。但事实确实如此。数组方法非常奇妙，因为你不需要理解回调函数，就能一眼看出结果。不仅如此，数组方法更易测试，而且正如你将在提示 32 中看到的那样，为了可测试性编写函数，编写可测试的代码远比在复杂代码中添加测试要容易得多。
+
+尽管如此，有时你仍然需要从数组创建一个全新的、截然不同的数据。也许你需要获取某些项的计数。也许你想将数组转换为不同的结构，例如对象。这就是 `reduce()` 发挥用场的地方。`reduce()` 方法与其他数组方法有几点不同之处，但最重要的一点是它可以同时改变数据的大小和形状（或仅改变其中其一）。而且它并不一定返回数组。
+
+一如既常，看比解释容易得多。这里有一个返回完全相同数组的 `reduce` 函数。它是没用的，但它能让你看到 `reduce()` 函数是如何构建的。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+| 1: | const callback = function (collectedValues, item) { |
+| 2: | return [...collectedValues, item]; |
+| 3: | }; |
+| 4: | |
+| 5: | const saying = ['veni', 'vedi', 'veci']; |
+| 6: | const initialValue = []; |
+| 7: | const copy = saying.reduce(callback, initialValue); |
+```
+
+这里发生了什么？首先，注意你在第 1 行向 `reduce()` 回调函数传递了两个参数：返回的项（称为 `collectedValues`）和单个项。返回值（有时称为累加器/carry）是 `reduce()` 独特之处所在。它的范围可以从整数到如 `Set` 这样的集合。
+
+第 7 行的 `reduce()` 方法本身接受两个值：回调函数和初始值。虽然初始值是可选的，但通常会包含它，因为你需要一个地方来存放返回值，而且作为额外奖励，它为其他开发者提供了关于他们将得到什么的线索。`reduce` 方法最困难的部分是回调函数必须始终返回累加器项。
+
+非常值得阅读文档以查看更多示例，但其中许多示例都是使用数字的抽象概念。考虑一种更常见的情况：从数组中获取唯一值。
+
+你可能还记得你已经在提示 16 中通过 `Set` 解决了这个问题：使用 Set 保持唯一值。你完全正确，但你将扩展该解决方案，以获取几组唯一值。
+
+与上一个示例一样，你将从用于领养网站的狗集合中获取一个唯一值列表。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+| | const dogs = [ |
+| | | |
+| | name: 'max', |
+| | size: 'small', |
+| | breed: 'boston terrier', |
+| | color: 'black', |
+| | }, |
+| | | |
+| | name: 'don', |
+| | size: 'large', |
+| | breed: 'labrador', |
+| | color: 'black', |
+| | }, |
+| | | |
+| | name: 'shadow', |
+| | size: 'medium', |
+| | breed: 'labrador', |
+| | color: 'chocolate', |
+| | }, |
+| | ]; |
+```
+
+如果你想看直接使用 `for` 循环或 `Set` 的几种方法，请翻回之前的那个提示。现在，你将直接通过 `reduce()` 方法获取值。
+
+如果你需要的只是唯一颜色集合，你将编写一个 `reduce` 方法，遍历对象并检查颜色，保存唯一值。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+| 1: | const colors = dogs.reduce((colors, dog) => { |
+| 2: | if (colors.includes(dog.color)) { |
+| 3: | return colors; |
+| 4: | } |
+| 5: | return [...colors, dog.color]; |
+| 6: | }); |
+```
+
+### `reduce()` 方法
+
+一如既常，看比解释容易得多。这里有一个返回完全相同数组的 `reduce` 函数。它是没用的，但它能让你看到 `reduce()` 函数是如何构建的。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+| 1: | const callback = function (collectedValues, item) { |
+| 2: | return [...collectedValues, item]; |
+| 3: | }; |
+| 4: | |
+| 5: | const saying = ['veni', 'vedi', 'veci']; |
+| 6: | const initialValue = []; |
+| 7: | const copy = saying.reduce(callback, initialValue); |
+```
+
+这里发生了什么？首先，注意你在第 1 行向 `reduce()` 回调函数传递了两个参数：返回的项（称为 `collectedValues`）和单个项。返回值（有时称为累加器/carry）是 `reduce()` 独特之处所在。它的范围可以从整数到如 `Set` 这样的集合。
+
+第 7 行的 `reduce()` 方法本身接受两个值：回调函数和初始值。虽然初始值是可选的，但通常会包含它，因为你需要一个地方来存放返回值，而且作为额外奖励，它为其他开发者提供了关于他们将得到什么的线索。`reduce` 方法最困难的部分是回调函数必须始终返回累加器项。
+
+非常值得阅读文档以查看更多示例，但其中许多示例都是使用数字的抽象概念。考虑一种更常见的情况：从数组中获取唯一值。
+
+你可能还记得你已经在提示 16 中通过 `Set` 解决了这个问题：使用 Set 保持唯一值。你完全正确，但你将扩展该解决方案，以获取几组唯一值。
+
+与上一个示例一样，你将从用于领养网站的狗集合中获取一个唯一值列表。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+| | const dogs = [ |
+| | | |
+| | name: 'max', |
+| | size: 'small', |
+| | breed: 'boston terrier', |
+| | color: 'black', |
+| | }, |
+| | | |
+| | name: 'don', |
+| | size: 'large', |
+| | breed: 'labrador', |
+| | color: 'black', |
+| | }, |
+| | | |
+| | name: 'shadow', |
+| | size: 'medium', |
+| | breed: 'labrador', |
+| | color: 'chocolate', |
+| | }, |
+| | ]; |
+```
+
+如果你想看直接使用 `for` 循环或 `Set` 的几种方法，请翻回之前的那个提示。现在，你将直接通过 `reduce()` 方法获取值。
+
+如果你需要的只是唯一颜色集合，你将编写一个 `reduce` 方法，遍历对象并检查颜色，保存唯一值。
+
+
+
+
+
+例如，如果你想获取 `dog` 对象中所有键的唯一值，该怎么办？你可以运行多个 `map` 函数并将它们传递给 `Set`。或者，你可以使用一个 `reduce` 函数，从空 `Set` 开始，并在执行过程中填充对象。
+
+实现这一目标有很多方法，但最简单的方法是从一个包含空 `Set` 的对象开始。在 `reduce` 函数体内部，将每个项添加到 `set` 中（记住它只会保留唯一项）。当你完成时，你就获得了一个唯一属性的集合。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+const filters = dogs.reduce((filters, item) => {
+  filters.breed.add(item.breed);
+  filters.size.add(item.size);
+  filters.color.add(item.color);
+  return filters;
+}, {
+  breed: new Set(),
+  size: new Set(),
+  color: new Set(),
+});
+```
+
+现在，你既可以保持低迭代次数的优势，又能向其他开发者指示转换后数据的形状。
+
+而且正因为你可以更改数据的大小和形状，所以可能性几乎是无限的。
+
+看另一个例子。在这种情况下，你有一份开发者列表，除了语言专长，你还想按专长进行计数。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+const developers = [
+  {
+    name: 'Jeff',
+    language: 'php',
+  },
+  {
+    name: 'Ashley',
+    language: 'python',
+  },
+  {
+    name: 'Sara',
+    language: 'python',
+  },
+  {
+    name: 'Joe',
+    language: 'javascript',
+  },
+];
+```
+
+你可以通过在每次迭代中增加语言专长来轻松获取计数。
+
+[loops/reduce/reduce.js](http://media.pragprog.com/titles/es6tips/code/loops/reduce/reduce.js)
+
+```javascript
+const aggregated = developers.reduce((specialities, developer) => {
+  const count = specialities[developer.language] || 0;
+  return {
+    ...specialities,
+    [developer.language]: count + 1,
+  };
+}, {});
+```
+
+注意初始值只是一个空对象。在这种情况下，你不知道将使用哪些语言，因此你需要动态地添加它们。如果你在想的话：是的，你可以用 `Map` 代替对象来构建这个 `reduce` 函数。尝试一下看看你会得到什么结果。
+
+数组方法就到此为止。它们提供了很多价值，当你熟练掌握它们后，你会很感激你能多快地减少代码行，同时让返回的信息更加透明。不要惊讶于发现自己会越来越多地使用它们。
+
+尽管如此，有些时候普通的 `for` 循环仍然是更好的选择。在下一个提示中，你将看到 `for` 循环的一种稍微变体，称为 `for...in` 循环，它让你通过直接从可迭代对象中获取每个项，从而忽略所有烦人的迭代器声明和长度声明。
+
+## 提示 27 | 使用 for...in 和 for...each 减少循环杂幅
+
+在本提示中，你将学习如何使用 `for...in` 遍历可迭代对象，使用 `for...of` 遍历对象，以保持逻辑清晰。
+
+希望到现在，你已经确信数组方法可以以清晰且可预测的方式处理你的大多数迭代。然而，有时数组方法可能是效率低下的，或者是繁琐的。
+
+在某些情况下，你可能在结果不符合你的需求时退出循环。在这些情况下，继续迭代信息是没有意义的。
+
+或者，当你处理的集合不是数组的集合时，数组方法可能会过于复杂。记住，仅仅因为一个结构不是数组，并不意味着你不能使用数组方法。如果你正在处理一个对象，可以使用 `Object.keys()` 创建一个键的数组，然后执行你执行的任何方法。或者，你可以使用扩展操作符将 `Map` 转换为键值对数组。如果你需要复习，请回到提示 14，*使用 Map 和扩展运算符对键值对数据进行迭代*。
+
+事实上，这些都是非常棒的方法。例如，流行的 Airbnb 风格指南（style guide）坚持要求始终使用数组方法，并限制了 `for...of` 和 `for...in` 循环的使用。
+
+这种观点并不是所有人都认同的。有时，将结构转换为数组并不值得费尽周折，了解其他选项是有价值的。
+
+考虑一个可以选择和比较多组信息的应用程序。也许你正在构建一个带有咨询公司列表的应用程序。用户可以选择多家公司并对比其服务。
+
+根据你现在所掌握的知识，你可能会使用 `Map` 在用户点击选项时存储各种公司。毕竟，你正在不断地添加和删除信息，这是 `Map` 可以轻松处理的操作。
+
+当用户点击他们感兴趣的公司时，你可以将这些公司添加到简单的 map 中，使用公司的 ID 作为键，公司名称作为值。
+
+[loops/for/for.js](http://media.pragprog.com/titles/es6tips/code/loops/for/for.js)
+
+```javascript
+const firms = new Map()
+  .set(10, 'Ivie Group')
+  .set(23, 'Soundscaping Source')
+  .set(31, 'Big 6');
+```
+
+利用这少量的信息你可以做很多事情。你可以从数据库中选择细节。你可以检查可用性或创建一个比较表。在所有情况下，你都需要对集合中的每一个项进行操作。
+
+对于这个例子，遍历用户选择的公司以检查它们是否可用。（出于本例的考虑，你将使用一个在其他地方定义的通用 `isAvailable()` 函数）。如果某一个不可，返回一条消息说该公司不可用。否则，返回一条消息说所有公司都可用。
+
+如果你尝试编写这段代码，你会立即发现一个问题。你不能使用传统的 `for` 循环，因为集合不是数组。你可以通过将 map 转换为数组来轻松绕过。
+
+[loops/for/traditional.js](http://media.pragprog.com/titles/es6tips/code/loops/for/traditional.js)
+
+```javascript
+const entries = [...firms];
+for (let i = 0; i < entries.length; i++) {
+  const [id, name] = entries[i];
+  if (!isAvailable(id)) {
+    return `${name} is not available`;
+  }
+}
+return 'All firms are available';
+```
+
+该循环非常直观。它以相当透明的方式获取了你需要的信息。但到这时，你知道有更好的循环方式。你可能已经注意到，因为必须转换为数组，你不如使用数组方法。
+
+但是没有好的数组方法来执行此操作。当然，有很多选项供你尝试。你可能会使用 `find()` 来查看是否有不可用的公司。
+
+[loops/for/full.js](http://media.pragprog.com/titles/es6tips/code/loops/for/full.js)
+
+```javascript
+const unavailable = [...firms].find(firm => {
+  const [id] = firm;
+  return !isAvailable(id);
+});
+
+if (unavailable) {
+  return `${unavailable[1]} is not available`;
+}
+
+return 'All firms are available';
+```
+
+你可能还会编写一个 `reduce()` 方法，返回一个以成功消息作为默认值的字符串。
+
+[loops/for/full.js](http://media.pragprog.com/titles/es6tips/code/loops/for/full.js)
+
+```javascript
+const message = [...firms].reduce((availability, firm) => {
+  const [id, name] = firm;
+```
+
+
+
+
+
+```javascript
+if (!isAvailable(id)) {
+  return `${name} is not available`; own}
+return availability;
+}, 'All firms are available');
+return message;
+```
+
+解决这个问题有很多方法。也许这些解决方案对你和你的团队来说是可行的，但它们仍然有点笨拙。你可能需要读两遍才能理解发生了什么。
+
+问题在于 `find()` 的方法是一个两步过程（先查找是否存在不可用的公司，然后构建消息），而 `reduce()` 的方法又有点难以理解。
+
+还有一个问题是，`find()` 函数只会给你第一个不可用的公司，而 `reduce()` 函数只会给你最后一个。
+
+从公平地说，你现在不需要在这里解决这个问题。尝试同时用数组方法和其他循环来寻找寻找解决方案吧。（提示：链式调用 `filter()` 和 `map()` 来创建一个消息数组。）不过，目前请忽略这种优化，重点关注是否所有公司都可用即可。
+
+你已经看到过三种方法来解决完全相同的问题，并得到相同的结果。它们都有一个共同点：它们都要求你先将 `map` 转换为数组。事实证明这甚至不是必须的。`Map` 上允许你使用展开运算符的属性 `MapIterator`，正是允许你直接遍历 map 的同一个属性。
+
+在关于与 `Map` 使用展开运算符的提示中，你学习了 `MapIterator`。它只是更通用的 `Iterator` 的一个特定实例，后者指定了一种可以逐个访问部分的特定类型。你可以在 map、数组和 set 中找到它们，甚至可以自己创建它们，正如你在提示 41 中看到的，使用生成器创建可迭代属性 。
+
+最重要的是，你可以使用一种名为 `for...of` 循环的特殊循环配合迭代器。这种循环与 `for` 循环非常相似，不同之处在于遍历索引（即 `i = 0` 的部分）。相反，你直接遍历集合的成员。
+
+在循环参数中，你为单个项目声明一个名称，然后在主体中使用它。
+
+你没有将特殊对象转换为数组，而是使用了与 `for` 循环完全相同的思想，同时去除了对索引的引用。你实际上利用了数组方法中的回调方法。以下是你之前看到的函数的翻译版本。
+
+[loops/for/for.js](http://media.pragprog.com/titles/es6tips/code/loops/for/for.js)
+
+```javascript
+for (const firm of firms) {
+  const [id, name] = firm;
+  if (!isAvailable(id)) {
+    return `${name} is not available`;
+  }
+}
+return 'All firms are available';
+```
+
+注意几点：首先，你用 `const` 声明了变量 `firm`。因为 `const` 是块级作用的，该变量在循环外部不存在，所以你不需要担心污染代码代码。其次，使用数组方法的相同思想，你直接操作项目。你不需要像在 `for` 循环中通过 `entries[i]` 那样引用整个集合。它是数组回调方法和 `for` 循环的结合。
+
+作为额外收获，通过避免在再次遍历之前将可迭代对象转换为数组，你还获得了一点微小的优化。你不需要避免数组方法来获得这种微优化，但这是值得考虑的。
+
+权衡是什么？最明显的是，因为循环可以做任何事情，你失去了一些可预测性。诚实地说，只要你在遍历循环时不修改集合（你可以很容易做到），这几乎是唯一的问题了。但你也可以用数组方法修改集合。避免副作用和修改需要的纪律多于语法。
+
+有了所有这些优势，你可能会想是否应该总是直接循环？简而言之，不是。作为原则，当数组方法适用且你倾向于将其作为默认时，使用它们。例如，当你在 map 中过滤数据时，应该使用过滤器。当你将 map 转换为值数组时，使用 `map()` 方法。否则，你将陷入在每次循环都创建一个容器数组并修改它的循环中。在最合适的情况下使用 `for...of`。
+
+`for...of` 循环还有另一个轻微的复杂之处——或者说是优点，取决于你如何考虑。有一种类似但不同的循环，仅适用于键值对象。它被称为 `for...in` 循环。
+
+`for...in` 循环与 `for...of` 循环非常相似。你不需要用 `Object.keys()` 将对象的键转换为数组，因为你直接对对象本身进行操作。具体来说，你遍历对象的属性。
+
+如果你深入研究过 JavaScript 对象，可能会知道对象属性存在一些复杂性，因为它们可以从原型链中的其他对象继承。此外，对象具有非可枚举属性。简而言之，你可以使用迭代器配合 `for...of` 循环（此处原文有重复，已意译）。此外，还有可以继承的属性。你可以在 Mozilla Developer Network 上阅读更多内容。24
+
+大多数时候，你处理的是简单的。当使用 `for...in` 循环时，你会每次获得一个属性。与 `for...of` 循环不同，你无法获得值，并且必须在每次迭代中通过键来引用整个集合。简而言之，你命名该变量（最好使用 `const`），然后在主体中使用它，并知道它会在每次迭代时发生变化。
+
+尝试转换最后一个 `for...of` 循环并看看你会得到什么。
+
+```javascript
+const firms = {
+  '10': 'Group',
+  '23': 'Source',
+  '31': 'Big',
+  '6': 'Sound'
+};
+```
+
+```javascript
+for (const id in firms) {
+  if (!isAvailable(parseInt(id, 10))) {
+    return `${firms[id]} is not available`;
+  }
+}
+return 'All firms are available';
+```
+
+因为你获取的是属性而不是值对，所以不需要单独提取名称和值。每当你需要值时，都可以使用单个项目上的数组表示法获取它。如果你需要键是整数（在这种情况下你确实需要），将需要使用 `parseInt()` 来进行转换。这就是为什么对象键上发生的细微转换会如此令人困惑。
+
+就像 `for...of` 循环一样，在合适的情况下使用 `for...in` 循环，但尽量不要将其作为默认。如果你只想使用键，那么在运行数组方法之前先用 `Object.keys()` 将它们提取出来可能更合理。如果你只计划使用值，也是如此。你可以使用 `Object.values()` 将它们转换为数组，尽管这并不常见。
+
+另一个注意事项：不要在遍历对象时修改该对象。这可能非常危险，bug 可能会很快溜入，特别是当你添加或修改除当前迭代属性之外的属性时。
+
+
+
+
+
+# 引言
+
+现在你拥有一整套全新的用于迭代集合的工具。正如你在示例中看到的，你可以用多种方法解决大多数问题，因此这通常取决于个人和团队的偏好。随着时间的推移，你会发现自己更偏于某些方法而非其他方法，这完全没关系。在开发中，正确答案和错误答案比人们想象的要少得多。
+
+在下一章中，你将从处理数据的基础性工作转向函数的组合。你将从简单地探索处理参数的新方法开始。是的，这些变化足够多，以至于我们需要用一整章来探索它们。JavaScript 可以利用函数做很多有趣的事情，因此即使是简单的参数现在也变得更加灵活，这非常令人兴奋。这才是趣味真正的开始。
+
+# 第 6 章
+
+我因于假设自己总能找到捷径而闻名。如果我在高速公路上行驶时遇到施工，我会从第一个出口下道，决心要找到一条快速绕过延迟的方法。离开高速公路需要我忽略我妻子的抗议，她认为减速并跟随橙色锥桶行驶会简单得多。
+
+嗯，我妻子通常是对的。我驶下公路，进入了一条侧路，结果这条路突然偏离轨道更远了。我不在意。我在一个偏远地区长大，所以我对县道有一种种直觉。至少我是这么认为的，直到铺设好的路变成了土路，最后在麦田前撞到了死胡同。无奈之下，我拿出手机开启 GPS。噢，等一下。我处在麦田中间。没有信号。
+
+简单的动作会迅速变得失控。这种情况在函数参数中经常发生。你开始时初衷是好的：函数将接收两个参数并返回一个简单的值。突然，边缘情况接踵而至。数据不一致性渗透进来。等你反应过来时，你需要八个不同的参数来涵盖几十种情况。你想放弃，但此时此刻你已经太害怕破坏所有依赖于该函数的下游代码了。
+
+在本章中，你将学习如何为函数参数的变化做计划，以及如何创建既简洁又灵活的参数。
+
+首先，你将看到如何添加默认参数来覆盖信息可能缺失的情况。接下来，你将学习如何使用解构从对象中提取信息，以及如何将解构与函数参数结合以适应各种选项。利用这些知识，你会将信息重新组合成新对象，创建出以可用包的形式共享大量信息的返回语句。此之后，你将回到参数，看看你如何在甚至不知道预期参数数量的情况下创建函数。
+
+只要你对不可避免的突发状况有计划，冒险就没有问题。在本章中，你将看到如何构建函数来处理意外的变化。学习我我作为司机时从没有学到的教训：跳入未知，但要为未见之事做好计划。
+
+## 提示 28：创建默认参数
+
+在提示中，你将学习如何使用默认参数在参数缺失时设置值。
+
+无论你做多少计划，事情都会发生变化。函数参数尤其是如此。当你写一个函数时，你预期会有几个参数。然后，随着代码的增长和边缘情况的出现，你提供的参数突然就不够了。
+
+在接下来的几个提示中，你将学习处理参数的不同技术。几乎所有的这些技术都能帮助你以某种方式应对变化的需求。但作为开始，你将学习最简单的技巧：设置默认参数。
+
+考虑一个基础的辅助函数。你只想做是将磅转换为公斤。这看起来很简单。你只需要将重量作为输入，并将磅数除以 `2.2` 得到公斤。（向那些不需要处理这种愚蠢事的非美国人道歉。我相信你们在转换其他测量单位时遇到类似的困扰。）
+
+### `params/defaults/simple.js`
+```javascript
+function convertWeight(weight) {
+  return weight / 2.2;
+}
+```
+
+这段代码看起来很容易。但等一下，如果用户想提供盎司呢？我们需要添加一个 `ounces` 参数。如果他们没有提供，我们应该将其视为零。
+
+```javascript
+function convertWeight(weight, ounces) {
+  const oz = ounces ? ounces / 16 : 0;
+  const total = weight + oz;
+  return total / 2.2;
+}
+```
+
+当你运行 `convertWeight(44, 11)` 时，你得到 `20.3125`，这并不坏，但几乎每其他一次转换都会返回一个长小数。`convertWeight(44, 8)` 返回 `20.227...`。更奇怪的是，当你运行 `convertWeight(6.6)` 时，你预期得到 `3`，结果却却是 `2.99999...`。你可以归功于浮点数运算。
+
+太棒了——现在你需要向上舍入，以处理浮点数运算不符合用户预期的情况。既然反正都要进行舍入，你也应该让小数位数成为一个选项，默认为两位。
+
+你添加了更多代码来处理缺失的参数。你还添加了一个辅助函数 `roundTo` 来处理舍入（实现请参见书中的代码）。
+
+但有一个复杂之处。为了让默认两位小数，你不能仅仅检查参数 `roundTo` 是否为真值。例如，你不能写 `const round = roundTo || 2;`，因为如果用户传递 `0` 作为他们想要的位数，它会变成假值并回到两位。
+
+相反，你必须显式检查该值是否为 `undefined`，这意味着没有提交任何值。
+
+### `params/defaults/problem.js`
+```javascript
+function convertWeight(weight, ounces, roundTo) {
+  const oz = ounces ? ounces / 16 : 0;
+  const total = weight + oz;
+  const conversion = total / 2.2;
+  // ... 此处为舍入逻辑 ...
+}
+```
+
+## 注脚
+
+- [20] [https://en.wikipedia.org/wiki/Method_chaining]
+- [21] [https://github.com/jsmap1/simplifying-js]
+- [22] [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Global_Objects/Array/Reduce]
+- [23] [https://github.com/airbnb/javascript/issues/851]
+- [24] [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#Iterating_over_own_properties_only]
+
+Copyright © 2018, The Pragmatic Bookshelf.
+
+
+
+
+
+```javascript
+const round = roundTo === undefined ? 2 : roundTo;
+return roundToDecimalPlace(conversion, round);
+```
+
+每一次，函数都会变得复杂一点。在一个需求不断变化的世界里，这是不可避免的。你不希望做的是由于未定义变量而产生问题。这意味着每当你添加一个新参数时，都得添加一个新的三元运算符或短路逻辑来创建一个默认值。
+
+需求的变化是生活的一部分。任何语法都对此无为力。但你可以通过默认参数来尽量减少大量的变量检查。
+
+这一切意味着，如果没有传递值，它将取占位符值。就是简单。你可能在许多其他语言中见过它。你通过在参数名后面加上等号（`=`）和值来定义默认参数。如果该参数没有值，它将退回到默认值。
+
+更新后的函数仍然带有处理新需求的额外逻辑（添加盎司、保留小数位数），但至少你可以确信你会得到某些结果。
+
+[params/defaults/default.js](http://media.pragprog.com/titles/es6tips/code/params/defaults/default.js)
+
+```javascript
+function convertWeight(weight, ounces = 0, roundTo = 2) {
+  const total = weight + (ounces / 16);
+  const conversion = total / 2.2;
+  return roundToDecimalPlace(conversion, roundTo);
+}
+```
+
+作为一个额外，你向其他开发者提供了一个提示，说明你正在寻找特定的数据类型。例如，他们会知道 `ounces` 是一个整数。这并不是类型系统的替代品，但是一个不错的补充。
+
+## JavaScript 与类型检查
+
+你不需要类型系统，但如果你喜欢，现在的选择比以往任何时候都多。最显著的例子是 `TypeScript`，它是 JavaScript 的超集（包含了所有的 JavaScript 并且更多）。它是一个很好的工具，深受喜爱良好类型系统的开发者的欢迎。
+
+如果你想编写普通的 JavaScript 但又带有类型系统，你应该检查一下 `flow`，这是一个由 Facebook 开发的静态类型系统。它足够灵活，可以整合到单个文件中，让你有机会尝试类型，而无需完全切切换到 `TypeScript`。
+
+默认参数并不是完美的解决方案。参数的顺序仍然很重要。如果你不想包含 `ounces` 但想指定小数位数，你仍然需要明确该数字——在这种情况下，它将是 0。
+
+[params/defaults/default.js](http://media.pragprog.com/titles/es6tips/code/params/defaults/default.js)
+
+```javascript
+convertWeight(4, 0, 2);
+```
+
+如果你绝对不想传递一个值，你可以传递 `undefined`，函数将使用默认参数，但请谨慎地使用这种方法。当你传递 `undefined` 时，很容易出错。例如，如果你传递了 `null`，你就不会获得默认值。此外，如果你真的不在乎默认值是什么，你应该直接使用设置为默认参数的值。这对于阅读代码的人来说更清晰，而且当函数稍有变化时，损坏的概率更小。
+
+[params/defaults/default.js](http://media.pragprog.com/titles/es6tips/code/params/defaults/default.js)
+
+```javascript
+convertWeight(4, undefined, 2);
+```
+
+解决这个问题的常用方法是将对象作为第二个参数传递。因为对象可以有多个键值对，所以你不需要在每次添加新选项时都更改函数参数。然而，你需要从对象中提取信息。
+
+在下一个技巧提示中，你将看到如何通过解构提取数据，在参数中使用对象变得更加简单。
+
+## 技巧 29：使用解构访问对象属性
+
+在这个技巧中，你将学习如何使用解构快速从对象和数组中提取信息。
+
+在上一个技巧中，你学习了如何创建默认参数，这是该语言的一个很好的补充，但它们仍然有一个很大的问题：参数必须按顺序给出。如果你想指定第三个参数但不在乎第二个，你仍然被迫输入一个值。如果你想跳过某个参数，默认参数就没有帮助。
+
+对于函数需要大量参数的情况又如何？对于你知道函数的需求可能会变化的情况又如何？在 JavaScript 中，大多数开发者会将额外的参数添加到对象中，并将对象作为最后一个参数传递给函数。
+
+例如，如果你想显示数量数量照片并将这些值转换为 HTML 字符串呢？具体来说，你想在字符串中按顺序包含图像、标题、摄影师和位置，但你也想要包含任何额外信息。某些照片包含设备、图像类型、镜头信息以及任何其他自定义内容。你不知道所有内容是什么，但你仍然想显示它们。与照片有关的信息很多。将这些信息作为单独参数传递是过度的——你最终可能会有十个参数。此外，信息是结构化的。这有什么意义呢？这里有一个关于照片信息的示例。
+
+[params/destructuring/destructuring.js](http://media.pragprog.com/titles/es6tips/code/params/destructuring/destructuring.js)
+
+```javascript
+const landscape = {
+  title: 'Landscape',
+  photographer: 'Nathan',
+  equipment: 'Canon',
+  format: 'digital',
+  src: 'landscape.jpg',
+  location: [32.7122, -103.140556],
+};
+```
+
+在这种情况下，将整个对象传递给函数是有意义的。当然，一旦你在函数中拥有它，你要对它做什么？你可以直接使用点语法——`photo.title` 来提取信息，也可以在之后将信息赋值给变量。获取预先知道的值很容易。真正的技巧是预先获取你不知道的信息。唯一的方法就是如果你足够聪明，在修改对象之前复制它（做得好）。在复制之后，你可以一次性删除不需要的键。结果是为了为了非常小的操作执行了大量的对象赋值。函数的三分之二都在从对象中提取信息。
+
+[params/destructuring/problem.js](http://media.pragprog.com/titles/es6tips/code/params/destructuring/problem.js)
+
+```javascript
+function displayPhoto(photo) {
+  const title = photo.title;
+  const photographer = photo.photographer || 'Anonymous';
+  const location = photo.location;
+  const url = photo.src;
+
+  const copy = { ...photo };
+  delete copy.title;
+  delete copy.photographer;
+  delete copy.location;
+  delete copy.src;
+
+  const additional = Object.keys(copy).map(key => `${key}: ${copy[key]}`);
+
+  return (
+    <img alt="Photo of ${title} by ${photographer}" src="${url}" />
+    <div>${title}</div>
+    <div>${photographer}</div>
+    <div>Latitude: ${location[0]}</div>
+    <div>Longitude: ${location[1]}</div>
+    <div>${additional.join('<br/> ')}</div>
+  );
+}
+```
+
+
+
+
+
+还记得在提示 10 中，使用对象进行静态键值查找 吗？你在那里学习了对象非常适合传递静态信息。现在你就要学习为什么了。
+
+在 JavaScript 中，你可以通过一种被称为**解构赋值**（destructuring assignment）的过程直接从对象赋值变量。
+
+### 解构赋值
+
+它的工作原理如下：解构允许你创建一个与对象的键同名的变量，并将对象中的值赋值给该变量。
+
+一如既常，眼见为实总是更容易理解。在这种情况下，你有一个键为 `photographer` 的对象，你正准备从该对象创建一个名为 `photographer` 的变量。
+
+```javascript
+const landscape = {
+  photographer: 'Nathan',
+};
+
+const { photographer } = landscape;
+photographer // Nathan
+```
+
+注意几点。首先，你仍然需要声明变量类型。和往常一样，你应该优先使用 `const`。其次，被赋值的变量必须与对象中的键匹配。最后，它是针对对象设置的。你仅仅是在赋值变量。大括号仅表示该变量使用的值位于对象内部。
+
+这就是最基础的操作——使用键设置变量。当然，没有任何事情是那么简单的。当键不存在时会发生什么？在这种情况下，值仅仅是 `undefined`，但你也可以在解构时设置一个默认值。
+
+```javascript
+const landscape = {
+};
+
+const { photographer = 'Anonymous', title} = landscape;
+
+photographer // Anonymous
+title // undefined
+```
+
+到此时，你已经跟上了普通参数。你可以从一个键设置变量。你可以设置默认值。但如果你不知道键的名称怎么办？如何获取剩余的信息？回想你想从照片中获取任何额外信息，而你完全不知道那是什么。
+
+### 剩余运算符（Rest Operator）
+
+好消息：你最喜欢的三个点回来了。你可以使用三个点（`...`）加上变量名，将任何额外值收集到一个新变量中。当你使用三点语法收集信息时，它不再被称为展开运算符（spread operator）。它被称为**剩余运算符**（rest operator），你将在后的提示中看到更多它的用法。
+
+你可以为变量命名任何名称。它不需要与键匹配（事实上，它不应该与键匹配）。变量的值将是一个包含剩余键值对的对象。
+
+```javascript
+const landscape = {
+  photographer: 'Nathan',
+  equipment: 'Canon',
+  format: 'digital',
+};
+const j
+const {
+  photographer,
+  ...additional
+} = landscape;
+
+additional; // { equipment: 'Canon', format: 'digital'}
+```
+
+`photographer` 从对象中提取取出，剩余的字段进入一个新的对象。你本质上复制了照片对象并删除了 `photographer` 键。
+
+注意变量赋值是在不同的行：`photographer` 在一行，而 `...additional` 在下一行。这仅仅是为了保持代码可读性的风格偏好。你也可以像上面那样将两个赋值都保持在同一行。
+
+### 重命名变量
+
+现在，你可以从对象中提取信息、分配默认参数并收集额外的键值对。如果这还不够庆祝，你还可以将键分配给不同的变量名。当键名被之前定义的变量占用，或者你只是不喜欢该键名并想要更具表达力的名称时，这非常有用。
+
+在原始代码中，你将来自 `photo.src` 的信息赋值给变量名 `url`。要用解构来实现，你只需要将键名放在前面，后面跟着冒号，以及你想要赋值给的值。
+
+```javascript
+const landscape = {
+  src: '/landscape-nm.jpg',
+};
+
+const { src: url } = landscape;
+src // ReferenceError: src is not defined
+url // '/landscape-nm.jpg'
+```
+
+你仍然必须使用键名来指示你想使用哪个值，但你并不受限于那个键名。
+
+### 解构数组
+
+最后，你也可以对数组使用解构赋值，但有一个大例外：由于数组中没有键，你可以使用任何喜欢的变量名，但你必须按顺序赋值信息。如果你想将第三项赋值给变量，必须先将前两个值赋值给变量。否则，这就很简单。解构是处理顺序表示某些信息的数组对的极佳方法。例如，如果你有一个`latitude`（纬度）和`longitude`（经度）的数组，你永远知道第一个对应 `latitude`，第二个对应 `longitude`。
+
+```javascript
+const landscape = {
+  location: [32.71222, -103.00556],
+};
+
+const { location } = landscape;
+const [latitude, longitude] = location
+latitude // 32.71222
+longitude // -103.00556
+```
+
+当然，在前面的情况下，你先从对象中提取出 `location`，然后从数组中提取出 `latitude` 和 `longitude`。没有必要将其分为两个步骤。你可以在解构期间合并这些赋值。
+
+```javascript
+const landscape = {
+  location: [32.71222, -103.00556],
+};
+const { location: [latitude, longitude] } = landscape;
+latitude // 32.71222
+longitude // -103.00556
+```
+
+好了，有很多要考虑的。但这确实可以让代码变得简洁。记得原始函数吗？这里是解构后的版本：params/destructuring/alternate.js
+
+```javascript
+function displayPhoto(photo) {
+  const {
+    title,
+    photographer = 'Anonymous',
+    location: [latitude, longitude],
+    src: url,
+    ...other
+  } = photo;
+  const additional = Object.keys(other).map(key => `${key}:${other[key]}`);
+  return (
+    `<img alt="Photo of ${title} by ${photographer}" src="${url}">
+    <div>${title}</div>
+    <div>${photographer}</div>
+    <div>Latitude: ${latitude}</div>
+    <div>Longitude: ${longitude}</div>
+    <div>${additional.join('<br/>')}</div>`
+  );
+}
+```
+
+看起来不错，对吧？但你可能在奇怪在一个关于清理参数的章节中写这些做什么。解构最棒的部分是，你可以将其直接移动到函数的参数中。信息的赋值方式与函数体中一样，但不需要声明变量类型。如果你好奇的话，它将使用 `let` 赋值，因此可以重新赋值变量。
+
+换句话说，你可以进一步清理原始代码：params/destructuring/destructuring.js
+
+```javascript
+function displayPhoto({
+  title,
+  photographer = 'Anonymous',
+  location: [latitude, longitude],
+  src: url,
+  ...other
+}) {
+  const additional = Object.keys(other).map(key => `${key}:${other[key]}`);
+  return (
+    `<img alt="Photo of ${title} by ${photographer}" src="${url}">
+    <div>${title}</div>
+    <div>${photographer}</div>
+    <div>Latitude: ${latitude}</div>
+    <div>Longitude: ${longitude}</div>
+    <div>${additional.join('<br/>')}</div>`
+  );
+}
+```
+
+
+
+
+注意，你仍然需要大括号，但其他地方都是完全一样的。现在当你调用函数时，你只需要传递对象，所有内容都会被分配到相应的参数上：`displayPhoto(landscape)`。
+
+你不仅省去了所有赋值的麻烦，而且通过传递对象作为参数，你再也不需要担心键值对的顺序了。
+
+而且，如果你想提取另一个键值对，只需在解构赋值中添加新变量即可。假设你想显式地为 `equipment` 赋值。你只需要在变量列表中添加新变量名就搞定了。你不需要担心函数在其他时间被调用时的情况。如果 `equipment` 不属于另一个对象，它将仅仅是 `undefined`。
+
+---
+
+这部分内容可能让你像过旋风一样眼快，但它应该能让你体验到如何轻松地从对象中提取信息。唯一的缺点是，这只对用键值对使用的对象或类的实例有效。
+
+解构赋值对 `Map` 不起，这没关系，因为这在你在函数之间传递信息时最有用，这意味着你不应该在其中进行循环或重新赋值值。换句话说，数据是静态的，因此对象是一个极佳的选择。
+
+似乎这还不够让你应接不暇，你只看到了一半。在下一个技巧中，你将向反方向操作，将信息放回对象中。
+
+## 技巧 30：简化键值赋值
+
+在本次技巧中，你将学习如何通过简短的键值赋值来快速创建对象。
+
+你刚刚学习了如何以一种清晰、干净的方式拆解对象。现在你已经把所有碎片都摆放在你所谓的“工作台”上了，你需要把它们重新组装起来。如果规范的编写者只给你一个拆解对象的清晰接口，却没给你任何重新组装它们的方法，那将毫无意义。
+
+不过，你很幸运。你用于拆解对象的相同技术可以反过来使用。现在是时候使用类似的语法构建新对象了，这会让你的代码变得清晰且可预测。
+
+从一个类似的照片信息对象开始：
+
+```javascript
+// params/assignment/assignment.js
+const landscape = {
+  title: 'Landscape',
+  photographer: 'Nathan',
+  location: 'Yosemite',
+};
+```
+
+现在，我们要解构这个对象：
+
+```javascript
+const { title, photographer, location } = landscape;
+```
+
+如果你只想提取 `location`，可以这样做：
+
+```javascript
+const { location } = landscape;
+```
+
+如果你想提取 `location` 并将其重命名：
+
+```javascript
+const { location: loc } = landscape;
+```
+
+如果你想一次提取多个属性并重命名其中一个：
+
+```javascript
+const { title, photographer, location: loc } = landscape;
+```
+
+如果你想提取所有剩余属性，可以使用剩余运算符：
+
+```javascript
+const { title, ...rest } = landscape;
+```
+
+如果你想在提取时提供默认值，可以这样做：
+
+```javascript
+const { location = 'Unknown Location' } = landscape;
+```
+
+既然你已经学会了如何拆解对象，现在来看看如何将它们重新组装。
+
+```javascript
+const newPhoto = {
+  title: 'Mountain',
+  photographer: 'Alice',
+  location: 'Alps',
+};
+```
+
+我们可以通过解构赋值来提取这些属性：
+
+```javascript
+const { title, photographer } = newPhoto;
+```
+
+现在，我们可以创建一个包含这些属性的新对象：
+
+```javascript
+const photoInfo = {
+  title,
+};
+```
+
+或者，更直接地组合它们：
+
+```javascript
+const photoInfo = {
+  title,
+  photographer,
+};
+```
+
+如果你想在创建对象时添加额外的属性，可以这样做：
+
+```javascript
+const photoInfo = {
+  title,
+  photographer,
+  location: 'Hills',
+};
+```
+
+我们可以打印查看结果：
+
+```javascript
+console.log(photoInfo); // 输出: {title: 'Mountain', photographer: 'Alice', location: 'Hills'}
+```
+
+我们还可以使用扩展运算符来快速复制或合并对象：
+
+```javascript
+const photo = {
+  title: 'Mountain',
+  photographer: 'Alice',
+  location: 'Alps',
+};
+
+const updatedPhoto = {
+  ...photo,
+  location: 'Hills',
+};
+```
+
+这种方法非常实用，因为它允许你在保留原有属性的同时修改特定的属性。
+
+最后，让我们看看如何在函数参数中使用解构赋值：
+
+```javascript
+function displayPhoto({ title, location, time }) {
+  console.log(`${title} taken in ${location} at ${time}`);
+}
+
+const photo = {
+  title: 'Sunset',
+  location: 'Yosemite',
+  time: '6 PM',
+};
+
+displayPhoto(photo); // 输出: Sunset taken in Yosemite at 6 PM
+```
+
+通过这种方式，函数定义变得更加清晰，且调用者只需要传递一个对象即可。
+
+
+
+
+# 每种方法
+
+注意到 `every()` 方法了吗？它是你之前没过的另一个简单数组方法。与 `filter()` 类似，你传递一个返回真值（truthy）或假值（falsy）的回调函数。如果传递给回调函数的数组每个项都返回真值，`every()` 方法返回 `true`。否则，它返回 `false`。
+
+运行该函数非常简单。只需传入一个字符串数组。
+
+[params/rest/simple.js](http://media.pragprog.com/titles/es6tips/code/params/rest/simple.js)
+
+```javascript
+validateCharacterCount(10, ['Hobbs', 'Eagles']);
+// true
+```
+
+这段代码非常棒，因为它具有通用性。你可以轻松地在其他地方复用它。这段代码唯一的缺点是它将函数的使用者限制在了特定的集合类型上。例如，另一个开发者可能想测试单个用户名是否过长。要使用这段代码，他们必须知道需要传递一个数组。如果他们不知道，就会得到错误。
+
+[params/rest/simple.js](http://media.pragprog.com/titles/es6tips/code/params/rest/simple.js)
+
+```javascript
+validateCharacterCount(10, 'wvoquine');
+// TypeError: items.every is not a function
+```
+
+你可以写一些文档来说明参数，但有更好的方法。以前，JavaScript 开发者通过使用内置的 `arguments` 对象来解决这个问题。这个方便的对象可以为你提供传递给函数的所有参数的类数组集合。
+
+[params/rest/problem.js](http://media.pragprog.com/titles/es6tips/code/params/rest/problem.js)
+
+```javascript
+function getArguments() {
+  return arguments;
+}
+getArguments('Bloomsday', 'June 16');
+// { '0': 'Bloomsday', '1': 'June 16' }
+```
+
+你可能注意到了“类数组”这个短语。遗憾的是，`arguments` 是一个对象，因此你需要进行一些转换将其转换为数组。具体来说，你需要在 `Array.prototype.slice` 这种在 `Array` 对象（而不是数组实例）上静态地调用一个方法，正如后文代码的第 2 行所示。这行代码获取除了第一个参数（字符计数）之外的所有参数，并将它们合并成数组。
+
+[params/rest/problem.js](http://media.pragprog.com/titles/es6tips/code/params/rest/problem.js)
+
+```javascript
+1: function validateCharacterCount(max) {
+2: const items = Array.prototype.slice.call(arguments, 1);
+3: return items.every(item => item.length < max);
+4: }
+```
+
+现在，你可以传递任意数量的参数，并知道函数内部会有一个数组。那么对于你已经有一个数组的情况该怎么办？因为你正在将参数转换为数组，所以你需要将你的数组转换为参数列表。回想一下学习展开运算符（spread operator）的时候。那时，你学到你总是需要将其展开到某些东西中。直到现在，你只将其展开到另一个数组中。你也可以将其作为参数列表展开。换句话说，当你将参数收集成列表时，你可以轻松地处理字符串或数组的情况。
+
+使用这些技术，你现在可以使用各种参数调用你的函数。
+
+[params/rest/problem.js](http://media.pragprog.com/titles/es6tips/code/params/rest/problem.js)
+
+```javascript
+validateCharacterCount(10, 'wvoquie');
+// true
+
+const tags = ['Hobbs', 'Eagles'];
+validateCharacterCount(10, ...tags);
+// true
+```
+
+这种方式更灵活，但远非完美。最大的问题是处理 `arguments` 对象的语法有点复杂。结果是，很少开发者（最核心的 JavaScript 开发者之外）使用它。更不用说，当你使用 `arguments` 对象时，函数参数中完全没有提示你正在接受一个参数列表。另一个开发者必须深入函数体才能理解他们可以向函数传递什么。
+
+# 剩余参数 (Rest Parameters)
+
+剩余参数允许你传递参数列表将其赋值给变量。
+
+## JavaScript 与函数式语言
+
+JavaScript 受多种语言的影响，包括 `Java`（一种面向对象的语言）、`Scheme`（一种 Lisp 或函数式语言）和 `Self`（一种原型语言）。这意味着 JavaScript 可以处理多种范式。因此，JavaScript 是探索其他范式思想的良好环境，特别是函数式语言的概念。
+
+你已经探索了许多函数式概念，如纯函数、副作用和柯里。剩余参数本身是 Lisp 方言（如 `Scheme`）的延续。当你探索高阶函数时，你会看到更多函数式概念。JavaScript 是打破面向对象模式并尝试新想法的极佳方法。
+
+你使用喜欢的三个点（`...`）后跟想要赋值的变量来声明剩余运算符。在此之后传递的任何参数都会以数组的形式收集到变量中。
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+function getArguments(...args) {
+  return args;
+}
+getArguments('Bloomsday', 'June 16');
+// ['Bloomsday', 'June 16']
+```
+
+就这么简单。尝试使用剩余参数重写 `validateCharacterCount()` 函数。你可能没花任何时间就想出了：
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+function validateCharacterCount(max, ...items) {
+  return items.every(item => item.length < max);
+}
+```
+
+除了更简单整洁之外，它更具可预测性。现在开发者可以判断出该函数至少接受两个参数。即使是不熟悉剩余运算符的人也有足够的线索，让他们在 Stack Overflow 上快速搜索就能了解细节。
+
+你调用该函数的方式与之前调用之前的函数完全相同，通过传递参数列表或将参数数组展开为列表。这与你之前使用 `arguments` 对象时使用的代码没有区别。
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+validateCharacterCount(10, 'wvoquie');
+// true
+
+validateCharacterCount(10, ...['wvoquie']);
+// true
+
+const tags = ['Hobbs', 'Eagles'];
+validateCharacterCount(10, ...tags);
+// true
+
+validateCharacterCount(10, 'Hobbs', 'Eagles');
+// true
+```
+
+到此，你已经考虑了可能获取列表或数组的情况。还有其他你可能使用剩余参数的理由。
+
+首先，你想向其他开发者信号，你将以数组的形式处理参数。在没有类型检查的情况下，这是另一个帮助未来开发者的小线索。许多开发者会使用剩余运算符，即使他们传递的数据已经是数组形式。尽管他们在调用函数时总是展开这些信息，但这对于预期参数类型是一个清晰标记。
+
+其次，剩余运算符可以为你提供一种很棒调试代码的方法。例如，它可以帮助你解码你怀疑可能接收了额外参数的库函数，你可以使用剩余参数来收集任何残留的参数。
+
+你已经多次使用过 `map()` 方法，并且知道回调函数将被检查的项作为参数。事实证明，回调函数在单个项之后还会传递几个更多参数。如果你收集剩余参数并打印它们，你会发现 `map()` 运算符还接收了被检查项的索引和整个集合。
+
+
+
+
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+['Spirited Away', 'Princess Mononoke'].map((film, ...other) => {
+  console.log(other);
+  return film.toLowerCase();
+});
+// [0, ['Spirited Away', 'Princess Mononoke']]
+// [1, ['Spirited Away', 'Princess Mononoke']]
+```
+
+这在 `map()` 操作符上并不是什么大事，因为它有详尽的文档，但剩余运算符（rest operator）可以帮助你看到你可能并不知道的参数。剩余运算符是进行调试的绝佳方法。
+
+第三，如果你没有修改参数的计划，剩余参数是通过函数传递属性（props）极极方法。
+
+当你想要封装几个函数并传递参数时，这种方法非常好。例如，你可能有一个模态框，当更改保存时，你希望关闭模态框的同时用另一个函数更新某些信息。
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+function applyChanges(...args) {
+  updateAccount(...args);
+  closeModal();
+}
+```
+
+最后，不要忘记剩余运算符不仅用于参数。正如你所看到的，它可以用于从对象中提取剩余的键值对，或从数组中提取剩余的值。
+
+就像展开运算符（spread operator）一样，你可以在移除副作用的同时重新常用的数组方法。如果你想重新实现 `shift()` 方法（返回数组的第一个项并从原数组删除该项），只需结合剩余运算符和解构即可。
+
+[params/rest/rest.js](http://media.pragprog.com/titles/es6tips/code/params/rest/rest.js)
+
+```javascript
+const queue = ['stop', 'collaborate', 'listen'];
+const [first, ...remaining] = queue;
+first; // 'stop'
+remaining; // ['collaborate', 'listen']
+```
+
+你得到了第一个值和一个包含剩余值的数组。作为额外，原始数组仍然保持完好。
+
+将剩余运算符作为参数的唯一缺点是它在所有情况下都必须是最后一个参数。它必须是函数的最后一个参数。在解构时它必须是最后一个值。这意味着虽然你可以重新实现 `shift()` 方法——返回第一个项——但你无法重新实现 `pop()` 方法（后者返回数组的最后一个项）。
+
+```javascript
+const [...beginning, last] = queue;
+// SyntaxError: Rest element must be last element
+```
+
+尽管如此，剩余运算符仍然有用，你会有很多机会将其融入你的代码中。
+
+看看你已经可以用函数做多少更多事情了。而你才刚刚开始。在下一章中，你将超越参数和返回语句，探索如何构建更强大且灵活的函数。
+
+### 注脚
+
+- [[25]](#f_0043.xhtml_FNPTR-25)
+[`docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html`](https://docs.oracle.com/cd/E1997-01/806-3568/ncg_goldberg.html)
+- [[26]](#f_0043.xhtml_FNPTR-26)
+[`flow.org`](https://flow.org)
+- [[27]](#f_0046.xhtml_FNPTR-27)
+[`www.youtube.com/watch?v=DogGMNBZZvg`](https://www.youtube.com/watch?v=DogGMNBZZvg)
+
+Copyright © 2018, The Pragmatic Bookshelf.
+
+# 第 7 章：构建灵活的函数
+
+几年前，《纽约时报》请一位家具制造大师评审来自宜家、Target 以及其他折扣零售的家具。（[[28]](#f_0052.xhtml_FOOTNOTE-28))
+
+意乎意料，这位工匠并没有留下深刻印象。他注意到了木漆处理的问题、会脱出的螺丝以及其他问题。惊讶的是，他注意到了一处掉漆，并断定这件作品是在切割之前就涂了漆，而且切割木材的刀片是钝的。仅仅一片掉落的漆就告诉了他关于制造工艺和所用工具的信息。
+
+某个领域的大师能看到别人看不到的东西。在这一章中，你将学习掌握函数，在这个过程中，你会在代码中看到你可能从未考虑过的想法。问题会消失，新想法会不断涌现。
+
+函数是非常常见的，以至于很容易被忽视。但 JavaScript 中的函数是不同的。你可能认为自己知道如何使用它们，但你会发现它们的能力远超你的而感到惊讶。这一章不是关于基础的，而是关于你如何以以前未探索过的方式使用函数。
+
+你将从学习如何编写可测试的代码开始。可测试的函数更加且易于维护，但学习编写它们需要一些努力。从那里，你将回到箭头函数，看看如何将参数的所有思想应用到单行函数中。接下来，你将深入高阶函数——返回函数的函数——并学习两种帮助你锁定信息以创建清晰、可复函数的技巧。最后，你将回到箭头函数，看看如何用它们来解决一个棘手的上下文问题（如果你没预料它会让你疯掉）。
+
+函数、柯里、高阶函数。这些是让普通的 JavaScript 编写变成狂热者的概念。这些是我最喜欢的语言特性。
+
+当你完成后，你将以全新的视角看待问题。当返回 `undefined` 时，你将不再感到困惑。你会看到一个可以用箭头函数解决的上下文问题。当变量无法访问时，你会看到一个闭包的机会。手工艺看世界的方式是不同的。当你完成函数的掌握后，你将以新的方式看待所有问题。
+
+## 提示 32：编写可测试性的编写函数
+
+我有一位文学教授，他说关于写作的课程没有包含足够的阅读，而阅读的课程没有包含足够的写作。代码和测试也是如此：关于代码的书没有充分讨论测试，而关于测试的书没有充分讨论代码组合。
+
+是时候修复这一点了。测试很重要。如果你没做，你应该做。它让你的代码更容易重构。它让遗留代码更容易理解。并且通常会产生更整洁、Bug 更少的应用程序。
+
+大多数开发者都同意这一点。那么为什么测试被忽视了呢？
+
+很简单。写测试很难。或者准确地说，许多开发者认为写测试很难是因为他们试图为现有代码编写测试。而他们的现有代码与外部依赖紧耦合。
+
+难以测试的代码通常是不必要的复杂。与其为你的代码挣扎测试，不如专注于编写可测试的代码。你的代码将改进，测试将更容易编写，而用户体验保持相同。你无任何损失。
+
+如果你是测试新手，可以查看三个流行的测试框架之一的文档——jasmine^([[29]](#f_0052.xhtml_FOOTNOTE-29))、mocha^([[30]](#f_0052.xhtml_FOOTNOTE-30)) 或 jest^([[31]](#f_0052.xhtml_FOOTNOTE-31))——获取一些快速提示。你也可以查看这本书的代码，它使用 jest 作为运行器实现了近 100% 的代码覆盖。
+
+为了充分利用这个提示，你应该了解 `describe()` 和 `it()` 函数的基础知识以及断言（expectations）。
+
+现在，如何编写可测试的代码？这里有一个函数看起来简单但有一些微妙的复杂性。
+
+[functions/test/problem.js](http://media.pragprog.com/titles/es6tips/code/functions/test/problem.js)
+
+```javascript
+import { getTaxInformation } from './taxService';
+
+function formatPrice(user, { price, location }) {
+  const rate = getTaxInformation(location);
+  const taxes = rate ? `plus ${price * rate} in taxes.` : 'plus tax.';
+  return `${user} your total is: ${price} ${taxes}`;
+}
+```
+
+
+
+
+
+```javascript
+export { formatPrice };
+```
+
+你可能在想，这有什么复杂呢？它只是根据价格计算一些税费信息，并与用户结合创建一个字符串。
+
+测试难度开始于你在第 4 行调用了一个外部函数。注意，你在文件顶部导入了该函数。你将在提示 47 中学习更多关于导入函数的知识，即使用 Import 和 Export 隔离功能，但现在，你只需要知道你正在从文件外部获取内容。
+
+直接使用导入代码的问题在于，该函数现在与被导入的函数紧密耦合了。如果不执行 `getTaxInformation()`，你就无法运行 `formatPrice()`。由于 `getTaxInformation()` 函数可能需要访问外部服务或配置文件，你现在也与网络通信紧密耦合了。这意味着如果你运行测试，该测试也必须访问 API。现在，你的测试依赖于网络访问、响应时间等。再次，这是一个大问题。你只是尝试构建一个字符串。
+
+为了避免这个问题，你可以创建模拟对象（mocks）来拦截导入并显式地设置返回值。以下是当前函数的测试示例。
+
+[functions/test/problem.spec.js](http://media.pragprog.com/titles/es6tips/code/functions/test/problem.spec.js)
+
+```javascript
+import expect from 'expect';
+import sinon from 'sinon';
+import * as taxService from './taxService';
+import { formatPrice } from './problem';
+
+describe('format price', () => {
+  let taxStub;
+
+  beforeEach(() => {
+    taxStub = sinon.stub(taxService, 'getTaxInformation');
+  });
+
+  afterEach(() => {
+    taxStub.restore();
+  });
+
+  it('should return plus tax if no tax info', () => {
+    taxStub.returns(null);
+    const item = { price: 30, location: 'Oklahoma' };
+    const user = 'Aaron Cometbus';
+    const message = formatPrice(user, item);
+    const expectedMessage = 'Aaron Cometbus your total is: 30 plus tax.';
+    expect(message).toEqual(expectedMessage);
+  });
+
+  it('should return plus tax information', () => {
+    taxStub.returns(0.1);
+    const item = { price: 30, location: 'Oklahoma' };
+    const user = 'Aaron Cometbus';
+    const message = formatPrice(user, item);
+    const expectedMessage = 'Aaron Cometbus your total is: 30 plus $3 in taxes.';
+    expect(message).toEqual(expectedMessage);
+  });
+});
+```
+
+棘手的部分从第 11 行开始。你正在创建一个存桩（stub），用一个简单的返回值覆盖掉原始的 `getTaxInformation()` 函数。
+
+当你创建一个存桩时，你绕过了被导入的代码，并在不运行实际代码的情况下声明了输出。优点是，现在你不需要担心任何外部依赖。缺点是，你必须在每个断言中不断地设置和重置返回值。参见第 19 行的示例。
+
+最后，在测试套结束后，你必须恢复代码以使用原始方法。你在第 15 行的 `afterEach()` 方法中执行此操作。恢复代码是至关重要的一步。通过在这个测试集中劫持代码，除非你恢复它，否则你就劫持了所有的测试代码。
+
+我曾经有一个紧密耦合并使用了大量存桩的测试套件。在我更改文件位置之前，一切运行正常。突然之间，测试以不同的顺序运行，许多测试开始失败。我本以为我已经准确地恢复了所有存桩，但那只是一个幻象。测试之所以通过的唯一原因是它们按照特定的顺序运行的。
+
+不要被测试套件的简短所误骗。需要大量外部助手（如间探 spies、模拟对象 mocks 和存桩 stubs）的测试是代码复杂且可能紧密耦合的信号。你应该简化你的代码。
+
+### 存桩 (Stubs)、模拟对象 (Mocks)、间探 (Spies)
+
+即使你尽了努力，最终仍然需要一些助手来测试你的代码。幸运的是，有很多技术可以帮助你。三个主要方法是存桩、模拟对象和间探。
+
+在这个示例中，你正在使用存桩。你覆盖了外部代码并返回一个明确的结果。它被称为存桩是因为你移除了函数所有的底层逻辑，仅声明一个结果。
+
+模拟对象要复杂一些。它们代表它们所替换的对象，你根据它们将收到的消息和对对其调用的方法进行断言。例如，你可能会模拟一个对象，并断言你将在该对象上带上参数 `jabberwocky` 调用 `format()` 方法。
+
+模拟对象和存桩之间的关键区别在于，你在使用模拟对象调用代码之前就设置了预期。Martin Fowler 写了一篇关于模拟对象和存桩区别的好文章[32)
+
+间探类似于模拟对象，但你是在执行代码后检查它们是如何被调用的。如果你调用了 `formatPrice()` 并想确保 `getTaxInformation()` 被带参数 `Iowa` 调用了一次，你会用间探设置存桩，然后在调用 `formatPrice()` 之后对间探进行断言。如果你查看本书的代码，你会偶尔看到间探。
+
+关于模拟对象、间探和存桩的更多信息，Simon Coffey 以 Ruby 为例详细介绍了每种方法[33)
+
+幸运的是，修复紧耦合代码的方法非常简单。你只需要将外部函数作为参数传递。将依赖项作为参数传递被称为依赖注入。
+
+要解耦你的代码，将 `getTaxInformation()` 作为参数传递。你不需要更改代码中的其他任何。
+
+[test.js](http://media.pragprog.com/titles/es6tips/code/functions/test.js)
+
+```javascript
+function formatPrice(user, { price, location }, getTaxInformation) {
+  const rate = getTaxInformation(location);
+  const taxes = rate ? `plus ${price * rate} in taxes.` : 'plus tax.';
+  return `${user} your total is: ${price}${taxes}`;
+}
+```
+
+现在你使用了依赖注入，就不需要存桩了。当你编写测试时，你不需要绕过导入。相反，你传递了一个返回该值的简单函数。这非常像存桩，但没有任何外部依赖。你的函数现在现在接收输入（包括另一个函数）并返回输出。记住，你并不是在测试 `getTaxInformation()`。你是在测试 `formatPrice()` 在给定输入的情况下是否会返回特定的结果。
+
+这里是你的测试：
+
+[test.spec.js](http://media.pragprog.com/titles/es6tips/code/functions/test/test.spec.js)
+
+```javascript
+import expect from 'expect';
+import { formatPrice } from './test';
+
+describe('format price', () => {
+  it('should return plus tax if no tax info', () => {
+    const item = { price: 30, location: 'Oklahoma' };
+    const user = 'Aaron Cometbus';
+    const message = formatPrice(user, item, () => null);
+    expect(message).toEqual('Aaron Cometbus your total is: 30 plus tax.');
+  });
+});
+```
+
+
+
+
+
+```javascript
+const message = formatPrice(user, item, () => 0.1);
+
+expect(message).toEqual('Aaron Cometbus your total is: 30 plus $3 in taxes.');
+```
+
+请注意，除了你要测试的函数和 `expect` 库之外，你不需要任何其他东西。测试编写起来要简单得多，而且能更好地帮助你的代码实现单一职责原则。
+
+你可能会认为依赖注入并没有解决问题——它只是将问题转移到了另一个函数。
+
+确实如此。你的代码中不可避免会有某些副作用和一些输入/输出。编写可测试代码的诀窍是将这些内容减少到尽可能少的地方。
+
+例如，你可以将所有的 AJAX 调用移动到服务中。这样，当你需要在某个函数中使用它们时，可以注入一个易于测试的服务，而不是尝试去模拟 AJAX 响应（这非常困难）。
+
+需要了解的一点是，人们普遍认为编写测试很困难。这并非事实。如果一个测试很难编写，请花时间重新思考你的代码。如果你的代码易于测试，你应该修改代码，而不是修改测试。
+
+当你遇到其他问题时，不要感到沮丧。紧耦合的代码只是复杂性的一种形式。还有许多其他代码气味——即技术上正确但看起来并不清晰的代码——会溜入测试中。Joshua Mock 就 JavaScript 测试的某些其他问题写过的一很好的文章，值得一读以获取更多信息。
+
+你能做的最好的事情就是从今天开始编写测试。如果你需要更多示例，请查看此书的代码。它拥有近 100% 的测试覆盖率，并包含了各种测试（包括一些使用了 mocks 和 spies 的测试）。如果你想学习更多，请查阅 *Test Driving JavaScript Applications*。
+
+在下一个小提示中，我们将通过进一步探索箭头函数，回到编写函数的细节。
+
+## 提示 33：使用箭头函数降低复杂度
+
+在本次提示中，你将学习如何使用箭头函数对参数进行解构、返回对象以及构建高阶函数。
+
+你已经在提示 20 中探索过箭头函数，即 *使用箭头函数简化循环*。现在是时候进行更深层次的探索了。
+
+提醒一下，箭头函数允许你移除冗余信息，例如函数声明、括号、return 语句，甚至大括号。现在你将看到如何处理刚刚学到的更多概念，例如解构。你还将接触到将在未来提示中进一步探索的新思想。
+
+让我们从解构开始。你将获取一个有一个名和姓的对象，并将它们合并成字符串。没有比这更简单的了。
+
+`functions/arrow/problem.js`
+
+```javascript
+const name = {
+  first: 'Lemmy',
+  last: 'Kilmister',
+};
+
+function getName({ first, last }) {
+  return `${first} ${last}`;
+}
+```
+
+这应该很容易转换为箭头函数。除了参数和模板字面量之外移除所有内容。添加一个胖箭头 `=>`，你就完成了。
+
+并不完全。除了参数外一切都相同。当你使用任何特殊的参数操作——解构、剩余参数、默认参数时——你仍然需要包含括号。
+
+这听起来很平凡，但如果你没有意识到，它会让你碰壁。JavaScript 引擎很难判断你是在进行函数声明而不是对象声明。你会得到这样的错误：
+
+`functions/arrow/close.js`
+
+```javascript
+const getName = { first, last } => `${first} ${last}`;
+
+// Error: Unexpected token '=>'. Expected ';' after variable declaration
+```
+
+这还是你运气好的时候。如果你在 Node.js REPL 中尝试这样做，它会一直挂起，就像你忘记添加闭合大括号一样。这可能会非常困惑。
+
+解决方案很简单：如果你使用任何特殊参数，只需像往常一样将参数包裹在括号中。
+
+`functions/arrow/arrow.js`
+
+```javascript
+const comic = {
+  first: 'Peter',
+  last: 'Bagge',
+  city: 'Seattle',
+  state: 'Washington',
+};
+
+const getName = ({ first, last }) => `${first} ${last}`;
+getName(comic);
+// Peter Bagge
+```
+
+如果你返回一个对象，在省略 return 语句时必须小心。因为箭头函数无法判断大括号是用于对象还是包裹函数体，你需要通过将整个内容包裹在括号中来指示返回对象。
+
+`functions/arrow/arrow.js`
+
+```javascript
+const getFullName = ({ first, last }) => ({ fullName: `${first} ${last}` });
+getFullName(comic);
+// { fullName: 'Peter Bagge' }
+```
+
+变得更棒了。当你使用括号返回值时，你不局限于单行。你可以在返回多行项目的同时仍然省略 return 语句。
+
+`functions/arrow/arrow.js`
+
+```javascript
+const getNameAndLocation = ({ first, last, city, state }) => ({
+  fullName: `${first} ${last}`,
+  location: `${city}, ${state}`,
+});
+getNameAndLocation(comic);
+// {
+// fullName: 'Peter Bagge',
+// location: 'Seattle, Washington'
+// }
+```
+
+最后，箭头函数是创建高阶函数（返回其他函数的函数）的好方法。你将在接下来的提示中探索高阶函数，现在我们先看看如何构建它们。
+
+`functions/arrow/problem.js`
+
+```javascript
+const discounter = discount => {
+  return price => {
+    return price * (1 - discount);
+  };
+};
+
+const tenPercentOff = discounter(0.1);
+tenPercentOff(100);
+// 90
+```
+
+`functions/arrow/arrow.js`
+
+```javascript
+const discounter = discount => price => price * (1 - discount);
+
+const tenPercentOff = discounter(0.1);
+tenPercentOff(100);
+// 90
+```
+
+
+
+
+
+[functions/arrow/arrow.js](http://media.pragprog.com/titles/es6tips/code/functions/arrow/arrow.js)
+
+```javascript
+discounter(0.1)(100);
+// 90
+```
+
+在下一个技巧提示中，你将通过学习如何创建单一职责参数，来了解为什么使用高阶函数来保持参数分离是如此具有变革性的改变。
+
+## 技巧 34：使用部分应用函数维护单一职责参数
+
+在本次提示中，你将学习如何通过部分应用函数让参数关注点集中。
+
+在上一个技巧中，你已经看到了如何使用箭头函数轻松地创建高阶函数。如果你有面向对象的编程背景，或者没有见过太多使用高阶函数的代码，可能在理解何时该使用高阶函数时遇到困难。
+
+高阶函数通过锁定参数提供了独特的价值，你可以稍后完成函数，同时仍然保持对原始参数的访问。它们还可以隔离参数，让你保持意图的清晰。在下一个技巧提示中，你将看到更多关于锁定参数数据的内容。而在本次提示中，你将看到如何利用高阶函数赋予参数单一职责。
+
+高阶函数是一个返回另一个函数的函数。这意味着在函数完全解析之前，你至少会有两轮参数。通过部分应用函数（partially applied function），你传递一些参数，并返回一个函数，该函数在锁定这些参数的同时接收更多的参数。换句话说，部分应用函数减少了函数的参数总数（也称为“元数”，arity），同时给你提供另一个还需要几个参数的函数。
+
+核心要点是，你可以拥有多组相互独立的参数。也许你认为参数已经具有单一职责了。毕竟，它们是函数的输入数据，因此它们之间必须相互关联。确实如此，但即使是输入也有不同的关系。某些输入之间是相关的，而另一些则更加独立。
+
+想一下网站上的活动页面。某个活动将在特定的空间发生。每个活动都是独特的，但空间在活动之间不会发生剧烈变化。地址、名称、建筑开放时间等都是相同的。此外，空间由人员（即联系人）管理，他们之间的活动之间很少改变。
+
+考虑到这一点，考虑一个需要在页面上结合空间信息、空间管理员信息和活动信息的函数。你可能会从不同的来源获取每条信息，并需要将它们组合以返回完整信息。
+
+这里是你将收到的数据示例。建筑有地址和开放时间。管理员有姓名和电话。然后你有两种活动类型。第一种是计划（program），将有一个特定的时间范围，比建筑的开放时间短。第二种是展览（exhibit），只要建筑开放它就开放，但需要策员作为联系人。
+
+[functions/partial/partial.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/partial.js)
+
+```javascript
+const building = {
+  hours: '8 a.m. - 8 p.m.',
+  address: 'Jayhawk Blvd',
+};
+
+const manager = {
+  name: 'Augusto',
+  phone: '555-555-5555',
+};
+
+const program = {
+  name: 'Presenting Research',
+  room: '415',
+  hours: '3 - 6',
+};
+
+const exhibit = {
+  name: 'Emerging Scholarship',
+  contact: 'Dyan',
+};
+```
+
+此时，你只需要编写一个简单的函数，接收三个参数——`building`、`manager`、`program/event`——并将它们合并成一组信息。
+
+[functions/partial/problem.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/problem.js)
+
+```javascript
+function mergeProgramInformation(building, manager, program) {
+  const { hours, address } = building;
+  const { name, phone } = manager;
+  const defaults = {
+    hours,
+    address,
+    contact: name,
+    phone,
+  };
+
+  return { ...defaults, ...program };
+}
+```
+
+注意，每当你为一个建筑调用函数时，都必须传递相同的第一个参数。函数调用是重复的。
+
+[functions/partial/problem.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/problem.js)
+
+```javascript
+const programInfo = mergeProgramInformation(building, manager, program);
+const exhibitInfo = mergeProgramInformation(building, manager, exhibit);
+```
+
+这种重复性是一个线索，表明你的函数有一个自然的划分。前两个参数为建筑建立了一个基准，然后该基准应用于一系列计划和展览。
+
+高阶函数可以创建单一职责参数，允许你复用前两个参数。第一组参数的职责是收集基准数据。第二组将是覆盖基准的自定义信息。
+
+为了实现这一点，你需要让顶层函数只接收两个参数——`building` 和 `manager`——并让它返回一个只接收一个参数的函数——`program`（可以是计划、活动、展览等）。
+
+[functions/partial/partial.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/partial.js)
+
+```javascript
+function mergeProgramInformation(building, manager) {
+  const { hours, address } = building;
+  const { name, phone } = manager;
+  const defaults = {
+    hours,
+    address,
+    contact: name,
+    phone,
+  };
+
+  return program => {
+    return { ...defaults, ...program };
+  };
+}
+```
+
+这看起来可能很令人生畏，但实际上很简单。再次，高阶函数只是一个在完全解析之前需要多次调用的函数。仅此而已。要在单调用中调用函数的两个部分，你只需要紧接着放置括号即可。这会调用外部函数，然后立即调用内部函数。结果与之前相同。
+
+[functions/partial/partial.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/partial.js)
+
+```javascript
+const programInfo = mergeProgramInformation(building, manager)(program);
+// {
+// name: 'Presenting Research',
+// room: '415',
+// hours: '3 - 6',
+// address: 'Jayhawk Blvd',
+// contact: 'Augusto',
+// phone: '555-555-5555'
+// }
+
+const exhibitInfo = mergeProgramInformation(building, manager)(exhibit);
+// {
+// name: 'Emerging Scholarship',
+// contact: 'Dyan',
+// hours: '8 a.m. - 8 p.m.',
+// address: 'Jayhawk Blvd',
+// phone: '555-555-5555'
+// }
+```
+
+你可能已经赋予了参数单一职责，但这并没有消除重复。庆幸的是，通过部分应用，你也可以解决那个问题。在下一个技巧提示中，你将看到如何复用返回的函数。
+
+最后，还有另一个使用部分应用和高阶函数来赋予参数单一职责的原因：你可以复用剩余参数运算符（rest operator）。
+
+
+
+
+
+正如你可能在 Tip 31 中记得的那样，使用剩余运算符传递任意数量参数，在剩余参数之后不能有任何其他内容。换句话说，在一组参数中，你只能有一个剩余参数。这在大多数情况下没问题，但偶尔你可能会遇到需要多个剩余参数的情况。
+
+当你拥有一组数据数组，并且另一组与原始数据有一一对应关系的额外数据时，这种情况就会经常出现。
+
+例如，如果你有一个函数接收一个状态数组并返回对应的州鸟数组，生成的数组很不错，但你最终可能需要将原始数据和结果连接起来，形成一个优的配对数组。
+
+[functions/partial/partial.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/partial.js)
+
+```javascript
+const birds = getBirds('kansas', 'wisconsin', 'new mexico');
+// ['meadowlark', 'robin', 'roadrunner']
+```
+
+将两个数组合并成对是非常常见的操作，它有一个专门的名称：“zip”（压缩）。
+
+要编写一个可以接受多个参数的 zip 函数，你需要编写一个高阶函数，它接收原始数组（称为 `left`），返回一个接收结果数组（`right`）的函数，并将它们合并。你猜怎么着？因为参数是独立的，你可以两次都使用剩余参数。
+
+[functions/partial/partial.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/partial.js)
+
+```javascript
+const zip = (...left) => (...right) => {
+  return left.map((item, i) => [item, right[i]]);
+};
+zip('kansas', 'wisconsin', 'new mexico')(...birds);
+// [
+// ['kansas', 'meadowlark'],
+// ['wisconsin', 'robin'],
+// ['new mexico', 'roadrunner']
+// ]
+```
+
+这不是一种你会经常使用的技巧，但当你想要保持接口清晰时，它非常有价值。有时参数并不属于在一起，但你仍然需要所有信息。部分应用函数（Partially applied functions）是不费费力组合参数的极佳方法。
+
+在下一个 tip 中，你将更进一步，学习如何调用一次函数来捕获信息，然后反复使用它。
+
+### Tip 35：结合柯里化和数组方法进行部分应用
+
+在这个 tip 中，你将学习如何通过函数的部分应用来锁定变量。
+
+在上一个 tip 中，你已经了如何通过高阶函数和部分应用赋予参数单一的职责。它解决了参数不相关的问题，但没有解决反复使用相同参数的问题。你仍然多次传入了相同的参数。
+
+通过高阶函数，你可以创建一个锁定了某些值的新函数并在稍后使用它，从而避免重复。当你返回一个高阶函数时，你不需要立即调用它。在调用一次后，你就得到了另一个可以反复使用的预制函数。它就像是你编写时已经硬编码了参数的一样。
+
+为了复用上一个 tip 中的建筑和管理器，你可以将第一次函数调用的返回值赋值给变量。你现在拥有了一个锁定了某些信息的预构建函数。
+
+调用它一次并复用捕获的参数，与在已知内部变量的情况下声明一个函数没有区别。它们是等价的。
+
+[functions/partial/program.js](http://media.pragprog.com/titles/es6tips/code/functions/partial/program.js)
+
+```javascript
+const setStrongHallProgram = mergeProgramInformation(building, manager);
+const programInfo = setStrongHallProgram(program);
+const exhibitInfo = setStrongHallProgram(exhibit);
+```
+
+[functions/curry/higherorder.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/higherorder.js)
+
+```javascript
+const setStrongHallProgram = program => {
+  const defaults = {
+    hours: '8 a.m. - 8 p.m.',
+    address: 'Jayhawk Blvd',
+    name: 'Augusto',
+    phone: '555-555-5555'
+  }
+  return { ...defaults, ...program}
+};
+const programs = setStrongHallProgram(program);
+const exhibit = setStrongHallProgram(exhibit);
+```
+
+你通过高阶函数的部分应用构建了第一个函数。你通过硬编码信息构建了第二个函数。一个接受两轮参数的高阶函数会比硬编码信息的函数更灵活，但思考它们的相似之处是有帮助的。
+
+你知道高阶函数可以保持参数分离，但它们还有一个更重要的用途：分离参数，以便在函数完全解析之前减少它所需的参数数量。构建一次只接受一个参数的函数被称为“柯里化”（currying），当你处理处理只传递一个参数的方法时，这是一种无价之宝的技巧。尽管 JavaScript 并不完全支持纯形式的柯里化，但通过对函数进行部分应用将参数减少为一系列单参数是很常见的。
+
+### 柯里化与部分应用
+
+部分应用函数可以接受多轮参数。这经常与柯里化混淆。诚然，柯里化和部分应用非常相似，但它们是不同的。
+
+部分应用函数和柯里化函数都通过返回比原始参数更少的函数来减少参数数量。一个函数完全解析所需的参数总数称为 `arity`（元数）。部分应用函数返回的函数 `arity` 比原始函数小。如果你总共需要三个参数并传递了两个，那么返回的函数只需要一个参数。原始函数的总 `arity` 为三。通过部分应用，你返回了一个 `arity` 为一的函数。
+
+相比之下，柯里化是指你取一个需要多个参数的函数，并返回一系列恰好接受一个参数的函数。如果你有一个需要三个参数才能解析的函数，你需要一个接受一个参数的高阶函数，该函数返回一个接受一个参数的函数，后者再返回一个接受一个参数的函数并最终完成解析。
+
+回想你在 Tip 22 中过滤狗数组时，使用 map() 创建相似大小的数组。在那时，你只添加了过滤器——你从未应用过它们。这里是你的狗数组的一个稍修改的版本。
+
+[functions/curry/curry.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/curry.js)
+
+```javascript
+const dogs = [
+  {
+    name: 'max',
+    weight: 10,
+    breed: 'boston terrier',
+    state: 'wisconsin',
+    color: 'black'
+  },
+  {
+    name: 'don',
+    weight: 90,
+    breed: 'labrador',
+    state: 'kansas',
+    color: 'black'
+  },
+  {
+    name: 'shadow',
+    weight: 40,
+    breed: 'labrador',
+    state: 'wisconsin',
+    color: 'chocolate'
+  }
+];
+```
+
+尝试编写一个函数，接收 dogs 和一个过滤器，并只返回符合过滤器的狗的名字。
+
+将 dogs 作为第一个参数，并使用数组方法的组合——`filter()` 和 `map()`——获取最终的结果集。
+
+[functions/curry/problem.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/problem.js)
+
+```javascript
+function getDogNames(dogs, filter) {
+  const [key, value] = filter;
+  return dogs
+    .filter(dog => dog[key] === value)
+}
+```
+
+
+
+
+```javascript
+.map(dog => dog.name);
+}
+
+getDogNames(dogs, ['color', 'black']);
+// ['max', 'don']
+```
+
+这个函数看起来很不错，但实际上局限性很大。存在两个问题。
+
+首先，你的过滤函数（filter function）受到了限制。它只有在对过滤器和每只狗进行精确比较时才有效。换句话说，它只有在使用 `===` 时才有效。如果你需要进行不同的比较，例如找到所有低于特定重量的狗，该怎么办？
+
+其次，`map` 与所有数组方法一样，只能接受一个参数——即被检查的项——因此你必须以某种方式让其他变量进入作用域。由于 `map` 是另一个函数内部的函数，它可以访问包装函数中的变量。这意味着你需要考虑如何将这些变量作为参数传递给外部函数。
+
+从尝试解决第一个问题开始。重写该函数，以便你能够找到所有低于特定重量的狗。正如你在提示 32 中所见的，编写编写可测试的函数，你可以将函数注入到其他函数中。从这里开始。不要硬编码比较函数，而是将过滤函数作为回调函数传递。
+
+[functions/curry/curry.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/curry.js)
+
+```javascript
+function getDogNames(dogs, filterFunc) {
+  return dogs
+    .filter(filterFunc)
+    .map(dog => dog.name)
+}
+
+getDogNames(dogs, dog => dog.weight < 20);
+// ['max']
+```
+
+你已经成功了一半，但你仍然被迫硬编码一个值，在这种情况下是数字 20。这意味着你仍然需要手动编写该值，或者在使用变量时确保没有作用域冲突。这看起来可能不是什么大问题，但作用域冲突会在你最意想不到的时候溜入。在函数中注入值比信任它们能够在运行时访问上层作用域的变量要好得多。
+
+目标是拥有一个锁定了一些值的应用函数（partially applied function）。你可以将部分应用函数赋值给变量并将其作为数据传递给另一个函数，该函数可以提供剩余的参数。
+
+此时，你甚至不需要重写你的 `getDogNames()` 函数。它接受任何比较函数，所以你已经准备就绪。你需要做的是重写你的比较函数，以便你不需要硬编码比较值。
+
+使用上一个提示中的技术创建两组参数——第一个参数将是重量，第二组将是单只狗。
+
+现在，你可以先用一个重量应用函数，再用另一个重量应用一次。实际数字将锁定在函数中。这意味着你可以反复使用不同的重量该函数。作用域冲突的概率会低得多。
+
+[functions/curry/curry.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/curry.js)
+
+```javascript
+const weightCheck = weight => dog => dog.weight < weight;
+
+getDogNames(dogs, weightCheck(20));
+// ['max']
+
+getDogNames(dogs, weightCheck(50));
+// ['max', 'shadow']
+```
+
+通过对函数进行柯里化（currying），你使得可以在不同点传递多个参数。你还可以将函数作为数据到处传递。
+
+最棒的部分是，你不需要局限于两个函数和两组参数。如果你想使用柯里化来重写原始的比较函数呢？
+
+首先，你传入你想要比较的字段，例如颜色。在下一个函数中，你传入你想要比较的值，例如黑色。最后一个函数接收单只狗。
+
+结果是一组你使用相同逻辑但不同参数构建的比较结果集。
+
+[functions/curry/curry.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/curry.js)
+
+```javascript
+const identity = field => value => dog => dog[field] === value;
+const colorCheck = identity('color');
+const stateCheck = identity('state');
+
+getDogNames(dogs, colorCheck('chocolate'));
+// ['shadow']
+
+getDogNames(dogs, stateCheck('kansas'));
+// ['don']
+```
+
+现在想一下你创建了什么。你将一个具有特定要求的函数变成了一个可以处理许多不同比较的抽象内容。因为你可以将部分应用函数赋值给变量，它们现在只是你可以到处传递的另一部分数据。这意味着你可以使用一组小而简单的工具构建非常复杂的比较。
+
+例如，如果你只想要符合每项标准的狗，可以传递一个检查数组并使用 `every()` 数组方法，如果所有值都返回 true，则该方法返回 true。
+
+如果你只想要符合至少一个标准的狗，你可以写一个使用 `some()` 数组方法的函数，如果任何值返回 true，则该方法返回 true。
+
+[functions/curry/curry.js](http://media.pragprog.com/titles/es6tips/code/functions/curry/curry.js)
+
+```javascript
+function allFilters(dogs, ...checks) {
+  return dogs
+    .filter(dog => checks.every(check => check(dog)))
+    .map(dog => dog.name)
+}
+
+allFilters(dogs, colorCheck('black'), stateCheck('kansas'));
+// ['shadow']
+```
+
+这让你感到头晕转向吗？希望没有。将代码复制到 REPL 中并尝试玩玩它。这是学习最好的方法。只需记住：如果你有无法接受超过一个参数的函数，柯里化是一个很棒的工具。它让原本复杂的问题变得非常简单。
+
+在下一个提示中，你将看到一个与作用域相关的问题——上下文（context）。
+
+## 使用箭头函数防止混淆
+
+作用域和上下文可能是 JavaScript 开发者最困惑的两个概念。一个函数的作用域，简单来说，就是函数可以访问的变量。我们之前在提示 3 中探讨过这一点，使用块级作用域变量隔离信息。现在你将学习上下文。上下文就是 `this` 关键字在函数或类中指代的内容。
+
+这两个概念不仅难以理解，而且人们经常混淆它们。我知道我经常搞混它们。Ryan Morr 提供了一个简单的方法来记忆它们的区别：作用域关乎函数，而上下文关乎对象。³⁶ 虽然这不是 100% 准确的——你可以在任何函数中使用 `this`——但它是一个很好的通俗规则。
+
+要理解上下文，从一个非常简单的对象开始。例如，想想一个名为 `Validator` 的对象，它在表单字段上设置无效性消息。你有一个属性 `message` 和一个方法 `setInvalidMessage()`。
+
+在 `setInvalidMessage()` 方法中，你可以使用 `this.message` 来引用 `message` 属性。要看到它的实际效果，请从对象调用该方法。
+
+[functions/context/basic.js](http://media.pragprog.com/titles/es6tips/code/functions/context/basic.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessage(field) {
+    return `${field} ${this.message}`;
+  },
+};
+
+validator.setInvalidMessage('city');
+// city is invalid.
+```
+
+
+
+
+如你所见，`this.message` 指的是对象上的属性。之所以这样做有效，是因为当从对象调用该方法时，函数会创建一个以包含的对象为上下文的 `this` 绑定。
+
+现在，在你继续操作之前，你应该知道围绕 `this` 关键字的概念非常复杂。在 *You Don’t Know JS* Sim14 系列中，有一整本书专门讨论这个主题。这本书是 JavaScript 开发者的必读读物，在这一小技巧中是不可能涵盖同等水平的信息的。相反，你将看到最常见的上下文错误之一。
+
+在对象上使用 `this` 通常没有问题，直到你尝试将一个函数作为其他函数的调（callback）使用。
+
+例如，当你在使用 `setTimeout()`、`setInterval()` 或你喜欢的数组方法（如 `map()` 或 `filter()`）时，你会遇到关于 `this` 的问题。这些函数每个都接收一个回调函数，正如你将看到的，这会改变回调函数的上下文。
+
+如果你尝试重构你的 `setInvalidMessage()` 方法，使用 `map()` 接收一个字段数组并添加消息，认为会发生什么？代码更改并不复杂。创建一个名为 `setInvalidMessages()` 的新方法，遍历数组并为每个元素添加消息。
+
+[functions/context/problem.js](http://media.pragprog.com/titles/es6tips/code/functions/context/problem.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessages(...fields) {
+    return fields.map(function (field) {
+      return `${field} ${this.message}`;
+    });
+  },
+};
+```
+
+问题在于，当你调用该函数时，将得到 `TypeError` 或 `undefined`。这就是大多数开发者感到沮丧并重构代码以移除对 `this` 引用的原因。
+
+[functions/context/context.spec.js](http://media.pragprog.com/titles/es6tips/code/functions/context/context.spec.js)
+
+```javascript
+validatorProblem.setInvalidMessages(field);
+// TypeError: Cannot read property 'message' of undefined
+```
+
+思考一下是什么导致这个问题。记住，每当你调用一个函数时，它都会根据调用的位置创建一个 `this` 绑定。`setInvalidMessage()` 是在对象的上下文中调用的。`this` 上下文是该对象。`map` 函数的回调是在 `map()` 方法的上下文调用的，因此 `this` 绑定不再是 `Validator` 对象。它实际上将是全局对象：在浏览器中是 `window`，在 REPL 环境中是 Node.js 环境。回调无法访问 `message` 属性。
+
+这就是箭头函数（arrow functions）派上用场的地方。使用箭头函数时，它们不会创建新的 `this` 绑定。如果你使用箭头函数重写前面的 `map()` 回调，一切将如预期般运行。
+
+[functions/context/context.js](http://media.pragprog.com/titles/es6tips/code/functions/context/context.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessages(...fields) {
+    return fields.map(field => {
+      return `${field} ${this.message}`;
+    });
+  },
+};
+
+validator.setInvalidMessages('city');
+// ['city is invalid.]
+```
+
+现在这看起来很棒，似乎是始终使用箭头函数的理由。但请记住，有时你确实想设置一个 `this` 上下文。
+
+例如，如果你编写原始的 `setInvalidMessage()` 方法时不是作为一个命名方法，而是赋值给属性的箭头函数会怎样？
+
+[functions/context/method.js](http://media.pragprog.com/titles/es6tips/code/functions/context/method.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessage: field => `${field} ${this.message}`,
+};
+```
+
+当你调用它时，会得到相同的 `TypeError`。
+
+[functions/context/context.spec.js](http://media.pragprog.com/titles/es6tips/code/functions/context/context.spec.js)
+
+```javascript
+validatorMethod.setInvalidMessage(field);
+// TypeError: Cannot read property 'message' of undefined
+```
+
+在这种情况下，你没有为当前对象创建新的 `this` 上下文绑定。因为你没有创建新的上下文，你仍然绑定到全局对象。
+
+总结来说，当你已经有一个上下文并想在另一个函数内部使用该函数时，箭头函数是非常棒的。当你需要设置新的 `this` 绑定时，它们就会成为问题。
+
+这不是你最后一次看到它。它在类中起着重要作用，上下文绑定将在技巧 42 中再次出现，使用 bind() 解析上下文问题。
+
+下一章将探索 JavaScript 中的类。如果你来自面向对象的编程背景，你会看到很多熟悉的内容，以及很多你始乎意料的内容。
+
+### 脚注
+
+[28
+
+[`www.nytimes.com/2005/10/20/garden/cheap-its-chic-but-is-it-good.html`](http://www.nytimes.com/2005/10/20/garden/cheap-its-chic-but-is-it-good.html)
+
+[29
+
+[`jasmine.github.io`](https://jasmine.github.io)
+
+[30
+
+[`mochajs.org`](https://mochajs.org)
+
+[31
+
+[`facebook.github.io/jest/`](https://facebook.github.io/jest/)
+
+[32
+
+[`martinfowler.com/articles/mocksArentStubs.html`](https://martinfowler.com/articles/mocksArentStubs.html)
+
+[33
+
+[`about.futurelearn.com/blog/stubs-mocks-spies-rspec`](https://about.futurelearn.com/blog/stubs-mocks-spies-rspec)
+
+[34
+
+[`www.toptal.com/javascript/writing-testable-code-in`](https://www.toptal.com/javascript/writing-testable-code-in)
+
+
+
+
+请记住，JavaScript 中的类有些不同，但它们仍然保留了类语法的许多优势——以及一些问题。类将帮助你组织代码、构建对象的新实例并存储本地属性。只需记住，JavaScript 是一门自自己的语言，拥有独特的历史和范式。学习如何使用类来融合你现有的 JavaScript 和其他面向对象语言的知识。
+
+## 技巧 37：构建可读的类
+
+在这一技巧中，你将学习如何在 JavaScript 中创建可扩展的类。
+
+对 JavaScript 长期以来的批评之一是它缺乏类语法法。嗯，它现在有了！但它的出现并非没有争议。类的支持者认为，这是一种常见的开发范式，对于其他语言的开发者来说非常熟悉。怀疑者则认为它掩盖了语言的底层本质，并助长了坏习惯。
+
+就像许多争议一样，这种辞藻有些过度了。类现在是 JavaScript 的一部分，如果你使用 Angular 或 React 等任何流行的框架，你就会会在代码中引入它们。这是很棒的。
+
+正如你在技巧 39 中看到的，使用类扩展现有的原型，基础语言并没有改变。JavaScript 仍然是一种基于原型的语言。现在你有了熟悉的语法来掩盖略显复杂的概念。结果就是，产生了一些惊喜。
+
+在这一技巧中，你将快速了解如何在 JavaScript 中编写类。如果你在任何其他语言中写过类，那么这个接口应该看起来非常熟悉。
+
+首先，创建一个名为 `Coupon` 的类。你使用 `class` 关键字声明类。然后你可以使用 `new` 关键字创建新实例。
+
+[classes/constructor/problem.js](http://media.pragprog.com/titles/es6tips/code/classes/constructor/problem.js)
+
+```javascript
+class Coupon {
+}
+
+const coupon = new Coupon();
+```
+
+当你创建一个类的实例时，你做的第一件事是运行一个构造函数，它可以定义数量的属性。你并不被强制声明一个构造函数，但它是你声明属性的地方，因此在大多数情况下你都会写一个。
+
+下一步是创建一个构造方法。你需要将其命名为 `constructor()`。使用看起来像函数语法的方法将其添加到类中，但不需要使用 `function` 关键字。因为构造函数是一个函数，你可以传递任意数量的参数。
+
+构造函数的工作部分是创建一个 `this` 上下文。在构造函数内部，你通过将键赋值给 `this` 给类添加属性，就像向对象添加键值对一样。因为你可以向构造函数传递参数，你可以在创建新实例时动态地设置属性。目前，你需要在构造函数内部设置所有属性。这在未来可能会改变。
+
+现在，在你的 `Coupon` 上设置两个属性：`price` 和 `expiration`。设置属性后，你可以使用熟悉的点符号语法甚至是数组语法来调用它们。记住这仍然是 JavaScript，你仍然在处理对象。
+
+[classes/constructor/constructor.js](http://media.pragprog.com/titles/es6tips/code/classes/constructor/constructor.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'two weeks';
+  }
+}
+
+const coupon = new Coupon(5);
+coupon.price; // 5
+coupon['expiration']; // 'Two Weeks'
+```
+
+注意，你没有将属性声明为公共或私有。目前，一切都是公开的。私有字段——属性或方法——正在通过 TC39 委员会的审核。
+
+类和对象实例变得稍微有趣了一点，但它们仍然做不了什么。下一步是添加两个简单的方法：`getPriceText()` 返回一个格式化的价格，以及 `getExpirationMessage()` 获取一个格式化的消息。
+
+你可以使用与构造函数相同的语法添加方法。这些方法将是普通函数，而不是箭头函数。这看起来可能不是大事，但箭头函数在类中的行为与普通函数不同，正如你在技巧 36 中看到的使用箭头函数防止上下文混淆。你将在技巧 42 中看到看到如何在类中使用箭头函数，使用 bind() 解析上下文问题。
+
+说到上下文。如果你直接在类的实例上调用方法，你对 `this` 上下文有完全访问权限。这在大多数情况下将按预期工作。你将在接下来的技巧中看到异常。
+
+这意味着你可以创建引用属性或其他方法的方法。
+
+[classes/constructor/methods.js](http://media.pragprog.com/titles/es6tips/code/classes/constructor/methods.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'two weeks';
+  }
+
+  getPriceText() {
+    return `$${this.price}`;
+  }
+
+  getExpirationMessage() {
+    return `This offer expires in ${this.expiration}.`;
+  }
+}
+
+const coupon = new Coupon(5);
+coupon.getPriceText(); // '$5'
+coupon.getExpirationMessage(); // 'This offer expires in two weeks.'
+```
+
+现在你已经有一个基础但实用的类，你可以使用一个设置了 `this` 绑定的构造函数创建一个新对象。你可以调用方法并访问属性。而且一切使用直观的接口。基础是熟悉的，但重要的是要注意细节，特别是设置属性时。你正在构建对象，所以你会遇到上下文和作用域问题。
+
+在下一个技巧中，你将看到如何使用继承在类之间共享代码。
+
+## 技巧 38：通过继承共享方法
+
+在这一技巧中，你将学习如何扩展类并调用父方法。
+
+在上一个技巧中，你学习了如何创建带有属性和方法的类类。你可能记得 JavaScript 中的类是备受期待又令人担忧的。争议的核心在于继承。
+
+在早期版本的 JavaScript 中，继承方法是一个相当复杂的过程。首先，你必须遍历对象的属性；然后你需要检查每个属性是否专门存在于对象上而不是对象的原型上。接着在添加更多方法之前，你必须将父原型拷贝到新对象。
+
+这很难。
+
+有了类，继承变得简单了。然而，近年来 JavaScript 开发者对继承产生了反感。他们认为过多的继承是一件坏事，会导致代码膨肿。其他不需要继承的方法共享技术（例如组合）。换句话说，请谨慎使用继承。
+
+继承是如何工作的？回到你的 `Coupon` 类。假设你想要一个折扣更深但时间更短的 `FlashCoupon`。要创建该类，只需声明一个名为 `FlashCoupon` 的新类，使用 `extends` 关键字继承 `Coupon` 类。
+
+你的新 `FlashCoupon` 类继承了所有现有属性和方法。例如，你可以访问 `price` 和 `getPriceText()` 方法。
+
+[classes/extend/basic.js](http://media.pragprog.com/titles/es6tips/code/classes/extend/basic.js)
+
+```javascript
+import Coupon from './extend';
+
+class FlashCoupon extends Coupon {
+}
+```
+
+
+
+
+```javascript
+const flash = new FlashCoupon(10);
+
+flash.price;
+// 10
+
+flash.getPriceText();
+// "$ 10"
+```
+
+当然，如果你不添加新的属性或方法，那么继承代码确实没有意义。为了让这个优惠券与众不同，添加一个新的默认过期时间。将新的默认过期时间从“两周”改为“两小时”。
+
+要此更改，设置一个接收价格和过期期的构造函数，就像你在父类中做的那样。在这个构造函数中，你需要调用 `super()`来访问父构造函数。`super()` 会调用父构造函数，因此传递父构造函数所需的任何参数。在这种情况下，你需要将 `price` 传递给父构造函数。之后，你可以设置任何新属性或覆盖父构造函数可能设置的任何属性。
+
+对于 `FlashCoupon`，你设置了 `expiration`，但你不需要担心设置 `price`。父构造函数会处理这一点。
+
+[classes/extend/constructor.js](http://media.pragprog.com/titles/es6tips/code/classes/extend/constructor.js)
+
+```javascript
+import Coupon from './extend';
+class FlashCoupon extends Coupon {
+  constructor(price, expiration) {
+    super(price);
+    this.expiration = expiration || 'two hours';
+  }
+}
+
+const flash = new FlashCoupon(10);
+
+flash.price;
+// 10
+
+flash.getExpirationMessage();
+// "This offer expires in two hours"
+```
+
+你正在使用父类的 `getExpirationMessage()` 方法，但使用的是子类的 `expiration` 属性。当你调用 `getExpirationMessage()` 时，你将看到带有新默认过期期的熟悉消息。
+
+当然，你可能不喜欢那条消息。毕竟这是一种闪购优惠券。你应该提醒用户这种优惠券是特殊的。每当你调用一个方法时，JavaScript 引擎会首先检查当前类上是否存在该方法。如果没有，引擎将沿着原型链向上查找，检查沿途每个类或原型。这意味着你可以通过创建一个同名的新方法来覆盖任何方法。
+
+尝试在 `FlashCoupon` 类中添加一个名为 `getExpirationMessage()` 的新方法。该方法将与父方法相同，区别在于它返回的消息为 `This is a flash offer and expires in ${this.expiration}`。
+
+此时，你已经创建了一个继承方法和属性的类。你调用了父构造函数来设置某些属性并覆盖了其他属性。你还编写了覆盖父方法的方法。
+
+最后一步是编写调用父方法的方法。首先，在你的 `Coupon` 类中添加两个新方法。首先，添加 `getRewards()` 方法，它接收一个用户，然后调用 `isRewardsEligible()` 来判断用户是否符合进一步折扣的条件。如果用户符合进一步折扣的条件，则降低价格。
+
+作为一个警告，你添加到父类中的任何方法都会被子类继承。这可能是一个巨大的优势，但如果你在父类中添加了子类中不需要的方法，也很容易导致子类变得臃肿。
+
+[classes/extend/extend.js](http://media.pragprog.com/titles/es6tips/code/classes/extend/extend.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'Two Weeks';
+  }
+
+  getPriceText() {
+    return `$${this.price}`;
+  }
+
+  getExpirationMessage() {
+    return `This offer expires in ${this.expiration}`;
+  }
+
+  isRewardsEligible(user) {
+    return user.rewardsEligible && user.active;
+  }
+
+  getRewards(user) {
+    if (this.isRewardsEligible(user)) {
+      this.price = this.price * 0.9;
+    }
+  }
+}
+
+export default Coupon;
+```
+
+给用户提供折扣是很棒的，但因为闪购优惠的节省力度更大，你可能希望对符合条件的的用户在闪购提供更大的折扣。但你不想给得太多。相反，你只想在满足之前的条件（用户处于活跃且符合奖励条件，且商品基础价格为 $20 或以上）时才给符合条件的用户提供折扣。
+
+要添加这一点，首先在 `FlashCoupon` 类中创建一个同名的方法。然后，在 `isRewardsEligible()` 方法中，首先通过在 `super()` 上调用方法名来调用父方法。之后，添加你的额外代码。注意，构造函数中的 `super()` 不需要特定的方法调用，但如果你想调用父类上的任何其他方法，你必须明确指定它们，即使它们位于同名方法中。
+
+结果是一个从父类继承了一些属性和函数同时覆盖了其他属性的类。
+
+[classes/extend/flash.js](http://media.pragprog.com/titles/es6tips/code/classes/extend/flash.js)
+
+```javascript
+import Coupon from './extend';
+class FlashCoupon extends Coupon {
+  constructor(price, expiration) {
+    super(price);
+    this.expiration = expiration || 'two hours';
+  }
+
+  getExpirationMessage() {
+    return `This is a flash offer and expires in ${this.expiration}.`;
+  }
+
+  isRewardsEligible(user) {
+    return super.isRewardsEligible(user) && this.price > 20;
+  }
+
+  getRewards(user) {
+    if (this.isRewardsEligible(user)) {
+      this.price = this.price * 0.8;
+    }
+  }
+}
+
+export { FlashCoupon };
+```
+
+就是这些了。对于熟悉面向对象编程的人来说，这应该非常熟悉。尽管如此，你应该记住 JavaScript 与 Ruby、Java 或其他使用类的语言不同。JavaScript 是一种原型语言。你所正在使用的类仅仅是一种熟悉的语法糖。
+
+
+
+
+JavaScript 是一种基于原型的语言。当你创建一个新实例时，你并不是在复制方法。你是在创建一个指向原型的链接。当你在对象的实例上调用一个方法时，你实际上是从原型上调用它的，而原型本身也是一个对象实例（而不是蓝图）。Eric Elliot 对这个主题写过一篇更详尽的文章。
+
+当你在 JavaScript 中看到 `class` 关键字时，你应该知道它并不是新功能。它只是原型的一种简写。这意味着你可以将类的句法集成到你现有的代码库中。
+
+到目前为止，你已经从类创建了对象实例，但还没有从构造函数创建过实例。在 ES5 之前的 JavaScript 中，当你想要使用 `new` 关键字创建一个新的对象实例时，你会使用一个函数。你会注意到，构造函数与类上的构造方法非常相似。这说明新语法将很好地与遗留代码兼容。
+
+为了在 JavaScript 中使用构造函数创建对象实例，你只需要像往常一样写一个函数。按照惯例，当你打算将一个函数用构造函数时，你应该以大写字母开头函数。在函数内部，你可以使用 `this` 关键字向实例上附加属性。
+
+当你使用 `new` 关键字创建一个新实例时，你会运行该函数作为构造函数并绑定 `this` 上文。以下是作为构造函数编写的 `Coupon`。
+
+[classes/prototypes/prototypes.js](http://media.pragprog.com/titles/es6tips/code/classes/prototypes/prototypes.js)
+
+```javascript
+function Coupon(price, expiration) {
+  this.price = price;
+  this.expiration = expiration || "two weeks";
+}
+const coupon = new Coupon(5, "two months");
+coupon.price;
+// 5
+```
+
+这看起来很熟悉。你所做的只是把你的构造函数提取出来作为一个独立的操作。唯一的问题是你丢失了所有的方法。这正是 JavaScript 与传统面向对象语言的不同之处。
+
+当你使用 `new` 创建新实例时，你运行了构造函数并绑定了 `this` 上文，但你并没有复制方法。你可以在构造函数中添加这些方法，但直接添加到原型上要效率高效得多。
+
+原型是作为构造函数基础的对象。所有对象实例都从原型派生属性。此外，新实例还可以使用原型上的方法。
+
+要向原型添加方法，你使用构造函数的名称 `Coupon`，并将方法添加到到原型属性上，就像你向对象实例添加函数或属性一样。向原型上添加 `getExpirationMessage()` 方法。现在记住，你已经有一个可以运行的 `Coupon` 实例了。因为你正在处理原型的实例，所以即使在你创建了新实例之后，你也可以访问你添加的方法。
+
+[classes/prototypes/prototypes.js](http://media.pragprog.com/titles/es6tips/code/classes/prototypes/prototypes.js)
+
+```javascript
+Coupon.prototype.getExpirationMessage = function () {
+  return `This offer expires in ${this.expiration}`;
+};
+coupon.getExpirationMessage();
+// This offer expires in two months.
+```
+
+当你使用 `class` 关键字创建对象时，你仍然是在创建原型并绑定上文，只是使用了更直观的接口。
+
+你刚刚使用构造函数和原型创建的代码，与你在之前的技巧中创建的类是完全相同的。它们看起来不同，但在背后，你仍然在创建原型。
+
+正因为它们是相同的，你可以为你之前使用原型构建的遗留代码编写类。例如，如果你想扩展 `Coupon` 原型，其过程与你使用类句法扩展你构建的 `Coupon` 时完全相同。你只需要在创建新类时声明你正在扩展 `Coupon` 原型即可。
+
+[classes/prototypes/prototypes.js](http://media.pragprog.com/titles/es6tips/code/classes/prototypes/prototypes.js)
+
+```javascript
+class FlashCoupon extends Coupon {
+  constructor(price, expiration) {
+    super(price);
+    this.expiration = expiration || "two hours";
+  }
+
+  getExpirationMessage() {
+    return `This is a flash offer and expires in ${this.expiration}`;
+  }
+}
+```
+
+如果你在 JavaScript 上花费了大量时间，那么探索原型链等其他概念是值得的，但目前你只需要知道类并不是新功能。它只是旧概念的新名称。查看 Mozilla 开发者网络（MDN）获取更多关于类与原型之间关系的示例。
+
+在下一个技巧中，你将回到类句法并探索如何使用 `get` 和 `set` 创建简单的接口。
+
+## 技巧 40：使用 get 和 set 简化接口
+
+在这个技巧中，你将学习如何使用 `get` 和 `set` 在简单接口后面隐藏逻辑。
+
+你已经掌握了类的基础知识。你可以创建实例、调用属性、调用方法并扩展父类。但很快，就会有人尝试修改一个你本无意要暴露的属性。或者可能有人在属性上设置了错误的数据类型，由于代码期望的是整数而不是字符串，从而产生了错误。
+
+JavaScript 的主要问题之一是默认情况下没有私有属性。一切都是暴露的。你无法控制你类的用户对方法或属性做了什么操作。
+
+想想你的 `Coupon`。它有一个 `price` 属性，你最初在构造函数中设置了它。类的用户可以使用点符号语法访问实例上的属性：`coupon.price`。到目前为止，没有问题。但因为 `Coupon` 的实例仅仅是一个对象，用户也可以更改属性：`coupon.price = 11`。
+
+这本身并不是大问题。但你最终会遇到一个问题，另一个开发者（或者承认吧，是你自己）无意中尝试设置一个代码其他部分可能意想不到的值。例如，如果你不是用整数设置价格，而是使用字符串设置呢？这个改变看起来可能是无害的，但因为所有方法都期望整数，这个改变可能会贯穿整个类，产生意想不到的错误。
+
+[classes/get/problem.js](http://media.pragprog.com/titles/es6tips/code/classes/get/problem.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || "Two Weeks";
+  }
+  getPriceText() {
+    return `${this.price}`;
+  }
+  getExpirationMessage() {
+    return `This offer expires in ${this.expiration}`;
+  }
+}
+const coupon = new Coupon(5);
+coupon.price = '$10';
+coupon.getPriceText();
+// '$10'
+```
+
+当你将价格设置为字符串时，你的信息看起来坏了。你能如何处理？
+
+一种解决方案是使用 getter 和 setter 在属性后面放置额外的逻辑。getter 或 setter 是一种通过让函数看起来像属性来隐藏复杂性的方法。
+
+变化非常简单。你已经有了几个显然是在获取数据的函数。你有一个 `getPriceText()` 方法和一个 `getExpirationMessage()` 方法，它们的函数名中包含了“get”一词。当然，为了执行方法，你使用点符号调用它：`coupon.getPriceText()`。
+
+将方法重构为 getter 非常简单。你只需要在方法前面添加 `get` 关键字。之后，你还可以重命名函数使其成为名词而不是动作。按照惯例，方法或函数通常是动词，而属性通常是名词。
+
+
+
+
+这里是将你的方法转换后的 getter。注意，唯一的变化添加了 `get` 关键字。
+
+[classes/get/price.js](http://media.pragprog.com/titles/es6tips/code/classes/get/price.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'two weeks';
+  }
+
+  get priceText() {
+    return `$${this.price}`;
+  }
+
+  get expirationMessage() {
+    return `This offer expires in ${this.expiration}.`;
+  }
+}
+```
+
+在进行这个小变化后，你可以使用点符号语法调用该方法，但不需要加括号。尽管你正在执行代码，但该方法表现就像一个属性。
+
+[classes/get/price.js](http://media.pragprog.com/titles/es6tips/code/classes/get/price.js)
+
+```javascript
+const coupon = new Coupon(5);
+coupon.price = 10;
+coupon.priceText;
+// '$10'
+coupon.messageText;
+// 'This offer expires in two weeks.'
+coupon.messageText;
+```
+
+这使得信息更易检索，但它并没有解决别人设置错误值的问题。为了解决这个问题，你还需要创建一个 setter（存器）。
+
+setter 的工作方式与 getter 类似。它通过让方法看起来像一个属性来隐藏方法。然而，setter 接受单个参数并更改属性，而是暴露信息。你不需要使用括号传递参数。相反，你使用等号 (=) 传递对象，就像在给对象设置值一样。
+
+作为一个示例，创建一个将价格设置为参数值一半的 setter。这可能不是一个非常有用的 setter，但它将向你展示在 setter 后面隐藏方法逻辑有多简单。
+
+要创建一个 setter，可以在方法前面添加 `set` 关键字。在方法内部，你可以更改属性上的值。
+
+[classes/get/set.js](http://media.pragprog.com/titles/es6tips/code/classes/get/set.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'Two Weeks';
+  }
+
+  set halfPrice(price) {
+    this.price = price / 2;
+  }
+}
+```
+
+setter 的问题在于，如果你没有对应的 getter，事情就会变得有点奇怪。你可以为 `halfPrice` 设置值。它看起来像一个普通属性，但你无法从 `halfPrice` 获取值。
+
+[classes/get/set.js](http://media.pragprog.com/titles/es6tips/code/classes/get/set.js)
+
+```javascript
+const coupon = new Coupon(5);
+coupon.price;
+// 5
+coupon.halfPrice = 20;
+coupon.price;
+// 10
+coupon.halfPrice;
+// undefined
+```
+
+出于这个原因，将 getter 和 setter 配对使用是一个好主意。事实上，它们可以（并且应该）具有相同的名称。这是完全有效的。你不能让一个属性与你的 getter 或 setter 同名，那将是无效的并引起很多困惑。
+
+例如，如果你尝试为 `price` 创建一个 setter，它将触发无限调用栈。
+
+[classes/get/invalid.js](http://media.pragprog.com/titles/es6tips/code/classes/get/invalid.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this.price = price;
+    this.expiration = expiration || 'Two Weeks';
+  }
+
+  get price() {
+    return this.price;
+  }
+
+  set price(price) {
+    this.price = `$${price}`;
+  }
+}
+
+const coupon = new Coupon(5);
+// RangeError: Maximum call stack size exceeded
+```
+
+解决方案是使用另一个属性作为 getter 和 setter 之间的桥梁。你不希望用户或其他开发者访问你的桥梁属性。你希望它仅供内部使用。在大多数语言中，你会使用私有属性。因为目前 JavaScript 没有这些属性，你必须依靠约定。
+
+开发者通过在方法或属性前加上下划线来表示该内容是私有的。如果你看到一个具有 `_price` 属性的对象，你应该知道不应该直接访问它。
+
+在设置了中间属性后，你可以使用同名（去掉下划线）的 getter 和 setter 来访问或更新该值。
+
+你现在有了工具来解决价格 设置非整数的问题。只需在构造函数中将属性 `this.price` 改为 `this._price`。之后，创建一个 getter 来访问 `this._price`，并创建一个 setter 将任何非数字字符替换为空字符串，只留下整数。这并不完美，因为它会删除小数点，但对于这个演示来说足够了。
+
+[classes/get/get.js](http://media.pragprog.com/titles/es6tips/code/classes/get/get.js)
+
+```javascript
+class Coupon {
+  constructor(price, expiration) {
+    this._price = price;
+    this.expiration = expiration || 'Two Weeks';
+  }
+
+  get priceText() {
+    return `$${this._price}`;
+  }
+
+  get price() {
+    return this._price;
+  }
+
+  set price(price) {
+    const newPrice = price
+      .toString()
+      .replace(/[^\d]*/g, '');
+    this._price = newPrice;
+  }
+
+  get expirationMessage() {
+    return `This offer expires in ${this.expiration}.`;
+  }
+}
+```
+
+
+
+
+
+在本技巧中，你将学习一种可以让复杂数据结构变得像简单数组一样易于使用的技术。你将使用一种名为 `generator`（生成器）的新型特殊函数来一次返回一部分数据。在此过程中，你将看到如何将一个深度嵌套的对象转换为一个简单的结构。
+
+生成器并不是类特有的。它们是一种特殊的函数。同时，它们与其他函数非常不同。虽然 JavaScript 社区热烈地拥抱了大多数新特性，但他们还没有完全弄清楚如何使用生成器。2016 年底，知名 JavaScript 开发者 Kent Dodds 进行的一项调查显示，81% 的开发者很少或从未使用过生成器。
+
+这种情况正在发生变化。开发者和库作者正在发现如何使用生成器。到目前为止，最好的用例之一是使用生成器将对象转换为可迭代对象（iterables）。
+
+## 寻找现实生活中的用例
+
+既然 JavaScript 规范每年更新，你会经常看到新特性。偶尔，你会遇到新语法，却不知道它们为什么被包含进来或者你应该在哪里使用它们。有时，理解如何整合新语法需要时间。当你发现自己困于不理解的新语法时，应该花些时间寻找现实生活中的用例。
+
+寻找新语法用例的最佳方法是探索开源库。我通常会有几个大型项目——React、Redux、Lodash——我会在其中搜索语法示例。你只需要去 GitHub、Gitlab 或项目托管的任何地方搜索该语法即可。当我尝试学习如何使用 `Map` 时，我运行到 React 并搜索了新的 `Map`，并发现了几个很好的例子。我通过查看 GitHub 上的 Khan Academy 发现了这个 `generator` 模式。
+
+你会很快看到很多用法模式。如果你没有看到很多例子，那说明该语法可能价值不大，或者至少没有被广泛理解。
+
+## 什么是生成器（generator）？
+
+Mozilla 开发者网络（MDN）解释说，生成器在调用时不会立即完全执行其函数体。
+
+这与高阶函数不同，高阶函数会完全执行但返回一个新函数。生成器是一个单一函数，它不会立即解析其函数体。这意味着生成器是一个具有断点的函数，它本质上会在此暂停，直到下一步。
+
+要创建一个生成器，你需要在函数关键字后添加一个星号（`*`）。然后你就可以访问一个名为 `next()` 的特殊方法，它返回函数的一部分。在函数体内部，你使用关键字 `yield` 返回一段信息。在执行函数时，使用 `next()` 方法来获取函数产生的信息。
+
+当你调用 `next()` 时，你会得到一个包含两个键的对象：`value` 和 `done`。你用 `yield` 声明的项就是 `value`。`done` 表示没有剩余项了。
+
+例如，如果你想读诺贝尔奖得者纳吉布·马哈福兹的《开罗三部曲》，但你只想一次知道一个标题，你可以写一个函数，为三部曲中的每本书返回一个 `yield`。每当你调用 `yield()`，你都会提供序列中的下一本书。
+
+要使用这个三部曲生成器，你必须先调用该函数将其赋值给变量。然后每当你想要一本新书时，在该变量上调用 `next()`。
+
+[`classes/generators/simple.js`](http://media.pragprog.com/titles/es6tips/code/classes/generators/simple.js)
+
+```javascript
+function getCairoTrilogy() {
+  yield 'Palace Walk';
+  yield 'Palace of Desire';
+  yield 'Sugar Street';
+}
+
+const trilogy = getCairoTrilogy();
+trilogy.next(); // { value: 'Palace Walk', done: false }
+trilogy.next(); // { value: 'Palace of Desire', done: false }
+trilogy.next(); // { value: 'Sugar Street', done: false }
+trilogy.next(); // { value: undefined, done: true }
+```
+
+注意这有多有趣。你可以一段一段地执行函数。如果你有大量信息并想分部分访问它们，这将非常有用。你可以提取出一部分信息，并将生成器传递到其他地方以获取下一部分。像高阶函数一样，你可以在不同的地方使用它。
+
+但并不是本技巧的重点。相反，更有趣的是生成器将函数转换为了可迭代对象。因为你是一次访问一部分数据，所以将它们转换为可迭代对象非常简单。
+
+当你把生成器作为可迭代对象使用时，你不需要使用 `next()` 方法。使用任何需要可迭代对象的的操作即可。生成器会逐个通过这些部分，就像遍历数组索引或 map 键一样。
+
+例如，如果你想以数组的形式获取《开罗三部曲》，你只需要使用扩展运算符。
+
+[`classes/generators/simple.js`](http://media.pragprog.com/titles/es6tips/code/classes/generators/simple.js)
+
+```javascript
+[...getCairoTrilogy]; // ['Palace Walk', 'Palace of Desire', 'Sugar Street']
+```
+
+如果你想把所有的书加入阅读列表，你只需要一个简单的 `for...of` 循环。
+
+[`classes/generators/simple.js`](http://media.pragprog.com/titles/es6tips/code/classes/generators/simple.js)
+
+```javascript
+const readingList = {
+  'Visit from the Goon Squad': true,
+  'Manhattan Beach': false,
+};
+for (const book of getCairoTrilogy()) {
+  readingList[book] = false;
+}
+readingList;
+// {
+  'Visit from the Goon Squad': true,
+  'Manhattan Beach': false,
+  'Palace Walk': false,
+  'Palace of Desire': false,
+  'Sugar Street': false
+}
+```
+
+## 它如何与类（classes）结合？
+
+生成器非常棒，因为就像 getter 和 setter 一样，它们可以为你的类提供一个简单的接口。你可以创建一个具有复杂数据结构的类，但对其进行设计使得使用该类的开发者能够像访问简单数组一样访问数据。
+
+考虑一个简单的数据结构：一个只有一个分支的家族族谱。家族族谱中的一个人有一个名字和孩子。每个孩子也有自己的孩子。
+
+树形数据结构在搜索和查找方面具有优势，但将信息平化会困难。你必须编写一个方法创建一个空数组并在返回之前填充它。
+
+[`classes/generators/problem.js`](http://media.pragprog.com/titles/es6tips/code/classes/generators/problem.js)
+
+```javascript
+class FamilyTree {
+  constructor() {
+    this.family = {
+      name: 'Dolores',
+      child: {
+        name: 'Martha',
+        child: {
+          name: 'Dyan',
+          child: {
+            name: 'Bea',
+          },
+        },
+      },
+    };
+  }
+  getMembers() {
+    const family = [];
+    let node = this.family;
+    while (node) {
+      family.push(node.name);
+      node = node.child;
+    }
+    return family;
+  }
+}
+
+const family = new FamilyTree();
+family.getMembers(); // ['Dolores', 'Martha', 'Dyan', 'Bea']
+
+export default FamilyTree;
+```
+
+使用生成器，你可以直接返回数据，而无需将其推送到数组。作为额外奖励，你的用户不需要查找方法名。他们可以将持有家族族谱的属性看作是持有一个一个数组。
+
+
+
+
+将方法转换为生成器非常简单。你只需要将方法中的思路与你的 `getCairoTrilogy()` 生成器的思路结合起来。
+
+首先，将方法名从 `getMembers()` 改为 `*[Symbol.iterator]()`。这看起来很困惑，但这是正在发生的情况：首先，星号 `*` 表示你正在创建一个生成器。`Symbol.iterator` 短语是将生成器附加到类的一个可迭代对象（iterable）上。这类似于 map 对象拥有一个 `MapIterator`。
+
+在方法体内，添加 `while` 循环。与你的 `getCairoTrilogy()` 生成器不同，你不会 yield 一个显式的值。相反，你将 yield 循环每次迭代中的值。只要有内容可以返回，生成器就会继续运行。
+
+与其使用 `family.push(node.name);`，你只需要 yield 结果：`yield node.name`。这意味着你不需要中间数组了。删掉它即可。其他部分都是一样的。
+
+现在，当你需要任何需要迭代器的操作时（例如展开运算符或 `for...of` 循环），你可以直接在类实例上调用它。
+
+[classes/generators/generators.js](http://media.pragprog.com/titles/es6tips/code/classes/generators/generators.js)
+
+```javascript
+class FamilyTree {
+  constructor() {
+    this.family = {
+      name: 'Dolores',
+      child: {
+        name: 'Martha',
+        child: {
+          name: 'Dyan',
+          child: {
+            name: 'Bea',
+          },
+        },
+      },
+    };
+  }
+  *[Symbol.iterator]() {
+    let node = this.family;
+    while (node) {
+      yield node.name;
+      node = node.child;
+    }
+  }
+}
+
+const family = new FamilyTree();
+[...family];
+// ['Dolores', 'Martha', 'Dyan', 'Bea'];
+```
+
+生成器的额外复杂度值得吗？这取决于你的目标。使用生成器的优势在于，其他开发者不需要陷入你类的实现细节。他们不需要知道该类实际上使用的是树形数据结构。对他们来说，这个类包含一个可迭代对象。
+
+当然，有时隐藏复杂性会使调试变得困难。就像 getter 和 setter 一样，要小心不要向其他开发者隐藏太多内容。尽管如此，当你想要使用更复杂的数据结构但又不想让别人负担实现细节细节时，生成器是一个极佳的解决方案。
+
+在下一个技巧中，你将看到上下文问题是如何溜入类的，以及你如何使用 `bind()` 来解决它们。
+
+## 技巧 42：使用 bind() 解决上下文问题
+
+在本技巧中，你将学习如何使用 `bind()` 来解决这些错误。
+
+在技巧 36 使用箭头函数防止上下文混淆 中，你已经看到函数如何创建新上下文，以及新上下文如何带给你意料之外的结果。改变上下文可能会导致困惑，特别是当你在回调函数或数组方法中使用 `this` 关键字时。
+
+遗憾的是，这个问题在类中并没有消失。早些时候你学习了如何使用箭头函数创建一个不带新上下文的另一个函数。在本技巧中，你将学习更多防止上下文问题的技巧。你即将学习的技术适用于对象字面量和类，但它们在类语法中更为常见，特别是当你使用 React 或 Angular 等库时。
+
+回想一下原始示例，一个验证器（validator）。最初你将其作为一个对象字面量创建，但现在你已经了解了一些类，可以把它写为一个类。该类将有一个属性 `message` 和两个方法：`setInvalidMessage()`（它返回字段的单个无效消息）和 `setInvalidMessages()`（它将字段数组映射到一系列无效消息）。
+
+[classes/bind/problem.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/problem.js)
+
+```javascript
+class Validator {
+  constructor() {
+    this.message = 'is invalid.';
+  }
+
+  setInvalidMessage(field) {
+    return `${field} ${this.message}`;
+  }
+
+  setInvalidMessages(...fields) {
+    return fields.map(this.setInvalidMessage);
+  }
+}
+```
+
+你所做的是将一个具有属性和方法的对象转换为具有属性和方法的类。
+
+`Validator` 类将和你对象拥有完全相同的上下文问题。当你调用 `setInvalidMessages()` 时，函数会创建一个指向类的 `this` 绑定。在方法内部，你在数组上调用 `map()` 并将 `setInvalidMessage()` 作为回调传递。当 `map()` 方法调用 `setInvalidMessage()` 时，它将在数组方法的上下文中创建一个新的 `this` 绑定，而不是类的绑定。
+
+[classes/bind/bind.spec.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/bind.spec.js)
+
+```javascript
+const validator = new ValidatorProblem();
+validator.setInvalidMessages('city');
+// TypeError: Cannot read property 'message' of undefined
+```
+
+上下文问题在 React 社区中很常见。几乎每个类都有某种形式的绑定问题。Cory House 对 React 中解决绑定问题的解决方法进行了很好的解析[42]。你将在一个更通用的类中看到大多数解决方案的适配。
+
+解决问题的第一个方法与技巧 36 中建议的解决方案 使用箭头函数防止上下文混淆相同。将你的方法转换为箭头函数。箭头函数不会创建新的 `this` 绑定，也不会报错。
+
+这种方法的缺点是，当你使用类语法时，你必须将函数从方法移动到属性上。在对象上这并不是什么问题，因为对象和属性都使用键值对声明。在类中，你必须在构造函数中设置属性，而方法看起来会有些不协调。现在你陷入了这样一种局面：某些方法在构造函数中设置，而另一些作为类方法设置。
+
+[classes/bind/constructorArrow.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/constructorArrow.js)
+
+```javascript
+class Validator {
+  constructor() {
+    this.message = 'is invalid.';
+    this.setInvalidMessage = field => `${field} ${this.message}`;
+  }
+
+  setInvalidMessages(...fields) {
+    return fields.map(this.setInvalidMessage);
+  }
+}
+```
+
+将方法移动到构造函数的属性可能会解决你的上下文问题，但它引发了另一个问题。方法被定义在多个地方。取决于你以此创建了多少方法，你的构造函数可能会迅速变得巨大。
+
+更好的解决方案是使用 `bind()` 方法。该方法存在于所有函数，允许你显式地声明上下文。你始终知道 `this` 指向什么，因为你准确地告诉函数要绑定到哪里。
+
+例如，假设你有一个引用 `this` 上某个属性的函数。该函数实际上并没有该属性。`this` 指向的属性可能还不存在。并没有规则规定在声明函数时属性必须存在。但在调用函数的运行时，它们必须存在，否则你会得到 `undefined`。通过这个函数，你可以使用 `bind` 显式地将 `this` 设置为特定对象。
+
+[classes/bind/bind.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/bind.js)
+
+```javascript
+function sayMessage() {
+  return this.message;
+}
+
+const alert = {
+  message: 'Danger!',
+};
+
+const sayAlert = sayMessage.bind(alert);
+
+sayAlert();
+```
+
+
+
+
+// 危险！
+
+每当函数使用此方法时，它将锁定你绑定的对象。Kyle Simpson 将此称为显式绑定（explicit binding），因为你正在声明上下文，而不是依赖引擎在运行时设置它。
+
+在上一个示例中，你正将 `sayMessage()` 函数显式地绑定到一个具有 `message` 属性的对象上。
+
+现在事情开始变得有点复杂了。你也可以通过将函数绑定到 `this` 来将其绑定到当前上下文。将一个 `this` 绑定到……嗯，`this` 看起来可能很奇怪，但你所做的只是告诉函数使用当前上下文而不是创建一个新的。与箭头函数不同，该函数仍然创建一个 `this` 绑定——它只是在使用当前的绑定，而不是构建一个新的绑定。
+
+在你的 `Validator` 类中，你可以在将函数传递给 `map()` 方法之前，将其绑定到当前上下文。
+
+[classes/bind/bind.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/bind.js)
+
+```javascript
+class Validator {
+  constructor() {
+    this.message = 'is invalid.';
+  }
+
+  setInvalidMessage(field) {
+    return `${field} ${this.message}`;
+  }
+
+  setInvalidMessages(...fields) {
+    return fields.map(this.setInvalidMessage.bind(this));
+  }
+}
+```
+
+这是一个很好的方法。唯一的缺点是，如果你在另一个方法中使用该函数，你将不得不再次对其绑定。许多开发者通过在构造函数中将绑定的方法设置为同名的属性来避免多次绑定。
+
+这与在构造函数中创建箭头函数非常相似。优点是，你的方法仍然定义在同一个地方。它们只是在构造函数中进行了绑定。现在，你可以在一个地方（方法体）定义所有方法。在另一个地方（构造函数）声明你的属性。并在一个地方（也是构造函数）设置你的上下文。
+
+[classes/bind/constructor.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/constructor.js)
+
+```javascript
+class Validator {
+  constructor() {
+    this.message = 'is invalid.';
+    this.setInvalidMessage = this.setInvalidMessage.bind(this);
+  }
+
+  setInvalidMessage(field) {
+    return `${field} ${this.message}`;
+  }
+
+  setInvalidMessages(...fields) {
+    return fields.map(this.setInvalidMessage);
+  }
+}
+```
+
+使用箭头函数和将函数绑定到 this 的这两种方法在当前规范中都是有效的。在未来的规范中，你将能够在构造函数之外设置类属性。在新的规范中，你可以将箭头函数与其他方法定义一起赋值给属性。这兼顾了两者的优点。
+
+[classes/bind/properties.js](http://media.pragprog.com/titles/es6tips/code/classes/bind/properties.js)
+
+```javascript
+class Validator {
+  message = 'is invalid.';
+
+  setMessage = field => `${field} ${this.message}`;
+
+  setInvalidMessages(...fields) {
+    return fields.map(this.setMessage);
+  }
+}
+```
+
+与其他提议的规范一样，你现在可以使用适当的 Babel 插件使用此功能。此特定功能目前不受任何版本的 Node.js 支持，因此你无法在 REPL 中尝试它。
+
+与其他上下文问题一样，尽量不要太纠结于细节。当你有机地看到它时，绑定将更有意义。只需记住：如果你在使用此功能时遇到意外的行为或奇怪的错误，你可能想要显式地绑定上下文。在此之前，不要担心。绑定可能是昂贵的，你真的应该在需要解决特定问题时才使用它。
+
+到此时，你应该能够轻松地创建和扩展类了。尽管存在争议，但对于语言之外的人来说，它让 JavaScript 更加直观，对于那些多年开发 JavaScript 的来说更加简洁。
+
+在下一章中，你将通过探索 promises、fetch 方法和异步函数来学习如何处理代码外部的数据。
+
+### 脚注
+
+[[37]](#f_0056.xhtml_FNPTR-37)
+
+[`github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch4.md`](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch4.md)
+
+[[38]](#f_0056.xhtml_FNPTR-38)
+
+[`medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9`](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
+
+[[39]](#f_0056.xhtml_FNPTR-39)
+
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Sub_classing_with_extends`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Sub_classing_with_extends)
+
+[[40]](#f_0058.xhtml_FNPTR-40)
+
+[`twitter.com/kentcdodds/status/775447130391535616`](https://twitter.com/kentcdodds/status/775447130391535616)
+
+[[41]](#f_0058.xhtml_FNPTR-41)
+
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+
+[[42]](#f_0059.xhtml_FNPTR-42)
+
+[`medium.freecodecamp.org/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56`](https://medium.freecodecamp.org/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56)
+
+[[43]](#f_0059.xhtml_FNPTR-43)
+
+[`github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md#explicit-binding`](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md#explicit-binding)
+
+Copyright © 2018, The Pragmatic Bookshelf.
+
+# 第 9 章
+
+访问外部数据
+
+在 19 世纪世纪，一支国际工程师团队承担了他们时代最伟工程挑战之一：横跨大西洋铺设电报电缆。该项目在经历了多次失败尝试并投入了大量资金和时间后终于成功。最终，你从欧洲向美国发送信息仅需惊人的 17 小时——这比以前需要近一周的船程要快得多。
+
+快速的通信可能意味着成功与失败的区别。JavaScript 的复兴部分是因为你可以加载一次页面，然后使用 JavaScript 处理未来与服务器之间的所有通信。突然，你可以把网站体验成真正的软件，而不是一系列离散的页面。当你跳过页面加载时，你为用户节省了时间和资源。他们不需要重新加载图像和其他资产。他们的延迟更低，体验也大大提高。访问外部数据对于所谓的单页 Web 应用程序（SPA）至关重要。
+
+在本章中，你将学习如何访问外部数据以及如何使用收到的数据。JavaScript 是一种异步语言，这意味着它在等待请求的数据时不会阻塞代码的执行。JavaScript 可以为你提供快速的网站，但异步请求在处理起来可能会有些复杂。
+
+我们将首先探索如何使用 `fetch()` 访问远程数据。接下来，我们将深入研究 promises，这是 JavaScript 处理异步请求的方法。然后，我们将使用新的 `async/await` 语法让处理 promises 的工作变得更加清晰。最后，你将学习在浏览器上存储数据，以便在无需访问服务器的情况下保留用户状态。
+
+
+
+
+
+你永远无法获得像跨西洋电缆那样的性能提升，但每一秒都至关重要。当移动端用户离开一个每次操作都需要重新渲染页面的网站时，请不要惊讶。你无法完全移除服务器，但你可以为用户提供一种让服务器请求尽可能不那么痛苦的体验。
+
+## 提示 43：使用 Promises 异步获取数据
+
+在这一提示中，你将学习如何使用 promises（承诺）处理延迟的数据响应。
+
+JavaScript 是一种异步语言。对于一个简单的概念来说，这个词听起来很高级。异步语言仅仅是指一种在之前的代码行尚未完全解析时，就可以执行后续代码行的语言。
+
+好了，也许这个解释并没有变得更清楚。考虑一下代码可能被阻塞的原因。你可能正在从 API 获取数据。你可能正在从 DOM 或其他提取提取。你可能在等待用户的响应。共同点是你需要某些信息才能继续，而获取这些信息可能需要时间。如果你想看更多示例，Peter Olson 对异步和同步代码之间的区别进行了非常好的解析。
+
+异步语言的价值在于，如果你的代码中某些部分不需要延迟信息，你可以在其他代码等待时运行这些代码。如果你在等待 API 响应，你仍然可以响应其他元素上的点击方法，或计算其他数据源的值。你的代码在等待时不会停滞。
+
+在随后的提示中，你将专门处理 API 数据。在这一提示中，你将探索一种处理异步数据的复用技术：promises。
+
+在 promises 之前，开发者使用回调（callbacks）来处理异步操作。如果你从数据源请求费用，你会将一个回调函数作为参数传递。在异步数据返回后——或者像通常所说的“解析”后——该函数将执行回调。传统的例子是 `setTimeout()` 函数，它接受一个回调并在指定的毫秒后执行它。
+
+使用 `setTimeout()` 作为任何不会立即解析的操作的占位符。例如，考虑一个名为 `getUserPreferences()` 的函数，它将从 API 获取数据，然后将这些数据传递给回调。
+
+由于 JavaScript 是异步的，你可以在调用 `getUserPreferences()` 之前之后调用其他函数，它们都会在 `getUserPreferences()` 执行回调之前被解析。
+
+[externalData/promises/problem.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/problem.js)
+
+```javascript
+function getUserPreferences(cb) {
+  setTimeout(() => {
+    cb({
+      theme: 'dusk',
+    });
+  }, 1000);
+}
+
+function log(value) {
+  return console.log(value);
+}
+
+log('starting');
+// starting
+
+getUserPreferences(preferences => {
+  return log(preferences.theme.toUpperCase());
+});
+
+log('ending?');
+// ending
+// DUSK
+```
+
+回调是处理异步数据的一种很好的方法。它们在很长一段时间内都是标准工具。问题是，你可能会有异步函数调用异步函数，而这些函数又调用异步……最终你会有太多的嵌套回调，你会发现自己陷入了所谓的“回调地狱（callback hell）”。
+
+如果你想根据用户的偏好获取音乐选择该呢？回调函数 `getMusic()` 也需要访问 API，并且需要根据 API 响应设置回调。你经常会遇到这种情况。这里是你的 `getMusic()` 函数：
+
+[externalData/promises/problem.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/problem.js)
+
+```javascript
+function getMusic(theme, cb) {
+  setTimeout(() => {
+    if (theme === 'dusk') {
+      return cb({
+        album: 'music for airports',
+      });
+    }
+    return cb({
+      album: 'kind of blue',
+    });
+  }, 1000);
+}
+```
+
+现在你需要获取偏好，然后获取专辑。首先，你调用 `getUserPreferences()` 并传递 `getMusic()` 作为回调。`getMusic()` 接受一个主题偏好和一个回调。这个函数只嵌套了了两层，但已经开始变得难读了。
+
+[externalData/promises/problem.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/problem.js)
+
+```javascript
+getUserPreferences(preferences => {
+  return getMusic(preferences.theme, music => {
+    console.log(music.album);
+  });
+});
+```
+
+这似乎还不够，许多异步函数接受两个回调：一个用于成功响应的回调，另一个用于错误的回调。事情很快变得复杂起来。
+
+Promises 双重地解决了回调问题。promises 不再接受回调函数作为参数，而是拥有用于成功和失败的方法。这保持了视觉上的扁平化。此外，你可以链用异步 promises 而不是嵌套它们。这意味着你可以整齐地堆叠你所有的操作。
+
+它是如何工作的？promise 是一个对象，它接收异步操作并根据响应调用两个方法之一。如果异步操作成功或已解析（fulfilled），promise 将结果传递给 `then()` 方法。如果操作失败或被拒绝（rejected），promise 将调用 `catch()` 方法。`then()` 和 `catch()` 都接受一个函数作为参数，该函数只能接受一个响应参数。
+
+promise 接收两个参数：`resolve()` 和 `reject()`。`resolve()` 是按计划发生时。当调用 `resolve()` 时，代码将执行传递给 `then()` 方法的函数。当你定义 `getUserPreferences()` 函数时，你会返回 promise。当你实际调用 `getUserPreferences()` 时，你会调用 `then()` 或 `catch()` 方法。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+function getUserPreferences() {
+  const preferences = new Promise((resolve, reject) => {
+    resolve({
+      theme: 'dusk',
+    });
+  });
+  return preferences;
+}
+```
+
+这是一个使用 `then()` 方法在成功解析后调用代码并运行函数的示例。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+getUserPreferences()
+  .then(preferences => {
+    console.log(preferences.theme);
+  });
+// 'dusk'
+```
+
+在这种情况下，一切进展顺利，但你应该始终有一个备份计划。每当你设置一个 promise 时，都可以同时拥有 `then()` 和 `catch()` 方法。`then()` 方法将处理解析。`catch()` 方法将处理拒绝。
+
+这是一个失败的 promise。注意它正在调用 `reject()` 参数。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+function failUserPreference() {
+  const finder = new Promise((resolve, reject) => {
+    reject({
+      type: 'Access Denied',
+    });
+  });
+  return finder;
+}
+```
+
+当你调用 promise 时，你可以通过链式调用附加 `then()` 和 `catch`。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+failUserPreference()
+  .then(preferences => {
+    // 这不会执行
+    console.log(preferences.theme);
+  })
+  .catch(error => {
+    console.error(`Fail: ${error.type}`);
+  });
+```
+
+
+
+
+
+// Fail: 拒绝访问
+
+这段代码看起来已经更整洁了。真正的乐趣在你将多个 promise 链在一起时才开始。
+
+还记得你的 `getMusic()` 函数吗？尝试将其转换为一个 promise。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+function getMusic(theme) {
+  if (theme === 'dusk') {
+    return Promise.resolve({
+      album: 'music for airports',
+    });
+  }
+  return Promise.resolve({
+    album: 'kind of blue',
+  });
+}
+```
+
+完成后后，你可以在 `getUserPreferences()` 的 `then()` 方法中调用并返回它。之后，你可以再次调用另一个 `then()` 方法，它将调用使用 `getMusic()` 结果的函数。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+getUserPreferences()
+  .then(preference => {
+    return getMusic(preference.theme);
+  })
+  .then(music => {
+    console.log(music.album);
+  });
+  // music for airports
+```
+
+看到发生了什么了吗？你不再是将数据传递到一系列嵌套的回调中，而是通过一系列 `then()` 方法向下传递数据。
+
+当然，由于你返回的是 promise，所以你可以将所有内容转换为具有隐式返回的单行箭头函数。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+getUserPreferences()
+  .then(preference => getMusic(preference.theme))
+  .then(music => { console.log(music.album); });
+```
+
+最后，仿佛这还不够一样，如果你在链式使用 promise，就不需要在每个 promise 上都添加 `catch()` 方法。你可以定义一个单一的 `catch()` 方法来处理任何 promise 被拒绝（rejected）的情况。
+
+要查看链式 `catch()` 的效果，请创建一个另一个返回专辑艺术家的 promise。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+function getArtist(album) {
+  return Promise.resolve({
+    artist: 'Brian Eno',
+  });
+}
+```
+
+遗憾的是，你将无法使用 `getArtists()`，因为 `getMusic()` 将被拒绝。别担心——它不会搞你的代码。即使 `catch()` 是在另一个 `then()` 方法之后定义的，你的代码也会执行组底部的 `catch()`。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+function failMusic(theme) {
+  return Promise.reject({
+    type: 'Network error',
+  });
+}
+
+getUserPreferences()
+  .then(preference => failMusic(preference.theme))
+  .then(music => getArtist(music.album))
+  .catch(e => {
+    console.log(e);
+  });
+```
+
+如你所见，promise 可以通过非常简单的接口处理很多情况。甚至有一个名为 `Promise.all` 的方法，它接收一个 promise 数组，并在它们全部完成时返回一个 resolve（成功）或 reject（拒绝）。
+
+Promise 席卷了 JavaScript 世界。它们是非常强大的工具，可以帮助你将原本丑陋的代码变得优易读。
+
+当然，情况总是可以变得。在 ES2017 中，TC39 委员会批准了一种处理异步函数的新方法。嗯，它实际上是一个被称为 `async/await` 的两步过程，它将异步数据带向了一个非常有趣的新方向。
+
+在下一个技巧中，你将探索 `async/await` 并查看如何让你的异步代码更具可读性。
+
+## 技巧 44：使用 Async/Await 创建整洁的函数
+
+在本技巧中，你将学习如何使用 `async/await` 简化 promise。
+
+在上一个技巧中，你看到 promise 是非常棒的。它们相比回调有了巨大的改进，但它们的接口仍然有些笨拙。你仍然在方法在使用回调。幸运的是，语言在不断改进。现在你可以通过在单个函数中将异步 promise 数据赋值给变量来完全避免回调。
+
+开发者通常将新语法 `async/await` 作为一个整体来讨论，但它实际上是两个独立的动作。你使用 `async` 关键字来声明一个封装函数将使用异步数据。在异步函数内部，你可以使用 `await` 关键字来暂停函数，直到返回值。
+
+在开始之前，有几点需要注意。首先，这并没有取代 promise。你只是用更好的语法包装了 promise。其次，它支持得并不完美，且编译后的代码有一点 bug。在服务端 JavaScript 上使用是安全的，但在浏览器中可能会遇到问题。
+
+要查看 `async/await` 的效果，请重构上一个技巧中的部分代码。提醒一下，你将一个函数传递给 `getUserPreferences()` 函数的 `then()` 方法。
+
+[externalData/promises/promises.js](http://media.pragprog.com/titles/es6tips/code/externalData/promises/promises.js)
+
+```javascript
+getUserPreferences()
+  .then(preferences => {
+    console.log(preferences.theme);
+  });
+  // 'dusk'
+```
+
+首先，你需要将 `getUserPreferences()` 的调用在另一个函数中。编写一个名为 `getTheme()` 的新函数。这将包含你对异步函数的所有调用。为了表示你将调用异步函数，在 `function` 关键字之前添加 `async` 关键字。
+
+在你的 `getTheme()` 函数内部，你可以调用 `getUserPreferences()`。但在调用函数之前，添加 `await` 关键字以表示 `getUserPreferences()` 将返回一个 promise。这允许你将解析后的 promise 赋值给新变量。
+
+[externalData/async/async.js](http://media.pragprog.com/titles/es6tips/code/externalData/async/async.js)
+
+```javascript
+async function getTheme() {
+  const { theme } = await getUserPreferences();
+  return theme;
+}
+```
+
+异步函数的技巧在于它被转换为了 promise。换句话说，当你调用 `getTheme()` 时，你仍然需要 `then()` 方法。
+
+[externalData/async/async.js](http://media.pragprog.com/titles/es6tips/code/externalData/async/async.js)
+
+```javascript
+getTheme()
+  .then(theme => {
+    console.log(theme);
+  });
+```
+
+你稍微清理了一下，但老实说，并不多。当你处理多个 promise 时，异步函数才会真正放光。
+
+回想上一个技巧中将多个 promise 链在一起的情况。使用 `async/await`，你可以在将变量传递给下一个函数之前，将每个返回语句赋值给变量。换句话说，你可以将链式 promise 转换为单个包装函数中的一系列函数调用。尝试创建一个名为 `getByPreference()` 的新函数，在其中你调用一系列异步函数，并将上一个函数的数据作为参数传递给下一个函数。
+
+[externalData/async/async.js](http://media.pragprog.com/titles/es6tips/code/externalData/async/async.js)
+
+```javascript
+async function getArtistByPreference() {
+  const { theme } = await getUserPreferences();
+  const { album } = await getMusic(theme);
+  const { artist } = await getArtist(album);
+  return artist;
+}
+
+getArtistByPreference()
+  .then(artist => {
+    console.log(artist);
+  });
+```
+
+相较于长方法链，这是一个巨大的改进。
+
+
+
+
+
+剩下的就是处理错误了。在这种情况下，你需要将错误处理移动到包装函数之外。相反，当你调用 `getArtistsByPreference()` 时，你仍然需要使用 `catch` 方法。因为 `getArtistsByPreference()` 返回的是一个 promise（承诺），你需要添加一个 `catch()` 方法，以防你的内部任何一个异步函数返回错误。
+
+[externalData/async/catch.js](http://media.pragprog.com/titles/es6tips/code/externalData/async/catch.js)
+
+```javascript
+async function getArtistByPreference() {
+  const { theme } = await getUserPreferences();
+  const { album } = await failMusic(theme);
+  const { artist } = await getArtist(album);
+  return artist;
+}
+
+getArtistByPreference()
+  .then(artist => {
+    console.log(artist);
+  })
+  .catch(e => {
+    console.error(e);
+  });
+```
+
+`async/await` 函数可以简化你的代码，但再次强调，请务必谨慎使用，特别是当你将代码编译为较早版本的 JavaScript 时。
+
+此时，你已经有了一些处理异步操作的工具，但你可能在好奇究竟何时会真正使用它们。你在很多情况下都会使用 promise，但最常见的情况是从 API 获取数据时。
+
+在下一个技巧中，你将学习如何使用 `fetch` 从端点访问数据。
+
+### 技巧 45：使用 Fetch 进行简单的 AJAX 调用
+
+在这一技巧中，你将学习如何使用 `fetch()` 获取远程数据。
+
+如果你进行任何重大的 JavaScript 应用开发，你就必须与 API 交互。通过 API，你可以获取当前信息并在无需刷新页面的更新单个元素。简而言之，你可以创建运行像原生软件的快速应用程序。
+
+单页 Web 应用是 JavaScript 如此流行的原因之一，但使用 AJAX（异步 JavaScript 和 XML）获取数据曾是一件麻烦事。它非常麻烦，以至于大多数开发者使用库（通常是 `jQuery`）来降低复杂度。你可以在 Mozilla 开发者网络查看相关文档。这可不是容易的事。
+
+现在，有一个更简单的工具用于 AJAX 调用：`fetch()`。这个技巧与其他技巧略有不同。`fetch()` 并不是 JavaScript 规范的一部分。fetch 规范是由 Web 超文本应用技术工作组（WHATWG）定义的。这意味着你可以在大多数主流浏览器中找到它，但 Node.js 原生不支持它。如果你想在 Node.js 中使用它，你需要使用 `node-fetch` 包。
+
+### 它是如何工作的？
+
+首先，你需要一个端点。typicode 的伙伴们提供了一个虚假博客数据的 API，地址为 [`jsonplaceholder.typicode.com/`](https://jsonplaceholder.typicode.com/)。他们还制作了一个名为 `JSON Server` 的优秀工具，允许你在本地模拟 API。`JSON Server` 是模拟开发中、缓慢、需要身份验证或每次调用都需要付费的 API 的棒方法。你应该使用它。
+
+现在你有了端点，是时候发送一些请求了。
+
+你发出的第一个请求是一个简单的 GET 请求。如果你只是请求数据，那么 `fetch()` 调用就很简单。将端点 URL 作为参数调用 `fetch()`：
+
+[externalData/fetch/fetch.js](http://media.pragprog.com/titles/es6tips/code/externalData/fetch/fetch.js)
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/posts/1');
+```
+
+该端点的响应体将是关于博客文章的信息：
+
+[externalData/fetch/fetch.js](http://media.pragprog.com/titles/es6tips/code/externalData/fetch/fetch.js)
+
+```javascript
+{
+  userId: 1,
+  id: 1,
+  title: 'First Post',
+  body: 'This is my first post...',
+};
+```
+
+没有比这更简单的操作了。在你发送请求后，`fetch()` 将返回一个解析为响应的 promise。你接下来需要做的是向 `then()` 方法添加一个回调函数来处理响应。
+
+最终，你想获取响应体。但响应对象包含了正体之外的很多信息，包括状态码、标头等。稍后你将看到更多关于响应的内容。
+
+响应体并不总是可格式的格式。你可能需要将其转换为 JavaScript 可以处理的格式。坦率地说，`fetch()` 包含许多混入（mixins），会自动转换响应体数据。在这种情况下，因为你知道你正在获取 JSON，可以通过在响应上调用 `json()` 将正体转换为 JSON。该方法也返回一个 promise，所以你需要另一个 `then()` 方法。之后，你就可以对解析后的数据进行某些操作了。例如，如果你只需要标题，可以将其提取出来。
+
+[externalData/fetch/fetch.js](http://media.pragprog.com/titles/es6tips/code/externalData/fetch/fetch.js)
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(data => {
+    return data.json();
+  })
+  .then(post => {
+    console.log(post.title);
+  });
+```
+
+当然，没有什么是一而容易的。即使你收到失败的状态码（例如 404 响应），`fetch()` promise 也会解析。也就是说，当你遇到失败的状态码时，可以使用 `catch()` 方法来处理失败的请求。响应包含一个 `ok` 字段，如果状态码在 200-299 范围内为 `true`。Internet Explorer 不包含，但 Edge 支持。如果你需要支持旧版本的 Internet Explorer，可以检查 `response.status`。
+
+[externalData/fetch/fetch.js](http://media.pragprog.com/titles/es6tips/code/externalData/fetch/fetch.js)
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then(data => {
+    if (!data.ok) {
+      throw Error(data.status);
+    }
+    return data.json();
+  })
+  .then(post => {
+    console.log(post.title);
+  })
+  .catch(e => {
+    console.log(e);
+  });
+```
+
+你的大多数请求将是 GET 请求。但你最终需要发送复杂的请求。你想添加一个新的博客文章？很简单，向 `https://jsonplaceholder.typicode.com/posts` 发起 POST 请求。
+
+一旦你超出 GET 请求，就需要设置更多的选项。到目前为止，你只向 `fetch()` 提供了一个参数——端点。现在你需要将配置选项对象作为第二个参数。可选对象可以包含许多细节。在这种情况下，只包含必要的信息。
+
+因为你正在发送 POST 请求，你需要声明你正在使用 `POST` 方法。此外，你需要传递一些 JSON 数据来实际创建新的博客文章。因为你正在发送 JSON 数据，你需要将 `Content-Type` 标头设置为 `application/json`。最后，你需要 `body`，它将是单一的 JSON 数据字符串。
+
+最后的请求与你的其他请求几乎相同，只是将特殊选项作为第二个参数传入。
+
+[externalData/fetch/fetch.js](http://media.pragprog.com/titles/es6tips/code/externalData/fetch/fetch.js)
+
+```javascript
+const update = {
+  title: 'Clarence White Techniques',
+  body: 'Amazing',
+  userId: 1,
+};
+
+const options = {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(update),
+};
+
+fetch('https://jsonplaceholder.typicode.com/posts', options)
+```
+
+
+
+
+```javascript
+return data.json();
+}).then(update => {
+  console.log(update);
+  // title: 'Clarence White Techniques',
+  // body: 'Amazing',
+  // userId: 1,
+  // id: 101
+}).catch(e => {
+  console.log(e);
+});
+```
+
+如果你的请求成功，你将获得一个包含博客文章对象以及新 `ID` 的响应体。响应内容将取决于 `API` 的如何设置。
+
+虽然 `JSON` 数据可能是最常见的请求体，但也有其他选项，例如 `FormData`。除此之外，还有更多方法可以让你自定义请求的请求。你可以设置 `mode`、`cache` 方法等。这些方法中的大部分是特殊用途的，但你将在某某时刻需要它们。一如既往，获取更多信息的最佳去处是 Mozilla 开发者网络（MDN）。^
+
+最后，你应该小心选择在代码中放置 AJAX 请求的位置。记住 `fetch` 通常需要互联网连接，且端点（endpoints）在项目过程中可能会发生。将所有的 `fetch` 操作保持在一个位置是一个良好的习惯。这将使它们更容易更新和测试。查看书中的代码，看看你如何创建一个服务目录来存储你的 `fetch` 函数，以及你如何在其他函数中使用它们。
+
+在下下一个技巧中，你将学习如何使用 `localStorage` 保留用户数据。
+
+## 技巧 46：使用 LocalStorage 持续维护状态
+
+在本技巧中，你将学习如何使用 `localStorage` 保存用户数据。
+
+用户喜欢个性化应用程序。相反，他们讨厌在每次访问应用或页面时都输入相同的数据。当你处理前端 `JavaScript` 时，你陷入了些许困境。如何以最少的干扰保留用户数据呢？
+
+一个显而易见的解决方案是创建一个登录功能。问题是，如果用户被强制登录，他们可能会放弃网站。一个更好但并不完美的解决方案是将数据存储在本地。当你本地保存数据时，你可以在特定设备上的特定浏览器上保留信息。
+
+当然，每个人都会使用多个设备。因此，将数据保存到浏览器对于跨多个设备工作的用户没有帮助。尽管如此，这比要求用户再次创建一个账户要侵扰得多。
+
+你可以使用 `localStorage` 轻松地保存用户信息。`localStorage` 就像一个只存在于浏览器中的微型数据库。你可以从中添加和检索信息，但浏览器中的 `JavaScript` 无法访问它。
+
+回想你在技巧 13“使用 Maps 清晰更新键值数据”中的宠物领养网站。你设置了一系列过滤器来只显示相关的宠物。因为宠物所有者倾向于某些类型的动物——拉布拉多的爱好爱好者可能不会寻找微型犬——如果你能在会话之间保存他们的搜索记录，就能帮他们大忙。
+
+从保存品种偏好开始。要保存一个品种，你只需要使用 `setItem()` 方法在 `localStorage` 对象上设置值即可。你将 `key` 作为第一个参数，将 `value` 作为第二个参数。这种语法看起来很熟悉。它与在 map 上设置数据的方法几乎相同。
+
+`externalData/local/local.js`
+
+```javascript
+function saveBreed(breed) {
+  localStorage.setItem('breed', breed);
+}
+```
+
+当用户离开并在稍后返回页面时，你可以使用类似的命令提取数据。
+
+`externalData/local/local.js`
+
+```javascript
+function getSavedBreed() {
+  return localStorage.getItem('breed');
+}
+```
+
+如果你想删除某个项目，你也可以这样做。
+
+`externalData/local/local.js`
+
+```javascript
+function removeBreed() {
+  return localStorage.removeItem('breed');
+}
+```
+
+现在想想为什么这如此强大。你可以在不需要用户付出任何额外努力的情况下保存用户数据。这意味着当他们返回页面甚至刷新页面时，你可以将应用程序设置得与离开时完全相同。
+
+例如，当你初始化过滤器时，如果存在品种信息，你可以从 `localStorage` 中添加该信息。
+
+`externalData/local/local.js`
+
+```javascript
+function applyBreedPreference(filters) {
+  const breed = getSavedBreed();
+  if (breed) {
+    filters.set('breed', breed);
+  }
+  return filters;
+}
+```
+
+像任何对象一样，你可以拥有任意数量的键。如果你想保存用户所有的过滤器，可以单独保存每个项目，但保存整个组要容易得多。它已经是结构化数据了，为什么要花时间拆解它呢？
+
+`localStorage` 的唯一缺点是你的值必须是字符串。你不能在 `localStorage` 中直接保存数组或对象。幸运的是，修复方法很简单。只需使用 `JSON.stringify()` 将数据转换为字符串，并使用 `JSON.parse` 将其转换回 JavaScript 对象。
+
+如果你想保存用户所有的搜索内容，可以将所有过滤器转换为字符串。记住，因为你使用了 map，所以你需要先将其展开（spread）成一个数组。
+
+`externalData/local/local.js`
+
+```javascript
+function savePreferences(filters) {
+  const filterString = JSON.stringify([...filters]);
+  localStorage.setItem('preferences', filterString);
+}
+```
+
+当你想要使用它时，只需从 `localStorage` 中提取数据并将其转换回 `map`。当然，如果你正在保存对象或数组，你只需要解析字符串即可。
+
+`externalData/local/local.js`
+
+```javascript
+function retrievePreferences() {
+  const preferences = JSON.parse(localStorage.getItem('preferences'));
+  return new Map(preferences);
+}
+```
+
+而且，偶尔你可能只是想回到一个初始状态。在这种情况下，你可以使用 `clear()` 删除所有的键值对。
+
+`externalData/local/local.js`
+
+```javascript
+function clearPreferences() {
+  localStorage.clear();
+}
+```
+
+`localStorage` 是那种简单但极其强大的工具之一。它会让你的用户感到快乐，而且易于使用。数据不会跨设备持久化，但避免登录带来的益处远超这一缺点。
+
+此外，你还可以使用 `sessionStorage` 临时保存数据。^ 其用法与它相同，不同的是 `sessionStorage` 在标签页关闭后不会持久化。当你有一个混合了服务器端渲染和客户端功能的项目时，这是一个很棒工具。你可以在页面刷新之间保存偏好，同时确保用户返回时拥有的是新的状态。
+
+
+
+
+
+[45]](#f_0061.xhtml_FNPTR-45)
+[`developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+[46]](#f_0063.xhtml_FNPTR-46)
+[`developer.mozilla.org/en-US/docs/AJAX/Getting_Started`](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+[47]](#f_0063.xhtml_FNPTR-47)
+[`fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+[48]](#f_0063.xhtml_FNPTR-48)
+[`www.npmjs.com/package/node-fetch`](https://www.npmjs.com/package/node-fetch)
+[49]](#f_0063.xhtml_FNPTR-49)
+[`github.com/typicode/json-server`](https://github.com/typicode/json-server)
+[50]](#f_0063.xhtml_FNPTR-50)
+[`developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+[51]](#f_0064.xhtml_FNPTR-51)
+[`developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
+
+Copyright © 2018, The Pragmatic Bookshelf.
+
+# 第 10 章：使用组件架构收集相关文件
+
+在象棋中，战术（tactics）和策略（strategy）之间是有区别的。战术是为了实现目标的一系列或组合组合。它是短期的，而且相当容易定义和教授。相比之下，策略是对棋盘特定区域哪一方具有更大影响的抽象概念。战术解决眼下的问题；策略则是为了应对未来的问题分配资源。
+
+大多数编程书籍（包括本书在内）都是关于战术的。如何转换一个数组？如何编写一个消耗异步数据的函数？
+
+现在你将学习策略。在软件开发世界中，以可扩展、可重用和易于管理的方式组织代码被称为架构。你将学习的不是解决清晰的问题，而是如何拆分和组织代码，使未来的问题——扩展类、处理边缘情况、查找 bug——变得更容易解决。你在提示 32 中学习依赖注入时，已经领略过代码架构的滋味，即 *编写可测试的函数*。那是你第一次看到代码如何通过拆分来保持一个函数的专注和灵活。
+
+大多数书籍避免讨论架构，因为架构很杂乱。解决方案并不清晰，你通常只能在几个月后才能发现错误，而那时更改代码库的结构已经太晚且代价太昂贵了。在本章中，你将看到如何从零开始构建项目。你将学习如何结合现代 JavaScript 工具，将各个部分整合成最终产品。
+
+你将首先学习如何使用 `import` 和 `export` 将代码分离到不同的文件中。接下来，你将学习如何使用 `npm` 引入第三方代码。然后，你将学习如何使用组件架构模式将应用程序拆分为设计良好的部分。这并不是唯一的架构模式，但它是现在最流行的模式，而且与大多数服务端模式非常不同。
+
+接下来，你将使用构建工具将这些部分组合成最终的、可用的资产。最后，你将学习如何使用 `CSS` 来处理以前由 `JavaScript` 负责动画。
+
+这一章会稍微困难一些。涉及的环节更多，示例也更复杂，尽管与你在生产环境中看到的任何内容相比，它们仍然是极简化的。但如果你能意识到整洁架构与整洁代码同样重要且同样可行，我保证你的项目将受益。
+
+创建整洁架构的第一步是使用 `import` 和 `export` 将代码拆解为可重用和共享的部分。
+
+## 提示 47：使用 Import 和 Export 隔离功能
+
+在提示中，你将学习如何在文件之间共享代码。
+
+在 `JavaScript` 糟糕的过去，你将所有代码都放在一个文件中。更糟糕的是，开发者会将所有的 JavaScript 代码放在 DOM 中的单个 `<script>` 标签下。
+
+情况慢慢地好转了。首先，有人创建了代码来压缩和合并文件，这样你至少只有一个微小的 `import` 语句。然后，诸如 `Require.js` 和 `CommonJS` 等项目为开发者提供了使用模块在文件之间共享代码的方法。有了模块系统，JavaScript 开发者终于能够轻松在项目中复用代码。
+
+模块已经变得简单，现在是简单的 `import` 和 `export` 语句。通过这个简单的接口，你不仅可以在项目的文件之间共享代码，还可以使用语法几乎相同的社区代码。你将在下一个提示中看到更多关于社区代码的内容。现在，让我们看看如何 `import` 和 `export` 代码。
+
+这段代码无法直接运行。将你的代码合并并压缩成单个文件仍然是一个好主意。最终浏览器将能够动态导入代码，但目前你仍然需要创建文件，通常称为包（bundles）或程序（packages）。你将在提示 50 中看到这一点， *使用构建工具组合组件。
+
+实际上，你在整整本书中一直在使用导出的代码。除非你查看这本书的源码，否则你不会，因为示例隐藏了代码导出。导入和导出就是这么简单。你用一个语句导出任何现有代码。
+
+这里是来自提示 36 的代码， *使用箭头函数防止上下文混淆：
+
+[`functions/context/method.js`](http://media.pragprog.com/titles/es6tips/code/functions/context/method.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessage: field => `${field} ${this.message}`,
+};
+```
+
+如果你想共享这段代码，你只需要添加一个简单的 `export` 语句。
+
+[`functions/context/method.js`](http://media.pragprog.com/titles/es6tips/code/functions/context/method.js)
+
+```javascript
+const validator = {
+  message: 'is invalid.',
+  setInvalidMessage: field => `${field} ${this.message}`,
+};
+
+export { validator };
+```
+
+它是如何工作的？在最基础的层，你所做的 own 仅仅是导出一个包含你想共享的数据的对象。这意味着你可以导出函数、变量和类。你不需要导出任何内容。如果你选择导出某些函数而不是其他函数，你本质上创建了公有函数和私有函数。
+
+在上一个示例中，你导出了一个单一函数。在其他情况下，你可能有一个不想共享的函数，这本质上使其变成了私有的。在这种情况下，导出所有你愿意共享的函数。
+
+如果你想在隐藏一个函数的同时共享两个函数，看起来是：
+
+[`architecture/import/single/util.js`](http://media.pragprog.com/titles/es6tips/code/architecture/import/single/util.js)
+
+```javascript
+function getPower(decimalPlaces) {
+  return 10 ** decimalPlaces;
+}
+
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+function roundToDecimalPlace(number, decimalPlaces = 2) {
+  const round = getPower(decimalPlaces);
+  return Math.round(number * round) / round;
+}
+
+export { capitalize, roundToDecimalPlace };
+```
+
+现在你已经导出了这些函数，你可能想使用它们。要在另一个文件中使用某个函数，请使用 `import` 关键字并将你想导入的函数放在大括号中。在声明要导入的内容后，提供相对于你所在文件的路径。
+
+你也可以导入库代码，你将在下一个提示中看到方法。现在，你只从你拥有的其他文件中导入代码。尝试在一个文件中导入一些工具函数。它看起来像这样：
+
+
+
+
+
+[architecture/import/single/bill.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/single/bill.js)
+
+```javascript
+import { capitalize, roundToDecimalPlace } from './util';
+
+function giveTotal(name, total) {
+  return `${capitalize(name)}, your total is: ${roundToDecimalPlace(total)}`;
+}
+
+giveTotal('sara', 10.3333333);
+// "Sara, your total is: 10.33"
+
+export { giveTotal };
+```
+
+你不需要导入所有内容。如果你只需要单个项目，那也可以的。
+
+[architecture/import/single/name.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/single/name.js)
+
+```javascript
+import { capitalize } from './util';
+
+function greet(name) {
+  return `Hello, ${capitalize(name)}!`;
+}
+
+greet('ashley');
+// Hello, Ashley!
+
+export { greet };
+```
+
+你并不局限于函数。你还可以导出变量和类。
+
+[architecture/import/single/math.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/single/math.js)
+
+```javascript
+const PI = 3.14;
+const E = 2.71828;
+
+export { E, PI };
+```
+
+这看起来可能很熟悉。导出和导入的语法与解构赋值几乎相同。事实上，如果你想将所有导入的内容作为对象的属性保留，你只需要将所有内容导入到一个变量名即可。
+
+语法与解构略有不同。使用星号声明你正在导入所有函数，然后给出变量名。现在你就可以像在对象上一样调用这些函数了。
+
+[architecture/import/each/name.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/each/name.js)
+
+```javascript
+import * as utils from './util';
+
+function greet(name) {
+  return `Hello, ${utils.capitalize(name)}!`;
+}
+
+greet('ashley');
+// Hello, Ashley!
+
+export { greet };
+```
+
+与解构一样，你也可以重命名导入的函数或数据。语法略有不同。你不再像在解构中那样使用冒号，而是使用关键字 `as` 将数据赋值给新变量。
+
+导出已经很简单了，但有一些快捷方法可以让事情变得更简单。
+
+与其声明一个对象并在最后添加每项数据，你可以在每个函数之前添加 `export` 关键字。这会让你的代码变得更容易维护，因为你不需要在文件底部定义对象。
+
+[architecture/import/each/util.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/each/util.js)
+
+```javascript
+function getPower(decimalPlaces) {
+  return 10 ** decimalPlaces;
+}
+
+export function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+export function roundToDecimalPlace(number, decimalPlaces = 2) {
+  const round = getPower(decimalPlaces);
+  return Math.round(number * round) / round;
+}
+```
+
+逐个导出函数不会改变你的导入方式。你可以使用上面提到的任何技术。
+
+当你开始拆分代码时，通常会有包含单个入口点文件。或者你可能有一个更重要的函数。在这些情况下，你可以声明一个默认导出（default export）。这会让导入过程变得短一些。
+
+考虑一个将地址对象转换为字符串的文件。该工具的主要目标是转换对象，它有一个明确的默认导出。但你可能仍然想共享一些辅助函数。
+
+在 `normalize()` 的 `export` 关键字之后添加 `default` 关键字，使其成为主导出。对剩余的任何函数添加 `export`。
+
+[architecture/import/default/address.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/default/address.js)
+
+```javascript
+import { capitalize } from '../single/util';
+
+export function parseRegion(address) {
+  const region = address.state || address.providence || '';
+  return region.toUpperCase();
+}
+
+export function parseStreet({ street }) {
+  return street.split(' ')
+    .map(part => capitalize(part))
+    .join(' ');
+}
+
+export default function normalize(address) {
+  const street = parseStreet(address);
+  const city = address.city;
+  const region = parseRegion(address);
+  return `${street} ${city}, ${region}`;
+}
+```
+
+现在当你想导入 `normalize()` 时，你使用相同的语法但不带大括号。如果你不使用大括号，你将获得默认导出。你不需要使用精确的名称——你可以将默认导出导入到任何变量——但使用相同的名称以保持可读性是一个好习惯。
+
+[architecture/import/default/mail.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/default/mail.js)
+
+```javascript
+import normalize from './address';
+
+function getAddress(user) {
+  return normalize(user.address);
+}
+```
+
+如果你想同时导入默认导出和其他函数，可以使用逗号来匹配导入。
+
+[architecture/import/default/list.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/default/list.js)
+
+```javascript
+import normalize, { parseRegion } from './address';
+
+function getAddress(user) {
+  return normalize(user);
+}
+
+export function getByRegion(users) {
+  return users.reduce((regions, user) => {
+    const { address } = user;
+    const region = parseRegion(address);
+    regions[region] = [...regions[region], address];
+    return regions;
+  }, {});
+}
+
+const bars = [
+  name: 'Saint Vitus',
+  address: {
+    street: '120 manhattan ave',
+    city: 'Brooklyn',
+    state: 'NY',
+  },
+];
+
+getByRegion(bars);
+// { NY: ["120 Manhattan Ave"] }
+```
+
+默认导入在类中特别有用，因为每个文件应该只有一个类，所以没有理由导出其他代码。
+
+[architecture/import/class/address.js](http://media.pragprog.com/titles/es6tips/code/architecture/import/class/address.js)
+
+```javascript
+import { capitalize } from '../single/util';
+
+export default class Address {
+  constructor(address) {
+    this.address = address;
+  }
+
+  normalize() {
+    const street = this.parseStreet(this.address);
+    const city = this.address.city;
+    const region = this.parseRegion(this.address);
+    return `${street} ${city}, ${region}`;
+  }
+
+  parseStreet({ street }) {
+    return street.split(' ')
+      .map(part => capitalize(part))
+      .join(' ');
+  }
+
+  parseRegion(address) {
+    const region = address.state || address.providence || '';
+    return region.toUpperCase();
+  }
+}
+```
+
+
+
+
+```javascript
+parseRegion(address) {
+  const region = address.state || address.providence;
+  return region.toUpperCase();
+}
+```
+
+如你所见，导入和导出是如此直观，几乎没什么好说的。但存在一个小问题——因为你可以轻松地拆分代码，你的项目会开始增长。不过，不用担心。随着项目的增长，你可以将代码拆分到不同的文件中。这让你能够更高效、更有逻辑地组织代码。在技巧 49 [使用组件架构构建应用程序] 中，你将学习一种组织代码的方法。但在你到达那一点之前，你几乎想要使用自己代码库之外的代码。幸运的是，这比以往任何时候都容易。
+
+在接下来的技巧中，你将学习如何使用 `npm` 使用社区代码。
+
+## 技巧 48：利用 npm 利用社区知识
+
+在这个技巧中，你将学习如何使用 `npm` 导入外部代码。
+
+在在上一个技巧中，你学习了如何使用来自不同文件的代码。在这个技巧中，你将学习如何使用由全球开发者创建的社区代码。
+
+就在几年前，如果你想使用开源库，你被迫在本地复制粘贴代码、将库下载到你的项目中，或者在标记语言中使用 `<script>` 标签包含外部依赖项。
+
+你可以获得你的代码——除非外部源宕机——但很难保持依赖项更新，特别是当你将它们存储在本地时。这不仅难以维护，而且你必须在编写自定义代码时假设该库存在。这使得代码非常难以阅读和测试，因为你从未显式地包含过任何东西。
+
+那些日子已经过去了。你现在可以直接将代码下载到项目中，控制版本，并使用熟悉的约定将代码导入到单独的文件。
+
+你通过一个名为 node 包管理器（或 `npm`）的工具来管理这一切。还有一些替代方案，例如 Facebook 的 `yarn` 项目，但它们的工作方式大多相同，所以不用太担心差异。
+
+`npm` 是一个重要的项目，你主要会用它来导入代码，但它还能做很多事情。通过 `npm`，你可以设置项目的元数据和配置信息，运行命令行脚本，甚至发布你的项目供他人使用。
+
+在开始之前，你需要安装 `Node.js`。在此之后，你就可以准备就绪了。当你安装 `Node.js` 时，也会安装 `npm`。
+
+安装 `Node.js` 和 `npm` 之后，你需要初始化项目。打开终端，进入项目根目录，并输入 `npm init`。这将启动一个配置工具，并为你创建一个 `package.json` 文件。
+
+这个 `package.json` 文件将包含项目的元数据信息，如 `name`、`description`、`license` 等。它最终将包含所有的外部代码依赖项。需要注意的是，`npm init` 只创建 `package.json` 文件。它不会设置任何其他隐藏文件或目录。你不需要担心会让你的文件系统变得混乱。
+
+如果你不确定想要什么，不用担心。你以后可以更改所有这些信息。如果有任何疑问，先使用默认值。完成后，你将得到一个像这样的文件：
+
+[architecture/npm/defaults/package.json](http://media.pragprog.com/titles/es6tips/code/architecture/npm/defaults/package.json)
+
+```json
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+
+非常简单。它只是一个包含你刚刚输入的大部分信息的对象。唯一的惊喜是 `scripts` 字段。你可以在这里添加命令行脚本。稍后你会看到更多此类内容。
+
+不要被这个文件的精简误骗了。它是大型 JavaScript 应用最重要的入口点。它也是存储外部依赖项信息的地方。
+
+假设你正在构建一个包含地图（map）的集合，并且你想将一个对象转换为 map。你可以写一些代码将对象转换为 map，但你实际上想要一个快速的解决方案。通过一些研究，你可能会遇到 `Lodash`——一组用于转换数据的工具包。你如何将这些代码获取到你的项目中呢？
+
+除了结构化你的项目，`npm` 还是共享代码的资源。更棒的是，`npm` 会跟踪此类数据，如下载次数、开启的错误（bug）数量、版本等。
+
+如果你打开 `npm` 中 `Lodash` 包的 `npm` 页面，你会发现它每月被下载约 5000 万次。本质上，有 5000 万个项目对 `Lodash` 予以认可。
+
+`npm` 收集的数据是整个 JavaScript 社区的一种默许认可。你不需要避免来自很少使用的项目代码，但你可能想在将其引入你的代码库之前对代码进行调查。幸运的是，总有一个代码库的链接，如果你不确定，可以自己检查。
+
+### 评估开源代码
+
+世界上有很多开源代码。但并非所有代码都是同等的。`npm` 在代码发布前不会对其进行审核（尽管 `npm` 会移除恶意代码），因此你负责评估想要包含在项目中的代码。
+
+最好的起点是下载量。如果每月下载量很大，那么它很可能是安全的代码。信任社区会为你完成部分审查。
+
+接下来，查看问题（issue）数量。如果有很多 issue，说明该项目维护得不良好。不过，要结合语境看 bug。一个下载量巨大的项目由于体量巨大，可能会更多的 bug。
+
+之后，直接深入研究开源代码。`npm` 总是会有指向代码库的链接。代码通常在 `github` 上，但你也会看到 `gitlab` 和 `bitbucket`。去那里查看该项目。你会看到的两个最重要的信息是最后的提交（commit）日期和拉请求（pull requests）。
+
+如果代码在过去六个月内没有提交，你可能应该放弃。它可能被遗弃了。
+
+拉请求是有人提交代码更新。这些更新在包含之前必须经过维护者的批准。如果有过期的合并请求（merge requests），这是代码管理不力的另一个线索。没有什么比提交一个合并请求并看着它停滞几个月甚至几年更令人沮丧的。
+
+最后，当有疑问时，查看实际代码。有时很难找到头绪，但这是一个很好的练习，你通常一眼看出代码结构是否良好。如果事情整洁、有序并遵循标准约定，那么你可能是安全的。如果代码充斥着语法错误，你应该尖叫着逃离。如果你不会在自己的代码库中接受这些代码，就不要包含项目。毕竟，当你导入代码时，你就是将其接纳到了你的代码库中。
+
+相信你的直觉。与其寻找其他项目或通过老办法复制粘贴从开源库中提取部分内容，不如包含一个可能臃肿或充满 bug 的项目。
+
+一旦你满意代码值得使用，你就可以通过运行 `npm install --save lodash` 将其安装到项目中。并不是严格需要使用 `--save` 标记，但这是一个好习惯，因为你有两种类型的代码需要安装。稍后会详细介绍。
+
+
+
+
+
+`npm install` 命令会执行几项操作。如果没有 `node_modules` 目录，该命令将创建一个并将包下载到其中。接下来，它会更新你的 `package.json` 以包含你正在导入的代码的版本号。最后，它会创建一个 `package-lock.json` 文件，其中包含了已安装代码版本的详细信息，以及该代码所需的任何其他库。
+
+当你安装一个包时，实际上可能安装了多个包。它们都会存在于你的 `package-lock.json` 或 `node_modules/` 目录中。你安装的原始代码 `lodash` 将是唯一出现在你的 `package.json` 文件中的代码。这样做是为了让其他开发者看到你需要哪些顶层项目，而无需陷入依赖项的细节中。
+
+这是你更新后的 `package.json` 文件。注意，它现在有一个 `dependencies` 字段。
+
+[architecture/npm/save/package.json](http://media.pragprog.com/titles/es6tips/code/architecture/npm/save/package.json)
+
+```json
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "⁴.17.4"
+  }
+}
+```
+
+现在你已经有了代码，是时候使用它了。导入代码非常简单。你使用上一个技巧中相同的 `import` 命令，但因为你安装的是库，所以你不需要提供路径。
+
+以下是你是导入 `lodash` 的示例。你可以导入单个函数，例如 `fromPairs()`，也可以导入默认对象。默认的 `lodash` 导入实际上包含了 `fromPairs()`，但某些库会将它们进行拆分。
+
+[architecture/npm/utils/merge.js](http://media.pragprog.com/titles/es6tips/code/architecture/npm/utils/merge.js)
+
+```javascript
+import lodash, { fromPairs } from 'lodash';
+
+export function mapToObject(map) {
+  return fromPairs([...map]);
+}
+
+export function objectToMap(object) {
+  const pairs = lodash.toPairs(object);
+  return new Map(pairs);
+}
+```
+
+看起来很熟悉，对吧？很棒的一点是，无论你在哪里导入代码，都使用相同的语法。当你阅读代码时，很容易看出哪些函数来自代码库之外。任何不使用相对导入的代码都必须外部代码。
+
+如果 `npm` 只跟踪依赖项，那么它将是一个很棒的项目，但它做的远更多。你通常需要某些对代码库执行工作但又不属于生产构建部分的代码。
+
+例如，你需要一个测试运行器，但你不需要将测试运行器放在你的生产代码中。`npm` 会处理开发依赖项，并提供运行它们的整洁接口。
+
+假设你想向项目中添加 `prettier`。`Prettier` 是一个用于格式化代码以匹配风格指南的工具。它是一个开发工具，而不是生产依赖。
+
+因为你不需要在生产环境中它，所以使用 `npm install --save-dev prettier` 标志进行安装。注意你正在使用 `--save-dev` 标志。这将更新你的 `package.json` 文件，但它会将依赖项放在不同的键下。
+
+[architecture/npm/saveDev/package.json](http://media.pragprog.com/titles/es6tips/code/architecture/npm/saveDev/package.json)
+
+```json
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "⁴.17.4"
+  },
+  "devDependencies": {
+    "prettier": "¹.8.2"
+  }
+}
+```
+
+当然，现在你可能想使用它了。`Prettier` 安装在你的 `node_modules` 目录中，这意味着你不能直接在命令行中访问它。假设你想确保所有的制表符宽度均为四个空格。文档说你可以运行此命令来转换代码：`prettier --tab-width=4 --write ./code/*.js`。
+
+如果你在本地安装了代码，该命令将无法工作。如果你是全局安装的包——`npm install -g prettier`——你就可以运行该命令，但该包就不会特定存在于你的项目中。你必须以某种方式告知其他开发者项目有一个全局依赖项。
+
+你可以使用 `npm` 脚本解决这个问题。通过 `npm` 脚本，你运行完全相同的命令，但脚本会在 `node_modules` 目录中查找。要运行该命令，将其添加到 `package.json` 文件的 `scripts` 对象中。将 `scripts` 对象更改为包含一个名为 `clean` 的键，其值为 `prettier --tab-width=4 --write ./code/*.js`。
+
+现在，当你处于与 `package.json` 文件相同的目录下时，你可以运行 `npm run clean`，`npm` 将使用本地安装的 `prettier` 包执行命令。
+
+[architecture/npm/script/package.json](http://media.pragprog.com/titles/es6tips/code/architecture/npm/script/package.json)
+
+```json
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "prettier --tab-width=4 --write ./code/*.js"
+  }
+}
+```
+
+
+
+
+问题在于，这些部分并不是真正分离的关注点。除了少数全局样式外，CSS 的设计是为了与特定的标记（markup）配合工作。当这些标记被移除时会发生什么？如果你有自律的开发者，他们会移除相关的 CSS。但大多数情况下，它留了下来。它从未被使用——只是占据了空间。
+
+随着开发者工具的改进，一种新模式应运而出。这种新模式就是组件架构。组件是将所有相关代码组合到的单个目录。然后你通过逐个添加部分来构建网页或应用程序——按钮在侧边栏中，侧边栏在页面中——直到你拥有可以运行的应用程序。
+
+组件架构并非没有问题。组件架构最大的问题是它依赖于构建工具，并在某种程度上依赖于框架。在这个提示中，你将处理 React 代码。你将使用由 `create-react-app.` 开发的脚架。这意味着你不需要担心设置构建系统。你将在下一个提示中对此进行简单探索。
+
+然而，重要的是，组件架构并不是 React 特有的。你可以在各种框架中应用这个理念。Cody Lindley 就这个主题写过过很棒的文章。尽管如此，框架仍然省去了一些搭建基础的麻烦。
+
+### 基础组件示例
+
+为了看到组件架构的运作，请构建一个基础组件：版权声明。版权声明包含当前年份、版权声明和一些样式。通过组件架构，你将所有内容组合成一个简单的包。这里有一个例子：
+
+[architecture/component/simplifying-js-component/src/components/Copyright/Copyright.js](http://media.pragprog.com/titles/es6tips/code/architecture/component/simplifying-js-component/src/components/Copyright/Copyright.js)
+
+```javascript
+import React from 'react';
+import './Copyright.css';
+
+export default function CopyrightStatement() {
+  const year = new Date().getFullYear();
+  return (
+    <div className="copyright">
+      Copyright {year}
+    </div>
+  );
+}
+```
+
+开始之前，注意标记是在 `return` 语句中，而 CSS 类名是 `className`。不要担心这个。这种特殊的标记被称为 `JSX`，它是 React 框架的一部分。你可以假装 HTML 是一个独立的东西。它实际上确实是分离的。对于本提示而言，它只是恰好生活在 JavaScript 函数内部的标记。
+
+接下来，注意示例顶部的代码路径。大多数时候，你可以忽略它，但在这种情况下，它是相关的。`simplifying-js-component` 是项目的根目录。代码位于 `src/components` 目录。还有一个 `public` 目录，它最终将包含编译后的代码。浏览器无法处理组件，因此一切最终将组合为简单的组件。
+
+`components` 目录包含了你处理的每一个组件。每个组件将有自己独立的目录。在这种情况下，有一个名为 `Copyright` 的目录，其中包含 `Copyright.css`、`Copyright.js` 和 `Copyright.spec.js`。大写字母命名也是 React 的惯例。
+
+`Copyright` 目录包含了版权组件所需的一切。如果你想共享该组件，可以将其放在单独的仓库中，或者直接复制粘贴到另一个项目中。如果你决定不再需要该版权声明，可以删除整个目录。你不需要担心死死的 CSS 存于其他地方。一切都在一起。
+
+提到 CSS，注意此文件是如何直接导入 CSS 的。因为你不是从 CSS 中导入对象，你只是包含了整个文件。构建工具将知道如何处理它。此示例的 CSS 文件非常短。它包含的只是 `font-size`、`margin` 和 `float`。
+
+[architecture/component/simplifying-js-component/src/components/Copyright/Copyright.css](http://media.pragprog.com/titles/es6tips/code/architecture/component/simplifying-js-component/src/components/Copyright/Copyright.css)
+
+```css
+.copyright {
+  font-size: 10px;
+  margin: 1em 1em 1em 0;
+  float: left;
+}
+```
+
+在 JavaScript 文件中，你获取当前年份并将其添加到标记中。注意这有多简单。关于该版权声明，你需要的所有信息都在一个地方。你不需要猜测年份是计算出来的还是硬编码的。它就在标记旁边。如果你需要更改外边距，不需要搜索 CSS。它在同一个目录中。
+
+### 可复用组件
+
+稍微复杂一点的组件怎么样？考虑一个带有图标的按钮。按钮需要样式和标记，但它还需要图像资源和点击操作。
+
+这一次，你还想让组件变得可复用。这意味着你应该尽可能少地硬编码选项。不要显式说明点击时会发生什么。相反，将点击操作注入到组件中。向组件传递操作或资源是你在提示 32 中探索过的依赖注入的另一种形式。它保持了灵活性和可复用性。
+
+[architecture/component/simplifying-js-component/src/components/IdeaButton/IdeaButton.js](http://media.pragprog.com/titles/es6tips/code/architecture/component/simplifying-js-component/src/components/IdeaButton/IdeaButton.js)
+
+```javascript
+import React from 'react';
+import './IdeaButton.css';
+import idea from './idea.svg';
+
+export default function IdeaButton({ handleClick, message }) {
+  return (
+    <button className="idea-button" onClick={handleClick}>
+      <img className="idea-button__icon" src={idea} alt="idea icon" />
+      {message}
+    </button>
+  );
+}
+```
+
+在 React 中，你可以在函数的参数中访问注入的依赖。你可以使用解构赋值将它们拆分。`message` 将取决于注入的内容而改变。大括号是一种模板语言，它们围绕着变量信息。换句话之，按钮将包含 `message` 变量的值。
+
+还要注意你正在导入图像。与你导入 CSS 但从不使用它不同，在这种情况下，你将图像导入到一个变量。变量包含了图像的路径，因此使用大括号将 `src` 设置为变量。
+
+现在你有了这些部分，可以开始构建页面了。在这种情况下，页面只是另一个组件！这个页面将包含想法按钮和页脚中的版权通知。你仍然处于 React 领域，所以你将消息作为特殊的 HTML 属性注入。其他框架使用不同的惯例来注入数据。但它们都允许你传递一些信息——这就是组件如此强大的原因。
+
+[architecture/component/simplifying-js-component/src/App.js](http://media.pragprog.com/titles/es6tips/code/architecture/component/simplifying-js-component/src/App.js)
+
+```javascript
+import React from 'react';
+
+import './App.css';
+import IdeaButton from './components/IdeaButton/IdeaButton';
+import Copyright from './components/Copyright/Copyright';
+
+function logIdea() {
+  console.log('Someone had an idea!');
+}
+
+export default function App() {
+  return (
+    <div className="main">
+      <div className="app">
+        <IdeaButton message="I have an idea!" />
+      </</div>>
+    </div>
+  );
+}
+```
+
+
+
+
+```javascript
+<div handleClick={logIdea}>
+  <footer>
+    <Copyright />
+    <IdeaButton message="Footer idea!" handleClick={logIdea} />
+  </footer>
+</div>
+); }
+```
+
+由于 `App.js` 是主组件，它位于源代码根目录下。否则，情况也一样。它导入代码，包含所有部分，并将它们组合在一起。在这种情况下，你重用了两次按钮组件。每个组件将有一个不同的消息。正如你在下面的图中看到的，结果并不惊艳，但它确实展示了每个部分。
+
+![images/component.png](img/component.png)
+
+下载源代码并尝试一下。代码中包含一个 `README.md`，你只需要运行两条命令就能让它运行。之后，尝试修改一些 `CSS`。尝试添加一张新图片。你会发现，当所有内容都处于一个逻辑位置时，处理组件是多么简单。
+
+如果你检查了页面，你会发现一些有趣的东西。你将单独的 `CSS` 文件合并为一个文件，并将该文件移动到单独的 `css` 目录。图片也发生了同样的情况。在这种情况下，构建工具仍然会将部分分离到不同的目录中。这太好了！在用户层面将部分分离并没有问题。目标是让开发变得更容易。
+
+从直觉上来说，组件架构可能是合理的。将相似的内容放在一起。唯一的缺点是将所有内容连接起来并不容易。组件架构之所以有效，是因为你可以使用非常棒的工具来智能地组合代码。
+
+在下一个提示中，你将学习如何使用构建工具编译前端代码。
+
+## 提示 50：使用构建工具组合组件
+
+在本提示中，你将学习如何使用构建工具编译 `JavaScript` 代码和资源。
+
+在上一个提示中，你了解了组件架构的优势。你还了解了组件架构的一个大问题：它无法在浏览器中原生运行。
+
+同样在上一个提示中，你使用了 `create-react-app` 提供的工具来使你的项目编译并运行。这很好。你应该始终利用预设计的构建工具。每个项目都有一个。有时会有官方项目——`angular-cli` 和 `EmberCLI` 就是例子——如果没有官方项目，可以在 `github` 等代码仓库中搜索启动包（Starter Packs）。然而，你最终需要自定义你的构建过程。
+
+在本提示中，你将创建一个基本的构建过程。构建工具可能会让人精疲力竭，跟上最新的趋势和工具可能困难。不要气馁。构建工具仅仅是你逐个处理代码的一种方式。
+
+开始，从上一个提示的组件取一个简化版本。首先删除除了 React `JSX` 形式的某些 `HTML` 和一些 `JavaScript` 之外的所有内容。当你拥有的资源较少时，构建工具会更容易。这里有一个基础容器组件：
+
+[architecture/build/initial/src/App.js](http://media.pragprog.com/titles/es6tips/code/architecture/build/initial/src/App.js)
+
+```javascript
+import React from 'react';
+import Copyright from './components/Copyright/Copyright';
+export default function App() {
+  return (
+    <div className="main">
+      <footer>
+        <Copyright />
+      </footer>
+    </div>
+  );
+}
+```
+
+这是你的版权信息组件的精简版本：
+
+[architecture/build/initial/src/components/Copyright/Copyright.js](http://media.pragprog.com/titles/es6tips/code/architecture/build/initial/src/components/Copyright/Copyright.js)
+
+```javascript
+import React from 'react';
+export default function CopyrightStatement() {
+  const year = new Date().getFullYear();
+  return (
+    <div className="copyright">
+      Copyright {year}
+    </div>
+  );
+}
+```
+
+尽管这些文件非常简单，但你无法在浏览器中运行它们。即使你可以运行，你也无法在旧版浏览器中运行它们。你需要一个工具将 `ES6` 语法——`import` 和 `export`——以及 `JSX` 转换为兼容代码。
+
+幸运的是，有一个名为 `Babel` 的神奇工具，它可以将前沿的 `JavaScript` 转换为浏览器友的代码。`Babel` 是你处理现代 `JavaScript` 时最重要的工具。它不仅转换你的 `ES6+` `JavaScript`，你甚至可以配置 `Babel` 使用仍在委员会讨论中的语法。
+
+要开始，你需要安装 `Babel` 命令行界面 (`cli`) 以及用于转换 `ES6+` 的 `preset-env` 和用于转换 react 代码的 `babel-present-react`。
+
+安装命令看起来应该熟悉。这次，你通过一个命令安装了三个包：
+
+```bash
+npm install --save-dev babel-cli babel-preset-env babel-preset-react
+```
+
+接下来你需要做的是设置一个 `.babelrc` 文件来存放你的配置信息。此文件告诉 `Babel` 你拥有什么种代码以及 `Babel` 需要如何转换它。在这种情况下，你有 `ES6` 代码——用 `env` 表示——以及 react 代码。
+
+[architecture/build/initial/.babelrc](http://media.pragprog.com/titles/es6tips/code/architecture/build/initial/.babelrc)
+
+```json
+{ "presets": ["env", "react"] }
+```
+
+现在，向你的 `package.json` 文件添加一个脚本，你就可以准备编译了。注意，你将编译后的信息输出到 `build` 目录下的单个文件 `bundle.js`。这是你最终的 `package.json`。
+
+[architecture/build/initial/package.json](http://media.pragprog.com/titles/es6tips/code/architecture/build/initial/package.json)
+
+```json
+{
+  "name": "initial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/index.js -o build/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "⁶.26.0",
+    "babel-preset-env": "¹.6.1",
+    "babel-preset-react": "⁶.24.1"
+  },
+  "dependencies": {
+    "react": "¹⁶.1.1",
+    "react-dom": "¹⁶.1.1"
+  }
+}
+```
+
+最后，更新你的 `index.html` 使用编译后的代码：
+
+[architecture/build/initial/index.html](http://media.pragprog.com/titles/es6tips/code/architecture/build/initial/index.html)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sample</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./build/bundle.js"></script>
+</body>
+</html>
+```
+
+如果你尝试在浏览器中打开该文件，你会遇到一个问题。控制台将显示错误：`Uncaught ReferenceError: require isn’t defined`。
+
+`Babel` 转换代码，但它不包含处理编译后的导入和导出的模块加载器。你有几种模块加载器可选。目前最流行的模块加载器是 `webpack` 和 `rollup.js`。在这个示例中，你将使用 `webpack`。
+
+`webpack` 是一个可以处理从组合你的 `JavaScript`、处理你的 `CSS` 或 `SASS` 到图片转换的一切的项目。`webpack` 可以处理许多文件类型，是因为你可以根据文件扩展名声明不同的动作——在 `webpack` 中被称为 loaders。
+
+
+
+
+为了让 `webpack` 运行起来，你需要安装它。你还需要为 `Babel` 安装一个加载器（loader）。`webpack` 文档鼓励你将加载器视为另一个构建工具中的任务。因为使用 `Babel` 编译代码只是获取可用 JavaScript 的一步，所以你需要 `babel-loader`。你可以在同一个命令中同时安装它们：`npm install --save-dev babel-loader webpack`。
+
+你还需要创建一个 `webpack.config.js` 文件。在文件中，声明一个入口点（entry point）和一个输出路径（output path）。之后，你需要告诉 `webpack` 如何处理它遇到的代码。这就是加载器派上用场。
+
+到此时，你可能有些不知所措。所以请记住：不要考虑整个系统——只需考虑每一步。你首先需要转换 ES6 和 React 代码，所以你安装了 `Babel`。接下来，你想将一切整合在一起，所以你安装了 `webpack`。现在，你需要明确声明你想让 `webpack` 如何处理 JavaScript。接下来，你将为样式和资源进行类似的声明。
+
+Webpack 使用正则表达式来决定对每个文件使用哪种加载器。因为你处理的是 JavaScript，你只想匹配 `.js` 的文件。当 `webpack` 遇到带有 `.js` 扩展的文件（例如 `Copyright.js`）时，你需要告诉它使用哪种加载器。在这种情况下，它需要运行 `babel-loader`。
+
+[architecture/build/webpack/webpack.config.js](http://media.pragprog.com/titles/es6tips/code/architecture/build/webpack/webpack.config.js)
+
+```javascript
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  module: {
+    loaders: [
+      {
+        test: /\.*js?$/,
+        use: 'babel-loader',
+      },
+    ],
+  },
+  output: {
+    filename: 'build/bundle.js',
+    path: path.resolve(__dirname),
+  },
+};
+```
+
+最后一步是更新你的 `package.json` 脚本来调用 `webpack`。`Webpack` 会寻找你的配置文件，所以不需要不需要其他标志或参数。你只需要将：
+
+```json
+"scripts": {
+  "build": "babel src/index.js -o build/bundle.js"
+}
+```
+
+更改为：
+
+```json
+"scripts": {
+  "build": "webpack"
+}
+```
+
+如果你运行它，最终就能在浏览器中看到你的代码了。尝试一下吧。
+
+现在 JavaScript 已经可以工作了，是有趣的时候。记住，目标是让组件导入它们所有的依赖项。你需要 `webpack` 来编译你的 JavaScript，还需要编译你的 CSS 并加载你的图片。
+
+从 CSS 开始。回到你的 `Copyright.js` 文件并导入 CSS。它看起来应该和上一个技巧中一模一样。
+
+[architecture/build/css/src/components/Copyright/Copyright.js](http://media.pragprog.com/titles/es6tips/code/architecture/build/css/src/components/Copyright/Copyright.js)
+
+```javascript
+import React from 'react';
+import './Copyright.css';
+
+export default function CopyrightStatement() {
+  const year = new Date().getFullYear();
+  return (
+    <div className="copyright">
+      Copyright {year}
+    </div>
+  );
+}
+```
+
+现在你需要安装一个 CSS 加载器并更新你的 `webpack.config.js` 文件。有很多处理 CSS 的工具，但在这种情况下，保持简单。安装并添加两个加载器——一个解释 CSS 文件的 CSS loader，以及一个将样式注入到页面 `<head>` 元素的 style loader。
+
+`npm install --save-dev css-loader style-loader`
+
+现在你已经安装了加载器，通过添加对以 `css` 结尾的文件的测试来更新 webpack 配置。这次你将不会使用单个加载器。你会使用两个加载器——`css-loader` 和 `style-loader`——所以你需要一个字符串数组而不是单个字符串。先添加 `style-loader`，然后是 `css-loader`。
+
+[architecture/build/css/webpack.config.js](http://media.pragprog.com/titles/es6tips/code/architecture/build/css/webpack.config.js)
+
+```javascript
+module: {
+  loaders: [
+    {
+      test: /\.*css$/,
+      use: [
+        'style-loader',
+        'css-loader',
+      ],
+    },
+    {
+      test: /\.*js?$/,
+      use: 'babel-loader',
+    },
+  ],
+},
+```
+
+当你运行构建脚本并打开 `index.html` 时，你的组件将拥有正确的样式。
+
+令人印象深刻，对吧？这就是开发者爱上 `webpack` 的原因。你可以将所有资源打包在一起，并对每种文件类型调用不同的动作或一系列动作。
+
+
+
+
+到这里，你已经拥有了编写现代 JavaScript 应用所需的所有工具。最后一个提示略有不同。CSS 和 HTML 也在不断成长进化——以前需要 JavaScript 处理的操作现在可以由 CSS 处理。在这种情况下，你应该乐意地放弃 JavaScript 并使用其他工具。
+
+在下一个提示中，你将看到如何使用 CSS 为页面元素制作动画。
+
+## 提示 51：利用 CSS 实现动画
+
+在本次提示中，你将学习如何使用 CSS 进行动画。
+
+上一个提示甚至不是关于 JavaScript 的提示。相反，它是关于何时停止使用 JavaScript 的提示。
+
+编写可读性代码的关键在于为任务选择最佳工具。JavaScript 曾经是制作动画的最佳工具。事实上，曾经有整个库专门用于使用 JavaScript 创建下拉菜单或制作滑入元素。
+
+现在简单得多了。CSS 正在取代 JavaScript 处理简单动画。这太棒了。现在你不用再担心使用正确的超时时间或计算奇数尺寸的限制。CSS 会为你处理好这一切。对于更复杂的动画，你仍然需要 JavaScript，但对于大多数常见任务，CSS 的效果非常好。
+
+从创建一个带有右侧菜单的简单页面开始。标记结构非常简单。你需要一些文本、一个用于切换侧边菜单的按钮以及菜单本身。
+
+`[architecture/css/initial/index-truncated.html`](http://media.pragprog.com/titles/es6tips/code/architecture/css/initial/index-truncated.html)
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <h1>Moby Dick</h1>
+    <button id="show">See More</button>
+    <section class="menu" id="sidebar">
+      <h2>Other Works</h2>
+      <ul>
+        <li>Bartleby, the Scrivener</li>
+        <li>Billy Budd</li>
+      </ul>
+    </section>
+    <section class="content">
+      <p>
+        Call me Ishmael.
+        <!-- More content -->
+      </p>
+    </section>
+  </div>
+</body>
+</html>
+```
+
+首先使用简单的 CSS 将菜单放置在文本上方。
+
+`[architecture/css/initial/main.css`](http://media.pragprog.com/titles/es6tips/code/architecture/css/initial/main.css)
+
+```css
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+button {
+  border: black solid 1px;
+  background: #ffffff;
+}
+
+.menu {
+  width: 300px;
+  padding: 0 2em;
+  float: right;
+  border: black solid 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  background: #ffffff;
+}
+```
+
+正如你在图中所示，当菜单完全打开时，它会覆盖部分文字。你稍后会改变这一点。
+
+![images/cssInitial.png](img/cssInitial.png)
+
+现在你设置好了页面，将添加一些 CSS 动画来让菜单滑入出页面。
+
+第一步是隐藏侧边菜单。在你的 `.menu` 类中添加以下属性。
+
+```css
+transform: translateX(calc(300px + 4em + 2px));
+```
+
+该属性和值——`transform: translateX`——将页面移动到容器 div 之外，使其变得不可见。计算的是菜单的宽度加上内边距和边框。
+
+菜单隐藏后，是时候添加过渡（transition）了。CSS 过渡是属性属性的动画。换句话说，动画只是同名两个属性之间的视觉过渡。
+
+这没问题，但如何更改属性呢？事实证明，你终究需要一点 JavaScript。为按钮添加点击事件监听器。按钮的回调函数将切换菜单上的 `.display` 类。第一次点击按钮时，它会添加该类；第二次点击时，它会移除该类。
+
+`[architecture/css/middle/open.js`](http://media.pragprog.com/titles/es6tips/code/architecture/css/middle/open.js)
+
+```javascript
+const sidebar = document.getElementById('sidebar');
+document.getElementById('show')
+  .addEventListener('click', () => {
+    sidebar.classList.toggle('display');
+  });
+```
+
+接下来，你需要更新样式表，以包含 `.menu.display` 的样式。
+
+`[architecture/css/middle/main.css`](http://media.pragprog.com/titles/es6tips/code/architecture/css/middle/main.css)
+
+```css
+.menu {
+  /* 之前的样式 */
+  transform: translateX(calc(300px + 4em + 2px));
+}
+
+.menu.display {
+  transform: translateX(0);
+}
+```
+
+当你添加该类时，你的变换从 `calc(300px + 4em + 2px)` 变为 `0`。因为浏览器知道该属性正在发生变化，它可以触发动画。剩下的工作就是告诉元素如何对这种变化的属性做出响应。
+
+CSS 过渡是一组指令，告诉页面从初始属性值移动到最终属性值时该做什么。查看 Mozilla Developer Network（MDN）文档以了解不同选项。[[63]](#f_0070.xhtml_FOOTNOTE-63))
+
+首先，使用 `transition-property` 声明需要过渡的属性。在这种情况下，你只想动画 `transform`，因此将值设置为 `transform`。接下来，使用 `transition-duration` 设置过渡时长。
+
+过渡时间取决于它的设置，看起来可能非常快或非常慢。在这种情况下，将其设置为 `600ms`。最后，你需要用 `transition-timing-function` 说明过渡应该如何执行。这一个有点棘手。它可以让过渡在开始时更快、在结束时更快，或者在过程中保持速度一致[[64]](#f_0070.xhtml_FOOTNOTE-64))。将值设置为 `linear` 以保持整个过程平滑滑入。
+
+以下是为 `.menu.display` 更新的 CSS：
+
+`[architecture/css/animate/main.css`](http://media.pragprog.com/titles/es6tips/code/architecture/css/animate/main.css)
+
+```css
+.menu.display {
+  /* 其他样式 */
+  transform: translateX(0);
+  transition-property: transform;
+  transition-duration: 600ms;
+  transition-timing-function: linear;
+}
+```
+
+当你点击按钮时，你应该看到菜单滑入到位。但当你再次点击它时，菜单直接消失了。问题在于你只在添加 `.display` 类时声明了过渡。没问题——你只需要在基础 `.menu` 样式中添加过渡即可。不过这次你可以简化操作。你可以将所有三个属性——`transition-property`、`transition-duration` 和 `transition-timing-function`——合并到一个名为 `transition` 的单个属性中。你还可以通过将过渡设置为 `all` 来将过渡应用于任何变化的属性。
+
+一旦更新了样式表，你就能用极少的 JavaScript 实现点击按钮滑入、再次点击滑出的菜单。
+
+`[architecture/css/animate/main.css`](http://media.pragprog.com/titles/es6tips/code/architecture/css/animate/main.css)
+
+```css
+.menu {
+  /* 其他样式 */
+  transform: translateX(calc(300px + 4em + 2px));
+  transition: all 600ms linear;
+}
+```
+
+诚实地说，你只需要 `.menu` 类上的过渡，除非你想让滑入和滑出的效果不同。过渡和其他任何属性一样。除非你用更具体的选择器覆盖它们，否则它们会冒泡到所有元素上。
+
+
+
+
+
+这种简单的滑入效果以前需要大量的 JavaScript 代码。现在只需要一行 `CSS` 和一个简单的类切换（class toggle）。网页开发之所以令人享受的原因之一是，工具集正在不断改进。HTML 更加语义化了。样式更加灵活。JavaScript 更加简单且易于阅读。
+
+JavaScript 是一门很棒的语言，我希望你学会了爱它。它简单、富有表达式且非常优雅。最棒的部分是它一直在不断变得更好。你已经了编写令你自豪的 JavaScript 所需的一切。现在你需要做的就是开始构建。玩得愉快。
+
+### 脚注
+
+[[52]](#f_0067.xhtml_FNPTR-52)
+[lodash](https://lodash.com/)
+
+[[53]](#f_0067.xhtml_FNPTR-53)
+[lodash 包](https://www.npmjs.com/package/lodash)(https://www.npmjs.com/package/lodash)
+
+[[54]](#f_0067.xhtml_FNPTR-54)
+[prettier](https://prettier.io)
+
+[[55]](#f_0068.xhtml_FNPTR-55)
+[create-react-app](https://github.com/facebookincubator/create-react-app)(https://github.com/facebookincubator/create-react-app)
+
+[[56]](#f_0068.xhtml_FNPTR-56)
+[前端应用框架与组件架构](https://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)(https://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)
+
+[[57]](#f_0069.xhtml_FNPTR-57)
+[create-react-app](https://github.com/facebookincubator/create-react-app)(https://github.com/facebookincubator/create-react-app)
+
+[[58]](#f_0069.xhtml_FNPTR-58)
+[babel](https://babeljs.io/)
+
+[[59]](#f_0069.xhtml_FNPTR-59)
+[webpack](https://webpack.js.org)
+
+[[60]](#f_0069.xhtml_FNPTR-60)
+[rollup](https://rollupjs.org/)(https://rollupjs.org/)
+
+[[61]](#f_0069.xhtml_FNPTR-61)
+[webpack 加 ers](https://webpack.js.org/concepts/#loaders)(https://webpack.js.org/concepts/#loaders)
+
+[[62]](#f_0069.xhtml_FNPTR-62)
+[webpack 概念](https://webpack.js.org/concepts/)(https://webpack.js.org/concepts/)
+
+[[63]](#f_0070.xhtml_FNPTR-63)
+[使用 CSS 过渡](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+
+[[64]](#f_0070.xhtml_FNPTR-64)
+[过渡过渡时间函数](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)(https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
+
+Copyright © 2018, The Pragmatic Bookshelf。
+
+## 参考文献
+
+[Fog13]
+Michael Fogus. *Functional JavaScript*. O’Reilly & Associates, Inc., Sebastopol, CA, 2013.
+
+[Sim14]
+Kyle Simpson. *You Don’t Know JS: this Object Prototypes*. O’Reilly & Associates, Inc., Sebastopol, CA, 2014.
+
+[Sub16]
+Venkat Subramaniam. *Test-Driving JavaScript Applications*. The Pragmatic Bookshelf, Raleigh, NC, 2016.
+
+Copyright © 2018, The Pragmatic Bookshelf. 感谢！
+
+你觉得这本书怎么样？请告诉我们。请花一点时间邮件至 `support@pragprog.com` 向我们提供你的反馈。告诉我们你的故事，你就有机会赢得免费的电子书。请使用主题行“Book Feedback”。
+
+准备好阅读下一本优秀的 Pragmatic Bookshelf 书籍了吗？快来到 [`pragprog.com`](https://pragprog.com) 并使用优惠码 `BUYANOTHER2018` 为你的下一本电子书享受 7 折扣い优惠。
+
+在禁止、限制或不受欢迎的地方无效。不要在水附近使用电子书。如果皮疹持续，请看医生。这不适用于《The Pragmatic Programmer》电子书，因为它比 Pragmatic Bookshelf 本身还要老。副作用可能包括知识和技能的增加、市场能力的提升以及深度的满意。请定期增加剂量。
+
+感谢您的持续支持，
+
+Andy Hunt, 出版人
+
+![images/Coupon.png](img/Coupon.png)
+
+## 你可能感兴趣……
+
+*选择封面获取更多信息*
+
+### 保护你的 Node.js Web 应用
+
+![](http://pragmaticprogrammer.com/titles/kdnodesec)
+
+网络犯罪分子将你的 Web 应用列为他们的攻击目标。他们寻找并利用你 Web 应用中常见的安全错误来窃取用户数据。学习如何保护你的 `Node.js` 应用、数据库和 Web 服务器，以避免这些安全漏洞。发现针对 Web 应用的主要攻击向量，并实施安全最佳实践和有效的应对措施。安全编码将使你成为更强大的 Web 开发人员和分析师，并将保护好你的用户。
+
+Karl Düüna
+(230 页) ISBN: 9781680500851 $36
+
+### Web 测试之之路
+
+![](http://pragmaticprogrammer.com/titles/jrtest)
+
+这本书是写给每一个需要测试 Web 的人的。作为一名测试人员，你将实现测试自动化。作为一名开发者，你将构建更健壮的解决方案。作为一个团队，你们将获得一套词汇和一种协调如何编写和组织 Web 自动化测试的方法。遵循测试金字塔，提升你在用户界面测试、集成测试和单元测试方面的技能。你的新技能将让你有空去做其他更重要的事情，同时让计算机去做它最擅长的事情：快速运行成千上万个重复性任务。
+
+Jonathan Rasmusson
+(256 页) ISBN: 9781680501834
+
+### 数据结构与算法常识指南
+
+![](http://pragmaticprogrammer.com/titles/jwdsal)
+
+如果你上一次看到算法是在大学课程或工作中，那么你错过了它们能发挥的作用。发现如树和图等结构。使用大 O 表示法决定哪种算法最适合你的环境。
+
+Jay Wengrow
+(218 页) ISBN: 978168050242 $29
+
+### 设计它！
+
+![](http://pragmaticprogrammer.com/titles/mkdsa)
+
+不要凭偶然进行工程设计——要像你真诚想要那样设计它！这本书以基础为根基并充满了实用的设计方法，对于准备好提升设计技能的程序员来说，这是软件架构的完美入门介绍。向正确的利益相关者提正确的问题，探索设计方案，分享你的设计决策，并促进快速、有效且有趣的协作工作讨会。成为一名更好的程序员、领导者和设计师。
+
+Michael Keeling
+(358 页) ISBN: 9781680502091 $45.95
+
+### tmux 2
+
+![](http://pragmaticprogrammer.com/titles/bhtmux2)
+
+鼠标正在拖慢你的速度。你在编辑器和控制台之间切换的时间消耗了你的生产力。使用 `tmux` 来控制你的环境，它是一个终端复用器，你可以根据自己的工作流进行定制。在针对 `tmux 2.3` 的更新第二版中，你将自定义、脚本化并利用 `tmux` 的独特能力来打造一个高效的终端环境，让你的手指始终留在键盘的起始行上。
+
+Brian P. Hogan
+(102 页) ISBN: 9781680502213 $21.95
+
+### 现代 Vim
+
+![](http://pragmaticprogrammer.com/titles/modvim)
+
+使用 `Vim 8` 的新功能以及深受爱的畅销书《Practical Vim》的续作，将 `Vim` 变为一个全开发环境。将你的编辑器与构建、测试、检查、索引和搜索代码库的工具集成。通过 `Neovim` 发现 `Vim` 的未来：它是 `Vim` 的分支，包含一个内置终端模拟器，将改变你的工作流。无论你选择切换到 `Neovim` 还是坚持 `Vim 8`，你都会成为一名更好的开发者。
+
+Drew Neil
+(190 页) ISBN: 9781680502626 $39.95
+
+### 软件设计 X 射线
+
+![](http://pragmaticprogrammer.com/titles/atevol)
+
+
+
+
+
+你是否正在一个成本超支、所谓的“死亡行军”以及与遗留代码怪物进行英雄式斗争成为常态的代码库中工作？基于开发者处理代码的行为数据，通过新颖的方法来识别和优先处理技术债，以此对抗这些敌人。这仅仅是一个开始。因为良好的代码不仅涉及技术设计，还涉及社会设计，你可以发现人与代码之间惊讶的依赖关系，从而解决团队之间的协作瓶颈。最棒的是，这些技术基于你已经拥有的行为数据：你的版本控制系统。加入这场改进代码的战斗吧！
+
+Adam Tornhill
+(274 页) ISBN: 9781680502725 $45.95
+
+## 《发布它！》（第二版）
+
+![](http://pragmaticprogrammer.com/titles/mnee2)
+
+一次悲剧性的软件故障可能会让公司损失数百万美元——但通过对设计和架构进行简单更改是可以避免的。这本畅销行业标准的新版将教你如何创建运行时间更长、故障更少且在发生故障时恢复能力更好的系统。新内容涵盖了 DevOps、微服务和云原生架构。稳定性反模式已经扩展到大规模系统中的系统性问题。这是一本关于生产系统工程的必备实实主义指南。
+
+Michael Nygard
+(376 页) ISBN: 9781680502398 $47.95
+
+## 《Python 数据科学核心》
+
+![](http://pragmaticprogrammer.com/titles/dzpyds)
+
+通过这本为忙碌的数据科学家提供的快速参考，将存储在 SQL 和 NoSQL 数据库中混乱、无结构化的产物变为整洁、组织良好的数据集。理解文本挖掘、机器学习和网络分析；使用 `NumPy` 和 `Pandas` 模块处理数值数据；使用统计和网络理论方法描述和分析数据；并查看数据分析的实际示例。这个一站式解决方案涵盖了你在 Python 中所需的本质数据科学。
+
+Dmitry Zinoviev
+(224 页) ISBN: 9781680501841 $29
+
+## 《实战编程》（第三版）
+
+![](http://pragmaticprogrammer.com/titles/gwpy3)
+
+这本经过数万名学生课堂检验的畅销编程入门书籍新版，适用于任何想理解计算机科学的人。学习设计、算法、测试和调试。通过 `Python 3.6`——一种用于数百万设备上的语言——发现编程基础。编写程序解决现实世界的问题，并获得生产高质量代码所需。此版本已更新为使用 `Python 3.6` 中的新语言特性。
+
+Paul Gries, Jennifer Campbell, Jason Montojo
+(410 页) ISBN: 9781680502688 $49.95
+
+## 《使用 Elixir, OTP 和 Phoenix 进行函数 Web 开发》
+
+![](http://pragmaticprogrammer.com/titles/lhelph)
+
+Elixir 和 Phoenix 作为构建现代 Web 应用程序的无敌平台，正引起巨大的关注。几十年来，OTP 一直帮助开发者创建极其健壮、可扩展且具有无与伦比可用时间的应用程序。在使用 Elixir、OTP 和 Phoenix 构建有状态的 Web 应用时，充分利用它们。在不使用 ORM 或数据库的情况下对领域实体建模。使用 `OTP Behaviours` 管理服务器状态并保持代码整洁。在不与业务逻辑耦合的情况下叠加 Phoenix Web 界面。开启强大新技术的大门，将让你从根本上全新的方式思考 Web 开发。
+
+Lance Halvorsen
+(218 页) ISBN: 9781680502435 $45.95
+
+## 《编程 Elm》
+
+![](http://pragmaticprogrammer.com/titles/jfelm)
+
+Elm 将函数式编程的安全性和稳定性带到前端开发，使其成为最流行的新语言之一。Elm 的函数性质和静态类型意味着运行时错误几乎是不可能的，并且它可以编译为 JavaScript 以于于 Web 部署。这本书帮助你在网站开发中利用这种新语言。学习 `Elm Architecture` 如何帮助你创建快速应用程序。发现如何将 `Elm` 与 `JavaScript` 集成，以便你可以更新遗留应用程序。查看 `Elm` 工具如何让部署更快、更方便。
+
+Jeremy Fairbank
+(250 页) ISBN: 9781680502855 $40.95
+
+***
+

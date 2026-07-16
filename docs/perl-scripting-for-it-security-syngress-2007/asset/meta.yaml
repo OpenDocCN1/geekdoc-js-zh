@@ -1,0 +1,274 @@
+name: Perl Scripting For It Security Syngress 2007
+name_cn: IT 安全 Perl 脚本指南
+slug: perl-scripting-for-it-security-syngress-2007
+toc:
+- - '#'
+  - IT 安全 Perl 脚本指南
+- - '#'
+  - Harlan Carvey
+- - '##'
+  - 作者
+- - '##'
+  - 技术编辑
+- - '##'
+  - 贡献作者
+- - '##'
+  - Perl 在计算机安全社区中是如何使用的？
+- - '###'
+  - 前言 xvii
+- - '###'
+  - xviii 前言
+- - '##'
+  - 入门指南
+- - '###'
+  - 安装 Perl
+- - '###'
+  - 添加模块
+- - '###'
+  - 前言 xix
+- - '##'
+  - Perl 编辑器
+- - '###'
+  - xx 前言
+- - '##'
+  - 前言 xxi
+- - '###'
+  - 编写你自己的代码
+- - '###'
+  - 运行 Perl 脚本
+- - '###'
+  - 本书的结构
+- - '####'
+  - 第一部分
+- - '####'
+  - 第二部分
+- - '####'
+  - 第三部分
+- - '###'
+  - 下载代码
+- - '###'
+  - 作者致谢
+- - '###'
+  - Win32.pl
+- - '###'
+  - Pclip.pl
+- - '###'
+  - Netstat2.pl
+- - '###'
+  - 扩展反引号的使用
+- - '###'
+  - Netstat3.pl
+- - '###'
+  - 访问 API
+- - '##'
+  - getsys.pl
+- - '###'
+  - 此脚本演示了如何使用 Win32::API::Prototype
+- - '###'
+  - ppm install http://www.roth.net/perl/packages/win32-api-prototype.ppd
+- - '###'
+  - '使用方法: [perl] getsys.pl'
+- - '###'
+  - 版权所有 2001–2007 H. Carvey
+- - '##'
+  - Perl 脚本编程与现场响应 • 第一部分
+- - '##'
+  - 以下常量的含义可以在此处找到：
+- - '###'
+  - 该值在 49.7 天后会溢出
+- - '###'
+  - 获取系统时间
+- - '###'
+  - 转换为小时以便显示
+- - '##'
+  - Perl 脚本编程与现场响应 • 第一部分
+- - '##'
+  - 获取更多信息
+- - '###'
+  - Fw.pl
+- - '###'
+  - fw.pl
+- - '###'
+  - 使用 WMI 获取有关 Windows 防火墙的信息
+- - '###'
+  - 'Usage: fw.pl [-bsph] [-app] [-sec]'
+- - '###'
+  - copyright 2006–2007 H. Carvey
+- - '###'
+  - 代码中使用的某些全局哈希
+- - '###'
+  - 创建必要的对象
+- - '##'
+  - nic.pl
+- - '###'
+  - nic.pl
+- - '##'
+  - 更多关于网卡的信息
+- - '##'
+  - Ndis.pl
+- - '###'
+  - ndis.pl - 用于确定 NIC 设置的 Perl 脚本
+- - '###'
+  - 检查混杂模式
+- - '###'
+  - '用法: C:\>[perl] ndis.pl'
+- - '###'
+  - OID_GEN_CURRENT_PACKET_FILTER 值定义在 ntddndis.h
+- - '##'
+  - '26'
+- - '##'
+  - '27'
+- - '##'
+  - 大师
+- - '###'
+  - 无线接入点的驱动程序
+- - '##'
+  - '28'
+- - '##'
+  - 大师
+- - '###'
+  - 使用 BitLocker
+- - '##'
+  - '29'
+- - '##'
+  - di.pl
+- - '###'
+  - di.pl - 磁盘 ID 工具
+- - '###'
+  - 此脚本旨在协助调查人员识别连接到系统的磁盘
+- - '###'
+  - 在采集后记录磁盘，为采集工作表和监管链文档提供信息。
+- - '###'
+  - '用法: di.pl <system> <username> <password>'
+- - '##'
+  - 第一部分 • Perl 脚本编写与现场响应
+- - '###'
+  - 驱动器签名是在驱动器格式化时写入 MFT 中偏移量 0x1b8 处的 DWORD 值
+- - '##'
+  - ldi.pl
+- - '###'
+  - ldi.pl - Logical Drive
+- - '###'
+  - 此脚本旨在协助调查人员识别连接到系统的逻辑驱动器
+- - '###'
+  - 用法：ldi.pl -h (获取语法信息)
+- - '###'
+  - ldi.pl -s system -u username -p password (远程系统)
+- - '###'
+  - ldi.pl -c (csv 输出 - 包含卷名)
+- - '##'
+  - 第一部分 • Perl 脚本与实时响应
+- - '##'
+  - 引言
+- - '##'
+  - 访问注册表
+- - '##'
+  - Bho.pl
+- - '###'
+  - BHO.pl
+- - '###'
+  - Perl 脚本，用于从本地系统获取已安装 BHO 的列表
+- - '###'
+  - '使用方法: C:\Perl>bho.pl [>bholist.txt]'
+- - '##'
+  - uassist.pl
+- - '###'
+  - 解析 UserAssist 键，并从 ROT-13 加密进行翻译
+- - '###'
+  - '使用: C:\perl>[perl] uassist.pl [> uassist.log]'
+- - '##'
+  - 瑞士军刀分析
+- - '###'
+  - 时间值排序
+- - '###'
+  - ProScripts
+- - '###'
+  - Acquire1.pl
+- - '###'
+  - Acquire1.pl
+- - '###'
+  - 连接到特定系统上的 PDServer 并获取 PhysicalDisk0 的镜像
+- - '###'
+  - 镜像以 dd 格式创建
+- - '##'
+  - 最后的完善
+- - '##'
+  - 本部分的解决方案：
+- - '##'
+  - 日志文件
+- - '##'
+  - 第二部分 • Perl 脚本与计算机取证分析
+- - '##'
+  - lslnk.pl
+- - '###'
+  - lslnk.pl
+- - '###'
+  - 解析快捷方式 (LNK) 文件并检索数据的 Perl 脚本
+- - '###'
+  - '使用方法: C:\Perl>lslnk.pl <filename> [> report.txt]'
+- - '##'
+  - 第二部分 • 脚本与计算机取证分析
+- - '##'
+  - 注册表
+- - '##'
+  - samparse.pl
+- - '###'
+  - samparse.pl
+- - '###'
+  - 从原始 Registry/SAM 文件检索用户信息
+- - '###'
+  - '使用方法: C:\perl>samparse.pl <path_to_SAM_file> [> sam_user.txt]'
+- - '###'
+  - 最后登录
+- - '###'
+  - 密码重置/账户创建
+- - '###'
+  - 密码错误
+- - '##'
+  - SECParse.pl
+- - '###'
+  - secparse.pl Parse the raw Security file and display audit policy
+- - '###'
+  - 'Usage: secparse.pl <filename> > output_file'
+- - '##'
+  - UAssist.pl
+- - '###'
+  - 解析 NTUSER.DAT 文件并列出最新时间
+- - '###'
+  - 用法 uassist.pl <file>
+- - '##'
+  - evt2xls.pl
+- - '###'
+  - evt2xls.pl
+- - '###'
+  - 以二进制格式解析 Windows EventLog
+- - '###'
+  - 扩展 evt2xls.pl
+- - '##'
+  - lsproc.pl
+- - '###'
+  - lsproc.pl - 从 Windows 2000 物理内存/RAM 储中解析映像
+- - '###'
+  - 'Usage: lsproc.pl <path_to_dump>'
+- - '##'
+  - lspi.pl
+- - '###'
+  - lspi.pl
+- - '###'
+  - '用法: lspi.pl <filename> <offset>'
+- - '##'
+  - 大师级
+- - '###'
+  - 从 RAM 中提取其他数据
+- - '###'
+  - uassist.pl
+- - '###'
+  - UAssist.pl, version 0.11
+- - '##'
+  - SysRestore.pl
+- - '###'
+  - SysRestore.pl, version 0.1_20061026
+- - '###'
+  - 解析系统还原目录以查找 rp.log 文件
+- - '##'
+  - Perl 脚本编写与计算机取证分析 • 第二部分

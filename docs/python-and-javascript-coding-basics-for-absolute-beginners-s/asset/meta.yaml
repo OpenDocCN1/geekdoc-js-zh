@@ -1,0 +1,343 @@
+name: Python And Javascript Coding： Basics For Absolute Beginners： Step By Step Guide
+  To Learn Coding Quickly
+name_cn: Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南
+slug: python-and-javascript-coding-basics-for-absolute-beginners-s
+toc:
+- - '#'
+  - Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南
+- - '##'
+  - 2) 表达性语言
+- - '##'
+  - 3) 解释型语言
+- - '##'
+  - 4) 跨平台语言
+- - '##'
+  - 5) 免费开源
+- - '##'
+  - 6) 面向对象语言
+- - '##'
+  - 7) 可扩展
+- - '##'
+  - 8) 大型标准库
+- - '##'
+  - 9) GUI 支持
+- - '##'
+  - 10) 集成性
+- - '##'
+  - 11. 可嵌入性
+- - '##'
+  - 12. 动态内存分配
+- - '#'
+  - 安装 Python
+- - '##'
+  - 在 Windows 上安装
+- - '#'
+  - 第一个 Python 程序
+- - '##'
+  - 交互式解释器提示符
+- - '##'
+  - 多行语句
+- - '#'
+  - Python 变量
+- - '##'
+  - 标识符命名
+- - '##'
+  - 声明变量
+- - '##'
+  - 对象引用
+- - '##'
+  - 对象标识
+- - '#'
+  - Python 数据类型
+- - '##'
+  - 标准数据类型
+- - '###'
+  - 数字
+- - '#'
+  - Python 关键字
+- - '##'
+  - 关键字
+- - '#'
+  - Python 字面量
+- - '##'
+  - 1. 字符串字面量
+- - '##'
+  - 2. 数字字面量
+- - '##'
+  - 3. 布尔字面量
+- - '##'
+  - 4. 特殊字面量
+- - '##'
+  - 5. 字面量集合
+- - '###'
+  - 列表
+- - '###'
+  - 字典
+- - '###'
+  - 元组
+- - '###'
+  - 集合
+- - '#'
+  - Python 运算符
+- - '##'
+  - 算术运算符
+- - '##'
+  - 比较运算符
+- - '##'
+  - 赋值运算符
+- - '##'
+  - 位运算符
+- - '##'
+  - 逻辑运算符
+- - '##'
+  - 成员运算符
+- - '##'
+  - 身份运算符
+- - '##'
+  - 运算符优先级
+- - '###'
+  - Python Docstring 注释
+- - '###'
+  - Python 缩进
+- - '#'
+  - Python If-else 语句
+- - '##'
+  - Python 中的缩进
+- - '##'
+  - if 语句
+- - '###'
+  - 示例 1
+- - '###'
+  - 示例 2
+- - '###'
+  - if-else 语句
+- - '###'
+  - elif 语句
+- - '#'
+  - Python 循环
+- - '##'
+  - Python for loop
+- - '###'
+  - for loop 使用序列
+- - '##'
+  - Python While loop
+- - '###'
+  - 1. Continue 语句
+- - '##'
+  - prints all letters except 'a' and 't'
+- - '###'
+  - 2. Break 语句
+- - '#'
+  - 当 break 语句很快遇到 t 时，控制发生转移
+- - '###'
+  - 3. Pass 语句
+- - '#'
+  - An empty loop
+- - '###'
+  - 示例
+- - '##'
+  - 在 while 循环中使用 else
+- - '###'
+  - 示例 1
+- - '###'
+  - 示例 2
+- - '##'
+  - Python break 语句
+- - '#'
+  - loop statements
+- - '###'
+  - 示例 1
+- - '###'
+  - 示例 2
+- - '#'
+  - Python 字符串
+- - '##'
+  - 语法：
+- - '###'
+  - 创建字符串
+- - '##'
+  - Using single quotes
+- - '##'
+  - Using double quotes
+- - '##'
+  - Using triple quotes
+- - '##'
+  - 字符串的索引与分割
+- - '##'
+  - Python 列表
+- - '#'
+  - Python 元组 (Tuple)
+- - '##'
+  - 创建元组
+- - '###'
+  - 示例
+- - '###'
+  - 示例 - 2
+- - '##'
+  - 元组索引与切片
+- - '##'
+  - 元负索引
+- - '##'
+  - 负索引
+- - '##'
+  - 删除元组
+- - '#'
+  - Learn JavaScript
+- - '##'
+  - JavaScript 的特性
+- - '##'
+  - JavaScript 示例
+- - '##'
+  - 多行注释
+- - '##'
+  - JavaScript 变量
+- - '###'
+  - 正确的 JavaScript 变量
+- - '###'
+  - 错误的 JavaScript 变量
+- - '###'
+  - 示例 - JavaScript 变量
+- - '##'
+  - JavaScript 局部变量
+- - '##'
+  - JavaScript 全局变量
+- - '###'
+  - JavaScript 全局变量
+- - '###'
+  - 在 JavaScript 函数内部中声明全局变量
+- - '##'
+  - 在 JavaScript 中，全局变量的内部
+- - '##'
+  - JavaScript 数据类型
+- - '##'
+  - JavaScript 运算符
+- - '###'
+  - JavaScript 运算符的类型。
+- - '###'
+  - JavaScript 算术运算符
+- - '###'
+  - JavaScript 比较运算符
+- - '###'
+  - JavaScript 位运算符
+- - '###'
+  - JavaScript 逻辑运算符
+- - '###'
+  - JavaScript 赋值运算符
+- - '###'
+  - JavaScript 特殊运算符
+- - '###'
+  - JavaScript If-else
+- - '###'
+  - JavaScript If 语句
+- - '###'
+  - JavaScript If...else 语句
+- - '###'
+  - If...else 语句 – 在 JavaScript 中
+- - '#'
+  - JavaScript switch 语句
+- - '##'
+  - 简单示例 - switch 语句 - javascript
+- - '##'
+  - switch 语句的行为
+- - '#'
+  - JavaScript 循环
+- - '##'
+  - 1) JavaScript For 循环
+- - '###'
+  - 示例
+- - '##'
+  - 2) JavaScript while 循环
+- - '###'
+  - 示例
+- - '##'
+  - 3) Do while 循环
+- - '###'
+  - 示例
+- - '##'
+  - 4) JavaScript for in 循环
+- - '#'
+  - JavaScript 函数
+- - '##'
+  - 使用 JavaScript 的用处
+- - '##'
+  - JavaScript 函数语法
+- - '###'
+  - 示例
+- - '##'
+  - JavaScript 函数参数
+- - '##'
+  - 带返回值的函数
+- - '##'
+  - JavaScript 函数对象
+- - '###'
+  - 语法
+- - '###'
+  - 函数对象示例
+- - '###'
+  - 函数对象示例
+- - '##'
+  - 定义方法 - JavaScript 对象
+- - '###'
+  - 示例
+- - '#'
+  - JavaScript 数组
+- - '##'
+  - 1) JavaScript 数组字面量
+- - '##'
+  - 2) 直接数组
+- - '##'
+  - 3) JavaScript 数组构造函数
+- - '##'
+  - JavaScript 数组方法
+- - '##'
+  - JavaScript String
+- - '###'
+  - 1) 通过字符串字面量
+- - '###'
+  - 示例
+- - '###'
+  - 2) 通过字符串对象（使用 new 关键字）
+- - '##'
+  - JavaScript String 方法
+- - '##'
+  - JavaScript Date 对象
+- - '###'
+  - 构造函数
+- - '##'
+  - JavaScript Date 方法
+- - '##'
+  - JavaScript Date 示例
+- - '###'
+  - 当前时间示例
+- - '###'
+  - 数字钟示例
+- - '##'
+  - JavaScript Math
+- - '###'
+  - JavaScript Math 方法
+- - '###'
+  - Math.sqrt(n)
+- - '###'
+  - Math.random()
+- - '###'
+  - Math.pow(m,n)
+- - '###'
+  - Math.floor(n)
+- - '###'
+  - Math.ceil(n)
+- - '###'
+  - Math.round(n)
+- - '##'
+  - JavaScript Number 对象
+- - '##'
+  - JavaScript 数字常量
+- - '##'
+  - JavaScript 数字方法
+- - '##'
+  - JavaScript 布尔值
+- - '###'
+  - JavaScript 布尔值示例
+- - '###'
+  - 布尔属性
+- - '###'
+  - 布尔方法

@@ -1,0 +1,280 @@
+name: Simply Electron： Mastering Desktop Software Development with JavaScript
+name_cn: Simply Electron：使用 JavaScript 精通桌面软件开发
+slug: simply-electron-mastering-desktop-software-development-with-
+toc:
+- - '#'
+  - Simply Electron：使用 JavaScript 精通桌面软件开发
+- - '##'
+  - 引言
+- - '##'
+  - 前提条件
+- - '#'
+  - 关于作者
+- - '##'
+  - 献辞
+- - '##'
+  - 作者致谢
+- - '#'
+  - 第 1 章 – 让我们开始吧
+- - '##'
+  - 计算机历史
+- - '##'
+  - 条件判断
+- - '##'
+  - 函数
+- - '##'
+  - 对象
+- - '###'
+  - 不使用对象：
+- - '###'
+  - 使用对象：
+- - '##'
+  - 数组
+- - '##'
+  - For 循环
+- - '#'
+  - ES6 又称 ES2015
+- - '##'
+  - ES6 中的类
+- - '##'
+  - 箭头函数
+- - '##'
+  - 用于 Electron 的 NodeJS
+- - '##'
+  - 下载 NodeJS
+- - '###'
+  - 编写你的第一个 NodeJS 代码
+- - '###'
+  - 使用 NPM 的 NodeJS
+- - '##'
+  - 第 2 章 – TypeScript
+- - '###'
+  - 数据类型
+- - '###'
+  - 创建一个新的 TypeScript 项目
+- - '##'
+  - 数据类型偏见
+- - '##'
+  - TypeScript 中的数据类型
+- - '###'
+  - Number
+- - '###'
+  - String
+- - '###'
+  - Boolean
+- - '###'
+  - Array
+- - '###'
+  - Tuple
+- - '###'
+  - Enum
+- - '###'
+  - Any
+- - '###'
+  - Void
+- - '###'
+  - Null & Undefined
+- - '###'
+  - Never
+- - '###'
+  - Object
+- - '###'
+  - Type Assertions（类型断言）
+- - '###'
+  - Data-types with Functions
+- - '###'
+  - Optional & Default parameters
+- - '##'
+  - Chapter 3 – ElectronJS and Typescript setup
+- - '###'
+  - Installing Electron
+- - '###'
+  - Setting up an Electron Project with TypeScript
+- - '##'
+  - 前提条件
+- - '##'
+  - 指令
+- - '##'
+  - 'Electron-Forge 方案 #1 (不使用 TypeScript)'
+- - '###'
+  - 指令
+- - '##'
+  - 'Electron-Forge 方案 #2 (TypeScript)'
+- - '###'
+  - 指令
+- - '##'
+  - Generator-Electron 和 Yeoman 方案 (不使用 TypeScript)
+- - '###'
+  - 指令
+- - '#'
+  - '项目 #1 计算器'
+- - '###'
+  - index.ts (仅在在使用 Typescript 时使用)
+- - '###'
+  - index.html
+- - '###'
+  - main.css
+- - '###'
+  - main.ts (仅在在使用 Typescript 时使用)
+- - '###'
+  - index.js (仅在不使用 Typescript 时使用)
+- - '###'
+  - main.js (仅在不使用 Typescript 时)
+- - '#'
+  - 第 4 章 深入学习 ElectronJS
+- - '##'
+  - 进阶代码入门
+- - '###'
+  - 菜单结构
+- - '###'
+  - 菜单项和属性
+- - '###'
+  - 右键菜单
+- - '###'
+  - Shell API
+- - '###'
+  - IPC
+- - '#'
+  - 异步通信
+- - '###'
+  - index.html
+- - '###'
+  - preload.js
+- - '###'
+  - renderer.js
+- - '###'
+  - main.js
+- - '#'
+  - 同步通信
+- - '###'
+  - index.html
+- - '###'
+  - preload.js
+- - '###'
+  - renderer.js
+- - '###'
+  - main.js
+- - '#'
+  - 隐藏窗口和远程
+- - '###'
+  - main.js (仅修改了新的 BrowserWindow 对象)
+- - '###'
+  - preload.js (在文件末尾添加以下代码)
+- - '###'
+  - 'renderer.js:'
+- - '##'
+  - dialog 模块
+- - '###'
+  - 错误对话框
+- - '###'
+  - 保存对话框 (Save Dialog)
+- - '###'
+  - index.html
+- - '###'
+  - renderer.js
+- - '###'
+  - main.js
+- - '#'
+  - 显示桌面通知
+- - '###'
+  - index.js
+- - '###'
+  - renderer.js
+- - '###'
+  - main.js（记得开启 nodeIntegration）
+- - '###'
+  - 拖放支持（Drag and Drop support）
+- - '###'
+  - 系统和硬件信息（System and Hardware information）
+- - '###'
+  - 自定义协议
+- - '###'
+  - 注意
+- - '###'
+  - main.js
+- - '###'
+  - index.html
+- - '###'
+  - example.html (任意网页)
+- - '###'
+  - 使用 I/O 设备
+- - '###'
+  - 显示流
+- - '###'
+  - 将桌面捕获为 PNG
+- - '##'
+  - Devtron
+- - '###'
+  - Devtron 提供的功能
+- - '##'
+  - VSCode 调试器
+- - '##'
+  - 测试工具
+- - '#'
+  - 第 6 章 – 使用 JavaScript 介绍机器学习、人工智能与机器人学（奖励章节）
+- - '##'
+  - 机器学习
+- - '###'
+  - 人工神经网络 简称 ANNs
+- - '###'
+  - 智能与人工智能
+- - '###'
+  - 深度学习
+- - '###'
+  - NLP
+- - '###'
+  - 数据科学
+- - '###'
+  - 统计学
+- - '###'
+  - 机器人学
+- - '###'
+  - 脑机接口
+- - '###'
+  - 机器人运维
+- - '###'
+  - 物联网
+- - '###'
+  - 无处计算
+- - '###'
+  - Theano
+- - '###'
+  - Keras
+- - '###'
+  - TensorFlow
+- - '###'
+  - 数据集
+- - '##'
+  - AI/ML、数据科学与技术倡议
+- - '###'
+  - Clearview AI（极具争议且可武器化的面部识别）
+- - '###'
+  - 谷歌大脑（Google Brain）研究团队
+- - '###'
+  - 蓝脑计划（瑞士）
+- - '###'
+  - 科学计算
+- - '###'
+  - Jupyter 项目
+- - '###'
+  - Humanity+
+- - '###'
+  - 2045 计划
+- - '###'
+  - 埃隆·马克
+- - '###'
+  - 瑞·库兹韦尔
+- - '###'
+  - 彼得·蒂尔
+- - '##'
+  - 其他著名的候选人
+- - '###'
+  - Cylon、Artoo 和 Gobot
+- - '###'
+  - TensorFlowJS
+- - '###'
+  - 设置 TensorFlowJS
+- - '###'
+  - 步骤
+- - '###'
+  - 接下来该做什么

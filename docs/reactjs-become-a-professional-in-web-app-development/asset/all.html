@@ -1,0 +1,3450 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 741 1186" preserveaspectratio="none">
+<image width="741" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">ReactJS</span></p>
+<p><span class="calibre4">Become a professional in web app
+development</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre5">By Todd Abel</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre7">Copyright©2016 Todd Abel</span></p>
+<p><span class="calibre7">All Rights Reserved</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre12">Copyright © 2016 by Todd Abel.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre7">Table of Contents</span></p>
+<p><span id="part0000_split_002.html_toc" class="calibre14"></span><a
+href="#part0000_split_004.html__Toc446343734" class="calibre14"><span
+class="calibre15">Introduction</span></a></p>
+<p><a href="#part0000_split_005.html__Toc446343735"
+class="calibre14"><span class="calibre15">Chapter 1- Handling of Complex
+States</span></a></p>
+<p><a href="#part0000_split_014.html__Toc446343740"
+class="calibre14"><span class="calibre15">Chapter 2- Creating a
+Scrollable Table In React</span></a></p>
+<p><a href="#part0000_split_015.html__Toc446343741"
+class="calibre14"><span class="calibre15">Chapter 3- Rendering on the
+Server-Side</span></a></p>
+<p><a href="#part0000_split_016.html__Toc446343742"
+class="calibre14"><span class="calibre15">Chapter 4- Creating a Chrome
+Extension</span></a></p>
+<p><a href="#part0000_split_021.html__Toc446343743"
+class="calibre14"><span class="calibre15">Chapter 5- Data Visualization
+in React.js</span></a></p>
+<p><a href="#part0000_split_023.html__Toc446343744"
+class="calibre14"><span class="calibre15">Chapter 6- Showing
+Exceptions</span></a></p>
+<p><a href="#part0000_split_024.html__Toc446343745"
+class="calibre14"><span class="calibre15">Chapter 7- Testing React
+Components</span></a></p>
+<p><a href="#part0000_split_025.html__Toc446343746"
+class="calibre14"><span class="calibre15">Chapter 8- Building a Sliding
+Menu</span></a></p>
+<p><a href="#part0000_split_030.html__Toc446343747"
+class="calibre14"><span class="calibre15">Chapter 9- Creating a
+Dropdown</span></a></p>
+<p><a href="#part0000_split_032.html__Toc446343748"
+class="calibre14"><span class="calibre15">Chapter 10- React JS and Flux
+Architecture</span></a></p>
+<p><a href="#part0000_split_038.html__Toc446343749"
+class="calibre14"><span class="calibre15">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre16">Disclaimer</span></p>
+<p><span class="calibre17"> </span></p>
+<p><span class="calibre16">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre12"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<section id="part0000_split_004.html_calibre_pb_6"
+class="calibre18 calibre1">
+<h1 class="calibre18"><br />
+<span id="part0000_split_004.html__Toc446343734" class="calibre14"><span
+class="calibre19">Introduction</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">React is a very useful component when
+creating web applications. This book is an excellent guide for you to
+learn this JavaScript library, whether you are a beginner or an expert.
+</span></p>
+<div id="part0000_split_004.html_calibre_pb_9" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_12"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_005.html__Toc446343735"
+class="calibre14"><span class="calibre19">Chapter 1- Handling of Complex
+States</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Consider a situation in which you have some
+projects displayed on a table. After clicking on any of the displayed
+projects, you should get a model which will make it possible for you to
+change the data of the model. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">let t = new Baobab({</span></p>
+<p><span class="calibre16">  projects: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectname'</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar'</span></p>
+<p><span class="calibre16">  }],</span></p>
+<p><span class="calibre16">  selectedProject: null</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Consider the situation in which the user
+clicks on a project and then the data for the project is
+triggered:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from './t.js';</span></p>
+<p><span class="calibre16">let actions = {</span></p>
+<p><span class="calibre16">  selectProject(index) {</span></p>
+<p><span class="calibre16">    t.set('selectedProject',
+t.get('projects')[index]);</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">export default actions;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Note that the project has been referenced as
+the first project in the projects array. This is a problem which might
+get us into trouble. This is because any change made to an object or an
+array will change the reference on the Baobab. With the Baobab, one can
+easily determine whether an object has changed or not. A clone can be
+created so as to solve this problem. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">let Baobab = new Baobab ({</span></p>
+<p><span class="calibre16">  projects: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectname'</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar'</span></p>
+<p><span class="calibre16">  }],</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  selectedProject: {</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectname'  </span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">At this point, we are having two instances of
+the same project. One is in the “</span><span
+class="calibre24">selectedProjects,”</span><span class="calibre12"> and
+the other one in the “</span><span
+class="calibre24">projects.”</span><span class="calibre12"> This means
+that changing the selected project will not be reflected in the list of
+projects, and the vice versa is true. A pretty and complex logic has to
+be created so that everything runs well. </span></p>
+<div id="part0000_split_005.html_calibre_pb_13" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Referencing in a List</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">In our above project, we have selected only
+one project. It is possible that you have multiple projects and there is
+a need for them to be shown in a table. This will mean that multiple
+projects will be cloned as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">let t = new Baobab ({</span></p>
+<p><span class="calibre16">  projects: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectname'</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar'</span></p>
+<p><span class="calibre16">  }...1000],</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  projectRows: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectrows'</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar'</span></p>
+<p><span class="calibre16">  }...10]</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We have a problem above just we had
+previously. Keeping in sync becomes a problem. </span></p>
+<div id="part0000_split_006.html_calibre_pb_15" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_007.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Reference within reference</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span id="part0000_split_007.html__Toc446343736"><span
+class="calibre12">In relational databases, referencing of any object is
+done by use of an ID. Suppose our projects have comments. These have to
+be referenced by use of an ID. This is shown below:</span></span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">let t = new Baobab ({</span></p>
+<p><span class="calibre16">  comments: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    comment: 'commentname'</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    comment: 'commentname'</span></p>
+<p><span class="calibre16">  }],</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  projects: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectname', </span></p>
+<p><span class="calibre16">    comments: [0]</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar', </span></p>
+<p><span class="calibre16">    comments: [1]</span></p>
+<p><span class="calibre16">  }...1000],</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  projectRows: [{</span></p>
+<p><span class="calibre16">    id: 0, </span></p>
+<p><span class="calibre16">    title: 'projectrows',</span></p>
+<p><span class="calibre16">    comments: [{</span></p>
+<p><span class="calibre16">      id: 0, </span></p>
+<p><span class="calibre16">      comment: 'commentname'</span></p>
+<p><span class="calibre16">    }]</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    id: 1, </span></p>
+<p><span class="calibre16">    title: 'bar',</span></p>
+<p><span class="calibre16">    comments: [{</span></p>
+<p><span class="calibre16">      id: 1, </span></p>
+<p><span class="calibre16">      comment: 'commentname'</span></p>
+<p><span class="calibre16">    }]</span></p>
+<p><span class="calibre16">  }...10]</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span id="part0000_split_007.html__Toc446343737"><span
+class="calibre12">A more complex logic is needed at this point. This is
+because we do not need the ID of our comments, but we are in need of the
+comments themselves. This has to be handled during the time of
+cloning.</span></span><span class="calibre12"> </span></p>
+<div id="part0000_split_007.html_calibre_pb_17" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_008.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Baobab-react</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span id="part0000_split_008.html__Toc446343738"><span
+class="calibre12">A context is now being used for the purpose of passing
+a state to the components. This is a much friendlier way how this can be
+done.</span></span><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span id="part0000_split_008.html__Toc446343739"><span
+class="calibre12">The syntax itself is as follows:</span></span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from './Baobab.js';</span></p>
+<p><span class="calibre16">import {root, branch} from
+'Baobab-react/mixins';</span></p>
+<p><span class="calibre16">/* Let us set up the top component first. The
+component will need</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">   our "root" mixin. The root mixin will
+expose the state Baobab on</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">   our context */</span></p>
+<p><span class="calibre16">let Application =
+React.createClass({</span></p>
+<p><span class="calibre16">  mixins: [root],</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;div&gt;</span></p>
+<p><span class="calibre16">        &lt;Header/&gt;</span></p>
+<p><span class="calibre16">      &lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">/* Any of the child components in our
+application can attach the</span></p>
+<p><span class="calibre16">   branch mixin. This mixin will allow you to
+attach cursors</span></p>
+<p><span class="calibre16">   which will extract the state from our
+Baobab and attach it to</span></p>
+<p><span class="calibre16">   our state object of our component
+*/</span></p>
+<p><span class="calibre16">let Hd = React.createClass({</span></p>
+<p><span class="calibre16">  mixins: ,</span></p>
+<p><span class="calibre16">  cursors: {</span></p>
+<p><span class="calibre16">    foo: ['bar']</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">     
+&lt;div&gt;{this.state.name}&lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">React.render(&lt;App Baobab={Baobab}/&gt;,
+document.getElementById('application'))</span></p>
+<div id="part0000_split_008.html_calibre_pb_19" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_009.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Facets</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Components should have the ability to use
+cursors for composing a description of the User Interface (UI). In this
+case, the facets should be used for composing the state. An example will
+best explain this as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from 'Baobab';</span></p>
+<p><span class="calibre16">/* A Facet is simply an object having two
+special properties, that is,</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">   "cursors" and "get" */</span></p>
+<p><span class="calibre16">let selectedProject = {</span></p>
+<p><span class="calibre16">  cursors: {</span></p>
+<p><span class="calibre16">    id: ['selectedProjectId'],</span></p>
+<p><span class="calibre16">    projects: ['projects']</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  get: function (state) {</span></p>
+<p><span class="calibre16">    return
+state.projects[state.id];</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">/* We define our Baobab with some initial
+data and attach the facet */</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">let t = new Baobab({</span></p>
+<p><span class="calibre16">  projects: {</span></p>
+<p><span class="calibre16">    '0': {</span></p>
+<p><span class="calibre16">      title: 'projectname'</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    '1': {</span></p>
+<p><span class="calibre16">      title: 'bar'</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  selectedProjectId: '0'</span></p>
+<p><span class="calibre16">}, {</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    selectedProject:
+selectedProject</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default Baobab;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We have just begun by defining our facet
+which is an object having two properties. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The example given below shows how a facet can
+be used:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import React from 'react';</span></p>
+<p><span class="calibre16">import {branch} from
+'Baobab-react/mixins';</span></p>
+<p><span class="calibre16">let P = React.createClass({</span></p>
+<p><span class="calibre16">  mixins: ,</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    p: 'selectedProject'</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    if (this.state.p) {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">       
+&lt;div&gt;{this.state.p.title}&lt;/div&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    } else {</span></p>
+<p><span class="calibre16">      return null;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  }  </span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">export default P;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">As shown above, a property of facets can also
+be made to be available by use of the mixin. Its behavior will be
+similar to that of a cursor. It will grab the value which has been
+grabbed by our facet whenever the cursor has been updated. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Suppose an action defined as follows is
+triggered by a component:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from './t.js';</span></p>
+<p><span class="calibre16">let actions = {</span></p>
+<p><span class="calibre16">  selectProject(projectId) {</span></p>
+<p><span class="calibre16">    t.set('selectedProjectId',
+projectId);</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">export default actions;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our facet will first react, then the project
+component will be notified, and the new state will be grabbed from the
+facet. </span></p>
+<div id="part0000_split_009.html_calibre_pb_21" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_010.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Solution</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">We need to display the projects list in a
+table. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The approach to this can be as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from 't';</span></p>
+<p><span class="calibre16">let projectsList = {</span></p>
+<p><span class="calibre16">  cursors: {</span></p>
+<p><span class="calibre16">    ids: ['projectsListIds'],</span></p>
+<p><span class="calibre16">    projects: ['projects']</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  get: function (state) {</span></p>
+<p><span class="calibre16">    return state.ids.map(function (id)
+{</span></p>
+<p><span class="calibre16">      return state.projects[id];</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">let t = new Baobab({</span></p>
+<p><span class="calibre16">  projects: {</span></p>
+<p><span class="calibre16">    '0': {</span></p>
+<p><span class="calibre16">      title: 'projectname'</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    '1': {</span></p>
+<p><span class="calibre16">      title: 'bar'</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  projectsListIds: []</span></p>
+<p><span class="calibre16">}, {</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    proList: proList</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default t;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The component can use a facet similar to the
+one given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import React from 'react';</span></p>
+<p><span class="calibre16">import {branch} from
+'Baobab-react/mixins';</span></p>
+<p><span class="calibre16">let ProList = React.createClass({</span></p>
+<p><span class="calibre16">  mixins: ,</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    projects: 'proList'</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  renderRow(p) {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;tr key={p.id}&gt;</span></p>
+<p><span class="calibre16">       
+&lt;td&gt;{p.title}&lt;/td&gt;</span></p>
+<p><span class="calibre16">      &lt;/tr&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;table&gt;</span></p>
+<p><span class="calibre16">        &lt;tbody&gt;</span></p>
+<p><span class="calibre16">         
+{this.state.p.map(this.renderRow)}</span></p>
+<p><span class="calibre16">        &lt;/tbody&gt;</span></p>
+<p><span class="calibre16">      &lt;/table&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }  </span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default ProList;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">An action can be implemented as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from './t.js';</span></p>
+<p><span class="calibre16">let actions = {</span></p>
+<p><span class="calibre16">  displayProjects(proIds) {</span></p>
+<p><span class="calibre16">    t.set('proListIds', proIds);</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">export default actions;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We now have a complex mechanism how to handle
+the state and in case anything is changed, the update will be done
+automatically. </span></p>
+<div id="part0000_split_010.html_calibre_pb_23" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_011.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Reference within Reference</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Suppose our users are responsible for
+creating the projects. The projects will only be responsible for storing
+the ID of the user on a property authorID. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from 'Baobab';</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">let proList = {</span></p>
+<p><span class="calibre16">  cursors: {</span></p>
+<p><span class="calibre16">    ids: ['proListIds'],</span></p>
+<p><span class="calibre16">    pro: ['projects'],</span></p>
+<p><span class="calibre16">    users: ['users']</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  get(state) {</span></p>
+<p><span class="calibre16">    return state.ids.map(function (id)
+{</span></p>
+<p><span class="calibre16">      /* A new property is to be added to the
+project. The "author"</span></p>
+<p><span class="calibre16">         property will have the user from our
+users map. We don’t need</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">         to mutate our project object inside
+our Baobab, so a new</span></p>
+<p><span class="calibre16">         object has to be created and hook
+the project object like a prototype to it. Any added properties will be
+part of our new object but not the actual</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">         project inside our Baobab, but any
+property can still be referenced</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">         from our original project object
+*/</span></p>
+<p><span class="calibre16">      let pro =
+Object.create(state.projects[id]);</span></p>
+<p><span class="calibre16">      pro.author =
+state.users[project.authorId];</span></p>
+<p><span class="calibre16">      return pro;</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">let t = new Baobab({</span></p>
+<p><span class="calibre16">  pro: {},</span></p>
+<p><span class="calibre16">  users: {},</span></p>
+<p><span class="calibre16">  projectsListIds: []</span></p>
+<p><span class="calibre16">}, {</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    projectsList: projectsList</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default Baobab;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Suppose that in our project, we have no data
+on the client side, and we have some project ids that we need to load.
+We can solve some of the challenges as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import Baobab from 'Baobab';</span></p>
+<p><span class="calibre16">import ProjectsListFacet from
+'./facets/ProjectsList';</span></p>
+<p><span class="calibre16">let t = new Baobab({</span></p>
+<p><span class="calibre16">  projects: {},</span></p>
+<p><span class="calibre16">  users: {}</span></p>
+<p><span class="calibre16">  projectsListIds: ['127', '306',
+'890']</span></p>
+<p><span class="calibre16">}, {</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    projectsList:
+ProjectsListFacet</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default t;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The facet can be defined as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import projectLoader from
+'./../loaders/project.js';</span></p>
+<p><span class="calibre16">import userLoader from
+'./../loaders/user.js';</span></p>
+<p><span class="calibre16">let ProjectsList = {</span></p>
+<p><span class="calibre16">  cursors: {</span></p>
+<p><span class="calibre16">    ids: ['projectsListIds'],</span></p>
+<p><span class="calibre16">    pro: ['projects'],</span></p>
+<p><span class="calibre16">    users: ['users']</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  get(state) {</span></p>
+<p><span class="calibre16">    return state.ids.map(function (id)
+{</span></p>
+<p><span class="calibre16">      let pro =
+state.projects[id];</span></p>
+<p><span class="calibre16">      if (pro) {</span></p>
+<p><span class="calibre16">        proj =
+Object.create(project);</span></p>
+<p><span class="calibre16">      } else {</span></p>
+<p><span class="calibre16">        return projectLoader(id,
+this);</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">      let author =
+state.users[project.authorId];</span></p>
+<p><span class="calibre16">      if (author) {</span></p>
+<p><span class="calibre16">        project.author = author; </span></p>
+<p><span class="calibre16">      } else {</span></p>
+<p><span class="calibre16">        project.author =
+userLoader(pro.author, this);</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">      return pro;</span></p>
+<p><span class="calibre16">    });   </span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16">export default ProjectsList;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The following is an example of a
+loader:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import ajax from 'ajax'; </span></p>
+<p><span class="calibre16">import batchCalls from
+'batchcalls';</span></p>
+<p><span class="calibre16">let getAndSetProject = batchCalls(function
+(ids, paths, Baobab) {</span></p>
+<p><span class="calibre16">  ajax.get('/pro/?ids=' +
+ids.join(','))</span></p>
+<p><span class="calibre16">    .success(function (pro) {</span></p>
+<p><span class="calibre16">      ids.forEach(function (id, index)
+{</span></p>
+<p><span class="calibre16">        t.set(paths[index],
+projects[id]);</span></p>
+<p><span class="calibre16">      });</span></p>
+<p><span class="calibre16">    })</span></p>
+<p><span class="calibre16">    .error(function (err) {</span></p>
+<p><span class="calibre16">      ids.forEach(function (id, index)
+{</span></p>
+<p><span class="calibre16">        t.set(paths[index], {</span></p>
+<p><span class="calibre16">          id: id,</span></p>
+<p><span class="calibre16">          $err: err</span></p>
+<p><span class="calibre16">        });</span></p>
+<p><span class="calibre16">      });</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">export default function (id, t) {</span></p>
+<p><span class="calibre16">  let path = ['projects', id];</span></p>
+<p><span class="calibre16">  let pro = Baobab.get(path) ||
+{};</span></p>
+<p><span class="calibre16">  pro.id = id;</span></p>
+<p><span class="calibre16">  pro.$isLoading = true;</span></p>
+<p><span class="calibre16">  getAndSetProject(pro.id, path,
+Baobab);</span></p>
+<p><span class="calibre16">  return pro;</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We need to use the facet so as to create a
+component. This can be done as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import React from 'react';</span></p>
+<p><span class="calibre16">import {branch} from
+'Baobab-react/mixins';</span></p>
+<p><span class="calibre16">let Proj = React.createClass({</span></p>
+<p><span class="calibre16">  mixins: ,</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    proj: 'projectsList'</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  /* After rendering a project, the UI states
+can be used for displaying what </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">     is happening to our data. Is loading
+being done, has an error been found etc.</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">     Expansion on the states can also be done
+using $notFound, $noAccess etc. */</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  renderProject(proj) {</span></p>
+<p><span class="calibre16">    if (proj.$error) {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;li key={proj.id}&gt;</span></p>
+<p><span class="calibre16">          The project could not be loaded -
+{proj.$error}</span></p>
+<p><span class="calibre16">        &lt;/li&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    } else if (proj.$isLoading) {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;li key={proj.id}&gt;Loading the
+project...&lt;/li&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    } else {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;li key={proj.id}&gt;</span></p>
+<p><span class="calibre16">          {proj.id + ' - ' +
+proj.title}</span></p>
+<p><span class="calibre16">         
+{this.renderAuthor(proj.author)}</span></p>
+<p><span class="calibre16">        &lt;/li&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  /* And we use the exact same approach with
+the author */</span></p>
+<p><span class="calibre16">  renderAuthor(author) {</span></p>
+<p><span class="calibre16">    if (author.$error) {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;small&gt;Could not load author -
+{author.$error}&lt;/small&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    } else if (author.$isLoading)
+{</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;small&gt;Loading
+author...&lt;/small&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    } else {</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">       
+&lt;small&gt;{author.name}&lt;/small&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;ul&gt;</span></p>
+<p><span class="calibre16">       
+{this.state.projects.map(this.renderProject)}</span></p>
+<p><span class="calibre16">      &lt;/ul&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">export default Projects;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Note that with the Baobab-react, one can use
+the ES6 classes and ES7 decorators so as to allow one’s components to
+grab a state. This is to be discussed in the following
+section.</span></p>
+<div id="part0000_split_011.html_calibre_pb_25" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">ES6 classes</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">App.js”</span><span class="calibre12"> should have the
+following code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import {Component} from 'react';</span></p>
+<p><span class="calibre16">import tree from './t.js';</span></p>
+<p><span class="calibre16">import Projects from './Pro.js';</span></p>
+<p><span class="calibre16">import {root} from
+'baobab-react/higher-order';</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">class App extends Component {</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;div&gt;</span></p>
+<p><span class="calibre16">        &lt;Pro/&gt;</span></p>
+<p><span class="calibre16">      &lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">export default root(App, tree);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">projects.js”</span><span class="calibre12"> should
+have the following code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import {Component} from 'react';</span></p>
+<p><span class="calibre16">import {branch} from
+'baobab-react/higher-order';</span></p>
+<p><span class="calibre16">class Projects extends Component {</span></p>
+<p><span class="calibre16">  renderProject(pro) {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;li
+key={pro.id}&gt;{pro.title}&lt;/li&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;ul&gt;</span></p>
+<p><span class="calibre16">       
+{this.props.pro.map(this.renderProject)}</span></p>
+<p><span class="calibre16">      &lt;/ul&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">export default branch(Pro, {</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    pro: 'projectsList'</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<div id="part0000_split_012.html_calibre_pb_27" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">ES7 decorators</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">App.js”</span><span class="calibre12"> should have the
+following code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import {root} from
+'baobab-react/decorators';</span></p>
+<p><span class="calibre16">import tree from './tree.js';</span></p>
+<p><span class="calibre16">import {Component} from 'react';</span></p>
+<p><span class="calibre16">import Projects from
+'./Projects.js';</span></p>
+<p><span class="calibre16">@root(tree)</span></p>
+<p><span class="calibre16">class App extends Component {</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;div&gt;</span></p>
+<p><span class="calibre16">        &lt;Projects/&gt;</span></p>
+<p><span class="calibre16">      &lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">export default App;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">Projects.js”</span><span class="calibre12"> should
+have the following code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import {branch} from
+'baobab-react/decorators';</span></p>
+<p><span class="calibre16">import {Component} from 'react';</span></p>
+<p><span class="calibre16">@branch({</span></p>
+<p><span class="calibre16">  facets: {</span></p>
+<p><span class="calibre16">    pro: 'projectsList'</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">})</span></p>
+<p><span class="calibre16">class Proj extends Component {</span></p>
+<p><span class="calibre16">  renderProject(proj) {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;li
+key={proj.id}&gt;{proj.title}&lt;/li&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;ul&gt;</span></p>
+<p><span class="calibre16">       
+{this.props.proj.map(this.renderProject)}</span></p>
+<p><span class="calibre16">      &lt;/ul&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">export default Proj;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">So far, I hope that you are aware of how to
+use the Baobab-react so as to keep the state of an application. It
+offers a low-level solution compared to the rest of solutions. It has no
+assumptions on how to structure the state of our application. One is
+expected to create an abstraction on his own, since this is very
+different than the user interface itself. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">In React, facets are very new components, and
+it is expected strategies will emerge which will take advantage of it.
+</span></p>
+<div id="part0000_split_013.html_calibre_pb_29" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<section id="part0000_split_014.html_calibre_pb_32"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_014.html__Toc446343740"
+class="calibre14"><span class="calibre19">Chapter 2- Creating a
+Scrollable Table In React</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Let us begin by creating our container. This
+can be done using the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;div
+className="fixed-scroll-element-container"&gt;</span></p>
+<p><span class="calibre16">  &lt;div</span></p>
+<p><span class="calibre16">    ref="HeaderContainer"</span></p>
+<p><span class="calibre16">   
+className="fixed-scroll-element-header"/&gt;</span></p>
+<p><span class="calibre16">  &lt;div</span></p>
+<p><span class="calibre16">    ref="Container"</span></p>
+<p><span class="calibre16">   
+className="fixed-scroll-element"</span></p>
+<p><span class="calibre16">    style={containerStyle}/&gt;</span></p>
+<p><span class="calibre16">&lt;/div&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our actual nodes can now give us the width,
+and the columns can be calculated. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">// rowWidth: number -- width of the
+row</span></p>
+<p><span class="calibre16">// columnWidths: Array -- array having the
+widths of the columns we are about to create, in which a real number
+will be in there if the width is available.</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">function getColumnWidths(rWidth, colWidths)
+{</span></p>
+<p><span class="calibre16">  var comp = colWidths.reduce(function (agg,
+width) {</span></p>
+<p><span class="calibre16">    if (typeof width === 'number')
+{</span></p>
+<p><span class="calibre16">      agg.remainingWidth -= width;</span></p>
+<p><span class="calibre16">      agg.customWidthColumns -= 1;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    return agg;</span></p>
+<p><span class="calibre16">  }, {</span></p>
+<p><span class="calibre16">    autoSizeColumns:
+colWidths.length,</span></p>
+<p><span class="calibre16">    remainingWidth: rWidth</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">  var standardWidth = comp.remainingWidth /
+comp.autoSizeColumns;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  return colWidths.map(function (width)
+{</span></p>
+<p><span class="calibre16">    if (width) {</span></p>
+<p><span class="calibre16">      return width;</span></p>
+<p><span class="calibre16">    } else {</span></p>
+<p><span class="calibre16">      return standardWidth;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">var contWidth =
+this.containerNode.offsetWidth;</span></p>
+<p><span class="calibre16">var computedColumnWidths =
+getColumnWidths(contWidth, this.props.colWidths);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Now that we have configured our column
+widths, we can render what we are having on the screen. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">dRender: function (colWidths, contWidth)
+{</span></p>
+<p><span class="calibre16">  // this is the render for when the
+container has been rendered</span></p>
+<p><span class="calibre16">  // and we know explicitly the container
+width</span></p>
+<p><span class="calibre16">  var rows =
+this.state.visibleIndices.map((itIndex, kIndex) =&gt; {</span></p>
+<p><span class="calibre16">    var top = itIndex *
+this.props.rowHeight;</span></p>
+<p><span class="calibre16">    return this.props.rowGetter(itIndex,
+kIndex, top, colWidths, contWidth);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">  return (</span></p>
+<p><span class="calibre16">    &lt;table</span></p>
+<p><span class="calibre16">      style={{height: this.props.rowCount *
+this.props.rowHeight}}&gt;</span></p>
+<p><span class="calibre16">      &lt;tbody&gt;</span></p>
+<p><span class="calibre16">        {rows}</span></p>
+<p><span class="calibre16">      &lt;/tbody&gt;</span></p>
+<p><span class="calibre16">    &lt;/table&gt;</span></p>
+<p><span class="calibre16">  );</span></p>
+<p><span class="calibre16">},</span></p>
+<p><span class="calibre16">var output =
+this.defRender(computedColumnWidths, contWidth);</span></p>
+<p><span class="calibre16">React.render(output,
+this.containerNode);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">At this point, we need to put all the above
+together. The scroll position has to be added inside the container. RxJS
+can be used for doing this as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">setUpTable: function () {</span></p>
+<p><span class="calibre16">  var contHeight =
+this.props.containerHeight;</span></p>
+<p><span class="calibre16">  var rowHeight =
+this.props.rowHeight;</span></p>
+<p><span class="calibre16">  var rowCount =
+this.props.rowCount;</span></p>
+<p><span class="calibre16">  var visRows = Math.ceil(contHeight/
+rowHeight);</span></p>
+<p><span class="calibre16">  var gScrollTop = () =&gt; {</span></p>
+<p><span class="calibre16">    return
+this.containerNode.scrollTop;</span></p>
+<p><span class="calibre16">  };</span></p>
+<p><span class="calibre16">  var initScrollSubject = new
+Rx.ReplaySubject(1);</span></p>
+<p><span class="calibre16"> 
+initScrollSubject.onNext(getScrollTop());</span></p>
+<p><span class="calibre16">  var scrollTopStream =
+initScrollSubject.merge(</span></p>
+<p><span class="calibre16">   
+Rx.Observable.fromEvent(this.containerNode,
+'scroll').map(getScrollTop)</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  );</span></p>
+<p><span class="calibre16">  var fVisibleRowStream =
+scrollTopStream.map(function (scrollTop) {</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    return Math.floor(scrollTop /
+rowHeight);</span></p>
+<p><span class="calibre16">  }).distinctUntilChanged();</span></p>
+<p><span class="calibre16">  var visIndicesStream =
+fVisibleRowStream.map(function (firstRow) {</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    var visIndices = [];</span></p>
+<p><span class="calibre16">    var lRow = firstRow + visRows +
+1;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    if (lRow &gt; rowCount) {</span></p>
+<p><span class="calibre16">      firstRow -= lRow - rowCount;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    for (var j = 0; j &lt;= visRows; j++)
+{</span></p>
+<p><span class="calibre16">      visIndices.push(j +
+firstRow);</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    return visIndices;</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">  this.visibleIndicesSubscription =
+visibleIndicesStream.subscribe((indices) =&gt; {</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    this.setState({</span></p>
+<p><span class="calibre16">      visIndices: indices</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The visible indices have been calculated
+based on the height of your container and the number of rows which can
+fit in the container, and then the state of the component set depending
+on the number of indices to be displayed. The dynamic width also has to
+be taken care of. An update of the component has to be done on every
+window resize. This is shown in the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var windResizeStream =
+Rx.Observable.fromEvent(window, 'resize').debounce(50);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">this.windowResizeSubscription =
+windResizeStream.subscribe(() =&gt; {</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  this.forceUpdate();</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">At this point, the table should be ready to
+be used. </span></p>
+<div id="part0000_split_014.html_calibre_pb_33" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_015.html"></span></p>
+<section id="part0000_split_015.html_calibre_pb_36"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_015.html__Toc446343741"
+class="calibre14"><span class="calibre19">Chapter 3- Rendering on the
+Server-Side</span></span><span class="calibre19"> </span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Suppose we have a dynamic web page, and we
+want to render it in the form of HTML. We need to use the React-router
+and the Redux for doing this. The entry point for the Redux app should
+be as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">ReactDOM.render((</span></p>
+<p><span class="calibre16">  &lt;Provider store={store}&gt;</span></p>
+<p><span class="calibre16">    &lt;Question /&gt;</span></p>
+<p><span class="calibre16">  &lt;/Provider&gt;</span></p>
+<p><span class="calibre16">),
+document.getElementById('root'));</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our first page should have the following
+content:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import { connect } from
+'react-redux';</span></p>
+<p><span class="calibre16">import React, { Component, PropTypes } from
+'react';</span></p>
+<p><span class="calibre16">import _ from 'lodash';</span></p>
+<p><span class="calibre16">import { loadQuestions } from
+'actions/questions';</span></p>
+<p><span class="calibre16">class MyPage extends Component {</span></p>
+<p><span class="calibre16">  componentDidMount() {</span></p>
+<p><span class="calibre16">    this.props.loadAnswers ();</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  render() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;p&gt;</span></p>
+<p><span class="calibre16">       
+&lt;h2&gt;Answer&lt;/h2&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        {</span></p>
+<p><span class="calibre16">          _.map(this.props.answers, (k)=&gt;
+{</span></p>
+<p><span class="calibre16">            return (</span></p>
+<p><span class="calibre16">              &lt;p key={k.id}&gt; {
+k.content }&lt;/p&gt;</span></p>
+<p><span class="calibre16">            );</span></p>
+<p><span class="calibre16">          })</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">      &lt;/p&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">function mapStateToProps (state) {</span></p>
+<p><span class="calibre16">  return { answers: state.questions
+};</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">export { Answer };</span></p>
+<p><span class="calibre16">export default connect(mapStateToProps, {
+loadAnswers })(Answer);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our second page should be as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">export const LOADED_ANSWERS =
+'LOADED_ANSWERS';</span></p>
+<p><span class="calibre16">export function loadAnswers() {</span></p>
+<p><span class="calibre16">  return function(getState, dispatch)
+{</span></p>
+<p><span class="calibre16">   
+request.get('http://localhost:3000/answers')</span></p>
+<p><span class="calibre16">      .end(function(error, res) {</span></p>
+<p><span class="calibre16">        if (!error) {</span></p>
+<p><span class="calibre16">          dispatch({ type: LOADED_ANSWERS,
+response: res.body });</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">      })</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We then want to use the Redux so as to render
+the content on the server-side. The code for the server-side should be
+as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import createMemoryHistory from
+'history/lib/createMemoryHistory';</span></p>
+<p><span class="calibre16">import { RoutingContext, match } from
+'react-router'</span></p>
+<p><span class="calibre16">import Express from 'express';</span></p>
+<p><span class="calibre16">import Promise from 'bluebird';</span></p>
+<p><span class="calibre16">let server = new Express();</span></p>
+<p><span class="calibre16">server.get('*', (request, resp)=&gt;
+{</span></p>
+<p><span class="calibre16">  let history =
+createMemoryHistory();</span></p>
+<p><span class="calibre16">  let mystore = configureStore();</span></p>
+<p><span class="calibre16">  let routes =
+crateRoutes(history);</span></p>
+<p><span class="calibre16">  let location =
+createLocation(request.url)</span></p>
+<p><span class="calibre16">  match({ routes, location }, (error,
+redLocation, renderProps) =&gt; {</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    if (redirectLocation) {</span></p>
+<p><span class="calibre16">      resp.redirect(301, redLocation.pathname
++ redLocation.search)</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    } else if (error) {</span></p>
+<p><span class="calibre16">      res.send(500, error.message)</span></p>
+<p><span class="calibre16">    } else if (renderProps == null)
+{</span></p>
+<p><span class="calibre16">      res.send(404, 'Not found')</span></p>
+<p><span class="calibre16">    } else {</span></p>
+<p><span class="calibre16">      let [ getCurrentUrl, unsubscribe ] =
+subscribeUrl();</span></p>
+<p><span class="calibre16">      let requestUrl = location.pathname +
+location.search;</span></p>
+<p><span class="calibre16">      getReduxPromise().then(()=&gt;
+{</span></p>
+<p><span class="calibre16">        let redState =
+escape(JSON.stringify(store.getState()));</span></p>
+<p><span class="calibre16">        let html =
+ReactDOMServer.renderToString(</span></p>
+<p><span class="calibre16">          &lt;Provider
+store={store}&gt;</span></p>
+<p><span class="calibre16">            { &lt;RoutingContext
+{...renderProps}/&gt; }</span></p>
+<p><span class="calibre16">          &lt;/Provider&gt;</span></p>
+<p><span class="calibre16">        );</span></p>
+<p><span class="calibre16">        res.render('index', { html, redState
+});</span></p>
+<p><span class="calibre16">      });</span></p>
+<p><span class="calibre16">      function getReduxPromise ()
+{</span></p>
+<p><span class="calibre16">        let { query, params } =
+renderProps;</span></p>
+<p><span class="calibre16">        let computation =
+renderProps.components[renderProps.components.length -
+1].WrappedComponent;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        let promise = computation.fetchData
+?</span></p>
+<p><span class="calibre16">          computation.fetchData({ query,
+parameters, store, history }) :</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">          Promise.resolve();</span></p>
+<p><span class="calibre16">        return promise;</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The view template for the server should be as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">!DOCTYPE html&gt;</span></p>
+<p><span class="calibre16">&lt;html&gt;</span></p>
+<p><span class="calibre16">  &lt;head&gt;</span></p>
+<p><span class="calibre16">    &lt;title&gt; A Redux
+example&lt;/title&gt;</span></p>
+<p><span class="calibre16">  &lt;/head&gt;</span></p>
+<p><span class="calibre16">  &lt;body&gt;</span></p>
+<p><span class="calibre16">    &lt;p id="root"&gt;&lt;%- html
+%&gt;&lt;/p&gt;</span></p>
+<p><span class="calibre16">    &lt;script type="text/javascript"
+charset="utf-8"&gt;</span></p>
+<p><span class="calibre16">      window.__REDUX_STATE__ = '&lt;%=
+reduxState %&gt;';</span></p>
+<p><span class="calibre16">    &lt;/script&gt;</span></p>
+<p><span class="calibre16">    &lt;script
+src="http://localhost:3001/static/bundle.js"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre16">  &lt;/body&gt;</span></p>
+<p><span class="calibre16">&lt;/html&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We need to add a static method to our first
+page as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">class MyPage extends Component {</span></p>
+<p><span class="calibre16">  static fetchData({ store }) {</span></p>
+<p><span class="calibre16">    // return the promise here</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  // ...</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our middleware which is an application
+program interface (API) should be as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import _ from 'lodash';</span></p>
+<p><span class="calibre16">import { camelizeKeys } from
+'humps';</span></p>
+<p><span class="calibre16">import Promise from 'bluebird';</span></p>
+<p><span class="calibre16">import superAgent from
+'superagent';</span></p>
+<p><span class="calibre16">export const CALL_API =
+Symbol('CALL_API');</span></p>
+<p><span class="calibre16">export default store =&gt; next =&gt; action
+=&gt; {</span></p>
+<p><span class="calibre16">  if ( ! action[CALL_API] ) {</span></p>
+<p><span class="calibre16">    return next(action);</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  let request = action[CALL_API];</span></p>
+<p><span class="calibre16">  let { getState } = store;</span></p>
+<p><span class="calibre16">  let deferred = Promise.defer();</span></p>
+<p><span class="calibre16">  // handle 401 and auth here</span></p>
+<p><span class="calibre16">  let { method, url, successType } =
+request;</span></p>
+<p><span class="calibre16">  superAgent[method](url)</span></p>
+<p><span class="calibre16">    .end((error, resp)=&gt; {</span></p>
+<p><span class="calibre16">      if ( !error ) {</span></p>
+<p><span class="calibre16">        next({</span></p>
+<p><span class="calibre16">          type: successType,</span></p>
+<p><span class="calibre16">          response: resp.body</span></p>
+<p><span class="calibre16">        });</span></p>
+<p><span class="calibre16">        if
+(_.isFunction(request.afterSuccess)) {</span></p>
+<p><span class="calibre16">          request.afterSuccess({ getState
+});</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">      deferred.resolve();</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  return deferred.promise;</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Now that we have the above, we can make a
+change to the original action in our first page as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">export const LOADED_ANSWERS =
+'LOADED_ANSWERS';</span></p>
+<p><span class="calibre16">export function loadAnswers() {</span></p>
+<p><span class="calibre16">  return {</span></p>
+<p><span class="calibre16">    [CALL_API]: {</span></p>
+<p><span class="calibre16">      method: 'get',</span></p>
+<p><span class="calibre16">      url:
+'http://localhost:3000/answers',</span></p>
+<p><span class="calibre16">      successType: LOADED_ANSWERS</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  };</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our function in the first page will become as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">import React, { Component, PropTypes } from
+'react';</span></p>
+<p><span class="calibre16">import { connect } from
+'react-redux';</span></p>
+<p><span class="calibre16">import { loadQuestions } from
+'actions/answers';</span></p>
+<p><span class="calibre16">import _ from 'lodash';</span></p>
+<p><span class="calibre16">class Answer extends Component {</span></p>
+<p><span class="calibre16">  static fetchData({ store }) {</span></p>
+<p><span class="calibre16">    return
+store.dispatch(loadAnswers());</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  //...</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">You will then be done. Loading of the web
+pages will be done faster. </span></p>
+<div id="part0000_split_015.html_calibre_pb_37" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_016.html"></span></p>
+<section id="part0000_split_016.html_calibre_pb_40"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_016.html__Toc446343742"
+class="calibre14"><span class="calibre19">Chapter 4- Creating a Chrome
+Extension</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">React is one of the best ways that one can
+implement the front end part for their apps. With it, each component of
+the UI can be implemented separately. This means that there will be a
+reduced complexity and understanding how the app works will be much
+easier. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We need to use the project structure given
+below for our project:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">notes/</span></p>
+<p><span class="calibre16">  app/</span></p>
+<p><span class="calibre16">    coffee/</span></p>
+<p><span class="calibre16">      Johnlist_listing.coffee</span></p>
+<p><span class="calibre16">    scss/</span></p>
+<p><span class="calibre16">      Johnlist_listing.scss</span></p>
+<p><span class="calibre16">  res/</span></p>
+<p><span class="calibre16">    manifest.json</span></p>
+<p><span class="calibre16">  package.json</span></p>
+<p><span class="calibre16">  Brocfile.js</span></p>
+<div id="part0000_split_016.html_calibre_pb_41" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Package.json</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This will be used for creating the project
+and for managing our external dependencies. Let us begin with a bare
+file and then add our dependencies:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">{</span></p>
+<p><span class="calibre16">  "name": "notes",</span></p>
+<p><span class="calibre16">  "description": "chrome
+extension",</span></p>
+<p><span class="calibre16">  "version": "0.0.1",</span></p>
+<p><span class="calibre16">  "author": "Nicholas",</span></p>
+<p><span class="calibre16">  "license": "ISC",</span></p>
+<p><span class="calibre16">  "main": "",</span></p>
+<p><span class="calibre16">  "private": true,</span></p>
+<p><span class="calibre16">  "scripts": {},</span></p>
+<p><span class="calibre16">  "dependencies": {}</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We should begin by addition of the libraries
+which are to be used. React can first be installed as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">npm install --save-dev react
+react-dom</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">In the case of our React files, we will be
+using JSX and coffeeScript. There is then a need for us to come up with
+a mechanism on how these files will be converted into JavaScript so that
+the browser will be able to understand and then run them. Broccoli can
+be used for that purpose. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">For this to be installed, navigate to your
+project directory and then execute the following two
+commands:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">npm install -g broccoli-cli</span></p>
+<p><span class="calibre16">npm install --save-dev broccoli</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">After the installation of broccoli, all of
+the needed libraries will have to be installed. This is the only way we
+can be able to process the SASS and coffeeScript files. The following
+command can be used:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">npm install --save-dev broccoli-sass
+broccoli-fast-browserify broccoli-merge-trees broccoli-funnel
+coffee-reactify broccoli-timepiece</span></p>
+<div id="part0000_split_017.html_calibre_pb_43" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Manifest File</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This will be the heart of our Chrome
+extension. It will be as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">{</span></p>
+<p><span class="calibre16">    "manifest_version": 2,</span></p>
+<p><span class="calibre16">    "name": "Johnlist Notes
+Extension",</span></p>
+<p><span class="calibre16">    "description": "This is the Extension to
+allow you to write notes about the different Johnlist listings and then
+view those notes on our page",</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    "version": "1.0",</span></p>
+<p><span class="calibre16">    "permissions": [</span></p>
+<p><span class="calibre16">      "activeTab"</span></p>
+<p><span class="calibre16">    ],</span></p>
+<p><span class="calibre16">    "content_scripts": [</span></p>
+<p><span class="calibre16">        {</span></p>
+<p><span class="calibre16">            "matches":
+["*://*.Johnlist.org/*.html"],</span></p>
+<p><span class="calibre16">            "css":
+["Johnlist_listing.css"],</span></p>
+<p><span class="calibre16">            "js":
+["Johnlist_listing.js"]</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    ]</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The property “</span><span
+class="calibre24">permissions”</span><span class="calibre12"> is
+responsible for telling Chrome that our extension is responsible for
+running scripts on the Chrome tab which is currently active. </span></p>
+<div id="part0000_split_018.html_calibre_pb_45" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Using Broccoli to build the
+project</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">We need to make use of Brocfile.js for
+telling the broccoli how to build our project. Our SASS files will be
+compiled by the broccoli into CSS files. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">// Importing some Broccoli plugins</span></p>
+<p><span class="calibre16">var compSass =
+require('broccoli-sass');</span></p>
+<p><span class="calibre16">var mergeTrees =
+require('broccoli-merge-trees');</span></p>
+<p><span class="calibre16">var Funnel =
+require('broccoli-funnel');</span></p>
+<p><span class="calibre16">var browser =
+require('broccoli-fast-browserify')</span></p>
+<p><span class="calibre16">// Specifying our Sass and Coffeescript
+directories</span></p>
+<p><span class="calibre16">var sassDirectory = 'app/scss';</span></p>
+<p><span class="calibre16">var coffeeDirectory =
+'app/coffee';</span></p>
+<p><span class="calibre16">var manifest = 'manifest.json';</span></p>
+<p><span class="calibre16">var resources = 'res'</span></p>
+<p><span class="calibre16">// Telling the Broccoli how we need the
+assets to be compiled</span></p>
+<p><span class="calibre16">var clListingStyle =
+compileSass([sassDirectory], 'craigslist_listing.scss',
+'craigslist_listing.css');</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var scripts = browser (coffeeDirectory,
+{</span></p>
+<p><span class="calibre16">    bundles: {</span></p>
+<p><span class="calibre16">        "load_craigslist_listing.js":
+{</span></p>
+<p><span class="calibre16">            transform: [</span></p>
+<p><span class="calibre16">               
+require('coffee-reactify')</span></p>
+<p><span class="calibre16">            ],</span></p>
+<p><span class="calibre16">            entryPoints:
+['load_craigslist_listing.coffee']</span></p>
+<p><span class="calibre16">        },</span></p>
+<p><span class="calibre16">        "load_craigslist.js": {</span></p>
+<p><span class="calibre16">            transform: [</span></p>
+<p><span class="calibre16">               
+require('coffee-reactify')</span></p>
+<p><span class="calibre16">            ],</span></p>
+<p><span class="calibre16">            entryPoints:
+['load_craigslist.coffee']</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">var resourceFiles = new Funnel(resources,
+{</span></p>
+<p><span class="calibre16">    //destDir: resources</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">// Merging the compiled styles and scripts
+into a single output directory.</span></p>
+<p><span class="calibre16">module.exports = mergeTrees([clListingStyle,
+scripts, resourceFiles]);</span></p>
+<div id="part0000_split_019.html_calibre_pb_47" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Content Scripts</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Our aim at this point is to create the SASS
+and coffeeScript files which will provide us with the actual
+functionality of the Chrome extension. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">ReactDOM = require 'react-dom'</span></p>
+<p><span class="calibre16">React = require 'react'</span></p>
+<p><span class="calibre16">CLNotes = React.createClass({</span></p>
+<p><span class="calibre16">  displayName: 'MyNotes'</span></p>
+<p><span class="calibre16">  getInitialState: -&gt;</span></p>
+<p><span class="calibre16">    notes: []</span></p>
+<p><span class="calibre16">  render: -&gt;</span></p>
+<p><span class="calibre16">    &lt;div&gt;</span></p>
+<p><span class="calibre16">      &lt;NotesDisplay mynotes={@state.notes}
+/&gt;</span></p>
+<p><span class="calibre16">      &lt;NoteInput saveNote={@saveNote}
+/&gt;</span></p>
+<p><span class="calibre16">    &lt;/div&gt;</span></p>
+<p><span class="calibre16">  saveNote: (mynote) -&gt;</span></p>
+<p><span class="calibre16">    mynotes = @state.notes</span></p>
+<p><span class="calibre16">    notes.push(mynote)</span></p>
+<p><span class="calibre16">    @setState</span></p>
+<p><span class="calibre16">      notes: mynotes</span></p>
+<p><span class="calibre16">})</span></p>
+<p><span class="calibre16">NoteInput = React.createClass({</span></p>
+<p><span class="calibre16">  displayName: 'NoteInput'</span></p>
+<p><span class="calibre16">  getInitialState: -&gt;</span></p>
+<p><span class="calibre16">    note: ''</span></p>
+<p><span class="calibre16">  render: -&gt;</span></p>
+<p><span class="calibre16">    &lt;div&gt;</span></p>
+<p><span class="calibre16">      &lt;input type='text'
+value={@state.note} onChange={@noteChanged} /&gt;</span></p>
+<p><span class="calibre16">      &lt;button
+onClick={@saveNote}&gt;Save&lt;/button&gt;</span></p>
+<p><span class="calibre16">    &lt;/div&gt;</span></p>
+<p><span class="calibre16">  noteChanged: (event) -&gt;</span></p>
+<p><span class="calibre16">    mynote = event.target.value</span></p>
+<p><span class="calibre16">    @setState</span></p>
+<p><span class="calibre16">      note: mynote</span></p>
+<p><span class="calibre16">  saveNote: -&gt;</span></p>
+<p><span class="calibre16">    @props.saveNote(@state.note)</span></p>
+<p><span class="calibre16">    @setState</span></p>
+<p><span class="calibre16">      note: ''</span></p>
+<p><span class="calibre16">})</span></p>
+<p><span class="calibre16">NotesDisplay = React.createClass({</span></p>
+<p><span class="calibre16">  displayName: 'NotesDisplay'</span></p>
+<p><span class="calibre16">  render: -&gt;</span></p>
+<p><span class="calibre16">    &lt;div id='notesDisplay'&gt;</span></p>
+<p><span class="calibre16">      {</span></p>
+<p><span class="calibre16">        @props.notes.map (mynote, j)
+-&gt;</span></p>
+<p><span class="calibre16">          &lt;div key={j}&gt;</span></p>
+<p><span class="calibre16">            {mynote}</span></p>
+<p><span class="calibre16">          &lt;/div&gt;</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">    &lt;/div&gt;</span></p>
+<p><span class="calibre16">})</span></p>
+<p><span class="calibre16"># We are finding the 'mapAndAttr' div, and
+then insert our own div as its child,</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"># and then we will render the React component
+inside our new div</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">attributesDiv =
+window.document.getElementsByClassName('mapAndAttrs')?[0]</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">if attributesDiv</span></p>
+<p><span class="calibre16">  notesDiv =
+document.createElement('div')</span></p>
+<p><span class="calibre16">  notesDiv.id='clNotes'</span></p>
+<p><span class="calibre16"> 
+attributesDiv.appendChild(notesDiv)</span></p>
+<p><span class="calibre16">  ReactDOM.render(</span></p>
+<p><span class="calibre16">    &lt;CLNotes /&gt;</span></p>
+<p><span class="calibre16">   
+document.getElementById('clNotes')</span></p>
+<p><span class="calibre16">  )</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Note that we have started with our top level
+React component. This is the “CLNotes.” This is then made up of two
+child components. One is to be used for placing new notes, and the other
+one for displaying the available notes. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We now need to create the file “</span><span
+class="calibre24">craigslist_listing.scss.</span><span
+class="calibre12">” It will be used for setting the size of our
+components, and for setting the background to grey. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">#clNotes {</span></p>
+<p><span class="calibre16">  width: 350px;</span></p>
+<p><span class="calibre16">  height: 350px;</span></p>
+<p><span class="calibre16">  background-color: lightgrey;</span></p>
+<p><span class="calibre16">  padding:20px;</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">#notesDisplay {</span></p>
+<p><span class="calibre16">  width:280px;</span></p>
+<p><span class="calibre16">  height: 240px;</span></p>
+<p><span class="calibre16">  background-color: white;</span></p>
+<p><span class="calibre16">  overflow-y: scroll;</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We now need to install and then run our
+Chrome extension. We have to use broccoli first, and then compile our
+files. Use the terminal inside your project directory to run the
+following command:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">broccoli-timepiece dist/</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">With the above command, our project will be
+compiled to the directory “</span><span
+class="calibre24">/dist”</span><span class="calibre12"> and this will
+automatically recompile the project in any case the project is changed
+in any way. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Once the execution of the above command is
+completed, open your Chrome browser and then navigate to the directory
+“chrome://extensions.” Select “Developer mode” from the top right
+corner. </span></p>
+<div id="part0000_split_020.html_calibre_pb_49" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_021.html"></span></p>
+<section id="part0000_split_021.html_calibre_pb_52"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_021.html__Toc446343743"
+class="calibre14"><span class="calibre19">Chapter 5- Data Visualization
+in React.js</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">In this chapter, we will guide you on how to
+add a mouse-over interaction to a histogram. Our client-side component
+should be as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">'use strict';</span></p>
+<p><span class="calibre16">var React =
+require('react/addons');</span></p>
+<p><span class="calibre16">var cx = React.addons.classSet;</span></p>
+<p><span class="calibre16">var ws = require('ws');</span></p>
+<p><span class="calibre16">var Histogram =
+require('./transactions_by_date.jsx');</span></p>
+<p><span class="calibre16">var History =
+require('./history.jsx');</span></p>
+<p><span class="calibre16">var configuration =
+require('../transactions_by_date.js').config;</span></p>
+<p><span class="calibre16">var histogram =
+require('../transactions_by_date.js').histogram;</span></p>
+<p><span class="calibre16">module.exports =
+React.createClass({</span></p>
+<p><span class="calibre16">  getInitialState: function() {</span></p>
+<p><span class="calibre16">    return {</span></p>
+<p><span class="calibre16">      histogram: hist(new
+ArrayBuffer(config.TOTAL_BYTES)),</span></p>
+<p><span class="calibre16">    };</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">componentDidMount: function() {</span></p>
+<p><span class="calibre16">    var wsc = new
+ws('ws://localhost:8081');</span></p>
+<p><span class="calibre16">    wsc.binaryType =
+'arraybuffer';</span></p>
+<p><span class="calibre16">    wsc.onmessage = function(message)
+{</span></p>
+<p><span class="calibre16">      this.setState({ histogram:
+hist(message.data) });</span></p>
+<p><span class="calibre16">    }.bind(this);</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  render: function() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;div
+className="container"&gt;</span></p>
+<p><span class="calibre16">        &lt;div
+className="row"&gt;</span></p>
+<p><span class="calibre16">          &lt;div
+className="col-xs-12"&gt;</span></p>
+<p><span class="calibre16">            &lt;h1&gt; Visualization of
+Scalable Data &lt;/h1&gt;</span></p>
+<p><span class="calibre16">            &lt;h2&gt;Total Bitcoins per day
+&lt;/h2&gt;</span></p>
+<p><span class="calibre16">          &lt;/div&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;</span></p>
+<p><span class="calibre16">        &lt;br /&gt;</span></p>
+<p><span class="calibre16">        &lt;div
+className="row"&gt;</span></p>
+<p><span class="calibre16">          &lt;div
+className="col-xs-12"&gt;</span></p>
+<p><span class="calibre16">            &lt;Histogram</span></p>
+<p><span class="calibre16">              data={ this.state.histogram
+}           </span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16">          &lt;/div&gt;</span></p>
+<p><span class="calibre16">          &lt;div
+className="col-xs-12"&gt;</span></p>
+<p><span class="calibre16">            &lt;History</span></p>
+<p><span class="calibre16">              now={
+this.state.histogram.domain[1] }</span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16">          &lt;/div&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;</span></p>
+<p><span class="calibre16">      &lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">I have a web socket module and React,
+together with some React components. Our histogram is a live-updating
+bar chart, and it is a representation of the transactions by date.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Let us begin with an empty array of the right
+size for our histogram. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">histogram: hist(new
+ArrayBuffer(config.TOTAL_BYTES)),</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Consider the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">wsc.onmessage = function(message)
+{</span></p>
+<p><span class="calibre16">      this.setState({ histogram:
+hist(message.data) });</span></p>
+<p><span class="calibre16">    }.bind(this);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">With the above code, we will be in a position
+to set the histogram to whatever message which comes back. The server
+will be tasked with construction of an typed array representation of our
+data, and then it will be pushed to a web socket. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We are now in need of adding state to our
+component of the type “</span><span
+class="calibre24">hoverDate”</span><span class="calibre12">. This is
+shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">histogram: hist(new
+ArrayBuffer(config.TOTAL_BYTES)),</span></p>
+<p><span class="calibre16">      hoverDate: null</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Let us then add a function which will place a
+date on hover. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">onHover: function(date) {</span></p>
+<p><span class="calibre16">    this.setState({hoverDate:
+date});</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We want to be keeping track of the data which
+has been hovered on in our component. This should then be passed in as a
+property in the component as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;History</span></p>
+<p><span class="calibre16">              now={
+this.state.histogram.domain[1] }</span></p>
+<p><span class="calibre16">             
+onHover={this.onHover}</span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The above can then be used as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">'use strict';</span></p>
+<p><span class="calibre16">var React =
+require('react/addons');</span></p>
+<p><span class="calibre16">var ReactCSSTransitionGroup =
+React.addons.CSSTransitionGroup;</span></p>
+<p><span class="calibre16">var moment = require('moment');</span></p>
+<p><span class="calibre16">var events = [</span></p>
+<p><span class="calibre16">  [new Date(2015, 0, 5), 'Genesis block:
+18:15:05 GMT'],</span></p>
+<p><span class="calibre16">  [new Date(2015, 0, 7), ' Bitcoin v0.1
+'],</span></p>
+<p><span class="calibre16">  [new Date(2015, 0, 12), ' First Bitcoin
+transaction '],</span></p>
+<p><span class="calibre16">];</span></p>
+<p><span class="calibre16">events.reverse(); // for displaying backwards
+(newest on top)</span></p>
+<p><span class="calibre16">module.exports =
+React.createClass({</span></p>
+<p><span class="calibre16">  render: function() {</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;ul
+className="list-group"&gt;</span></p>
+<p><span class="calibre16">        &lt;ReactCSSTransitionGroup
+transName="history-events"&gt;</span></p>
+<p><span class="calibre16">          {events.filter(function(event)
+{</span></p>
+<p><span class="calibre16">            return evt[0].getTime() &lt;=
+this.props.now;</span></p>
+<p><span class="calibre16">          }.bind(this)).map(function(event)
+{</span></p>
+<p><span class="calibre16">            var date = event[0];</span></p>
+<p><span class="calibre16">            var text = event[1];</span></p>
+<p><span class="calibre16">            return (</span></p>
+<p><span class="calibre16">              &lt;li
+className="list-group-item" key={text} &gt;</span></p>
+<p><span class="calibre16">                &lt;span className="label
+label-primary"&gt;</span></p>
+<p><span class="calibre16">                 
+{moment(date).calendar()}</span></p>
+<p><span class="calibre16">                &lt;/span&gt;</span></p>
+<p><span class="calibre16">               
+&lt;span&gt;{text}&lt;/span&gt;</span></p>
+<p><span class="calibre16">              &lt;/li&gt;</span></p>
+<p><span class="calibre16">            );</span></p>
+<p><span class="calibre16">          }.bind(this))}</span></p>
+<p><span class="calibre16">       
+&lt;/ReactCSSTransitionGroup&gt;</span></p>
+<p><span class="calibre16">      &lt;/ul&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We should now bind the on hover for our
+history item to the date. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;li</span></p>
+<p><span class="calibre16">               
+className="list-group-item"</span></p>
+<p><span class="calibre16">                key={text}</span></p>
+<p><span class="calibre16">               
+onMouseOver={this.props.onHover.bind(null, date)}</span></p>
+<p><span class="calibre16">&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The events should then be logged to ensure
+that everything runs well. This can be done as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">onHover: function(date) {</span></p>
+<p><span class="calibre16">    console.log(date);</span></p>
+<p><span class="calibre16">    this.setState({hoverDate:
+date});</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">After the hover, we want to select some
+items. We can set the color of the background. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;li</span></p>
+<p><span class="calibre16">               
+className="list-group-item"</span></p>
+<p><span class="calibre16">                key={text}</span></p>
+<p><span class="calibre16">               
+onMouseOver={this.props.onHover.bind(null, date)}</span></p>
+<p><span class="calibre16">style={{</span></p>
+<p><span class="calibre16">                  backgroundColor:
+this.props.hoverDate === date ? '#b0007f' : 'white',</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                  color: this.props.hoverDate
+=== date ? 'white' : 'black'</span></p>
+<p><span class="calibre16">                }}</span></p>
+<p><span class="calibre16">              &gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The hover date can then be passed as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;History</span></p>
+<p><span class="calibre16">              now={
+this.state.histogram.domain[1] }</span></p>
+<p><span class="calibre16">             
+onHover={this.onHover}</span></p>
+<p><span class="calibre16">             
+hoverDate={this.state.hoverDate}</span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The following can be used for setting the
+mouse hover event on the other file. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">onMouseOver={this.props.onHover.bind(null,
+date)}</span></p>
+<p><span class="calibre16">               
+onMouseOut={this.props.onHover.bind(null, null)}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We now need to implement the mechanism on how
+the histogram will be highlighted. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">'use strict';</span></p>
+<p><span class="calibre16">//our external deps</span></p>
+<p><span class="calibre16">var React = require('react');</span></p>
+<p><span class="calibre16">var d3 = require('d3');</span></p>
+<p><span class="calibre16">var moment = require('moment');</span></p>
+<p><span class="calibre16">// our internal deps</span></p>
+<p><span class="calibre16">var Axis = require('./axis.jsx');</span></p>
+<p><span class="calibre16">var Bars = require('./bars.jsx');</span></p>
+<p><span class="calibre16">module.exports =
+React.createClass({</span></p>
+<p><span class="calibre16">  render: function() {</span></p>
+<p><span class="calibre16">    var data = this.props.data;</span></p>
+<p><span class="calibre16">    var values = data.getValues();</span></p>
+<p><span class="calibre16">    var width = 630;</span></p>
+<p><span class="calibre16">    var height =
+Math.floor(width/2);</span></p>
+<p><span class="calibre16">    if (data.domain[0] === 0) {</span></p>
+<p><span class="calibre16">      // we have no data</span></p>
+<p><span class="calibre16">      return (</span></p>
+<p><span class="calibre16">        &lt;div&gt;</span></p>
+<p><span class="calibre16">         
+&lt;span&gt;Loading...&amp;nbsp;&lt;/span&gt;</span></p>
+<p><span class="calibre16">          &lt;span className="glyphicon
+glyphicon-time" aria-hidden="true"&gt;&lt;/span&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        &lt;/div&gt;</span></p>
+<p><span class="calibre16">      );</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    var scales = {</span></p>
+<p><span class="calibre16">      x: d3.scale.linear().domain([0,
+data.getBin(data.domain[1])]).range([0, width]),</span></p>
+<p><span class="calibre16">      y: d3.scale.linear().domain([0,
+d3.max(values)]).range([0, height])</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    };</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;div className={'histogram ' +
+this.props.className}&gt;</span></p>
+<p><span class="calibre16">        &lt;svg</span></p>
+<p><span class="calibre16">          width={width + 100}</span></p>
+<p><span class="calibre16">          height={height + 100}</span></p>
+<p><span class="calibre16">        &gt;</span></p>
+<p><span class="calibre16">          &lt;Axis</span></p>
+<p><span class="calibre16">            scale={scales.x}</span></p>
+<p><span class="calibre16">            displayScale={</span></p>
+<p><span class="calibre16">              d3.time.scale.utc()</span></p>
+<p><span class="calibre16">                .domain([new
+Date(data.domain[0]), new Date(data.domain[1])])</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                .range([0,
+data.getBin(data.domain[1])])</span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">            tickFormatter={</span></p>
+<p><span class="calibre16">              function(date) { return
+moment(date).format('MMM YY'); }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">            x={100}</span></p>
+<p><span class="calibre16">            y={height+1}</span></p>
+<p><span class="calibre16">            axis='x'</span></p>
+<p><span class="calibre16">          /&gt;</span></p>
+<p><span class="calibre16">          &lt;Axis</span></p>
+<p><span class="calibre16">            scale={scales.y}</span></p>
+<p><span class="calibre16">            displayScale={</span></p>
+<p><span class="calibre16">             
+d3.scale.linear().domain([d3.max(values), 0]).range([0,
+d3.max(values)])</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">            tFormatter={</span></p>
+<p><span class="calibre16">              function(t) { return
+t.toLocaleString(); }</span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">            x={99}</span></p>
+<p><span class="calibre16">            y={0}</span></p>
+<p><span class="calibre16">            axis='y'</span></p>
+<p><span class="calibre16">          /&gt;</span></p>
+<p><span class="calibre16">          &lt;Bars</span></p>
+<p><span class="calibre16">            data={data}</span></p>
+<p><span class="calibre16">            width={width}</span></p>
+<p><span class="calibre16">            height={height}</span></p>
+<p><span class="calibre16">            scales={scales}</span></p>
+<p><span class="calibre16">            zmIn={this.zoomIn}</span></p>
+<p><span class="calibre16">          /&gt;</span></p>
+<p><span class="calibre16">        &lt;/svg&gt;</span></p>
+<p><span class="calibre16">      &lt;/div&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We  now have some axes and a set of bars in
+our component. Our aim is to highlight the bars:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">     </span><span
+class="calibre16">&lt;Bars</span></p>
+<p><span class="calibre16">            data={data}</span></p>
+<p><span class="calibre16">            width={width}</span></p>
+<p><span class="calibre16">            height={height}</span></p>
+<p><span class="calibre16">            scales={scales}</span></p>
+<p><span class="calibre16">            zmIn={this.zoomIn}</span></p>
+<p><span class="calibre16">          /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The class for the bars is as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">'use strict';</span></p>
+<p><span class="calibre16">// our external deps</span></p>
+<p><span class="calibre16">var React = require('react');</span></p>
+<p><span class="calibre16">// the utility functions</span></p>
+<p><span class="calibre16">function regularArray(tpdArray) {</span></p>
+<p><span class="calibre16">  // TODO -- figuring out how to map over the
+typed arrays cleanly</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">  // without the need to copy to the regular
+array</span></p>
+<p><span class="calibre16">  var array = new
+Array(tpdArray.length);</span></p>
+<p><span class="calibre16">  for (var j=0; j&lt;typedArray.length; j++)
+{</span></p>
+<p><span class="calibre16">    array[j] = tpdArray[j];</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">  return array;</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">function translate(x, y) {</span></p>
+<p><span class="calibre16">  return 'translate(' + x + 'px,' + y +
+'px)';</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16">module.exports =
+React.createClass({</span></p>
+<p><span class="calibre16">  render: function() {</span></p>
+<p><span class="calibre16">    var data = this.props.data;</span></p>
+<p><span class="calibre16">    var values =
+regularArray(data.getValues());</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">      &lt;g style={{transform:
+'translateX(100px)'}}&gt;</span></p>
+<p><span class="calibre16">        {values.map(function(value, idx)
+{</span></p>
+<p><span class="calibre16">          var click = null;</span></p>
+<p><span class="calibre16">          if (data.bucket !== 0
+&amp;&amp;</span></p>
+<p><span class="calibre16">              idx === 0) {</span></p>
+<p><span class="calibre16">            // making our first bar
+clickable, so as to dive into our results there</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            click =
+this.props.zmIn;</span></p>
+<p><span class="calibre16">          }</span></p>
+<p><span class="calibre16">          var scWidth =
+(this.props.width/(data.getBin(data.domain[1]))) + 0.5;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">          return (</span></p>
+<p><span class="calibre16">            &lt;rect</span></p>
+<p><span class="calibre16">              fill='#0a8cc4'</span></p>
+<p><span class="calibre16">              key={idx}</span></p>
+<p><span class="calibre16">              x={0}</span></p>
+<p><span class="calibre16">              y={0}</span></p>
+<p><span class="calibre16">              width={1} /* sizing with the
+CSS transform for allow transitions */</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">              height={1} /* sizing with the
+CSS transform so as to allow transitions */</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">              style={{</span></p>
+<p><span class="calibre16">                cursor: click === null ?
+'auto' : 'pointer',</span></p>
+<p><span class="calibre16">                transform:
+translate(</span></p>
+<p><span class="calibre16">                 
+this.props.scales.x(idx),</span></p>
+<p><span class="calibre16">                  this.props.height -
+this.props.scales.y(value)</span></p>
+<p><span class="calibre16">                ) + ' scaleY(' +
+this.props.scales.y(value) + ')'</span></p>
+<p><span class="calibre16">                + ' scaleX(' + scaleWidth +
+')'</span></p>
+<p><span class="calibre16">              }}</span></p>
+<p><span class="calibre16">              onClick={click}</span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16">          );</span></p>
+<p><span class="calibre16">        }.bind(this))}</span></p>
+<p><span class="calibre16">      &lt;/g&gt;</span></p>
+<p><span class="calibre16">    );</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<div id="part0000_split_021.html_calibre_pb_53" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_022.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Plumbing the data</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Our debugger should be as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var scales = {</span></p>
+<p><span class="calibre16">      x: d3.scale.linear().domain([0,
+data.getBin(data.domain[1])]).range([0, width]),</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">      y: d3.scale.linear().domain([0,
+d3.max(values)]).range([0, height])</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    };</span></p>
+<p><span class="calibre16">    debugger;</span></p>
+<p><span class="calibre16">    return (</span></p>
+<p><span class="calibre16">…</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The highlight index should be as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">&lt;Histogram</span></p>
+<p><span class="calibre16">              data={ this.state.histogram
+}</span></p>
+<p><span class="calibre16">              highlightIdx={</span></p>
+<p><span class="calibre16">                this.state.hoverDate === null
+? null : (</span></p>
+<p><span class="calibre16">                 
+Math.floor((this.state.hoverDate - (new
+Date(this.state.histogram.domain[0]))) / (1000 * 60 * 60 *
+24))</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                )</span></p>
+<p><span class="calibre16">              }</span></p>
+<p><span class="calibre16">            /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The “</span><span
+class="calibre24">highlightIdx”</span><span class="calibre12"> should
+then be passed through our bars as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var hl = this.props.highlightIdx !== null
+&amp;&amp; Math.abs(this.props.highlightIdx - idx) &lt;= 1;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">          &lt;Bars</span></p>
+<p><span class="calibre16">            data={data}</span></p>
+<p><span class="calibre16">            width={width}</span></p>
+<p><span class="calibre16">            height={height}</span></p>
+<p><span class="calibre16">            scales={scales}</span></p>
+<p><span class="calibre16">            zmIn={this.zoomIn}</span></p>
+<p><span class="calibre16">           
+highlightIdx={this.props.highlightIdx}</span></p>
+<p><span class="calibre16">          /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We now want to ensure that our bars are
+highlighted on hover. Just restart the server, and then reload your
+page. The content should be displayed on the window. </span></p>
+<div id="part0000_split_022.html_calibre_pb_55" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_023.html"></span></p>
+<section id="part0000_split_023.html_calibre_pb_58"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_023.html__Toc446343744"
+class="calibre14"><span class="calibre19">Chapter 6- Showing
+Exceptions</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">It is possible for us to show the exceptions
+from a flux dispatcher callback. Flux is simply a front end application
+architecture created by Facebook. The method “</span><span
+class="calibre24">register”</span><span class="calibre12"> is used for
+accepting the callbacks. The callbacks will then be invoked whenever an
+action has been to it. The dispatcher usually eats exceptions which
+occur in a callback. This is good because a callback which fails cannot
+crash the whole application. However, it makes the process of debugging 
+tough. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We are in need of showing our exceptions on
+the console. We should first define a function for logging errors of the
+function which is being passed. This should be done as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var vm = function(f) {</span></p>
+<p><span class="calibre16">  return function() {</span></p>
+<p><span class="calibre16">    try {</span></p>
+<p><span class="calibre16">      f.apply(this, arguments);</span></p>
+<p><span class="calibre16">    } catch(ex) {</span></p>
+<p><span class="calibre16">      console.error(ex.stack);</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Note that we have used the console object,
+and this will fail in case you use older versions of Internet Explorer
+(IE). You should always have your developer console already opened. Let
+us now override the “</span><span
+class="calibre24">dispatch”</span><span class="calibre12"> method so as
+to use the above class:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var Dispatcher =
+require('flux').Dispatcher;</span></p>
+<p><span class="calibre16">var as = require('object-assign');</span></p>
+<p><span class="calibre16">var ApplicationDispatcher = as(new
+Dispatcher(), {</span></p>
+<p><span class="calibre16">  handleViewAction: function(action)
+{</span></p>
+<p><span class="calibre16">    console.log(action);</span></p>
+<p><span class="calibre16">    this.dispatch({</span></p>
+<p><span class="calibre16">      source: 'VIEW_ACTION',</span></p>
+<p><span class="calibre16">      action: action</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  handleServerAction: function(action)
+{</span></p>
+<p><span class="calibre16">    console.log(action);</span></p>
+<p><span class="calibre16">    this.dispatch({</span></p>
+<p><span class="calibre16">      source: 'SERVER_ACTION',</span></p>
+<p><span class="calibre16">      action: action</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">  },</span></p>
+<p><span class="calibre16">  register: function(fn) {</span></p>
+<p><span class="calibre16">    return
+Dispatcher.prototype.register.call(this, vm(fn));</span></p>
+<p><span class="calibre16">  }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">module.exports =
+ApplicationDispatcher;</span></p>
+<div id="part0000_split_023.html_calibre_pb_59" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_024.html"></span></p>
+<section id="part0000_split_024.html_calibre_pb_62"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_024.html__Toc446343745"
+class="calibre14"><span class="calibre19">Chapter 7- Testing React
+Components</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Karma and webpack can be used for the purpose
+of testing React components. To do this, you have to begin by installing
+the necessary libraries; otherwise, it will not work effectively.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre25">Configuration</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">Karma will read from the file “</span><span
+class="calibre24">karma.conf.js,</span><span class="calibre12">, so we
+should begin by setting it up. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var pack = require('webpack');</span></p>
+<p><span class="calibre16">module.exports = function (config)
+{</span></p>
+<p><span class="calibre16">  config.set({</span></p>
+<p><span class="calibre16">    browsers: [ 'Chrome' ], //running in
+Chrome</span></p>
+<p><span class="calibre16">    singleRun: true, //should be run once by
+default</span></p>
+<p><span class="calibre16">    frameworks: [ 'mocha' ], //using the
+mocha test framework</span></p>
+<p><span class="calibre16">    files: [</span></p>
+<p><span class="calibre16">      'tests.webpack.js' // loading this
+file</span></p>
+<p><span class="calibre16">    ],</span></p>
+<p><span class="calibre16">    preprocessors: {</span></p>
+<p><span class="calibre16">      'tests.webpack.js': [ 'webpack',
+'sourcemap' ] //preprocessing with the webpack and the sourcemap
+loader</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    reporters: [ 'dots' ], //report results
+in this format</span></p>
+<p><span class="calibre16">    webpack: { // copying of the webpack
+config</span></p>
+<p><span class="calibre16">      devtool: 'inline-source-map', // doing
+inline source maps instead of default</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">      module: {</span></p>
+<p><span class="calibre16">        loaders: [</span></p>
+<p><span class="calibre16">          { test: /\.js$/, loader:
+'babel-loader' }</span></p>
+<p><span class="calibre16">        ]</span></p>
+<p><span class="calibre16">      }</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    webpackServer: {</span></p>
+<p><span class="calibre16">      noInfo: true // avoid spamming the
+console if running in karma</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">Our next step should be to create a single
+file which will make use of the API webpack required for finding the
+files which are needed automatically. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var c = require.context('./src', true,
+/-test\.js$/); // ensure that you have the directory and regex test
+being set correctly</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">c.keys().forEach(c);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We now need to write some tests. An example
+of this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var React = require('react');</span></p>
+<p><span class="calibre16">var TtUtils =
+require('react/lib/ReactTestUtils'); //It is good to use Test Utils, but
+one can use the DOM API instead.</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var expect = require('expect');</span></p>
+<p><span class="calibre16">var Root = require('../root'); // live
+testing is done in components/__tests__/, as it is what I need in my
+components</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">describe('root', function () {</span></p>
+<p><span class="calibre16">  it('rendering with no problems', function
+() {</span></p>
+<p><span class="calibre16">    var root =
+TtUtils.renderIntoDocument(&lt;Root/&gt;);</span></p>
+<p><span class="calibre16">    expect(root).toExist();</span></p>
+<p><span class="calibre16">  });</span></p>
+<p><span class="calibre16">});</span></p>
+<div id="part0000_split_024.html_calibre_pb_63" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_025.html"></span></p>
+<section id="part0000_split_025.html_calibre_pb_66"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_025.html__Toc446343746"
+class="calibre14"><span class="calibre19">Chapter 8- Building a Sliding
+Menu</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">One can use React and LESS CSS to create a
+sliding menu. Our aim is for the menu to slide from either the left or
+the right based on an action of the external page. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">In React, there are three classes which can
+be used to render the menus. These include the following:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre12">App</span></li>
+<li><span class="calibre12">Menu</span></li>
+<li><span class="calibre12">MenuItem</span></li>
+</ul>
+<div id="part0000_split_025.html_calibre_pb_67" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_026.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">App</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This can be used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var Application  =
+React.createClass({</span></p>
+<p><span class="calibre16">    showLeft: function() {</span></p>
+<p><span class="calibre16">        this.refs.left.show();</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    showRight: function() {</span></p>
+<p><span class="calibre16">        this.refs.right.show();</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div&gt;</span></p>
+<p><span class="calibre16">            &lt;button
+onClick={this.showLeft}&gt;View Left Menu!&lt;/button&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &lt;button
+onClick={this.showRight}&gt;View Right Menu!&lt;/button&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &lt;Menu ref="left"
+alignment="left"&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="first-page"&gt; Page 1 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="second-page"&gt; Page 2 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="third-page"&gt; Page 3 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">            &lt;/Menu&gt;</span></p>
+<p><span class="calibre16">            &lt;Menu ref="right"
+alignment="right"&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="first-page"&gt; Page 1 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="second-page"&gt; Page 2 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">                &lt;MenuItem
+hash="third-page"&gt; Page 3 &lt;/MenuItem&gt;</span></p>
+<p><span class="calibre16">            &lt;/Menu&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">In the above example, we have added only
+menus to our app. One of these will slide it from the right and the
+other one from the left. The specification of these parameters has been
+done using the prop “</span><span
+class="calibre24">alignment.”</span></p>
+<p><span class="calibre24"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We have created instances of the
+“</span><span class="calibre24">MenuItem”</span><span class="calibre12">
+class inside the “</span><span class="calibre24">Menus.”</span><span
+class="calibre12"> The user will be able to click on these menu entries
+so as to perform a certain action. In our case, the action is most
+probably to navigate to a certain hash, and the specification of this is
+done using the “</span><span class="calibre24">hash”</span><span
+class="calibre12"> prop on the declaration of the class. </span></p>
+<div id="part0000_split_026.html_calibre_pb_69" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_027.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Menu</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This can be used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var Menu = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            visible: false  </span></p>
+<p><span class="calibre16">        };</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    show: function() {</span></p>
+<p><span class="calibre16">        this.setState({ visible: true
+});</span></p>
+<p><span class="calibre16">        document.addEventListener("click",
+this.hide.bind(this));</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    hide: function() {</span></p>
+<p><span class="calibre16">        document.removeEventListener("click",
+this.hide.bind(this));</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        this.setState({ visible: false
+});</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div
+className="menu"&gt;</span></p>
+<p><span class="calibre16">            &lt;div
+className={(this.state.visible ? "visible " : "") +
+this.props.alignment}&gt;{this.props.children}&lt;/div&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">Menu”</span><span class="calibre12"> is responsible
+for rendering our actual menu and toggling of the visibility of our
+actual menu depending on how the methods “</span><span
+class="calibre24">hide”</span><span class="calibre12"> and “</span><span
+class="calibre24">show”</span><span class="calibre12"> are called. The
+method “</span><span class="calibre33">getInitialState”</span><span
+class="calibre16"> </span><span class="calibre34">is an indication that
+our menu is hidden by default. The method “</span><span
+class="calibre33">show”</span><span class="calibre34"> can be used for
+setting the visibility of the menu to true. </span></p>
+<div id="part0000_split_027.html_calibre_pb_71" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_028.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">MenuItem</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This can be used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var MnItem = React.createClass({</span></p>
+<p><span class="calibre16">    navigate: function(hash) {</span></p>
+<p><span class="calibre16">        window.location.hash =
+hash;</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div className="menu-item"
+onClick={this.navigate.bind(this,
+this.props.hash)}&gt;{this.props.children}&lt;/div&gt;;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">The class “</span><span
+class="calibre24">MenuItem”</span><span class="calibre12"> is
+responsible for rendering the item and then handling the action for
+click. </span></p>
+<div id="part0000_split_028.html_calibre_pb_73" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_029.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">CSS</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This can be used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">.menu {</span></p>
+<p><span class="calibre16">    display:block;</span></p>
+<p><span class="calibre16">    @menu-width:250px;</span></p>
+<p><span class="calibre16">    &gt;div {</span></p>
+<p><span class="calibre16">        position:absolute;</span></p>
+<p><span class="calibre16">              top:0;</span></p>
+<p><span class="calibre16">                z-index:2;</span></p>
+<p><span class="calibre16">        width:@menu-width; </span></p>
+<p><span class="calibre16">        .border-box; </span></p>
+<p><span class="calibre16">height:100%; </span></p>
+<p><span class="calibre16">                .transition(-webkit-transform
+ease 250ms); </span></p>
+<p><span class="calibre16">        .transition(transform ease
+250ms);</span></p>
+<p><span class="calibre16">        &amp;.left {</span></p>
+<p><span class="calibre16">            background:#284D7A;</span></p>
+<p><span class="calibre16">            left:@menu-width*-1;</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">        &amp;.visible.left {</span></p>
+<p><span class="calibre16">           
+.transform(translate3d(@menu-width, 0, 0));</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">        &amp;.right {</span></p>
+<p><span class="calibre16">            right:@menu-width*-1;</span></p>
+<p><span class="calibre16">            background:#6B2828;</span></p>
+<p><span class="calibre16">                    }</span></p>
+<p><span class="calibre16">        &amp;.visible.right {</span></p>
+<p><span class="calibre16">           
+.transform(translate3d(@menu-width*-1, 0, 0));</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        &gt;.menu-item {</span></p>
+<p><span class="calibre16">            float:left;</span></p>
+<p><span class="calibre16">            width:100%;</span></p>
+<p><span class="calibre16">            margin:0;</span></p>
+<p><span class="calibre16">            padding:15px 20px;</span></p>
+<p><span class="calibre16">            border-bottom:solid 1px
+#555;</span></p>
+<p><span class="calibre16">            cursor:pointer;</span></p>
+<p><span class="calibre16">            .border-box;</span></p>
+<p><span class="calibre16">            color:#F0B0B0;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &amp;:hover {</span></p>
+<p><span class="calibre16">                color:#F0F0F0;</span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We are in need of abstracting any vendor
+prefixes which are annoying. This is why we have used different LESS CSS
+mixins. </span></p>
+<div id="part0000_split_029.html_calibre_pb_75" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_030.html"></span></p>
+<section id="part0000_split_030.html_calibre_pb_78"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_030.html__Toc446343747"
+class="calibre14"><span class="calibre19">Chapter 9- Creating a
+Dropdown</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">We can use Font Awesome, LESS CSS, and React
+JS to create a dropdown. It uses the LESS CSS so as to provide a good
+and amazing animation. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre25">React</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre12">This can be implemented as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre16">var Dropdown = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            listVisible: false</span></p>
+<p><span class="calibre16">        };</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    select: function(item) {</span></p>
+<p><span class="calibre16">        this.props.selected =
+item;</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    show: function() {</span></p>
+<p><span class="calibre16">        this.setState({ listVisible: true
+});</span></p>
+<p><span class="calibre16">        document.addEventListener("click",
+this.hide);</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    hide: function() {</span></p>
+<p><span class="calibre16">        this.setState({ listVisible: false
+});</span></p>
+<p><span class="calibre16">        document.removeEventListener("click",
+this.hide);</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div
+className={"dropdown-container" + (this.state.listVisible ? " show" :
+"")}&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &lt;div
+className={"dropdown-display" + (this.state.listVisible ? " clicked":
+"")} onClick={this.show}&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &lt;span style={{ color:
+this.props.selected.hex
+}}&gt;{this.props.selected.name}&lt;/span&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &lt;i className="fa
+fa-angle-down"&gt;&lt;/i&gt;</span></p>
+<p><span class="calibre16">            &lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;div
+className="dropdown-list"&gt;</span></p>
+<p><span class="calibre16">                &lt;div&gt;</span></p>
+<p><span class="calibre16">                   
+{this.renderListItems()}</span></p>
+<p><span class="calibre16">                &lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;/div&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    renderListItems: function() {</span></p>
+<p><span class="calibre16">        var items = [];</span></p>
+<p><span class="calibre16">        for (var j = 0; j &lt;
+this.props.list.length; j++) {</span></p>
+<p><span class="calibre16">            var it =
+this.props.list[j];</span></p>
+<p><span class="calibre16">            it.push(&lt;div
+onClick={this.select.bind(null, it)}&gt;</span></p>
+<p><span class="calibre16">                &lt;span style={{ color:
+it.hex }}&gt;{it.name}&lt;/span&gt;</span></p>
+<p><span class="calibre16">            &lt;/div&gt;);</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">        return its;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var colours = [{</span></p>
+<p><span class="calibre16">    name: "Blue",</span></p>
+<p><span class="calibre16">    hex: "#1B66F2"</span></p>
+<p><span class="calibre16">}, {</span></p>
+<p><span class="calibre16">    name: "Red",</span></p>
+<p><span class="calibre16">    hex: "#F21B1B"</span></p>
+<p><span class="calibre16">   }, {</span></p>
+<p><span class="calibre16">    name: "Green",</span></p>
+<p><span class="calibre16">    hex: "#07BA16"</span></p>
+<p><span class="calibre16">}];</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">React.render(&lt;Dropdown list={colours}
+selected={colours[0]} /&gt;,
+document.getElementById("container"));</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre12">We have begun creation of a DropDown class 
+by invocation of the class “createClass.” The function “getInitialState”
+is used for setting the state of our dropdown once it has been created,
+and it has taken two props,namely </span><span
+class="calibre16">list</span><span class="calibre12"> and </span><span
+class="calibre16">selected. </span><span class="calibre34">The
+“</span><span class="calibre33">list”</span><span class="calibre34">
+specifies the items which are to be displayed once the user clicks on
+the drop down. The “</span><span class="calibre33">selected”</span><span
+class="calibre34"> property specifies the item which is currently
+selected. </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34">The React “</span><span
+class="calibre33">render”</span><span class="calibre34"> method is then 
+used for rendering the dropdown. Note that this will have the colors
+which we have specified. </span></p>
+<div id="part0000_split_030.html_calibre_pb_79" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_031.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">LESS CSS</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">This can be used as shown below:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">@height:50px;</span></p>
+<p><span class="calibre16">@spacing:20px;</span></p>
+<p><span class="calibre16">@select-colour:#2775C7;</span></p>
+<p><span class="calibre16">@font-size:15px;</span></p>
+<p><span class="calibre16">@border-colour:#DDD;</span></p>
+<p><span class="calibre16">div.dropdown-container {</span></p>
+<p><span class="calibre16">    &amp;.show&gt;div.dropdown-list
+{</span></p>
+<p><span class="calibre16">        .transform(scale(1, 1));</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    @icon-width:15px;</span></p>
+<p><span class="calibre16">    &gt;div.dropdown-display {</span></p>
+<p><span class="calibre16">        float:left;</span></p>
+<p><span class="calibre16">        width:100%;</span></p>
+<p><span class="calibre16">        background:white;</span></p>
+<p><span class="calibre16">        height:@height;</span></p>
+<p><span class="calibre16">        cursor:pointer;</span></p>
+<p><span class="calibre16">        border:solid 2px
+@border-colour;</span></p>
+<p><span class="calibre16">        .border-box;</span></p>
+<p><span class="calibre16">        &gt;* {</span></p>
+<p><span class="calibre16">            float:left;</span></p>
+<p><span class="calibre16">            height:100%;</span></p>
+<p><span class="calibre16">           
+.vertical-centre(@height);</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">        &gt;span {</span></p>
+<p><span class="calibre16">            font-size:@font-size;</span></p>
+<p><span class="calibre16">            width:100%;</span></p>
+<p><span class="calibre16">            position:relative;</span></p>
+<p><span class="calibre16">            .border-box;</span></p>
+<p><span class="calibre16">           
+padding-right:@icon-width+@spacing*2;</span></p>
+<p><span class="calibre16">            padding-left:@spacing;</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">        &gt;j {</span></p>
+<p><span class="calibre16">            position:relative;</span></p>
+<p><span class="calibre16">            width:@icon-width;</span></p>
+<p><span class="calibre16">           
+margin-left:(@spacing+@icon-width)*-1;</span></p>
+<p><span class="calibre16">            font-size:1.125em;</span></p>
+<p><span class="calibre16">            font-weight:bold;</span></p>
+<p><span class="calibre16">           
+padding-right:@spacing;</span></p>
+<p><span class="calibre16">            text-align:right;</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">    &gt;div.dropdown-list {</span></p>
+<p><span class="calibre16">        float:left;</span></p>
+<p><span class="calibre16">        width:100%;</span></p>
+<p><span class="calibre16">        position:relative;</span></p>
+<p><span class="calibre16">        width:100%;</span></p>
+<p><span class="calibre16">        .transform(scale(1, 0));</span></p>
+<p><span class="calibre16">        .transition(-webkit-transform ease
+250ms);</span></p>
+<p><span class="calibre16">        .transition(transform ease
+250ms);</span></p>
+<p><span class="calibre16">        &gt;div {</span></p>
+<p><span class="calibre16">            position:absolute;</span></p>
+<p><span class="calibre16">            width:100%;</span></p>
+<p><span class="calibre16">            z-index:2;</span></p>
+<p><span class="calibre16">            cursor:pointer;</span></p>
+<p><span class="calibre16">            background:white;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &gt;div {</span></p>
+<p><span class="calibre16">                float:left;</span></p>
+<p><span class="calibre16">                width:100%;</span></p>
+<p><span class="calibre16">                padding:0
+@spacing;</span></p>
+<p><span class="calibre16">               
+font-size:@font-size;</span></p>
+<p><span class="calibre16">                .border-box;</span></p>
+<p><span class="calibre16">                border:solid 2px
+@border-colour;</span></p>
+<p><span class="calibre16">                border-top:none;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                @icon-width:21px;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &amp;:hover {</span></p>
+<p><span class="calibre16">                   
+background:#F0F0F0;</span></p>
+<p><span class="calibre16">                }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &amp;.selected {</span></p>
+<p><span class="calibre16">                   
+background:@select-colour;</span></p>
+<p><span class="calibre16">                    color:white;</span></p>
+<p><span class="calibre16">                }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &gt;* {</span></p>
+<p><span class="calibre16">                   
+.vertical-centre(@height);</span></p>
+<p><span class="calibre16">                }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &gt;span {</span></p>
+<p><span class="calibre16">                    float:left;</span></p>
+<p><span class="calibre16">                    width:100%;</span></p>
+<p><span class="calibre16">                }</span></p>
+<p><span class="calibre16">            }</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">}</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">In the section for CSS, we have just set up
+how the dropdown will look and feel. </span></p>
+<div id="part0000_split_031.html_calibre_pb_81" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_032.html"></span></p>
+<section id="part0000_split_032.html_calibre_pb_84"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_032.html__Toc446343748"
+class="calibre14"><span class="calibre19">Chapter 10- React JS and Flux
+Architecture</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">The two can be combined together for the
+purpose of making a simple application. Flux provides you with a
+mechanism on how you can draw data from the server API. During this
+time, a strict decoupling of the components is kept on the client side.
+Separation of concerns is implemented, since a one-way communication
+protocol is made use of. React JS and Flux can be used together very
+well. </span></p>
+<div id="part0000_split_032.html_calibre_pb_85" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_033.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">React JS</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">React usually functions off of classes. For
+some HTML to be rendered, you have to begin by creating a React class,
+and this will give a description of what to render. Consider a sample of
+React class which is given below:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var Hello = React.createClass({</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div&gt;Hello,
+there!&lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16">React.render(new Hello (),
+document.body);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">Note that we have defined a React class and
+given it the name “</span><span class="calibre33">Hello.”</span><span
+class="calibre34"> We have then specified the “</span><span
+class="calibre33">render”</span><span class="calibre34"> function in
+this class. In case we are in need of rendering our HTML inside, we will
+call this function, The JSX will help us in writing HTML inside
+JavaScript files without having to write them in separate templates. The
+last line in the above code shows that we are in need of rendering our
+class in the body of the document. </span></p>
+<div id="part0000_split_033.html_calibre_pb_87" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_034.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Props</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">Suppose we are in need of passing some data
+into our React classes. This one has not been provided in our previous
+class. The following class demonstrates how this can be done:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var Hello = React.createClass({</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div&gt;Hello,
+{this.props.name}&lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">React.render(new Hello ({ name: "John Joel"
+}), document.body);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">The argument “</span><span
+class="calibre33">props”</span><span class="calibre34"> has been
+introduced in our above class. This will allow us to pass data to the
+view of our class. Changes made to a prop variable will cause the
+appropriate portion of the view to be rendered. The changes can be from
+the parent view, the view itself or from any of the child views. With
+this, data can be passed within the views themselves and also kept in
+sync. </span></p>
+<div id="part0000_split_034.html_calibre_pb_89" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_035.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">State</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">This can be used as shown below:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var Hello = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            counter: 0</span></p>
+<p><span class="calibre16">        };</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    increment: function() {</span></p>
+<p><span class="calibre16">        this.setState({ counter:
+this.state.counter+1 });</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div&gt;</span></p>
+<p><span class="calibre16">           
+&lt;div&gt;{this.state.counter}&lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;button
+onClick={this.increment}&gt;Increment&lt;/button&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">React.render(new Hello (),
+document.body);</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">A React class has a state, and this is what
+we have introduced above. This makes it possible for you to keep track
+of the changes made to your internal view. Whenever we are using an
+internal state, the function “</span><span
+class="calibre24">getInitialState</span><span class="calibre12">” will
+be required.</span><span class="calibre16"> </span><span
+class="calibre12">It is an indication to the internal view of how our
+initial state should be. Even if you have an empty state, make sure that
+you make use of this function. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We make use of props when we want to pass
+data between our parent and child React classes, and in case a change is
+made to any prop, the view will be rendered again automatically. This
+includes both the child and the parent. If your data is only relevant to
+the view, make use of a state. In this case, any changes made will also
+be rendered in the view. If your data is pertinent to your class other
+than the view, feel free to make use of a private variable, but
+personally, I will use a state. </span></p>
+<div id="part0000_split_035.html_calibre_pb_91" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_036.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">Nested Views</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">The concept of nesting views makes it
+possible and easy for us to make use of React. With this, we are able to
+render React classes from within the other React classes. An example of
+this is given below:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var FnButton = React.createClass({</span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;button
+onClick={this.props.onClick}&gt;</span></p>
+<p><span class="calibre16">            &lt;i className={"fa " +
+this.props.icon}&gt;&lt;/i&gt;</span></p>
+<p><span class="calibre16">           
+&lt;span&gt;{this.props.text}&lt;/span&gt;</span></p>
+<p><span class="calibre16">        &lt;/button&gt;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var Hello = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            counter: 0</span></p>
+<p><span class="calibre16">        };</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    increment: function() {</span></p>
+<p><span class="calibre16">        this.setState({ counter:
+this.state.counter++ });</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div&gt;</span></p>
+<p><span class="calibre16">           
+&lt;div&gt;{this.state.counter}&lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;FancyButton text="Increment"
+icon="fa-arrow-circle-o-up" onClick={this.increment} /&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">In the above class, the button has been
+abstracted so as to increase the counter into a React class which is
+separate. That is how we can assign props via nested classes.
+</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34">In Flux, we have to use a store for the
+purpose of retrieving, updating, and creating in case an action for
+doing so is received. </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34">Consider the example given below which shows
+how flux works:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var Count = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            items: []</span></p>
+<p><span class="calibre16">        };</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    componentWillMount: function()
+{</span></p>
+<p><span class="calibre16">        emitter.on("store-changed",
+function(its) {</span></p>
+<p><span class="calibre16">            this.setState({ items: its
+});</span></p>
+<p><span class="calibre16">        }.bind(this));</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    componentDidMount: function()
+{</span></p>
+<p><span class="calibre16">        dispatcher.dispatch({ type:
+"get-all-items" });</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        var its = this.state.its;</span></p>
+<p><span class="calibre16">        return
+&lt;div&gt;{its.length}&lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var Store = function() {</span></p>
+<p><span class="calibre16">    dispatcher.register(function(pd)
+{</span></p>
+<p><span class="calibre16">        switch (pd.type) {</span></p>
+<p><span class="calibre16">            case: "get-all-items":</span></p>
+<p><span class="calibre16">                this._all();</span></p>
+<p><span class="calibre16">                break;</span></p>
+<p><span class="calibre16">        }</span></p>
+<p><span class="calibre16">    }.bind(this));</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    this._all = function() {</span></p>
+<p><span class="calibre16">        $.get("/some/url", function(its)
+{</span></p>
+<p><span class="calibre16">            this._notify(its);</span></p>
+<p><span class="calibre16">        }.bind(this));</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    this._notify = function(its) {</span></p>
+<p><span class="calibre16">        emitter.emit("store-changed",
+its);</span></p>
+<p><span class="calibre16">    });</span></p>
+<p><span class="calibre16">};</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">var ItemStore = new Store();</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre34">Our application has only a single page which
+is shown below:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">"use strict";</span></p>
+<p><span class="calibre16">var Todo = React.createClass({</span></p>
+<p><span class="calibre16">    getInitialState: function() {</span></p>
+<p><span class="calibre16">        return {</span></p>
+<p><span class="calibre16">            todos: []</span></p>
+<p><span class="calibre16">        }  </span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    componentWillMount: function()
+{</span></p>
+<p><span class="calibre16">        emitter.on(constants.changed,
+function(tds) {</span></p>
+<p><span class="calibre16">            this.setState({ todos: tds
+});</span></p>
+<p><span class="calibre16">        }.bind(this));</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    componentDidMount: function()
+{</span></p>
+<p><span class="calibre16">        dispatcher.dispatch({ type:
+constants.all });</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    componentsWillUnmount: function()
+{</span></p>
+<p><span class="calibre16">       
+emitter.off(constants.all);</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    create: function() {</span></p>
+<p><span class="calibre16">        this.refs.create.show();</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    renderList: function(complete)
+{</span></p>
+<p><span class="calibre16">        return &lt;List
+tds={_.filter(this.state.tds, function(y) { return y.isComplete ===
+complete; })} /&gt;;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;div
+className="container"&gt;</span></p>
+<p><span class="calibre16">            &lt;div
+className="row"&gt;</span></p>
+<p><span class="calibre16">                &lt;div
+className="col-md-8"&gt;</span></p>
+<p><span class="calibre16">                    &lt;h1&gt;Todo
+List&lt;/h1&gt;</span></p>
+<p><span class="calibre16">                &lt;/div&gt;</span></p>
+<p><span class="calibre16">                &lt;div
+className="col-md-4"&gt;</span></p>
+<p><span class="calibre16">                    &lt;button type="button"
+className="btn btn-primary pull-right spacing-top"
+onClick={this.create}&gt;New Task&lt;/button&gt;    </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">                &lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;/div&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &lt;div
+className="row"&gt;</span></p>
+<p><span class="calibre16">                &lt;div
+className="col-md-6"&gt;</span></p>
+<p><span class="calibre16">                    &lt;h2
+className="spacing-bottom"&gt;Incomplete&lt;/h2&gt;</span></p>
+<p><span class="calibre16">                   
+{this.renderList(false)}</span></p>
+<p><span class="calibre16">                &lt;/div&gt;</span></p>
+<p><span class="calibre16">                &lt;div
+className="col-md-6"&gt;</span></p>
+<p><span class="calibre16">                    &lt;h2
+className="spacing-bottom"&gt;Complete&lt;/h2&gt;</span></p>
+<p><span class="calibre16">                   
+{this.renderList(true)}</span></p>
+<p><span class="calibre16">                &lt;/div&gt;</span></p>
+<p><span class="calibre16">            &lt;/div&gt;</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">            &lt;Modal ref="create"
+/&gt;</span></p>
+<p><span class="calibre16">        &lt;/div&gt;;</span></p>
+<p><span class="calibre16">    }</span></p>
+<p><span class="calibre16">});</span></p>
+<div id="part0000_split_036.html_calibre_pb_93" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_037.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre25">List</span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">This should be as follows:</span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre16">var L = React.createClass({</span></p>
+<p><span class="calibre16">    renderItems: function() {</span></p>
+<p><span class="calibre16">        return _.map(this.props.todos,
+function(td) {</span></p>
+<p><span class="calibre16">            return &lt;Item todo={td}
+/&gt;;</span></p>
+<p><span class="calibre16">        });</span></p>
+<p><span class="calibre16">    },</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16">    render: function() {</span></p>
+<p><span class="calibre16">        return &lt;ul
+className="list-group"&gt;</span></p>
+<p><span class="calibre16">            {this.renderItems()}</span></p>
+<p><span class="calibre16">        &lt;/ul&gt;;</span></p>
+<p><span class="calibre16">    } </span></p>
+<p><span class="calibre16">});</span></p>
+<div id="part0000_split_037.html_calibre_pb_95" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_038.html"></span></p>
+<section id="part0000_split_038.html_calibre_pb_97"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_038.html__Toc446343749"
+class="calibre14"><span class="calibre19">Conclusion</span></span></h1>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre20"> </span></p>
+<p><span class="calibre34">It can be concluded that React is a very
+useful framework which can be used for development of web applications.
+The framework is very dynamic, and it can be linked with other tools and
+frameworks for the purpose of creating very amazing and complex
+applications. </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34">Some of these tools include Flux, Redux, and
+others. These tools, when combined with React, makes it possible for
+them to handle complex states. You will  also finds it easy  to create a
+table which is scrollable and then add contents to it. This will mean
+that you will be in a position to add much content to the table. You can
+also render or display content on the server-side of their application
+in React. At this point, you should be in a position to create a Chrome
+extension in React as it has been discussed in this book. It is also
+good for you to show exceptions which occur in our app. </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34"> </span></p>
+<p><span class="calibre34">This book has provided you with an excellent
+guide on how to do this. React components also need to be tested. This
+should be done with much care. You can also create a drop down by use of
+React. All of these features have been explored in this book, and you
+should be familiar with them. </span></p>
+</section>

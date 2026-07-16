@@ -1,0 +1,148 @@
+name: React.js Book - Solid understanding of a hard to learn JavaScript programming
+  library： A book for JavaScript developers who want to learn the basics of ReactJS
+  programming
+name_cn: React.js 籍：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南
+slug: reactjs-book---solid-understanding-of-a-hard-to-learn-javasc
+toc:
+- - '#'
+  - React.js 指南：深入理解难懂的 JavaScript 编程库：想要学习 ReactJS 编程基础的 JavaScript 开发者指南
+- - '#'
+  - 目录
+- - '#'
+  - 学习 React 的主要障碍
+- - '#'
+  - 学习 React 的良好理由
+- - '##'
+  - 2. 模块化设计
+- - '##'
+  - 3. 可扩展性
+- - '##'
+  - 4. 灵活性
+- - '##'
+  - 5. 在雇主中的受欢迎程度
+- - '#'
+  - 响应式编程
+- - '##'
+  - 响应式编程的核心原理
+- - '##'
+  - Gems 在浏览器中的工作
+- - '##'
+  - 掌中的 React
+- - '#'
+  - 核心要素
+- - '##'
+  - 特殊属性 (Special Props)
+- - '###'
+  - Children
+- - '###'
+  - className
+- - '###'
+  - htmlFor
+- - '###'
+  - key
+- - '###'
+  - ref
+- - '###'
+  - style
+- - '##'
+  - PropTypes
+- - '#'
+  - 类组件选项
+- - '##'
+  - 生命周期方法
+- - '#'
+  - 组件实例
+- - '##'
+  - 属性
+- - '##'
+  - 方法
+- - '##'
+  - Gems
+- - '#'
+  - Gem 1 - React 组件
+- - '#'
+  - Gem 2 - Render 方法
+- - '#'
+  - Gem 4 - 初始化 React 类的两种不同方式
+- - '#'
+  - Gem 5 - 状态与生命周期
+- - '#'
+  - 第 6 章 - 组件挂载 (Component Mounting)
+- - '#'
+  - Gem 7 - Node.js & NPM
+- - '#'
+  - Gem 8 - JSX 详解
+- - '#'
+  - 编写 React.js
+- - '#'
+  - 第一课 - 编写你的第一个 React 组件
+- - '##'
+  - JSX
+- - '##'
+  - Props
+- - '###'
+  - 函数纯性
+- - '##'
+  - 函数组件 (Functional Components)
+- - '##'
+  - 模式 (A Wolf in Sheep's Clothing)
+- - '##'
+  - 原生 Babel 与 JavaScript Babel (Native Babel vs JavaScript Babel)
+- - '##'
+  - NPM
+- - '##'
+  - 源码转译 (Transpiling Source Code)
+- - '#'
+  - 第 2 章 - 嵌套组件
+- - '##'
+  - 有单个子元素的组件
+- - '##'
+  - 有多个子元素的组件
+- - '##'
+  - 方法 2 - componentDidMount
+- - '##'
+  - 方法 3 - componentWillUnmount
+- - '#'
+  - 用 React 编写的完整应用程序示例
+- - '##'
+  - 创建搜索列表
+- - '##'
+  - 编写 React 应用
+- - '#'
+  - ECMAScript 6 - 你需要了解
+- - '##'
+  - '`var` 和 `let` 关键字'
+- - '##'
+  - 新的 `const` 关键字
+- - '##'
+  - 解构赋值
+- - '##'
+  - For-of 循环
+- - '##'
+  - Map 对象
+- - '##'
+  - 箭头函数
+- - '##'
+  - 什么是 JavaScript 中的箭头函数？
+- - '##'
+  - 立即执行箭头函数 (IIAF)
+- - '##'
+  - 反引号 (`) 字符串
+- - '##'
+  - 新数组方法
+- - '###'
+  - find
+- - '###'
+  - findIndex
+- - '###'
+  - fill
+- - '###'
+  - copyWithin
+- - '##'
+  - 新的内置类
+- - '###'
+  - 感谢
+- - '###'
+  - 书籍更新 2017 年 1 月 6 日
+- - '###'
+  - 书籍更新 2017 年 1 月 10 日

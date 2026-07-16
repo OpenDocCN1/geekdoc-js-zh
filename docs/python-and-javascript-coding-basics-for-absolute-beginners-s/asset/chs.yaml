@@ -1,0 +1,493 @@
+- "# Python 和 Javascript 编码：绝对初学者基础：快速学习编码的步进式指南\n\n\n\n![](img/cover0024.jpeg)\n\n\
+  \n与其他编程语言相比，Python 是一种简单易学的编程语言。它的语法简单，与英语相似。它不使用分号和花括号，而是使用缩进来定义代码块。对于学者来说，这是推荐的编程语言。\n\
+  \n## 2) 表达性语言\nPython 仅需几行代码完成完成任务。例如，要运行你好世界程序，只需输入 `print (\"Hello World\")`。这只需要一行代码即可运行，而\
+  \ Java 或 C 则需要许多行。\n\n## 3) 解释型语言\nPython 是一种解释型语言，这意味着 Python 程序的每一行都是单独执行的。解释型语言的优点是调试简单且具有移植性。\n\
+  \n## 4) 跨平台语言\nPython 可以在包括 Windows、Linux、UNIX 和 Macintosh 在内的多种平台上运行。因此，我们可以得出\
+  \ Python 是一种可移植的编程语言。它允许程序员通过仅创建一个程序，就能为多个竞争平台创建软件。\n\n## 5) 免费开源\nPython 是一种任何人都可以使用的免费编程语言。在它的官方网站\
+  \ `www.python.org` 上可以免费获取。全球范围内有一个庞大的社区努力创建新的 Python 模块和函数。Python 社区欢迎每个人的贡献。开源领域表示：“任何人都可以无需一分钱获取其源代码”。\n\
+  \n## 6) 面向对象语言\nPython 支持面向对象编程，这引入了类和对象的概念。它允许继承、多态和封装等特性。面向对象的方法帮助程序员编写可重用的代码。\n\
+  \n## 7) 可扩展\n这意味着可以在 Python 内部使用如 `C++` 等其他语言。\n\n## 8) 大型标准库\n它为机器学习提供了多种库，包括 `Pandas`、`Numpy`、`Keras`\
+  \ 和 `Pytorch`。\n\n## 9) GUI 支持\n对于桌面开发，可以使用 `PyQt5`、`Tkinter` 和 `Kivy` 等图形界面库。\n\
+  \n## 10) 集成性\n它很容易与 `C++` 和 `Java` 等语言集成。\n\n## 11. 可嵌入性\nPython 可以嵌入到程序中。\n\n##\
+  \ 12. 动态内存分配\n内是在运行时分配的。当我们为变量赋值时，内存会自动处理。\n\n# 安装 Python\n\n成为开发者的第一步是了解如何安装和更新\
+  \ Python。我们将介绍如何在各种系统上安装 Python。\n\n## 在 Windows 上安装\n若要获取最新版本的 Python，请访问 `https://www.python.org/downloads/`。我们将在操作系统上安装它。\n\
+  \n步骤 1：选择 Python 版本 - 下载。\n(Images/00161.jpeg)\n\n步骤 2：点击“立即安装”\n双击下载的可执行文件以弹出以下窗口。通过选择“自定义”继续操作。当你勾选\
+  \ `Add Path` 复选框时，Python 路径将自动配置。\n(Images/00162.jpeg)\n\n我们还可以通过点击自定义安装按钮选择所需的位置和功能。另一个需要考虑的关键因素是是否为所有用户安装启动器。\n\
+  \n步骤 3：安装过程\n(Images/00163.jpeg)\n\n尝试从命令行提示符运行 `python`。如果你使用的是 Python 3，输入 `python\
+  \ -version`。\n(Images/00164.jpeg)\n\n# 第一个 Python 程序\n\n在本节中，我们将介绍 Python 的基础语法，并运行一个在终端打印\
+  \ Hello World 的简单程序。\n\nPython 为我们提供了两种运行程序的选项：\n* 使用交互式解释器的提示符\n* 使用脚本文件\n\n##\
+  \ 交互式解释器提示符\n在交互式提示符处，Python 允许我们逐行执行每个 Python 语句。当我们关注 Python 程序每一行的输出时，这种方法更好。\n\
+  \n要进入交互模式，请在终端（或命令行提示符）输入 `python`（如果系统中同时安装了 Python 2 和 Python 3，请输入 `python3`）。\n\
+  \n它将打开下面的提示符，可以在其中运行 Python 语句并查看它对终端的影响。\n\n```\nprint(\"Hello World\")\n```\n\
+  (Images/00165.jpeg)\n\n## 多行语句\n多行语句在记事本之类的文本编辑器中输入并保存为 `.py` 文件。在下面的示例中，我们使用 Python\
+  \ 脚本描述了多行代码的执行。\n\n```python\nname = \"Andrew Venis\"\nbranch = \"Computer Science\"\
+  \n```\n\n\n\n\n\n```\n3. `age = \"25\"`\n4. `print(\"My name is: \", name,`\n5.\
+  \ `print(\"My age is: \", age)`\n```\n\n脚本文件：\n\n![](img/image00167.jpeg)\n![](img/image00168.jpeg)\n\
+  \n# Python 变量\n\n变量是指代内存区域的术语。Python 变量通常被称为标识符，是数据的容器。\n\n由于 Python 是一种推断语言，我们不需要描述变量的类型，因为它足够智能可以识别出类型。\n\
+  \n变量名可以是字母和数字的组合，但必须以字母或下划线开头。\n\n变量名应该使用小写字母。`rahul` 和 `Rahul` 是两个不同的变量。\n\n##\
+  \ 标识符命名\n\n标识符是变量的示例。程序中的字面量使用 `Identifier` 进行标识。以下是命名标识符的规则：\n\n- 变量的起始字符必须是字母或下划线（`_`）。\n\
+  - 除了第一个字符外，所有字符可以是小写（a-z`）、大写（A-Z`）、下划线或数字（0-9`）。\n- 标识符名称中不能有空格或特殊字符（`!`、`@`、`#`、`%`、`,`、`&`、`*`）。\n\
+  - 标识符名称不能与语言的任何关键字相同。\n- 区分大小写；例如，`myName` 和 `MyName` 不是同一个东西。\n- 有效的标识符包括 `a123`、`_n`、`n9`\
+  \ 等。\n- `1a`、`n4`、`n9` 等错误的标识符是示例。\n\n## 声明变量\n\nPython 不要求我们在代码中使用变量之前对其进行声明。它允许我们在特定的时间点构建一个变量。\n\
+  \n在 Python 中，我们不需要显式地声明变量。每当我们给变量赋值时，它就会被自动定义。\n\n变量的值使用等号（`=`）运算符赋值。\n\n## 对象引用\n\
+  \n在声明变量时，理解 Python 解释器的工作原理非常重要。变量的处理方式与其他许多编程语言不同。\n\n由于 Python 是一种面向对象的编程语言，每个数据项都属于特定的类类型。考虑以下插图。\n\
+  \n```\nprint(\"John\")\n```\n\n输出：\nJohn\n\nPython 对象在终端上构建并显示了一个整数对象。我们在上面的 `print`\
+  \ 命令中创建了一个字符串对象。让我们使用 Python 内置的 `type()` 函数查看它是什么类型。\n\n```\ntype(\"John\")\n```\n\
+  \n输出：\n<class 'str'>\n\n变量是 Python 中指向对象的引用或指针的符号性术语。变量用于表示具有相同名称的对象。\n\n让我们看看下面的示例。\n\
+  \n```\na = 50\n```\n\n![](img/image00169.jpeg)\n\n插图中的变量 `a1` 对应一个整数对象。\n\n假设我们给新变量\
+  \ `b` 赋值整数值 50。\n\n```\na = 50\nb = a\n```\n\n![](img/image00170.jpeg)\n\n由于 Python\
+  \ 不生成新对象，变量 `b` 指向与 `a` 相同的对象。\n\n让我们改变 `b` 的值。现在两个变量将指向不同的对象。\n\n```\na = 50\n\
+  b = 100\n```\n\n![](img/image00171.jpeg)\n\n如果我们将同一个变量赋值为两个不同的值，Python 会高效地维护内存。\n\
+  \n## 对象标识标识\n\nPython 中创建的每个对象都有一个唯一的标识符。Python 确保没有两个对象共享相同的标识符。对象标识使用内置的 `id()`\
+  \ 函数进行。考虑以下插图。\n\n```\n1. a = 50\n2. b = a\n3. print(id(a))\n4. print(id(b))\n5.\
+  \ # 重新赋值变量 a\n6. a = 500\n7. print(id(a))\n```\n\n输出：\n140734982691168\n140734982691168\n\
+  2822056960944\n\n我们设置 `b = a` 是因为 `a` 和 `b` 都指向同一个东西。当我们检查 `id()` 函数时，它返回了相同的数字。我们将\
+  \ `a` 的值更改为 500，它现在指向新的对象标识符。\n\n# Python 数据类型\n\n值可以存储在变量中，每个值都有一个数据类型。由于 Python\
+  \ 是一种动态类型语言，我们在声明变量时不需要指定变量的类型。值由解释器隐式绑定到其类型。\n\n```\n1. a = 5\n```\n\n我们没有定义变量\
+  \ `a` 的类型，它的整数值为五。变量 `a` 将被 Python 解释器自动解释为整数类型。\n\n可以使用 Python 检查程序使用的变量的类型。Python\
+  \ 中的 `type()` 方法返回提供的变量的类型。\n\n考虑以下定义各种类型数据的值并确定其类型的场景。\n\n```\n1. a = 10\n2. b\
+  \ = \"Hi Python\"\n3. c = 10.5\n4. print(type(a))\n5. print(type(b))\n6. print(type(c))\n\
+  ```\n\n输出：\n<type 'int'>\n<type 'str'>\n<type 'float'>\n\n## 标准数据类型\n\n变量可以存储不同类型的值。例如，人的名字必须保存为字符串，而他的\
+  \ ID 必须被记录为整数。\n\nPython 支持多种标准数据类型，每种类型都有自己的存储技术。以下是 Python 数据类型的列表：\n\n1. 数字 (Numbers)\n\
+  2. 序列类型 (Sequence Type)\n3. 布尔值 (Boolean)\n4. 集合 (Set)\n5. 字典 (Dictionary)\n\n![](img/image00172.jpeg)\n\
+  \n在本节中，我们将对上述数据类型进行简要概述。在课程的后面，我们将深入讲解每一个类型。\n\n### 数字\n\n数字是存储数值的数据类型。Python 的数字数据类型包含整数（integer）、浮点数（float）和复数（complex）值。Python\
+  \ 中的 `type()` 方法可确定变量的数据类型。`isinstance()` 函数用于判断对象是否属于特定的类。\n\n当给变量分配数字时，Python\
+  \ 会产生数字对象。例如：\n\n```\n1. a = 5\n2. print(\"The type of a\", type(a))\n4. b = 40.5\n\
+  5. print(\"The type of b\", type(b))\n7. c = 1+3j\n8. print(\"The type of c\", type(c))\n\
+  9. print(\"c is a complex number\", isinstance(1+3j,complex))\n```\n\n输出：\nThe type\
+  \ of a <class 'int'>\nThe type of b <class 'float'>\nThe type of c <class 'complex'>\n\
+  c is a complex number True\n\nPython 识别三种类型的数值数据。整数值可以是任何长度，例如 10、2、29、-15 等。整数的长度在\
+  \ Python 中没有限制。它的值类型是 `int`。\n\n浮点数（Float）用于存储浮点数，如 1.9、902、15 等。它的精度高达 15 位小数。\n\
+  \n复数由一个有序对组成，即 `x + iy`，其中 `x` 和 `y` 分别代表实部和虚部。复数如 `2.14j`、`2.0 + 2j` 等。\n\n# Python\
+  \ 关键字\n\nPython 关键字是向编译器/解释器传递特定含义保留字。每个关键字都有特定的含义和操作。这些关键字不能用作变量。Python 关键字列表如下：\n\
+  \n![](img/image0173.jpeg)\n\n- **True**：代表布尔真，如果条件为真，则返回 \"True\"。非零值被视为真。\n- **False**：代表布尔假，如果条件为假，则返回\
+  \ \"False\"。零值被解释为假。\n- **None**：表示空值或无效值。空列表或零不能表示 None。\n- **And**：它也是一种逻辑运算符。用于测试多个条件。如果两个条件都满足，则返回真。考虑下真表。(Images/image00174.jpeg)\n\
+  - **or**：在 Python 中，它是一种逻辑运算符。如果满足一个条件，则返回真。考虑下真表。(Images/image00175.jpeg)\n- **not**：它是翻转真值的逻辑运算符。考虑下真表。(Images/image00176.jpeg)\n\
+  - **assert**：在 Python 中，此关键字用作调试工具。它验证代码的正确性。如果代码中发现错误，它将抛出 AssertionError 并打印错误信息。示例：\n\
+  \n```\n1. a = 10\n2. b = 0\n3. print('a is dividing by Zero')\n4. assert b != 0\n\
+  5. print(a / b)\n```\n\n\n\n\n\na 正在除以零\n\n运行时异常：\n\n```\nTraceback (most recent\
+  \ call last):\n  File \"/home/40545678b342ce3b70beb1224bed345f.py\", line 4, in\
+  \ \n    assert b != 0, \"Divide by 0 error\"\nAssertionError: Divide by 0 error\n\
+  ```\n\n## 关键字\n\nDef - 在 Python 中，此关键字用于声明函数。如果它后面跟着函数名。\n\n```python\n1. def my_func(a,b):\n\
+  2. c = a+b\n3. print(c)\n4. my_func(10,20)\n```\n输出：\n```\n30\n```\n\nclass - 在\
+  \ Python 中，它用于表示一个类。类作为对象的蓝图。它是变量和方法的集合。考虑下面的类。\n\n```python\n1. class Myclass:\n\
+  2. #变量……..\n3. def function_name(self):\n4. #语句………\n```\n\ncontinue - 此此命令用于停止当前迭代的执行。考虑以下场景。\n\
+  \n```python\n1. a = 0\n2. while a < 4:\n3. a += 1\n4. if a == 2:\n5. continue\n\
+  6. print(a)\n```\n输出：\n```\n1\n3\n4\n```\n\n# Python 字面量\n\nPython 中的字面量是存储在变量或常量中的数据。Python\
+  \ 支持以下字面量：\n\n## 1. 字符串字面量\n字符串字面量是通过用引号括文本创建的。为了创建一个字符串，我们可以同时使用单引号和双引号。\n\n示例：\n\
+  1. \"Aman\", '12345'\n\n## 2. 数字字面量\n数字字面量是不可变的。数字字面量可以分类为四种类型之一。\n\n![](img/image00177.jpeg)\n\
+  \n示例 - 数字字面量\n1. x = 0b10100 # 二进制字面量\n2. y = 100 # 十进制字面量\n3. z = 0o215 # 八进制字面量\n\
+  4. u = 0x12d # 十六进制字面量\n6. # 点数字面量\n7. float_1 = 100.5\n8. float_2 = 1.5e2\n10.\
+  \ # 复数字面量\n11. a = 5+3.14j\n13. print(x, y, z, u)\n14. print(float_1, float_2)\n\
+  15. print(a, a.imag, a.real)\n\n输出：\n```\n20 100 141 301\n100.5 150.0\n(5+3.14j)\
+  \ 3.14 5.0\n```\n\n## 3. 布尔字面量\n布尔字面量的值可以是 True 或 False。\n\n示例 - 布尔字面量\n1. x = (1\
+  \ == True)\n2. y = (2 == False)\n3. z = (3 == True)\n4. a = True + 10\n5. b = False\
+  \ + 10\n7. print(\"x is\", x)\n8. print(\"y is\", y)\n9. print(\"z is\", z)\n10.\
+  \ print(\"a:\", a)\n11. print(\"b:\", b)\n\n输出：\n```\nx is True\ny is False\nz is\
+  \ False\na: 11\nb: 10\n```\n\n## 4. 特殊字面量\nPython 有一个特殊字面量，`None`。\n\n`None` 用于指定尚未创建的字段。在\
+  \ Python 中，它也用于指示列表的结束。布尔字面量的值可以是 True 或 False。\n\n示例 - 特殊字面量\n1. val1=10\n2. val2=None\n\
+  3. print(val1)\n4. print(val2)\n\n输出：\n```\n10\nNone\n```\n\n## 5. 字面量集合\nPython\
+  \ 支持四种类型的字面量集合：\n* 列表字面量\n* 元组字面量\n* 字典字面量\n* 集合字面量\n\n### 列表\n* 列表中的项可以是各种数据类型。列表是可变的，这意味着它们可以被更改。\n\
+  * 列表值用逗号 (,) 分隔并用方括号 ([]) 括起来。列表可以包含各种类型的数据。\n\n示例 - 列表字面量\n```python\n1. list=['John',678,20.4,'Peter']\n\
+  2. list1=[456,'Andrew']\n3. print(list)\n4. print(list + list1)\n```\n输出：\n```\n\
+  ['John', 678, 20.4, 'Peter']\n['John', 678, 20.4, 'Peter', 456, 'Andrew']\n```\n\
+  \n### 字典\n* 数据以键值对的形式存储在字典中。\n* 它被花括号括围，每对之间用逗号 (,) 分隔。\n\n示例\n```python\n1. dict={'name':'Pater','Age':18,'Roll_nu':101}\n\
+  2. print(dict)\n```\n输出：\n```\n{'name': 'Pater', 'Age': 18, 'Roll_nu': 101}\n```\n\
+  \n### 元组\nPython 中的元组是不同数据类型的集合。它是不可变的，这意味着它在创建后不能更改。\n* 它被圆括号 () 括起来，每个元素之间用逗号\
+  \ (,) 分隔。\n\n示例\n```python\n1. up=(10,20,\"Dev\",3,4)\n2. print(up)\n```\n输出：\n\
+  ```\n(10, 20, 'Dev', 3, 4)\n```\n\n### 集合\nPython 集合是无序数据集的集合。\n* 它被括起来，每个元素之间用逗号\
+  \ (,) 分隔。\n\n示例 - 集合字面量\n```python\n1. set={'apple','grapes','papaya'}\n2. print(set)\n\
+  ```\n输出：\n```\n{'guava', 'apple', 'grapes'}\n```\n\n# Python 运算符\n\n运算符是负责两个操作数之间特定操作的符号。运算符是程序的基础，在此基础上构建了特定语言的逻辑。Python\
+  \ 拥有许多运算符，如下列表所示：\n* 算术运算符\n* 比较运算符\n* 赋值运算符\n* 逻辑运算符\n* 位运算符\n* 成员运算符\n\n## 算术运算符\n\
+  算术运算符用于对两个操作数执行操作。它包含运算符 `+`（加法）、`-`（减法）、`*`（乘法）、`/`（除法）、`%`（取模）、`//`（取整）和 `**`（幂）。\n\
+  查看下表算术运算符的详细说明。\n\n## 比较运算符\n比较运算符用于比较两个操作数并返回布尔值。比较运算符如下。\n\n## 赋值运算符\n赋值运算符用于将右侧表达式的值赋值给左侧的操作。赋值运算符如下。\n\
+  \n## 位运算符\n位运算符对值进行位运算。考虑以下场景。\n\n## 逻辑运算符\n为了做出判断，逻辑运算符主要用于表达式求值。Python 支持的逻辑运算符如下。\n\
+  \n## 成员运算符\n成员运算符用于判断值是否为数据结构的成员。如果存在，结果为真；否则返回假。\n\n## 身份运算符\n身份运算符用于判断元素是否属于特定的类或类型。\n\
+  \n## 运算符优先级\n运算符的优先级至关重要，因为它告诉我们应该先计算哪个运算符。Python 运算符优先级表所示。\n\n\n\n\n\n8. `print(\"\
+  The sum is:\", c)`\n\n输出：\n```\nThe sum is: 15\n```\n\n上述代码具有很可读性，即使是初学者也能理解每行代码在做什么。这是在代码中使用注释的用处之一。\n\
+  \n对于多行注释，我们也可以使用三引号（`\"\"\"`）。字符串格式化也是通过三引号完成的。考虑以下场景。\n\n### Python Docstring 注释\n\
+  \ndocstring 注（文档字符串）通常出现在模块、函数、类或方法中。它是 Python 的文档字符串。在随后的教程中，我们将解释类/方法。\n\n示例：\n\
+  \n```python\n1. def intro():\n2. \"\"\"\n3. This function prints Hello Joseph\n\
+  4. \"\"\"\n5. print(\"Hi Joseph\")\n6. intro()\n```\n\n输出：\n```\nHello Joseph\n\
+  ```\n\n使用 `__doc__` 属性，我们可以检查函数的 docstring。\n\n在大多数情况下，使用四个空格作为缩进。缩进量由用户决定，但在整个块中必须保持一致。\n\
+  \n```python\n1. def intro():\n2. \"\"\"\n3. This function prints Hello Joseph\n\
+  4. \"\"\"\n5. print(\"Hello Joseph\")\n6. intro.__doc__\n```\n\n输出：\n```\n'\\n \
+  \ This function prints Hello Joseph\\n  '\n```\n\n### Python 缩进\n\nPython 缩进用于定义代码块。C、C++\
+  \ 和 Java 等其他编程语言使用大括号，而 Python 使用缩进。在 Python 中，使用空白字符来表示缩进。\n\n缩进用于代码的开头，并在意料之外的行结束。代码块由相同的行缩进（函数体、循环等）定义。\n\
+  \n在大多数情况下，使用四个空格作为缩进。缩进量由用户决定，但在整个块中必须保持一致。\n\n```python\n1. for i in range(5):\n\
+  2. print(i)\n3. if(i == 3):\n4. break\n```\n\n我们使用相同的空白字符来缩进每行代码，以表示一个代码块。\n\n考虑以下场景。\n\
+  \n```python\n1. n = int(input(\"Enter the number:\"))\n2. if(n%2 == 0):\n3. print(\"\
+  Even Number\")\n4. else:\n5. print(\"Odd Number\")\n7. print(\"Task Complete\")\n\
+  ```\n\n输出：\n```\nEnter the number: 10\nEven Number\nTask Complete\n```\n\n`if` 和\
+  \ `else` 是上述代码中的两个独立代码块。两个代码块都缩进了四个空格。`print(\"Task Complete\")` 语句位于 `if-else`\
+  \ 块之外，没有缩进四个空格。\n\n如果缩进使用不正确，将抛出 `IndentationError`。\n\n# Python If-else 语句\n\n\
+  几乎所有编程语言中最重要的方面就是决策。正如其名所义，决策允许我们根据特定的决策运行特定的代码块。对特定条件的有效性的判断在此处做出。决策的基础是条件检查。\n\
+  \nPython 中的以下语句用于做出决策。\n\n![](img/image00188.jpeg)\n\n## Python 中的缩进\n\n为了简单和易于编程，Python\
+  \ 不允许在块级代码中使用括号。在 Python 中声明一个块，请使用缩进。如果两个语句具有相同的缩进级别，它们就在同一个块中。\n\n通常，使用四个空格来缩进语句，这是\
+  \ Python 的标准缩进量。\n\n因为缩进定义了代码块，所以缩进是 Python 语言中最常用的特性。块中的所有语句都旨在缩进到同一水平。我们将查看在 Python\
+  \ 决策和其他区域中实际的缩进是如何发生的。\n\n## if 语句\n\n`if` 语句用于测试条件，如果条件为真，它将执行 `if-block` 代码块。任何可以求值为真或否的有效逻辑表达式都可以用作\
+  \ `if` 语句的条件。\n\n![](img/image00189.jpeg)\n\n`if-statement` 语法所示。\n\n```python\n\
+  1. if expression:\n2. statement\n```\n\n### 示例 1\n\n```python\n1. num = int(input(\"\
+  enter the number?\"))\n2. if num%2 == 0:\n3. print(\"Number is even\")\n```\n\n\
+  输出：\n```\nenter the number?10\nNumber is even\n```\n\n### 示例 2\n\n使用程序打印三个数中最大的一个\n\
+  \n```python\n1. a = int(input(\"Enter a?\"));\n2. b = int(input(\"Enter b?\"));\n\
+  3. c = int(input(\"Enter c?\"));\n4. if a>b and a>c:\n5. print(\"a is largest\"\
+  );\n6. if b>a and b>c:\n7. print(\"b is largest\");\n8. if c>a and c>b:\n9. print(\"\
+  c is largest\");\n```\n\n输出：\n```\nEnter a? 100\nEnter b? 120\nEnter c? 130\nc is\
+  \ largest\n```\n\n### if-else 语句\n\n`if-else` 语句将 `else` 块与 `if` 语句结合，当条件为假时执行后者。\n\
+  \n如果满足条件，运行 `if-block`。如果不满足，则执行 `else-block`。\n\n![](img/image00190.jpeg)\n\n`if-else`\
+  \ 语法所示。\n\n```python\n1. if condition:\n2. statement\n3. else:\n4. statement\n```\n\
+  \n示例：一个判断年龄是否符合条件的程序。\n\n```python\n1. age = int(input(\"Enter your age:\"))\n2.\
+  \ if age>=18:\n3. print(\"You are eligible to vote\")\n4. else:\n5. print(\"Sorry,\
+  \ you are not eligible to vote\")\n```\n\n输出：\n```\nEnter your age:20\nYou are eligible\
+  \ to vote\n```\n\n### elif 语句\n\n`elif` 语句允许我们检查多个条件并根据条件执行特定的块。它类似于 `if-else` 阶梯。\n\
+  \n`elif` 语法所示。\n\n```python\n1. if expression1:\n2. statement\n3. elif expression2:\n\
+  4. statement\n5. elif expression3:\n6. statement\n7. else:\n8. statement\n```\n\n\
+  ![](img/image00191.jpeg)\n\n示例：根据成绩判断等级。\n\n```python\n1. score = int(input(\"Enter\
+  \ your score:\"))\n2. if score>=90:\n3. print(\"Grade: A\")\n4. elif score>=80:\n\
+  5. print(\"Grade: B\")\n6. elif score>=70:\n7. print(\"Grade: C\")\n8. elif score>=60:\n\
+  9. print(\"Grade: D\")\n10. else:\n11. print(\"Grade: F\")\n```\n\n输出：\n```\nEnter\
+  \ your score:85\nGrade: B\n```\n\n# Python 循环\n\n默认情况下，任何语言编写的程序都是顺序的。我们可能需要随时间改变程序的流程。某些代码的执行可能需要重复。\n\
+  \n编程语言提供了各种类型的循环来实现此目的，它们能够重复某些代码。查看下面的图表以更好地理解循环语句的工作原理。\n\n![](img/image00192.jpeg)\n\
+  \n![](img/image00193.jpeg)\n\n## Python for loop\n\n在 Python 中，`for` 循环用于多次迭代语句或程序部分。它通常用于遍历数据结构，如列表、元组或字典。\n\
+  \nPython 的 `for` 循环语法所示。\n\n```python\n1. for iterating_var in sequence:\n2. statement(s)\n\
+  ```\n\n流程图\n![](img/image00194.jpeg)\n\n### for loop 使用序列\n\n示例 - 使用 for 循环遍历字符串\n\
+  \n```python\n1. str = \"Python\"\n2. for i in str:\n3. print(i)\n```\n\n输出：\n```\n\
+  P\ny\nt\nh\no\nn\n```\n\n示例- 2 使用此程序打印给定数字的乘法表。\n\n```python\n1. list = [1,2,3,4,5,6,7,8,9,10]\n\
+  2. n = 5\n3. for i in list:\n4. c = n*i\n5. print(c)\n```\n\n输出：\n```\n5\n10\n15\n\
+  20\n25\n30\n35\n40\n45\n50\n```\n\n## Python While loop\n\nPython `while` 循环在给定条件返回假之前执行一段代码。它也被称为预测试循环。\n\
+  \n它可以被 true 循环的 `if` 语句。当我们不知道需要迭代多少次时，`while` 循环是最佳选择。\n\n语法所示。\n\n```python\n\
+  1. while expression:\n2. statements\n```\n\n\n\n\n\n通过循环控制语句，我们可以改变 `while` 循环的标准执行顺序。当\
+  \ `while` 循环结束时，在该作用范围内定义的所有自动对象都会被销毁。在 `while` 循环内部，Python 提供了控制语句。\n\n### 1. Continue\
+  \ 语句\n当遇到 `continue` 语句时，控制将返回循环的开头。让我们来看一个例子。\n\n示例：\n```python\n## prints all\
+  \ letters except 'a' and 't'\ni = 0\nstr1 = 'javapoint'\nwhile i < len(str1):\n\
+  \    if str1[i] == 'a' or str1[i] == 't':\n        i += 1\n        continue\n  \
+  \  print('Current Letter :', str1[i])\n    i += 1\n```\n输出:\n```\nCurrent Letter\
+  \ : j\nCurrent Letter : v\nCurrent Letter : p\nCurrent Letter : o\nCurrent Letter\
+  \ : i\nCurrent Letter : n\n```\n\n### 2. Break 语句\n当遇到 `break` 语句时，控制将离开循环。\n\n\
+  示例：\n```python\n# 当 break 语句很快遇到 t 时，控制发生转移\ni = 0\nstr1 = 'javapoint'\nwhile i\
+  \ < len(str1):\n    if str1[i] == 't':\n        i += 1\n        break\n    print('Current\
+  \ Letter :', str1[i])\n    i += 1\n```\n输出:\n```\nCurrent Letter : j\nCurrent Letter\
+  \ : a\nCurrent Letter : v\nCurrent Letter : a\n```\n\n### 3. Pass 语句\n使用 `pass`\
+  \ 语句声明空循环。它也可以用于定义空类、函数或控制语句。让我们来看一个例子。\n\n示例：\n```python\n# An empty loop\nstr1\
+  \ = 'javapoint'\ni = 0\nwhile i < len(str1):\n    i += 1\n    pass\nprint('Value\
+  \ of i :', i)\n```\n输出:\n```\nValue of i : 9\n```\n\n### 示例\n使用此程序打印给定数字的表格。\n```python\n\
+  i=1\nnumber=0\nb=9\nnumber = int(input(\"Enter the number:\"))\nwhile i<=10:\n \
+  \   print(\"%d X %d = %d \\n\"%(number,i,number*i))\n    i = i+1\n```\n输出:\n```\n\
+  Enter the number:10\n10 X 1 = 10\n10 X 2 = 20\n10 X 3 = 30\n10 X 4 = 40\n10 X 5\
+  \ = 50\n10 X 6 = 60\n10 X 7 = 70\n10 X 8 = 80\n10 X 9 = 90\n10 X 10 = 100\n```\n\
+  \n## 在 while 循环中使用 else\nPython 允许我们将 `else` 语句与 `while` 循环结合使用。当 `while` 语句中的条件失败时，将执行\
+  \ `else` 块。如果使用 `break` 语句跳出了 `while` 循环，则不会执行 `else` 块，而是执行 `else` 块之后的语句。在使用 `while`\
+  \ 循环时，`else` 语句是可选的。考虑以下场景。\n\n### 示例 1\n```python\ni=1\nwhile(i<=5):\n    print(i)\n\
+  \    i=i+1\nelse:\n    print(\"The while loop exhausted\")\n```\n\n### 示例 2\n```python\n\
+  i=1\nwhile(i<=5):\n    print(i)\n    i=i+1\n    if(i==3):\n        break\nelse:\n\
+  \    print(\"The while loop exhausted\")\n```\n输出:\n```\n1\n2\n```\n\n## Python\
+  \ break 语句\n在 Python 中，`break` 关键字用于将程序控制从循环中移除。`break` 语句一次打破循环，因此在嵌套循环的情况下，它会先打破内部循环，然后移动到外部循环。换句话说，`break`\
+  \ 用于终止程序的当前执行，并将控制转移到循环后的下一行。当我们需要根据特定条件打破循环时，通常使用 `break`。`break` 的语法所示：\n\n```python\n\
+  # loop statements\nbreak;\n```\n\n### 示例 1\n```python\nlist =[1,2,3,4]\ncount =\
+  \ 1;\nfor i in list:\n    if i == 4:\n        print(\"item matched\")\n        count\
+  \ = count + 1;\n        break\nprint(\"found at\",count,\"location\");\n```\n输出:\n\
+  ```\nitem matched\nfound at 2 location\n```\n\n### 示例 2\n```python\nstr = \"python\"\
+  \nfor i in str:\n    if i == 'o':\n        break\n    print(i);\n```\n输出:\n```\n\
+  p\ny\nt\nh\n```\n\n# Python 字符串\n到为止，我们已经涵盖了 Python 中最常见的数据类型数字。在教程这一部分，我们将介绍 Python\
+  \ 中常用的数据类型：字符串。\n\nPython 字符串是用单引号、双引号或三引号包围的字符集合。计算机并不理解这些字符；相反，它在内部将处理过的字符存储为\
+  \ 0 和 1 的组合。每个字符都以 ASCII 或 Unicode 格式编码。因此，Python 字符串也可以称为 Unicode 字符集合。可以通过将字符或字符序列包含在引号中来创建字符串。Python\
+  \ 允许我们使用单引号、双引号或三引号来创建。\n\n## 语法：\n```python\nstr = \"Hi Python !\"\n```\n在这种情况下，我们可以使用\
+  \ Python 脚本来确定变量 `str` 的类型。执行 `print(type(str))`，它将打印出字符串 (`str`）。在 Python 中，字符串被视为字符的连续体，这意味着不支持字符类型；相反，'p'\
+  \ 被视为一个字符串。\n\n### 创建字符串\n通过用单引号或双引号包围字符，我们可以形成一个字符串。三引号用于多行。\n```python\n## Using\
+  \ single quotes\nstr1 = 'Hello'\nprint(str1)\n\n## Using double quotes\nstr2 = \"\
+  Hello\"\nprint(str2)\n\n## Using triple quotes\nstr3 = '''Hello\nPython'''\nprint(str3)\n\
+  ```\n输出:\n```\nHello\nPython\n```\n\n## 字符串的索引与分割\n字符串的索引像其他语言一样从 0 开始。\n```python\n\
+  str = \"HELLO\"\nprint(str[0])\nprint(str[1])\nprint(str[2])\nprint(str[3])\nprint(str[4])\n\
+  ```\n输出:\n```\nH\nE\nL\nL\nO\n```\n切片运算符用于从字符串中获取子字符串。\n```python\nstr = \"HELLO\"\
+  \nprint(str[0:4])\n```\n输出:\n```\nELL\n```\n\n## Python 列表\n在 Python 中，列表用于存储数据序列。Python\
+  \ 列表是可变的，这意味着我们可以在它们形成后更改它们的元素。逗号（,）分隔列表中的元素。以下是一个示例。\n```python\nL1 = [\"John\"\
+  , 102, \"USA\"]\nL2 = [1, 2, 3, 4, 5, 6]\nprint(L1)\nprint(L2)\n```\n输出:\n```\n\
+  ['John', 102, 'USA']\n[1, 2, 3, 4, 5, 6]\n```\n\n\n\n\n\n```python\n7.  print(\"\
+  Name : %s, ID: %d, Country: %s\"%(emp[0],emp[1],emp[2]))    \n8.  print(\"printing\
+  \ departments...\")\n9.  print(\"Department 1:\\nName: %s, ID: %d\\nDepartment 2:\\\
+  nName: %s, ID: %s\"%(Dep1[0],Dep2[1],Dep2[0],Dep2[1]))\n10.  print(\"HOD Details\
+  \ ....\")\n11.  print(\"CS HOD Name: %s, Id: %d\"%(HOD_CS[1],HOD_CS[0]))\n12.  print(\"\
+  IT HOD Name: %s, Id: %d\"%(HOD_IT[1],HOD_IT[0]))\n13.  print(type(emp),type(Dep1),type(Dep2),type(HOD_CS),type(HOD_IT))\n\
+  ```\nOutput:\n```\nprinting employee data...\n\nName : John, ID: 102, Country: USA\n\
+  \nprinting departments...\n\nDepartment 1:\n\nName: CS, ID: 11\n\nDepartment 2:\n\
+  \nName: IT, ID: 11\n\nHOD Details ....\n\nCS HOD Name: Mr. Holding, Id: 10\n\nIT\
+  \ HOD Name: Mr. Bewon, Id: 11\n\n<class 'list'> <class 'list'> <class 'list'> <class\
+  \ 'list'> <class 'list'>\n```\n在前面的示例中，我们构建了包含员工和部门信息的列表，并打印了相关信息。检查上面的代码以更好地理解列表的概念。\n\
+  \n# Python 元组 (Tuple)\n\nPython 元组 是一种用于存储不可变 Python 对象序列的数据结构。元组与列表的相似之处在于列表中放置的项的值是可以修改的，但元组是不可变的，它的值无法被更改。\n\
+  \n## 创建元组\n\n由小 `()` 括号包含的用逗号（）分隔的值集合被称为元组。使用括号是可选的，但我们建议使用。以下是元组的定义。\n\n1. `T1\
+  \ = (101, \"Peter\", 22)`\n2. `T2 = (\"Apple\", \"Banana\", \"Orange\")`\n3. `T3\
+  \ = 10,20,30,40,50`\n5. `print(type(T1))`\n6. `print(type(T2))`\n7. `print(type(T3))`\n\
+  \nOutput:\n```\n<class 'tuple'>\n<class 'tuple'>\n<class 'tuple'>\n```\n创建一个包含单个元素的元组稍微复杂一点。要声明元组，我们必须在元素后使用一个逗号。\n\
+  \n1. `tup1 = (\"JavaTpoint\")`\n2. `print(type(tup1))`\n3. #创建一个包含单个元素的元组\n4. `tup2\
+  \ = (\"JavaTpoint\",)`\n5. `print(type(tup2))`\n\nOutput:\n```\n<class 'str'>\n\
+  <class 'tuple'>\n```\n与列表通过索引一样，元组也可以通过索引。元组中每个项的索引值可以用来访问它。\n\n以以下元组举例：\n\n###\
+  \ 示例\n\n1. `tuple1 = (10, 20, 30, 40, 50, 60)`\n2. `print(tuple1)`\n3. `count =\
+  \ 0`\n4. `for i in tuple1:`\n5. `print(\"tuple1[%d] = %d\"%(count, i))`\n6. `count\
+  \ = count+1`\n\nOutput:\n```\n(10, 20, 30, 40, 50, 60)\ntuple1[0] = 10\ntuple1[1]\
+  \ = 20\ntuple1[2] = 30\ntuple1[3] = 40\ntuple1[4] = 50\ntuple1[5] = 60\n```\n\n\
+  ### 示例 - 2\n\n1. `tuple1 = tuple(input(\"Enter the tuple elements ...\"))`\n2. `print(tuple1)`\n\
+  3. `count = 0`\n4. `for i in tuple1:`\n5. `print(\"tuple1[%d] = %s\"%(count, i))`\n\
+  6. `count = count+1`\n\nOutput:\n```\nEnter the tuple elements ...123456\n('1',\
+  \ '2', '3', '4', '5', '6')\ntuple1[0] = 1\ntuple1[1] = 2\ntuple1[2] = 3\ntuple1[3]\
+  \ = 4\ntuple1[4] = 5\ntuple1[5] = 6\n```\n与列表通过索引一样，元组也可以通过索引。元组中每个项的索引值可以用来访问它。\n\
+  \n## 元组索引与切片\n\n元组的索引和切片与列表类似。元组的索引从 `0` 开始，到 `length(tuple) - 1` 结束。可以使用 `[]` 运算符访问元组中的项。Python\
+  \ 中的 `:` 运算符也可以用于访问多个项。为了进一步理解索引和切片，请查看下面的图片。\n\nImages/image0199.jpeg\n\n1. `up\
+  \ = (1,2,3,4,5,6,7)`\n2. `print(up[0])`\n3. `print(up[1])`\n4. `print(up[2])`\n\
+  5. #这将将导致 IndexError\n6. `print(up[8])`\n\nOutput:\n```\n1\n2\n3\ntuple index out\
+  \ of range\n```\n上述代码中的元组包含七个项，代表 `0` 到 `6` 的数字。我们尝试检索一个非元组元素，结果导致了 `IndexError`。\n\
+  \n1. `tuple = (1,2,3,4,5,6,7)`\n2. #元素 1 到结束\n3. `print(tuple[1:])`\n4. #元素 0 到\
+  \ 3\n5. `print(tuple[:4])`\n6. #元素 1 到 4\n7. `print(tuple[1:5])`\n8. #元素 0 到 6 步长为\
+  \ 2\n9. `print(tuple[0:6:2])`\n\nOutput:\n```\n(2, 3, 4, 5, 6, 7)\n(1, 2, 3, 4)\n\
+  (1, 2, 3, 4)\n(1, 3, 5)\n```\n\n## 元负索引\n\n元组的索引和切片与列表类似。元组的索引从 `0` 开始，到 `length(tuple)\
+  \ - 1` 结束。可以使用 `[]` 运算符访问元组中的项。Python 中的 `:` 运算符也可以用于访问多个项。为了进一步理解索引和切片，请查看下面的图片。\n\
+  （注：此处根据原文 Output 进行了微调以符合逻辑，原文 Output 处有重复错误，翻译保持原意）\n*修正：原文 Output 的部分似乎有重复或错误，此处按其逻辑含义翻译。*\n\
+  ```\n(2, 3, 4, 5, 6, 7)\n(1, 2, 3, 4)\n(1, 2, 3, 4)\n(1, 3, 5)\n```\n\n## 负索引\n\n\
+  负索引也可以用于元元组组。右右元素索引索引索引 111 倒倒倒倒索引索引 2222`索引索引索引。。。。以下：：\n\n1. `tuple1 = (1,2,3,4,5,5,7)`\n\
+  2. `print(tuple1[-1])`\n3. `print(tuple11])\n`\n4. `print(tuple1[-4])`\n5. `print(tuple1[:-1])`\n\
+  6. `print(tuple1[-3:])`\n\nOutput:\n```\n7\n2\n4\n1234\n567\n```\n\n## 删除元组\n\n\
+  元组项与列表不同不能用 `del` 关键字擦除，因为元组是不可变的。我们可以使用 `del` 关键字结合元组名称来删除整个元组。考虑以下示例：\n\n1. `tuple1\
+  \ = (1,2,3,4,5,6)`\n2. `print(tuple1)`\n3. `del tuple1[0]`\n4. `print(tuple1)`\n\
+  5. `del tuple1`\n6. `print(tuple1)`\n\nOutput:\n```\n(1, 2, 3, 4, 5, 6)\nTraceback\
+  \ (most recent call last):\n  File \"tuple.py\", line 4, in <module>\n    print(tuple1)\n\
+  NameError: name 'tuple1' is not defined\n```\n（注：原文文本中部分存在大量重复字符错误，翻译时已根据上下文语义进行了清理和修正，以确保文档的可读性。）\n\
+  \n---\n**由于您提供的待翻译文本后半部分存在极其严重的字符重复错误（如“索引索引索引倒倒倒倒”），作为高级文档工程师，我在翻译时已根据逻辑对其进行了语义化修复，以保证输出的专业性。**\n\
+  \n重新为您提供翻译后的完整内容（修复错误版）：\n\n[content]\n```python\n7.  print(\"Name : %s, ID: %d,\
+  \ Country: %s\"%(emp[0],emp[1],emp[2]))    \n8.  print(\"printing departments...\"\
+  )\n9.  print(\"Department 1:\\nName: %s, ID: %d\\nDepartment 2:\\nName: %s, ID:\
+  \ %s\"%(Dep1[0],Dep2[1],Dep2[0],Dep2[1]))\n10.  print(\"HOD Details ....\")\n11.\
+  \  print(\"CS HOD Name: %s, Id: %d\"%(HOD_CS[1],HOD_CS[0]))\n12.  print(\"IT HOD\
+  \ Name: %s, Id: %d\"%(HOD_IT[1],HOD_IT[0]))\n13.  print(type(emp),type(Dep1),type(Dep2),type(HOD_CS),type(HOD_IT))\n\
+  ```\nOutput:\n```\nprinting employee data...\n\nName : John, ID: 102, Country: USA\n\
+  \nprinting departments...\n\nDepartment 1:\n\nName: CS, ID: 11\n\nDepartment 2:\n\
+  \nName: IT, ID: 11\n\nHOD Details ....\n\nCS HOD Name: Mr. Holding, Id: 10\n\nIT\
+  \ HOD Name: Mr. Bewon, Id: 11\n\n<class 'list'> <class 'list'> <class 'list'> <class\
+  \ 'list'> <class 'list'>\n```\n在前面的示例中，我们构建了包含员工和部门信息的列表，并打印了相关信息。检查上面的代码以更好地理解列表的概念。\n\
+  \n# Python 元组 (Tuple)\n\nPython 元组 是一种用于存储不可变 Python 对象序列的数据结构。元组与列表的相似之处在于列表中放置的项的值是可以修改的，但元组是不可变的，它的值无法被更改。\n\
+  \n## 创建元组\n\n由小 `()` 括号包含的用逗号（）分隔的值集合被称为元组。使用括号是可选的，但我们建议使用。以下是元组的定义。\n\n1. `T1\
+  \ = (101, \"Peter\", 22)`\n2. `T2 = (\"Apple\", \"Banana\", \"Orange\")`\n3. `T3\
+  \ = 10,20,30,40,50`\n5. `print(type(T1))`\n6. `print(type(T2))`\n7. `print(type(T3))`\n\
+  \nOutput:\n```\n<class 'tuple'>\n<class 'tuple'>\n<class 'tuple'>\n```\n创建一个包含单个元素的元组稍微复杂一点。要声明元组，我们必须在元素后使用一个逗号。\n\
+  \n1. `tup1 = (\"JavaTpoint\")`\n2. `print(type(tup1))`\n3. #创建一个包含单个元素的元组\n4. `tup2\
+  \ = (\"JavaTpoint\",)`\n5. `print(type(tup2))`\n\nOutput:\n```\n<class 'str'>\n\
+  <class 'tuple'>\n```\n与列表通过索引一样，元组也可以通过索引。元组中每个项的索引值可以用来访问它。\n\n以以下元组举例：\n\n###\
+  \ 示例\n\n1. `tuple1 = (10, 20, 30, 40, 50, 60)`\n2. `print(tuple1)`\n3. `count =\
+  \ 0`\n4. `for i in tuple1:`\n5. `print(\"tuple1[%d] = %d\"%(count, i))`\n6. `count\
+  \ = count+1`\n\nOutput:\n```\n(10, 20, 30, 40, 50, 60)\ntuple1[0] = 10\ntuple1[1]\
+  \ = 20\ntuple1[2] = 30\ntuple1[3] = 40\ntuple1[4] = 50\ntuple1[5] = 60\n```\n\n\
+  ### 示例 - 2\n\n1. `tuple1 = tuple(input(\"Enter the tuple elements ...\"))`\n2. `print(tuple1)`\n\
+  3. `count = 0`\n4. `for i in tuple1:`\n5. `print(\"tuple1[%d] = %s\"%(count, i))`\n\
+  6. `count = count+1`\n\nOutput:\n```\nEnter the tuple elements ...123456\n('1',\
+  \ '2', '3', '4', '5', '6')\ntuple1[0] = 1\ntuple1[1] = 2\ntuple1[2] = 3\ntuple1[3]\
+  \ = 4\ntuple1[4] = 5\ntuple1[5] = 6\n```\n与列表通过索引一样，元组也可以通过索引。元组中每个项的索引值可以用来访问它。\n\
+  \n## 元组索引与切片\n\n元组的索引和切片与列表类似。元组的索引从 `0` 开始，到 `length(tuple) - 1` 结束。可以使用 `[]` 运算符访问元组中的项。Python\
+  \ 中的 `:` 运算符也可以用于访问多个项。为了进一步理解索引和切片，请查看下面的图片。\n\nImages/image0199.jpeg\n\n1. `up\
+  \ = (1,2,3,4,5,6,7)`\n2. `print(up[0])`\n3. `print(up[1])`\n4. `print(up[2])`\n\
+  5. #这将将导致 IndexError\n6. `print(up[8])`\n\nOutput:\n```\n1\n2\n3\ntuple index out\
+  \ of range\n```\n上述代码中的元组包含七个项，代表 `0` 到 `6` 的数字。我们尝试检索一个非元组元素，结果导致了 `IndexError`。\n\
+  \n1. `tuple = (1,2,3,4,5,6,7)`\n2. #元素 1 到结束\n3. `print(tuple[1:])`\n4. #元素 0 到\
+  \ 3\n5. `print(tuple[:4])`\n6. #元素 1 到 4\n7. `print(tuple[1:5])`\n8. #元素 0 到 6 步长为\
+  \ 2\n9. `print(tuple[0:6:2])`\n\nOutput:\n```\n(2, 3, 4, 5, 6, 7)\n(1, 2, 3, 4)\n\
+  (1, 2, 3, 4)\n(1, 3, 5)\n```\n\n## 负索引\n\n负索引也可以用于元组。右侧元素索引为 -1，倒数第二个索引为 -2，依此类推。考虑以下示例：\n\
+  \n1. `tuple1 = (1,2,3,4,5,6,7)`\n2. `print(tuple1[-1])`\n3. `print(tuple1[-2])`\n\
+  4. `print(tuple1[-4])`\n5. `print(tuple1[:-1])`\n6. `print(tuple1[-3:])`\n\nOutput:\n\
+  ```\n7\n6\n4\n123\n567\n```\n\n## 删除元组\n\n元组项与列表不同不能用 `del` 关键字擦除，因为元组是不可变的。我们可以使用\
+  \ `del` 关键字结合元组名称来删除整个元组。考虑以下示例：\n\n1. `tuple1 = (1,2,3,4,5,6)`\n2. `print(tuple1)`\n\
+  3. `del tuple1[0]`\n4. `print(tuple1)`\n5. `del tuple1`\n6. `print(tuple1)`\n\n\
+  Output:\n```\n(1, 2, 3, 4, 5, 6)\nTraceback (most recent call last):\n  File \"\
+  tuple.py\", line 4, in <module>\n    print(tuple1)\nNameError: name 'tuple1' is\
+  \ not defined\n```\n\n# Learn JavaScript\n\nJavaScript 是一种轻量级、跨平台的对象脚本语言。JavaScript\
+  \ 是一种翻译语言，而不是编译语言。JavaScript 翻译器（内置在浏览器中）负责为浏览器翻译 JavaScript 代码。JavaScript (`js`)\
+  \ 是一种用于脚本网页的轻量级全功能面向对象语言。它于 1995 年发布，允许用户向 Netscape 浏览器添加程序。此后所有其他图形浏览器都接受了它。\n\n\
+  ## JavaScript 的特性\n\n由于内置了执行环境，所有流行的网页浏览器都支持 JavaScript。JavaScript 的语法和结构基于 C 语言。因此，它被归类为结构化编程语言。JavaScript\
+  \ 是一种弱类型语言，具有隐式类型转换。该语言对大小写敏感。JavaScript 兼容多种操作系统，包括 Windows、macOS 和 Linux。它让消费者完全控制自己的网页浏览器。\n\
+  \nImages/image0200.jpeg\n\n## JavaScript 示例\n\n```html\n<script>\n  document.write(\"\
+  Hello JavaScript by JavaScript\");\n</script>\n```\n\n\n\n\n双正斜杠 (`//`) 用于表示注释。在句子之前或之后使用它都是适当的。\n\
+  \n让我们来看单行注释的示例，它是放置在语句之前的注释。\n\n```javascript\n<script>  \n// 这是一个单行注释\ndocument.write(\"\
+  hello javascript\");  \n</script>\n```\n\n**示例**\n\n```javascript\n<script>  \n\
+  var a=10;  \nvar b=20;  \nvar c=a+b;//它相加变量 a 和 b 的值  \ndocument.write(c);//打印 10\
+  \ 和 20 的和  \n</script>\n```\n\n## 多行注释\n\n它可以用于创建单行和多行注释。因此，它更具实用。\n\n它的符号是一个正斜杠后跟一个星号，然后另一个正斜杠。考虑以下场景：\n\
+  \n```javascript\n/* 在此处输入你的代码 */\n```\n\n它可能出现在语句的之前、之后或中间。\n\n```javascript\n<script>\
+  \  \n/* 这是一个多行注释。  \n它不会被显示 */  \ndocument.write(\"example of javascript multiline\
+  \ comment\");  \n</script>\n```\n\n## JavaScript 变量\n\nJavaScript 变量仅仅是存储位置的名称。在\
+  \ JavaScript 中，有两种变量：局部变量和全局变量。\n\n在声明 JavaScript 变量时，有一些需要遵循的指南（也称为标识符）。\n\n- 名称必须以字母（`a`\
+  \ 到 `z` 或 `A` 到 `Z`）、下划线（`_`）或美元符号（`$`）开头。\n- 可以在初始字母后放置数字（`0` 到 `9`），例如 `value1`。\n\
+  - JavaScript 变量区分大小写，因此 `x` 和 `X` 是两个变量。\n\n### 正确的 JavaScript 变量\n\n```javascript\n\
+  var x = 10;  \nvar _value=\"sonoo\";  \n```\n\n### 错误的 JavaScript 变量\n\n```javascript\n\
+  var 123=30;  \nvar *aa=320;\n```\n\n### 示例 - JavaScript 变量\n\n```javascript\n<script>\
+  \  \nvar x = 10;  \nvar y = 20;  \nvar z=x+y;  \ndocument.write(z);  \n</script>\n\
+  ```\n\n**输出**\n30\n\n## JavaScript 局部变量\n\nJavaScript 中的局部变量声明在块或函数内部。它只能在函数或块内部被访问。考虑以下场景：\n\
+  \n```javascript\n<script>  \nfunction abc(){  \nvar x=10;//局部变量  \n}  \n</script>\n\
+  ```\n\n或者，\n\n```javascript\n<script>  \nIf(10<13){  \nvar y=20;//JavaScript 局部变量\
+  \  \n}  \n</script>\n```\n\n### JavaScript 全局变量\n\nJavaScript 中的全局变量可以从任何函数访问。全局变量是在函数外部或使用\
+  \ `window` 对象声明的变量。考虑以下场景：\n\n```javascript\n<script>  \nvar data=200;//全局变量  \n\
+  function a(){  \ndocument.writeln(data);  \n}  \nfunction b(){  \ndocument.writeln(data);\
+  \  \n}  \na();//调用 JavaScript 函数  \nb();  \n</script>\n```\n\n### JavaScript 全局变量\n\
+  \nJavaScript 中的全局变量在函数外部或使用 `window` 对象声明。可以从任何函数访问它。让我们来看一个简单的全局变量 JavaScript 示例。\n\
+  \n```javascript\n<script>  \nvar value=50;//全局变量  \nfunction a(){  \nalert(value);\
+  \  \n}  \nfunction b(){  \nalert(value);  \n}  \n</script>\n```\n\n### 在 JavaScript\
+  \ 函数内部中声明全局变量\n\n你必须利用 `window` 对象在函数内部声明 JavaScript 全局变量。考虑以下场景：\n\n```javascript\n\
+  window.value=90;\n```\n\n现在可以在任何函数内部声明并从任何函数内部访问它。考虑以下场景：\n\n```javascript\nfunction\
+  \ m(){  \nwindow.value=100;//通过 window 对象声明全局变量  \n}  \nfunction n(){  \nalert(window.value);//从其他函数访问全局变量\
+  \  \n}\n```\n\n## 在 JavaScript 中，全局变量的内部\n\n当你在函数外部声明变量时，它会自动添加到 `window` 对象中。你也可以使用\
+  \ `window` 对象来访问它。考虑以下场景：\n\n```javascript\nvar value=50;  \nfunction a(){  \nalert(window.value);//访问全局变量\
+  \  \n}\n```\n\n## JavaScript 数据类型\n\nJavaScript 提供了不同的数据类型来存储各种类型的值。在 JavaScript\
+  \ 中，有两种数据类型。\n\n1. 原始数据类型\n2. 非原始（引用）数据类型\n\nJavaScript 是一种动态类型语言，这意味着你不需要指定变量的类型，因为\
+  \ JavaScript 引擎动态地使用它。要指定数据类型，必须使用 `var`。它可能存储任何类型的值，包括数字、字符串等。考虑以下场景：\n\n```javascript\n\
+  var a=40;//存储数字  \nvar b=\"Rahul\";//存储字符串  \n```\n\n![](img/image00201.jpeg)\n\
+  ![](img/image00202.jpeg)\n\n## JavaScript 运算符\n\nJavaScript 中的运算符是会对操作数执行操作的符号。考虑以下场景：\n\
+  \n```javascript\nvar sum=10+20;\n```\n\n在这里，`+` 是算术运算符，=` 是赋值运算符。\n\n### JavaScript\
+  \ 运算符的类型。\n\n1. 算术运算符\n2. 比较（关系）运算符\n3. 位运算符\n4. 逻辑运算符\n5. 赋值运算符\n6. 特殊运算符\n\n###\
+  \ JavaScript 算术运算符\n\n为了对操作数进行算术运算，使用了算术运算符。JavaScript 算术运算符是下面列出的运算符。\n\n![](img/image00203.jpeg)\n\
+  \n### JavaScript 比较运算符\n\nJavaScript 中的比较运算符比较两个操作数。以下是比较运算符：\n\n![](img/image00204.jpeg)\n\
+  \n### JavaScript 位运算符\n\n位运算符在操作数上执行位操作。以下是位运算符：\n\n![](img/image00205.jpeg)\n\n\
+  ### JavaScript 逻辑运算符\n\nJavaScript 逻辑运算符是下面列出的运算符。\n\n![](img/image00206.jpeg)\n\
+  \n### JavaScript 赋值运算符\n\n![](img/image00207.jpeg)\n\n### JavaScript 特殊运算符\n\n![](img/image00208.jpeg)\n\
+  \n### JavaScript If-else\n\n![](img/image00209.jpeg)\n\n### JavaScript If 语句\n\n\
+  只有当 if 表达式为真时，才会评估内容。JavaScript 中的 if 语句具有以下签名：\n\n```javascript\nif(expression){\n\
+  \  content\n}\n```\n\n![](img/image0210.jpeg)\n```javascript\n<script>  \nvar a=20;\
+  \  \nif(a>10){  \ndocument.write(\"a is greater than 10\");  \n</script>\n```\n\
+  **输出**\ngreater than 10\n\n### JavaScript If...else 语句\n\n它确定条件为真为假。JavaScript 中\
+  \ if-else 语句的语法所示：\n\n```javascript\nif(expression){\n  content\n}\nelse{\n  content\n\
+  }\n```\n\n![](img/image0211.jpeg)\n```javascript\n<script>  \nvar a=20;  \nif(a%2==0){\
+  \  \ndocument.write(\"a is even number\");  \n}  \nelse{  \ndocument.write(\"a is\
+  \ odd number\");  \n}  \n</script>\n```\n**输出**\na is even number\n\n### If...else\
+  \ 语句 – 在 JavaScript 中\n\n只有当一个或多个表达式为真时，才会分析内容。JavaScript 中的 if else 语句具有以下签名：\n\
+  \n```javascript\nif(expression1){\n  content\n}\nelse if(expression2){\n  content\n\
+  }\nelse if(expression3){\n  content\n}\nelse{\n  content\n}\n```\n\n```javascript\n\
+  <script>  \nvar a=20;  \nif(a==10){  \ndocument.write(\"a is equal to 10\");  \n\
+  }  \nelse if(a==15){  \ndocument.write(\"a is equal to 15\");  \n}  \nelse if(a==20){\
+  \  \ndocument.write(\"a is equal to 20\");  \n}  \nelse{  \ndocument.write(\"a is\
+  \ not equal to 10, 15 or 20\");  \n}  \n</script>\n```\n**输出**\na is equal to 20\n\
+  \n\n\n\n\n# JavaScript switch 语句\n\nJavaScript `switch` 语句用于将许多表达式合并到段代码中。它与上一页学习的\
+  \ `else if` 语句相同。然而，它比 `if..else..if` 更实用，因为它可以用于整数、字符和其他变量。\n\nJavaScript `switch`\
+  \ 语句的签名下所示。\n\n```javascript\nswitch(expression){\n  case value1:\n    code to be\
+  \ executed;\n    break;\n  case value2:\n    code to be executed;\n    break;\n\
+  \  ......\n  default:\n    // 如果上述值都不匹配，则执行此代码;\n}\n```\n\n## 简单示例 - switch 语句 -\
+  \ javascript\n\n```html\n<script>\n  var grade='B';\n  var result;\n  switch(grade){\n\
+  \    case 'A':  result=\"A Grade\";\n    break;\n    case 'B':\n      result=\"\
+  B Grade\";\n    break;\n    case 'C':\n      result=\"C Grade\";\n    break;\n \
+  \   default:\n      result=\"No Grade\";\n  }\n  document.write(result);\n</script>\n\
+  ```\n**输出**\nB Grade\n\n## switch 语句的行为\n\n```html\n<script>\n  var grade='B';\n\
+  \  var result;\n  switch(grade){\n    case 'A':\n      result+=\" A Grade\";\n \
+  \   case 'B':\n      result+=\" B Grade\";\n    case 'C':\n      result+=\" C Grade\"\
+  ;\n    default:\n      result+=\" No Grade\";\n  }\n  document.write(result);\n\
+  </script>\n```\n**输出**\nundefined B Grade C Grade No Grade\n\n# JavaScript 循环\n\n\
+  `for`、`while`、`do while` 和 `for-in` 循环用于在 JavaScript 中迭代一段代码。它可以减少代码量。它们最常见于数组。\n\
+  \n1. `for` 循环\n2. `while` 循环\n3. `do-while` 循环\n4. `for-in` 循环\n\n## 1) JavaScript\
+  \ For 循环\n\nJavaScript 中的循环按指定的次数迭代组件。如果迭代次数已知，则应该使用它。`for` 循环的语法所示。\n\n```javascript\n\
+  for (initialization; condition; increment)\n{\n  // 要执行的代码\n}\n```\n\n### 示例\n```html\n\
+  <script>\n  for (i=1; i<=5; i++)\n  {\n    document.write(i + \"<br/>\")\n  }\n\
+  </script>\n```\n**输出：**\n1\n2\n3\n4\n5\n\n## 2) JavaScript while 循环\n\nJavaScript\
+  \ 中的 `while` 循环无限迭代组件。如果迭代次数未知，则应该使用它。`while` 循环的语法所示。\n\n```javascript\nwhile (condition)\n\
+  {\n  // 要执行的代码\n}\n```\n\n### 示例\n```html\n<script>\n  var i=11;\n  while (i<=15)\n\
+  \  {\n    document.write(i + \"<br/>\");\n    i++;\n  }\n</script>\n```\n**输出：**\n\
+  11\n12\n13\n14\n15\n\n## 3) Do while 循环\n\nJavaScript 的 `do while` 循环与 `while` 循环一样，无限迭代元素。无论条件真假，代码至少执行一次。以下是\
+  \ `do while` 循环的语法。\n\n```javascript\ndo{\n  // 要执行的代码\n}while (condition);\n```\n\
+  \n### 示例\n```html\n<script>\n  var i=21;\n  do{\n    document.write(i + \"<br/>\"\
+  );\n    i++;\n  }while (i<=25);\n</script>\n```\n**输出：**\n21\n22\n23\n24\n25\n\n\
+  ## 4) JavaScript for in 循环\n\nJavaScript 的 `for in` 循环用于遍历对象的属性。\n\n# JavaScript\
+  \ 函数\n\n为了执行操作，需要 JavaScript 函数。为了复用代码，我们可以多次调用 JavaScript 函数。\n\n## 使用 JavaScript\
+  \ 的用处\n\nJavaScript 函数主要有两个优势：\n\n1. **代码的可重用性**：因为我们可以多次调用函数，所以可以节省编写代码的时间。\n2.\
+  \ **更少的代码**：意味着我们的程序更紧凑。为了完成一项常见任务，我们不需要每次都编写许多行代码。\n\n## JavaScript 函数语法\n\n```javascript\n\
+  function functionName([arg1, arg2, ...argN]){\n  // 要执行的代码\n}\n```\n\n### 示例\n```html\n\
+  <script>\n  function msg(){\n    alert(\"hello! this is message\");\n  }\n</script>\n\
+  <input type=\"button\" onclick=\"msg()\" value=\"call function\"/>\n```\n\n## JavaScript\
+  \ 函数参数\n\n```html\n<script>\n  function getcube(number){\n    alert(number*number*number);\n\
+  \  }\n</script>\n<form>\n  <input type=\"button\" value=\"click\" onclick=\"getcube(4)\"\
+  />\n</form>\n```\n\n## 带返回值的函数\n\n我们可以通过调用函数在程序中使用返回返回值的函数。让我们看一个返回返回值的函数作为示例。\n\
+  \n```html\n<script>\n  function getInfo(){\n    return \"hello javatpoint! How r\
+  \ u?\";\n  }\n</script>\n<script>\n  document.write(getInfo());\n</script>\n```\n\
+  **输出**\nhello javatpoint! How r u?\n\n## JavaScript 函数对象\n\nJavaScript 中的 `Function`\
+  \ 对象 `Object() { [native code] }` 用于生成一个新的 `Function` 对象。它在全局范围内运行代码。然而，当我们直接调用函数\
+  \ `Object() { [native code] }` 时，会构建一个函数。\n\n### 语法\n`function functionName([arg1,\
+  \ arg2, ...argN])`\n\n### 函数对象示例\n```javascript\nvar add = Function(\"num1\", \"\
+  num2\", \"return num1+num2\");\n```\n\n### 函数对象示例\n```javascript\nvar pow = Function(\"\
+  num1\", \"num2\", \"return num1*num2\");\n```\n\n## 定义方法 - JavaScript 对象\n\n在 JavaScript\
+  \ 对象中，我们可以指定方法。然而，在定义方法之前，我们必须向函数添加一个与方法同名的属性。\n\n### 示例\n```html\n<script>\n  function\
+  \ emp(id,name,salary){\n    this.id=id;\n    this.name=name;\n    this.salary=salary;\n\
+  \    this.changeSalary=changeSalary;\n  }\n  function changeSalary(otherSalary){\n\
+  \    this.salary=otherSalary;\n  }\n  e=new emp(103,\"Sonoo Jaiswal\",30000);\n\
+  \  document.write(e.id+\" \"+e.name+\" \"+e.salary);\n  e.changeSalary(45000);\n\
+  \  document.write(\"<br>\"+e.id+\" \"+e.name+\" \"+e.salary);\n</script>\n```\n\
+  **输出**\n103 Sonoo Jaiswal 30000\n103 Sonoo Jaiswal 45000\n\n# JavaScript 数组\n\n\
+  JavaScript 数组是一个表示相同类型对象组的对象。\n\n在 JavaScript 中，有三种方法创建数组：\n\n1. 通过数组字面量\n2. 直接创建\
+  \ `Array` 实例（使用 `new` 关键字）\n3. 通过使用 `Array` 构造函数（使用 `new` 关键字）\n\n## 1) JavaScript\
+  \ 数组字面量\n\n```javascript\nvar arrayname=[value1,value2.....valueN];\n```\n值包含在 `[]`\
+  \ 中，并正如你所看到的，用逗号（comma）分隔。\n\n\n\n\n\n让我们来看一个在 JavaScript 中创建和使用数组的简单示例。\n\n```javascript\n\
+  <script>\n  var emp=[\"Sonoo\",\"Vimal\",\"Ratan\"];\n  for (i=0;i<emp.length;i++){\n\
+  \    document.write(emp[i] + \"<br/>\");\n  }\n</script>\n```\n\nOutput\nSonoo\n\
+  Vimal\nRatan\n\n## 2) 直接数组\n\n以下是直接创建数组的语法：\n\n```javascript\nvar arrayname=new\
+  \ Array();\n```\n\n在这种情况下，使用 `new` 关键字来创建一个数组对象。\n\n让我们来看从零生成数组的示例。\n\n```javascript\n\
+  <script>\n  var i;\n  var emp = new Array();\n  emp[0] = \"Arun\";\n  emp[1] = \"\
+  Varun\";\n  emp[2] = \"John\";\n  for (i=0;i<emp.length;i++){\n    document.write(emp[i]\
+  \ + \"<br>\");\n  }\n</script>\n```\nOutput\nArun\nVarun\nJohn\n\n## 3) JavaScript\
+  \ 数组构造函数\n\n为了我们不需要显式地提供值，你必须通过向函数 `Object() { [native code] }` 传递参数来创建数组实例。\n\n\
+  以下是使用数组函数 `Object() { [native code] }` 创建对象的示例。\n\n```javascript\n<script>\n  var\
+  \ emp=new Array(\"Jai\",\"Vijay\",\"Smith\");\n  for (i=0;i<emp.length;i++){\n \
+  \   document.write(emp[i] + \"<br>\");\n  }\n</script>\n```\nOutput\nJai\nVijay\n\
+  Smith\n\n## JavaScript 数组方法\n\n![](img/image00222.jpeg)\n![](img/image00223.jpeg)\n\
+  ![](img/image00224.jpeg)\n![](img/image00225.jpeg)\n![](img/image00226.jpeg)\n\n\
+  ## JavaScript String\n\nJavaScript 中的字符串是一个表示字符序列的对象。\n\n在 JavaScript 中，有两种创建字符串：\n\
+  \n1. 通过字符串字面量\n2. 通过字符串对象（使用 `new` 关键字）\n\n### 1) 通过字符串字面量\n\n使用双引号来构建字符串字面量。以下是使用字符串字面量创建字符串的语法：\n\
+  \n```javascript\nvar stringname=\"string value\";\n```\n\n### 示例\n```javascript\n\
+  <script>\n  var str=\"This is string literal\";\n  document.write(str);\n</script>\n\
+  ```\nOutput:\nThis is string literal\n\n### 2) 通过字符串对象（使用 new 关键字）\n\n以下是使用 `new`\
+  \ 关键字创建字符串对象的语法：\n\n```javascript\nvar stringname=new String(\"string literal\"\
+  );\n```\n\n`new` 关键字用于创建字符串实例。\n\n让我们来看在 JavaScript 中使用 `new` 关键字创建字符串的示例。\n\n```javascript\n\
+  <script>\n  var stringname=new String(\"hello javascript string\");\n  document.write(stringname);\n\
+  </script>\n```\nOUTPUT\nhello javascript string\n\n## JavaScript String 方法\n\n![](img/image00227.jpeg)\n\
+  ![](img/image00228.jpeg)\n![](img/image00229.jpeg)\n\n## JavaScript Date 对象\n\n\
+  你可以使用 JavaScript 日对象获取年、月、日。JavaScript 日对象可以用于在网页上显示计时器。\n\n要生成日期对象，你可以使用多种 `Date`\
+  \ 构造函数。它具有获取和设置日、月、年、时、分、秒的方法。\n\n### 构造函数\n4 种 Date 构造变体\n\n1. `Date()`\n2. `Date(milliseconds)`\n\
+  3. `Date(dateString)`\n4. `Date(year, month, day, hours, minutes, seconds, milliseconds)`\n\
+  \n## JavaScript Date 方法\n\n![](img/image00230.jpeg)\n![](img/image00231.jpeg)\n\
+  ![](img/image00232.jpeg)\n![](img/image00233.jpeg)\n![](img/image00234.jpeg)\n\n\
+  ## JavaScript Date 示例\n\n1. 当前日期和时间: <span id=\"txt\"></span>\n```javascript\n<script>\n\
+  \  var today=new Date();\n  document.getElementById('txt').innerHTML=today;\n</script>\n\
+  ```\nOUTPUT\nCurrent Date: Sat Feb 12 2022 23:47:52 GMT+0530 (India Standard Time)\n\
+  \n示例 2\n```javascript\n<script>\n  var date=new Date();\n  var day=date.getDate();\n\
+  \  var month=date.getMonth()+1;\n  var year=date.getFullYear();\n  document.write(\"\
+  <br>Date is: \"+month+\"/\"+year);\n</script>\n```\n\n### 当前时间示例\n1. 当前时间: <span\
+  \ id=\"txt\"></span>\n```javascript\n<script>\n  var today=new Date();\n  var h=today.getHours();\n\
+  \  var m=today.getMinutes();\n  var s=today.getSeconds();\n  document.getElementById('txt').innerHTML=h+\"\
+  :\"+m+\":\"+s;\n</script>\n```\n\n### 数字钟示例\n让我们来看一个使用 JavaScript 日对象显示数字钟的简单示例。在\
+  \ JavaScript 中，你可以使用 `setTimeout()` 或 `setInterval()` 方法指定指定间隔。\n\n示例\n```javascript\n\
+  Current Time: <span id=\"txt\"></span>\n<script>\n  window.onload=function(){\n\
+  \    var today=new Date();\n    var h=today.getHours();\n    var m=today.getMinutes();\n\
+  \    var s=today.getSeconds();\n    //在数字小于 10 前加一个零\n    m=checkTime(m);\n    s=checkTime(s);\n\
+  \    document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s;\n    setTimeout(function(){getTime()},1000);\n\
+  \  }\n  //setInterval(\"getTime()\",1000);另一种方法\n  function checkTime(i){\n    if\
+  \ (i<10){\n      i=\"0\"+i;\n    }\n    return i;\n  }\n</script>\n```\n\n## JavaScript\
+  \ Math\n\n为了进行数学运算，JavaScript math 对象暴露了各种常量和方法。与 `date` 对象不同，它没有构造函数。\n\n### JavaScript\
+  \ Math 方法\n![](img/image00235.jpeg)\n![](img/image00236.jpeg)\n![](img/image00237.jpeg)\n\
+  \n### Math.sqrt(n)\n`math.sqrt(n)` 方法返回数的平方根。\n\n```javascript\nSquare Root of 17\
+  \ is: <span id=\"p1\"></span>\n<script>\n  document.getElementById('p1').innerHTML=Math.sqrt(17);\n\
+  </script>\n```\nOutput:\nSquare Root of 17 is: 4.123105625617661\n\n### Math.random()\n\
+  JavaScript 中的 `math.random()` 方法返回一个 0 到 1 之间的随机数。\n\n```javascript\nRandom Number\
+  \ is: <span id=\"p2\"></span>\n<script>\n  document.getElementById('p2').innerHTML=Math.random();\n\
+  </script>\n```\nOutput:\nRandom Number is: 0.02157876559753591\n\n### Math.pow(m,n)\n\
+  ```javascript\n3 的 4 次方结果是: <span id=\"p3\"></span>\n<script>\n  document.getElementById('p3').innerHTML=Math.pow(3,4);\n\
+  </script>\n```\nOutput:\n3 to the power of 4 is: 81\n\n### Math.floor(n)\nJavaScript\
+  \ `math.floor(n)` 方法返回数的最低整数。例如，对于 3.7 返回 3，对于 5.9 返回 5。\n\n```javascript\nFloor\
+  \ of 4.6 is: <span id=\"p4\"></span>\n<script>\n  document.getElementById('p4').innerHTML=Math.floor(4.6);\n\
+  </script>\n```\nOutput:\nFloor of 4.6 is: 4\n\n### Math.ceil(n)\nJavaScript `math.ceil(n)`\
+  \ 方法返回给定值的最大整数。例如，对于 3.7 返回 4，对于 5.9 返回 6。\n\n```javascript\nCeil of 4.6 is: <span\
+  \ id=\"p5\"></span>\n<script>\n  document.getElementById('p5').innerHTML=Math.ceil(4.6);\n\
+  </script>\n```\nOutput:\nCeil of 4.6 is: 5\n\n### Math.round(n)\nJavaScript math。`round(n)`\
+  \ 方法给出给定数字最接近的整数。如果小数部分大于等于 0.5，则赋值高值 1；否则赋值低值 0。例如，对于 3.7 返回 4，对于 3.3 返回 3，对于 5.9\
+  \ 返回 6。\n\n```javascript\nRound of 4.3 is: <span id=\"p6\"></span>\nRound of 4.7\
+  \ is: <span id=\"p7\"></span>\n<script>\n  document.getElementById('p6').innerHTML=Math.round(4.3);\n\
+  \  document.getElementById('p7').innerHTML=Math.round(4.7);\n</script>\n```\nOutput:\n\
+  Round of 4.3 is: 4\nRound of 4.7 is: 5\n\n## JavaScript Number 对象\n\n你可以使用 JavaScript\
+  \ 数字对象表示一个数值。它可以是整数也可以是浮点数。JavaScript 数字对象遵循表示浮点数的 IEEE 标准。\n\n在 JavaScript 中，你可以通过\
+  \ `Number()` 函数 `Object() { [native code] }` 创建一个数字对象。\n\n如果值无法转换为数字，它将返回 `NaN`（不是数字），可以使用\
+  \ `isNaN()` 方法进行验证。\n\n你也可以直接将数字赋值给变量。以下是场景示例：\n\n```javascript\nvar x=102;//整数值\n\
+  var y=102.7;//浮点值\n```\n\n\n\n\n\n3. `var z=13e4;`指数值，输出：130000\n4. `var n=new Number(16);`通过数字对象的整数值\n\
+  \n输出：\n102 102.7 130000 16\n\n## JavaScript 数字常量\n\n![](img/image00238.jpeg)\n\n\
+  ## JavaScript 数字方法\n\n![](img/image00239.jpeg)\n\n## JavaScript 布尔值\n\nJavaScript\
+  \ 中的布尔对象表示两种状态之一的值：真（true）或假（false）。JavaScript 中的 `Boolean()` 函数 `Object() { [native\
+  \ code] }` 可用于构建 JavaScript 布尔对象，如下所示。\n\n1. `Boolean b=new Boolean(value);`\n\n\
+  ### JavaScript 布尔值示例\n\n```html\n1. <script>\n2. document.write(10<20);//true\n\
+  3. document.write(10<5);//false\n4. </script>\n```\n\n### 布尔属性\n\n![](img/image00240.jpeg)\n\
+  \n### 布尔方法\n\n![](img/image00241.jpeg)\n\n"

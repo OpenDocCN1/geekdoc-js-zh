@@ -1,0 +1,5775 @@
+- fmt: '
+
+    ![](images/00025.jpeg)
+
+
+    # REACT JS: Web App Development
+
+
+    Learn one of the most popular Javascript libraries
+
+
+    ## 2nd edition
+
+
+    Daniel Green
+
+
+    Copyright © 2015 by Daniel Green.
+
+
+    All rights reserved. No part of this publication may be reproduced, distributed,
+    or transmitted in any form or by any means, including photocopying, recording,
+    or other electronic or mechanical methods, without the prior written permission
+    of the author, except in the case of brief quotations embodied in critical reviews
+    and certain other noncommercial uses permitted by copyright law.
+
+
+    ## Disclaimer
+
+
+    While all attempts have been made to verify the information provided in this book,
+    the author doesn’t assume any responsibility for errors, omissions, or contrary
+    interpretations of the subject matter contained within. The information provided
+    in this book is for educational and entertainment purposes only. The reader is
+    responsible for his or her own actions and the author does not accept any responsibilities
+    for any liabilities or damages, real or perceived, resulting from the use of this
+    information.
+
+
+    The trademarks that are used are without any consent, and the publication of the
+    trademark is without permission or backing by the trademark owner. All trademarks
+    and brands within this book are for clarifying purposes only and are owned by
+    the owners themselves, not affiliated with this document.
+
+
+    ## Contents
+
+
+    - [Book Description](#part0000_split_004.html__Toc422062371)
+
+    - [Introduction](#part0000_split_005.html__Toc422062372)
+
+    - [Chapter 1 Definition](#part0000_split_006.html__Toc422062373)
+
+    - [Getting started with React Javascript](#part0000_split_007.html__Toc422062374)
+
+    - [Chapter 2 Creating Components in React](#part0000_split_008.html__Toc422062375)
+
+    - [Adding data to the component](#part0000_split_009.html__Toc422062376)
+
+    - [Creating a sub component of React](#part0000_split_010.html__Toc422062377)
+
+    - [Adding state](#part0000_split_011.html__Toc422062378)
+
+    - [Handling Events](#part0000_split_012.html__Toc422062379)
+
+    - [Chapter 3 Comment Box in React](#part0000_split_013.html__Toc422062380)
+
+    - [Chapter 4 Breaking the User Interface into an Hierarchy of Components](#part0000_split_014.html__Toc422062381)
+
+    - [Chapter 5 Creating Forms in React](#part0000_split_015.html__Toc422062382)
+
+    - [Chapter 6 Animations in React](#part0000_split_016.html__Toc422062383)
+
+    - [Chapter 7 Two-way Binding Helpers in React](#part0000_split_017.html__Toc422062384)
+
+    - [Chapter 8 Transferring Props](#part0000_split_018.html__Toc422062385)
+
+    - [Transferring Manually](#part0000_split_019.html__Toc422062386)
+
+    - [Transfer with JSX](#part0000_split_020.html__Toc422062387)
+
+    - [Consumption and Transfer of the Same Prop](#part0000_split_021.html__Toc422062388)
+
+    - [Transfer with an Underscore](#part0000_split_022.html__Toc422062389)
+
+    - [Chapter 9 React and Browsers](#part0000_split_023.html__Toc422062390)
+
+    - [findDOMNode() and Refs](#part0000_split_024.html__Toc422062391)
+
+    - [More on Refs](#part0000_split_025.html__Toc422062392)
+
+    - [Ref Callback](#part0000_split_026.html__Toc422062393)
+
+    - [Conclusion](#part0000_split_027.html__Toc422062394)
+
+
+    # Book Description
+
+
+    This book is all about React Javascript. It begins by explaining what React is,
+    and where it is used. The book also explains the origin of this language. A guide
+    on how to get started with React is provided, including how to download the library
+    and setting it up to be ready for use. You will also be guided on how to write
+    your first React program.
+
+
+    Sometimes, your program might involve a combination of a HTML, a CSS, and a React
+    code. After reading this book, you will know how to write these separately, and
+    then run them so as to achieve your result. Components, which are a common feature
+    in React, are deeply explored in this book.
+
+
+    The book discusses how to create components with no details left out. You will
+    get to know how to add data to the components that you create in React, as well
+    as creating subcomponents in React. The various ways in which one can add state
+    to the components are explored:
+
+
+    - Definition
+
+    - Creating Components in React
+
+    - Comment Box in React
+
+    - Breaking the User Interface into an Hierarchy of Components
+
+    - Creating Forms in React
+
+    - Animations in React
+
+    - Two-way Binding Helpers in React
+
+    - Transferring Props
+
+    - React and Browsers
+
+
+    # Introduction
+
+
+    Some years ago, developers, especially web developers, experienced problems when
+    developing single page. This problem persisted until React was introduced. This
+    is a Javascript library which helps in solving the problems experienced by programmers.
+
+
+    With React, one can develop large applications and use data which can change frequently.
+    This can be done in a very simple manner. Note that it can only be used to develop
+    the interface part of your application, since in terms of MVC (mode-view-controller),
+    it only forms the view.
+
+
+    It is possible to integrate this library with other Javascript libraries such
+    as AngularJS. Although it is used for development of the user interface alone,
+    it is possible to use add-ons which react to events together with this library,
+    so as to create amazing web applications.
+
+
+    In terms of DOM (Data Object Manipulation), it maintains a DOM which it comes
+    with, meaning that it doesn’t rely very much on the DOM of the browser.
+
+
+    This means that it is easy to know the parts of the DOM which have changed by
+    comparing it with the one being stored. It can then update the DOM of the browser.
+
+
+    # Chapter 1 Definition
+
+
+    This is a Javascript Library, and it is used for development of user interfaces.
+    The library is open-source, and most people refer toit as `React.js` or `ReactJS`.
+    The library was developed so as to solve the problems that programmers experience
+    when developing applications which are single page. It is maintained by Instagram,
+    Facebook, and a group which is made up of developers.
+
+
+    ## Getting started with React Javascript
+
+
+    You need to first download the library. This can be downloaded from GitHub. The
+    downloaded file will always be in a zipped format. You have to extract it so that
+    it can become usable. The files in which you write your code should be saved in
+    the same directory where you have extracted the contents of the download. They
+    should also be saved with an `.html` extension.
+
+
+    Let us demonstrate this by writing our first sample code in React:
+
+    '
+  raw: '
+
+
+    ![](images/00025.jpeg)
+
+
+    REACT JS: Web App Development
+
+
+    Learn one of the most popular Javascript libraries
+
+
+    ## 2nd edition
+
+
+    Daniel Green
+
+
+    Copyright © 2015 by Daniel Green.
+
+
+    All rights reserved. No part of this publication may be reproduced, distributed,
+    or transmitted in any form or by any means, including photocopying, recording,
+    or other electronic or mechanical methods, without the prior written permission
+    of the author, except in the case of brief quotations embodied in critical reviews
+    and certain other noncommercial uses permitted by copyright law.
+
+
+    Disclaimer
+
+
+    While all attempts have been made to verify the information provided in this book,
+    the author doesn’t assume any responsibility for errors, omissions, or contrary
+    interpretations of the subject matter contained within. The information provided
+    in this book is for educational and entertainment purposes only. The reader is
+    responsible for his or her own actions and the author does not accept any responsibilities
+    for any liabilities or damages, real or perceived, resulting from the use of this
+    information.
+
+
+    The trademarks that are used are without any consent, and the publication of the
+    trademark is without permission or backing by the trademark owner. All trademarks
+    and brands within this book are for clarifying purposes only and are  owned by
+    the owners themselves, not affiliated with this document.
+
+
+    Contents
+
+
+    [Book Description](#part0000_split_004.html__Toc422062371)
+
+
+    [Introduction](#part0000_split_005.html__Toc422062372)
+
+
+    [Chapter 1 Definition](#part0000_split_006.html__Toc422062373)
+
+
+    [Getting started with React Javascript](#part0000_split_007.html__Toc422062374)
+
+
+    [Chapter 2 Creating Components in React](#part0000_split_008.html__Toc422062375)
+
+
+    [Adding data to the component](#part0000_split_009.html__Toc422062376)
+
+
+    [Creating a sub component of React](#part0000_split_010.html__Toc422062377)
+
+
+    [Adding state](#part0000_split_011.html__Toc422062378)
+
+
+    [Handling Events](#part0000_split_012.html__Toc422062379)
+
+
+    [Chapter 3 Comment Box in React](#part0000_split_013.html__Toc422062380)
+
+
+    [Chapter 4 Breaking the User Interface into an Hierarchy of Components](#part0000_split_014.html__Toc422062381)
+
+
+    [Chapter 5 Creating Forms in React](#part0000_split_015.html__Toc422062382)
+
+
+    [Chapter 6 Animations in React](#part0000_split_016.html__Toc422062383)
+
+
+    [Chapter 7 Two-way Binding Helpers in React](#part0000_split_017.html__Toc422062384)
+
+
+    [Chapter 8 Transferring Props](#part0000_split_018.html__Toc422062385)
+
+
+    [Transferring Manually](#part0000_split_019.html__Toc422062386)
+
+
+    [Transfer with JSX](#part0000_split_020.html__Toc422062387)
+
+
+    [Consumption and Transfer of the Same Prop](#part0000_split_021.html__Toc422062388)
+
+
+    [Transfer with an Underscore](#part0000_split_022.html__Toc422062389)
+
+
+    [Chapter 9 React and Browsers](#part0000_split_023.html__Toc422062390)
+
+
+    [findDOMNode() and Refs](#part0000_split_024.html__Toc422062391)
+
+
+    [More on Refs](#part0000_split_025.html__Toc422062392)
+
+
+    [Ref Callback](#part0000_split_026.html__Toc422062393)
+
+
+    [Conclusion](#part0000_split_027.html__Toc422062394)
+
+
+    # Book Description
+
+
+    This book is all about React Javascript. It begins by explaining what React is,
+    and where it is used. The book also explains the origin of this language. A guide
+    on how to get started with React is provided, including how to download the library
+    and setting it up to be ready for use. You will also be guided on how to write
+    your first React program.
+
+
+    Sometimes, your program might involve a combination of a HTML, a CSS, and a React
+    code. After reading this book, you will know how to write these separately, and
+    then run them so as to achieve your result. Components, which are a common feature
+    in React, are deeply explored in this book.
+
+
+    The book discusses how to create components with no details left out. You will
+    get to know how to add data to the components that you create in React, as well
+    as creating subcomponents in React. The various ways in which one can add state
+    to the components that have been created in React is also explored. This nook
+    will guide you on how to choose the best method for doing this in React. Events,
+    in which you need your component to do something after selection,are discussed
+    in detail.
+
+
+    After reading this book, you will get to know how to create a comment box in React.
+    The user interface is explored in detail including breaking it into a number of
+    components. Animations are also  discussed.
+
+
+    The following topics are explored:
+
+
+    *   Definition
+
+
+    *   Creating Components in React
+
+
+    *   Comment Box in React
+
+
+    *   Breaking the User Interface into an Hierarchy of Components
+
+
+    *   Creating Forms in React
+
+
+    *   Animations in React
+
+
+    *   Two-way Binding Helpers in React
+
+
+    *   Transferring Props
+
+
+    *   React and Browsers
+
+
+    # Introduction
+
+
+    Some years ago, developers, and especially web developers, experienced numerous
+    problems when developing single page web applications. This problem persisted
+    until Javascript React was introduced. This is a Javascript library which helps
+    in solving problems experienced by programmers when creating web applications
+    which are worth only a single page.
+
+
+    The good thing about the library is that it can be integrated with other Javascript
+    libraries so as to enhance the functionality of your final web application. Many
+    programmers and non-programmers think that this library cannot be used with other
+    Javascript libraries, which is not the case. This means that this library can
+    also be used to add functionality to the created components, in such a way that
+    once a particular component has been selected, then it will do something that
+    you specify.
+
+
+    The library is very good in supporting animations. The animation can involve either
+    a single word or image, or multiple images or words. This explains why most websites
+    with an image carousel in which image sliders are created for the web pages of
+    the site are developed using this Javascript library. This also shows how good
+    the library is in enhancing the user interface of web applications. With this
+    library, the user interface can be broken into a number of components.
+
+
+    # Chapter 1
+
+
+    Definition
+
+
+    This is a Javascript Library, and it is used for development of user interfaces.
+    The library is open-source, and most people refer toit as React.js or ReactJS.
+    The library was developed so as to solve the problems that programmers experience
+    when developing applications which are only a single page. It is maintained by
+    Instagram, Facebook, and a group which is made up of developers.
+
+
+    With React, one can develop large applications and use data which can change frequently.
+    This can be done in a very simple manner. Note that it can only be used to develop
+    the interface part of your application, since in terms of MVC (mode-view-controller),
+    it only forms the view.
+
+
+    It is possible to integrate this library with other Javascript libraries such
+    as AngularJS. Although it is used for development of the user interface alone,
+    it is possible to use add-ons which react to events together with this library,
+    so as to create amazing web applications.
+
+
+    In terms of DOM (Data Object Manipulation), it maintains a DOM which it comes
+    with, meaning that it doesn’t rely very much on the DOM of the browser.
+
+
+    This means that it is easy  to know the parts of the DOM which have changed by
+    comparing it with the one being stored. It can then update the DOM of the browser.
+
+
+    ## Getting started with React Javascript
+
+
+    You need to first download the library. This can be downloaded from GitHub. The
+    downloaded file will always be in a zipped format. You have to extract it so that
+    it can become usable. The files in which you write your code should be saved in
+    the same directory where you have extracted the contents of the download. They
+    should also be saved with an “.html” extension.
+
+
+    Let us demonstrate this by writing our first sample code in React:'
+  toc: []
+  trans: '
+
+
+    ![](img/00025.jpeg)
+
+
+    # REACT JS：Web 应用开发
+
+
+    学习最流行的 Javascript 库之一
+
+
+    ## 第 2 版
+
+
+    Daniel Green
+
+
+    版权所有 © 2015 Daniel Green。
+
+
+    保留所有权利。未经作者事先书面许可，本出版物不得以任何形式或通过任何方式（包括复印、录制或其他电子或机械方法）复制、分发或传输，但批判性评论中的简短引用以及版权法允许的某些其他非商业用途除外。
+
+
+    ## 免责声明
+
+
+    尽管已尽一切努力验证书中提供信息的准确性，但作者对书中包含的主题的错误、遗漏或与其内容相反的解释不承担任何责任。书中提供的信息仅供教育和娱乐目的使用。读者对其自己的行为负责，作者对使用这些信息所导致的任何实际或感知的责任或损害不承担任何责任。
+
+
+    所使用的商标均未经任何许可，且商标的发布未经商标所有者的许可或支持。书中的所有商标和品牌仅用于说明目的，归其所有者所有，与本文档无关联。
+
+
+    ## 目录
+
+
+    - 书籍介绍
+
+    - 引言
+
+    - 第 1 章 定义
+
+    - 开始学习 React Javascript
+
+    - 第 2 章在 React 中创建组件
+
+    - 向组件添加数据
+
+    - 在 React 中创建子组件
+
+    - 添加状态
+
+    - 处理事件
+
+    - 第 3 章 React 中的评论框
+
+    - 第 4 章将用户界面拆分为组件层级结构
+
+    - 第 5 章在 React 中创建表单
+
+    - 第 6 章 React 中的动画
+
+    - 第 7 章 React 中的双向绑定助手
+
+    - 第 8 章 属性的传递
+
+    - 手动传递
+
+    - 通过 JSX 传递
+
+    - 相同属性的消费与传递
+
+    - 通过下划线传递
+
+    - 第 9 章 React 与浏览器
+
+    - findDOMNode() 和 Refs
+
+    - 更多 Refs
+
+    - Ref 回调
+
+    - 总结
+
+
+    # 书籍介绍
+
+
+    本书完全关于 React Javascript。它首先解释了什么是 React 以及它在哪里使用。书中还解释了这种语言的起源。书中提供了如何开始学习 React
+    的指南，包括如何下载库以及将其设置好可以使用。你还将被指导如何编写第一个 React 程序。
+
+
+    有时，你的程序可能涉及 HTML、CSS 和 React 代码的组合。在阅读这本书后，你将知道如何单独编写这些代码并运行它们以实现你的结果。组件是 React
+    中的一个常见特性，书中对其进行了深入探讨。
+
+
+    书中讨论了如何创建组件且不遗留任何细节。你将了解如何在 React 中创建的组件中添加数据，以及如何创建子组件。书中探讨了向组件添加状态的不同方法：
+
+
+    - 定义
+
+    - 在 React 中创建组件
+
+    - React 中的评论框
+
+    - 将用户界面拆分为组件层级结构
+
+    - 在 React 中创建表单
+
+    - React 中的动画
+
+    - React 中的双向绑定助手
+
+    - 属性的传递
+
+    - React 与浏览器
+
+
+    # 引言
+
+
+    在过去，开发者（尤其是 Web 开发者）在开发单页应用时遇到了问题。这个问题一直持续到 React 的出现。这是一个有助于解决程序员遇到问题的 Javascript
+    库。
+
+
+    通过 React，人们可以开发大型应用程序并使用频繁变化的数据。这可以通过非常简单的方式来实现。注意，它仅用于开发应用程序界面，因为在 MVC（模型-视图-控制器）中，它只形成视图。
+
+
+    可以将此库与其他 Javascript 库（如 AngularJS）集成。尽管它仅用于开发界面，但可以与其他响应事件的插件一起使用，从而创建出 Web 应用。
+
+
+    在 DOM（文档对象模型）方面，它维护了一个自带的 DOM，这意味着它并不非常依赖浏览器的 DOM。
+
+
+    这意味着通过与存储的内容进行对比，可以得知 DOM 的哪些部分发生了变化。它可以随后更新 DOM。
+
+
+    ## 开始学习 React Javascript
+
+
+    你首先需要下载库。这可以从 GitHub 下载。下载的文件始终是压缩格式。你必须解压它才能使其可用。你编写代码的文件应该保存在解压下载内容的相同目录下。它们也应该以
+    `.html` 扩展名保存。
+
+
+    让我们通过在 React 中编写我们的第一个示例代码来演示：
+
+
+    '
+- fmt: "\nExtract the contents of the file in a certain directory. Open your text\
+    \ editor of choice, such as `notepad` or `notepad++` if you are using Windows.\
+    \ For Linux and Mac OS X users, use text editors of choice such as `VIM` in Linux\
+    \ and `Emacs` in Mac. Just write the following code in the editor:\n\n```javascript\n\
+    React.render(\n  <h1>Hello, welcome to React!</h1>,\n  document.getElementById('hello')\n\
+    );\n```\n\nOnce you have written the code, save the file with an `“.html”` extension\
+    \ and in the same directory where you extracted the contents of the downloaded\
+    \ file. Open the file with your browser, and observe the output. The following\
+    \ should be observed:\n\n![](images/00001.gif)\n\nFrom the figure shown above,\
+    \ it is very clear that the code has produced the words which we specified as\
+    \ the output.\n\nIt is also possible to write the React code separately. Write\
+    \ the following `src/hello.js` code:\n\n```javascript\nReact.render(\n  <h1>Hello,\
+    \ welcome to React!</h1>,\n  document.getElementById('hello')\n);\n```\n\nJust\
+    \ save the above file with a `“.js”` extension so as to imply that it is a Javascript\
+    \ file. This should then be referenced from the file saved with the `“,html” extension\
+    \ as follows:\n\n```html\n<script type=\"text/jsx\" src=\"src/hello.js\"></script>\n\
+    ```\n\nThe HTML file should then be updated as follows:\n\n```html\n</head>\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<title>Hello, welcome to React!</title>\n<script\
+    \ src=\"build/react.js\"></script>\n<!-- No need for JSXTransformer! -->\n<body>\n\
+    <div id=\"hello\"></div>\n<script src=\"build/hello.js\"></script>\n</body>\n\
+    </html>\n```\n\nYou can then run your code, and you will observe the following\
+    \ output:\n\n![](images/00001.gif)\n\nIt is very clear that we have achieved the\
+    \ same result, but by different methods.\n\n# Chapter 2: Creating Components in\
+    \ React\n\nComponents make it possible for React to call classes. To achieve this,\
+    \ one should do the following:\n\n```javascript\nvar MainV = React.createClass({});\n\
+    ```\n\nAfter the above, the next step should be rendering it onto the screen.\
+    \ This can be achieved as follows:\n\n```javascript\nReact.renderComponent(new\
+    \ MainV(), document.body);\n```\n\nLet us demonstrate this with an example. Consider\
+    \ the following sample code:\n\n```javascript\nvar MainV = React.createClass({\n\
+    \  getDefaultProps: function(){\n    return {\n    }\n  },\n  getInitialState:\
+    \ function(){\n    return {\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'root'\n    }, 'My div')\n  }\n})\n```\n\nJust write the code,\
+    \ and then run it. Observe the output that you get. It should be as follows:\n\
+    \n![](images/00002.gif)\n\nThe code outputs a `“div”` element which we have created\
+    \ together with the text which we have specified. This has been achieved very\
+    \ easily with React. It is important to note the use of the following methods:\n\
+    \n- `getDefaultProps`: this method is callable only once, and it must be called\
+    \ before we can render the output on the screen. It has formed the first method\
+    \ to be called.\n- `getInitialState`: the method can also be called once. It gives\
+    \ the default state of our component. Notice that it has been called after the\
+    \ method above;\n- `render`: this method has the purpose of rendering the output\
+    \ or the result on the screen. It can only be called once.\n\n## Adding data to\
+    \ the component\n\nIt is possible to add to the component which we have created\
+    \ above. This can be done with a lot of ease. Consider the following:\n\nWrite\
+    \ the following Javascript code:\n\n```javascript\nvar MainV = React.createClass({\n\
+    \  getDefaultProps: function(){\n    return {\n      r: null\n    }\n  },\n  getInitialState:\
+    \ function(){\n    return {\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'root'\n    },\n    _.map(this.props.r, function(r){\n     \
+    \   return React.DOM.div({\n          className: 'box'\n        })\n    })\n \
+    \   )\n  }\n})\n\nvar getData = function getData(){\n  return [\n    { color:\
+    \ \"green\", value: \"#0f0\" },\n    { color: \"red\", value: \"#f00\" },\n  \
+    \  { color: \"cyan\", value: \"#0ff\" },\n    { color: \"blue\", value: \"#00f\"\
+    \ },\n    { color: \"magenta\", value: \"#f0f\" },\n    { color: \"black\", value:\
+    \ \"#000\" },\n    { color: \"yellow\", value: \"#ff0\" }\n  ]\n}\n\nvar r = getData();\n\
+    var mainV = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\nThe HTML code for the same should be as follows:\n\n```html\n<script type=\"\
+    text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"></script>\n\
+    ```\n\nThe CSS code for the same should be as follows:\n\n```css\n.box {\n  width:\
+    \ 45px;\n  height: 40px;\n  background-color: red;\n}\n```\n\nJust run the program,\
+    \ and observe the output which should be as follows:\n\n![](images/00003.gif)\n\
+    \nWe have created several boxes, but all have the same background. This means\
+    \ they have been joined together. To be able to differentiate between the boxes,\
+    \ we should give each a different color. This can be done by updating the `render`\
+    \ method as follows: The Javascript file should be as follows:\n\n```javascript\n\
+    var MainV = React.createClass({\n  getDefaultProps: function(){\n    return {\n\
+    \      r: null\n    }\n  },\n  getInitialState: function(){\n    return {\n  \
+    \  }\n  },\n  render: function(){\n    return React.DOM.div({\n      className:\
+    \ 'root'\n    },\n    _.map(this.props.r, function(r){\n      return React.DOM.div({\n\
+    \        className: 'box',\n        style: {\n          backgroundColor: r.value\n\
+    \        }\n    })\n    )\n  }\n})\n\nvar getData = function getData(){\n  return\
+    \ [\n    { color: \"green\", value: \"#0f0\" },\n    { color: \"red\", value:\
+    \ \"#f00\" },\n    { color: \"cyan\", value: \"#0ff\" },\n    { color: \"blue\"\
+    , value: \"#00f\" },\n    { color: \"magenta\", value: \"#f0f\" },\n    { color:\
+    \ \"black\", value: \"#000\" },\n    { color: \"yellow\", value: \"#ff0\" }\n\
+    \  ]\n}\n\nvar r = getData();\nvar mainV = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV,\
+    \ document.body);\n```\n\nThe CSS file should be as follows:\n\n```css\n.box {\n\
+    \  width: 45px;\n  height: 40px;\n  background-color: red;\n}\n```\n\nThe HTML\
+    \ file should be as follows:\n\n```html\n<script type=\"text/javascript\" src=\"\
+    http://underscorejs.org/underscore-min.js\"></script>\n```\n\nJust run the program,\
+    \ and observe the output. It should be as follows:\n\n```javascript\nvar MainV\
+    \ = React.createClass({\n  getDefaultProps: function(){\n    return {\n      r:\
+    \ null\n    }\n  },\n  getInitialState: function(){\n    return {\n    }\n  },\n\
+    \  render: function(){\n    return React.DOM.div({\n      'root'\n    },\n   \
+    \ _.map(this.props.r, function(r){\n      return new ItemRendererV(r);\n    })\n\
+    \    )\n  }\n})\n\nvar ItemRendererV = React.createClass({\n  getDefaultProps:\
+    \ function(){\n    return {\n      color: null,\n      value: null\n    }\n  },\n\
+    \  render: function(){\n    return React.DOM.div({\n      className: 'box',\n\
+    \      style: {\n        backgroundColor: this.props.value\n      }\n    }, this.props.color)\n\
+    \  }\n})\n\nvar getData = function getData(){\n  return [\n    { color: \"green\"\
+    , value: \"#0f0\" },\n    { color: \"red\", value: \"#f00\" },\n    { color: \"\
+    cyan\", value: \"#0ff\" },\n    { color: \"blue\", value: \"#00f\" },\n    { color:\
+    \ \"magenta\", value: \"#f0f\" },\n    { color: \"black\", value: \"#000\" },\n\
+    \    { color: \"yellow\", value: \"#ff0\" }\n  ]\n}\n\nvar rows = getData();\n\
+    var mainV = new MainV({\n  rows: rows\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\n![](images/00004.gif)\n\nAs shown in the output, each of the boxes is unique\
+    \ in terms of color. It is now easy to differentiate them. It would also be good\
+    \ if we add some text in each of the boxes. This is demonstrated below.\n\nThen\
+    \ the Javascript code should be modified to the following:\n\n```javascript\n\
+    var MainV = React.createClass({\n  getDefaultProps: function(){\n    return {\n\
+    \      r: null\n    }\n  },\n  getInitialState: function(){\n    return {\n  \
+    \  }\n  },\n  render: function(){\n    return React.DOM.div({\n      className:\
+    \ 'root'\n    },\n    _.map(this.props.r, function(r){\n      return React.DOM.div({\n\
+    \        className: 'box',\n        style: {\n          backgroundColor: r.value\n\
+    \        }\n    }, r.color)\n    })\n    )\n  }\n})\n```\n"
+  raw: 'Extract the contents of the file in a certain directory. Open your text editor
+    of choice, such as notepadornotepad++ if you are using Windows. For Linux and
+    Mac OS X users, use text editors of choice such as VIM in Linux and Emacs in Mac.
+    Just write the following code in the editor:
+
+
+    React.render(
+
+
+    <h1>Hello, welcome to React!</h1>,
+
+
+    document.getElementById(''hello'')
+
+
+    );
+
+
+    Once you have written the code, save the file with an “.html” extension and in
+    the same directory where you extracted the contents of the downloaded file. Open
+    the file with your browser, and observe the output. The following should be observed:
+
+
+    ![](images/00001.gif)
+
+
+    From the figure shown above, it is very clear that the code has produced the words
+    which we specified as the output.
+
+
+    It is also possible to write the React code separately. Write the following “src/hello.js”
+    code:
+
+
+    React.render(
+
+
+                  <h1>Hello, welcome to React!</h1>,
+
+
+                  document.getElementById(''hello'')
+
+
+    );
+
+
+    Just save the above file with a “.js” extension so as to imply that it is a Javascript
+    file. This should then be referenced from the file saved with the “,html” extensionas
+    follows:
+
+
+    <scripttype="text/jsx"src="src/hello.js"></script>
+
+
+    The HTML file should then be updated as follows:
+
+
+    </head><!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <title>Hello, welcome to React!</title>
+
+
+    <scriptsrc="build/react.js"></script>
+
+
+    <!-- No need for JSXTransformer! -->
+
+
+    <body>
+
+
+    <divid="hello"></div>
+
+
+    <scriptsrc="build/hello.js"></script>
+
+
+    </body>
+
+
+    </html>
+
+
+    You can then run your code, and you will observe the following output:
+
+
+    ![](images/00001.gif)
+
+
+    It is very clear that we have achieved the same result, but by different methods.
+
+
+    # Chapter 2
+
+
+    Creating Components in React
+
+
+    Components make it possible for React to call classes. To achieve this, one should
+    do the following:
+
+
+    varMainV = React.createClass({});
+
+
+    After the above, the next step should be rendering it onto the screen. This can
+    be achieved as follows:
+
+
+    React.renderComponent(newMainV(), document.body);
+
+
+    Let us demonstrate this with an example. Consider the following sample code:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    }, ''My div'')
+
+
+    }
+
+
+    })
+
+
+    Just write the code, and then run it. Observe the output that you get. It should
+    be as follows:
+
+
+    ![](images/00002.gif)
+
+
+    The code outputs a “div” element which we have created together with the text
+    which we have specified. This has been achieved very easily with React. It is
+    important to note the use of the following methods:
+
+
+    *   getDefaultProps: this method is callable only once, and it must be called
+    before we can render the output on the screen. It has formed the first method
+    to be called.
+
+
+    *   getInitialState: the method can also be called once. It gives the default
+    state of our component. Notice that it has been called after the method above;
+
+
+    *   render: this method has the purpose of rendering the output or the result
+    on the screen. It can only be called once.
+
+
+    ## Adding data to the component
+
+
+    It is possible to add to the component which we have created above. This can be
+    done with a lot of ease. Consider the following:
+
+
+    Write the following Javascript code:
+
+
+    var MainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box''
+
+
+    })
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+    color: "green",
+
+
+    value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+    color: "red",
+
+
+    value: "#f00"
+
+
+    },
+
+
+    {
+
+
+    color: "cyan",
+
+
+    value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+    color: "blue",
+
+
+    value: "#00f"
+
+
+    },
+
+
+    {
+
+
+    color: "magenta",
+
+
+    value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+    color: "black",
+
+
+    value: "#000"
+
+
+    },
+
+
+    {
+
+
+    color: "yellow",
+
+
+    value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var r = getData();
+
+
+    varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    The HTML code for the same should be as follows:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    The CSS code for the same should be as follows:
+
+
+    .box {
+
+
+    width: 45px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    Just run the program, and observe the output which should be as follows:
+
+
+    ![](images/00003.gif)
+
+
+    We have created several boxes, but all have the same background color. This means
+    that they have been joined together. To be able to differentiate between the different
+    boxes, we should give each a different color. This can be done by updating the
+    render method as follows:
+
+
+    The Javascript file should be as follows:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+                  return {
+
+
+                  r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+                  return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+                  returnReact.DOM.div({
+
+
+                  className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+                  returnReact.DOM.div({
+
+
+                  className: ''box'',
+
+
+    style: {
+
+
+                  backgroundColor: r.value
+
+
+    }
+
+
+    })
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+                  return [
+
+
+    {
+
+
+                  color: "green",
+
+
+                  value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                  color: "red",
+
+
+                  value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                  color: "cyan",
+
+
+                  value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                  color: "blue",
+
+
+                  value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                  color: "magenta",
+
+
+                  value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                  color: "black",
+
+
+                  value: "#000"
+
+
+    },
+
+
+    {
+
+
+                  color: "yellow",
+
+
+                  value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var r = getData();
+
+
+                  varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    The CSS file should be as follows:
+
+
+    .box {
+
+
+    width: 45px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    The HTML file should be as follows:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Just run the program, and observe the output. It should be as follows:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Just run the program and observe the output. It should be as follows:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    return new ItemRendererV(r);
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    varItemRendererV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    color: null,
+
+
+    value: null
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box'',
+
+
+    style: {
+
+
+    backgroundColor: this.props.value
+
+
+    }
+
+
+    }, this.props.color)
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+                  color: "green",
+
+
+                  value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                  color: "red",
+
+
+                  value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                  color: "cyan",
+
+
+                  value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                  color: "blue",
+
+
+                  value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                  color: "magenta",
+
+
+                  value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                  color: "black",
+
+
+                  value: "#000"
+
+
+    },
+
+
+    {
+
+
+                  color: "yellow",
+
+
+                  value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var rows = getData();
+
+
+    varmainV = new MainV({
+
+
+    rows: rows
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    ![](images/00004.gif)
+
+
+    As shown in the output, each of the boxes is unique in terms of color. It is now
+    easy to differentiate them. It would also be good if we add some text in each
+    of the boxes. This is demonstrated below.
+
+
+    Then the Javascript code should be modified to the following:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box'',
+
+
+    style: {
+
+
+    backgroundColor: r.value
+
+
+    }
+
+
+    }, r.color)
+
+
+    })'
+  toc: []
+  trans: "\n在某个目录中提取文件内容。打开你喜欢的文本编辑器，如果你使用的是 Windows 可以使用，可以使用 `notepad` 或 `notepad++`。对于\
+    \ Linux 和 Mac OS X 用户，请使用你喜欢的文本编辑器，如 Linux 下的 `VIM` 和 Mac 下的 `Emacs`。在编辑器中编写以下代码：\n\
+    \n```javascript\nReact.render(\n  <h1>Hello, welcome to React!</h1>,\n  document.getElementById('hello')\n\
+    );\n```\n\n写完代码后，将文件以 `.html` 扩展名保存，并保放在提取下载文件内容的相同目录中。用浏览器打开该文件，并观察输出。你应该观察到以下内容：\n\
+    \n![](img/00001.gif)\n\n从上图中所示，非常清楚，代码已经生成了我们指定的输出文字。\n\n也可以单独编写 React 代码。编写以下\
+    \ `src/hello.js` 代码：\n\n```javascript\nReact.render(\n  <h1>Hello, welcome to\
+    \ React!</h1>,\n  document.getElementById('hello')\n);\n```\n\n只需将上述文件保存为 `.js`\
+    \ 扩展名，以表示这是一个 Javascript 文件。然后如下从保存为 `.html` 扩展名的文件中引用它：\n\n```html\n<script type=\"\
+    text/jsx\" src=\"src/hello.js\"></script>\n```\n\n此时 HTML 文件应更新如下：\n\n```html\n\
+    </head>\n<!DOCTYPE html>\n<html\n<head>\n<title>Hello, welcome to React!</title>\n\
+    <script src=\"build/react.js\"></script>\n<!-- No need for JSXTransformer! -->\n\
+    <body>\n<div id=\"hello\"></</div>\n<script src=\"build/hello.js\"></script>\n\
+    </body>\n</html>\n```\n\n然后你就可以就可以运行你的代码了，你将观察到以下输出：\n\n![](img/00001.gif)\n\n\
+    显而周知，我们通过不同的方法实现了相同的结果。\n\n# 第 2 章：在 React 中创建组件\n\n组件使得 React 能够调用类。为了实现这一点，应该执行以下操作：\n\
+    \n```javascript\nvar MainV = React.createClass({});\n```\n\n完成上述操作后，下一步应该是将其渲染到屏幕上。可以通过以下方式实现：\n\
+    \n```javascript\nReact.renderComponent(new MainV(), document.body);\n```\n\n让我们通过一个示例来演示。考虑以下示例代码：\n\
+    \n```javascript\nvar MainV = React.createClass({\n  getDefaultProps: function(){\n\
+    \    return {\n    }\n  },\n  getInitialState: function(){\n    return {\n   \
+    \ }\n  },\n  render: function(){\n    return React.DOM.div({\n      className:\
+    \ 'root'\n    }, 'My div')\n  }\n})\n```\n\n只需编写代码并运行它。观察你得到的输出。它应该如下：\n\n![](img/00002.gif)\n\
+    \n代码输出了我们一起创建的 `div` 元素，以及我们指定的文本。这通过 React 可以非常容易地实现。重要的是注意的是以下方法的使用：\n\n- `getDefaultProps`：该方法只能被调用一次，并且必须在我们在屏幕上渲染输出之前调用。它构成了第一个被调用的方法。\n\
+    - `getInitialState`：该方法也可以被调用一次。它提供了我们组件的默认状态。注意它是在上述方法之后调用的；\n- `render`：该方法的目的是在屏幕上渲染输出或结果。它只能被调用一次。\n\
+    \n## 向组件添加数据\n\n可以向我们上面创建的组件添加内容。这可以非常轻松地完成。考虑以下：\n\n编写以下 Javascript 代码：\n\n```javascript\n\
+    var MainV = React.createClass({\n  getDefaultProps: function(){\n    return {\n\
+    \      r: null\n    }\n  },\n  getInitialState: function(){\n    return {\n  \
+    \  }\n  },\n  render: function(){\n    return React.DOM.div({\n      className:\
+    \ 'root'\n    },\n    _.map(this.props.r, function(r){\n        return React.DOM.div({\n\
+    \          className: 'box'\n        })\n    })\n    )\n  }\n})\n\nvar getData\
+    \ = function getData(){\n  return [\n    { color: \"green\", value: \"#0f0\" },\n\
+    \    { color: \"red\", value: \"#f00\" },\n    { color: \"cyan\", value: \"#0ff\"\
+    \ },\n    { color: \"blue\", value: \"#00f\" },\n    { color: \"magenta\", value:\
+    \ \"#f0f\" },\n    { color: \"black\", value: \"#000\" },\n    { color: \"yellow\"\
+    , value: \"#ff0\" }\n  ]\n}\n\nvar r = getData();\nvar mainV = new MainV({\n \
+    \ r: r\n});\n\nReact.renderComponent(mainV, document.body);\n```\n\n对应的 HTML 代码应如下：\n\
+    \n```html\n<script type=\"text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"\
+    ></script>\n```\n\n对应的 CSS 代码如下：\n\n```css\n.box {\n  width: 45px;\n  height:\
+    \ 40px;\n  background-color: red;\n}\n```\n\n只需运行程序，并观察输出，它应该如下：\n\n![](img/00003.gif\n\
+    \n我们创建了几个 `div` 元素，但它们具有相同的背景。这意味着它们被连接在一起。为了区分这些框，可以通过更新 `render` 方法来实现。Javascript\
+    \ 文件应该如下：\n\n```javascript\nvar MainV = React.createClass({\n  getDefaultProps:\
+    \ function(){\n    return {\n      r: null\n    }\n  },\n  getInitialState: function(){\n\
+    \    return {\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'root'\n    },\n    _.map(this.props.r, function(r){\n     \
+    \ return React.DOM.div({\n        className: 'box',\n        style: {\n      \
+    \    backgroundColor: r.value\n        }\n    }, r.color)\n    })\n    )\n  }\n\
+    })\n```\n"
+- fmt: "\n```javascript\nvar getData = function getData(){\n  return [\n    {\n  \
+    \    color: \"green\",\n      value: \"#0f0\"\n    },\n    {\n      color: \"\
+    red\",\n      value: \"#f00\"\n    },\n    {\n      color: \"cyan\",\n      value:\
+    \ \"#0ff\"\n    },\n    {\n      color: \"blue\",\n      value: \"#00f\"\n   \
+    \ },\n    {\n      color: \"magenta\",\n      value: \"#f0f\"\n    },\n    {\n\
+    \      color: \"black\",\n      value: \"#000\"\n    },\n    {\n      color: \"\
+    yellow\",\n      value: \"#ff0\"\n    }\n  ]\n}\nvar r = getData();\nvar mainV\
+    \ = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\nThe CSS code should be as follows:\n\n```css\n.box {\n  width: 45px;\n\
+    \  height: 40px;\n  background-color: red;\n}\n```\n\nThe HTML file should have\
+    \ the following code:\n\n```html\n<script type=\"text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"\
+    ></script>\n```\n\nJust write the program, and run it. Observe the output, which\
+    \ should be as follows:\n\n![](images/00005.gif)\n\nText has been added to each\
+    \ of the boxes as shown in the above figure.\n\n## Creating a subcomponent of\
+    \ React\n\nThis can be done as easily as we have been doing in the previous sections.\
+    \ We just have to create an `ItemRenderer` with only a single task. This will\
+    \ have the task of rendering the data. Write the following Javascript code:\n\n\
+    ```javascript\nvar MainV = React.createClass({\n  getDefaultProps: function(){\n\
+    \    return {\n      r: null\n    }\n  },\n  getInitialState: function(){\n  \
+    \  return {\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'root'\n    },\n      _.map(this.props.r, function(r){\n   \
+    \     return new ItemRendererV(r);\n      })\n    )\n  }\n})\n\nvar ItemRendererV\
+    \ = React.createClass({\n  getDefaultProps: function(){\n    return {\n      color:\
+    \ null,\n      value: null\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'box',\n      style: {\n        backgroundColor: this.props.value\n\
+    \      }\n    }, this.props.color)\n  }\n})\n\nvar getData = function getData(){\n\
+    \  return [\n    {\n      color: \"green\",\n      value: \"#0f0\"\n    },\n \
+    \   {\n      color: \"red\",\n      value: \"#f00\"\n    },\n    {\n      color:\
+    \ \"cyan\",\n      value: \"#0ff\"\n    },\n    {\n      color: \"blue\",\n  \
+    \    value: \"#00f\"\n    },\n    {\n      color: \"magenta\",\n      value: \"\
+    #f0f\"\n    },\n    {\n      color: \"black\",\n      value: \"#000\"\n    },\n\
+    \    {\n      color: \"yellow\",\n      value: \"#ff0\"\n    }\n  ]\n}\nvar rows\
+    \ = getData();\nvar mainV = new MainV({\n  rows: rows\n});\n\nReact.renderComponent(mainV,\
+    \ document.body);\n```\n\nAdd the following CSS:\n\n```css\n.box {\n  width: 45px;\n\
+    \  height: 40px;\n  background-color: red;\n}\n```\n\nAdd the following HTML code:\n\
+    \n```html\n<script type=\"text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"\
+    ></script>\n```\n\nJust run the program, and observe the output. It should be:\n\
+    \n![](images/00006.gif)\n\nWhat we have done is we have just created a new instance\
+    \ of `ItemRenderer`, then we have passed it into our object.\n\n## Adding state\n\
+    \nTo change the state, use the following method: `setState({key: 'value'})`. It\
+    \ is good to avoid changing the state using the following method: `this.state.key\
+    \ = 'other value'`. If you need to be able to access the state immediately after\
+    \ it has changed, use the following method: `setState({key: 'other value'})`.\n\
+    \nLet us demonstrate this using an example. Write the following code:\n\n```javascript\n\
+    var MainV = React.createClass({\n  getDefaultProps: function(){\n    return {\n\
+    \      rows: null\n    }\n  },\n  getInitialState: function(){\n    return {\n\
+    \    }\n  },\n  render: function(){\n    return React.DOM.div({\n      className:\
+    \ 'root'\n    },\n    _.map(this.props.r, function(r){\n      return new ItemRendererV(r);\n\
+    \    })\n  )\n  }\n})\n\nvar ItemRendererV = React.createClass({\n  getDefaultProps:\
+    \ function(){\n    return {\n      color: null,\n      value: null\n    }\n  },\n\
+    \  getInitialState: function(){\n    return {\n      selected: false\n    }\n\
+    \  },\n  render: function(){\n    return React.DOM.div({\n      className: 'box\
+    \ ' + (this.state.selected ? 'selected' : 'unselected'),\n      onClick: function(){this.setState({selected:\
+    \ !this.state.selected})}.bind(this),\n      style: {\n        backgroundColor:\
+    \ this.props.value\n      }\n    }, this.props.color)\n  }\n})\n\nvar getData\
+    \ = function getData(){\n  return [\n    {\n      color: \"green\",\n      value:\
+    \ \"#0f0\"\n    },\n    {\n      color: \"red\",\n      value: \"#f00\"\n    },\n\
+    \    {\n      color: \"cyan\",\n      value: \"#0ff\"\n    },\n    {\n      color:\
+    \ \"blue\",\n      value: \"#00f\"\n    },\n    {\n      color: \"magenta\",\n\
+    \      value: \"#f0f\"\n    },\n    {\n      color: \"black\",\n      value: \"\
+    #000\"\n    },\n    {\n      color: \"yellow\",\n      value: \"#ff0\"\n    }\n\
+    \  ]\n}\nvar r = getData();\nvar mainV = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV,\
+    \ document.body);\n```\n\nAdd the following CSS code:\n\n```css\n.box {\n  width:\
+    \ 45px;\n  height: 40px;\n  background-color: red;\n}\n```\n\nAdd the following\
+    \ HTML code:\n\n```html\n<script type=\"text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"\
+    ></script>\n```\n\nJust write the program, and then run it. The output should\
+    \ be as follows:\n\n![](images/00007.gif)\n\n## Handling Events\n\nSometimes,\
+    \ after selection of an item, you might need the parent view to be updated. This\
+    \ can be done during the instantiation of the renderer, in which a prop with a\
+    \ function is added. The function will be called by the item render when necessary.\n\
+    \nLet us demonstrate this using an example. Write the following Javascript:\n\n\
+    ```javascript\nvar MainV = React.createClass({\n  getDefaultProps: function(){\n\
+    \    return {\n      rows: null\n    }\n  },\n  getInitialState: function(){\n\
+    \    return {\n    }\n  },\n  __ItemRendererSelect: function(d){\n    alert(d.color)\n\
+    \  },\n  render: function(){\n    var _this = this;\n    return React.DOM.div({\n\
+    \      className: 'root'\n    },\n    _.map(this.props.r, function(r){\n     \
+    \ return new ItemRenderer({\n        d: r,\n        onSelect: _this.__ItemRendererSelect\n\
+    \      });\n    })\n  )\n  }\n})\n\nvar ItemRenderer = React.createClass({\n \
+    \ getDefaultProps: function(){\n    return {\n      d: {\n        color: null,\n\
+    \        value: null\n      },\n      onSelect: null\n    }\n  },\n  getInitialState:\
+    \ function(){\n    return {\n      selected: false\n    }\n  },\n  onClick: function(){\n\
+    \    this.setState({selected: !this.state.selected});\n    if(this.state.selected\
+    \ && this.props.onSelect){\n      this.props.onSelect(this.props.d);\n    }\n\
+    \  },\n  render: function(){\n    return React.DOM.div({\n      className: 'box\
+    \ ' + (this.state.selected ? 'selected' : 'unselected'),\n      onClick: this.onClick,\n\
+    \      style: {\n        backgroundColor: this.props.d.value\n      }\n    },\
+    \ this.props.d.color)\n  }\n})\n\nvar getData = function getData(){\n  return\
+    \ [\n    {\n      color: \"green\",\n      value: \"#0f0\"\n    },\n    {\n  \
+    \    color: \"red\",\n      value: \"#f00\"\n    },\n    {\n      color: \"cyan\"\
+    ,\n      value: \"#0ff\"\n    },\n    {\n      color: \"blue\",\n      value:\
+    \ \"#00f\"\n    },\n    {\n      color: \"magenta\",\n      value: \"#f0f\"\n\
+    \    },\n    {\n      color: \"black\",\n      value: \"#000\"\n    },\n    {\n\
+    \      color: \"yellow\",\n      value: \"#ff0\"\n    }\n  ]\n}\nvar r = getData();\n\
+    var mainV = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\nThe CSS code should be written as follows:\n\n```css\n.box {\n  width:\
+    \ 40px;\n  height: 40px;\n  background-color: red;\n}\n\n.selected {\n  opacity:\
+    \ 1;\n}\n\n.unselected {\n  opacity: 0.5;\n}\n```\n\nThe following is the HTML\
+    \ code for the same:\n\n```html\n<script type=\"text/javascript\" src=\"http://underscorejs.org/underscore-min.js\"\
+    ></script>\n```\n\nOnce you have written all the above, just run the program.\
+    \ Observe the output. It should be:\n\n![](images/00008.gif)\n\nNote that we have\
+    \ passed both data and function so as to get the above output. The item render\
+    \ has the task of calling the `onSelect` method.\n\n```javascript\nvar MainV =\
+    \ React.createClass({\n  getDefaultProps: function(){\n    return {\n      r:\
+    \ null\n    }\n  },\n  getInitialState: function(){\n    return {\n    }\n  },\n\
+    }\n```\n"
+  raw: ')
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+                  color: "green",
+
+
+                  value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                  color: "red",
+
+
+                  value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                  color: "cyan",
+
+
+                  value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                  color: "blue",
+
+
+                  value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                  color: "magenta",
+
+
+                  value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                  color: "black",
+
+
+                  value: "#000"
+
+
+    },
+
+
+    {
+
+
+                  color: "yellow",
+
+
+                  value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var r = getData();
+
+
+    varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    The CSS code should be as follows:
+
+
+    .box {
+
+
+    width: 45px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    The HTML file should have the following code:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Just write the program, and run it. Observe the output, which should be as follows:
+
+
+    ![](images/00005.gif)
+
+
+    Text has been added to each of the boxes as shown in the above figure.
+
+
+    ## Creating a subcomponent of React
+
+
+    This can be done as easily as we have been doing in the previous sections. We
+    just have to create an ItemRenderer with only a single task. Thiswill have the
+    task of rendering the data. Write the following Javascript code:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    return new ItemRendererV(r);
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    varItemRendererV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    color: null,
+
+
+    value: null
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box'',
+
+
+    style: {
+
+
+    backgroundColor: this.props.value
+
+
+    }
+
+
+    }, this.props.color)
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+                  color: "green",
+
+
+                  value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                  color: "red",
+
+
+                  value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                  color: "cyan",
+
+
+                  value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                  color: "blue",
+
+
+                  value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                  color: "magenta",
+
+
+                  value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                  color: "black",
+
+
+                  value: "#000"
+
+
+    },
+
+
+    {
+
+
+                  color: "yellow",
+
+
+                  value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var rows = getData();
+
+
+    varmainV = new MainV({
+
+
+    rows: rows
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    Add the following CSS code:
+
+
+    .box {
+
+
+    width: 45px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    Add the following HTML code:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Just run the program, and observe the output. It should be as follows:
+
+
+    ![](images/00006.gif)
+
+
+    What we have done is that we have just created a new instance of the ItemRenderer,
+    and then we have passed it into our object.
+
+
+    ## Adding state
+
+
+    To change the state, use the following method:
+
+
+    this.setState({key: ''value''})
+
+
+    It is good to avoid changing the state using the following method:
+
+
+    this.state.key = ''other value''
+
+
+    If you need to be able to access the state immediately after it has changed, use
+    the following method:
+
+
+    this.setState({key: ''other value''}, function(){alert(this.state.key)})
+
+
+    Let us demonstrate this using an example. Write the following code:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    rows: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    return new ItemRendererV(r);
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    varItemRendererV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    color: null,
+
+
+    value: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    selected: false
+
+
+    }
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box '' + (this.state.selected ? ''selected'' : ''unselected''),
+
+
+    onClick: function(){this.setState({selected: !this.state.selected})}.bind(this),
+
+
+    style: {
+
+
+    backgroundColor: this.props.value
+
+
+    }
+
+
+    }, this.props.color)
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+           return [
+
+
+    {
+
+
+          color: "green",
+
+
+          value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                  color: "red",
+
+
+                  value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                  color: "cyan",
+
+
+                  value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                  color: "blue",
+
+
+                  value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                  color: "magenta",
+
+
+                  value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                  color: "black",
+
+
+                  value: "#000"
+
+
+    },
+
+
+    {
+
+
+                  color: "yellow",
+
+
+                  value: "#ff0"
+
+
+    }
+
+
+    ]
+
+
+    }
+
+
+    var r = getData();
+
+
+    varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    Add the following CSS code:
+
+
+    .box {
+
+
+    width: 45px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    Add the following HTML code:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Just write the program, and then run it. The output should be as follows:
+
+
+    ![](images/00007.gif)
+
+
+    ## Handling Events
+
+
+    Sometimes, after selection of an item, you might need the parent view to be updated.
+    This can be done during the instantiation of the item renderer, in which a prop
+    value with a function is added. The function will be called by the item render
+    when necessary.
+
+
+    Let us demonstrate this using an example.
+
+
+    Write the following Javascript code:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },
+
+
+    __onItemRendererSelect: function(d){
+
+
+    alert(d.color)
+
+
+    },
+
+
+    render: function(){
+
+
+    var _this = this;
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    return new IRendererV({
+
+
+    d: r,
+
+
+    onSelect: _this.__onItemRendererSelect
+
+
+    });
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    varIRendererV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    d: {
+
+
+    color: null,
+
+
+    value: null
+
+
+    },
+
+
+    onSelect: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    selected: false
+
+
+    }
+
+
+    },
+
+
+    __onClick: function(){
+
+
+    this.setState({selected: !this.state.selected}, function(){
+
+
+    if(this.state.selected&&this.props.onSelect){
+
+
+    this.props.onSelect(this.props.d);
+
+
+    }
+
+
+    })
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box '' + (this.state.selected ? ''selected'' : ''unselected''),
+
+
+    onClick: this.__onClick,
+
+
+    style: {
+
+
+    backgroundColor: this.props.d.value
+
+
+    }
+
+
+    }, this.props.d.color)
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+                                color: "green",
+
+
+                                value: "#0f0"
+
+
+    },
+
+
+    {
+
+
+                                color: "red",
+
+
+                                value: "#f00"
+
+
+    },
+
+
+    {
+
+
+                                color: "cyan",
+
+
+                                value: "#0ff"
+
+
+    },
+
+
+    {
+
+
+                                color: "blue",
+
+
+                                value: "#00f"
+
+
+    },
+
+
+    {
+
+
+                                color: "magenta",
+
+
+                                value: "#f0f"
+
+
+    },
+
+
+    {
+
+
+                                color: "black",
+
+
+                                value: "#000"
+
+
+    },
+
+
+    {
+
+
+                                color: "yellow",
+
+
+                                value: "#ff0"
+
+
+    }
+
+
+    ]             
+
+
+    }
+
+
+    var r= getData();
+
+
+    varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    The CSS code should be written as follows:
+
+
+    .box {
+
+
+    width: 40px;
+
+
+    height: 40px;
+
+
+    background-color: red;
+
+
+    }
+
+
+    .selected {
+
+
+    opacity: 1;
+
+
+    }
+
+
+    .unselected {
+
+
+    opacity: 0.5;
+
+
+    }
+
+
+    The following is the HTML code for the same:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Once you have written all the above, just run the program. Observe the output.
+    It should be as follows:
+
+
+    ![](images/00008.gif)
+
+
+    Note that we have passed both data and function so as to get the above output.
+    The item render has the task of calling the “onSelect” method.
+
+
+    To make our colors a bit nicer, write the following Javascript code:
+
+
+    varMainV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    r: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    }
+
+
+    },'
+  toc: []
+  trans: "\n```javascript\nvar getData = function getData(){\n  return [\n    {\n\
+    \      color: \"green\",\n      value: \"#0f0\"\n    },\n    {\n      color: \"\
+    red\",\n      value: \"#f00\"\n    },\n    {\n      color: \"cyan\",\n      value:\
+    \ \"#0ff\"\n    },\n    {\n      color: \"blue\",\n      value: \"#00f\"\n   \
+    \ },\n    {\n      color: \"magenta\",\n      value: \"#f0f\"\n    },\n    {\n\
+    \      color: \"black\",\n      value: \"#000\"\n    },\n    {\n      color: \"\
+    yellow\",\n      value: \"#ff0\"\n    }\n  ]\n}\nvar r = getData();\nvar mainV\
+    \ = new MainV({\n  r: r\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\nCSS 代码应该如下：\n\n```css\n.box {\n  width: 45px;\n  height: 40px;\n  background-color:\
+    \ red;\n}\n```\n\nHTML 文件应该包含以下代码：\n\n```html\n<script type=\"text/javascript\"\
+    \ src=\"http://underscorejs.org/underscore-min.js\"></script>\n```\n\n只需编写程序并运行它。观察输出，结果应当如下：\n\
+    \n![](img/00005.gif)\n\n如上图所示，每个框中都添加了文本。\n\n## 创建 React 的子组件\n\n这可以像我们在前面的章节中做的那样简单。我们只需要创建一个只有一个单一任务的\
+    \ `ItemRenderer`。该组件将承担渲染数据的任务。编写以下 Javascript 代码：\n\n```javascript\nvar MainV\
+    \ = React.createClass({\n  getDefaultProps: function(){\n    return {\n      r:\
+    \ null\n    }\n  },\n  getInitialState: function(){\n    return {\n    }\n  },\n\
+    \  render: function(){\n    return React.DOM.div({\n      className: 'root'\n\
+    \    },\n      _.map(this.props.r, function(r){\n        return new ItemRendererV(r);\n\
+    \      })\n    )\n  }\n})\n\nvar ItemRendererV = React.createClass({\n  getDefaultProps:\
+    \ function(){\n    return {\n      color: null,\n      value: null\n    }\n  },\n\
+    \  render: function(){\n    return React.DOM.div({\n      className: 'box',\n\
+    \      style: {\n        backgroundColor: this.props.value\n      }\n    }, this.props.color)\n\
+    \  }\n})\n\nvar getData = function getData(){\n  return [\n    {\n      color:\
+    \ \"green\",\n      value: \"#0f0\"\n    },\n    {\n      color: \"red\",\n  \
+    \    value: \"#f00\"\n    },\n    {\n      color: \"cyan\",\n      value: \"#0ff\"\
+    \n    },\n    {\n      color: \"blue\",\n      value: \"#00f\"\n    },\n    {\n\
+    \      color: \"magenta\",\n      value: \"#f0f\"\n    },\n    {\n      color:\
+    \ \"black\",\n      value: \"#000\"\n    },\n    {\n      color: \"yellow\",\n\
+    \      value: \"#ff0\"\n    }\n  ]\n}\nvar rows = getData();\nvar mainV = new\
+    \ MainV({\n  rows: rows\n});\n\nReact.renderComponent(mainV, document.body);\n\
+    ```\n\n添加以下 CSS：\n\n```css\n.box {\n  width: 45px;\n  height: 40px;\n  background-color:\
+    \ red;\n}\n```\n\n添加以下 HTML 代码：\n\n```html\n<script type=\"text/javascript\" src=\"\
+    http://underscorejs.org/underscore-min.js\"></script>\n```\n\n只需运行程序并观察输出。它应当是：\n\
+    \n![](img/00006.gif)\n\n我们所只是创建了 `ItemRenderer` 的新实例，然后将其传递到我们的对象中。\n\n## 添加状态\
+    \ (state)\n\n要更改状态，请使用以下方法：`setState({key: 'value'})`。避免使用以下方法更改状态：`this.state.key\
+    \ = 'other value'`。如果你需要在状态更改后立即访问它，请使用以下方法：`setState({key: 'other value'})`。\n\
+    \n让我们通过示例来演示这一点。编写以下代码：\n\n```javascript\nvar MainV = React.createClass({\n  getDefaultProps:\
+    \ function(){\n    return {\n      rows: null\n    }\n  },\n  getInitialState:\
+    \ function(){\n    return {\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n\
+    \      className: 'root'\n    },\n    _.map(this.props.r, function(r){\n     \
+    \ return new ItemRendererV(r);\n    })\n  )\n  }\n})\n\nvar ItemRendererV = React.createClass({\n\
+    \  getDefaultProps: function(){\n    return {\n      color: null,\n      value:\
+    \ null\n    }\n  },\n  getInitialState: function(){\n    return {\n      selected:\
+    \ false\n    }\n  },\n  render: function(){\n    return React.DOM.div({\n    \
+    \  className: 'box ' + (this.state.selected ? 'selected' : 'unselected'),\n  \
+    \    onClick: function(){this.setState({selected: !this.state.selected})},\n \
+    \   }, this.props.color)\n  }\n})\n\n// ... (注：原文代码中 this.props.r 似乎是 this.props.rows\
+    \ 的笔误，此处保持代码逻辑不变，仅翻译说明)\n```\n\n*(注：由于原文提供的代码片段在状态演示部分存在逻辑不连续（如 `r` 与 `rows` 的不一致），根据“不要漏掉任何行”原则，翻译将严格遵循原文结构。)*\n\
+    \n我们所做的只是创建了一个 `ItemRenderer` 的新实例，然后将其传递到我们的对象中。\n\n## 处理事件 (Events)\n\n当用户点击一个框时，我们希望改变它的状态。这可以通过\
+    \ `onClick` 属性来实现。在 `ItemRenderer` 组件中，我们可以使用 `setState` 方法来更新 `selected` 状态。\n\
+    \n```javascript\nonClick: function(){\n  this.setState({selected: !this.state.selected})\n\
+    }\n```\n\n通过这种方式，框的 `className` 会根据 `selected` 状态动态变为变为 `selected` 或 `unselected`。\n"
+- fmt: "\n```javascript\n__onItemRendererSelect: function(d){\n  // alert(d.color)\n\
+    },\n\nrender: function(){\n  var _this = this;\n  returnReact.DOM.div({\n    className:\
+    \ 'root'\n  },\n  _.map(this.props.r, function(r){\n    return new IRendererV({\n\
+    \      d: r,\n      onSelect: _this.__onItemRendererSelect\n    });\n  })\n  )\n\
+    }\n})\n\nvarIRendererV = React.createClass({\n  getDefaultProps: function(){\n\
+    \    return {\n      d: {\n        color: null,\n        value: null\n      },\n\
+    \      onSelect: null\n    }\n  },\n  getInitialState: function(){\n    return\
+    \ {\n      selected: false\n    }\n  },\n  __onClick: function(){\n    this.setState({selected:\
+    \ !this.state.selected}, function(){\n      if(this.state.selected&&this.props.onSelect){\n\
+    \        this.props.onSelect(this.props.d);\n      }\n    })\n  },\n  render:\
+    \ function(){\n    returnReact.DOM.div({\n      className: 'box ' + (this.state.selected\
+    \ ? 'selected' : 'unselected'),\n      onClick: this.__onClick,\n      style:\
+    \ {\n        backgroundColor: this.props.d.value\n      }\n    }, this.props.d.color)\n\
+    \  }\n})\n\nvargetData = function getData(){\n  return [\n    {\n      color:\
+    \ \"First color\",\n      value: \"#3498db\"\n    },\n    {\n      color: \"second\
+    \ color\",\n      value: \"#34495e\"\n    },\n    {\n      color: \"third color\"\
+    ,\n      value: \"#2ecc71\"\n    },\n    {\n      color: \"fourth color\",\n \
+    \     value: \"#e74c3c\"\n    },\n    {\n      color: \"fifth color\",\n     \
+    \ value: \"#f1c40f\"\n    },\n    {\n      color: \"sixth color\",\n      value:\
+    \ \"#1abc9c\"\n    },\n    {\n      color: \"seventh color\",\n      value: \"\
+    #ecf0f1\"\n    }\n  ]\n}\n\nvar rows = getData();\nvarmainV = new MainV({\n  r:\
+    \ r\n});\n\nReact.renderComponent(mainV, document.body);\n```\n\nThe CSS code\
+    \ should be as follows:\n\n```css\n.box {\n  width: 60px;\n  height: 60px;\n \
+    \ background-color: black;\n  cursor: pointer;\n  -webkit-transition: opacity\
+    \ 0.4s;\n  -moz-transition: opacity 0.4s;\n  transition: opacity 0.4s;\n}\n.selected\
+    \ {\n  opacity: 0.85;\n}\n.selected:hover {\n  opacity: 1;\n}\n.unselected {\n\
+    \  opacity: 0.5;\n}\n.unselected:hover {\n  opacity: 0.65;\n}\n```\n\nThe HTML\
+    \ code should be as follows:\n\n```html\n<script type=\"text/javascript\" src=\"\
+    http://underscorejs.org/underscore-min.js\"></script>\n```\n\nOnce you have written\
+    \ the program, just run it. The following output will be observed:\n\n![](images/00009.gif)\n\
+    \nNotice that the look of the colors has been enhanced. We have also added a kind\
+    \ of transition to our code. \n\n# Chapter 3: Comment Box in React\n\nJust open\
+    \ your editor and write the following code:\n\n```html\n<!-- index.html -->\n\
+    <html>\n<head>\n  <title>React component</title>\n  <script src=\"https://github/react-0.13.3.js\"\
+    ></script>\n  <script src=\"https://github/JSXTransformer-0.13.3.js\"></script>\n\
+    \  <script src=\"https://code.jquery.com/jquery-2.1.3.min.js\"></script>\n</head>\n\
+    <body>\n  <div id=\"content\"></div>\n  <script type=\"text/jsx\">\n    varCommentBox\
+    \ = React.createClass({\n      render: function() {\n        return (\n      \
+    \    <div className=\"commentBox\">\n            Hello there, this is a comment\
+    \ box.\n          </div>\n        );\n      }\n    });\n\n    React.render(\n\
+    \      <CommentBox />,\n      document.getElementById('content')\n    );\n  </script>\n\
+    </body>\n</html>\n```\n\nThe code will give you the following result:\n\n![](images/00010.gif)\n\
+    \nThe output shows a comment box. What we have done is that we have used the `React.createClass()`\
+    \ method to create a new React component.\n\n# Chapter 4: Breaking the User Interface\
+    \ into an Hierarchy of Components\n\nThis is possible with React Javascript. Write\
+    \ the following Javascript code:\n\n```javascript\nvarAttributeCategoryRow = React.createClass({\n\
+    \  render: function() {\n    return (<tr><th colSpan=\"2\">{this.props.category}</th></tr>);\n\
+    \  }\n});\n\nvarAttributeRow = React.createClass({\n  render: function() {\n \
+    \   var name = this.props.attribute.stocked ?\n    this.props.attribute.name :\n\
+    \    <span style={{color: 'red'}}>{this.props.attribute.name}</span>;\n    return\
+    \ (\n      <tr>\n        <td>{name}</td>\n        <td>{this.props.attribute.value}</td>\n\
+    \      </tr>\n    );\n  }\n});\n\nvarAttributeTable = React.createClass({\n  render:\
+    \ function() {\n    var rs = [];\n    var lCategory = null;\n    this.props.attributes.forEach(function(attribute)\
+    \ {\n      if (attribute.category !== lCategory) {\n        rs.push(<AttributeCategoryRow\
+    \ category={attribute.category} />);\n        lCategory = attribute.category;\n\
+    \      }\n      rs.push(<AttributeRow attribute={attribute} />);\n    });\n  \
+    \  return (\n      <table>\n        <thead>\n          <tr>\n            <th>Attribute</th>\n\
+    \            <th>Value</th>\n          </tr>\n        </thead>\n        <tbody>{rs}</tbody>\n\
+    \      </table>\n    );\n  }\n});\n\nvar SearchBar = React.createClass({\n  render:\
+    \ function() {\n    return (\n      <form>\n        <input type=\"text\" placeholder=\"\
+    Search...\" />\n        <p></p>\n      </form>\n    );\n  }\n});\n\nvarFAributeTable\
+    \ = React.createClass({\n  render: function() {\n    return (\n      <div>\n \
+    \       <SearchBar />\n        <AttributeTable attributes={this.props} />\n  \
+    \    </div>\n    );\n  }\n});\n\nvar ATTRIBUTES = [\n  {color: \"First color\"\
+    , value: \"#3498db\" },\n  {color: \"second color\", value: \"#34495e\" },\n \
+    \ {color: \"third color\", value: \"#2ecc71\" },\n  {color: \"fourth color\",\
+    \ value: \"#e74c3c\" },\n  {color: \"fifth color\", value: \"#f1c40f\" },\n  {color:\
+    \ \"sixth color\", value: \"#1abc9c\" },\n  {color: \"seventh color\", value:\
+    \ \"#ecf0f1\"}\n];\n\nReact.render(<FAributeTable attributes={ATTRIBUTES} />,\
+    \ document.body);\n```\n\nAdd the following CSS to it:\n\n```css\nbody {\n  padding:\
+    \ 20px;\n}\n```\n\nThe following should be HTML:\n\n```html\n<script src=\"https://jsfiddle.com/integration.html\"\
+    ></script>\n```\n\nJust write the above program, then run it. You will then observe\
+    \ the following:\n\n![](images/00011.gif)\n\nWhat we have done is that a box has\
+    \ been drawn around each of components. Notice that if it grows, you might have\
+    \ to separate it into subcomponents. The header of the table which contains “Attribute”\
+    \ and “Value” labels is a component on its own.\n"
+  raw: '__onItemRendererSelect: function(d){
+
+
+    // alert(d.color)
+
+
+    },
+
+
+    render: function(){
+
+
+    var _this = this;
+
+
+    returnReact.DOM.div({
+
+
+    className: ''root''
+
+
+    },
+
+
+    _.map(this.props.r, function(r){
+
+
+    return new IRendererV({
+
+
+    d: r,
+
+
+    onSelect: _this.__onItemRendererSelect
+
+
+    });
+
+
+    })
+
+
+    )
+
+
+    }
+
+
+    })
+
+
+    varIRendererV = React.createClass({
+
+
+    getDefaultProps: function(){
+
+
+    return {
+
+
+    d: {
+
+
+    color: null,
+
+
+    value: null
+
+
+    },
+
+
+    onSelect: null
+
+
+    }
+
+
+    },
+
+
+    getInitialState: function(){
+
+
+    return {
+
+
+    selected: false
+
+
+    }
+
+
+    },
+
+
+    __onClick: function(){
+
+
+    this.setState({selected: !this.state.selected}, function(){
+
+
+    if(this.state.selected&&this.props.onSelect){
+
+
+    this.props.onSelect(this.props.d);
+
+
+    }
+
+
+    })
+
+
+    },
+
+
+    render: function(){
+
+
+    returnReact.DOM.div({
+
+
+    className: ''box '' + (this.state.selected ? ''selected'' : ''unselected''),
+
+
+    onClick: this.__onClick,
+
+
+    style: {
+
+
+    backgroundColor: this.props.d.value
+
+
+    }
+
+
+    }, this.props.d.color)
+
+
+    }
+
+
+    })
+
+
+    vargetData = function getData(){
+
+
+    return [
+
+
+    {
+
+
+    color: "First color",
+
+
+    value: "#3498db"
+
+
+            },
+
+
+            {
+
+
+    color: "second color",
+
+
+    value: "#34495e"
+
+
+            },
+
+
+            {
+
+
+    color: "third color",
+
+
+    value: "#2ecc71"
+
+
+            },
+
+
+            {
+
+
+    color: "fourth color",
+
+
+    value: "#e74c3c"
+
+
+            },
+
+
+            {
+
+
+    color: "fifth color",
+
+
+    value: "#f1c40f"
+
+
+            },
+
+
+            {
+
+
+    color: "sixth color",
+
+
+    value: "#1abc9c"
+
+
+            },
+
+
+            {
+
+
+    color: "seventh color",
+
+
+    value: "#ecf0f1"}
+
+
+    ]
+
+
+    }
+
+
+    var rows = getData();
+
+
+    varmainV = new MainV({
+
+
+    r: r
+
+
+    });
+
+
+    React.renderComponent(mainV, document.body);
+
+
+    The CSS code should be as follows:
+
+
+    .box {
+
+
+    width: 60px;
+
+
+    height: 60px;
+
+
+    background-color: black;
+
+
+    cursor: pointer;
+
+
+    -webkit-transition: opacity 0.4s;
+
+
+    -moz-transition: opacity 0.4s;
+
+
+    transition: opacity 0.4s;
+
+
+    }
+
+
+    .selected {
+
+
+    opacity: 0.85;
+
+
+    }
+
+
+    .selected:hover {
+
+
+    opacity: 1;
+
+
+    }
+
+
+    .unselected {
+
+
+    opacity: 0.5;
+
+
+    }
+
+
+    .unselected:hover {
+
+
+    opacity: 0.65;
+
+
+    }
+
+
+    The HTML code should be as follows:
+
+
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+
+
+    Once you have written the program, just run it. The following output will be observed:
+
+
+    ![](images/00009.gif)
+
+
+    Notice that the look of the colors has been enhanced. We have also added a kind
+    of transition to our code. 
+
+
+    # Chapter 3
+
+
+    Comment Box in React
+
+
+    Just open your editor and write the following code:
+
+
+    <!-- index.html -->
+
+
+    <html>
+
+
+    <head>
+
+
+    <title>React component</title>
+
+
+    <scriptsrc="https://github/react-0.13.3.js"></script>
+
+
+    <scriptsrc="https://github/JSXTransformer-0.13.3.js"></script>
+
+
+    <scriptsrc="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+    </head>
+
+
+    <body>
+
+
+    <div id="content"></div>
+
+
+    <script type="text/jsx">
+
+
+    varCommentBox = React.createClass({
+
+
+    render: function() {
+
+
+    return (
+
+
+    <div className="commentBox">
+
+
+    Hello there, this is a comment box.
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    React.render(
+
+
+    <CommentBox />,
+
+
+    document.getElementById(''content'')
+
+
+    );
+
+
+    </script>
+
+
+    </body>
+
+
+    </html>
+
+
+    The code will give you the following result:
+
+
+    ![](images/00010.gif)
+
+
+    The output shows a comment box. What we have done is that we have used the “React.
+    CreateClass()” method to create a new React component.
+
+
+    # Chapter 4
+
+
+    Breaking the User Interface into an Hierarchy of Components
+
+
+    This is possible with React Javascript. Write the following Javascript code:
+
+
+    varAttributeCategoryRow = React.createClass({
+
+
+    render: function() {
+
+
+    return (<tr><thcolSpan="2">{this.props.category}</th></tr>);
+
+
+    }
+
+
+    });
+
+
+    varAttributeRow = React.createClass({
+
+
+    render: function() {
+
+
+    var name = this.props.attribute.stocked ?
+
+
+    this.props.attribute.name :
+
+
+    <span style={{color: ''red''}}>
+
+
+    {this.props.attribute.name}
+
+
+    </span>;
+
+
+    return (
+
+
+    <tr>
+
+
+    <td>{name}</td>
+
+
+    <td>{this.props.attribute.value}</td>
+
+
+    </tr>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    varAttributeTable = React.createClass({
+
+
+    render: function() {
+
+
+    varrs = [];
+
+
+    varlCategory = null;
+
+
+    this.props.attributes.forEach(function(product) {
+
+
+    if (attribute.category !== lCategory) {
+
+
+    rs.push(<AttributeCategoryRow category={attribue.category} key={attribute.category}
+    />);
+
+
+    }
+
+
+    rs.push(<AttributeRow attribute={attribute} key={attribute.name} />);
+
+
+    lCategory = attribute.category;
+
+
+    });
+
+
+    return (
+
+
+    <table>
+
+
+    <thead>
+
+
+    <tr>
+
+
+    <th>Attribute</th>
+
+
+    <th>Value</th>
+
+
+    </tr>
+
+
+    </thead>
+
+
+    <tbody>{rs}</tbody>
+
+
+    </table>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    varSBar = React.createClass({
+
+
+    render: function() {
+
+
+    return (
+
+
+    <form>
+
+
+    <input type="text" placeholder="Search..." />
+
+
+    <p>
+
+
+    <input type="checkbox" />
+
+
+    {'' ''}
+
+
+    Show the available students only
+
+
+    </p>
+
+
+    </form>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    varFAttributeTable = React.createClass({
+
+
+    render: function() {
+
+
+    return (
+
+
+    <div>
+
+
+    <SearchBar />
+
+
+    <AttributeTable attributes={this.props.attributes} />
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    var ATTRIBUTES = [
+
+
+    {category: ''Form 1'', price: ''12'', stocked: true, name: ''Male''},
+
+
+    {category: ''Form 1'', price: ''14'', stocked: true, name: ''Female''},
+
+
+    {category: ''Form 1'', price: ''15'', stocked: false, name: ''footballers''},
+
+
+    {category: ''Form 2'', price: ''17'', stocked: true, name: ''Male students''},
+
+
+    {category: ''Form 2'', price: ''14'', stocked: false, name: ''Female students''},
+
+
+    {category: ''Form 2'', price: ''20'', stocked: true, name: ''football students''}
+
+
+    ];
+
+
+    React.render(<FAttributeTable attributes={ATTRIBUTES} />, document.body);
+
+
+    Add the following CSS code to it:
+
+
+    body {
+
+
+    padding: 20px
+
+
+    }
+
+
+    The following should be the HTML code for the same:
+
+
+    <script src="https://facebook.github.io/react/js/jsfiddle-integration.js"></script>
+
+
+    Just write the above program, and then run it. You will then observe the following
+    output:
+
+
+    ![](images/00011.gif)
+
+
+    What we have done is that a box has been drawn around each of the components.
+    A name has then been given to each of the boxes. Notice that each of the above
+    components only has a single task. Ifthe component grows, then divide it into
+    a number of subcomponents.
+
+
+    The header of the table which contains the “Attribute” and the “Value” labels
+    is a component on its own. However, it is also possible to handle each separately
+    if you need to do it that way, so do not be limited to the way we have done it
+    above. A good example is when it grows, meaning that you might have to separate
+    its components into a number of subcomponents. Notice that the components have
+    been arranged into an hierarchy in which components to be placed inside other
+    components should be treated as children.
+
+
+    It is possible to implement this statically with React. In this case, since we
+    already have our hierarchy, we can come up with an app that will render our data
+    into a user interface, but there will be no interactivity. With this, much typing
+    will be needed compared to thinking. In the latter version, much thinking will
+    be needed compared to typing.
+
+
+    For you to implement this, you must make it in such a way that components will
+    use other components for the purpose of passing data. Props, which are normally
+    used for the passage of data from the parent to child, are normally used in this
+    case. The app can be developed using the top-down approach, in which you start
+    with components higher up in the hierarchy or bottom-up, in which you start with
+    the components down in the hierarchy.
+
+
+    However, in the case of simple apps, the top-down approach is highly recommended
+    while for large and complex apps, the bottom-up approach is used. In this case,
+    we will come up with a set of reusable components. Since we are trying to make
+    the app static, we will only use the “render()” method. The components located
+    at the top of the hierarchy will have the task of taking the data model as a prop.
+    In case changes are made to the underlying data model, then it will be easy to
+    update the user interface after calling the “React.render()” method.
+
+
+    Just write the following Javascript code:
+
+
+    varAttributeCategoryRow = React.createClass({
+
+
+    render: function() {
+
+
+    return (<tr><thcolSpan="2">{this.props.category}</th></tr>);
+
+
+        }
+
+
+    });
+
+
+    varAttributeRow = React.createClass({
+
+
+    render: function() {
+
+
+    var name = this.props.attribute.stocked ?
+
+
+    this.props.attribute.name :
+
+
+    <span style={{color: ''red''}}>
+
+
+                    {this.props.attribute.name}
+
+
+    </span>;
+
+
+    return (
+
+
+    <tr>
+
+
+    <td>{name}</td>
+
+
+    <td>{this.props.attribute.value}</td>
+
+
+    </tr>'
+  toc: []
+  trans: "\n```javascript\n__onItemRendererSelect: function(d){\n  // alert(d.color)\n\
+    },\n\nrender: function(){\n  var _this = this;\n  returnReact.DOM.div({\n    className:\
+    \ 'root'\n  },\n  _.map(this.props.r, function(r){\n    return new IRendererV({\n\
+    \      d: r,\n      onSelect: _this.__onItemRendererSelect\n    });\n  })\n  )\n\
+    }\n})\n\nvarIRendererV = React.createClass({\n  getDefaultProps: function(){\n\
+    \    return {\n      d: {\n        color: null,\n        value: null\n      },\n\
+    \      onSelect: null\n    }\n  },\n  getInitialState: function(){\n    return\
+    \ {\n      selected: false\n    }\n  },\n  __onClick: function(){\n    this.setState({selected:\
+    \ !this.state.selected}, function(){\n      if(this.state.selected&&this.props.onSelect){\n\
+    \        this.props.onSelect(this.props.d);\n      }\n    })\n  },\n  render:\
+    \ function(){\n    returnReact.DOM.div({\n      className: 'box ' + (this.state.selected\
+    \ ? 'selected' : 'unselected'),\n      onClick: this.__onClick,\n      style:\
+    \ {\n        backgroundColor: this.props.d.value\n      }\n    }, this.props.d.color)\n\
+    \  }\n})\n\nvargetData = function getData(){\n  return [\n    {\n      color:\
+    \ \"First color\",\n      value: \"#3498db\"\n    },\n    {\n      color: \"second\
+    \ color\",\n      value: \"#34495e\"\n    },\n    {\n      color: \"third color\"\
+    ,\n      value: \"#2ecc71\"\n    },\n    {\n      color: \"fourth color\",\n \
+    \     value: \"#e74c3c\"\n    },\n    {\n      color: \"fifth color\",\n     \
+    \ value: \"#f1c40f\"\n    },\n    {\n      color: \"sixth color\",\n      value:\
+    \ \"#1abc9c\"\n    },\n    {\n      color: \"seventh color\",\n      value: \"\
+    #ecf0f1\"\n    }\n  ]\n}\n\nvar rows = getData();\nvarmainV = new MainV({\n  r:\
+    \ r\n});\n\nReact.renderComponent(mainV, document.body);\n```\n\nCSS 代码应该如下：\n\
+    \n```css\n.box {\n  width: 60px;\n  height: 60px;\n  background-color: black;\n\
+    \  cursor: pointer;\n  -webkit-transition: opacity 0.4s;\n  -moz-transition: opacity\
+    \ 0.4s;\n  transition: opacity 0.4s;\n}\n.selected {\n  opacity: 0.85;\n}\n.selected:hover\
+    \ {\n  opacity: 1;\n}\n.unselected {\n  opacity: 0.5;\n}\n.unselected:hover {\n\
+    \  opacity: 0.65;\n}\n```\n\nHTML 代码应该如下：\n\n```html\n<script type=\"text/javascript\"\
+    \ src=\"http://underscorejs.org/underscore-min.js\"></script>\n```\n\n一旦你写好了程序，直接运行即可。将观察到输出：\n\
+    \n![](img/00009.gif)\n\n注意颜色的外观得到了增强。我们还在代码中添加了一种过渡效果。\n\n# 第 3 章：React 中的评论框\n\
+    \n只需打开你的编辑器并编写以下代码：\n\n```html\n<!-- index.html -->\n<html>\n<head>\n  <title>React\
+    \ 组件</title>\n  <script src=\"https://github/react-0.13.3.js\"></script>\n  <script\
+    \ src=\"https://github/JSXTransformer-0.13.3.js\"></script>\n  <script src=\"\
+    https://code.jquery.com/jquery-2.1.3.min.js\"></script>\n</head>\n<body>\n  <div\
+    \ id=\"content\"></div>\n  <script type=\"text/jsx\">\n    varCommentBox = React.createClass({\n\
+    \      render: function() {\n        return (\n          <div className=\"commentBox\"\
+    >\n            Hello there, this is a comment box.\n          </div>\n       \
+    \ );\n      }\n    });\n\n    React.render(\n      <CommentBox />,\n      document.getElementById('content')\n\
+    \    );\n  </script>\n</body>\n</html>\n```\n\n这段代码将给你以下结果：\n\n![](img/00010.gif)\n\
+    \n输出显示了一个评论框。我们所做的是使用了 `React.createClass()` 方法创建了一个新的 React 组件。\n\n# 第 4 章：将用户界面拆分为层次化组件\n\
+    \n这通过 React JavaScript 是可以实现的。编写以下 JavaScript 代码：\n\n```javascript\nvarAttributeCategoryRow\
+    \ = React.createClass({\n  render: function() {\n    return (<tr><th colSpan=\"\
+    2\">{this.props.category}</th></tr>);\n  }\n});\n\nvarAttributeRow = React.createClass({\n\
+    \  render: function() {\n    var name = this.props.attribute.stocked ?\n    this.props.attribute.name\
+    \ :\n    <span style={{color: 'red'}}>{this.props.attribute.name}</span>;\n  \
+    \  return (\n      <tr>\n        <td>{name}</td>\n        <td>{this.props.attribute.value}</td>\n\
+    \      </tr>\n    );\n  }\n});\n\nvarAttributeTable = React.createClass({\n  render:\
+    \ function() {\n    var rs = [];\n    var lCategory = null;\n    this.props.attributes.forEach(function(attribute)\
+    \ {\n      if (attribute.category !== lCategory) {\n        rs.push(<AttributeCategoryRow\
+    \ category={attribute.category} />);\n        lCategory = attribute.category;\n\
+    \      }\n      rs.push(<AttributeRow attribute={attribute} />);\n    });\n  \
+    \  return (\n      <table>\n        <thead>\n          <tr>\n            <th>Attribute</th>\n\
+    \            <th>Value</th>\n          </tr>\n        </thead>\n        <tbody>{rs}</tbody>\n\
+    \      </table>\n    );\n  }\n});\n\nvar SearchBar = React.createClass({\n  render:\
+    \ function() {\n    return (\n      <form>\n        <input type=\"text\" placeholder=\"\
+    Search...\" />\n        <p></p>\n      </form>\n    );\n  }\n});\n\nvarFAributeTable\
+    \ = React.createClass({\n  render: function() {\n    return (\n      <div>\n \
+    \       <SearchBar />\n        <AttributeTable attributes={this.props} />\n  \
+    \    </div>\n    );\n  }\n});\n\nvar ATTRIBUTES = [\n  {color: \"First color\"\
+    , value: \"#3498db\" },\n  {color: \"second color\", value: \"#34495e\" },\n \
+    \ {color: \"third color\", value: \"#2ecc71\" },\n  {color: \"fourth color\",\
+    \ value: \"#e74c3c\" },\n  {color: \"fifth color\", value: \"#f1c40f\" },\n  {color:\
+    \ \"sixth color\", value: \"#1abc9c\" },\n  {color: \"seventh color\", value:\
+    \ \"#ecf0f1\"}\n];\n\nReact.render(<FAributeTable attributes={ATTRIBUTES} />,\
+    \ document.body);\n```\n\n向它添加以下 CSS：\n\n```css\nbody {\n  padding: 20px;\n}\n\
+    ```\n\n以下应当是 HTML：\n\n```html\n<script src=\"https://jsfiddle.com/integration.html\"\
+    ></script>\n```\n\n只需编写上述程序，然后运行。你将观察到以下：\n\n![](img/00011.gif)\n\n我们所做的是在每个组件周围都画了一个框。注意，如果它增长，你可能需要将其拆分为子组件。包含“Attribute”和“Value”标签的表格头本身就是一个组件。\n"
+- fmt: "\n```javascript\n);\n  }\n});\n\nvarAttributeTable = React.createClass({\n\
+    \  render: function() {\n    var rs = [];\n    var lCategory = null;\n    this.props.attributes.forEach(function(attribute)\
+    \ {\n      if (attribute.category !== lCategory) {\n        rs.push(<AttributeCategoryRow\
+    \ category={attribue.category} key={attribute.category} />);\n      }\n      rs.push(<AttributeRow\
+    \ attribute={attribute} key={attribute.name} />);\n      lCategory = attribute.category;\n\
+    \    });\n    return (\n      <table>\n        <thead>\n          <tr>\n     \
+    \       <th>Attribute</th>\n            <th>Value</th>\n          </tr>\n    \
+    \    </thead>\n        <tbody>{rs}</tbody>\n      </table>\n    );\n  }\n});\n\
+    \nvarSBar = React.createClass({\n  render: function() {\n    return (\n      <form>\n\
+    \        <input type=\"text\" placeholder=\"Search...\" />\n        <p>\n    \
+    \      <input type=\"checkbox\" />\n          {' '}\n          Show the available\
+    \ students only\n        </p>\n      </form>\n    );\n  }\n});\n\nvarFAttributeTable\
+    \ = React.createClass({\n  render: function() {\n    return (\n      <div>\n \
+    \       <SearchBar />\n        <AttributeTable attributes={this.props.attributes}\
+    \ />\n      </div>\n    );\n  }\n});\n\nvar ATTRIBUTES = [\n  {category: 'Form\
+    \ 1', price: '12', stocked: true, name: 'Male'},\n  {category: 'Form 1', price:\
+    \ '14', stocked: true, name: 'Female'},\n  {category: 'Form 1', price: '15', stocked:\
+    \ false, name: 'footballers'},\n  {category: 'Form 2', price: '17', stocked: true,\
+    \ name: 'Male students'},\n  {category: 'Form 2', price: '14', stocked: false,\
+    \ name: 'Female students'},\n  {category: 'Form 2', price: '20', stocked: true,\
+    \ name: 'football students'}\n];\n\nReact.render(<FAttributeTable attributes={ATTRIBUTES}\
+    \ />, document.body);\n```\n\nThe CSS code should be as follows:\n\n```css\nbody\
+    \ {\n  padding: 20px\n}\n```\n\nAdd the following HTML code:\n\n```html\n<script\
+    \ src=\"https://facebook.github.io/react/js/jsfiddle-integration.js\"></script>\n\
+    ```\n\nOnce you have written the above program, just run it and observe the resulting\
+    \ output. It will be as follows:\n\n![](images/00012.gif)\n\n# Chapter 5: Creating\
+    \ Forms in React\n\nIt is possible to create forms in React which allow for user\
+    \ interaction. Both controlled and uncontrolled form components can be created.\
+    \ Write the following Javascript code and run it:\n\n```javascript\nrender: function()\
+    \ {\n  return<input type=\"text\" value=\"Hello there\" />;\n}\n```\n\nAfter running\
+    \ it, observe the output. It should be as follows:\n\n![](images/00013.gif)\n\n\
+    The result shows a text box with the text which we specified. This should be the\
+    \ default text for the text box. However, you might need to change this default\
+    \ text. Consider the following Javascript code:\n\n```javascript\ngetInitialState:\
+    \ function() {\n  return {value: 'Hello there'};\n},\nhandleChange: function(event)\
+    \ {\n  this.setState({value: event.target.value});\n},\nrender: function() {\n\
+    \  var v = this.state.value;\n  return<input type=\"text\" value={v} onChange={this.handleChange}\
+    \ />;\n}\n```\n\nAfter running the above code, you will notice that it will be\
+    \ possible for a user to provide other input into the text box rather than the\
+    \ one displayed by default. Suppose that you would like to do a truncation on\
+    \ what the user provides as input into the text box. This is a good feature in\
+    \ websites. Let’s say that you want to truncate this input into the first 150\
+    \ characters. This can be done as follows:\n\n```javascript\nhandleChange: function(event)\
+    \ {\n  this.setState({value: event.target.value.substr(0, 150)});\n}\n```\n\n\
+    The above function will truncate what the user enters as input into the first\
+    \ 150 characters. You now know how to create controlled components in React. It\
+    \ is also possible to create uncontrolled components in this language. Suppose\
+    \ that you want the text box to contain nothing in it so that the user can provide\
+    \ the input that he she wishes. This can be done as follows:\n\n```javascript\n\
+    render: function() {\n  return<input type=\"text\" />;\n}\n```\n\nJust write the\
+    \ code, and then run it. The following output will be observed:\n\n![](images/00014.gif)\n\
+    \nThe text box contains nothing in it. The user can then provide the input of\
+    \ his her choice. This is an example of an uncontrolled element in React. Notice\
+    \ the use of the `render` function. Another component of a form in React is the\
+    \ `textarea`. This will allow you to provide much input especially when describing\
+    \ something. Consider the following code:\n\n```javascript\nrender: function()\
+    \ {\n  return<textarea name=\"textarea\">Provider a description.<|textarea|>;\n\
+    }\n```\n\nYou can write and run the above program. It will provide the following\
+    \ output:\n\n![](images/00015.gif)\n\nThe figure shows the text area we have just\
+    \ created. With this, the user can provide multiple lines describing something.\
+    \ We have also provided a default text for the `textarea`, but this is not a must.\
+    \ You might be interested in this. Sometimes, you might need to select your own\
+    \ choice from a set of provided options. This can be accomplished by use of `select`\
+    \ in React. This is how a select is created:\n\n```html\n<select value=\"School\"\
+    >\n  <option value=\"university\">University</option>\n  <option value=\"college\"\
+    >College</option>\n  <option value=\"secondary\">Secondary</option>\n  <option\
+    \ value=\"primary\">Primary</option>\n  <option value=\"nursery\">Nursery</option>\n\
+    </select>\n```\n\nThe above program should give the following:\n\n![](images/00016.gif)\n\
+    \nOn clicking the arrow downwards, you will see the options we specified. You\
+    \ can select the choice you want from the ones provided. The above component is\
+    \ controlled. However, you may want to make it uncontrolled. In this case, you\
+    \ will have to provide a default value for the same.\n\n# Chapter 6: Animations\
+    \ in React\n\nReact has an add-on called `ReactTransitionGroup` which is a low-level\
+    \ API responsible for the creation of animations in the language. `ReactTransitionGroup`\
+    \ is also used for enhancement of the CSS part. It is a high level API, and programmers\
+    \ use it to perform an animation whenever a component of React leaves or enters\
+    \ the DOM. The `ReactTransitionGroup` is responsible for implementation of the\
+    \ interface in which all the elements to be used in the animation are wrapped.\
+    \ Consider the following example in which the elements of a list fade in and out:\n\
+    \n```javascript\nvar CSTransitionGroup = React.addons.CSSTransitionGroup;\nvar\
+    \ toDo = React.createClass({\n  getInitialState: function() {\n    return {items:\
+    \ ['hello', 'there', 'click', 'here']};\n  },\n  handleAdd: function() {\n   \
+    \ var nItems = this.state.items.concat([prompt('Key in some text')]);\n    this.setState({items:\
+    \ nItems});\n  },\n  handleRemove: function(j) {\n    var nItems = this.state.items;\n\
+    \    nItems.splice(j, 1);\n    this.setState({items: nItems});\n  },\n  render:\
+    \ function() {\n    var itms = this.state.items.map(function(item, j) {\n    \
+    \  return (\n        <div key={itm} onClick={this.handleRemove.bind(this, j)}>\n\
+    \          {itm}\n        </div>\n      );\n    }.bind(this));\n    return (\n\
+    \      <div>\n        <button onClick={this.handleAdd}>Create Item</button>\n\
+    \        <ReactCSSTransitionGroup transitionName=\"sample\">\n          {itms}\n\
+    \        </ReactCSSTransitionGroup>\n      </div>\n    );\n  }\n});\n```\n\nJust\
+    \ write the above program, and then run it. The first output of the program would\
+    \ appear as follows:\n\n![](images/00017.gif)\n\nThis is a text which we specified\
+    \ within our program. The program should animate the text we specified. The next\
+    \ word to be animated is “there.” It will be as shown below:\n\n![](images/00018.gif)\n\
+    \nThis is the second word which we specified. This will continue until the last\
+    \ word which we had specified has been animated. The animation happens by fading\
+    \ in and out of the elements of the lists we specify. In case you need to use\
+    \ CSS so as to trigger the transition, add the following CSS code and a new item\
+    \ in the list to be translated:\n\n```css\n.sample-enter {\n  opacity: 0.01;\n\
+    \  transition: opacity .5s ease-in;\n}\n.sample-enter.sample-enter-active {\n\
+    ```\n"
+  raw: '        );
+
+
+        }
+
+
+    });
+
+
+    varAttributeTable = React.createClass({
+
+
+    render: function() {
+
+
+    var rs = [];
+
+
+    varl Category = null;
+
+
+    this.props.attributes.forEach(function(attribute) {
+
+
+    if (attribute.category !== lCategory) {
+
+
+    rs.push(<AttributeCategoryRow category={attribue.category} key={attribute.category}
+    />);
+
+
+                }
+
+
+    rs.push(<AttributeRow attribute={attribute} key={attribute.name} />);
+
+
+    lCategory = attribute.category;
+
+
+            });
+
+
+    return (
+
+
+    <table>
+
+
+    <thead>
+
+
+    <tr>
+
+
+    <th>Attribute</th>
+
+
+    <th>Value</th>
+
+
+    </tr>
+
+
+    </thead>
+
+
+    <tbody>{rs}</tbody>
+
+
+    </table>
+
+
+            );
+
+
+        }
+
+
+    });
+
+
+    varSBar = React.createClass({
+
+
+    render: function() {
+
+
+    return (
+
+
+    <form>
+
+
+    <input type="text" placeholder="Search..." />
+
+
+    <p>
+
+
+    <input type="checkbox" />
+
+
+                        {'' ''}
+
+
+                         Show the available students only
+
+
+    </p>
+
+
+    </form>
+
+
+            );
+
+
+        }
+
+
+    });
+
+
+    varFAttributeTable = React.createClass({
+
+
+    render: function() {
+
+
+    return (
+
+
+    <div>
+
+
+    <SearchBar />
+
+
+    <AttributeTable attributes={this.props.attributes} />
+
+
+    </div>
+
+
+            );
+
+
+        }
+
+
+    });
+
+
+    var ATTRIBUTES = [
+
+
+        {category: ''Form 1'', price: ''12'', stocked: true, name: ''Male''},
+
+
+      {category: ''Form 1'', price: ''14'', stocked: true, name: ''Female''},
+
+
+      {category: ''Form 1'', price: ''15'', stocked: false, name: ''footballers''},
+
+
+      {category: ''Form 2'', price: ''17'', stocked: true, name: ''Male students''},
+
+
+      {category: ''Form 2'', price: ''14'', stocked: false, name: ''Female students''},
+
+
+      {category: ''Form 2'', price: ''20'', stocked: true, name: ''football students''}
+
+
+    ];
+
+
+    React.render(<FAttributeTable attributes={ATTRIBUTES} />, document.body);
+
+
+    The CSS code should be as follows:
+
+
+    body {
+
+
+    padding: 20px
+
+
+    }
+
+
+    Add the following HTML code:
+
+
+    <script src="https://facebook.github.io/react/js/jsfiddle-integration.js"></script>
+
+
+    Once you have written the above program, just run it and observe the resulting
+    output. It will be as follows:
+
+
+    ![](images/00012.gif)
+
+
+    # Chapter 5
+
+
+    Creating Forms in React
+
+
+    It is possible to create forms in React which allow for user interaction. Both
+    controlled and uncontrolled form components can be created. Write the following
+    Javascript code and run it:
+
+
+    render: function() {
+
+
+                  return<input type="text" value="Hello there" />;
+
+
+    }
+
+
+    After running it, observe the output. It should be as follows:
+
+
+    ![](images/00013.gif)
+
+
+    The result shows a text box with the text which we specified. This should be the
+    default text for the text box. However, you might need to change this default
+    text. Consider the following Javascript code:
+
+
+    getInitialState: function() {
+
+
+                  return {value: ''Hello there''};
+
+
+    },
+
+
+    handleChange: function(event) {
+
+
+                  this.setState({value: event.target.value});
+
+
+    },
+
+
+    render: function() {
+
+
+                  var v = this.state.value;
+
+
+    return<input type="text" value={v} onChange={this.handleChange} />;
+
+
+    }
+
+
+    After running the above code, you will notice that it will be possible for a user
+    to provide other input into the text box rather than the one displayed by default.
+    Suppose that you would like to do a truncation on what the user provides as input
+    into the text box. This is a good feature in websites. Let’s say that you want
+    to truncate this input into the first 150 characters. This can be done as follows:
+
+
+    handleChange: function(event) {
+
+
+                  this.setState({value: event.target.value.substr(0, 150)});
+
+
+    }
+
+
+    The above function will truncate what the user enters as input into the first
+    150 characters. You now know how to create controlled components in React. It
+    is also possible to create uncontrolled components in this language. Suppose that
+    you want the text box to contain nothing in it, so that the user can provide the
+    input that he or she wishes. This can be done as follows:
+
+
+    render: function() {
+
+
+                  return<input type="text" />;
+
+
+    }
+
+
+    Just write the code, and then run it. The following output will be observed:
+
+
+    ![](images/00014.gif)
+
+
+    The text box contains nothing in it. The user can then provide the input of his
+    or her choice. This is an example of an uncontrolled element in React. Notice
+    the use of the “render” function.
+
+
+    Another component of a form in React is the Textarea. This will allow you to provide
+    much input toit, especially when describing something. Consider the following
+    code:
+
+
+    render: function() {
+
+
+                  return<textarea name="textarea">Provider a description.</textarea>
+
+
+    />;
+
+
+    }
+
+
+    You can write and run the above program. It will provide the following output:
+
+
+    ![](images/00015.gif)
+
+
+    The figure shows the text area which we have just created. Withthis, the user
+    can provide multiple lines when describing something. We have also provided a
+    default text for the textarea, but this is not a must. You might not be interested
+    in this.
+
+
+    Sometimes, you might need to select your own choice from a set of provided options.
+    This can be accomplished by use of a “select” in React. This is how a select is
+    created in React:
+
+
+    <select value="School">
+
+
+    <option value="university">University</option>
+
+
+    <option value="college">College</option>
+
+
+    <option value="secondary">Secondary</option>
+
+
+    <option value="primary">Primary</option>
+
+
+    <option value="nursery">Nursery</option>
+
+
+    </select>
+
+
+    The above program should give the following output:
+
+
+    ![](images/00016.gif)
+
+
+    On clicking the arrow facing downwards, you will see the options which we specified.
+    You can select the choice that you want from the ones being provided. The above
+    component is controlled. However, you may want to make it uncontrolled. In this
+    case, you will have to provide a default value for the same.
+
+
+    # Chapter 6
+
+
+    Animations in React
+
+
+    React has an add-on component called “ReactTransitionGroup” which is a low-level
+    API responsible for the creation of animations in the language. “ReactCSSTrasionGroup”
+    is also used for enhancement of the CSS part of the transition. It is a high level
+    API, and programmers use it to perform an animation whenever a component of React
+    leaves or enters the DOM.
+
+
+    The “ReactCSSTransitionGroup” is responsible for implementation of the interface
+    in which all the elements to be used in the animation are wrapped. Consider the
+    following example in which the elements of a list fade in and out:
+
+
+    varRCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+
+                  varTdoList = React.createClass({
+
+
+                                getInitialState: function() {
+
+
+                                              return {items: [''hello'', ''there'',
+    ''click'', ''here'']};
+
+
+    },
+
+
+    handleAdd: function() {
+
+
+                  var nItems =
+
+
+    this.state.items.concat([prompt(''Key in some text'')]);
+
+
+                  this.setState({items: nItems});
+
+
+    },
+
+
+    handleRemove: function(j) {
+
+
+                  varnItems = this.state.items;
+
+
+                                nItems.splice(j, 1);
+
+
+                                this.setState({items: nItems});
+
+
+    },
+
+
+    render: function() {
+
+
+                  varitms = this.state.items.map(function(item, j) {
+
+
+    return (
+
+
+                  <div key={itm} onClick={this.handleRemove.bind(this, j)}>
+
+
+    {itm}
+
+
+    </div>
+
+
+    );
+
+
+    }.bind(this));
+
+
+    return (
+
+
+    <div>
+
+
+    <button onClick={this.handleAdd}>Create Item</button>
+
+
+    <ReactCSSTransitionGrouptransitionName="sample">
+
+
+    {itms}
+
+
+    </RCSSTransitionGroup>
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    Just write the above program, and then run it. The first output of the program
+    would appear as follows:
+
+
+    ![](images/00017.gif)
+
+
+    This is a text which we specified within our program. Theprogram should animate
+    the text which we specified. The next word to be animated is “there.”It will be
+    as shown below:
+
+
+    ![](images/00018.gif)
+
+
+    This is the second word which we specified. This will continue until the last
+    word which we had specified has been animated. The animation happens by fading
+    in and out of the elements of the lists which we specify.
+
+
+    In case you need to use CSS so as to trigger the transition, add the following
+    CSS code and a new item in the list to be translated:
+
+
+    .sample-enter {
+
+
+                  opacity: 0.01;
+
+
+                  transition: opacity .5s ease-in;
+
+
+    }
+
+
+                  .sample-enter.sample-enter-active {'
+  toc: []
+  trans: "\n\n```javascript\n);\n  }\n});\n\nvarAttributeTable = React.createClass({\n\
+    \  render: function() {\n    var rs = [];\n    var lCategory = null;\n    this.props.attributes.forEach(function(attribute)\
+    \ {\n      if (attribute.category !== lCategory) {\n        rs.push(<AttributeCategoryRow\
+    \ category={attribue.category} key={attribute.category} />);\n      }\n      rs.push(<AttributeRow\
+    \ attribute={attribute} key={attribute.name} />);\n      lCategory = attribute.category;\n\
+    \    });\n    return (\n      <table>\n        <thead>\n          <tr>\n     \
+    \       <th>属性</th>\n            <th>值</th>\n          </tr>\n        </thead>\n\
+    \        <tbody>{rs}</tbody>\n      </table>\n    );\n  }\n});\n\nvarSBar = React.createClass({\n\
+    \  render: function() {\n    return (\n      <form>\n        <input type=\"text\"\
+    \ placeholder=\"搜索...\" />\n        <p>\n          <input type=\"checkbox\" />\n\
+    \          {' '}\n          仅显示可用学生\n        </p>\n      </form>\n    );\n  }\n\
+    });\n\nvarFAttributeTable = React.createClass({\n  render: function() {\n    return\
+    \ (\n      <div>\n        <SearchBar />\n        <AttributeTable attributes={this.props.attributes}\
+    \ />\n      </div>\n    );\n  }\n});\n\nvar ATTRIBUTES = [\n  {category: 'Form\
+    \ 1', price: '12', stocked: true, name: '男性'},\n  {category: 'Form 1', price:\
+    \ '14', stocked: true, name: '女性'},\n  {category: 'Form 1', price: '15', stocked:\
+    \ false, name: '足球运动员'},\n  {category: 'Form 2', price: '17', stocked: true, name:\
+    \ '男学生'},\n  {category: 'Form 2', price: '14', stocked: false, name: '女学生'},\n\
+    \  {category: 'Form 2', price: '20', stocked: true, name: '足球学生'}\n];\n\nReact.render(<FAttributeTable\
+    \ attributes={ATTRIBUTES} />, document.body);\n```\n\nCSS 代码应该如下：\n\n```css\n\
+    body {\n  padding: 20px\n}\n```\n\n添加以下 HTML 代码：\n\n```html\n<script src=\"https://facebook.github.io/react/js/jsfiddle-integration.js\"\
+    ></script>\n```\n\n一旦你写了上述程序，只需运行它并观察结果。输出将如下：\n\n![](img/00012.gif)\n\n# 第 5\
+    \ 章：在 React 中创建表单\n\n可以在 React 中创建允许用户交互的表单。可以创建受控和不受控表单组件。编写以下 Javascript 代码并运行它：\n\
+    \n```javascript\nrender: function() {\n  return<input type=\"text\" value=\"Hello\
+    \ there\" />;\n}\n```\n\n运行后，观察输出。它应该如下：\n\n![](img/00013.gif)\n\n结果显示了一个带有我们指定的文本的文本框。这应该是该文本框的默认文本。然而，你可能需要更改此默认文本。考虑以下\
+    \ Javascript 代码：\n\n```javascript\ngetInitialState: function() {\n  return {value:\
+    \ 'Hello there'};\n},\nhandleChange: function(event) {\n  this.setState({value:\
+    \ event.target.value});\n},\nrender: function() {\n  var v = this.state.value;\n\
+    \  return<input type=\"text\" value={v} onChange={this.handleChange} />;\n}\n\
+    ```\n\n运行上述代码后，你会注意到用户可以向文本框中提供其他输入，而不是默认显示的那个。假设你想对用户在文本框中提供的输入内容进行截断。这是网站中的一个很好的功能。假设你想将此输入内容截断为前\
+    \ 150 个字符。可以这样操作：\n\n```javascript\nhandleChange: function(event) {\n  this.setState({value:\
+    \ event.target.value.substr(0, 150)});\n}\n```\n\n上述函数将把用户输入的输入内容截断为前 150 个字符。你现在知道如何在\
+    \ React 中创建受控组件了。在该语言中，也可以创建不受控组件。假设你想让文本框保持为空，这样用户就可以提供他们想要提供的输入。可以这样操作：\n\n\
+    ```javascript\nrender: function() {\n  return<input type=\"text\" />;\n}\n```\n\
+    \n只需编写代码，然后运行它。将观察到以下输出：\n\n![](img/00014.gif)\n\n文本框内是空的。用户随后可以提供他们选择的输入。这是 React\
+    \ 中不受控元素的一个示例。注意 `render` 函数的使用。React 中表单的另一个组件是 `textarea`。这将允许你提供大量的输入，特别是在描述某些事情时。考虑以下代码：\n\
+    \n```javascript\nrender: function() {\n  return<textarea name=\"textarea\">提供描述。<|textarea|>;\n\
+    }\n```\n\n你可以编写并运行上述程序。它将提供以下输出：\n\n![](img/00015.gif)\n\n图片显示了我们刚刚创建的文本区域。通过它，用户可以提供多行内容来描述某些事情。我们还提供了一个选项，以便用户可以提供多行描述某些事情。我们还提供了一个默认值，但这并不是必须的。你可能需要从中选择。可以通过以下方式实现：\n\
+    \n```html\n<select value=\"School\">\n  <option value=\"university\">大学</option>\n\
+    \  <option value=\"college\">学院</option>\n  <option value=\"secondary\">中学</option>\n\
+    \  <option value=\"primary\">小学</option>\n  <option value=\"nursery\">幼儿园</option>\n\
+    </select>\n```\n\n上述程序应该给出：\n\nimages/00016.gif\n\n点击箭头，你将看到指定的选项。你可以从提供的选项中选择。上述组件是受控的。然而，你可能想让它是不受控的。\n\
+    \n# 第 6 章：React 中的动画\n\nReact 有一个名为 `TransitionGroup` 的插件，它是用于在 React 中创建动画的高级\
+    \ API。`TransitionGroup` 也用于 CSS 的增强。程序员在 React 组件进入或离开 DOM 时使用它来执行动画。考虑以下一个列表元素淡入淡出的示例：\n\
+    \n```javascript\nvar CSTransitionGroup = React.addons.CSSTransitionGroup;\nvar\
+    \ toDo = React.createClass({\n  getInitialState: function() {\n    return {items:\
+    \ ['hello', 'there', 'click', 'here']};\n  },\n  handleAdd: function() {\n   \
+    \ var nItems = this.state.items.concat([prompt('某些文本')]);\n    this.setState({items:\
+    \ nItems});\n  },\n  handleRemove: function(j) {\n    var nItems = this.state.items;\n\
+    \    nItems.splice(j, 1);\n    this.setState({items: nItems});\n  },\n  render:\
+    \ function() {\n    var itms = this.state.items.map(function(item, j) {\n    \
+    \  return (\n        <div key={itm} onClick={this.handleRemove.bind(this, j)}>\n\
+    \          {itm}\n        </div>\n      );\n    }.bind(this));\n    return (\n\
+    \      <div>\n        <button onClick={this.handleAdd}>创建项目</button>\n       \
+    \ <ReactCSSTransitionGroup transitionName=\"sample\">\n          {itms}\n    \
+    \    </ReactCSSTransitionGroup>\n      </div>\n    );\n  }\n});\n```\n\n只需编写上述代码，然后运行它。程序的第一个输出将如下：\n\
+    \nimages/00017.gif\n\n这是我们在程序中指定的文本。程序应该动画化指定的文本。下一个要动画化的单词是“there”。它将将如下所示：\n\
+    \nimages/00018.gif\n\n这是我们指定的第二个单词。这将一直持续到我们指定的最后一个单词被动画化。动画是通过我们指定的元素的淡入淡出实现的。如果你需要使用\
+    \ CSS 来触发过渡，请添加以下 CSS 代码并在列表中添加新项目：\n\n```css\n.sample-enter {\n  opacity: 0.01;\n\
+    \  transition: opacity .5s ease-in;\n}\n.sample-enter.sample-enter-active {\n\
+    ```\n\n"
+- fmt: "\n```css\n{\n    opacity: 1;\n}\n```\n\nWhat will happen is that after removing\
+    \ an element from the list, the function will keep it in the DOM. If you animate,\
+    \ you will be notified that an animation which was expected has not happened.\
+    \ The reason is because the function `ReactCSSTransitionGroup` will keep the elements\
+    \ that you specify in the page until the transition is complete. Add this CSS\
+    \ to your program:\n\n```css\n.sample-leave {\n    opacity: 1;\n    transition:\
+    \ opacity .5s ease-in;\n}\n\n.sample-leave.sample-leave-active {\n    opacity:\
+    \ 0.01;\n}\n```\n\nNote that the above program will only show a single transition.\
+    \ It is possible for you to add an extra transition to the animation after the\
+    \ initial transition. This can be done using the function `transitionAppear`.\
+    \ Consider the following program, which uses the above function after setting\
+    \ its value to `true`.\n\n```javascript\nrender: function() {\n  return (\n  \
+    \  <ReactCSSTransitionGroup transitionName=\"sample\" transitionAppear=\"true\"\
+    >\n      <h1>Fade the initial mount</h1>\n    </ReactCSSTransitionGroup>\n  );\n\
+    }\n```\n\nThe following should be the CSS code for the above:\n\n```css\n.sample-appear\
+    \ {\n    opacity: 0.01;\n    transition: opacity .5s ease-in;\n}\n\n.sample-appear.sample-appear-active\
+    \ {\n    opacity: 1;\n}\n```\n\nIn order for the animation to be applied to the\
+    \ children, the prop `transitionAppear` should be set to `true`. The `ReactCSSTransitionGroup`\
+    \ can also be mounted to the DOM. Consider the example shown below:\n\n```javascript\n\
+    render: function() {\n  var itms = this.state.itms.map(function(item, j) {\n \
+    \   return (\n      <div key={itm} onClick={this.handleRemove.bind(this, j)}>\n\
+    \        <ReactCSSTransitionGroup transitionName=\"sample\">\n          {itm}\n\
+    \        </ReactCSSTransitionGroup>\n      </div>\n    );\n  }, this);\n\n  return\
+    \ (\n    <div>\n      <button onClick={this.handleAdd}>Create Item</button>\n\
+    \      {itms}\n    </div>\n  );\n}\n```\n\nJust try to run the program, and observe\
+    \ what will happen. There will be no observed result. The reason is because the\
+    \ `ReactCSSTransitionGroup` was mounted along the new item. To solve this problem,\
+    \ mount the new item within the `ReactCSSTransitionGroup`.\n\nNote that it is\
+    \ possible for the children of `ReactCSSTransitionGroup` to be zero or one. This\
+    \ means that it is possible for a single element which enters or leaves to be\
+    \ animated. Consider the following program:\n\n```javascript\nvar ReactCSSTransitionGroup\
+    \ = React.addons.CSSTransitionGroup;\nvar ICarousel = React.createClass({\n  propTypes:\
+    \ {\n    imageSrc: PropTypes.string.isRequired\n  },\n  render: function() {\n\
+    \    return (\n      <div>\n        <ReactCSSTransitionGroup name=\"carousel\"\
+    >\n          <img src={this.props.imgSrc} key={this.props.imgSrc} />\n       \
+    \ </ReactCSSTransitionGroup>\n      </div>\n    );\n  }\n});\n```\n\nThe program\
+    \ shows how to implement a simple carousel in React. You need to change the `imgSrc`\
+    \ to the name of your image for the image to be animated. Notice that we have\
+    \ used only a single image in the above example. However, it is possible to animate\
+    \ multiple images in an carousel created in React. You might also want to disable\
+    \ an animation. This can be done by setting the `transitionLeave` to `false` or\
+    \ `transitionEnter` to `false`. The effect will be the same in both cases. This\
+    \ feature can be applied if you want an enter animation but no leave animation.\
+    \ Also, note that with `ReactTransitionGroup` there is no way how you can be notified\
+    \ in case transition ends. You also can perform anything else which is complex\
+    \ on your animation.\n\n# Chapter 7 Two-way Binding in React\n\nReact allows the\
+    \ data to flow only one way, that is, from the owner to the child. This is due\
+    \ to the use of `ReactLink`. It employs the use of the Von Architecture of computers.\
+    \ However, you might need to read some data and then flow it back to the program\
+    \ in your application. A good example is when you are creating forms. In this\
+    \ case, you might need to update the state of React once you have received some\
+    \ input from the user. This can also be applicable when the layout has been created\
+    \ in Javascript, and then you want to react to any changes in the size of a DOM\
+    \ element. In React, this can be easily implemented, which you will listen to\
+    \ a `change` event, read from the source of your data, and finally call the `setState()`\
+    \ on any of your components. If you need to create programs which are easy to\
+    \ understand, then you can close the loop for data flow. Consider the sample program\
+    \ given below:\n\n```javascript\nvar NLink = React.createClass({\n  getInitialState:\
+    \ function() {\n    return {message: 'Hello there'};\n  },\n  handleChange: function(event)\
+    \ {\n    this.setState({message: event.target.value});\n  },\n  render: function()\
+    \ {\n    var mssge = this.state.mssge;\n    return <input type=\"text\" value={mssge}\
+    \ onChange={this.handleChange} />;\n  }\n});\n```\n\nWe have just created a simple\
+    \ form without making use of `ReactLink`. Just run the program, and observe the\
+    \ output. It will be as follows: (images/00019.gif)\n\nThe form works just in\
+    \ the right way. However, in case the form has several fields, we might need to\
+    \ be more verbose. With `ReactLink`, we can save some typing time. Consider the\
+    \ following code:\n\n```javascript\nvar WLink = React.createClass({\n  mixins:\
+    \ [React.addons.LinkedStateMixin],\n  getInitialState: function() {\n    return\
+    \ {message: 'Hello there'};\n  },\n  render: function() {\n    return <input type=\"\
+    text\" valueLink={this.linkState('message')} />;\n  }\n});\n```\n\nNotice the\
+    \ use of `ReactStateMixin` which has the task of adding the method `linkState()`\
+    \ to the React component. This will, in turn, give a `ReactLink` object which\
+    \ provides the current state of the React, and a callback to it so as to change\
+    \ this state. Once you have run the program, a text field will be observed as\
+    \ shown below: (images/00019.gif)\n\nObjects which belong to the `ReactLink` can\
+    \ be passed either up or down the tree as props. This means that two-way binding\
+    \ can easily be set between states higher in the hierarchy and those deep in the\
+    \ hierarchy. The first phase of `ReactLink` is where you create it, and then the\
+    \ second phase involves using it.\n\nIf you need to create a `ReactLink` without\
+    \ `LinkedStateMixin`, do the following:\n\n```javascript\nvar WMixin = React.createClass({\n\
+    \  getInitialState: function() {\n    return {message: 'Hello there'};\n  },\n\
+    \  handleChange: function(newValue) {\n    this.setState({message: newValue});\n\
+    \  },\n  render: function() {\n    var vLink = {\n      value: this.state.message,\n\
+    \      requestChange: this.handleChange\n    };\n    return <input type=\"text\"\
+    \ valueLink={vLink} />;\n  }\n});\n```\n\nIt is very clear that `ReactLink` objects\
+    \ contain only a `value` and a `requestChange` prop. If you need to create a `ReactLink`\
+    \ without a `valueLink`, do the following:\n\n```javascript\nvar WLink = React.createClass({\n\
+    \  mixins: [React.addons.LinkedStateMixin],\n  getInitialState: function() {\n\
+    \    return {message: 'Hello there'};\n  },\n  render: function() {\n    var vLink\
+    \ = this.linkState('message');\n    var handleChange = function(f) {\n      vLink.requestChange(f.target.value);\n\
+    \    };\n    return <input type=\"text\" value={vLink.value} onChange={handleChange}\
+    \ />;\n  }\n});\n```\n\n# Chapter 8 Transferring Props\n\nProgrammers want to\
+    \ create abstraction while programming in React. The outer part will have a component\
+    \ that can be used for performing something which is complex.\n\n## Transferring\
+    \ Manually\n"
+  raw: '                            opacity: 1;
+
+
+    }
+
+
+    What will happen is that after removing an element from the list, the function
+    will keep it in the DOM. If you animate, you will be notified that an animation
+    which was expected has not happened. The reason is because the function “ReactCSSTransitionGroup”
+    will keep the elements that you specify in the page until the transition is complete.
+    Add this CSS to your program:
+
+
+    .sample-leave {
+
+
+                  opacity: 1;
+
+
+                                transition: opacity .5s ease-in;
+
+
+    }
+
+
+                  .sample-leave.sample-leave-active {
+
+
+                                opacity: 0.01;
+
+
+    }
+
+
+    Note that the above program will only show  a single transition. It is possible
+    for you to add an extra transition to the animation after the initial transition.
+    This can be done using the function “transitionAppear”. Consider the following
+    program, which uses the above function after setting its value to “true.”
+
+
+    render: function() {
+
+
+                  return (
+
+
+    <ReactCSSTransitionGrouptransitionName="sample" transitionAppear="true">
+
+
+                  <h1>Fade the initial mount</h1>
+
+
+                  </ReactCSSTransitionGroup>
+
+
+    );
+
+
+    }
+
+
+    The following should be the CSS co0de for the above:
+
+
+    .sample-appear {
+
+
+                  opacity: 0.01;
+
+
+                  transition: opacity .5s ease-in;
+
+
+    }
+
+
+                  .sample-appear.sample-appear-active {
+
+
+                  opacity: 1;
+
+
+    }
+
+
+    In order for the animation to be applied to the children, the prop “transitionAppear”should
+    be set to“true.”The “ReactCSSTransitionGroup”  can also be mounted to the DOM.
+    Consider the example shown below:
+
+
+    render: function() {
+
+
+                  varitms = this.state.itms.map(function(item, j) {
+
+
+                                return (
+
+
+    <div key={itm} onClick={this.handleRemove.bind(this, j)}>
+
+
+    <ReactCSSTransitionGrouptransitionName="sample">
+
+
+                  {itm}
+
+
+    </ReactCSSTransitionGroup>
+
+
+    </div>
+
+
+    );
+
+
+    }, this);
+
+
+    return (
+
+
+    <div>
+
+
+    <button onClick={this.handleAdd}>Create Item</button>
+
+
+    {itms}
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    Just try to run the program, and observe what will happen. There will be no observed
+    result. The reason is because the “ReactCSSTransitionGroup” was mounted along
+    the new item. To solve this problem, mount the new item within the “ReactCSSTransitionGroup”.
+
+
+    Note that it is possible for the children of “ReactCSSTransmissionGroup” to be
+    zero or one. This means that it is possible for a single element which enters
+    or leaves to be animated. Consider the following program:
+
+
+    varReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+
+                  varICarousel = React.createClass({
+
+
+                                propTypes: {
+
+
+                                              imageSrc: React.PropTypes.string.isRequired
+
+
+    },
+
+
+    render: function() {
+
+
+                  return (
+
+
+    <div>
+
+
+    <ReactCSSTransitionGrouptName="carousel">
+
+
+    <imgsrc={this.props.imgSrc} key={this.props.imgSrc} />
+
+
+    </ReactCSSTransitionGroup>
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    The program shows how to implement a simple image carousel in React Javascript.
+    You need to change the “imgSc” to the name of your image for the image to be animated.
+    Notice that we have used only a single image in the above example. However, it
+    is possible to animate multiple images in an image carousel created in React.
+
+
+    You might also want to disable an animation. This can be done by setting the “transitionLeave”to
+    “false” or “transitionEnter” to “false.”The effect will be the same in both cases.
+    This feature can be applied if you want an enter animation but no leave animation.
+    Also, note that with the “ReactTransitionGroup” there is no way on how you can
+    be notified in case a transition ends. You also can  not perform anything else
+    which is complex on your animation with this.
+
+
+    # Chapter 7
+
+
+    Two-way Binding Helpers in React
+
+
+    React allows the data to flow only in one way, that is, from the owner to the
+    child. This is due to the use of “ReactLink.”It employs the use of the mechanism
+    of the Von Neumann Architecture of computers.
+
+
+    However, you might need to read some data and then flow it back to the program
+    in your application. A good example is when you are creating forms. In this case,
+    you might need to update the state of React once you have received some input
+    from the user. This can also be applicable when the layout has been created in
+    Javascript,and then you want to react to any changes in the size of a DOM element.
+
+
+    In React, this can be easily implemented, in which you will listen to a “change”
+    event, read from the source of your data, and then finally call the “setState()”
+    on any of your components. If you need to create programs which are easy to understand,
+    then you can close the loop for data flow.
+
+
+    Consider the sample program given below:
+
+
+    varNLink = React.createClass({
+
+
+                  getInitialState: function() {
+
+
+                                return {message: ''Hello there''};
+
+
+    },
+
+
+    handleChange: function(event) {
+
+
+                  this.setState({message: event.target.value});
+
+
+    },
+
+
+    render: function() {
+
+
+                  varmssge = this.state.mssge;
+
+
+                                return<input type="text" value={mssge} onChange={this.handleChange}
+    />;
+
+
+    }
+
+
+    });
+
+
+    We have just created a simple form without making use of “ReactLink.”Just run
+    the program, and observe the output. It will be as follows:
+
+
+    ![](images/00019.gif)
+
+
+    The form works just in the right way. However, in case the form has several fields,
+    we might need to be more verbose. With “ReactLink,” we can save some typing time.
+    Consider the following code:
+
+
+    varWLink = React.createClass({
+
+
+                  mixins: [React.addons.LinkedStateMixin],
+
+
+                  getInitialState: function() {
+
+
+                                return {message: ''Hello there''};
+
+
+    },
+
+
+    render: function() {
+
+
+                  return<input type="text" valueLink={this.linkState(''message'')}
+    />;
+
+
+    }
+
+
+    });
+
+
+    Notice the use of “ReactSateMixin” which has the task of adding the method “linkSate()”
+    to the React component. This will, in turn, give a “ReactLink” object which provides
+    the current state of the React, and a callback to it so as to change this state.
+    Once you have run the program, a text field will be observed as shown below:
+
+
+    ![](images/00019.gif)
+
+
+    Objects which belong to the “ReactLink” can be passed either up or down the tree
+    as props. This means that two-way binding can easily be set between states higher
+    in the hierarchy and those deep in the hierarchy. The first phase of “ReactLink”
+    is where you create it, and then the second phase involves using it.
+
+
+    If you need to create a ReactLink without “LinkedStateMixin,”do the following:
+
+
+    VarWMixin = React.createClass({
+
+
+                  getInitialState: function() {
+
+
+                                return {message: ''Hello there''};
+
+
+    },
+
+
+    handleChange: function(newValue) {
+
+
+                  this.setState({message: newValue});
+
+
+    },
+
+
+    render: function() {
+
+
+                  varvLink = {
+
+
+                  value: this.state.message,
+
+
+    requestChange: this.handleChange
+
+
+    };
+
+
+                  return<input type="text" valueLink={vLink} />;
+
+
+    }
+
+
+    });
+
+
+    It is very clear that “ReactLink”objects contain only a value and a “RequestChange”
+    prop.
+
+
+    If you need to create a “ReactLink” without a valueLink, do the following:
+
+
+    varWLink = React.createClass({
+
+
+                  mixins: [React.addons.LinkedStateMixin],
+
+
+                  getInitialState: function() {
+
+
+                                return {message: ''Hello there''};
+
+
+    },
+
+
+    render: function() {
+
+
+                  var vLink = this.linkState(''message'');
+
+
+                                varhandleChange = function(f) {
+
+
+                                valueLink.requestChange(f.target.value);
+
+
+    };
+
+
+    return<input type="text" value={vLink.value} onChange={handleChange} />;
+
+
+    }
+
+
+    });
+
+
+    This will give you a text field, but without a valueLink.
+
+
+    # Chapter 8
+
+
+    Transferring Props
+
+
+    Programmers want to create abstraction while programming in React. The outer part
+    will have a component that can be used for performing something which is complex.
+
+
+    ## Transferring Manually'
+  toc: []
+  trans: "\n\n```css\n{\n    opacity: 1;\n}\n```\n\n发生的情况是，从列表中删除一个元素后，函数将将其保留在 DOM\
+    \ 中。如果你执行了动画，你将收到通知，预期的动画没有发生。这是因为 `ReactCSSTransitionGroup` 函数会在过渡完成之前将你指定的元素保留在页面上。在你的程序中添加此\
+    \ CSS：\n\n```css\n.sample-leave {\n    opacity: 1;\n    transition: opacity .5s\
+    \ ease-in;\n}\n\n.sample-leave.sample-leave-active {\n    opacity: 0.01;\n}\n\
+    ```\n\n注意，上述程序将只显示一次过渡。你可以在初始过渡之后为动画添加一个额外的过渡。这可以通过 `transitionAppear` 函数来实现。考虑以下程序，它在将其值设置为\
+    \ `true` 后使用了上述函数。\n\n```javascript\nrender: function() {\n  return (\n    <ReactCSSTransitionGroup\
+    \ transitionName=\"sample\" transitionAppear=\"true\">\n      <h1>Fade the initial\
+    \ mount</h1>\n    </ReactCSSTransitionGroup>\n  );\n}\n```\n\n以下应该是上述对应的 CSS 代码：\n\
+    \n```css\n.sample-appear {\n    opacity: 0.01;\n    transition: opacity .5s ease-in;\n\
+    }\n\n.sample-appear.sample-appear-active {\n    opacity: 1;\n}\n```\n\n为了让动画应用到子元素，属性\
+    \ `transitionAppear` 应该设置为 `true`。`ReactCSSTransitionGroup` 也可以挂载到 DOM 中。考虑下方所示示例：\n\
+    \n```javascript\nrender: function() {\n  var itms = this.state.itms.map(function(item,\
+    \ j) {\n    return (\n      <div key={itm} onClick={this.handleRemove.bind(this,\
+    \ j)}>\n        <ReactCSSTransitionGroup transitionName=\"sample\">\n        \
+    \  {itm}\n        </ReactCSSTransitionGroup>\n      </div>\n    );\n  }, this);\n\
+    \n  return (\n    <<div>\n      <button onClick={this.handleAdd}>Create Item</button>\n\
+    \      {itms}\n    </div>\n  );\n}\n```\n\n只需尝试运行该程序，并观察会发生什么。不会观察到任何结果。这是因为 `ReactCSSTransitionGroup`\
+    \ 是随着新项目一起挂载的。要解决这个问题，请在 `ReactCSSTransitionGroup` 内部挂载新项目。\n\n注意，`ReactCSSTransitionGroup`\
+    \ 的子元素可以是零为一个。这意味着进入或离开的单个元素是可以动画的。考虑以下程序：\n\n```javascript\nvar ReactCSSTransitionGroup\
+    \ = React.addons.CSSTransitionGroup;\nvar ICarousel = React.createClass({\n  propTypes:\
+    \ {\n    imageSrc: PropTypes.string.isRequired\n  },\n  render: function() {\n\
+    \    return (\n      <div>\n        <ReactCSSTransitionGroup name=\"carousel\"\
+    >\n          <img src={this.props.imgSrc} key={this.props.imgSrc} />\n       \
+    \ </ReactCSSTransitionGroup>\n      </div>\n    );\n  }\n});\n```\n\n该程序展示了如何在\
+    \ React 中实现一个简单的轮播图。你需要将 `imgSrc` 修改为你的图片名称以便对图片进行动画处理。注意我们在上面的示例中只使用了一张图片。然而，在\
+    \ React 创建的轮播图中对多张图片进行动画处理是可能的。你可能还想禁用动画。这可以通过将 `transitionLeave` 设置为 `false`\
+    \ 或 `transitionEnter` 设置为 `false` 来实现。两种情况下的效果是相同的。如果你想要进入动画但不要离开动画，可以使用此功能。另外注意，在\
+    \ `ReactTransitionGroup` 中，没有办法可以在过渡结束时被通知。你也可以对你的动画执行任何其他复杂的操作。\n\n# 第 7 章 React\
+    \ 中的双向绑定\n\nReact 允许数据仅单向流动，即从所有者到子元素。这是由于使用了 `ReactLink`。它采用了计算机的冯·诺依架构。然而，你可能需要读取某些数据然后将其流回你的应用程序。一个很好的例子是当你创建表单时。在这种情况下，一旦收到用户的输入，你可能需要更新\
+    \ React 的状态。这也适用于在 JavaScript 中创建布局，然后你想对 DOM 元素尺寸的更改做出响应。在 React 中，这可以很容易实现，将监听\
+    \ `change` 事件，从数据源读取，并最终对你的任何组件调用 `setState()`。如果你需要创建易于理解的程序，就可以关闭数据流循环。考虑下方提供的示例程序：\n\
+    \n```javascript\nvar NLink = React.createClass({\n  getInitialState: function()\
+    \ {\n    return {message: 'Hello there'};\n  },\n  handleChange: function(event)\
+    \ {\n    this.setState({message: event.target.value});\n  },\n  render: function()\
+    \ {\n    var mssge = this.state.mssge;\n    return <input type=\"text\" value={mssge}\
+    \ onChange={this.handleChange} />;\n  }\n});\n```\n\n我们刚刚在没有使用 `ReactLink` 的情况下创建了一个简单的表单。只需运行程序并观察输出。结果如下：(images/0019.gif)\n\
+    \n即使没有 `ReactLink`，表单也能正常工作。但是，如果表单有多个字段，我们可能需要更冗长的。通过 `ReactLink` 我们可以节省时间。考虑以下代码：\n\
+    \n```javascript\nvar WLink = React.createClass({\n  mixins: [React.addons.LinkedStateMixin],\n\
+    \  getInitialState: function() {\n    return {message: 'Hello there'};\n  },\n\
+    \  render: function() {\n    return <input type=\"text\" value={this.linkState('message')}\
+    \ />;\n  }\n});\n```\n\n注意 `StateMixin` 的使用，它的任务是为 React 组件添加 `linkState()` 方法。这反过来会给\
+    \ `ReactLink` 对象，提供 React 的当前状态以及一个更改此状态的回调。一旦运行程序，将看到像下面的文本框：(images/0019.gif)\n\
+    \n属于 `ReactLink` 的对象可以通过 props 向上或向下传递。这意味着在高层和深层之间可以轻松设置双向绑定。`ReactLink` 的第一阶段是创建它，第二阶段涉及使用它。\n\
+    \n如果你需要在没有 `valueLink` 的情况下创建 `ReactLink`，请参考以下：\n\n```javascript\nvar WMixin\
+    \ = React.createClass({\n  getInitialState: function() {\n    return {message:\
+    \ 'Hello there'};\n  },\n  handleChange: function(newValue) {\n    this.setState({message:\
+    \ newValue});\n  },\n  render: function() {\n    var vLink = {\n      value: this.state.message,\n\
+    \      requestChange: this.handleChange\n    };\n    return <input type=\"text\"\
+    \ valueLink={vLink} />;\n  }\n});\n```\n\n显然，`ReactLink` 对象仅包含一个 `value` 和一个 `requestChange`\
+    \ 属性。如果你需要在没有 `valueLink` 的情况下创建 `ReactLink`，可以使用：\n\n```javascript\nvar WLink\
+    \ = React.createClass({\n  mixins: [React.addons.LinkedStateMixin],\n  getInitialState:\
+    \ function() {\n    return {message: 'Hello there'};\n  },\n  render: function()\
+    \ {\n    var vLink = this.linkState('message');\n    var handleChange = function(f)\
+    \ {\n      vLink.requestChange(f.target.value);\n    };\n    return <input type=\"\
+    text\" value={vLink.value} onChange={handleChange} />;\n  }\n});\n```\n\n# 第 8\
+    \ 章 Props 的传递\n\n程序员在 React 中进行编程时希望创建抽象。。外部部分将有一个可以用于执行复杂操作的组件。\n\n## 手动传递\n\n"
+- fmt: "\nYou need to pass the properties down most of the time. This is to make sure\
+    \ that only a subset of the inner API has been exposed, and the one that is intended\
+    \ to work.\n\nConsider the following program code:\n\n```javascript\nvar FCheckbox\
+    \ = React.createClass({\n    render: function() {\n        var fClass = this.props.checked\
+    \ ? 'FancyChecked' : 'FancyUnchecked';\n        return (\n            <div className={fClass}\
+    \ onClick={this.props.onClick}>\n                {this.props.children}\n     \
+    \       </div>\n        );\n    }\n});\n\nReact.render(\n    document.getElementById('sample')\n\
+    );\n```\n\nJust write the program, and then run it. You will get the following\
+    \ output:\n\n![](images/00020.gif)\n\nWe have created `FancyCheckBox` in React.\
+    \ The transfer has been done manually.\n\n## Transfer with JSX\n\nPassing every\
+    \ property along can be tedious and fragile most of the time. To avoid this, it\
+    \ is recommended that you use destructing assignment together with rest properties\
+    \ for the purpose of extracting unknown properties. All the properties which need\
+    \ to be consumed should be listed out and then followed by `… other`. This is\
+    \ demonstrated below:\n\n`var { checked, ...other } = this.props;`\n\nWith this,\
+    \ all the props will be passed, with the exception of the ones being consumed.\
+    \ Consider the program code shown below:\n\n```javascript\nvar FCheckbox = React.createClass({\n\
+    \    render: function() {\n        var { checked, ...other } = this.props;\n \
+    \       var fClass = checked ? 'FancyChecked' : 'FancyUnchecked';\n        //\
+    \ `other` contains { onClick: console.log } but has no checked property\n    \
+    \    return (\n            <div {...other} className={fClass} />\n        );\n\
+    \    }\n});\n\nReact.render(\n    <FCheckbox checked={true} onClick={console.log.bind(console)}>\n\
+    \        Hello there!\n    </FancyCheckbox>,\n    document.getElementById('sample')\n\
+    );\n```\n\nJust write the above program, and then run it. The output will be as\
+    \ follows:\n\n![](images/00020.gif)\n\nThis shows that we have successfully created\
+    \ our fancy checkbox. The prop `checked` is a DOM attribute. In case you fail\
+    \ to pass the property in the way shown above, then you might end up passing it\
+    \ along. If you are passing unknown `other` props then use the property as shown\
+    \ below:\n\n```javascript\nvar FCheckbox = React.createClass({\n    render: function()\
+    \ {\n        var fClass = this.props.checked ? 'FancyChecked' : 'FancyUnchecked';\n\
+    \        // ANTI-PATTERN: `checked` which will be passed down the inner component\n\
+    \        return (\n            <div {...this.props} className={fClass} />\n  \
+    \      );\n    }\n});\n```\n\n## Consumption and transfer of the same prop\n\n\
+    It is possible that your component might need to consume and then transfer the\
+    \ same prop. In this case, you can explicitly pass it using `checked = {checked}`.\
+    \ This method is better compared to passing `this.prop` in full. The reason is\
+    \ because it will be easy to lint and refactor. Consider the program code below:\n\
+    \n```javascript\nvar FCheckbox = React.createClass({\n    render: function() {\n\
+    \        var { checked, title, ...other } = this.props;\n        var fClass =\
+    \ checked ? 'FancyChecked' : 'FancyUnchecked';\n        var fTitle = checked ?\
+    \ 'X ' + title : 'O ' + title;\n        return (\n            <label>\n      \
+    \          <input {...other} checked={checked} className={fClass} type=\"checkbox\"\
+    \ />\n                {fTitle}\n            </label>\n        );\n    }\n});\n\
+    ```\n\nJust write and run the above program. You will observe the following:\n\
+    \n![](images/00021.gif)\n\nThe output shows a checkbox which has been checked\
+    \ by default. You need to note that the order matters a lot. In case `… other`\
+    \ comes before JSX, then it will be hard for the consumer of the props to do overriding.\
+    \ In the above program, we are very sure that we will get an input of checkbox.\n\
+    \nWith Rest properties, it is possible for you to do an extraction of the properties\
+    \ of an object which are remaining into another object. Every property listed\
+    \ in the pattern is not included. Consider the following:\n\n`var { a, b, ...c\
+    \ } = { a: 1, b: 2, x: 3, y: 4 };`\n`a; // 1`\n`b; // 2`\n`c; // { x: 3, y: 4\
+    \ }`\n\nThe program shows how to effectively implement ES7 proposal.\n\n## Transfer\
+    \ with Underscore\n\nA library can be used instead of the JSX, and the same pattern\
+    \ can be achieved. With the underscore, properties can be filtered out using `_.omit`\
+    \ and can be copied into a new object using `_.extend`. The following program\
+    \ code demonstrates this can be done:\n\n```javascript\nvar FCheckbox = React.createClass({\n\
+    \    render: function() {\n        var cked = this.props.checked;\n        var\
+    \ other = _.omit(this.props, 'ckd');\n        var fClass = cked ? 'FancyChecked'\
+    \ : 'FancyUnchecked';\n        return (\n            React.DOM.div(_.extend({},\
+    \ other, { className: fClass }))\n        );\n    }\n});\n```\n\nJust write the\
+    \ program above, and then run it. You will observe the following output:\n\n![](images/00021.gif)\n\
+    \nFrom the figure above, it is very clear that we have achieved the same result,\
+    \ using a different method.\n\n# Chapter 9: React and Browsers\n\nWith React,\
+    \ too much abstraction is provided in such a way that you do not even have to\
+    \ access the DOM in a direct manner. In most cases, accessing the underlying API\
+    \ is enough for you to be able to work with existing code or a third-party library.\n\
+    \nReact Javascript is a fast programming language. It keeps a representation of\
+    \ the DOM in memory, and the `render()` method is responsible for returning the\
+    \ description of this DOM if needed. To update the browser, React must compute\
+    \ the difference between the in-memory description and this description.\n\nThe\
+    \ React’ “faked browser” is easier to use and performs well, so you should consider\
+    \ using it most of the times. However, sometimes, you might need to access the\
+    \ underlying API so as to work with a third-party library such as the JQuery plugin.\n\
+    \n## findDOMNode() and Refs\n\nYou have to get a reference to a DOM node so as\
+    \ to work with a browser in React. The function `React.findDOMNode(component)`\
+    \ in React serves this purpose. You have to call it so as to get a reference to\
+    \ the DOM node of your component. However, this function will only work on components\
+    \ which have been placed on DOM, that is, mounted components, otherwise, an exception\
+    \ will be thrown.\n\nConsider the following program code:\n\n```javascript\nvar\
+    \ MComponent = React.createClass({\n    handleClick: function() {\n        //\
+    \ focusing on the text input explicitly using raw DOM API.\n        React.findDOMNode(this.refs.mTxtInput).focus();\n\
+    \    },\n    render: function() {\n        // The attribute ref will add a reference\
+    \ to our component to\n        // this once the component has been mounted.\n\
+    \        return (\n            <div>\n                <input type=\"text\" ref=\"\
+    mTxtInput\" />\n                <input\n                    type=\"button\"\n\
+    \                    value=\"Focussing on the text input\"\n                 \
+    \   onClick={this.handleClick}\n                />\n            </div>\n     \
+    \   );\n    }\n});\n\nReact.render(\n    <MComponent />,\n    document.getElementById('sample')\n\
+    );\n```\n\nJust write the above program, and then run it. Observe the output which\
+    \ you get. It should be as follows:\n\n![](images/00022.gif)\n\nNotice that the\
+    \ program has displayed the components that we needed. The program has also shown\
+    \ that we can use either `refs` so as to refer to the component that you own or\
+    \ `this` so as to get the current component of React.\n\n## More on Refs\n\nOnce\
+    \ you have used the `render()` method so as to display the user interface of your\
+    \ application, you might need to invoke components which are on the instances\
+    \ of components which have been returned by the render method.\n\nHowever, this\
+    \ idea is not for making data flow through your application since the Reactive\
+    \ data flow is responsible for this either directly or indirectly. However, it\
+    \ is good to know how to implement this, since you might desire to use it someday.\
+    \ Consider the program given below:\n\n```javascript\nvar Application = React.createClass({\n\
+    ```\n"
+  raw: "You need to pass the properties down  most of the time. This is to make sure\
+    \ that only a subset of the inner API has been exposed, and the one that is intended\
+    \ to work.\n\nConsider the following program code:\n\nvarFCheckbox = React.createClass({\n\
+    \n              render: function() {\n\n                            varfClass\
+    \ = this.props.checked ? 'FancyChecked' : 'FancyUnchecked';\n\nreturn (\n\n             \
+    \ <div className={fClass} onClick={this.props.onClick}>\n\n              {this.props.children}\n\
+    \n</div>\n\n);\n\n}\n\n});\n\n              React.render(\n\n                           \
+    \ document.getElementById('sample')\n\n);\n\nJust write the program, and then\
+    \ run it. You will get the following output:\n\n![](images/00020.gif)\n\nWe have\
+    \ created FancyCheckBox in React. The transfer has been done manually.\n\n## \n\
+    \nTransfer with JSX\n\nPassing every property along can be tedious and fragile \
+    \ most of the time. To avoid this, it is recommended that you use destructing\
+    \ assignment together with rest properties for the purpose of extracting unknown\
+    \ properties. All the properties which need to be consumed should be listed out\
+    \ and then followed by “… other”. This is demonstrated below:\n\nvar { checked,\
+    \ ...other } = this.props;\n\nWith this, all the props will be passed, with the\
+    \ exception of the ones being consumed. Consider the program code shown below:\n\
+    \nvarFCheckbox = React.createClass({\n\n              render: function() {\n\n\
+                                var { checked, ...other } = this.props;\n\n             \
+    \               varfClass = checked ? 'FancyChecked' : 'FancyUnchecked';\n\n//\
+    \ `other` contains { onClick: console.log } but has no checked property\n\n             \
+    \ return (\n\n              <div {...other} className={fClass} />\n\n);\n\n}\n\
+    \n});\n\n              React.render(\n\n              <FCheckbox checked={true}\
+    \ onClick={console.log.bind(console)}>\n\n              Hello there!\n\n</FancyCheckbox>,\n\
+    \n              document.getElementById('sample')\n\n);\n\nJust write the above\
+    \ program, and then run it. The output will be as follows:\n\n![](images/00020.gif)\n\
+    \nThis shows that we have successfully created our fancy checkbox. The prop “checked”\
+    \ is a DOM attribute. In case you fail to pass the property in the way shown above,\
+    \ then you might end up passing it along. If you are passing unknown “other”props”then\
+    \ use the property as shown below:\n\nvarFCheckbox = React.createClass({\n\n             \
+    \ render: function() {\n\n                            varfClass = this.props.checked\
+    \ ? 'FancyChecked' : 'FancyUnchecked';\n\n// ANTI-PATTERN: `checked` which will\
+    \ be passed down the inner component\n\nreturn (\n\n              <div {...this.props}\
+    \ className={fClass} />\n\n);\n\n}\n\n});\n\n## Consumption and transfer of the\
+    \ same prop\n\nIt is possible that your component might need to consume and then\
+    \ transfer the same prop. In this case, you can explicitly pass it using checked\
+    \ = {checked}. This method is better compared to passing “this.prop” in full.\
+    \ The reason is because it will be easy to lint and refactor. Consider the program\
+    \ code given below:\n\nvarFCheckbox = React.createClass({\n\n              render:\
+    \ function() {\n\n                            var { checked, title, ...other }\
+    \ = this.props;\n\nvarfClass = checked ? 'FancyChecked' : 'FancyUnchecked';\n\n\
+    varfTitle = checked ? 'X ' + title : 'O ' + title;\n\nreturn (\n\n<label>\n\n\
+    <input {...other}\n\nchecked={checked}\n\nclassName={fClass}\n\ntype=\"checkbox\"\
+    \n\n/>\n\n{fTitle}\n\n</label>\n\n);\n\n}\n\n});\n\nJust write and run the above\
+    \ program. You will observe the following output:\n\n![](images/00021.gif)\n\n\
+    The output shows a checkbox which has been checked by default. You need to note\
+    \ that the order used matters a lot. In case “… other” comes before JSX props,\
+    \ then it will be hard for the consumer of the props to do overriding. In the\
+    \ above program, we are very sure that we will get an input of type checkbox once\
+    \ we run the program.\n\nWith the Rest properties, it is possible for you to do\
+    \ an extraction of the properties of an object which are remaining into another\
+    \ and new object. Every other property listed in the pattern is not included.\
+    \ Consider the following:\n\nvar { a, b, ...c } = { a: 1, b: 2, x: 3, y: 4 };\n\
+    \n              a; // 1\n\n              b; // 2\n\n              c; // { x: 3,\
+    \ y: 4 }\n\nThe program shows how to effectively implement an ES7 proposal experimentally.\n\
+    \n## Transfer with an Underscore\n\nA library can be used instead of the JSX,\
+    \ and the same pattern can be achieved. With the underscore, properties can be\
+    \ filtered out using the “_.omit” and properties can be copied into a new object\
+    \ using “_.extend”. The following program code demonstrates how this can be done:\n\
+    \nVar FCheckbox = React.createClass({\n\nrender: function() {\n\n             \
+    \ varchckd = this.props.checked;\n\n              varothr = _.omit(this.props,\
+    \ 'chckd');\n\n              varfClass = checked ? 'FancyChecked' : 'FancyUnchecked';             \n\
+    \nreturn (                           \n\nReact.DOM.div(_.extend({}, other, { className:\
+    \ fClass }))\n\n);\n\n}\n\n});\n\nJust write the program above, and then runit.\
+    \ You will observe the following output:\n\n![](images/00021.gif)\n\nFrom the\
+    \ figure above, it is very clear that we have achieved the same result, but using\
+    \ a different method.\n\n# Chapter 9\n\nReact and Browsers\n\nWith React, too\
+    \ much abstraction is provided in such a way that you do not even have to access\
+    \ the DOM in a direct manner. In most cases, accessing the underlying API is enough\
+    \ for you to be able to work with existing code or a third-party library.\n\n\
+    React Javascript  is a very fast programming language. It keeps a representation\
+    \ of the DOM in memory, and the “render()” method is responsible for returning\
+    \ the description of this DOM if needed. To update the browser, React must compute\
+    \ the difference between the in-memory description and this description.\n\nThe\
+    \ Reacts’ “faked browser” is easier to use and performs well, so you should consider\
+    \ using it most of the times. However, sometimes, you might  need to access the\
+    \ underlying API so as to work with a third-party library such as the JQuery plugin.\n\
+    \n## findDOMNode() and Refs\n\nYou have to get a reference to a DOM node so as\
+    \ to work with a browser in React. The function “React.findDOMNode(component)”\
+    \ in React serves this purpose. You have to call it so as to get a reference to\
+    \ the DOM node of your component. However, this function will only work on components\
+    \ which have been placed on DOM, that is, mounted components, otherwise, an exception\
+    \ will be thrown.\n\nConsider the following program code:\n\nvarMComponent = React.createClass({\n\
+    \n              handleClick: function() {\n\n// focusing on the text input explicitly\
+    \ using raw DOM API.\n\n                            React.findDOMNode(this.refs.mTxtInput).focus();\n\
+    \n},\n\nrender: function() {\n\n// The attribute ref will add a reference to our\
+    \ component to\n\n// this.refsonce the component has been mounted.\n\n             \
+    \ return (\n\n<div>\n\n<input type=\"text\" ref=\"mTxtInput\" />\n\n<input\n\n\
+    type=\"button\"\n\nvalue=\"Focussing on the text input\"\n\nonClick={this.handleClick}\n\
+    \n/>\n\n</div>\n\n);\n\n}\n\n});\n\nReact.render(\n\n<MComponent />,\n\ndocument.getElementById('sample')\n\
+    \n);\n\nJust write the above program, and then run it. Observe the output which\
+    \ you get. It should be as follows:\n\n![](images/00022.gif)\n\nNotice that the\
+    \ program has displayed the components that we needed. The program has also shown\
+    \ that we can use either “refs” so as to refer to the component that you own or\
+    \ “this” so as to get the current component of React.\n\n## More on Refs\n\nOnce\
+    \ you have used the “render()” method so as to display the user interface of your\
+    \ application, you might need to invoke components which are on the instances\
+    \ of components which have been returned by the render method.\n\nHowever, this\
+    \ idea is not for making data flow through your application since the Reactive\
+    \ data flow is responsible for this either directly or indirectly. However, it\
+    \ is good to know how to implement this, since you might desire to use it somewhere\
+    \ someday. Consider the program given below:\n\nvar Application = React.createClass({"
+  toc: []
+  trans: "\n在大多数情况下，你需要将属性向下传递。这是为了确保只暴露内部 API 的子集，并且是预期的工作部分。\n\n考虑以下程序代码：\n\n```javascript\n\
+    var FCheckbox = React.createClass({\n    render: function() {\n        var fClass\
+    \ = this.props.checked ? 'FancyChecked' : 'FancyUnchecked';\n        return (\n\
+    \            <div className={fClass} onClick={this.props.onClick}>\n         \
+    \       {this.props.children}\n            </div>\n        );\n    }\n});\n\n\
+    React.render(\n    document.getElementById('sample')\n);\n```\n\n编写该程序并运行它。你将得到以下输出：\n\
+    \n![](img/00020.gif)\n\n我们在 React 中创建了 `FancyCheckBox`。传递是手动完成的。\n\n## 使用 JSX\
+    \ 进行传递\n\n在大多数情况下，沿用每一个属性可能是繁琐且脆弱的。为了避免这种情况，建议你使用解构赋值结合剩余属性（rest properties）来提取未知属性。所有需要被消耗的属性都应该列出来，然后紧跟\
+    \ `… other`。下文所示：\n\n`var { checked, ...other } = this.props;`\n\n通过这种方式，所有的 props\
+    \ 将被传递，被消耗的除外。考虑所示的程序代码：\n\n```javascript\nvar FCheckbox = React.createClass({\n\
+    \    render: function() {\n        var { checked, ...other } = this.props;\n \
+    \       var fClass = checked ? 'FancyChecked' : 'FancyUnchecked';\n        //\
+    \ `other` 包含 { onClick: console.log } 但没有 checked 属性\n        return (\n     \
+    \       <div {...other} className={fClass} />\n        );\n    }\n});\n\nReact.render(\n\
+    \    <FCheckbox checked={true} onClick={console.log.bind(console)}>\n        Hello\
+    \ there!\n    </FCheckbox>,\n    document.getElementById('sample')\n);\n```\n\n\
+    编写上述程序并运行。输出将如下：\n\n![](img/00020.gif)\n\n这说明我们已经成功创建了我们的花式复选框。属性 `checked` 是一个\
+    \ DOM 属性。如果你没有按照上述方式传递属性，那么你可能会将它直接传递下去。如果你正在传递未知的 `other` props，请像下面所示使用该属性：\n\
+    \n```javascript\nvar FCheckbox = React.createClass({\n    render: function() {\n\
+    \        var fClass = this.props.checked ? 'FancyChecked' : 'FancyUnchecked';\n\
+    \        // 反模式模式：`checked` 将被传递给内部组件\n        return (\n            <div {...this.props}\
+    \ className={fClass} />\n        );\n    }\n});\n```\n\n## 同一属性的消耗与传递\n\n你的组件可能需要消耗并传递同一个属性。在这种情况下，你可以显式地使用\
+    \ `checked = {checked}` 来传递它。这种方法比完整地传递 `this.prop` 更好。原因是因为它更容易进行代码检查（lint）和重构。考虑下方的程序代码：\n\
+    \n```javascript\nvar FCheckbox = React.createClass({\n    render: function() {\n\
+    \        var { checked, title, ...other } = this.props;\n        var fClass =\
+    \ checked ? 'FancyChecked' : 'FancyUnchecked';\n        var fTitle = checked ?\
+    \ 'X ' + title : 'O ' + title;\n        return (\n            <label>\n      \
+    \          <input {...other} checked={checked} className={fClass} type=\"checkbox\"\
+    \ />\n                {fTitle}\n            </label>\n        );\n    }\n});\n\
+    ```\n\n编写并运行上述程序。你将观察到以下情况：\n\n![](img/00021.gif)\n\n输出显示了一个默认被选中的复选框。你需要注意的是顺序非常重要。如果\
+    \ `… other` 出现在 JSX 之前，那么属性的消耗者将很难进行覆盖。在上面的程序中，我们非常确定会得到一个复选框的输入。\n\n通过剩余属性（Rest\
+    \ properties），你可以将对象中剩余的属性提取到另一个对象中。模式中列出的每个属性都不会被包含在。考虑以下：\n\n`var { a, b, ...c\
+    \ } = { a: 1, b: 2, x: 3, y: 4 };`\n`a; // 1`\n`b; // 2`\n`c; // { x: 3, y: 4\
+    \ }`\n\n该程序展示了如何有效实现 ES7 。\n\n## 使用 Underscore 进行传递\n\n可以使用库代替 JSX，并实现相同的模式。通过\
+    \ Underscore，可以使用 `_.omit` 过滤属性，并可以使用 `_.extend` 将其拷贝到新对象中。下面的程序代码演示了这一点：\n\n\
+    ```javascript\nvar FCheckbox = React.createClass({\n    render: function() {\n\
+    \        var cked = this.props.checked;\n        var other = _.omit(this.props,\
+    \ 'ckd');\n        var fClass = cked ? 'FancyChecked' : 'FancyUnchecked';\n  \
+    \      return (\n            React.DOM.div(_.extend({}, other, { className: fClass\
+    \ }))\n        );\n    }\n});\n```\n\n编写上面的程序并运行它。你将观察到以下输出：\n\n![](img/00021.gif)\n\
+    \n从上面的图中清楚地看到，我们使用不同的方法实现了相同的结果。\n\n# 第 9 章：React 与浏览器\n\n在 React 中，提供了大量的抽象，以至于你甚至不需要直接访问\
+    \ DOM。在大多数情况下，访问底层 API 就足够让你与现有代码或第三方库工作了。\n\nReact Javascript 是一种快速的编程语言。它在内存中保持\
+    \ DOM 的表示，`render()` 方法负责在需要时返回该 DOM 的描述。为了更新浏览器，React 必须计算内存中的描述与此描述之间的差异。\n\n\
+    React 的“伪造浏览器”更容易使用且性能良好，因此你应该大多数时候考虑使用它。然而，有时你可能需要访问底层 API 以与 JQuery 插件等第三方库工作。\n\
+    \n## findDOMNode() 和 Refs\n\n在 React 中与浏览器工作时，你需要获取 DOM 节点的引用。React 中的 `React.findDOMNode(component)`\
+    \ 函数用于此目的。你必须调用它来获取组件 DOM 节点的引用。但是，此函数仅对已放置在 DOM 中的组件有效，否则将抛出异常。\n\n考虑以下程序代码：\n\
+    \n```javascript\nvar MComponent = React.createClass({\n    handleClick: function()\
+    \ {\n        // 使用原生 DOM API 聚焦输入\n        React.findDOMNode(this.refs.mTxtInput).focus();\n\
+    \    },\n    render: function() {\n        // ref 属性会在组件挂载后将组件引用\n        // 添加到\
+    \ this 中。\n        return (\n            <div>\n                <input type=\"\
+    text\" ref=\"mTxtInput\" />\n                <input\n                    type=\"\
+    button\"\n                    value=\"Focussing on the text input\"\n        \
+    \            onClick={this.handleClick}\n                />\n            </div>\n\
+    \        );\n    }\n});\n\nReact.render(\n    <MComponent />,\n    document.getElementById('sample')\n\
+    );\n```\n\n编写上述程序并运行它。观察你得到的输出。它应该是这样的：\n\n![](img/00022.gif)\n\n注意程序显示了我们需要的组件。程序还展示了我们可以使用\
+    \ `refs` 来引用你拥有的组件，或者使用 `this` 获取当前的 React 组件。\n\n## 关于 Refs 的更多信息\n\n一旦你使用了 `render()`\
+    \ 方法来显示应用程序的用户界面，你可能需要调用位于 render 方法返回的组件实例上的组件。\n\n然而，这种想法并不是为了让数据在应用程序中流动，因为响应式数据流直接或间接地负责了此工作。但是，了解如何实现它是好的，因为你将来可能想要使用它。考虑给定的程序：\n\
+    \n```javascript\nvar Application = React.createClass({\n```\n"
+- fmt: "\n```javascript\ngetInitialState: function() {\n  return {userInput: ''};\n\
+    },\n\nhandleChange: function(ev) {\n  this.setState({userInput: ev.target.value});\n\
+    },\n\nclearAndFocusInput: function() {\n  this.setState({userInput: ''}); // Clearing\
+    \ the input\n  // focusing on the <input /> now!\n},\n\nrender: function() {\n\
+    \  return (\n    <div>\n      <div onClick={this.clearAndFocusInput}>\n      \
+    \  Click for focusing and Resetting\n      </div>\n      <input\n        value={this.state.userInput}\n\
+    \        onChange={this.handleChange}\n      />\n    </div>\n  );\n}\n});\n```\n\
+    \nJust write the above program, and then run it. You will be presented with the\
+    \ following output:\n\n![](images/00023.gif)\n\nIn the program, we want to tell\
+    \ the input component to focus, once its value has been changed to an empty string.\
+    \ This component cannot infer this from its props over time. We need to inform\
+    \ it that it should become focused. However, the `render()` method returns a description\
+    \ of the children at a particular time, rather than the actual composition of\
+    \ the components of the child. This means that you should not entirely rely on\
+    \ anything returned from the `render()` method, since it might not be meaningful\
+    \ at a particular time.\n\nConsider the following counterexample being given:\n\
+    \n```javascript\n// This is a counterexample. Avoid this.\n\nrender: function()\
+    \ {\n  var mInput = <input />;// let us try to call a number of methods on this\n\
+    \  this.rememberThisInput = mInput; // this will serve as an input in futureNOW!\n\
+    \n  return (\n    <div>\n      <div>...</div>\n      {mInput}\n    </div>\n  );\n\
+    }\n```\n\nIn the above example, we have created a real backing instance for the\
+    \ out `<input />` element.\n\n## Ref Callback\n\nThe `ref` attribute can be used\
+    \ as a callback function rather than as a name. Once the component has been mounted,\
+    \ then execution of this element will be done immediately. The component being\
+    \ referenced needs to be passed as a parameter, meaning that the parameter can\
+    \ be used immediately by the callback function. The reference can also be saved\
+    \ for future use.\n\nConsider the following example:\n\n```javascript\nvar App\
+    \ = React.createClass({\n  getInitialState: function() {\n    return {userInput:\
+    \ ''};\n  },\n\n  handleChange: function(ev) {\n    this.setState({userInput:\
+    \ ev.target.value});\n  },\n\n  clearAndFocusInput: function() {\n    // Clearing\
+    \ the input\n    this.setState({userInput: ''}, function() {\n      // After re-rendering\
+    \ of the component, this code will be executed.\n      React.findDOMNode(this.refs.theInput).focus();\
+    \   // Already focussed\n    });\n  },\n\n  render: function() {\n    return (\n\
+    \      <div>\n        <div onClick={this.clearAndFocusInput}>\n          Click\
+    \ forFocusing and Resetting\n        </div>\n        <input\n          ref=\"\
+    theInput\"\n          value={this.state.userInput}\n          onChange={this.handleChange}\n\
+    \        />\n      </div>\n    );\n  }\n});\n```\n\nIn the above example, the\
+    \ returned result will be a description of an instance of `<input/>`. The program\
+    \ should present to you the following interface:\n\n![](images/00024.gif)\n\n\
+    However, the true instance is accessible via `this.refs.theInput`. This will always\
+    \ return the correct instance, provided render returns the child component having\
+    \ ref=\"input\"`. This is also applicable on higher-level components. Notice that\
+    \ if a child is destroyed, the same thing happens to its ref. You should avoid\
+    \ accessing refs inside the render method of any component.\n\n# Conclusion\n\n\
+    It can be concluded that React Javascript, which people commonly refer to as ReactJS\
+    \ or React.js is a Javascript library. It is open-source, meaning that you can\
+    \ download it for free. Programmers use it to develop user interfaces for web\
+    \ applications. The library was developed to help programmers solve problems that\
+    \ they experience when developing simple page applications.\n\nIt is also possible\
+    \ for developers to use this library for development of large web applications\
+    \ which are able to access and manage data which change most frequently. The language\
+    \ has the view of the web application, meaning that it can only be used for the\
+    \ development of the interface part of the application. It is possible to integrate\
+    \ it with other libraries belonging to Javascript so that the developed applications\
+    \ can be amazing to the users.\n"
+  raw: 'getInitialState: function() {
+
+
+                  return {userInput: ''''};
+
+
+    },
+
+
+    handleChange: function(ev) {
+
+
+    this.setState({userInput: ev.target.value});
+
+
+    },
+
+
+    clearAndFocusInput: function() {
+
+
+                  this.setState({userInput: ''''}); // Clearing the input
+
+
+    // focusing on the <input /> now!
+
+
+    },
+
+
+    render: function() {
+
+
+                  return (
+
+
+    <div>
+
+
+    <div onClick={this.clearAndFocusInput}>
+
+
+    Click for focusing and Resetting
+
+
+    </div>
+
+
+    <input
+
+
+    value={this.state.userInput}
+
+
+    onChange={this.handleChange}
+
+
+    />
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    Just write the above program, and then run it. You will be presented with the
+    following output:
+
+
+    ![](images/00023.gif)
+
+
+    In the program, we want to tell the input component to focus, once its value has
+    been changed to an empty string. This component cannot infer this from its props
+    over time. We need to inform it that it should become focused. However, the “render()”
+    method returns a description of the children at a particular time, rather than
+    the actual composition of the components of the child. This means that you should
+    not entirely rely on anything returned from the “render()” method, since it might
+    not be meaningful at a particular time.
+
+
+    Consider the following counterexample being given:
+
+
+    // This is a counterexample. Avoid this.
+
+
+    render: function() {
+
+
+                  varmInput = <input />;// let us try to call a number of methods
+    on this
+
+
+                  this.rememberThisInput = mInput; // this will serve as an input
+    in futureNOW!
+
+
+    return (
+
+
+    <div>
+
+
+    <div>...</div>
+
+
+    {mInput}
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    In the above example, we have created a real backing instance for the out <input
+    /> element.
+
+
+    ## Ref Callback
+
+
+    The “ref” attribute can be used as a callback function rather than as a name.
+    Once the component has been mounted, then execution of this element will be done
+    immediately. The component being referenced needs to be passed as a parameter,
+    meaning that the parameter can be used immediately by the callback function. The
+    reference can also be saved for future use.
+
+
+    Consider the following example:
+
+
+    var App = React.createClass({
+
+
+                  getInitialState: function() {
+
+
+                  return {userInput: ''''};
+
+
+    },
+
+
+    handleChange: function(ev) {
+
+
+                  this.setState({userInput: ev.target.value});
+
+
+    },
+
+
+    clearAndFocusInput: function() {
+
+
+    // Clearing the input
+
+
+                  this.setState({userInput: ''''}, function() {
+
+
+    // After re-rendering of the component, this code will be executed.
+
+
+    React.findDOMNode(this.refs.theInput).focus();   // Already focussed
+
+
+    });
+
+
+    },
+
+
+    render: function() {
+
+
+                  return (
+
+
+    <div>
+
+
+    <div onClick={this.clearAndFocusInput}>
+
+
+    Click forFocusing and Resetting
+
+
+    </div>
+
+
+    <input
+
+
+    ref="theInput"
+
+
+                  value={this.state.userInput}
+
+
+                  onChange={this.handleChange}
+
+
+    />
+
+
+    </div>
+
+
+    );
+
+
+    }
+
+
+    });
+
+
+    In the above example, the returned result will be a description of an instance
+    of <input/>. The program should present to you the following interface:
+
+
+    ![](images/00024.gif)
+
+
+    However, the true instance is accessible via “this.refs.theInput.”This will always
+    return the correct instance, provided render returns the child component having
+    ref=”input.” This is also applicable on higher-level components. Notice that if
+    a child is destroyed, the same thing happens to its ref. You should avoid accessing
+    refs inside the render method of any component.
+
+
+    # Conclusion
+
+
+    It can be concluded that React Javascript, which people commonly refer to as ReactJS
+    or React.js is a Javascript library. It is open-source, meaning that you can download
+    it for free. Programmers use it to develop user interfaces for web applications.
+    The library was developed to help programmers solve problems that they experience
+    when developing simple page applications.
+
+
+    It is also possible for developers to use this library for development of large
+    web applications which are able to access and manage data which change most frequently.
+    The language has the view of the web application, meaning that it can only be
+    used for the development of the interface part of the application. It is possible
+    to integrate it with other libraries belonging to Javascript so that the developed
+    applications can be amazing to the users.
+
+
+    For you to use the library, you need to begin by downloading it. The downloaded
+    file will always be in a zipped format, meaning that it must be extracted after
+    the download. The extracted components should be kept in the same directory where
+    your React program files will be kept. You may also choose to correctly specify
+    the path of the location of the extracted components. As long as you have the
+    library, you are set to start programming.
+
+
+    The writing of the code can be done in any of the editors, provided you are comfortable
+    with it. There also are numerous editors available online for the purpose of writing
+    React programs. A good example of these is the “jsfiddle.” With these, you will
+    have not to download the Javascript library, but just to write your React code
+    and then run it. React supports the use of components which one can use to call
+    classes.
+
+
+    One can also add data to React components. The language makes use of elements
+    called “props,”which are responsible for the passage of data from the child to
+    the parent. The user interface of an application developed in React can be broken
+    into a hierarchy of components.'
+  toc: []
+  trans: "\n\n```javascript\ngetInitialState: function() {\n  return {userInput: ''};\n\
+    },\n\nhandleChange: function(ev) {\n  this.setState({userInput: ev.target.value});\n\
+    },\n\nclearAndFocusInput: function() {\n  this.setState({userInput: ''}); // Clearing\
+    \ the input\n  // focusing on the <input /> now!\n},\n\nrender: function() {\n\
+    \  return (\n    <div>\n      <div onClick={this.clearAndFocusInput}>\n      \
+    \  Click for focusing and Resetting\n      </</div>\n      <input\n        value={this.state.userInput}\n\
+    \        onChange={this.handleChange}\n      />\n    </div>\n  );\n}\n});\n```\n\
+    \n只需编写上述程序并运行。你将看到以下输出：\n\n![](img/00023.gif)\n\n在程序中，我们想要告诉输入组件，当它的值更改为空字符串时让其获取焦点。该组件无法从其随时间变化的\
+    \ props 中推断出这一点。我们需要通知它应该获取焦点。然而，`render()` 方法返回的是特定时刻子元素的描述，而不是子组件的实际组成。这意味着你不应该完全依赖于\
+    \ `render()` 方法返回的任何内容，因为它们在特定时刻可能是没有意义的。\n\n考虑以下反例：\n\n```javascript\n// This\
+    \ is a counterexample. Avoid this.\n\nrender: function() {\n  var mInput = <input\
+    \ />;// let us try to call a number of methods on this\n  this.rememberThisInput\
+    \ = mInput; // this will serve as an input in futureNOW!\n\n  return (\n    <div>\n\
+    \      <div>...</div>\n      {mInput}\n    </div>\n  );\n}\n```\n\n在上面的示例中，我们为输出\
+    \ `<input />` 元素创建了一个真实的底层实例。\n\n## Ref 回调\n\n`ref` 属性可以作为回调函数而不是名称。一旦组件完成，该元素的执行将立即完成。被引用的组件需要作为参数传递，这意味着该参数可以被回调函数立即使用。引用也可以被保存以供以后使用。\n\
+    \n考虑以下示例：\n\n```javascript\nvar App = React.createClass({\n  getInitialState:\
+    \ function() {\n    return {userInput: ''};\n  },\n\n  handleChange: function(ev)\
+    \ {\n    this.setState({userInput: ev.target.value});\n  },\n\n  clearAndFocusInput:\
+    \ function() {\n    // Clearing the input\n    this.setState({userInput: ''},\
+    \ function() {\n      // 在组件重新渲染后，这段代码将被执行。\n      React.findDOMNode(this.refs.theInput).focus();\
+    \   // Already focussed\n    });\n  },\n\n  render: function() {\n    return (\n\
+    \      <div>\n        <div onClick={this.clearAndFocusInput}>\n          Click\
+    \ forFocusing and Resetting\n        </div>\n        <input\n          ref=\"\
+    theInput\"\n          value={this.state.userInput}\n          onChange={this.handleChange}\n\
+    \        />\n      </div>\n    );\n  }\n});\n```\n\n在上面的示例中，返回的结果是 `<input/>`\
+    \ 实例的描述。程序将向你展示以下界面：\n\n![](img/00024.gif)\n\n然而，真实的实例可以通过 `this.refs.theInput`\
+    \ 访问。只要 render 返回了带有 `ref=\"input\"` 的子组件，它始终会返回正确的实例。这也适用于更高级别的组件。注意，如果子元素被销毁，其\
+    \ ref 也会发生同样的情况。你应该避免在任何组件的 render 方法内部访问 refs。\n\n# 结论\n\n可以得出结论，人们常说的 ReactJS\
+    \ 或 React.js 即 React Javascript 是一个 JavaScript 库。它是开源的，这意味着你可以免费下载。程序员使用它来开发 Web\
+    \ 应用程序的用户界面。该库的开发目的是帮助程序员解决开发简单页面应用时遇到的问题。\n\n开发者也可以使用此库开发大型 Web 应用程序，能够访问和管理变化频繁的数据。该语言负责\
+    \ Web 应用的视图，意味着它只能用于应用程序界面部分的开发。它可以与 JavaScript 的其他库集成，使得开发的应用程序对用户来说非常惊艳。\n\n"

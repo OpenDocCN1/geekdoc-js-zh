@@ -1,0 +1,1428 @@
+<p><img src="cover.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 473 751" preserveaspectratio="none">
+<image width="473" height="751" xlink:href="cover.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000.html"></span></p>
+<p><strong>SQL</strong></p>
+<p>Programming Beginner’s Guide</p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>By<br />
+<br />
+Richard Dorsey</strong></p>
+<p><img src="images/00004.jpeg" class="calibre2" alt="logo" /></p>
+<p><span id="part0001.html"></span></p>
+<p><strong>Copyright 2017 by Richard Dorsey - All rights
+reserved.</strong></p>
+<p>The follow eBook is reproduced below with the goal of providing
+information that is as accurate and reliable as possible. Regardless,
+purchasing this eBook can be seen as consent to the fact that both the
+publisher and the author of this book are in no way experts on the
+topics discussed within and that any recommendations or suggestions that
+are made herein are for entertainment purposes only. Professionals
+should be consulted as needed prior to undertaking any of the action
+endorsed herein.</p>
+<p>This declaration is deemed fair and valid by both the American Bar
+Association and the Committee of Publishers Association and is legally
+binding throughout the United States.</p>
+<p>Furthermore, the transmission, duplication or reproduction of any of
+the following work including specific information will be considered an
+illegal act irrespective of if it is done electronically or in print.
+This extends to creating a secondary or tertiary copy of the work or a
+recorded copy and is only allowed with express written consent from the
+Publisher. All additional right reserved.</p>
+<p>The information in the following pages is broadly considered to be a
+truthful and accurate account of facts and as such any inattention, use
+or misuse of the information in question by the reader will render any
+resulting actions solely under their purview. There are no scenarios in
+which the publisher or the original author of this work can be in any
+fashion deemed liable for any hardship or damages that may befall them
+after undertaking information described herein.</p>
+<p>Additionally, the information in the following pages is intended only
+for informational purposes and should thus be thought of as universal.
+As befitting its nature, it is presented without assurance regarding its
+prolonged validity or interim quality. Trademarks that are mentioned are
+done without written consent and can in no way be considered an
+endorsement from the trademark holder.</p>
+<p><span id="part0002.html"></span></p>
+<p><strong>Table of Contents</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p> </p>
+<p><a href="#part0003_split_000.html_chap1"
+class="calibre5">Introduction</a></p>
+<p><a href="#part0003_split_001.html_chap2" class="calibre5">Chapter 1:
+What Is SQL?</a></p>
+<p><a href="#part0003_split_002.html_chap3" class="calibre5">Chapter 2:
+SQL Basics</a></p>
+<p><a href="#part0003_split_003.html_chap4" class="calibre5">Chapter 3:
+SQL Syntax</a></p>
+<p><a href="#part0003_split_004.html_chap5" class="calibre5">Chapter 4:
+Statements in SQL</a></p>
+<p><a href="#part0003_split_005.html_chap6" class="calibre5">Chapter 5:
+The Creation of Data Bases in SQL</a></p>
+<p><a href="#part0003_split_006.html_chap7" class="calibre5">Chapter 6:
+SQL Data Types</a></p>
+<p><a href="#part0003_split_007.html_chap8" class="calibre5">Chapter 7:
+Query Types</a></p>
+<p><a href="#part0003_split_008.html_chap9" class="calibre5">Chapter 8:
+Constraints in SQL</a></p>
+<p><a href="#part0003_split_009.html_chap10" class="calibre5">Chapter 9:
+SQL and Math</a></p>
+<p><a href="#part0003_split_010.html_chap11" class="calibre5">Chapter
+10: Transactions That You Can Use in SQL</a></p>
+<p><a href="#part0003_split_011.html_chap12" class="calibre5">Chapter
+11: SQL Subqueries</a></p>
+<p><a href="#part0003_split_012.html_chap13" class="calibre5">Chapter
+12: Indexes in SQL</a></p>
+<p><a href="#part0003_split_013.html_chap14" class="calibre5">Chapter
+13: Altering Tables</a></p>
+<p><a href="#part0003_split_014.html_chap15" class="calibre5">Chapter
+14: Cloning a Table in SQL</a></p>
+<p><a href="#part0003_split_015.html_chap16" class="calibre5">Chapter
+15: Duplicates in Your SQL Code</a></p>
+<p><a href="#part0003_split_016.html_chap17" class="calibre5">Chapter
+16: SQL Injections</a></p>
+<p><a href="#part0003_split_017.html_chap18" class="calibre5">Chapter
+17: Your Data Base – How to Tune It</a></p>
+<p><a href="#part0003_split_018.html_chap19" class="calibre5">Chapter
+18: Wild Card Operators</a></p>
+<p><a href="#part0003_split_019.html_chap20" class="calibre5">Chapter
+19: SQL Tips and Tricks</a></p>
+<p><a href="#part0003_split_020.html_chap21"
+class="calibre5">Conclusion</a></p>
+<p><span id="part0003_split_000.html"></span></p>
+<p><strong>Introduction</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><span class="dropcaps">C</span>ongratulations on downloading <em>SQL:
+Programming Beginner’ Guide</em>, and thank you for doing so.</p>
+<p>The following chapters will discuss various things that you need to
+know in order to use SQL properly and make your job easier. SQL is
+supposed to make it to where you are not working as hard at your job,
+and if it is used correctly, then it will do just that!</p>
+<p>There are plenty of books on this subject on the market, thanks again
+for choosing this one! Every endeavor was made to ensure it is full of
+as much useful information as possible. Please enjoy!</p>
+<div id="part0003_split_000.html_calibre_pb_0" class="calibre7">
+
+</div>
+<p><span id="part0003_split_001.html"></span></p>
+<p><strong>Chapter 1</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>What Is SQL?</strong></p>
+<p><span class="dropcaps">S</span>QL stands for structured query
+language. This language is a domain-specific language that you are going
+to use if you are programming or trying to manage data inside of an
+RDBMS (relational database management system).</p>
+<p>SQL was started with math, both tuple relational calculus and
+relational algebra. There is a lot of data definitions and manipulations
+along with control language that is going to be inside of SQL. SQL
+involves the use of things such as delete, update, insert, and
+query.</p>
+<p>In essence, you are going to be able to update, delete, insert, and
+search for the things that you are going to be putting into the program.
+It is very common for SQL to be described as a declarative language.
+However, the program also allows for procedural elements.</p>
+<p>This is one of the first languages that was able to use the
+relational model that was created by Edgar F. Codd. Although it is not
+going to work with all of the rules that are set forth for this example,
+it is one of the most widely used languages for data bases.</p>
+<p>In 1986, SQL became part of the ANSI. Then, in 1987, it became part
+of the ISO. However, there have been updates since then that have made
+it to where the language can include larger sets. Just keep in mind that
+the code for SQL is not going to be 100 percent portable between data
+bases unless there are some adjustments to the code so that it fits the
+requirements for that data base.</p>
+<p>Learning SQL can be one of the better decisions that you make about
+your career because you can push yourself forward with it that way that
+you can rely on using your own knowledge rather than having to go to
+someone else for their knowledge. In fact, people are going to be coming
+to you to learn what it is that you know about the program.</p>
+<p>By learning SQL, you are going to be able to do more than you may
+have been able to before. Here are a few points that are going to give
+you a good reason as to why you should learn SQL.</p>
+<p><strong>Money</strong></p>
+<p>Learning SQL makes it to where you have the opportunity to earn some
+extra money. Developers that work with SQL make around $92,000 a year!
+An administrator for an SQL data base is going to make about $97,000 a
+year. So, just learning SQL makes it to where you are able to earn
+around twice as much as what the average American household is going to
+make in a year.</p>
+<p><strong>Highly sought after</strong></p>
+<p>Employers want people who know SQL! The more knowledge that you have
+about SQL, the more sought after you are going to by employers. Knowing
+SQL is not only going to benefit you but your employer as well because
+they are not going to have to pay for you to learn the program. The
+interviewing process is going to be better than any other process that
+you have gone through, and you may find that they are going to be
+willing to give you more money just for knowing SQL over the other
+person. With SQL knowledge, you are going to be opening yourself up for
+more careers than you might have been able to apply for before.</p>
+<p><strong>Get answers</strong></p>
+<p>SQL is going to give you the answers that you are looking for to any
+questions that you may have about business or data that is being stored
+inside of your data base. Therefore, you are going to be more
+self-sufficient and not as dependent on others when it comes to
+business. If you are able to answer questions on your own so that you
+are not stopping someone else from doing their job, then an employer is
+going to be able to save money by hiring you because you are going to be
+able to answer questions on your own rather than having to mess with
+hiring someone else to solve those issues. Knowing SQL is even going to
+help you if you want to start your own business or push your business
+that you have already started to the next step that has just been out of
+your reach.</p>
+<p><strong>More stable than Excel</strong></p>
+<p>When you are using Excel for significant amounts of data, you may
+notice that it is too much for the program, and therefore, the program
+tends to crash. A crash leads to lost data and extra time that you are
+going to have to go in and fix anything that may be wrong or entering
+data that was not saved. SQL is going to be much more reliable for you
+to use when you are trying to work with large quantities of data, and it
+is going to save you some time working with it because it is not going
+to require too much for you to work with the processes that SQL
+offers.</p>
+<p><strong>Making reports</strong></p>
+<p>Searching in SQL is relatively easy, and you can reuse that search
+when you have to double check to make sure that the data in the data
+base is accurate. Excel does not give you the proper processes that you
+need to get ahold of the data that you want to get ahold of.</p>
+<p>SQL coding only has to be written once and saved, and then, it is
+going to run each time that you need it to. This is yet another way that
+SQL makes it to where your life is easier because you are not having to
+take up as much time trying to get the data that you need.</p>
+<p>Do not think that SQL is going to be simple. It is complicated and is
+going to take a lot of time to learn, but the more effort that you put
+into it, the more it is going to pay off for you. You are going to not
+only be saving money by learning SQL, but you are going to be increasing
+what you will be able to make with SQL.</p>
+<div id="part0003_split_001.html_calibre_pb_2" class="calibre7">
+
+</div>
+<p><span id="part0003_split_002.html"></span></p>
+<p><strong>Chapter 2</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Basics</strong></p>
+<p><span class="dropcaps">T</span>he first thing that you have to learn
+about SQL before you are able to use it is to know what the basics of it
+are. Understanding the SQL syntax is going to make it to where you are
+going to have the ability to manage data bases better in SQL without
+worrying about if you are messing something up. If you have worked with
+Excel before, then you know a little about SQL due to the fact that SQL
+has columns and rows just like what you would use in Excel.</p>
+<p><strong>Syntax</strong></p>
+<p><span class="label">•</span>Data base: all of the tables that you
+have created with SQL.</p>
+<p><span class="label">•</span>CRUD: the four basic operations that you
+are going to be able to do with SQL – Creating, Reading, Updating, and
+Deleting.</p>
+<p><span class="label">•</span>Query: the search you are going to run
+when looking for something in SQL.</p>
+<p><span class="label">•</span>Foreign key: this key is going to find
+any data that is on your table in order for you to match it to the
+primary key that you have put into a different table.</p>
+<p><span class="label">•</span>Primary key: this is a unique value that
+all records you create are going to use for you to identify them. If you
+do not set one up, then one will automatically be generated.</p>
+<p><span class="label">•</span>Table: the collection of data in SQL and
+where it is located.</p>
+<p><span class="label">•</span>DBMS: data base management system.</p>
+<p><span class="label">•</span>Syntax: words and phrases that you will
+use to create statements.</p>
+<p><span class="label">•</span>RDBMS: relational data base management
+system.</p>
+<p>Now, you may look at RDBMS and DBMS and wonder what the difference
+is. The difference is going to be how the data that you have put on the
+table is going to be stored. With a DBMS table, the data is not on the
+table, but in a file. When you are using SQL, you are going to work with
+RDBMS more than you will DBMS.</p>
+<p>A primary key is going to create a more complex code. Foreign keys
+are going to be specific to a single table and are going to pull data
+from one record to another when you are doing your searches.</p>
+<p>SQL works with three programs – SQL, MySQL, and Oracle. Because of
+this, the code that you use in SQL is going to have three different
+choices depending on which application you are working with. Some of the
+code that you use will work with just one program, or it can collaborate
+with all three. Double check which commands are going to be able to work
+with which program so that you are working with the program that is
+easiest for you rather than complicating things for yourself.</p>
+<div id="part0003_split_002.html_calibre_pb_4" class="calibre7">
+
+</div>
+<p><span id="part0003_split_003.html"></span></p>
+<p><strong>Chapter 3</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Syntax</strong></p>
+<p><span class="dropcaps">E</span>ven if you have knowledge of other
+programming languages, SQL is going to be different. You may find that
+there are some rules that you know from other languages, but do not
+assume that you are going to be doing the same thing with SQL that you
+would with a program such as Python.</p>
+<p>Any statement you create with SQL is going to begin with a very
+particular set of keywords so that the system knows what you are
+attempting to do. Do not forget that you are going to need to end all of
+your statements with a semicolon.</p>
+<p>Your keywords are going to be create, show, use, insert, select,
+update, alter, drop, and delete.</p>
+<p>You should remember that SQL is case insensitive, so if you use
+select versus SELECT, it is going to do the same operation. MySQL,
+however, is going to require that you are accurate with the table names
+as they have been created in the data base, or else, you could be
+pulling up a different table than what you need to work with.</p>
+<p>All of the following syntax is going to work with MySQL and is going
+to contain statements and clauses that you are going to use when working
+with SQL.</p>
+<p>Syntax:</p>
+<p>Select statement:</p>
+<p>SELECT column1, column2… column</p>
+<p>FROM table_name;</p>
+<p>Distinct clause</p>
+<p>SELECT DISTINCT column1, column2… column</p>
+<p>FROM table_name;</p>
+<p>Where clause</p>
+<p>SELECT column 1, column2…column</p>
+<p>From table_name</p>
+<p>WHERE CONDITION;</p>
+<p>And/Or clause</p>
+<p>SELECT colmn1, column2… column</p>
+<p>FROM table_name</p>
+<p>WHERE CONDITION 1 {AND | OR} CONDITION 2 ;</p>
+<p>In clause</p>
+<p>SELECT column1, colun2… column</p>
+<p>FROM table_name</p>
+<p>WHERE column_ame IN (val-1, val-2,… val-N);</p>
+<p>Between clause</p>
+<p>SELECT column1, column2…column</p>
+<p>FROM table_name</p>
+<p>WHERE column_name BETWEEN val-1 AND val-2;</p>
+<p>Like clause</p>
+<p>SELECT column1, column2…column</p>
+<p>FROM table_name</p>
+<p>WHERE column_name LIKE { PATTERN };</p>
+<p>Order by clause</p>
+<p>SELECT colun1, column2… column</p>
+<p>FROM table_name</p>
+<p>WHERE CONDITION</p>
+<p>ORDER BY column_name {ASC | DESC };</p>
+<p>Group by clause</p>
+<p>SELECT SUM (column_name)</p>
+<p>FROM table_name</p>
+<p>WHERE CONDITION</p>
+<p>GROUP BY column_name;</p>
+<p>Create table statement</p>
+<p>CREATE TABLE table_name (</p>
+<p>Column1 datatype,</p>
+<p>column2 datatype,</p>
+<p>column3 datatype,</p>
+<p>…</p>
+<p>Column datatype,</p>
+<p>PRIMARY KEY (one or more columns )</p>
+<p>);</p>
+<p>Drop table statement</p>
+<p>DROP TABLE table_name;</p>
+<p>Create index</p>
+<p>CREATE UNIQUE IDEX index_name</p>
+<p>ON table_name ( column1, column2, …. ColumnN);</p>
+<div id="part0003_split_003.html_calibre_pb_6" class="calibre7">
+
+</div>
+<p><span id="part0003_split_004.html"></span></p>
+<p><strong>Chapter 4</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Statements in SQL</strong></p>
+<p><span class="dropcaps">W</span>ith SQL, there are several statements
+that you are going to be working with. These statements are going to be
+the foundation for what you do with your table. Each statement is going
+to have the ability to do an action that you request in one step instead
+of having to go through and potentially mess things up.</p>
+<p><strong>Drop table statement</strong></p>
+<p>With drop table statements, you are going to be getting rid of an
+entire table that you have made. But, a lot of times, getting rid of the
+table causes problems elsewhere. However, SQL allows you to use drop
+table statements to avoid these issues.</p>
+<p>Syntax:</p>
+<p>DROP TABLE “table_title”;</p>
+<p>There will be moments that you are going to have to get rid of
+multiple tables at once, and to do this, you will need to type out the
+name of each table that you need to dispose of. You can put it in the
+same code, just separate the table names out with commas.</p>
+<p>Sometimes the table you want to get rid of will not actually be
+located in the data base. If this happens, then you are going to get an
+error message from the system. To stop this error, you are going to want
+to make sure that the table exists before you try and delete it. You
+will modify your code and make it to where the data base is searched.
+Once the data base has been searched, your table will be dropped only if
+the table exists in the data base.</p>
+<p><strong>Truncate table statement</strong></p>
+<p>The table structure can be kept in the event that a deletion has to
+occur; however, how do you get rid of the data that is on that table?
+You still have the option of using the drop table statement, but you can
+use the truncate table statement instead so that only the data is
+deleted and you do not have to worry about making a new table.</p>
+<p>Syntax</p>
+<p>TRUNCATE TABLE “table_title”;</p>
+<p>The only thing with this comment is that if there is a constraint,
+the data is not going to be deleted out of the table.</p>
+<p><strong>Select statements</strong></p>
+<p>A select statement will let you search the data base for a very
+specific piece of information that you want to find. You are going to
+have the option of using one of five clauses. However, the one clause
+that you will most likely stick to is the from clause.</p>
+<p>Syntax for a select statement:</p>
+<p>SELECT [ ALL [ DISTINCT] column 1 [, column 2] FROM table 1 [, table
+2] [WHERE “conditions”] [GROUP BY “column-list”] [HAVING “conditions]
+[ORDER BY [“column-list” [ASC [DESC] ]</p>
+<div id="part0003_split_004.html_calibre_pb_8" class="calibre7">
+
+</div>
+<p><span id="part0003_split_005.html"></span></p>
+<p><strong>Chapter 5</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>The Creation of Data Bases in SQL</strong></p>
+<p><span class="dropcaps">W</span>hen you are wanting to generate a new
+data base in SQL, you are going to use the create data base statement.
+This way, a data base is created so that you can begin to create tables
+and input data into the data base for you to use while you are
+working.</p>
+<p>Syntax:</p>
+<p>CREATE DATABASE Databaseame;</p>
+<p>All of the data bases that you create are going to have a unique name
+so that they can easily be located when you are searching for them on
+the RDBMS.</p>
+<p>Example</p>
+<p>SQL &gt; CREATE DATABASE babyname;</p>
+<p>It is required that you have administration privileges before you can
+create any data bases. But, at the point in time that the data base has
+been set up, you are going to have the option to create tables and input
+data.</p>
+<div id="part0003_split_005.html_calibre_pb_10" class="calibre7">
+
+</div>
+<p><span id="part0003_split_006.html"></span></p>
+<p><strong>Chapter 6</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Data Types</strong></p>
+<p><span class="dropcaps">I</span>n an earlier chapter, we touched on
+data types. However, some data types are going to work with very
+specific data types for the object that you are working with. It does
+not matter what you are working with, all expressions, variables, and
+columns are going to have some sort of data type that works with
+SQL.</p>
+<p>Data types are used when creating tables. It is required that you
+pick one data type for that column in the table based on what you need
+that column to do.</p>
+<p><span class="label">•</span>Byte: a set of numbers between 0 and 255.
+There is only going to be a single byte of storage for these
+figures.</p>
+<p><span class="label">•</span>Singles: a floating point number that
+will be associated with a decimal. Singles are going to contain up to 4
+bytes of storage.</p>
+<p><span class="label">•</span>Currency: there can be up to four decimal
+points for currency, and it can go up to 15 places in whole numbers.
+There are around 8 bytes of storage for currency.</p>
+<p><span class="label">•</span>Long: a long is going to have 4 bytes of
+storage and fall between −2,147,483 and 2,147,483,647</p>
+<p><span class="label">•</span>Memo: memos will hold larger amounts and
+can go up to 65,536. Memos have the ability to be searched but not
+sorted.</p>
+<p><span class="label">•</span>Text: letters and numbers that are
+entered into SQL are going to be text, and it can handle up to 255
+characters.</p>
+<p><span class="label">•</span>Date and type: with 8 bytes of storage,
+the data and time is going to be obvious.</p>
+<p><span class="label">•</span>Double: just like singles, a double has
+two floating point numbers and contains 8 bytes of storage.</p>
+<p><span class="label">•</span>Integer: you are only going to be able to
+store numbers in this data type. It is going to be between the numbers
+of −32,768 and 32,767. You have 2 bytes of data that can be stored
+here.</p>
+<p><span class="label">•</span>Look up wizard: this is your options list
+so that you can choose what it is that you are wanting to do. This has 4
+bytes of storage.</p>
+<p><span class="label">•</span>Auto number: the fields are going to be
+given their own record for data with its own number. It is going to
+start out with one unless you state otherwise. Four bytes of data are
+saved for the auto number.</p>
+<p><span class="label">•</span>Hyperlink: you are going to be capable of
+sending the user to a web page if it is necessary.</p>
+<p><span class="label">•</span>Yes and no: the logical fields that
+require answers like yes or no or even true or false. The true and false
+answers are going to be equal to negative one and zero. If no value is
+allowed, then that field is going to be null. The storage is 1 bit.</p>
+<p><span class="label">•</span>Ole object: pictures and other multimedia
+will be placed in this data type. It is known as a blob, which stands
+for large binary objects. You have the most significant storage amount
+here, and it is 1 gigabyte.</p>
+<p>Data types are going to fall into three main categories – date and
+time, numbers, and characters.</p>
+<p>Character:</p>
+<p><span class="label">•</span>Varchar(size): the length of the string
+that is stored will be able to hold all of the data types that we just
+talked about. The size is going to be based on what the number is that
+is in the parentheses. Normally, it is going to be texts that you
+convert.</p>
+<p><span class="label">•</span>Char(size): the character string is a
+fixed length that can be the data types that were previously
+discussed.</p>
+<p><span class="label">•</span>Blob: there are 65,535 bytes of data that
+can be held with a blob.</p>
+<p><span class="label">•</span>Tiny text: you are only going to be able
+to put 255 characters in the small text.</p>
+<p><span class="label">•</span>Long text: this is going to hold up the
+largest number of characters.</p>
+<p><span class="label">•</span>Text: this is the standard character text
+that holds up to 65,550 characters.</p>
+<p><span class="label">•</span>Medium text: this is going to hold around
+16,000,000 characters at most.</p>
+<p><span class="label">•</span>Set: this is going to be similar to an
+enum type but is only going to hold up to 64 items; however, you can
+store more than one data type in it.</p>
+<p><span class="label">•</span>Medium blob: this holds up to 16,000,000
+bytes of data.</p>
+<p><span class="label">•</span>Long blob: this is going to hold the most
+bytes of data hence why it is called a long blob.</p>
+<p><span class="label">•</span>Enum(x, y, z…): every possible value is
+going to be listed in an enum. It can hold up to 65,535 values. Anything
+that is not inside of the list will be shown as a blank value. The
+values do not have to be put in order when they are entered; they can be
+sorted at a later date.</p>
+<p>Number:</p>
+<p><span class="label">•</span>Float(size, d): this is considered to be
+a tiny number that uses a decimal that can float. The size of the
+parameters is going to be the maximum amount of values that can be put
+into the data type. The d parameter is going to be the largest amount of
+numbers that can be to the right of that decimal.</p>
+<p><span class="label">•</span>Tinyint(size): you can have −128 to 127
+signed values or 0 to 255 unsigned values.</p>
+<p><span class="label">•</span>Bigint(size): you can have
+9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 signed values or
+18,446,744,073,709,551,615 unsigned values.</p>
+<p><span class="label">•</span>Smallint(size): you can hold up to 32,000
+signed values or 65,000 unsigned.</p>
+<p><span class="label">•</span>Int(size): holds a set value of signed
+and unsigned values.</p>
+<p><span class="label">•</span>Medium(size): holds up to 16,000,000
+unsigned values.</p>
+<p><span class="label">•</span>Decimal(size,d): you are going to be able
+to store decimals inside of a fixed point that are inside of the size
+parameters. The parameters are going to be set by the maximum amount of
+digits that are found to the right of the decimal.</p>
+<p><span class="label">•</span>Double(size, d): this is similar to the
+decimal(size, d) but the number of digits that are to the right side of
+the decimal are going to be set by the parameter which is going to be
+d.</p>
+<p>Date and time:</p>
+<p><span class="label">•</span>Date(): dates are going to be entered in
+the year, month, and day format.</p>
+<p><span class="label">•</span>Year(): the year is going to either be
+inputted in two digit form or four digit form. It is going to be based
+on what you are doing that will depend on how it is entered.</p>
+<p><span class="label">•</span>DateTime(): you are going to be putting
+in a combination of the date and time. It will be recorded as the date()
+is and then the time will be entered hour, minute, and seconds.</p>
+<p><span class="label">•</span>Time(): time is entered hour, minute, and
+second.</p>
+<p><span class="label">•</span>Timestamp(): the time stamp is going to
+match what the current time zone that you are in so that you can see
+exactly when something was done. It will be entered like the
+DateTime().</p>
+<div id="part0003_split_006.html_calibre_pb_12" class="calibre7">
+
+</div>
+<p><span id="part0003_split_007.html"></span></p>
+<p><strong>Chapter 7</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Query Types</strong></p>
+<p><span class="dropcaps">B</span>eing that, you are doing searches in
+SQL to make sure you are getting the information that you want to have
+in your search. Rather than searching through the entire data base, you
+can do specific searches so that you can be more efficient.</p>
+<p><strong>Insert query</strong></p>
+<p>Insert search is going to place new data rows into your table that
+you are working with. Be careful when you are using this search though
+because there are two different queries that you are going to be able to
+do.</p>
+<p>Syntax:</p>
+<p>With this query, you are going to be inserting data into a particular
+column.</p>
+<p>INSERT INTO TABLE_NAME (column1, colum2, column3, … column)</p>
+<p>VALUES (value1, value2, value3, … valueN);</p>
+<p>However, there are going to be times that you are not going to have
+to specify where the values are going to go on the table because they
+can go wherever there is room. For that, you are going to use an
+entirely different syntax.</p>
+<p>INSERT INTO TABLE_NAME VALUES (value1, value2, value3, … valueN);</p>
+<p>You can also use the insert query in order to bring data from one
+table to another table without having to worry if you are going to miss
+copying any of the information.</p>
+<p>Syntax</p>
+<p>INSERT INTO first_table_ame [( column1, column2, … column)]</p>
+<p>SELECT column1, column2, … columnN</p>
+<p>FROM second_table_name</p>
+<p>[WHERE codition];</p>
+<p><strong>Select query</strong></p>
+<p>With select, you are going to be locating data in your tables in your
+database so that you can get a result returned to you. These results are
+going to be known as result sets.</p>
+<p>Syntax:</p>
+<p>SELECT column1, column2, column FROM table_name;</p>
+<p>The data from those particular columns is going to be what you are
+wanting to be returned to you; therefore, the database is going to do
+so.</p>
+<p>However, should you want all fields returned, you are going to use
+this code.</p>
+<p>Syntax:</p>
+<p>SELECT * FROM table_name;</p>
+<p><strong>Update query</strong></p>
+<p>As it says, an update is going to be used to change any records that
+are already on the table you are working with.</p>
+<p>The where clause can be used as you are using the update query so
+that you can modify specific rows rather than changing all rows in the
+table.</p>
+<p>Syntax</p>
+<p>UPDATE table_name</p>
+<p>SET column1 = value1, column2=value2, … columnN = valueN</p>
+<p>WHERE [ condition ];</p>
+<p>The N is going to be able to be used with any condition when you are
+using the “or” as well as the “and” operators.</p>
+<p><strong>Delete query</strong></p>
+<p>Whenever records need to be removed from your table, you are going to
+use the delete query. Just like with the update query, you are going to
+be allowed to use the where clause so that you can eliminate a set
+number of rows rather than delete everything that is on your table.</p>
+<p>Syntax:</p>
+<p>DELETE FROM table_name</p>
+<p>WHERE [condition];</p>
+<p>Conditions have the ability to be combined when you use the “and”
+operator as well as the “or” operator.</p>
+<p><strong>Sorting your results</strong></p>
+<p>The order by condition is going to be the clause that is used when
+you are sorting the data in your table. You have two options – you can
+sort the data in ascending order, or you can do it in descending order.
+There are going to be some data bases that are going to automatically
+sort your results in ascending order without you telling it to. So, if
+you have to have it in descending order, you are going to need to ensure
+that you have told the system that you want it sorted a different
+way.</p>
+<p>The syntax for sorting the results that you get from your queries is
+going to be similar for both ascending and descending orders. The only
+difference is going to be which order you want it to be sorted in.</p>
+<p>Syntax:</p>
+<p>SELECT column – list</p>
+<p>FROM table_name</p>
+<p>[WHERE condition]</p>
+<p>[ORDER BY column1, column2, …columnN] [ASC | DESC ];</p>
+<p>Multiple columns can be selected when you use the order by clause.
+However, make sure that the columns you are selecting to be sorted are
+in the column-list.</p>
+<div id="part0003_split_007.html_calibre_pb_14" class="calibre7">
+
+</div>
+<p><span id="part0003_split_008.html"></span></p>
+<p><strong>Chapter 8</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Constraints in SQL</strong></p>
+<p><span class="dropcaps">A</span> constraint is going to be the
+different rules that the SQL system is going to enforce when it is
+dealing with the columns on your table. Essentially, your table is going
+to be limited on the different types of data that are going to be
+allowed to go into the data base. Constraints are used so that you are
+able to make sure that the data base has accurate and reliable data in
+it. This is particularly helpful when your data base is being used by
+other people for a job.</p>
+<p>Constraints are not limited to just the columns, but they can be
+placed on an entire table as well. The restrictions you place on a
+column are going to be only enforced on the column in question. But,
+when you are putting them on the table, they will be implemented on the
+entire table.</p>
+<p>There are just a few limitations that you are going to use most often
+when you are working with constraints.</p>
+<p><span class="label">•</span>Not NULL: the column is not going to have
+the ability to have any null values</p>
+<p><span class="label">•</span>Index: the index constraints will not
+only create, but they will retrieve data that you have in your data
+base.</p>
+<p><span class="label">•</span>Default constraint: if you do not set a
+default value, then one will be provided for that column.</p>
+<p><span class="label">•</span>Check constraint: this limitation will
+make sure that any conditions placed on the column are met.</p>
+<p><span class="label">•</span>Unique constraint: there are not going to
+be any values in your column that are going to be the same, each value
+is going to be unique.</p>
+<p><span class="label">•</span>Foreign key: records in other data base
+tables are going to be identified with the key.</p>
+<p><span class="label">•</span>Primary key: in the table that you are
+currently working in, each record is going to be identified.</p>
+<p>When you are creating your table, you will have the opportunity to
+put your constraints into the code so that the constraints are done from
+the beginning. Or, if you forget to do that, you are going to be able to
+use the alter table statement so that the constraints can be created
+even though your table is already in place on your data base.</p>
+<p><strong>Dropping constraints</strong></p>
+<p>Even though your constraint has been put into place, you have the
+choice to drop the constraint by using the command that you use to alter
+your table, and from there you will select the drop constraint
+option.</p>
+<p>Depending on the constraint, you are going to be provided with a
+shortcut that you can use to drop that constraint. It will also depend
+on which application you use. As mentioned at the beginning of this
+book, not every command is going to work in the programs that you will
+use as you create your SQL code.</p>
+<p>Along with short cuts, some implementations make it to where you can
+disable constraints. This is not going to delete the constraint from the
+data base permanently, but rather, disable it so that it can be used in
+that data base later when you need it.</p>
+<p><strong>Integrity constraints</strong></p>
+<p>An integrity constraint will be used when you want to be sure that
+your data is accurate and consistent throughout the entire data base.
+The integrity of your data is going to be dealt with a different data
+base than what you are using thanks to the concept that has been put
+into SQL for referential integrity. Besides, how are you going to know
+if your data has integrity if you do not have something to check it
+against?</p>
+<p>While multiple integrity constraints can be used when using
+referential integrity, you are primarily going to use the foreign key,
+primary key, and all the other constraints that we talked about in the
+section above.</p>
+<div id="part0003_split_008.html_calibre_pb_16" class="calibre7">
+
+</div>
+<p><span id="part0003_split_009.html"></span></p>
+<p><strong>Chapter 9</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL and Math</strong></p>
+<p><span class="dropcaps">W</span>ith SQL 92, you are going to be able
+to do four different math functions that most programming languages are
+going to be able to do.</p>
+<p>Multiplication ( * )</p>
+<p>Addition ( + )</p>
+<p>Modulo ( % )</p>
+<p>Subtraction ( − )</p>
+<p>Division ( / )</p>
+<p>As you use the modulo operator, you will get the remainder that was
+received from the utilization of the division function whether it is an
+integer or not. You are not going to be able to use modulo when you are
+working with ANSI SQUL due to the fact that it is not supported;
+however, many of the other data bases will support the modulo
+function.</p>
+<p>While the above functions are great, they are not going to be used
+very often. Instead, there are other functions that you are probably
+going to find yourself using more. These mathematical operations are not
+going to be required for you to use SQL 92, but that does not imply that
+you should not make sure that they are available on the RDBMS that you
+have decided to use. If they are not supported by the RDBMS that you are
+using, you are going to end up making yourself mad due to the fact you
+put in all the work for it to not work. If you are using a major data
+base, it is most likely going to work, just be sure you are checking on
+the off chance you have chosen to work with one that it does not operate
+with.</p>
+<p>MOD (a, b): the modulo function will give you an integer for the
+remainder that you got when a was divided by b.</p>
+<p>SQRT (a): you are going to be the square root of the value you enter
+into the equation.</p>
+<p>SIGN (a): a will either give you a 0, −1, or 1</p>
+<p>ROUND (a): the value you input is going to be rounded to the nearest
+whole number.</p>
+<p>ABS (a) you are going to receive the absolute value from the integer
+that you input into the data base.</p>
+<p>ROUND (a, b): the integer for a is going to be rounded to the closest
+whole number, and value b is going to tell it how many times it should
+be rounded.</p>
+<p>CEILING (a) or CEIL (a): the smallest number will be returned to you
+of greater than or equal value to the value of a.</p>
+<p>POWER (a, b): a will be raised to the value that is in place for
+b.</p>
+<p>FLOOR (a): the larger number will be returned less than or equal to
+the value of a.</p>
+<div id="part0003_split_009.html_calibre_pb_18" class="calibre7">
+
+</div>
+<p><span id="part0003_split_010.html"></span></p>
+<p><strong>Chapter 10</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Transactions That You Can Use in SQL</strong></p>
+<p><span class="dropcaps">T</span>ransactions are the units that you are
+going to use against what it was originally created for. Units like this
+are going to be used so that you can accomplish a function to make sense
+of the data base to you or the data base in question.</p>
+<p>However, transactions will be the propagation for all of the changes
+that have been established on the data base. Therefore, at the point in
+time that you update records, you will have a transaction that has been
+completed on the data base. Ensure that you have total control of your
+data bases so that you have the ability to change what is placed in your
+table so that the data can still maintain its integrity and any errors
+that are thrown out by the data base can be handled in the proper
+fashion.</p>
+<p>Ultimately, you will be clubbing the SQL searches that you do into a
+group so that they are handled at once rather than individually.</p>
+<p><strong>Transaction properties</strong></p>
+<p>The word that you want to remember when you are working with
+transactions is going to be ACID. This is because of the letters ACID
+all stand for one of the properties that you can use with SQL.</p>
+<p>A: Atomicity: the operations that you place into your equation will
+give you a favorable result. However, if the equation fails, then the
+process you have put into place is going to be terminated and any
+operation done before this is going to be void as everything is going to
+return to its former state.</p>
+<p>C: Consistency: any changes that are made are going to be watched to
+ensure they are being made correctly in order for that transaction to be
+considered successful.</p>
+<p>I: Isolation: transactions do not have to run together, they can run
+seperately while remaining transparent from other transactions being
+made on that data base.</p>
+<p>D: Durability: all your transactions should be successful in order to
+survive, this means that they need to be able to withstand any system
+failures that may occur.</p>
+<p><strong>Transaction control</strong></p>
+<p>As you are managing your transactions in order to ensure they are
+successful, you are going to be using four different commands.</p>
+<p>Set transaction: you can title your transaction so it can be located
+easier.</p>
+<p>Commit: all your changes for your transaction will be saved.</p>
+<p>Save point: you will save your transaction and should it have to be
+rolled back due to some error, it will roll back to the last save
+point.</p>
+<p>Roll back: any changes that have been made will be undone and will go
+back to the last save point.</p>
+<p>You do not have the ability to use create or drop table commands with
+transactions being that they are standard data base commands. You can
+still use delete, update, and insert.</p>
+<p><strong>Commit command</strong></p>
+<p>A commit command is going to be used whenever transaction changes
+have to be saved so that your data base is updated with the most recent
+changes. Essentially you are going to be creating a save point so that
+if you have to roll your data base back, it is going to be rolled back
+to the latest commit point. Hint: use your commit code often! You do not
+want to lose hours of work!</p>
+<p>Syntax:</p>
+<p>Commit;</p>
+<p><strong>Roll back command</strong></p>
+<p>You can undo changes that you made at any point in time. This is
+particularly effective when you are writing the out code and discover
+that what you thought would work, does not work. All the work that is
+undone will depend on when the last commit command was used.</p>
+<p>Syntax:</p>
+<p>Rollback;</p>
+<p><strong>Save point</strong></p>
+<p>Just like the commit code, the save point code is going to save all
+of the work that you do. You do not want to use this command unless
+everything is just the way that you want it. Once you roll back to the
+last save point, you will not get what you put into the table unless you
+manually input it. The title for your save point should be clear enough
+that you know which save point you are at so that you do not confuse
+yourself. Especially when you are working with multiple tables at
+once.</p>
+<p>Syntax</p>
+<p>Savepoint savepoint_title;</p>
+<p>After you have created your save point, you can use the roll back
+command to undo everything up to this point in time.</p>
+<p>Using the roll back code with your save point command is going to
+look like this.</p>
+<p>Syntax</p>
+<p>Rollback to savepoint_title;</p>
+<p><strong>Releasing your save point command</strong></p>
+<p>A save point can be released when you remove that particular save
+point. This is done if you do not want to go back to that save point due
+to code being wrong, or if you have a more up-to-date save point.</p>
+<p>Syntax:</p>
+<p>RELEASE SAVEPOINT SAVEPOINT_TITLE;</p>
+<p>Once a save point has been released, you are not going to need to use
+the roll back code since you have nothing to go back to. So, make sure
+that you create a save point soon after you release a save point just to
+ensure that you have something to go back to if you find that you have
+made a mistake.</p>
+<p><strong>Set transaction command</strong></p>
+<p>The set transaction command will show where a transaction has been
+made on the data base. Essentially, it is a record of the changes that
+were made, the characteristics of the changes, and the location of the
+change in your data base. Set transaction commands are going to come in
+handy when you want to see all the transactions that you made.</p>
+<p>Syntax</p>
+<p>SET TRANSACTION [ READ WRITE | READ ONLY];</p>
+<div id="part0003_split_010.html_calibre_pb_20" class="calibre7">
+
+</div>
+<p><span id="part0003_split_011.html"></span></p>
+<p><strong>Chapter 11</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Subqueries</strong></p>
+<p><span class="dropcaps">S</span>ubqueries are also called nested
+queries or inner queries. Just as it sounds, you are going to have a
+query inside of a query that uses a where clause to ensure both queries
+are being carried out.</p>
+<p>Many subqueries will return some sort of data from the query that
+started the whole process because of the conditions that are set into
+place, which will then make it to where data that has been restricted
+can be displayed.</p>
+<p>You have the ability to use all your basic commands (select, insert,
+delete, and update) with your subqueries as well as the basic math
+operators that we discussed earlier.</p>
+<p>In working with a subquery, you will have to follow these rules:</p>
+<p><span class="label1">1.</span>A between operator cannot be used when
+working with subqueries</p>
+<p><span class="label1">2.</span>Subqueries have to be enclosed in a set
+of parentheses</p>
+<p><span class="label1">3.</span>A subquery cannot be placed in a set
+function.</p>
+<p><span class="label1">4.</span>The select clause will only allow for
+one column to be selected. The only exception is if you chose multiple
+columns when you created your first query.</p>
+<p><span class="label1">5.</span>Select lists are not able to be used as
+references to any value that you have SQL evaluating.</p>
+<p><span class="label1">6.</span>You can use the order by command with
+your main query, but you are not going to be able to use it inside of
+the subquery.</p>
+<p><span class="label1">7.</span>Multiple rows can be returned in a
+subquery. Therefore, several different operators can be employed.</p>
+<p><strong>Subqueries and the select statement</strong></p>
+<p>Select statements are one of the few statements you can use when you
+are working with subqueries.</p>
+<p>Syntax:</p>
+<p>SELECT column_title [, column_title ]</p>
+<p>FROM table 1 [, table 2 ]</p>
+<p>WHERE column_title OPERATOR</p>
+<p>(SELECT column_title [, column_title ]</p>
+<p>FROM table 1 [ , table 2 ]</p>
+<p>([ WHERE ])</p>
+<p><strong>Insert and a subquery</strong></p>
+<p>The insert statement is going to take data that you already have in
+one table and relocate it to a different table of your choosing. The
+data that you gather in your subquery will take this data and modify the
+dates, times, numbers, and characters if it is required.</p>
+<p>Syntax</p>
+<p>INSERT INTO table_title [ (column 1 [, column 2 ] ) }</p>
+<p>SELECT [ * | column 1 [ , column 2 ]</p>
+<p>FROM table 1 [, table 2]</p>
+<p>[WHERE VALUE OPERATOR ]</p>
+<p><strong>Subqueries with the update statement</strong></p>
+<p>Data always needs to be updated for one reason or another.
+Thankfully, update statements can be used even with a subquery. With
+update statements, you can do single or multiple columns in your table
+as long as they are in need of an upgrade through the use of a
+subquery.</p>
+<p>Syntax</p>
+<p>UPDATE table</p>
+<p>SET column_title = new_value</p>
+<p>[ WHERE OPERATOR [ VALUE ]</p>
+<p>(SELECT COLUMN_TITLE</p>
+<p>FROM TABLE_TITLE)</p>
+<p>[ WHERE ) ]</p>
+<p><strong>The delete statement and subqueries</strong></p>
+<p>Just like anything that we talked about previously, you can remove
+your subquery if you do not get the proper results or you do not need
+the data that is in your subquery.</p>
+<p>Syntax:</p>
+<p>DELETE FROM TABLE_TITLE</p>
+<p>[ WHERE OPERATOR [ VALUE ]</p>
+<p>(SELECT COLUMN_TITLE</p>
+<p>FROM TABLE_TITLE)</p>
+<p>[ WHERE) ]</p>
+<div id="part0003_split_011.html_calibre_pb_22" class="calibre7">
+
+</div>
+<p><span id="part0003_split_012.html"></span></p>
+<p><strong>Chapter 12</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Indexes in SQL</strong></p>
+<p><span class="dropcaps">I</span>f you have to find data quickly in
+your table, you are going to want to use an index. An index is going to
+save time because you are not going to have to read through everything
+in order to find the one thing that you are looking for. It is much like
+the index you find in books!</p>
+<p>An index is going to be used whenever you try to locate data from a
+particular table. In the event that you have not created an index, then
+SQL is going to read through the entire table before it finds what you
+are looking for, which is not only time-consuming, but it can give you
+results that you are not looking for. The goal with an index is to have
+it created in such a way that you are able to go straight to what you
+are looking for in a couple of minutes, not hours.</p>
+<p>Here are just several reasons as to why you are going to want to
+create an index.</p>
+<p><span class="label1">1.</span>It can cover multiple columns</p>
+<p>Sometimes you know what you are looking for is in a general area, and
+with that, you can use an index to cover just those columns.</p>
+<p><span class="label1">2.</span>Indexes and integer data types</p>
+<p>The integer data type is not going to take up as much room as some of
+the data types; therefore, searching integers is faster. In the event
+that what you are looking for does not have an integer on your index,
+you will want to think about putting in a temporary integer so that all
+the data you are putting in your index for that column is mapped.</p>
+<p><span class="label1">3.</span>An index needs to be kept narrow</p>
+<p>The closer you create your index, the less room it will take up, so
+the less time SQL is going to spend trying to search for the information
+you are wanting. The less room that is used, the faster the data base is
+going to run.</p>
+<p><span class="label1">4.</span>The order of your columns is utterly
+important</p>
+<p>Sometimes and an index has to cover several columns. When this
+happens, you have to keep your columns in order, or else, you are going
+to cross data over into an area where it does not belong. Try and keep
+yourself focused as you begin with the column that ranks lowest on your
+scan working your way up to the one that holds the highest priority. The
+level of your column will depend on how many values are located in that
+column.</p>
+<p><span class="label1">5.</span>Ensure your column is not marked as
+null before you make your index</p>
+<p>Columns that are marked as null does not need to be in your index.
+So, only put the columns that have been marked as not null so that
+processing takes less time and you are able to work with a faster
+system.</p>
+<p><span class="label1">6.</span>Indexes should only be created when
+they are needed</p>
+<p>If you can get away without a guide, then do it! Indexes, just like
+everything else, take up space on the SQL disk making it to where
+commands you use end up returning results slower than normal. Being that
+indexes do not have any rules set into place as to how they should be
+built or when they should be constructed, the creation of an index is
+going to be a process that continues to change until a process can be
+found that works.</p>
+<p><strong>Constructing an index statement</strong></p>
+<p>The purpose of an index is meant to make SQL code run faster than
+before. This is done by making it to where queries do not scan the
+entire table or data base unless necessary.</p>
+<p>The syntax for creating an index is as follows:</p>
+<p>CREATE INDEX “index_title” ON “table_title” (column_title);</p>
+<p>The downside of an index is that it can only cover a single table.
+Many indexes are only going to cover a single column however while
+composite indexes cover several columns at once.</p>
+<p>While you create your index, you are going to notice that there are
+no rules that you are going to have to follow as to what the index is
+titled or what is placed in the index. Therefore, your index is going to
+be completely unique to you and the data that you are putting in it. It
+is a good plan to attempt to add in as much information as you can so
+you do not get confused which table or columns you are working with.
+Keep in mind, however, the bigger the index, the more disk space it will
+take up.</p>
+<div id="part0003_split_012.html_calibre_pb_24" class="calibre7">
+
+</div>
+<p><span id="part0003_split_013.html"></span></p>
+<p><strong>Chapter 13</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Altering Tables</strong></p>
+<p><span class="dropcaps">A</span>fter you have made your table, it is
+possible that the structure of the table will need to be changed. Thanks
+to SQL, you can do this with a simple code!</p>
+<p>Syntax:</p>
+<p>ALTER TABLE “table_title”</p>
+<p>[alter specifications]</p>
+<p>The alter specifications will be what it is that has to be changed
+about the table.</p>
+<p><strong>Adding columns</strong></p>
+<p>If you need to attach a column to input more data, you can use the
+SQL data base for this. The data base will need to be instructed that
+you need the table modified and how it is going to be modified. When it
+comes to the blueprint of your alteration, you need to tell the system
+you are needing to insert a different type of data so that you can use
+it at a later date.</p>
+<p>Syntax:</p>
+<p>ALTER TABLE “table_title”</p>
+<p>ADD “column_title” “data type”;</p>
+<p>You do have the ability to add more than one column to your table at
+once so that you do not have to use your code multiple times, all you
+need to do is separate them by a comma and insert the alteration into a
+set of parentheses. Ensure you are placing the character value so that
+your table knows how many characters need to be in that column.</p>
+<p><strong>Column modification</strong></p>
+<p>Sometimes the type of data that is in a column has to be changed to a
+different data type to satisfy what it is that you are working on. When
+you use the function modify column, you are going to be still using the
+alter table function; however, it is going to be changed to include the
+column modification.</p>
+<p>Syntax</p>
+<p>MySQL and Oracle</p>
+<p>ALTER TABLE “table_title”</p>
+<p>MODIFY “column_title” “New Data Type”;</p>
+<p>SQL</p>
+<p>ALTER TABLE “table_title”</p>
+<p>ALTER COLUMN “column_title” “New Data Type”</p>
+<p><strong>Retitling a column</strong></p>
+<p>In retitling a column, you are going to be changing the name of the
+title either because you entered the name incorrectly or because columns
+are being reorganized, and you need to associate the title to the
+correct column so that you are not getting confused when you are working
+with the new table. Just as you have with the previous commands, you are
+going to instruct the data base that the table has to be altered before
+you are able to tell it that you are needing to retitle that column.</p>
+<p>Syntax</p>
+<p>MySQL and SQL</p>
+<p>ALTER TABLE “table_title”</p>
+<p>Change “column 1” “column 2” [“data type”];</p>
+<p>Oracle</p>
+<p>ALTER TABLE “table_title”</p>
+<p>RETITLE COLUMN “column 1 TO “column 2”;</p>
+<p><strong>Dropping a column</strong></p>
+<p>If there is a column that you need to delete due to information being
+outdated or entered incorrectly, you are going to be able to do this.
+You will still be using the alter table function and adding in the drop
+column function. Before you do this function, you will need to ensure
+you are dropping the right column or else you are going to lose data
+that you did not want to lose in the first place, and there is going to
+be no way for you to get it back unless you reenter it all.</p>
+<p>Syntax:</p>
+<p>MySQL</p>
+<p>ALTER TABLE “table_title”</p>
+<p>DROP “column_title”;</p>
+<p>Oracle and SQL</p>
+<p>ALTER TABLE “table_title”</p>
+<p>DROP COLUMN “column_title”;</p>
+<p><strong>Adding an index</strong></p>
+<p>With an index, searching through your table and data base is going to
+be much easier than if you do not work with an index. When you use the
+following table function, you can add an index in without any issue.
+Please take note that you are not going to be allowed to use this
+function when you are working with SQL or Oracle, it is only going to be
+supported by MySQL.</p>
+<p>Syntax:</p>
+<p>ALTER TABLE “table_title”</p>
+<p>ADD INDEX “index_title” (column_title);</p>
+<p><strong>Drop index</strong></p>
+<p>If your index is no longer relevant for whatever reason, you do have
+the option to drop it so that you do not have to have the space taken up
+on your data base. Once again, you are going to be using the alter table
+function to drop the index. And, since you were only able to create the
+index in MySQL, you are only going to be able to drop in in MySQL.</p>
+<p>Syntax</p>
+<p>ALTER TABLE “table_title”</p>
+<p>DROP INDEX “index_title”;</p>
+<p><strong>Adding constraints</strong></p>
+<p>Even if your table already exists on the data base, you are going to
+have the power to add in constraints that you may have forgotten to add
+when you were creating the table. If you do not remember the constraints
+that were discussed earlier in the book, please go back to <span
+class="calibre8">Chapter 8</span>.</p>
+<p>Syntax for adding constraints:</p>
+<p>ALTER TABLE “table_title”</p>
+<p>ADD [ CONSTRAINT_TITLE] [CONSTRAINT_TYPE] [CONSTRAINT_CONDITION];</p>
+<p><strong>Dropping constraints</strong></p>
+<p>When a constraint is dropped, that means that if you need it again at
+a later time, you are going to have to re-add it. So, make sure that you
+really want to drop it before you do this command. If you are not sure
+if you are going to need it again or not, then you are going to want to
+disable it rather than dropping it. However, if you are sure about
+dropping it, you can get rid of the constraint all together so that it
+is no longer being used on that column or table.</p>
+<p>Syntax</p>
+<p>ALTER TABLE “table_title”</p>
+<p>DROP [CONSTRAINT] [INDEX] “CONSTRAINT_TITLE”;</p>
+<div id="part0003_split_013.html_calibre_pb_26" class="calibre7">
+
+</div>
+<p><span id="part0003_split_014.html"></span></p>
+<p><strong>Chapter 14</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Cloning a Table in SQL</strong></p>
+<p><span class="dropcaps">I</span>t may not be often, but there may be
+times that you encounter a problem where you are expected to have a copy
+of your table. While you can recreate the table by making a new table
+and re-enter all of the data, that is not going to be efficient.
+Instead, to save time, you can just clone the table. This also ensures
+that you are not going to place any data in the wrong place or
+accidentally leave it out.</p>
+<p>As you clone tables with MySQL, you need to keep three things in
+mind.</p>
+<p><span class="label1">1.</span>When copying an entire table, you are
+going to use the insert and select statements.</p>
+<p><span class="label1">2.</span>The create table command will cause the
+table to look exactly like the table that you are copying looks.</p>
+<p><span class="label1">3.</span>Make sure you change the title of the
+table that you are cloning so that you are not getting tables mixed up
+when you are working on them.</p>
+<div id="part0003_split_014.html_calibre_pb_28" class="calibre7">
+
+</div>
+<p><span id="part0003_split_015.html"></span></p>
+<p><strong>Chapter 15</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Duplicates in Your SQL Code</strong></p>
+<p><span class="dropcaps">I</span>t does not necessarily happen on
+purpose, but there are times that records end up being duplicated on the
+table you are working with or within the data base. When you are
+searching for duplicate records, rather than waste time trying to find
+all of the duplications, it is going to be simpler for you to go through
+and locate the ones that are unique.</p>
+<p>To deal with duplications, you are going to be working with the
+select statement, and the keyword you have to keep in mind is distinct.
+This is going to make it to where you can remove any records that are
+duplicated so that only the unique ones remain.</p>
+<p>Syntax</p>
+<p>SELECT DISTINCT column 1, column 2 , ….. columnN</p>
+<p>FROM table_title</p>
+<p>WHERE [condition]</p>
+<p>Sometimes these are going to be duplicated in your code because
+people are going to live in the same town, be the same age, so on and so
+forth. These are things that you do not have any control over, but you
+have to work with regardless.</p>
+<p>By using the distinct keyword, you are going to be getting rid of all
+of the other records that contain this same information, but you are
+going to be keeping the one that has the information that you are
+looking for. So, when you are using this code, you have to be careful
+not to delete a record that you may be wanting to use.</p>
+<p>Also, ensure that you either have the data backed up in another
+location or that you have a recent save point so that you can go back to
+what the table originally was just in case you accidentally mess up.</p>
+<p>The distinct keyword is one of those that you are going to want to
+use with caution because you can end up losing hours of work that you do
+not need to or not want to lose, and therefore, you are not going to be
+working efficiently. Remember, SQL is supposed to make your job more
+efficient, not more challenging.</p>
+<div id="part0003_split_015.html_calibre_pb_30" class="calibre7">
+
+</div>
+<p><span id="part0003_split_016.html"></span></p>
+<p><strong>Chapter 16</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Injections</strong></p>
+<p><span class="dropcaps">A</span>t any point in time that you or
+someone else gets onto a website, data is taken from their computer and
+sent through the site. You are going to be able to take this same data
+and place it in the data base for SQL; however, it is going to be risky
+to do this due to the fact that you will be leaving yourself open to
+what is known as SQL injection, which can end up wiping out all of the
+hard work that you have put into your SQL code.</p>
+<p>An injection typically occurs at the point in time that you ask a
+user to place some type of data into a prompt box before they are able
+to continue. However, you will not necessarily get the information that
+you are wanting. Instead, you could end up getting a statement that is
+going to run through your data base, and you are not going to know that
+this has occurred.</p>
+<p>Users cannot be trusted to give you the data that you are requesting,
+so you need to make it to where the data that they enter is looked at
+before it is sent through your data base for validation. This is going
+to help secure your data base from any injections that may occur. Most
+of the time you are going to use pattern matching to look at the data
+before sending it to your data base.</p>
+<p>Your function calls are going to be used when you are trying to pull
+a particular record off of the data base from the table requested when
+you are working with that title for that column. The data is usually
+going to end up matching what you have received from the user making it
+to where you are able to keep your data base safe from injections.</p>
+<p>With MySQL, queries are not allowed to be carried or stacked into a
+single call function. This helps in keeping calls from failing due to
+the queries being stacked.</p>
+<p>Extensions such as SQLite however, do allow for your queries to be
+stacked as you do your searches in that one string. This is where safety
+issues come into play with your code and your data base.</p>
+<p><strong>Preventing an SQL injection</strong></p>
+<p>Escaped characters are meant to be handled inside of the programming
+languages such as Perl or PHP. With MySQL, there is an extension however
+that enables you to use PHP so that the proper function is being used
+with the escaped characters. This extension makes these characters
+unique just to MySQL.</p>
+<p><strong>Like quandary</strong></p>
+<p>When dealing with like quandary, you have to have an escape method in
+order to change the characters that the user inserts into your prompt
+box that turn out to be literals. The addslashes function allows for you
+to make sure that you are specifying the range of characters that are
+needed by the system in order to escape.</p>
+<div id="part0003_split_016.html_calibre_pb_32" class="calibre7">
+
+</div>
+<p><span id="part0003_split_017.html"></span></p>
+<p><strong>Chapter 17</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Your Data Base – How to Tune It</strong></p>
+<p><span class="dropcaps">W</span>hen you are using SQL, you are going
+to want to become an expert on your data base; this, however, is not
+going to happen overnight. Just like with learning how to use the
+system, it is going to take time and effort to learn what it is that you
+need to know in order to have the proper knowledge of how the data base
+works. You are also going to want to make sure that you have a pretty
+well-rounded education when it comes to dealing with the data base
+because you never know what is going to happen.</p>
+<p>Just to make your education simpler when it comes to learning about
+the data base, here are some things that you are going to find
+helpful.</p>
+<p><span class="label1">1.</span> When using the data base, you need to
+work with the 3BNF design.</p>
+<p><span class="label1">2.</span> Numbers compare to characters
+differently, and you could end up downgrading your data base’s
+performance, so do not change numbers unless you absolutely have to!</p>
+<p><span class="label1">3.</span> With the select statement, you will
+only have the data that you have to have displayed on your screen. You
+are going to want to do what you can to avoid asterisks with your select
+statement searches to avoid loading data that you do not need to be
+loading at that time.</p>
+<p><span class="label1">4.</span> Any indexes that you create need to be
+created carefully and only for the tables that require them. If you are
+not going to utilize the table as much, then it does not need to have an
+index. Essentially, you are going to attempt to save space on the disk,
+and if you are creating an index for each table, you are going to run
+out of room.</p>
+<p><span class="label1">5.</span> A full table scan happens when no
+index can be found on that table. You can avoid doing this by creating
+an index specifically for that column rather than the entire table.</p>
+<p><span class="label1">6.</span> Equality operators have to be used
+with caution when it comes to times, dates, and real numbers. There is a
+possibility that there are going to be differences, but you are not
+necessarily going to notice these differences right away. Equality
+operators make it to where getting exact matches in your queries is
+almost impossible.</p>
+<p><span class="label1">7.</span> Pattern matching can be used, but use
+it sparingly.</p>
+<p><span class="label1">8.</span> Look at how your search is structured
+and the code that is being used with your table. You can manipulate the
+code of your table to make it to where there is a faster response time
+as long as you change everything about the table and not just part of
+it.</p>
+<p><span class="label1">9.</span> Searches are going to be done on a
+regular basis when you are working with SQL. Stick to the standard
+procedures that work with a large group of statements rather than small
+ones. The procedures have been put into place by the data base before
+you even get the chance to use it. The data base is not like the search
+engine though; the procedure is not going to be optimized before your
+command is executed.</p>
+<p><span class="label1">10.</span>The “or” operator should not be used
+unless necessary. This operator causes your searches to be slower.</p>
+<p><span class="label1">11.</span>Remove any indexes that you have in
+place so that you can optimize bigger batches of data. It is an
+excellent idea to think of the history of the table in millions of
+different rows, and you are probably going to require multiple indexes
+to cover the entire table which is going to take up space on the disk.
+While indexes will get you the information you want faster, after the
+batch has been loaded, the index is going to slow the system down due to
+the fact that it is now in the way.</p>
+<p><span class="label1">12.</span>Batch transactions require that you
+use the commit function. You are going to have to use this function
+after you create a new record.</p>
+<p><span class="label1">13.</span>Data bases have to be defragmented at
+least once at week to ensure everything is working properly.</p>
+<p><strong>SQL tuning tools</strong></p>
+<p>The Oracle program grants you access to various tools that you are
+going to use when you are having to do anything with your data base when
+it comes to tuning it or the performance of the data base. Two of the
+most popular tools it offers are as follows:</p>
+<p><span class="label1">1.</span>Tkprof which makes it to where you can
+measure how the data base performs over a certain period of time-based
+on every statement you enter into SQL to be processed.</p>
+<p><span class="label1">2.</span> Explain plain; this tool shows you the
+path that is followed to ensure that statements are carried out as they
+are meant to be.</p>
+<p>Use the SQL*plus command to measure the time that passes between each
+search on your SQL data base.</p>
+<div id="part0003_split_017.html_calibre_pb_34" class="calibre7">
+
+</div>
+<p><span id="part0003_split_018.html"></span></p>
+<p><strong>Chapter 18</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>Wild Card Operators</strong></p>
+<p><span class="dropcaps">W</span>ild card operators are going to be
+operators that are used when you are comparing two values that have been
+created similar thanks to the utilization of a wild card operator.</p>
+<p>SQL offers two different wild card operators that are going to be
+able to be used with your life operator.</p>
+<p>Percentage sign: with this operator, you are going to have the
+ability to match multiple characters together so that they are similar.
+Keep in mind that you have to have an asterisks in order to grant MS
+access rather than using the percentage sign in the use of the wild card
+character.</p>
+<p>Underscore: a single character will be matched. MS access is going to
+require that you use a question mark to do this same operation instead
+of the underscore.</p>
+<p>A percentage sign will be represented by multiple characters, a one,
+or a zero. Underscores, on the other hand, are going to be represented
+by single characters only. You can use these wild card operators in
+various combinations.</p>
+<p>Syntax:</p>
+<p>SELECT FROM table_title</p>
+<p>WHERE column LIKE ‘XXXX%.’</p>
+<p>Or</p>
+<p>SELECT FROM table_title</p>
+<p>WHERE column LIKE ‘%XXXX%.’</p>
+<p>Or</p>
+<p>SELECT FROM table_title</p>
+<p>WHERE column LIKE ‘_XXXX.’</p>
+<p>Or</p>
+<p>SELECT FROM table_title</p>
+<p>WHERE column LIKE ‘_XXXX_.’</p>
+<p>Ultimately, there are an undetermined amount of conditions that are
+going to be able to be used when you use the or and the and
+operators.</p>
+<div id="part0003_split_018.html_calibre_pb_36" class="calibre7">
+
+</div>
+<p><span id="part0003_split_019.html"></span></p>
+<p><strong>Chapter 19</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><strong>SQL Tips and Tricks</strong></p>
+<p><span class="dropcaps">T</span>he purpose behind knowing tips and
+tricks with SQL is to make it to where you are able to use the program
+in a more efficient way, and you are not having to get frustrated
+because something is not working the way that it is supposed to work.
+There are opportunities that you are going to have to use a tip or trick
+that is listed in this chapter so that you can create a short cut and
+make the data base less complicated than it actually is.</p>
+<p><span class="label1">1.</span> The user interface and the language:
+if you want to change the language that the user interface is in, then
+you are going to need to close out the entire program. After you have
+completed this step, you will move on to the installation folder. Right
+click on the short cut that has been created on your desk top and
+proceed to the folder’s location. Now open the developer folder before
+going to the first folder that you see listed. After that, you have to
+click on the SQL developer.conf. Here is where you will use a text
+editor that is on your computer in order to change the language. It does
+not matter which text developer you are using, as long as you are
+comfortable using it. A new setting is going to be added into the text
+that appears in the text editor.you can place your new setting anywhere
+that you desire to in the file. It is wise to put a comment next to your
+new setting so that if you have to go back in and adjust it again later,
+you do not have to search through all of the code to find it. An
+AddVMOption is going to be added to the user language setting. Now you
+are going to have the option to open your SQL developer once more, and
+now, it is going to be in the language that you changed it to. However,
+be careful in which language you choose to put it in because not
+everything is going to translate the same when it is switched back to
+English.</p>
+<p><span class="label1">2.</span> Construct data base connections: right
+click on the connection on the left of the screen and click on new
+connection. You will need to title the connection whatever it is that
+you want. You will need to enter the user title and password for it. You
+should change the color if you are going to be working with multiple
+connections at once. For the role, you are going to change the role if
+you are using a system connection title. You can leave the home host
+alone if you are using your home computer. However, if you are using a
+different location, you will need to input the IP address for where the
+system is going to be running. Leave your part alone, and xe should be
+left alone as well unless you are not working with an express edition of
+SQL. You can test the connection, and if it is successful, you can close
+the connection down, and you have created your connection. If everything
+is correct, it is going to open with no errors, and you are going to be
+able to put in SQL code.</p>
+<p><span class="label1">3.</span> Disabling features: there are a lot of
+features that SQL offers, and if you do not use them, then you should
+disable them so that they are not slowing down the developer. You will
+go to the tools menu and go down to the features option. Each feature
+has different folders; it is up to you to decide which features you want
+to keep running and which ones you want to disable. You can expand each
+folder down so that you are able to see what each folder contains. All
+you are going to do is uncheck the feature, and it will turn that
+feature off and cause the system to start to run faster. Be sure that
+you are going to apply the changes so that they are not turning
+themselves back on without you turning them on yourself.</p>
+<p><span class="label1">4.</span> Executing commands and scripts: use
+the tool bar that is at the top of the developer and press the play
+button. Make sure that you have added in your semi-colon. You can also
+use ctrl and enter so that you do not have to pull your hand off the
+keyboard. To run a script, you are going to use the toolbar again, just
+select run scripts, so you run both commands. Or, press the F5 key if
+that is easier for you. Should your file be external use the at sign and
+the path file to import it and run it.</p>
+<div id="part0003_split_019.html_calibre_pb_38" class="calibre7">
+
+</div>
+<p><span id="part0003_split_020.html"></span></p>
+<p><strong>Conclusion</strong></p>
+<p><img src="images/00003.jpeg" class="calibre2" alt="logo" /></p>
+<p><span class="dropcaps">T</span>hanks for making it through to the end
+of <em>SQL: Programming Beginner’s Guide</em>. Let’s hope it was
+informative and able to present you with all of the tools you need to
+achieve your goals whatever it may be.</p>
+<p>The next action is to take your newfound knowledge in SQL and put it
+to use in your job. If your current job does not use SQL, then you have
+made yourself more valuable to that company due to the fact that people
+who know programming languages are going to be able to do more than what
+they were hired to do!</p>
+<p>Congratulations and good luck!</p>
+<p>Finally, if you found this book useful in any way, a review on Amazon
+is always appreciated!</p>

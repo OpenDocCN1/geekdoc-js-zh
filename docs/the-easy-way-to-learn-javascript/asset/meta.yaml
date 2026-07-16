@@ -1,0 +1,158 @@
+name: the easy way to learn javascript
+name_cn: 学习 javascript 的简单方法
+slug: the-easy-way-to-learn-javascript
+toc:
+- - '#'
+  - 学习 javascript 的简单方法
+- - '##'
+  - JavaScript 简介
+- - '##'
+  - JavaScript 的用途
+- - '###'
+  - JavaScript 能为你做什么
+- - '###'
+  - JavaScript 的常见用途
+- - '##'
+  - 进入 DOM 脚本
+- - '##'
+  - JavaScript 的其他现代用途
+- - '##'
+  - 明智且负责地使用 JavaScript
+- - '##'
+  - 开始学习 JavaScript 入门：设置代码
+- - '##'
+  - JavaScript 和 HTML
+- - '###'
+  - HTML 基础
+- - '###'
+  - 学习 JQuery
+- - '###'
+  - jQuery 插件结构
+- - '###'
+  - 为我们的插件添加功能
+- - '###'
+  - 获取折叠面板的 HTML 部分
+- - '###'
+  - JavaScript 与 CSS
+- - '###'
+  - 使用 JavaScript 获取伪元素
+- - '###'
+  - 使用加载器加载 CSS 文件
+- - '###'
+  - CSS Pointer Events 基础
+- - '####'
+  - 用法
+- - '####'
+  - 浏览器支持
+- - '####'
+  - 组件网格
+- - '####'
+  - 加载旋转器
+- - '####'
+  - 文本截断
+- - '###'
+  - 上推动画
+- - '###'
+  - 自定义
+- - '###'
+  - 命令行值
+- - '###'
+  - 每个设计师都应该知道的 20 个核心 CSS 技巧
+- - '###'
+  - 过渡 (Transition)
+- - '###'
+  - 7. 链接状态
+- - '###'
+  - 8. 轻松调整图像大小以适应
+- - '###'
+  - 9. 控制区块中的元素
+- - '###'
+  - 10. 直接子元素 (Direct children)
+- - '####'
+  - 特定子元素 (Specific Child)
+- - '###'
+  - 11. 为多个类应用 CSS
+- - '###'
+  - '12. box-sizing: border-box;'
+- - '###'
+  - 13. :before
+- - '###'
+  - 14. :after
+- - '###'
+  - 15. content
+- - '###'
+  - 16. CSS 重置 (CSS reset)
+- - '###'
+  - 17. 字母大写 (Drop caps)
+- - '###'
+  - 18. 强制大写、小写或首大写
+- - '###'
+  - 19. 垂直屏幕高度 (Vertical screen height)
+- - '###'
+  - 20. 样式化电话链接
+- - '##'
+  - 执行 JavaScript 函数的不同方式
+- - '###'
+  - 1 – 裸锚点 (anchor naked)
+- - '###'
+  - 2 – 带有 href 的锚点 (anchor has href)
+- - '###'
+  - 3 – 伪锚点 (anchor pseudo)
+- - '###'
+  - 4 – 伪空值锚点 (anchor pseudo void)
+- - '###'
+  - 5 – 返回 false 的锚点 (anchor return false)
+- - '###'
+  - 6 – 优美的 URL/jQuery (anchor pretty url/jQuery)
+- - '##'
+  - 学习 CSS 语法和正确应用
+- - '###'
+  - CSS 语法由三个元素组成。
+- - '###'
+  - 内联样式 (Inline Styles)
+- - '###'
+  - 内部样式 (Internal Styles)
+- - '###'
+  - 外部样式 (External Styles)
+- - '###'
+  - 为什么大小写在 JavaScript 中如此重要？
+- - '###'
+  - 理解注释
+- - '##'
+  - 句子中的分号
+- - '##'
+  - 信誉循环
+- - '###'
+  - 或时而谈
+- - '###'
+  - 恐惧
+- - '###'
+  - 感知
+- - '###'
+  - 生产总值 (GNP)
+- - '###'
+  - 更快的马
+- - '###'
+  - 设计 = 经济
+- - '###'
+  - 设计策略触角无不在
+- - '###'
+  - 我们的总结
+- - '##'
+  - JavaScript 和 Ajax
+- - '##'
+  - CSS - 基础
+- - '###'
+  - 什么是 CSS
+- - '###'
+  - 你用 CSS 可以做什么
+- - '###'
+  - 如何让搜索引擎看到你的内容
+- - '###'
+  - CSS 语法
+- - '###'
+  - 内联、内部和外部
+- - '#'
+  - JavaScript
+- - '##'
+  - 跨越浏览器

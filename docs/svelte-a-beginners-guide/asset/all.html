@@ -1,0 +1,2126 @@
+<p><img src="Images/svelte1.jpg" /></p>
+<p><span id="svelte1-frontmatter.html"></span></p>
+<div class="page-frontmatter">
+<section class="page-frontmatter">
+<h2>Svelte: A Beginner's Guide</h2>
+</section>
+<p>Copyright © 2022 SitePoint Pty. Ltd.</p>
+<p>Ebook ISBN: 978-1-925836-48-6</p>
+<ul>
+<li><strong>Author:</strong> Simon Holthausen-Kircher</li>
+<li><strong>Series Editor:</strong> Oliver Lindberg</li>
+<li><strong>Product Manager:</strong> Simon Mackie</li>
+<li><strong>Ignatius Bagus:</strong> Tim Boronczyk</li>
+<li><strong>English Editor:</strong> Ralph Mason</li>
+<li><strong>Cover Designer:</strong> Alex Walker</li>
+</ul>
+<h2 id="svelte1-frontmatter.html_sigil_toc_id_1">Notice of Rights</h2>
+<p>All rights reserved. No part of this book may be reproduced, stored
+in a retrieval system or transmitted in any form or by any means,
+without the prior written permission of the publisher, except in the
+case of brief quotations embodied in critical articles or reviews.</p>
+<h2 id="svelte1-frontmatter.html_sigil_toc_id_2">Notice of
+Liability</h2>
+<p>The author and publisher have made every effort to ensure the
+accuracy of the information herein. However, the information contained
+in this book is sold without warranty, either express or implied.
+Neither the authors and SitePoint Pty. Ltd., nor its dealers or
+distributors will be held liable for any damages to be caused either
+directly or indirectly by the instructions contained in this book, or by
+the software or hardware products described herein.</p>
+<h2 id="svelte1-frontmatter.html_sigil_toc_id_3">Trademark Notice</h2>
+<p>Rather than indicating every occurrence of a trademarked name as
+such, this book uses the names only in an editorial fashion and to the
+benefit of the trademark owner with no intention of infringement of the
+trademark.</p>
+<div class="page-frontmatter">
+<p><img src="Images/sitepoint-logo-2012.png" class="calibre4"
+alt="SitePoint logo" /><br />
+Published by SitePoint Pty. Ltd.</p>
+<p>10-12 Gwynne St, Richmond, VIC, 3121<br />
+Australia<br />
+Web: www.sitepoint.com<br />
+Email: books@sitepoint.com</p>
+</div>
+</div>
+<div class="page-frontmatter">
+<h2 id="svelte1-frontmatter.html_sigil_toc_id_4">About SitePoint</h2>
+<p>SitePoint specializes in publishing fun, practical, and
+easy-to-understand content for web professionals. Visit <a
+href="http://www.sitepoint.com/">http://www.sitepoint.com/</a> to access
+our blogs, books, newsletters, articles, and community forums. You’ll
+find a stack of information on JavaScript, PHP, design, and more.</p>
+<h2 id="svelte1-frontmatter.html_sigil_toc_id_5">About the Author</h2>
+<p>Simon is passionate about web frontends. He has expert knowledge in
+Angular and Svelte and is also proficient in other frameworks, leading
+several projects to success. He is also part of the Svelte maintainer
+team, his most significant contribution being the VS Code extension.</p>
+</div>
+<p><span id="svelte1-preface.html"></span></p>
+<section id="svelte1-preface.html_preface" class="page-frontmatter">
+<h1>Preface</h1>
+<h2 id="svelte1-preface.html_who-should-read-this-book-">Who Should Read
+This Book?</h2>
+<p>This book is for developers with experience of JavaScript. If you’ve
+already used a JavaScript framework such as React, you’ll find this book
+an easy read, but it’s also suitable for readers with no prior
+experience of such frameworks.</p>
+<h2 id="svelte1-preface.html_preface-conventions-used">Conventions
+Used</h2>
+<h3 class="breakbefore" id="svelte1-preface.html_sigil_toc_id_6">Code
+Samples</h3>
+<p>Code in this book is displayed using a fixed-width font, like so:</p>
+<pre class="codeblock"><code>
+&lt;h1&gt;A Perfect Summer&#39;s Day&lt;/h1&gt;
+&lt;p&gt;It was a lovely day for a walk in the park.
+The birds were singing and the kids were all back at school.&lt;/p&gt;
+			</code></pre>
+<p>You’ll notice that we’ve used certain layout styles throughout this
+book to signify different types of information. Look out for the
+following items.</p>
+<h3 class="calibre8" id="svelte1-preface.html_preface-tips">Tips, Notes,
+and Warnings</h3>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Hey, You!</h4>
+<div class="page-frontmatter">
+<p>Tips provide helpful little pointers.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Ahem, Excuse Me ...</h4>
+<div class="page-frontmatter">
+<p>Notes are useful asides that are related—but not critical—to the
+topic at hand. Think of them as extra tidbits of information.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Make Sure You Always ...</h4>
+<div class="page-frontmatter">
+<p>... pay attention to these important points.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip box">
+<h4 class="sigil_not_in_toc">Watch Out!</h4>
+<div class="page-frontmatter">
+<p>Warnings highlight any gotchas that are likely to trip you up along
+the way.</p>
+</div>
+</section>
+<h2 id="svelte1-preface.html_supp-mat">Supplementary Materials</h2>
+<ul>
+<li><a
+href="https://www.sitepoint.com/community/">https://www.sitepoint.com/community/</a>
+are SitePoint’s forums, for help on any tricky problems.</li>
+<li><strong>books@sitepoint.com</strong> is our email address, should
+you need to contact us to report a problem, or for any other
+reason.</li>
+</ul>
+</section>
+<p><span id="svelte1-ch1.html"></span></p>
+<section id="svelte1-ch1.html_ch1" class="page-frontmatter">
+<h1>Chapter 1: Getting Started with Svelte</h1>
+<p>Svelte is a relatively new JavaScript frontend framework for
+developing websites and web apps.</p>
+<p>The praise that Svelte has received over the last two years is
+testament to it not being “just another frontend framework”. It won
+“breakthrough of the year” on the State of JS survey 2019, followed by
+topping the satisfaction rating in 2020. It was also voted the most
+loved web framework in the Stack Overflow 2021 survey.</p>
+<p>Svelte appeals to developers with its combination of a small bundle
+size, very good performance, and ease of use. At the same time, it comes
+packed with a lot of goodies. A simple state management solution to
+build upon is already provided, as well as ready-to-use transitions and
+animations. This introductory tutorial will shed light on how does
+Svelte achieves this. The following tutorials in the series will go into
+more detail on how to implement applications with Svelte using the
+various possibilities Svelte provides.</p>
+<h2 id="svelte1-ch1.html_the-svelte-backstory">The Svelte Backstory</h2>
+<p>But first, a little back story on Svelte. Though it only entered the
+mainstream in the early 2020s, Svelte has been around for much
+longer.</p>
+<p>The first commit to GitHub was in late 2016. Its creator is Rich
+Harris, an open-source wizard whose most prominent other invention is
+Rollup, a modern bundler. Rich Harris worked at the news magazine
+<em>The Guardian</em> as a graphics editor at the time. His daily
+routine was to create interactive visualizations for the website, and he
+wanted to have a tool that easily let him write these without
+compromising on bundle size or speed. At the same time, he wanted
+something approachable so other less tech-savvy colleagues would be able
+to create visualizations fast.</p>
+<p>Out of these needs, Svelte was born. Starting from the news room,
+Svelte quickly gathered a small following in the open-source community.
+But it wasn’t until April 2019 where Svelte really got known to the
+world. This date marked the release of version 3, which was a complete
+rewrite with a focus on developer experience and approachability. Since
+then, Svelte’s popularity has risen a lot, more maintainers have joined
+the team, and Rich Harris has even joined Vercel to work on Svelte
+full-time.</p>
+<h2 id="svelte1-ch1.html_building-a-simple-book-list">Building a Simple
+Book List</h2>
+<p>Let’s dive into Svelte! We’ll build a small book list that allows us
+to add and remove books from our reading list. The final result will
+look something like the image below.</p>
+<p><img src="Images/svelte1-app.png" alt="Final App" /></p>
+<p>We’ll start by scaffolding our project from a project template. We’ll
+use the official <a href="https://github.com/sveltejs/template/">Svelte
+template</a>. Alternatives would be to use a <a
+href="https://github.com/vitejs/vite/tree/main/packages/create-vite/template-svelte">Vite-powered
+template</a> or to use <a href="https://kit.svelte.dev/">SvelteKit</a>,
+a framework on top of Svelte for building full-fledged apps with
+built-in routing—but we’ll keep it as barebones as possible for this
+tutorial.</p>
+<p>After downloading the template, switch to its folder and run
+<code>npm install</code>, which downloads all packages we need to get
+going. Then we’ll switch to <code>App.svelte</code>, where we’ll replace
+the contents with an HTML-only version to lay out the visuals we
+want:</p>
+<pre class="codeblock"><code>&lt;h4&gt;Add Book&lt;/h4&gt;
+&lt;input type=&quot;text&quot; /&gt;
+&lt;h4&gt;My Books&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;A book&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>We can write the above code directly at the top level of the Svelte
+file; we don’t need to add any wrapper elements. Svelte’s syntax is a
+superset of HTML, so anything that is valid inside an HTML file is valid
+inside a Svelte file.</p>
+<p>The question now is how to get the dynamic parts in there. We’ll
+start by adding a static list to the script and render that through a
+loop:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let books = [&#39;Learning Svelte&#39;, &#39;The Zen of Cooking Tea&#39;];
+&lt;/script&gt;
+
+&lt;label&gt;
+  &lt;h4&gt;Add Book&lt;/h4&gt;
+  &lt;input type=&quot;text&quot; /&gt;
+&lt;/label&gt;
+&lt;h4&gt;My Books&lt;/h4&gt;
+&lt;ul&gt;
+  {#each books as book}
+    &lt;li&gt;{book}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>We added a <code>script</code> tag in which we put our JavaScript
+logic related to the component. That logic is executed each time the
+component mounts. We also enhance the HTML with special Svelte syntax to
+create a loop and print the title of each book. As you can see, Svelte
+has distinct syntax for control flow blocks, unlike Vue or Angular,
+which add such functionality in the form of special attributes. This
+makes the code more readable, as you can more easily spot it. It also
+makes it unnecessary to create wrapper elements if you want to contain
+more than one top-level item within the control flow block.</p>
+<p>The title of a book is outputted by surrounding the variable with
+curly braces. In general, whenever you encounter a curly brace within
+the template, you know you are entering something Svelte-related. We’ll
+look into the template syntax in more detail in Part 2 of this tutorial
+series.</p>
+<h2 id="svelte1-ch1.html_reacting-to-user-input">Reacting to User
+Input</h2>
+<p>We can now render an arbitrary list of book titles, defined by our
+<code>books</code> variable. What about adding a new book? To do this,
+we need to enhance our logic in the <code>&lt;script&gt;</code> tag and
+connect it to the <code>&lt;input&gt;</code> element:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let books = [&#39;Learning Svelte&#39;, &#39;The Zen of Cooking Tea&#39;];
+  let newBook = &#39;&#39;;
+
+  function addBook(evt) {
+    if (evt.key === &#39;Enter&#39;) {
+      books = [...books, newBook];
+      newBook = &#39;&#39;;
+    }
+  }
+&lt;/script&gt;
+
+&lt;label&gt;
+  &lt;h4&gt;Add Book&lt;/h4&gt;
+  &lt;input type=&quot;text&quot; bind:value={newBook} on:keydown={addBook} /&gt;
+&lt;/label&gt;
+&lt;h4&gt;My Books&lt;/h4&gt;
+&lt;ul&gt;
+  {#each books as book}
+    &lt;li&gt;{book}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>We added a new variable called <code>newBook</code>, which should
+mirror the input value. To do that, we bind it to the
+<code>&lt;input&gt;</code> by writing <code>bind:value={newBook}</code>.
+This establishes a two-way binding, so every time the user enters text
+into the <code>&lt;input&gt;</code>, <code>newBook</code> updates, and
+if <code>newBook</code> is updated in the <code>&lt;script&gt;</code>
+tag, the display value of <code>&lt;input&gt;</code> changes. We could
+have done the same with simple dynamic attributes, but this way saves us
+some code—a thought pattern you’ll come across often in Svelte.</p>
+<p>When the user presses <kbd>enter</kbd>, we want to add the new book
+title to the list. To do this, we add a DOM event listener. To tell
+Svelte to hook into the event, we just add a colon between
+<code>on</code> and the rest of the event name—so in this case it’s
+<code>on:keydown</code>. After that, we use the curly braces and place
+the name of the function inside. The function is called each time the
+event fires off. More on this template syntax can be found in Part 2 of
+this tutorial series.</p>
+<p>The function to call in this case is <code>addBook</code>, in which
+we check the keyboard event, and if the user indeed pressed
+<kbd>enter</kbd>, we update the <code>books</code> variable. Notice the
+lack of a <code>this</code> context like we find in Angular or Vue 2, or
+the lack of special value objects like in Vue 3, or the lack of
+<code>setState</code> in React. Svelte doesn’t need extra syntax in this
+case to know that the variable has updated. This might feel like magic,
+but also like “just plain simple JavaScript” at the same time.</p>
+<p>To understand how Svelte achieves this, we need to look under the
+hood. What does Svelte actually do with a <code>.svelte</code> file, and
+when does it process it? The answer: <em>Svelte is actually a
+compiler!</em> It does most of the work before your code is even loaded
+in the browser. Svelte parses the code and transforms it into regular
+JavaScript. During parsing, it’s able to see that variables like
+<code>newBook</code> are used in the template, so assignments to it will
+cause rerenders. The compilation output will therefore wrap these
+assignments with calls to a <code>$$invalidate</code> function, which
+will schedule a rerender of this exact component for the next browser
+paint. This is the secret to Svelte’s great performance: it knows in
+advance which parts could trigger rerenders and then only needs to do
+work in these exact places, surgically updating the DOM. It’s also the
+reason why the bundle sizes of Svelte applications are so small:
+everything that’s not needed just won’t be part of the output, so Svelte
+can leave out every part of its tiny runtime that isn’t needed. A Svelte
+Hello World! app has a bundle size of just 2.5KB!</p>
+<p>The only thing to watch out for is that Svelte does only look for
+assignments. That’s why we need to do
+<code>books = [...books, newBook];</code> or
+<code>books.push(newBook); books = books;</code>. Otherwise, Svelte
+wouldn’t know that <code>books</code> has updated.</p>
+<p><img src="Images/svelte1-compilation-output.png"
+alt="Compilation Output" /></p>
+<h2 id="svelte1-ch1.html_finishing-touches">Finishing Touches</h2>
+<p>We did it! We can now view and add books to our list! It doesn’t look
+that pretty, though, so let’s put some finishing touches to our UI.
+First, we’ll add some CSS to style our elements:</p>
+<pre class="codeblock"><code>&lt;!-- script and html code... --&gt;
+
+&lt;style&gt;
+  input {
+    padding: 5px 10px;
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 5px 0;
+  }
+&lt;/style&gt;</code></pre>
+<p>As you can see, we just add a <code>&lt;style&gt;</code> tag to our
+<code>.svelte</code> file and continue to write regular CSS in it. If
+you’re fearing that the code above will style all
+<code>&lt;input&gt;</code>, <code>&lt;li&gt;</code> or
+<code>&lt;ul&gt;</code> tags in the entire application, be assured that
+it won’t. Svelte scopes styles by default, so they only apply to the
+component they’re defined in. If you want to define something globally,
+wrap the selector with the <code>:global</code> function. If, for
+example, you’d like to style all <code>&lt;input&gt;</code>s in the
+application, the code would be
+<code>:global(input) { padding: 5px 10px; }</code>.</p>
+<p>The styling is better now. Let’s finish it off with a transition for
+better UX: we want new list elements to fade in. To do that, we just
+need to reach for one of Svelte’s built-in transitions and animations
+and apply them:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { fade } from &#39;svelte/transition&#39;;
+  // ..
+&lt;/script&gt;
+
+&lt;!-- input ... --&gt;
+&lt;h4&gt;My Books&lt;/h4&gt;
+&lt;ul&gt;
+  {#each books as book}
+    &lt;li transition:fade&gt;{book}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;
+
+&lt;!-- styling ... --&gt;</code></pre>
+<p>And that’s it! Just by importing one of the built-in transitions and
+applying it by adding <code>transition:fade</code> to the element, we
+get that smooth fade-in transition. Our mini app is now finished. This
+doesn’t contain the topbar and the background gradient yet, but it
+should be easy now for you to add this as well. This is the end
+result:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { fade } from &#39;svelte/transition&#39;;
+
+  let books = [&#39;Learning Svelte&#39;, &#39;The Zen of Cooking Tea&#39;];
+  let newBook = &#39;&#39;;
+
+  function addBook(evt) {
+    if (evt.key === &#39;Enter&#39;) {
+      books = [...books, newBook];
+      newBook = &#39;&#39;;
+    }
+  }
+&lt;/script&gt;
+
+&lt;label&gt;
+  &lt;h4&gt;Add Book&lt;/h4&gt;
+  &lt;input type=&quot;text&quot; bind:value={newBook} on:keydown={addBook} /&gt;
+&lt;/label&gt;
+&lt;h4&gt;My Books&lt;/h4&gt;
+&lt;ul&gt;
+  {#each books as book}
+    &lt;li transition:fade&gt;{book}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;
+
+&lt;style&gt;
+  input {
+    padding: 5px 10px;
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 5px 0;
+  }
+&lt;/style&gt;</code></pre>
+<h2 id="svelte1-ch1.html_architectural-considerations">Architectural
+Considerations</h2>
+<p>We’ve seen how to write a little app in Svelte with just 32 lines of
+code. We’ve only scratched the surface, of course. A full-blown app
+needs some kind of state management, multiple components, and ways to
+integrate these components with each other.</p>
+<p>For example, it would make sense to split out the display of one
+to-do item into a separate component, as we’ll add features like editing
+the name in-place or marking it as done. Having this all in one
+component would become hard to maintain over time. Luckily, using other
+components is as easy as importing it as a default import from another
+Svelte file and interacting with it in a similar way to what we’ve
+already seen with regular DOM elements. We’ll look into component
+interaction in more detail in Part 5 of this series.</p>
+<p>Another example would be the management of to-dos. Right now, they’re
+handled inside the component and there’s no connection to a backend. If
+we were to add API calls, we would mix UI logic with backend
+interaction, which is generally better handled outside of components for
+better separation of concerns. We can use Svelte stores for this, which
+we’ll look at in Part 4.</p>
+<p>As you can see, Svelte has solutions to all of our requirements, and
+we’ll look at them over the course of this series.</p>
+<h2 id="svelte1-ch1.html_ready-set-svelte-">Ready, Set … Svelte?</h2>
+<p>So, is it safe to use Svelte for your next project? Your manager
+might ask if Svelte will be around in the years to come or burn out like
+previous frontend framework stars. There isn’t one big company backing
+Svelte’s entire development as there is for Angular and React, but Vue
+has already shown that this isn’t a problem. Moreover, as stated at the
+beginning, Rich Harris, the creator of Svelte, is now working on it
+full-time. With Svelte’s continuous rise in popularity, there’s no sign
+of it going anywhere in the years to come.</p>
+<p>Another aspect of choosing a framework is the ecosystem and its
+tooling. The ecosystem is still small compared to React, but new
+libraries are coming out every day, and there are already a handful of
+very good component libraries. At the same time, since Svelte is so
+close to vanilla HTML and JavaScript, it’s very easy to integrate any
+existing regular HTML/JavaScript library into your codebase, with no
+need for wrapper libraries.</p>
+<p>Regarding tooling, Svelte is looking pretty good. There’s an official
+VS Code extension that’s actively maintained, as well as an underlying
+language server that can be used by many other IDEs to integrate
+Intellisense. IntelliJ also has a plugin for Svelte and recently hired
+the creator behind it to work at JetBrains. There are also various tools
+for integrating Svelte with various bundlers. And yes, you can also use
+TypeScript with Svelte.</p>
+<p>If you’re looking to build a full-blown website or web app, you might
+also be interested in checking out <a
+href="https://kit.svelte.dev/">SvelteKit</a>. It provides a stellar
+development experience and comes with a flexible filesystem-based
+router. It also enables you to deploy to many different platforms like
+Vercel, Netlify, your own Node server, or just a good old static file
+server, depending on the features and needs of your application.</p>
+<section class="sigil_not_in_toc box attention">
+<h4 class="sigil_not_in_toc">Svelte Sumamry</h4>
+<div class="body">
+<p>In brief, here are the important points to remember about Svelte:</p>
+<ul>
+<li>it has a full-time maintainer</li>
+<li>it has good tooling</li>
+<li>its features are stable</li>
+<li>its ecosystem is growing</li>
+<li>SvelteKit is available for building apps fast</li>
+</ul>
+</div>
+</section>
+<p>To summarize: Svelte is definitely ready to use for your next
+project! If you want to give it a try and you want to learn more, this
+tutorial series has you covered. In Chapter 2, we’ll take a close look
+at the template syntax. In Chapter 3, we’ll look at reactive statements
+and how they help us react to variable changes or derive computed
+variables. In Chapter 4, we’ll look at stores, which will help us with
+logic outside and across Svelte files, and which we can also use for
+state management. In Chapter 5, we’ll look at various component
+interaction concepts. Finally, in Chapter 6, we’ll look into testing
+Svelte apps.</p>
+<p>We hope to have sparked your interest in Svelte!</p>
+</section>
+<p><span id="svelte1-ch2.html"></span></p>
+<section id="svelte1-ch2.html_ch2" class="page-frontmatter">
+<h1>Chapter 2: Template Syntax</h1>
+<p>In the first chapter, we got introduced to the history of Svelte and
+made our first little steps at writing a simple component. In this and
+the following chapters, we’ll have a closer look at specific aspects of
+writing Svelte code. In the end, you’ll be able to create applications
+in Svelte that scale. We’ll start with taking a deep dive into Svelte’s
+template syntax.</p>
+<p>Similar to Angular or Vue, Svelte enhances the HTML syntax with
+several features for expressing dynamic properties, loops, and more.
+We’ll take a look at each of them and see how they help you write
+readable code. One of the nice things about Svelte is that you can start
+with “just HTML” and gradually enhance your markup with dynamic
+features. You do so by using special syntax—called HTMLx in Svelte—that
+acts as an enhancement of HTML. We’ll use this syntax to gradually
+enhance the following code, which represents the initial draft of a
+to-do app:</p>
+<pre class="codeblock"><code>&lt;label&gt;
+    New To-Do
+    &lt;!-- To implement: make this update the list --&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+&lt;/label&gt;
+
+&lt;!-- To implement: only show this if we don&#39;t have a to-do yet --&gt;
+&lt;p&gt;What do you want to work on?&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;!-- To implement: make this a dynamic list --&gt;
+    &lt;li&gt;An item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>The snippet above shows what we want to accomplish with our little
+app: to be able to enter new to-do items and show them in a list. Other
+things like marking them as done is out of scope for now, but you are of
+course free to add them yourself after having finished reading this
+tutorial.</p>
+<p>The final app will look something like the image below.</p>
+<p><img src="Images/svelte2-app.png" alt="To-do App" /></p>
+<h2 id="svelte1-ch2.html_control-flow-syntax">Control Flow Syntax</h2>
+<p>To start, we want to make the list dynamic and render an array of
+text entries as our to-do list. To achieve that, we’ll need to add a
+<code>&lt;script&gt;</code> block to be able to put our list of to-dos
+in a variable. We’ve seen in the first chapter that we’re able to write
+regular JavaScript code into the contents of a
+<code>&lt;script&gt;</code> tag, and its variables and functions are
+then available in the template. We then reach for the <code>#each</code>
+block—one of currently four control flow blocks in Svelte—to loop over
+the list of to-dos in the template:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+&lt;/script&gt;
+
+&lt;!-- ... --&gt;
+
+&lt;ul&gt;
+    &lt;!-- syntax: {#each &lt;arrayname&gt; as &lt;entry&gt;} loop content {/each} --&gt;
+    {#each todos as todo}
+        &lt;li&gt;{todo}&lt;/li&gt;
+    {/each}
+&lt;/ul&gt;</code></pre>
+<p>As you can see, Svelte chooses a different approach to its template
+syntax compared to Vue or Angular. While the latter two add control flow
+syntax such as loops in the form of special attributes, Svelte creates
+distinct syntax for it. This makes the code more readable, as you can
+more easily spot it. It also makes it unnecessary to create wrapper
+elements if you want to contain more than one top-level item within the
+control flow block.</p>
+<p>The text of one to-do item is outputted by surrounding the variable
+with curly braces. In general, whenever you encounter a curly brace
+within the template, you know you’re entering something
+Svelte-related.</p>
+<section class="sigil_not_in_toc box attention">
+<h4 class="sigil_not_in_toc">Look for Braces!</h4>
+<div class="body">
+<p>Any time you’re looking through the markup and see braces, you
+immediately know that you’re getting into Svelte’s territory.</p>
+</div>
+</section>
+<p>Let’s use another control flow block to solve the second task of
+showing a message if we have no to-dos yet. We’ll use an
+<code>#if</code> block for that:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+&lt;/script&gt;
+
+&lt;!-- ... --&gt;
+
+{#if todos.length === 0}
+    &lt;p&gt;What do you want to work on?&lt;/p&gt;
+{:else}
+    &lt;ul&gt;
+        {#each todos as todo}
+            &lt;li&gt;{todo}&lt;/li&gt;
+        {/each}
+    &lt;/ul&gt;
+{/if}</code></pre>
+<p>The <code>if</code> block reads very much like a regular JavaScript
+<code>if</code> block. The block starts with <code>{#if ..}</code>, and
+can have multiple <code>{:else if ..}</code> branches as well as one
+final <code>{:else}</code> branch. Just as with regular if blocks, the
+latter two are optional. The block is closed by writing
+<code>{/if}</code>. In general, the control flow syntax is
+<code>{#&lt;name&gt; ..} .. {:&lt;possibly something&gt;} .. {/&lt;name&gt;}</code>.
+The hash marks the start of a block, the colon marks optional other
+branches where the text behind the colon depends on the control flow
+block, and the slash marks the end of a block.</p>
+<p><code>#if</code> and <code>#each</code> are probably what you’ll
+reach out for the most, but there are two more control flow blocks that
+also come in handy from time to time.</p>
+<p>The first one is the <code>#await</code> block, which lets you use
+promises inside the markup:</p>
+<pre class="codeblock"><code>{#await somePromise}
+  Loading..
+{:then result}
+  The result is {result}
+{:catch error}
+  Oh no! An error occurred: {error}
+{/await}</code></pre>
+<p>As shown above, it’s possible to handle all states of a promise, from
+loading the result to catching errors. Just like we’ve seen with
+<code>#if</code>, the syntax and semantics closely match that of using
+promises in regular JavaScript: you <code>#await</code> the promise,
+<code>{:then ...}</code> is very similar to the <code>.then(..)</code>
+function of a promise object, and <code>{:catch ...}</code> is very
+similar to the corresponding <code>.catch(..)</code> function of a
+promise object. The branches are all optional, and you can also skip
+showing the loading branch by doing
+<code>{#await somePromise then result}..{/await}</code>.</p>
+<p><img src="Images/syntax-similarities.png"
+alt="Syntax similarities between Svelte and JavaScript control flow blocks" /></p>
+<p>The last control flow block is <code>#key</code>, which was added
+more recently. It destroys and recreates everything inside it if the
+value passed to it changes:</p>
+<pre class="codeblock"><code>{#key someValue}
+  I get destroyed and recreated every time someValue changes
+{/key}</code></pre>
+<p>This is useful mainly in two scenarios. The first scenario is when
+you have component where it’s easier to recreate its state and contents
+from scratch rather than updating it—for example, when you wrap a
+third-party library inside that doesn’t provide a good update mechanism.
+The second scenario is when you want to replay a transition. A
+transition is a kind of animation that’s only triggered when an element
+is created or destroyed.</p>
+<p>Let’s get back to our example, which now looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+&lt;/script&gt;
+
+&lt;label&gt;
+    New To-Do
+    &lt;!-- To implement: make this update the list --&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+&lt;/label&gt;
+
+{#if todos.length === 0}
+    &lt;p&gt;What do you want to work on?&lt;/p&gt;
+{:else}
+    &lt;ul&gt;
+        {#each todos as todo}
+            &lt;li&gt;{todo}&lt;/li&gt;
+        {/each}
+    &lt;/ul&gt;
+{/if}</code></pre>
+<p>We’re now able to differentiate between having an empty list and
+having to-dos, and we can render each of them into a list. Awesome!</p>
+<h2
+id="svelte1-ch2.html_adding-new-to-dos-using-events-and-bindings">Adding
+New To-dos Using Events and Bindings</h2>
+<p>What’s left is to be able to add new to-do items to the list. When we
+type into the text box and press <kbd>enter</kbd>, we want to add that
+text as a new item to the list. A first version looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+    let newTodo = &#39;&#39;;
+    function handleKeyup(evt) {
+        if (evt.key === &#39;Enter&#39;) {
+            todos = [...todos, newTodo];
+            newTodo = &#39;&#39;;
+        }
+        newTodo = evt.target.value;
+    }
+&lt;/script&gt;
+
+&lt;label&gt;
+    New To-Do
+    &lt;input type=&quot;text&quot; value={newTodo} on:keyup={handleKeyup} /&gt;
+&lt;/label&gt;
+
+&lt;!-- ... --&gt;</code></pre>
+<p>There are a few things going on here, let’s go through them one by
+one.</p>
+<p>First, we set the <code>value</code> attribute of the input by
+assigning it to the value of <code>newTodo</code>. Whenever
+<code>newTodo</code> is updated, the input text will also be updated. If
+we had given the variable the same name as the attribute, we could have
+written <code>{value}</code>, which is the shorthand of
+<code>value={value}</code>. These shorthands can be used whenever the
+variable and attribute name are the same.</p>
+<p>Next, we listen to the <code>keyup</code> event of the input. There
+are numerous DOM events, all starting with <code>on</code>—in this case
+<code>onkeyup</code>. To tell Svelte to hook into the event, we just add
+a colon between <code>on</code> and the rest of the event name—so in
+this case it’s <code>on:keyup</code>. After that, we use the curly
+braces and place the name of the function inside. The function is called
+each time the event fires off. You could also place an anonymous
+function in there, if you like.</p>
+<p>Inside <code>handleKeyup</code>, we then listen to the keyup event
+and act accordingly. We update <code>newTodo</code> whenever we enter a
+character, and when we press <kbd>enter</kbd>, we add the text to the
+list of to-dos and then reset the input value. Notice how we didn’t need
+any extra function like <code>setState</code> to tell Svelte to rerender
+in reaction to a variable change. Svelte knows when to rerender by
+looking for assignment operators, so it knows which variable is dirty.
+When compiling a Svelte component, it will wrap these assignments with a
+function call that tells the runtime to rerender on the next browser
+paint. Be careful, though, as this means that only doing
+<code>todos.push(newTodo)</code> won’t work: Svelte will only mark
+variables dirty that were updated through assignments. Writing
+<code>todos.push(newTodo); todos = todos;</code> would therefore be
+okay.</p>
+<p>The code above works, but we can do a little better. Instead of
+manually keeping <code>newTodo</code> in sync with the input value by
+listening to the <code>keyup</code> event, we can also use a binding.
+The result looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+    let newTodo = &#39;&#39;;
+    function handleKeyup(evt) {
+        if (evt.key === &#39;Enter&#39;) {
+            todos = [...todos, newTodo];
+            newTodo = &#39;&#39;;
+        }
+    }
+&lt;/script&gt;
+
+&lt;label&gt;
+    New To-Do
+    &lt;input type=&quot;text&quot; bind:value={newTodo} on:keyup={handleKeyup} /&gt;
+&lt;/label&gt;
+
+&lt;!-- ... --&gt;</code></pre>
+<p>Notice the <code>bind:</code> that we prepended to the
+<code>value</code> attribute. This establishes a two-way-binding between
+the <code>value</code> of the input and the variable
+<code>newTodo</code>. We can change it from the outside, but it’s also
+automatically updated whenever the user types something into the input.
+Similar to the shorthand for attribute inputs, there’s a shorthand if
+the name of the variable we bind and the attribute we bind it to are the
+same. So in this case, if the variable name was <code>value</code>, we
+could just write <code>bind:value</code>. Svelte allows a limited set of
+these bindings on DOM elements, mostly around input elements. This makes
+interacting with forms really easy. It’s also possible to bind to
+properties of components (you’ll learn more about component interaction
+in Part 5 of this series). If you were to write
+<code>&lt;Component bind:property /&gt;</code>, this would mean that
+<code>Component</code> would rerender every time you changed
+<code>property</code> from the outside, and it would also propagate back
+changes to <code>property</code> it made on the inside. But beware: too
+many two-way bindings might get confusing to reason about, so use them
+with caution.</p>
+<p>You may have noticed by now that code inside control blocks or curly
+braces is regular JavaScript—and indeed, you can use all the JavaScript
+features you like inside them. This relieves you from learning any extra
+template syntax aside from what we’ve seen above.</p>
+<section class="sigil_not_in_toc box attention">
+<h4 class="sigil_not_in_toc">It’s Just JavaScript!</h4>
+<div class="body">
+<p>Everything inside curly braces and control flow blocks in markup is
+just JavaScript.</p>
+</div>
+</section>
+<h2 id="svelte1-ch2.html_wrapping-up1">Wrapping Up</h2>
+<p>In this second Svelte tutorial, we learned the Svelte template
+syntax. We learned how to output dynamic content by putting variables in
+<code>{brackets}</code>. We got to know the four control flow blocks, of
+which <code>#if</code> and <code>#each</code> are probably what you’ll
+reach for most of the time. We learned how to read and write attributes
+and how to listen to events. Finally, we learned that we can use two-way
+bindings in some situations to make our lives easier.</p>
+<p>The final code—after adding all the syntax elements we learned about
+above—looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let todos = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+    let newTodo = &#39;&#39;;
+    function handleKeyup(evt) {
+        if (evt.key === &#39;Enter&#39;) {
+            todos = [...todos, newTodo];
+            newTodo = &#39;&#39;;
+        }
+    }
+&lt;/script&gt;
+
+&lt;label&gt;
+    New To-Do
+    &lt;input type=&quot;text&quot; bind:value={newTodo} on:keyup={handleKeyup} /&gt;
+&lt;/label&gt;
+
+{#if todos.length === 0}
+    &lt;p&gt;What do you want to work on?&lt;/p&gt;
+{:else}
+    &lt;ul&gt;
+        {#each todos as todo}
+            &lt;li&gt;{todo}&lt;/li&gt;
+        {/each}
+    &lt;/ul&gt;
+{/if}</code></pre>
+<p>Notice how close we are to vanilla JavaScript and simple HTML. Svelte
+doesn’t distort but enhances existing code. The following colorization
+visualizes this. Everything that’s blue is regular JavaScript,
+everything that’s green is regular HTML, and everything that’s orange is
+Svelte syntax.</p>
+<p><img src="Images/syntax-colorization.png"
+alt="Syntax colorization" /></p>
+<p>With these tools at your disposal, you’re now ready to enrich your
+HTML with dynamic content and behavior! In the next chapter, we’ll look
+into reactive statements and how they can help us derive computed
+variables or react to variable changes, and how Svelte again uses its
+unique advantage—being a compiler—to make the developer experience of
+writing these as good as possible.</p>
+</section>
+<p><span id="svelte1-ch3.html"></span></p>
+<section id="svelte1-ch3.html_ch3" class="page-frontmatter">
+<h1>Chapter 3: Reactive Statements</h1>
+<p>So far, we've learned that Svelte is able to compile regular variable
+assignments inside components into something that will automatically
+update the view. Whenever you assign something to a variable, Svelte
+will notice that and schedule a rerender for the next browser paint. We
+then had a closer look at the component syntax to see how to add dynamic
+behavior to our HTML code. In this chapter, we’ll focus on the contents
+of the <code>&lt;script&gt;</code> tag and take a look at how we can run
+other code in reaction to a variable change.</p>
+<p>Have you ever needed to react to a variable change? Probably every
+day, in some form or the other. Svelte already reacts nicely to changes
+of variables by rerendering the view. But what if we need to explicitly
+react to a variable change inside our <code>&lt;script&gt;</code> tag?
+Doubling a count, fetching a new object from the backend when an ID
+changes—there are many use cases. This is where reactive statements come
+in. They look something like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  // reactive declaration
+  $: foo = bar;
+  // reactive statement
+  $: {
+      something = somethingElse;
+  }
+&lt;/script&gt;</code></pre>
+<p>Syntactically, the reactive statement is expressed by using the
+dollar sign followed by a colon—<code>$:</code>. This is actually valid
+JavaScript syntax. Originally, it expresses a labelled
+statement—<code>labelname : statement</code>—to which you can tell
+JavaScript to jump when using <code>continue</code> or
+<code>break</code>. But since no one uses that, Svelte has filled the
+void to syntactically express its reactive statement. This means you
+can’t use labelled statements of the name <code>$</code> inside Svelte
+files, but as you’re most likely not using labelled statements of any
+kind anyway, this won’t make a difference.</p>
+<p>With the syntax out of the way, let’s look at the semantic meaning of
+reactive statements, which come in two forms: reactive declarations and
+reactive statements.</p>
+<h2 id="svelte1-ch3.html_reactive-declarations">Reactive
+Declarations</h2>
+<p>A <strong>reactive declaration</strong> defines a variable whose
+value is dependent on other variables. A simple reactive declaration may
+look like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let count = 0;
+  $: doubled = count * 2;
+&lt;/script&gt;
+
+&lt;p&gt;Count: {count}&lt;/p&gt;
+&lt;p&gt;Doubled: {doubled}&lt;/p&gt;
+&lt;button on:click={() =&gt; count += 1}&gt;Increase count&lt;/button&gt;</code></pre>
+<p>This reactive declaration declares the variable <code>doubled</code>,
+which is expressed as being the double of the variable
+<code>count</code>. Whenever <code>count</code> changes, Svelte knows to
+also compute the new value of <code>doubled</code>. Think of reactive
+declarations like a formula of an Excel cell: you declaratively define
+what the result is, and Svelte takes care of the rest—but note the
+caveats that we’ll get to later. Reactive declarations can also depend
+on other reactive declarations, so you could write
+<code>$: quadrupled = doubled * 2</code>.</p>
+<h2 id="svelte1-ch3.html_reactive-statements">Reactive Statements</h2>
+<p>A <strong>reactive statement</strong> doesn’t define a computed
+variable. Instead, defines a block that should be rerun whenever its
+dependencies change. Every variable that appears inside the block of a
+reactive statement and is read (<em>not</em> written to)—in order to
+compute the outcome—is a dependency. A reactive statement looks like
+this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let count = 0;
+  let prevCount = 0;
+  let countWentUp = false;
+  // Simple statement
+  $: console.log(&#39;Count is&#39; + count);
+  // Block statement
+  $: {
+      countWentUp = prevCount &lt; count;
+      prevCount = count;
+  }
+&lt;/script&gt;
+
+&lt;p&gt;Count: {count}&lt;/p&gt;
+&lt;p&gt;Count went {countWentUp ? &#39;up&#39; : &#39;down&#39;}&lt;/p&gt;
+&lt;button on:click={() =&gt; count += 1}&gt;Increase count&lt;/button&gt;
+&lt;button on:click={() =&gt; count -= 1}&gt;Decrease count&lt;/button&gt;</code></pre>
+<p>As you can see, a reactive statement is essentially an arbitrary bit
+of code that should be rerun at certain times. In the above example, the
+<code>console.log</code> statement is rerun every time the
+<code>count</code> changes. Inside the block statement, we update two
+variables in reaction to a <code>count</code> change. First, we compare
+the previous count with the current count to determine whether the count
+went up or down, and then we store the current count as the new previous
+count for the next run. You can use reactive statements to express side
+effects or run computations that don’t fit into a simple declaration
+statement, or which touch more than one variable. Essentially, reactive
+statements are a superset of reactive declarations: you could rewrite
+every reactive declaration as a reactive statement. The following code
+is identical from a semantic point of view:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let something = &#39;something&#39;;
+  // This ...
+  $: declaration = something;
+  // Is the same as this
+  let statement;
+  $: {
+    statement = something;
+  }
+&lt;/script&gt;</code></pre>
+<h2 id="svelte1-ch3.html_order-of-execution">Order of Execution</h2>
+<p>You might ask now in which order these reactive statements are run.
+Intuitively, it makes sense that it’s somehow ordered in relation to the
+things they use, but how exactly? The answer is simple: at compile time,
+Svelte looks at the <em>direct</em> code of the reactive statements and
+checks each variable that’s <em>read</em>. These are the dependencies we
+already touched on briefly in the previous section. From these
+dependencies, Svelte determines the order of the statements. That means
+you could write <code>$: quadrupled = doubled * 2</code> before writing
+<code>$: doubled = count * 2</code> and Svelte would execute the
+<code>doubled</code> declaration first.</p>
+<p>Mathematically speaking, this is called <strong>topological
+ordering</strong> with respect to the variables. If Svelte isn’t able to
+determine an ordering that way—for example, because the statements have
+no dependencies between them—they’re executed in the order you’ve
+written them down. In the following code example, <code>doubled</code>
+and <code>quadrupled</code> can be reordered correctly, because Svelte
+sees the dependency between them. The <code>console.log</code> statement
+at the end stays untouched and runs last, because it has no dependency
+to <code>doubled</code> or <code>quadrupled</code> or something that
+needs to run before they run:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let count = 0;
+  $: quadrupled = doubled * 2; // runs 2nd
+  $: doubled = count * 2; // runs 1st
+  $: console.log(quadrupled); // runs 3rd
+  $: console.log(count); // runs last
+&lt;/script&gt;</code></pre>
+<p>There may be situations where we want to hide a variable from the
+dependencies. In the following somewhat arbitrary (but simple) example,
+we want <code>multiplied</code> to only update when we increase
+<code>count</code>, but not when we change <code>multiplyBy</code>. We
+do this by hiding the variable <code>multiplyBy</code> from the direct
+dependencies, by moving it into a function:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let count = 0;
+  let multiplyBy = 2;
+
+  $: multiplied = multiply(count);
+
+  function multiply(value) {
+      return value * multiplyBy;
+  }
+&lt;/script&gt;</code></pre>
+<p>Now <code>multiplied</code> will only change if <code>count</code>
+changes, but not when <code>multiplyBy</code> changes. This works
+because Svelte only looks at the <em>direct</em> code of the reactive
+statement; it doesn’t follow function calls.</p>
+<p>The inverse might be true, too: we may want to retrigger a reactive
+statement even if a variable changes that doesn’t directly contribute to
+the result. In this case, we can just add the variable in question by
+making it appear within the reactive statement:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  // ...
+  $: variableWhichShouldTriggerRecalculation, retriggerCalculation();
+  // ...
+&lt;/script&gt;</code></pre>
+<p>The above shows one possible way to do this by using the comma
+operator. Another way would be to make it part of the function
+parameters but never use it in the function itself. How exactly you make
+the variable appear is up to you. Anything that’s valid JavaScript is
+allowed.</p>
+<p>Since reactive statements are regular JavaScript, you can also use
+<code>if</code>-blocks to have more control over when a statement is
+rerun by only executing its body when a certain condition is met:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  // ...
+  $: if (someVariable &lt; 100) {
+    // ...
+  }
+  // ...
+&lt;/script&gt;</code></pre>
+<p>The above code executes whenever <code>someVariable</code> or
+anything inside the reactive statement is updated, but will only go into
+the body of the statement when the <code>if</code> condition is met. You
+can use this as an alternative to hiding variables from the statement,
+and also use it to rerun the statement when a variable not used in the
+body changes by placing it as a dummy condition in the <code>if</code>
+statement.</p>
+<p>Most of the time, you don’t need to care about the dependencies. This
+is a relief in comparison to React, where you need to be very explicit
+about the dependencies in the context of hooks. In Svelte, most of the
+time it “just works” like you expect it to, and if you need to fine-tune
+execution behavior, you can easily adapt your code by using one of the
+techniques shown above.</p>
+<p>Let’s summarize these findings by looking at one more example. The
+screenshot below shows in which order the reactive statements are run.
+The arrows show the dependency on other reactive statements.
+<code>multiplied</code> runs first because it depends on
+<code>count</code>. <code>doubleMultiplied</code> runs second because it
+depends on <code>multiplied</code>. <code>refreshDetails()</code> runs
+third because it depends on <code>doubleMultiplied</code>.
+<code>console.log(count)</code> runs last because it’s written after all
+other reactive statements and none of the other statements needs it to
+run first. None of the statements rerun when <code>multiplyBy</code>
+changes because none of them has a direct dependency on it.</p>
+<p><img src="Images/execution-order.png"
+alt="Reactive Statements Ordering" /></p>
+<h2 id="svelte1-ch3.html_reactive-statements-are-run-once">Reactive
+Statements Are Run Once</h2>
+<p>One thing that didn’t become clear from the previous sections but
+which might become important is the execution timing of reactive
+statements. If a regular variable is reassigned, Svelte will schedule an
+update for the next browser paint. Between this scheduling and the paint
+is the time where reactive statements are executed—but they’re only
+executed once. This means that, if a reactive statement writes to a
+variable which a previously run reactive statement is reading, that
+reactive statement will <em>not</em> be rerun. This prevents endless
+loops, performance issues, and also makes certain reactive statements
+possible to write. Let’s have a look at the reactive statement from
+above again:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  let count = 0;
+  let prevCount = 0;
+  let countWentUp = false;
+  $: {
+      countWentUp = prevCount &lt; count;
+      prevCount = count;
+  }
+&lt;/script&gt;</code></pre>
+<p>This reactive statement reads <code>prevCount</code>, but it also
+<em>writes</em> to <code>prevCount</code>. If the statement were to run
+more than once, this would mean it would get invalidated immediately
+again, resulting in an infinite loop, and would also always assign
+<code>false</code> to <code>countWentUp</code> in the end, which defeats
+its purpose. Just like with the dependencies, most of the time this is
+nothing to care about, because reactive statements feel very natural to
+write. But it’s good to keep in mind once you get into more complex use
+cases.</p>
+<p><img src="Images/no-rerun.png" alt="No Rerun" /></p>
+<h2 id="svelte1-ch3.html_wrapping-up2">Wrapping Up</h2>
+<p>This tutorial introduced reactive statements. We can use them to
+react to assignments of other variables to execute side effects or
+create computed variables. Reactive statements are ordered in Svelte by
+looking at direct dependencies, and then scheduled to run after a
+variable assignment. If an order can’t be determined, they’re run in the
+order they’re declared. We can use this to our advantage to hide
+variables from the dependencies by moving them into functions or by
+adding additional variables to the statement to retrigger the execution
+of that statement. Reactive statements won’t be rerun if a reactive
+statement executed later during the same run updates a variable they
+depend on. With that in mind, you’re now prepared to react to all the
+things!</p>
+<p>This marks the end of us solely focusing on the insides of one
+component. In the first chapter, we learned that Svelte is a compiler
+offering some unique advantages, which we also saw in this chapter, too.
+In the second chapter, we had a closer look at the component syntax to
+see how to add dynamic behavior to our HTML code. The next chapters will
+look at what we can do to integrate components with each other. We’ll
+start by looking at Svelte stores, which provide us with a simple yet
+powerful API for handling cross-component state in our application.</p>
+</section>
+<p><span id="svelte1-ch4.html"></span></p>
+<section id="svelte1-ch4.html_ch4" class="page-frontmatter">
+<h1>Chapter 4: Stores</h1>
+<p>Svelte’s reactivity inside Svelte components is intuitive and easy.
+Because Svelte is a compiler, it can transform regular variable
+assignments into something the UI will rerender when it changes (as we
+saw in Chapter 2). Reactive assignments make derived or computed
+variables very easy (as we saw in Chapter3).</p>
+<p>Outside of Svelte components, we have a different mental model,
+there’s no inherently connected UI layer to our code, and the Svelte
+compiler won’t touch code outside of Svelte files. But what if we also
+want the goodies of reactivity outside of Svelte components? What if we
+have global state that lives inside a JavaScript file that many
+components should react to when it changes? This is where Svelte stores
+come in. In this chapter, we’ll have a close look at the store API, how
+to use it to build neatly encapsulated modules, and how to easily use
+them inside Svelte components.</p>
+<p>As a practical example throughout this tutorial, let’s pick something
+that’s probably globally available in almost all applications: user
+state. In this example, this state will consist of whether or not the
+user is logged in, and, if they are logged in, their username. There’s
+an area of the page that’s only visible to authenticated users, and if
+they’re logged in, their username is visible in the top bar at all
+times.</p>
+<p><img src="Images/svelte4-app.png" alt="User App" /></p>
+<p>The app surely won’t win us any design awards, but it helps us
+showcase the problem we have with global state in this application. The
+root of the application looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    import Topbar from &#39;./Topbar.svelte&#39;;
+    import AuthOnly from &#39;./AuthOnly.svelte&#39;;
+&lt;/script&gt;
+
+&lt;Topbar /&gt;
+&lt;div&gt;
+    &lt;p&gt;
+        This part of the page is always visible
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;p&gt;
+        This part is only visible to logged in users
+    &lt;/p&gt;
+    &lt;AuthOnly /&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    div {
+        border: 1px solid blue;
+        padding: 5px 10px
+    }
+&lt;/style&gt;</code></pre>
+<p>That component uses other components. To do so, we import them as a
+default import in the <code>&lt;script&gt;</code> tag. We can then use
+them by the same name as the default import in the template. (We’ll look
+into component interaction more deeply in Part 5 of this series.)</p>
+<p><code>Topbar.svelte</code> looks like this:</p>
+<pre class="codeblock"><code>&lt;div&gt;
+    How to get the username in here?
+&lt;/div&gt;
+
+&lt;style&gt;
+    div {
+        background: lightgrey;
+        padding: 5px 10px;
+        text-align: right;
+    }
+&lt;/style&gt;</code></pre>
+<p>And <code>AuthOnly.svelte</code> looks like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    let authenticated = false;
+&lt;/script&gt;
+
+{#if authenticated}
+    &lt;p&gt;
+        Super secret stuff!
+    &lt;/p&gt;
+{:else}
+    &lt;button on:click={() =&gt; authenticated = true}&gt;Log In&lt;/button&gt;
+{/if}</code></pre>
+<p>The components <code>Topbar</code> and <code>AuthOnly</code> both
+need access to the user state; passing it via properties is not an
+option. In this simple example, we only need to pass the user state down
+one component, but in reality this will almost never be the case. So we
+need some other place to share the state. Additionally,
+<code>AuthOnly</code> needs to update the state to log in the user.
+Where do we put the state now? It’s probably best to put it inside a
+JavaScript file that exports the state so everyone can access it. Let’s
+try that!</p>
+<h2 id="svelte1-ch4.html_a-first-attempt">A First Attempt</h2>
+<p>We create a <code>user.js</code> with the following content:</p>
+<pre class="codeblock"><code>export let user = { loggedIn: false };
+export function login() {
+  user = { loggedIn: true, name: &quot;Dr. Svelte&quot; };
+}</code></pre>
+<p>We also import the <code>user</code> state in
+<code>Topbar.svelte</code>:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { user } from &#39;./user&#39;;
+&lt;/script&gt;
+
+&lt;div&gt;
+    {user.name || &#39;Not logged in&#39;}
+&lt;/div&gt;
+
+&lt;!-- style... --&gt;</code></pre>
+<p>We do the same in <code>AuthOnly.svelte</code>, where we also call
+the <code>login</code> function:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+    import { user, login } from &#39;./user&#39;;
+    let authenticated = user.loggedIn;
+&lt;/script&gt;
+
+{#if authenticated}
+    &lt;p&gt;
+        Super secret stuff!
+    &lt;/p&gt;
+{:else}
+    &lt;button on:click={() =&gt; login()}&gt;Log In&lt;/button&gt;
+{/if}</code></pre>
+<p>This will correctly show a logged-out state in the beginning, but we
+somehow can’t get the login to propagate back to the components. Why?
+After all, doesn’t this work the same inside Svelte files? The reason is
+that the Svelte compiler only looks at Svelte files to do its
+transformation. JavaScript files are left as they are. Furthermore, the
+semantics inside a JavaScript file are different; there’s no direct
+connection to a view layer. Therefore, we somehow need to explicitly
+express the state as an object that can change over time, which Svelte
+components can react to. This is where Svelte stores come in.</p>
+<h2 id="svelte1-ch4.html_introducing-writable-stores">Introducing
+Writable Stores</h2>
+<p>Svelte provides a very simple API for initializing and updating a
+store. A <strong>store</strong> is something that stores (hence the
+name) a value (also called state) to which others can subscribe, and get
+notified about updates to the value of that store.</p>
+<p>At the heart of Svelte’s store API is the <code>writable</code>
+function, which provides this functionality. The <code>writable</code>
+function is called with the initial state and returns and object with
+<code>set</code>, <code>update</code> and <code>subscribe</code>
+methods. <code>set</code> is called with the new desired state.
+<code>update</code> is called with a function that gets the current
+state and is expected to return the next state. <code>subscribe</code>
+is called with a callback function that’s invoked every time the state
+changes, and returns a function that can be called to unsubscribe:</p>
+<pre class="codeblock"><code>import { writable } from &quot;svelte/store&quot;;
+
+const store = writable(&quot;initial value&quot;);
+
+const unsubscribe = store.subscribe((value) =&gt;
+  console.log(&quot;the current value is &quot; + value)
+);
+
+store.set(&quot;new value&quot;);
+
+store.update((value) =&gt; value + &quot; 2&quot;);
+
+unsubscribe();
+
+store.set(&quot;another value&quot;);</code></pre>
+<p>In the code snippet above, the value is <code>"initial value"</code>
+first, then <code>"new value"</code>, then <code>"new value 2</code>.
+All these strings are logged, because the <code>subscribe</code>
+callback function is called each time and logs them out. The
+<code>subscribe</code> function returns an <code>unsubscribe</code>
+function. After it’s called, updates to the store—in this case,
+<code>"another value"</code>—are no longer logged. If you know RxJS,
+this API may look familiar to you, and indeed, the API closely follows
+the principle of observables.</p>
+<p>Let’s apply the <code>writable</code> to our use case:</p>
+<pre class="codeblock"><code>import { writable } from &quot;svelte/store&quot;;
+export let user = writable({ loggedIn: false });
+export function login() {
+  user.set({ loggedIn: true, name: &quot;Dr. Svelte&quot; });
+}</code></pre>
+<p>We change the code in our JavaScript file and wrap the state with the
+<code>writable</code>. This means we need to adjust our Svelte
+components to subscribe to the state. Here’s a first attempt in
+<code>Topbar.svelte</code>:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { user } from &#39;./user&#39;;
+  import { onDestroy } from &#39;svelte&#39;;
+  let _user;
+  const unsubscribe = user.subscribe(u =&gt; _user = u);
+  onDestroy(unsubscribe);
+&lt;/script&gt;
+
+&lt;div&gt;
+    {_user.name || &#39;Not logged in&#39;}
+&lt;/div&gt;
+
+&lt;!-- style... --&gt;</code></pre>
+<p>This works! If we press <code>login</code> inside
+<code>AuthOnly.svelte</code>, we’ll see the name “Dr. Svelte” appear in
+the top bar. The solution is a little boilerplate-y, though: we have to
+subscribe to the store, assign it to a local variable, and remember to
+unsubscribe when the component is destroyed. Can we do better? This is
+where Svelte’s big advantage comes in again: the fact that it’s a
+compiler. Since the compiler will transform Svelte files to JavaScript
+files anyway, it also can do transformations to get rid of the
+subscription boilerplate. All we have to do is to put a dollar sign in
+front of the store and Svelte will take care of the rest:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { user } from &#39;./user&#39;;
+&lt;/script&gt;
+
+&lt;div&gt;
+    {$user.name || &#39;Not logged in&#39;}
+&lt;/div&gt;
+
+&lt;!-- style... --&gt;</code></pre>
+<p>Just like with reactive statements (which we covered in Part 3), the
+dollar sign is used for some reactive Svelte magic. Declaring
+(<em>not</em> using) variable names with a dollar sign in front is
+prohibited in Svelte files. Instead, they’re a sign to the compiler to
+generate all the subscription boilerplate for us that we previously
+wrote by hand. This even works for updating the store. If we were to
+write <code>$user.name = "Dr. Dollarsign</code> or
+<code>$user = { loggedIn: false }</code> inside a Svelte component, this
+would be transformed to a store update by the Svelte compiler. Neat! But
+note that it’s not possible to use the <code>$</code> syntax to
+subscribe to stores that aren’t created at the top level (imports are
+top level, so that works). We also can’t subscribe to a store that’s
+nested inside an object: we first need to extract it into a top-level
+variable. These limitations are worth keeping in mind, but you’ll
+probably only rarely encounter them.</p>
+<p><img src="Images/svelte4-store-compilation.png"
+alt="Store compilation output" /></p>
+<p>Subscribing to a store through the dollar sign syntax doesn’t only
+work for Svelte stores. Every object that satisfies the store contract
+(in other words, providing a <code>subscribe</code> method) can be used
+that way. If you prefer to use RxJS, for example, you could use the
+exact same <code>$user</code> syntax to subscribe to the observable. We
+can use this to our advantage to create our own encapsulated user API.
+Right now, everyone is able to update the user state directly, because
+we expose the whole <code>writable</code>. To ensure everyone using the
+user state has to go through the API to update the state, we can create
+our own store like this:</p>
+<pre class="codeblock"><code>import { writable } from &quot;svelte/store&quot;;
+
+let _user = writable({ loggedIn: false });
+
+function login() {
+  _user.set({ loggedIn: true, name: &quot;Dr. Svelte&quot; });
+}
+
+export const user = {
+  subscribe: _user.subscribe,
+  login,
+};</code></pre>
+<p>We then need to adjust our <code>AuthOnly.svelte</code> component
+like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { user } from &#39;./user&#39;;
+  $: authenticated = $user.loggedIn;
+&lt;/script&gt;
+
+{#if authenticated}
+    &lt;p&gt;
+        Super secret stuff!
+    &lt;/p&gt;
+{:else}
+    &lt;button on:click={() =&gt; user.login()}&gt;Log In&lt;/button&gt;
+{/if}</code></pre>
+<p>We can keep using the <code>$user</code> syntax, and update the state
+through a method on that object. Doing something like
+<code>$user.loggedIn = true</code> or
+<code>user.set({ loggedIn: true })</code> is no longer possible, because
+the <code>set</code> method of the <code>writable</code> is no longer
+exposed. Also note how we can use <code>$user</code> inside the
+<code>script</code> tag and within reactive statements. It’s just a
+variable that we can use anywhere in the component.</p>
+<p>The following screenshot visualizes the state flow of our example
+app.</p>
+<p><img src="Images/svelte4-store-flow.png" alt="Store Flow" /></p>
+<h2 id="svelte1-ch4.html_readable-stores">Readable Stores</h2>
+<p>Sometimes we may want to create a store that’s not updatable from the
+outside at all. One use case is to make sure that no one (not even
+within the same file) updates the store from the outside, because it
+should be self contained—for example, a clock that updates every second
+and that can’t be reset or adjusted from the outside. In this case, we
+can reach for <code>readable</code>:</p>
+<pre class="codeblock"><code>import { readable } from &quot;svelte/store&quot;;
+
+const time = readable(null, (set) =&gt; {
+  set(new Date());
+
+  const interval = setInterval(() =&gt; {
+    set(new Date());
+  }, 1000);
+
+  return () =&gt; clearInterval(interval);
+});</code></pre>
+<p>The code above creates a store that doesn’t have a <code>set</code>
+or <code>update</code> method, but only a <code>subscribe</code> method.
+We can’t set the state from the outside. The initial state of the
+<code>readable</code> is set through the first parameter; the second
+parameter is a function that’s called every time the subscriber count
+goes from zero to one. It’s handed a <code>set</code> function that we
+can use to update the state from the inside—in this case, the current
+time each second. We can return a function that’s called when the
+subscriber count goes from one to zero. In this case, we clean up our
+interval.</p>
+<h2 id="svelte1-ch4.html_derived-stores">Derived Stores</h2>
+<p>Once we start using stores, we may also want to combine some of them
+or just derive a different value from a store. In this case, we can
+reach for <code>derived</code>. Let’s suppose our username is split into
+surname and lastname, but we want to show the combined name in various
+places of the app. In order not to repeat ourselves, we use a
+<code>derived</code> store to put them together:</p>
+<pre class="codeblock"><code>import { derived } from &quot;svelte/store&quot;;
+import { user } from &quot;./user&quot;;
+
+export const username = derived(
+  user,
+  (_user) =&gt; _user.surname + &quot; &quot; + _user.lastname
+);</code></pre>
+<p>In its simplest form, <code>derived</code> accepts a store or an
+array of stores as the first argument and a function that gets the
+current value of this or these stores as the second argument. For more
+complex use cases, the function also provides a second
+parameter—<code>set</code>—which we can use to update the
+<code>derived</code> state when appropriate. In this case, the return
+value can be a function that’s called when the subscriber count goes
+from one to zero. We can also pass a third argument to
+<code>derived</code> in this case, which marks the initial value.</p>
+<p>Here’s an example:</p>
+<pre class="codeblock"><code>import { derived } from &quot;svelte/store&quot;;
+// ...
+
+export const itemDetails = derived(
+  itemId,
+  (_itemId, set) =&gt; {
+    getItemDetails(_itemId).then((details) =&gt; set(details));
+  },
+  &quot;Loading...&quot;
+);</code></pre>
+<p>The code above creates a <code>derived</code> store that retrieves
+details about an item from its ID every time that ID changes, and shows
+<code>"Loading..."</code> initially.</p>
+<h2 id="svelte1-ch4.html_wrapping-up3">Wrapping Up</h2>
+<p>That’s it! In this fourth tutorial of the series, we took a deep dive
+into Svelte stores. We learned that we can use <code>writable</code> to
+make our state available for use across Svelte components, which then
+can react to updates by just appending a dollar sign to the variable
+name.</p>
+<p>We saw that it doesn’t have to be a Svelte store. Instead, every
+object that implements the subscribe contract can be used like that in a
+Svelte component. This allows us to use other libraries like RxJS or
+create custom objects. Svelte stores help us manage state, providing the
+primitives for a robust state management solution.</p>
+<p>We also took a look at <code>readable</code> stores, which help us to
+create state that’s not changeable from the outside, and
+<code>derived</code> stores, which provide options for creating a
+derived state from incoming stores. The core of the Svelte store API is
+dead simple to understand, but scales for more complex use cases.</p>
+<p>You’re now ready to create stores to handle state that’s shared
+across different components! In the next chapter, we’ll look at more
+component interactions apart from using stores to create robust
+applications.</p>
+</section>
+<p><span id="svelte1-ch5.html"></span></p>
+<section id="svelte1-ch5.html_ch5" class="page-frontmatter">
+<h1>Chapter 5: Component Interaction Concepts</h1>
+<p>Components are at the core of frontend frameworks like Svelte. They
+are the primary unit for organizing and implementing your view layer.
+Components encapsulate a specific UI and/or behavior—such as the look of
+a button, a list containing arbitrary elements, or a specific section of
+a page.</p>
+<p>In the first half of this book, we focused on the ins and outs of one
+component. We looked at template syntax in Chapter 2, and at reactive
+statements in Chapter 3. In Chapter 4, we looked at Svelte stores, which
+provide a handy API for implementing state management and which do
+cross-component updates. There are, of course, more ways to integrate
+components with each other—and we’ll look into them in this tutorial.
+After reading through this chapter, you’ll be able to use the right
+component API for the right job.</p>
+<h2 id="svelte1-ch5.html_using-other-components">Using Other
+Components</h2>
+<p>The key part to organizing your code is to put each part in the most
+appropriate location. This means writing and reusing components. We can
+use another component by importing it as a default import and then use
+it like a regular element tag inside the template:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import SomeOtherComponent from &quot;../somewhere/else/SomeOtherComponent.svelte&quot;;
+&lt;/script&gt;
+
+&lt;SomeOtherComponent&gt;&lt;/SomeOtherComponent&gt;
+&lt;!-- if the component has no children, you can also selfclose it: --&gt;
+&lt;SomeOtherComponent /&gt;</code></pre>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Naming Imports</h4>
+<div class="body">
+<p>Since you import the component through its default export, you can
+name the import any way you want. It doesn’t have to the same as the
+file name, but it’s best practice to do so.</p>
+</div>
+</section>
+<h2
+id="svelte1-ch5.html_passing-stuff-to-components-through-properties">Passing
+Stuff to Components through Properties</h2>
+<p>Many components receive some kind of input that they need in order to
+function. Consider a list that should show text entries below each other
+and which you want to use in various places. The list then would be a
+component property, or in other words an input. In Svelte, these
+properties are defined through
+<code>export let &lt;propertyName&gt;</code>, as seen here:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  export let items;
+&lt;/script&gt;
+
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;{item}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>At first, this may take some getting used to, since
+<code>export</code> is normally used to make something importable
+somewhere else, but it will soon feel like second nature.</p>
+<p>Properties without an initializer are treated as mandatory. Optional
+properties have an initializer. Let’s say we want to optionally add
+support for reloading the list through the click of a button, but only
+if the component user explicitly turns it on. With an optional property,
+it would look like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  export let items;
+  export let showReload = false;
+&lt;/script&gt;
+
+{#if showReload}
+  &lt;button&gt;Reload list&lt;/button&gt;
+{/if}
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;{item}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>The usage would look like this:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import List from &quot;./List.svelte&quot;;
+&lt;/script&gt;
+
+&lt;List items={[&#39;Learn Svelte&#39;, &#39;Create great things&#39;]} showReload={true} /&gt;</code></pre>
+<h2 id="svelte1-ch5.html_reacting-to-component-events">Reacting to
+Component Events</h2>
+<p>We now have a list with an optional reload button. The logic for
+reloading the list should be part of the consuming component. We
+therefore need to somehow react to a click event of the button.</p>
+<p>The first option would be to use callback props like you’d use in
+React—passing a function as input:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  export let items;
+  export let showReload = false;
+  export let reload = undefined;
+&lt;/script&gt;
+
+{#if showReload}
+  &lt;button on:click={reload}&gt;Reload list&lt;/button&gt;
+{/if}
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;{item}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>The second option is to create an event dispatcher and dispatch a
+custom event from it. For this, we import
+<code>createEventDispatcher</code> from <code>svelte</code> and call the
+resulting function where appropriate:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { createEventDispatcher } from &quot;svelte&quot;;
+
+  export let items;
+  export let showReload = false;
+
+  const dispatch = createEventDispatcher();
+&lt;/script&gt;
+
+{#if showReload}
+  &lt;button on:click={() =&gt; dispatch(&quot;reload&quot;)}&gt;Reload list&lt;/button&gt;
+{/if}
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;{item}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>The first argument to the <code>dispatch</code> function is the event
+name. The second (optional) argument is the payload. Listening to this
+event is similar to listening to DOM events; we add <code>on:</code> in
+front of the event name:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import List from &quot;./List.svelte&quot;;
+  let list = [&#39;Learn Svelte&#39;, &#39;Create great things&#39;];
+  function reloadList() {
+      // ...
+  }
+&lt;/script&gt;
+
+&lt;List items={list} showReload={true} on:reload={reloadList} /&gt;</code></pre>
+<p>The last option—in this case—is to just bubble the <code>click</code>
+event of the button. An event is bubbled if you write
+<code>on:&lt;eventName&gt;</code> without handling the event:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  export let items;
+  export let showReload = false;
+  export let reload = undefined;
+&lt;/script&gt;
+
+{#if showReload}
+  &lt;button on:click&gt;Reload list&lt;/button&gt;
+{/if}
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;{item}&lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>You then would listen to <code>on:click</code> on the
+<code>List</code> component in the parent. While this works, in this
+case it’s better to use one of the first two options, as an event name
+like <code>reload</code> better communicates what was clicked and what
+should happen in response to it. Whether you use callback props or
+custom events comes down to personal preference.</p>
+<p><img src="Images/svelte5-input-events.png"
+alt="Properties in, events out" /></p>
+<h2 id="svelte1-ch5.html_composing-the-ui-with-slots">Composing the UI
+with Slots</h2>
+<p>The list is now displayed and we can reload it, but the look of a
+list entry is fixed; we can’t change it from the outside. To change
+that, we use slots. A <strong>slot</strong> is like a placeholder where
+its content is determined by the parent. Let’s first define our slot in
+our list component:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  // ...
+&lt;/script&gt;
+
+{#if showReload}
+  &lt;button on:click&gt;Reload list&lt;/button&gt;
+{/if}
+&lt;ul&gt;
+  {#each items as item}
+    &lt;li&gt;
+      &lt;slot {item}&gt;
+        {item}
+      &lt;/slot&gt;
+    &lt;/li&gt;
+  {/each}
+&lt;/ul&gt;</code></pre>
+<p>The <code>&lt;slot&gt;</code> tag marks the section as the
+destination for the parent’s content. The <code>{item}</code> property
+means that the parent is able to use the <code>item</code> when
+providing the UI. Otherwise, we would have no way to output the item’s
+text in the parent. The content inside the <code>&lt;slot&gt;</code> is
+its fallback content, in case the parent component doesn’t provide its
+own UI. The fallback content is optional; you don’t need to provide
+it.</p>
+<p>Let’s use the component slot in the parent component:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import List from &quot;./List.svelte&quot;;
+  // ...
+&lt;/script&gt;
+
+&lt;List items={list} showReload={true} on:reload={reloadList} let:item&gt;
+  &lt;b&gt;{item}&lt;/b&gt;
+&lt;/List&gt;</code></pre>
+<p>We chose to simply put the item’s text into a <code>&lt;b&gt;</code>
+tag, making it bold. The UI for the slot is inside the component’s tag.
+We can use the <code>item</code> property passed into the slot by
+writing <code>let:item</code>. If we wanted to rename the property, we
+would write <code>let:item={anotherVariableName}</code>.</p>
+<p>The slot above is the default slot. We can also use named slots to
+provide more than one of them, which can appear in different areas.
+Giving the slot a name is as easy as writing
+<code>&lt;slot name="desiredName" /&gt;</code>, and using it is just as
+easy by adding a <code>slot="desiredName</code> attribute to the
+parent’s element, which should go into a specific slot. If there was an
+“empty list placeholder” slot, it could look like this:</p>
+<pre class="codeblock"><code>&lt;!-- ... --&gt;
+&lt;List items={list} showReload={true} on:reload={reloadList} let:item&gt;
+  &lt;b&gt;{item}&lt;/b&gt;
+  &lt;!-- you can use let:xx on the named slot as well if the component passes slot properties --&gt;
+  &lt;p slot=&quot;empty&quot;&gt;List is empty&lt;/p&gt;
+&lt;/List&gt;</code></pre>
+<p>The following screenshot visualizes the slot feature.</p>
+<p><img src="Images/svelte5-slots.png"
+alt="Visualized slots example" /></p>
+<h2
+id="svelte1-ch5.html_using-the-module-script-to-manage-instances-of-the-same-component">Using
+the Module Script to Manage Instances of the Same Component</h2>
+<p>The reload feature of the list is a big success—so big, indeed, that
+the boss now asks for a “Reload all” button somewhere at the top of the
+page. For situations like this—where we need to manage and/or coordinate
+multiple component instances of the same type, or just run code outside
+of the component lifecycle but colocate it with the component—we can use
+the <code>module</code> script tag. This is another script tag with an
+additional <code>context="module"</code> attribute on it. The code
+inside this script tag runs only once and right away. Think of it as a
+separate JavaScript file, but colocated with the Svelte component. Let’s
+use this to implement the “Reload all” behavior:</p>
+<pre class="codeblock"><code>&lt;script context=&quot;module&quot;&gt;
+  let reloads = new Set();
+  export function reloadAll() {
+    reloads.forEach((reload) =&gt; reload());
+  }
+&lt;/script&gt;
+
+&lt;script&gt;
+  import { createEventDispatcher, onMount } from &quot;svelte&quot;;
+
+  export let items;
+  export let showReload = false;
+
+  const dispatch = createEventDispatcher();
+
+  onMount(() =&gt; {
+    const reload = () =&gt; dispatch(&quot;reload&quot;);
+    reloads.add(reload);
+    return () =&gt; reloads.delete(reload);
+  });
+&lt;/script&gt;
+
+&lt;!-- ... --&gt;</code></pre>
+<p>We create a <code>Set</code> that contains all “reload”
+<code>dispatch</code> functions. Every time a list instance is created,
+we encapsulate our <code>dispatch</code> function and add it to the
+<code>Set</code>. When the component instance is destroyed, we remove
+it. What’s left to do now is to use the exported <code>reloadAll</code>
+function where the “Reload all” button is implemented:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { reloadAll } from &quot;../somewhere/List.svelte&quot;;
+&lt;/script&gt;
+
+&lt;button on:click={reloadAll}&gt;Reload all&lt;/button&gt;</code></pre>
+<p>The default import of a Svelte component is the component constructor
+itself. Named imports are those that are exported from the module
+script. That way, we can easily import <code>reloadAll</code> and call
+it when appropriate.</p>
+<p><img src="Images/svelte5-module-script.png"
+alt="Module script in relation to instance scripts" /></p>
+<p>You’ll need module scripts only occasionally, but when you do,
+they’ll come in very handy to allow imperative interaction with your
+component(s) or for managing and coordinating multiple instances of the
+same type. Another example—from Svelte’s own tutorial—deals with having
+an audio player component rendered multiple times, but only allowing one
+of them to play at the same time. This is also easily done with module
+scripts.</p>
+<h2
+id="svelte1-ch5.html_using-context-to-provide-state-to-component-trees">Using
+Context to Provide State to Component Trees</h2>
+<p>One day after the “Reload all” feature goes live, the boss comes to
+realize that it’s probably not a good idea to actually reload all lists,
+but rather just specific ones. The calculation whether or not a certain
+area of the page with lists in it should support reloading is done near
+the root of these page areas, but the lists themselves are deep children
+of these components. What now? Should we add a new property to the list
+component to specify if it should be part of the reload party? This
+would mean we need to pass down that property through many unrelated
+components that only need to know about that property in order to pass
+it down to the next component. This is called <strong>property
+drilling</strong>. For situations like this, providing context to child
+component comes in handy. This is what it looks like:</p>
+<pre class="codeblock"><code>&lt;!-- somewhere in a parent component --&gt;
+&lt;script&gt;
+  import { setContext } from &#39;svelte&#39;;
+  setContext(&#39;partOfReloadAll&#39;, someFancyComputationThatReturnsABoolean());
+  // ...
+&lt;/script&gt;
+
+&lt;!-- in List.svelte --&gt;
+&lt;script&gt;
+  import { getContext, onMount } from &#39;svelte&#39;;
+  // ...
+  const isPartOfReloadAll = getContext(&#39;partOfReloadAll&#39;);
+  onMount(() =&gt; {
+    if (!isPartOfReloadAll) {
+      return;
+    }
+    const reload = () =&gt; dispatch(&quot;reload&quot;);
+    reloads.add(reload);
+    return () =&gt; reloads.delete(reload);
+  });</code></pre>
+<p>These two functions—<code>setContext</code> and
+<code>getContext</code>—allow us to provide specific things to all
+children of the component where that thing is provided. This is similar
+to <code>useContext</code> in React,
+<code>provide</code>/<code>inject</code> in Vue, or a service provided
+on a component in Angular. Note that you need to call these functions
+during component initialization. You can’t call them later on in the
+life cycle or asynchronously.</p>
+<p><img src="Images/svelte5-context.png"
+alt="Context visualization" /></p>
+<p>In the example above, we passed a string as the key, but you could
+also use a <code>Symbol</code> or something else that’s guaranteed to be
+unique. The value can be anything you want. In this case, it’s a simple
+Boolean, but it could also be a function or a store. The combination of
+context and stores is a nice way of providing a value that can change
+over time and to which the children should be able to react. Here’s an
+example:</p>
+<pre class="codeblock"><code>&lt;!-- somewhere in a parent component --&gt;
+&lt;script&gt;
+  import { setContext } from &#39;svelte&#39;;
+  import { writable } from &#39;svelte/store&#39;;
+  const count = writable(1);
+  setContext(&#39;count&#39;, count);
+  // ...
+  function updateCount() {
+    count.update(c =&gt; c + 1);
+  }
+&lt;/script&gt;
+
+&lt;!-- somewhere in a child component --&gt;
+&lt;script&gt;
+  import { getContext } from &#39;svelte&#39;;
+  const count = getContext(&#39;count&#39;);
+&lt;/script&gt;
+&lt;p&gt;The count is {$count}&lt;/p&gt;</code></pre>
+<p>If you have state that’s available globally, you can of course skip
+using context and instead just import that state from a central
+location. This is what we did in the previous part of the application
+using stores.</p>
+<h2 id="svelte1-ch5.html_wrapping-up4">Wrapping Up</h2>
+<p>This was a long one! We’ve seen quite a few component interaction
+concepts in this tutorial. To summarize:</p>
+<ul>
+<li>Use component properties and events to implement basic component
+interaction.</li>
+<li>Use slots when you need to provide a custom UI from the parent at a
+certain place in the child.</li>
+<li>Use the <code>&lt;script context="module"&gt;</code> tag when you
+need to manage or coordinate multiple instances of the same component or
+export imperative logic related to them.</li>
+<li>Use <code>setContext</code> and <code>getContext</code> when you
+need to provide certain values for a certain sub part of the app and you
+want to avoid property drilling.</li>
+</ul>
+<p>With all these tools at your disposal, you’re now ready to structure
+and organize your components in the best way possible.</p>
+<p>You’re now ready to write full-blown applications in Svelte. In the
+last chapter, we’ll look into testing these applications. We’ll look
+into the different levels at which we can test, as well as what it means
+to make your apps testable.</p>
+</section>
+<p><span id="svelte1-ch6.html"></span></p>
+<section id="svelte1-ch6.html_ch6" class="page-frontmatter">
+<h1>Chapter 6: Testing Applications</h1>
+<p>We’ve come quite a long way. We started by looking at Svelte’s
+history, as well as the first steps of writing an application with it.
+The tools for building such an application were then introduced in more
+detail. We took a deep dive into the template syntax of Svelte, which is
+an extension of HTML. We saw how to use reactive statements to react to
+variable changes—for example, in order to create computed variables. We
+then looked at Svelte stores, which can be used to share state across
+multiple components, and we learned about various ways to integrate
+components with each other.</p>
+<p>All this empowers us to create Svelte applications that scale. But
+how do we test those applications? This is what we’ll look at in this
+final chapter.</p>
+<h2 id="svelte1-ch6.html_the-testing-pyramid">The Testing Pyramid</h2>
+<p>Before we jump into the technical details, let’s first take a step
+back and think about the ways we can test an application. As it turns
+out, there’s not one true way to do this. Rather, there are different
+layers of testing. There’s actually a name for this, which you may have
+come across already: “the testing pyramid”.</p>
+<p><img src="Images/testing-pyramid.png" alt="Testing Pyramid" /></p>
+<p>The <strong>testing pyramid</strong> helps us classify our various
+ways of testing.</p>
+<p>At the bottom, there are <strong>unit tests</strong>, which look only
+at a tiny part of our application at a time—such as testing a specific
+function in isolation.</p>
+<p>Above these are <strong>integration tests</strong>, which test a
+small to medium part of our application in combination. While unit tests
+are great for testing things like whether or not a function returns the
+right thing, they don’t tell you whether that function is actually used
+in the right way. All your unit tests could pass, but the interaction of
+the parts with each other you tested might be wrong. Integration tests
+help surface these bugs.</p>
+<p>The top-most layer in the pyramid are <strong>end-to-end
+tests</strong> (abbreviated with E2E), which take the integration tests
+one step further by not only running parts of the application, but also
+running the whole application and testing through the eyes of the end
+user. The challenge is to get the whole application running under test
+conditions. The advantage is that you need to mock less: only the
+backend, or if you want, even that can run as part of an E2E test.</p>
+<p>It’s named the “testing pyramid” and not just “testing levels”
+because the idea is that there should be more tests at the lower level
+than the higher level. Some people say you should strive for 60% unit
+tests, 30% integration tests and 10% E2E tests. There’s no single right
+way to do this, however, and for testing the frontend especially there
+are people who even challenge the pyramid completely, saying that E2E
+tests are the easiest and most robust way—especially with respect to
+implementation changes—to test web apps, so you should focus on these
+the most.</p>
+<p>In the end, how to organize your tests is up to you, and we’ll focus
+on giving an example for each layer in the rest of this tutorial.</p>
+<h2 id="svelte1-ch6.html_test-setup">Test Setup</h2>
+<p>We’ll be using <a href="https://jestjs.io/">Jest</a> for unit and
+integration tests. Jest is currently the most popular testing library
+for frontend code. If you’re using SvelteKit, you can set up and install
+all the required dependencies for testing with Jest via <a
+href="https://github.com/rossyman/svelte-add-jest">svelte-add-jest</a>,
+by running the following in the root of your SvelteKit project:</p>
+<pre class="codeblock"><code>npx apply rossyman/svelte-add-jest
+npm install @testing-library/svelte -D</code></pre>
+<p>The first command does all the installation of the minimum required
+dependencies for you, as well as creating the required config. We only
+need to install one more package to use after that.</p>
+<p>If you aren’t using SvelteKit, there are some more manual steps to
+take. First, install all the required dependencies. If you’re using
+JavaScript, these are as follows:</p>
+<pre class="codeblock"><code>npm install jest svelte-jester @babel/core @babel/preset-env babel-jest @testing-library/svelte -D</code></pre>
+<p><code>jest</code> is the core testing framework and
+<code>svelte-jester</code> is the corresponding plugin in order to
+support Svelte. Babel is needed in order to transform newer ES module
+code. The <code>testing-library</code> package will help us write more
+robust tests, as we’ll see later on. Then create a
+<code>jest.config.js</code> with the following contents in order to tell
+Jest to handle Svelte files correctly:</p>
+<pre class="codeblock"><code>module.exports = {
+  testEnvironment: &quot;jsdom&quot;,
+  transform: {
+    &quot;^.+\\.svelte$&quot;: &quot;svelte-jester&quot;,
+  },
+  moduleFileExtensions: [&quot;js&quot;, &quot;svelte&quot;],
+};</code></pre>
+<p>Then create a <code>.babelrc</code> and add the following code, which
+is needed for transpiling more recent JavaScript syntax into something
+that Jest understands:</p>
+<pre class="codeblock"><code>{
+  &quot;presets&quot;: [[&quot;@babel/preset-env&quot;, { &quot;targets&quot;: { &quot;node&quot;: &quot;current&quot; } }]]
+}</code></pre>
+<p>These are the steps for creating the test setup when using
+JavaScript. If you’re using TypeScript, the setup looks a little
+different. First, you need to install the following packages:</p>
+<pre class="codeblock"><code>npm install typescript svelte-preprocess jest ts-jest svelte-jester @testing-library/svelte -D`</code></pre>
+<p>You probably already have installed <code>typescript</code> and
+<code>svelte-preprocess</code>, as these are needed for developing
+Svelte applications in TypeScript. The Babel dependencies are replaced
+with <code>ts-jest</code>, which takes care of transpiling the code
+correctly. After that, add the following config files to the root of
+your project:</p>
+<p>In <code>svelte.config.js</code>, add this:</p>
+<pre class="codeblock"><code>const sveltePreprocess = require(&quot;svelte-preprocess&quot;);
+
+module.exports = {
+  preprocess: sveltePreprocess(),
+};</code></pre>
+<p>In <code>jest.config.js</code>, add this:</p>
+<pre class="codeblock"><code>module.exports = {
+  testEnvironment: &quot;jsdom&quot;,
+  transform: {
+    &quot;^.+\\.svelte$&quot;: [
+      &quot;svelte-jester&quot;,
+      {
+        preprocess: true,
+      },
+    ],
+    &quot;^.+\\.ts$&quot;: &quot;ts-jest&quot;,
+  },
+  moduleFileExtensions: [&quot;js&quot;, &quot;ts&quot;, &quot;svelte&quot;],
+};</code></pre>
+<p>These files ensure that Jest knows how to preprocess TypeScript and
+Svelte files correctly before running the tests. The
+<code>svelte.config.js</code> tells various tools how to preprocess
+Svelte files before handing them off to the compiler, and the Jest
+config tells Jest how to transform Svelte and TypeScript files. Again,
+if you’re already using TypeScript, you already might have a
+<code>svelte.config.js</code>.</p>
+<h2 id="svelte1-ch6.html_writing-your-first-test">Writing Your First
+Test</h2>
+<p>With all that setup out of the way, let’s get into writing our first
+test! The application we’ll be testing is our very simple book list you
+already know from Chapter 1. As a reminder, the image below shows what
+it looks like.</p>
+<p><img src="Images/book-list-app.png" alt="Book List App" /></p>
+<p>And this is the code behind it:</p>
+<pre class="codeblock"><code>&lt;script&gt;
+  import { fade } from &#39;svelte/transition&#39;;
+
+  let books = [&#39;Learning Svelte&#39;, &#39;The Zen of cooking Tea&#39;];
+  let newBook = &#39;&#39;;
+
+  function addBook(evt) {
+    if (evt.key === &#39;Enter&#39;) {
+      books = [...books, newBook];
+      newBook = &#39;&#39;;
+    }
+  }
+&lt;/script&gt;
+
+&lt;h2&gt;
+    My Little Book App
+&lt;/h2&gt;
+&lt;div&gt;
+    &lt;label&gt;
+        &lt;h4&gt;Add Book&lt;/h4&gt;
+        &lt;input type=&quot;text&quot; bind:value={newBook} on:keydown={addBook} /&gt;
+    &lt;/label&gt;
+
+    &lt;h4&gt;My Books&lt;/h4&gt;
+    &lt;ul&gt;
+        {#each books as book}
+            &lt;li transition:fade&gt;{book}&lt;/li&gt;
+        {/each}
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    div {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        background: rgb(9,111,121);
+        padding: 5px 10px;
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        margin:0;
+    }
+  input {
+    padding: 5px 10px;
+  }
+  li {
+    list-style: none;
+  }
+  ul {
+    padding: 5px 0;
+  }
+    :global(body){
+        background: rgb(9,111,121);
+        background: linear-gradient(180deg, rgba(9,111,121,1) 0%, rgba(255,241,242,1) 60%, rgba(255,241,242,1) 100%);
+        display:flex;
+        flex-direction: column;
+    }
+&lt;/style&gt;</code></pre>
+<p>We want to test that adding a book works correctly. This means
+ensuring that the typed text appears as an item in the list, and that
+the input is cleared after adding the book.</p>
+<p>How to approach this? The first idea might be to somehow access the
+compiled version of the component and then update and invoke the needed
+variables and functions. This is very brittle, however, since we’re
+closely tied to the implementation details of our component. It would be
+better if we could test this one abstraction level higher, through the
+rendered HTML. This means that we simulate interactions with the HTML
+and then check if it was updated correctly.</p>
+<p>In our case, this means we want to simulate typing into the input,
+press <kbd>enter</kbd>, and then check the updated HTML for a new book
+entry. <code>@testing-library/svelte</code> will help us with this. It’s
+a wrapper around the <code>Testing Library</code> API, which provides an
+opinionated set of utilities for interacting with the HTML. If you
+already have written tests with other wrappers around this library—for
+example, using React or Vue—the following code snippet will look
+familiar to you:</p>
+<pre class="codeblock"><code>import { render, fireEvent } from &quot;@testing-library/svelte&quot;;
+import App from &quot;./App.svelte&quot;;
+
+describe(&quot;Book App&quot;, () =&gt; {
+  test(&quot;can add book&quot;, async () =&gt; {
+    // Instantiate and render component
+    const app = render(App);
+    // Check that there are no list items at first
+    expect(() =&gt; app.getAllByRole(&quot;listitem&quot;)).toThrow();
+    // Simulate user input
+    const input = await app.findByLabelText(&quot;Add Book&quot;);
+    await fireEvent.input(input, {
+      target: { value: &quot;Writing Svelte Tests&quot; },
+    });
+    await fireEvent.keyDown(input, { key: &quot;Enter&quot; });
+    // Check that there is one list item now
+    expect(app.getAllByRole(&quot;listitem&quot;).length).toBe(1);
+    expect(app.getByText(&quot;Writing Svelte Tests&quot;)).toBeDefined();
+  });
+});</code></pre>
+<p>We first instantiate the component using the provided utility
+function named <code>render</code>. After checking that the list is
+empty initially, we simulate user input, and then test that the new book
+was added after pressing the <kbd>enter</kbd> key. These methods return
+promises that resolve as soon as the Svelte compiler has rerendered,
+which happens asynchronously. As you can see, we don’t do that by
+looking up specific HTML tags or classes (though we could fall back to
+that if needed). Instead, we’ve chosen a more semantic approach and
+access the HTML by looking up (for example) specific text or a specific
+role. This makes our tests more robust to changes in the Svelte
+template.</p>
+<p>The example above is a test for a rather simple component. Testing
+can get more complex when the component in question is connected to
+context or global state or has many components below it. If you only
+want to test that specific component, you need to mock away all unwanted
+dependencies, which can be easy to hard depending on what needs to be
+mocked.</p>
+<p>If it’s very hard to mock things away or to test in general, this
+hints at your code maybe being too wired with all its dependencies. You
+may need to split up and modularize or reorganize some of the code. For
+example, if you need to create a complex test setup because you want to
+test specific business logic, it may be beneficial to split the
+computation out into a function in a separate JavaScript file that’s
+independent of components, which makes testing that function much
+easier.</p>
+<p>Preparing your code for better testability will often lead to cleaner
+code overall, so a feel-good vibe when testing will mostly go hand in
+hand with a well-structured app. If it doesn’t, it might be that the
+code is just hard to test because it’s very high up the component tree
+or because the logic you want to test inherently needs many
+dependencies. In this case, it’s often easier to use E2E testing tools,
+which we’ll look at next.</p>
+<h2 id="svelte1-ch6.html_writing-your-first-e2e-test">Writing your First
+E2E Test</h2>
+<p>We’ll write our E2E tests using <a
+href="https://www.cypress.io/">Cypress</a>. Alternatives would be <a
+href="https://www.selenium.dev/">Selenium</a> or <a
+href="https://playwright.dev/">Playwright</a>, the most recent addition
+by Microsoft.</p>
+<p>Fortunately, the Cypress setup is rather easy. Just run
+<code>npm install cypress -D</code> and wait a few minutes until
+everything is set up. This will create a new <code>cypress</code> folder
+at the root of your project, which contains a configuration file we
+don’t need to look at for now, as well as an example test suite. Next,
+run <code>npx cypress open</code> and wait for Cypress to start up.
+You’ll be greeted with the screen pictured below, and you can look
+around and run the example tests if you like.</p>
+<p><img src="Images/cypress-start.png"
+alt="Cypress startup screen" /></p>
+<p>If you want, you can delete the example tests; we’ll be creating our
+own test now. Cypress expects the application to run at a specific
+location, so we’ll start up our dev server in a separate terminal and
+then access the app—for example, at <code>http://localhost:3000</code>.
+We now generate a new <code>.spec.js</code> file within
+<code>cypress/integration</code> and proceed to write the same test we
+just wrote using Jest, this time using Cypress:</p>
+<pre class="codeblock"><code>/// &lt;reference types=&quot;cypress&quot; /&gt;
+
+describe(&quot;Books App&quot;, () =&gt; {
+  beforeEach(() =&gt; {
+    // Open app
+    cy.visit(&quot;http://localhost:3000&quot;);
+  });
+
+  it(&quot;can add book&quot;, () =&gt; {
+    // Check that there are no list items at first
+    cy.get(&quot;li&quot;).should(&quot;have.length&quot;, 0);
+    // Simulate user input
+    cy.get(&quot;input&quot;).type(&quot;Writing Svelte Tests{enter}&quot;);
+    // Check that there is one list item now
+    cy.get(&quot;li&quot;)
+      .should(&quot;have.length&quot;, 1)
+      .last()
+      .should(&quot;contain.text&quot;, &quot;Writing Svelte Tests&quot;);
+  });
+});</code></pre>
+<p>As you can see, the test reads quite similarly to the Jest test we
+wrote earlier. We open the app first, check if there are no items in the
+list, then add one through user input simulation, and then check that
+there’s the expected item.</p>
+<p>Writing the test is more focussed around the HTML tags right now,
+which you might find better or worse in comparison to the Jest tests
+above, depending on your preference. If you want to use the same style
+of retrieving the HTML elements, the Testing Library has you covered.
+Just install <code>@testing-library/cypress</code> and you’ll be able to
+use the same queries you already know!</p>
+<p>Regardless of how you decide to proceed, you can see that the
+abstraction level is much higher when writing E2E tests. You don’t mock
+anything within your app. In fact, you run it like you normally would
+during development. If you want, you can mock backend calls. Cypress has
+handy utilities for making this possible—or you just set up your own
+simple mock server. Because this frees you from many mocking headaches,
+some people prefer to write more tests this way. This is especially
+helpful if you plan on rewriting parts of your app and want to ensure
+the behavior stays the same.</p>
+<h2 id="svelte1-ch6.html_wrapping-up5">Wrapping Up</h2>
+<p>That’s all for testing Svelte apps right now! We saw how to create a
+proper test setup using Jest for unit and integration tests and Cypress
+for E2E tests, and we wrote simple tests using each of them. We learned
+about the testing pyramid, which showcases the different levels of
+abstraction when testing, and we saw the difference firsthand using the
+two testing tools. We also learned that good tests and good code often
+influence each other, and that tests that are brittle and/or hard to
+write may hint at your code needing some refactoring.</p>
+<p>This is the end of the book! We’ve come quite a long way. We learned
+the ins and outs of template syntax and how to add dynamic behavior to
+our HTML. We learned about reactive statements that help us compute
+derived values or react to other variables changes, and how easy it is
+to write them. We saw the same when using Svelte stores, how easy it is
+to subscribe to them, and how to create a robust state management
+solution built upon them. We also learned about the different component
+interaction concepts that help you organize and scale your app. Finally,
+in this chapter, we saw how to test Svelte apps.</p>
+<p>With all this new information, you’re now ready to build Svelte apps
+that scale. Good luck, and have fun!</p>
+</section>

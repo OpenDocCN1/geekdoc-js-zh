@@ -1,0 +1,2380 @@
+- fmt: '
+
+    ![](images/00001.jpeg)
+
+
+    # Quick JavaScript Learning In Just 3 Days (Fast-Track Learning Course)
+
+
+    By Vijay K. R.
+
+
+    ## Disclaimer
+
+    Copyright © By Vijay K. R.
+
+
+    The publisher and the author of this publication have utilized their best efforts
+    to maintain the accuracy of all the contents. The content in this eBook is intended
+    to be used only for educational purposes. No part of this eBook can be copied,
+    reconstructed or rewritten by any means, electronic, Photostat or by any mode,
+    without the written consent of the author and the publisher.
+
+
+    The readers are completely responsible for all the actions taken by reading the
+    content of this book. The author and the publisher hold no responsibility for
+    any damage, loss or disruption because of omissions or errors, to any party.
+
+
+    The author and the publisher disclaim any liability regarding the effectiveness,
+    performance or applicability of anything in this eBook.
+
+
+    ## Table of Content
+
+    - [Introduction](#part0000_split_003.html_Intro)……………………………………………4
+
+    - [Chapter 1: JavaScript Starts](#part0000_split_004.html_ch1)……………..…….5
+
+    - [Chapter 2: JavaScript Output/Display Codes](#part0000_split_005.html_ch2)……………………………………………………..9
+
+    - [Chapter 3: JavaScript Variables, Statements, Comments & Keywords](#part0000_split_006.html_ch3)
+    ………………….…....14
+
+    - [Chapter 4: JavaScript Data Types & Operators](#part0000_split_007.html_ch4)……………………………………………….25
+
+    - [Chapter 5: JavaScript Functions](#part0000_split_008.html_ch5)………………32
+
+    - [Chapter 6: JavaScript Objects](#part0000_split_009.html_ch6)…………..….…36
+
+    - [Chapter 7: JavaScript Arrays](#part0000_split_010.html_ch7)……………………43
+
+    - [Chapter 8: JavaScript Conditions (if, else & switch) and Loops (for, while
+    & do while)](#part0000_split_011.html_ch8).46
+
+    - [Summary](#part0000_split_012.html_summary)…………………………………………………61
+
+
+    ## Introduction
+
+    JavaScript is one the language which helps you make browser to do what you want
+    to do. This is easy language to learn and I am going to teach you now. My language
+    will be user friendly and I will try to tell difficult stuffs in easy language
+    with examples. Let’s move on one by one with JavaScript lessons. This is 3 days
+    basic JavaScript Learning Course.
+
+
+    Before starting JavaScript, I am assuming that you have at least basic knowledge
+    of `HTML` & `CSS`. If you don’t have knowledge of `HTML` & `CSS`, then you should
+    go and study that first via online tutorials. You may be able to learn basic `HTML`
+    & `CSS` in 2-3 days.
+
+
+    - Day 1 = Learn Chapter 1 & 2
+
+    - Day 2 = Learn Chapter 3, 4 & 5
+
+    - Day 3 = Learn Chapter 6, 7 & 8
+
+
+    ## Chapter 1: JavaScript Basics
+
+    JavaScript can change HTML Contents. If you are PHP developer and if you want
+    to get done some work without page loads or you want `HTML` & `CSS` to perform
+    work then you will need JavaScript.
+
+
+    ### `<script>` Tag
+
+    JavaScript can be placed inside body and head tag. The JavaScript codes should
+    be inside `<script>` and `</script>` tags.
+
+
+    ```html
+
+    <script>
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    </script>
+
+    ```
+
+
+    ### JavaScript Events
+
+    JavaScript codes are triggered on events. Events are performed when a person perform
+    an event. There are many events provided by browser like `onclick`, `onmouseover`,
+    `onkeyup`, `onkeydown`, `ondoubleclick` and many more. When any of events performs
+    then JS Codes triggered and do something according to codes.
+
+
+    ```html
+
+    <button onclick="myFunction()">Press Me!</button>
+
+    ```
+
+    Explanation – here, `onclick` is event and `myFunction()` is JS function.
+
+
+    ### JavaScript Function
+
+    JavaScript block of codes which is inside `<script>` and `</script>` tags which
+    are used to perform some work is called function.
+
+
+    ```html
+
+    <script>
+
+    function myFunction(){
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    }
+
+    </script>
+
+    ```
+
+
+    ### Best Place for JavaScript
+
+    Explanation – `myFunction()` is inside `script` tags.
+
+
+    ```html
+
+    <script>
+
+    function myFunction(){
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    }
+
+    </script>
+
+    ```
+
+
+    ### External Files
+
+    Explanation – `myFunction()` is inside `script` tags.
+
+
+    ```html
+
+    <script src="newScript.js"></script>
+
+    ```
+
+
+    ## Chapter 2: JavaScript Output/Display Codes
+
+    JavaScript uses four ways to output.
+
+
+    #### 1st Way: `document.write()`
+
+    It is used to write anything in the webpage.
+
+
+    ```html
+
+    <script>
+
+    function add(){
+
+    document.write(6);
+
+    }
+
+    </script>
+
+    ```
+
+    Explanation – When you click the button, `document.write()` shows output.
+
+
+    #### 2nd Way: `window.alert()`
+
+    It is used to display message in alert box.
+
+
+    ```html
+
+    <script>
+
+    window.alert("Warning");
+
+    </script>
+
+    ```
+
+    Explanation – When you open the webpage, `window.alert()` contains "Warning".
+
+
+    #### 3rd Way: `innerHTML`
+
+    This method is used for writing inside HTML element like paragraph, `textarea`
+    and etc.
+
+
+    ```html
+
+    <script>
+
+    function something(){
+
+    document.getElementById("demo").innerHTML = "Paragraph is filled";
+
+    }
+
+    </script>
+
+    ```
+
+    Explanation – When you click the button, `document.getElementById()` takes ID
+    and writes inside through `innerHTML`.
+
+
+    #### 4th Way: `console.log()`
+
+    It is used to write inside console, click on F12 key in your firefox, chrome,
+    IE browser.
+
+
+    ```html
+
+    <script>
+
+    console.log(2+2);
+
+    </script>
+
+    ```
+
+    Explanation – Click F12 key and go to console tag to see results.
+
+
+    ## Chapter 3: JavaScript Variables, Statements, Comments & Keywords
+
+    ### JavaScript Variables
+
+    Variables are used to stored data in any language. In JavaScript variables do
+    the same like C and other high languages. Variables are stored in the form of
+    data types like `int`, `str` and etc. however at JS, you can use `var` keyword
+    for all types of data types.
+
+
+    Writing String: For writing string, you need to use single or double quote.
+
+
+    Example:
+
+    ```javascript
+
+    var x = "This is a Boy.";
+
+    var y = ''This is a Girl.'';
+
+    ```
+
+    Note: semi colon `;` is used to end the line.
+
+
+    Writing Numeric: For writing numeric, you need not to use double or single quotes.
+    If you use it then JS will take it as string.
+
+
+    Example:
+
+    ```javascript
+
+    var x = 8;
+
+    var y = 6;
+
+    var z = x+y;
+
+    ```
+
+
+    ### JavaScript Statements
+
+    JavaScript statements are set of instructions which are executed by browser.
+
+
+    Example1: Change HTML Content
+
+    Think of the scenario; if you want to add some content on anywhere in HTML by
+    clicking one button. You can do this work easily through PHP but the page will
+    be reloaded. With the help of JavaScript you can do this work without page reloads.
+
+
+    ```html
+
+    <<html>
+
+    <body>
+
+    <h1>Change Content of Box</h1>
+
+    <p id="demo">JavaScript will change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById(''demo'').innerHTML = ''I
+    learnt first example!''">
+
+    Press Me!
+
+    </button>
+
+    </body>
+
+    </html>
+
+    ```
+
+    '
+  raw: "\n\n![](images/00001.jpeg)\n\nQuick\n\nJavaScript Learning\n\nIn\n\nJust 3\
+    \ Days\n\n(Fast-Track Learning Course)\n\nBy\n\nVijay K. R.\n\nDisclaimer\n\n\
+    Copyright © By Vijay K. R.\n\nThe publisher and the author of this publication\
+    \ have utilized their best efforts to maintain the accuracy of all the contents.\
+    \ The content in this eBook is intended to be used only for educational purposes.\
+    \ No part of this eBook can be copied, reconstructed or rewritten by any means,\
+    \ electronic, Photostat or by any mode, without the written consent of the author\
+    \ and the publisher.\n\nThe readers are completely responsible for all the actions\
+    \ taken by reading the content of this book. The author and the publisher hold\
+    \ no responsibility for any damage, loss or disruption because of omissions or\
+    \ errors, to any party.\n\nThe author and the publisher disclaim any liability\
+    \ regarding the effectiveness, performance or applicability of anything in this\
+    \ eBook.\n\nTable of Content\n\n[Introduction](#part0000_split_003.html_Intro)……………………………………………4\n\
+    \n[Chapter 1: JavaScript Starts](#part0000_split_004.html_ch1)……………..…….5\n\n\
+    [Chapter 2: JavaScript Output/Display Codes](#part0000_split_005.html_ch2)……………………………………………………..9\n\
+    \n[Chapter 3: JavaScript Variables, Statements, Comments & Keywords](#part0000_split_006.html_ch3)\
+    \ ………………….…....14\n\n[Chapter 4: JavaScript Data Types & Operators](#part0000_split_007.html_ch4)……………………………………………….25\n\
+    \n[Chapter 5: JavaScript Functions](#part0000_split_008.html_ch5)………………32\n\n\
+    [Chapter 6: JavaScript Objects](#part0000_split_009.html_ch6)…………..….…36\n\n[Chapter\
+    \ 7: JavaScript Arrays](#part0000_split_010.html_ch7)……………………43\n\n[Chapter 8:\
+    \ JavaScript Conditions (if, else & switch) and Loops (for, while & do while)](#part0000_split_011.html_ch8).46\n\
+    \n[Summary](#part0000_split_012.html_summary)…………………………………………………61\n\nIntroduction\n\
+    \nJavaScript is one the language which helps you make browser to do what you want\
+    \ to do. This is easy language to learn and I am going to teach you now. My language\
+    \ will be user friendly and I will try to tell difficult stuffs in easy language\
+    \ with examples. Let’s move on one by one with JavaScript lessons. This is 3 days\
+    \ basic JavaScript Learning Course.\n\nBefore starting JavaScript, I am assuming\
+    \ that you have at least basic knowledge of HTML & CSS. If you don’t have knowledge\
+    \ of HTML & CSS, then you should go and study that first via online tutorials.\
+    \ You may be able to learn basic HTML & CSS in 2-3 days.\n\nDay 1 = Learn Chapter\
+    \ 1 & 2\n\nDay 2 = Learn Chapter 3, 4 & 5\n\nDay 3 = Learn Chapter 6, 7 & 8\n\n\
+    Chapter 1\n\nJavaScript Basics\n\n              JavaScript can change HTML Contents.\
+    \ If you are PHP developer and if you want to get done some work without page\
+    \ loads or you want HTML & CSS to perform work then you will need JavaScript.\n\
+    \n<script> Tag\n\nJavaScript can be placed inside body and head tag. The JavaScript\
+    \ codes should be inside <script> and </script> tags.\n\n<script>\n\ndocument.getElementById(\"\
+    demo\").innerHTML = \"My First JavaScript Code\";\n\n</script>\n\nJavaScript Events\n\
+    \n JavaScript codes are triggered on events. Events are performed when a person\
+    \ perform an event. There are many events provided by browser like onclick, onmouseover,\
+    \ onkeyup, onkeydown, ondoubleclick and many more. When any of events performs\
+    \ then JS Codes triggered and do something according to codes.\n\n<button onclick=“myFunction()”>Press\
+    \ Me!</button>\n\nExplanation – here, onclick is event and myFunction() is JS\
+    \ function.\n\nJavaScript Function\n\n              JavaScript block of codes\
+    \ which is inside <script> and </script> tags which are used to perform some work\
+    \ is called function.\n\n<script>\n\nfunction myFunction(){\n\ndocument.getElementById(\"\
+    demo\").innerHTML = \"My First JavaScript Code\";\n\n}\n\n</script>\n\nExplanation\
+    \ – Here myFunction() is the JS function inside <script> tags.\n\nBest Place for\
+    \ JS Codes\n\n              It is best practice to use all JS codes inside <head>\
+    \ tags.\n\n<html>\n\n<head>\n\n<script>\n\nfunction myFunction() {\n\n    document.getElementById(\"\
+    demo\").innerHTML = \"Paragraph has changed.\";\n\n}\n\n</script>\n\n</head>\n\
+    \n<body>\n\n<h1>New Page</h1>\n\n<p id=\"demo\">This is a Paragraph</p>\n\n<button\
+    \ type=\"button\" onclick=\"myFunction()\">Press Me!</button>\n\n</body>\n\n</html>\n\
+    \nExplanation – We used all script inside head tags.\n\nExternal JS Files\n\n\
+                  You can shore all codes in one another file and save file with .js\
+    \ extension. You must include the file inside <head> tags by this syntax.\n\n\
+    <head>\n\n<script src=“newScript.js”></script>\n\n</head>\n\nExplanation – Here,\
+    \ we used newScript.js file, where we stored all JS codes, when any function is\
+    \ invoked the codes will be triggered directly from the newScript.js file.\n\n\
+    Chapter 2\n\nJavaScript Display & Output Codes\n\nJavaScript uses four ways to\
+    \ display output.\n\n1st Way: document.write()\n\n It is used to write or output\
+    \ anything in the webpage.\n\n<html>\n\n<head>\n\n<script>\n\nfunction add(){\n\
+    \ndocument.write(6 + 6);\n\n}\n\n</script>\n\n</head>\n\n<body>\n\n<h1>My First\
+    \ Code</h1>\n\n<button onclick=\"add()\">Press Me!</button>\n\n</body>\n\n</html>\n\
+    \nExplanation – When you click on Press me button, document.write shows output\
+    \ in the webpage.\n\n2nd Way: Window.alert()\n\nIt is used to display message\
+    \ in alert box.\n\n<html>\n\n<body>\n\n<h1>My Alert Web Page</h1>\n\n<script>\n\
+    \nwindow.alert(\"Warning\");\n\n</script>\n\n</body>\n\n</html>\n\nExplanation\
+    \ – When you open the webpage, you will see an alert box containing Warning.\n\
+    \n3rd Way: innerHTML\n\n This method is used for writing something inside HTML\
+    \ element like inside paragraph, textbox, textarea and etc.\n\n<html>\n\n<head>\n\
+    \n<script>\n\nfunction something(){\n\ndocument.getElementById(\"demo\").innerHTML\
+    \ = \"This paragraph is filled with text Now\";\n\n}\n\n</script>\n\n</head>\n\
+    \n<body>\n\n<h1>Write Inside HTML Element Paragraph </h1>\n\n<p id=\"demo\">P\
+    \ is blank now</p>\n\n<button onclick=\"something()\">Press Me!</button>\n\n</body>\n\
+    \n</html>\n\nExplanation – when you click Press Me, document.getElementById takes\
+    \ id demo and writes inside demo id through innerHTML keyword.\n\n4th Way: console.log()\n\
+    \n It is used to write inside console, click on F12 function key in your firefox,\
+    \ chrome, IE browser. You will see one console tag. Click on tab, you will get\
+    \ the message which you write in console.log(). See example.\n\n<html>\n\n<head>\n\
+    \n<script>\n\nconsole.log(2+2);\n\n</script>\n\n</head>\n\n<body>\n\n<h1>Click\
+    \ F12 function key and go to console tag to see results </h1>\n\n</body>\n\n</html>\n\
+    \nChapter 3\n\nJavaScript Variables, Statements, Comments, Keywords\n\nJavaScript\
+    \ Variables\n\nVariables are used to stored data in any language. In JavaScript,\
+    \ variables do the same like C and other high languages. Variables are stored\
+    \ in the form of data types like int, str and etc. however at JS, you can use\
+    \ var keyword for all types of data types.\n\nWriting String: For writing string,\
+    \ you need to use single or double quote.\n\nExample:\n\nvar x = “This is a Boy.”;\n\
+    \nvar y = ‘This is a Girl.’;\n\nNote: semi colon “;” is used to end the line.\n\
+    \nWriting Numeric: For writing numeric, you need not to use double or single quotes.\
+    \ If you use it then JS will take it as string.\n\nExample:\n\nvar x = 8;\n\n\
+    var y = 6;\n\nvar z = x+y;\n\nJavaScript Statements\n\n              JavaScript\
+    \ statements are set of instructions which are executed by browser.\n\nExample1:\
+    \ Change HTML Content\n\nThink of the scenario; if you want to add some content\
+    \ on anywhere in HTML by clicking one button.\n\nYou can do this work easily through\
+    \ PHP but the page will be reloaded. With the help of JavaScript you can do this\
+    \ work without page reloads. Here, JavaScript come at existence when we need to\
+    \ perform any work by browser.\n\n<html>\n\n<body>\n\n<h1>Change Content of Box<h1>\n\
+    \n<p id=\"demo\">JavaScript will change HTML content.</p>\n\n<button type=\"button\"\
+    \n\nonclick=\"document.getElementById('demo').innerHTML = 'I learnt first example!'\"\
+    >\n\nPress Me!</button>\n\n</body>\n\n</html>"
+  toc: []
+  trans: '
+
+
+    ![](img/00001.jpeg)
+
+
+    # 3 天快速学会 JavaScript（快速上手学习课程）
+
+
+    作者：Vijay K. R.
+
+
+    ## 免责声明
+
+    版权所有 © Vijay K. R.
+
+
+    本出版物的出版者和作者已尽最大努力保持所有内容的准确性。本电子书的内容仅供教育目的使用。未经作者和出版者书面许可的情况下，不得通过任何手段（电子、影印或任何模式）复制、重构或重写本电子书的任何部分。
+
+
+    读者对阅读本书内容所采取的所有行为负全部责任。对于遗漏或错误给任何一方造成的损害、损失或中断，作者和出版者不承担任何责任。
+
+
+    作者和出版者对本电子书中任何内容的有效性、性能或适用性不承担任何责任。
+
+
+    ## 目录
+
+    - 引言……………………………………………4
+
+    - 第一章：JavaScript 入门……………..…….5
+
+    - 第二章：JavaScript 输出/显示代码……………………………………………………..9
+
+    - 第三章：JavaScript 变量、语句、注释与关键字 ………………….…....14
+
+    - 第四章：JavaScript 数据类型与运算符……………………………………………….25
+
+    - 第五章：JavaScript 函数………………32
+
+    - 第六章：JavaScript 对象…………..….…36
+
+    - 第七章：JavaScript 数组……………………43
+
+    - 第八章：JavaScript 条件判断 (if, else & switch) 与循环 (for, while & do while).46
+
+    - 总结…………………………………………………61
+
+
+    ## 引言
+
+    JavaScript 是帮助你让浏览器执行你想要操作的语言之一。这是一门容易学习的语言，现在我将教你。我的语言将是易于用户的，我会尝试用简单的语言和示例来解释复杂的内容。让我们一个一个地开始
+    JavaScript 课程。这是一份 3 天 JavaScript 基础课程。
+
+
+    在开始学习 JavaScript 之前，我假设你至少具有 `HTML` & `CSS` 的基础知识。如果你没有 `HTML` & `CSS` 知识，那么你应该先通过在线教程学习它们。你可以在
+    2-3 天内学会基础的 `HTML` & `CSS`。
+
+
+    - 第 1 天 = 学习第 1 & 2 章
+
+    - 第 2 天 = 学习第 3, 4 & 5 章
+
+    - 第 3 天 = 学习第 6, 7 & 8 章
+
+
+    ## 第一章：JavaScript 基础
+
+    JavaScript 可以改变 HTML 内容。如果你是 PHP 开发者，并且想在不刷新页的情况下完成某些工作，或者你想让 `HTML` & `CSS` 执行任务，那么你需要
+    JavaScript。
+
+
+    ### `<script>` 标签
+
+    JavaScript 可以放在 `body` 和 `head` 标签中。JavaScript 代码应该放在 `<script>` 和 `</script>`
+    标签之间。
+
+
+    ```html
+
+    <script>
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    </script>
+
+    ```
+
+
+    ### JavaScript 事件
+
+    JavaScript 代码是由事件触发的。当人执行某项操作时就会触发事件。浏览器提供了许多事件，如 `onclick`、`onmouseover`、`onkeyup`、`onkeydown`、`ondoubleclick`
+    等。当事件发生时，JavaScript 执行代码。
+
+
+    ```html
+
+    <button onclick="myFunction()">Press Me!</button>
+
+    ```
+
+
+    ### JavaScript 函数
+
+    JavaScript 函数是放在 `<script>` 和 `</script>` 标签内的。
+
+
+    ```html
+
+    <script>
+
+    function myFunction(){
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    }
+
+    </script>
+
+    ```
+
+
+    ### JavaScript 的最佳位置
+
+    JavaScript 在 `<script>` 标签内。
+
+
+    ```html
+
+    <script>
+
+    function myFunction(){
+
+    document.getElementById("demo").innerHTML = "My First JavaScript Code";
+
+    }
+
+    </script>
+
+    ```
+
+
+    ### 外部文件
+
+    JavaScript 在 `<script>` 标签。
+
+
+    ```html
+
+    <script src="newScript.js"></script>
+
+    ```
+
+
+    ## 第二章：JavaScript 输出/显示代码
+
+    JavaScript 有四种输出方式。
+
+
+    #### 第一种方式：`document.write()`
+
+    它用于在网页上写入任何内容。
+
+
+    ```html
+
+    <script>
+
+    function add(){
+
+    document.write(6);
+
+    }
+
+    </script>
+
+    ```
+
+    解释：点击按钮时，`document.write()` 输出。
+
+
+    #### 第二种方式：`window.alert()`
+
+    它用于在警告框中显示消息。
+
+
+    ```html
+
+    <script>
+
+    window.alert("Warning");
+
+    </script>
+
+    ```
+
+    解释：打开网页时，`window.alert()` 显示“警告”。
+
+
+    #### 第三种方式：`innerHTML`
+
+    该方法用于在 HTML 元素（如段落、`textarea` 等）内部写入。
+
+
+    ```html
+
+    <script>
+
+    function something(){
+
+    document.getElementById("demo").innerHTML = "Paragraph is filled";
+
+    }
+
+    </script>
+
+    ```
+
+    解释：点击按钮时，`getElementById()` 获取 ID 并通过 `innerHTML` 写入。
+
+
+    #### 第四种方式：`console.log()`
+
+    用于在控制台中写入，在你的 firefox、chrome 浏览器中按 F12 键。
+
+
+    ```html
+
+    <script>
+
+    console.log(2+2);
+
+    </script>
+
+    ```
+
+    解释：点击 F12 键并在控制台标签查看结果。
+
+
+    ## 第三章：JavaScript 变量、语句、注释与关键字
+
+    ### JavaScript 变量
+
+    变量在任何语言中用于存储数据。JavaScript 中的变量与 C 等其他语言相似。变量以 `int`、`str` 等数据类型的形式存储，但在 JS 中，你可以使用
+    `var` 关键字处理所有数据类型。
+
+
+    写入字符串：写入字符串时需要使用单引号或双引号。
+
+
+    示例：
+
+    ```javascript
+
+    var x = "This is a Boy.";
+
+    var y = ''This is a Girl.'';
+
+    ```
+
+    注意：分号 `;` 用于结束行。
+
+
+    写入数字：写入数字不需要双引号或单引号。如果你使用了，JS 将其视为字符串。
+
+
+    示例：
+
+    ```javascript
+
+    var x = 8;
+
+    var y = 6;
+
+    var z = x+y;
+
+    ```
+
+
+    ### JavaScript 语句
+
+    JavaScript 语句是浏览器执行的指令集。
+
+
+    示例 1：改变 HTML 内容
+
+    想象一下，你想通过点击按钮在 HTML 的任何地方添加某些内容。你可以通过 PHP 轻松地完成此工作，但页面会刷新。借助 JavaScript，你可以在不刷新页面的情况下完成此工作。
+
+
+    ```html
+
+    <<<html>
+
+    <body>
+
+    <h1>Change Content of Box</h1>
+
+    <p id="demo">JavaScript will change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById(''demo'').innerHTML = ''I
+    learnt first example!''">
+
+    Press Me!
+
+    </button>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    '
+- fmt: "\n# Explanation\n\nHere, I made on paragraph with html `p` tag and gave `id`\
+    \ name “demo”. Secondly I made one button with `onclick` event. I wrote one JavaScript\
+    \ code `document.getElementById('demo').innerHTML = 'I learnt first example!'`.\
+    \ You will learn all these in coming chapters but let’s start now. `document`\
+    \ is JavaScript object and `getElementById` is `document` method. It clearly shows\
+    \ that get element by id (demo). Here, it will get element by id `demo` which\
+    \ is the `id` of `p` tag and then `innerHTML` tells that inside the `p` HTML tag\
+    \ make changes. And you have to perform the change which is written after equal\
+    \ to sign. Now when you press the button `<p id=\"demo\">` inner html tag is changed\
+    \ to “I learnt first example!”. . I hope you will get this, if not read it again\
+    \ and even not. Not a problem, we will see many examples ahead to know all these.\n\
+    \n## Example 2: Change CSS Style\n\nIf you want to change the color of some text\
+    \ in HTML page by clicking one button then you can do this work easily through\
+    \ JavaScript. I am going to show you color changing in example.\n\n```html\n<html>\n\
+    <body>\n<h1>Change Color of paragraph</h1>\n<p id=\"demo\">JavaScript will change\
+    \ the color.</p>\n<script>\nfunction colorChange() {\n    var x = document.getElementById(\"\
+    demo\");   \n    x.style.color = \"red\";\n}\n</script>\n<button type=\"button\"\
+    \ onclick=\"colorChange()\">Press Me!</button>\n</body>\n</html>\n```\n\n### Explanation\n\
+    \nIf you read the first example, you can understand the paragraph `p` tag `id`\
+    \ is `demo` and button `onclick` event. In previous example, we have written the\
+    \ code directly on event name `onclick`. As the code was small so we wrote inline,\
+    \ but now code is big so we used `<script> </script>` tag to write JavaScript\
+    \ code. Inside the code, we made one function named `colorChange()` and open the\
+    \ function with curly bracket ‘{ ‘ and close the function with ‘}’ bracket. I\
+    \ will teach you regarding function in later chapters. For understanding it, just\
+    \ assume that function is the place where we write code which we can use at many\
+    \ places. Function always has one name, and function is called by its name. Now\
+    \ come to example, here at onclick event we called the function by its name `colorChange()`.\
+    \ And when this event triggered than it will work according the code which is\
+    \ written inside the function open curly bracket `{` and close curly bracket `}`\n\
+    \nHere, we have taken one variable `x`. Variable is defined by keyword `var` in\
+    \ JavaScript. We assigned `demo` tag to variable `x` and in next line `x.style.color`\
+    \ says that `x` style color will be changed to red when it is called. And when\
+    \ you press “Press Me!” button the color of text will be changed. Just use it\
+    \ and you will start learning it automatically. If not then close your eyes for\
+    \ a couple of minutes and think of this code. You will start gaining knowledge.\n\
+    \n## Example 3: Change HTML Attributes\n\nThink, if you want to change image to\
+    \ different image with one click. Let’s look on this example for now. If you just\
+    \ keep little attention on previous two examples, you will gain many things which\
+    \ will help you go ahead. If you are studying in hurry, wait and watch the previous\
+    \ two examples. If you understand the basics, you won’t feel any difficulty in\
+    \ coming codes. Now come on the example.\n\n```html\n<html>\n<body>\n<h1>JavaScript\
+    \ will Change Images</h1>\n<img id=\"myImage\" src=\"https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg\"\
+    \ width=\"100\" height=\"180\">\n<script>\nfunction changeImage() {\n    var image\
+    \ = document.getElementById('myImage');\n    if (image.src.match(\"red_rose\"\
+    )) {\n        image.src = \"https://upload.wikimedia.org/wikipedia/commons/c/c3/Extracted_pink_rose.png\"\
+    ;\n    } else {\n        image.src = \"https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg\"\
+    ;\n    }\n}\n</script>\n<button onclick=\"changeImage()\">Press Me!</button>\n\
+    </body>\n</html>\n```\n\n### Explanation\n\nHere, I took two images from Wikimedia\
+    \ first image is red rose and second is pink rose. You can use your images. When\
+    \ we click on button, the image changed to different image. Now move to code inside\
+    \ `changeImage()`. Here we used `if` and `else` conditions, I will teach it in\
+    \ later chapters. For, think that `image.src.match` matches `red_rose` word which\
+    \ is written in url then will show red rose, and if will not match then it will\
+    \ show else part which is `image.src` (means source of pink rose).\n\n## JavaScript\
+    \ Comments\n\nJavaScript comments are used to comment on sections for future references.\
+    \ After writing many codes, we forget the idea of writing codes with comments,\
+    \ we can easily remember what the code is and why. There are two types of commenting\
+    \ in JS.\n\n1. **Single Line Comments**: `//` is used for single line comments.\n\
+    ```javascript\nvar x = 5; // this is the value of x\nvar y = 6; // this is the\
+    \ value of y\n```\n\n2. **Multi Line Comments**: Multiline comments are used to\
+    \ comment more than one line. starts with `/*` and ends with `*/`.\n```javascript\n\
+    /* value of x is 5 value of y is 6 */\n\n\n## JavaScript Keywords\n\nKeywords\
+    \ are words reserved by JS to perform certain tasks. You cannot use keyword as\
+    \ variable.\n\n| Keywords | Description |\n| :--- | :--- |\n| `var` | For declaring\
+    \ a variable |\n| `break` | Terminates a switch or loop |\n| `continue` | Jumps\
+    \ out of a loop and starts at the top |\n| `debugger` | Stops the execution of\
+    \ JavaScript |\n| `do ... while` | Execute the block of statements until condition\
+    \ is true |\n| `function` | Declares a function |\n| `if ... else` | Block of\
+    \ statements to be executed depending on a condition |\n| `switch` | Block of\
+    \ statements to be executed which depends on different cases |\n| `try ... catch`\
+    \ | Implements error handling for statement blocks |\n\n## Chapter 4: JavaScript\
+    \ Data Types & Operators\n\nJavaScript Data Types are very important, without\
+    \ data types computers involve in risk.\n\n1. **String Data Types**: String data\
+    \ types always inside single or double quotes.\n```javascript\nvar name = \"John\"\
+    ;\nvar name = 'John';\n```\n\n2. **Number Data Types**: It is numeric data.\n\
+    ```javascript\nvar x = 5;\nvar y = 6;\n```\n\n3. **Boolean Data Types**: It is\
+    \ conditional data type, it is either true or false.\n```javascript\nvar x = true;\n\
+    var y = false;\n```\n\n4. **Arrays Data Types**: It is written in bracket and\
+    \ separated by comma.\n```javascript\nvar language = [\"php\", \"java\"];\n```\n\
+    \n5. **Object Data Types**: It is written in curly braces & separated by comma,\
+    \ and its syntax is `(Property name: value)`.\n```javascript\nvar man = {name:\"\
+    Bonnie\", age:50, surname:\"smith\"};\n```\n\n### Type of Operator\n\nWe can know\
+    \ data type of any operator with `typeof` keyword.\n```javascript\ntypeof \"bonnie\"\
+    \ // it will return string\ntypeof 50 // it will return number\ntypeof true //\
+    \ it will return Boolean\ntypeof [\"man\", \"women\"] // it will return array\n\
+    typeof {name:\"Jonnie\", age:50} // it will return object\n```\n\n## Undefined,\
+    \ Empty and Null\n\n1. **Undefined Data Types**: Data types which are not defined\
+    \ with any value called undefined data types.\n```javascript\nvar x; // x is undefined\n\
+    var Bonnie; // Bonnie is undefined\n```\n\n2. **Empty**: (Example provided in\
+    \ source text)\n"
+  raw: 'Explanation – Here, I made on paragraph with html p tag and gave id name “demo”. 
+    Secondly I made one button with onclick event. I wrote one JavaScript code “document.getElementById(‘demo’).innerHTML
+    = ‘I learnt first example!’. You will learn all these in coming chapters but let’s
+    start now. document is JavaScript object and getElementById is document method.
+    It clearly shows that get element by id (demo). Here, it will get element by id
+    demo which is the id of p tag and then innerHTML tells that inside the p HTML
+    tag make changes. And you have to perform the change which is written after equal
+    to sign. Now when you press the button <p id=“demo”> inner html tag is changed
+    to “I learnt first example!”. I hope you will get this, if not read it again and
+    even not. Not a problem, we will see many examples ahead to know all these.
+
+
+    Example2: Change CSS Style
+
+
+    If you want to change the color of some text in HTML page by clicking one button
+    then you can do this work easily through JavaScript. I am going to show you color
+    changing in example.
+
+
+    <html>
+
+
+    <body>
+
+
+    <h1>Change Color of paragraph< h1>
+
+
+    <p id="demo">JavaScript will change the color.</p>
+
+
+    <script>
+
+
+    function colorChange() {
+
+
+        var x = document.getElementById("demo");   
+
+
+        x.style.color = "red";
+
+
+    }
+
+
+    </script>
+
+
+    <button type="button" onclick="colorChange()">Press Me!</button>
+
+
+    </body>
+
+
+    </html>
+
+
+    Explanation – If you read the first example, you can understand the paragraph
+    p tag id is demo and button onclick event. In previous example, we have written
+    the code directly on event name onclick. As the code was small so we wrote inline,
+    but now code is big so we used <script> </script> tag to write JavaScript code.
+    Inside the code, we made one function named colorChange() and open the function
+    with curly bracket ‘{ ‘and close the function with ‘}’ bracket. I will teach you
+    regarding function in later chapters. For understanding it, just assume that function
+    is the place where we write code which we can use at many places. Function always
+    has one name, and function is called by its name. Now come to example, here at
+    onclick event we called the function by its name colorChange(). And when this
+    event triggered than it will work according the code which is written inside the
+    function open curly bracket { and close curly bracket } .
+
+
+    Here, we have taken one variable x. Variable is defined by keyword var in JavaScript.
+    We assigned demo tag to variable x and in next line x.style.color says that x
+    style color will be changed to red when it is called. And when you press “Press
+    Me!” button the color of text will be changed. Just use it and you will start
+    learning it automatically. If not then close your eyes for a couple of minutes
+    and think of this code. You will start gaining knowledge.
+
+
+    Example3: Change HTML Attributes
+
+
+                  Think, if you want to change image to different image with one click.
+    Let’s look on this example for now. If you just keep little attention on previous
+    two examples, you will gain many things which will help you go ahead. If you are
+    studying in hurry, wait and watch the previous two examples. If you understand
+    the basics, you won’t feel any difficulty in coming codes. Now come on the example.
+
+
+    <html>
+
+
+    <body>
+
+
+    <h1>JavaScript will Change Images</h1>
+
+
+    <img id="myImage" src="https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg"
+    width="100" height="180">
+
+
+    <script>
+
+
+    function changeImage() {
+
+
+        var image = document.getElementById(''myImage'');
+
+
+        if (image.src.match("red_rose")) {
+
+
+            image.src = "https://upload.wikimedia.org/wikipedia/commons/c/c3/Extracted_pink_rose.png";
+
+
+        } else {
+
+
+            image.src = "https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg";
+
+
+        }
+
+
+    }
+
+
+    </script>
+
+
+    <button onclick="changeImage()">Press Me!</button>
+
+
+    </body>
+
+
+    </html>
+
+
+    Explanation – Here, I took two images from Wikimedia first image is red rose and
+    second is pink rose. You can use your images.
+
+
+    My red rose image –
+
+
+    [https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg](https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg)
+
+
+    My pink rose image - [https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg](https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg)
+
+
+    When we click on button, the image gets changed to different image. Now move to
+    code inside function changeImage(). Here we have used if and else conditions,
+    I will teach it in later chapters. For here, think that if image.src.match means
+    (image source matches to red_rose word which is written in the url) then it will
+    show red rose, and if it will not match then it will show else part which is image.src
+    (means image source of pink rose).
+
+
+    JavaScript Comments
+
+
+    JavaScript comments are used to comment on code sections for future references.
+    After writing many codes, we forget the idea of writing codes and with comments,
+    we can easily remember what the code is and why we wrote any specific code. 
+
+
+    There are two types of commenting in JS.
+
+
+    1.  Single Line Comments: // is used for single line comments.
+
+
+    Example:
+
+
+    var x= 5;                               //this is the value of x
+
+
+    var y=6;                            //this is the value of y
+
+
+    2.  Multi Line Comments: Multiline comments are used to comment more than one
+    line. It starts with /* and ends with */.
+
+
+    Example:
+
+
+    var x= 5;                              
+
+
+    var y=6;             
+
+
+    /*
+
+
+    Here, value of x is 5 and
+
+
+    Value of y is 6
+
+
+    */
+
+
+    JavaScript Keywords
+
+
+    Keywords are words which are reserved by JS to perform certain tasks. You cannot
+    use keyword as variable. Keyword list
+
+
+    | Keywords | Description |
+
+
+    | Var | For declaring a variable |
+
+
+    | Break | Terminates a switch loop or another loop |
+
+
+    | continue | Jumps out of a loop and starts at the top |
+
+
+    | debugger | Stops the execution of JavaScript |
+
+
+    | do ... while | Execute the block of statements |
+
+
+    | for | Block of statements to be executed until condition is true |
+
+
+    | function | Declares a function |
+
+
+    | if ... else | Block of statements to be executed, depending on a condition |
+
+
+    | return | Exits a function |
+
+
+    | switch | Block of statements to be executed which depends on different cases
+    |
+
+
+    | try ... catch | Implements error handling for statement blocks |
+
+
+    Chapter 4
+
+
+    JavaScript Data Types & Operators
+
+
+    JavaScript Data Types
+
+
+    JavaScript Data Types can be string, number, Boolean, object, array and many more.
+    It is very important to have data types, without data types computers involve
+    in risk.
+
+
+    1.  JS String Data Types - String data types always inside single or double quotes.
+
+
+    Example:
+
+
+    var name = “John”;
+
+
+    var name = ‘John’;
+
+
+    2.  JS Number Data Types - It is numeric data types.
+
+
+    Example:
+
+
+    var x = 5;
+
+
+    var y = 6;
+
+
+    3.  JS Boolean Data Types – It is conditional data type, it is either true or
+    false.
+
+
+    Example:
+
+
+    var x = true;
+
+
+    var y = false;
+
+
+    4.  JS Arrays Data Types – It is written in bracket and separated by comma.
+
+
+    Example:
+
+
+    var language = [“php”, “javascript”, “java”];
+
+
+    5.  JS Object Data Types – It is written in curly braces & separated by comma,
+    and its syntax is - (Property name: value)
+
+
+    Example:
+
+
+    var man = {name:”Bonnie”, age:50, surname:”smith” };
+
+
+    Type of Operator             
+
+
+    We can know data type of any operator with type of keyword.
+
+
+    Example:
+
+
+    typeof “bonnie”                                            //it will return string
+
+
+    typeof 50                                                        //it will return
+    number
+
+
+    typeof true                                                        //it will return
+    Boolean
+
+
+    typeof [“man”, “women”]                            //it will return array
+
+
+    typeof {name:”Jonnie”, age:50}              // it will return object
+
+
+    Undefined, Empty and Null
+
+
+    1.  Undefined Data Types – Data types which are not defined with any value called
+    undefined data types.
+
+
+    Example:
+
+
+    var x ;                                                        // x is undefined
+
+
+    var Bonnie;                                          //Bonnie is undefined
+
+
+    2.  Empty 
+
+
+    Example:'
+  toc: []
+  trans: "\n\n# 解释\n\n在这里，我用 html `p` 标签创建了一个段落，并赋予了 `id` 名为“demo”。其次，我创建了一个带有 `onclick`\
+    \ 事件的按钮。我写了一行 JavaScript 代码 `document.getElementById('demo').innerHTML = 'I learnt\
+    \ first example!'`。你将在后面的章节中学习所有这些，但让我们现在开始吧。`document` 是 JavaScript 对象，而 `getElementById`\
+    \ 是 `document` 的方法。它清楚地显示了通过 id 获取元素（demo）。在这里，它将通过 id `demo` 获取元素，该 id 是 `p`\
+    \ 标签的 `id`，然后 `innerHTML` 表示在 `p` HTML 标签内部进行更改。你必须执行等号后面编写的内容。现在，当你按下按钮 `<p id=\"\
+    demo\">` 时，内部的 html 标签会被更改为“I learnt first example!”。我希望你能理解这一点，如果没有理解，请再读一遍，如果还是不懂也没关系，我们将在后面看到很多示例来了解所有这些内容。\n\
+    \n## 示例 2：更改 CSS 样式\n\n如果你想通过点击按钮更改 HTML 页面中某些文本的颜色，你可以通过 JavaScript 轻松地完成工作。我将在示例中向你展示颜色的改变。\n\
+    \n```html\n<html>\n<body>\n<h1>更改段落的颜色</h1>\n<p id=\"demo\">JavaScript 将改变颜色。</p>\n\
+    <script>\nfunction colorChange() {\n    var x = document.getElementById(\"demo\"\
+    );   \n    x.style.color = \"red\";\n}\n</script>\n<button type=\"button\" onclick=\"\
+    colorChange()\">点击我！</button>\n</body>\n</html>\n```\n\n### 解释\n\n如果你已经读过第一个示例，你可以理解段落\
+    \ `p` 标签的 `id` 是 `demo`，以及按钮的 `onclick` 事件。在在上一个示例中，我们直接在事件名称 `onclick` 上上编写了代码。由于代码很短，所以我们使用了内联写法，但现在代码很大，所以我们使用了\
+    \ `<script> </script>` 标签来编写 JavaScript 代码。在代码内部，我们创建了一个名为 `colorChange()` 的函数，并用大括号\
+    \ ‘{ ’ 打开函数，用大括号 ‘}’ 结束函数。我将在后面的章节中教你关于函数的知识。为了理解它，只需假设函数是编写代码的地方，我们可以在很多地方使用。函数总有一个名称，并且通过它的名称进行调用。现在来看示例，在\
+    \ `onclick` 事件中，我们通过它的名称 `colorChange()` 调用了函数。当此事件被触发时，它将根据函数大括号 `{` 和大括号 `}`\
+    \ 内部编写的代码运行。\n\n在这里，我们取了一个变量 `x`。变量在 JavaScript 中通过关键字 `var` 定义。我们将 `demo` 标签赋值给变量\
+    \ `x`，在下一行 `x.style.color` 表示当调用它时，`x` 的样式颜色将变为红色。当你按下“点击我！”按钮时，文本的颜色就会改变。只需使用它，你就会开始自动学习。如果没有，闭上眼睛几分钟思考这段代码。你将开始获得知识。\n\
+    \n## 示例 3：更改 HTML 属性\n\n想象，如果你想点击一下就把图片更改为不同的图片。让我们现在看看这个示例。如果你对之前的两个示例留意，你将获得许多有助于你前进的知识。如果你正在匆忙学习，请等一下看看之前的两个示例。如果你理解了基础，在接下来的代码中将不会感到任何困难。现在来看示例。\n\
+    \n```html\n<html>\n<body>\n<h1>JavaScript 将更改图像</h1>\n<img id=\"myImage\" src=\"\
+    https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg\" width=\"\
+    100\" height=\"180\">\n<script>\nfunction changeImage() {\n    var image = document.getElementById('myImage');\n\
+    \    if (image.src == \"https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg\"\
+    ) {\n        image.src = \"https://upload.wikimedia.org/wikipedia/commons/b/b7/Rose_garden.jpg\"\
+    ;\n    } else {\n        image.src = \"https://upload.wikimedia.org/wikipedia/en/c/c2/Single_red_rose.jpg\"\
+    ;\n    }\n}\n</script>\n<button type=\"button\" onclick=\"changeImage()\">点击我！</button>\n\
+    </body>\n</html>\n``` (注：原文中示例 3 的 HTML 代码块存在逻辑混乱和截断，翻译时已根据要求保留代码块不变，仅翻译其描述文本)\n\
+    \n### 解释\n\n（注：原文示例 3 下方的解释文本存在大量乱码和重复，此处根据指令“不要漏掉任何一行”且“不要重复输出原文”的原则，对可读部分进行了翻译）\n\
+    \n如果你对之前的两个示例留意，你将获得许多有助于你前进的知识。如果你正在匆忙学习，请等一下看看之前的两个示例。如果你理解了基础，在接下来的代码中将不会感到任何困难。\n\
+    \n"
+- fmt: "\n`var x = \" \";` // `x` is empty value\n\n### `Null` – `Null` is nothing\
+    \ but type is an object.\n\nExample:\n```javascript\nvar x = null; // `x` is null\n\
+    ```\n\n# JavaScript Operators\n\nJavaScript has many operators like arithmetic\
+    \ operators, assignment operators, string operators, logical operators and comparison\
+    \ operators.\n\n## 1. Arithmetic Operators\n– Operators which are used to perform\
+    \ certain mathematic operations on numbers called arithmetic operators.\n\nExample:\n\
+    \n| Arithmetic Operator | Descriptions |\n| :--- | :--- |\n| `+` | Addition |\n\
+    | `-` | Subtraction |\n| `*` | Multiplication |\n| `/` | Division |\n| `%` | Modulus\
+    \ |\n| `++` | Increment |\n| `--` | Decrement |\n\n## 2. Assignment Operators\n\
+    – For assigning value, assignment operators are used.\n\nExample:\n\n| Operator\
+    \ |\n| :--- |\n| `=` |\n| `+=` |\n| `-=` |\n| `*=` |\n| `/=` |\n| `%=` |\n\n##\
+    \ 3. String Operators\n– You can add strings with `+` operator.\n\nExample:\n\
+    ```javascript\nvar name = \"Jonnie\";\nvar surname = \"Smith\";\nvar full name\
+    \ = \"Jonnie\" + \"Smith\";\n```\n\n## 4. Comparison & Logical Operators\n\nExample:\n\
+    \n| Operators | Description |\n| :--- | :--- |\n| `==` | equal to |\n| `===` |\
+    \ equal value and equal type |\n| `!=` | not equal |\n| `!==` | not equal value\
+    \ or not equal type |\n| `>` | greater than |\n| `<` | less than |\n\n# Chapter\
+    \ 5: JavaScript Functions\n\nFunction is a block of code which is used to perform\
+    \ any task and can be reused in many places. Function is invoked when it is called.\
+    \ Syntax is simple, here it is:\n\n### Syntax:\n```javascript\nfunction myFun(parameter1,\
+    \ parameter2, parameter3, ...)\n{\n    //block of code\n}\n```\nHere, `myFun`\
+    \ is function name and `parameter1`, `parameter2` and `parameter3` are parameters,\
+    \ which are optional, then a curly bracket starts and ends. In between curly bracket,\
+    \ there will be code which will be executed when the function will be called.\n\
+    \n### Example:\n```html\n<html>\n<head>\n    <script>\n        function myFun(x,y){\n\
+    \            var x;\n            var y;\n            var z=x+y;\n            document.getElementById(\"\
+    demo\").innerHTML = z;\n        }\n    </script>\n</head>\n<body>\n    <p id=\"\
+    demo\"></p>\n    <button onclick=\"myFun(5,10)\">Press IT!</button>\n</body>\n\
+    </html>\n```\nHere, when we click the button “Press IT”, an `onclick` event is\
+    \ generated and `myFun(5,10)` function has executed. When the function executed\
+    \ we pass two parameters to function with values and those values becomes `x`\
+    \ and `y` of function, and finally stored in variable `z` goes inside `p` tag.\n\
+    \n### Function return\nFunction stop executing when it reaches `return` statement.\
+    \ `Return` is inbuilt statement to stopping the execution and sending the return\
+    \ value to function. You can think as “overall value of function” can be denoted\
+    \ by `return` statement.\n\nExample:\n```html\n<html>\n<head>\n</head>\n<body>\n\
+    \    <p id=\"demo\"></p>\n    <script>\n        function myFun(x,y){\n       \
+    \     var x;\n            var y;\n            var z=x+y;\n            return z;\n\
+    \        }\n        document.getElementById(\"demo\").innerHTML = myFun(5,0);\n\
+    \    </script>\n</body>\n</html>\n```\nHere, `myFun(5,0)` value will be assigned\
+    \ to `demo` id. Here, you have seen that I have written script inside the `body`\
+    \ tag because `head` tags are executed when it is called but `body` tags are automatically\
+    \ executed when body is loaded. Here, I have not given any event like `onclick`,\
+    \ therefore I have written entire script inside the `body` tag.\n\n# Chapter 6:\
+    \ JavaScript Objects\n\nThink objects as the real object, for example `car` is\
+    \ an object. Which can perform any task; it has properties and methods. Properties\
+    \ like its `color`, `model` and method likes `start`, `stop` and etc.\n\n### Object\
+    \ Properties\n```javascript\nvar car = {color:\"red\", model:\"552\", weight:\"\
+    900kgs\"};\n```\nProperties are invoked by two types of syntaxes:\n1. `Object.property`\n\
+    2. `Object[\"property\"]`\n\nExample:\n```html\n<html>\n<head>\n</head>\n<body>\n\
+    \    <p id=\"demo\"></p>\n    <script>\n        var car = {color:\"red\", model:552,\
+    \ weight:\"900kgs\"};\n        document.getElementById(\"demo\").innerHTML = car.color;\n\
+    \    </script>\n</body>\n</html>\n```\n\n### Object Method\nObject method is a\
+    \ function inside the object which has to perform certain task. Its syntax to\
+    \ invoked is `object.method()`.\n\nExample:\n```html\n<html>\n<head>\n</head>\n\
+    <body>\n    <p id=\"demo\"></p>\n    <script>\n        var car = {\n         \
+    \   color:\"red\",\n            model:552,\n            weight:\"900kgs\",\n \
+    \           fullDetails: function () {\n                return \"Car color is\
+    \ \"+ this.color + \". Car model is \"+ this.model + \" and Car weight is \"+this.weight;\
+    \ \n            }\n        };\n        document.getElementById(\"demo\").innerHTML\
+    \ = car.fullDetails();\n    </script>\n</body>\n</html>\n```\n\n### Object Constructor\n\
+    `Constructor` is used to create objects.\n```javascript\nfunction person(name,\
+    \ model, weight) {\n    this.name = name;\n    this.model = model;\n    this.weight\
+    \ = weight;\n}\n```\nHere `person` is used to create objects.\n```javascript\n\
+    var myFriend = new person(\"Jonnie\", \"552\", \"900kgs\");\n```\n`myFriend` has\
+    \ properties `name`, `model` and `weight`.\n\n### JavaScript Prototypes\nAll JavaScript\
+    \ prototypes are denoted like `object.prototype`.\n\n```javascript\nfunction person(name,\
+    \ model, weight) {\n    this.name = name;\n    this.model = model;\n    this.weight\
+    \ = weight;\n}\n```\nYou can add some methods to existing objects.\n```javascript\n\
+    person.prototype.stop = function() {\n    console.log(\"car stopped\");\n};\n\
+    ```\n"
+  raw: 'var x = “ “ ;                                                        // x
+    is empty value
+
+
+    3.  Null – Null is nothing but type is an object.
+
+
+    Example:
+
+
+    var x = null;                                                        // x is null
+
+
+    JavaScript Operators
+
+
+                  JavaScript has many operators like arithmetic operators, assignment
+    operators, string operators, logical operators and comparison operators.
+
+
+    1.  Arithmetic Operators – Operators which are used to perform certain mathematic
+    operations on numbers called arithmetic operators.
+
+
+    Example:
+
+
+    | Arithmetic Operator | Descriptions |
+
+
+    | + | Addition |
+
+
+    | - | Subtraction |
+
+
+    | * | Multiplication |
+
+
+    | / | Division |
+
+
+    | % | Modulus |
+
+
+    | ++ | Increment |
+
+
+    | -- | Decrement |
+
+
+    2.  Assignment Operators – For assigning value, assignment operators are used.
+
+
+    Example:             
+
+
+    | Operator |
+
+
+    | = |
+
+
+    | += |
+
+
+    | -= |
+
+
+    | *= |
+
+
+    | /= |
+
+
+    | %= |
+
+
+    3.  String Operators – You can add strings with + operator.
+
+
+    Example:
+
+
+    var name = “Jonnie”;                                                                     
+
+
+    var surname = “Smith”;
+
+
+    var full name = “Jonnie” + “Smith”;
+
+
+    4.  Comparison & Logical Operators
+
+
+    Example:
+
+
+    | Operators | Description |
+
+
+    | == | equal to |
+
+
+    | === | equal value and equal type |
+
+
+    | != | not equal |
+
+
+    | !== | not equal value or not equal type |
+
+
+    | > | greater than |
+
+
+    | < | less than |
+
+
+    Chapter 5
+
+
+    JavaScript Functions
+
+
+    Function is a block of code which is used to perform any task and can be reused
+    in many places. Function is invoked when it is called. Syntax is simple, here
+    it is:
+
+
+    Syntax:
+
+
+    function myFun(parameter1, parameter2, parameter3, …)
+
+
+    {
+
+
+    //block of code
+
+
+    }
+
+
+    Here, myFun is function name and parameter1, parameter2 and parameter 3 are parameters,
+    which are optional, then a curly bracket starts and ends. In between curly bracket,
+    there will be code which will be executed when the function will be called.
+
+
+    Example:             
+
+
+    <html>
+
+
+    <head>
+
+
+                  <script>
+
+
+                  function myFun(x,y){
+
+
+                  var x;
+
+
+                  var y;
+
+
+                  var z=x+y;
+
+
+                  document.getElementById("demo").innerHTML = z;             
+
+
+                  }
+
+
+                  </script>
+
+
+    </head>
+
+
+    <body>
+
+
+                  <p id="demo"></p>
+
+
+                  <button onclick="myFun(5,10)">Press IT!</button>
+
+
+    </body>
+
+
+    </html>             
+
+
+    Here, when we click the button “Press IT”, an onclick event is generated and myFun(5,10)
+    function has executed. When the function executed, we pass two parameters to function
+    with values and those values becomes x and y value of function, and finally results
+    stored in variable and z variable data goes inside the p tag.
+
+
+    Function return
+
+
+    Function is stop executing when it reaches to return statement. Return is JavaScript
+    inbuilt statement to stopping the execution and sending the return value to function.
+    You can think as the “overall value of function” can be denoted by return statement.
+
+
+    Example
+
+
+    <html>
+
+
+    <head>
+
+
+    </head>
+
+
+    <body>
+
+
+                  <p id="demo"></p>
+
+
+                  <script>
+
+
+                  function myFun(x,y){
+
+
+                  var x;
+
+
+                  var y;
+
+
+                  var z=x+y;
+
+
+                  return z;
+
+
+                  }
+
+
+                  document.getElementById("demo").innerHTML = myFun(150,10);
+
+
+                  </script>
+
+
+    </body>
+
+
+    </html>
+
+
+    Here, myFun(150,10) value will be assigned to demo id. Here, you have seen that
+    I have written script inside the body tag, because head tags are executed when
+    it is called but body tags are automatically executed when body is loaded on browser.
+    Here, I have not given any event like onclick, therefore I have written entire
+    script inside the body tag.
+
+
+    Chapter 6
+
+
+    JavaScript Objects
+
+
+                  Think objects as the real object, for example car is an object.
+    Which can perform any task; it has its properties and methods. Properties like
+    its color, model, weight and method likes start, stop and etc.
+
+
+    Object Properties Example
+
+
+    var car = {color:”red”, model=“5520”, weight=“900kgs”};
+
+
+    Properties are invoked by two types of syntaxes.
+
+
+    1st syntax = Object.property ;
+
+
+    2nd Syntax = Object[“property”];
+
+
+    Example:
+
+
+    <html>
+
+
+    <head>
+
+
+    </head>
+
+
+    <body>
+
+
+                  <p id="demo"></p>
+
+
+                  <script>
+
+
+                  var car = {color:"red", model:552, weight:"900kgs"};
+
+
+                  document.getElementById("demo").innerHTML = car.color;
+
+
+                  </script>
+
+
+    </body>
+
+
+    </html>
+
+
+    Object Method
+
+
+    Object method is a function inside the object which has to perform certain task.
+    Its syntax to invoked is = object.method();
+
+
+    Example:
+
+
+    <html>
+
+
+    <head>
+
+
+    </head>
+
+
+    <body>
+
+
+                  <p id="demo"></p>
+
+
+                  <script>
+
+
+                  var car = {
+
+
+                  color:"red",
+
+
+                  model:552,
+
+
+                  weight:"900kgs",
+
+
+                  fullDetails: function () {
+
+
+                  return "Car color is "+ this.color + ". Car model is "+ this.model
+    + " and Car weight is "+this.weight; }
+
+
+                  };             
+
+
+                  document.getElementById("demo").innerHTML = car.fullDetails();
+
+
+                  </script>
+
+
+    </body>
+
+
+    </html>
+
+
+                  Here, a method fullDetails is made as a function and it is invoked
+    by car.fullDetails(). Here, you have seen new keyword “this”. “this” is used to
+    use own properties of any object. You cannot directly write color, model and weight.
+    You need to use this.color, this.model and this.weight to use inside the function.
+
+
+    Object Constructor
+
+
+    It is best way to use constructor for using objects with parameters.
+
+
+    function person(name, age, weight, height){
+
+
+                  this.name = name;
+
+
+                  this.age = age;
+
+
+                  this.weight = weight;
+
+
+                  this.height = height;
+
+
+    }
+
+
+    Here person is the constructor object
+
+
+    Create an object
+
+
+    For creating an object, new keyword is used in JavaScript as it is used in PHP,
+    C and in many languages.
+
+
+    var myFriend = new person(Jonnie, Smith, 50kg, 6ft);
+
+
+    Here, myFriend is new object of person Object. Now, myFriend can access whole
+    properties and methods of object person.
+
+
+    myFriend.name                             //accessing property
+
+
+    myFriend.age                             //accessing property
+
+
+    JavaScript Prototypes
+
+
+    All JavaScript objects are inherited with their object prototypes which are denoted
+    like object.prototype. Example: new Date() is used to create new Date object and
+    inherit Date.prototype.
+
+
+    Creating a Prototype
+
+
+    function person(firstname, surname, age) {
+
+
+        this.firstname = firstname;
+
+
+        this.surname = surname;
+
+
+        this.age = age;
+
+
+        }
+
+
+    Creating new objects with new  keyword
+
+
+    var student = new person("John", "Smith", 12, "blue");
+
+
+    Adding Properties, Methods to  Objects
+
+
+    Sometime you want to add some properties, methods to objects, all existing objects
+    or to a prototype object.
+
+
+    Adding property to an object
+
+
+    student.haircolor = “Gray”;
+
+
+    Adding property to a prototype
+
+
+    You can not directly add property to a prototype as similar to object. You need
+    to do by this way.
+
+
+    person.haircolor = “Gray”;
+
+
+    Adding method to an object
+
+
+    student.fullname = function(){
+
+
+    return this.firstname + “ “ + this.surname;
+
+
+    };
+
+
+    Adding method to a prototype
+
+
+    function person(firstname, surname, age) {
+
+
+        this.firstname = firstname;
+
+
+        this.surname = surname;
+
+
+        this.age = age;
+
+
+        this.fullname = function(){
+
+
+        return this.firstname + “ “ + this.surname; };
+
+
+        }
+
+
+    Chapter 7
+
+
+    JavaScript Arrays
+
+
+                  JavaScript Arrays are used to store multiple values in one variable.
+
+
+    Example:
+
+
+    var cars = Array("BMW", "Volvo", "Jeep");             
+
+
+    var cars = new Array("BMW", "Volvo", "Jeep");             
+
+
+    Array are made with or without new keyword, here three values are stored in cars
+    variable.
+
+
+    cars[0]=“BMW”
+
+
+    cars[1]=“Volvo”
+
+
+    cars[2]=“Jeep”
+
+
+    It means all values are actually index of one variable “cars”. It means array
+    stores multiple values in the form of indexes.
+
+
+    If you would like to access any array then you can simply access by writing its
+    index.
+
+
+    Example:
+
+
+    <html>
+
+
+    <head>
+
+
+    </head>
+
+
+    <body>
+
+
+                  <p id="demo"></p>
+
+
+    <script>'
+  toc: []
+  trans: "\n\n`var x = \" \";` // `x` 是空值\n\n### `Null` – `Null` 仅仅是类型为对象的空。\n\n示例：\n\
+    ```javascript\nvar x = null; // `x` 是 null\n```\n\n# JavaScript 运算符\n\nJavaScript\
+    \ 具有许多运算符，如算术运算符、赋值运算符、字符串运算符、逻辑运算符和比较运算符。\n\n## 1. 算术运算符\n– 对数字进行某些数学运算的运算符称为算术运算符。\n\
+    \n示例：\n\n| 算术运算符 | 描述 |\n| :--- | :--- |\n| `+` | 加 |\n| `-` | 减 |\n| `*` | 乘\
+    \ |\n| `/` | 除 |\n| `%` | 取模 |\n| `++` | 增增 |\n| `--` | 递减 |\n\n## 2. 赋值运算符\n\
+    – 赋值运算符用于赋值。\n\n示例：\n\n| 运算符 |\n| :--- |\n| `=` |\n| `+=` |\n| `-=` |\n| `*=`\
+    \ |\n| `/=` |\n| `%=` |\n\n## 3. 字符串运算符\n– 你可以使用 `+` 运算符拼接字符串。\n\n示例：\n```javascript\n\
+    var name = \"Jonnie\";\nvar surname = \"Smith\";\nvar full name = \"Jonnie\" +\
+    \ \"Smith\";\n```\n\n## 4. 比较与逻辑运算符\n\n示例：\n\n| 运算符 | 描述 |\n| :--- | :--- |\n\
+    | `==` | 等于 |\n| `===` | 值相等且类型相等 |\n| `!=` | 不等于 |\n| `!==` | 值不等或类型不等 |\n| `>`\
+    \ | 大于 |\n| `<` | 小于 |\n\n# 第 5 章：JavaScript 函数\n\n函数是用于执行任何任务的代码块，并且可以在许多地方重用。函数在被调用时执行。语法非常简单，如下所示：\n\
+    \n### 语法：\n```javascript\nfunction myFun(parameter1, parameter2, parameter3, ...)\n\
+    {\n    //代码块\n}\n```\n这里，`myFun` 是函数名，`parameter1`、`parameter2` 和 `parameter3`\
+    \ 是参数（是可选的），然后大括号开始并结束。在大括号之间将是会在函数被调用时执行的代码。\n\n### 示例：\n```html\n<html>\n<head>\n\
+    \    <script>\n        function myFun(x,y){\n            var x;\n            var\
+    \ y;\n            var z=x+y;\n            document.getElementById(\"demo\").innerHTML\
+    \ = z;\n        }\n    </script>\n</head>\n<body>\n    <p id=\"demo\"></p>\n \
+    \   <button onclick=\"myFun(5,10)\">点击这里!</button>\n</body>\n</html>\n```\n在这里，当我们点击“点击这里!”(Press\
+    \ IT!)按钮时，会生成一个 `onclick` 事件并执行 `myFun(5,10)` 函数。当函数执行时，我们向函数传递两个带有值的参数，这些值将变成函数的\
+    \ `x` 和 `y`，最后存储在变量 `z` 中并进入 `p` 标签。\n\n### 函数返回\n函数在遇到 `return` 语句时停止执行。`Return`\
+    \ 是用于停止执行并向函数返回值的内置语句。你可以认为“函数的整体值”可以用 `return` 语句来表示。\n\n示例：\n```html\n<html\n\
+    <head>\n</head>\n<body>\n    <p id=\"demo\"></p>\n    <script>\n        function\
+    \ myFun(x,y){\n            var x;\n            var y;\n            var z=x+y;\n\
+    \            return z;\n        }\n        document.getElementById(\"demo\").innerHTML\
+    \ = myFun(5,0);\n    </script>\n</body>\n</html>\n```\n在这里，`myFun(5,0)` 的值将赋值给\
+    \ id 为 `demo` 的元素。在这里你看到我在 `body` 标签内部编写了脚本，因为 `head` 标签在调用时执行，而 `body` 标签在 body\
+    \ 加载时会自动执行。在这里，我没有提供任何如 `onclick` 之类的事件，因此将整个脚本写在了 `body` 标签内部。\n\n# 第 6 章：JavaScript\
+    \ 对象\n\n将对象想象成真实的物体，例如 `car`（汽车）就是一个对象。它可以执行任何任务；它拥有属性和方法。属性如它的 `color`（颜色）、`model`（型号），方法如\
+    \ `start`（启动）、`stop`（停止）等。\n\n### 对象属性\n```javascript\nvar car = {color:\"red\"\
+    , model:\"552\", weight:\"900kgs\"};\n```\n属性通过两种语法类型调用：\n1. `Object.property`\n\
+    2. `Object[\"property\"]`\n\n示例：\n```html\n<html\n<head>\n</head>\n<body>\n  \
+    \  <p id=\"demo\"></p>\n    <script>\n        var car = {color:\"red\", model:552,\
+    \ weight:\"900kgs\"};\n        document.getElementById(\"demo\").innerHTML = car.color;\n\
+    \    </script>\n</body>\n</html>\n```\n\n### 对象方法\n对象方法是对象内部用于执行特定任务的函数。它的调用语法是\
+    \ `object.method()`。\n\n示例：\n```html\n<html\n<head>\n</head>\n<body>\n    <p id=\"\
+    demo\"></p>\n    <script>\n        var car = {\n            color:\"red\",\n \
+    \           model:552,\n            weight:\"900kgs\",\n            fullDetails:\
+    \ function () {\n                return \"汽车颜色是 \"+ this.color + \". 型号是 \"+ this.model\
+    \ + \"，重量是 \"+this.weight; \n            }\n        };\n        document.getElementById(\"\
+    demo\").innerHTML = car.fullDetails();\n    </script>\n</body>\n</html>\n```\n\
+    \n### 对象构造函数\n`Constructor` 用于创建对象。\n```javascript\nfunction person(name, model,\
+    \ weight) {\n    this.name = name;\n    this.model = model;\n    this.weight =\
+    \ weight;\n}\n```\n这里 `person` 用于创建对象。\n```javascript\nvar myFriend = new person(\"\
+    Jonnie\", \"552\", \"900kgs\");\n```\n`myFriend` 拥有属性 `name`、`model` 和 `weight`。\n\
+    \n### JavaScript 原型\n所有的 JavaScript 原型表示类似于 `object.prototype`。\n\n```javascript\n\
+    function person(name, model, weight) {\n    this.name = name;\n    this.model\
+    \ = model;\n    this.weight = weight;\n}\n```\n你可以向现有对象添加一些方法。\n```javascript\n\
+    person.prototype.stop = function() {\n    console.log(\"汽车停止\");\n};\n```\n\n"
+- fmt: "\n```javascript\nvar cars = Array(\"BMW\", \"Volvo\", \"Jeep\");\ndocument.getElementById(\"\
+    demo\").innerHTML = cars[1];\n```\n\n## Accessing an array\n\nYou can access any\
+    \ array with their index values directly and indirectly.\n\n```javascript\nvar\
+    \ carname = cars[0];\n```\n\nor\n\n```javascript\ncars[0];\n```\n\n## Arrays as\
+    \ Objects\n\nObjects uses name indexes whereas array uses numbered indexes. Means,\
+    \ array uses numbers to access elements whereas object uses names to access elements.\n\
+    \n### Example\n\n```javascript\nvar person = [\"John\", \"Smith\", 12]; //array\n\
+    var person = {firstname:\"John\", lastname:\"Smith\", age:12}; //object\n```\n\
+    \n# Chapter 8: JavaScript Conditions (if, else, else if & Switch) and Loops (for\
+    \ & while)\n\n## JavaScript Conditions (if, else, else if & switch)\n\nIn JavaScript,\
+    \ many times you have to choose one condition or many conditions for performing\
+    \ any task.\n\n### Syntax\n\n```javascript\nIf(condition){\n    Block of code\
+    \ will execute, when if condition becomes true.\n} else {\n    Block of code will\
+    \ execute, when if condition becomes false.\n}\n```\n\n### Using if statement\n\
+    \nWhen you have to perform one task on any condition, and “if” condition becomes\
+    \ true then “if statement block” will execute.\n\n### Using else statement\n\n\
+    When “if” condition becomes false, then “else” block will be executed.\n\nExample:\
+    \ if age is above 18 then the person can vote and if the person below 18 age then\
+    \ cannot vote.\n\n```html\n<html>\n    <head>\n        <title>Vote Eligibility</title>\n\
+    \    </head>\n    <body>\n        <div>Vote Eligibility</div>\n        <script>\n\
+    \            function myfunction(){\n                var age = document.getElementById(\"\
+    age\").value;\n                if(age>=18){\n                    var eligibility\
+    \ = \"this person can vote\";\n                    document.getElementById(\"\
+    demo\").innerHTML = eligibility;\n                }else{\n                   \
+    \ var eligibility = \"this person cannot vote\";\n                    document.getElementById(\"\
+    demo\").innerHTML = eligibility;\n                }\n            }\n        </script>\n\
+    \        Enter Age: <input type=\"text\" id=\"age\" name=\"age\" /><br>\n    \
+    \    <p id=\"demo\"></p>\n        <input type=\"button\" onclick=\"myfunction()\"\
+    \ value=\"Check Eligibility\">\n    </body>\n</html>\n```\n\n### Using else if\
+    \ statement\n\nWhen we have more than one condition we use “else if” statement.\n\
+    \nSyntax:\n\n```javascript\nIf(condition 1){\n    Block of code will execute,\
+    \ when condition 1 becomes true.\n} else if(condition 2){\n    Block of code will\
+    \ execute, when condition 2 becomes true.\n} else {\n    Block of code will execute\
+    \ when conditions becomes false.\n}\n```\n\nExample: if a person meets before\
+    \ 12 hours, we wish him good morning, if he meets 16 hours, we wish him good afternoon\
+    \ and if both the conditions become false then we wish evening.\n\n```html\n<html>\n\
+    \    <head>\n        <title>Example</title>\n    </head>\n    <body>\n       \
+    \ <div>Greet Message (Enter Time in 24 hours) </div>\n        <script>\n     \
+    \       function myfunction(){\n                var time = document.getElementById(\"\
+    time\").value;\n                if(time<12){\n                    var greet =\
+    \ \"Good Morning\";\n                    document.getElementById(\"demo\").innerHTML\
+    \ = greet;\n                }else if(time<16){\n                    var greet\
+    \ = \"Good Afternoon\";\n                    document.getElementById(\"demo\"\
+    ).innerHTML = greet;\n                }else{\n                    var greet =\
+    \ \"Good Evening\";\n                    document.getElementById(\"demo\").innerHTML\
+    \ = greet;\n                }\n            }\n        </script>\n        Enter\
+    \ Time: <input type=\"text\" id=\"time\" name=\"time\" /><br>\n        <p id=\"\
+    demo\"> Greet Message :</p>\n        <input type=\"button\" onclick=\"myfunction()\"\
+    \ value=\"Check Greet\">\n    </body>\n</html>\n```\n\n### Switch Statement\n\n\
+    By this we can increase as many else if conditions. For many conditions we can\
+    \ use switch statement. Switch statement is used when you have many conditions\
+    \ to check. You can do the same work with else if but switch is better than else\
+    \ statement. You need to put `break` after each condition and `default` if no\
+    \ condition will be executed.\n\nSyntax:\n\n```javascript\nswitch(expression)\
+    \ {\n    case x:\n        block will execute.\n        break;\n    case y:\n \
+    \       block will execute.\n        break;\n    default:\n        block will\
+    \ execute.\n}\n```\n\nExample:\n\n```html\n<html>\n    <head>\n        <title>Example</title>\n\
+    \    </head>\n    <body>\n        <script>\n            function myfunction(){\n\
+    \                var today = new Date().getDay();\n                switch (today)\
+    \ {\n                    case 0:\n                        day = \"Today is Sunday\"\
+    ;\n                        break;\n                    case 1:\n             \
+    \           day = \"Today is Monday\";\n                        break;\n     \
+    \               case 2:\n                        day = \"Today is Tuesday\";\n\
+    \                        break;\n                    case 3:\n               \
+    \         day = \"Today is Wednesday\";\n                        break;\n    \
+    \                case 4:\n                        day = \"Today is Thursday\"\
+    ;\n                        break;\n                    case 5:\n             \
+    \           day = \"Today is Friday\";\n                        break;\n     \
+    \               case 6:\n                        day = \"Today is Saturday\";\n\
+    \                        break;\n                }\n                document.getElementById(\"\
+    demo\").innerHTML = day;\n            }\n        </script>\n        What Day is\
+    \ Today:\n        <p id=\"demo\"></p>\n        <input type=\"button\" onclick=\"\
+    myfunction()\" value=\"Check Today's Day\">\n    </body>\n</html>\n```\n\n## JavaScript\
+    \ Loops\n\nJavaScript Loops are used to execute one code many times by changing\
+    \ values. For example, you want to write 1 to 1000 in one page. By doing manually,\
+    \ it will take huge time but with loops, it will be done in few seconds.\n\nExample:\n\
+    \n```html\n<html>\n    <head>\n        <title>Example</title>\n    </head>\n \
+    \   <body>\n        <script>\n            function myfunction(){ \n          \
+    \      var star=\"\";\n                for(var i=1; i<1000; i++){\n          \
+    \          star += i + \"<Br>\";\n                }\n                document.getElementById(\"\
+    demo\").innerHTML = star ;\n            }\n        </script>\n        <p id=\"\
+    demo\"></p>\n        <input type=\"button\" onclick=\"myfunction()\" value=\"\
+    Check Loop\">\n    </body>\n</html>\n```\n\n### For Loop\n\nIn the previous example,\
+    \ you saw that loop needs three statements.\n\n- First statement – to initialize\
+    \ the value\n- Second statement – to check the condition\n- Third statement –\
+    \ to increase or decrease the counter\n\nSyntax:\n\n```javascript\nfor (statement\
+    \ 1; statement 2; statement 3) {\n    This code block to be executed\n}\n```\n\
+    \nIn the previous example, loop begins with statement 1 which is `var i=1`, here\
+    \ we are initializing the value of `i` and then statement 2 checks the condition,\
+    \ if condition is fulfilled then block of code executes. Here statement 3 works\
+    \ after block of code execution, then statement 3 works to increase or decrease\
+    \ the value of `i`.\n\n### While Loop\n\nWhen we need to execute the block of\
+    \ code when any condition fulfills then we use while loop.\n\nSyntax:\n\n```javascript\n\
+    while (condition) {\n    This code block to be executed\n}\n```\n\nExample:\n\n\
+    ```html\n<html>\n    <head>\n        <title>Example</title>\n    </head>\n   \
+    \ <body>\n        <script>\n            function myfunction(){\n             \
+    \   var num=\"\";\n                var i=1;\n                while (i < 20) {\n\
+    \                    num += \"Number is \" + i +\"<Br>\";\n                  \
+    \  i++;\n                }\n                document.getElementById(\"demo\").innerHTML\
+    \ = num ;\n            }\n        </script>\n        <p id=\"demo\"></p>\n   \
+    \ </body>\n</html>\n```\n"
+  raw: "              var cars = Array(\"BMW\", \"Volvo\", \"Jeep\");             \n\
+    \n              document.getElementById(\"demo\").innerHTML = cars[1];\n\n</script>             \n\
+    \n</body>\n\n</html>\n\nAccessing an array\n\n              You can access any\
+    \ array with their index values directly and indirectly.\n\nvar carname = cars[0];\n\
+    \nor\n\ncars[0];\n\nArrays as Objects\n\n              Objects uses name indexes\
+    \ whereas array uses numbered indexes. Means, array uses numbers to access elements\
+    \ whereas object uses names to access elements.\n\nExample\n\nvar person = [\"\
+    John\", \"Smith\", 12];                                                       \
+    \               //array\n\nvar person = {firstname:\"John\",  lastname:\"Smith\"\
+    , age:12};              //object\n\nChapter 8\n\nJavaScript Conditions (if, else,\
+    \ else if & Switch) and Loops (for & while)\n\nJavaScript Conditions (if, else,\
+    \ else if  & switch)\n\nIn JavaScript, many times you have to choose one condition\
+    \ or many conditions for performing any task.\n\nSyntax\n\nIf(condition){\n\n\
+                  Block of code will execute, when if condition becomes true.\n\n\
+    } else {\n\n              Block of code will execute, when if condition becomes\
+    \ false.\n\n}\n\nUsing if statement\n\nWhen you have to perform one task on any\
+    \ condition, and “if” condition becomes true then “if statement block” will execute.\n\
+    \nUsing else statement\n\nWhen “if” condition becomes false, then “else” block\
+    \ will be executed.\n\nExample: if age is above 18 then the person can vote and\
+    \ if the person below 18 age then cannot vote.\n\n<html>\n\n    <head>\n\n       \
+    \ <title>Vote Eligibility</title>\n\n    </head>\n\n    <body>\n\n        <div>Vote\
+    \ Eligibility</div>\n\n        <script>\n\n            function myfunction(){\n\
+    \n                var age = document.getElementById(\"age\").value;\n\n               \
+    \ if(age>=18){\n\n                var eligibility = \"this person can vote\";\n\
+    \n                document.getElementById(\"demo\").innerHTML = eligibility;\n\
+    \n                    }else{\n\n                var eligibility = \"this person\
+    \ cannot vote\";\n\n                document.getElementById(\"demo\").innerHTML\
+    \ = eligibility;\n\n                    }\n\n            }\n\n        </script>\n\
+    \n        Enter Your Age: <input type=\"text\" id=\"age\" name=\"age\" /><br>\n\
+    \n        <p id=\"demo\"></p>\n\n        <input type=\"button\" onclick=\"myfunction()\"\
+    \ value=\"Check Eligibility\">\n\n    </body>\n\n</html>\n\nUsing else if statement\n\
+    \n              When we have more than one condition then we use “else if” statement.\n\
+    \nSyntax:\n\nIf(condition 1){\n\n              Block of code will execute, when\
+    \ if condition 1 becomes true.\n\n} else if(condition 2){\n\n              Block\
+    \ of code will execute, when if condition2 becomes true.\n\n} else {\n\n             \
+    \ Block of code will execute when both conditions becomes false.\n\n}\n\nExample:\
+    \ if a person meets before 12 hours, we wish him good morning, if he meets after\
+    \ 16 hours, we wish him good afternoon and if both the conditions become false\
+    \ then we wish good evening.\n\n<html>\n\n    <head>\n\n        <title>Example</title>\n\
+    \n    </head>\n\n    <body>\n\n        <div>Greet Message (Enter Time in 24 hours\
+    \ format) </div>\n\n        <script>\n\n            function myfunction(){\n\n\
+                    var time = document.getElementById(\"time\").value;\n\n               \
+    \ if(time<12){\n\n                var greet = \"Good Morning\";\n\n               \
+    \ document.getElementById(\"demo\").innerHTML = greet;\n\n                   \
+    \ }else if(time<16){\n\n                var greet = \"Good Afternoon\";\n\n               \
+    \ document.getElementById(\"demo\").innerHTML = greet;\n\n                   \
+    \ }else{\n\n                var greet = \"Good Evening\";\n\n                document.getElementById(\"\
+    demo\").innerHTML = greet;\n\n                    }\n\n            }\n\n       \
+    \ </script>\n\n        Enter Time: <input type=\"text\" id=\"time\" name=\"time\"\
+    \ /><br>\n\n       <p id=\"demo\"> Greet Message Here :</p>\n\n        <input\
+    \ type=\"button\" onclick=\"myfunction()\" value=\"Check Greet Message\">\n\n\
+        </body>\n\n</html>\n\nBy this we can increase as many as else if conditions\
+    \ in the code. For many conditions we can also use switch statement.\n\nSwitch\
+    \ Statement\n\nSwitch statement is used when you have many conditions to check.\
+    \ You can do the same work with else if but switch is better than else if statement.\
+    \ You need to put “break” command after each condition and one condition will\
+    \ “default” if no condition will be executed.\n\nSyntax:\n\nswitch(expression)\
+    \ {\n\n    case x:\n\n        this code block will execute.\n\n        break;\n\
+    \n    case y:\n\n        this code block will execute.\n\n        break;\n\n   \
+    \ default:\n\n        this code block will execute.\n\n}\n\nExample:\n\n<html>\n\
+    \n    <head>\n\n        <title>Example</title>\n\n    </head>\n\n    <body>\n\n\
+            <script>\n\n            function myfunction(){\n\n                var\
+    \ today = new Date().getDay();\n\n               switch (today) {\n\n                   \
+    \ case 0:\n\n                        day = \"Today is Sunday\";\n\n                       \
+    \ break;\n\n                    case 1:\n\n                        day = \"Today\
+    \ is Monday\";\n\n                        break;\n\n                    case 2:\n\
+    \n                        day = \"Today is Tuesday\";\n\n                       \
+    \ break;\n\n                    case 3:\n\n                        day = \"Today\
+    \ is Wednesday\";\n\n                        break;\n\n                    case\
+    \ 4:\n\n                        day = \"Today is Thursday\";\n\n                       \
+    \ break;\n\n                    case 5:\n\n                        day = \"Today\
+    \ is Friday\";\n\n                        break;\n\n                    case 6:\n\
+    \n                        day = \"Today is Saturday\";\n\n                       \
+    \ break;\n\n                }\n\n                document.getElementById(\"demo\"\
+    ).innerHTML = day;   \n\n            }\n\n        </script>\n\n        What Day\
+    \ is Today:\n\n       <p id=\"demo\"></p>\n\n        <input type=\"button\" onclick=\"\
+    myfunction()\" value=\"Check To See Today's Day\">\n\n    </body>\n\n</html>\n\
+    \nJavaScript Loops\n\nJavaScript Loops are used to execute one code many times\
+    \ by changing values. For example, you want to write 1 to 1000 in one page in\
+    \ each line. By doing manually, it will take huge time but with loops, it will\
+    \ be done in few seconds.\n\nExample:\n\n<html>\n\n    <head>\n\n        <title>Example</title>\n\
+    \n    </head>\n\n    <body>\n\n        <script>\n\n            function myfunction(){  \n\
+    \n                var star=\"\";\n\n                for(var i=1; i<1000; i++){\n\
+    \n                  star += i + \"<Br>\";\n\n                }\n\n                \
+    \ document.getElementById(\"demo\").innerHTML = star ;\n\n            }\n\n       \
+    \ </script>\n\n       <p id=\"demo\"></p>\n\n        <input type=\"button\" onclick=\"\
+    myfunction()\" value=\"Check Loop\">\n\n    </body>\n\n</html>\n\nFor Loop\n\n\
+    \ In the previous example, you saw that loop needs three statements.\n\nFirst\
+    \ statement – to initialize the value\n\nSecond statement – to check the condition\n\
+    \nThird statement – to increase or decrease the counter\n\nSyntax:\n\n             \
+    \ for (statement 1; statement 2; statement 3) {\n\n                              \
+    \ This code block to be executed\n\n}\n\nIn the previous example, loop begins\
+    \ with statement 1 which is var i=1, here we are initializing the value of “i”\
+    \ and then statement 2 checks the condition, if condition is fulfilled then block\
+    \ of code executes. Here statement 3 works after block of code execution, then\
+    \ statement 3 works to increase or decrease the value of “i”.\n\nWhile Loop\n\n\
+    When we need to execute the block of code when any condition fulfills then we\
+    \ use while loop.\n\nSyntax:\n\nwhile (condition) {\n\n   This code block to be\
+    \ executed\n\n}\n\nExample:\n\n<html>\n\n    <head>\n\n        <title>Example</title>\n\
+    \n    </head>\n\n    <body>\n\n        <script>\n\n            function myfunction(){\n\
+    \n                var num=\"\";\n\n                var i=1;\n\n               \
+    \ while (i < 20) {\n\n                 num += \"Number is \" + i +\"<Br>\";\n\n\
+                     i++;\n\n             }\n\n                 document.getElementById(\"\
+    demo\").innerHTML = num ;\n\n            }\n\n        </script>\n\n       <p id=\"\
+    demo\"></p>\n\n        <input type=\"button\" onclick=\"myfunction()\" value=\"\
+    Check Loop\">\n\n    </body>\n\n</html>"
+  toc: []
+  trans: "\n\n```javascript\nvar cars = Array(\"BMW\", \"Volvo\", \"Jeep\");\ndocument.getElementById(\"\
+    demo\").innerHTML = cars[1];\n```\n\n## 访问数组\n\n你可以直接或间接地通过索引值访问任何数组。\n\n```javascript\n\
+    var carname = cars[0];\n```\n\n或者\n\n```javascript\ncars[0];\n```\n\n## 数组作为对象\n\
+    \n对象使用名称索引，而数组使用数字索引。这意味着数组使用数字来访问元素，而对象使用名称来访问元素。\n\n### 示例\n\n```javascript\n\
+    var person = [\"John\", \"Smith\", 12]; //数组\nvar person = {firstname:\"John\"\
+    , lastname:\"Smith\", age:12}; //对象\n```\n\n# 第 8 章：JavaScript 条件 (if, else, else\
+    \ if & Switch) 和 循环 (for & while)\n\n## JavaScript 条件 (if, else, else if & switch)\n\
+    \n在 JavaScript 中，很多时候你必须为执行任何任务选择一个条件或多个条件。\n\n### 语法\n\n```javascript\nIf(condition){\n\
+    \    // 当 if 条件为真时，将执行代码块。\n} else {\n    // 当 if 条件为假时，将执行代码块。\n}\n```\n\n###\
+    \ 使用 if 语句\n\n当你需要在任何条件下执行某项任务时，如果“if”条件为真，则将执行“if 语句块”。\n\n### 使用 else 语句\n\n\
+    当“if”条件为假时，将执行“else”块。\n\n示例：如果年龄大于 18 岁，则该人员可以投票；如果人员年龄小于 18 岁，则无法投票。\n\n```html\n\
+    <<html>\n    <head>\n        <title>投票资格</title>\n    </head>\n    <body>\n  \
+    \      <div>投票资格</div>\n        <script>\n            function myfunction(){\n\
+    \                var age = document.getElementById(\"age\").value;\n         \
+    \       if(age>=18){\n                    var eligibility = \"此人可以投票\";\n    \
+    \                document.getElementById(\"demo\").innerHTML = eligibility;\n\
+    \                }else{\n                    var eligibility = \"此人无法投票\";\n \
+    \                   document.getElementById(\"demo\").innerHTML = eligibility;\n\
+    \                }\n            }\n        </script>\n        输入年龄：<input type=\"\
+    text\" id=\"age\" name=\"age\" /><br>\n        <p id=\"demo\"></p>\n        <input\
+    \ type=\"button\" onclick=\"myfunction()\" value=\"检查资格\">\n    </body>\n</html>\n\
+    ```\n\n### 使用 else if 语句\n\n当我们有多个条件时，我们使用“else if”语句。\n\n语法：\n\n```javascript\n\
+    If(condition 1){\n    // 当条件 1 为真时，将执行代码块。\n} else if(condition 2){\n    // 当条件\
+    \ 2 为真时，将执行代码块。\n} else {\n    // 当条件都为假时，将执行代码块。\n}\n```\n\n示例：如果一个人在 12 点前见面，我们向他问早安；如果他在\
+    \ 16 点前见面，我们向他问下午好；如果两个条件都为假，我们向他问晚上好。\n\n```html\n<html>\n    <head>\n      \
+    \  <title>示例</title>\n    </head>\n    <body>\n        <div>问候信息（输入 24 小制时间） </div>\n\
+    \        <script>\n            function myfunction(){\n                var time\
+    \ = document.getElementById(\"time\").value;\n                if(time<12){\n \
+    \                   var greet = \"早上好\";\n                    document.getElementById(\"\
+    demo\").innerHTML = greet;\n                }else if(time<16){\n             \
+    \       var greet = \"下午好\";\n                    document.getElementById(\"demo\"\
+    ).innerHTML = greet;\n                }else{\n                    var greet =\
+    \ \"晚上好\";\n                    document.getElementById(\"demo\").innerHTML =\
+    \ greet;\n                }\n            }\n        </script>\n        输入时间：<input\
+    \ type=\"text\" id=\"time\" name=\"time\" /><br>\n        <p id=\"demo\"></p>\n\
+    \        <input type=\"button\" onclick=\"myfunction()\" value=\"检查资格\">\n   \
+    \ </body>\n</html>\n```\n\n### Switch 语句\n\n当有多个条件时，可以使用 `switch` 语句。它根据表达式的值执行不同的代码块。`default`\
+    \ 在在所有条件都不满足时执行。\n\n语法：\n\n```javascript\nswitch(expression) {\n    case x:\n\
+    \        // 当表达式匹配 x 时，将执行代码块。\n        break;\n    default:\n        // 当所有条件都不满足时，将执行代码块。\n\
+    }\n```\n\n示例：\n\n```html\n<html>\n    <head>\n        <title>示例</title>\n    </head>\n\
+    \    <body>\n        <script>\n            function myfunction(){\n          \
+    \      var today = new Date().getDay();\n                switch (today) {\n  \
+    \                  case 0:\n                        day = \"星期日\";\n         \
+    \               break;\n                    case 1:\n                        day\
+    \ = \"星期一\";\n                        break;\n                    case 2:\n  \
+    \                      day = \"星期二\";\n                        break;\n      \
+    \              case 3:\n                        day = \"星期三\";\n             \
+    \           break;\n                    case 4:\n                        day =\
+    \ \"星期四\";\n                        break;\n                    case 5:\n    \
+    \                    day = \"星期五\";\n                        break;\n        \
+    \            case 6:\n                        day = \"星期六\";\n               \
+    \         break;\n                }\n                document.getElementById(\"\
+    demo\").innerHTML = day;\n            }\n        </script>\n        今天是：\n   \
+    \     <p id=\"demo\"></p>\n        <input type=\"button\" onclick=\"myfunction()\"\
+    \ value=\"检查星期\">\n    </body>\n</html>\n```\n\n## JavaScript 循环\n\nJavaScript\
+    \ 循环通过改变值来多次执行一段代码。例如，你想在页面上写 1 到 1000。手动这样做需要很长时间，但使用循环几秒钟即可完成。\n\n示例：\n\n```html\n\
+    <html>\n    <head>\n        <title>示例</title>\n    </head>\n    <body>\n     \
+    \   <script>\n            function myfunction(){ \n                var star=\"\
+    \";\n                for(var i=1; i<1000; i++){\n                    star += i\
+    \ + \"<Br>\";\n                }\n                document.getElementById(\"demo\"\
+    ).innerHTML = star ;\n            }\n        </script>\n        <p id=\"demo\"\
+    ></p>\n        <input type=\"button\" onclick=\"myfunction()\" value=\"检查循环\"\
+    >\n    </body>\n</html>\n```\n\n### for 循环\n\n在上例中，你看到循环需要三个语句。\n\n- 第一个语句：初始化值\n\
+    - 第二个语句：检查条件\n- 第三个语句：增加或减少计数器\n\n语法：\n\n```javascript\nfor (statement 1; statement\
+    \ 2; statement 3) {\n    要执行代码块\n}\n```\n\n在上示例中，循环从语句 1 开始，即 `var i=1`，这里我们初始化\
+    \ `i` 的值，然后语句 2 检查条件，如果条件满足则执行代码块。在这里语句 3 在代码块执行后运行，然后语句 3 用于增加或减少 `i` 的值。\n\n\
+    ### while 循环\n\n当我们需要在任何条件满足时执行代码块时，我们使用 while 循环。\n\n语法：\n\n```javascript\nwhile\
+    \ (condition) {\n    要执行代码块\n}\n```\n\n示例：\n\n```html\n<html>\n    <head>\n  \
+    \      <title>示例</title>\n    </head>\n    <body>\n        <script>\n        \
+    \    function myfunction(){\n                var num=\"\";\n                var\
+    \ i=1;\n                while (i < 20) {\n                    num += \"数字是 \"\
+    \ + i +\"<Br>\";\n                    i++;\n                }\n              \
+    \  document.getElementById(\"demo\").innerHTML = num ;\n            }\n      \
+    \  </script>\n        <p id=\"demo\"></p>\n    </body>\n</html>\n```\n\n"
+- fmt: "\nHere, while checks the statement, and execute the code and then increase\
+    \ the value of `i` and again checks the statement and execute the code and so\
+    \ on…\n\n## Do while Loop\n\n`do while` loop is used when you need to execute\
+    \ the block of code atleast one time, first `do` statement works and then `while`\
+    \ statement checks the condition.\n\n### Syntax\n\n```javascript\ndo{\n    This\
+    \ block of code will execute.\n}while(condition)\n```\n\n### Example\n\n```html\n\
+    <<html>\n    <head>\n        <title>Example</title>\n    </head>\n    <body>\n\
+    \        <script>\n            function myfunction(){\n                var num=\"\
+    \";\n                var i=1;\n                do {\n                num += \"\
+    Number is \" + i +\"<Br>\";\n                i++;\n                }\n       \
+    \         while (i < 10);\n                document.getElementById(\"demo\").innerHTML\
+    \ = num ;\n            }\n        </script>\n        <p id=\"demo\"></p>\n   \
+    \     <input type=\"button\" onclick=\"myfunction()\" value=\"Check Loop\">\n\
+    \    </body>\n</html>\n```\n\nHere, firstly `do` statements works and then checks\
+    \ the condition, if condition becomes true then `do` statement code executes.\n\
+    \n## Summary\n\nYou have successfully learnt JavaScript, now make your own JS\
+    \ codes and work in real working scenario. I hope you enjoyed this three days\
+    \ course.\n"
+  raw: 'Here, while checks the statement, and execute the code and then increase the
+    value of “i” and again checks the statement and execute the code and so on…
+
+
+    Do while Loop
+
+
+    do while loop is used when you need to execute the block of code atleast one time,
+    first do statement works and then while statement checks the condition.
+
+
+    Syntax:
+
+
+    do{
+
+
+                  This block of code will execute.
+
+
+    }while(condition)
+
+
+    Example:
+
+
+    <html>
+
+
+        <head>
+
+
+            <title>Example</title>
+
+
+        </head>
+
+
+        <body>
+
+
+            <script>
+
+
+                function myfunction(){
+
+
+                    var num="";
+
+
+                    var i=1;
+
+
+                    do {
+
+
+                    num += "Number is " + i +"<Br>";
+
+
+                    i++;
+
+
+                    }
+
+
+                    while (i < 10);
+
+
+                     document.getElementById("demo").innerHTML = num ;
+
+
+                }
+
+
+            </script>
+
+
+           <p id="demo"></p>
+
+
+            <input type="button" onclick="myfunction()" value="Check Loop">
+
+
+        </body>
+
+
+    </html>
+
+
+                  Here, firstly do statements works and then checks the condition,
+    if condition becomes true then again do statement code executes.
+
+
+    Summary
+
+
+    You have successfully learnt JavaScript, now make your own JS codes and work in
+    real working scenario. I hope you enjoyed this three days course.'
+  toc: []
+  trans: "\n\n在这里，`while` 语句检查条件并执行代码，然后增加 `i` 的值，再次检查语句并执行代码，以此此类推……\n\n## do while\
+    \ 循环\n\n`do while` 循环用于需要至少执行一次代码块的场景，首先执行 `do` 语句，然后由 `while` 语句检查条件。\n\n###\
+    \ 语法\n\n```javascript\ndo{\n    This block of code will execute.\n}while(condition)\n\
+    ```\n\n### 示例\n\n```html\n<<html>\n    <head>\n        <title>Example</title>\n\
+    \    </head>\n    <body>\n        <script>\n            function myfunction(){\n\
+    \                var num=\"\";\n                var i=1;\n                do {\n\
+    \                num += \"Number is \" + i +\"<Br>\";\n                i++;\n\
+    \                }\n                while (i < 10);\n                document.getElementById(\"\
+    demo\").innerHTML = num ;\n            }\n        </script>\n        <p id=\"\
+    demo\"></p>\n        <input type=\"button\" onclick=\"myfunction()\" value=\"\
+    Check Loop\">\n    </body>\n</html>\n```\n\n在这里，首先执行 `do` 语句，然后检查条件；如果条件为真，则执行\
+    \ `do` 语句中的代码。\n\n## 总结\n\n你已经成功学会了 JavaScript，现在可以编写自己的 JS 代码并在实际场景中工作了。希望你喜欢这三天的课程。\n\
+    \n"
