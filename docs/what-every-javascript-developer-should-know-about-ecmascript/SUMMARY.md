@@ -1,0 +1,2 @@
++   [每个 JavaScript 开发者应该了解的 ECMAScript 2015 (OdeToCode 编程系列)](README.md)
++   [每个 JavaScript 开发者应该了解的 ECMAScript 2015 (OdeToCode 编程系列)](what-every-javascript-developer-should-know-about-ecmascript_0.md)

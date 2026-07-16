@@ -1,0 +1,87 @@
+name: What Every JavaScript Developer Should Know About ECMAScript 2015 (OdeToCode
+  Programming Series)
+name_cn: 每个 JavaScript 开发者应该了解的 ECMAScript 2015 (OdeToCode 编程系列)
+slug: what-every-javascript-developer-should-know-about-ecmascript
+toc:
+- - '#'
+  - 每个 JavaScript 开发者应该了解的 ECMAScript 2015 (OdeToCode 编程系列)
+- - '#'
+  - 欢迎
+- - '#'
+  - 变量与参数
+- - '##'
+  - let
+- - '###'
+  - 使用 let
+- - '##'
+  - const
+- - '###'
+  - '使用 const '
+- - '##'
+  - 默认参数
+- - '##'
+  - 剩余参数 (Rest Parameters)
+- - '##'
+  - 展开运算符 (Spread Operator)
+- - '##'
+  - 解构 (Destructuring)
+- - '##'
+  - 模板字符串
+- - '##'
+  - 标签模板字符串
+- - '###'
+  - 标签模板字符串的力量
+- - '##'
+  - 静态方法 (Statics)
+- - '##'
+  - 继承 (Inheritance)
+- - '#'
+  - 箭头函数
+- - '##'
+  - 箭头函数与 this
+- - '##'
+  - 定义箭头函数
+- - '#'
+  - 迭代器
+- - '##'
+  - 使用 for of 循环
+- - '##'
+  - Symbols（符号）
+- - '###'
+  - 可迭代对象与符号
+- - '##'
+  - 创建可迭代对象
+- - '##'
+  - 生成器
+- - '##'
+  - 惰性求值
+- - '##'
+  - 委托 yield (Delegating Yield)
+- - '#'
+  - Promise API
+- - '##'
+  - Promise 错误
+- - '#'
+  - 模块
+- - '##'
+  - 为什么需要模块？
+- - '##'
+  - 模块语法
+- - '###'
+  - 默认导出
+- - '###'
+  - 批量导出导入
+- - '###'
+  - 为了副作用而导入
+- - '#'
+  - APIs
+- - '##'
+  - 新集合 (New Collections)
+- - '###'
+  - Maps
+- - '###'
+  - Set
+- - '###'
+  - 弱集合 (Weak Collections)
+- - '#'
+  - 结束
