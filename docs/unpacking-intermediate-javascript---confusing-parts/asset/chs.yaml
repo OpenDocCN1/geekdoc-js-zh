@@ -1,0 +1,2026 @@
+- "# 中级 JavaScript 详解：困惑解析\n\n\n\n![](img/title_page.png)\n\n![深入解析中级 JavaScript -\
+  \ 混淆部分](img/title_page.png)\n\n\n\n\n\n![出版者标志](img/leanpub-logo.png)\n\n* * * *\
+  \ *\n\n\n* * * * *\n\n\n\n\n\n# 什么是 JavaScript\n\n### 课程概述\n\nJavaScript 疑是地球上使用最广泛的编程语言，有大量的学习\
+  \ JavaScript 内容可用。问题在于，互联网上并不是所有内容都能很好地解释 JavaScript 中复杂或令人困惑的概念。\n\n本课程旨在教授 JavaScript\
+  \ 中那些不易掌握的概念，特别是对于初学者而言。闭包（closures）、类型转换（coercion）、JavaScript 的异步特性等主题都是大多数初学者挣扎的话题示例，因为它们不容易理解。本课程的目标是为这些混淆的话题提供深入浅懂的解释。\n\
+  \n即使是那些已经使用 JavaScript 几年的人，可能也需要帮助理解本课程涵盖的某些概念，或者在理解上存在某些空白。本课程的目标就是填补这些空白。\n\n\
+  本课程不仅将对变量提升（hoisting）、类型转换、事件循环等基础 JavaScript 主题提供深入浅懂的解释，还将涵盖 promises 和 `async-await`\
+  \ 语法等高级主题，并以学生易于理解的方式进行。\n\n课程结束时，学生将对课程涵盖的概念有深入的理解。通过对大多数 JavaScript 初学者苦苦的主题有坚实的理解，他们将更擅长\
+  \ JavaScript。通过对基础但混淆的 JavaScript 主题的深入理解，学生将能够更好地调试 JavaScript 代码并避免常见的陷阱。\n\n\
+  ### 先决条件\n\n本课程假设学生对 JavaScript 和通用编程有基本的了解。假设他们理解变量、循环、对象、数组、函数等主题。\n\n### 运行代码示例\n\
+  \n你可以从购买此书的地方下载代码示例。\n\n如果你在查找或下载代码示例时遇到任何问题，请发送电子邮件至 us@fullstack.io 与我们联系。\n\n\
+  ### 本课程适合什么人群？\n\n本课程适合以下人员：\n\n* 正挣扎于深入理解 JavaScript\n* 理解从基础到高级的 JavaScript 概念，但想填补对成为优秀\
+  \ JavaScript 开发者关键的不同 JavaScript 主题的理解空白（如闭包、类型转换、事件循环、异步 JavaScript、promises 等主题）\n\
+  * 想要深入理解 JavaScript 并更擅长使用 JavaScript\n* 想要提高调试 JavaScript 的能力并准备面试，因为本课程将提供对 JavaScript\
+  \ 语言更深理解\n* 想要巩固对 JavaScript 基础主题的理解\n* 想要避免因不理解 JavaScript 的混淆主题而感到挫败\n* 想要在 JavaScript\
+  \ 工作中表现出色\n\n本课程与在线文章/博客以及许多 JavaScript 视频课程不同，后者要么未能对初学者难以理解的 JavaScript 主题提供深入浅懂的解释，要么没有涵盖优秀\
+  \ JavaScript 开发者必须理解的所有必要主题（从基础到高级）。\n\n本课程将基础但混淆的 JavaScript 主题整合在一门课程中，旨在为学生提供坚实的理解，并涵盖深入理解\
+  \ JavaScript 的所有关键主题。\n\nJavaScript 是目前使用最广泛的编程语言。随着现代前端框架和 `Node.js` 等平台的兴起，JavaScript\
+  \ 在可预见的未来将一直是使用最广泛的编程语言。\n\n它是 Web 的编程语言，最常用于为网页添加交互性。借助 `Node.js` 等允许我们在浏览器环境之外编写\
+  \ JavaScript 的技术，软件开发者现在可以通过学习一种编程语言来编写全栈应用程序。\n\n那么，我们今天所知的这种编程语言是如何产生的？让我们简单回顾一下它的历史。\n\
+  \n### JavaScript 历史\n\n在浏览器早期，网页只能是静态的，没有任何动态行为或交互性。表单输入验证等简单操作都需要服务器。由于那时互联网速度有限，仅为了输入验证就需要与服务器往返是非常不可接受的。\n\
+  \n我们需要一种客户端脚本语言，允许我们为网页添加交互性。1995 年，Netscape 的一名软件开发者开始研究这种语言，最初称为“mocha”，后来改为“LiveScript”。\n\
+  \n这种语言本应是 Netscape Navigator 2 浏览器的一部分，但在浏览器发布前，LiveScript 被重命名为“JavaScript”。\n\n\
+  当 Netscape 发布 Netscape Navigator 3 浏览器时，微软推出了名为 Internet Explorer 3 的网页浏览器，其中包含了微软对\
+  \ JavaScript 语言的实现。\n\n这带来了一个问题：现在有了不同的 JavaScript 语言实现。需要一个负责 JavaScript 语言进步的标准机构。\n\
+  \n### JavaScript 语言的标准化\n\n多个版本的 JavaScript 的问题导致 Netscape 将 JavaScript 语言提交给标准机构\
+  \ Ecma International。\n\nJavaScript 由 Ecma International 标准化为“ECMAScript”，其标准为 [ECMA-262](https://www.ecma-international.org/publications-and-standards/ecma-262/)。\n\
+  \n正如上一节提到的，JavaScript 的最初名称是 Mocha，后来改为 LiveScript，在 Netscape Navigator 2 发布之前，名称被更改为\
+  \ JavaScript。\n\n那么，在已经存在一种名为“Java”的流行编程语言的情况下，在“JavaScript”的名称中使用“Java”这个词的原因是什么？\n\
+  \n关于这两个语言是否相关的疑问，会在几乎每个熟悉其中一种语言并接触另一种语言的人脑海中出现。\n\n这仅仅是一个营销手段。Java 在当时非常流行，Netscape\
+  \ 想利用 Java 语言的流行度。这就是 Netscape 将语言从 LiveScript 改名为 JavaScript 的原因。\n\n除了语法上的某些相似之处以及语言名称相同，这两种语言非常不同。\n\
+  \n### Ecma International, TC39\n\nJavaScript 由标准机构 **Ecma International** 标准化为 **ECMAScript**。\n\
+  \n在 Ecma International 内部，负责开发 JavaScript 语言的人属于**技术委员会 39**TC39)。该委员会由 JavaScript\
+  \ 社区的不同利益相关者组成。来自 Google、微软等大公司的人员主要是该小组的成员。\n\n\n\n\n\n其他人也可以加入 TC39，并为 JavaScript\
+  \ 语言的发展做出贡献。关于任何人如何能够做出贡献或如何作为成员参与 TC39 会议的详细信息，可以在 [TC39 网站](https://tc39.es/)\
+  \ 上找到。\n\nTC39 也有一个 [GitHub 账户](https://github.com/tc39)，其中托管了多个与其工作相关的代码仓库。这些仓库包括\
+  \ TC39 会议的笔记、JavaScript 语言的各种提案、TC39 工作机制的细节等。\n\n## 提案流程\n\nTC39 拥有一套完善的流程，提案在加入\
+  \ ECMAScript 规范并最终成为 JavaScript 语言的一部分之前，必须通过该流程。\n\n每个提案都会通过五个阶段，具体如下文所示：\n\n![process\
+  \ stages](img/module_01----lesson_01.04----public----assets----proposal-stages.png)\n\
+  \n流程阶段\n\n### 第 0 阶段 (Stage 0)\n\n第一阶段代表某人的想法，他们认为这个想法值得成为 JavaScript 语言的一部分。\n\n\
+  此阶段并非所有提案都能进入下一个阶段，但进入下一阶段的提案是那些引起了足够兴趣，并且有 TC39 委员会成员愿意投入该想法研究的提案。在此阶段获得足够关注的提案将在\
+  \ TC39 会议上进行讨论。如果讨论顺利，该提案将移到下个阶段。\n\n### 第 1 阶段 (Stage 1)\n\n此阶段的提案由社区（包括非委员会成员）进行讨论和开发。如果该提案仍然具有足够的关注，并且被认为加入规范后具有潜在收益，则会在\
+  \ TC39 会议上开发并讨论初始的规范语言和 API。只要一切顺利，提案将移到下一个阶段。\n\n### 第 2 阶段 (Stage 2)\n\n在此阶段，API、语法等将使用正式的规范语言进行精炼和更详细的描述。在此阶段，可能会开发\
+  \ Polyfills（填充方案）和 `Babel` 插件，以便对提案的解决方案进行真实世界的实验。\n\n一旦提案被描述得足够详细，就可以考虑进入下一个阶段。\n\
+  \n### 第 3 阶段 (Stage 3)\n\n此阶段的提案几乎已经准备好被纳入 ECMAScript 规范。\n\n为了让提案移动到最终阶段，需要满足以下两个标准：\n\
+  \n- 一套测试用例\n- 两个通过测试的该提案的兼容实现\n\n一旦满足上述条件，并且委员会对该提案已准备好成为 ECMAScript 规范的一部分达成共识，它将移到下一个阶段。\n\
+  \n### 第 4 阶段 (Stage 4)\n\n在此阶段，提案已经完成，准备好纳入 ECMAScript 规范并最终添加到 JavaScript 语言。\n\
+  \n向 `ecma262` GitHub 仓库生成一个拉请求（pull request），将其纳入规范。一旦拉请求获得批准，该提案将成为规范的一部分，并准备好在尚未实现它的\
+  \ JavaScript 引擎中实现。\n\n有关此流程的更多详细信息，请参考 TC39 网站上的[流程文档](https://tc39.es/process-document/)，该文档解释了提案通过的各个阶段。\n\
+  \n## 跟踪即将推出的特性\n\n近年来 JavaScript 语言的增强完全将 JavaScript 变成了一门编程语言，有时很难跟上语言的新特性。\n\n\
+  保持对新变化的敏锐度是一回事，但我们如何能够跟踪未来可能成为 JavaScript 的变化呢？\n\n这个问题的答案就在 [TC39 的 GitHub 仓库](https://github.com/tc39)\
+  \ 中，其中包含了[会议笔记](https://github.com/tc39/notes)和[提案](https://github.com/tc39/proposals)，这些提案处于前节描述的提案流程的不同阶段。\n\
+  \n笔记和提案仓库是跟踪即将变化的好地方，通常情况下，TC39 GitHub 仓库对于跟踪 TC39 委员会正在的工作非常有用。\n\n## ECMAScript\
+  \ 版本是如何命名的？\n\nECMAScript 5，也称为“ES5”，于 2009 年发布。在此之前，ECMAScript 是通过年份命名的。但从 2015\
+  \ 年发布 ECMAScript 6 开始，命名方式转变为版本号，例如 ES2015。\n\n在 2015 年之后，ECMAScript 每年发布一次大版本，例如\
+  \ ES2016、ES2017、ES2018、ES2019、ES2020、ES2021、ES2022 和 ES2023。这种命名方式是为了让开发者能够清楚地知道版本发布的年份。\n\
+  \n例如，在 2021 年发布的 ECMAScript 2021（或称为 ES12）中引入了许多新特性，而 2022 年发布的 ECMAScript 2022（或称为\
+  \ ES13）则引入了其他新特性。这种命名方式有助于我们跟踪 JavaScript 语言的演进。\n\n\n\n\n\n了解在代码执行期间有哪些不同要素在起作用也非常重要；如“`execution\
+  \ context`”（执行上下文）、call stack”（调用栈）等概念，对于理解 JavaScript 语言的运行时行为以及高效地与其工作和调试至关重要。\n\
+  \n### JavaScript 引擎\n\n为了执行 JavaScript 代码，我们需要另一个被称为 `JavaScript engine` 的软件。该引擎包含了所有必要的组件，可以将代码转换为机器可以执行的内容。\n\
+  \n不同的浏览器厂商通常会创建 JavaScript 引擎；每个主要厂商都开发了用于在其浏览器中执行 JavaScript 代码的 JavaScript 引擎。\n\
+  \n下表显示了一些主要的浏览器及其 JavaScript 引擎。\n\n| 浏览器 | 引擎 |\n| --- | --- |\n| Google Chrome\
+  \ | V8 |\n| Edge | Chakra |\n| Mozilla Firefox | Spider Monkey |\n| Safari | JavaScriptCore\
+  \ |\n\n虽然每个 JavaScript 引擎执行 JavaScript 代码的步骤存在差异，但每个引擎所采取的主要步骤大体相同。我们将尝试通过理解 Google\
+  \ Chrome 的 `V8` 引擎，对代码如何被 JavaScript 引擎转换和执行有一个高层次的概述。\n\n下面的图片显示了 V8 引擎执行流水线的高层次概述：\n\
+  \n![process stages](img/module_01----lesson_01.08----public----assets----v8-execution-pipeline.png)\n\
+  \n处理阶段\n\nJavaScript 引擎是一个复杂的软件，包含了许多用于转换和执行 JavaScript 代码的步骤和组件，但上面的图片显示了 V8 引擎执行流水线的简化版本。\n\
+  \n:::note 请注意，开发 V8 引擎的团队正在对其持续改进；因此，图中所示的简化执行流水线在未来可能会发生变化。:::\n\n让我们通过了解此流水线每一步发生了什么，来更好地理解上述执行流水线是如何运作的。\n\
+  \n### 源代码\n\n在 JavaScript 引擎开始工作之前，需要从某个源下载源代码。这可以来自网络、缓存，或者预取了代码的 service worker。\n\
+  \n引擎本身不具备下载代码的能力。由浏览器完成下载并将其传递给引擎，引擎随后即可开始转换并最终执行它。\n\n### 解析器 (Parser)\n\n下载源代码后，下一步是将其转换为\
+  \ `tokens`（标记）。可以将这一步想象为识别代码的不同部分；例如，“function”一词是一个被识别为“keyword”（关键字）的标记。其他标记可能包括字符串、运算符等。这种将代码划分为标记的过程由“scanner”（扫描器）完成，这一过程被称为“tokenization”（标记化）。\n\
+  \n以下 JavaScript 代码：\n\n```\n1 function add(num1, num2) {\n2   return num1 + num2;\n\
+  3 }\n```\n\n它可以像下面一样被标记：\n\n```\n 1 [\n 2   { type: \"keyword\", value: \"function\"\
+  \ },\n 3   { type: \"identifier\", value: \"add\" },\n 4   { type: \"openRoundParen\"\
+  , value: \"(\" },\n 5   { type: \"identifier\", value: \"num1\" },\n 6   { type:\
+  \ \"identifier\", value: \"num2\" },\n 7   { type: \"closeRoundParen\", value: \"\
+  )\" },\n 8   { type: \"openCurlyParen\", value: \"{\" },\n 9   { type: \"keyword\"\
+  , value: \"return\" },\n10   { type: \"identifier\", value: \"num1\" },\n11   {\
+  \ type: \"addOperator\", value: \"+\" },\n12   { type: \"identifier\", value: \"\
+  num2\" },\n13   { type: \"closeCurlyParen\", value: \"}\" }\n14 ];\n```\n\n一旦生成了标记，解析器就会使用它们来生成\
+  \ [抽象语法树 (AST)](https://en.wikipedia.org/wiki/Abstract_syntax_tree)，这是一组代表源代码结构的对象。\n\
+  \n[AST Explorer](https://astexplorer.net/) 是一个很酷的网站，你可以用它来可视化 AST。可以将上面的代码粘贴到 AST\
+  \ explorer 中并探索生成的 AST。\n\n### 解释器 (Interpreter)\n\n`Bytecode Generator`（字节码生成器）使用解析器产生的\
+  \ AST 来生成字节码。生成的字节码被 `Bytecode Interpreter`（字节码解释器）获取，然后对其进行解释。\n\nV8 还将生成的字节码通过一些优化器，这些优化器执行某些优化以确保\
+  \ `Bytecode Interpreter` 高效执行字节码。\n\n### 编译器 (Compiler)\n\n在执行字节码时，JavaScript 引擎会收集有关正在执行的代码的信息。然后引擎使用这些信息进一步优化代码。\n\
+  \n例如，JavaScript 引擎可以识别频繁执行的代码部分，这些代码被称为“hot”（热）部分。代码的“热”部分将被编译成原生机器码，以确保这些部分能够尽可能快地执行。\n\
+  \n然而，由于代码编写方式，优化后的原生机器码有时必须回退（deoptimized）回由 `Bytecode Generator` 生成字节码。\n\n回退到字节码的需要是因为\
+  \ JavaScript 是一种[动态类型](https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing)语言。动态性质意味着我们可以用不同类型的值来调用特定的\
+  \ JavaScript 函数。\n\n考虑以下代码：\n\n```\n1 function print(obj) {\n2   console.log(obj);\n\
+  3 }\n```\n\n上述函数可以用具有不同“形状”（shapes）的对象进行调用。\n\n```\n1 print({ a: 1, b: 2 });\n2\
+  \ print({ a: 1, b: 2, c: 3 });\n```\n\n### 执行上下文的类型\n\n以下我们将讨论的两种主要的执行上下文类型：\n\n\
+  *   全局执行上下文 (Global execution context)\n\n\n\n\n\n## 函数执行上下文\n\n:::info\n存在第三种执行上下文，它是为了执行\
+  \ [eval](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)\
+  \ 函数内部的代码而创建的。尽管如此，由于安全考虑，不建议使用 `eval` 函数，因此我们只讨论上述的执行上下文类型。\n:::\n\n## 全局执行上下文\n\
+  \n全局执行上下文是每当 JavaScript 代码加载并执行时所创建的基础上下文。全局代码（即不在函数内部的代码）是在全局执行上下文中执行的。\n\n全局上下文包含了全局变量、函数等。它还包含\
+  \ `this` 的值以及对外部环境的引用，在全局执行上下文中，该引用为 `null`。\n\n## 函数执行上下文\n每当调用 JavaScript 函数时，都会为该函数的执行创建一个新的执行上下文。与全局执行上下文一样，函数执行上下文也包含：\n\
+  \n*   在在函数内部声明的变量和函数。\n*   当前函数调用中函数内部 `this` 的值。\n*   对外部环境的引用。\n\n函数执行上下文还包含了传递给函数的参数。\n\
+  \n### 执行上下文阶段\n执行上下文分为以下两个阶段：\n\n*   创建阶段 (Creation phase)\n*   执行阶段 (Execution\
+  \ phase)\n\n### 创建阶段\n顾如名，执行上下文（全局和函数）是在创建阶段被创建的。\n\n在此阶段，变量声明和对函数的引用会以键值对的形式保存在执行上下文中。`this`\
+  \ 的值和对外部环境的引用也会在此阶段进行设置。\n\n变量的值在创建阶段不会被赋值。然而，引用函数的变量在此阶段确实指向这些函数。使用 `var` 声明的变量在此阶段被赋值为\
+  \ `undefined`，而使用 `let` 声明的变量或使用 `const` 声明的常量则保持未初始化状态。\n\n:::info\n在全局上下文中，没有外部环境，因此对外部环境的引用被设置为\
+  \ `null`；但在函数上下文中，`this` 的值取决于函数是如何调用的，因此 `this` 的值会被适当设置。\n:::\n\n#### 作用域环境与变量环境\n\
+  在创建阶段，会创建以下两个组件：\n\n*   作用域环境 (Lexical environment)\n*   变量环境 (Variable environment)\n\
+  \n作用域环境和变量环境是内部使用的结构，用于存储变量、函数、对外部环境的引用以及 `this` 值的键值映射。\n\n作用域环境和变量环境的区别在于：变量环境只持有使用\
+  \ `var` 关键字声明的变量的键值映射，而函数声明以及使用 `let` 声明的变量或 `const` 声明的常量位于作用域环境中。\n\n考虑以下代码：\n\
+  \n```\n1 let name = \"Jane Doe\";\n2 var age = 20;\n3 \n4 function introduce(name,\
+  \ age) {\n5   console.log(\"Hello, I am \" + name + \" and I am \" + age + \" years\
+  \ old\");\n6 }\n```\n\n上述代码在创建阶段的执行上下文在概念上可以可视化如如下所示：\n\n![global execution context](img/module_01----lesson_01.09----public----assets----gec-creation-phase.png)\n\
+  \n全局执行上下文\n\n### 执行阶段\n如前所述，在创建阶段之后，执行上下文中的不同变量尚未被赋予各自的值。赋值是在执行阶段完成的，代码在此最终执行。\n\
+  \n### 引用\n可以使用以下资源学习更多关于 JavaScript 执行上下文的内容：\n\n*   [理解 JavaScript 中的执行上下文和执行栈\
+  \ - (博客)](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0)\n\
+  *   [JavaScript 执行上下文 – JS 在后台是如何工作的 - (freeCodeCamp 博客)](https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/)\n\
+  *   [深入理解 JavaScript - 执行上下文 - (youtube 视频)](https://www.youtube.com/watch?v=Fd9VaW0M7K4)\n\
+  \n调用栈 (Call stack) 是 JavaScript 内部使用的一种结构，用于跟踪当前执行的代码段。调用栈仅仅是一个[栈](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))数据结构，通过跟踪当前执行的代码来辅助\
+  \ JavaScript 代码的执行。你也可以将 JavaScript 中的调用栈想象成执行上下文的集合。\n\n在执行任何 JavaScript 代码之前，会创建一个全局执行上下文并将其推入调用栈中。这可以使用浏览器开发者工具中的调试器轻松地可视化。\n\
+  \n![global execution context pushed on the callstack](img/module_01----lesson_01.10----public----assets----global-execution-context.png)\n\
+  \n全局执行上下文推入调用栈\n\n:::note\n`debugger` 关键字简单地创建一个断点，强制调试器停止在包含 `debugger` 关键字的行上。我们将在稍后的章节中介绍调试。\n\
+  :::\n\n注意，在上面的图像中，在执行 `console.log` 语句之前，调用栈中有一个名为“global”的项。这是在执行代码之前创建并推入调用栈的全局执行上下文。\n\
+  \n:::note\n“global”这个标签并不重要，不同的浏览器可能使用不同的标签来表示调用栈中的全局执行上下文。例如，Google Chrome 浏览器中的调试器显示为“(anonymous)”而不是“global”。上面的截图是\
+  \ Firefox 浏览器拍摄的。\n:::\n\n在将全局执行上下文推入调用栈后，代码执行过程中遇到的任何函数调用都会导致调用栈中出现更多条目。对于每一个函数调用，在函数开始之前会在调用栈中添加一个新条目，一旦函数执行结束，该条目就会从栈中弹出。考虑以下代码：\n\
+  \n```\n 1 function bar() {\n 2   console.log(\"hello world\");\n 3 }\n 4\n5 function\
+  \ baz() {\n 6   bar();\n 7 }\n 8 \n9 function foo() {\n10   baz();\n11 }\n12 \n\
+  13 foo();\n```\n\n在执行上述代码之前，全局执行上下文被推入调用栈中。\n\n![callstack](img/module_01----lesson_01.10----public----assets----callstack-1.png)\n\
+  \n调用栈\n\n一旦调用了 `foo` 函数，调用栈中就会添加一个用于执行 `foo` 函数的新条目。\n\n![callstack](img/module_01----lesson_01.10----public----assets----callstack-2.png)\n\
+  \n调用栈\n\n`foo` 函数包含了对 `baz` 函数的调用。因此，在 `baz` 函数调用之前，调用栈中会添加另一个条目。\n\n![callstack](img/module_01----lesson_01.10----public----assets----callstack-3.png)\n\
+  \n调用栈\n\n`baz` 函数包含了对 `bar` 函数的调用。因此，在 `bar` 函数调用之前，调用栈中会添加另一个条目。\n\n![callstack](img/module_01----lesson_01.10----public----assets----callstack-4.png)\n\
+  \n调用栈\n\n注意，调用栈顶部的元素代表当前正在执行的代码段。一旦 `bar` 函数执行结束，它在调用栈中的条目就会被移除。最终，代码执行完成，调用栈变为空。\n\
+  \n你可以在下面的 Replit 中运行上述代码以查看调用栈的操作原理：\n\n<ReplitEmbed src=\"https://replit.com/@newlineauthors/Lesson-9-callstack\"\
+  \ />\n\n### 栈溢出\n\n\n\n\n\n“栈溢出”（stack overflow）对于每位软件开发者来说都是一个熟悉的术语，这要么是因为开发者最喜欢的网站\
+  \ [stackoverflow](https://stackoverflow.com/)，要么是因为无限递归导致的栈溢出错误。\n\n我们将在调用栈（call\
+  \ stack）的背景下讨论“栈溢出”这个术语。调用栈具有固定的大小，可以包含有限数量的条目。\n\n那么，如果我们创建一个只调用自己的函数会发生什么？\n\n\
+  ```\n1 function foo() {\n2   foo();\n3 }\n```\n\n还记得函数被调用时会发生什么吗？调用栈会添加一个新的新条目。对于上述只调用自己且永远不会结束执行的函数，我们只是不断向调用栈中添加新条目，而从未移除任何条目。这就是无限递归，它会导致被称为\
+  \ `stack overflow` 的错误。当调用栈填充到极限且无法容纳更多条目时，就会抛此错误。\n\n互联网上有许多资源声称原始类型（primitives）分配在栈上，而对象分配在堆上，但实际事实并非如此简单。\n\
+  \n官方的 ECMAScript 规范并没有说明 JavaScript 引擎应该如何为不同类型的值分配内存，或者当程序不再需要内存时应该如何释放内存。因此，不同的\
+  \ JavaScript 实现可以自由选择它们希望如何处理 JavaScript 中的内存管理。\n\n所以，我们应该简单地相信原始值存储在栈上、对象存储在堆上，而应该理解为\
+  \ JavaScript 中的内存分配是一个实现细节，不同的 JavaScript 引擎可能会如何处理内存，因为语言规范并没有规定 JavaScript 中如何处理内存。\n\
+  \n例如，在 V8 引擎中，几乎所有内容都存储在堆上。来自 [官方 V8 博客](https://v8.dev/blog/pointer-compression#value-tagging-in-v8)\
+  \ 的引用否定了关于 JavaScript 内存分配的常见误解。\n\n> V8 中的 JavaScript 值表示为对象并分配在 V8 堆上，无论它是对象、数组、数字还是字符串。这允许我们把任何值表示为指向对象的指针。\n\
+  \n这并不意味着我们应该假设所有内容都分配在堆上。JavaScript 引擎可能会在堆上分配*大多数*值，但可以使用栈进行优化，并存储可能不会超过函数调用的临时值。\n\
+  \nJavaScript 引擎是经过高度优化的复杂软件。假设它们都遵循*原始类型在栈上，对象在堆上*的简单规则是不合理的。\n\n你从本节中获得的最重要点是，不同的\
+  \ JavaScript 引擎可能会以不同的处理内存，而“JavaScript 中的原始类型直接进入栈”是一个 `misconception`。\n\n###\
+  \ 延伸阅读\n\n* [揭秘 JavaScript 内存模型 - (博客)](https://www.zhenghao.io/posts/javascript-memory)\n\
+  * [JavaScript 变量由什么组成 - (博客)](https://www.zhenghao.io/posts/javascript-variables)\n\
+  * [JavaScript 为函数调用结果分配内存在哪里？栈还是堆？ - (stackoverflow 帖子)](https://stackoverflow.com/questions/67356107/where-does-javascript-allocate-memory-for-the-result-of-a-function-call-stack-o)\n\
+  \n### 自动垃圾回收\n\n与 C 等其他语言不同，在 C 语言中，程序员负责在需要时释放内存，而 JavaScript 通过自动处理内存减轻了程序员的工作。\n\
+  \n不再需要的内存由 JavaScript 引擎自动释放，这个过程被称为 `garbage collection`（垃圾回收）。现代 JavaScript 引擎包含一个垃圾回收器，负责确定哪些内存部分不再需要并且可以释放。一旦确定了这些内存块，垃圾回收器就会释放这些块。\n\
+  \n使用不同的算法来确定哪些内存块不再需要并符合垃圾回收条件。目前，现代 JavaScript 引擎使用 [标记-清除算法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#mark-and-sweep_algorithm)。\n\
+  \n该算法确定哪些内存块是“不可到达”的；这些内存块被认为可以进行回收。该算法是对[引用计数算法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management#reference-counting_garbage_collection)的改进，后者具有局限性。\n\
+  \nJava 语言也有自动垃圾回收机制，但在 Java 中，程序员可以手动触发垃圾回收过程，而 JavaScript 程序员对垃圾回收没有这种级别的控制。有些人可能认为这是一种局限性，但无疑，自动垃圾回收确实有助于程序员避免在不自动处理的语言中经常遇到的内存泄漏。\n\
+  \n### 提升 (Hoisting)\n\n在 JavaScript 中，可以在实际声明*之前*访问变量和函数，JavaScript 中描述这种现象的术语是“`Hoisting`”（提升）。\n\
+  \n#### “var” 声明\n\n“提升”一词主要与函数声明和使用 `var` 关键字声明的变量相关。让我们来看看*提升*是如何与 `var` 变量关联的。\n\
+  \n考虑以下代码示例：\n\n```\n1 console.log(result); // undefined\n2 var result = 5 + 10;\n\
+  ```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example1”\
+  \ />\n\n上述代码的输出显示了*提升*的生效。上述代码的第一行在控制台上输出了 `undefined`，但这是如何可能的？我们为什么能在 `result`\
+  \ 变量在第二行被声明之前访问它？\n\n这种可能性是因为代码执行之前的 `parsing`（解析）步骤。执行前的预处理允许 JavaScript 引擎在执行任何代码之前检测某些错误。以下代码示例展示了这一点：\n\
+  \n```\n1 function print(obj) {\n2   console.log(obj;    // error\n3 }\n4 \n5 console.log(\"\
+  hello world\");\n```\n\n这是运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example2”\
+  \ />\n\n如果没有对代码进行任何预处理，JavaScript 引擎在调用 `print` 函数之前无法检测到内部的语法错误，上述代码应该在控制台上打印“hello\
+  \ world”而不会抛出任何错误，因为包含语法错误的函数尚未被调用。但上述代码抛出了错误而不是打印“hello world”。为什么呢？答案是代码执行之前的处理步骤。\n\
+  \nJavaScript 引擎在执行代码之前会扫描代码，使其能够在执行任何代码之前检测某些错误。这还允许引擎通过注册作用域内声明的变量来处理变量声明。在任何作用域开始之前，作用域内声明的所有变量都会为该作用域注册。换句话说，在作用域内的代码执行之前，作用域内声明的所有变量都已为该作用域保留。这种执行前的代码预处理正是*提升*产生。这允许我们能够在代码声明之前引用\
+  \ `var` 变量。\n\n让我们回到上面那个在控制台上输出 `undefined` 的代码示例：\n\n```\n1 console.log(result);\
+  \ // undefined\n2 var result = 5 + 10;\n```\n\n\n\n\n如果 `var` 变量被“提升（hoisted）”，并且我们可以在声明`之前`\
+  \ 引用它们，那么为什么控制台打印的是 `undefined` 而不是 `result` 变量的实际值（本应该是 15）呢？\n\n`var` 变量提升的之处在于，只有它们的`声明`被提升了，而不是它们的值。这些变量被赋值为\
+  \ `undefined`，而实际值（在上面的代码示例中为 15）是在代码逐步执行过程中执行声明时被赋值的。\n\n## 函数声明\n\n函数声明与使用 `var`\
+  \ 关键字声明的变量一样，也会提升。下面的代码示例展示了函数声明提升的作用：\n\n```\n1 startCar(); // starting the car...\n\
+  2 \n3 function startCar() {\n4   console.log(\"starting the car...\");\n5 }\n```\n\
+  \n这里是运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example4”\
+  \ />\n\n如果 `var` 变量在声明执行之前被赋值为 `undefined`，我们为什么能在声明`之前`调用该函数呢？函数声明的提升与使用 `var`\
+  \ 关键字声明变量的提升有何不同？区别在于，在函数声明的情况下，函数名注册为包含该声明的作用域中的变量，并用函数本身进行初始化。\n\n在上面的代码示例中，`startCar`\
+  \ 被注册为全局作用域中的变量，并被赋值为函数。与 `var` 变量不同，函数声明没有使用 `undefined` 值进行初始化。\n\n在看到函数声明提升之前，很难看出提升对于编程语言是一项有特性。能够在函数声明之前或之后调用函数是非常用的，它让开发者无需特意安排代码顺序，使得每个函数声明都出现在调用`之前`。这有助于代码组织，因为我们可以将函数统一写在代码文件的顶部或底部，并在文件的任何地方调用它们。\n\
+  \n## 块内部的函数声明\n\n长期以来，块内部的函数声明并不是 ECMAScript 规范的一部分，但这种情况随着 ES2015 的引入而发生了改变。由于函数声明在\
+  \ 2015 年之前并不是规范的一部分，但 JavaScript 引擎允许这种写法，因此不同的引擎对其处理方式不同。\n\n在 ES2015 中，ECMAScript\
+  \ 规范为处理函数声明定义了`标准（standard）`和`遗留（legacy）`规则。\n\n### 标准规则\n\n根据标准规则，块内部的函数声明会被`提升`到块顶部，转换为函数表达式，并赋值给用\
+  \ `let` 关键字声明的变量。\n\n在块内部提升的函数仅限于包含它的块，无法由包含该函数之外的代码访问。\n\n:::note\n需要注意的是，标准规则仅在[严格模式（strict\
+  \ mode）](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)生效。\n\
+  :::\n\n下面的代码示例将帮助你更好地理解块内部函数声明的标准规则：\n\n```\n 1 \"use strict\";\n 2 \n3 function\
+  \ process() {\n4   if (true) {\n5     console.log(\"processing...\");\n6 \n7   \
+  \  function fnInsideBlock() {\n8       console.log(\"I am inside a block\");\n9\
+  \     }\n10   }\n11 }\n```\n\n根据标准规则，`if` 块内部的函数应该像下面一样处理：\n\n```\n 1 \"use strict\"\
+  ;\n 2 \n3 function process() {\n4   if (true) {\n5     let fnInsideBlock = function\
+  \ fnInsideBlock() {\n6       console.log(\"I am inside a block\");\n7     };\n8\
+  \ \n9     console.log(\"processing...\");\n10   }\n11 }\n```\n\n上述代码中的 `fnInsideBlock`\
+  \ 函数只能在 `if` 块内部调用。\n\n### 遗留规则\n\n[遗留规则](https://262.ecma-international.org/13.0/#sec-block-level-function-declarations-web-legacy-compatibility-semantics)应用于网络浏览器中的非严格代码。根据遗留规则，除了块内函数声明的\
+  \ `let` 变量外，在包含函数的作用域中还有一个 `var` 变量。\n\n让我们取上节代码示例并添加函数调用：\n\n```\n 1 \"use strict\"\
+  ;\n 2 \n3 function process() {\n4   if (true) {\n5     console.log(\"processing...\"\
+  );\n6 \n7     function fnInsideBlock() {\n8       console.log(\"I am inside a block\"\
+  );\n9     }\n10   }\n11 \n12   fnInsideBlock();\n13 }\n14 \n15 process(); // error\n\
+  ```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example7”\
+  \ />\n\n由于上述代码在严格模式下执行，因此适用标准规则；结果是上述代码抛错误，因为正如上节解释，块内部的函数被提升到包含它的作用域顶部，且只能在块块内部访问。\n\
+  \n\n\n\n虽然我们可以在函数声明*之前*访问它的声明，但在类声明的情况下，我们不能这样做。难道不意味着类声明没有被提升吗？不，它们确实被提升了，但方式*不同相同*。\n\
+  \n让我们先通过以下代码示例来验证类声明确实被提升了：\n\n```\n1 let Car = \"Honda\";\n2 \n3 if (true) {\n\
+  4   console.log(typeof Car); // error\n5 \n6   class Car {}\n7 }\n```\n\n这是一个演示上述代码的\
+  \ Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example9”\
+  \ />\n\n上面的代码抛出了错误，这证明了类声明确实被提升了。\n\n如果类声明没有被提升，那么 `console.log` 函数调用本应该向控制台打印“Honda”，但事实并非如此。这是因为\
+  \ `if` 块内部的类声明被提升了，在块内部 `Car` 声明之前或之后，任何访问 `Car` 的代码访问的都是类声明，而不是 `if` 语句上方定义的 `Car`\
+  \ 变量。`if` 块内部的标识符 `Car` 指向类声明而非 `if` 语句之前定义的 `Car` 变量，这一事实证明了类声明确实被提升了。\n\n所以，如果类声明被提升了，为什么我们不能在声明*之前*访问它们呢？这个问题的答案是“暂时性死区\
+  \ (TDZ)”。\n\n## Temporal Dead Zone (TDZ)\n\n[Temporal Dead Zone (TDZ)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz)\
+  \ 指块作用域变量（`let`, `const`）或类声明无法被访问的时间。这段时间从作用域开始到声明执行。以下代码示例将帮助我们可视化 TDZ：\n\n```\n\
+  1 {\n2   // TDZ start\n3   console.log(\"hello\");\n4   console.log(\"world\");\n\
+  5   let count = 5; // TDZ end\n6 \n7   // TDZ 结束后可以访问 \"count\"\n8 }\n```\n\nTDZ\
+  \ 是在代码逐步执行过程中，无法在声明执行之前访问类声明的原因。\n\n### let and const\n\n由于 TDZ 也适用于 `let` 和 `const`，那么使用\
+  \ `let` 定义的变量或使用 `const` 定义的常量是否也被提升了？是的，它们也被提升了，但与类声明一样，由于 TDZ 的存在，它们的提升方式*不同*。\n\
+  \n:::info\n\n常见的误区认为块作用域变量和常量没有被提升，但正如我们上面讨论的，它们被提升了；只是它们的提升与使用 `var` 关键字声明的变量的提升相比*不同*。\n\
+  \n:::\n\n```\n1 var count = 5;\n2 \n3 {\n4   console.log(count); // 提升由于 TDZ 无法访问\n\
+  5   let count = 10;\n6 }\n```\n\n你可以在下面的 Replit 中看到上述代码示例的效果：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example11”\
+  \ />\n\n## Function and class expressions\n\n函数表达式和类表达式没有被提升。考虑以下代码示例：\n\n```\n\
+  \ 1 console.log(typeof Car); // undefined\n 2 console.log(typeof Person); // undefined\n\
+  \ 3 \n4 var Car = class {\n 5   constructor(model) {\n 6     this.model = model;\n\
+  \ 7   }\n 8 };\n9\n10 var Person = function (name) {\n11   this.name = name;\n12\
+  \ };\n```\n\n这是 Replit 中上述代码示例的效果：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/hoisting-example12”\
+  \ />\n\n在上面的代码示例中，由于变量 `Car` 和 `Person` 使用 `var` 关键字声明，我们可以在它们的声明*之前*访问它们，并且它们的值为\
+  \ `undefined`。这是因为只有声明被提升了，而值没有。在上面的代码示例中，值是表达式，它们没有被提升。\n\n如果我们尝试创建一个 `Car` 类的实例或调用\
+  \ `Person` 构造函数，将会得到错误。值得注意的是，在这种情况下得到的错误不是引用错误（即在遇到未声明标识符时抛出的错误），而是类型错误（TypeError），这是因为\
+  \ `Car` 和 `Person` 被提升并初始化为值 `undefined`，而我们不能将 `undefined` 作为构造函数调用。请记住，在这种情况下只有声明被提升了，值没有。\n\
+  \n提升可能是一个难以理解的概念，特别是对于初学者，因为提升与 `var` 变量、函数声明以及 ES2015 变化（即块作用域变量/常量和 ES2015 类）之间的关联存在差异。\n\
+  \n## 关于提升的常见误区\n\n许多 JavaScript 初学者对提升概念有一个误区，即认为 JavaScript 引擎会将提升的声明*移动*到文件的顶部。虽然这使得提升概念变得容易理解，但事实并非如此。\n\
+  \nJavaScript 引擎并没有将提升的声明移动到文件顶部。相反，它们只是在代码逐步执行之前处理这些声明。\n\n## Scope (作用域)\n\n作用域是计算机科学中的通用概念，指的是变量、函数等可见的部分。也就是说，作用域是程序中可以引用的部分。现代\
+  \ JavaScript 有四种主要的作用域：\n\n*   全局作用域 (Global scope)\n*   函数作用域 (Function scope)\n\
+  *   块作用域 (Block scope)\n*   模块作用域 (Module scope)\n\n### Lexical scope (词法作用域)\n\n\
+  在讨论上述 JavaScript 中的作用域之前，我们需要理解什么是“词法”作用域。在 JavaScript 中，不同标识符（变量等）的作用域是在编译时确定的。这意味着在代码逐步执行之前，JavaScript\
+  \ 引擎通过分析代码结构来确定不同声明的作用域。\n\n作用域可以嵌套在其他作用域中，每个嵌套作用域都可以访问外部或父级作用域。\n\n```\n1 const\
+  \ myName = \"John doe\";\n2 \n3 function hello() {\n4   const greeting = \"hello\
+  \ \" + myName;\n5   console.log(greeting);\n6 }\n```\n\n在上面的代码示例中，有三个不同的声明：\n\n\
+  *   `myName` 变量声明\n\n*   `hello` 函数声明\n\n    *   `greeting` 变量声明\n\n上述声明的作用域取决于它们在代码结构中的写法。`myName`\
+  \ 变量和 `hello` 函数都在全局作用域中，因此在上面的代码中全局可可用。`greeting` 变量声明在 `hello` 函数内部，因此它的作用域局限于\
+  \ `hello` 函数。\n\n\n\n\n\n```javascript\n1 var todoList = [\"grocery\", \"exercise\"\
+  , \"meeting\"];\n2 \n3 function emptyTodoList() {\n4   todoList = [];\n5 }\n6 \n\
+  7 console.log(window.hasOwnProperty(\"todoList\")); // true\n8 console.log(window.hasOwnProperty(\"\
+  emptyTodoList\")); // true\n```\n\n如果 `todoList` 是使用 `let` 或 `const` 声明，它就不会被添加到\
+  \ `window` 属性上，但它仍然是一个全局变量。同样，如果 `emptyTodoList` 是一个函数表达式而不是函数声明，并且引用该函数表达式的标识符是使用\
+  \ `let` 或 `const` 声明的，它也不会成为 `window` 对象的属性。相反，它只是一个全局函数表达式。\n\n```javascript\n\
+  1 const todoList = [\"grocery\", \"exercise\", \"meeting\"];\n2 \n3 let emptyTodoList\
+  \ = function () {\n4   todoList = [];\n5 };\n6 \n7 console.log(window.hasOwnProperty(\"\
+  todoList\")); // false\n8 console.log(window.hasOwnProperty(\"emptyTodoList\"));\
+  \ // false\n```\n\n### 避免污染全局作用域\n\n“避免污染全局作用域” —— 作为一名 JavaScript 开发人员，你可能已经过这个建议，或者迟早会从别人那里听到。但“污染”全局作用域意味着什么？为什么要避免它？\n\
+  \n在全局作用域中（不必要地）声明一切被视为“污染”全局作用域。在全局作用域中过多的声明会导致意外的问题。\n\n全局作用域是所有其他作用域的父作用域；因此，全局作用域内的声明对所有其他作用域都是可见的。这可能会导致变量名冲突、屏蔽等问题。全局作用域的另一个特点是它在应用程序关闭之前不会被销毁，所以如果我们不小心，全局作用域中的声明无论是否需要，都会一直留在内存中，直到应用程序关闭。\n\
+  \n尽管如此，全局作用域中的声明通常是不可避免的。因此，我们能做的最好就是尽可能避免全局作用域。将全局声明减少到最低。如果一个变量只在函数内部使用，就没有必要在全局作用域中声明它。\n\
+  \n所以，如果你以前没听过，现在你听到了：*“避免污染全局作用域。”*\n\n### 隐式全局变量\n\nJavaScript 语言有很多特性。其中之一就是全局变量的隐式创建。每当对一个*未声明*的变量进行赋值时，JavaScript\
+  \ 将把该未声明的变量声明为**全局**变量。这很可能是程序员的错误，JavaScript 并没有抛出错误，而是通过自动声明同名的全局变量来隐藏这个错误。\n\n\
+  ```javascript\n1 function printSquare(num) {\n2   result = num * num;\n3   console.log(result);\
+  \ // 64\n4 }\n5 \n6 printSquare(8);\n7 \n8 console.log(\"implicit global: \" + result);\
+  \ // WHAT??!!\n```\n\n这是上述代码在 Replit 中的运行：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/global-scope-example3”\
+  \ />\n\n注意变量 `result` 没有声明。它被赋值了乘法结果，就像它已经声明了一样。通常情况下你会预期错误，但 JavaScript 会为你将 `result`\
+  \ 声明为全局变量。\n\n需要提到的是，这种行为只发生在非严格模式下。在严格模式下，正如预期的那样，JavaScript 会抛出一个错误，通知程序员对未声明的变量进行了赋值。\n\
+  \n这也是始终在严格模式下编写 JavaScript 代码的原因之一。使用严格模式可以防止 JavaScript 的这种令人困的行为进入我们的代码。\n\n###\
+  \ HTML 属性\n\n除了给未声明变量赋值外，我们还有另一种方式获取*隐式*全局变量。HTML 元素的 `id` 属性或 `name` 属性的值也会作为变量添加到\
+  \ JavaScript 的全局作用域中。\n\n```html\n1 <h1 id=\"mainHeading\">Hello World!</h1>\n```\n\
+  \n上述 `h1` 元素的 `id` 会作为变量添加到全局作用域中。我们可以在 JavaScript 代码中使用 `mainHeading` 变量来访问 `h1`\
+  \ 元素。这种功能被称为 [Window 对象上的具名访问](https://html.spec.whatwg.org/multipage/nav-history-apis.html#named-access-on-the-window-object)。\n\
+  \n这种特性最早由 Internet Explorer 浏览器引入的，随后逐渐在其他浏览器中实现，仅仅是为了兼容性考虑。有些网站依赖于这种行为，所以为了向后兼容，浏览器别选择实现这种行为。\n\
+  \n尽管大多数浏览器都支持此特性，但不应该依赖它，我们应该始终使用标准机制来定位 HTML 元素。应该使用 `getElementById` 或 `querySelector`\
+  \ 等函数，而不是依赖这种行为。\n\n编写依赖此特性的代码是一个坏主意，因为它会导致代码难以阅读和维护。想象一下在代码中看到一个标识符却无法识别它是哪里声明的。这样的代码容易与代码中的其他变量发生名称冲突。此外，请记住，依赖于\
+  \ HTML 标记的代码在 HTML 标记发生变化时很容易崩溃。简而言之，避免依赖此特性，并在 JavaScript 代码中用更好的替代方案来定位 HTML 元素。\n\
+  \n### 延伸阅读\n\n*   [Global Variables are Bad - (article)](http://wiki.c2.com/?GlobalVariablesAreBad)\n\
+  *   [Do DOM tree elements with IDs become global properties? - (stackoverflow post)](https://stackoverflow.com/questions/3434278/do-dom-tree-elements-with-ids-become-global-properties)\n\
+  \n函数作用域指的是函数体内部的代码区域。函数作用域从函数体的左大括号开始，在右大括号之前结束。函数作用域内的声明仅限于该函数的作用域，外部代码无法直接访问。\n\
+  \n### 屏蔽声明（Shadowing）\n\n嵌套作用域内的声明可以“屏蔽”外层作用域中*相同*的声明。这被称为“声明屏蔽（shadowing declaration）”或简单的“屏蔽”。\n\
+  \n考虑以下代码示例：\n\n```javascript\n1 let hobby = \"reading\";\n2 \n3 function printHobbies()\
+  \ {\n4   const hobby = \"traveling\";\n5   console.log(hobby); // traveling\n6 }\n\
+  7 \n8 printHobbies();\n```\n\n这是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/function-scope-example1”>\n\
+  \n函数内部的变量 `hobby` 屏蔽了全局作用域中声明的 `hobby` 变量。\n\n通常情况下，屏蔽其他声明会降低代码的可读性。它还可能导致嵌套作用域内部无法访问被屏蔽的声明。考虑以下代码示例：\n\
+  \n```javascript\n1 let prefix = \">\";\n2 \n3 function log(logLevel, msg) {\n4 \
+  \  let prefix = \":::\";\n5   console.log(`${prefix} ${logLevel} : ${msg}`);\n6\
+  \ }\n7 \n8 log(\"debug\", \"error caught\"); // ::: debug : error caught\n```\n\n\
+  这是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/function-scope-example2”>\n\
+  \n在上面的代码示例中，我们屏蔽了全局作用域中声明的 `prefix` 变量，`log` 函数内部无法访问全局 `prefix` 变量。\n\n> **注意**：记住全局作用域中的\
+  \ `var` 声明会被添加到 `window` 属性上。因此，如果全局 `prefix` 变量是使用 `var` 关键字声明的，我们可以通过 `window.prefix`\
+  \ 被屏蔽的变量。\n\n### 函数参数作用域\n\n常见的误区认为函数参数定义在函数的局部作用域中，或者参数的行为像是在函数的局部作用域中定义的一样，但事实并非总是如此。\n\
+  \n\n\n\n\n首先，我们需要区分“简单”和“非简单”参数列表。如果函数参数的定义方式使用了 ES2015+ 特性，例如[默认参数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)、[解构赋值](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)或[剩余参数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)，那么这些参数被视为`非简单`参数；如果参数没有使用这些任何一项特性，则它们被视为`简单`参数。\n\
+  \n```\n1 function simpleParameters(val1, val2) {\n2   // code...\n3 }\n4 \n5 function\
+  \ nonSimpleParameters(val1 = 12, ...restParams) {\n6   // code...\n7 }\n```\n\n\
+  如果参数是简单的，它们就像是在函数的局部作用域中声明一样；但如果参数是非简单的，它们是在它们自己的作用域中声明的。非简单参数的作用域可以被看作位于函数作用域和包含函数的作用域之间。\n\
+  \n如果带有非简单参数的函数定义在全局作用域中，它的参数作用域在概念上可以可视化所示所示：\n\n![函数参数作用域](img/module_03----lesson_03.03----public----assets----parameter-scope.png)\n\
+  \n函数参数作用域\n\n以下代码示例证明了非简单参数确实存在于与函数局部作用域不同的作用域中：\n\n```\n1 function paramScope(arr\
+  \ = [\"initial array\"], buff = () => arr) {\n2   var arr = [1, 2, 3];\n3   console.log(arr);\
+  \ // [1, 2, 3]\n4   console.log(buff()); // [\"initial array\"]\n5 }\n6 \n7 paramScope();\n\
+  ```\n\n上述代码的 Replit 版本：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/function-scope-example4”>\n\
+  \n上述代码示例中的 `paramScope` 函数有一个非简单参数列表；第一个参数 `arr` 有一个数组作为默认值，而第二个参数 `buff` 有一个函数作为其默认值。\n\
+  \n在函数内部，有一个与 `paramScope` 函数第一个参数同名的 `var` 声明。函数内部的两个 `console.log` 调用向控制台记录了两个不同的值；为什么呢？为什么\
+  \ `buff` 参数返回的是 `arr` 参数的默认值，而不是函数局部作用域内 `arr` 的值？\n\n答案是 `arr` 参数和函数内部的 `arr` 变量是两个位于不同作用域的两个变量。函数内部的\
+  \ `arr` 遮蔽了 `arr` 参数，但调用 `buff` 函数返回的是参数 `arr`。如果参数和局部 `arr` 是同一个变量，那么 `buff` 函数将返回\
+  \ `[1, 2, 3]` 而不是 `arr` 参数的默认值。\n\n移除函数内部的 `var` 关键字以显示不同的输出：\n\n```\n1 function\
+  \ paramScope(arr = [\"initial array\"], buff = () => arr) {\n2   arr = [1, 2, 3];\n\
+  3   console.log(arr); // [1, 2, 3]\n4   console.log(buff()); // [1, 2, 3]\n5 }\n\
+  6 \n7 paramScope();\n```\n\n上述代码的 Replit 版本：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/function-scope-example5”>\n\
+  \n现在函数内部的 `arr` 指的是 `arr` 参数，因此函数内部对 `arr` 的任何赋值在调用 `buff` 函数会被反映。\n\n### 函数表达式名称作用域\n\
+  \n函数表达式大部分写为匿名函数表达式，如下：\n\n```\n1 let fn = function () {\n2   // code ...\n3 };\n\
+  ```\n\n这是一个赋值给变量 `fn` 的匿名函数表达式。\n\n我们也可以像下面所示写一个`具名的`函数表达式：\n\n```\n1 let fn = function\
+  \ namedFn() {\n2   // code ...\n3 };\n```\n\n在上述代码示例中，函数表达式的名称 `namedFn` 仅在函数体内可访问。因此，有些人可能会错误地认为命名函数表达式的名称是在函数体内声明的，但这不是正确的；该名称是在`不同`作用域中声明的。以下代码证明了这一观点：\n\
+  \n```\n1 let fn = function namedFn() {\n2   let namedFn = 123;\n3   console.log(namedFn);\n\
+  4 };\n```\n\n上述代码的 Replit 版本：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/function-scope-example8”>\n\
+  \n`let` 不允许重复声明变量。所以如果 `nameFn` 是在函数作用域内声明的，那么上述代码示例应该抛出错误；相反，并没有错误，这是合法的代码。函数体内的\
+  \ `nameFn` 实际上遮蔽了函数表达式的名称。\n\n命名函数表达式的名称作用域嵌套在包含函数表达式的作用域和函数表达式之间。\n\n#### 扩展阅读\n\
+  \n- [参数在词法环境中的位置在哪里？](https://stackoverflow.com/questions/6120843/where-are-arguments-positioned-in-the-lexical-environment/)\n\
+  - [隐式作用域](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-apied)\n\
+  - [命名函数表达式 (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#function_expression)\n\
+  \n### 块级作用域\n\nJavaScript 中的块级作用域指的是存在代码块之间的作用域，例如 `if` 块或循环。\n\n在 JavaScript 语言添加块级\
+  \ `let` 和 `const` 之前，在块中使用 `var` 定义的变量在块外部是可以的。这是因为使用 `var` 声明的变量具有函数作用域。然而，使用 `let`\
+  \ 和 `const` 声明的变量限于所在的块，除非它们在全局作用域中声明。\n\n块级 `let` 和 `const` 解决了块外不必要的暴露、循环闭包等问题。我们将在与闭包相关的模块中讨论循环闭包问题。\n\
+  \n关于块级作用域的另一个点是块内的声明是如何处理的。这在与提升相关的模块中讨论过。\n\n### 模块作用域\n\n模块也是近年来添加到 JavaScript\
+  \ 的特性之一。模块解决了涉及多个 JavaScript 文件的代码库中的许多管理问题。\n\nES 模块内部的代码存在于模块作用域中。也就是说，模块内部的声明属于模块，不会暴露到模块外部，除非是显式导出的代码。模块顶层的声明受限于模块，而不是全局作用域的一部分。\n\
+  \n#### 扩展阅读\n\n- [JavaScript 模块 (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#other_differences_between_modules_and_standard_scripts)\n\
+  \n### 作用域链\n\n不同的作用域可以嵌套在其他作用域中，形成作用域链。\n\n每当创建一个新的作用域，它都会与其闭包作用域链接。不同作用域之间的这种链接创建了一个作用域链，可以用于查找当前作用域中找不到的标识符。\n\
+  \n\n\n\n当在特定作用范围内遇到标识符时，JavaScript 引擎会在当前作用域的父作用域查找该变量的声明。如果在父作用域中未找到声明，JavaScript\
+  \ 引擎将在父作用域的外部（父）作用域中查找该变量声明。这种遍历作用域链的过程将持续进行，直到到达全局作用域且没有其他作用域可以查找声明。\n\n考虑以下代码示例：\n\
+  \n```\n 1 const myName = \"John doe\";\n 2 \n 3 function hello() {\n 4   const greeting\
+  \ = \"hello \" + myName;\n 5 \n 6   function greet() {\n 7     console.log(greeting);\n\
+  \ 8   }\n 9 \n10   greet();\n11 }\n12 \n13 hello();\n```\n\n你可以在这个 Replit 中预览上面的代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/scope-chain-example1”>\n\n\
+  调用 `hello` 函数产生的作用域链在概念上可以可视化所示：\n\n![scope chain](img/module_03----lesson_03.06----public----assets----scope-chain.png)\n\
+  \n作用域链\n\n作用域链允许查找在当前作用域中未声明的标识符。\n\n#### 优化作用域链查找\n\n现代 JavaScript 应用包含许多 JavaScript\
+  \ 代码，这些代码必须在最短的时间内编译并执行，以确保应用用户不会遇到糟糕的性能。因此，现代 JavaScript 引擎对我们编写的 JavaScript 代码进行了大量优化，使其能够尽可能高效地执行。在代码执行之前的转换过程中，对其进行了不同的优化。优化不仅限于代码执行之前的步骤，代码在执行过程中也会进行优化（回想\
+  \ JIT 编译）。\n\n由于 JavaScript 的作用域是在编译时确定的，在大多数情况下，这些信息允许 JavaScript 引擎避免在代码执行期间遍历作用域链。如果\
+  \ JavaScript 已经知道特定变量定义在哪个作用域中，那么每当在当前作用域找不到特定变量声明时都遍历作用域链将是非常低效的。\n\n所以，除非变量的作用域无法在编译时确定，否则\
+  \ JavaScript 引擎不需要在运行时遍历作用域链。然而，可能会某些某些标识符的作用域在编译时无法确定；在这些情况下，JavaScript 引擎只能在运行时遍历作用域链来确定该标识符定义在哪个作用域。\n\
+  \n##### 进阶阅读\n\n*   [作用域链](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/ch3.md)\n\
+  \n## 强制转换 (Coercion)\n\nJavaScript 中的强制转换是将一种类型的值转换为另一种类型的值的过程。\n\n[MDN 定义强制转换](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)\
+  \ 为：\n\n> 类型强制转换是将值从一种数据类型到另一种数据类型的自动或隐式转换（例如从字符串到数字）。\n\n根据 MDN 的定义，如果值的转换是隐式的，那么它就是强制转换，而类型转换可以是隐式的也可以是显式的。\n\
+  \n所以，如果开发者表达了将一种类型的值转换为另一种的意图，那么它就是类型转换。以下代码示例是显式类型转换的示例：\n\n```\n1 const age =\
+  \ Number(ageStr);\n```\n\n如果类型转换是隐式的，即开发者没有表达将任何值转换为另一个值的意图，那么它就是隐式类型转换或强制转换。以下是强制转换的示例：\n\
+  \n```\n1 const result = \"50\" - 20; // 30\n```\n\n每当 JavaScript 在期望不同类型值的上下文中看到一种类型的值时，它会尝试强制转换或将该值转换为期的类型。在上面的代码示例中，`\"\
+  50\"` 是非预期的类型，因为操作是减法。减法发生在数字之间，而不是字符串和数字之间。因此，`\"50\"` 作为一个非预期的值，被转换为数字，即 `50`。\n\
+  \n然而，可能有人认为，在动态类型语言中，任何类型的转换都可以被视为强制转换。此外，隐式和显式类型转换之间的区别取决于人们如何看待隐式和显式类型转换。\n\n\
+  尽管如此，重要的是我们要理解 JavaScript 中的类型转换过程。本模块的目标是帮助你理解 JavaScript 如何将一种类型的值转换为另一种类型，并让类型转换（隐式或显式）不再那么可怕。\n\
+  \n强制转换是许多 JavaScript 开发者通常会误解的话题之一，这是因为大多数在线资源都建议避开强制转换，并将其呈现为一个应该避免的主题，而不是花时间去理解它并在尽可能利用它。\n\
+  \n让许多 JavaScript 开发者（尤其是初学者）对强制转换感到恐惧的原因是，对这个主题需要更多的理解。强制转换被呈现为一种比理解更好的避免的 JavaScript\
+  \ 特性。\n\n强制转换是 JavaScript 的核心话题之一，理解它它是深入理解 JavaScript 的关键。无论有多少在线资源告诉你要避开这个主题，只要你使用\
+  \ JavaScript，它就是不可避免的。与其避开它，为什么不努力理解它呢？考虑到这一点，在本模块中，我们将更深入地探讨这个主题，希望在模块结束时，你将对类型强制转换有坚实的理解。\n\
+  \n强制转换是 JavaScript 的核心话题之一，理解它它是深入理解 JavaScript 的关键。无论有多少在线资源告诉你要避开这个主题，只要你使用 JavaScript，它就是不可避免的。所以，与其避开它，为什么不尝试理解它呢？考虑到这一点，在本模块中，我们将更深入地探讨这个主题，希望在模块结束时，你将对类型强制转换有坚实的理解。\n\
+  \n为了深入理解强制转换，我们需要理解 JavaScript 如何将一种类型的值转换为另一种类型。我们需要理解 JavaScript 执行类型转换所采取的算法或步骤。\n\
+  \n为了深入探讨强制转换的世界，让我们理解以下内容：\n\n*   抽象操作\n*   抽象相等操作符 (`==`)\n*   加法操作 (`+`)\n*  \
+  \ 关系运算符 (`<`, `>`, `<=`, `>=`)\n\n理解上述主题将有助于我们为 JavaScript 的类型转换奠定基础。所以，话不多说，让我们从理解列表中的第一项开始，即：抽象操作。\n\
+  \nECMAScript 规范记录了多种用于 JavaScript 语言将一种类型的值转换为另一种类型值的机制。这些机制被称为“抽象操作”；抽象意味着它们不是可以由\
+  \ JavaScript 代码引用或调用的真实函数；相反，它们只是语言内部用于执行类型转换的算法。\n\n这些抽象操作在规范中被写得像实际函数一样。例如 `operationName(arg1,\
+  \ arg2, ...)`，但规范说明抽象操作是算法而不是可以调用的实际函数。\n\nECMAScript 规范中提许多[抽象操作](https://262.ecma-international.org/13.0/#sec-abstract-operations)，但一些与强制转换相关的常用操作如下：\n\
+  \n*   ToPrimitive\n*   ToNumber\n*   ToString\n*   ToBoolean\n\n尽管上述抽象操作的名字是自而易明的，但让我们理解它们究竟如何帮助类型转换。\n\
+  \n### ToPrimitive\n\n\n\n\n\n[ToPrimitive](https://262.ecma-international.org/13.0/#sec-toprimitive)\
+  \ 抽象操作用于将对象转换为原始值。该操作接受两个参数：\n\n* `input`：一个需要转换为原始值的对象。\n* `preferredType`：可选的第二个参数，指定在将对象转换为原始值时优先考虑的类型。\n\
+  \n### OrdinaryToPrimitive\n\n该操作调用了另一个名为 [OrdinaryToPrimitive](https://262.ecma-international.org/13.0/#sec-ordinarytoprimitive)\
+  \ 的抽象操作来执行实际转换，它也接受两个参数：\n\n* `O`：一个需要转换为原始值的对象。\n* `hint`：在将对象转换为原始值时优先考虑的类型。\n\
+  \n`ToPrimitive` 抽象操作会调用 `OrdinaryToPrimitive` 抽象操作，将待转换为原始值的对象作为第一个参数传递，第二个参数 `hint`\
+  \ 根据下文的 `preferredType` 参数的值设置：\n\n* 如果 `preferredType` 为“string”，则将 `hint` 设置为\
+  \ string。\n* 如果 `preferredType` 为“number”，则将 `hint` 设置为 number。\n* 如果 `preferredType`\
+  \ 未指定，则将 `hint` 设置为 number。\n\nJavaScript 中的每个对象都从位于继承层级顶端的对象（即 `Object.prototype`\
+  \ 对象）继承了以下两个方法：\n\n* `toString()`\n* `valueOf()`\n\n#### toString()\n\n`toString`\
+  \ 方法用于将对象转换为字符串表示。`toString` 方法的默认行为是将对象转换为以下（并没那么用的）形式：\n\n```javascript\n1 const\
+  \ obj = { a: 123 };\n2 obj.toString(); // [object Object]\n```\n\n以下是上述代码的运行示例：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example1”\
+  \ />\n\n由于 `toString` 方法的默认实现完全没有用，不同的对象会重写此方法以使其输出更有用。例如，内置的 `Date` 对象在转换为字符串时，会输出人类可读的日期字符串表示：\n\
+  \n```javascript\n1 new Date().toString(); // Sat Feb 04 2023 20:44:23 GMT+0500\n\
+  ```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example2”\
+  \ />\n\n#### valueOf()\n\n`valueOf` 方法用于将对象转换为原始值。该方法的默认实现和 `toString` 方法一样是无用的，因为它只是返回调用该方法的对象。\n\
+  \n```javascript\n1 const arr = [];\n2 arr.valueOf() === arr; // true\n```\n\n以下是上述代码的运行示例：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example3”\
+  \ />\n\n它的设计是为了被其他对象重写。许多内置对象都重写了此方法。例如，对于 `Date` 对象，该方法返回自 UTC 1970 年 1 月 1 日午夜以来的毫秒数。\n\
+  \n```javascript\n1 // 毫秒数会因人而异\n2 // 取决于你执行代码的时间\n3 new Date().valueOf(); // 16755269129\n\
+  ```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example4”\
+  \ />\n\n`OrdinaryToPrimitive` 抽象操作通过调用 `toString` 和 `valueOf` 方法将对象转换为原始值。在这两个方法中，某些情况下会调用其中一个；在其他情况下，两者都会调用。`OrdinaryToPrimitive`\
+  \ 抽象操作接收到的 `hint` 参数决定了调用这两个方法中的哪一个。\n\n#### 优先字符串\n\n如果 `hint` 参数为“string”，则 `OrdinaryToPrimitive`\
+  \ 抽象操作会首先调用对象上的 `toString` 方法。如果 `toString` 方法返回一个原始值，即使该原始值不是字符串类型，该原始值也将作为对象的原始表示。\n\
+  \n如果 `toString` 方法不存在或未返回原始值，则调用 `valueOf` 方法。如果 `valueOf` 方法返回原始值，则使用该值；否则，将抛出\
+  \ `TypeError`，表示对象无法转换为原始值。\n\n```javascript\n1 const obj = {\n2   toString() {\n\
+  3     console.log(\"toString invoked\");\n4     return \"hello world\";\n5   },\n\
+  6   valueOf() {\n7     console.log(\"valueOf invoked\");\n8     return 123;\n9 \
+  \  }\n10 };\n11 \n12 console.log(`${obj}`);\n13 // toString invoked\n14 // hello\
+  \ world\n```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example5”\
+  \ />\n\n在上面的代码示例中，我们有一个包含重写的 `toString` 和 `valueOf` 方法的对象。在代码示例的末尾，我们尝试将嵌入[模板字符串](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/literals)\
+  \ 的 `obj` 输出到控制台。在这种情况下，`obj` 将转换为字符串。\n\n如上所述，当 `OrdinaryToPrimitive` 抽象操作的 `hint`\
+  \ 参数为“string”时，会调用 `toString` 方法将对象转换为原始值，优先转换为字符串类型的值。由于 `obj` 对象的 `toString` 实现返回了字符串原始值，因此不会调用\
+  \ `valueOf` 方法，`obj` 对象的到原始转换过程到此完成。`obj` 对象 `toString` 方法返回的原始值将由模板字符串字量使用。\n\n\
+  但上面提到过 `toString` 方法返回的值可以是非字符串类型的原始类型。以下代码示例验证了这一观点：\n\n```javascript\n1 const\
+  \ obj = {\n2   toString() {\n3     console.log(\"toString invoked\");\n4     return\
+  \ true;\n5   },\n6   valueOf() {\n7     console.log(\"valueOf invoked\");\n8   \
+  \  return 123;\n9   }\n10 };\n11 \n12 console.log(`${obj}`);\n13 // toString invoked\n\
+  14 // true\n```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example6”\
+  \ />\n\n上述代码示例中的 `toString` 方法返回了一个布尔（非字符串）原始值。与其调用 `valueOf` 方法或将 `toString` 方法的非字符串返回值转换为字符串，该布尔值会被\
+  \ `obj` 对象的原始表示。\n\n我们需要验证的另一种情况是如果 `toString` 方法没有返回原始值会发生什么。以下代码示例演示了这种情况：\n\n\
+  ```javascript\n1 const obj = {\n2   toString() {\n3     console.log(\"toString invoked\"\
+  );\n4     return [];\n5   },\n6   valueOf() {\n7     console.log(\"valueOf invoked\"\
+  );\n8     return 123;\n9   }\n10 };\n11 \n12 console.log(`${obj}`);\n13 // toString\
+  \ invoked\n14 // valueOf invoked\n15 // 123\n```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/abstract-operations-example7” />\n\n如前所述，如果\
+  \ `toString` 方法没有返回原始值，将调用 `valueOf` 方法来获取原始表示。在上面的代码示例中，`toString` 方法返回了一个对象类型的空数组；结果调用了\
+  \ `valueOf` 方法。\n\n即使对象没有定义 `toString`，`valueOf` 方法也会被调用。以下代码示例显示了这种行为：\n\n```javascript\n\
+  1 const obj = {\n2   toString: undefined,\n3   valueOf() {\n4     console.log(\"\
+  valueOf invoked\");\n5     return 123;\n6   }\n7 };\n8 \n9 console.log(`${obj}`);\n\
+  10 // valueOf invoked\n11 // 123\n```\n\n以下是上述代码的运行示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example8”\
+  \ />\n\n我们需要验证的最后情况是，当 JavaScript 在调用 `toString` 和 `valueOf` 方法后仍然无法获取原始值时会发生什么。\n\
+  \n\n\n\n\n```javascript\nconst obj = {\n  toString() {\n    console.log(\"toString\
+  \ invoked\");\n    return [];\n  },\n  valueOf() {\n    console.log(\"valueOf invoked\"\
+  );\n    return [];\n  }\n};\n\nconsole.log(`${obj}`);\n// toString invoked\n// valueOf\
+  \ invoked\n// TypeError ...\n```\n\n以下是上述代码的演示：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example9”\
+  \ />\n\n当 JavaScript 在调用这两个方法后仍无法获取原始值时，会抛出一个 `TypeError`，表示对象无法转换为原始值。因此，在重写这些方法时，记住至少其中一个方法应该返回原始值。\n\
+  \n我们已经讨论了在对象到原始转换过程中，如果首选类型为字符串会发生什么。接下来，让我们讨论如果首选类型为数字会发生什么。\n\n## 优先数字 (Prefer\
+  \ number)\n\n如果 `hint` 参数为“number”，那么 `OrdinaryToPrimitive` 抽象操作会首先调用 `valueOf`\
+  \ 方法，如果需要，再调用 `toString` 方法。\n\n这与上面讨论的“优先字符串”情况类似，不同之处在于调用 `valueOf` 和 `toString`\
+  \ 方法的顺序相反相反。\n\n```javascript\nconst obj = {\n  toString() {\n    console.log(\"\
+  toString invoked\");\n    return \"hello\";\n  },\n  valueOf() {\n    console.log(\"\
+  valueOf invoked\");\n    return 123;\n  }\n};\n\nconsole.log(obj + 1);\n// valueOf\
+  \ invoked\n// 124\n```\n\n以下是上述代码的演示：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example10”\
+  \ />\n\n上面的代码示例与上面节显示的相同，不同之处我们没有将 `obj` 嵌入模板字符串并打印到控制台，而是给 `obj` 加了 1。我们像使用数字一样使用\
+  \ `obj`。\n\n因此，当 JavaScript 在期望数字的上下文中获取一个对象时，它尝试将对象强制转换为原始类型，最好是数字类型。\n\n在这种情况下，传递给\
+  \ `OrdinaryToPrimitive` 抽象操作的 `hint` 参数是“number”；结果是首先调用 `valueOf` 方法。由于它返回了原始值，因此无需调用\
+  \ `toString` 方法。\n\n其他情况与“优先字符串”部分讨论的相同。唯一的区别是当首选类型为“number”时，首先调用 `valueOf` 方法。\n\
+  \n如果 `valueOf` 方法返回布尔值会发生什么？它是一个原始值。它不是数字但仍然是原始值。所以 JavaScript 应该接受它作为 `obj` 对象的原始表示对吧？\n\
+  \n考虑以下代码示例：\n\n```javascript\nconst obj = {\n  valueOf() {\n    console.log(\"valueOf\
+  \ invoked\");\n    return true;\n  }\n};\n\nconsole.log(obj + 1);\n// valueOf invoked\n\
+  // 2\n```\n\n以下是上述代码的演示：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example11”\
+  \ />\n\n为什么我们得到的输出是 2？原因是 `true` 被接受为 `obj` 对象的原始表示，但我们不能将 `true` 和 `1` 相加。JavaScript\
+  \ 在此上下期望一个数字。因此，它尝试将 `true` 转换为期望的值类型，在这种情况下是 `1`。如果 `valueOf` 方法返回 `false`，它将被强制转换为\
+  \ `0`。\n\n## 无偏好 (No preference)\n\n当调用 `ToPrimitive` 抽象操作而没有首选类型或 hint，或者如果 hint\
+  \ 被设置为“default”，那么该操作的行为通常与 hint 为“number”时行为一致。因此，默认情况下，`ToPrimitive` 优选于转换为数字类型。\n\
+  \n然而，对象可以通过实现 [Symbol.toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)\
+  \ 函数来覆盖这种默认的 `ToPrimitive` 行为。该函数接收首选类型作为参数，并返回对象的原始表示。\n\n```javascript\nconst\
+  \ obj = {\n  Symbol.toPrimitive {\n    if (hint === \"string\") {\n      return\
+  \ \"hello\";\n    } else {\n      return 123;\n    }\n  }\n};\n\nconsole.log(`${obj}`);\
+  \ // hello\nconsole.log(obj + 1); // 124\n```\n\n以下是上述代码的演示：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example12”\
+  \ />\n\n在内置对象中，只有 `Date` 和 `Symbol` 对象覆盖了 `ToPrimitive` 抽象操作的默认行为。`Date` 对象实现的默认行为类似于首选类型或\
+  \ hint 为“string”。\n\n```javascript\nnew Date()Symbol.toPrimitive;\n```\n\n## ToNumber\n\
+  \n[`ToNumber`](https://262.ecma-international.org/13.0/#sec-tonumber) 抽象操作在 JavaScript\
+  \ 需要将任何非数字值转换为数字时被使用。\n\n下表显示了此操作应用于某些非数字值时的结果：\n\n| Value | ToNumber(value) |\n\
+  | :--- | :--- |\n| null | 0 |\n| undefined | NaN |\n| 0 | 0 |\n| -0 | -0 |\n| true\
+  \ | 1 |\n| false | 0 |\n| 123 | 123 |\n| NaN | NaN |\n\n对于对象，`ToNumber` 抽象操作首先使用“number”作为首选类型的\
+  \ `ToPrimitive` 操作将对象转换为原始值，然后将结果转换为数字。[`BigInt`](https://developer.mozilla.org/en-US/docs/Web/Reference/Global_Objects/BigInt)\
+  \ 值允许*显式*转换为数字，但*隐式*转换会抛出 `TypeError`。\n\n```javascript\nconsole.log(Number(10n));\
+  \ // 10\nconsole.log(+10n); // TypeError\n```\n\n以下是上述代码的演示：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-operations-example”\
+  \ />\n\n## ToString\n\n[`ToString`](https://262.ecma-international.org/13.0/#sec-tostring)\
+  \ 抽象操作用于将任何值转换为字符串。\n\n下表显示此操作应用于某些非字符串值的结果：\n\n| Value | ToString(value) |\n| :---\
+  \ | :--- |\n| null | \"null\" |\n| undefined | \"undefined\" |\n| 0 | \"0\" |\n\
+  | -0 | \"0\" |\n| true | \"true\" |\n| false | \"false\" |\n| 123 | \"123\" |\n\
+  | NaN | \"NaN\" |\n\n在对象的情况下，`ToString` 抽象操作首先使用以“string”作为首选类型的 `ToPrimitive` 操作将对象转换为原始值，然后将结果转换为字符串。\n\
+  \n## ToBoolean\n\n[`ToBoolean`](https://262.ecma-international.org/13.0/#sec-toboolean)\
+  \ 抽象操作用于将值转换为布尔值。\n\n与上述抽象操作不同，此操作仅仅查询一个值是否为[假值](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)。如果是，我们得到\
+  \ `false` 作为返回值；对于所有其他值，该操作返回 `true`。\n\n以下是假值的列表：\n\n*   false\n*   0, -0, 0n\n\
+  *   undefined\n*   null\n*   NaN\n*   \"\"\n\n正如早早提到的，ECMAScript 规范中提到了许多[抽象操作](https://262.ecma-international.org/13.0/#sec-abstract-operations)\
+  \ 用于类型转换；在本节中，我们只讨论了常见的那些。\n\n\n\n\n\n*   [数字转换 - (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#number_coercion)\n\
+  *   [字符串转换 - (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion)\n\
+  *   [布尔转换 - (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean#boolean_coercion)\n\
+  *   [强制转换值 - (You Don’t Know JS Yet)](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md)\n\
+  \n让我们来讨论一下用于两个值之间松散比较的、臭名昭著的“双等”运算符。它被称为“抽象相等”运算符。\n\n这个运算符之所以臭名昭著，是因为许多在线资源以及 JavaScript\
+  \ 开发者通常都因为它的强制转换行为而不建议使用它。我们不应该盲目地忽略双等运算符，而应该尝试理解它的行为，然后我们就可以自己决定是否在代码中完全不使用它，或者在安全的地方使用它。\n\
+  \n尽管你听到过关于这个运算符的言论，它是根据某些预定义的算法步骤运行的。如果我们理解了它的工作原理，这个运算符就不会吓到我们，而且在某些情况下，我们可能甚至倾向于使用它\
+  \ own 它的兄弟——严格相等运算符（`===`）。\n\n当使用双等运算符比较两个值时，JavaScript 比较这两个值的步骤由一个名为 [IsLooselyEqual](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islooselyequal)\
+  \ 的抽象操作描述。\n\n## 抽象相等运算符摘要\n\n双等运算符的工作原理大致总结在以下步骤中：\n\n*   如果被比较的值具有相同类型，则执行[严格相等比较](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isstrictlyequal)。\n\
+  *   如果其中一个值为 `undefined` 或 `null`，而另一个值也是 `undefined` 或 `null`，则返回 true。\n*   如果其中一个或两个值都是对象，则将它们转换为原始类型，优先选择数字类型。\n\
+  *   如果两个值都是原始类型但类型不同，则不断转换类型直到它们匹配，在强制转换值时优先选择数字类型。\n\n### 委托给严格相等比较\n\n考虑上述的第一个点。如果使用此运算符比较的值的类型是相同的，在底层，这两个值将使用三等运算符或严格相等运算符进行比较。因此，如果我们知道在某段代码中只会比较相同类型的值，那么使用双等运算符还是三等运算符并没有任何区别；在这种情况下，我们始终会得到严格相等运算符。\n\
+  \n### null vs undefined\n\n第二点也值得思考。与严格相等运算符不同，抽象或松散相等运算符认为 `null == undefined`\
+  \ 比较为真。\n\n```\n1 console.log(null === null); // true\n2 console.log(undefined ===\
+  \ undefined); // true\n3 console.log(null === undefined); // false\n4 \n5 console.log(null\
+  \ == null); // true\n6 console.log(undefined == undefined); // true\n7 console.log(null\
+  \ == undefined); // true\n```\n\n你可以在下方看到上述代码的运行情况：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/abstract-equality-operator-example1”\
+  \ />\n\n`null` 和 `undefined` 根据抽象相等运算符是相互相等的，这一事实使得抽象相等运算符有了一个趣的用例。在编写 JavaScript\
+  \ 代码时，检查一个值既不是 `null` 也不是 `undefined` 是很常见的。\n\n使用严格相等运算符，我们将得到一个类似下面的的检查：\n\n```\n\
+  1 if (someVal !== null && someVal !== undefined) {\n2   // code\n3 }\n```\n\n而使用抽象相等运算符，我们可以将此检查缩短为一个条件：\n\
+  \n```\n1 if (someVal != null) {\n2   // code\n3 }\n4 \n5 // 或者\n6 \n7 if (someVal\
+  \ != undefined) {\n8   // code\n9 }\n```\n\n考虑到我们在 JavaScript 代码中需要频繁防范 `null` 和\
+  \ `undefined`，我觉得抽象相等运算符在这种这种情况情况下是理想的。尽管如此，你在这种情况下使用严格相等运算符也不会错。\n\n### “if” 条件\n\
+  \n尽管如上文所述，抽象相等运算符的强制转换行为是可预测的，但人们经常因为在 `if` 语句条件中使用此运算符而掉入陷阱。考虑以下代码示例：\n\n```\n\
+  1 const someVal = {};\n2 \n3 if (someVal == true) {\n4   console.log(\"if\");\n\
+  5 } else {\n6   console.log(\"else\");\n7 }\n```\n\n你可以在下方看到上述代码的运行情况：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/abstract-equality-operator-example4” />\n\
+  \n我们从之前的课程中知道对象是[真值](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)值。因此，在上面的代码示例中，假设\
+  \ `if` 条件被评估为 `true` 是合理的，这将导致 `if` 块的执行。但如果你执行上述代码，可能会惊讶地发现，并不是执行 `if` 块，而是执行了\
+  \ `else` 块，因为 `someVal == true` 检查结果为假。\n\n如果抽象相等运算符的任一个操作数为布尔值，如上所述，`false` 转换为\
+  \ `0`，`true` 转换为 `1`。所以我们的条件变为：\n\n1. 其中一个操作数是对象，根据 [LooselyEqual](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islooselyequal)\
+  \ 抽象操作的第 10 步，如果操作数为布尔值，使用 `ToNumber` 抽象操作将其转换为数字。所以我们的条件变为：\n\n    ```\n    1 true;\n\
+  \    ```\n\n2. 在将布尔值转换为数字后，我们得到了对象和数字之间的比较。根据 LooselyEqual 抽象操作的第 12 步，对象 `someVal`\
+  \ 将使用 `ToPrimitive` 抽象操作转换为原始值，并将“数字”作为首选类型。对象的默认表示为 `\"[object Object]\"`，所以我们的条件变为：`\"\
+  [object Object]\" ==`\n\n3. 现在，我们得到了字符串和数字之间的比较。根据 LooselyEqual 抽象操作的第 6 步，如果一个操作数是字符串，另一个是数字，将字符串转换为数字。将\
+  \ `\"[object Object]\"`转换为数字将得到 [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)。所以我们的条件变为：\n\
+  \n    ```\n    1 NaN == 1;\n    ```\n\n4. 在转换三次后，我们得到了 `NaN` 值和数字之间的比较。它们互是不相等的。（NaN\
+  \ 不等于任何值，包括它本身。）所以我们的条件未能评估为 `true`。\n\n上述讨论的目的是理解，使用抽象相等运算符检查值是否为 `true` 或 `false`\
+  \ 并不总是如预期的那样工作。在这些情况下，很容易归咎于抽象相等运算符。尽管如此，事实是编写此类代码的人需要理解或记住抽象相等运算符是如何。\n\n在我们需要检查一个值是真值还是假值的情况下，与其使用抽象相等运算符，利用\
+  \ `if` 语句的强制转换行为就足够了。我的意思是上述代码中的 `if` 条件应该写成：\n\n```\n1 if (someVal) {\n2   // code\n\
+  3 }\n```\n\n使用上述条件，我们将获得预期的结果，因为将检查 `someVal` 是否为真值；如果是，条件将评估为真，从而执行 `if` 块。\n\n\
+  \n\n\n\n因此，作为一个建议，请避免诸如 `someVal == true` 的检查，其中一个操作数是布尔值。在这种情况下，利用 `if` 语句的隐式强制转换特性，它将检查该值是否有效。\n\
+  \n### 延伸阅读\n\n- [布尔陷阱 - 你还不知道 JavaScript (英文版)](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/types-grammar/ch4.md#-boolean-gotcha)\n\
+  - [“if”语句的运行时语义 (ECMAScript 规范)](https://tc39.es/ecma262/multpage/ecmascript-language-statements-and-declarations.html#sec-if-statement)\n\
+  \n### 加运算符\n\n加运算符可以用于两个数字的相加，也可以用于连接两个字符串（称为字符串拼接）。\n\n该运算符的工作基于 [ApplyStringOrNumericBinaryOperator](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-applystringornumericbinaryoperator)。其工作原理是：如果任何或两个操作数是非原始值，它们将使用\
+  \ `ToPrimitive` 抽象操作转换为原始值，且不指定首选类型。因此，在这种情况下，“number”是首选类型，因为这是 `ToPrimitive` 抽象操作的默认行为。\n\
+  \n在检查非原始操作数并将其（如果有）转换为原始值后，下一步是检查其中一个或两个操作数是否为字符串。如果是的话，那么非字符串的操作数（如果有）将被转换为字符串，并执行字符串拼接。\n\
+  \n如果两个操作数都不是字符串，则在将非数字操作数转换为数字后执行加法。\n\n### 关系运算符\n\n关系运算符（`<`, `>`, `<=`, `>=`）用于比较字符串和数字。在关系运算符的情况下，调用的抽象操作是\
+  \ [IsLessThan](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islessthan)\
+  \ 抽象操作。尽管名称如此，该操作也处理“<=”、“>”和“>=”比较。\n\n如果其中一个操作数是对象，它将被转换为以“number”为首选类型的原始值。如果两个操作数都是字符串，则将使用它们的\
+  \ Unicode 代码点进行比较。如果不是字符串，则操作数通常会被转换为数字然后进行比较。\n\n我们也可以使用关系运算符比较日期对象。记得，`Date` 对象在未使用无首选类型的\
+  \ `ToPrimitive` 操作转换为原始值时会转换为字符串；但在关系运算符的情况下，`Date` 对象在转换为原始值时，结果是 `Date` 对象的数字表示，因为在关系运算符的情况下，`ToPrimitive`\
+  \ 抽象操作传递了“number”作为首选类型。\n\n```\n1 const d1 = new Date(\"2022-11-03\");\n2 const\
+  \ d2 = new Date(\"2023-05-10\");\n3 \n4 console.log(d1 < d2); // true\n```\n\n这里是上述代码的运行示例：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/relational-operators-example1”\
+  \ />\n\n现在我们已经深入查看了强制转换以及一些抽象操作是如何工作以实现强制转换的，让我们测试在本模块中中学到的内容。下面的练习将允许我们巩固对强制转换主题的理解。\n\
+  \n以下是一些涉及强制转换的表达式。尝试根据你在本模块中获得的知识猜一下输出。如果你不理解所有表达式，也不要担心。下面也给出了解释。你可以显然参考规范以及模块中早的课程来理解并猜测下面表达式的输出。\n\
+  \n```\n 1 0 == false\n 2 \n3 \"\" == false\n 4 \n5 0 == []\n 6 \n7 [123] == 123\n\
+  \ 8 \n9 [1] < [2]\n10 \n11 [] == ![]\n12 \n13 !!\"true\" == !!\"false\"\n14 \n15\
+  \ [1, 2, 3] + [4, 5, 6]\n16 \n17 [undefined] == 0\n18 \n19 [[]] == ''\n20 \n21 []\
+  \ + {}\n```\n\n下面是上述每个表达式输出的解释。\n\n#### `0 == false`\n\n让我们从简单的开始，大多数人即使不看这个模块可能也能答对。现在我们已经知道了抽象相等运算符是如何工作的，让我们来理解评估此表达式为\
+  \ `true` 所采取的步骤。\n\n1. 由于类型不相等且其中一个操作数是布尔值，该布尔操作数使用 [ToNumber](https://tc39.es/ecma262/multpage/abstract-operations.html#sec-tonumber)\
+  \ 抽象操作转换为数字。因此，第一个强制转换是将 `false` 转换为数字，即 `0`。表达式变为：\n\n   ```\n   1 0 == 0\n   ```\n\
+  \n2. 现在类型相等，所以执行严格相等比较，即 `0 === 0`，我们得到输出 `true`。\n\n#### `\"\" == false`\n\n1.\
+  \ 由于类型不相等且其中一个操作数是布尔值，该布尔操作数使用 `ToNumber` 抽象操作转换为数字。因此，第一个强制转换是将 `false` 转换为数字，即\
+  \ `0`。表达式变为：\n\n   ```\n   1 \"\" == 0\n   ```\n\n2. 现在我们有一个字符串和一个数字。记得相等运算符倾向于数字比较，因此字符串使用\
+  \ `ToNumber` 操作转换为数字。空字符串转换为数字输出 `0`。表达式变为：\n\n   ```\n   1 \"\" == 0\n   ```\n\n\
+  3. 类型相等，所以执行严格相等比较，即 `0 === 0`，我们得到输出 `true`。\n\n#### `0 == []`\n\n1. 数组使用 `ToPrimitive`\
+  \ 抽象操作转换为原始值。由于相等运算符倾向于数字比较，数组转换为以“number”为首选类型的原始值。空数组在转换为原始值时输出空字符串。表达式变为：\n\n\
+  \   ```\n   1 0 == \"\"\n   ```\n\n2. 接下来将字符串转换为数字。空字符串转换为数字输出 `0`。表达式变为：\n\n  \
+  \ ```\n   1 0 == 0\n   ```\n\n3. 类型相等，所以执行严格相等比较，即 `0 === 0`，我们得到输出 `true`。\n\n\
+  #### `[123] == 123`\n\n1. 我们有一个数组和数字之间的比较。因此，数组使用 `ToPrimitive` 抽象操作转换为原始值，以“number”为首选类型。首先调用\
+  \ `valueOf` 方法，因为首选类型是数字。但我们知道 `valueOf` 方法的默认实现只是返回调用它的对象。因此调用 `toString`。对于数组，`toString`\
+  \ 方法对空数组返回空字符串；对于像 `[1, 2, 3]` 这样的数组，它返回数组内容的字符串，并用逗号连接，即 `\"1,2,3\"`。每个数组元素都被强制转换为字符串然后用逗号连接。\n\
+  \n在我们的案例中，数组中有一个元素，即 `[123]`，因此它将被强制转换为 `\"123\"`。表达式变为：\n\n   ```\n   1 \"123\"\
+  \ == 123\n   ```\n\n2. 接下来，将字符串转换为数字。表达式变为：\n\n   ```\n   1 123 == 123\n   ```\n\
+  \n3. 类型相等，所以执行严格相等比较，即 `123 === 123`，我们得到输出 `true`。\n\n#### `[1] < [2]`\n\n\n\n\n\
+  \n1. 这是两个对象之间的比较。两个数组都通过 `ToPrimitive` 抽象操作转换为原始值，并以 `number` 作为首选类型。正如上一个示例所示，`toString`\
+  \ 最终会被调用将两个数组转换为原始值，分别为我们 `\"1\"` 和 `\"2\"` 作为输出。因此，表达式变为：\n\n```\n1 \"1\" < \"\
+  2\"\n```\n\n2. 现在，我们有两个字符串。类型相等，因此执行了严格等性比较，即 `\"1\" < \"2\"`，输出结果为 `true`，因为字符串是使用它们的\
+  \ Unicode 代码点进行比较的。\n\n### `[] == ![]`\n\n1. 在此比较中，我们有两个运算符：抽象等价运算符和[非 (!)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)\
+  \ 运算符。非运算符的[优先级](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)\
+  \ 高于等价运算符，因此子表达式 `![]` 先求值。\n\n非运算符将 `true` 转换为 `false`，反之亦然。但在这里它与一个非布尔值一起使用。那么当\
+  \ JavaScript 在期望不同类型值的语文中看到一种类型的值时会发生什么呢？类型转换！因此，`[]` 将通过 `ToBoolean` 抽象操作转换为布尔值，因为布尔是预期的类型。由于\
+  \ `[]` 是一个真值（truthy），它被转换为 `true`，然后非运算符将其取反，将 `true` 转换为 `false`。因此，表达式变为：\n\n\
+  ```\n1 [] == false\n```\n\n2. 接下来，布尔操作数（即 `false`）被转换为数字（即 `0`）。表达式变为：\n\n```\n\
+  1 [] == 0\n```\n\n3. 现在我们得到了一个对象和一个数字之间的比较。回想抽象等价运算符的工作原理，对象将被转换为原始值，并优先选择 `number`\
+  \ 类型。正如之前的示例之一提到的，空数组会被转换为空字符串，因此表达式变为：\n\n```\n1 \"\" == 0\n```\n\n4. 接下来，空字符串通过\
+  \ `ToNumber` 抽象操作转换为数字（即 `0`）。\n\n```\n1 0 == 0\n```\n\n5. 类型相等，因此执行了严格等性比较，即 `0\
+  \ === 0`，输出结果为 `true`。\n\n::: note 如果你好奇如何知道哪一个操作数（左侧还是右侧）先被转换，以及执行了什么转换，我只是引用了\
+  \ ECMAScript 规范中提到的步骤。例如，对于涉及使用抽象等价运算符比较的表达式，我指的是 [IsLooselyEqual](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islooselyequal)抽象操作的步骤。\n\
+  \n你也应该这样做。没有必要记住每一步。只需理解类型转换执行的基本原理、涉及哪些抽象操作，然后参考规范即可。\n\n### `!!\"true\" == !!\"\
+  false\"`\n\n1. 再次，我们在表达式中有两个运算符。如前所述，逻辑非运算符的优先级更高，因此子表达式 `!!\"true\"` 和 `!!\"false\"\
+  ` 将先求值。\n\n表达式 `!!\"true\"` 中的字符串 `\"true\"` 是一个真值，因此它将被转换为布尔值 `true`。所以表达式将变为 `!!true`。接下来，我们有两个非运算符。对\
+  \ `true` 应用两次非运算符将首先将其转换为 `false`，然后变回 `true`。\n\n第二个子表达式 `!!\"false\"` 也会求值为 `true`，因为字符串\
+  \ `\"false\"` 是一个真值，所以与第一个子表达式相同，表达式将变为 `!!true`，然后应用两次非运算符将得到 `true`。因此在子表达式完成转换和求值后，我们的表达式将变为：\n\
+  \n```\n1 true == true\n```\n\n2. 类型相等，因此执行了严格等性比较，即 `true === true`，输出结果为 `true`。\n\
+  \n### `[1, 2, 3] + [4, 5, 6]`\n\n1. 回想加法运算符的工作原理。这里涉及的抽象操作是 [ApplyStringOrNumericBinaryOperator](https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-applystringornumericbinaryoperator)。\n\
+  \n由于两个操作数都是对象，它们首先转换为原始值，且 `ToPrimitive` 抽象操作未指定首选类型。因此，默认，“number”是首选类型。数组在转换为原始值时，使用\
+  \ `toString` 方法转换为原始值。对于我们表达式中的数组，我们分别得到 `\"1,2,3\"` 和 `\"4,5,6\"`。因此表达式变为：\n\n\
+  ```\n1 \"1,2,3\" + \"4,5,6\"\n```\n\n2. 由于两个操作数在转换后都是字符串，执行的不是加法而是拼接，将两个字符串连接起来，输出\
+  \ `\"1,2,34,5,6\"`。\n\n### `[undefined] == 0`\n\n1. 由于运算符是抽象等价运算符且两个操作数都是对象，对象首先被转换为原始值。正如在本课程中多次看到的，`[undefined]`\
+  \ 在转换为原始值时输出空字符串。因此表达式变为：\n\n```\n1 \"\" == 0\n```\n\n2. 空字符串转换为数字后得到 `0`。因此表达式变为：\n\
+  \n```\n1 0 == 0\n```\n\n3. 类型相等，因此执行了严格等性比较，即 `0 === 0`，输出结果为 `true`。\n\n### `[[]]\
+  \ == ''`\n\n1. 在此表达式中，我们有一个包含空数组的数组和一个空字符串。数组操作数首先转换为原始值。回想数组如何转换为原始值。除了之前提到的特殊情况外，数组通过将其元素转换为字符串并连接来转换为原始值。因此，嵌套数组将转换为空字符串。外层数组也被转换为空字符串。转换后的表达式变为：\n\
+  \n```\n1 \"\" == \"\"\n```\n\n2. 空字符串等于空字符串，因此输出为 `true`。\n\n### `[] + {}`\n\n1.\
+  \ 由于运算符是加法且两个操作数都是对象，它们都被转换为原始值且未指定首选类型。因此，默认类型是“number”。\n\n空数组转换为空字符串，而对象字量量的原始表示是字符串\
+  \ `\"[object Object]\"`。因此表达式变为：\n\n```\n1 \"\" + \"[object Object]\"\n```\n\n2.\
+  \ 两个操作数现在都是字符串，执行拼接，输出 `\"[object Object]\"`。\n\n#### 参考文献\n\n上述部分表达式来源于以下 GitHub\
+  \ 仓库：[wtfjs](https://github.com/denysdovhan/wtfjs)\n\n## 闭包\n\n闭包是 JavaScript 中的一个基础主题，对初学者来说可能比较困难。它是一个强大的特性，理解这一主题至关重要。在本模块中，我们将深入探讨什么是闭包以及它们如何工作。\n\
+  \n### 什么是闭包？\n\n闭包是以下两个者的组合：\n\n*   一个函数\n\n*   对其创建环境/作用域的引用\n\n换句话说，每当我们在 JavaScript\
+  \ 中定义函数时，该函数都会保存对其创建时环境的引用。这就是所说的闭包：函数以及与其创建时环境的引用。\n\n闭包允许嵌套函数在包含它的函数执行结束后，仍然访问包含函数内部的声明。\n\
+  \n\n\n\n```javascript\nfunction outerFn() {\n  const outerVar = 123;\n\n  return\
+  \ function inner() {\n    console.log(outerVar);\n  };\n}\n\nconst innerFn = outerFn();\n\
+  innerFn();\n```\n\n这里是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example1”&gtReplitEmbed>\n\
+  \n`outerFn` 返回的函数 `innerFn` 为什么在“outerFn”执行完成后，仍然可以访问在 `outerFn` 中定义的 `outerVar`\
+  \ 变量？\n\n上述代码之所以有效，是因为 JavaScript 函数在创建时总是会创建闭包（closures）。在某些编程语言中，函数局部定义的变量只在 particular\
+  \ 函数执行期间存在；当函数执行结束时，局部作用域中定义的变量就会被销毁。但在 JavaScript 中情况并非如此，上面的代码示例证明了这一点。那么，闭包是如何工作的？\n\
+  \n### 闭包是如何工作的？\n\n要理解闭包是如何工作的，我们需要理解 JavaScript 是如何解析任何标识符的作用域（scope）。\n\n尽管我们在之前专门讨论作用域的模块中详细讨论过作用域，但让我们再次简单回顾一下词法作用域（lexical\
+  \ scope）是如何解析的。考虑以下代码示例：\n\n```javascript\nlet isReading = true;\n\nfunction learnJavaScript()\
+  \ {\n  console.log(isReading);\n}\n\nlearnJavaScript();\n```\n\n这里是上述代码的 Replit：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example2”&gtReplitEmbed>\n\
+  \n当调用 `learnJavaScript` 函数来打印 `isReading` 变量的值时，JavaScript 首先需要识别它定义在哪里。JavaScript\
+  \ 搜索的地方是 `learnJavaScript` 函数的局部作用域，因为在那里找到了 `isReading` 变量的引用。\n\n由于 `isReading`\
+  \ 变量在 `learnJavaScript` 函数的局部作用域中没有定义，JavaScript 将外部作用域中搜索该变量，在这种情况下是全局作用域。JavaScript\
+  \ 在全局作用域中找到了 `isReading` 变量的声明，因此它将获取其值并传递给 `console.log()` 函数，以便打印到控制台。\n\n让我们来看另一个涉及嵌套函数的代码示例：\n\
+  \n```javascript\nlet isReading = true;\n\nfunction learnJavaScript() {\n  function\
+  \ stepsToLearnJavaScript() {\n    console.log(isReading);\n  }\n\n  stepsToLearnJavaScript();\n\
+  }\n\nlearnJavaScript();\n```\n\n这里是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example3”&gtReplitEmbed>\n\
+  \n在这个代码示例中，我们有一个嵌套函数 `stepsToLearnJavaScript`，它打印定义在全局作用域中的变量值。如果 JavaScript 尚未确定\
+  \ `isReading` 变量的作用域，它将如何找到它的声明？回想作用域链（scope chain）！\n\nJavaScript 需要遍历作用域链来寻找 `isReading`\
+  \ 变量的声明。与之前的示例一样，首先在当前作用域中搜索，在这种情况下是 `stepsToLearnJavaScript` 函数的局部作用域。如果当前作用域不包含\
+  \ JavaScript 寻找的声明，搜索将顺序扩展到外部作用域。在我们的示例中，`stepsToLearnJavaScript` 函数不包含 `isReading`\
+  \ 变量的声明，因此搜索移动到外部作用域，在这里是 `learnJavaScript` 函数的局部作用域。该作用域中也不存在该声明；JavaScript 继续遍历到\
+  \ `learnJavaScript` 函数作用域的外部作用域。现在的外部作用域是全局作用域。\n\n在上面的代码示例中，在全局作用域找到了变量声明，因此当搜索到达全局作用域时，变量声明的搜索将停止。但如果我们从上面的代码示例中移除变量声明会发生什么？\n\
+  \n```javascript\nfunction learnJavaScript() {\n  function stepsToLearnJavaScript()\
+  \ {\n    console.log(isReading);\n  }\n\n  stepsToLearnJavaScript();\n}\n\nlearnJavaScript();\n\
+  ```\n\n这里是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example4”&gtReplitEmbed>\n\
+  \n现在，`stepsToLearnJavaScript` 函数正在打印一个未声明的变量。现在，当变量声明的搜索到达全局作用域会发生什么？此时，JavaScript\
+  \ 将执行以下操作之一：\n\n- 如果代码处于严格模式，则抛出错误\n- 在非严格模式下，为你创建一个全局变量（回想作用域模块中的“隐式全局变量”）\n\n\
+  ### 不同作用域是如何链接的？\n\n到此时，我们知道作用域是如何解析的，以及不同作用域是如何链接在一起的，形成了一个被称为“作用域链”的链。但你是否好奇过不同作用域是如何链接的？这不可能是魔法；必须有一种机制将不同作用域链接在一起。JavaScript\
+  \ 是如何确定当前作用域的外部作用域的？\n\n让我们回到本课程之前提供的代码示例：\n\n```javascript\nlet isReading = true;\n\
+  \nfunction learnJavaScript() {\n  console.log(isReading);\n}\n\nlearnJavaScript();\n\
+  ```\n\n这里是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example5”&gtReplitEmbed>\n\
+  \n我们知道，当调用 `learnJavaScript` 函数时，该函数的局部作用域通过获取保存在函数 `[[Environment]]` 槽中的值，并将其保存在名为\
+  \ `OuterEnv` 的内部槽中，与全局作用域链接。\n\n:::info\n\nECMAScript 规范中提到了许多内部槽（internal slots）。规范使用这些内部槽来定义所需的行为。这些隐藏槽就像抽象操作一样，可能实现也可能未被不同的\
+  \ JavaScript 引擎实际实现。\n\n:::\n\n在上面的代码示例中，当函数在全局作用域中创建时，一个引用保存在函数对象的 `[[Environment]]`\
+  \ 槽中。稍后，当函数被调用时，会为函数内部代码的执行创建一个环境。这个环境（局部作用域）链接到外部环境。这个 `[[Environment]]` 内部槽*闭包了*或形成了一个“闭包”。\n\
+  \n\n\n\n希望上述两个代码示例和图像已经解释了不同作用域是如何连接在一起并形成作用域链的。`JavaScript` 引擎会在需要遍历此作用域链，以解析任何标识符的作用域。\n\
+  \n这种不同环境之间的链接（即作用域链）使得 JavaScript 中的闭包成为可能。由于这个作用域链的存在，即使在外部函数执行完毕后，嵌套函数仍然可以访问外部函数的变量。只要内部函数对该外部环境有引用，该外部环境就会保留在内存中。\n\
+  \n现在，让我们重新回顾课程中的第一个代码示例，它涉及到从与其定义位置不同的作用域中调用嵌套函数。\n\n```\n 1 function outerFn()\
+  \ {\n 2   const outerVar = 123;\n 3 \n 4   return function inner() {\n 5     console.log(outerVar);\n\
+  \ 6   };\n 7 }\n 8\n 9 const innerFn = outerFn();\n10 innerFn();\n```\n\n这是上述代码的\
+  \ Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example7”>\n\n\
+  希望你现在能够解释为什么嵌套函数在 `outerFn` 执行完成后仍然可以访问 `outerVar` 变量。\n\n`inner` 函数引用了 `outerFn`\
+  \ 函数的局部作用域，并保存在其内部槽 `[[Environment]]` 中。当 `inner` 函数从 `outerFn` 函数返回时，尽管 `outerFn`\
+  \ 的执行已经结束，但 `inner` 函数仍然持有 `outerFn` 局部作用域的引用。当调用 `inner` 函数时，`inner` 函数的 `[[Environment]]`\
+  \ 槽的值会被保存在执行 `inner` 函数时创建的环境的 `[[OuterEnv]]` 内部槽中。\n\n总结来说，每当创建一个 JavaScript 函数时，就会形成一个闭包，这允许该函数访问其定义时所生效的作用域链。每当创建一个函数时，JavaScript\
+  \ 都会将该函数周围环境的引用保存在函数对象的内部槽 `[[Environment]]` 槽中。当该函数被调用时，会为该函数调用创建一个新环境，JavaScript\
+  \ 会将函数上 `[[Environment]]` 槽的值保存在环境对象的 `[[OuterEnv]]` 槽中。\n\n初学者中有一个常见的误区，认为只有当函数返回一个嵌套函数时才会形成闭包。但事实并非如此。\n\
+  \n每当在 JavaScript 中创建一个函数时，它都会在其创建的环境中形成一个闭包。形成闭包是一种高级的说法，意味着当函数被创建时，它保存了创建它所在环境的引用。\n\
+  \n这种误解产生的原因是什么？由于以下两个原因：\n\n- 许多在线资源在介绍闭包概念时，使用的代码示例包含一个返回嵌套函数的函数。\n- 只有当函数从与其定义位置不同的作用域被调用时，闭包才会被察觉。\n\
+  \n大多数函数通常在定义的相同作用域内被调用。这使得闭包没有被注意到。只有当函数从与其定义位置不同的作用域被调用时，闭包才会变得明显。\n\n在下面的代码示例中，函数是在全局作用域中定义并调用的，因此其闭包是不易察觉的。\n\
+  \n```\n1 let score = 150;\n2 \n3 function logScore() {\n4   console.log(score);\n\
+  5 }\n6 \n7 logScore();\n```\n\n可以在 Replit 中查看上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/closure-misconception-example1”>\n\
+  \n与上述代码示例不同，在下面的代码示例中，闭包是明显的，因为在 `createGreeting` 执行完成后，嵌套的 `greet` 函数仍然可以访问它的函数的\
+  \ `greetMsg` 参数。闭包之所以明显是因为 `greet` 函数是从与其定义位置不同的作用域被调用的。`greet` 函数定义在 `createGreeting`\
+  \ 函数的局部作用域内，但它是从全局作用域被调用的。\n\n```\n1 function createGreeting(greetMsg) {\n2   function\
+  \ greet(personName) {\n3     console.log(`${greetMsg} ${personName}!`);\n4   }\n\
+  5 \n6   return greet;\n7 }\n8 \n9 const sayHello = createGreeting(\"Hello\");\n\
+  10 sayHello(\"Mike\");\n```\n\n这是上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Example7”>\n\
+  \n你预期以下代码示例的输出结果是什么？\n\n```\n1 for (var i = 1; i <= 3; i++) {\n2   setTimeout(()\
+  \ => {\n3     console.log(i);\n4   }, 1000);\n5 }\n```\n\n你可能会预期如下输出：\n\n```\n1\
+  \ 1;\n2 2;\n3 3;\n```\n\n虽然上述输出看起来合理，但它并不是从上述代码示例中得到的输出。实际输出所示：\n\n```\n1 4;\n2\
+  \ 4;\n3 4;\n```\n\n以下是 Replit 中上述代码示例的输出：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/closures-in-loops-example1”>\n\
+  \n\n\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/closures-in-loops-example2”>\n\
+  \n# 使用 IIFE 是如何解决这个问题的？\n\n回想一下，这个问题是由不同的回调函数对**同一个**变量形成闭包导致的。但通过使用 IIFE（立即调用函数表达式），我们可以在每次迭代中将\
+  \ `i` 的值作为参数传递给 IIFE。该参数（`counter`）随后在 `setTimeout` 函数的回调函数内部使用。这解决了问题，因为 `counter`\
+  \ 参数被每个回调函数捕获，并且在每次迭代中，都会创建一个新的 IIFE，以及一个新的 `setTimeout` 回调函数。每个 IIFE 的新实例都会接收到\
+  \ `i` 的一个新值，即在第一次迭代中是“1”，第二次迭代中是“2”，以此此类推。因此，现在通过使用 IIFE，每个回调函数都对一个不同的 `counter`\
+  \ 变量形成了闭包。\n\n下面的图有助于视觉化上述代码示例中的作用域链（为了保持简单，图中未显示函数对象）：\n\n![scope linkage](img/module_05----lesson_05.03----public----assets----closure-problem-pre-es6-solution.png)\n\
+  \n## scope linkage\n\n尽管 `setTimeout` 函数的回调打印了 `counter` 变量，但它们仍然可以访问变量 `i`。如果我们同时打印\
+  \ `counter` 和 `i` 会怎样？输出会发生什么变化？\n\n```\n 1 for (var i = 1; i <= 3; i++) {\n 2 \
+  \  ((counter) => {\n 3     setTimeout(() => {\n 4       console.log(counter, i);\n\
+  \ 5     }, 1000);\n 6   })(i);\n 7 }\n 8 \n9 /* output\n10 ---------\n11 1 4\n12\
+  \ 2 4\n13 3 4\n14 ---------\n15 */\n```\n\n上述代码示例的输出可以在下面的 Replit 中看到：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/closures-in-loops-example3”>\n\n每个回调都对\
+  \ `counter` 变量的一个**不同**实例形成闭包，但它们仍然共享全局作用域中的**同一个**变量 `i`。因此，它们打印的是 `i` 的最新值，即“4”。\n\
+  \n## ES2015 解决方案\n\nES2015 通过 `let` 和 `const` 关键字分别引入了块级作用域变量和常量。我们通过将原始问题问题的代码示例中的\
+  \ `var` 关键字替换为 `let` 关键字，就可以简单解决“循环中的闭包”问题。\n\n```\n 1 for (let i = 1; i <= 3; i++)\
+  \ {\n 2   setTimeout(() => {\n 3     console.log(i);\n 4   }, 1000);\n 5 }\n 6 \n\
+  7 /* output\n 8 ---------\n9 1\n10 2\n11 3\n12 ---------\n13 */\n```\n\n这是上述代码示例在\
+  \ Replit 中的输出：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/closures-in-loops-example4”>\n\
+  \n使用 `let` 关键字解决了这个问题，因为与每个回调函数捕获**同一个**变量 `i` 不同，`let` 的块级作用域使得循环的每次迭代都拥有变量 `i`\
+  \ 的一个**不同**副本。这是解决“循环中的闭包”问题的关键思想。每次迭代都有其自己的**独立**变量 `i` 副本，这意味着在每次迭代中创建的 `setTimeout`\
+  \ 回调捕获的是限制于该循环特定迭代的变量 `i` 副本。\n\n在我们的代码示例中，循环有三次迭代，并且变量 `i` 有独立的副本，每个副本都局限于循环的某次迭代。虽然看起来我们只有一个变量\
+  \ `i`，但在后台，每次迭代都获得了变量 `i` 自己的副本。\n\n为了理解每次迭代是如何获得变量 `i` 自己的副本的，以下步骤解释了上述代码的执行过程：\n\
+  \n1. 在 `for` 循环开始执行之前，会创建一个环境对象（我们称其为 `initEnv`），它包含了在 `for` 循环初始化部分声明的变量。在我们的案例中，只有一个变量\
+  \ `i`，所以 `initEnv` 环境对象包含变量 `i` 的一个副本。该环境对象通过在内部 `[[OuterEnv]]` 槽位中保存对外部环境的引用来链接到外部环境。在这种情况下，外部环境是全局环境。\n\
+  \n2. 为了启动 `for` 循环的第一次迭代，会创建一个新的环境对象（我们称其为 `iter1Env`）。该环境对象也将全局环境作为其外部环境。变量 `i`\
+  \ 通过从 `initEnv` 对象（第 1 步创建）复制到这个新创建的 `iter1Env` 对象中。\n\n3. 循环条件 `i <= 3` 为 `true`，因此循环体作为循环第一次迭代的一部分执行。创建\
+  \ `setTimeout` 的回调函数，并将对第一次循环迭代环境对象 `iter1Env`（第 2 步创建）的引用保存在回调函数的内部 `[[Environment]]`\
+  \ 槽位中。之后，回调函数作为参数传递给 `setTimeout` 函数准备执行。\n\n    下面的图片显示了到目前环境之间的链接：\n    ![closue\
+  \ in loop - 1](img/module_05----lesson_05.03----public----assets----closure-loop-1.png)\n\
+  \n4. 现在，为了启动第二次迭代，会创建一个新的环境对象（我们称其为 `iter2Env`）。变量 `i` 从 `initEnv` 对象（第 1 步创建）复制，但\
+  \ `iter2Env` 中的 `i` 的值是 `iter1Env`（第 2 步创建）中 `i` 的值。随后，`iter2Env` 中 `i` 的值由于 `for`\
+  \ 循环的递增部分（i++`）而增加。\n\n5. 与之前的迭代一样，创建一个回调函数，并将 `iter2Env` 的引用保存在其 `[[Environment]]`\
+  \ 槽位中。回调函数被传递给 `setTimeout` 函数。\n\n6. 此过程在第三次也是最后一次迭代中重复。\n\n    下面的图表显示了三次迭代后环境是如何链接的：\n\
+  \    ![closue in loop - all iterations](img/module_05----lesson_05.03----public----assets----closure-loop-all.png)\n\
+  \n希望最后的图表解释了为什么使用 `let` 关键字可以解决“循环中的闭包”问题。由于循环每次迭代创建的每个环境对象都有变量 `i` 的**独立**副本，在循环不同迭代中创建的回调闭包对\
+  \ `i` 的每个独立副本形成闭包。因此，它们打印的是它们捕获的值，给了我们预期的输出，即 `1 2 3`。\n\n\n\n\nIIFE 内部的代码会被执行，IIFE\
+  \ 会返回一个对象并将其赋值给变量 `bank`。返回的对象中仅包含需要从 IIFE 外部访问的数据。意用于私有的代码不会被返回；因此，这些数据保持为私有，被限制在\
+  \ IIFE 的边界内。然而，得益于闭包，从 IIFE 返回的公开数据仍然可以访问 IIFE 内部的私有数据。\n\n### 延伸阅读\n\n- [使用闭包模拟私有方法\
+  \ - (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#emulating_private_methods_with_closures)\n\
+  \n## 原型 (Prototypes)\n\n**继承**是一个通用的面向对象编程概念，允许对象继承其他对象的方法和属性。这减少了代码重复并促进了不同对象之间的代码共享。\n\
+  \n与 Java 或 C# 等传统的面向对象编程语言不同，JavaScript 有处理继承的特殊方式。JavaScript 中的对象与其他对象链接，这种链接允许一个对象使用其所链接的另一个对象的功能。\n\
+  \nJavaScript 中对象之间的链接形成了一个链。这条链被称为**原型链**（prototype chain）。想象作用域链，其中每个作用域都链接到另一个作用域，直到到达全局作用域。原型链也是如此：一个对象链接到另一个对象，而该对象又链接到另一个对象，形成对象之间的链。\n\
+  \n原型链允许对象之间共享属性，这就是 JavaScript 中继承的理念，被称为**原型继承**（prototypal inheritance）。在原型继承中，其他对象继承属性所需的对象被称为这些对象的**原型**（prototype）。\n\
+  \n当我们在 JavaScript 中创建一个对象字面量时，它默认会链接到内置的 `Object.prototype` 对象。\n\n```\n1 const\
+  \ obj = {};\n```\n\n在上述代码示例中，`Object.prototype` 对象是 `obj` 对象的**原型**。\n\n### 对象是如何链接的？\n\
+  \nJavaScript 中的对象有一个名为 `[[Prototype]]` 的隐藏内部槽位。当一个对象被创建时，它通过将另一个对象的引用保存到新创建对象的 `[[Prototype]]`\
+  \ 内部槽位中与另一个对象链接。被保存在内部槽位中的引用对应的对象将作为新创建对象的“原型”。\n\n在上述代码示例中，`obj` 对象的 `[[Prototype]]`\
+  \ 槽位包含对 `Object.prototype` 对象的引用。因此，`obj.[[Prototype]]` 为我们提供了 `obj` 对象的原型，即 `obj`\
+  \ 链接并从中继承属性的对象。但由于 `[[Prototype]]` 是 JavaScript 无法访问的内部槽位，在节随后的课程中，我们将看到如何访问任何对象的原型。\n\
+  \n### “prototype”属性\n\n在我们目前为止对原型继承的讨论中，你可能注意到“prototype”一词被用在两个不同的语境：一个作为属性，即 `Object.prototype`；另一个是描述与另一个对象共享属性的对象的通用术语。这种名称上的冲突让许多人在初次学习\
+  \ JavaScript 原型继承时感到困惑。\n\n由于函数在 JavaScript 中也是对象，因此它们可以像任何其他对象一样拥有属性。“prototype”这个属性名是函数的属性之一。但箭头函数没有这个属性。\n\
+  \n函数的 `prototype` 属性指向一个对象，当该函数使用 `new` 关键字作为“构造函数”调用时，该对象被用其他对象的“原型”。同样，“prototype”一词在这里被用在两个语境中：\n\
+  \n- 函数上的“prototype”属性\n- 当一个对象与其他对象链接并共享其属性时，该对象被称为“原型”。\n\n下面的代码示例显示了函数上存在名为“prototype”的属性：\n\
+  \n```\n1 function Car(name, model) {\n2   this.name = name;\n3   this.model = model;\n\
+  4 }\n5 \n6 console.log(Object.getOwnPropertyNames(Car));\n7 \n // [ \"prototype\"\
+  , \"length\", \"name\" ]\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/prototypal-inheritance-example1”\
+  \ />\n\n你可能从上面的代码中看出 `Car` 函数旨在用作构造函数。然而，它确实只是一个普通函数。“prototype”属性只有在我们作为构造函数调用函数时（即使用\
+  \ `new` 关键字）才有用。\n\n添加到到 `Car.prototype` 对象上的任何属性，都将由从 `Car` 构造函数创建的所有实例共享。`Car.prototype`\
+  \ 函数将作为所有 `Car` 构造函数实例的“原型”。\n\n初始状态，任何函数上的 `prototype` 属性指向的对象仅包含一个名为“constructor”的属性。此“constructor”属性的值是对构造函数的引用。在\
+  \ `Car.prototype` 对象的情况下，`Car.prototype.constructor` 指向 `Car` 构造函数。\n\n```\n1 //\
+  \ Car.prototype\n2 {\n3   constructor: <Car function>\n4 }\n```\n\n下面的代码示例验证了 `Car.prototype.constructor`\
+  \ 指向 `Car` 函数：\n\n```\n1 function Car(name, model) {\n2   this.name = name;\n3 \
+  \  this.model = model;\n4 }\n5 \n6 console.log(Car.prototype.constructor === Car);\n\
+  ```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/prototypal-inheritance-example2”\
+  \ />\n\n> note [constructor property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)\
+  \ 在我们编写的 JavaScript 代码中很少使用，甚至完全不用。\n\n我们在 `Car.prototype` 对象上添加一个属性：\n\n```\n1\
+  \ Car.prototype.start = function () {\n2   console.log(\"starting the engine of\
+  \ \" + this.name);\n3 };\n4 \n5 const honda = new Car(\"honda\", \"1996\");\n6 const\
+  \ toyota = new Car(\"toyota\", \"2000\");\n7 \n8 honda.start(); // starting the\
+  \ engine of honda\n9 toyota.start(); // starting the engine of toyota\n```\n\n你可以在下面的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/prototypal-inheritance-example3”\
+  \ />\n\n当使用 `new` 关键字调用函数时，创建新对象的步骤之一是：新创建对象的 `[[Prototype]]` 内部槽位指向函数 `prototype`\
+  \ 属性所引用的对象。因此，新创建的对象可以访问定义在构造函数原型上的属性。\n\n### 获取任何对象的原型\n\n`Object` 函数有一个名为 [getPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)\
+  \ 的静态方法，可用于获取任何对象的原型。它返回对象内部 `[[Prototype]]` 属性的值。\n\n对于上一个代码示例中创建的 `honda` 对象，`Object.getPrototypeOf`\
+  \ 函数返回 `Car.prototype` 对象，因为 `Car.prototype` 对象是所有 `Car` 构造函数实例的原型。\n\n```\n1 console.log(Object.getPrototypeOf(honda)\
+  \ === Car.prototype); // true\n```\n\n既然我们已经知道了什么是原型继承，让我们探索原型链。\n\n### Object.prototype\
+  \ - 所有对象的父级\n\n\n\n\n在原型继承层次结构的顶端是 `Object.prototype` 对象。它是所有对象的根对象或父对象。当我们创建一个对象字面量时，它的原型就是\
+  \ `Object.prototype` 对象。\n\n```\n1 const obj = {};\n2 \n3 console.log(Object.getPrototypeOf(obj)\
+  \ === Object.prototype);\n4 // true\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/prototype-chain-example1” />\n\n我们没有在\
+  \ `obj` 对象上定义任何属性。。但我们仍然可以在它上调用一些方法。\n\n```\n1 const obj = {};\n2 \n3 console.log(obj.toString());\
+  \ // [object Object]\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/prototype-chain-example2”\
+  \ />\n\n我们没有在 `obj` 对象上定义名为 `toString` 的方法；它是如何在在上面的代码示例中被访问的？你猜得没错：它是定义在 `Object.prototype`\
+  \ 对象上的，由于 `Object.prototype` 是 `obj` 的原型，因此 `Object.prototype` 上定义的属性被 `obj` 继承了，`toString`\
+  \ 就是其中之一。\n\n通过这种方式创建的对象是 `Object` 构造函数的实例。我们也可以像下面所示定义 `obj`：\n\n```\n1 const obj\
+  \ = new Object();\n```\n\n这的效果相同：它创建了一个空对象。正如在上一节中讨论过的，函数具有一个 `prototype` 属性，指向一个对象，当该函数被用“构造函数”调用时，该对象作为该函数所有实例的“原型”。因此，`Object.prototype`\
+  \ 对象充当通过 `new Object()` 或对象字面量符号创建的所有对象的“原型”。\n\n到这里，你可能会问：`toString` 不是在所有对象上都是可用的吗？是的，它是可用的；某些对象从\
+  \ `Object.prototype` 对象继承了它，而其他对象（例如数组）则从它们的原型继承，即 `Array.prototype` 对象继承，该对象覆盖了在\
+  \ `Object.prototype` 中定义的 `toString` 实现。\n\n有些对象直接与 `Object.prototype` 对象链接，而另一些则是间接链接的。例如，数组就是间接链接的。每个数组实例直接链接到\
+  \ `Array.prototype` 对象。`Array.prototype` 对象链接到 `Object.prototype` 对象。这形成了一个以 `Object.prototype`\
+  \ 对象结尾的原型链。\n\n```\n1 const arrayPrototype = Object.getPrototypeOf([]);\n2 const\
+  \ prototypeOfArrayPrototype = Object.getPrototypeOf(arrayPrototype);\n3 \n4 console.log(arrayPrototype\
+  \ === Array.prototype);\n5 // true\n6 console.log(prototypeOfArrayPrototype ===\
+  \ Object.prototype);\n7 // true\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/prototype-chain-example3” />\n\n上述代码中演示的原型链可以通过下面的图片进行视觉化：\n\
+  \n![array prototype chain](img/module_06----lesson_06.02----public----assets----prototype-chain-array.png)\n\
+  \n数组原型链\n\n`Array.prototype` 对象包含了可以在每个数组上调用的方法，例如 `map`、`filter` 等。`Object.prototype`\
+  \ 对象包含了所有对象可用的方法，例如 `toString` 方法。\n\n正如 JavaScript 遍历作用域链来寻找当前作用域中找不到的标识符声明一样，JavaScript\
+  \ 遍历原型链来寻找当前对象中找不到的属性。原型链必须在某处结束。否则，JavaScript 将继续遍历一个无尽的链；它结束于 `Object.prototype`\
+  \ 对象。访问 `Object.prototype` 的原型会返回 `null`。\n\n```\n1 console.log(Object.getPrototypeOf(Object.prototype));\n\
+  2 // null\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/prototype-chain-example4”\
+  \ />\n\n字符串的原型链与数组的类似，区别在于没有 `Array.prototype` 对象，而是 `String.prototype` 对象，它作为所有字符串实例的原型。这个\
+  \ `String.prototype` 对象反过来链接到 `Object.prototype` 对象，其中 `Object.prototype` 对象作为 `String.prototype`\
+  \ 对象的原型。\n\n### “Function” 函数\n\n听起来可能很困惑，但有一个名为 [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)\
+  \ 的函数。JavaScript 中的函数是对象，并且是这个“Function”构造函数的实例。`Function.prototype` 对象提供了所有函数都可以访问的属性；例如\
+  \ `bind`、`apply` 等方法。\n\n`Function.prototype` 对象充当函数的原型，包括 `Object` 函数。即使是属于 `Function.prototype`\
+  \ 对象的 `Function` 函数，也从 `Function.prototype` 对象继承了属性，因为 `Function` 终究本身就是一个函数。所以，让它继承包含函数通用属性的\
+  \ `Function.prototype` 对象是有意义的。\n\n```\n1 console.log(Object.getPrototypeOf(Object)\
+  \ == Function.prototype);\n2 // true\n3 \n4 console.log(Object.getPrototypeOf(Function)\
+  \ == Function.prototype);\n5 // true\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/prototype-chain-example5” />\n\n上述描述的原型链可以通过下面的图片进行视觉化：\n\
+  \n![array prototype chain](img/module_06----lesson_06.02----public----assets----function-prototype-chain.png)\n\
+  \n数组原型链\n\n由于 `Object.prototype` 对象是根对象或父对象，它是原型链的一部分，直接链接到 `Function.prototype`\
+  \ 对象。\n\n`__proto__` 属性定义在 `Object.prototype` 对象上。它是一个 getter 和 setter，用于返回或设置对象的原型。换句话说，它返回或设置对象的内部\
+  \ `[[Prototype]]` 属性的值。\n\n虽然这个属性可以用于设置和获取对象的原型，但不建议使用它。该属性已被弃用，并且提供了更好的替代方案来获取和设置对象的原型。\n\
+  \n```\n1 const user = { name: \"John Doe\" };\n2 \n3 console.log(user.__proto__);\n\
+  4 // logs Object.prototype\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/proto-property-example1”\
+  \ />\n\n上面的代码示例展示了将 `__proto__` 属性作为 getter 来获取 `user` 对象的型的用法。它也可以作为 setter 来设置对象的内部\
+  \ `[[Prototype]]` 属性的值。再次，不建议使用它，并且有更好的替代方案。对于设置原型，我们可以使用 [setPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)\
+  \ 方法。\n\n上述代码示例中 `user` 对象的原型是 `Object.prototype` 对象。因此，`user` 对象拥有 `__proto__`\
+  \ 属性。当 `__proto__` 属性作为 getter 使用时，它仅仅暴露对象内部 `[[Prototype]]` 属性的值，在 `user` 的案例中，它返回\
+  \ `Object.prototype` 对象。\n\n### __proto__ 的问题\n\n避免使用 `__proto__` 属性获取或设置对象的原型有多个原因。\n\
+  \n\n\n\n如前所述，`__proto__` 属性已被弃用，现在存在更好的替代方案可以用于设置和获取对象的原型。该属性直到 2015 年才被标准化，因此在此之前，它是作为\
+  \ JavaScript 语言的一种非标准特性存在的。尽管 `__proto__` 属性现在已经是 ECMAScript 规范的一部分，但 ECMAScript\
+  \ 规范并没有为了推广或鼓励使用而对其进行标准化；相反，因为它已经存在于浏览器运行的多个 JavaScript 引擎中。\n\n`__proto__` 属性的另一个问题可能是可能在所有对象上都不可用。你可能会问这怎么可能？不是所有对象都直接或间接地遗继承自\
+  \ `Object.prototype` 对象吗？它可能不可用的原因是我们可以创建不继承自任何其他对象的对象（我们将在下一节中讨论这一点）。\n\n到目前，我们已经看到内置对象（如\
+  \ `Object.prototype`）被自动设置为对象的原型。那么，我们如何使用自己的对象作为其他对象的原型呢？例如，我们有以下对象，想将其作为某些其他对象的原型：\n\
+  \n```\n1 const propertyPrinter = {\n2   printOwnPropertyNames: function () {\n3\
+  \     // \"this\" refers to the object on which\n4     // this function is called\n\
+  5     for (let prop of Object.getOwnPropertyNames(this)) {\n6       console.log(prop);\n\
+  7     }\n8   }\n9 };\n```\n\n我们如何将这个对象作为另一个对象的原型呢？我们可以使用 `setPrototypeOf` 方法：\n\n\
+  ```\n 1 const propertyPrinter = {\n 2   printOwnPropertyNames: function () {\n 3\
+  \     // \"this\" refers to the object on which\n 4     // this function is called\n\
+  \ 5     for (let prop of Object.getOwnPropertyNames(this)) {\n 6       console.log(prop);\n\
+  \ 7     }\n 8   }\n 9 };\n10 \n11 const user = {\n12   firstName: \"John\",\n13\
+  \   lastName: \"Doe\",\n14   age: 25\n15 };\n16 \n17 // set the prototype of the\
+  \ \"user\" object\n18 Object.setPrototypeOf(user, propertyPrinter);\n19 \n20 //\
+  \ prototype methods are now accessible\n21 user.printOwnPropertyNames();\n22 //\
+  \ firstName\n23 // lastName\n24 // age\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/Custom-prototypes-example2” />\n\n已弃用的\
+  \ `__proto__` 属性也可以达到相同的结果，但由于它已被弃用，我们将讨论另一种显式设置对象原型的方法。\n\n### Object.create 方法\n\
+  \n`Object.create` 方法用于创建一个新对象，并将另一个对象作为第一个参数，设置为新创建对象的原型。该方法让我们能够显式地设置对象的原型。上面的代码示例可以使用\
+  \ `Object.create` 重写，如下所示：\n\n```\n 1 // create a new object and set \"propertyPrinter\"\
+  \n 2 // object as its prototype\n 3 const user = Object.create(propertyPrinter);\n\
+  \ 4  \n 5 user.firstName = \"John\";\n 6 user.lastName = \"Doe\";\n 7 user.age =\
+  \ 25;\n 8 \n 9 // prototype methods are accessible\n10 user.printOwnPropertyNames();\n\
+  11 // firstName\n12 // lastName\n13 // age\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/Custom-prototypes-example3” />\n\n###\
+  \ Null 原型对象\n\n所有对象最终继承自 `Object.prototype` 对象，因为它位于原型链的顶端，是所有对象的父级。然而，我们可以创建不继承自任何对象属性的对象。我们只需要使用上述讨论的方法，将内部\
+  \ `[[Prototype]]` 属性的值设置为 `null` 即可。\n\n```\n1 const obj = Object.create(null);\n\
+  2 \n3 console.log(obj.toString());\n4 // Error: toString not defined\n```\n\n你可以在下面的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Custom-prototypes-example4”\
+  \ />\n\n上述示例中的 `obj` 对象没有原型。如果它的原型没有被显式设置为 `null`，那么它的原型将是 `Object.prototype` 对象，并且会继承\
+  \ `toString` 方法，但如上面的代码示例所示，`obj` 无法访问 `toString` 方法。\n\n`null` 原型对象看起来似乎没用处，但在某些情况下是有用的。例如，此类对象可以防止诸如\
+  \ [原型链污染](https://learn.snyk.io/lessons/prototype-pollution/javascript/) 的攻击，恶意代码可能会向对象的原型链添加某些属性，从而改变代码执行的正常流程。\n\
+  \n考虑以下简化的示例：\n\n```\n1 const user = {};\n2 \n3 // malicious code adding \"isAdmin\"\
+  \n4 // property in the prototype object\n5 Object.prototype.isAdmin = true;\n6 \n\
+  7 if (user.isAdmin) {\n8   console.log(\"grant access\");\n9 }\n```\n\n你可以在下面的 Replit\
+  \ 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Custom-prototypes-example5”\
+  \ />\n\n如果 `user` 对象的原型是 `null`，恶意代码将不会产生影响：\n\n```\n1 const obj = Object.create(null);\n\
+  2 \n3 // malicious code adding \"isAdmin\"\n4 // property in the prototype object\n\
+  5 Object.prototype.isAdmin = true;\n6 \n7 if (user.isAdmin) {\n8   console.log(\"\
+  grant access\");\n9 } else {\n10   console.log(\"access denied\");\n11 }\n```\n\n\
+  你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/Custom-prototypes-example6”\
+  \ />\n\n在 Java 或 C# 等传统的面向对象语言中，我们可以扩展类。扩展类会创建一个父子关系，子类继承父类。\n\n在 2015 年之前，JavaScript\
+  \ 没有类。相反使用的是构造函数。为了继承构造函数，JavaScript 使用 `Object.create` 显式创建了两个构造函数之间的链接。以下代码示例显示了一个构造函数如何扩展另一个：\n\
+  \n```\n1 function Person(name, age) {\n2   this.name = name;\n3   this.age = age;\n\
+  4 }\n5 \n6 Person.prototype.introduce = function () {\n7   console.log(`My name\
+  \ is ${this.name} and I am ${this.age} years old`);\n8 };\n9 \n10 function Student(name,\
+  \ age, id) {\n11   // delegate the responsibility of initializing\n12   // \"name\"\
+  \ and \"age\" properties to the Person\n13   // constructor\n14   Person.call(this,\
+  \ name, age);\n15   this.id = id;\n16 }\n17 \n18 // set \"Person.prototype\" object\
+  \ as the prototype\n19 // of the \"Student.prototype\" object\n20 Student.prototype\
+  \ = Object.create(Person.prototype);\n21 \n22 // set the constructor property on\
+  \ the\n23 // newly created Student.prototype object\n24 Student.prototype.constructor\
+  \ = Student;\n25 \n26 const mike = new Student(\"Mike\", 20, 222);\n27 mike.introduce();\n\
+  ```\n\n这是一个运行上述代码的 Replit embed：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/ES6-classes-and-prototypes-example1”\
+  \ />\n\n上述代码值得注意以下三点：\n\n*   `Person.call(...)` 在 `Student` 构造函数内部被调用，将初始化新创建的 `Student`\
+  \ 实例或对象的 `name` 和 `age` 属性的责任委托给 `Person` 构造函数。\n\n*   使用 `Object.create` 创建了 `Student.prototype`\
+  \ 对象，并将 `Person.prototype` 设置为其原型。\n\n*   通常情况下，函数“prototype”属性所引的对象有一个指向回该函数的 `constructor`\
+  \ 属性。由于 `Object.create` 方法创建的对象没有 `constructor` 属性，我们显式地在新创建的 `Student.prototype`\
+  \ 对象上添加了 `constructor` 属性。\n\n\n\n\n\n`Student.prototype` 对象与 `Person.prototype`\
+  \ 对象之间的链接允许 `Student` 的实例可以使用定义在 `Person.prototype` 对象上的属性。\n\n下面的图片有助于直观理解由我们的代码示例创建的原型链：\n\
+  \n![constructor function prototype chain](img/module_06----lesson_06.05----public----assets----constructor-function-prototype-chain.png)\n\
+  \n构造函数原型链\n\n虽然上面的代码可以正常工作，但它是容易出错的，因为在两个构造函数之间正确设置原型链接需要多个步骤。想象一下，如果有两个以上需要这样链接的构造函数，很容易忘记任何正确设置原型链接的必要步骤。理想情况下，我们希望有一种更声明式的方式来实现相同的结果。声明式的解决方案允许我们在无需显式地在\
+  \ `Student.prototype` 和 `Person.prototype` 对象之间创建链接的情况下获得相同的结果。\n\n## ES2015 classes\n\
+  \n从 2015 年开始，JavaScript 有了类（classes）。它们提供了一种更声明式的代码编写方式，不容易出错。类带有一个 [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)\
+  \ 关键字，有助于在类之间建立父子关系。上面的代码示例可以使用类来重写，如下所示：\n\n```\n 1 class Person {\n 2   constructor(name,\
+  \ age) {\n 3     this.name = name;\n 4     this.age = age;\n 5   }\n 6 \n 7   introduce()\
+  \ {\n 8     console.log(`My name is ${this.name} and I am ${this.age} years old`);\n\
+  \ 9   }\n10 }\n11 \n12 class Student extends Person {\n13   constructor(name, age,\
+  \ id) {\n 14     // 将初始化\n 15     // \"name\" 和 \"age\" 属性的委托给父类\n 16     super(name,\
+  \ age);\n 17     this.id = id;\n 18   }\n 19 }\n```\n\n上面的代码带给了我们与构造函数相同的结果。它创建了相同的原型链接。我们可以通过以下比较来验证：\n\
+  \n```\n1 console.log(Object.getPrototypeOf(mike) === Student.prototype);\n2 // true\n\
+  3 console.log(Object.getPrototypeOf(Student.prototype) === Person.prototype);\n\
+  4 // true\n5 console.log(Object.getPrototypeOf(Person.prototype) === Object.prototype);\n\
+  6 // true\n```\n\n这里需要提到的一个重要点是，类只是传统构造函数的语法糖。在底层，我们仍然在使用构造函数，但类允许我们以更具声明式的方式编写代码。\n\
+  \n`extends` 关键字的另一个额外作用是，除了设置 `Student.prototype` 和 `Person.prototype` 对象之间的链接外，它还链接了构造函数本身。它通过将\
+  \ `Person` 类设置为 `Student` 类的原型来实现这一点。以下代码验证了 `extends` 关键字在背后为我们设置的第二个原型链。\n\n```\n\
+  1 console.log(Object.getPrototypeOf(Student) === Person);\n2 // true\n```\n\n`extends`\
+  \ 关键字设置两个原型链有两个不同的用途：\n\n* `Student.prototype ---> Person.prototype` 允许实例属性的继承。\n\
+  * `Student ---> Person` 允许静态属性的继承。\n\n## ‘this’关键字\n\n`this` 关键字是 JavaScript 语言中最令人困惑的概念之一。困惑的原因是\
+  \ `this` 关键字的值在不同上下文中设置的方式不同。\n\n在本模块中，我们将尝试揭开 `this` 关键字的谜。我们将理解设置 `this` 值的不同方式。`this`\
+  \ 关键字可以在不同的上下文中使用：函数内部、全局作用域、模块内部等。我们将探索不同的上下文以及 `this` 在这些上下文中是如何设置的。\n\n### 函数上下文\
+  \ (Function context)\n\n`this` 关键字主要用于函数内部，以引用调用该函数的对象。换句话说，当函数被作为“方法”调用时（使用对象调用），`this`\
+  \ 关键字变得可用用于引用调用该函数的对象。\n\n`this` 关键字就像传递给函数的隐式参数。就像显式函数参数一样，隐式参数 `this` 的值是在函数被`调用”（invoked）时设置的。这是一个重要的点。函数内部\
+  \ `this` 的值取决于该函数`如何`被调用（called）。\n\n考虑以下代码示例：\n\n```\n 1 const student = {\n 2\
+  \   id: 123,\n 3   name: \"John Doe\",\n 4   email: \"john@email.com\",\n 5   printInfo:\
+  \ function () {\n 6     console.log(`${this.id} - ${this.name} - ${this.email}`);\n\
+  \ 7   }\n 8 };\n 9\n10 student.printInfo();\n11 // 123 - John Doe - john@email.com\n\
+  ```\n\n这是上述代码的 Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/what-is-this-example1”>\n\
+  \n代码示例中的 `printInfo` 函数使用了 `this` 关键字，通过代码，我们可以看出 `printInfo` 函数假设 `this` 的值是 `student`\
+  \ 对象。\n\n如果不带对象调用函数会发生什么？\n\n```\n 1 const method = student.printInfo;\n 2 method();\n\
+  \ 3 // undefined - undefined - undefined\n```\n\n函数内部 `this` 的值取决于该函数`如何`被`调用。如果函数是作为对象的方法调用的，`this`\
+  \ 指向该对象。如果它是作为普通函数调用的，`this` 指向全局对象（在严格模式下为 `undefined`）。\n\n```\nfunction printInfo()\
+  \ {\n  console.log(`${this.id} - ${this.name} - ${this.email}`);\n}\n\n// 全局上下文示例\n\
+  ```\n\n\n\n\n\n在 NodeJS 中，`this` 的值取决于我们使用的是 ECMAScript 模块还是 CommonJS 模块。在 ECMAScript\
+  \ 模块中，模块顶层的 `this` 值为 `undefined`。这是因为 ECMAScript 模块中的代码是在严格模式下执行的。在 CommonJS 模块中，模块顶层的\
+  \ `this` 指向 `module.exports` 对象。\n\n:::info\n在 Node.js 中，JavaScript 代码在技术上并不是在全局作用范围内执行的。相反，它是在模块作用范围内执行的，常用的模块是\
+  \ CommonJS 和 ECMAScript 模块。\n:::\n\n在[web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)内部，顶层的\
+  \ `this` 值指向 web worker 的全局作用域，这与浏览器中包含 `window` 对象的全局作用域不同。web worker 内部的代码在其自己独立的上下文中执行，并拥有自己的全局作用域。\n\
+  \n### 构造函数上下文\n\n当函数使用 `new` 关键字作为构造函数调用时，构造函数内部的 `this` 关键字指向新创建的对象。`new` 关键字会创建一个新对象，并将新创建的对象设置为\
+  \ `this` 的值。因此，我们可以在构造函数内部使用 `this` 为新创建的对象添加属性。\n\n```javascript\nfunction Recipe(name,\
+  \ ingredients) {\n  this.name = name;\n  this.ingredients = ingredients;\n}\n```\n\
+  \n上述函数作为构造函数调用时，将为新创建的对象添加两个属性：`name` 和 `ingredients`。\n\n### 类上下文\n\nJavaScript\
+  \ 中类内部的代码是在严格模式下执行的。因此，方法内部 `this` 的值要么是 `undefined`（如果没有在对象上调用），或者是调用该方法的类实例本身。\n\
+  \n```javascript\nclass Shape {\n  constructor(color) {\n    this.color = color;\n\
+  \  }\n\n  printColor() {\n    console.log(this.color);\n  }\n}\n\nconst circle =\
+  \ new Shape(\"Red\");\nconst printColorFn = circle.printColor;\nprintColorFn();\n\
+  // Error: this is undefined\n```\n\n这是上述代码的 Replit 示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/what-is-this-example5”>\n\
+  \n上面的代码示例抛出错误，是因为我们是以“函数”的方式调用了 `printColor` 方法。正如前面提到的，类内部的代码在严格模式下执行，因此与严格模式下的函数一样，方法内部的\
+  \ `this` 是 `undefined`。\n\n### DOM 事件处理器上下文\n\n我们已经知道函数内部的 `this` 取决于如何调用函数。但那些我们不调用的回调函数呢？我是像\
+  \ DOM 事件处理器这样的回调，我们不调用它们，而是 JavaScript 在每次点击事件时为我们调用。在这种情况下，`this` 的值是什么？\n\n事件监听器回调被调用时，`this`\
+  \ 被设置为触发事件的 HTML 元素。考虑以下代码示例：\n\n```javascript\n<button>Submit</button>\n\n<script>\n\
+  \  const btn = document.querySelector(\"button\");\n\n  class FormHandler {\n  \
+  \  constructor(submitBtn) {\n      submitBtn.addEventListener(\"click\", this.submitForm);\n\
+  \    }\n\n    submitForm() {\n      console.log(\"form submitted\");\n      console.log(this);\n\
+  \    }\n  }\n\n  new FormHandler(btn);\n</script>\n```\n\n这是上述代码的 Replit 示例：\n\n\
+  <ReplitEmbed src=”https://replit.com/@newlineauthors/what-is-this-example6”>\n\n\
+  在浏览器中运行上述代码并检查浏览器开发者工具中的控制台。特别注意 `submitForm` 方法记录的 `this` 值。当该方法作为事件监听器回调被调用时，该方法内部\
+  \ `this` 的值是按钮元素，而不是我们通常预期的类实例。\n\n如果在我们在事件监听器回调函数中使用 `this` 时不小心，可能会导致问题。想象一种场景，我们需要在\
+  \ `FormHandler` 类中调用另一个方法：\n\n```javascript\n<button>Submit</button>\n\n<script>\n\
+  \  const btn = document.querySelector(\"button\");\n\n  class FormHandler {\n  \
+  \  constructor(submitBtn) {\n      submitBtn.addEventListener(\"click\", this.submitForm);\n\
+  \    }\n\n    submitForm() {\n      this.sendRequest();\n      // ERROR: this.sendRequest\
+  \ is not a function\n    }\n\n    sendRequest() {\n      console.log(\"sending request...\"\
+  );\n    }\n  }\n\n  new FormHandler(btn);\n</script>\n```\n\n在 `submitForm` 方法内部调用\
+  \ `sendRequest` 方法会抛出错误，因为正如讨论过的，事件处理器函数（在我们的例子中是 `submitForm`）内部的 `this` 是触发事件的\
+  \ HTML 元素。\n\n### 箭头函数与 `this`\n\n在深入箭头函数如何处理 `this` 之前，让我们先探索使用普通函数时 `this` 的问题。考虑以下代码：\n\
+  \n```javascript\nfunction Counter(startingValue) {\n  this.value = startingValue;\n\
+  }\n\nCounter.prototype.incrementFactory = function (incrementStep) {\n  return function\
+  \ () {\n    this.value += incrementStep;\n    console.log(this.value);\n  };\n};\n\
+  \nconst counter = new Counter(0);\nconst increment5 = counter.incrementFactory(5);\n\
+  increment5(); // NaN\nincrement5(); // NaN\nincrement5(); // NaN\n```\n\n可以在下方的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/arrow-functions-and-this1”>\n\
+  \n为什么我们得到的输出是 `NaN`？产生意外输出的原因是 `incrementFactory` 返回的函数内部的 `this`。回想一下 `this` 在函数内部是如何设置的。在上面的代码中，`increment5`\
+  \ 是如何调用的？它是作为“方法”还是独立函数调用的？它是作为“函数”调用的，因此 `this` 的值取决于我们的代码是否在严格模式下。假设我们的代码处于非严格模式，`increment5`\
+  \ 函数内部的 `this` 值是全局对象，即浏览器中的 `window` 对象。因此，`this.value` 实际上是 `window.value`，由于\
+  \ `window` 对象默认没有 `value` 属性，它是 `undefined`。结果就是当 `undefined` 加到一个数字（即 `incrementStep`\
+  \ 参数的值）时，我们得到了 `NaN` 值。\n\n如何修复这个问题？如何确保 `increment5` 函数内部的 `this` 值是我们想要的值？有多种方法可以处理这种情况。一种方法是在\
+  \ `incrementFactory` 函数返回一个函数之前保存 `this` 的值，并在返回的函数内部使用 `this` 值的变量，而不是直接使用 `this`。下面的代码示例展示了这种方法：\n\
+  \n```javascript\nfunction Counter(startingValue) {\n  this.value = startingValue;\n\
+  }\n\nCounter.prototype.incrementFactory = function (incrementStep) {\n  const thisVal\
+  \ = this; // 保存 `this` 值\n  return function () {\n    // 使用 `thisVal` 变量代替 `this`\n\
+  \    thisVal.value += incrementStep;\n    console.log(thisVal.value);\n  };\n};\n\
+  \nconst counter = new Counter(0);\nconst increment5 = counter.incrementFactory(5);\n\
+  increment5(); // 5\nincrement5(); // 10\nincrement5(); // 15\n```\n\n\n\n\n上述方法通常用于修复此类问题，即这些问题中需要周围上下文的\
+  \ `this` 值，而不是实际使用 `this` 的当前函数内部内部的 `this` 值。在上面的代码示例中，我们需要来自 `incrementFactory`\
+  \ 函数周围上下文的 `this` 值，而不是 `increment5` 函数内部的 `this` 值。\n\n### 箭头函数的救场\n\n解决上述问题的另一种方法是使用箭头函数。让我们将上面的代码示例改为使用箭头函数：\n\
+  \n```\n 1 function Counter(startingValue) {\n 2   this.value = startingValue;\n\
+  \ 3 }\n 4 \n5 Counter.prototype.incrementFactory = function (incrementStep) {\n\
+  \ 6   // 使用箭头函数\n 7   return () => {\n 8     this.value += incrementStep;\n 9  \
+  \   console.log(this.value);\n10   };\n11 };\n 12 \n13 const counter = new Counter(0);\n\
+  \ 14 const increment5 = counter.incrementFactory(5);\n 15 increment5(); // 5\n 16\
+  \ increment5(); // 10\n 17 increment5(); // 15\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/arrow-functions-and-this-example3”\
+  \ />\n\n使用箭头函数解决了这个问题，因为与普通函数不同，普通函数在调用时会获得自己的 `this` 值，而箭头函数不会获得自己的 `this` 值；相反，箭头函数内部的\
+  \ `this` 值是从周围上下文获取的。\n\n周围上下文是定义箭头函数的环境。在我们的代码示例中，箭头函数是在使用 `counter` 对象调用 `incrementFactory`\
+  \ 函数时创建的。因此，`incrementFactory` 函数内部的 `this` 指向 `counter` 对象，而这就是从 `incrementFactory`\
+  \ 函数返回的箭头函数的周围上下文。结果是当箭头函数被调用时，它内部的 `this` 值也是 `counter` 对象，这正是我们希望 `increment5`\
+  \ 函数内部的 `this` 所具有的值，以便我们的代码示例能够正常工作。\n\n让我们回顾一下上一课中讨论的例子：\n\n```\n 1 <button>Submit</button>\n\
+  \ 2 \n 3 <script>\n 4   const btn = document.querySelector(\"button\");\n 5 \n 6\
+  \   class FormHandler {\n 7     constructor(submitBtn) {\n 8       submitBtn.addEventListener(\"\
+  click\", this.submitForm);\n 9     }\n10 \n 11     submitForm() {\n 12       this.sendRequest();\n\
+  \ 13       // ERROR: this.sendRequest is not a function\n 14     }\n 15 \n 16  \
+  \   sendRequest() {\n 17       console.log(\"sending request...\");\n 18     }\n\
+  \ 19   }\n 20 \n 21   new FormHandler(btn);\n 22 </script>\n```\n\n上述代码示例中的 `submit`\
+  \ 按钮会报错，因为 `submitForm` 方法内部的 `this` 值是按钮元素，而不是 `FormHandler` 类的实例。因此，调用 `this.sendRequest()`\
+  \ 会报错，因为 `this` 需要指向 `FormHandler` 类的实例，以便允许我们在 `submitForm` 方法内部调用该类的其他方法。所以问题是，我们如何从\
+  \ `submitForm` 方法调用 `sendRequest` 方法呢？我们在上一课中提到，解决这个问题有多种方法。其中一种方法就是使用箭头函数。\n\n\
+  为了修复此问题，在 `FormHandler` 类的构造函数内部，我们可以将箭头函数而不是 `this.submitForm` 作为回调函数传递给点击监听器。在箭头函数内部，我们可以调用\
+  \ `submitForm` 方法来处理点击事件。\n\n```\n1 class FormHandler {\n2   constructor(submitBtn)\
+  \ {\n3     submitBtn.addEventListener(\"click\", () => this.submitForm());\n4  \
+  \ }\n5 \n6   // 方法...\n7 }\n```\n\n为什么将箭头函数作为回调函数可以修复问题？我们仍然在箭头函数内部调用了 `submitForm`\
+  \ 方法，那么这与直接传递 `this.submitForm` 作为回调函数有什么区别呢？\n\n箭头函数修复问题的原因是，正如之前讨论的，箭头函数没有自己的\
+  \ `this` 值；它们从周围环境获取 `this`。在这种情况下，周围环境是构造函数。构造函数内部的 `this` 值是什么？当使用 `new` 关键字调用构造函数时，它的\
+  \ `this` 值是 `FormHandler` 类的实例。因此，箭头函数内部的 `this` 值不再像上一个示例那样指向事件处理器回调函数中的 HTML 元素，而是与构造函数相同，即\
+  \ `FormHandler` 类的实例。所以当我们在箭头函数内部调用 `submitForm` 方法时，`submitForm` 方法内部的 `this` 值也是\
+  \ `FormHandler` 类的实例。结果是我们可以在 `submitForm` 方法内部调用任何其他方法。\n\n在报错的代码旧版本中，事件处理器是 `this.submitForm`\
+  \ 方法。它没有由我们的代码显式调用。相反，每当点击提交按钮时，JavaScript 就会调用它。由于我们没有显式调用，因此无法控制 `submitForm`\
+  \ 方法内部的 `this` 值。使用箭头函数允许我们显式调用 `submitForm` 方法，从而控制其内部的 `this`。\n\n箭头函数非常有用，是该语言的欢迎补充。它们解决的问题也可以其他方法，但其他方法比箭头函数更冗长。\n\
+  \n到目前为止，我们讨论了 `this` 的值取决于执行 JavaScript 代码的环境，或者在函数的情况下取决于如何调用函数。我们还讨论了箭头函数没有自己的\
+  \ `this` 值；相反，它们从周围上下文获取 `this`。\n\n到目前为止，我们看到的设置 `this` 值的所有方法都是自动设置的。JavaScript\
+  \ 还为我们提供了显式设置 `this` 为我们想要的值的方法。\n\n我们可以使用以下三个内置方法之一显式设置 `this`：\n\n*   [Function.prototype.call()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Objects/Function/call)\n\
+  *   [Function.prototype.apply()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Objects/Function/apply)\n\
+  *   [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Objects/Function/bind)\n\
+  \n我们不会详细介绍这些方法的工作原理；你可以通过提供的链接了解每个方法的方法。然而，我们将看到显式设置 `this` 是很有用的。\n\n让我们再次回到上一课关于箭头函数的代码示例：\n\
+  \n```\n 1 function Counter(startingValue) {\n 2   this.value = startingValue;\n\
+  \ 3 }\n 4 \n5 Counter.prototype.incrementFactory = function (incrementStep) {\n\
+  \ 6   return function () {\n 7     this.value += incrementStep;\n 8     console.log(this.value);\n\
+  \ 9   };\n10 };\n 11 \n13 const counter = new Counter(0);\n 14 const increment5\
+  \ = counter.incrementFactory(5);\n 15 increment5(); // NaN\n 16 increment5(); //\
+  \ NaN\n 17 increment5(); // NaN\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/binding-this-example1” />\n\n在上一课中，我们看到使用箭头函数如何修复了上面的代码示例。我们也可以通过显式将\
+  \ `this` 设置为所需的值（即用于调用 `incrementFactory` 函数的 `counter` 对象）来修复此代码。与其使用箭头函数，我们可以使用\
+  \ `bind` 方法来设置 `this` 的值。\n\n\n\n\n```javascript\nfunction Counter(startingValue)\
+  \ {\n  this.value = startingValue;\n}\n\nCounter.prototype.incrementFactory = function\
+  \ (incrementStep) {\n  const incrementFn = function () {\n    this.value += incrementStep;\n\
+  \    console.log(this.value);\n  };\n\n  // return a function with `this` bound\n\
+  \  // to the object used to invoke the\n  // `incrementFactory` method\n  return\
+  \ incrementFn.bind(this);\n};\n\nconst counter = new Counter(0);\nconst increment5\
+  \ = counter.incrementFactory(5);\nincrement5(); // 5\nincrement5(); // 10\nincrement5();\
+  \ // 15\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/binding-this-example2”\
+  \ />\n\n## 方法借用\n\n想象有一个对象，它包含了一些对其他对象也有用的方法。我们如何在其他对象上使用这些方法呢？一种方案是为需要这些方法的对象重复定义方法。但我们并不希望重复。是否有方法可以避免重复并重用现有的方法？\n\
+  \n```javascript\nconst john = {\n  name: \"John\",\n  sayHello() {\n    console.log(\"\
+  Hello, I am \" + this.name);\n  }\n};\n\nconst sarah = {\n  name: \"Sarah\"\n};\n\
+  \n// 从 john 借用方法\nconst sayHello = john.sayHello;\nsayHello.call(sarah);\n// Hello,\
+  \ I am Sarah\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/binding-this-example3”\
+  \ />\n\n我们可以显式地设置函数内部 `this` 的值，并使用上述三种方法中的任何一种与其他对象一起使用它。这允许我们避免重复并重用代码。\n\n此时，你可能会问：*我们难道不能创建一个构造函数，允许我们创建对象并在构造函数的原型属性中添加公共方法吗？*\
+  \ 你是对的。创建一个构造函数是处理想要创建相似对象的情况正确方法。然而，显式设置 `this` 的值允许我们在不相关的对象之间重用代码。这是一个很好的选择，可以在适当的地方使用。\n\
+  \n## 链式调用构造函数\n\n在 JavaScript 引入类之前，从另一个构造函数继承的传统方法是显式地设置原型链，并重用被继承的构造函数来向新创建的对象添加公共属性。以下代码示例展示了如何将责任委托给现有构造函数，以便为新创建的对象添加一些属性：\n\
+  \n```javascript\nfunction Employee(name, age, id) {\n  this.name = name;\n  this.age\
+  \ = age;\n  this.id = id;\n}\n\nfunction BankEmployee(name, age, id, bankName) {\n\
+  \  // 将添加 \"name\", \"age\" 和 \"id\" 属性的责任\n  // 委托给 Person 构造函数\n  Employee.call(this,\
+  \ name, age, id);\n  this.bankName = bankName;\n}\n```\n\n在上面的代码示例中，使用了 `call` 方法来调用\
+  \ `Employee` 构造函数，传入 `Employee` 构造函数可以在新创建的对象上设置的三个属性。但我们如何告诉 `Employee` 构造函数将属性添加到新创建的\
+  \ `BankEmployee` 对象上呢？这就是传递给 `call` 方法的第一个参数所起的作用。我们将 `this` 作为第一个参数传递了。回想函数内部 `this`\
+  \ 的值是如何设置的：它取决于函数如何被调用。在这种情况下，我们期望 `BankEmployee` 函数通过 `new` 关键字作为构造函数被调用。结果，`BankEmployee`\
+  \ 函数内部的 `this` 将新创建的对象。这个新创建的对象被显式地设置为 `Employee` 构造函数内部 `this` 的值。\n\n换句话说，`Employee`\
+  \ 构造函数是从 `BankEmployee` 构造函数内部调用的，其中 `this` 被显式设置为新创建的 `BankEmployee` 对象。结果，在 `Employee`\
+  \ 构造函数内部向 `this` 添加的属性实际上被添加到新创建的 `BankEmployee` 对象中。这就是我们如何使用现有构造函数并减少代码重复的方法。\n\
+  \n## 重温“this”问题\n\n让我们回到第一课中讨论的例子。\n\n```html\n<button>Submit</button>\n\n<script>\n\
+  \  const btn = document.querySelector(\"button\");\n\n  class FormHandler {\n  \
+  \  constructor(submitBtn) {\n      submitBtn.addEventListener(\"click\", this.submitForm);\n\
+  \    }\n\n    submitForm() {\n      this.sendRequest();\n      // 错误：this.sendRequest\
+  \ 不是一个函数\n    }\n\n    sendRequest() {\n      console.log(\"sending request...\"\
+  );\n    }\n  }\n  new FormHandler(btn);\n</script>\n```\n\n我们试图解决的问题是，我们希望在事件处理器内部访问\
+  \ `this`，但事件处理器内部的 `this` 是 HTML 按钮，这并不是我们想要的。在上一节中，我们看到了箭头函数如何解决这个问题。另一种修复问题的方法是：\n\
+  \n```javascript\nclass FormHandler {\n  constructor(submitBtn) {\n    submitBtn.addEventListener(\"\
+  click\", this.submitForm.bind(this));\n  }\n\n  // 方法...\n}\n```\n\n向 `addEventListener`\
+  \ 方法传递 `this.submitForm` 与传递 `this.submitForm.bind(this)` 的区别在于，对于 `this.submitForm`，`submitForm`\
+  \ 内部的 `this` 值取决于该函数如何被调用。在这种情况下，我们知道它内部的 `this` 值将是 HTML 元素。另一方面，传递 `this.submitForm.bind(this)`\
+  \ 解决了问题，因为与以前不同，`submitForm` 内部的 `this` 值被显式绑定为 `FormHandler` 类的实例。\n\n\n\n\n\n\
+  尽管该属性在现代浏览器中被[良好支持](https://caniuse.com/?search=globalThis)，但旧版本的浏览器并不支持它。因此，在使用该属性时，可能需要考虑浏览器的支持情况。\n\
+  \n### “this” 与 globalThis\n\n不应将 `globalThis` 与 `this` 关键字混淆。在本模块中，我们讨论了 `this`\
+  \ 的值如何根据不同的执行上下文而变化，但 `globalThis` 只是在不同 JavaScript 环境中访问全局对象的标准方式。它的值仅取决于代码执行的环境。它不受函数如何被调的影响，也不受我们的代码是否处于严格模式的影响。\n\
+  \n在 ECMAScript 模块中，代码在严格模式下执行。因此，模块作用域内 `this` 的值为 `undefined`，但 `globalThis` 的值是执行环境的全局对象；在\
+  \ NodeJS 中，它是 `global` 对象，在浏览器中，它是 `window` 对象。\n\n本模块完全围绕 `this` 关键字；我们讨论了它的值在不同上下文中被设置的不同方式；我们还讨论了由于\
+  \ `this` 出现意外值而可能产生的问题，并探索了修复此类问题的不同方案。\n\n由于 `this` 在不同上下文中可能有不同的值，让我们总结一下 `this`\
+  \ 在不同上下文中的取值：\n\n- 在箭头函数的情况下，`this` 的值取自周围上下文。\n- 在普通函数的情况下，`this` 的值取决于函数*如何*被调用，以及代码是否在严格模式下执行。\n\
+  \    - 如果使用 `new` 关键字将函数作为构造函数调用，则 `this` 的值是新创建的对象。\n    - 如果使用 `bind`、`call` 或\
+  \ `apply` 函数显式设置 `this` 的值，那么 `this` 的值就是传递给这些函数的第一个参数的任何值。\n    - 如果函数作为“方法”调用，则\
+  \ `this` 的值是调用该方法时使用的对象。\n    - 如果在不带对象的情况下调用函数（即作为“函数”调用），则 `this` 的值在非严格模式下为全局对象，在严格模式下为\
+  \ `undefined`。\n- 在 DOM 事件处理器回调中，`this` 的值是触发事件的 HTML 元素。\n- 在浏览器的全局作用域中，`this`\
+  \ 指向全局 `window` 对象。\n- 在 NodeJS 中，顶层代码在模块作用域下执行。在 ECMAScript 模块中，`this` 在模块顶层为 `undefined`，因为\
+  \ ECMAScript 模块中的代码隐式在严格模式下执行。在 CommonJS 模块中，`this` 指向模块顶层的 `module.exports` 对象。\n\
+  \n希望本模块让你更好地理解 `this` 关键字，并帮助你理解它的值在不同上下是如何设置的。本模块旨在帮助你理解 `this` 的意外值可能给代码带来的问题，以及我们有哪些不同的选项来修复此类问题。\n\
+  \n### Symbol\n\n`symbol` 是一个可以使用名为 `Symbol` 的函数创建的原始值。这种原始值有趣之处在于它保证是唯一的。这种唯一性的保证是\
+  \ symbol 的卖点。\n\n随着 ES2015 引入 symbol，JavaScript 发生了两个变化：\n\n- 语言引入了一种新类型的值。\n- 之前只允许将字符串添加到对象的键中。现在，symbol\
+  \ 也可以作为键。\n\n在讨论如何在代码中使用 symbol 之前，让我们先了解在 JavaScript 语言中添加 symbol 的动机。\n\nsymbol\
+  \ 原意 intended 作为一种向对象添加私有属性的机制，并应该被称为“私有名称对象”（private name objects）。但后来，它们的名称改为\
+  \ symbol，并且它们变成了一种原始值。\n\n事实证明，每个 symbol 都是唯一的值非常有用，因为它允许 JavaScript 语言进行扩展并保持向后兼容。symbol\
+  \ 允许 JavaScript 为对象添加新属性，这些属性不会与其他可能在代码中使用的现有属性冲突。\n\nTC39 的主要目标之一是保持 JavaScript\
+  \ 的向后兼容。基于这一目标，添加到语言的任何新功能都不能破坏现有代码。symbol 有助于实现向后兼容的承诺。\n\nJavaScript 语言中的某些功能需要在对象上查找属性。对于这些功能可以选择哪些属性键呢？选择任何字符串属性名都是可能的，因为可能有人在代码中使用了该属性，而为新功能使用该属性可能会破坏他们的代码。\n\
+  \n例如，为了将对象转换为原始值，类型转换算法会在对象上查找一个名为 [Symbol.toPrimitive](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)\
+  \ 的特殊属性。如果存在此类属性且其值为函数，则使用它的返回值作为对象的原始表示。否则，将使用在早先关于强制转换的模块中解释的以不同顺序调用 `toString`\
+  \ 和 `valueOf` 方法的默认机制。\n\n想想这种功能如何通过字符串属性添加到语言中。可能选择什么名称才能保证不破坏现有代码呢？\n\n这就是 symbol\
+  \ 发放异彩的地方。将 symbol 作为属性通过向对象添加唯一属性来实现此类功能，而这些属性绝不可能破坏现有代码，因为：\n\n- symbol 在 ES2015\
+  \ 之前不存在，且\n- 每个 symbol 都是唯一的值\n\nsymbol 值可以使用 `Symbol` 函数创建。需要注意的是 `Symbol` 函数必须在不带\
+  \ `new` 关键字的情况下调用。尝试使用 `new` 关键字调用 `Symbol` 函数将导致错误。\n\n```\nconst sym = Symbol();\n\
+  ```\n\n一旦创建了 symbol，可以使用括号符号将其作为属性添加到现有对象中：\n\n```javascript\nconst sym = Symbol();\n\
+  \nconst obj = {};\nobj[sym] = \"hello\";\n\nconsole.log(obj[sym]); // hello\n```\n\
+  \n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-2”\
+  \ />\n\n或者也可以使用计算属性表示法将 symbol 作为属性：\n\n```javascript\nconst sym = Symbol();\n\n\
+  const obj = {\n  [sym]: \"hello\"\n};\n\nconsole.log(obj[sym]); // hello\n```\n\n\
+  你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-3”\
+  \ />\n\n### Symbol 与私有性\n\n对象上的普通字符串属性可以通过多种方式进行访问。例如，考虑以下代码示例：\n\n```javascript\n\
+  const name = \"name\";\n\nconst person = {\n  [name]: \"John Doe\"\n};\n\nconsole.log(person.name);\
+  \ // John Doe\nconsole.log(person[\"name\"]); // John Doe\nconsole.log(person[name]);\
+  \ // John Doe\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-4”\
+  \ />\n\n在这个示例中，通过计算属性名向 `person` 对象添加了属性键“name”。正如上述代码示例所示，该属性可以通过多种方式访问。但如果将 `name`\
+  \ 变量的值从 `string` 变为 `symbol` 会发生什么？\n\n```javascript\nconst name = Symbol();\n\n\
+  const person = {\n  [name]: \"John Doe\"\n};\n\nconsole.log(person.name); // undefined\n\
+  console.log(person[\"name\"]); // undefined\nconsole.log(person[name]); // John\
+  \ Doe\n```\n\n\n\n\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-example5”\
+  \ />\n\n你会发现 `person.name` 和 `person[\"name\"]` 的输出都是 `undefined`，但最后一个 `console.log`\
+  \ 语句按预期记录了名称。那么，前两个语句和最后一个之间有什么区别呢？前两个语句输出 `undefined` 是因为在获取到原始符号（symbol）之前，无法访问符号属性的。在上面的代码示例中，只有最后一个\
+  \ `console.log` 语句使用了原始符号，这就是为什么它记录的是名称而不是 `undefined`。\n\n那么，如果原始符号无法访问，这是否意味着符号属性是一个私有属性呢？如果对对象的属性进行迭代会发生什么？让我们来看看是否可以获取对象的符号属性。\n\
+  \n```\n 1 const name = Symbol();\n 2 \n3 const person = {\n 4   [name]: \"John Doe\"\
+  ,\n 5   age: 20\n 6 };\n 7  8 // 只能看到 \"age\" 属性\n 9 for (const prop in person)\
+  \ {\n10   console.log(prop);\n11 }\n12 \n13 console.log(Object.keys(person)); //\
+  \ [\"age\"]\n14 \n15 console.log(Object.getOwnPropertyNames(person)); // [\"age\"\
+  ]\n```\n\n你可以在下方的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-example6”\
+  \ />\n\n查看上述代码示例的输出，可能会认为符号属性确实是私有的。然而，这个假设是错误的。正如下一个代码示例所示，符号属性并不是私有的。\n\n```\n\
+  \ 1 const name = Symbol();\n 2 \n3 const person = {\n 4   [name]: \"John Doe\",\n\
+  \ 5   age: 20\n 6 };\n 7 \n 8 console.log(Object.getOwnPropertyDescriptors(person));\n\
+  \ 9 \n10 console.log(Object.getOwnPropertySymbols(person));\n```\n\n你可以在下方的 Replit\
+  \ 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-example7”\
+  \ />\n\n上面的代码示例显示，可以使用 `Object.getOwnPropertyDescriptors` 或 `Object.getOwnPropertySymbols`\
+  \ 等方法发现符号属性。虽然与 `string` 属性相比，访问符号属性可能不方便，但它们并不是私有的。JavaScript 有真正的[私有属性](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields)，而符号的设计目的并不是作为私有属性使用。\n\
+  \n### 为符号添加描述\n\n在创建符号时，可以选择为每个符号提供一个描述。这个描述对于调试目的非常有用。下面的代码示例创建了一个带有描述的符号：\n\n\
+  ```\n1 const propSymbol = Symbol(\"property symbol\");\n```\n\n描述是作为参数传递给 `Symbol`\
+  \ 函数的。然后可以使用符号上名为 `description` 的属性来访问提供的描述。\n\n```\n1 const propSymbol = Symbol(\"\
+  property symbol\");\n2 \n3 console.log(propSymbol.description);\n4 // property symbol\n\
+  ```\n\n你可以在下方的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-example9”\
+  \ />\n\n`description` 属性只能用于获取符号的属性；不能用于设置描述。下面的代码示例显示，为符号的 `description` 属性赋值不会改变其值。`description`\
+  \ 属性实际上是一个 getter（get），且该属性没有定义 setter（set）。因此，只能通过该属性获取描述，而无法设置。\n\n```\n1 const\
+  \ propSymbol = Symbol(\"property symbol\");\n2 \n3 console.log(propSymbol.description);\n\
+  4 // property symbol\n5 \n6 propSymbol.description = \"123\";\n7 \n8 console.log(propSymbol.description);\n\
+  9 // property symbol\n```\n\n你可以在下方的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/creating-symbols-example10”\
+  \ />\n\n每次调用 `Symbol` 函数都会创建一个全新的唯一符号。然而，JavaScript 还允许我们创建可以在跨文件或[作用域 (realms)](https://weizmangal.com/2022/10/28/what-is-a-realm-in-js/#:~:text=You%20can%20informally%20think%20of,order%20to%20exist%20within%20it.)\
+  \ 共享的符号。这就是**全局符号**（global symbol）仓库概念出现的地方。\n\n我们可以使用 `Symbol.for` 方法在全局符号仓库中创建一个全局符号。\n\
+  \n```\n1 const globalSymbolKey = \"my-global-Symbol\";\n2 const mySymbol = Symbol.for(globalSymbolKey);\n\
+  3 \n4 console.log(mySymbol === Symbol.for(globalSymbolKey));\n5 // true\n```\n\n\
+  你可以在下方的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/global-symbols-example”\
+  \ />\n\n我们向 `Symbol.for` 方法传递一个键（key），使用这个键，我们可以在全局符号仓库中检索与之关联的符号。如果键在仓库中，`Symbol.for`\
+  \ 方法将返回与之关联的符号；否则，它会在仓库中创建并与之关联。\n\n如果我们有一个全局符号，可以使用 `keyFor` 方法获取与之关联的键。\n\n```\n\
+  1 const globalSymbolKey = \"my-global-Symbol\";\n2 const mySymbol = Symbol.for(globalSymbolKey);\n\
+  3 \n4 console.log(Symbol.keyFor(mySymbol));\n5 // \"my-global-Symbol\"\n```\n\n\
+  这里有一个 Replit 可以运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/global-symbols-example2”\
+  \ />\n\n\n\n\n\n对于用户定义对象，默认的 `toString` 输出如上所示，为 `[object Object]`，其中标签是“Object”——这并不好用。\n\
+  \n众知的符号 `Symbol.toStringTag` 允许我们更改标签的值。\n\n```\n1 const task = {\n2   title: \"\
+  exercise\",\n3   isComplete: false,\n4   [Symbol.toStringTag]: \"Task\"\n5 };\n\
+  6 \n7 console.log(task.toString()); // [object Task]\n```\n\n你可以在这个 Replit 中看到上述代码示例的输出：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/well-known-symbols-example4”\
+  \ />\n\n### Symbol.isConcatSpreadable\n\n`[Symbol.isConcatSpreadable]` 属性由数组的 `concat`\
+  \ 方法查找，用于确定传递给 `concat` 方法的数组或类对象的元素应该是展开还是展平。\n\n```\n1 const arr = [1, 2, 3];\n\
+  2 console.log([].concat(arr));\n3 // [1, 2, 3]\n4 \n5 arr[Symbol.isConcatSpreadable]\
+  \ = false;\n6 console.log([].concat(arr));\n7 // [[1, 2, 3]]\n```\n\n你可以在这个 Replit\
+  \ 中看到上述代码示例的输出：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/well-known-symbols-example5”\
+  \ />\n\n如上述代码示例的输出所示，数组的默认行为是展开它们的元素。可以通过将 `Symbol.isConcatSpreadable` 设置为 `false`\
+  \ 来覆盖此默认行为。\n\n对于[类数组对象](https://stackoverflow.com/questions/29707568/javascript-difference-between-array-and-array-like-object)，默认行为是不展开它们的属性。可以通过将\
+  \ `Symbol.isConcatSpreadable` 设置为 `true` 来覆盖它。\n\n```\n1 const obj = {\n2   0: 123,\n\
+  3   1: 456,\n4   length: 2,\n5   [Symbol.isConcatSpreadable]: true\n6 };\n7 \n8\
+  \ console.log([].concat(obj));\n9 // [123, 456]\n```\n\n你可以在这个 Replit 中看到上述代码示例的输出：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/well-known-symbols-example6”\
+  \ />\n\n还有其他众知的符号，允许我们挂钩 JavaScript 中不同的内置操作。完整列表可以在 [ECMAScript 规范](https://tc39.es/ecma262/#sec-well-known-symbols)\
+  \ 或 [MDN - Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)\
+  \ 中查看。\n\n### 异步 JavaScript\n\n在本模块中，我们将涵盖 JavaScript 中的异步编程。我们将学习异步编程的含义以及它传统上在\
+  \ JavaScript 中是如何实现的。我们还将讨论传统的处理 JavaScript 异步代码的方法存在的问题，以及 ES2015 引入的 promises（承诺）如何改变了我们处理\
+  \ JavaScript 异步代码的方式。我们将详细讨论 promises，并学习简化 promise 使用的 `async-await` 语法。\n\n###\
+  \ 什么是异步？\n\n在编程语境下，“异步”意味着程序启动了一个可能耗时很长的任务，并在该耗时任务在后台执行时，自由执行其他任务。这里的关键点是，程序不必等待耗时任务的完成；它可以自由执行其他任务。一旦任务完成，程序会收到通知并获得任务的结果。\n\
+  \n之所以需要异步编程是因为传统的同步编程存在问题。在同步程序中，每条指令都按顺序一个接一个地执行。指令按照它们在程序中出现的顺序进行执行。因此，同步程序更容易推理，但它们也带来了由异步编程解决的问题。\n\
+  \n同步程序的问题在于，可能耗时很长的任务会阻塞程序的执行，直到其完成。这导致了程序性能不佳、用户体验差以及资源利用率低下等问题。\n\n尽管异步程序解决了同步程序带来的问题，但异步程序也有自己的挑战，例如错误处理、管理共享状态和资源、管理程序不同部分之间的协调等。\n\
+  \n### 异步 JavaScript\n\n在我们深入研究如何在 JavaScript 中编写异步代码以及它们在后台如何被处理之前，让我们先退一步，看看如果在\
+  \ JavaScript 中执行某些耗时代码（例如示例中的循环），我们将面临的问题：\n\n```\n 1 function block() {\n2   const\
+  \ start = new Date();\n3 \n4   while (new Date() - start < 3000) {\n5     // 模拟耗时操作\n\
+  6     // 大约需要 3 秒\n7   }\n8 }\n9 \n10 console.log(\"Before long running operation\"\
+  );\n11 // 立即记录\n12 \n13 block();\n14 \n15 console.log(\"After long running operation\"\
+  );\n16 // 在大约 3 秒后记录\n```\n\n你可以在这个 Replit 中看到上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/overview-example1”>\n\
+  \nJavaScript 是一种单线程语言，这有优点也有缺点。JavaScript 开发者通常不需要担心多线程程序带来的问题，如竞态条件和死锁。然而，单线程的局限性在上面的代码中显而易见。上面的代码示例旨在模拟某些大约需要\
+  \ 3 秒的耗时代码。在这 3 秒期间，执行我们 JavaScript 代码的主线程被阻塞了；没有其他代码执行。\n\n要查看 UI 冻结的效果，请尝试将上述\
+  \ JavaScript 代码添加到名为 `index.js` 的文件中，并将其附加到包含以下 HTML 的 HTML 文件中：\n\n```\n1 <h1>hello\
+  \ world</h1>\n2 <button onclick=\"alert('hello')\">Click</button>\n```\n\n你可以在这个\
+  \ Replit 中看到上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/overview-example2”>\n\
+  \n在页面初始加载时，你会注意到按钮在几秒内是不可点击的。UI 将保持冻结，直到 JavaScript 代码执行完毕，特别是那个耗时循环。这在 Web 应用中带来了极糟糕的用户体验。单线程对我们在主线程上使用\
+  \ JavaScript 能做的事情产生了硬性限制。\n\n如今，JavaScript 引擎已经足够以非常快的速度执行代码；引擎的设计旨在深度优化 JavaScript\
+  \ 代码以最高效的方式执行。尽管如此，人们仍需要注意主线程不被任何可能导致明显延迟的代码阻塞。\n\n:::info\n\nJavaScript 还允许我们使用\
+  \ [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)\
+  \ 在独立主线程的线程中执行某些代码。\n\n:::\n\n接下来，我们将讨论使用回调函数（callbacks）在 JavaScript 中编写异步代码的传统方法。我们还将讨论使用回调函数的问题。\n\
+  \n使用回调函数处理异步代码是 JavaScript 中编写异步代码的传统方法。回调函数是作为参数传递给另一个函数的函数，并旨在在某些异步操作后被调用。接收回调函数参数的函数通常会带异步操作的结果或异步操作失败时的错误调用回调函数。\n\
+  \n像 HTTP 请求这样的操作是异步的，但它们并不是由 JavaScript 处理的。我们编写的代码启动异步操作；实际异步操作在客户端 JavaScript\
+  \ 中由浏览器处理，在 NodeJS 运行时中由后台线程或操作系统本身处理。\n\n\n\n\n简单来说，异步操作在后台执行（JavaScript 区域之外），而在与此同时，其他操作可以在主线程上执行（JavaScript\
+  \ 区域内）。\n\n当异步操作完成时，我们的 JavaScript 代码会收到通知，从而导致我们在启动异步操作时提供的回调函数执行。\n\n这就是 JavaScript\
+  \ 绕过其单线程限制的方法。异步操作实际上是由运行时（浏览器、NodeJS 等）处理的。在此期间，JavaScript 可以执行其他事情。\n\n下面的代码示例了如何通过向虚假的\
+  \ REST API 发送 HTTP 请求来使用回调函数：\n\n```javascript\n 1 function fetchUser(url) {\n 2\
+  \   const xhr = new XMLHttpRequest();\n 3 \n 4   xhr.addEventListener(\"load\",\
+  \ function () {\n 5     // 检查操作是否完成\n 6     if (xhr.readyState === 4) {\n 7    \
+  \   if (xhr.status === 200) {\n 8         // 请求成功\n 9         const data = JSON.parse(xhr.responseText);\n\
+  10         console.log(data);\n11       } else {\n12         // 请求失败\n13       \
+  \  const error = new Error(\"Failed to fetch todo\");\n14         console.log(error);\n\
+  15       }\n16     }\n17   });\n18 \n19   xhr.open(\"GET\", url);\n20   xhr.send();\n\
+  21 }\n22 \n23 fetchUser(\"https://jsonplaceholder.typicode.com/todos/1\");\n```\n\
+  \n你可以在下面的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/callbacks-example1”\
+  \ />\n\n传递给 `addEventListener` 方法的回调函数处理 HTTP 请求的结果。\n\n不同的 DOM 事件（例如点击事件）也是使用回调函数异步处理的。回调被注册为事件处理程序，并在每当事件触发时都会被调用。\n\
+  \n```javascript\n1 const submitBtn = document.getElementById(\"submit\");\n2 \n\
+  3 submitBtn.addEventListener(\"click\", function (event) {\n4   // 处理点击事件的代码\n5\
+  \ });\n```\n\n同样，不同的定时函数（如 `setTimeout`）也提供了一个回调函数，旨在在指定时间过后被调用。\n\n```javascript\n\
+  1 setTimeout(function () {\n2   console.log(\"logged after 2 seconds\");\n3 }, 2000);\n\
+  ```\n\n你可以在下面的 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/callbacks-example3”\
+  \ />\n\n有一个常见的误区，认为传递给 `setTimeout` 的回调恰好指定时间通过后被调用的。我们在调用 `setTimeout` 时指定的时间是提供的回调函数被调用的*最小*时间。\n\
+  \n在上面提供的代码示例中，我们指定了 2 秒（2000 毫秒）作为调用回调的时间。但回调不会恰好在 2 秒后调用。想象一种场景，我们还有一个运行大约需要 4\
+  \ 秒的长运行循环。正如我们在上一节中讨论过的，JavaScript 是单线程的，所以长运行循环会阻塞主线程，这意味着传递给 `setTimeout` 的回调函数在循环结束之前无法执行。下面的代码示例演示了这种场景：\n\
+  \n```javascript\n1 setTimeout(function () {\n2   console.log(\"logged after approximately\
+  \ 4 seconds instead of 2\");\n3 }, 2000);\n4 \n5 const start = new Date();\n6 \n\
+  7 // 执行大约需要 4 秒\n8 while (new Date() - start < 4000) {}\n```\n\n你可以在下面的 Replit 中运行上面的代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/callbacks-example4” />\n\n\
+  上面的代码示例表明，`setTimeout` 回调或传递给 `setInterval` 函数的回调可能在指定时间过后没有被调用；某些其他代码可能会阻止它们在指定时间后被调用。\n\
+  \nJavaScript 是单线程的；主线程一次只能执行一件事。目前，正在执行的代码无法被中断以执行其他代码，例如上面代码示例中的 `setTimeout` 回调函数。\n\
+  \n回调函数是 JavaScript 异步代码的核心。使用回调虽然可行，但它们也带来了许多问题。\n\n#### 回调的问题\n\n使用传统的回调方式处理异步代码会产生多个问题，导致难以有效使用回调。\n\
+  \n#### 回调地狱 (Callback hell)\n\n想象一种场景，多个异步操作需要按顺序启动，因为每个操作都取决于上一个操作的结果。为了处理这种场景，我们必须嵌套回调，这取决于异步操作的数量，可能会导致代码难以阅读和维护。下面的代码示例展示了这一点：\n\
+  \n```javascript\n1 asyncOperation1((result1) => {\n2   asyncOperation2(result1,\
+  \ (result2) => {\n3     asyncOperation3(result2, (result3) => {\n4       asyncOperation4(result3,\
+  \ (result4) => {\n5         // ...更多嵌套的回调和操作\n6       });\n7     });\n8   });\n\
+  9 });\n```\n\n这就是所谓的`回调地狱` (Callback Hell) 或 `地狱金字塔` (Pyramid of Doom)，因为每一层的嵌套创建了一个看起来像金字塔的结构。\n\
+  \n观察上面的代码示例，不难想象随着异步操作序列中添加更多操作，它将变得越来越读。不仅难以阅读，而且难以维护和重构。注意，上面的代码示例没有包含任何错误处理；将错误处理添加到上面的代码中，将会得到：\n\
+  \n```javascript\n1 asyncOperation1((error1, result1) => {\n2   if (error1) {\n3\
+  \     // 处理错误\n4   } else {\n5     asyncOperation2(result1, (error2, result2) =>\
+  \ {\n6       if (error2) {\n7         // 处理错误\n8       } else {\n9         asyncOperation3(result2,\
+  \ (error3, result3) => {\n10           if (error3) {\n11             // 处理错误\n12\
+  \           } else {\n13             asyncOperation4(result3, (error4, result4)\
+  \ => {\n14               if (error4) {\n15                 // 处理错误\n16         \
+  \      } else {\n17                 // ...更多嵌套的异步操作和回调\n18               }\n19 \
+  \            });\n20           }\n21         });\n22       }\n23     });\n24   }\n\
+  25 });\n```\n\n上面的代码符合其实名：`回调地狱` (Callback Hell)。没人想处理这样的代码。它很难进行推理。我们将在本模块的后续课程中看到如何使用\
+  \ Promise 和 async-await 语法重写相同的代码，使其更具可读性和维护性。\n\n#### 错误处理\n\n使用回调编写错误处理代码（如所示）并不是一种良好的体验。如上面的代码所示，我们需要在每个回调中处理错误，这会导致错误处理逻辑的重复。没有一个中心位置可以让我们捕获并处理所有异步操作的错误。\n\
+  \n在本节中，我们讨论了如何使用回调在 JavaScript 中编写异步代码。尽管有 Promise 和 async-await 等更好的替代方案可以解决上述的回调问题，但回调仍然被广泛使用。虽然\
+  \ Promise 解决了回调问题，它们仍然使用回调，只是方式更易管理，有助于我们避免回调地狱。\n\n\n\n\n\n为了解决上一节中讨论过的 JavaScript\
+  \ 代码执行的单线程局限性，任何异步操作都会在后台处理，与此同时，主线程可以执行其他事情。\n\n像 HTTP 请求这样的异步操作由浏览器在后台处理，当 HTTP\
+  \ 请求完成时，我们将使用在启动 HTTP 请求时提供的回调函数来执行 JavaScript 代码。其他异步操作也是如此，例如 `NodeJS` 中的文件处理。`NodeJs`\
+  \ 中的每一个异步操作要么由 `NodeJs` 的内部线程池处理，要么由操作系统本身本身处理。\n\n如果我们将主线程视为“JavaScript 世界”，那么异步操作实际上发生在\
+  \ JavaScript 世界之外。一旦操作完成，为了回到 JavaScript 世界，将使用回调函数（callbacks），这些回调函数会被调用，用以响应操作的成功完成或失败并执行\
+  \ JavaScript 代码。\n\n因此，简而言之，我们编写的在主线程上执行的代码只是启动了异步操作。主线程不需要等待操作完成，而是自由地执行其他事情。异步操作由执行我们\
+  \ JavaScript 代码的环境在后台处理。该环境可以是浏览器，也可以是像 `NodeJS` 这样的运行时。但执行是如何从后台返回到执行我们代码的主线程的呢？这就是\
+  \ `event loop`（事件循环）登场的地方。\n\n### 什么是事件循环？\n\nJavaScript 中的事件循环是那些通过抽象方式解释的概念之一，以便他人更容易理解。本节的目标是让你对事件循环建立稳固的理解。\n\
+  \n事件循环有助于以非阻塞的方式执行异步操作。当异步操作在后台完成，并准备执行我们在启动异步操作时提供的 JavaScript 回调函数时，该回调需要被推入调用栈（call\
+  \ stack）。\n\n调用栈是一种栈型数据结构，用于跟踪当前正在执行的代码。每个函数调用都作为一个栈帧（stack frame）被添加到栈中。当函数执行结束时，该栈帧会从栈中弹出。\n\
+  \n让我们通过以下代码示例来理解事件循环：\n\n```\n 1 setTimeout(() => {\n 2   console.log(\"hello world\"\
+  );\n 3 }, 2000);\n 4 \n 5 console.log(\"after setTimeout\");\n 6 \n 7 // output:\n\
+  \ 8 // ------\n 9 // after setTimeout\n10 // hello world\n```\n\n你可以在下面的 Replit\
+  \ 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/event-loop-example1”\
+  \ />\n\n上面的代码在打印“hello world”之前打印了“after setTimeout”，而“hello world”位于 `setTimeout`\
+  \ 的回调内部。以下步骤解释了上述代码的执行过程：\n\n1. 为了执行代码，会创建一个任务并将其推入调用栈。这通常所说的“全局执行上下文”。\n2. 一旦代码开始执行，要做的第一件事是调用\
+  \ `setTimeout` 函数，传递一个将在约 2 秒后调用的回调函数。调用 `setTimeout` 会在后台启动一个定时器，在我们的代码示例中，该定时器将在\
+  \ 2 秒后过期。在此期间，主线程继续执行代码而不是等待定时器过期。这就是为什么“after setTimeout”在“hello world”之前被打印。\n\
+  3. 接下来，执行 `console.log`，在控制台上打印“after setTimeout”。\n4. 此时，我们代码的同步执行已经结束。结果是执行代码而创建的任务（第\
+  \ 1 步）从调用栈中弹出。现在，JavaScript 准备好执行任何调度的回调函数。这一点非常重要：*在代码的同步执行结束之前，任何异步回调都不会被调用*。记住，主线程一次只能执行一件事，当前正在执行的代码不能被中断。\n\
+  5. 同步执行结束后，让我们假设此时定时器已经过期（实际上，我们的代码执行会在远于 2 秒之前结束）。一旦定时器过期，一个任务就会被入队到 `task queue`（任务队列）中以执行\
+  \ `setTimeout` 的回调。任务队列是不同任务排队的地方，直到它们被推入调用栈并执行。\n6. `event loop` 是处理任务队列中的任务并将每个任务推入调用栈进行执行的实体。任务按照它们在任务队列中的入队顺序被处理。在我们的案例中，任务队列中只有一个任务。该任务被推入调用栈，但只有当调用栈为空时，事件循环才会将任务推入调用栈。在我们的案例中，调用栈是空的，因此可以执行\
+  \ `setTimeout` 的回调。结果是，控制台上打印了“hello world”。\n\n如上述步骤所述，事件循环的作用是：如果调用栈为空，且任务队列中有一个或多个等待执行的任务，则它会处理任务队列中的任务。因此，事件循环是一个允许在\
+  \ JavaScript 中以非阻塞方式执行异步代码的实体。事件循环可以被看作是一个不断循环，检查是否有任何等待执行的任务。\n\n事件循环是连接两个世界的桥梁：执行我们代码的“JavaScript\
+  \ 世界”，以及实际执行异步操作的“后台世界”。\n\n上述步骤可以通过以下图片视觉化：\n\n![function parameter scope](img/module_09----lesson_09.03----public----assets----__event-loop-visualization.gif)\n\
+  \nfunction parameter scope\n\n花点时间准确理解幕后发生了什么。定时器特意显示为耗时超过 2 秒是为了让可视化更直观。在看图片之前理解上述步骤将有助于你理解代码是如何执行的。\n\
+  \n\n\n\n# 序言\n\nPromise（承诺）代表一个对象，它作为一个通常由异步操作产生的值的 `placeholder`（占位符）。换句话说，promise\
+  \ 对象代表异步操作的成功完成或失败。初学者中有一个常见的误区，认为 Promise 会让我们的代码变成异步的；它们并非如此。将 Promise 视为一种通知机制，它通知我们某个`已经`是异步的操作是成功还是失败了。Promise\
+  \ 封装了异步操作，并允许我们在异步操作成功完成或失败时执行代码。这就是 Promise 所做的全部工作。不多不少，也不为少。它的目的仅仅是观察异步操作，并在操作完成时通知我们。\n\
+  \n在学习如何创建 promise 对象之前，让我们先学习如何使用内置的 `fetch` 函数来处理 promise，该函数允许我们从在浏览器运行的 JavaScript\
+  \ 代码发送 HTTP 请求。\n\n当 `fetch` 函数被调用时，它不会让调用代码等待 HTTP 请求完成，而是返回一个 promise 对象。我们可以将回调函数与返回的\
+  \ promise 对象关联，以便在 HTTP 请求完成后执行代码。我们仍然在 promise 中使用回调函数，但在本模块之前的节中与我们讨论的关于回调的问题，在使用\
+  \ promise 时并不存在了。与回调相比，promise 为 JavaScript 处理异步操作提供了一种整洁且结构化的方式。\n\n```\n1 const\
+  \ p1 = fetch(/* some url */);\n```\n\n`fetch` 函数返回的 promise 可以被视为 `fetch` 函数向我们“承诺”当\
+  \ HTTP 请求在未来的某个时刻完成时提供一个值。在此期间，主线程可以自由执行其他事情。\n\n我们可以对返回的 promise 做什么？我们可以在 promise\
+  \ 对象上注册回调函数，这些回调会在网络请求完成后被触发。我们可以注册单独的回调来处理网络请求的成功或失败。\n\n## Promise 状态\n\nPromise\
+  \ 在其生命周期中处于以下三种状态之一：\n\n- `pending`（等待）：初始状态，promise 通常在创建时处于该状态。它表示与 promise 关联的异步操作正在进行。\n\
+  - `fulfilled`（已履行）：意味着与 promise 关联的异步操作已成功完成。\n- `rejected`（已拒绝）：意味着与 promise 关联的异步操作已失败。\n\
+  \n在 promise 的生命周期内，它的状态会从 pending 变为 fulfilled 或 rejected。promise 的状态保存在名为 `[[PromiseState]]](https://262.ecma-international.org/14.0/#table-internal-slots-of-promise-instances)`\
+  \ 的隐藏内部槽中。\n\n处于 pending 状态的 promise 被认为是 `unsettled`（未定）。一旦 promise 从 pending 状态变为\
+  \ fulfilled 或 rejected 状态，就被称为已 `settled`。\n\n## Promise 实例方法\n\n我们可以在 promise 实例上调用三个实例方法：\n\
+  \n- `Promise.prototype.then()`\n- `Promise.prototype.catch()`\n- `Promise.prototype.finally()`\n\
+  \n### then\n\n`then` 方法用于注册一个回调函数，该回调会在 promise 履行后被异步调用，即 promise 封装的异步操作成功完成。此方法允许我们在异步操作成功完成后执行代码。请考虑以下代码示例：\n\
+  \n```\n1 const p1 = fetch(/* some url */);\n2 \n3 p1.then((response) => {\n4   //\
+  \ 如果 promise 履行则执行的代码\n5 });\n```\n\n`then` 方法接受两个回调函数作为参数：`fulfillment handler`（履行处理器）和\
+  \ `rejection handler`（拒绝处理器）。fulfillment handler 是第一个参数，如上面的代码示例所示。rejection handler\
+  \ 是可选的第二个参数，如果在调用 `then` 方法的 promise 上被拒绝，则会被调用。\n\n```\n1 const p1 = fetch(/* some\
+  \ url */);\n 2 \n3 p1.then(\n4   (response) => {\n5     // 如果 promise 履行则执行的代码\n\
+  6   },\n7   (error) => {\n8     // 如果 promise 被拒绝则执行的代码\n9   }\n10 );\n```\n\nfulfillment\
+  \ handler 接收异步操作的结果作为参数。换句话说，fulfillment handler 接收 promise 履行时的值。在 HTTP 请求的情况下，promise\
+  \ 通过服务器响应被履行，因此 fulfillment handler 接收服务器响应作为参数。另一方面，如果 promise 被拒绝，rejection handler\
+  \ 则接收拒绝原因作为参数。\n\n### catch\n\n我们在上一节中学习到，可以将拒绝处理器作为 `then` 方法的第二个参数传递以处理 promise\
+  \ 的拒绝。注册拒绝处理器的另一种方法是通过可以通过 `catch` 方法。与其其将拒绝处理器传递给 `then` 方法，不如我们可以在 promise 上调用\
+  \ `catch` 方法来注册拒绝处理器。\n\n```\n1 const p1 = fetch(/* some url */);\n2 \n3 p1.then((response)\
+  \ => {\n4   // 如果 promise 履行则执行的代码\n5 });\n6 \n7 p1.catch((error) => {\n8   // 如果\
+  \ promise 被拒绝则执行的代码\n9 });\n```\n\n`catch` 方法与仅带有一个拒绝处理器的 `then` 方法类似，如下所示：\n\n\
+  ```\n1 p1.then(null, (error) => {\n2   // 如果 promise 被拒绝则执行的代码\n3 });\n```\n\n然而，使用\
+  \ `catch` 方法注册拒绝处理器比使用 `then` 方法的第二个参数更为常见。\n\n### finally\n\n想象这样一种场景：我们想要向服务器发送一个\
+  \ HTTP 请求，在请求进行期间，我们向用户显示一个加载动画（loading spinner）以指示数据正在加载中。当请求完成时（无论成功还是失败），我们都想隐藏加载动画。为了实现这一点，我们必须在履行处理器和拒绝处理器中重复隐藏加载动画的代码，如下方的代码示例所示：\n\
+  \n```\n1 const p1 = fetch(/* some url */);\n2 \n3 p1.then((response) => {\n4   //\
+  \ 隐藏加载动画\n5   document.getElementById(\"spinner\").style.display = \"none\";\n6\
+  \ });\n7 \n8 p1.catch((error) => {\n9   // 隐藏加载动画\n10   document.getElementById(\"\
+  spinner\").style.display = \"none\";\n11 });\n```\n\n我们想要避免代码重复，而 `finally` 方法可以帮助我们消除代码重复。`finally`\
+  \ 方法允许我们无论 promise 是履行还是拒绝都执行代码。与 `then` 和 `catch` 方法一样，`finally` 方法也接受一个回调函数，该回调会在\
+  \ promise 履行以及 拒绝后被异步调用。传递给 `finally` 方法的回调是放置无论异步操作失败还是成功完成都执行的代码的理想位置。我们可以如下所示重构上述代码：\n\
+  \n```\n1 const p1 = fetch(/* some url */);\n2 \n3 p1.then((response) => {\n4   //\
+  \ 如果 promise 履行则执行的代码\n5 });\n6 \n7 p1.catch((error) => {\n8   // 如果 promise 被拒绝则执行的代码\n\
+  9 });\n10 \n11 p1.finally(() => {\n12   // 隐藏加载动画\n13   document.getElementById(\"\
+  spinner\").style.display = \"none\";\n14 });\n```\n\n与 `then` 和 `catch` 方法的回调不同，传递给\
+  \ `finally` 方法的回调不接收参数。\n\n### 创建 promises\n\n我们可以使用 `Promise` 构造函数创建新的 promise\
+  \ 对象，如下所示：\n\n```\n1 const p = new Promise((resolve, reject) => {\n2    启动异步操作...\n\
+  3 });\n```\n\n\n\n\n`Promise` 构造函数接受一个回调函数作为参数，称为 `executor` 函数，它会被同步地（synchronously）调用以创建\
+  \ promise 对象。人们通常会错误地认为 `executor` 函数内部的任何代码都是异步执行的，但事实并非如此。`executor` 函数是同步调用的用于创建\
+  \ promise 对象。`executor` 函数内部的代码应该是启动某些异步操作的代码。新创建的 promise 对象将观察该异步操作。promise 对象将向我们通知在\
+  \ `executor` 函数内部启动的异步操作的成功或失败。\n\n异步操作是如何与新创建的 promise 关联的？通过 `executor` 函数作为参数接收的\
+  \ `resolve` 和 `reject` 函数。这些参数可以有不同的名称，但通常的做法是将它们命名为 `resolve` 和 `reject`，以明确表示它们的用途。`resolve`\
+  \ 函数用于解析（完成）promise，而 `reject` 函数用于拒绝（失败）promise。让我们来看一个具体的例子，这将阐明我们如何创建一个封装异步操作的\
+  \ promise 对象，并根据异步操作的成功或失败来解析或拒绝它。\n\n```\n 1 const p = new Promise((resolve, reject)\
+  \ => {\n 2   const xhr = new XMLHttpRequest();\n 3 \n 4   xhr.addEventListener(\"\
+  load\", function () {\n 5     // check if operation is complete\n 6     if (xhr.readyState\
+  \ === 4) {\n 7       if (xhr.status === 200) {\n 8         // Request succeeded\n\
+  \ 9         const data = JSON.parse(xhr.responseText);\n10         // call the resolve\
+  \ function with the data\n11         // as an argument to fulfill the promise\n\
+  12         // with the data\n13         resolve(data);\n14       } else {\n15  \
+  \       // Request failed\n16         const error = new Error(\"Failed to fetch\
+  \ todo\");\n17         // call the reject function with the rejection\n18      \
+  \   // reason or an error as an argument\n19         reject(error);\n20       }\n\
+  \ 21     }\n 22   });\n 23 \n 24   const url = \"https://jsonplaceholder.typicode.com/todos/1\"\
+  ;\n 25   xhr.open(\"GET\", url);\n 26   xhr.send();\n 27 });\n 28 \n 29 // register\
+  \ fulfillment handler\n 30 p.then((todo) => {\n 31   console.log(todo);\n 32 });\n\
+  \ 33 \n 34 // register rejection handler\n 35 p.catch((error) => {\n 36   console.log(error.message);\n\
+  \ 37 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promises-example9”\
+  \ />\n\n上面的代码示例展示了如何将 promise 对象封装在异步操作中，并在异步操作成功或失败时进行解析或拒绝。作为对 promise 完成或拒绝的响应，相应的处理器（完成处理器或拒绝处理器）会被异步地调用。\n\
+  \n需要注意的是，在 `executor` 函数内部调用 `resolve` 或 `reject` 函数之前，promise 不会被解析或拒绝。因此，任何已注册的完成处理器或拒绝处理器在\
+  \ promise 状态变为就绪（settled）之前都不会被调用。\n\n上面的代码示例可能无法让你看出 promise 相比于传统的使用回调处理异步代码的方式有什么改进之处，但请等我们在在本模块接下来的课程中讨论\
+  \ promise 链和 `async-await` 语法后再看。这两个主题将帮助你看到 promise 如何解决回调的两个主要问题：回调地狱和错误处理。\n\n\
+  ### 在基于回调的 API 中使用 promises\n\n如果你在上一节的代码示例中注意到，你会发现我们只是将一个基于回调的 `XMLHttpRequest`\
+  \ API 封装了一个 promise。我们封装它是为了让我们能够使用 promise 与之交互。\n\n与我们上面所的操作类似，我们可以将任何基于回调的 API\
+  \ 转换为基于 promise 的 API。我们需要做的仅仅是将基于回调的代码放在 `executor` 函数中，并在适当的位置调用 `resolve` 和 `reject`\
+  \ 函数来解析或拒绝 promise。以下是一个将 promise 封装 `setTimeout` 的示例，用于在代码中添加人工延迟：\n\n```\n 1 function\
+  \ timeout(delayInSeconds) {\n 2   const delayInMilliseconds = delayInSeconds * 1000;\n\
+  \ 3 \n 4   return new Promise((resolve) => {\n 5     setTimeout(() => resolve(),\
+  \ delayInMilliseconds);\n 6   });\n 7 }\n 8 \n 9 timeout(2).then(() => {\n10   console.log(\"\
+  done\"); // logged after 2 seconds\n11 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/promises-example10” />\n\n在上面的代码示例中，我们将\
+  \ `setTimeout` 封装在一个 promise 中，以便在代码中添加人工延迟。为了在指定的延迟后（在上面的代码中为 2 秒）解析 promise，我们在\
+  \ `setTimeout` 的回调函数内部调用 `resolve` 函数。注意我们没有调用或使用 `reject` 函数，因为我们不需要拒绝 promise。我们只需要\
+  \ promise 在指定的延迟完成后完成。\n\n### Promise 规范\n\n[Promises/A+](https://promisesaplus.com/)\
+  \ 是定义 JavaScript 中 promise 行为的标准。它确保了不同环境中不同的 promise 实现符合规范中定义的标准行为，以确保不同环境下 promise\
+  \ 行为的一致性。\n\n### Promise 与 thenable（类 Promise）\n\n如果你阅读 promise 规范，你会发现多次提到 `thenable`\
+  \ 这个词。thenable 是任何定义了 `then` 方法的对象，但不是 promise。它是具有 `then` 方法的对象的泛指。由于 promise 拥有\
+  \ `then` 方法，我们可以说所有 promise 都是 thenable，但反之则不然：并非 thenable 都是 promise。\n\n总结区别：thenable\
+  \ 是一个具有 `then` 方法的对象，而 promise 是符合 [Promises/A+](https://promisesaplus.com/)规范的具有\
+  \ `then` 方法的对象。\n\n在之前的一节中，我们讨论了 promise 的以下实例方法：\n\n- `Promise.prototype.then()`\n\
+  - `Promise.prototype.catch()`\n- `Promise.prototype.finally()`\n\n我们讨论了这些方法允许我们做什么，但没有讨论这些方法返回什么。它们的返回值很重要，因为它允许进行\
+  \ promise 链，这是本节的主题。\n\n每个实例方法都会返回一个新的 promise，这使我们能够创建调用链，从而有效地创建异步操作链。promise\
+  \ 链有助于解决使用回调时面临两个主要问题：“回调地狱”和错误处理。\n\n下面的代码示例展示了我们如何为 `fetch` 函数返回的 promise 注册完成和拒绝处理器：\n\
+  \n```\n 1 const p = fetch(/* some url */);\n 2 \n 3 // register a fulfillment handler\n\
+  \ 4 p.then((response) => {\n 5   // code...\n 6 });\n 7 \n 8 // register a rejection\
+  \ handler\n 9 p.catch((error) => {\n10   // code...\n11 });\n```\n\n重构后的代码与第一个代码示例实现了相同的结果，但从技术上讲，第一个代码示例与重构后的代码不同。在第一个代码示例中，拒绝处理器是注册在\
+  \ `fetch` 函数返回的 promise 上的，而在重构后的代码中，拒绝处理器是注册在 `then` 方法返回的 promise 上的。\n\n```\n\
+  1 fetch(/* some url */)\n2   .then((response) => {\n3     // code...\n4   })\n5\
+  \   .catch((error) => {\n6     // code...\n7   });\n```\n\n重构代码中的 promise 链可以拆分成不同的部分，如下所示以便更容易理解：\n\
+  \n\n\n\n\n```\n1 const pFetch = fetch(/* some url */);\n2 \n3 const pThen = pFetch.then((response)\
+  \ => {\n4   // code...\n5 });\n6 \n7 const pCatch = pThen.catch((error) => {\n8\
+  \   // code...\n9 });\n```\n\n注意这些注册了成功处理程序（fulfillment handlers）和拒绝处理程序（rejection\
+  \ handlers）的 promise。成功处理程序注册在 `fetch` 函数返回的 promise 上，但与第一个代码示例不同，拒绝处理程序注册在 `then`\
+  \ 方法返回的 promise 上。那么这是否意味着如果 `fetch` 函数返回的 promise 被拒绝，就没有注册拒绝处理程序来处理该拒绝了？并不是，注册在\
+  \ `pThen` promise 上的拒绝处理程序将处理该拒绝。为了理解它的工作原理，我们必须理解 promise 链（promise chain）的工作机制。\n\
+  \n本节后续的代码示例将使用以下函数，它模拟了一个大约两秒完成的 HTTP 请求：\n\n```\n 1 function fakeRequest(isSuccessRequest\
+  \ = true) {\n 2   return new Promise((resolve, reject) => {\n 3     setTimeout(()\
+  \ => {\n 4       if (isSuccessRequest) {\n 5         const data = { name: \"John\
+  \ Doe\", favouriteLanguage: \"JavaScript\" };\n 6         resolve(data);\n 7   \
+  \    } else {\n 8         const error = new Error(\"request failed\");\n 9     \
+  \    reject(error);\n10       }\n 11     }, 2000);\n 12   });\n 13 }\n```\n\n上面的函数将有助于我们理解\
+  \ promise 链。该函数接收一个布尔参数，用于指定我们希望模拟请求被成功还是被拒绝。参数的默认值为 `true`，因此我们只在希望请求失败时才需要传递参数。在函数内部，返回了一个\
+  \ promise，它封装了 `setTimeout` 以模拟一个大约需要两秒完成的请求。计时结束后，根据 `isSuccessRequest` 参数的值，该\
+  \ promise 将变为成功或拒绝状态。\n\n定义了 `fakeRequest` 函数后，让我们深入探索 promise 链的世界。\n\n### then\
+  \ promise\n\n在 promise 上调用 `then` 方法会在该 promise 上注册注册一个成功处理程序。`then` 方法本身会返回一个新的\
+  \ promise，该 promise 与调用 `then` 方法的原始 promise 不同。\n\n```\n1 const pRequest = fakeRequest();\n\
+  2 \n3 const pThen = pRequest.then((response) => {\n4   console.log(response);\n\
+  5 });\n6 \n7 console.log(pThen === pRequest); // false\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example5”\
+  \ />\n\n`then` 方法返回的 promise 的成功或拒绝取决于以下两个问题：\n\n- 调用 `then` 方法的 promise 发生了什么？在我们的案例中，`then`\
+  \ 方法是在 `pRequest` promise 上被调用的。\n- 传递给 `then` 方法的成功或拒绝处理程序返回了什么？哪个处理程序会影响 `then`\
+  \ 方法返回的 promise，取决于在调用 `then` 方法的原始 promise 状态（settles）时了哪个处理程序。\n\n记住上述两个问题，让我们讨论影响\
+  \ `then` 方法返回 promise 的不同场景：\n\n#### 场景 1：原始 promise 成功\n\n如果调用 `then` 方法的原始 promise\
+  \ 成功，那么 `then` 方法返回的 promise 取决于成功处理程序内部发生了什么。以下是成功处理程序可以做的影响 `then` 方法返回 promise\
+  \ 的操作：\n\n- 如果注册了成功处理程序且它返回了一个既不是 promise 也 thenable（类对象）的值，那么 `then` 方法返回的 promise\
+  \ 将以该返回的值成功。\n\n```\n 1 // pRequest 将成功\n 2 const pRequest = fakeRequest();\n 3\
+  \ \n 4 const pThen = pRequest.then((response) => {\n 5   console.log(response);\n\
+  \ 6   return \"success\";\n 7 });\n 8  9 pThen.then((data) => {\n10   console.log(data);\
+  \ // success\n11 });\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example6”\
+  \ />\n\n- 如果处理程序没有显式返回任何值，`then` 方法返回的 promise 将以 `undefined` 作为成功值成功。\n\n```\n\
+  \ 1 // pRequest 将成功\n 2 const pRequest = fakeRequest();\n 3 \n 4 const pThen = pRequest.then((response)\
+  \ => {\n 5   console.log(response);\n 6 });\n 7 \n 8 pThen.then((data) => {\n 9\
+  \   console.log(data); // undefined\n10 });\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\n\
+  <ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example7”\
+  \ />\n\n- 如果在 promise 上调用 `then` 方法但未提供成功处理程序，`then` 方法返回的 promise 将带有原始 promise\
+  \ 相同的成功值成功。\n\n```\n 1 // pRequest 将成功\n 2 const pRequest = fakeRequest();\n 3 \n\
+  \ 4 // 未提供成功处理程序\n 5 const pThen = pRequest.then();\n 6 \n 7 pThen.then((data) =>\
+  \ {\n 8   // 打印 pRequest 的成功值\n 9   console.log(data);\n10 });\n```\n\n你可以在下方的 Replit\
+  \ 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example8”\
+  \ />\n\n- 如果成功处理程序抛出任何值或错误，`then` 方法返回的 promise 将以抛出的值为理由被拒绝。\n\n```\n 1 // pRequest\
+  \ 将成功\n 2 const pRequest = fakeRequest();\n 3 \n 4 pThen = pRequest.then((response)\
+  \ => {\n 5   throw new Error(\"something happened\");\n 6 });\n 7 \n8 pThen.catch((error)\
+  \ => {\n 9   console.log(error.message); // something happened\n10 });\n```\n\n\
+  你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example9”\
+  \ />\n\n- 如果成功处理程序返回一个 promise，`then` 方法返回的 promise 解析为成功处理程序返回的 promise。一个 promise\
+  \ 解析为另一个 promise 意味着一个 promise（我们称之为 p1）的命运取决于另一个 promise（我们称之为 p2）。如果 `p2` 成功，`p1`\
+  \ 也以相同的成功值成功。如果 `p2` 被拒绝，`p1` 也以相同的拒绝值被拒绝。promise `p1` 将等待 `p2` 稳定后进入进入稳定，并最终与 `p2`\
+  \ 相同的命运。\n\n```\n 1 // pRequest 将成功\n 2 const pRequest = fakeRequest();\n 3 \n 4\
+  \ const pThen = pRequest.then((response) => {\n 5   // 返回一个成功的 promise\n 6   return\
+  \ fakeRequest();\n 7 });\n 8 \n9 pThen.then((response) => {\n10   // 打印来自 pRequest\
+  \ \n11   // 处理程序返回的 promise 的成功值\n12   console.log(response);\n13 });\n```\n\n你可以在下方的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example10”\
+  \ />\n\n#### 场景 2：原始 promise 被拒绝\n\n如果调用 `then` 方法的原始 promise 被拒绝，`then` 方法返回的 promise\
+  \ 取决于以下场景：\n\n- 如果只向 `then` 方法传递了成功处理程序，`then` 方法返回的 promise 也以原始 promise 被拒绝时的相同拒绝理由或值被拒绝。\n\
+  \n\n\n\n\n```\n 1 // pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n\
+  \ 3 \n 4 const pThen = pRequest.then((response) => {\n 5   console.log(response);\n\
+  \ 6 });\n 7 \n8 pThen.catch((error) => {\n 9   console.log(error.message); // request\
+  \ failed\n10 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example11”\
+  \ />\n\n- 如果向 `then` 方法传递了一个拒绝处理器，那么 `then` 方法返回的 promise 取决于拒绝处理器内部发生的情况。这与成功处理处理器（fulfillment\
+  \ handler）的工作原理类似：\n\n    - 如果拒绝处理器返回一个非 promise 的值，则 `then` 方法返回的 promise 将用拒绝处理器返回的值变为完成（fulfilled）。\n\
+  \    - 如果拒绝处理器没有显式地返回任何值，则 `then` 方法返回的 promise 将以 `undefined` 作为完成值变为完成。\n    -\
+  \ 如果在原始 promise 上调用 `then` 方法但未提供拒绝处理器，则 `then` 方法返回的 promise 将带有原始 promise 相同的拒绝值变为拒绝（rejected）。\n\
+  \    - 如果拒绝处理器抛出任何值或错误，则 `then` 方法返回的 promise 将以抛出的值作为拒绝原因或值变为拒绝。\n    - 如果拒绝处理器返回一个\
+  \ promise，则 `then` 方法返回的 promise 将解析（resolved）为拒绝处理器返回的 promise，这与之前讨论的成功处理器的情况相同。\n\
+  \n现在我们已经讨论了 `then` 方法返回的 promise 在不同场景下的状态状态，接下来我们将讨论 `catch` 方法返回的 promise。\n\n\
+  ### catch promise\n\n`catch` 方法用于为它调用的 promise 注册一个拒绝处理器。与 `then` 方法一样，`catch` 方法也返回一个新的\
+  \ promise，并且与 `then` 方法的 promise 一样，`catch` 方法返回的 promise 的状态取决于以下两个问题：\n\n1 调用\
+  \ `catch` 方法的 promise 发生了什么变化？\n- 传递给 `catch` 方法的拒绝处理器返回了什么？\n\n#### 场景 1：原始 promise\
+  \ 变为完成\n\n假设调用 `catch` 方法的原始 promise 已完成。在这种情况下，使用 `catch` 方法注册的拒绝处理器不会被调用，`catch`\
+  \ 方法返回的 promise 将带有原始 promise 相同的完成值变为完成。\n\n```\n 1 // pRequest will be fulfilled\n\
+  \ 2 const pRequest = fakeRequest();\n 3 \n 4 const pCatch = pRequest.catch((error)\
+  \ => {\n 5   console.log(error.message);\n 6 });\n 7 \n8 pCatch.then((data) => {\n\
+  \ 9   // 打印 pRequest promise 完成时的\n10   // 完成值\n11   console.log(data);\n12 });\n\
+  ```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example12”\
+  \ />\n\n#### 场景 2：原始 promise 变为拒绝\n\n当调用 `catch` 方法的原始 promise 被拒绝时，使用 `catch` 处理器注册的拒绝处理器会被调用。如果原始\
+  \ promise 被拒绝，那么 `catch` 方法返回的 promise 与 `then` 方法返回的 promise 一样，取决于拒绝处理器内部发生的情况：\n\
+  \n- 如果拒绝处理器返回一个非 promise 的值，则 `catch` 方法返回的 promise 将用拒绝处理器返回的值变为完成。\n\n```\n 1\
+  \ // pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n 3 \n\
+  \ 4 const pCatch = pRequest.catch((error) => {\n 5   return \"default value\";\n\
+  \ 6 });\n 7 \n8 pCatch.then((data) => {\n 9   console.log(data); // default value\n\
+  10 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example13”\
+  \ />\n\n- 如果拒绝处理器没有显式地返回任何值，则 `catch` 方法返回的 promise 将以 `undefined` 作为完成值变为完成。\n\n\
+  ```\n 1 // pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n\
+  \ 3 \n 4 const pCatch = pRequest.catch((error) => {\n 5   console.log(error.message);\
+  \ // request failed\n 6 });\n 7 \n8 pCatch.then((data) => {\n 9   console.log(data);\
+  \ // undefined\n10 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example14”\
+  \ />\n\n- 如果在原始 promise 上调用 `catch` 方法但未提供拒绝处理器，则 `catch` 方法返回的 promise 将带有原始 promise\
+  \ 相同的拒绝值变为拒绝。\n\n```\n 1 // pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n\
+  \ 3 \n 4 // 未注册拒绝处理器\n 5 const pCatch = pRequest.catch();\n 6 \n7 pCatch.catch((error)\
+  \ => {\n 8   // 打印原始 promise 的\n9   // 拒绝值\n10   console.log(error.message);\n11\
+  \ });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example15”\
+  \ />\n\n- 如果拒绝处理器抛出任何值或错误，`catch` 方法返回的 promise 将以抛出的值作为拒绝原因或值变为拒绝。\n\n```\n 1 //\
+  \ pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n 3 \n 4 const\
+  \ pCatch = pRequest.catch((error) => {\n 5   throw error;\n 6 });\n 7 \n8 pCatch.catch((error)\
+  \ => {\n 9   console.log(error.message); // request failed\n10 });\n```\n\n你可以在下面的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example16”\
+  \ />\n\n- 如果拒绝处理器返回一个 promise，`catch` 方法返回的 promise 将解析为拒绝处理器返回的 promise，与之前讨论的成功处理器的情况相同。\n\
+  \n```\n 1 // pRequest will get rejected\n 2 const pRequest = fakeRequest(false);\n\
+  \ 3 \n 4 const pCatch = pRequest.catch((error) => {\n 5   // 返回一个将会完成的 promise\n\
+  \ 6   return fakeRequest();\n 7 });\n 8 \n9 pCatch.then((data) => {\n10   // 打印来自\
+  \ pRequest 拒绝拒绝 11   // 处理器返回的 promise 的\n12   // 完成值\n13   console.log(data);\n\
+  14 });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example17”\
+  \ />\n\n### finally promise\n\n`finally` 方法用于注册在 promise 状态后异步调用的回调函数。无论调用的 promise\
+  \ 是完成还是拒绝，`finally` 方法的回调都会被调用。与 `then` 和 `catch` 方法一样，`finally` 方法也返回一个新的 promise，`finally`\
+  \ 方法返回的 promise 的状态取决于以下两个问题：\n\n- 调用 `finally` 方法的 promise 发生了什么变化？\n- 传递给 `finally`\
+  \ 方法的回调函数返回了什么？\n\n#### 场景 1：原始 promise 变为完成\n\n假设调用 `finally` 方法的原始 promise 已完成。在这种情况下，只要满足以下条件，`finally`\
+  \ 方法返回的 promise 也带有原始 promise 相同的完成值变为完成：\n\n- `finally` 回调没有抛出错误或值。\n- `finally`\
+  \ 回调没有返回被拒绝的 promise 或最终变为拒绝的 promise。\n\n\n\n\n```javascript\n 1 // pRequest will\
+  \ get fulfilled\n 2 const pRequest = fakeRequest();\n 3 \n 4 const pFinally = pRequest.finally(()\
+  \ => {\n 5   console.log(\"finally called\");\n 6 });\n 7 \n 8 pFinally.then((data)\
+  \ => {\n 9   // logs the fulfillment value of\n10   // the original pRequest promise\n\
+  11   console.log(data);\n12 });\n```\n\n这是 Replit 中的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example18”\
+  \ />\n\n注意，`finally` 回调没有显式返回任何值，但 `finally` promise 以原始 `pRequest` promise 的完成值变为完成状态。这种行为与\
+  \ `then` 和 `catch` 方法不同；如果它们的回调函数隐式返回 `undefined`，则它们的 promise 将以 `undefined` 变为完成状态。\n\
+  \n### 场景 2：原始 promise 被拒绝\n\n假设调用 `finally` 方法的原始 promise 被拒绝。在这种情况下，只要满足之前提到的两个条件，`finally`\
+  \ 方法返回的 promise 也会带有原始 promise 相同的拒绝值被拒绝：\n\n- `finally` 回调没有抛出错误或值。\n- `finally`\
+  \ 回调没有返回被拒绝的 promise 或最终被拒绝的 promise。\n\n```javascript\n 1 // pRequest will get\
+  \ rejected\n 2 const pRequest = fakeRequest(false);\n 3 \n 4 const pFinally = pRequest.finally(()\
+  \ => {\n 5   console.log(\"finally called\");\n 6 });\n 7 \n 8 pFinally.catch((error)\
+  \ => {\n 9   // logs the rejection value of\n10   // the original pRequest promise\n\
+  11   console.log(error.message);\n12 });\n```\n\n这是 Replit 中的代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/promise-chaining-example19” />\n\n###\
+  \ 场景 3：覆盖原始 promise 的状态\n\n与 `then` 和 `catch` 方法不同，`finally` 回调的返回值会被忽略，`finally`\
+  \ 方法返回的 promise 仅仅与其调用的原始 promise 遵循相同的命运；如果原始 promise 完成，`finally` promise 也会完成；如果原始\
+  \ promise 被拒绝，`finally` promise 也会被拒绝。\n\n然而，`finally` 方法在前两个场景中两个条件是该规则的例外。如果 `finally`\
+  \ 回调抛出一个错误，`finally` promise 将被抛出的值拒绝。\n\n```javascript\n 1 // pRequest will get\
+  \ rejected\n 2 const pRequest = fakeRequest(false);\n 3 \n 4 const pFinally = pRequest.finally(()\
+  \ => {\n 5   throw new Error(\"finally error\");\n 6 });\n 7 \n 8 pFinally.catch((error)\
+  \ => {\n 9   console.log(error.message); // finally error\n10 });\n```\n\n你可以在下面的\
+  \ Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example20”\
+  \ />\n\n`finally` 方法的拒绝覆盖了原始 `pRequest` promise 的拒绝。如果 `pRequest` promise 完成，也会发生同样。在\
+  \ `finally` 回调中抛出错误仅仅会拒绝 `finally` promise，无论原始 promise 发生了什么。\n\n同样，从 `finally`\
+  \ 回调中返回一个被拒绝的 promise 会拒绝 `finally` promise，无论原始 promise 发生了什么。\n\n```javascript\n\
+  \ 1 // pRequest will get fulfilled\n 2 const pRequest = fakeRequest();\n 3 \n 4\
+  \ const pFinally = pRequest.finally(() => {\n 5   // return a promise that will\
+  \ get rejected\n 6   return fakeRequest(false);\n 7 });\n 8\n 9 pFinally.catch((error)\
+  \ => {\n10   // logs the rejection value of the\n11   // promise returned from the\
+  \ finally callback\n12   console.log(error.message); // request failed\n13 });\n\
+  ```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example21”\
+  \ />\n\n### 理解 promise 链\n\n我们已经讨论了可能导致每个 promise 实例方法返回的 promise 被拒绝或完成的所有场景。最后，我们可以理解\
+  \ promise 链是如何运作的。我们将通过一系列示例来巩固我们的理解。\n\n#### 示例 1\n\n```javascript\n 1 fakeRequest()\n\
+  \ 2   .then((response) => {\n 3     console.log(response);\n 4     return \"hello\
+  \ world\";\n 5   })\n 6   .then((data) => {\n 7     console.log(data);\n 8     return\
+  \ \"123\";\n 9   })\n10   .catch((error) => {\n11     console.log(error.message);\n\
+  12   });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example22”\
+  \ />\n\n你预期上述代码示例的输出结果是什么？请记住，每个实例方法都返回一个新的 promise，其输出取决于上一个回调函数的返回值。\n\n\n\n\n\
+  ```\n 1 fakeRequest()\n 2   .then((response) => {\n 3     console.log(response);\n\
+  \ 4     return fakeRequest();\n 5   })\n 6   .then((data) => {\n 7     console.log(data);\n\
+  \ 8   })\n 9   .catch((error) => {\n10     console.log(error.message);\n11   });\n\
+  ```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example23”\
+  \ />\n\n以下是上述代码输出结果的解释：\n\n1.  从 promise 链的顶部开始，`fakeRequest` 函数返回的 promise 将变为完成状态（fulfilled），导致通过第一次调用\
+  \ `then` 方法注册的成功处理程序被调用。因此，控制台上打印了以下内容：\n\n    ```\n    1 {\n    2    favouriteLanguage:\
+  \ \"JavaScript\",\n    3    name: \"John Doe\"\n    4 }\n    ```\n\n2.  `fakeRequest`\
+  \ 函数返回的 promise 已经处于结算状态（settled）。链中的下一个 promise 是由第一次 `then` 方法调用返回的。由于原始 promise\
+  \ 已经完成，第一个 `then` promise 现在取决于其回调函数内部发生了什么。由于该回调函数通过调用 `fakeRequest` 函数返回了一个新的\
+  \ promise，因此第一个 `then` promise 将被解析（resolved）为从其回调函数返回的 promise。该 `then` promise\
+  \ 将等待其回调函数返回的 promise 结算后，自己才会变为结算状态。\n\n    第一个 `then` 方法回调函数返回的 promise 将在大两秒后变为完成。一旦它完成，`then`\
+  \ 方法返回的 promise 也会以与其回调函数返回的 promise 相同的完成值变为完成。因此，调用了通过第二次 `then` 方法调用注册的成功处理程序。第一个\
+  \ `then` promise 的成功处理程序接收其完成值作为参数，并在处理程序内部将其打印。到目前为止的控制台输出所示：\n\n    ```\n    1\
+  \ {\n    2    favouriteLanguage: \"JavaScript\",\n    3    name: \"John Doe\"\n\
+  \    4 }\n    5 \n    6 {\n    7    favouriteLanguage: \"JavaScript\",\n    8  \
+  \  name: \"John Doe\"\n    9 }\n    ```\n\n3.  此时，promise 链中的两个 promise 已经结算。链中的下一个\
+  \ promise 是由第二个 `then` 方法返回的。与第一个 `then` 方法一样，由第二个 `then` 方法返回的 promise 取决于调用它的原始\
+  \ promise，即第一个 `then` 方法返回的 promise。由于原始 promise 已经完成，第二个 `then` promise 现在取决于其回调函数内部发生了什么。它的回调隐式地返回了\
+  \ `undefined`。因此，第二个 `then` promise 以 `undefined` 作为其完成值变为完成。\n\n    但第二个 `then`\
+  \ promise 没有注册成功处理程序；只通过 `catch` 方法注册了拒绝处理程序（rejection handler）。因此，当第二个 `then` 方法完成时，没有调用任何成功处理程序。promise\
+  \ 链移动到链中的最后一个 promise，即由 `catch` 方法返回的那个。\n\n4.  `catch` 方法返回的 promise 是在第二个 `then`\
+  \ 方法返回的 promise 上调用的。当第二个 `then` promise 完成时，`catch` promise 也会以第二个 `then` promise\
+  \ 相同的完成值变为完成。但 `catch` promise 没有注册成功或拒绝处理程序，因此它的完成直接被忽略了。代码的最终输出所示：\n\n    ```\n\
+  \    1 {\n    2     favouriteLanguage: \"JavaScript\",\n    3     name: \"John Doe\"\
+  \n    4 }\n    5 \n    6 {\n    7     favouriteLanguage: \"JavaScript\",\n    8\
+  \     name: \"John Doe\"\n    9 }\n    ```\n\n#### 示例 3\n\n```\n1 fakeRequest(false)\n\
+  2   .then((response) => {\n3     console.log(response);\n4   })\n5   .catch((error)\
+  \ => {\n6     console.log(error.message);\n7   });\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example24”\
+  \ />\n\n以下是上述代码输出结果的解释：\n\n1.  从 promise 链的顶部开始，`fakeRequest` 函数返回的 promise 将变为拒绝（rejected），但该\
+  \ promise 没有注册拒绝处理程序；只注册了一个成功处理程序。因此，该 promise 不会触发任何拒绝处理程序。我们移动到链中的下一个 promise。\n\
+  \n2.  `fakeRequest` 函数返回的 promise 已经结算。链中的下一个 promise 是由第一次 `then` 方法调用返回的。由于原始\
+  \ promise 被拒绝，且没有向 `then` 方法传递拒绝处理程序，由 `then` 方法返回的 promise 也以与原始 promise 相同的拒绝值变为拒绝。因此，通过\
+  \ `catch` 方法注册的拒绝处理程序被调用，在控制台上打印了以下内容：\n\n    ```\n    1 \"request failed\"\n  \
+  \  ```\n\n    导致第一个 promise 被拒绝的错误对象与 `then` 方法返回的 promise 被拒绝的拒绝是同一个值。promise 链移动到链中的最后一个\
+  \ promise，即由 `catch` 方法返回的那个。\n\n3.  此时，promise 链中的两个 promise 已经结算。链中的下一个 promise\
+  \ 是由 `catch` 方法返回的。由于 `then` promise 被拒绝，`catch` 方法返回的 promise 取决于其回调内部。它的回调隐式地返回\
+  \ `undefined`，导致 `catch` promise 以 `undefined` 作为完成值变为完成。但 `catch` promise 没有注册成功处理程序，因此它的完成直接被忽略。代码的最终输出所示：\n\
+  \n    ```\n    1 \"request failed\"\n    ```\n\n上述代码示例中需要注意的是，`fakeRequest` 函数返回的\
+  \ promise 的拒绝最终由 `then` 方法返回的 promise 所注册的拒绝处理程序处理了。这是 promise 链的优势之一。与回调（我们需要在每个回调中检查错误）不同，在\
+  \ promise 链中，我们可以注册一个拒绝处理程序，它可以处理链中之前所有 promise 的拒绝。我们可以在 promise 链中放置多个 `then`\
+  \ 方法调用，并在链末尾使用 `catch` 方法注册一个拒绝处理程序。这使得 promise 链中的错误处理易于管理。\n\n#### 示例 4\n\n```\n\
+  \ 1 fakeRequest()\n 2   .then((response) => {\n 3     return fakeRequest(false);\n\
+  \ 4   })\n 5   .catch((error) => {\n 6     return { data: \"default data\" };\n\
+  \ 7   })\n 8   .then((data) => {\n 9     console.log(data);\n10   })\n11   .then(()\
+  \ => {\n12     throw new Error(\"error occurred\");\n13   })\n14   .catch((error)\
+  \ => {\n15     console.log(error.message);\n16   });\n```\n\n你可以在下方的 Replit 中运行上述代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-chaining-example25”\
+  \ />\n\n以下是上述代码输出结果的解释：\n\n1.  从 promise 链的顶部开始，`fakeRequest` 函数返回的 promise 将变为完成状态，导致通过第一次调用\
+  \ `then` 方法注册的成功处理程序被调用，并将完成值作为参数传递给该成功处理程序。\n\n\n\n\n\n## 2. `fakeRequest` 函数返回的\
+  \ promise 已经稳定（settled）。链中的下一个 promise 是由第一个 `then` 方法调用返回的。随着原始 promise 的完成（fulfilled），第一个\
+  \ `then` promise 现在取决于其回调函数内部发生发生的情况。由于它通过调用 `fakeRequest` 函数返回了一个新的 promise，因此第一个\
+  \ `then` promise 将被解析（`resolved`）为其回调函数返回的 promise。`then` promise 将等待其回调函数返回的 promise\
+  \ 稳定后，才会进入自身的稳定状态。\n\n第一个 `then` 方法回调函数返回的 promise 将在约两秒后被拒绝（rejected）。一旦它被拒绝，`then`\
+  \ 方法返回的 promise 也会被拒绝，且拒绝的值与其回调函数返回的 promise 相同。因此，会调用它的拒绝处理程序，该程序是通过第一次 `catch`\
+  \ 方法调用注册的。第一个 `then` promise 的拒绝处理程序将接收其拒绝值作为参数。\n\n## 3. 此时，promise 链中的前两个 promise\
+  \ 已经稳定。链中的下一个 promise 是由第一个 `catch` 方法返回的。由于调用 `catch` 方法的 promise 被拒绝，第一个 `catch`\
+  \ promise 现在取决于其回调函数内部发生的情况。它返回了一个对象字面量。因此，第一个 `catch` promise 将返回的对象作为其完成值（fulfillment\
+  \ value）。\n\n注意，`catch` 方法并不一定得位于 promise 链的末尾；然而，`catch` 方法最常放置在 promise 链的末尾。根据需要，`catch`\
+  \ 方法可以放在链中的任何位置。在我们的代码示例中，它在第一个 `then` 方法之后被调用，用于处理第一个 `then` promise 可能的拒绝，返回默认数据并让链继续。如果第一个\
+  \ `then` promise 的拒绝没有被处理，第一个 `then` 方法之后的所有 `then` promise 都将以与第一个 `then` promise\
+  \ 相同的拒绝值被拒绝，拒绝将在最后一个 `catch` 方法调用中被处理。\n\n## 4. 此时，promise 链中的前三个 promise 已经稳定。链中的下一个\
+  \ promise 是由第二个 `then` 方法调用返回的。由于调用第二个 `then` 方法的 promise（第一个 `catch` promise）已经完成，第二个\
+  \ `then` 方法返回的 promise 现在取决于其回调函数内部发生的情况。它的回调记录了第一个 `catch` promise 的完成值，并隐式返回了\
+  \ `undefined`，导致第二个 `then` promise 以 `undefined` 作为完成值被完成。以下是到为止的控制台输出：\n\n```\n\
+  1 {\n2   data: \"default data\"\n3 }\n```\n\n## 5. 此时，promise 链中的前四个 promise 已经稳定。链中的下一个\
+  \ promise 是由第三个 `then` 方法调用返回的。由于调用第三个 `then` 方法的 promise（第二个 `then` promise）已经完成，第三个\
+  \ `then` 方法返回的 promise 现在取决于其回调函数内部发生的情况。它的回调抛出一个错误，导致第三个 `then` promise 以抛出的错误作为拒绝原因或值被拒绝。因此，使用最后一个\
+  \ `catch` 方法注册的拒绝处理程序被调用，并将拒绝值作为参数传递进去。\n\n## 6. 随着调用最后一个 `catch` 方法的 promise（第三个\
+  \ `then` promise）被拒绝，最后一个 `catch` promise 取决于其回调函数内部发生的情况。它的回调记录了第三个 `then` promise\
+  \ 的拒绝值，并隐式返回了 `undefined`，导致最后一个 `catch` promise 以 `undefined` 作为完成值被完成。但由于最后一个\
+  \ `catch` promise 没有注册完成处理程序，它的完成直接被忽略了。代码的最终控制台输出所示：\n\n```\n1 {\n2   data: \"\
+  default data\"\n3 }\n4 \n5 \"error occurred\"\n```\n\n希望上面的示例，结合本节早些时候关于可能拒绝或完成每个\
+  \ promise 实例方法返回的 promise 的不同场景的讨论，为理解 promise 链以及在您自己的代码中使用它们奠定了坚实的基础。\n\n### `then`\
+  \ 与 `catch` 中的拒绝处理程序\n\n在上一节课程中，提到过可以通过向 `then` 方法传递第二个参数来注册拒绝处理程序，如下所示：\n\n```\n\
+  1 fakeRequest().then(null, (error) => {\n2   // 处理错误\n3 });\n```\n\n在使用 `then` 方法注册拒绝处理程序时，有一点应该牢记：如果作为参数传递拒绝处理程序的\
+  \ `then` 方法所返回的 promise 被拒绝，则使用 `then` 方法注册的拒绝处理程序将不会被调用。下面的代码示例展示了这一点：\n\n```\n\
+  \ 1 fakeRequest().then(\n 2   (response) => {\n 3     // 拒绝由 \"then\" 方法\n 4   \
+  \  // 返回的 promise\n 5     throw new Error(\"error\");\n 6   },\n 7   (error) =>\
+  \ {\n 8     // 此回调不会被调用\n 9     console.log(error.message);\n10   }\n11 );\n```\n\
+  \n使用 `then` 方法注册的拒绝处理程序只有在调用 `then` 方法的原始 promise 被拒绝时才会被调用。因此，在上面的代码示例中，我们得到了一个\
+  \ `unhandled promise rejection`（未处理的 promise 拒绝），这在最坏的情况下可能会终止程序。因此，在处理 promise\
+  \ 时，务必记住处理所有可能的拒绝。在本节中，我们将讨论静态方法的几种用例：\n\n* 并发请求\n* 实现超时\n\n### 并发请求\n\n假设有一种场景，我们需要同时启动多个\
+  \ HTTP 请求并等待它们的共同结果。我们不能像下面这样使用 promise 链，因为它按顺序执行请求。\n\n```\n1 url1 = \"https://jsonplaceholder.typicode.com/1\"\
+  ;\n2 url2 = \"https://jsonplaceholder.typicode.com/2\";\n3 url3 = \"https://jsonplaceholder.typicode.com/3\"\
+  ;\n4 \n5 parseFetchResponse(response) {\n6   if (response.ok) {\n7     return response.json();\
+  \ // 返回一个 promise\n8   } else {\n9     throw new Error(\"request failed\");\n10\
+  \   }\n11 }\n12 \n13 fetch(url1)\n14   .then(parseFetchResponse)\n15   .then((data1)\
+  \ => {\n16     console.log(data1);\n17     // 启动第二个请求\n18     return fetch(url2);\n\
+  19   })\n20   .then(parseFetchResponse)\n21   .then((data2) => {\n22     console.log(data2);\n\
+  23     // 启动第三个请求\n24     return fetch(url3);\n25   })\n26   .then(parseFetchResponse)\n\
+  27   .then((data3) => {\n28     console.log(data3);\n29   })\n30   .catch((error)\
+  \ => {\n31     console.log(error.message);\n32   });\n```\n\n你可以在下面的 Replit 中运行上述代码：\n\
+  \n( )\n\n由于上述代码中的每个请求都是相互独立的，我们不希望按顺序启动请求，而是希望并发请求。这可以通过 `Promise.all` 方法来实现。它允许我们一个接一个地启动每个请求，而无需等待一个请求完成后再开始另一个。因此，所有请求都是并发启动的，我们可以等待它们的共同结果。\n\
+  \n\n\n\n`Promise.all` 方法接收一个[可迭代对象](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)的\
+  \ promise 作为输入，并返回一个在所有传递给它的 promise 都完成（fulfilled）后完成的 promise。该方法返回的 promise 的完成值是作为输入传递的所有\
+  \ promise 的完成值的数组。如果输入的 promise 中有任何一个被拒绝（rejected），该方法返回的 promise 也会被拒绝。我们可以像下面所示使用\
+  \ `Promise.all` 方法重写上面的代码示例：\n\n```\n 1 const url1 = \"https://jsonplaceholder.typicode.com/todos/1\"\
+  ;\n 2 const url2 = \"https://jsonplaceholder.typicode.com/todos/2\";\n 3 const url3\
+  \ = \"https://jsonplaceholder.typicode.com/todos/3\";\n 4 \n 5 function parseFetchResponse(response)\
+  \ {\n 6   if (response.ok) {\n 7     return response.json();\n 8   } else {\n 9\
+  \     throw new Error(\"request failed\");\n10   }\n11 }\n12 \n13 Promise.all([\n\
+  14   fetch(url1).then(parseFetchResponse),\n15   fetch(url2).then(parseFetchResponse),\n\
+  16   fetch(url3).then(parseFetchResponse)\n17 ])\n18   .then((dataArr) => {\n19\
+  \     console.log(dataArr);\n20   })\n21   .catch((error) => console.log(error.message));\n\
+  ```\n\n你可以在下方的 Replit 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/static-promise-methods-example2”\
+  \ />\n\n### 请求超时\n\nHTTP 请求有时会因为服务器上的问题而挂起。我们不希望请求处于等待（pending）状态超过几秒钟。为了避免长时间的请求等待，我们可以实现请求超时功能，让我们的代码知道请求耗时超过了预期。这允许我们采取适当的。\n\
+  \n使用 `Promise.race` 方法，我们可以启动带有超时时间的 HTTP 请求。该方法与 `Promise.all` 方法一样，接收一个 promise\
+  \ 的可迭代对象，并返回在传递给该方法的一个或多个 promise 中任何一个完成时就完成的 promise。同样，该方法返回的 promise 在任何输入的\
+  \ promise 被拒绝时也会被拒绝。\n\n下面的代码示例展示了使用 `Promise.race` 方法实现的请求超时：\n\n```\n 1 // 模拟一个大约需要\n\
+  \ 2 // 8 秒完成的请求\n 3 function delayedRequest() {\n 4   return new Promise((resolve,\
+  \ reject) => {\n 5     setTimeout(() => {\n 6       resolve(\"hello world\");\n\
+  \ 7     }, 8000);\n 8   });\n 9 }\n10 \n 11 // 超时 promise 将在大约\n 12 // 3 秒后被拒绝\n\
+  \ 13 function timeout() {\n 14   return new Promise((resolve, reject) => {\n 15\
+  \     setTimeout(() => {\n 16       const error = new Error(\"request timed out\"\
+  );\n 17       reject(error);\n 18     }, 3000);\n 19   });\n20 }\n21 \n 22 Promise.race([delayedRequest(),\
+  \ timeout()])\n 23   .then((response) => {\n 24     console.log(response);\n 25\
+  \   })\n 26   .catch((error) => console.log(error.message));\n```\n\n你可以在下方的 Replit\
+  \ 中运行上述代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/static-promise-methods-example3”\
+  \ />\n\n在这一节中，我们只讨论了两个静态方法，但了解 `Promise` 构造函数上提供的其他[静态方法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#static_methods)\
+  \ 是值得的。每个静态方法都有自己的用例；我们刚刚讨论了两个认为是最常用的用例。\n\n虽然 promise 改变了我们在 JavaScript 中编写异步代码的方式，但我们仍然使用回调函数来注册\
+  \ promise 的完成和拒绝处理程序。有些人人可能认为在 promise 中使用回调函数是繁琐的，尽管 promise 解决了“回调地狱”以及使用传统回调方式进行错误处理的问题。如果有一种更简单、更简洁且更直观的方法处理\
+  \ promise 呢？如果我们在使用 promise 时可以抛弃回调函数呢？引入 `async await`！\n\n`async await` 可以被视为对传统\
+  \ promise 使用方式的语法糖。它允许我们使用异步执行但看起来像同步执行的代码来处理 promise。它还允许我们编写更简洁、更容易理解的代码，因为代码不包含回调，且代码流看起来就像同步代码一样。\n\
+  \n让我们来看一下使用 promise 链的以下示例：\n\n```\n 1 function fetchTodo(url) {\n 2   fetch(url)\n\
+  \ 3     .then((response) => {\n 4       if (response.ok) {\n 5         return response.json();\n\
+  \ 6       } else {\n 7         throw new Error(\"request failed\");\n 8       }\n\
+  \ 9     })\n10     .then((data) => {\n11     console.log(data);\n12     })\n13 \
+  \    .catch((error) => {\n14       console.log(error.message);\n15     });\n16 }\n\
+  17 \n18 const url = \"https://jsonplaceholder.typicode.com/todos/1\";\n19 fetchTodo(url);\n\
+  ```\n\n这是一个可以运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example1”\
+  \ />\n\n上面的代码相比使用回调编写异步代码的传统方法确实有了改进，但它仍有改进空间，至少在可读性方面。`async await` 语法可以像下面所示重写上面的代码示例：\n\
+  \n```\n 1 async function fetchTodo(url) {\n 2   try {\n 3     const response = await\
+  \ fetch(url);\n 4 \n 5     if (response.ok) {\n 6       const data = await response.json();\n\
+  \ 7       console.log(data);\n 8     } else {\n 9       throw new Error(\"request\
+  \ failed\");\n10     }\n11   } catch (error) {\n12     console.log(error.message);\n\
+  13   }\n14 }\n15 \n16 const url = \"https://jsonplaceholder.typicode.com/todos/1\"\
+  ;\n17 fetchTodo(url);\n```\n\n这里有一个可以运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example2”\
+  \ />\n\n上面的代码实现了相同的结果，但更易读，没有使用任何回调，并且与之前的示例相比更容易理解。尽管代码看起来像同步代码，但它它是异步的。让我们了解 `async\
+  \ await` 是如何工作的。\n\n在使用 `async await` 的代码中有两个点需要注意：函数签名中的 `async` 关键字以及函数内部的 `await`\
+  \ 关键字。以下是使用 `async await` 的两个主要步骤：\n\n1. 使用 `async` 关键字将任何函数标记为 `async`。这是必要的，因为\
+  \ `await` 关键字只能在 async 函数中使用。\n2. 在 `async` 函数内部使用 `await` 关键字等待任何 promise 稳定。\n\
+  \n:::info 在语言更新之前，`await` 关键字主要在 `async` 函数内部使用，直到允许[在模块顶部使用 await 关键字](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await#top_level_await)\n\
+  \n:::\n\n### async 函数\n\n`async` 函数允许在其内部使用 `await` 关键字。`async` 函数与非 async 函数不同，因为\
+  \ `async` 函数总是返回一个 promise。`async` 函数隐式地创建并返回一个 promise，类似于每个 promise 实例方法创建并返回一个新的\
+  \ promise。以下代码验证了这一说法：\n\n```\n1 async function foo() {}\n2\n3 const result = foo();\n\
+  4 console.log(result instanceof Promise); // true\n```\n\n这里有一个可以运行上述代码的 Replit：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example3” />\n\
+  \n`async` 函数返回的 promise 的完成或拒绝取决于内部发生了什么，类似于每个 promise 实例方法返回的 promise 取决于其回调函数内部发生的事件。以下点总结了\
+  \ `async` 函数 promise 的稳定：\n\n\n\n\n\n-   从 `async` 函数中返回任何非 promise 的值将导致 `async`\
+  \ 函数 promise 变为完成状态（fulfilled），并将返回的值作为完成值。\n\n```javascript\n1 async function foo()\
+  \ {\n2   return 123;\n3 }\n4 \n5 foo().then(console.log); // 123\n```\n\n这是一个可以在此处运行上述代码的\
+  \ Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example4”\
+  \ />\n\n-   从函数没有返回任何值将隐式地返回 `undefined`。这会导致函数 promise 以 `undefined` 作为完成值变为完成状态。\n\
+  \n```javascript\n1 async function foo() {}\n2 \n3 foo().then(console.log); // undefined\n\
+  ```\n\n这是一个可以在此处运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example5”\
+  \ />\n\n-   在 `async` 函数内部抛出错误会导致 `async` 函数 promise 变为拒绝状态（rejected），并将抛出的值作为拒绝原因。\n\
+  \n```javascript\n1 async function foo() {\n2   throw new Error(\"some error occurred\"\
+  );\n3 }\n4 \n5 foo().catch((error) => console.log(error.message)); // some error\
+  \ occurred\n```\n\n这是一个可以在此处运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example6”\
+  \ />\n\n-   从 `async` 函数中返回一个 promise 会导致 `async` 函数 promise 解析（resolved）为函数体内部返回的\
+  \ promise。正如我们在在本模块早前的课程中学习到的一个 promise 解析为另一个 promise 那样，`async` 函数创建的 promise\
+  \ 将等待其体内部返回的 promise 状态稳定（settle）。最终，`async` 函数 promise 将根据 `async` 函数内部返回的 promise\
+  \ 的情况变为完成或拒绝。\n\n```javascript\n 1 // 返回一个完成的 promise\n2 // 在大约 2 秒后\n3 function\
+  \ getPromise() {\n4   return new Promise((resolve, reject) => {\n5     setTimeout(()\
+  \ => {\n6       resolve(\"hello world\");\n7     }, 2000);\n8   });\n9 }\n10 \n\
+  11 async function foo() {\n12   return getPromise();\n13 }\n14 \n15 foo().then(console.log);\
+  \ // hello world\n```\n\n这是一个可以在此处运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example7”\
+  \ />\n\n### await 关键字\n\n`await` 关键字（也称为 `await` 操作符）用于等待 promise 状态稳定。以下是一个使用 `await`\
+  \ 关键字等待 promise 状态稳定的示例：\n\n```javascript\n1 // 假设以下语句\n2 // 在一个 async 函数内部\n3 const\
+  \ response = await fetch(url);\n```\n\n`await fetch(url)` 是一个表达式，它将求出 `fetch` 函数返回的\
+  \ promise 的完成值，或者在 `fetch` 函数返回的 promise 被拒绝时抛出拒绝值。抛出的值可以在外层 `try-catch` 结构执行块的\
+  \ `catch` 块中被捕获，或者如果 `try-catch` 没有包裹 `await` 语句，被 `awaited` 的 promise 将拒绝该 `async`\
+  \ 函数，从而允许调用代码处理该 promise。\n\n与 promise 链不同（在 promise 链中，我们必须注册完成处理程序来获取 promise\
+  \ 的完成值），`await` 表达式求出 promise 的完成值，我们可以将其保存在变量中。但它是如何工作的？它在等待 promise 状态稳定时不是阻塞主线程吗？\n\
+  \n每当 `async` 函数被调用时，它会同步执行，直到遇到第一个 `await` 表达式。函数的执行会被挂起，直到 `awaited` promise 状态稳定。与其阻塞主线程相反，函数的执行被挂起，在此期间主线程可以执行其他操作。当\
+  \ promise 稳定后，函数的执行将恢复。\n\n注意的是，`async` 函数在第一个 `await` 表达式之前是同步执行的。如果 `async` 函数内部没有\
+  \ `await` 关键字，它会执行吗？是的，但记住 `async` 函数总是返回一个 promise，它变为完成或拒绝取决于 `async` 函数内部的情况。\n\
+  \n为了获取 promise 的完成值，我们可以像下面所示使用 promise 链：\n\n```javascript\n1 async function foo()\
+  \ {\n2   return \"123\";\n }\n4 \n5 foo().then(console.log); // 123\n```\n\n这是一个可以在此处运行上述代码的\
+  \ Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example”\
+  \ />\n\n或者使用下面所示的 `await` 语法来 `await` 返回的 promise：\n\n```javascript\n1 async function\
+  \ foo() {\n2   return \"123\";\n }\n4 \n5 async function bar() {\n6   const result\
+  \ = await foo();\n7   console.log(result);\n8 }\n9 \n10 bar();\n```\n\n这是一个可以在此处运行上述代码的\
+  \ Replit：\n\n<ReplitEmbed src=”https://replit.com/” />\n\n### 多个 await\n\n`async`\
+  \ 函数并不限制在体内部只使用一次 `await` 关键字。你可以在 `async` 函数内部多次使用 `await` 关键字。关于多个 `await` 表达式，需要注意的是它们不是并行执行的；而是顺序执行，一个接一个。函数会在每个\
+  \ `await` 表达式处暂停，只有在之前的表达式执行完毕后才能执行下一个。\n\n```javascript\n1 // 返回一个完成的 promise\n\
+  2 // 在大约 1 秒后\n3 function promisifiedRandomNumber() {\n4   return new Promise((resolve,\
+  \ reject) => {\n5     setTimeout(() => {\n6       // 生成一个在 0-9 之间的随机数\n7       const\
+  \ randomNum = Math.floor(Math.random() * 10);\n8       resolve(randomNum);\n9  \
+  \   }, 1000);\n10   });\n11 }\n12 \n13 async function random() {\n14   const num1\
+  \ = await promisifiedRandomNumber();\n15   const num2 = await promisifiedRandomNumber();\n\
+  16   const num3 = await promisifiedRandomNumber();\n17 \n18   console.log(num1,\
+  \ num2, num3);\n19 }\n20 \n21 random();\n```\n\n这是一个可以在此处运行上述代码的 Replit：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/async-await-example” />\n\n上述代码示例中的每个\
+  \ `await` 表达式大约需要 1 秒，因此该函数大约需要 3 秒来求出所有的 `await` 表达式并在最后打印它们的值。\n\n```javascript\n\
+  1 // 返回一个完成的 promise\n2 // 在大约 1 秒后\n3 function promisifiedRandomNumber() {\n4 \
+  \  return new Promise((resolve, reject) => {\n5     setTimeout(() => {\n6      \
+  \ // 生成一个在 0-9 之间的随机数\n7       const randomNum = Math.floor(Math.random() * 10);\n\
+  8       resolve(randomNum);\n9     }, 1000);\n10   });\n11 }\n12 \n13 async function\
+  \ random() {\n14   const randomSum =\n15     (await promisifiedRandomNumber()) +\
+  \ (await promisifiedRandomNumber());\n16   console.log(randomSum);\n17 }\n18 \n\
+  19 random();\n```\n\n\n\n\n上述代码示例中的两个 `await` 表达式也没有被并行执行；相反，它们是一个接一个从左到右执行的。\n\n\
+  假设我们想在 `async` 函数内部执行并发的异步操作。在这种情况下，我们可以使用 `Promise.all` 函数，将所有 promise 作为输入，并等待\
+  \ `Promise.all` 返回的 promise。\n\n```\n 1 // returns a promise that is fulfilled\n\
+  \ 2 // after approximately 1 second\n 3 function promisifiedRandomNumber() {\n 4\
+  \   return new Promise((resolve, reject) => {\n 5     setTimeout(() => {\n 6   \
+  \    // generate a random number within range: 0 - 9\n 7       const randomNum =\
+  \ Math.floor(Math.random() * 10);\n 8       resolve(randomNum);\n 9     }, 1000);\n\
+  10   });\n11 }\n12 \n13 async function random() {\n14   const promiseArr = [\n15\
+  \     promisifiedRandomNumber(),\n16     promisifiedRandomNumber(),\n17     promisifiedRandomNumber()\n\
+  18   ];\n19   const randomNumsArr = await Promise.all(promiseArr);\n20   console.log(randomNumsArr);\n\
+  21 }\n22 \n23 random();\n```\n\n这是一个可以运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example14”\
+  \ />\n\n#### 错误处理\n\n为了处理 `async` 函数内部的 promise 拒绝（rejection），我们可以像下面一样用 `try-catch`\
+  \ 块包裹 `await` 表达式：\n\n```1 async function getUsersAndTasks() {\n2   try {\n3   \
+  \  const users = await fetchUsers();\n4     const tasks = await fetchTasks();\n\
+  5   } catch (error) {\n6     // handle the error\n7   }\n8 }\n```\n\n如果在 `try` 块中等待的任何\
+  \ promise 被拒绝，该 `await` 表达式之后的代码将不会执行，执行将跳转到 `catch` 块。`await` 关键字会抛出 promise 的拒绝值，允许\
+  \ `catch` 块捕获该拒绝值。\n\n或者，我们可以省略 `try-catch` 块，但在这种情况下，调用 `async` 函数的代码必须处理 promise\
+  \ 拒绝，可以通过使用 promise 链来实现：\n\n```\n 1 async function getUsersAndTasks() {\n 2   const\
+  \ users = await fetchUsers();\n 3   const tasks = await fetchTasks();\n 4 \n 5 \
+  \  // do something with users and tasks.\n 6 }\n 7 \n8 getUsersAndTasks().catch((error)\
+  \ => {\n 9   /* handle the error */\n10 });\n```\n\n在使用 `async await` 语法，可以在调用代码中使用\
+  \ `try-catch` 块：\n\n```\n 1 async function getUsersAndTasks() {\n 2   const users\
+  \ = await fetchUsers();\n 3   const tasks = await fetchTasks();\n 4 \n 5   // do\
+  \ something with users and tasks.\n 6 }\n 7 \n8 async function initApp() {\n 9 \
+  \  try {\n10     await getUsersAndTasks();\n11   } catch (error) {\n12     // handle\
+  \ the error\n13   }\n14 }\n```\n\n## 返回与等待 promise\n\n在 `async` 函数内部忘记 `await` 一个\
+  \ promise 可能会导致 bug，引起意想不到的输出。下面的代码显示了它可能引起的问题：\n\n```\n 1 // returns a promise\
+  \ that either\n 2 // fulfills or gets rejected randomly\n 3 function getPromise()\
+  \ {\n 4   return new Promise((resolve, reject) => {\n 5     setTimeout(() => {\n\
+  \ 6       if (Math.random() < 0.5) {\n 7         resolve(\"success\");\n 8     \
+  \  } else {\n 9         reject(new Error(\"failed\"));\n10       }\n 11     }, 1000);\n\
+  12   });\n13 }\n14 \n15 async function foo() {\n16   getPromise();\n17 }\n18 \n\
+  19 foo()\n20   .then(() => console.log(\"foo promise fulfilled\"))\n21   .catch(()\
+  \ => console.log(\"foo promise rejected\"));\n```\n\n这是一个可以运行上述代码的 Replit：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/async-await-example18” />\n\n`getPromise`\
+  \ 函数返回一个可以被拒绝的 promise，但 `foo` 函数返回的 promise 总是处于完成状态（fulfilled）。为什么？`foo` 函数有一个问题：它没有返回或\
+  \ `await` `getPromise` 函数返回的 promise。结果是 `foo` 函数没有等待 `getPromise` 函数返回的 promise\
+  \ 稳定；相反，它只是调用了 `getPromise` 函数，然后函数执行结束，隐式地返回 `undefined`，导致 `foo` 函数的 promise 以\
+  \ `undefined` 作为完成值被完成。\n\n随后的代码示例将使用上面定义的 `getPromise` 函数。\n\n为了捕获 `getPromise`\
+  \ 函数返回的 promise 的拒绝，我们有以下选项：\n\n*   返回 `getPromise` 函数返回的 promise。\n\n```\n1 async\
+  \ function foo() {\n2   return getPromise();\n3 }\n4 \n5 foo()\n6   .then(() =>\
+  \ console.log(\"foo promise fulfilled\"))\n7   .catch(() => console.log(\"foo promise\
+  \ rejected\"));\n```\n\n这是一个可以运行上述代码的 Replit：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example19”\
+  \ />\n\n返回 `getPromise` 函数返回的 promise 解决了 `foo` 函数的问题。\n\n*   `await` `getPromise`\
+  \ 函数返回的 promise。\n\n```\n1 async function foo() {\n2   await getPromise();\n3 }\n\
+  4 \n5 foo()\n6   .then(() => console.log(\"foo promise fulfilled\"))\n7   .catch(()\
+  \ => console.log(\"foo promise rejected\"));\n```\n\n这是一个可以运行上述代码的 Replit：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/async-await-example20” />\n\n如前面提到的，如果等待的\
+  \ promise 被拒绝，它的拒绝值会在 `async` 函数内部抛出。由于 `foo` 函数内部没有 `try-catch` 块，promise 的拒绝面临同样的命运。\n\
+  \n然而，在这个代码示例中需要注意的是的一点是，如果 `getPromise` 返回的 promise 是完成的，`foo` 函数 promise 并没有以其值完成；相反，由于我们没有在函数内部显式返回任何值，`async`\
+  \ 函数 promise 会以 `undefined` 完成。\n\n*   `await` `getPromise` 函数返回的 promise，并将其封装在\
+  \ `try-catch` 块中。\n\n```\n1 async function foo() {\n2   try {\n3     await getPromise();\n\
+  4   } catch (error) {\n5     console.log(\"inside catch block of foo function\"\
+  );\n6     return \"error caught in foo\";\n7   }\n8 }\n9 \n10 foo()\n11   .then(()\
+  \ => console.log(\"foo promise fulfilled\"))\n12   .catch(() => console.log(\"foo\
+  \ promise rejected\"));\n```\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example21”\
+  \ />等待 `getPromise` 调用会捕获 promise 拒绝，导致 `catch` 块执行。然而，`foo` 函数返回的 promise 总是完成的。为什么？因为\
+  \ `catch` 块没有抛出错误或返回一个被拒绝的 promise。结果是 `foo` 函数 promise 总是以 `catch` 块的返回值完成。我们可以从\
+  \ `catch` 块中抛出错误来解决这个问题。话虽如此，如果我们在 `catch` 块内部做的只是抛出错误，那么最好省略 `try-catch` 块，让 promise\
+  \ 拒绝自动拒绝 `foo` 函数 promise。\n\n在这个代码示例中的另一个问题是，如果 promise 已完成且 `catch` 块从未执行，我们没有显式地返回任何值。所以\
+  \ `foo` 函数 promise 将以 `undefined` 完成。在 `await` 表达式之前加上 `return` 关键字就能解决问题。\n\n\n\
+  \n\n\n:::caution 我们不能直接用 `return getPromise();` 而不是 `return await getPromise();`\
+  \ 吗？如果 `await` 表达式没有被包裹在 `try-catch` 块中，是可以这么做的。`try-catch` 有什么区别？有了 `try-catch`\
+  \ 块，`return getPromise();` 将导致 `foo` 函数内部的 `catch` 块永远不会执行。为了让 `foo` 函数内部的 `catch`\
+  \ 块执行，我们需要在 `try` 块内部 `await` 这个 promise，而不是直接返回。更多细节请阅读：[await vs return vs return\
+  \ await](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)\n\n##\
+  \ 等待非 promise 值\n\n`await` 关键字通常用于等待 promise 状态，但也可以用于非 promise 值。下面的代码示例展示了这一操作：\n\
+  \n```javascript\n1 const printRandomNumber = async () => {\n2   const randomNum\
+  \ = await Math.floor(Math.random() * 10);\n3   console.log(randomNum);\n4 };\n5\
+  \ \n6 printRandomNumber();\n7 \n8 console.log(\"before printing random number\"\
+  );\n```\n\n这里有一个 Replit，你可以在运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-await-example22”\
+  \ />\n\n如果你执行上面的代码示例，你会注意到代码示例末尾的 `console.log` 语句在随机数打印*之前*就被记录了，尽管函数是在最后一个 `console.log`\
+  \ 语句*之前*被调用的。这是为什么呢？我们没有等待任何 promise，那么这里发生了什么？\n\n当使用 `await` 关键字配合非 promise 值时，会创建一个新的\
+  \ promise，并且该 promise 将用我们用于 `await` 关键字的值来完成（fulfilled）。在我们的代码示例中，我们等待了一个随机数；它不是\
+  \ promise，因此会创建一个新的 promise 并用生成的随机数完成它。`await` 表达式之后的代码执行就像在完成处理程序（fulfillment\
+  \ handler）中一样。结果是当 promise 完成时，`await` 表达式之后的代码不会立即执行。它是异步执行的，正如我们在关于事件循环的课程中学到的，任何异步代码都会在我们代码的同步执行结束后才会执行。最后一个\
+  \ `console.log` 语句作为我们代码同步执行的一部分执行。因此，它在随机数之前被打印。\n\n对非 promise 值使用 `await` 几乎没有用，但只需记住这是可能的，并且值被隐式地封装在\
+  \ promise 中。\n\n我们在该模块早期的课程中学习过，执行 DOM 事件监听器以及 `setTimeout` 或 `setInterval` 回调需要调度一个“任务（task）”。任务被放入任务队列，直到事件循环处理它们。那么\
+  \ promise 的完成或拒绝处理程序呢？它们的执行也需要调度任务吗？不完全是任务，而是一个“微任务（microtask）”。\n\nECMAScript 规范将微任务称为\
+  \ [jobs](https://tc39.es/ecma262/#sec-promise-jobs)，它们被用于优先级高于“任务”的事务。微任务在以下之后被处理：\n\
+  \n*   每个回调之后，前提是调用栈为空。\n*   每个任务之后。\n\n而“任务”按照它们在任务队列中入队的顺序执行，事件循环的每个轮次（turn）或 tick\
+  \ 仅执行一个任务。\n\n关于微任务的另一个重要点是，虽然事件循环的每个 tick 仅处理一个任务，但微任务会一直处理，直到微任务队列为空。如果一个任务调度了另一个任务，它将在下一个轮次或\
+  \ tick 才会被处理，但在微任务的情况下，如果任何微任务被另一个微任务加入了队列，那么被加入的微任务也将被处理。这意味着如果每个微任务都不断产生另一个微任务，事件循环可能会陷入死循环。\n\
+  \n考虑以下代码示例：\n\n```javascript\n 1 console.log(\"start\");\n 2 \n 3 setTimeout(()\
+  \ => {\n 4   console.log(\"setTimeout callback with 500ms delay\");\n 5 }, 500);\n\
+  \ 6 \n 7 Promise.resolve()\n 8   .then(() => {\n 9     console.log(\"first 'then'\
+  \ callback\");\n10   })\n11   .then(() => {\n12     console.log(\"second 'then'\
+  \ callback\");\n13   })\n14   .then(() => {\n15     console.log(\"third 'then' callback\"\
+  );\n16   });\n 17 \n 18 setTimeout(() => {\n19   console.log(\"setTimeout callback\
+  \ with 0ms delay\");\n20 }, 0);\n 21 \n 22 console.log(\"end\");\n 23 \n 24 /*\n\
+  25 start\n26 end\n27 first 'then' callback\n28 second 'then' callback\n29 third\
+  \ 'then' callback\n30 setTimeout callback with 0ms delay\n31 setTimeout callback\
+  \ with 500ms delay\n32 */\n```\n\n这里是上述代码的运行效果：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/microtasks-example1”\
+  \ />\n\n执行上述代码需要调度任务和微任务。以下步骤解释了不同的任务和微任务是如何调度以执行上述代码的：\n\n1.  创建一个任务来执行脚本，开始代码的同步执行。\n\
+  2.  执行第一个 `console.log` 语句，在控制台上打印“start”。\n3.  接下来，我们有一个带有 500ms 延迟的 `setTimeout`\
+  \ 调用。这在后台启动了一个定时器，它的过期将导致一个任务进入任务队列。\n4.  继续代码的同步执行，调用了 `Promise.resolve()`（https://developer.mozilla.org/en-US/Web/JavaScript/Global_Objects/Promise），它创建了一个已解析的\
+  \ promise。为了执行它的完成处理程序，微任务被加入微任务队列中。\n5.  接下来，我们有一个带有 0ms 延迟的 `setTimeout` 调用。这也调度了一个任务。\n\
+  6.  最后，同步执行在最后的 `console.log` 语句处结束，在控制台上打印“end”。此时，调用栈为空，事件循环可以开始处理调度的任务和微任务了。\n\
+  7.  如前所述，微任务在每个任务之后以及每个回调之后都会被处理，前提是调用栈为空。代码的同步执行是一个任务，当它结束时，调用栈为空，因此微任务队列中的任何微任务都已准备好由事件循环处理。我们的微任务队列中只有一个微任务。它将通过在控制台打印“first\
+  \ ‘then’ callback”来被处理。\n\n\n\n\n\n### 8. 第一个 `then` 方法的回调函数隐式地返回 `undefined`，导致\
+  \ `then` 方法返回的 promise 以 `undefined` 作为填充值被完成。这在微任务队列中入队了另一个微任务，用于执行第一个 `then` 方法返回的\
+  \ promise 的完成处理程序。\n\n```\n1 task queue:\n2 -----------\n3 [\n4     task(execute\
+  \ setTimeout callback),\n5     task(execute setTimeout callback)\n6 ]\n7 \n8 microtask\
+  \ queue:\n9 ----------------\n10 [job(execute fulfillment callback)]\n11 \n12 output:\n\
+  13 -------\n14 start\n15 end\n16 first 'then' callback\n```\n\n### 9. 如前所述，微任务会一直处理直到微任务队列为空，因此新入队列的微任务也会被处理，并在控制台上打印“second\
+  \ ‘then’ callback”。\n\n```\n1 task queue:\n2 -----------\n3 [\n4     task(execute\
+  \ setTimeout callback),\n5     task(execute setTimeout callback)\n6 ]\n7 \n8 microtask\
+  \ queue:\n9 ----------------\n10 []\n11 \n12 output:\n13 -------\n14 start\n15 end\n\
+  16 first 'then' callback\n17 second 'then' callback\n```\n\n### 10. 与步骤 8 类似，第二个\
+  \ `then` 方法的回调函数隐式地返回 `undefined`，导致 `then` 方法返回的 promise 以 `undefined` 作为填充值被完成。这在微任务队列中入队了另一个微任务，用于执行第二个\
+  \ `then` 方法返回的 promise 的完成处理程序。\n\n```\n1 task queue:\n2 -----------\n3 [\n4   \
+  \  task(execute setTimeout callback),\n5     task(execute setTimeout callback)\n\
+  6 ]\n7 \n8 microtask queue:\n9 ----------------\n10 [job(execute fulfillment callback)]\n\
+  11 \n12 output:\n13 -------\n14 start\n15 end\n16 first 'then' callback\n17 second\
+  \ 'then' callback\n```\n\n### 11. 这导致“third ‘then’ callback”在控制台上被打印。\n\n```\n1\
+  \ task queue:\n2 -----------\n3 [\n4     task(execute setTimeout callback),\n5 \
+  \    task(execute setTimeout callback)\n6 ]\n7 \n8 microtask queue:\n9 ----------------\n\
+  10 []\n11 \n12 output:\n13 -------\n14 start\n15 end\n16 first 'then' callback\n\
+  17 second 'then' callback\n18 third 'then' callback\n```\n\n### 12. 我们对第三个 `then`\
+  \ 方法返回的 promise 进行任何任何操作，因此它的完成被忽略了。此时，所有微任务已处理完毕，微任务队列为空。事件循环现在可以处理任务队列中的第一个任务了。\n\
+  \n### 13. 任务队列中的第一个任务是第二个 `setTimeout` 调用，因为它的延迟比第一个短，所以它在另一个具有 500ms 延迟的 `setTimeout`\
+  \ 回调任务之前被入队。处理该任务后会在控制台上打印“setTimeout callback with 0ms delay”。\n\n```\n1 task queue:\n\
+  2 -----------\n3 [task(execute setTimeout callback)]\n4 \n5 microtask queue:\n6\
+  \ ----------------\n7 []\n8 \n9 output:\n10 -------\n11 start\n12 end\n13 first\
+  \ 'then' callback\n14 second 'then' callback\n15 third 'then' callback\n16 setTimeout\
+  \ callback with 0ms delay\n```\n\n### 14. 最后，任务队列中的最后一个任务是具有 500ms 延迟的第一个 `setTimeout`\
+  \ 调用，导致控制台上打印出“setTimeout callback with 500ms delay”。\n\n```\n1 task queue:\n2 -----------\n\
+  3 []\n4 \n5 microtask queue:\n6 ----------------\n7 []\n8 \n9 output:\n10 -------\n\
+  11 start\n12 end\n13 first 'then' callback\n14 second 'then' callback\n15 third\
+  \ 'then' callback\n16 setTimeout callback with 0ms delay\n17 setTimeout callback\
+  \ with 500ms delay\n```\n\n> :::note 在本模块中，我们使用“resolved”一词来指代正在等待另一个 promise 状态定的\
+  \ promise。换句话说，我们使用“resolved”来指代处于 pending（等待）状态的 promise。\n>\n> 尽管如此，“resolved”也可以用于指代已完成（fulfilled）或拒绝（rejected）的\
+  \ promise。更多细节，请参阅：[promises-unwrapping - States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)\n\
+  > :::\n\n### 延伸阅读\n\n以下是我回答的一些 Stackoverflow 问题的链接，这些问题与微任务相关并解释了与上述讨论类似代码示例的执行情况：\n\
+  \n* [如何解释这段代码片段的输出顺序？](https://stackoverflow.com/questions/63052649/how-to-explain-the-output-order-of-this-code-snippet)\n\
+  * [结合 promise.then 和 async 函数的 JavaScript 打印顺序测验](https://stackoverflow.com/questions/72306157/javascript-quiz-of-printing-sequence-with-combination-of-promise.then-and-async-function)\n\
+  * [Promise 链 .then catch](https://stackoverflow.com/questions/68784426/promise-chain-then)\n\
+  * [JavaScript 异步执行顺序](https://stackoverflow.com/questions/68882535/asynchronous-execution-order-in-javascript)\n\
+  * [任务、微任务、队列和调度](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)\n\
+  \n在本节中，我们将讨论应该避免的常见 Promise 相关反模式。以下是我们将讨论的反模式列表：\n\n* 不必要的使用 Promise 构造函数\n* 错误的错误处理\n\
+  * 将拒绝转换为完成\n* 异步执行器函数\n\n### 不必要的使用 Promise 构造函数\n\nJavaScript 开发者常见的错误之一（特别是对于那些没有太多经验的人）是不需要的情况下使用构造函数来创建\
+  \ promise。让我们来看一个例子：\n\n```\n1 function fetchData(url) {\n2   return new Promise((resolve,\
+  \ reject) => {\n3     fetch(url)\n4       .then((res) => res.json(res))\n5     \
+  \  .then(resolve)\n6       .catch(reject);\n7   });\n8 }\n```\n\n如果你向 fetchData\
+  \ 函数传递 URL 并等待 promise 解析，上面的代码可以工作，但在上述示例中使用构造函数是不必要的。我们可以如下所示重写上述函数：\n\n```javascript\n\
+  1 function fetchData(url) {\n2   return fetch(url).then((res) => res.json(res));\n\
+  3 }\n```\n\n重写后的 fetchData 函数简洁、易读，没有创建任何不必要的 promise，并允许调用 fetchData 的代码捕获并处理任何错误。旧版本的\
+  \ fetchData 函数也允许调用代码处理错误，但修订版不需要 catch 方法调用。\n\n不必要的使用 promise 构造函数会导致另一个问题：如果我们忘记在\
+  \ Promise 构造函数内部的 promise 链中添加 catch 方法调用，那么在 HTTP 请求期间抛出的任何错误将无法被捕获。在执行器函数内部忘记调用\
+  \ reject 函数会隐藏异步操作的失败。\n\n### 错误的错误处理\n\n在编写使用 promise 的代码时，记住最重要的规则之一是*要么捕获并处理错误，要么返回\
+  \ promise 以允许调用代码捕获并处理它*。这一基础规则可以帮助你避免 promise 代码中的隐藏 bug。\n\n让我们来看一个违反上述规则的错误处理错误示例：\n\
+  \n\n\n\n\n```javascript\nfunction fetchData(url) {\n  fetch(url).then((response)\
+  \ => response.json());\n}\n\nfetchData(\"https://jsonplaceholder.typicode.com/todos/1\"\
+  )\n  .then((data) => console.log(data))\n  .catch((error) => console.log(error));\n\
+  ```\n\n以下是上述代码的 Replit Demo：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/promise-anti-patterns-example3”\
+  \ />\n\n上述代码会报错，因为 `fetchData` 函数没有返回承诺（promise）。它也没有允许调用代码进行任何类型的错误处理。\n\n有两种方法可以修复上述代码：\n\
+  \n- 通过在 `fetch(...)` 之前添加 `return` 关键字，让 `fetchData` 函数返回 promise。\n\n  ```javascript\n\
+  \  function fetchData(url) {\n    return fetch(url).then((response) => response.json());\n\
+  \  }\n  ```\n\n  以下是上述代码的 Replit Demo：\n\n  <ReplitEmbed src=”https://replit.com/@newlineauthors/promise-anti-patterns-example4”\
+  \ />\n\n  由于上面的函数只是发送了 HTTP 请求，并在对响应对象调用 `json()` 方法后返回响应数据，因此调用代码负责使用响应数据以及处理任何错误。\n\
+  \n  ```javascript\n  fetchData(/* some url */)\n    .then((data) => {\n      /*\
+  \ 对数据进行操作 */\n    })\n    .catch((error) => {\n      /* 处理错误 */\n    });\n  ```\n\
+  \n- 通过在 `then` 方法后链式 `catch` 方法，在 `fetchData` 函数内部处理错误。\n\n  ```javascript\n  function\
+  \ fetchData(url) {\n    fetch(url)\n      .then((response) => response.json())\n\
+  \      .then((data) => {\n        /* 对数据进行操作 */\n      })\n      .catch((err) =>\
+  \ {\n        /* 错误处理代码 */\n      });\n  }\n  ```\n\n  你可以像下面所示调用上面的函数：\n\n  ```javascript\n\
+  \  fetchData(/* some url */);\n  ```\n\n### 将 promise 拒绝（rejection）转换为完成（fulfillment）\n\
+  \n`Promise.prototype` 对象上的每个方法都会返回一个新的 promise。如果我们不小心，就可能会写出隐式将 promise 拒绝转换为 promise\
+  \ 完成的代码。让我们来看一个例子：\n\n```javascript\nfunction getData(url) {\n  return Promise.reject(new\
+  \ Error()).catch((err) => {\n    console.log(\"inside catch block in getData function\"\
+  );\n  });\n}\n\ngetData()\n  .then((data) => console.log(\"then block\"))\n  .catch((error)\
+  \ => console.log(\"catch block\"));\n```\n\n以下是上述代码的 Replit Demo：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/promise-anti-patterns-example8” />\n\n\
+  你期望什么输出？输出如下所示：\n\n```text\n\"inside catch block in getData function\"\n\n\"then\
+  \ block\"\n```\n\n我们在 `getData` 函数内部调用了 [Promise.reject](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject)，所以为什么没有打印“catch\
+  \ block”而是打印了“then block”？为什么不是执行 catch 块而是调用了 `then` 方法的回调函数？让我们理解上述代码是如何执行的：\n\
+  \n1. `getData` 函数被调用。\n2. `Promise.reject(new Error())` 创建了一个被拒绝的 promise。\n3. 由于\
+  \ promise 被拒绝，`catch` 方法的回调函数被调用。\n4. 控制台打印了“inside catch block in getData function”。\n\
+  5. 由于由于 `catch` 方法的回调函数没有显式地返回任何内容，该回调函数隐式地返回了 `undefined`。\n6. 因为返回了 `undefined`，拒绝状态被转换为了完成（fulfillment）。\n\
+  7. 随后 `then` 方法的回调函数被调用。\n8. 控制台打印了“then block”。\n\n查看此 [stackoverflow 帖子](https://stackoverflow.com/questions/6285190/handle-promise-catches)\
+  \ 详细解释这种行为。\n\n在 `getData` 函数中，如果使用的是 `fetch` 而不是 `Promise.reject`，如果 HTTP 请求成功，`catch`\
+  \ 方法将正常工作；但如果 HTTP 请求失败，由于上述逻辑，`catch` 方法可能会将 promise 拒绝转换为完成。\n\n:::info\n有时，你确实想将\
+  \ promise 拒绝转换为 promise 完成，以便通过 `catch` 方法处理拒绝。但请注意，如果不小心这样做，`catch` 方法可能会导致 promise\
+  \ 变为完成。\n:::\n\n假设你在疑惑为什么 `getData` 函数返回的 promise 是完成状态拒绝拒绝。答案是 `catch` 方法显式或隐式地返回了值。那么我们如何修复上述代码以避免这个问题？有两种方法：\n\
+  \n- 在 `catch` 方法的回调函数中抛出错误。\n\n  ```javascript\n  function getData(url) {\n    return\
+  \ Promise.reject(new Error()).catch((err) => {\n      throw err;\n    });\n  }\n\
+  \  ```\n\n  以下是上述代码的 Replit Demo：\n\n  <ReplitEmbed src=”https://replit.com/@newlineauthors/promise-anti-patterns-example9”\
+  \ />\n\n  这将拒绝 `catch` 方法返回 promise，正如预期那样，调用代码将触发 `catch`。\n\n- 移除 `catch` 方法。\n\
+  \n  ```javascript\n  function getData(url) {\n    return Promise.reject(new Error());\n\
+  \  }\n  ```\n\n  以下是上述代码的 Replit Demo：\n\n  <ReplitEmbed src=”https://replit.com/@newlineauthors/promise-anti-patterns-example10”\
+  \ />\n\n  这也会触发调用代码中的 `catch` 块，因为现在 `getData` 函数返回 `Promise.reject` 的结果，正如之前所述，`Promise.reject`\
+  \ 创建了一个被拒绝的 promise。:::tip\n我个人建议使用这种方法，而不是在 `catch` 方法的回调函数中抛出错误。只需让调用代码捕获并处理错误即可。仅仅重抛错误的回调函数是不必要的。:::\n\
+  \n### 异步执行器函数 (Async executor function)\n\n在使用 `Promise` 构造函数创建新 promise 时，我们向该构造函数传递一个函数。这个函数被称为**执行器**（executor）函数。执行器函数永远不应该是\
+  \ `async` 函数。为什么呢？\n\n假设执行器函数是一个 `async` 函数。在这种情况下，`async` 执行器抛出的任何错误都无法被捕获，且抛出的错误不会导致新构造的\
+  \ promise 被拒绝。\n\n```javascript\nconst p = new Promise(async (resolve, reject) =>\
+  \ {\n  throw new Error(\"error\");\n});\n\np.catch((e) => console.log(e.message));\n\
+  ```\n\n在上述代码示例中，由于执行器是 `async` 函数，内部抛出的错误不会拒绝新创建的 promise `p`。结果是，promise `p` 的\
+  \ `catch` 方法的回调函数永远不会被调用。\n\n如果执行器是一个同步函数，那么执行器内部抛出的任何错误都会自动拒绝新创建的 promise。尝试从上述代码示例中移除\
+  \ `async` 关键字并观察输出。\n\n\n\n\n\n另一个需要注意的是，如果你发现自己在执行器函数内部使用了 `await`，这应该是一个信号，说明你完全不需要\
+  \ Promise 构造函数（记住上面讨论的第一种反模式）。\n\n## 迭代器与生成器\n\n数组等内置对象可以使用 [for…of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)\
+  \ 循环进行迭代。与其使用简单的 `for` 循环遍历数组（在那种情况下，我们必须通过索引访问值、在每次迭代后递增索引，并且知道何时结束迭代以避免访问越界索引），使用\
+  \ `for...of` 循环，一切都为我们处理好了。我们不需要担心索引或循环终止条件。\n\n```\n1 const arr = [1, 2, 3];\n\
+  2 \n3 for (const num of arr) {\n4   console.log(num);\n5 }\n```\n\n这是一个可以在其中运行上述代码的\
+  \ Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example1”\
+  \ />\n\n`for...of` 循环是如何帮助我们迭代数组的？它是如何知道何时结束迭代的？\n\n为了理解这一点，我们需要理解以下两个概念：\n\n* 可迭代对象\
+  \ (Iterables)\n* 迭代器 (Iterators)\n\n### 可迭代对象\n\n可迭代对象实现了[可迭代协议](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterable_protocol)\
+  \ 的对象。根据可迭代协议，如果一个对象定义了供 `for...of` 循环用于迭代对象值的迭代行为，那么该对象就是可迭代的。该对象可以实现由 [Symbol.iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator)\
+  \ 属性表示的方法；它是定义迭代行为的已知符号之一。已知符号已在与符号相关的模块中讨论过。\n\n在数组的情况下，该方法定义在 `Array.prototype`\
+  \ 对象中。该方法定义了适用于数组的迭代行为。其他对象也可以实现此方法以定义适用于它们的迭代行为。\n\n`Symbol.iterator` 返回了什么，可以供\
+  \ `for...of` 循环等结构用于迭代对象？它返回一个迭代器对象。\n\n### 迭代器\n\n迭代器是实现了[迭代协议](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterator_protocol)\
+  \ 的对象。根据迭代协议，如果一个对象实现了一个名为 `next` 的方法，该方法接受零或一个参数并返回一个具有以下属性的对象，那么该对象就是一个迭代器：\n\n\
+  * `done`: 表示迭代器是否可以产生或返回另一个。如果可以，其值为 `false`，否则为 `true`。`true` 值等同于在 `next` 方法返回的对象中省略此属性。\n\
+  * `value`: 迭代器对象返回的值。如果 `done` 属性为 `true`，则该属性可以省略或其值可以为 `undefined`。\n\n以下是具有上述属性的迭代器对象的示例：\n\
+  \n```\n1 { value: 45, done: false }\n2 \n3 // 或者\n4 \n5 { value: undefined, done:\
+  \ true }\n```\n\n当我们使用 `for...of` 循环迭代数组时，它在内部从数组获取迭代器，并不断调用其 `next` 方法，直到迭代器返回所有值。通过\
+  \ `for...of` 循环，我们间接使用迭代器。我们也可以直接使用迭代器。数组是可内容的，我们知道可迭代对象实现了 `Symbol.iterator` 方法，该方法返回包含\
+  \ `next` 方法的迭代器对象。下面的代码示例了我们如何获取数组迭代器并直接使用它来获取数组中的值：\n\n```\n 1 const arr = [2,\
+  \ 4, 6, 8, 10];\n 2 \n3 // 获取数组迭代器对象\n4 const arrayIterator = arr[Symbol.iterator]();\n\
+  \ 5 \n6 // 获取第一个迭代结果对象\n7 let result = arrayIterator.next();\n 8 \n9 // 继续获取新的迭代结果对象\n\
+  10 // 直到迭代器的 \"done\" 属性\n11 // 对象为 false\n12 while (!result.done) {\n13   console.log(result.value);\n\
+  14   result = arrayIterator.next();\n15 }\n16 \n17 /*\n18 2\n19 4\n20 6\n21 8\n\
+  22 10\n23 */\n```\n\n这是一个可以在其中运行上述代码的 Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example2”\
+  \ />\n\n每个[内置迭代器对象](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator#description)\
+  \ 都为可迭代对象提供了定义特定迭代行为的迭代器。以下是直接使用 `Map` 对象迭代器的示例：\n\n```\n 1 const myMap = new Map();\n\
+  2 myMap.set(\"a\", 1);\n3 myMap.set(\"b\", 2);\n4 myMap.set(\"c\", 3);\n 5 \n6 //\
+  \ 获取数组迭代器对象\n7 const mapIterator = myMap[Symbol.iterator]();\n 8 \n9 // 获取第一个迭代结果对象\n\
+  10 let result = arrayIterator.next();\n11 \n12 // 继续获取新的迭代结果对象\n13 // 直到迭代器的 \"\
+  done\" 属性\n14 // 对象为 false\n15 while (!result.done) {\n16   console.log(result.value);\n\
+  17   result = arrayIterator.next();\n18 }\n```\n（注：此处示例代码中存在变量名错误 `arrayIterator`\
+  \ 应为 `mapIterator`，但翻译遵循原文逻辑）\n\n这是一个可以在其中运行上述代码的 Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example3”\
+  \ />\n（注：原文示例代码处未闭合代码括号，此处已保持原文结构）\n\n抱歉，上述翻译过程中发现原文示例代码块出现了逻辑断层，我将重新整理并翻译如下。\n\n\
+  重新整理后的完整译文：\n\n[content]\n当我们使用 `for...of` 循环迭代数组时，它在内部从数组获取迭代器，并不断调用其 `next` 方法，直到迭代器返回所有值。通过\
+  \ `for...of` 循环，我们间接使用迭代器。我们也可以直接使用迭代器。数组是可内容的，我们知道可迭代对象实现了 `Symbol.iterator` 方法，该方法返回包含\
+  \ `next` 方法的迭代器对象。下面的代码示例展示了我们如何获取数组迭代器并直接使用它来获取数组中的值：\n\n```\n 1 const arr = [2,\
+  \ 4, 6, 8, 10];\n 2 \n3 // 获取数组迭代器对象\n4 const arrayIterator = arr[Symbol.iterator]();\n\
+  \ 5 \n6 // 获取第一个迭代结果对象\n7 let result = arrayIterator.next();\n 8 \n9 // 继续获取新的迭代结果对象\n\
+  10 // 直到迭代器的 \"done\" 属性\n11 // 对象为 false\n12 while (!result.done) {\n13   console.log(result.value);\n\
+  14   result = arrayIterator.next();\n15 }\n16 \n17 /*\n18 2\n19 4\n20 6\n21 8\n\
+  22 10\n23 */\n```\n\n这是一个可以在其中运行上述代码的 Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example2”\
+  \ />\n\n每个[内置迭代器对象](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Iterator#description)\
+  \ 都为可迭代对象提供了定义特定迭代行为的迭代器。以下是直接使用 `Map` 对象迭代器的示例：\n\n```\n 1 const myMap = new Map();\n\
+  2 myMap.set(\"a\", 1);\n3 myMap.set(\"b\", 2);\n4 myMap.set(\"c\", 3);\n 5 \n6 //\
+  \ 获取数组迭代器对象\n7 const mapIterator = myMap[Symbol.iterator]();\n 8 \n9 // 获取第一个迭代结果对象\n\
+  10 let result = mapIterator.next();\n11 \n12 // 继续获取新的迭代结果对象\n13 // 直到迭代器的 \"done\"\
+  \ 属性\n14 // 对象为 false\n15 while (!result.done) {\n16   console.log(result.value);\n\
+  17   result = mapIterator.next();\n18 }\n```\n\n这是一个可以在其中运行上述代码的 Replit 链接：\n\n\
+  <ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example3” />\n\n\
+  `Map` 对象迭代结果对象的 `value` 属性是包含在数组中的键值对。你可以使用 [Map.prototype.values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values)\
+  \ 获取返回 `Map` 中所有值的迭代器，或者使用 [Map.prototype.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/keys)\
+  \ 获取返回 `Map` 中所有键的迭代器。\n\n### 迭代器原型\n\n每个迭代器对象都继承自相应的原型对象。例如，数组迭代器继承自数组迭代器对象。同样，字符串迭代器继承自字符串迭代器对象。所有迭代器原型都继承自\
+  \ `Iterator.prototype` 对象。\n\n```\n 1 const arr = [2, 4, 6, 8, 10];\n 2 \n3 // 获取数组迭代器\n\
+  4 const arrayIterator = arr[Symbol.iterator]();\n 5 \n6 // 这是所有数组迭代器共享的原型对象\n7 const\
+  \ arrayIteratorPrototype = Object.getPrototypeOf(arrayIterator);\n 8 \n9 console.log(Object.getOwnPropertyNames(arrayIteratorPrototype));\n\
+  10 // [\"next\"]\n```\n\n这是一个可以在其中运行上述代码的 Replit 链接：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example4”\
+  \ />\n\n上述代码示例展示了获取数组迭代器原型的一种方法，它还展示了 `next` 方法继承自数组迭代器原型。如果我们获取数组迭代器原型的原型，将得到 `Iterator.prototype`\
+  \ 对象，它是所有迭代器原型对象共享的。\n\n```\n 1 const arr = [2, 4, 6, 8, 10];\n 2 \n3 // 获取数组迭代器\n\
+  4 const arrayIterator = arr[Symbol.iterator]();\n 5 \n6 // 这是所有数组迭代器共享的原型对象\n7 const\
+  \ arrayIteratorPrototype = Object.getPrototypeOf(arrayIterator);\n 8 \n9 // 这是所有迭代器原型共享的\
+  \ Iterator.prototype 对象\n10 const iteratorPrototype = Object.getPrototypeOf(arrayIteratorPrototype);\n\
+  ```\n\n:::info 我们无法直接访问 `Iterator.prototype` 对象，因为它是所有内置迭代器继承自的隐藏全局对象。\n\n:::\n\n\
+  \n\n\n\n`Iterator.prototype` 对象本身是一个可迭代对象（iterable object），这意味着它实现了可迭代协议。但它所实现的\
+  \ `Symbol.iterator` 方法简单地返回了调用该方法的迭代器。这意味着任何迭代器对象本身都是可迭代的，意味着我们可以将其与 `for...of`\
+  \ 循环等构造函数一起使用。\n\n```\n 1 const arr = [1, 2, 3];\n 2 \n3 const arrayIterator = arr[Symbol.iterator]();\n\
+  \ 4 \n5 // 使用数组迭代对象而不是数组本身\n 6 for (const num of arrayIterator) {\n 7   console.log(num);\n\
+  \ 8 }\n 9\n10 /*\n11 1\n12 2\n13 3\n14 */\n```\n\n可以在这个 Replit 中运行上面的代码：\n\n<ReplitEmbed\
+  \ src=”https://replit.com/@newlineauthors/iterators-example6” />\n\n## 创建自定义可迭代对象\n\
+  \n此时，我们已经学习了足够的可迭代对象和迭代器知识，可以创建自定义的可迭代对象。要创建一个自定义的可迭代对象，我们需要实现 `Symbol.iterator`\
+  \ 方法，该方法返回一个包含 `next` 方法的迭代器对象。考虑一个学生对象的示例，我们希望将其变为可迭代，这样就可以用 `for...of` 循环轻松地打印它们的属性。\n\
+  \n```\n1 function Student(name, age, id, courses) {\n2   this.name = name;\n3  \
+  \ this.age = age;\n4   this.id = id;\n5   this.courses = courses;\n6 }\n```\n\n\
+  这是用于创建学生对象的 `Student` 构造函数。为了让所有学生对象都可迭代，我们需要在 `Student.prototype` 对象中实现 `Symbol.iterator`\
+  \ 方法，如下所示：\n\n```\n 1 Student.prototype[Symbol.iterator] = function () {\n 2   //\
+  \ \"this\" 指向调用该方法的学生对象\n 3   const currentStudent = this;\n 4   const studentProps\
+  \ = Object.getOwnPropertyNames(currentStudent);\n 5   let propIndex = 0;\n 6 \n\
+  \ 7   const studentIterator = {\n 8     next: () => {\n 9       if (propIndex <\
+  \ studentProps.length) {\n10         const key = studentProps[propIndex];\n11  \
+  \       const value = currentStudent[key];\n12         propIndex++;\n13        \
+  \ const formattedValue = `${key.padStart(7)} => ${value}`;\n 14 \n15         return\
+  \ {\n16           value: formattedValue,\n17           done: false\n18         };\n\
+  19       }\n20 \n21       return {\n22         value: undefined,\n23         done:\
+  \ true\n24       };\n25     }\n26   };\n 27 \n28   return studentIterator;\n29 };\n\
+  ```\n\n现在，如果我们尝试对任何学生实例进行迭代，我们将得到我们在学生迭代器 `next` 方法中定义的格式化值，如下：\n\n```\n 1 const\
+  \ jack = new Student(\"Jack\", 20, \"21A\", [\"Maths\", \"Biology\", \"Physics\"\
+  ]);\n 2 \n 3 for (const val of jack) {\n 4   console.log(val);\n 5 }\n 6 \n 7 /*\n\
+  \ 8    name => Jack\n 9     age => 20\n10      id => 21A\n11 courses => Maths,Biology,Physics\n\
+  12 */\n```\n\n可以在这个 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example9”\
+  \ />\n\n我们可以根据任何所需的逻辑定义迭代行为，并以我们想要的方式格式化迭代器结果对象中返回的值。这赋予了我们活性，可以为特定对象或一组相关对象定义合适的迭代行为。\n\
+  \n请记住，每个迭代器原型对象（例如数组迭代器原型对象）都继承自 `Iterator.prototype` 对象，但 `studentIterator` 对象并没有。因此，学生迭代器对象不是可迭代的。\n\
+  \n```\n1 const jack = new Student(\"Jack\", 20, \"21A\", [\"Maths\", \"Biology\"\
+  , \"Physics\"]);\n2 \n3 const studentIterator = jack[Symbol.iterator]();\n4 \n5\
+  \ for (const val of studentIterator) {\n6   console.log(val);\n7 }\n8 \n9 // 错误...\n\
+  ```\n\n可以在这个 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/iterators-example10”\
+  \ />\n\n我们可以通过两种方式修复这个问题：显式地在 `Iterator.prototype` 对象和我们的 `studentIterator` 对象之间建立原型链链接，或者更简单的方法是在\
+  \ `studentIterator` 对象中实现 `Symbol.iterator` 方法使其变为可迭代：\n\n```\n 1 Student.prototype[Symbol.iterator]\
+  \ = function () {\n2   // 为了保持代码示例简洁省略了代码\n 3 \n4   const studentIterator = {\n\
+  \ 5     next() {\n6       // 为了保持代码示例简洁省略了代码\n 7     },\n 8     [Symbol.iterator]()\
+  \ {\n9       return this;\n10     }\n11   };\n 12 \n13   return studentIterator;\n\
+  14 };\n```\n\n现在 `studentIterator` 对象是可迭代的，如果我们需要，可以在 `for...of` 循环中使用它。\n\n上面的代码示例还有一个可以改进的地方。我们在\
+  \ `Student.prototype` 上定义了 `Symbol.iterator` 方法，但它是可枚举的（enumerable），我们可以通过使用 `Object.defineProperty`\
+  \ 方法将其变为不可枚举，如下所示：\n\n```\n1 Object.defineProperty(Student.prototype, Symbol.iterator,\
+  \ {\n2   value: function () {\n3     // 复制 Symbol.iterator 方法的内容\n4   },\n5   configurable:\
+  \ true,\n6   writable: true\n7 });\n```\n\n生成器（Generators）是特殊的函数，可以在执行的不同点暂停，然后从暂停的地方继续。与迭代器一样，生成器函数可以用于产生由\
+  \ `for...of` 循环消耗的序列。事实上，生成器函数返回一个迭代器。我们可以像使用其他迭代器一样使用生成器的返回值。\n\n以下是一个产生 0 到 10\
+  \ 奇数的生成器函数示例：\n\n```\n1 function* odds() {\n2   for (let i = 1; i <= 10; i += 2)\
+  \ {\n3     yield i;\n4   }\n5 }\n6 \n7 for (const num of odds()) {\n8   console.log(num);\n\
+  9 }\n10 \n11 /*\n12 1\n13 3\n14 5\n15 7\n16 9\n17 */\n```\n\n可以在这个 Replit 中运行上面的代码：\n\
+  \n<ReplitEmbed src=”https://replit.com/@newlineauthors/generators-example1” />\n\
+  \n注意上述生成器函数中的以下两点：\n\n* `function*` 语法将函数标记为生成器函数。`*` 和 `function` 之间的空格也是有效的语法：`function\
+  \ *`。\n* `yield` 关键字产生一个值。当我们调用生成器函数返回的迭代器的 `next` 方法时，得到的就是 `yield` 关键字右侧的值。`yield`\
+  \ 也标记了生成器暂停的位置。\n\n## 无限序列\n\n生成器函数还可以创建无限序列，如下：\n\n```\n1 function* randomNumberGenerator(max)\
+  \ {\n2   while (true) {\n3     yield Math.floor(Math.random() * max);\n4   }\n5\
+  \ }\n6 \n7 const randomNumGen = randomNumberGenerator(10);\n8 \n9 // 打印 10 个随机数\n\
+  10 for (let i = 0; i < 10; i++) {\n11   console.log(randomNumGen.next().value);\n\
+  12 }\n```\n\n可以在这个 Replit 中运行上面的代码：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/generators-example2”\
+  \ />\n\n上面的代码示例仅打印了 10 个随机数，但可以使用生成器生成无限数量的随机数。这是可能的，因为生成器函数是惰性求值的；它们的执行会在请求新值时暂停。\n\
+  \n\n...\n\n\n以下是一个使用异步迭代器（async iterator）从 API 获取用户的示例：\n\n```javascript\n 1 function\
+  \ fetchUsers(userCount) {\n 2   // 将最大用户数量限制为 10\n 3   if (userCount > 10) {\n 4\
+  \     userCount = 10;\n 5   }\n 6 \n 7   const BASE_URL = \"https://jsonplaceholder.typicode.com/users\"\
+  ;\n 8   let userId = 1;\n 9 \n10   const userAsyncIterator = {\n11     async next()\
+  \ {\n12       if (userId > userCount) {\n13         return { value: undefined, done:\
+  \ true };\n14       }\n15 \n16       const response = await fetch(`${BASE_URL}/${userId++}`);\n\
+  17 \n18       if (response.ok) {\n19         const userData = await response.json();\n\
+  20         return { value: userData, done: false };\n21       } else {\n22     \
+  \    throw new Error(\"failed to fetch users\");\n23       }\n24     },\n25    \
+  \ [Symbol.asyncIterator]() {\n26       return this;\n27     }\n28   };\n29 \n30\
+  \   return userAsyncIterator;\n31 }\n32 \n33 async function getData() {\n34   const\
+  \ usersAsyncIterator = fetchUsers(3);\n35 \n36   let userIteratorResult = await\
+  \ usersAsyncIterator.next();\n37 \n38   while (!userIteratorResult.done) {\n39 \
+  \    console.log(userIteratorResult.value);\n40     userIteratorResult = await usersAsyncIterator.next();\n\
+  41   }\n42 }\n43 \n44 getData();\n```\n\n这里是上述代码的运行 Replit 示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-iterators-example1”\
+  \ />\n\n在上面的代码示例中，我们直接使用了异步迭代器，而不是使用像 `for...of` 循环这样的结构。在本模块的后续，我们将看到如何使用循环来消费异步迭代器。\n\
+  \n注意上面的代码示例中，`fetchUsers` 函数内部的 `userAsyncIterator` 对象实现了 `Symbol.asyncIterator`\
+  \ 方法以实现异步可迭代协议。我们在课程中讨论过迭代器，每个内置迭代器都继承自 `Iterator.prototype` 对象，并且本身是可迭代的。为了让我们自定义的迭代器也是可迭代的，我们可以让迭代器继承自\
+  \ `iterator.prototype` 对象，或者我们可以在我们的迭代器对象中实现 `Symbol.iterator` 方法来使其变为可迭代的。同样，异步迭代器继承自\
+  \ `AsyncIterator.prototype` 对象，这同样一个隐藏的全局对象，就像 `Iterator.prototype` 对象一样。我们可以让 `userAsyncIterator`\
+  \ 对象继承自 `AsyncIterator.prototype` 以使其变为可迭代的，或者像上面的代码示例所示，实现 `Symbol.asyncIterator`\
+  \ 方法。\n\n简而言之，同步迭代器和异步迭代器之间的主要区别在于，异步迭代器的 `next` 方法返回一个 promise。接下来，我们将讨论异步生成器（asynchronous\
+  \ generators），它们和普通生成器一样，可以让我们轻松地实现异步迭代器。\n\n##### 进阶阅读\n\n*   [AsyncIterator (MDN\
+  \ 文章)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator)\n\
+  \n与同步迭代器和异步迭代器的区别类似，普通生成器和异步生成器之间的主要区别在于异步生成器 yield 一个 promise。\n\n异步生成器是 `async`\
+  \ 函数和生成器的结合。因此，我们可以在异步生成器内部同时使用 `await` 和 `yield` 关键字。调用异步生成器会返回一个 [AsyncGenerator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator)\
+  \ 对象，该对象同时实现了异步迭代器和异步可迭代协议。`AsyncGenerator` 对象的 `next` 方法返回一个 promise。\n\n让我们重写上一节中的异步迭代器示例，以使用异步生成器：\n\
+  \n```javascript\n 1 async function* fetchUsers(userCount) {\n 2   // 将最大用户数量限制为\
+  \ 10\n 3   if (userCount > 10) {\n 4     userCount = 10;\n 5   }\n 6 \n 7   const\
+  \ BASE_URL = \"https://jsonplaceholder.typicode.com/users\";\n 8 \n 9   for (let\
+  \ userId = 1; userId <= userCount; userId++) {\n10     const response = await fetch(`${BASE_URL}/${userId}`);\n\
+  11 \n12     if (response.ok) {\n13       const userData = await response.json();\n\
+  14       yield userData;\n15     } else {\n16       throw new Error(\"failed to\
+  \ fetch users\");\n17     }\n18   }\n19 }\n20 \n21 async function getData() {\n\
+  22   const usersAsyncGenerator = fetchUsers(3);\n23 \n24   let userGeneratorResult\
+  \ = await usersAsyncGenerator.next();\n25 \n26   while (!userGeneratorResult.done)\
+  \ {\n27     console.log(userGeneratorResult.value);\n28     userGeneratorResult\
+  \ = await usersAsyncGenerator.next();\n29   }\n30 }\n31 \n32 getData();\n```\n\n\
+  这里是上述代码的 Replit 示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/async-generators-example1”\
+  \ />\n\n:::info 在 `fetchUsers` 函数内部，与其等待 `response.json()` 的结果，不如使用异步生成器重写异步迭代器示例。这样做是可行的，因为异步生成器会解析其内部返回的\
+  \ promise。\n:::\n\n异步生成器让我们非常轻松地实现异步迭代器，这也是我们通常实现的方式。\n\n### for await...of 循环\n\
+  \n到为止，我们通过直接调用 `next` 方法来消费异步迭代器。`for...of` 循环可以帮助我们遍历迭代对象，它有一个对应的 [for await...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)\
+  \ 循环可以帮助我们遍历异步迭代。下面的代码示例展示了我们如何重写 `getData` 函数来使用 `for await...of`：\n\n```javascript\n\
+  1 async function getData() {\n2   for await (const user of fetchUsers(3)) {\n3 \
+  \    console.log(user);\n4   }\n5 }\n```\n\n`for await...of` 循环只能在可以使用 `await` 关键字的上下中使用。\n\
+  \n#### 更多阅读\n\n*   [async function* (MDN 文章)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function*)\n\
+  \n## JavaScript 调试\n\n调试是发现并修复代码中问题或错误的过程。大多数软件开发者（不是所有人）花费调试的时间比编写代码多。因此，调试是任何软件开发者必不可少的技能。编写无\
+  \ bug 的代码是不可能的，所以学会有效地调试自己的或他人的代码可以极大地提高开发者的效率。我们无法逃避调试，所以不如学会有效地调试。\n\n在本模块中，我们将学习调试\
+  \ JavaScript 代码的不同方法。每个 JavaScript 开发者都会使用 `console.log` 和 `alert` 函数来调试代码，这样做是可以的，但还有其他的调试\
+  \ JavaScript 方法。本模块的目标是介绍以下三种可以帮助有效地调试 JavaScript 代码的方法：\n\n*   使用 `debugger` 语句\n\
+  *   在浏览器开发者工具中使用断点\n*   使用 VS Code 调试器\n\n:::note 上述调试策略依赖于 [debugger](https://en.wikipedia.org/wiki/Debugger)\
+  \ 来帮助我们有效地调试代码。\n:::\n\n接下来的几节将介绍上述每个方法。\n\n`debugger` 语句允许我们在代码中设置一个点，调试器可以在该处暂停代码的执行。这就像是在代码中设置断点一样，代码执行可以暂停，允许我们检查代码中不同变量的值。\n\
+  \n在浏览器中运行下面的代码示例并输入值“18”。下面的代码运行正常，但对于值“18”的输出是错误的。\n\n\n\n\n```javascript\nfunction\
+  \ isOldEnoughToDrive() {\n  const age = prompt(\"What is your age?\");\n  let result;\n\
+  \n  debugger;\n\n  if (age === 18) {\n    result = \"You are just about the right\
+  \ age to drive!\";\n  } else if (age < 18) {\n    result = \"Not allowed to drive\"\
+  ;\n  } else if (age > 18) {\n    result = \"Allowed to drive!\";\n  } else {\n \
+  \   result = \"invalid age value provided\";\n  }\n\n  const resultElm = document.querySelector(\"\
+  #result\");\n  resultElm.innerHTML = result;\n}\n\nisOldEnoughToDrive();\n```\n\n\
+  ```html\n<body>\n  <h2 id=\"result\">1</h2>\n  <script src=\"index.js\"></script>\n\
+  </body>\n```\n\n这是上述代码的运行 Replit 示例：\n\n<ReplitEmbed src=”https://replit.com/@newlineauthors/debugger-statement-example1”\
+  \ />\n\n:::info\n你可以使用 VS Code 的 [live server](https://marketplace.visualstudio.com/items/itemName=ritwickdey.LiveServer)\
+  \ 扩展在浏览器中打开上面的代码示例。\n:::\n\n值“18”是一个有效值，但我们得到的输出是“invalid age value provided”（提供的年龄值无效）。这是为什么呢？让我们使用\
+  \ `debugger` 语句进行调试。\n\n:::note\n本模块使用了 Firefox 浏览器来展示不同的调试策略。你可以跟随 Firefox、Microsoft\
+  \ Edge 或 Chrome 浏览器进行操作。\n:::\n\n你可能已经注意到代码中已经添加了 `debugger` 语句。它只在调试代码时需要，在完成调试后就可以删除。但它在代码中并没有起任何作用；我们的代码没有在\
+  \ `debugger` 语句处暂停。这是为什么呢？为了让 `debugger` 语句暂停代码执行，我们需要打开浏览器开发者工具。只需打开[浏览器开发者工具](https://balsamiq.com/support/faqs/browserconsole/)\
+  \ 即可。\n\n打开后，刷新浏览器窗口，你就会发现代码执行已暂停，如下图所示：\n\n![代码在 debugger 语句处暂停的截图](img/module_11----lesson_11.02----public----assets----debugger-screenshot.png)\n\
+  \n代码在 debugger 语句处暂停的截图\n\n:::info\n你可能需要拖动开发者工具窗口以增加其宽度，以匹配图中显示的布局。窗口过窄可能会显示图中高亮不同区域的后续布局。\n\
+  :::\n\n现在代码执行已经暂停，我们可以关注调试器的两个区域：调试控制台和当前作用域中不同变量的值；这两个区域在上面的图中都被高亮了。\n\n调试控制允许我们一次执行一行代码，这让我们更容易看到每行代码是如何执行的，以及如何影响不同变量的值。\n\
+  \n:::info\n你可以将鼠标悬停在调试控制中的每个按钮上以了解它的功能。\n:::\n\n你还可以在上图“Scopes”（作用域）部分上方看到调用堆栈（call\
+  \ stack）。这允许我们查看当前函数是如何被调用的。我们还可以悬停在代码中的不同变量上来查看它们的值。\n\n:::info\n你可以通过双击“Scopes”部分中的值来更改不同变量的值。这允许我们观察当当前作用域内变量的值发生变化时，我们的代码会表现如何。\n\
+  :::\n\n让我们调试一下为什么当值为“18”时，我们的代码无法工作。注意 `age` 变量的值（悬停在它上或查看“Scopes”部分）；你会发现它的值是一个字符串而不是数字。这意味着获取用户输入的\
+  \ `prompt` 函数返回的是一个字符串。所以当我们运行到第一个 `if` 条件，即 `age === 18` 时，它的求值结果不为 `true`。你能猜到为什么吗？因为使用三等等号（严格相等）运算符比较字符串和数字时，结果始终为\
+  \ `false`，你可能已经知道这一点，但如果你不知道，调试器可以帮助你发现 `age` 的值是一个字符串，而你正在将其与数字进行比较，因此它确实帮助你更好地理解了自己的代码。\n\
+  \n现在我们已经知道了问题所在，可以在比较之前将 `age` 转换为数字来修复它：\n\n```javascript\nconst age = Number(prompt(\"\
+  What is your age?\"));\n```\n\n这是一个简单的示例，向你展示了如何使用 `debugger` 语句来调试代码。浏览器内置的调试器非常强大，值得探索它们的每一个功能以增强你的调试技能。\n\
+  \n在上一节课程中，我们使用 `debugger` 语句来暂停代码执行并调试代码。还有另一种暂停代码执行的方法，就是使用断点（breakpoints）。断点的作用与\
+  \ `debugger` 语句一样，但区别在于我们不需要在代码中编写任何特殊关键字。相反，我们在浏览器的开发者工具中打开 JavaScript 代码，并在开发者工具中设置断点。\n\
+  \n如上一节课程所示，我们的 JavaScript 代码在“Debugger”（调试）标签页中打开。在 Chrome 中，对应的标签页名为“Sources”（源代码）。这两个浏览器的调试功能功能大相同。以下是“Sources”标签页的截图：\n\
+  \n![Chrome 中 Sources 标签页的截图](img/module_11----lesson_11.03----public----assets----sources-tab-screenshot.png)\n\
+  \nChrome 中 Sources 标签页的截图\n\n现在我们不再使用 `debugger` 语句来暂停代码执行，而是使用断点。我们将使用与上一节相同的示例。\n\
+  \n:::info\n如果你是跟着上一节课程操作，你可能已经在浏览器中打开了代码；如果没有，你可以使用 [live server](https://marketplace.visualstudio.com/items/itemName=ritwickdey.LiveServer)\
+  \ 扩展来打开代码示例。\n:::\n\n一旦代码在开发者工具中打开，设置断点只需点击代码中的行号即可。下图显示了代码中设置的两个断点：\n\n![代码中设置断点的截图](img/module_11----lesson_11.03----public----assets----breakpoint-screenshot.png)\n\
+  \n代码中设置断点的截图\n\n只需点击你想要设置断点的行号并刷新浏览器窗口。与使用 `debugger` 语句一样，当执行到达代码中设置的断点时，代码执行将暂停，之后我们可以使用浏览器调试器提供的不同功能来调试代码\n\
+  \n### 延伸阅读\n\n*   [调试 JavaScript (Chrome 开发者文档)](https://developer.chrome.com/docs/devtools/javascript/)\n\
+  \nVisual Studio Code (VS Code) 是目前最常用的编辑器之一，这归益于通过许多可用扩展提供的功能和灵活性。VS Code 提供的许多功能之一是内置调试器，它允许我们在\
+  \ VS Code 内部调试代码。除了内置调试器外，还有许多扩展用于调试用不同语言编写的代码。\n\n使用 VS Code 调试我们的代码，请在 VS Code\
+  \ 中打开过去两节课中过的代码示例。打开后，在代码所在的文件夹创建一个名为 `.vscode` 的文件夹。在 `.vscode` 文件夹内部创建一个名为 `launch.json`\
+  \ 的文件，并将以下 JSON 粘贴到该文件中：\n\n\n\n\n\n```json\n {\n  \"version\": \"0.2.0\",\n  \"\
+  configurations\": [\n    {\n      \"type\": \"chrome\",\n      \"request\": \"launch\"\
+  ,\n      \"name\": \"Launch Chrome against localhost\",\n      \"file\": \"${workspaceFolder}/index.html\"\
+  \n    }\n  ]\n}\n```\n\n在运行调试器之前，我们需要设置断点。我们可以在代码中使用 `debugger` 语句，也可以通过点击 VS Code\
+  \ 中打开的 JavaScript 文件中的行号来设置断点。下面的图片显示了在 VS Code 中打开的 JavaScript 文件中添加断点的情况：\n\n\
+  ![在 VS Code 中添加断点的截图](img/module_11----lesson_11.04----public----assets----vscode-breakpoint.png)\n\
+  在 VS Code 中添加断点的截图\n\n上方图片中的红点是通过点击第 5 行添加的断点。\n\n此后，在 VS Code 中打开“运行和调试”（Run and\
+  \ Debug）选项，如下图所示：\n\n![VS Code 中运行和调试选项的截图](img/module_11----lesson_11.04----public----assets----run-debug-option-vscode.png)\n\
+  VS Code 中运行和调试选项的截图\n\n一旦“运行和调试”窗口打开（如上图所示），点击顶部的绿色播放按钮。这将打开 Chrome 浏览器，调试器将在到达断点时暂停代码执行。如上图所示，断点设置在第\
+  \ 5 行，因此调试器将在获取用户输入后暂停执行。取决于你添加断点的位置，代码执行每到达该点时都会暂停。\n\n接下来的图片显示了代码执行在断点处暂停时的 VS\
+  \ Code 状态：\n\n![VS Code 调试器的截图](img/module_11----lesson_11.04----public----assets----vscode-debugger.png)\n\
+  VS Code 调试器的截图\n\n你可以看到顶部的调试器控制，它的功能与浏览器中的调试器控制类似。高亮行显示了代码执行暂停的位置，左侧边栏有调用堆栈和当前作用域中的变量。我们可以使用调试器控制向前步进或恢复运行，并查看执行流和作用域内不同变量的值，以便调试代码。\n\
+  \n##### 进阶阅读\n\n使用 VS Code 调试器还可以做很多事情。我们手动创建的 `launch.json` 文件可以通过点击按钮由 VS Code\
+  \ 自动创建。VS Code 调试器的这些其他功能在 VS Code 文档中有所说明：\n\n* [调试 (VS Code 文档)](https://code.visualstudio.com/docs/editor/debugging)\n\
+  \n## 总结\n\n恭喜你！你已经完成了本课程。希望本课程能够满足你的预期，甚至超出你的预期。\n\n尽管 JavaScript 有许多奇特性，但它是一门非常棒的编程语言。本课程的目标并不是涵盖\
+  \ JavaScript 语言的所有内容，而是涵盖那些通常理解不够充分的核心主题，特别是对于初学者来说。JavaScript 有很多内容是课程无法涵盖的，但只要对核心主题有了扎实的理解，就可以继续深入学习。\n\
+  \n学习 JavaScript 不仅能让你使用现代前端框架进行前端开发，还能使用 `NodeJS` 等技术进行后端开发。\n\n### 下一步计划\n\n以下是一些可以用于继续学习\
+  \ JavaScript 之旅的资源：\n\n* [MDN  JavaScript 参考](https://developer.mozilla.org/en-US/docs/Web/JavaScript)\
+  \ 是参考不同 JavaScript 主题的极佳资源。与其尝试记忆每一个 JavaScript 主题，不如在需要时通过 MDN 进行阅读。\n\n* [ECMAScript\
+  \ 规范](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)\
+  \ 主要面向那些在浏览器中实现规范的人员。尽管如此，它也可以用于深入研究特定主题，以理解它底层是如何工作或应该如何工作的。\n\n* [exploringjs.com](https://exploringjs.com/)\
+  \ 是一个非常好的网站，你可以在那里找到与 JavaScript 相关的书籍。这个网站很棒的地方在于书籍是免费的并且可以在线阅读。\n\n除了上述资源，以下是我喜欢的几本书（付费资源），它们可以作为学习\
+  \ JavaScript 的优质资源：\n\n* Javascript: The Definitive Guide by David Flanagan\n* Javascript:\
+  \ The New Toys by T.J. Crowder\n* Professional JavaScript for Web Developers by\
+  \ Nicholas C. Zakas\n\n在此，我感谢你投入时间学习本课程，希望它能帮助你对 JavaScript 语言有更深层次的理解。\n\n"

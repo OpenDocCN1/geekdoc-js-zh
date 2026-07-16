@@ -1,0 +1,356 @@
+- "# Web 应用开发：Ember.js 指南\n\n\n\n![](img/00001.jpeg)\n\n\n\n\n\n## 免责声明\n尽管我们已尽力核实书中提供的信息，但作者对其中包含的主题的错误、遗漏或相反的解释不承担任何责任。书中提供的信息仅供教育和娱乐之用。读者对其自己的行为负责，作者对因使用这些信息而导致的任何实际或感知的责任或损害不承担任何责任。\n\
+  \n书中使用的商标均未经任何许可，且这些商标的发布未获得商标所有者的许可或支持。书中所有商标和品牌仅用于说明目的，其所有权归所有所有，与本文无关联。\n\n##\
+  \ 介绍\n市场对 Web 应用的需求正在增加。Ember JS 是一种可以辅助开发此类应用的 JavaScript。该框架很容易学习，特别是对于 JavaScript\
+  \ 专家来说。然而，即使你完全不熟悉 JavaScript，也不必担心，因为书中的解释非常易理解。通过这种 JavaScript，你可以创建具有高度交互用户界面的\
+  \ Web 应用，你的用户一定会喜欢你的应用。\n\n## 第 1 章 控制器\n控制器非常组件，人们认为它们未来将由组件取代。\n\n在大多数当前的应用程序中，控制器并不经常使用。当使用它们时，它们承担以下职责：\n\
+  \n1. 用于根据当前使用的路由维护状态。\n2. 当用户操作从组件传递到路由时，它们必须通过控制器。\n\n我们需要通过使用路由来演示这一点，这可以帮助我们显示博客文章。\n\
+  \n模板将绑定到模板中的以下属性：\n\n```html\n<h1>{{model.title}}</h1>\n<h2>by {{model.author}}</h2>\n\
+  <div class=\"intro\">\n  {{model.intro}}\n</div>\n<hr>\n<div class=\"body\">\n \
+  \ {{model.body}}\n</</div>\n```\n\n如上面的示例所示，我们没有特定的属性或操作需要显示。\n\n假设我们需要添加一个功能，允许用户在正文部分的显示之间切换。为了实现这一点，我们将代码修改为如下：\n\
+  \n```html\n<h1>{{model.title}}</h1>\n<h2>by {{model.author}}</h2>\n<div class='intro'>\n\
+  \  {{model.intro}}\n</div>\n<hr>\n\n{{#if isExpanded}}\n  <button {{action \"toggleBody\"\
+  }}>隐藏正文</button>\n  <div class=\"body\">\n    {{model.body}}\n  </div>\n{{else}}\n\
+  \  <button {{action \"toggleBody\"}}>显示正文</button>\n{{/if}}\n```\n\n在控制器的“actions”钩子中，我们可以定义动作的操作，就像我们在组件中可以做的那样。下面的代码所示：\n\
+  \n```javascript\nexport default Ember.Controller.extend({\n  actions: {\n    toggleBody()\
+  \ {\n      this.toggleProperty('isExpanded');\n    }\n  }\n});\n```\n\n### 控制器之间的依赖关系管理\n\
+  有时，当我们嵌套资源时，通常需要在两个控制器之间建立连接。考虑下方的路由器：\n\n```javascript\nRouter.map(function() {\n\
+  \  this.route('post', { path: '/p/:post_id' }, function() {\n    this.route('comments',\
+  \ { path: '/comments' });\n  });\n});\n```\n\n访问 URL `/posts/1/comments` 时，模型 `post`\
+  \ 将加载到 `PostController` 的模型中。然而，与其相关的某些信息可能会显示在 `comments` 的模板中。\n\n为了实现这一点，我们必须将\
+  \ `pController` 注入到 `CommentsController` 中。如下所示：\n\n```javascript\nexport default\
+  \ Ember.Controller.extend({\n  pController: Ember.inject.controller('post')\n});\n\
+  ```\n\n我们的注释将能够访问 `PController`，这是一个只读别名，可以从控制器中读取模型。考虑下面的代码：\n\n```javascript\n\
+  export default Ember.Controller.extend({\n  pController: Ember.inject.controller('post'),\n\
+  \  post: Ember.computed.reads('pController.model')\n});\n```\n\n考虑下一个 `.hbs` 文件：\n\
+  \n```html\n<h1>针对 {{post.title}} 的评论</h1>\n<ul>\n  {{#each model as |comment|}}\n\
+  \    <li>{{comment.text}}</li>\n  {{/each}}\n</ul>\n```\n\n## 第 2 章 模型\n构建 Web 应用程序的方法之一是实现与数据获取高度耦合的人机界面组件。\n\
+  \n考虑你正在创建一个博客应用的情况。如果你正在创建应用程序的管理员部分，你可能被迫让组件承担获取和存储数据的责任。考虑下面的代码：\n\n```html\n\
+  <h1>针对 {{post.title}} 的评论</h1>\n<ul>\n  {{#each model as |comment|}}\n    <li>{{comment.text}}</li>\n\
+  \  {{/each}}\n</ul>\n```\n\n模板包含的草稿列表随后就可以显示出来。下面的代码演示了这一点：\n\n```html\n<ul>\n \
+  \ {{#each drafts key=\"id\" as |draft|}}\n    <li>{{draft.title}}</li>\n  {{/each}}\n\
+  </ul>\n```\n\n注意，应用是由许多组件组成的。你可能希望将所有草稿放在另一个页面。这可能需要将旧代码复制并粘贴到新组件中：\n\n```javascript\n\
+  export default Ember.Component.extend({\n  willRender() {\n    $.getJSON('/myDrafts').then(data\
+  \ => {\n      this.set('drafts', data);\n    });\n  }\n});\n```\n\n按钮的 `.hbs` 文件如下：\n\
+  \n```html\n{{#link-to 'drafts' tagName=\"button\"}}\ns ({{drafts.length}})\n{{/link-to}}\n\
+  ```\n\n通过上述方法，我们的应用程序将产生两次请求。\n\n在 Ember 数据中，模型的表示是通过一个子类完成的，定义了关系、属性以及呈现用户的行为。通过模型，可以定义服务器提供我们的数据类型。考虑下面名为\
+  \ `human` 的示例：\n\n```javascript\nexport default DS.Model.extend({\n  fName: DS.attr('string'),\n\
+  \  birthday: DS.attr('date')\n});\n```\n\n模型还可以描述自身与其他模型之间的关系。考虑下面的示例，展示了如何这样做：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  lItems: DS.hasMany('line-item')\n\
+  });\n```\n\n上面的代码用于一个订单。`line.js` 的代码如下：\n\n```javascript\nexport default DS.Model.extend({\n\
+  \  order: DS.belongsTo('order')\n});\n```\n\n你必须注意，模型本身没有数据，但它们被用于定义称为 `records`\
+  \ 的特定实例的行为。\n\n### 创建记录\n当你需要创建记录时，只需在 store 上调用 `createRecord()` 方法。考虑下面的代码：\n\n\
+  ```javascript\nstore.createRecord('post', {\n  title: 'Ember 是一个很棒的框架',\n  body:\
+  \ 'Lorem ipsum'\n});\n```\n\n存储的对象可以通过 `this.store` 可控制器和路由器。\n\n### 更新记录\n可以通过设置需要更改的属性来修改\
+  \ Ember JS 数据记录。如下代码所示：\n\n```javascript\nthis.store.findRecord('human', 1).then(function(myfunction)\
+  \ {\n  // ...一旦记录加载\n});\n```\n\n\n\n\n\n```javascript\nmyfunction.set('fName',\
+  \ \"John\");\n\n});\n```\n\n所有 Ember.js 的便利方法始终可以修改属性。这可以像下面所示：\n\n```javascript\n\
+  human.incrementProperty('age'); // Happy birthday!\n```\n\n### 持久化记录\n\n在 Ember\
+  \ JS 中，记录是基于每个实例进行持久化的。当你对任何 `DS.Model` 实例调用 `save()` 方法时，将发送一个网络请求。\n\n默认情况下，EmberJS\
+  \ 中新创建的记录将提交到 Ember data 中其类型 URL。如下面的代码所示：\n\n```javascript\nvar p = store.createRecord('post',\
+  \ {\n  title: 'Ember is Great',\n  body: 'Lorem ipsum'\n});\n\np.save(); // => POST\
+  \ to '/posts'\n```\n\n后端已存在的记录将通过使用 HTTP `PATCH` 动词进行更新。下方的代码所示：\n\n```javascript\n\
+  store.findRecord('post', 1).then(function(p) {\n  p.get('title'); // => \"Ember\
+  \ JS is Great\"\n  p.set('title', 'New post');\n  p.save(); // => PATCH to '/posts/1'\n\
+  });\n```\n\n考虑下方的代码：\n\n```javascript\nhuman.get('isAdmin');            //=> false\n\
+  human.get('hasDirtyAttributes'); //=> false\nhuman.set('isAdmin', true);\nhuman.get('hasDirtyAttributes');\
+  \ //=> true\nhuman.changedAttributes();      //=> { isAdmin: [false, true] }\n```\n\
+  \n人们可以通过检查其属性 `hasDirtyAttributes` 来判断一个待处理记录是否有某些尚未保存的更改。\n\n在上述节点，你可以通过调用 `save()`\
+  \ 方法来保存更改，或者直接将它们回滚。考虑下方的代码：\n\n```javascript\nhuman.get('hasDirtyAttributes');\
+  \ //=> true\nhuman.changedAttributes();      //=> { isAdmin: [false, true] }\nhuman.rollbackAttributes();\n\
+  \nhuman.get('hasDirtyAttributes'); //=> false\nhuman.get('isAdmin');           \
+  \ //=> false\nhuman.changedAttributes();      //=> {}\n```\n\n### 处理验证错误\n\n如果你的后端服务器在你尝试保存时返回了验证错误，模型的\
+  \ `errors` 属性将包含这些错误。错误可以像下面所示显示：\n\n```handlebars\n{{#each p.errors.title as |err|}}\n\
+  \  <div class=\"error\">{{err.message}}</</div>\n{{/each}}\n\n{{#each p.errors.body\
+  \ as |err|}}\n  <div class=\"error\">{{err.message}}</</div>\n{{/each}}\n```\n\n\
+  ### Promises\n\n`save()` 方法将返回一个 promise，这将使我们能够处理成功或失败的情况。考虑下面所示的常见模式：\n\n```javascript\n\
+  var p = store.createRecord('post', {\n  title: 'Ember is Great',\n  body: 'Lorem\
+  \ ipsum'\n});\nvar self = this;\n\nfunction transitionToPost(p) {\n  self.transitionToRoute('posts.show',\
+  \ p);\n}\n\nfunction failure(reason) {\n  // handling the error\n}\n\np.save().then(transitionToPost).catch(failure);\n\
+  // => POST to '/posts'\n// => transitioning to posts.show route\n```\n\n### 删除记录\n\
+  \n记录删除可以与创建记录相同的方式进行。可以在 `DS.Model` 实例上调用 `deleteRecord()` 方法。这将记录标记为 `isDeleted`。随后应该调用\
+  \ `save()` 方法来保存记录的删除。考虑下方的代码：\n\n```javascript\nstore.findRecord('post', 1).then(function(p)\
+  \ {\n  p.deleteRecord();\n  p.get('isDeleted'); // => true\n  p.save(); // => DELETE\
+  \ to /posts/1\n});\n\n// OR\nstore.findRecord('post', 2).then(function(post) {\n\
+  \  p.destroyRecord(); // => DELETE to /posts/2\n});\n```\n\n## 关系\n\nEmber 有几种内置关系，定义了模型之间如何关联。\n\
+  \n### 一对一\n\n如果你需要在两个模型之间声明这种类型的关系，请使用下面的代码：\n\n这是文件 `myuser.js` 的代码：\n\n```javascript\n\
+  export default DS.Model.extend({\n  profile: DS.belongsTo('profile')\n});\n```\n\
+  \n那么 `profile.js` 文件应该如下：\n\n```javascript\nexport default DS.Model.extend({\n \
+  \ user: DS.belongsTo('myuser')\n});\n```\n\n### 一对多关系\n\n这种类型的关系可以在两个模型之间如下声明：\n\
+  \n考虑文件 `myposts.js` 的如下代码：\n\n```javascript\nexport default DS.Model.extend({\n\
+  \  comments: DS.hasMany('comment')\n});\n```\n\n这里应该是文件 `ourcomments.js` 的代码：\n\n\
+  ```javascript\nexport default DS.Model.extend({\n  post: DS.belongsTo('p')\n});\n\
+  ```\n\n### 显式反向\n\nEmber JS 会尽力发现组件之间存在的关系类型。有时，你可能对同一类型有许多不同的关系类型。\n\n考虑下方的代码：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  firstPost: DS.belongsTo('myuser'),\n\
+  \  secondPost: DS.belongsTo('myuser')\n});\n```\n\n有时你可能对同一类型有许多不同的关系类型。考虑下方的代码：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  firstPost: DS.belongsTo('myuser'),\n\
+  \  secondPost: DS.belongsTo('myuser')\n});\n```\n\n这是文件 `mypost.js` 的代码：\n\n```javascript\n\
+  export default DS.Model.extend({\n  comments: DS.belongsTo('comment')\n});\n```\n\
+  \n### 自引用关系\n\n为了定义自引用关系，你应该已经有了反向关系。下面的示例展示了一对一自引用关系：\n\n```javascript\nexport\
+  \ default DS.Model.extend({\n  children: DS.belongsTo('folder')\n});\n```\n\n###\
+  \ 创建记录\n\n假设我们有两个模型，`myposts` 和 `comments`。它们的关系如下：\n\n```javascript\nexport default\
+  \ DS.Model.extend({\n  comments: DS.hasMany('comment')\n});\n```\n\n文件 `comment.js`\
+  \ 如下：\n\n```javascript\nexport default DS.Model.extend({\n  post: DS.belongsTo('post')\n\
+  });\n```\n\n### 更新现有记录\n\n有时，我们可能需要为已记录设置关系。这简单地通过使用 `belongsTo` 关系即可完成。下方的代码所示：\n\
+  \n```javascript\nlet p = this.store.peekRecord('post', 1);\nlet comm = this.store.peekRecord('comment',\
+  \ 1);\ncomm.set('post', p);\ncomm.save();\n```\n\n或者，可以将记录推入 `hasMany` 关系以更新它。如下所示：\n\
+  \n```javascript\nlet p = this.store.peekRecord('post', 1);\nlet comm = this.store.peekRecord('comment',\
+  \ 1);\np.get('comments').pushObject(comm);\np.save();\n```\n\n\n\n\n\n## 关系\n\n\
+  要移除一个 `belongsTo` 关系，我们只需要将其设置为 `null`。这将将其从 `hasMany` 关系的一侧移除。考虑下面的代码，它最直观地演示了这一点：\n\
+  \n```javascript\nlet comm = this.store.peekRecord('comment', 1);\ncomm.set('post',\
+  \ null);\ncomm.save();\n```\n\n记录也可以从 `hasMany` 关系中移除。考虑下面的代码，它很好地展示了如何实现：\n\n```javascript\n\
+  let p = this.store.peekRecord('post', 1);\nlet comm = this.store.peekRecord('comment',\
+  \ 1);\np.get('comments').removeObject(comm);\np.save();\n```\n\n### 作为 Promise 的关系\n\
+  \n每当你处理关系时，最好始终记住这些关系将返回 promise（承诺）。假设我们要处理某篇文章的异步评论，我们应该等待直到 promise 已完成（fulfilled）。考虑下面的代码：\n\
+  \n```javascript\nlet p = this.store.peekRecord('post', 1);\np.get('comments').then((comments)\
+  \ => {\n  // 我们现在可以处理这些评论了\n});\n```\n\n同样的规则也适用于 `hasMany` 关系，如下所示：\n\n```javascript\n\
+  let comm = this.store.peekRecord('comment', 1);\ncomm.get('post').then((p) => {\n\
+  \  // 文章在这里将可用\n});\n```\n\nHandlebars 模板会自动更新，以反映已解析的 promise。如下所示，文章中显示评论列表：\n\
+  \n```html\n<ul>\n  {{#each p.comments as |comm|}}\n    <li>{{comm.id}}</li>\n  {{/each}}\n\
+  </ul>\n```\n\n---\n\n## 将记录推入 Store（存储器）\n\nStore 可以被看作是一个缓存，包含了应用已加载的所有记录。\n\n\
+  要将记录推入 store，你只需要调用 `push()` 方法。考虑这样一种情况：在应用首次启动后，我们需要向 store 中预加载一些数据。这可以通过 `route:application`\
+  \ 轻松实现。考虑下面的代码：\n\n```javascript\nexport default DS.Model.extend({\n  title: DS.attr(),\n\
+  \  artist: DS.attr(),\n  songCount: DS.attr()\n});\n```\n\n考虑接下来这段代码：\n\n```javascript\n\
+  export default Ember.Route.extend({\n  model() {\n    this.store.push({\n      data:\
+  \ [\n        {\n          id: 1,\n          type: 'album',\n          attributes:\
+  \ {\n            title: 'Very Few Moving Parts',\n            artist: 'John Joel',\n\
+  \            songCount: 5\n          },\n          relationships: {}\n        },\
+  \ {\n          id: 2,\n          type: 'album',\n          attributes: {\n     \
+  \       title: 'Our God is Great all the time',\n            artist: 'Steve John',\n\
+  \            songCount: 3\n          },\n          relationships: {}\n        }\n\
+  \      ]\n    });\n  }\n});\n```\n\n如果数据在推入 store 之前需要通过模型的默认序列化器（serializer）进行归一化，可以使用\
+  \ `store.pushPayload()` 方法。下面的代码对此这一点：\n\n```javascript\nexport default DS.RestSerializer.extend({\n\
+  \  normalize(typeHash, hash) {\n    hash['songCount'] = hash['song_count']\n   \
+  \ delete hash['song_count']\n    return this._super(typeHash, hash);\n  }\n})\n\
+  ```\n\n接下来的代码应该如下：\n\n```javascript\nexport default Ember.Route.extend({\n  model()\
+  \ {\n    this.store.pushPayload({\n      albums: [\n        {\n          id: 1,\n\
+  \          title: 'Very Fever Moving Parts',\n          artist: 'John Joel',\n \
+  \         song_count: 5\n        },\n        {\n          id: 2,\n          title:\
+  \ 'Our God is Great all the time',\n          artist: 'Steve John',\n          song_count:\
+  \ 2\n        }\n      ]\n    });\n  }\n});\n```\n\n在处理复杂的端点（endpoints）时，`push()`\
+  \ 方法非常重要。你的应用程序可能有一个端点负责执行某些业务逻辑并创建多条记录。下面的代码最好地演示了这一点：\n\n```javascript\nexport\
+  \ default Ember.Route.extend({\n  actions: {\n    confirm: function(d) {\n     \
+  \ $.ajax({\n        data: d,\n        method: 'POST',\n        url: 'process-payment'\n\
+  \      }).then((digInventory) => {\n        this.store.pushPayload(digInventory);\n\
+  \        this.transitionTo('Thanks');\n      });\n    }\n  }\n});\n```\n\n---\n\n\
+  ## 处理元数据（MetaData）\n\n除了从 store 返回的记录外，还需要处理某种形式的元数据。元数据只是伴随特定模型或类型（而非特定记录）的一种数据。\n\
+  \n分页是元数据的一种常用方式。考虑一个有很多文章的博客，它们无法一次性显示。可以如下所示进行查询：\n\n```javascript\nlet res = this.store.query('post',\
+  \ {\n  limit: 10,\n  offset: 0\n});\n```\n\n为了获取不同页的数据，可以更改 offset。为了让我们获取元数据，期望格式如下：\n\
+  \n```json\n{\n  \"post\": {\n    \"links\": {\n      \"user\": \"/posts\"\n    },\n\
+  \    \"meta\": {\n      \"total\": 100\n    }\n  }\n}\n```\n\n无论使用哪种序列化器，都可以使用 `.get('meta')`。这可以应用于\
+  \ `query()` 调结果。示例所示：\n\n```javascript\n// 设置查询\nstore.query('post', {\n  limit:\
+  \ 10,\n  offset: 0\n}).then((res) => {\n  let meta = res.get('meta');\n});\n```\n\
+  \n如果我们有一个 `belongsTo` 关系，可以这样做：\n\n```javascript\nlet p = this.store.peekRecord('post',\
+  \ 1);\np.get('author').then((author) => {\n  let meta = author.get('meta');\n});\n\
+  ```\n\n在 `hasMany` 关系上，可以这样做：\n\n```javascript\nlet p = this.store.peekRecord('post',\
+  \ 1);\np.get('comments').then((comments) => {\n  let meta = comments.get('meta');\n\
+  });\n```\n\n---\n\n## 适配器（Adapters）的自定义\n\n在 Ember data 中，适配器（Adapter）负责数据如何持久化，例如\
+  \ URL 格式和头部。\n\n对于具有一致规则的端点，可以定义 `adapter:application`。它的优先级高于默认适配器，但会被特定模型的适配器所覆盖。如下代码所示：\n\
+  \n```javascript\nexport default DS.JSONAPIAdapter.extend({\n  // 应用特定的重写写在这里\n});\n\
+  ```\n\n对于在通信方面具有特定规则的模型，可以通过执行命令 `ember generate adapter name` 创建特定模型的适配器。一个很好的例子是当你运行\
+  \ `ember generate adapter post` 时，将创建以下文件：\n\n```javascript\nexport default DS.JSONAPIAdapter.extend({\n\
+  \  namespace: 'api/v1'\n});\n```\n\n默认情况下，Ember data 自带多个适配器。如果你需要创建自定义适配器，可以使用这些作为起点。\n\
+  \n### URL 规范\n\n`JSONAPIAdapter` 适配器在根据模型类型确定通信使用的 URL 方面非常好。考虑下面通过 ID 请求文章的示例：\n\
+  \n```javascript\nstore.find('post', 1).then(function(p) {\n\n});\n```\n\n### 复数自定义\n\
+  \n有时，在生成路由 URL 时，你可能需要处理模型名称的复数化。可以使用反射器（reflector）来实现此目的。这是一个用于单复数形式之间转换的库。对于不可数或不规则的复数，可以使用\
+  \ `Ember.Inflector.inflector`。如下所示 easily 实现：\n\n```javascript\n// 设置 Ember.Inflector\n\
+  import './models/custom-inflector-rules';\n```\n\n接下来的代码如下：\n\n```javascript\nimport\
+  \ Inflector from 'ember-inflector';\n\nconst inflect = Inflector.inflector;\n\n\
+  inflect.irregular('formula', 'formulae');\n\ninflect.uncountable('advice');\n\n\
+  // 符合 Ember Inspector 导出的期望\nexport default {};\n```\n\n### 自定义端点路径\n\n`namespace`\
+  \ 属性将用于为具有特定 URL 命名空间的请求添加前缀。\n\n\n\n\n\n```javascript\nexport default DS.JSONAPIAdapter.extend({\n\
+  \  namespace: 'api/1'\n});\n```\n这就是实现方法。\n\n## 主机自定义 (Host Customizations)\n\n\
+  适配器默认指向当前域名。如果你需要指定新域名，只需在新适配器上设置 `host` 属性即可。下面的代码很好地展示了如何实现：\n\n```javascript\n\
+  export default DS.JSONAPIAdapter.extend({\n  host: 'https://api.sample.com'\n});\n\
+  ```\n就是这样。\n\n## 路径自定义 (Path Customizations)\n\n可以像下面的代码一样覆盖 `pathForType` 方法：\n\
+  \n```javascript\nexport default DS.JSONAPIAdapter.extend({\n  pathForType: function(type)\
+  \ {\n    return Ember.String.underscore(type);\n  }\n});\n```\n\n在上述情况下，我们不需要对模型名称进行复数化，并且需要使用下线命名而不是驼峰命名（camelCase）。\n\
+  \n## 请求头自定义 (Headers Customizations)\n\n某些 API 需要 HTTP 请求头，一个很好的例子是需要提供 API key。可以将任意请求头作为键值对设置在\
+  \ `JSONAPIAdapter` 的 `header` 对象上，Ember data 将在我们的每一个 Ajax 请求中发送它们。考虑下面的代码：\n\n\
+  ```javascript\nexport default DS.JSONAPIAdapter.extend({\n  headers: {\n    'API_KEY':\
+  \ 'secret key',\n    'ANOTHER_HEADER': 'A header value'\n  }\n});\n```\n\n可以使用 `headers`\
+  \ 作为计算属性（computed property）来支持动态请求头。考虑下面的示例，请求头将根据 session 服务通过计算属性生成。以下是该示例的代码：\n\
+  \n```javascript\nexport default DS.JSONAPIAdapter.extend({\n  session: Ember.inject.service('session'),\n\
+  \  headers: Ember.computed('session.authToken', function() {\n    return {\n   \
+  \   'API_KEY': this.get('session.authToken'),\n      'ANOTHER_HEADER': 'A header\
+  \ value'\n    };\n  })\n});\n```\n\n在某些情况下，动态请求头需要来自 Ember 观察者系统之外对象的数据。`volatile`\
+  \ 函数也可以用于将属性设置为非缓存模式，这将导致每次请求时都重新计算请求头。下文代码所示：\n\n```javascript\nexport default\
+  \ DS.JSONAPIAdapter.extend({\n  headers: Ember.computed(function() {\n    return\
+  \ {\n      'API_KEY': Ember.get(document.cookie.match(/apiKey\\=([^;]*)/), '1'),\n\
+  \      'ANOTHER_HEADER': 'A header value'\n    };\n  }).volatile()\n});\n```\n\n\
+  ## 编写适配器 (Authoring Adapters)\n\n`defaultSerializer` 属性将用于指定适配器使用的序列化器。这仅在没有指定 `serializer:application`\
+  \ 或特定模型的适配器时才使用。在任何应用程序中指定 `serializer:application` 都非常简单。考虑下面的示例，了如何实现：\n\n```javascript\n\
+  export default DS.JSONAPIAdapter.extend({\n  defaultSerializer: '-default'\n});\n\
+  ```\n\n## 自定义序列化器 (Customizing Serializers)\n\n在 Ember data 中，序列化器（serializers）用于格式化发送到和从后端存储接收的数据。默认设置是\
+  \ Ember data 将使用 JSON API 格式进行数据序列化。\n\n## JSON API 文档 (JSON API Document)\n\n考虑我们请求的如下响应：\n\
+  \n```json\n{\n  \"data\": {\n    \"type\": \"people\",\n    \"id\": \"567\",\n \
+  \   \"attributes\": {\n      \"first-name\": \"John\",\n      \"last-name\": \"\
+  Joel\"\n    }\n  }\n}\n```\n\n在上述示例中，我们对 `/people/567.` 的请求得到了响应。包含多个记录的响应可以在 `data`\
+  \ 属性中有一个数组，如下所示：\n\n```json\n{\n  \"data\": [{\n    \"type\": \"people\",\n    \"\
+  id\": \"567\",\n    \"attributes\": {\n      \"first-name\": \"John\",\n      \"\
+  last-name\": \"Joel\"\n    }\n  }, {\n    \"type\": \"people\",\n    \"id\": \"\
+  345\",\n    \"attributes\": {\n      \"first-name\": \"Mercy\",\n      \"last-name\"\
+  : \"Donald\"\n    }\n  }]\n}\n```\n\n## 侧载数据 (Sideloaded Data)\n\n这类数据不是主请求的一部分，但具有一些关联关系，这些关系应该被添加到\
+  \ `included` 键下的数组中。考虑下面的代码：\n\n```json\n{\n  \"data\": {\n    \"type\": \"blogs\"\
+  ,\n    \"id\": \"1\",\n    \"attributes\": {\n      \"title\": \"I really like and\
+  \ enjoy blogging!\"\n    },\n    \"links\": {\n      \"self\": \"http://mysite.com/blogs/1\"\
+  \n    },\n    \"relationships\": {\n      \"comments\": {\n        \"data\": [\n\
+  \          { \"type\": \"comments\", \"id\": \"5\" },\n          { \"type\": \"\
+  comments\", \"id\": \"12\" }\n        ]\n      }\n    }\n  },\n  \"included\": [{\n\
+  \    \"type\": \"comments\",\n    \"id\": \"5\",\n    \"attributes\": {\n      \"\
+  body\": \"First!\"\n    },\n    \"links\": {\n      \"self\": \"http://mysite.com/comments/5\"\
+  \n    }\n  }, {\n    \"type\": \"comments\",\n    \"id\": \"12\",\n    \"attributes\"\
+  : {\n      \"body\": \"Ember is very easy to learn\"\n    },\n    \"links\": {\n\
+  \      \"self\": \"http://mysite.com/comments/12\"\n    }\n  }]\n}\n```\n\n在上面的示例中，我们请求了\
+  \ `/blogs/1`，用户也给了我们与人员相关的评论。上面的代码展示了我们得到的响应。\n\n## 自定义序列化器 (Customizing Serializers)\n\
+  \n在 Ember data 中，默认使用 `Serializer`，但也可以为此目的自定义序列化器。自定义序列化器可以通过两种方式定义。人们可以选择为整个 `application`\
+  \ 定义一个序列化器。\n\n```javascript\nimport DS from 'ember-data';\nexport default DS.Serializer.extend({\n\
+  \  serialize(snapshot, opts) {\n    var json = this._super(...arguments);\n    json.data.attributes.cost\
+  \ = {\n      amount: json.data.attributes.amount,\n      currency: json.data.attributes.currency\n\
+  \    };\n    delete json.data.attributes.amount;\n    delete json.data.attributes.currency;\n\
+  \    return json;\n  },\n});\n```\n\n人们也可以为特定模型定义序列化器。\n\n```javascript\nimport\
+  \ DS from 'ember-data';\nexport default DS.Serializer.extend({\n  serialize(snapshot,\
+  \ opts) {\n    var json = this._super(...arguments);\n    json.data.attributes.cost\
+  \ = {\n      amount: json.data.attributes.amount,\n      currency: json.data.attributes.currency\n\
+  \    };\n    delete json.data.attributes.amount;\n    delete json.data.attributes.currency;\n\
+  \    return json;\n  },\n});\n```\n\n数据可以如下所示更改：\n\n假设服务器向我们提供如下数据：\n\n```json\n\
+  {\n  \"data\": {\n    \"attributes\": {\n      \"id\": \"1\",\n      \"name\": \"\
+  The Product\",\n      \"cost\": {\n        \"amount\": 200,\n        \"currency\"\
+  : \"USD\"\n      }\n    },\n    \"type\": \"product\"\n  }\n}\n```\n\n上述内容应该更改为：\n\
+  \n```json\n{\n  \"data\": {\n    \"attributes\": {\n      \"id\": \"1\",\n     \
+  \ \"name\": \"The Product\",\n      \"amount\": 200,\n      \"currency\": \"USD\"\
+  \n    },\n    \"type\": \"product\"\n  }\n}\n```\n\n这应该如下所示实现：\n\n```javascript\n\
+  import DS from 'ember-data';\nexport default DS.JSONSerializer.extend({\n  normalizeResponse(store,\
+  \ primModelClass, payload, id, reqType) {\n    payload.data.attributes.amount =\
+  \ payload.data.attributes.cost.amount;\n    payload.data.attributes.currency = payload.data.attributes.cost.currency;\n\
+  \    delete payload.data.attributes.cost;\n    return this._super(...arguments);\n\
+  \  },\n});\n```\n\n\n\n\n\n如果你需要跟踪存储（store）中包含的唯一记录，Ember data 要求每个记录在负载（payload）中应该有一个唯一的\
+  \ `id` 属性。对于特定类型的每条记录，`id` 也应该是唯一的。如果后端使用的键不是 `id`，则可以使用序列化器（serializer）的主键属性，以便在数据的序列化和反序列化过程中正确转换\
+  \ `id`。下文代码所示：\n\n```javascript\nexport default DS.JSONSerializer.extend({\n  primaryKey:\
+  \ '_id'\n});\n```\n\n### 属性名称 (Attribute Names)\n\nEmber data 的约定是将特定模型上的属性名称驼峰命名化（camelize）。考虑下面的示例：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  fName: DS.attr('string'),\n\
+  \  lName:  DS.attr('string'),\n  isPersonOfTheYear: DS.attr('boolean')\n});\n```\n\
+  \n`JSONAPISerializer` 期望服务器返回的文档负载中的属性是短横线命名法（dasherized）的。下文代码所示：\n\n```json\n\
+  {\n  \"data\": {\n    \"id\": \"44\",\n    \"type\": \"people\",\n    \"attributes\"\
+  : {\n      \"first-name\": \"John\",\n      \"last-name\": \"Joel\",\n      \"is-person-of-the-year\"\
+  : true\n    }\n  }\n}\n```\n\n如果服务器返回的属性使用了非常不同的约定，可以使用序列化器的 `keyForAttribute()`\
+  \ 方法将模型中的属性名转换为 JSON 负载中的键。考虑下面的代码：\n\n```javascript\nexport default DS.JSONAPISerializer.extend({\n\
+  \  keyForAttribute: function(attribute) {\n    return Ember.String.underscore(attribute);\n\
+  \  }\n});\n```\n\n可以使用自定义序列化器来映射不规则的键。对象 `attrs` 可用于在 `DS` 的不同属性名之间声明一个简单的映射。考虑下面的示例代码：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  lName: DS.attr('string')\n\
+  });\n```\n\n我们所做的是为我们的模型创建了一个自定义序列化器，然后覆盖了 `attrs` 属性。接下来的代码应该如下：\n\n```javascript\n\
+  export default DS.JSONAPISerializer.extend({\n  attrs: {\n    lName: 'lastNameOfPerson'\n\
+  \  }\n});\n```\n\n### 关系 (Relationships)\n\n`ID` 属性应用于引用其他记录。考虑你的模型具有所示的 `hasMany`\
+  \ 关系：\n\n```javascript\nexport default DS.Model.extend({\n  comments: DS.hasMany('comment',\
+  \ { async: true })\n});\n```\n\n此时 JSON 应该将关系编码为类型和 ID 的数组。下文代码所示：\n\n```json\n\
+  {\n  \"data\": {\n    \"type\": \"posts\",\n    \"id\": \"1\",\n    \"relationships\"\
+  : {\n      \"comments\": {\n        \"data\": [\n          { \"type\": \"comments\"\
+  , \"id\": \"5\" },\n          { \"type\": \"comments\", \"id\": \"12\" }\n     \
+  \   ]\n      }\n    }\n  }\n}\n```\n\n考虑你拥有如下所示模型的情况：\n\n```javascript\nexport default\
+  \ DS.Model.extend({\n  origPost: DS.belongsTo('post')\n});\n```\n\n那么该关系应该被 JSON\
+  \ 编码为另一个记录的 ID。下文代码所示：\n\n```json\n{\n  \"data\": {\n    \"type\": \"comment\",\n\
+  \    \"id\": \"1\",\n    \"relationships\": {\n      \"original-post\": {\n    \
+  \    \"data\": { \"type\": \"post\", \"id\": \"5\" },\n      }\n    }\n  }\n}\n\
+  ```\n\n如果需要这些命名约定，则可以使用 `keyForRelationship` 方法进行覆盖。下文代码最清楚地演示了这一点：\n\n```javascript\n\
+  export default DS.JSONAPISerializer.extend({\n  keyForRelationship: function(key,\
+  \ relship) {\n    return key + 'Ids';\n  }\n});\n```\n\n### 创建自定义转换 (Creation of\
+  \ Custom Transformations)\n\n在某些情况下，内置类型（如 string、`Boolean` 等）可能不足以让我们实现我们所需的内容。一个很好的例子是特定的服务器给你提供了非标准的日期格式。\n\
+  \n在 Ember data 中，我们可能有新的 JSON 转换被注册用于作为属性。下文代码最好地描述了这一点：\n\n```javascript\nexport\
+  \ default DS.Transform.extend({\n  serialize: function(val) {\n    return [value.get('a'),\
+  \ value.get('b')];\n  },\n  deserialize: function(val) {\n    return Ember.Object.create({\
+  \ a: value[0], b: value[1] });\n  }\n});\n```\n\n接下来的代码应该如下：\n\n```javascript\n\
+  export default DS.Model.extend({\n  position: DS.attr('coordinate-point')\n});\n\
+  ```\n\n从 API 接收到 `coordinatePoint` 后，预期是一个如下所示的数组：\n\n```json\n{\n  \"cursor\":\
+  \ {\n    \"position\": [5,9]\n  }\n}\n```\n\n一旦它加载到模型实例上，它将像下面所示作为一个对象：\n\n```javascript\n\
+  var c = store.findRecord('cursor', 1);\n```\n\n\n\n\n\n对于那些需要创建自定义序列化器的人，我们建议从 `JSONAPISerializer`\
+  \ 或 `JSONSerializer` 开始，然后扩展其中之一以匹配我们的需求。然而，如果有效负载（payload）与其中一个序列化器不同，请考虑你给定的下所示“posts”模型的情况：\n\
+  \n```javascript\nexport default DS.Model.extend({\n  title: DS.attr('string'),\n\
+  \  tag: DS.attr('string'),\n  comments: hasMany('comment', { async: false }),\n\
+  \  relatedPosts: hasMany('blogs')\n});\n```\n\n此时 `store.push` 将接受如下格式的对象：\n\n```json\n\
+  {\n  data: {\n    id: \"1\",\n    type: 'post',\n    attributes: {\n      title:\
+  \ \"Ember is easy to Learn\",\n      tag: \"ember\",\n    },\n    relationships:\
+  \ {\n      comments: {\n        data: [{ id: \"1\", type: 'comment' },\n       \
+  \         { id: \"2\", type: 'comment' }],\n      },\n      relatedPosts: {\n  \
+  \      data: {\n          related: \"/api/v1/blogs/1/related-posts/\"\n        }\n\
+  \      }\n    }\n}\n```\n\n为了让每个序列化的记录都能转换为 Ember 数据记录，必须遵循上述格式。\n\n## 第 3 章 - 应用关注点\n\
+  \n### 依赖注入\n\n该技术在 EmberJS 中用于对象类的声明、实例化以及它们之间的依赖关系。应用程序及其实例将在 Ember 的依赖注入（DI）实现中发挥作用。\n\
+  \n### 工厂注册 (Factory Registrations)\n\n工厂可以用于表示应用的一部分，例如模板、路由或自定义类。一个很好的例子是使用键名“template:index”注册的索引模板。\n\
+  \n注意，工厂注册必须在应用程序内部或应用实例初始化器（application instance initializers）中完成，但前者更为常见。\n\n考虑下文的示例，它展示了应用初始化如何使用键名“logger:main”注册一个“logger”工厂：\n\
+  \n```javascript\nexport function initialize(app) {\n  var Logger = Ember.Object.extend({\n\
+  \    log(n) {\n      console.log(n);\n    }\n  });\n  app.register('logger:main',\
+  \ Logger);\n}\n\nexport default {\n  name: 'logger',\n  initialize: initialize\n\
+  };\n```\n\n### 实例化对象的注册 (Registering Instantiated Objects)\n\n默认设置是 Ember 会在查找后尝试实例化已注册的工厂。在特定类对象的注册过程中，你必须使用\
+  \ `instantiate: false` 选项，以避免在查找期间被重复实例化。在下面的示例中，`logger` 是一个 JavaScript 对象，在查找时应原样返回。代码如下：\n\
+  \n```javascript\nexport function initialize(app) {\n  var logger = {\n    log(n)\
+  \ {\n      console.log(n);\n    }\n  };\n  app.register('logger:main', logger, {\
+  \ instantiate: false });\n}\n\nexport default {\n  name: 'logger',\n  initialize:\
+  \ initialize\n};\n```\n\n### 单例与非单例注册 (Singletons vs. Non-Singletons Registration)\n\
+  \n在 Ember data 中，注册被视为单例。这意味着在查找后必须创建一个实例，并且同一个实例将被缓存并在随后的查找中返回。在下例示例中，`message`\
+  \ 将注册为非单例：\n\n```javascript\nexport function initialize(app) {\n  var Msge = Ember.Object.extend({\n\
+  \    text: ''\n  });\n  app.register('notification:message', Msge, { singleton:\
+  \ false });\n}\n\nexport default {\n  name: 'notification',\n  initialize: initialize\n\
+  };\n```\n\n### 工厂注入 (Factory Injections)\n\n一旦完成工厂注册，我们可以在需要时对其注入。工厂注入可以针对整个类型的工厂进行。考虑下例示例：\n\
+  \n```javascript\nexport function initialize(app) {\n  var Logger = Ember.Object.extend({\n\
+  \    log(n) {\n      console.log(n);\n    }\n  });\n  app.register('logger:main',\
+  \ Logger);\n  app.inject('route', 'logger', 'logger:main');\n}\n\nexport default\
+  \ {\n  name: 'logger',\n  initialize: initialize\n};\n```\n\n由于这种类型注入，类型为 `route`\
+  \ 的工厂将使用已注入的 `logger` 进行实例化。`logger` 值将从名为 `logger:main` 的工厂中获取。考虑下例，展示了如何通过注入的\
+  \ logger 访问应用。示例如下：\n\n```javascript\nexport default Ember.Route.extend({\n  activate()\
+  \ {\n    // 属性 logger 被注入到所有路由中\n    this.get('logger').log('Entered your route!');\n\
+  \  }\n});\n```\n\n当使用完整键时，可以像下面所示对完整键进行注入：\n`app.inject('route:index', 'logger',\
+  \ 'logger:main');`\n\n### 临时注入 (Ad Hoc Injections)\n\n依赖注入通过使用 `Ember.inject` 直接在\
+  \ Ember 类上声明。目前，该属性支持服务和控制器的注入。考虑下代码，它展示了如何将 `shopping-cart` 服务作为 `cart` 属性注入到组件\
+  \ `cart-contents` 中。代码如下：\n\n```javascript\nexport default Ember.Component.extend({\n\
+  \  cart: Ember.inject.service('shopping-cart')\n});\n```\n\n如果你需要根据 `audioType`\
+  \ 播放不同的音频服务，可以参考以下代码：\n\n```javascript\nimport Ember from 'ember';\nconst {\n  Component,\n\
+  \  computed,\n  getOwner\n} = Ember;\n\n// 使用方法：\n// {{play-audio song=song}}\n\
+  export default Component.extend({\n  audioService: computed('song.audioType', function()\
+  \ {\n    let appInstance = getOwner(this);\n    let audioType = this.get('song.audioType');\n\
+  \    return appInstance.lookup(`service:${audioType}`);\n  }),\n  click() {\n  \
+  \  let p = this.get('audioService');\n    p.play(this.get('file'));\n  }\n});\n\
+  ```\n\n### 初始化器 (Initializers)\n\n初始化器允许我们在启动过程中配置应用。存在两种类型：应用实例初始化器和应用初始化器。\n\n\
+  应用初始化器在启动期间执行，提供了配置依赖注入的方法。另一种初始化器在加载应用实例时配置，允许我们设置应用的初始状态并 Setup 本地实例。\n\n### 应用初始化器\
+  \ (Application Initializers)\n\n应用初始化器使用 Ember CLI 的初始化器生成器创建。下述命令展示了这一操作：\n\n`ember\
+  \ generate initializer shopping-cart`\n\n随后我们可以自定义 `shopping-cart` 初始化器，将 `cart`\
+  \ 属性注入到应用中的所有路由。代码如下：\n\n```javascript\nexport function initialize(app) {\n  app.inject('route',\
+  \ 'cart', 'service:shopping-cart');\n}\n\nexport default {\n  name: 'shopping-cart',\n\
+  \  initialize: initialize\n};\n```\n\n### 应用实例初始化器 (Application Instance Initializers)\n\
+  \n这些初始化器使用 `instance-initializer` 生成器创建。下述代码展示了如何实现简单的日志记录，以指示实例已启动：\n\n```javascript\n\
+  export function initialize(appInstance) {\n  let logger = appInstance.lookup('logger:main');\n\
+  \  logger.log('Hello from an instance initializer!');\n}\n```\n\n\n\n\n\n```javascript\n\
+  logger.log('Hi from our instance initializer!');\n\n}\n\nexport default {\n  name:\
+  \ 'logger',\n  initialize: initialize\n};\n```\n\n### 指定初始化器顺序\n\n如果你需要控制初始化器的运行顺序，可以使用\
+  \ `before` 和 `after` 选项。请考虑下面的代码：\n\n```javascript\nexport function initialize(app)\
+  \ {\n  // ...在此此处添加你的代码 ...\n};\n\nexport default {\n  name: 'configReader',\n \
+  \ before: 'websocketInit',\n  initialize: initialize\n};\n```\n\n接下来的代码应该如下：\n\n\
+  ```javascript\nexport function initialize(application) {\n  // ... 在此处添加你的代码...\n\
+  };\n\nexport default {\n  name: 'websocketInit',\n  after: 'configReader',\n  initialize:\
+  \ initialize\n};\n```\n\n## 服务 (Services)\n\n`Ember.service` 属性是 Ember 中的一个对象，可以在应用的各个部分使用并调用。以下是服务领域：\n\
+  \n*   `Geolocation`。\n*   `User/session` 身份验证。\n*   `Web Sockets`。\n*   无法放入 `Ember\
+  \ Data` 的`Server-backed API calls`。\n*   `Third-party APIs`。\n*   `Server-sent events`\
+  \ 或通知 `Logging`。\n\n### 服务的定义\n\nEmber CLI 中的 `service` 生成器可以用于生成服务。考虑以下命令，它可以用于创建一个\
+  \ `shoppingCart` 服务：\n\n```bash\nember generate service shopping-cart\n```\n\n服务必须扩展基类\
+  \ `Ember.Service`。如下代码所示：\n\n```javascript\nexport default Ember.Service.extend({\n\
+  });\n```\n\n就像 Ember 中的对象一样，服务必须经过初始化，并且它应该拥有自己的方法和属性。考虑下面所示的购物车服务，它最好地展示了其工作原理：\n\
+  \n```javascript\nexport default Ember.Service.extend({\n  items: null,\n  init()\
+  \ {\n    this._super(args);\n    this.set('items', []);\n  },\n  add(item) {\n \
+  \   this.get('items').pushObject(item);\n  },\n  remove(item) {\n    this.get('items').removeObject(item);\n\
+  \  },\n  empty() {\n    this.get('items').setObjects([]);\n  }\n});\n```\n\n###\
+  \ 访问服务\n\n为了访问服务，可以选择通过 `Ember.inject.service` 函数将其注入到任何由容器解析的对象中，例如另一个服务或组件。该函数有两种用法方式：你可以选择不带参数地调用它，或者将你的服务的注册名称传递给它。\n\
+  \n在不传递参数的情况下，服务必须根据其变量键名进行加载。要不带参数加载购物车服务，请如下所示：\n\n```javascript\nexport default\
+  \ Ember.Component.extend({\n  // 想在文件 /app/services/shopping-cart.js 中加载服务\n  shoppingCart:\
+  \ Ember.inject.service()\n});\n```\n\n另一种方法是使用服务的名称作为参数。如下代码所示：\n\n```javascript\n\
+  export default Ember.Component.extend({\n  // 想在文件 /app/services/shopping-cart.js\
+  \ 中加载我们的服务\n  cart: Ember.inject.service('shopping-cart')\n});\n```\n\n通过上述代码，购物车服务将尽注入到我们的组件中，然后可以通过\
+  \ `cart` 属性可用。被注入的属性是懒加载的，这意味着在显式调用该属性之前，不会对服务进行实例化。这意味着必须使用 `get` 函数来访问特定组件的服务，否则你将得到\
+  \ undefined 错误。\n\n加载后，服务将持续到服务退出。\n\n考虑下面的代码：\n\n```javascript\nexport default\
+  \ Ember.Component.extend({\n  cart: Ember.inject.service('shopping-cart'),\n  actions:\
+  \ {\n    remove(item) {\n      this.get('cart').remove(item);\n    }\n  }\n});\n\
+  ```\n\n在上述代码中，我们为组件 `cart-contacts` 添加了 `remove` 动作。一旦被注入到组件中，该服务将在模板中使用。注意下面的代码中使用了\
+  \ `cart` 从购物车中获取数据：\n\n```html\n<ul>\n  {{#each cart.items as |item|}}\n    <li>\n\
+  \      {{item.name}}\n      <button {{action \"remove\" item}}>Remove</button>\n\
+  \    </li>\n  {{/each}}\n</ul>\n```\n\n### 运行循环 (The Run Loop)\n\n我们在 Ember 中为应用编写的大部分内部机制和代码都发生在运行循环中。运行循环的目的是以更高效、更有效的方式对工作进行批处理和排序。\n\
+  \n下面的代码所示：\n\n```html\n<div id=\"foo\"></div>\n<div id=\"bar\"></div>\n<div id=\"\
+  baz\"></div>\n```\n\n\n\n\n\n该框架具有许多我们可以利用来增强我们应用程序的特性。\n\n在 Ember JS 中，控制器（controllers）非常重要，大多数人会将它们与组件（components）混淆。很快，人们认为控制器将由组件所取代。\n\
+  \n控制器用于控制状态，这取决于当前正在使用的路由类型。在将信息从组件传递到路由时，也会使用控制器，因为信息必须通过它传递。控制器之间需要建立依赖关系。\n\n\
+  当我们需要嵌套资源时，通常会遇到这种情况。我们必须想出一种机制，在控制器之间建立连接。\n\n了解如何在 Ember JS 中创建自定义转换（custom transformations）对你很有帮助。因为可能提供的数据类型可能不足以满足你的需求。Ember\
+  \ JS 中的自定义转换可以在这方面为你提供帮助。我希望这本书能够帮助你理解如何在 Ember JS 中构建应用程序。祝用得愉快！\n"

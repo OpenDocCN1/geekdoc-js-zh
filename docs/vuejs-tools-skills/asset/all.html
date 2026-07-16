@@ -1,0 +1,2720 @@
+<p><img src="Images/default_cover.jpeg" /></p>
+<p><span id="default_cover.xhtml"></span></p>
+<div id="default_cover.xhtml_Cover">
+<img src="Images/default_cover.jpeg" />
+</div>
+<p><span id="webant1_split_000.xhtml"></span></p>
+<div id="webant1_split_000.xhtml_sbo-rt-content" class="calibre">
+<div class="page-frontmatter">
+<section class="page-frontmatter">
+<h2>Vue.js: Tools &amp; Skills</h2>
+</section>
+<p>Copyright © 2019 SitePoint Pty. Ltd.</p>
+<p>Ebook ISBN: 978-1-925836-28-8</p>
+<ul>
+<li><strong>Cover Design:</strong> Alex Walker</li>
+<li><strong>Project Editor:</strong> James Hibbard</li>
+</ul>
+<h2 id="webant1_split_000.xhtml_sigil_toc_id_1">Notice of Rights</h2>
+<p>All rights reserved. No part of this book may be reproduced, stored
+in a retrieval system or transmitted in any form or by any means,
+without the prior written permission of the publisher, except in the
+case of brief quotations embodied in critical articles or reviews.</p>
+<h2 id="webant1_split_000.xhtml_sigil_toc_id_2">Notice of Liability</h2>
+<p>The author and publisher have made every effort to ensure the
+accuracy of the information herein. However, the information contained
+in this book is sold without warranty, either express or implied.
+Neither the authors and SitePoint Pty. Ltd., nor its dealers or
+distributors will be held liable for any damages to be caused either
+directly or indirectly by the instructions contained in this book, or by
+the software or hardware products described herein.</p>
+<h2 id="webant1_split_000.xhtml_sigil_toc_id_3">Trademark Notice</h2>
+<p>Rather than indicating every occurrence of a trademarked name as
+such, this book uses the names only in an editorial fashion and to the
+benefit of the trademark owner with no intention of infringement of the
+trademark.</p>
+<div class="page-frontmatter">
+<p><img src="Images/sitepoint-logo-2012.png" class="calibre4"
+width="450" height="123" alt="SitePoint logo" /><br />
+Published by SitePoint Pty. Ltd.</p>
+<p>48 Cambridge Street Collingwood<br />
+VIC Australia 3066<br />
+Web: www.sitepoint.com<br />
+Email: books@sitepoint.com</p>
+</div>
+</div>
+<section id="webant1_split_000.xhtml_sigil_toc_id_4"
+class="page-frontmatter">
+<h2>About SitePoint</h2>
+<p>SitePoint specializes in publishing fun, practical, and
+easy-to-understand content for web professionals. Visit <a
+href="http://www.sitepoint.com/">http://www.sitepoint.com/</a> to access
+our blogs, books, newsletters, articles, and community forums. You’ll
+find a stack of information on JavaScript, PHP, design, and more.</p>
+</section>
+</div>
+<p><span id="webant1_split_002.xhtml"></span></p>
+<div id="webant1_split_002.xhtml_sbo-rt-content" class="calibre">
+<section id="webant1_split_002.xhtml_preface" class="page-frontmatter">
+<h1>Preface</h1>
+<p>Since its release in 2014, Vue.js has seen a meteoric rise to
+popularity and is is now considered one of the primary front-end
+frameworks, and not without good reason. Its component-based
+architecture was designed to be flexible and easy to adopt, making it
+just as easy to integrate into projects and use alongside non-Vue code
+as it is to build complex client-side applications.</p>
+<p>This book covers a selection of essential tools and skills you'll
+need while working with Vue. It contains:</p>
+<ol>
+<li><em>Setting Up a Vue Development Environment</em> by James
+Hibbard</li>
+<li><em>Five Top Vue Animation Libraries</em> by Maria Antonietta
+Perna</li>
+<li><em>Build Your First Static Site with VuePress</em> by Ivaylo
+Gerchev</li>
+<li><em>Five Vue UI Libraries for Your Next Project</em> by Michiel
+Mulders</li>
+<li><em>Five Handy Tips when Starting Out with Vue</em> by David
+Bush</li>
+</ol>
+<h2 id="webant1_split_002.xhtml_who-should-read-this-book-">Who Should
+Read This Book?</h2>
+<p>This book is for developers with experience of JavaScript.</p>
+<h2 id="webant1_split_002.xhtml_preface-conventions-used">Conventions
+Used</h2>
+<h3 class="breakbefore sigil_not_in_toc">Code Samples</h3>
+<p>Code in this book is displayed using a fixed-width font, like so:</p>
+<pre class="codeblock"><code>
+&lt;h1&gt;A Perfect Summer&#39;s Day&lt;/h1&gt;
+&lt;p&gt;It was a lovely day for a walk in the park.
+The birds were singing and the kids were all back at school.&lt;/p&gt;
+			</code></pre>
+<p>Where existing code is required for context, rather than repeat all
+of it, ⋮ will be displayed:</p>
+<pre class="codeblock"><code>
+function animate() {
+    ⋮
+new_variable = &quot;Hello&quot;;
+}</code></pre>
+<p>Some lines of code should be entered on one line, but we’ve had to
+wrap them because of page constraints. An ➥ indicates a line break that
+exists for formatting purposes only, and should be ignored:</p>
+<pre class="codeblock"><code>
+URL.open(&quot;http://www.sitepoint.com/responsive-web-
+➥design-real-user-testing/?responsive1&quot;);</code></pre>
+<p>You’ll notice that we’ve used certain layout styles throughout this
+book to signify different types of information. Look out for the
+following items.</p>
+<h3 class="calibre8 sigil_not_in_toc"
+id="webant1_split_002.xhtml_preface-tips">Tips, Notes, and Warnings</h3>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Hey, You!</h4>
+<div class="page-frontmatter">
+<p>Tips provide helpful little pointers.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Ahem, Excuse Me ...</h4>
+<div class="page-frontmatter">
+<p>Notes are useful asides that are related—but not critical—to the
+topic at hand. Think of them as extra tidbits of information.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Make Sure You Always ...</h4>
+<div class="page-frontmatter">
+<p>... pay attention to these important points.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Watch Out!</h4>
+<div class="page-frontmatter">
+<p>Warnings highlight any gotchas that are likely to trip you up along
+the way.</p>
+</div>
+</section>
+</section>
+</div>
+<p><span id="jsant3-ch1.xhtml"></span></p>
+<div id="jsant3-ch1.xhtml_sbo-rt-content" class="calibre">
+<section id="jsant3-ch1.xhtml_recatangular" class="page-frontmatter">
+<h1>Chapter 1: Setting Up a Vue Development Environment</h1>
+<h3 class="author sigil_not_in_toc">by James Hibbard</h3>
+<p>If you’re going to do any serious amount of work with Vue, it’ll pay
+dividends in the long run to invest some time in setting up your coding
+environment. A powerful editor and a few well-chosen tools will make you
+more productive and ultimately a happier developer.</p>
+<p>In this tutorial, I’m going to demonstrate how to configure VS Code
+to work with Vue. I’m going to show how to use ESLint and Prettier to
+lint and format your code and how to use Vue’s browser tools to take a
+peek at what’s going on under the hood in a Vue app. When you’ve
+finished reading, you’ll have a working development environment set up
+and will be ready to start coding Vue apps like a boss.</p>
+<p>Let’s get to it!</p>
+<h2
+id="jsant3-ch1.xhtml_installing-and-setting-up-your-editor">Installing
+and Setting Up Your Editor</h2>
+<p>I said that I was going to be using <a
+href="https://code.visualstudio.com/">VS Code</a> for this tutorial, but
+I’m afraid I lied. I’m actually going to be using <a
+href="https://github.com/VSCodium/vscodium">VSCodium</a>, which is an
+open-source fork of VS Code without the Microsoft branding, telemetry
+and licensing. The project is under active development and I’d encourage
+you to check it out.</p>
+<p>It doesn’t matter which editor you use to follow along; both are
+available for Linux, Mac and Windows. You can <a
+href="https://github.com/VSCodium/vscodium/releases">download the latest
+release of VSCodium here</a>, or <a
+href="https://code.visualstudio.com/Download">download the latest
+release of VSCode here</a> and install it in the correct way for your
+operating system.</p>
+<p>Throughout the rest of this guide, for the sake of consistency, I’ll
+refer to the editor as VS Code.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_add-the-vetur-extension">Add the Vetur
+Extension</h3>
+<p>When you fire up the editor, you’ll notice a set of five icons in a
+toolbar on the left-hand side of the window. If you click the bottom of
+these icons (the square one), a search bar will open up that enables you
+to search the <a href="https://marketplace.visualstudio.com/">VS Code
+Marketplace</a>. Type “vue” into the search bar and you should see
+dozens of extensions listed, each claiming to do something slightly
+different.</p>
+<p>Depending on your use case, you might find something here to suit
+you. There are lots available. For example, <a
+href="https://marketplace.visualstudio.com/items?itemName=prograhammer.tslint-vue">TSLint
+for Vue</a> could be handy if you’re working on a Vue project involving
+TypeScript. For now, I’m going to focus on one called <a
+href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a>.</p>
+<p>Type “Vetur” into the search box and select the package authored by
+Pine Wu. Then hit <em>Install</em>.</p>
+<img src="Images/vs-code-1.jpg" width="1026" height="544"
+alt="Installing Vetur in VS Code" />
+<p>Once the extension has installed, hit <em>Reload to activate</em> and
+you’re in business.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_exploring-vetur-s-features">Exploring Vetur’s
+Features</h3>
+<p>If you visit <a href="https://vuejs.github.io/vetur/">the project’s
+home page</a>, you’ll see that the extension gives you a number of
+features:</p>
+<ul>
+<li>syntax highlighting</li>
+<li>snippets</li>
+<li>Emmet</li>
+<li>linting/error checking</li>
+<li>formatting</li>
+<li>auto completion</li>
+<li>debugging</li>
+</ul>
+<p>Let’s see some of these in action now.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Set Up Your Project First</h4>
+<div class="body">
+<p>Note that many of these features only work when you have a project
+set up. This means you need to create a folder to contain your Vue
+files, open the folder using VS Code and access the files via VS Code’s
+explorer.</p>
+</div>
+</section>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_syntax-highlighting">Syntax highlighting</h4>
+<p>As your app grows, you’ll undoubtedly want to make make use of <a
+href="https://vuejs.org/v2/guide/single-file-components.html">single-file
+components</a> (SFCs) to organize your code. These have a
+<code>.vue</code> ending and contain a template section, a script
+section and a style section. Without Vetur, this is what an SFC looks
+like in VS Code:</p>
+<img src="Images/vs-code-2.png" width="752" height="546"
+alt="SFC with no code highlighting" />
+<!-- ![SFC with no code highlighting](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544345409vs-code-2.png) -->
+<p>However, installing Vetur will make it look like so:</p>
+<img src="Images/vs-code-3.png" width="752" height="546"
+alt="SFC with no code highlighting" />
+<!-- ![SFC with no code highlighting](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544345299vs-code-3.png) -->
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_snippets">Snippets</h4>
+<p>As you can read on the <a
+href="https://code.visualstudio.com/docs/editor/userdefinedsnippets">VS
+Code website</a>, snippets are templates that make it easier to enter
+repeating code patterns, such as loops or conditional-statements. Vetur
+makes it possible for you to use these snippets in single-file
+components.</p>
+<p>It also comes with some snippets of its own. For example, try typing
+“scaffold” (without the quotes) into an area outside a language region
+and it will generate all the code you need to get going with an SFC:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+
+&lt;/style&gt;</code></pre>
+<h4 class="sigil_not_in_toc" id="jsant3-ch1.xhtml_emmet">Emmet</h4>
+<p><a href="https://www.emmet.io/">Emmet</a> takes the idea of snippets
+to a whole new level. If you’ve never heard of this and spend any amount
+of time in a text editor, I’d recommend you head over to the Emmet
+website and spend some time acquainting yourself with it. It has the
+potential to boost your productivity greatly.</p>
+<p>In a nutshell, Emmet allows you to expand various abbreviations into
+chunks of HTML or CSS. Vetur ships with this turned on by default.</p>
+<p>Try clicking into a <code>&lt;template&gt;</code> region and entering
+the following:</p>
+<pre class="codeblock"><code>div#header&gt;h1.logo&gt;a{site Name}</code></pre>
+<p>Then press <kbd>Tab</kbd>. It should be expanded to this:</p>
+<pre class="codeblock"><code>&lt;div id=&quot;header&quot;&gt;
+  &lt;h1 class=&quot;logo&quot;&gt;&lt;a href=&quot;&quot;&gt;sitename&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_error-checking-linting">Error Checking/Linting</h4>
+<p>Out of the box, Vetur offers some basic error checking. This can be
+handy for spotting typos in your code.</p>
+<img src="Images/vs-code-4.png" width="1026" height="666"
+alt="Linting with Vetur" />
+<!-- ![Linting with Vetur](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544350669vs-code-4.png) -->
+<p>In the above example, Vetur has noticed that I’ve forgotten the colon
+following the object property name and has consequently underlined it in
+red. Opening up the error panel (click on the small cross in the bottom
+left-hand corner) gives you a description of the error.</p>
+<p>Vetur also uses <a
+href="https://github.com/vuejs/eslint-plugin-vue">eslint-plugin-vue</a>
+to lint templates. We’ll find out more about why linting your code is a
+good idea in the next section, but for now, let’s just see it in
+action.</p>
+<p>Let’s add an <code>items</code> key to our <code>data</code>
+property:</p>
+<pre class="codeblock"><code>export default {
+  data () {
+    return {
+      message: &quot;Vetur is awesome!&quot;,
+      items: [
+        { message: &#39;Foo&#39; },
+        { message: &#39;Bar&#39; }
+      ]
+    }
+  }
+}</code></pre>
+<p>Then add some code to output it in our template:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;{{ message }}&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li v-for=&quot;item in items&quot;&gt;
+        {{ item.message }}
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+<p>Straight away we’ll see that
+<code>&lt;li v-for="item in items"&gt;</code> is underlined in red. What
+gives?</p>
+<p>Well, you can hover over the offending code, or open the error
+console to see what’s bothering Vetur.</p>
+<img src="Images/vs-code-6.png" width="1026" height="541"
+alt="A coding error highlighted in VS Code" />
+<!-- ![A coding error highlighted in VS Code](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544359779vs-code-6.png) -->
+<p>The error appears to be that we’ve <a
+href="https://vuejs.org/v2/style-guide/#Keyed-v-for-essential">forgotten
+to declare a key</a>. Let’s remedy that:</p>
+<pre class="codeblock"><code>&lt;li v-for=&quot;(item, i) in items&quot; :key=&quot;i&quot;&gt;
+  {{ item.message }}
+&lt;/li&gt;</code></pre>
+<p>And the error vanishes from our editor.</p>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_intellisense">IntelliSense</h4>
+<p><a
+href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a>
+is one of my favorite features in VS Code, but it’s limited to a few
+formats that the editor can understand. Installing Vetur makes
+IntelliSense available in your <code>.vue</code> file, which is mighty
+handy.</p>
+<p>You can try this out by clicking into the
+<code>&lt;template&gt;</code> region of a Vue component and typing “v-”
+on any tag (minus the quotes). You should see this:</p>
+<img src="Images/vs-code-5.png" width="1026" height="541"
+alt="IntelliSense with Vetur" />
+<!-- ![Intellisense with Vetur](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544351282vs-code-5.png) -->
+<p>This allows you to select from any of the listed directives, and also
+provides you with an explanation of what each does.</p>
+<p>That’s not all that Vetur can do, but we’ll leave the extension there
+and turn our attention to setting up a project with Vue’s CLI.</p>
+<h2 id="jsant3-ch1.xhtml_an-example-project-with-vue-cli">An Example
+Project with Vue CLI</h2>
+<p>When building a new Vue app, the best way to get up and running
+quickly is using <a href="https://cli.vuejs.org/">Vue CLI</a>. This is a
+command-line utility that allows you to choose from a range of build
+tools which it will then install and configure for you. It will also
+scaffold out your project, providing you with a pre-configured starting
+point that you can build on, rather than starting everything from
+scratch.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Getting Up to Speed with Vue CLI</h4>
+<div class="body">
+<p>If the CLI is new for you, you might like to check out our tutorial
+“A Beginner’s Guide to Vue CLI” in this Vue series.</p>
+</div>
+</section>
+<p>To get started, you’ll need to have Node installed on your system.
+You can do this by downloading the binaries for your system from the <a
+href="https://nodejs.org">official website</a>, or using a <a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">version
+manager</a>. I recommend the second of the two methods.</p>
+<p>With Node installed, execute the following command:</p>
+<pre class="codeblock"><code>npm install -g @vue/cli</code></pre>
+<p>And create a new Vue project with the command:</p>
+<pre class="codeblock"><code>vue create my-project</code></pre>
+<p>This will open a wizard which asks you to choose a preset. Choose to
+manually select features, then accept the defaults for everything, apart
+from when you’re asked to pick a linter/formatter config. In this step,
+be sure to select <em>ESLint + Prettier</em> and <em>Lint on save</em>,
+and to place config files in <code>package.json</code>.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_linting-your-code-with-eslint">Linting Your Code
+with ESLint</h3>
+<p>If you open this newly created project and take a peek inside the
+<code>package.json</code> file, you’ll notice that the CLI has set up <a
+href="https://eslint.org/">ESLint</a> for you. This is a tool that can
+automatically check your code for potential problems. This provides many
+benefits, such as:</p>
+<ul>
+<li>keeping your code style consistent</li>
+<li>spotting potential errors and bad patterns</li>
+<li>enforcing quality when you follow a <a
+href="https://www.sitepoint.com/why-use-javascript-style-guide/">style
+guide</a></li>
+<li>saving time for all of the above reasons</li>
+</ul>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Learning ESLint</h4>
+<div class="body">
+<p>If you’d like to dive deeper into ESLint, check out our article “<a
+href="https://www.sitepoint.com/up-and-running-with-eslint-the-pluggable-javascript-linter/">Up
+and Running with ESLint — the Pluggable JavaScript Linter</a>”.</p>
+</div>
+</section>
+<p>If you look at the <code>devDependencies</code> property in
+<code>package.json</code>, you’ll see that the CLI is also using <a
+href="https://github.com/vuejs/eslint-plugin-vue">eslint-plugin-vue</a>.
+This is the official ESLint plugin for Vue.js, which is able to detect
+code problems in your <code>.vue</code> files.</p>
+<p>Let’s put that to the test.</p>
+<p>Start the Vue dev server with <code>npm run serve</code> and navigate
+to <a href="http://localhost:8080">localhost:8080</a>.</p>
+<p>In VS Code, open up the project you just created with the CLI
+(<em>File</em> &gt; <em>Open Folder</em>), then navigate to
+<code>src/components/HelloWorld.vue</code> in the VS Code explorer.
+Let’s add a method to our Vue instance:</p>
+<pre class="codeblock"><code>export default {
+  name: &#39;HelloWorld&#39;,
+  props: {
+    msg: String
+  },
+  methods: {
+    sayHi() {
+      console.log(&quot;hi&quot;);
+    }
+  }
+}</code></pre>
+<p>Now, if you look at the terminal window in which the dev server is
+running, you’ll see Vue complaining.</p>
+<img src="Images/vs-code-7.png" width="722" height="413"
+alt="Linting error in the dev server console" />
+<!-- ![Linting error in the dev server console](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544360955vs-code-7.png) -->
+<p>This is because, under the hood, Vue CLI has configured ESLint to use
+the <code>eslint:recommended</code> ruleset. This enables any rules
+marked with a check mark on the <a
+href="https://eslint.org/docs/rules/">ESLint rules page</a>, of which <a
+href="https://eslint.org/docs/rules/no-console">no-console</a> is
+one.</p>
+<p>While it’s nice that the CLI shows us ESLint errors in the terminal,
+wouldn’t it’d be nicer if we could see them in our editor, too? Well,
+luckily we can. Hop back into VS code, click the extensions icon and
+type in “ESLint” (without the quotes). The top result should be for a <a
+href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">package
+named <em>ESLint</em> by Dirk Baeumer</a>. Install that and restart VS
+Code.</p>
+<p>Finally, you’ll need to edit your VS Code preferences. Go to
+<em>File</em> &gt; <em>Preferences</em> &gt; <em>Settings</em> and edit
+the <em>User Settings file</em> and add the following configuration:</p>
+<pre class="codeblock"><code>&quot;eslint.validate&quot;: [
+  &quot;vue&quot;
+]</code></pre>
+<p>This will tell the ESLint plugin we just installed to perform
+validation for <code>.vue</code> files.</p>
+<img src="Images/vs-code-8.png" width="1026" height="555"
+alt="ESLint error displayed in VS Code" />
+<!-- ![ESLint error displayed in VS Code](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544363871vs-code-8.png) -->
+<p>Should you desire, you can turn this (or any) rule off in the
+<code>rules: {}</code> section of <code>package.json</code>:</p>
+<pre class="codeblock"><code>&quot;eslintConfig&quot;: {
+  ...
+  &quot;rules&quot;: {
+    &quot;no-console&quot;: 0
+  },
+  ...
+}</code></pre>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch1.xhtml_formatting-your-code-with-prettier">Formatting Your
+Code with Prettier</h3>
+<p>Prettier is an opinionated code formatter. As you can read on <a
+href="https://github.com/prettier/prettier">the project’s home page</a>,
+it enforces a consistent style by parsing your code and re-printing it
+with its own rules that take the maximum line length into account,
+wrapping code when necessary.</p>
+<p>That might sound a little draconian at first, but once you get used
+to it, you literally never have to think about code formatting again.
+This is very useful if you’re part of a team, as Prettier will halt all
+the on-going debates over styles in their tracks.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">Look Prettier</h4>
+<div class="body">
+<p>If you’re not convinced, you can <a
+href="https://prettier.io/docs/en/why-prettier.html">read more about why
+you should use Prettier here</a>.</p>
+</div>
+</section>
+<p>The way Prettier works in conjunction with Vue CLI is similar to
+ESLint. To see it in action, let’s remove the semicolon from the end of
+the <code>console.log("hi");</code> statement from our previous example.
+This should display a warning in the terminal:</p>
+<pre class="codeblock"><code>warning: Insert `;` (prettier/prettier) at src/components/HelloWorld.vue:41:24:
+  39 |   methods: {
+  40 |     sayHi() {
+&gt; 41 |       console.log(&quot;hi&quot;)
+     |                        ^
+  42 |     }
+  43 |   }
+  44 | };
+
+1 error and 1 warning found.
+1 warning potentially fixable with the `--fix` option.</code></pre>
+<p>It will also display a warning in VS Code, thanks to the ESLint
+plugin we installed previously.</p>
+<p>We can also have Prettier fix any formatting errors for us whenever
+we save a file. To do this, go to <em>File</em> &gt;
+<em>Preferences</em> &gt; <em>Settings</em> and edit the <em>User
+Settings file</em> to add the following configuration:</p>
+<pre class="codeblock"><code>&quot;editor.formatOnSave&quot;: true</code></pre>
+<p>Now when you press save, everything will be formatted according to <a
+href="https://prettier.io/docs/en/rationale.html">Prettier’s standard
+rule set</a>.</p>
+<p>Note, you can configure a handful of rules in Prettier via a
+<code>"prettier"</code> key in your <code>package.json</code> file:</p>
+<pre class="codeblock"><code>&quot;prettier&quot;: {
+  &quot;semi&quot;: false
+}</code></pre>
+<p>The above, for example, would turn the semicolon rule off.</p>
+<p>You can read more about configuration options <a
+href="https://prettier.io/docs/en/options.html">here</a>.</p>
+<h2 id="jsant3-ch1.xhtml_vue-browser-tools">Vue Browser Tools</h2>
+<p>In this section, I want to take a look at the the Vue.js devtools,
+which are available as a browser plugin for both <a
+href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">Chrome</a>
+and <a
+href="https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/">Firefox</a>,
+and as <a
+href="https://github.com/vuejs/vue-devtools/blob/master/shells/electron/README.md">a
+cross-platform Electron app</a>, which can also debug Vue apps running
+on mobile devices.</p>
+<p>Once you have them installed, you can access them by visiting a
+running Vue app, opening your browser’s console and hitting the
+<em>Vue</em> button. You’ll then see three further sections:
+<em>Components</em>, <em>Vuex</em> and <em>Events</em>.</p>
+<p>The first section gives you a hierarchical view of all the components
+that make up your application. Selecting a component from the tree
+allows you to inspect its state (for example, the <code>props</code> it
+received) in the right-hand pane. Some of its values (such as its
+<code>data</code> object) can be dynamically edited while the app
+runs.</p>
+<img src="Images/vs-code-9.png" width="758" height="736"
+alt="Vue browser tools displaying a component tree" />
+<!-- ![Vue browser tools displaying a component tree](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1544369720vs-code-9.png) -->
+<p>The <em>Vuex</em> tab is only active if a Vuex store is detected in
+the application. (For more information on this, check out “Getting
+Started with Vuex: a Beginner’s Guide” in this Vue series.) It allows
+you to examine the state of the store at any point in time, and all the
+mutations that have been committed. You can even move back and forth
+through the mutations, effectively time traveling through the state of
+your application.</p>
+<p>The <em>Events</em> tab aggregates all the events emitted by your
+application, from anywhere in the component tree. Selecting an event
+will display more information about it in the right-hand pane, allowing
+you to see which component emitted it and any payload that was sent.</p>
+<p>There’s a lot more to Vue’s browser tools than I’ve demonstrated
+here, so I encourage you to install them and experiment with them as
+your application grows.</p>
+<h2 id="jsant3-ch1.xhtml_conclusion">Conclusion</h2>
+<p>And that’s a wrap. In this guide, I’ve demonstrated how to install
+the Vetur plugin for VS Code and highlighted several of its features.
+I’ve also shown how to use Vue CLI to generate a project and how to use
+ESLint and Prettier to ensure code quality and consistency. We also took
+a brief look at Vue’s browser tools and saw how to inspect the state of
+a running Vue application, something which is important for debugging
+purposes.</p>
+<p>This should see you well on the way to having a sensible environment
+for writing Vue applications and hopefully make you a productive and
+happy developer.</p>
+</section>
+</div>
+<p><span id="jsant3-ch2.xhtml"></span></p>
+<div id="jsant3-ch2.xhtml_sbo-rt-content" class="calibre">
+<div id="jsant3-ch2.xhtml_calibre_toc_3" class="page-frontmatter">
+<h1 id="jsant3-ch2.xhtml_sevenways">Chapter 2: Five Top Vue Animation
+Libraries</h1>
+<h3 class="author sigil_not_in_toc">by Maria Antonietta Perna</h3>
+<p><strong>In this article, we’ll look at what Ethereum nodes are, and
+explore one of the most popular ones, called Geth.</strong></p>
+<p>Animation can be your a powerful tool in your UX toolbox. It keeps
+web users engaged, and it’s lots of fun to create. Vue.js is a
+progressive JavaScript framework that lets you build user interfaces and
+powerful web apps.</p>
+<p>Follow me as I show you how you can quickly set Vue in motion with
+five great web animation libraries.</p>
+<h2 id="jsant3-ch2.xhtml_why-animation-on-the-web-">Why Animation on the
+Web?</h2>
+<p>Our brains are hardwired to pay attention and react to things that
+move around us. This is a survival mechanism, but also part of the way
+we understand the world. Websites are communication tools, and animation
+is part of the communication strategy around a web design project. As
+such, web animation, far from simply being decorative, is functional to
+the success of a website’s goals, and therefore plays a number of
+important roles.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch2.xhtml_a-few-words-of-caution-about-web-animation">A Few
+Words of Caution about Web Animation</h3>
+<p>When it comes to web animation, usually less is more. Going overboard
+with your animations is tempting, but it’s often a consequence of poor
+design. To avoid falling into this trap, it’s useful to keep in mind
+that <a
+href="https://medium.com/@sophie_paxtonUX/stop-gratuitous-ui-animation-9ece9aa9eb97">your
+animation should have a point</a> and should facilitate what users are
+expected to do on your website. In other words, animation must not be in
+the way.</p>
+<p>Another aspect of animation you should be aware of is that motion on
+the Web can have some serious accessibility implications:</p>
+<blockquote>
+<p>It’s no secret that a lot of people consider scrolljacking and
+parallax effects annoying and overused. But what if motion does more
+than just annoy you? What if it also makes you ill? — <em>Val Head, <a
+href="https://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity">Designing
+Safer Web Animation for Motion Sensitivity</a></em></p>
+</blockquote>
+<p>Val Head refers to visually triggered vestibular disorders, which can
+cause symptoms of nausea, dizziness, headaches and even worse, at the
+sight of large-scale motion on screen. One way in which you can minimize
+discomfort to your users is to give them control over whether they want
+to start an animation, and at what speed. For more details on this
+topic, check out <a
+href="https://alistapart.com/blog/post/more-resources-for-accessible-animations">More
+Resources for Accessible Animations</a> by Val Head, which, together
+with the article cited above, covers a great deal of ground and goes a
+long way towards helping you craft animations designed with
+accessibility and respect for your website’s users in mind.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch2.xhtml_what-web-animation-is-good-for">What Web Animation
+Is Good For</h3>
+<p>Humans are drawn towards movement, so you can use animation to <a
+href="https://www.sitepoint.com/animating-the-dom-with-anime-js#animationontheweb">convey
+information through motion</a>. For instance, color animation on hover
+draws users’ attention to the link. Animating an area or an element of a
+web page gives users cues about where they’re expected to look or what
+they’re expected to do. A fun loader communicates to users that some
+process is taking place on the website and keeps them engaged so the
+perceived waiting time feels shorter.</p>
+<p>Also, the way you design an animation contributes to the creation and
+reinforcement of brand identity while also giving your website a
+sophisticated touch of professionalism and polish.</p>
+<p>From the point of view of front-end devs, there’s never been a better
+time for coding motion experiences on the web. Browsers’ handling of
+animation keeps improving, devices are more and more capable, and there
+are some amazing tools out there you can use to create web
+animations.</p>
+<p>Let’s explore some possibilities in relation to Vue.js.</p>
+<h2 id="jsant3-ch2.xhtml_vue-js-transition-and-animation-systems">Vue.js
+Transition and Animation Systems</h2>
+<p>Applying CSS transitions and animations is a snap with Vue’s
+<code>&lt;transition&gt;</code> and
+<code>&lt;transition-group&gt;</code> components. Before I illustrate
+how these work, let’s briefly clarify the difference between CSS
+transitions and CSS animations.</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch2.xhtml_css-transitions">CSS
+Transitions</h3>
+<p><a href="https://www.w3.org/TR/css-transitions-1/">CSS
+transitions</a> involve animating the state of a property from an
+initial starting point to an end state in response to an event—such as a
+mouse hover, or a hover event. The browser will take care of
+interpolating all the in-between states of the animation. Therefore, if
+your animation consists of just changing a property from A to B,
+transitions will be the simplest and most efficient way of implementing
+it.</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch2.xhtml_css-animations">CSS
+Animations</h3>
+<p><a href="https://www.w3.org/TR/css-animations-1/">CSS animations</a>
+are great if your animation consists of more than just an initial and
+final state and therefore you need more control over each stage
+throughout the movement.</p>
+<p>For more details on CSS transitions and animations, their differences
+and use cases, check out “<a
+href="https://blog.logrocket.com/css-transitions-101-lets-animate-a-toggle-button-icon-333967f5b971">CSS
+Transitions 101: Let’s Animate a Toggle Button Icon</a>”.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch2.xhtml_css-transitions-in-vue">CSS Transitions in Vue</h3>
+<p>Vue already makes hiding and showing content on the page a painless
+and quick operation, using the <a
+href="https://vuejs.org/v2/guide/conditional.html"><code>v-if</code> or
+<code>v-show</code> directives</a>:</p>
+<pre class="codeblock"><code>&lt;div id=&quot;app&quot;&gt;
+  &lt;button v-if=&quot;show&quot; @click=&quot;show = !show&quot;&gt;Show&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+new Vue({
+  el: &#39;#app&#39;,
+  data() {
+    return {
+      show: true
+    }
+  }
+})
+&lt;/script&gt;</code></pre>
+<p>The snippet above shows the button on the page only if the
+<code>show</code> property in the Vue instance is <code>true</code>.
+Clicking the button causes the <code>show</code> property to switch to
+<code>false</code>, which in turn leads to the removal of the button
+element.</p>
+<p>However, this approach produces a sudden showing/hiding of the
+element, which doesn’t give users a great experience. Enter CSS
+transitions and Vue’s <code>&lt;transition&gt;</code> component: the
+latter is a convenient wrapper that Vue makes available to let you add
+transitions to any element or component.</p>
+<p>Here’s how you’d use it to animate the button in the above
+example:</p>
+<pre class="codeblock"><code>&lt;div id=&quot;app&quot;&gt;
+  &lt;transition name=&quot;fade&quot;&gt;
+    &lt;button v-if=&quot;show&quot; @click=&quot;show = !show&quot;&gt;Show&lt;/button&gt;
+  &lt;/transition&gt;
+&lt;/div&gt;</code></pre>
+<p>The button code is wrapped inside a <code>&lt;transition&gt;</code>
+component named <em>fade</em>.</p>
+<p>In the CSS code, the <em>fade</em> CSS transition is built using
+Vue’s <code>&lt;transition&gt;</code> component’s hooks as follows:</p>
+<pre class="codeblock"><code>.fade-leave-active{
+  transition: opacity 2s;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}</code></pre>
+<p>The <code>.fade-leave-active</code> hook is available while the
+animation is running, and it’s here that you can specify the transition
+properties.</p>
+<p><code>.fade-leave-to</code> represents the last positions in the
+animation. In this case, by setting <code>opacity</code> to 0, the
+button starts the animation by being visible and ends the animation by
+disappearing.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p><a href="https://codepen.io/SitePoint/pen/ZVOEZa/">Here’s a live
+demo</a> with both entering and leaving transition hooks.</p>
+</div>
+</section>
+<p>You can get the lowdown on all the transition classes available to
+you on the <a
+href="https://vuejs.org/v2/guide/transitions.html#Transition-Classes">Vue.js
+docs</a>.</p>
+<p>Vue also offers a <code>&lt;transition-group&gt;</code> component for
+animating more than one element in one go, which I’m going to illustrate
+later in this article.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch2.xhtml_css-animations-in-vue">CSS Animations in Vue</h3>
+<p>You can add CSS animations to your Vue app using the same
+<code>&lt;transition&gt;</code> component and the same class hooks as
+CSS transitions, but instead of simply defining a starting point and an
+end point leaving the browser to figure out the in-between states, you
+take matters in your own hands using <code>@keyframes</code> to define
+each stage in the animation. The cool thing is that you can code your
+own animations or just as easily plug in a CSS animation library like
+Animate.css and you’re off to the races!</p>
+<p>Let’s see how you can do just that.</p>
+<h2 id="jsant3-ch2.xhtml_animate-css">#1 Animate.css</h2>
+<p><a href="https://github.com/daneden/animate.css">Animate.css</a> is a
+handy cross-browser library of sleek and playful CSS animations created
+by Daniel Eden.</p>
+<p>You can quickly put it to use by adding the <code>animated</code>
+class to the element you intend to animate together with the name of the
+animation of your choice among all the great options this library has to
+offer. You can also add other animation-specific properties like how
+many times you want the animation to play, its <code>duration</code>,
+<code>delay</code>, and so on.</p>
+<p>For instance, here’s a <code>&lt;div&gt;</code> element set up to
+bounce up and down for an infinite number of times:</p>
+<pre class="codeblock"><code>&lt;div class=&quot;animated infinite bounce delay-2s&quot;&gt;&lt;/div&gt;</code></pre>
+<p>To include Animate.css in your Vue app, add the library’s classes to
+the hooks made available inside the <code>&lt;transition&gt;</code>
+component. Here’s an example:</p>
+<pre class="codeblock"><code>&lt;div id=&quot;app&quot;&gt;
+  &lt;transition name=&quot;rotateSlide&quot; appear
+   enter-active-class=&quot;animated rotateInUpRight&quot;
+   leave-active-class=&quot;animated slideOutUp&quot;&gt;
+      &lt;div v-if=&quot;show&quot; class=&quot;message&quot; @click=&quot;move&quot;&gt;
+        {{ bubble }}
+      &lt;/div&gt;
+  &lt;/transition&gt;
+&lt;/div&gt;</code></pre>
+<p>Let’s go through what happens in the snippet above:</p>
+<ul>
+<li>The Vue animation is called <em>rotateSlide</em>.</li>
+<li>The <code>appear</code> attribute ensures that the opening animation
+is triggered as soon as the page renders in the browser.</li>
+<li>The <code>animated</code>, <code>rotateInUpRight</code> and
+<code>slideOutUp</code> classes are Animate.css classes.</li>
+<li>Adding <code>rotateInUpRight</code> to Vue’s
+<code>enter-active-class</code> causes the element to appear as it
+rotates on the right side towards the top of the screen.</li>
+<li>By the same token, adding <code>slideOutUp</code> to Vue’s
+<code>leave-active-class</code> causes the element to slide to the top
+of the page and disappear. This second animation is triggered by
+clicking on the element.</li>
+</ul>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p><a href="https://codepen.io/SitePoint/pen/ZVOEZa/">Here’s the full
+demo</a>.</p>
+</div>
+</section>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch2.xhtml_animate-css-with-vue-s-transition-group-component">Animate.css
+with Vue’s <code>&lt;transition-group&gt;</code> Component</h3>
+<p>The <code>&lt;transition-group&gt;</code> component is Vue’s way of
+facilitating the animation of a bunch of elements like list items. Its
+use is similar to the <code>&lt;transition&gt;</code> component. Here’s
+a snippet to show what it looks like with Animate.css:</p>
+<pre class="codeblock"><code>&lt;transition-group
+  name=&quot;listitems&quot;
+  tag=&quot;ul&quot;
+  appear
+  enter-active-class=&quot;animated bounceInUp&quot;
+&gt;
+  &lt;li
+    is=&quot;app-book&quot;
+    v-for=&quot;(book, index) in books&quot;
+    :key=&quot;index&quot;
+    :book=&quot;book&quot;&gt;
+  &lt;/li&gt;
+&lt;/transition-group&gt;</code></pre>
+<p>Above, the <code>&lt;transition-group&gt;</code> component named
+<em>listitems</em> encloses a list item component. Notice the
+<code>tag</code> property inside the transition-group with a value of
+<em>ul</em>. This automatically generates the
+<code>&lt;ul&gt;&lt;/ul&gt;</code> tags around the list’s
+<code>&lt;li&gt;&lt;/li&gt;</code> tags of the list component. When the
+page first renders, the items in the list will make a smooth bouncing
+animation thanks to the Animate.css <code>bounceInUp</code> class.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p>Here’s <a href="https://codepen.io/SitePoint/pen/roLaBv">the full
+demo on CodePen</a>. Feel free to play around with it.</p>
+</div>
+</section>
+<h2 id="jsant3-ch2.xhtml_animatelo-js">#2 Animatelo.js</h2>
+<p><a href="https://gibbok.github.io/animatelo/">Animatelo</a> by Gibbok
+is—</p>
+<blockquote>
+<p>a bunch of cool, fun, and cross-browser animations for you to use in
+your projects. Great for emphasis, home pages, sliders, and general
+just-add-water-awesomeness. — <em><a
+href="https://github.com/gibbok/animatelo">Animatelo</a></em></p>
+</blockquote>
+<p>It’s also a porting to the Web Animations API of the Animate.css
+project examined earlier.</p>
+<p>It’s a great option if you need to add a bit more dynamism to your
+CSS animations.</p>
+<p>Below is a snippet taken from the library’s docs to show you the
+basic usage:</p>
+<pre class="codeblock"><code>&lt;!-- Include the polyfill --&gt;
+&lt;script src=&quot;//cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Include Animatelo --&gt;
+&lt;script src=&quot;//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Set up a target to animate --&gt;
+&lt;h1 id=&quot;hello&quot;&gt;Hello world!&lt;/h1&gt;
+
+&lt;!-- Animate! --&gt;
+&lt;script&gt;
+  window.animatelo.flip(&#39;#hello&#39;);
+&lt;/script&gt;</code></pre>
+<p>Here are a couple of things to notice:</p>
+<ul>
+<li>Since Animatelo uses the <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API">Web
+Animations API</a>, it needs a polyfill, at least until wider <a
+href="https://caniuse.com/#search=web%20animations%20api">browser
+support becomes available</a></li>
+<li>To set an element in motion, the syntax above with your chosen
+pre-built animation and a reference to your element is all you need.
+More generally, structure your code like this:
+<code>window.animatelo.animation(selector, options)</code>.</li>
+</ul>
+<p>The options Animatelo makes available are:</p>
+<ul>
+<li><code>id</code> (optional): a DOM string you can use to reference
+your animation, which is specific to Animate.css.</li>
+<li><code>delay</code> (optional): the number of milliseconds you want
+to delay the start of the animation. It defaults to 0.</li>
+<li><code>direction</code> (optional): you can set this value to
+<code>normal</code> (the animation runs forward), <code>reverse</code>
+(the animation runs backwards), <code>alternate</code> (the animation
+switches direction after each iteration), <code>alternate-reverse</code>
+(the animation runs backwards and switches direction after each
+iteration).</li>
+<li><code>duration</code> (optional): the number of milliseconds your
+animation lasts. It defaults to 1000 milliseconds.</li>
+<li><code>fill</code> (optional): you can set this option to
+<code>backwards</code> (you can see the animation’s effect before the
+animation even starts playing), <code>forwards</code> (the animation’s
+effects are retained after the animation has finished playing), or
+<code>both</code>, which is the default value.</li>
+<li><code>iterations</code> (optional): the number of times you want
+your animation to repeat. 1 is the default value, but you can pick any
+other number, and if you want your animation to repeat indefinitely,
+just set it to <code>infinite</code>.</li>
+</ul>
+<p>You can also use the <code>onfinish</code> property to trigger an
+animation as soon as another one completes:</p>
+<pre class="codeblock"><code>const anim1 = window.animatelo.shake(&#39;#headline1&#39;, {
+  delay: 500,
+  duration: 1500
+})[0];
+anim1.onfinish = function() {
+  const anim2 = window.animatelo.wobble(&#39;#headline2&#39;, {
+    duration: 1500
+  })[0];
+};</code></pre>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p>Since Vue.js is so awesome for animation, making Animatelo work with
+Vue is also quite straightforward. Check out this cute entrance/exit
+effect and have fun deconstructing the code: See the Pen <a
+href="https://codepen.io/SitePoint/pen/PXzwwZ/">Animatelo + Vue
+Demo</a></p>
+</div>
+</section>
+<h2 id="jsant3-ch2.xhtml_pose-js">#3 Pose.js</h2>
+<p><a href="https://popmotion.io/pose/">Pose.js</a> is an intuitive
+animation library tailor made for Vue, React and React Native. The
+documentation’s <a
+href="https://popmotion.io/pose/learn/vue-get-started">opening lines</a>
+describe it as follows:</p>
+<blockquote>
+<p>Pose for Vue is a declarative motion system that combines the
+simplicity of CSS transitions with the power and flexibility of
+JavaScript.</p>
+</blockquote>
+<p>The way this library works is by defining possible states, or poses,
+for your component, a bit like CSS animations.</p>
+<p>Pose has got tons of features, so let’s start with a simple example
+of a red box that scales up and then down on a click event:</p>
+<pre class="codeblock"><code>new Vue({
+  el: &#39;#app&#39;,
+  data() {
+    return {
+      isVisible: false,
+      moving: true
+    }
+  },
+  components: {
+    Box: posed.div({
+      pressable: true,
+      init: {scale: 1},
+      press: {scale: 2}
+    })
+  }
+});</code></pre>
+<p>Inside your component’s JS section, or in the case of this simple
+demo inside the Vue instance, you need to add a <code>components</code>
+section. You then use <code>posed.</code> plus the name of the element
+you want to animate. The magic of <code>posed</code> is that it allows
+you to create animated versions of any HTML or SVG element. For example,
+<code>posed.div()</code> lets you build an animated div. I called the
+component that represents this animated div <code>Box</code>, but you
+can call it whatever you prefer.</p>
+<p>Next, you add some properties that control your animation. The ones I
+used above are just a tiny fraction of what Pose.js makes available, and
+you can already achieve a nice effect with very little code. Let’s go
+through them one by one:</p>
+<ul>
+<li><code>pressable</code> set to <code>true</code> indicates that the
+element can react to mouse and touch down events</li>
+<li><code>init</code> allows you to set an initial CSS. property to a
+certain initial value, which then gets modified through the
+animation.</li>
+<li><code>press</code> lets you set your chosen CSS property to the
+value you want the element to animate to when pressed (either by a mouse
+or touch down event). Pose makes available other cool interactive
+options like drag, hover, and focus.</li>
+</ul>
+<p>In the template section, you add the Box component like this:</p>
+<pre class="codeblock"><code>&lt;div id=&quot;app&quot;&gt;
+  &lt;Box class=&quot;box&quot;&gt;&lt;/Box&gt;
+&lt;/div&gt;</code></pre>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p>Check out what the animation looks like in this <a
+href="https://codepen.io/SitePoint/pen/YdWPPm/">live demo.</a></p>
+</div>
+</section>
+<p>You can also configure custom transitions and take full control of
+the animation:</p>
+<pre class="codeblock"><code>transition: {
+  default: { ease: &quot;linear&quot; }
+}</code></pre>
+<p>Inside each transition object you can specify a few properties like
+<code>ease</code>, <code>duration</code>, <code>delay</code>, and so on.
+The <code>ease</code> property affects the speed of the animation over
+the course of its duration and it’s super important if you aim for
+professional-looking animations. Pose offers a number of ease
+values:</p>
+<ul>
+<li>linear</li>
+<li>easeIn, easeOut, easeInOut</li>
+<li>circIn, circOut, circInOut</li>
+<li>backIn, backOut, backInOut</li>
+<li>anticipate</li>
+<li>an array of numbers to create a cubic bezier easing function</li>
+</ul>
+<p>The default transition is tween, but by setting the <code>type</code>
+property you’ll also find other fun choices like:</p>
+<ul>
+<li><strong>Spring</strong>, which maintains velocity between animations
+to create engaging motions that you can further fine-tune by adjusting
+<code>stiffness</code>, <code>mass</code>, and <code>damping</code>
+properties</li>
+<li><strong>Decay</strong> reduces the velocity of an animation over its
+duration and it works beautifully for the special <code>dragEnd</code>
+pose that fires when users stop dragging an element on the page</li>
+<li><strong>Keyframes</strong> allow you to set up a series of tween
+values</li>
+<li><strong>Physics</strong> lets you simulate effects like velocity,
+friction, and acceleration.</li>
+</ul>
+<p>Another feature of Pose that I like a lot is the way you can
+coordinate animations between parent and multiple children with ease.
+Whenever a posed component changes its <code>pose</code>, the change
+propagates through its children—even those which aren’t direct
+children.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p><a href="https://codepen.io/SitePoint/pen/bOeNVg/">Experiment with
+this demo</a> to get familiar with how Pose quickly animates all the
+list items inside a togglable sidebar component.</p>
+</div>
+</section>
+<h2 id="jsant3-ch2.xhtml_greensock-gsap-">#4 GreenSock (GSAP)</h2>
+<p><a href="https://greensock.com/">GreenSock</a>, also known as GSAP
+(GreenSock Animation Platform) is a fantastic library for the creation
+of “ultra high-performance, professional-grade animation for the modern
+web.”</p>
+<p>When it comes to web animation, there’s almost nothing that you can’t
+do with GSAP. Here are some of what I think are its strongest
+points:</p>
+<ul>
+<li>You can learn it in no time. Its API is intuitive and
+straightforward.</li>
+<li>The docs are excellent.</li>
+<li>It’s a mature library that’s been around for years.</li>
+<li>It’s got great cross-browser support that goes back to IE6!</li>
+<li>It works like a charm with HTML5, SVG, Canvas, jQuery, React, Vue,
+and more.</li>
+<li>It’s fast.</li>
+<li>It’s continually being maintained and updated.</li>
+<li>It’s got a super helpful community for support.</li>
+</ul>
+<p>The API features you’re going to use the most are:</p>
+<ul>
+<li><a href="https://greensock.com/docs/TweenLite">TweenLite</a>, which
+is GSAP’s foundation. An instance of this object handles tweening one or
+more properties of any object over time.</li>
+<li><a href="https://greensock.com/docs/TweenMax">TweenMax</a>, which
+extends TweenLite adding extra bells and whistles.</li>
+<li><a href="https://greensock.com/docs/TimelineLite">TimelineLite</a>,
+a powerful sequencing tool inside which you can wrap tweens and other
+timelines to get full control of complex animations.</li>
+<li><a href="https://greensock.com/docs/TimelineMax">TimelineMax</a>,
+which extends TimelineLite adding more goodies like <code>repeat</code>,
+<code>repeatDelay</code>, <code>yoyo</code>, etc.</li>
+</ul>
+<p>The syntax you need to use GSAP’s API is very similar in all four of
+the above objects, which really helps getting familiar with the library
+in a relatively short period of time:</p>
+<pre class="codeblock"><code>/* tween an element from full opacity to opacity 0
+in 1 second with a 2 second&#39;s delay */
+TweenLite.to(element,  1,  {opacity: 0, delay: 2});
+TweenMax.to(element,  1,  {opacity: 0, delay: 2});
+
+/* create an instance of TimelineLite called tl
+ which repeats the initial animation twice with 1
+ second&#39;s delay in between tweens */
+const tl =  new  TimelineLite({repeat: 2, repeatDelay: 1});
+// add a TweenLite instance to the timeline that animates
+// an element from full opacity to opacity 0 over 1 seconds
+tl.add(  TweenLite.to(element,  1,  {opacity: 0})  );
+
+// do the same as above, but using TimelineMax
+const tl =  new  TimelineMax({repeat: 2, repeatDelay: 1});
+tl.add(  TweenLite.to(element,  1,  {opacity: 0})  );</code></pre>
+<p>You can animate a property towards an end value, in which case you
+use <code>.to()</code> like in the snippets above. If you want to define
+the starting values instead of the end values, use <code>.from()</code>.
+Finally, to specify both starting and ending values of the tween, use
+<code>.fromTo()</code>.</p>
+<p>Check out <a href="https://greensock.com/get-started-js">Getting
+Started with GSAP</a> on the library’s website for a friendly
+introduction.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p>Try playing with <a
+href="https://codepen.io/SitePoint/pen/dwXPYB/">this demo to get a sense
+of what you can do with GSAP and Vue</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch2.xhtml_anime-js">#5 Anime.js</h2>
+<p><a href="http://animejs.com/">Anime.js</a> is a lightweight and fast
+animation engine created by Julian Garnier. This is also a full-featured
+library you can painlessly integrate with Vue.js to create some really
+cool web animations.</p>
+<p>Anime works with CSS properties, CSS transforms, SVGs, DOM attributes
+and JavaScript objects. It’s also very well supported and the <a
+href="http://animejs.com/documentation/">docs</a> are pretty sleek.</p>
+<p>Here’s a snippet taken from the library’s GitHub page to get you
+started with the syntax:</p>
+<pre class="codeblock"><code>anime({
+  targets: &#39;div&#39;,
+  translateX: [
+    { value: 100, duration: 1200 },
+    { value: 0, duration: 800 }
+  ],
+  rotate: &#39;1turn&#39;,
+  backgroundColor: &#39;#FFF&#39;,
+  duration: 2000,
+  loop: true
+});</code></pre>
+<ul>
+<li><code>targets</code> lets you specify the DOM elements you want to
+animate.</li>
+<li><code>translateX</code>, <code>rotate</code>, and
+<code>backgroundColor</code> indicate the properties on the element that
+you want to animate. Although this is not specific to Anime but to
+JavaScript more generally, notice how the CSS compound names, which in
+your CSS document are usually hyphenated—such as
+<code>background-color</code>—in JavaScript are camelcased:
+<code>backgroundColor</code>.</li>
+<li>Also, notice how <code>translateX</code> has been given specific
+<code>duration</code> values, both with respect to the initial and
+ending states and with respect to the other properties on the same
+object—for example, <code>rotate</code> and
+<code>backgroundColor</code>.</li>
+<li><code>duration</code> indicates how long the tween is going to
+last.</li>
+<li><code>loop</code> set to true means that the animation keeps
+repeating indefinitely.</li>
+</ul>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<p><a href="https://codepen.io/SitePoint/pen/RERNaN/">Here’s a live demo
+of Anime.js with Vue in action</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch2.xhtml_conclusion">Conclusion</h2>
+<p>I find Vue to be a truly animation-friendly framework. You’ve seen
+how you can create nice animation effects quite straightforwardly both
+with and without the use of an external library. However, integrating
+any one of the libraries listed here with Vue will give you animation
+super powers. There’s no end to what you can come up with and share with
+the world!</p>
+</div>
+</div>
+<p><span id="jsant3-ch3.xhtml"></span></p>
+<div id="jsant3-ch3.xhtml_sbo-rt-content" class="calibre">
+<div id="jsant3-ch3.xhtml_calibre_toc_3" class="page-frontmatter">
+<h1 id="jsant3-ch3.xhtml_cloudhost">Chapter 3: Build Your First Static
+Site with VuePress</h1>
+<h3 class="calibre8 sigil_not_in_toc">by Ivaylo Gerchev</h3>
+<p>In this tutorial, we’ll build a static site with <a
+href="https://vuepress.vuejs.org/">VuePress</a> and we’ll deploy it to
+<a href="https://pages.github.com/">GitHub Pages</a>. The site will be a
+simple, technical blog which offers the possibility to organize and
+navigate the content by collections, categories, and tags.</p>
+<section class="sigil_not_in_toc box github">
+<h4 class="sigil_not_in_toc">Code and Live Site</h4>
+<div class="body">
+<p>The code for this tutorial <a
+href="https://github.com/sitepoint-editors/vuepress">can be found on
+GitHub</a>. You can also view <a
+href="https://sitepoint-editors.github.io/vuepress/">the site running
+live on GitHub Pages</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch3.xhtml_what-is-vuepress-">What Is VuePress?</h2>
+<p>VuePress is a simple yet powerful static site generator, powered by
+<a href="https://vuejs.org/">Vue.js</a>. It was created by Evan You (the
+creator of Vue), who made it to facilitate the writing of technical,
+documentation-heavy sites for the Vue ecosystem. But as we’ll see in
+this tutorial, with a little tweaking the use cases for VuePress can be
+broadened.</p>
+<p>A site made with VuePress is served as a single page application
+(SPA), powered by Vue, <a href="https://router.vuejs.org/">Vue
+Router</a>, and <a href="https://webpack.js.org/">webpack</a> as
+underlying technologies. As an SPA, VuePress uses a mixture of Markdown
+files and Vue templates/components to generate a static HTML site.</p>
+<h2 id="jsant3-ch3.xhtml_the-benefits-of-a-static-site-">The Benefits of
+a Static Site.</h2>
+<p>A static site has some significant benefits:</p>
+<ul>
+<li><strong>Simplicity</strong>. A static site is written in plain,
+simple HTML files. As all files are physically present on the server—in
+contrast to a database-driven site—you can move them, deploy them, and
+back them up quickly and easily.</li>
+<li><strong>Speed</strong>. Because the files are already compiled and
+ready to be served, the page load time of a static site is pretty
+fast.</li>
+<li><strong>SEO friendly</strong>. Metadata-rich pages plus
+human-readable URLs and plain text content make a static site extremely
+accessible to search engines.</li>
+<li><strong>Security</strong>. A static site is far more secure than a
+dynamic one. According to a <a
+href="https://www.wpwhitesecurity.com/statistics-70-percent-wordpress-installations-vulnerable/">WP
+WhiteSecurity report</a>, about 70% of WordPress sites are at risk of
+getting hacked. Because a static site doesn’t rely on a database, CMS
+and/or plugins, the chances of getting hacked is minimal.</li>
+<li><strong>Salability</strong>. A static site can be easily scaled up
+by just increasing the bandwidth.</li>
+<li><strong>Version Control Support</strong>. Adding version control to
+a static site is super easy.</li>
+</ul>
+<h2 id="jsant3-ch3.xhtml_why-use-vuepress-">Why Use VuePress?</h2>
+<p>There’s an abundance of <a href="https://www.staticgen.com/">static
+site generators</a> out there. So why might we choose VuePress over the
+others options?</p>
+<p>Well, for me, these are the two strongest selling points of
+VuePress:</p>
+<ol>
+<li>VuePress is built with Vue. This means that we can use all the
+superpowers of Vue while we build our site.</li>
+<li>We can add a VuePress site to any existing project, at any
+time.</li>
+</ol>
+<p>The above benefits are already strong enough, but let’s explore the
+full feature palette that makes VuePress shine:</p>
+<ul>
+<li>There’s close integration between Vue templates/components and
+Markdown files. We can use Vue templates/components directly in
+Markdown, which give us great flexibility.</li>
+<li>VuePress uses <a
+href="https://github.com/markdown-it/markdown-it">markdown-it</a>, one
+of the best Markdown parsers out there, which has a rich <a
+href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">plugin
+ecosystem</a>. Some of its plugins, optimized for technical
+documentation, are already bundled with VuePress. And we can <a
+href="https://v0.vuepress.vuejs.org/guide/markdown.html#advanced-configuration">add
+more</a> if we want.</li>
+<li>VuePress has a Vue-powered <a
+href="https://v0.vuepress.vuejs.org/guide/custom-themes.html">custom
+theme system</a>, with which we can create a full-featured theme by
+using <a
+href="https://vuejs.org/v2/guide/single-file-components.html">Vue SFC
+(single file components)</a>. The sky’s the limit.</li>
+<li>VuePress offers multi-language support. So we can turn our site
+multilingual fairly easily.</li>
+<li>VuePress has Google Analytics integration.</li>
+<li>VuePress has a responsive default theme, specifically tailored for
+technical documentation, with a great set of features out of the box.
+These include:
+<ul>
+<li>Optional home page</li>
+<li>Header-based search functionality (optional <a
+href="https://community.algolia.com/docsearch/">Algolia search</a>)</li>
+<li>Customizable navbar and searchbar</li>
+<li>Auto-generated GitHub link and page edit links.</li>
+</ul></li>
+</ul>
+<h2 id="jsant3-ch3.xhtml_getting-started">Getting Started</h2>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">VuePress Versions</h4>
+<div class="body">
+<p>In this tutorial, we’ll use the stable VuePress version, which is
+<strong>0.14.8</strong> at the time of writing. There is also a new
+version, with great new features, including ones for blogging, but it’s
+still in alpha stage and it’s not secure to be used yet.</p>
+</div>
+</section>
+<p>Before we get started, you’ll need a recent version of Node.js
+installed on your system (version 8 or greater). If you don’t have Node
+installed, you can download the binaries for from the <a
+href="https://nodejs.org/">official website</a>, or use a <a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">version
+manager</a>. This is probably the easiest way, as it allows you to
+manage multiple versions of Node on the same machine.</p>
+<p>Next, create a new directory <code>vuepress-blog</code> and
+initialize a new Node project inside:</p>
+<pre class="codeblock"><code>mkdir vuepress-blog &amp;&amp; cd vuepress-blog
+npm init -y</code></pre>
+<p>Next, install VuePress locally, as a dependency:</p>
+<pre class="codeblock"><code>npm install -D vuepress</code></pre>
+<p>Finally, edit the scripts section of the <code>package.json</code>
+file to include the <code>dev</code> and <code>build</code>
+commands:</p>
+<pre class="codeblock"><code>&quot;scripts&quot;: {
+  &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+  &quot;docs:dev&quot;: &quot;vuepress dev docs&quot;,
+  &quot;docs:build&quot;: &quot;vuepress build docs&quot;
+},</code></pre>
+<p>Now we can run the dev server with the following command:</p>
+<pre class="codeblock"><code>npm run docs:dev</code></pre>
+<p>If you’ve set up everything correctly, the site will build and be
+available at <a href="http://localhost:8080">http://localhost:8080</a>.
+Currently there isn’t a whole lot to see apart from a 404 message, but
+we’ll change that in the next sections.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_exploring-the-directory-structure-of-the-final-project">Exploring
+the Directory Structure of the Final Project</h3>
+<p>Right now, our project is empty. But, in this section I want to give
+you a glimpse of the directory structure of the final project. Our site
+will be built inside a <code>docs</code> directory. The docs directory
+will contain a <code>blog</code> directory and a <code>.vuepress</code>
+directory.</p>
+<pre class="codeblock"><code>.
+├── docs
+│   ├── blog
+│   ├── README.md
+│   └── .vuepress
+├── package.json
+└── package-lock.json</code></pre>
+<p>As you can see, the <code>docs</code> directory, serves as a root of
+our VuePress site. A <code>README.md</code> file is required for the
+root directory and for all directories containing Markdown files. It
+will be automatically transformed into an <code>index.html</code> file,
+which will serve as a starting point/page for the current directory.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_the-blog-directory">The <code>blog</code>
+Directory</h3>
+<p>The <code>blog</code> directory will house all our blog posts and
+content. This is what it will look like:</p>
+<pre class="codeblock"><code>.
+├── css
+│   ├── lists.md
+│   └── README.md
+├── html
+│   ├── lists.md
+│   └── README.md
+├── http.md
+├── javascript
+│   ├── functions.md
+│   ├── objects.md
+│   ├── README.md
+│   ├── strings.md
+│   └── variables.md
+└── README.md</code></pre>
+<p>There’s not too much going on here. The posts are represented by
+Markdown files and the three subfolders (<code>css</code>,
+<code>html</code> and <code>javascript</code>) represent collections.
+You’ll hear more about these later.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_the-vuepress-directory">The <code>.vuepress</code>
+Directory</h3>
+<p>This will contain all files and folders necessary for the development
+and building of our site. This is what it will look like:</p>
+<pre class="codeblock"><code>.
+├── components
+│   ├── Footer.vue
+│   ├── Hero.vue
+│   ├── Message.vue
+│   └── Navbar.vue
+├── config.js
+└── theme
+    ├── layouts
+    │   ├── Blog.vue
+    │   ├── Home.vue
+    │   └── Post.vue
+    ├── Layout.vue
+    └── styles
+        ├── code.styl
+        └── custom-blocks.styl</code></pre>
+<p>As you can see, the <code>.vuepress</code> directory contains the
+following:</p>
+<ul>
+<li>A <code>components</code> directory for our custom components. All
+components put in this folder are globally registered, and <a
+href="https://vuejs.org/v2/guide/components-dynamic-async.html">dynamic
+and async</a> by default.</li>
+<li>A <code>config.js</code> file, used for site and theme
+configuration.</li>
+<li>A <code>theme</code> directory to hold our custom theme.</li>
+</ul>
+<p>The <code>theme</code> directory contains:</p>
+<ul>
+<li>a <code>layouts</code> directory, where we put our custom
+layouts</li>
+<li>a <code>Layout.vue</code> file, which is required to create a custom
+theme</li>
+<li>a <code>styles</code> directory for the theme’s styles</li>
+</ul>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_following-along-at-home">Following Along at
+Home</h3>
+<p>If you’d like to follow along with this tutorial, it’d be a good idea
+to create most of these folders and files now. For those of you on
+’nix-based systems, you can do that with the following code.</p>
+<p><strong>Project root</strong></p>
+<pre class="codeblock"><code>mkdir -p docs/{blog,.vuepress}
+touch docs/README.md</code></pre>
+<p><strong><code>blog</code> directory</strong></p>
+<pre class="codeblock"><code>mkdir docs/blog/{css,html,javascript}
+touch docs/blog/{css,html}/{lists.md,README.md}
+touch docs/blog/javascript/{functions.md,objects.md,README.md,strings.md,variables.md}
+touch docs/blog/{README.md,http.md}</code></pre>
+<p>Please note that we won’t fill all of these posts (Markdown files)
+with content during the tutorial. That will be left to you.</p>
+<p><strong><code>.vuepress</code> directory</strong></p>
+<pre class="codeblock"><code>mkdir docs/.vuepress/{components,theme}
+touch docs/.vuepress/components/{Footer.vue,Hero.vue,Message.vue,Navbar.vue}
+touch docs/.vuepress/config.js
+mkdir docs/.vuepress/theme/{layouts,styles}
+touch docs/.vuepress/theme/Layout.vue
+touch docs/.vuepress/theme/layouts/{Blog.vue,Home.vue,Post.vue}
+touch docs/.vuepress/theme/styles/{code.styl,custom-blocks.styl}</code></pre>
+<p>Alternatively, you could <a
+href="https://github.com/sitepoint-editors/vuepress">clone the repo</a>
+and work with the finished project.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_configuring-your-site-theme">Configuring Your
+Site/Theme</h3>
+<p>Finally, before we start building the blog, let’s establish some
+settings. In <code>.vuepress/config.js</code>:</p>
+<pre class="codeblock"><code>module.exports = {
+  title: &quot;Front-end Web School&quot;,
+  description: &quot;Learn HTML, CSS, and JavaScript&quot;,
+  head: [
+    [
+      &quot;link&quot;,
+      {
+        rel: &quot;stylesheet&quot;,
+        href:
+          &quot;https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css&quot;
+      }
+    ],
+    [
+      &quot;link&quot;,
+      {
+        rel: &quot;stylesheet&quot;,
+        href: &quot;https://use.fontawesome.com/releases/v5.6.1/css/all.css&quot;
+      }
+    ]
+  ]
+};</code></pre>
+<p>Here, we provide a site title and description. And we also add <a
+href="https://bulma.io/">Bulma</a> and <a
+href="https://fontawesome.com/">Font Awesome</a> to the project. They’ll
+be injected into the head tag of each compiled HTML page. We’ll use them
+to develop our custom theme.</p>
+<h2 id="jsant3-ch3.xhtml_building-your-site">Building Your Site</h2>
+<p>Now we’re going to build our blog. In the version we’ll be using,
+VuePress doesn’t offer blogging features (such as tags and categories),
+but we’ll try to improvise.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_preparing-the-blog-content">Preparing the Blog
+Content</h3>
+<p>Let’s start by preparing some content for our blog.</p>
+<p>In the <code>blog</code> directory, we have <code>html</code>,
+<code>css</code>, and <code>javascript</code> subdirectories. Each blog
+subdirectory will play the role of a collection. So we’ll have the
+ability to organize the blog’s content by collections and to explore
+each collection individually.</p>
+<p>The <code>blog</code> directory and all of its subdirectories each
+have a <code>README.md</code> file. This file will contain only a <a
+href="https://v0.vuepress.vuejs.org/guide/markdown.html#front-matter">Front
+Matter</a> section with a <code>title</code> property containing the
+name of the directory. So for the <code>blog</code> directory, the
+<code>README.md</code> file will contain:</p>
+<pre class="codeblock"><code>---
+title: Blog
+---</code></pre>
+<p>For the <code>css</code> directory:</p>
+<pre class="codeblock"><code>---
+title: CSS
+---</code></pre>
+<p>And so on.</p>
+<p>Next, let’s look at our blog posts—the Markdown files. Each file must
+contain a <code>Front Matter</code> section, where we put the necessary
+settings and metadata in <a
+href="https://en.wikipedia.org/wiki/YAML">YAML</a> format. Here’s an
+example from the <code>functions.md</code> file:</p>
+<pre class="codeblock"><code>---
+title: Learn JavaScript Functions
+date: 2018-12-12
+categories: [Intermediate]
+tags: [JavaScript, Function, Callback Function]
+---
+
+&lt;!-- Your Markdown content here --&gt;</code></pre>
+<section class="sigil_not_in_toc box github">
+<h4 class="sigil_not_in_toc">Grabbing the Content</h4>
+<div class="body">
+<p>As mentioned above, we’ll not fill out all of the blog posts here. If
+you’d like to copy any of the content from the finished site, <a
+href="https://github.com/sitepoint-editors/vuepress/tree/master/docs/blog">you
+can find it here</a>.</p>
+</div>
+</section>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_creating-the-layout-vue-component">Creating the
+<code>Layout.vue</code> Component</h3>
+<p>After we get our content done, let’s start creating our custom theme.
+In <code>.vuepress/theme/Layout.vue</code> add this:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;Navbar/&gt;
+    &lt;Component :is=&quot;currentLayout&quot;/&gt;
+    &lt;Footer/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Home from &quot;./layouts/Home.vue&quot;;
+import Blog from &quot;./layouts/Blog.vue&quot;;
+import Post from &quot;./layouts/Post.vue&quot;;
+export default {
+  components: {
+    Home,
+    Blog,
+    Post
+  },
+  computed: {
+    currentLayout() {
+      const { path } = this.$page;
+      if (path === &quot;/&quot;) {
+        return &quot;Home&quot;;
+      } else if (path.endsWith(&quot;/&quot;)) {
+        return &quot;Blog&quot;;
+      } else if (path.endsWith(&quot;.html&quot;)) {
+        return &quot;Post&quot;;
+      }
+    }
+  }
+};
+&lt;/script&gt;</code></pre>
+<p><code>Layout.vue</code> will be invoked for each Markdown file. It’s
+like a root component in a Vue application. The code in this file checks
+the current page’s path (via the <code>currentLayout</code> computed
+property) and according to the result loads the needed layout. For that,
+we use Vue’s built-in <code>&lt;Component/&gt;</code> element, which
+swaps the displayed component via its <code>is</code> property. In the
+template, we also put <code>&lt;Navbar/&gt;</code> and
+<code>&lt;Footer/&gt;</code> components, which we’ll be creating in the
+following section.</p>
+<p>VuePress exposes two variables—<code>this.$page</code> and
+<code>this.$site</code>—which give us access to <a
+href="https://v0.vuepress.vuejs.org/guide/custom-themes.html#site-and-page-metadata">data
+about the page and the site</a> respectively. In
+<code>currentLayout</code>, <code>this.$page</code> is used to get the
+path of the current page.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_creating-the-partial-components">Creating the
+Partial Components</h3>
+<p>In this section, we’ll look at the partial components, which we’ll
+import into our layout. These partials are in the
+<code>.vuepress/components</code> folder.</p>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_navbar-vue">Navbar.vue</h4>
+<p>In this component, we use <a
+href="https://bulma.io/documentation/components/navbar/">Bulma’s Navbar
+component</a> to create a navbar for our blog:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;nav class=&quot;navbar is-dark&quot; role=&quot;navigation&quot; aria-label=&quot;main navigation&quot;&gt;
+    &lt;div class=&quot;navbar-brand is-marginless&quot;&gt;
+      &lt;a class=&quot;navbar-item&quot; :href=&quot;$withBase(&#39;/&#39;)&quot;&gt;
+        &lt;span class=&quot;icon is-large has-text-warning&quot;&gt;
+          &lt;i class=&quot;fas fa-2x fa-laptop-code&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a
+        role=&quot;button&quot;
+        class=&quot;navbar-burger&quot;
+        :class=&quot;{&#39;is-active&#39;: isActive}&quot;
+        @click=&quot;isActive = !isActive&quot;
+        aria-label=&quot;menu&quot;
+        aria-expanded=&quot;false&quot;
+        data-target=&quot;navbarMenu&quot;
+      &gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+        &lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div id=&quot;navbarMenu&quot; class=&quot;navbar-menu&quot; :class=&quot;{&#39;is-active&#39;: isActive}&quot;&gt;
+      &lt;div class=&quot;navbar-end&quot;&gt;
+        &lt;a class=&quot;navbar-item&quot; :href=&quot;$withBase(&#39;/&#39;)&quot;&gt;HOME&lt;/a&gt;
+        &lt;a class=&quot;navbar-item&quot; :href=&quot;$withBase(&#39;/blog/&#39;)&quot;&gt;BLOG&lt;/a&gt;
+        &lt;a
+          class=&quot;navbar-item&quot;
+          :href=&quot;$withBase(collection.path)&quot;
+          v-for=&quot;collection in collections&quot;
+        &gt;{{collection.path | formatNavItems}}&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      isActive: false
+    };
+  },
+  computed: {
+    collections() {
+      let pages = this.$site.pages.filter(page =&gt; {
+        return page.path.match(/(blog\/).+(\/$)/);
+      });
+      return pages;
+    }
+  },
+  filters: {
+    formatNavItems(value) {
+      if (!value) return &quot;&quot;;
+      let pos = value.search(/\w+\/$/);
+      let res = value.slice(pos, value.length - 1);
+      return res.toUpperCase();
+    }
+  }
+};
+&lt;/script&gt;
+
+&lt;style&gt;
+.navbar {
+  padding-right: 1em;
+}
+&lt;/style&gt;</code></pre>
+<p>In this file, we create a computed <code>collections</code> property,
+which filters all pages and matches only the blog directory and
+subdirectories. We use that property in the template to populate the
+navbar with a link for each collection. We also use the <a
+href="https://v0.vuepress.vuejs.org/guide/assets.html#base-url">withBase</a>
+built-in helper in order to have proper links for our non-root URL when
+we deploy it. We set the <code>Home</code> and <code>Blog</code> links
+manually.</p>
+<p>We also create and use a <code>formatNavItems</code> filter, which
+extracts the name of the directory from the path and uppercases it.</p>
+<p>The <code>isActive</code> data property is used to toggle the navbar
+menu on mobile by binding it with the <code>is-active</code> Bulma
+class.</p>
+<p>If you run the dev server at this point (using
+<code>npm run docs:dev</code>) and navigate to <a
+href="http://localhost:8080">http://localhost:8080</a>, you should be
+able to see the navbar component rendered to the page.</p>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_hero-vue">Hero.vue</h4>
+<p>In this component, we use the <a
+href="https://bulma.io/documentation/layout/hero/">Bulma hero
+component</a>:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;section class=&quot;hero is-success&quot;&gt;
+    &lt;div class=&quot;hero-body&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h1 class=&quot;title&quot;&gt;Front-end Web School&lt;/h1&gt;
+        &lt;h2 class=&quot;subtitle&quot;&gt;Learn to code in HTML, CSS, and JavaScript&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/template&gt;</code></pre>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_message-vue">Message.vue</h4>
+<p>In this component, we create a message box, which we’ll display on
+the home later on. We use <a
+href="https://bulma.io/documentation/components/message/">Bulma’s
+message component</a> for this:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;article class=&quot;message is-info&quot; :class=&quot;{hidden: dismiss}&quot;&gt;
+    &lt;div class=&quot;message-header&quot;&gt;
+      &lt;p&gt;Welcome to Our Blog&lt;/p&gt;
+      &lt;button @click=&quot;hide&quot; class=&quot;delete&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;message-body&quot;&gt;Lorem ipsum dolor sit amet...&lt;/div&gt;
+  &lt;/article&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      dismiss: false
+    };
+  },
+  methods: {
+    hide() {
+      this.dismiss = true;
+    }
+  }
+};
+&lt;/script&gt;
+
+&lt;style&gt;
+.hidden {
+  display: none;
+}
+&lt;/style&gt;
+</code></pre>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_footer-vue">Footer.vue</h4>
+<p>This is a simple footer created with <a
+href="https://bulma.io/documentation/layout/footer/">Bulma’s footer
+component</a>:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;footer class=&quot;footer has-background-grey-darker&quot;&gt;
+    &lt;div class=&quot;content has-text-centered&quot;&gt;
+      &lt;p&gt;Copyright 2018 All rights reserved.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/template&gt;
+
+&lt;style&gt;
+.footer {
+  margin-top: 2em;
+}
+&lt;/style&gt;</code></pre>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_creating-the-layout-components">Creating the Layout
+Components</h3>
+<p>Now it’s time to create the custom layouts for our blog. In this
+section, we’ll look at the files in the
+<code>.vuepress/theme/layouts</code> folder: <code>Home.vue</code>,
+<code>Blog.vue</code>, and <code>Post.vue</code>.</p>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_home-vue">Home.vue</h4>
+<p>This will be our home template. It’s super simple:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;Hero/&gt;
+    &lt;Content/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+<p>We just add the <code>&lt;Hero/&gt;</code> partial and the <a
+href="https://v0.vuepress.vuejs.org/guide/custom-themes.html#content-outlet">VuePress’
+<code>&lt;Content/&gt;</code> global component</a>.</p>
+<p>Take a second to check your progress at this point. You should see
+the site being rendered with a nice hero element. If you test it out in
+your browser, you should see that it’s responsive, too.</p>
+<img src="Images/Front-end-Web-School.png" width="1111" height="510" />
+<!-- ![Front-end-Web-School](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/12/1546185754Front-end-Web-School.png) -->
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_blog-vue">Blog.vue</h4>
+<p>This is our most complex component, which will render the blog posts
+for each collection. It will also find and filter the taxonomies
+(categories and tags) we set in the <code>Front Matter</code> sections
+of the Markdown files:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;content&quot;&gt;
+      &lt;h1&gt;{{ $page.frontmatter.title }}&lt;/h1&gt;
+      &lt;Content/&gt;
+    &lt;/div&gt;
+    &lt;div v-if=&quot;posts.length&quot;&gt;
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;!-- Filter controls --&gt;
+        &lt;div class=&quot;column is-3&quot;&gt;
+          &lt;nav class=&quot;panel&quot;&gt;
+            &lt;p class=&quot;panel-heading&quot;&gt;Categories&lt;/p&gt;
+            &lt;a
+              class=&quot;panel-block is-capitalized&quot;
+              :class=&quot;{&#39;is-active&#39;:i == currentCat}&quot;
+              v-for=&quot;cat, i in findTaxonomy(&#39;categories&#39;)&quot;
+              @click.prevent=&quot;filterTaxonomies(&#39;categories&#39;, cat);currentCat = i;currentTag = null&quot;
+            &gt;
+              &lt;span class=&quot;panel-icon&quot;&gt;
+                &lt;i class=&quot;fas fa-tasks&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              {{cat}}
+            &lt;/a&gt;
+          &lt;/nav&gt;
+          &lt;nav class=&quot;panel&quot;&gt;
+            &lt;p class=&quot;panel-heading&quot;&gt;Tags&lt;/p&gt;
+            &lt;div class=&quot;tags panel-block is-capitalized&quot;&gt;
+              &lt;a
+                v-for=&quot;tag, i in findTaxonomy(&#39;tags&#39;)&quot;
+                @click.prevent=&quot;filterTaxonomies(&#39;tags&#39;, tag);currentTag = i;currentCat = null&quot;
+              &gt;
+                &lt;span class=&quot;tag&quot; :class=&quot;{&#39;has-text-link&#39;:i == currentTag}&quot;&gt;{{tag}}&lt;/span&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;!-- Blog posts --&gt;
+        &lt;div class=&quot;column is-9&quot;&gt;
+          &lt;transition-group tag=&quot;ul&quot; name=&quot;posts&quot;&gt;
+            &lt;li class=&quot;box&quot; v-for=&quot;post in posts&quot; :key=&quot;post.path&quot;&gt;
+              &lt;router-link :to=&quot;post.path&quot;&gt;
+                &lt;div class&gt;
+                  &lt;img v-if=&quot;post.frontmatter.image&quot; :src=&quot;$withBase(post.frontmatter.image)&quot;&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;title is-3&quot;&gt;{{post.frontmatter.title}}&lt;/p&gt;
+                &lt;p class=&quot;subtitle is-6&quot;&gt;
+                  &lt;span class=&quot;icon&quot;&gt;
+                    &lt;i class=&quot;fas fa-calendar-alt&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+                  {{post.frontmatter.date | formatDate}}
+                  &lt;span class=&quot;icon&quot;&gt;
+                    &lt;i class=&quot;fas fa-tags&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+                  &lt;span v-for=&quot;tag in post.frontmatter.tags&quot; class=&quot;tag&quot;&gt;{{tag}}&lt;/span&gt;
+                &lt;/p&gt;
+              &lt;/router-link&gt;
+            &lt;/li&gt;
+          &lt;/transition-group&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data: function() {
+    return {
+      posts: [],
+      currentCat: null,
+      currentTag: null
+    };
+  },
+  created() {
+    this.posts = this.allPosts;
+  },
+  computed: {
+    allPosts() {
+      let currentCollection = this.$page.path;
+      let posts = this.$site.pages
+        .filter(page =&gt; {
+          return page.path.match(
+            new RegExp(`(${currentCollection})(?=.*html$)`)
+          );
+        })
+        .sort((a, b) =&gt; {
+          return new Date(b.frontmatter.date) - new Date(a.frontmatter.date);
+        });
+      return posts;
+    }
+  },
+  filters: {
+    formatDate(value) {
+      let d = new Date(value);
+      return d.toDateString();
+    }
+  },
+  methods: {
+    filterTaxonomies(type, tax) {
+      let currentCollection = this.$page.path;
+      let posts = this.$site.pages.filter(post =&gt; {
+        if (post.frontmatter[type]) {
+          return post.frontmatter[type].includes(tax);
+        }
+      });
+      this.posts = posts;
+    },
+    findTaxonomy(type) {
+      let tax = [];
+      let posts = this.$site.pages.forEach(function(post) {
+        if (post.frontmatter[type]) {
+          tax = tax.concat(post.frontmatter[type]);
+        }
+      });
+      let uniqTax = [...new Set(tax)];
+      return uniqTax;
+    }
+  }
+};
+&lt;/script&gt;
+
+&lt;style&gt;
+.tag {
+  margin: 0 0.3em;
+}
+
+.posts-move {
+  transition: transform 1s;
+}
+
+.posts-enter-active,
+.posts-leave-active {
+  transition: all 0.5s;
+}
+
+.posts-enter,
+.posts-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+&lt;/style&gt;</code></pre>
+<p>In this file, we create a <code>posts</code> data property to hold
+our blog posts. Then, we create an <code>allPosts</code> computed
+property to get all the posts from the current collection and sort them
+by date. We use the <code>created</code> hook to populate the sorted
+posts in the <code>posts</code> data property.</p>
+<p>We then go through the posts with a <code>v-for</code> directive and
+populate each one by extracting data from its <code>Front Matter</code>.
+We use a <code>formatDate</code> filter to display the date in
+human-readable format.</p>
+<p>We implement tags and category features by creating two filters:</p>
+<ul>
+<li><code>filterTaxonomies</code> filters all pages which have a
+particular taxonomy type and search term.</li>
+<li><code>findTaxonomy</code> goes through each page and collects the
+desired taxonomy. Then, it extracts and returns only the unique terms
+from the collected taxonomies.</li>
+</ul>
+<p>The above two filters are used in the template to create the
+<code>Categories</code> and <code>Tags</code> panels, which display all
+existing categories and tags.</p>
+<p>Finally, we use the <a
+href="https://vuejs.org/v2/guide/transitions.html#List-Transitions"><code>&lt;transition-group&gt;</code>
+component</a> to add a smooth transition when we filter the blog posts,
+as well as <code>currentCat</code> and <code>currentTag</code> data
+properties to assign proper active classes to the selected tag or
+category.</p>
+<h4 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_post-vue">Post.vue</h4>
+<p>Now, let’s create the layout for the single post:</p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;h1&gt;{{ $page.frontmatter.title }}&lt;/h1&gt;
+    &lt;Content/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;style&gt;
+.content {
+  margin-top: 2em;
+  padding: 0 2em;
+}
+&lt;/style&gt;</code></pre>
+<p>In the single post layout we just display the title and the
+content.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_adding-some-styles">Adding Some Styles</h3>
+<p>For the Markdown extensions to be properly displayed, we’ll need some
+styling. We’ll steal the necessary styles from the default theme and
+we’ll put them at the end of our <code>Layout.vue</code> component:</p>
+<pre class="codeblock"><code>&lt;style src=&quot;prismjs/themes/prism-tomorrow.css&quot;&gt;&lt;/style&gt;
+&lt;style lang=&quot;stylus&quot;&gt;
+/* colors */
+$accentColor = #3eaf7c;
+$textColor = #2c3e50;
+$borderColor = #eaecef;
+$codeBgColor = #282c34;
+$arrowBgColor = #ccc;
+
+/* code */
+$lineNumbersWrapperWidth = 3.5rem;
+$codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py;
+
+@import &#39;./styles/custom-blocks.styl&#39;;
+@import &#39;./styles/code.styl&#39;;
+&lt;/style&gt;</code></pre>
+<p>First, we add the necessary CSS file for the syntax highlighting.
+Then, we add some Stylus variables and import two Stylus files. The
+Stylus imports are very long, so I don’t want to list their contents
+here. Rather, you can grab them from our repo: <a
+href="https://github.com/sitepoint-editors/vuepress/blob/master/docs/.vuepress/theme/styles/custom-blocks.styl">custom-blocks.styl</a>
+and <a
+href="https://github.com/sitepoint-editors/vuepress/blob/master/docs/.vuepress/theme/styles/code.styl">code.styl</a>.</p>
+<p>At this point, you should be able to click around your blog and see
+all of the posts displayed under the different categories.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_using-vue-components-in-markdown">Using Vue
+Components in Markdown</h3>
+<p>As I mentioned at the beginning, we can use templates and components
+directly in our Markdown. To add the <code>&lt;Message/&gt;</code>
+component we created earlier to the home page, we just add it in the
+home’s <code>README.md</code> like this (in
+<code>docs/README.md</code>):</p>
+<pre class="codeblock"><code>---
+title: Home
+---
+
+&lt;Message/&gt;</code></pre>
+<p>Now, when you visit <a
+href="http://localhost:8080">http://localhost:8080</a>, you should see a
+nicely styled <code>Message</code> component.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch3.xhtml_using-markdown-extensions">Using Markdown
+Extensions</h3>
+<p>VuePress comes with some Markdown extensions optimized for technical
+documentation. Here are some of them. You can add them to
+<code>docs/README.md</code> to see them in action straight away, or view
+them on the <a
+href="https://sitepoint-editors.github.io/vuepress/">blog’s home
+page</a>:</p>
+<ul>
+<li><p><strong>Table of contents</strong> (you’ll actually need some
+content to see this in action):</p>
+<pre class="codeblock"><code>[[toc]]</code></pre></li>
+<li><p><strong>Code blocks</strong>, with line highlighting and optional
+line numbers:</p>
+<pre class="codeblock"><code>```js{2}
+function add(a, b) {
+  return a * b; // Line highlighting is cool!
+}
+```</code></pre></li>
+<li><p><strong>Custom containers and emoji</strong>:</p>
+<pre class="codeblock"><code>::: warning
+Be careful! VuePress is highly addictive! :wink:
+:::</code></pre></li>
+<li><p>To display the <strong>line numbers</strong>, we have to add the
+following to the <code>.vuepress/config.js</code> file:</p>
+<pre class="codeblock"><code>markdown: {
+  lineNumbers: true
+}</code></pre></li>
+</ul>
+<h3 class="sigil_not_in_toc" id="jsant3-ch3.xhtml_build-the-site">Build
+the Site</h3>
+<p>Phew, this was a long ride. So finally our blog is ready to go and we
+can build it.</p>
+<p>Run the following in the terminal:</p>
+<pre class="codeblock"><code>npm run docs:build</code></pre>
+<p>This will generate a <code>dist</code> folder, inside the
+<code>.vuepress</code> directory, with all files compiled and ready to
+be deployed.</p>
+<h2 id="jsant3-ch3.xhtml_internationalize-your-site">Internationalize
+Your Site</h2>
+<p>As I mentioned before, we can make our site multilingual. However,
+I’m not going to explore this feature here. For more information, please
+<a href="https://v0.vuepress.vuejs.org/guide/i18n.html">consult the
+documentation</a>.</p>
+<h2 id="jsant3-ch3.xhtml_deploy-your-site-to-github-pages">Deploy Your
+Site to GitHub Pages</h2>
+<p>Once your site is done, you have plenty of options for deploying. You
+can read about the different choices <a
+href="https://v0.vuepress.vuejs.org/guide/deploy.html">in the
+documentation</a>. I deployed my version of the blog to GitHub Pages.
+Here is how.</p>
+<ol>
+<li>I created a repo <code>vuepress</code>.</li>
+<li>Then, I set the <code>base</code> property in the
+<code>config.js</code> to be <code>/vuepress/</code>.</li>
+<li><p>Next, I created a <code>deploy.sh</code> file with the following
+code:</p>
+<pre class="codeblock"><code># abort on errors
+set -e
+
+# build
+npm run docs:build
+
+# navigate into the build output directory
+cd docs/.vuepress/dist
+
+# if you are deploying to a custom domain
+# echo &#39;www.example.com&#39; &gt; CNAME
+
+git init
+git add -A
+git commit -m &#39;deploy&#39;
+
+# if you are deploying to https://&lt;USERNAME&gt;.github.io
+# git push -f git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master
+
+# if you are deploying to https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;
+git push -f git@github.com:codeknack/vuepress.git master:gh-pages
+
+cd -</code></pre></li>
+<li>Finally, I ran it. And that’s all.</li>
+</ol>
+<h2 id="jsant3-ch3.xhtml_conclusion">Conclusion</h2>
+<p>In this tutorial, we learned what VuePress is, why we should use it,
+and how to create a simple blog with it. We also deployed the blog to
+GitHub Pages. All this gave us a solid understanding of the VuePress
+system and its capabilities. So now we’re ready to apply this knowledge
+in our future projects, creating more beautiful VuePress-powered
+sites.</p>
+</div>
+</div>
+<p><span id="jsant3-ch4.xhtml"></span></p>
+<div id="jsant3-ch4.xhtml_sbo-rt-content" class="calibre">
+<div id="jsant3-ch4.xhtml_calibre_toc_3" class="page-frontmatter">
+<h1 id="jsant3-ch4.xhtml_whatsort">Chapter 4: Five Vue UI Libraries for
+Your Next Project</h1>
+<h3 class="author sigil_not_in_toc">by Michiel Mulders</h3>
+<p>According to <a href="https://vuejs.org/v2/guide/">the official
+Vue.js website</a>, Vue is a progressive framework for building user
+interfaces. It’s designed from the ground up to be incrementally
+adoptable, and the core library is focused on the view layer only. This
+makes it easy for devs to pick it up and quickly become productive.</p>
+<p>When starting a new project, designing a whole set of UI elements can
+be a time-consuming business. In this guide, I’m going to introduce you
+to five UI libraries that you can integrate with Vue in a few lines of
+code.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch4.xhtml_what-is-a-ui-library-">What Is a UI Library?</h3>
+<p>Before we get into things, let’s pause for a quick definition.</p>
+<p>A UI library usually consists of easy-to-use components which you can
+include in your Vue application using custom elements. You benefit from
+using a library like this, as you can create elements such as forms much
+faster, with most libraries offering a great range of input components
+with added functionality and events.</p>
+<p>Besides that, most libraries come with a proper and simple design
+which you can easily modify to your needs. In short, a UI library saves
+you time and helps you develop your application much faster.</p>
+<h2 id="jsant3-ch4.xhtml_ant-design-for-vue">1. Ant Design for Vue</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Its components support a lot of functionality and modifications via
+API options.</li>
+<li>It has a very minimal but beautiful design.</li>
+<li>It offers a wide range of data entry and display components.</li>
+<li>It has great ES6 support.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>While it can be used in mobile applications via its <a
+href="https://vuecomponent.github.io/ant-design-vue/components/grid/#API">Col
+and Row components</a>, it’s more suitable for desktop web
+applications.</li>
+</ul>
+<p>With over 5,000 stars on GitHub, <a
+href="https://github.com/vueComponent/ant-design-vue">Ant Design for
+Vue</a> is part of the bigger Ant Design library covering other
+frameworks like Angular and React. In my opinion, Ant Design has a very
+minimal but beautiful design which you can customize if needed. Ant
+Design is best known for its wide variety of data entry and data display
+components. Just their <a
+href="https://vuecomponent.github.io/ant-design-vue/components/table/">data
+table</a> page shows more than 15 different data table examples you can
+implement in your web application.</p>
+<p>Ant Design for Vue is great if you like to work with the JavaScript
+ES6 standard. Besides that, it comes with a webpack-based debug build
+solution supporting ES6.</p>
+<p>In addition, Ant Design for Vue is known for its <a
+href="https://vuecomponent.github.io/ant-design-vue/docs/vue/getting-started/">great
+documentation</a>. It provides tons of API options that influence the
+behavior or design of your component. For example, <a
+href="https://vuecomponent.github.io/ant-design-vue/components/checkbox/">a
+simple checkbox</a> has 5 properties: <code>autoFocus</code>,
+<code>checked</code>, <code>disabled</code>,
+<code>defaultChecked</code>, and <code>intermediate</code> (which can
+help you to achieve a “check all” effect).</p>
+<p>Also, the documentation always provides an event section for each
+component, which displays the type of events you can catch and what
+values are emitted. Every property in the documentation mentions its
+data type, if there are any default values, and if the value is
+required.</p>
+<p>As you can see, it’s a pleasure to work with Ant Design for Vue as
+the documentation is so accurate and helps you to be very productive
+while developing your front end.</p>
+<p>The first snippet I selected is to demonstrate the nice design of Ant
+Design. It’s a <a
+href="https://vuecomponent.github.io/ant-design-vue/components/timeline/">timeline</a>
+which has a loading state at the end. It’s a very useful component for
+showing the history of certain objects.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs1.png" width="182" height="188" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/QzGeKb/">Ant
+Design 1 Timeline</a>.</p>
+</div>
+</section>
+<p>The second element shows you an <a
+href="https://vuecomponent.github.io/ant-design-vue/components/upload/">upload
+button</a> that registers files, and you can even push the files to an
+API endpoint that stores them. It’s a very useful component which is
+mostly hard to configure correctly, but Ant Design just gets it
+right.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs2.png" width="156" height="105" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/roWXww/">Ant
+Design 2</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch4.xhtml_element-ui">2. Element UI</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>It has a very large range of components.</li>
+<li>It offers extensive documentation with version management.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>The default language of Element is Chinese. If you want to use
+another language, you’ll need to do some i18n configuration.</li>
+</ul>
+<p>With over 35,000 stars on GitHub, <a
+href="https://github.com/ElemeFE/element">Element</a> is one of the
+leading UI frameworks for Vue.js 2.0. Element is focused on web
+applications. Built upon a strong community of over 400 contributors,
+the library provides a rich selection of customizable components along
+with a full style guide and more resources.</p>
+<p>Element is quite similar to Ant Design, as it provides the same
+minimal style with a beautiful touch. But Element provides better
+capabilities for designers to change the style and layout of all
+components using an easy <a
+href="https://element.eleme.io/#/en-US/component/custom-theme">style
+guide</a> where you can change things such as the primary color of the
+theme.</p>
+<p>Element offers 16 components for building nice, easy-to-understand
+forms. Besides that, it offers several components for things such as
+data display, navigation, and message.</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch4.xhtml_code-snippets2">Code
+Snippets</h3>
+<p>The first element I want to bring to your attention is the <a
+href="https://element.eleme.io/#/en-US/component/tree">tree select</a>.
+It allows you to display and select data in a hierarchical structure.
+Here’s an example implementation of this tree component in Vue which
+shows how to load node data asynchronously.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs3.png" width="301" height="372" alt="-" />
+<p>See the Pen <a
+href="https://codepen.io/SitePoint/pen/oJYKyQ/">Element - Tree
+select</a>.</p>
+</div>
+</section>
+<p>This is a simple tree element that allows you to select data entries
+in this hierarchical data set. There are even more crazy <a
+href="https://element.eleme.io/#/en-US/component/tree">implementations</a>
+that let you filter this tree, move elements from one branch to another,
+or append and delete data in the tree. In my opinion, it’s quite a
+unique component for a UI library that can be a good alternative way for
+displaying and interacting with data.</p>
+<p>The next component is also quite special for a UI library. This
+transfer component lets you move data from one list to another. It also
+allows you to select or deselect all data in one list so you can quickly
+move it.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs4.png" width="557" height="350" alt="-" />
+<p>See the Pen <a
+href="https://codepen.io/SitePoint/pen/maONYd/">Element -
+Transfer</a>.</p>
+</div>
+</section>
+<p>Again, many advanced options are available, like disabling the
+transfer of certain elements, <a
+href="https://element.eleme.io/#/en-US/component/transfer">filtering
+list</a>, or even executing operations on your selected data. It’s a
+great alternative for selecting data in a user-friendly way.</p>
+<h2 id="jsant3-ch4.xhtml_vue-material">3. Vue Material</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Allows you to mimic <a href="https://material.io/design/">Google
+elements</a> in your application.</li>
+<li>It’s mobile focused.</li>
+<li>Its documentation.</li>
+<li>It includes <a href="https://codesandbox.io">Code Sandbox</a>
+integration, so you can immediately experiment with the code.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Currently 109 open issues, of which most have not yet been addressed
+by the developers.</li>
+</ul>
+<p><a href="https://vuematerial.io">Vue Material</a> is a simple and
+lightweight design library built exactly according to the Google
+Material Design specs. They offer a wide range of form elements to build
+your mobile application. For example, the <a
+href="https://vuematerial.io/components/input">Input &amp; Textarea</a>
+section offers many input options, such as password fields, fields with
+a maximum length, built-in error validation, or prefixes and suffixes.
+All of this is well documented with all properties the element accepts
+and the events it fires.</p>
+<p>Vue Material even provides different classes to change the layout of
+your component. The <a
+href="https://vuematerial.io/components/toolbar">toolbar section</a> is
+a good example of this. You can add an offset to your title, remove the
+hamburger icon, or add some custom section ending.</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch4.xhtml_code-snippets3">Code
+Snippets</h3>
+<p>The first snippet shows a <a
+href="https://vuematerial.io/components/speed-dial">simple speed
+dial</a>—a common component for mobile applications—which not many UI
+libraries offer. You can add multiple icons to the speed dial that each
+have their own action attached to it.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs5.png" width="124" height="195" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/xmgKOM/">Vue
+Material - speed dial</a>.</p>
+</div>
+</section>
+<p>The second item I selected is the calendar input. It’s a great
+example of Google Material Design. I experimented a bit with the options
+and was able to disable all Saturdays and Sundays by declaring a
+<code>disabledDates</code> data property:</p>
+<pre class="lang-js"><code>new Vue({
+  el: &#39;#app&#39;,
+  name: &#39;DisabledDatesDatepicker&#39;,
+  data: () =&gt; ({
+    selectedDate: null,
+    disabledDates: date =&gt; {
+      const day = date.getDay()
+      return day === 6 || day === 0
+    }
+  })
+})</code></pre>
+<p>It’s a good example of controlling the input of your users with a
+smart UI.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs6.png" width="341" height="341" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/xmgKgB/">Vue
+Material - date picker disabled days</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch4.xhtml_iview">4. iView</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>It offers clean animations.</li>
+<li>It offers a wide range of components with amazing data table
+components.</li>
+<li>It has an easily customizable theme.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Some components don’t have many variants.</li>
+<li>The default language is Chinese. If you want to use English, you’ll
+need to do some i18n configuration.</li>
+</ul>
+<p>With over 20,000 stars on GitHub, <a
+href="https://www.iviewui.com">iView</a> is one of the leading UI
+libraries for Vue. The style of the theme can be easily changed in the
+<a
+href="https://github.com/iview/iview/blob/2.0/src/styles/custom.less">Less
+file</a>, which holds a set of variables that can be customized. It’s
+recommended that you override these variables by importing a custom
+theme file. The style of the theme is very minimalistic but beautiful,
+and includes many simple animations that help the library to stand
+out.</p>
+<p>For some elements, the library doesn’t offer so many variants. For
+example, the <a href="https://www.iviewui.com/components/card-en">Card
+component</a> just offers a few basic card designs, while other
+libraries have card designs that include action bars, images, etc.
+However, some elements are very elaborate, like the <a
+href="https://www.iviewui.com/components/table-en">data table
+components</a>. Let’s take a look at them in the code snippets
+section.</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch4.xhtml_code-snippets4">Code
+Snippets</h3>
+<p>The first data table snippet includes a view and delete button to
+display or delete rows in the table. It’s quite a basic example.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs7.png" width="843" height="337" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/wRgwre/">iVew
+Data Table Component</a>.</p>
+</div>
+</section>
+<p>Next, we have a more elaborate data table example that includes
+filters and sorting for each column. The data table comes with the
+ability to export the data to CSV. What’s special here is that you can
+even export the filtered data and also select the columns you want to
+include.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs8.png" width="606" height="233" alt="-" />
+<p>See the Pen <a href="https://codepen.io/SitePoint/pen/dwNbaM/">Vue.js
+iView Table Sort Filter CSV</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch4.xhtml_mint-ui">5. Mint-UI</h2>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>It includes uncommon components like lazy load, action sheet, swipe
+or infinite scroll.</li>
+<li>It’s mobile focused.</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>The design is a bit too simple.</li>
+<li>There’s no documentation on how to change or improve the
+design.</li>
+<li>There are no events listed in API specs.</li>
+</ul>
+<p>With over 13,000 stars on GitHub, <a
+href="https://github.com/ElemeFE/mint-ui/">Mint-UI</a> is a popular
+Chinese UI library for Vue. The library includes some more uncommon
+components like an <a
+href="http://mint-ui.github.io/docs/#/en/action-sheet">action sheet</a>,
+<a href="http://mint-ui.github.io/docs/#/en/cell-swipe">cell swipe</a>,
+<a href="http://mint-ui.github.io/docs/#/en/index-list">index list</a>
+or <a href="http://mint-ui.github.io/docs/#/en/infinite-scroll">infinite
+scroll</a>, all of which are mobile focused. However, the design is too
+simplistic and doesn’t have any styling.</p>
+<p>Besides that, the library doesn’t list events for the components. For
+example, the <a
+href="http://mint-ui.github.io/docs/#/en/checklist">checklist
+component</a> returns an array of checked options, but it’s not clear
+how to access this value or where it’s coming from. For a Vue beginner,
+this can be very confusing!</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch4.xhtml_code-snippets5">Code
+Snippets</h3>
+<p>The first code snippet is an example of an index list. It’s an
+uncommon example but still a useful element for including in your mobile
+application.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs9.png" width="485" height="488" alt="-" />
+<p>See the Pen <a
+href="https://codepen.io/SitePoint/pen/JwEPqd/">Mint-UI 1 Proper index
+list</a>.</p>
+</div>
+</section>
+<p>The second code snippet shows a <a
+href="https://mint-ui.github.io/docs/#/en/picker">year-month picker</a>
+to indicate a range. It includes a comparison function that makes sure
+the second value is always greater than the first item in the range
+comparison. Again, a simple but useful element.</p>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Live Code</h4>
+<div class="body">
+<img src="Images/uilibs10.png" width="208" height="206" alt="-" />
+<p>See the Pen <a
+href="https://codepen.io/SitePoint/pen/GPrRKv/">Mint-UI 2
+Picker</a>.</p>
+</div>
+</section>
+<h2 id="jsant3-ch4.xhtml_the-bottom-line">The Bottom Line</h2>
+<p>There are many great UI libraries out there for Vue and this was only
+a small selection of my favorites.</p>
+<p>Of the libraries presented, <a
+href="https://www.iviewui.com/">iView</a> offers the greatest design of
+all libraries but not all elements are as elaborate as the data tables
+section. <a
+href="https://vuecomponent.github.io/ant-design-vue/docs/vue/introduce/">Ant
+Design</a> is an ideal choice if you want a nice and minimal design with
+most of the data input and data display components covered in the
+library. It also has a number of other useful components, such as a
+progress bar with steps. In my opinion, despite its mobile-friendly
+approach, Mint-UI is probably the least useful library from this
+selection as the design is very basic and the events aren’t well
+documented in the API.</p>
+<p>However, saying this, whichever library you pick will depend on your
+project requirements. They all have their strengths and weaknesses, and
+there isn’t one that covers all the bases alone.</p>
+</div>
+</div>
+<p><span id="jsant3-ch5.xhtml"></span></p>
+<div id="jsant3-ch5.xhtml_sbo-rt-content" class="calibre">
+<div id="jsant3-ch5.xhtml_calibre_toc_3" class="page-frontmatter">
+<h1 id="jsant3-ch5.xhtml_cpaneltips">Chapter 5: Five Handy Tips when
+Starting Out with Vue</h1>
+<h3 class="author sigil_not_in_toc">by David Bush</h3>
+<p>I originally came to the world of <a
+href="https://vuejs.org/">Vue</a> from <a
+href="https://reactjs.org/">ReactJS</a>. Learning to divide my page up
+into small, reusable components and how to leverage the component
+lifecycle represented a shift in approach to problems, but I quickly got
+proficient.</p>
+<p><a href="https://facebook.github.io/react-native/">React Native</a>
+allowed me to write apps for both major smartphone platforms, which made
+it a slam dunk for me. But I kept hearing about how great Vue was.
+Crucially, I noticed no one I spoke to had anything bad to say about it,
+and experience tells me that the absence of multiple people having
+qualms with a language or framework means it should be investigated
+immediately, so I did.</p>
+<p>These are the things I wish I’d known when I was starting out.</p>
+<h2 id="jsant3-ch5.xhtml_incremental-adoption">Incremental Adoption</h2>
+<p>In my many years of programming, I’ve seldom found it a trivial
+undertaking to switch out an entire view layer. While I was keen to try
+Vue, I wasn’t prepared to initiate a whole rewrite to do so. I was
+exceedingly happy to learn that, with Vue, you don’t have to! You can
+incrementally add it to projects with a piecemeal rewrite simply by
+including the library file and adding components. This allows you to add
+new features and leverage its many strengths without having to throw out
+your current code, so there’s no excuse not to try it!</p>
+<h2 id="jsant3-ch5.xhtml_devtools">Devtools</h2>
+<p>One thing I found useful was the addition of <a
+href="https://github.com/vuejs/vue-devtools">Vue Devtools</a> to my
+browser (available on both <a
+href="https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/">Firefox</a>
+and <a
+href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en">Chrome</a>).
+It renders superfluous those cumbersome <code>console.log()</code> debug
+calls by instead showing you the contents of each component in your
+devtools pane. It also affords you the ability to jump directly to a
+component in your editor (admittedly with a <a
+href="https://github.com/vuejs/vue-devtools/blob/dev/docs/open-in-editor.md">little
+tweaking</a>) which I’ve found to be an absolutely killer feature,
+particularly in larger projects. Here’s a screenshot of it in
+action:</p>
+<img src="Images/vue-dev-tools.png" width="1838" height="2288"
+alt="Vue Devtools screenshot" />
+<!-- ![Vue Devtools screenshot](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/01/1546424570vue-dev-tools.png) -->
+<p>As you can see, everything passed down to the component is
+immediately visible; there’s no need for debugging code of any sort. But
+that’s not all! Much like you might be used to doing with rendered HTML
+or CSS, you can edit Vue components directly in the browser: add values
+to your props, modify them, or perhaps remove them entirely to see how
+your app responds. I do almost all of my development in a terminal
+window, but I’m finding myself taking advantage of this in-browser,
+instant feedback loop more and more frequently. To my mind, there’s no
+higher praise than willingly modifying your own workflow to leverage a
+tool.</p>
+<p>Additionally, component navigation is outstanding. Not only is there
+an <em>Inspect Vue component</em> option in the context menu, there’s
+also a fuzzy search to filter your components by name, which is a very
+nice touch. You can also see the history of your Vuex state and “time
+travel” back to any given point (which is an invaluable tool when
+debugging issues rooted in complex state changes). Another useful
+feature is a tab to track <a
+href="https://vuejs.org/v2/guide/components-custom-events.html">Custom
+Events</a> from your own components (those of the
+<code>this.$emit('YourEvent')</code> variety), but lamentably not native
+events like
+<code>&lt;button v-on:click="counter += 1"&gt;Add 1&lt;/button&gt;</code>:</p>
+<img src="Images/vue-event-history.png" width="1750" height="2200"
+alt="Event history screenshot" />
+<!-- ![Event history screenshot](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/01/1546425003vue-event-history.png) -->
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch5.xhtml_avoid-event-buses">Avoid Event Buses</h3>
+<p>I find Vue’s native mechanism of passing state to be excellent, but
+inevitably, as your app scales, you’re going to need the same data in
+multiple different places and that’s going to be unwieldy. The typical
+example of this is the instance of data sharing between sibling
+components, or even two components that aren’t related in any way. One
+project I worked on recently needed to access a <code>category</code>
+field, both on a list item and in a “grouping” view elsewhere. Vuex is
+frequently an elegant solution to problems of this nature, because it
+adroitly sidesteps the constraints inherent in passing data via parent
+and child relationships.</p>
+<p>I must admit that there was a time in my life where I would reach
+straight for an event bus rather than delve into <a
+href="https://facebook.github.io/flux/">Flux</a> architecture. I had
+read from a few people on <a href="https://news.ycombinator.com/">Hacker
+News</a> that Flux, and, by extension, <a
+href="https://redux.js.org/introduction/getting-started">Redux</a> and
+<a href="https://vuex.vuejs.org/">Vuex</a>, were complicated to pick up,
+and as a result, avoided them for as long as possible. Finally, I sat
+down to get my head around it and I wish someone had told me this: “It’s
+just the <a href="https://en.wikipedia.org/wiki/Command_pattern">Command
+Pattern</a>”. That’s pretty much much all there is to it. As you may
+know, you write commands (or “Actions” in Flux parlance) which are
+executed (by the “Dispatcher” in this case), and the result is passed to
+a receiver (a Store) at a later time. I’m pleased to report that once I
+need to manage any degree of state that’s more complex than “pass props
+down the hierarchy”, I reach for Vuex. Try it: it’s really not as
+complicated as you may have heard!</p>
+<h3 class="sigil_not_in_toc" id="jsant3-ch5.xhtml_vue-cli">Vue CLI</h3>
+<p><a href="https://cli.vuejs.org/">Vue CLI</a> is a relatively new
+addition to the Vue roster, but I can’t speak highly enough of it. I’ve
+lost many hours over the last couple of years fiddling with
+configurations and integrating libraries correctly, so to be able to
+effortlessly scaffold an app and be up and running is a breath of fresh
+air. Simply run <code>vue create &lt;app_name&gt;</code> and you’ll be
+prompted to select various options which are installed and configured
+for you. Out of the box, it will set you up with <a
+href="https://babeljs.io/">Babel</a> and <a
+href="https://eslint.org/">ESLint</a> (both are absolute <em>musts</em>
+to my mind), but you can customize your setup to include a variety of
+extras out of the box. Here’s a quick rundown of the options available
+to you (as of version 3.2.1):</p>
+<ul>
+<li>impose a degree of type safety on your project with <a
+href="https://www.typescriptlang.org/">Typescript</a></li>
+<li>leverage <a
+href="https://en.wikipedia.org/wiki/Progressive_web_applications">Progressive
+Web Apps</a> for mobile support</li>
+<li>seamlessly route your <a
+href="https://en.wikipedia.org/wiki/Single-page_application">single page
+app</a> with <a href="https://router.vuejs.org/">Vue Router</a></li>
+<li>manage more complex levels of state with <a
+href="https://vuex.vuejs.org/">Vuex</a></li>
+<li>make writing CSS more pleasant with <a
+href="https://vue-loader.vuejs.org/guide/pre-processors.html">CSS
+Preprocessors</a>, including <a
+href="https://sass-lang.com/">Sass/SCSS</a>, <a
+href="http://lesscss.org/">Less</a> and <a
+href="http://stylus-lang.com/">Stylus</a> flavors</li>
+<li>pick your linting options from Typescript, various degrees of ESLint
+strictness (ranging from “error prevention only” all the way to my
+personal favorite, the Airbnb config)</li>
+<li>ensure code stability with <a href="https://mochajs.org/">Mocha</a>
+and its BDD cousin <a href="https://www.chaijs.com/">Chai</a>, or
+Facebook’s <a href="https://jestjs.io/">Jest</a></li>
+<li>there’s even end-to-end testing options in <a
+href="https://www.cypress.io/">Cyprus</a> or <a
+href="http://nightwatchjs.org/">Nightwatch</a></li>
+</ul>
+<p>This setup even gives you the option to “Save this as a preset for
+future projects”, which is useful once you’ve developed a preferred
+stack. Check out “Getting Started with Vuex: a Beginner’s Guide” in this
+Vue series for more Vue CLI goodness.</p>
+<h3 class="sigil_not_in_toc"
+id="jsant3-ch5.xhtml_computed-properties">Computed Properties</h3>
+<p>When I first started using Vue, I put all my rendering helpers in
+functions and called them from the template. As my projects grew, this
+quickly became unwieldy and I searched for a better way. Enter <a
+href="https://vuejs.org/v2/guide/computed.html">computed properties</a>,
+which are the idiomatic way of declaring more complex logic relating to
+calculation of anything to be rendered on the page. They have the added
+benefit of de-cluttering your template (and while it may be an unpopular
+opinion in modern JS, I firmly believe in separating the concerns of my
+presentation logic and rendering code where possible). Let’s walk
+through it with a quick example.</p>
+<p>Here’s the <a href="https://www.reddit.com/r/vuejs/">VueJS
+subreddit</a>. I’m going to
+<code>wget https://www.reddit.com/r/vuejs.json</code> and put that in a
+file, but if you’re playing along at home, there’s nothing to stop you
+using this as a basis for writing your own Vue-based Reddit interface
+and registering for an API key.</p>
+<p>Let’s render it on the page:</p>
+<img src="Images/vue-app-screenshot.png" width="1838" height="2288"
+alt="Reddit interface app screenshot" />
+<!-- ![Reddit interface app screenshot](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/01/1546425007vue-app-screenshot.png) -->
+<p>So far, so good. Now let’s add an option to sort by score. Here’s my
+code, in case you’d like to emulate it (you’ll want to add <a
+href="https://getbootstrap.com/">Bootstrap</a> to your project).</p>
+<p><strong>App.vue</strong></p>
+<pre class="codeblock"><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot; class=&quot;container&quot;&gt;
+    &lt;h1 class=&quot;list-title&quot;&gt;r/vuejs&lt;/h1&gt;
+    &lt;button v-on:click=&quot;sortHottest = !sortHottest&quot; class=&quot;btn btn-primary btn-sort&quot;&gt;
+      {{ sortHottest ? &quot;Sort by Best&quot; : &quot;Sort by Hottest&quot; }}&lt;/button&gt;
+    &lt;div v-for=&quot;story in sortHottest ? sortByHottest : sortByBest&quot; v-bind:key=&quot;story.data.id&quot; &gt;
+      &lt;Story v-bind:story=&quot;story.data&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Story from &#39;./components/Story.vue&#39;
+import stories from &#39;./vue_stories.json&#39;
+
+export default {
+  name: &#39;app&#39;,
+  data: () =&gt; {
+    return {
+      // Submissions from JSON file (but you can switch it for an API call if you set up an API key):
+      stories: stories.data.children,
+      // Initial sort order of stories:
+      sortHottest: true
+    }
+  },
+  components: {
+    Story
+  },
+  computed: {
+    sortByBest: function () {
+      // Sorts by score, descending. We use slice() to make a copy of the list to avoid mutating state:
+      return this.stories.slice().sort((a, b) =&gt; b.data.score - a.data.score)
+    },
+    sortByHottest: function () {
+      // The real Reddit &#39;Hottest&#39; algorithm is a function of votes and submission-time over a delta.
+      // We&#39;ll skip all that for this example and just return the list as we got it (which was already
+      // sorted by &#39;hottest&#39;!)
+      return this.stories
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+#app {
+  font-family: &#39;Avenir&#39;, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #656568;
+  margin-top: 1.5em;
+}
+.list-title {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+
+.btn-sort {
+  margin-bottom: 0.6em;
+  background-color: #8064A2 !important;
+  border-color: #8064A2 !important;
+}
+&lt;/style&gt;</code></pre>
+<p><strong>components/Story.vue</strong></p>
+<pre class="codeblock"><code>&lt;template&gt;
+    &lt;div class=&quot;row border rounded story&quot;&gt;
+      &lt;div class=&quot;col-2&quot;&gt;
+        &lt;p class=&quot;score&quot;&gt;{{ story.score }}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-10 text-left title&quot;&gt;
+        &lt;h4&gt;{{ story.title }}&lt;/h4&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &#39;Story&#39;,
+  props: {
+    story: Object
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.score {
+  margin-left: 0.3em;
+  margin-top: 0.5em;
+  font-size: 2.8em;
+  color: #8064A2;
+}
+.title {
+  margin-top: 1.5em;
+}
+
+.story {
+  margin-top: 0.5em;
+  border-width: 3px;
+}
+&lt;/style&gt;</code></pre>
+<p>Now although my sorting example is pretty concise (thanks, ES6!), the
+benefits should be readily apparent: with this implementation, we enjoy
+uncluttered content in the template and neatly compartmentalized,
+self-documenting (mostly!) code in the script. This comes with the usual
+advantages of Vue’s data model in that, by avoiding side effects (like
+mutating the <code>stories</code> data), we can leverage Vue’s data
+binding to ensure this is fully reactive. For example, in the event a
+comment got upvoted sufficiently to overtake the one above it, this
+would be reflected in our <code>sortByBest()</code> result! So far, this
+is the same as calling a function directly in your template code, but
+this is where Vue shines: computed properties are only evaluated in the
+event that their dependencies change (in this case,
+<code>stories</code>). If you called this as a function, it would be run
+on every render, which could be costly in any number of ways (frequently
+rendered component, large lists to sort, expensive computations on list
+items, etc.). This is often an easy win when optimizing slow pages, so I
+always look out for it.</p>
+<h2 id="jsant3-ch5.xhtml_wrapping-up">Wrapping Up</h2>
+<p>Those are the five things I wish I’d known earlier when learning Vue.
+I hope they help you!</p>
+</div>
+</div>

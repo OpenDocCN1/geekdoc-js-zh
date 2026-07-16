@@ -1,0 +1,110 @@
+name: Web App Development Book： Guide to Ember.js
+name_cn: Web 应用开发：Ember.js 指南
+slug: web-app-development-book-guide-to-emberjs
+toc:
+- - '#'
+  - Web 应用开发：Ember.js 指南
+- - '##'
+  - 免责声明
+- - '##'
+  - 介绍
+- - '##'
+  - 第 1 章 控制器
+- - '###'
+  - 控制器之间的依赖关系管理
+- - '##'
+  - 第 2 章 模型
+- - '###'
+  - 创建记录
+- - '###'
+  - 更新记录
+- - '###'
+  - 持久化记录
+- - '###'
+  - 处理验证错误
+- - '###'
+  - Promises
+- - '###'
+  - 删除记录
+- - '###'
+  - 关系
+- - '###'
+  - 一对一
+- - '###'
+  - 一对多关系
+- - '###'
+  - 显式反向
+- - '###'
+  - 自引用关系
+- - '###'
+  - 创建记录
+- - '###'
+  - 更新现有记录
+- - '##'
+  - 关系
+- - '###'
+  - 作为 Promise 的关系
+- - '##'
+  - 将记录推入 Store（存储器）
+- - '##'
+  - 处理元数据（MetaData）
+- - '##'
+  - 适配器（Adapters）的自定义
+- - '###'
+  - URL 规范
+- - '###'
+  - 复数自定义
+- - '###'
+  - 自定义端点路径
+- - '##'
+  - 主机自定义 (Host Customizations)
+- - '##'
+  - 路径自定义 (Path Customizations)
+- - '##'
+  - 请求头自定义 (Headers Customizations)
+- - '##'
+  - 编写适配器 (Authoring Adapters)
+- - '##'
+  - 自定义序列化器 (Customizing Serializers)
+- - '##'
+  - JSON API 文档 (JSON API Document)
+- - '##'
+  - 侧载数据 (Sideloaded Data)
+- - '##'
+  - 自定义序列化器 (Customizing Serializers)
+- - '###'
+  - 属性名称 (Attribute Names)
+- - '###'
+  - 关系 (Relationships)
+- - '###'
+  - 创建自定义转换 (Creation of Custom Transformations)
+- - '##'
+  - 第 3 章 - 应用关注点
+- - '###'
+  - 依赖注入
+- - '###'
+  - 工厂注册 (Factory Registrations)
+- - '###'
+  - 实例化对象的注册 (Registering Instantiated Objects)
+- - '###'
+  - 单例与非单例注册 (Singletons vs. Non-Singletons Registration)
+- - '###'
+  - 工厂注入 (Factory Injections)
+- - '###'
+  - 临时注入 (Ad Hoc Injections)
+- - '###'
+  - 初始化器 (Initializers)
+- - '###'
+  - 应用初始化器 (Application Initializers)
+- - '###'
+  - 应用实例初始化器 (Application Instance Initializers)
+- - '###'
+  - 指定初始化器顺序
+- - '##'
+  - 服务 (Services)
+- - '###'
+  - 服务的定义
+- - '###'
+  - 访问服务
+- - '###'
+  - 运行循环 (The Run Loop)

@@ -1,0 +1,450 @@
+name: W3schools Learn Javascript And Ajax With W3schools Wiley 2010
+name_cn: W3schools 学习 Javascript 和 Ajax
+slug: w3schools-learn-javascript-and-ajax-with-w3schools-wiley-201
+toc:
+- - '#'
+  - W3schools 学习 Javascript 和 Ajax
+- - '##'
+  - w3schools 作者/编辑
+- - '###'
+  - Hege Refsnes
+- - '###'
+  - Ståle Refsnes
+- - '###'
+  - Kai Jim Refsnes
+- - '###'
+  - Jan Egil Refsnes
+- - '##'
+  - 鸣谢
+- - '#'
+  - JavaScript 简介
+- - '##'
+  - JavaScript
+- - '##'
+  - 你应该已经
+- - '##'
+  - 什么是 JavaScript？
+- - '##'
+  - Java 和 JavaScript 样的吗？
+- - '##'
+  - JavaScript 能做什么？
+- - '#'
+  - 2 导介绍
+- - '##'
+  - AJAX
+- - '##'
+  - 你应该已经知道的
+- - '##'
+  - AJAX = 异步 JavaScript 和 XML
+- - '##'
+  - AJAX 基于互联网标准
+- - '#'
+  - 3 使用 w3schools 学习 JavaScript 和 AJAX
+- - '##'
+  - AJAX 更好的互联网应用程序
+- - '##'
+  - 今天开始使用 AJAX
+- - '##'
+  - 如何使用此书
+- - '#'
+  - 4 导介绍
+- - '#'
+  - 5 第一部分 JavaScript 基础
+- - '#'
+  - '7'
+- - '##'
+  - 第 1 章 JavaScript 如何以及在哪里
+- - '###'
+  - 本章内容
+- - '##'
+  - 如何将 JavaScript 放入 HTML 页面
+- - '#'
+  - '9'
+- - '##'
+  - 使用 w3schools 学习 JavaScript 和 ajax
+- - '#'
+  - '10'
+- - '##'
+  - 第 1 章 如何以及在哪里
+- - '##'
+  - 如何处理简单浏览器
+- - '##'
+  - '12'
+- - '#'
+  - 第一章：JavaScript 如何使用以及何处使用
+- - '##'
+  - <head> 中的脚本
+- - '##'
+  - <body> 中的脚本
+- - '##'
+  - '13'
+- - '##'
+  - 通过 w3schools 学习 JavaScript 和 ajax
+- - '##'
+  - <head> 和 <body> 中的脚本
+- - '##'
+  - '14'
+- - '##'
+  - 第一章：JavaScript 如何使用以及何处使用
+- - '##'
+  - 使用外部 JavaScript
+- - '##'
+  - '15'
+- - '#'
+  - 第二章
+- - '#'
+  - JavaScript
+- - '##'
+  - 本章中的语句和注释
+- - '###'
+  - JavaScript 语句
+- - '##'
+  - '16'
+- - '##'
+  - 第二章：JavaScript 语句和注释 **注意** 使用分号允许在一行内编写多个语句，尽管良好的编程习惯鼓励每行只放置一个语句。
+- - '###'
+  - JavaScript 代码
+- - '###'
+  - JavaScript 块
+- - '##'
+  - '17'
+- - '##'
+  - 通过 w3schools 学习 JavaScript 和 ajax
+- - '###'
+  - JavaScript 注释
+- - '##'
+  - '18'
+- - '##'
+  - 第二章：JavaScript 语句和注释
+- - '###'
+  - JavaScript 多行注释
+- - '##'
+  - '19'
+- - '###'
+  - 使用注释防止执行
+- - '##'
+  - '21'
+- - '#'
+  - 使用 w3schools 学习 JavaScript 和 ajax
+- - '##'
+  - 在行尾使用注释
+- - '#'
+  - 第 3 章：JavaScript 变量
+- - '###'
+  - 本章内容
+- - '###'
+  - 你还记得学校里的代数课吗？
+- - '###'
+  - JavaScript 变量
+- - '##'
+  - 声明（创建）JavaScript 变量
+- - '###'
+  - 为未声明的 JavaScript 变量赋值
+- - '###'
+  - 重复 JavaScript 变量
+- - '###'
+  - JavaScript 算术
+- - '##'
+  - JavaScript 赋值运算符
+- - '###'
+  - 的 + 运算符用于字符串
+- - '###'
+  - 数字与数字
+- - '#'
+  - 第 4 章：JavaScript 运算符
+- - '#'
+  - 第 5 章：JavaScript 比较
+- - '###'
+  - 本章内容
+- - '#'
+  - 第 5 章：Javascript 比较
+- - '##'
+  - 如何使用比较
+- - '###'
+  - 逻辑运算符
+- - '###'
+  - 条件运算符
+- - '#'
+  - 第 6 章
+- - '##'
+  - JavaScript if...else
+- - '##'
+  - 语句
+- - '###'
+  - 本章内容
+- - '###'
+  - 条件语句
+- - '#'
+  - 第 6 章：JavaScript if...else 语句
+- - '###'
+  - if 语句
+- - '###'
+  - if...else 语句
+- - '#'
+  - 第 7 章
+- - '##'
+  - JavaScript 循环
+- - '###'
+  - 本章内容
+- - '###'
+  - for 循环
+- - '##'
+  - 尝试一下 >>
+- - '##'
+  - 第 8 章：额外的 JavaScript 流程控制语句
+- - '###'
+  - 本章内容
+- - '###'
+  - break 语句
+- - '###'
+  - for...in 语句
+- - '###'
+  - '`switch` 语句用于从多个代码块中选择一个执行。语法如下：'
+- - '#'
+  - Prompt 提示框
+- - '##'
+  - 弹出框
+- - '##'
+  - alert 警告框
+- - '##'
+  - confirm 确认框
+- - '##'
+  - prompt 提示框
+- - '#'
+  - 第 10 章
+- - '#'
+  - JavaScript 函数
+- - '##'
+  - 本章内容
+- - '##'
+  - 如何定义函数
+- - '##'
+  - 函数示例
+- - '##'
+  - return 语句
+- - '##'
+  - 图 10.6
+- - '###'
+  - JavaScript 变量的生命周期
+- - '##'
+  - 第 11 章
+- - '###'
+  - JavaScript 事件
+- - '###'
+  - 本章内容
+- - '###'
+  - onLoad 和 onUnload
+- - '###'
+  - 第 11 章：JavaScript 事件
+- - '###'
+  - onFocus, onBlur, 和 onChange
+- - '###'
+  - onSubmit
+- - '###'
+  - onMouseOver 和 onMouseOut
+- - '###'
+  - onClick
+- - '##'
+  - 第 12 章
+- - '###'
+  - JavaScript
+- - '###'
+  - try…Catch 和 throw 语句
+- - '###'
+  - 本章内容
+- - '###'
+  - JavaScript——捕获错误
+- - '###'
+  - try...catch 语句
+- - '###'
+  - 第 12 章：JavaScript try…Catch 和 throw 语句
+- - '###'
+  - throw 语句
+- - '#'
+  - 第 13 章：JavaScript 特殊字符。本章包含：
+- - '###'
+  - 插入特殊字符
+- - '###'
+  - JavaScript 对大小写敏感
+- - '###'
+  - 空格
+- - '###'
+  - 换行代码行
+- - '#'
+  - 第 14 章：JavaScript 对象简介
+- - '###'
+  - 本章包含
+- - '###'
+  - 面向对象编程
+- - '###'
+  - 属性
+- - '###'
+  - 方法
+- - '#'
+  - 第 15 章：String 对象
+- - '###'
+  - 本章包含
+- - '###'
+  - 通过 w3schools 学习 JavaScript 和 ajax
+- - '####'
+  - 图 15.2
+- - '#'
+  - 第 15 章：JavaScript String 对象
+- - '####'
+  - 图 15.3
+- - '####'
+  - 图 15.4
+- - '###'
+  - 通过 w3schools 学习 JavaScript 和 ajax
+- - '####'
+  - 图 15.5
+- - '#'
+  - 第 15 章：JavaScript String 对象
+- - '####'
+  - 图 15.6
+- - '#'
+  - 第 16 章
+- - '##'
+  - JavaScript Date 对象
+- - '###'
+  - 本章内容
+- - '###'
+  - 创建 Date 对象
+- - '###'
+  - 设置日期
+- - '###'
+  - 比较日期
+- - '###'
+  - 示例
+- - '####'
+  - 图 16.1
+- - '####'
+  - 图 16.2
+- - '###'
+  - 星期几
+- - '####'
+  - 图 16.3
+- - '####'
+  - 图 16.4
+- - '#'
+  - JavaScript Date 对象
+- - '###'
+  - 通过 w3schools 学习 JavaScript 和 ajax
+- - '#'
+  - 第 17 章
+- - '#'
+  - JavaScript 数组对象
+- - '##'
+  - 本章内容
+- - '###'
+  - 什么是数组
+- - '##'
+  - 创建数组
+- - '##'
+  - 访问数组
+- - '##'
+  - 修改数组中的值
+- - '##'
+  - 示例
+- - '#'
+  - 第 17 章：JavaScript 数组对象
+- - '#'
+  - 第 18 章：JavaScript
+- - '##'
+  - Boolean 对象
+- - '###'
+  - 本章内容
+- - '###'
+  - 创建 Boolean 对象
+- - '###'
+  - 示例
+- - '#'
+  - 第 18 章：JavaScript Boolean 对象
+- - '#'
+  - 第 19 章：JavaScript Math 对象
+- - '###'
+  - 本章内容
+- - '###'
+  - Math 对象
+- - '###'
+  - 数学常量
+- - '###'
+  - 数学方法
+- - '#'
+  - 第 20 章：JavaScript regexp
+- - '##'
+  - RegExp 对象
+- - '###'
+  - 本章内容
+- - '###'
+  - 什么是 regexp？
+- - '###'
+  - regexp 修饰符
+- - '#'
+  - 第 20 章：JavaScript regexp 对象
+- - '###'
+  - test()
+- - '###'
+  - exec()
+- - '###'
+  - 检测
+- - '#'
+  - 第 21 章：JavaScript 浏览器检测
+- - '###'
+  - 第 21 章：JavaScript 浏览器检测
+- - '##'
+  - 第 22 章：JavaScript
+- - '###'
+  - Cookies
+- - '####'
+  - 什么是 Cookie？
+- - '###'
+  - 创建并存储 Cookie
+- - '###'
+  - 邮箱验证
+- - '###'
+  - HTML 代码
+- - '###'
+  - '第 24 章：JavaScript 动画 ### JavaScript 代码'
+- - '###'
+  - 完整代码
+- - '#'
+  - '`setTimeout()` 方法'
+- - '##'
+  - 第 26 章：JavaScript 定时事件
+- - '##'
+  - 第 26 章：JavaScript 定时事件
+- - '##'
+  - 第 26 章：JavaScript 定时事件
+- - '#'
+  - '`clearTimeout()` 方法'
+- - '##'
+  - 第 27 章：创建你自己的对象
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 属性
+- - '##'
+  - 方法
+- - '##'
+  - 创建对象
+- - '###'
+  - 创建对象的直接实例
+- - '##'
+  - 第 27 章：用 javascript 创建你自己的对象
+- - '#'
+  - 创建对象的模板
+- - '##'
+  - 第 27 章：使用 javascript 创建你自己的对象
+- - '##'
+  - 第四部分：AJAX 基础
+- - '##'
+  - 第 29 章：AJAX 浏览器支持
+- - '###'
+  - 本章内容
+- - '###'
+  - 总结
+- - '####'
+  - 尝试一下 >>
+- - '###'
+  - 第 30 章：本章介绍的 AJAX—XMLHttpRequest 对象的方法与属性

@@ -1,0 +1,30 @@
+name: Understanding Advanced JavaScript (Smashing Media eBooks)
+name_cn: 高级 JavaScript 入门指南
+slug: understanding-advanced-javascript-smashing-media-ebooks
+toc:
+- - '##'
+  - JavaScript 单元测试简介
+- - '###'
+  - 构建单元测试
+- - '###'
+  - 使变得可测试
+- - '###'
+  - 重构，阶段 0
+- - '###'
+  - 重构，阶段 0
+- - '###'
+  - 测试 DOM 操作
+- - '###'
+  - 重构，第二阶段
+- - '##'
+  - 建立基准
+- - '##'
+  - 创建分析（Profile）
+- - '##'
+  - 隔离问题
+- - '###'
+  - 减少内容变化
+- - '###'
+  - 应用中的 JavaScript 性能分析
+- - '#'
+  - 9. [Smashing Media](http://www.smashing-media.com)

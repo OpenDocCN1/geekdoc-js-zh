@@ -1,0 +1,2652 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 741 1186" preserveaspectratio="none">
+<image width="741" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre5">Web App Development Book</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre5">Guide to Ember.js</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre9"> </span></p>
+<p><span class="calibre10">David V.</span></p>
+<p><span class="calibre11"> </span></p>
+<p><span class="calibre13">Copyright©2016 by</span><span
+class="calibre9"> </span><span class="calibre13">David V</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre13">All Rights Reserved</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre8">Copyright © 2016 by David V</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre8">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span id="part0000_split_002.html__Toc456647991"></span><span
+id="part0000_split_002.html__Toc457334826"></span><span
+id="part0000_split_002.html__Toc457334968"></span><span
+id="part0000_split_002.html__Toc457335461"></span><span
+id="part0000_split_002.html__Toc458280769"></span><span
+id="part0000_split_002.html__Toc458284839"><span class="calibre5">Table
+of Contents</span></span></p>
+<p><span id="part0000_split_002.html_toc"></span><a
+href="#part0000_split_004.html__Toc458284840"><span
+class="calibre21">Introduction</span></a></p>
+<p><a href="#part0000_split_005.html__Toc458284841"><span
+class="calibre21">Chapter 1- Controllers</span></a></p>
+<p><a href="#part0000_split_007.html__Toc458284842"><span
+class="calibre21">Chapter 2- Models</span></a></p>
+<p><a href="#part0000_split_026.html__Toc458284844"><span
+class="calibre21">Chapter 3- Application Concerns</span></a></p>
+<p><a href="#part0000_split_037.html__Toc458284845"><span
+class="calibre21">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span id="part0000_split_003.html__Toc453019727"><span
+class="calibre23">Disclaimer</span></span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre8"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre24" id="part0000_split_004.html_calibre_pb_6"><br />
+<span id="part0000_split_004.html__Toc458284840" class="calibre27"><span
+id="part0000_split_004.html_2B-024f0ee89d4242d4b120931cc4d4dcb1"
+class="calibre28">Introduction</span></span></h1>
+<h1 class="calibre29"><span class="calibre30"> </span></h1>
+<p><span class="calibre8">There is an increase in the demand for web
+apps. Ember JS is a JavaScript which can assist in development of such
+apps. The framework is easy to learn, and especially for JavaScript
+experts. However, even if you are not good in JavaScript at all, you
+don’t have to worry, as the explanations in this book are very easy for
+you to understand. With this JavaScript, you can create web apps with
+very interactive user interfaces, and your users will definitely like
+your apps. </span></p>
+<div id="part0000_split_004.html_calibre_pb_9" class="calibre18">
+
+</div>
+</div>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_10"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_005.html__Toc458284841" class="calibre27"><span
+class="calibre28">Chapter 1- Controllers</span></span></h1>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Controllers are much like components, and it
+is believed that these will be replaced by components in the future.
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In most of the current apps, controllers are
+not used much. When they are used, they are tasked with the following
+responsibilities:</span></p>
+<p><span class="calibre8"> </span></p>
+<ol type="1">
+<li><span class="calibre8">Used for maintaining state based on the route
+in use currently. </span></li>
+</ol>
+<p><span class="calibre8"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre8">When the user actions are passing from a
+component to a route, they have to pass through a controller.
+</span></li>
+</ol>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">We need to demonstrate this by use of a route
+which will help us display a blog post. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The template will be bound to the following
+properties in the template:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span
+class="calibre3">&lt;h1&gt;{{model.title}}&lt;/h1&gt;</span></p>
+<p><span class="calibre3">&lt;h2&gt;by
+{{model.author}}&lt;/h2&gt;</span></p>
+<p><span class="calibre3">&lt;div class="intro"&gt;</span></p>
+<p><span class="calibre3"> {{model.intro}}</span></p>
+<p><span class="calibre3">&lt;/div&gt;</span></p>
+<p><span class="calibre3">&lt;hr&gt;</span></p>
+<p><span class="calibre3">&lt;div class="body"&gt;</span></p>
+<p><span class="calibre3"> {{model.body}}</span></p>
+<p><span class="calibre3">&lt;/div&gt;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">As shown in the above example, we do not have
+specific properties or actions to display. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Suppose that we need to add a feature which
+will allow the user to toggle between the displays of your body
+sections. For us to implement this, we would modify the code to the
+following:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span
+class="calibre3">&lt;h1&gt;{{model.title}}&lt;/h1&gt;</span></p>
+<p><span class="calibre3">&lt;h2&gt;by
+{{model.author}}&lt;/h2&gt;</span></p>
+<p><span class="calibre3">&lt;div class='intro'&gt;</span></p>
+<p><span class="calibre3"> {{model.intro}}</span></p>
+<p><span class="calibre3">&lt;/div&gt;</span></p>
+<p><span class="calibre3">&lt;hr&gt;</span></p>
+<p><span class="calibre3">{{#if isExpanded}}</span></p>
+<p><span class="calibre3"> &lt;button {{action "toggleBody"}}&gt;Hide
+the Body&lt;/button&gt;</span></p>
+<p><span class="calibre3"> &lt;div class="body"&gt;</span></p>
+<p><span class="calibre3">   {{model.body}}</span></p>
+<p><span class="calibre3"> &lt;/div&gt;</span></p>
+<p><span class="calibre3">{{else}}</span></p>
+<p><span class="calibre3"> &lt;button {{action "toggleBody"}}&gt;Show
+the Body&lt;/button&gt;</span></p>
+<p><span class="calibre3">{{/if}}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the “</span><span
+class="calibre36">actions”</span><span class="calibre8"> hook of our
+controller, we can define what our action will be doing as we can do it
+with a component. This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Controller.extend({</span></p>
+<p><span class="calibre3"> actions: {</span></p>
+<p><span class="calibre3">   toggleBody() {</span></p>
+<p><span
+class="calibre3">     this.toggleProperty('isExpanded');</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_005.html_calibre_pb_13" class="calibre18">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Management of Dependencies between
+Controllers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Sometimes, when we are nesting resources, we
+usually need to establish a connection between two controllers. Consider
+the router given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">Router.map(function() {</span></p>
+<p><span class="calibre3"> this.route('post', { path: '/p/:post_id' },
+function() {</span></p>
+<p><span class="calibre3">   this.route('comments', { path: '/comments'
+});</span></p>
+<p><span class="calibre3"> });</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">On visiting the URL “</span><span
+class="calibre36">/posts/1/comments,</span><span class="calibre8">” the
+model “</span><span class="calibre36">post” </span><span
+class="calibre8">will be loaded into the model of the PostController.
+However, some information related to it might be displayed in the
+template for “</span><span class="calibre36">comments.”</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For us to do this, we have to inject the
+“</span><span class="calibre36">pController</span><span
+class="calibre8">” into our “CommentsController.”  This is shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Controller.extend({</span></p>
+<p><span class="calibre3"> pController:
+Ember.inject.controller('post')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Our comments will be in a position to access
+the “</span><span class="calibre36">PController,”</span><span
+class="calibre8"> which is a read-only alias which can be used for
+reading the model from the controller. Consider the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Controller.extend({</span></p>
+<p><span class="calibre3"> pController:
+Ember.inject.controller('post'),</span></p>
+<p><span class="calibre3"> post:
+Ember.computed.reads('pController.model')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">Consider the next one for the .hbs
+file:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;h1&gt;Comments for the
+{{post.title}}&lt;/h1&gt;</span></p>
+<p><span class="calibre3">&lt;ul&gt;</span></p>
+<p><span class="calibre3"> {{#each model as |comment|}}</span></p>
+<p><span
+class="calibre3">   &lt;li&gt;{{comment.text}}&lt;/li&gt;</span></p>
+<p><span class="calibre3"> {{/each}}</span></p>
+<p><span class="calibre3">&lt;/ul&gt;</span></p>
+<div id="part0000_split_006.html_calibre_pb_15" class="calibre18">
+
+</div>
+</div>
+<p><span id="part0000_split_007.html"></span></p>
+<section id="part0000_split_007.html_calibre_pb_16"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_007.html__Toc458284842" class="calibre27"><span
+class="calibre28">Chapter 2- Models</span></span></h1>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">One of the ways to build web applications is
+to implement user interface components which are highly coupled to data
+fetching. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider a situation in which you are creating
+a blog app. If you are creating the admin part of the app, you may be
+forced to give the component the responsibility of fetching and storing
+the data. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;h1&gt;Comments for
+{{post.title}}&lt;/h1&gt;</span></p>
+<p><span class="calibre3">&lt;ul&gt;</span></p>
+<p><span class="calibre3"> {{#each model as |comment|}}</span></p>
+<p><span
+class="calibre3">   &lt;li&gt;{{comment.text}}&lt;/li&gt;</span></p>
+<p><span class="calibre3"> {{/each}}</span></p>
+<p><span class="calibre3">&lt;/ul&gt;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The list of drafts contained in the template
+of the component can then be shown. The following code demonstrates
+this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;ul&gt;</span></p>
+<p><span class="calibre3"> {{#each drafts key="id" as
+|draft|}}</span></p>
+<p><span
+class="calibre3">   &lt;li&gt;{{draft.title}}&lt;/li&gt;</span></p>
+<p><span class="calibre3"> {{/each}}</span></p>
+<p><span class="calibre3">&lt;/ul&gt;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Note that the app is made up of a number of
+components. You may want to have all of the drafts displayed on another
+page. This may require copying and pasting the old code into the new
+component:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre3"> willRender() {</span></p>
+<p><span class="calibre3">   $.getJSON('/myDrafts').then(data =&gt;
+{</span></p>
+<p><span class="calibre3">     this.set('drafts', data);</span></p>
+<p><span class="calibre3">   });</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The .hbs file for the button code should be as
+follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{{#link-to 'drafts'
+tagName="button"}}</span></p>
+<p><span class="calibre3">Drafts ({{drafts.length}})</span></p>
+<p><span class="calibre3">{{/link-to}}</span></p>
+<p><span class="calibre8">With the above, our app will make two requests
+which are separate but for the same information. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember data, the representation of a model
+is done using a subclass of the model which defines the relationships,
+attributes, and the behavior of the data which is presented to the user.
+With models, one can define the kind of data which the server will
+provide to us. Consider the example given below of a model named
+“</span><span class="calibre36">human”</span><span
+class="calibre8">:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> fName: DS.attr('string'),</span></p>
+<p><span class="calibre3"> birthday:  DS.attr('date')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A model can also describe the relationship
+between itself and the rest of the models. Consider the example given
+below, which shows how this can be done:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> lItems: DS.hasMany('line-item')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">The above code is for an order. The code for
+the “</span><span class="calibre36">line.js”</span><span
+class="calibre8"> should be as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> order: DS.belongsTo('order')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">You have to note that the models themselves do
+not have data, but they are used for definition of the attributes,
+relationships, and the behavior of specific instances referred to as
+“</span><span class="calibre36">records.”</span><span class="calibre8">
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Creating Records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">When you need to create records, you just have
+to call the method “</span><span
+class="calibre36">createRecord()”</span><span class="calibre8"> on your
+store. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">store.createRecord('post', {</span></p>
+<p><span class="calibre3"> title: 'Ember is a Great
+Framework',</span></p>
+<p><span class="calibre3"> body: 'Lorem ipsum'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">The stored object will be available to the
+controllers and the routers by use of “</span><span
+class="calibre36">this.store.”</span><span class="calibre8"> </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Updating Records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">You can make changes to the Ember JS data
+records by setting the attribute which you are in need of changing. This
+is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">this.store.findRecord('human',
+1).then(function(myfunction) {</span></p>
+<p><span class="calibre3"> // ...once the record has been
+loaded</span></p>
+<p><span class="calibre3"> myfunction.set('fName', "John");</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">All Ember.js conveniences are always available
+for modification of attributes. This can be done as shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">human.incrementProperty('age'); // Happy
+birthday!</span></p>
+<div id="part0000_split_007.html_calibre_pb_19" class="calibre18">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_008.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Persisting Records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember JS, records are persisted on the
+basis of a per-instance. When you call the method “</span><span
+class="calibre36">save()”</span><span class="calibre8"> on any instance
+of the DS.Model, a network request will be made. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">By default, newly created records in EmberJS
+will be posted to their type URL in Ember data. This is shown in the
+following code:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var p = store.createRecord('post',
+{</span></p>
+<p><span class="calibre3"> title: 'Ember is Great',</span></p>
+<p><span class="calibre3"> body: 'Lorem ipsum'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">p.save(); // =&gt; POST to '/posts'</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Records which exist on the backend will be
+updated by use of the HTTP PATCH verb. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">store.findRecord('post', 1).then(function(p)
+{</span></p>
+<p><span class="calibre3"> p.get('title'); // =&gt; "Ember JS is
+Great"</span></p>
+<p><span class="calibre3"> p.set('title', 'New post');</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> p.save(); // =&gt; PATCH to
+'/posts/1'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">human.get('isAdmin');            //=&gt;
+false</span></p>
+<p><span class="calibre3">human.get('hasDirtyAttributes'); //=&gt;
+false</span></p>
+<p><span class="calibre3">human.set('isAdmin', true);</span></p>
+<p><span class="calibre3">human.get('hasDirtyAttributes'); //=&gt;
+true</span></p>
+<p><span class="calibre3">human.changedAttributes();       //=&gt; {
+isAdmin: [false, true] }</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">One can tell if an outstanding record has some
+outstanding changes which have not yet been saved by checking on its
+property “hasDirtyAttributes.”</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">At the above point, you can just save the
+changes by calling the “</span><span
+class="calibre36">save()”</span><span class="calibre8"> method or just
+roll them back. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">human.get('hasDirtyAttributes'); //=&gt;
+true</span></p>
+<p><span class="calibre3">human.changedAttributes();       //=&gt; {
+isAdmin: [false, true] }</span></p>
+<p><span class="calibre3">human.rollbackAttributes();</span></p>
+<p><span class="calibre3">human.get('hasDirtyAttributes'); //=&gt;
+false</span></p>
+<p><span class="calibre3">human.get('isAdmin');            //=&gt;
+false</span></p>
+<p><span class="calibre3">human.changedAttributes();       //=&gt;
+{}</span></p>
+<p><br />
+<span class="calibre8"> </span></p>
+<p><span class="calibre37">Handling Validation Errors</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case your backend server returns validation
+errors once you try to save, the property “</span><span
+class="calibre36">errors”</span><span class="calibre8"> of your model
+will havethese. The errors can be displayed as shown below:</span></p>
+<p><span class="calibre3">{{#each p.errors.title as |err|}}</span></p>
+<p><span class="calibre3"> &lt;div
+class="error"&gt;{{err.message}}&lt;/div&gt;</span></p>
+<p><span class="calibre3">{{/each}}</span></p>
+<p><span class="calibre3">{{#each p.errors.body as |err|}}</span></p>
+<p><span class="calibre3"> &lt;div
+class="error"&gt;{{err.message}}&lt;/div&gt;</span></p>
+<p><span class="calibre3">{{/each}}</span></p>
+<div id="part0000_split_008.html_calibre_pb_21" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_009.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Promises</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The “</span><span
+class="calibre36">save()”</span><span class="calibre8">  method will
+return a promise, and this will make it easy for us to handle scenarios
+of either success or failure. Consider the common pattern which is shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var p = store.createRecord('post',
+{</span></p>
+<p><span class="calibre3"> title: 'Ember is Great',</span></p>
+<p><span class="calibre3"> body: 'Lorem ipsum'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">var self = this;</span></p>
+<p><span class="calibre3">function transitionToPost(p) {</span></p>
+<p><span class="calibre3"> self.transitionToRoute('posts.show',
+p);</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre3">function failure(reason) {</span></p>
+<p><span class="calibre3"> // handling the error</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span
+class="calibre3">p.save().then(transitionToPost).catch(failure);</span></p>
+<p><span class="calibre3">// =&gt; POST to '/posts'</span></p>
+<p><span class="calibre3">// =&gt; transitioning to posts.show
+route</span></p>
+<div id="part0000_split_009.html_calibre_pb_23" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_010.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Deleting Records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Deletion of records can be done in the same
+manner as creating records. The method “</span><span
+class="calibre36">deleteRecord()”</span><span class="calibre8"> can be
+called on the instance of the DS.Model. This will then flag the record
+as “</span><span class="calibre36">isDeleted.”</span><span
+class="calibre8"> This should be followed by the calling of the method
+“</span><span class="calibre36">save()”</span><span class="calibre8">
+which will save the deletion of the record. Consider the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">store.findRecord('post', 1).then(function(p)
+{</span></p>
+<p><span class="calibre3"> p.deleteRecord();</span></p>
+<p><span class="calibre3"> p.get('isDeleted'); // =&gt; true</span></p>
+<p><span class="calibre3"> p.save(); // =&gt; DELETE to
+/posts/1</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">// OR</span></p>
+<p><span class="calibre3">store.findRecord('post',
+2).then(function(post) {</span></p>
+<p><span class="calibre3"> p.destroyRecord(); // =&gt; DELETE to
+/posts/2</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_010.html_calibre_pb_25" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_011.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Relationships</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Ember has several built-in relationships which
+define how the models relate to each other. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">One-to-One</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If you need to declare this type of
+relationship between two models, use the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Here is the code for the file “</span><span
+class="calibre36">myuser.js”</span><span class="calibre8">:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> profile: DS.belongsTo('profile')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The file “</span><span
+class="calibre36">profile.js”</span><span class="calibre8"> should then
+be as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> user: DS.belongsTo('myuser')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">One-to-Many relationship</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">This type of relationship can be declared as
+follows between two models:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below for the file
+“</span><span class="calibre36">myposts.js”</span><span
+class="calibre8">:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> comments: DS.hasMany('comment')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Here should be the code for the file
+“our</span><span class="calibre36">comments.js”</span><span
+class="calibre8">:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> post: DS.belongsTo('p')</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_011.html_calibre_pb_27" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Explicit Inverses</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Ember JS will do the best it can to discover
+the kind of relationship existing between components. Sometimes, you
+might have many different types of relationships for the same type.
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> firstPost: DS.belongsTo('post', { inverse:
+null }),</span></p>
+<p><span class="calibre3">secondPost: DS.belongsTo('mypost'),</span></p>
+<p><span class="calibre3"> redPost: DS.belongsTo('mypost'),</span></p>
+<p><span class="calibre3"> bluePost: DS.belongsTo('mypost')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Here is the code for the file “</span><span
+class="calibre36">mypost.js”</span><span class="calibre8">:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> comments: DS.hasMany('comment', {</span></p>
+<p><span class="calibre3">   inverse: 'redPost'</span></p>
+<p><span class="calibre3"> })</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">That is how we have linked the two files
+together. Note that we have  many relationships. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Reflexive Relationships</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For a reflexive relationship to be defined,
+you should have the inverse relationship already defined. If you do not
+have the inverse relationship, you can set it to “</span><span
+class="calibre36">null.”</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the example given below, which shows
+a reflexive inverse relationship:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> children: DS.hasMany('folder', { inverse:
+'parent' }),</span></p>
+<p><span class="calibre3"> parent: DS.belongsTo('folder', { inverse:
+'children' })</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The example given below shows a one-to-one
+reflexive relationship:</span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> name: DS.attr('string'),</span></p>
+<p><span class="calibre3"> bFriend: DS.belongsTo('user', { inverse:
+'bFriend' }),</span></p>
+<p><span class="calibre3">});              </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A reflexive relationship without an inverse
+can be defined as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> parent: DS.belongsTo('folder', { inverse:
+null })</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Creating records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Suppose that we have two models, namely
+“</span><span class="calibre36">myposts”</span><span class="calibre8">
+and “</span><span class="calibre36">comments.”</span><span
+class="calibre8"> These two are related as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">mypsosts.js:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> comments: DS.hasMany('comment')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The file “</span><span
+class="calibre36">comment.js”</span><span class="calibre8"> is as
+follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> post: DS.belongsTo('post')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Once a user has commented on a post, a
+relationship has to be created between two records. The relationship
+“</span><span class="calibre36">belongsTo”</span><span class="calibre8">
+can simply be set to the comment as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">let comm = this.store.createRecord('comment',
+{</span></p>
+<p><span class="calibre3"> post: p</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">comm.save();</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">With the above code, a new comment will be
+created and then saved to the server. The post will also be updated by
+the Ember server so that the newly created comment can be included.
+</span></p>
+<p><span class="calibre8">For us to link two records, we can also update
+the “</span><span class="calibre36">hasMany”</span><span
+class="calibre8"> relationship for the post. This is shown in the code
+given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">let comm = this.store.createRecord('comment',
+{</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">p.get('comments').pushObject(comm);</span></p>
+<p><span class="calibre3">comm.save();</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In our above case, the relationship
+“</span><span class="calibre36">belongsTo”</span><span class="calibre8">
+for the new comment will be set to the parent post. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case you have created the property
+“</span><span class="calibre36">author”</span><span class="calibre8">
+for your post, it will not work if the user of that id has not been
+loaded into the store. The code given below best describes
+this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">this.store.createRecord('post', {</span></p>
+<p><span class="calibre3"> title: 'Ember is great',</span></p>
+<p><span class="calibre3"> body: 'Lorem ipsum',</span></p>
+<p><span class="calibre3"> author: this.store.findRecord('user',
+1)</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">However, the relationship can easily be set
+once the promise has been fulfilled:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.createRecord('post',
+{</span></p>
+<p><span class="calibre3"> title: 'Ember is Great',</span></p>
+<p><span class="calibre3"> body: 'Lorem ipsum'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre3">this.store.findRecord('user',
+1).then(function(user) {</span></p>
+<p><span class="calibre3"> post.set('author', user);</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Updating of Existing Records</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Sometimes, we might need to set relationships
+on records which are already in existence. This can simply be done by
+use of the “</span><span class="calibre36">belongsTo”</span><span
+class="calibre8"> relationship. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">let comm = this.store.peekRecord('comment',
+1);</span></p>
+<p><span class="calibre3">comm.set('post', p);</span></p>
+<p><span class="calibre3">comm.save();</span></p>
+<p><span class="calibre8">Alternatively, the record can be pushed into
+the relationship “</span><span class="calibre36">hasMany”</span><span
+class="calibre8"> so as to update it. This is shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">let comm = this.store.peekRecord('comment',
+1);</span></p>
+<p><span class="calibre3">p.get('comments').pushObject(comm);</span></p>
+<p><span class="calibre3">p.save();</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">How to remove Relationships</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For a “</span><span
+class="calibre36">belongsTo”</span><span class="calibre8"> relationship
+to be removed, we can just set it to null. This will remove it from the
+side of “</span><span class="calibre36">hasMany”</span><span
+class="calibre8"> relationship. Consider the code given below which best
+demonstrates this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let comm = this.store.peekRecord('comment',
+1);</span></p>
+<p><span class="calibre3">comm.set('post', null);</span></p>
+<p><span class="calibre3">comm.save();</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A record can also be removed from a
+“</span><span class="calibre36">hasMany”</span><span class="calibre8">
+relationship. Consider the code given below which best shows how this
+can be done:</span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">let comm = this.store.peekRecord('comment',
+1);</span></p>
+<p><span
+class="calibre3">p.get('comments').removeObject(comm);</span></p>
+<p><span class="calibre3">p.save();</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Relationships as Promises</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Whenever you are working relationships, it is
+good for you to always remember that these will return promises. Suppose
+that we are to work on the asynchronous comments of a post, we should
+wait until our promise has been fulfilled. Consider the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = this.store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">p.get('comments').then((comments) =&gt;
+{</span></p>
+<p><span class="calibre3"> // we can now work with the
+comments</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The same will be applied to the relationship
+“</span><span class="calibre36">hasMany”</span><span class="calibre8">
+as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let comm = this.store.peekRecord('comment',
+1);</span></p>
+<p><span class="calibre3">comm.get('post').then((p) =&gt; {</span></p>
+<p><span class="calibre3"> // the post will be available here</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Handlebars templates are updated automatically
+for reflection of a resolved promise. A list of comments can be
+displayed in a post as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;ul&gt;</span></p>
+<p><span class="calibre3"> {{#each p.comments as |comm|}}</span></p>
+<p><span class="calibre3">   &lt;li&gt;{{comm.id}}&lt;/li&gt;</span></p>
+<p><span class="calibre3"> {{/each}}</span></p>
+<p><span class="calibre3">&lt;/ul&gt;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span id="part0000_split_012.html__Toc458284843"><span
+class="calibre39">Pushing Records into Store</span></span></p>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<section id="part0000_split_013.html_calibre_pb_29"
+class="calibre40 calibre1">
+<h1 class="calibre40"><span class="calibre41"> </span></h1>
+<p><span class="calibre8">A store can be thought of as a cache which
+contains all the records which have been loaded by the app. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For you to push records into a store, you just
+have to call the “</span><span class="calibre36">push()”</span><span
+class="calibre8"> method. Consider a situation in which we are in need
+of preloading some data into the store once an app has been launched for
+the first time. This can  easily be done using “</span><span
+class="calibre36">route:application.</span><span class="calibre8">”
+Consider the code given below:</span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> title: DS.attr(),</span></p>
+<p><span class="calibre3"> artist: DS.attr(),</span></p>
+<p><span class="calibre3"> songCount: DS.attr()</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the next piece of code:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default Ember.Route.extend({</span></p>
+<p><span class="calibre3"> model() {</span></p>
+<p><span class="calibre3">   this.store.push({</span></p>
+<p><span class="calibre3">     data: [{</span></p>
+<p><span class="calibre3">       id: 1,</span></p>
+<p><span class="calibre3">       type: 'album',</span></p>
+<p><span class="calibre3">       attributes: {</span></p>
+<p><span class="calibre3">         title: 'Very Few Moving
+Parts',</span></p>
+<p><span class="calibre3">         artist: 'John Joel',</span></p>
+<p><span class="calibre3">         songCount: 5</span></p>
+<p><span class="calibre3">       },</span></p>
+<p><span class="calibre3">       relationships: {}</span></p>
+<p><span class="calibre3">     }, {</span></p>
+<p><span class="calibre3">       id: 2,</span></p>
+<p><span class="calibre3">       type: 'album',</span></p>
+<p><span class="calibre3">       attributes: {</span></p>
+<p><span class="calibre3">         title: 'Our God is Great all the
+time',</span></p>
+<p><span class="calibre3">         artist: 'Steve John',</span></p>
+<p><span class="calibre3">         songCount: 3</span></p>
+<p><span class="calibre3">       },</span></p>
+<p><span class="calibre3">       relationships: {}</span></p>
+<p><span class="calibre3">     }]</span></p>
+<p><span class="calibre3">   });</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If there is a need for the data to be
+normalized by the default serializer of the model before it can be
+pushed to the store, one can use the method “</span><span
+class="calibre36">story.pushPayLoad().”</span><span
+class="calibre8">This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.RestSerializer.extend({</span></p>
+<p><span class="calibre3"> normalize(typeHash, hash) {</span></p>
+<p><span class="calibre3">   hash['songCount'] =
+hash['song_count']</span></p>
+<p><span class="calibre3">   delete hash['song_count']</span></p>
+<p><span class="calibre3">   return this._super(typeHash,
+hash);</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">})</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The next code should be as shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default Ember.Route.extend({</span></p>
+<p><span class="calibre3"> model() {</span></p>
+<p><span class="calibre3">   this.store.pushPayload({</span></p>
+<p><span class="calibre3">     albums: [</span></p>
+<p><span class="calibre3">       {</span></p>
+<p><span class="calibre3">         id: 1,</span></p>
+<p><span class="calibre3">         title: 'Very Fever Moving
+Parts',</span></p>
+<p><span class="calibre3">         artist: 'John Joel',</span></p>
+<p><span class="calibre3">         song_count: 5</span></p>
+<p><span class="calibre3">       },</span></p>
+<p><span class="calibre3">       {</span></p>
+<p><span class="calibre3">         id: 2,</span></p>
+<p><span class="calibre3">         title: 'Our God is Great all the
+time',</span></p>
+<p><span class="calibre3">         artist: 'Steve John',</span></p>
+<p><span class="calibre3">         song_count: 2</span></p>
+<p><span class="calibre3">       }</span></p>
+<p><span class="calibre3">     ]</span></p>
+<p><span class="calibre3">   });</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The method “</span><span
+class="calibre36">push()”</span><span class="calibre8"> is very
+important when it comes to working with endpoints which are complex.
+Your application might have  an endpoint which is tasked with the
+performing of some business logic and create several records. The code
+given below best demonstrates this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default Ember.Route.extend({</span></p>
+<p><span class="calibre3"> actions: {</span></p>
+<p><span class="calibre3">   confirm: function(d) {</span></p>
+<p><span class="calibre3">     $.ajax({</span></p>
+<p><span class="calibre3">       data: d,</span></p>
+<p><span class="calibre3">       method: 'POST',</span></p>
+<p><span class="calibre3">       url: 'process-payment'</span></p>
+<p><span class="calibre3">     }).then((digInventory) =&gt; {</span></p>
+<p><span
+class="calibre3">       this.store.pushPayload(digInventory);</span></p>
+<p><span class="calibre3">       this.transitionTo('Thanks');</span></p>
+<p><span class="calibre3">     });</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_013.html_calibre_pb_30" class="calibre18">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Handling MetaData</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Along with your records returned from the
+store, some form of metadata will need to be handled. Metadata is just a
+kind of data which goes along with some specific model or a type instead
+of a record. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Pagination is a common way that  metadata can
+be used. Consider a blog with many posts which cannot be displayed at
+once. These can be queried as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let res = this.store.query('post',
+{</span></p>
+<p><span class="calibre3"> limit: 10,</span></p>
+<p><span class="calibre3"> offset: 0</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">To get different pages of the data, the offset
+can be changed in increments of 10. The problem is  knowing the number
+of pages of data that you are having. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For us to get different pages of data, the
+offset can be set in increments of 10. For the case of the server, it
+needs to return the total number of the records as a metadata piece.
+</span></p>
+<p><span class="calibre8">Each serializer is expecting the metadata to
+be returned differently. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "post": {</span></p>
+<p><span class="calibre3">   "id": 1,</span></p>
+<p><span class="calibre3">   "title": "Ember is easy to learn for
+beginners",</span></p>
+<p><span class="calibre3">   "comments": ["1", "2"],</span></p>
+<p><span class="calibre3">   "links": {</span></p>
+<p><span class="calibre3">     "user": "/posts/ember"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   // ...</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> "meta": {</span></p>
+<p><span class="calibre3">   "total": 100</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Regardless of the serializer that is used, the
+metadata will be extracted from the purpose. To read it, you can make
+use of </span><span class="calibre36">“.get('meta').” </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">This can be applied on the result of the
+“</span><span class="calibre36">store.query()”</span><span
+class="calibre8"> call. Here is the code:</span></p>
+<p><span class="calibre3">store.query('post').then((res) =&gt;
+{</span></p>
+<p><span class="calibre3"> let metad = res.get('meta');</span></p>
+<p><span class="calibre3">})</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If we have a belongsTo relationship, this can
+be done as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">p.get('author').then((author) =&gt;
+{</span></p>
+<p><span class="calibre3"> let metad = author.get('meta');</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">On a hasMany relationship, this can be done as
+follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">let p = store.peekRecord('post',
+1);</span></p>
+<p><span class="calibre3">p.get('comments').then((comments) =&gt;
+{</span></p>
+<p><span class="calibre3"> let metad = comments.get('meta');</span></p>
+<p><span class="calibre42">});</span></p>
+<div id="part0000_split_014.html_calibre_pb_32" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Customizations of Adapters</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember data, the Adapter is tasked with the
+determination of how the data is persisted to a backend store, such as
+ the URL format and headers of a RESTful API. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For an endpoint having some consistent rules,
+one can define a “</span><span
+class="calibre36">adapter:application.</span><span
+class="calibre8">”This will get a priority over a default adapter, but
+it will be superseded by adapters which are model specific. This is
+shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> // Application specific overrides go
+here</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For a model having some specific rules about
+how it communicates with the backend compared to the others, a model
+specific adapter can be creating by execution of the command “ember
+generate adapter adapter-name.” A good example is that when you run the
+command “</span><span class="calibre36">ember generate adapter
+post,</span><span class="calibre8">” the following file will be
+created:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> namespace: 'api/v1'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">By default, the Ember data will come with
+multiple built-in adapters. If you are in need of creating your own
+custom adapter, use these as your starting point. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">URL Conventions</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The adapter “JSONAPIAdapter” is good when it
+comes to determination of the URLS which it uses to communicate
+depending on the type of the model. Consider the example given below of
+when a post is asked for by ID:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">store.find('post', 1).then(function(p)
+{</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_015.html_calibre_pb_34" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_016.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Pluralization Customization</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Sometimes, you may need to facilitate the
+process of pluralization of model names whenever you are generating
+route URLs . The Ember reflector can be used for this purpose. This is a
+library which can be used for the purpose of alternating words from
+plural to singular form and vice versa. For uncountable or irregular
+pluralizations, one can make use of “Ember.Inflector.inflector.” This
+can easily be done as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">// setting up the Ember.Inflector</span></p>
+<p><span class="calibre3">import
+'./models/custom-inflector-rules';</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The next code is given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import Inflector from
+'ember-inflector';</span></p>
+<p><span class="calibre3">const inflect =
+Inflector.inflector;</span></p>
+<p><span class="calibre3">inflect.irregular('formula',
+'formulae');</span></p>
+<p><span class="calibre3">inflect.uncountable('advice');</span></p>
+<p><span class="calibre3">// Meeting the expectation of Ember Inspector
+of an export</span></p>
+<p><span class="calibre3">export default {};</span></p>
+<div id="part0000_split_016.html_calibre_pb_36" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre39">Customizing Endpoint Path</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The property “</span><span
+class="calibre36">namespace”</span><span class="calibre8"> will be used
+for prefixing requests having a specific URL namespace. This is shown in
+the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> namespace: 'api/1'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">That is how it can be done.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Host Customizations</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The adapter targets the current domain by
+default. If you are in need of specifying a new domain, you just have to
+set the property “</span><span class="calibre36">host”</span><span
+class="calibre8"> on the new adapter. The code given below best shows
+how this can be done:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> host: 'https://api.sample.com'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">That is it.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Path Customizations</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The method “</span><span
+class="calibre36">pathForType”</span><span class="calibre8"> can be
+overridden as shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> pathForType: function(type) {</span></p>
+<p><span class="calibre3">   return
+Ember.String.underscore(type);</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the above case, we did not need to
+pluralize the names of the model, and we needed to use the underscore
+rather than the camelCase. </span></p>
+<div id="part0000_split_017.html_calibre_pb_38" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Headers Customizations</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Some APIs need HTTP headers, and a good
+example is when there is a need for provision of an API key. Arbitrary
+headers can then be set as the key/value pairs on the header object of
+the JSONAPIAdapter, and the Ember data will send along each of our Ajax
+requests. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> headers: {</span></p>
+<p><span class="calibre3">   'API_KEY': 'secret key',</span></p>
+<p><span class="calibre3">   'ANOTHER_HEADER': 'A header
+value'</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">One can also use “</span><span
+class="calibre36">headers”</span><span class="calibre8"> as the computed
+property for the purpose of supporting dynamic headers. Consider the
+example given below in which the headers will be generated by use of
+computed property depending on the session service. Here is the code for
+the example:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> session:
+Ember.inject.service('session'),</span></p>
+<p><span class="calibre3"> headers: Ember.computed('session.authToken',
+function() {</span></p>
+<p><span class="calibre3">   return {</span></p>
+<p><span class="calibre3">     'API_KEY':
+this.get('session.authToken'),</span></p>
+<p><span class="calibre3">     'ANOTHER_HEADER': 'A header
+value'</span></p>
+<p><span class="calibre3">   };</span></p>
+<p><span class="calibre3"> })</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In some cases, the dynamic headers will need
+some data from the object outside the observer system of the Ember. The
+volatile function can also be used for the purpose of setting the
+property into a non-cached mode which will cause re-computation of the
+headers with each request. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> headers: Ember.computed(function()
+{</span></p>
+<p><span class="calibre3">   return {</span></p>
+<p><span class="calibre3">     'API_KEY':
+Ember.get(document.cookie.match(/apiKey\=([^;]*)/), '1'),</span></p>
+<p><span class="calibre3">     'ANOTHER_HEADER': 'A header
+value'</span></p>
+<p><span class="calibre3">   };</span></p>
+<p><span class="calibre3"> }).volatile()</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Authoring Adapters</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The property “</span><span
+class="calibre36">defaultSerializer”</span><span class="calibre8"> will
+be used for the purpose of specifying the serializer which will be used
+by the adapter. This is only used when a “serializer:application” or a
+model specific adapter has not been specified. Specification of the
+“serializer:application” is very easy in any application. Consider the
+example given below demonstrating how this can be done:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPIAdapter.extend({</span></p>
+<p><span class="calibre3"> defaultSerializer: '-default'</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_018.html_calibre_pb_40" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Customizing Serializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember data, serializers are used for
+formatting data which is sent to and received from our backend store.
+The default setting is that the Ember data will use the JSON API format
+for serialization of data. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">JSON API Document</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the response given below for our
+request:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "type": "people",</span></p>
+<p><span class="calibre3">   "id": "567",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "first-name": "John",</span></p>
+<p><span class="calibre3">     "last-name": "Joel"</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8">In the above example, we have a response from
+a request to “</span><span class="calibre36">/people/567.”</span><span
+class="calibre8">  A response having multiple records can have an array
+in the data property as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": [{</span></p>
+<p><span class="calibre3">   "type": "people",</span></p>
+<p><span class="calibre3">   "id": "567",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "first-name": "John",</span></p>
+<p><span class="calibre3">     "last-name": "Joel"</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }, {</span></p>
+<p><span class="calibre3">   "type": "people",</span></p>
+<p><span class="calibre3">   "id": "345",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "first-name": "Mercy",</span></p>
+<p><span class="calibre3">     "last-name": "Donald"</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }]</span></p>
+<p><span class="calibre3">}</span></p>
+<div id="part0000_split_019.html_calibre_pb_42" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Sideloaded Data</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">This is a type of data which is not part of a
+primary request but has some linked relationships which should be added
+in an array under the key “</span><span
+class="calibre36">included.”</span><span class="calibre8">  Consider the
+code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "type": "blogs",</span></p>
+<p><span class="calibre3">   "id": "1",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "title": "I really like and enjoy
+blogging!"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "links": {</span></p>
+<p><span class="calibre3">     "self":
+"http://mysite.com/blogs/1"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "relationships": {</span></p>
+<p><span class="calibre3">     "comments": {</span></p>
+<p><span class="calibre3">       "data": [</span></p>
+<p><span class="calibre3">         { "type": "comments", "id": "5"
+},</span></p>
+<p><span class="calibre3">         { "type": "comments", "id": "12"
+}</span></p>
+<p><span class="calibre3">       ]</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> "included": [{</span></p>
+<p><span class="calibre3">   "type": "comments",</span></p>
+<p><span class="calibre3">   "id": "5",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "body": "First!"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "links": {</span></p>
+<p><span class="calibre3">     "self":
+"http://mysite.com/comments/5"</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }, {</span></p>
+<p><span class="calibre3">   "type": "comments",</span></p>
+<p><span class="calibre3">   "id": "12",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "body": "Ember is very easy to
+learn"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "links": {</span></p>
+<p><span class="calibre3">     "self":
+"http://mysite.com/comments/12"</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }]</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8">In the example given above, we have requested
+ “</span><span class="calibre36">/blogs/1”</span><span class="calibre8">
+and the user also gave us the comments which are associated with the
+person. The above code shows the response that we get. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Customizing Serializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember data, “JSONAPISerializer” is used by
+default, but a custom serializer can be used for the purpose of
+overriding this. A custom serializer can be defined in two main ways.
+One can choose to define a custom serializer for the entire application
+by definition of the “application” serializer. This is shown in the code
+given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import DS from 'ember-data';</span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A serializer can also be defined for a
+specific model. A good example is when you have  a “</span><span
+class="calibre36">post”</span><span class="calibre8"> model, it is
+possible for you to also define a “</span><span
+class="calibre36">post”</span><span class="calibre8"> serializer. This
+is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import DS from 'ember-data';</span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For the format of the data sent to the backend
+store to be changed, one can use the “</span><span
+class="calibre36">serialize()”</span><span class="calibre8"> hook. This
+is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider a situation in which the Ember data
+gives us the following JSON API response:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "id": "1",</span></p>
+<p><span class="calibre3">     "name": "The Product",</span></p>
+<p><span class="calibre3">     "amount": 200,</span></p>
+<p><span class="calibre3">     "currency": "USD"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "type": "product"</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">However, our server might be expecting to get
+data in this format:</span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "id": "1",</span></p>
+<p><span class="calibre3">     "name": "The Product",</span></p>
+<p><span class="calibre3">     "cost": {</span></p>
+<p><span class="calibre3">       "amount": 200,</span></p>
+<p><span class="calibre3">       "currency": "USD"</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "type": "product"</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The data can then be changed as shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import DS from 'ember-data';</span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({</span></p>
+<p><span class="calibre3"> serialize(snapshot, opts) {</span></p>
+<p><span class="calibre3">   var json =
+this._super(...arguments);</span></p>
+<p><span class="calibre3">   json.data.attributes.cost = {</span></p>
+<p><span class="calibre3">     amount:
+json.data.attributes.amount,</span></p>
+<p><span class="calibre3">     currency:
+json.data.attributes.currency</span></p>
+<p><span class="calibre3">   };</span></p>
+<p><span class="calibre3">   delete
+json.data.attributes.amount;</span></p>
+<p><span class="calibre3">   delete
+json.data.attributes.currency;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">   return json;</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case the backend store is providing data in
+any  format other than the JSON API, one can use the hook “</span><span
+class="calibre36">normalizeResponse().”</span><span class="calibre8"> By
+use of the example given above, the server will provide us with data
+which looks as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "id": "1",</span></p>
+<p><span class="calibre3">     "name": "A Product",</span></p>
+<p><span class="calibre3">     "cost": {</span></p>
+<p><span class="calibre3">       "amount": 200,</span></p>
+<p><span class="calibre3">       "currency": "USD"</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "type": "product"</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The above should be changed to the
+following:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "id": "1",</span></p>
+<p><span class="calibre3">     "name": "A Product",</span></p>
+<p><span class="calibre3">     "amount": 200,</span></p>
+<p><span class="calibre3">     "currency": "USD"</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   "type": "product"</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">It should then be done as shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import DS from 'ember-data';</span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({</span></p>
+<p><span class="calibre3"> normalizeResponse(store, primModelClass,
+payload, id, reqType) {</span></p>
+<p><span class="calibre3">   payload.data.attributes.amount =
+payload.data.attributes.cost.amount;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">   payload.data.attributes.currency =
+payload.data.attributes.cost.currency;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">   delete
+payload.data.attributes.cost;</span></p>
+<p><span class="calibre3">   return
+this._super(...arguments);</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">IDs</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If you are in need of tracking the unique
+records contained in a store, the Ember data expects that each record
+should have a unique id property in the payload. For each record of a
+specific type, the id should also be unique. If the backend had used a
+different key rather than the “</span><span
+class="calibre36">id,”</span><span class="calibre8"> one can use the
+primary key property of the serializer so as to transform the id
+properly during the process of serialization and deserialization of the
+data. This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({</span></p>
+<p><span class="calibre3"> primaryKey: '_id'</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Attribute Names</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The convention in Ember data is to camelize
+the attribute names on a particular model. Consider the example given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> fName: DS.attr('string'),</span></p>
+<p><span class="calibre3"> lName:  DS.attr('string'),</span></p>
+<p><span class="calibre3"> isPersonOfTheYear:
+DS.attr('boolean')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The “JSONAPISerializer” is expecting the
+attributes to be dasherized in a document payload returned by the
+server. This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "id": "44",</span></p>
+<p><span class="calibre3">   "type": "people",</span></p>
+<p><span class="calibre3">   "attributes": {</span></p>
+<p><span class="calibre3">     "first-name": "John",</span></p>
+<p><span class="calibre3">     "last-name": "Joel",</span></p>
+<p><span class="calibre3">     "is-person-of-the-year": true</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case the attributes returned by the server
+use a very different convention, one can use the method “</span><span
+class="calibre36">keyForAttribute()”</span><span class="calibre8"> of
+the serializer for conversion of the attribute name in the model to a
+key in the JSON payload. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPISerializer.extend({</span></p>
+<p><span class="calibre3"> keyForAttribute: function(attribute)
+{</span></p>
+<p><span class="calibre3">   return
+Ember.String.underscore(attribute);</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A custom serializer can be used for mapping
+irregular keys. The object “</span><span
+class="calibre36">attrs”</span><span class="calibre8"> can be used for
+the purpose of declaring a simple mapping between different property
+names in the DS. Consider the sample code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> lName: DS.attr('string')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">What we have done is that we have created a
+custom serializer for our model and then overrode the property
+“</span><span class="calibre36">attrs.”</span><span class="calibre8">
+The next piece of code should be as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPISerializer.extend({</span></p>
+<p><span class="calibre3"> attrs: {</span></p>
+<p><span class="calibre3">   lName: 'lastNameOfPerson'</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_020.html_calibre_pb_44" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_021.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Relationships</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The ID property should be used for referencing
+to some other records. Consider a situation in which your model has the
+hasMany relationship shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> comments: DS.hasMany('comment', { async: true
+})</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The JSON should then encode the relationship
+just as an array of types and IDs. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "type": "posts",</span></p>
+<p><span class="calibre3">   "id": "1",</span></p>
+<p><span class="calibre3">   "relationships": {</span></p>
+<p><span class="calibre3">     "comments": {</span></p>
+<p><span class="calibre3">       "data": [</span></p>
+<p><span class="calibre3">         { "type": "comments", "id": "5"
+},</span></p>
+<p><span class="calibre3">         { "type": "comments", "id": "12"
+}</span></p>
+<p><span class="calibre3">       ]</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider a situation in which you have a model
+which is as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> origPost: DS.belongsTo('post')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The relationship should then be encoded by
+JSON into another record as an ID. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> "data": {</span></p>
+<p><span class="calibre3">   "type": "comment",</span></p>
+<p><span class="calibre3">   "id": "1",</span></p>
+<p><span class="calibre3">   "relationships": {</span></p>
+<p><span class="calibre3">     "original-post": {</span></p>
+<p><span class="calibre3">       "data": { "type": "post", "id": "5"
+},</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If these naming conventions are needed, then
+they can be overridden by use of the method “</span><span
+class="calibre36">keyForRelationship.”</span><span class="calibre8">
+Consider the code given below which best demonstrates this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONAPISerializer.extend({</span></p>
+<p><span class="calibre3"> keyForRelationship: function(key, relship)
+{</span></p>
+<p><span class="calibre3">   return key + 'Ids';</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_021.html_calibre_pb_46" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_022.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Creation of Custom Transformations</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Under certain circumstances, built-in types
+such as the string, Boolean, and others may not be adequate for us to
+implement what we need. A good example of this is when a particular
+server gives you a non-standard date format. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In Ember data, we may have new JSON transforms
+which have been registered to be used as attributes. The code given
+below best describes this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.Transform.extend({</span></p>
+<p><span class="calibre3"> serialize: function(val) {</span></p>
+<p><span class="calibre3">   return [value.get('a'),
+value.get('b')];</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> deserialize: function(val) {</span></p>
+<p><span class="calibre3">   return Ember.Object.create({ a: value[0],
+b: value[1] });</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The next code should then be as
+follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> position:
+DS.attr('coordinate-point')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">After receiving “</span><span
+class="calibre36">coordinatePoint”</span><span class="calibre8"> from
+the API, it is expected to be an array as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> cursor: {</span></p>
+<p><span class="calibre3">   position: [5,9]</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Once it has been loaded on an instance of a
+model, it will act as an object as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var c = store.findRecord('cursor',
+1);</span></p>
+<p><span class="calibre3">c.get('position.x'); //=&gt; 5</span></p>
+<p><span class="calibre3">c.get('position.y'); //=&gt; 9</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Once the position has been modified and then
+saved, it will be passed through the function “</span><span
+class="calibre36">serialize”</span><span class="calibre8"> in our
+transform and then be presented like an array in JSON. </span></p>
+<p><span class="calibre37">JSONSerializer</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For this to be used in an app, one has to
+define the “serializer:application” which is just an extension of
+JSONSerializer. Consider the code given below which shows how this is
+done:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend({</span></p>
+<p><span class="calibre3"> // ...</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the case of some requests, the expected
+result should have one record. It is expected that the response should
+be a JSON response with a format similar to the one given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3">   "id": "1",</span></p>
+<p><span class="calibre3">   "title": "Ember is easy to
+Learn",</span></p>
+<p><span class="calibre3">   "tag": "rails",</span></p>
+<p><span class="calibre3">   "comments": ["1", "2"]</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8">For results expected to give 0 or more
+records, it is expected that the result should be a JSON array which
+looks as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">[{</span></p>
+<p><span class="calibre3"> "id": "1",</span></p>
+<p><span class="calibre3"> "title": "Ember is easy to Learn",</span></p>
+<p><span class="calibre3"> "tag": "ember",</span></p>
+<p><span class="calibre3"> "comments": ["1", "2"]</span></p>
+<p><span class="calibre3">}, {</span></p>
+<p><span class="calibre3"> "id": "2",</span></p>
+<p><span class="calibre3"> "title": "When I was young, I aspired to
+become an athlete!",</span></p>
+<p><span class="calibre3"> "tag": "w3c",</span></p>
+<p><span class="calibre3"> "comments": ["3"]</span></p>
+<p><span class="calibre3">}]</span></p>
+<div id="part0000_split_022.html_calibre_pb_48" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_023.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre39">EmbeddedRecordMixin</span></p>
+</div>
+<p><span id="part0000_split_024.html"></span></p>
+<section id="part0000_split_024.html_calibre_pb_50"
+class="calibre43 calibre1">
+<h2 class="calibre43"><span class="calibre44"> </span></h2>
+<p><span class="calibre8">In Ember data, we are encouraged to sideload
+our relationships, but sometimes, when one is working with legacy APIs,
+one may discover that they need to deal with JSON which contains
+relationships which have been embedded inside other records. The
+“EmbeddedRecordsMixin” was created for the purpose of solving this
+problem. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">To setup the embedded records, just include
+the mixin during the process of extension of a serializer and then
+define and perform a configuration of the embedded relationships.
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider a situation in which the model
+“</span><span class="calibre36">post”</span><span class="calibre8"> has
+a “</span><span class="calibre36">author”</span><span class="calibre8">
+record which looks as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3">   "id": "1",</span></p>
+<p><span class="calibre3">   "title": "Ember is easy to
+Learn",</span></p>
+<p><span class="calibre3">   "tag": "ember",</span></p>
+<p><span class="calibre3">   "authors": [</span></p>
+<p><span class="calibre3">       {</span></p>
+<p><span class="calibre3">           "id": "2",</span></p>
+<p><span class="calibre3">           "name": "Mark"</span></p>
+<p><span class="calibre3">       }</span></p>
+<p><span class="calibre3">   ]</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The relationship would then be defined as
+shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend(DS.EmbeddedRecordsMixin, {</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> attrs: {</span></p>
+<p><span class="calibre3">   authors: {</span></p>
+<p><span class="calibre3">     serialize: 'records',</span></p>
+<p><span class="calibre3">     deserialize: 'records'</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case you have defined yourself and you need
+to serialize and deserialize the embedded relationship, the shorthand
+option “{ embedded: 'always' }” can be used. Consider the following
+example which is similar to the one given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend(DS.EmbeddedRecordsMixin, {</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> attrs: {</span></p>
+<p><span class="calibre3">   authors: { embedded: 'always' }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider a situation in which you want to read
+an embedded record during the process of extraction of a JSON payload,
+but you only need to include the id of the relationship whenever you are
+serializing a record. This can easily be done by use of the option
+“serialize: 'ids.'” To opt out of serialization of the relationship, you
+can use the option “serialize: false.” The code given below demonstrates
+how this can be done:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+DS.JSONSerializer.extend(DS.EmbeddedRecordsMixin, {</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> attrs: {</span></p>
+<p><span class="calibre3">   author: {</span></p>
+<p><span class="calibre3">     serialize: false,</span></p>
+<p><span class="calibre3">     deserialize: 'records'</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   comments: {</span></p>
+<p><span class="calibre3">     deserialize: 'records',</span></p>
+<p><span class="calibre3">     serialize: 'ids'</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<h3 class="calibre45"><span class="calibre46">EmbeddedRecordsMixin
+Defaults</span></h3>
+<h3 class="calibre45"><span class="calibre47"> </span></h3>
+<p><span class="calibre8">If you do not need to overwrite the property
+“</span><span class="calibre36">attrs”</span><span class="calibre8"> for
+a particular relationship, then the following will be the behavior of
+the “EmbeddedRecordsMixin”:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">BelongsTo: { serialize: 'id', deserialize:
+'id' } </span></p>
+<p><span class="calibre3">HasMany: { serialize: false, deserialize:
+'ids' }</span></p>
+<div id="part0000_split_024.html_calibre_pb_51" class="calibre18">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_025.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Authoring Serializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For those who need to  create a custom
+serializer, we are encouraged to start with a JSONAPISerializer or a
+JSONSerializer, and then extend one of these so as to match our needs.
+However, in case the payload is different from one of the serializers,
+consider a situation in which you are given the model “</span><span
+class="calibre36">posts”</span><span class="calibre8"> which is given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default DS.Model.extend({</span></p>
+<p><span class="calibre3"> title: DS.attr('string'),</span></p>
+<p><span class="calibre3"> tag: DS.attr('string'),</span></p>
+<p><span class="calibre3"> comments: hasMany('comment', { async: false
+}),</span></p>
+<p><span class="calibre3"> relatedPosts: hasMany('blogs')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The “</span><span
+class="calibre36">store.push”</span><span class="calibre8"> will then
+accept an object which is as follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{</span></p>
+<p><span class="calibre3"> data: {</span></p>
+<p><span class="calibre3">   id: "1",</span></p>
+<p><span class="calibre3">   type: 'post',</span></p>
+<p><span class="calibre3">   attributes: {</span></p>
+<p><span class="calibre3">     title: "Ember is easy to
+Learn",</span></p>
+<p><span class="calibre3">     tag: "ember",</span></p>
+<p><span class="calibre3">   },</span></p>
+<p><span class="calibre3">   relationships: {</span></p>
+<p><span class="calibre3">     comments: {</span></p>
+<p><span class="calibre3">       data: [{ id: "1", type: 'comment'
+},</span></p>
+<p><span class="calibre3">              { id: "2", type: 'comment'
+}],</span></p>
+<p><span class="calibre3">     },</span></p>
+<p><span class="calibre3">     relatedPosts: {</span></p>
+<p><span class="calibre3">       data: {</span></p>
+<p><span class="calibre3">         related:
+"/api/v1/blogs/1/related-posts/"</span></p>
+<p><span class="calibre3">       }</span></p>
+<p><span class="calibre3">     }</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For each serialized record to be convertible
+into an Ember data record, the above format must be followed.
+</span></p>
+<div id="part0000_split_025.html_calibre_pb_53" class="calibre18">
+
+</div>
+</div>
+<p><span id="part0000_split_026.html"></span></p>
+<section id="part0000_split_026.html_calibre_pb_54"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_026.html__Toc458284844" class="calibre27"><span
+class="calibre28">Chapter 3- Application Concerns</span></span></h1>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Dependency Injection</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">This technique is used in EmberJS for
+declaration and instantiation of a class of objects and the dependencies
+between them. Applications and the instances of applications will serve
+a role in the DI implementation of Ember. </span></p>
+<p><span class="calibre8"> </span></p>
+</section>
+<p><span id="part0000_split_027.html"></span></p>
+<div class="calibre1">
+<h2 class="calibre43" id="part0000_split_027.html_calibre_pb_57"><span
+class="calibre48">Factory Registrations</span></h2>
+<h2 class="calibre49"><span class="calibre44"> </span></h2>
+<p><span class="calibre8">A factory can be used for representation of
+part of an app, such as a template, a route, or a custom class. A good
+example of this is the index template which is registered with the key
+“template:index.” </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Note that factory registrations have to be
+done inside an application or in application instance initializers, but
+the former way is much more common.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the example given below, which shows
+how an application initialize can register a “</span><span
+class="calibre36">logger”</span><span class="calibre8"> factory using
+the key “logger:main”:</span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> var Logger = Ember.Object.extend({</span></p>
+<p><span class="calibre3">   log(n) {</span></p>
+<p><span class="calibre3">     console.log(n);</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> });</span></p>
+<p><span class="calibre3"> app.register('logger:main',
+Logger);</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'logger',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Registering Instantiated Objects</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The default setting is that Ember attempts to
+instantiate a registered factory after looking up. During the process of
+registration of instantiated object of a particular class, you have to
+use the option “instantiate: false” so that  you can avoid it being
+re-instantiated during look up. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the example given below, the logger is an
+object in JavaScript which should be returned as it is during look up.
+Here is the code for the example:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> var logger = {</span></p>
+<p><span class="calibre3">   log(n) {</span></p>
+<p><span class="calibre3">     console.log(n);</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> };</span></p>
+<p><span class="calibre3"> app.register('logger:main', logger, {
+instantiate: false });</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'logger',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<div id="part0000_split_027.html_calibre_pb_58" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_028.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Singletons vs. Non-Singletons
+Registration</span></p>
+<h3 class="calibre45"><span class="calibre47"> </span></h3>
+<p><span class="calibre8">In Ember data, registrations are seen as
+singletons. This means that an instance has to be created after looking
+up, and the same instance will be cached and returned from the following
+lookups. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the example given below, the class
+“</span><span class="calibre36">message”</span><span class="calibre8">
+will be registered as a non-singleton:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> var Msge = Ember.Object.extend({</span></p>
+<p><span class="calibre3">   text: ''</span></p>
+<p><span class="calibre3"> });</span></p>
+<p><span class="calibre3"> app.register('notification:message', Message,
+{ singleton: false });</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'notification',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<div id="part0000_split_028.html_calibre_pb_60" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_029.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Factory Injections</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Once the registration of the factory has been
+done, we can inject it when we need. Injection of factories can be done
+in whole types of the factories having type injections. Consider the
+example given below:</span><span class="calibre3"> </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> var Logger = Ember.Object.extend({</span></p>
+<p><span class="calibre3">   log(n) {</span></p>
+<p><span class="calibre3">     console.log(n);</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> });</span></p>
+<p><span class="calibre3"> app.register('logger:main',
+Logger);</span></p>
+<p><span class="calibre3"> app.inject('route', 'logger',
+'logger:main');</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'logger',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Due to this kind of type injection, the
+factories of type “</span><span class="calibre36">route”</span><span
+class="calibre8"> will be instantiated with the logger which has been
+injected. The logger value will be obtained from the factory with the
+name “logger:main.”</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the example given below which shows
+how the app can be accessed by the injected logger. Here is the
+example:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default Ember.Route.extend({</span></p>
+<p><span class="calibre3"> activate() {</span></p>
+<p><span class="calibre3">   // The property logger is injected into all
+the routes</span></p>
+<p><span class="calibre3">   this.get('logger').log('Entered your index
+route!');</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">When using a full key, the injections can be
+made on a full key as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">app.inject('route:index', 'logger',
+'logger:main');</span></p>
+<div id="part0000_split_029.html_calibre_pb_62" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_030.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Ad Hoc Injections</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Dependency injections are declared directly on
+the Ember classes by the use of “Ember.inject.” Currently, this property
+is in support of injection of services and controllers.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below which shows how
+the service “</span><span class="calibre36">shopping-cart”</span><span
+class="calibre8"> can be injected on the component “cart-contents” as
+the “</span><span class="calibre36">cart”</span><span class="calibre8">
+property. Here is the code:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre3"> cart:
+Ember.inject.service('shopping-cart')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If you are in need of injecting a service with
+similar name as the property, just leave off the name of the service.
+The code given below demonstrates this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre3"> shoppingCart:
+Ember.inject.service()</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8">Instance initializers usually receive an
+instance of an application as the argument, providing us with an
+opportunity to lookup the instance of the registered factory. Consider
+the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(appInstance)
+{</span></p>
+<p><span class="calibre3"> let logger =
+appInstance.lookup('logger:main');</span></p>
+<p><span class="calibre3"> logger.log('Hello from an instance
+initializer!');</span></p>
+<p><span class="calibre3">}</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'logger',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">It is also possible for us to get an instance
+of an application from a factory set. Consider the example given below
+which plays songs having different audio services depending on the
+“</span><span class="calibre36">audioType”</span><span class="calibre8">
+of the song. Here is the code:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">import Ember from 'ember';</span></p>
+<p><span class="calibre3">const {</span></p>
+<p><span class="calibre3"> Component,</span></p>
+<p><span class="calibre3"> computed,</span></p>
+<p><span class="calibre3"> getOwner</span></p>
+<p><span class="calibre3">} = Ember;</span></p>
+<p><span class="calibre3">// Usage:</span></p>
+<p><span class="calibre3">//</span></p>
+<p><span class="calibre3">//   {{play-audio song=song}}</span></p>
+<p><span class="calibre3">//</span></p>
+<p><span class="calibre3">export default Component.extend({</span></p>
+<p><span class="calibre3"> audioService: computed('song.audioType',
+function() {</span></p>
+<p><span class="calibre3">   let appInstance =
+getOwner(this);</span></p>
+<p><span class="calibre3">   let audioType =
+this.get('song.audioType');</span></p>
+<p><span class="calibre3">   return
+appInstance.lookup(`service:audio-${audioType}`);</span></p>
+<p><span class="calibre3"> }),</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> click() {</span></p>
+<p><span class="calibre3">   let p =
+this.get('audioService');</span></p>
+<p><span class="calibre3">   p.play(this.get('mysong.file'));</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_030.html_calibre_pb_64" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_031.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Initializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">These provide us with an opportunity to
+configure the app during the boot process. There exists two types of
+initializers, application instance initializers and application
+initializers.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The application initializers are executed
+during the boot process, and they provide us with the method that
+  dependency injections can be configured in an app. The other type of
+initializers are configured during the loading of an instance of an
+application. They provide us with a way  to configure the initial state
+of our app, and setting up of application instances which are local to
+the instance of our app. </span></p>
+<div id="part0000_split_031.html_calibre_pb_66" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_032.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Application Initializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Application initializers are created using the
+initializer generator of the Ember CLI. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The command given below best describes
+this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">ember generate initializer
+shopping-cart</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">We can then customize the initializer
+“</span><span class="calibre36">shopping-cart”</span><span
+class="calibre8"> so as to inject the property “</span><span
+class="calibre36">cart”</span><span class="calibre8"> in all the routes
+contained in our application. The code given below best describes
+this:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> app.inject('route', 'cart',
+'service:shopping-cart');</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'shopping-cart',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre37">Application Instance Initializers</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">These can be created using the generator
+“instance-initializer” of the Ember CLI. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">ember generate instance-initializer
+logger</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below which shows how
+some simple logging can be implemented so as to indicate that the
+instance has already been booted. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(appInstance)
+{</span></p>
+<p><span class="calibre3"> var logger =
+appInstance.lookup('logger:main');</span></p>
+<p><span class="calibre3"> logger.log('Hi from our instance
+initializer!');</span></p>
+<p><span class="calibre3">}                                         
+</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'logger',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<div id="part0000_split_032.html_calibre_pb_68" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_033.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre39">Specifying Initializer Order</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">If you need to  control the order in which
+ initializers run, the “</span><span
+class="calibre36">before”</span><span class="calibre8"> and
+“</span><span class="calibre36">after”</span><span class="calibre8">
+options can be used for this purpose. Consider the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(app) {</span></p>
+<p><span class="calibre3"> // ...add your code here ...</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'configReader',</span></p>
+<p><span class="calibre3"> before: 'websocketInit',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The next code should then be as
+follows:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export function initialize(application)
+{</span></p>
+<p><span class="calibre3"> // ... add your code here...</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre3">export default {</span></p>
+<p><span class="calibre3"> name: 'websocketInit',</span></p>
+<p><span class="calibre3"> after: 'configReader',</span></p>
+<p><span class="calibre3"> initialize: initialize</span></p>
+<p><span class="calibre3">};</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre37">Services</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The property “</span><span
+class="calibre36">Ember.service”</span><span class="calibre8"> is an
+object in Ember which can be used and made available at various parts of
+one’s app. The following are the areas in which the services are
+used:</span></p>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">Geolocation.</span></li>
+</ul>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">User/session authentication.</span></li>
+</ul>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">Web Sockets.</span></li>
+</ul>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">Server-backed API calls which cannot fit
+Ember Data.</span></li>
+</ul>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">Third-party APIs.</span></li>
+</ul>
+<p><span class="calibre8"> </span></p>
+<ul>
+<li><span class="calibre8">Server-sent events or the
+notifications.Logging.</span></li>
+</ul>
+<div id="part0000_split_033.html_calibre_pb_70" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_034.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Definition of Services</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The “service” generator in Ember CLI can be
+used for the purpose of generating services. Consider the following
+command which can be used for the purpose of creating a “</span><span
+class="calibre36">shoppingCart”</span><span class="calibre8">
+service:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">ember generate service
+shopping-cart</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The services have to extend the base class
+“</span><span class="calibre36">Ember.Service.”</span><span
+class="calibre8"> This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Service.extend({</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Like the objects in Ember, a service has to be
+initialized, and this should have methods and properties of its own.
+Consider the shopping cart service shown below which best demonstrates
+how this works:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Service.extend({</span></p>
+<p><span class="calibre3"> items: null,</span></p>
+<p><span class="calibre3"> init() {</span></p>
+<p><span class="calibre3">   this._super(args);</span></p>
+<p><span class="calibre3">   this.set('items', []);</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> add(item) {</span></p>
+<p><span
+class="calibre3">   this.get('items').pushObject(item);</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> remove(item) {</span></p>
+<p><span
+class="calibre3">   this.get('items').removeObject(item);</span></p>
+<p><span class="calibre3"> },</span></p>
+<p><span class="calibre3"> empty() {</span></p>
+<p><span
+class="calibre3">   this.get('items').setObjects([]);</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<div id="part0000_split_034.html_calibre_pb_72" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_035.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Accessing Services</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">For a service to be accessed, one can choose
+to inject it into any object which is container-resolved, such as
+another service or a component by use of the function “</span><span
+class="calibre36">Ember.inject.service.</span><span class="calibre8">”
+There are two ways that a function can be used. One can choose to invoke
+it without arguments, or pass the registered name of your service to it.
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In case no arguments are passed, then the
+services have to be loaded based on the name of its variable key. To
+load the shopping cart service with no arguments, do it as shown
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre3"> //ant to load the service in the file
+/app/services/shopping-cart.js</span></p>
+<p><span class="calibre3"> shoppingCart:
+Ember.inject.service()</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The other method involves using the name of
+the service as the argument. This is shown in the code given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre3"> //want to load our service in the file
+/app/services/shopping-cart.js</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3"> cart:
+Ember.inject.service('shopping-cart')</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">With the above code, the shopping cart service
+will be injected into our component and then be made available to the
+cart property. Properties which have been injected are lazy loaded,
+meaning that instantiation of the service will not be done until the
+property has not been called explicitly. This means that the function
+“</span><span class="calibre36">get”</span><span class="calibre8"> has
+to be used for accessing the services of a particular component,
+otherwise, you will get an undefined error. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">After loading, the service persists until the
+service exits. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">export default
+Ember.Component.extend({</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8"> </span><span class="calibre3">cart:
+Ember.inject.service('shopping-cart'),</span></p>
+<p><span class="calibre3"> actions: {</span></p>
+<p><span class="calibre3">   remove(item) {</span></p>
+<p><span class="calibre3">     this.get('cart').remove(item);</span></p>
+<p><span class="calibre3">   }</span></p>
+<p><span class="calibre3"> }</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the above code, we have added the remove
+action to the component “cart-contacts.” Once it has been injected into
+a component, the service will also be used in a template. Note the cart
+which has been used in the code given below for getting the data from
+the cart:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;ul&gt;</span></p>
+<p><span class="calibre3"> {{#each cart.items as |item|}}</span></p>
+<p><span class="calibre3">   &lt;li&gt;</span></p>
+<p><span class="calibre3">     {{item.name}}</span></p>
+<p><span class="calibre3">     &lt;button {{action "remove"
+item}}&gt;Remove&lt;/button&gt;</span></p>
+<p><span class="calibre3">   &lt;/li&gt;</span></p>
+<p><span class="calibre3"> {{/each}}</span></p>
+<p><span class="calibre3">&lt;/ul&gt;</span></p>
+<div id="part0000_split_035.html_calibre_pb_74" class="calibre18">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_036.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre39">The Run Loop</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Most of the internals and the code we write in
+Ember for our apps occur in a run loop. The run loop is used for the
+purpose of batching and ordering the work in a way which is more
+efficient and effective.  </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">We get a huge benefit when we batch similar
+works. For web browsers to do something which is related, they have to
+batch the changes made to the DOM. Consider the HTML snippet given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">&lt;div id="foo"&gt;&lt;/div&gt;</span></p>
+<p><span class="calibre3">&lt;div id="bar"&gt;&lt;/div&gt;</span></p>
+<p><span class="calibre3">&lt;div id="baz"&gt;&lt;/div&gt;</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">You can then run the following
+code:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">foo.style.height = '500px' // write</span></p>
+<p><span class="calibre3">foo.offsetHeight //write</span></p>
+<p><span class="calibre3">bar.style.height = '400px' // write
+</span></p>
+<p><span class="calibre3">bar.offsetHeight // read </span></p>
+<p><span class="calibre3">baz.style.height = '200px' // write</span></p>
+<p><span class="calibre3">baz.offsetHeight // read </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the above example, the sequence of the code
+has forced the browser to recalculate the style and the layout after
+each step. However, if it was possible for us to batch the similar jobs
+together, the browser would only be needed to recalculate the style and
+the layout only once. This is shown in the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">foo.style.height = '500px' // write</span></p>
+<p><span class="calibre3">bar.style.height = '400px' // write</span></p>
+<p><span class="calibre3">baz.style.height = '200px' // write</span></p>
+<p><span class="calibre3">foo.offsetHeight // read </span></p>
+<p><span class="calibre3">bar.offsetHeight // read </span></p>
+<p><span class="calibre3">baz.offsetHeight // read </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The good thing about  this is that it applies
+to many other types of work. When we batch similar works, we find it
+easy for us to pipeline and further the optimization. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Consider the example given below, which has
+been optimized in Ember:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var MyUser = Ember.Object.extend({</span></p>
+<p><span class="calibre3"> fName: null,</span></p>
+<p><span class="calibre3"> lName: null,</span></p>
+<p><span class="calibre3"> fullName: Ember.computed('fName', 'lName',
+function() {</span></p>
+<p><span class="calibre3">   return `${this.get('fName')}
+${this.get('lName')}`;</span></p>
+<p><span class="calibre3"> })</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The template for displaying the attributes is
+as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">{{fName}}</span></p>
+<p><span class="calibre3">{{fullName}}</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">The following code can be executed without
+using a run loop as shown below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var myuser = User.create({ fName: 'John',
+lastName: 'Boss' });</span></p>
+<p><span class="calibre3">myuser.set('fName', 'Joel');</span></p>
+<p><span class="calibre3">// {{fName}} and {{fullName}} are then
+updated</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">myuser.set('lName', 'Donald');</span></p>
+<p><span class="calibre3">// {{lName}} and {{fullName}} are
+updated</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">With the above, your browser should re-render
+the template twice. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">Note that if the loop in the above code has
+been run, the browser will only re-render the template once all of the
+attributes have been set. Consider the code given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">var myuser = User.create({ fName: 'John',
+lastName: 'Boss' });</span></p>
+<p><span class="calibre3">myuser.set('fName', 'Joel');</span></p>
+<p><span class="calibre3">user.set('lName', 'Donald');</span></p>
+<p><span class="calibre3">user.set('fName', 'John ');</span></p>
+<p><span class="calibre3">user.set('lastName', 'Boss');</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">In the above example, we have  a run loop,
+since the attributes of the user will end up at the same values as
+before the execution, and the template will not be re-rendered.
+</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A run loop should be begun once a callback has
+been fired. Consider the example given below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">$('a').click(() =&gt; {</span></p>
+<p><span class="calibre3"> Ember.run(() =&gt; {  // beginning the
+loop</span></p>
+<p><span class="calibre3">   // Code which results in the jobs being
+scheduled should go here</span></p>
+<p><span class="calibre3"> }); // ending the loop, jobs are flushed and
+then executed</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">That is the new syntax which we currently have
+for functions. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">A non-Ember async callbacks should be wrapped
+in “Ember.run.”  if you don’t do this,  Ember will approximate and then
+define a beginning and an end for you. Consider the callback given
+below:</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre3">$('a').click(() =&gt; {</span></p>
+<p><span class="calibre3"> console.log('Doing the
+things...');</span></p>
+<p><span class="calibre3"> Ember.run.schedule('actions', () =&gt;
+{</span></p>
+<p><span class="calibre3">   // Add more things</span></p>
+<p><span class="calibre3"> });</span></p>
+<p><span class="calibre3">});</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">That is it for now. </span></p>
+</div>
+<p><span id="part0000_split_037.html"></span></p>
+<div class="calibre1">
+<h1 class="calibre24" id="part0000_split_037.html_calibre_pb_76"><br />
+<span id="part0000_split_037.html__Toc458284845" class="calibre27"><span
+class="calibre28">Conclusion</span></span></h1>
+<h1 class="calibre29"><span class="calibre30"> </span></h1>
+<p><span class="calibre8">We have come to the conclusion of this guide.
+Ember is one of the available JavaScript frameworks in use today. This
+framework is mostly used when we are in need of developing the client
+side of our web applications. For it to structure the apps, it relies on
+the MVC architecture.</span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8"> This framework has a number of features which
+we can take advantage of so as to enhance our apps. In Ember JS,
+controllers are of great importance, and most people confuse them with
+components. Very soon, it is believed that the controllers will be
+replaced with components. Controllers are used for the purpose of
+controlling state, and this is determined by the kind of route which is
+currently being used. A controller is also used when passing information
+from a component to a route, as this has to pass through it.
+Dependencies need to be established between controllers. </span></p>
+<p><span class="calibre8"> </span></p>
+<p><span class="calibre8">This is usually the case when we are in need
+of nesting resources. We have to come up with a mechanism as to how to
+establish a connection between the controllers. It is good for you to
+know how to create custom transformations in Ember JS. This is because
+the data types which might be available may not be sufficient for you.
+There are custom transformations in Ember JS which can assist you in
+this. My hope is that this book has helped you understand how to create
+apps in Ember JS. Enjoy!</span></p>
+<p><span class="calibre8"> </span></p>
+</div>
