@@ -388,6 +388,7 @@
 +   [HTML、CSS 和 JavaScript](docs/html-css-and-javascript/README.md)
 +   [HTML、CSS和JavaScript一站式指南](docs/html-css-and-javascript-all-in-one/README.md)
 +   [HTML、CSS 和 JavaScript 一站式教程：涵盖 HTML5、CSS3 和 ES6，Sams 自学指南](docs/html-css-and-javascript-all-in-one-covering-html5-css3-and-e/README.md)
++   [傻瓜的 HTML、CSS 和 JavaScript 全能指南](docs/html-css-and-javascript-all-in-one-for-dummies/README.md)
 +   [HTML、CSS和JavaScript一站式自学教程：涵盖HTML5、CSS3和jQuery](docs/html-css-and-javascript-all-in-one-sams-teach-yourself-cover/README.md)
 +   [HTML、CSS 和 JavaScript 速成课程：从零开始学习并掌握](docs/html-css-and-javascript-crash-course-learn-html-css-javascri/README.md)
 +   [HTML、CSS 和 JavaScript 轻松上手指南](docs/html-css-and-javascript-in-easy-steps/README.md)
