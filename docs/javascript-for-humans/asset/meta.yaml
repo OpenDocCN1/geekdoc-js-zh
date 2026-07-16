@@ -1,0 +1,146 @@
+name: JavaScript for Humans
+name_cn: 面向人类的 JavaScript
+slug: javascript-for-humans
+toc:
+- - '#'
+  - 面向人类的 JavaScript
+- - '#'
+  - 创建新文件夹
+- - '##'
+  - '`ourProject`'
+- - '#'
+  - 编辑器
+- - '###'
+  - VS CODE
+- - '###'
+  - ATOM
+- - '###'
+  - BRACKETS
+- - '###'
+  - Sublime
+- - '###'
+  - Notepad++
+- - '#'
+  - '第一个 HTML 页面 '
+- - '#'
+  - 在 HEAD 中定义的函数
+- - '#'
+  - 在 BODY 中定义的函数
+- - '#'
+  - 我们的函数就像三明治
+- - '###'
+  - 什么是 onload 事件？
+- - '####'
+  - 我们按钮的 onclick 事件
+- - '####'
+  - 带计数器的按钮
+- - '####'
+  - 询问并说名字
+- - '####'
+  - 如果简单则提示
+- - '####'
+  - 询问并说名字，如果名字是
+- - '####'
+  - 输入一个数字，返回
+- - '####'
+  - 返回，绝对值
+- - '####'
+  - 使用 textarea 用户输入
+- - '###'
+  - 如何设计应用
+- - '####'
+  - 获取日期星期
+- - '####'
+  - 保存为 dateGetDayName.js
+- - '#'
+  - 获取星期，使用 `dateGetDayName.js`
+- - '##'
+  - 文件
+- - '#'
+  - 获取星期，使用参数
+- - '#'
+  - 保存为 dateGetMonthName.js
+- - '#'
+  - 获取月份，使用 2 个参数
+- - '#'
+  - 获取星期，获取月份，使用 2 个参数
+- - '#'
+  - 使用样式为月份和星期的 Div 定位
+- - '#'
+  - 使用 onclick 事件获取月份和星期
+- - '#'
+  - 获取月份，获取星期，样式美化
+- - '#'
+  - 获取月份，获取星期，更多样式
+- - '#'
+  - 保存为 ourStyle.css
+- - '#'
+  - 获取月份，获取星期，外部 CSS
+- - '###'
+  - ourProject 的文件结构
+- - '###'
+  - 我们 js 文件的文件结构
+- - '###'
+  - 我们 html 文件的文件结构
+- - '###'
+  - 文件结构的优势
+- - '###'
+  - 类方法很有用，但是..
+- - '###'
+  - 将所有 js 文件合并为一个
+- - '##'
+  - 命令行提示符
+- - '###'
+  - 我们输入单词
+- - '#'
+  - JavaScript 基础教程
+- - '#'
+  - Dog Bird Rooster Cat Dolphin
+- - '#'
+  - Shark Lion Zebra Monkey Fish
+- - '###'
+  - 数组排序 (sort)
+- - '###'
+  - if 多条件判断
+- - '###'
+  - 文本框值 (textbox value)
+- - '###'
+  - 输入姓名，转为小写 (toLowerCase)
+- - '###'
+  - 字符串拼接 (combining strings)
+- - '###'
+  - 字符串拼接提示 (combining strings prompt)
+- - '###'
+  - while 倒计时 (count down)
+- - '###'
+  - while 递增 (count up)
+- - '###'
+  - 快速数学题 (quick math question)
+- - '###'
+  - 哪些队赢了？ (which teams won?)
+- - '###'
+  - 以 JSON 格式显示全部 (show all as JSON)
+- - '###'
+  - 循环过滤显示记录 (show Records for loop filter)
+- - '###'
+  - 循环与过滤显示记录 (show Records for loop and filter)
+- - '###'
+  - 显示从...到...的记录 (show Records from and too)
+- - '#'
+  - class Person {
+- - '#'
+  - class Animal {
+- - '#'
+  - class Cat extends Animal {
+- - '#'
+  - class Alien extends Person
+- - '#'
+  - 华氏度转为氏度
+- - '#'
+  - 简单的类和 this
+- - '#'
+  - 键盘控制
+- - '#'
+  - 键盘，移动文本
+- - '#'
+  - 保存为 timeGetTime.js

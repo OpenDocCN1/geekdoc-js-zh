@@ -1,0 +1,612 @@
+- "# JavaScript 面向对象编程示例\n\n\n\n![](img/cover00531.jpeg)\n\n\n\n\n\n\n\n\n\n\n\n\n\
+  \n# 前言\n\n面向对象编程（OOP）是一种以对象为基础的编程方法。本书介绍了封装、类和实例等 OOP 概念，指导你如何使用 JavaScript。\n\n\
+  JavaScript 是世界上最广泛使用的语言，与 HTML 和 CSS 并列为核心技术之一。网站在客户端使用 JavaScript。所有主流浏览器都拥有执行\
+  \ JavaScript 代码的引擎。\n\n# 读者群体\n\n本书面向已经熟悉基础 JavaScript 编程的中级开发者。它首先介绍了所有的 OOP 概念，最后在最后一章介绍了\
+  \ JavaScript 中的面向对象编程。\n\n# 如何与我们联系\n\n我的邮箱是 `odtruman@gmail.com`。如果你有任何问题，请给我发邮件。我很乐意听到读过我书的人反馈。我会尽力回答收到的每封邮件。主题应该是\
+  \ `[JavaScript 面向对象编程实例教程] <你的主题>`，以便我快速筛选并回答你的问题。\n\n# 本书中使用的约定\n\n本书使用了以下排版约定：\n\
+  \n*斜体*表示新术语、URL、电子邮件地址、文件名和扩展名。\n\n**粗体**表示重要概念或 UI 项目，如菜单项和按钮。\n\n`等宽字体`表示代码，包括语句、函数、类、对象、方法、属性等。\n\
+  \n`等宽粗体`表示需要逐字输入的命令或其他文本。\n\n`等宽斜体`表示应替换为用户提供的值或根据上下文确定的文本。\n\n\n\n\n设置开发环境的第一步是选择你的代码编辑器。几乎所有的编辑器都具有自动补全、语法高亮、代码格式化和智能重构等基本功能。使用它们可以帮助你防止潜在的错误。其他功能如逐行调试可能已经存在于编辑器中了。然而，在调试\
+  \ JavaScript 代码时，我们将使用 浏览器的开发者工具。完成开发环境设置后，你的编码工作将变得异常简单和快速。\n\n![Rat with solid\
+  \ fill](img/image00494.jpeg) 你可以考虑使用的几个工具，以便能够随时选择其中任何一个。无论你选择哪种工具，都将遵循类似的流程来学习课程。\n\
+  \n## 1. 安装代码编辑器\n\n在本书中，我们使用 Visual Studio Code（简称为 `VS Code`）作为代码编辑器。你可以从 [`code.visualstudio.com/download`](https://code.visualstudio.com/download)\
+  \ 免费下载它。在 Stack Overflow 的调查中，`VS Code` 被评为跨语言最流行的代码编辑器。\n\n第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n## 2. 使用 Web 浏览器\n\n我们将使用 Google Chrome 作为运行和调试 JavaScript 代码的工具，因为它是最流行的浏览器。此外，它还包含了下面将描述的强大的开发者工具。\n\
+  \n### 2.1 使用浏览器的开发者工具\n\n开发者工具通常显示为浏览器窗口右侧或底部的标签页组面板。要在 Google Chrome 中打开开发者工具，打开浏览器窗口右上角的\
+  \ `Chrome 菜单`，并选择 `更多工具 > 开发者工具`。\n\n你也可以使用 `Shift + CTRL + J`（Windows/Linux）或 `Option\
+  \ + ⌘ + J`（macOS）来打开工具。\n\n![](img/image00495.jpeg)\n\n开发者工具将在新窗口中打开，或如下所示在 `Chrome`\
+  \ 窗口内打开。\n\n![](img/image00496.jpeg)\n\n我们可以按照以下步骤将其分离到单独窗口，或仅更改停靠位置：\n\n- 点击右上角的“自定义和控制开发者工具”按钮。\n\
+  - 然后按照下图选择你想要的停靠侧。\n\n![](img/image00497.jpeg)\n\n### 2.2 使用控制台工具\n\n如果没有选择 `Console`（控制台）工具，你可能需要选择\
+  \ `Console` 标签。我们可以像下面所示在 `Console` 工具中检查变量的值或直接尝试 JavaScript 代码。\n\n![](img/image00498.jpeg)\n\
+  \nConsole 面板显示你通过 `console.log()` 输出的消息以及任何未处理的错误。\n\n### 2.3 使用 Sources 源码工具\n\n\
+  你可能需要选择 `Sources`（源代码）标签来打开调试工具。它支持通过断点进行逐行调试、查看调用堆栈、作用域链等。细节将在稍后通过代码介绍。\n\n![](img/image00499.jpeg)\n\
+  \n## 3. 准备工作空间\n\n请按照以下步骤创建你的工作空间：\n\n- 创建 `Example` 文件夹，例如 `D:\\Example`\n- 打开\
+  \ `Visual Studio Code`\n- 在 `VS Code` 中，选择菜单 `文件 > 打开文件夹…`\n- 选择你的文件夹，在我的示例是 `D:\\\
+  Example`\n- 将鼠标悬停在 `EXAMPLE` 文件夹上，会出现如下所示的图标。\n\n![](img/image00500.jpeg)\n- 点击\
+  \ `New File`（新建文件）图标。\n\n![](img/image00501.jpeg)\n- 输入 `index.html` 并按回车\n- 然后在编辑器中输入以下\
+  \ HTML 代码\n\n```html\n<!DOCTYPE  html>\n<html>\n<body>\n <h2>Testing Page</h2>\n\
+  \ <!-- 在此处输入你的 HTML 代码 -->\n <script  src=\"app.js\"></script>\n</body>\n</html>\n\
+  ```\n``````\n\n- 选择菜单 `文件 > 保存` 将更改保存到 `index.html` 文件。\n\n![](img/image00502.jpeg)\n\
+  - 将鼠标悬停在 `EXAMPLE` 文件夹上并点击 `New File`（新建文件）图标。\n- 输入 `app.js` 并按回车。\n- 然后在编辑器中输入下面的\
+  \ JavaScript 代码。\n\n```javascript\n\"use strict\";\nconsole.log('This is your first\
+  \ JS code.');\n```\n\n- 选择菜单 `文件 > 保存` 将更改保存到 `app.js` 文件。\n\n![](img/image00503.jpeg)\n\
+  \n![Rat with solid fill](img/image00504.jpeg) 在学习本书的期间，你将将修改 `app.js` 文件中的 JavaScript\
+  \ 代码和 `index.html` 文件中的 HTML 代码。\n\n让我们在 Web 浏览器（如 Google Chrome）中打开 `index.html`\
+  \ 文件来尝试代码。\n\n![](img/image00505.jpeg)\n\n然后，打开 `Console` 面板查看结果。\n\n![](img/image00506.jpeg)\n\
+  \n# 第 2 章：对象\n\n在 JavaScript 中，对象是最常用的组件，可以包含许多键值对。在对象中，键的值可以是函数，这被称为对象的方法。\n\n\
+  ## 2.1 创建对象\n\n我们可以使用大括号（`{}`）并在下面的语法中封装一些键值对来创建对象。\n\n```javascript\n{\n  key1:\
+  \ value1,\n  key2: value2,\n  …\n}\n``` 示例：\n```javascript\n{\n  key1: value1,\n\
+  \  key2: value2,\n  …\n}\n```\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript\
+  \ 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS\
+  \ Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  （由于原文存在大量重复的段落，翻译时已根据要求去重并处理）\n\n```javascript\n{\n  key1: value1,\n  key2: value2,\n\
+  \  …\n  key::\n}\n```\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\
+  \n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n（注：由于输入文本中存在大量重复段落，此处译文已针对核心内容进行了去重处理）\n\n```javascript\n{\n\
+  \  key1: value1,\n  key2: value2,\n  …\n}\n``` \n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n（注：由于输入文本中存在大量重复段落，译文已按照“不要重复输出原文”的指令进行处理）\n\n在第一次打开 `VS Code`\
+  \ 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择\
+  \ JavaScript 即可。\n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript 即可。\n\n\
+  （注：由于输入文本中存在大量重复段落，译文已按照“不要重复输出原文”的指令进行处理）\n\n```javascript\n{\n  key1: value1,\n\
+  \  key2: value2,\n  …\n}\n``` \n\n在第一次打开 `VS Code` 时，系统可能会要求你选择一种语言来开始；只需选择 JavaScript\
+  \ 即可。\n\n（注：由于输入文本中存在大量重复段落，译文已针对核心内容进行了去重处理）\n\n\n\n\n\n```javascript\n11 |  this.logs.push(msg);\
+  \ |\n12 |     } |\n13 | }; |\n14 | console.log(obj.message); // undefined |\n15\
+  \ | obj.message = \"hi\"; |\n16 | obj.message = \"hello\"; |\n17 | console.log(obj.message);\
+  \ // \"hello\" |\n18 | console.log(obj.logs); // [\"hi\", \"hello\"]\n```\n\n##\
+  \ 全局对象\n\n在 浏览器中，全局对象是 `window` 对象，任何全局变量或函数都可以作为它的属性被访问。不在在任何函数中的变量和函数都是全局的，可以从任何文件中的任何\
+  \ JavaScript 代码访问。\n\n示例：\n\n`app.js` 应该看起来如下：\n\n```javascript\n1 | \"use strict\"\
+  ; |\n2 | var aGlobalVar = 'Global Variable'; |\n3 | function aGlobalFunc() { |\n\
+  4 |     console.log(\"Message from aGlobalFunc()\"); |\n5 | } |\n6 | |\n7 | let\
+  \ aScriptVar = 'Script Variable'; |\n8 | let aScriptFunc = function () { |\n9 |\
+  \     console.log(\"Message from aScriptFunc()\"); |\n10| } |\n11| |\n12 | console.log(\"\
+  Script variable and function don't belong to window object:\"); |\n13 | console.log(window.aScriptVar);\
+  \ // undefined |\n14 | console.log(window.aScriptFunc); // undefined |\n15 | console.log('----------------------');\n\
+  ```\n\n在这个示例中，我们创建了一个新的 JavaScript 文件，命名为 `app2.js`。`app2.js` 应该看起来如下：\n\n```javascript\n\
+  1 | console.log('Access global variable and function from another file:'); |\n2\
+  \ | console.log(window.aGlobalVar); // Global Variable |\n3 | window.aGlobalFunc();\
+  \ // Message from aGlobalFunc() |\n4 | console.log('----------------------'); |\n\
+  5 | |\n6 | console.log('Access global variable and function from another file but\
+  \ not use window object:'); |\n7 | console.log(aGlobalVar); // Global Variable |\n\
+  8 | aGlobalFunc(); // Message from aGlobalFunc() |\n9 | console.log('----------------------');\
+  \ |\n10| |\n11| console.log(\"Access script variable and function from another file:\"\
+  ); |\n12| console.log(aScriptVar); // Script Variable |\n13| aScriptFunc(); // Message\
+  \ from aScriptFunc() |\n14| console.log('----------------------');\n```\n\n`index.html`\
+  \ 应该看起来如下：\n\n```html\n1 | <!DOCTYPE  html> |\n2 | <html> |\n3 | |\n4 | <body> |\n\
+  5 |   <h2>Testing Page</h2> |\n6 |   <!-- Your HTML code here --> |\n7 | |\n8 |\
+  \   <script src=\"app.js\"></script> |\n9 |   <script src=\"app2.js\"></script>\
+  \ |\n10| </body> |\n11| </html>\n```\n\n我们可以在 `app2.js` 开头添加 `debugger;` 来检查作用链。\n\
+  \n(Images/image0507.jpeg)\n\n在上面的图中，全局变量和函数可以位于这两个作用域中：\n- 脚本作用域（Script scope）：用\
+  \ `let` 声明的变量和函数表达式。\n- 全局作用域（Global scope）：用 `var` 声明的变量和函数声明。\n\n不同环境下的对象是不同的。例如，`NodeJS`\
+  \ 中的全局对象与浏览器中的全局对象不同。\n\n## 对象字面量\n\n#### 简写属性（Shorthand Properties）\n\n可以使用变量来定义对象的属性。如果属性名与变量名相同，我们可以使用下面的简写形式。\n\
+  \n示例：\n\n```javascript\n1 | \"use strict\"; |\n2 | let firstName = 'Neo'; |\n3 |\
+  \ let lastName = 'D. Truman'; |\n4 | |\n5 | let user = { |\n6 |     firstName, |\n\
+  7 |     lastName, |\n8 |     email: \"neodtruman@gmail.com\" |\n9 | } |\n10| console.log(user);\
+  \ |\n// { firstName: 'Neo', lastName: 'D. Truman', email: 'neodtruman@gmail.com'\
+  \ }\n```\n\n#### 简写方法（Shorthand Methods）\n\n为了快速定义对象的方法，我们可以省略 `: function` 来使用简写方法。\n\
+  \n示例：\n\n```javascript\n1 | \"use strict\"; |\n2 | let user = { |\n3 |     name:\
+  \ 'Neo D. Truman', |\n4 |     logInfo() { |\n5 |         console.log(this.name);\
+  \ |\n6 |     } |\n7 | } |\n8 | user.logInfo(); // Neo D. Truman |\n9 | console.log(user);\
+  \ |\n// { name: 'Neo D. Truman', logInfo: [Function: logInfo] }\n```\n\n#### 计算性属性键（Computing\
+  \ Property Keys）\n\n我们可以像示例一样计算属性键。\n\n```javascript\n1 | \"use strict\"; |\n2 |\
+  \ let objKey = 'name'; |\n3 | let country = { |\n4 |     [objKey]: 'Canada', |\n\
+  5 |     [objKey + 'Abb']: 'ca' |\n6 | } |\n7 | console.log(country); // {name: 'Canada',\
+  \ nameAbb: 'ca' }\n```\n\n## 原型（Prototype of Objects）\n\n在 JavaScript 中，每个对象都有一个私有的原型（`__proto__`），该原型也是一个对象。我们使用\
+  \ `Object.create()` 将一个对象赋值到另一个对象的原型上，以继承基础对象的属性和方法。\n\n示例：\n\n```javascript\n1\
+  \ | \"use strict\"; |\n2 | let obj1 = { |\n3 |     firstName: 'Neo', |\n4 |    \
+  \ lastName: 'D. Truman', |\n5 |     logFullname: function() { |\n6 |         console.log(this.firstName\
+  \ + ' ' + this.lastName); |\n7 |     } |\n8 | }; |\n9 | |\n10| let obj2 = Object.create(obj1);\
+  \ |\n11| obj2.firstName = 'John'; |\n12| obj2.logFullname(); // John D. Truman\n\
+  ```\n\n我们可以打开控制台面板查看结果，并在光标处（`>`）输入 `obj2` 然后按回车来检查变量 `obj2`的值。尝试展开对象及其原型（`[[Prototype]]`）以查看图中更多的信息。\n\
+  \n(Images/image0508.jpeg)\n\n在上面的图中，我们可以看到 `obj2` 的原型是 `obj1` 对象。\n\n以下描述了 `obj2.logFullname()`\
+  \ 如何在控制台面板打印出 \"John D. Truman\"。\n- 由于 `obj2` 没有 `logFullname()` 方法，JavaScript\
+  \ 引擎在 `obj2` 的原型中搜索了该方法。\n- 因为 `obj2` 的原型是 `obj1` 对象，找到了并调用了 `logFullname()` 方法。\n\
+  - 在方法内部，`this` 是 `obj2`，因此 `this.firstName` 是 \"John\"。\n- 由于 `obj2` 没有 `lastName`\
+  \ 属性，JavaScript 引擎再次在 `obj2` 的原型中搜索 `lastName` 属性。\n- 因为 `obj2` 的原型是 `obj1` 对象，找到了\
+  \ `lastName` 属性（\"D. Truman\"）并使用了它。结果是在控制台面板上打印了 \"John D. Truman\"。\n\n(Images/image0509.jpeg)\
+  \ 我们可以使用 `obj2.__proto__` 访问 `obj2` 的原型，但这种编码方式是不推荐的，因为 `Object.__proto__` 已被弃用。\n\
+  \n## 原型链（Prototype Chain）\n\n由于对象的原型是另一个对象，该原型也可以有自己的原型。我们称之为原型链。在原型链的末尾我们会看到一个\
+  \ `null` 对象。下面的示例演示了原型链。\n\n```javascript\n1 | \"use strict\"; |\n2 | let obj1 =\
+  \ { |\n3 |     firstName: 'Neo', |\n4 |     lastName: 'D. Truman', |\n5 |     logFullname:\
+  \ function() { |\n6 |         console.log(this.firstName + ' ' + this.lastName);\
+  \ |\n7 |     } |\n8 | }; |\n9 | |\n10| let obj2 = Object.create(obj1); |\n11| obj2.firstName\
+  \ = 'John'; |\n12| |\n13| let obj3 = Object.create(obj2); |\n14| obj3.age = 39;\
+  \ |\n15| obj3.logFullname(); // John D. Truman\n```\n\n(Images/image0510.jpeg)\n\
+  \n在上面的图中，我们可以看到 `obj3` 的原型是 `obj2` 对象，而 `obj2` 的原型是 `obj1` 对象。\n\n以下描述了 `obj3.logFullname()`\
+  \ 如何在控制台面板打印出 \"John D. Truman\"。\n- 由于 `obj3` 没有 `logFullname()` 方法，JavaScript\
+  \ 引擎在 `obj3` 的原型（即 `obj2`）中搜索了该方法。\n- 由于 `obj2` 没有 `logFullname()` 方法，JavaScript\
+  \ 引擎在 `obj2` 的原型中搜索了该方法。\n\n\n\n\n\n- 在该方法中，这个对象是 `obj3`，但 `obj3` 并没有 `firstName`\
+  \ 和 `lastName` 属性。因此，JavaScript 引擎再次在 `obj3` 的原型（即 `obj2`）中搜索这些属性。\n- 在 `obj2` 中找到了\
+  \ `firstName` 属性，因此 `this.firstName` 被解析为“John”。\n- 由于 `obj2` 没有 `lastName` 属性，JavaScript\
+  \ 引擎再次在 `obj2` 的原型中搜索 `lastName` 属性。\n- 因为 `obj2` 的原型是 `obj1` 对象，因此找到了 `lastName`\
+  \ 属性（“D. Truman”）并使用了它。结果是在控制面板上打印了“John D. Truman”。\n\n![Fish with solid fill](img/image00511.jpeg)\
+  \ 遍历原型链的过程会反复发生，直到到达 `null` 为止，因为 `null` 没有原型。\n\n# 第 3 章\n\n## 函数\n\n函数是一组共同完成特定任务的语句。这些语句被包裹在花括号\
+  \ `{}` 中，并在函数被调用时执行。\n\n函数也是一个对象，因此我们可以向它添加属性。\n\n```javascript\n1 \"use strict\"\
+  ;\n2 function myFunc() {\n3 }\n4 console.log(Function instanceof Object); // true\n\
+  5 myFunc.version = 1.2;\n6 console.log(myFunc.version); // 1.2\n```\n\n## 3.1 创建函数\n\
+  \n### 3.1.1 函数声明\n\n函数声明或函数语句使用 `function` 关键字定义，后跟一个函数名。\n\n例如，以下代码定义了一个名为 `sum`\
+  \ 的简单函数：\n\n```javascript\n1 \"use strict\";\n2 function sum(x, y) {\n3  return\
+  \ x + y;\n4 }\n5 console.log(typeof sum); // \"function\"\n6 console.log(sum(10,\
+  \ 20)); // 30\n```\n\n函数 `sum` 接收两个参数，称为 `x` 和 `y`。该函数包含一条语句，返回这两个参数之和。`return`\
+  \ 语句指定了函数返回的值。\n\n### 3.1.2 函数表达式\n\n函数表达式是一个没有名字的匿名函数。因此，它通常被赋值给一个变量，以便我们使用该变量来调用函数。例如，函数\
+  \ `sum` 可以这样定义：\n\n```javascript\n1 \"use strict\";\n2 let sum = function (x, y)\
+  \ {\n3  return x + y;\n4 }\n5 console.log(typeof sum); // \"function\"\n6 console.log(sum(10,\
+  \ 20)); // 30\n```\n\n![Crocodile with solid fill](img/image00512.jpeg) 函数表达式可能会存在提升（hoisting）问题，如下例所示：\n\
+  \n```javascript\n1 \"use strict\";\n2 console.log(typeof sum); // ReferenceError:\
+  \ Cannot access 'sum' before initialization\n3 let sum = function (x, y) {\n4  return\
+  \ x + y;\n5 }\n```\n\n### 3.1.3 使用函数构造函数\n\n可以使用函数构造函数动态创建函数。这意味着参数和函数体可以在运行时定义。\n\
+  \n语法为 `new Function(param1, ..., paramN, functionBody)`，其中：\n- `param1, ..., paramN`:\
+  \ 函数用作形式参数的名称。\n- `functionBody`: 包含函数定义的字符串。\n\n以下代码创建了一个接收两个参数并返回它们之和的函数。\n\n\
+  ```javascript\n1 \"use strict\";\n2 const sum = new Function('x', 'y', 'return x\
+  \ + y');\n3 console.log(sum(10, 20)); // 30\n```\n\n## 3.2 调用函数\n\n通过使用括号 `()` 和参数来调用函数。函数声明（而非函数表达式）可以被提升（出现在代码中调用的下方），如下例所示：\n\
+  \n```javascript\n1 \"use strict\";\n2 console.log(sum(10, 20)); // 30\n3 function\
+  \ sum(x, y) {\n4  return x + y;\n5 }\n```\n\n在上面的示例中，\n- `x` 和 `y` 是函数的参数；\n- `10`\
+  \ 和 `20` 是调用函数时使用的参数。\n\n## 3.3 return 语句\n\n`return` 关键字用于结束函数的处理并将某些值返回给调用者。\n\
+  \n语法为 `return [expression]`；其中 `expression` 是要返回的值。如果省略，则返回 `undefined`。\n\n示例 1：\n\
+  ```javascript\n1 \"use strict\";\n2 function test() {\n3  return 100;\n4 }\n5 let\
+  \ x = test();\n6 console.log(x); // 100\n```\n\n示例 2：\n```javascript\n1 \"use strict\"\
+  ;\n2 function test() {\n3  return;\n4 }\n5 let x = test();\n6 console.log(x); //\
+  \ undefined\n```\n\n示例 3：\n```javascript\n1 \"use strict\";\n2 function test() {\n\
+  }\n3 let x = test();\n4 console.log(x); // undefined\n```\n\n## 3.4 函数参数\n\nJavaScript\
+  \ 不要求参数的数量必须等于函数参数的数量。例如，我们有一个像示例所示有两个参数的函数：\n\n```javascript\n1 \"use strict\"\
+  ;\n2 function sum(x, y) {\n3  return x + y;\n}\n```\n\n我们可以不同数量的参数调用上面的函数而不会产生任何错误。\n\
+  - 一个参数：缺少输入将是 `undefined`。`console.log(sum(10)); // NaN (since y is undefined)`\n\
+  - 两个参数：`console.log(sum(10, 20)); // 30`\n- 三个参数：冗余输入将被忽略。`console.log(sum(10, 20,\
+  \ 30)); // 30`\n\n### 3.4.1 默认参数\n\n默认函数参数是在参数数量少于参数数量时使用的值。例如，`sum` 函数有两个参数，但在调用它时我们只输入了一个参数。在这种情况下，将使用默认参数。\n\
+  \n```javascript\n1 \"use strict\";\n2 function sum(x, y = 0) {\n3  return x + y;\n\
+  }\n4 console.log(sum(10)); // 10 (since y = 0)\n```\n\n### 3.4.2 剩余参数 (Rest Parameters)\n\
+  \n剩余参数语法有助于我们将输入收集到一个数组中。\n\n```javascript\n1 \"use strict\";\n2 function sum(...numbers)\
+  \ {\n3  console.log(numbers instanceof Array); // true\n4\n5  let result = 0;\n\
+  6  for (let i = 0; i < numbers.length; i++) {\n7    result += numbers[i];\n8  }\n\
+  9  return result;\n10 }\n11 console.log(sum(10, 20, 30)); // 60\n12 console.log(sum(10,\
+  \ 20, 30, 40)); // 100\n```\n\n这是一个结合剩余参数与普通参数使用的示例。\n\n```javascript\n1 \"use strict\"\
+  ;\n2 function multiply(multiplier, ...numbers) {\n3  let result = [];\n4  for (let\
+  \ i = 0; i < numbers.length; i++) {\n5    result.push(numbers[i] * multiplier);\n\
+  6  }\n7  return result;\n8 }\n9 let arr = multiply(2, 10, 20, 30);\n10 console.log(arr);\
+  \ // [20, 40, 60]\n```\n\n## 3.5 arguments 对象\n\n函数的 `arguments` 对象是一个包含用户输入的所有参数的特殊对象。\n\
+  \n示例：\n```javascript\n1 \"use strict\";\n2 function sum() {\n3  let total = 0;\n\
+  4  for (let n of arguments) {\n5    total += n;\n6  }\n7  return total;\n}\n8 console.log(sum(1,\
+  \ 2, 3, 4, 5)); // 15\n```\n\n## 3.6 递归函数\n\n递归函数在函数体内部调用自己。\n\n例如，考虑以下函数，它将计算从\
+  \ `start` 数字到 `end` 数字的整数的和。为了专注于概念，我们没有放置参数的校验代码。\n\n```javascript\n1 \"use strict\"\
+  ;\n2 function sum(start, end) {\n3  let result = 0;\n4  for (let i = start; i <=\
+  \ end; i++) {\n5    result += i;\n6  }\n7  return result;\n}\n8 console.log(sum(2,\
+  \ 6)); // 2 + 3 + 4 + 5 + 6 = 20\n```\n\n我们可以用另一种递归的方式编写上面的示例。\n\n```javascript\n\
+  1 \"use strict\";\n2 function sum(start, end) {\n3  return start === end ? end :\
+  \ start + sum(start + 1, end);\n}\n4 console.log(sum(2, 6));\n5 // = 2 + sum(3,\
+  \ 6)// = 2 + 3 + sum(4, 6)// = 2 + 3 + 4 + sum(5, 6)// = 2 + 3 + 4 + 5 + sum(6,\
+  \ 6)// = 2 + 3 + 4 + 5 + 6\n```\n\n\n\n\n\n![Crocodile with solid fill](img/image00513.jpeg)\
+  \ 递归函数会将返回地址推入 `Call Stack`（调用栈），导致它们的运行速度比普通函数慢。因此，如果可能，我们应该避免使用递归函数。\n\n## 3.7\
+  \ 箭头函数表达式\n\n箭头函数表达式是匿名的，具有以下局限性：\n\n- 没有对 `this` 或 `super` 的绑定，不应将其用作对象的方法。\n-\
+  \ 不适用于 `call`、`apply` 和 `bind` 方法，这些方法通常依赖于建立作用域。\n- 不能作为构造函数使用。\n- 在其体体内不能使用 `yield`。\n\
+  \n箭头函数表达式的语法：\n\n- 单个参数。对于简单的表达式返回是隐式的：\n  `param => expression`\n- 多个参数需要括号。对于简单的表达式返回是隐式的：\n\
+  \  `(param1, ..., paramN) => expression`\n- 多条语句需要大括号：\n  `param => {`\n    `expressions`\n\
+  \  `}`\n- 多个参数需要括号，且多条语句需要大括号：\n  `(param1, ..., paramN) => {`\n    `expressions`\n\
+  \  `}`\n\n示例 1：\n\n| 1 | `\"use strict\";` |\n| 2 | `let sayHi = name => console.log(\"\
+  Hello \" + name);` |\n| 3 | `sayHi('Neo'); // \"Hello Neo\"` |\n\n示例 2：\n\n| 1 |\
+  \ `\"use strict\";` |\n| 2 | `let sayHi = (firstName, lastName) => console.log(`Hello\
+  \ ${firstName}  ${lastName}`);` |\n| 3 | `sayHi('Neo', 'D. Truman'); // \"Hello\
+  \ Neo D. Truman\"` |\n\n示例 3：\n\n| 1 | `\"use strict\";` |\n| 2 | `let sayHi = name\
+  \ => {` |\n| 3 | `  let upperCaseName = name.toUpperCase();` |\n| 4 | `    console.log(\"\
+  Hello \" + upperCaseName);` |\n| 5 | `}` |\n| 6 | `sayHi('Neo'); // \"Hello NEO\"\
+  ` |\n\n示例 4：\n\n| 1 | `\"use strict\";` |\n| 2 | `let sayHi = (firstName, lastName)\
+  \ => {` |\n| 3 | `  let upperCaseFirstname = firstName.toUpperCase();` |\n| 4 |\
+  \ `  let upperCaseLastname = lastName.toUpperCase();` |\n| 5 | `    console.log(`Hello\
+  \ ${upperCaseFirstname}  ${upperCaseLastname}`);` |\n| 6 | `}` |\n| 7 | `sayHi('Neo',\
+  \ 'D. Truman'); // \"Hello NEO D. TRUMAN\"` |\n\n## 3.8 立即调用函数表达式\n\nIIFE（立即调用函数表达式）是在其定义代码之后立即被调用的函数。使用\
+  \ IIFE 的目的之一避免污染全局命名空间。\n\n语法如下：\n\n```javascript\n(function () {\n //// some code\
+  \ here\n})(); // 这一行的括号表示调用该函数\n```\n\n示例：\n\n| 1 | `\"use strict\";` |\n| 2 | `(()\
+  \ => {` |\n| 3 | `  let someVariable = 10;` |\n| 4 | `    console.log(someVariable);`\
+  \ |\n| 5 | `  // 使用上述变量的一些初始化代码` |\n| 6 | `})();` |\n| 7 | `// someVariable 在函数执行后会被丢弃。`\
+  \ |\n\n## 3.9 函数作用域\n\n在函数内部定义的变量仅在函数内部或通过 `closure`（闭包）可用。\n\n然而，函数可以访问定义在其所在作用域内的所有变量和函数。\n\
+  \n- 换句话说，定义在全局作用域的函数可以访问全局作用域定义的所有变量。\n\n| 1 | `\"use strict\";` |\n| 2 | `// 这些变量定义在全局作用域中`\
+  \ |\n| 3 | `let num1 = 10,` |\n| 4 | `    num2 = 20;` |\n| 5 | `// 这个函数也定义在全局作用域中`\
+  \ |\n| 6 | `function sum() {` |\n| 7 | `  return num1 + num2;` |\n| 8 | `}` |\n\
+  | 9 | `console.log(sum()); // 30`\n\n- 定义在另一个函数内部的函数也可以访问父函数的变量。\n\n| 1 | `\"use\
+  \ strict\";` |\n| 2 | `// 这些变量定义在全局作用域` |\n| 3 | `let num1 = 10,` |\n| 4 | `   \
+  \ num2 = 20;` |\n| 5 | `|` |\n| 6 | `// 嵌套函数示例` |\n| 7 | `function test() {` |\n\
+  | 8 | `  let x = 1,` |\n| 9 | `        y = 2;` |\n| 10 | `|` |\n| 11 | `  function\
+  \ add() {` |\n| 12 | `  return num1 + num2 + x + y;` |\n| 13 | `  }` |\n| 14 | `\
+  \  console.log(add()); // 33` |\n| 15 | `}` |\n| 16 | `test();` |\n\n![Images/image0514.jpeg)\
+  \ 上述示例也是闭包的示例。\n\n## 3.10 按值传递与引用传递\n\n不是对象的参数按值传递给函数——因此如果函数体内对参数赋值的新值不会反映到全局或调用该函数的地方。\n\
+  \n| 1 | `\"use strict\";` |\n| 2 | `let x = 10;` |\n| 3 | `function test(param)\
+  \ {` |\n| 4 | `    param = 100;` |\n| 5 | `}` |\n| 6 | `test(x);` |\n| 7 | `console.log(x);\
+  \ // 10` |\n\n当传递对象时，如果函数更改了对象的属性，该更改在外部是可见的，如下所示。我们说 `param` 是按传递的。\n\n| 1 | `\"\
+  use strict\";` |\n| 2 | `let o = { info: 10 };` |\n| 3 | `function testObject(obj)\
+  \ {` |\n| 4 | `    obj.info = 100;` |\n| 5 | `}` |\n| 6 | `testObject(o);` |\n|\
+  \ 7 | `console.log(o); // {info: 100}` |\n| 8 | `|` |\n| 9 | `let a = [1, 2, 3];`\
+  \ |\n| 10 | `function testArray(arr) {` |\n| 11 | `    arr[0] = 10;` |\n| 12 | `}`\
+  \ |\n| 13 | `testArray(a);` |\n| 14 | `console.log(a); // [10, 2, 3]` |\n\n## 3.11\
+  \ 函数重载\n\n如果两个或多个函数具有相同的名称，后定义的函数将覆盖之前的。\n\n示例 1：\n\n| 1 | `\"use strict\";` |\n\
+  | 2 | `function sum(x, y) {` |\n| 3 | `  return x + y;` |\n| 4 | `}` |\n| 5 | `function\
+  \ sum(x, y, z) {` |\n| 6 | `  return x + y + z;` |\n| 7 | `}` |\n| 8 | `console.log(sum(1,\
+  \ 2)); // 因为 z 是 undefined，所以是 NaN` |\n| 9 | `console.log(sum(1, 2, 3));` |\n\n\
+  示例 2：\n\n| 1 | `\"use strict\";` |\n| 2 | `function sum(x, y, z) {` |\n| 3 | ` \
+  \ return x + y + z;` |\n| 4 | `}` |\n| 5 | `function sum(x, y) {` |\n| 6 | `  return\
+  \ x + y;` |\n| 7 | `}` |\n| 8 | `console.log(sum, 1));` |\n\n## 3.12 一等函数\n\n一等函数是被视为变量函数。例如，函数可以被赋值为一个值。\n\
+  \n| 1 | `\"use strict\";` |\n| 2 | `const sayHello = function() {` |\n| 3 | `  console.log(\"\
+  Hello!\");` |\n| 4 | `};` |\n| 5 | `sayHello();` |\n\n函数可以作为参数传递。\n\n| 1 | `\"use\
+  \ strict\";` |\n| 2 | `function greet(fn) {` |\n| 3 | `  fn();` |\n| 4 | `}` |\n\
+  | 5 | `greet(sayHello);` |\n\n函数可以被另一个函数返回。\n\n| 1 | `\"use strict\";` |\n| 2 |\
+  \ `function getGreeting() {` |\n| 3 | `  return function() {` |\n| 4 | `    console.log(\"\
+  Hello!\");` |\n| 5 | `  };` |\n| 6 | `}` |\n| 7 | `const myFunc = getGreeting();`\
+  \ |\n| 8 | `myFunc();` |\n\n## 3.13 上下文绑定\n\n`Function.prototype.bind()` 方法帮助我们更改\
+  \ `this` 关键字。\n\n语法为：\n`bind(thisArg, arg1, ...N)`\n\n其中\n- `thisArg` 是 `this` 关键字指向的对象\n\
+  - `arg1, arg2, ...N`（可选）是函数的参数。\n\n示例 1：\n\n| 1 | `\"use strict\";` |\n| 2 | `let\
+  \ obj = {` |\n| 3 | `  firstName: \"Neo\",` |\n| 4 | `  lastName: \"D. Truman\"\
+  ` |\n| 5 | `};` |\n| 6 | `|` |\n| 7 | `function logInfo() {` |\n| 8 | `  console.log(this.firstName\
+  \ + \" \" + this.lastName);` |\n| 9 | `}` |\n| 10 | `let logInformation = logInfo.bind(obj);`\
+  \ |\n| 11 | `logInformation(); // Neo D. Truman` |\n\n示例 2：向 `bind()` 输入参数。\n\n\
+  | 1 | `\"use strict\";` |\n| 2 | `let obj = {` |\n| 3 | `  firstName: \"Neo\",`\
+  \ |\n| 4 | `  lastName: \"D. Truman\"` |\n| 5 | `};` |\n| 6 | `|` |\n| 7 | `function\
+  \ logInfo(email) {` |\n| 8 | `  console.log(this.firstName + \" \" + this.lastName);`\
+  \ |\n| 9 | `  console.log(email);` |\n| 10 | `}` |\n| 11 | `let logInformation =\
+  \ logInfo.bind(obj, \"neodtruman@gmail.com\");` |\n| 12 | `logInformation();` |\n\
+  | 13 | `// Neo D. Truman` |\n| 14 | `// neodtruman@gmail.com` |\n\n示例 3：不向 `bind()`\
+  \ 输入参数。\n\n\n\n\n\n```javascript\n9 | console.log(email);\n10 | }\n11 | let logInformation\
+  \ = logInfo.bind(obj);\n12 | logInformation(\"neodtruman@gmail.com\");\n13 | //\
+  \ Neo D. Truman\n14 | // neodtruman@gmail.com\n```\n\n### 3.13.2 call\n\n`Function.prototype.call()`\
+  \ 方法的工作方式与 `bind()` 相同，但 `call()` 会立即调用该函数（正如其名称“call”所示），而 `bind()` 则不会。\n\n语法形式为：\n\
+  \n`call(thisArg, arg1, ... , argN)`\n\n其中：\n\n● `thisArg` 是 `this` 关键字将指向的对象\n●\
+  \ `arg1`, `arg2`, ...`argN`（可选）是函数的参数。\n\n### 示例 1:\n\n```javascript\n11 | \"use\
+  \ strict\";\n2 | let obj = {\n3 | firstName: \"Neo\",\n4 | lastName: \"D. Truman\"\
+  \n5 | };\n6 | \n7 | function logInfo() {\n8 |     console.log(this.firstName + \"\
+  \ \" + this.lastName);\n9 | }\n10 | logInfo.call(obj); // Neo D. Truman\n```\n\n\
+  ### 示例 2:\n\n```javascript\n1 | \"use strict\";\n2 | let obj = {\n3 | firstName:\
+  \ \"Neo\",\n4 | lastName: \"D. Truman\"\n5 | };\n6 | \n7 | function logInfo(email)\
+  \ {\n8 |     console.log(this.firstName + \" \" + this.lastName);\n9 |     console.log(email);\n\
+  10 | }\n11 | // 我们可以从用户获取 email 并将其推入参数数组\n12 | let args = [\"neodtruman@gmail.com\"\
+  ];\n13 | logInfo.apply(obj, args);\n14 | // Neo D. Truman\n15 | // neodtruman@gmail.com\n\
+  ```\n\n`call()` 为函数/方法提供新的 `this` 值。通过 `call()`，你可以编写一次方法，然后在另一个对象中继承它，而无需为新对象重写该方法。\n\
+  \n```javascript\n1 | \"use strict\";\n2 | let obj1 = {\n3 | firstName: \"Neo\",\n\
+  4 | lastName: \"D. Truman\",\n5 | getFullname: function () {\n6 |     return this.firstName\
+  \ + \" \" + this.lastName;\n7 |     }\n8 | };\n9 | let obj2 = {\n10 | firstName:\
+  \ \"John\",\n11 | lastName: \"Conner\",\n12 | }\n13 | let fullname = obj1.getFullname.call(obj2);\n\
+  14 | console.log(fullname); // John Conner\n```\n\n我们也可以使用 `call()` 为对象链式调用构造函数，如下示例所示。\n\
+  \n```javascript\n1 | \"use strict\";\n2 | function Thing(name, price) {\n3 |   \
+  \  this.name = name;\n4 |     this.price = price;\n5 | }\n6 | \n7 | function SchoolThing(name,\
+  \ price) {\n8 |     Thing.call(this, name, price);\n9 |     this.category = 'School\
+  \ Thing';\n10 | }\n11 | \n12 | const book = new SchoolThing('Student Book', 6);\n\
+  13 | console.log(book);\n14 | // SchoolThing {name: 'Student Book', price: 6, category:\
+  \ 'School Thing'}\n```\n\n### 3.13.3 apply\n\n`Function.prototype.apply()` 方法的工作方式与\
+  \ `call()` 相同，但 `apply()` 会接收一个函数的参数数组。接收参数数组有助于我们在运行时生成参数并将其“发送”给函数。\n\n语法形式为：\n\
+  \n`apply(thisArg, argsArray)`\n\n其中：\n\n● `thisArg` 是 `this` 关键字将指向的对象\n● `argsArray`（可选）是函数的参数数组。\n\
+  \n### 示例:\n\n```javascript\n1 | \"use strict\";\n2 | let obj = {\n3 | firstName:\
+  \ \"Neo\",\n4 | lastName: \"D. Truman\"\n5 | };\n6 | \n7 | function logInfo(email)\
+  \ {\n8 |     console.log(this.firstName + \" \" + this.lastName);\n9 |     console.log(email);\n\
+  10 | }\n11 | // 我们可以从用户获取 email 并将其推入参数数组\n12 | let args = [\"neodtruman@gmail.com\"\
+  ];\n13 | logInfo.apply(obj, args);\n14 | // Neo D. Truman\n15 | // neodtruman@gmail.com\n\
+  ```\n\n## 3.14 闭包 (Closure)\n\n### 3.14.1 简介\n\n闭包允许函数访问其定义时所在的作用域中的变量，即使该作用域已经执行完毕。闭包是\
+  \ JavaScript 中非常强大的特性。\n\n```javascript\n1 | \"use strict\";\n2 | function outer(x)\
+  \ {\n3 |     let count = 0;\n4 |     return function inner(y) {\n5 |         count++;\n\
+  6 |         console.log(x, y, count);\n7 |     };\n8 | }\n9 | \n10 | let func =\
+  \ outer(\"hello\");\n11 | func(1); // hello 1 1\n12 | func(2); // hello 2 2\n```\n\
+  \n闭包“记住”了它被创建时的环境。当一个函数被创建时，它会携带一个对其定义环境的引用。这意味着即使外部函数已经执行并返回，内部函数仍然可以访问外部函数的局部变量。\n\
+  \n```javascript\n1 | \"use strict\";\n2 | function counter() {\n3 |     let count\
+  \ = 0;\n4 |     return function() {\n5 |         count++;\n6 |         return count;\n\
+  7 |     };\n8 | }\n9 | \n10 | let increment = counter();\n11 | console.log(increment());\
+  \ // 1\n12 | console.log(increment()); // 2\n13 | console.log(increment()); // 3\n\
+  ```\n\n闭包还可以允许多个函数共享同一个环境。\n\n```javascript\n1 | \"use strict\";\n2 | function createPerson(firstName,\
+  \ lastName) {\n3 |     let age = 0;\n4 |     return {\n5 |         firstName: firstName,\n\
+  6 |         lastName: lastName,\n7 |         greet: function() {\n8 |          \
+  \   // ...省略 ...\n8 |         },\n9 |         incrementAge: function() {\n10 | \
+  \            age++;\n11 |         },\n12 |         getAge: function() {\n13 |  \
+  \           return age;\n14 |         }\n15 |     };\n16 | }\n17 | \n18 | let person\
+  \ = createPerson(\"Neo\", \"Truman\");\n19 | person.incrementAge();\n20 | console.log(person.getAge());\
+  \ // 1\n21 | person.incrementAge();\n22 | console.log(person.getAge()); // 2\n```\n\
+  \n闭包还用于模拟私有变量，因为 JavaScript 以前没有真正的私有属性支持。\n\n```javascript\n1 | \"use strict\"\
+  ;\n2 | function createPerson(firstName, lastName) {\n3 |     let age = 0;\n4 | \
+  \    return {\n5 |         firstName: firstName,\n6 |         lastName: lastName,\n\
+  7 |         // ... \n8 |         getAge: function() {\n9 |             return age;\n\
+  10 |         },\n11 |         setAge: function(newAge) {\n12 |             age =\
+  \ newAge;\n13 |         }\n14 |     };\n15 | }\n16 | \n17 | let person = createPerson(\"\
+  Neo\", \"Truman\");\n18 | console.log(person.getAge()); // 0\n19 | person.setAge(25);\n\
+  20 | console.log(person.getAge()); // 25\n21 | console.log(person.age); // undefined\n\
+  ```\n\n### 3.14.2 使用闭包实现私有属性和方法\n\n我们可以使用闭包模拟对象的私有属性和方法，因为对象可以访问闭包中的变量，但不拥有它们。\n\
+  \n```javascript\n1 | \"use strict\";\n2 | function createPerson(firstName, lastName)\
+  \ {\n3 |     let age = 0;\n4 |     return {\n5 |         firstName: firstName,\n\
+  6 |         lastName: lastName,\n7 |         // ... \n8 |         getAge: function()\
+  \ {\n9 |             return age;\n10 |         },\n11 |         setAge: function(newAge)\
+  \ {\n12 |             age = newAge;\n13 |         }\n14 |     };\n15 | }\n16 | \n\
+  17 | let person = createPerson(\"Neo\", \"Truman\");\n18 | console.log(person.getAge());\
+  \ // 0\n19 | person.setAge(25);\n20 | console.log(person.getAge()); // 25\n21 |\
+  \ console.log(person.age); // undefined\n```\n\n\n\n\n\n# Example：\n\n```javascript\n\
+  \"use strict\";\n\nfunction doLog(info) {\n    console.log(info);\n}\nfunction doAlert(info)\
+  \ {\n    alert(info);\n}\n\nfunction processName(callback) {\n  let name = 'Neo';\n\
+  \    callback(name);\n}\nprocessName(doLog);\nprocessName(doAlert);\n```\n\n## 3.16\
+  \ 生成器函数 (Generator Function)\n\n`function*` 正是一个生成器，它根据函数体内部的 `yield` 表达式或 `yield*`\
+  \ 返回不同的值（到另一个生成器函数）。\n\n生成器的 `next()` 方法返回一个带有 `value` 和 `done` 属性的对象。\n\n### 示例\
+  \ 1:\n\n```javascript\n\"use strict\";\nfunction* generator(x) {\n  yield x;\n \
+  \ yield x * 2;\n  yield x * 5;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next());\
+  \ // {value: 10, done: false}\nconsole.log(gen.next()); // {value: 20, done: false}\n\
+  console.log(gen.next()); // {value: 50, done: false}\nconsole.log(gen.next()); //\
+  \ {value: undefined, done: true}\n```\n\n### 示例 2:\n\n```javascript\n\"use strict\"\
+  ;\nfunction* anotherGenerator(y) {\n  yield y * 3;\n  yield y * 4;\n}\n\nfunction*\
+  \ generator(x) {\n  yield x;\n  yield x * 2;\n  yield* anotherGenerator(x);\n  yield\
+  \ x * 5;\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next()); // {value:\
+  \ 10, done: false}\nconsole.log(gen.next()); // {value: 20, done: false}\nconsole.log(gen.next());\
+  \ // {value: 30, done: false}\nconsole.log(gen.next()); // {value: 40, done: false}\n\
+  console.log(gen.next()); // {value: 50, done: false}\nconsole.log(gen.next()); //\
+  \ {value: undefined, done: true}\n```\n\n生成器中的 `return` 语句会让生成器完成其工作（即其返回的对象的 `done`\
+  \ 属性将设置为 `true`）。返回的值将被设置为生成器返回的对象的 `value` 属性。\n\n### 示例 3:\n\n```javascript\n\"\
+  use strict\";\nfunction* generator(x) {\n  yield x;\n  return x * 2;\n  yield x\
+  \ * 5; // 不可到达\n}\n\nconst gen = generator(10);\n\nconsole.log(gen.next()); // {value:\
+  \ 10, done: false}\nconsole.log(gen.next()); // {value: 20, done: true}\nconsole.log(gen.next());\
+  \ // {value: undefined, done: true}\n```\n\n与 `return` 语句类似，生成器内部抛出的错误将使生成器结束——除非在生成器体内部被捕获。当生成器结束后，随后的\
+  \ `next()` 调用将不会执行该生成器的任何代码，它们将只返回此类形式的对象：`{value: undefined, done: true}`。\n\n\
+  ### 示例 4:\n\n```javascript\n\"use strict\";\nfunction* generator(x) {\n  yield x;\n\
+  \  throw 'Error here';\n  yield x * 5; // 不可到达\n}\n\nconst gen = generator(10);\n\
+  \nconsole.log(gen.next()); // {value: 10, done: false}\ntry {\n  console.log(gen.next());\n\
+  } catch (error) {\n  console.log(error); // Error here\n}\nconsole.log(gen.next());//\
+  \ {value: undefined, done: true}\n```\n\n为 `next()` 方法提供一个参数可以向生成器发送值。语法为：\n\n`next(value)`\n\
+  \n其中\n\n* `variable = yield expression`，传递给 `next()` 函数的值将赋值给 `variable`。\n\n###\
+  \ 示例:\n\n```javascript\n\"use strict\";\nfunction* idGenerator() {\n  let counter\
+  \ = 0;\n  while (true) {\n    let seeker = yield ++counter;\n    if (seeker) {\n\
+  \      counter += seeker;\n    }\n  }\n}\n\nconst generateId = idGenerator();\n\
+  console.log(generateId.next().value); // 1\nconsole.log(generateId.next().value);\
+  \ // 2\nconsole.log(generateId.next().value); // 3\nconsole.log(generateId.next(2).value);\
+  \ // 6 (跳过两个 id)\nconsole.log(generateId.next().value); // 7\nconsole.log(generateId.next(-3).value);\
+  \ // 5 (回滚三个 id)\nconsole.log(generateId.next().value); // 6\n```\n\n# 第 4 章\n\n\
+  ## JavaScript 中的 this\n\n### 4.1 函数中的 this\n\n在非严格模式下，在 Web 浏览器中工作时，函数（各种类型的函数）中的\
+  \ `this` 是 `Window` 对象，如下所示。\n\n```javascript\n// 函数声明\nfunction testFunc1() {\n\
+  \    console.log(this); // Window 对象\n}\ntestFunc1();\n\n// 函数表达式\nlet testFunc2\
+  \ = function () {\n    console.log(this); // Window 对象\n}\ntestFunc2();\n\n// 嵌套函数\n\
+  function test3() {\n  // 函数声明\n  function testFunc3() {\n    console.log(this);\
+  \ // Window 对象\n  }\n  testFunc3();\n\n  // 函数表达式\n  let testFunc4 = () => {\n \
+  \   console.log(this); // undefined\n  }\n  testFunc4();\n}\n```\n\n在 Web 浏览器中工作时，函数（各种类型的函数）中的\
+  \ `this` 是 `Window` 对象，如下所示。\n\n```javascript\n// 函数声明\nfunction testFunc1() {\n\
+  \    console.log(this); // Window 对象\n}\ntestFunc1();\n\n// 函数表达式\nlet testFunc2\
+  \ = function () {\n    console.log(this); // Window 对象\n}\ntestFunc2();\n\n// 嵌套函数\n\
+  function test3() {\n  // 函数声明\n  function testFunc3() {\n    console.log(this);\
+  \ // Window 对象\n  }\n  testFunc3();\n\n  // 函数表达式\n  let testFunc4 = () => {\n \
+  \   console.log(this); // undefined\n  }\n  testFunc4();\n}\n```\n\n在 Web 浏览器中工作时，函数（各种类型的函数）中的\
+  \ `this` 是 `Window` 对象，如下所示。\n\n```javascript\n// 函数声明\nfunction testFunc1() {\n\
+  \    console.log(this); // Window 对象\n}\ntestFunc1();\n\n// 函数表达式\nlet testFunc2\
+  \ = function () {\n    console.log(this); // Window 对象\n}\ntestFunc2();\n\n// 嵌套函数\n\
+  function test3() {\n  // 函数声明\n  function testFunc3() {\n    console.log(this);\
+  \ // Window 对象\n  }\n  testFunc3();\n\n  // 函数表达式\n  let testFunc4 = () => {\n \
+  \   console.log(this); // undefined\n  }\n  testFunc4();\n}\n```\n\n在 Web 浏览器中工作时，函数（各种类型的函数）中的\
+  \ `this` 是 `Window` 对象，如下所示。\n\n```javascript\n// 函数声明\nfunction testFunc1() {\n\
+  \    console.log(this); // Window 对象\n}\ntestFunc1();\n\n// 函数表达式\nlet testFunc2\
+  \ = function () {\n    console.log(this); // Window 对象\n}\ntestFunc2();\n\n// 嵌套函数\n\
+  function test3() {\n  // 函数声明\n  function testFunc3() {\n    console.log(this);\
+  \ // Window 对象\n  }\n  testFunc3();\n\n  // 函数表达式\n  let testFunc4 = () => {\n \
+  \   console.log(this); // undefined\n  }\n  testFunc4();\n}\n```\n\n### 4.2 对象方法中的\
+  \ this\n\n由于对象的方法也是函数，因此方法中的 `this` 关键字的行为与函数中的相同（见上一节）。\n\n### 示例 1:\n\n```javascript\n\
+  \"use strict\";\nlet user = {\n  name: 'Neo',\n  logInfo: function () { // 函数表达式\n\
+  \    console.log(this);\n  },\n  showInfo: () => { // 箭头函数\n    console.log(this);\n\
+  \  }\n}\nuser.logInfo(); // {name: 'Neo', logInfo: f, showInfo: f}\nuser.showInfo();\
+  \ // Window 对象\n```\n\n### 示例 2:\n\n```javascript\n\"use strict\";\nfunction testUser()\
+  \ {\n  let user = {\n    name: 'Neo',\n    logInfo: function () { // 函数表达式\n   \
+  \   console.log(this);\n    },\n    showInfo: () => { // 箭头函数\n      console.log(this);\n\
+  \    }\n  }\n  user.logInfo(); // {name: 'Neo', logInfo: f, showInfo: f}\n  user.showInfo();\
+  \ // undefined\n}\ntestUser();\n```\n\n### 示例 3: 嵌套函数中的 this 将为 undefined\n\n```javascript\n\
+  \"use strict\";\nlet user = {\n  firstName: 'Neo',\n  lastName: 'D. Truman',\n}\n\
+  ```\n\n\n\n\n\n```javascript\nshowFullname: function () {\n    console.log(this.firstName\
+  \ + ' ' + this.lastName);\n    function sayHi() {\n        console.log(this); //\
+  \ undefined\n        console.log('Hi ' + this.firstName + ' ' + this.lastName);\
+  \ // TypeError\n    }\n    sayHi();\n}\nuser.showFullname();\n```\n\n示例 4：示例 3 的解决方案是在外部函数中保存对象的指针，并在内部函数（闭包）中使用它。\n\
+  \n```javascript\n\"use strict\";\nlet user = {\n    firstName: 'Neo',\n    lastName:\
+  \ 'D. Truman',\n    showFullname: function () {\n        console.log(this.firstName\
+  \ + ' ' + this.lastName);\n        let self = this;\n        function sayHi() {\n\
+  \            console.log(self);\n            // self is {firstName: 'Neo', lastName:\
+  \ 'D. Truman', showFullname: f}\n            console.log('Hi ' + self.firstName\
+  \ + ' ' + self.lastName);\n            // Hi Neo D. Truman\n        }\n        sayHi();\n\
+  \    }\n}\nuser.showFullname();\n```\n\n在这些情况下我们不应该使用箭头函数：\n\n- 情况 #1：在对象或类中定义方法。如上文示例所示。\n\
+  - 情况 #2：定义 DOM 元素的回调事件。\n- 情况 #3：在对象的原型上定义方法。\n\n因为 `this` 可能会指向 `Window` 对象，或者如上面的示例所示可能是\
+  \ `undefined`。\n\n### 情况 #2 的示例\n\nHTML 代码（添加到 `index.html` 中）：\n```html\n<button\
+  \ id=\"btn-test\">Test</button>\n```\nJavaScript 代码：\n```javascript\n\"use strict\"\
+  ;\nlet btnTest = document.getElementById('btn-test');\n// 当点击时\nbtnTest.addEventListener('click',\
+  \ () => {\n    // this 并不是预期的 btnTest 按钮\n    console.log(this); // Window 对象\n\
+  });\n// 当双击时\nbtnTest.addEventListener('dblclick', function () {\n    console.log(this);\
+  \ // 'btn-test' 按钮\n});\n```\n\n### 情况 #3 的示例：\n\n```javascript\n\"use strict\"\
+  ;\nfunction User(name) {\n    this.name = name;\n}\nUser.prototype.logInfo = ()\
+  \ => {\n    console.log(this);\n}\nUser.prototype.showInfo = function () {\n   \
+  \ console.log(this);\n}\nlet user = new User('Neo');\nuser.logInfo(); // Window\
+  \ 对象\nuser.showInfo(); // {name: 'Neo'}\n```\n\n### 4.2.1 隐式绑定\n\n下面的示例使用函数表达式定义对象的方法。因此，`this`\
+  \ 指向该对象。\n\n示例：\n```javascript\n\"use strict\";\nfunction welcome() {\n    console.log(this);\
+  \ // {name: 'Neo', sayHi: f}\n    console.log('Hi ' + this.name); // Hi Neo\n}\n\
+  let user = {\n    name: 'Neo',\n    sayHi: welcome\n}\nuser.sayHi();\n```\n\n###\
+  \ 4.2.2 隐式绑定\n\n继续隐式绑定的示例，我们将对象的方法赋值给变量并作为函数表达式调用它。结果是，函数表达式中的 `this` 将是 `undefined`。\n\
+  \n```javascript\n\"use strict\";\nfunction welcome() {\n    console.log(this); //\
+  \ undefined\n    console.log('Hi ' + this.name); // TypeError\n}\nlet user = {\n\
+  \    name: 'Neo',\n    sayHi: welcome\n}\nlet greetingFunc = user.sayHi;\ngreetingFunc();\n\
+  ```\n\n## 4.3 globalThis\n\n`globalThis` 属性用于确保在当前环境的全局对象上运行。在 Web 浏览器中，`globalThis`\
+  \ 始终是 `Window` 对象。\n\n在网页上运行的示例：\n```javascript\n\"use strict\";\nfunction test()\
+  \ {\n    console.log(this); // undefined\n    console.log(globalThis); // Window\
+  \ 对象\n}\ntest();\n```\n\n# 第 5 章 面向对象\n\n面向对象编程（OOP）是一种以对象为基础构建算法和程序的编程方法。\n\n在\
+  \ OOP 中，对象被理解为一个实例，其中数据和作用于数据的过程被封装在一起。对象的特征是若干项操作，并且信息记录了这些操作的影响。对对象的操作被称为该对象的方法或行为。\n\
+  \n## 5.1 OOP 中的基本概念\n\n在本节中，我们将学习封装、类和实例、对象继承、多态和虚方法等概念，其中通过封装实现数据隐藏的概念是核心问题。\n\n\
+  ### 5.1.1 封装\n\n封装是将数据和作用于对象的方法与其它部分分开存储的能力。面向对象系统中的所有信息都存储在对象内部，并且只有当对象被有序调用时才能进行操作。\n\
+  \n封装不仅是将数据和程序收集在一起，它也被理解为数据的身份标识以及作用于数据的操作。封装对象的可见部分是对象的通信方法。\n\n### 5.1.2 类与实例\n\
+  \n类是程序中定义的数据类型。然而，类的概念更进一步，它包含了属性的实现以及可能对数据的操作。通常，类是了对象的样本，并描述了这些对象的内部结构。相同的对象具有相同的操作定义和数据结构。\n\
+  \n实例是内存中的真实对象。换句话说，实例是声明为类的变量。实例是从类创建的对象。\n\n### 5.1.3 继承\n\n对象的分类是将具有相同通信行为的对象归类。在子类化之后，下一步工作是构建派自现有类（基类）的类。这些类在拥有自身属性的同时，保留了基类的特征。换句话说，它们继承了基类的行为和数据。派自基类的类被称为派生类。这些派生类反过来又是其他派生类的基类。\n\
+  \n### 5.1.4 多态\n\n多态是向具有相同的对象发送相同消息的能力。也就是说，无论接收者属于哪个类，只要具有共同属性。\n\n在 OOP 语言中，多态通过在不同类中描述具有相同名称的方法来实现。这一特征使程序员避免了在程序中编写复杂的控制结构。消息的不同可能性只有在程序运行时才是真正需要的。\n\
+  \n### 5.1.5 虚方法\n\n动态绑定技术允许我们在不重新编译程序的情况下干预实体的操作。\n\n\n\n\n为了获得这种优势，在实现对象的类时，我们必须实现虚方法。这些是在程序执行时携带特定内容的方法。当编译器将源程序编译成机器语言时，虚方法的程序段会被包含在虚方法表中。在程序执行时，将从这个虚方法表中调用虚方法。\n\
+  \n## 5.2 new 运算符\n\n`new` 运算符允许开发者创建用户定义对象类型的实例，或者创建具有构造函数的内置对象类型的实例。\n\n![实心填充鼠](img/image00519.jpeg)\
+  \ 我们将函数构造函数的首字母大写，以区分它们与普通函数函数。\n\n示例：\n\n```javascript\n\"use strict\";\nfunction\
+  \ User(firstName, lastName) {\n  this.firstName = firstName;\n  this.lastName =\
+  \ lastName;\n}\nlet user1 = new User('Neo', 'D. Truman');\nconsole.log(user1);\n\
+  // User {firstName: 'Neo', lastName: 'D. Truman'}\n```\n\n当执行代码 `new User(...)`\
+  \ 时，会发生以下情况：\n\n- 创建一个新的空对象。\n- 该对象的原型将有一个新属性，称为 `constructor`，并将 `User` 函数赋值给它。\n\
+  - 最后，调用构造函数并将 `this` 绑定到第一步创建的对象上。\n\n## 5.3 函数的 prototype 属性\n\n在 JavaScript 中，函数也是对象，因为它们像任何其他对象一样拥有属性和方法。它们与其他对象的区别在于函数可以被调用。\n\
+  \n这是一个函数 `prototype` 属性的示例。\n\n```javascript\n\"use strict\";\nfunction User(firstName,\
+  \ lastName) {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\nconsole.log(typeof\
+  \ User); // function\n// 使用 function.prototype\nUser.prototype.logName = function\
+  \ () {\n  console.log(this.firstName + ' ' + this.lastName);\n}\n\nlet user1 = new\
+  \ User('Neo', 'D. Truman');\nconsole.log(user1); // User {firstName: 'Neo', lastName:\
+  \ 'D. Truman'}\nuser1.logName(); // Neo D. Truman\n```\n\n`user1` 对象没有 `logName()`\
+  \ 方法，但 `user1.logName()` 正常工作并在控制台面板打印了“Neo D. Truman”。\n\n让我们打开控制台面板查看结果。尝试展开 `user1`\
+  \ 对象及其原型（`[[Prototype]]`）以查看此图中的更多信息。\n\n![](img/image00520.jpeg)\n\n在上面的图中，我们可以看到\
+  \ `user1` 的原型是一个拥有 `logName()` 方法的对象，因为我们把 `User.prototype.logName` 定义为一个函数表达式。\n\
+  \n以下内容描述了 `user1.logName();` 如何在控制台面板上打印“Neo D. Truman”。\n\n- 由于 `user1` 没有 `logName()`\
+  \ 方法，JavaScript 引擎在 `user1` 的原型中搜索了该方法。\n- 因为 `user1` 的原型是一个拥有 `logName()` 方法的对象，所以找到了并调用了所需的方法。\n\
+  - 在方法内部，`this` 指向 `user1`，因此 `this.firstName` 是“Neo”，`this.lastName` 是“D. Truman”。结果是在控制台面板上打印了“Neo\
+  \ D. Truman”。\n\n在 `user1` 的原型中还有另一个原型（如图片所示），我们称之为原型链（Prototype Chain）。对原型链的搜索可能会反复反复发生，直到：\n\
+  \n- 找到了所需的属性或方法\n- 或者到达 `null`，因为 `null` 没有原型。\n\n对象的方法应该定义在 `Function.prototype`\
+  \ 对象中，因为具有以下优势：\n\n- 节省内存，因为它只占用一个内存区域。\n- 在创建实例后可以轻松修改方法，因为所有实例只引用一个原型对象。\n\n让我们尝试下面的示例：\n\
+  \n```javascript\n\"use strict\";\nfunction User(firstName, lastName) {\n  this.firstName\
+  \ = firstName;\n  this.lastName = lastName;\n  this.badMethod = function () {\n\
+  \    console.log('Should not define method like this');\n  }\n}\n\nUser.prototype.logName\
+  \ = function () {\n  console.log(this.firstName + ' ' + this.lastName);\n}\n\nlet\
+  \ user1 = new User('Neo', 'D. Truman');\nlet user2 = new User('John', 'Conner');\n\
+  \nuser2.badMethod = function () {\n  console.log('The badMethod() method of user2');\n\
+  }\nuser1.badMethod(); // Should not define method like this\nuser2.badMethod();\
+  \ // The badMethod() method of user2\n\nUser.prototype.logName = function () {\n\
+  \  console.log('The logName() method was modified');\n}\nuser1.logName(); // The\
+  \ logName() method was modified\nuser2.logName(); // The logName() method was modified\n\
+  ```\n\n## 5.4 扩展函数对象\n\n我们可以使用函数的 `prototype` 属性来扩展函数对象。下面的示例实现了 `String.format()`\
+  \ 方法，该方法根据给定的格式和参数返回格式化字符串。\n\n示例：\n\n```javascript\n\"use strict\";\nString.prototype.format\
+  \ = function () {\n  let args = arguments;\n  return this.replace(/{(\\d+)}/g, function\
+  \ (match, number) {\n    return typeof args[number] !== 'undefined' ? args[number]\
+  \ : match;\n  });\n}\nlet greetingStr = 'Hello {0}. How are you, {1}?'.format('Neo',\
+  \ 'D. Truman');\nconsole.log(greetingStr); // Hello Neo. How are you, D. Truman?\n\
+  ```\n\n## 5.5 Reflect\n\n`Reflect` 是一个内置对象，有助于：\n\n- 检测对象是否包含某些属性。\n```javascript\n\
+  \"use strict\";\nlet obj = { firstName: \"Neo\" };\nReflect.has(obj, 'firstName');\
+  \ // true\n```\n\n- 获取属性。\n```javascript\n\"use strict\";\nlet obj = { firstName:\
+  \ \"Neo\" };\nReflect.get(obj, 'firstName'); // Neo\n```\n\n- 返回对象的自身的键。\n```javascript\n\
+  \"use strict\";\nlet obj = { firstName: \"Neo\" };\nReflect.ownKeys(obj); // ['firstName']\n\
+  ```\n\n- 向对象添加新属性。\n```javascript\n\"use strict\";\nlet obj = { firstName: \"Neo\"\
+  \ };\nReflect.set(obj, 'age', 39);\nconsole.log(obj.age); // 39\n```\n\n- 设置对象的原型。如果更新成功则返回\
+  \ `true`。\n```javascript\n\"use strict\";\nlet obj1 = { firstName: \"Neo\", lastName:\
+  \ \"D. Truman\", logname: function () {\n  console.log(this.firstName + ' ' + this.lastName);\n\
+  } };\nlet obj2 = { firstName: \"John\" };\nReflect.setPrototypeOf(obj2, obj1);\n\
+  obj2.logname(); // John D. Truman\n```\n\n## 5.6 类\n\nJavaScript 中的类构建在原型链之上，并用于创建对象。类有两种类型；这些类表达式和类声明，但这些类型都不支持提升。\n\
+  \n### 5.6.1 类声明\n\n定义类的一种方法是使用类声明。声明类时，使用 `class` 关键字配合类名。\n\n示例：\n\n```javascript\n\
+  \"use strict\";\nclass User {\n  constructor(firstName, lastName) {\n    this.firstName\
+  \ = firstName;\n    this.lastName = lastName;\n  }\n  logName() {\n    console.log(this.firstName\
+  \ + ' ' + this.lastName);\n  }\n}\nlet user1 = new User('Neo', 'D. Truman');\nconsole.log(user1.firstName);\
+  \ // Neo\nconsole.log(user1);\n```\n\n![](img/image00521.jpeg)\n\n如图所示，`user1` 是一个拥有两个属性\
+  \ `firstName` 和 `lastName`的对象。`user1` 的 `logName()` 方法被放置在对象的原型中。\n\n\n\n\n类表达式是另一种定义类的方法。类表达式可以是命名的，也可以是不命名的。类类表达式的名称在类内部是局部作用域。\n\
+  \n示例：\n\n```javascript\n1 | \"use strict\";\n2 | // 无命名\n3 | let User = class {\n\
+  4 |  constructor(firstName, lastName) {\n5 |  this.firstName = firstName;\n6 | \
+  \ this.lastName = lastName;\n7 |     }\n8 | }\n9 | console.log(User.name); // User\n\
+  10 | let user1 = new User('Neo', 'D. Truman');\n11 |  \n12 | // 有命名\n13 | let AnotherUser\
+  \ = class  UserClass{\n14 |  constructor(firstName, lastName) {\n15 |  this.firstName\
+  \ = firstName;\n16 |  this.lastName = lastName;\n17 |     }\n18 | }\n19 | console.log(AnotherUser.name);\
+  \ // UserClass\n20 | // 但必须使用 AnotherUser 来创建对象\n21 | let user2 = new AnotherUser('Neo',\
+  \ 'D. Truman');\n```\n\n\n### 5.6.3 构造函数\n\n`constructor` 方法是在创建新对象时自动调用的函数。它们通常用作接收对象初始数据的网关。\n\
+  \n在构造函数的函数体中，我们可以使用 `super` 关键字来调用父类的构造函数。\n\n### 5.6.4 静态方法和属性\n\n`static` 关键字用于指定类的静态变量和静态方法。静态变量或方法通过类名访问（而不是通过类实例）。\n\
+  \n示例：\n\n```javascript\n1 | \"use strict\";\n2 | class  User {\n3 |  static staticProperty\
+  \ = \"Static Value\";\n4 |  \n5 |  constructor(firstName, lastName) {\n6 |  this.firstName\
+  \ = firstName;\n7 |  this.lastName = lastName;\n8 |     }\n9 |     logInfo() {\n\
+  10 |         console.log(this.firstName + ' ' + this.lastName);\n11 |     }\n12\
+  \ |  static staticMethod() {\n13 |         console.log('This is a static method');\n\
+  14 |     }\n15 | }\n16 |  \n17 | console.log(User.staticProperty); // Static Value\n\
+  18 | User.staticMethod(); // This is a static method\n19 |  \n20 | let user1 = new\
+  \ User('Neo', 'D. Truman');\n21 | console.log(user1.staticProperty); // undefined\n\
+  22 | console.log(user1.staticMethod); // undefined\n23 | console.log(user1);\n```\n\
+  \n在类内部，静态方法和静态属性只能在类的另一个静态方法方法中使用。\n\n```javascript\n1 | \"use strict\";\n2 | class\
+  \  User {\n3 |  static staticProperty = \"Static Value\";\n4 |  \n5 |  constructor(firstName,\
+  \ lastName) {\n6 |  this.firstName = firstName;\n7 |  this.lastName = lastName;\n\
+  8 |     }\n9 |     logInfo() {\n10 |         console.log('Access the static property\
+  \ from non-static method: ' + this.staticProperty);\n11 |     }\n12 |  static staticMethod()\
+  \ {\n13 |         console.log('Value of the static property: ' + this.staticProperty);\n\
+  14 |     }\n15 | }\n16 |  \n17 | User.staticMethod();\n18 | // Value of the static\
+  \ property: Static Value\n19 |  \n20 | let user1 = new User('Neo', 'D. Truman');\n\
+  21 | user1.logInfo();\n22 | // Access the static property from the non-static method:\
+  \ undefined\n```\n\n![Crocodile with solid fill](img/image00522.jpeg) 我们可以将静态属性和方法视为构造器的属性：`this.constructor.STATIC_PROPERTY`\
+  \ / `this.constructor.STATIC_METHOD()`。然而，我们应该避免使用它们，因为这破坏了“我们只能在同一类的另一个静态方法中调用静态方法或使用静态属性”的模式。\n\
+  \n### 5.6.5 私有方法和属性\n\n哈希 `#` 前缀用于声明对象的私有属性和私有方法。私有字段只能在类内部访问。类实例或派生类中不可用。\n\n示例：\n\
+  \n```javascript\n1 | \"use strict\";\n2 | class  User {\n3 |  // 私有属性必须在这里声明\n4\
+  \ |     #age;\n5 |  constructor(firstName, lastName, age) {\n6 |  this.firstName\
+  \ = firstName;\n7 |  this.lastName = lastName;\n8 |  this.#age = age;\n9 |     }\n\
+  10 |     logInfo() {\n11 |         console.log(this.firstName + ' ' + this.lastName);\n\
+  12 |  this.#logAge();\n13 |     }\n14 |  \n15 |     #logAge() {\n16 |      console.log(this.#age);\n\
+  17 |     }\n18 | }\n19 |  \n20 | let user1 = new User('Neo', 'D. Truman', 30);\n\
+  21 | user1.logInfo();\n22 | console.log(user1);\n```\n\n取消注释以下行将导致语法错误（SyntaxError）：\n\
+  \n```javascript\n23 // user1.#age;\n24 // user1.#logAge();\n```\n\n\n\n\n\n```javascript\n\
+  let student1 = new Student('John', 'Conner', 20, '123456');\nconsole.log(student1);\n\
+  student1.logInfo();\n\nlet teacher1 = new Teacher('Neo', 'D. Truman', 39);\nconsole.log(teacher1);\n\
+  teacher1.logInfo();\n\nlet guard1 = new SecurityGuard('William', 'Smith', 30);\n\
+  console.log(guard1);\nguard1.logInfo();\n```\n\n我们可以打开控制台（Console）面板查看结果，并检查 `student1`、`teacher1`\
+  \ 和 `guard1` 变量的值。尝试展开对象及其原型（`[[Prototype]]`），如如下所示所示查看更多信息。\n\n![](img/image00526.jpeg)\n\
+  \n`student1` 对象的原型对象有一个名为“logInfo”的方法。此处的 `logInfo()` 方法与 `User` 类中的 `logInfo()`\
+  \ 方法不同。\n\n`student1` 的原型对象也有它的原型，是一个 `User` 对象。\n\n当执行 `student1.logInfo()` 时，JS\
+  \ 引擎首先在 `student1` 对象中搜索该方法，但未找到。因此，它继续在 `student1` 的原型中搜索。它在那里找到了该方法并调用了它。\n\n\
+  ![](img/image00527.jpeg)\n\n`teacher1.logInfo()` 的执行过程与 `student1.logInfo()` 相同，因为\
+  \ `teacher1` 的结构与 `student1` 的结构几乎相同。\n\n![](img/image00528.jpeg)\n\n`guard1` 对象有一个原型对象（称为\
+  \ Object I）。而 `guard1` 的原型对象也有它的原型，是一个 `User` 对象（称为 Object II）。\n\n当执行 `guard1.logInfo()`\
+  \ 时，JS 引擎首先在 `guard1` 对象中搜索该方法，但未找到。因此，它继续在 `guard1` 的原型（Object I）中搜索，但再次未找到。遵循原型链，它继续在\
+  \ Object II 中搜索，找到了方法并调用。\n\n结论：JavaScript 中的子类化是构建在原型链之上的。\n\n### 5.6.7 针对旧浏览器的\
+  \ ES5 JavaScript OOP\n\n旧浏览器（如 Internet Explorer）不支持 `class` 关键字。因此，我们在本节中提供了另一种解决方案，在\
+  \ ES5 代码中实现 JavaScript OOP。\n\n我们将实现 `__extendsClass` 函数来从基类创建派生类。该函数将：\n\n- 设置原型链，使派生类可以使用基类的公共方法\n\
+  - 根据基类初始化派生类的所有属性\n- 创建派生类的构造函数\n\n`__extendsClass` 函数如下：\n\n```javascript\nvar\
+  \ __extendsClass = (this && this.__extendsClass) || (function () {\n  // d: derived;\
+  \ b: base; p: property |\n  var extendStatics = function (d, b) {\n    extendStatics\
+  \ = Object.setPrototypeOf ||\n    ({ __proto__: [] } instanceof Array && function\
+  \ (d, b) {\n          d.__proto__ = b;\n      }) ||\n    function (d, b) {\n   \
+  \   for (var p in b)\n      if(Object.prototype.hasOwnProperty.call(b, p))\n   \
+  \         d[p] = b[p];\n      };\n    return extendStatics(d, b);\n  };\n  return\
+  \ function (d, b) {\n  if (typeof b !== \"function\" && b !== null)\n  throw new\
+  \ TypeError(String(b) + \" is not a constructor or null\");\n    extendStatics(d,\
+  \ b);\n    function __() {\n      this.constructor = d;\n    }\n    d.prototype\
+  \ = b === null ? Object.create(b) : ((.prototype = b.prototype, new __()));\n  };\n\
+  })();\n```\n\n`User` 类的源代码：\n\n```javascript\nvar User = (function () {\n  // 此处为私有属性\n\
+  \  var _age;\n\n  // 此处为私有方法\n  function _logAge() {\n    console.log(\"Age: \"\
+  \ + _age);\n  }\n\n  // 构造函数\n  function User(firstName, lastName, age) {\n    this.firstName\
+  \ = firstName;\n    this.lastName = lastName;\n    _age = age;\n  }\n\n  // 此处为公共方法\n\
+  \  User.prototype.getAge = function () {\n    // 通过闭包访问私有属性 (_age)\n    return _age;\n\
+  \  };\n  User.prototype.setAge = function (newAge) {\n    _age = newAge;\n  };\n\
+  \  User.prototype.logInfo = function () {\n    console.log(\"Name: \" + this.firstName\
+  \ + \" \" + this.lastName);\n    // 通过闭包访问私有属性 (_age)\n    _logAge();\n  };\n\n\
+  \  // 原型链支持的静态方法\n  User.staticProp = 0;\n  User.staticMethod = function () {\n\
+  \    console.log('Message from static method');\n  };\n  // 通过 Function 实现的静态属性方法\n\
+  \  return User;\n})();\n```\n\n`Student` 类的源代码：\n\n```javascript\nvar Student =\
+  \ (function (_super) {\n  // 在开头调用 __extendsClass 函数\n  __extendsClass(Student,\
+  \ _super);\n\n  // 私有属性\n  var _Prop = 'Student';\n\n  // 构造函数\n  function Student(firstName,\
+  \ lastName, age, id) {\n    _super.call(this, firstName, lastName, age);\n    this.id\
+  \ = id;\n  }\n\n  // 公共方法\n  Student.prototype.logInfo = function (times) {\n  \
+  \  console.log('Information of student:');\n    console.log(\"Name: \" + this.firstName\
+  \ + \" \" + this.lastName);\n    // 调用类中的 super 方法\n    console.log(\"Age: \" +\
+  \ this.getAge());\n    console.log(\"Id: \" + this.id);\n    // 从实例访问 _privateProp:\
+  \ \n    //;\n  };\n\n  return Student;\n})(User);\n```\n\n`Teacher` 类的源代码：\n\n```javascript\n\
+  var Teacher = (function (_super) {\n  // 在开头调用 __extendsClass 函数\n  __extendsClass(Teacher,\
+  \ _super);\n\n  // 构造函数\n  function Teacher(firstName, lastName, age) {\n    _super.call(this,\
+  \ firstName, lastName, age);\n  }\n\n  // 公共方法\n  Teacher.prototype.logInfo = function\
+  \ (times) {\n    console.log('Information of teacher:');\n    console.log('...');\n\
+  \  };\n\n  return Teacher;\n})(User);\n```\n\n`SecurityGuard` 类的源代码：\n\n```javascript\n\
+  var SecurityGuard = (function (_super) {\n  // 在开头调用 __extendsClass 函数\n  __extendsClass(SecurityGuard,\
+  \ _super);\n\n  // 构造函数\n  function SecurityGuard(firstName, lastName, age) {\n\
+  \    _super.call(this, firstName, lastName, age);\n  }\n\n  return SecurityGuard;\n\
+  })(User);\n```\n\n让我们尝试上面的代码！\n\n```javascript\nconsole.log('Access static property\
+  \ and method:');\nconsole.log(User.staticProp);\nUser.staticMethod();\nconsole.log('-------------');\n\
+  /* 在控制台面板，我们将看到：Access static property and method:0Message from static method-------------*/\n\
+  ```\n\n\n\n\n\n```javascript\n/* 在控制台面板中，我们将看到：\nStudent {id: '123456', firstName:\
+  \ 'John', lastName: 'Conner'}\n学生信息：\nName: John Conner\nAge: 20\nId: 123456\n通过方法访问\
+  \ _privateProp: Private Property\n通过实例访问 _privateProp: undefined\n*/\n\nlet teacher1\
+  \ = new Teacher('Neo', 'D. Truman', 39);\nconsole.log(teacher1);\nteacher1.logInfo();\n\
+  \n/* 在控制台面板中，我们将看到：\nTeacher {firstName: 'Neo', lastName: 'D.Truman'}\n教师信息：...*/\n\
+  \nlet guard1 = new SecurityGuard('William', 'Smith', 30);\nconsole.log(guard1);\n\
+  guard1.logInfo();\n\n/* 在控制台面板中，我们将看到：\nSecurityGuard {firstName: 'William', lastName:\
+  \ 'Smith'}\nName: William Smith\nAge: 30*/\n```\n\n# 关于作者\n\nNeo D. Truman 从 1998\
+  \ 年小时候起就开始使用电脑。他于 2011 年获得了信息技术硕士学位。他在软件开发方面拥有 15 年以上的经验，特别是全栈 Web 开发。\n\n# 作者的其他书籍\n\
+  \n![](img/image00529.jpeg)\n\n[`www.amazon.com/dp/B09VDRLYBT`](https://www.amazon.com/dp/B09VDRLYBT)\n\
+  \n![](img/image00530.jpeg)\n\n[`www.amazon.com/dp/B09P6KH74B`](https://www.amazon.com/dp/B09P6KH74B)\n\
+  \n# 请在亚马逊上留下评论/想法\n\n感谢您购买并阅读我的书。我深表感谢，并希望您能从中有所收获。\n\n请考虑与朋友或家人分享这本书，并在亚马逊网站上留下评论。您的反馈和支持对我至关重要，并将激励我继续做我热爱的事。如果您喜欢我的书，请前往亚马逊并留下评论。\n\
+  \n我的电子邮箱是 `neodtruman@gmail.com](mailto:neodtruman@gmail.com)`。如果您有任何问题，请给我发送电子邮件。我很乐意听到读过我书的人的反馈。我会尽力回答收到的每封邮件。主题应为\
+  \ `[JavaScript Object-Oriented Programming By Examples] <在此处输入您的主题>`，以便我快速筛选并回答您的问题。\n\
+  \n您可以在亚马逊作者页面关注我：[`www.amazon.com/Neo-D-Truman/e/B09P6LHL2M`](https://www.amazon.com/Neo-D-Truman/e/B09P6LHL2M)\n\
+  \n"

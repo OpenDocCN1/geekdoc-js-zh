@@ -1,0 +1,1787 @@
+<p><img src="cover.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 533 751" preserveaspectratio="none">
+<image width="533" height="751" xlink:href="cover.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Java:</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre8">Tips and Tricks to Programming Code with Java
+</span><br />
+<br />
+<br />
+<br />
+<br />
+<span class="calibre9">Charlie Masterson</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre10">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre13">Table of Contents</span></p>
+<p><span class="calibre15"> </span></p>
+<p><a href="#part0000_split_003.html_Introduction"><span
+class="calibre16">Introduction</span></a></p>
+<p><a href="#part0000_split_003.html_Ch1"><span
+class="calibre16">Chapter 1: Hibernation in Implementations That Are
+Standalone</span></a><span class="calibre17"> </span></p>
+<p><a href="#part0000_split_004.html_Ch2"><span
+class="calibre16">Chapter 2: SharePoint Services on the Internet that
+Use  a Java Client</span></a><span class="calibre17"> </span></p>
+<p><a href="#part0000_split_006.html_Ch3"><span
+class="calibre16">Chapter 3: SOA Integration Using Apache
+Camel</span></a><span class="calibre17"> </span></p>
+<p><a href="#part0000_split_008.html_Ch4"><span
+class="calibre16">Chapter 4: Orthogonality</span></a><span
+class="calibre17"> </span></p>
+<p><a href="#part0000_split_010.html_Ch5"><span
+class="calibre16">Chapter 5: JavaFX Applications That Can Be Used in
+Multiple Environments</span></a><span class="calibre17"> </span></p>
+<p><a href="#part0000_split_012.html_Ch6"><span
+class="calibre16">Chapter 6: Controlling the Flow of
+Java</span></a><span class="calibre17"> </span></p>
+<p><a href="#part0000_split_014.html_Conclusion"><span
+class="calibre16">Conclusion</span></a></p>
+<p><a href="#part0000_split_015.html_About"><span
+class="calibre16">About the Author</span></a></p>
+<p><br />
+<span class="calibre18"> </span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre10">
+
+</div>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre20">©</span><span class="calibre21"> Copyright
+2017 by Charlie Masterson - All rights reserved.</span></p>
+<p><span class="calibre23">The contents of this book may not be
+reproduced, duplicated or transmitted without direct written permission
+from the author.</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">Under no circumstances will any legal
+responsibility or blame be held against the publisher for any
+reparation, damages, or monetary loss due to the information herein,
+either directly or indirectly. </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre24">Legal Notice:</span></p>
+<p><span class="calibre23">This book is copyright protected. This is
+only for personal use. You cannot amend, distribute, sell, use, quote or
+paraphrase any part or the content within this book without the consent
+of the author. </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre24">Disclaimer Notice:</span></p>
+<p><span class="calibre23">Please note the information contained within
+this document is for educational and entertainment purposes only. Every
+attempt has been made to provide accurate, up to date and reliable
+complete information. No warranties of any kind are expressed or
+implied. Readers acknowledge that the author is not engaging in the
+rendering of legal, financial, medical or professional advice. The
+content of this book has been derived from various sources. Please
+consult a licensed professional before attempting any techniques
+outlined in this book.</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">By reading this document, the reader agrees
+that under no circumstances are is the author responsible for any
+losses, direct or indirect, which are incurred as a result of the use of
+information contained within this document, including, but not limited
+to, —errors, omissions, or inaccuracies.</span></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre10">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span id="part0000_split_003.html__Introduction"
+class="calibre27"></span><span
+id="part0000_split_003.html__Toc468700067"
+class="calibre27"></span><span id="part0000_split_003.html_Introduction"
+class="calibre27"><span class="calibre28"></span><span
+class="calibre29">I</span><span class="calibre30"></span><span
+id="part0000_split_003.html_2L-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">ntroduction</span></span></p>
+<p><span class="calibre32"></span><br />
+<span class="calibre23">Congratulations on downloading </span><span
+class="calibre34">Java: Tips and Tricks to Programming Code with
+Java</span><span class="calibre23"> and thank you for doing
+so.</span><br />
+<br />
+<span class="calibre23">The following chapters will discuss how you can
+use Java and what tips and tricks you are going to be able to use to
+further what knowledge you know on Java. </span><br />
+<br />
+<span class="calibre23">This book is mean to help you push past the most
+basic of knowledge and find easier ways for you to be able to use Java
+so that it can benefit you.              </span><br />
+<br />
+<span class="calibre23">There are plenty of books on this subject on the
+market, thanks again for choosing this one! Every effort was made to
+ensure it is full of as much useful information as possible, so please
+enjoy!</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span id="part0000_split_003.html_Ch1" class="calibre27"><span
+id="part0000_split_003.html_46-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">Chapter 1: </span><br />
+<span class="calibre29">Hibernation in Implementations that are
+Standalone </span></span></p>
+<div id="part0000_split_003.html_calibre_pb_6" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre23">Before you can begin to develop a project,
+you need to be able to have a strategy that is going to work well with
+the data that you are inputting into the program. </span><br />
+<br />
+<span class="calibre23">This is something that needs to happen no matter
+what project that you are working on so that you know where you are
+supposed to go instead of trying to do whatever and potentially mess up
+what you are trying to do. Not only that, but you are going to be able
+to use a framework that is going to be reliable and improve your project
+over the course of the time that it is used. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">However, if you are using a framework that is
+unstructured and cannot be controlled you are going to end up having to
+continuously fix your project and spend money on trying to maintain it
+properly so that it does not change your code and mess up your entire
+project. </span><br />
+<br />
+<span class="calibre6">Basically, making sure that the framework that
+you decide to use is going to make sure that your project is protected
+and has the proper tools that are needed to debug your project.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The hibernate validator is going to a project
+that is open sourced and will help when it comes to demonstrating key
+features or composing rules that are going to be valid. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Hibernate Validator </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">The validator for the hibernate is going to be
+a foundation that is built solidly but will allow for you to write code
+that is flexible and lightweight for Java EE and SE. The validator is
+going to be able to help with different frameworks that are going to be
+used when working with Java but you are also going to be able to use
+frameworks that are going to standalone. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The Java SE standalones are going to become
+very important parts of the application on the server side for more
+complex heterogeneous. </span><br />
+<br />
+<span class="calibre6">To be able to use the validator so that you can
+build a component that is stand alone, you are going to want to make
+sure that you have JDK version six or higher installed on your computer.
+</span><br />
+<br />
+<span class="calibre6">Having this version is going to make it to where
+you can use the 5.0.3 version of the validator by downloading version
+five of the hibernate binary distribution package. Your directory is
+going to have all of the binaries that you need to make sure that you
+are able to build implementations that are stand alone. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre40">The first example will show you how an ant
+built script is going to have the dependencies that are going to be for
+standalone implementations under the manifest section. This section is
+going to be required for the metadata that is outside of the code that
+you are writing. Because of the ant build, you are going to have all of
+the validator’s that are dependent JARs through the header of class-path
+for the manifest file. </span><br />
+<br />
+<br />
+<span class="calibre29">Example: manifest section with ant build and
+dependencies</span></p>
+<p><span class="calibre29"> </span></p>
+<p><br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">&lt;manifest&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;symbol title = “I made this” amount = “${
+name. user} “ / &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;symbol title = primary-class” amount =-
+“come.utility.validationutilities” / &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;symbole title = “class-path” amount =
+“library/hibernate-validator-dic-5.0.3. last.bottle libarary/
+hibernate-validator-mark-processor- 5.0.3. last bottle
+library/validation-cdi 1.1.0 last jar library/ classperson – 1.0.0 glass
+library/ javae dl – 2.2.4 glass library/ javae.le-dpi- 2.2.4 glass
+library jhead- listing- 3.1.1. DP. Glass library/ system4k- 1.2.17 glass
+. “ / &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt; / manifest &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;metainj directory - $ {workplace_ deal_
+route} / meta idj” additionally = *.mlx” / &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><br />
+<span class="calibre29">Annotation declaratives and definitions for
+constraints </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">With version five of the hibernate validator,
+you are going to have an implementation that is open for the JSR bean
+validation version 1.1. Annotations for the declaratives and the
+definition for constraints is going to have two highlights for the bean
+validation framework that has been updated. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">When you look at the rules for validation that
+are made through the syntax for declaratives is going to improve how
+your code is read. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: declarative annotations </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Open class place { </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@codeishere</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Closed string nameofwholiveshere ;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">…</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@morecode</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@pattern ( regapd  “ [ D-Ej-d] \\ j[ D-Dj-d]
+</span><a href="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"><span
+class="calibre41">\\e</span></a><span class="calibre15">? \\ j]D-Ej-d\\\
+j” , readme = “this is not the correct address for this person.” )
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Closed string codeforcity</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@codehere</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Closed string city; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@morecode </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">@pattern (regapd = FH|ME|EL| EJ| AL| EE| ME|
+DI| AO| EM | NE| OI| LA}” , readme = “this is not the correct city for
+this zip code” ) </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Closed string zipcode ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">… </span></p>
+<p><span class="calibre15"> </span></p>
+<p><br />
+<span class="calibre6">The validation method is going to have conditions
+that are going to be defined based on conditions that were set before so
+that the code is improved on readability. The rules for this are going
+to be easier for you to understand being that you will only need to take
+notice of the annotations and methods that are being used. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Declarative styles are going to be delete the
+necessary need to have a model for execution due to transitions of the
+different states all while analyzing the conditions that are going to
+come before and after the code. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Constraints will apply to the objects that
+fall under the @valid annotations. </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span class="calibre21"> </span></p>
+<p><span id="part0000_split_004.html__Toc468700069"
+class="calibre27"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</span><span id="part0000_split_004.html_Ch2" class="calibre27"><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span id="part0000_split_004.html_8R-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">Chapter 2: </span><br />
+<span class="calibre42"></span><span class="calibre29">SharePoint
+Services on the Internet that Use a Java Client </span></span></p>
+<div id="part0000_split_004.html_calibre_pb_8" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_005.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre23">For this chapter you are going to learn CRUD
+operations for SharePoint documents that use a Java client. It is going
+to focus on the web services that are going to be found in the copy and
+list services that you can use with Microsoft. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">CRUD services can also be used with CAML which
+stands for Collaborative Application Markup Language. It is based on XML
+that is going to utilize the different methods that are going to be used
+with copy and lists. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">On top of that you are going to be able to
+construct a CAML structure that is going to be able to pass through the
+different conditions that are going to be set for the properties that
+are assigned to the objects in the code. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Background </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">In the event that you are working with a large
+amount of data that may be in different forms, you are going to be able
+to look at that data in a compounded file so that you can make any
+decisions that you need to make. There are different kinds of monitoring
+that is going to happen in this kind of environment. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">An audit is going to make sure that the data
+you are working with is going to be in a constant state and then these
+reports can be sent out to the people that need to have them in order
+for them to be saved to SharePoint. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">But, the engines that you are going to use are
+going to need to have an output writer concept that is going to help set
+up writing in SharePoint. This helps with the writing that happens in
+databases and the servers that are SMTP so that you can avoid having to
+do everything manually. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Communicating with SharePoint </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">When you are working with SharePoint you are
+going to be using code that you write on your own for the solution that
+you need to reach. The code is going to be saved onto the Microsoft
+SharePoint website which is also code generated. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There are going to be two services that you
+are using with Microsoft, because of this, you are going to be accessing
+different services that are offered through SharePoint. They will be
+communicating through two different locations. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Location one will be: </span><a
+href="https://server/site/_vti_bin/Lists.asmx"><span
+class="calibre43">https://server/site/_vti_bin/Lists.asmx</span></a></p>
+<p><span class="calibre6">The second location: </span><a
+href="https://server/site/_vti_bin/Copy.asmx"><span
+class="calibre43">https://server/site/_vti_bin/Copy.asmx</span></a><span
+class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Generating packages on web services
+</span></p>
+<p><span class="calibre6">In order to generate the web service packages
+that you are going to be using, you are going to be using a wsimport
+function that you can find in the bin directory when you look at how
+Java has been installed. That is going to be based on the fact of you
+have installed version 1.6 of Java. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">SharePoint is going to run on HTTPS which may
+end up causing you to find a few problems with wsimport when you look at
+the server that you are using thanks to the two different URLs that you
+are going to use. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">In that case, you are going to end up getting
+an error that will look similar to this. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">[ERROR] bright.
+Protected.validator.validatorException: XPIK follow building untrue.
+Bright.procted.offered.certified.BrightCertFollow</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">BuiltException: cannot find certification
+that is valid enough to get to the target. </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre6">This error happens because the file that you
+are using does not have the proper certification that it needs for the
+site to run. How you are going to get around this is to download a file
+locally for WSDL. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: Copy service code </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">C : \ parma &gt; “% JAVA_NATIONAL% \ nib \
+swimport “ -e . -a come.microsoft. schemas. Sharpoint. Clean – hold
+-addmore -Anothing Copy. Swld </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Parsing DLSW </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">[ALERT] CLEAN opening “copyclean91” : please
+us a different holding than this </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Section 34 of file : / C: / parma/ Copy/ swdl
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Code is being created </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example two: lists service code </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">C : \ parma &gt; “% JAVA_NATIONAL% \ nib \
+swimport “ -e . -a come.microsoft. schemas. Sharpoint. Clean – hold
+-addmore -Anothing list. Swld </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Parsing DLSW </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">[ALERT] CLEAN opening “listclean91” : please
+us a different holding than this </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Section 34 of file : / C: / parma/ list/ swdl
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Code is being created </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre6">After the code, has been created, then it can
+be added to the solution that you made and use it. The compile option
+can be changed to a different command. However, doing this is going to
+make the class files be created differently inside of the source that
+you are using while allowing Eclipse to compile them only if we have
+written the source code out already. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Security </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">So, that SharePoint does what you want it to
+do, you are going to need to change your process so that you can add in
+Axis2. Axis2 is going to have a few issues, but you can overcome the
+issue by using the JCIFS along with Axis2. However, you may think that
+this is going overboard, but it is going to do what you want it to do
+all while making it easier to do what you want done. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Should the website that you are using have the
+cacerts file and have it updated to where it is going to be, you can use
+this as long as the certification for the site is up to date as well.
+</span><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Ajavae.web.lss.trustbought – you will use this
+to update the files that you are using.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<div id="part0000_split_005.html_calibre_pb_10" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_006.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span id="part0000_split_006.html_Ch3" class="calibre27"><span
+id="part0000_split_006.html_E3-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">Chapter 3: </span><br />
+<span class="calibre29">SOA Integration Using Apache
+Camel</span></span><br />
+<br />
+<span class="calibre29"> </span></p>
+<div id="part0000_split_006.html_calibre_pb_12" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_007.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre23">The Apache Camel is an integration service that
+is geared towards the architecture of the program that you are running.
+Camel lets you configure the integrations so that it works for web
+services such as message transformations, routing, and the handling of
+exceptions. All without having to use too much code from Java.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The integration in Java is going to mainly be
+used for the priority of projects that are looking to connect the end
+points for multiple web services quickly so that they work efficiently
+and are easy to maintain. </span><br />
+<br />
+<span class="calibre6">When you look at the development of the
+standpoints, the integration is going to be a challenge that you have to
+be willing to work for. However, you can make it easier by using the
+Apache Camel framework. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The API and different components for the
+Apache Camel are going to be mostly recognized when it comes to
+enterprise integration patterns or EIPs for short. The EIPs make it easy
+to do the tasks that are required when it comes to working with
+integration for the connection of web services like XSL, logging audits
+and much more. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Enterprise integration example </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Think about working for a major airline that
+is trying to make it easier for their customers to be able to make
+reservations. One of the simplest ways to do this now is online because
+everything is online now days. When creating the service, it is going to
+compare multiple airlines and their prices so that the customer can get
+the best price for when they want to travel. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There are going to be several web services
+that are going to be included in this because the airline that you are
+working for is going to have to pull the prices from their competing
+airlines websites so that they can give it to their customers.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">You are going to be making a list of quotes
+based on what the customer is looking for in their airline experience.
+The portal that the customer is using is going to be specific to them
+and give them everything that they are wanting from their destination to
+the best price that they can get for that fare and when they are going
+to reach their destination. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Writing out the custom Java code is going to
+require a lot of Java code so that you can map everything to process the
+request from the user properly. </span><br />
+<br />
+<span class="calibre6">It is best that you are able to map out the
+request from start to finish by using threads in Java to set up a
+parallel web service that is going to get all the services involved in
+supporting the task. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Apache Camel is going to use a framework that
+will allow shortcuts to make the programming easier. All you are going
+to need to do is leverage the API components for Camel and therefore
+design a web service integration task that is going to work with the
+EIPs. Instead of using the code for Java, you are going to use DSL or
+Domain Specific Language so that it only works with the domain that it
+is set up to work with. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Apache Camel is going to make DSL code based
+on Java so that it can route and configure the integration layer the way
+that it is supposed to be. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Continuing with our airline example, you are
+going to see through the portal that your customer is going to send a
+request through the starting location and the airline that they would
+prefer to use. From there, the code that you have written into the
+website is going to send back the airlines and destination information
+that they are looking for so that they can compare prices and airlines.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">If they have decided on what airline they want
+to use, then they are going to use the reservation service to accept the
+quote that came through to them based on the preferences that they
+inputted. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Java code is going to need to be written for
+the processors so that the routes that the customer takes are going to
+not be compromised by the website. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Terminology </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">A route in the Apache Camel is going to be a
+chain of processors that a message is sent through between two points.
+The preferred route is going to go between the endpoints. The messages
+are going to be kept in a component that is going to be referred to as
+the exchange. </span><br />
+<br />
+<span class="calibre6">The runtime that it takes for Camel to get the
+message from point at to point be is going to be the Camel
+Context.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Components for Camel SOA </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">CXF Endpoint: Apache CXF is going to be used
+for web services and their implementations. The CXF component is going
+to be used when configuring the web services that are being used and
+help to determine which route they are going to take. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel Bean: the component that uses JavaBeans.
+The bean is going to be used when setting up custom processes that have
+steps that need to be followed. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel Direct: two routes are going to be
+connected through a synchronous invocation. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel XSLT: the XSLT sheet will be loaded by
+the springs resource loading technique. This component is going to be
+used to handle the request and response transformations from web
+servers. </span></p>
+<p><br />
+<span class="calibre6">Camel Multicast EIP: the EIP pattern is going to
+send messages to different places that need to be processed. From here
+you can use multicasting to send the requests. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel Aggregator EIP: the pattern is going to
+combine two different results that have messages that are similar into
+one message that will be sent to the user. The aggregator is going to
+combine the responses so that the client is not getting overwhelmed.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel WireTap EIP: with wiretap, you can
+inspect the messages while they go through the system to the user. The
+EIP is going to log the messages with the points that are appropriate
+for it. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Web interfaces </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">WSDL files are going to be tied to the schemas
+for XML in web service interfaces when you look at the source code.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There are eight steps that you are going to
+use to implement the SOA layers. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Step one: Generate Java types for
+WSDLs</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">You are going to use the cxf codegen plugin
+that works with Maven along with the wsdl2java took that is going to
+assist in generating the Java code that you need for the different types
+of WSDLs that you are going to find in the source code. </span><br />
+<br />
+<span class="calibre6">In order to execute this code you are going to
+use the cmd: mvn generate sources code. </span><br />
+<br />
+<span class="calibre6">From here CSF is going to generate the code that
+is needed to place the artifact into the proper directory that it
+belongs in. From there, Maven can be used to build the artifacts that
+you are going to use. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">&lt; plugin &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;id for group&gt; gor. Camel. Cxf &lt; /
+id for group &gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;id for the object&gt; cxf codegen plugin
+&lt; / id for the object&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;version&gt; 2.8.0 &lt; / version&gt;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;carry out the code&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;number&gt; create source &lt; /
+number&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;series&gt; create source &lt; /
+series&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;configure&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;origin&gt; $ { bottomry } / cor/ primary
+/ java &lt; /origin&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;Wsdlchange&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// reservation made by user</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;wsdl&gt; $ {bottom ry}/ cor/ primary/
+resource/ wsdl/ reservation &lt;/wsdl&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/wsdlchange&gt; </span></p>
+<p><span class="calibre15">&lt;wsdlchange&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">//reservation made on airline D </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;wsdl&gt; $ { bottomry } / cor / primary/
+resource/ wsdl/ reservation on airline d. wsdl &lt;/ wsdl&gt;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/wsdlchange&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;wsdlchange&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// reservation by airline F </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;wsdl&gt; $ {bottomry}/ cor/ primary/
+resources/ wsdl / reservation on airline f wsdl &lt;/wsdl&gt;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/wsdlchange&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/wsdlchanges&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ configure&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;achieve&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;achieve wsdl2java &lt;/achieve&gt;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/achieve&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ carry out&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;plugin&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre29">Step two: Configure Camel CXF end points
+</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Here is where you are going to need to define
+the end points for your code. The end points are going to be used in the
+routes that you use for Camel. </span><br />
+<br />
+<span class="calibre6">You need to remember though that the interface
+that you are using is going to need to be generated by the end point
+that you have already put in place. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Camel cxf end point will be the default end
+point in your code so that you can get XML in its raw form. You will
+need to enable the validation so that you can validate the requests that
+come in through XSD in the WSDL so that you can reduce time that needs
+to be invested into the validation. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example </span></p>
+<p><br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">// end point for the reservation made on airline
+D </span></p>
+<p><span class="calibre15">&lt;cxf: endpoint number =
+endpointairlineD</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">URL = “http:// nationalhost: 9898/
+reservation made” servicegenre = “mor. Small. Rira. Recall.
+airlineDquote”</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Wsdladdress = “wdsl/ reservation for airline
+d wsdl”&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;cxf: ability&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;enter key = informationinput” number =
+“pay” / &gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ cxf: ability&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ cxf: cxfend&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// end point for the reservation made on
+airline F</span></p>
+<p><span class="calibre15">&lt;cxf: endpoint number =
+endpointairlineF</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">URL = “http:// nationalhost: 9898/
+reservation made” servicegenre = “mor. Small. Rira. Recall.
+airlineFquote”</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Wsdladdress = “wdsl/ reservation for airline
+f wsdl”&gt; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;cxf: ability&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;enter key = informationinput” number =
+“pay” / &gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ cxf: ability&gt;</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">&lt;/ cxf: cxfend&gt;</span><br />
+<br />
+<span class="calibre15"> </span></p>
+<p><br />
+<span class="calibre29">As for the explanation of the rest of the
+steps:</span><br />
+<br />
+<br />
+<span class="calibre6">Step three is so you can make the proper routes
+with the use of multicast.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Step four lets you see the messages as they go
+through the system.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Step five is where you can write your messages
+by using XSLT.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Step six uses wiretap.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Step seven will create the context for
+XML.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Finally, step eight will execute the code you
+have written. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<div id="part0000_split_007.html_calibre_pb_14" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_008.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre23"> </span></p>
+<p><br />
+<br />
+<span id="part0000_split_008.html_Ch4" class="calibre27"><span
+id="part0000_split_008.html_OQ-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">Chapter 4: </span><br />
+<span class="calibre29">Orthogonality </span></span></p>
+<div id="part0000_split_008.html_calibre_pb_16" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_009.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre23">Using orthogonality is going to make it
+easier to maintain your program’s software therefore making it easier to
+understand for your users. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Orthogonality comes from the Greek word
+orthogonios which literally means “right angled”. This is normally a
+word that is used when you are talking about the difference between a
+set of dimensions. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">As you look at a graph, you are going to
+notice that an object is going to move along the x axis but only if it
+is occupying a space of three dimensions. </span><br />
+<br />
+<span class="calibre6">The coordinates are not going to change. But, if
+you change the dimension of one of the coordinates, you are going to
+need to change the other dimension because there cannot be side effects
+on other dimensions just because you changed one.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">That is why orthogonality is used for
+describing software designs that are modular and maintainable as you
+think about the system in a multi-dimensional space. </span><br />
+<br />
+<span class="calibre6">Orthogonality is going to be what assists a
+developer to make sure that the changes are not going to have side
+effects on other parts of the system. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Dimensions of Log4j </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">When you use logging, you are doing nothing
+more than using a fancy version of the println() function that you use
+in Java, but Log4j is going to have a package that is going to change
+the mechanics of how the Java platform is going to respond.
+</span><br />
+<br />
+<span class="calibre6">Not only that: it also allows developers to do
+different things such as: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Creating new layouts so that events for
+logging are defined by a string.</span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Appenders are going to be logged
+differently. This is not limited to consoles but also to locations of
+networks, logs for operating systems, and more. </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Control will be centrally located
+depending on how much information has to be logged. </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">There are now layers for things like debug
+and errors.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Log4j includes other features that you can
+explore as you work with Java. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Log4j types considered like
+aspects</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">The appender has levels and there are three
+aspects of it that you are going to see on the independent dimensions of
+the program. </span><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Level: the events that are logged by the
+program </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Appender: the data that is displayed or
+stored </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Layout: how the data is presented to the
+user. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">You have to look at the aspects all together
+instead of individually and they have to be on a three-dimensional
+space. Every point for the aspect is going to be part of the space that
+is going to configure the system the way that it is supposed to be.
+</span></p>
+<p><br />
+<br />
+<span class="calibre29">Example: </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">// logging started! </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Logging logger = logging . the logging aspect
+(“No”) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Appender appended = old the appender for the
+system() ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Layout display = old gor camel log4j
+CTCTdisplay() </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Appender. Howdisplayed (displayed) ;
+</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Logger. Showappender (appender) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Logger. Howhigh (information on how high it
+is) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">// logging started! </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Logger. Alert (“ You shall not pass!”) ;
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The code in the example is an orthogonal code
+and it is going to enable you to change the layout, appender, and level
+of the aspect without ever causing your code to break therefore it
+continues to be functional. </span><br />
+<br />
+<span class="calibre6">The design for orthogonal code is going to have
+points that are going to have enough space on the script that is going
+to make it valid so that you can configure the system. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The orthogonality is a concept that is
+powerful and is going to establish a mental model that is going to be
+somewhat simple to understand even though you are using it for
+applications that are more complex. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">If you want a situation that is going to be
+useful to use orthogonality, then you are going to use it when you are
+testing the code’s functionality and levels so that you can fix the code
+that is not going to work with the appender or the layout. </span><br />
+<br />
+<span class="calibre6">The use of orthogonality is going to make sure
+that there are no surprises with your code and that they all work the
+same on each level. This is going to be true when you are using log4j
+and other tools and utilities that are designed by third parties.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Thanks to the complexity of the orthogonality,
+program’s software is going to be somewhat like the dimensions that you
+use when you are working with geometry. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Code and designing it for orthogonality
+</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Now that you know what orthogonality is, you
+are going to need to know how to design and code it so that you can use
+it in your programming. The whole point behind it is that you need to
+use abstract concepts. </span><br />
+<br />
+<span class="calibre6">Every dimension that you see in an orthogonal
+system is going to have one aspect for each program.  Some dimensions
+are going to have types that are going to be one of the most common
+solutions for using abstract types. </span><br />
+<br />
+<span class="calibre6">Every type will have a dimension that is going to
+represent the points that are given inside of the dimension. Abstract
+types are not going to be directly tied into instantiated or concrete
+classes. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There are some classes that you do not need to
+use. Like you do not need to use concrete classes whenever the type you
+are using is just a markup and not showing any encapsulated behavior.
+</span><br />
+<br />
+<span class="calibre6">However, you can just look at the type to see if
+it represents the dimension itself and if it is predefined for a set of
+instances that are fixed in place. It will even work for variables that
+are static. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">A general rule of thumb to remember when you
+are working with orthogonality is to try and avoid the references that
+are going to be for concrete types that will represent a different
+aspect for the program that you are using. </span><br />
+<br />
+<span class="calibre6">Keeping to this rule is going to allow you to
+write code that is more generic code that is going to work in all
+instances that you are going to be putting it into. </span><br />
+<br />
+<span class="calibre6">The code can have references to properties just
+as long as they are part of the interface that is used when defining the
+dimension. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">For example, if you look at the aspect type of
+layout that defines a different method, then this method is going to
+give you a Boolean that will indicate if the layout has the ability to
+be rendered with stack traces or not. </span><br />
+<br />
+<span class="calibre6">At the point that an appender uses the layout, it
+is going to be fine to write code that is conditional for the method
+that you are using. That way that the appender for the file will print
+the exception of stack traces that are going to use a layout that cannot
+normally handle exceptions. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The layout implementation is going to refer to
+when you are using a level in particular that is going to be used when
+you are logging events. </span><br />
+<br />
+<span class="calibre6">For example, if you want to log a level error in
+a layout that is using HTML, then you can wrap the log message in tags.
+But, the error is going to define the level you are working with by
+representing the dimension. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">References can still be avoided based on
+implementation classes that you use with other dimensions. So, if you
+use a layout then you are not going to need to know what sort of layout
+you are using. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Violating orthogonality</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Log4j is one of the best examples that you are
+going to have for orthogonality. But, some parts of log4j are going to
+violate the rules in orthogonality. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There is an appender that is going to log the
+relational database. Since there is a scale and popularity issue with
+the database, it makes it easier to search for the logs with SQL.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There is an appender that is based on fixing
+the problem that you will run into when it comes to logging a database
+that is rational by turning the events that are logged into the insert
+statements with SQL. Therefore, the problem with the pattern layout is
+solved. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The patternlayout is going to have a template
+that is going to give the user flexibility that is going to configure
+the strings to be created each time that an event is logged. The
+template will define the string and all the variables that are included
+in it. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Pattern for the string = </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">“%d [ @ %a  {ss:mm:HH yyy MM dd} no %l] %l%j”
+; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Layout display =</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Old gor. Camel. Log4j layout for the pattern
+(pattern) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Appender. Layout setup (display) ;
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The appender will use the layout with the
+pattern that is going to define the statement. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">National untrue holdSql (string d) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Statement for sql = d ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">if (display() == false) {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">This display (old layout for the pattern (d))
+; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">else {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">(( layout for the pattern) pattern())
+conversion pattern (d) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There is an implicit assumption that is built
+into the code for the set that you are using in this example that will
+define the appender. When looking at the orthogonality code, this is
+going to point to a lot of different aspects of a three-dimensional cube
+that is going to show the layout with the patternlayout that is not
+going to be represented in a system configuration that is valid.
+</span><br />
+<br />
+<span class="calibre6">Any attempts that are put into place for the SQL
+are going to have to use a layout that is different so that there is a
+different exception being used for the class cast. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">If that is not enough reason for you, then
+another reason is that the appender’s design is quite questionable. When
+you use the layout for the pattern, the template will be bypassed.
+</span><br />
+<br />
+<span class="calibre6">But this is not always a good thing because the
+JDBC will compile all of the statements that were prepared previously
+and this is going to end up leading to improvements in the performance
+that are not going to be easy to fix. The appropriate approach for this
+though is to control what your layout does by overriding it. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">National open display set (layout display)
+{</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">if ( display instanceof layout pattern)
+{</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Superb layout setup (display) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">else {</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">Set a new argument that is not valid (“
+layout is not going to work”) ; </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Sadly, you are going to find problems with
+this example as well. There is a runtime exception that is going to make
+the application using this method unprepared to catch the mistake.
+Essentially, you are going to use the layout method, but it is not going
+to have a runtime exception that is going to work with it and the
+guarantee is going to be weakened. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">If you look at the preconditions that are set
+up, then the layout is going to need stronger preconditions so that the
+method can override it. If you do not do it that way, then you are going
+to violate the object-oriented core that is going to be meant just for
+the principle. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Workaround </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Since there is no really easy solution for
+fixing the appender, you are going to end up finding that there are
+deeper problems that you have to deal with. Because of this, the level
+of abstraction that you are going to use is going to happen when you are
+designing the abstract types for the core which are ultimately going to
+need to be fine-tuned. </span><br />
+<br />
+<span class="calibre6">The core method is defined by the layout and how
+it is formatted. The method will end up returning a string to you which
+is going to have a database that is based on tuples and not strings.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">A solution that you can use is one that is
+going to be based on a data structure that is more sophisticated for the
+return format. You will need to imply the overhead in any situations
+that you are going to want a string to be returned to you. Also, the
+objects that are intermediate are going to be used when created before
+dealing with the garbage collected performance that is working on the
+framework for logging. </span><br />
+<br />
+<span class="calibre6">When you have more than one return type that is
+sophisticated, you are also going to make log4j more difficult for you
+to understand. The ultimate goal is to make everything as easy to
+understand as possible. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Yet another solution is to use abstracts that
+are layered and involves using two abstract types that will end up
+extending the appender. The only appender that you should be using is
+the JDBC appender because most other appenders are going to have
+implementations that have to be implemented so that they work the way
+that they need to. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The biggest drawback that you are going to see
+with this one is that the complexity is going to increase yet again. Not
+only that, but the developers of the appender will need to make sure
+that they have all the information before they make the decisions that
+are needed to be made for the level of abstraction that they are going
+to use. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<div id="part0000_split_009.html_calibre_pb_18" class="calibre10">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_010.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<h3 class="calibre49"><span id="part0000_split_010.html__Toc468700087"
+class="calibre27"><span class="calibre50"> </span></span></h3>
+<h3 class="calibre49"><span class="calibre50"> </span></h3>
+<h3 class="calibre49"><span class="calibre50"> </span></h3>
+<h3 class="calibre49"><span class="calibre50"> </span></h3>
+<p><span id="part0000_split_010.html_Ch5" class="calibre27"><span
+id="part0000_split_010.html_13P-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre29">Chapter 5: </span><br />
+<span class="calibre29">JavaFX Applications That Can Be Used in Multiple
+Environments</span></span></p>
+<p><span class="calibre51"></span></p>
+<div id="part0000_split_010.html_calibre_pb_20" class="calibre10">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_011.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre52"></span><span class="calibre23">When you are
+using version 2.0.2 of JavaFX along with SDK you are going to be allowed
+to deploy applications inside of multiple environments along with
+applications that are going to stand alone thanks to Java web start or a
+web page that is embedded. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Preparing JPadFX for deployment </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">There are source files that you are going to
+have to use with the JPadFX application. </span><br />
+<br />
+<span class="calibre6">After all of the files have been placed into the
+directory that you are using, then you are going to be allowed to
+execute the commands that you put into the application. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example:</span><br />
+<br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Javae – pc “C: \ project source \ oracle \
+javafx 2.0</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">DKS\ tr\ library\ trxfj. Glass” ; . -q in
+jpadfx. Java</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Please note that this is only going to work if
+you have version 2.0.2 installed on your computer. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Deploying JPadFx as standalone applications
+</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">With the version that you should have
+downloaded on your computer, you are going to have a tool that is going
+to be for inserting your commands so that the application is deployed
+almost automatically. When you look at it, there is a completely
+different directory that is used for this version of the program.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">After the source files, have been compiled,
+then you can use the javafxpackager so that you can deal with the class
+files along with the launcher into a new file. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">Javafxpackager makeglass applicationtype
+jpadfx directory crs in directory outside in inside file jpadfx. Glass.
+D</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre29">Terminology </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">makeglass are going to tell the program to
+create a new file in that directory. </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Applicationtype: the main class is going
+to be identified with the launcher </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">Dircrs: the directory will be identified.
+</span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">In directory: the name of the file will be
+identified </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre6">-d is going to tell you what the output is
+going to be and where the error message is going to be displayed.
+</span><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre6">Should the commands be successful then you are
+going to be introduced to a new function. The simplest way to deal with
+this is to use the jar tool. But, that is only going to work if your
+current directory has the proper tools and the subdirectory tied to it
+so that the command can be carried out and stored in the directory.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example:</span><br />
+<br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Glass fu</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">In \ jpadfx. Glass icon.png </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">It is at this point that the stand alone will
+be run with Jpadfx so that you can test the file’s veracity. But you are
+going to need to switch out of the directory and into a new directory
+that has the correct command that needs to be executed. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example:</span><br />
+<br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Java -pc “C: \ project source\ oracle\ javafx
+2.0</span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">DKS\ tr \ library \ jfxrt. Glass” ; . -glass
+jpadfx.glass </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">This command will add the class paths to the
+correct files so that the runtime is loaded correctly. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Deploying JPadFX in a web page </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">The javafxpackager can be used in creating
+HTML pages along with deploying them with the correct files so that
+scenarios can be handled when it comes to embedding the applications in
+a web page or running it with Java web start. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre15">Javafxpackager -execute -in directory in -in
+file jpadfx -how wide 500 -how tall 500 – directory crs in crs source
+jpadfx.glass </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre15">-class of application jpadfx -title “jpad fx”
+-name “jpadfx is equal to jpad” -manager “Timothy Mason” – d</span></p>
+<p><span class="calibre6"> </span></p>
+<p><br />
+<span class="calibre29">Terminologies explained:</span><br />
+<span class="calibre29"> </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">Execute:</span><span class="calibre40">
+the packager will be executed with HTML and JNLP files </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">Directory in</span><span
+class="calibre40">: identifies which directory the file is stored
+in</span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">Infile</span><span class="calibre40">:
+the file name will be identified </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">How wide</span><span class="calibre40">:
+the width of the page </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">How high</span><span class="calibre40">:
+how tall the page is </span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">Directory crs</span><span
+class="calibre40">: where the file is coming from</span></p>
+<p><span class="calibre6">-</span><span class="calibre48">       
+</span><span class="calibre29">Crs source</span><span
+class="calibre40">: the file is identified </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23"> </span></p>
+<p><br />
+<span class="calibre23"> </span></p>
+<div id="part0000_split_011.html_calibre_pb_22" class="calibre10">
+
+</div>
+</div>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+<br />
+<br />
+<span id="part0000_split_012.html_Ch6"><span
+id="part0000_split_012.html_19A-f6f52e5031a740509e3d4d3fd695c7a4"
+class="calibre3">Chapter 6: </span><br />
+<span class="calibre3">Controlling the Flow of Java </span></span></p>
+<div id="part0000_split_012.html_calibre_pb_24" class="calibre10">
+
+</div>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre40">Any programming that you have done before
+this point is going to be known as sequential programming which
+basically means that the code you have entered was read from top to
+bottom, every line being read the way that it is written. However, not
+all programs are going to work like that. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Some code has to be run but only in the event
+that a condition has been met. For code, you may want your client to be
+of a certain age. </span><br />
+<br />
+<span class="calibre6">This is going to be where you will control the
+flow of how the program operates through conditional logic. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Conditional statements are going to use the
+word if mostly, but there are other words that can be used to create
+conditional statements. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">If statement</span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">The code is going to be executed whenever
+something happens instead of waiting for something else, which is going
+to be most common when it comes to programming, therefore the if
+statement was created. An if statement is going to look like this:
+</span></p>
+<p><br />
+<span class="calibre15">CODE: </span><br />
+<br />
+<span class="calibre15">if ( statement ) {</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The word if is going to be lowercased before
+your condition is paced in a set of brackets. The curly brackets are
+going to be used to divide the chunks of code. </span><br />
+<br />
+<span class="calibre6">This code is going to be executed only in the
+case that the condition has been met. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">if( client &lt; 18) { </span></p>
+<p><span class="calibre15">} </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">This condition states that if the client is
+less than 18. Instead of typing it all out, shorthand is going to be
+used so that the chunk of code is shorter and easier to read.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">if( client &lt; 18) {</span></p>
+<p><span class="calibre55"><span class="calibre56"></span></span><span
+class="calibre15">// display message </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Therefore, should the client be over 18, the
+code set in the two sets of curly brackets is going to be jumped over
+while Java proceeds how it is supposed to. Anything that is in the
+middle of the curly brackets will be carried out only if the condition
+has been met. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Another short hand notion is going to be to
+point the triangle to the right which means greater than. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><br />
+<span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">if( client &gt; 18) {</span></p>
+<p><span class="calibre55"><span class="calibre56"></span></span><span
+class="calibre15">//display message </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The code is the exact same except that the
+condition is going to apply to those who are over 18. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">If … else </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Instead of an if statement being used, an if
+then statement can be used. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">if( condition_to_test) {</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">else {</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The first line will still start with if while
+being followed by the condition. The curly brackets are going to divide
+different parts of the code. </span><br />
+<br />
+<span class="calibre6">The second choice is going to go after the else
+with its own curly brackets. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">There are only two choices that you are going
+to have, either your client is going to be younger than 18 or older than
+18. Your code will have to match what you want to happen. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">If … else if </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">More than two conditions can be tested at
+once. If you want to test a certain range of ages, you are going to use
+an if else if statement. </span><br />
+<br />
+<span class="calibre6">The syntax is going to be: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">If(condition_one) {</span></p>
+<p><span class="calibre6">} </span></p>
+<p><span class="calibre6">Else if ( condition_ two ) { </span></p>
+<p><span class="calibre6">} </span></p>
+<p><span class="calibre6">Else { </span></p>
+<p><span class="calibre6">} </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The newest part of the code is going to be the
+else if ( condition_two) {</span></p>
+<p><span class="calibre6">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">When the if statement is sent, the next is
+going to be followed by round brackets. The second condition is going to
+be in between two new brackets but it is not going to be caught by the
+first condition. </span><br />
+<br />
+<span class="calibre6">The code is still going to be sectioned off with
+curly brackets with every if else if statement that you have each having
+its own curly brackets. If you miss one then you are going to get an
+error message. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The conditional operators that you need to use
+are: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Greater than (&gt;) </span></p>
+<p><span class="calibre6">Less than (&lt;) </span></p>
+<p><span class="calibre6">Greater than or equal to (&gt;=) </span></p>
+<p><span class="calibre6">Less than or equal to ( &lt;=) </span></p>
+<p><span class="calibre6">AND (&amp;&amp;) </span></p>
+<p><span class="calibre6">OR ( ||) </span></p>
+<p><span class="calibre6">A value of ( ==) </span></p>
+<p><span class="calibre6">NOT (!) </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The two ampersand symbols are going to be used
+to test for more than one condition at the same time. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><br />
+<span class="calibre15">CODE:</span><br />
+<span class="calibre15"> </span></p>
+<p><span class="calibre15">else if ( client &gt; 18 &amp;&amp; client
+&lt; 40) </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">With this code, you are going to want to have
+the knowledge need to know the age of the client and to see if they are
+older than 18 but younger than 40. </span><br />
+<br />
+<span class="calibre6">You are only trying to see what is inside of the
+variable that the client inputs. The client has to be older than 18 but
+younger than 40. Your client has to meet both conditions since the AND
+operator was used. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Nested if </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">If statements can be nested just like if else
+and if else if statements. An if statement that has been nested is going
+to be putting one if statement with another. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">if( client &lt; 19) { </span></p>
+<p><span class="calibre55"><span class="calibre56"></span></span><span
+class="calibre15">system.out.println ( “ 18 or younger”) ; </span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">To check and see if your client is over
+sixteen there has to be another if statement placed inside of the if
+statement that you have already created. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The first if statement will be where the
+client is going to be caught if they are less than 19 and the second one
+will narrow it down so that they are over 16. When you want to print a
+different message, you can use an if else statement. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">if( client &lt; 20) {</span></p>
+<p><span class="calibre15">if( client &gt; 20 &amp;&amp; client &lt; 23
+) {</span></p>
+<p><span class="calibre15">System.out.println( “You are 21 or 22”) ;
+</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">else {</span></p>
+<p><span class="calibre15">System.out.println (“ 22 or younger”) ;
+</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre15">} </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The curly brackets that are placed in the code
+have to be exact or the program is not going to be run. Nested if
+statement are tricky to learn, but they can be narrowed down.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><br />
+<span class="calibre29">Boolean values </span></p>
+<p><span class="calibre29"> </span></p>
+<p><span class="calibre6">Boolean values are only going to be true or
+false, 1 or 0 or even yes or no. Java has a variable that is done for
+Boolean values: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Boolean client = true ; </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">You are not going to need to type int, string,
+or double you are going to need to type Boolean by using a lower case b.
+the name of the variable will come after it has been assigned to the
+value of true or false. </span><br />
+<br />
+<span class="calibre6">The assignment is going to have one equals sign.
+However, should you evaluate the variable and it has a value of
+something then you are going to need to use two equals signs.
+</span></p>
+<p><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre29">Example :</span></p>
+<p><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre15">CODE:</span><br />
+<br />
+<span class="calibre15">Boolean client = true; </span></p>
+<p><span class="calibre15">if ( client == true) {</span></p>
+<p><span class="calibre15">System.out.println (“it’s true”) ;
+</span></p>
+<p><span class="calibre15">} </span></p>
+<p><span class="calibre15">else { </span></p>
+<p><span class="calibre15">System.out.println(“it’s false”) ;
+</span></p>
+<p><br />
+<span class="calibre6"> </span></p>
+<p><span class="calibre6">The if statement is going to see if the
+variable entered by the client is true. The else will check to see if it
+is false. </span><br />
+<br />
+<span class="calibre6">You are not going to need to say “else if (
+client == false)”. When something turns out to not be true, it is going
+to obviously be false. </span><br />
+<br />
+<span class="calibre6">You are going to use else since there are only
+going to be two choices when it comes to Boolean values. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The other operator that is used for conditions
+is the NOT operator, this is used with Boolean values. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre29">Example: </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre15">Boolean client = true;</span></p>
+<p><br />
+<span class="calibre15">if( !client) {</span></p>
+<p><span class="calibre15">System.out.println (“it’s false”) ;
+</span></p>
+<p><span class="calibre15">} </span></p>
+<p><span class="calibre15">else { </span></p>
+<p><span class="calibre15">System.out.println (“it’s true”) ;
+</span></p>
+<p><span class="calibre15">}</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">This is the same as any other code that is
+used with a Boolean except for the statement  “if ( !client) {“.
+</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">The NOT operator is going to come before the
+client’s variable. This operator will use a single exclamation mark but
+it will fall before the variable that has to be tested. </span><br />
+<br />
+<span class="calibre6">The code is going to be tested for negation which
+means that it is not what it actually is. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Since the client variable has been set to
+true, the !client will end up testing for false values.</span><br />
+<br />
+<span class="calibre6">If the condition is set to false, then the NOT
+operator will test for values that are true. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<div id="part0000_split_013.html_calibre_pb_26" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<p><span id="part0000_split_014.html_Conclusion"><span
+class="calibre3">Conclusion</span></span></p>
+<p><span class="calibre57"></span><span class="calibre6"> </span></p>
+<p><span class="calibre6">Thank you again for downloading this
+book!</span></p>
+<p><span class="calibre6">I hope this book was able to help you to gain
+more knowledge on the Java programming language and use it to apply to
+your programming requirements.</span><br />
+<br />
+<span class="calibre6">The next step is to continue programming as you
+learn more topics for your Java programming skillset.</span></p>
+<p><br />
+<span class="calibre6">Finally, if this book has given you value and
+helped you in any way, then I’d like to ask you for a favor, if you
+would be kind enough to leave a review for this book on Amazon? It’d be
+greatly appreciated!</span></p>
+<p><br />
+<span class="calibre6">Thank you and good luck!</span></p>
+<div id="part0000_split_014.html_calibre_pb_30" class="calibre38">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<div class="calibre1">
+<p><span id="part0000_split_015.html_About"><span class="calibre3">About
+the Author</span></span></p>
+<p><span class="calibre58"></span><span class="calibre6"> </span></p>
+<p><span class="calibre6">Charlie Masterson is a computer programmer and
+instructor who have developed several applications and computer
+programs.</span></p>
+<p><br />
+<span class="calibre6">As a computer science student, he got interested
+in programming early but got frustrated learning the highly complex
+subject matter.</span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6">Charlie wanted a teaching method that he could
+easily learn from and develop his programming skills. He soon discovered
+a teaching series that made him learn faster and better.</span></p>
+<p><br />
+<span class="calibre6">Applying the same approach, Charlie successfully
+learned different programming languages and is now teaching the subject
+matter through writing books.</span></p>
+<p><br />
+<span class="calibre6">With the books that he writes on computer
+programming, he hopes to provide great value and help readers interested
+to learn computer-related topics. </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><br />
+<br />
+<span class="calibre15"> </span></p>
+<p><span class="calibre15"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre6"> </span></p>
+</div>

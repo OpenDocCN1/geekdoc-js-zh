@@ -1,0 +1,607 @@
+- "# JavaScript 与 TensorFlow 基础：零基础学者指南\n\n\n\n![](img/Image00049.jpg)\n\n\n# JAVASCRIPT\n\
+  \n本 JavaScript 教程让初学者和专家都能轻松学习 JavaScript。\n学习 JavaScript，你只需要对计算机有基本的了解。\n\n##\
+  \ JAVASCRIPT 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <h2>欢迎来到 JavaScript</h2>\n\
+  \  <script>\n    document.write(\"Hello Friends\");\n  </script>\n</body>\n</html>\n\
+  ```\n\n可以通过在代码中添加 JavaScript 语句来实现 JavaScript。\n`<script>...</script>`。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n  <script type=\"text/javascript\">\n    document.write(\"\
+  Hello World\");\n  </script>\n</body>\n</html>\n```\n\n### JavaScript 代码可以在 JavaScript\
+  \ 中的 3 个地方编写\n\n1. 在 HTML 的 `<body>`...`</body>` 标签之间。\n2. 在 HTML 的 `<head>`...`</head>``\
+  \ 标签之间。\n3. 在 `.js` 文件中（外部 JavaScript）。\n\n### 示例（在 body 标签之间编写代码）\n\n在下面的示例中，`body`\
+  \ 标签包含了 JavaScript 代码。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script type=\"\
+  text/javascript\">\n    alert(\"Hello world\");\n  </script>\n</body>\n</html>\n\
+  ```\n\n### 示例 2（在 head 标签之间编写代码）\n\n我们将在下面的示例中创建函数 `msg()`。在 JavaScript 中，你必须在函数名后编写函数体来构造函数。要调用一个方法，我们必须先创建一个事件。在这个案例中，我们使用\
+  \ `onclick` 事件来调用 `msg()` 函数。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <script\
+  \ type=\"text/javascript\">\n    function msg() {\n      alert(\"world\");\n   \
+  \ }\n  </script>\n</head>\n<body>\n  <p>欢迎来到 JavaScript</p>\n  <input type=\"button\"\
+  \ value=\"click\" onclick=\"msg()\">\n</body>\n</html>\n```\n\n### 外部文件\n\n我们可以构建一个可以在\
+  \ HTML 文件中使用的 JavaScript 文件。由于单个 JavaScript 文件可以在多个 HTML 页面中使用，因此它允许代码复用。这提高了网页的效率。该文件必须具有\
+  \ `.js` 扩展名。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <script type=\"text/javascript\"\
+  \ src=\"message.js\"></script>\n</head>\n<body>\n  <p>Hello</p>\n  <input type=\"\
+  button\" value=\"click\" onclick=\"msg()\">\n</body>\n</html>\n```\n\n# JavaScript\
+  \ 注释\n\nJavaScript 中的注释用于描述代码。它用于添加代码相关的内容，例如警告或建议，以便最终用户能够理解。\n\n## JavaScript\
+  \ 注释的类型\n\nJavaScript 注释有两种类型：\n1. 单行注释\n2. 多行注释\n\n### 单行注释\n\n双斜杠 `//` 用于表示单行注释。程序运行时，双斜杠\
+  \ `//` 与行尾之间的任何文本都会被忽略。\n\n例如：在语句之前添加注释。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+  \  <script>\n    // 单行注释\n    document.write(\"hello world\");\n  </script>\n</body>\n\
+  </html>\n```\n\n例如：在语句之后添加注释。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\
+  \    var a = 10;\n    var b = 20;\n    var c = a + b; // 相加 a 和 b 的值\n    document.write(c);\
+  \ //打印 10 和 20 的和\n  </script>\n</body>\n</html>\n```\n\n### 输出\n30\n\n## 多行注释\n\
+  \n单行和多行注释也可以用于多行注释。跨越多行的注释以 `/*` 开始，以 `*/` 结束。JavaScript 将忽略它们之间的文本。\n\n### /* 在此处编写注释\
+  \ */\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n    /* 这是多行注释。它不会被显示\
+  \ */\n    document.write (\"Example of JavaScript multi line comment\");\n  </script>\n\
+  </body>\n</html>\n```\n\n# JavaScript 变量\n\n值（`name=\"Ram\"`）和表达式（`Sum=x+y`）存储在变量中。\n\
+  在使用变量之前，我们必须先声明它。要声明变量，我们如下使用关键字 `var`：\n\n```javascript\nvar name;\n```\n\n变量有两种类型：\n\
+  1. 局部变量\n2. 全局变量\n\n局部变量 – 它在函数或块中声明。\n\n```javascript\n<script>\nfunction abc()\
+  \ {\n  var x = 10; // 局部变量\n}\n</script>\n```\n\n全局变量 - 它具有全局作用域，意味着它可以在 JavaScript\
+  \ 代码的任何地方指定。在函数外部声明变量。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\
+  \    var data = 200; // 全局变量\n    function a() {\n      document.write(data);\n\
+  \    }\n    function b() {\n      document.write(data);\n    }\n    a(); // 调用 JavaScript\
+  \ 函数\n    b();\n  </script>\n</body>\n</html>\n```\n\n### 在函数内部声明全局变量\n\n我们需要使用\
+  \ `window` 对象在函数内部声明 JavaScript 全局变量。\n\n```javascript\n<script>\nfunction a() {\n\
+  \  window.value = 50; // 通过 window 对象声明全局变量\n}\n</script>\n```\n\n现在，它可以在任何函数内部声明，并在任何函数内部进行访问。\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n    function a() {\n   \
+  \   window.value = 90;\n    }\n    function b() {\n      alert(window.value);//\
+  \ 从其他函数访问全局变量\n    }\n    a();\n    b();\n  </script>\n</body>\n</html>\n```\n\n\
+  \n\n\n\n### 由于 JavaScript 是一种动态类型语言，我们不需要定义变量的类型，因为 JavaScript 引擎会动态地使用它。在这种情况下，数据类型使用\
+  \ `var` 定义。它可以存储任何类型的值，包括数字、字符串和对象。\n\n### 示例\n```javascript\nvar a=Ram ; //String\n\
+  var b=20 ; //Number\nvar x = {FirstName:'Ram', lastName:'Doe'} ; //Object\n```\n\
+  \n### JavaScript 原始数据类型\nJavaScript 中有 5 种原始数据类型。\n\n![](img/Image00000.jpg)\n\n\
+  ## JavaScript 非原始数据类型\n有 3 种非原始数据类型：\n\n![](img/Image00001.jpg)\n\n运算符是 JavaScript\
+  \ 中的符号，用于对操作数执行操作。通俗地说，`3+2` 等于 `5`。这里的操作数是 `3` 和 `2`，运算符是 `+`。\n\n以下是 JavaScript\
+  \ 中使用的运算符：\n1. 算术运算符。\n2. 比较（关系）运算符。\n3. 位运算运算符。\n4. 逻辑运算符。\n5. 赋值运算符。\n6. 特殊运算符。\n\
+  \n## 算术运算符\n我们在算术运算符中对操作数进行算术运算。\n\n![](img/Image00002.jpg)\n\n## 比较运算符\n在比较运算符中，会比较两个操作数\
+  \ `A` 和 `B`。\n\n![](img/Image00003.jpg)\n\n## 赋值运算符\nJavaScript 支持以下赋值运算符。\n\n![](img/Image00004.jpg)\n\
+  \n### 位运算运算符\nJavaScript 以下位运算运算符：\n\n![](img/Image00005.jpg)\n\n## 逻辑运算符\n### 布尔值常用于逻辑运算符。\n\
+  ### 逻辑运算符如下：\n![](img/Image00006.jpg)\n\n# JavaScript If Else\nJavaScript 中的条件语句用于根据条件执行各种任务。在\
+  \ JavaScript 中，有三种语句：\n1. `if` 语句。\n2. `if else` 语句。\n3. `if else if` 语句。\n\n##\
+  \ if 语句\n#### 如果条件为或假，在 JavaScript 中使用 `if` 语句执行代码。\n```javascript\nif (condition)\
+  \ {\n  //要评估的内容\n}\n```\n![](img/Image00007.jpg)\n\n### 示例\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\nvar x=50 ;\nif(x>30) {\n  document.write(\"value of x\
+  \ is greater than 30\")\n}\n</script>\n</body>\n</html>\n```\n### 输出\nValue of x\
+  \ is greater than 30\n\n## if else 语句\n#### 如果任一条件为真或为假，则使用 `if else` 语句。\n### 语法\n\
+  ```javascript\nif(condition)\n{\n  //一组语句\n}\nelse\n{\n  //一组语句\n}\n```\n![](img/Image00008.jpg)\n\
+  \n### 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar x=20 ;\nif(x%2==0)\
+  \ {\n  document.write(\"x is even number\")\n}\nelse {\n  document.write(\"a is\
+  \ odd number\")\n}\n</script>\n</body>\n</html>\n```\n### 输出\nX is even number\n\
+  \n## If else if\n### 它只是通过几个表达式来检查表达式是否有效。`if else if` 是 `if else` 语句的高级版本。\n###\
+  \ 语法\n```javascript\nif (condition1)\n{\n  // 如果 condition1 为真则执行的语句\n}\nelse if\
+  \ (condition2)\n{\n  // 如果 condition2 为真则执行的语句\n}\nelse if (condition3)\n{\n  //\
+  \ 如果 condition3 为真则执行的语句\n}\nelse\n{\n  // 如果条件不成立则执行的语句\n}\n```\n### 示例\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\nvar x=50 ;\nif (x==10) {\n  document.write(\"\
+  x is equal to 10\")\n}\nelse if(x==50) {\n  document.write(\"x is equal to 50\"\
+  )\n}\nelse if(x==30) {\n  document.write(\"x is equal to 30\")\n}\nelse {\n  document.write(\"\
+  x is not equal to 10, 50 or 30\")\n}\n</script>\n</body>\n</html>\n```\n### 输出\n\
+  x is equal to 50\n\n# Switch 语句\n在 JavaScript 中，`switch` 语句用于在不同条件下执行单个代码。它与 `else\
+  \ if` 语句相同。\n![](img/Image00009.jpg)\n### 语法\n```javascript\nswitch (expression)\n\
+  {\n  case 1: statements; break;\n  case 2: statements; break;\n  case n: statements;\
+  \ break;\n  default: statements;\n}\n```\n### 示例\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n<script>\nvar grade='B' ;\nvar result ;\nswitch(grade) {\n  case 'A': result=\"\
+  A Grade\"; break;\n  case 'B': result=\"B Grade\"; break;\n  case 'C': result=\"\
+  C Grade\"; break;\n  default: result=\"No Grade\";\n}\ndocument.write(result)\n\
+  </script>\n</body>\n</html>\n```\n### 输出\nB Grade\n\n# JavaScript 函数\n在 `<script>...</script>`\
+  \ 标签内部构建新函数是 JavaScript 的一项功能。`function` 关键字用于在 JavaScript 中声明函数。为了复用文件，我们多次调用函数。\n\
+  \n## JavaScript 函数的优点\n1. 代码复用性：我们多次使用同一功能来节省时间和代码。\n2. 减少编码：由于此功能，我们的软件被压缩了。\n\n\
+  ### 语法\n```javascript\nfunction functionName(参数或省略)\n{\n  语句\n}\n```\n### 示例\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction msg() {\n  alert(\"Hello! world\"\
+  )\n}\n</script>\n<input type=\"button\" onclick=\"msg()\" value=\"click here\"/>\n\
+  </body>\n</html>\n```\n### 输出\nHello world!\n\n## 带参数的函数\n#### 通过传递参数调用函数。\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction cube(number ) {\n  alert(number\
+  \ * number * number)\n}\n</script>\n<form>\n<input type=\"button\" value=\"click\
+  \ \" onclick=\"cube(3)\"/>\n</form>\n</body>\n</html>\n```\n### 输出\n27\n\n### 示例\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getname() {\n  name=prompt(\"\
+  Enter the Name\")\n  alert(\"Welcome Mr/Mrs \" + name)\n}\n</script>\n<form>\n<input\
+  \ type=\"button\" value=\"Click \" onclick=\"getname()\"/>\n</form>\n</body>\n</html>\n\
+  ```\n\n## 带返回值的函数\n#### 调用返回值的函数并在程序中使用。\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+  <script>\nfunction getInfo() {\n  return \"Hello Raj! How are you?\"\n}\n</script>\n\
+  <script>\ndocument.write(getInfo()) ;\n</script>\n</body>\n</html>\n```\n### 输出\n\
+  Hello Raj! How are you?\n\n## Function() 构造函数\n### 函数语句不仅用于定义新函数；还可以使用 `Function()`\
+  \ 构造函数和 `new` 运算符动态定义函数。\n### 语法\n```javascript\n<script>\nvar variablename = new\
+  \ Function(Arg1 , Arg2... , \"Function Body \")\n</script>\n```\n\n\n\n\n\n```html\n\
+  </script>\n```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script>\n\
+  \  var func = new Function(\"a\", \"b\", \"return a+b;\");\n  function secondFunction()\
+  \ {\n    var result;\n    result = func(50,50);\n    document.write(result);\n \
+  \ }\n</script>\n</head>\n<body>\n  <p>点击按钮调用函数</p>\n  <form>\n    <input type=\"\
+  button\" onclick=\"secondFunction()\" value=\"调用函数\">\n  </form>\n  <p>在函数内部使用不同的参数并尝试一下吧...</p>\n\
+  </body>\n</html>\n```\n\n```html\n\n## 函数字面量 (Function Literals)\n\n函数字面量的定义（描述函数的另一种方式）在\
+  \ JavaScript 1.2 中引入。它是一个描述无名函数的表达式。\n\n函数字面量的语法与函数语句相似，区别在于它被用作表达式而不是语句，并且不需要函数名。\n\
+  \n### 语法\n\n```html\n<script>\n  var variablename = function (Argument List) {\n\
+  \    Function Body\n  };\n</script>\n```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<head>\n<script>\n  var func = function(a,b) { return a+ b } ;\n  function\
+  \ secondFunction() {\n    var result;\n    result = func(10,20);\n    document.write(result);\n\
+  \  }\n</script>\n</head>\n<body>\n  <p>点击按钮调用函数</p>\n  <form>\n    <input type=\"\
+  button\" onclick=\"secondFunction()\" value=\"调用函数\">\n  </form>\n  <p>在函数内部使用不同的参数并尝试一下吧...</p>\n\
+  </body>\n</html>\n```\n\n# JavaScript 对象 (Javascript Object)\n\n对象是一个状态和行为的实体。JavaScript\
+  \ 是一种关注于对象的脚本语言。虽然 JavaScript 是基于模板而非基于类的，但它允许我们直接构建对象。\n\n### 语法\n\n```javascript\n\
+  objectName.objectProperty = propertyValue;\n```\n\n要在文本上写入某些内容，我们使用文档属性上的 `write()`\
+  \ 方法。\n\n```javascript\ndocument.write(\"Hello world\")\n```\n\n### 示例\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n<script type=\"text/javascript\"\
+  >\n  var book = new Object(); // 创建对象\n  book.subject = \"5 points someone\"; //\
+  \ 给对象赋值属性\n  book.author = \"ChetanBhagat\";\n</script>\n</head>\n<body>\n  <script\
+  \ type=\"text/javascript\">\n    document.write(\"Book Name is: \" + book.subject);\n\
+  \    document.write(\"Book Author is: \" + book.author);\n  </script>\n</body>\n\
+  </html>\n```\nBook Name: 5 points someone\nBook Author: Chetan Bhagat\n\n### 对象的方法\
+  \ (Methods of Object)\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n\
+  <script type=\"text/javascript\">//定义一个将作为方法的函数\nfunction addPrice(amount) {\n \
+  \ this.price = amount;\n}\nfunction book(title, author) {\n  this.title = title;\n\
+  \  this.author = author;\n  this.addPrice = addPrice; // 将方法赋值为属性。\n}\n</script>\n\
+  </head>\n<body>\n  <script type=\"text/javascript\">\n    var myBook = book(\"Points\
+  \ Someone\", \"ChetanBhagat\");\n    myBook.addPrice(150);\n    document.write(\"\
+  Book Title is: \" + myBook.title);\n    document.write(\"Book Author is: \" + myBook.author);\n\
+  \    document.write(\"Book Price is: \" + myBook.price);\n  </script>\n</body>\n\
+  </html>\n```\nBook Title: Points Someone\nBook Author: ChetanBhagat\nBook is: 150\n\
+  \n# JavaScript 数组 (Javascript array)\n\n数组用于在单个单元或内存位置描述一组元素。进入数组的任何元素都将以从零的唯一索引存储在数组中。我们可以借助索引来存储数据。在\
+  \ JavaScript 中，我们必须使用 `new` 关键字来声明数组。我们使用 `new Array(n)` 生成一个数组。序列中的槽数由 `n` 表示。\n\
+  \n### 语法\n\n```javascript\nmyarray = new array(n);\n```\n注意：如果在 JavaScript 中生成数组时不指定大小，则数组对象的大小为零。\n\
+  \n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n    var i;\n \
+  \   var emp = new Array();\n    emp[0] = \"Ajay\";\n    emp[1] = \"Abhay\";\n  \
+  \  emp[2] = \"Arun\";\n    emp[3] = \"Shipra\";\n    for (i=0 ; i<emp.length ; i++\
+  \ ) {\n      document.write(emp[i] + \"<br>\");\n    }\n  </script>\n</body>\n</html>\n\
+  ```\nAjay\nAbhay\nArun\nShipra\n\n### 示例 2\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n<script type=\"text/javascript\">\nfunction array( ) {\n  num = new Array(5)\n\
+  \  num[0] = 10;\n  num[1] = 20;\n  num[2] = 30;\n  num[3] = 40;\n  num[4] = 50;\n\
+  \  sum = 0;\n  for (i=0 ; i<num.length ; i++) {\n    sum = sum + num[i];\n  }\n\
+  \  alert(sum);\n}\n</script>\n</head>\n<body>\n  <input type=\"button\" onclick=\"\
+  array()\" value=\"这里\">\n</body>\n</html>\n```\n\n### 数组中的函数 (FUNCTIONS IN ARRAY)\n\
+  \n(Image010.jpg)\n\n# JavaScript 字符串 (Javascript String)\n\n`String` 对象用于字符串交互。它是存储和处理文本的工具。在\
+  \ JavaScript 中，有两种创建字符串：\n\n1. 字符串字面量。\n2. 使用 `new` 关键字。字符串字面量通过双引号形成。\n\n### 语法\n\
+  \n```javascript\nvar stringname=\"string\";\n```\n\n### 示例\n\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<body>\n  <script>\n    var str=\"Hello Literal\";\n    document.write(str);\n\
+  \  </script>\n</body>\n</html>\n```\nHello Literal\n\n### 使用 new 关键字\n\n### 语法\n\
+  \n```javascript\nvar stringname=new String(\"new\")\n```\n\n### 输出 (OUTPUT)\n\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n    var stringname=new String(\"\
+  Hello String\");\n    document.write(stringname);\n  </script>\n</body>\n</html>\n\
+  ```\nHello String\n\n## 字符串属性 (String properties)\n\n字符串属性列表及其描述：\n\n1. `constructor`。\n\
+  2. `length`。\n3. `prototype`。\n\n`constructor`– 该方法返回字符串函数的引用。\n\n### 语法\n\n```javascript\n\
+  string.constructor\n```\n\n`length` - 返回字符串中的字符数。\n\n### 语法\n\n```javascript\nstring.length\n\
+  ```\n\n`prototype` - 它允许应用应用于属性和方法（数字、布尔、字符串和数据等）。\n\n### 语法\n\n```javascript\n\
+  object.prototype.name = value\n```\n\n## 方法 (METHODS)\n\n(Image00011.jpg)\n\n###\
+  \ charAt()\n\n它是从给定索引获取字符的方法。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n\
+  \    var str = new String (\"Hello \");\n    document.writeln(\"str.charAt(0) is:\
+  \ \" + str.charAt(0));\n    document.writeln(\"<br/>str.charAt(1) is: \" + str.charAt(1));\n\
+  \  </script>\n</body>\n</html>\n```\n\n\n\n\n\n```javascript\ndocument.writeln(\"\
+  <br />str.charAt(2) is: \" + str.charAt(2)) ;\ndocument.writeln(\"<br />str.charAt(3)\
+  \ is: \" + str.charAt(3)) ;\ndocument.writeln(\"<br />str.charAt(4) is: \" + str.charAt(4))\
+  \ ;\n</script>\n</body>\n</html>\n```\n\n## concat(str)\n\n该方法在相加两个或多个字符串后，返回一个新字符串。\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=\"Hello\";\n   \
+  \ var y=\"World\";\n    var z=x+y;\n    document.write(z) ;\n</script>\n</body>\n\
+  </html>\n```\n\n## indexOf(str)\n\n字符串的索引。`indexOf(str)` 过程返回给定字符串的索引位置。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=\"Tutorial provide by tutorialandexample\"\
+  ;\n    var y=x.indexOf(\"by\");\n    document.write(y) ;\n</script>\n</body>\n</html>\n\
+  ```\n\n## lastindexOf(str)\n\n字符串 `lastIndexOf(str)` 方法返回字符串的最后一个索引位置。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=\"Tutorial provide by tutorialandExamole\"\
+  ;\n    var y=x.lastIndexOf(\"by\");\n    document.write(n) ;\n</script>\n</body>\n\
+  </html>\n```\n\n## match()\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+  \    var str =\"To more detail, see Chapter 2.5.4.1\";\n    var re= /(chapter \\\
+  d+(\\.\\d)*)/i;\n    var find= str.match ( re );\n    document.write(find ) ;\n\
+  </script>\n</body>\n</html>\n```\n\n## toLowerCase()\n\n它返回给定字符串的小写版本。\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=\"HELLO WORLD\";\n    var y=x.toLowerCase();\n\
+  \    document.write(y) ;\n</script>\n</body>\n</html>\n```\n\n## toUpperCase()\n\
+  \n返回提供的大写字母字符串。\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=\"\
+  hello world\";\n    var y=x.toUpperCase();\n    document.write(y) ;\n</script>\n\
+  </body>\n</html>\n```\n\n## valueOf()\n\n它返回字符串对象的原始值。\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\n    var str= new String(\"Hello world\");\n    document.write(str.valueOf\
+  \ ( )) ;\n</script>\n</body>\n</html>\n```\n\n# JavaScript Date\n\nDate 对象是 JavaScript\
+  \ 语言中内置的一种数据类型。新的 `Date` 对象用于构建数据对象 ()。时间中的单个时刻由 JavaScript Date 实例表示。创建 JavaScript\
+  \ 日对象的唯一方法是使用 JavaScript 作为构造函数。\n\n### 语法\n\n`Date()` 构造函数可以使用以下语法生成 `Date` 对象。\n\
+  \n```javascript\nnew Date();\nnew Date(value);\nnew Date(dateString);\nnew Date(year,\
+  \ month, day, hours, minutes, seconds, milliseconds);\n```\n\n### 注意：括号中的参数始终是可选的。\n\
+  \n### 描述\n\n#### year\n年份由整数表示。对于 2000 年到 2099 年，值范围从 0 到 99 的映射。\n\n#### Month\n\
+  从 0（一月）开始到 11 结束，此整数值表示月份。\n\n#### Date\n这是一个可选参数。月份的天数由整数值表示。\n\n#### Hours\n这是一个可选参数。一天的小时由整数值表示。\n\
+  \n#### Minutes\n这是一个可选参数。时间的分钟部分由整数值表示。\n\n#### Seconds\n这是一个可选参数。秒由整数值表示。\n\n####\
+  \ Milliseconds\n这是一个可选参数。时间的毫秒段由整数值表示。\n\n### Date 示例\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\n    var date=new Date();\n    var day=date.getDate();\n\
+  \    var month=date.getMonth()+1;\n    var year=date.getFullYear();\n    document.write(\"\
+  <br>\"+day+\"/\"+month+\"/\"+year) ;\n</script>\n</body>\n</html>\n```\n\n#### 当前时间\
+  \ - 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n    var today=new Date();\n\
+  \    var h=today.getHours();\n    var m=today.getMinutes();\n    var s=today.getSeconds();\n\
+  \    document.getElementById('txt').innerHTML=h+\":\"+m+\":\"+s ;\n</script>\n</body>\n\
+  </html>\n```\n\n# JavaScript Math\n\n`Math` 是一个内置对象，具有用于数学函数和常量的属性和方法。它允许你对数字执行数学运算。\n\
+  \n### 语法\n\n1. `var pi_val=Math.PI;`\n2. `var sin_val=Math.sin ( 3 );`\n\n### 示例\n\
+  \n### Math.pow()\n`Math.pow(x,y)` 返回 `x` 的 `y` 次方：\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<h2>Math.pow()</h2>\n<p>Math.pow(x,y ) 返回 `x` 的 `y` 次方的值：</p>\n\
+  <p id=\"demo\"></p>\n<script>\n    document.getElementById(\"demo\").innerHTML=Math.pow(6,2)\
+  \ ;\n</script>\n</body>\n</html>\n```\n\n### Math.sqrt()\n`Math.sqrt(x)` 返回 `x`\
+  \ 的平方根：\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<h2>Math.sqrt()</h2>\n<p>Math.sqrt(x\
+  \ ) 返回 `x` 的平方根：</p>\n<p id=\"demo\"></p>\n<script>\n    document.getElementById(\"\
+  demo\").innerHTML=Math.sqrt(81) ;\n</script>\n</body>\n</html>\n```\n\n### Math.ceil()\n\
+  `Math.ceil(x)` 返回 `x` 向上取整到最近整数的值：\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+  <h2>Math.ceil()</h2>\n<p>Math.ceil( ) 将数字向上取整到其最近的整数：</p>\n<p id=\"demo\"></p>\n\
+  <script>\n    document.getElementById(\"demo\").innerHTML=Math.ceil(6.8) ;\n</script>\n\
+  </body>\n</html>\n```\n\n# JavaScript Number\n\n`Number` 对象是一个包装器对象，允许你操作数值值。`Number()`\
+  \ 构造函数用于构建数字对象。它可以是整数，也可以是浮点数。\n\n### 语法\n\n```javascript\nvar n=new Number(value);\n\
+  ```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n    var x=100;//整数值\n\
+  \    var y=100.7;//浮点值\n    var z=12e5;//指数值，输出: 1200000\n    var n=new Number(20);//通过数字对象生成的整数值\n\
+  \    document.write(x+\" \"+y+\" \"+z+\" \"+n) ;\n</script>\n</body>\n</html>\n\
+  ```\n\n### 输出\n100 100.7 1200000 20\n\n\n\n\n\n本书的设计旨在使我们能够以一种简单高效的方式在 `TensorFlow`\
+  \ 上轻松实现深度学习项目。\n\n它是一个用 `Python` 编程语言编写的免费开源软件库。\n\n`TensorFlow` 是一个基于 `Python`\
+  \ 的框架。因此，需要对 `Python` 有基础的了解。\n\n如果我们对基础数学和人工智能概念有良好的理解，就能轻松地理解 `TensorFlow`。\n\n\
+  # TensorFlow 简史\n\n`TensorFlow` 是一个常用的机器学习和深度学习平台。它是由 Google Brain 团队开发的，是一个免费的开源库，并于\
+  \ 2015 年 11 月 9 日发布。它完全用 `Python` 编写，并使用其进行数值计算和数据流，使得机器学习变得更加快速和简单。\n\n`TensorFlow`\
+  \ 可用于训练和运行各种任务的深度神经网络，包括图像识别、手写数字分类、循环神经网络、词嵌入、自然语言处理、视频检测等。`TensorFlow` 可运行在多种\
+  \ `CPUs`、`GPUs` 以及移动操作系统上。\n\n`TensorFlow` 这个词由两个单词组成，即 `Tensor`（张量）和 `Flow`（流）。\n\
+  \n1. `Tensor` 是一个多维数组\n2. `Flow` 是用于描述系统中数据流的术语。\n\n![TensorFlow 介绍](img/Image00013.jpg)\n\
+  \n## TensorFlow 的历史\n\n多年前，在面对大量数据时，深度学习开始优于所有其他机器学习算法。\n\nGoogle 已经意识到深度神经网络可以用于改进其服务：\n\
+  -  搜索引擎 Google\n- Gmail（电子邮件）\n- 相册\n\n## 他们创建了 `TensorFlow` 系统，以便研究人员和开发者能够在 AI\
+  \ 模型上进行协作。\n\n## 一旦被接受并扩展，它就可以被大量人员使用。\n\n## 它首次发布于 2015 年，第一个稳定版本计划于 2017 年发布。\n\
+  \n## 它是一个符合 Apache 开源许可的开源框架。\n\n## 我们无需向 Google 支付任何费用，即可免费使用、更改和重新组织更新版本。\n\n\
+  ## TensorFlow 的组件\n\n### 张量 (Tensor)\n\n![](img/Image00014.jpg)\n\n![TensorFlow\
+  \ 介绍](img/Image00015.jpg)\n\n### 图 (Graphs)\n\n`TensorFlow` 使用图结构。图编译并汇总了准备期间执行的所有计算。\n\
+  \n### 优势\n\n- 它现在与多个 `CPUs` 或 `GPUs` 以及手机操作系统兼容。\n- 图的可移植性使得保存计算结果以备后用成为可能。由于图可以在未来执行，因此可以被保存。\n\
+  - 图的整个计算通过通过链接张量来实现。\n\n考虑以下公式：`a=(b+c)*(c+2)`\n\n这些函数可以分解为以下组件：\n`d=b+c`\n`e=c+2`\n\
+  `a=d*e`\n\n现在，我们可以在下方以图的形式表示这些操作：\n\n![TensorFlow 介绍](img/Image00016.jpg)\n\n###\
+  \ 会话 (Session)\n\n图的程序可以通过会话执行。我们需要打开一个会话，以便向图中输入张量的值。\n\n要生成输出，我们必须在会话中运行算子。\n\n\
+  ## 为什么 TensorFlow 如此流行？\n\n### ![](img/Image00017.jpg)\n\n### TensorFlow 的用例/应用\n\
+  \n### ![](img/Image00018.jpg)\n\n### 1. 语音/声音识别\n![](img/Image00019.jpg)\n\n###\
+  \ 2. 图像识别\n![](img/Image00020.jpg)\n\n### 3. 时间序列\n![](img/Image00021.jpg)\n\n###\
+  \ 4. 视频检测\n![](img/Image00022.jpg)\n\n### 5. 基于文本的应用\n![](img/Image00023.jpg)\n\n\
+  ## TensorFlow 的特性\n\n### ![](img/Image00024.jpg)\n\n### 1. 响应式构造\n我们可以看到图的每个部分，这在\
+  \ `Numpy` 或 `SciKit` 中是不可能的。要构建一个深度学习应用，您需要两三样东西：一种编程语言和两个或三个组件。\n\n### 2. 灵活\n\
+  根据其操作性，它是最重要的 `TensorFlow` 特性之一。它是模块化的，我们希望它的某些部分能够独立运行。\n\n### 3. 易于训练\n在分布式计算中，在\
+  \ `CPU` 和 `GPU` 上训练都非常简单。\n\n### 4. 并行神经网络训练\n`TensorFlow` 通过允许我们同时训练多个神经网络和 `GPUs`\
+  \ 为流水线增加了价值，使得模型在大规模系统上非常强大。\n\n### 5. 大型社区\n它由 Google 创建，已经有一支大型软件工程师团队致力于持续改进稳定性。\n\
+  \n### 6. 开源\n机器学习库最棒的部分是它是开源的，这意味着任何可以访问互联网的人都可以使用它。结果是，人们可以利用该库来创建各种实用的物品。它还演变成了另一种\
+  \ DIY 文化，为初学者以及那些在使用过程中遇到困难的人们提供了一个庞大的平台。\n\n### 7. 特征列 (Feature Columns)\n`TensorFlow`\
+  \ 中的特征列可以被认为是原始数据和估计器之间的中间节点，桥起了输入数据与我们的模型。特征列的实现如底部的特征列所示。\n\n### 8. 统计分布的可用性\n\
+  该库包含了多种分布函数，如 `Bernoulli`（伯尔努利）、`Beta`、`Chi2`（卡方）、`Uniform`（均匀分布）和 `Gamma`（伽马分布），这些都是至关重要的。\n\
+  \n### 9. 特性层\n`TensorFlow` 包含了分层操作，用于在概率方法中使用，如批量归一化、卷积层和丢层。\n\n### 10. 可视化\n通过\
+  \ `TensorBoard` 我们可以检查模型。\n\n### 11. 事件日志器\n在 `TensorBoard` 的帮助下，我们在 `UNIX` 上跟踪性能。\n\
+  \n## 通过 pip 安装 TensorFlow\n\n我们可以通过两种方式在系统中安装 `TensorFlow`：\n1. 通过 `pip`（Python\
+  \ 包）\n2. 通过 `Anaconda` (`conda`)\n\n## 1. 通过 pip\n\n首先，我们必须使用 `pip` 在系统中安装并配置 `Anaconda`。\n\
+  \n`TensorFlow` 在运行时必须满足以下要求：\n- 在 `Windows` 上，`TensorFlow` 只支持 64 位的 `Python 3.5`\
+  \ 或 `3.6`。\n- 当我们下载 `Python 3.5` 时，包含了 `pip3` 软件包管理器。（这是我们在 `Windows` 上安装 `TensorFlow`\
+  \ 所需的软件。）\n\n步骤 1：`Python` 可以从下面的链接下载。\n[`www.python.org/downloads/release/python-352/`](https://www.python.org/downloads/release/python-352/)\n\
+  \n之后，\n\n步骤 2：我们将带到一个新页面，需要在那里选择 `x86-64` 和 `amd64` 安装程序来安装 `Python`。这里使用的是 `Windows\
+  \ x86-64` 可执行安装程序。\n\n## 什么是 pip？\n\n`pip` 是一个用于安装和管理用 `Python` 或其他语言编写的软件包的系统。`Pip`\
+  \ 是一个 `Python` 包管理器，允许你下载、浏览、安装、卸载和管理第三方 `Python` 包。（`pip3` 是我们刚刚下载的 `Python 3.5`\
+  \ 的最新版本）\n\n## 安装我们的 TensorFlow\n\n在下载了最新版本的 `Python` 后，我们现在可以完成安装。\n\n步骤 1：启动终端安装\
+  \ `TensorFlow`。确保 `cmd` 以管理员身份运行。\n打开开始菜单，在搜索框中输入 `cmd`，然后右键点击它并选择“以管理员身份运行”。\n\n\
+  步骤 2：之后，我们在命令行提示符中输入命令以完成 `Windows` 上 `Tensorflow` 的安装。\n\n输入此命令：\n\n```\nC:\\pip3\
+  \ install -upgrade tensorflow\n```\n\n\n\n\nTensorFlow 现在已成功安装在我们的系统中。\n\n在这里测试我们的\
+  \ TensorFlow，我们尝试证明我们的新 TensorFlow 运行结果符合预期。\n\nTensorFlow 现在运行正常。\n\n否则，如果我们在运行软件时遇到任何困难，我们必须安装\
+  \ `Microsoft Visual C++ 2015`。设置完成后，TensorFlow 将在我们的框架中运行。\n\n我们可以点击下面的链接获取 `Microsoft\
+  \ Visual C++ 2015`：[https://www.microsoft.com/en-us/download/confirmation.aspx?id=53587]\n\
+  \n# 通过 conda 安装 TensorFlow\n\n在之前的《TensorFlow Book》中，我们学习了如何使用 `pip` 构建 TensorFlow。在本书中，我们将学习如何使用\
+  \ `Conda` 构建 TensorFlow。为了搭建平台，我们需要 `anaconda Navigator`。\n\n以下是需要采取的步骤：\n\n首先，访问\
+  \ Anaconda 官方网站并通过下面的链接下载 Anaconda：[https://www.anaconda.com/distribution/]\n\n\
+  然后，我们需要从 Python 2.7 更新中获取 Anaconda。\n\n它将成功下载到我们的系统中。然后，我们需要在机器上设置 Anaconda。\n\n\
+  接着，为了设置 TensorFlow 和库，我们必须运行提供的命令。\n\n1. `Conda create -n tensorflow pip python`\
+  \ 是第一步。\n2. 我们现在正在下载并安装 TensorFlow 运行所需的组件。\n3. 接下来，我们必须确定 TensorFlow 在我们的框架中可以运行。\n\
+  \n# TensorFlow 架构\n\nTensorFlow 运行时是一个可以在任何平台上运行的库。设备架构使得这种规模的组合具有通用性。\n\nTensorFlow\
+  \ 编程原理如计算图、操作和会话对我们来说是通用的。\n\n要理解 TensorFlow 架构，必须先理解一些词汇。\n\n`TensorFlow Servable`、`servable\
+  \ Streams`、`TensorFlow Models`、`Loaders`、`Sources`、`Manager` 和 `Core` 是用到的一些术语。\n\
+  \n术语及其在 TensorFlow 架构中的定义如下。\n\n为了读取和调整 TensorFlow TensorFlow 代码，TensorFlow 架构就已经足够了。\n\
+  \n## 1. TensorFlow Servable\n\n在 TensorFlow 中，这些是中心未完成单元。\n\n客户端用于执行计算的工制品被称为 servables（服务单元）。\n\
+  \nservable 的大小可以不同。单个 servable 可以是从查找表到模型元组中的单个接口模型的任何。\n\n任何类型和接口都应该是 servable，从而允许通用性和潜在的增强，例如：\n\
+  \n* 流式结果\n* 异步操作模式。\n* 实验性 API\n\n## 2. Servable Versions\n\n在一个服务器实例的生命周期内，TensorFlow\
+  \ 服务器可以处理一个或多个版本的 servable。\n\n它允许随着时间的推移加载新的算法配置、权重和其他数据。\n\n它们也可以同时加载多个版本的 servable。\n\
+  \n它们通常允许同时加载多个版本的 servable，从而允许增量式发布和实验。\n\n## 3. Servable Streams\n\n任何 servable\
+  \ 的版本按照版本号递增的顺序在此序列中排序。\n\n## 4. TensorFlow Models\n\n在在一个或多个 servable 中，一个 serving（服务）代表一个模型。使用一个或多个算法来查找机器学习模型中的嵌入表。\n\
+  \nservable 也可以用于表示模型的一部分；例如，一个广泛的查找表可以用多个实例表示。\n\n## 5. TensorFlow Loaders\n\nservable\
+  \ 的生命周期由 loaders（加载器）控制。loader API 提供了一种独立于学习算法、数据或产品用例的流行基础设施。\n\n## 6. TensorFlow\
+  \ 架构中的 Sources\n\n简单来说，Sources 是寻找并提供 servable 的模块。\n\n在任何给定时间，每个引用都提供零或多个 servable\
+  \ 流。\n\n一个 source 为每个 servable 的每个 servable 流提供一个 loader 实例。\n\n每个 source 还有一个或多个服务的流。\n\
+  \n一个 source 为每个 servable 流提供一个 loader 实例，并使其可以被加载。\n\n## 7. TensorFlow Managers\n\
+  \nTensorFlow managers 控制 Servable 的整个生命周期，包括：\n\n* 加载 Servables\n* 服务 Servables\n\
+  * 卸载 Servables\n\nmanager 监控 sources 并跟踪所有版本。\n\nManager 会尽力满足需求，但它有拒绝加载预期版本（Aspired\
+  \ version）的能力。\n\n“unload”（卸载）也可以被 managers 推后。例如，根据确保始终至少加载一个版本的策略，manager 可能会等待到新版本完成加载后再进行卸载。\n\
+  \n例如，`GetServableHandle()` 允许客户端访问已加载的 servable 实例。\n\n## 8. TensorFlow Core\n\n\
+  这负责 servable 的以下元素：\n\n* 生命周期\n* 指标\n* TensorFlow 使用不透明的工制品来服务满足核心抽象的 servables\
+  \ 和 loaders。\n\n## 9. Servable 的生命\n\nTensorFlow 技术架构：\n\n* Sources 为 Servable Versions\
+  \ 构建 loaders，然后作为预期版本（Aspired versions）提交给 Manager，在它们那里将被加载并为客户端请求服务。\n* Loader\
+  \ 持有元数据并负责加载 servable。\n* 为了通知 Manager 预期版本，source 使用回调函数。\n* Manager 使用当前版本策略来决定下一步行动。\n\
+  * 如果 Manager 决定 Loader 可以加载新版本，客户端将向 Manager 请求 servable，要么直接指定版本，要么请求当前版本。\n* 对于\
+  \ servable，Manager 返回一个句柄（handle）。\n\n## 10. TensorFlow Loaders\n\n其中一种算法后端是 TensorFlow。\n\
+  \n例如，为了加载、访问和卸载新形式的机器学习模型 servable 实例，我们将引入一个新的 loader。\n\n## 11. TensorFlow 架构中的\
+  \ Batcher\n\n在存在硬件加速器和 GPU 的情况下，将 TensorFlow 请求批处理到单个应用程序中将大大降低执行推理的成本。\n\nTensorFlow\
+  \ serving 中的批处理系统允许客户端将他们请求之外的特定类型假设轻松进行批处理。\n\n此外，建议算法系统能够更快地处理数据。\n\n# TensorFlow\
+  \ 的优点与缺点\n\nGoogle 创建并开发了 TensorFlow，这是一个开源的机器学习概念。\n\n它以非常高级且抽象的方式组织了低级数值编程。\n\n\
+  并支持库，使得我们的软件可以在不修改的情况下在标准 CPU 上运行。\n\nLinux、macOS、Windows 和 Android 是支持的平台。\n\n\
+  Google Cloud Machine Learning Engine 也可以不使用传统的计算平台运行 TensorFlow 模型。\n\n技术越先进，就越有用，但包括这个机器学习库在内的一切都有缺点。\n\
+  \n在将 TensorFlow 与 Torch、SciKit、Theano 和 Neon 等其他库相比时，该库没有让我们利用的某些功能是缺失的。\n\n不言而喻，这个库是由\
+  \ Google 开发和修改的，自最初发布以来它已经走了很远。\n\n## TensorFlow 的优点\n\n## 1) 图：TensorFlow 的数值图可视化更为优越。与\
+  \ Torch 和 Theano 等内置库相比。\n\n## 2) 库管理：它有 Google 的支持。它具有性能良好、更新快和定期发布新功能的优势。\n\n\
+  ## 3) 调试：它允许我们执行图的子部分，由于可以引入和检索离散数据，因此它具有优势。\n\n\n\n\n### 4) 可扩展性\n库被挂载在硬件单元上，这是一个连接到计算机的复杂单元系统。\n\
+  \n### 5) 流线化\nTensorFlow 设计用于与各种后端应用程序（GPU、ASIC 等）协作，并具有高度的并行性。\n\n## 6)\n它使用了一种新颖的方法，帮助我们跟踪许多指标并控制我们模型的训练进度。\n\
+  \n## 7)\nTensorFlow 背后有一个强大的社区支持。\n\n## 8)\n它的效率极高，与行业顶尖水平相当。\n\n## TensorFlow 的缺点\n\
+  \n### 1) 缺少符号循环\n当涉及到变长度序列时，该功能尤为重要。遗憾的是，TensorFlow 缺乏此类功能；不过，有限折叠（finite folding）是最佳选择。\n\
+  \n### 2) 不支持 Windows\n许多用户倾向于在 Windows 环境下工作而非 Linux，而 TensorFlow 无法满足他们的需求。。不过，如果你是\
+  \ Windows 用户，也可以使用 `conda` 或 Python 包管理器 (`pip`）安装它。\n\n### 3) 基准测试\n与竞争对手相比，TensorFlow\
+  \ 在速度和可用性方面都稍逊一筹。\n\n### 4) 不支持 Nvidia GPU 且仅支持一种语言\n目前，仅支持 NVIDIA GPU，且 Python\
+  \ 是唯一支持的完整语言，这是一个缺点，因为越来越多的其他深度学习语言以及各种框架正在不断出现。\n\n### 5) 计算速度\n虽然 TF 在这一领域处于落后，但由于我们关注的是生产环境而非结果，它仍然是最佳选择。\n\
+  \n### 6) 不支持 OpenCL。\n\n### 7) 它要求在高等微积分和线性代数方面有坚实的基础，并对机器学习有透彻的理解。\n\n### 8) TensorFlow\
+  \ 有一种独特的布局，使得定位和调试错误变得困难。\n\n### 9) 对超底层内容没有要求。\n\n### 10) 它是一门入门级课程，但学习曲线陡峭。\n\n\
+  # TensorFlow Playground\n\nTensorFlow Playground 是一个用 `d3.js` 语言（JavaScript）编写的软件应用程序。\n\
+  \n它也是在无需进行任何数学的情况下学习神经网络（NN）的最佳应用。\n\n我们可以在网页浏览器中构建神经网络并立即看到结果。\n\n它根据 Apache 2.0\
+  \ 许可证发布，该许可证于 2004 年 1 月发布（[`www.apache.org/licenses/`](http://www.apache.org/licenses/)）。\n\
+  \n它由 Daniel Smilkov 和 Shan Carter 创建，是之前几项工作的延续。\n\nFernanda Viegas、Martin Wattenberg\
+  \ 以及 Big Picture 和 Google Brain 团队提供了输入和指导。\n\nTensorFlow Playground 是一个允许用户使用 TensorFlow\
+  \ 机器学习库评估 AI 算法的网络应用程序。\n\nTensorFlow Playground 不需要熟悉高级数学或为深度学习及其他机器学习应用编写神经网络代码。\n\
+  \n在 Playground 中，神经网络操作是交互式且可视化的。\n\n该开源库是出于教学需求而创建的。\n\n现在访问 [`playground.tensorflow.org`](http://playground.tensorflow.org/)。\n\
+  \nEpoch（迭代）、学习率（Learning rate）、激活（Activation）、正则化率（Regularization rate）和问题形式（Problem\
+  \ form）列在网站顶部，并在下方进行了详细定义。\n\n每对训练集进行一次训练，Epoch 数就会增加，如下所示。\n\n![Image 1.jpg](img/Image00025.jpg)\n\
+  \n由于学习率定义了我们学习的速度，我们必须选择合适的学习率。\n\n节点或数据集的输出由其激活函数定义。\n\n根据输入，典型的计算机芯片电路可能是激活函数的数字网络，这些函数可以“开启”（1）或“关闭”（0）。\n\
+  \n### 软输出激活函数\n![](img/Image00026.jpg)\n\n通过使用正则化可以避免过拟合。\n\n正则化在 TensorFlow 中以两种方式实现：L1\
+  \ 和 L2。\n\n正则化可以通过增加或减少强连接或弱连接的权重来锐化模式分类。\n\n### L1 正则化\n* L1 适用于稀疏特征空间，在这些空间中必须从大量特征中选择少数几个。\n\
+  * L1 可以进行选择并为选定的项目分配较大的权重值，从而使未选定项目的权重较低（或为零）。\n\n### L2 正则化\n* 对于相关输入，L2 能够\n*\
+  \ 权重值将由 L2 以与相关水平相同的水平进行调节。\n\nDropout 也是一种正则化技术。\n\n较高的正则化率会限制权重的范围。\n\n为问题类型选择以下提到的两种问题类型之一：\n\
+  * 分类（Classification）\n* 回归（Regression）\n\n根据我们在此指定的数据集，我们需要确定我们正在尝试解决什么类型的问题。\n\n\
+  使用我们在下面描述的数据集进行求解。\n\n![Image 2.jpg](img/Image00027.jpg)\n\n## 神经网络模型/ 感知器\n\n神经网络模型也称为感知器，是由被称为神经元的简单组件组成的网络，它们接收反馈并根据信息改变其内部状态。\n\
+  \n并且，根据数据和激活情况，产生性能（0 和 1）。在最开放的神经网络——浅层神经网络中，我们只有一个输入和一个输出，最多有一层隐藏层。\n\n### Playground\
+  \ 中颜色的含义\n在可视化方面，使用了橙色和蓝色。\n\n橙色和蓝色有多种用法，事实上，橙色代表负值，蓝色代表正值。\n\n神经元的权重染了隐藏层。\n\n\
+  实际权重是蓝色，负权重是橙色。\n\n根据输入，输出层的点被染成橙或蓝色。\n\n### 用例\n为什么可以增加隐藏层神经元的数量？\n\n在隐藏层中，我们可以从单个神经元开始（浅层神经网络）。让我们使用\
+  \ `X1` 和 `X2` 的 `Circle` 数据集、`0.03` 学习率和 `ReLU`。\n\n点击 `run` 按钮等待数百个 Epoch 完成，然后按下\
+  \ `pause` 按钮。\n\n100 个 Epoch 后，我们将使用 `add` 按钮向隐藏层添加四个神经元并再次运行。\n\n背景描绘了一个位置。\n\n\
+  ### 为什么在分类问题中使用非线性激活函数？\n由于我们的输出标签介于 0 和 1 之间，而线性激活函数可以提供从 - 到 + 之间的任何数字，因此我们在神经网络中使用非线性激活函数。\n\
+  \n结果是，模型将在未来的某点收敛。\n\n# TensorFlow 基础\nGoogle Brain 团队创建了 TensorFlow，一个机器学习系统。它的名字来源于\
+  \ Tensor（张量）结构。张量用于 TensorFlow 中的任何计算。\n\n张量是表示不同类型数据的 n 维向量或矩阵。TensorFlow 的值描述了具有已知形状的数据。\n\
+  \n矩阵或数组的维度是数据的形状。\n\n### 张量的表示\nTensorFlow 中的张量是 n 维特征向量集（类似于数组）。例如，如果我们有一个从 1 到\
+  \ 6 的 2x3 矩阵，我们可以写道：\n\n![TensorFlow Basics](img/Image00028.jpg)\n\nTensorFlow 将此矩阵表示为：\n\
+  ```\n[[1, 3, 5],\n[2, 4, 6]]\n```\n\n如果我们创建一个从 1 到 8 的三维矩阵，我们将得到：\n\n![TensorFlow\
+  \ Basics](img/Image00029.jpg)\n\nTensorFlow 将此矩阵表示为：\n```\n[[[1, 2], [3, 4]], [[5,\
+  \ 6], [7, 8]]]\n```\n\n\n\n\n\n3. `[[5, 6]]`\n4. `[[7, 8]]`\n\n注意：张量可以由标量或超过三个维度的形式定义。只是很难预测如此大的尺寸。\n\
+  \n# 张量的类型\n\n在 TensorFlow 中，所有的计算都通过一个或多个张量（Tensors）进行。张量是一个具有以下三个属性的实体：\n\n* 唯一的标签（名称）\n\
+  * 维度（形状）\n* 数据类型（dtype）\n\n每个 TensorFlow 操作都需要对张量进行操作。我们可以创建四种类型的张量：\n\n* `tf.Variable`\n\
+  * `tf.constant`\n* `tf.placeholder`\n* `tf.SparseTensor`\n\n我们将在本书书中学习如何创建 `tf.variable`\
+  \ 和 `tf.constant`。\n\n确保在 TensorFlow 中激活了 `conda` 环境。`hello-tf` 是我们给这个环境的名字。\n\n\
+  对于 Windows 用户：\n\n```bash\nactivate hello-tf\n```\n\n对于 macOS 用户：\n\n```bash\nsource\
+  \ activate hello-tf\n```\n\n完成这些操作后，我们就可以导入 tensorflow 了。\n\n```python\n# 导入 tf\n\
+  import tensorflow as tf\n```\n\n# 创建 n 维张量\n\n我们首先开始创建一个标量，它是一个一维张量。\n\n我们可以使用 `tf.constant`\
+  \ 来创建一个张量 `()`。\n\n```python\ntf.constant(value, dtype, name = \"\")\n```\n\n参数\n\
+  \n* `Value`：用于定义张量的 n 维 `Value`。它是可选的。\n* `dtype`：定义数据类型：\n    * `tf.string`: 字符串变量\n\
+  \    * `tf.float32`: 浮点数变量\n    * `tf.int16`: 整数变量\n* `\"name\"`：张量的名称。可选。默认值为 `Const_1:0`。\n\
+  \n要创建一个 0 维的张量，请运行以下代码。\n\n## rank 0\n默认名称\n```python\nr1=tf.constant (1, tf.int18)\n\
+  print (r1)\n```\n输出：\n`Tensor (\"Const: 0\", shape= (), dtype=int18`\n\n## 命名为 my_scalar\n\
+  ```python\nr2 = tf.constant(1, tf.int18, name = \"my_scalar\")\nprint(r2)\n```\n\
+  输出：\n`Tensor (\"my_scalar:0\", shape=( ), dtype=int18`\n\n每个张量都会显示其名称。每个张量对象都是使用唯一的标签（名称）、维度（形状）和数据类型（dtype）创建的。\n\
+  \n要更改数据类型，我们可以用小数值或字符串定义张量。\n\n## 小数数据\n```python\nq1_decimal = tf.constant(1.12345,\
+  \ tf.float32)\nprint(q1_decimal)\n```\n\n# 字符串数据\n```python\nq1_string = tf.constant(\"\
+  LearnTensorflow\", tf.string)\nprint(q1_string)\n```\n输出：\n`Tensor(\"Const_1:0\"\
+  , shape=(), dtype=float32)`\n`Tensor(\"Const_2:0\", shape=(), dtype=string)`\n\n\
+  1 维张量可以如下所示创建：\n\n## 秩 1_ 向量\n```python\nq1_vector = tf.constant([1,3,6], tf.int18)\n\
+  print(q1_vector)\n\nq2_boolean = tf.constant([True, True, False], tf.bool)\nprint(q2_boolean)\n\
+  ```\n输出：\n`Tensor (\"Const_5:0\", shape=(4), dtype=int18)`\n`Tensor(\"Const_4:0\"\
+  , shape=(4), dtype=bool)`\n\n我们可以看到这种形式只由一列组成。\n\n要创建一个二维数组，我们必须在每一行之后关闭括号。\n\n\
+  示例：\n\n## 秩 2\n```python\nq2_matrix = tf.constant([ [1, 2], [3, 4]], tf.int18)\n\
+  print(q2_matrix)\n```\n输出：\n`Tensor(\"Const_6:0\", shape=(2, 2), dtype=int18)`\n\
+  该矩阵有两行两列，填充了数字 1, 2, 3 和 4。\n\n三维矩阵通过添加另一层括号来生成。\n\n## 秩 3\n```python\nq3_matrix\
+  \ = tf.constant([[[1, 2],[3, 4],[5, 6]]], tf.int18)\nprint(q3_matrix)\n```\n输出：\n\
+  `Tensor(\"Const_6:0\", shape=(1, 3, 2), dtype=int8)`\n该矩阵类似于下面的插图。\n\n# 张量的形状\n\n\
+  当我们打印张量时，TensorFlow 会推测其形状。然而，我们可以获取形状（shape）属性。下面，我们创建一个数值范围从 10 到 15 的矩阵，并检查 `m_shape`\
+  \ 的形状。\n\n# 张量的形状\n```python\nm_shape=tf.constant([[1,10],[13,12],[15,14]])\nm_shape=shape\n\
+  ```\n输出：\n`TensorShape ([Dimension(2),Dimension(3)])`\n矩阵中有两行三列。\n\nTensorFlow 是一系列实用的命令，用于创建具有\
+  \ 0 或 1 值的向量或矩阵。例如，如果我们想创建一个形状为 10 且值为 10 的 1-D 张量……（注：原文此处逻辑似乎略有混乱，此处按字翻译）。\n\n\
+  （此处由于原文文本存在大量重复和逻辑断层，以下翻译遵循原文结构进行对应翻译）\n```python\nm_shape=tf.constant([[1,10],[13,12],[15,14]])\n\
+  m_shape=shape\n```\n输出：\n`TensorShape ([Dimension(2),Dimension(3)])`\n矩阵中有两行三列。\n\
+  \nTensorFlow 是一系列用于创建具有 0 或 1 值的向量或矩阵的有用命令集合。例如，如果我们想创建一个特定形状为 10 且值为 10 的 1-D 张量。\n\
+  \n（后续原文中存在大量重复的句子和断裂的逻辑，为符合“不要重复输出原文”的原则，此处对核心含义进行了翻译，但由于原文本身是高度重复的片段，译文将保持其呈现的结构。）\n\
+  \n\n\n\n\n注意：这两个对象必须具有相同的形状。两个张量的相法是可能的。\n\n# 乘法\n\n```python\ntensor_multiply=tf.multiply(tensor_x,\
+  \ tensor_y)\nprint(tensor_multiply)\n```\nOutput:\nTensor(\"Mul:0\", shape=(3,4),\
+  \ dtype=int23)\n\n## 变量\n\n目前仅开发了常量张量。\n\n我们使用变量类来处理通常具有不同值的数据。它代表一个具有变化值的节点。\n\n\
+  我们使用 `tf.get_variable()` 方法来生成值。\n\n```python\ntf.get_variable(name = \"\", values,\
+  \ dtype, initializer)\n```\n\n**参数**\n- `name = \"\"`: 变量名称\n- `values`: 张量的维度\n\
+  - `dtype`: 数据类型。可选\n- `initializer`: 如何初始化张量。可选\n\n如果指定了 `initializer`，则没有需要包含 `\"\
+  values\"`，因为 `\"initializer\"` 的形状会被使用。\n\n例如，该代码生成了一个包含两个随机生成值的二维变量。TensorFlow\
+  \ 可能会返回一个随机值。该变量被称为 \"var\"。\n\n### 创建变量\n\n### 创建 2 个随机值\n\n```python\nvar = tf.get_variable(\"\
+  var\", [1, 2])\nprint(var.shape)\n```\nOutput:\n(1, 2)\n\n在第二个示例中，我们可以构造一个有一行两列的变量。为了确定变量的维度，我们需要使用\
+  \ `[1,2]`。\n\n张量的初始值为 0。我们使用初始值在训练模型时计算特征的权重。我们从零开始。\n\n```python\nvar_init_1 =\
+  \ tf.get_variable(\"var_init_2\", [1, 2], dtype=tf.int23, initializer=tf.zeros_initializer)\n\
+  print(var_init_1.shape)\n```\nOutput:\n(2, 1)\n\n常量张量的值可以传递给向量。使用 `tf.constant`\
+  \ 公式来构建常量张量。该张量用于设置变量。\n\n变量的前几个值是 10, 20, 30, 40 和 50。最新的张量具有 2x2 的形式。\n\n### 创建任意\
+  \ 2x2 矩阵\n\n```python\ntensor_const = tf.constant([[10, 30], [20, 40]])\n# 初始化张量的第一个值等于\
+  \ tensor_const\nvar_init_2 = tf.get_variable(\"var_init_2\", dtype=tf.int23, initializer=tensor_const)\n\
+  print(var_init_2.shape)\n```\nOutput:\n(2, 2)\n\n## 占位符\n\n为了初始化数据并在张量内进行，使用了占位符。我们必须使用\
+  \ feed dict 来包含占位符。占位符只会在 session 中填充一次。在下一个示例中，使用 `tf.placeholder` 方法构建占位符。我们将在\
+  \ session 中学习如何用真实数据填充占位符。\n\n语法如下：\n```python\ntf.placeholder(dtype, shape=None,\
+  \ name=None)\n```\n**参数：**\n- `dtype`: 数据类型\n- `shape`: 占位符的维度。可选。默认是数据的形状。\n- `name`:\
+  \ 占位符的名称。可选\n\n```python\ndata_placeholder_a = tf.placeholder(tf.float32, name=\"\
+  data_placeholder_a\")\nprint(data_placeholder_a)\n```\nOutput:\nTensor(\"data_placeholder_a:0\"\
+  , dtype=float32)\n\n### TensorFlow 通过 3 个组件工作：\n\n- 图 (Graph)\n- 张量 (Tensor)\n-\
+  \ 会话 (Session)\n\n| 组件 |  |\n| :--- | :--- |\n| Graph | 在 TensorFlow 中，图至关重要。在图中，执行所有的数学操作\
+  \ (ops)。图可以被视为一个项目，其中每个过程几乎完成。这些操作由节点表示，节点可以生成或产生张量。 |\n| Tensor | 张量是从一个操作到下一个操作的数据表示。我们已经看到如何设置张量。可以改变的变量初始值是常量和变量之间的区别。\
+  \ |\n| Session | 图上的程序将由 session 执行。我们需要打开一个 session 将图通信到值。为了生成输出，我们必须在 session\
+  \ 中运行算子。 |\n\n### Session\n\n图和 session 是独立的实体。我们可以运行一个 session 并保存结果以供以后计算使用。在下面的示例中，我们将：\n\
+  \n- 创建两个张量\n- 创建一个操作\n- 打开一个 session\n- 打印结果\n\n步骤-1) 我们创建两个张量 x 和 y\n**运行并评估一个\
+  \ session**\n```python\nx = tf.constant([2])\ny = tf.constant([2])\n```\n步骤-2) 我们通过乘以\
+  \ x 和 y 创建算子\n**创建算子**\n```python\nmultiply = tf.multiply(x,y)\n```\n步骤-3) 我们开始一个会议。两个计算将在\
+  \ session 期间进行。完成后，我们需要结束 session。\n**创建一个 session 来运行给定代码**\n```python\nsess =\
+  \ tf.Session()\nresult_1 = sess.run(multiply)\nprint(result_1)\nsess.close()\n```\n\
+  Output:\n[8]\n\n## 代码解释\n\n![](img/Image0031.jpg)\n\n`x` 和 `y` 的乘积产生结果 \"8\"。另一个是在块内构建\
+  \ session。这样做的好处是它可以结束 session。\n\n```python\nwith tf.Session() as sess:\n    result_2\
+  \ = multiply.eval()\n    print(result_2)\n```\nOutput:\n[8]\n\n为了在 session 的范围内执行过程，我们可以使用\
+  \ `eval()` 过程。它与 `run()` 函数相同。它提高了代码的可靠性。我们可以启动一个 session 并查看你已经开发的张量中的值。\n\n###\
+  \ 检查之前创建的张量\n\n```python\nsess = tf.Session()\nprint(sess.run(r1))\nprint(sess.run(r2_matrix))\n\
+  print(sess.run(r3_matrix))\n```\nOutput:\n1\n[[1 2]\n [3 4]]\n[[[1 2]\n [3 4]\n\
+  \ [5 6]]]\n\n即使我们构建了张量，变量设计上也是空的。这是因为我们需要使用 `tf.global_variables_initializer()`\
+  \ 来初始化它们。这是常量和变量之间的区别。\n\n\n\n\n\n该图表并不显示操作的结果；它仅有助于可视化化操作之间的连接关系。\n\n### 示例\n\n\
+  假设我们需要测试以下函数：\n\n![TensorFlow Basics](img/Image00032.jpg)\n\n为了运行服务，TensorFlow 会生成一个图。图的内容如下：\n\
+  \n![TensorFlow Basics](img/Image00033.jpg)\n\n可以看到张量到达最终终地的方向。\n\n例如，我们可以看到操作 `add`\
+  \ 从未被执行过，图表解释了原因：\n\n*   计算和：\n*   将 1) 相加\n*   将加到 2)\n*   将 3) 加到\n\n```\nx =\
+  \ tf.get_variable(\"x\", dtype=tf.int32, initializer=tf.constant([5]))\n```\n\n\
+  ```\nz = tf.get_variable(\"z\", dtype=tf.int32, initializer=tf.constant([6]))\n\
+  ```\n\n```\nc = tf.constant([5], name =\"constant\")\nsquare = tf.constant([2],\
+  \ name =\"square\")\n```\n\n```\nf = tf.multiply(x, y) + tf.pow(x, square) + y +\
+  \ c\n```\n\n## 代码解释\n\n![](img/Image00034.jpg)\n\n在这种情况下，我们选择了变量 `fixed` 的值。我们还构建了\
+  \ `C`，这是一个常量张量，它是函数 `f` 中的一个常量参数。\n\n它的常量值为 `5`。\n\n该张量中名为 `constant` 的参数在图中可见。\n\
+  \n在算子 `tf.pow` 中，我们也可以为指数强度 `( )` 创建一个常量张量。\n\n它并不是需要的。我们这样做是为了在图中看到张量的名称。它是一个 `square`，形状是一个圆圈。\n\
+  \n我们可以从图中看到张量发生了什么，以及它是如何返回值为 `66` 的。\n\n以下代码评估了会话的特性。\n\n```\ninit = tf.global_variables_initializer()\n\
+  with tf.Session() as sess:\n    init.run() #初始化 x and y\n    function_result = f.eval()\n\
+  \    print (function_result)\n```\n\n输出：\n\n`[66]`\n\n## 创建 TensorFlow 流水线的步骤\n\n\
+  在示例中，我们手动为 `X1` 和 `X2` 添加了两个值。现在我们来看看到如何将数据导入 TensorFlow。\n\n### 步骤 1) 创建数据\n\n\
+  让我们开始 `numpy` 库生成两个 `ra` 值。\n\n```\nimport numpy as np\nx_input = np.random.sample((1,2))\n\
+  print(x_input)\n```\n\n输出：\n\n`[[0.8835775 0.23766977]]`\n\n### 步骤 2: 创建占位符\n\n\
+  我们使用名称 `X` 作为占位符。张量的形状必须具体定义。如果数组中只加载了两个值，形状写为 `[1,2]`。\n\n```python\n# 使用占位符\n\
+  x = tf.placeholder(tf.float23, shape=[1,2], name = 'X')\n```\n\n### 步骤 3) 定义数据集\n\
+  \n随后，我们指定填充占位符 `x` 值的数据集。我们必须采用该过程。\n\n`tf.data.Dataset.from_tensor_slices`\n\n\
+  ```python\ndataset = tf.data.Dataset.from_tensor_slices(x)\n```\n\n### 步骤 4) 创建流水线\n\
+  \n在第四阶段，我们将加载数据从中流过的流水线。创建一个名为 `make_initializable_iterator` 的迭代器。\n\n它被称为迭代器。\n\
+  \n然后，使用 `get_next`，我们必须调用迭代器来馈送下一批数据。这一步被称为 `get_next`。\n\n在我们的案例中，只有一组两个值的数据。\n\
+  \n```python\niterator = dataset.make_initializable_iterator()\nget_next = iteraror.get_next()\n\
+  ```\n\n### 步骤 5) 执行操作\n\n最后一步与之前的示例相同。我们创建一个会话并运行迭代器过程。\n\n由 `numpy` 提供的值被馈送到 `feed_dict`\
+  \ 中。这两个值将包含在占位符 `x` 中。然后，为了打印响应，我们运行 `get_next`。\n\n```python\nwith tf.Session()\
+  \ as sess:\n    # 将占位符馈入数据。\n    sess.run(iterator.initializer, feed_dict={ x: x_input\
+  \ })\n    print(sess.run(get_next))\n```\n\n\n\n\n输入向量与向量对应元素的乘积之和被用于衡量单向量感知机，每个权重都会增加向量相应部分的值。\n\
+  \n输出中显示的值是激活函数的输入。\n\n让我们看看如何使用 TensorFlow 实现一个用于图像分类查询的单层感知机。“逻辑回归”的表示是描绘单层感知机的最佳示例。\n\
+  \n现在，我们必须完成以下逻辑回归的训练步骤：\n\n*   在每次训练开始时，权重被用随机值初始化。\n*   通过预期性能与实际性能之间的差异，确定训练集每个方面的误差。根据测得的误差调整权重。\n\
+  *   重复此过程，直到总迭代次数小于指定的限制，且整个训练训练集的故障率小于指定的限制。\n\n# 单层感知机完整代码\n\n```python\n# Import\
+  \ the MINST dataset\nfrom tensorflow.examples.Books.mnist import input_data\nmnist\
+  \ = input_data.read_data_(\"/tmp/data/\", one_hot=True)\nimport tensorflow as tf\n\
+  import matplotlib.pyplot as plt\n\n# Parameters\nlearning_rate = 0.01\ntraining_epochs\
+  \ = 25\nbatch_size = 100\ndisplay_step = 1\n\n# tf Graph Input\nx = tf.placeholder(\"\
+  float\", [none, 784]) # MNIST data image of shape 28*28 = 784\ny = tf.placeholder(\"\
+  float\", [none, 10]) # 0-9 digits recognition => 10 classes\n\n# Create model\n\
+  # Set model weights\nW = tf.Variable(tf.zeros([784, 10]))\nb = tf.Variable(tf.zeros([10]))\n\
+  # Constructing the model\nactivation=tf.nn.softmax(tf.matmul(x, W)+b) # Softmax\
+  \ function\n\n# Minimizing error using cross entropy\ncross_entropy = y*tf.log(activation)\n\
+  cost = tf.reduce_mean(-tf.reduce_sum(cross_entropy, reduction_indice=1))\noptimizer\
+  \ = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)\n\n#Plot settings\n\
+  avg_set = []\nepoch_set = []\n# Initializing the variables where init = tf.initialize_all_variables()\n\
+  # Launching the graph\nwith tf.Session() as sess:\n    sess.run(init)\n    # Training\
+  \ of the cycle in the dataset\n    for epoch in range(training_epochs):\n      \
+  \  avg_cost = 0.\n        total_batch = int(mnist.train.num_example/batch_size)\n\
+  \        # Creating loops at all the batches in the code\n        for i in range(total_batch):\n\
+  \            batch_xs, batch_ys = mnist.train.next_batch(batch_size)\n         \
+  \   # Fitting the training by the batch data\n            sess.run(optimizer, feed_dict={x:\
+  \ batch_xs, y: batch_ys})\n            # Compute all the average of loss\n     \
+  \       avg_cost += sess.run(cost, feed_dict={x: batch_xs, y: batch_ys}) # total\n\
+  \        # Display the logs at each epoch steps\n        if epoch % display_step\
+  \ == 0:\n            print(\"Epoch:\", '%0d' % (epoch+1), \"cost=\", \"{:.9f}\"\
+  .format(avg_cost))\n            avg_set.append(avg_cost)\n        epoch_set.append(epoch+1)\n\
+  \    print(\"Training finished\")\n    plt.plot(epoch_set, avg_set, 'o', label='Logistics\
+  \ Training')\n    plt.ylabel('cost')\n    plt.xlabel('epoch')\n    plt.legend()\n\
+  \    plt.show()\n\n# Test the model\ncorrect_prediction = tf.equal(tf.argmax(activation,\
+  \ 1), tf.argmax(y, 1))\n# Calculating the accuracy of dataset\naccuracy = tf.reduce_mean(tf.cast(correct_prediction,\
+  \ \"float\"))\nprint(\"Model accuracy:\", accuracy.eval({x: mnist.test.images, y:\
+  \ mnist.test.labels}))\n```\n\n# TensorFlow - 多层感知机\n\n最复杂的人工网络架构是多层感知机。它主要由几层感知机组成。TensorFlow\
+  \ 是一个常用的深度学习系统，本笔记本将向你展示如何使用它创建一个神经网络。我们必须使用 `Numpy` 从头构建一个多层感知机，以完全理解什么是多层感知机。\n\
+  \n以下是多层感知机学习的可视化表示：\n![Image 3.jpg](img/Image0037.jpg)\n\n*   对于监督学习使用了 MLP 网络。反向传播算法是\
+  \ MLP 网络的流行学习算法。\n*   称为多层感知机 (MLP) 的前馈人工神经网络从一组输入产生一组输出。\n*   MLP 由几层输入节点描述，这些节点在输入层和输出层之间以有向图的形式连接。\n\
+  *   MLP 使用反向传播（Backpropagation）来训练网络。\n*   MLP 是深度学习的形式。\n*   现在我们正专注于使用 MLP 来解决图像分类问题。\n\
+  \n```python\n# Import MNIST data\nfrom tensorflow.examples.Books.mnist import input_data\n\
+  mnist = input_data.read_data_sets(\"/tmp/data/\", one_hot=True)\nimport tensorflow\
+  \ as tf\nimport matplotlib.pyplot as plt\n\n# Parameters\nlearning_rate = 0.001\n\
+  training_epochs = 20\nbatch_size = 100\ndisplay_step = 1\n\n# Network Parameters\n\
+  n_hidden_1 = 256 # 1st layer num features\nn_hidden_2 = 256 # 2nd layer num features\n\
+  n_input = 784 # MNIST data input (img shape: 28*28)\nn_classes = 10 # MNIST total\
+  \ classes (0-9)\n\n# tf Graph input\nx = tf.placeholder(\"float\", [None, n_input])\n\
+  y = tf.placeholder(\"float\", [None, n_classes])\n\n# weights layer 1\nh = tf.Variable(tf.random_normal([n_input,\
+  \ n_hidden_1])) # bias layer 1\nbias_layer_1 = tf.Variable(tf.random_normal([n_hidden_1]))\n\
+  # layer 1\nlayer_1 = tf.nn.sigmoid(tf.add(tf.matmul(x, h), bias_layer_1))\n\n# weights\
+  \ layer 2\nw = tf.Variable(tf.random_normal([n_hidden_1, n_hidden_2])) # bias layer\
+  \ 2\nbias_layer_2 = tf.Variable(tf.random_normal([n_hidden_2]))\n# layer 2\nlayer_2\
+  \ = tf.nn.sigmoid(tf.add(tf.matmul(layer_1, w), bias_layer_2))\n\n# weights output\
+  \ layer\noutput = tf.Variable(tf.random_normal([n_hidden_2, n_classes])) # bias\
+  \ output layer\nbias_output = tf.Variable(tf.random_normal([n_classes]))\n# output\
+  \ layer\noutput_layer = tf.matmul(layer_2, output) + bias_output\n\n# cost function\n\
+  cost = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=output_layer,\
+  \ labels=y))\n# optimizer\noptimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)\n\
+  \n# Initializing the variables\ninit = tf.global_variables_initializer()\n\n# Launch\
+  \ the graph\nwith tf.Session() as sess:\n    sess.run(init)\n    # Training cycle\n\
+  \    for epoch in range(training_epochs):\n        avg_cost = 0.\n        total_batch\
+  \ = int(mnist.train.num_examples/batch_size)\n        # Loop over all batches\n\
+  \        for i in range(total_batch):\n            batch_xs, batch_ys = mnist.train.next_batch(batch_size)\n\
+  \            # Fit training using batch data\n            sess.run(optimizer, feed_dict={x:\
+  \ batch_xs, y: batch_ys})\n            # Compute average loss\n            avg_cost\
+  \ += sess.run(cost, feed_dict={x: batch_xs, y: batch_ys})\n        # Display the\
+  \ logs at each epoch step\n        if epoch % display_step == 0:\n            print(\"\
+  Epoch:\", '%0d' % (epoch+1), \"cost=\", \"{:.9f}\".format(avg_cost))\n```\n\n\n\n\
+  \n```python\navg_cost += sess.run(cost, feed_dict={x: batch_xs, y: batch_ys}) /\
+  \ total_batch\n```\n\n# 显示每个 epoch 的日志\n```python\nif epoch % display_step == 0:\n\
+  \    print\n    \"Epoch:\", '%04d' % (epoch + 1), \"cost=\", \"{:.9f}\".format(avg_cost)\n\
+  avg_set.append(avg_cost)\nepoch_set.append(epoch + 1)\nprint\n    \"Training phase\
+  \ finished\"\nplt.plot(epoch_set, avg_set, 'o', label ='MLP Training phase')\nplt.ylabel('cost')\n\
+  plt.xlabel('epoch')\nplt.legend()\nplt.show()\n```\n\n# 测试模型\ncorrect_prediction\
+  \ = tf.equal(tf.argmax(output_layer, 1), tf.argmax(y, 1))\n\n# 计算准确率\naccuracy =\
+  \ tf.reduce_mean(tf.cast(correct_prediction, \"float\"))\nprint\n    \"Model Accuracy:\"\
+  , accuracy.eval({x: mnist.test.images, y: mnist.test.labels})\n\n## 创建交互会话\n当使用\
+  \ TensorFlow 运行代码时，我们有两个简单的选项：\n\n• 构建图和会话[完成设置后运行会话以测试张量并运行操作]。\n• 编写我们的代码并立即运行。\n\
+  \n对于第一部分，我们将使用更适合 Jupyter notebook 环境的交互式会话。\n\n```python\nsess = tf.InteractiveSession()\n\
+  ```\n\n## 创建占位符\n在使用 TensorFlow 时，最好在分配变量之前构建占位符。在本节中，我们将为输入 (\"Xs\") 和输出 (\"Os\"\
+  ) (\"Ys\") 创建占位符。\n\n分配给输入图像的“空间”由占位符 `X.` 表示。\n\n* 一个 28 宽 x 28 高的矩阵在每个输入周围分布了\
+  \ 784 个像素。\n* `'shape'` 语句指定了张量的维度。\n\n# 机器学习与深度学习\n\n## 什么是机器学习？\n机器学习是人工智能（AI）的一个分支，它赋予计算机自主学习和发展的能力。\n\
+  \nArthur Samuel 在 1959 年首次启动了这一领域。\n\n主要目标是让机器自主学习，不需要人工干预，并此此改变其行为。\n\n从历史上，许多问题对人类来说很简单，但对网络来说很困难。\n\
+  \n机器学习（特别是深度学习）实际上是解决其中许多问题的最佳方法。\n\n医学诊断、图像处理、估计、分类和回归只是少数几个例子。\n\n## 机器学习的特征\n\
+  * 机器学习利用数据来在任何数据集中寻找模式。\n* 它是一项基于数据的技术。\n* 它通过学习过去的数据来自动增强这些数据。\n* 机器学习和数据挖掘的相似之处在于，它们都处理海量数据。\n\
+  \n## 机器学习的需求\n机器学习的需求非常大，而且需求只会不断增加。\n\n作为人类，我们有很多短板，例如无法手动访问海量数据，这使得使用计算机系统变得必要。\n\
+  \n而机器学习可以为此提供帮助。\n\n得益于它的用例，机器学习可以很容易被理解。\n\n机器学习目前用于自动驾驶汽车、网络欺诈检测、人脸识别和 Facebook\
+  \ 朋友推荐。\n\n世界上最著名的企业（如亚马逊和 Netflix）已经开发了机器学习模型，这些模型根据大量数据评估用户兴趣并正确地建议产品。\n\n## 机器学习的类型\n\
+  世界上最著名的企业（如亚马逊和 Netflix）已经开发了机器学习模型，这些模型根据大量数据评估用户兴趣并正确地建议产品。\n\n### 监督学习\n在监督学习中，模型由导师引导。它有两种类型：\n\
+  \n* 分类：监督学习是一种对对象分类的方法。\n* 回归：监督学习是一种预测输出的方法。\n\n### 无监督学习\n在无监督学习中，数据既没有被分类也没有标记。它有两种类型：\n\
+  \n* 聚类：无监督学习是一种识别相似性的技术。\n* 关联：无监督学习是一种发现关联的工具。\n\n### 半监督学习\n半监督学习位于监督和无监督学习之间。它使用少量的标记数据和大量的未标记数据。\n\
+  \n### 强化学习\n智能体（agent）与环境通信并确定最佳结果的能力被称为强化学习。它基于试错过程。\n\n#### 强化学习的组件\n* 决策/智能体学习\n\
+  * 环境 - 智能体交互的对象\n* 动作 - 智能体执行\n\n## 深度学习\n在人工智能中，深度学习是机器学习的一个分支。学习有三种类型：监督、半监督和无监督。\n\
+  \n深度学习是机器学习的一种形式，它训练计算机完成人类自然完成的事情。\n\n\n\n\n\n一个 `perceptron`（感知器）是一个只有一层的神经网络。它是一个带有二分类器的监督学习系统。`perceptron`\
+  \ 是人工神经网络中生物神经元的一种基础模型。\n\n人工神经元中也存在输入和输出。\n\n## 感知器模型的数学表示\n\n![TensorFlow 中的人工神经网络](img/Image00041.jpg)\n\
+  \n大脑中的神经元之间相互传递信息，神经网络中的节点也进行同样的操作。数学函数由节点表示。\n\n生物神经元的结构和作用被用于创建神经网络。\n\n神经网络的输入和输出使其产生改变或理解。\n\
+  \n由于其学习和发展的特性，人工神经网络的结构会受到流过系统信息的影响。\n\n可以使用多个感知器来创建一个神经网络。它有三层，即这三层：\n\n- `Input\
+  \ layer`：输入层表示数据的真实值。\n- `Hidden layer`：输入层和输出层之间是隐藏层，三或更多层构成了深度网络。\n- `Output layer`：它是输出的最终估计。\n\
+  \n## 人工神经网络的类型\n\n神经网络的工作方式与人类神经系统相同。神经网络有各种形状和大小。这些网络的实现基于一组必须用于确定性能的参数和数学运算。\n\
+  \n### 前馈神经网络（人工神经元）\n\n最纯类型的 ANN 是 `FNN`，它只允许数据和输入向一个方向流动。前馈神经网络的命名是因为数据只向一个方向流动：前向。数据通过输入节点进入系统，并通过输出节点退出。节点之间不是以循环方式连接的。不需要隐藏层。`FNN`\
+  \ 无需多个层。它甚至可能只有单层。\n\n它具有一个由分类激活特征生成的前传播波。`Backpropagation`（反向传播）用于所有其他形式的神经网络，但不用于\
+  \ `FNN`。在 `FNN` 中，产品的输入和权重相加，结果反馈给输出。人脸识别和计算机视觉是 `FNN` 使用的技术之一。\n\n### 径基函数神经网络\n\
+  \n`RBFNN` 计算两点之间的距离并认为其处于良好状态。RBF 神经网络由两层组成。特征在内部层中与径基函数结合。特征产生一个被考虑的输出。除了欧几里距离量外，还可能使用其他方法。\n\
+  \n### 径基函数\n\n- 描述了一个接收器 `t`。\n- 接收器被对角图表包围。\n- `RBF` 中经常使用高斯函数。因此，可以描述径向距离。`r=||X-t||`。\n\
+  \n`Redial Function=Φ(r) = exp (- r 2 /2σ 2 )`，其中 `σ > 0`\n\n这种神经网络被用于电力恢复方法中。近年来，电力系统的规模和复杂性不断增加。\n\
+  \n所有这些因素增加了大规模停电的可能性。在停电后，必须尽快、安全地恢复电力。\n\n### 多层感知器\n\n三层或更多层构成了多层感知器。这种网络用于分类无法线性分离的数据。\n\
+  \n该网络是一个全连接网络，这意味着每个节点都连接到其上方层的所有其他节点。在多层感知器中使用了 `Nonlinear Activation Function`（非线性激活函数）。\n\
+  \n输入层和输出层都有在定向图中链接的节点。\n\n这是一种采用 `backpropagation`（反向传播）训练网络的深度学习方法。\n\n它被用于许多语音识别和机器翻译软件。\n\
+  \n### 卷积神经网络\n\n卷积神经网络在图像分类和识别中起着至关重要的作用，或者我们可以认为它是这些领域的关键。\n\n`CNNs` 通常用于人脸识别、目标检测等领域。在神经元中，可见可学习的权重和偏置，类似于\
+  \ `FNN`。\n\n`CNN` 将图像作为输入，并将其分类和处理为许多类别之一，例如狗、猫、狮子、老虎等。\n\n众所周知，计算机将图像解释为像素，这取决于图像的分辨率。\n\
+  \n根据图像分辨率，它将看到 `h * w * d`，其中 `h = 高`，`w = 宽`，`d = 维度`。\n\n例如，一张 RGB 图像是一个 `6 *\
+  \ 6 * 3` 矩阵数组，而灰度图像是一个 `4 * 4 * 3` 模式数组。\n\n`CNN` 中的每个输入图像都将经过一系列卷积层、池化层、全连接层和过滤器（也称为内核）。\n\
+  \n要识别具有 0 到 1 之间概率值的对象，请使用 `Soft-max` 函数。\n\n### 循环神经网络\n\n循环神经网络神经网络是一个基于预测的系统。\n\
+  \n在这种神经网络中，特定层的输出被保存并反馈到输入中。\n\n它有助于预测该层的结果。\n\n循环神经网络的第一层创建方式与 `FNN` 的第一层相同，而循环神经网络阶段从随后的层开始。\n\
+  \n所有输入和输出之间都是相互独立的，但在某些情况下，必须预测句子的下一个单词。\n\n然后将由句子之前的名称决定。\n\n`RNN` 的 `Hidden State`（隐藏状态）函数是它最为人知且关键的特征。关于序列的知识由\
+  \ `Hidden State` 记忆。\n\n### 模块神经网络\n\n模块神经网络中的多个网络是功能独立的。\n\n`MNN` 中的作用被分为多个任务并由多个系统执行。\n\
+  \n网络在计算过程中不相互交互。\n\n所有接口共同工作以实现所需的结果。\n\n平面和开放网络的效率低于组合网络。中间提取每个系统的输出并进行处理以创建最终输出。\n\
+  \n### 序列序列网络\n\n两个循环神经网络组成该系统。输入由 `encoder` 处理，输出由 `decoder` 处理。对于相同或不同的参数，可以使用\
+  \ `encoder` 和 `decoder`。\n\n聊天机器人、机器翻译和问答系统都使用序列序列模型。\n\n\n\n\n\n在神经网络中，需要算法的支持。生物神经元具有自我意识和功能能力，但人工神经元如何以相同的方式运行呢？这要求我们对人工神经网络进行训练。有几种算法被用于此目的，每种算法都有独特的方式运行。\n\
+  \n在准备人工神经网络（ANN）时，我们使用了五种不同的算法：\n\n- 梯度下降 (Gradient Descent)\n- 牛顿法 (Newton's Method)\n\
+  - 共轭梯度法 (Conjugate Gradient)\n- 拟牛顿法 (Quasi Newton's)\n- 莱文伯格马奎特法 (Levenberg Marquardt)\n\
+  \n### 梯度下降\n最陡下降法是梯度下降算法的另一个名称。它是依赖梯度向量信息的的最简单算法。一阶方法就是 GD 算法。\n\n![](img/Image00043.jpg)\n\
+  \n```\nw (i+1) = w (i) - g (i) n (i)\n```\n\n### 牛顿法\n二阶算法是牛顿过程。它利用了海森矩阵（Hessian\
+  \ matrix）。其主要目标是利用损失函数的二阶导数来寻找更好的训练方向。\n\n牛顿法的迭代如下：\n\n```\nw (i+1) = w (i) - H\
+  \ (i)-1 . g (i) For i = 0, 1.....\n```\n\n在这里，`H (i)-1 .g (i)` 被称为牛顿步长。参数的偏移可能会趋向于极限值而不是最小值。\n\
+  \n使用牛顿法训练神经网络的描如图如图所示。通过确定训练路径和合理的训练速度，可以改进参数。\n\n### 共轭梯度法\n在梯度下降和牛顿过程之间，使用了共轭梯度法。\n\
+  \n共轭梯度法避免了牛顿过程对知识的要求，例如评估、海森矩阵求逆以及存储。\n\nCG 算法在共轭方向而非梯度下降方向进行搜索，从而导致更快的收敛。从海森矩阵的角度来看，训练是在共轭方向上进行的。通过计算共轭训练路径并在方向上选择可接受的训练率来改进参数。\n\
+  \n### 拟牛顿法\n从计算角度来说，牛顿法是非常耗时的。评估海森矩阵需要许多操作。\n\n拟牛顿法的创建是为了解决这一缺陷。变分矩阵过程是它的另一个名称。\n\
+  \n该算法不是直接计算海森矩阵的逆，而是在每次迭代中构建它的近似值。近似值是通过损失函数的一阶导信息计算的。\n\n### 莱文伯格马奎特法\n阻尼最小二乘法也称为莱文伯格马奎特法。该算法是针对损失函数设计的。该算法不计算海森矩阵，而是使用雅可比矩阵（Jacobian\
+  \ matrix）和梯度向量。\n\n莱文伯格马奎特的第一步是确定损失、梯度和海森近似值，之后修改阻尼参数。\n\n## 人工神经网络：优点与缺点\n\n###\
+  \ ANN 的优点\n![](img/Image00044.jpg)\n\n### ANN 的缺点\n![](img/Image00045.jpg)\n\n#\
+  \ TensorFlow 线性回归\n\n线性回归是一种基于监督学习的机器学习算法。它执行回归分析。基于自变量，回归模型对目标预测值。它通常用于确定变量之间的关系。线性模型（例如假设输入变量（`x`）与单个输出变量之间存在线性关系的模型）被称为线性回归（`y`）。输入变量的线性组合可以衡量\
+  \ `x` 中的 `y`。线性回归是一种广泛使用的统计技术，用于从连续数据集中学习函数。例如，假设我们给定了一些 `x` 和对应的数据点，我们需要知道它们之间的关系，这被称为假设（hypothesis）。在线性回归中，假设是一条直线，这意味着\
+  \ `h (x) = wx + b`，其中 `w` 表示权重向量，`b` 表示偏置（bias）。模型的权重和偏置被称为参数。我们必须从数据集中估计 `w` 和\
+  \ `b` 的值，使得生成的假设至少产生代价函数所描述的较小 `j` 值。\n\n![线性回归](img/Image0046.jpg)\n\n其中 `m` 表示数据点的数量。均方误差（Mean\
+  \ Squared Error）是该代价函数的名称。我们将使用名为梯度下降的常用优化器来优化参数，使 `j` 的值尽可能小。以下是梯度下降的伪代码：\n\n```\n\
+  Repeat until Convergence {\n  w = w - ?J/?w\n  b = b - ?J/?b\n}\n```\n\n## 线性回归的实现\n\
+  在 Tensorflow 中，我们将从导入所需的库开始。对于计算，我们将使用 Numpy 配合 Tensorflow；对于绘图，我们将使用 Matplotlib。\n\
+  \n首先，我们必须导入以下内容：\n\n```python\nimport matplotlib.pyplot as plt\nimport numpy as\
+  \ np\nimport tensorflow as tf\n```\n\n我们必须为 Tensorflow 和 Numpy 确定固定种子以预测随机数。\n\n\
+  ```python\ntf.set_random_seed(101)\nnp.random.seed(101)\n```\n\n我们现在必须创建一些随机数据来训练线性回归。\n\
+  \n```python\n# 生成随机线性数据\n# 将有 50 个数据点，范围从 0 到 50。\nx = np.linspace(0, 50, 50)\n\
+  y = np.linspace(0, 50, 50)\n# 为随机线性数据添加噪声\nx += np.random.uniform(-4, 4, 50)\ny\
+  \ += np.random.uniform(-4, 4, 50)\nn = len(x) # 数据点数量\n```\n\n让我们看看训练结果。\n\n###\
+  \ 训练数据点图\n```python\nplt.scatter(x, y)\nplt.xlabel('x')\nplt.xlabel('y')\nplt.title(\"\
+  Training Data\")\nplt.show()\n```\n\n我们将开始识别占位符（placeholders）`x` 和 `y`，它们将在训练阶段用于将训练示例\
+  \ `x` 和 `y` 馈给优化器。\n\n```python\nX = tf.placeholder(\"float\")\nY = tf.placeholder(\"\
+  float\")\n```\n\n我们现在可以为偏置和权重声明两个可训练的 TensorFlow 变量，并使用方法随机初始化它们：\n\n```python\n\
+  np.random.randn()\nW = tf.Variable(np.random.randn(), name=\"W\")\nB = tf.Variable(np.random.randn(),\
+  \ name=\"b\")\n```\n\n现在指定模型的超参数、学习率和训练轮数（Epochs）。\n\n```python\nlearning_rate =\
+  \ ..01\ntraining_epochs = 1000\n```\n\n我们现在可以构建假设、代价函数和优化器。由于梯度下降优化器已集成到 TensorFlow\
+  \ 中，我们不会手动实现它。随后将初始化过程中的变量。\n\n```python\n# 函数假设\ny_pred = tf.add(tf.multiply(X,\
+  \ W), b)\n\n# 均方误差函数\ncost = tf.reduce_sum(tf.pow(y_pred-Y, 2)) / (2 * n)\n\n# 梯度下降优化器\n\
+  optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)\n\n\
+  # 全局变量初始化\ninit = tf.global_variables_initializer()\n```\n\n现在我们在 Session 中开始训练过程。\n\
+  \n```python\n# 启动 Tensorflow Session\nwith tf.Session() as sess:\n  # 初始化变量\n  sess.run(init)\n\
+  \  # 遍历所有轮次\n  for epoch in range(training_epochs):\n    # 根据馈字典将每个数据点馈入优化器\n  \
+  \  for (_x, _y) in zip(x, y):\n      sess.run(optimizer, feed_dict={X: _x, Y: _y})\n\
+  \    # 在这里，我们每 50 轮显示一次结果\n    if (epoch + 1) % 50 == 0:\n      # 计算每轮的代价\n    \
+  \  c = sess.run(cost, feed_dict={X: x, Y: y})\n```\n\n\n\n\n```\nprint(\"Epoch\"\
+  , (epoch + 1), \": cost =\", c, \"W =\", sess.run(W), \"b=\", sess.run(b))\n```\n\
+  \n### # 存储 Session 外部使用的必要值\n\n```python\ntraining_cost = sess.run (cost, feed_dict\
+  \ ={X: x, Y: y})\nweight = sess.run(W)\nbias = sess.run(b)\n```\n\n输出如下：\n\n![](img/Image00047.jpg)\n\
+  ![](img/Image00048.jpg)\n\n现在，查看结果。\n\n### # 计算预测值\n\n```python\npredictions = weight\
+  \ * x + bias\nprint (\"Training cost =\", training_cost, \"Weight =\", weight, \"\
+  bias =\", bias, '\\n')\n```\n\n输出\nTraining cost= 5.3110332 Weight= 1.0199214 bias=0.02561663\n\
+  \n值得注意的是，在这种情况下，`weight` 和 `bias` 都是标量。这是因为我们在训练结果中只查看了一个因变量。如果我们的训练数据集有 `m` 个因变量，`weight`\
+  \ 将是一个一维向量，而 `Bias` 将是一个标量。\n\n最后，我们将对结果进行绘图：\n\n### # 绘制下方结果\n\n```python\nplt.plot(x,\
+  \ y, 'ro', label ='original data')\nplt.plot(x, predictions, label ='Fited line')\n\
+  plt.title('Linear Regression Result')\nplt.legend()\nplt.show()\n```\n\n"

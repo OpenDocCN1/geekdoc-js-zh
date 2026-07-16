@@ -1,0 +1,219 @@
+name: JavaScript for Beginners： The Complete Manual for Beginners With Tips and Tricks
+  to Learn JavaScript From Scratch
+name_cn: JavaScript 入门指南：从零学习 JavaScript 的完整技巧与手册
+slug: javascript-for-beginners-the-complete-manual-for-beginners-w
+toc:
+- - '#'
+  - JavaScript 入门指南：从零学习 JavaScript 的完整技巧与手册
+- - '#'
+  - 引言
+- - '##'
+  - JavaScript 有什么用途？
+- - '##'
+  - 什么让 JavaScript 变得很有趣？
+- - '##'
+  - JavaScript 的缺点
+- - '#'
+  - 第二章
+- - '#'
+  - JavaScript 语法
+- - '##'
+  - 基础
+- - '##'
+  - 空格与分号
+- - '#'
+  - 第三章
+- - '#'
+  - JavaScript 函数
+- - '#'
+  - 第四章
+- - '#'
+  - JavaScript 变量
+- - '##'
+  - 正确的 JavaScript 变量
+- - '##'
+  - 错误的 JavaScript 因素
+- - '##'
+  - JavaScript 变量示例
+- - '##'
+  - JavaScript 局部变量
+- - '##'
+  - JavaScript 全局变量
+- - '##'
+  - 在函数内部声明 JavaScript 全局变量
+- - '##'
+  - JavaScript 全局变量的原理
+- - '##'
+  - JavaScript 数据类型
+- - '##'
+  - JavaScript 原始信息类型
+- - '##'
+  - JavaScript 非原始信息类型
+- - '#'
+  - 第五章
+- - '#'
+  - JavaScript 数组
+- - '##'
+  - 描述
+- - '##'
+  - 常用方法
+- - '##'
+  - 10. 从文件位置删除元素
+- - '##'
+  - 11. 复制数组
+- - '##'
+  - 访问数组组件
+- - '#'
+  - 第六章
+- - '#'
+  - JavaScript 布尔值
+- - '##'
+  - 布尔对象
+- - '###'
+  - 3) 通过 Object 构造函数
+- - '###'
+  - JavaScript 对象中的方法定义
+- - '###'
+  - 我们可以在 JavaScript 对象中定义方法。然而，在定义方法之前，我们需要在能力中添加与方法同名的属性。
+- - '##'
+  - JavaScript 对象方法
+- - '#'
+  - 第八章
+- - '#'
+  - JavaScript 字符串
+- - '##'
+  - 1) 通过字符串字面量
+- - '##'
+  - 2) 通过字符串对象（使用 new 关键字）
+- - '##'
+  - JavaScript 字符串方法
+- - '###'
+  - 1) JavaScript String charAt(index) 方法
+- - '###'
+  - 2) JavaScript String concat(str) 方法
+- - '###'
+  - 3) JavaScript String indexOf(str) 方法
+- - '###'
+  - 4) JavaScript String lastIndexOf(str) 方法
+- - '###'
+  - 5) JavaScript String toLowerCase() 方法
+- - '###'
+  - 7) JavaScript String slice(beginIndex, endIndex) 方法
+- - '###'
+  - 8) JavaScript String trim() 方法
+- - '###'
+  - 9) JavaScript String split() 方法
+- - '#'
+  - 第九章
+- - '#'
+  - JavaScript 数字
+- - '##'
+  - 处理数字的更多方法
+- - '##'
+  - 十进制、二进制和八进制数
+- - '###'
+  - toString(base)
+- - '##'
+  - for 声明
+- - '###'
+  - 示例
+- - '##'
+  - do...while 解释
+- - '###'
+  - 示例
+- - '##'
+  - while 解释
+- - '###'
+  - 示例
+- - '##'
+  - 命名声明
+- - '###'
+  - 示例
+- - '##'
+  - 通过 ID 获取组件
+- - '###'
+  - 通过类名获取组件
+- - '###'
+  - 通过标签名获取组件
+- - '###'
+  - querySelector
+- - '###'
+  - queryAll
+- - '##'
+  - 修改 HTML 元素
+- - '###'
+  - 修改 HTML
+- - '###'
+  - 修改属性值
+- - '###'
+  - 修改样式
+- - '##'
+  - 添加和删除组件
+- - '###'
+  - 添加组件
+- - '###'
+  - 删除组件
+- - '###'
+  - 替换组件
+- - '###'
+  - 直接写入 HTML 输出流
+- - '###'
+  - 模型
+- - '###'
+  - JavaScript 函数语法
+- - '###'
+  - 函数调用
+- - '###'
+  - 函数返回
+- - '###'
+  - 模型
+- - '###'
+  - 为什么使用函数？
+- - '###'
+  - 模型
+- - '###'
+  - '`()` 运算符调用函数'
+- - '###'
+  - 模型
+- - '###'
+  - 作为变量值的函数
+- - '###'
+  - 模型
+- - '###'
+  - 局部变量
+- - '###'
+  - 模型
+- - '#'
+  - 第十二章
+- - '#'
+  - JavaScript 事件
+- - '##'
+  - 事件序列
+- - '##'
+  - 示例
+- - '##'
+  - 它不仅仅是网页
+- - '##'
+  - 使用 Web 事件的方法
+- - '###'
+  - 事件监听器属性
+- - '#'
+  - 第十三章
+- - '##'
+  - JavaScript Cookies
+- - '##'
+  - Cookie 是如何工作的？
+- - '###'
+  - JavaScript Cookies
+- - '##'
+  - 如何在 JavaScript 中创建 Cookie？
+- - '###'
+  - JavaScript Cookie 示例
+- - '###'
+  - 示例 1
+- - '###'
+  - 示例 2
+- - '###'
+  - 示例 3
+- - '#'
+  - 总结

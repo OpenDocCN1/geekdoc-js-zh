@@ -1,0 +1,190 @@
+- "# JavaScript 基础：循步指南\n\n\n\n![](img/00001.jpeg)\n\n\n\nSteven Bright 的其他作品：\n-\
+  \ CorelDraw 教程：CorelDRAW 基础\n- 工具与功能列表：工程工具手册\n- Microsoft Word 基础：循序渐指南\n- 网页设计与开发技术：网站制作方法\n\
+  - Microsoft PowerPoint 精选：品牌曝光技术\n- 破解 Microsoft Excel 技巧：循序渐进的方法\n- 变革的浪潮：Adams\
+  \ Aliyu Oshiomhole：为什么他是我们所需的人，创造我们渴望的变革氛围，建立一个成功、伟大且强大的国家\n\n## 如何使用本书\n\n本书是关于\
+  \ JavaScript 用途（主要用于网站开发）的文档。请遵循循序渐指南以充分利用本书的价值。请逐一章节进行阅读，当你读到最后一页时，你会感到非常满意。你需要一个如\
+  \ `Dreamweaver` 的网页制作软件或如 `Notepad++` 的网页编辑软件，以及如 `Google chrome` 和 `Mozilla Firefox`\
+  \ 等网页浏览器来预览你的作品。\n\n\n## 引言\n\nJavaScript 是一种脚本语言。它是一种用于网页、服务器、个人电脑、笔记本电脑、平板电脑、手机等的语言。\n\
+  \n它用于为 HTML 页面添加交互性，赋予页面某种动态效果。\n\n脚本语言是一种轻量级的编程语言。它可以插入 HTML 页面中，并且是一种解释型语言（这意味着脚本无需预先编译即可执行）。\n\
+  \n脚本可以放在 HTML 文档的 `head` 或 `body` 部分。尽管，通常的做法是将脚本放在 `head` 部分或网页的底部，这样它们就集中在一个地方，且不会干扰页面内容。\n\
+  \n当 JavaScript 解释器嵌入到浏览器中时，结果就是客户端 JavaScript。它将 JavaScript 解释器的脚本能力与 Web 浏览器定义的文档对象模型（DOM）结合起来。客户端\
+  \ JavaScript 为原本静态的网页添加了某种程度的动态行为。\n\n尽管 JavaScript 和 Java 之间有许多明显的外部相似之处，包括语言名称、语法和各自的标准库，但它们是两种不同的语言，在设计上存在巨大差异。\n\
+  \n请注意以下几：\n- JavaScript 代码是区分大小写的。\n- 单词之间的空格和制表符会被忽略。\n- JavaScript 语句以分号（`;`）结束。\n\
+  - 语句内部的换行符会被忽略。\n- 除了第一个单词外，每个单词的首字母要大写，例如 `userFirstName`。\n- 要声明变量，请使用关键字 `var`\
+  \ 和变量名：`var username`。为变量赋值，请添加等号和值：`var userName = \"Smith\"`，`var price = 100`。\n\
+  \n## JavaScript 语法\n\n这是一组决定程序员如何编写该语言以及浏览器如何解释该语言的规则。\n\n基本语法如下：\n\n```html\n<script>\n\
+  <!-- - -->\nvar myDate=new Date();\nmyDate.setDate(myDate.getDate());\ndocument.write(myDate)\n\
+  <!-- - -->\n</script>\n```\n\n### 解析\n- `script` 标签（即 `<script></script>`）告诉浏览器在它们之间有一个脚本。\n\
+  - `<!-- - -->`：这些是 HTML 注释标签，但在 JavaScript 中，它们被用于告诉不支持 JavaScript 或禁用了 JavaScript\
+  \ 的浏览器忽略之间的代码。这防止了代码被输出到用户的浏览器中。\n- `Document.write`：这是向用户浏览器中写入实际文本的部分。\n- 你的脚本应该存放在哪里：你可以将脚本放在\
+  \ `head` 部分、`body` 部分，或者作为外部文件。\n\n## JavaScript 在网页开发中的用途\n\nJavaScript 在网页开发中的基本用途是：\n\
+  1. JavaScript 为 HTML 设计师提供了一个编程工具。\n2. JavaScript 可以在 HTML 页面中放入动态文本。\n3. JavaScript\
+  \ 可以动态创建页面（如日期或其他数据），它可以生成专为用户量身定制的页面。\n4. JavaScript 可以对事件做出反应。\n5. JavaScript\
+  \ 可以读取和写入 HTML 元素。\n6. JavaScript 可验证输入数据。\n7. JavaScript 可用于检测访问者的浏览器。\n8. JavaScript\
+  \ 可用于创建 Cookie。\n\n## JavaScript 的类型\n\nJavaScript 有两种类型：内部脚本和外部脚本。\n\n### 内联 JavaScript\n\
+  示例：\n```html\n<script>\nalert (\"WELCOME!\");\n</script>\n```\n\n### 外部 JavaScript\n\
+  你使用 `<script>` 标签的 `SRC` 属性从外部文件调用 JavaScript 代码。如果你有很多代码或想从多个页面运行外部文件，这将非常有用，因为任何数量的页面都可以调用同一个外部文件。\n\
+  \n下面的脚本保存为 `miscript.js` 文件：\n```javascript\nalert(\"WELCOME!\");\n```\n然后通过下面的语法放在\
+  \ `head` 部分闭合 `head` 标签之前调用它：\n```html\n<script src=\"miscript.js\"></script>\n\
+  ```\n\n### 独立 JavaScript\n此脚本在页面加载时加载。下方给出了良好的示例：\n```html\n<script>\nalert('Welcome!')\n\
+  </script>\n```\n\n## 你可以在哪里放置 JavaScript\n\nJavaScript 可以存放在文档的以下部分：\n1. 文档的 `head`\n\
+  2. 文档的 `body`\n3. 作为外部 `.js` 文件\n\n## JavaScript 显示方法\n\nJavaScript 可以通过下述的不同方式“显示”数据：我将使用示例来展示使用这些不同方法显示\
+  \ JavaScript 的可能性。\n\n使用 `window.alert()` 写入警报框：\n```html\n<script>\nwindow.alert(\
+  \ 24+ 44 );\n</script>\n```\n注意，当测试上述脚本时，会弹出一个警报窗口并显示 24+44 的结果。\n\n使用 `document.write()`\
+  \ 写入 HTML 输出：\n```html\n<button onclick=\"document.write(24 + 44)\"></button>\n\
+  ```\n注意当点击按钮时，会弹出一个显示结果的文档。\n\n使用 `console.log()` 写入浏览器控制台：\n```html\n<script>\n\
+  console.log( 24 + 44);\n</script>\n```\n你需要在浏览器中激活 JavaScript 控制台（例如在 Google Chrome\
+  \ 中使用 F12），然后输入上面的脚本，按回车键，它就会给你结果。\n\n使用 `innerHTML` 写入 HTML 元素：\n```html\n<p id=\"\
+  demo\"></p>\n<script>\ndocument.getElementById(\"demo\").innerHTML = 24 + 44;\n\
+  </script>\n```\n\n\n\n\n\n注意：你设置了一个 `id` 属性，脚本通过该 ID 获取结果。\n\n## 弹出框 (POPUP BOXES)\n\
+  \nJavaScript 有三种类型的弹出框：\n\n- 提示框 (Alert box)\n- 确认框 (Confirm box)\n- 输入框 (Prompt\
+  \ box)\n\n### 提示框 (Alert Box)\n\n用于确保信息传递给用户。当提示框弹出时，用户必须点击 `OK` 才能继续。\n\n示例：\n\n\
+  ```html\n<script>\nalert(\"WELCOME!\");\n</script>\n```\n\n### 确认框 (Confirm Box)\n\
+  \n用于需要用户验证或确认信息的情况。当确认框弹出时，用户必须点击 `OK` 或 `CANCEL` 才能继续。\n\n示例 1：\n\n```html\n<script>\n\
+  confirm(\"BUY\");\n</script>\n```\n\n示例 2：\n\n```html\n<script>\nvar r=confirm(\"\
+  press a button\");\nif (\"r==true\") {\n  x=\"You pressed OK!\";\n} else {\n  x=\"\
+  You pressed cancel!\";\n}\n</script>\n```\n\n### 输入框 (Prompt Box)\n\n用于需要用户在进入页面前输入值的情况。当输入框弹出时，用户必须输入值并点击\
+  \ `OK` 或 `CANCEL`才能继续。\n\n示例：\n\n```html\n<script>\nprompt(\"BUY\", \"YES\");\n\
+  </script>\n```\n\n### 弹出框换行 (Popup Box Line Break)\n\n用于在弹出框内显示换行。这是通过在值之间插入反斜杠后跟字符\
+  \ `n` 实现的\n\n示例：\n\n```html\n<script>\nalert(\"Hello\\nHow are You?\");\n</script>\n\
+  ```\n\n## 日期和时间 (DATE AND TIME)\n\n### 时间\n\n```html\n<script>\nfunction time(){\n\
+  \  time=new Date()\n  document.write(time.getHours() + \":\" + time.getMinutes())\n\
+  }\n</script>\n```\n\n上述语法被插入到 head 部分，并通过插入到 body 函数中的 `time` 函数调用，如下下方的 `<script>time()</script>`：\n\
+  \n欢迎 Sadiku 周一。现在是\n\n```html\n<script>\ntime()\n</script>\n```\n点！\n\n### 日期和时间\
+  \ (Date and Time)\n\n`Date` 对象用于处理日期和时间。`Date` 对象通过 `Date()` 构造函数创建。\n\n示例：\n\n\
+  ```html\n<script>\nvar myDate=new Date();\nmyDate.setDate(myDate.getDate());\ndocument.write(myDate)\n\
+  </script>\n```\n\n上述语法被插入到 head 部分，并通过插入到 body 函数中的 `time` 函数调用，如下方的：\n\n```html\n\
+  <script>\ndate()\n</script>\n```\n\n## 函数 (FUNCTION)\n\n函数是一个当它被调用时就会执行的代码块。函数写在大括号内，前面名前有\
+  \ `function` 关键字。\n\n示例：\n\n```html\n<script>\nfunction myFunction(name, job) {\n\
+  \  alert(\"Welcome \" + name +\", the \" + job);\n}\n</script>\n```\n\n上述是一个函数，当用户点击下方的\
+  \ `onclick` 事件处理程序时它会被调用。\n\n```html\n<button onclick=\"myFunction('Sadiku Moday',\
+  \ 'Engineer')\">Try it</button>\n```\n\n## 事件处理器 (EVENT HANDLERS)\n\n嵌入 HTML 源代码中并根据特定操作执行预定义函数或命令的指令——被称为事件处理器。所有事件处理器都以\
+  \ `on..` 开头，例如 `onclick`、`onabort`、`onfocus`、`onchange`、`onload`、`onmouseover` 都是事件处理器。\n\
+  \n### onload\n\n```html\n<script>\nfunction hello(){\n  alert(“Hello World!”)\n\
+  }\n</script>\n```\n\n上述语法在页面加载时加载一次。\n\n### onclick\n\n```html\n<script>\nfunction\
+  \ message(element){\n  alert(\"You clicked the \" + element + \" element!\")\n}\n\
+  </script>\n```\n\n上述语法被插入到 head 部分，并通过插入到 body 函数中的 `hello` 函数调用。\n\n```html\n<form>\n\
+  \  <input type=\"radio\" name=\"Radio\" onClick=\"message('Radio Button 1')\">Option\
+  \ 1<br>\n  <input type=\"radio\" name=\"Radio\" onClick=\"message('Radio Button\
+  \ 2')\">Option 2<br>\n  <input type=\"checkbox\" onClick=\"message('Check Button')\"\
+  >Check Button<br>\n  <input type=\"submit\" value=\"Send\" onClick=\"message('Send\
+  \ Button')\">\n  <input type=\"reset\" value=\"Reset\" onClick=\"message('Reset\
+  \ Button')\">\n  <input type=\"button\" value=\"Mine\" onClick=\"message('My very\
+  \ own Button')\">\n</form>\n```\n\n### onMouseOver\n\n这当用户在下方事件中的图像上 `onMouseOver`\
+  \ 时告知用户：\n\n```html\n<a href=\"http://index.html\" onmouseover=\"alert('you onMouseOverover\
+  \ the image');return false\">\n  <img src=\"images/cdw.jpg\" width=\"100\" height=\"\
+  30\">\n</a>\n```\n\n其他还有：\n\n- `onBlur`\n- `onMouseOver`\n- `onFocus`\n- `onChange`\n\
+  \n## 使用 JavaScript 在 HTML 文中设置颜色\n\n使用 JavaScript，你可以访问 HTML 文档的颜色设置。你可以更改的元素包括文本颜色、背景颜色，以及未访问的链接、已访问的链接和活动状态的链接的颜色。\n\
+  \n```html\n<script>\nfunction color(background, foreground, new_link, visited_link,\
+  \ active_link){\n  document.bgColor=background\n  document.fgColor=foreground\n\
+  \  document.linkColor=new_link\n  document.vlinkColor=visited_link\n  document.alinkColor=active_link\n\
+  }\n</script>\n```\n\n这是普通文本。<br>\n<a href=\"Page2.htm\">我还没有访问过 Page 2。</a><br>\n\
+  <a href=\"Page3.htm\">我已经访问过了</a><br>\n<a href=\"Page4.htm\">点击这里</a><br>\n<a href=\"\
+  Page5.htm\">color('orange','green','blue')\">更改颜色</a>\n\n## 重复执行 (REPEATED PERFORMANCE)\n\
+  \n在每种语言中，你想要重复相同的命令。\n\n### 使用 While 循环 (Looping with While)\n\n假设你想创建一个 1 到 100\
+  \ 的数字表格，例如：\n\n```html\n<script>\nfunction square(){\n  // 1-100 的逻辑\n}\n</script>\n\
+  ```\n\n### 使用 For 循环 (Looping with For)\n\n假设你想创建一个 1 到 100 的数字表格，我们有下面的代码。示例：\n\
+  \n```html\n<script>\nfunction square(){\n  for (var i=1; i<=100; i++){\n    document.write(\"\
+  <tr>\");\n    document.write(\"<td>\" + i);\n    document.write(\"</td><td>\" +\
+  \ (i*i));\n    document.write(\"</td></tr>\");\n  }\n}\n</script>\n```\n\n## 数组\
+  \ (Array)\n\n`Array` 对象用于在单个变量中存储多个值。它们是具有相同数据类型的数据项的有序堆。JavaScript 数组从零开始。你可以通过引用数组名称和索引号访问并显示数组元素。\n\
+  \n示例：\n\n```html\n<script>\nvar country=new Array();\ncountry[0]=\"Nigeria\";\n\
+  country[1]=\"China\";\ncountry[2]=\"U.S\";\ncountry[3]=\"Iran\";\ncountry[4]=\"\
+  U.K\";\ncountry[5]=\"Russia\";\ncountry[6]=\"Egypt\";\ncountry[7]=\"Cuba\";\ncountry[8]=\"\
+  Japan\";\ndocument.write(country[7])\n</script>\n```\n\n**注意**：数组构造函数 `Array()`\
+  \ 中的字母 ‘A’ 必须大写。\n\n### 阶乘表 (Factorial Table)\n\n这用于获取阶乘值，以获取 1 到 18 (<19) 数字的阶乘，我们有下面的代码：\n\
+  \n```html\n<script>\nvar fact = 1;\nfor(i = 1; i <19; i++) {\n  fact = fact*i;\n\
+  \  document.write(i + \"! = \" + fact + \"<br>\");\n}\n</script>\n```\n\n## 文档格式化\
+  \ (DOCUMENT FORMATTING)\n\n### 创建新的格式化页面 (Create a New Formatted Page)\n\n```html\n\
+  <SCRIPT language=\"JavaScript\">\nfunction newPage() {\n  var userName = prompt(\"\
+  m:\", \"\")\n  document.write(\"<H1>欢迎 \" + userName + \"</H1><BR>\")\n  document.write(\"\
+  <H2>来到你的新主页。</H2>\")\n}\n</SCRIPT>\n```\n\n\n\n\n为了允许用户创建新页面，下面的链接调用了 `head` 部分中的\
+  \ `newPage` 函数：\n\n<A HREF=\"JavaScript:newPage()\">创建页面!</A>\n\n## 创建一个新的格式化窗口\n\
+  \n```html\n<SCRIPT language = \"JavaScript\">\nfunction openWin() {\n  window.open(\"\
+  index.html\", \"newWindow\",\n  \"height=100,width=100,\")\n}\n</SCRIPT>\n```\n\n\
+  为了允许用户创建新页面，下面的链接调用了 `head` 部分中的 `openWin` 函数：\n\n<A HREF=\"JavaScript:openWin()\"\
+  >新窗口!</A>\n\n## 事件对象 (EVENT OBJECT)\n\n### 文对象 (Document Object)\n\n使用 `getElementById()`\
+  \ 或 `getElementsByName()`。\n\n#### 使用 `getElementById()`：\n\n```html\n<script type=\"\
+  text/javascript\">\nfunction getElement() {\n  var x=document.getElementById(\"\
+  myHeader\")\n  alert(\"I am a \" + x.tagName + \" element\")\n}\n</script>\n```\n\
+  \n为了允许用户通过 ID 获取元素，下面的链接调用了 `head` 部分中的 `getElement` 函数：\n\n<h2 id=\"myHeader\"\
+  \ onclick=\"getElement()\">点击查看我是什么元素！</h2>\n\n#### 使用 `getElementsByName()`：\n\n\
+  ```html\n<script type=\"text/javascript\">\nfunction getElements() {\n  var x=document.getElementsByName(\"\
+  myInput\")\n  alert(x.length + \" elements!\")\n}\n</script>\n```\n\n为了允许用户通过 ID\
+  \ 获取元素，下面的链接调用了 `head` 部分中的 `getElementById` 函数：：\n\n<input name=\"myInput\" type=\"\
+  text\" size=\"10\"><br />\n<input name=\"myInput\" type=\"text\" size=\"10\"><br\
+  \ />\n<input name=\"myInput\" type=\"text\" size=\"10\"><br />\n<input name=\"myInput\"\
+  \ type=\"text\" size=\"10\"><br />\n<input name=\"myInput\" type=\"text\" size=\"\
+  10\"><br />\n<input name=\"myInput\" type=\"text\" size=\"10\"><br />\n\n### 事件对象：光标的坐标是多少？\n\
+  \n```html\n<script type=\"text/javascript\">\nfunction show_coords(event) {\n  x=event.clientX\n\
+  \  y=event.clientY\n  alert(\"X coords: \" + x + \", Y coords: \" + y)\n}\n</script>\n\
+  ```\n\n为了允许用户在页面的任何地方获取光标坐标，下面的链接调用了 `head` 部分中的 `show_coords` 函数：\n\n<body onmousedown=\"\
+  show_coords(event)\">\n<p>在文档中点击。弹出框将显示光标的 x 和 y 坐标。</p>\n</body>\n\n### 事件对象：按下按键的\
+  \ Unicode 是什么？\n\n```html\n<script type=\"text/javascript\">\nfunction whichButton(event)\
+  \ {\n  alert(event.keyCode)\n}\n</script>\n```\n\n使用上述代码，在键盘上按下一个按键。弹出框将显示按下按键的\
+  \ Unicode 值。\n\n<p>在键盘上按下一个按键。弹出框将显示按下按键的 Unicode。</p>\n\n### 事件对象：点击了哪个元素？\n\n\
+  ```html\n<script type=\"text/javascript\">\nfunction whichElement(e) {\n  var targ\n\
+  \  if (!e) var e = window.event\n  if (e.target) targ = e.target\n  else if (e.srcElement)\
+  \ targ = e.srcElement\n  if (targ.nodeType == 3) //  Safari bug\n  targ = targ.parentNode\n\
+  \  var tname\n  tname=targ.tagName\n  alert(\"You clicked on a \" + tname + \" element.\"\
+  )\n}\n</script>\n```\n\n点击的元素将通过下面的代码获取，该代码调用了 `head` 部分中的 `whichElement` 函数：\n\n\
+  <body onmousedown=\"whichElement(event)\">\n<p>在文档中某处点击。弹出框将显示你点击的元素的标签名称。</p>\n\
+  <h3>这是一个标题</h3>\n<p>这是一个段落</p>\n<img border=\"0\" src=\"ball16.gif\" width=\"29\"\
+  \ height=\"28\" alt=\"Ball\">\n</body>\n\n## 鼠标悬停 (IMAGE ROLLVER)\n\n当用户将鼠标悬停在原始图片上时，会更改图片。\n\
+  \n<A HREF=\"URL\"\nonMouseOver=\"document.hot.src='images/BUTTON 4.jpg'\"\nonMouseOut=\"\
+  document.hot.src='images/BUTTON 5.jpg'\">\n<IMG name=\"hot\" src=\"hot2.gir\"> </A>\n\
+  \n## JavaScript 变量 (JAV VARIABLE)\n\nJavaScript 变量是存储数据值的容器。这些变量必须像下面所示进行赋值：\n\n\
+  在这个示例中，`m`、`n` 和 `p` 是变量，`m` 和 `n` 将赋予某些值：要变量赋值，使用 `var` 变量，使用 `=` 赋值，设置值例如 `7`，并以分号结束。\n\
+  \n### 示例\n\n1. 声明变量：\n```javascript\nvar s = 9;\nvar w = 39;\nvar person = \"Steven\
+  \ Bright\";\nvar price = $2.99;\nvar pi = 3.14;\n```\n\n2. `var m = 9;`\n```javascript\n\
+  var n = 23 ;\nvar p = m + n;\n```\n即 `p = 9+23 = 32`\n\n3. `var m = 12;`\n```javascript\n\
+  var n = 40 ;\nvar p = m - n;\n```\n即 `p = 12-40 = -28`\n\n注意：`m` 存储值 `9`，`n` 存储值\
+  \ `23`，`p` 存储值 `32`。\n\n#### 构建变量名称的规则：\n\n构建变量名（唯一标识符）的通用规则如下，在命名 JavaScript 变量时请务必注意这些点：\n\
+  \n- 命名可以包含字母、数字、下划线和美元符号。\n- 命名必须以字母开头。\n- 命名也可以以 `$` 开头。\n- 区分大小写（`y` 和 `Y` 是不同的变量）。\n\
+  - 不能使用保留字（如 JavaScript 关键字）作为名称。\n\n# JavaScript 运算符 (JAVASCRIPT OPERATORS)\n\n\
+  ## JavaScript 算术运算符\n\n这些运算符用于对数字（无论是字面量还是变量）进行算术。以下是各种 JavaScript 算术运算符及其功能：\n\n\
+  | 运算符 |  |\n| :--- | :--- |\n| `+` | 加法 |\n| `-` | 减法 |\n| `*` | 乘法 |\n| `/` | 除法\
+  \ |\n| `%` | 取模 |\n| `++` | 加增 |\n| `--` | 递减 |\n\n## JavaScript 赋值运算符\n\n这些运算符将值赋值给\
+  \ JavaScript 变量。\n\n| 运算符及其用途 |\n| :--- | :--- |\n| `=` | `x = y` 等于 `x = y` |\n\
+  | `+=` | `x += y` 等于 `x = x + y` |\n| `-=` | `x -= y` 等于 `x = x - y` |\n| `*=` |\
+  \ `x *= y` 等于 `x = x * y` |\n| `/=` | `x /= y` 等于 `x = x / y` |\n| `%=` | `x %=\
+  \ y` |\n\n## JavaScript 字符串运算符\n\n这涉及使用 `+` 运算符（拼接）字符串。\n\n示例：\n```javascript\n\
+  txt1 = \"The room\" + \"is hot\";\n```\n`txt1` 的结果将是 is hot\n\n## 添加字符串和数字\n\n记住，两个两个数字将返回和，但将一个数字和一个字符串将返回一个字符串：\n\
+  \n示例：\n```javascript\nw = \"steven\" + 2006;\n```\n`w` 的结果将是 steven2006\n\n## JavaScript\
+  \ 布尔值 (JAVASCRIPT BOOLEANS)\n\nJavaScript 布尔表示两个值之一：即 `true` 或 `false`。这意味着 JavaScript\
+  \ 布尔值是真或假。\n\n示例：\n- `Boolean(57>34)` // 返回 true\n- `Boolean(45 > 78)` // 返回 false\n\
+  \n## 比较和条件\n\n在这种情况下，所有具有“真实”值的都是真，而所有没有“真实”值的都是假。\n\n示例：\n1. `var y = 0; Boolean(y);`\
+  \ // 返回 false\n2. `var y = null; Boolean(y);` // 返回 false\n3. `var y = false; Boolean(y);`\
+  \ // 返回 false\n\n# JavaScript 数学对象 (JAVASCRIPT MATH OBJECT)\n\nJavaScript Math 对象允许你对数字执行各种数学任务。\n\
+  \n### Math.round()\n这会将数字舍入到最接近的整数：\n\n示例：\n```javascript\nMath.round(467.9); //\
+  \ 返回 468\n```\n\n### Math.min()\n`Math.min()` 用于找到一组参数中的最小值：\n\n示例：\n```javascript\n\
+  Math.min(7, 180, 60, 32, 0, -250); // 返回 -250\n```\n\n### Math.max()\n`Math.max()`\
+  \ 用于找到一组参数中的最大值：\n\n示例：\n```javascript\nMath.max(7, 180, 60, 32, 0, -250); // 返回\
+  \ 180\n```\n\n### Math.random()\n这返回一个 0（包含）到 1（不包含）之间的随机数：\n\n示例：\n```javascript\n\
+  Math.random(); // 返回一个随机数\n```\n\n### Math.ceil()\n这会将数字向上舍入到最近的整数：\n\n示例：\n```javascript\n\
+  Math.ceil(37.3); // 返回 37\n```\n\n### Math.floor()\n这会将数字向下舍入到最近的整数：\n\n示例：\n```javascript\n\
+  Math.floor(35.9); // 返回 35\n```\n\n# JavaScript 在网页之外的使用 (JAVASCRIPT USES OUTSIDE\
+  \ WEB PAGES)\n\n除了 JavaScript 用于 浏览器和服务器外，JavaScript 解释器还嵌入在许多其他工具中，每个这些应用程序都提供了自己的对象模型以访问主机环境。这些工具包括：\n\
+  \n## 嵌入脚本语言\n\n以下是使用 JavaScript 实现的：\n\n- Opera 扩展\n- Google Chrome 扩展\n- Apple\
+  \ 的 Dashboard 小部件\n- Microsoft 的小部件\n- Yahoo! 小部件\n- OpenOffice.org，一个办公应用程序套件，以及其流行的分支\
+  \ LibreOffice。\n\n## 脚本引擎\n\n以下脚本语言也基于 JavaScript：\n\n- Microsoft 的 Active Scripting\
+  \ 技术支持 `JScript` 作为脚本语言。\n\n\n\n\n\nQt C++ 工具包包含一个用于解释 JavaScript 的 QtScript 模块，类似于\
+  \ Java 的 `javax.script` 包。\n\nJava 编程语言在第 6 版本中引入了 `javax.script` 包，其中包含一个基于 Mozilla\
+  \ Rhino 的 JavaScript 实现。\n\n## 应用平台\n\n以下应用平台也基于 JavaScript：\n\n- `Adobe Integrated\
+  \ Runtime` 是一个 JavaScript 运行时，允许开发者创建桌面应用程序。\n- `Mozilla platform` 是 Firefox、Thunderbird\
+  \ 以及其他 Web 浏览器的底层平台，使用 JavaScript 实现其各种产品的图形用户界面 (GUI)。\n- `GNOME Shell` 是 `GNOME\
+  \ 3` 桌面环境的外壳，也将 JavaScript 设为默认编程语言。\n\n## 结论\n\nJavaScript 作为一种脚本语言，主要用于 Web、Web\
+  \ 应用程序以及数学基础项目的开发，但它在嵌入式脚本语言、脚本引擎以及 `Mozilla platform` 和 `ActionScript` 等应用平台中也有巨大的用途。\n\
+  \n感谢阅读我的书。如果您喜欢它，能否请抽空时间在您最喜欢的零售商处给我留个评价？也请告诉您的朋友去他们最喜欢的零售商处购买。\n\n谢谢！\n\nSteven\
+  \ Bright\n作者\n\n## 关于作者\n\nSteven Bright 是一位技术专家、图形设计师、Web 开发者和博客作者。他还是以下书籍的作者：\n\
+  \n- `CorelDraw How: The Fundamental of CorelDRAW`\n- `Tools and Function Lists:\
+  \ Engineering Tools Manual`\n- `Microsoft Word Fundamental: A Step by Step Guide`\n\
+  - `Web Design and Development Technology: Website How`\n- `The Best of Microsoft\
+  \ PowerPoint: Brand Exposure Techniques`\n- `Hacking Through Microsoft Excel Skills:\
+  \ A Step by Step Approach`\n- `The wave of Change: Adams Aliyu Oshiomhole: Why he\
+  \ is the man we need to Create the Atmosphere of Change we Desire to Build a Successful,\
+  \ Great and Powerful Nation`\n\n## 与 Steven Bright 联系\n\nAmazon 作者页面：[`amazon.com/author/stevenbright`](http://amazon.com/author/stevenbright)\n\
+  \nFacebook: [`www.facebook.com/steven.bright.9022`](http://www.facebook.com/steven.bright.9022)\n\
+  \n博客：\n- [`ebookstrati.blogspot.com`](http://ebookstrati.blogspot.com)\n- [`computerskillsworld.blogspot.com`](http://computerskillsworld.blogspot.com)\n\
+  - [`hackingthroughsuccess.blogspot.com`](http://hackingthroughsuccess.blogspot.com)\n\
+  \n"

@@ -1,0 +1,268 @@
+name: Modern JavaScript Tools & Skills
+name_cn: 现代 JavaScript 工具与技能
+slug: modern-javascript-tools-skills
+toc:
+- - '#'
+  - 现代 JavaScript 工具与技能
+- - '#'
+  - 前言
+- - '##'
+  - 谁应该读这本书？
+- - '##'
+  - 使用的规范
+- - '###'
+  - 代码示例
+- - '####'
+  - 提示、注释和警告
+- - '####'
+  - 嘿，你！
+- - '####'
+  - '... (省略)'
+- - '#'
+  - 第 1 章：Babel 入门指南
+- - '###'
+  - 作者 James Kolce
+- - '##'
+  - 入门
+- - '##'
+  - 运行 Babel
+- - '##'
+  - Babel 生态系统：概述
+- - '###'
+  - Babel Polyfill（垫片）
+- - '###'
+  - 高级用法
+- - '##'
+  - 示例代码
+- - '##'
+  - 安装
+- - '###'
+  - '`dist/index.html`'
+- - '###'
+  - '`src/index.js`'
+- - '###'
+  - '`webpack.config.js`'
+- - '###'
+  - '`package.json`'
+- - '##'
+  - 模块
+- - '###'
+  - '`src/index.js`'
+- - '###'
+  - '`src/people.js`'
+- - '###'
+  - 导入
+- - '###'
+  - 加载器 (Loaders)
+- - '###'
+  - '`webpack.config.js`'
+- - '###'
+  - '`.babelrc`'
+- - '###'
+  - Sass
+- - '###'
+  - '`webpack.config.js`'
+- - '##'
+  - CSS in JS
+- - '###'
+  - 为什么要这样做？
+- - '##'
+  - Images
+- - '###'
+  - 为什么要这样做？
+- - '##'
+  - 插件
+- - '###'
+  - development
+- - '###'
+  - production
+- - '####'
+  - Production
+- - '####'
+  - webpack.dev.js
+- - '####'
+  - webpack.prod.js
+- - '####'
+  - package.json
+- - '####'
+  - Split CSS
+- - '####'
+  - webpack.common.js
+- - '##'
+  - 热模块替换 (Hot Module Replacement)
+- - '###'
+  - CSS 替换
+- - '##'
+  - HTTP/2
+- - '##'
+  - 轮到你了
+- - '#'
+  - 第 2 章：Gulp.js 简介
+- - '###'
+  - 作者：Craig Buckler
+- - '##'
+  - 听起来非常复杂！
+- - '##'
+  - 任务运行器：选项
+- - '##'
+  - Gulp 4 怎么样？
+- - '##'
+  - 第一步：安装 Node.js
+- - '##'
+  - Windows 用户
+- - '##'
+  - 针对 Linux 用户
+- - '##'
+  - 步骤 2：全局安装 Gulp
+- - '##'
+  - 步骤 3：配置你的项目
+- - '###'
+  - 针对 Node.js 项目
+- - '###'
+  - 针对 Git 用户
+- - '###'
+  - 在 Unix 上跟随操作
+- - '##'
+  - 步骤 4：本地安装 Gulp
+- - '###'
+  - 备用部署方案
+- - '##'
+  - 步骤 4：创建 Gulp 配置文件
+- - '###'
+  - ES6
+- - '##'
+  - 步骤 5：创建 Gulp 任务
+- - '###'
+  - 图像任务
+- - '###'
+  - HTML 任务
+- - '###'
+  - JavaScript 任务
+- - '##'
+  - 第 3 章：大获成功！
+- - '#'
+  - 第 4 章：10 种编译为 JavaScript 的语言
+- - '###'
+  - 作者 James Kolce
+- - '##'
+  - Dart
+- - '##'
+  - TypeScript
+- - '##'
+  - Elm
+- - '##'
+  - PureScript
+- - '##'
+  - CoffeeScript
+- - '##'
+  - 'Assignment:'
+- - '##'
+  - 'Conditions:'
+- - '##'
+  - 'Functions:'
+- - '##'
+  - 'Arrays:'
+- - '##'
+  - 'Objects:'
+- - '##'
+  - 'Splats:'
+- - '##'
+  - 'Existence:'
+- - '##'
+  - 'Array comprehensions:'
+- - '##'
+  - ClojureScript
+- - '###'
+  - Scala.js
+- - '##'
+  - Reason
+- - '##'
+  - Haxe
+- - '##'
+  - Nim
+- - '##'
+  - 反转字符串
+- - '##'
+  - 使用模板
+- - '##'
+  - 结论
+- - '#'
+  - 第 5 章：JavaScript 开发者必备的 10 个 VS Code 扩展
+- - '##'
+  - 按分类划分 VS Code Extensions
+- - '##'
+  - 代码片段扩展
+- - '##'
+  - 语法扩展
+- - '##'
+  - Linter 扩展
+- - '##'
+  - Node 扩展
+- - '##'
+  - 格式化扩展
+- - '##'
+  - 浏览器扩展
+- - '##'
+  - 框架扩展
+- - '##'
+  - 测试扩展
+- - '##'
+  - 优秀扩展
+- - '##'
+  - 扩展包
+- - '##'
+  - 总结
+- - '#'
+  - 第 6 章：使用 VS Code 和 Chrome Debugger 调试 JavaScript 项目
+- - '###'
+  - 作者：Michael Wanyoike
+- - '##'
+  - 先决条件
+- - '##'
+  - 在 VS Code 中调试 JavaScript
+- - '###'
+  - 反斜杠
+- - '###'
+  - 使用 Mocha 进行调试测试
+- - '##'
+  - 全局安装 mocha
+- - '##'
+  - 运行 mocha 测试
+- - '##'
+  - 使用 Chrome 调试器 调试 JavaScript
+- - '##'
+  - 调试客户端路由
+- - '##'
+  - 总结
+- - '#'
+  - 第 7 章：介绍 Axios，一个流行的基于 Promise 的 HTTP 客户端
+- - '###'
+  - 作者：Nilson Jacques
+- - '##'
+  - Axios vs Fetch
+- - '####'
+  - Node 的 Fetch API
+- - '##'
+  - 安装
+- - '###'
+  - 浏览器支持
+- - '##'
+  - 发送请求
+- - '###'
+  - 请求选项
+- - '##'
+  - 便捷方法
+- - '##'
+  - 接收响应
+- - '###'
+  - 响应对象
+- - '###'
+  - 错误对象
+- - '##'
+  - 转换器与拦截器
+- - '###'
+  - 转换器
+- - '###'
+  - 拦截器
+- - '##'
+  - 第三插件

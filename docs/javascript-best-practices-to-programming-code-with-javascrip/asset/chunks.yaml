@@ -1,0 +1,2253 @@
+- fmt: '
+
+    ![](Images/cover00047.jpeg)
+
+
+    # JavaScript: Best Practices to Programming Code with JavaScript
+
+    Charlie Masterson
+
+
+    ## Table of Contents
+
+    - [Introduction](#part0000.xhtml__Introduction)
+
+    - [Chapter 1: Common JavaScript Mistakes](#part0000.xhtml_Ch1)
+
+    - [Chapter 2: General Recommendations](#part0000.xhtml_Ch2)
+
+    - [Chapter 3: Best Practices for Comments and Logging](#part0000.xhtml_Ch3)
+
+    - [Chapter 4: Tips for Better Performance](#part0000.xhtml_Ch4)
+
+    - [Chapter 5: Best JavaScript Tips for Beginners](#part0000.xhtml_Ch5)
+
+    - [Conclusion](#part0000.xhtml_Conclusion)
+
+
+    © Copyright 2016 by Charlie Masterson - All rights reserved.
+
+
+    The following eBook is reproduced below with the goal of providing information
+    that is as accurate and reliable as possible. Regardless, purchasing this eBook
+    can be seen as consent to the fact that both the publisher and the author of this
+    book are in no way experts on the topics discussed within and that any recommendations
+    or suggestions that are made herein are for entertainment purposes only. Professionals
+    should be consulted as needed prior to undertaking any of the action endorsed
+    herein.
+
+
+    This declaration is deemed fair and valid by both the American Bar Association
+    and the Committee of Publishers Association and is legally binding throughout
+    the United States.
+
+
+    Furthermore, the transmission, duplication or reproduction of any of the following
+    work including specific information will be considered an illegal act irrespective
+    of if it is done electronically or in print. This extends to creating a secondary
+    or tertiary copy of the work or a recorded copy and is only allowed with express
+    written consent from the Publisher. All additional right reserved.
+
+
+    The information in the following pages is broadly considered to be a truthful
+    and accurate account of facts and as such any inattention, use or misuse of the
+    information in question by the reader will render any resulting actions solely
+    under their purview. There are no scenarios in which the publisher or the original
+    author of this work can be in any fashion deemed liable for any hardship or damages
+    that may befall them after undertaking information described herein.
+
+
+    Additionally, the information in the following pages is intended only for informational
+    purposes and should thus be thought of as universal. As befitting its nature,
+    it is presented without assurance regarding its prolonged validity or interim
+    quality. Trademarks that are mentioned are done without written consent and can
+    in no way be considered an endorsement from the trademark holder.
+
+
+    ### Introduction
+
+    Welcome to our book, "JavaScript: Best Practices to Programming Code with JavaScript”.
+    Whether you are a beginner with coding or have been doing it for a while, you
+    know how hard JavaScript can be! Even the simplest mistakes can mess up your entire
+    code! We are here to tell you that it happens with everyone! You are not alone
+    in this situation. It is how you handle these mistakes that could differentiate
+    you from the other coders.
+
+
+    Do you just give up because of one mistake? Of course not! Life is all about making
+    mistakes, and learning from them. Within these chapters, we will be teaching you
+    some basic practices to enhance your skills within `JavaScript`. We will be giving
+    you the best methods, processes, and techniques that will help lead to a better
+    JavaScript JavaScript programming code. As you learn, you will be able to apply
+    your new skills to everyday life.
+
+
+    Our goal is to have our readers proficient in `JavaScript` code, so they can expand
+    their knowledge by reading this book. If you are at this point, we expect that
+    you have some previous knowledge of `JavaScript`, even if it is just the basics.
+    Sometimes, `JavaScript` books can be frustrating. The code is not always an easy
+    topic to explain clearly. We promise to make this coding process as simple as
+    possible.
+
+
+    For our first chapter, we will be going into depth on some of the common `JavaScript`
+    mistakes every coder has done. You may find that you aren''t the only one making
+    some of these errors. In fact, some seem silly to be messing up! Don''t worry;
+    sometimes it is the smallest mistakes that are the easiest to fix! Perhaps you
+    are skipping attention to detail such as mismatching quotes or even changing your
+    variable names. Were you aware that properties and variable names were case sensitive?
+    If not, we have got you covered!
+
+
+    After the common mistakes, we will go over some general recommendations to help
+    improve your code. For example, we will be going over how to define your local
+    `vars`, how to avoid global variables and more! Once we have discussed the general
+    recommendations, we move onto tips to improve your comments, logging, and overall
+    performance. As we stated before, our primary goal is to develop your skills as
+    a coder.
+
+
+    As you read, please feel free to stop and practice the codes we provide. After
+    all, practice makes perfect! Eventually, coding will become more natural for you
+    and you won''t have to stop and think about the code as much. Of course, errors
+    are bound to happen, but as you learn you may find yourself making less of them.
+    We hope that you enjoy the read and will learn a thing or two while you''re at
+    it!
+
+
+    ## Chapter 1: Common JavaScript Mistakes
+
+    Yes, you probably know all of the codes to follow. Just remember that coding in
+    `JavaScript` can trip you up, no matter how long you''ve been working with code.
+    The following examples are some of the common traps people fall into. When you
+    are working, try to keep these models in your mind. This way, when you are coding
+    or debugging, you will catch yourself sooner!
+
+
+    ### Mismatching Quotes, Curly Brace, and Parenthesis
+
+    If you do this a lot, there is an easy way to avoid the mistake. All you will
+    need to do is to code your opening and closing elements at the same time! After
+    you do this, you can enter your element that you want to add to your code. Here
+    is an example:
+
+
+    ```javascript
+
+    var myString=" ";
+
+
+    function myFunction(){
+
+
+    if(){
+
+
+    }
+
+    }
+
+    ```
+
+
+    - First line, you want to code the quotes before you even enter your string value.
+    This way, you don’t forget them.
+
+    - In your second line, close every bracket as soon as you open it.
+
+    - Within your code, be sure you double check and count the left and right parenthesis.
+    You will want to double check and make sure that are equal
+
+    - Finally, if you open a parenthesis, be certain you close it!
+
+
+    ### Case Sensitive
+
+    In case you aren’t already aware, functions and variables are both case sensitive.
+    While you are working, it can be VERY easy to make this silent error. When you
+    are picking names, we suggest you stick with it. As a small tip, just remember
+    that the CSS properties within JavaScript are going to be camelCase. Here’s a
+    quick example:
+
+
+    ```javascript
+
+    getElementById("theId") != getElementByID("theId");
+
+    ```
+
+
+    - Did you catch the mistake? Instead of `ID` it should have been `Id`
+
+
+    ```javascript
+
+    getElementById("theId") != getElementById("theID");
+
+    ```
+
+
+    - What about this time? You got it! `Id` will not equal `ID.`. You can see how
+    this is a common mistake, especially if you are trying to move quickly!
+
+
+    ### Line Breaks and Extra Commas
+
+    When you are coding, you will want to stay away from hard-line breaks. When you
+    use line breaks, they will be interpreted as a line-ending semicolon. This can
+    also happen in a string. When you include a hard line break in your quotes, you
+    are going to get an error. It will most likely be the ‘unterminated string’ parse
+    error. Here is an example:
+
+
+    - Unterinated String Error:
+
+    ```javascript
+
+    var bad= <ul id="myId">
+
+    <li>writing the text</li>
+
+    <li>even more text </li>
+
+    </ul>;
+
+    ```
+
+
+    - Correct Line Break
+
+    ```javascript
+
+    var good= ''<ul id="myId">'' +
+
+    ''<li> writing the text</li>'' +
+
+    ''<li> even more text </li>'' +
+
+    ''</ul>'';
+
+    ```
+
+
+    - It should be noted that this semi-colon rule will not hold true with control
+    structures. In control structures, a line break AFTER your closing parenthesis
+    is not given by a semi-colon.
+
+    '
+  raw: "\n\n![](Images/cover00047.jpeg)\n\nJavaScript:\n\nBest Practices\n\nto Programming\
+    \ Code\n\nwith JavaScript\n\nCharlie Masterson\n\nTable of Contents\n\n[Introduction](#part0000.xhtml__Introduction)\n\
+    \n[Chapter 1: Common JavaScript Mistakes](#part0000.xhtml_Ch1)\n\n[Chapter 2:\
+    \ General Recommendations](#part0000.xhtml_Ch2)\n\n[Chapter 3: Best Practices\
+    \ for Comments and Logging](#part0000.xhtml_Ch3)\n\n[Chapter 4: Tips for Better\
+    \ Performance](#part0000.xhtml_Ch4)\n\n[Chapter 5: Best JavaScript Tips for Beginners](#part0000.xhtml_Ch5)\n\
+    \n[Conclusion](#part0000.xhtml_Conclusion)\n\n© Copyright 2016 by Charlie Masterson\
+    \ - All rights reserved.\n\nThe following eBook is reproduced below with the goal\
+    \ of providing information that is as accurate and reliable as possible. Regardless,\
+    \ purchasing this eBook can be seen as consent to the fact that both the publisher\
+    \ and the author of this book are in no way experts on the topics discussed within\
+    \ and that any recommendations or suggestions that are made herein are for entertainment\
+    \ purposes only. Professionals should be consulted as needed prior to undertaking\
+    \ any of the action endorsed herein.\n\nThis declaration is deemed fair and valid\
+    \ by both the American Bar Association and the Committee of Publishers Association\
+    \ and is legally binding throughout the United States.\n\nFurthermore, the transmission,\
+    \ duplication or reproduction of any of the following work including specific\
+    \ information will be considered an illegal act irrespective of if it is done\
+    \ electronically or in print. This extends to creating a secondary or tertiary\
+    \ copy of the work or a recorded copy and is only allowed with express written\
+    \ consent from the Publisher. All additional right reserved.\n\nThe information\
+    \ in the following pages is broadly considered to be a truthful and accurate account\
+    \ of facts and as such any inattention, use or misuse of the information in question\
+    \ by the reader will render any resulting actions solely under their purview.\
+    \ There are no scenarios in which the publisher or the original author of this\
+    \ work can be in any fashion deemed liable for any hardship or damages that may\
+    \ befall them after undertaking information described herein.\n\nAdditionally,\
+    \ the information in the following pages is intended only for informational purposes\
+    \ and should thus be thought of as universal. As befitting its nature, it is presented\
+    \ without assurance regarding its prolonged validity or interim quality. Trademarks\
+    \ that are mentioned are done without written consent and can in no way be considered\
+    \ an endorsement from the trademark holder.\n\n### Introduction\n\nWelcome to\
+    \ our book, \"JavaScript: Best Practices to Programming Code with JavaScript”.\
+    \ Whether you are a beginner with coding or have been doing it for a while, you\
+    \ know how hard JavaScript can be! Even the simplest mistakes can mess up your\
+    \ entire code! We are here to tell you that it happens with everyone! You are\
+    \ not alone in this situation. It is how you handle these mistakes that could\
+    \ differentiate you from the other coders.\n\nDo you just give up because of one\
+    \ mistake? Of course not! Life is all about making mistakes, and learning from\
+    \ them. Within these chapters, we will be teaching you some basic practices to\
+    \ enhance your skills within JavaScript. We will be giving you the best methods,\
+    \ processes, and techniques that will help lead to a better JavaScript programming\
+    \ code. As you learn, you will be able to apply your new skills to everyday life.\n\
+    \nOur goal is to have our readers proficient in JavaScript code, so they can expand\
+    \ their knowledge by reading this book. If you are at this point, we expect that\
+    \ you have some previous knowledge of JavaScript, even if it is just the basics.\
+    \ Sometimes, JavaScript books can be frustrating. The code is not always an easy\
+    \ topic to explain clearly. We promise to make this coding process as simple as\
+    \ possible.\n\nFor our first chapter, we will be going into depth on some of the\
+    \ common JavaScript mistakes every coder has done. You may find that you aren't\
+    \ the only one making some of these errors. In fact, some seem silly to be messing\
+    \ up! Don't worry; sometimes it is the smallest mistakes that are the easiest\
+    \ to fix! Perhaps you are skipping attention to detail such as mismatching quotes\
+    \ or even changing your variable names. Were you aware that properties and variable\
+    \ names were case sensitive? If not, we have got you covered!\n\nAfter the common\
+    \ mistakes, we will go over some general recommendations to help improve your\
+    \ code. For example, we will be going over how to define your local vars, how\
+    \ to avoid global variables and more! Once we have discussed the general recommendations,\
+    \ we move onto tips to improve your comments, logging, and overall performance.\
+    \ As we stated before, our primary goal is to develop your skills as a coder.\n\
+    \nAs you read, please feel free to stop and practice the codes we provide. After\
+    \ all, practice makes perfect! Eventually, coding will become more natural for\
+    \ you and you won't have to stop and think about the code as much. Of course,\
+    \ errors are bound to happen, but as you learn you may find yourself making less\
+    \ of them. We hope that you enjoy the read and will learn a thing or two while\
+    \ you're at it!\n\nChapter 1:\n\nCommon JavaScript Mistakes\n\nYes, you probably\
+    \ know all of the codes to follow. Just remember that coding in JavaScript can\
+    \ trip you up, no matter how long you've been working with code. The following\
+    \ examples are some of the common traps people fall into. When you are working,\
+    \ try to keep these models in your mind. This way, when you are coding or debugging,\
+    \ you will catch yourself sooner!\n\nMismatching Quotes, Curly Brace, and Parenthesis\n\
+    \nIf you do this a lot, there is an easy way to avoid the mistake. All you will\
+    \ need to do is to code your opening and closing elements at the same time! After\
+    \ you do this, you can enter your element that you want to add to your code. Here\
+    \ is an example:\n\nCODE\n\nvar myString=\" \";\n\nfunction myFunction(){\n\n\
+    if(){\n\n}\n\n}\n\n*   First line, you want to code the quotes before you even\
+    \ enter your string value. This way, you don’t forget them.\n\n*   In your second\
+    \ line, close every bracket as soon as you open it.\n\n*   Within your code, be\
+    \ sure you double check and count the left and right parenthesis within your code.\
+    \ You will want to double check and make sure that they are equal\n\n*   Finally,\
+    \ if you open a parenthesis, be certain you close it!\n\nCase Sensitive\n\nIn\
+    \ case you aren’t already aware, functions and variables are both case sensitive.\
+    \ While you are working, it can be VERY easy to make this silent error. When you\
+    \ are picking names, we suggest you stick with it. As a small tip, just remember\
+    \ that the CSS properties within JavaScript are going to be camelCase. Here’s\
+    \ a quick example:\n\ngetElementById(\"theId\") != getElementByID(\"theId\");\n\
+    \n*   Did you catch the mistake? Instead of \"ID\" it should have been \"Id\"\n\
+    \ngetElementById(\"theId\") != getElementById(\"theID\");\n\n*   What about this\
+    \ time? You got it! \"Id\" will not equal \"ID.\" You can see how this is a common\
+    \ mistake, especially if you are trying to move quickly!\n\nLine Breaks and Extra\
+    \ Commas\n\nWhen you are coding, you will want to stay away from hard-line breaks.\
+    \ When you use line breaks, they will be interpreted as a line-ending semicolon.\
+    \ This can also happen in a string. When you include a hard line break in your\
+    \ quotes, you are going to get an error.  It will most likely be the ‘unterminated\
+    \ string’ parse error. Here is an example:\n\n*   Unterminated String Error:\n\
+    \n    var bad= <ul id=\"myId\">\n\n    <li>writing the text</li>\n\n    <li>even\
+    \ more text </li>\n\n    </ul>;\n\n*   Correct Line Break\n\n    var good= '<ul\
+    \ id=\"myId\">' +\n\n    '<li> writing the text </li>' +\n\n    '<li> even more\
+    \ text </li>' +\n\n    '</ul>';\n\n*   It should be noted that this semi-colon\
+    \ rule will not hold true with control structures. In control structures, a line\
+    \ break AFTER your closing parenthesis is not given by a semi-colon."
+  toc: []
+  trans: '
+
+
+    ![](img/cover00047.jpeg)
+
+
+    # JavaScript：JavaScript 编程最佳实践
+
+    Charlie Masterson
+
+
+    ## 目录
+
+    - 引言
+
+    - 第一章：常见的 JavaScript 错误
+
+    - 第 2 章：通用建议
+
+    - 第 3 章：注释与日志的最佳实践
+
+    - 第 4 章：提升性能的技巧
+
+    - 第 5 章：初学者的 JavaScript 技巧
+
+    - 结论
+
+
+    © 版权 2016 Charlie Masterson - 保留所有权利。
+
+
+    下文电子书旨在提供尽可能准确和可靠的信息。尽管如此，购买本电子书被视为同意：此书的出版者和作者对书中讨论的话题均非专家，且书中提供的任何建议或提示仅供娱乐目的。在采取书中支持的任何行动之前，应根据需要咨询专业人士。
+
+
+    此声明被美国律师协会和出版者协会委员会认为是公平且有效的，并在整个美国范围内具有法律约束力。
+
+
+    此外，无论以电子形式还是打印形式传输、复制或复制以下任何作品的内容（包括特定信息），均被视为非法行为。这包括创建作品的二次或三次拷贝或录副本，仅在获得出版者明确书面许可的情况下才允许。保留所有其他权利。
+
+
+    后续页面中的信息被广泛认为是对事实的真实准确描述，因此读者对相关信息的任何疏忽、使用或误用，其产生的后果将完全由其个人承担。在任何情况下，出版者或本作品的原作者都不会对读者在采取书中描述的信息后可能遭受的任何困难或损害承担责任。
+
+
+    此外，后续页面中的信息仅供参考，因此应被视为通用的。根据其性质，其呈现时不对其长期有效性或中间质量提供保证。文中提到的商标是在未获得书面许可的情况下使用的，不能视为商标持有者的背书。
+
+
+    ### 引言
+
+    欢迎阅读我们的书籍《JavaScript：JavaScript 编程最佳实践》。无论你是编程初学者还是已经从事了一段时间，你都知道 JavaScript 是有多难用！即使是最简单的错误也会搞乱你的整个代码！我们在这里想告诉你，这种情况发生在每个人身上！在那种情况下，你并不孤单。你如何处理这些错误决定了你与其他程序员的颖开来。
+
+
+    你会因为一个错误就放弃吗？当然不！生活的意义就在于犯错并从从中学习。在这些章节中，我们将教你一些基础实践，以增强你在 `JavaScript` 方面的技能。我们将为你提供最好的方法、流程和技术，帮助你编写出更好的
+    JavaScript JavaScript 编程代码。随着你的学习，你可以将你的新技能应用到日常生活中。
+
+
+    我们的目标是让读者精通 `JavaScript` 代码，以便他们通过阅读这本书来扩展知识。如果你读到了这一步，我们预计你已经具备一些 `JavaScript`
+    的基础知识，即使只是基础。有时，`JavaScript` 教程可能会令人沮丧。代码并不总是容易解释清楚的话题。我们承诺让这个编码过程尽可能简单。
+
+
+    在第一章中，我们将深入探讨每个程序员都犯过的某些常见 `JavaScript` 错误。你可能会发现自己并不是唯一一个犯这些错误的人。事实上，有些错误看起来非常愚蠢！别担心；有时往往是最微小的错误最容易修复！也许你忽略了细节，例如引号不匹配，甚至更改了你的变量名。你意识到属性和变量名是区分大小写的吗？如果不知道，我们已经为你涵盖了！
+
+
+    在介绍常见错误之后，我们将介绍一些通用建议以帮助改进你的代码。例如，我们将介绍如何定义你的局部 `vars`、如何避免全局变量等！一旦我们讨论了通用建议，我们将转向改进你的注释、日志和整体性能的技巧。正如我们之前提到的，我们的首要目标是培养你作为程序员的技能。
+
+
+    在阅读时，请随时停下来练习我们提供的代码。毕竟，熟能生胜！最终，编码将对你来说变得更加自然，你不需要频繁停下来思考代码了。当然，错误是不可避免的，但随着你的学习，你可能会发现自己犯的错误越来越少。我们希望你阅读愉快，并在过程中学到一些东西！
+
+
+    ## 第一章：常见的 JavaScript 错误
+
+    是的，你可能知道所有要遵循的代码。只需记住，在 `JavaScript` 中编码可能会让你绊倒，无论你编写代码的时间有多长。以下示例是人们掉入的一些常见陷阱。当你工作时，尝试在脑海中记住这些模型。这样，当你编写代码或调试时，就能更早地发现问题！
+
+
+    ### 引号、大括号和圆括号不匹配
+
+    如果你经常这样做，有一个简单的方法可以避免这种错误。你只需要同时编写你的起始和结束元素即可！完成后，你就可以输入你想添加到代码中的元素了。这里有一个例子：
+
+
+    ```javascript
+
+    var myString=" ";
+
+
+    function myFunction(){
+
+
+    if(){
+
+
+    }
+
+    }
+
+    ```
+
+
+    - 第一行，你要在输入字符串值之前编写引号。这样你就不会忘记它们了。
+
+    - 在你的第二行，一旦打开括号就关闭它。
+
+    - 在你的代码中，确保你双检查并计算左右圆括号。
+
+    - 最后，如果你打开了圆括号，务必关闭它！
+
+
+    ### 大写敏感
+
+    万一你不知道，函数和变量都是区分大小写的。在你工作时，非常容易犯这种静默错误。当你命名时，我们建议你保持一致。作为一个小技巧，只需记住 JavaScript
+    内部 CSS 属性将使用驼峰命名法（camelCase）。这是一个简单的示例：
+
+
+    ```javascript
+
+    getElementById("theId") != getElementByID("theId");
+
+    ```
+
+
+    - 你发现错误了吗？本应该是 `Id` 而不是 `ID`
+
+
+    ```javascript
+
+    getElementById("theId") != getElementById("theID");
+
+    ```
+
+
+    - 这一次呢？你抓到了！`Id` 不等于 `ID`。你可以看到这是一个常见的错误，尤其是当你试图快速操作时！
+
+
+    ### 换行符和额外的逗号
+
+    当你编写代码时，你将避开硬换行。当你使用换行符时，它们会被解释为行尾的分号。这也发生在字符串中。当你在引号中包含硬换行时，你将得到错误。它最可能是“未结束的字符串”解析错误。这里有一个例子：
+
+
+    - 未结束的字符串错误：
+
+    ```javascript
+
+    var bad= <ul id="myId">
+
+    <li>writing the text</li>
+
+    <li>even more text </li>
+
+    </ul>;
+
+    ```
+
+
+    - 正确的换行
+
+    ```javascript
+
+    var good= ''<ul id="myId">'' +
+
+    ''<li> writing the text</li>'' +
+
+    ''<li> even more text </li>'' +
+
+    ''</ul>'';
+
+    ```
+
+
+    - 需要注意的是，这种分号规则在控制结构中并不适用。在控制结构中，闭合圆括号之后的换行符并不是由分号提供的。
+
+
+    '
+- fmt: '
+
+    - To fix this mistake, you will want always to use semi-colons and parenthesis.
+    This way, your code is easier to read, you will not get tripped up by the breaking
+    lines, and when you move your code around, you will never have to worry about
+    your initial statement closing.
+
+    - If you have extra commas, remember that your last property should not end with
+    a comma. While some browsers won''t be tripped up by the extra commas (such as
+    Firefox), Internet explorer will. Just try and remember that it is better to be
+    safe than sorry when you are working with code!
+
+
+    ## Conditional Statements
+
+
+    When you are coding, there are three common conditional statement mistakes. Here
+    are some of the following:
+
+
+    1. When you are coding, try not to get tripped up by using an assignment operator.
+    When you do this, you are conveying your second argument value to your first.
+    Obviously, this will come back as a logic issue. When this happens, it will return
+    true and will not throw an error if value in `var2` is not zero.
+
+
+    Example:
+
+
+    ```javascript
+
+    if(var1 = var2) {}
+
+    ```
+
+
+    * This will return true or false, depends on value in `var2`. It assigns `var2`
+    to `var1`. You have to be careful in case this is something you did not mean!
+
+
+    2. Remember that all of your conditional comments have to be within parentheses.
+    This may seem like a simple mistake. However, you would be surprised just how
+    common it is!
+
+
+    Example:
+
+
+    ```javascript
+
+    if(var1 == var2) {}
+
+    ```
+
+
+    3. For most cases, JavaScript is loosely typed. This is not the fact when you
+    switch statements. Your JavaScript will not be loosely typed when you use case
+    comparisons.
+
+
+    Example:
+
+
+    ```javascript
+
+    var myVar = 1;
+
+
+    if(myVar == ''1'') {
+
+    alert ("hey");
+
+    }
+
+
+    switch(myVar) {
+
+    case ''1'' :
+
+    alert("hey");
+
+    ```
+
+
+    * In the first line, your code will return true because JavaScript is loosely
+    typed
+
+    * As for your alert in the third lime, it will show because most of the time,
+    JavaScript will not care about the data type
+
+    * In the last line, your alert will NOT show because your data types will not
+    match.
+
+    * However, if you want to make javascript also check the data type, instead of
+    two equals signs, you should use three (===). In this case, this will not alert:
+
+
+    ```javascript
+
+    var myVar = 1;
+
+
+    if(myVar === ''1'') {
+
+    alert ("hey");
+
+    }
+
+    ```
+
+
+    ## Variable Scope
+
+
+    Not surprising, there are quite a few issues that can come from the variable scope.
+    Some of these issues include overwriting the global variable from a local variable
+    within your function or even thinking that a local variable is incorrectly a global
+    variable. As you will be learning later, it is best just not to use any global
+    variables. If you can''t avoid them, at least know how to avoid them.
+
+
+    When you have global variables, remember that they will not be declared by the
+    typical `var` keyword. Instead, you must declare your variables with the key term
+    to keep them from having a global scope. Here is an example of a variable having
+    a declared function and in return, getting a global scope:
+
+
+    CODE:
+
+
+    ```javascript
+
+    anonymousFunction1 = function(){
+
+    globalvar= ''global scope'';
+
+    return globalvar;
+
+    } ();
+
+
+    alert(globalvar);
+
+    ```
+
+
+    * In this code, the "var" is missing, when this happens, globally will be declared.
+
+
+    CODE:
+
+
+    ```javascript
+
+    anonymousFunction2 = function(){
+
+    var localvar = ''local scope'' ;
+
+    return localvar;
+
+    } ();
+
+
+    alert(localvar);
+
+    ```
+
+
+    * In this code, there is a locally declared "var"
+
+    * Last, there will be an error of "localvar is not defined." As you can see, this
+    is because there is no globally defined localvar.
+
+
+    ## HTML id Conflicts
+
+
+    This little mistake is more of a best practice for CSS, but sometimes it can be
+    helpful if you are having a JavaScript issue. An HTML id allows JavaScript to
+    have DOM bindings to allow indexing. As you will recall, both properties and functions
+    share a namespace in your coding. So, if your properties and function happen to
+    have the same name, you may be creating a logic error. These errors are hard to
+    track down! When you are using JavaScript to code, we suggest avoiding variable
+    names that are also ID values. Also, if you are marking your HTML, try not to
+    use a property name as a value. This will help avoid confusion.
+
+
+    Here is an example:
+
+
+    CODE:
+
+
+    ```javascript
+
+    var listitems= document.getElementsByTagName(''a'');
+
+    var aCount= listitems.length;
+
+    ```
+
+
+    * If you happened to have `<a id="length">`, it would sometimes return as `<a>`
+    instead of the count you asked for. This is why it is very important to remember
+    this little tip.
+
+
+    ## String Replace
+
+
+    This string replace happens to be another very common mistake in the coding world.
+    You may have made this mistake of assuming the behavior of your string replace
+    method. When you make assumptions, it could impact all of your possible matches.
+    If you weren''t already aware, JavaScript will only change the first occurrence
+    in your string replace method. If you want to replace all of your occurrences,
+    it should be noted that you will need first to set a global modifier.
+
+
+    Here is a good example:
+
+
+    CODE:
+
+
+    ```javascript
+
+    var myString = "the string were talking about";
+
+    myString= myString.replace(/ /, "%10"); //
+
+    "the%10string were talking about"
+
+
+    myString = myString.replace(/ /g,"%10"); //
+
+    "the%10string%10were%10talking%10about"
+
+    ```
+
+
+    ‘this’
+
+
+    If you are used to using JavaScript for coding, you may have made the mistake
+    of forgetting to use the `this`. If this isn’t ringing a bell for you, the functions
+    in JavaScript are defined as object accessing properties. When you fail to use
+    the `this` identifier, things may get lost.
+
+
+    Here is an incorrect example:
+
+
+    ```javascript
+
+    function myFunction () {
+
+    var myObject = {
+
+    objProperty: " the text you are using",
+
+    objMethod: function () {
+
+    alert (objProperty);
+
+    }
+
+    };
+
+    myObject. objMethod ();
+
+    }
+
+    ```
+
+
+    Here is the correct code when you use `this`:
+
+
+    ```javascript
+
+    function myFunction () {
+
+    var myObject = {
+
+    objProperty: " the text you are using",
+
+    objMethod: function () {
+
+    alert (this.objProperty);
+
+    }
+
+    };
+
+    myObject. objMethod ();
+
+    }
+
+    ```
+
+
+    ## Missing Parameter
+
+
+    When you are coding, remember that you will want to update all of your function
+    calls. This happens when you add the parameter to your function. Sometimes, people
+    miss this and cause themselves some simple errors. Remember that if you do need
+    to add a parameter to a special case, you will have to first set a default value
+    for the parameter first for your function. This way, you won''t miss updating
+    your calls in any of your scripts.
+
+
+    Here is an example:
+
+
+    ```javascript
+
+    function addressFunction ( city, state, country){
+
+    Country = country || "London" ;
+
+    }
+
+    ```
+
+
+    ## Overwriting/ Overloading Functions
+
+
+    When you are coding, if you declare a function more than once, your last declaration
+    of the same function will overwrite any of the previous functions. This can be
+    difficult because it will not give you any warnings or sign of error. In JavaScript,
+    there is no overloading. This is why it is important to avoid any core names of
+    JavaScript in your code. You will also want to avoid including JavaScript files
+    in excess. If this happens, it could overwrite the same function in another script.
+    Instead, we suggest using namespaces and functions instead, here is an example:
+
+
+    CODE:
+
+
+    ```javascript
+
+    // the creation of the namespace
+
+    // if the namespace does not exist, create it.
+
+    if (!window.THENAMESPACE) {
+
+    window [ ''THENAMESPACE'' ] = {}; }
+
+
+    // note that this function is only accessible in the anonymous function
+
+    function myFunction (var1, var2){
+
+    //the local function code will go here }
+
+
+    /* This will attach the local function to your namespace. This meaning that it
+    will be accessible outside of your anonymous function when it uses the namespace*/
+
+    window[''THENAMESPACE''][''myFunction''] = myFunction;
+
+
+    };
+
+
+    //Note that the parenthesis will open an immediate execution //
+
+    ```
+
+
+    * It is the parenthesis that encompasses the code that will make your anonymous
+    function.
+
+
+    ## Using ‘For Each’ Correctly
+
+    '
+  raw: "*   To fix this mistake, you will want always to use semi-colons and parenthesis.\
+    \ This way, your code is easier to read, you will not get tripped up by the breaking\
+    \ lines, and when you move your code around, you will never have to worry about\
+    \ your initial statement closing.\n\n*   If you have extra commas, remember that\
+    \ your last property should not end with a comma. While some browsers won't be\
+    \ tripped up by the extra commas (such as Firefox), Internet explorer will. Just\
+    \ try and remember that it is better to be safe than sorry when you are working\
+    \ with code!\n\nConditional Statements\n\nWhen you are coding, there are three\
+    \ common conditional statement mistakes. Here are some of the following:\n\n1.\
+    \  When you are coding, try not to get tripped up by using an assignment operator.\
+    \ When you do this, you are conveying your second argument value to your first.\
+    \ Obviously, this will come back as a logic issue. When this happens, it will\
+    \ return true and will not throw an error if value in var2 is not zero.\n\n  \
+    \  Example:\n\nif(var1 = var2) {}\n\n*   This will return true or false, depends\
+    \ on value in var2\\. It assigns var2 to var1\\. You have to be careful in case\
+    \ this is something you did not mean!\n\n2.  Remember that all of your conditional\
+    \ comments have to be within parentheses. This may seem like a simple mistake.\
+    \ However, you would be surprised just how common it is!\n\n    Example:\n\nif(var1\
+    \ == var2) {}\n\n3.  For most cases, JavaScript is loosely typed. This is not\
+    \ the fact when you switch statements. Your JavaScript will not be loosely typed\
+    \ when you use case comparisons.\n\n    Example:\n\nvar myVar = 1;\n\nif(myVar\
+    \ == '1') {\n\nalert (\"hey\");\n\n}\n\nswitch(myVar) {\n\ncase '1' :\n\nalert(\"\
+    hey\");\n\n*   In the first line, your code will return true because JavaScript\
+    \ is loosely typed\n\n*   As for your alert in the third lime, it will show because\
+    \ most of the time, JavaScript will not care about the data type\n\n*   In the\
+    \ last line, your alert will NOT show because your data types will not match.\n\
+    \n*   However, if you want to make javascript also check the data type, instead\
+    \ of two equals signs, you should use three (===). In this case, this will not\
+    \ alert:\n\nvar myVar = 1;\n\nif(myVar === '1') {\n\nalert (\"hey\");\n\n}\n\n\
+    Variable Scope\n\n Not surprising, there are quite a few issues that can come\
+    \ from the variable scope. Some of these issues include overwriting the global\
+    \ variable from a local variable within your function or even thinking that a\
+    \ local variable is incorrectly a global variable. As you will be learning later,\
+    \ it is best just not to use any global variables. If you can't avoid them, at\
+    \ least know how to avoid them.\n\nWhen you have global variables, remember that\
+    \ they will not be declared by the typical var keyword. Instead, you must declare\
+    \ your variables with the key term to keep them from having a global scope. Here\
+    \ is an example of a variable having a declared function and in return, getting\
+    \ a global scope:\n\nCODE:\n\nanonymousFunction1 = function(){\n\nglobalvar= 'global\
+    \ scope';\n\nreturn globalvar;\n\n} ();\n\nalert(globalvar);\n\n*   In this code,\
+    \ the \"var\" is missing, when this happens, globally will be declared.\n\n  \
+    \  CODE:\n\n    anonymousFunction2 = function(){\n\n    var localvar = 'local\
+    \ scope' ;\n\n    return localvar;\n\n    } ();\n\nalert(localvar);\n\n*   In\
+    \ this code, there is a locally declared \"var\"\n\n*   Last, there will be an\
+    \ error of \"localvar is not defined.\" As you can see, this is because there\
+    \ is no globally defined localvar.\n\nHTML id Conflicts\n\n This little mistake\
+    \ is more of a best practice for CSS, but sometimes it can be helpful if you are\
+    \ having a JavaScript issue. An HTML id allows JavaScript to have DOM bindings\
+    \ to allow indexing. As you will recall, both properties and functions share a\
+    \ namespace in your coding. So, if your properties and function happen to have\
+    \ the same name, you may be creating a logic error. These errors are hard to track\
+    \ down! When you are using JavaScript to code, we suggest avoiding variable names\
+    \ that are also ID values. Also, if you are marking your HTML, try not to use\
+    \ a property name as a value. This will help avoid confusion.\n\nHere is an example:\n\
+    \nCODE:\n\nvar listitems= document.getElementsByTagName('a');\n\nvar aCount= listitems.length;\n\
+    \n*   If you happened to have <a id=\"length\">, it would sometimes return as\
+    \ <a> instead of the count you asked for. This is why it is very important to\
+    \ remember this little tip.\n\nString Replace\n\nThis string replace happens to\
+    \ be another very common mistake in the coding world. You may have made this mistake\
+    \ of assuming the behavior of your string replace method. When you make assumptions,\
+    \ it could impact all of your possible matches. If you weren't already aware,\
+    \ JavaScript will only change the first occurrence in your string replace method.\
+    \ If you want to replace all of your occurrences, it should be noted that you\
+    \ will need first to set a global modifier.\n\nHere is a good example:\n\nCODE:\n\
+    \nvar myString = \"the string were talking about\";\n\nmyString= myString.replace(/\
+    \ /, \"%10\"); //\n\n\"the%10string were talking about\"\n\nmyString = myString.replace(/\
+    \ /g,\"%10\"); //\n\n\"the%10string%10were%10talking%10about\"\n\n‘this’\n\nIf\
+    \ you are used to using JavaScript for coding, you may have made the mistake of\
+    \ forgetting to use the ‘this’. If this isn’t ringing a bell for you, the functions\
+    \ in JavaScript are defined as object accessing properties. When you fail to use\
+    \ the ‘this’ identifier, things may get lost.\n\nHere is an incorrect example:\n\
+    \nfunction myFunction () {\n\nvar myObject = {\n\nobjProperty: \" the text you\
+    \ are using\",\n\nobjMethod: function () {\n\n                        alert (objProperty);\n\
+    \n                        }\n\n};\n\nmyObject. objMethod ();\n\n}\n\nHere is the\
+    \ correct code when you use ‘this’:\n\nfunction myFunction () {\n\nvar myObject\
+    \ = {\n\nobjProperty: \" the text you are using\",\n\nobjMethod: function () {\n\
+    \n                        alert (this.objProperty);\n\n                       \
+    \ }\n\n};\n\nmyObject. objMethod ();\n\n}\n\nMissing Parameter\n\n When you are\
+    \ coding, remember that you will want to update all of your function calls. This\
+    \ happens when you add the parameter to your function. Sometimes, people miss\
+    \ this and cause themselves some simple errors. Remember that if you do need to\
+    \ add a parameter to a special case, you will have to first set a default value\
+    \ for the parameter first for your function. This way, you won't miss updating\
+    \ your calls in any of your scripts.\n\nHere is an example:\n\nfunction addressFunction\
+    \ ( city, state, country){\n\n               Country = country || \"London\" ;\n\
+    \n}\n\nOverwriting/ Overloading Functions\n\n When you are coding, if you declare\
+    \ a function more than once, your last declaration of the same function will overwrite\
+    \ any of the previous functions. This can be difficult because it will not give\
+    \ you any warnings or sign of error. In JavaScript, there is no overloading. This\
+    \ is why it is important to avoid any core names of JavaScript in your code. You\
+    \ will also want to avoid including JavaScript files in excess. If this happens,\
+    \ it could overwrite the same function in another script. Instead, we suggest\
+    \ using namespaces and functions instead, here is an example:\n\nCODE:\n\n// the\
+    \ creation of the namespace\n\n// if the namespace does not exist, create it.\n\
+    \nif (!window.THENAMESPACE) {\n\nwindow [ 'THENAMESPACE' ] = {}; }\n\n// note\
+    \ that this function is only accessible in the anonymous function\n\nfunction\
+    \ myFunction (var1, var2){\n\n//the local function code will go here }\n\n/* This\
+    \ will attach the local function to your namespace. This meaning that it will\
+    \ be accessible outside of your anonymous function when it uses the namespace*/\n\
+    \nwindow['THENAMESPACE']['myFunction'] = myFunction;\n\n};\n\n//Note that the\
+    \ parenthesis will open an immediate execution //\n\n*   It is the parenthesis\
+    \ that encompasses the code that will make your anonymous function.\n\nUsing ‘For\
+    \ Each’ Correctly"
+  toc: []
+  trans: "\n\n- 为了修复这个错误，你将希望始终使用分号和括号。这样，你的代码会更易读，你不会被换行所困扰，而且当你移动代码时，永远不需要担心你的初始语句是否闭合。\n\
+    - 如果你有多余的逗号，请记住最后一个属性不应该以逗号结尾。虽然某些浏览器（如 Firefox）不会被多余的逗号困扰，但 Internet explorer\
+    \ 则会。在编写代码时，请记住防患未缪于于医！\n\n## 条件语句 (Conditional Statements)\n\n在编写代码时，有三种常见的条件语句错误。以下是其中一些：\n\
+    \n1. 在编写代码时，尽量不要因使用赋值运算符而产生困扰。当你这样做时，你实际上是在将第二个参数的值传递给第一个参数。显然，这会导致逻辑问题。当这种情况发生时，如果\
+    \ `var2` 中的值不为零，它将返回 true 而不会抛出错误。\n\n示例：\n\n```javascript\nif(var1 = var2) {}\n\
+    ```\n\n* 这将返回 true 或 false，取决于 `var2` 的值。它将 `var2` 赋值给 `var1`。你必须小心，以防这并非你的本意！\n\
+    \n2. 记住你所有的条件注释都必须在括号内。这似乎是一个简单的错误。然而，你会惊讶于发现它是多么常见！\n\n示例：\n\n```javascript\n\
+    if(var1 == var2) {}\n```\n\n3. 对于大多数情况，JavaScript 是弱类型的。但在切换 `switch` 语句时，事实并非如此。当你使用\
+    \ `case` 比较时，你的 JavaScript 将不是弱类型。\n\n示例：\n\n```javascript\nvar myVar = 1;\n\n\
+    if(myVar == '1') {\nalert (\"hey\");\n}\n\nswitch(myVar) {\ncase '1' :\nalert(\"\
+    hey\");\n```\n\n* 在第一行中，你的代码将返回 true，因为 JavaScript 是弱类型的。\n* 至于第三行中的 alert，它会显示，因为大多数时候，JavaScript\
+    \ 不关心数据类型。\n* 在最后一行，你的 alert 将不会显示，因为你的数据类型不匹配。\n* 但是，如果你想让 JavaScript 也检查数据类型，而不是使用两个等号，你应该使用三个等号\
+    \ (===)。在这种情况下，将不会触发 alert：\n\n```javascript\nvar myVar = 1;\n\nif(myVar === '1')\
+    \ {\nalert (\"hey\");\n}\n```\n\n## 变量作用域 (Variable Scope)\n\n并不意外，有很多问题可能源于变量作用域。其中一些问题包括在函数内部从局部变量覆盖全局变量，甚至错误地认为局部变量是全局变量。正如你稍后将学到的，最好根本不要使用任何全局变量。如果你无法避免它们，至少要知道如何避免它们。\n\
+    \n当你有全局变量时，记住它们不会通过典型的 `var` 关键字声明。相反，你必须使用特定的术语来声明变量，以防止它们具有全局作用域。这里有一个变量在声明函数后并获得全局作用域的示例：\n\
+    \nCODE:\n\n```javascript\nanonymousFunction1 = function(){\nglobalvar= 'global\
+    \ scope';\nreturn globalvar;\n} ();\n\nalert(globalvar);\n```\n\n* 在这段代码中，缺少了\
+    \ \"var\"，当这种情况发生时，它会在全局声明。\n\nCODE:\n\n```javascript\nanonymousFunction2 = function(){\n\
+    var localvar = 'local scope' ;\nreturn localvar;\n} ();\n\nalert(localvar);\n\
+    ```\n\n* 在这段代码中，有一个局部声明的 \"var\"。\n* 最后，将出现 \"localvar is not defined.\" 的错误。如你所示，这是因为没有全局定义的\
+    \ localvar。\n\n## HTML id 冲突 (HTML id Conflicts)\n\n这个小错误更多是关于 CSS 的最佳实践，但有时当你遇到\
+    \ JavaScript 问题时，它可能会有所帮助。HTML id 允许 JavaScript 进行 DOM 绑定以实现索引。正如你记得的，属性和函数在你的代码中共享同一个命名空间。所以，如果你的属性和函数恰好同名，你可能会创建一个逻辑错误。这些错误很难追踪！当你使用\
+    \ JavaScript 编写代码时，我们建议避免使用与 ID 值相同的变量名。此外，如果你在标记 HTML，请尽量不要使用属性名作为值。这有助于避免混淆。\n\
+    \n这是一个示例：\n\nCODE:\n\n```javascript\nvar listitems= document.getElementsByTagName('a');\n\
+    var aCount= listitems.length;\n```\n\n* 如果你恰好有一个 `<a id=\"length\">`，它有时返回 `<a>`\
+    \ 而不是你请求的计数。这就是为什么记住这个小贴士非常重要。\n\n## 字符串替换 (String Replace)\n\n这种字符串替换在代码世界中是另一个非常常见的错误。你可能犯了假设你的字符串\
+    \ `replace` 方法行为的错误。当你做出假设时，可能会影响你所有可能的匹配项。如果你之前没有意识到，JavaScript 只会更改字符串中 `replace`\
+    \ 方法的第一个出现处。如果你想替换所有出现处，需要你先设置一个全局修饰符（modifier）。\n\n这是一个很好的例子：\n\nCODE:\n\n```javascript\n\
+    var myString = \"the string were talking about\";\nmyString= myString.replace(/\
+    \ /, \"%10\"); //\n\"the%10string were talking about\"\n\nmyString = myString.replace(/\
+    \ /g,\"%10\"); //\n\"the%10string%10were%10talking%10about\"\n```\n\n‘this’\n\n\
+    如果你习惯使用 JavaScript 编写代码，你可能犯了忘记使用 `this` 的错误。如果这让你感到陌生，JavaScript 中的函数是作为对象属性访问的。当你未能使用\
+    \ `this` 标识符时，可能会丢失。\n\n这是一个错误的示例：\n\n```javascript\nfunction myFunction () {\n\
+    var myObject = {\nobjProperty: \" the text you are using\",\nobjMethod: function\
+    \ () {\nalert (objProperty);\n}\n};\nmyObject. objMethod ();\n}\n```\n\n这是使用 `this`\
+    \ 的正确代码：\n\n```javascript\nfunction myFunction () {\nvar myObject = {\nobjProperty:\
+    \ \" the text you are using\",\nobjMethod: function () {\nalert (this.objProperty);\n\
+    }\n};\nmyObject. objMethod ();\n}\n```\n\n## 参数缺失 (Missing Parameter)\n\n在编写代码时，记住你将希望更新所有的函数调用。这种情况发生在为函数添加参数时。有时，人们忽略这一点并导致一些简单的错误。记住，如果你确实需要为特殊情况添加参数，你必须先为参数设置一个默认值。这样，你就不会错过任何脚本中的调用更新。\n\
+    \n这是一个示例：\n\n```javascript\nfunction addressFunction ( city, state, country){\n\
+    Country = country || \"London\" ;\n}\n```\n\n## 函数覆盖/重载 (Overwriting/ Overloading\
+    \ Functions)\n\n在编写代码时，如果你多次声明同一个函数，对该函数的最后声明将覆盖之前的任何函数。这可能很难，因为它不会给你任何警告或错误提示。在\
+    \ JavaScript 中没有重载。这就是为什么在代码中避免任何 JavaScript 核心名称很重要。你还应该希望避免过度包含 JavaScript 文件。如果发生这种情况，它可能会覆盖另一个脚本中的相同函数。相反，我们建议使用命名空间和函数，这里有一个示例：\n\
+    \nCODE:\n\n```javascript\n// 创建命名空间\n// 如果命名空间不存在，则创建它。\nif (!window.THENAMESPACE)\
+    \ {\nwindow [ 'THENAMESPACE' ] = {}; }\n\n// 注意此函数在匿名函数内部可见\nfunction myFunction\
+    \ (var1, var2){\n//局部函数代码将在这里 }\n\n/* 这将局部函数附加到你的命名空间中。这意味着它在外部使用命名空间时是可以访问的*/\n\
+    window['THENAMESPACE']['myFunction'] = myFunction;\n\n};\n\n// 注意括号将开启一个立即执行 //\n\
+    ```\n\n* 是括号包含了使你的匿名函数生效的代码。\n\n 正确使用 ‘For Each’ (Using ‘For Each’ Correctly)\n\
+    \n"
+- fmt: "\nAs you will recall, JavaScript uses the `\"for\"` loop for your object attributes,\
+    \ properties, and methods. It uses the code to loop all your property names in\
+    \ an object. This loop will also include the functions and properties that you\
+    \ are not interested in having in your code. If you filter out these values, you\
+    \ will want to use the `hasOwnProperty` or the `typeof` function. While coding,\
+    \ we suggest staying away from the `each`; the only time you will want to use\
+    \ `each` is when you want to iterate methods and object properties.\n\nHere are\
+    \ a few tips when coding:\n\n- `for (var myVar in myObject)` The code from above\
+    \ is meant to iterate a specific variable in the properties of a specific object.\
+    \ This will not matter what order it is in. The `for…in` loop will not iterate\
+    \ the built-in properties.\n- `for (var i=0; i <myArray.length; i++)` This code\
+    \ should be used for all elements of your array. It will iterate thru all of the\
+    \ above.\n- `for each (var myVar in myObject)` This code is meant for specific\
+    \ variables in all of your object’s properties.\n- If you wish to solve this issue,\
+    \ you will want to use the `for…in` if you are using it for objects. When you\
+    \ want to loop your array, just use `for`. Here is an example:\n\n```javascript\n\
+    listItems=document.getElementsByTagName('La');\n\nfor each (var listitem in listItems){\n\
+    \n}\n```\n- Note: The code from above will go thru all of the methods of the object\
+    \ and all of the properties.\n- This will include any native properties and methods.\
+    \ Please also note that it will not go thru the array. Instead, it will throw\
+    \ an error.\n- Due to the fact that there is the array of objects that you will\
+    \ want to look thru. Use the `for` loop such as followed:\n```javascript\nfor\
+    \ ( var i = 1; i <listItems.length; i++) {\n\n}\n```\n\n## Function Location\n\
+    \nWhen you are using JavaScript to code, remember that there are two ways that\
+    \ you are able to declare the function. First, you will declare a function if\
+    \ you want to form a variable assignment. When you do this, the location of the\
+    \ function will not matter.\n\nHere is a simple example:\n\n```javascript\nvar\
+    \ myFunction = function (arg1, arg2){\n\n// You can put any code here, again,\
+    \ it doesn’t matter\n\n};\n```\n\n- When the function is declared as `function\
+    \ myFunction (arg1, arg2) {}`, this means that it can be used in your file, no\
+    \ matter where it is. This is both before and after your function has been declared.\
+    \ However, if your function happens to be declared with a variable assignment,\
+    \ it can only be used by code that will execute this assignment according to its\
+    \ function.\n\n## Undefined and Null\n\nGoing back to basic coding 101, it is\
+    \ important that you understand these terms are not one the same! In case you\
+    \ forgot, `null` is used for an object in your code. `Undefined` will be used\
+    \ for the variables, methods, and the properties in your code. In order to be\
+    \ `null`, the object in question will need to be defined. If it is not, you can\
+    \ test to see if it is `null`. When an object is not defined, it cannot be tested\
+    \ and will throw an error. Here is an example:\n\n```javascript\nif (myObject\
+    \ ! == null && typeof(myObject) ! =='undefined') {\n}\n```\n- Note: if `myObject`\
+    \ happens to be `undefined`, remember that it cannot be tested for `null`. Instead,\
+    \ it will throw an error.\n\n```javascript\nif (typeof (myObject) ! == 'undefined'\
+    \ && myObject !== null) {\n}\n```\n- Note: This code will be in charge of handling\
+    \ `myObject`.\n\n## Statement Switching\n\nWhen you are using the `switch` statement\
+    \ in JavaScript, there are a few things you need to recognize. First, remember\
+    \ that there is no datatype conversion. Instead, there is match, and at this points,\
+    \ all of expressions are going to be executed until there is either a `return`\
+    \ statement or a `break` statement. In this case, you can include multiple cases\
+    \ in your code in a single block! Remember as stated earlier in the chapter, your\
+    \ Data Type is going to be important. In comparisons, JavaScript is loosely typed.\
+    \ Statements are something you will need to pay attention to. We will go over\
+    \ this practice in later chapters. Be sure to stick around and learn as much you\
+    \ can.\n\n## Chapter 2: General Recommendations\n\nWhile you are reading through\
+    \ this book, we want it as a learning tool. Essentially, we wish for you to also\
+    \ use this as a quick guide. Below, we will list a general recommendation checklist\
+    \ for you to peek at while you are in the middle of coding. Remember that everyone\
+    \ is going to make mistakes. When you are learning to code, it is like learning\
+    \ a new language. This important factor is to catch your mistakes, then try to\
+    \ make them little possible. Here is your checklist:\n\n- DO NOT persist password\
+    \ locally\n- DO NOT use hard code usernames (or passwords) in your client processed\
+    \ codes\n- DO NOT use hard code strings in a program template or code\n- DO NOT\
+    \ test for variables against the strings for any triggered events\n- DO NOT use\
+    \ hyphens when naming a variable\n- DO NOT leave a `\"debugger\"` statement in\
+    \ your code\n- DO NOT use the function `eval()`\n- DO NOT EVER use Global Variables\n\
+    - DO NOT leave any dangling commas, especially in object definitions and lists\n\
+    - DO define all of your local vars at the TOP of your function\n- DO use `===`\
+    \ explicit comparators\n- DO use shortcuts for your value assignment\n- DO place\
+    \ braces on the right side of your block definitions\n- DO use semi-colons at\
+    \ the end of your lines\n- DO follow naming conventions for your functions and\
+    \ variables\n- DO use double quotes for your NLS’d Strings\n\n### 1. DO NOT persist\
+    \ password locally\nAs you could imagine, if you store any passwords in your code,\
+    \ this could create some security holes. These are aspects you will want to avoid\
+    \ at all costs. The last thing you will want to do is be exploited by an attacker\
+    \ because you made a simple mistake. In any case, we suggest never persisting\
+    \ your passwords in `sessionStorage`, `Cookies`, or even `localStorage`. Instead,\
+    \ allow the user to get the password through normal mechanisms such as the browser.\
+    \ Just avoid putting it in code at all costs.\n\n### 2. DO NOT use hard code usernames\
+    \ (or passwords) in your client processed codes\nAgain, this is an easy way to\
+    \ create security holes. To some coders, this could make you just a lazy coder!\
+    \ Even if your code is just a test or a simple demo, never use your username and\
+    \ password in the code. You just never know who could get hands on the code. The\
+    \ internet is a very wide world.\n\n### 3. DO NOT use hard code strings in a program\
+    \ template or code\nWhen you are coding, you should just always assume that your\
+    \ code is going to be translated. If you want to avoid being lazy, at least create\
+    \ a map for the key values of your strings.\n\nHere is a simple example:\n\n```javascript\n\
+    this.Text = {\n    \"greeting\" : \"Hello\",\n    \"firstName\" ; \"First name\"\
+    ,\n};\n```\n\n### 4. DO NOT test for variables against the strings for any triggered\
+    \ events\nRemember that while you are condition checking in your code, these checks\
+    \ should be made against the variables or the reference node that is meant to\
+    \ trigger an event. We suggest not doing these checks against multilingual values.\
+    \ If you do this, it could help reduce the chance of throwing an error. By doing\
+    \ this, it will also help improve the maintainability of the code. When you are\
+    \ careful, the code will clearly show the actual conditions for the given action\
+    \ in the code. Here is an incorrect example followed by a better example:\n\n\
+    **Incorrect Example:**\n```javascript\nif acct.type.match(/^A LINE OF CREDIT.*/)\
+    \ ||\nacct.type.match (/LINEA DE CREDITO.*/) ) {\n```\n\n**Correct Example:**\n\
+    ```javascript\nif (acct.type === this.acct.TYPES.credit) {\n```\n"
+  raw: "As you will recall, JavaScript uses the \"for\" loop for your object attributes,\
+    \ properties, and methods. It uses the code to loop all your property names in\
+    \ an object. This loop will also include the functions and properties that you\
+    \ are not interested in having in your code. If you filter out these values, you\
+    \ will want to use the \"hasOwnProperty\" or the \"typeof\" function. While coding,\
+    \ we suggest staying away from the \"each\"; the only time you will want to use\
+    \ \"each\" is when you want to iterate methods and object properties.\n\nHere\
+    \ are a few tips when coding:\n\n*   for (var myVar in myObject)The code from\
+    \ above is meant to iterate a specific variable in the properties of a specific\
+    \ object. This will not matter what order it is in. The for…in loop will not iterate\
+    \ the built-in properties.\n\n*   for (var i=0; i <myArray.length; i++)\n\n  \
+    \  This code should be used for all elements of your array. It will iterate thru\
+    \ all of the above.\n\n*   for each (var myVar in myObject)\n\n    This code is\
+    \ meant for specific variables in all of your object’s properties\n\n*   If you\
+    \ wish to solve this issue, you will want to use the for…in if you are using it\
+    \ for objects. When you want to loop your array, just use for. Here is an example:\n\
+    \n*   listItems=document.getElementsByTagName('La');\n\nfor each (var listitem\
+    \ in listItems){\n\n}\n\n*   Note: The code from above will go thru all of the\
+    \ methods of the object and all of the properties\n\n*   This will include any\
+    \ native properties and methods. Please also note that it will not go thru the\
+    \ array. Instead, it will throw an error.\n\n*   Due to the fact that there is\
+    \ the array of objects that you will want to look thru. Use the for loop such\
+    \ as followed:\n\n*   for ( var i = 1; i <listItems.length; i++) {\n\n    }\n\n\
+    Function Location\n\nWhen you are using JavaScript to code, remember that there\
+    \ are two ways that you are able to declare the function. First, you will declare\
+    \ a function if you want to form a variable assignment. When you do this, the\
+    \ location of the function will not matter.\n\nHere is a simple example:\n\nvar\
+    \ myFunction = function (arg1, arg2){\n\n// You can put any code here, again,\
+    \ it doesn’t matter\n\n};\n\n*   When the function is declared as function myFunction\
+    \ (arg1, arg2) {},this means that it can be used in your file, no matter where\
+    \ it is located. This is both before and after your function has been declared.\
+    \ However, if your function happens to be declared with a variable assignment,\
+    \ it can only be used by a code that will execute this assignment according to\
+    \ its declared function.\n\nUndefined and Null\n\nGoing back to basic coding 101,\
+    \ it is important that you understand these terms are not one in the same! In\
+    \ case you forgot, null is used for an object in your code. Undefined will be\
+    \ used for the variables, methods, and the properties in your code. In order to\
+    \ be null, the object in question will need to be defined. If it is not, you can\
+    \ test to see if it is null. When an object is not defined, it cannot be tested\
+    \ and will throw an error instead.\n\nHere is an example:\n\nif (myObject ! ==\
+    \ null & typeof(myObject) ! ==\n\n'undefined') {\n\n}\n\n*   Note: if myObject\
+    \ happens to be undefined, remember that it cannot be tested for null. Instead,\
+    \ it will throw an error.\n\nif (typeof (myObject) ! == 'undefined' && myObject\
+    \ !==\n\nnull) {\n\n}\n\n*   Note: This code will be in charge of handling myObject\n\
+    \nStatement Switching\n\n When you are using the switch statement in JavaScript,\
+    \ there are a few things you need to recognize. First, remember that there is\
+    \ no datatype conversion. Instead, there is a match, and at this points, all of\
+    \ the expressions are going to be executed until there is either a return statement\
+    \ or a break statement. In this case, you can include multiple cases in your code\
+    \ in just a single block! Remember as we stated earlier in the chapter, your Data\
+    \ Type is going to be very important. In comparisons, JavaScript is not loosely\
+    \ typed. Statements are something you will need to pay close attention to. We\
+    \ will be going over this practice in later chapters. Be sure to stick around\
+    \ and learn as much as you can.\n\nChapter 2:\n\nGeneral Recommendations\n\nWhile\
+    \ you are reading through this book, we want it to be a learning tool. Essentially,\
+    \ we wish for you also to use this as a quick guide. Below, we will list a general\
+    \ recommendation checklist for you to peek at quickly while you are in the middle\
+    \ of coding. After, we will go into depth on each of the suggestions from below.\
+    \ Remember that everyone is going to make mistakes. When you are learning to code,\
+    \ it is much like learning a new language. This important factor is to catch your\
+    \ mistakes, learn from them, and then try to make them as little as possible.\n\
+    \nHere is your checklist: \n\n DO NOT persist password locally\n\n DO NOT use\
+    \ hard code usernames (or passwords) in your client processed codes\n\n DO NOT\
+    \ use hard code strings in a program template or code\n\n DO NOT test for variables\
+    \ against the strings for any triggered events\n\n DO NOT use hyphens when naming\
+    \ a variable\n\n DO NOT leave a \"debugger\" statement in your code\n\n DO NOT\
+    \ use the function \"eval()\"\n\n DO NOT EVER use Global Variables\n\n DO NOT\
+    \ leave any dangling commas, especially in object definitions and lists\n\n DO\
+    \ define all of your local var’s at the TOP of your function\n\n DO use (ie\"\
+    ===\") explicit comparators.\n\n DO use shortcuts for your value assignment defaults\n\
+    \n DO place braces on the right side of your block definitions\n\n DO use semi-colons\
+    \ at the end of your lines\n\n DO follow naming conventions for your functions\
+    \ and variables\n\n DO use double quotes for your NLS’d Strings\n\n1.  DO NOT\
+    \ persist password locally\n\n    As you could imagine, if you store any passwords\
+    \ in your code, this could create some major security holes. These are aspects\
+    \ you will want to avoid at all costs. The last thing you will want to do is be\
+    \ exploited by an attacker because you made a simple mistake. In any case, we\
+    \ suggest never persisting your passwords in sessionStorage, Cookies, or even\
+    \ localStorage. Instead, allow the user to get the password through normal mechanisms\
+    \ such as the browser. Just avoid putting it in code at all costs.\n\n2.  DO NOT\
+    \ use hard code usernames (or passwords) in your client processed codes\n\n  \
+    \  Again, this is an easy way to create security holes. To some coders, this could\
+    \ make you just a lazy coder! Even if your code is just a test or a simple demo,\
+    \ never use your username and password in the code. You just never know who could\
+    \ get their hands on the code. The internet is a very wide world.\n\n3.  DO NOT\
+    \ use hard code strings in a program template or code\n\n    When you are coding,\
+    \ you should just always assume that your code is going to be translated. If you\
+    \ want to avoid being lazy, at least create a map for the key values of your strings.\n\
+    \n    Here is a simple example:\n\n*   this.Text = {\n\n    \"greeting\" : \"\
+    Hello\",\n\n    \"firstName\" ; \"First name\",\n\n    };\n\n4.  DO NOT test for\
+    \ variables against the strings for any triggered events\n\n    Remember that\
+    \ while you are condition checking in your code, these checks should be made against\
+    \ the variables or the reference node that is meant to trigger an event. We suggest\
+    \ not doing these checks against multilingual values. If you do this, it could\
+    \ help reduce the chance of throwing an error. By doing this, it will also help\
+    \ improve the maintainability of the code. When you are careful, the code will\
+    \ clearly show the actual conditions for the given action in the code. Here is\
+    \ an incorrect example followed by a better example:\n\n*   Incorrect Example:\n\
+    \n    if acct.type.match(/^A LINE OF CREDIT.*/) ||\n\n        acct.type.match\
+    \ (/LINEA DE CREDITO.*/) ) {\n\n*   Correct Example:\n\n    if (acct.type ===\
+    \ this.acct.TYPES.credit) {"
+  toc: []
+  trans: "\n\n正如你所记得，JavaScript 使用 `\"for\"` 循环来处理你的对象属性、属性和方法。它使用代码来遍历对象中的所有属性名。此循环也会包含你并不希望出现在代码中的某些函数和属性。如果你想过滤掉这些值，你可能需要使用\
+    \ `hasOwnProperty` 或 `typeof` 函数。在编码时，我们建议避免使用 `each`；你唯一想要使用 `each` 的时机是你想要遍历方法和对象属性时。\n\
+    \n以下是编码时的几点提示：\n\n- `for (var myVar in myObject)` 上述代码用于遍历特定对象属性中的特定变量。这与属性的顺序无关。`for…in`\
+    \ 循环不会迭代内置内置属性。\n- `for (var i=0; i <myArray.length; i++)` 这段代码应用于你数组的所有元素。它将遍历上述所有元素。\n\
+    - `for each (var myVar in myObject)` 这段代码用于你对象所有属性中的特定变量。\n- 如果你想解决这个问题，在用于对象时，你将需要使用\
+    \ `for…in`。当你想要循环数组时，只需使用 `for` 即可。这是一个示例：\n\n```javascript\nlistItems=document.getElementsByTagName('La');\n\
+    \nfor each (var listitem in listItems){\n\n}\n```\n- 注意：上述代码将遍历对象的所有方法和所有属性。\n\
+    - 这包括任何原生属性和方法。请注意，它不会遍历数组。相反，它会抛出错误。\n- 由于存在一个你想要查看的对象数组，请如下使用 `for` 循环：\n```javascript\n\
+    for ( var i = 1; i <listItems.length; i++) {\n\n}\n```\n\n## 函数位置 (Function Location)\n\
+    \n当你使用 JavaScript 编码时，请记住你有两种声明函数的方法。首先，如果你想进行变量赋值，则会声明一个函数。当你这样做时，函数的位置并不重要。\n\
+    \n这是一个简单的示例：\n\n```javascript\nvar myFunction = function (arg1, arg2){\n\n// 你可以在这里放置任何代码，同样，这并不重要\n\
+    \n};\n```\n\n- 当函数声明为 `function myFunction (arg1, arg2) {}` 时，这意味着它可以被你的文件使用，无论位置在哪里。这在函数声明之前之后都可以。但是，如果你的函数恰好是通过变量赋值声明的，那么它只能由根据其函数执行该赋值的代码使用。\n\
+    \n## 未定义与空 (Undefined and Null)\n\n回到基础编码 101，理解这些术语并不是同一个非常重要！万你忘记了，`null` 用于你代码中的对象。`Undefined`\
+    \ 将用于你代码中的变量、方法和属性。为了成为 `null`，所讨论的对象需要被定义。如果未定义，你可以测试它是否为 `null`。当对象未定义时，它无法被测试并会抛出错误。这是一个示例：\n\
+    \n```javascript\nif (myObject ! == null && typeof(myObject) ! =='undefined') {\n\
+    }\n```\n- 注意：如果 `myObject` 恰好是 `undefined`，记住它不能被测试为 `null`。相反，它会抛出错误。\n\n```javascript\n\
+    if (typeof (myObject) ! == 'undefined' && myObject !== null) {\n}\n```\n- 注意：这段代码负责处理\
+    \ `myObject`。\n\n## 语句切换 (Statement Switching)\n\n在 JavaScript 中使用 `switch` 语句时，有几点你需要识别。首先，记住没有数据类型转换。相反，是匹配，在此时，所有的表达式都将被执行，直到遇到\
+    \ `return` 语句或 `break` 语句。在这种情况下，你可以在代码的单个块中包含多个情况！记住正如本章节前面提到的，你的数据类型将非常重要。在比较中，JavaScript\
+    \ 是弱类型的。语句是你需要注意的内容。我们将在后面的章节中讨论这一实践。请务必继续留下来并尽可能多学习。\n\n## 第 2 章：通用建议 (Chapter\
+    \ 2: General Recommendations)\n\n当你阅读这本书时，我们希望它成为一个学习工具。本质上说，我们希望你也能将其作为一个快速指南。下面，我们将为你列出一份通用建议清单，供你在编码过程中查看。请记住，每个人都会出错。当你学习编码时，就像学习一门新语言。这个重要因素是发现你的错误，然后尝试让这些错误尽可能少发生。以下是你的清单：\n\
+    \n- 不要在本地持久化密码\n- 不要在你的客户端处理代码中使用硬编码的用户名（或密码）\n- 不要在程序模板或代码中使用硬编码字符串\n- 不要针对任何触发的事件中对变量与字符串进行比对测试\n\
+    - 不要在命名变量时使用连字符\n- 不要在代码中留下 `\"debugger\"` 语句\n- 不要使用函数 `eval()`\n- 永远不要使用全局变量\n\
+    - 不要留下任何悬挂的逗号，特别是在对象定义和列表中\n- 请在函数的**顶部**定义你所有的局部变量\n- 使用 `===` 显式比较运算符\n- 为你的值赋值使用快捷方式\n\
+    - 将大括号放在块定义的右侧\n- 在行末尾使用分号\n- 遵循你的函数和变量的命名规范\n- 为你的多语言字符串使用双引号\n\n### 1. 不要在本地持久化密码\
+    \ (DO NOT persist password locally)\n正如你想象的，如果你在代码中存储任何密码，可能会创建安全漏洞。这些是你希望尽力避免的方面。你最不想的就是因为犯了简单的错误而被攻击者利用。任何情况下，我们建议不要在\
+    \ `sessionStorage`、`Cookies` 甚至 `localStorage` 中持久化密码。相反，允许用户通过正常机制获取密码。只需避免将其放入代码中。\n\
+    \n### 2. 不要在客户端处理代码中使用硬编码的用户名（或密码）（DO NOT use hard code usernames (or passwords)\
+    \ in your client processed codes)\n再次，这是一种创建安全漏洞的简单方法。对于某些编码员来说，这可能会让你成为一个懒惰的程序员！即使你的代码只是测试或简单的演示，也不要在代码中使用你的用户名和密码。你永远不知道谁会拿到代码。互联网是一个非常广的世界。\n\
+    \n### 3. 不要在程序模板或代码中使用硬编码字符串（DO NOT use hard code strings in a program template\
+    \ or code）\n当你编码时，你应该始终假设你的代码将被翻译。如果你想避免偷懒，至少为你的字符串的键值创建一个映射。\n\n这是一个简单的示例：\n\n\
+    ```javascript\nthis.Text = {\n    \"greeting\" : \"Hello\",\n    \"firstName\"\
+    \ ; \"First name\",\n};\n```\n\n"
+- fmt: "\n- While you are coding, be sure to be aware of your patterns. Some have\
+    \ made the mistake of checking the `target.label` of an event to determine whether\
+    \ or not it is a source button. Instead, we suggest using an `\"class\"` or `\"\
+    id\"` identifier. This way, it will not break an application if it gets translated.\n\
+    \n### 5. DO NOT use hyphens when naming a variable\n\nCoding can be difficult;\
+    \ this is why we suggest not using hyphens in a variable name. if this happens,\
+    \ it could be confused as an attempt at subtraction. For example:\n\n```javascript\n\
+    var hello-name = \"Welcome\";\n```\n\n- The way this code is set up, it will try\
+    \ to take the name away from the world. Obviously, this will throw an error.\n\
+    \n### 6. DO NOT leave a \"debugger\" statement in your code\n\nAs a reminder,\
+    \ a `\"debugger\"` statement is used to force your browser to a breakpoint during\
+    \ any testing. This is the code that helps most developers to locate the bugs\
+    \ quickly and efficiently. However, it could build other failures if it is accidently\
+    \ left in the code. Instead, we suggest manually setting up a breakpoint by using\
+    \ a browser tool instead. This could save you the time and hassle at the end of\
+    \ the day.\n\n### 7. DO NOT use the function \"eval()\"\n\nThere is a saying that\
+    \ some developers use that is known as \"eval is evil.\" This should be an easy\
+    \ way to remember that you should rarely use `eval`, if ever. This code is a very\
+    \ easy way to make bad things happen in your code. Unless you truly know what\
+    \ you are doing with code, the source needs always to be trusted. If not, it could\
+    \ lead to vulnerabilities in your code. As you learned earlier, this is something\
+    \ you want to avoid at all costs!\n\n### 8. DO NOT EVER use Global Variables\n\
+    \nThis is something we will say over and over again. When you are defining local\
+    \ variables, always use the `var` statement. If not, the variable will be placed\
+    \ into a global scope. You need to avoid this. Instead, we suggest using an AMD\
+    \ based loader. This way, it will eliminate any packages or modules that are globally\
+    \ namespaced. Please also note that this will not apply on browsers that provide\
+    \ global including `console`, `navigator`, `window`, or `document`.\n\n### 9.\
+    \ DO NOT leave any dangling commas, especially in object definitions and lists\n\
+    \nWhile most browsers will actually allow this with modern technology, it used\
+    \ to cause Internet Explorer to throw errors. It should be noted that by leaving\
+    \ dangling commas, it could create some sloppy programming. Most of the time,\
+    \ an issue like this is seen in `define` statements. It has also been found after\
+    \ the last method/function in a declared class. Here is an incorrect example:\n\
+    \n```javascript\nvar a = [1,2,3,];\nvar b = { a:1, b: \"B\", c: x,};\n```\n\n\
+    - As a general tip, you will want to generate your visual lists by using an `Array`.\
+    \ This way, you can join the results. Here is an example:\n\n```javascript\nconsole.log\
+    \ ( \"A List of Names: \", nameList.join (\"firstname, lastname\") );\n```\n\n\
+    ### 10. DO define all of your local var’s at the TOP of your function\n\nWhile\
+    \ this isn’t necessarily required, by defining your local variables at the top\
+    \ of your function, it can lead to a leaner code. The local variables are normally\
+    \ at the `\"function\"` scope. In other words, they are accessible within any\
+    \ enclosing function. This does not mean that they are only within the closing\
+    \ blocks. Instead, random `\"var\"` definitions that are placed throughout an\
+    \ entire function could lead to errors such as unintended variable re-assignment.\
+    \ Remember this will also apply for the `for (var I in...)` blocks as well. While\
+    \ the `I` variable will not be scoped for the block, it will be scoped for the\
+    \ outer containing function. This can become very confusing as this is a common\
+    \ practice in other coding languages. Please note that this is not the case for\
+    \ JavaScript. Please just define your local variables at the top of your function\
+    \ to avoid any unintended side-effects.\n\n### 11. DO use (ie\"===\") explicit\
+    \ comparators\n\nIn JavaScript, you will always want to use the explicit comparators\
+    \ over any coerced comparators. By using the coerced comparators, you will be\
+    \ able to convert any value types then be able to match and compare them.\n\n\
+    Here is a great example of doing this:\n\n```javascript\n\"Hey\" == 2\n\" \" ==\
+    \ 1\n1 == true\n```\n\n- By using the triple equals as compared to the `!==` this\
+    \ will force your code to create a pure comparison of the values.\n\n### 12. DO\
+    \ use shortcuts for your value assignment defaults\n\nWhen you are coding, your\
+    \ main goal is to make your code fast and readable. By using the logical OR during\
+    \ operation assignments, this will allow your code to have default values. Here\
+    \ is an example of putting simple validation on an input args. By doing this,\
+    \ it will ensure that the code will work on any expected object.\n\n```javascript\n\
+    //\"Args\" will default to an empty object if it is not defined\nargs = args ||\
+    \ {} ;\n//As you know, args will be an object. Now that it is defined, it will\
+    \ be safe to do a var greeting such as:\nvar greeting = args. Greeting || \"Hello\"\
+    ;\n```\n\n### 13. DO place braces on the right side of your block definitions\n\
+    \nWhile this is a personal style choice, it is always suggested to place the braces\
+    \ on the right of your block definitions to keep a safer code. As you start coding\
+    \ more, you will find a style that makes your work easier for you. Here are a\
+    \ couple of examples of placing the braces:\n\n- **Bad:**\n```javascript\nreturn//If\
+    \ you do this, returns will be undefined and not expected by the object.\n{//This\
+    \ will make sure that the block is valid. Please note that it will be no-ops!\n\
+    Ok : false\n};\n```\n\n- **Good:**\n```javascript\nreturn {\nok : true\n};\n```\n\
+    \n### 14. DO use semi-colons at the end of your lines\n\nWhile the use of semi-colons\
+    \ at the end of your lines is not TECHNICALLY required, your code will do better\
+    \ this way. Instead of guessing how the lines will be interpreted by your compiler,\
+    \ just place your semi-colons at the end, so there is no guessing game!\n\n###\
+    \ 15. DO follow naming conventions for your functions and variables\n\nBy doing\
+    \ this, it will help create a cleaner code. Remember that you will not always\
+    \ be the one reading/ writing your code. To keep your code consistent, use some\
+    \ of the following naming conventions to stay organized:\n\n- First, make sure\
+    \ that your constants are always uppercase\n  Example: `var A= 1.2`\n- Next, when\
+    \ you are using PRIVATE variables, try and use leading underscore\n  Example:\
+    \ `_myUsername`\n- Last, remember that normal variables will be labeled at the\
+    \ following:\n  Example: `camelCase`\n\n### 16. DO use double quotes for your\
+    \ NLS’d Strings\n\nIn coding, there are many languages that will use single quotes\
+    \ heavily as part of that specific language. Most of the time, translators will\
+    \ not understand the `\"JSON\"` structure style. If this happens, it will introduce\
+    \ invalid strings if there are single quoted strings.\n\nHere is an example:\n\
+    \n```json\nEnglish: { \"end\" : \"The end of the story\" }\n```\n\n## Chapter\
+    \ 3: Best Practices for Comments and Logging\n\nWhen you are coding with JavaScript,\
+    \ there are a few tricks to make your comments and logging a bit easier. Remember\
+    \ that while you are working or practicing coding, you will want to do whatever\
+    \ you can to keep your coding clean and organized. Both loggings and comments\
+    \ should be used through your code. Please note that there are no performance\
+    \ penalties for using either. Most of the time, they will be removed during your\
+    \ building phase anyway. While some developers may note that logging can be a\
+    \ substitute for debugging skills, it is a valuable skill you will want to have\
+    \ to help aid your logic comprehension in coding.\n\nHere, we will provide you\
+    \ with a quick list to remember when working with logging and comments.\n\n- DO\
+    \ use proper logging levels\n- DO use comment for all complex logic\n- DO use\
+    \ standard logging for any useful details\n- DO use JSDoc Syntax for any public\
+    \ functions, variables, or modules\n- DO NOT use string concatenation\n\n### 1.\
+    \ DO use proper logging levels\n"
+  raw: "*   While you are coding, be sure to be aware of your patterns. Some have\
+    \ made the mistake of checking the target.label of an event to determine whether\
+    \ or not it is a source button. Instead, we suggest using an \"class\" or \"id\"\
+    \ identifier. This way, it will not break an application if it gets translated.\n\
+    \n5.  DO NOT use hyphens when naming a variable\n\n    Coding can be difficult;\
+    \ this is why we suggest not using hyphens in a variable name. if this happens,\
+    \ it could be confused as an attempt at subtraction. For example:\n\nvar hello-name\
+    \ = \"Welcome\";\n\n*   The way this code is set up, it will try to take the name\
+    \ away from the world. Obviously, this will throw an error.\n\n6.  DO NOT leave\
+    \ a \"debugger\" statement in your code\n\nAs a reminder, a \"debugger\" statement\
+    \ is used to force your browser to a breakpoint during any testing. This is the\
+    \ code that helps most developers to locate the bugs quickly and efficiently.\
+    \ However, it could build other failures if it is accidently left in the code.\
+    \ Instead, we suggest manually setting up a breakpoint by using a browser tool\
+    \ instead. This could save you the time and hassle at the end of the day.\n\n\
+    7.  DO NOT use the function \"eval()\"\n\n    There is a saying that some developers\
+    \ use that is known as \"eval is evil.\" This should be an easy way to remember\
+    \ that you should rarely use eval, if ever. This code is a very easy way to make\
+    \ bad things happen in your code. Unless you truly know what you are doing with\
+    \ code, the source needs always to be trusted. If not, it could lead to vulnerabilities\
+    \ in your code. As you learned earlier, this is something you want to avoid at\
+    \ all costs!\n\n8.  DO NOT EVER use Global Variables\n\nThis is something we will\
+    \ say over and over again. When you are defining local variables, always use the\
+    \ var statement. If not, the variable will be placed into a global scope. You\
+    \ need to avoid this. Instead, we suggest using an AMD based loader. This way,\
+    \ it will eliminate any packages or modules that are globally namespaced. Please\
+    \ also note that this will not apply on browsers that provide global including\
+    \ console, navigator, window, or document.\n\n9.  DO NOT leave any dangling commas,\
+    \ especially in object definitions and lists\n\n    While most browsers will actually\
+    \ allow this with modern technology, it used to cause Internet Explorer to throw\
+    \ errors. It should be noted that by leaving dangling commas, it could create\
+    \ some sloppy programming. Most of the time, an issue like this is seen in define\
+    \ statements. It has also been found after the last method/function in a declared\
+    \ class. Here is an incorrect example:\n\nvar a = [1,2,3,];\n\nvar b = { a:1,\
+    \ b: \"B\", c: x,};\n\n*   As a general tip, you will want to generate your visual\
+    \ lists by using an Array. This way, you can join the results. Here is an example:\n\
+    \nconsole.log ( \"A List of Names: \", nameList.join (\"firstname, lastname\"\
+    ) );\n\n10.  DO define all of your local var’s at the TOP of your function\n\n\
+    \    While this isn’t necessarily required, by defining your local variables at\
+    \ the top of your function, it can lead to a leaner code. The local variables\
+    \ are normally at the \"function\" scope. In other words, they are accessible\
+    \ within any enclosing function. This does not mean that they are only within\
+    \ the closing blocks. Instead, random \"var\" definitions that are placed throughout\
+    \ an entire function could lead to errors such as unintended variable re-assignment.\
+    \ Remember this will also apply for the \"for (var I in…) blocks as well. While\
+    \ the \"I\" variable will not be scoped for the block, it will be scoped for the\
+    \ outer containing function. This can become very confusing as this is a common\
+    \ practice in other coding languages. Please note that this is not the case for\
+    \ JavaScript. Please just define your local variables at the top of your function\
+    \ to avoid any unintended side-effects.\n\n11.  DO use (ie\"===\") explicit comparators.\n\
+    \n    In JavaScript, you will always want to use the explicit comparators over\
+    \ any coerced comparators. By using the coerced comparators, you will be able\
+    \ to convert any value types then be able to match and compare them.\n\n    Here\
+    \ is a great example of doing this:\n\n\"Hey\" == 2\n\n\" \" == 1\n\n1 == true\n\
+    \n*   By using the triple equals as compared to the !== this will force your code\
+    \ to create a pure comparison of the values.\n\n12.  DO use shortcuts for your\
+    \ value assignment defaults\n\n    When you are coding, your main goal is to make\
+    \ your code fast and readable. By using the logical OR during operation assignments,\
+    \ this will allow your code to have default values. Here is an example of putting\
+    \ simple validation on an input args. By doing this, it will ensure that the code\
+    \ will work on any expected object.\n\n//\"Args\" will default to an empty object\
+    \ if it is not defined\n\nargs = args || {} ;\n\n//As you know, args will be an\
+    \ object. Now that it is defined, it will be safe to do a var greeting such as:\n\
+    \nvar greeting = args. Greeting || \"Hello\";\n\n13.  DO place braces on the right\
+    \ side of your block definitions\n\n    While this is a personal style choice,\
+    \ it is always suggested to place the braces on the right of your block definitions\
+    \ to keep a safer code. As you start coding more, you will find a style that makes\
+    \ your work easier for you. Here are a couple of examples of placing the braces:\n\
+    \n*   Bad:\n\nreturn//If you do this, returns will be undefined and not expected\
+    \ by the object.\n\n{//This will make sure that the block is valid. Please note\
+    \ that it will be no-ops!\n\nOk : false\n\n};\n\n*   Good:\n\nreturn {\n\nok :\
+    \ true\n\n};\n\n14.  DO use semi-colons at the end of your lines\n\n    While\
+    \ the use of semi-colons at the end of your lines is not TECHNICALLY required,\
+    \ your code will do better this way. Instead of guessing how the lines will be\
+    \ interpreted by your compiler, just place your semi-colons at the end, so there\
+    \ is no guessing game!\n\n15.  DO follow naming conventions for your functions\
+    \ and variables\n\n    By doing this, it will help create a cleaner code. Remember\
+    \ that you will not always be the one reading/ writing your code. To keep your\
+    \ code consistent, use some of the following naming conventions to stay organized:\n\
+    \n*   First, make sure that your constants are always uppercase\n\n    Example:\
+    \ var A= 1.2\n\n*   Next, when you are using PRIVATE variables, try and use leading\
+    \ underscore\n\n    Example: _myUsername\n\n*   Last, remember that normal variables\
+    \ will be labeled at the following:\n\n    Example: camelCase\n\n16.  DO use double\
+    \ quotes for your NLS’d Strings\n\n    In coding, there are many languages that\
+    \ will use single quotes heavily as part of that specific language. Most of the\
+    \ time, translators will not understand the \"JSON\" structure style. If this\
+    \ happens, it will introduce invalid strings if there are single quoted strings.\n\
+    \n    Here is an example:\n\nEnglish: { \"end\" : \"The end of the story\" }\n\
+    \nChapter 3:\n\nBest Practices for Comments and Logging\n\nWhen you are coding\
+    \ with JavaScript, there are a few tricks to make your comments and logging a\
+    \ bit easier. Remember that while you are working or practicing coding, you will\
+    \ want to do whatever you can to keep your coding clean and organized. Both loggings\
+    \ and comments should be used through your code. Please note that there are no\
+    \ performance penalties for using either. Most of the time, they will be removed\
+    \ during your building phase anyway. While some developers may note that logging\
+    \ can be a substitute for debugging skills, it is a valuable skill you will want\
+    \ to have to help aid your logic comprehension in coding.\n\nHere, we will provide\
+    \ you with a quick list to remember when working with logging and comments.\n\n\
+    DO use proper logging levels\n\nDO use comment for all complex logic\n\nDO\
+    \ use standard logging for any useful details\n\nDO use JSDoc Syntax for any\
+    \ public functions, variables, or modules\n\nDO NOT use string concatenation\n\
+    \n1.DO use proper logging levels"
+  toc: []
+  trans: "\n-   在编写代码时，务必注意你的模式。有些人犯了这样一个错误，即通过检查事件的 `target.label` 来判断它是否为源按钮。相反，我们建议使用\
+    \ `\"class\"` 或 `\"id\"` 标识符。这样，即使应用程序被翻译，它也不会崩溃。\n\n### 5. 命名变量时切勿使用连字符（hyphens）\n\
+    \n编码可能是困难的；这就是为什么我们建议不要在变量名中使用连字符。如果发生这种情况，它可能会被误认为是减法操作。例如：\n\n```javascript\n\
+    var hello-name = \"Welcome\";\n```\n\n-   按照这段代码的设置方式，它将尝试从世界中减去 name。显然，这将抛出一个错误。\n\
+    \n### 6. 不要在此代码中遗留 \"debugger\" 语句\n\n提醒一下，`\"debugger\"` 语句用于在任何测试期间强制浏览器在断点处停止。这是帮助大多数开发者快速、高效地定位错误的代码。然而，如果意外遗留在代码中，可能会导致其他故障。相反，我们建议使用浏览器工具手动设置断点。这在最终可以为你节省时间并避免麻烦。\n\
+    \n### 7. 不要使用函数 \"eval()\"\n\n有一个开发者常用的俗语叫做 \"eval is evil\"（eval 是邪恶的）。这应该是一个容易记住的观点：你应该很少使用\
+    \ `eval`，如果非要用的话。这段代码是让你的代码产生很多坏结果的一种非常简单的方法。除非你清楚自己在代码中做什么，否则必须始终对来源保持信任。如果不是，它可能会导致你的代码出现漏洞。正如你之前学到的，这是你不惜一切也要避免的事情！\n\
+    \n### 8. 永远不要使用全局变量\n\n这是我们将反复强调的一点。当你定义局部变量时，请务必使用 `var` 语句。否则，变量将被放置在全局作用域中。你需要避免这一点。相反，我们建议使用基于\
+    \ AMD 的加载器。这样，它将消除任何全局命名空间的包或模块。请注意，这不适用于提供全局对象的环境（如 `console`、`navigator`、`window`\
+    \ 或 `document`）的浏览器。\n\n### 9. 不要留下任何悬空逗号（dangling commas），特别是在对象定义和列表中\n\n虽然在现代技术下，大多数浏览器实际上允许这样做，但在过去这曾会导致\
+    \ Internet Explorer 抛出错误。应该指出，留下悬空逗号可能会导致一些粗糙的编程。大多数情况下，这类问题出现在 `define` 语句中。在声明的类的最后一个方法/函数之后也发现过这种情况。这是一个错误的示例：\n\
+    \n```javascript\nvar a = [1,2,3,];\nvar b = { a:1, b: \"B\", c: x,};\n```\n\n\
+    -   作为一个通用提示，你可能希望通过 `Array` 来生成你的视觉列表。这样，你可以合并结果。这里有一个示例：\n\n```javascript\n\
+    console.log ( \"A List of Names: \", nameList.join (\"firstname, lastname\") );\n\
+    ```\n\n### 10. 务必在函数顶部定义所有的局部 var\n\n虽然这并非必须，但通过在函数顶部定义局部变量，可以使代码更加简洁。局部变量通常位于\
+    \ `\"function\"` 作用范围内。换句话说，它们在任何嵌套函数内部都是可的。这并不意味着它们只存在于闭块内。相反，在整个函数中随机放置的 `\"\
+    var\"` 定义可能会导致意外的变量重新赋值等错误。请记住，这也适用于 `for (var I in...)` 块。虽然变量 `I` 不会在块级作用域，但它会在外部包含的函数作用域内。这可能会变得非常困惑，因为这是其他编程语言中的常见做法。请注意，JavaScript\
+    \ 的情况并非如此。请将你的局部变量定义在函数顶部，以避免任何意外的副作用。\n\n### 11. 务必使用 (======) 显式比较符\n\n在 JavaScript\
+    \ 中，你总是希望使用显式比较符而不是任何强制转换的比较符。通过使用强制转换的比较符，你将能够转换任何类型，然后对它们进行匹配和比较。\n\n这里有一个这样做的极佳示例：\n\
+    \n```javascript\n\"Hey\" == 2\n\" \" == 1\n1 == true\n```\n\n-   与 `!==` 相比，使用三等号将强制你的代码对值进行纯粹比较。\n\
+    \n### 12. 务必使用快捷方式进行值的默认值赋值\n\n在编写代码时，你的主要目标是让代码快速且易读。通过在操作赋值中使用逻辑或（OR），可以让你的代码拥有默认值。这里有一个对输入参数进行简单验证的示例。这样做可以确保代码在任何预期的对象上运行。\n\
+    \n```javascript\n//\"Args\" 如果未定义则将默认为空对象\nargs = args || {} ;\n//如你所知，args 是一个对象。现在它被定义了，这样执行\
+    \ var greeting 才是安全的：\nvar greeting = args. Greeting || \"Hello\";\n```\n\n###\
+    \ 13. 务必将大括号放在块定义的右侧\n\n虽然这是一种个人风格选择，但始终建议将大括号放在块定义的右侧，以保持代码安全。随着你开始编写更多代码，你会发现一种让你的工作更轻松的风格。这里有几个放置括号的示例：\n\
+    \n-   **错误：**\n```javascript\nreturn// 如果你这样做，返回值将是 undefined，不符合对象的预期。\n{//这将确保块是有效的。请注意，它将是无操作（no-ops）！\n\
+    Ok : false\n};\n```\n\n-   **正确：**\n```javascript\nreturn {\nok : true\n};\n```\n\
+    \n### 14. 务必在行末尾使用分号\n\n虽然在行末尾使用分号在技术上不是强制的，但你的代码这样写会更好。与其猜测编译器将如何解释这些行，不如直接在末尾放置分号，这样就没有猜测游戏了！\n\
+    \n### 15. 务必遵循函数和变量的命名规范\n\n这样做有助于创建更整洁的代码。记住，你并不总是那个阅读/编写自己代码的人。为了保持代码的一致性，请使用以下命名规范来保持有序：\n\
+    \n-   首先，确保你的常量始终大大写\n    示例：`var A= 1.2`\n-   其次，当你使用私有变量时，尝试使用前导下划线\n    示例：`_myUsername`\n\
+    -   最后，记住普通变量将按以下格式标记：\n    示例：`camelCase`\n\n### 16. 务必为你的 NLS 字符串使用双引号\n\n在编码中，许多语言会大量使用单引号作为特定语言的一部分。大多数情况下，翻译人员无法理解\
+    \ `\"JSON\"` 结构样式。如果发生这种情况，单引号字符串会导致无效字符串。\n\n这里有一个示例：\n\n```json\nEnglish: {\
+    \ \"end\" : \"The end of the story\" }\n```\n\n## 第三章：注释和日志的最佳实践\n\n在使用 JavaScript\
+    \ 编写代码时，你有一些技巧可以让你的注释和日志变得更简单。记住，当你工作或练习编码时，你希望尽所能地保持代码的整洁有序。日志和注释都应该贯穿整个代码。请注意，使用任何一种都不会产生性能开销。大多数情况下，它们在你的构建阶段就会被移除。\n\
+    \n在这里，我们将为你提供一个在处理日志和注释时需要记住的快速列表：\n\n-   务必使用正确的日志级别\n-   所有复杂逻辑都使用注释\n-   使用标准日志记录任何有用细节\n\
+    -   任何公共函数、变量或模块都使用 JSDoc 语法\n-   不要字符串拼接\n\n### 1. 务必使用正确的日志级别\n\n"
+- fmt: "\nPlease note that both `WL.logger` and `Console` both support a few different\
+    \ levels for logging. If you don’t recall, these include: `warn`, `error`, `log`,\
+    \ and `debug`. When you use a proper level in your coding for a certain situation,\
+    \ it will help you manage what you log in a better way. For example, if you are\
+    \ building code, your default for the Dojo is going to be removing the logging\
+    \ that appears below the \"error.\" In this case, any `console.error()` would\
+    \ remain in the code. The issue with this is that after you build, any error conditions\
+    \ would be removed from the code and then it would be lost.\n\n## 2. DO use comment\
+    \ for all complex logic\n\nMost of the time, a code in JavaScript is readable\
+    \ if you have the skills. There are those times when the code gets too complex\
+    \ even to solve complex problems.. For example, it isn't always practical to have\
+    \ a refractor code just so that someone else (such as a novice) can understand\
+    \ the code. This also stands for the developers who try to be \"elegant\" with\
+    \ their code. To keep it simple, and make everyone's lives easier, comment your\
+    \ complex code. At the end of the day, this will help aid everyone in the comprehension\
+    \ of the code.\n\n## 3. DO use standard logging for any useful details\n\nWhen\
+    \ you are creating code, your logging should include content that will be meaningful.\
+    \ Most developers will want to stay liberal when they are logging by using `console.log()`.\
+    \ When creating a log, be sure to provide the valuable content such as module,\
+    \ `source`, and `function`. Any message that you include should be descriptive\
+    \ and include useful variables. We also suggest avoiding using `alert()` statements\
+    \ as a substitute for the logging. Most of the times, it could get left in the\
+    \ code, and it will make it more difficult for everyone.\n\n## 4. DO use JSDoc\
+    \ Syntax for any public functions, variables, or modules\n\nIf you weren't already\
+    \ aware, `JSDOC` is a way that you can annotate your JavaScript code. This is\
+    \ a reason why it is vital to comment on your public variables and functions properly.\
+    \ By nature, private variables and functions can be documented, but they are less\
+    \ important. If you are using a reusable code, it could be contributed to a public\
+    \ or private library, and at this point, it will need to be properly documented.\n\
+    \n## 5. DO NOT use string concatenation\n\nWhile you are coding, we suggest using\
+    \ multiple arguments when you are logging. This way, you will be able to avoid\
+    \ using string concatenation. This is a very common anti-pattern within logging.\n\
+    \nHere is a bad example:\n\n```\nConsole.error (\"Invalid arguments provided:\
+    \ \" + args);\n```\n\n- In this case, the code will fail. The output has to run\
+    \ `toString()` on the objects. In this case, it will show as the following:\n\
+    `Invalid arguments provided: [Object]`\n\n- Instead, you will want to use multiple\
+    \ arguments to show the object you want. Here is the proper example:\n\n```\n\
+    Console.error (\"Invalid arguments provided:\", args);\n```\n\n- As you can see,\
+    \ it is a simple fix, but it something you could be making fairly easily.\n\n\
+    # Chapter 4: Tips for Better Performance\n\nWhether you are a novice in the coding\
+    \ world or have been practicing for a while, you can admit to yourself that you\
+    \ make mistakes. Remember that this is ok. There are always ways to help you perform\
+    \ better in coding.\n\nIn this chapter, we will be providing you with just a few\
+    \ ways to help improve your code. From minimizing your DOM access to staying suspicious\
+    \ of any logic inside of your loops, there is always room for improvement.\n\n\
+    Here is your checklist if you are in a rush!\n\n- DO ensure that your 3rd party\
+    \ libraries are always optimized\n- minimize any DOM manipulation and DOM access\n\
+    - keep your DOM at a minimum\n- stay suspicious of the logic inside of your loops\n\
+    - delay JavaScript Loading\n- reduce activity in your loops\n\n## 1. DO ensure\
+    \ that your 3rd party libraries are always optimized\n\nWhile coding, you will\
+    \ want to be aware that you will ALWAYS need to optimize any custom JavaScript.\
+    \ On top of this, you must be sure that you are using an optimized version of\
+    \ any 3rd party libraries as well. As a general tip, minimized libraries will\
+    \ have `\".min\"` in their title. While researching, you will want to look for\
+    \ websites that promise you are using an optimized version as opposed to a developer's\
+    \ source.\n\n## 2. DO minimize any DOM manipulation and DOM access\n\nIf you weren't\
+    \ already aware, `DOM` is incredibly slow compared to any other code in your application.\
+    \ This is why it is vital for you to minimize any access to the `DOM` when it\
+    \ is possible. If you absolutely need to access a certain node, we suggest doing\
+    \ this once and then store your results into a local variable. Last, we suggest\
+    \ you build a large `DOM` fragment to insert once. This is a much better option\
+    \ compared to building nodes into your `DOM` and having to iterate it every time.\n\
+    \n## 3. DO keep your DOM at a minimum\n\nIf you are coding for an application,\
+    \ you will want the code to be as quick and seamless as possible. Unfortunately,\
+    \ the performance will drop as the complexity and `DOM` size increase. By being\
+    \ proactive on your `DOM` size, you can improve the reflow of the operations.\
+    \ Luckily, you have two basic options to help minimize your `DOM`. First, you\
+    \ could destroy the view to save state. You will also need to destroy its children.\
+    \ While this can become complex to manage the state and child widget, it is actually\
+    \ very unlikely that your user will revisit this view again. Instead, you will\
+    \ want to clean up any `DOM` resources or memory.\n\nYour second option is to\
+    \ use the `DomCache` code. For this, the code will offload the view’s node tree.\
+    \ In return, it will turn into a `DomFragment` variable and be transitioned out\
+    \ of the code. At this point, if you need the view again, you can check your cache\
+    \ and then reinsert it back into the `DOM`. If you have a view that is revisited,\
+    \ this is the best option for you.\n\n## 4. DO stay suspicious of the logic inside\
+    \ of your loops\n\nFor most developers, it is normal to iterate through your elements\
+    \ and data by using a loop. However, you do not want to take the information as\
+    \ it happens within your loop. Remember that a number of potential negative performances\
+    \ could occur. You will want to keep your eye out for `DOM` access, storage access,\
+    \ math calculations, `AJAC` calls, and any other manipulations. The sooner you\
+    \ catch any of these outside of your loop, the better!\n\n## 5. DO delay JavaScript\
+    \ Loading\n\nIf you put your script at the bottom of the page, it will allow your\
+    \ browser to load the page first. But, while your script is loading, your browser\
+    \ will not be able to start other downloads. If this happens, other rendering\
+    \ activity could be blocked. Instead, try using the code `defer=\"true\"` in your\
+    \ script tag. this attribute will be executed once your page has finished parsing.\
+    \ Please note that this will only work on external scripts. Try the following\
+    \ code example:\n\n```\n<script>\nwindow. onload = downScripts;\n\nfunction downScripts\
+    \ ( ) {\n  var element = document. createElement (\"thescript\");\n  element.src\
+    \ = \"theScript.js\";\n  document.body.appendChild(element);\n}\n</script>\n```\n\
+    \n## 6. Do reduce activity in your loops\n\nRemember that the loops in your code\
+    \ will include a statement. This statement will be executed during each iteration\
+    \ of the loop. If your statements are placed outside of the loop, this will help\
+    \ you run the loop faster.\n\nHere is an example of a bad code and a better code\
+    \ to help improve the performance:\n\n- **Bad Code:**\n```javascript\nvar I;\n\
+    for (I = 1; I<arr.length; I++) {\n```\n\n- **Better Code Performance:**\n```javascript\n\
+    var I;\nvar m = arr.length;\nfor ( I = 1; I < m; I++) {\n```\n\n# Chapter 5: Best\
+    \ JavaScript Tips for Beginners\n\nWhether you like it or not, as a programmer\
+    \ or web or app developer, you need to learn JavaScript. It is considered the\
+    \ computer language of the future simply because it is an integral part of web\
+    \ ad app development.\n"
+  raw: "Please note that both WL.logger and Console both support a few different levels\
+    \ for logging. If you don’t recall, these include: warn, error, log, and debug.\
+    \ When you use a proper level in your coding for a certain situation, it will\
+    \ help you manage what you log in a better way. For example, if you are building\
+    \ code, your default for the Dojo is going to be removing the logging that appears\
+    \ below the \"error.\" In this case, any console.error() would remain in the code.\
+    \ The issue with this is that after you build, any error conditions would be removed\
+    \ from the code and then it would be lost.\n\n2.DO use comment for all complex\
+    \ logic\n\nMost of the time, a code in JavaScript is readable if you have the\
+    \ skills. There are those times when the code gets too complex even to solve complex\
+    \ problems. For example, it isn't always practical to have a refractor code just\
+    \ so that someone else (such as a novice) can understand the code. This also stands\
+    \ for the developers who try to be \"elegant\" with their code. To keep it simple,\
+    \ and make everyone's lives easier, comment your complex code. At the end of the\
+    \ day, this will help aid everyone in the comprehension of the code.\n\n3.DO use\
+    \ standard logging for any useful details\n\nWhen you are creating code, your\
+    \ logging should include content that will be meaningful. Most developers will\
+    \ want to stay liberal when they are logging by using console.log (). When creating\
+    \ a log, be sure to provide the valuable content such as module, source, and function.\
+    \ Any message that you include should be descriptive and include useful variables.\
+    \ We also suggest avoiding using alert () statements as a substitute for the logging.\
+    \ Most of the times, it could get left in the code, and it will make it more difficult\
+    \ for everyone.\n\n4.DO use JSDoc Syntax for any public functions, variables,\
+    \ or modules\n\nIf you weren't already aware, JSDOC is a way that you can annotate\
+    \ your JavaScript code. This is a reason why it is vital to comment on your public\
+    \ variables and functions properly. By nature, private variables and functions\
+    \ can be documented, but they are less important. If you are using a reusable\
+    \ code, it could be contributed to a public or private library, and at this point,\
+    \ it will need to be properly documented.\n\n5.DO NOT use string concatenation\n\
+    \nWhile you are coding, we suggest using multiple arguments when you are logging.\
+    \ This way, you will be able to avoid using string concatenation. This is a very\
+    \ common anti-pattern within logging.\n\nHere is a bad example:\n\nConsole.error\
+    \ (\"Invalid arguments provided: \" + args);\n\n•In this case, the code will fail.\
+    \ The output has to run toString() on the objects. In this case, it will show\
+    \ as the following:\n\nInvalid arguments provided: [Object]\n\n•Instead, you will\
+    \ want to use multiple arguments to show the object you want. Here is the proper\
+    \ example:\n\nConsole.error (\"Invalid arguments provided:\", args);\n\n•As you\
+    \ can see, it is a simple fix, but it something you could be making fairly easily.\n\
+    \n Chapter 4:\n\nTips for Better Performance\n\nWhether you are a novice in the\
+    \ coding world or have been practicing for a while, you can admit to yourself\
+    \ that you make mistakes. Remember that this is ok. There are always ways to help\
+    \ you perform better in coding.\n\nIn this chapter, we will be providing you with\
+    \ just a few ways to help improve your code. From minimizing your DOM access to\
+    \ staying suspicious of any logic inside of your loops, there is always room for\
+    \ improvement.\n\nHere is your checklist if you are in a rush!\n\nDO ensure that\
+    \ your 3rd party libraries are always optimized\n\nDO minimize any DOM manipulation\
+    \ and DOM access\n\nDO keep your DOM at a minimum\n\nDO stay suspicious of the\
+    \ logic inside of your loops\n\nDO delay JavaScript Loading\n\nDO reduce activity\
+    \ in your loops\n\n1.DO ensure that your 3rd party libraries are always optimized\n\
+    \nWhile coding, you will want to be aware that you will ALWAYS need to optimize\
+    \ any custom JavaScript. On top of this, you must be sure that you are using an\
+    \ optimized version of any 3rd party libraries as well. As a general tip, minimized\
+    \ libraries will have \".min\" in their title. While researching, you will want\
+    \ to look for websites that promise you are using an optimized version as opposed\
+    \ to a developer's source. \n\n2.DO minimize any DOM manipulation and DOM access\n\
+    \nIf you weren't already aware, DOM is incredibly slow compared to any other code\
+    \ in your application. This is why it is vital for you to minimize any access\
+    \ to the DOM when it is possible. If you absolutely need to access a certain node,\
+    \ we suggest doing this once and then store your results into a local variable.\
+    \ Last, we suggest you build a large DOM fragment to insert once. This is a much\
+    \ better option compared to building nodes into your DOM and having to iterate\
+    \ it every time.\n\n3.DO keep your DOM at a minimum\n\nIf you are coding for an\
+    \ application, you will want the code to be as quick and seamless as possible.\
+    \ Unfortunately, the performance will drop as the complexity and DOM size increase.\
+    \ By being proactive on your DOM size, you can improve the reflow of the operations.\
+    \ Luckily, you have two basic options to help minimize your DOM. First, you could\
+    \ destroy the view to save state. You will also need to destroy its children.\
+    \ While this can become complex to manage the state and child widget, it is actually\
+    \ very unlikely that your user will revisit this view again. Instead, you will\
+    \ want to clean up any DOM resources or memory.\n\nYour second option is to use\
+    \ the DomCache code. For this, the code will offload the view’s node tree. In\
+    \ return, it will turn into a DomFragment variable and be transitioned out of\
+    \ the code. At this point, if you need the view again, you can check your cache\
+    \ and then reinsert it back into the DOM. If you have a view that is revisited,\
+    \ this is the best option for you.\n\n4.DO stay suspicious of the logic inside\
+    \ of your loops\n\nFor most developers, it is normal to iterate through your elements\
+    \ and data by using a loop. However, you do not want to take the information as\
+    \ it happens within your loop. Remember that a number of potential negative performances\
+    \ could occur. You will want to keep your eye out for DOM access, storage access,\
+    \ math calculations, AJAC calls, and any other manipulations. The sooner you catch\
+    \ any of these outside of your loop, the better!\n\n5.DO delay JavaScript Loading\n\
+    \nIf you put your script at the bottom of the page, it will allow your browser\
+    \ to load the page first. But, while your script is loading, your browser will\
+    \ not be able to start other downloads. If this happens, other rendering activity\
+    \ could be blocked. Instead, try using the code defer= \"true\" in your script\
+    \ tag. This attribute will be executed once your page  has finished parsing. Please\
+    \ note that this will only work on external scripts. Try the following code example:\n\
+    \nCODE:\n\n<script>\n\nwindow. onload = downScripts;\n\nfunction downScripts (\
+    \ ) {\n\nvar element = document. createElement (\"thescript\");\n\nelement.src\
+    \ = \"theScript.js\";\n\ndocument.body.appendChild(element);\n\n}\n\n</script>\n\
+    \n6.Do reduce activity in your loops\n\nRemember that the loops in your code will\
+    \ include a statement. This statement will be executed during each iteration of\
+    \ the loop. If your statements are placed outside of the loop, this will help\
+    \ you run the loop faster.\n\nHere is an example of a bad code and a better code\
+    \ to help improve the performance:’\n\n•Bad Code:\n\nvar I;\n\nfor (I = 1; I<arr.length;\
+    \ I++) {\n\n•Better Code Performance:\n\nvar I;\n\nvar m = arr.length;\n\nfor\
+    \ ( I = 1; I < m; I++) {\n\nChapter 5: Best JavaScript Tips\n\nfor Beginners\n\
+    \nWhether you like it or not, as a programmer or web or app developer, you need\
+    \ to learn JavaScript. It is considered the computer language of the future simply\
+    \ because it is an integral part of web ad app development."
+  toc: []
+  trans: "\n\n请注意，`WL.logger` 和 `Console` 都支持几种不同的日志级别。如果你不记得了，它们包括：`warn`、`error`、`log`\
+    \ 和 `debug`。当你在编码中针对特定情况使用适当级别时，将帮助你更好地管理记录的日志。例如，如果你正在构建代码，对于 Dojo 的默认设置将移除出现在“error”以下的日志。在这种情况下，任何\
+    \ `console.error()` 都会保留在代码中。这样做的问题是，在你完成构建后，任何错误情况都将从代码中移除并导致其丢失。\n\n## 2. 务必对所有复杂逻辑使用注释\n\
+    \n大多数情况下，如果你具备技能，JavaScript 代码是可读的。但也有某些时候，代码变得过于复杂，甚至无法解决复杂问题。例如，为了让其他人（如新手）理解代码而进行重构代码并不总是实际的。这对于那些试图让代码“优雅”的开发者来说也是如此。为了保持简单并让大家的生活更轻松，请为你的复杂代码编写注释。归结底，这将有助于所有人理解代码。\n\
+    \n## 3. 务必对任何有用细节使用标准日志\n\n当你编写代码时，你的日志应该包含有意义的内容。大多数开发者会希望通过使用 `console.log()`\
+    \ 在记录日志时保持慷慨。在创建日志时，务必提供价值内容，如模块、`source` 和 `function`。你包含的任何消息都应该是描述性的并包含有用的变量。我们还建议避免使用\
+    \ `alert()` 语句代替日志。在大多数情况下，它可能会遗留在代码中，并让大家的工作变得更加困难。\n\n## 4. 务必对任何公共函数、变量或模块使用\
+    \ JSDoc 语法\n\n如果你还不知道，`JSDOC` 是你用来注释 JavaScript 代码的一种方法。这就是为什么正确地注释你的公共变量和函数至关重要的原因。从本质上说，私有变量和函数可以记录，但它们重要性较低。如果你正在使用可复代码，它可能会被贡献到公共或私有库中，此时它需要适当的文档说明。\n\
+    \n## 5. 勿使用字符串拼接\n\n在你编写代码时，我们建议在记录日志时使用多个参数。这样，你就可以避免使用字符串拼接。这是日志记录中常见的一种反模式。\n\
+    \n这里有一个错误的示例：\n\n```\nConsole.error (\"Invalid arguments provided: \" + args);\n\
+    ```\n\n- 在这种情况下，代码将失败。输出必须对对象运行 `toString()`。在这种情况下，它将显示如下：\n`Invalid arguments\
+    \ provided: [Object]`\n\n- 取反，你将希望使用多个参数来显示你想要的对象。这里是正确的示例：\n\n```\nConsole.error\
+    \ (\"Invalid arguments provided:\", args);\n```\n\n- 如你所见，这是一个简单的修复，但你可以相当容易地完成它。\n\
+    \n# 第 4 章：提高性能的技巧\n\n无论你是编程界的新还是已经实践了一段时间，你都可以向自己承认你会犯错。记住，这没关系。总有方法帮助你在编码中表现更好。\n\
+    \n在本章中，我们将为你提供几种帮助改进代码的方法。从最小化 DOM 访问到对循环内部的任何逻辑保持怀疑，总有改进的空间。\n\n如果你赶时间，这是你的清单！\n\
+    \n- 务必确保你的第三方库始终经过优化\n- 最小化任何 DOM 操作和 DOM 访问\n- 将你的 DOM 保持最小\n- 对循环内部的逻辑保持怀疑\n\
+    - 延迟 JavaScript 加载\n- 减少循环中的活动量\n\n## 1. 务必确保你的第三方库始终经过优化\n\n在编码时，你要意识到你**始终**需要优化任何自定义的\
+    \ JavaScript。此外，你必须确保你也在使用任何第三方库的优化版本。作为一个通用的提示，最小化的库在其标题中会包含 `\".min\"`。在研究时，你将想要寻找承诺你提供的是优化版本而非开发者源码的网站。\n\
+    \n## 2. 务必最小化任何 DOM 操作和 DOM 访问\n\n如果你还不知道，`DOM` 与你应用程序中的任何其他代码相比都缓慢得多。这就是为什么在可能的情况下最小化对\
+    \ `DOM` 的访问至关重要的原因。如果你绝对需要访问某个节点，我们建议只这样做一次，将结果存储在本地变量中。最后，我们建议构建一个大的 `DOM` 片片并一次插入。与将节点构建到你的\
+    \ `DOM` 中并在每次迭代它相比，这是一个好得多的选项。\n\n## 3. 务必将你的 DOM 保持最小\n\n如果你在为应用程序编写代码，你将希望代码尽可能快速且无缝。遗憾的是，随着复杂性和\
+    \ `DOM` 大小的增加，性能将会下降。通过主动控制 `DOM` 大小，你可以改进操作的重流。幸运的是，你有两个基本选项来帮助最小化你的 `DOM`。首先，你可以销毁视图以保存状态。你还需要销毁子元素。虽然管理状态和子组件可能会变得复杂，但你的用户实际上不太再次访问此视图。相反，你将希望清理任何\
+    \ `DOM` 资源或内存。\n\n你的第二个选项是使用 `DomCache` 代码。为此，代码将卸载视图的节点树。作为回报，它将转化为 `DomFragment`\
+    \ 变量并重新插入 `DOM`。如果你需要视图，这是最佳选择。\n\n## 4. 对循环内部的逻辑保持怀疑\n\n对于大多数开发者来说，使用循环遍历你的元素和数据是正常的。然而，你不希望在循环中进行这些操作。记住，这可能会导致许多负面性能。越早在循环之外捕捉\
+    \ DOM 访问、存储访问、数学计算、AJAC 调用或其他操作就越好！\n\n## 5. 延迟 JavaScript 加载\n\n如果你将脚本放在页面底部，它将允许浏览器先加载页面。但是，当你的脚本加载时，浏览器将无法启动其他下载。如果发生这种情况，其他渲染活动可能会被阻塞。相反，尝试在你的脚本标签中使用\
+    \ `defer=\"true\"` 代码。此属性将在页面解析完成后执行。请注意，这适用于外部脚本。尝试以下代码示例：\n\n```\n<script>\n\
+    window. onload = downScripts;\n\nfunction downScripts ( ) {\n  var element = document.\
+    \ createElement (\"thescript\");\n  element.src = \"theScript.js\";\n  document.body.appendChild(element);\n\
+    }\n</script>\n```\n\n## 6. 减少循环中的活动量\n\n记住代码中的循环将包含一个语句。该语句将在循环的每次迭代中执行。如果你将语句放在循环之外，这将帮助你更快地运行循环。\n\
+    \n这是一个有助于提高性能的错误代码和代码示例：\n\n- **错误代码：**\n```javascript\nvar I;\nfor (I = 1; I<arr.length;\
+    \ I++) {\n```\n\n- **更好的代码性能：**\n```javascript\nvar I;\nvar m = arr.length;\n\
+    for ( I = 1; I < m; I++) {\n```\n"
+- fmt: "\nOf course, it would be next to impossible to cover every trick to help you\
+    \ learn the best practices for JavaScript. Instead, we want to focus on the main\
+    \ attributes you will come across as you learn to code. In the chapter to follow,\
+    \ we will provide you with some of the simpler best practices to get you on the\
+    \ right path. Remember that there is always more information to learn about coding.\n\
+    \nThis is just an excellent start!\n\n- DO NOT declare Boolean Objects, Strings,\
+    \ or Numbers\n- DO Initialize Any Variables\n- DO NOT use `newObject()`\n- DO\
+    \ use Parameter Defaults\n- DO NOT use Automatic Type Conversions\n- DO use \"\
+    Timer\" to Optimize Code\n- DO NOT Pass String to \"SetTimeOut\" or \"SetInterval\"\
+    \n- DO use \"For in\" Statements\n- DO NOT use \"With\" Statements\n\n## 1. DO\
+    \ NOT declare Boolean Objects, Strings, or Numbers\n\nWhile you are coding, it\
+    \ is very important that you treat your Booleans, strings, and numbers as primitive\
+    \ values. You will not want to see these as objects. If you define any of these\
+    \ codes as objects, it could produce bad side effects and will just slow down\
+    \ the speed of your execution.\n\nHere is a quick example:\n\n```\nvar x= \"Joe\"\
+    ;\nvar y= new String (\"Joe\");\n(x ===y)\n```\n\n- As you can see, this will\
+    \ be false due to the fact that `x` is a string while `y` is an object. It will\
+    \ throw an error, and this is something you can avoid!\n\n## 2. DO Initialize\
+    \ Any Variables\n\nWhether you are learning code, or are just looking to fix your\
+    \ skills, it is great practice to initialize your variables as you declare them.\
+    \ When you do this, it will help avoid undefined values, it will provide you with\
+    \ a single place to do this, and it will help give you a cleaner code.\n\n## 3.\
+    \ DO NOT use `newObject()`\n\nWhile this is something we touched on a bit earlier,\
+    \ it is important to remember. Here is a quick cheat sheet to help you remember\
+    \ which code to use compared to its similar code. By being organized, you can\
+    \ keep your code clean.\n\n- DO USE: `{}` DO NOT USE: `new Object()`\n- DO USE\
+    \ `0` DO NOT USE `new Number()`\n- DO USE `\" \"` DO NOT USE `new String()`\n\
+    - DO USE `false` DO NOT USE `new Boolean()`\n- DO USE `function () {}` DO NOT\
+    \ USE `new Function()`\n- DO USE `/()/` DO NOT USE `new RegExp()`\n- DO USE `[]`\
+    \ DO NOT USE `new Array()`\n\n## 4. DO use Parameter Defaults\n\nWe invite you\
+    \ to ask a moment to ask yourself, what do I remember about functions? What do\
+    \ you call it when your function is missing an argument? That's right! The value\
+    \ of that missing argument will be called `undefined`. If you weren't already\
+    \ aware, these `undefined` values can and will break your code. To break this\
+    \ habit, try your best to assign values to your arguments automatically.\n\nHere\
+    \ is an example:\n\n```\nfunction myFunction (x, y) {\n  if ( x === undefined)\
+    \ {\n    x= 1;\n  }\n}\n```\n\n## 5. DO NOT use Automatic Type Conversions\n\n\
+    While you are coding, you will want to be aware of the numbers that could be converted\
+    \ to `NaN` or strings. If you need a refresher, `NaN` stands for Not a Number.\
+    \ This is something that can happen automatically due to the fact that JavaScript\
+    \ is typed loosely. The variables in your code can change the data type as well\
+    \ as contain a few different types of data.\n\nHere is a quick example:\n\n```\n\
+    var x = \"Hey\";\n```\n\n- In this case, `x` is a string but if you were to continue;\
+    \ `x= 4;`\n- Then, this changes your `x` to a number. You can see where this could\
+    \ cause errors in your code.\n\nYou also should be aware that your JavaScript\
+    \ will convert numbers into strings if you are doing mathematical problems. If\
+    \ you type it the wrong way, it will give you an answer, but it may not be the\
+    \ one you wanted. Here is a quick example:\n\n- In this example, `typeof x` will\
+    \ be a number\n```\nvar x = 5+ 7; // x.valueOf() will be 12\n```\n\n- In this\
+    \ next example, the `typeof x` will be a string\n```\nvar x = 5+ \"7\"; // x.valueOf()\
+    \ will be 57\n```\n\nIn a different case, you could try to use your function to\
+    \ subtract one string from another string. In this case, it will return as `NaN`.\n\
+    \nUse this example:\n\n```\n\"Goodbye\" – \"Love\" // This will return as NaN\n\
+    ```\n\n## 6. DO use \"Timer\" to Optimize Code\n\nThis practice is super simple.\
+    \ Are there ever times that you need a quick way to determine exactly how long\
+    \ your operation will take? Luckily, Firebug has a \"timer\" feature that will\
+    \ log the results for you! Sometimes it helps to have some tricks on the side\
+    \ to help your coding along.\n\nHere is the code for that:\n\n```\nfunction TimeTracker\
+    \ () {\n  console.time (\"MyTimer\");\n  for (x=4000; x > 0; x--) {}\n  console.timeEnd\
+    \ (\"MyTimer\");\n}\n```\n\n## 7. DO NOT Pass String to \"SetTimeOut\" or \"SetInterval\"\
+    \n\nRemember when we told you not to use the `eval` function? This code will function\
+    \ the same way. This is why we suggest never passing the string to `SetTimeOut`\
+    \ or `SetInterval`. Unfortunately, this code is super inefficient.\n\nInstead\
+    \ of this code:\n\n```\nsetInterval (\n  \"document.getElementById('container').innerHTML\
+    \ _+= 'The New Number: ' + I\" , 2000\n);\n```\n\nUse this one:\n\n```\nsetInterval(someFunction,\
+    \ 2000);\n```\n\n## 8. DO use \"For in\" Statements\n\nSometimes when you loop\
+    \ items in an object, you may have noticed that at the same time, you retrieve\
+    \ the method functions as well. If you do not want this to happen, there is a\
+    \ way you can wrap your code as an if statement. This way, it will filter your\
+    \ information.\n\nHere is an example:\n\n```\nfor (key in object) {\n  if(object.\
+    \ hasOwnProperty(key)) {\n    //…do something…\n  }\n}\n```\n\n## 9. DO NOT use\
+    \ \"With\" Statements\n\nNow, this coding tip is up for debate. On the one hand,\
+    \ \"with\" statements truly sound like a good idea to use. In retrospect, a \"\
+    with\" statement should be able to be used as a shorthand to access any objects\
+    \ that could be deeply nested in your code.\n\nHere is an example:\n\n```\nwith\
+    \ (person.woman.bodyparts) {\n  hand = true;\n  foot= true;\n}\n```\n\n- As we\
+    \ noted, you would use these statements instead:\n`person.woman.bodyparts.hand=\
+    \ true;`\n`person.woman.bodyparts.foot= true;`\n\nAfter some tests, it was found\
+    \ that these codes behaved badly, especially when setting up new members. Instead\
+    \ of using \"with\" you can use `var` and get the proper results.\n\n## Conclusion\n\
+    \nThere we go! We hope at this point in the book you feel a bit better and more\
+    \ confident about your coding skills.\n\nTrue, it can be challenging at times,\
+    \ but with enough practice, you will only get better! Remember that the examples\
+    \ we included in this book just scratch the surface. There are always ways to\
+    \ improve your coding; just keep on working on it.\n\nThe book provided a lot\
+    \ of topics on applying Best Practices to your JavaScript programming code. It\
+    \ is important to be aware of this in order to have much better and efficient\
+    \ code.\n\nIn the first chapter, we went over some of the common Mistakes. We\
+    \ want you to understand that simple mistakes that could be messing up your code.\n\
+    \nAfter that, we went over some general recommendations to practice better coding.\
+    \ We also went over the best practices for a better performance and also the best\
+    \ practices for your comments and logging. Finally, we discussed the best tricks\
+    \ up our sleeves for beginners.\n\nWe hope you get a lot of valuable information.\n\
+    \nWe wish you the best of luck on your coding journey!!\n\n## About the Author\n\
+    \nCharlie Masterson is a computer programmer and instructor who have developed\
+    \ several applications and computer programs.\n\nAs a computer science student,\
+    \ he got interested in programming early but got frustrated learning the highly\
+    \ complex subject matter.\n\nCharlie wanted a teaching method that he could easily\
+    \ learn from and develop his programming skills. He soon discovered a teaching\
+    \ series that made him learn faster and better.\n\nApplying the same approach,\
+    \ Charlie successfully learned different programming languages and is now teaching\
+    \ the subject matter through writing books.\n\nWith the books that he writes on\
+    \ computer programming, he hopes to provide great value and help readers interested\
+    \ to learn computer-related topics.\n"
+  raw: 'Of course, it would be next to impossible to cover every trick to help you
+    learn the best practices for JavaScript. Instead, we want to focus on the main
+    attributes you will come across as you learn to code. In the chapter to follow,
+    we will provide you with some of the simpler best practices to get you on the
+    right path. Remember that there is always more information to learn about coding.
+
+
+    This is just an excellent start!
+
+
+    DO NOT declare Boolean Objects, Strings, or Numbers
+
+
+    DO Initialize Any Variables
+
+
+    DO NOT use newObject ()
+
+
+    DO use Parameter Defaults
+
+
+    DO NOT use Automatic Type Conversions
+
+
+    DO use "Timer" to Optimize Code
+
+
+    DO NOT Pass String to "SetTimeOut" or "SetInterval"
+
+
+    DO use "For in" Statements
+
+
+    DO NOT use "With" Statements
+
+
+    1.DO NOT declare Boolean Objects, Strings, or Numbers
+
+
+    While you are coding, it is very important that you treat your Booleans, strings,
+    and numbers as primitive values. You will not want to see these as objects. If
+    you define any of these codes as objects, it could produce bad side effects and
+    will just slow down the speed of your execution.
+
+
+    Here is a quick example:
+
+
+    var x= "Joe";
+
+
+    var y= new String ("Joe");
+
+
+    (x ===y)
+
+
+    •As you can see, this will be false due to the fact that x is a string while y
+    is an object. It will throw an error, and this is something you can avoid!
+
+
+    2.DO Initialize Any Variables
+
+
+    Whether you are learning code, or are just looking to fix your skills, it is great
+    practice to initialize your variables as you declare them. When you do this, it
+    will help avoid undefined values, it will provide you with a single place to do
+    this, and it will help give you a cleaner code.
+
+
+    3.DO NOT use newObject()
+
+
+    While this is something we touched on a bit earlier, it is important to remember.
+    Here is a quick cheat sheet to help you remember which code to use compared to
+    its similar code. By being organized, you can keep your code clean.
+
+
+    •DO USE: {} DO NOT USE: new Object()
+
+
+    •DO USE 0 DO NOT USE new Number()
+
+
+    •DO USE " " DO NOT USE new String()
+
+
+    •DO USE false DO NOT USE new Boolean()
+
+
+    •DO USE function () {} DO NOT USE new Function()
+
+
+    •DO USE /()/ DO NOT USE new RegExp()
+
+
+    •DO USE [] DO NOT USE new Array()
+
+
+    4.DO use Parameter Defaults
+
+
+    We invite you to ask a moment to ask yourself, what do I remember about functions?
+    What do you call it when your function is missing an argument? That''s right!
+    The value of that missing argument will be called undefined. If you weren''t already
+    aware, these undefined values can and will break your code. To break this habit,
+    try your best to assign values to your arguments automatically.
+
+
+    Here is an example:
+
+
+    function myFunction (x, y) {
+
+
+    if ( x === undefined) {
+
+
+    x= 1;
+
+
+      }
+
+
+    }
+
+
+    5.DO NOT use Automatic Type Conversions
+
+
+    While you are coding, you will want to be aware of the numbers that could be converted
+    to NaN or strings. If you need a refresher, NaN stands for Not a Number. This
+    is something that can happen automatically due to the fact that JavaScript is
+    typed loosely. The variables in your code can change the data type as well as
+    contain a few different types of data.
+
+
+    Here is a quick example:
+
+
+    var x = "Hey";
+
+
+    •In this case, x is a string but if you were to continue;
+
+
+    x= 4;
+
+
+    •Then, this changes your x to a number. You can see where this could cause errors
+    in your code.
+
+
+    You also should be aware that your JavaScript will convert numbers into strings
+    if you are doing mathematical problems. If you type it the wrong way, it will
+    give you an answer, but it may not be the one you wanted. Here is a quick example:
+
+
+    •In this example, typeof x will be a number
+
+
+    var x = 5+ 7;  // x.valueOf() will be 12
+
+
+    •In this next example, the typeof x will be a string
+
+
+    var x = 5+ "7"; // x.valueOf() will be 57
+
+
+    In a different case, you could try to use your function to subtract one string
+    from another string. In this case, it will return as NaN.
+
+
+    Use this example:
+
+
+    •"Goodbye" – "Love" // This will return as NaN
+
+
+    6.DO use "Timer" to Optimize Code
+
+
+    This practice is super simple. Are there ever times that you need a quick way
+    to determine exactly how long your operation will take? Luckily, Firebug has a
+    "timer" feature that will log the results for you! Sometimes it helps to have
+    some tricks on the side to help your coding along.
+
+
+    Here is the code for that:
+
+
+    function TimeTracker () {
+
+
+       console.time ("MyTimer");
+
+
+        for (x=4000; x > 0; x--) {}
+
+
+       console.timeEnd ("MyTimer");
+
+
+    }
+
+
+    7.DO NOT Pass String to "SetTimeOut" or "SetInterval"
+
+
+    Remember when we told you not to use the "eval" function? This code will function
+    the same way. This is why we suggest never passing the string to SetTimeOut or
+    SetInterval. Unfortunately, this code is super inefficient.
+
+
+    Instead of this code:
+
+
+    setInterval (
+
+
+    "document.getElementById(''container'').innerHTML _+= ''The New Number: '' + I"
+    , 2000
+
+
+    );
+
+
+    Use this one:
+
+
+    setInterval(someFunction, 2000);
+
+
+    8.DO use "For in" Statements
+
+
+    Sometimes when you loop items in an object, you may have noticed that at the same
+    time, you retrieve the method functions as well. If you do not want this to happen,
+    there is a way you can wrap your code as an if statement. This way, it will filter
+    your information.
+
+
+    Here is an example:
+
+
+    for (key in object) {
+
+
+     if(object. hasOwnProperty(key)) {
+
+
+    //…do something…
+
+
+        }
+
+
+    }
+
+
+    9.DO NOT use "With" Statements
+
+
+    Now, this coding tip is up for debate. On the one hand, "with" statements truly
+    sound like a good idea to use. In retrospect, a "with" statement should be able
+    to be used as a shorthand to access any objects that could be deeply nested in
+    your code.
+
+
+    Here is an example:
+
+
+    with (person.woman.bodyparts) {
+
+
+    hand = true;
+
+
+    foot= true;
+
+
+    }
+
+
+    •As we noted, you would use these statements instead:
+
+
+    person.woman.bodyparts.hand= true;
+
+
+    person.woman.bodyparts.foot= true;
+
+
+    After some tests, it was found that these codes behaved badly, especially when
+    setting up new members. Instead of using "with" you can use "var" and get the
+    proper results.
+
+
+    Conclusion
+
+
+    There we go! We hope at this point in the book you feel a bit better and more
+    confident about your coding skills.
+
+
+    True, it can be challenging at times, but with enough practice, you will only
+    get better! Remember that the examples we included in this book just scratch the
+    surface. There are always ways to improve your coding; just keep on working on
+    it.
+
+
+    The book provided a lot of topics on applying Best Practices to your JavaScript
+    programming code. It is important to be aware of this in order to have much better
+    and efficient code.
+
+
+    In the first chapter, we went over some of the common JavaScript Mistakes. We
+    want you to understand that simple mistakes that could be messing up your code.
+
+
+    After that, we went over some general recommendations to practice better coding.
+    We also went over the best practices for a better performance and also the best
+    practices for your comments and logging. Finally, we discussed the best tricks
+    up our sleeves for beginners.
+
+
+    We hope you get a lot of valuable information.
+
+
+    We wish you the best of luck on your coding journey!!
+
+
+    About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+
+    With the books that he writes on computer programming, he hopes to provide great
+    value and help readers interested to learn computer-related topics.'
+  toc: []
+  trans: "\n\n当然，想要涵盖每一个技巧来帮助你学习 JavaScript 的最佳实践几乎是不可能的。相反，我们希望将重点放在你学习编码时会遇到的主要属性上。在接下来的章节中，我们将为你提供一些较简单的最佳实践，帮助你走上正确的道路。请记住，关于编码，总有更多的信息需要学习。\n\
+    \n这是一个极佳的开始！\n\n- **不要**声明布尔值对象、字符串或数字\n- **要**初始化任何变量\n- **不要**使用 `newObject()`\n\
+    - **要**使用参数默认值\n- **不要**使用自动类型转换\n- **要**使用 \"Timer\" 优化代码\n- **不要**向 \"SetTimeOut\"\
+    \ 或 \"SetInterval\" 传递字符串\n- **要**使用 \"For-in\" 语句\n- **不要**使用 \"With\" 语句\n\n\
+    ## 1. 不要声明布尔值对象、字符串或数字\n\n在编写代码时，将你的布尔值、字符串和数字视为原始值是非常重要的。你不希望将它们视为对象。如果你将这些代码中的任何一个定义为对象可能会可能会糟糕的副作用，并减慢你的执行速度。\n\
+    \n这里有一个简单的例子：\n\n```\nvar x= \"Joe\";\nvar y= new String (\"Joe\");\n(x ===y)\n\
+    ```\n\n- 如你所见，这将为 false，因为 `x` 是字符串而 `y` 是对象。它会抛出一个错误，这是你可以避免的！\n\n## 2. 初始化任何变量\n\
+    \n无论你是在学习编码，还是只想提高技能，在声明变量时初始化它们都是非常好的习惯。这样做可以帮助避免未定义值（undefined），提供一个单一的操作位置，并帮助你获得更整洁的代码。\n\
+    \n## 3. 不要使用 `newObject()`\n\n虽然我们之前稍微提到这一点，但记住它是重要的。这里有一份快速参考表，帮助你记住应该使用哪些代码与其相似代码。通过良好的组织，你可以保持代码的整洁。\n\
+    \n- **要使用**： `{}` **不要使用**：`new Object()`\n- **要使用**：`0` **不要使用**：`new Number()`\n\
+    - **要使用**： `\" \"` **不要使用**：`new String()`\n- **要使用**：`false` **不要使用**：`new Boolean()`\n\
+    - **要使用**：`function () {}` **不要使用**：`new Function()`\n- **要使用**：`/()/` **不要使用**：`new\
+    \ RegExp()`\n- **要使用**：`[]` **不要使用**：`new Array()`\n\n## 4. 使用参数默认值\n\n我们邀请你花一点时间问问自己：关于函数我记得什么？当你的函数缺少参数时，你称它为什么什么？没错！那个缺失参数的值被称为\
+    \ `undefined`。如果你以前没有意识到这一点，这些 `undefined` 值可以并且将会破坏你的代码。为了打破这个习惯，请尽力自动为你的参数赋值。\n\
+    \n这里有一个例子：\n\n```\nfunction myFunction (x, y) {\n  if ( x === undefined) {\n \
+    \   x= 1;\n  }\n}\n```\n\n## 5. 不要使用自动类型转换\n\n在编写代码时，你想要意识到可能被转换为 `NaN` 或字符串的数字。如果你需要复习，`NaN`\
+    \ 代表 \"Not a Number”（不是数字）。由于 JavaScript 是弱类型语言，这种情况可能会自动发生。你代码中的变量可以改变数据类型，也可以包含几种不同类型的数据。\n\
+    \n这里有一个简单的例子：\n\n```\nvar x = \"Hey\";\n```\n\n- 在这种情况下，`x` 是字符串，但如果你继续：`x= 4;`\n\
+    - 那么，这将你的 `x` 变为数字。你可以看到这可能在你的代码中引起错误。\n\n你还应该意识到，如果你在做数学题，JavaScript 会将数字转换为字符串。如果你输入方式不对，它会给你一个答案，但可能不是你想要的那个。这里有一个简单的例子：\n\
+    \n- 在这个例子中，`typeof x` 将是一个数字\n```\nvar x = 5+ 7; // x.valueOf() 将为 12\n```\n\n\
+    - 在下一个例子中，`typeof x` 将是一个字符串\n```\nvar x = 5+ \"7\"; // x.valueOf() 将为 57\n```\n\
+    \n在另一种情况下，你可以尝试使用你的函数从一个字符串中减去另一个字符串。在这种情况下，它将返回 `NaN`。\n\n使用这个例子：\n\n```\n\"\
+    Goodbye\" – \"Love\" // 这将返回 NaN\n```\n\n## 6. 使用 \"Timer\" 优化代码\n\n这种实践非常简单。是否曾经你需要一种快速的方法来准确确定你的操作将需要多长时间？幸运的是，Firebug\
+    \ 有一个 \"timer\" 功能，可以为你记录结果！有时，掌握一些小技巧对你的编码有所帮助。\n\n这是该功能的代码：\n\n```\nfunction\
+    \ TimeTracker () {\n  console.time (\"MyTimer\");\n  for (x=4000; x > 0; x--)\
+    \ {}\n  console.timeEnd (\"MyTimer\");\n}\n```\n\n## 7. 不要向 \"SetTimeOut\" 或 \"\
+    SetInterval\" 传递字符串\n\n记得我们告诉过你不要使用 `eval` 函数吗？这段代码的功能相同。这就是为什么我们建议永远不要向 `SetTimeOut`\
+    \ 或 `SetInterval` 传递字符串。遗憾的是，这段代码的效率极低。\n\n而不是这段代码：\n\n```\nsetInterval (\n  \"\
+    document.getElementById('container').innerHTML+= 'The New: 2000\n```\n\n使用这一个：\n\
+    \n```\nsetInterval(someFunction);\n```\n\n## 8. 使用 \"For in\" 语句\n\n有时当你遍历对象中的项时，你可能注意到通过这种方式可以包装你的代码。这种方式可以过滤你的信息。\n\
+    \n这里有一个例子：\n\n```\nfor (key in object) {\n  if(object.hasOwnProperty(key)) {\n\
+    \    //做一些操作\n  }\n}\n```\n\n## 9. 不要使用 \"With\" 语句\n\n现在，这个编码技巧是有争议的。一方面，\"with\"\
+    \ 语句听起来像是访问代码中深层嵌套任何对象的简便方法。\n\n这里有一个例子：\n\n```\nwith (person.bodyparts) {\n \
+    \ hand = true;\n  foot= true;\n}\n```\n\n- 正如我们所提到的，你应该使用这些代替：\n`person.bodyparts.hand=\
+    \ true;`\n`person.bodyparts.foot= true;`\n\n经过一些测试，发现这些代码表现糟糕，特别是在设置时。与其使用 \"\
+    with\"，你可以使用 `var` 并获得正确的结果。\n\n## 结论\n\n我们就这里！我们希望在书的这里你对自己的编码技能感觉更好、更有信心。\n\n\
+    诚然，有时会有挑战，但通过足够的练习，你会变得更好！记住，我们在书中包含的示例只是一角。改进编码的方法有很多，继续努力吧。\n\n这本书提供了许多关于将最佳实践应用于\
+    \ JavaScript 编程代码的话题。为了获得更优质、更高效的代码，意识到这一点是非常重要的。\n\n在第一章中，我们回顾了一些常见的错误。我们希望你理解这些可能破坏你代码的简单错误。之后，我们回顾了一些关于实践更好编码的通用建议。我们涵盖了关于提高性能的最佳实践，以及关于注释和日志的最佳实践。最后，我们为初学者讨论了一些实用技巧。\n\
+    \n我们希望你获得很多价值的信息。\n\n祝你的编码之旅好运连！！\n\n## 关于作者\n\nCharlie Masterson 是一位计算机程序员和讲师，开发过多个应用程序和计算机程序。\n\
+    \n作为一名计算机科学学生，他早期对编程感兴趣，但学习非常复杂的话题感到沮丧。\n\nCharlie 需要一种可以轻松学习的方法。他很快发现了一系列让他学得更快更好的教学系列。通过同样的方法，Charlie\
+    \ 成功地学习了不同的编程语言，现在通过写作教授这些主题。\n\n通过他编写的计算机编程书籍，他希望为对计算机主题感兴趣的读者提供巨大的价值。\n\n"

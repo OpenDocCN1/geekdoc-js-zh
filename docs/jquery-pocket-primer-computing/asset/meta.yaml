@@ -1,0 +1,400 @@
+name: Jquery Pocket Primer (computing)
+name_cn: Jquery 入门指南
+slug: jquery-pocket-primer-computing
+toc:
+- - '#'
+  - Jquery 入门指南
+- - '##'
+  - 关于技术编辑
+- - '#'
+  - 第 1 章：jQuery 概念
+- - '##'
+  - 使用 jQuery 在页面中查找元素
+- - '##'
+  - 带有 jQuery 的“Hello World”网页
+- - '##'
+  - 使用 jQuery 查询和修改 DOM
+- - '###'
+  - 使用 :first 和 :last 选择符查找和修改元素
+- - '###'
+  - 使用 :eq, :lt 和 :gt 选择符查找元素
+- - '###'
+  - jQuery 中的属性与属性
+- - '###'
+  - 查找和设置元素属性
+- - '###'
+  - 使用自定义属性
+- - '###'
+  - 使用 jQuery 移除元素
+- - '###'
+  - 创建 DOM 元素
+- - '###'
+  - jQuery append() 和 appendTo() 方法
+- - '##'
+  - 实用的 jQuery 代码块
+- - '##'
+  - 在 jQuery 中处理点击事件
+- - '##'
+  - jQuery 函数链式调用
+- - '##'
+  - 使用 jQuery 获取加速度计值
+- - '##'
+  - 总结
+- - '##'
+  - CSS3 支持与 CSS3 属性的浏览器前缀
+- - '##'
+  - CSS3 功能快速概览
+- - '##'
+  - CSS3 伪类与属性选择
+- - '###'
+  - CSS3 伪类
+- - '##'
+  - CSS3 属性选择
+- - '##'
+  - CSS3 阴影效果和圆角
+- - '###'
+  - 使用 RGB 和 HSL 指定颜色
+- - '###'
+  - CSS3 阴影效果
+- - '###'
+  - CSS3 阴影与文本
+- - '####'
+  - CSS3 阴影效果
+- - '####'
+  - Listing 2.1 Shadow.html
+- - '####'
+  - Listing 2.2 Shadow.css
+- - '##'
+  - CSS3 与外阴效果
+- - '##'
+  - CSS3 与圆角
+- - '###'
+  - 列表 2.3 RoundedCorners1.html
+- - '###'
+  - 列表 2.4 RoundedCorners1.css
+- - '###'
+  - 径向渐变
+- - '##'
+  - 旋转变换
+- - '##'
+  - CSS3 媒体查询
+- - '##'
+  - 总结
+- - '#'
+  - 第 3 章
+- - '##'
+  - 使用 JQUERY 和 CSS3 实现动画效果
+- - '##'
+  - 在 jQuery 中处理 CSS3 选择器
+- - '###'
+  - jQuery 中的基础动画效果
+- - '##'
+  - 使用回调函数
+- - '#'
+  - jQuery 渐入和滑动动画效果
+- - '##'
+  - fadeIn(), fadeOut(), 和 fadeToggle() 函数
+- - '###'
+  - 列表 3.1 FadeInOut.html
+- - '#'
+  - jQuery 滑动相关函数
+- - '###'
+  - 列表 3.2 QSlideUpDown.html
+- - '#'
+  - jQuery 中的缓动函数
+- - '##'
+  - 的 jQuery .animate() 方法
+- - '##'
+  - 使用 .animate() 函数自定义 CSS 动画
+- - '###'
+  - 基于 CSS3 的动画效果
+- - '###'
+  - 使用 CSS 关键帧和 2D 变换的动画
+- - '##'
+  - 使用 CSS3 和 jQuery 进行 2D 变换
+- - '###'
+  - 列表 3.4 JQTransforms2D1.css
+- - '###'
+  - 列表 3.5 JQTransforms2D1.html
+- - '##'
+  - jQuery 跟随鼠标示例
+- - '###'
+  - 列表 3.6 JQFollowMouse.html
+- - '##'
+  - 使用 jQuery 处理其他事件
+- - '###'
+  - 处理鼠标事件
+- - '###'
+  - 处理键盘事件
+- - '##'
+  - 动画：比较 CSS3 与 jQuery
+- - '##'
+  - 总结
+- - '#'
+  - jQuery UI 控件
+- - '##'
+  - 在章中使用 jQuery 2.0
+- - '##'
+  - 折叠面板效果
+- - '###'
+  - 4.1 JQUIAccordion1.html
+- - '##'
+  - 按钮
+- - '###'
+  - 列表 4.3 JQUIButtons1.html
+- - '##'
+  - 复选框和单选按钮
+- - '###'
+  - 列表 4.4 JCheckboxRadio1.html
+- - '##'
+  - 组合框 (Combo Boxes)
+- - '###'
+  - 列表 4.5 JQUIComboBox1.html
+- - '##'
+  - 日期选择器 (Date Pickers)
+- - '###'
+  - 列表 4.6 JDatePicker.html
+- - '##'
+  - 进度条 (Progress Bars)
+- - '###'
+  - 列表 4.7 JProgressBar.html
+- - '##'
+  - W3C 审核流程的阶段
+- - '##'
+  - 处于 W3C 建议状态 (REC) 的 HTML5 APIs
+- - '##'
+  - HTML5 地理定位
+- - '##'
+  - 使用 getCurrentPosition() 获取位置
+- - '##'
+  - 使用 watchPosition() 跟踪位置
+- - '##'
+  - HTML5 跨源资源共享 (CORS)
+- - '##'
+  - W3C 候选建议状态 (CR) 中的 HTML5 API
+- - '##'
+  - 电池 API (The Battery API)
+- - '##'
+  - XMLHttpRequest Level 2 (XHR)
+- - '###'
+  - 不使用 jQuery 发起
+- - '##'
+  - 使用 jQuery 调用
+- - '##'
+  - XMLHttpRequest Level 2 (XHR) 的请求
+- - '#'
+  - jQuery 和 HTML5 拖放操作
+- - '###'
+  - 列表 5.4 QDragAndDrop.html
+- - '#'
+  - jQuery 和 HTML5 本地存储
+- - '##'
+  - HTML5 本地库
+- - '##'
+  - jQuery 和 HTML5 文件 API
+- - '###'
+  - 列表 5.6 JQFileUpload.html
+- - '###'
+  - jQuery drop
+- - '##'
+  - HTML5 History
+- - '##'
+  - HTML5 离线应用程序
+- - '###'
+  - 列表 5.7 MyApp.appcache
+- - '##'
+  - Version 1.0
+- - '##'
+  - 检测在线和离线状态
+- - '##'
+  - 总结
+- - '#'
+  - 第 6 章
+- - '##'
+  - 单页应用简介
+- - '##'
+  - 什么是 SPA？
+- - '###'
+  - 现代 Web 架构
+- - '###'
+  - MVC 模式
+- - '###'
+  - 在 SPA 中生成页面
+- - '###'
+  - 在 SPA 中处理事件
+- - '##'
+  - 技术
+- - '##'
+  - BackboneJS 简介绍
+- - '###'
+  - 什么是模型（Model）
+- - '###'
+  - 模型更改（Changes）
+- - '###'
+  - 什么是视图（View）
+- - '###'
+  - 什么是集合（Collection）
+- - '###'
+  - 什么是路由器（Router）
+- - '##'
+  - 有用链接
+- - '##'
+  - Backbone Boilerplate（骨架）
+- - '##'
+  - Backbone 的变体
+- - '##'
+  - EmberJS
+- - '##'
+  - Bootstrap
+- - '##'
+  - 极简主义 SPA
+- - '##'
+  - Jade
+- - '###'
+  - Jade 代码
+- - '###'
+  - 使用 Jade 的最小示例
+- - '###'
+  - 其他解决方案
+- - '##'
+  - NodeJS
+- - '##'
+  - Mongoose
+- - '##'
+  - 通过 Mongoose 连接到
+- - '##'
+  - 在 Mongoose 中创建模式
+- - '##'
+  - SPA 代码示例
+- - '##'
+  - jQuery Mobile 中的核心功能和组件
+- - '##'
+  - 最小 jQuery Web 页面
+- - '##'
+  - jQuery Mobile 自定义属性
+- - '##'
+  - jQuery Mobile 页面切换
+- - '##'
+  - mobile 事件
+- - '##'
+  - jQuery Mobile 选项与自定义
+- - '##'
+  - 页面导航与切换
+- - '##'
+  - jqdata() 选择器
+- - '##'
+  - 在页面视图中定位页头和页脚
+- - '##'
+  - 按钮组与列格
+- - '##'
+  - 使用主题渲染按钮
+- - '###'
+  - 列表 7.5 JQMButtons1.html
+- - '###'
+  - 列表 7.6 CSS3Background.css
+- - '###'
+  - jQuery Mobile 中的列表视图
+- - '###'
+  - 列表 7.7 ListView.html
+- - '#'
+  - 第 8 章
+- - '##'
+  - jQuery Mobile 中的用户手势与动画效果
+- - '###'
+  - 在 jQuery Mobile 中处理手势和事件
+- - '##'
+  - jQuery Mobile 中的滚动事件
+- - '##'
+  - 竖屏模式与横屏模式
+- - '##'
+  - 使用 jQuery Mobile 使用动画效果
+- - '###'
+  - 与淡入相关的方法
+- - '###'
+  - 幻灯片 jQuery 方法
+- - '##'
+  - jQuery Mobile 与过渡效果
+- - '##'
+  - jQuery Mobile 与 CSS3 动画效果
+- - '##'
+  - jQuery Mobile 虚拟鼠标
+- - '###'
+  - LISTING 8.6 JQM3DCube1.html
+- - '###'
+  - LISTING 8.7 JQM3DCube1.css
+- - '##'
+  - 额外代码示例
+- - '##'
+  - jQuery 加速度数值
+- - '##'
+  - 总结
+- - '#'
+  - 第 9 章
+- - '##'
+  - HTML5 CANVAS 简介
+- - '##'
+  - HTML5 Canvas 与 SVG
+- - '##'
+  - HTML5 Canvas 坐标系
+- - '##'
+  - 线段、矩形、圆形和阴影效果
+- - '##'
+  - HTML5 Canvas 线性渐变
+- - '###'
+  - 水平、垂直和对角线线性渐变
+- - '###'
+  - LISTING 9.3 LGradRectangles1.html
+- - '###'
+  - 径向渐变
+- - '##'
+  - HTML5 Canvas 变换与状态保存
+- - '##'
+  - jCanvas：一个用于 HTML5 Canvas 的 jQuery 插件
+- - '##'
+  - 结合 CSS3 和 jQuery Mobile 的 HTML5 Canvas
+- - '###'
+  - HTML5 Canvas 工具包
+- - '##'
+  - 总结
+- - '#'
+  - 第 10 章
+- - '##'
+  - 使用 PHONEGAP 开发 HTML5 移动端应用
+- - '###'
+  - 列表 10.1 main.xml
+- - '###'
+  - 列表 10.2 AndroidCSS3.html
+- - '###'
+  - '列表 10.3: AndroidCSS3Activity.java'
+- - '##'
+  - SVG 与 Android 应用
+- - '#'
+  - HTML5 Canvas 与 Android 应用
+- - '###'
+  - 列表 10.7 index.html
+- - '###'
+  - 列表 10.8 main.js
+- - '###'
+  - 列表 10.9 index.html
+- - '##'
+  - CSS3 Keyframes 和 2D 变换
+- - '##'
+  - jQuery 的 `.animate()` 方法
+- - '##'
+  - 使用 CSS 动画
+- - '##'
+  - jQuery 渐入与滑动
+- - '##'
+  - '`fadeIn()`, `fadeOut()` 和 `fadeToggle()` 函数'
+- - '##'
+  - jQuery 滑动相关
+- - '##'
+  - jQuery 中的缓动函数
+- - '##'
+  - jQuery Mobile
+- - '##'
+  - 缓动函数
+- - '##'
+  - 响应式设计
+- - '##'
+  - 响应式方法

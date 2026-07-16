@@ -1,0 +1,3725 @@
+<p><img src="Images/modernjs4-cover-front.png" /></p>
+<p><span id="webant1_split_000.html"></span></p>
+<div class="page-frontmatter">
+<section class="page-frontmatter">
+<h2>Modern JavaScript Tools &amp; Skills</h2>
+</section>
+<p>Copyright © 2018 SitePoint Pty. Ltd.</p>
+<ul>
+<li><strong>Cover Design:</strong> Alex Walker</li>
+</ul>
+<h2 id="webant1_split_000.html_sigil_toc_id_1">Notice of Rights</h2>
+<p>All rights reserved. No part of this book may be reproduced, stored
+in a retrieval system or transmitted in any form or by any means,
+without the prior written permission of the publisher, except in the
+case of brief quotations embodied in critical articles or reviews.</p>
+<h2 id="webant1_split_000.html_sigil_toc_id_2">Notice of Liability</h2>
+<p>The author and publisher have made every effort to ensure the
+accuracy of the information herein. However, the information contained
+in this book is sold without warranty, either express or implied.
+Neither the authors and SitePoint Pty. Ltd., nor its dealers or
+distributors will be held liable for any damages to be caused either
+directly or indirectly by the instructions contained in this book, or by
+the software or hardware products described herein.</p>
+<h2 id="webant1_split_000.html_sigil_toc_id_3">Trademark Notice</h2>
+<p>Rather than indicating every occurrence of a trademarked name as
+such, this book uses the names only in an editorial fashion and to the
+benefit of the trademark owner with no intention of infringement of the
+trademark.</p>
+<div class="page-frontmatter">
+<p><img src="Images/sitepoint-logo-2012.png" class="calibre4"
+alt="SitePoint logo" /><br />
+Published by SitePoint Pty. Ltd.</p>
+<p>48 Cambridge Street Collingwood<br />
+VIC Australia 3066<br />
+Web: www.sitepoint.com<br />
+Email: books@sitepoint.com</p>
+</div>
+</div>
+<section id="webant1_split_000.html_sigil_toc_id_4"
+class="page-frontmatter">
+<h2>About SitePoint</h2>
+<p>SitePoint specializes in publishing fun, practical, and
+easy-to-understand content for web professionals. Visit <a
+href="http://www.sitepoint.com/">http://www.sitepoint.com/</a> to access
+our blogs, books, newsletters, articles, and community forums. You’ll
+find a stack of information on JavaScript, PHP, design, and more.</p>
+</section>
+<p><span id="webant1_split_002.html"></span></p>
+<section id="webant1_split_002.html_preface" class="page-frontmatter">
+<h1>Preface</h1>
+<p>There’s no doubt that the JavaScript ecosystem changes fast. Not only
+are new tools and frameworks introduced and developed at a rapid rate,
+the language itself has undergone big changes with the introduction of
+ES2015 (aka ES6). Understandably, many articles have been written
+complaining about how difficult it is to learn modern JavaScript
+development these days. We're aiming to minimize that confusion with
+this set of books on modern JavaScript.</p>
+<p>This book outlines essential tools and skills that every modern
+JavaScript developer should know.</p>
+<h2 id="webant1_split_002.html_who-should-read-this-book-">Who Should
+Read This Book?</h2>
+<p>This book is for all front-end developers who wish to improve their
+JavaScript skills. You’ll need to be familiar with HTML and CSS and have
+a reasonable level of understanding of JavaScript in order to follow the
+discussion.</p>
+<h2 id="webant1_split_002.html_preface-conventions-used">Conventions
+Used</h2>
+<h3 class="breakbefore" id="webant1_split_002.html_sigil_toc_id_5">Code
+Samples</h3>
+<p>Code in this book is displayed using a fixed-width font, like so:</p>
+<pre class="codeblock"><code>
+&lt;h1&gt;A Perfect Summer&#39;s Day&lt;/h1&gt;
+&lt;p&gt;It was a lovely day for a walk in the park.
+The birds were singing and the kids were all back at school.&lt;/p&gt;
+			</code></pre>
+<p>Where existing code is required for context, rather than repeat all
+of it, ⋮ will be displayed:</p>
+<pre class="codeblock"><code>
+function animate() {
+    ⋮
+new_variable = &quot;Hello&quot;;
+}</code></pre>
+<p>Some lines of code should be entered on one line, but we’ve had to
+wrap them because of page constraints. An ➥ indicates a line break that
+exists for formatting purposes only, and should be ignored:</p>
+<pre class="codeblock"><code>
+URL.open(&quot;http://www.sitepoint.com/responsive-web-
+➥design-real-user-testing/?responsive1&quot;);</code></pre>
+<p>You’ll notice that we’ve used certain layout styles throughout this
+book to signify different types of information. Look out for the
+following items.</p>
+<h3 class="calibre8" id="webant1_split_002.html_preface-tips">Tips,
+Notes, and Warnings</h3>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Hey, You!</h4>
+<div class="page-frontmatter">
+<p>Tips provide helpful little pointers.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Ahem, Excuse Me ...</h4>
+<div class="page-frontmatter">
+<p>Notes are useful asides that are related—but not critical—to the
+topic at hand. Think of them as extra tidbits of information.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Make Sure You Always ...</h4>
+<div class="page-frontmatter">
+<p>... pay attention to these important points.</p>
+</div>
+</section>
+<section class="sigil_not_in_toc tip">
+<h4 class="sigil_not_in_toc">Watch Out!</h4>
+<div class="page-frontmatter">
+<p>Warnings highlight any gotchas that are likely to trip you up along
+the way.</p>
+</div>
+</section>
+</section>
+<p><span id="webant1_split_004.html"></span></p>
+<section id="webant1_split_004.html_recatangular"
+class="page-frontmatter">
+<h1>Chapter 1: A Beginner’s Guide to Babel</h1>
+<h3 class="author" id="webant1_split_004.html_sigil_toc_id_6">by James
+Kolce</h3>
+<p><strong>This article introduces <a href="https://babeljs.io/"
+style="font-weight:bold">Babel</a>, a JavaScript compiler that allows
+developers to use next-generation JavaScript today.</strong></p>
+<p>It can be frustrating to write JavaScript when building web
+applications. We have to think about the features available in the
+browsers we’re targeting and what happens when a feature isn’t
+implemented. Some people would recommend simply not using it, which is a
+painful experience most of the time if we’re building something
+complicated.</p>
+<p>Thankfully, some tools allow us to stop worrying about what’s
+supported and just write the best code we can. They’re called
+transpilers. A <strong>transpiler</strong> is a tool that takes source
+code as input and produces new source code as output, with a different
+syntax but semantically as close as possible — or ideally equivalent —
+to the original.</p>
+<p>Babel is pretty much the standard transpiler to translate modern
+JavaScript (ES2015+) into compatible implementations that run in old
+browsers. It’s the perfect solution if you just want to concentrate on
+writing JavaScript.</p>
+<p>And although the main goal of Babel is to translate the latest
+standards of ECMAScript (ES) for old — or sometimes current — browsers,
+it can do more. There’s an ecosystem of presets and plugins that make
+possible the addition of non-standard features as well. Each plugin
+makes a new feature/transformation available for your code, and presets
+are just a collection of plugins.</p>
+<h2 id="webant1_split_004.html_gettingstarted">Getting Started</h2>
+<p>There are different ways to set up Babel depending on your project
+and the tools you use. In this article, we’re going to explain how to
+set up Babel using the CLI, although if you’re using a build system or
+framework, you can check out specific instructions on the <a
+href="https://babeljs.io/docs/setup/">official site</a>. Most of the
+time the CLI is the fastest and easiest way to get started, so if you’re
+a first-time user, feel free to continue.</p>
+<p>The first step to set up Babel in a project is to install the package
+using npm and add it as a dev dependency. Assuming you have a working
+Node.js environment already in place, it’s just a matter of running the
+following in your terminal:</p>
+<pre class="codeblock"><code>mkdir babel-test
+cd babel-test
+npm init -y
+npm install --save-dev babel-cli</code></pre>
+<p>This will create a directory (<code>babel-test</code>) change into
+the directory, initialize an npm project (thus creating a
+<code>package.json</code> file) and then install the babel-cli as a dev
+dependency.</p>
+<p>If you need any help with the above, please consult our tutorials on
+<a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">installing
+Node</a> and <a
+href="https://www.sitepoint.com/beginners-guide-node-package-manager/">working
+with npm</a>.</p>
+<p>Next, we can open <code>package.json</code> and add a
+<code>build</code> command to our npm scripts:</p>
+<pre class="codeblock"><code>&quot;scripts&quot;: {
+  &quot;build&quot;: &quot;babel src -d dist&quot;
+}</code></pre>
+<p>This will take the source files from the <code>src</code> directory
+and output the result in a <code>dist</code> directory. Then we can
+execute it as:</p>
+<pre class="codeblock"><code>npm run build</code></pre>
+<p>But wait! Before running Babel we must install and set up the plugins
+that will transform our code. The easiest and quickest way to do this is
+to add the <a href="https://babeljs.io/docs/plugins/preset-env/">Env
+preset</a>, which selects the appropriate plugins depending on the
+target browsers that you indicate. It can be installed using:</p>
+<pre class="codeblock"><code>npm install babel-preset-env --save-dev</code></pre>
+<p>Then create a <code>.babelrc</code> file in the root of your project
+and add the preset:</p>
+<pre class="codeblock"><code>{
+  &quot;presets&quot;: [&quot;env&quot;]
+}</code></pre>
+<p>The <code>.babelrc</code> file is the place where you put all your
+settings for Babel. You’ll be using this primarily for setting up
+presets and plugins, but a lot more options are available. You can check
+the complete list in the <a
+href="https://babeljs.io/docs/usage/api/#options">Babel API
+page</a>.</p>
+<p>Please note that, depending on your operating system, files beginning
+with a dot will be hidden by default. If this is problematic for you (or
+if you just prefer fewer files), you can put your Babel settings in the
+<code>package.json</code> file, under a <code>babel</code> key, like
+so:</p>
+<pre class="codeblock"><code>{
+  &quot;name&quot;: &quot;babel-test&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;babel&quot;: {
+    // config
+  }
+}</code></pre>
+<p>Finally, let’s create the directories and files Babel is expecting to
+find:</p>
+<pre class="codeblock"><code>mkdir src dist</code></pre>
+<p>And give it something to transform:</p>
+<pre class="codeblock"><code>let a = 1;
+let b = 2;
+[a, b] = [b, a];
+console.log(a);
+console.log(b);</code></pre>
+<p>This example uses <a
+href="https://www.sitepoint.com/preparing-ecmascript-6-destructuring-assignment/">destructuring
+assignment</a> to swap the values of two variables.</p>
+<h2 id="webant1_split_004.html_runningbabel">Running Babel</h2>
+<p>Now that you have a ready-to-use Babel installation, you can execute
+the <code>build</code> command to run the compilation process:</p>
+<pre class="codeblock"><code>npm run build</code></pre>
+<p>This will take the code from <code>src/main.js</code>, transform it
+to ES5 code and output the transformed code to
+<code>dist/main.js</code>.</p>
+<p>Here’s what it produced:</p>
+<pre class="codeblock"><code>&quot;use strict&quot;;
+
+var a = 1;
+var b = 2;
+var _ref = [b, a];
+a = _ref[0];
+b = _ref[1];
+
+console.log(a);
+console.log(b);</code></pre>
+<p>As you can see, <code>let</code> has been replaced by
+<code>var</code> and Babel has introduced a temporary variable (denoted
+by the underscore) to facilitate the swap.</p>
+<p>And that’s it. The code that you write in the <code>src</code>
+directory will be translated to previous versions of the language. By
+default, if you don’t add any options to the preset, it will load all
+the transformations. You can also indicate the target browsers as
+follows:</p>
+<pre class="codeblock"><code>{
+  &quot;presets&quot;: [
+    [&quot;env&quot;, {
+      &quot;targets&quot;: {
+        &quot;browsers&quot;: [&quot;last 2 versions&quot;, &quot;safari &gt;= 7&quot;]
+      }
+    }]
+  ]
+}</code></pre>
+<p>This will load the required transformations to support the latest two
+versions of each browser and Safari greater or equal to version 7. You
+can find the available options for the target browsers in the <a
+href="https://github.com/ai/browserslist#queries">Browserlist
+repository</a>.</p>
+<h2 id="webant1_split_004.html_babelecosystemaquickoverview">Babel
+Ecosystem: A Quick Overview</h2>
+<p>As you noticed in the previous section, Babel won’t do anything by
+itself when you install it. We have to install a set of plugins to
+obtain the desired behavior, or we can use presets, which are predefined
+sets of plugins.</p>
+<p>Usually, each feature that you want to include will be in the form of
+a plugin. Some examples for ES2015 include:</p>
+<ul>
+<li><a
+href="https://babeljs.io/docs/plugins/check-es2015-constants/">constants</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-arrow-functions/">arrow
+functions</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-block-scoped-functions/">block-scoped
+functions</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-classes/">classes</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-for-of/">for-of</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-spread/">spread</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/transform-es2015-template-literals/">template
+literals</a></li>
+</ul>
+<p>See the <a
+href="https://babeljs.io/docs/plugins/#transform-plugins">Plugins
+page</a> in the Babel Docs for a complete list.</p>
+<p>But sometimes you don’t want to include all the plugins one by one.
+So there are prebuilt presets that will facilitate the process of
+installing each plugin.</p>
+<p>The three official presets currently available are:</p>
+<ul>
+<li><a href="https://babeljs.io/docs/plugins/preset-env/">Env</a></li>
+<li><a
+href="https://babeljs.io/docs/plugins/preset-react/">React</a></li>
+<li><a href="https://babeljs.io/docs/plugins/preset-flow/">Flow</a></li>
+</ul>
+<p><strong>Env</strong> is the most frequently used and the one we’ve
+used here. It automatically loads all the necessary transformations to
+make your code compatible depending on the targeted browsers.</p>
+<p>The <strong>React</strong> preset transforms code typically found in
+React projects, mainly adding compatibility with <a
+href="https://flow.org/">Flow</a> annotations and <a
+href="https://facebook.github.io/jsx/">JSX</a>.</p>
+<p>And finally, the <strong>Flow</strong> preset is used to clean up the
+code from <a href="https://flow.org/">Flow</a> type annotations
+(although it doesn’t check whether the types are valid or not.)</p>
+<h3 id="webant1_split_004.html_babelpolyfill">Babel Polyfill</h3>
+<p>There are JavaScript features that can’t be transformed
+syntactically, usually because there’s no equivalent functionality
+implemented — for example, Promises and generator functions.</p>
+<p>Those kinds of features have to be implemented in the browser by a
+library to be used in your code, and that’s the work of a polyfill.</p>
+<p>The Babel polyfill is composed by <a
+href="https://github.com/zloirock/core-js">core-js</a> and the <a
+href="https://github.com/facebook/regenerator">Regenerator</a> runtime.
+Together, they cover all the features in ES2015+.</p>
+<h3 id="webant1_split_004.html_advanceduse">Advanced Use</h3>
+<p>As mentioned, Babel can also be used to transform features that
+haven’t yet been implemented in the language. A good example of this is
+the class fields proposal (currently at <a
+href="https://github.com/tc39/proposal-class-fields">TC39 stage 3:
+candidate</a>). This is particularly popular among React devs, as it
+removes the necessity to explicitly bind methods to a particular
+component, and also means that a component’s <code>state</code> can be
+declared as a class field (potentially eliminating the need for a
+constructor).</p>
+<p>For those of you wanting to use class fields today, you would need to
+add the <a
+href="https://babeljs.io/docs/plugins/transform-class-properties/">babel-plugin-transform-class-properties</a>
+as a dev dependency:</p>
+<pre class="codeblock"><code>npm install --save-dev babel-plugin-transform-class-properties</code></pre>
+<p>You’d also update your <code>.babelrc</code> file as follows:</p>
+<pre class="codeblock"><code>{
+  &quot;presets&quot;: [&quot;env&quot;],
+  &quot;plugins&quot;: [&quot;transform-class-properties&quot;]
+}</code></pre>
+<p>Now you can write:</p>
+<pre class="codeblock"><code>class App extends Component {
+  state = { count: 0 };
+
+  incCount = () =&gt; {
+    this.setState(ps =&gt; ({ count: ps.count + 1 }));
+  };
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;{ this.state.count }&lt;/p&gt;
+        &lt;button onClick={this.incCount}&gt;add one&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+<p>And it doesn’t stop there. You can also use Babel to add new features
+of your own to the language, as our tutorial <a
+href="https://www.sitepoint.com/understanding-asts-building-babel-plugin/">Understanding
+ASTs by Building Your Own Babel Plugin</a> demonstrates.</p>
+<h2 id="webant1_split_004.html_alternatives">Alternatives</h2>
+<p>Writing modern web applications sometimes requires more than the
+features available in JavaScript. Other languages can also be translated
+to compatible JavaScript but also implement other useful features.</p>
+<p>The most popular option is <a
+href="http://www.typescriptlang.org/">TypeScript</a>, which is regular
+JavaScript that implements modern ES features but also adds others,
+especially regarding type safety.</p>
+<p>On the other extreme, there are entirely different languages across
+different categories, from the functional ones like PureScript to the
+object-oriented like Dart.</p>
+<p>For a deeper overview of alternative languages, take a look at <a
+href="https://www.sitepoint.com/10-languages-compile-javascript/">10
+Languages that Compile to JavaScript</a>.</p>
+<h2 id="webant1_split_004.html_conclusion">Conclusion</h2>
+<p>Babel is a great option for writing modern applications while still
+serving up JavaScript that can be understood by all developers and the
+wide range of browsers the code needs to run in.</p>
+<p>Babel is not only useful for transforming ES2015+ to previous
+versions of the language — both in the browser and on platforms such as
+Node.js — but also for adding new features that aren’t part of the
+standard. To see what I mean, just take a look at the npm directory to
+find all the available Babel <a
+href="https://www.npmjs.com/search?q=babel-plugin">plugins</a> or <a
+href="https://www.npmjs.com/search?q=babel-preset">presets</a>.</p>
+<p>As JavaScript is evolving at such a rapid pace, it’s obvious that
+browser manufacturers will need a while to implement the latest
+features. Giving Babel a place in your toolkit means that you can write
+cutting-edge JavaScript today, safe in the knowledge that you’re not
+abandoning any of your users. What’s not to love?</p>
+</section>
+<p><span id="webant1_split_006.html"></span></p>
+<div id="webant1_split_006.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="webant1_split_006.html_sevenways">Chapter 2: A Beginner’s Guide
+to Webpack 4 and Module Bundling</h1>
+<h3 class="author" id="webant1_split_006.html_sigil_toc_id_7">by Mark
+Brown</h3>
+<p><strong>The <a href="https://github.com/webpack/webpack">Webpack 4
+docs</a> state that:</strong></p>
+<blockquote>
+<p>Webpack is a module bundler. Its main purpose is to bundle JavaScript
+files for usage in a browser, yet it is also capable of transforming,
+bundling, or packaging just about any resource or asset.</p>
+</blockquote>
+<p><a href="https://webpack.js.org/">Webpack</a> has become one of the
+most important tools for modern web development. It’s primarily a module
+bundler for your JavaScript, but it can be taught to transform all of
+your front-end assets like HTML, CSS, even images. It can give you more
+control over the number of HTTP requests your app is making and allows
+you to use other flavors of those assets (Pug, Sass, and ES8, for
+example). Webpack also allows you to easily consume packages from
+npm.</p>
+<p>This article is aimed at those who are new to Webpack, and will cover
+initial setup and configuration, modules, loaders, plugins, code
+splitting and hot module replacement. If you find video tutorials
+helpful, I can highly recommend Glen Maddern’s <a
+href="https://www.youtube.com/watch?v=WQue1AN93YU">Webpack from First
+Principles</a> as a starting point to understand what it is that makes
+Webpack special. It’s a little old now, but the principles are still the
+same, and it’s a great introduction.</p>
+<section class="sigil_not_in_toc box tip github">
+<h4 class="sigil_not_in_toc">Example Code</h4>
+<div class="body">
+<p>To follow along at home, you’ll need to have <a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">Node.js
+installed</a>. You can also <a
+href="https://github.com/markbrown4/webpack-demo">download the demo app
+from GitHub</a>.</p>
+</div>
+</section>
+<h2 id="webant1_split_006.html_setup">Setup</h2>
+<p>Let’s initialize a new project with npm and install
+<code>webpack</code> and <code>webpack-cli</code>:</p>
+<pre class="codeblock"><code>mkdir webpack-demo &amp;&amp; cd webpack-demo
+npm init -y
+npm install --save-dev webpack webpack-cli</code></pre>
+<p>Next we’ll create the following directory structure and contents:</p>
+<pre class="codeblock"><code>  webpack-demo
+  |- package.json
++ |- webpack.config.js
++ |- /src
++   |- index.js
++ |- /dist
++   |- index.html</code></pre>
+<p><strong>dist/index.html</strong></p>
+<pre class="codeblock"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello Webpack&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p><strong>src/index.js</strong></p>
+<pre class="codeblock"><code>const root = document.createElement(&quot;div&quot;)
+root.innerHTML = `&lt;p&gt;Hello Webpack.&lt;/p&gt;`
+document.body.appendChild(root)</code></pre>
+<p><strong>webpack.config.js</strong></p>
+<pre class="codeblock"><code>const path = require(&#39;path&#39;)
+
+module.exports = {
+  entry: &#39;./src/index.js&#39;,
+  output: {
+    filename: &#39;bundle.js&#39;,
+    path: path.resolve(__dirname, &#39;dist&#39;)
+  }
+}</code></pre>
+<p>This tells Webpack to compile the code in our entry point
+<code>src/index.js</code> and output a bundle in
+<code>/dist/bundle.js</code>. Let’s add an <a
+href="https://docs.npmjs.com/misc/scripts">npm script</a> for running
+Webpack.</p>
+<p><strong>package.json</strong></p>
+<pre class="codeblock"><code>  {
+    ...
+    &quot;scripts&quot;: {
+-     &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
++     &quot;develop&quot;: &quot;webpack --mode development --watch&quot;,
++     &quot;build&quot;: &quot;webpack --mode production&quot;
+    },
+    ...
+  }</code></pre>
+<p>Using the <code>npm run develop</code> command, we can create our
+first bundle!</p>
+<pre class="codeblock"><code>Asset      Size      Chunks           Chunk Names
+bundle.js  2.92 KiB  main  [emitted]  main</code></pre>
+<p>You should now be able to load <code>dist/index.html</code> in your
+browser and be greeted with “Hello Webpack”.</p>
+<p>Open up <code>dist/bundle.js</code> to see what Webpack has done. At
+the top is Webpack’s module bootstrapping code, and right at the bottom
+is our module. You may not be colored impressed just yet, but if you’ve
+come this far you can now start using ES Modules, and Webpack will be
+able to produce a bundle for production that will work in all
+browsers.</p>
+<p>Restart the build with <kbd>Ctrl</kbd> + <kbd>C</kbd> and run
+<code>npm run build</code> to compile our bundle in <em>production
+mode</em>.</p>
+<pre class="codeblock"><code>Asset      Size       Chunks           Chunk Names
+bundle.js  647 bytes  main  [emitted]  main</code></pre>
+<p>Notice that the bundle size has come down from <strong>2.92
+KiB</strong> to <strong>647 bytes</strong>.</p>
+<p>Take another look at <code>dist/bundle.js</code> and you’ll see an
+ugly mess of code. Our bundle has been minified with UglifyJS: the code
+will run exactly the same, but it’s done with the smallest file size
+possible.</p>
+<ul>
+<li><code>--mode development</code> optimizes for build speed and
+debugging</li>
+<li><code>--mode production</code> optimizes for execution speed at
+runtime and output file size.</li>
+</ul>
+<h2 id="webant1_split_006.html_modules">Modules</h2>
+<p>Using ES Modules, you can split up your large programs into many
+small, self-contained programs.</p>
+<p>Out of the box, Webpack knows how to consume ES Modules using
+<code>import</code> and <code>export</code> statements. As an example,
+let’s try this out now by installing <a
+href="https://lodash.com/">lodash-es</a> and adding a second module:</p>
+<pre class="codeblock"><code>npm install --save-dev lodash-es</code></pre>
+<p><strong>src/index.js</strong></p>
+<pre class="codeblock"><code>import { groupBy } from &quot;lodash-es&quot;
+import people from &quot;./people&quot;
+
+const managerGroups = groupBy(people, &quot;manager&quot;)
+
+const root = document.createElement(&quot;div&quot;)
+root.innerHTML = `&lt;pre&gt;${JSON.stringify(managerGroups, null, 2)}&lt;/pre&gt;`
+document.body.appendChild(root)</code></pre>
+<p><strong>src/people.js</strong></p>
+<pre class="codeblock"><code>const people = [
+  {
+    manager: &quot;Jen&quot;,
+    name: &quot;Bob&quot;
+  },
+  {
+    manager: &quot;Jen&quot;,
+    name: &quot;Sue&quot;
+  },
+  {
+    manager: &quot;Bob&quot;,
+    name: &quot;Shirley&quot;
+  }
+]
+
+export default people</code></pre>
+<p>Run <code>npm run develop</code> to start Webpack and refresh
+<code>index.html</code>. You should see an array of people grouped by
+manager printed to the screen.</p>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Imports Without a Relative Patch</h4>
+<div class="body">
+<p>Imports without a relative path like <code>'es-lodash'</code> are
+modules from npm installed to <code>/node_modules</code>. Your own
+modules will always need a relative path like <code>'./people'</code>,
+as this is how you can tell them apart.</p>
+</div>
+</section>
+<p>Notice in the console that our bundle size has increased to
+<strong>1.41 MiB</strong>! This is worth keeping an eye on, though in
+this case there’s no cause for concern. Using <code>npm run build</code>
+to compile in <em>production</em> mode, all of the unused lodash modules
+from <em>lodash-es</em> are removed from bundle. This process of
+removing unused imports is known as <strong>tree-shaking</strong>, and
+is something you get for free with Webpack.</p>
+<pre class="codeblock"><code>&gt; npm run develop
+
+Asset      Size      Chunks                  Chunk Names
+bundle.js  1.41 MiB  main  [emitted]  [big]  main</code></pre>
+<pre class="codeblock"><code>&gt; npm run build
+
+Asset      Size      Chunks        Chunk Names
+bundle.js  16.7 KiB  0  [emitted]  main</code></pre>
+<h2 id="webant1_split_006.html_loaders">Loaders</h2>
+<p>Loaders let you run preprocessors on files as they’re imported. This
+allows you to bundle static resources <em>beyond JavaScript</em>, but
+let’s look at what can be done when loading <code>.js</code> modules
+first.</p>
+<p>Let’s keep our code modern by running all <code>.js</code> files
+through the next-generation JavaScript transpiler <a
+href="http://babeljs.io/">Babel</a>:</p>
+<pre class="codeblock"><code>npm install --save-dev &quot;babel-loader@^8.0.0-beta&quot; @babel/core @babel/preset-env</code></pre>
+<p><strong>webpack.config.js</strong></p>
+<pre class="codeblock"><code>  const path = require(&#39;path&#39;)
+
+  module.exports = {
+    entry: &#39;./src/index.js&#39;,
+    output: {
+      filename: &#39;bundle.js&#39;,
+      path: path.resolve(__dirname, &#39;dist&#39;)
+    },
++   module: {
++     rules: [
++       {
++         test: /\.js$/,
++         exclude: /(node_modules|bower_components)/,
++         use: {
++           loader: &#39;babel-loader&#39;,
++         }
++       }
++     ]
++   }
+  }</code></pre>
+<p><strong>.babelrc</strong></p>
+<pre class="codeblock"><code>{
+  &quot;presets&quot;: [
+    [&quot;@babel/env&quot;, {
+      &quot;modules&quot;: false
+    }]
+  ],
+  &quot;plugins&quot;: [&quot;syntax-dynamic-import&quot;]
+}</code></pre>
+<p>This config prevents Babel from transpiling <code>import</code> and
+<code>export</code> statements into ES5, and enables dynamic imports —
+which we’ll look at later in the section on Code Splitting.</p>
+<p>We’re now free to use modern language features, and they’ll be
+compiled down to ES5 that runs in all browsers.</p>
+<h3 id="webant1_split_006.html_sass">Sass</h3>
+<p>Loaders can be chained together into a series of transforms. A good
+way to demonstrate how this works is by importing Sass from our
+JavaScript:</p>
+<pre class="codeblock"><code>npm install --save-dev style-loader css-loader sass-loader node-sass</code></pre>
+<p><strong>webpack.config.js</strong></p>
+<pre class="codeblock"><code>  module.exports = {
+    ...
+    module: {
+      rules: [
+        ...
++       {
++         test: /\.scss$/,
++         use: [{
++           loader: &#39;style-loader&#39;
++         }, {
++           loader: &#39;css-loader&#39;
++         }, {
++           loader: &#39;sass-loader&#39;
++         }]
++       }
+      ]
+    }
+  }</code></pre>
+<p>These loaders are processed in reverse order:</p>
+<ul>
+<li><code>sass-loader</code> transforms Sass into CSS.</li>
+<li><code>css-loader</code> parses the CSS into JavaScript and resolves
+any dependencies.</li>
+<li><code>style-loader</code> outputs our CSS into a
+<code>&lt;style&gt;</code> tag in the document.</li>
+</ul>
+<p>You can think of these as function calls. The output of one loader
+feeds as input into the next:</p>
+<pre class="codeblock"><code>styleLoader(cssLoader(sassLoader(&quot;source&quot;)))</code></pre>
+<p>Let’s add a Sass source file and import is a module.</p>
+<p><strong>src/style.scss</strong></p>
+<pre class="codeblock"><code>$bluegrey: #2b3a42;
+
+pre {
+  padding: 8px 16px;
+  background: $bluegrey;
+  color: #e1e6e9;
+  font-family: Menlo, Courier, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);
+  border-radius: 3px;
+}</code></pre>
+<p><strong>src/index.js</strong></p>
+<pre class="codeblock"><code>  import { groupBy } from &#39;lodash-es&#39;
+  import people from &#39;./people&#39;
+
++ import &#39;./style.scss&#39;
+
+  ...</code></pre>
+<p>Restart the build with <kbd>Ctrl</kbd> + <kbd>C</kbd> and
+<code>npm run develop</code>. Refresh <code>index.html</code> in the
+browser and you should see some styling.</p>
+<h3 id="webant1_split_006.html_cssinjs">CSS in JS</h3>
+<p>We just imported a Sass file from our JavaScript, as a module.</p>
+<p>Open up <code>dist/bundle.js</code> and search for “pre {”. Indeed,
+our Sass has been compiled to a string of CSS and saved as a module
+within our bundle. When we import this module into our JavaScript,
+<code>style-loader</code> outputs that string into an embedded
+<code>&lt;style&gt;</code> tag.</p>
+<p><strong>Why would you do such a thing?</strong></p>
+<p>I won’t delve too far into this topic here, but here are a few
+reasons to consider:</p>
+<ul>
+<li>A JavaScript component you may want to include in your project may
+<em>depend</em> on other assets to function properly (HTML, CSS, Images,
+SVG). If these can all be bundled together, it’s far easier to import
+and use.</li>
+<li>Dead code elimination: When a JS component is no longer imported by
+your code, the CSS will no longer be imported either. The bundle
+produced will only ever contain code that does something.</li>
+<li>CSS Modules: The global namespace of CSS makes it very difficult to
+be confident that a change to your CSS will not have any side effects.
+<a href="https://github.com/css-modules/css-modules">CSS modules</a>
+change this by making CSS local by default and exposing unique class
+names that you can reference in your JavaScript.</li>
+<li>Bring down the number of HTTP requests by bundling/splitting code in
+clever ways.</li>
+</ul>
+<h3 id="webant1_split_006.html_images">Images</h3>
+<p>The last example of loaders we’ll look at is the handling of images
+with <code>file-loader</code>.</p>
+<p>In a standard HTML document, images are fetched when the browser
+encounters an <code>img</code> tag or an element with a
+<code>background-image</code> property. With Webpack, you can optimize
+this in the case of small images by storing the source of the images as
+strings inside your JavaScript. By doing this, you preload them and the
+browser won’t have to fetch them with separate requests later:</p>
+<pre class="codeblock"><code>npm install --save-dev file-loader</code></pre>
+<p><strong>webpack.config.js</strong></p>
+<pre class="codeblock"><code>  module.exports = {
+    ...
+    module: {
+      rules: [
+        ...
++       {
++         test: /\.(png|svg|jpg|gif)$/,
++         use: [
++           {
++             loader: &#39;file-loader&#39;
++           }
++         ]
++       }
+      ]
+    }
+  }</code></pre>
+<p>Download a <a
+href="https://raw.githubusercontent.com/sitepoint-editors/webpack-demo/master/src/code.png">test
+image</a> with this command:</p>
+<pre class="codeblock"><code>curl https://raw.githubusercontent.com/sitepoint-editors/webpack-demo/master/src/code.png --output src/code.png</code></pre>
+<p>Restart the build with <kbd>Ctrl</kbd> + <kbd>C</kbd> and
+<code>npm run develop</code> and you’ll now be able to import images as
+modules!</p>
+<p><strong>src/index.js</strong></p>
+<pre class="codeblock"><code>  import { groupBy } from &#39;lodash-es&#39;
+  import people from &#39;./people&#39;
+
+  import &#39;./style.scss&#39;
++ import &#39;./image-example&#39;
+
+  ...</code></pre>
+<p><strong>src/image-example.js</strong></p>
+<pre class="codeblock"><code>import codeURL from &quot;./code.png&quot;
+
+const img = document.createElement(&quot;img&quot;)
+img.src = codeURL
+img.style = &quot;background: #2B3A42; padding: 20px&quot;
+img.width = 32
+document.body.appendChild(img)</code></pre>
+<p>This will include an image where the <code>src</code> attribute
+contains a <a
+href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs">data
+URI</a> of the image itself:</p>
+<pre class="codeblock"><code>&lt;img src=&quot;data:image/png;base64,iVBO...&quot; style=&quot;background: #2B3A42; padding: 20px&quot; width=&quot;32&quot;&gt;</code></pre>
+<p>Background images in our CSS are also processed by
+<code>file-loader</code>.</p>
+<p><strong>src/style.scss</strong></p>
+<pre class="codeblock"><code>  $bluegrey: #2b3a42;
+
+  pre {
+    padding: 8px 16px;
+-   background: $bluegrey;
++   background: $bluegrey url(&quot;code.png&quot;) no-repeat center center / 32px 32px;
+    color: #e1e6e9;
+    font-family: Menlo, Courier, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    text-shadow: 0 1px 0 rgba(23, 31, 35, 0.5);
+    border-radius: 3px;
+  }</code></pre>
+<p>See more examples of Loaders in the docs:</p>
+<ul>
+<li><a
+href="https://webpack.js.org/guides/asset-management/#loading-fonts">Loading
+Fonts</a></li>
+<li><a
+href="https://webpack.js.org/guides/asset-management/#loading-data">Loading
+Data</a></li>
+</ul>
+<h3 id="webant1_split_006.html_dependencygraph">Dependency Graph</h3>
+<p>You should now be able to see how loaders help to build up a tree of
+dependencies amongst your assets. This is what the image on the Webpack
+home page is demonstrating.</p>
+<p><img src="Images/1484692838webpack-dependency-tree.png" width="817"
+alt="JS requires SCSS requires CSS requires PNG" /></p>
+<p>Though JavaScript is the entry point, Webpack appreciates that your
+other asset types — like HTML, CSS, and SVG — each have dependencies of
+their own, which should be considered as part of the build process.</p>
+<h2 id="webant1_split_006.html_codesplitting">Code Splitting</h2>
+<p>From the <a
+href="https://webpack.js.org/guides/code-splitting/">Webpack
+docs</a>:</p>
+<blockquote>
+<p>Code splitting is one of the most compelling features of Webpack.
+This feature allows you to split your code into various bundles which
+can then be loaded on demand or in parallel. It can be used to achieve
+smaller bundles and control resource load prioritization which, if used
+correctly, can have a major impact on load time.</p>
+</blockquote>
+<p>So far, we’ve only seen a single entry point —
+<code>src/index.js</code> — and a single output bundle —
+<code>dist/bundle.js</code>. When your app grows, you’ll need to split
+this up so that the entire codebase isn’t downloaded at the start. A
+good approach is to use <a
+href="https://webpack.js.org/guides/code-splitting/">Code Splitting</a>
+and <a href="https://webpack.js.org/guides/lazy-loading/">Lazy
+Loading</a> to fetch things on demand as the code paths require
+them.</p>
+<p>Let’s demonstrate this by adding a “chat” module, which is fetched
+and initialized when someone interacts with it. We’ll make a new entry
+point and give it a name, and we’ll also make the output’s filename
+dynamic so it’s different for each chunk.</p>
+<p><strong>webpack.config.js</strong></p>
+<pre class="codeblock"><code>   const path = require(&#39;path&#39;)
+
+  module.exports = {
+-   entry: &#39;./src/index.js&#39;,
++   entry: {
++     app: &#39;./src/app.js&#39;
++   },
+    output: {
+-     filename: &#39;bundle.js&#39;,
++     filename: &#39;[name].bundle.js&#39;,
+      path: path.resolve(__dirname, &#39;dist&#39;)
+    },
+    ...
+  }</code></pre>
+<p><strong>src/app.js</strong></p>
+<pre class="codeblock"><code>import &#39;./app.scss&#39;
+
+const button = document.createElement(&quot;button&quot;)
+button.textContent = &#39;Open chat&#39;
+document.body.appendChild(button)
+
+button.onclick = () =&gt; {
+  import(/* webpackChunkName: &quot;chat&quot; */ &quot;./chat&quot;).then(chat =&gt; {
+    chat.init()
+  })
+}</code></pre>
+<p><strong>src/chat.js</strong></p>
+<pre class="codeblock"><code>import people from &quot;./people&quot;
+
+export function init() {
+  const root = document.createElement(&quot;div&quot;)
+  root.innerHTML = `&lt;p&gt;There are ${people.length} people in the room.&lt;/p&gt;`
+  document.body.appendChild(root)
+}</code></pre>
+<p><strong>src/app.scss</strong></p>
+<pre class="codeblock"><code>button {
+  padding: 10px;
+  background: #24b47e;
+  border: 1px solid rgba(#000, .1);
+  border-width: 1px 1px 3px;
+  border-radius: 3px;
+  font: inherit;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(#000, .3), 0 1px 1px rgba(#000, .2);
+}</code></pre>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Not Webpack Specific Syntax</h4>
+<div class="body">
+<p>Note: Despite the <code>/* webpackChunkName */</code> comment for
+giving the bundle a name, this syntax is <em>not</em> Webpack specific.
+It’s the <a
+href="https://github.com/tc39/proposal-dynamic-import">proposed syntax
+for dynamic imports</a> intended to be supported directly in the
+browser.</p>
+</div>
+</section>
+<p>Let’s run <code>npm run build</code> and see what this generates:</p>
+<pre class="codeblock"><code>Asset           Size       Chunks        Chunk Names
+chat.bundle.js  377 bytes  0  [emitted]  chat
+app.bundle.js   7.65 KiB   1  [emitted]  app</code></pre>
+<p>As our entry bundle has changed, we’ll need to update our path to it
+as well.</p>
+<p><strong>dist/index.html</strong></p>
+<pre class="codeblock"><code>  &lt;!doctype html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Hello Webpack&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+-     &lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
++     &lt;script src=&quot;app.bundle.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+<p>Let’s start up a server from the dist directory to see this in
+action:</p>
+<pre class="codeblock"><code>cd dist
+npx serve</code></pre>
+<p>Open http://localhost:5000 in the browser and see what happens. Only
+<code>bundle.js</code> is fetched initially. When the button is clicked,
+the chat module is imported and initialized.</p>
+<p><img src="Images/1521906882lazy-loading.png" width="415"
+alt="Network requests showing lazy loading of chunks" /></p>
+<p>With very little effort, we’ve added dynamic code splitting and lazy
+loading of modules to our app. This is a great starting point for
+building a highly performant web app.</p>
+<h2 id="webant1_split_006.html_plugins">Plugins</h2>
+<p>While <em>loaders</em> operate transforms on single files,
+<em>plugins</em> operate across larger chunks of code.</p>
+<p>Now that we’re bundling our code, external modules <em>and</em>
+static assets, our bundle will grow — <em>quickly</em>. Plugins are here
+to help us split our code in clever ways and optimize things for
+production.</p>
+<p>Without knowing it, we’ve actually already used many <a
+href="https://webpack.js.org/concepts/mode/#usage">default Webpack
+plugins with “mode”</a></p>
+<p><strong>development</strong></p>
+<ul>
+<li>Provides <code>process.env.NODE_ENV</code> with value
+“development”</li>
+<li>NamedModulesPlugin</li>
+</ul>
+<p><strong>production</strong></p>
+<ul>
+<li>Provides <code>process.env.NODE_ENV</code> with value
+“production”</li>
+<li>UglifyJsPlugin</li>
+<li>ModuleConcatenationPlugin</li>
+<li>NoEmitOnErrorsPlugin</li>
+</ul>
+<h3 id="webant1_split_006.html_production">Production</h3>
+<p>Before adding additional plugins, we’ll first split our config up so
+that we can apply plugins specific to each environment.</p>
+<p>Rename <code>webpack.config.js</code> to
+<code>webpack.common.js</code> and add a config file for development and
+production.</p>
+<pre class="codeblock"><code>- |- webpack.config.js
++ |- webpack.common.js
++ |- webpack.dev.js
++ |- webpack.prod.js</code></pre>
+<p>We’ll use <code>webpack-merge</code> to combine our common config
+with the environment-specific config:</p>
+<pre class="codeblock"><code>npm install --save-dev webpack-merge</code></pre>
+<p><strong>webpack.dev.js</strong></p>
+<pre class="codeblock"><code>const merge = require(&#39;webpack-merge&#39;)
+const common = require(&#39;./webpack.common.js&#39;)
+
+module.exports = merge(common, {
+  mode: &#39;development&#39;
+})</code></pre>
+<p><strong>webpack.prod.js</strong></p>
+<pre class="codeblock"><code>const merge = require(&#39;webpack-merge&#39;)
+const common = require(&#39;./webpack.common.js&#39;)
+
+module.exports = merge(common, {
+  mode: &#39;production&#39;
+})</code></pre>
+<p><strong>package.json</strong></p>
+<pre class="codeblock"><code>   &quot;scripts&quot;: {
+-    &quot;develop&quot;: &quot;webpack --watch --mode development&quot;,
+-    &quot;build&quot;: &quot;webpack --mode production&quot;
++    &quot;develop&quot;: &quot;webpack --watch --config webpack.dev.js&quot;,
++    &quot;build&quot;: &quot;webpack --config webpack.prod.js&quot;
+   },</code></pre>
+<p>Now we can add plugins specific to development into
+<code>webpack.dev.js</code> and plugins specific to production in
+<code>webpack.prod.js</code>.</p>
+<h3 id="webant1_split_006.html_splitcss">Split CSS</h3>
+<p>It’s considered best practice to split your CSS from your JavaScript
+when bundling for production using <a
+href="https://webpack.js.org/plugins/extract-text-webpack-plugin">ExtractTextWebpackPlugin</a>.</p>
+<p>The current <code>.scss</code> loaders are perfect for development,
+so we’ll move those from <code>webpack.common.js</code> into
+<code>webpack.dev.js</code> and add
+<code>ExtractTextWebpackPlugin</code> to <code>webpack.prod.js</code>
+only.</p>
+<pre class="codeblock"><code>npm install --save-dev extract-text-webpack-plugin@4.0.0-beta.0</code></pre>
+<p><strong>webpack.common.js</strong></p>
+<pre class="codeblock"><code>  ...
+  module.exports = {
+    ...
+    module: {
+      rules: [
+        ...
+-       {
+-         test: /\.scss$/,
+-         use: [
+-           {
+-             loader: &#39;style-loader&#39;
+-           }, {
+-             loader: &#39;css-loader&#39;
+-           }, {
+-             loader: &#39;sass-loader&#39;
+-           }
+-         ]
+-       },
+        ...
+      ]
+    }
+  }</code></pre>
+<p><strong>webpack.dev.js</strong></p>
+<pre class="codeblock"><code>  const merge = require(&#39;webpack-merge&#39;)
+  const common = require(&#39;./webpack.common.js&#39;)
+
+  module.exports = merge(common, {
+    mode: &#39;development&#39;,
++   module: {
++     rules: [
++       {
++         test: /\.scss$/,
++         use: [
++           {
++             loader: &#39;style-loader&#39;
++           }, {
++             loader: &#39;css-loader&#39;
++           }, {
++             loader: &#39;sass-loader&#39;
++           }
++         ]
++       }
++     ]
++   }
+  })</code></pre>
+<p><strong>webpack.prod.js</strong></p>
+<pre class="codeblock"><code>  const merge = require(&#39;webpack-merge&#39;)
++ const ExtractTextPlugin = require(&#39;extract-text-webpack-plugin&#39;)
+  const common = require(&#39;./webpack.common.js&#39;)
+
+  module.exports = merge(common, {
+    mode: &#39;production&#39;,
++   module: {
++     rules: [
++       {
++         test: /\.scss$/,
++         use: ExtractTextPlugin.extract({
++           fallback: &#39;style-loader&#39;,
++           use: [&#39;css-loader&#39;, &#39;sass-loader&#39;]
++         })
++       }
++     ]
++   },
++   plugins: [
++     new ExtractTextPlugin(&#39;style.css&#39;)
++   ]
+  })</code></pre>
+<p>Let’s compare the output of our two build scripts:</p>
+<pre class="codeblock"><code>&gt; npm run develop
+
+Asset           Size      Chunks           Chunk Names
+app.bundle.js   28.5 KiB  app   [emitted]  app
+chat.bundle.js  1.4 KiB   chat  [emitted]  chat</code></pre>
+<pre class="codeblock"><code>&gt; npm run build
+
+Asset           Size       Chunks        Chunk Names
+chat.bundle.js  375 bytes  0  [emitted]  chat
+app.bundle.js   1.82 KiB   1  [emitted]  app
+style.css       424 bytes  1  [emitted]  app</code></pre>
+<p>Now that our CSS is extracted from our JavaScript bundle for
+production, we need to <code>&lt;link&gt;</code> to it from our
+HTML.</p>
+<p><strong>dist/index.html</strong></p>
+<pre class="codeblock"><code>  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;title&gt;Code Splitting&lt;/title&gt;
++     &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;app.bundle.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+<p>This allows for parallel download of the CSS and JavaScript in the
+browser, so will be faster-loading than a single bundle. It also allows
+the styles to be displayed before the JavaScript finishes
+downloading.</p>
+<h3 id="webant1_split_006.html_generatinghtml">Generating HTML</h3>
+<p>Whenever our outputs have changed, we’ve had to keep updating
+<code>index.html</code> to reference the new file paths. This is
+precisely what <code>html-webpack-plugin</code> was created to do for us
+automatically.</p>
+<p>We may as well add <code>clean-webpack-plugin</code> at the same time
+to clear out our <code>/dist</code> directory before each build.</p>
+<pre class="codeblock"><code>npm install --save-dev html-webpack-plugin clean-webpack-plugin</code></pre>
+<p><strong>webpack.common.js</strong></p>
+<pre class="codeblock"><code>  const path = require(&#39;path&#39;)
++ const CleanWebpackPlugin = require(&#39;clean-webpack-plugin&#39;);
++ const HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;);
+
+  module.exports = {
+    ...
++   plugins: [
++     new CleanWebpackPlugin([&#39;dist&#39;]),
++     new HtmlWebpackPlugin({
++       title: &#39;My killer app&#39;
++     })
++   ]
+  }</code></pre>
+<p>Now every time we build, dist will be cleared out. We’ll now see
+<code>index.html</code> output too, with the correct paths to our entry
+bundles.</p>
+<p>Running <code>npm run develop</code> produces this:</p>
+<pre class="codeblock"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;My killer app&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;app.bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>And <code>npm run build</code> produces this:</p>
+<pre class="codeblock"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;My killer app&lt;/title&gt;
+    &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;app.bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2 id="webant1_split_006.html_development">Development</h2>
+<p>The webpack-dev-server provides you with a simple web server and
+gives you <em>live reloading</em>, so you don’t need to manually refresh
+the page to see changes.</p>
+<pre class="codeblock"><code>npm install --save-dev webpack-dev-server</code></pre>
+<p><strong>package.json</strong></p>
+<pre class="codeblock"><code>  {
+    ...
+    &quot;scripts&quot;: {
+-     &quot;develop&quot;: &quot;webpack --watch --config webpack.dev.js&quot;,
++     &quot;develop&quot;: &quot;webpack-dev-server --config webpack.dev.js&quot;,
+    }
+    ...
+  }</code></pre>
+<pre class="codeblock"><code>&gt; npm run develop
+
+ℹ ｢wds｣: Project is running at http://localhost:8080/
+ℹ ｢wds｣: webpack output is served from /</code></pre>
+<p>Open up http://localhost:8080/ in the browser and make a change to
+one of the JavaScript or CSS files. You should see it build and refresh
+automatically.</p>
+<h3
+id="webant1_split_006.html_hotmodulereplacement">HotModuleReplacement</h3>
+<p>The <code>HotModuleReplacement</code> plugin goes one step further
+than Live Reloading and swaps out modules at runtime <em>without the
+refresh</em>. When configured correctly, this saves a huge amount of
+time during development of single page apps. Where you have a lot of
+state in the page, you can make incremental changes to components, and
+only the changed modules are replaced and updated.</p>
+<p><strong>webpack.dev.js</strong></p>
+<pre class="codeblock"><code>+ const webpack = require(&#39;webpack&#39;)
+  const merge = require(&#39;webpack-merge&#39;)
+  const common = require(&#39;./webpack.common.js&#39;)
+
+  module.exports = merge(common, {
+    mode: &#39;development&#39;,
++   devServer: {
++     hot: true
++   },
++   plugins: [
++     new webpack.HotModuleReplacementPlugin()
++   ],
+    ...
+  }</code></pre>
+<p>Now we need to <em>accept</em> changed modules from our code to
+re-initialize things.</p>
+<p><strong>src/app.js</strong></p>
+<pre class="codeblock"><code>+ if (module.hot) {
++   module.hot.accept()
++ }
+
+  ...</code></pre>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Hot Module Replacement</h4>
+<div class="body">
+<p>When Hot Module Replacement is enabled, <code>module.hot</code> is
+set to <code>true</code> for development and <code>false</code> for
+production, so these are stripped out of the bundle.</p>
+</div>
+</section>
+<p>Restart the build and see what happens when we do the following:</p>
+<ul>
+<li>Click <em>Open chat</em></li>
+<li>Add a new person to the <code>people.js</code> module</li>
+<li>Click <em>Open chat</em> again.</li>
+</ul>
+<p><img src="Images/1521906879hmr.png" width="359"
+alt="Adding people to the chat" /></p>
+<p>Here’s what’s happening:</p>
+<ol>
+<li>When <em>Open chat</em> is clicked, the <code>chat.js</code> module
+is fetched and initialized</li>
+<li>HMR detects when <code>people.js</code> is modified</li>
+<li><code>module.hot.accept()</code> in <code>index.js</code> causes all
+modules loaded by this entry chunk to be replaced</li>
+<li>When <em>Open chat</em> is clicked again, <code>chat.init()</code>
+is run with the code from the updated module.</li>
+</ol>
+<h3 id="webant1_split_006.html_cssreplacement">CSS Replacement</h3>
+<p>Let’s change the button color to red and see what happens:</p>
+<p><strong>src/app.scss</strong></p>
+<pre class="codeblock"><code>  button {
+    ...
+-   background: #24b47e;
++   background: red;
+    ...
+  }</code></pre>
+<p><img src="Images/1521906881hmr2.png" width="359"
+alt="Changing the CSS" /></p>
+<p>Now we get to see instant updates to our styles without losing any
+state. This is a much-improved developer experience! And it feels like
+the future.</p>
+<h2 id="webant1_split_006.html_http2">HTTP/2</h2>
+<p>One of the primary benefits of using a module bundler like Webpack is
+that it can help you improve performance by giving you control over how
+the assets are <em>built</em> and then <em>fetched</em> on the client.
+It has been considered <a
+href="https://developer.yahoo.com/performance/rules.html">best
+practice</a> for years to concatenate files to reduce the number of
+requests that need to be made on the client. This is still valid, but <a
+href="https://www.sitepoint.com/file-bundling-and-http2/">HTTP/2 now
+allows multiple files to be delivered in a <em>single</em> request</a>,
+so concatenation isn’t a silver bullet anymore. Your app may actually
+benefit from having many small files individually cached. The client
+could then fetch a single changed module rather than having to fetch an
+entire bundle again with <em>mostly</em> the same contents.</p>
+<p>The creator of Webpack, <a href="https://twitter.com/wSokra">Tobias
+Koppers</a>, has written an informative post explaining why bundling is
+still important, even in the HTTP/2 era.</p>
+<p>Read more about this over at <a
+href="https://medium.com/webpack/webpack-http-2-7083ec3f3ce6">Webpack
+&amp; HTTP/2</a>.</p>
+<h2 id="webant1_split_006.html_overtoyou">Over to You</h2>
+<p>I hope you’ve found this introduction to Webpack helpful and are able
+to start using it to great effect. It can take a little time to wrap
+your head around Webpack’s configuration, loaders and plugins, but
+learning how this tool works will pay off.</p>
+<p>The documentation for Webpack 4 is currently being worked on, but is
+really well put together. I highly recommend reading through the <a
+href="https://webpack.js.org/concepts/">Concepts</a> and <a
+href="https://webpack.js.org/guides/">Guides</a> for more information.
+Here’s a few other topics you may be interested in:</p>
+<ul>
+<li><a
+href="https://webpack.js.org/guides/development/#using-source-maps">Source
+Maps for development</a></li>
+<li><a
+href="https://webpack.js.org/guides/production/#source-mapping">Source
+Maps for production</a></li>
+<li><a href="https://webpack.js.org/guides/caching/">Cache busting with
+hashed filenames</a></li>
+<li><a
+href="https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk">Splitting
+a vendor bundle</a></li>
+</ul>
+</div>
+<p><span id="webant1_split_012.html"></span></p>
+<div id="webant1_split_012.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="webant1_split_012.html_cloudhost">Chapter 3: An Introduction to
+Gulp.js</h1>
+<h3 class="calibre8" id="webant1_split_012.html_sigil_toc_id_8">by Craig
+Buckler</h3>
+<p><strong>Developers spend precious little time coding. Even if we
+ignore irritating meetings, much of the job involves basic tasks which
+can sap your working day:</strong></p>
+<ul>
+<li>generating HTML from templates and content files</li>
+<li>compressing new and modified images</li>
+<li>compiling Sass to CSS code</li>
+<li>removing <code>console</code> and <code>debugger</code> statements
+from scripts</li>
+<li>transpiling ES6 to cross-browser–compatible ES5 code</li>
+<li>code linting and validation</li>
+<li>concatenating and minifying CSS and JavaScript files</li>
+<li>deploying files to development, staging and production servers.</li>
+</ul>
+<p>Tasks must be repeated every time you make a change. You may start
+with good intentions, but the most infallible developer will forget to
+compress an image or two. Over time, pre-production tasks become
+increasingly arduous and time-consuming; you'll dread the inevitable
+content and template changes. It's mind-numbing, repetitive work.
+Wouldn’t it be better to spend your time on more profitable jobs?</p>
+<p>If so, you need a <em>task runner</em> or <em>build process</em>.</p>
+<h2 id="webant1_split_012.html_thatsoundsscarilycomplicated">That Sounds
+Scarily Complicated!</h2>
+<p>Creating a build process will take time. It's more complex than
+performing each task manually, but over the long term, you’ll save hours
+of effort, reduce human error and save your sanity. Adopt a pragmatic
+approach:</p>
+<ul>
+<li>Automate the most frustrating tasks first.</li>
+<li>Try not to over-complicate your build process. An hour or two is
+more than enough for the initial setup.</li>
+<li>Choose task runner software and stick with it for a while. Don't
+switch to another option on a whim.</li>
+</ul>
+<p>Some of the tools and concepts may be new to you, but take a deep
+breath and concentrate on one thing at a time.</p>
+<h2 id="webant1_split_012.html_taskrunnerstheoptions">Task Runners: the
+Options</h2>
+<p>Build tools such as <a href="https://www.gnu.org/software/make/">GNU
+Make</a> have been available for decades, but web-specific task runners
+are a relatively new phenomenon. The first to achieve critical mass was
+<a href="http://gruntjs.com/">Grunt</a> — a Node.js task runner which
+used plugins controlled (originally) by a JSON configuration file. Grunt
+was hugely successful, but there were a number of issues:</p>
+<ol>
+<li>Grunt required plugins for basic functionality such as file
+watching.</li>
+<li>Grunt plugins often performed multiple tasks, which made
+customisation more awkward.</li>
+<li>JSON configuration could become unwieldy for all but the most basic
+tasks.</li>
+<li>Tasks could run slowly because Grunt saved files between every
+processing step.</li>
+</ol>
+<p>Many issues were addressed in later editions, but <a
+href="http://gulpjs.com/">Gulp</a> had already arrived and offered a
+number of improvements:</p>
+<ol>
+<li>Features such as file watching were built in.</li>
+<li>Gulp plugins were <em>(mostly)</em> designed to do a single
+job.</li>
+<li>Gulp used JavaScript configuration code that was less verbose,
+easier to read, simpler to modify, and provided better flexibility.</li>
+<li>Gulp was faster because it uses <a
+href="https://www.sitepoint.com/basics-node-js-streams/">Node.js
+streams</a> to pass data through a series of piped plugins. Files were
+only written at the end of the task.</li>
+</ol>
+<p>Of course, Gulp itself isn't perfect, and new task runners such as <a
+href="http://broccolijs.com/">Broccoli.js</a>, <a
+href="http://brunch.io/">Brunch</a> and <a
+href="https://webpack.github.io/">webpack</a> have also been competing
+for developer attention. More recently, <a
+href="https://www.sitepoint.com/guide-to-npm-as-a-build-tool/">npm
+itself has been touted as a simpler option</a>. All have their pros and
+cons, but <a
+href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results#js-task-runners">Gulp
+remains the favorite and is currently used by more than 40% of web
+developers</a>.</p>
+<p>Gulp requires Node.js, but while some JavaScript knowledge is
+beneficial, developers from all web programming faiths will find it
+useful.</p>
+<h2 id="webant1_split_012.html_whataboutgulp4">What About Gulp 4?</h2>
+<p>This tutorial describes how to use Gulp 3 — the most recent release
+version at the time of writing. Gulp 4 has been in development for some
+time but remains a beta product. It's possible to <a
+href="https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/">use
+or switch to Gulp 4</a>, but I recommend sticking with version 3 until
+the final release.</p>
+<h2 id="webant1_split_012.html_step1installnodejs">Step 1: Install
+Node.js</h2>
+<p>Node.js can be downloaded for Windows, macOS and Linux from <a
+href="https://nodejs.org/download/">nodejs.org/download/</a>. There are
+various options for installing from binaries, package managers and
+docker images, and full instructions are available.</p>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Windows Users</h4>
+<div class="body">
+<p>Node.js and Gulp run on Windows, but some plugins may not install or
+run if they depend on native Linux binaries such as image compression
+libraries. One option for Windows 10 users is the new <a
+href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">bash
+command-line</a>, which solves many issues.</p>
+</div>
+</section>
+<p>Once installed, open a command prompt and enter:</p>
+<pre class="codeblock"><code>node -v</code></pre>
+<p>This reveals the version number. You're about to make heavy use of
+<code>npm</code> — the Node.js package manager which is used to install
+modules. Examine its version number:</p>
+<pre class="codeblock"><code>npm -v</code></pre>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">For Linux Users</h4>
+<div class="body">
+<p>Node.js modules can be installed globally so they’re available
+throughout your system. However, most users will not have permission to
+write to the global directories unless <code>npm</code> commands are
+prefixed with <code>sudo</code>. There are a number of <a
+href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">options
+to fix npm permissions</a> and tools such as <a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">nvm
+can help</a>, but I often change the default directory. For example, on
+Ubuntu/Debian-based platforms:</p>
+<pre class="codeblock"><code>cd ~
+        mkdir .node_modules_global
+        npm config set prefix=$HOME/.node_modules_global
+        npm install npm -g
+        </code></pre>
+<p><em>Then add the following line to the end of
+<code>~/.bashrc</code>:</em></p>
+<pre class="codeblock"><code>export PATH=&quot;$HOME/.node_modules_global/bin:$PATH&quot;
+        </code></pre>
+<p><em>Finally, update with this:</em></p>
+<pre class="codeblock"><code>source ~/.bashrc
+        </code></pre>
+</div>
+</section>
+<h2 id="webant1_split_012.html_step2installgulpglobally">Step 2: Install
+Gulp Globally</h2>
+<p>Install Gulp command-line interface globally so the <code>gulp</code>
+command can be run from any project folder:</p>
+<pre class="codeblock"><code>npm install gulp-cli -g</code></pre>
+<p>Verify Gulp has installed with this:</p>
+<pre class="codeblock"><code>gulp -v</code></pre>
+<h2 id="webant1_split_012.html_step3configureyourproject">Step 3:
+Configure Your Project</h2>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">For Node.js Projects</h4>
+<div class="body">
+<p>You can skip this step if you already have a
+<code>package.json</code> configuration file.</p>
+</div>
+</section>
+<p>Presume you have a new or pre-existing project in the folder
+<code>project1</code>. Navigate to this folder and initialize it with
+npm:</p>
+<pre class="codeblock"><code>cd project1
+npm init</code></pre>
+<p>You’ll be asked a series of questions. Enter a value or hit
+<strong>Return</strong> to accept defaults. A <code>package.json</code>
+file will be created on completion which stores your <code>npm</code>
+configuration settings.</p>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">For Git Users</h4>
+<div class="body">
+<p>Node.js installs modules to a <code>node_modules</code> folder. You
+should add this to your <code>.gitignore</code> file to ensure they’re
+not committed to your repository. When deploying the project to another
+PC, you can run <code>npm install</code> to restore them.</p>
+</div>
+</section>
+<p>For the remainder of this article, we'll presume your project folder
+contains the following sub-folders:</p>
+<p><strong><code>src</code> folder: preprocessed source
+files</strong></p>
+<p>This contains further sub-folders:</p>
+<ul>
+<li><code>html</code> - HTML source files and templates</li>
+<li><code>images</code> — the original uncompressed images</li>
+<li><code>js</code> — multiple preprocessed script files</li>
+<li><code>scss</code> — multiple preprocessed Sass <code>.scss</code>
+files</li>
+</ul>
+<p><strong><code>build</code> folder: compiled/processed
+files</strong></p>
+<p>Gulp will create files and create sub-folders as necessary:</p>
+<ul>
+<li><code>html</code> — compiled static HTML files</li>
+<li><code>images</code> — compressed images</li>
+<li><code>js</code> — a single concatenated and minified JavaScript
+file</li>
+<li><code>css</code> — a single compiled and minified CSS file</li>
+</ul>
+<p>Your project will almost certainly be different but this structure is
+used for the examples below.</p>
+<section class="sigil_not_in_toc box tip">
+<h4 class="sigil_not_in_toc">Following Along on Unix</h4>
+<div class="body">
+<p>If you're on a Unix-based system and you just want to follow along
+with the tutorial, you can recreate the folder structure with the
+following command:</p>
+<pre class="codeblock"><code>mkdir -p src/{html,images,js,scss} build/{html,images,js,css}
+    </code></pre>
+</div>
+</section>
+<h2 id="webant1_split_012.html_step4installgulplocally">Step 4: Install
+Gulp Locally</h2>
+<p>You can now install Gulp in your project folder using the
+command:</p>
+<pre class="codeblock"><code>npm install gulp --save-dev</code></pre>
+<p>This installs Gulp as a development dependency and the
+<code>"devDependencies"</code> section of <code>package.json</code> is
+updated accordingly. We’ll presume Gulp and all plugins are development
+dependencies for the remainder of this tutorial.</p>
+<h3 id="webant1_split_012.html_alternativedeploymentoptions">Alternative
+Deployment Options</h3>
+<p>Development dependencies are not installed when the
+<code>NODE_ENV</code> environment variable is set to
+<code>production</code> on your operating system. You would normally do
+this on your live server with the Mac/Linux command:</p>
+<pre class="codeblock"><code>export NODE_ENV=production</code></pre>
+<p>Or on Windows:</p>
+<pre class="codeblock"><code>set NODE_ENV=production</code></pre>
+<p>This tutorial presumes your assets will be compiled to the
+<code>build</code> folder and committed to your Git repository or
+uploaded directly to the server. However, it may be preferable to build
+assets on the live server if you want to change the way they are
+created. For example, HTML, CSS and JavaScript files are minified on
+production but not development environments. In that case, use the
+<code>--save</code> option for Gulp and all plugins, i.e.</p>
+<pre class="codeblock"><code>npm install gulp --save</code></pre>
+<p>This sets Gulp as an application dependency in the
+<code>"dependencies"</code> section of <code>package.json</code>. It
+will be installed when you enter <code>npm install</code> and can be run
+wherever the project is deployed. You can remove the <code>build</code>
+folder from your repository since the files can be created on any
+platform when required.</p>
+<h2 id="webant1_split_012.html_step4createagulpconfigurationfile">Step
+4: Create a Gulp Configuration File</h2>
+<p>Create a new <code>gulpfile.js</code> configuration file in the root
+of your project folder. Add some basic code to get started:</p>
+<pre class="codeblock"><code>// Gulp.js configuration
+var
+  // modules
+  gulp = require(&#39;gulp&#39;),
+
+  // development mode?
+  devBuild = (process.env.NODE_ENV !== &#39;production&#39;),
+
+  // folders
+  folder = {
+    src: &#39;src/&#39;,
+    build: &#39;build/&#39;
+  }
+;</code></pre>
+<p>This references the Gulp module, sets a <code>devBuild</code>
+variable to <code>true</code> when running in development (or
+non-production mode) and defines the source and build folder
+locations.</p>
+<section class="sigil_not_in_toc box note">
+<h4 class="sigil_not_in_toc">ES6</h4>
+<div class="body">
+<p>ES6 note: ES5-compatible JavaScript code is provided in this
+tutorial. This will work for all versions of Gulp and Node.js with or
+without the <code>--harmony</code> flag. <a
+href="http://node.green/">Most ES6 features are supported in Node 6 and
+above</a> so feel free to use arrow functions, <code>let</code>,
+<code>const</code>, etc. if you're using a recent version.</p>
+</div>
+</section>
+<p><code>gulpfile.js</code> won't do anything yet because you need to
+…</p>
+<h2 id="webant1_split_012.html_step5creategulptasks">Step 5: Create Gulp
+Tasks</h2>
+<p>On its own, Gulp does nothing. You must:</p>
+<ol>
+<li>install Gulp plugins, and</li>
+<li>write tasks which utilize those plugins to do something useful.</li>
+</ol>
+<p>It's possible to write your own plugins but, since almost 3,000 are
+available, it's unlikely you'll ever need to. You can search using
+Gulp's own directory at <a
+href="http://gulpjs.com/plugins/">gulpjs.com/plugins/</a>, on <a
+href="https://www.npmjs.com/">npmjs.com</a>, or search "gulp
+<em>something</em>" to harness the mighty power of Google.</p>
+<p>Gulp provides three primary task methods:</p>
+<ul>
+<li><code>gulp.task</code> — defines a new task with a name, optional
+array of dependencies and a function.</li>
+<li><code>gulp.src</code> — sets the folder where source files are
+located.</li>
+<li><code>gulp.dest</code> — sets the destination folder where build
+files will be placed.</li>
+</ul>
+<p>Any number of plugin calls are set with <code>pipe</code> between the
+<code>.src</code> and <code>.dest</code>.</p>
+<h3 id="webant1_split_012.html_imagetask">Image Task</h3>
+<p>This is best demonstrated with an example, so let's create a basic
+task which compresses images and copies them to the appropriate
+<code>build</code> folder. Since this process could take time, we'll
+only compress new and modified files. Two plugins can help us: <a
+href="https://www.npmjs.com/package/gulp-newer">gulp-newer</a> and <a
+href="https://www.npmjs.com/package/gulp-imagemin">gulp-imagemin</a>.
+Install them from the command-line:</p>
+<pre class="codeblock"><code>npm install gulp-newer gulp-imagemin --save-dev</code></pre>
+<p>We can now reference both modules the top of
+<code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>// Gulp.js configuration
+
+var
+  // modules
+  gulp = require(&#39;gulp&#39;),
+  newer = require(&#39;gulp-newer&#39;),
+  imagemin = require(&#39;gulp-imagemin&#39;),</code></pre>
+<p>We can now define the image processing task itself as a function at
+the end of <code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>// image processing
+gulp.task(&#39;images&#39;, function() {
+  var out = folder.build + &#39;images/&#39;;
+  return gulp.src(folder.src + &#39;images/**/*&#39;)
+    .pipe(newer(out))
+    .pipe(imagemin({ optimizationLevel: 5 }))
+    .pipe(gulp.dest(out));
+});</code></pre>
+<p>All tasks are syntactically similar. This code:</p>
+<ol>
+<li>Creates a new task named <code>images</code>.</li>
+<li>Defines a function with a return value which …</li>
+<li>Defines an <code>out</code> folder where build files will be
+located.</li>
+<li>Sets the Gulp <code>src</code> source folder. The <code>/**/*</code>
+ensures that images in sub-folders are also processed.</li>
+<li>Pipes all files to the <code>gulp-newer</code> module. Source files
+that are newer than corresponding destination files are passed through.
+Everything else is removed.</li>
+<li>The remaining new or changed files are piped through
+<code>gulp-imagemin</code> which sets an optional
+<code>optimizationLevel</code> argument.</li>
+<li>The compressed images are output to the Gulp <code>dest</code>
+folder set by <code>out</code>.</li>
+</ol>
+<p>Save <code>gulpfile.js</code> and place a few images in your
+project's <code>src/images</code> folder before running the task from
+the command line:</p>
+<pre class="codeblock"><code>gulp images</code></pre>
+<p>All images are compressed accordingly and you’ll see output such
+as:</p>
+<pre class="codeblock"><code>Using file gulpfile.js
+Running &#39;imagemin&#39;...
+Finished &#39;imagemin&#39; in 5.71 ms
+gulp-imagemin: image1.png (saved 48.7 kB)
+gulp-imagemin: image2.jpg (saved 36.2 kB)
+gulp-imagemin: image3.svg (saved 12.8 kB)</code></pre>
+<p>Try running <code>gulp images</code> again and nothing should happen
+because no newer images exist.</p>
+<h3 id="webant1_split_012.html_htmltask">HTML Task</h3>
+<p>We can now create a similar task which copies files from the source
+HTML folder. We can safely minify our HTML code to remove unnecessary
+whitespace and attributes using the <a
+href="https://www.npmjs.com/package/gulp-htmlclean">gulp-htmlclean</a>
+plugin:</p>
+<pre class="codeblock"><code>npm install gulp-htmlclean --save-dev</code></pre>
+<p>This is then referenced at the top of <code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>var
+  // modules
+  gulp = require(&#39;gulp&#39;),
+  newer = require(&#39;gulp-newer&#39;),
+  imagemin = require(&#39;gulp-imagemin&#39;),
+  htmlclean = require(&#39;gulp-htmlclean&#39;),</code></pre>
+<p>We can now create an <code>html</code> task at the end of
+<code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>// HTML processing
+gulp.task(&#39;html&#39;, [&#39;images&#39;], function() {
+  var
+    out = folder.build + &#39;html/&#39;,
+    page = gulp.src(folder.src + &#39;html/**/*&#39;)
+      .pipe(newer(out));
+
+  // minify production code
+  if (!devBuild) {
+    page = page.pipe(htmlclean());
+  }
+
+  return page.pipe(gulp.dest(out));
+});</code></pre>
+<p>This reuses <code>gulp-newer</code> and introduces a couple of
+concepts:</p>
+<ol>
+<li>The <code>[images]</code> argument states that our
+<code>images</code> task must be run before processing the HTML (the
+HTML is likely to reference images). Any number of dependent tasks can
+be listed in this array and all will complete before the task function
+runs.</li>
+<li>We only pipe the HTML through <code>gulp-htmlclean</code> if
+<code>NODE_ENV</code> is set to <code>production</code>. Therefore, the
+HTML remains uncompressed during development which may be useful for
+debugging.</li>
+</ol>
+<p>Save <code>gulpfile.js</code> and run <code>gulp html</code> from the
+command line. Both the <code>html</code> and <code>images</code> tasks
+will run.</p>
+<h3 id="webant1_split_012.html_javascripttask">JavaScript Task</h3>
+<p>Too easy for you? Let's process all our JavaScript files by building
+a basic module bundler. It will:</p>
+<ol>
+<li>Ensure dependencies are loaded first using the <a
+href="https://www.npmjs.com/package/gulp-deporder">gulp-deporder</a>
+plugin. This analyses comments at the top of each script to ensure
+correct ordering. For example,
+<code>// requires: defaults.js lib.js</code>.</li>
+<li>Concatenate all script files into a single <code>main.js</code> file
+using <a
+href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>.</li>
+<li>Remove all <code>console</code> and <code>debugging</code>
+statements with <a
+href="https://www.npmjs.com/package/gulp-strip-debug">gulp-strip-debug</a>
+and minimize code with <a
+href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>. This
+step will only occur when running in production mode.</li>
+</ol>
+<p>Install the plugins:</p>
+<pre class="codeblock"><code>npm install gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev</code></pre>
+<p>Reference them at the top of <code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>var
+  ...
+  concat = require(&#39;gulp-concat&#39;),
+  deporder = require(&#39;gulp-deporder&#39;),
+  stripdebug = require(&#39;gulp-strip-debug&#39;),
+  uglify = require(&#39;gulp-uglify&#39;),</code></pre>
+<p>Then add a new <code>js</code> task:</p>
+<pre class="codeblock"><code>// JavaScript processing
+gulp.task(&#39;js&#39;, function() {
+
+  var jsbuild = gulp.src(folder.src + &#39;js/**/*&#39;)
+    .pipe(deporder())
+    .pipe(concat(&#39;main.js&#39;));
+
+  if (!devBuild) {
+    jsbuild = jsbuild
+      .pipe(stripdebug())
+      .pipe(uglify());
+  }
+
+  return jsbuild.pipe(gulp.dest(folder.build + &#39;js/&#39;));
+
+});</code></pre>
+<p>Save then run <code>gulp js</code> to watch the magic happen!</p>
+<h3 id="webant1_split_012.html_csstask">CSS Task</h3>
+<p>Finally, let’s create a CSS task which compiles Sass
+<code>.scss</code> files to a single <code>.css</code> file using <a
+href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>. This is a
+Gulp plugin for <a
+href="https://www.npmjs.com/package/node-sass">node-sass</a> which binds
+to the superfast <a href="http://sass-lang.com/libsass">LibSass C/C++
+port of the Sass engine</a> <em>(you won't need to install Ruby)</em>.
+We'll presume your primary Sass file <code>scss/main.scss</code> is
+responsible for loading all partials.</p>
+<p>Our task will also utilize the fabulous <a
+href="http://postcss.org/">PostCSS</a> via the <a
+href="https://github.com/postcss/gulp-postcss">gulp-postcss</a> plugin.
+PostCSS requires its own set of plugins and we'll install these:</p>
+<ul>
+<li><a
+href="https://www.npmjs.com/package/postcss-assets">postcss-assets</a>
+to manage assets. This allows us to use properties such as
+<code>background: resolve('image.png');</code> to resolve file paths or
+<code>background: inline('image.png');</code> to inline data-encoded
+images.</li>
+<li><a
+href="https://www.npmjs.com/package/autoprefixer">autoprefixer</a> to
+automatically add vendor prefixes to CSS properties.</li>
+<li><a
+href="https://www.npmjs.com/package/css-mqpacker">css-mqpacker</a> to
+pack multiple references to the same CSS media query into a single
+rule.</li>
+<li><a href="https://www.npmjs.com/package/cssnano">cssnano</a> to
+minify the CSS code when running in production mode.</li>
+</ul>
+<p>First, install all the modules:</p>
+<pre class="codeblock"><code>npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev</code></pre>
+<p>Then reference them at the top of <code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>var
+  ...
+  sass = require(&#39;gulp-sass&#39;),
+  postcss = require(&#39;gulp-postcss&#39;),
+  assets = require(&#39;postcss-assets&#39;),
+  autoprefixer = require(&#39;autoprefixer&#39;),
+  mqpacker = require(&#39;css-mqpacker&#39;),
+  cssnano = require(&#39;cssnano&#39;),</code></pre>
+<p>We can now create a new <code>css</code> task at the end of
+<code>gulpfile.js</code>. Note the <code>images</code> task is set as a
+dependency because the <code>postcss-assets</code> plugin can reference
+images during the build process. In addition, most plugins can be passed
+arguments (refer to their documentation for more information):</p>
+<pre class="codeblock"><code>// CSS processing
+gulp.task(&#39;css&#39;, [&#39;images&#39;], function() {
+
+  var postCssOpts = [
+  assets({ loadPaths: [&#39;images/&#39;] }),
+  autoprefixer({ browsers: [&#39;last 2 versions&#39;, &#39;&gt; 2%&#39;] }),
+  mqpacker
+  ];
+
+  if (!devBuild) {
+    postCssOpts.push(cssnano);
+  }
+
+  return gulp.src(folder.src + &#39;scss/main.scss&#39;)
+    .pipe(sass({
+      outputStyle: &#39;nested&#39;,
+      imagePath: &#39;images/&#39;,
+      precision: 3,
+      errLogToConsole: true
+    }))
+    .pipe(postcss(postCssOpts))
+    .pipe(gulp.dest(folder.build + &#39;css/&#39;));
+
+});</code></pre>
+<p>Save the file and run the task from the command line:</p>
+<pre class="codeblock"><code>gulp css</code></pre>
+<h2 id="webant1_split_012.html_step6automatetasks">Step 6: Automate
+Tasks</h2>
+<p>We've been running one task at a time. We can run them all in one
+command by adding a new <code>run</code> task to
+<code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>// run all tasks
+gulp.task(&#39;run&#39;, [&#39;html&#39;, &#39;css&#39;, &#39;js&#39;]);</code></pre>
+<p>Save and enter <code>gulp run</code> at the command line to execute
+all tasks. Note that I omitted the <code>images</code> task because it's
+already set as a dependency for the <code>html</code> and
+<code>css</code> tasks.</p>
+<p>Is this still too much hard work? Gulp offers another method —
+<code>gulp.watch</code> — which can monitor your source files and run an
+appropriate task whenever a file is changed. The method is passed a
+folder and a list of tasks to execute when a change occurs. Let's create
+a new <code>watch</code> task at the end of
+<code>gulpfile.js</code>:</p>
+<pre class="codeblock"><code>// watch for changes
+gulp.task(&#39;watch&#39;, function() {
+
+  // image changes
+  gulp.watch(folder.src + &#39;images/**/*&#39;, [&#39;images&#39;]);
+
+  // html changes
+  gulp.watch(folder.src + &#39;html/**/*&#39;, [&#39;html&#39;]);
+
+  // javascript changes
+  gulp.watch(folder.src + &#39;js/**/*&#39;, [&#39;js&#39;]);
+
+  // css changes
+  gulp.watch(folder.src + &#39;scss/**/*&#39;, [&#39;css&#39;]);
+
+});</code></pre>
+<p>Rather than running <code>gulp watch</code> immediately, let's add a
+default task:</p>
+<pre class="codeblock"><code>// default task
+gulp.task(&#39;default&#39;, [&#39;run&#39;, &#39;watch&#39;]);</code></pre>
+<p>Save <code>gulpfile.js</code> and enter <code>gulp</code> at the
+command line. Your images, HTML, CSS and JavaScript will all be
+processed, then Gulp will remain active watching for updates and
+re-running tasks as necessary. Hit <kbd>Ctrl/Cmd</kbd> + <kbd>C</kbd> to
+abort monitoring and return to the command line.</p>
+<h2 id="webant1_split_012.html_step7profit">Step 7: Profit!</h2>
+<p>Other plugins you may find useful:</p>
+<ul>
+<li><a
+href="https://www.npmjs.com/package/gulp-load-plugins">gulp-load-plugins</a>
+± load all Gulp plugin modules without <code>require</code>
+declarations</li>
+<li><a
+href="https://www.npmjs.com/package/gulp-preprocess">gulp-preprocess</a>
+— a simple HTML and JavaScript <a
+href="https://github.com/jsoverson/preprocess">preprocessor</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-less">gulp-less</a> —
+the <a href="http://lesscss.org/">Less CSS preprocessor</a> plugin</li>
+<li><a href="https://www.npmjs.com/package/gulp-stylus">gulp-stylus</a>
+— the <a href="http://stylus-lang.com/">Stylus CSS preprocessor</a>
+plugin</li>
+<li><a
+href="https://www.npmjs.com/package/gulp-sequence">gulp-sequence</a> —
+run a series of gulp tasks in a specific order</li>
+<li><a
+href="https://www.npmjs.com/package/gulp-plumber">gulp-plumber</a> —
+error handling which prevents Gulp stopping on failures</li>
+<li><a href="https://www.npmjs.com/package/gulp-size">gulp-size</a> —
+displays file sizes and savings</li>
+<li><a
+href="https://www.npmjs.com/package/gulp-nodemon">gulp-nodemon</a> —
+uses <a href="https://www.npmjs.com/package/nodemon">nodemon</a> to
+automatically restart Node.js applications when changes occur.</li>
+<li><a href="https://www.npmjs.com/package/gulp-util">gulp-util</a> —
+utility functions including logging and color coding.</li>
+</ul>
+<p>One useful method in <code>gulp-util</code> is <code>.noop()</code>
+which passes data straight through without performing any action. This
+could be used for cleaner development/production processing code. For
+example:</p>
+<pre class="codeblock"><code>var gutil = require(&#39;gulp-util&#39;);
+
+// HTML processing
+gulp.task(&#39;html&#39;, [&#39;images&#39;], function() {
+  var out = folder.src + &#39;html/**/*&#39;;
+
+  return gulp.src(folder.src + &#39;html/**/*&#39;)
+    .pipe(newer(out))
+    .pipe(devBuild ? gutil.noop() : htmlclean())
+    .pipe(gulp.dest(out));
+
+});</code></pre>
+<p>Gulp can also call other Node.js modules, and they don't necessarily
+need to be plugins. For example:</p>
+<ul>
+<li><a
+href="https://www.npmjs.com/package/browser-sync">browser-sync</a> —
+automatically reload assets or refresh your browser when changes
+occur</li>
+<li><a href="https://www.npmjs.com/package/del">del</a> — delete files
+and folders (perhaps clean your <code>build</code> folder at the start
+of every run).</li>
+</ul>
+<p>Invest a little time and Gulp could save many hours of development
+frustration. The advantages:</p>
+<ul>
+<li><a href="https://npmjs.org/browse/keyword/gulpplugin/">plugins are
+plentiful</a></li>
+<li>configuration using pipes is readable and easy to follow</li>
+<li><code>gulpfile.js</code> can be adapted and reused in other
+projects</li>
+<li>your total page weight can be reduced to improve performance</li>
+<li>you can simplify your deployment.</li>
+</ul>
+<p>Useful links:</p>
+<ul>
+<li><a href="http://gulpjs.com/">Gulp home page</a></li>
+<li><a href="https://npmjs.org/browse/keyword/gulpplugin/">Gulp
+plugins</a></li>
+<li><a href="https://www.npmjs.com/">npm home page</a></li>
+</ul>
+<p>Applying the processes above to a simple website reduced the total
+weight by more than 50%. You can test your own results using <a
+href="http://sitepoint.com/10-best-webpage-weight-analysis-tools/">page
+weight analysis tools</a> or a service such as <a
+href="http://newrelic.com/?r=phpm">New Relic</a>, which provides a range
+of sophisticated application performance monitoring tools.</p>
+<p>Gulp can revolutionize your workflow. I hope you found this tutorial
+useful and consider Gulp for your production process.</p>
+</div>
+<p><span id="webant1_split_008.html"></span></p>
+<div id="webant1_split_008.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="webant1_split_008.html_whatsort">Chapter 4: 10 Languages That
+Compile to JavaScript</h1>
+<h3 class="author" id="webant1_split_008.html_sigil_toc_id_9">by James
+Kolce</h3>
+<p><strong>This chapter includes a list of ten interesting languages
+that can compile to JavaScript to be executed in the browser or on a
+platform like Node.js.</strong></p>
+<p>Modern applications have <a
+href="https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/">different
+requirements</a> from simple websites. But the browser is a platform
+with a (mostly) fixed set of technologies available, and JavaScript
+remains as the core language for web applications. Any application that
+needs to run in the browser has to be implemented in that language.</p>
+<p>We all know that JavaScript isn’t the best language for every task,
+and when it comes to complex applications, it might fall short. To avoid
+this problem, several new languages and transpilers of existing ones
+have been created, all of them producing code that can work in the
+browser without any lines of JavaScript having to be written, and
+without you having to think about the limitations of the language.</p>
+<h2 id="webant1_split_008.html_dart">Dart</h2>
+<p>Dart is a classical, object-oriented language where everything is an
+object and any object is an instance of a class (objects can act as
+functions too.) It’s specially made to build applications for browsers,
+servers, and mobile devices. It’s maintained by Google and is <a
+href="http://news.dartlang.org/2016/03/the-new-adwords-ui-uses-dart-we-asked.html">the
+language that powers the next generation AdWords UI</a>, the most
+important product of Google regarding revenue, which is in itself a
+proof of its power at scale.</p>
+<p>The language can be translated to JavaScript to be used in a browser,
+or be directly interpreted by the Dart VM, which allows you to build
+server applications too. Mobile applications can be made using the
+Flutter SDK.</p>
+<p>Complex applications also require a mature set of libraries and
+language features specially designed for the task, and Dart includes all
+of this. An example of a popular library is <a
+href="https://webdev.dartlang.org/angular/">AngularDart</a>, a version
+of Angular for Dart.</p>
+<p>It allows you to write type-safe code without being too intrusive.
+You can write types, but you aren’t required to do so,* since they can
+be inferred. This allows for rapid prototyping without having to
+overthink the details, but once you have something working, you can add
+types to make it more robust.</p>
+<p>Regarding concurrent programming in the VM, instead of shared-memory
+threads (Dart is single-threaded), Dart uses what they call
+<strong>Isolates</strong>, with their own memory heap, where
+communication is achieved using messages. In the browser, the story is a
+little different: instead of creating new isolates, you create new
+<strong>Workers</strong>.</p>
+<pre class="codeblock"><code>// Example extracted from dartlang.org
+
+import &#39;dart:async&#39;;
+import &#39;dart:math&#39; show Random;
+
+main() async {
+  print(&#39;Compute π using the Monte Carlo method.&#39;);
+  await for (var estimate in computePi()) {
+    print(&#39;π ≅ $estimate&#39;);
+  }
+}
+
+/// Generates a stream of increasingly accurate estimates of π.
+Stream&lt;double&gt; computePi({int batch: 1000000}) async* {
+  var total = 0;
+  var count = 0;
+  while (true) {
+    var points = generateRandom().take(batch);
+    var inside = points.where((p) =&gt; p.isInsideUnitCircle);
+    total += batch;
+    count += inside.length;
+    var ratio = count / total;
+    // Area of a circle is A = π⋅r², therefore π = A/r².
+    // So, when given random points with x ∈ &lt;0,1&gt;,
+    // y ∈ &lt;0,1&gt;, the ratio of those inside a unit circle
+    // should approach π / 4. Therefore, the value of π
+    // should be:
+    yield ratio * 4;
+  }
+}
+
+Iterable&lt;Point&gt; generateRandom([int seed]) sync* {
+  final random = new Random(seed);
+  while (true) {
+    yield new Point(random.nextDouble(), random.nextDouble());
+  }
+}
+
+class Point {
+  final double x, y;
+  const Point(this.x, this.y);
+  bool get isInsideUnitCircle =&gt; x * x + y * y &lt;= 1;
+}</code></pre>
+<p>For more reading, I recommend Dart’s <a
+href="https://www.dartlang.org/guides/get-started">Get started with
+Dart</a> resource.</p>
+<h2 id="webant1_split_008.html_typescript">TypeScript</h2>
+<p><a href="https://www.typescriptlang.org/">TypeScript</a> is a
+superset of JavaScript. A valid JavaScript program is also valid
+TypeScript, but with static typing added. The compiler can also work as
+a transpiler from ES2015+ to current implementations, so you always get
+the latest features.</p>
+<p>Unlike many other languages, TypeScript keeps the spirit of
+JavaScript intact, only adding features to improve the soundness of the
+code. These are type annotations and other type-related functionality
+that makes writing JavaScript more pleasant, thanks to the enabling of
+specialized tools like static analyzers and other tools to aid in the
+refactoring process. Also, the addition of types improve the interfaces
+between the different components of your applications.</p>
+<p>Type inference is supported, so you don’t have to write all the types
+from the beginning. You can write quick solutions, and then add all the
+types to get confident about your code.</p>
+<p>TypeScript also has support for advanced types, like intersection
+types, union types, type aliases, discriminated unions and type guards.
+You can check out all these in the <a
+href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Advanced
+Types</a> page in the <a
+href="https://www.typescriptlang.org/docs">TypeScript Documentation</a>
+site.</p>
+<p>JSX is also supported by adding the React typings if you use
+React:</p>
+<pre class="codeblock"><code>class Person {
+  private name: string;
+  private age: number;
+  private salary: number;
+
+  constructor(name: string, age: number, salary: number) {
+    this.name = name;
+    this.age = age;
+    this.salary = salary;
+  }
+
+  toString(): string {
+    return `${this.name} (${this.age}) (${this.salary})`;
+  }
+}</code></pre>
+<p>For more on typeScript, check out SitePoint’s <a
+href="https://www.sitepoint.com/introduction-to-typescript/">getting
+started with TypeScript</a> article.</p>
+<h2 id="webant1_split_008.html_elm">Elm</h2>
+<p>Elm is a purely functional programming language that can compile to
+JavaScript, HTML, and CSS. You can build a complete site with just Elm,
+making it a great alternative to JavaScript frameworks like React. The
+applications that you build with it automatically use a virtual DOM
+library, making it very fast. One big plus is the built-in architecture
+that makes you forget about data-flow and focus on data declaration and
+logic instead.</p>
+<p>In Elm, all functions are pure, which means they’ll always return the
+same output for a given input. They can’t do anything else unless you
+specify it. For example, to access a remote API you’d create
+<em>command</em> functions to communicate with the external world, and
+<em>subscriptions</em> to listen for responses. Another point for purity
+is that values are immutable: when you need something, you create new
+values, instead of modifying them.</p>
+<p>The adoption of Elm can be gradual. It’s possible to communicate with
+JavaScript and other libraries using <em>ports</em>. Although Elm hasn’t
+reached version 1 yet, it’s being used for complex and large
+applications, making it a feasible solution for complex
+applications.</p>
+<p>One of the most attractive features of Elm is the beginner-friendly
+compiler, which, instead of producing hard-to-read messages, generates
+code that helps you to fix your code. If you’re learning the language,
+the compiler itself can be of big help.</p>
+<pre class="codeblock"><code>module Main exposing (..)
+
+import Html exposing (..)
+
+
+-- MAIN
+
+
+main : Program Never Model Msg
+main =
+    Html.program
+        { init = init
+        , update = update
+        , view = view
+        , subscriptions = subscriptions
+        }
+
+
+
+-- INIT
+
+
+type alias Model = String
+
+
+init : ( Model, Cmd Msg )
+init = ( &quot;Hello World!&quot;, Cmd.none )
+
+
+-- UPDATE
+
+
+type Msg
+    = DoNothing
+
+
+update : Msg -&gt; Model -&gt; ( Model, Cmd Msg )
+update msg model =
+    case msg of
+        DoNothing -&gt;
+            ( model, Cmd.none )
+
+
+-- VIEW
+
+
+view : Model -&gt; Html Msg
+view model =
+    div [] [text model]
+
+
+-- SUBSCRIPTIONS
+
+
+subscriptions : Model -&gt; Sub Msg
+subscriptions model =
+    Sub.none
+</code></pre>
+<p>SitePoint has a handy <a
+href="https://www.sitepoint.com/functional-reactive-programming-elm-introduction/">getting
+started with Elm</a> article if you want to find out more.</p>
+<h2 id="webant1_split_008.html_purescript">PureScript</h2>
+<p><a href="http://www.purescript.org/">PureScript</a> is a purely
+functional and strongly typed programming language, created by Phil
+Freeman. It aims to provide strong compatibility with available
+JavaScript libraries, similar to Haskell in spirit, but keeping
+JavaScript at its core.</p>
+<p>A strong point for PureScript is its minimalism. It doesn’t include
+any libraries for functionality that would be considered essential in
+other languages. For example, instead of including generators and
+promises in the compiler itself, you can use specific libraries for the
+task. You can choose the implementation you want for the feature you
+need, which allows a highly efficient and personalized experience when
+using PureScript, while keeping the generated code as small as
+possible.</p>
+<p>Another distinctive feature of its compiler is the ability to make
+clean and readable code while maintaining compatibility with JavaScript,
+both concerning libraries and tools.</p>
+<p>Like other languages, PureScript has its own <a
+href="https://github.com/purescript-contrib/pulp">build tool called
+Pulp</a>, which can be compared to Gulp, but for projects written in
+this language.</p>
+<p>Regarding the type system — unlike Elm, which is the other ML-like
+language — PureScript has support for advanced type features like <a
+href="https://en.wikipedia.org/wiki/Kind_%28type_theory%29">higher-kinded
+types</a> and type classes, which are taken from Haskell, allowing the
+creation of sophisticated abstractions:</p>
+<pre class="codeblock"><code>module Main where
+
+import Prelude
+import Data.Foldable (fold)
+import TryPureScript
+
+main =
+    render $ fold
+      [ h1 (text &quot;Try PureScript!&quot;)
+      , p (text &quot;Try out the examples below, or create your own!&quot;)
+      , h2 (text &quot;Examples&quot;)
+      , list (map fromExample examples)
+      ]
+  where
+    fromExample { title, gist } =
+      link (&quot;?gist=&quot; &lt;&gt; gist) (text title)
+
+    examples =
+      [ { title: &quot;Algebraic Data Types&quot;
+        , gist: &quot;37c3c97f47a43f20c548&quot;
+        }
+      , { title: &quot;Loops&quot;
+        , gist: &quot;cfdabdcd085d4ac3dc46&quot;
+        }
+      , { title: &quot;Operators&quot;
+        , gist: &quot;3044550f29a7c5d3d0d0&quot;
+        }
+      ]</code></pre>
+<p>To take your next step with PureScript, check out the <a
+href="https://github.com/purescript/documentation/blob/master/guides/Getting-Started.md">getting
+started with PureScript</a> guide on GitHub.</p>
+<h2 id="webant1_split_008.html_coffeescript">CoffeeScript</h2>
+<p>CoffeeScript is a language that aims to expose the good parts of
+JavaScript while providing a cleaner syntax and keeping the semantics in
+place. Although the popularity of the language has been waning in recent
+years, it’s changing direction and recently received a new major version
+providing support for ES2015+ features.</p>
+<p>The code you write in CoffeeScript is directly translated to readable
+JavaScript code and maintains compatibility with existing libraries.
+From version 2, the compiler produces code compatible with the latest
+versions of ECMAScript. For example, every time you use a
+<code>class</code>, you get a <code>class</code> in JavaScript. Also, if
+you use React, there’s good news: JSX is compatible with
+CoffeeScript.</p>
+<p>A very distinctive feature of the compiler is the ability to process
+code written in the <a
+href="https://en.wikipedia.org/wiki/Literate_programming">literate
+style</a>, where instead of making emphasis in the code and having
+comments as an extra, you write comments in the first place, and the
+code only occasionally appears. This style of programming was introduced
+by Donald Knuth, making a code file very similar to a technical
+article.</p>
+<p>Unlike the other languages, CoffeeScript code can be interpreted
+directly in the browser using a library. So if you want to create a
+quick test, you can write your code in <code>text/coffeescript</code>
+script tags, and include the compiler, which will translate the code to
+JavaScript on the fly:</p>
+<pre class="codeblock"><code># Assignment:
+number   = 42
+opposite = true
+
+# Conditions:
+number = -42 if opposite
+
+# Functions:
+square = (x) -&gt; x * x
+
+# Arrays:
+list = [1, 2, 3, 4, 5]
+
+# Objects:
+math =
+  root:   Math.sqrt
+  square: square
+  cube:   (x) -&gt; x * square x
+
+# Splats:
+race = (winner, runners...) -&gt;
+  print winner, runners
+
+# Existence:
+alert &quot;I knew it!&quot; if elvis?
+
+# Array comprehensions:
+cubes = (math.cube num for num in list)</code></pre>
+<p>The CoffeeScript site has a handy <a
+href="http://coffeescript.org/v2/#coffeescript-2">getting started with
+CoffeeScript 2</a> resource.</p>
+<h2 id="webant1_split_008.html_clojurescript">ClojureScript</h2>
+<p>ClojureScript is a compiler that translates the Clojure programming
+language to JavaScript. It’s a general-purpose, functional language with
+dynamic typing and support for immutable data structures.</p>
+<p>It’s the only one from this list that belongs to the Lisp family of
+programming languages and, naturally, it shares a lot of the features.
+For example, the code can be treated as data, and a macro system is
+available, making metaprogramming techniques possible. Unlike other
+Lisps, Clojure has support for immutable data structures, making the
+management of side effects easier.</p>
+<p>The syntax can look intimidating for newcomers because of its use of
+parentheses, but it has profound reasons to be that way, and you’ll
+certainly appreciate it in the long run. That minimalism in the syntax
+and its syntactic abstraction capabilities make Lisp a powerful tool for
+solving problems that require high levels of abstraction.</p>
+<p>Although Clojure is mainly a functional language, it isn’t pure like
+PureScript or Elm. Side effects can still happen, but other functional
+features are still present.</p>
+<p>ClojureScript uses Google Closure for code optimization and also has
+compatibility with existing JavaScript libraries:</p>
+<pre class="codeblock"><code>; Extracted from https://github.com/clojure/clojurescript/blob/master/samples/dom/src/dom/test.cljs
+
+(ns dom.test
+  (:require [clojure.browser.event :as event]
+            [clojure.browser.dom   :as dom]))
+
+(defn log [&amp; args]
+  (.log js/console (apply pr-str args)))
+
+(defn log-obj [obj]
+  (.log js/console obj))
+
+(defn log-listener-count []
+  (log &quot;listener count: &quot; (event/total-listener-count)))
+
+(def source      (dom/get-element &quot;source&quot;))
+(def destination (dom/get-element &quot;destination&quot;))
+
+(dom/append source
+            (dom/element &quot;Testing me &quot;)
+            (dom/element &quot;out!&quot;))
+
+(def success-count (atom 0))
+
+(log-listener-count)
+
+(event/listen source
+              :click
+              (fn [e]
+                (let [i (swap! success-count inc)
+                      e (dom/element :li
+                                      {:id &quot;testing&quot;
+                                      :class &quot;test me out please&quot;}
+                                      &quot;It worked!&quot;)]
+                  (log-obj e)
+                  (log i)
+                  (dom/append destination
+                              e))))
+
+(log-obj (dom/element &quot;Text node&quot;))
+(log-obj (dom/element :li))
+(log-obj (dom/element :li {:class &quot;foo&quot;}))
+(log-obj (dom/element :li {:class &quot;bar&quot;} &quot;text node&quot;))
+(log-obj (dom/element [:ul [:li :li :li]]))
+(log-obj (dom/element :ul [:li :li :li]))
+(log-obj (dom/element :li {} [:ul {} [:li :li :li]]))
+(log-obj (dom/element [:li {:class &quot;baz&quot;} [:li {:class &quot;quux&quot;}]]))
+
+(log-obj source)
+(log-listener-count)</code></pre>
+<p>To lean more, head over to the ClojureScript site’s <a
+href="https://clojurescript.org/guides/quick-start">getting started with
+ClojureScript</a> resource.</p>
+<h2 id="webant1_split_008.html_scalajs">Scala.js</h2>
+<p>Scala.js is a compiler that translates the Scala programming language
+to JavaScript. Scala is a language that aims to merge the ideas from
+object-oriented and functional programming into one language to create a
+powerful tool that is also easy to adopt.</p>
+<p>As a strongly typed language, you get the benefits of a flexible type
+system with partial type inference. Most values can be inferred, but
+function parameters still require explicit type annotations.</p>
+<p>Although many common object-oriented patterns are supported (for
+example, every value is an object and operations are method calls), you
+also get functional features like support for first-class functions and
+immutable data structures.</p>
+<p>One of the special advantages of Scala.js is that you can start with
+a familiar, object-oriented approach and move to a more functional one
+as you need and at your own speed, without having to do a lot of work.
+Also, existing JavaScript code and libraries are compatible with your
+Scala code.</p>
+<p>Beginner Scala developers will find the language not very different
+from JavaScript. Compare the following equivalent code:</p>
+<pre class="codeblock"><code>// JavaScript
+var xhr = new XMLHttpRequest();
+
+xhr.open(&quot;GET&quot;,
+  &quot;https://api.twitter.com/1.1/search/&quot; +
+  &quot;tweets.json?q=%23scalajs&quot;
+);
+xhr.onload = (e) =&gt; {
+  if (xhr.status === 200) {
+    var r = JSON.parse(xhr.responseText);
+    $(&quot;#tweets&quot;).html(parseTweets(r));
+  }
+};
+xhr.send();</code></pre>
+<pre class="codeblock"><code>// Scala.js
+val xhr = new XMLHttpRequest()
+
+xhr.open(&quot;GET&quot;,
+  &quot;https://api.twitter.com/1.1/search/&quot; +
+  &quot;tweets.json?q=%23scalajs&quot;
+)
+xhr.onload = { (e: Event) =&gt;
+  if (xhr.status == 200) {
+    val r = JSON.parse(xhr.responseText)
+    $(&quot;#tweets&quot;).html(parseTweets(r))
+  }
+}
+xhr.send()</code></pre>
+<p>Check out the Scala.js <a
+href="https://www.scala-js.org/tutorial/basic/">getting started with
+Scala.js</a> docs for more.</p>
+<h2 id="webant1_split_008.html_reason">Reason</h2>
+<p>Reason is a language created and maintained by Facebook, which offers
+a new syntax for the OCaml compiler, and the code can be translated to
+both JavaScript and native code.</p>
+<p>Being part of the ML family and a functional language itself, it
+naturally offers a powerful but flexible type system with inference,
+algebraic data types and pattern matching. It also has support for
+immutable data types and parametric polymorphism (also known as
+<em>generics</em> in other languages) but, as in OCaml, support for
+object-oriented programming is available as well.</p>
+<p>The use of existing JavaScript libraries is possible with <a
+href="https://github.com/BuckleScript/bucklescript">bucklescript</a>
+bindings. You can also mix in JavaScript alongside your Reason code. The
+inserted JavaScript code won’t be strictly checked, but it works fine
+for quick fixes or prototypes.</p>
+<p>If you’re a React developer, <a
+href="https://github.com/reasonml/reason-react">bindings are
+available</a>, and the language also has support for JSX:</p>
+<pre class="codeblock"><code>/* A type variant being pattern matched */
+
+let possiblyNullValue1 = None;
+let possiblyNullValue2 = Some &quot;Hello@&quot;;
+
+switch possiblyNullValue2 {
+| None =&gt; print_endline &quot;Nothing to see here.&quot;
+| Some message =&gt; print_endline message
+};
+
+/* Parametrized types */
+
+type universityStudent = {gpa: float};
+type response &#39;studentType = {status: int, student: &#39;studentType};
+let result: response universityStudent = fetchDataFromServer ();
+
+/* A simple typed object */
+
+type payload = Js.t {.
+  name: string,
+  age: int
+};
+let obj1: payload = {&quot;name&quot;: &quot;John&quot;, &quot;age&quot;: 30};</code></pre>
+<p>Check out the Reason site’s <a
+href="https://reasonml.github.io/guide/javascript/quickstart">getting
+started with Reason</a> guide for more.</p>
+<h2 id="webant1_split_008.html_haxe">Haxe</h2>
+<p>Haxe is a multi-paradigm programming language, and its compiler can
+produce both binaries and source code in other languages.</p>
+<p>Although Haxe provides a strict type system with support for type
+inference, it can also work as a dynamic language if the target language
+supports it. In the same way, it provides support for a variety of
+programming styles like object-oriented, generic, and functional.</p>
+<p>When you write Haxe code, you can target several platforms and
+languages for compilation without having to make considerable changes.
+Target-specific code blocks are also available.</p>
+<p>You can write both back ends and front ends in Haxe with the same
+code and achieve communication using <a
+href="https://haxe.org/manual/std-remoting-connection.html">Haxe
+Remoting</a>, for both synchronous and asynchronous connections.</p>
+<p>As expected, Haxe code is compatible with existing libraries, but it
+also provides a mature standard library:</p>
+<pre class="codeblock"><code>// Example extracted from http://code.haxe.org
+
+extern class Database {
+  function new();
+  function getProperty&lt;T&gt;(property:Property&lt;T&gt;):T;
+  function setProperty&lt;T&gt;(property:Property&lt;T&gt;, value:T):Void;
+}
+
+abstract Property&lt;T&gt;(String) {
+  public inline function new(name) {
+    this = name;
+  }
+}
+
+class Main {
+  static inline var PLAYER_NAME = new Property&lt;String&gt;(&quot;playerName&quot;);
+  static inline var PLAYER_LEVEL = new Property&lt;Int&gt;(&quot;playerLevel&quot;);
+
+  static function main() {
+    var db = new Database();
+
+    var playerName = db.getProperty(PLAYER_NAME);
+    trace(playerName.toUpperCase());
+
+    db.setProperty(PLAYER_LEVEL, 1);
+  }
+}</code></pre>
+<p>Check out the Haxe site’s <a
+href="https://haxe.org/documentation/introduction/language-introduction.html">getting
+started with Haxe</a> pages for more.</p>
+<h2 id="webant1_split_008.html_nim">Nim</h2>
+<p>Nim is a statically typed, multi-paradigm programming language with
+minimalist and whitespace-sensitive syntax that can compile to
+JavaScript as well as C, C++.</p>
+<p>The language itself is very small, but its metaprogramming
+capabilities make it attractive to implement features by yourself that
+you might find built-in to other languages. The building blocks for this
+are macros, templates, and generics, and with them you can implement
+things from simple features to different paradigms. This makes Nim an
+extremely versatile language that can be adapted to your needs, in the
+spirit of Lisp.</p>
+<p>The syntactic abstraction features of Nim allow you to adapt the
+language to your problems, making true <a
+href="https://en.wikipedia.org/wiki/Domain-specific_language">DSLs</a>
+possible. If you have specialized tasks to solve, you can get a higher
+level of expressiveness:</p>
+<pre class="codeblock"><code># Reverse a string
+proc reverse(s: string): string =
+  result = &quot;&quot;
+  for i in countdown(high(s), 0):
+    result.add s[i]
+
+var str1 = &quot;Reverse This!&quot;
+echo &quot;Reversed: &quot;, reverse(str1)
+
+# Using templates
+template genType(name, fieldname: expr, fieldtype: typedesc) =
+  type
+    name = object
+      fieldname: fieldtype
+
+genType(Test, foo, int)
+
+var x = Test(foo: 4566)
+echo(x.foo) # 4566</code></pre>
+<p>The Nim site has some useful <a
+href="https://nim-lang.org/documentation.html">getting started</a> docs
+for more information.</p>
+<h2 id="webant1_split_008.html_conclusion">Conclusion</h2>
+<p>If JavaScript isn’t your favorite language, you can still create web
+applications without having to suffer the shortcomings of the
+technology. The options available to create those applications can fill
+a wide spectrum of taste, from purely functional languages like
+PureScript to object-oriented ones like Dart. And if you want something
+more than a one-to-one language translation, you have options like Elm
+that provide you with tools like a virtual DOM and a built-in
+architecture.</p>
+</div>
+<p><span id="webant1_split_014.html"></span></p>
+<div id="webant1_split_014.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="webant1_split_014.html_cpaneltips">Chapter 5: 10 Must-have VS
+Code Extensions for JavaScript Developers</h1>
+<h3 class="author" id="webant1_split_014.html_sigil_toc_id_10">by
+Michael Wanyoike</h3>
+<p><strong>In this article, I’ll focus on a list of must-have VS Code
+extensions for JavaScript developers.</strong></p>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> is
+undoubtedly the most popular lightweight code editor today. It does
+borrow heavily from other popular code editors, mostly Sublime Text and
+Atom. However, its success mainly comes from its ability to provide
+better performance and stability. In addition, it also provides much
+needed features like IntelliSense, which were only available in
+full-sized IDEs like Eclipse or Visual Studio 2017.</p>
+<p>The power of VS Code no doubt comes from the <a
+href="https://marketplace.visualstudio.com/vscode">marketplace</a>.
+Thanks to the wonderful open-source community, the editor is now capable
+of supporting almost every programming language, framework and
+development technology. Support for a library or framework comes in
+various ways, which mainly includes snippets, syntax highlighting, <a
+href="https://emmet.io/">Emmet</a> and IntelliSense features for that
+specific technology.</p>
+<h2 id="webant1_split_014.html_vscodeextensionsbycategory">VS Code
+Extensions by Category</h2>
+<p>For this article, I’ll focus on VS Code extensions specifically
+targeting JavaScript developers. Currently, there are many VS Code
+extensions that fit this criterion, which of course means I won’t be
+able to mention all of them. Instead, I’ll highlight VS Code extensions
+that have gained popularity and those that are indispensable for
+JavaScript developers. For simplicity, I’ll group them into ten specific
+categories.</p>
+<h2 id="webant1_split_014.html_snippetextensions">Snippet
+Extensions</h2>
+<p>When you first install VS Code, it comes with a several snippets for
+JavaScript and Typescript. Before you start writing modern JavaScript,
+you’ll need some additional snippets to help you quickly write
+repetitive ES6/ES7 code:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">VS
+Code JavaScript (ES6) snippets</a>: currently the most popular, with
+over 1.2 million installs to date. This extension provides ES6 syntax
+for JavaScript, TypeScript, HTML, React and Vue extensions.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack">JavaScript
+Snippet Pack</a>: a collection of useful snippets for
+JavaScript.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=gluons.vscode-atom-javascript-snippet">Atom
+JavaScript Snippet</a>: JavaScript snippets ported from the
+atom/language-javascript extension.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=nathanchapman.JavaScriptSnippets">JavaScript
+Snippets</a>: a collection of ES6 snippets. This extension has snippets
+for Mocha, Jasmine and other BDD testing frameworks.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_syntaxextensions">Syntax Extensions</h2>
+<p>VS Code comes with pretty good syntax highlighting for JavaScript
+code. You can change the colors by installing themes. However, you need
+a syntax highlighter extension if you want a certain level of
+readability. Here are a couple of them:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-atom-grammar">JavaScript
+Atom Grammar</a>: this extension replaces the JavaScript grammar in
+Visual Studio Code with the JavaScript grammar from the Atom
+editor.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel">Babel
+JavaScript</a>: syntax highlighting for ES201x JavaScript, React,
+FlowType and GraphQL code.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv">DotENV</a>:
+syntax highlighting for <code>.env</code> files. Handy if you’re working
+with Node.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_linterextensions">Linter Extensions</h2>
+<p>Writing JavaScript code efficiently with minimum fuss requires a
+linter that enforces a specific standard style for all team members.
+ESLint is the most popular, since it supports many styles including
+Standard, Google and Airbnb. Here are the most popular linter plugins
+for Visual Studio Code:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a>:
+this extension integrates <a href="https://eslint.org/">ESLint</a> into
+VS Code. It’s the most popular linter extension, with over 6.7 million
+installs to date. Rules are configured in
+<code>.eslintrc.json</code>.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint">JSHint</a>:
+a code checker extension for <a
+href="http://jshint.com/about/">JSHint</a>. Uses
+<code>.jshintrc</code>file at the root of your project for
+configuration.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standardjs">JavaScript
+Standard Style</a>: a linter with zero configuration and rigid rules.
+Enforces the <a href="https://github.com/standard/standard">StandardJS
+Rules</a>.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=ajhyndman.jslint">JSLint</a>:
+linter extension for <a
+href="http://jslint.com/help.html">JSLint</a>.</p></li>
+</ul>
+<p>If you’d like an overview of available linters and their pros and
+cons, check out our <a
+href="https://www.sitepoint.com/comparison-javascript-linting-tools/">comparison
+of JavaScript linting tools</a>.</p>
+<h2 id="webant1_split_014.html_nodeextensions">Node Extensions</h2>
+<p>Every JavaScript project needs to at least one Node package, unless
+you’re someone who likes doing things the hard way. Here are a few VS
+Code extensions that will help you work with Node modules more
+easily.</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script">npm</a>:
+uses <code>package.json</code>to validate installed packages. Ensures
+that the installed packages have the correct version numbers, highlights
+installed packages missing from <code>package.json</code>, and packages
+that haven’t been installed.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=leizongmin.node-module-intellisense">Node.js
+Modules IntelliSense</a>: autocomplete for JavaScript and TypeScript
+modules in import statements.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path
+IntelliSense</a>: it’s not really Node related, but you definitely need
+IntelliSense for local files and this extension will autocomplete
+filenames.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=miramac.vscode-exec-node">Node
+exec</a>: allows you to execute the current file or your selected code
+with Node.js.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=dkundel.vscode-npm-source">View
+Node Package</a>: quickly view a Node package source with this
+extension, which allows you to open a Node package
+repository/documentation straight from VS Code.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=bengreenier.vscode-node-readme">Node
+Readme</a>: quickly open npm package documentation.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=jasonnutter.search-node-modules">Search
+node_modules</a>: this extension allows you to search the
+<code>node_modules</code> folder, which is usually excluded from
+standard search.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost">Import
+Cost</a>: displays size of an imported package.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_formattingextensions">Formatting
+Extensions</h2>
+<p>Once in a while, you find yourself formatting code that wasn’t
+written in a preferred style. To save time, you can install any of these
+VS Code extensions to quickly format and refactor existing code:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a>:
+a <a href="http://jsbeautifier.org/">jsBeautifier</a> extension that
+supports JavaScript, JSON, CSS and HTML. Can be customized via
+<code>.jsbeautifyrc</code> file. Most popular formatter with 2.3 million
+installs to date.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier
+Code Formatter</a>: an extension that supports the formatting of
+JavaScript, TypeScript and CSS using <a
+href="https://github.com/prettier/prettier">Prettier</a> (an opinionated
+code formatter). Has over 1.5 million installs to date.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=cmstead.jsrefactor">JS
+Refactor</a>: provides a number of utilities and actions for refactoring
+JavaScript code, such as extracting variables/methods, converting
+existing code to use arrow functions or template literals, and exporting
+functions.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=sburg.vscode-javascript-booster">JavaScript
+Booster</a>: an amazing code refactoring tool. Features several coding
+actions such as converting <code>var</code> to <code>const</code> or
+<code>let</code>, removing redundant <code>else</code> statements, and
+merging declaration and initialization. Largely inspired by <a
+href="https://www.jetbrains.com/webstorm/">WebStorm</a>.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_browserextensions">Browser
+Extensions</h2>
+<p>Unless you’re writing a console program in JavaScript, you’ll most
+likely be executing your JavaScript code inside a browser. This means
+you’ll need to frequently refresh the page to see the effect of each
+code update you make. Instead of doing this manually all the time, here
+are a few tools that can significantly reduce the development time of
+your iteration process:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger
+for Chrome</a>: debug your JavaScript easily in Chrome (by setting
+breakpoints inside the editor.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live
+Server</a>: local development server with live reload feature for static
+and dynamic pages.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server">Preview
+on Web Server</a>: provides web server and live preview
+features.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver">PHP
+Server</a>: useful for testing JavaScript code that needs to run
+client-side only.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">Rest
+Client</a>: instead of using a browser or a CURL program to test your
+REST API endpoints, you can install this tool to interactively run HTTP
+requests right inside the editor.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_frameworkextensions">Framework
+Extensions</h2>
+<p>For most projects, you’ll need a suitable framework to structure your
+code and cut down your development time. VS Code has support for most
+major frameworks through extensions. However, there are still a number
+of established frameworks that don’t have a fully developed extension
+yet. Here are some of the VS Code extensions that offer significant
+functionality.</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode">Angular
+6</a>: snippets for Angular 6. Supports Typescript, HTML, Angular
+Material ngRx, RxJS &amp; Flex Layout. Has 2.2+ million installs and 172
+Angular Snippets to date.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2">Angular
+v5 snippets</a>: provides Angular snippets for TypeScript, RxJS, HTML
+and Docker files. Has 2.7+ million installs to date.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=EQuimper.react-native-react-redux">React
+Native/React/Redux snippets for es6/es7</a>: provides snippets in
+ES6/ES7 syntax for all of these frameworks.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=vsmobile.vscode-react-native">React
+Native Tools</a>: provides IntelliSense, commands and debugging features
+for the React Native framework.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a>:
+provides syntax highlighting, snippets, Emmet, linting, formatting,
+IntelliSense and debugging support for the Vue framework. It comes with
+proper documentation published on <a
+href="https://vuejs.github.io/vetur/">GitBook</a></p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=felixrieseberg.vsc-ember-cli">Ember</a>:
+provides command support and IntelliSense for Ember. After installation,
+all <code>ember cli</code> commands are available through Code’s own
+command list.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=vsmobile.cordova-tools">Cordova
+Tools</a>: support for Cordova plugins and the Ionic framework. Provides
+IntelliSense, debugging and other support features for Cordova-based
+projects.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets">jQuery
+Code Snippets</a>: provides over 130 jQuery code snippets. Activated by
+the prefix <code>jq</code>.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_testingextensions">Testing
+Extensions</h2>
+<p>Testing is a critical part of software development, especially for
+projects that are in production phase. You can get a broad overview of
+testing in JavaScript and read more about the different kind of tests
+you can run in our guide — <a
+href="https://www.sitepoint.com/javascript-testing-unit-functional-integration/">JavaScript
+Testing: Unit vs Functional vs Integration Tests</a>. Here are some
+popular VS Code extensions for testing:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=maty.vscode-mocha-sidebar">Mocha
+sidebar</a>: provides support for testing using the Mocha library. This
+extension helps you run tests directly on the code and shows errors as
+decorators.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=spoonscen.es6-mocha-snippets">ES6
+Mocha Snippets</a>: Mocha snippets in ES6 syntax. The focus of this
+extension is to keep the code dry, leveraging arrow functions and
+omitting curlies by where possible. Can be configured to allow
+semicolons.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets">Jasmine
+Code Snippets</a>: code snippets for Jasmine test framework.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-protractor-snippets">Protractor
+Snippets</a>: end-to-end testing snippets for the Protractor framework.
+Supports both JavaScript and Typescript.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=prashaantt.node-tdd">Node
+TDD</a>: provides support for test-driven development for Node and
+JavaScript projects. Can trigger an automatic test build whenever
+sources are updated.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_awesomeextensions">Awesome
+Extensions</h2>
+<p>I’m just putting this next bunch of VS Code extensions into the
+“awesome” category, because that best describes them!</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode">Quokka.js</a>:
+an awesome debugging tool that provides a rapid prototyping playground
+for JavaScript code. Comes with <a
+href="https://quokkajs.com/docs/">excellent documentation</a>.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype">Paste
+as JSON</a>: quickly convert JSON data into JavaScript code.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics">Code
+Metrics</a>: this is another awesome extension that calculates
+complexity in JavaScript and TypeScript code.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_extensionpacks">Extension Packs</h2>
+<p>Now that we’ve come to our final category, I would just like to let
+you know that the VS Code marketplace has <a
+href="https://marketplace.visualstudio.com/search?term=extension%20packs&amp;target=VSCode&amp;category=All%20categories&amp;sortBy=Relevance">a
+category for extension packs</a>. Essentially, these are collections of
+related VS Code extensions bundled into one package for easy
+installation. Here are some of the better ones:</p>
+<ul>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack">Nodejs
+Extension Pack</a>: this pack contains ESLint, npm, JavaScript (ES6)
+snippets, Search node_modules, NPM IntelliSense and Path
+IntelliSense.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=nodesource.vscode-for-node-js-development-pack">VS
+Code for Node.js - Development Pack</a>: this one has NPM IntelliSense,
+ESLint, Debugger for Chrome, Code Metrics, Docker and Import
+Cost.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=mubaidr.vuejs-extension-pack">Vue.js
+Extension Pack</a>: a collection of Vue and JavaScript extensions. It
+currently contains about 12 VS Code extensions, some of which haven’t
+been mentioned here such as <a
+href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">auto-rename-tag</a>
+and <a
+href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">auto-close-tag</a>.</p></li>
+<li><p><a
+href="https://marketplace.visualstudio.com/items?itemName=loiane.ionic-extension-pack">Ionic
+Extension Pack</a>: this pack contains a number of VS Code extensions
+for Ionic, Angular, RxJS, Cordova and HTML development.</p></li>
+</ul>
+<h2 id="webant1_split_014.html_summary">Summary</h2>
+<p>VS Code’s huge number of quality extensions makes it a popular choice
+for JavaScript developers. It’s never been easier to write JavaScript
+code this efficiently. Extensions such as ESLint help you avoid common
+mistakes, while others such as Debugger for Chrome help you debug your
+code more easily. Node.js extensions with their IntelliSense features
+help you import modules correctly, and the availability of tools such as
+Live Server and REST client reduces your reliance on external tools to
+complete your work. All of these tools make your iteration process far
+much easier.</p>
+<p>I hope this list has been introduced you to new VS Code extensions
+that can help you in your workflow.</p>
+</div>
+<p><span id="Section0001.html"></span></p>
+<div id="Section0001.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="Section0001.html_cpaneltips">Chapter 6: Debugging JavaScript
+Projects with VS Code &amp; Chrome Debugger</h1>
+<h3 class="author" id="Section0001.html_sigil_toc_id_11">by Michael
+Wanyoike</h3>
+<p><strong>Debugging JavaScript isn't the most fun aspect of JavaScript
+programming, but it's a vital skill. This article covers two tools that
+will help you debug JavaScript like a pro.</strong></p>
+<p>Imagine for a moment that the <code>console.log()</code> function did
+not exist in JavaScript. I'm pretty sure the first question you'd ask
+yourself would be “How am I ever going to confirm my code is working
+correctly?”</p>
+<p>The answer lies in using debugging tools. For a long time, most
+developers, including myself, have been using <code>console.log</code>
+to debug broken code. It’s quick and easy to use. However, things can
+get finicky at times if you don't know where and what is causing the
+bug. Often you'll find yourself laying down <code>console.log</code>
+traps all over your code to see which one will reveal the culprit.</p>
+<p>To remedy this, we need to change our habits and start using
+debugging tools. There are a number of tools available for debugging
+JavaScript code, such as the Chrome Dev Tools, <a
+href="https://www.sitepoint.com/debugging-javascript-node-debugger/">Node
+Debugger</a>, Node Inspect and others. In fact, every <a
+href="https://www.w3schools.com/js/js_debugging.asp">major browser</a>
+provides its own tools.</p>
+<p>In this this article, we'll look at how to use the debugging
+facilities provided by Visual Studio Code. We'll also look at how to use
+the <a
+href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger
+for Chrome</a> extension that allows VS Code to integrate with Chrome
+Dev Tools. Once we're finished, you'll never want to use a
+<code>console.log()</code> again.</p>
+<h2 id="Section0001.html_prerequisites">Prerequisites</h2>
+<p>For this tutorial, you only need to have a solid foundation in <a
+href="https://www.sitepoint.com/anatomy-of-a-modern-javascript-application/">modern
+JavaScript</a>. We’ll also look at how we can debug a test written using
+<a
+href="https://www.sitepoint.com/unit-test-javascript-mocha-chai/">Mocha
+and Chai</a>. We'll be using a broken project, <a
+href="https://github.com/sitepoint-editors/debug-example">debug-example</a>,
+to learn how to fix various bugs without using a single
+<code>console.log</code>. You'll need the following to follow along:</p>
+<ul>
+<li><a
+href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">Node.js</a></li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li><a href="https://www.google.com/chrome/">Chrome Browser</a></li>
+</ul>
+<p>Start by cloning the <a
+href="https://github.com/sitepoint-editors/debug-example">debug-example</a>
+project to your workspace. Open the project in VS Code and install the
+dependencies via the integrated terminal:</p>
+<pre class="codeblock"><code># Install package dependencies
+npm install
+
+# Install global dependencies
+npm install -g mocha</code></pre>
+<p>Now we're ready to learn how to debug a JavaScript project in VS
+Code.</p>
+<h2 id="Section0001.html_debuggingjavascriptinvscode">Debugging
+JavaScript in VS Code</h2>
+<p>The first file I’d like you to look at is <code>src/places.js</code>.
+You'll need to open the <code>debug-project</code> folder in VS Code
+(<em>File</em> &gt; <em>Open Folder</em>) and select the file from
+within the editor.</p>
+<pre class="codeblock"><code>const places = [];
+
+module.exports = {
+  places,
+
+  addPlace: (city, country) =&gt; {
+    const id = ++places.length;
+    let numType = &#39;odd&#39;;
+    if (id % 2) {
+      numType = &#39;even&#39;;
+    }
+    places.push({
+      id, city, country, numType,
+    });
+  },
+};</code></pre>
+<p>The code is pretty simple, and if you have enough experience in
+coding you might notice it has a couple of bugs. If you do notice them,
+please ignore them. If not, perfect. Let's add a few of lines at the
+bottom to manually test the code:</p>
+<pre class="codeblock"><code>module.exports.addPlace(&#39;Mombasa&#39;, &#39;Kenya&#39;);
+module.exports.addPlace(&#39;Kingston&#39;, &#39;Jamaica&#39;);
+module.exports.addPlace(&#39;Cape Town&#39;, &#39;South Africa&#39;);</code></pre>
+<p>Now, I’m sure you’re itching to do a <code>console.log</code> to
+output the value of <code>places</code>. But let's not do that. Instead,
+let's add <strong>breakpoints</strong>. Simply add them by left-clicking
+on the gutter — that is, the blank space next to the line numbers:</p>
+<p><img src="Images/152442833001-breakpoint.png"
+alt="Red dots indicating breakpoints" /></p>
+<p>See the red dots on the side? Those are the breakpoints. A breakpoint
+is simply a visual indication telling the debugger tool where to pause
+execution. Next, on the action bar, click the debug button (the icon
+that says “No Bugs Allowed”).</p>
+<p><img src="Images/152442833202-debug-panel.png"
+alt="The debug panel" /></p>
+<p>Look at the top section. You'll notice there’s a gear icon with a red
+dot. Simply click on it. A debug configuration file,
+<code>launch.json</code>, will be created for you. Update the config
+like this so that you can run VS Code's debugger on
+<code>places.js</code>:</p>
+<pre class="codeblock"><code>&quot;configurations&quot;: [
+  {
+    &quot;type&quot;: &quot;node&quot;,
+    &quot;request&quot;: &quot;launch&quot;,
+    &quot;name&quot;: &quot;Launch Places&quot;,
+    &quot;program&quot;: &quot;${workspaceFolder}\\src\\places.js&quot;
+  }
+]</code></pre>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Backslashes</h4>
+<div class="body">
+<p>Depending on your operating system, you might have to replace the
+double backslash (<code>\\</code>) with a single forward slash
+(<code>/</code>).</p>
+</div>
+</section>
+<p>After you’ve saved the file, you'll notice that the debug panel has a
+new dropdown, <em>Launch Places</em>. To run it, you can:</p>
+<ul>
+<li>hit the Green Play button on the debug panel</li>
+<li>press <kbd>F5</kbd></li>
+<li>click <em>Debug</em> &gt; <em>Start Debugging</em> on the menu
+bar.</li>
+</ul>
+<p>Use whatever method you like and observe the debug process in
+action:</p>
+<p><img src="Images/152442833503-debug-node-running.png"
+alt="Debug running" /></p>
+<p>A number of things happen in quick succession once you hit the debug
+button. First, there's a toolbar that appears at the top of the editor.
+It has the following controls:</p>
+<ul>
+<li><strong>Drag Dots anchor</strong>: for moving the toolbar to
+somewhere it’s not blocking anything</li>
+<li><strong>Continue</strong>: continue the debugging session</li>
+<li><strong>Step over</strong>: execute code line by line, skipping
+functions</li>
+<li><strong>Step into</strong>: execute code line by line, going inside
+functions</li>
+<li><strong>Step out</strong>: if already inside a function, this
+command will take you out</li>
+<li><strong>Restart</strong>: restarts the debugging session</li>
+<li><strong>Stop</strong>: stops the debugging session.</li>
+</ul>
+<p>Right now, you'll notice that the debug session has paused on your
+first breakpoint. To continue the session, just hit the
+<em>Continue</em> button, which will cause execution to continue until
+it reaches the second breakpoint and pause again. Hitting
+<em>Continue</em> again will complete the execution and the debugging
+session will complete.</p>
+<p>Let's start the debugging process again by hitting <kbd>F5</kbd>.
+Make sure the two breakpoints are still in place. When you place a
+breakpoint, the code pauses at the specified line. It doesn’t execute
+that line unless you hit <em>Continue</em> (<kbd>F5</kbd>) or <em>Step
+Over</em> (<kbd>F10</kbd>). Before you hit anything, let's take a look
+at the sections that make up the debug panel:</p>
+<ul>
+<li><strong>Variables</strong>: displays local and global variables
+within the current scope (i.e. at the point of execution)</li>
+<li><strong>Watch</strong>: you can manually add expressions of
+variables you want to monitor</li>
+<li><strong>Call Stack</strong>: displays a call stack of the
+highlighted code</li>
+<li><strong>Breakpoints</strong>: displays a list of files with
+breakpoints, along with their line numbers.</li>
+</ul>
+<p>To add an expression to the <em>Watch</em> section, simply click the
+<em>+</em> sign and add any valid JavaScript expression — such as
+<code>places.length</code>. When the debugger pauses, if your expression
+is in scope, the value will be printed out. You can also hover over
+variables that are currently in scope. A popup will appear displaying
+their values.</p>
+<p>Currently the <code>places</code> array is empty. Press any
+navigation control to see how debugging works. For example, <em>Step
+over</em> will jump into the next line, while <em>Step into</em> will
+navigate to the <code>addPlace</code> function. Take a bit of time to
+get familiar with the controls.</p>
+<p>As soon as you’ve done some stepping, hover over the
+<code>places</code> variable. A popup will appear. Expand the values
+inside until you have a similar view:</p>
+<p><img src="Images/152442833804-places-hover.png"
+alt="The places popup" /></p>
+<p>You can also inspect all variables that are in scope in the
+<em>Variables</em> section.</p>
+<p><img src="Images/152442834005-local-variables.png"
+alt="The variables section" /></p>
+<p>That's pretty awesome compared to what we normally do with
+<code>console.log</code>. The debugger allows us to inspect variables at
+a deeper level. You may have also noticed a couple of problems with the
+<code>places</code> array output:</p>
+<ol>
+<li>there are multiple blanks in the array — that is,
+<code>places[0]</code> and <code>places[2]</code> are
+<code>undefined</code></li>
+<li>the <code>numType</code> property displays <code>even</code> for odd
+<code>id</code> values.</li>
+</ol>
+<p>For now, just end the debugging session. We'll fix them in the next
+section.</p>
+<h2 id="Section0001.html_debuggingtestswithmocha">Debugging Tests with
+Mocha</h2>
+<p>Open <code>test/placesTest.js</code> and review the code that’s been
+written to test the code in <code>places.test</code>. If you've never
+used Mocha before, you need to install it globally first in order to run
+the tests.</p>
+<pre class="codeblock"><code># Install mocha globally
+npm install -g mocha
+
+# Run mocha tests
+mocha</code></pre>
+<p>You can also run <code>npm test</code> to execute the tests. You
+should get the following output:</p>
+<p><img src="Images/152442834406-failing-mocha-tests.png"
+alt="Failing mocha tests" /></p>
+<p>All the tests are failing. To find out the problem, we’re going to
+run the tests in debug mode. To do that, we need a new configuration. Go
+to the debug panel and click the dropdown to access the
+<code>Add Configuration</code> option:</p>
+<p><img src="Images/152442834507-add-configuration.png"
+alt="Add configuration" /></p>
+<p>The <code>launch.json</code> file will open for you with a popup
+listing several configurations for you to choose from.</p>
+<p><img src="Images/152442834707-mocha-test-configuration.png"
+alt="Add mocha tests" /></p>
+<p>Simply select <em>Mocha Tests</em>. The following configuration will
+be inserted for you:</p>
+<pre class="codeblock"><code>{
+  &quot;type&quot;: &quot;node&quot;,
+  &quot;request&quot;: &quot;launch&quot;,
+  &quot;name&quot;: &quot;Mocha Tests&quot;,
+  &quot;program&quot;: &quot;${workspaceFolder}/node_modules/mocha/bin/_mocha&quot;,
+  &quot;args&quot;: [
+    &quot;-u&quot;,
+    &quot;tdd&quot;,
+    &quot;--timeout&quot;,
+    &quot;999999&quot;,
+    &quot;--colors&quot;,
+    &quot;${workspaceFolder}/test&quot;
+  ],
+  &quot;internalConsoleOptions&quot;: &quot;openOnSessionStart&quot;
+},</code></pre>
+<p>The default settings are fine. Go back to the dropdown and select
+<em>Mocha Tests</em>. You'll need to comment out the last three lines
+you added in <code>places.js</code>; otherwise the tests won't run as
+expected. Go back to <code>placesTest.js</code> and add a breakpoint on
+the line just before where the first test failure occurs. That should be
+line seven, where it says:</p>
+<pre class="codeblock"><code>addPlace(&#39;Nairobi&#39;, &#39;Kenya&#39;);</code></pre>
+<p>Make sure to add a <code>places.length</code> expression in the watch
+section. Hit the <em>Play</em> button to start the debugging
+session.</p>
+<p><img src="Images/152442834908-mocha-test-start.png"
+alt="Mocha test start" /></p>
+<p>At the start of the test, <code>places.length</code> should read
+zero. If you hit <em>Step over</em>, <code>places.length</code> reads 2,
+yet only one place has been added. How can that be?</p>
+<p>Restart the debugging session, and this time use <em>Step into</em>
+to navigate to the <code>addPlace</code> function. The debugger will
+navigate you to <code>places.js</code>. The value of
+<code>places.length</code> is still zero. Click <em>Step over</em> to
+execute the current line.</p>
+<p><img src="Images/152442835209-mocha-test-step.png"
+alt="Mocha test step" /></p>
+<p>Aha! The value of <code>places.length</code> just incremented by 1,
+yet we haven't added anything to the array. The problem is caused by the
+<code>++</code> operator which is mutating the array's length. To fix
+this, simply replace the line with:</p>
+<pre class="codeblock"><code>const id = places.length + 1;</code></pre>
+<p>This way, we can safely get the value of <code>id</code> without
+changing the value of <code>places.length</code>. While we’re still in
+debug mode, let's try to fix another problem where the
+<code>numType</code> property is given the value <code>even</code> while
+<code>id</code> is 1. The problem seems to be the modulus expression
+inside the if statement:</p>
+<p><img src="Images/152442835410-mocha-if-error.png"
+alt="Mocha if error" /></p>
+<p>Let's do a quick experiment using the debug console. Start typing a
+proper expression for the <code>if</code> statement:</p>
+<p><img src="Images/152442835511-mocha-debug-console.png"
+alt="Mocha debug console" /></p>
+<p>The debug console is similar to the browser console. It allows you to
+perform experiments using variables that are currently in scope. By
+trying out a few ideas in the console, you can easily find the solution
+without ever leaving the editor. Let's now fix the failing if
+statement:</p>
+<pre class="codeblock"><code>if (id % 2 === 0) {
+  numType = &#39;even&#39;;
+}</code></pre>
+<p>Restart the debug session and hit <em>Continue</em> to skip the
+current breakpoint. The first test, “can add a place”, is now passing.
+But the second test isn't. To fix this, we need another breakpoint.
+Remove the current one and place a new breakpoint on line 16, where it
+says:</p>
+<pre class="codeblock"><code>addPlace(&#39;Cape Town&#39;, &#39;South Africa&#39;);</code></pre>
+<p>Start a new debugging session:</p>
+<p><img src="Images/152442835812-mocha-test2-error.png"
+alt="Mocha test2 fail" /></p>
+<p>There! Look at the <em>Variables</em> section. Even before the second
+test begins we discover that the <code>places</code> array already has
+existing data created by the first test. This has obviously polluted our
+current test. To fix this, we need to implement some kind of
+<code>setup</code> function that resets the <code>places</code> array
+for each test. To do this in Mocha, just add the following code before
+the tests:</p>
+<pre class="codeblock"><code>beforeEach(() =&gt; {
+  places.length = 0;
+});</code></pre>
+<p>Restart the debugger and let it pause on the breakpoint. Now the
+<code>places</code> array has a clean state. This should allow our test
+to run unpolluted. Just click <em>Continue</em> to let the rest of the
+test code execute.</p>
+<p><img src="Images/152442836013-mocha-tests-passing.png"
+alt="Mocha tests passed" /></p>
+<p>All tests are now passing. You should feel pretty awesome, since
+you've learned how to debug code without writing a single line of
+<code>console.log</code>. Let's now look at how to debug client-side
+code using the browser.</p>
+<h2
+id="Section0001.html_debuggingjavascriptwithchromedebugger">Debugging
+JavaScript with Chrome Debugger</h2>
+<p>Now that you’ve become familiar with the basics of debugging
+JavaScript in VS Code, we’re going to see how to debug a slightly more
+complex project using the <a
+href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome">Debugger
+for Chrome</a> extension. Simply open the marketplace panel via the
+action bar. Search for the extension and install it.</p>
+<p><img src="Images/152442836414-debugger-for-chrome.png"
+alt="Debugger for Chrome" /></p>
+<p>After installation, hit reload to activate the extension. Let's
+quickly review the code that we'll be debugging. The web application is
+mostly a client-side JavaScript project that’s launched by running an
+Express server:</p>
+<pre class="codeblock"><code>const express = require(&#39;express&#39;);
+
+const app = express();
+const port = 3000;
+
+// Set public folder as root
+app.use(express.static(&#39;public&#39;));
+
+// Provide access to node_modules folder
+app.use(&#39;/scripts&#39;, express.static(`${__dirname}/node_modules/`));
+
+// Redirect all traffic to index.html
+app.use((req, res) =&gt; res.sendFile(`${__dirname}/public/index.html`));
+
+app.listen(port, () =&gt; {
+  console.info(&#39;listening on %d&#39;, port);
+});</code></pre>
+<p>All the client-side code is in the <code>public</code> folder. The
+project's dependencies include Semantic-UI-CSS, jQuery, Vanilla Router,
+Axios and Handlebars. This is what the project looks like when you run
+it with <code>npm start</code>. You'll have to open the URL <a
+href="http://localhost:3000">localhost:3000</a> in your browser to view
+the application.</p>
+<p><img src="Images/152442836615-places-missing-table.png"
+alt="Places missing table" /></p>
+<p>Try to add a new place. When you do, you'll see that nothing seems to
+be happening. Clearly something’s going wrong, so it's time to look
+under the hood. We'll first review the code before we start our
+debugging session. Open <code>public/index.html</code>. Our focus
+currently is this section:</p>
+<pre class="codeblock"><code>&lt;!-- TEMPLATES --&gt;
+&lt;!-- Places Form Template --&gt;
+&lt;script id=&quot;places-form-template&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+  &lt;h1 class=&quot;ui header&quot;&gt;
+    &lt;i class=&quot;map marker alternate icon&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;content&quot;&gt; Places&lt;/div&gt;
+  &lt;/h1&gt;
+  &lt;hr&gt;
+  &lt;br&gt;
+  &lt;form class=&quot;ui form&quot;&gt;
+    &lt;div class=&quot;fields&quot;&gt;
+      &lt;div class=&quot;inline field&quot;&gt;
+        &lt;label&gt;City&lt;/label&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Enter city&quot; id=&quot;city&quot; name=&quot;city&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;inline field&quot;&gt;
+        &lt;label&gt;Country&lt;/label&gt;
+        &lt;input type=&quot;text&quot; placeholder=&quot;Enter Country&quot; name=&quot;country&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ui submit primary button&quot;&gt;Add Place&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+  &lt;br&gt;
+  &lt;div id=&quot;places-table&quot;&gt;&lt;/div&gt;
+&lt;/script&gt;
+
+&lt;!-- Places Table Template --&gt;
+&lt;script id=&quot;places-table-template&quot; type=&quot;text/x-handlebars-template&quot;&gt;
+  &lt;table class=&quot;ui celled striped table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Id&lt;/th&gt;
+        &lt;th&gt;City&lt;/th&gt;
+        &lt;th&gt;Country&lt;/th&gt;
+        &lt;th&gt;NumType&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      {{#each places}}
+      &lt;tr&gt;
+        &lt;td&gt;{{id}}&lt;/td&gt;
+        &lt;td&gt;{{city}}&lt;/td&gt;
+        &lt;td&gt;{{country}}&lt;/td&gt;
+        &lt;td&gt;{{numType}}&lt;/td&gt;
+      &lt;/tr&gt;
+      {{/each}}
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/script&gt;</code></pre>
+<p>If you take a quick glance, the code will appear to be correct. So
+the problem must be in <code>app.js</code>. Open the file and analyze
+the code there. Below are the sections of code you should pay attention
+to. Take your time to read the comments in order to understand the
+code.</p>
+<pre class="codeblock"><code>// Load DOM roots
+const el = $(&#39;#app&#39;);
+const placesTable = $(&#39;#places-table&#39;);
+
+// Initialize empty places array
+const places = [];
+
+// Compile Templates
+const placesFormTemplate = Handlebars.compile($(&#39;#places-form-template&#39;).html());
+const placesTableTemplate = Handlebars.compile($(&#39;#places-table-template&#39;).html());
+
+const addPlace = (city, country) =&gt; {
+  const id = places.length + 1;
+  const numType = (id % 2 === 0) ? &#39;even&#39; : &#39;odd&#39;;
+  places.push({
+    id, city, country, numType,
+  });
+};
+
+// Populate places array
+addPlace(&#39;Nairobi&#39;, &#39;Kenya&#39;);
+
+...
+
+// Places View - &#39;/&#39;
+router.add(&#39;/&#39;, () =&gt; {
+  // Display Places Form
+  const html = placesFormTemplate();
+  el.html(html);
+  // Form Validation Rules
+  $(&#39;.ui.form&#39;).form({
+    fields: {
+      city: &#39;empty&#39;,
+      country: &#39;empty&#39;,
+    },
+  });
+  // Display Places Table
+  const tableHtml = placesTableTemplate({ places });
+  placesTable.html(tableHtml);
+  $(&#39;.submit&#39;).on(&#39;click&#39;, () =&gt; {
+    const city = $(&#39;#city&#39;).val();
+    const country = $(&#39;#country&#39;).val();
+    addPlace(city, country);
+    placesTable.html(placesTableTemplate({ places }));
+    $(&#39;form&#39;).form(&#39;clear&#39;);
+    return false;
+  });
+});</code></pre>
+<p>Everything seems fine. But what could be the problem? Let's place a
+breakpoint on line 53 where it says:</p>
+<pre class="codeblock"><code>placesTable.html(tableHtml);</code></pre>
+<p>Next, create a <em>Chrome</em> configuration via the debug panel.
+Select the highlighted option:</p>
+<p><img src="Images/152442836916-chrome-configuration.png"
+alt="Chrome debug config" /></p>
+<p>Then update the Chrome config as follows to match our
+environment:</p>
+<pre class="codeblock"><code>{
+  &quot;type&quot;: &quot;chrome&quot;,
+  &quot;request&quot;: &quot;launch&quot;,
+  &quot;name&quot;: &quot;Launch Chrome&quot;,
+  &quot;url&quot;: &quot;http://localhost:3000&quot;,
+  &quot;webRoot&quot;: &quot;${workspaceFolder}/public&quot;
+},</code></pre>
+<p>Next, start the server as normal using <code>npm start</code> or
+<code>node server</code>. Then select <em>Launch Chrome</em> and start
+the debugging session. A new instance of Chrome will be launched in
+debug mode and execution should pause where you set the breakpoint.
+Now’s a good time to position Visual Studio Code and the Chrome instance
+side by side so you can work efficiently.</p>
+<p><img src="Images/152442837817-chrome-vscode-debug.png"
+alt="Debugging JavaScript with Chrome and VS Code" /></p>
+<p>Mouse over the <code>placesTable</code> constant. A popup appears,
+but it seems empty. In the watch panel, add the expressions
+<code>el</code> and <code>placesTable</code>. Or, alternatively, just
+scroll up to where the constants have been declared.</p>
+<p><img src="Images/152442838318-el-popup.png"
+alt="Element popup" /></p>
+<p>Notice that <code>el</code> is populated but <code>placesTable</code>
+is empty. This means that jQuery was unable to find the element
+<code>#places-table</code>. Let's go back to
+<code>public/index.html</code> and find where this
+<code>#places-table</code> is located.</p>
+<p>Aha! The table div we want is located on line 55, right inside the
+<code>places-form-template</code>. This means the div
+<code>#places-table</code> can only be found after the template,
+<code>places-form-template</code>, has been loaded. To fix this, just go
+back to <code>app.js</code> and move the code to line 52, right after
+the “Display Places Table” comment:</p>
+<pre class="codeblock"><code>const placesTable = $(&#39;#places-table&#39;);</code></pre>
+<p>Save the file, and restart the debugging session. When it reaches the
+breakpoint, just hit <em>Continue</em> and let the code finish
+executing. The table should now be visible:</p>
+<p><img src="Images/152442838118-chrome-fixed-table.png"
+alt="Chrome fixed table" /></p>
+<p>You can now remove the breakpoint. Let's try adding a new place — for
+example, Cape Town, South Africa</p>
+<p><img src="Images/152442838619-chrome-country-missing.png"
+alt="Country missing" /></p>
+<p>Hmm … that's not right. The place is added, but the country is not
+being displayed. The problem obviously isn't the HTML table code, since
+the first row has the country cell populated, so something must be
+happening on the JavaScript side. Open <code>app.js</code> and add a
+breakpoint on line 58 where it says:</p>
+<pre class="codeblock"><code>addPlace(city, country);</code></pre>
+<p>Restart the debug session and try to add a new place again. The
+execution should pause at the breakpoint you just set. Start hovering
+over the relevant variables. You can also add expressions to the watch
+panel, as seen below:</p>
+<p><img src="Images/152442838920-country-bug-found.png"
+alt="Country bug found" /></p>
+<p>As you can see, the <code>country</code> variable is undefined, but
+the <code>city</code> variable is. If you look at the jQuery selector
+expressions that have been set up in the watch panel, you'll notice that
+the <code>#country</code> selector returns nothing. This means it wasn't
+present in the DOM. Head over to <code>index.html</code> to verify.</p>
+<p>Alas! If you look at line 59 where the country input has been
+defined, it's missing the ID attribute. You need to add one like
+this:</p>
+<pre class="codeblock"><code>&lt;input type=&quot;text&quot; placeholder=&quot;Enter Country&quot; name=&quot;country&quot; id=&quot;country&quot;&gt;</code></pre>
+<p>Restart the debugging session and try to add a new place.</p>
+<p><img src="Images/152442839121-country-fixed.png"
+alt="Country bug fixed" /></p>
+<p>It now works! Great job fixing another bug without
+<code>console.log</code>. Let's now move on to our final bug.</p>
+<h2 id="Section0001.html_debuggingclientsiderouting">Debugging
+Client-side Routing</h2>
+<p>Click the <em>Convert</em> link in the navigation bar. You should be
+taken to this view to perform a quick conversion:</p>
+<p><img src="Images/152442839322-convert-currency.png"
+alt="Convert currency" /></p>
+<p>That runs fine. No bugs there.</p>
+<p>Actually there are, and they have nothing to do with the form. To
+spot them, refresh the page.</p>
+<p>As soon as you hit reload, the user is navigated to back to
+<code>/</code>, the root of the app. This is clearly a routing problem
+which the Vanilla Router package is suppose to handle. Head back to
+<code>app.js</code> and look for this line:</p>
+<pre class="codeblock"><code>router.navigateTo(window.location.path);</code></pre>
+<p>This piece of code is supposed to route users to the correct page
+based on the URL provided. But why isn't it working? Let's add a
+breakpoint here, then navigate back to the <code>/convert</code> URL and
+try refreshing the page again.</p>
+<p>As soon as you refresh, the editor pauses at the breakpoint. Hover
+over the express <code>windows.location.path</code>. A popup appears
+which says the value is <code>undefined</code>. Let's go to the debug
+console and start typing the expression below:</p>
+<p><img src="Images/152442839923-navigation-error.png"
+alt="Navigation error" /></p>
+<p>Hold up! The debug console just gave us the correct expression. It's
+supposed to read <code>window.location.pathname</code>. Correct the line
+of code, remove the breakpoint and restart the debugging session.</p>
+<p>Navigate to the <code>/convert</code> URL and refresh. The page
+should reload the correct path. Awesome!</p>
+<p>That's the last bug we're going to squash, but I do recommend you
+keep on experimenting within the debug session. Set up new breakpoints
+in order to inspect other variables. For example, check out the
+<code>response</code> object in the <code>router('/convert')</code>
+function. This demonstrates how you can use a debug session to figure
+out the data structure returned by an API request when dealing with new
+REST endpoints.</p>
+<p><img src="Images/152442840424-response-inspect.png"
+alt="Response inspect" /></p>
+<h2 id="Section0001.html_summary">Summary</h2>
+<p>Now that we’ve come to the end of this tutorial, you should be proud
+of yourself for learning a vital skill in programming. Learning how to
+debug code properly will help you fix errors faster. You should be
+aware, however, that this article only scratches the surface of what’s
+possible, and you should take a look at the complete <a
+href="https://code.visualstudio.com/docs/editor/debugging">debugging
+documentation</a> for VS Code. Here you'll find more details about
+specific commands and also types of breakpoint we haven't covered, such
+as <a
+href="https://code.visualstudio.com/docs/editor/debugging#_conditional-breakpoints">Conditional
+Breakpoints</a>.</p>
+<p>I hope from now on you'll stop using <code>console.log</code> to
+debug and instead reach for VS Code to start debugging JavaScript like a
+pro!</p>
+</div>
+<p><span id="Section0003.html"></span></p>
+<div id="Section0003.html_calibre_toc_3" class="page-frontmatter">
+<h1 id="Section0003.html_cpaneltips">Chapter 6: Introducing Axios, a
+Popular, Promise-based HTTP Client</h1>
+<h3 class="calibre8" id="Section0003.html_sigil_toc_id_12">by Nilson
+Jacques</h3>
+<p><strong><a href="https://www.npmjs.com/package/axios"
+style="font-weight:bold">Axios</a> is a popular, promise-based HTTP
+client that sports an easy-to-use API and can be used in both the
+browser and Node.js.</strong></p>
+<p>Making HTTP requests to fetch or save data is one of the most common
+tasks a client-side JavaScript application will need to do. Third-party
+libraries — especially jQuery — have long been a popular way to interact
+with the more verbose browser APIs, and abstract away any cross-browser
+differences.</p>
+<p>As people move away from jQuery in favor of improved native DOM APIs,
+or front-end UI libraries like React and Vue.js, including it purely for
+its <code>$.ajax</code> functionality makes less sense.</p>
+<p>Let’s take a look at how to get started using Axios in your code, and
+see some of the features that contribute to its popularity among
+JavaScript developers.</p>
+<h2 id="Section0003.html_axiosvsfetch">Axios vs Fetch</h2>
+<p>As you’re probably aware, modern browsers ship with the newer <a
+href="https://www.sitepoint.com/introduction-to-the-fetch-api/">Fetch
+API</a> built in, so why not just use that? There are several
+differences between the two that many feel gives Axios the edge.</p>
+<p>One such difference is in how the two libraries treat <a
+href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors">HTTP
+error codes</a>. When using Fetch, if the server returns a 4xx or 5xx
+series error, your <code>catch()</code> callback won’t be triggered and
+it is down to the developer to check the response status code to
+determine if the request was successful. Axios, on the other hand, will
+reject the request promise if one of these status codes is returned.</p>
+<p>Another small difference, which often trips up developers new to the
+API, is that Fetch doesn’t automatically send cookies back to the server
+when making a request. It’s necessary to explicitly pass an option for
+them to be included. Axios has your back here.</p>
+<p>One difference that may end up being a show-stopper for some is
+progress updates on uploads/downloads. As Axios is built on top of the
+older XHR API, you’re able to register callback functions for
+<code>onUploadProgress</code> and <code>onDownloadProgress</code> to
+display the percentage complete in your app’s UI. Currently, Fetch has
+no support for doing this.</p>
+<p>Lastly, Axios can be used in both the browser and Node.js. This
+facilitates sharing JavaScript code between the browser and the back end
+or doing server-side rendering of your front-end apps.</p>
+<section class="sigil_not_in_toc box tip note">
+<h4 class="sigil_not_in_toc">Fetch API for Node</h4>
+<div class="body">
+<p>there are versions of the <a
+href="https://www.npmjs.com/package/isomorphic-fetch">Fetch API
+available for Node</a> but, in my opinion, the other features Axios
+provides give it the edge.</p>
+</div>
+</section>
+<h2 id="Section0003.html_installing">Installing</h2>
+<p>As you might expect, the most common way to install Axios is via the
+npm package manager:</p>
+<pre class="codeblock"><code>npm i axios</code></pre>
+<p>and include it in your code where needed:</p>
+<pre class="codeblock"><code>// ES2015 style import
+import axios from &#39;axios&#39;;
+
+// Node.js style require
+const axios = require(&#39;axios&#39;);</code></pre>
+<p>If you’re not using some kind of module bundler (e.g. webpack), then
+you can always pull in the library from a CDN in the traditional
+way:</p>
+<pre class="codeblock"><code>&lt;script src=&quot;https://unpkg.com/axios/dist/axios.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h3 id="Section0003.html_browsersupport">Browser support</h3>
+<p>Axios works in all modern web browsers, and Internet Explorer 8+.</p>
+<h2 id="Section0003.html_makingrequests">Making Requests</h2>
+<p>Similar to jQuery’s <code>$.ajax</code> function, you can make any
+kind of HTTP request by passing an options object to Axios:</p>
+<pre class="codeblock"><code>axios({
+  method: &#39;post&#39;,
+  url: &#39;/login&#39;,
+  data: {
+    user: &#39;brunos&#39;,
+    lastName: &#39;ilovenodejs&#39;
+  }
+});</code></pre>
+<p>Here, we’re telling Axios which HTTP method we’d like to use (e.g.
+GET/POST/DELETE etc.) and which URL the request should be made to.</p>
+<p>We’re also providing some data to be sent along with the request in
+the form of a simple JavaScript object of key/value pairs. By default,
+Axios will serialize this as JSON and send it as the request body.</p>
+<h3 id="Section0003.html_requestoptions">Request Options</h3>
+<p>There are a whole bunch of <a
+href="https://github.com/axios/axios#request-config">additional
+options</a> you can pass when making a request, but here are the most
+common ones:</p>
+<ul>
+<li><code>baseUrl</code>: if you specify a base URL, it’ll be prepended
+to any relative URL you use.</li>
+<li><code>headers</code>: an object of key/value pairs to be sent as
+headers.</li>
+<li><code>params</code>: an object of key/value pairs that will be
+serialized and appended to the URL as a query string.</li>
+<li><code>responseType</code>: if you’re expecting a response in a
+format other than JSON, you can set this property to
+<code>arraybuffer</code>, <code>blob</code>, <code>document</code>,
+<code>text</code>, or <code>stream</code>.</li>
+<li><code>auth</code>: passing an object with <code>username</code> and
+<code>password</code> fields will use these credentials for HTTP Basic
+auth on the request.</li>
+</ul>
+<h3 id="Section0003.html_conveniencemethods">Convenience methods</h3>
+<p>Also like jQuery, there are shortcut methods for performing different
+types of request.</p>
+<p>The <code>get</code>, <code>delete</code>, <code>head</code> and
+<code>options</code> methods all take two arguments: a URL, and an
+optional config object.</p>
+<pre class="codeblock"><code>axios.get(&#39;/products/5&#39;);</code></pre>
+<p>The <code>post</code>, <code>put</code>, and <code>patch</code>
+methods take a data object as their second argument, and an optional
+config object as the third:</p>
+<pre class="codeblock"><code>axios.post(
+  &#39;/products&#39;,
+  { name: &#39;Waffle Iron&#39;, price: 21.50 },
+  { options }
+);</code></pre>
+<h2 id="Section0003.html_receivingaresponse">Receiving a Response</h2>
+<p>Once you make a request, Axios returns a promise that will resolve to
+either a response object or an error object.</p>
+<pre class="codeblock"><code>axios.get(&#39;/product/9&#39;)
+  .then(response =&gt; console.log(response))
+  .catch(error =&gt; console.log(error));</code></pre>
+<h3 id="Section0003.html_theresponseobject">The response object</h3>
+<p>When the request is successful, your <code>then()</code> callback
+will receive a response object with the following properties:</p>
+<ul>
+<li><code>data</code>: the payload returned from the server. By default,
+Axios expects JSON and will parse this back into a JavaScript object for
+you.</li>
+<li><code>status</code>: the HTTP code returned from the server.</li>
+<li><code>statusText</code>: the HTTP status message returned by the
+server.</li>
+<li><code>headers</code>: all the headers sent back by the server.</li>
+<li><code>config</code>: the original request configuration.</li>
+<li><code>request</code>: the actual <code>XMLHttpRequest</code> object
+(when running in a browser).</li>
+</ul>
+<h3 id="Section0003.html_theerrorobject">The error object</h3>
+<p>If there’s a problem with the request, the promise will be rejected
+with an error object containing at least some of the following
+properties:</p>
+<ul>
+<li><code>message</code>: the error message text.</li>
+<li><code>response</code>: the response object (if received) as
+described in the previous section.</li>
+<li><code>request</code>: the actual <code>XMLHttpRequest</code> object
+(when running in a browser).</li>
+<li><code>config</code>: the original request configuration.</li>
+</ul>
+<h2 id="Section0003.html_transformsandinterceptors">Transforms and
+Interceptors</h2>
+<p>Axios provides a couple of neat features inspired by <a
+href="https://docs.angularjs.org/api/ng/service/$http">Angular’s $http
+library</a>. Although they appear similar, they have slightly different
+use cases.</p>
+<h3 id="Section0003.html_transforms">Transforms</h3>
+<p>Axios allows you to provide functions to transform the outgoing or
+incoming data, in the form of two configuration options you can set when
+making a request: <code>transformRequest</code> and
+<code>transformResponse</code>. Both properties are arrays, allowing you
+to chain multiple functions that the data will be passed through.</p>
+<p>Any functions passed to <code>transformRequest</code> are applied to
+PUT, POST and PATCH requests. They receive the request data, and the
+headers object as arguments and must return a modified data object</p>
+<pre class="codeblock"><code>const options = {
+  transformRequest: [
+    (data, headers) =&gt; {
+      // do something with data
+      return data;
+    }
+  ]
+}</code></pre>
+<p>Functions can be added to <code>transformResponse</code> in the same
+way, but are called only with the response data, and before the response
+is passed to any chained <code>then()</code> callbacks.</p>
+<p>So what could we use transforms for? One potential use case is
+dealing with an API that expects data in a particular format — say XML
+or even CSV. You could set up a pair of transforms to convert outgoing
+and incoming data to and from the format the API requires.</p>
+<p>It’s worth noting that Axios’ default <code>transformRequest</code>
+and <code>transformResponse</code> functions transform data to and from
+JSON, and specifying your own transforms will override these.</p>
+<h3 id="Section0003.html_interceptors">Interceptors</h3>
+<p>While transforms let you modify outgoing and incoming data, Axios
+also allows you to add functions called <a
+href="https://github.com/axios/axios#interceptors">interceptors</a>.
+Like transforms, these functions can be attached to fire when a request
+is made, or when a response is received.</p>
+<pre class="codeblock"><code>// Add a request interceptor
+axios.interceptors.request.use((config) =&gt; {
+    // Do something before request is sent
+    return config;
+  }, (error) =&gt; {
+    // Do something with request error
+    return Promise.reject(error);
+  });
+
+// Add a response interceptor
+axios.interceptors.response.use((response) =&gt; {
+    // Do something with response data
+    return response;
+  }, (error) =&gt; {
+    // Do something with response error
+    return Promise.reject(error);
+  });</code></pre>
+<p>As you might have noticed from the examples above, interceptors have
+some important differences from transforms. Instead of just receiving
+the data or headers, interceptors receive the full request config or
+response object.</p>
+<p>When creating interceptors, you can also choose to provide an error
+handler function that allows you to catch any errors and deal with them
+appropriately.</p>
+<p>Request interceptors can be used to do things such as <a
+href="https://www.npmjs.com/package/axios-token-interceptor">retrieve a
+token from local storage and send with all requests</a>, while a
+response interceptor could be used to <a
+href="https://gist.github.com/yajra/5f5551649b20c8f668aec48549ef5c1f">catch
+401 responses and redirect to a login page</a> for authorization.</p>
+<h2 id="Section0003.html_thirdpartyaddons">Third-party Add-ons</h2>
+<p>Being a popular library, Axios benefits from an ecosystem of
+third-party libraries that extend its functionality. From interceptors
+to testing adaptors to loggers, there’s quite a variety available. Here
+are a few that I think you may find useful:</p>
+<ul>
+<li><a
+href="https://github.com/ctimmerm/axios-mock-adapter">axios-mock-adaptor</a>:
+allows you to easily mock requests to facilitate testing your code.</li>
+<li><a
+href="https://github.com/jin5354/axios-cache-plugin">axios-cache-plugin</a>:
+a wrapper for selectively caching GET requests.</li>
+<li><a
+href="https://github.com/svrcekmichal/redux-axios-middleware">redux-axios-middleware</a>:
+if you’re a Redux user, this middleware provides a neat way to dispatch
+Ajax requests with plain old actions.</li>
+</ul>
+<p>A list of more <a
+href="https://github.com/axios/axios/blob/master/ECOSYSTEM.md">Axios
+add-ons and extentions</a> is available on the Axios GitHub repo.</p>
+<p>In summary, Axios has a lot to recommend it. It has a straightforward
+API, with helpful shortcut methods that will be familiar to anyone who’s
+used jQuery before. Its popularity, and the availability of a variety of
+third-party add-ons, make it a solid choice for including in your apps,
+whether front end, back end, or both.</p>
+</div>

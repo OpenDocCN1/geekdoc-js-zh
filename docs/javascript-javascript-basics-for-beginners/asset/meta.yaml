@@ -1,0 +1,148 @@
+name: Javascript： Javascript basics for Beginners
+name_cn: Javascript 初学者入门指南
+slug: javascript-javascript-basics-for-beginners
+toc:
+- - '#'
+  - 数据类型
+- - '#'
+  - 变量声明
+- - '#'
+  - let 关键字 (Let Keyword)
+- - '##'
+  - 全局作用域 (Global Scope)
+- - '##'
+  - 块作用域 (Block Scope)
+- - '###'
+  - 示例 1
+- - '###'
+  - 示例 2：
+- - '#'
+  - 算术 (Arithmetic)
+- - '##'
+  - 减法 (Subtraction)
+- - '##'
+  - 字符串拼接 (String Concatenation)
+- - '#'
+  - 第三章：JavaScript 常量
+- - '##'
+  - 块作用域
+- - '###'
+  - 原始值
+- - '###'
+  - 常量数组
+- - '#'
+  - 第四章：提示与条件判断
+- - '##'
+  - JavaScript if 语句
+- - '##'
+  - else 语句
+- - '##'
+  - else if 语句
+- - '##'
+  - JavaScript switch 语句
+- - '#'
+  - 第五章：JavaScript 字符串和数组
+- - '###'
+  - '`lastIndexOf()` 方法'
+- - '###'
+  - 如果未找到索引？
+- - '###'
+  - '`search()` 方法'
+- - '###'
+  - 提取
+- - '###'
+  - '`substring()` 方法'
+- - '###'
+  - '`substr()` 方法'
+- - '###'
+  - '`replace()` 方法'
+- - '###'
+  - 拼接
+- - '###'
+  - 字符串数组
+- - '#'
+  - 第六章：数组
+- - '##'
+  - 关联数组
+- - '##'
+  - 数组转换
+- - '##'
+  - 弹出数组
+- - '##'
+  - 移位数组
+- - '##'
+  - splice() 方法
+- - '##'
+  - 拼接
+- - '##'
+  - 切片
+- - '##'
+  - 排序
+- - '##'
+  - 数字排序
+- - '##'
+  - 比较函数
+- - '##'
+  - 随机排序
+- - '##'
+  - 费尔-舍斯特方法
+- - '##'
+  - map() 方法
+- - '##'
+  - filter() 方法
+- - '##'
+  - reduce() 方法
+- - '##'
+  - reduceRight() 方法
+- - '##'
+  - every() 方法
+- - '##'
+  - some() 方法
+- - '##'
+  - indexOf() 方法
+- - '##'
+  - find() 方法
+- - '##'
+  - findIndex() 方法
+- - '#'
+  - 第六章：JavaScript 循环
+- - '###'
+  - forEach() 循环
+- - '###'
+  - for/of 循环
+- - '###'
+  - 死循环
+- - '###'
+  - JavaScript while 循环
+- - '##'
+  - do/while 循环
+- - '###'
+  - 这是 JavaScript Do/While Loop
+- - '#'
+  - JavaScript Break 和 Continue 语句
+- - '#'
+  - 学习 JavaScript 循环
+- - '#'
+  - 第七章：JavaScript 函数
+- - '##'
+  - 的调用
+- - '##'
+  - () 运算符
+- - '##'
+  - JavaScript 表达式
+- - '##'
+  - constructor()
+- - '##'
+  - 自调用
+- - '##'
+  - 函数或对象
+- - '##'
+  - Getters setters
+- - '##'
+  - 删除
+- - '##'
+  - 日期
+- - '##'
+  - JavaScript 类
+- - '##'
+  - 类方法

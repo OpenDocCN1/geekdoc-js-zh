@@ -1,0 +1,2302 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 741 1186" preserveaspectratio="none">
+<image width="741" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3">Node.js</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">JavaScript based framework</span></p>
+<p><span class="calibre3">Easy Guide Book</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre5">By Rick L.</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre7">Copyright©2016 Rick L.</span></p>
+<p><span class="calibre7">All Rights Reserved</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre12">Copyright © 2016 by </span><span
+class="calibre13">Rick L.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre7">Table of Contents</span></p>
+<p><span id="part0000_split_002.html_toc" class="calibre15"></span><a
+href="#part0000_split_004.html__Toc445731675" class="calibre15"><span
+class="calibre16">Introduction</span></a></p>
+<p><a href="#part0000_split_005.html__Toc445731676"
+class="calibre15"><span class="calibre16">Chapter 1- A Brief
+Overview</span></a></p>
+<p><a href="#part0000_split_006.html__Toc445731677"
+class="calibre15"><span class="calibre16">Chapter 2- Management of
+Module Dependencies</span></a></p>
+<p><a href="#part0000_split_007.html__Toc445731678"
+class="calibre15"><span class="calibre16">Chapter 3- Require and
+Exports</span></a></p>
+<p><a href="#part0000_split_008.html__Toc445731679"
+class="calibre15"><span class="calibre16">Chapter 4- Asynchronous Flow
+Control using Promise</span></a></p>
+<p><a href="#part0000_split_016.html__Toc445731680"
+class="calibre15"><span class="calibre16">Chapter 5- Management of
+Node.js callback Hell</span></a></p>
+<p><a href="#part0000_split_022.html__Toc445731681"
+class="calibre15"><span class="calibre16">Chapter 6- Promise
+Methods</span></a></p>
+<p><a href="#part0000_split_029.html__Toc445731682"
+class="calibre15"><span class="calibre16">Chapter 7- Execution of
+Multiple Instances in a Single Process</span></a></p>
+<p><a href="#part0000_split_030.html__Toc445731683"
+class="calibre15"><span class="calibre16">Chapter 8- LoopBack Node.js
+Framework</span></a></p>
+<p><a href="#part0000_split_034.html__Toc445731684"
+class="calibre15"><span class="calibre16">Chapter 9- Event Loop
+Monitoring</span></a></p>
+<p><a href="#part0000_split_035.html__Toc445731685"
+class="calibre15"><span class="calibre16">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre4">Disclaimer</span></p>
+<p><span class="calibre17"> </span></p>
+<p><span class="calibre4">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre12"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+<div id="part0000_split_003.html_calibre_pb_6" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<section id="part0000_split_004.html_calibre_pb_8"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_004.html__Toc445731675"
+class="calibre15"><span
+id="part0000_split_004.html_2I-19e53f8380fd401f8970a7c2bf6dea94"
+class="calibre19">Introduction</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">NodeJS is a very useful framework. It can
+assist you in the development of network applications which are highly
+scalable. It is also good for web development. If you are a JavaScript
+expert, then it will be easy for you to learn Node. This book has
+simplified the process of learning Node.JS. </span></p>
+<div id="part0000_split_004.html_calibre_pb_9" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_12"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_005.html__Toc445731676"
+class="calibre15"><span class="calibre19">Chapter 1- A Brief
+Overview</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">NodeJS was developed for the purpose of
+helping programmers in the development of network applications which are
+scalable. It is an event-driven and asynchronous framework which was
+built on top of the JavaScript engine for Chrome. For you to master how
+to use it well, you should be good in JavaScript. It is good for the
+development of web applications. Due to its non-blocking mode of
+operation, the programs are not forced to wait for the others to be
+executed, but a callback is just made. As you wait for a response in
+Node, you are allowed to continue with performing other tasks. All of
+the Node libraries have been designed so that they can operate in a
+non-blocking mode. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The data for a node application is not
+buffered at all in the memory. Instead, this data is output by means of
+chunk-by-chunk. Due to its features, it has demonstrated a great
+difference between it and other related frameworks and hence its
+increasing popularity. </span></p>
+<div id="part0000_split_005.html_calibre_pb_13" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<section id="part0000_split_006.html_calibre_pb_16"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_006.html__Toc445731677"
+class="calibre15"><span class="calibre19">Chapter 2- Management of
+Module Dependencies</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Some applications are very dependent on the
+number of NPM modules that are to be used. These can then be specified
+in the file “</span><span class="calibre22">package.json</span><span
+class="calibre12">” as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">"dependencies": {</span><br />
+<span class="calibre4">      "express": "2.3.12",</span><br />
+<span class="calibre4">      "jade": "&gt;= 0.0.1",</span><br />
+<span class="calibre4">      "redis":   "0.6.0"</span><br />
+<span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Once you have done that,  every time that you
+need your project to be  fresh, the dependencies will have to be sorted
+out as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">$ npm install</span></p>
+<p><span class="calibre12">With this, one is allowed to either specify a
+specific version of the module or the minimum module that they need to
+use. This can be done by using the symbol “&gt;=” so as to prefix the
+number. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Sometimes, you might have some dependencies
+which are related to development. You may not want to have these
+dependencies in the production, and these can be specified by the use of
+the property “</span><span
+class="calibre22">devDependencies.</span><span class="calibre12">” This
+is shown in the example given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">"devDependencies": {</span><br />
+<span class="calibre4">       "vows": "&gt;= 0.4.x"</span><br />
+<span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Our production by the use of “npm install
+–production” will make sure that the dependency is not installed. If you
+are working on a private module, the property “private": true” can be
+added to the file “</span><span
+class="calibre22">package.json”</span><span class="calibre12"> so that
+the module is not accidentally published to the NPM registry.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">For those who are in need of hosting their
+module in a private git repository, but who still have a need for it to
+be bundled as a dependency in the project, this can be done as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">"dependencies": {</span><br />
+<span class="calibre4">    "secret-module":
+"git+ssh://git@github.com:username/secret-repo.git#v2.3"</span><br />
+<span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The last part shown above having the URL has
+been used to specify the tag which is to be used. A branch name or a
+commit hash can also be specified. </span></p>
+<div id="part0000_split_006.html_calibre_pb_17" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_007.html"></span></p>
+<section id="part0000_split_007.html_calibre_pb_20"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_007.html__Toc445731678"
+class="calibre15"><span class="calibre19">Chapter 3- Require and
+Exports</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Consider a NodeJS file having the content
+given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var p = 10;</span></p>
+<p><span class="calibre4">var addP = function(value) {</span></p>
+<p><span class="calibre4">    return value + p;</span></p>
+<p><span class="calibre4">};</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">When we are in  another file, it will be
+impossible for us to access the variable “</span><span
+class="calibre22">p”</span><span class="calibre12"> or the function
+“</span><span class="calibre22">addP.”</span><span class="calibre12">
+However, the reason behind this is not the use of the keyword
+“</span><span class="calibre22">var.”</span><span class="calibre12">
+Note that a module is the fundamental building block of a file in
+NodeJS, and it is used for mapping to the file directly. In the above
+module, everything has been made private. However, when programming in
+Node, we don’t want things to be accessible or visible only in the
+current file but from other files. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Before we can explore how a particular module
+can be exposed, it will be good for us to know how a particular module
+is loaded. The “</span><span class="calibre22">require”</span><span
+class="calibre12"> function is used in this case. It is used for the
+purpose of loading a particular module, and the return value for this
+has to be assigned to a particular variable. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var myVar = require('./misc');</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">If our module is not intended to expose
+anything to the other modules or files, then the above will not be very
+important or useful. For the things to be exposed, we use
+“module.exports,” and anything that we need to expose will be exposed.
+This is shown in the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var p = 8;</span></p>
+<p><span class="calibre4">var addP = function(value) {</span></p>
+<p><span class="calibre4">    return value + p;</span></p>
+<p><span class="calibre4">};</span></p>
+<p><span class="calibre4">module.exports.p = p;</span></p>
+<p><span class="calibre4">module.exports.addP = addP;</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The module which has been loaded can then be
+used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var myVar = require('./misc');</span></p>
+<p><span class="calibre4">console.log("Addition of %d to 10 will gives
+us %d", myVar.p, myVar.addP(10));</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Alternatively, the contents of a module can
+be exposed as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var MyUser = function(name, email)
+{</span></p>
+<p><span class="calibre4">    this.name = name;</span></p>
+<p><span class="calibre4">    this.email = email;</span></p>
+<p><span class="calibre4">};</span></p>
+<p><span class="calibre4">module.exports = MyUser;</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">As shown above, the difference may seem to be
+very minor, but at the same time very important. The exportation of the
+user has been done indirectly without having to perform any indirection.
+The difference between:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">module.exports.MyUser = MyUser;</span></p>
+<p><span class="calibre4">//v.s</span></p>
+<p><span class="calibre4">module.exports = MyUser;</span></p>
+<p><span class="calibre12">is just about the use as shown
+below:</span></p>
+<p><span class="calibre4">var myuser = require('./user');</span></p>
+<p><span class="calibre4">var user = new user.User();</span></p>
+<p><span class="calibre4">//v.s</span></p>
+<p><span class="calibre4">var user = new user();</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">It will not matter  whether your module is
+just a container having exported modules or not. The two can be mixed
+within the module, but the resulting API may not be good at all.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">You should also consider what is to happen in
+case the function is exported. This is shown in the code given
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var pLevel = function(level) {</span></p>
+<p><span class="calibre4">return level &gt; 9000 ? "it is over 9000!!!"
+: level;</span></p>
+<p><span class="calibre4">};</span></p>
+<p><span class="calibre4">module.exports = pLevel;</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Whenever the above function is required, the
+return value will be the actual function. That means that we can do the
+following:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">require('./plevel')(9050);</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The above code is a condensed version of the
+following code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var pLevel = require('./plevel')</span></p>
+<p><span class="calibre4">pLevel(9050);</span></p>
+<div id="part0000_split_007.html_calibre_pb_21" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_008.html"></span></p>
+<section id="part0000_split_008.html_calibre_pb_24"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_008.html__Toc445731679"
+class="calibre15"><span class="calibre19">Chapter 4- Asynchronous Flow
+Control using Promise</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">A promise is an object which represents the
+result of a function call which is asynchronous. In some communities,
+they are referred to as “</span><span
+class="calibre22">futures.”</span><span class="calibre12"> In NodeJS,
+there are numerous CommonJS promises, and these will be explored in this
+chapter of the book. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">They were once based on EventEmitters as part
+of the Node framework. This is what they looked like:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var promise = fs.stat("test");</span><br />
+<span class="calibre4">promise.addListener("success", function (value)
+{</span><br />
+<span class="calibre4">    // ok</span><br />
+<span class="calibre4">})</span><br />
+<span class="calibre4">promise.addListener("error", function (err)
+{</span><br />
+<span class="calibre4">    //the error</span><br />
+<span class="calibre4">});</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With this style, more allocations were needed
+than was  necessary. Political issues with these also arose since there
+was no fulfillment of all the contracts advocating the use of promises.
+Due to this, the people had to do away with this style of using
+promises, and then adopt a new way in which callbacks are used. These
+can be used as shown in the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">fs.stat("test", function (err, value)
+{</span><br />
+<span class="calibre4">    if (err) {</span><br />
+<span class="calibre4">        // the error</span><br />
+<span class="calibre4">    } else {</span><br />
+<span class="calibre4">        // ok</span><br />
+<span class="calibre4">    }</span><br />
+<span class="calibre4">});</span></p>
+<div id="part0000_split_008.html_calibre_pb_25" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_009.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Terminologies</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">There are numerous terminologies which are
+associated with the use of promises. These are discussed
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Fulfillment: callbacks are called with the value once
+a successful promise has been fulfilled. If registration of more
+callbacks is done in the future, all will be called by use of the same
+value. Fulfillment means the process of asynchronous analog for
+returning a particular value.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Rejection: when it is impossible for a promise to be
+fulfilled, the promise is “rejected,” and this invokes the errbacks
+which are waiting and remembers the error which was rejected for the
+future errbacks which are attached. It represents the asynchronous
+analog in which throwing an exception is done.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span class="calibre12">
+Progressback: this is a function which has been executed so as to show
+that progress has been made towards the resolution of a
+promise.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Callback: this is a function which has been executed
+once a promise has been fulfilled with a value.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Resolution: this is a promise which has been resolved,
+and then it makes progress towards a fulfillment or a rejection.
+Resolving of a promise can only be done once, and this can be done with
+a promise instead of a fulfillment or a rejection.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Errback: this is a function which has been executed if
+a promise has been rejected, with an exception.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The CommonJS promises for Node can be
+implemented in two main ways. These are discussed below:</span></p>
+<div id="part0000_split_009.html_calibre_pb_27" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_010.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Q Library</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">The NPM command can be used for installation
+of this library as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">npm install q</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">It can then be used as follows in the nodeJS
+program:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var q = require('q');</span></p>
+<div id="part0000_split_010.html_calibre_pb_29" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_011.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><a href="https://github.com/kriszyp/promised-io"
+class="calibre15"><span class="calibre28">Promised-IO</span></a></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Again, the NPM command can be used for
+installation of this as shown below:</span></p>
+<p><span class="calibre4">npm install promised-io</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">According to or depending on the version that
+you are using, include it by use of the following command:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var q = require('promised-io/lib/promise'); //
+&lt;=v2.3</span><br />
+<span class="calibre4">var q = require('promised-io/promise'); //
+&gt;=v2.4</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Note that the two are compatible with each
+other, and are able to use the promises of each other, which means that
+you can use the one that you want, depending on your preference.
+However, they provide different helper functions outside of our basic
+functions which are responsible for the creation and consumption of
+promises. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">On the client side, this should be as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">$.when($.get(...))</span><br />
+<span class="calibre4">.then(function(value) {</span><br />
+<span class="calibre4">    console.log('successful!')</span><br />
+<span class="calibre4">}, function(error) {</span><br />
+<span class="calibre4">    console.log(' A rejection');</span><br />
+<span class="calibre4">});</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The resolving of a promise is done only once.
+This means that it can either be resolved or rejected. It also means
+that an individual errback or callback can only be resolved once. Once a
+promise has been resolved with a value, it will always remember the
+fulfillment. Once a future callback has been attached to the promise,
+the value which was resolved previously will be used for its execution.
+The same case applies to errbacks. If a rejection of a callback occurs
+and then an errback is attached after that, the rejected value will then
+be used for its execution. The behavior of promises will be the same,
+regardless of whether they are resolved or they will be resolved in the
+future. </span></p>
+<div id="part0000_split_011.html_calibre_pb_31" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Thenables</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">This is another name for promises in
+commonJS. The name was derived from the methods which were available on
+the promise. The method was responsible for the purpose of attaching
+callbacks, errbacks, and progressbacks. This is shown in the example
+given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">promise.then(function() {</span><br />
+<span class="calibre4">  // callback will be executed on a successful
+promise resolution</span><br />
+<span class="calibre4">}, function() {</span><br />
+<span class="calibre4">  // errback will be executed on a
+rejection</span><br />
+<span class="calibre4">}, function() {</span><br />
+<span class="calibre4">  // progressback will be executed if the promise
+has a progress to report</span><br />
+<span class="calibre4">});</span></p>
+<p><span class="calibre4"> </span></p>
+<div id="part0000_split_012.html_calibre_pb_33" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">When</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">This is a function which assists in attaching
+listeners to an object. In this case, one is not sure of whether the
+object is a promise or not. Methods are expected to return a direct
+value or a promise object, and this is the importance of using this
+function. In the case of a return of a promised value, then the
+“</span><span class="calibre22">then”</span><span class="calibre12">
+method will not be available. If the function “</span><span
+class="calibre22">then”</span><span class="calibre12"> is not used in
+the promise object, the method “</span><span
+class="calibre22">when”</span><span class="calibre12"> will take over so
+as to ensure that it behaves well by making sure that the calling of
+callbacks is done in separate events and not more than once. This is
+shown in the example given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">when(myPromise, function() {</span><br />
+<span class="calibre4">  // callback to be executed on a successful
+promise resolution or if myPromise is not a promise but just a
+value</span><br />
+<span class="calibre4">}, function() {</span><br />
+<span class="calibre4">  // errback to be executed on a
+rejection</span><br />
+<span class="calibre4">}, function() {</span><br />
+<span class="calibre4">  // progressback to be executed if the promise
+has a progress to report</span><br />
+<span class="calibre4">});</span></p>
+<div id="part0000_split_013.html_calibre_pb_35" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Bubbling</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Once a value has been returned by a callback,
+it is bubbled up the chain of promises. The same case applies for
+rejections. With this, the handling of rejections can be done at a
+higher level than the function which had called our promise-returning
+function which has been rejected. Also, APIs which are promise-based
+will be able to compose responses for successes and rejections by
+changing of the error or the bubble which has been bubbled. Consider the
+example given below for ease of understanding:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function performAsync() {</span><br />
+<span class="calibre4">  return asyncHelper().then(function(value)
+{</span><br />
+<span class="calibre4">    // perform an extra processing on the
+value</span><br />
+<span class="calibre4">    return value; &lt;-- becoming the resolution
+of the returned promise by the performAsync function</span><br />
+<span class="calibre4">  });</span><br />
+<span class="calibre4">}</span><br />
+<span class="calibre4">performAsync().then(function(value)
+{</span><br />
+<span class="calibre4">  console.log('resolved', value);</span><br />
+<span class="calibre4">}, function(error) {</span><br />
+<span class="calibre4">  // this will receive rejections from the
+performAsync or  be bubbled from the asyncHelper</span><br />
+<span class="calibre4">  console.log('error', error);</span><br />
+<span class="calibre4">});</span></p>
+<div id="part0000_split_014.html_calibre_pb_37" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Using Deferred Helper to create
+Promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">A Deferred  is an object which can be used
+for creation and manipulation of promises. It has a promise property
+with that which it can use for referencing the property that it is
+managing. The promise is resolved or rejected by the use of the
+“</span><span class="calibre22">reject”</span><span class="calibre12">
+or “</span><span class="calibre22">resolve”</span><span
+class="calibre12"> methods. A value or a promise can be passed to the
+“</span><span class="calibre22">resolve”</span><span class="calibre12">
+method.  If a value is passed to this method, then the promise will be
+fulfilled. If a promise is passed, then the resolution of that promise
+will be forwarded to this. Note that resolving of a promise can only be
+done once. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Reject is just a method which will accept a
+reason for the rejection. In most cases, the rejection is of a string
+type, but it can be of any type. In the case of Deferred, the promise is
+rejected with a rejection reason. Consider the code given below whih
+shows how this can be done:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function performAsync() {</span><br />
+<span class="calibre4">  var deferred = q.defer();</span><br />
+<span class="calibre4">  setTimeout(function() {</span><br />
+<span class="calibre4">    deferred.resolve('hello there');</span><br />
+<span class="calibre4">  }, 500);</span><br />
+<span class="calibre4">  return deferred.promise;</span><br />
+<span class="calibre4">}</span><br />
+<span class="calibre4">performAsync().then(function(value)
+{</span><br />
+<span class="calibre4">  console.log('Promise has been Resolved!',
+value);</span><br />
+<span class="calibre4">});</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Most of the functions which take the callback
+style of Node can easily be wrapped in a promise. Any callback function
+which takes the Node style, and that which calls its callback only once,
+is a potential candidate for wrapping. Consider the following function
+which demonstrates how this can be done:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function myFunction(nodeAsyncFn, context)
+{</span><br />
+<span class="calibre4">  return function() {</span><br />
+<span class="calibre4">    var defer = q.defer()</span><br />
+<span class="calibre4">      , args =
+Array.prototype.slice.call(arguments);</span><br />
+<span class="calibre4">    args.push(function(error, value)
+{</span><br />
+<span class="calibre4">      if (error !== null) {</span><br />
+<span class="calibre4">        return defer.reject(error);</span><br />
+<span class="calibre4">      }</span><br />
+<span class="calibre4">      return defer.resolve(value);</span><br />
+<span class="calibre4">    });</span><br />
+<span class="calibre4">    nodeAsyncFn.apply(context || {},
+args);</span><br />
+<span class="calibre4">    return defer.promise;</span><br />
+<span class="calibre4">  };</span><br />
+<span class="calibre4">};</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The above function can be used together with
+other node functions such as the </span><span
+class="calibre4">“</span><span class="calibre22">fs.readFile</span><span
+class="calibre12">”. as it is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">var rFile =
+promisify(fs.readFile);</span><br />
+<span class="calibre4">readFile('file.txt').then(function(d)
+{</span><br />
+<span class="calibre4">  console.log(d);</span><br />
+<span class="calibre4">});</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With both PromisedIO and Q, one can provide
+utilities which can be used for calling or wrapping Node-style
+functions. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var rFile =
+q.convertNodeAsyncFunction(fs.readFile);</span><br />
+<span class="calibre4">readFile('file.txt')</span><br />
+<span class="calibre4">.then(function (d) { });</span><br />
+<span class="calibre4">// or</span><br />
+<span class="calibre4">q.execute(fs.readFile, 'file.txt')</span><br />
+<span class="calibre4">.then(function (d) { });</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The above case shows how it can be done by
+use of “</span><span class="calibre22">PromisedIO.”</span><span
+class="calibre12"> When using Q, it can be done as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var rFile = q.node(fs.readFile);</span><br />
+<span class="calibre4">readFile('file.txt')</span><br />
+<span class="calibre4">.then(function (d) { });</span><br />
+<span class="calibre4">// or</span><br />
+<span class="calibre4">q.ncall(fs.readFile, fs, 'file.txt')</span><br />
+<span class="calibre4">.then(function (d) { });</span><br />
+<span class="calibre4">// or</span><br />
+<span class="calibre4">var deferred = q.defer();</span><br />
+<span class="calibre4">fs.readFile('file.txt',
+deferred.node());</span><br />
+<span class="calibre4">return deferred.promise;</span></p>
+<div id="part0000_split_015.html_calibre_pb_39" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_016.html"></span></p>
+<section id="part0000_split_016.html_calibre_pb_42"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_016.html__Toc445731680"
+class="calibre15"><span class="calibre19">Chapter 5- Management of
+Node.js callback Hell</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Consider the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">doAsync1(function () {</span></p>
+<p><span class="calibre4">doAsync2(function () {</span></p>
+<p><span class="calibre4">doAsync3(function () {</span></p>
+<p><span class="calibre4">doAsync4(function () {</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is what the callback hell is. When
+dealing with callback hell, you have to know that it is subjective. The
+reason for this is that when using code which is heavily nested, it can
+be the one working finely. With asynchronous code, when the management
+of the flow becomes overly complex, then the matter becomes hellish. For
+you to know the hell you are undergoing, consider the amount of
+refactoring that you are required to do. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">We want to demonstrate this by use of an
+example. Consider a situation in which we are interested in finding the
+largest file contained in a particular directory. The module given below
+can be used for doing this:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fLargest =
+require('./findLargest')</span></p>
+<p><span class="calibre4">fLargest('./path/to/dir', function (error,
+filename) {</span></p>
+<p><span class="calibre4">if (error) return
+console.error(error)</span></p>
+<p><span class="calibre4">console.log('The largest file is:',
+filename)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The following steps can be followed so as to
+achieve the above needed work:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Reading all of the files available in the provided
+directory.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span class="calibre12">Get
+the statics of each file available in the directory.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span
+class="calibre12">Determine the largest file amongst the available ones
+(if there are multiple of them with the same size, just pick
+one).</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre27">          </span><span class="calibre12">Use
+the name of the largest file to callback.</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">In case an error results at any point in the
+process, the callback should be done by the use of that error. Again,
+the callback should not be called more than once. </span></p>
+<div id="part0000_split_016.html_calibre_pb_43" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">A Nested Approach</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">First, we should use the nested approach to
+this. An example of how this can be done is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fs = require('fs')</span></p>
+<p><span class="calibre4">var path = require('path')</span></p>
+<p><span class="calibre4">module.exports = function (direct, callb)
+{</span></p>
+<p><span class="calibre4">fs.readdir(direct, function (error, files) {
+// [1]</span></p>
+<p><span class="calibre4">if (error) return callb(error)</span></p>
+<p><span class="calibre4">var counter = files.length</span></p>
+<p><span class="calibre4">var errored = false</span></p>
+<p><span class="calibre4">var statistics = []</span></p>
+<p><span class="calibre4">files.forEach(function (file, index)
+{</span></p>
+<p><span class="calibre4">fs.statistics(path.join(direct,file), function
+(error, stat) { // [2]</span></p>
+<p><span class="calibre4">if (errored) return</span></p>
+<p><span class="calibre4">if (error) {</span></p>
+<p><span class="calibre4">errored = true</span></p>
+<p><span class="calibre4">return callb(error)</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">statistics[index] = stat // [3]</span></p>
+<p><span class="calibre4">if (--counter == 0) { // [4]</span></p>
+<p><span class="calibre4">var largest = statistics</span></p>
+<p><span class="calibre4">.filter(function (statistic) { return
+statistic.isFile() }) // [5]</span></p>
+<p><span class="calibre4">.reduce(function (prev, next) { //
+[6]</span></p>
+<p><span class="calibre4">if (prev.size &gt; next.size) return
+prev</span></p>
+<p><span class="calibre4">return next</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">cb(null, files[statistis.indexOf(largest)]) //
+[7]</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Note that you should check for the presence
+of parallel operations. If you find any, then you are responsible for
+making sure that they complete. Only regular files should be grabbed,
+but links and directories should be left untouched. Often, we have to
+reduce the size of the largest files that we have so as to get the
+largest one of all. The final file should then be pulled with the
+associated callback and statistics. The only problem in implementation
+of this is on how to deal with the parallel operations and ensure that
+the callback is made only once. However, this will be handled
+later.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Consider the code given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function getStatistics (paths, callb)
+{</span></p>
+<p><span class="calibre4">var counter = paths.length</span></p>
+<p><span class="calibre4">var errored = false</span></p>
+<p><span class="calibre4">var statistics = []</span></p>
+<p><span class="calibre4">paths.forEach(function (path, index)
+{</span></p>
+<p><span class="calibre4">fs.statistic(path, function (error, statistic)
+{</span></p>
+<p><span class="calibre4">if (errored) return</span></p>
+<p><span class="calibre4">if (error) {</span></p>
+<p><span class="calibre4">errored = true</span></p>
+<p><span class="calibre4">return callb(error)</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">statistics[index] = statistic</span></p>
+<p><span class="calibre4">if (--counter == 0) callb(null,
+statistics)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">In the above code, we have begun by grabbing
+our files from the directory. Our first task is the “</span><span
+class="calibre29">fs.readdir(),”</span><span class="calibre4">
+</span><span class="calibre30">and this means that we will not be
+required to write a function for that. With the above code, we will
+provide a set of paths, and the function will then return the statistics
+of those paths and their order will be maintained. </span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre30">It is now time for us to implement the part
+for comparison. We need to be able to compare the different files
+available in our directory so as to determine the largest one of all.
+This should return the largest file in the directory. The code for doing
+that should be implemented as shown below:</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre4">function getLargestFile (files, statistics)
+{</span></p>
+<p><span class="calibre4">var largest = statistics</span></p>
+<p><span class="calibre4">.filter(function (statistic) { return
+statistic.isFile() })</span></p>
+<p><span class="calibre4">.reduce(function (prev, next) {</span></p>
+<p><span class="calibre4">if (prev.size &gt; next.size) return
+prev</span></p>
+<p><span class="calibre4">return next</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return
+files[statistics.indexOf(largest)]</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how it should be done. The whole
+thing can then be tied together as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fs = require('fs')</span></p>
+<p><span class="calibre4">var path = require('path')</span></p>
+<p><span class="calibre4">module.exports = function (directory, callb)
+{</span></p>
+<p><span class="calibre4">fs.readdir(direct, function (error, files)
+{</span></p>
+<p><span class="calibre4">if (error) return callb(error)</span></p>
+<p><span class="calibre4">var paths = files.map(function (file) { //
+[1]</span></p>
+<p><span class="calibre4">return path.join(diretory,file)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">getStats(paths, function (error, statistics)
+{</span></p>
+<p><span class="calibre4">if (error) return callb(error)</span></p>
+<p><span class="calibre4">var lFile = getLargestFile(files,
+stats)</span></p>
+<p><span class="calibre4">cb(null, lFile)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how the code should be. A list of
+paths should then be generated from the directory and the files. With
+the modular approach, testing and reusing of methods is made much
+easier. The export itself can easily be reasoned about. At this point,
+the parallel statistics are easily managed. </span></p>
+<div id="part0000_split_017.html_calibre_pb_45" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Async Approach</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">This module is widely used, and it will take
+the same way taken by node in performing operations. The async module
+can be used as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fs = require('fs')</span></p>
+<p><span class="calibre4">var async = require('async')</span></p>
+<p><span class="calibre4">var path = require('path')</span></p>
+<p><span class="calibre4">module.exports = function (diretory, callb)
+{</span></p>
+<p><span class="calibre4">async.waterfall([ // [1]</span></p>
+<p><span class="calibre4">function (next) {</span></p>
+<p><span class="calibre4">fs.readdir(directory, next)</span></p>
+<p><span class="calibre4">},</span></p>
+<p><span class="calibre4">function (files, next) {</span></p>
+<p><span class="calibre4">var paths =</span></p>
+<p><span class="calibre4">files.map(function (file) { return
+path.join(directory,file) })</span></p>
+<p><span class="calibre4">async.map(paths, fs.stat, function (error,
+statistics) { // [2]</span></p>
+<p><span class="calibre4">next(error, files, statistics)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">},</span></p>
+<p><span class="calibre4">function (files, statistics, next)
+{</span></p>
+<p><span class="calibre4">var largest = statistics</span></p>
+<p><span class="calibre4">.filter(function (statistic) { return
+statistic.isFile() })</span></p>
+<p><span class="calibre4">.reduce(function (prev, next) {</span></p>
+<p><span class="calibre4">if (prev.size &gt; next.size) return
+prev</span></p>
+<p><span class="calibre4">return next</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">next(null,
+files[statistics.indexOf(largest)])</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">], callb) // [3]</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With the property “</span><a
+href="https://github.com/caolan/async#waterfalltasks-callback"
+target="_blank"><span class="calibre31">async.waterfall</span></a><span
+class="calibre12">,” a series of flow of execution will be provided, 
+you will be in a position to pass data from a particular operation to
+another function, and this will be done by the use of the “</span><span
+class="calibre22">next”</span><span class="calibre12"> callback.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">With the function “</span><a
+href="https://github.com/caolan/async#maparr-iterator-callback"
+target="_blank"><span class="calibre31">async.map</span></a><span
+class="calibre12">,” we will be in a position to run the “</span><span
+class="calibre22">fs.stat</span><span class="calibre12">” in parallel,
+and these will call back with an array having the results. You have also
+spotted the function “</span><span class="calibre22">callb.”</span><span
+class="calibre12"> This will be called in case an error occurs along the
+way, or once the last step has been completed. The calling will be done
+only once. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">With the async module, there will be a
+guarantee that only one of the callbacks will be fired. It is also good
+in propagation of errors and management of parallelism on our behalf.
+</span></p>
+<div id="part0000_split_018.html_calibre_pb_47" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">A promises approach</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">With promises in NodeJS, one is provided with
+functional programming and error handling perks. I know you are
+wondering  how that can  achieve any use of promises. Let us use the Q
+module so as to show how this can be implemented. This is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fs = require('fs')</span></p>
+<p><span class="calibre4">var path = require('path')</span></p>
+<p><span class="calibre4">var Q = require('q')</span></p>
+<p><span class="calibre4">var fs_readdirectory = Q.denodeify(fs.readdir)
+// [1]</span></p>
+<p><span class="calibre4">var fs_statistic =
+Q.denodeify(fs.statistic)</span></p>
+<p><span class="calibre4">module.exports = function (directory)
+{</span></p>
+<p><span class="calibre4">return fs_readdir(directory)</span></p>
+<p><span class="calibre4">.then(function (files) {</span></p>
+<p><span class="calibre4">var promises = files.map(function (file)
+{</span></p>
+<p><span class="calibre4">return
+fs_stat(path.join(directory,file))</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return Q.all(promises).then(function
+(statistics) { // [2]</span></p>
+<p><span class="calibre4">return [files, statistics] // [3]</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.then(function (data) { // [4]</span></p>
+<p><span class="calibre4">var files = data[0]</span></p>
+<p><span class="calibre4">var statistics = data[1]</span></p>
+<p><span class="calibre4">var largest = statistics</span></p>
+<p><span class="calibre4">.filter(function (statistic) { return
+statistic.isFile() })</span></p>
+<p><span class="calibre4">.reduce(function (prev, next) {</span></p>
+<p><span class="calibre4">if (prev.size &gt; next.size) return
+prev</span></p>
+<p><span class="calibre4">return next</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return
+files[statistics.indexOf(largest)]</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Note that the core functionality of Node is
+not aware of promise, but we can make it to be so. The statistics alls
+will be run in parallel by the “</span><span
+class="calibre22">Q.all,”</span><span class="calibre12"> and the order
+of the resulting array will be maintained. Our aim is to pass our files
+and the statistics to our “</span><span
+class="calibre22">next”</span><span class="calibre12"> function, and
+this will be the last thing to be returned. Note that any of the
+exceptions which will be thrown inside the promise object will be
+caught, unlike what we have had  in our previous examples. The API for
+the client will also be modified so that it becomes promise centric.
+This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fLargest =
+require('./findLargest')</span></p>
+<p><span class="calibre4">fLargest('./path/to/directory')</span></p>
+<p><span class="calibre4">.then(function (fname) {</span></p>
+<p><span class="calibre4">console.log('The largest file is:',
+fname)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.catch(console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">From the design shown above, you don’t have
+to expose a promise interface in this case. With most promise libraries,
+a mechanism is provided on which we can expose a style for the nodeback.
+</span></p>
+<div id="part0000_split_019.html_calibre_pb_49" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">A generators approach</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Generators are just lightweight co-routines
+which can be used in JavaScript. With these, one can use the
+“</span><span class="calibre22">yield”</span><span class="calibre12">
+keyword so as to suspend and then resume a particular function. The
+functions for generators make use of a special syntax which looks like
+“</span><span class="calibre29">function* ().</span><span
+class="calibre4">” </span><span class="calibre30">Asynchronous
+operations can also be suspended and resumed by use of objects such as
+the thunks or promises, and this can lead to asynchronous code which
+looks as if it is synchronous. A thunk is just a function which will
+return a callback other than calling it. The callback in this case will
+have a similar signature to the typical nodeback function, meaning that
+the error will form the first argument.</span><span class="calibre4">
+</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre30">We need to create an example whivh will
+demonstrate how generators can be used for the purpose of asynchronous
+flow control. This is how it can be done:</span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre30"> </span></p>
+<p><span class="calibre4">var c = require('co')</span></p>
+<p><span class="calibre4">var thunk = require('thunkify')</span></p>
+<p><span class="calibre4">var fs = require('fs')</span></p>
+<p><span class="calibre4">var path = require('path')</span></p>
+<p><span class="calibre4">var readdirectory = thunk(fs.readdirectory)
+&lt;strong&gt;[1]&lt;/strong&gt;</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">var statistic = thunk(fs.statistic)</span></p>
+<p><span class="calibre4">module.exports = c(function* (directory) { //
+[2]</span></p>
+<p><span class="calibre4">var files = yield readdiretory(directory) //
+[3]</span></p>
+<p><span class="calibre4">var statistics = yield files.map(function
+(myfile) { // [4]</span></p>
+<p><span class="calibre4">return
+statistic(path.join(diretory,file))</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">var largest = statistics</span></p>
+<p><span class="calibre4">.filter(function (statistic) { return
+statistic.isFile() })</span></p>
+<p><span class="calibre4">.reduce(function (prev, next) {</span></p>
+<p><span class="calibre4">if (prev.size &gt; next.size) return
+prev</span></p>
+<p><span class="calibre4">return next</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return files[statistics.indexOf(largest)] //
+[5]</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The Node core functionality is not aware of
+thunk, but we should make it be so. With the variable “</span><span
+class="calibre22">c,”</span><span class="calibre12"> we will take a
+generator function in which we will be in a position to use the
+“</span><span class="calibre22">yield”</span><span class="calibre12">
+keyword so as to suspend it. The generator function will be suspended
+until the “</span><span class="calibre22">readdiretory”</span><span
+class="calibre12"> has been returned. The value which results from this
+will then be returned from the “</span><span
+class="calibre22">files”</span><span class="calibre12"> variable. The
+variable “</span><span class="calibre22">c”</span><span
+class="calibre12"> can also handle arrays which a set of parallel
+operations will perform. The resulting array whose order is maintained
+will be assigned to the variable “</span><span
+class="calibre22">statistics.”</span><span class="calibre12"> It is
+after this that the final result will be returned. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">This generator function can also be consumed
+using the same callback API which we had specified at the beginning of
+this chapter. With the “</span><span class="calibre22">c,”</span><span
+class="calibre12"> appropriate error handling mechanisms will be
+implemented and any resulting errors including exceptions raised will be
+passed to our callback function. Around the statement for yield,
+generators allow us to use the common “</span><span
+class="calibre22">try/catch”</span><span class="calibre12"> block or
+statement for the purpose of handling errors and exceptions. This is
+shown in the example given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">try {</span></p>
+<p><span class="calibre4">var files = yield
+readdirectory(directory)</span></p>
+<p><span class="calibre4">} catch (error) {</span></p>
+<p><span class="calibre4">console.error('something went wrong while
+reading the directory')</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Co provides us with a mechanism on how
+arrays, nested generators, objects, promises, and others can be handled.
+Other generator modules are also coming as they are under
+implementation. With the Q module, there is a method named “</span><a
+href="https://github.com/kriskowal/q/wiki/API-Reference#qasyncgeneratorfunction"
+target="_blank"><span class="calibre32">Q.async</span></a><span
+class="calibre12">” which will behave in a similar to the co which uses
+generators. </span></p>
+<div id="part0000_split_020.html_calibre_pb_51" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_021.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Wrapping up</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">There are methods which can help you get
+control over how your application flows. The generator idea is one of
+the available ways how this can be done. With the modular approach, one
+can apply it to whichever flow libraries that they are using. Examples
+of flow libraries include the async, promises, and generators.
+</span></p>
+<div id="part0000_split_021.html_calibre_pb_53" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_022.html"></span></p>
+<section id="part0000_split_022.html_calibre_pb_56"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_022.html__Toc445731681"
+class="calibre15"><span class="calibre19">Chapter 6- Promise
+Methods</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">With most promise objects, we usually have
+the static counterparts in the main objet which is “Q,” and this usually
+accepts either a promise or a non-promise object and a fulfilled promise
+will then be created first. With all others, you will have static
+counterparts which will be named similarly to the promise object.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">With some methods, the used names should be
+the same as the keywords which are reserved in JavaScript. Examples of
+these include the “</span><span class="calibre22">try,”</span><span
+class="calibre12"> “</span><span class="calibre22">catch,”</span><span
+class="calibre12"> and “</span><span
+class="calibre22">finally.”</span><span class="calibre12"> With this, a
+very clear parallel between the asynchronous promise operations and the
+standard synchronous language constructs will be shown. </span></p>
+<div id="part0000_split_022.html_calibre_pb_57" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_023.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Main promise methods</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<h4 class="calibre33"><span class="calibre34">promise.then(onFulfilled,
+onRejected, onProgress)</span></h4>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">This is just the “</span><span
+class="calibre22">then”</span><span class="calibre12"> method having
+some additional progress handler. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre24">Callbacks to promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Consider the asynchronous Node callback shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile(function (error, data) {</span></p>
+<p><span class="calibre4">if (error) return
+console.error(error)</span></p>
+<p><span class="calibre4">console.log(data)</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">In case the function “readFile” has returned
+to us a promise, then we could have done this:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var p = readFile()</span></p>
+<p><span class="calibre4">p.then(console.log, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">When you look at it shallowly, you will see
+that we have changed only the aesthetic. However, at this moment, we
+have a value which can be used for representation of the asynchronous
+operation which is the promise. The promise can then be passed around,
+and any person having access to the promise will be able to consume it
+by use of “</span><span class="calibre22">then,”</span><span
+class="calibre12"> independent of whether or not the asynchronous
+operation has completed. We are somehow guaranteed that our asynchronous
+operation will not change since the promise will be resolved for only
+once, meaning that it can either be fulfilled or rejected. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The “</span><span
+class="calibre22">then”</span><span class="calibre12"> should be seen as
+a function which can be used for unwrapping a promise so as to reveal
+what had taken place in the asynchronous operation. Avoid seeing it as a
+function which takes only two callbacks which include “</span><span
+class="calibre22">onFulfilled”</span><span class="calibre12"> and
+“</span><span class="calibre22">onRejected.”</span><span
+class="calibre12">  One can unwrap it by use of “</span><span
+class="calibre22">then,”</span><span class="calibre12"> provided you
+have access into it. </span></p>
+<div id="part0000_split_023.html_calibre_pb_59" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_024.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Nesting and Chaining Promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">The method “</span><span
+class="calibre22">then”</span><span class="calibre12"> can be used for
+the purpose of returning a promise. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var p1 = readFile()</span></p>
+<p><span class="calibre4">var p2 = p1.then(readAnotherFile,
+console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The promise just represents the return value
+for its own “</span><span class="calibre22">onRejected”</span><span
+class="calibre12"> and “</span><span
+class="calibre22">onFulfilled”</span><span class="calibre12"> handlers
+in case they had been specified.  Note that it is possible for us to
+have only one resolution, and the promise will proxy any resolution
+which has been called as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var p1 = readFile()</span></p>
+<p><span class="calibre4">var p2 = p1.then(function (data) {</span></p>
+<p><span class="calibre4">return readAnotherFile() // if readFile runs
+successfully, let us readAnotherFile</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">}, function (error) {</span></p>
+<p><span class="calibre4">console.error(error) // if readFile runs
+unsuccessfully, let us log it but we will still
+readAnotherFile</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">return readAnotherFile()</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">p2.then(console.log, console.error) // the
+product of readAnotherFile</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Note that “</span><span
+class="calibre22">then”</span><span class="calibre12"> returns a
+promise, and this indicates that the promises can be chained for the
+purpose of avoiding the callback hell. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile()</span></p>
+<p><span class="calibre4">.then(readOtherFile)</span></p>
+<p><span class="calibre4">.then(performSomethingElse)</span></p>
+<p><span class="calibre4">.then(...)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">If there is a need for you to keep alive a
+closure, the promises can be nested as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile()</span></p>
+<p><span class="calibre4">.then(function (d) {</span></p>
+<p><span class="calibre4">return readOtherFile().then(function ()
+{</span></p>
+<p><span class="calibre4">// perform something with the
+`data`</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">})</span></p>
+<div id="part0000_split_024.html_calibre_pb_61" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_025.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Synchronous Functions and Promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">There are a number of ways that promises can
+be used for the modeling of synchronous functions. An example of this is
+when we use the “</span><span class="calibre22">return”</span><span
+class="calibre12"> function so as to call another function. In our
+previous examples, we have been using the function “</span><span
+class="calibre22">readAnotherFile()”</span><span class="calibre12"> so
+as to signal what comes next after the function “</span><span
+class="calibre22">readFile.</span><span class="calibre12">” </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Once you have returned a promise, the next
+“</span><span class="calibre22">then”</span><span class="calibre12">
+will be signaled once the synchronous operation has been completed. Any
+value of another type can also be returned, and the next “</span><span
+class="calibre22">onFulfilled</span><span class="calibre12">” will have
+a value as an argument passed to it. This is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile()</span></p>
+<p><span class="calibre4">.then(function (buffer) {</span></p>
+<p><span class="calibre4">return
+JSON.parse(buffer.toString())</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.then(function (data) {</span></p>
+<p><span class="calibre4">// doing something with the `data`</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how it can be done. </span></p>
+<div id="part0000_split_025.html_calibre_pb_63" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_026.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Promises and Error Handling</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">Other than the “</span><span
+class="calibre22">return”</span><span class="calibre12"> keyword, one
+can use the other keywords such as “</span><span
+class="calibre22">throw”</span><span class="calibre12"> and
+“</span><span class="calibre22">try/catch,”</span><span
+class="calibre12"> which are very useful when it comes to error and
+exception handling. This shows how powerful promises are in Node. We
+want to synchronize how this can be done. Consider a situation in which
+we have the following piece of synchronous code:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">try {</span></p>
+<p><span class="calibre4">    doThis()</span></p>
+<p><span class="calibre4">    doThat()</span></p>
+<p><span class="calibre4">} catch (error) {</span></p>
+<p><span class="calibre4">    console.error(error)</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With the above example, the functions
+“</span><span class="calibre22">doThis()”</span><span class="calibre12">
+and “</span><span class="calibre22">doThat()”</span><span
+class="calibre12"> will return errors. Our aim is to catch and then log
+this error. With the “</span><span
+class="calibre22">try/catch”</span><span class="calibre12"> block, so
+many operations can be grouped. This means that the process of handling
+errors explicitly for each of the operation we have can be greatly
+avoided. This can be done asynchronously with the use of promises. This
+is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">doThisAsync()</span></p>
+<p><span class="calibre4">.then(doOtherAsync)</span></p>
+<p><span class="calibre4">.then(null, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">In case the function “</span><span
+class="calibre22">doThisAsync”</span><span class="calibre12"> runs
+unsuccessfully, the promise will be rejected and the next then in the
+chain which has the handler for “</span><span
+class="calibre22">onRejected”</span><span class="calibre12"> will be
+called. In our example, this is the function “</span><span
+class="calibre22">console.error.</span><span class="calibre12">” Note
+that just as it is the case with the block “</span><span
+class="calibre22">try/catch,</span><span class="calibre12">”  this
+function will never be called. That is how much we have proved since
+with the raw callbacks, we were handling the errors explicitly at each
+step. When an exception has been thrown, whether it is either implicit
+or explicit, it will be handled by the promise if it is from the
+“</span><span class="calibre22">then”</span><span class="calibre12">
+callback. An example of this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">doThisAsync()</span></p>
+<p><span class="calibre4">.then(function (d) {</span></p>
+<p><span class="calibre4">      d.test.baz = 'bar' // throwing a
+ReferenceError as test is not defined</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.then(null, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">An error has resulted. The </span><span
+class="calibre22">“ReferenceError</span><span class="calibre12">” which
+is raised in the above case will be handled by the “</span><span
+class="calibre22">onRejected</span><span class="calibre12">” handler
+which is next in the chain. The above can also work for an explicit
+flow.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">An example of this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">doThisAsync()</span></p>
+<p><span class="calibre4">.then(function (d) {</span></p>
+<p><span class="calibre4">     if (!d.baz) throw new Error('A baz was
+expected to be there')</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.then(null, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">As you are aware, promises work in the same
+way as “</span><span class="calibre22">try/catch</span><span
+class="calibre12">” block does. With this block, one can mask an error
+without having to handle it explicitly. An example of this is shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">try {</span></p>
+<p><span class="calibre4">     throw new Error('never will realize this
+has happened')</span></p>
+<p><span class="calibre4">} catch (ex) {}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The same case applies to promises as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile()</span></p>
+<p><span class="calibre4">.then(function (d) {</span></p>
+<p><span class="calibre4">      throw new Error('never will realize this
+has happened')</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">For us to expose the errors which have been
+masked, we should use the clause “.then(null, onRejected)” so as to end
+the promise chain. An example of this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">readFile()</span></p>
+<p><span class="calibre4">.then(function (d) {</span></p>
+<p><span class="calibre4">      throw new Error('now I realize this had
+happened')</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">.then(null, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">There are libraries which have other
+mechanisms for how masked errors can be exposed. A good example is the
+“</span><span class="calibre22">Q”</span><span class="calibre12">
+module, which provides us with the method named “</span><span
+class="calibre22">done”</span><span class="calibre12"> which can be used
+for rethrowing the error upstream. </span></p>
+<div id="part0000_split_026.html_calibre_pb_65" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_027.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Conversion of callbacks to
+promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">You may not know how promises are generated.
+The specification of the API for the creation of a promise is not done
+in the “</span><span class="calibre22">Promise/A+”</span><span
+class="calibre12"> since this is not necessary for interoperability.
+This is an indication that the implementation of promise libraries
+always vary. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Note that with the Node core asynchronous
+functions, promises cannot be returned. However, by use of the Q module,
+we can make this one possible. This can be done as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var fs_rFile =
+Q.denodeify(fs.readFile)</span></p>
+<p><span class="calibre4">var p = fs_rFile('file.txt')</span></p>
+<p><span class="calibre4">p.then(console.log, console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With Q, a number of helper functions are
+provided for adaptation of Node and other environments so that they can
+be aware of promises. </span></p>
+<div id="part0000_split_027.html_calibre_pb_67" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_028.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Creation of Raw Promises</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">You can use “</span><span
+class="calibre22">Q.defer</span><span class="calibre12">” for the
+purpose of the creation of raw promises. Suppose that we want to make
+“fs.readFile” be promise-aware by wrapping it. This can be done as shown
+below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function fs_rFile (file, encoding)
+{</span></p>
+<p><span class="calibre4">     var deferred = Q.defer()</span></p>
+<p><span class="calibre4">fs.readFile(file, encoding, function (error,
+data) {</span></p>
+<p><span class="calibre4">if (error) deferred.reject(error) // rejecting
+the promise with `error` as the reason</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">else deferred.resolve(d) // fulfilling the
+promise with the `d` as the value</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return deferred.promise // the promise will be
+returned</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">fs_rFile('file.txt').then(console.log,
+console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">One can also make APIs which can support both
+APIs and callbacks. You are now aware of how a callback code can be
+turned into a promise code. APIs can be developed which can be used for
+provision of an interface for both callback and promise. An example is
+when we want to turn the “fs.readFile” into an API which can support
+both promises and callbacks. This can easily be done. The code given
+below demonstrates how this can be done in Node:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function fs_rFile (file, encoding, callback)
+{</span></p>
+<p><span class="calibre4">var deferred = Q.defer()</span></p>
+<p><span class="calibre4">fs.readFile(function (error, d) {</span></p>
+<p><span class="calibre4">if (error) deferred.reject(error) // rejecting
+the promise with the `error` as the reason</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">else deferred.resolve(d) // fulfilling the
+promise with the`d` as the value</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4">return deferred.promise.nodeify(callback) //
+the promise will be returned</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Once a callback has been provided, the
+standard Node arguments style is used for calling it once the promise
+has been resolved or rejected. The standard Node style arguments are of
+the form (err, result). An example of this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">fs_rFile('file.txt', 'utf8', function (error,
+data) {</span></p>
+<p><span class="calibre4">// ...</span></p>
+<p><span class="calibre4">})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Promises can also be used for the purpose of
+performing parallel operations. You are now aware of how sequential
+asynchronous operations operate in Node.JS. When using the Q module so
+as to deal with parallel operations, we use the method “</span><span
+class="calibre22">Q.all.</span><span class="calibre12">” This method
+usually takes in an array of promises, but then it returns a new promise
+which it creates. Once all of the necessary operations have been
+completed in a successful manner, then the new promise will be
+completed. In case single or multiple operations fail or run
+unsuccessfully, then the new promise will be rejected. An example of
+this is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var aPromise = Q.all([
+fs_rFile('myfile1.txt'), fs_readFile('myfile2.txt') ])</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">aPromise.then(console.log,
+console.error)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how it can be done. You should also
+be aware that the functionality of promises mimics that of functions. A
+function always has a single return value. With promises, there is much
+consistency with the asynchronous parts. For the purpose of spreading
+results into multiple arguments, one can use the “</span><a
+href="https://github.com/kriskowal/q#combination"><span
+class="calibre32">Q.spread</span></a><span class="calibre12">.”
+</span></p>
+<div id="part0000_split_028.html_calibre_pb_69" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_029.html"></span></p>
+<section id="part0000_split_029.html_calibre_pb_72"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_029.html__Toc445731682"
+class="calibre15"><span class="calibre19">Chapter 7- Execution of
+Multiple Instances in a Single Process</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">There is a frequent request for Node to be
+integrated with other applications. An example is when we need to
+integrate it with the other event loops and support multiple execution
+contexts for the Node. When we talk of the same context, we mean the
+ability to have multiple instances of Node existing peacefully in the
+same application.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Currently, with Node v0.12, multiple
+execution contexts can be used within the same event loop. The Node
+internals should also be made aware of the presence of multiple
+execution contexts. Consider the example given below, showing how this
+can be done:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function myconnect() {</span></p>
+<p><span class="calibre4">this.write('GET / HTTP/1.1\r\n' +</span></p>
+<p><span class="calibre4">'Host: strongloop.com\r\n' +</span></p>
+<p><span class="calibre4">'\r\n');</span></p>
+<p><span class="calibre4">this.pipe(process.stdout);</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">require('net').connect(80, 'strongloop.com',
+myconnect);</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">When looked at execution-wise, it will be as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">&lt;enter VM&gt;</span></p>
+<p><span class="calibre4">connect(80, 'strongloop.com'); // kernel
+reporting EINPROGRESS here</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">&lt;leave VM&gt;</span></p>
+<p><span class="calibre4">&lt;wait for the TCP handshake to
+complete&gt;</span></p>
+<p><span class="calibre4">&lt;enter VM&gt;</span></p>
+<p><span class="calibre4">myconnect();</span></p>
+<p><span class="calibre4">&lt;leave vm&gt;</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The execution context can change between our
+calls to the vm. This is why the function “</span><span
+class="calibre22">connect()”</span><span class="calibre12"> has to
+remember the current context and the call to “</span><span
+class="calibre22">myconnect()”</span><span class="calibre12"> should
+restore it. If you fail to do this, you might find it really hard for
+you to track any available bugs in your program. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">However, with Node, this is automatically
+taken care of. This means that you don’t have to worry about it.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">For those who need an add-on author and you
+need to make the addon, be aware of context, it can be done as
+follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">* Instead of NODE_MODULE(), use the
+NODE_MODULE_CONTEXT_AWARE(). Before:</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4">void Initialize(v8::Handle&lt;v8::Object&gt;
+exports) {</span></p>
+<p><span class="calibre4">// ...</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">NODE_MODULE(test, Initialize)</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">For after, do it as follows:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">void Initialize(v8::Handle&lt;v8::Object&gt;
+exports,</span></p>
+<p><span class="calibre4">v8::Handle&lt;v8::Value&gt; module,</span></p>
+<p><span class="calibre4">v8::Handle&lt;v8::Context&gt; context)
+{</span></p>
+<p><span class="calibre4">// ...</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">NODE_MODULE_CONTEXT_AWARE(test,
+Initialize);</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The context-aware initialize will be called
+once for each context which has been created by the embedder. There
+exists no per-context cleanup context. The function “</span><a
+href="https://github.com/joyent/node/blob/15de8c2/src/node.h#L320"><span
+class="calibre22">node::AtExit()</span></a><span class="calibre12">” is
+currently a per-process event, but we need it to fill up the above role.
+The global variables can also be turned into per-context properties.
+</span><br />
+<span class="calibre12"> </span></p>
+<div id="part0000_split_029.html_calibre_pb_73" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_030.html"></span></p>
+<section id="part0000_split_030.html_calibre_pb_76"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_030.html__Toc445731683"
+class="calibre15"><span class="calibre19">Chapter 8- </span></span><a
+href="https://strongloop.com/strongblog/whats-new-in-the-loopback-node-js-framework-july-august-2015/"
+class="calibre15"><span class="calibre35">LoopBack Node.js
+Framework</span></a></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">The LoopBack is just an open-source project
+which can welcome contributions.</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre24">Loopback-component-explorer</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">The loopback-explorer was renamed to
+“loopback-component-explorer.” The reason behind this is that it is now
+a full-fledged loopback component. The version 2.0.0 of the module was
+released, which has two breaking changes. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Since it is a loopback component, it can be
+loaded and configured via the “</span><span
+class="calibre22">server/component-config.json</span><span
+class="calibre12">” as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">// server/component-config.json</span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"loopback-component-explorer": {</span></p>
+<p><span class="calibre4">"mountPath": "/explorer"</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">For the migration from the 1.x version range
+to be simplified, a middleware should be provided, and this should be
+mountable in any Express application in the same way. An example of this
+is shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">var explorer =
+require('loopback-component-explorer');</span></p>
+<p><span class="calibre4">// v1.x - will not work anymore</span></p>
+<p><span class="calibre4">application.use('/explorer',
+explorer(applicTION, options));</span></p>
+<p><span class="calibre4">// v2.x</span></p>
+<p><span class="calibre4">application.use('/explorer',
+explorer.routes(application, options));</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Note that the use of “</span><span
+class="calibre22">component-config.json</span><span class="calibre12">”
+so as to load components is a new feature. Its documentation is expected
+to be released very soon. </span></p>
+<div id="part0000_split_030.html_calibre_pb_77" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_031.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">Loopback core</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">With all the user models and the methods for
+applications, the promise-based invocation can be supported,   as well
+as the callback-based calls. Methods which are related to replication
+such as the “</span><span
+class="calibre22">PersistedModel.replicate</span><span
+class="calibre12">” can also support promises. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">A filter which is method-based can also be
+specified for the middleware. Consider the example given below, which
+shows some specified limits for the middleware to get   only the
+requests. Here is the code for the example:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">// server/middleware.json</span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"auth": {</span></p>
+<p><span class="calibre4">"my-middleware": {</span></p>
+<p><span class="calibre4">"methods": ["GET"],</span></p>
+<p><span class="calibre4">"params": ["argument1",
+"argument2"],</span></p>
+<p><span class="calibre4">"enabled": true</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre12">A wrapper has also been implemented around
+the middleware errorhandler for express. The wrapper will add a
+configuration option for excluding error stack traces from the HTTP
+responses. Consider the typical configuration shown below for disabling
+the stack traces when it is being executed in a production environment.
+Here is the example:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">// server/middleware.json</span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"final:after": {</span></p>
+<p><span class="calibre4">"loopback#errorHandler": {}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">//
+server/middleware.production.json</span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"final:after": {</span></p>
+<p><span class="calibre4">"loopback#errorHandler": {</span></p>
+<p><span class="calibre4">"params": {</span></p>
+<p><span class="calibre4">"includeStack": false</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<div id="part0000_split_031.html_calibre_pb_79" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_032.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">The loopback-datasource-juggler</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">A support for assisting when querying
+embedded models was added together with the array values for MongoDB
+whenever the memory connector is being used. Consider the example given
+below, which shows the new querying capabilities introduced in
+Node:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">// common/models/file.json</span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"properties": {</span></p>
+<p><span class="calibre4">"name": "string",</span></p>
+<p><span class="calibre4">"sons": ["string"],</span></p>
+<p><span class="calibre4">"friends": [{ "name": "string" }]</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">If you are in need of finding the people who
+have a son named “</span><span class="calibre22">John,”</span><span
+class="calibre12"> then the following query can be used:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">File.find({ where: { son: "John" }
+})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how the query can be written. Suppose
+you are in need of finding the people who have a friend with the name
+“</span><span class="calibre22">Joel.”</span><span class="calibre12">
+The query can be formulated as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">File.find({ where: { "friends.name": "Joel" }
+})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">The support for the query “</span><span
+class="calibre22">RegExp</span><span class="calibre12">” was also
+introduced and supported for use in queries. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Consider a situation in which you want a
+person whose name starts with a particular letter, such as “</span><span
+class="calibre22">N.”</span><span class="calibre12"> The query for this
+can be formulated as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">File.find({ where: { regexp: /^N/ }
+})</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">That is how the query should be formulated.
+If more than one person has a name starting with the letter
+“</span><span class="calibre22">N,”</span><span class="calibre12"> then
+all of them will be shown in the output or the result after executing
+the query. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Other than the memory connector, there are
+some other connectors which are supported by the operator “</span><span
+class="calibre22">RegExp.”</span><span class="calibre12"> These include
+the following:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<ul>
+<li><span class="calibre12">PostgreSQL</span></li>
+<li><span class="calibre12">MongoDB</span></li>
+<li><span class="calibre12">MySQL</span></li>
+<li><span class="calibre12">MS SQL</span></li>
+</ul>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Lastly, in all the model-discovery methods,
+support for promises was added.  </span></p>
+<div id="part0000_split_032.html_calibre_pb_81" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_033.html"></span></p>
+<div class="calibre1">
+<p><br />
+</p>
+<p><span class="calibre24">The loopback-connector-mongodb</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">The flag “</span><span
+class="calibre22">allowExtendedOperators</span><span class="calibre12">”
+was recently implemented. When this flag has been enabled, the data for
+update operations will include the MongoDB operators such as the
+“</span><span class="calibre22">$rename.</span><span
+class="calibre12">”</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">There are two ways  how this flag can be
+enabled. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">First, if the file for the model definition
+has the property “settings.mongodb.allowExtendedOperators” having been
+set to “</span><span class="calibre22">true”</span><span
+class="calibre12"> as shown in the example given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">{</span></p>
+<p><span class="calibre4">"name": "MyModel",</span></p>
+<p><span class="calibre4">"settings": {</span></p>
+<p><span class="calibre4">"mongodb": {</span></p>
+<p><span class="calibre4">"allowExtendedOperators": true</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">Second, when the update method is being
+called from the code, the setting of the flag can be done in the options
+object as shown below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">User.updateAll(</span></p>
+<p><span class="calibre4">{ name: 'Joel' },</span></p>
+<p><span class="calibre4">{ '$rename': { name: 'fname' }},</span></p>
+<p><span class="calibre4">{ allowExtendedOperators: true });</span></p>
+<div id="part0000_split_033.html_calibre_pb_83" class="calibre9">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_034.html"></span></p>
+<section id="part0000_split_034.html_calibre_pb_86"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_034.html__Toc445731684"
+class="calibre15"><span class="calibre19">Chapter 9- Event Loop
+Monitoring</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">With the event loop in Node, we are given the
+capability of handling highly concurrent requests while at the same time
+running the requests which are single-threaded. The processing is
+delegated to the operating system itself, and this is done via the
+POSIXD interface as the new callbacks and events are still being
+handled. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre24">Blocking an event loop</span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">When this is done in a Node application, it
+can lead to catastrophic effects. We will demonstrate how the blocking
+can be done by external events. </span></p>
+<p><span class="calibre12">With a function call, blocking is said to
+have occurred when the flow of the current execution of the thread waits
+until we have the function finished before being executed. Most people
+see the “I/O” as blocking. An example is when you are calling the
+function “socket.read().” The program will have to wait for our call to
+end so as to continue. This is what you may need to perform with a
+return value. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">Note that in Node, a function calling a CPU
+work will always block. Consider the fibonacci function shown  below,
+which will block the execution of the thread as per current since it
+needs to use the CPU. Here is the function:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function fibonacci (j) {</span></p>
+<p><span class="calibre4">if (j &lt; 2)</span></p>
+<p><span class="calibre4">return 1;</span></p>
+<p><span class="calibre4">else</span></p>
+<p><span class="calibre4">return fibonacci(j-2) +
+fibonacci(j-1);</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">In Node, we do not create servers for
+Fibonacci. However, sometimes, the Node becomes CPU bound. Consider the
+example given below:</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre4">function requestHandler(request, response)
+{</span></p>
+<p><span class="calibre4">var body = request.rawBody; // has the POST
+body</span></p>
+<p><span class="calibre4">try {</span></p>
+<p><span class="calibre4">var json = JSON.parse(body);</span></p>
+<p><span class="calibre4">response.end(json.user.username);</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">catch(ex) {</span></p>
+<p><span class="calibre4">response.end("FAIL");</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4">}</span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre4"> </span></p>
+<p><span class="calibre12">With the above example, the body of the
+request will be taken and then parsed on. The flow of this should run
+very well until one has executed a file which is worth 15MB. When the
+call “JSON.parse()” has been executed on 15MB file, the processing will
+take around 1.5 seconds. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">For those who are in need of monitoring
+concurrent connections, you can use the </span><span
+class="calibre22">“</span><a
+href="https://strongloop.com/node-js/build-deploy-and-scale/"><span
+class="calibre32">StrongLoop Arc</span></a><span class="calibre12">.” It
+will also enable you to monitor the throughput of your Node applications
+that you have created. </span></p>
+<div id="part0000_split_034.html_calibre_pb_87" class="calibre9">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_035.html"></span></p>
+<section id="part0000_split_035.html_calibre_pb_89"
+class="calibre18 calibre1">
+<h1 class="calibre18"><span id="part0000_split_035.html__Toc445731685"
+class="calibre15"><span class="calibre19">Conclusion</span></span></h1>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre13"> </span></p>
+<p><span class="calibre12">It can be concluded that NodeJS is a very
+useful and very powerful library which provides an assist in the
+development of web applications. The framework is well known for its
+apps, which are highly scalable in terms of size and performance. This
+is why it is highly used in the development of network applications in
+which high scalability is needed. </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The framework is event-driven and
+asynchronous, and was built on top of the JavaScript engine for Chrome.
+JavaScript developers and experts usually find it easy for them to learn
+how to use the Node since they are loosely related. In fact, Node is
+based on JavaScript since it is one of its available libraries.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">In Node, your programs will not be forced to
+wait for certain operations to be completed. As you wait for the
+response to be available to you, you can continue in performing other
+tasks. This is because Node is a non-blocking JavaScript blocking and
+can support concurrent operations to be executed. Most of you are aware
+of the concept of buffering of data in which it is stored in a type of
+memory named buffer for quick and easy access. In Node, this type of
+memory or the process is not supported at all. What happens is that the
+data is provided or output to the user in the form of chunk-by-chunk.
+</span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12"> </span></p>
+<p><span class="calibre12">The framework has great features, which
+explains the reason behind its increased popularity among web
+developers. When compared to related frameworks or the ones which can
+supplement it, it is more popular. An example of such a framework is the
+Ruby on rails. The framework has numerous modules which can be used for
+the purpose of accomplishing different tasks in one’s app. It will be
+good for you to learn how to use this framework so as to get assistance
+in your process of development. This book is an excellent guide for you.
+</span></p>
+</section>

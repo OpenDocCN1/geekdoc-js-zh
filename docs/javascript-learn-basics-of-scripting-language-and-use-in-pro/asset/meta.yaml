@@ -1,0 +1,132 @@
+name: JavaScript： Learn Basics of Scripting Language and Use in Programming Easily(javascript
+  advanced,javascript algorithm,javascript and jquery,javascript beginners guide,javascript
+  interview)
+name_cn: JavaScript：轻松学习脚本语言基础并易编程编程(javascript 高级指南、javascript 算法、javascript 和 jquery、javascript
+  初学者指南、javascript 面试)
+slug: javascript-learn-basics-of-scripting-language-and-use-in-pro
+toc:
+- - '#'
+  - JavaScript：轻松学习脚本语言基础并易编程(javascript 高级指南、javascript 算法、javascript 和 jquery、javascript
+    初学者指南、javascript 面试)
+- - '#'
+  - 引言
+- - '#'
+  - 第一章
+- - '##'
+  - 语法
+- - '###'
+  - 语法基础
+- - '###'
+  - JavaScript 是区分大小写的
+- - '###'
+  - 空格
+- - '###'
+  - 分号的重要性
+- - '###'
+  - 深入探析语句
+- - '###'
+  - Values
+- - '###'
+  - Fixed Values Rules
+- - '###'
+  - Variables Rule
+- - '#'
+  - JS 运算符
+- - '#'
+  - JavaScript 表达式简述
+- - '#'
+  - 什么是 JavaScript 关键字？
+- - '#'
+  - 注释
+- - '#'
+  - 标识符
+- - '#'
+  - 第二章
+- - '##'
+  - 基础运算符介绍
+- - '###'
+  - 示例
+- - '###'
+  - 示例 2-
+- - '####'
+  - 示例 1.
+- - '####'
+  - 示例 2.
+- - '####'
+  - 示例 3.
+- - '####'
+  - 示例 4.
+- - '##'
+  - 逻辑运算符
+- - '###'
+  - 运算符示例：
+- - '###'
+  - 示例
+- - '###'
+  - 运算符
+- - '###'
+  - 示例
+- - '###'
+  - 条件 语句
+- - '###'
+  - 总结
+- - '###'
+  - 运算符
+- - '###'
+  - 逻辑运算符
+- - '####'
+  - 示例 1.
+- - '####'
+  - 示例 2.
+- - '####'
+  - 示例 3.
+- - '####'
+  - 示例 4.
+- - '##'
+  - 1. For 循环
+- - '##'
+  - 2. Do/While 循环
+- - '##'
+  - 3. While 语句
+- - '##'
+  - 4. Label 语句
+- - '##'
+  - 5. Break 语句
+- - '###'
+  - 6. Continue 语句
+- - '###'
+  - 7. For….in 语句
+- - '###'
+  - 8. For…of 语句
+- - '####'
+  - 练习
+- - '#'
+  - 第四章
+- - '#'
+  - JavaScript 函数与作用域基础
+- - '###'
+  - 自执行匿名函数
+- - '###'
+  - Typeof 运算符
+- - '###'
+  - 作用域 (Scope)
+- - '###'
+  - 需要避免的常见错误
+- - '###'
+  - 练习
+- - '#'
+  - 第五章
+- - '#'
+  - JavaScript 的一些显著特性
+- - '###'
+  - 集成浏览器支持
+- - '###'
+  - 一种功能性且灵活的编程语言
+- - '###'
+  - 在客户端和服务器端同时使用 JavaScript 的能力
+- - '###'
+  - 自主检测浏览器和系统的能力
+- - '###'
+  - 对面向对象编程的多样支持
+- - '#'
+  - 结论

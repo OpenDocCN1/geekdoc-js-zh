@@ -1,0 +1,69 @@
+name: JavaScript： The Ultimate Crash Course Learning JavaScript within a Day with
+  New Approach for Faster Programming (Save Time and Effort)
+name_cn: JavaScript：终极速成课程：通过新方法一天内学会 JavaScript，实现快速编程（省时省力）
+slug: javascript-the-ultimate-crash-course-learning-javascript-wit
+toc:
+- - '#'
+  - JavaScript：终极速成课程：通过新方法一天内学会 JavaScript，实现快速编程（省时省力）
+- - '#'
+  - 引言
+- - '#'
+  - 第一章：JavaScript 基础
+- - '##'
+  - 语法基础
+- - '##'
+  - JavaScript 语句
+- - '##'
+  - JavaScript 表达式
+- - '##'
+  - JavaScript 关键字
+- - '##'
+  - 注释
+- - '##'
+  - 标识符
+- - '#'
+  - 第二章：JavaScript 基本运算符
+- - '##'
+  - 数字和字符串操作
+- - '##'
+  - 加法 vs 拼接
+- - '##'
+  - 逻辑运算符
+- - '##'
+  - 条件代码
+- - '#'
+  - 第 3 章：JavaScript 循环
+- - '##'
+  - 1. For 语句
+- - '##'
+  - 2. Do-while 语句
+- - '##'
+  - 3. While 语句
+- - '##'
+  - 4. 标签语句
+- - '##'
+  - 5. break 语句
+- - '##'
+  - 6. continue 语句
+- - '##'
+  - 7. for...in 语句
+- - '##'
+  - 8. for...of 语句
+- - '#'
+  - 第 4 章：JavaScript 函数与作用域
+- - '##'
+  - 自执行匿名函数 (Self-Executing Anonymous Functions)
+- - '##'
+  - 作为参数的 JavaScript 函数
+- - '##'
+  - JavaScript 的浏览器支持
+- - '##'
+  - JavaScript 作为函数式编程语言
+- - '##'
+  - JavaScript 可以同时用于客户端和服务器端
+- - '##'
+  - 它检测用户浏览器和操作系统的能力
+- - '##'
+  - JavaScript 对对象的支持
+- - '#'
+  - 结论

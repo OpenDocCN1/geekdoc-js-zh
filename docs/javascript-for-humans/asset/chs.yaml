@@ -1,0 +1,692 @@
+- "# 面向人类的 JavaScript\n\n\n\n![](img/cover_image.jpg)\n\n![](img/index-1_1.jpg)\n\n\
+  \n\n![](img/index-2_1.jpg)\n\n献给父神\n\n![](img/index-3_1.jpg)\n\n\n![](img/index-4_1.jpg)\n\
+  \n- [基础 JavaScript 教程.........................................89]\n- [使用 location.href\
+  \ 确认....................................................90]\n\n![](img/index-5_1.jpg)\n\
+  \n- [询问并显示名字...............................................................91]\n\
+  - [简单的日期和时间.........................................................92]\n- [do while\
+  \ prompt，输入名字..............................................93]\n- [do while prompt，输入名字..............................................94]\n\
+  - [do while 使用 and..............................................................96]\n\
+  - [do while 使用 Not Or And...................................................97]\n\
+  - [do while location.href..........................................................99]\n\
+  \n\n\n\n\n- 下拉菜单................100\n- 或者或昵称................102\n- 查找单词, Cat................104\n\
+  - if else 选择................105\n- if else 选择................106\n- navigator 获取信息................107\n\
+  - 字符串长度................108\n- window, 新窗口................109\n- window, 新窗口, 与此相同................110\n\
+  - 用户名 && 密码................111\n- 使用不等于判断密码................112\n- 测验问题数学................113\n\
+  - 复选框................114\n- 数组, 排序................116\n- if 多条件................117\n\
+  - 文本框值................119\n- 输入名称, toLowerCase().................120\n- 字符串拼接................121\n\
+  - 字符串拼接 prompt................122\n- while 倒计时................123\n- while 递增................124\n\
+  - 快速数学题................125\n- 哪些队伍赢了？................126\n- 将所有记录显示为 JSON................128\n\
+  - 显示记录的循环和过滤................130\n- 显示记录的循环和过滤................132\n\n![](img/index-6_1.jpg)\n\
+  \n- 显示从...到的记录................134\n- 显示记录................136\n- 小时和分钟................138\n\
+  - 日期、月份消息................140\n- 小时消息................143\n- 简单类................145\n\
+  - 类................146\n- 类继承, extends................148\n- 类继承, extends person................152\n\
+  - 转换, f 到 c................155\n- 简单类, and this................157\n- 键盘控制................158\n\
+  - 键盘, 移动文本................160\n- 保存为 timeGetTime.js................163\n- 持续获取时间使用\
+  \ timeGetTime.js................176\n- 保存为 timeMessage.js................177\n-\
+  \ 一天时间消息, 使用 timeMessage.js................179\n\n![](img/index-7_1.jpg)\n\n# 创建新文件夹\n\
+  \n我们的项目从创建一个**新文件夹**开始。\n\n`ourProject` 文件夹将存放我们所有的 `js`、`html` 和 `css` 文件。\n\n\
+  - 在**桌面**上**右键点击**并选择**新建文件夹** \n- 将该**文件夹****重命名**为\n\n## `ourProject`\n\n我们将在这个**文件夹**中**保存**我们所有的**文件**。\n\
+  \n![](img/index-8_1.jpg)\n\n# 编辑器\n\n我们可以从许多编辑器中选择编写 JavaScript，包括 Windows 自带的记事本，但记事本不如较新的替代方案。让我们来看看优秀且免费的\
+  \ JavaScript 编辑器。\n\n### VS CODE\nhttps://code.visualstudio.com/\n\n### ATOM\nhttps://atom.io/\n\
+  \n### BRACKETS\nhttp://brackets.io/\n\n![](img/index-9_1.jpg)\n\n### Sublime\nhttps://www.sublimetext.com/\n\
+  \n### Notepad++\nhttps://notepad-plus-plus.org/downloads/\n\nVS Code 是许多人的最爱。在我们下载并安装编辑器（如\
+  \ VS Code）之后，我们将创建 `.html` 文件。\n\n# 第一个 HTML 页面\n\n```html\n<html>\n<head>\n<title>我们的第一个页面</title>\n\
+  </head>\n<body>\n我们在这里写任何内容\n</body>\n</html>\n```\n\n将此 `First.html` 文件保存到 `ourProject`\
+  \ 文件夹中。\n\n# 第一个 HTML 页面 \n\n```html\n<html>\n<head>\n<title>我们的第一个页面</title>\n\
+  </head>\n<body>\n我们在这里写任何内容\n</body>\n</html>\n```\n\n将此 `First.html` 文件保存到 `ourProject`\
+  \ 文件夹中。\n\n# 第一个 HTML 页面 \n\n```html\n<html>\n<head>\n<title>我们的第一个页面</title>\n\
+  </head>\n<body>\n我们在这里写任何内容\n</body>\n</html>\n```\n\n将此 `First.html` 文件保存到 `ourProject`\
+  \ 文件夹中。\n\n# 在 HEAD 中定义的函数\n\n```html\n<html>\n<head>\n<title>我们的第一个页面</title>\n\
+  </head>\n<body>\n我们在这里写任何内容\n<script>\nfunction ourMessage() {\n  alert(\"Hi everyone\"\
+  );\n}\n</script>\n</body>\n</html>\n```\n\n将此 `First.html` 文件保存到 `ourProject` 文件夹中。\n\
+  \n# 在 BODY 中定义的函数\n\n```html\n<html>\n<head>\n<title>我们的第一个页面</title>\n</head>\n\
+  <body>\n我们在这里写任何内容\n<script>\nfunction ourMessage() {\n  alert(\"Hi everyone\");\n\
+  }\n</script>\n</body>\n</html>\n```\n\n将此 `First.html` 文件保存到 `ourProject` 文件夹中。\n\
+  \n# 我们的函数就像三明治\n\n```javascript\nfunction ourMessage() {\n  alert(\"Hi everyone\"\
+  );\n}\n```\n\n正如我们在过去两页中中学到的；我们可以在 **head** 中**定义**我们的函数，也可以在 **body** 中定义。任何一种都是可以的。如上所示，我们的函数目前非常简单，作为消息代码的容器。\n\
+  \n\n\n\n\n在 JavaScript 中，`functions`是由 `EVENTS`（事件）触发的。\n\n我们有很多 `EVENT` 类型可以选择来激活我们的函数。\n\
+  \n![](img/index-17_1.jpg)\n\n返回，简单\n\n```html\n<html><body>\n<script>\nfunction\
+  \ simple() {\n  return \"howdy\";\n}\nalert(simple());\n</script>\n</body>\n</html>\n\
+  ```\n\n![](img/index-18_1.jpg)\n\n返回，简单，带参数\n\n```html\n<html>\n<body>\n<script>\n\
+  function simple(yourMessage) {\n  return yourMessage;\n}\nalert(simple(\"Hi Everyone\"\
+  ));\n</script>\n</body>\n</html>\n```\n\n![](img/index-19_1.jpg)\n\n返回，简单，带参数\n\n\
+  ```html\n<html>\n<body>\n<script>\nfunction simple(yourMessage) {\n  let greeting\
+  \ = \"Hi there \" + yourMessage;\n  return yourMessage;\n}\nalert(simple(\"So good\
+  \ to see you\"));\n</script>\n</body>\n</html>\n```\n\n![](img/index-20_1.jpg)\n\
+  \n返回，简单，带参数\n\n```html\n<html>\n<body>\n<script>\nfunction simple() {\n  let person\
+  \ = prompt(\"Enter your Name?\", \"\");\n  let greeting = \"Howdy \" + person;\n\
+  \  return greeting;\n}\nalert(simple());\n</script>\n</body>\n</html>\n```\n\n![](img/index-21_1.jpg)\n\
+  \n在 head 中函数并返回\n\n```html\n<html>\n<head><title>使用 return 在 head 中编写函数</title>\n\
+  <script>\nfunction ourMessage() {\n  return \"Hi Everyone\";\n}\nfunction showText()\
+  \ {\n  document.write(ourMessage());\n}\n</script>\n</head>\n<body onload=\"showText();\"\
+  >\n</body>\n</html>\n```\n\n![](img/index-22_1.jpg)\n\n### 什么是 onload 事件？\n\n`<body\
+  \ onload =ourMessage();\">` `onload` 事件在页面上所有内容完成加载时`触发`。\n\n因此，我们创建的名为 `ourMessage()`\
+  \ 的函数将在`页面加载完成`的瞬间被`激活`。`onload` 事件是我们可以选择的用于激活函数的众多事件之一。\n\n现在让我们学习用不同的事件来触发我们的代码，例如当人员点击\
+  \ `BUTTON`（按钮）时。\n\n![](img/index-23_1.jpg)\n\n#### 我们按钮的 onclick 事件\n\n```html\n\
+  <html>\n<head><title>按钮点击</title>\n<script>\nfunction ourFunction() {\n  alert(\"\
+  Hi Everyone\");\n}\n</script>\n</head>\n<body>\nPush the Button <br>\n<button onclick=\"\
+  ourFunction();\">Enter</button>\n<br>\n</body>\n</html>\n```\n\n![](img/index-24_1.jpg)\n\
+  \n#### 带计数器的按钮\n\n```html\n<html><head><title>按钮点击</title>\n<script>\nlet theText\
+  \ = \"Clicks\";\nlet ourCounter = 0;\nfunction ourFunction() {\n  ourCounter +=\
+  \ 1;\n  document.getElementById(\"displayText\").value = theText + ourCounter;\n\
+  }\n</script></head>\n<body>\nPush the Button <br>\n<button onclick=\"ourFunction();\"\
+  >Enter</button>\n<br>\n<hr width =\"200px\" align=\"left\">Message is Displayed\
+  \ Here <br>\n<textarea id=\"displayText\" rows=\"1\"></textarea>\n</body>\n</html>\n\
+  ```\n\n![](img/index-25_1.jpg)\n\n#### 询问并说名字\n\n```html\n<html\n<head><title> 询问并说名字\
+  \ </title></head>\n<body>\n<script>\nlet name = prompt(\"Enter your name\",\"\"\
+  );\nalert(\"Hi \" + name);\n</script>\n</body>\n</html>\n```\n\n![](img/index-26_1.jpg)\n\
+  \n#### 如果简单则提示\n\n```html\n<html><head><title>提示提示函数</title></head>\n<body>\n<script>\n\
+  let name = prompt(\"Enter your name\");\nif (name == \"chris\") {\n  document.write(\"\
+  Hi Chris\");\n}\n</script>\n</body>\n</html>\n```\n\n![](img/index-27_1.jpg)\n\n\
+  #### 询问并说名字，如果名字是\n\n```html\n<html><head><title>询问，说名字，如果是人，否则</title></head>\n\
+  <body>\n<script>\nlet name = prompt(\"Enter your name\",\"\");\nif (name == \"chris\"\
+  ) {\n  alert(\"Hi \" + name);\n}\nelse {\n  alert(\"Where is Chris?\");\n}\n</script>\n\
+  </body>\n</html>\n```\n\n![](img/index-28_1.jpg)\n\n#### 输入一个数字，返回\n\n```html\n\
+  <html><head>\n<script>\nfunction askNumber() {\n  let question = prompt(\"Enter\
+  \ a number\",\"\");\n  return question;\n}\nfunction displayIt(where, whatFunction)\
+  \ {\n  document.getElementById(where).innerHTML = whatFunction;\n}\n</script>\n\
+  </head>\n<body>\n<button onclick=\"displayIt('div1', askNumber());\"><h2>Enter Number</h2></button>\n\
+  <div id=\"div1\"></div>\n</body>\n</html>\n```\n\n![](img/index-29_1.jpg)\n\n####\
+  \ 返回，绝对值\n\n```html\n<html><body><script>\nfunction ourFunction() {\n  let question\
+  \ = prompt(\"Enter a number\",\"\");\n  let answer = Math.abs(question);\n  return\
+  \ answer;\n}\nfunction showIt(where, whatFunction) {\n  document.getElementById(where).innerHTML\
+  \ = whatFunction;\n}\n</script>\n<button onclick=\"showIt('div1', ourFunction());\"\
+  ><h2>Absolute Value</h2></button>\n<div id=\"div1\"></div>\n</body>\n</html>\n```\n\
+  \n![](img/index-30_1.jpg)\n\n#### 使用 textarea 用户输入\n\n```html\n<html><head><title>用户输入</title>\n\
+  <script>\nfunction ourFunction() {\n  let theText = document.getElementById(\"enteredText\"\
+  ).value;\n  document.getElementById(\"displayText\").value = theText;\n}\n</script></head>\n\
+  <body>\nEnter Text Here <br>\n<textarea id =\"enteredText\" rows=\"1\"></textarea>\
+  \ <br>\n<button onclick=\"ourFunction();\">Enter</button> <br>\n<hr width =\"200px\"\
+  \ align=\"left\">Text Displayed Here <br>\n<textarea id =\"displayText\" rows=\"\
+  1\"></textarea>\n</body>\n</html>\n```\n\n![](img/index-31_1.jpg)\n\n### 如何设计应用\n\
+  \n我们从代码开始吗？不。我们从大声说出想做什么开始。然后写下想要完成的每一件事。让我们一起设计一个界面。让我们先讨论一下。\n\n我想以多种方式显示日期和时间。我想单独显示星期。我想单独显示月份。我想让日期时间和更新。\n\
+  \n![](img/index-32_1.jpg)\n\n#### 获取日期星期\n\n```html\n<html><head><script>\nfunction\
+  \ dateGetDayName() {\n  let theDate = new Date();\n  let theDay = theDate.getDay();\n\
+  \  if (theDay == 0) { return \"Sunday\"; }\n  if (theDay == 1) { return \"Monday\"\
+  ; }\n  if (theDay == 2) { return \"Tuesday\"; }\n  if (theDay == 3) { return \"\
+  Wednesday\"; }\n```\n![](img/index-33_1.jpg)\n```html\nif (theDay == 4) { return\
+  \ \"Thursday\"; }\n```\n![](img/index-34_1.jpg)\n```html\n}\nfunction showInfo()\
+  \ {\n\ndocument.write(dateGetDayName())\n}\n</script>\n</head>\n<body onload=\"\
+  showInfo();\">\n<div id=\"day\">Day</div>\n</body>\n</html>\n```\n\n![](img/index-35_1.jpg)\n\
+  \n<!--\n正如上面所示，我们的代码很快变得复杂。\n让我们简化代码和编程方式。\n让我们把函数定义在外部文件中。\n我们可以这样保持代码的整洁。\n-->\n\
+  \n![](img/index-36_1.jpg)\n\n#### 保存为 dateGetDayName.js\n\n```javascript\nfunction\
+  \ dateGetDayName() {\n  let theDate = new Date();\n  let theDay = theDate.getDay();\n\
+  \  if (theDay == 0) { return \"Sunday\"; }\n  if (theDay == 1) { return \"Monday\"\
+  ; }\n  if (theDay == 2) { return \"Tuesday\"; }\n  if (theDay == 3) { return \"\
+  Wednesday\"; }\n  if (theDay == 4) { return \"Thursday\"; }\n  if (theDay == 5)\
+  \ { return \"Friday\"; }\n  if (theDay == 6) { return \"Saturday\"; }\n}\n```\n\n\
+  ![](img/index-37_1.jpg)\n\n//在 **ourProject 文件夹**中，我们创建了 3 个 **新** **文件夹**并命名为 js,\
+  \ html, css\n\n//我们将 `dateGetDayName.js` 保存在 `ourProject` 文件夹的 `js` 文件夹中\n\n//下一个\
+  \ html 页面使用了这个脚本！\n\n//ourProject 文件夹下的 `js` 文件夹内包含 `dateGetDayName.js` 文件。\n\n\
+  ![](img/index-38_1.jpg)\n\n\n\n\n\n# 获取星期，使用 `dateGetDayName.js`\n\n## 文件\n```html\n\
+  <html\n<head>\n  <script src=\"../js/dateGetDayName.js\"></script>\n  <script>\n\
+  \    function showInfo() {\n      document.getElementById(\"dayDiv\").innerHTML\
+  \ = \"It is \" + dateGetDayName();\n    }\n  </script>\n</head>\n<body onload=\"\
+  showInfo();\">\n  <div id=\"dayDiv\">Day</div>\n</body>\n</html>\n```\n![](img/index-41_1.jpg)\n\
+  \n# 获取星期，使用参数\n\n```html\n<html\n<head>\n  <script src=\"../js/dateGetDayName.js\"\
+  ></script>\n  <script>\n    function showInfo(whichDiv) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + dateGetDayName();\n    }\n  </script>\n</head>\n<body onload=\"\
+  showInfo('dayDiv');\">\n  <div id=\"dayDiv\">Day</div>\n</body>\n</html>\n```\n\
+  <!-- 我们在函数中使用参数，而不是在函数中定义它。相反，它在使用函数时定义它的。 -->\n![](img/index-42_1.jpg)\n\n# 保存为\
+  \ dateGetMonthName.js\n```javascript\nfunction dateGetMonthName() {\n  let theDate\
+  \ = new Date();\n  let theMonth = theDate.getMonth();\n  if(theMonth == 0) {\n \
+  \   return \"January\";\n  }\n  if(theMonth == 1) {\n    return \"February\";\n\
+  \  }\n  if(theMonth == 2) {\n    return \"March\";\n  }\n  if(theMonth == 3) {\n\
+  \    return \"April\";\n  }\n  if(theMonth == 4) {\n    return \"May\";\n  }\n \
+  \ if(theMonth == 5) {\n    return \"June\";\n  }\n  if(theMonth == 6) {\n    return\
+  \ \"July\";\n  }\n  if(theMonth == 7) {\n    return \"August\";\n  }\n  if(theMonth\
+  \ == 8) {\n    return \"September\";\n  }\n  if(theMonth == 9) {\n    return \"\
+  October\";\n  }\n  if(theMonth == 10) {\n    return \"November\";\n  }\n  if(theMonth\
+  \ == 11) {\n    return \"December\";\n  }\n}\n```\n![](img/index-44_1.jpg)\n\n#\
+  \ 获取月份，使用 2 个参数\n```html\n<html\n<head>\n  <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n  <script>\n    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n</head>\n<body onload=\"showInfo('monthDiv',\
+  \ dateGetMonthName())\">\n  <div id=\"monthDiv\">Month</div>\n</body>\n</html>\n\
+  ```\n![](img/index-45_1.jpg)\n\n# 获取星期，获取月份，使用 2 个参数\n```html\n<html\n<head>\n \
+  \ <script src=\"../js/dateGetDayName.js\"></script>\n  <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n  <script>\n    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n</head>\n<body onload=\"showInfo('monthDiv',\
+  \ dateGetMonthName()); showInfo('dayDiv', dateGetDayName())\">\n  <div id=\"monthDiv\"\
+  >Month</div>\n  <div id=\"dayDiv\">Day</div>\n</body>\n</html>\n```\n![](img/index-46_1.jpg)\n\
+  \n# 使用样式为月份和星期的 Div 定位\n```html\n<html\n<head>\n  <script src=\"../js/dateGetDayName.js\"\
+  ></script>\n  <script src=\"../js/dateGetMonthName.js\"></script>\n  <script>\n\
+  \    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n  <style>\n    .monthStyle {\n\
+  \      position:absolute;\n      top: 100px;\n      left: 100px;\n    }\n    .dayStyle\
+  \ {\n      position:absolute;\n      top: 200px;\n      left: 100px;\n    }\n  </style>\n\
+  </head>\n<body onload=\"showInfo('monthDiv', dateGetMonthName()); showInfo('dayDiv',\
+  \ dateGetDayName())\">\n  <div id=\"monthDiv\" class=\"monthStyle\">Month</div>\n\
+  \  <div id=\"dayDiv\" class=\"dayStyle\">Day</div>\n</body>\n</html>\n```\n![](img/index-48_1.jpg)\n\
+  \n# 使用 onclick 事件获取月份和星期\n```html\n<html\n<head>\n  <script src=\"../js/dateGetDayName.js\"\
+  ></script>\n  <script src=\"../js/dateGetMonthName.js\"></script>\n  <script>\n\
+  \    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n  <style>\n    .monthStyle {\n\
+  \      position:absolute;\n      top: 100px;\n      left: 100px;\n    }\n    .dayStyle\
+  \ {\n      position:absolute;\n      top: 150px;\n      left: 100px;\n    }\n  </style>\n\
+  </head>\n<<body>\n  <div id=\"monthDiv\" class=\"monthStyle\" onclick=\"showInfo('monthDiv',\
+  \ dateGetMonthName())\">Month</div>\n  <div id=\"dayDiv\" class=\"dayStyle\" onclick=\"\
+  showInfo('dayDiv', dateGetDayName())\">Day</div>\n</body>\n</html>\n```\n<!-- 记得点击\
+  \ div 以激活 -->\n![](img/index-50_1.jpg)\n\n# 获取月份，获取星期，样式美化\n```html\n<html\n<head>\n\
+  \  <script src=\"../js/dateGetDayName.js\"></script>\n  <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n  <script>\n    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n  <style>\n    .monthStyle {\n\
+  \      position:absolute;\n      top: 100px;\n      left: 100px;\n      width: 80px;\n\
+  \      border: 5px solid rgb(150,0,150);\n      border-radius: 5px;\n    }\n   \
+  \ .dayStyle {\n      position:absolute;\n      top: 150px;\n      left: 100px;\n\
+  \      width: 80px;\n      border: 5px solid rgb(0,0,0);\n      border-radius: 5px;\n\
+  \    }\n  </style>\n</head>\n<body>\n  <div id=\"monthDiv\" class=\"monthStyle\"\
+  \ onclick=\"showInfo('monthDiv', dateGetMonthName())\">Month</div>\n  <div id=\"\
+  dayDiv\" class=\"dayStyle\" onclick=\"showInfo('dayDiv', dateGetDayName())\">Day</div>\n\
+  </body>\n</html>\n```\n![](img/index-52_1.jpg)\n\n# 获取月份，获取星期，更多样式\n```html\n<html\n\
+  <head>\n  <script src=\"../js/dateGetDayName.js\"></script>\n  <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n  <script>\n    function showInfo(whichDiv, functionName) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = \"It is \" + functionName;\n    }\n  </script>\n  <style>\n    div {\n     \
+  \ border: 5px solid rgb(0,0,0);\n      border-radius: 5px;\n      text-align: center;\n\
+  \    }\n    div:hover {\n      border: 5px solid rgb(17,0,255);\n    }\n    .monthStyle\
+  \ {\n      position:absolute;\n      top: 100px;\n      left: 100px;\n      width:\
+  \ 80px;\n    }\n    .dayStyle {\n      position:absolute;\n      top: 150px;\n \
+  \     left: 100px;\n      width: 80px;\n    }\n  </style>\n</head>\n<body>\n  <div\
+  \ id=\"monthDiv\" class=\"monthStyle\" onclick=\"showInfo('monthDiv', dateGetMonthName())\"\
+  >Month</div>\n  <div id=\"dayDiv\" class=\"dayStyle\" onclick=\"showInfo('dayDiv',\
+  \ dateGetDayName())\">Day</div>\n</body>\n</html>\n```\n![](img/index-54_1.jpg)\n\
+  \n# 保存为 ourStyle.css\n```css\ndiv {\n  border: 5px solid rgb(0,0,0);\n  border-radius:\
+  \ 5px;\n  text-align: center;\n}\nbody {\n  background-color: rgb(196,196,196);\n\
+  }\ndiv:hover {\n  border: 5px solid rgb(17,0,255);\n}\n.monthStyle {\n  position:absolute;\n\
+  \  top: 100px;\n  left: 100px;\n  width: 80px;\n}\n.dayStyle {\n  position:absolute;\n\
+  \  top: 150px;\n  left: 100px;\n  width: 80px;\n}\n```\n/* 我们将此文件作为 ourStyle.css\
+  \ 保存在 css 文件夹中。我们在 ourProject 文件夹中创建一个名为 css 的文件夹。我们将 ourStyle.css 保存在 css 文件夹内。\
+  \ */\n![](img/index-56_1.jpg)\n\n# 获取月份，获取星期，外部 CSS\n```html\n<html\n<head>\n  <script\
+  \ src=\"../js/dateGetDayName.js\"></script>\n  <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n  <link rel=\"stylesheet\" href=\"../css/ourStyle.css\">\n  <script>\n\
+  \    function showInfo(whichDiv, functionName, ourText) {\n      document.getElementById(whichDiv).innerHTML\
+  \ = ourText + ' ' + functionName;\n    }\n  </script>\n</head>\n<body>\n  <div id=\"\
+  monthDiv\" class=\"monthStyle\" onclick=\"showInfo('monthDiv', dateGetMonthName(),\
+  \ 'It is')\">Month</div>\n</body>\n</html>\n```\n\n\n\n\n\n<div id=\"dayDiv\" class=\"\
+  dayStyle\" onclick=\"showInfo('dayDiv', dateGetDayName(), 'Today is ')\">Day</div\n\
+  </body></html>\n\n<!-- 记得点击 div 以激活代码 -->\n\n![](img/index-58_1.jpg)\n\n保存为 `showInfo.js`\n\
+  \n```javascript\nfunction showInfo(whichDiv, functionName, ourText) {\n    document.getElementById(whichDiv).innerHTML\
+  \ = ourText + ' ' + functionName;\n}\n```\n\n// 因为我们在许多脚本中反复使用 `showInfo`，所以我们将其封装了一个独立的函数以便调用。\n\
+  // 我们将此文件保存为 `showInfo.js`\n// 我们将此文件保存在 `ourProject` 文件夹下的 `js` 文件夹中\n\n![](img/index-59_1.jpg)\n\
+  \n获取月份，获取日期，使用外部文件\n\n```html\n<html>\n<head>\n    <script src=\"../js/dateGetDayName.js\"\
+  ></script>\n    <script src=\"../js/dateGetMonthName.js\"></script>\n    <script\
+  \ src=\"../js/showInfo.js\"></script>\n    <link rel=\"stylesheet\" href=\"../css/ourStyle.css\"\
+  >\n</head>\n<body>\n    <div id=\"monthDiv\" class=\"monthStyle\" onclick=\"showInfo('monthDiv',\
+  \ dateGetMonthName(), 'It is ')\">Month</div\n    <div id=\"dayDiv\" class=\"dayStyle\"\
+  \ onclick=\"showInfo('dayDiv', dateGetDayName(), 'Today is ')\">Day</div>\n</body></html>\n\
+  ```\n\n![](img/index-60_1.jpg)\n\n保存为 `timeGetLocalTime.js`\n\n```javascript\nfunction\
+  \ timeGetLocalTime() {\n    let theDate = new Date();\n    theDate.toLocaleString();\n\
+  \    return theDate;\n}\n\nfunction timeGetLocalTimeRepeat() {\n    let theDate\
+  \ = new Date();\n    theDate.toLocaleString();\n    document.getElementById(\"timeDiv\"\
+  ).innerHTML = theDate;\n    //console.log(theDate);\n}\n\nfunction activateTimer()\
+  \ {\n    let ourTimer = setInterval(timeGetLocalTimeRepeat, 1000);\n}\n```\n\n![](img/index-62_1.jpg)\n\
+  ![](img/index-63_1.jpg)\n\n获取日期，获取月份，获取时间，点击事件\n\n```html\n<html>\n<head>\n    <script\
+  \ src=\"../js/dateGetDayName.js\"></script>\n    <script src=\"../js/dateGetMonthName.js\"\
+  ></script>\n    <script src=\"../js/timeGetLocalTime.js\"></script>\n    <script\
+  \ src=\"showInfo.js\"></script>\n    <link rel=\"stylesheet\" href=\"../css/ourStyle.css\"\
+  >\n</head>\n<body>\n    <div id=\"monthDiv\" class=\"monthStyle\" onclick=\"showInfo('monthDiv',\
+  \ dateGetMonthName(), 'It is ')\">Month</div\n```\n\n![](img/index-64_1.jpg)\n\n\
+  ```html\n<div id=\"dayDiv\" class=\"dayStyle\" onclick=\"showInfo('dayDiv', dateGetDayName(),\
+  \ 'Today is ')\">Day</div\n<div id=\"timeLocalDiv\" class=\"dayStyle\" onclick=\"\
+  showInfo('timeLocalDiv', timeGetLocalTime(), 'Time is ')\" style=\"top:200px; width:275px;\"\
+  >Time</div>\n</body></html>\n```\n\n![](img/index-65_1.jpg)\n\n获取日期，获取月份，获取时间，持续\n\
+  \n```html\n<html>\n<head>\n    <script src=\"../js/dateGetDayName.js\"></script>\n\
+  \    <script src=\"../js/dateGetMonthName.js\"></script>\n    <script src=\"../js/timeGetLocalTime.js\"\
+  ></script>\n    <script src=\"showInfo.js\"></script>\n    <link rel=\"stylesheet\"\
+  \ href=\"../css/ourStyle.css\">\n</head>\n<body>\n    <div id=\"monthDiv\" class=\"\
+  monthStyle\" onclick=\"showInfo('monthDiv', dateGetMonthName(), 'It is ');\">Month</div\n\
+  ```\n\n![](img/index-66_1.jpg)\n\n```html\n<div id=\"dayDiv\" class=\"dayStyle\"\
+  \ onclick=\"showInfo('dayDiv', dateGetDayName(), 'Today is ');\">Day</div\n<div\
+  \ id=\"timeDiv\" class=\"dayStyle\" onclick=\"activateTimer();\" style=\"top:275px;\
+  \ width:275px;\">Time Keep Activating</div>\n</body></html>\n```\n\n![](img/index-67_1.jpg)\n\
+  \n保存为 `dateDayMessage.js`\n\n```javascript\nfunction messageFromDay() {\n    if(dateGetDayName()\
+  \ == \"Friday\") {\n        return \"It's Friday. Good time to learn something new.\"\
+  ;\n    } else if(dateGetDayName() == \"Saturday\") {\n        return \"It's Saturday.\
+  \ Good time for Scripting.\";\n    } else if(dateGetDayName() == \"Sunday\") {\n\
+  \        return \"It's Sunday. Happy Scripting.\";\n    } else if(dateGetDayName()\
+  \ == \"Monday\") {\n        return \"It's Monday. Time to learn.\";\n```\n\n![](img/index-68_1.jpg)\n\
+  \n```javascript\n    else if(dateGetDayName() == \"Tuesday\") {\n        return\
+  \ \"It's Tuesday. Learning alot of Javascript.\";\n    } else if(dateGetDayName()\
+  \ == \"Wednesday\") {\n        return \"It's Wednesday. JSON is fun.\";\n    } else\
+  \ if(dateGetDayName() == \"Thursday\") {\n        return \"It's Thursday. One more\
+  \ day.\";\n    }\n}\n```\n\n![](img/index-69_1.jpg)\n\n使用了 `dateGetDayName.js`,\
+  \ `dateDayMessage.js`, `showInfo.js`\n\n```html\n<html>\n<body style=\"background-color:rgb(140,\
+  \ 192, 192);\">\n    <script src=\"../js/dateGetDayName.js\"></script>\n    <script\
+  \ src=\"../js/dateGetMonthName.js\"></script>\n    <script src=\"../js/timeGetLocalTime.js\"\
+  ></script>\n    <script src=\"showInfo.js\"></script>\n    <button onclick=\"showInfo('showDayMessage',\
+  \ messageFromDay(), 'hi')\">Day Message</button>\n    <hr>\n    <button onclick=\"\
+  showInfo('showMonthMessage', messageFromMonth(), 'hi')\">Month Message</button>\n\
+  \    <div id=\"showDayMessage\" style=\"font-size:30pt\">Day Message</div\n    <div\
+  \ id=\"showMonthMessage\" style=\"font-size:30pt\">Day Message</div>\n</body>\n\
+  </html>\n```\n\n\n\n\n\n`<script src=\"../js/showInfo.js\"></script>` 在接下来的 2 页页中，我们将首先创建一个简单的\
+  \ `js` 和 `html` 文件。然后，我们的 `index.html` 文件将引用我们创建的 `html` 文件。\n\n![](img/index-76_1.jpg)\n\
+  \n保存为 `ourSimpleFunction.js`\n\n```javascript\nfunction ourSimpleFunction()\n{\n\
+  \  alert(\"Hi Everyone\");\n}\n```\n\n//我们将此文件保存为 `ourSimpleFunction.js`，位于 `ourProject`\
+  \ 文件夹下的 `js` 文件夹中。\n\n![](img/index-77_1.jpg)\n\n使用 `ourSimpleFunction.js`\n\n```html\n\
+  <html>\n<head>\n  <title>按钮点击</title>\n  <script src=\"../js/ourSimpleFunction.js\"\
+  ></script>\n</head>\n<body>\n  点击按钮 <br>\n  <button onclick=\"ourSimpleFunction();\"\
+  >进入</button>\n  <br>\n</body>\n</html>\n```\n\n<!-- 我们将此文件保存为 `ourSimpleFunction.html`，位于我们的\
+  \ `html` 文件夹中。 -->\n\n![](img/index-78_1.jpg)\n\n保存为 `index.html`\n\n```html\n<html>\n\
+  <head>\n  <style>\n    a{\n      color: rgb(30, 99, 211);\n      font-size: 20pt;\n\
+  \    }\n  </style>\n</head>\n<body style=\"background-color:rgb(140, 192, 192);\"\
+  >\n  <div id=\"first\" style=\"font-size:30pt\">首页文件</div>\n  <hr>\n  <a href=\"\
+  ./html/ourSimpleFunction.html\">我们的简单函数</a>\n</body>\n</html>\n```\n\n<!-- 我们将此文件保存为\
+  \ `index.html`，位于 `ourProject` 文件夹中。 -->\n\n![](img/index-79_1.jpg)\n\n### ourProject\
+  \ 的文件结构\n\n文件结构显示了我们保存 `index.html` 文件的位置。\n当我们打开 `index.html` 文件时，可以点击链接打开我们的应用程序之一。我们可以随时添加更多链接。\n\
+  \n![](img/index-80_1.jpg)\n\n### 我们 js 文件的文件结构\n`ourProject` 文件夹中的 `js` 文件夹包含了我们的\
+  \ JavaScript `library`！\n\n![](img/index-81_1.jpg)\n\n### 我们 html 文件的文件结构\n`ourProject`\
+  \ 文件夹中的 `html` 文件夹包含了我们的 `html` 文件，这些文件会触发库中的 `js` 文件！\n\n![](img/index-82_1.jpg)\n\
+  \n### 文件结构的优势\n\n随着我们向 `js` 库文件夹添加越来越多的 `js` 函数，我们可以在 `html` 文件夹中添加更多的 `html` 文件来触发它们。\n\
+  然后我们可以在 `index.html` 文件中创建`超链接`来激活我们的 `html` 文件。\n现在创建复杂项目对我们变得非常简单，因为我们有了良好的结构！\n\
+  \n![](img/index-83_1.jpg)\n\n保存为 `mathNumberSquare.js`\n\n```javascript\nclass mathFunctions\n\
+  {\n  numberSquare(number)\n  {\n    return number * number;\n  }\n}\nlet ourMath\
+  \ = new mathFunctions();\n//我们当然可以把所有的数学函数放在这一个类中！\n// 这取决于每个程序员如何喜欢思考数据。\n// 下一页将此脚本。\n\
+  ```\n\n![](img/index-84_1.jpg)\n\n使用 `mathNumberSquare.js`\n\n```html\n<html>\n\
+  <body style=\"background-color:rgb(140, 192, 192);\">\n  <script src=\"../js/mathNumberSquare.js\"\
+  ></script>\n  <script src=\"../js/showInfo.js\"></script>\n  <button onclick=\"\
+  showInfo('showResult', ourMath.numberSquare(7), '结果是')\">点击</button>\n  <div id=\"\
+  showResult\" style=\"font-size:30pt\">结果</div>\n</body>\n</html>\n```\n<!-- 注意我们引用了创建的名为\
+  \ `ourMath` 的类，然后使用点符号。接着是函数名。 -->\n\n![](img/index-85_1.jpg)\n\n### 类方法很有用，但是..\n\
+  \n我们需要使用类方法来编程吗？\n不需要！\n但如果我们喜欢使用它，我们就可以这样做，因为类方法在很多领域都很有用，我们用得越频繁，就越熟悉。\n\n只使用函数方法好吗？\n\
+  是的！\n如果只需要函数，我们就使用函数！\n我们保持每个函数的简单！\n我们让每个函数只做一件事！\n以后，我们可以将所有相关的函数放在一个文件中。现在，我们使用独立的文件，因为这让思考每个函数变得更容易。\n\
+  正如此，让我们再次展示示例，使用函数方法作为我们的设计模式。\n\n![](img/index-86_1.jpg)\n\n保存为 `mathNumberSquare1.js`\n\
+  \n```javascript\nfunction mathNumberSquare(number)\n{\n  return number * number;\n\
+  }\n```\n\n![](img/index-87_1.jpg)\n\n使用 `mathNumberSquare1.js`\n\n```html\n<html>\n\
+  <body style=\"background-color:rgb(140, 192, 192);\">\n  <script src=\"../js/mathNumberSquare1.js\"\
+  ></script>\n  <script src=\"../js/showInfo.js\"></script>\n  <button onclick=\"\
+  showInfo('showResult', mathNumberSquare(7), '结果是')\">点击</button>\n  <div id=\"showResult\"\
+  \ style=\"font-size:30pt\">结果</div>\n</body>\n</html>\n```\n\n![](img/index-88_1.jpg)\n\
+  \n### 将所有 js 文件合并为一个\n\n我们打开包含许多 `js` 文件的 `js` 文件夹。\n在地址栏输入 `cmd`\n这会在...打开我们的 `js`\
+  \ 文件夹\n\n## 命令行提示符\n\n### 我们输入单词\n```bash\ncopy *.js combine.js\n```\n并按回车\n它将创建一个名为\
+  \ `combine.js` 的新文件\n这个新文件将我们所有的 `.js` 文件包含在一个文件中。这可以让我们部署网站变得简单得多！\n\n![](img/index-89_1.jpg)\n\
+  \n# JavaScript 基础教程\n\n这是一个简单的 JavaScript 教程集合，教授了 JavaScript 编程的基础。\n当我们学习接下来几页的每个教程时，可以将它们添加到我们的\
+  \ js 库中，并创建一个 html 文件来激活它们，我们还可以向我们的 `index.html` 文件添加入口。\n在书结束时，我们将拥有一个非常令人深刻的\
+  \ js 库文件夹，有一个相应的 html 文件夹来激活我们的脚本，以及一个 `index.html` 文件让一切都变得更容易找到。\n\n![](img/index-90_1.jpg)\n\
+  \n使用 `location.href` 确认\n\n```html\n<html>\n<head>\n  <title>确认</title>\n  <script>\n\
+  \    function goHere()\n    {\n      if (confirm(\"去 google\"))\n      {\n     \
+  \   location.href = \"http://www.google.com\";\n      }\n    }\n  </script>\n</head>\n\
+  <body>\n  <input type=\"button\" value=\"你想去 google 吗\" onclick=\"goHere()\">\n\
+  </body>\n</html>\n```\n\n![](img/index-91_1.jpg)\n\n询问并命名\n```html\n<html>\n<head>\n\
+  \  <title>询问说名字</title>\n  <script>\n    function ourQuestion()\n    {\n      let\
+  \ name = prompt(\"输入名字\");\n      alert(name);\n    }\n  </script>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n![](img/index-92_1.jpg)\n\n日期和时间\n```html\n<html>\n<head>\n\
+  \  <title>日期</title>\n  <script>\n    function ourTime()\n    {\n      let time\
+  \ = new Date();\n      document.write(time);\n    }\n  </script>\n</head>\n<body>\n\
+  \  <input type=\"button\" value=\"点击获取时间\" onclick=\"ourTime()\">\n</body>\n</html>\n\
+  ```\n\n![](img/index-93_1.jpg)\n\ndo 循环询问输入名字\n```html\n<html>\n<head>\n  <title>do-while\
+  \ 输入名字</title>\n  <script>\n    function enterName()\n    {\n      let name;\n \
+  \     do {\n        name = prompt(\"输入名字\");\n      } while (!name);\n      alert(\"\
+  你好 \" + name);\n    }\n  </script>\n</head>\n<body>\n  <input type=\"button\" value=\"\
+  输入名字\" onclick=\"enterName()\">\n</body>\n</html>\n```\n\n![](img/index-94_1.jpg)\n\
+  \ndo 循环询问密码和位置\n```html\n<html>\n<head>\n  <title>do-while 位置</title>\n  <script>\n\
+  \    function pass2Go()\n    {\n      let pass;\n      do {\n        pass = prompt(\"\
+  输入密码\");\n      } while (!pass);\n      if (pass == \"789\") {\n        location.href\
+  \ = \"http://www.google.com\";\n      } else {\n        location.href = \"http://www.yahoo.com\"\
+  ;\n      }\n    }\n  </script>\n</head>\n<body>\n  <input type=\"button\" value=\"\
+  输入密码跳转站点\" onclick=\"pass2Go()\">\n</body>\n</html>\n```\n\n![](img/index-95_1.jpg)\n\
+  \ndo 循环使用与逻辑\n```html\n<html>\n<head>\n  <title>do-while 使用 &&</title>\n  <script>\n\
+  \    function nameAge()\n    {\n      let name;\n      let age;\n      do {\n  \
+  \      name = prompt(\"输入名字\");\n        age = prompt(\"输入年龄\");\n      } while\
+  \ (!name && !age);\n      alert(name + \" 今年 \" + age + \" 岁\");\n    }\n  </script>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n![](img/index-96_1.jpg)\n\n\n\n\n\n![](img/index-97_1.jpg)\n\
+  \n使用 Not Or And 的 do while\n\n```html\n<html\n<head>\n<title>do while NOT OR AND</title>\n\
+  <script>\nfunction namePass()\n{\n  let name;\n  let pass;\n  do\n  {\n    name\
+  \ = prompt(\"Enter Name\");\n    pass = prompt(\"Enter Password\");\n  } while (!name\
+  \ || !pass);\n  if (name == \"key\" && pass == \"789\")\n  {\n    alert(\"Good to\
+  \ See you Chris\");\n  }\n  else\n  {\n    alert(\"Wrong Name OR Password\");\n\
+  \  }\n}\n</script>\n</head>\n<body>\n<input type=\"button\" value=\"Enter Name and\
+  \ Pass\" onclick=\"namePass()\">\n</body>\n</html>\n```\n\n![](img/index-98_1.jpg)\n\
+  \ndo while location.href\n\n```html\n<html\n<head>\n<title>do while location sending\
+  \ </title>\n<script>\nfunction answerMe()\n{\n  let name;\n  do\n  {\n    name =\
+  \ prompt(\"Enter Name\");\n  } while (!name);\n  location.href = \"http://www.google.com\"\
+  ;\n}\n</script>\n</head>\n<body>\n<input type=\"button\" value=\"Enter Name\" onclick=\"\
+  answerMe()\">\n</body>\n</html>\n```\n\n![](img/index-100_1.jpg)\n\n下拉菜单\n\n```html\n\
+  <html\n<head>\n<title>Drop Down Menu</title>\n<script>\nfunction tomInfo()\n{\n\
+  \  alert(\"Tom teaches Physics\");\n}\nfunction johnInfo()\n{\n  alert(\"John teaches\
+  \ Math\");\n}\nfunction janeInfo()\n{\n  alert(\"Jane teaches Science\");\n}\n</script>\n\
+  </head>\n<body>\n<select name=\"People\">\n<option value=\"tom\" onclick=\"tomInfo()\"\
+  >Tom</option>\n<option value=\"john\"\n![](img/index-101_1.jpg)\nonclick=\"johnInfo()\"\
+  >John</option>\n<option value=\"jane\" onclick=\"janeInfo()\">Jane</option>\n</select>\n\
+  </body>\n</html>\n```\n\n![](img/index-102_1.jpg)\n\n或者或昵称\n\n```html\n<html\n<head>\n\
+  <title>Either OR NickName</title>\n<script>\nfunction nameFun()\n{\n  let name =\
+  \ prompt(\"Enter your Name\");\n  if (name == \"chris\" || name == \"keys\")\n \
+  \ {\n    alert(\"Hi Chris, also known as Keys\");\n  }\n  else if (name == \"jim\"\
+  \ || name == \"jimbob\")\n  {\n    alert(\"Hi Jim, also known as JimBob\");\n  }\n\
+  \  else\n  {\n    alert(\"Where is Chris. Where is Jim\");\n  }\n}\n</script>\n\
+  </head>\n<body>\n<input type=\"button\" value=\"Enter your Name\" onclick=\"nameFun()\"\
+  >\n</body>\n</html>\n```\n\n![](img/index-104_1.jpg)\n\n查找这个词，Cat\n\n```html\n<html\n\
+  <head>\n<title>find this word, Cat</title>\n<script>\nfunction findWord()\n{\n \
+  \ window.find(\"Cat\", false, false);\n}\n</script>\n</head>\n<body>\n<input type=\"\
+  button\" value=\"Find the word Cat\" onclick=\"findWord()\">\n<br>\n# Dog Bird Rooster\
+  \ Cat Dolphin\n<br>\n# Shark Lion Zebra Monkey Fish\n</body>\n</html>\n```\n\n![](img/index-105_1.jpg)\n\
+  \nif else 选择\n\n```html\n<html\n<head>\n<title>if else choose 1 or 2</title>\n<script>\n\
+  function equals()\n{\n  let number = prompt(\"Enter 1 or 2\");\n  if (number ==\
+  \ \"1\") {\n    alert(\"You typed one\");\n  }\n  else if (number == \"2\") {\n\
+  \    alert(\"You typed two\");\n  }\n  else\n  {\n    alert(\"You did not enter\
+  \ 1 or 2\");\n  }\n}\n</script>\n</head>\n<body>\n<input type=\"button\" value=\"\
+  Enter 1 or 2\" onmouseover=\"equals( )\">\n</body>\n</html>\n```\n\n![](img/index-106_1.jpg)\n\
+  \nif else 选择\n\n```html\n<html\n<head>\n<title>if else Greater Than</title>\n<script>\n\
+  function greater()\n{\n  let number = prompt(\"Enter any number\");\n  if (number\
+  \ >= 10) {\n    alert(\"You Entered 10 or Higher\");\n  }\n  else\n  {\n    alert(\"\
+  You entered Less than 10\");\n  }\n}\n</script>\n</head>\n<body>\n<input type=\"\
+  button\" value=\"Enter any number\" oncontextmenu=\"greater()\">\n</body>\n</html>\n\
+  <!-- 右键点击按钮激活 -->\n```\n\n![](img/index-107_1.jpg)\n\nnavigator 获取信息\n\n```html\n\
+  <html\n<head>\n<title>Information Collected</title>\n<script>\nfunction info()\n\
+  {\n  let name = navigator.appName;\n  let version = navigator.appVersion + \"<br>\"\
+  ;\n  let aka = navigator.appCodeName + \"<br>\";\n  let onLine = navigator.onLine\
+  \ + \"<br>\";\n  let header = navigator.userAgent;\n  document.write(name + \" \"\
+  \ + version + \"**\" + aka + \" \" + onLine + \" \" + header);\n}\n</script>\n</head>\n\
+  <body>\n<input type=\"button\" value=\"Click for Info\" onclick=\"info( )\">\n</body>\n\
+  </html>\n```\n\n![](img/index-108_1.jpg)\n\n字符串的长度\n\n```html\n<html\n<head>\n<title>Length\
+  \ of String</title>\n<script>\nfunction ourLength()\n{\n  let ourWords = \"Hi Everyone\"\
+  ;\n  let number = ourWords.length;\n  alert(number);\n}\n</script>\n</head>\n<body>\n\
+  <input type=\"button\" value=\"Length of our string\" onclick=\"ourLength()\">\n\
+  </body>\n</html>\n```\n\n![](img/index-109_1.jpg)\n\nwindow, 新窗口\n\n```html\n<html\n\
+  <head>\n<title>Custom size window</title>\n<script>\nfunction makeWindow()\n{\n\
+  \  let newWindow = window.open(\"http://www.google.com\", \" \", \"height = 500,\
+  \ width = 800\");\n}\n</script>\n</head>\n<body>\n<input type=\"button\" value=\"\
+  Google in new window\" onclick=\"makeWindow()\">\n</body>\n</html>\n```\n\n![](img/index-110_1.jpg)\n\
+  \nwindow, 新窗口, 与当前相同\n\n```html\n<html\n<head>\n<title>Make Size of This window</title>\n\
+  <script>\nfunction makeSizeOfThis()\n{\n  let newWindow = window.open(\"http://www.google.com\"\
+  ,\"\",\"height = screen.height,width = screen.width\");\n}\n</script>\n</head>\n\
+  <body>\n<input type=\"button\" value=\"Google in new window\" onclick=\"makeSizeOfThis()\"\
+  >\n</body>\n</html>\n```\n\n![](img/index-111.jpg)\n\n用户名和密码\n\n```html\n<html\n\
+  <head>\n<title>if else</title>\n<script>\nfunction password()\n{\n  let name = prompt(\"\
+  Enter name\");\n  let password = prompt(\"Enter password\");\n  if (name == \"chris\"\
+  \ && password == \"177\")\n  {\n    alert(\"You may enter\");\n  }\n  else\n  {\n\
+  \    alert(\"Try again\");\n  }\n}\n</script>\n</head>\n<body>\n<input type=\"button\"\
+  \ value=\"Name and Password\" onclick=\"password()\">\n</body>\n</html>\n```\n\n\
+  ![](img/index-112_1.jpg)\n\n密码不等于\n\n```html\n<html\n<head>\n<title>If else password\
+  \ is 789</title>\n<script>\nfunction password()\n{\n  let number = prompt(\"Enter\
+  \ Password\");\n  if (number != \"789\") {\n    alert(\"Wrong answer\");\n  }\n\
+  \  else\n  {\n    alert(\"You are right. You may enter\");\n  }\n}\n</script>\n\
+  </head>\n<body>\n<input type=\"button\" value=\"Enter Password\" onmouseout=\"password(\
+  \ )\">\n</body>\n</html>\n```\n\n![](img/index-113.jpg)\n\n数学测试题\n\n```html\n<html\n\
+  <head>\n<title>quiz question</title>\n<script>\nfunction myFunction()\n{\n  let\
+  \ number = prompt(\"What is 5 times 4\");\n  if (number == \"20\") {\n    document.write(\"\
+  That is right.\");\n  }\n  else\n  {\n    document.write(\"Wrong.\");\n  }\n}\n\
+  </script>\n</head>\n<body>\n<input type=\"button\" value=\"What is 5 times 4\" ondblclick=\"\
+  myFunction()\">\n</body>\n</html>\n<!-- 双击按钮激活 -->\n```\n\n![](img/index-114_1.jpg)\n\
+  \n复选框\n\n```html\n<html\n<head>\n<title>Checkbox</title>\n<script>\nfunction tomInfo()\n\
+  {\n  let check = document.getElementById(\"tomCheck\").checked;\n  if (check ==\
+  \ true) {\n    alert(\"Tom teaches Physics\");\n  }\n}\nfunction johnInfo()\n{\n\
+  \  let check = document.getElementById(\"johnCheck\").checked;\n  if (check == true)\
+  \ {\n    alert(\"John teaches Math \");\n  }\n}\nfunction janeInfo()\n{\n![](img/index-115_1.jpg)\n\
+  \  let check = document.getElementById(\"janeCheck\").checked;\n  if (check == true)\
+  \ {\n    alert(\"Jane teaches Science\");\n  }\n}\n</script>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n\n\n\n\n```html\n</script></head>\n<body>\n<input type\
+  \ = \"checkbox\" value=\"Toms information\" onclick=\"tomInfo()\" id=\"tomCheck\"\
+  > 点击查看 Tom 教授了什么\n<br><input type = \"checkbox\" value=\"Johns information\" onclick=\"\
+  johnInfo()\" id=\"johnCheck\"> 点击查看 John 教授了什么\n<br><input type = \"checkbox\" value=\"\
+  Janes information\" onclick=\"janeInfo()\" id=\"janeCheck\"> 点击查看 Jane 教授了什么\n</body>\n\
+  </html>\n```\n![](img/index-116_1.jpg)\n\n### 数组排序 (sort)\n\n```html\n<html>\n<head><title>\
+  \ 排序我们的数组</title>\n<script>\nlet people = [\n  \"John\",\n  \"Dave\",\n  \"Lois\"\
+  ,\n  \"Debra\",\n  \"Alfred\",\n  \"Donna\"\n];\n</script>\n</head>\n<body>\n<script>\n\
+  document.write(people.sort());\n</script>\n</body>\n</html>\n```\n![](img/index-117_1.jpg)\n\
+  \n### if 多条件判断\n\n```html\n<html\n<head><title> 你的年龄是多少</title>\n<script>\nfunction\
+  \ howold()\n{\n  let age = prompt(\"输入你的年龄\");\n  if (age < 18) {\n    alert(\"\
+  不允许投票、拳击或担任总统\");\n  }\n  else if (age < 21) {\n    alert(\"不允许拳击或担任总统\");\n  }\n\
+  \  else if (age < 35) {\n    alert(\"不允许担任总统\");\n  }\n  else {\n    alert(\"你现在可以投票、拳击并担任总统了\"\
+  );\n  }\n}\n</script>\n</head>\n<body>\n<input type = \"button\" value=\"输入任意数字\"\
+  \ onclick=\"howold()\">\n</body>\n</html>\n```\n![](img/index-119_1.jpg)\n\n###\
+  \ 文本框值 (textbox value)\n\n```html\n<html>\n<head><title>文本框</title>\n<script>\n\
+  function ourText()\n{\n  let theText = document.getElementById(\"ourButton\").value;\n\
+  \  document.write(theText);\n}\n</script>\n</head>\n<body>\n<input type = \"text\"\
+  \ id=\"ourButton\"></input>\n<input type = \"button\" value=\"点击输入\" onclick=\"\
+  ourText()\">\n</body>\n</html>\n```\n![](img/index-120_1.jpg)\n\n### 输入姓名，转为小写 (toLowerCase)\n\
+  \n```html\n<html>\n<head><title> 将文本转换为小写</title>\n<script>\nfunction ourLower()\n\
+  {\n  let name = prompt(\"输入你的名字\");\n  let lower = name.toLowerCase();\n  if (lower\
+  \ == \"chris\") {\n    alert(\"你好，Chris\");\n  }\n  else {\n    alert(\"Chris 在哪里？\"\
+  );\n  }\n}\n</script>\n</head>\n<body>\n<input type = \"button\" value=\"输入你的名字\"\
+  \ onclick=\"ourLower()\">\n</body>\n</html>\n```\n![](img/index-121_1.jpg)\n\n###\
+  \ 字符串拼接 (combining strings)\n\n```html\n<html>\n<head><title> 音乐问题</title>\n<script>\n\
+  function music()\n{\n  let band = prompt(\"喜欢的乐队？\");\n  let type = prompt(\"喜欢的音乐类型？\"\
+  );\n  document.write(band + \" 是很棒的 \" + type + \"音乐\");\n}\n</script>\n</head>\n\
+  <body>\n<script>\nmusic();\n</script>\n</body>\n</html>\n```\n![](img/index-122_1.jpg)\n\
+  \n### 字符串拼接提示 (combining strings prompt)\n\n```html\n<html>\n<head><title> 询问全名</title>\n\
+  <script>\nfunction askFullName()\n{\n  let first = prompt(\"输入名\");\n  let last\
+  \ = prompt(\"输入姓\");\n  alert(first + \" \" + last);\n}\n</script>\n</head>\n<body>\n\
+  <input type = \"button\" value=\"说我的名字\" onclick=\"askFullName()\">\n</body>\n</html>\n\
+  ```\n![](img/index-123_1.jpg)\n\n### while 倒计时 (count down)\n\n```html\n<html>\n\
+  <head><title> while 计数器 </title>\n<script>\nfunction countDown()\n{\n  let count\
+  \ = 100;\n  while (count != 0) {\n    document.write(count + \"<br>\");\n    count--;\n\
+  \  }\n}\n</script>\n</head>\n<body>\n<input type = \"button\" value=\"从 100 开始倒计时\"\
+  \ onclick=\"countDown()\">\n</body>\n</html>\n```\n![](img/index-124_1.jpg)\n\n\
+  ### while 递增 (count up)\n\n```html\n<html>\n<head><title> while 计数器 </title>\n<script>\n\
+  function countUp()\n{\n  let count = 1;\n  while (count <= 100) {\n    document.write(count\
+  \ + \"<br>\");\n    count++;\n  }\n}\n</script>\n</head>\n<body>\n<input type =\
+  \ \"button\" value=\"从 1 数到 100\" onclick=\"countUp()\">\n</body>\n</html>\n```\n\
+  ![](img/index-125_1.jpg)\n\n### 快速数学题 (quick math question)\n\n```html\n<html>\n\
+  <head><title> while 计数器 </title>\n<script>\nfunction question1()\n{\n  let answer\
+  \ = prompt(\"5 x 5 等于多少\");\n  if (answer == 25) {\n    alert(\"正确\");\n  }\n  else\
+  \ {\n    while (answer != 25) {\n      alert(\"答案错误\");\n      answer = prompt(\"\
+  5 x 5 等于多少\");\n    }\n  }\n}\n</script>\n</head>\n<body>\n<input type = \"button\"\
+  \ value=\"5 x 5 等于多少\" onclick=\"question1()\">\n</body>\n</html>\n```\n![](img/index-126_1.jpg)\n\
+  \n### 哪些队赢了？ (which teams won?)\n\n```html\n<html>\n<head><title> if else AND </title>\n\
+  <script>\nfunction teams()\n{\n  let team1 = prompt(\"今天 1 队赢了吗？\");\n  let team2\
+  \ = prompt(\"今天 2 队赢了吗？\");\n  if (team1 == \"yes\" && team2 == \"yes\") {\n   \
+  \ alert(\"1 队和 2 队今天都赢了\");\n  }\n  else if (team1 == \"no\" && team2 == \"no\"\
+  ) {\n    // 逻辑根据结构隐含\n  }\n  else if (team1 == \"yes\" && team2 == \"no\") {\n \
+  \   // 逻辑根据结构隐含\n  }\n  else if (team1 == \"no\" && team2 == \"yes\") {\n    //\
+  \ 逻辑根据结构隐含\n  }\n  // 注意：原文中 else ifs 的逻辑是碎片化的， \n  // 已按照指令保留了提示中提供的核心结构。\n}\n\
+  </script>\n</head>\n<body>\n<input type = \"button\" value=\"teams\" onclick=\"\
+  teams()\">\n</body>\n</html>\n```\n（注：`teams` 函数的源代码高度碎片化/损坏；我已根据指令保留了核心逻辑和变量。）\n\
+  \n### 以 JSON 格式显示全部 (show all as JSON)\n\n```html\n<html>\n<body>\n<script>\nlet\
+  \ myRecord = [\n  { name: \"John\", height: \"50 Inches\", weight: 140 },\n  { name:\
+  \ \"Amy\", height: \"6 Inches\", weight: 160 }\n];\nfunction showIt() {\n  let theDiv\
+  \ = document.getElementById(\"Display\");\n  theDiv.innerHTML = JSON.stringify(myRecord);\n\
+  }\n</script>\n</body>\n</html>\n```\n\n### 循环过滤显示记录 (show Records for loop filter)\n\
+  \n```html\n<html>\n<body>\n<script>\nlet myRecord = [\n  { name: \"Debra\", year:\
+  \ 1977 },\n  { name: \"Alison\", year: 1978 }\n];\nfunction showRecord() {\n  let\
+  \ theDiv = document.getElementById(\"Display\");\n  let output = \"\";\n  for (let\
+  \ i = 0; i < myRecord.length; i++) {\n    if (myRecord[i].year == 1977) {\n    \
+  \  output += myRecord[i].name + \"<br>\";\n    }\n  }\n  theDiv.innerHTML = output;\n\
+  }\n</script>\n</body>\n</html>\n```\n\n### 循环与过滤显示记录 (show Records for loop and\
+  \ filter)\n\n```html\n<html>\n<body>\n<script>\nlet myRecord = [\n  { name: \"Brandi\"\
+  , year: 1980 },\n  { name: \"Melissa\", year: 1973 }\n];\nfunction showRecord(criteria)\
+  \ {\n  let theDiv = document.getElementById(\"Display\");\n  let output = \"\";\n\
+  \  for (let i = 0; i < myRecord.length; i++) {\n    if (myRecord[i].year < criteria)\
+  \ {\n      output += myRecord[i].name + \"<br>\";\n    }\n  }\n  theDiv.innerHTML\
+  \ = output;\n}\n</script>\n</body>\n</html>\n```\n\n### 显示从...到...的记录 (show Records\
+  \ from and too)\n\n```html\n<html>\n<body>\n<script>\nlet myRecord = [\n  { name:\
+  \ \"Jessica\", year: 1980 },\n  { name: \"Kelly\", year: 1974 }\n];\nfunction showRecord(criteria1,\
+  \ criteria2) {\n  let theDiv = document.getElementById(\"Display\");\n  let output\
+  \ = \"\";\n  for (let i = 0; i < myRecord.length; i++) {\n    if (myRecord[i].year\
+  \ <= criteria1 && myRecord[i].year >= criteria2) {\n      output += myRecord[i].name\
+  \ + \"<br>\";\n    }\n  }\n  theDiv.innerHTML = output;\n}\n</script>\n</body>\n\
+  </html>\n```\n\n\n\n\n\n![](img/index-135_1.jpg)\n\n```javascript\n}\n}\ntheDiv.innerHTML\
+  \ = output;\n}\n</script>\n<button id=\"b1\" onclick=\"showRecord(1990, 1980)\"\
+  >显示</button>\n<div id=\"theDisplay\"></div>\n</body></html\n<!-- 显示记录用于，过滤， <=,\
+  \ >=, && -->\n```\n\n![](img/index-136_1.jpg)\n显示记录\n\n```html\n<html><body><script>\n\
+  let myRecord = [\n  {\n    person: \"Terry\",\n    eyeColor: \"Brown\",\n  },\n\
+  \  {\n    person: \"Heidi\",\n    eyeColor: \"Blue\",\n  }\n];\nfunction showIt()\
+  \ {\n  let theDiv = document.getElementById(\"display\"); \n  let output = '';\n\
+  \  for(let i = 0; i < myRecord.length; i++) {\n    output += myRecord[ i ].person\
+  \ + \" has\";\n```\n\n![](img/index-137_1.jpg)\n```javascript\n    output += myRecord[\
+  \ i ].eyeColor + \"color eyes\";\n    output += '<br>';\n  }\n  theDiv.innerHTML\
+  \ = output;\n}\n</script>\n<button id=\"b1\" onclick=\"showIt()\">插入</button>\n\
+  <div id=\"display\"></div>\n</body>\n</html\n```\n\n![](img/index-138_1.jpg)\n小时和分钟\n\
+  \n```html\n<html><head><script>\nfunction dateTime() { //获取时间\n  let date = new\
+  \ Date();\n  return date;\n}\nfunction Hours() { //获取小时\n  let theHours = dateTime().getHours();\n\
+  \  return theHours;\n}\nfunction Minutes() { //获取分钟\n  let theMinutes = dateTime().getMinutes();\n\
+  \  return theMinutes;\n}\nfunction displayIt(where, whichOne) {\n  //显示答案\n  document.getElementById(where).innerHTML\
+  \ = whichOne;\n}\n```\n\n![](img/index-139_1.jpg)\n```html\n</script></head><body>\n\
+  <button onclick=\"displayIt('div1', Hours());\"> 小时 </button>\n<button onclick=\"\
+  displayIt('div2', Minutes());\"> 分钟 </button>\n<div id=\"div1\"></div><div id=\"\
+  div2\"></div>\n</body>\n</html\n```\n\n![](img/index-140_1.jpg)\n日期 月份消息\n\n```html\n\
+  <html><head><script>\nfunction months() {\n  let date = new Date();\n  let month\
+  \ = date.getMonth();\n  // 0 到 11，0 是 1 月，11 是 12 月\n  if(month == 0) { month =\
+  \ \"January\"; }\n  else if(month== 1) { month = \"February\"; }\n  else if(month==\
+  \ 2) { month= \"March\"; }\n  else if(month== 3) { month= \"April\"; }\n  else if(month==\
+  \ 4) { month= \"May\"; }\n  else if(month== 5) { month= \"June\"; }\n  else if(month==\
+  \ 6) { month= \"July\"; }\n  else if(month== 7) { month= \"August\"; }\n  else if(month==\
+  \ 8) { month= \"September\"; }\n  else if(month== 9) { month= \"October\"; }\n \
+  \ else if(month== 10) { month= \"November\"; }\n  else if(month== 11) { month= \"\
+  December\"; }\n  return month;\n}\n```\n\n![](img/index-141_1.jpg)\n```javascript\n\
+  function messageMonth() {\n  let text;\n  if(months() == \"March\") { text = \"\
+  三月。春天。\"; }\n  else if(months() == \"April\") { text = \"四月。天气变暖了\"; }\n  else if(months()\
+  \ == \"May\") { text = \"五月。天气更了\"; }\n  else if(months() == \"June\") { text =\
+  \ \"六月。夏季\"; }\n  else if(months() == \"July\") { text = \"七月。炎热的夏天\"; }\n  else\
+  \ if(months() == \"August\") { text = \"八月。夏天\"; }\n  else if(months() == \"September\"\
+  ) { text = \"这里现在是九月\"; }\n  else if(months() == \"October\") { text = \"十月。天气变凉了\"\
+  ; }\n  else if(months() == \"November\") { text = \"十一月。\"; }\n  else if(months()\
+  \ == \"December\") { text = \"十二月。季节\"; }\n```\n\n![](img/index-142_1.jpg)\n```javascript\n\
+  \  else if(months() == \"January\") { text = \"一月。下雪了\"; }\n  else if(months() ==\
+  \ \"February\") { text = \"二月。冷冷冷\"; }\n  document.getElementById(\"monthDisplay\"\
+  ).innerHTML = text;\n}\n</script></head>\n<body onload=\"messageMonth();\">\n<div\
+  \ id=\"monthDisplay\"></div>\n</body></html\n```\n\n![](img/index-143_1.jpg)\n小时\
+  \ 消息\n\n```html\n<html><head><script>\nfunction theHours() {\n  let date = new Date();\n\
+  \  let hours = date.getHours(); //0 到 23\n  return hours;\n}\nfunction messageHours()\
+  \ {\n  let hoursMessage;\n  console.log(theHours());\n  if(theHours() >= 0 && theHours()\
+  \ < 6) {\n    hoursMessage = \"是早晨\";\n  }\n  else if(theHours() >= 6 && theHours()\
+  \ < 12) {\n    hoursMessage = \"是上午\";\n  }\n  else if(theHours() >= 12 && theHours()\
+  \ < 18) {\n    hoursMessage = \"是下午\";\n  }\n  else if(theHours() >= 18 && theHours()\
+  \ <= 23) {\n```\n\n![](img/index-144_1.jpg)\n```javascript\n    hoursMessage = \"\
+  是夜间\";\n  }\n  document.getElementById(\"hoursDisplay\").innerHTML = hoursMessage;\n\
+  }\n</script></head>\n<body onload=\"messageHours();\">\n<div id=\"hoursDisplay\"\
+  ></div>\n</body></html\n```\n\n![](img/index-145_1.jpg)\nclass simple\n\n```html\n\
+  <html><body><script>\n# class Person {\n  constructor(firstName, lastName) {\n \
+  \   this.firstName = firstName;\n    this.lastName = lastName;\n  }\n  greet() {\n\
+  \    document.write(\"Name is \" + this.firstName + \" \" + this.lastName);\n  }\n\
+  }\nlet david = new Person(\"David\",\"Thompson\"); \ndavid.greet();\n</script>\n\
+  </body></html\n```\n\n![](img/index-146_1.jpg)\nclass\n\n```html\n<html><head><script>\n\
+  # class Person {\n  constructor(firstName, lastName) {\n    this.firstName = firstName;\n\
+  \    this.lastName = lastName;\n  }\n  greet() {\n    let theGreeting = \"Howdy\
+  \ \" + this.firstName + \" \" + this.lastName; \n    return theGreeting;\n  }\n\
+  \  bye() {\n    let theSalutation = \"Bye \" + this.firstName + \" \" + this.lastName;\
+  \ \n    return theSalutation;\n  }\n}\nfunction displayIt(where, whichOne) {\n```\n\
+  \n![](img/index-147_1.jpg)\n```javascript\n  document.getElementById(where).innerHTML\
+  \ = whichOne;\n}\nlet david = new Person(\"David\",\"Thompson\");\n</script><body>\n\
+  <button onclick=\"displayIt('div1', david.greet())\">嗨</button>\n<button onclick=\"\
+  displayIt('div2', david.bye())\">再见</button>\n<div id=\"div1\"></div><div id=\"\
+  div2\"></div>\n</body>\n```\n\n![](img/index-148_1.jpg)\nclass inheritance, extends\n\
+  \n```html\n<html><head><script>\n# class Animal {\n  constructor(kind, name, size,\
+  \ weight, speed) {\n    this.kind = kind;\n    this.name = name;\n    this.size\
+  \ = size;\n    this.weight = weight;\n    this.speed = speed + \" mph\";\n  }\n\
+  \  eat() {\n    return 'eating';\n  }\n  saySpeed() {\n    return this.speed;\n\
+  \  }\n}\n```\n\n![](img/index-149_1.jpg)\n```javascript\n# class Cat extends Animal\
+  \ {\n  constructor(kind, name, size, weight, speed, tailSize) {\n    super(kind,\
+  \ name, size, weight, speed);\n    this.tailSize = tailSize;\n  }\n  meow() {\n\
+  \    return 'meowing';\n  }\n  sayKind() {\n    return this.kind;\n  }\n  tailWag()\
+  \ {\n    return this.tailSize + ' wagging';\n  }\n}\nfunction show(where, whichOne)\
+  \ {\n  document.getElementById(where).innerHTML = whichOne;\n}\n```\n\n![](img/index-150_1.jpg)\n\
+  ```javascript\nlet felix = new Cat('tiger', 'Felix', 'Medium', '10.0', '80', 'long');\n\
+  //让 felix 使用自定义函数\nfelix.meow();\nfelix.eat();\nfelix.sayKind();\nfelix.tailWag();\n\
+  felix.saySpeed();\n</script>\n</head>\n<body>\n<button onclick=\"show('display',\
+  \ felix.meow())\">喵喵</button>\n<button onclick=\"show('display', felix.eat())\"\
+  >吃 </button>\n```\n\n![](img/index-151_1.jpg)\n```html\n<button onclick=\"show('display',\
+  \ felix.sayKind())\">种类</button>\n<button onclick=\"show('display', felix.tailWag())\"\
+  >摇尾</button>\n<button onclick=\"show('display', felix.saySpeed())\">速度</button>\n\
+  <div id=\"display\"></div>\n</body></html\n```\n\n\n\n\n\n```javascript\nlet theSalutation\
+  \ = \"Bye \" + this.firstName + \" \" + this.lastName;\nreturn theSalutation;\n\
+  }\n```\n\n![](img/index-153_1.jpg)\n\n# class Alien extends Person\n\n```javascript\n\
+  class Alien extends Person {\n  constructor(firstName, lastName, alienName) {\n\
+  \    super(firstName, lastName, alienName);\n    this.alienName = alienName;\n \
+  \ }\n\n  alienGreeting() {\n    let alienHi = \"My name is not \" + this.firstName\
+  \ + \" \" + this.lastName + \". \" + \" My Real name is \" + this.alienName + \"\
+  . \" + \" I am an alien from another world.\";\n    return alienHi;\n  }\n}\n\n\
+  function displayIt(where, whichOne) {\n  document.getElementById(where).innerHTML\
+  \ = whichOne;\n}\n```\n\n![](img/index-154_1.jpg)\n\n```html\nlet superman = new\
+  \ Alien(\"Clark\",\"Kent\", \"Kal-El\");\n</script>\n\n<body>\n  <button onclick=\"\
+  displayIt('div1', superman.greet())\">问候</button>\n  <button onclick=\"displayIt('div2',\
+  \ superman.bye())\">告别</button>\n  <button onclick=\"displayIt('div3', superman.alienGreeting())\"\
+  >外星问候</button>\n  <div id=\"div1\"></div>\n  <div id=\"div2\"></div>\n  <div id=\"\
+  div3\"></div>\n</body>\n</html>\n```\n\n![](img/index-155_1.jpg)\n\n# 华氏度转为氏度\n\n\
+  ```html\n<html>\n<head><script>\nfunction f2c(f) {\n  let centigrade;\n  centigrade\
+  \ = 5/9 * (f - 32);\n  return centigrade;\n}\n\nfunction convertButton() {\n  let\
+  \ inputCentigrade = document.getElementById(\"inputDegrees\").value;\n  inputCentigrade\
+  \ = f2c(inputCentigrade);\n  document.getElementById(\"answer\").textContent = inputCentigrade;\n\
+  }\n</script></head>\n<body>\n```\n\n![](img/index-156_1.jpg)\n\n```html\n<input\
+  \ type=\"text\" id=\"inputDegrees\" value=\"0.0\">\n<input type=\"button\" value=\"\
+  C to F\" onclick =\"convertButton();\">\n<br>\n<textarea id=\"answer\"></textarea>\n\
+  </body>\n</html>\n```\n\n![](img/index-157_1.jpg)\n\n# 简单的类和 this\n\n```html\n<html>\n\
+  <head><title>写入, 类, this</title>\n<script>\nclass ourText {\n  ourMessage() {\n\
+  \    return \"Hi Everyone\";\n  }\n\n  showText() {\n    document.write(this.ourMessage());\n\
+  \  }\n}\n\nlet somethingToWrite = new ourText();\n</script>\n</head>\n<body onload=\"\
+  somethingToWrite.showText();\">\n</body>\n</html>\n```\n\n![](img/index-158_1.jpg)\n\
+  \n# 键盘控制\n\n```html\n<html>\n<head>\n<title>键盘控制</title>\n<script>\nfunction whenLoaded()\
+  \ {\n  window.addEventListener(\"keydown\", whichKeyPressed, false);\n}\n\nfunction\
+  \ whichKeyPressed(event) {\n  if(event.keyCode === 112) {\n    alert(\"按了 F1 键\"\
+  );\n  } else if(event.keyCode === 27) {\n    alert(\"按了 Escape 键\");\n  } else if(event.keyCode\
+  \ === 32) {\n    alert(\"按了空格键\");\n```\n![](img/index-159_1.jpg)\n```javascript\n\
+  \  } else if(event.keyCode === 65) {\n    alert(\"按了字母 a\");\n  }\n}\n</script>\n\
+  </head>\n<body onload=\"whenLoaded()\">按下 F1、Escape、空格键或字母 A</body>\n</html>\n```\n\
+  \n![](img/index-160_1.jpg)\n\n# 键盘，移动文本\n\n```html\n<html>\n<head><body>\n<script>\n\
+  let textToMove;\nfunction whenLoads() {\n  textToMove = document.getElementById(\"\
+  theDiv\");\n  textToMove.style.position='relative';\n  textToMove.style.left='0px';\n\
+  \  textToMove.style.top='50px';\n}\n\nfunction moveLeft() {\n  textToMove.style.left\
+  \ = parseInt(textToMove.style.left)-8 + 'px';\n}\n\nfunction moveRight( ) {\n  textToMove.style.left\
+  \ = parseInt(textToMove.style.left)+8 + 'px';\n}\n\nfunction moveUp() {\n```\n![](img/index-161_1.jpg)\n\
+  ```javascript\n  textToMove.style.top = parseInt(textToMove.style.top)-8 + 'px';\n\
+  }\n\nfunction moveDown() {\n  textToMove.style.top = parseInt(textToMove.style.top)+8\
+  \ + 'px';\n}\n</script>\n</head>\n<body onload=\"whenLoads( );\">\n<center><br>\n\
+  \  <input type=\"button\" id=\"leftButton\" value=\"左\" onmousedown=\"moveLeft(\
+  \ );\"></button><br>\n  <input type=\"button\" id=\"rightButton\" value=\"右\" onmousedown=\"\
+  moveRight( );\"></button><br>\n```\n![](img/index-162_1.jpg)\n```html\n  <input\
+  \ type=\"button\" id=\"upButton\" value=\"上\" onmousedown=\"moveUp( );\"></button>\n\
+  \  <br>\n  <input type=\"button\" id=\"downButton\" value=\"下\" onmousedown=\"moveDown(\
+  \ );\"></button>\n  <br>\n  <div id=\"theDiv\">这段文字可以移动</div>\n</center>\n</body>\n\
+  </html>\n```\n\n![](img/-index-163_1.jpg)\n\n# 保存为 timeGetTime.js\n\n```javascript\n\
+  function theHours() {\n  let date = new Date();\n  let hours = date.getHours();\n\
+  \  //0 to 23\n  if(hours == 0) {\n    hours = 12; // am\n  } else if(hours == 1)\
+  \ {\n    hours = 1; // am\n  } else if(hours == 2) {\n    hours = 2; // am\n  }\
+  \ else if(hours == 3) {\n    hours = 3; // am\n```\n![](img/index-164_1.jpg)\n```javascript\n\
+  \  } else if(hours == 4) {\n    hours = 4; // am\n  } else if(hours == 5) {\n  \
+  \  hours = 5; // am\n  } else if(hours == 6) {\n    hours = 6; // am\n  } else if(hours\
+  \ == 7) {\n    hours = 7; // am\n  } else if(hours == 8) {\n    hours = 8; // am\n\
+  \  } else if(hours == 9) {\n    hours = 9; // am\n  } else if(hours == 10) {\n \
+  \   hours = 10; // am\n  } else if(hours == 11) {\n    hours = 11; // am\n  } else\
+  \ if(hours == 12) {\n    hours = 12; // pm;\n  } else if(hours == 13) {\n    hours\
+  \ = 1; // pm;\n  } else if(hours == 14) {\n    hours = 2; // pm;\n  } else if(hours\
+  \ == 15) {\n    hours = 3; // pm;\n  } else if(hours == 16) {\n    hours = 4; //\
+  \ pm;\n  } else if(hours == 17) {\n    hours = 5; // pm;\n  } else if(hours == 18)\
+  \ {\n    hours = 6; // pm;\n  } else if(hours == 19) {\n    hours = 7; // pm;\n\
+  \  } else if(hours == 20) {\n    hours = 8; // pm;\n  } else if(hours == 21) {\n\
+  \    hours = 9; // pm;\n  } else if(hours == 22) {\n    hours = 10; // pm;\n  }\
+  \ else if(hours == 23) {\n    hours = 11; // pm;\n  }\n  return hours;\n}\n\nfunction\
+  \ theMinutes() {\n  let date = new Date();\n  let minutes = date.getMinutes();\n\
+  \  if(minutes == 0) {\n    return \"00\";\n  } else if(minutes == 1) {\n    return\
+  \ \"01\";\n  } else if(minutes == 2) {\n    return \"02\";\n  } else if(minutes\
+  \ == 3) {\n    return \"03\";\n  } else if(minutes == 4) {\n    return \"04\";\n\
+  \  } else if(minutes == 5) {\n    return \"05\";\n  } else if(minutes == 6) {\n\
+  \    return \"06\";\n  } else if(minutes == 7) {\n    return \"07\";\n  } else if(minutes\
+  \ == 8) {\n    return \"08\";\n  } else if(minutes == 9) {\n    return \"09\";\n\
+  \  } else {\n    return minutes;\n  }\n}\n```\n![](img/index-165_1.jpg)\n```javascript\n\
+  function amOrpm() {\n  let date = new Date();\n  let hours = date.getHours();\n\
+  \  if (hours < 12) {\n    return \"am\";\n  } else {\n    return \"pm\";\n  }\n\
+  }\n```\n\n\n\n\n\n```javascript\n{\n  halfOfDay = \"pm\";\n} else if(hours == 13)\
+  \ {\n  halfOfDay = \"pm\";\n} else if(hours == 14) {\n  halfOfDay = \"pm\";\n} else\
+  \ if(hours == 15) {\n  halfOfDay = \"pm\";\n} else if(hours == 16) {\n  halfOfDay\
+  \ = \"pm\";\n} else if(hours == 17) {\n![](img/index-172_1.jpg)\n  halfOfDay = \"\
+  pm\";\n} else if(hours == 18) {\n  halfOfDay = \"pm\";\n} else if(hours == 19) {\n\
+  \  halfOfDay = \"pm\";\n} else if(hours ==20) {\n  halfOfDay = \"pm\";\n} else if(hours\
+  \ == 21) {\n  halfOfDay = \"pm\";\n} else if (hours == 22) {\n  halfOfDay = \"pm\"\
+  ;\n} else if (hours == 23) {\n  return halfOfDay;\n}\n```\n![](img/index-173_1.jpg)\n\
+  \n```javascript\nfunction theSeconds() {\n  let date = new Date();\n  let seconds\
+  \ = date.getSeconds();\n  if(seconds==0) {\n    return seconds = \"00\";\n  } else\
+  \ if(seconds == 1) {\n    return seconds = \"01\";\n  } else if(seconds == 2) {\n\
+  \    return seconds = \"02\";\n  } else if(seconds == 3) {\n    return seconds =\
+  \ \"03\";\n  } else if(seconds == 4) {\n![](img/index-174_1.jpg)\n  } else if(seconds\
+  \ == 5) {\n    return seconds = \"05\";\n  } else if(seconds == 6) {\n    return\
+  \ seconds = \"06\";\n  } else if(seconds == 7) {\n    return seconds = \"07\";\n\
+  \  } else if(seconds == 8) {\n    return seconds = \"08\";\n  } else if(seconds\
+  \ == 9) {\n    return seconds = \"09\";\n  }\n  return seconds;\n}\n```\n\n```javascript\n\
+  function timeKeepGettingTime() {\n![](img/index-175_1.jpg)\n  timeFunctionUpdates();\n\
+  \  t = setInterval('timeFunctionUpdates()',500);\n}\n```\n\n```javascript\nfunction\
+  \ timeFunctionUpdates() {\n  document.getElementById(\"showTime\").innerHTML = theHours()\
+  \ + \":\" + theMinutes() + \":\" + theSeconds() + \" \" + amOrpm();\n}\n```\n\n\
+  // 我们将此文件保存为 `js` 文件夹下的 `timeGetTime.js`。\n// 接下来的页面将此脚本。\n\n![](img/index-176_1.jpg)\n\
+  持续获取时间使用了 `timeGetTime.js`\n\n```html\n<html\n<body style=\"background-color:rgb(140,\
+  \ 192, 192);\">\n  <script src=\"../js/timeGetTime.js\"></script>\n  <button onclick=\"\
+  timeKeepGettingTime();\">时间</button>\n  <div id=\"showTime\" style=\"font-size:100pt\"\
+  >时间</div>\n</body>\n</html>\n```\n<!-- 保存为 `ourProject` 文件夹下 `html` 文件夹中的 `timeGetTime.html`\
+  \ -->\n\n![](img/index-177_1.jpg)\n\n```javascript\nfunction theHours() {\n  let\
+  \ date = new Date();\n  let hours = date.getHours();\n  return hours;\n}\n\nfunction\
+  \ theMinutes() {\n  let date = new Date();\n  let minutes = date.getMinutes();\n\
+  \  return minutes;\n}\n\nfunction amOrpm() {\n  let date = new Date();\n  let hours\
+  \ = date.getHours();\n  if (hours < 12) {\n    return \"AM\";\n  } else {\n    return\
+  \ \"pm\";\n  }\n}\n\nfunction messageHours() {\n  let hours = theHours();\n  if\
+  \ (hours >= 0 && hours < 6) {\n    return \"清晨\";\n  } else if (hours >= 6 && hours\
+  \ < 12) {\n    return \"上午\";\n  } else if (hours >= 12 && hours < 18) {\n    return\
+  \ \"下午\";\n  } else if (hours >= 18 && hours <= 23) {\n    return \"晚上\";\n  }\n\
+  }\n\nfunction displayTimeMessage() {\n  document.getElementById(\"hoursDisplay\"\
+  ).innerHTML = messageHours();\n}\n```\n\n"

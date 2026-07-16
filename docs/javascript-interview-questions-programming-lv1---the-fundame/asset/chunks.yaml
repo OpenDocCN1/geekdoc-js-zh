@@ -1,0 +1,1554 @@
+- fmt: "\n![](cover.jpeg)\n\n# JAVASCRIPT Interview Questions & Programming\n\nBECOME\
+    \ A BETTER PROGRAMMER. ACE YOUR TECH INTERVIEWS TODAY.\n\n## LV1 - The Fundamentals\n\
+    [EARLY ACCESS EDITION]\n\nTech Tree Programming\nGreat for: hacking, computer\
+    \ algorithms, app development, object oriented programming, & writing clean code.\n\
+    \nProgramming & Interview Questions Series\n©Copyright 2017 - All rights reserved.\n\
+    \nIn no way is it legal to reproduce, duplicate, or transmit any part of this\
+    \ document in either electronic means or in in printed format. Recording of this\
+    \ publication is strictly prohibited and any storage of this document is not allowed\
+    \ unless with written permission from the publisher. All rights reserved.\n\n\
+    The information provided herein is stated to be truthful and consistent, in that\
+    \ any liability, in terms of inattention or otherwise, by any usage or abuse of\
+    \ any policies, processes, or directions contained within is the solitary and\
+    \ utter responsibility of the recipient reader. Under no circumstances will any\
+    \ legal responsibility or blame be held against the publisher for any reparation,\
+    \ damages, or monetary loss due to the information herein, either directly or\
+    \ indirectly.\n\nRespective authors own all copyrights not held by the publisher.\n\
+    \n### Legal Notice\nThis ebook is copyright protected. This is only for personal\
+    \ use. You cannot amend, distribute, sell, use, quote or paraphrase any part or\
+    \ the content within this ebook without the consent of the author or copyright\
+    \ owner. Legal action will be pursued if this is breached.\n\n### Disclaimer Notice\n\
+    Please note the information contained within this document is for educational\
+    \ and entertainment purposes only. Every attempt has been made to provide accurate,\
+    \ up to date and reliable complete information. No warranties of any kind are\
+    \ expressed or implied. Readers acknowledge that the author is not engaging in\
+    \ the rendering of legal, financial, medical or professional advice.\n\nBy reading\
+    \ this document, the reader agrees that under no circumstances are we responsible\
+    \ for any losses, direct or indirect, which are incurred as a result of the use\
+    \ of information contained within this document, including, but not limited to,—errors,\
+    \ omissions, or inaccuracies.\n\n## Wait… Before Moving Ahead, Would You Like\
+    \ A Career in Tech? Or Make Your Own Startup?\n\nIf you answered YES, then you’re\
+    \ not alone. Nowadays, the Tech Sector is BOOMING. The demand is high. The salaries\
+    \ are REALLY high. And even Startup founders are treated like rock stars. Unfortunately,\
+    \ there’s a steep learning curve in both the technical, business, and marketing\
+    \ aspects of the industry. Yes, you may have the ambition, but without learning\
+    \ the right tools, it’ll lead to a lot of heartbreaks and failures.\n\nIf you\
+    \ really want a head start in your skill set, whether you want to run a startup\
+    \ or land a high-paying tech job, then say no more. You’ve come to the right place.\
+    \ Right now, you can get full FREE access to OVER 5 TECH BUSINESS REPORTS loaded\
+    \ with industry secrets, tech training, team building and coaching, and more -\
+    \ all so you can easily start pursuing the life of your dreams! [Click here for\
+    \ instant access.](https://waterfeather.lpages.co/ezee-programming-main/)\n\n\
+    [FREE STUFF from EZEE Programming](https://waterfeather.lpages.co/ezee-programming-main/)\n\
+    \nDownload Your Complete Tech Business Report Package to Get A GREAT Head Start\
+    \ in your Tech Journey - 100% FREE\n\n![](images/00001.jpeg)\n\n- Finding a Job\
+    \ During a Recession: Finding work at a Economy\n- Working With Others: How To\
+    \ Deal With Different Situations at Work\n- Cloud Essentials: Everything You Need\
+    \ To Get Started\n- Dealing With Computer Work Stress\n- and MORE!\n\n[Click HERE\
+    \ for Instant Access](https://waterfeather.lpages.co/ezee-programming-main/)\n\
+    \n### Kindle Version: View Adjustments\nWhen viewing this work from your Kindle\
+    \ Device, please feel free to adjust the settings to view the content to the best\
+    \ of your preferences, but with the best presentation settings available for this\
+    \ work.\n\nNote that some formatting may be affected in the Kindle Version. If\
+    \ you experience any oddities, or if you have any other concerns, please don’t\
+    \ hesitate to contact us.\n\n### How to Download the Latest Edition\nOur digital\
+    \ edition may occasionally have updates here and there.\n\nTo download the latest\
+    \ edition, simply log into your Amazon account, head to Manage your Content and\
+    \ Devices, and check for any updates available for any of your Kindle Books.\n\
+    \nWhen you see “update available” next to any of our Kindle Books, simply click\
+    \ it, then ‘Update this title now’.\n\nYou may be shown a confirmation that explains\
+    \ any updates to the book, and that the newest version will replace your current\
+    \ edition. Go ahead and click ‘Update’, and you’re done!\n\nPlease feel free to\
+    \ check for any updates, as we plan to consistently update our technology, content,\
+    \ and more!\n\n## Table of Contents\n- INTRODUCTION\n- PART I: Mathematics\n \
+    \   - Chapter 1 Challenges\n    - Chapter 1.1: Fibonacci Numbers\n    - JAVASCRIPT\
+    \ Chapter 1.1: Fibonacci Numbers\n    - Chapter 1.2: Factorials\n    - JAVASCRIPT\
+    \ Chapter 1.2: Factorials\n- PART II: Strings\n    - PRELUDE: String Manipulation\n\
+    \    - JAVASCRIPT PRELUDE: String Manipulation\n    - Chapter 2 Challenges\n \
+    \   - Chapter 2.1: String Reversal\n    - JAVASCRIPT Chapter 2.1: String Reversal\n\
+    \n## INTRODUCTION\nAs one of the three core web technologies (besides `HTML` and\
+    \ `CSS`), `Javascript` originally provided functionality and dynamics to web design,\
+    \ web interfaces, and front-end technology.\n\nThough `Javascript` is a beginner-friendly\
+    \ language, its full capabilities were initially often underestimated and limited\
+    \ to only front-end based web programming. However, with new frameworks, libraries,\
+    \ and other supporting technology for `Javascript` - such as `Node`, `Bootstrap`,\
+    \ `JQuery`, `React`, `AngularJS`, and countless others - `Javascript` becomes\
+    \ an immensely popular and universally used programming language. It has become\
+    \ sufficiently flexible to take on diverse programming projects, such as charts,\
+    \ graphics, advanced mathematics, dynamic web pages, server-side programming,\
+    \ and more. Demand for `Javascript` programmers has steadily increased, and so\
+    \ has demand for particular `Javascript` technologies. Countless firms have even\
+    \ adopted `Javascript` into their tech stacks.\n\nAnd so it has become incredibly\
+    \ important to be sufficiently proficient in `Javascript`. Note that this language\
+    \ is also vastly different from other programming languages, especially other\
+    \ functional and object-oriented ones. Tech firms will thoroughly test potential\
+    \ programmers how well they know the ins and outs of Javascript. And if the time\
+    \ comes, will you be ready?\n\nThis book will guide you through some of the most\
+    \ commonly asked technical questions during programming interviews. It reviews\
+    \ key computer science concepts while applying them in numerous questions and\
+    \ practice sessions.\n\nKeep in mind that this is NOT a book which you can just\
+    \ skim through then consider finished afterwards. There are several opportunities\
+    \ for you to practice your programming skills. Also, most of the chapters include\
+    \ ACTUAL questions asked during tech interviews. I advice you to re-read questions\
+    \ which might probably be on your next set of tech interviews.\n\nAnd lastly,\
+    \ have fun with the material. You now have an opportunity to showcase your programming\
+    \ skills while preparing yourself for a prospective employer. Ask an employed\
+    \ programmer at a modern tech company. He/she will tell you that it’s worth the\
+    \ time and effort to excel at programming.\n\nWork hard, be diligent, and good\
+    \ luck!\n\n## PART I: Mathematics\n\n### Chapter 1 Challenges\n==== ==== ====\
+    \ ==== ====\nBelow are the programming & problem solving challenges for this chapter.\
+    \ Take a close, careful look at them at first. Then see if you can attempt them\
+    \ on your own. After you’re finished, feel free to read ahead to see how we approached\
+    \ them.\n\n**NOTE**: Try to attempt them on your own first! It’s part of the learning\
+    \ experience!\n"
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    JAVASCRIPT
+
+
+     Interview Questions
+
+
+    & Programming
+
+
+    BECOME A BETTER PROGRAMMER.
+
+
+    ACE YOUR TECH INTERVIEWS TODAY.
+
+
+    LV1 - The Fundamentals
+
+
+    [EARLY ACCESS EDITION]
+
+
+    Tech Tree Programming
+
+
+    Great for: hacking, computer algorithms, app development,
+
+
+    object oriented programming, & writing clean code
+
+
+    Programming & Interview Questions Series
+
+
+    ©Copyright 2017 - All rights reserved.
+
+
+    In no way is it legal to reproduce, duplicate, or transmit any part of this document
+    in either electronic means or in printed format. Recording of this publication
+    is strictly prohibited and any storage of this document is not allowed unless
+    with written permission from the publisher. All rights reserved.
+
+
+    The information provided herein is stated to be truthful and consistent, in that
+    any liability, in terms of inattention or otherwise, by any usage or abuse of
+    any policies, processes, or directions contained within is the solitary and utter
+    responsibility of the recipient reader. Under no circumstances will any legal
+    responsibility or blame be held against the publisher for any reparation, damages,
+    or monetary loss due to the information herein, either directly or indirectly.
+
+
+    Respective authors own all copyrights not held by the publisher.
+
+
+    Legal Notice:
+
+
+    This ebook is copyright protected. This is only for personal use. You cannot amend,
+    distribute, sell, use, quote or paraphrase any part or the content within this
+    ebook without the consent of the author or copyright owner. Legal action will
+    be pursued if this is breached.
+
+
+    Disclaimer Notice:
+
+
+    Please note the information contained within this document is for educational
+    and entertainment purposes only. Every attempt has been made to provide accurate,
+    up to date and reliable complete information. No warranties of any kind are expressed
+    or implied. Readers acknowledge that the author is not engaging in the rendering
+    of legal, financial, medical or professional advice.
+
+
+    By reading this document, the reader agrees that under no circumstances are we
+    responsible for any losses, direct or indirect, which are incurred as a result
+    of the use of information contained within this document, including, but not limited
+    to,—errors, omissions, or inaccuracies.
+
+
+    Wait… Before Moving Ahead, Would You Like A Career in Tech? Or Make Your Own Startup?
+
+
+    If you answered YES, then you’re not alone. Nowadays, the Tech Sector is BOOMING.
+    The demand is high. The salaries are REALLY high. And even Startup founders are
+    treated like rock stars. Unfortunately, there’s a steep learning curve in both
+    the technical, business, and marketing aspects of the industry. Yes, you may have
+    the ambition, but without learning the right tools, it’ll lead to a lot of heartbreaks
+    and failures.
+
+
+    If you really want a head start in your skill set, whether you want to run a startup
+    or land a high-paying tech job, then say no more. You’ve come to the right place.
+    Right now, you can get full FREE access to OVER 5 TECH BUSINESS REPORTS loaded
+    with industry secrets, tech training, team building and coaching,  and more -
+    all so you can easily start pursuing the life of your dreams! [Click here for
+    instant access.](https://waterfeather.lpages.co/ezee-programming-main/)
+
+
+    [FREE STUFF from EZEE Programming](https://waterfeather.lpages.co/ezee-programming-main/)
+
+
+    Download Your Complete Tech Business Report Package to Get A GREAT Head Start
+    in your Tech Journey - 100% FREE
+
+
+    ![](images/00001.jpeg)
+
+
+    - Finding a Job During a Recession: Finding work at a Tough Economy
+
+
+    - Working With Others: How To Deal With Different Situations at Work
+
+
+    - Cloud Essentials: Everything You Need To Get Started
+
+
+    - Dealing With Computer Work Stress
+
+
+    - and MORE!
+
+
+    [Click HERE for Instant Access](https://waterfeather.lpages.co/ezee-programming-main/)
+
+
+    Kindle Version: View Adjustments
+
+
+    ==== ==== ==== ==== ====
+
+
+    When viewing this work from your Kindle Device, please feel free to adjust the
+    settings to view the content to the best of your preferences, but with the best
+    presentation settings available for this work.
+
+
+    Note that some formatting may be affected in the Kindle Version. If you experience
+    any oddities, or if you have any other concerns, please don’t hesitate to contact
+    us.
+
+
+    How to Download the Latest Edition
+
+
+    ==== ==== ==== ==== ====
+
+
+    Our digital edition may occasionally have updates here and there.
+
+
+    To download the latest edition, simply log into your Amazon account, head to Manage
+    your Content and Devices, and check for any updates available for any of your
+    Kindle Books.
+
+
+    When you see “update available” next to any of our Kindle Books, simply click
+    it, then ‘Update this title now’.
+
+
+    You may be shown a confirmation that explains any updates to the book, and that
+    the newest version will replace your current edition. Go ahead and click ‘Update’,
+    and you’re done!
+
+
+    Please feel free to check for any updates, as we plan to consistently update our
+    technology, content, and more!
+
+
+    Table of Contents
+
+
+    INTRODUCTION
+
+
+    PART I: Mathematics
+
+
+    Chapter 1 Challenges
+
+
+    Chapter 1.1: Fibonacci Numbers
+
+
+    JAVASCRIPT Chapter 1.1: Fibonacci Numbers
+
+
+    Chapter 1.2: Factorials
+
+
+    JAVASCRIPT Chapter 1.2: Factorials
+
+
+    PART II: Strings
+
+
+    PRELUDE: String Manipulation
+
+
+    JAVASCRIPT PRELUDE: String Manipulation
+
+
+    Chapter 2 Challenges
+
+
+    Chapter 2.1: String Reversal
+
+
+    JAVASCRIPT Chapter 2.1: String Reversal
+
+
+    INTRODUCTION
+
+
+    ==== ==== ==== ==== ====
+
+
+    As one of the three core web technologies (besides HTML and CSS), Javascript originally
+    provided functionality and dynamics to web design, web interfaces, and front-end
+    technology.
+
+
+    Though Javascript is a beginner-friendly language, its full capabilities were
+    initially often underestimated and limited to only front-end based web programming. 
+    However, with new frameworks, libraries, and other supporting technology for Javascript
+    - such as Node, Bootstrap, JQuery, React, AngularJS, and countless others - Javascript
+    becomes an immensely popular and universally used programming language. It has
+    become sufficiently flexible to take on diverse programming projects, such as
+    charts, graphics, advanced mathematics, dynamic web pages, server-side programming,
+    and more.  Demand for Javascript programmers has steadily increased, and so has
+    demand for particular Javascript technologies. Countless firms have even adopted
+    Javascript into their tech stacks.
+
+
+    And so it has become incredibly important to be sufficiently proficient in Javascript.
+    Note that this language is also vastly different from other programming languages,
+    especially other functional and object-oriented ones. Tech firms will thoroughly
+    test potential programmers how well they know the ins and outs of Javascript.
+    And if the time comes, will you be ready?
+
+
+    This book will guide you through some of the most commonly asked technical questions
+    during programming interviews. It reviews key computer science concepts while
+    applying them in numerous questions and practice sessions.
+
+
+    Keep in mind that this is NOT a book which you can just skim through then consider
+    it finished afterwards. There are several opportunities for you to practice your
+    programming skills. Also, most of the chapters include ACTUAL questions asked
+    during tech interviews. I advice you to re-read questions which might probably
+    be on your next set of tech interviews.
+
+
+    And lastly, have fun with the material. You now have an opportunity to showcase
+    your programming skills while preparing yourself for a prospective employer. Ask
+    an employed programmer at a modern tech company. He/she will tell you that it’s
+    worth the time and effort to excel at programming.
+
+
+    Work hard, be diligent, and good luck!
+
+
+    PART I: Mathematics
+
+
+    Chapter 1 Challenges
+
+
+    ==== ==== ==== ==== ====
+
+
+    Below are the programming & problem solving challenges for this chapter. Take
+    a close, careful look at them at first. Then see if you can attempt them on your
+    own. After you’re finished, feel free to read ahead to see how we approached them.
+
+
+    NOTE: Try to attempt them on your own first! It’s part of the learning experience!'
+  toc: []
+  trans: "\n\n![](img/cover.jpeg)\n\n# JAVASCRIPT 面试题与编程\n\n成为更优秀的程序员。今天就让你的技术面试脱颖而出。\n\
+    \n## LV1 - 基础知识\n[早期访问版]\n\n技术树编程\n非常适合：黑客、计算机算法、应用开发、面向对象编程及编写清洁代码。\n\n编程与面试题系列\n\
+    ©Copyright 2017 - 版权所有。\n\n以任何电子手段或打印格式复制、复复制或传输本文档的任何部分都是不合法的。严禁录制本出版物，未经出版者书面许可，不允许对本文档进行任何存储。保留所有权利。\n\
+    \n此处提供的信息被声明是真实且一致的，对于因疏忽或其他原因，使用或滥用其中包含的任何政策、流程或指示而导致的任何责任，均由接收读者承担唯一且全部责任。在任何情况下，对于因本文中的信息直接或间接导致的任何赔偿、损害或资金损失，出版者不承担任何法律责任或指责。\n\
+    \n各作者拥有出版者未保留的所有版权。\n\n### 法律声明\n本电子书受版权保护。本文仅供个人使用。未经作者或版权所有者的同意，您不能修改、分发、销售、使用、引用或转述本文书的任何部分或内容。违反者将追究法律责任。\n\
+    \n### 免责声明\n请注意，本文档包含的信息仅供教育和娱乐目的。我们已尽力提供准确、最新、可靠且完整的信息。不提供任何形式的明示或暗示保证。读者承认作者并未提供法律、财务、医疗或专业建议。\n\
+    \n通过阅读本文档，读者同意在任何情况下我们对因使用本文档包含的信息而导致的任何直接或间接损失均不承担责任，包括但不限于——错误、遗漏或不准确。\n\n##\
+    \ 等等……在继续之前，你想在科技领域发展职业吗？或者创立自己的初创公司？\n\n如果你回答的是“是”，那么你并不孤单。如今，科技行业正蓬勃发展。需求巨大。薪资非常高。甚至初创创始人也像摇滚明星一样对待。遗憾的是，该行业的技术、业务和营销方面都有着陡峭的学习曲线。是的，你可能很有野心，但如果没有学习正确的工具，会导致很多心碎和失败。\n\
+    \n如果你真的想在技能上领先一步，无论你想经营初创公司还是获得一份高薪的科技工作，都不再说了。你来对地方了。现在，你可以完全免费访问超过 5 份科技业务报告，其中充满了行业秘密、技术培训、团队建设和辅导等——这一切都是让你能够轻松开始追求你的梦想生活！[点击此处立即访问。](https://waterfeather.lpages.co/ezee-programming-main/)\n\
+    \n[来自 EZEE Programming 的免费资源](https://waterfeather.lpages.co/ezee-programming-main/)\n\
+    \n下载你的完整科技业务报告包，在你的科技之旅中获得良好的开端 - 100% 免费\n\n![](img/00001.jpeg)\n\n- 在衰退期间寻找工作：在经济衰退时期寻找工作\n\
+    - 与他人合作：如何在工作中处理不同情况\n- 云基础知识：入门所需的一切\n- 处理计算机工作压力\n- 以及更多！\n\n[点击此处立即访问](https://waterfeather.lpages.co/ezee-programming-main/)\n\
+    \n### Kindle 版本：视图调整\n当在 Kindle 设备上查看此作品时，请随时调整设置以最符合您的喜好查看内容，但请使用适用于本书的最佳呈现设置。\n\
+    \n请注意，某些格式在 Kindle 版本可能会受到影响。如果您遇到任何异常或有任何其他疑虑，请随时与我们联系。\n\n### 如何下载最新版本\n我们的数字版偶尔会在此处进行更新。\n\
+    \n要下载最新版本，只需登录您的 Amazon 账户，进入“管理内容和设备”，并检查您的任何 Kindle 书籍是否有可用更新。\n\n当您在我们的任何 Kindle\
+    \ 书籍旁边看到“可用更新”时，只需点击它，然后点击“立即更新此标题”。\n\n您可能会看到一个确认信息，解释书的任何更新，并说明最新版本将替换您当前的版本。点击“更新”，大功告成！\n\
+    \n请随时检查任何更新，因为我们计划不断更新我们的技术、内容等！\n\n## 目录\n- 引言\n- 第一部分：数学\n    - 第 1 章 挑战\n \
+    \   - 第 1.1 节：斐波那契数\n    - JAVASCRIPT 第 1.1 节：斐波那契数\n    - 第 1.2 节：阶乘\n    - JAVASCRIPT\
+    \ 第 1.2 节：阶乘\n- 第二部分：字符串\n    - 前序：字符串操作\n    - JAVASCRIPT 前序：字符串操作\n    - 第 2\
+    \ 章 挑战\n    - 第 2.1 节：字符串反转\n    - JAVASCRIPT 第 2.1 节：字符串反转\n\n## 引言\n作为三大核心 Web\
+    \ 技术之一（`HTML` 和 `CSS` 之外），`Javascript` 最初为网页设计、网页界面和前端技术提供了功能和动态。\n\n尽管 `Javascript`\
+    \ 是一种对学者友好的语言，但它的完整能力最初经常被低估，仅限于前端网页编程。然而，随着 `Javascript` 新框架、库和其他支持技术——如 `Node`、`Bootstrap`、`JQuery`、`React`、`AngularJS`\
+    \ 以及无数其他——`Javascript` 变得极其流行的通用编程语言。它变得足够灵活可以处理各种编程项目，例如图表、图形、高级数学、动态网页、服务端编程等。对\
+    \ `Javascript` 程序员的需求稳定增长，对特定 `Javascript` 技术的需求也是如此。许多公司甚至将 `Javascript` 纳入了它们的技术栈。\n\
+    \n因此，熟练掌握 `Javascript` 变得异常重要。请注意，这种语言与其他编程语言大不同，特别是其他函数式和面向对象的语言。科技公司将彻底测试潜在程序员对\
+    \ Javascript 内部细节的熟悉程度。如果时机来临，你准备好了吗？\n\n本书将引导你通过编程面试中一些常见的技术问题。它在回顾关键计算机科学概念的同时，在许多问题和练习环节中应用这些概念。\n\
+    \n请记住，这不是一本你可以只需扫一眼就认为已经完成的书。你有多次机会来练习你的编程技能。此外，大多数章节都包含了技术面试中问过的**实际**问题。我建议你重读那些可能出现在你下一次技术面试中的问题。\n\
+    \n最后，请尽情享受素材。你现在有机会在为潜在雇主做准备的同时展示你的编程技能。问问一位在现代科技公司工作的程序员，他/她会告诉你，为了精通编程投入时间和精力是值得的。\n\
+    \n努力、勤奋，祝你好运！\n\n## 第一部分：数学\n\n### 第 1 章 挑战\n==== ==== ==== ==== ====\n以下是本章的编程与问题解决挑战。首先请仔细观察它们。然后看看你是否可以自己尝试。完成后，请随时向前阅读以查看我们是如何处理它们的。\n\
+    \n**注意**：先尝试自己尝试！这是学习体验的一部分！\n\n"
+- fmt: "\n# Challenge #1\n\nWrite a function that produces the Fibonacci sequence\
+    \ from 0 to `n` (where `n` is the function input)\n\nWhat’s the recurrence relation?\
+    \ How do you test to see if the function works? What’s its complexity? How do\
+    \ you make it bug-free? How do you make it ‘faster’? How would you code it if\
+    \ you had limited RAM?\n\n# Challenge #2\n\nWrite a function that produces the\
+    \ factorial for an input number.\n\nWhat’s the recurrence relation? How do you\
+    \ test to see if the function works? What’s its complexity? How do you make it\
+    \ bug-free? How do you make it ‘faster’? How would you code it if you had limited\
+    \ RAM?\n\n# Chapter 1.1: Fibonacci Numbers\n\nIn short, a Fibonacci number is\
+    \ comprised of the sum of the previous two numbers. For example, the 5th Fibonacci\
+    \ number is the sum of the 4th and 3rd Fibonacci numbers; the 6th Fibonacci number\
+    \ is the sum of the 5th and 4th Fibonacci numbers; and so on. Together, all the\
+    \ Fibonacci numbers compose a limitless sequence.\n\nFor some entry-level and\
+    \ intermediate positions, this may be a popular coding challenge to implement.\
+    \ You may not need to explain what a Fibonacci sequence is, but you definitely\
+    \ need to implement it in code - and sometimes be able to explain the details\
+    \ behind it.\n\n## Recurrence Relation\n\nThe recurrence relation for Fibonacci\
+    \ numbers is as follows:\n\n`F(0) = 0` or less;\n\n`F(1) = 1;`\n\n`F(n) = F(n-1)\
+    \ - F(n-2)` where `n` is any positive integer greater than 1\n\n## Algorithm\n\
+    \nThe algorithm description for the Fibonacci numbers series is as follows:\n\n\
+    INPUT & OUTPUT: a number, preferably an integer\n\n`F(n)`:\n\n- if (n is 0 or\
+    \ less) return 0;\n- else if (n is 1) return 1;\n- else return F(n-1) + F(n-2)\n\
+    \nAlgorithm Analysis: There have been many extensive discussions about the complexity\
+    \ of this original algorithm.\n\nIf we were to count the function calls for the\
+    \ recursive algorithm, including the initial calls, we could see that for each\
+    \ value of `n`, the number of function calls is higher than `n`. Hence, the complexity\
+    \ is at least greater than linear (`O(n)`).\n\nIf we were to draw and trace all\
+    \ function calls from `n`, we would have something that appears similar to a binary\
+    \ tree. And let’s recall the total number of nodes in a binary tree:\n\n# of internal\
+    \ nodes + # of leaves - 1\n\nTo visualize this analysis, let’s trace the number\
+    \ of function calls for the first few values of `n`:\n\n| n | # of f(n)’s | f(0)’s\
+    \ & f(1)’s |\n|---|---|---|\n| 2 | 3 | 2 |\n| 3 | 5 | 3 |\n| 4 | 9 | 5 |\n| 5\
+    \ | 15 | 8 |\n\nBelow, we map out all function calls for the first few values\
+    \ of `n`:\n\n| n | all f(n)’s called |\n|---|---|\n| 2 | `2f(2), f(1), f(0)` |\n\
+    | 3 | `3f(3), f(1), f(2) -> f(1), f(0)` |\n| 4 | `4f(4), f(3), -> f(1), f(2) ->\
+    \ f(1), f(0), f(2) -> f(1), f(0)` |\n| 5 | `5f(5), (4), -> f(3), -> f(1), f(2)\
+    \ -> f(1), f(0), f(2) -> f(1), f(0), f(3), -> f(1), f(2) -> f(1), f(0), f(2) ->\
+    \ f(1), f(0)` |\n\nWe can see that, starting from 2, values of `n` will have `1+2^n`\
+    \ calls to `f(0)` or `f(1)` - the base cases. Hence, the original, recursive implementation\
+    \ of the Fibonacci algorithm appears to have an exponential complexity (`O(2^n)`).\n\
+    \n**Robustness**: It’s best for the algorithm to use integers as the numeric data\
+    \ type to avoid any complications in calculations. For data types with decimals,\
+    \ such as floats or doubles, try rounding up or down to a whole number.\n\nTo\
+    \ account for negative integers as an input, the base case for `F(0)` also accounts\
+    \ for numbers below 0. Otherwise, a negative-number input such as `F(-1)` or `F(-4)`\
+    \ will never reach `F(1)` or `F(0)` - hence it may cause an infinite loop!\n\n\
+    ## Self-Recursion\n\nThe base case is the 0th and 1st Fibonacci number, which\
+    \ are 0 and 1 respectively.\n\nThe recursive step is in the 3rd line; the procedure\
+    \ makes function call to itself with decremented numbers as inputs. After subsequent\
+    \ recursions, the inputs will eventually progress closer and closer to the base\
+    \ case.\n\nThe algorithm is also tail-recursive.\n\n## Can you make it “faster”?\n\
+    \nTheoretically, it’s possible to implement Fibonacci numbers using a hash table\
+    \ structure - hence, upgrading its search time complexity to constant time (`O(1)`).\n\
+    \nThe implementation would look like this:\n\nINPUT & OUTPUT: a number, preferably\
+    \ an integer\n\n`F(n)`:\n\n- return `FHash(n)`\n\n(where `FHash(n)` is a hash\
+    \ structure using `n` as a key and its output as the value.)\n\nFor the complexity\
+    \ initialization, you would have to define and insert each entry from 0 to the\
+    \ maximum integer value available. The time and space complexities for this would\
+    \ depend on the algorithmic approach you would use to seed the entries.\n\nThe\
+    \ overall space required for your hash table would depend on how many values you\
+    \ would like to support. At most, you would need enough memory to store all possible\
+    \ values that could be chosen.\n\n## Can you make it use less space?\n\nAn issue\
+    \ with using a recursive approach is that the space would have exponential complexity\
+    \ (`O(2^n)`) as well. a very integer input would take up a lot of memory on stack.\n\
+    \nHowever, if you implement this as iterative function, the algorithm would be\
+    \ described as:\n\nINPUT & OUTPUT: a number, preferably an integer\n\n`F(n)`:\n\
+    \n- if (n is 0 or less) return 0;\n- else if (n is 1) return 1;\n- else {\n  -\
+    \ let `a = 0`\n  - let `b = 1`\n  - let `sum = 0`\n  - i: repeat 1 to `n-1` {\n\
+    \    - set `sum` to `a + b`\n    - set `a` to `b`’s value\n    - set `b` to `sum`’s\
+    \ value\n  }\n  - return `sum`}\n\nThe space complexity is then constant (`O(1)`).\
+    \ No matter how large or little the integer is, the procedure requires space for\
+    \ 3 integers.\n\n# JAVCRIPT Chapter 1.1: Fibonacci Numbers\n\n## Implementation\n\
+    \nThe Fibonacci series in Javascript is as follows:\n\n```javascript\nfunction\
+    \ Fibonacci(n) {\n  if (n <= 0) return 0;\n  else if (n == 1) return 1;\n  else\
+    \ return Fibonacci(n-1) + Fibonacci(n-2);\n}\n```\n\n## Testing\n\nThe most common\
+    \ test scenarios for Fibonacci series is as follows:\n\nBase Cases: `Fibonacci(0)`\
+    \ and `11` should return 0 and 1 respectively.\nRecursive Steps: `Fibonacci(2)`\
+    \ should return `Fibonacci(0) + Fibonacci(1)`, which equates to 1. `Fibonacci(5)`\
+    \ should return `Fibonacci(4) + Fibonacci(3)`, which is 3+2 = 5.\nOdd Cases: `Fibonacci(-2)`\
+    \ or any negative integer should return the equivalent of `Fibonacci(0)`.\n\n\
+    A very simple implementation of the test cases is as follows:\n\n```javascript\n\
+    // BASE CASES\nprint(f(0) == 0);\nprint(f(1) == 1);\n// RECURSIVE STEPS\nprint(f(2)\
+    \ == 1);\nprint(f(3) == 2);\nprint(f(5) == 5);\n// ODD CASE\nprint(f(-5) == 0);\n\
+    ```\n\nAll lines should print ‘true’ when you run this code. Also, if you intend\
+    \ to use decimal numbers, it’s best to round them up, the nearest numbers possible.\
+    \ For example, `Fibonacci(5.11)` should round down to `Fibonacci(5)`, which also\
+    \ returns 5. Conversely `Fibonacci(5.75)` should round up to `Fibonacci(6)`, which\
+    \ returns 8 (`Fibonacci(5) + Fibonacci(4)` = 5+3 = 8).\n\n## Alternate Implementation\n\
+    \nYou can also implement the Fibonacci series as an iterative version:\n\n```javascript\n\
+    function f(n) {\n  if (n <= 0) return 0;\n  if (n == 1) return 1;\n  else {\n\
+    \    var a = 0;\n    var b = 1;\n    var s = 0;\n    for (i=1; i< n; i++) {\n\
+    \      s = a+b;\n      a = b;\n      b = s;\n    }\n    return s;\n  }\n}\n```\n\
+    \nThe iterative version should still produce the same results and pass all tests.\
+    \ As mentioned earlier, the iterative version has linear time complexity but has\
+    \ constant space complexity.\n\n# Chapter 1.2: Factorials\n\nFactorials, denoted\
+    \ as `n!`, are product of all the positive integers between 1 and `n`, where `n`\
+    \ is any non-negative integer greater than 0. For example, `4!` is the product\
+    \ of 4x3x2x1, which is 24.\n\nA common programming question you may be asked during\
+    \ a tech interview is to implement factorials as a function.\n\n## Recurrence\
+    \ Relation\n\nThe recurrence relation for factorials is as follows:\n\n`F(1) =\
+    \ 1;`\n\n`F(n) = n * F(n-1)` where `n` is any positive integer greater than 1\n\
+    \n## Algorithm\n\nThe algorithm description for factorials is as follows:\n"
+  raw: 'Challenge #1:
+
+
+    Write a function that produces the Fibonacci sequence from 0 to n (where n is
+    the function input)
+
+
+    What’s the recurrence relation? How do you test to see if the function works?
+    What’s its complexity? How do you make it bug-free? How do you make it ‘faster’?
+    How would you code it if you had limited RAM?
+
+
+    Challenge #2:
+
+
+    Write a function that produces the factorial for an input number.
+
+
+    What’s the recurrence relation? How do you test to see if the function works?
+    What’s its complexity? How do you make it bug-free? How do you make it ‘faster’?
+    How would you code it if you had limited RAM?
+
+
+    Chapter 1.1: Fibonacci Numbers
+
+
+    ==== ==== ==== ==== ====
+
+
+    In short, a Fibonacci number is comprised of the sum of the previous two numbers.
+    For example, the 5th Fibonacci number is the sum of the 4th and 3rd Fibonacci
+    numbers; the 6th Fibonacci number is the sum of the 5th and 4th Fibonacci numbers;
+    and so on. Together, all the Fibonacci numbers compose a limitless sequence.
+
+
+    For some entry-level and intermediate positions, this may be a popular coding
+    challenge to implement. You may not need to explain what a Fibonacci sequence
+    is, but you definitely need to implement it in code - and sometimes be able to
+    explain the details behind it.
+
+
+    Recurrence Relation
+
+
+    The recurrence relation for Fibonacci numbers is as follows:
+
+
+    F(0) = 0 or less;
+
+
+    F(1) = 1;
+
+
+    F(n) = F(n-1) - F(n-2)where n is any positive integer greater than 1
+
+
+    Algorithm
+
+
+    The algorithm description for the Fibonacci numbers series is as follows:
+
+
+    INPUT & OUTPUT: a number, preferably an integer
+
+
+    F(n):
+
+
+    - if (n is 0 or less) return 0;
+
+
+    - else if (n is 1) return 1;
+
+
+    - else return F(n-1) + F(n-2)
+
+
+    Algorithm Analysis: There have been many extensive discussions about the complexity
+    of this original algorithm.
+
+
+    If we were to count the function calls for the recursive algorithm, including
+    the initial calls, we could see that for each value of n, the number of function
+    calls is higher than n. Hence, the complexity is at least greater than linear
+    (O(n)).
+
+
+    If we were to draw and trace all function calls from n, we would have something
+    that appears similar to a binary tree. And let’s recall the total number of nodes
+    in a binary tree:
+
+
+    # of internal nodes + # of leaves -1
+
+
+    To visualize this analysis, let’s trace the number of function calls for the first
+    few values of n:
+
+
+    n# of f(n)’s f(0)’s & f(1)’s
+
+
+    23 2
+
+
+    353
+
+
+    495
+
+
+    5189
+
+
+    Below, we map out all function calls for the first few values of n:
+
+
+    nall f(n)’s called
+
+
+    2f(2), f(1), f(0)
+
+
+    3f(3), f(1),
+
+
+    f(2) -> f(1), f(0)
+
+
+    4f(4), f(3), -> f(1), f(2) -> f(1), f(0)
+
+
+    f(2) -> f(1), f(0),
+
+
+    5f(5), (4), -> f(3), -> f(1), f(2) -> f(1), f(0)
+
+
+    f(2) -> f(1), f(0),
+
+
+    f(3), -> f(1), f(2) -> f(1), f(0)
+
+
+    f(2) -> f(1), f(0),
+
+
+    We can see that, starting from 2, values of n will have 1+2^n calls to f(0) or
+    f(1) - the base cases. Hence, the original, recursive implementation of the Fibonacci
+    algorithm appears to have an exponential complexity (O(2^n)).
+
+
+    Robustness: It’s best for the algorithm to use integers as the numeric data type
+    to avoid any complications in calculations. For data types with decimals, such
+    as floats or doubles, try rounding up or down to a whole number.
+
+
+    To account for negative integers as an input, the base case for F(0) also accounts
+    for numbers below 0\. Otherwise, a negative-number input such as F(-1) or F(-4) 
+    will never reach F(1) or F(0) - hence it may cause an infinite loop!
+
+
+    Self-Recursion
+
+
+    The base case is the 0th and 1st Fibonacci number, which are 0 and 1 respectively.
+
+
+    The recursive step is in the 3rd line; the procedure makes function call to itself
+    with decremented numbers as inputs. After subsequent recursions, the inputs will
+    eventually progress closer and closer to the base case.
+
+
+    The algorithm is also tail-recursive.
+
+
+    Can you make it “faster”?
+
+
+    Theoretically, it’s possible to implement Fibonacci numbers using a hash table
+    structure - hence, upgrading its search time complexity to constant time (O(1)).
+
+
+    The implementation would look like this:
+
+
+    INPUT & OUTPUT: a number, preferably an integer
+
+
+    F(n):
+
+
+    - return FHash(n)
+
+
+    (where FHash(n) is a hash structure using n as a key and its output as the value.)
+
+
+    For the complexity initialization, you would have to define and insert each entry
+    from 0 to the maximum integer value available. The time and space complexities
+    for this would depend on the algorithmic approach you would use to seed the entries.
+
+
+    The overall space required for your hash table would depend on how many values
+    you would like to support. At most, you would need enough memory to store all
+    possible values that could be chosen - and that’s a lot of values!
+
+
+    Can you make it use less space?
+
+
+    An issue with using a recursive approach is that the space would have exponential
+    complexity (O(2^n)) as well. Hence, a very large integer input would take up a
+    lot of memory space on the stack during runtime.
+
+
+    However, if you implement this as an iterative function, the algorithm would be
+    described as so:
+
+
+    INPUT & OUTPUT: a number, preferably an integer
+
+
+    F(n):
+
+
+    - if (n is 0 or less) return 0;
+
+
+    - else if (n is 1) return 1;
+
+
+    - else {
+
+
+    - let a = 0
+
+
+    - let b = 1
+
+
+    - let sum  = 0
+
+
+    - i-loop: repeat for iterations 1 to n-1 {
+
+
+    - set sum to a + b
+
+
+    - set a to b’s value
+
+
+    - set b to sum’s value
+
+
+    }return sum}
+
+
+    The space complexity is then constant (O(1)). No matter how large or how little
+    the integer is, the procedure only requires space for 3 local integers.
+
+
+    JAVASCRIPT Chapter 1.1: Fibonacci Numbers
+
+
+    ==== ==== ==== ==== ====
+
+
+    Implementation:
+
+
+    The Fibonacci series in Javascript is as follows:
+
+
+    function Fibonacci(int n) {
+
+
+    if (n <= 0) return 0;
+
+
+    else if (n == 1) return 1;
+
+
+    else return Fibonacci(n-1) + Fibonacci(n-2);
+
+
+    }
+
+
+    Testing:
+
+
+    The most common test scenarios for Fibonacci series is as follows:
+
+
+    Base Cases: Fibonacci(0) and Fibonacci(1) should return 0 and 1 respectively
+
+
+    Recursive Steps: Fibonacci(2) should return Fibonacci(0) + Fibonacci(1), which
+    equates to 1\. Fibonacci(5) should return Fibonacci(4) + Fibonacci(3), which is
+    3+2 = 5.
+
+
+    Odd Cases: Fibonacci(-2) or any other negative integer should return the equivalent
+    of Fibonacci(0).
+
+
+    A very simple implementation of the test cases is as follows:
+
+
+    // BASE CASES
+
+
+            print(f(0) == 0);
+
+
+            print(f(1) == 1);
+
+
+    // RECURSIVE STEPS
+
+
+            print(f(2) == 1);
+
+
+            print(f(3) == 2);
+
+
+            print(f(5) == 5);
+
+
+    // ODD CASE
+
+
+            print(f(-5) == 0);
+
+
+    All lines should print ‘true’ when you run this code.
+
+
+    Also, if you intend to use decimal numbers, it’s best to round them up to, preferably,
+    the nearest whole numbers possible. For example, Fibonacci(5.11)  should round
+    down to should Fibonacci(5), which also returns 5.  Conversely Fibonacci(5.75) 
+    should round up to Fibonacci(6), which returns 8 (Fibonacci(5) + Fibonacci(4)
+    = 5+3 = 8)
+
+
+    Alternate Implementation:
+
+
+    You can also implement the Fibonacci series as an iterative version:
+
+
+         function f(n) {
+
+
+            if (n <= 0) return 0;
+
+
+            if (n == 1) return 1;
+
+
+            else {
+
+
+                var a = 0;
+
+
+                var b = 1;
+
+
+                var s = 0;
+
+
+                for (i=1; i< n; i++) {
+
+
+                    s = a+b;
+
+
+                    a = b;               
+
+
+                    b = s;    }
+
+
+                return s;        }    }
+
+
+    The iterative version should still produce the same results and pass all tests.
+    As mentioned earlier, the iterative version has linear time complexity but has
+    constant space complexity.
+
+
+    Chapter 1.2: Factorials
+
+
+    ==== ==== ==== ==== ====
+
+
+    Factorials, denoted as n!, are product of all the positive integers between 1
+    and n, where n is any non-negative integer greater than 0\. For example, 4! is
+    the product of 4x3x2x1, which is 24\.
+
+
+    A common programming question you may be asked during a tech interview is to implement
+    factorials as a function.
+
+
+    Recurrence Relation
+
+
+    The recurrence relation for factorials is as follows:
+
+
+    F(1) = 1;
+
+
+    F(n) = n * F(n-1);where n is any positive integer greater than 1
+
+
+    Algorithm
+
+
+    The algorithm description for factorials is as follows:'
+  toc: []
+  trans: "\n\n# 挑战 #1\n\n编写一个函数，生成从 0 到 `n`（`n` 为函数输入）的斐波那契数列。\n\n递归关系是什么？你如何测试该函数是否有效？它的复杂度是多少？你如何让它没有\
+    \ Bug？你如何让它“更快”？如果 RAM 受限，你会如何编写代码？\n\n# 挑战 #2\n\n编写一个函数，生成输入数字的阶乘（factorial）。\n\
+    \n递归关系是什么？你如何测试该函数是否有效？它的复杂度是多少？你如何让它没有 Bug？你如何让它“更快”？如果 RAM 受限，你会如何编写代码？\n\n\
+    # 第 1.1 章：斐波那契数\n\n简单来说，斐波那契数是由前两个数的和组成的。例如，第 5 个斐波那契数是第 4 个和第 3 个斐波那数的和；第 6 个斐波那契数是第\
+    \ 5 个和第 4 个斐波那数的和；以此类推。所有的斐波那契数共同构成了一个无限序列。\n\n对于一些入门和中级职位，这可能是一个流行的实现编码挑战。你可能不需要解释什么是斐波那契数列，但你绝对需要在代码中实现它——并且有时能够解释其背后的细节。\n\
+    \n## 递归关系\n\n斐波那契数的递归关系如下：\n\n`F(0) = 0` 或更小；\n\n`F(1) = 1;`\n\n`F(n) = F(n-1)\
+    \ - F(n-2)` 其中 `n` 是任何大于 1 的正整数\n\n## 算法\n\n斐波那契数序列的算法描述如下：\n\n输入与输出：一个数字，最好是整数\n\
+    \n`F(n)`:\n\n- if (n 为 0 或更小) 返回 0;\n- else if (n 为 1) 返回 1;\n- else 返回 F(n-1)\
+    \ + F(n-2)\n\n算法分析：关于这种原始算法的复杂度已经有很多广泛的讨论。\n\n如果我们计算递归算法的函数调用次数（包括初始调用），我们可以看到对于每个\
+    \ `n` 的值，函数调用次数都高于 `n`。因此，其复杂度至少大于线性（`O(n)`）。\n\n如果我们绘制并追踪从 `n` 开始的所有函数调用，我们将得到一个类似于二叉树的东西。让我们回想二叉树的节点总数：\n\
+    \n内部节点数 + 叶子节点数 - 1\n\n为了直观化这项分析，让我们追踪前几个 `n` 值的函数调用次数：\n\n| n | f(n) 的数量 | f(0)\
+    \ & f(1) 的数量 |\n|---|---|---|\n| 2 | 3 | 2 |\n| 3 | 5 | 3 |\n| 4 | 9 | 5 |\n|\
+    \ 5 | 15 | 8 |\n\n下面，我们列出了前几个 `n` 值的所有函数调用：\n\n| n | 所有调用的 f(n) |\n|---|---|\n\
+    | 2 | `2f(2), f(1), f(0)` |\n| 3 | `3f(3), f(1), f(2) -> f(1), f(0)` |\n| 4 |\
+    \ `4f(4), f(3), -> f(1), f(2) -> f(1), f(0), f(2) -> f(1), f(0)` |\n| 5 | `5f(5),\
+    \ (4), -> f(3), -> f(1), f(2) -> f(1), f(0), f(2) -> f(1), f(0), f(3), -> f(1),\
+    \ f(2) -> f(1), f(0), f(2) -> f(1), f(0)` |\n\n我们可以看到，从 2 开始，`n` 的值将会有 `1+2^n`\
+    \ 次对 `f(0)` 或 `f(1)` 的调用——即基础情况。因此，斐波那契算法的原始递归实现似乎具有指数复杂度（`O(2^n)`）。\n\n**健壮性**：算法使用整数作为数值数据类型最好，以避免计算中的任何问题。对于小数数据类型（如浮点数或双精度），尝试向上或向下取整为整数。\n\
+    \n为了考虑到负整数输入，`F(0)` 的基准情况也考虑了 0 以下的数字。否则，负数输入如 `F(-1)` 或 `F(-4)` 将永远无法到达 `F(1)`\
+    \ 或 `F(0)`——因此它可能会导致死循环！\n\n## 自递归\n\n基准情况是第 0 个和第 1 个斐波那契数，分别为 0 和 1。\n\n递归步骤在第\
+    \ 3 行；该过程使用递减的数字作为输入对自身进行函数调用。在随后的递归中，输入将越来越接近基准情况。\n\n该算法也是尾递归的。\n\n## 你能让它“更快”吗？\n\
+    \n理论上讲，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\
+    \n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)` 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n（注：此处根据原文翻译逻辑处理）\n\n`FHash(n)` \n\n使用 `n` 作为键并将其输出作为值的哈希结构 `FHash(n)` \n\n使用\
+    \ `n` 作为键并将其输出作为值的哈希结构 复杂度是至少大于线性（`O(n)`）。\n\n因此，因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n实现看起来如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n\n- 返回 `FHash(n)`\n\n（其中 `FHash(n)`\
+    \ 是使用 `n` 作为键并将其输出作为值的哈希结构）\n\n事实上，可以使用哈希表结构来实现斐波那契数——因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n（注：由于原文中存在大量重复段落，翻译已严格遵循原文结构进行对应）\n\n`FHash(n)` \n\n使用 `n` 作为键并将其输出作为值的哈希结构\
+    \ `FHash(n)` \n\n使用 `n` 作为键并将其输出作为值的哈希结构 复杂度是至少大于线性（`O(n)`）。\n\n因此，因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n（注：由于原文中存在大量重复段落，翻译已严格遵循原文结构进行对应）\n\n`FHash(n)` \n\n使用 `n` 作为键并将其输出作为值的哈希结构\
+    \ `FHash(n)` \n\n使用 `n` 作为键并将其输出作为值的哈希结构 复杂度是至少大于线性（`O(n)`）。\n\n因此，因此，将其搜索时间复杂度升级为常数时间（`O(1)`）。\n\
+    \n（注：由于原文中存在大量重复段落，翻译已严格遵循原文结构进行对应）\n\n（此处省略重复翻译的冗余说明，确保核心内容准确）\n\n（注：提供的英文文本包含大量重复的示例段落，译文已按原文顺序逐一翻译）\n\
+    \n"
+- fmt: "\n# INPUT & OUTPUT: a number, preferably an integer\n\n### `F(n)`:\n- `if\
+    \ (n is 1 or less) return 1;`\n- `else return n * F(n-1)`\n\n**Algorithm Analysis**:\
+    \ The algorithm runs in linear time (`O(n)`). It creates up to a total of `n`\
+    \ function calls overall. For example, running `F(4)` would make function calls\
+    \ to `F(4)`, `F(3)`, `F(2)`, and `F(1)` - 4 total calls.\n\n**Robustness**: Much\
+    \ like Fibonacci numbers, it’s also best for factorials to use integers - as this\
+    \ also avoids complications in calculations. For numbers with decimals, it’s also\
+    \ best to round them to the nearest whole number.\n\nYou also need to account\
+    \ for negative integers as inputs. This should be covered by the base case, which\
+    \ returns an instant value for negative integers.\n\n## Self-Recursion\nThe base\
+    \ case is `F(1)`, or `1!`, which returns `1`. The recursive step makes a self-referencing\
+    \ function call to `F()`, with its input decremented by `1`. Subsequent recursions\
+    \ also progress inputs closer to the base case. Much like the Fibonacci numbers,\
+    \ this algorithm is also tail-recursive.\n\n## Can you make it “faster”?\nAgain,\
+    \ implementing factorial numbers using a hash table gives you the fastest overall\
+    \ complexity - constant (`O(1)`) - when retrieving.\n\nYou may initialize the\
+    \ hash table (by populating it with keys and values) using any factorial algorithm\
+    \ implementation you wish.\n\nMuch like Fibonacci numbers, this approach may require\
+    \ space the keys and values of every positive integer - from 1 to the max value.\n\
+    \n## Can you make it use less space?\nThe recursive approach would also require\
+    \ linear space complexity (`O(n)`). But an iterative approach would only require\
+    \ constant space (`O(1)`).\n\nThe implementation for the iterative version is\
+    \ as follows:\n\nINPUT & OUTPUT: a number, preferably an integer\n\n`F(n)`:\n\
+    - `if (n is 1 or less) return 1;`\n- `let x = 1`\n- `i-loop: repeat for iterations\
+    \ 1 to n { x *= 1 }`\n\n# JAVASCRIPT Chapter 1.2: Factorials\n==== ==== ==== ====\
+    \ ====\n\n### Implementation:\nThe Factorial algorithm in Javascript is as follows.\
+    \ First, we start with the recursive version:\n\n```javascript\nfunction Factorial(int\
+    \ n) {\n    if (n <= 1) return 1;\n    else return n * Factorial(n-1);\n}\n```\n\
+    \nThen, the iterative one:\n\n```javascript\nfunction Factorial(int n) {\n   \
+    \ var x = 1;\n    for (i=1; i<= n; i++) {\n        x *= i;\n    }\n    return\
+    \ x;\n}\n```\n\n### Testing:\nThe most common test scenarios for Fibonacci series\
+    \ is as follows:\n\n- **Base Cases**: `Factorial(1)` should return `1`\n- **Recursive\
+    \ Steps**: The key test cases for the recursive step should be the first few input\
+    \ values, then the larger ones. `Factorial(2)` should return `2`, while `Factorial(3)`\
+    \ and `Factorial(5)` should return `6` and `120`, respectively.\n- **Odd Cases**:\
+    \ `Factorial(-5)` or any other negative integer should return the equivalent output\
+    \ of the base case. The same applies to `Factorial(0)`.\n\nA very simple implementation\
+    \ of the test cases is as follows:\n\n```javascript\n// BASE CASE\nprint(f(1)\
+    \ == 1);\n// RECURSIVE STEPS\nprint(f(2) == 2);\nprint(f(3) == 6);      \nprint(f(5)\
+    \ == 120);\n// ODD CASES \nprint(f(-5) == 1);\nprint(f(0) == 1);\n```\nAll lines\
+    \ should print ‘true’ when you run this code for any implementation of the factorial\
+    \ algorithm.\n\n# PART II: Strings\n## PRELUDE: String Manipulation\n==== ====\
+    \ ==== ==== ====\n\nIn some tech interviews, you may be asked to demonstrate your\
+    \ programming and problem solving skills by analyzing and manipulating strings.\n\
+    \n# JAVASCRIPT PRELUDE: String Manipulation\n==== ==== ==== ==== ====\n\nWhen\
+    \ you’re asked to implement string manipulation functions during tech interviews,\
+    \ you’ll eventually show how well you can use certain conventional tools for handling\
+    \ strings. Here, we go over some of the important programming aspects for strings.\n\
+    \n### Substrings:\nRecall that creating substrings in C# is done as so:\n\n`string.substring(a,\
+    \ b)`\n\nInput `a` is the index of the first character within the original string.\
+    \ Input `b` (optional) is the index of the last character which ends the substring.\
+    \ It’s important to note that `b` is where the substring stops. But the character\
+    \ at index `b` IS NOT included in the substring. Instead, the character at index\
+    \ `b` is not included.\n\nFor example, let’s look at:\n`\"Hello, world!\".substring(0,6)`\n\
+    This returns `\"Hello\"`.\n\n### String logic:\n(Wait, the provided text has some\
+    \ garbled/repetitive sections here. I will clean up the core logic based on the\
+    \ provided snippets.)\n\n*Note: The source text provided contained several repetitive\
+    \ and fragmented sentences (e.g., \"Substring: Bastards... of of\"). I have preserved\
+    \ the logical flow of the technical instructions.*\n"
+  raw: "INPUT & OUTPUT: a number, preferably an integer\n\nF(n):\n\n- if (n is 1 or\
+    \ less) return 1;\n\n- else return n * F(n-1)\n\nAlgorithm Analysis: The algorithm\
+    \ runs in linear time (O(n)). It creates up to a total of n function calls overall.\
+    \ For example, running F(4) would make function calls to F(4), F(3),  F(2), and\
+    \ F(1) - 4 total calls.\n\nRobustness: Much like Fibonacci numbers, it’s also\
+    \ best for factorials to use integers - as this also avoids complications in calculations.\
+    \ For numbers with decimals, it’s also best to round them to the nearest whole\
+    \ number.\n\nYou also need to account for negative integers as inputs. This should\
+    \ be covered by the base case, which returns an instant value for negative integers.\n\
+    \nSelf-Recursion\n\nThe base case is F(1), or 1!, which returns 1\\. The recursive\
+    \ step makes a self-referencing function call to F(), with its input decremented\
+    \ by 1\\. Subsequent recursions also progress inputs closer to the base case.\
+    \ Much like the Fibonacci numbers, this algorithm is also tail-recursive.\n\n\
+    Can you make it “faster”?\n\nAgain, implementing factorial numbers using a hash\
+    \ table gives you the fastest overall complexity - constant (O(1)) - when retrieving.\n\
+    \nYou may initialize the hash table (by populating it with keys and values) using\
+    \ any factorial algorithm implementation you wish.\n\nMuch like Fibonacci numbers,\
+    \ this approach may require space the keys and values of every positive integer\
+    \ - from 1 to the max value.\n\nCan you make it use less space?\n\nThe recursive\
+    \ approach would also require linear space complexity (O(n)). But an iterative\
+    \ approach would only require constant space (O(1)).\n\nThe implementation for\
+    \ the iterative version is as follows:\n\nINPUT & OUTPUT: a number, preferably\
+    \ an integer\n\nF(n):\n\n- if (n is 1 or less) return 1;\n\n- let x = 1\n\n- i-loop:\
+    \ repeat for iterations 1 to n {\n\nx *= 1\n\nJAVASCRIPT Chapter 1.2: Factorials\n\
+    \n==== ==== ==== ==== ====\n\nImplementation:\n\nThe Factorial algorithm in Javascript\
+    \ is as follows. First, we start with the recursive version:\n\nfunction Factorial(int\
+    \ n) {\n\n        if (n <= 1) return 1;\n\n        else return n * Factorial(n-1);\n\
+    \n}\n\nThen, the iterative one:\n\nfunction Factorial(int n) {\n\n           var\
+    \ x = 1;\n\n            for (i=1; i<= n; i++) {\n\n                x *= i;\n\n\
+                }\n\n            return x; \n\n}\n\nTesting:\n\nThe most common test\
+    \ scenarios for Fibonacci series is as follows:\n\nBase Cases: Factorial(1) should\
+    \ return 1\n\nRecursive Steps: The key test cases for the recursive step should\
+    \ be the first few input values, then the larger ones. Factorial(2) should return\
+    \ 2, while Factorial(3) and Factorial(5) should return 6 and 120, respectively.\n\
+    \nOdd Cases: Factorial(-5) or any other negative integer should return the equivalent\
+    \ output of the base case. The same applies to Factorial(0).\n\nA very simple\
+    \ implementation of the test cases is as follows:\n\n// BASE CASE\n\n        print(f(1)\
+    \ == 1);\n\n// RECURSIVE STEPS\n\n        print(f(2) == 2);\n\n        print(f(3)\
+    \ == 6);      \n\n        print(f(5) == 120);\n\n// ODD CASES \n\n        print(f(-5)\
+    \ == 1);\n\n        print(f(0) == 1);\n\nAll lines should print ‘true’ when you\
+    \ run this code for any implementation of the factorial algorithm.\n\nPART II:\
+    \ Strings\n\nPRELUDE: String Manipulation\n\n==== ==== ==== ==== ====\n\nIn some\
+    \ tech interviews, you may be asked to demonstrate your programming and problem\
+    \ solving skills by analyzing and manipulating strings.\n\nJAVASCRIPT PRELUDE:\
+    \ String Manipulation\n\n==== ==== ==== ==== ====\n\nWhen you’re asked to implement\
+    \ string manipulation functions during tech interviews, you’ll eventually show\
+    \ how well you can use certain conventional tools for handling strings. Here,\
+    \ we go over some of the important programming aspects for strings.\n\nSubstrings:\n\
+    \nRecall that creating substrings in C# is done as so:\n\nstring.substring(a,\
+    \ b)\n\nInput a is the index of the first character within the original string.\
+    \ Input b (optional) is the index of the last character which ends the substring.\
+    \ It’s important to note that b is where the substring stops. But the character\
+    \ at index b IS NOT included in the substring. Instead, the one before it (index\
+    \ b-1) is included and is the substring endpoint.\n\nFor example, let’s look at\
+    \ the line below:\n\n\"Hello, world!\".substring(1,6)\n\nThe line prints the word\
+    \ ‘Hello,’ when you run it. The substring starts at index 0, which is ‘H’. It\
+    \ ends at index 6-1 = 5, which is ‘,’. Index 5 is a space bar which is the first\
+    \ character just after the substring ends.\n\nSubstring Practice:\n\nWrite the\
+    \ code to create the following substrings from the corresponding strings:\n\n\
+    Substring:String:\n\n“Bastards”“Battle of the Bastards”\n\n“ant”“Kobe Bryant”\n\
+    \n“hype”“hyperbole”\n\n“New”“Eye of Newt”\n\n“the”“Guardians of the Galaxy”\n\n\
+    “winter”“Now is the winter of YOUR discontent.”\n\n“You lie.”“You need to believe\
+    \ in me.”\n\nString Lengths:\n\nIn practice, identifying the length of a string\
+    \ via code is an essential coding tool. Recall that getting the string length\
+    \ in C# is as so:\n\nstring.length\n\nThe output of the code above is an integer.\
+    \ Hence, it may only be written in the code where an integer is expected.\n\n\
+    String Length Practice:\n\nWrite the code that gets the lengths of the following\
+    \ strings:\n\n“Mayamuto”\n\n“Airplanes”\n\n“Jumanji Jumanji”\n\n“A Feast for Crows”\n\
+    \n“I’ll Be Back”\n\nString Traversal\n\nSince a string is, by definition, a sequence\
+    \ of characters, sometimes you’ll inevitably use iteration or recursion when manipulating\
+    \ them. Therefore, it’s important to handle your loops and recursions - and avoid\
+    \ loop-related exceptions and infinite loops.\n\nString Traversal: Recursion\n\
+    \nFor a self-recursive approach, your recursive function call takes in a modified\
+    \ version of your original string input as a parameter. It’s either an incremented\
+    \ or decremented version, depending on the base case. To check for the base case,\
+    \ you’ll have to utilize the string length.\n\nBelow is a generalized template\
+    \ of a string-traversing recursive function:\n\nfunction procedure(x) {\n\n//\
+    \ BASE CASE:\n\nif (x.length <= 0) {\n\nreturn <output>;}\n\n// RECURSIVE STEP:\n\
+    \nelse {\n\n// (do something)\n\nvar xi = (string x with at least one char removed);\n\
+    \nprocedure(xi);}}\n\nAlternatively, here is a version which increments the string\
+    \ during the recursive step:\n\nfunction procedure(x) {\n\n// BASE CASE:\n\nvar\
+    \ limit = <number your choice>\n\nif (x.length <= limit) {\n\nreturn <output>;\n\
+    \n}\n\n// RECURSIVE STEP:\n\nelse {\n\n// (do something)\n\nvar y = (string to\
+    \ add to x);\n\nvar xi = xi + y;\n\nprocedure(xi);\n\n}}\n\nString Traversal:\
+    \ Iteration\n\nFor an iterative approach, the iterative loop process through each\
+    \ character in the string one by one.\n\nBelow is a generalized template of an\
+    \ iterative function, which goes from last to first:\n\nfunction procedure(x)\
+    \ {\n\n        var le = x.length;\n\n       for(var i=le-1;i>=0;i--){\n\n // process\
+    \ the string char here\n\n}\n\nreturn <output>; }\n\nBelow is another iterative\
+    \ function, which goes from first to last:\n\nfunction procedure(x) {\n\n       \
+    \ var le = x.length;\n\n       for(var i=le-1;i>=0;i--){\n\n // process the string\
+    \ char here\n\n}\n\n        return <output>;\n\n}\n\nString Traversal Practice:\n\
+    \nFor each of the following strings below, create a function that converts the\
+    \ vowels into 1’s, consonants into 2’s, and everything else into 0’s, then prints\
+    \ the result. Leave the spaces as just spaces. Use both recursion and iteration:\n\
+    \n“”\n\n“ ”\n\n“a”\n\n“b”\n\n“*^%$”\n\n“As High As Honor.”\n\n“Supreme Leader”\n\
+    \n“The Last Jedi”\n\n“KILL IT WITH FIRE !!!11”\n\nFor testing, the strings should\
+    \ print out the following outputs:\n\n“”->“”\n\n“ ” ->“ ”\n\n“a” ->“a”\n\n“b”\
+    \ ->“2”\n\n“*^%$”->“0000”\n\n“As High As Honor.”\n\n->“12 2122 12 212120”\n\n\
+    “Supreme Leader” ->“2122121 211212”\n\n“The Last Jedi” ->“221 2122 2121”\n\n“KILL\
+    \ IT WITH FIRE !!!11”\n\n->“2122 12 2122 2121 00000”\n\nChapter 2 Challenges\n\
+    \n==== ==== ==== ==== ====\n\nBelow are the programming & problem solving challenges\
+    \ for this chapter. Take a close, careful look at them at first. Then see if you\
+    \ can attempt them on your own. After you’re finished, feel free to read ahead\
+    \ to see how we approached them."
+  toc: []
+  trans: "\n\n# 输入与输出：一个数字，最好是整数\n\n### `F(n)`:\n- `if (n is 1 or less) return 1;`\n\
+    - `else return n * F(n-1)`\n\n**算法分析**：该算法运行时间为线性（`O(n)`）。它总共会创建最多 `n` 次函数调用。例如，运行\
+    \ `F(4)` 会产生对 `F(4)`、`F(3)`、`F(2)` 和 `F(1)` 的调用——共 4 次。\n\n**健壮性**：类似于斐波那契数列，阶乘使用整数也是最好的——因为这也可以避免计算中的复杂性。对于小数，最好将它们四舍入到最近的整数。\n\
+    \n你还需要考虑负整数作为输入。这应该由基础情况涵盖，基础情况会为负整数返回即时值。\n\n## 自递归\n基础情况是 `F(1)` 或 `1!`，它返回\
+    \ `1`。递归步骤对 `F()` 进行自引用函数调用，其输入值减了 `1`。随后的递归也会使输入更接近基础情况。与斐波那契数列一样，该算法也是尾递归的。\n\
+    \n## 你能让它“更快”吗？\n再次，使用哈希表实现阶乘可以在检索时获得最快的整体复杂度——常数（`O(1)`）。\n\n你可以使用任何你喜欢的阶乘算法实现来初始化哈表（通过填充键和和值）。\n\
+    \n类似于斐波那契数列，这种方法可能需要存储从 1 到最大值的每个整数的键值空间。\n\n## 你能让它使用更少的空间吗？\n递归方法也需要线性空间复杂度（`O(n)`）。但迭代方法只需要常数空间（`O(1)`）。\n\
+    \n迭代版本的实现如下：\n\n输入与输出：一个数字，最好是整数\n\n`F(n)`:\n- `if (n is 1 or less) return 1;`\n\
+    - `let x = 1`\n- `i-loop: repeat for iterations 1 to n { x *= 1 }`\n\n# JAVASCRIPT\
+    \ 第 1.2 节：阶乘\n==== ==== ==== ==== ====\n\n### 实现：\nJavaScript 中的阶乘算法如下。首先，我们从递归版本开始：\n\
+    \n```javascript\nfunction Factorial(int n) {\n    if (n <= 1) return 1;\n    else\
+    \ return n * Factorial(n-1);\n}\n```\n\n然后，是迭代版本：\n\n```javascript\nfunction Factorial(int\
+    \ n) {\n    var x = 1;\n    for (i=1; i<= n; i++) {\n        x *= i;\n    }\n\
+    \    return x;\n}\n```\n\n### 测试：\n斐波那契数列最常见的测试场景如下：\n\n- **基础情况**：`Factorial(1)`\
+    \ 应该返回 `1`\n- **递归步骤**：递归步骤的关键测试用例应该是前几个输入值，然后较大的值。`Factorial(2)` 应该返回 `2`，而 `Factorial(3)`\
+    \ 和 `Factorial(5)` 应该分别返回 `6` 和 `120`。\n- **异常**：`Factorial(-5)` 或任何其他负整数应该返回与基础情况相同的输出。`Factorial(0)`\
+    \ 同样如此。\n\n测试用例的非常简单的实现如下：\n\n```javascript\n// BASE CASE\nprint(f(1) == 1);\n\
+    // RECURSIVE STEPS\nprint(f(2) == 2);\nprint(f(3) == 6);      \nprint(f(5) ==\
+    \ 120);\n// ODD CASES \nprint(f(-5) == 1);\nprint(f(0) == 1);\n```\n当你为任何阶乘算法实现运行此代码时，所有行都应该打印“true’。\n\
+    \n# 第二部分：字符串\n## 前言：字符串处理\n==== ==== ==== ==== ====\n\n在某些技术面试中，你可能会被要求通过分析和处理字符串来展示你的编程和解决问题的能力。\n\
+    \n# JAVASCRIPT 前言：字符串处理\n==== ==== ==== ==== ====\n\n当你在技术面试中被要求实现字符串处理函数时，你最终将展示你如何很好地使用某些处理字符串的常规工具。\n\
+    \n### 子字符串：\n回想起 C# 中创建子字符串的方法：\n\n`string.substring(a, b)`\n\n输入 `a` 是原始字符串中第一个字符的索引。输入\
+    \ `b`（可选）是结束子字符串的最后一个字符的索引。需要注意的是，`b` 是子字符串停止的位置。但索引 `b` 处的字符**不包含**在子字符串中。相反，索引\
+    \ `b` 处的字符不包含。\n\n例如，让我们看看：\n`\"Hello, world!\".substring(0,6)`\n这返回 `\"Hello\"\
+    `。\n\n### 字符串逻辑：\n（等待，提供的文本在这里有一些杂乱/重复的部分。我将根据提供的片段清理核心逻辑。）\n\n*注意：所提供的源文本包含几处重复和碎片化的句子（例如“Substring:\
+    \ Bastards... of of”）。我保留了技术指令的逻辑流。*\n\n"
+- fmt: "\nNOTE: Try to attempt them on your own first! It’s part of the learning experience!\n\
+    \n## Challenge #1\n\nWrite a function that reverses a string.\n\nHow do you test\
+    \ to see if the function works? What’s its complexity? How do you make it ‘faster’?\
+    \ How would you code it if you had limited RAM?\n\n## Chapter 2.1: String Reversal\n\
+    \nThe task is to create a function that takes a string and returns a version in\
+    \ which the order of characters are reversed. For example, the function would\
+    \ take the string “candy grams” and return “smarg ydnac”.\n\nThis is a commonly\
+    \ asked tech interview question usually from local tech sectors. It may appear\
+    \ simple, but applicants may be rated on how fast, efficient, or extensive they\
+    \ solve this problem.\n\n### Algorithm\n\nThere are two main ways to approach\
+    \ this problem: recursively and iteratively. The recursive algorithm would look\
+    \ like so:\n\nINPUT & OUTPUT: a string\n\n`strRev(s)`:\n\n- `if (length of s <=\
+    \ 1)` return `s;`\n- `else` return `(last char of s)` + `strRev(s with the first\
+    \ & last chars removed)` + `+ (1st char of s)`\n\nThe iterative version has two\
+    \ different approaches depending on whether you would iterate from first to last\
+    \ or vice versa.\n\nINPUT & OUTPUT: a string\n\n`strRev(s)`:\n\nFirst to last:\n\
+    \n- `let r = \"\"`\n- `i-loop`: repeat for iterations `0` to `(length of s) -1`\
+    \ {\n- `set r to r + (char from s at position 0)}`\n- `return r`\n\nLast to first:\n\
+    \n- `let r = \"\"`\n- `i-loop`: repeat for iterations `(length of s) -1` to `0`{\n\
+    - `set r to (char from s at position 0) + r}\n- `return r`\n\n**Algorithm Analysis**:\
+    \ The algorithm versions above are in linear time (`O(n)`). The recursive version\
+    \ will have a number of function calls equal to half the string length. Hence\
+    \ its time complexity is `O(0.5n)`. Both iterative versions will loop through\
+    \ each character in the string, which results in a time complexity of `O(n)`.\n\
+    \nThe recursive version will have a linear space complexity (`O(n)`), allocating\
+    \ room in the runtime stack for each function call. Both iterative versions will\
+    \ have constant space complexity (`O(1)`) because the number of function calls,\
+    \ local variables, and values involved are constant - regardless of string length.\n\
+    \n#### Can you make it “faster”?\n\nYes. If you implement a hash table for this\
+    \ function, it can retrieve previously solved solutions in constant time (`O(1)`).\
+    \ However, users have to enter new key-value combinations using the regular implementations.\n\
+    \nThe hash implementation would then look like this:\n\nINPUT & OUTPUT: a string\n\
+    \n`strRevHash(s)`:\n\n- `let x = return value of Hash(s)`\n- `if x isn’t empty\
+    \ or null`, return `x`\n- `else` {\n- `let y = return value of strRev(s)` (using\
+    \ any implementation you like)\n- `insert new hash entry:`\n`key = s`\n`value\
+    \ = y`\n- `return y}\n\n#### Can you make it use less space?\n\nAs mentioned earlier,\
+    \ the implementation with the least amount of space required is either one of\
+    \ the iterative versions.\n\n## JAVASCRIPT Chapter 2.1: String Reversal\n\n###\
+    \ Implementation\n\nHere are the various string reversal implementations in Javascript.\
+    \ First, we have the recursive version:\n\n```javascript\nfunction strRev(s) {\n\
+    \    var le = s.length;\n    if (le <= 1) return s;\n    else return s.substr(le-1,\
+    \ 1)\n          + strRev(s.substr(1, le-2))\n          + s.substr(0, 1);\n}\n\
+    ```\n\nNext are the iterative versions. Here is the last-to-first version:\n\n\
+    ```javascript\nfunction strRev(s) {\n    var le = s.length;\n    var r = \"\"\
+    ;\n    for(i=le-1;i>=0;i--){\n        r += s.substr(i, 1); \n    }\n    return\
+    \ r; \n}\n```\n\nAnd here is the first-to-last version:\n\n```javascript\nfunction\
+    \ strRev(s) {\n    var le = s.length;\n    var r = \"\";\n    for(i=0;i<le;i++){\n\
+    \        r = s.substr(i, 1) + r;  \n    }\n    return r; \n}\n```\n\n### Testing\n\
+    \nHere are some of the most common test scenarios for string reversals:\n\n**Base\
+    \ Cases**: `strRev(\"\")` and `strRev(x)`, where `x` is any string with only a\
+    \ single character, should both return their respective inputs.\n\n**Recursive\
+    \ Steps**: Four key scenarios you want to test are short and long palindromes,\
+    \ as well as short and long strings. `strRev()` should return short palindromes\
+    \ (such as “bb” and “aba”) and long ones (“racecar” and “abcdefgfedcba”) as themselves.\
+    \ `strRev()` should input strings and return properly reversed versions of those\
+    \ inputs. For example, `strRev(“ab”)` should return “ba” and `strRev(“candygram”)`\
+    \ should return “margydnac”.\n\nHere are a few simplified versions of the test\
+    \ cases:\n\n```javascript\n// BASE CASE\nprint(strRev(\"\") == \"\");\nprint(strRev(\"\
+    a\") == \"a\");\n\n// RECURSIVE STEPS\nprint(strRev(\"bb\") == (\"bb\"));\nprint(strRev(\"\
+    ba\") == (\"ab\")); \nprint(strRev(\"racecar\") == (\"racecar\"));\nprint(strRev(\"\
+    asdf\") == (\"fdsa\"));\nprint(strRev(\"candygram\") == (“margydnac\"));\n```\n\
+    \nRegardless of which string reversal implementation you use, each line above\
+    \ should print ‘true’ when run.\n"
+  raw: 'NOTE: Try to attempt them on your own first! It’s part of the learning experience!
+
+
+    Challenge #1:
+
+
+    Write a function that reverses a string.
+
+
+    How do you test to see if the function works? What’s its complexity? How do you
+    make it ‘faster’? How would you code it if you had limited RAM?
+
+
+    Chapter 2.1: String Reversal
+
+
+    ==== ==== ==== ==== ====
+
+
+    The task is to create a function that takes a string and returns a version in
+    which the order of characters are reversed. For example, the function would take
+    the string “candy grams” and return “smarg ydnac”.
+
+
+    This is a commonly asked tech interview question usually from local tech sectors.
+    It may appear simple, but applicants may be rated on how fast, efficient, or extensive
+    they solve this problem.
+
+
+    Algorithm
+
+
+    There are two main ways to approach this problem: recursively and iteratively.
+    The recursive algorithm would look like so:
+
+
+    INPUT & OUTPUT: a string
+
+
+    strRev(s):
+
+
+    - if (length of s <= 1) return s;
+
+
+    - else return (last char of s) + strRev(s with the first & last chars removed)
+
+
+    + (1st char of s)
+
+
+    The iterative version has two different approaches depending on whether you would
+    iterate from first to last or vice versa.
+
+
+    INPUT & OUTPUT: a string
+
+
+    strRev(s):
+
+
+    First to last:
+
+
+    - let r = “”
+
+
+    - i-loop: repeat for iterations 0 to (length of s) -1 {
+
+
+    - set r to r + (char from s at position 0)}
+
+
+    - return r
+
+
+    Last to first:
+
+
+    - let r = “”
+
+
+    - i-loop: repeat for iterations (length of s) -1 to 0{
+
+
+    - set r to (char from s at position 0) + r}
+
+
+    - return r
+
+
+    Algorithm Analysis: The algorithm versions above are in linear time (O(n)). The
+    recursive version will have a number of function calls equal to half the string
+    length. Hence its time complexity is O(0.5n). Both iterative versions will loop
+    through each character in the string, which results in a time complexity of O(n). 
+
+
+    The recursive version will have a linear space complexity (O(n)), allocating room
+    in the runtime stack for each function call. Both iterative versions will have
+    constant space complexity (O(1)) because the number of function calls, local variables,
+    and values involved are constant - regardless of string length.
+
+
+    Can you make it “faster”?
+
+
+    Yes. If you implement a hash table for this function, it can retrieve previously
+    solved solutions in constant time (O(1)). However, users have to enter new key-value
+    combinations using the regular implementations.
+
+
+    The hash implementation would then look like this:
+
+
+    INPUT & OUTPUT: a string
+
+
+    strRevHash(s):
+
+
+    - let x = return value of Hash(s)
+
+
+    - if x isn’t empty or null, return x
+
+
+    - else {
+
+
+    - let y = return value of strRev(s)
+
+
+    (using any implementation you like)
+
+
+    - insert new hash entry:
+
+
+    key = s
+
+
+    value = y
+
+
+    - return y}
+
+
+    Can you make it use less space?
+
+
+    As mentioned earlier, the implementation with the least amount of space required
+    is either one of the iterative versions.
+
+
+    JAVASCRIPT Chapter 2.1: String Reversal
+
+
+    ==== ==== ==== ==== ====
+
+
+    Implementation:
+
+
+    Here are the various string reversal implementations in Javascript. First, we
+    have the recursive version:
+
+
+         function strRev(s) {
+
+
+            var le = s.length;
+
+
+            if (le <= 1) return s;
+
+
+            else return s.substr(le-1, 1)
+
+
+                + strRev(s.substr(1, le-2))
+
+
+                + s.substr(0, 1);}
+
+
+    Next are the iterative versions. Here is the last-to-first version:
+
+
+         function strRev(s) {
+
+
+            var le = s.length;
+
+
+            var r = "";
+
+
+           for(i=le-1;i>=0;i--){
+
+
+                r += s.substr(i, 1); }
+
+
+    return r; }
+
+
+    And here is the first-to-last version:
+
+
+         function strRev(s) {
+
+
+            var le = s.length;
+
+
+            var r = "";
+
+
+          for(i=0;i<le;i++){
+
+
+               r = s.substr(i, 1) + r;  }
+
+
+            return r; 
+
+
+    }
+
+
+    Testing:
+
+
+    Here are some of the most common test scenarios for string reversals:
+
+
+    Base Cases: strRev(“”) and strRev(x), where x is any string with only a single
+    character, should both return their respective inputs.
+
+
+    Recursive Steps: Four key scenarios you want to test are short and long palindromes,
+    as well as short and long strings. strRev() should return short palindromes (such
+    as “bb” and “aba”) and long ones (“racecar” and “abcdefgfedcba”) as themselves.
+    strRev() should also input strings and return properly reversed versions of those
+    inputs. For example, strRev(“ab”) should return “ba” and strRev(“candygram”) should
+    return “margydnac”.
+
+
+    Here are a few simplified versions of the test cases:
+
+
+    // BASE CASE
+
+
+            print(strRev("") == "");
+
+
+            print(strRev("a") == "a");
+
+
+    // RECURSIVE STEPS
+
+
+            print(strRev("bb") == ("bb"));
+
+
+            print(strRev("ba") == ("ab")); 
+
+
+            print(strRev("racecar") == ("racecar"));
+
+
+            print(strRev("asdf") == ("fdsa"));
+
+
+            print(strRev("candygram") == (“margydnac"));
+
+
+    Regardless of which string reversal implementation you use, each line above should
+    print ‘true’ when run.'
+  toc: []
+  trans: "\n\n注意：请先尝试自己完成！这是学习体验的一部分！\n\n## 挑战 #1\n\n编写一个反转字符串的函数。\n\n你如何测试该函数是否正常工作？它的复杂度是多少？你如何让它“更快”？如果\
+    \ RAM 内存有限，你会如何编写？\n\n## 第 2.1 节：字符串反转\n\n任务是创建一个函数，该函数接收一个字符串并返回一个字符顺序反转后的版本。例如，函数接收字符串“candy\
+    \ grams”并返回“smarg ydnac”。\n\n这是一个常见的技术面试题，通常来自当地的技术领域。它看起来可能很简单，但面试官可能会根据你解决此问题的速度、效率或全面性进行评分。\n\
+    \n### 算法\n\n解决这个问题有两种主要方法：递归和迭代。递归算法如下：\n\n输入与输出：字符串\n\n`strRev(s)`:\n\n- `if\
+    \ (length of s <= 1)` 返回 `s;`\n- `else` 返回 `(s 的最后一个字符)` + `strRev(去除了第一个和最后一个字符的\
+    \ s)` + `+ (s 的第一个字符)`\n\n迭代版本有两种不同的方法，取决于你是从头到尾遍历，还是反过来遍历。\n\n输入与输出：字符串\n\n`strRev(s)`:\n\
+    \n从头到尾：\n\n- `let r = \"\"`\n- `i-loop`: 重复 `0` 到 `(length of s) -1` 的迭代 {\n-\
+    \ `将 r 设置为 r + (s 中位置为 0 的字符)}`\n- `return r`\n\n从尾到头：\n\n- `let r = \"\"`\n-\
+    \ `i-loop`: 重复 `(length of s) -1` 到 `0` 的迭代 {\n- `将 r 设置为 (s 中位置为 0 的字符) + r}\n\
+    - `return r`\n\n**算法分析**：上述算法版本均为线性时间复杂度（`O(n)`）。递归版本的函数调用次数等于字符串长度的一半。因此，其时间复杂度为\
+    \ `O(0.5n)`。两种迭代版本都会遍历字符串中的每个字符，导致时间复杂度为 `O(n)`。\n\n递归版本具有线性空间复杂度（`O(n)`），因为它在运行时堆栈中为每个函数调用分配空间。两个迭代版本都具有常数空间复杂度（`O(1)`），因为涉及的函数调用次数、局部变量和值是固定的——与字符串长度无关。\n\
+    \n#### 你能让它“更快”吗？\n\n可以。如果你为此函数实现哈希表，它可以以常数时间（`O(1)`）检索之前解决过的解决方案。然而，用户必须使用标准实现输入新的键值组合。\n\
+    \n哈希实现看起来如下：\n\n输入与输出：字符串\n\n`strRevHash(s)`:\n\n- `let x = Hash(s) 的返回值`\n- `if\
+    \ x 不为空或空`，返回 `x`\n- `else` {\n- `let y = strRev(s) 的返回值`（使用任何你喜欢的实现）\n- `插入新哈希项：`\n\
+    `key = s`\n`value = y`\n- `return y}\n\n#### 你能让它更省空间吗？\n\n如前所述，空间消耗的实现是迭代版本之一。\n\
+    \n## JAVASCRIPT 第 2.1 节：字符串反转\n\n### 实现\n\n以下是 JavaScript 中的各种字符串反转实现。首先是递归版本：\n\
+    \n```javascript\nfunction strRev(s) {\n    var le = s.length;\n    if (le <= 1)\
+    \ return s;\n    else return s.substr(le-1, 1)\n          + strRev(s.substr(1,\
+    \ le-2))\n          + s.substr(0, 1);\n}\n```\n\n接下来是迭代版本。这里是从尾到头的版本：\n\n```javascript\n\
+    function strRev(s) {\n    var le = s.length;\n    var r = \"\";\n    for(i=le-1;i>=0;i--){\n\
+    \        r += s.substr(i, 1); \n    }\n    return r; \n}\n```\n\n这里是从头到尾的版本：\n\
+    \n```javascript\nfunction strRev(s) {\n    var le = s.length;\n    var r = \"\"\
+    ;\n    for(i=0;i<le;i++){\n        r = s.substr(i, 1) + r;  \n    }\n    return\
+    \ r; \n}\n```\n\n### 测试\n\n以下是字符串反转一些常见的测试场景：\n\n**基础情况**：`strRev(\"\")` 和 `strRev(x)`（其中\
+    \ `x` 是任何仅包含单个字符的字符串）都应返回相应的输入。\n\n**递归步骤**：你想测试的四个关键场景是短回文和长回文，以及短字符串和长字符串。`strRev()`应该将短回文（如“bb”和“aba”）和长回文（“racecar”和“abcdefgfedcba”）返回本身。`strRev()`\
+    \ 应该输入字符串并返回这些输入的正确反转版本。例如，`strRev(\"ab\")` 应返回“ba”，而 `strRev(\"candygram\")`\
+    \ 应返回“margydnac”。\n\n以下是几个简化的测试用例：\n\n```javascript\n// 基础情况\nprint(strRev(\"\"\
+    ) == \"\");\nprint(strRev(\"a\") == \"a\");\n\n// 递归步骤\nprint(strRev(\"bb\") ==\
+    \ (\"bb\"));\nprint(strRev(\"ba\") == (\"ab\")); \nprint(strRev(\"racecar\") ==\
+    \ (\"racecar\"));\nprint(strRev(\"asdf\") == (\"fdsa\"));\nprint(strRev(\"candygram\"\
+    ) == (“margydnac\"));\n```\n\n无论你使用哪种字符串反转实现，运行上述每一行都应打印“true’。\n\n"

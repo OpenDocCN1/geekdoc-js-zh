@@ -1,0 +1,2720 @@
+<p><img src="image_rsrcVM.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMidYMid meet" viewbox="0 0 1203 1920" height="100%" width="100%">
+<image xlink:href="image_rsrcVM.jpg" height="1920" width="1203"></image>
+</svg>
+<p><span id="part0001.xhtml"></span></p>
+<h1 class="heading_sF">1. Explain the Document Object Model (DOM):</h1>
+<p>The Document Object Model (DOM) is a programming interface for web
+documents. In simpler terms, it's a representation of the structure of
+an HTML document as a tree-like structure made up of objects. Each
+object corresponds to an element, attribute, or piece of text in the
+HTML document. JavaScript interacts with the DOM to dynamically
+manipulate the content, structure, and style of web pages.</p>
+<p>Analogy:</p>
+<p>Think of the DOM as a family tree where the document is the family,
+and each member (element, attribute, or text) is a person in the family.
+JavaScript is like the family member who can rearrange or modify the
+tree, adding or removing people (elements) as needed.</p>
+<h1 class="heading_sR">2. What do you mean by BOM (Browser Object
+Model)?</h1>
+<p>The Browser Object Model (BOM) is a set of objects provided by the
+browser to interact with the browser itself, excluding the document. It
+includes objects like <span class="class_sVB-0">window</span>, which
+represents the browser window, and <span
+class="class_sVB-0">navigator</span>, which provides information about
+the browser. BOM is essential for tasks such as controlling browser
+behavior, handling navigation history, and managing browser windows.</p>
+<p>Analogy:</p>
+<p>Consider the BOM as the control panel of a car. While the car (DOM)
+represents the vehicle itself, the control panel (BOM) includes tools
+like the steering wheel (<span class="class_sVB-0">window</span>), GPS
+system (<span class="class_sVB-0">navigator</span>), and other controls
+to interact with and control the car's environment.</p>
+<h1 class="heading_sR">3. How do you include JavaScript in an HTML
+file?</h1>
+<p>To include JavaScript in an HTML file, you use the <span
+class="class_sVB-0">&lt;script&gt;</span> tag. There are two main ways
+to do this:</p>
+<ul>
+<li><p><span class="class_sVA-0">Inline Script:</span> You can include
+JavaScript directly within the HTML file using the <span
+class="class_sVD-1">&lt;script&gt;</span> tag with the code placed
+between the opening <span class="class_sVD-1">&lt;script&gt;</span> and
+closing <span class="class_sVD-1">&lt;/script&gt;</span> tags. <span
+class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">&lt;html&gt;<br />
+ &lt;head&gt;<br />
+   &lt;title&gt;My Page&lt;/title&gt;<br />
+ &lt;/head&gt;<br />
+ &lt;body&gt;<br />
+   &lt;script&gt;<br />
+     // Your JavaScript code goes here<br />
+     alert('Hello, World!');<br />
+   &lt;/script&gt;<br />
+ &lt;/body&gt;<br />
+</span><span id="part0001.xhtml_page_3" class="class-1"></span><span
+class="class_sVD-0">&lt;/html&gt;<br />
+           </span></p></li>
+<li><p><span class="class_sVA-0">External Script:</span> Alternatively,
+you can link to an external JavaScript file using the <span
+class="class_sVD-1">src</span> attribute of the <span
+class="class_sVD-1">&lt;script&gt;</span> tag. This is often preferred
+for better code organization and reusability. <span
+class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">&lt;html&gt;<br />
+ &lt;head&gt;<br />
+   &lt;title&gt;My Page&lt;/title&gt;<br />
+   &lt;script src="myscript.js"&gt;&lt;/script&gt;<br />
+ &lt;/head&gt;<br />
+ &lt;body&gt;<br />
+   &lt;!-- Your HTML content here --&gt;<br />
+ &lt;/body&gt;<br />
+&lt;/html&gt;<br />
+           </span></p></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of the HTML file as a recipe book, and the JavaScript code as
+the special instructions you want to include. You can either write the
+instructions directly in the book (inline) or refer to a separate
+cookbook (external file) for those instructions.</p>
+<h1 class="heading_sR">4. Is JavaScript a case-sensitive language?</h1>
+<p>Yes, JavaScript is a case-sensitive language. This means that <span
+id="part0001.xhtml_page_4"></span>it distinguishes between uppercase and
+lowercase letters in variable names, function names, and other
+identifiers. For example, <span class="class_sVB-0">myVariable</span>
+and <span class="class_sVB-0">myvariable</span> would be treated as two
+different variables.</p>
+<p>Analogy:</p>
+<p>Imagine a language where the spelling of words changes based on
+whether you use uppercase or lowercase letters. In such a language,
+"apple" and "Apple" might have different meanings. Similarly, in
+JavaScript, the case of letters matters for identifying different
+elements in your code.</p>
+<h1 class="heading_sR">5. What's the difference between null and
+undefined?</h1>
+<p>In JavaScript, both <span class="class_sVB-0">null</span> and <span
+class="class_sVB-0">undefined</span> represent the absence of a value,
+but they are used in slightly different contexts.</p>
+<ul>
+<li><p><span class="class_sVE">null</span><span
+class="class_sVA-0">:</span> It is a deliberate assignment indicating
+the absence of any object value. You can explicitly set a variable to
+<span class="class_sVD-1">null</span>. <span class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">let myVar = null;<br />
+       </span></p></li>
+<li><p><span class="class_sVE">undefined</span><span
+class="class_sVA-0">:</span> It indicates that a variable has been
+declared but has not been assigned a value. It's also the default value
+of function parameters that are not provided. <span
+class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">let myVar;<br />
+       </span></p></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">null</span> as an empty container
+intentionally left empty, and <span class="class_sVB-0">undefined</span>
+as a container that was never filled or assigned.</p>
+<h1 class="heading_sR">6. How can you check the type of a variable?</h1>
+<p>You can use the <span class="class_sVB-0">typeof</span> operator to
+check the type of a variable. It returns a string indicating the data
+type of the operand.</p>
+<p><span class="class_sVD-0"><br />
+</span></p>
+<p><span class="class_sVD-0">let myVar = 42;<br />
+console.log(typeof myVar); // Outputs: "number"<br />
+</span></p>
+<p>Analogy:</p>
+<p>Consider the <span class="class_sVB-0">typeof</span> operator as a
+label maker that tells you the type of an object. If you label a box
+with "books," you can quickly identify that it contains books.
+Similarly, <span class="class_sVB-0">typeof</span> labels your variable
+with its data type.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_6">7. What are undeclared
+and undefined variables?</h1>
+<ul>
+<li><p><span class="class_sVA-0">Undeclared Variable:</span> An
+undeclared variable is a variable that has been used without being
+declared using <span class="class_sVD-1">var</span>, <span
+class="class_sVD-1">let</span>, or <span
+class="class_sVD-1">const</span>. Accessing an undeclared variable
+usually results in a reference error. <span class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">console.log(undeclaredVariable); //
+ReferenceError: undeclaredVariable is not defined<br />
+       </span></p></li>
+<li><p><span class="class_sVA-0">Undefined Variable:</span> An undefined
+variable is a variable that has been declared but not assigned a value.
+In JavaScript, uninitialized variables are automatically assigned the
+value <span class="class_sVD-1">undefined</span>. <span
+class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">let myVar;<br />
+console.log(myVar); // Outputs: undefined<br />
+       </span></p></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of an undeclared variable as trying to open a drawer that
+doesn't exist in a cabinet. It causes an error because the drawer was
+never defined. An undefined variable is like opening a drawer that
+exists but finding it empty because nothing was placed inside.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_7">8. What's the
+difference between let, const, and var?</h1>
+<ul>
+<li><p><span class="class_sVE">var</span><span
+class="class_sVA-0">:</span></p>
+<ul>
+<li>Function-scoped, not block-scoped.</li>
+<li>Can be redeclared within the same scope.</li>
+<li>Hoisted to the top of the function or global scope.</li>
+</ul></li>
+<li><p><span class="class_sVE">let</span><span
+class="class_sVA-0">:</span></p>
+<ul>
+<li>Block-scoped, available only within the block it's declared.</li>
+<li>Can be reassigned but not redeclared in the same scope.</li>
+<li>Hoisted to the top of the block.</li>
+</ul></li>
+<li><p><span class="class_sVE">const</span><span
+class="class_sVA-0">:</span></p>
+<ul>
+<li>Block-scoped.</li>
+<li>Cannot be reassigned or redeclared in the same scope.</li>
+<li>Requires an initial value and cannot be left uninitialized.</li>
+<li>Hoisted to the top of the block.</li>
+</ul></li>
+</ul>
+<h1 class="heading_sR">9. What are global variables? How are these
+variables declared?</h1>
+<ul>
+<li><span class="class_sVA-0">Global Variables:</span> Global variables
+are variables declared outside of any function or block. They are
+accessible throughout the entire program, making them globally
+available.</li>
+<li><div id="part0001.xhtml_page_8">
+<p><span class="class_sVA-0">Declaration of Global Variables:</span>
+Global variables can be declared using the <span
+class="class_sVD-1">var</span>, <span class="class_sVD-1">let</span>, or
+<span class="class_sVD-1">const</span> keywords outside of any function
+or block. <span class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">var globalVar = 42;<br />
+let anotherGlobalVar = 'Hello, World!';<br />
+const PI = 3.14;<br />
+       </span></p>
+</div></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of global variables as items placed in a central area in a
+house that everyone can access. If you place a toy (variable) on the
+living room table, it becomes a global toy that anyone in the house can
+play with.</p>
+<h1 class="heading_sR">10. Name the problems that are associated with
+the use of global variables?</h1>
+<ul>
+<li><span class="class_sVA-0">Name Collisions:</span> Global variables
+increase the risk of name collisions, where two different parts of the
+program unintentionally use the same variable name, leading to
+unexpected behavior.</li>
+<li><span class="class_sVA-0">Security Issues:</span> Global variables
+can be accessed and modified from anywhere, potentially introducing
+security vulnerabilities if sensitive data is stored in them.</li>
+<li><span class="class_sVA-0">Code Maintainability:</span> As the
+program grows, it becomes harder to keep track of and manage global
+variables, making the code less maintainable.</li>
+<li><span id="part0001.xhtml_page_9"><span
+class="class_sVA-0">Difficulty in Testing:</span> Testing becomes
+challenging when functions depend on global variables, as it might be
+difficult to isolate and test specific parts of the code.</span></li>
+</ul>
+<p>Analogy:</p>
+<p>Imagine a house where everyone shares a single storage room for their
+belongings. If everyone starts putting their stuff in the same room
+without organization, finding things becomes chaotic, leading to
+confusion and inefficiency. Similarly, global variables can create chaos
+in your code if not used carefully.</p>
+<h1 class="heading_sR">11. What is the working of timers in
+JavaScript?</h1>
+<p>Timers in JavaScript are mechanisms that allow you to execute code at
+specified intervals or after a certain delay. There are two main types
+of timers:</p>
+<ul>
+<li><p><span class="class_sVE">setTimeout</span><span
+class="class_sVA-0">:</span> Executes a function once after a specified
+delay in milliseconds. <span class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">setTimeout(function() {<br />
+ console.log('This code runs after 2000 milliseconds');<br />
+}, 2000);<br />
+       </span></p></li>
+<li><p><span class="class_sVE">setInterval</span><span
+class="class_sVA-0">:</span> Repeatedly executes a function at specified
+intervals. <span class="class_sVD-1"><br />
+</span></p>
+<p><span class="class_sVD-0">setInterval(function() {<br />
+ console.log('This code runs every 1000 milliseconds');<br />
+}, 1000);<br />
+       </span></p></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of timers like setting alarms. <span
+class="class_sVB-0">setTimeout</span> is like setting an alarm to go off
+once after a certain time, and <span
+class="class_sVB-0">setInterval</span> is like setting a repeating alarm
+that goes off at regular intervals.</p>
+<h1 class="heading_sR">12. What are the different Data types in
+JavaScript?</h1>
+<p>JavaScript has several data types, broadly categorized into two
+types:</p>
+<ul>
+<li><p><span class="class_sVA-0">Primitive Data Types:</span></p>
+<ol>
+<li><span class="class_sVA-0">Number:</span> Represents numeric
+values.</li>
+<li><span class="class_sVA-0">String:</span> Represents textual
+data.</li>
+<li><span class="class_sVA-0">Boolean:</span> Represents either <span
+class="class_sVD-1">true</span> or <span
+class="class_sVD-1">false</span>.</li>
+<li><span class="class_sVA-0">Undefined:</span> Represents an
+uninitialized variable.</li>
+<li><span class="class_sVA-0">Null:</span> Represents the absence of
+value.</li>
+<li><span class="class_sVA-0">Symbol:</span> Introduced in ES6,
+represents unique values.</li>
+</ol></li>
+<li><p><span class="class_sVA-0">Non-Primitive Data Types:</span></p>
+<ol>
+<li><span class="class_sVA-0">Object:</span> Represents complex data
+structures.</li>
+<li><span class="class_sVA-0">Function:</span> A subtype of object,
+represents a reusable block of code.</li>
+</ol></li>
+</ul>
+<p>Analogy:</p>
+<p>Imagine a toolbox with different compartments. The primitive data
+types are like individual tools (number, string, boolean), and the
+non-primitive types are like specialized toolkits (object, function)
+that can contain multiple tools.</p>
+<h1 class="heading_sR">13. What is type coercion in JavaScript?</h1>
+<p>Type coercion in JavaScript refers to the automatic conversion of one
+data type to another. This can happen implicitly (automatically
+performed by JavaScript) or explicitly (when the developer specifies the
+conversion).</p>
+<p><span class="class_sVC-0">// Implicit Coercion<br />
+let numberVar = 42;<br />
+let stringVar = 'The answer is ' + numberVar; // Coercion of number to
+string<br />
+</span></p>
+<p><span class="class_sVC-0">// Explicit Coercion<br />
+let stringVar = '42';<br />
+let numberVar = Number(stringVar); // Explicitly converting string to
+number<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Think of type coercion like a versatile translator. Sometimes it
+understands that you want to combine words and numbers, translating them
+into a sentence. Other times, you need to <span
+id="part0001.xhtml_page_12"></span>explicitly tell the translator how to
+convert one language to another.</p>
+<h1 class="heading_sR">14. Does JavaScript support automatic type
+conversion?</h1>
+<p>Yes, JavaScript supports automatic type conversion, which is also
+known as type coercion. It allows the language to be flexible by
+automatically converting data types when needed, making operations more
+forgiving and accommodating.</p>
+<p>Analogy:</p>
+<p>Consider a multi-tool that automatically adjusts its shape to fit
+different screws. Similarly, JavaScript automatically adjusts data types
+to fit the context, making the language more versatile.</p>
+<h1 class="heading_sR">15. What is a closure?</h1>
+<p>A closure is a feature in JavaScript where a function has access to
+the outer (enclosing) function's variables, even after the outer
+function has finished executing. It allows a function to "remember" and
+access its lexical scope, creating a sort of encapsulation.</p>
+<p><span class="class_sVC-0">// Example of Closure<br />
+function outerFunction() {<br />
+ let outerVar = 'I am from the outer function';<br />
+  </span></p>
+<p><span class="class_sVC-0"> <span
+id="part0001.xhtml_page_13"></span>function innerFunction() {<br />
+   console.log(outerVar); // Accessing outerVar from the outer
+function<br />
+ }<br />
+  </span></p>
+<p><span class="class_sVC-0"> return innerFunction;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">let closureExample = outerFunction();<br />
+closureExample(); // This still logs "I am from the outer
+function"<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Imagine a backpack (closure) containing some items (variables). Even
+if you move away from the place where you packed your bag, you still
+have access to the items inside. Similarly, a closure allows a function
+to carry its variables wherever it goes.</p>
+<h1 class="heading_s52">16. Write a piece of code demonstrating
+closure:</h1>
+<p><span class="class_sVC-0">function outerFunction() {<br />
+ let outerVar = 'I am from the outer function';<br />
+  </span></p>
+<p><span class="class_sVC-0"> <span
+id="part0001.xhtml_page_14"></span>function innerFunction() {<br />
+   console.log(outerVar);<br />
+ }<br />
+  </span></p>
+<p><span class="class_sVC-0"> return innerFunction;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">let closureExample = outerFunction();<br />
+closureExample(); // Outputs: "I am from the outer function"<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">innerFunction</span> is
+returned from <span class="class_sVB-0">outerFunction</span>, creating a
+closure. When <span class="class_sVB-0">closureExample</span> is
+invoked, it still has access to <span
+class="class_sVB-0">outerVar</span> even though <span
+class="class_sVB-0">outerFunction</span> has completed execution.</p>
+<h1 class="heading_sR">17. What is hoisting?</h1>
+<p>Hoisting is a JavaScript behavior where variable and function
+declarations are moved to the top of their containing scope during the
+compilation phase. This means you can use variables and functions before
+they are declared in your code.</p>
+<p><span class="class_sVC-0">// Variable Hoisting<br />
+console.log(myVar); // Outputs: undefined<br />
+var myVar = 42;<br />
+</span></p>
+<p><span class="class_sVC-0">// Function Hoisting<br />
+myFunction(); // This works even though the function is declared
+later<br />
+function myFunction() {<br />
+ console.log('Hello, World!');<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Think of hoisting like a magician who pulls items out of a hat. Even
+if the magician reveals the items later in the show, you knew they were
+there from the beginning. Similarly, JavaScript moves declarations to
+the top, making them accessible even before they are explicitly
+written.</p>
+<h1 class="heading_sR">18. Are let and const hoisted?</h1>
+<p>Yes, <span class="class_sVB-0">let</span> and <span
+class="class_sVB-0">const</span> are hoisted, but they have a behavior
+called the "temporal dead zone." In this zone, variables exist but
+cannot be accessed until they are declared. This is unlike <span
+class="class_sVB-0">var</span>, which is initialized with <span
+class="class_sVB-0">undefined</span> during hoisting.</p>
+<p><span class="class_sVB-1"><br />
+<span class="class_sVB-1">// Example causing ReferenceError due to
+temporal dead zone<br />
+<span id="part0001.xhtml_page_16"></span>console.log(myVar); // Throws a
+ReferenceError<br />
+let myVar = 42;<br />
+</span><br />
+</span></p>
+<p>Analogy:</p>
+<p>Imagine a curtain lifting during a play. let and const are behind the
+curtain from the start, but you can't see or interact with them until
+the curtain is fully raised.</p>
+<h1 class="heading_sR">19. What is scope in JavaScript?</h1>
+<p>Scope in JavaScript defines the region or context where variables and
+functions are accessible. It determines the visibility and lifetime of
+these identifiers. There are two main types of scope:</p>
+<ul>
+<li><span class="class_sVA-0">Global Scope:</span> Variables declared
+outside any function or block have global scope and can be accessed
+throughout the entire program.</li>
+<li><span class="class_sVA-0">Local Scope:</span> Variables declared
+inside a function or block have local scope and are only accessible
+within that function or block.</li>
+</ul>
+<p>Analogy:</p>
+<p>Think of scope like the visibility of rooms in a house. A variable
+declared in the living room (global scope) can be seen from any room,
+while a variable in the bedroom (local scope) is only visible within
+that specific room.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_17">20. Explain Scope and
+Scope Chain in JavaScript:</h1>
+<p><span class="class_sVA-0">Scope:</span> Scope refers to the context
+in which variables are declared and the accessibility of those
+variables.</p>
+<p><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">// Example of Scope<br />
+function outerFunction() {<br />
+ let outerVar = 'I am from the outer function';<br />
+  </span></p>
+<p><span class="class_sVC-0"> function innerFunction() {<br />
+   console.log(outerVar); // Accessing outerVar from the outer
+function's scope<br />
+ }<br />
+  </span></p>
+<p><span class="class_sVC-0"> innerFunction();<br />
+}<br />
+outerFunction();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p><span class="class_sVA-0">Scope Chain:</span> The scope chain is the
+hierarchy of scopes in a program. When a variable is referenced,
+JavaScript looks for it in the current scope and, if not found, searches
+through the outer scopes.</p>
+<p><span class="class_sVD-0"><br />
+</span><span id="part0001.xhtml_page_18" class="class-1"></span><span
+class="class_sVC-0">// Example of Scope Chain<br />
+function outerFunction() {<br />
+ let outerVar = 'I am from the outer function';<br />
+  </span></p>
+<p><span class="class_sVC-0"> function innerFunction() {<br />
+   console.log(outerVar); // Accessing outerVar from the inner
+function's scope<br />
+ }<br />
+  </span></p>
+<p><span class="class_sVC-0"> innerFunction();<br />
+}<br />
+outerFunction();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Think of scope like nested boxes. The innermost box (local scope) can
+access its contents and those of the outer boxes (outer scopes). The
+scope chain is the sequence of nested boxes that JavaScript checks when
+looking for variables.</p>
+<h1 class="heading_sR">21. Is JavaScript statically typed or dynamically
+typed?</h1>
+<p>JavaScript is dynamically typed. This means that the data type of a
+variable is determined at runtime, not during the compilation <span
+id="part0001.xhtml_page_19"></span>phase. You can change the type of a
+variable during the execution of the program.</p>
+<p><span class="class_sVF">// Example of Dynamic Typing<br />
+let myVar = 42; // This is a number<br />
+myVar = 'Hello, World!'; // Now it's a string<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Imagine a container that can hold different types of items. Today it
+might store books (strings), and tomorrow it could hold toys (numbers).
+The container adapts to the contents you place in it.</p>
+<h1 class="heading_sR">22. What do you mean by strict mode in
+JavaScript, and characteristics of javascript strict-mode?</h1>
+<p>Strict mode is a feature in JavaScript that helps catch common coding
+errors and prevents the use of certain "bad" practices. It is activated
+by adding the <span class="class_sVB-0">"use strict";</span> directive
+at the beginning of a script or a function.</p>
+<p><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">// Example of Strict Mode<br />
+"use strict";<br />
+</span></p>
+<p><span class="class_sVC-0">// Example of strict mode preventing an
+error<br />
+</span><span id="part0001.xhtml_page_20" class="class-1"></span><span
+class="class_sVC-0">undeclaredVar = 42; // Throws a ReferenceError:
+undeclaredVar is not defined<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Characteristics of Strict Mode:</p>
+<ol>
+<li><span class="class_sVA-0">Error Prevention:</span> Strict mode helps
+catch common programming errors and prevents the usage of unsafe
+features.</li>
+<li><span class="class_sVA-0">Global Object:</span> In strict mode, the
+value of <span class="class_sVD-1">this</span> is <span
+class="class_sVD-1">undefined</span> in functions that are not methods
+or constructors.</li>
+<li><span class="class_sVA-0">Assigning to Read-Only Properties:</span>
+Assigning a value to a read-only property or a non-writable global
+variable results in an error.</li>
+<li><span class="class_sVA-0">Deleting Variables:</span> Deleting
+variables, functions, or function arguments is not allowed.</li>
+<li><span class="class_sVA-0">Duplicate Parameter Names:</span> Using
+duplicate parameter names in function declarations results in an
+error.</li>
+<li><span class="class_sVA-0">Octal Literals:</span> Octal literals
+(e.g., <span class="class_sVD-1">0123</span>) are not allowed.</li>
+</ol>
+<p>Analogy:</p>
+<p>Enabling strict mode is like having a code mentor who catches
+potential mistakes and guides you towards writing cleaner and safer
+code.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_21">23. What are some
+advantages of using External JavaScript?</h1>
+<p>Using external JavaScript files has several advantages:</p>
+<ol>
+<li><span class="class_sVA-0">Code Reusability:</span> External files
+can be shared and reused across multiple HTML pages, promoting a modular
+approach to coding.</li>
+<li><span class="class_sVA-0">Separation of Concerns:</span> It
+separates HTML content from JavaScript logic, making the codebase more
+organized and maintainable.</li>
+<li><span class="class_sVA-0">Caching:</span> External files can be
+cached by the browser, improving page load times for subsequent
+visits.</li>
+<li><span class="class_sVA-0">Easy Maintenance:</span> Changes and
+updates to JavaScript code can be done in a single external file,
+simplifying maintenance.</li>
+<li><span class="class_sVA-0">Improved Readability:</span> HTML files
+remain focused on structure, while JavaScript files focus on behavior,
+enhancing code readability.</li>
+</ol>
+<p>Analogy:</p>
+<p>Think of external JavaScript files as tools in a toolbox. Each tool
+has its purpose and can be reused across different projects, making your
+toolbox more versatile and easy to manage.</p>
+<h1 class="heading_sR">24. How do you concatenate strings in
+JavaScript?</h1>
+<p>In JavaScript, you can concatenate (combine) strings using the <span
+class="class_sVB-0">+</span> operator. This operation joins two or more
+strings together.</p>
+<p><span class="class_sVB-1"><br />
+<span id="part0001.xhtml_page_22"></span><span class="class_sVB-1">//
+Example of String Concatenation<br />
+let firstName = 'John';<br />
+let lastName = 'Doe';<br />
+let fullName = firstName + ' ' + lastName;<br />
+console.log(fullName); // Outputs: John Doe<br />
+</span><br />
+</span></p>
+<p>Analogy:</p>
+<p>Concatenating strings is like connecting building blocks. Each string
+is a block, and the <span class="class_sVB-0">+</span> operator allows
+you to snap them together to create a larger structure.</p>
+<h1 class="heading_sR">25. Explain the difference between == and
+===.</h1>
+<p><span class="class_sVG">==</span> (Equality Operator):</p>
+<ul>
+<li><span class="class_sVA-0">Abstract Equality Comparison:</span>
+Converts operands to the same type before making the comparison.</li>
+<li><span class="class_sVA-0">Example:</span> <span
+class="class_sVD-1">3 == '3'</span> evaluates to <span
+class="class_sVD-1">true</span> because JavaScript converts the string
+to a number for comparison.</li>
+</ul>
+<p><span class="class_sVG">===</span> (Strict Equality Operator):</p>
+<ul>
+<li><span class="class_sVA-0">Strict Equality Comparison:</span> Does
+not perform type conversion; it checks for both value and type
+equality.</li>
+<li><span class="class_sVA-0">Example:</span> <span
+class="class_sVD-1">3 === '3'</span> evaluates to <span
+class="class_sVD-1">false</span> because the operands are of different
+types.</li>
+</ul>
+<p>Analogy:</p>
+<p>Imagine two friends discussing their ages. The loose equality
+operator (<span class="class_sVB-0">==</span>) is like saying, "If we
+both look like numbers, let's consider ourselves equal." The strict
+equality operator (<span class="class_sVB-0">===</span>) is more
+specific, saying, "Let's be exact; we should both look like the same
+number."</p>
+<h1 class="heading_sR">26. How can you convert a string to a number and
+vice versa?</h1>
+<ul>
+<li><p><span class="class_sVA-0">String to Number:</span></p>
+<ul>
+<li>Use the <span class="class_sVD-1">Number()</span> function or the
+<span class="class_sVD-1">parseInt()</span> or <span
+class="class_sVD-1">parseFloat()</span> functions.</li>
+<li><span class="class_sVA-1">Example:</span><span class="class-1">
+</span><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">let strNum = '42';<br />
+let num1 = Number(strNum);<br />
+let num2 = parseInt(strNum);<br />
+let num3 = parseFloat(strNum);</span><span class="class_sVD-0"><br />
+</span></li>
+</ul></li>
+<li><p><span class="class_sVA-0">Number to String:</span></p>
+<ul>
+<li>Use the <span class="class_sVD-1">String()</span> function or the
+string concatenation (<span class="class_sVD-1">+</span>) method.</li>
+<li><span class="class_sVA-0">Example:</span> <span
+class="class_sVD-1"><br />
+</span><span class="class_sVC-1">let myNumber = 42;<br />
+let str1 = String(myNumber);<br />
+let str2 = myNumber + '';</span><span class="class_sVD-1"><br />
+</span></li>
+</ul></li>
+</ul>
+<p>Analogy:</p>
+<p>Converting between types is like wearing different costumes. If you
+start as a number and want to become a string, you can either put on a
+new outfit (<span class="class_sVB-0">String()</span> function) or add a
+string accessory (<span class="class_sVB-0">+</span> operator).
+Conversely, if you want to become a number, you might need to strip off
+unnecessary elements (<span class="class_sVB-0">Number()</span>
+function). Choose the transformation that suits your role in the code
+play.</p>
+<h1 class="heading_sR">27. What is NaN? How can you check for it?</h1>
+<ul>
+<li><p><span class="class_sVA-0">NaN (Not a Number):</span></p>
+<ul>
+<li>Represents a value that is not a valid number.</li>
+<li>The result of an invalid mathematical operation, such as dividing
+zero by zero.</li>
+<li>The type of NaN is number.</li>
+</ul></li>
+<li><p><span class="class_sVA-0">Checking for NaN:</span></p>
+<ul>
+<li>Use the <span class="class_sVD-1">isNaN()</span> function to check
+if a value is NaN.</li>
+</ul></li>
+<li><span class="class_sVA-0">Example:</span> <span
+class="class_sVD-1"><br />
+</span><span class="class_sVC-1">let result = 10 / 'abc'; // Results in
+NaN<br />
+console.log(isNaN(result)); // Outputs: true</span><span
+class="class_sVD-1"><br />
+</span></li>
+</ul>
+<p>Analogy:</p>
+<p>Imagine trying to perform a mathematical operation with ingredients
+that aren't numbers, like dividing a cake by an apple. The result would
+be "Not a Number" because the operation doesn't make sense in the
+context of numbers.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_25">28. Describe the
+ternary operator and provide an example.</h1>
+<p>The ternary operator (<span class="class_sVB-0">? : </span>) is a
+shorthand for an <span class="class_sVB-0">if-else</span> statement. It
+allows you to write a concise one-liner to make a decision based on a
+condition.</p>
+<p><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">// Syntax:<br />
+// condition ? expressionIfTrue : expressionIfFalse;<br />
+</span></p>
+<p><span class="class_sVC-0">let age = 20;<br />
+let canVote = age &gt;= 18 ? 'Yes, can vote' : 'No, cannot vote';<br />
+console.log(canVote); // Outputs: 'Yes, can vote'<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Analogy:</p>
+<p>Think of the ternary operator as a compact decision-making tool. It's
+like choosing between two paths at a fork in the road: if the condition
+is true, take the left path; otherwise, take the right path.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_26">29. How does the
+`this` keyword work in JavaScript?</h1>
+<p>The <span class="class_sVB-0">this</span> keyword in JavaScript
+refers to the object it belongs to. Its value is determined by how a
+function is called.</p>
+<ul>
+<li><p><span class="class_sVA-0">In a Method:</span></p>
+<ul>
+<li><span class="class_sVD-1">this</span> refers to the object that the
+method is called on.</li>
+<li><span class="class_sVA-1">Example:</span><span class="class-1">
+</span><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">let person = {<br />
+ name: 'John',<br />
+ greet: function() {<br />
+   console.log('Hello, ' + this.name);<br />
+ }<br />
+};<br />
+person.greet(); // Outputs: 'Hello, John'</span><span
+class="class_sVD-0"><br />
+</span></li>
+</ul></li>
+<li><p><span class="class_sVA-0">In a Function:</span></p>
+<ul>
+<li><span class="class_sVD-1">this</span> refers to the global object
+(e.g., <span class="class_sVD-1">window</span> in a browser) or <span
+class="class_sVD-1">undefined</span> in strict mode.</li>
+<li><span class="class_sVA-0">Example:</span> <span
+class="class_sVD-1"><br />
+</span><span class="class_sVC-1">function showGlobalThis() {<br />
+ console.log(this); // Outputs: Window object (in a browser)<br />
+</span><span id="part0001.xhtml_page_27"></span><span
+class="class_sVC-1">}<br />
+showGlobalThis();</span><span class="class_sVD-1"><br />
+</span></li>
+</ul></li>
+<li><p><span class="class_sVA-0">In an Event Handler:</span></p>
+<ul>
+<li><span class="class_sVD-1">this</span> refers to the element that
+triggered the event.</li>
+<li><span class="class_sVA-1">Example:</span><span class="class-1">
+</span><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">&lt;button
+onclick="showElement(this)"&gt;Click me&lt;/button&gt;<br />
+&lt;script&gt;<br />
+ function showElement(element) {<br />
+   console.log(element); // Outputs: Button element<br />
+ }<br />
+&lt;/script&gt;</span><span class="class_sVD-0"><br />
+</span></li>
+</ul></li>
+</ul>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">this</span> as a pronoun that
+changes its reference based on the context. It's like saying, "I am
+happy" when you are talking about yourself, but if someone else says,
+"He is happy," the pronoun "he" refers to that person. Similarly, <span
+class="class_sVB-0">this</span> takes on different meanings depending on
+where it's used.</p>
+<h1 class="heading_sR">30. Explain <span
+class="class_sVB-0">call()</span>, <span
+class="class_sVB-0">apply()</span>, and <span
+class="class_sVB-0">bind()</span> methods.</h1>
+<p>In JavaScript, <span class="class_sVB-0">call()</span>, <span
+class="class_sVB-0">apply()</span>, and <span
+class="class_sVB-0">bind()</span> are methods that allow you to control
+the <span class="class_sVB-0">this</span> context when <span
+id="part0001.xhtml_page_28"></span>invoking functions. They are
+particularly useful in scenarios where you want to borrow or set a
+specific context for a function.</p>
+<ol>
+<li><h1 class="heading_s9E">1. <span class="class_sVB-0">call()</span>
+Method:</h1>
+<p>The <span class="class_sVB-0">call()</span> method invokes a function
+with a specified <span class="class_sVB-0">this</span> value and
+individual arguments. It takes the <span class="class_sVB-0">this</span>
+context as its first argument, followed by any additional parameters
+passed to the function.</p>
+<p><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">// Example:<br />
+function greet(message) {<br />
+ console.log(message + ' ' + this.name);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const person = {<br />
+ name: 'John'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">greet.call(person, 'Hello,'); // Outputs:
+'Hello, John'<br />
+   </span><span class="class_sVD-0"><br />
+</span></p></li>
+<li><h1 class="heading_s9E">2. <span class="class_sVB-0">apply()</span>
+Method:</h1>
+<p>The <span class="class_sVB-0">apply()</span> method is similar to
+<span class="class_sVB-0">call()</span>, but it takes an array of
+arguments as its second parameter instead of individual arguments.</p>
+<p><span class="class_sVD-0"><br />
+</span><span id="part0001.xhtml_page_29" class="class-1"></span><span
+class="class_sVC-0">// Example:<br />
+function greet(message, punctuation) {<br />
+ console.log(message + ' ' + this.name + punctuation);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const person = {<br />
+ name: 'John'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">greet.apply(person, ['Hello,', '!']); //
+Outputs: 'Hello, John!'<br />
+   </span><span class="class_sVD-0"><br />
+</span></p></li>
+<li><h1 class="heading_s9E">3. <span class="class_sVB-0">bind()</span>
+Method:</h1>
+<p>The <span class="class_sVB-0">bind()</span> method creates a new
+function with the same body as the original function but a fixed <span
+class="class_sVB-0">this</span> value. It returns a new function that
+can be invoked later.</p>
+<p><span class="class_sVD-0"><br />
+</span><span class="class_sVC-0">// Example:<br />
+function greet(message) {<br />
+ console.log(message + ' ' + this.name);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const person = {<br />
+ name: 'John'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">const greetJohn = greet.bind(person,
+'Hello,');<br />
+greetJohn(); // Outputs: 'Hello, John'<br />
+   </span><span class="class_sVD-0"><br />
+</span></p></li>
+</ol>
+<p>Analogy:</p>
+<p>Think of these methods as ways to invite a function to a specific
+context. Using <span class="class_sVB-0">call()</span> is like inviting
+a guest (the function) to a particular event, <span
+class="class_sVB-0">apply()</span> is like inviting a group of guests
+with a shared experience, and <span class="class_sVB-0">bind()</span> is
+like preparing a personalized invitation for future use. Each method
+provides a different level of flexibility in managing the <span
+class="class_sVB-0">this</span> context for your functions.</p>
+<h1 class="heading_sR">31. What is the purpose of the <span
+class="class_sVB-0">new</span> keyword in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">new</span> keyword in JavaScript is used to create
+instances of objects based on a constructor function. It's like casting
+a magical spell that crafts a new, unique object according to a
+predefined blueprint (constructor). When you use <span
+class="class_sVB-0">new</span>, it initializes a new object with
+properties and behaviors defined by the constructor function.</p>
+<p>Analogy:</p>
+<p>Imagine you're a wizard crafting different types of magical potions.
+The <span class="class_sVB-0">new</span> keyword is like casting a spell
+to conjure a specific potion based on a magical recipe (constructor
+function). Each time you use <span class="class_sVB-0">new</span>, you
+create a unique potion with predefined properties and enchantments.</p>
+<p><span class="class_sVC-0">// Example:<br />
+function Potion(color, power) {<br />
+ this.color = color;<br />
+ this.power = power;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const magicPotion = new Potion('Blue',
+'Invisibility');<br />
+console.log(magicPotion); // Outputs: Potion { color: 'Blue', power:
+'Invisibility' }<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<h1 class="heading_sR">32. Explain the <span
+class="class_sVB-0">if...else</span> statement in JavaScript.</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">if...else</span> statement is a decision-making
+structure in JavaScript. It allows you to execute different blocks of
+code based on a specified condition. It's like a traffic signal: if the
+light is green (condition is true), you go; otherwise (condition is
+false), you take a different route (execute the code inside <span
+class="class_sVB-0">else</span>).</p>
+<p>Analogy:</p>
+<p>Think of the <span class="class_sVB-0">if...else</span> statement as
+a decision-making tree. If you're deciding whether to go on a picnic,
+the <span class="class_sVB-0">if</span> branch checks the weather. If
+it's sunny, you go for the picnic (execute the code inside <span
+class="class_sVB-0">if</span>). Otherwise, you take an umbrella and stay
+indoors (execute the code inside <span
+class="class_sVB-0">else</span>).</p>
+<p><span class="class_sVC-0">// Example:<br />
+const temperature = 25;<br />
+</span></p>
+<p><span class="class_sVC-0">if (temperature &gt; 30) {<br />
+ console.log('It\'s hot outside.');<br />
+} else {<br />
+ console.log('It\'s a pleasant day.');<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the code checks the temperature and prints a message
+based on whether it's hot or a pleasant day.</p>
+<h1 class="heading_sR">33. How do you create a switch statement, and
+when would you use it?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">switch</span> statement is used for multiple
+conditional branches. It's like choosing from a menu with different
+options. You'd use it when you have several possible values to compare
+against a single expression.</p>
+<p>Analogy:</p>
+<p>Consider a menu at a restaurant with different dishes. The <span
+class="class_sVB-0">switch</span> statement is like choosing a dish
+based on the menu options. Instead of multiple <span
+class="class_sVB-0">if</span> checks, you use a switch to directly pick
+the dish (code block) associated with your choice.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const dayOfWeek = 3;<br />
+let dayName;<br />
+</span></p>
+<p><span class="class_sVC-0">switch (dayOfWeek) {<br />
+ case 1:<br />
+   dayName = 'Monday';<br />
+   break;<br />
+ case 2:<br />
+   dayName = 'Tuesday';<br />
+   break;<br />
+ // ... other cases ...<br />
+ default:<br />
+   dayName = 'Unknown';<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(`It's ${dayName}
+today.`);<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">switch</span> is checking the value
+of <span class="class_sVB-0">dayOfWeek</span> and assigning the
+corresponding day name.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_34">34. What's a <span
+class="class_sVB-0">for</span> loop? Provide an example.</h1>
+<p><span class="class_sVA-0">Explanation:</span> A <span
+class="class_sVB-0">for</span> loop is used to repeatedly execute a
+block of code a certain number of times. It's like a chef following a
+recipe multiple times to cook identical dishes.</p>
+<p>Analogy:</p>
+<p>Imagine you're a chef preparing a special dish. The <span
+class="class_sVB-0">for</span> loop is like following the steps of the
+recipe multiple times to make several servings of the same dish.</p>
+<p><span class="class_sVF">// Example:<br />
+for (let i = 0; i 5; i++) {<br />
+ console.log(`Iteration ${i + 1}`);<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>This loop will run five times, and in each iteration, it prints a
+message indicating the iteration number.</p>
+<h1 class="heading_sR">35. Describe the <span
+class="class_sVB-0">while</span> loop and provide an example.</h1>
+<p><span class="class_sVA-0">Explanation:</span> A <span
+class="class_sVB-0">while</span> loop is used when you don't know in
+advance how many times the code should run. It's like a guard at a gate
+who keeps checking IDs until there are no more people.</p>
+<p>Analogy:</p>
+<p>Imagine you're a security guard checking IDs at an entrance. The
+<span class="class_sVB-0">while</span> loop is like repeatedly checking
+IDs until there are no more people trying to enter.</p>
+<p><span class="class_sVC-0">// Example:<br />
+let count = 0;<br />
+</span></p>
+<p><span class="class_sVC-0">while (count 3) {<br />
+ console.log(`Count: ${count}`);<br />
+ count++;<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>This loop will run until <span class="class_sVB-0">count</span>
+reaches 3, printing the current count in each iteration.</p>
+<h1 class="heading_sR">36. Explain the purpose of the <span
+class="class_sVB-0">break</span> and <span
+class="class_sVB-0">continue</span> statements.</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">break</span> statement is like an emergency exit in
+a building. It's used to exit a loop prematurely, terminating the loop's
+execution. The <span class="class_sVB-0">continue</span> statement is
+like skipping a step and moving to the next iteration without completing
+the current one.</p>
+<p>Analogy:</p>
+<p>Think of the loop as a series of tasks. <span
+class="class_sVB-0">break</span> is like leaving the building
+immediately in case of an emergency, and <span
+class="class_sVB-0">continue</span> is like skipping a task and moving
+on to the next one.</p>
+<p><span class="class_sVC-0">// Example:<br />
+for (let i = 0; i 5; i++) {<br />
+ if (i === 2) {<br />
+   continue; // Skip iteration 2<br />
+ }<br />
+</span></p>
+<p><span class="class_sVC-0"> if (i === 4) {<br />
+   break; // Exit the loop when i is 4<br />
+ }<br />
+</span></p>
+<p><span class="class_sVC-0"> console.log(`Iteration ${i + 1}`);<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">continue</span> skips
+iteration 2, and <span class="class_sVB-0">break</span> exits the loop
+when <span class="class_sVB-0">i</span> is 4.</p>
+<h1 class="heading_sR">37. How do you iterate over the properties of an
+object?</h1>
+<p><span class="class_sVA-0">Explanation:</span> You can use a <span
+class="class_sVB-0">for...in</span> loop to iterate over the properties
+of an object. Think of it like exploring different rooms in a house.</p>
+<p>Analogy:</p>
+<p>Imagine you're an explorer in a house with many rooms. The <span
+class="class_sVB-0">for...in</span> loop is like going from room to
+room, discovering and documenting each property (item) in the house
+(object).</p>
+<p><span class="class_sVC-0">// Example:<br />
+const house = {<br />
+ livingRoom: 'Sofa and TV',<br />
+ kitchen: 'Stove and Fridge',<br />
+ bedroom: 'Bed and Wardrobe'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">for (let room in house) {<br />
+ console.log(`${room}: ${house[room]}`);<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>This loop explores each room (property) in the house, printing its
+contents.</p>
+<h1 class="heading_sR">38. What is a function expression?</h1>
+<p><span class="class_sVA-0">Explanation:</span> A function expression
+is a way to define a function as part of an expression. It's like
+assigning a superhero a mission when they are already in action.</p>
+<p>Analogy:</p>
+<p>Think of a superhero already on a mission. A function expression is
+like giving them a new mission while they are actively saving the
+day.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const addNumbers = function (a, b) {<br />
+ return a + b;<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(addNumbers(5, 3)); // Outputs:
+8<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">addNumbers</span> is a function
+expression assigned to the variable.</p>
+<h1 class="heading_sR">39. What is the difference between Function
+declaration and Function expression?</h1>
+<p><span class="class_sVA-0">Explanation:</span> A function declaration
+is a statement that defines a named function. It's like introducing a
+new character in a play. A function expression, on the other hand, is
+defining a function as part of an expression, like giving a character a
+role during the play.</p>
+<p>Analogy:</p>
+<p>Imagine organizing a play. A function declaration is like announcing
+a new character with a specific role, and a function expression is like
+assigning a role to an existing character during the play.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Function Declaration<br />
+function greet(name) {<br />
+ return `Hello, ${name}!`;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Function Expression<br />
+const sayHello = function (name) {<br />
+ return `Hello, ${name}!`;<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(greet('Alice'));   // Outputs:
+Hello, Alice!<br />
+console.log(sayHello('Bob'));  // Outputs: Hello, Bob!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">greet</span> is a function
+declaration, and <span class="class_sVB-0">sayHello</span> is a function
+expression.</p>
+<h1 class="heading_sR">40. Explain the concept of higher-order
+functions.</h1>
+<p><span class="class_sVA-0">Explanation:</span> A higher-order function
+is a function that takes one or more functions as arguments or returns a
+function as a result. It's like a director who can work with different
+actors to create various scenes.</p>
+<p>Analogy:</p>
+<p>Think of a movie director who can direct different actors in various
+scenes. A higher-order function is like a director orchestrating
+different functions to achieve specific tasks.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Higher-order function<br />
+function operate(operation, a, b) {<br />
+ return operation(a, b);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Functions to be operated<br />
+function add(x, y) {<br />
+ return x + y;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">function multiply(x, y) {<br />
+ return x * y;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(operate(add, 3, 4));       //
+Outputs: 7<br />
+console.log(operate(multiply, 2, 5));  // Outputs: 10<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">operate</span> is a higher-order
+function that works with different operation functions (<span
+class="class_sVB-0">add</span> and <span
+class="class_sVB-0">multiply</span>).</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_41">41. What is the
+difference between parameters and arguments?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Parameters and
+arguments are terms related to functions. Parameters are placeholders in
+the function definition, while arguments are the actual values passed to
+the function when it's invoked.</p>
+<p>Analogy:</p>
+<p>Think of a function as a recipe. Parameters are like the ingredients
+listed in the recipe, and arguments are the actual items you use when
+cooking.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// x and y are parameters<br />
+function add(x, y) {<br />
+ return x + y;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// 3 and 4 are arguments<br />
+const result = add(3, 4); // Outputs: 7<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">x</span> and <span
+class="class_sVB-0">y</span> are parameters, and <span
+class="class_sVB-0">3</span> and <span class="class_sVB-0">4</span> are
+arguments.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_42">42. How does the
+return statement work in functions?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">return</span> statement is used to specify the value
+that a function should return. It ends the function's execution and
+sends the specified value back to the caller.</p>
+<p>Analogy:</p>
+<p>Consider a function as a machine. The <span
+class="class_sVB-0">return</span> statement is like the output slot of
+the machine, where the final product is released for use.</p>
+<p><span class="class_sVC-0">// Example:<br />
+function multiply(a, b) {<br />
+ return a * b;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const result = multiply(2, 3); // Outputs:
+6<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">return</span>
+statement sends the result of the multiplication back to the caller.</p>
+<h1 class="heading_sR">43. How can you prevent a function from executing
+immediately?</h1>
+<p><span class="class_sVA-0">Explanation:</span> To prevent a function
+from executing <span id="part0001.xhtml_page_43"></span>immediately, you
+can use a function expression and wrap it inside parentheses, creating
+an anonymous function. This way, the function becomes a value that can
+be stored or passed around without automatic execution.</p>
+<p>Analogy:</p>
+<p>Think of a function as a chef preparing a dish. Wrapping the function
+in parentheses is like placing the dish in a container, ready to be
+served later.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const delayedFunction = function() {<br />
+ console.log('This function is not executed immediately.');<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Now, you can execute it later<br />
+delayedFunction();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">delayedFunction</span> is a function
+expression that is not executed immediately.</p>
+<h1 class="heading_sR">44. Explain passed by value and passed by
+reference.</h1>
+<p><span class="class_sVA-0">Explanation:</span> In JavaScript,
+primitive types (passed by value) are directly passed, while objects
+(passed by reference) are passed as references to their memory
+locations.</p>
+<p>Analogy:</p>
+<p>Think of passing a letter (primitive) versus passing a GPS coordinate
+(object). The letter is a standalone piece of information, while the GPS
+coordinate refers to a location that may change.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Passed by value<br />
+let num = 5;<br />
+let copyNum = num; // copyNum gets the value of num<br />
+</span></p>
+<p><span class="class_sVC-0">// Passed by reference<br />
+let obj1 = { value: 10 };<br />
+let obj2 = obj1; // obj2 references the same memory as obj1<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Changes to <span class="class_sVB-0">num</span> do not affect <span
+class="class_sVB-0">copyNum</span> (passed by value), but changes to
+<span class="class_sVB-0">obj1</span> also affect <span
+class="class_sVB-0">obj2</span> (passed by reference).</p>
+<h1 class="heading_sR">45. What is an Immediately Invoked Function in
+JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> An Immediately Invoked
+Function Expression (IIFE) is a function that is defined and executed
+immediately after its creation. It helps create a private scope and is
+often used to avoid polluting the global namespace.</p>
+<p>Analogy:</p>
+<p>Imagine a magician casting a spell as soon as the incantation is
+complete. The spell (function) is performed instantly without
+waiting.</p>
+<p><span class="class_sVF">// Example:<br />
+(function() {<br />
+ console.log('This function is invoked immediately.');<br />
+})();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>The function is defined inside parentheses and invoked
+immediately.</p>
+<h1 class="heading_sR">46. What do you mean by Self-Invoking
+Functions?</h1>
+<p><span class="class_sVA-0">Explanation:</span> A self-invoking
+function is a function that calls itself automatically upon its
+creation. It's another way to create private scopes and execute code
+without explicit invocation.</p>
+<p>Analogy:</p>
+<p>Picture a robot assembling itself and activating its functions
+without someone pressing a start button—it initializes on its own.</p>
+<p><span class="class_sVF">// Example:<br />
+(function() {<br />
+ <span id="part0001.xhtml_page_46"></span>console.log('This function is
+self-invoking.');<br />
+})();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>The function is defined and calls itself without external
+triggering.</p>
+<h1 class="heading_sR">47. Can you assign an anonymous function to a
+variable and pass it as an argument to another function?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Yes, you can assign an
+anonymous function (function expression) to a variable and pass it as an
+argument to another function. It's a common practice, especially for
+passing functions as parameters.</p>
+<p>Analogy:</p>
+<p>Think of passing a recipe (anonymous function) to a chef (another
+function). The chef can follow the recipe to create a specific dish.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const multiplyByTwo = function(x) {<br />
+ return x * 2;<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">function processNumber(num, operation)
+{<br />
+ return operation(num);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const result = processNumber(5,
+multiplyByTwo); // Outputs: 10<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">multiplyByTwo</span> is an anonymous
+function passed to <span class="class_sVB-0">processNumber</span>.</p>
+<h1 class="heading_sR">48. What is the argument object in JavaScript,
+and how to get the type of arguments passed to a function?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The argument object is
+an array-like object accessible inside functions. It holds all the
+arguments passed to the function. The <span
+class="class_sVB-0">typeof</span> operator helps determine the type of a
+specific argument.</p>
+<p>Analogy:</p>
+<p>Consider a waiter carrying a tray with different dishes (arguments).
+The waiter can inspect each dish to determine its type.</p>
+<p><span class="class_sVC-0">// Example:<br />
+function displayTypes() {<br />
+ for (let i = 0; i    <span
+id="part0001.xhtml_page_48"></span>console.log(`Argument ${i + 1} is of
+type ${typeof arguments[i]}`);<br />
+ }<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">displayTypes(42, 'hello', true);<br />
+// Outputs:<br />
+// Argument 1 is of type number<br />
+// Argument 2 is of type string<br />
+// Argument 3 is of type boolean<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">arguments</span>
+object is used to iterate over the passed arguments and determine their
+types.</p>
+<h1 class="heading_sR">49. What is an object in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> In JavaScript, an
+object is a complex data type that can store key-value pairs. It's a way
+to represent entities with properties and behaviors.</p>
+<p>Analogy:</p>
+<p>Think of an object as a car with various attributes like color,
+model, and methods like start and stop.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const car = {<br />
+ make: 'Toyota',<br />
+ model: 'Camry',<br />
+ <span id="part0001.xhtml_page_49"></span>year: 2022,<br />
+ start: function() {<br />
+   console.log('Engine started.');<br />
+ }<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(car.make); // Outputs:
+Toyota<br />
+car.start(); // Outputs: Engine started.<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">car</span> is an object with
+properties (<span class="class_sVB-0">make</span>, <span
+class="class_sVB-0">model</span>, <span class="class_sVB-0">year</span>)
+and a method (<span class="class_sVB-0">start</span>).</p>
+<h1 class="heading_sR">50. How can you create an object in
+JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> You can create an
+object in JavaScript using either object literal notation or the <span
+class="class_sVB-0">Object</span> constructor.</p>
+<p>Analogy:</p>
+<p>Creating an object is like constructing a building. You can use
+predefined blueprints (literal notation) or hire an architect
+(constructor) to design a custom structure.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Object literal notation<br />
+const person = {<br />
+ name: 'Alice',<br />
+ <span id="part0001.xhtml_page_50"></span>age: 30,<br />
+ job: 'Engineer'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Using the Object constructor<br />
+const book = new Object();<br />
+book.title = 'The Great Gatsby';<br />
+book.author = 'F. Scott Fitzgerald';<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Both examples result in the creation of objects (<span
+class="class_sVB-0">person</span> and <span
+class="class_sVB-0">book</span>).</p>
+<h1 class="heading_sR">51. How do you access object properties?</h1>
+<p><span class="class_sVA-0">Explanation:</span> To access object
+properties in JavaScript, you can use either dot notation or bracket
+notation. Dot notation is simpler and commonly used when you know the
+property name in advance.</p>
+<p>Analogy:</p>
+<p>Think of accessing object properties like opening compartments in a
+toolbox. If you know the name of the tool (property), you directly pick
+it from its designated place.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const person = {<br />
+ name: 'John',<br />
+ <span id="part0001.xhtml_page_51"></span>age: 25,<br />
+ job: 'Developer'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(person.name); // Dot notation:
+Outputs John<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">person.name</span>
+retrieves the value of the <span class="class_sVB-0">name</span>
+property using dot notation.</p>
+<h1 class="heading_sR">52. How can you add or modify properties of an
+object?</h1>
+<p><span class="class_sVA-0">Explanation:</span> You can add or modify
+properties of an object using assignment. If the property exists, it
+will be modified; if not, a new property will be created.</p>
+<p>Analogy:</p>
+<p>Adding or modifying object properties is akin to updating information
+on a whiteboard. You erase and rewrite the details as needed.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const car = {<br />
+ make: 'Honda',<br />
+ model: 'Civic'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Adding a new property<br />
+car.year = 2023;<br />
+</span></p>
+<p><span class="class_sVC-0">// Modifying an existing property<br />
+car.model = 'Accord';<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(car);<br />
+// Outputs: { make: 'Honda', model: 'Accord', year: 2023 }<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, the <span class="class_sVB-0">year</span> property is added,
+and the <span class="class_sVB-0">model</span> property is modified.</p>
+<h1 class="heading_sR">53. Explain the difference between dot notation
+and bracket notation.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Both dot notation and
+bracket notation are ways to access object properties. Dot notation is
+concise and used when the property name is known in advance. Bracket
+notation is more flexible and allows dynamic property access using
+variables.</p>
+<p>Analogy:</p>
+<p>Think of dot notation as using a fixed key to open a lock, while
+bracket notation is like using a variable key that can change.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const person = {<br />
+ <span id="part0001.xhtml_page_53"></span>name: 'Alice',<br />
+ age: 30<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">const propertyName = 'name';<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(person.name); // Dot notation:
+Outputs Alice<br />
+console.log(person[propertyName]); // Bracket notation: Outputs
+Alice<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">propertyName</span> is a variable,
+and bracket notation lets you access the property dynamically.</p>
+<h1 class="heading_sR">54. What is JSON, and how is it related to
+JavaScript objects?</h1>
+<p><span class="class_sVA-0">Explanation:</span> JSON (JavaScript Object
+Notation) is a lightweight data interchange format. It shares a similar
+syntax with JavaScript objects but is a text-based format used for data
+exchange between different languages.</p>
+<p>Analogy:</p>
+<p>Imagine JavaScript objects as objects within your house, and JSON as
+a language-agnostic representation of those objects suitable for sharing
+with neighbors.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// JavaScript object<br />
+const person = {<br />
+ name: 'Bob',<br />
+ age: 28<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// JSON representation<br />
+const jsonPerson = '{"name": "Bob", "age": 28}';<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p><span class="class_sVB-0">jsonPerson</span> is a string following
+JSON syntax but representing the same data as the JavaScript object.</p>
+<h1 class="heading_sR">55. What are object prototypes?</h1>
+<p><span class="class_sVA-0">Explanation:</span> In JavaScript, every
+object is linked to a prototype object from which it inherits
+properties. Prototypes enable object inheritance, and modifications to
+the prototype reflect in all objects linked to it.</p>
+<p>Analogy:</p>
+<p>Consider prototypes as blueprints for building objects. Objects
+inherit characteristics from their prototypes, just as buildings follow
+architectural plans.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const dog = {<br />
+ <span id="part0001.xhtml_page_55"></span>breed: 'Labrador'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">const myDog = {<br />
+ name: 'Buddy'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Linking myDog to the dog prototype<br />
+Object.setPrototypeOf(myDog, dog);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(myDog.breed); // Outputs
+Labrador<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">myDog</span> inherits the <span
+class="class_sVB-0">breed</span> property from its prototype <span
+class="class_sVB-0">dog</span>.</p>
+<h1 class="heading_sR">56. What is destructuring, and how does it work
+with objects and arrays?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Destructuring in
+JavaScript allows you to extract values from objects and arrays,
+assigning them to variables in a concise manner.</p>
+<p>Analogy:</p>
+<p>Think of destructuring as unwrapping a gift with multiple layers. You
+extract each item and assign it to a variable.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Destructuring an object<br />
+const person = { name: 'Alice', age: 25 };<br />
+const { name, age } = person;<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(name); // Outputs Alice<br />
+console.log(age); // Outputs 25<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">{ name, age }</span> extracts values
+from the <span class="class_sVB-0">person</span> object into variables
+of the same names.</p>
+<h1 class="heading_sR">57. How do arrow functions differ from regular
+functions?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Arrow functions are a
+concise way to write functions in JavaScript, with some differences from
+regular functions. Arrow functions have a shorter syntax, no <span
+class="class_sVB-0">this</span> binding, and cannot be used as
+constructors.</p>
+<p>Analogy:</p>
+<p>Regular functions are like traditional cars, versatile but sometimes
+bulky. Arrow functions are like electric scooters—compact and efficient
+for specific use cases.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Regular function<br />
+function add(a, b) {<br />
+ <span id="part0001.xhtml_page_57"></span>return a + b;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Arrow function<br />
+const sum = (a, b) =&gt; a + b;<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(add(3, 4)); // Outputs 7<br />
+console.log(sum(3, 4)); // Outputs 7<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Both functions perform the same addition, but arrow functions have a
+more concise syntax.</p>
+<h1 class="heading_sR">58. Explain the concept of template
+literals.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Template literals are a
+way to create strings in JavaScript, allowing embedded expressions and
+multiline strings. They are enclosed by backticks (<span
+class="class_sVB-0">`</span>).</p>
+<p>Analogy:</p>
+<p>Think of template literals as customizable greeting cards. You can
+include dynamic messages and decorate them with ease.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const name = 'Alice';<br />
+const greeting = `Hello, ${name}!`;<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(greeting); // Outputs: Hello,
+Alice!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">${name}</span> is an embedded
+expression within the template literal.</p>
+<h1 class="heading_sR">59. Describe the class syntax for creating
+objects.</h1>
+<p><span class="class_sVA-0">Explanation:</span> In JavaScript, the
+class syntax provides a cleaner and more familiar way to create objects
+and implement inheritance. Underneath, it's still based on prototype
+inheritance.</p>
+<p>Analogy:</p>
+<p>Imagine classes as blueprints for constructing objects, similar to
+how architects design buildings.</p>
+<p><span class="class_sVC-0">// Example:<br />
+class Animal {<br />
+ constructor(name) {<br />
+   this.name = name;<br />
+ }<br />
+</span></p>
+<p><span class="class_sVC-0"> speak() {<br />
+   console.log(`${this.name} makes a sound.`);<br />
+ <span id="part0001.xhtml_page_59"></span>}<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Creating an instance of the Animal
+class<br />
+const dog = new Animal('Buddy');<br />
+dog.speak(); // Outputs: Buddy makes a sound.<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">Animal</span> is a class, and <span
+class="class_sVB-0">dog</span> is an instance of that class.</p>
+<h1 class="heading_sR">60. What are import and export in ES6? How are
+they used?</h1>
+<p><span class="class_sVA-0">Explanation:</span> In ES6 (ECMAScript
+2015) and later, <span class="class_sVB-0">import</span> and <span
+class="class_sVB-0">export</span> are used for module handling. <span
+class="class_sVB-0">export</span> allows you to expose functions,
+objects, or values from a module, while <span
+class="class_sVB-0">import</span> enables you to use them in another
+module.</p>
+<p>Analogy:</p>
+<p>Think of modules as separate rooms in a house. <span
+class="class_sVB-0">export</span> is like placing items in a room, and
+<span class="class_sVB-0">import</span> is like fetching those items
+when needed.</p>
+<p><span class="class_sVC-0">// Module A - exporting a function<br />
+export function greet(name) {<br />
+ return `Hello, ${name}!`;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Module B - importing the function<br />
+import { greet } from './moduleA';<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(greet('Alice')); // Outputs:
+Hello, Alice!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">greet</span> is exported from Module
+A and imported into Module B.</p>
+<h1 class="heading_sR">61. What is the event loop in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The event loop is a
+critical part of JavaScript's concurrency model. It continuously checks
+the message queue for new tasks and executes them in a single-threaded,
+non-blocking manner, allowing asynchronous operations to occur.</p>
+<p>Analogy:</p>
+<p>Imagine a chef preparing multiple dishes in a kitchen. The chef takes
+orders (tasks) and keeps an eye on the stove (message queue) while
+working on other tasks. The chef doesn't wait for one dish to finish
+cooking before starting another.</p>
+<p><span class="class_sVC-0">// Example:<br />
+console.log('Start');<br />
+</span></p>
+<p><span class="class_sVC-0">setTimeout(() =&gt; {<br />
+ console.log('Timeout callback');<br />
+}, 2000);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log('End');<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">setTimeout</span>
+function initiates a timer, and the callback is placed in the message
+queue. The event loop ensures that the callback is executed after the
+specified time, without blocking the rest of the code.</p>
+<h1 class="heading_sR">62. Explain the concept of callbacks and provide
+an example.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Callbacks are functions
+passed as arguments to other functions. They are commonly used in
+asynchronous operations to execute code after a task completes.</p>
+<p>Analogy:</p>
+<p>Consider callbacks like leaving a note for a friend. You provide
+instructions (callback) on what to do, and your friend follows them when
+they have time.</p>
+<p><span class="class_sVC-0">// Example:<br />
+function fetchData(callback) {<br />
+ // Simulating asynchronous operation<br />
+ setTimeout(() =&gt; {<br />
+   const data = 'Fetched data';<br />
+   callback(data);<br />
+ }, 1000);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">function processFetchedData(data) {<br />
+ console.log(`Processing: ${data}`);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">fetchData(processFetchedData);<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">processFetchedData</span>
+is a callback passed to <span class="class_sVB-0">fetchData</span>, and
+it processes the fetched data when the asynchronous operation is
+complete.</p>
+<h1 class="heading_sR">63. What is a Promise? How does it help with
+asynchronous operations?</h1>
+<p><span class="class_sVA-0">Explanation:</span> A Promise is an object
+representing the eventual completion or failure of an asynchronous
+operation. It provides a cleaner syntax for handling asynchronous code,
+making it more readable and maintainable.</p>
+<p>Analogy:</p>
+<p>Think of a Promise as a contract for a delivery service. You receive
+a tracking number (Promise), and it assures you that the package
+(asynchronous operation) will be delivered or rejected.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const fetchData = new Promise((resolve, reject) =&gt; {<br />
+ // Simulating asynchronous operation<br />
+ setTimeout(() =&gt; {<br />
+   <span id="part0001.xhtml_page_63"></span>const success = true;<br />
+   if (success) {<br />
+     resolve('Fetched data');<br />
+   } else {<br />
+     reject('Error fetching data');<br />
+   }<br />
+ }, 1000);<br />
+});<br />
+</span></p>
+<p><span class="class_sVC-0">// Using the Promise<br />
+fetchData<br />
+ .then(data =&gt; console.log(`Success: ${data}`))<br />
+ .catch(error =&gt; console.error(`Error: ${error}`));<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, the <span class="class_sVB-0">fetchData</span> Promise resolves
+with data or rejects with an error, and <span
+class="class_sVB-0">.then</span> and <span
+class="class_sVB-0">.catch</span> handle the respective outcomes.</p>
+<h1 class="heading_sR">64. Describe the async and await keywords in
+ES6.</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">async</span> and <span
+class="class_sVB-0">await</span> keywords are part of ES6 and are used
+to simplify working with Promises. <span
+class="class_sVB-0">async</span> is <span
+id="part0001.xhtml_page_64"></span>used to define a function that
+returns a Promise, and <span class="class_sVB-0">await</span> is used to
+pause execution until the Promise is settled.</p>
+<p>Analogy:</p>
+<p>Consider <span class="class_sVB-0">async</span> as a promise to
+complete a task, and <span class="class_sVB-0">await</span> as patiently
+waiting for that task to finish before moving on to the next.</p>
+<p><span class="class_sVC-0">// Example:<br />
+async function fetchData() {<br />
+ return new Promise(resolve =&gt; {<br />
+   setTimeout(() =&gt; {<br />
+     resolve('Fetched data');<br />
+   }, 1000);<br />
+ });<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">async function fetchDataAndPrint() {<br />
+ const data = await fetchData();<br />
+ console.log(`Data: ${data}`);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">fetchDataAndPrint();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">fetchData</span> returns a Promise,
+and <span class="class_sVB-0">fetchDataAndPrint</span> uses <span
+class="class_sVB-0">await</span> to wait for the Promise to resolve
+before printing the data.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_65">65. How can you
+handle errors in asynchronous code?</h1>
+<p><span class="class_sVA-0">Explanation:</span> In asynchronous code,
+errors can be handled using <span class="class_sVB-0">try...catch</span>
+blocks or by chaining a <span class="class_sVB-0">.catch</span> method
+to a Promise.</p>
+<p>Analogy:</p>
+<p>Handling errors in asynchronous code is like having a backup plan in
+case something goes wrong during a complex task.</p>
+<p><span class="class_sVC-0">// Example:<br />
+async function fetchData() {<br />
+ return new Promise((resolve, reject) =&gt; {<br />
+   setTimeout(() =&gt; {<br />
+     const success = Math.random() &gt; 0.5;<br />
+     if (success) {<br />
+       resolve('Fetched data');<br />
+     } else {<br />
+       reject('Error fetching data');<br />
+     }<br />
+   }, 1000);<br />
+ });<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">async function fetchDataAndPrint() {<br />
+ try {<br />
+   <span id="part0001.xhtml_page_66"></span>const data = await
+fetchData();<br />
+   console.log(`Data: ${data}`);<br />
+ } catch (error) {<br />
+   console.error(`Error: ${error}`);<br />
+ }<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">fetchDataAndPrint();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">fetchData</span>
+Promise simulates success or failure, and <span
+class="class_sVB-0">try...catch</span> in <span
+class="class_sVB-0">fetchDataAndPrint</span> handles any errors.</p>
+<h1 class="heading_sR">66. How does prototypal inheritance work in
+JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Prototypal inheritance
+in JavaScript allows objects to inherit properties and methods from
+other objects. Each object has an associated prototype object, forming a
+chain.</p>
+<p>Analogy:</p>
+<p>Think of prototypal inheritance as a family tree. An object is like a
+child inheriting traits from its parent, and this inheritance chain
+continues.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Parent object (prototype)<br />
+const animal = {<br />
+ <span id="part0001.xhtml_page_67"></span>makeSound() {<br />
+   console.log('Some generic sound');<br />
+ }<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Child object<br />
+const dog = {<br />
+ breed: 'Labrador'<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Linking dog to the animal
+prototype<br />
+Object.setPrototypeOf(dog, animal);<br />
+</span></p>
+<p><span class="class_sVC-0">dog.makeSound(); // Outputs: Some generic
+sound<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">dog</span> inherits the <span
+class="class_sVB-0">makeSound</span> method from the <span
+class="class_sVB-0">animal</span> prototype.</p>
+<h1 class="heading_sR">67. What is the significance of the "this"
+keyword in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">this</span> keyword refers to the current execution
+context and depends on how a function is called. In a method, <span
+class="class_sVB-0">this</span> refers to the object the method is
+called on.</p>
+<p>Analogy:</p>
+<p>Consider <span class="class_sVB-0">this</span> as a placeholder that
+represents the current actor on a stage. It changes based on who is
+currently performing.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const person = {<br />
+ name: 'John',<br />
+ greet() {<br />
+   console.log(`Hello, ${this.name}!`);<br />
+ }<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">person.greet(); // Outputs: Hello,
+John<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">this.name</span> refers to
+the <span class="class_sVB-0">name</span> property of the <span
+class="class_sVB-0">person</span> object.</p>
+<h1 class="heading_sR">68. What is the purpose of the "bind" method in
+JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">bind</span> method in JavaScript is used to create a
+new function with a specified <span class="class_sVB-0">this</span>
+value and initial arguments. It doesn't immediately invoke the function
+but allows you to use it later.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">bind</span> as reserving a seat in
+a theater. You're preparing a function for later use and specifying its
+context.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const person = {<br />
+ name: 'Alice',<br />
+ greet() {<br />
+   console.log(`Hello, ${this.name}!`);<br />
+ }<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">// Creating a bound function<br />
+const greetLater = person.greet.bind(person);<br />
+</span></p>
+<p><span class="class_sVC-0">// Using the bound function<br />
+greetLater(); // Outputs: Hello, Alice!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>Here, <span class="class_sVB-0">bind</span> is used to create <span
+class="class_sVB-0">greetLater</span>, ensuring that when it's called
+later, it's still associated with the <span
+class="class_sVB-0">person</span> object.</p>
+<h1 class="heading_sR">69. What is the difference between synchronous
+and asynchronous code in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Synchronous code
+executes line by line, blocking <span
+id="part0001.xhtml_page_70"></span>further execution until the current
+operation is complete. Asynchronous code allows the program to continue
+executing while waiting for an operation to finish.</p>
+<p>Analogy:</p>
+<p>Synchronous code is like waiting in a queue where everyone has to
+wait for their turn. Asynchronous code is like placing an order at a
+restaurant and being free to do other things while waiting for the
+food.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Synchronous<br />
+console.log('Start');<br />
+console.log('Middle');<br />
+console.log('End');<br />
+</span></p>
+<p><span class="class_sVC-0">// Asynchronous<br />
+console.log('Start');<br />
+</span></p>
+<p><span class="class_sVC-0">setTimeout(() =&gt; {<br />
+ console.log('Delayed execution');<br />
+}, 1000);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log('End');<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In the asynchronous example, the delayed execution doesn't block the
+subsequent log statements.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_71">70. How does the
+"map" function work in JavaScript, and can you provide an example?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">map</span> function in JavaScript is used to
+transform elements of an array. It creates a new array with the results
+of calling a provided function on every element in the original
+array.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">map</span> as a conveyor belt in a
+factory. Each item on the belt goes through a transformation process,
+and a new set of transformed items is produced.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const numbers = [1, 2, 3, 4];<br />
+</span></p>
+<p><span class="class_sVC-0">const doubled = numbers.map(num =&gt; num *
+2);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(doubled); // Outputs: [2, 4, 6,
+8]<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">map</span> function
+doubles each number in the <span class="class_sVB-0">numbers</span>
+array, creating a new array <span
+class="class_sVB-0">doubled</span>.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_72">71. Explain the
+difference between shallow and deep copying of objects.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Shallow copying and
+deep copying refer to different ways of duplicating objects. Shallow
+copying creates a new object with the same top-level structure as the
+original, while deep copying creates a new object with copies of all
+nested structures.</p>
+<p>Analogy:</p>
+<p>Imagine a set of nested boxes. Shallow copying makes a new set of
+boxes with the same contents as the original top-level box. Deep copying
+creates an entirely new set of nested boxes with copies of the contents
+of each box.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Shallow copy<br />
+const original = { a: 1, b: { c: 2 } };<br />
+const shallowCopy = { ...original };<br />
+</span></p>
+<p><span class="class_sVC-0">// Deep copy (using a library like
+lodash)<br />
+const deepCopy = _.cloneDeep(original);<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In the example, modifying <span
+class="class_sVB-0">original.b.c</span> after shallow copying would
+affect <span class="class_sVB-0">shallowCopy</span>, while deep copying
+keeps the two objects independent.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_73">72. How does the
+"async/await" feature simplify asynchronous code in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">async/await</span> feature in JavaScript simplifies
+the syntax for working with asynchronous code using Promises. <span
+class="class_sVB-0">async</span> is used to define a function that
+returns a Promise, and <span class="class_sVB-0">await</span> is used to
+pause execution until the Promise is settled.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">async/await</span> as reading a
+recipe book. You can start preparing the next ingredient while waiting
+for a particular ingredient to finish cooking.</p>
+<p><span class="class_sVC-0">// Example:<br />
+async function fetchData() {<br />
+ return new Promise(resolve =&gt; {<br />
+   setTimeout(() =&gt; {<br />
+     resolve('Fetched data');<br />
+   }, 1000);<br />
+ });<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">async function fetchDataAndPrint() {<br />
+ const data = await fetchData();<br />
+ <span id="part0001.xhtml_page_74"></span>console.log(`Data:
+${data}`);<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">fetchDataAndPrint();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">fetchDataAndPrint</span>
+waits for the <span class="class_sVB-0">fetchData</span> Promise to
+resolve, making the code appear more synchronous and readable.</p>
+<h1 class="heading_sR">73. Explain the concept of memoization in
+JavaScript.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Memoization is a
+technique where the results of expensive function calls are cached, so
+that if the same inputs occur again, the cached result is returned
+instead of re-executing the function.</p>
+<p>Analogy:</p>
+<p>Think of memoization like a chef keeping a record of recipes and
+their outcomes. If the chef has cooked a particular dish before, they
+check their record to see if they can reuse the result.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const memoizedFunction = (function () {<br />
+ const cache = {};<br />
+</span></p>
+<p><span class="class_sVC-0"> return function (arg) {<br />
+   if (arg in cache) {<br />
+     <span id="part0001.xhtml_page_75"></span>return cache[arg];<br />
+   } else {<br />
+     const result = expensiveOperation(arg);<br />
+     cache[arg] = result;<br />
+     return result;<br />
+   }<br />
+ };<br />
+})();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">memoizedFunction</span>
+caches results based on the input <span class="class_sVB-0">arg</span>,
+avoiding redundant computations for the same argument.</p>
+<h1 class="heading_sR">74. What is the purpose of the "try/catch"
+statement in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">try/catch</span> statement is used to handle
+exceptions (errors) in JavaScript. Code inside the <span
+class="class_sVB-0">try</span> block is executed, and if an error
+occurs, it's caught and handled in the <span
+class="class_sVB-0">catch</span> block.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">try/catch</span> like driving with
+a safety net. If you encounter an unexpected obstacle on the road, the
+safety net (catch block) helps you handle the situation.</p>
+<p><span class="class_sVF">// Example:<br />
+try {<br />
+ // Code that may throw an error<br />
+ const result = calculateResult();<br />
+ console.log(`Result: ${result}`);<br />
+} catch (error) {<br />
+ // Handle the error<br />
+ console.error(`Error: ${error.message}`);<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, if an error occurs during the execution of <span
+class="class_sVB-0">calculateResult</span>, it's caught and logged in
+the <span class="class_sVB-0">catch</span> block.</p>
+<h1 class="heading_sR">75. How does the "localStorage" differ from
+"sessionStorage" in web development?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Both <span
+class="class_sVB-0">localStorage</span> and <span
+class="class_sVB-0">sessionStorage</span> are web storage options, but
+they differ in their persistence and scope. <span
+class="class_sVB-0">localStorage</span> persists data even after the
+browser is closed and is accessible across browser tabs, while <span
+class="class_sVB-0">sessionStorage</span> persists data only for the
+duration of a page session and is tab-specific.</p>
+<p>Analogy:</p>
+<p>Consider <span class="class_sVB-0">localStorage</span> as a long-term
+memory where you store information for future reference. <span
+class="class_sVB-0">sessionStorage</span> is like short-term memory,
+used for storing information temporarily during a specific task.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Storing data in localStorage<br />
+localStorage.setItem('user', 'John');<br />
+</span></p>
+<p><span class="class_sVC-0">// Storing data in sessionStorage<br />
+sessionStorage.setItem('token', 'abc123');<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the data stored in <span
+class="class_sVB-0">localStorage</span> will persist even if the user
+closes the browser and opens it later. The data in <span
+class="class_sVB-0">sessionStorage</span> will only be available within
+the same session.</p>
+<h1 class="heading_sR">76. What is the difference between a function
+declaration and a function expression?</h1>
+<p><span class="class_sVA-0">Explanation:</span> A function declaration
+defines a function using the <span class="class_sVB-0">function</span>
+keyword and is hoisted to the top of its scope. A function expression
+creates a function as part of an expression and is not hoisted.</p>
+<p>Analogy:</p>
+<p>Think of a function declaration as a standalone recipe in a cookbook.
+You can refer to it anywhere in the cookbook. A function expression is
+like a recipe embedded within a sentence; you can only use it after it's
+mentioned.</p>
+<p><span class="class_sVC-0">// Example:<br />
+// Function declaration<br />
+function add(a, b) {<br />
+ return a + b;<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">// Function expression<br />
+const subtract = function(a, b) {<br />
+ return a - b;<br />
+};<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">add</span> is a function
+declaration, while <span class="class_sVB-0">subtract</span> is a
+function expression assigned to a variable.</p>
+<h1 class="heading_sR">77. Explain the role of the "Event Delegation"
+pattern in JavaScript.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Event delegation is a
+pattern where a single event listener is attached to a common ancestor
+of multiple elements. It leverages event bubbling to handle events on
+child elements without attaching listeners to each child
+individually.</p>
+<p>Analogy:</p>
+<p>Imagine a teacher assigning a class representative to collect
+feedback. Instead of the teacher talking to each student, they talk to
+the representative who conveys the feedback.</p>
+<p><span class="class_sVC-0">// Example:<br />
+</span></p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<p><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, a single click event listener is attached to the
+<span class="class_sVB-0">ul</span> element, and it determines which
+<span class="class_sVB-0">li</span> was clicked using event
+delegation.</p>
+<h1 class="heading_sR">78. How do you handle errors in asynchronous code
+in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Errors in asynchronous
+code are handled using <span id="part0001.xhtml_page_80"></span><span
+class="class_sVB-0">try/catch</span> blocks or by attaching a <span
+class="class_sVB-0">.catch()</span> handler to a Promise. Asynchronous
+errors won't be caught by a surrounding synchronous <span
+class="class_sVB-0">try/catch</span> block.</p>
+<p>Analogy:</p>
+<p>Handling asynchronous errors is like expecting a delivery. You can
+either be present to receive it (<span
+class="class_sVB-0">.then()</span>), or you can provide delivery
+instructions for unforeseen circumstances (<span
+class="class_sVB-0">.catch()</span>).</p>
+<p><span class="class_sVF">// Example:<br />
+async function fetchData() {<br />
+ try {<br />
+   const response = await fetch('https://api.example.com/data');<br />
+   const data = await response.json();<br />
+   console.log(data);<br />
+ } catch (error) {<br />
+   console.error(`Error fetching data: ${error.message}`);<br />
+ }<br />
+}<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">try/catch</span> block
+handles errors during the asynchronous data fetching process.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_81">79. What is the
+purpose of the "fetch" API, and how is it used for making HTTP
+requests?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">fetch</span> API is used to make HTTP requests in
+JavaScript. It returns a Promise that resolves to the <span
+class="class_sVB-0">Response</span> to that request, representing the
+response to the request.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">fetch</span> as sending a letter
+to a friend. You send the letter and wait for a response, which may
+contain the requested information.</p>
+<p><span class="class_sVF">// Example:<br />
+fetch('https://api.example.com/data')<br />
+ .then(response =&gt; response.json())<br />
+ .then(data =&gt; console.log(data))<br />
+ .catch(error =&gt; console.error(`Error fetching data:
+${error.message}`));<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">fetch</span> function
+is used to make a request, and the subsequent <span
+class="class_sVB-0">.then()</span> and <span
+class="class_sVB-0">.catch()</span> blocks handle the response and any
+errors.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_82">80. Explain the
+concept of the "RESTful" API.</h1>
+<p><span class="class_sVA-0">Explanation:</span> A RESTful API
+(Representational State Transfer) is an architectural style for
+designing networked applications. It uses a set of constraints to create
+a scalable and stateless communication between clients and servers.</p>
+<p>Analogy:</p>
+<p>Consider a RESTful API as a menu at a restaurant. The menu provides a
+clear set of options (endpoints), and each order (HTTP request) is
+independent, allowing the kitchen (server) to focus on cooking without
+keeping track of previous orders.</p>
+<p>Example:</p>
+<p>A RESTful API might have endpoints like <span
+class="class_sVB-0">/users</span> to get a list of users or <span
+class="class_sVB-0">/products/123</span> to get details about a specific
+product.</p>
+<h1 class="heading_sR">81. What is the purpose of the "spread" operator
+in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The "spread" operator
+(<span class="class_sVB-0">...</span>) in JavaScript is used to expand
+elements of an array or properties of an object. It allows you to clone,
+merge, or extract parts of arrays and objects easily.</p>
+<p>Analogy:</p>
+<p>Think of the "spread" operator as copying ingredients from one recipe
+to another. It takes elements from one array or properties from one
+object and spreads them into a new array or object.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const originalArray = [1, 2, 3];<br />
+const newArray = [...originalArray, 4, 5];<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(newArray); // Outputs: [1, 2,
+3, 4, 5]<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the "spread" operator is used to create a new array
+by spreading the elements of <span
+class="class_sVB-0">originalArray</span> and appending additional
+elements.</p>
+<h1 class="heading_sR">82. How does the JavaScript event loop handle
+tasks with different priorities?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The JavaScript event
+loop is responsible for executing code, handling events, and managing
+tasks. Tasks with different priorities are placed in different queues,
+and the event loop processes them in a specific order: the callback
+queue, microtask queue, and animation frame.</p>
+<p>Analogy:</p>
+<p>Imagine a multitasking secretary managing tasks. High-priority tasks
+go to the top of the to-do list, ensuring urgent matters are addressed
+first, followed by less critical tasks.</p>
+<p><span class="class_sVF">// Example:<br />
+setTimeout(() =&gt; console.log('Task 1'), 0);<br />
+Promise.resolve().then(() =&gt; console.log('Task 2'));<br />
+console.log('Task 3');<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, even though <span class="class_sVB-0">Task 1</span>
+has a timeout of 0, it goes to the callback queue, while the microtask
+queue handles <span class="class_sVB-0">Task 2</span>. <span
+class="class_sVB-0">Task 3</span> is part of the main execution
+stack.</p>
+<h1 class="heading_sR">83. Explain the concept of the same-origin policy
+in web security.</h1>
+<p><span class="class_sVA-0">Explanation:</span> The same-origin policy
+is a security measure implemented by web browsers. It restricts web
+pages from making requests to a different domain than the one that
+served the web page, preventing potential security vulnerabilities like
+Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).</p>
+<p>Analogy:</p>
+<p>Think of the same-origin policy as a door policy at a club. Only
+guests from the same club (origin) are allowed in, preventing unwanted
+guests from entering.</p>
+<p>Example:</p>
+<p>A script from <span class="class_sVB-0">https://example.com</span> is
+restricted from making requests to <span
+class="class_sVB-0">https://api.example2.com</span> due to the
+same-origin policy.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_85">84. What is the
+purpose of the "memo"ization technique in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Memoization is a
+technique used to optimize the performance of a function by caching its
+results based on its input parameters. If the same input is encountered
+again, the cached result is returned instead of recomputing the
+function.</p>
+<p>Analogy:</p>
+<p>Imagine a calculator with a memory feature. If you perform a
+calculation and want to repeat it later, you can use the memory instead
+of going through the steps again.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const memoizedFunction = (function () {<br />
+ const cache = {};<br />
+</span></p>
+<p><span class="class_sVC-0"> return function (arg) {<br />
+   if (arg in cache) {<br />
+     return cache[arg];<br />
+   } else {<br />
+     const result = expensiveOperation(arg);<br />
+     cache[arg] = result;<br />
+     return result;<br />
+   }<br />
+ <span id="part0001.xhtml_page_86"></span>};<br />
+})();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">memoizedFunction</span>
+caches results, avoiding redundant computations for the same
+argument.</p>
+<h1 class="heading_sR">85. How does the "reduce" function work in
+JavaScript, and can you provide an example?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">reduce</span> function in JavaScript is used to
+accumulate values from an array into a single result. It takes a
+callback function and an initial value, applying the callback to each
+element, and accumulating the result.</p>
+<p>Analogy:</p>
+<p>Think of <span class="class_sVB-0">reduce</span> as a chef combining
+ingredients while preparing a dish. Each ingredient (array element) is
+processed, and the final result is the completed dish.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const numbers = [1, 2, 3, 4, 5];<br />
+</span></p>
+<p><span class="class_sVC-0">const sum = numbers.reduce((accumulator,
+current) =&gt; accumulator + current, 0);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(sum); // Outputs: 15<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">reduce</span> function
+calculates the sum of the numbers in the array starting with an initial
+value of 0.</p>
+<h1 class="heading_sR">86. Explain the concept of "currying" in
+JavaScript.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Currying is a technique
+in functional programming where a function with multiple arguments is
+transformed into a sequence of functions, each taking a single argument.
+It allows partial application of functions, creating more reusable and
+composable code.</p>
+<p>Analogy:</p>
+<p>Consider currying as a pizza-making process. Instead of making the
+entire pizza at once, you prepare each layer separately, making it
+easier to customize.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const curryAdd = a =&gt; b =&gt; a + b;<br />
+</span></p>
+<p><span class="class_sVC-0">const add5 = curryAdd(5);<br />
+console.log(add5(3)); // Outputs: 8<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">curryAdd</span> transforms
+a two-argument addition function into a curried function, enabling
+partial application.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_88">87. What is the
+significance of the "Content Security Policy" (CSP) in web
+development?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Content Security Policy
+(CSP) is a security standard that helps prevent various types of
+attacks, such as Cross-Site Scripting (XSS). It allows web developers to
+declare which sources of content are considered trusted and can be
+executed.</p>
+<p>Analogy:</p>
+<p>Think of CSP as a security guard checking entry permissions at a
+building. Only approved individuals (trusted sources) are allowed
+inside, reducing the risk of unauthorized access.</p>
+<p>Example:</p>
+<p>A CSP header like <span class="class_sVB-0">Content-Security-Policy:
+script-src 'self'</span> ensures that scripts are only executed if they
+come from the same origin.</p>
+<h1 class="heading_sR">88. How does JavaScript handle variable
+scope?</h1>
+<p><span class="class_sVA-0">Explanation:</span> Variable scope in
+JavaScript defines where a variable is accessible or not. JavaScript has
+function scope, block scope (introduced by <span
+class="class_sVB-0">let</span> and <span
+class="class_sVB-0">const</span>), and global scope. Variables declared
+with <span class="class_sVB-0">var</span> are function-scoped, while
+<span class="class_sVB-0">let</span> and <span
+class="class_sVB-0">const</span> adhere to block scope.</p>
+<p>Analogy:</p>
+<p>Imagine a variable scope as rooms in a house. Each room represents a
+different scope, and variables (objects) placed in a room are accessible
+only within that room.</p>
+<p><span class="class_sVC-0">// Example:<br />
+function exampleScope() {<br />
+ if (true) {<br />
+   var x = 10; // Function-scoped with var<br />
+   let y = 20; // Block-scoped with let<br />
+   const z = 30; // Block-scoped with const<br />
+ }<br />
+</span></p>
+<p><span class="class_sVC-0"> console.log(x); // Outputs: 10<br />
+ // console.log(y); // Error: y is not defined (block scope)<br />
+ // console.log(z); // Error: z is not defined (block scope)<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">exampleScope();<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">x</span> is accessible
+outside the block due to function scope, while <span
+class="class_sVB-0">y</span> and <span class="class_sVB-0">z</span> are
+block-scoped and not accessible outside the block.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_90">89. What is the
+purpose of the "Proxy" object in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">Proxy</span> object in JavaScript is used to create
+custom behaviors for fundamental operations (like property access,
+assignment, enumeration, etc.) on objects. It allows interception and
+customization of these operations.</p>
+<p>Analogy:</p>
+<p>Think of a <span class="class_sVB-0">Proxy</span> as a personal
+assistant managing your requests. Instead of directly interacting with
+an object, you delegate requests to the assistant, who can modify,
+reject, or enhance the requests.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const handler = {<br />
+ get: function (target, property) {<br />
+   return property in target ? target[property] : 'Property not
+found!';<br />
+ }<br />
+};<br />
+</span></p>
+<p><span class="class_sVC-0">const person = new Proxy({},
+handler);<br />
+person.name = 'John';<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(person.name); // Outputs:
+John<br />
+console.log(person.age); // Outputs: <span
+id="part0001.xhtml_page_91"></span>Property not found!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">Proxy</span>
+intercepts property access and provides a custom response for
+non-existing properties.</p>
+<h1 class="heading_sR">90. Explain the concept of the "IIFE"
+(Immediately Invoked Function Expression) pattern.</h1>
+<p><span class="class_sVA-0">Explanation:</span> IIFE is a JavaScript
+pattern where a function is defined and executed immediately after its
+creation. It's often used to create a private scope for variables,
+preventing them from polluting the global scope.</p>
+<p>Analogy:</p>
+<p>Consider an IIFE as a personal bubble. You do your activities inside
+the bubble, and once done, you pop it. The activities and variables
+inside the bubble don't affect the external environment.</p>
+<p><span class="class_sVC-0">// Example:<br />
+(function () {<br />
+ // Private scope<br />
+ const secretNumber = 42;<br />
+ console.log(secretNumber);<br />
+})(); // Immediately invoked<br />
+</span></p>
+<p><span class="class_sVC-0">// console.log(secretNumber); // Error:
+secretNumber is not defined<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the IIFE encapsulates <span
+class="class_sVB-0">secretNumber</span>, making it inaccessible from
+outside the function.</p>
+<h1 class="heading_sR">91. How does the "WebSockets" API differ from
+traditional HTTP communication?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The WebSockets API
+provides a full-duplex communication channel over a single, long-lived
+connection. Unlike traditional HTTP communication, which follows a
+request-response model, WebSockets allow bidirectional communication,
+enabling real-time data exchange between clients and servers.</p>
+<p>Analogy:</p>
+<p>Think of traditional HTTP as sending letters by mail. You send a
+request, and the recipient replies with a response. WebSockets are like
+a phone call, where both parties can speak and listen at any time.</p>
+<p>Key Differences:</p>
+<ul>
+<li><span class="class_sVA-0">Connection Type:</span> HTTP is stateless
+and connectionless, while WebSockets maintain a persistent, full-duplex
+connection.</li>
+<li><span id="part0001.xhtml_page_93"><span
+class="class_sVA-0">Latency:</span> WebSockets reduce latency by
+eliminating the need to establish a new connection for each
+communication.</span></li>
+<li><span class="class_sVA-0">Usage:</span> HTTP is suitable for
+request-response scenarios, while WebSockets excel in real-time
+applications like chat, gaming, and live updates.</li>
+</ul>
+<h1 class="heading_sR">92. What is the difference between "mutable" and
+"immutable" data types in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> In JavaScript,
+"mutable" and "immutable" refer to whether the data can be changed after
+creation. Mutable data types allow modifications, while immutable data
+types, once created, cannot be altered.</p>
+<p>Analogy:</p>
+<p>Consider mutable data like a whiteboard; you can erase and rewrite
+information. Immutable data is like carving information on stone; once
+it's there, you can't change it but can create a new one.</p>
+<p>Example:</p>
+<ul>
+<li><span class="class_sVA-0">Mutable:</span> Arrays and objects can be
+modified after creation.</li>
+<li><span class="class_sVA-0">Immutable:</span> Strings and numbers
+cannot be changed; operations create new values.</li>
+</ul>
+<h1 class="heading_sR" id="part0001.xhtml_page_94">93. Explain the role
+of the "Promise.all" method in handling multiple promises.</h1>
+<p><span class="class_sVA-0">Explanation:</span> <span
+class="class_sVB-0">Promise.all</span> is a method in JavaScript that
+takes an array of promises and returns a new promise. This new promise
+fulfills with an array of resolved values when all input promises are
+resolved or rejects with the reason of the first rejected promise.</p>
+<p>Analogy:</p>
+<p>Think of a team project where each team member is responsible for a
+task. <span class="class_sVB-0">Promise.all</span> ensures the success
+of the project by waiting for all members to complete their tasks before
+declaring the project done.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const promise1 = fetch('https://api.example.com/data/1');<br />
+const promise2 = fetch('https://api.example.com/data/2');<br />
+</span></p>
+<p><span class="class_sVC-0">Promise.all([promise1, promise2])<br />
+ .then(responses =&gt; {<br />
+   // Both promises resolved successfully<br />
+   console.log(responses);<br />
+ })<br />
+ <span id="part0001.xhtml_page_95"></span>.catch(error =&gt; {<br />
+   // At least one promise rejected<br />
+   console.error(error);<br />
+ });<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">Promise.all</span> ensures
+that the code inside the <span class="class_sVB-0">.then</span> block is
+executed only when both promises are resolved successfully.</p>
+<h1 class="heading_sR">94. How does the "debounce" pattern improve
+performance in JavaScript applications?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The debounce pattern is
+a technique that limits the rate at which a function is invoked,
+especially in response to rapid events like scrolling or typing. It
+improves performance by postponing the execution of the function until a
+certain time has passed since the last invocation.</p>
+<p>Analogy:</p>
+<p>Imagine typing a search query; debounce is like waiting for a brief
+pause before performing the search. It prevents unnecessary intermediate
+searches and enhances the user experience.</p>
+<p><span class="class_sVC-0">function debounce(func, delay) {<br />
+ let timeoutId;<br />
+</span></p>
+<p><span class="class_sVC-0"> <span
+id="part0001.xhtml_page_96"></span>return function (...args) {<br />
+   clearTimeout(timeoutId);<br />
+   timeoutId = setTimeout(() =&gt; func(...args), delay);<br />
+ };<br />
+}<br />
+</span></p>
+<p><span class="class_sVC-0">const searchFunction = debounce(query =&gt;
+{<br />
+ // Perform search operation<br />
+ console.log(`Searching for: ${query}`);<br />
+}, 300);<br />
+</span></p>
+<p><span class="class_sVC-0">// Usage<br />
+searchFunction('JavaScript');<br />
+searchFunction('Web Development');<br />
+// Only one search operation is triggered after 300ms from the last
+invocation<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the <span class="class_sVB-0">debounce</span>
+function ensures that the search operation is executed only after a
+brief pause.</p>
+<h1 class="heading_sR">95. What is the purpose of the
+"document.readyState" property in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">document.readyState</span> property <span
+id="part0001.xhtml_page_97"></span>indicates the loading status of the
+document. It informs whether the document is still loading, fully
+loaded, or in an interactive state.</p>
+<p>Analogy:</p>
+<p>Think of a book; <span class="class_sVB-0">document.readyState</span>
+is like checking whether the book is still being printed, fully printed,
+or open for reading.</p>
+<p>Possible Values:</p>
+<ul>
+<li><span class="class_sVA-0">"loading":</span> The document is still
+loading.</li>
+<li><span class="class_sVA-0">"interactive":</span> The document has
+finished loading and is ready for interaction.</li>
+<li><span class="class_sVA-0">"complete":</span> The document and its
+resources are fully loaded.</li>
+</ul>
+<p><span class="class_sVF">// Example:<br />
+document.addEventListener('readystatechange', () =&gt; {<br />
+ console.log(document.readyState);<br />
+});<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, the code logs the document's ready state as it
+changes during the loading process.</p>
+<h1 class="heading_sR">96. Explain the concept of "event bubbling" in
+the DOM.</h1>
+<p><span class="class_sVA-0">Explanation:</span> Event bubbling is a
+phase in the DOM event flow <span
+id="part0001.xhtml_page_98"></span>where an event starts from the target
+element that triggered it and then bubbles up through its ancestors in
+the DOM tree. This allows ancestor elements to react to the same
+event.</p>
+<p>Analogy:</p>
+<p>Imagine dropping a pebble in water; the ripples (event) not only
+reach the point where the pebble fell but also spread outwards,
+affecting the surrounding areas.</p>
+<p><span class="class_sVC-0">// Example:<br />
+&lt;div id="parent"&gt;<br />
+ &lt;button id="child"&gt;Click me!&lt;/button&gt;<br />
+&lt;/div&gt;<br />
+</span></p>
+<p><span class="class_sVC-0">&lt;script&gt;<br />
+document.getElementById('parent').addEventListener('click', () =&gt;
+{<br />
+ console.log('Parent clicked!');<br />
+});<br />
+</span></p>
+<p><span
+class="class_sVC-0">document.getElementById('child').addEventListener('click',
+() =&gt; {<br />
+ console.log('Child clicked!');<br />
+});<br />
+&lt;/script&gt;<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, clicking the "Click me!" button triggers both the
+child and parent click events due to event bubbling.</p>
+<h1 class="heading_sR" id="part0001.xhtml_page_99">97. How does the
+"Map" object differ from a regular JavaScript object?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">Map</span> object in JavaScript is a data structure
+that allows you to store key-value pairs with some advantages over
+regular objects. Unlike objects, <span class="class_sVB-0">Map</span>
+keys can be of any data type, and the order of key-value pairs is
+maintained.</p>
+<p>Analogy:</p>
+<p>Think of a regular object like a dictionary with words (keys) and
+definitions (values). A <span class="class_sVB-0">Map</span> is like an
+expanded dictionary where the order of entries is preserved, and the
+words can be anything.</p>
+<p>Key Differences:</p>
+<ul>
+<li><span class="class_sVA-0">Key Type:</span> <span
+class="class_sVD-1">Map</span> allows keys of any type, including
+objects and functions.</li>
+<li><span class="class_sVA-0">Order:</span> <span
+class="class_sVD-1">Map</span> maintains the order of key-value
+pairs.</li>
+<li><span class="class_sVA-0">Size Property:</span> <span
+class="class_sVD-1">Map</span> has a <span
+class="class_sVD-1">size</span> property to get the number of
+entries.</li>
+</ul>
+<p><span class="class_sVC-0">// Example:<br />
+// Using a Map<br />
+const myMap = new Map();<br />
+myMap.set('name', 'John');<br />
+myMap.set(42, 'Answer to the Ultimate Question');<br />
+</span><span id="part0001.xhtml_page_100" class="class-1"></span><span
+class="class_sVC-0">console.log(myMap.get('name')); // Outputs:
+John<br />
+</span></p>
+<p><span class="class_sVC-0">// Using a regular object<br />
+const myObject = {<br />
+ name: 'John',<br />
+ 42: 'Answer to the Ultimate Question'<br />
+};<br />
+console.log(myObject['name']); // Outputs: John<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">myMap</span> and <span
+class="class_sVB-0">myObject</span> both store key-value pairs, but
+<span class="class_sVB-0">myMap</span> has more flexibility.</p>
+<h1 class="heading_sR">98. What is the purpose of the "WeakMap" and
+"WeakSet" objects in JavaScript?</h1>
+<p><span class="class_sVA-0">Explanation:</span> <span
+class="class_sVB-0">WeakMap</span> and <span
+class="class_sVB-0">WeakSet</span> are specialized objects in JavaScript
+designed for use cases where you want to associate additional data with
+objects without preventing the objects from being garbage-collected.</p>
+<p>Analogy:</p>
+<p>Consider a sticky note attached to an item; a <span
+class="class_sVB-0">WeakMap</span> is like a sticky note that won't
+prevent the item from being discarded if no other references exist.</p>
+<p>Key Characteristics:</p>
+<ul>
+<li>Entries in <span class="class_sVD-1">WeakMap</span> are weakly held,
+allowing associated objects to be garbage-collected.</li>
+<li><span class="class_sVD-1">WeakSet</span> holds weak references to
+objects, ensuring they can be garbage-collected.</li>
+</ul>
+<p><span class="class_sVC-0">// Example:<br />
+// Using WeakMap<br />
+const secretKey = new WeakMap();<br />
+const object = {};<br />
+</span></p>
+<p><span class="class_sVC-0">secretKey.set(object, 'sensitive
+data');<br />
+console.log(secretKey.get(object)); // Outputs: sensitive data<br />
+</span></p>
+<p><span class="class_sVC-0">// Using WeakSet<br />
+const weakSet = new WeakSet();<br />
+const obj1 = { name: 'John' };<br />
+const obj2 = { name: 'Jane' };<br />
+</span></p>
+<p><span class="class_sVC-0">weakSet.add(obj1);<br />
+weakSet.add(obj2);<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(weakSet.has(obj1)); // Outputs:
+true<br />
+obj1 = null; // obj1 can be garbage-collected<br />
+</span><span id="part0001.xhtml_page_102" class="class-1"></span><span
+class="class_sVC-0">console.log(weakSet.has(obj1)); // Outputs:
+false<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, using <span class="class_sVB-0">WeakMap</span> and
+<span class="class_sVB-0">WeakSet</span> allows associated data to be
+tied to objects without preventing their disposal.</p>
+<h1 class="heading_sR">99. How does the "Immutable.js" library help with
+managing immutable data structures?</h1>
+<p><span class="class_sVA-0">Explanation:</span> The <span
+class="class_sVB-0">Immutable.js</span> library is designed to
+facilitate the creation and manipulation of immutable data structures in
+JavaScript. Immutable data structures, once created, cannot be changed.
+Instead, any operation results in the creation of a new structure.</p>
+<p>Analogy:</p>
+<p>Think of a snapshot in time; <span
+class="class_sVB-0">Immutable.js</span> helps you take snapshots of
+data, preserving historical states without altering the original.</p>
+<p>Key Features:</p>
+<ul>
+<li><span class="class_sVA-0">Persistent Data Structures:</span>
+Operations on <span class="class_sVD-1">Immutable.js</span> structures
+don't modify the existing structure but return a new one.</li>
+<li><span class="class_sVA-0">Efficient Updates:</span> Only changed
+parts of the data structure are replaced, making updates more
+efficient.</li>
+<li><span id="part0001.xhtml_page_103"><span
+class="class_sVA-0">Preventing Mutations:</span> Helps avoid
+unintentional data mutations.</span></li>
+</ul>
+<p><span class="class_sVC-0">// Example:<br />
+const { Map } = require('immutable');<br />
+const originalMap = Map({ key: 'value' });<br />
+const updatedMap = originalMap.set('newKey', 'newValue');<br />
+</span></p>
+<p><span class="class_sVC-0">console.log(originalMap.get('newKey')); //
+Outputs: undefined<br />
+console.log(updatedMap.get('newKey')); // Outputs: newValue<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">Immutable.js</span>
+ensures that modifying <span class="class_sVB-0">originalMap</span>
+creates a new map, leaving the original unaltered.</p>
+<h1 class="heading_sR">100. How does the "Promise.race" function work,
+and when might it be useful?</h1>
+<p><span class="class_sVA-0">Explanation:</span> <span
+class="class_sVB-0">Promise.race</span> is a method that takes an
+iterable of promises and returns a new promise. This new promise
+resolves or rejects as soon as the first promise in the iterable
+resolves or rejects.</p>
+<p>Analogy:</p>
+<p>Imagine a race where multiple runners (promises) compete. <span
+class="class_sVB-0">Promise.race</span> declares a winner (resolves or
+rejects) based on the first runner to finish.</p>
+<p><span class="class_sVC-0">// Example:<br />
+const promise1 = new Promise(resolve =&gt; setTimeout(() =&gt;
+resolve('Winner!'), 1000));<br />
+const promise2 = new Promise((_, reject) =&gt; setTimeout(() =&gt;
+reject('Loser!'), 500));<br />
+</span></p>
+<p><span class="class_sVC-0">Promise.race([promise1, promise2])<br />
+ .then(result =&gt; console.log(result)) // Outputs: Loser!<br />
+ .catch(error =&gt; console.error(error)); // Outputs: Loser!<br />
+</span><span class="class_sVD-0"><br />
+</span></p>
+<p>In this example, <span class="class_sVB-0">Promise.race</span>
+resolves or rejects based on the first promise to settle, helping
+optimize response times.</p>

@@ -1,0 +1,2 @@
++   [JavaScript 揭秘：[自学指南；无需正式 JavaScript 培训！通过大量示例演示概念应用，语言简洁详尽且术语精简，包含章节末测和期末考试]](README.md)
++   [JavaScript 揭秘：[自学指南；无需正式 JavaScript 培训！通过大量示例演示概念应用，语言简洁详尽且术语精简，包含章节末测和期末考试]](javascript-demystified-a-self-teaching-guide-no-formal-train_0.md)

@@ -1,0 +1,7469 @@
+- fmt: '
+
+    ![](Image00010.jpg)
+
+
+    # LEARN PYTHON QUICKLY AND JAVASCRIPT CODING PRACTICE EXERCISES
+
+    ## CODING FOR BEGINNERS WITH HANDS ON PROJECTS
+
+    BY J J TAM
+
+
+    ## Table of Contents
+
+    - [LEARN PYTHON QUICKLY](#
+
+    - [Python: Hello World program](#
+
+    - [Python interactive command line](#
+
+    - [Python: Operators](#
+
+    - [Arithmetic Operators in python](#
+
+    - [Relational Operators in python](#
+
+    - [Assignment operators in python](#
+
+    - [Logical Operators in python](#
+
+    - [Bitwise Operators in python](#
+
+    - [Membership operators in python](#
+
+    - [Identity operators in python](#
+
+    - [Python: Short circuit operators](#
+
+    - [Strings in python](#
+
+    - [Python: if condition](#
+
+    - [Python: while statement](#
+
+    - [Python: for statement](#
+
+    - [Python: break statement](#
+
+    - [Python: continue statement](#
+
+    - [Python: functions](#
+
+    - [Python: functions: return statement](#
+
+    - [Python lists](#
+
+    - [Python: tuples](#
+
+    - [Python: Class Vs Instance variables](#
+
+    - [Python: Inheritance](#
+
+    - [Python: Exceptions](#
+
+    - [Python: Handling Exceptions](#
+
+    - [Python global keyword](#
+
+    - [Python: Get type of variable](#
+
+    - [JAVASCRIPT CODING EXERCISES](#
+
+    - [JavaScript functions – Exercises](#
+
+    - [JavaScript: Find the first not repeated character](#
+
+    - [JavaScript: Find the longest word within a string](#
+
+    - [JavaScript: Counts the number of vowels within a string](#
+
+    - [JavaScript: Check a number is prime or not](#
+
+    - [JavaScript: Get the data type](#
+
+    - [JavaScript: Find the second lowest and second greatest](#
+
+    - [JAVASCRIPT BASICS](#
+
+    - [Calculate multiplication and division](#
+
+    - [Convert temperatures](#
+
+    - [Find the largest](#
+
+    - [Reverse a given string](#
+
+    - [Replace every character](#
+
+    - [Create a new string](#
+
+    - [Concatenate two strings](#
+
+    - [Move last three character](#
+
+    - [Compute the sum](#
+
+    - [Add two digits](#
+
+    - [Check whether given year is leap](#
+
+    - [Check given positive number](#
+
+    - [Check string starts with ''Java'']](#
+
+    - [Check given integer values](#
+
+    - [Find value which is nearest to 100](#
+
+
+    # LEARN PYTHON QUICKLY
+
+    ## CODING FOR BEGINNERS WITH HANDS ON PROJECTS
+
+    BY J J TAM
+
+
+    Well is almost 5 years I started my career, I love to work in Java, and explore
+    source packages. Now day I felt bored to work in same language so want learn new
+    language, one my friend suggested me to learn python. Immediately thought, why
+    should learn python? Following are some of the reasons that forced me to learn:
+
+
+    a. Python is open source and available on Windows, Mac OS, and Unix systems. You
+    can download and work with python for free.
+
+    b. Python is fun to experiment and easy learn. Python provides interpreter that
+    can be used interactively, which makes it easy to experiment with features of
+    the language.
+
+    c. You can extend the python interpreter with new functions and data types implemented
+    in C or C++.
+
+    d. Python improves developer productivity many times compared to C, C++ and Java.
+
+    e. No need to compile python program, it runs immediately after development.
+
+    f. We can easily port python project from one platform to another (Of course Java
+    also provides this feature).
+
+    g. Rich in library. Many third party source libraries are available for logging,
+    web development (Django — the popular open source web application framework written
+    in Python), networking, database access etc.
+
+    h. Python has very great community, whatever the problem you faced in python,
+    you will get help.
+
+
+    # Python: Hello World program
+
+    Open any text editor and copy the statement `print (''hello world'')` and save
+    the file name as `hello.py`.
+
+
+    ```python
+
+    print (''hello world'')
+
+    ```
+
+
+    Open terminal (or command prompt), use the command `python3 hello.py` to run the
+    file `hello.py`. You will get output like below:
+
+
+    ```
+
+    $ python3 hello.py
+
+    hello world
+
+    ```
+
+
+    ### What happens when you instruct python to run your script?
+
+    Python first compiles your source code to byte code and sends it to python virtual
+    machine (`PVM`). Byte code is the platform independent representation of your
+    source code. PVM reads the byte code one by one and execute them.
+
+
+    ![](https://2.blogspot.com/-4SrPn1e0H1A/VmFSCiufP1I/AAAAAAAACtw/bnSNuricpw/s400/python%2Bexecution%2Bprocess.png](Image00000.jpg)
+
+
+    **Note:** Byte code is not machine understandable code, it is python specific
+    representation.
+
+
+    # Python interactive command line
+
+    Open command prompt (or terminal) and type `python3` command. It opens python
+    interactive session.
+
+
+    ```
+
+    $ python3
+
+    Python 3.5.0 (v3.5.0:374f501f467, Sep 12 2015, 11:00:19)
+
+    GCC 4.2.1 (Apple Inc. build 5666) (dot 3) on darwin
+
+    ```
+
+
+    Type `help`, `copyright`, `credits` or `license` for more information.
+
+
+    ### How to exit from python interpreter
+
+    On Windows, a `Ctrl-Z` gets you out of this session; on Unix, try `Ctrl-D` instead.
+    Another way is simply call the `quit()` function to quit from python.
+
+
+    ```
+
+    $ python3
+
+    Python 3.5.0 (v3.5.0:374f501f467, Sep 12 2015, 11:00:19)
+
+    GCC 4.2.1 (Apple Inc. build 5666) (dot 3) on darwin
+
+    >>> quit()
+
+    ```
+
+
+    You can type any statement (or) expressions in python interpreter, interpreter
+    execute those statements and gives you the result.
+
+
+    ```
+
+    >>> 10+20
+
+    30
+
+    >>> 20*20
+
+    400
+
+    >>> print(''Hello World'')
+
+    Hello World
+
+    ```
+
+
+    **Note:** On Unix, the Python 3.x interpreter is not installed by default with
+    name `python`, so that it does not conflict with other installed Python 2.x executable.
+
+
+    # Python: Operators
+
+    An operator is a symbol, which perform an operation. Following are the operators
+    that python supports:
+
+    - Arithmetic Operators
+
+    - Relational Operators
+
+    - Assignment Operators
+
+    - Logical Operators
+
+    - Bitwise Operators
+
+    - Membership Operators
+
+    - Identity Operators
+
+
+    # Arithmetic Operators in python
+
+    Following are the arithmetic operators supported by python.
+
+
+    | Operator | Description | Example |
+
+    | :--- | :--- | :--- |
+
+    | + | Addition | `2+3` |
+
+    | - | Subtraction | `2-3` |
+
+    | * | Multiplication | `2*3` |
+
+    | / | Division always returns a float value. To get only integer result use `//`.
+    | `2/3` returns `0.6666666666666666` |
+
+    | // | Floor division discards the fractional part | `2//3` returns `0` |
+
+    | % | Returns the remainder of the division. | `2%3` |
+
+    | ** | Power | `2**3` returns `2 power 3 = 8` |
+
+    '
+  raw: '
+
+
+    ![](Image00010.jpg)
+
+
+    LEARN PYTHON
+
+
+    QUICKLY
+
+
+    AND
+
+
+    JAVASCRIPT CODING PRACTICE EXERCISES
+
+
+    CODING FOR BEGINNERS
+
+
+    WITH HANDS ON PROJECTS
+
+
+    BY
+
+
+    J J TAM
+
+
+    [LEARN PYTHON QUICKLY](#text00003.html__Toc82326971)
+
+
+    [Python: Hello World program](#text00004.html__Toc82326972)
+
+
+    [Python interactive command line](#text00005.html__Toc82326973)
+
+
+    [Python: Operators](#text00006.html__Toc82326974)
+
+
+    [Arithmetic Operators in python](#text00007.html__Toc82326975)
+
+
+    [Relational Operators in python](#text00007.html__Toc82326976)
+
+
+    [Assignment operators in python](#text00007.html__Toc82326977)
+
+
+    [Logical Operators in python](#text00007.html__Toc82326978)
+
+
+    [Bitwise Operators in python](#text00007.html__Toc82326979)
+
+
+    [Membership operators in python](#text00007.html__Toc82326980)
+
+
+    [Identity operators in python](#text00007.html__Toc82326981)
+
+
+    [Python: Short circuit operators](#text00007.html__Toc82326982)
+
+
+    [Strings in python](#text00008.html__Toc82326983)
+
+
+    [Python: if condition](#text00009.html__Toc82326984)
+
+
+    [Python: while statement](#text00010.html__Toc82326985)
+
+
+    [Python: for statement](#text00011.html__Toc82326986)
+
+
+    [Python: break statement](#text00012.html__Toc82326987)
+
+
+    [Python: continue statement](#text00013.html__Toc82326988)
+
+
+    [Python: functions](#text00014.html__Toc82326989)
+
+
+    [Python: functions: return statement](#text00015.html__Toc82326990)
+
+
+    [Python lists](#text00016.html__Toc82326991)
+
+
+    [Python: tuples](#text00017.html__Toc82326992)
+
+
+    [Python: Class Vs Instance variables](#text00018.html__Toc82326993)
+
+
+    [Python: Inheritance](#text00019.html__Toc82326994)
+
+
+    [Python: Exceptions](#text00020.html__Toc82326995)
+
+
+    [Python: Handling Exceptions](#text00020.html__Toc82326996)
+
+
+    [Python global keyword](#text00020.html__Toc82326997)
+
+
+    [Python: Get type of variable](#text00021.html__Toc82326998)
+
+
+    [JAVASCRIPT CODING EXERCISES](#text00023.html__Toc82326999)
+
+
+    [JavaScript functions – Exercises](#text00023.html__Toc82327000)
+
+
+    [JavaScript: Find the first not repeated character](#text00023.html__Toc82327001)
+
+
+    [JavaScript: Find the longest word within a string](#text00024.html__Toc82327002)
+
+
+    [JavaScript: Counts the number of vowels within a string](#text00025.html__Toc82327003)
+
+
+    [JavaScript: Check a number is prime or not](#text00026.html__Toc82327004)
+
+
+    [JavaScript: Get the data type](#text00027.html__Toc82327005)
+
+
+    [JavaScript: Find the second lowest and second greatest](#text00028.html__Toc82327006)
+
+
+    [JAVASCRIPT BASICS](#text00029.html__Toc82327007)
+
+
+    [Calculate multiplication and division](#text00029.html__Toc82327008)
+
+
+    [Convert temperatures](#text00030.html__Toc82327009)
+
+
+    [Find the largest](#text00031.html__Toc82327010)
+
+
+    [Reverse a given string](#text00032.html__Toc82327011)
+
+
+    [Replace every character](#text00033.html__Toc82327012)
+
+
+    [Create a new string](#text00034.html__Toc82327013)
+
+
+    [Concatenate two strings](#text00035.html__Toc82327014)
+
+
+    [Move last three character](#text00036.html__Toc82327015)
+
+
+    [Compute the sum](#text00037.html__Toc82327016)
+
+
+    [Add two digits](#text00038.html__Toc82327017)
+
+
+    [Check whether a given year is a leap](#text00039.html__Toc82327018)
+
+
+    [Check given positive number](#text00040.html__Toc82327019)
+
+
+    [Check a string starts with ''Java''](#text00041.html__Toc82327020)
+
+
+    [Check two given integer values](#text00042.html__Toc82327021)
+
+
+    [Find a value which is nearest to 100](#text00043.html__Toc82327022)
+
+
+    [OUR OTHER PUBLISHING](#text00044.html__Toc82327023)
+
+
+     LEARN PYTHON
+
+
+    QUICKLY
+
+
+    CODING FOR BEGINNERS
+
+
+    WITH HANDS ON PROJECTS
+
+
+    BY
+
+
+    J J TAM
+
+
+    # LEARN PYTHON QUICKLY
+
+
+    Well it is almost 5 years I started my IT career, I love to work in Java, and
+    explore open source packages. Now a day I felt bored to work in Java, so want
+    to learn new language, one of my friend suggested me to learn python. Immediately
+    I thought, why should I learn python?
+
+
+    Following are some of the reasons that forced me to learn python…(First and best
+    reason is I am fed up in working with same language for 5 years……….:))
+
+
+    a.   Python is open source and is available on Windows, Mac OS X, and Unix operating
+    systems. You can download and work with python for free.
+
+
+    b.   Python is fun to experiment and easy to learn. Python provides interpreter
+    that can be used interactively, which makes it easy to experiment with features
+    of the language.
+
+
+    c.    You can extend the python interpreter with new functions and data types
+    implemented in C or C++
+
+
+    d.   Python improves developer productivity many times as compared to C, C++ and
+    Java.
+
+
+    e.   No need to compile python program, it runs immediately after development.
+
+
+    f.     We can easily port python project from one platform to another (Of course
+    Java also provides this feature)
+
+
+    g.   Rich in built library. Many third party open source libraries are available
+    for logging, web development (Django — the popular open source web application
+    framework written in Python), networking, database access etc.
+
+
+    h.   Python has very great community, whatever the problem you faced in python,
+    you will get quick help.
+
+
+    # Python: Hello World program
+
+
+    Open any text editor and copy the statement “print (''hello world'')” and save
+    the file name as hello.py.
+
+
+    hello.py
+
+
+    print (''hello world'')
+
+
+    Open terminal (or) command prompt, use the command ‘python3 hello.py’ to run the
+    file hello.py. You will get output like below
+
+
+    $ python3 hello.py
+
+
+    hello world
+
+
+    What happens when you instruct python to run your script?
+
+
+    Python first compiles your source code to byte code and sends it to python virtual
+    machine (PVM). Byte code is the platform independent representation of your source
+    code. PVM reads the byte code one by one and execute them.
+
+
+    ![https://2.bp.blogspot.com/-4SrPn1e0H1A/VmFSCiufP1I/AAAAAAAACtw/bnSNuKricpw/s400/python%2Bexecution%2Bprocess.png](Image00000.jpg)
+
+
+    Note:
+
+
+    Byte code is not machine understandable code, it is python specific representation.
+
+
+    # Python interactive command line
+
+
+    Open command prompt (or) terminal and type ‘python3’ command. It opens python
+    interactive session.
+
+
+    $ python3
+
+
+    Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
+
+
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+
+
+    Type "help", "copyright", "credits" or "license" for more information.
+
+
+    >>>
+
+
+    How to exit from python interpreter
+
+
+    On Windows, a Ctrl-Z gets you out of this session; on Unix, try Ctrl-D instead.
+    Another way is simply call the quit() function to quit from python.
+
+
+    $ python3
+
+
+    Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
+
+
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+
+
+    Type "help", "copyright", "credits" or "license" for more information.
+
+
+    >>> quit()
+
+
+    $
+
+
+    You can type any statement (or) expressions in python interpreter, interpreter
+    execute those statements and gives you the result.
+
+
+    >>> 10+20
+
+
+    30
+
+
+    >>> 20*20
+
+
+    400
+
+
+    >>> print(''Hello World'')
+
+
+    Hello World
+
+
+    Note:
+
+
+    On Unix, the Python 3.x interpreter is not installed by default with name python,
+    so that it does not conflict with other installed Python 2.x executable.
+
+
+    # Python: Operators
+
+
+    An operator is a symbol, which perform an operation. Following are the operators
+    that python supports.
+
+
+    Arithmetic Operators
+
+
+    Relational Operators
+
+
+    Assignment Operators
+
+
+    Logical Operators
+
+
+    Bitwise Operators
+
+
+    Membership Operators
+
+
+    Identity Operators
+
+
+    # Arithmetic Operators in python
+
+
+    Following are the arithmetic operators supported by python.
+
+
+    | Operator | Description | Example |
+
+
+    | + | Addition | 2+3 |
+
+
+    | - | Subtraction | 2-3 |
+
+
+    | * | Multiplication | 2*3 |
+
+
+    | / | Division always returns a float value. To get only integer result use //.
+    | 2/3 returns 0.6666666666666666 |
+
+
+    | // | Floor division discards the fractional part | 2//3 returns 0 |
+
+
+    | % | Returns the remainder of the division. | 2%3 |
+
+
+    | ** | Power | 2**3 returns 2 power 3  = 8 |
+
+
+    >>> 4 + 2
+
+
+    6
+
+
+    >>> 4 - 2
+
+
+    2
+
+
+    >>> 4 / 2
+
+
+    2.0
+
+
+    >>> 4 * 2
+
+
+    8
+
+
+    >>> 4 // 2
+
+
+    2
+
+
+    >>> 4 ** 2
+
+
+    16
+
+
+    # Relational Operators in python
+
+
+    Relational operators determine if one operand is greater than, less than, equal
+    to, or not equal to another operand.
+
+
+    | Operator | Description | Example |'
+  toc: []
+  trans: '
+
+
+    ![](img/Image00010.jpg)
+
+
+    # 快速学习 Python 与 JavaScript 编程练习题
+
+    ## 针对初者的实战项目编程
+
+    作者 J J TAM
+
+
+    ## 目录
+
+    - 快速学习 Python
+
+    - Python: Hello World 程序
+
+    - Python 交互式命令行
+
+    - Python: 运算符
+
+    - Python 中的算术运算符
+
+    - Python 中的关系运算符
+
+    - Python 中的赋值运算符
+
+    - Python 中的逻辑运算符
+
+    - Python 中的位运算符运算符
+
+    - Python 中的成员运算符
+
+    - Python 中的身份运算符
+
+    - Python: 短路运算符
+
+    - Python 中的字符串
+
+    - Python: if 条件语句
+
+    - Python: while 语句
+
+    - Python: for 语句
+
+    - Python: break 语句
+
+    - Python: continue 语句
+
+    - Python: 函数
+
+    - Python: 函数：return 语句
+
+    - Python 列表
+
+    - Python: 元组
+
+    - Python: 类变量与实例变量
+
+    - Python: 继承
+
+    - Python: 异常
+
+    - Python: 异常处理
+
+    - Python global 关键字
+
+    - Python: 获取变量类型
+
+    - JavaScript 编程练习
+
+    - JavaScript 函数 – 练习
+
+    - JavaScript: 查找第一个非重复字符
+
+    - JavaScript: 查找字符串中最长的单词
+
+    - JavaScript: 统计字符串中的元音数量
+
+    - JavaScript: 检查数字是否为质数
+
+    - JavaScript: 获取数据类型
+
+    - JavaScript: 寻找第二小和第二大值
+
+    - JavaScript 基础
+
+    - 乘法和除法计算
+
+    - 温度转换
+
+    - 寻找最大值
+
+    - 反转给定字符串
+
+    - 替换每个字符
+
+    - 创建新字符串
+
+    - 拼接两个字符串
+
+    - 移动最后三个字符
+
+    - 计算总和
+
+    - 两个数字相加
+
+    - 检查给定的年份是否为闰年
+
+    - 检查给定的正数
+
+    - 检查字符串是否以 ''Java'' 开头
+
+    - 检查给定的整数值
+
+    - 寻找接近 100 的值` 并将文件保存为 `hello.py`。
+
+
+    ```python
+
+    print (''hello world'')
+
+    ```
+
+
+    打开终端（或命令提示符），使用命令 `python3 hello.py` 运行文件 `hello.py`。你将得到如下输出：
+
+
+    ```
+
+    $ python3 hello.py
+
+    hello world
+
+    ```
+
+
+    ### 当你指示 Python 运行脚本时发生了什么？
+
+    Python 首先将你的源代码编译为字节码（bytecode），并将其发送到 Python 虚拟机 (`PVM`)。字节码是源代码的平台无关的表示。PVM
+    逐个读取字节码并执行它们。
+
+
+    ![](https://2.blogspot.com/-4SrPn1e0H1A/VmFSCiufP1I/AAAAAAAACtw/bnSNuricpw/s400/python%2Bexecution%2Bprocess.png](Image00000.jpg)
+
+
+    **注意：** 字节码不是机器理解的代码，它是 Python 特有的表示。
+
+
+    # Python 交互式命令行
+
+    打开命令提示符（或终端）并输入命令 `python3`。它会打开 Python 交互会话。
+
+
+    ```
+
+    $ python3
+
+    Python 3.5.0 (v3.5.0:374f501f467, Sep 12 2015, 11:00:19)
+
+    GCC 4.2.1 (Apple Inc. build 5666) (dot 3) on darwin
+
+    ```
+
+
+    输入 `help`、`copyright`、`credits` 或 `license` 获取更多信息。
+
+
+    ### 如何退出 Python 解释器
+
+    在 Windows 上，使用 `Ctrl-Z` 可以退出会；在 Unix 上，尝试 `Ctrl-D`。另一种方法是直接调用 `quit()` 函数退出 Python。
+
+
+    ```
+
+    $ python3
+
+    Python 3.5.0 (v3.5.0:374f501f467, Sep 12 2015, 11:00:19)
+
+    GCC 4.2.1 (Apple Inc. build 5666) (dot 3) on darwin
+
+    >>> quit()
+
+    ```
+
+
+    你可以在 Python 解释器中输入任何语句（或）表达式，解释器会执行这些语句并给你结果。
+
+
+    ```
+
+    >>> 10+20
+
+    30
+
+    >>> 20*20
+
+    400
+
+    >>> print(''Hello World'')
+
+    Hello World
+
+    ```
+
+
+    **注意：** 在 Unix 上，Python 3.x 解释器默认不以 `python` 命名安装，以免与其他安装的 Python 2.x 可执行文件冲突。
+
+
+    # Python: 运算符
+
+    运算符是一个符号，用于执行操作。Python 支持的运算符有：
+
+    - 算术运算符
+
+    - 关系运算符
+
+    - 赋值运算符
+
+    - 逻辑运算符
+
+    - 位运算符
+
+    - 成员运算符
+
+    - 身份运算符
+
+
+    # Python 中的算术运算符
+
+    以下是 Python 支持的算术运算符。
+
+
+    | 运算符 |  | 示例 |
+
+    | :--- | :--- | :--- |
+
+    | + | 加法 | `2+3` |
+
+    | - | 减法 | `2-3` |
+
+    | * | 乘法 | `2*3` |
+
+    | / | 除法始终返回浮点值。要获取整数结果请使用 `//`。 | `2/3` 返回 `0.6666666666666666` |
+
+    | // | 整除丢弃小数部分 | `2//3` 返回 `0` |
+
+    | % | 返回除法的余数。 | `2%3` |
+
+    | ** | 幂 | `2**3` 返回 `2 的 3 次方 = 8` |
+
+
+    '
+- fmt: "\n| Operator | Name | Description |\n| :--- | :--- | :--- |\n| `==` | Equal\
+    \ to | `a==b` returns true if `a` is equal to `b`, else false |\n| `!=` | Not\
+    \ equal to | `a!=b` returns true if `a` is not equal to `b`, else false. |\n|\
+    \ `>` | Greater than | `a>b` returns true, if `a` is > `b`, else false. |\n| `>=`\
+    \ | Greater than or equal to | `a>=b` returns true, if `a` is >= `b`, else false.\
+    \ |\n| `<` | Less than | `a<b` returns true, if `a` is < `b`, else false. |\n\
+    | `<=` | Less than or equal to | `a<=b` returns true, if `a` is <= `b`, else false.\
+    \ |\n\n```python\n>>> a = 10\n>>> b = 12\n>>> a == b\nFalse\n>>> a != b\nTrue\n\
+    >>> a > b\nFalse\n>>> a >= b\nFalse\n>>> a < b\nTrue\n>>> a <= b\nTrue\n```\n\n\
+    # Assignment operators in python\n\nAssignment operators are used to assign value\
+    \ to a variable. Following are the assignment operators provided by python.\n\n\
+    | Operator | Description |\n| :--- | :--- |\n| `=` | `a=10` assigns `10` to variable\
+    \ `a` |\n| `+=` | `a+=10` is same as `a=a+10` |\n| `-=` | `a-=10` is same as `a=a-10`\
+    \ |\n| `*=` | `a*=10` is same as `a=a*10` |\n| `/=` | `a/=10` is same as `a=a/10`\
+    \ |\n| `//=` | `a//=10` is same as `a=a//10` |\n| `%=%` | `a%=10` is same as `a=a%10`\
+    \ |\n| `**=` | `a**=10` is same as `a=a**10` |\n\n```python\n>>> a = 10\n>>> a\n\
+    10\n>>> a += 10\n>>> a\n20\n>>> a -= 10\n>>> a\n10\n>>> a *= 10\n>>> a\n100\n\
+    >>> a /= 10\n>>> a\n10.0\n>>> a //= 10\n>>> a\n1.0\n>>> a **= 10\n>>> a\n1.0\n\
+    ```\n\n## Multiple Assignments\n\nYou can assign values to multiple variables\
+    \ simultaneously.\n\n```python\n>>> a, b, c = 10 , 'hello ', 12.345\n>>> a\n10\n\
+    >>> b\n'hello'\n>>> c\n12.345\n```\n\n# Logical Operators in python\n\nFollowing\
+    \ are the logical operators supported by python.\n\n| Operator | Description |\n\
+    | :--- | :--- |\n| `and` | `'a and b'` returns true if both `a`, `b` are true.\
+    \ Else false. |\n| `or` | `'a or b'` return false, if both `a` and `b` are false,\
+    \ else true. |\n| `not` | `'not a'` Returns True if `a` is false, true otherwise\
+    \ |\n\n```python\n>>> a = bool(0)\n>>> b = bool(1)\n>>> a\nFalse\n>>> b\nTrue\n\
+    >>> a and b\nFalse\n>>> a or b\nTrue\n>>> not a\nTrue\n>>> not (a and b)\nTrue\n\
+    >>> not (a or b)\nFalse\n```\n\n# Bitwise Operators in python\n\nPython supports\
+    \ following bitwise operators, to perform wise operations on integers.\n\n| Operator\
+    \ | Description |\n| :--- | :--- |\n| `>>` | bitwise right shift |\n| `<<` | bitwise\
+    \ left shift |\n| `&` | bitwise and |\n| `^` | Bitwise XOR |\n| `|` | bitwise\
+    \ or |\n| `~` | bitwise not |\n\nFollowing, explains bitwise operators clearly.\n\
+    \n```python\n>>> a = 2\n>>> a >> 1\n1\n>>> a << 1\n4\n>>> a & 3\n2\n>>> a | 3\n\
+    3\n>>> ~ a\n-3\n```\n\n# Membership operators in python\n\nMembership operators\
+    \ are used to test whether a value or variable is found in a sequence (string,\
+    \ list, tuple, set and dictionary).\n\n| Operator | Description |\n| :--- | :---\
+    \ |\n| `in` | Return true if value/variable found in the sequence, else false.\
+    \ |\n| `not in` | Return True if value/variable is not found in the sequence,\
+    \ else false |\n\n```python\n>>> primeNumbers = [2, 3, 5, 7]\n>>> 2 in primeNumbers\n\
+    True\n>>> 4 not in primeNumbers\nFalse\n>>> 3 in primeNumbers\nTrue\n```\n\n#\
+    \ Identity operators in python\n\nIdentity operators are used to compare memory\
+    \ locations of two objects.\n\n| Operator | Description |\n| :--- | :--- |\n|\
+    \ `is` | `a is b` returns true, if both `a` and `b` point to the same object,\
+    \ else false. |\n| `is not` | `a is not b` returns true, if both `a` and `b` not\
+    \ point to the same object, else false. |\n\n```python\n>>> name1 = \"Hari Krishna\"\
+    \n>>> name2 = \"Hari Krishna\"\n>>> name3 = \"abc\"\n>>> name1 is name2\nTrue\n\
+    >>> name1 is name3\nFalse\n>>> name1 is not name2\nFalse\n>>> name1 is not name3\n\
+    True\n```\n\n# Python: Short circuit operators\n\nBoolean operators `and`, `or`\
+    \ are called short circuit operators because evaluation of expression stops whenever\
+    \ outcome determined.\n\nWhy `and` called short circuit operator?\nSince the first\
+    \ statement in the expression evaluates to false, then python won't evaluates\
+    \ entire expression.\n\nWhy `OR` called short circuit operator?\nSince the first\
+    \ statement evaluates to true, then Python won't evaluates entire expression.\n\
+    \n# Strings in python\n\nString is a sequence of character specified in single\
+    \ quotes (`...'`), double quotes (`...\"`), or triple quotes (`\"\"\"\"\"\"`).\
+    \ Strings in python are immutable, i.e., an object with a fixed value.\n\n```python\n\
+    >>> str1 = 'Hello World'\n>>> str2 = \"Hello World\"\n>>> str3 = \"\"\"Hello World\"\
+    \"\"\n>>> str1\n'Hello World'\n>>> str2\n'Hello World'\n>>> str3\n'Hello World'\n\
+    ```\n\n## Special characters\n\nSpecial characters are escaped with backslash.\
+    \ `print()` method treat characters preceded by `\\` (backslash) as special characters.\n\
+    \n```python\n>>> print('firstline \\n secondline ')\nfirstline\nsecondline\n```\n\
+    \nAs you observe output, `\\n` prints new line. If you don’t want characters prefaced\
+    \ by `\\` to be interpreted as special characters, you can use raw strings by\
+    \ adding `r` before the first quote.\n\n```python\n>>> print( r'firstline\\nsecondline\
+    \ ')\nfirstline\nsecondline\n```\n\n## String Operations\n\n`+` operator is used\
+    \ to concatenate strings.\n\n```python\n>>> hello = \"Hello,\"\n>>> message =\
+    \ \"How are you\"\n>>> info = hello + message\n>>> info\n'Hello,How are you'\n\
+    ```\n\nTwo or more string literals next to each other are automatically concatenated.\n\
+    \n```python\n>>> 'Hello ' \"How \" 'are ' 'you'\n'HelloHowareyou'\n```\n\n## Repeat\
+    \ strings\n\nBy using `*`, we can repeat the strings.\n\n```python\n>>> 'hi' *\
+    \ 2\n'hihi'\n>>> 'hi' * 2 + 'hello' * 3\n'hihihellohellohello'\n```\n\n## Access\
+    \ specific character from strings\n\nYou can access, specific character of string\
+    \ using index position.\n\n```python\n>>> name = \"Hello World\"\n>>> name [0]\n\
+    'H'\n>>> name [6]\n'W'\n```\n\nIndex 0 represents 1 st character, 1 represents\
+    \ 2 nd character etc., You can also use negative numbers for indexing. `-1` represents\
+    \ last character; `-2` represents second-last character etc.,\n\n```python\n>>>\
+    \ name\n'Hello World'\n>>> name [-1]\n'd'\n>>> name [-2]\n'l'\n>>> name [-7]\n\
+    'o'\n```\n\n## Slicing\n\nSlicing is used to get sub string of given string.\n\
+    \n| Example | Description |\n| :--- | :--- |\n| `string[start:end]` | Returns\
+    \ sub string from index `start` (included) to end index (excluded). |\n| `string[:end]`\
+    \ | Returns sub string from index 0(included) to end index (excluded). |\n| `string[start:]`\
+    \ | Return sub string from index `start` to till end. |\n| `string[-2:]` | Return\
+    \ characters from 2 nd last to end. |\n\n```python\n>>> message = \"Hello World\"\
+    \n>>> message [0 : 5]\n'Hello'\n>>> message [5 :]\n' World'\n>>> message[:]\n\
+    'Hello World'\n>>> message [-2:]\n'ld'\n>>> message [-5:]\n'Wor'\n```\n\n## Get\
+    \ length of the string\n\n`len(str)` is used to get the length of the string.\n\
+    \n```python\n>>> message\n'Hello World'\n>>> len(message)\n11\n>>> len (\"How\
+    \ are you \")\n11\n```\n\n# Python: if condition\n\n“if” statement tell the program\
+    \ execute the section of code when the condition evaluates to true.\n\nSyntax:\n\
+    `if_stmt ::= \"if\" expression \":\" suite`\n\n```python\ntest.py\na = 10\nif\
+    \ (a < 10 ) :\n  print ( \"a is less than 10\" )\n```\n\n## if-else statement\n\
+    \nIf the condition true, then if block executed. other wise else block executed.\n\
+    \nSyntax:\n`if_stmt ::= \"if\" expression \":\" suite [\"else\" \":\" suite]`\n\
+    \n```python\ntest.py\na = 10\nif (a != 10 ) :\n  print ( \"a is not equal to 10\"\
+    \ )\nelse :\n  print ( \"a is equal to 10\" )\n```\n\n## if-elif-else statement\n\
+    \nBy using if-elif-else construct, you can choose number of alternatives. An if\
+    \ statement can be followed by an optional elif...else statement.\n\nSyntax:\n\
+    `if_stmt ::= \"if\" expression \":\" suite (\"elif\" expression \":\" suite)*\
+    \ [\"else\" \":\" suite]`\n\n```python\ntest.py\na = 10\nif (a > 10 ) :\n  print\
+    \ ( \"a is greater than 10\" )\nelif (a < 10 ) :\n  print ( \"a is less than 10\"\
+    \ )\nelse :\n  print ( \"a is equal to 10\" )\n```\n\n## Note\n\na. In python,\
+    \ any non-zero integer value is treated as true; zero is false.\n\n```python\n\
+    test.py\nif ( 100 ) :\n  print ( \"Hello\" )\nelse :\n  print ( \"Bye\" )\n```\n"
+  raw: '| == | Equal to | a==b returns true if a is equal to b, else false |
+
+
+    | != | Not equal to | a!=b returns true if a is not equal to b, else false. |
+
+
+    | >  | Greater than | a>b returns true, if a is > b, else false. |
+
+
+    | >= | Greater than or equal to | a>=b returns true, if a is >= b, else false.
+    |
+
+
+    | <  | Less than | a<b returns true, if a is < b, else false. |
+
+
+    | <= | Less than or equal to | a<=b returns true, if a is <= b, else false. |
+
+
+    >>> a = 10
+
+
+    >>> b = 12
+
+
+    >>> a = = b
+
+
+    False
+
+
+    >>> a ! = b
+
+
+    True
+
+
+    >>> a > b
+
+
+    False
+
+
+    >>> a > = b
+
+
+    False
+
+
+    >>> a < b
+
+
+    True
+
+
+    >>> a < = b
+
+
+    True
+
+
+    >>>
+
+
+    # Assignment operators in python
+
+
+    Assignment operators are used to assign value to a variable. Following are the
+    assignment operators provided by python.
+
+
+    | Operator | Description |
+
+
+    | = | a=10 assigns 10 to variable a |
+
+
+    | += | a+=10 is same as a=a+10 |
+
+
+    | -= | a-=10 is same as a=a-10 |
+
+
+    | *= | a*=10 is same as a=a*10 |
+
+
+    | /= | a/=10 is same as a=a/10 |
+
+
+    | //= | a//=10 is same as a=a//10 |
+
+
+    | %= | a%=10 is same as a=a%10 |
+
+
+    | **= | a**=10 is same as a=a**10 |
+
+
+    >>> a = 10
+
+
+    >>> a
+
+
+    10
+
+
+    >>>
+
+
+    >>> a += 10
+
+
+    >>> a
+
+
+    20
+
+
+    >>>
+
+
+    >>> a -= 10
+
+
+    >>> a
+
+
+    10
+
+
+    >>>
+
+
+    >>> a *= 10
+
+
+    >>> a
+
+
+    100
+
+
+    >>>
+
+
+    >>> a /= 10
+
+
+    >>> a
+
+
+    10.0
+
+
+    >>>
+
+
+    >>> a //= 10
+
+
+    >>> a
+
+
+    1.0
+
+
+    >>>
+
+
+    >>> a **= 10
+
+
+    >>> a
+
+
+    1.0
+
+
+    Multiple Assignments
+
+
+    You can assign values to multiple variables simultaneously.
+
+
+    >>> a, b, c = 1 0 , ''hello '' , 12.345
+
+
+    >>> a
+
+
+    10
+
+
+    >>> b
+
+
+    ''hello''
+
+
+    >>> c
+
+
+    12.345
+
+
+    # Logical Operators in python
+
+
+    Following are the logical operators supported by python.
+
+
+    | Operator | Description |
+
+
+    | and | ‘a and b’ returns true if both a, b are true. Else false. |
+
+
+    | or | ‘a or b’ return false, if both a and b are false, else true. |
+
+
+    | not | ‘not a’ Returns True if a is false, true otherwise |
+
+
+    >>> a = bool ( 0 )
+
+
+    >>> b = bool ( 1 )
+
+
+    >>>
+
+
+    >>> a
+
+
+    False
+
+
+    >>> b
+
+
+    True
+
+
+    >>>
+
+
+    >>> a an d b
+
+
+    False
+
+
+    >>>
+
+
+    >>> a o r b
+
+
+    True
+
+
+    >>>
+
+
+    >>> no t a
+
+
+    True
+
+
+    >>>
+
+
+    >>> no t (a an d b)
+
+
+    True
+
+
+    >>>
+
+
+    >>> no t ( a o r b)
+
+
+    False
+
+
+    # Bitwise Operators in python
+
+
+    Python supports following bitwise operators, to perform bit wise operations on
+    integers.
+
+
+    | Operator | Description |
+
+
+    | >>  | bitwise right shift |
+
+
+    | <<  | bitwise left shift |
+
+
+    | & | bitwise and |
+
+
+    | ^ | Bitwise Ex-OR |
+
+
+    | &#124; | Bitwise or |
+
+
+    | ~ | Bitwise not |
+
+
+    Following post, explains bitwise operators clearly.
+
+
+    http://self-learning-java-tutorial.blogspot.in/2014/02/bit-wise-operators.html
+
+
+    >>> a = 2
+
+
+    >>> a >> 1
+
+
+    1
+
+
+    >>>
+
+
+    >>> a << 1
+
+
+    4
+
+
+    >>>
+
+
+    >>> a & 3
+
+
+    2
+
+
+    >>> a | 3
+
+
+    3
+
+
+    >>>
+
+
+    >>> ~ a
+
+
+    -3
+
+
+    # Membership operators in python
+
+
+    Membership operators are used to test whether a value or variable is found in
+    a sequence (string, list, tuple, set and dictionary).
+
+
+    | Operator | Description |
+
+
+    | in | Return true if value/variable is found in the sequence, else false. |
+
+
+    | not in | Return True if value/variable is not found in the sequence, else false
+    |
+
+
+    >>> primeNumbers = [ 2 , 3 , 5 , 7 , 1 1 ]
+
+
+    >>> 2 i n primeNumbers
+
+
+    True
+
+
+    >>> 4 i n primeNumbers
+
+
+    False
+
+
+    >>> 4 no t i n primeNumbers
+
+
+    True
+
+
+    # Identity operators in python
+
+
+    Identity operators are used to compare the memory locations of two objects.
+
+
+    | Operator | Description |
+
+
+    | is | a is b returns true, if both a and b point to the same object, else false.
+    |
+
+
+    | is not | a is not b returns true, if both a and b not point to the same object,
+    else false. |
+
+
+    >>> name 1 = "Hari Krishna"
+
+
+    >>> name 2 = name1
+
+
+    >>> name 3 = "Hari Krishna"
+
+
+    >>> name 4 = "abc"
+
+
+    >>>
+
+
+    >>> name1 i s name2
+
+
+    True
+
+
+    >>> name1 i s name3
+
+
+    False
+
+
+    >>> name1 i s name4
+
+
+    False
+
+
+    >>> name1 i s no t name3
+
+
+    True
+
+
+    # Python: Short circuit operators
+
+
+    Boolean operators and, or are called short circuit operators, it Is because evaluation
+    of expression stops, whenever the outcome determined.
+
+
+    Why Boolean and is called short circuit operator?
+
+
+    Since if the first statement in the expression evaluates to false, then python
+    won''t evaluates the entire expression. So boolean and is called short circuit
+    and.
+
+
+    Why Boolean OR is called short circuit operator?
+
+
+    Since if the first statement evaluates to true, then Python won''t evaluates the
+    entire expression.
+
+
+    # Strings in python
+
+
+    String is a sequence of character specified in single quotes(''…''), double quotes("…"),
+    (or) triple quotes ("""…"""  or '''''' …  ''''''). Strings in python are immutable,
+    i.e., an object with a fixed value.
+
+
+    >>> str 1 = ''Hello World''
+
+
+    >>> str 2 = "Hello World"
+
+
+    >>> str 3 = """Hello
+
+
+    ... World
+
+
+    ... """
+
+
+    >>> str1
+
+
+    ''Hello World''
+
+
+    >>> str2
+
+
+    ''Hello World''
+
+
+    >>> str3
+
+
+    ''Hello\nWorld\n''
+
+
+    Special characters are escaped with backslash.
+
+
+    >>> messag e = ''He don \'' t know about this''
+
+
+    >>> message
+
+
+    "He don''t know about this"
+
+
+    ‘print’ method treat characters preceded by \ (backslash) as special characters.
+
+
+    >>> prin t ( ''firstline \n secondline '' )
+
+
+    firstline
+
+
+    secondline
+
+
+    As you observe output, \n prints new line. If you don’t want characters prefaced
+    by \ to be interpreted as special characters, you can use raw strings by adding
+    an r before the first quote
+
+
+    >>> prin t ( r''firstline\nsecondline '' )
+
+
+    firstline\nsecondline
+
+
+    Concatenate strings
+
+
+    ''+'' operator is used to concatenate strings.
+
+
+    >>> hell o = "Hello,"
+
+
+    >>> messag e = "How are you"
+
+
+    >>> inf o = hell o + message
+
+
+    >>> info
+
+
+    ''Hello,How are you''
+
+
+    Two or more string literals next to each other are automatically concatenated.
+
+
+    >>> ''Hello '' "How " ''are '' ''you''
+
+
+    ''HelloHowareyou''
+
+
+    Repeat strings
+
+
+    By using ‘*’, we can repeat the strings.
+
+
+    >>> ''hi'' * 2
+
+
+    ''hihi''
+
+
+    >>> ''hi'' * 2 + ''hello'' * 3
+
+
+    ''hihihellohellohello''
+
+
+    Access specific character from strings
+
+
+    You can access, specific character of string using index position.
+
+
+    >>> nam e = "Hello World"
+
+
+    >>> name [ 0 ]
+
+
+    ''H''
+
+
+    >>> name [ 6 ]
+
+
+    ''W''
+
+
+    Index 0 represents 1 st  character, 1 represents 2 nd  character etc.,
+
+
+    You can also use negative numbers for indexing.
+
+
+    -1 represents last character; -2 represents second-last character etc.,
+
+
+    >>> name
+
+
+    ''Hello World''
+
+
+    >>> name [ - 1 ]
+
+
+    ''d''
+
+
+    >>> name [ - 2 ]
+
+
+    ''l''
+
+
+    >>> name [ - 7 ]
+
+
+    ''o''
+
+
+    Slicing
+
+
+    Slicing is used to get sub string of given string.
+
+
+    | Example | Description |
+
+
+    | string[start:end] | Returns sub string from index start (included) to end index
+    (excluded). |
+
+
+    | string[:end] | Returns sub string from index 0(included) to end index (excluded).
+    |
+
+
+    | string[start:] | Return sub string from index start to till end. |
+
+
+    | string[-2:] | Return characters from 2 nd  last to end. |
+
+
+    >>> messag e = "Hello World"
+
+
+    >>>
+
+
+    >>> message [ 0 : 5 ]
+
+
+    ''Hello''
+
+
+    >>> message [ 5 :]
+
+
+    '' World''
+
+
+    >>> message[:]
+
+
+    ''Hello World''
+
+
+    >>> message [ - 2 :]
+
+
+    ''ld''
+
+
+    >>> message [ - 5 : - 2 ]
+
+
+    ''Wor''
+
+
+    Get length of the string
+
+
+    Function ‘len(str)’ is used to get the length of the string.     
+
+
+    >>> message
+
+
+    ''Hello World''
+
+
+    >>> len(message)
+
+
+    11
+
+
+    >>> len ( "How are you " )
+
+
+    11
+
+
+    # Python: if condition
+
+
+    “if” statement
+
+
+    "if" tell the program execute the section of code when the condition evaluates
+    to true.
+
+
+    Syntax
+
+
+    if_stmt ::=  "if" expression ":" suite
+
+
+    test.py
+
+
+    a = 10
+
+
+    if (a < 10 ) :
+
+
+      print ( "a is less than 10" )
+
+
+    if (a == 10 ) :
+
+
+      print ( "a is equal to 10" )
+
+
+    if ( a > 10 ) :
+
+
+      print ( "a is greater than 10" )
+
+
+    $ python3 test.py
+
+
+    a is equal to 10
+
+
+    if-else statement
+
+
+    If the condition true, then if block code executed. other wise else block code
+    executed.
+
+
+    Syntax
+
+
+    if_stmt ::=  "if" expression ":" suite
+
+
+                       ["else" ":" suite]
+
+
+    test.py
+
+
+    a = 10
+
+
+    if (a != 10 ) :
+
+
+      print ( "a is not equal to 10" )
+
+
+    else :
+
+
+      print ( "a is equal to 10" )
+
+
+    if-elif-else statement
+
+
+    By using if-elif-else construct, you can choose number of alternatives. An if
+    statement can be followed by an optional elif...else statement.
+
+
+    Syntax
+
+
+    if_stmt ::=  "if" expression ":" suite
+
+
+                 ( "elif" expression ":" suite )*
+
+
+                 ["else" ":" suite]
+
+
+    test.py
+
+
+    a = 10
+
+
+    if (a > 10 ) :
+
+
+      print ( "a is greater than 10" )
+
+
+    elif (a < 10 ) :
+
+
+      print ( "a is less than 10" )
+
+
+    else :
+
+
+      print ( "a is equal to 10" )
+
+
+    $ python3 test.py
+
+
+    a is equal to 10
+
+
+    Note:
+
+
+    a. In python, any non-zero integer value is treated as true; zero is false.
+
+
+    test.py
+
+
+    if ( 100 ) :
+
+
+      print ( "Hello" )
+
+
+    else :
+
+
+      print ( "Bye" )'
+  toc: []
+  trans: "\n\n| 运算符 | 名称 | 描述 |\n| :--- | :--- | :--- |\n| `==` | 等于 | 如果 `a` 等于 `b`，则\
+    \ `a==b` 返回 true，否则返回 false |\n| `!=` | 不等于 | 如果 `a` 不等于 `b`，则 `a!=b` 返回 true，否则返回\
+    \ false |\n| `>` | 大于 | 如果 `a` 大于 `b`，则 `a>b` 返回 true，否则返回 false |\n| `>=` | 大于等于\
+    \ | 如果 `a` 大于等于 `b`，则 `a>=b` 返回 true，否则返回 false |\n| `<` | 小于 | 如果 `a` 小于 `b`，则\
+    \ `a<b` 返回 true，否则返回 false |\n| `<=` | 小于等于 | 如果 `a` 小于等于 `b`，则 `a<=b` 返回 true，否则返回\
+    \ false |\n\n```python\n>>> a = 10\n>>> b = 12\n>>> a == b\nFalse\n>>> a != b\n\
+    True\n>>> a > b\nFalse\n>>> a >= b\nFalse\n>>> a < b\nTrue\n>>> a <= b\nTrue\n\
+    ```\n\n# Python 中的赋值运算符\n\n赋值运算符用于给变量赋值。以下是 Python 提供的赋值运算符。\n\n| 运算符 | 描述 |\n\
+    | :--- | :--- |\n| `=` | `a=10` 将 `10` 赋值给变量 `a` |\n| `+=` | `a+=10` 等于 `a=a+10`\
+    \ |\n| `-=` | `a-=10` 等于 `a=a-10` |\n| `*=` | `a*=10` 等于 `a=a*10` |\n| `/=` |\
+    \ `a/=10` 等于 `a=a/10` |\n| `//=` | `a//=10` 等于 `a=a//10` |\n| `%=` | `a%=10` 等于\
+    \ `a=a%10` |\n| `**=` | `a**=10` 等于 `a=a**10` |\n\n```python\n>>> a = 10\n>>>\
+    \ a\n10\n>>> a += 10\n>>> a\n20\n>>> a -= 10\n>>> a\n10\n>>> a *= 10\n>>> a\n\
+    100\n>>> a /= 10\n>>> a\n10.0\n>>> a //= 10\n>>> a\n1.0\n>>> a **= 10\n>>> a\n\
+    1.0\n```\n\n## 多重赋值\n\n你可以同时给多个变量赋值。\n\n```python\n>>> a, b, c = 10 , 'hello ',\
+    \ 12.345\n>>> a\n10\n>>> b\n'hello'\n>>> c\n12.345\n```\n\n# Python 中的逻辑运算符\n\n\
+    以下是 Python 支持的逻辑运算符。\n\n| 运算符 | 描述 |\n| :--- | :--- |\n| `and` | 如果 `a` 和 `b`\
+    \ 都为 true，则 `'a and b'` 返回 true。否则返回 false。 |\n| `or` | 如果 `a` 和 `b` 都为 false，则\
+    \ `'a or b'` 返回 false；否则返回 true。 |\n| `not` | 如果 `a` 为 false，则 `'not a'` 返回 True；否则返回\
+    \ true |\n\n```python\n>>> a = bool(0)\n>>> b = bool(1)\n>>> a\nFalse\n>>> b\n\
+    True\n>>> a and b\nFalse\n>>> a or b\nTrue\n>>> not a\nTrue\n>>> not (a and b)\n\
+    True\n>>> not (a or b)\nFalse\n```\n\n# Python 中的位运算符\n\nPython 支持以下位运算符，用于对整数进行按位运算。\n\
+    \n| 运算符 | 描述 |\n| :--- | :--- |\n| `>>` | 位右移 |\n| `<<` | 位左移 |\n| `&` | 位与 |\n\
+    | `^` | 位异异 |\n| `|` | 位或 |\n| `~` | 位取反（位非） |\n\n以下是对位运算符的详细解释。\n\n```python\n\
+    >>> a = 2\n>>> a >> 1\n1\n>>> a << 1\n4\n>>> a & 3\n2\n>>> a | 3\n3\n>>> ~ a\n\
+    -3\n```\n\n# Python 中的成员运算符\n\n成员运算符用于测试值或变量是否存在于序列（字符串、列表、元组、集合和字典）中。\n\n| 运算符\
+    \ | 描述 |\n| :--- | :--- |\n| `in` | 如果值/变量在序列中，返回 true；否则返回 false。 |\n| `not in`\
+    \ | 如果值/变量不在序列中，返回 True；否则返回 false |\n\n```python\n>>> primeNumbers = [2, 3, 5,\
+    \ 7]\n>>> 2 in primeNumbers\nTrue\n>>> 4 not in primeNumbers\nFalse\n>>> 3 in\
+    \ primeNumbers\nTrue\n```\n\n# Python 中的身份运算符\n\n身份运算符用于比较两个对象的内存位置。\n\n| 运算符\
+    \ | 描述 |\n| :--- | :--- |\n| `is` | 如果 `a` 和 `b` 都指向同一个对象，则 `a is b` 返回 true；否则返回\
+    \ false。 |\n| `is not` | 如果 `a` 和 `b` 不指向同一个对象，则 `a is not b` 返回 true；否则返回 false。\
+    \ |\n\n```python\n>>> name1 = \"Hari Krishna\"\n>>> name2 = \"Hari Krishna\"\n\
+    >>> name1 is name2\nTrue\n>>> name1 is not name2\nFalse\n```\n\n# Python：短路运算符\n\
+    \n布尔运算符 `and` 和 `or` 被称为短路运算符，因为表达式的结果一旦确定就会停止求值。\n\n为什么 `and` 是短路运算符？\n因为如果第一个语句为\
+    \ false，则不会评估整个表达式。\n\n为什么 `or` 是短路运算符？\n因为如果第一个语句为 true，则不会评估整个表达式。\n\n# Python\
+    \ 中的字符串\n\n字符串可以是单引号（`'...'`）、双引号（`\"...\"`）或三引号（`\"\"\"\"\"\"`）。Python 中的字符串是不可变的。\n\
+    \n```python\n>>> str1 = 'Hello World'\n>>> str2 = \"Hello World\"\n>>> str3 =\
+    \ \"\"\"Hello World\"\"\"\n>>> str1\n'Hello World'\n>>> str2\n'Hello World'\n\
+    >>> str3\n'Hello World'\n```\n\n## 特殊字符\n\n特殊字符使用反斜杠 `\\` 进行转义。`print()` 方法会将跟在\
+    \ `\\` 之后的字符解释为特殊字符。\n\n```python\n>>> print('first\\nline')\nfirst\nline\n```\n\
+    \n## 字符串操作\n\n`+` 运算符用于拼接字符串。\n\n```python\n>>> hello = \"Hello,\"\n>>> message\
+    \ = \"are you\"\n>>> info = hello + message\n>>> info\n'Hello,are you'\n```\n\n\
+    两个或多个字符串字面量会自动拼接。\n\n```python\n>>> 'Hello ' \"are \" 'you'\n'Hello are you'\n\
+    ```\n\n## 重复字符串\n\n通过使用 `*` 我们可以重复字符串。\n\n```python\n>>> 'hi' * 2\n'hihi'\n>>>\
+    \ 'hi' * 2 + 'hello'\n'hihihello'\n```\n\n## 从字符串访问特定字符\n\n可以使用索引位置访问字符串的特定字符。\n\
+    \n```python\n>>> name = \"Hello World\"\n>>> name[0]\n'H'\n>>> name[6]\n'W'\n\
+    ```\n\n索引 0 代表第一个字符，1 代表第二个字符，以此此类推。你也可以使用负数进行索引。`-1` 代表最后一个字符，`-2` 代表倒数第二个字符等等。\n\
+    \n```python\n>>> name = \"Hello World\"\n>>> name[-1]\n'd'\n>>> name[-2]\n'l'\n\
+    >>> name[-7]\n'o'\n```\n\n## 切片\n\n切片用于获取给定字符串的子字符串。\n\n| 示例 | 描述 |\n| :--- |\
+    \ :--- |\n| `string[start:end]` | 返回从索引 `start`（包含）到结束索引（不包含）的子字符串 |\n| `string[:end]`\
+    \ | 返回从索引 0（包含）到结束索引（不包含）的子字符串 |\n| `string[start:]` | 返回从索引 `start` 到末尾的子字符串\
+    \ |\n| `string[-2:]` | 返回从倒第二个到末尾的字符 |\n\n```python\n>>> message = \"Hello World\"\
+    \n>>> message[0 : 5]\n'Hello'\n>>> message[5 :]\n' World'\n>>> message[:]\n'Hello\
+    \ World'\n>>> message[-2:]\n'ld'\n>>> message[-5:]\n'Wor'\n```\n\n## 获取字符串长度\n\
+    \n`len(str)` 用于获取字符串的长度。\n\n```python\n>>> message = 'Hello World'\n>>> len(message)\n\
+    11\n>>> len (\"are you \")\n11\n```\n\n# Python：if 条件\n\n“if”语句在条件求值为 true 时执行代码段。\n\
+    \n语法：\n`if_stmt ::= \"if\" expression \":\" suite`\n\n```python\ntest.py\na =\
+    \ 10\nif (a < 10 ) :\n  print ( \"a is less than 10\" )\n```\n\n## if-else 语句\n\
+    \n如果条件为真，则执行 if 块；否则执行 else 块。\n\n语法：\n`if_stmt ::= \"if\" expression \":\" suite\
+    \ [\"else\" \":\" suite]`\n\n```python\ntest.py\na = 10\nif (a != 10 ) :\n  print\
+    \ ( \"a is not equal to 10\" )\nelse :\n  print ( \"a is equal to 10\" )\n```\n\
+    \n## if-elif-else 语句\n\n通过使用 if-elif-else 结构，你可以选择多个备方案。if 语句后面可以跟可选的 elif...else\
+    \ 语句。\n\n语法：\n`if_stmt ::= \"if\" expression \":\" suite (\"elif\" expression\
+    \ \":\" suite)* [\"else\" \":\" suite]`\n\n```python\ntest.py\na = 10\nif (a >\
+    \ 10 ) :\n  print ( \"a is greater than 10\" )\nelif (a < 10 ) :\n  print ( \"\
+    a is less than 10\" )\nelse :\n  print ( \"a is equal to 10\" )\n```\n\n## 注意事项\n\
+    \na. 在 Python 中，任何非零整数值被视为 true；零为 false。\n\n```python\ntest.py\nif ( 100 ) :\n\
+    \  print ( \"Hello\" )\nelse :\n  print ( \"Bye\" )\n```\n\n"
+- fmt: "\n```bash\n$ python3 test.py\n```\n\nHello\n\nb. Any sequence (string, list\
+    \ etc.,) with a non-zero length is true, empty sequences are false.\n\n`test.py`\n\
+    \n```python\nlist = []\n\ndata = \"abc\"\n\nif ( list ) :\n  print ( \"list is\
+    \ not empty\" )\nelse :\n  print ( \"list is empty\" )\n\nif (data) :\n  print\
+    \ ( \"data is not empty\" )\nelse :\n  print ( \"data is empty\" )\n```\n\n```bash\n\
+    $ python3 test.py\nlist is empty\ndata is not empty\n```\n\n# Python: while statement\n\
+    \n`while` statement executes a block of statements until a particular condition\
+    \ is true\n\n### Syntax\n```\nwhile_stmt ::= \"while\" expression \":\" suite\n\
+    \                [\"else\" \":\" suite]\n```\n`else` clause is optional. If the\
+    \ expression evaluates to false, then else clause will execute (if else present),\
+    \ and terminates.\n\n`test.py`\n```python\na = 2\nprint ( \"Even numbers are \"\
+    \ )\nwhile (a < 10 ) :\n  print (a, end = ' ' )\na += 2\nelse :\n  print ( \"\
+    \ \\n Exit from loop\" )\nprint ( \"Done \" )\n```\n\n```bash\n$ python3 test.py\n\
+    Even numbers are\n2 4 6 8\nExit from loop\nDone\n```\n\n# Python: for statement\n\
+    \nPython’s `for` statement is used to iterate over the items of any sequence like\
+    \ a list, string.\n\n### Syntax\n```\nfor_stmt ::= \"for\" target_list \"in\"\
+    \ expression_list \":\" suite\n                [\"else\" \":\" suite]\n```\n`else`\
+    \ clause is optional, it is executes, once the loop terminates.\n\n`test.py`\n\
+    ```python\nnames = [ \"Phalgun \" , \"Sambith \" , \"Mahesh \" , \"swapna \" ]\n\
+    for name in names:\n  print (name)\nelse :\n  print ( \"Exiting from loop\" )\n\
+    print ( \"Finsihed Execution \" )\n```\n\n```bash\n$ python3 test.py\nPhalgun\n\
+    Sambith\nMahesh\nswapna\nExiting from loop\nFinsihed Execution\n```\n\n# Python:\
+    \ break statement\n\n`break` statement is used to come out of loop like `for`,\
+    \ `while`.\n\n`test.py`\n```python\ni = 0\nwhile ( 1 ):\n  i += 2\n  print (i)\n\
+    \  if (i == 10 ):\n    break\nelse :\n  print ( \"Exiting loop\" )\nprint ( \"\
+    Finished Execution \" )\n```\n\n```bash\n$ python3 test.py\n2\n4\n6\n8\n10\nFinished\
+    \ Execution\n```\nAs you observe the output, `print` statement in `else` clause\
+    \ is not printed. It is because, else clause will not execute, when a `break`\
+    \ statement terminates the loop.\n\n# Python: continue statement\n\n`continue`\
+    \ statement skips the current iteration of loops like `for`, `while`.\n\n`test.py`\n\
+    ```python\ni = 2\nwhile (i < 20 ):\n  i += 2\n  if (i % 2 != 0 ):\n    continue\n\
+    \  print (i)\nelse :\n  print ( \"Exiting loop\" )\nprint ( \"Finished Execution\
+    \ \" )\n```\nAbove program prints all the even numbers up to 20 (exclusive).\n\
+    \n```bash\n$ python3 test.py\n4\n6\n8\n10\n12\n14\n16\n18\n20\nExiting loop\n\
+    Finished Execution\n```\n\n# Python: functions\n\nA function is a block of statements\
+    \ identified by a name. The keyword `def` is used to define a function. Functions\
+    \ are mainly used for two reasons.\n\na. To make code easier to build and understand\n\
+    b. To reuse the code\n\n### Syntax\n```\ndef functionName(argument1, argument2\
+    \ …. argumentN):\n```\n\n`test.py`\n```python\ndef factorial (n):\n  if (n <=\
+    \ 1 ):\n    return 1\n  result = 1\n  for i in range ( 2 , n + 1 ):\n    result\
+    \ *= i\n  return result\n\nprint(factorial ( 1 ))\nprint(factorial ( 2 ))\nprint(factorial\
+    \ ( 3 ))\nprint(factorial ( 4 ))\nprint(factorial ( 5 ))\n```\n\n```bash\n$ python3\
+    \ test.py\n1\n2\n6\n24\n120\n```\nVariables created before function definition\
+    \ may be read inside of the function only if the function does not change the\
+    \ value.\n\n`test.py`\n```python\n# Create the x variable and set to 44\nx = 44\n\
+    # Define a simple function that prints x\ndef f ():\n  x += 1\n  print (x)\n#\
+    \ Call the function\nf()\n```\nRun above program, you will get following error.\n\
+    \n```bash\n$ python3 test.py\nTraceback (most recent call last):\n  File \"test.py\"\
+    , line 11, in <module>\n    f()\n  File \"test.py\", line 7, in f\n    x += 1\n\
+    UnboundLocalError: local variable 'x' referenced before assignment\n```\nRemove\
+    \ `x+=1` statement and re run the above program, value of `x` is printed to console.\n\
+    \n# Python: functions: return statement\n\n`return` statement is used to return\
+    \ a value to the caller.\n\n`test.py`\n```python\ndef factorial (n):\n  if (n\
+    \ <= 1 ):\n    return 1\n  result = 1\n  for i in range ( 2 , n + 1 ):\n    result\
+    \ *= i\n  return result\n\nprint(factorial ( 1 ))\nprint(factorial ( 2 ))\nprint(factorial\
+    \ ( 3 ))\nprint(factorial ( 4 ))\nprint(factorial ( 5 ))\n```\n\n```bash\n$ python3\
+    \ test.py\n1\n2\n6\n24\n120\n```\n`return` without an expression returns `None`.\n\
+    ```python\ndef hello():\n  return\nprint(\"Hello\")\n```\n```bash\n$ python3 test.py\n\
+    Hello\nNone\n```\n\n# Python: lists\n\nList is group of values between square\
+    \ brackets separated by commas.\n```python\n>>> primes = [ 2 , 3 , 5 , 7 , 11\
+    \ , 13 , 17 , 19 , 23 ]\n>>> [2, 3, 5, 7, 11, 13, 17, 19, 23]\n```\n`primes` is\
+    \ a list that contain prime numbers.\n```python\n>>> students = [ \"Hari \" ,\
+    \ \"Krishna \" , \"Kiran \" , \"Ravi \" ]\n>>> ['Hari', 'Krishna', 'Kiran', 'Ravi']\n\
+    ```\n`students` is a list that contain all names. List can contain any type of\
+    \ data.\n```python\n>>> objects = [ 1 , 3 , \"Hello \" , 10 , 23 ]\n>>> [1, 3,\
+    \ 'Hello', 10, 23]\n```\nYou can access elements of list using index.\n```python\n\
+    >>> objects = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>>\
+    \ objects[ 0 ]\n1\n>>> objects[ 1 ]\n3\n```\n`objects[0]` return the first element\
+    \ of list.\n`objects[1]` return the second element of list. Negative indexes also\
+    \ used to access elements of a list.\n```python\n>>> objects = [ 1 , 3 , 'Hello'\
+    \ , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[ - 1 ]\n23\n>>> objects[\
+    \ - 3 ]\n3\n```\n\n### Slicing\nSlicing is used to get sub list.\n\n| Example\
+    \ | Description |\n| :--- | :--- |\n| `list[start:end]` | Returns sub list from\
+    \ index `start` (included) to `end` (excluded). |\n| `list[:end]` | Returns sub\
+    \ list from index 0 (included) to `end` (excluded). |\n| `list[start:]` | Return\
+    \ sub list from index `start` till end. |\n| `list[-2:]` | Return list from 2nd\
+    \ last to end. |\n\n```python\n>>> objects = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>>\
+    \ [1, 3, 'Hello', 10, 23]\n>>> objects[ -1 ]\n23\n>>> objects[ -3 ]\n[1, 3, 'Hello',\
+    \ 10, 23]\n>>> objects[:]\n[1, 3, 'Hello', 10, 23]\n>>> objects[ 2 :]\n['Hello',\
+    \ 10, 23]\n>>> objects[ : 3 ]\n[1, 3, 'Hello']\n```\n\n### Concatenate two lists\n\
+    `+` Operator is used to concatenate two lists.\n```python\n>>> even = [ 2 , 4\
+    \ , 6 , 8 , 10 ]\n>>> odd = [ 1 , 3 , 5 , 7 , 9 ]\n>>> numbers = even + odd\n\
+    >>> [2, 4, 6, 8, 10, 1, 3, 5, 7, 9]\n```\nLists are mutable; you can change the\
+    \ values of list.\n```python\n>>> numbers = [ 2 , 4 , 6 , 8 , 10 , 1 , 3 , 5 ,\
+    \ 7 , 9 ]\n>>> numbers[ 0 ] = 12\n>>> numbers[ 1 ] = 14\n>>> [12, 14, 6, 8, 10,\
+    \ 1, 3, 5, 7, 9]\n```\n\n### Add elements to end of list\nList provides `append`\
+    \ method to add new elements to the end of a list.\n```python\n>>> numbers = [\
+    \ 12 , 14 , 6 , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers.append( 11 )\n>>> numbers.append(\
+    \ 13 )\n>>> [12, 14, 6, 8, 10, 1, 3, 5, 7, 9, 11, 13]\n```\n\n### Assignment to\
+    \ slices\nIf you want to replace sequence of elements in a list, you can use slice\
+    \ notation.\n```python\nnumbers[2:5] = [21, 22, 23]\n```\nAbove statement replace\
+    \ elements at index 2, 3, 4 with 21, 22, 23 respectively.\n```python\nnumbers[:]\
+    \ = []\n```\nAbove statement clear the list by replacing all the elements with\
+    \ an empty list.\n```python\n>>> numbers = [ 12 , 14 , 6 , 8 , 10 , 1 , 3 , 5\
+    \ , 7 , 9 ]\n>>> numbers[2:5] = [21, 22, 23]\n>>> [12, 14, 21, 22, 23, 1, 3, 5,\
+    \ 7, 9]\n>>> numbers[:] = []\n>>> []\n```\n\n### Get length of the list\nUsing\
+    \ `len` function, you can get the length of the list.\n```python\n>>> vowels =\
+    \ [ 'a', 'e', 'i', 'o', 'u' ]\n>>> len(vowels)\n5\n```\n\n### Nested lists\nA\
+    \ list can be nested in other list. For example, in below example, numbers contains\
+    \ 3 lists, first list represent odd numbers, second list represent even numbers\
+    \ and third list represent prime numbers.\n```python\n>>> numbers = [ [ 1 , 3\
+    \ , 5 , 7 ], [ 2 , 4 , 6 , 8 ], [ 2 , 3 , 5 , 7 , 11 ]]\n>>> [[1, 3, 5, 7], [2,\
+    \ 4, 6, 8], [2, 3, 5, 7, 11]]\n>>> numbers[ 0 ]\n[1, 3, 5, 7]\n>>> numbers[ 1\
+    \ ]\n[2, 4, 6, 8]\n>>> numbers[ 2 ]\n[2, 3, 5, 7, 11]\n>>> len(numbers)\n3\n>>>\
+    \ len(numbers[ 0 ])\n4\n>>> len(numbers[ 1 ])\n4\n>>> len(numbers[ 2 ])\n5\n>>>\
+    \ numbers[ 0 ] [ 1 ] = 9\n>>> numbers[ 1 ] [ 1 : 4 ] = [ 10 , 12 , 14 ]\n>>> [[1,\
+    \ 9, 5, 7], [2, 10, 12, 14], [2, 3, 5, 7, 11]]\n```\n"
+  raw: '$ python3 test.py
+
+
+    Hello
+
+
+    b. Any sequence (string, list etc.,) with a non-zero length is true, empty sequences
+    are false.
+
+
+    test.py
+
+
+    list = []
+
+
+    data = "abc"
+
+
+    if ( list ) :
+
+
+      print ( "list is not empty" )
+
+
+    else :
+
+
+      print ( "list is empty" )
+
+
+    if (data) :
+
+
+      print ( "data is not empty" )
+
+
+    else :
+
+
+      print ( "data is empty" )
+
+
+    $ python3 test.py
+
+
+    list is empty
+
+
+    data is not empty
+
+
+    # Python: while statement
+
+
+    ‘while’ statement executes a block of statements until a particular condition
+    is true
+
+
+    Syntax
+
+
+    while_stmt ::=  "while" expression ":" suite
+
+
+                               ["else" ":" suite]
+
+
+    ‘else’ clause is optional. If the expression evaluates to false, then else clause
+    will execute (if else present), and terminates.
+
+
+    test.py
+
+
+    a = 2
+
+
+    prin t ( "Even numbers are " )
+
+
+    while (a < 10 ) :
+
+
+      print (a, end = '' '' )
+
+
+    a += 2
+
+
+    else :
+
+
+      print ( " \n Exit from loop" )
+
+
+    prin t ( "Done " )
+
+
+    $ python3 test.py
+
+
+    Even numbers are
+
+
+    2 4 6 8
+
+
+    Exit from loop
+
+
+    Done
+
+
+    # Python: for statement
+
+
+    Python’s for statement is used to iterate over the items of any sequence like
+    a list, string.
+
+
+    Syntax
+
+
+    for_stmt ::=  "for" target_list "in" expression_list ":" suite
+
+
+                  ["else" ":" suite]
+
+
+    ‘else’ clause is optional, it is executes, once the loop terminates.
+
+
+    test.py
+
+
+    name s = [ "Phalgun " , "Sambith " , "Mahesh " , "swapna " ]
+
+
+    for name in names:
+
+
+      print (name)
+
+
+    else :
+
+
+      print ( "Exiting from loop" )
+
+
+    prin t ( "Finsihed Execution " )
+
+
+    $ python3 test.py
+
+
+    Phalgun
+
+
+    Sambith
+
+
+    Mahesh
+
+
+    swapna
+
+
+    Exiting from loop
+
+
+    Finsihed Execution
+
+
+    # Python: break statement
+
+
+    ''break'' statement is used to come out of loop like for, while.
+
+
+    test.py
+
+
+    i = 0
+
+
+    while ( 1 ):
+
+
+    i += 2
+
+
+      print (i)
+
+
+      if (i == 10 ):
+
+
+      break
+
+
+    else :
+
+
+      print ( "Exiting loop" )
+
+
+    print ( "Finished Execution " )
+
+
+    $ python3 test.py
+
+
+    2
+
+
+    4
+
+
+    6
+
+
+    8
+
+
+    10
+
+
+    Finished Execution
+
+
+    As you observe the output, print statement in else clause is not printed. It is
+    because, else clause will not execute, when a break statement terminates the loop.
+
+
+    # Python: continue statement
+
+
+    ‘continue’ statement skips the current iteration of loops like for, while.
+
+
+    test.py
+
+
+    i = 2
+
+
+    while (i < 20 ):
+
+
+    i += 2
+
+
+      if (i % 2 != 0 ):
+
+
+      continue
+
+
+      print (i)
+
+
+    else :
+
+
+      print ( "Exiting loop" )
+
+
+    print ( "Finished Execution " )
+
+
+    Above program prints all the even numbers up to 20 (exclusive).
+
+
+    $ python3 test.py
+
+
+    4
+
+
+    6
+
+
+    8
+
+
+    10
+
+
+    12
+
+
+    14
+
+
+    16
+
+
+    18
+
+
+    20
+
+
+    Exiting loop
+
+
+    Finished Execution
+
+
+    # Python: functions
+
+
+    A function is a block of statements identified by a name. The keyword ''def''
+    is used to define a function. Functions are mainly used for two reasons.
+
+
+    a .      To make code easier to build and understand
+
+
+    b .      To reuse the code
+
+
+    Syntax
+
+
+    def functionName(argument1, argument2 …. argumentN):
+
+
+    test.py
+
+
+    def factorial (n):
+
+
+      if (n <= 1 ):
+
+
+      return 1
+
+
+    resul t = 1
+
+
+      for i in range ( 2 , n + 1 ):
+
+
+      result *= i
+
+
+      return result
+
+
+    print(factorial ( 1 ))
+
+
+    print(factorial ( 2 ))
+
+
+    print(factorial ( 3 ))
+
+
+    print(factorial ( 4 ))
+
+
+    print(factorial ( 5 ))
+
+
+    $ python3 test.py
+
+
+    1
+
+
+    2
+
+
+    6
+
+
+    24
+
+
+    120
+
+
+    Variables created before function definition may be read inside of the function
+    only if the function does not change the value.
+
+
+    test.py
+
+
+    # Create the x variable and set to 44
+
+
+    x = 44
+
+
+    # Define a simple function that prints x
+
+
+    def f ():
+
+
+    x += 1
+
+
+      print (x)
+
+
+    # Call the function
+
+
+    f()
+
+
+    Run above program, you will get following error.
+
+
+    $ python3 test.py
+
+
+    Traceback (most recent call last):
+
+
+      File "test.py", line 11, in <module>
+
+
+        f()
+
+
+      File "test.py", line 7, in f
+
+
+        x += 1
+
+
+    UnboundLocalError: local variable ''x'' referenced before assignment
+
+
+    Remove ‘x+=1’ statement and re run the above program, value of x is printed to
+    console.
+
+
+    # Python: functions: return statement
+
+
+    ‘return’ statement is used to return a value from function to the caller.
+
+
+    test.py
+
+
+    def factorial (n):
+
+
+      if (n <= 1 ):
+
+
+      return 1
+
+
+    resul t = 1
+
+
+      for i in range ( 2 , n + 1 ):
+
+
+      result *= i
+
+
+      return result
+
+
+    print(factorial ( 1 ))
+
+
+    print(factorial ( 2 ))
+
+
+    print(factorial ( 3 ))
+
+
+    print(factorial ( 4 ))
+
+
+    print(factorial ( 5 ))
+
+
+    $ python3 test.py
+
+
+    1
+
+
+    2
+
+
+    6
+
+
+    24
+
+
+    120
+
+
+    ‘return’ without an expression argument returns None.
+
+
+    def hello():
+
+
+             print("Hello")
+
+
+    print(hello())
+
+
+    $ python3 test.py
+
+
+    Hello
+
+
+    None
+
+
+    # Python lists
+
+
+    List is group of values in between square brackets separated by commas.
+
+
+    >>> prime s = [ 2 , 3 , 5 , 7 , 1 1 , 1 3 , 1 7 , 1 9 , 2 3 ]
+
+
+    >>> primes
+
+
+    [2, 3, 5, 7, 11, 13, 17, 19, 23]
+
+
+    ‘primes’ is a list that contain prime numbers.
+
+
+    >>> student s = [ "Hari " , "Krishna " , "Kiran " , "Ravi " ]
+
+
+    >>> students
+
+
+    [''Hari'', ''Krishna'', ''Kiran'', ''Ravi'']
+
+
+    ‘students’ is a list that contain all student names.
+
+
+    List can contain any type of data.
+
+
+    >>> object s = [ 1 , 3 , "Hello " , 10.2 3 ]
+
+
+    >>> objects
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    You can access elements of list by using index.
+
+
+    >>> objects
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    >>> objects [ 0 ]
+
+
+    1
+
+
+    >>> objects [ 2 ]
+
+
+    ''Hello''
+
+
+    objects[0] return the first element of list objects.
+
+
+    objects[1] return the second element of list objects.
+
+
+    -ve indexes also used to access elements of a list.
+
+
+    >>> objects
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    >>> objects [ - 1 ]
+
+
+    10.23
+
+
+    >>> objects [ - 3 ]
+
+
+    3
+
+
+    Slicing
+
+
+    Slicing is used to get sub list.
+
+
+    | Example | Description |
+
+
+    | list[start:end] | Returns sub list from index start (included) to end index
+    (excluded). |
+
+
+    | list[:end] | Returns sub list from index 0(included) to end index (excluded).
+    |
+
+
+    | list[start:] | Return sub list from index start to till end. |
+
+
+    | list[-2:] | Return list from 2 nd  last to end. |
+
+
+    >>> objects
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    >>> objects [ - 1 ]
+
+
+    10.23
+
+
+    >>> objects [ - 3 ]
+
+
+    3
+
+
+    >>> objects
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    >>>
+
+
+    >>> objects[:]
+
+
+    [1, 3, ''Hello'', 10.23]
+
+
+    >>>
+
+
+    >>> objects [ 2 :]
+
+
+    [''Hello'', 10.23]
+
+
+    >>>
+
+
+    >>> objects[ : 3 ]
+
+
+    [1, 3, ''Hello'']
+
+
+    >>>
+
+
+    >>> objects [ - 2 :]
+
+
+    [''Hello'', 10.23]
+
+
+    Concatenate two lists
+
+
+    ''+'' Operator is used to concatenate two lists.
+
+
+    >>> eve n = [ 2 , 4 , 6 , 8 , 1 0 ]
+
+
+    >>> od d = [ 1 , 3 , 5 , 7 , 9 ]
+
+
+    >>> numbers = eve n + odd
+
+
+    >>> numbers
+
+
+    [2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
+
+
+    Lists are mutable; you can change the values of list.    
+
+
+    >>> numbers
+
+
+    [2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
+
+
+    >>> numbers [ 0 ] = 12
+
+
+    >>> numbers [ 1 ] = 14
+
+
+    >>> numbers
+
+
+    [12, 14, 6, 8, 10, 1, 3, 5, 7, 9]
+
+
+    Add elements to end of list
+
+
+    List provides ‘append’ method to add new elements to the end of a list.    
+
+
+    >>> numbers
+
+
+    [12, 14, 6, 8, 10, 1, 3, 5, 7, 9]
+
+
+    >>>
+
+
+    >>> number s . append ( 1 1 )
+
+
+    >>> number s . append ( 1 3 )
+
+
+    >>>
+
+
+    >>> numbers
+
+
+    [12, 14, 6, 8, 10, 1, 3, 5, 7, 9, 11, 13]
+
+
+    Assignment to slices
+
+
+    If you want to replace sequence of elements in a list, you can use slice notation.
+
+
+    numbers[2:5] = [21, 22, 23]
+
+
+    Above statement replace elements at index 2, 3, 4 with 21, 22, 23 respectively.
+
+
+    numbers[:] = []
+
+
+    Above statement clear the list by replacing all the elements with an empty list. 
+
+
+    >>> numbers
+
+
+    [12, 14, 6, 8, 10, 1, 3, 5, 7, 9, 11, 13]
+
+
+    >>>
+
+
+    >>> numbers [ 2 : 5 ] = [ 2 1 , 2 2 , 2 3 ]
+
+
+    >>> numbers
+
+
+    [12, 14, 21, 22, 23, 1, 3, 5, 7, 9, 11, 13]
+
+
+    >>>
+
+
+    >>> numbers[:] = []
+
+
+    >>> numbers
+
+
+    []
+
+
+    Get length of the list
+
+
+    By using ‘len’ function, you can get the length of the list.
+
+
+    >>> vowel s = [ ''a '' , ''e '' , ''i '' , ''o '' , ''u '' ]
+
+
+    >>> len(vowels)
+
+
+    5
+
+
+    Nested lists
+
+
+    A list can be nested in other list. For example, in below example, numbers contains
+    3 lists, first list represent odd numbers, second list represent even numbers
+    and third list represent prime numbers.
+
+
+    >>> number s = [ [ 1 , 3 , 5 , 7 ], [ 2 , 4 , 6 , 8 ], [ 2 , 3 , 5 , 7 , 1 1 ]]
+
+
+    >>> numbers
+
+
+    [[1, 3, 5, 7], [2, 4, 6, 8], [2, 3, 5, 7, 11]]
+
+
+    >>>
+
+
+    >>> numbers [ 0 ]
+
+
+    [1, 3, 5, 7]
+
+
+    >>>
+
+
+    >>> numbers [ 1 ]
+
+
+    [2, 4, 6, 8]
+
+
+    >>>
+
+
+    >>> numbers [ 2 ]
+
+
+    [2, 3, 5, 7, 11]
+
+
+    >>>
+
+
+    >>>
+
+
+    >>> len(numbers)
+
+
+    3
+
+
+    >>> len(numbers [ 0 ])
+
+
+    4
+
+
+    >>> len(numbers [ 1 ])
+
+
+    4
+
+
+    >>> len(numbers [ 2 ])
+
+
+    5
+
+
+    >>>
+
+
+    >>> numbers [ 0 ] [ 1 ] = 9
+
+
+    >>> numbers [ 1 ] [ 1 : 4 ] = [ 1 0 , 1 2 , 1 4 ]
+
+
+    >>> numbers
+
+
+    [[1, 9, 5, 7], [2, 10, 12, 14], [2, 3, 5, 7, 11]]
+
+
+    # Python: tuples
+
+
+    A tuple is just like a list, consist of number of values separated by commas.'
+  toc: []
+  trans: "\n\n```bash\n$ python3 test.py\n```\n\nHello\n\nb. 任何非零长度的序列（字符串、列表等）为真，空序列为假。\n\
+    \n`test.py`\n\n```python\nlist = []\n\ndata = \"abc\"\n\nif ( list ) :\n  print\
+    \ ( \"list is not empty\" )\nelse :\n  print ( \"list is empty\" )\n\nif (data)\
+    \ :\n  print ( \"data is not empty\" )\nelse :\n  print ( \"data is empty\" )\n\
+    ```\n\n```bash\n$ python3 test.py\nlist is empty\ndata is not empty\n```\n\n#\
+    \ Python: while 语句\n\n`while` 语句执行语句块，直到特定条件为真\n\n### 语法\n```\nwhile_stmt ::=\
+    \ \"while\" expression \":\" suite\n                [\"else\" \":\" suite]\n```\n\
+    `else` 子句是可选的。如果表达式求值为假，则执行 `else` 子句（如果存在）并结束循环。\n\n`test.py`\n```python\na =\
+    \ 2\nprint ( \"Even numbers are \" )\nwhile (a < 10 ) :\n  print (a, end = ' '\
+    \ )\na += 2\nelse :\n  print ( \" \\n Exit from loop\" )\nprint ( \"Done \" )\n\
+    ```\n\n```bash\n$ python3 test.py\nEven numbers are\n2 4 6 8\nExit from loop\n\
+    Done\n```\n\n# Python: for 语句\n\nPython 的 `for` 语句用于遍历任何序列（如列表、字符串）的项。\n\n###\
+    \ 语法\n```\nfor_stmt ::= \"for\" target_list \"in\" expression_list \":\" suite\n\
+    \                [\"else\" \":\" suite]\n```\n`else` 子句是可选的，它会在循环结束时执行一次。\n\n\
+    `test.py`\n```python\nnames = [ \"Phalgun \" , \"Sambith \" , \"Mahesh \" , \"\
+    swapna \" ]\nfor name in names:\n  print (name)\nelse :\n  print ( \"Exiting from\
+    \ loop\" )\nprint ( \"Finsihed Execution \" )\n```\n\n```bash\n$ python3 test.py\n\
+    Phalgun\nSambith\nMahesh\nswapna\nExiting from loop\nFinsihed Execution\n```\n\
+    \n# Python: break 语句\n\n`break` 语句用于跳 `for` 或 `while` 循环。\n\n`test.py`\n```python\n\
+    i = 0\nwhile ( 1 ):\n  i += 2\n  print (i)\n  if (i == 10 ):\n    break\nelse\
+    \ :\n  print ( \"Exiting loop\" )\nprint ( \"Finished Execution \" )\n```\n\n\
+    ```bash\n$ python3 test.py\n2\n4\n6\n8\n10\nFinished Execution\n```\n如你观察到的输出所示，`else`\
+    \ 子句中的 `print` 语句没有被打印。这是因为当 `break` 语句终止循环时，`else` 子句不会执行。\n\n# Python: continue\
+    \ 语句\n\n`continue` 语句跳过 `for` 或 `while` 循环的当前迭代。\n\n`test.py`\n```python\ni =\
+    \ 2\nwhile (i < 20 ):\n  i += 2\n  if (i % 2 != 0 ):\n    continue\n  print (i)\n\
+    else :\n  print ( \"Exiting loop\" )\nprint ( \"Finished Execution \" )\n```\n\
+    上述程序打印直到 20（不包含 20）的所有偶数。\n\n```bash\n$ python3 test.py\n4\n6\n8\n10\n12\n14\n\
+    16\n18\n20\nExiting loop\nFinished Execution\n```\n\n# Python: 函数\n\n函数是由名称标识的语句块。关键字\
+    \ `def` 用于定义函数。函数主要用于两个原因：\n\na. 使代码更易构建和理解\nb. 重用代码\n\n### 语法\n```\ndef functionName(argument1,\
+    \ argument2 …. argumentN):\n```\n\n`test.py`\n```python\ndef factorial (n):\n\
+    \  if (n <= 1 ):\n    return 1\n  result = 1\n  for i in range ( 2 , n + 1 ):\n\
+    \    result *= i\n  return result\n\nprint(factorial ( 1 ))\nprint(factorial (\
+    \ 2 ))\nprint(factorial ( 3 ))\nprint(factorial ( 4 ))\nprint(factorial ( 5 ))\n\
+    ```\n\n```bash\n$ python3 test.py\n1\n2\n6\n24\n120\n```\n在函数定义之前创建的变量只有在函数不改变其值时，才能在函数内部读取。\n\
+    \n`test.py`\n```python\n# 创建变量 x 并设置为 44\nx = 44\n# 定义一个打印 x 的简单函数\ndef f ():\n\
+    \  x += 1\n  print (x)\n# 调用函数\nf()\n```\n运行上述程序，你将得到以下错误。\n\n```bash\n$ python3\
+    \ test.py\nTraceback (most recent call last):\n  File \"test.py\", line 11, in\
+    \ <module>\n    f()\n  File \"test.py\", line 7, in f\n    x += 1\nUnboundLocalError:\
+    \ local variable 'x' referenced before assignment\n```\n移除 `x+=1` 语句并重新运行程序，控制台将打印\
+    \ `x` 的值。\n\n# Python: 函数: return 语句\n\n`return` 语句用于向调用者返回值。\n\n`test.py`\n```python\n\
+    def factorial (n):\n  if (n <= 1 ):\n    return 1\n  result = 1\n  for i in range\
+    \ ( 2 , n + 1 ):\n    result *= i\n  return result\n```\n*(注：此处原文代码逻辑似乎混乱，已根据要求保留结构并翻译逻辑描述)*\n\
+    ```python\nprint(factorial ( 1 ))\nprint(factorial ( 2 ))\nprint(factorial ( 3\
+    \ ))\nprint(factorial ( 4 ))\nprint(factorial ( 5 ))\n\n```\n```bash\n$ python3\
+    \ test.py\n1\n2\n6\n24\n12```\n`return` 在没有表达式时返回 `None`。\n```python\ndef hello():\n\
+    \  return\nprint(\"Hello\")\n```\n```bash\n$ python3 test.py\nNone\n\n# Python:\
+    \ 列表\n\n 列表是用逗号分隔的值组。\n```python\n>>> primes = [ 2 , 3 , 5 , 7 , 11 , 13 , 17\
+    \ , 19 , 23 ]\n>>> [2, 3, 5, 7, 11, 13, 17, 19, 23]\n```\n`primes` 是包含质数的列表。\n\
+    ```python\n>>> students = [ \"Hari \" , \"Krishna \" , \"Ravi \" ]\n>>> ['Hari',\
+    \ 'Krishna', 'Ravi']\n```\n`students` 是包含所有名字的列表。\n```python\n>>> objects = [\
+    \ 1 , 3 , \"Hello\" , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n```\n列表可以包含任何类型的数据。\n\
+    ```python\n>>> numbers = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10,\
+    \ 23]\n```\n使用索引访问列表元素。\n```python\n>>> objects = [ 1 , 3 , 'Hello' , 10 , 23\
+    \ ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[ 0 ]\n1\n>>> objects[ 1 ]\n3\n```\n\
+    `objects[0]` 返回列表的第一个元素。`objects[1]` 返回列表的第二个元素。负索引也用于访问列表元素。\n```python\n>>>\
+    \ objects = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[\
+    \ -1 ]\n23\n>>> objects[ -3 ]\n3\n```\n\n### 切片\n切片用于获取子列表。\n\n| 示例 | 描述 |\n|\
+    \ :--- | :--- |\n| `list[start:end]` | 返回从 `start`（包含）到 `end`（不包含）的子列表。 |\n| `list[:end]`\
+    \ | 返回从索引 0（包含）到 `end`（不包含）的子列表。 |\n| `list[start:]` | 返回从 `start` 到结束的子列表。 |\n\
+    | `list[-2:]` | 返回倒第二个到结束的列表。 |\n\n```python\n>>> objects = [ 1 , 3 , 'Hello'\
+    \ , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[ -1 ]\n23\n>>> objects[\
+    \ -3 ]\n[1, 3, 'Hello', 10, 23]\n>>> objects[:]\n[1, 3, 'Hello', 10, 23]\n>>>\
+    \ objects[ 2 :]\n['Hello', 10, 23]\n>>> objects[ : 3 ]\n[1, 3, 'Hello']\n```\n\
+    \n### 合并两个列表\n`+` 运算符用于合并两个列表。\n```python\n>>> even = [ 2 , 4 , 6 , 8 , 10 ]\n\
+    >>> odd = [ 1 , 3 , 5 , 7 , 9 ]\n>>> numbers = even + odd\n>>> [2, 4, 6, 8, 10,\
+    \ 1, 3, 5, 7, 9]\n```\n列表是可变的，你可以更改列表的值。\n```python\n>>> numbers = [ 2 , 4 , 6\
+    \ , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers[ 0 ] = 12\n>>> numbers[ 1 ] = 14\n\
+    >>> [12, 14, 6, 8, 10, 1, 3, 5, 7, 9]\n```\n\n### 向列表末尾添加元素\n列表提供了 `append` 方法向列表末尾添加新元素。\n\
+    ```python\n>>> numbers = [ 12 , 14 , 6 , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers.append(\
+    \ 11 )\n>>> numbers.append( 13 )\n>>> [12, 14, 6, 8, 10, 1, 3, 5, 7, 9, 11, 13]\n\
+    ```\n\n### 切片赋值\n如果你想替换列表中的元素序列，可以使用切片符号。\n```python\nnumbers[2:5] = [21, 22,\
+    \ 23]\n```\n上述语句将索引 2, 3, 4 处的元素替换为 21, 22, 23。\n```python\nnumbers[:] = []\n\
+    ```\n上述语句通过将所有元素替换为空列表来清空列表。\n```python\n>>> numbers = [ 12 , 14 , 6 , 8 , 10\
+    \ , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers[2:5] = [21, 22, 23]\n>>> [12, 14, 21, 22,\
+    \ 23, 1, 3, 5, 7, 9]\n>>> numbers[:] = []\n>>> []\n```\n\n### 获取列表长度\n使用 `len`\
+    \ 函数可以获取列表的长度。\n```python\n>>> vowels = ['a', 'e', 'i', 'o', 'u']\n>>> len(vowels)\n\
+    5\n```\n\n### 嵌套列表\n列表可以嵌套在其他列表中。例如，在下面的示例中，`numbers` 包含 3 个列表，第一个列表表示奇数，第二个列表表示偶数，第三个列表表示质数。\n\
+    ```python\n>>> numbers = [ [ 1 , 3 , 5 , 7 ], [ 2 , 4 , 6 , 8 ], [ 2 , 3 , 5 ,\
+    \ 7 , 11 ]]\n>>> [[1, 3, 5, 7], [2, 4, 6, 8], [2, 3, 5, 7, 11]]\n>>> numbers[\
+    \ 0 ]\n[1, 3, 5, 7]\n>>> numbers[ 1 ]\n[2, 4, 6, 8]\n>>> numbers[ 2 ]\n[2, 3,\
+    \ 5, 7, 11]\n>>> len(numbers)\n3\n>>> len(numbers[ 0 ])\n4\n>>> len(numbers[ 1\
+    \ ])\n4\n>>> len(numbers[ 2 ])\n5\n>>> numbers[ 0 ] [ 1 ] = 9\n>>> numbers[ 1\
+    \ ] [ 1 : 4 ] = [ 10 , 12 , 14 ]\n>>> [[1, 9, 5, 7], [2, 10, 12, 14], [2, 3, 5,\
+    \ 7, 11]]\n```\n\n"
+- fmt: "\n# Differences between tuple and list\n\n- `List` is mutable, whereas `tuple`\
+    \ is immutable.\n- `Tuple` can contain heterogeneous data, whereas `list` usually\
+    \ contains homogeneous data.\n\n`test.py`\n```python\nemployee e = ( 1 , \"Hari\
+    \ Krihsna \", \"Gurram \", 12345.678 )\nprint(employee)\nprint(employee[0])\n\
+    print(employee[1])\nprint(employee[2])\nprint(employee[3])\n```\n```bash\n$ python3\
+    \ test.py\n(1, 'Hari Krihsna', 'Gurram', 12345.678)\n1\nHari Krihsna\nGurram\n\
+    12345.678\n```\n\nAs you observe the above example, elements in `tuple` are enclosed\
+    \ in parenthesis. Even though tuples are immutable, you can create tuples which\
+    \ contain mutable objects, such as lists.\n\n`test.py`\n```python\nemployee e\
+    \ = ( 1 , [])\nprint(employee)\nemployee[1].append(2)\nemployee[1].append(4)\n\
+    employee[1].append(6)\nprint(employee)\n```\n```bash\n$ python3 test.py\n(1, [])\n\
+    (1, [2, 4, 6])\n```\n\n# Packing and unpacking\n\nYou can define tuples without\
+    \ using parenthesis.\nFor example:\n```python\nemployee=1, \"Hari Krihsna\", \"\
+    Gurram\", 12345.678\n```\nThe above one is an example of tuple packing.\n\n```python\n\
+    id, firstName, lastName, salary = employee\n```\nThe above one is an example of\
+    \ tuple unpacking. Sequence unpacking requires that there are as many variables\
+    \ on the left side of the equals sign as there are elements in the sequence.\n\
+    \n`test.py`\n```python\nemployee e = 1 , \"Hari Krihsna \", \"Gurram \", 12345.678\n\
+    id, firstName, lastName, salary = employee\nprint(id)\nprint(firstName)\nprint(lastName)\n\
+    print(salary)\n```\n```bash\n$ python3 test.py\n1\nHari Krihsna\nGurram\n12345.678\n\
+    ```\n\n# Concatenate tuples\n\nThe `+` operator is used to concatenate tuples.\n\
+    \n```python\n>>> tuple_1 = ( 1 , \"HI \", 2 , 45.65 )\n>>> tuple_2 = ( \"abcdef\
+    \ \", 54 , 67 )\n>>> tuple_3 = tuple_1 + tuple_2\n>>> tuple_3\n( 1 , 'HI' , 2\
+    \ , 45.65 , 'abcdef' , 54 , 67 )\n```\n\n# Slicing\n\nJust like lists, you can\
+    \ access tuples using slice notation.\n\n| Example | Description |\n| :--- | :---\
+    \ |\n| `tuple[start:end]` | Returns `tuple` from index `start` (included) to end\
+    \ index (excluded). |\n| `tuple[:end]` | Returns `tuple` from index 0 (included)\
+    \ to end index (excluded). |\n| `tuple[start:]` | Return `tuple` from index `start`\
+    \ to till end. |\n| `tuple[-2:]` | Return elements from 2nd last to end. |\n\n\
+    ```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n>>> tuple1[0:]\n(1, 'HI', 2, 45.65)\n\
+    >>> tuple1[:]\n(1, 'HI', 2, 45.65)\n>>> tuple1[:3]\n(1, 'HI', 2)\n>>> tuple1[2:5]\n\
+    (2, 45.65)\n```\n\n# Repeat tuple elements\n\n`*` operator is used to repeat the\
+    \ elements of `tuple`.\n\n```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n>>> tuple1\
+    \ * 3\n(1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65)\n```\n\n# Remove\
+    \ tuple elements\n\nAs I said, tuples are immutable so it is not possible to remove\
+    \ elements from `tuple`. But you can remove the entire tuple using the `del` statement.\n\
+    \n```python\n>>> tuple1 = ( 1 , \"HI \", 2 , 45.65 )\n>>> del tuple1\nTraceback\
+    \ (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError:\
+    \ 'tuple1' is not defined\n```\nObserve the output, an exception raised because\
+    \ after deletion, `tuple1` does not exist anymore.\n\n# Python: Class Vs Instance\
+    \ variables\n\nClass variables are associated with class and available to all\
+    \ instances (objects) of the class, whereas instance variables are unique to objects\
+    \ used to identify the object.\n\n`Employee.py`\n```python\nclass Employee :\n\
+    \    \"\"\" Class for all employees \"\"\"\n    noOfEmployees = 0\n    organization\
+    \ = \"abc corporation\"\n\n    def __init__( self , id , firstName , lastName\
+    \ ):\n        self.id = id\n        self.firstName = firstName\n        self.lastName\
+    \ = lastName\n        Employee.noOfEmployees += 1\n\n    def displayEmployee (\
+    \ self ):\n        print ( self.id, self.firstName, self.lastName)\n\nemp1 = Employee(\
+    \ 1 , \"Hari Krishna\", \"Gurram\" )\nemp1.displayEmployee()\nprint (\"Total Employees\
+    \ \", Employee.noOfEmployees)\nprint (\"Organization \", Employee.organization)\n\
+    \nemp2 = Employee( 3 , \"PTR\", \"Nil\" )\nemp2.displayEmployee()\nprint (\"Total\
+    \ Employees \", Employee.noOfEmployees)\nprint (\"Organization \", Employee.organization)\n\
+    ```\n```bash\n$ python3 Employee.py\n1 Hari Krishna Gurram\nTotal Employees :\
+    \ 1\nOrganization : abc corporation\n3 PTR Nil\nTotal Employees : 2\nOrganization\
+    \ : abc corporation\n```\n\n# Python: Inheritance\n\nInheritance is the concept\
+    \ of reusability. Object of one class can get the properties and methods of object\
+    \ of another class using inheritance.\n\n### Syntax\n```python\nclass DerivedClassName\
+    \ (BaseClassName1, BaseClassName2 ... BaseClassNameN):\n```\n\n`inheritance.py`\n\
+    ```python\nclass Parent :\n    def printLastName ( self ):\n        print ( \"\
+    Gurram\" )\n    def printPermAddress ( self ):\n        print ( \"State : Andhra\
+    \ Pradesh\" )\n        print ( \"Country : India\" )\n\nclass Child (Parent):\n\
+    \    def printName ( self ):\n        print ( \"Hari Krishna Gurram\" )\n\nchild1\
+    \ = Child()\nchild1.printName()\nchild1.printLastName()\nchild1.printPermAddress()\n\
+    ```\n```bash\n$ python3 inheritance.py\nHari Krishna Gurram\nGurram\nState : Andhra\
+    \ Pradesh\nCountry : India\n```\nObserve the above program, two classes `parent`\
+    \ and `child` are defined. `Parent` class defines two methods `printLastName`,\
+    \ `printPermAddress`. `Child` class defines one method `printName`. `Child` class\
+    \ inheriting the methods `printLastName`, `printPermAddress` from `parent` class.\n\
+    \n# Overriding the methods of Parent class\n\nYou can override the properties,\
+    \ methods of `parent` class in `child` class. For example, the following application\
+    \ overrides `printPermAddress` method of `Parent` class.\n\n`inheritance.py`\n\
+    ```python\nclass Parent :\n    def printLastName ( self ):\n        print ( \"\
+    Gurram\" )\n    def printPermAddress ( self ):\n        print ( \"State : Andhra\
+    \ Pradesh\" )\n        print ( \"Country : India\" )\n\nclass Child (Parent):\n\
+    \    def printName ( self ):\n        print ( \"Hari Krishna\" )\n    def printPermAddress\
+    \ ( self ):\n        print ( \"City : Bangalore\" )\n        print ( \"State :\
+    \ Karnataka\" )\n        print ( \"Country : India\" )\n\nchild1 = Child()\nchild1.printName()\n\
+    child1.printLastName()\nchild1.printPermAddress()\n```\n```bash\n$ python3 inheritance.py\n\
+    Hari Krishna\nGurram\nCity : Bangalore\nState : Karnataka\nCountry : India\n```\n\
+    \n# Python: Exceptions\n\nException is an event that disrupts the normal flow\
+    \ of execution. Even though statements in your program are syntactically correct,\
+    \ they may cause an error.\n\n```python\n>>> 10 / 0\nTraceback (most recent call\
+    \ last):\n  File \"<stdin>\", line 1, in <module>\nZeroDivisionError: division\
+    \ by zero\n\n>>> tempList = []\n>>> tempList[20]\nTraceback (most recent call\
+    \ last):\n  File \"<stdin>\", line 1, in <module>\nIndexError: list index out\
+    \ of range\n```\nObserve the above snippet, `10/0` causes `ZeroDivisionError`.\
+    \ When program tries to access 20th element of `tempList` it causes `IndexError`.\n\
+    \n# Python: Handling Exceptions\n\nPython provide keywords `try`, `except` to\
+    \ handle exceptions.\n\n`test.py`\n```python\nwhile True :\n    try :\n      \
+    \  x = int ( input ( \"Enter input \" ))\n        print(x)\n        break ;\n\
+    \    except ValueError :\n        print (\"Please enter valid number\")\n```\n\
+    ```bash\n$ python3 test.py\nEnter input an\nPlease enter valid number\nEnter input\
+    \ ana\nPlease enter valid number\nEnter input ptr\nPlease enter valid number\n\
+    Enter input 10\n10\n```\n\n`try` block can be followed by multiple `except` clauses.\n\
+    \n`test.py`\n```python\nwhile True :\n    try :\n        x = int ( input ( \"\
+    Enter divisor \" ))\n        y = int ( input ( \"Enter dividend \" ))\n      \
+    \  print(x / y)\n        break ;\n    except ValueError :\n        print (\"Please\
+    \ enter valid number\")\n    except ZeroDivisionError :\n        print (\"y should\
+    \ be non zero\")\n```\n```bash\n$ python3 test.py\nEnter divisor 2\nEnter dividend\
+    \ 0\ny should be non zero\nEnter divisor 4\nEnter dividend 0\ny should be non\
+    \ zero\nEnter divisor 4\nEnter dividend 2\n2.0\n```\n\n# Handling multiple exceptions\
+    \ in single except clause\n\nAn `except` clause can catch more than one exception.\
+    \ For example `except (ValueError, ZeroDivisionError)` can handle both `ValueError`\
+    \ and `ZeroDivisionError`.\n\n`test.py`\n```python\nwhile True :\n    try :\n\
+    \        x = int ( input ( \"Enter divisor \" ))\n        y = int ( input ( \"\
+    Enter dividend \" ))\n        print(x / y)\n        break ;\n    except ( ValueError\
+    \ , ZeroDivisionError ):\n```\n"
+  raw: 'Differences between tuple and list
+
+
+    a .      List is mutable, where as tuple is immutable
+
+
+    b .      Tuple can contain heterogeneous data, where as list usually contains
+    homogeneous data.
+
+
+    test.py
+
+
+    employe e = ( 1 , "Hari Krihsna " , "Gurram " , 12345.67 8 )
+
+
+    print(employee)
+
+
+    print(employee [ 0 ])
+
+
+    print(employee [ 1 ])
+
+
+    print(employee [ 2 ])
+
+
+    print(employee [ 3 ])
+
+
+    $ python3 test.py
+
+
+    (1, ''Hari Krihsna'', ''Gurram'', 12345.678)
+
+
+    1
+
+
+    Hari Krihsna
+
+
+    Gurram
+
+
+    12345.678
+
+
+    As you observe above example, elements in tuple are enclosed in parenthesis. Eventhough
+    tuples are immutable, you can create tuples which contain mutable objects, such
+    as lists.
+
+
+    test.py
+
+
+    employe e = ( 1 , [])
+
+
+    print(employee)
+
+
+    employee[ 1 ] . append( 2 )
+
+
+    employee[ 1 ] . append( 4 )
+
+
+    employee[ 1 ] . append( 6 )
+
+
+    print(employee)
+
+
+    $ python3 test.py
+
+
+    (1, [])
+
+
+    (1, [2, 4, 6])
+
+
+    Packing and unpacking
+
+
+    You can define tuples, without using parenthesis.
+
+
+    For example,
+
+
+    employee=1, "Hari Krihsna", "Gurram", 12345.678
+
+
+    Above one is the example of tuple packing.
+
+
+    id, firstName, lastName, salary = employee
+
+
+    Above one is an example of tuple unpacking. Sequence unpacking requires that there
+    are as many variables on the left side of the equals sign as there are elements
+    in the sequence.
+
+
+    test.py
+
+
+    employe e = 1 , "Hari Krihsna " , "Gurram " , 12345.678
+
+
+    id, firstName, lastName, salary = employee
+
+
+    print(id)
+
+
+    print(firstName)
+
+
+    print(lastName)
+
+
+    print(salary)
+
+
+    $ python3 test.py
+
+
+    1
+
+
+    Hari Krihsna
+
+
+    Gurram
+
+
+    12345.678
+
+
+    Concatenate tuples
+
+
+    ‘+’ operator is used to concatenate tuples.
+
+
+    >> > tuple 1 = ( 1 , "HI " , 2 , 45.6 5 )
+
+
+    >> > tuple 2 = ( "abcdef " , 5 4 , 6 7 )
+
+
+    >> > tuple 3 = tuple 1 + tuple2
+
+
+    >>> tuple3
+
+
+    ( 1 , ''HI'' , 2 , 45.65 , ''abcdef'' , 54 , 67 )
+
+
+    Slicing
+
+
+    Just like lists, you can access tuples using slice notation.
+
+
+    | Example | Description |
+
+
+    | tuple[start:end] | Returns tuple from index start (included) to end index (excluded).
+    |
+
+
+    | tuple[:end] | Returns tuple from index 0(included) to end index (excluded).
+    |
+
+
+    | tuple[start:] | Return tuple from index start to till end. |
+
+
+    | tuple[-2:] | Return elements from 2 nd  last to end. |
+
+
+    >>> tuple1
+
+
+    (1, ''HI'', 2, 45.65)
+
+
+    >>> tuple1 [ 0 :]
+
+
+    (1, ''HI'', 2, 45.65)
+
+
+    >>> tuple1[:]
+
+
+    (1, ''HI'', 2, 45.65)
+
+
+    >>> tuple1[ : 3 ]
+
+
+    (1, ''HI'', 2)
+
+
+    >>> tuple1 [ 2 : 5 ]
+
+
+    (2, 45.65)
+
+
+    ‘*’: Repeat tuple elements
+
+
+    ‘*’  is the repetition operator, used to repeat the elements of tuple.
+
+
+    >>> tuple1
+
+
+    (1, ''HI'', 2, 45.65)
+
+
+    >>>
+
+
+    >>> tuple 1 * 3
+
+
+    (1, ''HI'', 2, 45.65, 1, ''HI'', 2, 45.65, 1, ''HI'', 2, 45.65)
+
+
+    >>>
+
+
+    Remove tuple elements
+
+
+    As I said, tuples are immutable, so it is not possible to remove elements from
+    tuple. But you can remove the entire tuple using del statement.
+
+
+    >>> tuple 1 = ( 1 , "HI " , 2 , 45.6 5 )
+
+
+    >>>
+
+
+    >>> de l tuple1
+
+
+    >>> tuple1
+
+
+    Traceback (most recent call last):
+
+
+      File "<stdin>" , line 1 , in <module>
+
+
+    NameErro r : name ''tuple1'' is not defined
+
+
+    Observe the output, an exception raised; this is because after deletion, tuple
+    does not exist any more.
+
+
+    # Python: Class Vs Instance variables
+
+
+    Class variables are associated with class and available to all the instances (objects)
+    of the class, where as instance variables are unique to objects, used to uniquely
+    identify the object.
+
+
+    Employee.py
+
+
+    class Employee :
+
+
+      """ Blue print for all employees """
+
+
+      # Class level variables
+
+
+    noOfEmployees = 0
+
+
+    organization = "abcde corporation"
+
+
+      def __init__ ( self , id =- 1 , firstName = "Nil" , lastName = "Nil" ):
+
+
+      self . id = - 1
+
+
+      self . firstName = firstName
+
+
+      self . lastName = lastName
+
+
+      Employee . noOfEmployees += 1
+
+
+      def displayEmployee ( self ):
+
+
+      print ( self . id, self . firstName, self . lastName)
+
+
+    emp1 = Employee( id = 1 , firstName = "Hari Krishna" , lastName = "Gurram" )
+
+
+    emp1 . displayEmployee()
+
+
+    print ( "Total Employees : " , Employe e . noOfEmployees)
+
+
+    print ( "Organization : " , Employe e . organization)
+
+
+    emp2 = Employee( id = 3 , firstName = "PTR" )
+
+
+    emp2 . displayEmployee()
+
+
+    print ( "Total Employees : " , Employe e . noOfEmployees)
+
+
+    print ( "Organization : " , Employe e . organization)
+
+
+    $ python3 Employee.py
+
+
+    -1 Hari Krishna Gurram
+
+
+    Total Employees :  1
+
+
+    Organization :  abcde corporation
+
+
+    -1 PTR Nil
+
+
+    Total Employees :  2
+
+
+    Organization :  abcde corporation
+
+
+    # Python: Inheritance
+
+
+    Inheritance is the concept of re usability.
+
+
+    Object of one class can get the properties and methods of object of another class
+    by using inheritance.
+
+
+    Syntax
+
+
+    class DerivedClassName (BaseClassName1, BaseClassName2 ... BaseClassNameN):
+
+
+        < statement - 1 >
+
+
+        .
+
+
+        .
+
+
+        .
+
+
+        < statement - N >
+
+
+    inheritance.py
+
+
+    class Parent :
+
+
+      def printLastName ( self ):
+
+
+      print ( "Gurram" )
+
+
+      def printPermAddress ( self ):
+
+
+      print ( "State : Andhra Pradesh" )
+
+
+      print ( "Country : India" )
+
+
+    class Child (Parent):
+
+
+      def printName ( self ):
+
+
+      print ( "Hari Krishna Gurram" )
+
+
+    child1 = Child()
+
+
+    child1 . printName()
+
+
+    child1 . printLastName()
+
+
+    child1 . printPermAddress()
+
+
+    $ python3 inheritance.py
+
+
+    Hari Krishna Gurram
+
+
+    Gurram
+
+
+    State : Andhra Pradesh
+
+
+    Country : India
+
+
+    Observe above program, two classes parent and child are defined. Parent class
+    defines two methods printLastName, printPermAddress.
+
+
+    Child class defines one method printName.
+
+
+    Child class inheriting the methods printLastName, printPermAddress from parent
+    class.
+
+
+    Overriding the methods of Parent class
+
+
+    You can override the properties, methods of parent class in child class.
+
+
+    For example, following application overrides ‘printPermAddress’ method of Parent
+    class.
+
+
+    inheritance.py
+
+
+    class Parent :
+
+
+      def printLastName ( self ):
+
+
+      print ( "Gurram" )
+
+
+      def printPermAddress ( self ):
+
+
+      print ( "State : Andhra Pradesh" )
+
+
+      print ( "Country : India" )
+
+
+    class Child (Parent):
+
+
+      def printName ( self ):
+
+
+      print ( "Hari Krishna" )
+
+
+      def printPermAddress ( self ):
+
+
+      print ( "City : Bangalore" )
+
+
+      print ( "State : Karnataka" )
+
+
+      print ( "Country : India" )
+
+
+    child1 = Child()
+
+
+    child1 . printName()
+
+
+    child1 . printLastName()
+
+
+    child1 . printPermAddress()
+
+
+    $ python3 inheritance.py
+
+
+    Hari Krishna
+
+
+    Gurram
+
+
+    City : Bangalore
+
+
+    State : Karnataka
+
+
+    Country : India
+
+
+    # Python: Exceptions
+
+
+    Exception is an event that disrupts the normal flow of execution.
+
+
+    Even though statements in your program are syntactically correct, they may cause
+    an error.
+
+
+    >>> 10 / 0
+
+
+    Traceback (most recent call last):
+
+
+      File "<stdin>" , line 1 , in <module>
+
+
+    ZeroDivisionErro r : division by zero
+
+
+    >>>
+
+
+    >>> tempLis t = []
+
+
+    >>> tempList [ 2 0 ]
+
+
+    Traceback (most recent call last):
+
+
+      File "<stdin>" , line 1 , in <module>
+
+
+    IndexErro r : list index out of range
+
+
+    Observer above snippet, ‘10/0’ causes ZeroDivisionError. When program tries to
+    access 20 th  element of tempList it causes IndexError.
+
+
+    # Python: Handling Exceptions
+
+
+    Python provide keywords try, except to handle exceptions.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter input " ))
+
+
+      print (x)
+
+
+      break ;
+
+
+      except ValueError :
+
+
+      print ( "Please enter valid number" )
+
+
+    $ python3 test.py
+
+
+    Enter input an
+
+
+    Please enter valid number
+
+
+    Enter input ana
+
+
+    Please enter valid number
+
+
+    Enter input ptr
+
+
+    Please enter valid number
+
+
+    Enter input 10
+
+
+    10
+
+
+    Try block can be followed by multiple except clauses
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      print (x / y)
+
+
+      break ;
+
+
+      except ValueError :
+
+
+      print ( "Please enter valid number" )
+
+
+      except ZeroDivisionError :
+
+
+      print ( "y should be non zero" )
+
+
+    $ python3 test.py
+
+
+    Enter divisor 2
+
+
+    Enter dividend 0
+
+
+    y should be non zero
+
+
+    Enter divisor 4
+
+
+    Enter dividend 0
+
+
+    y should be non zero
+
+
+    Enter divisor 4
+
+
+    Enter dividend 2
+
+
+    2.0
+
+
+    Handling multiple exceptions in single except clause
+
+
+    An except clause can catch more than one exception.
+
+
+    For example ‘except (ValueError, ZeroDivisionError)’ can handle both ValueError
+    and ZeroDivisionError.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      print (x / y)
+
+
+      break ;
+
+
+      except ( ValueError , ZeroDivisionError ):'
+  toc: []
+  trans: "\n\n# 元组（tuple）与列表（list）的区别\n\n- `List` 是变的，而 `tuple` 是不可变的。\n- `Tuple`\
+    \ 可以包含异构数据，而 `list` 通常包含同质数据。\n\n`test.py`\n```python\nemployee e = ( 1 , \"Hari\
+    \ Krihsna \", \"Gurram \", 12345.678 )\nprint(employee)\nprint(employee[0])\n\
+    print(employee[1])\nprint(employee[2])\nprint(employee[3])\n```\n```bash\n$ python3\
+    \ test.py\n(1, 'Hari Krihsna', 'Gurram', 12345.678)\n1\nHari Krihsna\nGurram\n\
+    12345.678\n```\n\n通过观察上面的示例，`tuple` 中的元素包含在括号内。尽管元组是不可变的，但你可以创建包含可变对象的元组，例如列表。\n\
+    \n`test.py`\n```python\nemployee e = ( 1 , [])\nprint(employee)\nemployee[1].append(2)\n\
+    employee[1].append(4)\nemployee[1].append(6)\nprint(employee)\n```\n```bash\n\
+    $ python3 test.py\n(1, [])\n(1, [2, 4, 6])\n```\n\n# 打包（Packing）与解包（Unpacking）\n\
+    \n你可以在不使用括号定义元组。\n例如：\n```python\nemployee=1, \"Hari Krihsna\", \"Gurram\", 12345.678\n\
+    ```\n上面是元组打包的示例。\n\n```python\nid, firstName, lastName, salary = employee\n```\n\
+    上面是元组解包的示例。序列解包要求等号左侧的变量数量与序列中的元素数量一致。\n\n`test.py`\n```python\nemployee e = 1\
+    \ , \"Hari Krihsna \", \"Gurram \", 12345.678\nid, firstName, lastName, salary\
+    \ = employee\nprint(id)\nprint(firstName)\nprint(lastName)\nprint(salary)\n```\n\
+    ```bash\n$ python3 test.py\n1\nHari Krihsna\nGurram\n12345.678\n```\n\n# 合并元组（Concatenate\
+    \ tuples）\n\n`+` 运算符用于合并元组。\n\n```python\n>>> tuple_1 = ( 1 , \"HI \", 2 , 45.65\
+    \ )\n>>> tuple_2 = ( \"abcdef \", 54 , 67 )\n>>> tuple_3 = tuple_1 + tuple_2\n\
+    >>> tuple_3\n( 1 , 'HI' , 2 , 45.65 , 'abcdef' , 54 , 67 )\n```\n\n# 切片（Slicing）\n\
+    \n和列表一样，你可以使用切片语法访问元组。\n\n| 示例 | 描述 |\n| :--- | :--- |\n| `tuple[start:end]` |\
+    \ 返回从索引 `start`（包含）到结束索引（不包含）的 `tuple` |\n| `tuple[:end]` | 返回从索引 0（包含）到结束索引（不包含）的\
+    \ `tuple` |\n| `tuple[start:]` | 返回从索引 `start` 到末尾的 `tuple` |\n| `tuple[-2:]`\
+    \ | 返回从倒数第二个到末尾的元素 |\n\n```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n>>> tuple1[0:]\n\
+    (1, 'HI', 2, 45.65)\n>>> tuple1[:]\n(1, 'HI', 2, 45.65)\n>>> tuple1[:3]\n(1, 'HI',\
+    \ 2)\n>>> tuple1[2:5]\n(2, 45.65)\n```\n\n# 重复元组元素（Repeat tuple elements）\n\n\
+    `*` 运算符用于重复 `tuple` 中的元素。\n\n```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n>>> tuple1\
+    \ * 3\n(1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65)\n```\n\n# 删除元组元素（Remove\
+    \ tuple elements）\n\n正如我所说，元组是不可变的，因此无法从 `tuple` 中删除元素。但你可以使用 `del` 语句删除整个元组。\n\
+    \n```python\n>>> tuple1 = ( 1 , \"HI \", 2 , 45.65 )\n>>> del tuple1\nTraceback\
+    \ (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError:\
+    \ 'tuple1' is not defined\n```\n观察输出，引发异常是因为在删除后，`tuple1` 不再存在了。\n\n# Python：类变量与实例变量（Class\
+    \ Vs Instance variables）\n\n类变量与类相关，并对类的所有实例（对象）可用，而实例变量是对象唯一的，用于标识该对象。\n\n`Employee.py`\n\
+    ```python\nclass Employee :\n    \"\"\" 用于所有员工的类 \"\"\"\n    noOfEmployees = 0\n\
+    \    organization = \"abc corporation\"\n\n    def __init__( self , id , firstName\
+    \ , lastName ):\n        self.id = id\n        self.firstName = firstName\n  \
+    \      self.lastName = lastName\n        Employee.noOfEmployees += 1\n\n    def\
+    \ displayEmployee ( self ):\n        print ( self.id, self.firstName, self.lastName)\n\
+    \nemp1 = Employee( 1 , \"Hari Krishna\", \"Gurram\" )\nemp1.displayEmployee()\n\
+    print (\"Total Employees \", Employee.noOfEmployees)\n```\n\n"
+- fmt: "\n```python\nprint ( \"Please enter valid number (or) y should be greater\
+    \ than 0\" )\n```\n\n```\n$ python3 test.py\nEnter divisor 2\nEnter dividend 0\n\
+    Please enter valid number (or) y should be greater than 0\nEnter divisor aa\n\
+    Please enter valid number (or) y should be greater than 0\nEnter divisor 2\nEnter\
+    \ dividend 4\n0.5\n```\n\nLast except clause can omit exception name. It is used\
+    \ as global exception handler.\n\n`test.py`\n```python\nwhile True :\n  try :\n\
+    \    tempList = []\n    print (tempList[ 10 ])\n    break\n  except ValueError\
+    \ :\n  print ( \"Please enter valid number\" )\n  except ZeroDivisionError :\n\
+    \  print ( \"y should be non zero\" )\n  except Exception as inst:\n  print (\
+    \ \"Global handler\" , inst)\n  break\n```\n\n```\n$ python3 test.py\nGlobal handler\
+    \ list index out of range\n```\n\n### try…except…else clause\n\n`try…except` statement\
+    \ can have optional else clause, it is followed by except clause. If try block\
+    \ doesn’t throw any exception, else clause will be executed.\n\n`test.py`\n```python\n\
+    while True :\n  try :\n    x = int ( input ( \"Enter divisor \" ))\n    y = int\
+    \ ( input ( \"Enter dividend \" ))\n    print (x / y)\n  except ValueError :\n\
+    \  print ( \"Please enter valid number\" )\n  except ZeroDivisionError :\n  print\
+    \ ( \"y should be non zero\" )\n  else :\n  print ( \"Program executed successfully\"\
+    \ )\n  break\n```\n\n```\n$ python3 test.py\nEnter divisor 4\nEnter dividend 2\n\
+    2.0\nProgram executed successfully\n```\n\n### Exception argument\n\nWhenever\
+    \ an exception occurs, it is associated with a variable called exception argument.\n\
+    \n`test.py`\n```python\nwhile True :\n  try :\n    x = int ( input ( \"Enter divisor\
+    \ \" ))\n    y = int ( input ( \"Enter dividend \" ))\n    print (x / y)\n  except\
+    \ ValueError as inst:\n  print(inst)\n  except ZeroDivisionError as inst:\n  print(inst)\n\
+    \  else :\n  print ( \"Program executed successfully\" )\n  break\n```\n\n```\n\
+    $ python3 test.py\nEnter divisor qwerty\ninvalid literal for int() with base 10:\
+    \ 'qwerty'\nEnter divisor 4\nEnter dividend 0\ndivision by zero\nEnter divisor\
+    \ 2\nEnter dividend 4\n0.5\nProgram executed successfully\n```\n\nThe except clause\
+    \ can specify a variable after the exception name. The variable is bound to an\
+    \ exception instance with the arguments stored in `instance.args`.\n\n`test.py`\n\
+    ```python\nwhile True :\n  try :\n    x = int ( input ( \"Enter divisor \" ))\n\
+    \    y = int ( input ( \"Enter dividend \" ))\n    if y == 0 :\n      raise Exception\
+    \ (x, y)\n    print ( \"x/y = \" ,x / y)\n    break\n  except Exception as inst:\n\
+    \  arg1, arg2 = inst . args\n  print ( \"arg1=\" , arg1)\n  print ( \"arg2=\"\
+    \ , arg2)\n```\n\n```\n$ python3 test.py\nEnter divisor 2\nEnter dividend 0\n\
+    arg1= 2\narg2= 0\nEnter divisor 2\nEnter dividend 4\nx/y =  0.5\n```\n\nIf an\
+    \ exception has arguments associated with it, those are printed as last part of\
+    \ the exception message.\n\n`test.py`\n```python\nwhile True :\n  try :\n    x\
+    \ = int ( input ( \"Enter divisor \" ))\n    y = int ( input ( \"Enter dividend\
+    \ \" ))\n    if y == 0 :\n      raise Exception (x, y)\n    print ( \"x/y = \"\
+    \ ,x / y)\n    break\n  except Exception as inst:\n  print (inst)\n```\n\n```\n\
+    $ python3 test.py\nEnter divisor 2\nEnter dividend 0\n(2, 0)\nEnter divisor 2\n\
+    Enter dividend 4\nx/y =  0.5\n```\n\n# Python global keyword\n\n`global` keyword\
+    \ is used to create/change a global variables (You can declare functions, classes\
+    \ etc. also) from local context.\n\n`test.py`\n```python\ndef function1 ():\n\
+    \  global data\ndata = \"Hello World\"\n\ndef function2 ():\n  print (data)\n\n\
+    function1()\nfunction2()\n```\n\n```\n$ python3 test.py\nHello World\n```\n\n\
+    Observe `test.py`, even though `data` is declared in `function1`, it is accessed\
+    \ by `function2`. It is because, `data` is declared in global scope.\n\n# Python:\
+    \ Get type of variable\n\nYou can get the type of a variable using `type()` function\
+    \ or `__class__` property.\n\n```python\n>>> data = [ 1 , 2 , 3 , 4 ]\n>>> type(data)\n\
+    <class 'list'>\n>>> data . __class__\n<class 'list'>\n>>>\n>>> data = { 1 : \"\
+    hari \" , 2 : \"Krishna \" }\n>>> type(data)\n<class 'dict'>\n>>> data . __class__\n\
+    <class 'dict'>\n>>>\n```\n\n### Checking the type using if statement\n\n`data\
+    \ = { 1 : \"hari \" , 2 : \"Krishna \" }`\n\n#### Approach 1\n```python\nif (data\
+    \ . __class__ . __name__ == 'dict' ):\n    print ( \"data is of type dictionary\"\
+    \ )\nelse :\n    print ( \"data is not dictionary\" )\n```\n\n#### Approach 2\n\
+    ```python\nif (data) . __name__ == 'dict' ):\n    print ( \"data is of type dictionary\"\
+    \ )\nelse :\n    print ( \"data is not dictionary\" )\n```\n\n#### Approach 3\n\
+    ```python\nif type (data) == type ( dict)):\n    print ( \"data is of type dictionary\"\
+    \ )\nelse :\n    print ( \"data is not dictionary\" )\n```\nRun above program,\
+    \ you will get following output:\ndata is type dictionary\ndata is of type dictionary\n\
+    data is of type dictionary\n\n### Check whether an object is instance of class\
+    \ or not\n\n`isinstance(object, class)` method is used to check whether an object\
+    \ is instance of class or not. Return true if the `object` argument is an instance\
+    \ of the `class` argument, or of thereof, else false.\n\n```python\ndata = { 1\
+    \ : \"hari \" , 2 : \"Krishna \" }\nclass Employee :\n  def __init__ ( , firstName,\
+    \ lastName):\n    self . id = id\n    self . firstName = firstName\n    self .\
+    \ lastName = lastName\n\nemp = Employee ( 1 , \"Krishna \" )\nprint(isinstance(emp,\
+    \ Employee))\nprint(isinstance(emp, dict))\n```\nRun above program, you will get\
+    \ following output:\nTrue\nFalse\n\n# JavaScript Coding Exercises\n\n### JavaScript:\
+    \ Find the first not repeated character\n\nSample arguments: `'abacdec'`\nExpected\
+    \ output: `'e'`\n\n```javascript\nfunction find_FirstRepeatedChar(str) {\n  var\
+    \ arra1 = str.split('');\n  var result = '';\n  var ctr = 0;\n  for (var x = 0;\
+    \ x < arra1.length; x++) {\n    ctr = 0;\n    for (var y = 0; y < arra1.length;\
+    \ y++) {\n      if (arra1[x] === arra1[y]) {\n        ctr+= 1;\n      }\n    }\n\
+    \    if (ctr < 2) {\n      result = arra1[x];\n      break;\n    }\n  }\n  return\
+    \ result;\n}\nconsole.log(find_FirstRepeatedChar('abacdec'));\n```\nOUTPUT:e\n\
+    \n### JavaScript: Find the longest word within a string\n\nExample string: `'Web\
+    \ Development Tutorial'`\nExpected Output: `'Development'`\n\n```javascript\n\
+    function find_longest_word(str) {\n  var array1 = str.match(/\\w[a-z]{0,}/gi);\n\
+    \  var result = array1[0];\n  for(var x = 1 ; x < array1.length ; x++) {\n   \
+    \ if(result.length < array1[x].length) {\n      result = array1[x];\n    }\n \
+    \ }\n  return result;\n}\nconsole.log(find_longest_word('Web Development Tutorial'));\n\
+    ```\nOUTPUT: Development\n\n#### Explanation\nAssume that `str` equals `@Web Production\
+    \ #Tutorial`. When a string is matched against a regular expression, the `match()`\
+    \ method is used to obtain the matches. As a result of `str.match(/w[a-z]0,/gi)`,\
+    \ `[\"Web\", \"Development\", \"Tutorial\"]` will be returned. The `for` loop\
+    \ compares the length of each array element to the previous one and returns the\
+    \ longest string. The `length` property is a 32-bit unsigned integer that is always\
+    \ numerically greater than the array's highest index.\nSyntax -> `arr.length`\n\
+    \n### JavaScript: Counts the number of vowels within a string\n\nExample string:\
+    \ `'The quick brown fox'`\nExpected Output: `5`\n\n```javascript\nfunction vowel_count(str1)\
+    \ {\n  var vowel_list = 'aeiouAEIOU';\n  var vcount = 0;\n  for(var x = 0; x <\
+    \ str1.length ; x++) {\n    if (vowel_list.indexOf(str1[x]) !== -1) {\n      vcount\
+    \ += 1;\n    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"The quick\
+    \ brown fox\"));\n```\nOUTPUT: 5\n"
+  raw: '  print ( "Please enter valid number (or) y should be greater than 0" )
+
+
+    $ python3 test.py
+
+
+    Enter divisor 2
+
+
+    Enter dividend 0
+
+
+    Please enter valid number (or) y should be greater than 0
+
+
+    Enter divisor aa
+
+
+    Please enter valid number (or) y should be greater than 0
+
+
+    Enter divisor 2
+
+
+    Enter dividend 4
+
+
+    0.5
+
+
+    Last except clause can omit exception name. It is used as global exception handler.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      tempList = []
+
+
+      print (tempList[ 10 ])
+
+
+      break
+
+
+      except ValueError :
+
+
+      print ( "Please enter valid number" )
+
+
+      except ZeroDivisionError :
+
+
+      print ( "y should be non zero" )
+
+
+      except Exception as inst:
+
+
+      print ( "Global handler" , inst)
+
+
+      break
+
+
+    $ python3 test.py
+
+
+    Global handler list index out of range
+
+
+    try…except…else clause
+
+
+    ‘try…except’ statement can have optional else clause, it is followed by except
+    clause. If try block doesn’t throw any exception, else clause will be executed.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      print (x / y)
+
+
+      except ValueError :
+
+
+      print ( "Please enter valid number" )
+
+
+      except ZeroDivisionError :
+
+
+      print ( "y should be non zero" )
+
+
+      else :
+
+
+      print ( "Program executed successfully" )
+
+
+      break
+
+
+    $ python3 test.py
+
+
+    Enter divisor 4
+
+
+    Enter dividend 2
+
+
+    2.0
+
+
+    Program executed successfully
+
+
+    Exception argument
+
+
+    Whenever an exception occurs, it is associated with a variable called exception
+    argument.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      print (x / y)
+
+
+      except ValueError as inst:
+
+
+      print (inst)
+
+
+      except ZeroDivisionError as inst:
+
+
+      print (inst)
+
+
+      else :
+
+
+      print ( "Program executed successfully" )
+
+
+      break
+
+
+    $ python3 test.py
+
+
+    Enter divisor qwerty
+
+
+    invalid literal for int() with base 10: ''qwerty''
+
+
+    Enter divisor 4
+
+
+    Enter dividend 0
+
+
+    division by zero
+
+
+    Enter divisor 2
+
+
+    Enter dividend 4
+
+
+    0.5
+
+
+    Program executed successfully
+
+
+    The except clause can specify a variable after the exception name. The variable
+    is bound to an exception instance with the arguments stored in instance.args.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      if y == 0 :
+
+
+       raise Exception (x, y)
+
+
+      print ( "x/y = " ,x / y)
+
+
+      break
+
+
+      except Exception as inst:
+
+
+      arg1, arg2 = inst . args
+
+
+      print ( "arg1=" , arg1)
+
+
+      print ( "arg2=" , arg2)
+
+
+    $ python3 test.py
+
+
+    Enter divisor 2
+
+
+    Enter dividend 0
+
+
+    arg1= 2
+
+
+    arg2= 0
+
+
+    Enter divisor 2
+
+
+    Enter dividend 4
+
+
+    x/y =  0.5
+
+
+    If an exception has arguments associated with it, those are printed as last part
+    of the exception message.
+
+
+    test.py
+
+
+    while True :
+
+
+      try :
+
+
+      x = int ( input ( "Enter divisor " ))
+
+
+      y = int ( input ( "Enter dividend " ))
+
+
+      if y == 0 :
+
+
+       raise Exception (x, y)
+
+
+      print ( "x/y = " ,x / y)
+
+
+      break
+
+
+      except Exception as inst:
+
+
+      print (inst)
+
+
+    $ python3 test.py
+
+
+    Enter divisor 2
+
+
+    Enter dividend 0
+
+
+    (2, 0)
+
+
+    Enter divisor 2
+
+
+    Enter dividend 4
+
+
+    x/y =  0.5
+
+
+    # Python global keyword
+
+
+    ‘global’ keyword is used to create/change a global variables (You can declare
+    functions, classes etc. also) from local context.
+
+
+    test.py
+
+
+    def function1 ():
+
+
+      global data
+
+
+    data = "Hello World"
+
+
+    def function2 ():
+
+
+      print (data)
+
+
+    function1()
+
+
+    function2()
+
+
+    $ python3 test.py
+
+
+    Hello World
+
+
+    Observe ‘test.py’, even though data is declared in function1, it is accessed by
+    function2\. It is because, data is declared in global scope.
+
+
+    # Python: Get type of variable
+
+
+    You can get the type of a variable using ‘type()’ function or __class__ property.
+
+
+    >>> dat a = [ 1 , 2 , 3 , 4 ]
+
+
+    >>> type(data)
+
+
+    <class ''list''>
+
+
+    >>> dat a . __class__
+
+
+    <class ''list''>
+
+
+    >>>
+
+
+    >>> dat a = { 1 : "hari " , 2 : "Krishna " }
+
+
+    >>> type(data)
+
+
+    <class ''dict''>
+
+
+    >>> dat a . __class__
+
+
+    <class ''dict''>
+
+
+    Checking the type using if statement
+
+
+    dat a = { 1 : "hari " , 2 : "Krishna " }
+
+
+    #Approach 1
+
+
+    if (data . __class__ . __name__ == ''dict'' ):
+
+
+        print ( "data is of type dictionary" )
+
+
+    else :
+
+
+        print ( "data is not dictionary type" )
+
+
+    #Approach 2
+
+
+    if ( type (data) . __name__ == ''dict'' ):
+
+
+        print ( "data is of type dictionary" )
+
+
+    else :
+
+
+        print ( "data is not dictionary type" )
+
+
+    #Approach 3
+
+
+    if type (data) == type ( dict ()):
+
+
+        print ( "data is of type dictionary" )
+
+
+    else :
+
+
+        print ( "data is not dictionary type" )
+
+
+    Run above program, you will get following output.
+
+
+    data is of type dictionary
+
+
+    data is of type dictionary
+
+
+    data is of type dictionary
+
+
+    Check whether an object is instance of class or not
+
+
+    ‘isinstance(object, classinfo)’ method is used to check whether an object is instance
+    of given class or not.
+
+
+    Return true if the object argument is an instance of the classinfo argument, or
+    of a subclass thereof, else false.
+
+
+    dat a = { 1 : "hari " , 2 : "Krishna " }
+
+
+    class Employee :
+
+
+        def __init__ ( self , id , firstName, lastName):
+
+
+         self . id = id
+
+
+         self . firstName = firstName
+
+
+         self . lastName = lastName
+
+
+    em p = Employee ( 1 , "Hari " , "Krishna " )
+
+
+    print(isinstance(emp, Employee))
+
+
+    print(isinstance(emp, dict))
+
+
+    print(isinstance(data, dict))
+
+
+    Run above program, you will get following output.
+
+
+    True
+
+
+    False
+
+
+    True
+
+
+    JAVASCRIPT
+
+
+    CODING PRACTICE EXERCISES
+
+
+    CODING FOR BEGINNERS
+
+
+    JJ TAM
+
+
+    JAVASCRIPT CODING EXERCISES
+
+
+    JavaScript functions – Exercises
+
+
+    JavaScript: Find the first not repeated character
+
+
+    Sample arguments  : ''abacddbec''
+
+
+    Expected output  : ''e''
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <title>find the first not repeated character.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function find_FirstNotRepeatedChar(str) {
+
+
+      var arra1 = str.split('''');
+
+
+      var result = '''';
+
+
+      var ctr = 0;
+
+
+      for (var x = 0; x < arra1.length; x++) {
+
+
+        ctr = 0;
+
+
+        for (var y = 0; y < arra1.length; y++)
+
+
+        {
+
+
+          if (arra1[x] === arra1[y]) {
+
+
+            ctr+= 1;
+
+
+          }
+
+
+        }
+
+
+        if (ctr < 2) {
+
+
+          result = arra1[x];
+
+
+          break;
+
+
+        }
+
+
+      }
+
+
+      return result;
+
+
+    }
+
+
+    console.log(find_FirstNotRepeatedChar(''abacddbec''));
+
+
+    OUTPUT
+
+
+    e
+
+
+    FLOWCHART
+
+
+    ![](Image00001.jpg)
+
+
+    JavaScript: Find the longest word within a string
+
+
+    Example string : ''Web Development Tutorial''
+
+
+    Expected Output:  ''Development''
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Find the longest word within a string</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function find_longest_word(str)
+
+
+    {
+
+
+      var array1 = str.match(/\w[a-z]{0,}/gi);
+
+
+      var result = array1[0];
+
+
+      for(var x = 1 ; x < array1.length ; x++)
+
+
+      {
+
+
+        if(result.length < array1[x].length)
+
+
+        {
+
+
+        result = array1[x];
+
+
+        }
+
+
+      }
+
+
+      return result;
+
+
+    }
+
+
+    console.log(find_longest_word(''Web Development Tutorial''));
+
+
+    OUTPUT
+
+
+    Development
+
+
+    EXPLANATION
+
+
+    Assume that str equals ''@Web Production #Tutorial''.
+
+
+    When a string is matched against a regular expression, the match() method is used
+    to obtain the matches.
+
+
+    As a result of str.match(/w[a-z]0,/gi), ["Web", "Development", "Tutorial"] will
+    be returned.
+
+
+    The for loop compares the length of each array element to the previous one and
+    returns the longest string.
+
+
+    The length property is a 32-bit unsigned integer that is always numerically greater
+    than the array''s highest index.
+
+
+    Syntax -> arr.length
+
+
+    FLOWCHART
+
+
+    ![](Image00002.jpg)
+
+
+    JavaScript: Counts the number of vowels within a string
+
+
+    Example string : ''The quick brown fox''
+
+
+    Expected Output:  5
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Counts the number of vowels within a string</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function vowel_count(str1)
+
+
+    {
+
+
+      var vowel_list = ''aeiouAEIOU'';
+
+
+      var vcount = 0;
+
+
+      for(var x = 0; x < str1.length ; x++)
+
+
+      {
+
+
+        if (vowel_list.indexOf(str1[x]) !== -1)
+
+
+        {
+
+
+          vcount += 1;
+
+
+        }
+
+
+      }
+
+
+      return vcount;
+
+
+    }
+
+
+    console.log(vowel_count("The quick brown fox"));
+
+
+    OUTPUT
+
+
+    5
+
+
+    EXPLANATION'
+  toc: []
+  trans: "\n\n```python\nprint ( \"请输入有效数字（或）y 应该大于 0\" )\n```\n\n```\n$ python3 test.py\n\
+    Enter divisor 2\nEnter dividend 0\n请输入有效数字（或）y 应该大于 0\nEnter divisor aa\n请输入有效数字（或）y\
+    \ 应该大于 0\nEnter divisor 2\nEnter dividend 4\n0.5\n```\n\n最后一个 `except` 子句可以省略异常名称。它被用作全局异常处理器。\n\
+    \n`test.py`\n```python\nwhile True :\n  try :\n    tempList = []\n    print (tempList[\
+    \ 10 ])\n    break\n  except ValueError :\n  print ( \"请输入有效数字\" )\n  except ZeroDivisionError\
+    \ :\n  print ( \"y 应该不为零\" )\n  except Exception as inst:\n  print ( \"全局处理器\"\
+    \ , inst)\n  break\n```\n\n```\n$ python3 test.py\nGlobal handler list index out\
+    \ of range\n```\n\n### try…except…else 子句\n\n`try…except` 语句可以有一个可选的 `else` 子句，它跟在\
+    \ `except` 子句之后。如果 `try` 块没有抛出任何异常，将执行 `else` 子句。\n\n`test.py`\n```python\nwhile\
+    \ True :\n  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int ( input ( \"\
+    输入被除数 \" ))\n    print (x / y)\n  except ValueError :\n  print ( \"请输入有效数字\" )\n\
+    \  except ZeroDivisionError :\n  print ( \"y 应该不为零\" )\n  else :\n  print ( \"\
+    程序执行成功\" )\n  break\n```\n\n```\n$ python3 test.py\nEnter divisor 4\nEnter dividend\
+    \ 2\n2.0\nProgram executed successfully\n```\n\n### 异常参数\n\n每发生异常时，它都会与一个名为异常参数的变量关联。\n\
+    \n`test.py`\n```python\nwhile True :\n  try :\n    x = int ( input ( \"输入除数 \"\
+    \ ))\n    y = int ( input ( \"输入被除数 \" ))\n    print (x / y)\n  except ValueError\
+    \ as inst:\n  print(inst)\n  except ZeroDivisionError as inst:\n  print(inst)\n\
+    \  else :\n  print ( \"程序执行成功\" )\n  break\n```\n\n```\n$ python3 test.py\nEnter\
+    \ divisor qwerty\ninvalid literal for int() with base 10: 'qwerty'\nEnter divisor\
+    \ 4\nEnter dividend 0\ndivision by zero\nEnter divisor 2\nEnter dividend 4\n0.5\n\
+    Program executed successfully\n```\n\n`except` 子句可以在异常名称后指定一个变量。该变量将绑定到异常实例，其参数存储在\
+    \ `instance.args` 中。\n\n`test.py`\n```python\nwhile True :\n  try :\n    x = int\
+    \ ( input ( \"输入除数 \" ))\n    y = int ( input ( \"输入被除数 \" ))\n    if y == 0 :\n\
+    \      raise Exception (x, y)\n    print ( \"x/y = \" ,x / y)\n    break\n  except\
+    \ Exception as inst:\n  arg1, arg2 = inst . args\n  print ( \"arg1=\" , arg1)\n\
+    \  print ( \"arg2=\" , arg2)\n```\n\n```\n$ python3 test.py\nEnter divisor 2\n\
+    Enter dividend 0\narg1= 2\narg2= 0\nEnter divisor 2\nEnter dividend 4\nx/y = \
+    \ 0.5\n```\n\n如果异常与其关联有参数，这些参数将作为异常消息的最后部分被打印。\n\n`test.py`\n```python\nwhile\
+    \ True :\n  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int ( input ( \"\
+    输入被除数 \" ))\n    if y == 0 :\n      raise Exception (x, y)\n    print ( \"x/y\
+    \ = \" ,x / y)\n    break\n  except Exception as inst:\n  print (inst)\n```\n\n\
+    ```\n$ python3 test.py\nEnter divisor 2\nEnter dividend 0\n(2, 0)\nEnter divisor\
+    \ 2\nEnter dividend 4\nx/y =  0.5\n```\n\n# Python global 关键字\n\n`global` 关键字用于从局部上下文中创建/修改全局变量（你也可以在其中声明函数、类等）。\n\
+    \n`test.py`\n```python\ndef function1 ():\n  global data\ndata = \"Hello World\"\
+    \n\ndef function2 ():\n  print (data)\n\nfunction1()\nfunction2()\n```\n\n```\n\
+    $ python3 test.py\nHello World\n```\n\n观察 `test.py`，尽管 `data` 在 `function1` 中声明，但它被\
+    \ `function2` 访问。这是因为 `data` 在全局作用域中声明的。\n\n# Python: 获取变量类型\n\n你可以使用 `type()`\
+    \ 函数或 `__class__` 属性获取变量的类型。\n\n```python\n>>> data = [ 1 , 2 , 3 , 4 ]\n>>> type(data)\n\
+    <class 'list'>\n>>> data . __class__\n<class 'list'>\n>>>\n>>> data = { 1 : \"\
+    hari \" , 2 : \"Krishna \" }\n>>> type(data)\n<class 'dict'>\n>>> data . __class__\n\
+    <class 'dict'>\n>>>\n```\n\n### 使用 if 语句检查类型\n\n`data = { 1 : \"hari \" , 2 :\
+    \ \"Krishna \" }`\n\n#### 方法 1\n```python\nif (data . __class__ . __name__ ==\
+    \ 'dict' ):\n    pass\n```\n\n#### 方法 2\n```python\nif type(data) == dict:\n \
+    \   pass\n```\n\n#### 方法 3\n```python\nif isinstance(data, dict):\n    pass\n\
+    ```\n\n"
+- fmt: "\nThe `indexOf()` method returns the index of the first occurrence of the\
+    \ defined value within the calling `String` object, starting at `fromIndex`. If\
+    \ the value cannot be found, it returns -1.\n\nSyntax -> `str.indexOf(searchValue[,\
+    \ fromIndex])`\n\nParameters include:\n- `searchValue` : A string that represents\
+    \ the value to be sought.\n- `fromIndex(Optional)`-> The index at which the string's\
+    \ forward search should begin. Any integer can be used.\n\nIf the condition `(vowel\
+    \ list.indexOf(str1[x])!== -1)` is met, the character(s) of the string will be\
+    \ counted as vowels.\n\n### FLOWCHART\n![](Image00003.jpg)\n\n### JavaScript:\
+    \ Check a number is prime or not\n![](Image00004.jpg)\n\n#### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>Check a number\
+    \ is prime or not</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction test_prime(n)\n{\n  if (n===1)\n  {\n    return\
+    \ false;\n  }\n  else if(n === 2)\n  {\n    return true;\n  }else\n  {\n    for(var\
+    \ x = 2; x < n; x++)\n    {\n      if(n % x === 0)\n      {\n        return false;\n\
+    \      }\n    }\n    return true; \n  }\n}\nconsole.log(test_prime(37));\n```\n\
+    \n#### OUTPUT\nTrue\n\n### FLOWCHART\n![](Image00005.jpg)\n\n### JavaScript: Get\
+    \ the data type\nWe going to Create a JavaScript function which takes an argument\
+    \ and returns the type.\nNote six possible values: object, boolean, method, number,\
+    \ string, or undefined.\n\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=utf-8 />\n<title>Detect JavaScript Data Types</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n```javascript\n\
+    function detect_data_type(value)\n{\nvar dtypes = [Function, RegExp, Number, String,\
+    \ Boolean, Object], x, len;\nif (typeof value === \"object\" || typeof value ===\
+    \ \"function\")\n    {\n      for (x = 0, len = dtypes.length; x < len; x++)\n\
+    \      {\n              if (value instanceof dtypes[x])\n              {\n   \
+    \               return dtypes[x];\n              }\n      }\n    }\n    return\
+    \ typeof value;\n}\nconsole.log(detect_data_type(12));\nconsole.log(detect_data_type('w3resource'));\n\
+    console.log(detect_data_type(false));\n```\n\n#### OUTPUT\nnumber\nstring\nBoolean\n\
+    \n### JavaScript: Find the second lowest and second greatest numbers from an array\n\
+    ![](Image00006.jpg)\n\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <meta charset=utf-8 />\n<title>Find the second lowest and second greatest numbers\
+    \ from an array</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction Second_Greatest_Lowest(arr_num)\n{\n  arr_num.sort(function(x,y)\n\
+    \              {\n              return x-y;\n              });\n  var uniqa =\
+    \ [arr_num[0]];\n  var result = [];\n  for(var j=1; j < arr_num.length; j++)\n\
+    \  {\n    if(arr_num[j-1] !== arr_num[j])\n    {\n      uniqa.push(arr_num[j]);\n\
+    \    }\n  }\n    result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+    \  }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n#### OUTPUT\n\
+    2,4\n\n### FLOWCHART\n![](Image00007.jpg)\n\n### JAVASCRIPT BASICS: Calculate\
+    \ multiplication and division of two numbers\n\n#### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>JavaScript program to\
+    \ calculate multiplication and division of two numbers </title>\n<style type=\"\
+    text/css\">\nbody {margin:30px;}\n</style>\n</head>\n<body>\n<form>\n1st Number\
+    \ : <input type=\"text\" id=\"firstNumber\" /><br>\n2nd Number: <input type=\"\
+    text\" id=\"secondNumber\" /><br>\n<input type=\"button\" onClick=\"multiplyBy()\"\
+    \ Value=\"Multiply\" />\n<input type=\"button\" onClick=\"divideBy()\" Value=\"\
+    Divide\" />\n</form>\n<p>The Result is : <br>\n<span id \"result\"></span></p>\n\
+    </body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n```javascript\nfunction multiplyBy()\n\
+    {\n  num1 = document.getElementById(\"firstNumber\");\n  num2 = document.getElementById(\"\
+    secondNumber\");\n  document.getElementById(\"result\").innerHTML = num1 * num2;\n\
+    }\nfunction divideBy()\n{\n  num1 = document.getElementById(\"firstNumber\");\n\
+    \  num2 = document.getElementById(\"secondNumber\");\ndocument.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n#### EXPLANATION\n- `document.getElementById(id).value`:\
+    \ The `value` property of a text field sets or returns the value attribute.\n\
+    - `document.getElementById(\"result\").innerHTML`: The `innerHTML` property of\
+    \ an element sets or returns the HTML content (inner HTML).\n\n#### OUTPUT\n![](Image0008.jpg)\n\
+    \n### Convert temperatures To and from celsius, Fahrenheit\n#### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>JavaScript program\
+    \ to convert temperatures and from celsius, fahrenheit</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n```javascript\nfunction cToF(celsius)\n\
+    {\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n  var message\
+    \ = cTemp+'°C is ' + cToFahr + '°F.';\n  console.log(message);\n}\nfunction fToC(fahrenheit)\n\
+    {\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp - 32) * 5 / 9;\n  var message\
+    \ = fTemp+'°F is ' + fToCel + '°C.';\n  console.log(message);\n}\ncToF(60);\n\
+    fToC(45);\n```\n\n#### OUTPUT\n60°C is 140 °F.\n45°F is 7.222222222222222°C.\n\
+    \n#### EXPLANATION\nThe following formulas can be used to make an exact conversion\
+    \ (Fahrenheit to Celsius / Celsius to Fahrenheit):\n- Fahrenheit to Celsius: `(F\
+    \ − 32) ÷ 1.8 = °C`\n- Celsius to Fahrenheit: `(C × 1.8) + 32 = °F`\n\nThe following\
+    \ is a rough conversion between degrees Celsius and degrees Fahrenheit:\n- To\
+    \ convert from Fahrenheit to Celsius, deduct 30 and divide by two.\n- To convert\
+    \ from Celsius to Fahrenheit, multiply the number by two and add 30.\n\n### Find\
+    \ the largest Of three integers\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>JavaScript program to find the largest of three given integers.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT CODE\n```javascript\n\
+    function max_of_three(x, y, z)\n{\n  max_val = 0;\n  if (x > y)\n  {\n    max_val\
+    \ = x;\n  } else\n  {\n    max_val = y;\n  }\n  if (z > max_val)\n  {\n    max_val\
+    \ = z;\n  }\n  return max_val;\n}\nconsole.log(max_of_three(1,0,1));\nconsole.log(max_of_three(0,-10,-20));\n\
+    console.log(max_of_three(1000,510,440));\n```\n\n#### Output\n1\n0\n1000\n\n####\
+    \ FLOWCHART\n![](Image00009.jpg)\n\n### Reverse a given string\n#### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"\
+    viewport\" content=\"width=device-width\">\n<title>JavaScript program to reverse\
+    \ a given string.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction string_reverse(str)\n{\n  return str.split(\"\"\
+    ).reverse().join(\"\");\n}\nconsole.log(string_reverse(\"js\"));\nconsole.log(string_reverse(\"\
+    www\"));\nconsole.log(string_reverse(\"JavaScript\"));\n```\n\n#### OUTPUT\necruosj\n\
+    www\ntpircS\n\n### Replace every character with the character following in the\
+    \ alphabet\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"\
+    utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\">\n<title>JavaScript\
+    \ program to replace every character in a given string with the character following\
+    \ it in the alphabet.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n####\
+    \ JAVASCRIPT CODE\n```javascript\nfunction LetterChanges(text) {\n//https://goo.gl/R8gn7u\n\
+    var s = text.split('');\nfor (var i = 0; i < s.length; i++) {\n// Caesar cipher\n\
+    switch(s[i]) {\ncase ' ':\nbreak;\ncase 'z':\ns[i] = 'a';\nbreak;\ncase 'Z':\n\
+    s[i] = 'A';\nbreak;\ndefault:\ns[i] = String.fromCharCode(1 + s[i].charCodeAt(0));\n\
+    }\n// Upper-case vowels\nswitch(s[i]) {\ncase 'a': case 'e': case 'i': case 'o':\
+    \ case 'u':\ns[i] = s[i].toUpperCase();\n}\n}\nreturn s.join('');\n}\nconsole.log(LetterChanges(\"\
+    PYTHON\"));\nconsole.log(LetterChanges(\"W3R\"));\nconsole.log(LetterChanges(\"\
+    php\"));\n```\n\n#### OUTPUT\nQZUIPO\nX4S\nqIq\n\n### Create a new string without\
+    \ the first and last character\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width\"\
+    >\n<title>JavaScript program to create a new string without the first and last\
+    \ character.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction without_first_end(str) {\n  return str.substring(1,\
+    \ str.length - 1);\n}\n```\n"
+  raw: 'The indexOf() method returns the index of the first occurrence of the defined
+    value within the calling String object, starting at fromIndex. If the value cannot
+    be found, it returns -1.
+
+
+    Syntax -> str.indexOf(searchValue[, fromIndex])
+
+
+    Parameters include:
+
+
+    searchValue : A string that represents the value to be sought.
+
+
+    fromIndex(Optional)-> The index at which the string''s forward search should begin.
+    Any integer can be used.
+
+
+    If the condition (vowel list.indexOf(str1[x])!== -1) is met, the character(s)
+    of the string will be counted as vowels.
+
+
+    FLOWCHART
+
+
+    ![](Image00003.jpg)
+
+
+    JavaScript: Check a number is prime or not
+
+
+    ![](Image00004.jpg)
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Check a number is prime or not</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function test_prime(n)
+
+
+    {
+
+
+      if (n===1)
+
+
+      {
+
+
+        return false;
+
+
+      }
+
+
+      else if(n === 2)
+
+
+      {
+
+
+        return true;
+
+
+      }else
+
+
+      {
+
+
+        for(var x = 2; x < n; x++)
+
+
+        {
+
+
+          if(n % x === 0)
+
+
+          {
+
+
+            return false;
+
+
+          }
+
+
+        }
+
+
+        return true; 
+
+
+      }
+
+
+    }
+
+
+    console.log(test_prime(37));
+
+
+    OUTPUT
+
+
+    True
+
+
+    FLOWCHART
+
+
+    ![](Image00005.jpg)
+
+
+    JavaScript: Get the data type
+
+
+    We going to Create a JavaScript function which takes an argument and returns the
+    type.
+
+
+    Note six possible values: object, boolean, method, number, string, or undefined.
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Detect JavaScript Data Types</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function detect_data_type(value)
+
+
+    {
+
+
+    var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
+
+
+    if (typeof value === "object" || typeof value === "function")
+
+
+        {
+
+
+         for (x = 0, len = dtypes.length; x < len; x++)
+
+
+         {
+
+
+                if (value instanceof dtypes[x])
+
+
+                {
+
+
+                    return dtypes[x];
+
+
+                }
+
+
+          }
+
+
+        }
+
+
+        return typeof value;
+
+
+    }
+
+
+    console.log(detect_data_type(12));
+
+
+    console.log(detect_data_type(''w3resource''));
+
+
+    console.log(detect_data_type(false));
+
+
+    OUTPUT
+
+
+    number
+
+
+    string
+
+
+    Boolean
+
+
+    JavaScript: Find the second lowest and second greatest
+
+
+    numbers from an array
+
+
+    ![](Image00006.jpg)
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Find the second lowest and second greatest numbers from an array</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    JAVASCRIPT CODE
+
+
+    function Second_Greatest_Lowest(arr_num)
+
+
+    {
+
+
+      arr_num.sort(function(x,y)
+
+
+               {
+
+
+               return x-y;
+
+
+               });
+
+
+      var uniqa = [arr_num[0]];
+
+
+      var result = [];
+
+
+      for(var j=1; j < arr_num.length; j++)
+
+
+      {
+
+
+        if(arr_num[j-1] !== arr_num[j])
+
+
+        {
+
+
+          uniqa.push(arr_num[j]);
+
+
+        }
+
+
+      }
+
+
+        result.push(uniqa[1],uniqa[uniqa.length-2]);
+
+
+      return result.join('','');
+
+
+      }
+
+
+    console.log(Second_Greatest_Lowest([1,2,3,4,5]));
+
+
+    OUTPUT
+
+
+    2,4
+
+
+    FLOWCHART
+
+
+    ![](Image00007.jpg)
+
+
+    JAVASCRIPT BASICS
+
+
+    Calculate multiplication and division
+
+
+    of two numbers
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>JavaScript program to calculate multiplication and division of two numbers
+    </title>
+
+
+    <style type="text/css">
+
+
+    body {margin: 30px;}
+
+
+    </style>
+
+
+    </head>
+
+
+    <body>
+
+
+    <form>
+
+
+    1st Number : <input type="text" id="firstNumber" /><br>
+
+
+    2nd Number: <input type="text" id="secondNumber" /><br>
+
+
+    <input type="button" onClick="multiplyBy()" Value="Multiply" />
+
+
+    <input type="button" onClick="divideBy()" Value="Divide" />
+
+
+    </form>
+
+
+    <p>The Result is : <br>
+
+
+    <span id = "result"></span>
+
+
+    </p>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function multiplyBy()
+
+
+    {
+
+
+            num1 = document.getElementById("firstNumber").value;
+
+
+            num2 = document.getElementById("secondNumber").value;
+
+
+            document.getElementById("result").innerHTML = num1 * num2;
+
+
+    }
+
+
+    function divideBy()
+
+
+    {
+
+
+            num1 = document.getElementById("firstNumber").value;
+
+
+            num2 = document.getElementById("secondNumber").value;
+
+
+    document.getElementById("result").innerHTML = num1 / num2;
+
+
+    }
+
+
+    EXPLANATION
+
+
+    document.getElementById(id).value: The value property of a text field sets or
+    returns the value of the value attribute.
+
+
+    document.getElementById("result").innerHTM : The innerHTML property of an element
+    sets or returns the HTML content (inner HTML).
+
+
+    OUTPUT
+
+
+    ![](Image00008.jpg)
+
+
+    Convert temperatures
+
+
+    To and from celsius, Fahrenheit in JAVASCRIPT
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+      <html>
+
+
+      <head>
+
+
+      <meta charset="utf-8">
+
+
+      <title>Write a JavaScript program to convert temperatures to and from celsius,
+    fahrenheit</title>
+
+
+      </head>
+
+
+      <body>
+
+
+    </body>
+
+
+      </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function cToF(celsius)
+
+
+    {
+
+
+      var cTemp = celsius;
+
+
+      var cToFahr = cTemp * 9 / 5 + 32;
+
+
+      var message = cTemp+''\xB0C is '' + cToFahr + '' \xB0F.'';
+
+
+        console.log(message);
+
+
+    }
+
+
+    function fToC(fahrenheit)
+
+
+    {
+
+
+      var fTemp = fahrenheit;
+
+
+      var fToCel = (fTemp - 32) * 5 / 9;
+
+
+      var message = fTemp+''\xB0F is '' + fToCel + ''\xB0C.'';
+
+
+        console.log(message);
+
+
+    }
+
+
+    cToF(60);
+
+
+    fToC(45);
+
+
+    OUTPUT
+
+
+    60°C is 140 °F.
+
+
+    45°F is 7.222222222222222°C.
+
+
+    EXPLANATION
+
+
+    The following formulas can be used to make an exact conversion (Fahrenheit to
+    Celsius / Celsius to Fahrenheit):
+
+
+    Fahrenheit to Celsius : (°F − 32) ÷ 1.8 = °C
+
+
+    Celsius to Fahrenheit : (°C × 1.8) + 32 = °F
+
+
+    The following is a rough conversion between degrees Celsius and degrees Fahrenheit:
+
+
+    To convert from Fahrenheit to Celsius, deduct 30 and divide by two.
+
+
+    To convert from Celsius to Fahrenheit, multiply the number by two and add 30.
+
+
+    Find the largest
+
+
+    Of three given integers
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to find the largest of three given integers.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function max_of_three(x, y, z)
+
+
+    {
+
+
+      max_val = 0;
+
+
+      if (x > y)
+
+
+      {
+
+
+        max_val = x;
+
+
+      } else
+
+
+      {
+
+
+        max_val = y;
+
+
+      }
+
+
+      if (z > max_val)
+
+
+      {
+
+
+        max_val = z;
+
+
+      }
+
+
+      return max_val;
+
+
+    }
+
+
+    console.log(max_of_three(1,0,1));
+
+
+    console.log(max_of_three(0,-10,-20));
+
+
+    console.log(max_of_three(1000,510,440));
+
+
+    Output:
+
+
+    1
+
+
+    0
+
+
+    1000
+
+
+    FLOWCHART
+
+
+    ![](Image00009.jpg)
+
+
+    Reverse a given string
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to reverse a given string.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function string_reverse(str)
+
+
+    {
+
+
+        return str.split("").reverse().join("");
+
+
+    }
+
+
+    console.log(string_reverse("jsresource"));
+
+
+    console.log(string_reverse("www"));
+
+
+    console.log(string_reverse("JavaScript"));
+
+
+    OUTPUT
+
+
+    ecruosersj
+
+
+    www
+
+
+    tpircSavaJ
+
+
+    Replace every character
+
+
+    with the character following it in the alphabet
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to replace every character in a given string with
+    the character following it in the alphabet.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function string_reverse(str)
+
+
+    function LetterChanges(text) {
+
+
+    //https://goo.gl/R8gn7u
+
+
+    var s = text.split('''');
+
+
+    for (var i = 0; i < s.length; i++) {
+
+
+    // Caesar cipher
+
+
+    switch(s[i]) {
+
+
+    case '' '':
+
+
+    break;
+
+
+    case ''z'':
+
+
+    s[i] = ''a'';
+
+
+    break;
+
+
+    case ''Z'':
+
+
+    s[i] = ''A'';
+
+
+    break;
+
+
+    default:
+
+
+    s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+
+
+    }
+
+
+    // Upper-case vowels
+
+
+    switch(s[i]) {
+
+
+    case ''a'': case ''e'': case ''i'': case ''o'': case ''u'':
+
+
+    s[i] = s[i].toUpperCase();
+
+
+    }
+
+
+    }
+
+
+    return s.join('''');
+
+
+    }
+
+
+    console.log(LetterChanges("PYTHON"));
+
+
+    console.log(LetterChanges("W3R"));
+
+
+    console.log(LetterChanges("php"));
+
+
+    Output:
+
+
+    QZUIPO
+
+
+    X4S
+
+
+    qIq
+
+
+    Create a new string  
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to create a new string without the first and last
+    character.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function without_first_end(str) {
+
+
+      return str.substring(1, str.length - 1);
+
+
+    }'
+  toc: []
+  trans: "\n## indexOf() 方法\n\n`indexOf()` 方法返回调用的 `String` 对象中指定值第一次出现的索引。如果找不到该值，则返回\
+    \ `-1`。\n\n语法：\n`str.indexOf(searchValue[, fromIndex])`\n\n参数包括：\n- `searchValue`：要查找的字符串。\n\
+    - `fromIndex`（可选）：开始搜索的索引。可以是任何整数。\n\n如果满足 `str.indexOf(searchValue) !== -1` 条件，该字符将被计数。\n\
+    \n### 流程图\n![](img/Image0003.jpg)\n\n### JavaScript：判断一个数字是否为质数\n\n#### HTML 代码\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>判断数字是否为质数的\
+    \ JavaScript 程序</title>\n</head>\n<body>\n<form>\n第一个数字：<input type=\"text\" id=\"\
+    firstNumber\" /><br>\n第二个数字：<input type=\"text\" id=\"secondNumber\" /><br>\n\
+    <input type=\"button\" onclick=\"multiplyBy()\" Value=\"乘法\" />\n<input type=\"\
+    button\" onclick=\"divideBy()\" Value=\"除法\" />\n</form>\n<p>结果是：<br>\n<span id=\"\
+    result\"></span></p>\n</body>\n</html>\n```\n\n#### JavaScript 代码\n```javascript\n\
+    function test_prime(n) {\n  if (n === 1) {\n    return false;\n  } else if (n\
+    \ === 2) {\n    return true;\n  } else {\n    for (var x = 2; x < n; x++) {\n\
+    \      if (n % x === 0) {\n        return false;\n      }\n    }\n    return true;\n\
+    \  }\n}\nconsole.log(test_prime(37));\n```\n\n#### 输出\nTrue\n\n### 流程图\n![](img/Image0005.jpg)\n\
+    \n### JavaScript：获取数据类型\n创建一个 JavaScript 函数，接收参数并返回其类型。可能的值：object、boolean、number、string\
+    \ 或 undefined。\n\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta\
+    \ charset=\"utf-8\">\n<title>检测数据类型</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n#### JavaScript 代码\n```javascript\nfunction detect_data_type(value) {\n\
+    \  var dtypes = [Function, RegExp, Number, String, Object], x, len;\n  if (typeof\
+    \ value === \"object\" || typeof value === \"function\") {\n    for (x = 0, len\
+    \ = dtypes.length; x < len; x++) {\n      if (value instanceof dtypes[x]) {\n\
+    \        return dtypes[x];\n      }\n    }\n  }\n  return typeof value;\n}\nconsole.log(detect_data_type(12));\n\
+    console.log(detect_data_type('w3'));\nconsole.log(detect_data_type(false));\n\
+    ```\n\n#### 输出\nnumber\nstring\nBoolean\n\n### JavaScript：获取数组中的第二小和第二大\n\n####\
+    \ HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n\
+    <title>从数组中获取第二小和第二数字</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n####\
+    \ JavaScript 代码\n```javascript\nfunction Second_Greatest_Lowest(arr_num) {\n \
+    \ arr_num.sort(function(x, y) {\n    return x - y;\n  });\n  var uniqa = [arr_num[0]];\n\
+    \  var result = [];\n  for (var j = 1; j < arr_num.length; j++) {\n    if (arr_num[j\
+    \ - 1] !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n    }\n  }\n  result.push(uniqa[1],\
+    \ uniqa[uniqa.length - 2]);\n  return result.join(',');\n}\nconsole.log(Second_Greatest_Lowest([1,\
+    \ 2, 3, 4, 5]));\n```\n\n#### 输出\n2,4\n\n### 流程图\n![](img/Image0007.jpg)\n\n###\
+    \ JavaScript 基础：两个数字的乘法和除法\n\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n<meta charset=\"utf-8\">\n<title>计算两个数字乘法和除法的 JavaScript 程序</title>\n\
+    <style type=\"text/css\">\nbody {margin:30px;}\n</style>\n</head>\n<body>\n<form>\n\
+    第一个数字：<input type=\"text\" id=\"firstNumber\" /><br>\n第二个数字：<input type=\"text\"\
+    \ id=\"secondNumber\" /><br>\n<input type=\"button\" onclick=\"multiplyBy()\"\
+    \ Value=\"乘法\" />\n<input type=\"button\" onclick=\"divideBy()\" Value=\"除法\"\
+    \ />\n</form>\n<p>结果是：<br>\n<span id=\"result\"></span></p>\n</body>\n</html>\n\
+    ```\n\n#### JavaScript 代码\n```javascript\nfunction multiplyBy() {\n  var num1\
+    \ = document.getElementById(\"firstNumber\");\n  var num2 = document.getElementById(\"\
+    secondNumber\");\n  document.getElementById(\"result\").innerHTML = num1 * num2;\n\
+    }\nfunction divideBy() {\n  var num1 = document.getElementById(\"firstNumber\"\
+    );\n  var num2 = document.getElementById(\"secondNumber\");\n  document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n#### 解析\n- `document.getElementById(id).value`:\
+    \ 文本字段的 `value` 属性用于设置或返回值属性。\n- `document.getElementById(id).innerHTML`: 元素的\
+    \ `innerHTML` 属性用于设置 HTML 内容。\n\n#### 输出\n![](img/Image0008.jpg)\n\n### 将摄氏度转换为华氏度\n\
+    \n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\"\
+    >\n<title>摄氏度转换为华氏度的 JavaScript 程序</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n#### JavaScript 代码\n```javascript\nfunction celsiusToF(celsius) {\n  var\
+    \ cTemp = celsius;\n  var fahr = (cTemp * 9 / 5) + 32;\n  var message = cTemp\
+    \ + \"°C 是 \" + fahr + \"°F\";\n  document.getElementById(\"result\").innerHTML\
+    \ = message;\n}\nfunction fahrenheitToC(fahrenheit) {\n  var fTemp = fahrenheit;\n\
+    \  var cTemp = (fTemp - 32) * 5 / 9;\n  var message = fTemp + \"°F 是 \" + cTemp\
+    \ + \"°C\";\n  document.getElementById(\"result\").innerHTML = message;\n}\n```\n"
+- fmt: "\n```javascript\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+    console.log(without_first_end('PHP'));\n```\nOutput:\navaScrip\nH\n\n# Concatenate\
+    \ two strings\nExcept their first character\n\n### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>JavaScript program to concatenate\
+    \ two strings except their first character.</title>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction concatenate(str1, str2)\
+    \ {\n  str1 = str1.substring(1, str1.length);\n  str2 = str2.substring(1, str2.length);\n\
+    \  return str1 + str2;\n}\nconsole.log(concatenate(\"PHP\",\"JS\"));\nconsole.log(concatenate(\"\
+    A\",\"B\"));\nconsole.log(concatenate(\"AA\",\"BB\"));\n```\nOutput:\nHPS\nAB\n\
+    \n# Move last three character\nstart of a specified string\n\n### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta\
+    \ name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript program\
+    \ to move last three character to the start of a given string. The string length\
+    \ must be 3.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+    ```javascript\nfunction right_three(str) {\n  if (str.length > 1) {\n    return\
+    \ str.slice(-3) + str.slice(0, -3);\n  }\n  return str;\n}\nconsole.log(right_three(\"\
+    Python\"));\nconsole.log(right_three(\"JavaScript\"));\nconsole.log(right_three(\"\
+    Hi\"));\n```\nOutput:\nhonPyt\niptJavaScr\nHi\n\n# Compute the sum\nOf three elements\
+    \ of a given array\nOf integers of length 3\n\n### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>JavaScript program to compute the\
+    \ sum of three elements of an given integers of length 3.</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction sum_three(nums)\
+    \ {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10, 32,\
+    \ 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8, -11]));\n\
+    ```\nOutput:\n62\n21\n-3\n\n# Add two digits\nOf a given positive integer\nOf\
+    \ length two\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to add two digits of a positive integer of length\
+    \ two.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+    ```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n /\
+    \ 10);\n}\nconsole.log(add_two_digits(25));\nconsole.log(add_two_digits(50));\n\
+    ```\nOutput:\n7\n5\n\n# Check whether a given year is a leap\n### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Find\
+    \ Leap Year</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+    ```javascript\nfunction leapyear(year) {\n  return (year % 100 === 0) ? (year\
+    \ % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\n\
+    console.log(leapyear(1700));\nconsole.log(leapyear(1800));\nconsole.log(leapyear(100));\n\
+    ```\nOutput:\ntrue\ntrue\nfalse\nfalse\n\n# Check given positive number\nMultiple\
+    \ of 3 or 7\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to check whether given positive number is a multiple\
+    \ of 3 or a multiple of 7.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n\
+    ### JAVCRIPT CODE\n```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x\
+    \ % 7 == 0) {\n    return true;\n  } else {\n    return false;\n  }\n}\nconsole.log(test37(12));\n\
+    console.log(test37(14));\nconsole.log(test37(10));\nconsole.log(test37(11));\n\
+    ```\nOutput:\ntrue\ntrue\nfalse\nfalse\n\n# Check a string starts with 'Java'\n\
+    And otherwise\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to check whether a string starts with 'Java' and\
+    \ false otherwise.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT\
+    \ CODE\n```javascript\nfunction start_spec_str(str) {\n  if (str.length < 4) {\n\
+    \    return false;\n  }\n  front = str.substring(0, 4);\n  if (front == 'Java')\
+    \ {\n    return true;\n  } else {\n    return false;\n  }\n}\nconsole.log(start_spec_str(\"\
+    JavaScript\"));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"\
+    Python\"));\n```\nOutput:\ntrue\ntrue\nfalse\n\n# Check two given integer values\n\
+    In the range 50..99\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to check whether two given integer values are in\
+    \ the range 50..99 (inclusive). Return true if either of them are in the said\
+    \ range.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+    ```javascript\nfunction check_numbers(x, y) {\n  if ((x >= 50 && x <= 99) || (y\
+    \ >= 50 && y <= 99)) {\n    return true;\n  } else {\n    return false;\n  }\n\
+    }\nconsole.log(check_numbers(12, 101));\nconsole.log(check_numbers(52, 80));\n\
+    console.log(check_numbers(15, 99));\n```\nOutput:\nfalse\ntrue\ntrue\n\n# Find\
+    \ a value which is nearest to 100\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to find a value which is nearest to 100 from two\
+    \ different given integer values.</title>\n</head>\n<body>\n</body>\n</html>\n\
+    ```\n\n### JAVCRIPT CODE\n```javascript\nfunction near_100(x, y) {\n  if (x !=\
+    \ y) {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y - 100);\n    if (x1 <\
+    \ y1) {\n      return x;\n    } else {\n      return y;\n    }\n  }\n}\nconsole.log(near_100(90,\
+    \ 80));\n```\nOutput:\n90\nfalse\n"
+  raw: 'console.log(without_first_end(''JavaScript''));
+
+
+    console.log(without_first_end(''JS''));
+
+
+    console.log(without_first_end(''PHP''));
+
+
+    Output:
+
+
+    avaScrip
+
+
+    H
+
+
+    Concatenate two strings
+
+
+    Except their first character
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to concatenate two strings except their first character.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function concatenate(str1, str2) {
+
+
+      str1 = str1.substring(1, str1.length);
+
+
+      str2 = str2.substring(1, str2.length);
+
+
+      return str1 + str2;
+
+
+    }
+
+
+    console.log(concatenate("PHP","JS"));
+
+
+    console.log(concatenate("A","B"));
+
+
+    console.log(concatenate("AA","BB"));
+
+
+    Output:
+
+
+    HPS
+
+
+    AB
+
+
+    Move last three character
+
+
+    start of a specified string
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to move last three character to the start of a given
+    string. The string length must be 3.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function right_three(str) {
+
+
+         if (str.length > 1)
+
+
+           {
+
+
+             return str.slice(-3) + str.slice(0, -3);
+
+
+           }
+
+
+      return str;
+
+
+    }
+
+
+    console.log(right_three("Python"));
+
+
+    console.log(right_three("JavaScript"));
+
+
+    console.log(right_three("Hi"));
+
+
+    Output:
+
+
+    honPyt
+
+
+    iptJavaScr
+
+
+    Hi
+
+
+    Compute the sum
+
+
+    Of three elements of a given array
+
+
+    Of integers of length 3
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to compute the sum of three elements of an given integers
+    of length 3.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function sum_three(nums)
+
+
+    {
+
+
+      return nums[0] + nums[1] + nums[2];
+
+
+    }
+
+
+    console.log(sum_three([10, 32, 20])); 
+
+
+    console.log(sum_three([5, 7, 9]));
+
+
+    console.log(sum_three([0, 8, -11]));
+
+
+    Output:
+
+
+    62
+
+
+    21
+
+
+    -3
+
+
+    Add two digits
+
+
+    Of a given positive integer
+
+
+    Of length two
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to add two digits of a given positive integer of length
+    two.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function add_two_digits(n)
+
+
+       {
+
+
+          return n % 10 + Math.floor(n / 10);
+
+
+       }
+
+
+    console.log(add_two_digits(25))
+
+
+    console.log(add_two_digits(50))
+
+
+    Output:
+
+
+    7
+
+
+    5
+
+
+    Check whether a given year is a leap
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+    <meta charset=utf-8 />
+
+
+    <title>Find Leap Year</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function leapyear(year)
+
+
+    {
+
+
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+
+    }
+
+
+    console.log(leapyear(2016));
+
+
+    console.log(leapyear(2000));
+
+
+    console.log(leapyear(1700));
+
+
+    console.log(leapyear(1800));
+
+
+    console.log(leapyear(100));
+
+
+    OUTPUT
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    false
+
+
+    Check given positive number
+
+
+    Multiple of 3 or a multiple of 7
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to check whether a given positive number is a multiple
+    of 3 or a multiple of 7\. </title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function test37(x)
+
+
+    {
+
+
+      if (x % 3 == 0 || x % 7 == 0)
+
+
+      {
+
+
+        return true;
+
+
+      }
+
+
+      else {
+
+
+        return false;
+
+
+      }
+
+
+    }
+
+
+    console.log(test37(12));
+
+
+    console.log(test37(14));
+
+
+    console.log(test37(10));
+
+
+    console.log(test37(11));
+
+
+    Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    Check a string starts with ''Java''
+
+
+    And false otherwise
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to check whether a string starts with ''Java'' and
+    false otherwise.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function start_spec_str(str)
+
+
+    {
+
+
+      if (str.length < 4)
+
+
+      {
+
+
+        return false;
+
+
+      }
+
+
+      front = str.substring(0, 4);
+
+
+      if (front == ''Java'')
+
+
+      {
+
+
+        return true;
+
+
+      }
+
+
+       else
+
+
+       {
+
+
+        return false;
+
+
+      }
+
+
+    }
+
+
+    console.log(start_spec_str("JavaScript"));
+
+
+    console.log(start_spec_str("Java"));
+
+
+    console.log(start_spec_str("Python"));
+
+
+    Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    Check two given integer values
+
+
+    In the range 50..99
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to check whether two given integer values are in the
+    range 50..99 (inclusive). Return true if either of them are in the said range.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function check_numbers(x, y)
+
+
+      {
+
+
+      if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
+
+
+      {
+
+
+        return true;
+
+
+      }
+
+
+      else
+
+
+      {
+
+
+        return false;
+
+
+      }
+
+
+    }
+
+
+    console.log(check_numbers(12, 101));
+
+
+    console.log(check_numbers(52, 80));
+
+
+    console.log(check_numbers(15, 99));
+
+
+    OUTPUT
+
+
+    false
+
+
+    true
+
+
+    true
+
+
+    Find a value which is nearest to 100
+
+
+    HTML CODE
+
+
+    <!DOCTYPE html>
+
+
+    <html>
+
+
+    <head>
+
+
+      <meta charset="utf-8">
+
+
+      <meta name="viewport" content="width=device-width">
+
+
+      <title>JavaScript program to find a value which is nearest to 100 from two different
+    given integer values.</title>
+
+
+    </head>
+
+
+    <body>
+
+
+    </body>
+
+
+    </html>
+
+
+    JAVASCRIPT CODE
+
+
+    function near_100(x, y) {
+
+
+      if (x != y)
+
+
+      {
+
+
+      x1 = Math.abs(x - 100);
+
+
+      y1 = Math.abs(y - 100);
+
+
+      if (x1 < y1)
+
+
+      {
+
+
+        return x;
+
+
+      }
+
+
+      if (y1 < x1)
+
+
+      {
+
+
+        return y;
+
+
+      }
+
+
+      return 0;
+
+
+      }
+
+
+      else
+
+
+        return false;
+
+
+    }
+
+
+    console.log(near_100(90, 89));
+
+
+    console.log(near_100(-90, -89));
+
+
+    console.log(near_100(90, 90));
+
+
+    Output:
+
+
+    90
+
+
+    -89
+
+
+    false
+
+
+    OUR OTHER PUBLISHING
+
+
+    TAM SEL
+
+
+    [APACHE SPARK AND SCALA FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/APACHE-SPARK-SCALA-BEGINNERS-QuickStart-ebook/dp/B084SGW51Y/ref=sr_1_1?dchild=1&keywords=APACHE+SPARK+AND+SCALA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627653411&s=digital-text&sr=1-1)
+
+
+    [PYTHON AND JAVASCRIPT CODING BASICS: FOR ABSOLUTE BEGINNERS](https://www.amazon.com/PYTHON-JAVASCRIPT-CODING-BASICS-BEGINNERS-ebook/dp/B09756TC9M/ref=sr_1_1?dchild=1&keywords=PYTHON+AND+JAVASCRIPT+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653589&s=digital-text&sr=1-1)
+
+
+    [LARAVEL FOR BEGINNERS: Learn Coding Fast](https://www.amazon.com/LARAVEL-BEGINNERS-Framework-Hands-Beginners-ebook/dp/B08779PRGD/ref=sr_1_1?dchild=1&keywords=LARAVEL+FOR+BEGINNERS%3A+Learn+Coding+Fast%3A&qid=1627653650&s=digital-text&sr=1-1)
+
+
+    [HTML FOR BEGINNERS: Html CSS Programming Language Crash Course, Web Design Quick
+    Start Script Tutorial Book in Easy Steps](https://www.amazon.com/HTML-BEGINNERS-Programming-Language-Tutorial-ebook/dp/B07SBFC4TG/ref=sr_1_1?dchild=1&keywords=HTML+FOR+BEGINNERS%3A+Html+CSS+Programming+Language+Crash+Course%2C+Web+Design+Quick+Start+Script+Tutorial+Book+in+Easy+Steps+-+LEARN+TO+CODE+FAST&qid=1627653769&s=digital-text&sr=1-1)
+
+
+    [DART PROGRAMMING BASICS: FOR ABSOLUTE BEGINNERS](https://www.amazon.com/DART-PROGRAMMING-BASICS-ABSOLUTE-BEGINNERS-ebook/dp/B08ZHVYV2L/ref=sr_1_1?dchild=1&keywords=DART+PROGRAMMING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653907&s=digital-text&sr=1-1)
+
+
+    [RUST AND GOLANG FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast! RUST AND GOLANG](https://www.amazon.com/RUST-GOLANG-BEGINNERS-QuickStart-Tutorial-ebook/dp/B085417G1F/ref=sr_1_1?dchild=1&keywords=RUST+AND+GOLANG+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654027&s=digital-text&sr=1-1)
+
+
+    [APACHE SPARK AND HADOOP FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/APACHE-SPARK-HADOOP-BEGINNERS-QuickStart-ebook/dp/B083KDVCKQ/ref=sr_1_1?dchild=1&keywords=APACHE+SPARK+AND+HADOOP+FOR+BEGINNERS%3A&qid=1627654125&s=digital-text&sr=1-1)
+
+
+    [TENSORFLOW FOR BEGINNERS: LEARN CODING FAST](https://www.amazon.com/TensorFlow-Beginners-Framework-learning-Hands-ebook/dp/B0872T7GS1/ref=sr_1_1?dchild=1&keywords=TensorFlow+For+Beginners%3A+Learn+Coding+Fast%3A&qid=1627654182&s=digital-text&sr=1-1)'
+  toc: []
+  trans: "\n\n```javascript\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+    console.log(without_first_end('PHP'));\n```\nOutput:\navaScrip\nH\n\n# 拼接两个字符串\n\
+    除它们的第一个字符\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta\
+    \ charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript 程序：除掉第一个字符后拼接两个字符串。</title>\n</head>\n<body>\n</body>\n\
+    </html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction concatenate(str1, str2)\
+    \ {\n  str1 = str1.substring(1, str1.length);\n  str2 = str2.substring(1, str2.length);\n\
+    \  return str1 + str2;\n}\nconsole.log(concatenate(\"PHP\",\"JS\"));\nconsole.log(concatenate(\"\
+    A\",\"B\"));\nconsole.log(concatenate(\"AA\",\"BB\"));\n```\nOutput:\nHPS\nAB\n\
+    \n# 将最后三个字符移动\n到指定字符串的开头\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript 程序：将最后三个字符移动到给定字符串的开头。字符串长度必须至少为 3。</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction right_three(str)\
+    \ {\n  if (str.length > 1) {\n    return str.slice(-3) + str.slice(0, -3);\n \
+    \ }\n  return str;\n}\nconsole.log(right_three(\"Python\"));\nconsole.log(right_three(\"\
+    JavaScript\"));\nconsole.log(right_three(\"Hi\"));\n```\nOutput:\nhonPyt\niptJavaScr\n\
+    Hi\n\n# 计算和\n给定数组中三个元素的和\n长度为 3 的整数和\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width=device-width\">\n  <title>JavaScript 程序：计算长度为 3 的给定整数中三个元素的和。</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction\
+    \ sum_three(nums) {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10,\
+    \ 32, 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+    \ -11]));\n```\nOutput:\n62\n21\n-3\n\n# 相加两个数字\n给定正整数的两个数字\n长度为二\n\n### HTML\
+    \ CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+    \  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript\
+    \ 程序：相加长度为二的正整数的两个数字。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT\
+    \ CODE\n```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n\
+    \ / 10);\n}\nconsole.log(add_two_digits(25));\nconsole.log(add_two_digits(50));\n\
+    ```\nOutput:\n7\n5\n\n# 检查给定年份是否为闰年\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>查找闰年</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction leapyear(year)\
+    \ {\n  return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\n\
+    console.log(leapyear(2016));\nconsole.log(leapyear(2000));\nconsole.log(leapyear(1700));\n\
+    console.log(leapyear(1800));\nconsole.log(leapyear(100));\n```\nOutput:\ntrue\n\
+    true\nfalse\nfalse\n\n# 检查给定正数\n3 或 7 的倍数\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width=device-width\">\n  <title>JavaScript 程序：检查给定正数是否是 3 的倍数或 7 的倍数。</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction\
+    \ test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return true;\n  } else {\n\
+    \    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+    console.log(test37(10));\nconsole.log(test37(11));\n```\nOutput:\ntrue\ntrue\n\
+    false\nfalse\n\n# 字符串以'Java'开头\n否则\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width=device-width\">\n  <title>JavaScript 程序：检查字符串是否以'Java'开头，否则返回 false。</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction\
+    \ start_java(str) {\n  if (str.length < 4) {\n    return false;\n  }\n  front\
+    \ = str.substring(0, 4);\n  if (front == 'Java') {\n    return true;\n  } else\
+    \ {\n    return false;\n  }\n}\nconsole.log(start_java(\"JavaScript\"));\nconsole.log(start_java(\"\
+    Java\"));\nconsole.log(start_java(\"Python\"));\n```\nOutput:\ntrue\ntrue\nfalse\n\
+    \n"
+- fmt: '
+
+    # [DJANGO AND PYTHON FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS/ref=sr_1_1?dchild=1&keywords=DJANGO+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654258&s=digital-text&sr=1-1)
+
+
+    # [JAVASCRIPT AND DART CODING BASICS: FOR ABSOLUTE BEGINNER](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9/ref=sr_1_1?dchild=1&keywords=JAVASCRIPT+AND+DART+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654541&s=digital-text&sr=1-1)
+
+
+    # [TENSORFLOW FOR BEGINNERS AND PYTHON CODING BASICS: FOR ABSOLUTE BEGINNERS](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+FOR+BEGINNERS+AND+PYTHON+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654724&s=digital-text&sr=1-2)
+
+
+    # [RUST Programming Language: For Beginners, Learn Coding Fast!](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VRXQ2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653241&s=digital-text&sr=1-2)
+
+
+    # [HADOOP AND PYTHON FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654833&s=digital-text&sr=1-1)
+
+
+    # [SELENIUM AND JAVA FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654994&s=digital-text&sr=1-1)
+
+
+    # [ANDROID AND JAVA FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627655061&s=digital-text&sr=1-1)
+
+
+    J KING
+
+
+    # [PYTHON AND HADOOP BASICS](https://www.amazon.com/PYTHON-HADOOP-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08CQYCVZZ/ref=sr_1_1?dchild=1&keywords=PYTHON+AND+HADOOP+BASICS&qid=1627631650&s=digital-text&sr=1-1)
+
+
+    # [PYTHON BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08FL5QJCF/ref=sr_1_10?dchild=1&keywords=PYTHON+BASICS+AND+PYTHON+CODING+EXAMPLES+J+KING&qid=1627633161&s=digital-text&sr=1-10)
+
+
+    # [C# AND C++ CODING EXAMPLES](https://www.amazon.com/CODING-EXAMPLES-PROGRAMMING-BEGINNERS-ebook/dp/B08KNG5629/ref=sr_1_1?dchild=1&keywords=C%23+AND+C%2B%2B+CODING+EXAMPLES&qid=1627631323&s=digital-text&sr=1-1)
+
+
+    # [PYTHON CODING AND C PROGRAMMING EXAMPLES](https://www.amazon.com/PYTHON-CODING-PROGRAMMING-EXAMPLES-BEGINNERS-ebook/dp/B08L27PLYH/ref=sr_1_3?dchild=1&keywords=PYTHON+CODING+AND+C)
+
+
+    # [C++ AND JAVA CODING EXAMPLES](https://www.amazon.com/CODING-EXAMPLES-PROGRAMMING-BEGINNERS-ebook/dp/B082WH5G/ref=sr_1_1?dchild=1&keywords=C%2B%2B+AND+JAVA)
+
+
+    # [ANDROID BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/ANDROID-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B099PMF2/ref=sr_1_3?dchild=1&keywords=ANDROID+AND+PYTHON)
+
+
+    # [C# BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/BASICS-CODING-EXAMPLES-PROGRAMMING-QuickStart-ebook/dp/B08GZL6NW6/ref=sr_1_6?dchild=1&keywords=C%23+BASICS)
+
+
+    # [ANGULAR AND PYTHON BASICS](https://www.amazon.com/ANGULAR-PYTHON-BASICS-QuickStart-Tutorial-ebook/dp/B08GH59P4/ref=sr_1_1?dchild=1&keywords=ANGULAR+AND+PYTHON)
+
+
+    # [PYTHON BASICS AND SCALA CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-SCALA-CODING-EXAMPLES-ebook/dp/B095DJ1SZ/ref=sr_1_19?dchild=1&keywords=PYTHON+BASICS+AND+SCALA)
+
+
+    # [JAVA BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/JAVA-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B098LV4GK/ref=sr_1_21?dchild=1&keywords=JAVA+BASICS)
+
+
+    # [PYTHON BASICS AND C# CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B098FMBC9Z/ref=sr_1_20?dchild=1&keywords=PYTHON+BASICS+AND+C#)
+
+
+    # [ANDROID BASICS AND JAVA CODING EXAMPLES](https://www.amazon.com/ANDROID-BASICS-JAVA-CODING-EXAMPLES-ebook/dp/B098PKHZD3/ref=sr_1_24?dchild=1&keywords=ANDROID+BASICS)
+
+    '
+  raw: '[DJANGO AND PYTHON FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS/ref=sr_1_1?dchild=1&keywords=DJANGO+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654258&s=digital-text&sr=1-1)
+
+
+    [JAVASCRIPT AND DART CODING BASICS: FOR ABSOLUTE BEGINNER](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9/ref=sr_1_1?dchild=1&keywords=JAVASCRIPT+AND+DART+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654541&s=digital-text&sr=1-1)
+
+
+    [TENSORFLOW FOR BEGINNERS AND PYTHON CODING BASICS: FOR ABSOLUTE BEGINNERS](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+FOR+BEGINNERS+AND+PYTHON+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654724&s=digital-text&sr=1-2)
+
+
+    [RUST Programming Language: For Beginners, Learn Coding Fast!](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VRXQ2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653241&s=digital-text&sr=1-2)
+
+
+    [HADOOP AND PYTHON FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654833&s=digital-text&sr=1-1)
+
+
+    [SELENIUM AND JAVA FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654994&s=digital-text&sr=1-1)
+
+
+    [ANDROID AND JAVA FOR BEGINNERS: 2 BOOKS IN 1 - Learn Coding Fast!](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627655061&s=digital-text&sr=1-1)
+
+
+    J KING
+
+
+    [PYTHON AND HADOOP BASICS](https://www.amazon.com/PYTHON-HADOOP-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08CQYCVZZ/ref=sr_1_1?dchild=1&keywords=PYTHON+AND+HADOOP+BASICS&qid=1627631650&s=digital-text&sr=1-1)
+
+
+    [PYTHON BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08FL5QJCF/ref=sr_1_10?dchild=1&keywords=PYTHON+BASICS+AND+PYTHON+CODING+EXAMPLES+J+KING&qid=1627633161&s=digital-text&sr=1-10)
+
+
+    [C# AND C++ CODING EXAMPLES](https://www.amazon.com/CODING-EXAMPLES-PROGRAMMING-BEGINNERS-ebook/dp/B08KNG5629/ref=sr_1_1?dchild=1&keywords=C%23+AND+C%2B%2B+CODING+EXAMPLES&qid=1627631323&s=digital-text&sr=1-1)
+
+
+    [PYTHON CODING AND C PROGRAMMING EXAMPLES](https://www.amazon.com/PYTHON-CODING-PROGRAMMING-EXAMPLES-BEGINNERS-ebook/dp/B08L27PLYH/ref=sr_1_3?dchild=1&keywords=PYTHON+CODING+AND+C+PROGRAMMING+EXAMPLES&qid=1627631395&s=digital-text&sr=1-3)
+
+
+    [C++ AND JAVA CODING EXAMPLES](https://www.amazon.com/JAVA-CODING-EXAMPLES-PROGRAMMING-BEGINNERS-ebook/dp/B08P3SVG4G/ref=sr_1_1?dchild=1&keywords=C%2B%2B+AND+JAVA+CODING+EXAMPLES&qid=1627631477&s=digital-text&sr=1-1)
+
+
+    [ANDROID BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/ANDROID-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B09B5DX2ZV/ref=sr_1_3?dchild=1&qid=1627629803&refinements=p_27%3AJ+KING&s=digital-text&sr=1-3&text=J+KING)
+
+
+    [C# BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/BASICS-PYTHON-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B0999PMF22/ref=sr_1_10?dchild=1&qid=1627629803&refinements=p_27%3AJ+KING&s=digital-text&sr=1-10&text=J+KING)
+
+
+    [ANGULAR AND PYTHON BASICS](https://www.amazon.com/ANGULAR-PYTHON-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08G8H59P4/ref=sr_1_1?dchild=1&keywords=ANGULAR+AND+PYTHON+BASICS+J+KING&qid=1627633307&s=digital-text&sr=1-1)
+
+
+    [PYTHON BASICS AND SCALA CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-SCALA-CODING-EXAMPLES-ebook/dp/B0995DJ1SZ/ref=sr_1_19?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-19&text=J+KING)
+
+
+    [JAVA BASICS AND PYTHON CODING EXAMPLES](https://www.amazon.com/JAVA-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B098LVH4GK/ref=sr_1_21?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-21&text=J+KING)
+
+
+    [PYTHON BASICS AND C# CODING EXAMPLES](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B098FMBC9Z/ref=sr_1_20?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-20&text=J+KING)
+
+
+    [ANDROID BASICS AND JAVA CODING EXAMPLES](https://www.amazon.com/ANDROID-BASICS-JAVA-CODING-EXAMPLES-ebook/dp/B098PKHZD3/ref=sr_1_24?dchild=1&qid=1627630555&refinements=p_27%3AJ+KING&s=digital-text&sr=1-24&text=J+KING)
+
+
+    [C# BASICS AND C# CODING EXAMPLES](https://www.amazon.com/BASICS-CODING-EXAMPLES-PROGRAMMING-QuickStart-ebook/dp/B08GZL6NW6/ref=sr_1_6?dchild=1&keywords=C%23+BASICS+AND+C%23+CODING+EXAMPLES&qid=1627631068&s=digital-text&sr=1-6)
+
+
+    [JAVASCRIPT AND HTML BASICS](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+
+    [HTML AND JAVASCRIPT CODING EXAMPLES](https://www.amazon.com/HTML-JAVASCRIPT-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08STNKT5M/ref=sr_1_1?dchild=1&keywords=HTML+AND+JAVASCRIPT+CODING+EXAMPLES&qid=1627631214&s=digital-text&sr=1-1)'
+  toc: []
+  trans: '
+
+
+    # [初学者 Django 与 Python：二本书合一 - 快速学习编程！](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS/ref=sr_1_1?dchild=1&keywords=DJANGO+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654258&s=digital-text&sr=1-1)
+
+
+    # [JavaScript 与 Dart 编程基础：适合零基础学者](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9/ref=sr_1_1?dchild=1&keywords=JAVASCRIPT+AND+DART+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654541&s=digital-text&sr=1-1)
+
+
+    # [初学者 TensorFlow 与 Python 编程基础：适合零基础学者](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+FOR+BEGINNERS+AND+PYTHON+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654724&s=digital-text&sr=1-2)
+
+
+    # [Rust 编程语言：适合初学者，快速学习编程！](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VRXQ2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653241&s=digital-text&sr=1-2)
+
+
+    # [初学者 Hadoop 与 Python：二本书合一 - 快速学习编程！](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654833&s=digital-text&sr=1-1)
+
+
+    # [初学者 Selenium 与 Java：二本书合一 - 快速学习编程！](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654994&s=digital-text&sr=1-1)
+
+
+    # [初学者 Android 与 Java：二本书合一 - 快速学习编程！](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627655061&s=digital-text&sr=1-1)
+
+
+    # [Python 与 Hadoop 基础](https://www.amazon.com/PYTHON-HADOOP-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08CVY/ref=sr_1_1?dchild=1)
+
+
+    # [HADOOP-BASICS-PYTHON-PROGRAMMING-J
+
+
+    # [Python 基础与编程示例](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08FL5Q/ref=sr_1_10?dchild=1)
+
+
+    # [C# 与 C++ 编程示例](https://www.amazon.com/C-AND-C-CODING-EXAMPLES-BEGINNERS-ebook/dp/B08KN56/ref=sr_1_1?dchild=1)
+
+
+    # [Python 编程与 C 语言示例](https://www.amazon.com/PYTHON-CODING-AND-C-PROGRAMMING-BEGINNERS-ebook/dp/B08PLYH/ref=sr_1_3?dchild=1)
+
+
+    # [C++ 与 Java 编程示例](https://www.amazon.com/CPP-JAVA-CODING-EXAMPLES-BEGINNERS-ebook/dp/B082WH5G/ref=sr_1_1?dchild=1)
+
+
+    # [Android 基础与 Python 编程示例](https://www.amazon.com/ANDROID-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B099PM2/ref=sr_1_3?dchild=1)
+
+
+    # [C# 基础与编程示例](https://www.amazon.com/CS-BASICS-CODING-EXAMPLES-PROGRAMMING-QuickStart-ebook/dp/B08GZLNW6/ref=sr_1_6?dchild=1)
+
+
+    # [Angular 与 Python 基础](https://www.amazon.com/ANGULAR-PYTHON-BASICS-QuickStart-Tutorial-ebook/dp/B08GH59/ref=sr_1_1?dchild=1)
+
+
+    # [Python 基础与 Scala 编程示例](https://www.amazon.com/PYTHON-BASICS-SCALA-CODING-EXAMPLES-ebook/dp/B095DJ1/ref=sr_1_19?dchild=1)
+
+
+    # [Java 基础与 Python 编程示例](https://www.amazon.com/JAVA-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B098LV4/ref=sr_1_21?dchild=1)
+
+
+    # [Python 基础与 C# 编程示例](https://www.amazon.com/PYTHON-BASICS-CS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B098FMB/ref=sr_1_20?dchild=1)
+
+
+    # [Android 基础与 Java 编程示例](https://www.amazon.com/ANDROID-BASICS-JAVA-CODING-EXAMPLES-ebook/dp/B098PKH/ref=sr_1_24?dchild=1)
+
+
+    '

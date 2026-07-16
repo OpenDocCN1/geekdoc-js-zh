@@ -1,0 +1,2910 @@
+- fmt: "\n![](image_rsrc21P.jpg)\n\n# NODE JS FOR BEGINNER AND MySQL\n\nIn This Book\
+    \ You Will Learn Explanation with Diagramme and Working Exercises with Successfull\
+    \ Execution of Exercises with Output Readymade Solution With Step By Step Explanation.\
+    \ AMIT K\n\n## Contents\n- Beginners Guide to Learn Node Js Programming Step by\
+    \ Step\n- Introduction\n- Chapter 1 : Introduction to NodeJs\n    - 1 What is\
+    \ NodeJs\n    - 2 Chrome & V8 Javascript Engine\n    - 3 NodeJS\n    - 4 NodeJs\
+    \ Javascript Library\n- Chapter 2 : Install Atom Editor\n    - 1 What is Atom\
+    \ software\n- Chapter 3 : Install NodeJS on Windows\n    - 1 Install NodeJS\n\
+    - Chapter 4 : What is NPM\n    - 1 What is NPM\n    - 2 Features of the NPM\n\
+    - Chapter 5 : NodeJS\n    - 1 Create a NodeJS project\n    - 2 Express\n    -\
+    \ 3 Create structure for project\n- Chapter 6 : Create a Simple HTTP Server with\
+    \ NodeJS\n    - 1 Create NodeJS HTTP Server\n- Chapter 7 : NodeJS Modules\n  \
+    \  - 1 What is NodeJS Module\n-- 2 Create your Module\n- Chapter 8 : Concept of\
+    \ Callback in NodeJS\n    - 1 What is Callback\n    - 2 NodeJS Callback\n- Chapter\
+    \ 9 : Understanding Event Loop in NodeJS\n    - 1 NodeJS Event Loop Overview\n\
+    \    - 2 Event Loop\n    - 3 Thread Pool\n- Chapter 10 : NodeJS EventEmitter\n\
+    \    - 1 NodeJS EventEmitter\n    - 2 Listener\n- Chapter 11 : Software Installation\n\
+    \    - 1 Introduction\n    - 2 Eclipse Installation\n    - 3 Jdk1.6 Installation\
+    \ And Configuring to Eclipse\n    - 4 Tomcat1.6 Installation And Configuring to\
+    \ Eclipse\n    - 5 MySql5.0 Installation\n    - 6 Eclipse Font Size Increase\n\
+    \n## Introduction\nLearning Node Js step by step.\nNode Js For Beginner : The\
+    \ Ultimade Guide for Intermediate Developer to Unleash the Power of Server Side\
+    \ Javascript\n\nUnlock the full potential of `Node.js` and revolutionize your\
+    \ web and server-side development skills with \"Mastering Node.js: The Ultimate\
+    \ Guide for Intermediate Developers to Unleash the Power of Server-Side JavaScript.\"\
+    \n\n`Node.js` has taken the world of web development by storm, thanks to its speed,\
+    \ scalability, and rich ecosystem. In this comprehensive ebook, we take you on\
+    \ a journey from intermediate to advanced `Node.js` developer, arming you with\
+    \ the knowledge and skills to tackle complex projects and build high-performance\
+    \ applications.\n\nDiscover the core concepts of `Node.js`, from asynchronous\
+    \ programming and event-driven architecture to managing dependencies with `npm`\
+    \ and `Yarn`. Dive into the world of web applications with `Express.js` and explore\
+    \ specialized frameworks for creating RESTful APIs, whether it's building a single-page\
+    \ application or a high-traffic service.\n\nLearn the art of real-time communication\
+    \ with `WebSockets`, perfect for crafting interactive applications and delivering\
+    \ data updates in real-time. Explore database integration with `MySQL` databases.\n\
+    \n## Chapter 1 : Introduction to NodeJs\n\n### What is NodeJs\nBefore directly\
+    \ answering the question \"What is NodeJS?\", I am going to introduce you about\
+    \ the birth context of the `NodeJS`, which helps you understand the matter more\
+    \ easily.\n\n### Chrome & V8 Javascript Engine\nEveryone knows that `Chrome` is\
+    \ a famous and free Google browser with the first version released in December\
+    \ 2008, of which `V8 JavaScript Engine` is a program written on `C++`, open source\
+    \ code, used in the Google `Chrome` to parse and execute Javascript code with\
+    \ high performance. It parses Javascript syntax and interprets it into computer\
+    \ code for execution.\n\n| ![](image_rsrc21R.jpg) |\n\nNote : The Browser other\
+    \ than the `Chrome` may use another Javascript Engine.\n\n| Browser | Javascript\
+    \ Engine |\n| :--- | :--- |\n| Chrome | V8 JS Engine |\n| Firefox | SpiderMonkey\
+    \ |\n| IE, Edge | Chakra |\n\n### NodeJS\nYou can use \"thesyntax of Javascript\"\
+    \ to write code snippets to connect to a database. The `V8 JS Engine` will parse\
+    \ your Javascript code and interprets it into computer code for execution. Of\
+    \ course, such code snippet is not for execution at the client side. it is used\
+    \ at the server side. Thus, an ability is opened, you can use \"theJavascript\
+    \ syntax\" to write server-side web applications instead of using `PHP` or `Java`.\n\
+    \nJavascript code\n```javascript\nconst mysql = require('mysql');const connection\
+    \ = mysql.createConnection({host: 'localhost',user: 'user',password: 'password',database:\
+    \ 'database name'});connection.connect((err) => {if (err) throw err;console.log('Connected!');});\n\
+    ```\nand `NodeJS` was born. The `V8 Javascript Engine` is one of components of\
+    \ the `NodeJS`. Below is the architecture image of the `NodeJS`:\n\n### NodeJs\
+    \ Javascript Library\n| ![](image_rsrc21S.jpg) |\n\nIn short, the `NodeJS` may\
+    \ replace `PHP`, `Java` to build Server-side web applications. Instead of writing\
+    \ code by `PHP`, `Java` you use the syntax of Javascript.\n\n### So, What is NodeJS\n\
+    The `NodeJS` is JavaScript Runtime Environment outside browser. The `NodeJS` also\
+    \ consists of other components and libraries so that it may operate like a Web\
+    \ Application Server.\n\nImportant note: the `NodeJS` is not the extended language\
+    \ of Javascript.\n\n## Chapter 2 : Install Atom Editor\n\n### What is Atom software\n\
+    Atom is a text (and source code) editor free of charge. The open source code supports\
+    \ operating systems such as `Linux`, `Mac OS`, `Windows`. It supports plugins\
+    \ to program with the `NodeJS` and embed `Git-Control`, which is developed by\
+    \ `GitHub`.\n\n` is evaluated as text editing (and source code) software with\
+    \ a modern, easy-to-use interface and outstanding features compared to similar\
+    \ pieces of software.\n\nThe languages are supported by the `Atom`:\nC/C++, C#,\
+    \ Clojure, CSS, CoffeeScript, `GitHub Flavored Markdown`, Go, Git, HTML, JavaScript,\
+    \ Java, JSON, Julia, Less, Make, Mustache, Objective-C, PHP, Perl, Property List\
+    \ (Apple), Python, Ruby on Rails, Sass, Shell script, Scala, SQL, TOML, XML, YAML\n\
+    \n| ![](image_rsrc21T.jpg) |\n\n### Download Atom\nTo download the `Atom`, let's\
+    \ visit its home page. it is noted that the `Atom` supports all kinds of operating\
+    \ systems. If you use `Windows`, ensure that your operating system is `Windows\
+    \ 7` 64bit or later.\n\n* https://atom.io/\n\n| ![](image_rsrc21U.jpg) |\n\nAfter\
+    \ downloading successfully, you have a file.\n\n| ![](image_rsrc21V.jpg) |\n\n\
+    OK, after finishing downloading and installing the `Atom`, this is the interface\
+    \ image of the `Atom`:\n\n| ![](image_rsrc21W.jpg) |\n\n## Chapter 3 : Install\
+    \ NodeJS on Windows\n\n### Download NodeJS\nTo download `NodeJS`, you need to\
+    \ access the following address:\n\n* https://nodejs.org/download/\n\n| ![](image_rsrc21X.jpg)\
+    \ |\n\nAfter downloading successfully, you have a file.\n\n| ![](image_rsrc21Y.jpg)\
+    \ |\n\n### Install NodeJS\nThe installation of `NodeJS` on `Windows` is very simple.\
+    \ Accept default options and press \"Next .. Next\" until final step.\n\n| ![](image_rsrc21Z.jpg)\
+    \ |\n\n| ![](image_rsrc220.jpg) |\n\n| ![](image_rsrc221.jpg) |\n\nBy default,\
+    \ `NPM` software is also installed in your system. This is a piece of software\
+    \ that manages Javascript libraries.\n\n| ![](image_rsrc222.jpg) |\n\n| ![](image_rsrc223.jpg)\
+    \ |\n\n| ![](image_rsrc224.jpg) |\n\n### Check and configure\nOK, in the above\
+    \ step, we have downloaded and installed the `NodeJS` successfully. Now, you need\
+    \ to check installation results and configure the `NodeJS`.\n\nOpen the `CMD`\
+    \ window and execute the following command to inspect the version of the `NodeJS`\
+    \ and the `NPM`:\n\n```bash\nnode -v\nnpm -v\n```\n\n| ![](image_rsrc225.jpg)\
+    \ |\n\n## Chapter 4 : What is NPM\n\n### What is NPM\n`NPM` stands for Node Package\
+    \ Manager, which is a (program) tool managing Javascript programming libraries\
+    \ for `Node.js`. This tool is actually necessary for the open source world. In\
+    \ the Javascript community, developers share hundreds of thousands of code snippets\
+    \ that help new projects avoid rewriting basic components, programming libraries\
+    \ or even frameworks. Each of these code snippets may depend on many other open\
+    \ source codes. Fortunately, library management tools are born.\n\n`NPM` is basically\
+    \ similar to `Maven`. The difference here is that the `NPM` manages Javascript\
+    \ libraries while the `Maven` manages Java libraries.\n"
+  raw: '
+
+
+    ![](image_rsrc21P.jpg)
+
+
+    NODE JS
+
+
+    FOR BEGINNER
+
+
+    AND
+
+
+    MySQL
+
+
+    In This Book You Will Learn Explanation with Diagramme and
+
+
+    Working Exercises with Successfull Execution of Exercises with Output
+
+
+    Readymade Solution With Step By Step Explanation
+
+
+    AMIT K
+
+
+    Contents
+
+
+    Beginners Guide to Learn Node Js Programming Step by Step
+
+
+    Introduction
+
+
+    Chapter 1 : Introduction to NodeJs
+
+
+    1  What is NodeJs
+
+
+    2  Chrome & V8 Javascript Engine
+
+
+    3  NodeJS
+
+
+    4  NodeJs Javascript Library
+
+
+    Chapter 2 : Install Atom Editor
+
+
+    1  What is Atom software
+
+
+    Chapter 3 : Install NodeJS on Windows
+
+
+    1  Install NodeJS
+
+
+    Chapter 4 : What is NPM
+
+
+    1  What is NPM
+
+
+    2  Features of the NPM
+
+
+    Chapter 5 : NodeJS
+
+
+    1  Create a NodeJS project
+
+
+    2  Express
+
+
+    3  Create structure for project
+
+
+    Chapter 6 : Create a Simple HTTP Server with NodeJS
+
+
+    1  Create NodeJS HTTP Server
+
+
+    Chapter 7 : NodeJS Modules
+
+
+    1  What is NodeJS Module
+
+
+    2  Create your Module
+
+
+    Chapter 8 : Concept of Callback in NodeJS
+
+
+    1  What is Callback
+
+
+    2  NodeJS Callback
+
+
+    Chapter 9 : Understanding Event Loop in NodeJS
+
+
+    1  NodeJS Event Loop Overview
+
+
+    2  Event Loop
+
+
+    3  Thread Pool
+
+
+    Chapter 10 : NodeJS EventEmitter
+
+
+    1  NodeJS EventEmitter
+
+
+    2  Listener
+
+
+    Chapter 11 : Software  Installation
+
+
+    1  Introduction
+
+
+    2  Eclipse Installation
+
+
+    3  Jdk1.6 Installation And Configuring to Eclipse
+
+
+    4  Tomcat1.6 Installation And Configuring to Eclipse
+
+
+    5  MySql5.0 Installation
+
+
+    6  Eclipse Font Size Increase
+
+
+    Introduction
+
+
+    Learning Node Js step by step.
+
+
+    Node Js For Beginner : The Ultimade Guide for Intermediate Developer to Unleash
+    the Power of Server Side Javascript
+
+
+    Unlock the full potential of Node.js and revolutionize your web and server-side
+    development skills with "Mastering Node.js: The Ultimate Guide for Intermediate
+    Developers to Unleash the Power of Server-Side JavaScript."
+
+
+    Node.js has taken the world of web development by storm, thanks to its speed,
+    scalability, and rich ecosystem. In this comprehensive ebook, we take you on a
+    journey from intermediate to advanced Node.js developer, arming you with the knowledge
+    and skills to tackle complex projects and build high-performance applications.
+
+
+    Discover the core concepts of Node.js, from asynchronous programming and event-driven
+    architecture to managing dependencies with npm and Yarn. Dive into the world of
+    web applications with Express.js and explore specialized frameworks for creating
+    RESTful APIs, whether it''s building a single-page application or a high-traffic
+    service.
+
+
+    Learn the art of real-time communication with WebSockets, perfect for crafting
+    interactive applications and delivering data updates in real-time. Explore database
+    integration with MySQL databases.
+
+
+    Chapter 1 :
+
+
+    Introduction to NodeJs
+
+
+    What is NodeJs
+
+
+    Before directly answering the question "What is NodeJS?", I am going to introduce
+    you about the birth context of the NodeJS, which helps you understand the matter
+    more easily.
+
+
+    Chrome & V8 Javascript Engine
+
+
+    Everyone knows that Chrome is a famous and free Google browser with the first
+    version released in December 2008, of which V8 JavaScript Engine is a program
+    written on C++, open source code, used in the Google Chrome to parse and execute
+    Javascript code with high performance. It parses Javascript syntax and interprets
+    it into computer code for execution.
+
+
+    | ![](image_rsrc21R.jpg) |
+
+
+    Note : The Browser other than the Chrome may use another Javascript Engine.
+
+
+    | Browser | Javascript Engine |
+
+
+    | Chrome | V8 JS Engine |
+
+
+    | Firefox | SpiderMonkey |
+
+
+    | IE, Edge | Chakra |
+
+
+    NodeJS
+
+
+    You can use "thesyntax of Javascript" to write code snippets to connect to a database.
+    The V8 JS Engine will parse your Javascript code and interprets it into computer
+    code for execution. Of course, such code snippet is not for execution at the client
+    side. it is used at the server side. Thus, an ability is opened, you can use "theJavascript
+    syntax" to write server-side web applications instead of using PHP or Java.
+
+
+    Javascript code
+
+
+    | const mysql = require(''mysql'');const connection = mysql.createConnection({host:
+    ''localhost'',user: ''user'',password: ''password'',database: ''database name''});connection.connect((err)
+    => {if (err) throw err;console.log(''Connected!'');}); |
+
+
+    and NodeJS was born. The V8 Javascript Engine is one of components of the NodeJS.
+    Below is the architecture image of the NodeJS:
+
+
+    NodeJs Javascript Library
+
+
+    | ![](image_rsrc21S.jpg) |
+
+
+    In short, the NodeJS may replace PHP, Java to build Server-side web applications.
+    Instead of writing code by PHP, Java you use the syntax of Javascript.
+
+
+    So, What is NodeJS
+
+
+    The NodeJS is JavaScript Runtime Environment outside browser. The NodeJS also
+    consists of other components and libraries so that it may operate like a Web Application
+    Server.
+
+
+    Important note: The NodeJS is not the extended language of Javascript.
+
+
+    Chapter 2 :
+
+
+    Install Atom Editor
+
+
+    What is Atom software
+
+
+    Atom is a text (and source code) editor free of charge. The open source code supports
+    operating systems such as Linux, Mac OS, Windows. It supports plugins to program
+    with the NodeJS and embed Git-Control, which is developed by GitHub.
+
+
+    Atom is evaluated as text editing (and source code) software with a modern, easy-to-use
+    interface and outstanding features compared to similar pieces of software.
+
+
+    The languages are supported by the Atom:
+
+
+    C/C++, C#, Clojure, CSS, CoffeeScript, GitHub Flavored Markdown, Go, Git, HTML,
+    JavaScript, Java, JSON, Julia, Less, Make, Mustache, Objective-C, PHP, Perl, Property
+    List (Apple), Python, Ruby on Rails, Ruby, Sass, Shell script, Scala, SQL, TOML,
+    XML, YAML
+
+
+    | ![](image_rsrc21T.jpg) |
+
+
+    Download Atom
+
+
+    To download the Atom, let''s visit its home page at the following address. it
+    is noted that the Atom supports all of three kinds of operating systems: Windows,
+    Mac OS, and Linux. If you use Windows, ensure that your operating system is Windows
+    7 64bit or later.
+
+
+    *   https://atom.io/
+
+
+    | ![](image_rsrc21U.jpg) |
+
+
+    After downloading successfully, you have a file with capacity of approximately
+    150MB.
+
+
+    | ![](image_rsrc21V.jpg) |
+
+
+    OK, after finishing downloading and installing the Atom, this is the interface
+    image of the Atom:
+
+
+    | ![](image_rsrc21W.jpg) |
+
+
+    Chapter 3 :
+
+
+    Install NodeJS on Windows
+
+
+    Download NodeJS
+
+
+    To download NodeJS, you need to access to the following address:
+
+
+    *   https://nodejs.org/en/download/
+
+
+    | ![](image_rsrc21X.jpg) |
+
+
+    After downloading successfully, you have a file.
+
+
+    | ![](image_rsrc21Y.jpg) |
+
+
+    Install NodeJS
+
+
+    The installation of NodeJS on Windows is very simple. Accept default options and
+    press "Next .. Next" until final step.
+
+
+    | ![](image_rsrc21Z.jpg) |
+
+
+    | ![](image_rsrc220.jpg) |
+
+
+    | ![](image_rsrc221.jpg) |
+
+
+    By default, NPM software is also installed in your system. This is a piece of
+    software that manages Javascript libraries.
+
+
+    | ![](image_rsrc222.jpg) |
+
+
+    | ![](image_rsrc223.jpg) |
+
+
+    | ![](image_rsrc224.jpg) |
+
+
+    Check and configure
+
+
+    OK, in the above step, we have downloaded and installed the NodeJS successfully.
+    Now, you need to check installation results and configure the NodeJS.
+
+
+    Open the CMD window and execute the following command to inspect the version of
+    the NodeJS and the NPM:
+
+
+    | node -vnpm -v |
+
+
+    | ![](image_rsrc225.jpg) |
+
+
+    Chapter 4 :
+
+
+    What is NPM
+
+
+    What is NPM
+
+
+    NPM stands for Node Package Manager, which is a (program) tool managing Javascript
+    programming libraries for Node.js. This tool is actually necessary for the open
+    source world. In the Javascript community, developers share hundreds of thousands
+    of code snippets that help new projects avoid rewriting basic components, programming
+    libraries or even frameworks. Each of these code snippets may depend on many other
+    open source codes. Fortunately, library management tools are born. If not, it
+    will take a lot of effort to manage these libraries.
+
+
+    NPM is basically similar to Maven. The difference here is that the NPM manages
+    Javascript libraries while the Maven manages Java libraries.'
+  toc: []
+  trans: "\n\n![](img/image_rsrc21P.jpg)\n\n# 初学者 Node JS 与 MySQL\n\n在本书中，你将学习带有图解的说明和实操练习，通过成功执行练习获得带有输出的现成解决方案，以及逐步解释。AMIT\
+    \ K\n\n## 目录\n- 循步学习 Node Js 编程初学者指南\n- 序言\n- 第 1 章：NodeJs 简介\n    - 1 什么是 NodeJs\n\
+    \    - 2 Chrome 与 V8 Javascript 引擎\n    - 3 NodeJS\n    - 4 NodeJs Javascript\
+    \ 库\n- 第 2 章：安装 Atom 编辑器\n    - 1 什么是 Atom 软件\n- 第 3 章：在 Windows 上安装 NodeJS\n\
+    \    - 1 安装 NodeJS\n- 第 4 章：什么是 NPM\n    - 1 什么是 NPM\n    - 2 NPM 的特性\n- 第 5 章：NodeJS\n\
+    \    - 1 创建一个 NodeJS 项目\n    - 2 Express\n    - 3 创建项目结构\n- 第 6 章：使用 NodeJS 创建简单的\
+    \ HTTP 服务器\n    - 1 创建 NodeJS HTTP 服务器\n- 第 7 章：NodeJS 模块\n    - 1 什么是 NodeJS\
+    \ 模块\n-- 2 创建你的模块\n- 第 8 章：NodeJS 中的回调概念\n    - 1 什么是回调\n    - 2 NodeJS 回调\n-\
+    \ 第 9 章：理解 NodeJS 中的事件循环\n    - 1 NodeJS 事件循环概述\n    - 2 事件循环\n    - 3 线程池\n-\
+    \ 第 10 章：NodeJS EventEmitter\n    - 1 NodeJS EventEmitter\n    - 2 监听器\n- 第 11\
+    \ 章：软件安装\n    - 1 简介\n    - 2 Eclipse 安装\n    - 3 Jdk1.6 安装并配置到 Eclipse\n    -\
+    \ 4 Tomcat1.6 安装并配置到 Eclipse\n    - 5 MySql 5.0 安装\n    - 6 增大 Eclipse 字体大小\n\n\
+    ## 序言\n循步学习 Node Js。\n初学者 Node Js：中级开发者释放服务器端 Javascript 力的终极指南\n\n通过《精通 Node.js：中级开发者释放服务器端\
+    \ JavaScript 力的终极指南》，解锁 `Node.js` 的全部潜力，并彻底改变你的 Web 和服务器端开发技能。\n\n`Node.js` 因其速度、可扩展性和丰富的生态系统席卷了\
+    \ Web 开发领域。在这本全面的电子书中，我们将带你开启一段从中级到高级 `Node.js` 开发者的旅程，为你提供应对复杂项目和构建高性能应用程序的知识和技能。\n\
+    \n探索 `Node.js` 的核心概念，从异步编程、事件驱动架构到使用 `npm` 和 `Yarn` 管理依赖。通过 `Express.js` 深入 Web\
+    \ 应用的世界，并探索用于创建 RESTful API 的专用框架，无论是构建单页应用程序还是高流量服务。\n\n学习使用 `WebSockets` 进行实时通信的艺术，它非常适合构建交互式应用程序并提供实时数据更新。探索与\
+    \ `MySQL` 数据库的集成。\n\n## 第 1 章：NodeJs 简介\n\n### 什么是 NodeJs\n在直接回答“什么是 NodeJS?”之前，我将先向你介绍\
+    \ `NodeJS` 的诞生背景，这有助于你更容易理解相关问题。\n\n### Chrome 与 V8 Javascript 引擎\n人知道 `Chrome`\
+    \ 是一个著名的免费 Google 浏览器，第一个版本于 2008 年 12 月发布，其中 `V8 JavaScript Engine` 是一个用 `C++`\
+    \ 编写的程序，代码开源，用于 Google `Chrome` 以高性能地解析和执行 Javascript 代码。它解析 Javascript 语法并将其解释为计算机代码以执行。\n\
+    \n| ![](img/image_rsrc21R.jpg) |\n\n注意：除 `Chrome` 之外的浏览器可能使用其他的 Javascript 引擎。\n\
+    \n| 浏览器 | Javascript 引擎 |\n| :--- | :--- |\n| Chrome | V8 JS Engine |\n| Firefox\
+    \ | SpiderMonkey |\n| IE, Edge | Chakra |\n\n### NodeJS\n你可以使用“Javascript 语法”编写代码片段来连接数据库。`V8\
+    \ JS Engine` 会解析你的 Javascript 代码并将其解释为计算机代码以执行。当然，这种代码片段不是用于客户端，而是用于服务器端的。因此，一种能力被开启了，你可以使用“Javascript\
+    \ 语法”编写服务器端 Web 应用，而不是使用 `PHP` 或 `Java`。\n\nJavascript 代码\n```javascript\nconst\
+    \ mysql = require('mysql');const connection = mysql.createConnection({host: 'localhost',user:\
+    \ 'user',password: 'password',database: 'database name'});connection.connect((err)\
+    \ => {if (err) throw err;console.log('Connected!');});\n```\n`NodeJS` 诞生了。`V8\
+    \ Javascript Engine` 是 `NodeJS` 的组件之一。下面是 `NodeJS` 的架构图：\n\n### NodeJs Javascript\
+    \ 库\n| ![](img/image_rsrc21S.jpg) |\n\n简而言之，`NodeJS` 可以替换 `PHP`、`Java` 来构建服务器端\
+    \ Web 应用。你不再通过 `PHP`、`Java` 编写代码，而是使用 Javascript 语法。\n\n### 所以，什么是 NodeJS\n`NodeJS`\
+    \ 是浏览器外的 JavaScript 运行时环境。`NodeJS` 还包含其他组件和库，因此它可以像 Web 应用服务器一样运行。\n\n重要提示：`NodeJS`\
+    \ 不是 Javascript 的扩展语言。\n\n## 第 2 章：安装 Atom 编辑器\n\n### 什么是 Atom 软件\nAtom 是一个免费的文本（及源代码）编辑器。其开源代码支持\
+    \ `Linux`、`Mac OS`、`Windows` 等操作系统。它支持通过 `NodeJS` 插件并嵌入由 `GitHub` 开发的 `Git-Control`。\n\
+    \n`Atom` 被评估为文本编辑（及源代码）软件，与类似的软件相比，它具有现代、易于使用的界面和卓越的特性。\n\n`Atom` 支持以下语言：\nC/C++,\
+    \ C#, Clojure, CSS, CoffeeScript, `GitHub Flavored Markdown`, Go, Git, HTML, JavaScript,\
+    \ Java, JSON, Julia, Less, Make, Mustache, Objective-C, PHP, Perl, Property List\
+    \ (Apple), Python, Ruby on Rails, Sass, Shell script, Scala, SQL, TOML, XML, YAML\n\
+    \n| ![](img/image_rsrc21T.jpg) |\n\n### 下载 Atom\n要下载 `Atom`，请访问其主页。请注意，`Atom`\
+    \ 支持各种操作系统。如果你使用 `Windows`，请确保你的操作系统是 `Windows 7` 64 位或更高版本。\n\n* https://atom.io/\n\
+    \n| ![](img/image_rsrc21U.jpg) |\n\n成功下载后，你将获得一个文件。\n\n| ![](img/image_rsrc21V.jpg)\
+    \ |\n\n好的，在完成下载并安装 `Atom` 后，这是 `Atom` 的界面：\n\n| ![](img/image_rsrc21W.jpg) |\n\
+    \n## 第 3 章：在 Windows 上安装 NodeJS\n\n### 下载 NodeJS\n要下载 `NodeJS`，你需要访问以下地址：\n\n\
+    * https://nodejs.org/download/\n\n| ![](img/image_rsrc21X.jpg) |\n\n成功下载后，你将获得一个文件。\n\
+    \n| ![](img/image_rsrc21Y.jpg) |\n\n### 安装 NodeJS\n在 `Windows` 上安装 `NodeJS` 非常简单。接受默认选项并一直“Next”直到最后一步。\n\
+    \n| ![](img/image_rsrc21Z.jpg) |\n\n| ![](img/image_rsrc220.jpg) |\n\n| ![](img/image_rsrc221.jpg)\
+    \ |\n\n默认情况下，`NPM` 软件也安装在你的系统中。这是一个管理 Javascript 库的软件。\n\n| ![](img/image_rsrc222.jpg)\
+    \ |\n\n| ![](img/image_rsrc223.jpg) |\n\n| ![](img/image_rsrc224.jpg) |\n\n###\
+    \ 检查并配置\n好的，在上面的步骤中，我们成功下载并安装了 `NodeJS`。现在，你需要检查安装结果并配置 `NodeJS`。\n\n打开 `CMD`\
+    \ 窗口并执行以下命令来检查 `NodeJS` 和 `NPM` 的版本：\n\n```bash\nnode -v\nnpm -v\n```\n\n| ![](img/image_rsrc225.jpg)\
+    \ |\n\n## 第 4 章：什么是 NPM\n\n### 什么是 NPM\n`NPM` 代表 Node Package Manager（Node 包管理器），是一个用于\
+    \ `Node.js` Javascript 编程库的（程序）工具。这个工具对于开源世界实际上是必要的。在 Javascript 社区中，开发者共享成千上万的代码片段，帮助新项目避免重写基础组件、编程库甚至框架。每个代码片段可能依赖许多许多开源代码。\n\
+    \n`NPM` 基本上与 `Maven` 相似。区别在于 `NPM` 管理 Javascript 库，而 `Maven` 管理 Java 库。\n\n"
+- fmt: '
+
+    A piece of software similar to the NPM is `Yarn`, developed by Facebook, with
+    outstanding features is emerging as an alternative to the NPM. In the same situation,
+    Java library management software is `Gradle`, with its outstanding features, which
+    is gradually replacing Maven.
+
+
+    ## Features of the NPM
+
+
+    To be able to run NPM software, your system needs installing `NodeJS`. The NPM
+    software is built in `NodeJS` installer, therefore, when you have finished installing
+    the `NodeJS`, you will have both of them.
+
+
+    After the NPM has been installed on your computer, you can examine its version:
+
+
+    ```
+
+    npm -v
+
+    ```
+
+
+    ![](image_rsrc226.jpg)
+
+
+    Because the NPM is a piece of software installed on your computer, you can use
+    it to install Javascript libraries from the Internet. To install a library, it
+    is necessary to open only `CMD` window and execute the command as below:
+
+
+    ```
+
+    npm install <package name>
+
+    ```
+
+
+    ```bash
+
+    npm install vue
+
+    ```
+
+
+    And you can use `Vue.js` in your Javascript code:
+
+
+    ```javascript
+
+    var Vue = require(''vue'');
+
+    ```
+
+
+    # Chapter 5 : NodeJS
+
+
+    ### Create a NodeJS project
+
+
+    First of all, you need to create a directory named `MyProject`, or a name that
+    you want.
+
+
+    ![](image_rsrc227.jpg)
+
+
+    Open `CMD` and `CD` windows to the directory just created by you. After that run
+    the following command so that NPM creates project for you.
+
+
+    ```bash
+
+    npm init
+
+    ```
+
+
+    ![](image_rsrc228.jpg)
+
+
+    Accept default options and press "Enter" until completion.
+
+
+    ![](image_rsrc229.jpg)
+
+
+    A file with the name of `package.json` has been created on your project.
+
+
+    ![](image_rsrc22A.jpg)
+
+
+    There are some library packages necessary for your project, and you need to install
+    it with the support of NPM:
+
+
+    #### Express
+
+    `Express.js` (or simply `Express`) means a Web Application Framework for the `NodeJS`.
+    It provides a set of strong features to web and mobile applications.
+
+
+    #### Ejs
+
+    `EJS` stands for "Embedded JavaScript templating", which is a library, used to
+    parse `ejs` files and create HTML to return to client (browser).
+
+
+    ```bash
+
+    npm install express ejs
+
+    ```
+
+
+    ![](image_rsrc22B.jpg)
+
+
+    After the installation finishes, you can see changes on your project:
+
+
+    ![](image_rsrc22C.jpg)
+
+
+    ### Create structure for project
+
+
+    In the above step, we have created a project by command. Now we will open this
+    project by a more visual tool. Here, I use `Atom` editor (The software which I
+    advise you to install in the above step).
+
+
+    *   `File/Add Project Folder`
+
+
+    ![](image_rsrc22D.jpg)
+
+
+    OK, Project is opened on the `Atom`:
+
+
+    ![](image_rsrc22E.jpg)
+
+
+    On the project, create 2 sub-directories: `public` & `views`:
+
+
+    *   `public`: a directory containing all files which users can access, for example
+    image, video,..
+
+    *   `views`: Your website will have a lot of pages, for example, home page, login
+    page, ...This directory is the place containg all your pages.
+
+
+    ![](image_rsrc22F.jpg)
+
+
+    In `views` directory, we create 2 files:
+
+
+    *   `homePage.ejs`
+
+    *   `testPage.ejs`
+
+
+    ![](image_rsrc22G.jpg)
+
+
+    **homePage.ejs**
+
+    ```html
+
+    <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Home</title></head><body><h1>This
+    is Home Page</h1></body></html>
+
+    ```
+
+
+    **testPage.ejs**
+
+    ```html
+
+    <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Test</title></head><body><h1>This
+    is Test Page</h1></body></html>
+
+    ```
+
+
+    Next, create a file named `index.js`, and enter contents for this file. This is
+    configuration file for your project:
+
+
+    ![](image_rsrc22H.jpg)
+
+
+    **index.js**
+
+    ```javascript
+
+    var express = require("express");
+
+    var app = express();
+
+    app.use(express.static("public"));
+
+    app.set("view engine", "ejs");
+
+    app.set("views", "./views");
+
+    app.listen(3000);
+
+    app.get("/", function(request, response)  {response.render("homePage");});
+
+    app.get("/test", function(request, response)  {response.render("testPage");});
+
+    ```
+
+
+    OK, Now, it is time to explain the contents of the `index.js` above file.
+
+
+    | Code | Description |
+
+    | :--- | :--- |
+
+    | `var express = require("express");` | `ExpressJS` means a Web Application Framework.This
+    code line says that you want to use it. |
+
+    | `var app = express();` | Create an `Express` object. |
+
+    | `app.use(express.static("public"));` | This code line tells Application Server
+    that you want to use `public` directory to contain static data, users can access
+    the files in this directory. |
+
+    | `app.set("view engine", "ejs");` | This code line tells the Application Server
+    that you want to use `EJS` library. It is a machinery to handle your page. The
+    `EJS` will create HTML to return to user''s browser. |
+
+    | `app.set("views", "./views");` | This code line shows the Application Server
+    the path to the directory containing your pages |
+
+    | `app.listen(3000);` | Your application will listen on port 3000 when it is deployed
+    |
+
+    | `app.get("/test", function(req, res) { ...});` | Define the path to access to
+    a page. |
+
+
+    ### Run Application Server
+
+
+    Open the `CMD`, and `CD` window to go to the directory of your project.
+
+
+    ```bash
+
+    node index.js
+
+    ```
+
+
+    ![](image_rsrc22I.jpg)
+
+
+    ![](image_rsrc22J.jpg)
+
+
+    Note: Close the `CMD` window because the is is running......22src:3000. You can
+    check it by the following link:
+
+
+    *   `http://localhost:3000`
+
+
+    ![](image_rsrc22K.jpg)
+
+
+    ![](image_rsrc22M.jpg)
+
+
+    # Chapter 6 : Create a Simple HTTP Server with NodeJS
+
+
+    The objective of post
+
+
+    In this post, I am going to show you how to create a very simple HTTP Server with
+    NodeJS. And can access static data as as,,,,,,,,:::``0````srcsrcsrc220.0`
+
+
+    ![](image_rsrc22M.jpg)
+
+
+    The question is why do you need a HTTP only to access static sources. If you want
+    to learn `ReactJS` you will need an `HTTP`. Although `ReactJS` is just a Javascript
+    library, and HTML files can be run directly in browser. However, browser prevents
+    the operations of the local files. It requires the Javascript file to come from
+    one of:
+
+
+    `Failed to load file:///E:/webexamples/reactjs/person.jsx:Cross origin requests
+    are only supported for protocol schemes: http, data, chrome-extension, https.`
+
+
+    ![](image_rsrc22R.jpg)
+
+
+    ### Create NodeJS HTTP Server
+
+
+    Create an empty directory:
+
+
+    ![](image_rsrc22S.jpg)
+
+
+    Open the `CMD` window, and `CD` to the folder you created.
+
+
+    ![](image_rsrc22T.jpg)
+
+
+    Run the following command to install `http-server`:
+
+
+    ```bash
+
+    npm install -g http-server
+
+    ```
+
+
+    ![](image_rsrc22U.jpg)
+
+
+    Start `HTTP-Server`:
+
+
+    ```bash
+
+    http-server -c-1
+
+    ```
+
+
+    ![](image_rsrc22V.jpg)
+
+
+    Your HTTP Server has been started.it is listening at port 8080. You can check
+    it by visiting the following link:
+
+
+    *   `http://localhost:8080/`
+
+
+    ![](image_rsrc22W.jpg)
+
+
+    Create a HTML file in that directory, and you can access it via HTTP:
+
+
+    ![](image_rsrc22X.jpg)
+
+
+    ![](image_rsrc22Y.jpg)
+
+
+    # Chapter 7 : NodeJS Modules
+
+
+    ### What is NodeJS Module
+
+
+    Speaking simply, NodeJS Module is a Javascript library. It is a set of functions,
+    objects and variables, which you can put into your applications to use. Using
+    Module helps simplify writing code and manage it in your application. Normally,
+    each module will be written in a separate file.
+
+
+    The NodeJS builds in quite many Modules. It has standard libraries for you to
+    develop applications. Below is the list:
+
+
+    | Module | Description |
+
+    | :--- | :--- |
+
+    | `assert` | Provides a set of assertion tests |
+
+    | `buffer` | To handle binary data |
+
+    | `child_process` | To run a child process |
+
+    | `cluster` | To split a single Node process into multiple processes |
+
+    | `crypto` | To handle OpenSSL cryptographic functions |
+
+    '
+  raw: 'A piece of software similar to the NPM is Yarn, developed by Facebook, with
+    outstanding features is emerging as an alternative to the NPM. In the same situation,
+    Java library management software is Gradle, with its outstanding features, which
+    is gradually replacing Maven.
+
+
+    Features of the NPM
+
+
+    To be able to run NPM software, your system needs installing NodeJS. The NPM software
+    is built in NodeJS installer, therefore, when you have finished installing the
+    NodeJS, you will have both of them.
+
+
+    After the NPM has been installed on your computer, you can examine its version:
+
+
+    | npm –v |
+
+
+    | ![](image_rsrc226.jpg) |
+
+
+    Because the NPM is a piece of software installed on your computer, you can use
+    it to install Javascript libraries from the Internet. To install a library, it
+    is necessary to open only CMD window and execute the command as below:
+
+
+    | npm install <package name> |
+
+
+    | npm install vue |
+
+
+    And you can use Vue.js in your Javascript code:
+
+
+    javascript
+
+
+    | var Vue = require(''vue''); |
+
+
+    Chapter 5 :
+
+
+    NodeJS
+
+
+    Create a NodeJS project
+
+
+    First of all, you need to create a directory named MyProject, or a name that you
+    want.
+
+
+    | ![](image_rsrc227.jpg) |
+
+
+    Open CMD and CD windows to the directory just created by you. After that run the
+    following command so that NPM creates project for you.
+
+
+    | npm init |
+
+
+    | ![](image_rsrc228.jpg) |
+
+
+    Accept default options and press "Enter" until completion.
+
+
+    | ![](image_rsrc229.jpg) |
+
+
+    A file with the name of package.json has been created on your project.
+
+
+    | ![](image_rsrc22A.jpg) |
+
+
+    There are some library packages necessary for your project, and you need to install
+    it with the support of NPM:
+
+
+    Express
+
+
+    Express.js (or simply Express) means a Web Application Framework for the NodeJS.
+    It provides a set of strong features to web and mobile applications.
+
+
+    Ejs
+
+
+    EJS stands for "Embedded JavaScript templating", which is a library, used to parse
+    ejs files and create HTML to return to client (browser).
+
+
+    | npm install express ejs |
+
+
+    | ![](image_rsrc22B.jpg) |
+
+
+    After the installation finishes, you can see changes on your project:
+
+
+    | ![](image_rsrc22C.jpg) |
+
+
+    Create structure for project
+
+
+    In the above step, we have created a project by command. Now we will open this
+    project by a more visual tool. Here, I use Atom editor (The software which I advise
+    you to install in the above step).
+
+
+    *   File/Add Project Folder
+
+
+    | ![](image_rsrc22D.jpg) |
+
+
+    OK, Project is opened on the Atom:
+
+
+    | ![](image_rsrc22E.jpg) |
+
+
+    On the project, create 2 sub-directories: public & views:
+
+
+    *   public: a directory containing all files which users can access, for example
+    image, video,..
+
+
+    *   views: Your website will have a lot of pages, for example, home page, login
+    page, ...This directory is the place containg all your pages.
+
+
+    | ![](image_rsrc22F.jpg) |
+
+
+    In views directory, we create 2 files:
+
+
+    *   homePage.ejs
+
+
+    *   testPage.ejs
+
+
+    | ![](image_rsrc22G.jpg) |
+
+
+    homePage.ejs
+
+
+    | <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Home</title></head><body><h1>This
+    is Home Page</h1></body></html> |
+
+
+    testPage.ejs
+
+
+    | <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Test</title></head><body><h1>This
+    is Test Page</h1></body></html> |
+
+
+    Next, create a file named index.js, and enter contents for this file. This is
+    configuration file for your project:
+
+
+    | ![](image_rsrc22H.jpg) |
+
+
+    index.js
+
+
+    | var express = require("express");var app = express();app.use(express.static("public"));app.set("view
+    engine", "ejs");app.set("views", "./views");app.listen(3000);app.get("/", function(request,
+    response)  {response.render("homePage");});app.get("/test", function(request,
+    response)  {response.render("testPage");}); |
+
+
+    OK, Now, it is time to explain the contents of the index.js above file.
+
+
+    | Code | Description |
+
+
+    | var express = require("express"); | ExpressJS means a Web Application Framework.This
+    code line says that you want to use it. |
+
+
+    | var app = express(); | Create an Express object. |
+
+
+    | app.use(express.static("public")); | This code line tells Application Server
+    that you want to use public directory to contain static data, users can access
+    the files in this directory. |
+
+
+    | app.set("view engine", "ejs"); | This code line tells the Application Server
+    that you want to use EJS library. It is a machinery to handle your page. The EJS
+    will create HTML to return to user''s browser. |
+
+
+    | app.set("views", "./views"); | This code line shows the Application Server the
+    path to the directory containing your pages |
+
+
+    | app.listen(3000); | Your application will listen on port 3000 when it is deployed
+    |
+
+
+    | app.get("/test", function(req, res) { ...}); | Define the path to access to
+    a page. |
+
+
+    Run Application Server
+
+
+    Open the CMD, and CD window to go to the directory of your project and perform
+    the following command to deploy your application.
+
+
+    | node index.js |
+
+
+    | ![](image_rsrc22J.jpg) |
+
+
+    The above command will start the Web Application Server, and deploy your application
+    on this Web Server. At this moment, it is ready to serve the request sent from
+    the client.
+
+
+    | ![](image_rsrc22K.jpg) |
+
+
+    Note: Not close the CMD window, because your Application Serser is running. Open
+    the browser and visit the link:
+
+
+    *   http://localhost:3000/
+
+
+    *   http://localhost:3000/test
+
+
+    | ![](image_rsrc22M.jpg) |
+
+
+    What will take place at the Server when the user accesses the above address.
+
+
+    | ![](image_rsrc22N.jpg) |
+
+
+    Chapter 6 :
+
+
+    Create a Simple HTTP Server with NodeJS
+
+
+    The objective of post
+
+
+    In this post, I am going to show you how to create a very simple HTTP Server with
+    NodeJS. And you can access static data sources such as HTML, Javascript, CSS,
+    etc in the directory via http, for example:
+
+
+    *   http://localhost:8080/abc.html
+
+
+    *   http://localhost:8080/abc.js
+
+
+    Instead of accessing through file:///
+
+
+    *   file:///E:/webexamples/reactjs/abc.html
+
+
+    *   file:///E:/webexamples/reactjs/abc.js
+
+
+    | ![](image_rsrc22P.jpg) |
+
+
+    The question is why do you need a HTTP only to access static data sources.
+
+
+    If you want to learn ReactJS you will need an HTTP. Although ReactJS is just a
+    Javascript library, and HTML files can be run directly in a browser. However,
+    sometimes browser prevents the operations of the local Javascript files. It requires
+    the Javascript file to come from one of the schemas: http, data, chrome, chrome-extension,
+    https.
+
+
+    | ![](image_rsrc22R.jpg) |
+
+
+    Error Message!
+
+
+    | Failed to load file:///E:/webexamples/reactjs/hello-reactjs/person.jsx:Cross
+    origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension,
+    https. |
+
+
+    Create NodeJS HTTP Server
+
+
+    Create an empty directory:
+
+
+    | ![](image_rsrc22S.jpg) |
+
+
+    Open the CMD window, and CD to the folder you created in the previous step.
+
+
+    | ![](image_rsrc22T.jpg) |
+
+
+    Run the following command to install http-server:
+
+
+    | npm install -g http-server |
+
+
+    | ![](image_rsrc22U.jpg) |
+
+
+    Start HTTP-Server:
+
+
+    | # Note: -c-1 to disable caching!!http-server -c-1 |
+
+
+    | ![](image_rsrc22V.jpg) |
+
+
+    Your HTTP Server has been started.it is listening at port 8080\. You can check
+    it by visiting the following link:
+
+
+    *   http://localhost:8080/
+
+
+    | ![](image_rsrc22W.jpg) |
+
+
+    Create a HTML file in that directory, and you can access it via HTTP:
+
+
+    | ![](image_rsrc22X.jpg) |
+
+
+    | ![](image_rsrc22Y.jpg) |
+
+
+    Chapter 7 :
+
+
+    NodeJS Modules
+
+
+    What is NodeJS Module
+
+
+    Speaking simply, NodeJS Module is a Javascript library. It is a set of functions,
+    objects and variables, which you can put into your applications to use. Using
+    Module helps simplify writing code and manage it in your application. Normally,
+    each module will be written in a separate file.
+
+
+    The NodeJS builds in quite many Modules. It has standard libraries for you to
+    develop applications. Below is the list:
+
+
+    | Module | Description |
+
+
+    | assert | Provides a set of assertion tests |
+
+
+    | buffer | To handle binary data |
+
+
+    | child_process | To run a child process |
+
+
+    | cluster | To split a single Node process into multiple processes |
+
+
+    | crypto | To handle OpenSSL cryptographic functions |'
+  toc: []
+  trans: '
+
+
+    一个与 NPM 类似的软件是 `Yarn`，由 Facebook 开发，其卓越的特性使其成为 NPM 的替代方案。在相同的情况下，Java 库管理软件是 `Gradle`，凭借其卓越的特性，逐渐取代
+    Maven。
+
+
+    ## NPM 的特性
+
+
+    要运行 NPM 软件，你的系统需要安装 `NodeJS`。NPM 软件内置在 `NodeJS` 安装程序中，因此，当你完成 `NodeJS` 的安装后，你将同时拥有它们。
+
+
+    在你的电脑上安装好 NPM 后，你可以检查它的版本：
+
+
+    ```
+
+    npm -v
+
+    ```
+
+
+    ![](img/image_rsrc226.jpg)
+
+
+    因为 NPM 是安装在你的电脑上的一个软件，你可以用它从互联网安装 Javascript 库。要安装一个库，只需要打开 `CMD` 窗口并执行以下命令：
+
+
+    ```bash
+
+    npm install <package name>
+
+    ```
+
+
+    ```bash
+
+    npm install vue
+
+    ```
+
+
+    你可以在你的 Javascript 代码中使用 `Vue.js`：
+
+
+    ```javascript
+
+    var Vue = require(''vue'');
+
+    ```
+
+
+    # 第 5 章：NodeJS
+
+
+    ### 创建一个 NodeJS 项目
+
+
+    首先，你需要创建一个名为 `MyProject` 的目录，或者你喜欢的任何名称。
+
+
+    ![](img/image_rsrc227.jpg)
+
+
+    打开 `CMD` 和 `CD` 窗口进入你刚刚创建的目录。之后运行以下命令，让 NPM 为你创建项目。
+
+
+    ```bash
+
+    npm init
+
+    ```
+
+
+    ![](img/image_rsrc228.jpg)
+
+
+    接受默认选项并按“回车”直到完成。
+
+
+    ![](img/image_rsrc229.jpg)
+
+
+    在你的项目中创建了一个名为 `package.json` 的文件。
+
+
+    ![](img/image_rsrc22A.jpg)
+
+
+    你的项目需要一些库包，你需要在 NPM 的支持下安装它们：
+
+
+    #### Express
+
+    `Express.js`（或简单称为 `Express`）是一个用于 `NodeJS` 的 Web 应用框架。它为 Web 和移动应用提供了一系列强大的功能。
+
+
+    #### Ejs
+
+    `EJS` 代表“嵌入式 JavaScript 模板”（Embedded JavaScript templating），这是一个库，用于解析 `ejs` 文件并创建
+    HTML 返回给客户端（浏览器）。
+
+
+    ```bash
+
+    npm install express ejs
+
+    ```
+
+
+    ![](img/image_rsrc22B.jpg)
+
+
+    安装完成后，你可以看到项目发生了变化：
+
+
+    ![](img/image_rsrc22C.jpg)
+
+
+    ### 创建项目结构
+
+
+    在上面的步骤中，我们通过命令创建了项目。现在我们将使用一个更可视化的工具打开这个项目。在这里，我使用 `Atom` 编辑器（我在上面的步骤建议你安装的软件）。
+
+
+    *   `File/Add Project Folder`
+
+
+    ![](img/image_rsrc22D.jpg)
+
+
+    好的，项目已在 `Atom` 中打开：
+
+
+    ![](img/image_rsrc22E.jpg)
+
+
+    项目中创建两个子目录：`public` 和 `views`：
+
+
+    *   `public`：一个包含用户可以访问的所有文件的目录，例如图片、视频等...
+
+    *   `views`：你的网站将有很多页面，例如首页、登录页...此目录是存放你所有页面的地方。
+
+
+    ![](img/image_rsrc22F.jpg)
+
+
+    在 `views` 目录中，我们创建了 两个文件：
+
+
+    *   `homePage.ejs`
+
+    *   `testPage.ejs`
+
+
+    ![](img/image_rsrc22G.jpg)
+
+
+    **homePage.ejs**
+
+    ```html
+
+    <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Home</title></head><body><h1>This
+    is Home Page</h1></body></html>
+
+    ```
+
+
+    **testPage.ejs**
+
+    ```html
+
+    <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><title>Test</title></head><body><h1>This
+    is Test Page</h1></body></html>
+
+    ```
+
+
+    接下来，创建一个名为 `index.js` 的文件，并输入该文件的内容。这是你项目的配置文件：
+
+
+    ![](img/image_rsrc22H.jpg)
+
+
+    **index.js**
+
+    ```javascript
+
+    var express = require("express");
+
+    var app = express();
+
+    app.use(express.static("public"));
+
+    app.set("view engine", "ejs");
+
+    app.set("views", "./views");
+
+    app.listen(3000);
+
+    app.get("/", function(request, response)  {response.render("homePage");});
+
+    app.get("/test", function(request, response)  {response.render("testPage");});
+
+    ```
+
+
+    好的，现在是解释上面 `index.js` 文件的内容了。
+
+
+    | 代码 |  |
+
+    | :--- | :--- |
+
+    | `var express = require("express");` | `ExpressJS` 是一个 Web 应用框架。这行代码表示你想使用它。
+    |
+
+    | `var app = express();` | 创建一个 `Express` 对象。 |
+
+    | `app.use(express.static("public"));` | 这行代码告诉应用程序服务器你想使用 `public` 目录来存放静态数据，用户可以访问该目录下的文件。
+    |
+
+    | `app.set("view engine", "ejs");` | 这行代码告诉应用程序服务器你想使用 `EJS` 库。它是处理你页面的机制。`EJS`
+    将创建 HTML 返回给用户的浏览器。 |
+
+    | `app.set("views", "./views");` | 这行代码向应用程序服务器显示目录的路径。 |
+
+    | `app.listen(3000);` | 应用程序在 3000 端口上监听。 |
+
+    | `app.get("/", function(request, response)  {response.render("homePage");});`
+    | 定义根路由。 |
+
+    | `app.get("/test", function(request, response)  {response.render("testPage");});`
+    | 定义 /test 路由。 |
+
+
+    ### 运行应用程序
+
+
+    打开 `CMD` 窗口进入你刚刚创建的目录。
+
+
+    ```bash
+
+    node index.js
+
+    ```
+
+
+    '
+- fmt: "\n| Module | Description |\n| :--- | :--- |\n| dgram | Provides implementation\
+    \ of UDP datagram sockets |\n| dns | To do DNS lookups and name resolution functions\
+    \ |\n| events | To handle events |\n| fs | To handle the file system |\n| http\
+    \ | To make Node.js act as an HTTP server |\n| https | To make Node.js act as\
+    \ an HTTPS server. |\n| net | To create servers and clients |\n| os | Provides\
+    \ information about the operation system |\n| path | To handle file paths |\n\
+    | querystring | To handle URL query strings |\n| readline | To handle readable\
+    \ streams one line at the time |\n| stream | To handle streaming data |\n| string_decoder\
+    \ | To decode buffer objects into strings |\n| timers | To execute a function\
+    \ after a given number of milliseconds |\n| tls | To implement TLS and SSL protocols\
+    \ |\n| tty | Provides classes used by a text terminal |\n| url | To parse URL\
+    \ strings |\n| util | To access utility functions |\n\nTo use a module, use `require(moduleName)`\
+    \ function. For example, `http` is a module that makes the NodeJS work like a\
+    \ HTTP Server.\n\nOn your NodeJS project, create a `module-examples` directory\
+    \ to contain the Javascript files which you practise in this lesson.\n\n| ![](image_rsrc22Z.jpg)\
+    \ |\n\nCreate a file named `http-example.js` in the `module-examples` directory.\n\
+    \n| ![](image_rsrc230.jpg) |\n\n`http-example.js`\n\n```javascript\nvar http =\
+    \ require(\"http\");\nhttp.createServer(function(req, res) {\n  res.writeHead(200,\
+    \ {\"Content-Type\": \"text/html\"});\n  res.write(\"<h1>Hello World</h1>\");\n\
+    \  res.write(\"<h2>Hello Http</h2>\");\n  res.end();\n}).listen(8080)\n```\n\n\
+    Open CMD and CD windows to go to your project directory, use the NodeJS to run\
+    \ the `http-example.js` file:\n\n```bash\nnode ./module-examples/http-example.js\n\
+    ```\n\nOpen the browser and visit the path:\n* http://localhost:8080/\n\n| ![](image_rsrc231.jpg)\
+    \ |\n\n## Create your Module\n\nIn the NodeJS, you can create a customized module.\
+    \ The Module is a Javascript file. please note to the position of this file because\
+    \ it affect the way for you to use it . You have 2 ways of choosing position of\
+    \ this file:\n\n1. The Module file is put in the directory named `node_modules`\
+    \ (subdirectory of the project). This is encouraged position. \n2. The Module\
+    \ file is put in one of your directories, not `node_modules`.\n\n| ![](image_rsrc232.jpg)\
+    \ |\n\nThe NodeJS advises you to place your Module files into the `node_modules`\
+    \ directory of the project. Wait for a minute, I am going to explain the reason\
+    \ why your module should be put in this directory.\n\n### The syntax for exporting\
+    \ something in your Javascript file.\n\n```javascript\nexports = something;//\
+    \ or:module.exports = something; \n```\n\n`my-first-module.js`\n\nFirst of all,\
+    \ create a `my-first-module.js` file in the `node_modules` directory and the `test-my-first-module.js`\
+    \ file in another directory.\n\n| ![](image_rsrc233.jpg) |\n\nIn this example,\
+    \ the `my-first-module.js` file has a lot of functions but I only export\"sum\"\
+    \ function.\n\n`node_modules/my-first-module.js`\n\n```javascript\nsubtract =\
+    \ function(a, b) {return a - b;}\nsum = function (a, b) {return a + b;}\nmodule.exports\
+    \ = sum;\n```\n\n| ![](image_rsrc234.jpg) |\n\n`module-examples/test-my-first-module.js`\n\
+    \n```javascript\nvar sum = require(\"my-first-module.js\");\nconsole.log(\"Sum\
+    \ 100 and 150\");\nvar c = sum(100, 150);\nconsole.log(\"Value = \" + c);\n```\n\
+    \nRun the above example:\n\n```bash\nnode ./module-examples/test-my-first-module.js\n\
+    ```\n\n## Chapter 8: The concept of Callback in NodeJS\n\n### What is Callback\n\
+    \nTo explain what the Callback is, let's see a situation as follows:\n\nYou come\
+    \ to a shop to buy a something you like. The shop staff tells you that the item\
+    \ is out of stock now. You leave the phone number and ask them to call back immediately\
+    \ after the goods is available. Then you can go out or do a job and do not need\
+    \ to care about the shop anymore, until you get a phone call notifying of the\
+    \ item asked by you from the shop.\n\n| ![](image_rsrc235.jpg) |\n\nNodeJS server\
+    \ can receive many requests from many users. Therefore to improve serviceability,\
+    \ all APIs of the NodeJS are designed to support Callback. The \"callback\" is\
+    \ a function that will be called when the NodeJs completes a specific task.\n\n\
+    ### NodeJS Callback\n\nIn the NodeJS, APIs is designed to support the Callback.\
+    \ Assume that you are writing a program to read 2 files. To do this you use the\
+    \ `fs` module, which gives you two functions such as `readFile` and `readFileSync`\
+    \ to read the file. We will learn about the differences between these two functions.\n\
+    \n#### Blocking\n\nThe `readFileSync` is a function reading files synchronously,.\
+    \ Therefore, while this function is executing, it will block the program from\
+    \ executing next code lines.\n\n`blocking-example.js`\n\n```javascript\nvar fs\
+    \ = require(\"fs\");\n// -----> Read file 1:\nconsole.log(\"\\n\");\nconsole.log(\"\
+    Read File 1\");\nvar data1 = fs.readFileSync('C:\\\\test\\\\file1.txt');\nconsole.log(\"\
+    - Data of file 1: \");\nconsole.log(data1.toString());\n// -----> Read file 2:\n\
+    console.log(\"\\n\");\nconsole.log(\"Read File 2\");\nvar data2 = fs.readFileSync('C:\\\
+    \\test\\\\file2.txt');\nconsole.log(\"- Data of file 2: \");\nconsole.log(data2.toString());\n\
+    console.log(\"\\n\");\nconsole.log(\"Program Ended\");\n```\n\nOpen CMD window\
+    \ and execute the `blocking-example.js` file:\n\n```bash\nnode callback-examples/blocking-example.js\n\
+    ```\n\n#### Non Blocking\n\nYou should use `readFile` function to achieve better\
+    \ performance for the program. This function reads files asynchronously. It doesn't\
+    \ block the program executing the next code lines. In other words, the program\
+    \ does not wait for the function to complete. But when this function completes\
+    \ its task, it calls the Callback function.\n\n```javascript\n// Read a file Asynchronous.\n\
+    fs.readFile('C:\\\\test\\\\file1.txt', aCallbackFunction );\n```\n\nSee the full\
+    \ example:\n\n`non-blocking-example.js`\n\n```javascript\nvar fs = require(\"\
+    fs\");\n// A Callback function!\nfunction readFinishedFile1(err, data) {\n  if\
+    \ (err) console.log(err);\n  console.log(\"- Data of file 1: \");\n  console.log(data.toString());\n\
+    }\n// A Callback function!\nfunction readFinishedFile2(err, data) {\n  if (err)\
+    \ console.log(err);\n  console.log(\"- Data of file 2: \");\n  console.log(data.toString());\n\
+    }\n// -----> Read file 1:\nconsole.log(\"\\n\");\nconsole.log(\"Read File 1\"\
+    );\nfs.readFile('C:\\\\test\\\\file1.txt', readFinishedFile1);\n// -----> Read\
+    \ file 2:\nconsole.log(\"\\n\");\nconsole.log(\"Read File 2\");\nfs.readFile('C:\\\
+    \\test\\\\file2.txt', readFinishedFile2);\nconsole.log(\"\\n\");\nconsole.log(\"\
+    Program Ended\");\n```\n\nOpen CMD window and run the `non-blocking-example.js`\
+    \ file:\n\n```bash\nnode callback-examples/non-blocking-example.js\n```\n\n##\
+    \ Chapter 9: Understanding Event Loop in NodeJS\n\n### NodeJS Event Loop Overview\n\
+    \nNodeJS is a Single Thread application, which operates on a platform written\
+    \ by C++. This platform uses multi-thread to carry out tasks at the same time.\n\
+    \nThe following figure illustrates requests sent to the NodeJS server from the\
+    \ users side.\n\n| ![](image_rsrc236.jpg) |\n\nEach request from the users side\
+    \ is treated to be an event by the NodeJS. They is placed into an Event Queue.\
+    \ The NodeJS uses FIFO (First In First Out) principle, which means that the requests\
+    \ coming first will be handled first.\n\n### Event Loop\n\nAs an endless loop,\
+    \ it passes the requests to the thread Pool and each request is registered a Callback\
+    \ function. When a request is finished handling, the corresponding Callback function\
+    \ will be called to be executed.\n\n### Thread Pool\n\nBeing a program by C++\
+    \ language, it supports multi threads. Therefore, herein, requests will be handled\
+    \ on different threads. The NodeJS also supports Multi Processes. This means that\
+    \ they can be executed on different cores.\n\n| ![](image_rsrc237.jpg) |\n\nWhen\
+    \ a request is finished handling. The NodeJS will call the Callback function (registered\
+    \ for this request) to execute it.\n\n| ![](image_rsrc238.jpg) |\n\n## CONCLUSIONS\n\
+    \nFirst basic conclusion: If each connection to Server opens a Thread . It will\
+    \ take very much memory. This has been proven when you compare Apache and Nginx\
+    \ (two Web Servers deploying PHP applications).\n\nThe NodeJS is similar to the\
+    \ Nginx in the fact that they use only a Single thread to receive connections\
+    \ from an user, and treat each request of the user as an event.\n"
+  raw: '| dgram | Provides implementation of UDP datagram sockets |
+
+
+    | dns | To do DNS lookups and name resolution functions |
+
+
+    | events | To handle events |
+
+
+    | fs | To handle the file system |
+
+
+    | http | To make Node.js act as an HTTP server |
+
+
+    | https | To make Node.js act as an HTTPS server. |
+
+
+    | net | To create servers and clients |
+
+
+    | os | Provides information about the operation system |
+
+
+    | path | To handle file paths |
+
+
+    | querystring | To handle URL query strings |
+
+
+    | readline | To handle readable streams one line at the time |
+
+
+    | stream | To handle streaming data |
+
+
+    | string_decoder | To decode buffer objects into strings |
+
+
+    | timers | To execute a function after a given number of milliseconds |
+
+
+    | tls | To implement TLS and SSL protocols |
+
+
+    | tty | Provides classes used by a text terminal |
+
+
+    | url | To parse URL strings |
+
+
+    | util | To access utility functions |
+
+
+    To use a module, use require(moduleName) function. For example, http is a module
+    that makes the NodeJS work like a HTTP Server.
+
+
+    On your NodeJS project, create a module-examples directory to contain the Javascript
+    files which you practise in this lesson.
+
+
+    | ![](image_rsrc22Z.jpg) |
+
+
+    Create a file named http-example.js in the module-examples directory.
+
+
+    | ![](image_rsrc230.jpg) |
+
+
+    http-example.js
+
+
+    | var http = require("http");http.createServer(function(req, res)  {res.writeHead(200,
+    {"Content-Type": "text/html"});res.write("<h1>Hello World</h1>");res.write("<h2>Hello
+    Http</h2>");res.end();}).listen(8080) |
+
+
+    Open CMD and CD windows to go to your project directory, use the NodeJS to run
+    the http-example.js file:
+
+
+    | node ./module-examples/http-example.js |
+
+
+    Open the browser and visit the path:
+
+
+    *   http://localhost:8080/
+
+
+    | ![](image_rsrc231.jpg) |
+
+
+    Create your Module
+
+
+    In the NodeJS, you can create a customized module. The Module is a Javascript
+    file. please note to the position of this file because it affect the way for you
+    to use it . You have 2 ways of choosing position of this file:
+
+
+    1   The Module file is put in the directory named
+
+
+    node_modules (subdirectory of the project). This is
+
+
+    encouraged position.
+
+
+    2   The Module file is put in one of your directories, not
+
+
+    node_modules.
+
+
+    | ![](image_rsrc232.jpg) |
+
+
+    The NodeJS advises you to place your Module files into the node_modules directory
+    of the project. Wait for a minute, I am going to explain the reason why your module
+    should be put in this directory.
+
+
+    The syntax for exporting something in your Javascript file.
+
+
+    | exports = something;// or:module.exports = something; |
+
+
+    my-first-module.js
+
+
+    First of all, create a my-first-module.js file in the node_modules directory and
+    the test-my-first-module.js file in another directory.
+
+
+    | ![](image_rsrc233.jpg) |
+
+
+    In this example, the my-first-module.js file has a lot of functions but I only
+    export"sum" function.
+
+
+    node_modules/my-first-module.js
+
+
+    | subtract = function(a, b)  {return a - b;}sum = function (a, b)  {return a +
+    b;}module.exports = sum; |
+
+
+    | ![](image_rsrc234.jpg) |
+
+
+    module-examples/test-my-first-module.js
+
+
+    | var sum = require("my-first-module.js");console.log("Sum 100 and 150");var c
+    = sum(100, 150);console.log("Value = " + c); |
+
+
+    Run the above example:
+
+
+    | node ./module-examples/test-my-first-module.js |
+
+
+    Chapter 8 :
+
+
+    The concept of Callback in NodeJS
+
+
+    What is Callback
+
+
+    To explain what the Callback is, let''s see a situation as follows:
+
+
+    You come to a shop to buy a something you like. The shop staff tells you that
+    the item is out of stock now. You leave the phone number and ask them to call
+    back immediately after the goods is available. Then you can go out or do a job
+    and do not need to care about the shop anymore, until you get a phone call notifying
+    of the item asked by you from the shop.
+
+
+    | ![](image_rsrc235.jpg) |
+
+
+    NodeJS server can receive many requests from many users. Therefore to improve
+    serviceability, all APIs of the NodeJS are designed to support Callback. The "callback"
+    is a function that will be called when the NodeJs completes a specific task.
+
+
+    NodeJS Callback
+
+
+    In the NodeJS, APIs is designed to support the Callback. Assume that you are writing
+    a program to read 2 files. To do this you use the fs module, which gives you two
+    functions such as readFile and readFileSync to read the file. We will learn about
+    the differences between these two functions.
+
+
+    Blocking
+
+
+    The readFileSync is a function reading files synchronously,. Therefore, while
+    this function is executing, it will block the program from executing next code
+    lines.
+
+
+    blocking-example.js
+
+
+    | var fs = require("fs");// -----> Read file 1:console.log("\n");console.log("Read
+    File 1");var data1 = fs.readFileSync(''C:\\test\\file1.txt'');console.log("- Data
+    of file 1: ");console.log(data1.toString());// -----> Read file 2:console.log("\n");console.log("Read
+    File 2");var data2 = fs.readFileSync(''C:\\test\\file2.txt'');console.log("- Data
+    of file 2: ");console.log(data2.toString());console.log("\n");console.log("Program
+    Ended"); |
+
+
+    Open CMD window and execute the blocking-example.js file
+
+
+    | node callback-examples/blocking-example.js |
+
+
+    Non Blocking
+
+
+    You should use readFile function to achieve better performance for the program.
+    This function reads files asynchronously. It doesn''t block the program executing
+    the next code lines. In other words, the program does not wait for the function
+    to complete. But when this function completes its task, it calls the Callback
+    function.
+
+
+    | // Read a file Asynchronous.fs.readFile(''C:\\test\\file1.txt'', aCallbackFunction
+    ); |
+
+
+    See the full example:
+
+
+    non-blocking-example.js
+
+
+    | var fs = require("fs");// A Callback function!function readFinishedFile1(err,
+    data)  {if (err) console.log(err);console.log("- Data of file 1: ");console.log(data.toString());}//
+    A Callback function!function readFinishedFile2(err, data)  {if (err) console.log(err);console.log("-
+    Data of file 2: ");console.log(data.toString());}// -----> Read file 1:console.log("\n");console.log("Read
+    File 1");fs.readFile(''C:\\test\\file1.txt'', readFinishedFile1);// -----> Read
+    file 2:console.log("\n");console.log("Read File 2");fs.readFile(''C:\\test\\file2.txt'',
+    readFinishedFile2);console.log("\n");console.log("Program Ended \n"); |
+
+
+    Open CMD window and run the non-blocking-example.js file:
+
+
+    | node callback-examples/non-blocking-example.js |
+
+
+    Chapter 9 :
+
+
+    Understanding Event Loop in NodeJS
+
+
+    NodeJS Event Loop Overview
+
+
+    NodeJS is a Single Thread application, which operates on a platform written by
+    C++. This platform uses multi-thread to carry out tasks at the same time.
+
+
+    The following figure illustrates requests sent to the NodeJS server from the users
+    side.
+
+
+    | ![](image_rsrc236.jpg) |
+
+
+    Each request from the users side is treated to be an event by the NodeJS. They
+    is placed into an Event Queue. The NodeJS uses FIFO (First In First Out) principle,
+    which means that the requests coming first will be handled first.
+
+
+    Event Loop
+
+
+    As an endless loop, it passes the requests to the thread Pool and each request
+    is registered a Callback function. When a request is finished handling, the corresponding
+    Callback function will be called to be executed.
+
+
+    Thread Pool
+
+
+    Being a program by C++ language, it supports multi threads. Therefore, herein,
+    requests will be handled on different threads. The NodeJS also supports Multi
+    Processes. This means that they can be executed on different cores.
+
+
+    | ![](image_rsrc237.jpg) |
+
+
+    When a request is finished handling. The NodeJS will call the Callback function
+    (registered for this request) to execute it.
+
+
+    | ![](image_rsrc238.jpg) |
+
+
+    CONCLUSIONS:
+
+
+    First basic conclusion: If each connection to Server opens a Thread . It will
+    take very much memory. This has been proven when you compare Apache and Nginx
+    (two Web Servers deploying PHP applications). The Apache uses much more memory
+    than the Nginx.
+
+
+    The NodeJS is similar to the Nginx in the fact that they use only a Single thread
+    to receive connections from an user, and treat each request of the user as an
+    event.'
+  toc: []
+  trans: "\n\n| Module | Description |\n| :--- | :--- |\n| dgram | 提供 UDP 数据报套接字的实现\
+    \ |\n| dns | 用于 DNS 查询和域名解析函数 |\n| events | 用于处理事件 |\n| fs | 处理文件系统 |\n| http\
+    \ | 让 Node.js 充当 HTTP 服务器 |\n| https | 让 Node.js 充当 HTTPS 服务器 |\n| net | 创建服务器和客户端\
+    \ |\n| os | 提供有关操作系统的信息 |\n| path | 处理文件路径 |\n| querystring | 处理 URL 查询字符串 |\n\
+    | readline | 逐行处理可读流 |\n| stream | 处理流式数据 |\n| string_decoder | 将 buffer 对象解码为字符串\
+    \ |\n| timers | 在指定的毫秒数后执行函数 |\n| tls | 实现 TLS 和 SSL 协议 |\n| tty | 提供供文本终端使用的类\
+    \ |\n| url | 解析 URL 字符串 |\n| util | 访问实用函数 |\n\n要使用模块，请使用 `require(moduleName)`\
+    \ 函数。例如，`http` 是一个让 NodeJS 运行得像 HTTP 服务器的模块。\n\n在你的 NodeJS 项目中，创建一个 `module-examples`\
+    \ 目录来包含你在在本课程中练习的 Javascript 文件。\n\n| ![](img/image_rsrc22Z.jpg) |\n\n在 `module-examples`\
+    \ 目录下创建一个名为 `http-example.js` 的文件。\n\n| ![](img/image_rsrc230.jpg) |\n\n`http-example.js`\n\
+    \n```javascript\nvar http = require(\"http\");\nhttp.createServer(function(req,\
+    \ res) {\n  res.writeHead(200, {\"Content-Type\": \"text/html\"});\n  res.write(\"\
+    <h1>Hello World</h1>\");\n  res.write(\"<h2>Hello Http</h2>\");\n  res.end();\n\
+    }).listen(8080)\n```\n\n打开 CMD 窗口进入进入项目目录，使用 NodeJS 运行 `http-example.js` 文件：\n\
+    \n```bash\nnode ./module-examples/http-example.js\n```\n\n打开浏览器并访问路径：\n* http://localhost:8080/\n\
+    \n| ![](img/image_rsrc231.jpg) |\n\n## 创建你的模块\n\n在 NodeJS 中，你可以创建一个自定义模块。模块是一个\
+    \ Javascript 文件。请注意该文件的位置，因为它会影响你使用它的方式。你有 2 种选择该文件位置的方法：\n\n1. 将模块文件放在名为 `node_modules`\
+    \ 的目录中（项目的子目录）。这是推荐的位置。\n2. 将模块文件放在你的其中一个目录中，而不是 `node_modules` 中。\n\n| ![](img/image_rsrc232.jpg)\
+    \ |\n\nNodeJS 建议你将你的模块文件放在项目的 `node_modules` 目录中。请等一分钟，我将解释为什么你的模块应该放在这个目录中。\n\
+    \n### 在你的 Javascript 文件中导出内容的语法。\n\n```javascript\nexports = something;// 或者：module.exports\
+    \ = something; \n```\n\n`my-first-module.js`\n\n首先，在 `node_modules` 目录下创建一个 `my-first-module.js`\
+    \ 文件，在另一个目录下创建一个 `test-my-first-module.js` 文件。\n\n| ![](img/image_rsrc233.jpg)\
+    \ |\n\n在例例中，`my-first-module.js` 文件有很多函数，但我只导出了 \"sum\" 函数。\n\n`node_modules/my-first-module.js`\n\
+    \n```javascript\nsubtract = function(a, b) {return a - b;}\nsum = function (a,\
+    \ b) {return a + b;}\nmodule.exports = sum;\n```\n\n| ![](img/image_rsrc234.jpg)\
+    \ |\n\n`module-examples/test-my-first-module.js`\n\n```javascript\nvar sum = require(\"\
+    my-first-module.js\");\nconsole.log(\"Sum 100 and 150\");\nvar c = sum(100, 150);\n\
+    console.log(\"Value = \" + c);\n```\n\n运行上面的示例：\n\n```bash\nnode ./module-examples/test-my-first-module.js\n\
+    ```\n\n## 第 8 章：NodeJS 中的回调 (Callback) 概念\n\n### 什么是回调 (Callback)\n\n为了解释什么是回调，让我们来看以下情况：\n\
+    \n你去一家商店买你喜欢的东西。店员告诉你该商品现在缺货了。你留下了电话号码，并他们在到货后立即给你回电。然后你就可以出去或工作，不需要再担心这家商店，直到你接到商店的电话通知你请求的商品已到。\n\
+    \n| ![](img/image_rsrc235.jpg) |\n\nNodeJS 服务器可以接收来自许多用户的许多请求。因此，为了提高可用性，NodeJS\
+    \ 的所有 API 都设计为支持回调。“回调”是一个在 NodeJs 完成特定任务时被调用的函数。\n\n### NodeJS 回调\n\n在 NodeJS\
+    \ 中，API 被设计为支持回调。假设你正在编写一个读取 2 个文件的程序。为了实现这一点，你使用了 `fs` 模块，它提供了两个函数如 `readFile`\
+    \ 和 `readFileSync` 来读取文件。我们将学习这两个函数之间的区别。\n\n#### 阻塞 (Blocking)\n\n`readFileSync`\
+    \ 是一个同步读取文件的函数。因此，当该函数执行时，它会阻塞程序执行后续代码行。\n\n`blocking-example.js`\n\n```javascript\n\
+    var fs = require(\"fs\");\n// -----> 读取文件 1:\nconsole.log(\"\\n\");\nconsole.log(\"\
+    Read File 1\");\nvar data1 = fs.readFileSync('C:\\\\test\\\\file1.txt');\nconsole.log(\"\
+    - Data of file 1: \");\nconsole.log(data1.toString());\n// -----> 读取文件 2:\nconsole.log(\"\
+    \\n\");\nconsole.log(\"Read File 2\");\nvar data2 = fs.readFileSync('C:\\\\test\\\
+    \\file2.txt');\nconsole.log(\"- Data of file 2: \");\nconsole.log(data2.toString());\n\
+    console.log(\"\\n\");\nconsole.log(\"Program Ended\");\n```\n\n打开 CMD 窗口并执行 `blocking-example.js`\
+    \ 文件：\n\n```bash\nnode callback-examples/blocking-example.js\n```\n\n#### 非阻塞\
+    \ (Non Blocking)\n\n你应该使用 `readFile` 函数来为程序获得更好的性能。该函数异步读取文件。它不会阻塞程序执行后续代码行。换句话说，程序不会等待函数完成。但当该函数完成它的任务时，它会调用回调函数。\n\
+    \n```javascript\n// 异步读取文件。\nfs.readFile('C:\\\\test\\\\file1.txt', aCallbackFunction\
+    \ );\n```\n\n查看完整示例：\n\n`non-blocking-example.js`\n\n```javascript\nvar fs = require(\"\
+    fs\");\n// 一个回调函数！\nfunction readFinishedFile1(err, data) {\n  if (err) console.log(err);\n\
+    \  console.log(\"- Data of file 1: \");\n  console.log(data.toString());\n}\n\
+    // 一个回调函数！\nfunction readFinishedFile2(err, data) {\n  if (err) console.log(err);\n\
+    \  console.log(\"- Data of file 2: \");\n  console.log(data.toString());\n}\n\
+    // -----> 读取文件 1:\nconsole.log(\"\\n\");\nconsole.log(\"Read File 1\");\nfs.readFile('C:\\\
+    \\test\\\\file1.txt', readFinishedFile1);\n// -----> 读取文件 2:\nconsole.log(\"\\\
+    n\");\nconsole.log(\"Read File 2\");\nfs.readFile('C:\\\\test\\\\file2.txt', readFinishedFile2);\n\
+    console.log(\"\\n\");\nconsole.log(\"Program Ended\");\n```\n\n打开 CMD 窗口并运行 `non-blocking-example.js`：\n\
+    \n```bash\nnode callback-examples/non-blocking-example.js\n```\n\n## 第 9 章：理解\
+    \ NodeJS 中的事件循环 (Event Loop)\n\n### 事件循环概述\n\nNodeJS 是一个单线程应用程序，运行在由 C++ 编写的平台上。该平台使用多线程来同时执行任务。\n\
+    \n下图说明了从用户侧发送到 NodeJS 的请求。\n\n| ![](img/image_rsrc236.jpg) |\n\n来自用户的每个请求被 NodeJS\
+    \ 视为一个事件。它们被放置在事件队列中。NodeJS 使用先入先出 (FIFO) 原则，这意味着先请求将先处理。\n\n### 事件循环 (Event Loop)\n\
+    \n作为一个无限循环，它将请求传递给线程池，每个请求注册了一个回调函数。当请求处理完成后，相应的回调函数将被调用并执行。\n\n### 线程池 (Thread\
+    \ Pool)\n\n由于是 C++ 语言编写，它支持多线程。因此，这里会在不同的线程上处理。NodeJS 也支持多进程。这意味着它们可以在不同的核心上执行。\n\
+    \n| ![](img/image_rsrc237.jpg) |\n\n当请求处理完成后。NodeJS 将调用为该请求注册的回调函数来执行它。\n\n| ![](img/image_rsrc238.jpg)\
+    \ |\n\n## 结论\n\n第一个基本结论：如果每个连接都打开一个线程。这将消耗大量的内存。当你比较 Apache 和 Nginx（两个部署 PHP 程序的\
+    \ Web 服务器）时，这一点得到了证明。\n\nNodeJS 与 Nginx 的相似之处在于，它们都只使用单个线程接收来自用户的连接，并将用户的每个请求视为一个事件。\n\
+    \n"
+- fmt: "\nSecond basic conclusion:I/O activities cost many resources of the system,\
+    \ therefore, the NodeJS manages use of I/O activities strictly. So you need to\
+    \ use only `Callback` when you execute the duties related to I/O.\n\n# Chapter\
+    \ 10: NodeJS EventEmitter\n\nNodeJS supports events in applications very perfectly.\
+    \ Every action on a computer is an event. For example, when you read a file on\
+    \ hard drive. It means that you have to do two actions \"open the file\" and \"\
+    close it\" after finishing reading it, so here we have two \" Open \" &\" Close\
+    \ \" events. Based on events, you insert your codes to do something.\n\n```javascript\n\
+    var fs = require('fs'); // Create a stream to read file\nvar rs = fs.createReadStream('C:/test/demo.txt');\
+    \ // The event 'open':\nrs.on('open', function() {console.log('File opened!');});\n\
+    ```\n\nModule events provides you with an `EventEmitter` class, that is a central\
+    \ class in the NodeJS, assisting in defining an event, registering Listeners of\
+    \ this event, and emitting (`emit`) the event.\n\n### Listener\n\nIn the NodeJS,\
+    \ the Listener is a function. It will be called to execute when an event occurs.\
+    \ Probably, 0, 1 or many Listeners are being bound to such event.\n\nFor simplicity,\
+    \ look at the following illustration: a mouse and a mouse trap. An event is prepared\
+    \ to take place. When the event occurs (the cake is stolen), the mouse trap will\
+    \ perform its task. The mouse trap herein is a \"Listener\", which will work when\
+    \ the event happens.\n\n### Example of EventEmitter\n\nImport `events` module,\
+    \ and declare an `EventEmitter` object:\n\n```javascript\n// Import events module\n\
+    var events = require('events');\n// Create an EventEmitter object\nvar eventEmitter\
+    \ = new events.EventEmitter();\n```\n\nRegister Listeners (The functions will\
+    \ be called to execute when an event occurs).\n\n```javascript\n// Add Event Listener\n\
+    eventEmitter.addListener('bellRing', bellRingHandler1);\n// Add Event Listener\n\
+    eventEmitter.addListener('bellRing', bellRingHandler2);\n```\n\nEmit the event:\n\
+    \n```javascript\n// Fire bellRing event!!\neventEmitter.emit('bellRing', 'Jerry');\n\
+    ```\n\n![](image_rsrc239.jpg)\n\n**first-example.js**\n\n```javascript\n// Import\
+    \ events module\nvar events = require('events');\n// Create an eventEmitter object\n\
+    var eventEmitter = new events.EventEmitter();\n// A Listener\nvar bellRingHandler1\
+    \ = function bellRingHandler1(who) {\n    console.log(\"\\n\");\n    console.log('The\
+    \ Bell Ringing..... (Handler 1)');\n    console.log(\" \" + who + \" was standing\
+    \ behind the door!\");\n    if(who == 'Jerry') {\n        console.log(' Tom, help\
+    \ me!!');\n        return;\n    }\n    console.log(\" Welcome \" + who);\n}\n\
+    // A Listener\nvar bellRingHandler2 = function bellRingHandler2(who) {\n    console.log(\"\
+    \\n\");\n    console.log('The Bell Ringing..... (Handler 2)');\n    eventEmitter.emit(\"\
+    nobodyIsAtHome\");\n}\n// A Listener\nvar nobodyIsAtHomeHandler = function nobodyIsAtHomeHandler()\
+    \ {\n    console.log(\"\\n\");\n    console.log(\" Sorry, Nobody is at home now,\
+    \ Please leave your message!\")\n}\n// Add Event Listeners\neventEmitter.addListener('bellRing',\
+    \ bellRingHandler1);\neventEmitter.addListener('bellRing', bellRingHandler2);\n\
+    eventEmitter.addListener('nobodyIsAtHome', nobodyIsAtHomeHandler);\n// ----- Testing\
+    \ ------\n// Fire bellRing event!!\neventEmitter.emit('bellRing', 'Jerry');\n\
+    ```\n\nRun the example:\n\n```bash\nnode eventemitter-examples/first-example.js\n\
+    ```\n\n# Chapter 11: Software Installation\n\n1. Introduction\n2. Eclipse Installation\n\
+    3. Jdk1.6 Installation And Configuring to Eclipse\n4. Tomcat1.6 Installation And\
+    \ Configuring to Eclipse\n5. MySql5.0 Installation\n6. Eclipse Font Size Increase\n\
+    \n## 1. Introduction\n\n- First → We will see → Software Installation and Configuration\n\
+    - Second → We will see → Complete Explanation of Different Topics With Diagrams\n\
+    \n## 2. Eclipse Installation\n\n![](image_rsrc23A.jpg)\n\nStep 1: ![](image_rsrc23B.jpg)\n\
+    Step 2: ![](image_rsrc23C.jpg)\nStep 3: ![](image_rsrc23D.jpg)\nStep 4: ![](image_rsrc23E.jpg)\n\
+    Step 5: ![](image_rsrc23F.jpg)\nStep 6: ![](image_rsrc23G.jpg)\nStep 7: ![](image_rsrc23H.jpg)\n\
+    Step 8: ![](image_rsrc23J.jpg)\nStep 9: ![](image_rsrc23K.jpg)\nStep 10: ![](image_rsrc23M.jpg)\n\
+    \n## 3. Jdk1.6 Installation And Configuring to Eclipse\n\nStep 1: ![](image_rsrc23N.jpg)\n\
+    Step 2: ![](image_rsrc23P.jpg)\nStep 3: ![](image_rsrc23R.jpg)\nStep 4: ![](image_rsrc23S.jpg)\n\
+    Step 5: ![](image_rsrc23T.jpg)\nStep 6: ![](image_rsrc23V.jpg)\nStep 7: ![](image_rsrc23W.jpg)\n\
+    Step 8: ![](image_rsrc23X.jpg)\nStep 9: ![](image_rsrc23Y.jpg)\nStep 10: ![](image_rsrc23Z.jpg)\n\
+    Step 11: ![](image_rsrc240.jpg)\nStep 12: ![](image_rsrc241.jpg)\nStep 13: ![](image_rsrc242.jpg)\n\
+    Step 14: ![](image_rsrc243.jpg)\n\n## 4. Tomcat1.6 Installation And Configuring\
+    \ to Eclipse\n\nStep 1: ![](image_rsrc244.jpg)\nStep 2: ![](image_rsrc245.jpg)\n\
+    Step 3: ![](image_rsrc246.jpg)\nStep 4: ![](image_rsrc247.jpg)\nStep 5: ![](image_rsrc248.jpg)\n\
+    Step 6: ![](image_rsrc24A.jpg)\nStep 7: ![](image_rsrc24B.jpg)\nStep 8: ![](image_rsrc24C.jpg)\n\
+    Step 9: ![](image_rsrc24D.jpg)\nStep 10: ![](image_rsrc24E.jpg)\nStep 11: ![](image_rsrc24F.jpg)\n\
+    Step 12: ![](image_rsrc24G.jpg)\nStep 13: ![](image_rsrc24H.jpg)\nStep 14: ![](image_rsrc24J.jpg)\n\
+    Step 15: ![](image_rsrc24K.jpg)\nStep 16: ![](image_rsrc24M.jpg)\nStep 17: ![](image_rsrc24N.jpg)\n\
+    Step 18: ![](image_rsrc24P.jpg)\nStep 19: ![](image_rsrc24R.jpg)\nStep 20: ![](image_rsrc24S.jpg)\n\
+    \n## 5. MySql5.0 Installation\n\nHere we will learn Step Step Installation process.\
+    \ Simply follow the steps.\n\nStep 1: ![](image_rsrc24T.jpg)\nStep 2: ![](image_rsrc24U.jpg)\n\
+    Step 3: ![](image_rsrc24V.jpg)\nStep 4: ![](image_rsrc24W.jpg)\nStep 5: ![](image_rsrc24X.jpg)\n\
+    Step 6: ![](image_rsrc24Y.jpg)\nStep 7: ![](image_rsrc24Z.jpg)\nStep 8: ![](image_rsrc250.jpg)\n\
+    Step 9: ![](image_rsrc251.jpg)\nStep 10: ![](image_rsrc252.jpg)\nStep 11: ![](image_rsrc253.jpg)\n\
+    Step 12: ![](image_rsrc254.jpg)\nStep 13: ![](image_rsrc255.jpg)\nStep 14: ![](image_rsrc256.jpg)\n\
+    Step 15: ![](image_rsrc257.jpg)\nStep 16: ![](image_rsrc258.jpg)\nStep 17: ![](image_rsrc259.jpg)\n\
+    Step 18: ![](image_rsrc25A.jpg)\nStep 19: ![](image_rsrc25B.jpg)\nStep 20: ![](image_rsrc25C.jpg)\n\
+    Step 21: ![](image_rsrc25D.jpg)\nStep 22: ![](image_rsrc25E.jpg)\nStep 23: ![](image_rsrc25F.jpg)\n\
+    Step 24: ![](image_rsrc25G.jpg)\nStep 25: ![](image_rsrc25H.jpg)\nStep 26: ![](image_rsrc25J.jpg)\n\
+    Step 27: ![](image_rsrc25K.jpg)\nStep 28: ![](image_rsrc25M.jpg)\nStep 29: ![](image_rsrc25N.jpg)\n\
+    Step 30: ![](image_rsrc25P.jpg)\n\n## 6. Eclipse Font Size Increase\n\nStep 1:\
+    \ ![](image_rsrc25R.jpg)\nStep 2: ![](image_rsrc25S.jpg)\nStep 3: ![](image_rsrc25T.jpg)\n\
+    Step 4: ![](image_rsrc25U.jpg)\nStep 5: ![](image_rsrc25V.jpg)\nStep 6: ![](image_rsrc25W.jpg)\n"
+  raw: 'Second basic conclusion:I/O activities cost many resources of the system,
+    therefore, the NodeJS manages use of I/O activities strictly. So you need to use
+    only Callback when you execute the duties related to I/O.
+
+
+    Chapter 10 :
+
+
+    NodeJS EventEmitter
+
+
+    NodeJS EventEmitter
+
+
+    NodeJS supports events in applications very perfectly. Every action on a computer
+    is an event. For example, when you read a file on hard drive. It means that you
+    have to do two actions "open the file" and "close it" after finishing reading
+    it, so here we have two " Open "&" Close " events. Based on events, you insert
+    your codes to do something.
+
+
+    | var fs = require(''fs'');// Create a stream to read filevar rs = fs.createReadStream(''C:/test/demo.txt'');//
+    The event ''open'':rs.on(''open'', function() {console.log(''File opened!'');});
+    |
+
+
+    Module events provides you with an EventEmitter class, that is a central class
+    in the NodeJS, assisting in defining an event, registering Listeners of this event,
+    and emitting (emit) the event.
+
+
+    Listener
+
+
+    In the NodeJS, the Listener is a function. It will be called to execute when an
+    event occurs. Probably, 0, 1 or many Listeners are being bound to such event.
+
+
+    For simplicity, look at the following illustration: a mouse and a mouse trap.
+    An event is prepared to take place. When the event occurs (the cake is stolen),
+    the mouse trap will perform its task. The mouse trap herein is a "Listener", which
+    will work when the event happens.
+
+
+    Example of EventEmitter
+
+
+    Import Eventsmodule, and declare an EventEmitter object:
+
+
+    | // Import events modulevar events = require(''events'');// Create an EventEmitter
+    objectvar eventEmitter = new events.EventEmitter(); |
+
+
+    Register Listeners (The functions will be called to execute when an event occurs).
+
+
+    | // Add Event ListenereventEmitter.addListener(''bellRing'', bellRingHandler1);//
+    Add Event ListenereventEmitter.addListener(''bellRing'', bellRingHandler2); |
+
+
+    Emit the event:
+
+
+    | // Fire bellRing event!!eventEmitter.emit(''bellRing'', ''Jerry''); |
+
+
+    | ![](image_rsrc239.jpg) |
+
+
+    first-example.js
+
+
+    | // Import events modulevar events = require(''events'');// Create an eventEmitter
+    objectvar eventEmitter = new events.EventEmitter();// A Listenervar bellRingHandler1
+    = function bellRingHandler1(who) {console.log("\n");console.log(''The Bell Ringing.....
+    (Handler 1)'');console.log(" " + who + " was standing behind the door!");if(who
+    == ''Jerry'') {console.log('' Tom, help me!!'');return;}console.log(" Welcome
+    " + who);}// A Listenervar bellRingHandler2 = function bellRingHandler2(who) {console.log("\n");console.log(''The
+    Bell Ringing..... (Handler 2)'');eventEmitter.emit("nobodyIsAtHome");}// A Listenervar
+    nobodyIsAtHomeHandler = function nobodyIsAtHomeHandler()  {console.log("\n");console.log("
+    Sorry, Nobody is at home now, Please leave your message!")}// Add Event ListenerseventEmitter.addListener(''bellRing'',
+    bellRingHandler1);eventEmitter.addListener(''bellRing'', bellRingHandler2);eventEmitter.addListener(''nobodyIsAtHome'',
+    nobodyIsAtHomeHandler);// ----- Testing ------// Fire bellRing event!!eventEmitter.emit(''bellRing'',
+    ''Jerry''); |
+
+
+    Run the example:
+
+
+    | node eventemitter-examples/first-example.js |
+
+
+    Chapter 11 :
+
+
+    Software  Installation
+
+
+    1   Introduction
+
+
+    2   Eclipse Installation
+
+
+    3   Jdk1.6 Installation And Configuring to Eclipse
+
+
+    4   Tomcat1.6 Installation And Configuring to Eclipse
+
+
+    5   MySql5.0 Installation
+
+
+    6   Eclipse Font Size Increase
+
+
+    1   Introduction
+
+
+    First          →    We will see
+
+
+    →    Software Installation and Configuration
+
+
+    Second     →    We will see
+
+
+    →    Complete Explanation of  Different Topics   
+
+
+    With Diagrams
+
+
+    2   Eclipse Installation
+
+
+    | ![](image_rsrc23A.jpg) |
+
+
+    Step 1 :
+
+
+    | ![](image_rsrc23B.jpg) |
+
+
+    Step 2 :
+
+
+    | ![](image_rsrc23C.jpg) |
+
+
+    Step 3 :
+
+
+    | ![](image_rsrc23D.jpg) |
+
+
+    Step 4 :
+
+
+    | ![](image_rsrc23E.jpg) |
+
+
+    Step 5 :
+
+
+    | ![](image_rsrc23F.jpg) |
+
+
+    Step 6 :
+
+
+    | ![](image_rsrc23G.jpg) |
+
+
+    Step 7 :
+
+
+    | ![](image_rsrc23H.jpg) |
+
+
+    Step 8 :
+
+
+    | ![](image_rsrc23J.jpg) |
+
+
+    Step 9 :
+
+
+    | ![](image_rsrc23K.jpg) |
+
+
+    Step 10 :
+
+
+    | ![](image_rsrc23M.jpg) |
+
+
+    3   Jdk1.6 Installation And Configuring to Eclipse
+
+
+    | ![](image_rsrc23N.jpg) |
+
+
+    Step 1 :
+
+
+    | ![](image_rsrc23P.jpg) |
+
+
+    Step 2 :
+
+
+    | ![](image_rsrc23R.jpg) |
+
+
+    Step 3 :
+
+
+    | ![](image_rsrc23S.jpg) |
+
+
+    Step 4 :
+
+
+    | ![](image_rsrc23T.jpg) |
+
+
+    Step 5 :
+
+
+    | ![](image_rsrc23U.jpg) |
+
+
+    Step 6 :
+
+
+    | ![](image_rsrc23V.jpg) |
+
+
+    Step 7 :
+
+
+    | ![](image_rsrc23W.jpg) |
+
+
+    Step 8 :
+
+
+    | ![](image_rsrc23X.jpg) |
+
+
+    Step 9 :
+
+
+    | ![](image_rsrc23Y.jpg) |
+
+
+    Step 10 :
+
+
+    | ![](image_rsrc23Z.jpg) |
+
+
+    Step 11 :
+
+
+    | ![](image_rsrc240.jpg) |
+
+
+    Step 12 :
+
+
+    | ![](image_rsrc241.jpg) |
+
+
+    Step 13 :
+
+
+    | ![](image_rsrc242.jpg) |
+
+
+    Step 14 :
+
+
+    | ![](image_rsrc243.jpg) |
+
+
+    Step 15 :
+
+
+    | ![](image_rsrc244.jpg) |
+
+
+    4   Tomcat1.6 Installation And Configuring to Eclipse
+
+
+    Step 1 :
+
+
+    | ![](image_rsrc245.jpg) |
+
+
+    Step 2 :
+
+
+    | ![](image_rsrc246.jpg) |
+
+
+    Step 3 :
+
+
+    | ![](image_rsrc247.jpg) |
+
+
+    Step 4 :
+
+
+    | ![](image_rsrc248.jpg) |
+
+
+    Step 5 :
+
+
+    | ![](image_rsrc249.jpg) |
+
+
+    Step 6 :
+
+
+    | ![](image_rsrc24A.jpg) |
+
+
+    Step 7 :
+
+
+    | ![](image_rsrc24B.jpg) |
+
+
+    Step 8 :
+
+
+    | ![](image_rsrc24C.jpg) |
+
+
+    Step 9 :
+
+
+    | ![](image_rsrc24D.jpg) |
+
+
+    Step 10 :
+
+
+    | ![](image_rsrc24E.jpg) |
+
+
+    Step 11 :
+
+
+    | ![](image_rsrc24F.jpg) |
+
+
+    Step 12 :
+
+
+    | ![](image_rsrc24G.jpg) |
+
+
+    Step 13 :
+
+
+    | ![](image_rsrc24H.jpg) |
+
+
+    Step 14 :
+
+
+    | ![](image_rsrc24J.jpg) |
+
+
+    Step 15 :
+
+
+    | ![](image_rsrc24K.jpg) |
+
+
+    Step 16 :
+
+
+    | ![](image_rsrc24M.jpg) |
+
+
+    Step 17 :
+
+
+    | ![](image_rsrc24N.jpg) |
+
+
+    Step 18 :
+
+
+    | ![](image_rsrc24P.jpg) |
+
+
+    Step 19 :
+
+
+    | ![](image_rsrc24R.jpg) |
+
+
+    Step 20 :
+
+
+    | ![](image_rsrc24S.jpg) |
+
+
+    5   MySql5.0 Installation
+
+
+    Here we will learn Step by Step Installation process.
+
+
+    Simply follow the steps.
+
+
+    | ![](image_rsrc24T.jpg) |
+
+
+    Step 1 :
+
+
+    | ![](image_rsrc24U.jpg) |
+
+
+    Step 2 :
+
+
+    | ![](image_rsrc24V.jpg) |
+
+
+    Step 3 :
+
+
+    | ![](image_rsrc24W.jpg) |
+
+
+    Step 4 :
+
+
+    | ![](image_rsrc24X.jpg) |
+
+
+    Step 5 :
+
+
+    | ![](image_rsrc24Y.jpg) |
+
+
+    Step 6 :
+
+
+    | ![](image_rsrc24Z.jpg) |
+
+
+    Step 7 :
+
+
+    | ![](image_rsrc250.jpg) |
+
+
+    Step 8 :
+
+
+    | ![](image_rsrc251.jpg) |
+
+
+    Step 9 :
+
+
+    | ![](image_rsrc252.jpg) |
+
+
+    Step 10 :
+
+
+    | ![](image_rsrc253.jpg) |
+
+
+    Step 11 :
+
+
+    | ![](image_rsrc254.jpg) |
+
+
+    Step 12 :
+
+
+    | ![](image_rsrc255.jpg) |
+
+
+    Step 13 :
+
+
+    | ![](image_rsrc256.jpg) |
+
+
+    Step 14 :
+
+
+    | ![](image_rsrc257.jpg) |
+
+
+    Step 15 :
+
+
+    | ![](image_rsrc258.jpg) |
+
+
+    Step 16 :
+
+
+    | ![](image_rsrc259.jpg) |
+
+
+    Step 17 :
+
+
+    | ![](image_rsrc25A.jpg) |
+
+
+    Step 18 :
+
+
+    | ![](image_rsrc25B.jpg) |
+
+
+    Step 19 :
+
+
+    | ![](image_rsrc25C.jpg) |
+
+
+    Step 20 :
+
+
+    | ![](image_rsrc25D.jpg) |
+
+
+    Step 21 :
+
+
+    | ![](image_rsrc25E.jpg) |
+
+
+    Step 22 :
+
+
+    | ![](image_rsrc25F.jpg) |
+
+
+    Step 23 :
+
+
+    | ![](image_rsrc25G.jpg) |
+
+
+    Step 24 :
+
+
+    | ![](image_rsrc25H.jpg) |
+
+
+    Step 25 :
+
+
+    | ![](image_rsrc25J.jpg) |
+
+
+    Step 26 :
+
+
+    | ![](image_rsrc25K.jpg) |
+
+
+    Step 27 :
+
+
+    | ![](image_rsrc25M.jpg) |
+
+
+    Step 28 :
+
+
+    | ![](image_rsrc25N.jpg) |
+
+
+    Step 29 :
+
+
+    | ![](image_rsrc25P.jpg) |
+
+
+    6   Eclipse Font Size Increase
+
+
+    Step 1 :
+
+
+    | ![](image_rsrc25R.jpg) |
+
+
+    Step 2 :
+
+
+    | ![](image_rsrc25S.jpg) |
+
+
+    Step 3 :
+
+
+    | ![](image_rsrc25T.jpg) |
+
+
+    Step 4 :
+
+
+    | ![](image_rsrc25U.jpg) |
+
+
+    Step 5 :
+
+
+    | ![](image_rsrc25V.jpg) |
+
+
+    Step 6 :
+
+
+    | ![](image_rsrc25W.jpg) |'
+  toc: []
+  trans: "\n第二个基本结论：I/O 活动消耗了系统大量的资源，因此 NodeJS 严格管理着 I/O 活动的使用。所以，在执行与 I/O 相关的任务时，你只需要使用\
+    \ `Callback`。\n\n# 第 10 章：NodeJS EventEmitter\n\nNodeJS 非常完美地支持应用程序中的事件。计算机上的每一个动作都是一个事件。例如，当你从硬盘上读取文件时。这意味着你在完成读取后必须执行“打开文件”和“关闭文件”这两个动作，因此这里有两个“Open”（打开）和“Close”（关闭）事件。基于事件，你可以插入代码执行某些操作。\n\
+    \n```javascript\nvar fs = require('fs'); // 创建一个流来读取文件\nvar rs = fs.createReadStream('C:/test/demo.txt');\
+    \ // 'open' 事件：\nrs.on('open', function() {console.log('File opened!');});\n```\n\
+    \n模块事件为你提供了一个 `EventEmitter` 类，它是 NodeJS 中的一个核心类，辅助定义事件、注册该事件的监听器（Listeners）以及发射（emit）事件。\n\
+    \n### 监听器 (Listener)\n\n在 NodeJS 中，监听器是一个函数。当事件发生时，它会被调用并执行。可能某个此类事件绑定了 0、1 或多个监听器。\n\
+    \n为了简单起见，请看下面的插图：一只老鼠和一个捕鼠夹。一个事件准备发生。当事件发生时（蛋糕被偷了），捕鼠夹将执行它的任务。这里的捕鼠夹就是“监听器”，它会在事件发生时工作。\n\
+    \n### EventEmitter 示例\n\n导入 `events` 模块并声明一个 `EventEmitter` 对象：\n\n```javascript\n\
+    // 导入 events 模块\nvar events = require('events');\n// 创建一个 EventEmitter 对象\nvar\
+    \ eventEmitter = new events.EventEmitter();\n```\n\n注册监听器（当事件发生时，这些函数将被调用执行）。\n\
+    \n```javascript\n// 添加事件监听器\neventEmitter.addListener('bellRing', bellRingHandler1);\n\
+    // 添加事件监听器\neventEmitter.addListener('bellRing', bellRingHandler2);\n```\n\n发射事件：\n\
+    \n```javascript\n// 触发 bellRing 事件!!\neventEmitter.emit('bellRing', 'Jerry');\n\
+    ```\n\n![](img/image_rsrc239.jpg)\n\n**first-example.js**\n\n```javascript\n//\
+    \ 导入 events 模块\nvar events = require('events');\n// 创建一个 eventEmitter 对象\nvar\
+    \ eventEmitter = new events.EventEmitter();\n// 一个监听器\nvar bellRingHandler1 =\
+    \ function bellRingHandler1(who) {\n    console.log(\"\\n\");\n    console.log('The\
+    \ Bell Ringing..... (Handler 1)');\n    console.log(\" \" + who + \" was standing\
+    \ behind the door!\");\n    if(who == 'Jerry') {\n        console.log(' Tom, help\
+    \ me!!');\n        return;\n    }\n    console.log(\" Welcome \" + who);\n}\n\
+    // 一个监听器\nvar bellRingHandler2 = function bellRingHandler2(who) {\n    console.log(\"\
+    \\n\");\n    console.log('The Bell Ringing..... (Handler 2)');\n    eventEmitter.emit(\"\
+    nobodyIsAtHome\");\n}\n// 一个监听器\nvar nobodyIsAtHomeHandler = function nobodyIsAtHomeHandler()\
+    \ {\n    console.log(\"\\n\");\n    console.log(\" Sorry, Nobody is at home now,\
+    \ Please leave your message!\")\n}\n// 添加事件监听器\neventEmitter.addListener('bellRing',\
+    \ bellRingHandler1);\neventEmitter.addListener('bellRing', bellRingHandler2);\n\
+    eventEmitter.addListener('nobodyIsAtHome', nobodyIsAtHomeHandler);\n// ----- 测试\
+    \ ------\n// 触发 bellRing 事件!!\neventEmitter.emit('bellRing', 'Jerry');\n```\n\n\
+    运行示例：\n\n```bash\nnode eventemitter-examples/first-example.js\n```\n\n# 第 11 章：软件安装\n\
+    \n1. 简介\n2. Eclipse 安装\n3. Jdk1.6 安装并配置到 Eclipse\n4. Tomcat1.6 安装并配置到 Eclipse\n\
+    5. MySql5.0 安装\n6. Eclipse 字体大小增大\n\n## 1. 简介\n\n- 第一 → 我们将看到 → 软件安装与配置\n- 第二\
+    \ → 我们将看到 → 带插图的不同主题的详细解释\n\n## 2. Eclipse 安装\n\n![](img/image_rsrc23A.jpg)\n\n\
+    第 1 步：![](img/image_rsrc23B.jpg)\n第 2 步：![](img/image_rsrc23C.jpg)\n第 3 步：![](img/image_rsrc23D.jpg)\n\
+    第 4 步：![](img/image_rsrc23E.jpg)\n第 5 步：![](img/image_rsrc23F.jpg)\n第 6 步：![](img/image_rsrc23G.jpg)\n\
+    第 7 步：![](img/image_rsrc23H.jpg)\n第 8 步：![](img/image_rsrc23J.jpg)\n第 9 步：![](img/image_rsrc23K.jpg)\n\
+    第 10 步：![](img/image_rsrc23M.jpg)\n\n## 3. Jdk1.6 安装并配置到 Eclipse\n\n第 1 步：![](img/image_rsrc23N.jpg)\n\
+    第 2 步：![](img/image_rsrc23P.jpg)\n第 3 步：![](img/image_rsrc23R.jpg)\n第 4 步：![](img/image_rsrc23S.jpg)\n\
+    第 5 步：![](img/image_rsrc23T.jpg)\n第 6 步：![](img/image_rsrc23V.jpg)\n第 7 步：![](img/image_rsrc23W.jpg)\n\
+    第 8 步：![](img/image_rsrc23X.jpg)\n第 9 步：![](img/image_rsrc23Y.jpg)\n第 10 步：![](img/image_rsrc24Z.jpg)\n\
+    第 11 步：![](img/image_rsrc240.jpg)\n第 12 步：![](img/image_rsrc241.jpg)\n第 13 步：![](img/image_rsrc242.jpg)\n\
+    第 14 步：![](img/image_rsrc243.jpg)\n\n## 4. Tomcat1.6 安装并配置到 Eclipse\n\n第 1 步：![](img/image_rsrc244.jpg)\n\
+    第 2 步：![](img/image_rsrc245.jpg)\n第 3 步：![](img/image_rsrc246.jpg)\n第 4 步：![](img/image_rsrc247.jpg)\n\
+    第 5 步：![](img/image_rsrc248.jpg)\n第 6 步：![](img/image_rsrc249.jpg)\n第 7 步：![](img/image_rsrc25A.jpg)\n\
+    第 8 步：![](img/image_rsrc25B.jpg)\n第 9 步：![](img/image_rsrc25C.jpg)\n第 10 步：![](img/image_rsrc25D.jpg)\n\
+    第 11 步：![](img/image_rsrc25E.jpg)\n第 12 步：![](img/image_rsrc25F.jpg)\n第 13 步：![](img/image_rsrc25G.jpg)\n\
+    第 14 步：![](img/image_rsrc25H.jpg)\n第 15 步：![](img/image_rsrc25J.jpg)\n第 16 步：![](img/image_rsrc25K.jpg)\n\
+    第 17 步：![](img/image_rsrc25L.jpg)\n第 18 步：![](img/image_rsrc25M.jpg)\n第 19 步：![](img/image_rsrc25N.jpg)\n\
+    第 20 步：![](img/image_rsrc25P.jpg)\n\n## 5. MySql5.0 安装\n\n我们将学习安装步骤。\n\n第 1 步：![](img/image_rsrc25Q.jpg)\n\
+    第 2 步：![](img/image_rsrc25R.jpg)\n第 3 步：![](img/image_rsrc25S.jpg)\n第 4 步：![](img/image_rsrc25T.jpg)\n\
+    第 5 步：![](img/image_rsrc25U.jpg)\n第 6 步：![](img/image_rsrc25V.jpg)\n第 7 步：![](img/image_rsrc25W.jpg)\n\
+    第 8 步：![](img/image_rsrc25X.jpg)\n第 9 步：![](img/image_rsrc25Y.jpg)\n第 10 步：![](img/image_rsrc25Z.jpg)\n\
+    第 11 步：![](img/image_rsrc260.jpg)\n第 12 步：![](img/image_rsrc261.jpg)\n第 13 步：![](img/image_rsrc262.jpg)\n\
+    第 14 步：![](img/image_rsrc263.jpg)\n\n## 6. Eclipse 字体大小增大\n\n第 1 步：![](img/image_rsrc264.jpg)\n\
+    第 2 步：![](img/image_rsrc265.jpg)\n第 3 步：![](img/image_rsrc266.jpg)\n第 4 步：![](img/image_rsrc267.jpg)\n\
+    第 5 步：![](img/image_rsrc268.jpg)\n第 6 步：![](img/image_rsrc269.jpg)\n"

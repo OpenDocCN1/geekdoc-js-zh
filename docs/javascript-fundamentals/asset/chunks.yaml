@@ -1,0 +1,2853 @@
+- fmt: "\n![](images/00013.jpeg)\n\n# Table of Contents\n\n- [WHAT IS JAVASCRIPT?](#part0001_split_002.html_pAt0)\n\
+    - [EMBEDDING JAVASCRIPT IN A WEB PAGE](#part0001_split_003.html_pATY)\n- [KEY\
+    \ TERMS](#part0001_split_004.html_pAPhMh)\n- [WORKING WITH JAVASCRIPT](#part0001_split_005.html_pA3tR)\n\
+    - [VALUES](#part0001_split_006.html_pAYp)\n- [OPERATORS](#part0001_split_007.html_pAqy)\n\
+    - [KEYWORDS AND COMMENTS](#part0001_split_008.html_pAPiEB)\n- [JAVASCRIPT DATA\
+    \ TYPES](#part0001_split_009.html_pAPef)\n- [OBJECTS](#part0001_split_010.html_pAXt_)\n\
+    - [HTML DOM](#part0001_split_011.html_pAMH)\n- [JAVASCRIPT OBJECT HIERARCHY](#part0001_split_012.html_pAUzc)\n\
+    - [JAVASCRIPT ARRAYS](#part0001_split_013.html_pANE)\n- [JAVASCRIPT EVENTS](#part0001_split_014.html_pAst8)\n\
+    - [AJAX AND CSS](#part0001_split_015.html_pA_ij)\n- [ONLINE RESOURCES](#part0001_split_016.html_pAqLi)\n\
+    \n![images/img-2-1.png](images/00001.jpeg)\n\n# JavaScript Fundamentals\n\n##\
+    \ WHAT IS JAVASCRIPT?\n\nJavaScript is a cross-platform, interpreted, object-based\
+    \ scripting language originally developed by Netscape Communications Corporation\
+    \ (now Oracle Corporation) to add multimedia elements, dynamic pages, and interactive\
+    \ content to a website. JavaScript allows web developers to dynamically change\
+    \ the content of a web page, as well as add form validation, manipulate images,\
+    \ open new windows, and much more. JavaScript can also be used to get information\
+    \ about the Internet browser and HTML page. JavaScript can be used together with\
+    \ Cascading Style Sheets to create Dynamic HTML. It is supported by most Internet\
+    \ browsers and enables interactive functions to be added to web pages.\n\n###\
+    \ Two Types of JavaScript\n\n- **Client-side**\n    - Enables enhancement and\
+    \ manipulation of web pages and client browsers\n    - Parsed and executed on\
+    \ client machine\n- **Server-side** (also known as \"LiveWire\")\n    - Enables\
+    \ back-end access to databases, file systems, and servers\n    - Stored and executed\
+    \ on server machine\n\n### JavaScript versus Java\n\nJavaScript is not part of\
+    \ the Java platform, nor does it create applets or standalone applications. It\
+    \ is embedded inside HTML files and adds interactivity to otherwise static HTML\
+    \ web pages. Java is an object-oriented programming language while JavaScript\
+    \ is an object-based scripting language. Java creates applications that run on\
+    \ a virtual machine or browser while JavaScript code is run on a browser only.\
+    \ Java code needs to be compiled while JavaScript code is all in text. Both require\
+    \ different plug-ins.\n\n### Differences between JavaScript and Java\n\n| JavaScript\
+    \ | Java |\n| :--- | :--- |\n| Interpreted by client (executes without compiling)\
+    \ | Compiled on server |\n| Object-based | Object-oriented |\n| Variable data\
+    \ types are not declared Dynamic binding | Variable data types should be declared\
+    \ Static binding |\n| Dynamic binding | Static binding |\n| Code embedded in HTML\
+    \ | Code runs only on systems with installed Java platform |\n\n**Did you know?**\n\
+    \nWhen JavaScript was developed by Netscape Communications Corporation back in\
+    \ 1995, it was originally named Mocha, then renamed to LiveScript since it was\
+    \ intended to be used as a server-side language similar to PHP. It was later renamed\
+    \ to JavaScript in Netscape 3.0 as a marketing move in order to promote Sun Microsystems’\
+    \ programming language called Java.\n\n### JavaScript Version History\n\n| Release\
+    \ Date | Version | Browser | Remarks |\n| :--- | :--- | :--- | :--- |\n| 1996\
+    \ | 1.0-1.1 | Netscape Navigator 2.0-3.0 and Internet Explorer 2.0. | Added new\
+    \ objects such as array, Boolean, function, and number |\n| 1997 | 1.2 | Netscape\
+    \ Navigator 4.0-4.05 | Added ability to nest functions within functions and regular\
+    \ expressions, as well as ability to create objects and arrays using literal notation\
+    \ |\n| 1998 | 1.3 | Netscape Navigator 4.06-4.7x | Includes Unicode support, JavaScript\
+    \ console, several changes to `data.prototype` methods, and strict equality operators\
+    \ |\n| 1999 | 1.4 | Server-side JavaScript | Changes to LiveConnect, exception\
+    \ handling (`throw` and `try… catch`) |\n| 2000 | 1.5 | Netscape Navigator 6.0\
+    \ and Firefox 1.0 | Included standardization for ECMA-262 3^(rd) Edition compliance\
+    \ |\n| 2005 | 1.6 | Firefox 1.5 | Includes ECMAScript for XML (E4X), Array methods\
+    \ plus string and array generics |\n| 2006 | 1.7 | Firefox 2 | Includes generators,\
+    \ iterators, array comprehensions, let expressions, and destructuring assignment\
+    \ |\n| 2008 | 1.8 | Firefox 3 | Includes expression closures, generator expressions,\
+    \ `array.prototype.reduce()`, and `array.prototype.reduceRight()` |\n| 2009 |\
+    \ 1.8.1-1.8.2 | Firefox 3.5-3.6 | Includes the TraceMonkey JIT and supports native\
+    \ JSON |\n| 2010 | 1.8.5 | Firefox 4 | Includes many new features for ECMA-262\
+    \ Edition 5 compliance |\n\n### Parts of JavaScript\n\n- **Basic Syntax**: JavaScript\
+    \ is based on the ECMAScript 262 standard, which defines how the core part of\
+    \ the language works. This includes the definition of how variables are defined,\
+    \ how calculations on those variables are performed, how loops and functions are\
+    \ set up, and how objects are defined.\n\n![images/himg-2-1.png](images/00002.jpeg)\n\
+    \n- **Document Object Model**: Defines how JavaScript communicates with a web\
+    \ page to extract content from the page for processing, adding content, or accessing\
+    \ the stylesheet to change the appearance of a page.\n- **Browser Object Model**:\
+    \ Defines how the scripts obtain information from the browser and pass information\
+    \ back to it.\n\n## EMBEDDING JAVASCRIPT IN A WEB PAGE\n\nThere are two ways to\
+    \ embed JavaScript in an HTML file:\n\n### Steps\n\n- Link to external file(s)\
+    \ with the file extension `.js`\n    1. Enter the following code to notepad or\
+    \ any text editor and then save it as `FirstCode htm`\n       ![images/himg-2-2.png](images/00003.jpeg)\n\
+    \    2. Enter the following code to notepad or any text editor and then save it\
+    \ as `MyFirstJavaScriptFile.js`\n       ![images/himg-2-3.png](images/00004.jpeg)\n\
+    \    3. Open your web browser, such as Internet Explorer, Mozilla Firefox, and\
+    \ Google Chrome, to see the result:\n       ![images/himg-3-1.png](images/00005.jpeg)\n\
+    - Write blocks of code in HTML documents with the `<script>` tag\n    **Steps**\n\
+    \    1. Copy and paste the following code to notepad or any text editor and save\
+    \ it as `FirstCode.htm`\n       ![images/himg-3-2.png](images/00006.jpeg)\n  \
+    \  2. Open your web browser, such as Internet Explorer, Mozilla Firefox, and Google\
+    \ Chrome, to see the result:\n       ![images/himg-3-3.png](images/00007.jpeg)\n\
+    \n## KEY TERMS\n\n| Terms | Description | Terms | Description |\n| :--- | :---\
+    \ | :--- | :--- |\n| Class | Defines the characteristics of an object | Namespace\
+    \ | A container which is used to bundle all functionality under a unique, application-specific\
+    \ name |\n| Cookie | An object containing information about the client that can\
+    \ be accessed by the server | Objects | Refers to windows, documents, images,\
+    \ tables, forms, buttons or links, etc. |\n| Events | Occurrences that happen\
+    \ in the context of the interaction between the web server, user and the browser\
+    \ | Operators | Used to handle variables |\n| Expressions | Commands that assign\
+    \ values to variables | Properties | Refers to object attributes |\n| Functions\
+    \ | Statements that perform tasks and include built-in and user-defined functions\
+    \ | Values | Refers to bits of information, such as number, string, boolean, null,\
+    \ object, and function |\n| Methods | Actions applied to particular objects |\
+    \ Variables | A named location in memory that is used to hold a value that can\
+    \ be changed by the program |\n\n## WORKING WITH JAVASCRIPT\n\n### Statements\n\
+    \nJavaScript statements consist of values, operators, expressions, keywords, and\
+    \ comments.\n\n| Statement | Description |\n| :--- | :--- |\n| const | Defines\
+    \ a read-only **constant** whose value cannot be changed (unlike a variable using\
+    \ `var`). It also cannot be re-declared once initially defined. |\n\n```\nconst\
+    \ mysalary =3000 //start (with a letter or underscore, then alphabetic)\n```\n"
+  raw: "\n\n![](images/00013.jpeg)\n\n# Table of Contents\n\n[WHAT IS JAVASCRIPT?](#part0001_split_002.html_pAt0)\n\
+    \n[EMBEDDING JAVASCRIPT IN A WEB PAGE](#part0001_split_003.html_pATY)\n\n[KEY\
+    \ TERMS](#part0001_split_004.html_pAPhMh)\n\n[WORKING WITH JAVASCRIPT](#part0001_split_005.html_pA3tR)\n\
+    \n[VALUES](#part0001_split_006.html_pAYp)\n\n[OPERATORS](#part0001_split_007.html_pAqy)\n\
+    \n[KEYWORDS AND COMMENTS](#part0001_split_008.html_pAPiEB)\n\n[JAVASCRIPT DATA\
+    \ TYPES](#part0001_split_009.html_pAPef)\n\n[OBJECTS](#part0001_split_010.html_pAXt_)\n\
+    \n[HTML DOM](#part0001_split_011.html_pAMH)\n\n[JAVASCRIPT OBJECT HIERARCHY](#part0001_split_012.html_pAUzc)\n\
+    \n[JAVASCRIPT ARRAYS](#part0001_split_013.html_pANE)\n\n[JAVASCRIPT EVENTS](#part0001_split_014.html_pAst8)\n\
+    \n[AJAX AND CSS](#part0001_split_015.html_pA_ij)\n\n[ONLINE RESOURCES](#part0001_split_016.html_pAqLi)\n\
+    \n![images/img-2-1.png](images/00001.jpeg)\n\n* * *\n\n# JavaScript Fundamentals\n\
+    \n* * *\n\n## WHAT IS JAVASCRIPT?\n\nJavaScript is a cross-platform, interpreted,\
+    \ object-based scripting language originally developed by Netscape Communications\
+    \ Corporation (now Oracle Corporation) to add multimedia elements, dynamic pages,\
+    \ and interactive content to a website. JavaScript allows web developers to dynamically\
+    \ change the content of a web page, as well as add form validation, manipulate\
+    \ images, open new windows, and much more. JavaScript can also be used to get\
+    \ information about the Internet browser and HTML page. JavaScript can be used\
+    \ together with Cascading Style Sheets to create Dynamic HTML. It is supported\
+    \ by most Internet browsers and enables interactive functions to be added to web\
+    \ pages.\n\n### Two Types of JavaScript\n\n*   **Client-side**\n\n    *   Enables\
+    \ enhancement and manipulation of web pages and client browsers\n\n    *   Parsed\
+    \ and executed on client machine\n\n*   **Server-side** (also known as \"LiveWire\"\
+    )\n\n    *   Enables back-end access to databases, file systems, and servers\n\
+    \n    *   Stored and executed on server machine\n\n### JavaScript versus Java\n\
+    \nJavaScript is not part of the Java platform, nor does it create applets or standalone\
+    \ applications. It is embedded inside HTML files and adds interactivity to otherwise\
+    \ static HTML web pages. Java is an object-oriented programming language while\
+    \ Java Script is an object-based scripting language. Java creates applications\
+    \ that run on a virtual machine or browser while JavaScript code is run on a browser\
+    \ only. Java code needs to be compiled while JavaScript code is all in text. Both\
+    \ require different plug-ins.\n\n### Differences between JavaScript and Java\n\
+    \n| **JavaScript** | **Java** |\n\n| Interpreted by client (executes without compiling)\
+    \ | Compiled on server |\n\n| Object-based | Object-oriented |\n\n| Variable data\
+    \ types are not declared Dynamic binding | Variable data types should be declared\
+    \ Static binding |\n\n| Dynamic binding | Static binding |\n\n| Code embedded\
+    \ in HTML | Code runs only on systems with installed Java platform |\n\n**Did\
+    \ you know?**\n\nWhen JavaScript was developed by Netscape Communications Corporation\
+    \ back in 1995, it was originally named Mocha, then renamed to LiveScript since\
+    \ it was intended to be used as a server-side language similar to PHP. It was\
+    \ later renamed to JavaScript in Netscape 3.0 as a marketing move in order to\
+    \ promote Sun Microsystems’ programming language called Java.\n\n### JavaScript\
+    \ Version History\n\n| **Release Date** | **Version** | **Browser** | **Remarks**\
+    \ |\n\n| 1996 | 1.0-1.1 | Netscape Navigator 2.0-3.0 and Internet Explorer 2.0.\
+    \ | Added new objects such as array, Boolean, function, and number |\n\n| 1997\
+    \ | 1.2 | Netscape Navigator 4.0-4.05 | Added ability to nest functions within\
+    \ functions and regular expressions, as well as ability to create objects and\
+    \ arrays using literal notation |\n\n| 1998 | 1.3 | Netscape Navigator 4.06-4.7x\
+    \ | Includes Unicode support, JavaScript console, several changes to data.prototype\
+    \ methods, and strict equality operators |\n\n| 1999 | 1.4 | Server-side JavaScript\
+    \ | Changes to LiveConnect, exception handling (throw and try… catch) |\n\n| **Release\
+    \ Date** | **Version** | **Browser** | **Remarks** |\n\n| 2000 | 1.5 | Netscape\
+    \ Navigator 6.0 and Firefox 1.0 | Included standardization for ECMA-262 3^(rd)\
+    \ Edition compliance |\n\n| 2005 | 1.6 | Firefox 1.5 | Includes ECMAScript for\
+    \ XML (E4X), Array methods plus string and array generics |\n\n| 2006 | 1.7 |\
+    \ Firefox 2 | Includes generators, iterators, array comprehensions, let expressions,\
+    \ and destructuring assignment |\n\n| 2008 | 1.8 | Firefox 3 | Includes expression\
+    \ closures, generator expressions, array. prototype.reduce(), and array.prototype.reduceRight()\
+    \ |\n\n| 2009 | 1.8.1-1.8.2 | Firefox 3.5-3.6 | Includes the TraceMonkey JIT and\
+    \ supports native JSON |\n\n| 2010 | 1.8.5 | Firefox 4 | Includes many new features\
+    \ for ECMA-262 Edition 5 compliance |\n\n### Parts of JavaScript\n\n*   **Basic\
+    \ Syntax**: JavaScript is based on the ECMAScript 262 standard, which defines\
+    \ how the core part of the language works. This includes the definition of how\
+    \ variables are defined, how calculations on those variables are performed, how\
+    \ loops and functions are set up, and how objects are defined.\n\n![images/himg-2-1.png](images/00002.jpeg)\n\
+    \n*   **Document Object Model:** Defines how JavaScript communicates with a web\
+    \ page to extract content from the page for processing, adding content, or accessing\
+    \ the stylesheet to change the appearance of a page.\n\n*   **Browser Object Model:**\
+    \ Defines how the scripts obtain information from the browser and pass information\
+    \ back to it.\n\n## EMBEDDING JAVASCRIPT IN A WEB PAGE\n\nThere are two ways to\
+    \ embed JavaScript in an HTML file:\n\n**Steps**\n\n*   Link to external file(s)\
+    \ with the file extension .js\n\n1.  Enter the following code to notepad or any\
+    \ text editor and then save it as FirstCode htm\n\n    ![images/himg-2-2.png](images/00003.jpeg)\n\
+    \n2.  Enter the following code to notepad or any text editor and then save it\
+    \ as MyFirstJavaScriptFile.js\n\n    ![images/himg-2-3.png](images/00004.jpeg)\n\
+    \n3.  Open your web browser, such as Internet Explorer, Mozilla Firefox, and Google\
+    \ Chrome, to see the result:\n\n    ![images/himg-3-1.png](images/00005.jpeg)\n\
+    \n*   Write blocks of code in HTML documents with the <script> tag\n\n    **Steps**\n\
+    \n1.  Copy and paste the following code to notepad or any text editor and then\
+    \ save it as FirstCode.htm\n\n    ![images/himg-3-2.png](images/00006.jpeg)\n\n\
+    2.  Open your web browser, such as Internet Explorer, Mozilla Firefox, and Google\
+    \ Chrome, to see the result:\n\n    ![images/himg-3-3.png](images/00007.jpeg)\n\
+    \n## KEY TERMS\n\n| **Terms** | **Description** | **Terms** | **Description**\
+    \ |\n\n| Class | Defines the characteristics of an object | Namespace | A container\
+    \ which is used to bundle all functionality under a unique, application-specific\
+    \ name |\n\n| Cookie | An object containing information about the client that\
+    \ can be accessed by the server | Objects | Refers to windows, documents, images,\
+    \ tables, forms, buttons or links, etc. |\n\n| Events | Occurrences that happen\
+    \ in the context of the interaction between the web server, user and the browser\
+    \ | Operators | Used to handle variables |\n\n| Expressions | Commands that assign\
+    \ values to variables | Properties | Refers to object attributes |\n\n| Functions\
+    \ | Statements that perform tasks and include built-in and user-defined functions\
+    \ | Values | Refers to bits of information, such as number, string, boolean, null,\
+    \ object, and function |\n\n| Methods | Actions applied to particular objects\
+    \ | Variables | A named location in memory that is used to hold a value that can\
+    \ be changed by the program |\n\n## WORKING WITH JAVASCRIPT\n\n**Statements**\n\
+    \nJavaScript statements consist of values, operators, expressions, keywords, and\
+    \ comments.\n\n| **Statements** |\n\n| **Statement** | **Description** |\n\n|\
+    \ const | Defines a read-only **constant** whose value cannot be changed (unlike\
+    \ a variable using “var”). It also cannot be re-declared once initially defined.\
+    \ |\n\n| **const mysalary =3000 //start** (with a letter or underscore, then alphabetic)\
+    \ |"
+  toc: []
+  trans: "\n\n![](img/00013.jpeg)\n\n# 目录\n\n- 什么是 JAVASCRIPT？\n- 在网页中嵌入 JAVASCRIPT\n\
+    - 核心术语\n- 操作 JAVASCRIPT\n- 值\n- 运算符\n- 关键字与注释\n- JAVASCRIPT 数据类型\n- 对象\n- HTML\
+    \ DOM\n- JAVASCRIPT 对象层次结构\n- JAVASCRIPT 数组\n- JAVASCRIPT 事件\n- AJAX 与 CSS\n-\
+    \ 在线资源\n\n![images/img-2-1.png](img/00001.jpeg)\n\n# JavaScript 基础\n\n## 什么是 JAVASCRIPT？\n\
+    \nJavaScript 是一种跨平台的、解释性的、基于对象的脚本语言，它最初由网景通信公司（现为甲骨文公司）开发，用于为网站添加多媒体元素、动态页面和交互内容。JavaScript\
+    \ 允许 Web 开发者动态更改网页的内容，还可以添加表单验证、处理图像、打开新窗口等许多功能。JavaScript 还可以用于获取有关浏览器浏览器和 HTML\
+    \ 页面的信息。JavaScript 可以与样式表（CSS）结合使用创建动态 HTML。它被大多数互联网浏览器支持，并允许为网页添加交互功能。\n\n###\
+    \ JavaScript 的两种类型\n\n- **客户端**\n    - 允许对网页和客户端浏览器进行增强处理\n    - 在客户端机器上进行解析和执行\n\
+    - **服务端**（也称为 \"LiveWire”）\n    - 允许访问后端数据库、文件系统和服务器\n    - 存储并执行在服务器机器上\n\n###\
+    \ JavaScript 与 Java\n\nJavaScript 并不是 Java 平台的一部分，它也不创建 Applet 或独立应用程序。它嵌入在 HTML\
+    \ 文件中，为原本静态的 HTML 网页添加交互性。Java 是一种面向对象的编程语言，而 JavaScript 是一种基于对象的脚本语言。Java 创建运行在虚拟机或浏览器上的应用程序，而\
+    \ JavaScript 代码仅在浏览器中运行。Java 代码需要编译，而 JavaScript 代码全以文本形式存在。两者都需要不同的插件。\n\n###\
+    \ JavaScript 和 Java 的区别\n\n| JavaScript | Java |\n| :--- | :--- |\n| 由客户端解释（无需编译即可执行）\
+    \ | 在服务器上编译 |\n| 基于对象 | 面向对象 |\n| 变量数据类型无需声明，动态绑定 | 变量数据类型应当声明，静态绑定 |\n| 动态绑定\
+    \ | 静态绑定 |\n| 代码嵌入 HTML 中 | 代码仅在安装了 Java 平台的系统上运行 |\n\n**你你知道吗？**\n\n当网景通信公司在\
+    \ 1995 年开发 JavaScript 时，它最初名为 Mocha，后来重命名为 LiveScript，因为它旨在用作类似于 PHP 的服务端语言。后来在\
+    \ Netscape 3.0 中它被重命名为 JavaScript，这是一种营销手段，为了推广 Sun Microsystems 的 Java 编程语言。\n\
+    \n### JavaScript 版本历史\n\n| 发布日期 | 版本 | 浏览器 | 备注 |\n| :--- | :--- | :--- | :---\
+    \ |\n| 1996 | 1.0-1.1 | Netscape Navigator 2.0-3.0 和 Internet Explorer 2.0。 |\
+    \ 添加了新对象，如数组、布尔、函数和数字 |\n| 1997 | 1.2 | Netscape Navigator 4.0-4.05 | 添加了函数内嵌套函数和正则表达式，以及使用字面量符号创建对象和数组的能力\
+    \ |\n| 1998 | 1.3 | Netscape Navigator 4.06-4.7x | 支持 Unicode、JavaScript 控制台、对\
+    \ `data.prototype` 方法的若干更改以及严格相等运算符 |\n| 1999 | 1.4 | 服务端 JavaScript | LiveConnect\
+    \ 的更改，异常处理（`throw` 和 `try… catch`） |\n| 2000 | 1.5 | Netscape Navigator 6.0 和\
+    \ Firefox 1.0 | 包含了符合 ECMA-262 第 3 版的标准化 |\n| 2005 | 1.6 | Firefox 1.5 | 包含用于\
+    \ XML 的 JavaScript (E4X)，数组方法以及字符串和数组泛型 |\n| 2006 | 1.7 | Firefox 2 | 包含生成器、迭代器、数组推导式、let\
+    \ 表达式和解构赋值 |\n| 2008 | 1.8 | Firefox 3 | 包含表达式闭包、生成器表达式、`array.prototype.reduce()`\
+    \ 和 `array.prototype.reduceRight()` |\n| 2009 | 1.8.1-1.8.2 | Firefox 3.5-3.6\
+    \ | 包含 TraceMonkey JIT 并支持原生 JSON |\n| 2010 | 1.8.5 | Firefox 4 | 包含了许多符合 ECMA-262\
+    \ 第 5 版的新功能 |\n\n### JavaScript 的组成\n\n- **基础语法**：JavaScript 基于 ECMAScript 262\
+    \ 标准，该标准定义了语言核心部分的工作原理。这包括如何定义变量、如何对这些变量进行计算、如何设置循环和函数以及如何定义对象。\n\n![images/himg-2-1.png](img/00002.jpeg)\n\
+    \n- **文档对象模型 (DOM)**：定义了 JavaScript 如何与网页通信，以便从页面提取内容进行处理、添加内容或访问样式表以更改页面外观。\n\
+    - **浏览器对象模型 (BOM)**：定义了脚本如何从浏览器获取信息并将信息传回浏览器。\n\n## 在网页中嵌入 JavaScript\n\n有两种方法可以在\
+    \ HTML 文件中嵌入 JavaScript：\n\n### 步骤\n\n- 链接到扩展名为 `.js` 的外部文件\n    1. 在记事本或任何文本编辑器中输入以下代码并将其保存为\
+    \ `FirstCode htm`\n       ![images/himg-2-2.png](img/00003.jpeg)\n    2. 在记事本或任何文本编辑器中输入以下代码并将其保存为\
+    \ `MyFirstJavaScriptFile.js`\n       ![images/himg-2-3.png](img/00004.jpeg)\n\
+    \    3. 打开你的网页浏览器（如 Internet Explorer、Mozilla Firefox 和 Google Chrome）查看结果：\n\
+    \       ![images/himg-3-1.png](img/00005.jpeg)\n- 在 HTML 文档中使用 `<script>` 标签编写代码块\n\
+    \    **步骤**\n    1. 将以下代码复制并粘贴到记事本或任何文本编辑器中，保存为 `FirstCode.htm`\n       ![images/himg-3-2.png](img/00006.jpeg)\n\
+    \    2. 打开你的网页浏览器（如 Internet Explorer、Mozilla Firefox 和 Google Chrome）查看结果：\n\
+    \       ![images/himg-3-3.png](img/00007.jpeg)\n\n## 核心术语\n\n| 术语 | 描述 | 术语 |\
+    \ 描述 |\n| :--- | :--- | :--- | :--- |\n| 类 (Class) | 定义对象的特征 | 命名空间 (Namespace)\
+    \ | 用于将所有功能封装在唯一的、特定应用程序名称下的容器 |\n| Cookie | 包含客户端信息的对象，服务器可以访问该信息 | 对象 (Objects)\
+    \ | 指窗口、文档、图像、表格、表单、按钮或链接等 |\n| 事件 (Events) |发生在 Web 服务器、用户和浏览器之间交互背景下的事件 | 运算符\
+    \ (Operators) | 用于处理变量 |\n| 表达式 (Expressions) | 为变量赋值的命令 | 属性 (Properties) | 指对象的属性\
+    \ |\n| 函数 (Functions) | 执行任务并包含内置函数和用户定义函数的语句 | 值 (Values) | 指信息片段，如数字、字符串、布尔、null、对象和函数\
+    \ |\n| 方法 (Methods) | 应用于特定对象的动作 | 变量 (Variables) | 内存中命名的位置，用于存储程序可以更改的值 |\n\n\
+    ## 操作 JavaScript\n\n### 语句\n\nJavaScript 语句由值、运算符、表达式、关键字和注释组成。\n\n| 语句 | 描述 |\n\
+    | :--- | :--- |\n| const | 定义一个只读**常量**，其值无法更改（与使用 `var` 的变量不同）。定义后不能重新声明。 |\n\
+    \n```\nconst mysalary =3000 //开始（以字母或下划线开头，然后是字母）\n```\n\n"
+- fmt: "\n| `var` | The `var` statement is used to explicitly declare a variable in\
+    \ JavaScript. While technically it is not necessary to insert the `var` statement\
+    \ in front of a variable to create it, it is a good programming practice. Once\
+    \ a variable is declared, that variable can continue to be referenced without\
+    \ including the `var` statement. |\n\n```javascript\nvar x=5\nx=x+10\n// (x now\
+    \ contains 15)\n```\n\n| `with` | The `with` statement is a time-saving statement\
+    \ to “cache” an object so that for `for` statements that follow it is no longer\
+    \ necessary to reference the object again when referring to it. |\n\n```javascript\n\
+    with (document form 1)[field1 value=”test” field 2 value=”test2”]\n```\n\n## Conditional\
+    \ Statements\n\n| Statement | Description |\n| :--- | :--- |\n| `if` | Specifies\
+    \ a block of code to be executed if the condition is true. |\n\n```html\n<html>\n\
+    <body>\n<script type=\"text/javascript\">\nvar age=28;\nif (age > 18){document.write\
+    \ (<<b>Qualifies for a driving license</b>>);}\n</script>\n</body>\n</html>\n\
+    ```\n**Result:** Qualifies for a driving license\n\n| `if/else` | Specifies a\
+    \ new condition to test if the first condition is false. |\n\n```html\n<html>\n\
+    <body>\n<script type=\"text/javascript\">\nvar age=17; \nif (age > 18){document.write\
+    \ (<<b>Qualifies for a driving license</b>>);}\nelse {document.write (<<b>Does\
+    \ not qualify for a driving license</b>>);}\n</script>\n</body>\n</html>\n```\n\
+    **Result:** Qualifies for a driving license or does not qualify for a driving\
+    \ license\n\n| `switch`, `case`, `break`, `default` | “**Switch**” executes a\
+    \ different statement depending on the value of an expression. “**Break**” is\
+    \ an optional statement that instructs “switch” to exit should the preceding statement\
+    \ be executed. “**Default**” instructs the statement to execute if none of the\
+    \ statements are executed. |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\"\
+    >\nvar grade=’A’;\ndocument.write (“Entering switch block=<br/>);\nswitch (grade)\n\
+    {\ncase ‘A’: document.write(“Excellent<br/>);break;\ncase ‘B’ document.write(“Good<br/>);break;\n\
+    case ‘C’ document.write(“Average<br/>);break;\ncase ‘D’ document.write(“Below\
+    \ average<br/>);break;\ncase ‘F’ document.write(“Poor<br/>);break;\ndefault: document.write(“No\
+    \ grade<br/>);break; \n}\ndocument.write (“Exiting switch block);\n</script>\n\
+    </body>\n</html>\n```\n**Result:** Entering switch block/ Excellent/ Exiting switch\
+    \ block\n\n| `?:` | “`?:`” or the conditional operator is used for constructing\
+    \ an evaluation and executing two different assignments depending on the result.\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar a = 15;\n\
+    var b = 30;\nvar linebreak = “<br />”;\ndocument.write (“((a > b) ? 150 : 300)\
+    \ => “);\nresult = (a > b) ? 150 : 300;\ndocument.write (result);\ndocument.write\
+    \ (linebreak);\ndocument.write (“((a < b) ? 150 : 300) => “);\nresult = (a < b)\
+    \ ? 150 : 300;\ndocument.write (result);\ndocument.write (linebreak);\n</script>\n\
+    </body>\n</html>\n```\n**Result:** ((a > b) ? 150 : 300) => 300 ((a < b) ? 150\
+    \ : 300) => 150\n\n| `return` | “**Return**” exits a function and optionally returns\
+    \ a value. It is used inside functions. |\n\n```html\n<html>\n<head>\n<script\
+    \ type=\"text/javascript\">\nfunction concatenate(first, last)\n{\nvar full;\n\
+    full = first + last;\nreturn full;\n}\nfunction secondFunction()\n{\nvar result;\n\
+    result = concatenate (‘Book’, ‘Dog’);\nalert(result );\n}\n</script>\n</head>\n\
+    <body>\n<p>Click the following button to call the function</p>\n<form>\n<input\
+    \ type=\"button\" onclick=”secondFunction()” value=”Call Function”>\n</form>\n\
+    </body>\n</html>\n```\n**Result:** BookDog\n\n## Looping Statements\n\n| Statement\
+    \ | Description |\n| :--- | :--- |\n| `for` | The statement `**for**` executes\
+    \ the enclosed statements multiple times based on three conditions **initial**,\
+    \ **limit**, and **increment** defined inside the `for` parenthesis `()`. |\n\n\
+    ```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar count;\ndocument.write\
+    \ (“Start Loop…”+”<br/>);\nfor(count=0;count=6; count++)\n{\ndocument.write(“Current\
+    \ Count :”+ count );\na document.write(<br/>);}\n}\ndocument.write(“…End loop!”);\n\
+    </script>\n</body>\n</html>\n```\n\n| `while` | A ****while** loop continuously\
+    \ executes the enclosed statements as long as the tested expression evaluates\
+    \ to true. If the expression is false, the entire `while` loop is skipped. |\n\
+    \n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar count = 0;\n\
+    document.write(“Start loop...”);\nwhile (count < 6){\ndocument.write(“Current\
+    \ Count : “ + count + “<br />”);\ncount++;\n}\ndocument.write(“... End loop!”);\n\
+    </script>\n</body>\n</html>\n```\n\n| `do/while` | This statement differs from\
+    \ the standard ****while** statement in that the expression tested for is placed\
+    \ at the end, ensuring that a ****do/while** loop is always executed at least\
+    \ once. |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\n<!--\n\
+    var count = 1;\ndocument.write (“Starting Loop” + “<br />”);\ndo{\ndocument.write\
+    \ (“Current Count : “ + count + “<br />”);\ncount++;\n}while (count < 0);\ndocument.write(“Loop\
+    \ stopped!”);\n//-->\n</script>\n</body>\n</html>\n```\n\n| `for/in` | Loops through\
+    \ the properties of an object; applies to built-in or custom objects. |\n\n```html\n\
+    <html>\n<body>\n<script type=\"text/javascript\">\nvar aProperty;\ndocument.write\
+    \ (“Object<br/>);\nfor (aProperty in Navigator)\n{\ndocument.write(aProperty);\n\
+    }\ndocument.write (“End loop”);\n</script>\n</body>\n</html>\n```\n\n| `break`\
+    \ | Causes an exit of the innermost loop. |\n\n```html\n<html>\n<body>\n<script\
+    \ type=\"text/javascript\">\nvar x = 0;\ndocument.write (“Start loop...”);\nwhile\
+    \ (x < 20)\n{\nif (x == 5){\nbreak; // out of loop\n}\nx = x + 1;\n}\ndocument.write\
+    \ (“End loop”);\n</script>\n</body>\n</html>\n```\n\n| `continue` | Causes JavaScript\
+    \ to skip the rest of the statements that follow, and continue with the next iteration.\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar x = 0;\n\
+    document.write (“Start loop...”);\nwhile (x < 6)\n{\nif (x == 5){\ncontinue; //\
+    \ rest of the loop\n}\nx = x + 1;\n}\ndocument.write (“End loop”);\n</script>\n\
+    </body>\n</html>\n```\n\n## VALUES\n\nThe two types of **values** used in JavaScript\
+    \ syntax are fixed and variable.\n\n*   **Literals:** Fixed values are called\
+    \ **literals**. In JavaScript, numeric values are written with or without decimals\
+    \ such as:\n    9.5\n    9\n    text strings are written either with double or\
+    \ single quotes such as\n    study guide”\n    Harvard University’\n    Fixed\
+    \ values can also refer to expressions written as:\n    5 + 7\n    5 * 7\n\n*\
+    \   **Variables:** Non-fixed values are called **variables**, which used to store\
+    \ values. In JavaScript, the keyword `var` is used to define variables. The equal\
+    \ sign (=) is used to assign values to variables such as:\n    `var myName = “John”`\n\
+    \n## Operators\n\nAn **operator** acts on a variable and changes its value. JavaScript\
+    \ language supports the following type of operators: arithmetic, assignment, bitwise,\
+    \ comparison, conditional, and logical.\n\n| **Arithmetic Operators** |\n\n| **Operator**\
+    \ | **Description** | **Given Variables** A = **15** and B = **30** |\n"
+  raw: "| var | The **var** statement is used to explicitly declare a variable in\
+    \ JavaScipt. While technically it is not necessary to insert the var statement\
+    \ in front of a variable to create it, it is a good programming practice. Once\
+    \ a variable is declared, that variable can continue to be referenced without\
+    \ including the var statement. |\n\n| var x=5 x=x+10//\n\n(x now contains 15)\
+    \ |\n\n| with | The **with** statement is a time-saving statement to “cache” an\
+    \ object so that for statements that follow it is no longer necessary to reference\
+    \ the object again when referring to it. |\n\n| with (document form 1)[field1\
+    \ value=”test” field 2 value=”test2”] |\n\n| **Conditional Statements** |\n\n\
+    | **Statement** | **Description** |\n\n| if | Specifies a block of code to be\
+    \ executed if the condition is true. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar age=28;\n\nif (age > 18){document.write (<b>Qualifies for a driving\n\n\
+    license</b>”;}\n\n<script>\n\n<body>\n\n<html> |\n\n| **Result:** Qualifies for\
+    \ a driving license |\n\n| if/else | Specifies a new condition to test if the\
+    \ first condition is false. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar age=17; if (age > 18){document.write (<b>Qualifies for a driving\n\nlicense</b>”;}\n\
+    \nelse {document.write (<b>Does not qualify for a driving\n\nlicense</b>”;}\n\n\
+    <script>\n\n<body>\n\n<html> |\n\n| **Result:** Qualifies for a driving license\
+    \ or does not qualify for a driving license |\n\n| switch case break default |\
+    \ **“Switch”** executes a different statement depending on the value of an expression.\
+    \ **“Break”** is an optional statement that instructs “switch” to exit should\
+    \ the preceding statement be executed. **“Default”** instructs the statement to\
+    \ execute if none of the statements are executed. |\n\n| <html> <body>\n\n<script\
+    \ type=”text/javascript”>\n\nvar grade=’A’;\n\ndocument.write (“Entering switch\
+    \ block=<br/>);\n\nswitch (grade)\n\n{case ‘A’: document.write(“Excellent<br/>);break;\n\
+    \ncase ‘B’ document.write(“Good<br/>);break;\n\ncase ‘C’ document.write(“Average<br/>);break;\n\
+    \ncase ‘D’ document.write(“Below average<br/>);break;\n\ncase ‘F’ document.write(“Poor<br/>);break;\n\
+    \ndefault: document.write(“No grade<br/>);break; }\n\ndocument.write (“Exiting\
+    \ switch block);\n\n<script>\n\n<body>\n\n<html> |\n\n| **Result:** Entering switch\
+    \ block/ Excellent/ Exiting switch block |\n\n| ?: | “?:” or the conditional operator\
+    \ is used for constructing an evaluation and executing two different assignments\
+    \ depending on the result. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar a = 15;\n\nvar b = 30;\n\nvar linebreak = “<br />”;\n\ndocument.write (“((a\
+    \ > b) ? 150 : 300) => “);\n\nresult = (a > b) ? 150 : 300;\n\ndocument.write\
+    \ (result);\n\ndocument.write (linebreak);\n\ndocument.write (“((a < b) ? 150\
+    \ : 300) => “);\n\nresult = (a < b) ? 150 : 300;\n\ndocument.write (result);\n\
+    \ndocument.write (linebreak);\n\n</script>\n\n</body>\n\n</html> |\n\n| **Result:**\
+    \ ((a > b) ? 150 : 300) => 300 ((a < b) ? 150 : 300) => 150 |\n\n| return | “Return”\
+    \ exits a function and optionally returns a value. It is used inside functions.\
+    \ |\n\n| <html> <head>\n\n<script type=”text/javascript”>\n\nfunction concatenate(first,\
+    \ last)\n\n{\n\nvar full;\n\nfull = first + last;\n\nreturn full;\n\n}\n\nfunction\
+    \ second Function()\n\n{\n\nvar result;\n\nresult = concatenate (‘Book’, ‘Dog’);\n\
+    \nalert(result );\n\n}\n\n</script>\n\n</head>\n\n<body>\n\n<p>Click the following\
+    \ button to call the function</p>\n\n<form>\n\n<input type=”button” onclick=”second\
+    \ Function()” value=”Call\n\nFunction”>\n\n</form>\n\n</body>\n\n</html> |\n\n\
+    | **Result:** BookDog |\n\n| **Looping Statements** |\n\n| **Statement** | **Description**\
+    \ |\n\n| for | The statement **for** executes the enclosed statements multiple\
+    \ times based on three conditions **initial, limit,** and **increment** defined\
+    \ inside the “for” parenthesis ( ). |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar count;\n\ndocument.write (“Start Loop…”\n\n+”<br/>);\n\nfor(count=0;count=6;\
+    \ count++)\n\n{document.write(“Current Count :”\n\n+ count );\n\na document.write(<br/>);}\n\
+    \ndocument.write(“…End loop!”);\n\n<script>\n\n<body>\n\n<html> |\n\n| while |\
+    \ A **while** loop continuously executes the enclosed statements as long as the\
+    \ tested expression evaluates to true. If the expression is false, the entire\
+    \ while loop is skipped. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar count = 0;\n\ndocument.write(“Start loop...”);\n\nwhile (count < 6){\n\n\
+    document.write(“Current\n\nCount : “ + count + “<br />”);\n\ncount++;\n\n}\n\n\
+    document.write(“... End loop!”);\n\n</script>\n\n</body>\n\n</html> |\n\n| Do/while\
+    \ | This statement differs from the standard **while** statement in that the expression\
+    \ tested for is placed at the end, ensuring that a **do/while** loop is always\
+    \ executed at least once. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \n<!--\n\nvar count = 1;\n\ndocument.write(“Starting\n\nLoop” + “<br />”);\n\n\
+    do{\n\ndocument.write(“Current\n\n Count : “ + count + “<br />”);\n\ncount++;\n\
+    \n}while (count < 0);\n\ndocument.write(“Loop\n\nstopped!”);\n\n//-->\n\n</script>\n\
+    \n</body>\n\n</html> |\n\n| for/in | Loops through the properties of an object;\
+    \ applies to built-in or custom objects. |\n\n| <html> <body>\n\n<script type=”text/javascript”>\n\
+    \nvar aProperty;\n\ndocument.write(“Navigator\n\nObject Properties<br /> “);\n\
+    \nfor (aProperty in navigator)\n\n{\n\ndocument.write(aProperty);\n\ndocument.write(“<br\
+    \ />”);\n\n}\n\ndocument.write(“... End loop!”);\n\n</script>\n\n</body>\n\n</html>\
+    \ |\n\n| break | Causes an exit of the innermost loop in which the statement is\
+    \ contained. It is used to prematurely end a loop. |\n\n| <html> <body>\n\n<script\
+    \ type=”text/javascript”>\n\nvar x = 0;\n\ndocument.write(“Start\n\n loop...<br\
+    \ /> “);\n\nwhile (x < 20)\n\n{\n\nif (x == 5){\n\nbreak; // breaks out of loop\n\
+    \ncompletely\n\n}\n\nx = x + 1;\n\n}\n\ndocument.write(“... End\n\nloop!<br />\
+    \ “);\n\n</script>\n\n</body>\n\n</html> |\n\n| continue | Causes JavaScript to\
+    \ skip the rest of the statements that may follow in a loop, and continue with\
+    \ the next iteration. Unlike in a break statement, the loop is not exited. |\n\
+    \n| <html> <body>\n\n<script type=”text/javascript”>\n\nvar x = 0;\n\ndocument.write(“Start\n\
+    \nloop...<br /> “);\n\nwhile (x < 6)\n\n{\n\nx = x + 1;\n\nif (x == 5){\n\ncontinue;\
+    \ // skill rest of the\n\nloop body\n\n}\n\ndocument.write( x + “<br />”);\n\n\
+    }\n\ndocument.write(“... End\n\nloop!<br /> “);\n\n</script>\n\n</body>\n\n</html>\
+    \ |\n\n## VALUES\n\nThe two types of **values** used in the JavaScript syntax\
+    \ are fixed and variable values.\n\n*   **Literals:** Fixed values are called\
+    \ **literals**. In JavaScript, numeric values are written with or without decimals\
+    \ such as:\n\n    9.5\n\n    9\n\n    while text strings are written either with\
+    \ double or single quotes such as\n\n    study guide”\n\n    Harvard University’\n\
+    \n    Fixed values can also refer to expressions written as:\n\n    5 + 7\n\n\
+    \    5 * 7\n\n*   **Variables:** Non-fixed values are called **variables**, which\
+    \ are used to store values. In JavaScript, the keyword **var** is used to define\
+    \ variables. The equal sign (=) is used to assign values to variables such as:\n\
+    \n    var myName = “John”\n\n**Rules When Naming Variables**\n\n*   Variables\
+    \ cannot be reserved words.\n\n*   Variables should start with a letter or an\
+    \ underscore (e.g., “myName” or “ _myName”).\n\n*   Numbers can be used in variable\
+    \ name as long as it is not the first character (e.g., “myName01” or “myName$”).\n\
+    \n*   Spaces are not allowed in variable names (e.g., “my Name” should be “myName”).\n\
+    \n*   The first letter of every word should be capitalized, except the first (e.g.,\
+    \ “myName” or “myFirstName”).\n\n*   To declare variables, the keyword **var**\
+    \ and the variable name is used (e.g., “var myName”).\n\n*   To assign values\
+    \ to variables, the equal sign and the value are added (e.g., “var myProduct =\
+    \ “Laser” var price = 400).\n\n*   Variable names are case sensitive, so **y**\
+    \ does not equal **Y**.\n\n## OPERATORS\n\nAn **operator** acts on a variable\
+    \ and changes its value. JavaScript language supports the following type of operators:\
+    \ arithmetic, assignment, bitwise, comparison, conditional, and logical.\n\n|\
+    \ **Arithmetic Operators** |\n\n| **Operator** | **Description** | **Given Variables**\
+    \ A = **15** and B = **30** |"
+  toc: []
+  trans: "\n\n| `var` | `var` 语句用于在 JavaScript 中显式声明变量。虽然从技术上讲，并不非在变量前面插入 `var` 语句来创建它，但这是一种良好的编程习惯。一旦声明了变量，就可以继续引用该变量而无需包含\
+    \ `var` 语句。 |\n\n```javascript\nvar x=5\nx=x+10\n// (x now contains 15)\n```\n\
+    \n| `with` | `with` 语句是一种节省时间的语句，用于“缓存”对象，这样在随其后的 `for` 语句中，引用该对象时不再需要再次引用它。 |\n\
+    \n```javascript\nwith (document form 1)[field1 value=”test” field 2 value=”test2”]\n\
+    ```\n\n## 条件语句\n\n| 语句 | 描述 |\n| :--- | :--- |\n| `if` | 如果条件为真，则执行指定的代码块。 |\n\
+    \n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar age=28;\nif\
+    \ (age > 18){document.write (<<b>Qualifies for a driving license</b>>);}\n</script>\n\
+    </body>\n</html>\n```\n**Result：** 具备驾照资格\n\n| `if/else` | 如果第一个条件为假，则指定一个新条件进行测试。\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar age=17;\
+    \ \nif (age > 18){document.write (<<b>Qualifies for a driving license</b>>);}\n\
+    else {document.write (<<b>Does not qualify for a driving license</b>>);}\n</script>\n\
+    </body>\n</html>\n```\n**Result：** 驾照资格或不具备驾照资格\n\n| `switch`, `case`, `break`,\
+    \ `default` | “**Switch**”根据表达式的值执行不同的语句。“**Break**”是一个可选语句，如果执行了先前的语句，它将指示“switch”退出。“**Default**”在没有语句被执行时，指令语句执行相应的默认操作。\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar grade=’A’;\n\
+    document.write (“Entering switch block=<br/>);\nswitch (grade)\n{\ncase ‘A’: document.write(“Excellent<br/>);break;\n\
+    case ‘B’ document.write(“Good<br/>);break;\ncase ‘C’ document.write(“Average<br/>);break;\n\
+    case ‘D’ document.write(“Below average<br/>);break;\ncase ‘F’ document.write(“Poor<br/>);break;\n\
+    default: document.write(“No grade<br/>);break; \n}\ndocument.write (“Exiting switch\
+    \ block);\n</script>\n</body>\n</html>\n```\n**Result：** Entering switch block/\
+    \ Excellent/ Exiting switch block\n\n| `?:` | “`?:`”或条件运算符用于构建一个评估并根据结果执行两个不同的赋值。\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar a = 15;\n\
+    var b = 30;\nvar linebreak = “<br />”;\ndocument.write (“((a > b) ? 150 : 300)\
+    \ => “);\nresult = (a > b) ? 150 : 300;\ndocument.write (result);\ndocument.write\
+    \ (linebreak);\ndocument.write (“((a < b) ? 150 : 300) => “);\nresult = (a < b)\
+    \ ? 150 : 300;\ndocument.write (result);\ndocument.write (linebreak);\n</script>\n\
+    </body>\n</html>\n```\n**Result：** ((a > b) ? 150 : 300) => 300 ((a < b) ? 150\
+    \ : 300) => 150\n\n| `return` | “**Return**”退出函数并可选地返回一个值。它用在函数内部。 |\n\n```html\n\
+    <html>\n<head>\n<script type=\"text/javascript\">\nfunction concatenate(first,\
+    \ last)\n{\nvar full;\nfull = first + last;\nreturn full;\n}\nfunction secondFunction()\n\
+    {\nvar result;\nresult = concatenate (‘Book’, ‘Dog’);\nalert(result );\n}\n</script>\n\
+    </head>\n<body>\n<p>点击下方按钮调用函数</p>\n<form>\n<input type=\"button\" onclick=”secondFunction()”\
+    \ value=”Call Function”>\n</form>\n</body>\n</html>\n```\n**Result：** BookDog\n\
+    \n## 循环语句\n\n| 语句 | 描述 |\n| :--- | :--- |\n| `for` | `**for**` 语句根据 `for` 括号 `()`\
+    \ 内定义的三个条件**初始化 (initial)**、**限制 (limit)** 和**增量 (increment)**，多次执行包含的语句。 |\n\n\
+    ```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar count;\ndocument.write\
+    \ (“Start Loop…”+”<br/>);\nfor(count=0;count=6; count++)\n{\ndocument.write(“Current\
+    \ Count :”+ count );\na document.write(<br/>);}\n}\ndocument.write(“…End loop!”);\n\
+    </script>\n</body>\n</html>\n```\n\n| `while` | 只要测试的表达式为真，***循环就会持续执行包含的语句。如果表达式为假，则跳过整个\
+    \ `while` 循环。 |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\n\
+    var count = 0;\ndocument.write(“Start loop...”);\nwhile (count < 6){\ndocument.write(“Current\
+    \ Count : “ + count + “<br />”);\ncount++;\n}\ndocument.write(“... End loop!”);\n\
+    </script>\n</body>\n</html>\n```\n\n| `do/while` | 该语句与标准的***while** 语句的区别在于，测试的表达式被放在末尾，确保***do/while**\
+    \ 循环至少执行一次。 |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\n\
+    <!--\nvar count = 1;\ndocument.write (“Starting Loop” + “<br />”);\ndo{\ndocument.write\
+    \ (“Current Count : “ + count + “<br />”);\ncount++;\n}while (count < 0);\ndocument.write(“Loop\
+    \ stopped!”);\n//-->\n</script>\n</body>\n</html>\n```\n\n| `for/in` | 遍历对象的属性；适用于内置对象或自定义对象。\
+    \ |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\nvar aProperty;\n\
+    document.write (“Object<br/>);\nfor (aProperty in Navigator)\n{\ndocument.write(aProperty);\n\
+    }\ndocument.write (“End loop”);\n</script>\n</body>\n</html>\n```\n\n| `break`\
+    \ | 退出最内层循环。 |\n\n```html\n<html>\n<body>\n<script type=\"text/javascript\">\n\
+    var x = 0;\ndocument.write (“Start loop...”);\nwhile (x < 20)\n{\nif (x == 5){\n\
+    break; // 跳出循环\n}\nx = x + 1;\n}\ndocument.write (“End loop”);\n</script>\n</body>\n\
+    </html>\n```\n\n| `continue` | 使 JavaScript 跳过后续的所有语句，并继续下次迭代。 |\n\n```html\n\
+    <html>\n<body>\n<script type=\"text/javascript\">\nvar x = 0;\ndocument.write\
+    \ (“Start loop...”);\nwhile (x < 6)\n{\nif (x == 5){\ncontinue; // 循环剩余语句\n}\n\
+    x = x + 1;\n}\ndocument.write (“End loop”);\n</script>\n</body>\n</html>\n```\n\
+    \n## 值\n\nJavaScript 语法中使用的两种**值**是固定值和变量值。\n\n*   **字面量：** 固定值被称为**字面量**。在 JavaScript\
+    \ 中，数值可以带有或不带有小数，例如：\n    9.5\n    9\n    文本字符串可以使用双引号或单引号编写，例如\n    study guide”\n\
+    \    Harvard University’\n    固定值也可以指向表达式，如：\n    5 + 7\n    5 * 7\n\n*   **变量：**\
+    \ 非固定值被称为**变量**，用于存储值。在 JavaScript 中，使用 `var` 关键字定义变量。等号 (=) 用于为变量赋值，例如：\n   \
+    \ `var myName = “John”`\n\n## 运算符\n\n**运算符**作用于变量并改变其值。JavaScript 语言支持以下类型的运算符：算术、赋值、位运算、比较、条件和逻辑。\n\
+    \n| **算术运算符** |\n\n| **运算符** | **描述** | **给定变量** A = **15** 和 B = **30** |\n\n"
+- fmt: '
+
+    | Operator | Description | Result |
+
+    | :--- | :--- | :--- |
+
+    | `+` | Adds two operands | |
+
+    | | `A + B` | `Result = 45` |
+
+    | `-` | Subtracts second operand from first | |
+
+    | | `A - B` | `Result = -15` |
+
+    | `*` | Multiplies both operands | |
+
+    | | `A * B` | `Result = 450` |
+
+    | `/` | Divides numerator by denominator | |
+
+    | | `B / A` | `Result = 2` |
+
+    | `%` | Modulus operator; finds the remainder after division of one number by
+    another | |
+
+    | | `B % A` | `Result = 0` |
+
+    | `++` | Increment operator; increases integer value by one | |
+
+    | | `A++` | `Result = 16` |
+
+    | `--` | Decrement operator; decreases integer value by one | |
+
+    | | `A--` | `Result = 14` |
+
+
+    ## Assignment Operators
+
+
+    | Operator | Description | Result |
+
+    | :--- | :--- | :--- |
+
+    | `=` | Simple assignment operator assigns values from right side operands to
+    left side operand | |
+
+    | | `C = A + B` | Assigns value of `A+B` into `C` |
+
+    | `+=` | Add AND assignment operator adds right operand to the left operands and
+    assigns the result to the left operand | |
+
+    | | `C += A` | Equivalent to `C = C + A` |
+
+    | `-=` | Subtract AND assignment operator subtracts right operand from left operand
+    and assigns the result to the left operand | |
+
+    | | `C -= A` | Equivalent to `C = C-A` |
+
+    | `*=` | Multiply AND assignment operator multiplies right operand with the left
+    operand and assigns the result to the left operand | |
+
+    | | `C *= A` | Equivalent to `C = C * A` |
+
+    | `/=` | Divide AND assignment operator divides left operand with the right operand
+    and assigns the result to the left operand | |
+
+    | | `C /= A` | Equivalent to `C = C / A` |
+
+    | `%=` | Modulus AND assignment operator takes modulus using two operands and
+    assigns the result to left operand | |
+
+    | | `C %= A` | Equivalent to `C = C % A` |
+
+
+    ## Bitwise Operators
+
+
+    | Operator | Description | Given Variables A = 2 and B = 3 |
+
+    | :--- | :--- | :--- |
+
+    | `&` | Bitwise AND operator performs a Boolean AND operation on each bit of its
+    integer arguments | |
+
+    | | `(A & B)` | `Result = 2` |
+
+    | `\|` | Bitwise OR operator performs a Boolean OR operation on each bit of its
+    integer arguments | |
+
+    | | `(A \| B)` | `Result = 3` |
+
+    | `^` | Bitwise XOR operator performs a Boolean OR operation on each bit of its
+    integer arguments | |
+
+    | | `(A ^ B)` | `Result = 1` |
+
+    | `~` | Bitwise NOT operator is a unary operator that reverses all bits in the
+    operand | |
+
+    | | `(~ B)` | `Result = -4` |
+
+    | `<<` | Bitwise Shift Left operator moves all bits in its first operand to the
+    left by the number of places specified in the second operand | |
+
+    | | `A << 1` | `Result = 4` |
+
+    | `>>` | Bitwise Shift Right operator moves all bits in its first operand to the
+    right by the number of places specified in the second operand | |
+
+    | | `A >> 1` | `Result = 1` |
+
+    | `>>>` | Bitwise Shift Right with Zero operator; similar to the >> operator except
+    that the bits shifted in on the left are always zero (0) | |
+
+    | | `A >>> 1` | `Result = 1` |
+
+
+    ## Comparison Operators
+
+
+    | Operator | Description | Given Variables A = 15 and B = 30 |
+
+    | :--- | :--- | :--- |
+
+    | `==` | Checks if the value of two operands are equal or not; if yes, then the
+    condition becomes true | |
+
+    | | `(A == B)` | `Result = Not true` |
+
+    | `!=` | Checks if the value of two operands are equal or not; if values are not
+    equal then the condition becomes true | |
+
+    | | `(A != B)` | `Result = True` |
+
+    | `>` | Checks if the value of the left operand is greater than the value of the
+    right operand, then the condition becomes true | |
+
+    | | `(A > B)` | `Result = Not true` |
+
+    | `<` | Checks if the value of the left operand is less than the value of the
+    right operand, then the condition becomes true | |
+
+    | | `(A <= B)` | `Result = True` |
+
+    | `>=` | Checks if the value of the left operand is greater than or equal to the
+    value of the right operand, then the condition becomes true | |
+
+    | | `(A >= B)` | `Result = Not true` |
+
+    | `<=` | Checks if the value of the left operand is less than or equal to the
+    value of the right operand, then the condition becomes true | |
+
+    | | `(A <= B)` | `Result = True` |
+
+
+    ## Conditional Operators
+
+
+    | Operator | Description |
+
+    | :--- | :--- |
+
+    | `?:` | Conditional expression |
+
+    | | If Condition is true, then value = X, otherwise value =Y |
+
+
+    ## Logical Operators
+
+
+    | Operator | Description | Given Variables A = 15 and B = 30 |
+
+    | :--- | :--- | :--- |
+
+    | `&&` | Logical AND operator. If both the operands are non-zero, then the condition
+    becomes true | |
+
+    | | `(A && B)` | `Result = True` |
+
+    | `\|\|` | Logical OR operators. If any of the two operands are non-zero, then
+    the condition becomes true | |
+
+    | | `(A \|\| B)` | `Result = True` |
+
+    | `!` | Logical NOT operator. Use to reverse the logical state of its operand.
+    If a condition is true, then the Logical NOT operator will make it false. | |
+
+    | | `(A && B)` | `Result = False` |
+
+
+    ## KEYWORDS AND COMMENTS
+
+
+    ### JavaScript Keywords
+
+
+    Keywords in JavaScript are utilized to identify actions to be performed. For example,
+    the `var` keyword instructs the browser to create a new keyword:
+
+
+    ```javascript
+
+    var x = 1 + 2;
+
+    var y = x * 15;
+
+    ```
+
+
+    ### Reserved Words
+
+
+    In JavaScript, several identifiers are reserved words. These keywords cannot be
+    used as variables, functions, methods, loop labels, or any object names when programming
+    with JavaScript.
+
+
+    | abstract | else | instanceof | switch |
+
+    | : | : | | : | : : |
+
+    | boolean | enum | int | synchronized |
+
+    | break | export | interface | this |
+
+    | byte | extends | long | throw |
+
+    | case | false | native | throws |
+
+    | catch | final | new | transient |
+
+    | char | finally | null | true |
+
+    | class | float | package | try |
+
+    | const | for | private | typeof |
+
+    | continue | function | protected | var |
+
+    | debugger | goto | public | void |
+
+    | default | if | return | volatile |
+
+    | delete | implements | short | while |
+
+    | do | import | static | with |
+
+    | double | in | super | |
+
+
+    ### Comments
+
+
+    JavaScript supports C-, C++-, and HTML comments. Text entered between `//` and
+    the end of a line is treated as a comment and is ignored by JavaScript. Another
+    comment formatting recognized by JavaScript is the tag `/*`. Text that is entered
+    between `/*` and `*/` (may span multiple lines) is ignored, as is the opening
+    and closing tags `<!<!--` and `//-->`.
+
+
+    **Example:**
+
+
+    ![images/himg-6-1.png](images/00008.jpeg)
+
+
+    #### Tips When Writing JavaScript
+
+
+    * Line breaks are ignored except within a statement.
+
+    * JavaScript is case sensitive—keywords, variables, function names, and other
+    identifiers should use consistent capitalizaton.
+
+    * White spaces between words and tabs are ignored.
+
+    * JavaScript statements end with a semicolon, unless they are placed on a separate
+    line.
+
+
+    ## JAVASCRIPT DATA TYPES
+
+
+    Data types are the classification of values based on the specific categories where
+    they are stored. There are two types:
+
+
+    * Primitive Types – refer to String, Boolean, Integer, Floating Point, Null, Void
+
+    * Composite Types – refer to Object, Array, Function
+
+
+    ### JavaScript Numeric
+
+
+    | Type | Description |
+
+    | :--- | :--- |
+
+    | Integer | Positive or negative numerical values that have no fractional parts
+    or decimal places |
+
+    | Floating Point | Positive or negative numerical values that have a decimal point
+    or exponential notations |
+
+    | String | Characters or text surrounded by single or double quotes |
+
+    | Boolean | Logical values True or False |
+
+    | Null | Variable that does not have a value |
+
+    | Casting | Moving the contents of a variable from one type to another |
+
+
+    ### JavaScript String
+
+
+    JavaScript strings are used for storing and manipulating text. The JavaScript
+    string stores a series of characters like “study guides.” A string can be any
+    text inside quotes. You can use single or double quotes. You can also use quotes
+    inside a string, as long as they do not match the quotes surrounding the string.
+
+
+    **Escape Sequences**
+
+    '
+  raw: '| **+** | Adds two operands |  |
+
+
+    |  | A + B | **Result =** 45 |
+
+
+    | **-** | Subtracts second operand from first |  |
+
+
+    |  | A - B | **Result = -**15 |
+
+
+    | ***** | Multiplies both operands |  |
+
+
+    |  | A * B | **Result =** 450 |
+
+
+    | **/** | Divides numerator by denominator |  |
+
+
+    |  | B / A | **Result =** 2 |
+
+
+    | **%** | **Modulus** operator; finds the remainder |  |
+
+
+    |  | after division of one number by another |  |
+
+
+    |  | B % A | **Result =** 0 |
+
+
+    | **++** | **Increment** operator; increases integer |  |
+
+
+    |  | value by one |  |
+
+
+    |  | A++ | **Result =** 16 |
+
+
+    | **--** | **Decrement** operator; decreases integer |  |
+
+
+    |  | value by one |  |
+
+
+    |  | A-- | **Result =** 14 |
+
+
+    | **Assignment Operators** |
+
+
+    | **Operator** | **Description** | **Result** |
+
+
+    | **=** | **Simple assignment** operator assigns values from right side operands
+    to left side operand |  |
+
+
+    |  | C = A + B | Assigns value of A+B into C |
+
+
+    | **+=** | **Add AND** assignment operator adds right operand to the left operands
+    and assigns the result to the left operand |  |
+
+
+    |  | C += A | Equivalent to C = C + A |
+
+
+    | **-=** | **Subtract AND** assignment operator subtracts right operand from left
+    operand and assigns the result to left operand |  |
+
+
+    |  | C -= A | Equivalent to C = C-A |
+
+
+    | ***=** | **Multiply AND** assignment operator multiplies right operand with
+    the left operand and assigns the result to left operand |  |
+
+
+    |  | C *= A | Equivalent to C = C * A |
+
+
+    | **/=** | **Divide AND** assignment operator divides left operand with the right
+    operand and assigns the result to left operand |  |
+
+
+    |  | C /= A | Equivalent to C = C / A |
+
+
+    | **%=** | **Modulus AND** assignment operator takes modulus using two operands
+    and assigns the result to left operand |  |
+
+
+    |  | C %= A | Equivalent to C = C % A |
+
+
+    | **Bitwise Operators** |
+
+
+    | **Operator** | **Description** | **Given Variables** A = **2** and B = **3**
+    |
+
+
+    | **&** | Bitwise **AND** operator performs a Boolean AND operation on each bit
+    of its integer arguments |  |
+
+
+    |  | (A & B) | **Result =** 2 |
+
+
+    | **&#124;** | Bitwise **OR** operator performs a Boolean OR operation on each
+    bit of its integer arguments |  |
+
+
+    |  | (A &#124; B) | **Result =** 3 |
+
+
+    | **^** | Bitwise **XOR** operator performs a Boolean OR operation on each bit
+    of its integer arguments |  |
+
+
+    |  | (A ^ B) | **Result =** 1 |
+
+
+    | **~** | Bitwise **NOT** operator is a unary operator that reverses all bits
+    in the operand |  |
+
+
+    |  | (~ B) | **Result = -**4 |
+
+
+    | **<<** | Bitwise **Shift Left** operator moves all bits in its first operand
+    to the left by the number of places specified in the second operand |  |
+
+
+    |  | A << 1 | **Result =** 4 |
+
+
+    | **>>** | Bitwise **Shift Right** operator moves all bits in its first operand
+    to the right by the number of places specified in the second operand |  |
+
+
+    |  | A >> 1 | **Result =** 1 |
+
+
+    | **>>>** | Bitwise **Shift Right with Zero** operator; similar to the >> operator
+    except that the bits shifted in on the left are always zero (0) |  |
+
+
+    |  | A >>> 1 | **Result =** 1 |
+
+
+    | **Comparison Operators** |
+
+
+    | **Operator** | **Description** | **Given Variables** A = **15** and B = **30**
+    |
+
+
+    | **==** | Checks if the value of two operands are equal or not; if yes, then
+    the condition becomes true |  |
+
+
+    |  | (A == B) | **Result =** Not true |
+
+
+    | **!=** | Checks if the value of two operands are equal or not; if values are
+    not equal then the condition becomes true |  |
+
+
+    |  | (A != B) | **Result =** True |
+
+
+    | **>** | Checks if the value of the left operand is greater than the value of
+    the right operand, then the condition becomes true |  |
+
+
+    |  | (A > B) | **Result =** Not true |
+
+
+    | **<** | Checks if the value of the left operand is less than the value of the
+    right operand, then the condition becomes true |  |
+
+
+    |  | (A <= B) | **Result =** True |
+
+
+    | **>=** | Checks if the value of the left operand is greater than or equal to
+    the value of the right operand, then the condition becomes true |  |
+
+
+    |  | (A >= B) | **Result =** Not true |
+
+
+    | **<=** | Checks if the value of the left operand is less than or equal to the
+    value of the right operand, then the condition becomes true |  |
+
+
+    |  | (A <= B) | **Result =** True |
+
+
+    | **Conditional Operators** |
+
+
+    | **Operator** | **Description** |
+
+
+    | **?:** | Conditional expression |
+
+
+    |  | If Condition is true, then value = X, otherwise value =Y |
+
+
+    | **Logical Operators** |
+
+
+    | **Operator** | **Description** | **Given Variables** A = **15** and B = **30**
+    |
+
+
+    | **&&** | **Logical AND operator.** If both the operands are non-zero, then the
+    condition becomes true |  |
+
+
+    |  | (A && B) | **Result =** True |
+
+
+    | **&#124;&#124;** | **Logical OR operators.** If any of the two operands are
+    non-zero, then the condition becomes true |  |
+
+
+    |  | (A &#124; &#124; B) | **Result =** True |
+
+
+    | **!** | **Logical NOT operator.** Use to reverse the logical state of its operand.
+    If a condition is true, then the Logical NOT operator will make it false. |  |
+
+
+    |  | (A && B) | **Result =** False |
+
+
+    ## KEYWORDS AND COMMENTS
+
+
+    JavaScript Keywords
+
+
+    Keywords in JavaScript are utilized to identify actions to be performed. For example,
+    the var keyword instructs the browser to create a new keyword:
+
+
+    var x = 1 + 2;
+
+
+    var y = x * 15;
+
+
+    ### Reserved Words
+
+
+    In JavaScript, several identifiers are reserved words. These keywords cannot be
+    used as variables, functions, methods, loop labels, or any object names when programming
+    with JavaScript.
+
+
+    | abstract | else | instanceof | switch |
+
+
+    | boolean | enum | int | synchronized |
+
+
+    | break | export | interface | this |
+
+
+    | byte | extends | long | throw |
+
+
+    | case | false | native | throws |
+
+
+    | catch | final | new | transient |
+
+
+    | char | finally | null | true |
+
+
+    | class | float | package | try |
+
+
+    | const | for | private | typeof |
+
+
+    | continue | function | protected | var |
+
+
+    | debugger | goto | public | void |
+
+
+    | default | if | return | volatile |
+
+
+    | delete | implements | short | while |
+
+
+    | do | import | static | with |
+
+
+    | double | in | super |  |
+
+
+    ### Comments
+
+
+    JavaScript supports C-, C++-, and HTML comments. Text entered between “//” and
+    the end of a line is treated as a comment and is ignored by JavaScript. Another
+    comment formatting recognized by JavaScript is the tag “/*”. Text that is entered
+    between “/*” and “*/” (may span multiple lines) is ignored, as is the opening
+    and closing tags “<!—“ and “//-->”.
+
+
+    **Example:**
+
+
+    ![images/himg-6-1.png](images/00008.jpeg)
+
+
+    **Tips When Writing JavaScript**
+
+
+    *   Line breaks are ignored except within a statement.
+
+
+    *   JavaScript is case sensitive—keywords, variables, function names, and other
+    identifiers should use consistent capitalizaton.
+
+
+    *   White spaces between words and tabs are ignored.
+
+
+    *   JavaScript statements end with a semicolon, unless they are placed on a separate
+    line.
+
+
+    ## JAVASCRIPT DATA TYPES
+
+
+    Data types are the classification of values based on the specific categories where
+    they are stored. There are two types:
+
+
+    *   Primitive Types – refer to String, Boolean, Integer, Floating Point, Null,
+    Void
+
+
+    *   Composite Types – refer to Object, Array, Function
+
+
+    ### JavaScript Numeric
+
+
+    | Integer | Positive or negative numerical values that have no fractional parts
+    or decimal places |
+
+
+    | Floating Point | Positive or negative numerical values that have a decimal point
+    or exponential notations |
+
+
+    | String | Characters or text surrounded by single or double quotes |
+
+
+    | Boolean | Logical values True or False |
+
+
+    | Null | Variable that does not have a value |
+
+
+    | Casting | Moving the contents of a variable from one type to another |
+
+
+    ### JavaScript String
+
+
+    JavaScript strings are used for storing and manipulating text. The JavaScript
+    string stores a series of characters like “study guides.” A string can be any
+    text inside quotes. You can use single or double quotes. You can also use quotes
+    inside a string, as long as they do not match the quotes surrounding the string.
+
+
+    **Escape Sequences**'
+  toc: []
+  trans: '
+
+
+    | 运算符 | 说明 | 结果 |
+
+    | :--- | :--- | :--- |
+
+    | `+` | 将两个操作数相 | |
+
+    | | `A + B` | `Result = 45` |
+
+    | `-` | 从第一个操作数中减去第二个操作数 | |
+
+    | | `A - B` | `Result = -15` |
+
+    | `*` | 两个操作数乘 | |
+
+    | | `A * B` | `Result = 450` |
+
+    | `/` | 被除数除以除数 | |
+
+    | | `B / A` | `Result = 2` |
+
+    | `%` | 取模运算符；找到一个数除以另一个数的余数 | |
+
+    | | `B % A` | `Result = 0` |
+
+    | `++` | 增增运算符；将整数值加一 | |
+
+    | | `A++` | `Result = 16` |
+
+    | `--` | 减减运算符；将整数值减一 | |
+
+    | | `A--` | `Result = 14` |
+
+
+    ## 赋值运算符
+
+
+    | 运算符 | 说明 | 结果 |
+
+    | :--- | :--- | :--- |
+
+    | `=` | 简单赋值运算符，将右侧操作数的值赋给左侧操作数 | |
+
+    | | `C = A + B` | 将 `A+B` 的值赋给 `C` |
+
+    | `+=` | 加赋值运算符，将右操作数加到左侧操作数上并将结果赋给左侧操作数 | |
+
+    | | `C += A` | 等同于 `C = C + A` |
+
+    | `-=` | 减赋值运算符，从左操作数中减去右操作数并将结果赋给左侧操作数 | |
+
+    | | `C -= A` | 等同于 `C = C-A` |
+
+    | `*=` | 乘赋值运算符，将右操作数与左操作数相乘并将结果赋给左侧操作数 | |
+
+    | | `C *= A` | 等同于 `C = C * A` |
+
+    | `/=` | 除赋值运算符，将左操作数除以右操作数并将结果赋给左侧操作数 | |
+
+    | | `C /= A` | 等同于 `C = C / A` |
+
+    | `%=` | 取模赋值运算符，使用两个操作数取模并将结果赋给左侧操作数 | |
+
+    | | `C %= A` | 等同于 `C = C % A` |
+
+
+    ## 位运算符
+
+
+    | 运算符 | 说明 | 给定变量 A = 2 且 B = 3 |
+
+    | :--- | :--- | :--- |
+
+    | `&` | 位与运算符，对整数参数的每个位执行布尔逻辑与操作 | |
+
+    | | `(A & B)` | `Result = 2` |
+
+    | `\|` | 位或运算符，对整数参数的每个位执行布尔逻辑或操作 | |
+
+    | | `(A \| B)` | `Result = 3` |
+
+    | `^` | 位异异运算符，对整数参数的每个位执行布尔逻辑异或操作 | |
+
+    | | `(A ^ B)` | `Result = 1` |
+
+    | `~` | 位非运算符，是一个一元运算符，用于反转操作数中的所有位 | |
+
+    | | `(~ B)` | `Result = -4` |
+
+    | `<<` | 位左移运算符，将第一个操作数中的所有位向左移动第二个操作数指定的位数 | |
+
+    | | `A << 1` | `Result = 4` |
+
+    | `>>` | 位右移运算符，将第一个操作数中的所有位向右移动第二个操作数指定的位数 | |
+
+    | | `A >> 1` | `Result = 1` |
+
+    | `>>>` | 无符号右移运算符；与 >> 运算符类似，不同之处左侧移入的位始终为 0 (0) | |
+
+    | | `A >>> 1` | `Result = 1` |
+
+
+    ## 比较运算符
+
+
+    | 运算符 | 说明 | 给定变量 A = 15 且 B = 30 |
+
+    | :--- | :--- | :--- |
+
+    | `==` | 检查两个操作数的值是否相等；如果是，则条件为真 | |
+
+    | | `(A == B)` | `Result = Not true` |
+
+    | `!=` | 检查两个操作数的值是否相等；如果值不相等，则条件为真 | |
+
+    | | `(A != B)` | `Result = True` |
+
+    | `>` | 检查左操作数的值是否大于右操作数的值，如果是，则条件为真 | |
+
+    | | `(A > B)` | `Result = Not true` |
+
+    | `<` | 检查左操作数的值是否小于右操作数的值，如果是，则条件为真 | |
+
+    | | `(A <= B)` | `Result = True` |
+
+    | `>=` | 检查左操作数的值是否大于或等于右操作数的值，如果是，则条件为真 | |
+
+    | | `(A >= B)` | `Result = Not true` |
+
+    | `<=` | 检查左操作数的值是否小于或等于右操作数的值，如果是，则条件为真 | |
+
+    | | `(A <= B)` | `Result = True` |
+
+
+    ## 条件运算符
+
+
+    | 运算符 | 说明 |
+
+    | :--- | :--- |
+
+    | `?:` | 条件条件表达式 |
+
+    | | 如果条件为真，则 value = X，否则 value = Y |
+
+
+    ## 逻辑运算符
+
+
+    | 运算符 | 说明 | 给定变量 A = 15 且 B = 30 |
+
+    | :--- | :--- | :--- |
+
+    | `&&` | 逻辑与运算符。如果两个操作数都非零，则条件为真 | |
+
+    | | `(A && B)` | `Result = True` |
+
+    | `\|\|` | 逻辑或运算符。如果两个操作数中有一个非零，则条件为真 | |
+
+    | | `(A \|\| B)` | `Result = True` |
+
+    | `!` | 逻辑非运算符。用于反转其操作数的逻辑状态。如果条件为真，则逻辑非运算符将使其为假 | |
+
+    | | `(A && B)` | `Result = False` |
+
+
+    ## 关键字与注释
+
+
+    ### JavaScript 关键字
+
+
+    JavaScript 中的关键字用于标识标识要执行的动作。例如，`var` 关键字指示浏览器创建一个新的关键字：
+
+
+    ```javascript
+
+    var x = 1 + 2;
+
+    var y = x * 15;
+
+    ```
+
+
+    ### 保留字
+
+
+    在 JavaScript 中，有几个标识符是保留字。在编写 JavaScript 时，这些关键字不能用作变量、函数、方法、循环标签或任何对象名称。
+
+
+    | abstract | else | instanceof | switch |
+
+    | :--- | :--- | :--- | :--- |
+
+    | boolean | enum | int | synchronized |
+
+    | break | export | interface | this |
+
+    | byte | extends | long | throw |
+
+    | case | false | native | throws |
+
+    | catch | final | new | transient |
+
+    | char | finally | null | true |
+
+    | class | float | package | try |
+
+    | const | for | private | typeof |
+
+    | continue | function | protected | var |
+
+    | debugger | goto | public | void |
+
+    | default | if | return | volatile |
+
+    | delete | implements | short | while |
+
+    | do | import | static | with |
+
+    | double | in | super | |
+
+
+    ### 注释
+
+
+    JavaScript 支持 C-、C++- 和 HTML 注释。在 `//` 到行尾之间的文本被视为注释并被 JavaScript 忽略。JavaScript
+    识别的另一种注释格式是标签 `/*`。在 `/*` 和 `*/` 之间输入的文本（可以跨多行）会被忽略，起始和结束标签 `<!<!--` 和 `//-->`
+    也是如此。
+
+
+    **示例：**
+
+
+    ![images/himg-6-1.png](img/00008.jpeg)
+
+
+    #### 编写 JavaScript 的提示
+
+
+    * 换行在语句内部会被忽略。
+
+    * JavaScript 是大小写敏感的——关键字、变量、函数名和其他标识符应使用一致的大小写。
+
+    * 单词之间的空格和制表符会被忽略。
+
+    * JavaScript 语句以分号结束，除非它们单独成行。
+
+
+    ## JavaScript 数据类型
+
+
+    数据类型是根据存储的特定类别对值进行分类。有两种类型：
+
+
+    * 原始类型 —— 指 String, Boolean, Integer, Floating Point, Null, Void
+
+    * 复合类型 —— 指 Object, Array, Function
+
+
+    ### JavaScript 数字
+
+
+    | 类型 | same |
+
+    | :--- | :--- |
+
+    | Integer | 没有分数部分或小数位的正负数值 |
+
+    | Floating Point | 带有小数点或指数表示法的正负数值 |
+
+    | String | 被单引号或双引号围绕的字符或文本 |
+
+    | Boolean | 逻辑值 True 或 False |
+
+    | Null | 无值的变量 |
+
+    | Casting | 将变量的内容从一种类型转换为另一种类型 |
+
+
+    '
+- fmt: "\nString escape sequences allow the user to parse string literals in JavaScript\
+    \ for special characters/ formatting, such as newlines within a TEXTATEA’s input.\n\
+    \n| Escape Sequences | Properties | Description |\n| :--- | :--- | :--- |\n| `\\\
+    b` | Backspace | |\n| `\\f` | Form feed | |\n| `\\n` | Newline | |\n| `\\O` |\
+    \ Null character | |\n| `\\r` | Carriage return | |\n| `\\t` | Horizontal tab\
+    \ | |\n| `\\v` | Vertical tab | |\n| `\\’` | Single quote or apostrophe | |\n\
+    | `\\”` | Double quote | |\n| `\\\\` | Backslash | |\n| `\\ddd` | The Latin-1\
+    \ character specified by the three octal digits between 0 and 377\\. i.e. copyright\
+    \ symbol is `\\251` | |\n| `\\xdd` | The Latin-1 character specified by the two\
+    \ hexadecimal digits `dd` between 00 and FF. i.e. copyright symbol is `\\xA9`\
+    \ | |\n| `\\udddd` | The Unicode character specified by the four hexadecimal digits\
+    \ `dddd`. i.e. copyright symbol is `\\u00A9` | |\n\n### JavaScript Boolean\n\n\
+    ```javascript\nBoolean(15 >10) // returns true\n(5>10) 1 ………// returns true\n\
+    11>10…… …….// returns true\n```\n\nExtra large or extra small numbers can be written\
+    \ with scientific (exponent) notation:\n\n```javascript\nvar x = 124e5; // 12400000\n\
+    var y = 124e-5; // 0.00124\n```\n\n### JavaScript Numbers\n\nJavaScript has only\
+    \ one type of number. Numbers can be written with or without the decimal point\
+    \ such as:\n\n```javascript\nvar x – 39.00 // A number with a decimal point\n\
+    var y = 39…// A number without a decimal point\n```\n\n**Tip On Numbers**\n\n\
+    - Numbers always use 64-bit floating point.\n- Unlike many other programming languages,\
+    \ JavaScript does not define defferent types of numbers, such as integers, short,\
+    \ long, floating point, etc.\n- JavaScript numbers are always stored as double\
+    \ precision floating point numbers, following the international IEEE 754 standard.\n\
+    \n### JavaScript Null\n\nNull is considered something without value, nothing,\
+    \ or simply does not exist. In JavaScript, the data type of `null` is an object.\
+    \ An object can be emptied by setting it to `null`, like this:\n\n```javascript\n\
+    var person = null; // Value is null, but type is still an object\n```\n\n### JavaScript\
+    \ Void\n\nThe `void` keyword in JavaScript is used as a unary operator that appears\
+    \ before its single operand. This operator specifies an expression to be evaluated\
+    \ without returning a value.\n\n```html\n<html>\n<head>\n<script type=\"text/javascript\"\
+    ></script>\n</head>\n<body>\n<p>Please click the following, This won't affect\
+    \ me at all...</p>\n<a href=\"javascript:void(alert(0))\">Please click me!</a>\n\
+    </body>\n</html>\n```\n\nThe above script produces the following result when the\
+    \ **Please click me** link is clicked:\n\n![images/himg-7-1.png](images/00009.jpeg)\n\
+    \n### Composite Types\n\n#### Functions\n\nA function is a block of JavaScript\
+    \ code that performs a specific task whenever it is executed or invoked. It is\
+    \ defined with the `function` keyword, followed by the function name and parenthesis\
+    \ `()`. It may contain letters, digits, underscore symbol, and dollar signs. The\
+    \ parentheses may include parameter names separated by commas such as `parameter1`,\
+    \ `parameter2`, etc. The code to be executed is placed inside the curly brackets\
+    \ `{}`.\n\n![images/himg-7-2.png](images/00010.jpeg)\n\n**Example:**\n\n```javascript\n\
+    function convertDataToCentrigrade (degFarenheit)\n{\n  var degCentigrade;\n  degCentigrade\
+    \ = 5/9 * (degFarenheit – 32);\n  return degCentigrade;\n}\n```\n\n## OBJECTS\n\
+    \nObjects are composite data types that contain properties and methods. Screen\
+    \ elements such as web pages, text boxes, forms, buttons, and images are considered\
+    \ as objects. In JavaScript, all values, except **primitive values**, are considered\
+    \ objects.\n\nProperties define the characteristics of an object.\n\n### Properties\n\
+    \n| Object Properties | Property | Value |\n| :--- | :--- | :--- |\n| `firstName`\
+    \ | Clark | |\n| `lastName` | Mays | |\n| `age` | 18 | |\n| `eyeColor` | Green\
+    \ | |\n\n### Methods\n\nActions that can be performed on objects are called **methods**.\
+    \ An **object method** is an object property containing a function definition.\n\
+    \n| Object Methods | Property | Value |\n| :--- | :--- | :--- |\n| `firstName`\
+    \ | Clark | |\n| `lastName` | Mays | |\n| `age` | 18 | |\n| `eyeColor` | Green\
+    \ | |\n| `fullName` | `function() { return this.firstName + “ “ + this.lastName;\
+    \ }` | |\n\n| Object Names | Description | Name |\n| :--- | :--- | :--- |\n| When\
+    \ an **object** is being referred to | `objectName` | |\n| When a **property**\
+    \ of an object is being referred to | `objectName.propertyName` | |\n| When a\
+    \ method of an object is being referred to | `objectName.methodName()` | |\n\n\
+    | Built-In Objects | Object Name | Description | Format |\n| :--- | :--- | :---\
+    \ | :--- |\n| Math Object | Provides methods for various mathematical operations\
+    \ , including `abs()`, `log()`, `pow()`, `random()`, `round()`, `sqrt()` | `Math.method(#)`\
+    \ |\n| | `<SCRIPT language = “JavaScript”> Var theValue =3.14 myAns = Math.round\
+    \ (the value)</SCRIPT>` | |\n| Date Object | Provides date and time information\
+    \ | `dateObject.method()` |\n| | `<SCRIPT language = “JavaScript”> var valDat\
+    \ = new Date() theYr = valDat.getFullYear()</SCRIPT>` | |\n| String Object | Provides\
+    \ methods and properties for string manipulation and formatting | `stringName.method()`\
+    \ |\n| | `<SCRIPT language = “JavaScript”> var theStringValue = “my name” var\
+    \ printString = theString.bold() var numChars = theStringValue.length</SCRIPT>`\
+    \ | |\n| Array Object | Used to store multiple values called **elements** in a\
+    \ single variable | `var array.name =[item1, item2…];` |\n| | `<SCRIPT language\
+    \ = “JavaScript”> var cars = [“Toyota”, “Isuzu”, “Kia”]; document.getElementById(“demo”).innerHTML\
+    \ = cars;</SCRIPT>` | | |\n| Boolean Object | Represents either true or false\
+    \ | `var val = new Boolean (value);` | |\n| | `<SCRIPT language = “JavaScript”>\
+    \ myFunction() { var x = 0; document.getElementById(“demo”).innerHTML = Boolean(x);\
+    \ }</SCRIPT>` | | |\n\n| Document Methods | Property/Method | Description | Syntax\
+    \ |\n| :--- | :--- | :--- | :--- |\n| `document.body` | Retrieves the document’s\
+    \ body `<body>` | `document.body` | `document.body.style.backgroundColor = “red”;`\
+    \ |\n| `document.close()` | Closes the document | `document.close()` | `document.open();\
+    \ document.write(“<h1>Hello Earth</h1>”); document.close();` | |\n| `document.cookie`\
+    \ | Retrieves the name/ value pairs of cookies | `document.cookie` | `var y =\
+    \ document.cookie;` |\n| `document.domain` | Retrieves the domain name of the\
+    \ server | `document.domain` | `var y = document.domain;` |\n| `document.links`\
+    \ | Retrieves all the `<a>` and `<area>` elements in the document that have `href`\
+    \ attribute | `document.links` | `var y = document.links.length;` | |\n| `document.open()`\
+    \ | Opens the document | `document.open (MIMEtype, replace)` | `document.open();\
+    \ document.write(“<h1>Hello Earth</h1>”); document.close();` | |\n| `document.renameNode()`\
+    \ | Renames the specified node | `document.renameNode(node,namespaceURI,nodename)`\
+    \ | `var y = document.getElementsByTagName(“P”)[0]; document.renameNode(p, null,\
+    \ “h1”);` | |\n| `document.scripts` | Retrieves the `<script>` elements in the\
+    \ document | `document.scripts` | `var y = document.scripts.length;` | |\n| `document.title`\
+    \ | Retrieves the document title | `document.title` | `var y = document.title;`\
+    \ | |\n| `document.URL` | Retrieves the URL | `document.URL` | `var y = document.URL;`\
+    \ | |\n| `document.write()` | Writes HTML expressions or JavaScript code | `document.write(exp1,exp2,exp3…)`\
+    \ | `document.write(“Hello Earth”);` | |\n\n## HTML DOM\n\nThe HTML Document Object\
+    \ Model (DOM) is a standard object model and programming interface for HTML and\
+    \ XML. It defines the logical structure of documents and the way they are accessed\
+    \ and manipulated. DOM can be used and accessed with JavaScript or other programming\
+    \ languages. All HTML elements are defined as objects in DOM. Examples of document\
+    \ methods are provided below:\n\n| Property/Method | Description | Syntax |\n\
+    | :--- | :--- | :--- |\n| `document.body` | Retrieves the document’s body `<body>`\
+    \ | `document.body` |\n"
+  raw: 'String escape sequences allow the user to parse string literals in JavaScript
+    for special characters/ formatting, such as newlines within a TEXTATEA’s input.
+
+
+    | **Escape Sequences** |
+
+
+    | **Properties** | **Description** |
+
+
+    | \b | Backspace |
+
+
+    | \f | Form feed |
+
+
+    | \n | Newline |
+
+
+    | \O | Null character |
+
+
+    | \r | Carriage return |
+
+
+    | \t | Horizontal tab |
+
+
+    | \v | Vertical tab |
+
+
+    | \’ | Single quote or apostrophe |
+
+
+    | \” | Double quote |
+
+
+    | \\ | Backslash |
+
+
+    | \ddd | The Latin-1 character specified by the three octal digits between 0 and
+    377\. i.e. copyright symbol is \251 |
+
+
+    | \xdd | The Latin-1 character specified by the two hexadecimal digits dd between
+    00 and FF. i.e. copyright symbol is \xA9 |
+
+
+    | \udddd | The Unicode character specified by the four hexadecimal digits dddd.
+    i.e. copyright symbol is \u00A9 |
+
+
+    ### JavaScript Boolean
+
+
+    Boolean (15 >10) // returns true
+
+
+    (5>10) 1 ………// returns true
+
+
+    11>10…… …….// returns true
+
+
+    Extra large or extra small numbers can be written with scientific (exponent) notation:
+
+
+    var x = 124e5; // 12400000
+
+
+    var y = 124e-5; // 0.00124
+
+
+    ### JavaScript Numbers
+
+
+    JavaScript has only one type of number. Numbers can be written with or without
+    the decimal point such as:
+
+
+    var x – 39.00 // A number with a decimal point
+
+
+    var y = 39…// A number without a decimal point
+
+
+    **Tip On Numbers**
+
+
+    *   Numbers always use 64-bit floating point.
+
+
+    *   Unlike many other programming languages, JavaScript does not define defferent
+    types of numbers, such as integers, short, long, floating point, etc.
+
+
+    *   JavaScript numbers are always stored as double precision floating point numbers,
+    following the international IEEE 754 standard.
+
+
+    ### JavaScript Null
+
+
+    Null is considered something without value, nothing, or simply does not exist.
+    In JavaScript, the data type of null is an object. An object can be emptied by
+    setting it to null, like this:
+
+
+    var person = null; // Value is null, but type is still an object
+
+
+    ### JavaScript Void
+
+
+    The void keyword in JavaScript is used as a unary operator that appears before
+    its single operand. This operator specifies an expression to be evaluated without
+    returning a value.
+
+
+    <html>
+
+
+    <head>
+
+
+    <script type="text/javascript">
+
+
+    </script>
+
+
+    </head>
+
+
+    <body>
+
+
+    <p>Please click the following, This won''t affect me at
+
+
+    all...</p>
+
+
+    <a href="javascript:void(alert(0))">Please click me!</a>
+
+
+    </body>
+
+
+    </html>
+
+
+    The above script produces the following result when the **Please click me** link
+    is clicked:
+
+
+    ![images/himg-7-1.png](images/00009.jpeg)
+
+
+    ### Composite Types
+
+
+    **Functions**
+
+
+    A function is a block of JavaScript code that performs a specific task whenever
+    it is executed or invoked. It is defined with the **function keyword,** followed
+    by the function name and parenthesis ( ). It may contain letters, digits, underscore
+    symbol, and dollar signs. The parentheses may include parameter names separated
+    by commas such as parameter1, parameter2, etc. The code to be executed is placed
+    inside the curly brackets { }.
+
+
+    ![images/himg-7-2.png](images/00010.jpeg)
+
+
+    **Example:**
+
+
+    function convertDataToCentrigrade (degFarenheit)
+
+
+    {
+
+
+    var degCentigrade;
+
+
+    degCentigrade = 5/9 * (degFarenheit – 32);
+
+
+    return degCentigrade;
+
+
+    }
+
+
+    ## OBJECTS
+
+
+    Objects are composite data types that contain properties and methods. Screen elements
+    such as web pages, text boxes, forms, buttons, and images are considered as objects.
+    In JavaScript, all values, except **primitive values**, are considered as objects.
+
+
+    Properties define the characteristics of an object.
+
+
+    ### Properties
+
+
+    | **Object Properties** |
+
+
+    | **Property** | **Value** |
+
+
+    | firstName | Clark |
+
+
+    | lastName | Mays |
+
+
+    | age | 18 |
+
+
+    | eyeColor | Green |
+
+
+    ### Methods
+
+
+    Actions that can be performed on objects are called **methods**. An **object method**
+    is an object property containing a function definition.
+
+
+    | **Object Methods** |
+
+
+    | **Property** | **Value** |
+
+
+    | firstName | Clark |
+
+
+    | lastName | Mays |
+
+
+    | age | 18 |
+
+
+    | eyeColor | Green |
+
+
+    | fullName | function() {
+
+
+    return this.firstName + “ “ + this.
+
+
+    lastName;
+
+
+    } |
+
+
+    | **Object Names** |
+
+
+    | **Description** | **Name** |
+
+
+    | When an **objec**t is being referred to | objectName |
+
+
+    | When a **property** of an object is being referred to | objectName.propertyName
+    |
+
+
+    | When a method of an object is being referred to | objectName.methodName() |
+
+
+    | **Built-In Objects** |
+
+
+    | **Object Name** | **Description** | **Format** |
+
+
+    | Math Object | Provides methods for various mathematical operations , including
+    abs (), log (), pow(), random(), round(), sqrt() | Math.method(#) |
+
+
+    | <SCRIPT language = “JavaScript”> Var theValue =3.14
+
+
+    myAns = Math.round (the value)
+
+
+    </SCRIPT> |
+
+
+    | **Object Name** | **Description** | **Format** |
+
+
+    | Date Object | Provides date and time information | dateObject. method() |
+
+
+    | <SCRIPT language = “JavaScript”> var valDat = new Date()
+
+
+    theYr = valDat.getFullYear()
+
+
+    </SCRIPT> |
+
+
+    | **Object Name** | **Description** | **Format** |
+
+
+    | String Object | Provides methods and properties for string manipulation and
+    formatting | stringName. method() |
+
+
+    | <SCRIPT language = “JavaScript”> var theStringValue = “my name”
+
+
+    var printString = theString.bold()
+
+
+    var numChars = theStringValue.
+
+
+    length
+
+
+    </SCRIPT> |
+
+
+    | **Object Name** | **Description** | **Format** |
+
+
+    | Array Object | Used to store multiple values called **elements** in a single
+    variable | var array.name =[item1, item2…]; |
+
+
+    | <SCRIPT language = “JavaScript”> var cars = [“Toyota”, “Isuzu”, “Kia”];
+
+
+    document.getElementById(“demo”).
+
+
+    innerHTML = cars;
+
+
+    </SCRIPT> |
+
+
+    | **Object Name** | **Description** | **Format** |
+
+
+    | Boolean Object | Represents either true or false | var val = new Boolean (value);
+    |
+
+
+    | <SCRIPT language = “JavaScript”> function myFunction() {
+
+
+    var x = 0; document.
+
+
+    getElementById(“demo”).
+
+
+    innerHTML = Boolean(x);
+
+
+    }
+
+
+    </SCRIPT> |
+
+
+    | **Document Methods** |
+
+
+    | **Property/Method** | **Description** | **Syntax** |
+
+
+    | document.body | Retrieves the document’s body <body> | document.body |
+
+
+    | document.body.style backgroundColor = “red”; |
+
+
+    | document.close () | Closes the document | document.close() |
+
+
+    | document.open(); document.write(“<h1> Hello Earth </h1>);
+
+
+    document.close(); |
+
+
+    | document.cookie | Retrieves the name/ value pairs of cookies | document.cookie
+    |
+
+
+    | var y = document.cookie; |
+
+
+    | document.domain | Retrieves the domain name of the server | document.domain
+    |
+
+
+    | var y = document.domain; |
+
+
+    | document.links | Retrieves all the <a> and <area> elements in the document that
+    have a href attribute | document.links |
+
+
+    | var y = document.links. length; |
+
+
+    | document.open() | Opens the document | document.open (MIMEtype, replace) |
+
+
+    | document.open(); document.write(“<h1> Hello Earth</h1>”); document.close();
+    |
+
+
+    | document. renameNode() | Renames the specified node | document.rename Node(node,namesp
+    aceURI,nodename) |
+
+
+    | var y = document. getElementsByTag Name(“P”)[0]; document.renameNode(p, null,
+    “h1”); |
+
+
+    | document.scripts | Retrieves the <script> elements in the document | document.scripts
+    |
+
+
+    | var y = document. scripts.length; |
+
+
+    | document.title | Retrieves the document title | document.title |
+
+
+    | var y = document.title; |
+
+
+    | document.URL | Retrieves the URL | document.URL |
+
+
+    | var y = document.URL; |
+
+
+    | document.write() | Writes HTML expressions or JavaScript code | document. write(exp1,exp2,exp3…)
+    |
+
+
+    | document.write(“Hello Earth”); |
+
+
+    ## HTML DOM
+
+
+    The HTML Document Object Model (DOM) is a standard object model and programming
+    interface for HTML and XML. It defines the logical structure of documents and
+    the way they are accessed and manipulated. DOM can be used and accessed with JavaScript
+    or other programming languages. All HTML elements are defined as objects in DOM.
+    Examples of document methods are provided below:
+
+
+    | **Property/ Method** | **Description** | **Syntax** | **Example** |
+
+
+    | document. body | Retrieves the document’s body <body> | document. body | document.body.style.
+    backgroundColor = “red”; |'
+  toc: []
+  trans: "\n\n字符串转义序列允许用户解析 JavaScript 字符串字面量中的特殊字符/格式，例如 TEXTATEA 输入中的换行符。\n\n| 转义序列\
+    \ | 属性 | 描述 |\n| :--- | :--- | :--- |\n| `\\b` | 退格 | |\n| `\\f` | 分页符 | |\n|\
+    \ `\\n` | 换行符 | |\n| `\\O` | 空字符 | |\n| `\\r` | 回车 | |\n| `\\t` | 水平制表 | |\n|\
+    \ `\\v` | 垂直制表 | |\n| `\\’` | 单引号或省撇号 | |\n| `\\”` | 双引号 | |\n| `\\\\` | 反斜杠 |\
+    \ |\n| `\\ddd` | 由 0 到 377 之间的三个八进制数字指定的 Latin-1 字符。例如版权符号为 `\\251` | |\n| `\\\
+    xdd` | 由 00 到 FF 之间的两个十六进制数字 `dd` 指定的 Latin-1 字符。例如版权符号为 `\\xA9` | |\n| `\\udddd`\
+    \ | 由四个十六进制数字 `dddd` 指定 Unicode 字符。例如版权符号为 `\\u00A9` | |\n\n### JavaScript 布尔值\n\
+    \n```javascript\nBoolean(15 >10) // 返回 true\n(5>10) 1 ………// 返回 true\n11>10…… …….//\
+    \ 返回 true\n```\n\n极大或极小的数字可以使用科学计数法（指数法）书写：\n\n```javascript\nvar x = 124e5; //\
+    \ 12400000\nvar y = 124e-5; // 0.00124\n```\n\n### JavaScript 数字\n\nJavaScript\
+    \ 只有一种数字类型。数字可以带小数点也可以不带小数点写，例如：\n\n```javascript\nvar x – 39.00 // 一个带有小数点的数字\n\
+    var y = 39…// 一个不带小数点的数字\n```\n\n**关于数字的提示**\n\n- 数字始终使用 64 位浮点数。\n- 与许多其他编程语言不同，JavaScript\
+    \ 没有定义不同类型的数字，例如整数、短整型、长整型、浮点型等。\n- JavaScript 数字始终存储为遵循国际 IEEE 754 标准的双倍精度浮点数。\n\
+    \n### JavaScript Null\n\nNull 被认为是没有值、无或简单地为不存在。在 JavaScript 中，`null` 的数据类型是一个对象。可以通过将其设置为\
+    \ `null` 来清空一个对象，如下：\n\n```javascript\nvar person = null; // 值为 null，但类型仍然是对象\n\
+    ```\n\n### JavaScript Void\n\nJavaScript 中的 `void` 关键字被用作一元运算符，出现在其单个操作数之前。该运算符指定一个要评估的表达式但不返回任何值。\n\
+    \n```html\n<html>\n<head>\n<script type=\"text/javascript\"></script>\n</head>\n\
+    <body>\n<p>请点击下方内容，这对我没有任何影响……</p>\n<a href=\"javascript:void(alert(0))\">请点击我！</a>\n\
+    </body>\n</html>\n```\n\n当点击 **请点击我** 链接时，上述脚本将产生以下结果：\n\n![images/himg-7-1.png](img/00009.jpeg)\n\
+    \n### 复合类型\n\n#### 函数\n\n函数是一个 JavaScript 代码块，每当它执行或调用时都会执行特定任务。它用 `function`\
+    \ 关键字定义，后面跟着函数名和括号 `()`。它可能包含字母、数字、下划线符号和美元符号。括号中可以包含逗号分隔的参数名，例如 `parameter1`、`parameter2`\
+    \ 等。要执行的代码放在花括号 `{}` 内部。\n\n![images/himg-7-2.png](img/00010.jpeg)\n\n**示例：**\n\
+    \n```javascript\nfunction convertDataToCentrigrade (degFarenheit)\n{\n  var degCentigrade;\n\
+    \  degCentigrade = 5/9 * (degFarenheit – 32);\n  return degCentigrade;\n}\n```\n\
+    \n## 对象\n\n对象包含属性和方法的复合数据类型。网页、文本框、表单、按钮和图像等屏幕元素被视为对象。在 JavaScript 中，除了**原始值**之外，所有值都被视为对象。\n\
+    \n属性定义对象的特性。\n\n### 属性\n\n| 对象属性 | 属性 | 值 |\n| :--- | :--- | :--- |\n| `firstName`\
+    \ | Clark | |\n| `lastName` | Mays | |\n| `age` | 18 | |\n| `eyeColor` | Green\
+    \ | |\n\n### 方法\n\n可以在对象上执行的操作被称为**方法**。一个**对象方法**是一个包含函数定义的对象属性。\n\n| 对象方法 |\
+    \ 属性 | 值 |\n| :--- | :--- | :--- |\n| `firstName` | Clark | |\n| `lastName` |\
+    \ Mays | |\n| `age` | 18 | |\n| `eyeColor` | Green | |\n| `fullName` | `function()\
+    \ { return this.firstName + “ ” + this.lastName; }` | |\n\n| 对象名称 | 描述 | 标识符 |\n\
+    | :--- | :--- | :--- |\n| 当引用一个**对象**时 | `objectName` | |\n| 当引用对象的某个**属性**时 |\
+    \ `objectName.propertyName` | |\n| 当引用对象的**方法**时 | `objectName.methodName()` |\
+    \ |\n\n| 内置对象 | 对象名称 | 描述 | 格式 |\n| :--- | :--- | :--- | :--- |\n| Math 对象 | 为各种数学操作提供方法，包括\
+    \ `abs()`，`log()`，`pow()`，`random()`，`round()`，`sqrt()` | `Math.method(#)` | |\n\
+    | | `<SCRIPT language = “JavaScript”> Var theValue =3.14 myAns = Math.round (the\
+    \ value)</SCRIPT>` | | |\n| Date 对象 | 提供日期和时间信息 | `dateObject.method()` | |\n\
+    | | `<SCRIPT language = “JavaScript”> var valDat = new Date() theYr = valDat.getFullYear()</SCRIPT>`\
+    \ | | |\n| String 对象 | 提供字符串操作和格式化的方法和属性 | `stringName.method()` | |\n| | `<SCRIPT\
+    \ language = “JavaScript”> var theStringValue = “my name” var printString = theString.bold()\
+    \ var numChars = theStringValue.length</SCRIPT>` | | |\n| Array 对象 | 用于在变量中存储多个称为**元素**的值\
+    \ | `var array.name =[item1, item2…];` | | |\n| | `<SCRIPT language = “JavaScript”>\
+    \ var cars = [“Toyota”, “Isuzu”, “Kia”]; document.getElementById(“demo”).innerHTML\
+    \ = cars;</SCRIPT>` | | |\n| Boolean 对象 | 代表真或假 | `var val = new Boolean (value);`\
+    \ | | |\n| | `<SCRIPT language = “JavaScript”> myFunction() { var x = 0; document.getElementById(“demo”).innerHTML\
+    \ = Boolean(x); }</SCRIPT>` | | |\n\n| 文档方法 | 属性/方法 | 描述 | 语法 |\n| :--- | :---\
+    \ | :--- | :--- |\n| `document.body` | 获取文档的主体 `<body>` | `document.body` | `document.body.style.backgroundColor\
+    \ = “red”;` |\n| `document.close()` | 关闭文档 | `document.close()` | `document.open();\
+    \ document.write(“<h1>Hello Earth</h1>”); document.close();` | |\n| `document.cookie`\
+    \ | 获取 cookie 的键/值对 | `document.cookie` | `var y = document.cookie;` | |\n| `document.domain`\
+    \ | 获取服务器的域名 | `document.domain` | `var y = document.domain;` | |\n| `document.links`\
+    \ | 获取文档中所有带有 `href` 属性的 `<a>` 和 `<area>` 元素 | `document.links` | `var y = document.links.length;`\
+    \ | |\n| `document.open()` | 打开文档 | `document.open (MIMEtype, replace)` | `document.open();\
+    \ document.write(“<h1>Hello Earth</h1>”); document.close();` | |\n| `document.renameNode()`\
+    \ | 重命名指定的节点 | `document.renameNode(node,namespaceURI,nodename)` | `var y = document.getElementsByTagName(“P”)[0];\
+    \ document.renameNode(p, null, “h1”);` | |\n| `document.scripts` | 获取文档中的 `<script>`\
+    \ 元素 | `document.scripts` | `var y = document.scripts.length;` | |\n| `document.title`\
+    \ | 获取文档标题 | `document.title` | `var y = document.title;` | |\n| `document.URL`\
+    \ | 获取 URL | `document.URL` | `var y = document.URL;` | |\n| `document.write()`\
+    \ | 写入 HTML 表达式或 JavaScript 代码 | `document.write(exp1,exp2,exp3…)` | `document.write(“Hello\
+    \ Earth”);` | |\n\n## HTML DOM\n\nHTML 文对象模型 (DOM) 是 HTML 和 XML 的标准对象模型和编程接口。它定义了文档的逻辑结构以及访问和操作它们的方式。可以使用\
+    \ JavaScript 或其他编程语言访问和使用 DOM。所有 HTML 元素在 DOM 中都被定义为对象。提供了文档方法的示例：\n\n| 属性/方法\
+    \ | 描述 | 语法 |\n| :--- | :--- | :--- |\n| `document.body` | 获取文档的主体 `<body>` |\
+    \ `document.body` |\n\n"
+- fmt: '
+
+    | Method | Description | Syntax | Example |
+
+    | :--- | :--- | :--- | :--- |
+
+    | `document.close()` | Closes the document | `document.close()` | `document.open();
+    document.write("<h1> Hello Earth</h1>”); document.close();` |
+
+    | `document.cookie` | Retrieves the name/ value pairs of cookies | `document.cookie`
+    | `var y = document.cookie;` |
+
+    | `document.domain` | Retrieves the domain name of the server | `document.domain`
+    | `var y = document.domain;` |
+
+    | `document.links` | Retrieves all the `<a>` and `<area>` elements in the document
+    that have a `href` attribute | `document.links` | `var y = document.links.length;`
+    |
+
+    | `document.open()` | Opens the document | `document.open(MIME type,replace)`
+    | `document.open(); document.write("<h1> Hello Earth</h1>”); document.close();`
+    |
+
+    | `document.renameNode()` | Renames the specified node | `document.renameNode(node,namespaceURI,nodename)`
+    | `var y = document.getElementsByTagName(“P”)[0]; document.renameNode(p, null,
+    “h1”);` |
+
+    | `document.scripts` | Retrieves the `<script>` elements in the document | `document.scripts`
+    | `var y = document.scripts.length;` |
+
+    | `document.title` | Retrieves the document title | `document.title` | `var y
+    = document.title;` |
+
+    | `document.URL` | Retrieves the URL | `document.URL` | `var y = document.URL;`
+    |
+
+    | `document.write()` | Writes HTML expressions or JavaScript code | `document.write(exp1,
+    exp2,exp3,...)` | `document.write(“Hello Earth”);` |
+
+
+    ## JavaScript Object Hierarchy
+
+
+    When the user loads a document in a browser, JavaScript objects with property
+    values based on the HTML in the document and other information are created. These
+    objects exist in a hierarchy that is based on the structure of the HTML page.
+    DOM made it possible to change a web page dynamically. Through DOM, the user can
+    locate any element in the HTML document and use JavaScript to change the element’s
+    properties. The DOM hierarchy is illustrated below:
+
+
+    ![images/himg-8-1.png](images/00011.jpeg)
+
+
+    ### Window Object
+
+
+    The window object refers to an open window in a browser. It is used to open a
+    web page in a new window and to set the attributes for the window. The two main
+    window properties are:
+
+
+    | Window Properties | Property | Value |
+
+    | :--- | :--- |
+
+    | Status | Sets the message for the status |
+
+    | Self | Stores the name of the current window |
+
+
+    ### Window Methods
+
+
+    The window methods are used for opening and closing new windows. The main window
+    methods are:
+
+
+    | Window Methods | Method | Description |
+
+    | :--- | :--- |
+
+    | `alert()` | Displays a message box |
+
+    | `confirm()` | Displays a confirmation box |
+
+    | `prompt()` | Displays a prompt box |
+
+    | `open()` | Opens a new window |
+
+    | `close()` | Closes a window |
+
+
+    ## JAVASCRIPT ARRAYS
+
+
+    In JavaScript, an `array` is a special variable that can hold multiple values
+    in a single variable. To create an array, an `array literal` is used.
+
+
+    **Syntax:**
+
+
+    ```
+
+    var array-name = [item1, item2, ...];
+
+    ```
+
+
+    **Example:**
+
+
+    ```
+
+    var car = [“Toyota”, “Mazda”, “Isuzu”];
+
+    ```
+
+
+    Arrays use numbers to access elements. In the example below, `person[0]` returns
+    Harry:
+
+
+    **Example:**
+
+
+    ```
+
+    var person = [“Harry”, “Crawford”, 45]);
+
+    ```
+
+
+    ## JAVASCRIPT EVENTS
+
+
+    Events refer to how feedback is elicited from the web user. Interaction with HTML
+    is being handled through events that happen when the user interacts with the browser
+    by clicking, loading, closing, resizing, or manipulating a web page. Events are
+    a part of DOM Level 3 and every HTML element has a certain set of events which
+    trigger a JavaScript code. Examples of these are included below:
+
+
+    | Types of Events | Event | Description |
+
+    | :--- | :--- | :--- |
+
+    | `onblur` | Executed when the element loses focus |
+
+    | `onchange` | Executed when the element changes |
+
+    | `onclick` | Executed when an object is clicked |
+
+    | `ondblclick` | Executed when an object is double-clicked |
+
+    | `onfocus` | Executed when the element gets focus |
+
+    | `onkeydown` | Executed when key is pressed |
+
+    | `onkeypress` | Executed when key is pressed and released |
+
+    | `onkeyup` | Executed when key is released |
+
+    | `onmousedown` | Executed when mouse button is pressed |
+
+    | `onmousemove` | Executed when mouse pointer moves |
+
+    | `onmouseout` | Executed when mouse pointer moves out of an element |
+
+    | `onmouseover` | Executed when mouse pointer moves over an element |
+
+    | `onmouseup` | Executed when mouse button is released |
+
+    | `onreset` | Executed when the form is reset |
+
+    | `onselect` | Executed when the element is selected |
+
+    | `onsubmit` | Executed when the form is submitted |
+
+
+    ## AJAX AND CSS
+
+
+    JavaScript can be used with AJAX and CSS.
+
+
+    - **AJAX**: AJAX is short for **Asynchronous JavaScript** and XML. By updating
+    a segment of the page without the need to reload the entire page, AJAX provides
+    a much faster and easier way to create interactive web applications. It uses XHTML
+    for the content, CSS for the style and presentation, and the Document Object Model
+    and JavaScript for displaying dynamic content. To know more about AJAX, please
+    visit this site:
+
+    [https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+
+
+    - **CSS**: CSS stands for **Cascading Style Sheets**. A style sheet language that
+    is used to specify how documents are presented.
+
+
+    ## ONLINE RESOURCES
+
+
+    **Mozilla Developer Network**
+
+    [https://developer.mozilla.org/en-US/docs/JavaScript](https://developer.mozilla.org/en-US/docs/JavaScript)
+
+    Resource for beginners and advanced users. This site contains official and complete
+    JavaScript reference, including guides, tutorials and articles.
+
+
+    **Eloquent JavaScript**
+
+    [http://eloquentjavascript.net](http://eloquentjavascript.net)
+
+    A free ebook by programmer and tech writer Marijn Haverbek. Fundamentals of JavaScript
+    are taught, and includes mini exercises after chapter. This book covers how JavaScript
+    works in a browser, as well as two chapters on Node.js.
+
+
+    **Douglas Crockford’s JavaScript Videos**
+
+    [http://javascript.crockford.com](http://javascript.crockford.com)
+
+    Douglas Crockford is a Yahoo programmer and is instrumental in the planning, development
+    and growth of JavaScript. On the website are Crockford’s videos and transcripts
+    on the Yahoo User Interface blog.
+
+
+    **WebPlatform.org**
+
+    [http://docs.webplatform.org/wiki/javascript](http://docs.webplatform.org/wiki/javascript)
+
+    This site contains documentations for learning programming languages such as HTML,
+    CSS, and JavaScript.
+
+
+    **Khan Academy**
+
+    [https://www.khanacademy.org/computing/cs](https://www.khanacademy.org/computing/cs)
+
+    A site where users can learn JavaScript to create drawings and animations through
+    screencasts, code games, and create web pages with HTML and CSS.
+
+
+    **Tutorials Point**
+
+    [http://www.tutorialspoint.com/javascript/index.htm](http://www.tutorialspoint.com/javascript/index.htm)
+
+    A comprehensive online resource, not only for JavaScript, but also for other technologies,
+    such as SIP, Pay Per Click (PPC), Awk, HBase, XStream, Java8, Guava, Memcached,
+    EasyMock, CICS, Object Oriented Analysis & Design, Tika, DOM, etc.
+
+
+    **W3Schools Online Web Tutorials**
+
+    [http://www.w3schools.com/js](http://www.w3schools.com/js)
+
+    Online tutorial, not only for JavaScript but also for HTML, CSS, XML, DOM, jQuery,
+    ASP.NET, PHP, SQL, and others.
+
+
+    **Code Combat**
+
+    [https://codecombat.com/](https://codecombat.com/)
+
+    An interactive site to quickly learn programming such as JavaScript or Python.
+    It is a live coding strategy game for beginners.
+
+
+    **JS Fiddle**
+
+    [http://jsfiddle.net/](http://jsfiddle.net/)
+
+    '
+  raw: "| document. close() | Closes the document | document. close() | document.open();\
+    \ document.write(“<h1> Hello Earth</h1>”); document.close(); |\n\n| document.\
+    \ cookie | Retrieves the name/ value pairs of cookies | document. cookie | var\
+    \ y = document. cookie; |\n\n| document. domain | Retrieves the domain name of\
+    \ the server | document. domain | var y = document. domain; |\n\n| document. links\
+    \ | Retrieves all the <a> and <area> elements in the document that have a href\
+    \ attribute | document. links | var y = document.links. length; |\n\n| document.\
+    \ open() | Opens the document | document. open(MIME type,replace) | document.open();\
+    \ document.write(“<h1> Hello Earth</h1>”); document.close(); |\n\n| document.\
+    \ rename Node() | Renames the specified node | document. rename Node(node,n amespaceUR\
+    \ I,nodename) | var y = document. getElementsByTag Name(“P”)[0]; document.rename\
+    \ Node(p, null, “h1”); |\n\n| document. scripts | Retrieves the <script> elements\
+    \ in the document | document. scripts | var y = document. scripts.length; |\n\n\
+    | document. title | Retrieves the document title | document. title | var y = document.title;\
+    \ |\n\n| document. URL | Retrieves the URL | document. URL | var y = document.URL;\
+    \ |\n\n| document. write() | Writes HTML expressions or JavaScript code | document.\
+    \ write(exp1, exp2,exp3,...) | document.write(“Hello Earth”); |\n\n## JavaScript\
+    \ Object Hierarchy\n\nWhen the user loads a document in a browser, JavaScript\
+    \ objects with property values based on the HTML in the document and other information\
+    \ are created. These objects exist in a **hierarchy** that is based on the structure\
+    \ of the HTML page. DOM made it possible to change a web page dynamically. Through\
+    \ DOM, the user can locate any element in the HTML document and use JavaScript\
+    \ to change the element’s properties. The DOM hierarchy is illustrated below:\n\
+    \n![images/himg-8-1.png](images/00011.jpeg)\n\n### Window Object\n\nThe window\
+    \ object refers to an open window in a browser. It is used to open a web page\
+    \ in a new window and to set the attributes for the window. The two main window\
+    \ properties are:\n\n| **Window Properties** |\n\n| **Property** | **Value** |\n\
+    \n| Status | Sets the message for the status |\n\n| Self | Stores the name of\
+    \ the current window |\n\n### Window Methods\n\nThe window methods are used for\
+    \ opening and closing new windows.\n\nThe main window methods are:\n\n| **Window\
+    \ Methods** |\n\n| **Method** | **Description** |\n\n| alert() | Displays a message\
+    \ box |\n\n| confirm() | Displays a confirmation box |\n\n| prompt() | Displays\
+    \ a prompt box |\n\n| open() | Opens a new window |\n\n| close() | Closes a window\
+    \ |\n\n## JAVASCRIPT ARRAYS\n\nIn JavaScript, an **array** is a special variable\
+    \ that can hold multiple values in a single variable. To create an array, an **array\
+    \ literal** is used.\n\n**Syntax:**\n\nvar array-name = [item1, item2, ...];\n\
+    \n**Example:**\n\nvar car = [“Toyota”, “Mazda”, “Isuzu”];\n\nArrays use numbers\
+    \ to access elements. In the example below, person[0] returns Harry:\n\n**Example:**\n\
+    \nvar person = [“Harry”, “Crawford”, 45]);\n\n## JAVASCRIPT EVENTS\n\nEvents refer\
+    \ to how feedback is elicited from the web user. Interaction with HTML is being\
+    \ handled through events that happen when the user interacts with the browser\
+    \ by clicking, loading, closing, resizing, or manipulating a web page. Events\
+    \ are a part of DOM Level 3 and every HTML element has a certain set of events\
+    \ which trigger a JavaScript code. Examples of these are included below:\n\n|\
+    \ **Types of Events** |\n\n| **Event** | **Description** |\n\n| onblur | Executed\
+    \ when the element loses focus |\n\n| onchange | Executed when the element changes\
+    \ |\n\n| onclick | Executed when an object is clicked |\n\n| ondblclick | Executed\
+    \ when an object is double-clicked |\n\n| onfocus | Executed when the element\
+    \ gets focus |\n\n| onkeydown | Executed when key is pressed |\n\n| onkeypress\
+    \ | Executed when key is pressed and released |\n\n| onkeyup | Executed when key\
+    \ is released |\n\n| onmousedown | Executed when mouse button is pressed |\n\n\
+    | onmousemove | Executed when mouse pointer moves |\n\n| onmouseout | Executed\
+    \ when mouse pointer moves out of an element |\n\n| onmouseover | Executed when\
+    \ mouse pointer moves over an element |\n\n| onmouseup | Executed when mouse button\
+    \ is released |\n\n| onreset | Executed when the form is reset |\n\n| onselect\
+    \ | Executed when the element is selected |\n\n| onsubmit | Executed when the\
+    \ form is submitted |\n\n## AJAX AND CSS\n\nJavaScript can be used with AJAX and\
+    \ CSS.\n\n*   **AJAX:** AJAX is short for **Asynchronous JavaScript** and XML.\
+    \ By updating a segment of the page without the need to reload the entire page,\
+    \ AJAX provides a much faster and easier way to create interactive web applications.\
+    \ It uses XHTML for the content, CSS for the style and presentation, and the Document\
+    \ Object Model and JavaScript for displaying dynamic content. To know more about\
+    \ AJAX, please visit this site:\n\n    [https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)\n\
+    \n*   **CSS:** CSS stands for **Cascading Style Sheets**. It is a style sheet\
+    \ language that is used to specify how documents written in a markup language\
+    \ are presented to users. With CSS, web developers and designers and users can\
+    \ create style sheets that define how HTML elements such as headers and links\
+    \ are displayed. To get know more about CSS, please visit this site:\n\n    [http://www.echoecho.com/cssintroduction.htm](http://www.echoecho.com/cssintroduction.htm)\n\
+    \n## ONLINE RESOURCES\n\n*   **Mozilla Developer Network**\n\n    [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)\n\
+    \n    Resource for JavaScript documentation for beginners and advanced users.\
+    \ This site contains the official and complete JavaScript reference, including\
+    \ guides, tutorials and articles on JavaScript basics, as well as best practices\
+    \ and design patterns.\n\n*   **Eloquent JavaScript**\n\n    [http://eloquentjavascript.net](http://eloquentjavascript.net)\n\
+    \n    A free ebook by programmer and tech writer Marijn Haverbeke. Fundamentals\
+    \ of JavaScript are taught, and includes mini exercises after each chapter. This\
+    \ book covers how JavaScript works in a browser, as well as two chapters on Node.js.\n\
+    \n*   **Douglas Crockford’s JavaScript Videos**\n\n    [http://javascript.crockford.com](http://javascript.crockford.com)\n\
+    \n    Douglas Crockford is a Yahoo JavaScript programmer and is instrumental in\
+    \ the planning, development and growth of JavaScript. On the website are Crockford’s\
+    \ videos and transcripts on the Yahoo User Interface blog.\n\n*   **WebPlatform.org**\n\
+    \n    [http://docs.webplatform.org/wiki/javascript](http://docs.webplatform.org/wiki/javascript)\n\
+    \n    This site contains documentations for learning web programming languages\
+    \ such as HTML, CSS, and JavaScript.\n\n*   **Khan Academy**\n\n    [https://www.khanacademy.org/computing/cs](https://www.khanacademy.org/computing/cs)\n\
+    \n    A site where users can learn JavaScript to create drawings and animations\
+    \ through screencasts, code games, and create web pages with HTML and CSS.\n\n\
+    *   **Tutorials Point**\n\n    [http://www.tutorialspoint.com/javascript/index.htm](http://www.tutorialspoint.com/javascript/index.htm)\n\
+    \n    A comprehensive online resource, not only for JavaScript, but also for other\
+    \ technologies, such as SIP, Pay Per Click (PPC), Awk, HBase, XStream, Java8,\
+    \ Guava, Memcached, EasyMock, CICS, Object Oriented Analysis & Design, Tika, DOM,\
+    \ etc.\n\n*   **W3Schools Online Web Tutorials**\n\n    [http://www.w3schools.com/js](http://www.w3schools.com/js)\n\
+    \n    Online tutorial, not only for JavaScript but also for HTML, CSS, XML, DOM,\
+    \ jQuery, ASP.NET, PHP, SQL, and others.\n\n*   **Code Combat**\n\n    [https://codecombat.com/](https://codecombat.com/)\n\
+    \n    An interactive site to quickly learn programming such as JavaScript or Python.\
+    \ It is a live coding strategy game for beginners.\n\n*   **JS Fiddle**\n\n  \
+    \  [http://jsfiddle.net/](http://jsfiddle.net/)"
+  toc: []
+  trans: '
+
+
+    | 方法 | 说明 | 语法 | 示例 |
+
+    | :--- | :--- | :--- | :--- |
+
+    | `document.close()` | 关闭文档 | `document.close()` | `document.open(); document.write("<h1>
+    Hello Earth</h1>”); document.close();` |
+
+    | `document.cookie` | 获取 cookie 的键/值对 | `document.cookie` | `var y = document.cookie;`
+    |
+
+    | `document.domain` | 获取服务器的域名 | `document.domain` | `var y = document.domain;`
+    |
+
+    | `document.links` | 获取文档中所有带有 `href` 属性的 `<a>` 和 `<area>` 元素 | `document.links`
+    | `var y = document.links.length;` |
+
+    | `document.open()` | 打开文档 | `document.open(MIME type,replace)` | `document.open();
+    document.write("<h1> Hello Earth</h1>”); document.close();` |
+
+    | `document.renameNode()` | 重命名指定的节点 | `document.renameNode(node,namespaceURI,nodename)`
+    | `var y = document.getElementsByTagName“P”)[0]; document.renameNode(p, null,
+    “h1”);` |
+
+    | `document.scripts` | 获取文档中的 `<script>` 元素 | `document.scripts` | `var y = document.scripts.length;`
+    |
+
+    | `document.title` | 获取文档标题 | `document.title` | `var y = document.title;` |
+
+    | `document.URL` | 获取 URL | `document.URL` | `var y = document.URL;` |
+
+    | `document.write()` |  HTML 表达式或 JavaScript 代码 | `document.write(exp1, exp2,exp3,...)`
+    | `document.write(“Hello Earth”);` |
+
+
+    ## JavaScript 对象层次结构
+
+
+    当用户在浏览器中加载文档时，会创建基于文档 HTML 内容和其他信息的属性值的 JavaScript 对象。这些对象存在于基于 HTML 页面结构的层级结构。DOM
+    使得动态更改网页成为可能。通过 DOM，用户可以定位 HTML 文档中的任何元素，并使用 JavaScript 更改元素的属性。DOM 层级结构所示：
+
+
+    ![images/himg-8-1.png](img/00011.jpeg)
+
+
+    ### Window 对象
+
+
+    window 对象指的是浏览器中打开的窗口。它用于在新窗口中打开网页并设置窗口的属性。两个主要的窗口属性是：
+
+
+    | 窗口属性 | 属性 | 值 |
+
+    | :--- | :--- | :--- |
+
+    | Status | 设置状态消息 |
+
+    | Self | 存储当前窗口的名称 |
+
+
+    ### Window 方法
+
+
+    window 方法用于打开和关闭新窗口。主要的窗口方法有：
+
+
+    | 窗口方法 | 方法 | same |
+
+    | :--- | :--- | :--- |
+
+    | `alert()` | 显示消息框 |
+
+    | `confirm()` | 显示确认框 |
+
+    | `prompt()` | 显示提示框 |
+
+    | `open()` | 打开新窗口 |
+
+    | `close()` | 关闭窗口 |
+
+
+    ## JavaScript 数组
+
+
+    在 JavaScript 中，`array`是一种特殊的变量，可以在单个变量中存储多个值。要创建数组，可以使用`数组字面量`（array literal）。
+
+
+    **语法：**
+
+
+    ```
+
+    var array-name = [item1, item2, ...];
+
+    ```
+
+
+    **示例：**
+
+
+    ```
+
+    var car = [“Toyota”, “Mazda”, “Isuzu”];
+
+    ```
+
+
+    数组使用数字访问元素。在下面的示例中，`person[0]` 返回 Harry：
+
+
+    **示例：**
+
+
+    ```
+
+    var person = [“Harry”, “Crawford”, 45]);
+
+    ```
+
+
+    ## JavaScript 事件
+
+
+    事件指的是如何从 Web 用户处获取反馈。与 HTML 的交互通过事件处理，这些事件会在用户点击、加载、关闭、调整大小或操作网页与浏览器进行交互时发生。事件是
+    DOM  级的一部分，每个 HTML 元素都有一组特定的触发 JavaScript 代码的事件。以下是示例：
+
+
+    | 事件类型 | 事件 | same |
+
+    | :--- | :--- | :--- |
+
+    | `onblur` | 元素失去焦点时执行 |
+
+    | `onchange` | 元素发生变化时执行 |
+
+    | `onclick` | 对象被点击时执行 |
+
+    | `ondblclick` | 对象被双击时执行 |
+
+    | `onfocus` | 元素获得焦点时执行 |
+
+    | `onkeydown` | 键被按下时执行 |
+
+    | `onkeypress` | 键按下并释放时执行 |
+
+    | `onkeyup` | 键被释放时执行 |
+
+    | `onmousedown` | 鼠标键被按下时执行 |
+
+    | `onmousemove` | 鼠标指针移动时执行 |
+
+    | `onmouseout` | 鼠标指针移出元素时执行 |
+
+    | `onmouseover` | 鼠标指针移动到元素上时执行 |
+
+    | `onmouseup` | 鼠标键被释放时执行 |
+
+    | `onreset` | 表单重置时执行 |
+
+    | `onselect` | 元素被选中时执行 |
+
+    | `onsubmit` | 表单提交时执行 |
+
+
+    ## AJAX 与 CSS
+
+
+    JavaScript 可以与 AJAX 和 CSS 使用。
+
+
+    - **AJAX**: AJAX 是**异步 JavaScript**（Asynchronous JavaScript）和 XML 的缩写。通过无需刷新整个页面即可更新页面局部，AJAX
+    提供了一种更快更简单的创建交互式 Web 应用的方法。它使用 XHTML 用于内容，使用 CSS 用于样式和呈现，使用文档对象模型和 JavaScript
+    显示动态内容。要了解更多 AJAX，请访问此网站：
+
+    [`developer.mozilla.org/en-US/docs/AJAX/Getting_Started`](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+
+
+    - **CSS**: CSS 代表**级联样式表**（Cascading Style Sheets）。一种用于指定文档呈现方式的样式表语言。
+
+
+    ## 在线资源
+
+
+    **Mozilla 开发者网络 (MDN)**
+
+    [`developer.mozilla.org/en-US/docs/JavaScript`](https://developer.mozilla.org/en-US/docs/JavaScript)
+
+    入门和高级用户的资源。该网站包含官方且完整的 JavaScript 参考，包括指南、教程和文章。
+
+
+    **Eloquent JavaScript**
+
+    [`eloquentjavascript.net`](http://eloquentjavascript.net)
+
+    由程序员和技术作家 Marijn Haverbek 编写的免费电子书。书中介绍了 JavaScript 的基础知识，并在每章后包含小型练习。这本书涵盖了 JavaScript
+    如何在浏览器中工作，以及关于 Node.js 的章节。
+
+
+    **Douglas Crockford 的 JavaScript 视频**
+
+    [`javascript.crockford.com`](http://javascript.crockford.com)
+
+    Douglas Crockford 是 Yahoo 的程序员，在 JavaScript 的规划、开发和增长方面起着关键作用。网站上提供了 Crockford
+    在 Yahoo 用户界面博客上的视频和转录。
+
+
+    **WebPlatform.org**
+
+    [`docs.webplatform.org/wiki/javascript`](http://docs.webplatform.org/wiki/javascript)
+
+    该网站包含学习 HTML、CSS 和 JavaScript 等编程语言的文档。
+
+
+    **可汗学院 (Khan Academy)**
+
+    [`www.khanacademy.org/computing/cs`](https://www.khanacademy.org/computing/cs)
+
+    一个用户可以通过屏幕录制、代码游戏学习 JavaScript 以创建绘制图形和动画，并使用 HTML 和 CSS 创建网页的网站。
+
+
+    **Tutorials Point**
+
+    [`www.tutorialspoint.com/javascript/index.htm`](http://www.tutorialspoint.com/javascript/index.htm)
+
+    全面的在线资源，不仅针对 JavaScript，还针对其他技术，如 SIP、点击付费 (PPC)、Awk、HBase、XStream、Java8、Guava、Memcached、EasyMock、CICS、面向对象分析设计、Tika、DOM
+    等。
+
+
+    **W3Schools 在线 Web 教程**
+
+    [`www.w3schools.com/js`](http://www.w3schools.com/js)
+
+    在线教程，不仅针对 JavaScript，还有 HTML、CSS、XML、DOM、jQuery、ASP.NET、PHP、SQL 等。
+
+
+    **Code Combat**
+
+    [`codecombat.com/`](https://codecombat.com/)
+
+    一个快速学习 JavaScript 或 Python 等编程的交互式网站。它是一个面向初者的实时编程策略游戏。
+
+
+    **JS Fiddle**
+
+    [`jsfiddle.net/`](http://jsfiddle.net/)
+
+
+    '
+- fmt: '
+
+    A site where users can create, share, execute, and test JavaScript codes right
+    in the browser. This is useful for collaborative debugging or for sharing code
+    snippets. Users can combine JavaScript, HTML, and CSS.
+
+
+    ![images/himg-9-1.png](images/00012.jpeg)
+
+
+    ## NOTICE AND DISCLAIMER
+
+
+    The information contained herein is meant to supplement, but not replace, primary
+    resources. It is not a comprehensive treatment of the subject and is intended
+    for informational purposes only. The publisher, writers and editors: (a) do not
+    guaranty, represent or warrant that any information herein is accurate, complete
+    or current or that anyone who utilizes this publication will achieve certain results
+    as a result of such use; (b) are not responsible for the use or misuse of such
+    information; and (c) expressly disclaim all legal liability (including money damages)
+    arising from the reference to, reliance on or use of this publication. No one
+    may reproduce or transmit any part of this publication - in any form or by any
+    means – without publisher’s prior written permission.
+
+
+    © 2015 Little Green Apples Publishing, LLC
+
+    '
+  raw: '    A site where users can create, share, execute, and test JavaScript codes
+    right in the browser. This is useful for collaborative debugging or for sharing
+    code snippets. Users can combine JavaScript, HTML, and CSS.
+
+
+    ![images/himg-9-1.png](images/00012.jpeg)
+
+
+    **NOTICE AND DISCLAIMER.**
+
+
+    The information contained herein is meant to supplement, but not replace, primary
+    resources. It is not a comprehensive treatment of the subject and is intended
+    for informational purposes only. The publisher, writers and editors: (a) do not
+    guaranty, represent or warrant that any information herein is accurate, complete
+    or current or that anyone who utilizes this publication will achieve certain results
+    as a result of such use; (b) are not responsible for the use or misuse of such
+    information; and (c) expressly disclaim all legal liability (including money damages)
+    arising from the reference to, reliance on or use of this publication. No one
+    may reproduce or transmit any part of this publication - in any form or by any
+    means – without publisher’s prior written permission.
+
+
+    © 2015 Little Green Apples Publishing, LLC'
+  toc: []
+  trans: '
+
+
+    一个用户可以在浏览器中直接创建、共享、执行和测试 JavaScript 代码的网站。这对于协作调试或共享代码片段非常有用。用户可以将 JavaScript、HTML
+    和 CSS。
+
+
+    ![images/himg-9-1.png](img/00012.jpeg)
+
+
+    ## 通知与免责声明
+
+
+    此处包含的信息旨在补充而非替代主要资源。本文并非对该主题的详尽阐述，仅供参考。出版者、作者和编辑：(a) 不保证、不陈述或担保此处的任何信息均是准确、完整或实时的，也不保证任何使用本出版物的人将因该等使用而获得特定结果；(b)
+    对此类信息的使用或误用不负责；且 (c) 明确否认源于因引用、信赖或使用本出版物而产生的所有法律责任（包括金钱赔偿）。未经出版者事先书面许可，任何人不得以任何形式或通过任何手段复制或传输本出版物的任何部分。
+
+
+    © 2015 Little Green Apples Publishing, LLC
+
+
+    '

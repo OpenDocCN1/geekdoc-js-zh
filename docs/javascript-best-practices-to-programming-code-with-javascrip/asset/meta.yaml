@@ -1,0 +1,68 @@
+name: JavaScript： Best Practices to Programming Code with JavaScript
+name_cn: JavaScript 编程最佳实践
+slug: javascript-best-practices-to-programming-code-with-javascrip
+toc:
+- - '##'
+  - 条件语句 (Conditional Statements)
+- - '##'
+  - 变量作用域 (Variable Scope)
+- - '##'
+  - HTML id 冲突 (HTML id Conflicts)
+- - '##'
+  - 字符串替换 (String Replace)
+- - '##'
+  - 参数缺失 (Missing Parameter)
+- - '##'
+  - 函数覆盖/重载 (Overwriting/ Overloading Functions)
+- - '##'
+  - 函数位置 (Function Location)
+- - '##'
+  - 未定义与空 (Undefined and Null)
+- - '##'
+  - 语句切换 (Statement Switching)
+- - '#'
+  - '第 2 章：通用建议 (Chapter 2: General Recommendations)'
+- - '#'
+  - 第三章：注释和日志的最佳实践
+- - '###'
+  - 1. 务必使用正确的日志级别
+- - '###'
+  - 2. 务必对所有复杂逻辑使用注释
+- - '###'
+  - 3. 务必对任何有用细节使用标准日志
+- - '###'
+  - 4. 务必对任何公共函数、变量或模块使用 JSDoc 语法
+- - '###'
+  - 5. 勿使用字符串拼接
+- - '#'
+  - 第 4 章：提高性能的技巧
+- - '###'
+  - 1. 务必确保你的第三方库始终经过优化
+- - '###'
+  - 2. 务必最小化任何 DOM 操作和 DOM 访问
+- - '###'
+  - 3. 务必将你的 DOM 保持最小
+- - '###'
+  - 4. 对循环内部的逻辑保持怀疑
+- - '###'
+  - 5. 延迟 JavaScript 加载
+- - '###'
+  - 6. 减少循环中的活动量
+- - '###'
+  - 1. 不要声明布尔值对象、字符串或数字
+- - '###'
+  - 2. 初始化任何变量
+- - '###'
+  - 3. 不要使用 `newObject()`
+- - '###'
+  - 4. 使用参数默认值
+- - '###'
+  - 5. 不要使用自动类型转换
+- - '###'
+  - 6. 使用 "Timer" 优化代码
+- - '###'
+  - 7. 不要向 "SetTimeOut" 或 "SetInterval" 传递字符串
+- - '###'
+  - 8. 使用 "For in" 语句
+- - '###'
+  - 9. 不要使用 "With" 语句

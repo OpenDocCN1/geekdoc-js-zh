@@ -1,0 +1,2816 @@
+- fmt: '
+
+    ![](cover.jpeg)
+
+
+    # The Ultimate Beginner’s Guide to Learn JavaScript
+
+    Effectively learn about JavaScript programming
+
+
+    ## Table of Contents
+
+    - [Introduction](#part0000_split_003.html_Intro)
+
+    - [Chapter 1: Prepare to Learn](#part0000_split_004.html_Ch1)
+
+    - [Chapter 2: The Basics](#part0000_split_005.html_Ch2)
+
+    - [Chapter 3: Testing](#part0000_split_006.html_Ch3)
+
+    - [Chapter 4: Putting it Into Action](#part0000_split_007.html_Ch4)
+
+    - [Chapter 5: Document JavaScript](#part0000_split_008.html_Ch5)
+
+    - [Chapter 6: Hiring a Professional](#part0000_split_009.html_Ch6)
+
+    - [Conclusion](#part0000_split_010.html_Conclusion)
+
+
+    © Copyright 2017 by ____K.M. KASSI - All rights reserved.
+
+
+    The following eBook is reproduced below with the goal of providing information
+    that is as accurate and reliable as possible. Regardless, purchasing this eBook
+    can be seen as consent to the fact that both the publisher and the author of this
+    book are in no way experts on the topics discussed within and that any recommendations
+    or suggestions that are made herein are for entertainment purposes only. Professionals
+    should be consulted as needed prior to undertaking any of the action endorsed
+    herein.
+
+
+    This declaration is deemed fair and valid by both the American Bar Association
+    and the Committee of Publishers Association and is legally binding throughout
+    the United States.
+
+
+    Furthermore, the transmission, duplication or reproduction of any of the following
+    work including specific information will be considered an illegal act irrespective
+    of if it is done electronically or in print. This extends to creating a secondary
+    or tertiary copy of the work or a recorded copy and is only allowed with express
+    written consent from the Publisher. All additional right reserved.
+
+
+    The information in the following pages is broadly considered to be a truthful
+    and accurate account of facts, and as such any inattention, use or misuse of the
+    information in question by the reader will render any resulting actions solely
+    under their purview. There are no scenarios in which the publisher or the original
+    author of this work can be in any fashion deemed liable for any hardship or damages
+    that may befall them after undertaking information described herein.
+
+
+    Additionally, the information in the following pages is intended only for informational
+    purposes and should thus be thought of as universal. As befitting its nature,
+    it is presented without assurance regarding its prolonged validity or interim
+    quality. Trademarks that are mentioned are done without written consent and can
+    in no way be considered an endorsement from the trademark holder.
+
+
+    ## Introduction
+
+    Congratulations on downloading this book and thank you for doing so.
+
+
+    The following chapters will discuss how you can effectively learn JavaScript.
+    While the chapters will not necessarily teach you JavaScript (although, there
+    are some quick tips), they will teach you the right way to go about learning it.
+
+
+    There are plenty of books on this subject on the market, thanks again for choosing
+    this one! Every effort was made to ensure it is full of as much useful information
+    as possible, please enjoy!
+
+
+    ## Chapter 1: Prepare to Learn
+
+    The most important step that you will take when you are considering learning how
+    to write JavaScript is preparing to learn what you need to do. Part of that preparation
+    includes learning what, exactly, `JavaScript` is and how it originated. You should
+    also prepare by learning the benefits of `JavaScript` over another coding language
+    so that you can make sure you are really learning the right language for your
+    website.
+
+
+    ### What is It?
+
+    `JavaScript` is a language. It is not like most of the languages that you know
+    or has heard of in that it is only in written form and it is based on technology.
+    It is a way to communicate things to people who are on the other side of a web
+    page, and it allows you the chance to make sure that you have gotten your point
+    across on your website. You can’t speak `JavaScript`. If you did, it would sound
+    choppy and would probably not make too much sense.
+
+
+    When you write something from the back end of your website in `JavaScript`, when
+    it appears to the people who visit your website, it will look like you have actually
+    written on it. If you do not use a coding language, your website would just appear
+    to be many random numbers, symbols, and letters which could not only be confusing
+    for your visitors but could be detrimental for anyone who wanted to enjoy your
+    website. It could hurt the goal you are trying to accomplish with your site.
+
+
+    There are many different coding languages that you can use, but `JavaScript` is
+    one of the most popular. It allows you to change the way that your fonts look,
+    adds clickable buttons and makes your website completely functional when people
+    want to do different things on it. It is also one of the easiest coding languages
+    that you can learn.
+
+
+    ### Where Did it Come From?
+
+    `JavaScript` officially became available on operating systems in 1995. This was
+    when it was first used on computers, and `Netscape` was the first to recognize
+    it for what the coding was able to do. It was used to help create web pages and
+    other things that people would see when they are using their personal and office
+    computers.
+
+
+    Since the name was so similar to other names of different types of coding, some
+    programs opted to call it `JScript` instead of `JavaScript`. This was the decision
+    of the people who manufactured the operating systems and it is something that
+    did not really stick. Most companies call it `JavaScript` now, and they do not
+    get confused with other programs that are available on the market because it is
+    something that has been able to be much different than some of the other things
+    that are available now.
+
+
+    When `JavaScript` was first created, it was done so that everybody would be able
+    to use it. In the past, before 1995, the coding was difficult to do, and not many
+    people knew how to do it. It was something that was somewhat of a rarity. While
+    not everyone is able to do coding now, `JavaScript` has made it easier, and many
+    more people are able to make sure that they are getting things done the right
+    way when it comes to their coding and the benefits that go along with it.
+
+
+    ### Are There Benefits?
+
+    Among the many benefits that come with using `JavaScript`, ease of use is one
+    of the biggest. It allows people to be able to do more with what they have at
+    their disposal and it gives them the option to learn a coding language quicker
+    than any of the other coding languages that are used on programs.
+
+
+    `JavaScript` is nearly foolproof in that others had come before and created the
+    development necessary to just plug in the codes where they need to be. While it
+    is important that people also learn how to write `JavaScript` if they want to
+    use it all of the time, they can also just use the codes that have already been
+    written. Anyone can get started with `JavaScript` in this way because it is easy
+    to use.
+
+
+    Other benefits include the ability to make things on web pages clickable, the
+    ability to create interactive web pages and the ability to do more with what there
+    is to offer on the `JavaScript` platforms. Anyone who knows how to use and wants
+    to use `JavaScript` can use it to be able to increase the way that their web page
+    looks. They can also use it to help themselves create more of a visitor-friendly
+    atmosphere on their web page.
+
+
+    All around, `JavaScript` is one of the best coding languages because of the way
+    that people can use it easily and because of the many things that it brings to
+    the table. It is a good idea for people who are just getting started with coding
+    to start out with `JavaScript` because of the ease of use.
+
+
+    ### Will You Use It?
+
+    Nearly everyone who has learned `JavaScript` has found that they use it. Whether
+    they use it often on their own website or use it to help others out with their
+    websites, `JavaScript` definitely comes in handy.
+
+    '
+  raw: "\n\n![](cover.jpeg)\n\nThe Ultimate Beginner’s Guide to Learn JavaScript:\n\
+    \nEffectively learn about JavaScript programming\n\nTable of Contents\n\n[Introduction](#part0000_split_003.html_Intro)\n\
+    \n[Chapter 1: Prepare to Learn](#part0000_split_004.html_Ch1)\n\n[Chapter 2: The\
+    \ Basics](#part0000_split_005.html_Ch2)\n\n[Chapter 3: Testing](#part0000_split_006.html_Ch3)\n\
+    \n[Chapter 4: Putting it Into Action](#part0000_split_007.html_Ch4)\n\n[Chapter\
+    \ 5: Document JavaScript](#part0000_split_008.html_Ch5)\n\n[Chapter 6: Hiring\
+    \ a Professional](#part0000_split_009.html_Ch6)\n\n[Conclusion](#part0000_split_010.html_Conclusion)\n\
+    \n Copyright 2017 by ____K.M.  KASSI__________________ - All rights reserved.\n\
+    \nThe following eBook is reproduced below with the goal of providing information\
+    \ that is as accurate and reliable as possible. Regardless, purchasing this eBook\
+    \ can be seen as consent to the fact that both the publisher and the author of\
+    \ this book are in no way experts on the topics discussed within and that any\
+    \ recommendations or suggestions that are made herein are for entertainment purposes\
+    \ only. Professionals should be consulted as needed prior to undertaking any of\
+    \ the action endorsed herein.\n\nThis declaration is deemed fair and valid by\
+    \ both the American Bar Association and the Committee of Publishers Association\
+    \ and is legally binding throughout the United States.\n\nFurthermore, the transmission,\
+    \ duplication or reproduction of any of the following work including specific\
+    \ information will be considered an illegal act irrespective of if it is done\
+    \ electronically or in print. This extends to creating a secondary or tertiary\
+    \ copy of the work or a recorded copy and is only allowed with express written\
+    \ consent from the Publisher. All additional right reserved.\n\nThe information\
+    \ in the following pages is broadly considered to be a truthful and accurate account\
+    \ of facts, and as such any inattention, use or misuse of the information in question\
+    \ by the reader will render any resulting actions solely under their purview.\
+    \ There are no scenarios in which the publisher or the original author of this\
+    \ work can be in any fashion deemed liable for any hardship or damages that may\
+    \ befall them after undertaking information described herein.\n\nAdditionally,\
+    \ the information in the following pages is intended only for informational purposes\
+    \ and should thus be thought of as universal. As befitting its nature, it is presented\
+    \ without assurance regarding its prolonged validity or interim quality. Trademarks\
+    \ that are mentioned are done without written consent and can in no way be considered\
+    \ an endorsement from the trademark holder.\n\nIntroduction\n\nCongratulations\
+    \ on downloading this book and thank you for doing so.\n\nThe following chapters\
+    \ will discuss how you can effectively learn JavaScript. While the chapters will\
+    \ not necessarily teach you JavaScript (although, there are some quick tips),\
+    \ they will teach you the right way to go about learning it.\n\nThere are plenty\
+    \ of books on this subject on the market, thanks again for choosing this one!\
+    \ Every effort was made to ensure it is full of as much useful information as\
+    \ possible, please enjoy!\n\n# \n\nChapter 1: Prepare to Learn\n\nThe most important\
+    \ step that you will take when you are considering learning how to write JavaScript\
+    \ is preparing to learn what you need to do. Part of that preparation includes\
+    \ learning what, exactly, JavaScript is and how it originated. You should also\
+    \ prepare by learning the benefits of JavaScript over another coding language\
+    \ so that you can make sure you are really learning the right language for your\
+    \ website.\n\nWhat is It?\n\nJavaScript is a language. It is not like most of\
+    \ the languages that you know or has heard of in that it is only in written form\
+    \ and it is based on technology. It is a way to communicate things to people who\
+    \ are on the other side of a web page, and it allows you the chance to make sure\
+    \ that you have gotten your point across on your website. You can’t speak JavaScript.\
+    \ If you did, it would sound choppy and would probably not make too much sense.\n\
+    \nWhen you write something from the back end of your website in JavaScript, when\
+    \ it appears to the people who visit your website, it will look like you have\
+    \ actually written on it. If you do not use a coding language, your website would\
+    \ just appear to be many random numbers, symbols, and letters which could not\
+    \ only be confusing for your visitors but could be detrimental for anyone who\
+    \ wanted to enjoy your website. It could hurt the goal you are trying to accomplish\
+    \ with your site.\n\nThere are many different coding languages that you can use,\
+    \ but JavaScript is one of the most popular. It allows you to change the way that\
+    \ your fonts look, adds clickable buttons and makes your website completely functional\
+    \ when people want to do different things on it. It is also one of the easiest\
+    \ coding languages that you can learn.\n\nWhere Did it Come From?\n\nJavaScript\
+    \ officially became available on operating systems in 1995\\. This was when it\
+    \ was first used on computers, and Netscape was the first to recognize it for\
+    \ what the coding was able to do. It was used to help create web pages and other\
+    \ things that people would see when they are using their personal and office computers.\n\
+    \nSince the name was so similar to other names of different types of coding, some\
+    \ programs opted to call it JScript instead of JavaScript. This was the decision\
+    \ of the people who manufactured the operating systems and it is something that\
+    \ did not really stick. Most companies call it JavaScript now, and they do not\
+    \ get confused with other programs that are available on the market because it\
+    \ is something that has been able to be much different than some of the other\
+    \ things that are available now.\n\nWhen JavaScript was first created, it was\
+    \ done so that everybody would be able to use it. In the past, before 1995, the\
+    \ coding was difficult to do, and not many people knew how to do it. It was something\
+    \ that was somewhat of a rarity. While not everyone is able to do coding now,\
+    \ JavaScript has made it easier, and many more people are able to make sure that\
+    \ they are getting things done the right way when it comes to their coding and\
+    \ the benefits that go along with it.\n\nAre There Benefits?\n\nAmong the many\
+    \ benefits that come with using JavaScript, ease of use is one of the biggest.\
+    \ It allows people to be able to do more with what they have at their disposal\
+    \ and it gives them the option to learn a coding language quicker than any of\
+    \ the other coding languages that are used on programs.\n\nJavaScript is nearly\
+    \ foolproof in that others had come before and created the development necessary\
+    \ to just plug in the codes where they need to be. While it is important that\
+    \ people also learn how to write JavaScript if they want to use it all of the\
+    \ time, they can also just use the codes that have already been written. Anyone\
+    \ can get started with JavaScript in this way because it is easy to use.\n\nOther\
+    \ benefits include the ability to make things on web pages clickable, the ability\
+    \ to create interactive web pages and the ability to do more with what there is\
+    \ to offer on the JavaScript platforms. Anyone who knows how to use and wants\
+    \ to use JavaScript can use it to be able to increase the way that their web page\
+    \ looks. They can also use it to help themselves create more of a visitor-friendly\
+    \ atmosphere on their web page.\n\nAll around, JavaScript is one of the best coding\
+    \ languages because of the way that people can use it easily and because of the\
+    \ many things that it brings to the table. It is a good idea for people who are\
+    \ just getting started with coding to start out with JavaScript because of the\
+    \ ease of use.\n\nWill You Use It?\n\nNearly everyone who has learned JavaScript\
+    \ has found that they use it. Whether they use it often on their own website or\
+    \ use it to help others out with their websites, JavaScript definitely comes in\
+    \ handy."
+  toc: []
+  trans: '
+
+
+    ![](img/cover.jpeg)
+
+
+    # JavaScript 终极新手指南
+
+    高效学习 JavaScript 编程
+
+
+    ## 目录
+
+    - 引言
+
+    - 第 1 章：学习准备
+
+    - 第 2 章：基础知识
+
+    - 第 3 章：测试
+
+    - 第 4 章：实际行动
+
+    - 第 5 章：文档 JavaScript
+
+    - 第 6 章：聘请专业人士
+
+    - 结论
+
+
+    © Copyright 2017 by ____K.M. KASSI - 版权所有。
+
+
+    以下电子书的再版如下，旨在提供尽可能准确和可靠的信息。无论如何，购买本电子书均被视为同意：本书的出版者和作者对所讨论的话题并非专家，且书中提出的任何建议或指示仅供娱乐之用。在采取此处支持的任何行动之前，应根据需要咨询专业人士。
+
+
+    此声明被美国律师协会和出版商协会委员会认为是公平且有效的，并在全美范围内具有法律约束力。
+
+
+    此外，无论是以电子形式还是印刷形式，对以下任何作品（包括特定信息）的传输、复制或复制都将被视为非法行为。这包括创建作品的二次或三次拷贝或录制副本，仅在获得出版者的明确书面同意的情况下允许。保留所有其他权利。
+
+
+    后续页面中的信息被广泛认为是事实的真实准确陈述，因此，读者对相关信息的任何疏忽、使用或误用，其产生的任何后果将由其自行承担。在任何情况下，本书的出版者或原作者对于读者在采取本文处描述的信息后可能遭受的任何困难或损害承担任何责任。
+
+
+    此外，后续页面中的信息仅供参考，因此应被视为通用的。根据其性质，这些信息的呈现不对其长期有效性或中期质量提供保证。文中提到的商标是在未征得许可的情况下使用的，绝不能被视为商标持有者的背书。
+
+
+    ## 引言
+
+    恭喜你下载本书，感谢你的支持。
+
+
+    后续章节将讨论你如何有效地学习 JavaScript。虽然这些章节不一定教你 JavaScript（尽管包含一些快速技巧），但它们将教你学习它的正确方法。
+
+
+    市场上有很多许多关于这个主题的书，再次感谢你选择这一本！我们已尽一切努力确保它包含尽可能有用的信息，请尽情享受！
+
+
+    ## 第 1 章：学习准备
+
+    当你考虑学习如何编写 JavaScript 时，采取的最重要步骤是准备好学习你需要做的事情。准备工作的一部分包括了解 `JavaScript` 究竟是什么以及它是如何起源的。你还应该通过学习
+    `JavaScript` 相比其他编程语言的优势，确保你真的为你的网站选择了正确的语言。
+
+
+    ### 它是什么？
+
+    `JavaScript` 是一种语言。它与你熟悉或听过的大多数语言不同，因为它以书面形式存在，并且基于技术。它是与网页另一端的人交流信息的方式，让你有机会确保你已经在网站上传达了你的观点。你不能“说”
+    `JavaScript`。如果你这样做，听起来会断断续续的，而且可能没有意义。
+
+
+    当你从网站的后端用 `JavaScript` 编写内容时，访问你网站的人看来，就像是你真的在上面写了东西。如果你不使用编程语言，你的网站看起来就像是许多随机的数字、符号和字母，这不仅会让访问者感到困惑，还可能对任何想要享受你网站的人产生不利影响。它可能会损害你通过该网站想要实现的目标。
+
+
+    你可以使用许多不同的编程语言，但 `JavaScript` 是最流行的语言之一。它允许你更改字体的外观，添加可点击的按钮，并在当人们想在网站上执行不同的操作时，让你的网站具有完全的功能性。它也是你可以学习的最简单的编程语言之一。
+
+
+    ### 它从哪里来？
+
+    `JavaScript` 于 1995 年正式在操作系统上可用。这是它首次在计算机上使用的时候，`Netscape`（网景）是第一个意识到这种代码所功能的实体。它被用于帮助创建网页以及人们在使用个人和办公计算机时会看到的其他内容。
+
+
+    由于该名称与其他不同类型的编码名称相似，某些程序选择将其命名为 `JScript` 而不是 `JavaScript`。这是制造操作系统的者的决定，但这种做法并没有流行起来。现在大多数公司都称其为
+    `JavaScript`，它们不会与市场上的其他程序混淆，因为它已经与现在可用的一些其他事物大不相同。
+
+
+    当 `JavaScript` 最初创建时，是为了让每个人都能使用它。在过去，在 1995 年之前，编码非常困难，很少有人知道这样做。它是一种罕见的东西。
+
+
+    ### 有优势吗？
+
+    在使用 `JavaScript` 带来的许多优势中，易用性是最大的之一。它允许人们利用现有的资源做更多事情，并提供了比市面上使用的任何其他语言更快学习编程语言的机会。
+
+
+    `JavaScript` 几乎是不会出错的，因为之前已经有人创建了必要的开发工作，只需在需要的地方插入代码。虽然对于想要一直使用它的人，学习编写 `JavaScript`
+    是重要的，但他们也可以直接使用已经编写的代码。任何人都可以以这种方式开始 `JavaScript`，因为它很容易用。
+
+
+    其他优势还包括能够让网页元素变得可点击、创建交互式网页，以及利用 `JavaScript` 平台提供的功能做更多事情。任何知道并想使用 `JavaScript`
+    的人都可以利用它来增加他们网站的外观。他们还可以利用它来帮助自己营造更加用户友好的氛围。
+
+
+    总而言之，`JavaScript` 是最好的编程语言之一，因为人们可以轻松地使用它，并且因为它带了许多功能。对于刚开始编程的人来说，从 `JavaScript`
+    开始是一个好主意。
+
+
+    ### 你会使用它吗？
+
+    几乎每个学习过 `JavaScript` 的人发现他们都会使用它。无论是在自己的网站上经常使用，还是帮助他人处理网站，`JavaScript` 确实非常有用。
+
+
+    '
+- fmt: '
+
+    Once you have learned the language, you will likely know what you are doing with
+    it for the rest of your time on the web. Make sure that you learn it as much as
+    possible so that you will be able to do more with what you have. There are many
+    different options when it comes to the `JavaScript` and what you have with it.
+    Make sure that you do your best to be able to provide your website with the best
+    user experience possible.
+
+
+    There is no doubt that, if you learn `JavaScript`, you will use it. It is designed
+    to be user-friendly, and you can make nearly anything that you want out of the
+    codes that are used in `JavaScript`. Make sure that you do your best and that
+    you try to always find different ways to use `JavaScript`. Using the best innovation
+    will allow you to have the best website possible when it comes to the options
+    that you have written with `JavaScript`.
+
+
+    Despite the fact that it is easy to use, you should still be ready to start learning
+    `JavaScript` by preparing yourself for the process. Know what you want to do with
+    it, understand the point of using it and learn as much as possible about it before
+    you even make the decision to start learning it. It is always a good idea to give
+    yourself a strong place to start so that you can do more with the language and
+    with the codes that come along with `JavaScript`.
+
+
+    ## Chapter 2: The Basics
+
+
+    Just about any person who has a computer is able to get started with `JavaScript`.
+    Since the language is somewhat simple, there is no extra software that you need
+    to use. This is especially true when you are first getting started because you
+    will only be doing simple things with `JavaScript`, so you do not need too many
+    extras. As you begin to do more, you can consider getting different software and
+    additional programs, but these basics should enable you to do the most with `JavaScript`
+    when you are just getting started.
+
+
+    ### Web Browser
+
+
+    When the language was first available for programmers to use, it was only able
+    to be used in select browsers. It has now grown so much that it is the only language
+    that can be used in every browser. It is supported on every browser and platform,
+    and it can be used to create web pages that will be able to show up no matter
+    what browser your visitor is going to use.
+
+
+    Because of this, you can use any type of browser to get started with your `JavaScript`
+    goals. Most people choose to use their favorite one or one that they normally
+    use when they are looking at websites for their own personal use. Some others
+    choose to use different browsers that are better or more functional for looking
+    at the web pages that they have created.
+
+
+    One of the most common things that people do is simply use the default browser.
+    This is the browser that automatically comes up when you click on a link to a
+    website or when you try to open a web page. Those who write in `JavaScript` do
+    this so that they do not have to worry about trying to get around it each time
+    that they open one of the pages that they have made. It is something that is simple
+    and something that allows them to do more with it.
+
+
+    ### The Editor
+
+
+    In the beginning, the editor that you choose to write your `JavaScript` will not
+    make much of a difference. It will simply be a place where you can put all of
+    your information into and save it so that you can use it on the web page and it
+    will work well with the web page that you have created.
+
+
+    There are several programs that you can download to your computer that will be
+    able to be used to edit your `JavaScript`. The majority of these are free and
+    easy to use so that you don’t have to worry about learning a whole new program
+    just because you want to start writing `JavaScript`. You can find them on the
+    web or in the app store that is included with your computer if you have a newer
+    computer. Each program has different benefits, but most of them are simple, plain
+    text processors.
+
+
+    If you are running Windows, you may be surprised to find that you already have
+    your very own software ready for you to start editing `JavaScript`. `Notepad`
+    was not created for that reason, but it can be used for it. It is plain text,
+    and it does not make changes to the text as you write it in the way that Word
+    or another processor would. You can write and save all of your `JavaScript` right
+    into a note by using the `Notepad` that comes right with your computer.
+
+
+    ### Script Tags
+
+
+    There are two main ways that you can write `JavaScript`, and the first is to create
+    script tags. These are tags that you write out on your web page and you put your
+    code into the scripts so that you have it all done on your website. This is easy
+    for beginners who want basic codes and just want a basic website because it is
+    easy to just put the codes into each of the scripts. It is ideal for people who
+    do not want to edit their website often or who do not have a lot of changes that
+    would go into making the website.
+
+
+    To do this, you would simply write:
+
+
+    ```html
+
+    <script type= “text/JavaScript"> Write all of the information that you want to
+    include right here and make sure that it is in plain text. That is what your notepad
+    editor is going to be used for and what you can do to make sure that you are doing
+    it the right way.</script>
+
+    ```
+
+
+    The information will then appear on your website when people click on it. If you
+    were to just write it without the `script` tags, the words would not appear. It
+    would likely just be a series of symbols and numbers with some letters thrown
+    in there if you are lucky.
+
+
+    If you want to just start practicing `JavaScript`, this is the best way to do
+    it. It will allow you a chance to truly start writing it and to have it appear
+    on the web page.
+
+
+    ### Script Links
+
+
+    Once you become more comfortable with `JavaScript` and what you can do with it,
+    you can begin to link up to the script that you have written. This is a great
+    thing to use if you are planning on making a lot of changes, if you have a lot
+    of different information or if you want to make your website very interactive
+    so that people can click on anything and get a result.
+
+
+    To be able to use links, you do it similarly. You would write your code in your
+    plain text editor, like `Notepad`. Then, save your code that you have just written
+    so that it has a name you can easily recognize. Make sure that you use the `.js`
+    ending of it so that it will be converted when it is linked into your JavaScript.
+
+
+    When you are ready to link up your JavaScript that you have saved, all you need
+    to do is write:
+
+
+    ```html
+
+    <script type= “text/JavaScript” src= “scripts/choosisfile.js"></script>
+
+    ```
+
+
+    Where `choosisfile.js` is written, you would want to put in your own file name,
+    you would use the one that you just saved to your computer so that it would be
+    linked up with what you have written.
+
+
+    ### Variables
+
+
+    There are many different variables for web pages and that is how the page will
+    work to display different information so that people can see it when they are
+    on the different pages. There are also different things that you can do with what
+    you have and with what you are going to show your visitors who decide to come
+    to your web page.
+
+
+    The variables are what communicates what you want to say to your website. They
+    are the “meat” of the code and are what your visitors are going to be concerned
+    with when they come to your site. All you need to do is write:
+
+
+    ```javascript
+
+    var grapes= 7;
+
+    ```
+
+
+    This is, of course, if you are talking about grapes. It will tell your code that
+    you have 7 grapes that are available. The semicolon at the end is used to tell
+    your code that you are done talking and that it can move onto the next thing that
+    is written in the code. It is like the period at the end of the sentence, but
+    it is there so that your code will know when it needs to stop.
+
+
+    If you want to tell your visitors that there are 7 grapes that are available,
+    all you have to do is write out a variable alert:
+
+
+    ```javascript
+
+    alert(''We have’ + grapes + ‘ grapes!'');
+
+    ```
+
+    '
+  raw: 'Once you have learned the language, you will likely know what you are doing
+    with it for the rest of your time on the web. Make sure that you learn it as much
+    as possible so that you will be able to do more with what you have. There are
+    many different options when it comes to the JavaScript and what you have with
+    it. Make sure that you do your best to be able to provide your website with the
+    best user experience possible.
+
+
+    There is no doubt that, if you learn JavaScript, you will use it. It is designed
+    to be user-friendly, and you can make nearly anything that you want out of the
+    codes that are used in JavaScript. Make sure that you do your best and that you
+    try to always find out different ways to use JavaScript. Using the best innovation
+    will allow you to have the best website possible when it comes to the options
+    that you have written with JavaScript.
+
+
+    Despite the fact that it is easy to use, you should still be ready to start learning
+    JavaScript by preparing yourself for the process. Know what you want to do with
+    it, understand the point of using it and learn as much as possible about it before
+    you even make the decision to start learning it. It is always a good idea to give
+    yourself a strong place to start so that you can do more with the language and
+    with the codes that come along with JavaScript.
+
+
+    Chapter 2: The Basics
+
+
+    Just about any person who has a computer is able to get started with JavaScript.
+    Since the language is somewhat simple, there is no extra software that you need
+    to use. This is especially true when you are first getting started because you
+    will only be doing simple things with JavaScript, so you do not need too many
+    extras. As you begin to do more, you can consider getting different software and
+    additional programs, but these basics should enable you to do the most with JavaScript
+    when you are just getting started.
+
+
+    Web Browser
+
+
+    When the language was first available for programmers to use, it was only able
+    to be used in select browsers. It has now grown so much that it is the only language
+    that can be used in every browser. It is supported on every browser and platform,
+    and it can be used to create web pages that will be able to show up no matter
+    what browser your visitor is going to use.
+
+
+    Because of this, you can use any type of browser to get started with your JavaScript
+    goals. Most people choose to use their favorite one or one that they normally
+    use when they are looking at websites for their own personal use. Some others
+    choose to use different browsers that are better or more functional for looking
+    at the web pages that they have created.
+
+
+    One of the most common things that people do is simply use the default browser.
+    This is the browser that automatically comes up when you click on a link to a
+    website or when you try to open a web page. Those who write in JavaScript do this
+    so that they do not have to worry about trying to get around it each time that
+    they open one of the pages that they have made. It is something that is simple
+    and something that allows them to do more with it.
+
+
+    The Editor
+
+
+    In the beginning, the editor that you choose to write your JavaScript will not
+    make much of a difference. It will simply be a place where you can put all of
+    your information into and save it so that you can use it on the web page and it
+    will work well with the web page that you have created.
+
+
+    There are several programs that you can download to your computer that will be
+    able to be used to edit your JavaScript. The majority of these are free and easy
+    to use so that you don’t have to worry about learning a whole new program just
+    because you want to start writing JavaScript. You can find them on the web or
+    in the app store that is included with your computer if you have a newer computer.
+    Each program has different benefits, but most of them are simple, plain text processors.
+
+
+    If you are running Windows, you may be surprised to find that you already have
+    your very own software ready for you to start editing JavaScript. Notepad was
+    not created for that reason, but it can be used for it. It is plain text, and
+    it does not make changes to the text as you write it in the way that Word or another
+    processor would. You can write and save all of your JavaScript right into a note
+    by using the Notepad that comes right with your computer.
+
+
+    Script Tags
+
+
+    There are two main ways that you can write JavaScript, and the first is to create
+    script tags. These are tags that you write out on your web page and you put your
+    code into the scripts so that you have it all done on your website. This is easy
+    for beginners who want basic codes and just want a basic website because it is
+    easy to just put the codes into each of the scripts. It is ideal for people who
+    do not want to edit their website often or who do not have a lot of changes that
+    would go into making the website.
+
+
+    To do this, you would simply write:
+
+
+    <script type= “text/JavaScript”> Write all of the information that you want to
+    include right here and make sure that it is in plain text. That is what your notepad
+    editor is going to be used for and what you can do to make sure that you are doing
+    it the right way.</script>
+
+
+    The information will then appear on your website when people click on it. If you
+    were to just write it without the “script” tags, the words would not appear. It
+    would likely just be a series of symbols and numbers with some letters thrown
+    in there if you are lucky.
+
+
+    If you want to just start practicing JavaScript, this is the best way to do it.
+    It will allow you a chance to truly start writing it and to have it appear on
+    the web page.
+
+
+    Script Links
+
+
+    Once you become more comfortable with JavaScript and what you can do with it,
+    you can begin to link up to the script that you have written. This is a great
+    thing to use if you are planning on making a lot of changes, if you have a lot
+    of different information or if you want to make your website very interactive
+    so that people can click on nearly anything and get a result.
+
+
+    To be able to use links, you do it similarly. You would write your code in your
+    plain text editor, like Notepad. Then, save your code that you have just written
+    so that it has a name you can easily recognize. Make sure that you use the .js
+    ending of it so that it will be converted when it is linked into your JavaScript.
+
+
+    When you are ready to link up your JavaScript that you have just saved, all you
+    need to do is write:
+
+
+    <script type= “text/JavaScript” src= “scripts/choosethisfile.js”></scripts>
+
+
+    Where “choosethisfile.js” is written, you would want to put in your own file name,
+    you would use the one that you just saved to your computer so that it would be
+    linked up with what you have just written in Notepad.
+
+
+    Variables
+
+
+    There are many different variables for web pages and that is how the page will
+    work to display different information so that people can see it when they are
+    on the different pages. There are also different things that you can do with what
+    you have and with what you are going to show your visitors who decide to come
+    to your web page.
+
+
+    The variables are what communicates what you want to say to your website. They
+    are the “meat” of the code and are what your visitors are going to be concerned
+    with when they come to your site. All you need to do is write:
+
+
+    var grapes= 7;
+
+
+    This is, of course, if you are talking about grapes. It will tell your code that
+    you have 7 grapes that are available. The semicolon at the end is used to tell
+    your code that you are done talking and that it can move onto the next thing that
+    is written in the code. It is like the period at the end of the sentence, but
+    it is there so that your code will know when it needs to stop.
+
+
+    If you want to tell your visitors that there are 7 grapes that are available,
+    all you have to do is write out a variable alert:
+
+
+    alert(‘We have’ + grapes ‘ +grapes!);'
+  toc: []
+  trans: '
+
+    一旦你学会了这种语言，你可能就会知道在未来的网络世界中你要用它做什么了。请确保尽可能地学习它，这样你就能利用所学知识完成更多事情。在 `JavaScript`
+    以及你如何使用它方面，有许多不同的选择。请务必尽力为为你的网站提供尽可能好的用户体验。
+
+
+    毫无疑问，如果你学习了 `JavaScript`，你就会使用它。它的设计初衷是用户友好，你可以利用 `JavaScript` 中使用的代码创建你几乎想要的任何内容。请务必尽全力，并尝试寻找使用
+    `JavaScript` 的不同方法。使用最创新的方法，将让你在通过 `JavaScript` 编写的选项中拥有一个最出色的网站。
+
+
+    尽管它易于使用，但你仍然应该为学习 `JavaScript` 做好准备，为这个过程做好规划。在决定开始学习之前，先想清楚你想用它做什么，理解使用它的意义，并尽可能多学习关于它的知识。给自己设定一个坚实的起点总是一个好主意，这样你就能利用这种语言以及随
+    `JavaScript` 一起产生的代码完成更多事情。
+
+
+    ## 第 2 章：基础知识
+
+
+    几乎任何拥有电脑的人都可以开始学习 `JavaScript`。由于这门语言相当简单，你不需要使用额外的软件。这在你刚开始时尤为如此，因为你起初只需要用 `JavaScript`
+    做一些简单的事情，所以不需要太多的额外工具。当你开始尝试更多事情时，可以考虑获取不同的软件和额外的程序，但在刚开始阶段，这些基础知识就足够让你在 `JavaScript`
+    上发挥最大作用了。
+
+
+    ### Web 浏览器
+
+
+    当这门语言首次提供给程序员使用时，它只能在特定的浏览器中使用。现在，它已经发展得非常强大，成为了唯一可以在每个浏览器中使用的语言。它被每个浏览器和平台支持，并可以用于创建无论访问者使用何种浏览器都能正常
+    way 的 页面。
+
+
+    正因如此，你可以使用任何类型的浏览器来实现你的 `JavaScript` 目标。大多数人会选择他们最喜欢的浏览器，或者他们为了个人用途浏览网站时常用的某一个。另一些人则会选择不同的浏览器，这些浏览器对于查看他们创建的网页来说可能更好或功能更全。
+
+
+    人们最常见的做法之一就是直接使用默认浏览器。这是当你点击网站链接或尝试打开网页时自动弹出的浏览器。编写 `JavaScript` 的人这样做是为了避免在每次打开自己制作的页面时都要费心处理兼容性问题。这是一种简单的方法，而且能让他们完成更多操作。
+
+
+    ### 编辑器
+
+
+    在开始阶段，你选择的编写 `JavaScript` 的编辑器并不会产生太大影响。它仅仅是一个让你把所有信息输入到其中并保存的地方，以便你可以在网页上使用，并且它能与你创建的网页良好地配合。
+
+
+    你可以下载多个程序到电脑上，它们可以用来编辑你的 `JavaScript`。其中大多数程序都是免费且易于使用的，这样你就不需要为了开始编写 `JavaScript`
+    而得担心学习一个完全全新的程序了。你可以在网上找到它们，或者如果你使用的是较新的电脑，可以在电脑自带的应用商店中找到它们。每个程序都有不同的优点，但大多数它们只是简单的纯文本处理器。
+
+
+    如果你运行的是 Windows，你可能会惊讶地发现你已经有一款软件可以让你开始编辑 `JavaScript` 了。`记事本`（Notepad）并不是为此创建的，但可以用于此目的。它是纯文本的，在你编写文本时，它不会像
+    Word 或其他处理器那样对文本进行修改。你可以直接使用电脑自带的`记事本` 在笔记中编写并保存所有的 `JavaScript`。
+
+
+    ### 脚本标签
+
+
+    编写 `JavaScript` 有两种主要方式，第一是创建脚本标签（script tags）。这些是你写在网页上的标签，你将代码放入脚本中，这样你的网站就完成了所有代码的实现。对于想要基础代码且只需要一个基础网站的初学者来说，这很容易，因为只需要将代码放入每个脚本中即可。对于那些不想频繁编辑网站或对网站没有太多改动需求的人来说，这是理想的。
+
+
+    要做到这一点，你只需要编写：
+
+
+    ```html
+
+    <script type= “text/JavaScript"> 在这里写下你想包含的所有信息，并确保它是纯文本。这就是你的记事本编辑器的用途，也是你为了确保操作正确而可以做的事情。</script>
+
+    ```
+
+
+    当人们点击它时，这些信息就会出现在你的网站上。如果你只是直接写它而不加 `script` 标签，文字将不会显示。如果你运气好，它可能只是一串符号和数字，中间夹杂一些字母。
+
+
+    如果你只想开始练习 `JavaScript`，这是最好的方法。它将让你有机会真正开始编写它，并让它出现在网页上。
+
+
+    ### 脚本链接
+
+
+    一旦你对 `JavaScript` 以及你用它能做的事情越来越熟悉，你就可以开始链接到你编写的脚本了。如果你计划进行很多更改、有很多信息，或者想让你的网站具有交互性以便人们点击并获得结果，这是一个非常好用的方法。
+
+
+    要使用链接，方法类似。你在纯文本编辑器（如`记事本`）中编写代码。然后保存你刚刚编写的代码，使其有一个易于识别的名字。确保你使用 `.js` 结尾，这样它在链接时就会被转换。
+
+
+    当你准备好链接你保存的 `JavaScript` 时，你只需要编写：
+
+
+    ```html
+
+    <script type= “text/JavaScript” src= “scripts/choosisfile.js"></script>
+
+    ```
+
+
+    在 `choosisfile.js` 的位置你需要你需要自己的文件名，即你刚刚保存到电脑的文件，以便它与你编写的内容链接起来。
+
+
+    ### 变量
+
+
+    网页有很多不同的变量，这就是网页如何通过显示不同信息让人们在不同页面上看到它们。你还可以利用已有的内容做许多不同的事情，展示给决定访问你网页的游客。
+
+
+    变量是你向网站传达你想说的内容。它们是代码的“核心”，也是游客来到你的网站时所关注的内容。你只需要编写：
+
+
+    ```javascript
+
+    var grapes= 7;
+
+    ```
+
+
+    当然，如果你是在谈论苹果的话。这会告诉你的代码你有 7 个苹果可用。结尾处的分号用于告诉你的代码你已经说完了，它可以继续处理代码中的下一项内容。它就像句末的句号，但它是为了让你的代码知道何时停止。
+
+
+    如果你想告诉游客有 7 个苹果，你只需要写一个变量警框：
+
+
+    ```javascript
+
+    alert(''We have’ + grapes + ‘ grapes!'');
+
+    ```
+
+
+    '
+- fmt: '
+
+    “We have” and the second “grapes!” are what your visitors will see when they come
+    to your website. They will not see the different punctuation marks and the `+
+    grapes` that are written in that. The `+grapes` is what tells the code to put
+    how many grapes you actually have available in there.
+
+
+    When you are writing code, keep in mind that it is case sensitive. This is because
+    different cases can mean different things, so it is important to make sure that
+    you write them exactly how they are supposed to be written. This is one of the
+    benefits that come with using `Notepad` because it will not automatically capitalize
+    things.
+
+
+    ## Prompts
+
+
+    Now that you have told your visitors that there are 7 grapes that are available
+    on your site, you can now let them choose how many that they want to eat when
+    they are on your site. Obviously, they aren’t going to eat actual grapes, but
+    this is one of the easiest ways to show that there is takeaway going on when your
+    visitors choose to do something on the site.
+
+
+    To write a prompt:
+
+
+    ```javascript
+
+    var eat =prompt(‘How many grapes do you want? ‘3’)
+
+    ```
+
+
+    This will be what shows up if your visitor wants to eat 3 grapes and it will adjust
+    that to let you know how many grapes you have left. If you write the code:
+
+
+    ```javascript
+
+    grapes -=(parseInt(eat);
+
+    alert(‘We only have ‘+grapes’ + grapes left!)
+
+    ```
+
+
+    This will then show your visitor that there are only 4 grapes available that are
+    left. You can then choose to add another prompt whether they want to eat more
+    grapes or if they want to move on.
+
+
+    You can do this with everything that is on your web page and it will show your
+    visitors the different things that are available. It is always a good decision
+    to make sure that you are providing them with as much information as possible
+    and that they have choices in the form of prompts.
+
+
+    When you wrote the `-=(parseInt)`, you were using an operator. This does exactly
+    what it would do in an actual math problem. The various operators that can be
+    used are the `+`, `-`, `*`, and `/`. They are used as add, subtract, multiply
+    and divide and can be easily used in any of the `JavaScript` code that you write.
+    They tell your visitors what has been done and they teach your code what it should
+    be doing to add or subtract different things when it comes to the various options
+    that are available on the web page.
+
+
+    ## Chapter 3: Testing
+
+
+    As you go through the different parts of writing your `JavaScript`, you are going
+    to want to test it out to make sure that it works. If you are writing it within
+    script tags on your site, all you need to do is save the changes that you have
+    made and open it up in a different window or even a different browser to make
+    sure that it looks right and that there are no issues. If you are linking it to
+    a site or a place on your computer, you will need to do more to make sure that
+    it is working right. You will need to save it to the file that it already was
+    and then try to look at it when you are opening it up in a different browser.
+
+
+    ### Being the Visitor
+
+
+    The most important thing you can do when you are testing out your `JavaScript`
+    is to act as if you were a visitor to the website. Make sure that you feel like
+    you are visiting it for the first time and that you click on every part of it
+    so that you will know what you are looking for. Doing this will allow you to see
+    the many different options on your site and to do different things when it comes
+    to your site.
+
+
+    Visit the web page and look around. See where you can click and what you can do.
+    If you have set up variables and prompts, click on them and make sure that they
+    are working right. Keep your eye out for any stray codes or letters that could
+    be on the web site. Write down if you see any so that you will know to go back
+    later on and change those. This is an easy way for you to figure out what you
+    are doing with the site and what needs to be done to it.
+
+
+    If you want to truly make sure that you are catching everything on the site, consider
+    asking someone else to do that. The second pair of eyes will be helpful because
+    it is not something that they have been looking at for hours and they will be
+    able to pick out more mistakes that you may have made when you were writing the
+    code. Be sure to let them know that your site isn’t finished and that you can
+    do more with it if they help you.
+
+
+    ### Issues that Come Up
+
+
+    There are many issues that may come up when you look at your web page to test
+    it out. The most common issues are ones that things are not written properly or
+    are not in the right place for where you want them to be. For example, you need
+    to make sure that your `JavaScript` is written the right way so that you can have
+    it in the right place.
+
+
+    Your prompt may not come up, or it may come up without an alert next to it. When
+    it does come up, there could be problems. It could look different, there could
+    be words that you didn’t want, or the code could be different depending on what
+    you wanted to truly write out.
+
+
+    Make sure that you write down all of the issues when you look at the site. This
+    will save you time and will keep you from having to constantly switch between
+    looking at the finished code and writing the code that will make it look that
+    way when it is finished. If you are working on a computer and have a smartphone
+    close by, you can even snap a few pictures of what you see when you visit the
+    site so that you will be sure to know what it is that you are looking for when
+    you go back to start writing again.
+
+
+    ### Check for Errors
+
+
+    The most common error that people make when you are writing code is that they
+    capitalize the things that shouldn’t be or forget to capitalize something that
+    should be. This is an error that will not only change the look of your site but
+    one that could make it completely unrecognizable. Make sure that you always check
+    your capitalization.
+
+
+    There are some programs that are available that automatically capitalize the words
+    that you have written even if they are programs that are designed specifically
+    for making the codes and for coding into `JavaScript`. One program that will never
+    capitalize things for you is `Notepad`. This lies among many other reasons as
+    to why this is a great program for you to use especially if you are just starting
+    out.
+
+
+    If you have used the `Notepad` program and have made sure that everything is capitalized
+    in the way that it should be, you can try other things that could be in your errors.
+    Something may be misspelled, you may have used the wrong operator, or you may
+    just have an issue with the way that things written. It is not always that you
+    are bad at writing code but that you may have slipped some extra letters into
+    the code.
+
+
+    Be Sure to Save
+
+
+    If you are using the method of saving to a different file, you always need to
+    make sure that you save it. Along with other errors, like bad capitalization or
+    added letters, this is one of the most common problems that you will find when
+    you are looking at your web page. Just make sure that you have saved everything
+    and that it is in the way that you want it to be.
+
+
+    Failing to save the file that you have just written the code into will not only
+    cause your web page to appear flawed but you could possibly lose all of the work
+    that you have just done. You need to make sure that you are saving it on a regular
+    basis and that you are also saving it before you try to look at your web page.
+
+    '
+  raw: '“We have” and the second “grapes!” are what your visitors will see when they
+    come to your website. They will not see the different punctuation marks and the
+    + grapes that are written in that. The +grapes is what tells the code to put how
+    many grapes you actually have available in there.
+
+
+    When you are writing code, keep in mind that it is case sensitive. This is because
+    different cases can mean different things, so it is important to make sure that
+    you write them exactly how they are supposed to be written. This is one of the
+    benefits that come with using Notepad because it will not automatically capitalize
+    things.
+
+
+    Prompts
+
+
+    Now that you have told your visitors that there are 7 grapes that are available
+    on your site, you can now let them choose how many that they want to eat when
+    they are on your site. Obviously, they aren’t going to eat actual grapes, but
+    this is one of the easiest ways to show that there is takeaway going on when your
+    visitors choose to do something on the site.
+
+
+    To write a prompt:
+
+
+    var eat =prompt(‘How many grapes do you want?’, ‘3’)
+
+
+    This will be what shows up if your visitor wants to eat 3 grapes and it will adjust
+    that to let you know how many grapes you have left. If you write the code:
+
+
+    grapes -=(parseInt(eat);
+
+
+    alert(‘We only have ‘+grapes’ + grapes left!)
+
+
+    This will then show your visitor that there are only 4 grapes available that are
+    left. You can then choose to add another prompt whether they want to eat more
+    grapes or if they want to move on.
+
+
+    You can do this with everything that is on your web page and it will show your
+    visitors the different things that are available. It is always a good decision
+    to make sure that you are providing them with as much information as possible
+    and that they have choices in the form of prompts.
+
+
+    When you wrote the -=(parseInt), you were using an operator. This does exactly
+    what it would do in an actual math problem. The various operators that can be
+    used are the +, -, *, and /. They are used as add, subtract, multiply and divide
+    and can be easily used in any of the JavaScript code that you write. They tell
+    your visitors what has been done and they teach your code what it should be doing
+    to add or subtract different things when it comes to the various options that
+    are available on the web page.
+
+
+    Chapter 3: Testing
+
+
+    As you go through the different parts of writing your JavaScript, you are going
+    to want to test it out to make sure that it works. If you are writing it within
+    script tags on your site, all you need to do is save the changes that you have
+    made and open it up in a different window or even a different browser to make
+    sure that it looks right and that there are no issues. If you are linking it to
+    a site or a place on your computer, you will need to do more to make sure that
+    it is working right. You will need to save it to the file that it already was
+    and then try to look at it when you are opening it up in a different browser.
+
+
+    Being the Visitor
+
+
+    The most important thing that you can do when you are testing out your JavaScript
+    is to act as if you were a visitor to the website. Make sure that you feel like
+    you are visiting it for the first time and that you click on every part of it
+    so that you will know what you are looking for. Doing this will allow you to see
+    the many different options on your site and to do different things when it comes
+    to your site.
+
+
+    Visit the web page and look around. See where you can click and what you can do.
+    If you have set up variables and prompts, click on them and make sure that they
+    are working right. Keep your eye out for any stray codes or letters that could
+    be on the web site. Write down if you see any so that you will know to go back
+    later on and change those. This is an easy way for you to figure out what you
+    are doing with the site and what needs to be done to it.
+
+
+    If you want to truly make sure that you are catching everything on the site, consider
+    asking someone else to do that. The second pair of eyes will be helpful because
+    it is not something that they have been looking at for hours and they will be
+    able to pick out more mistakes that you may have made when you were writing the
+    code. Be sure to let them know that your site isn’t finished and that you can
+    do more with it if they help you.
+
+
+    Issues that Come Up
+
+
+    There are many issues that may come up when you look at your web page to test
+    it out. The most common issues are ones that things are not written properly or
+    are not in the right place for where you want them to be. For example, you need
+    to make sure that your JavaScript is written the right way so that you can have
+    it in the right place.
+
+
+    Your prompt may not come up, or it may come up without an alert next to it. When
+    it does come up, there could be problems. It could look different, there could
+    be words that you didn’t want, or the code could be different depending on what
+    you wanted to truly write out.
+
+
+    Make sure that you write down all of the issues when you look at the site. This
+    will save you time and will keep you from having to constantly switch between
+    looking at the finished code and writing the code that will make it look that
+    way when it is finished. If you are working on a computer and have a smartphone
+    close by, you can even snap a few pictures of what you see when you visit the
+    site so that you will be sure to know what it is that you are looking for when
+    you go back to start writing again.
+
+
+    Check for Errors
+
+
+    The most common error that people make when they are writing code is that they
+    capitalize the things that shouldn’t be or forget to capitalize something that
+    should be. This is an error that will not only change the look of your site but
+    one that could make it completely unrecognizable. Make sure that you always check
+    your capitalization.
+
+
+    There are some programs that are available that automatically capitalize the words
+    that you have written even if they are programs that are designed specifically
+    for making the codes and for coding into JavaScript. One program that will never
+    capitalize things for you is Notepad. This lies among many other reasons as to
+    why this is a great program for you to use especially if you are just starting
+    out.
+
+
+    If you have used the Notepad program and have made sure that everything is capitalized
+    in the way that it should be, you can try other things that could be in your errors.
+    Something may be misspelled, you may have used the wrong operator, or you may
+    just have an issue with the way that things are written. It is not always that
+    you are bad at writing code but that you may have slipped some extra letters into
+    the code.
+
+
+    Writing code is a very particular thing. You need to make sure that you are doing
+    everything exactly right. One wrong letter or punctuation mark can make you unable
+    to have a professional looking website. It can also mess up the way that your
+    entire page looks when people come to visit it.
+
+
+    Be Sure to Save
+
+
+    If you are using the method of saving to a different file, you always need to
+    make sure that you save it. Along with other errors, like bad capitalization or
+    added letters, this is one of the most common problems that you will find when
+    you are looking at your web page. Just make sure that you have saved everything
+    and that it is in the way that you want it to be.
+
+
+    Failing to save the file that you have just written the code into will not only
+    cause your web page to appear flawed but you could possibly lose all of the work
+    that you have just done. You need to make sure that you are saving it on a regular
+    basis and that you are also saving it before you try to look at your web page.'
+  toc: []
+  trans: '
+
+
+    “We have”和第二个“grapes!”就是访问者进入网站时会看到的内容。他们不会看到其中编写的各种标点符号和 `+ grapes`。`+grapes`
+    是用来告诉代码在那个位置显示你实际拥有的葡萄数量。
+
+
+    在编写代码时，请记住它是区分大小写的。这是因为不同的大小写可能意味着不同的含义，所以确保你编写的方式与预期的写法完全一致非常重要。这是使用 `Notepad`
+    的用处之一，因为它不会自动将单词转为大写。
+
+
+    ## 提示框（Prompts）
+
+
+    现在你已经告诉访问者，你的网站上有 7 颗葡萄可以挑选了，你现在可以让他们在访问网站时选择他们想吃几颗。显而易见，他们并不是真的吃，但当访问者选择在网站上进行某些操作时，这是展示交互效果的最简单方法之一。
+
+
+    编写提示框：
+
+
+    ```javascript
+
+    var eat =prompt(‘How many grapes do you want? ‘3’)
+
+    ```
+
+
+    如果访问者想吃 3 颗葡萄，就会显示这个内容，它会进行调整并告诉你剩余多少颗葡萄。如果你编写代码：
+
+
+    ```javascript
+
+    grapes -=(parseInt(eat);
+
+    alert(‘We only have ‘+grapes’ + grapes left!)
+
+    ```
+
+
+    这就会向访问者显示只剩下 4 颗葡萄了。然后你可以选择添加另一个提示框，询问他们是否想吃更多葡萄或想继续离开。
+
+
+    你可以对网页上的任何内容执行此操作，它会向访问者展示不同的可用选项。确保为他们提供尽可能的信息并让他们通过提示框进行选择，始终是一个明智的决定。
+
+
+    当你编写 `-=(parseInt)` 时，你正在使用一个运算符。它的作用与实际数学题完全相同。可以使用的各种运算符有 `+`、`-`、`*` 和 `/`。它们被用于加、减、乘、除，可以轻松用在你编写的任何
+    `JavaScript` 代码中。它们告诉访问者执行了什么操作，并教你的代码在处理网页上各种选项时，应该如何对不同的项目进行加减运算。
+
+
+    ## 第 3 章：测试
+
+
+    在编写 `JavaScript` 的不同部分时，你会想要对其进行测试以确保它运行正常。如果你是在网站的 `script` 标签内编写代码，你只需要做的就是保存已做的更改，并在另一个窗口甚至不同的浏览器中打开它，以确保它看起来正确且没有问题。如果你将其链接到网站或电脑上的某个位置，你还需要做更多工作来确保它运行正常。你需要将它保存到原有的文件中，然后在不同的浏览器中打开它时尝试查看。
+
+
+    ### 充当访问者
+
+
+    测试 `JavaScript` 时，你可以做的最重要的一件事就是假装自己是网站的访问者。确保你感觉自己是第一次访问它，并点击它的每一个部分，这样你就能知道自己在寻找什么。这样做将让你看到你网站上的许多不同选项，并对你的网站执行不同的操作。
+
+
+    访问网页并环顾四周。看看哪里可以点击，你可以做什么。如果你设置了变量和提示框，点击它们并确保它们运行正常。留心网站上可能出现的任何遗漏代码或字母。如果你看到了，就记录下来，这样你以后回来就知道要修改它们。这是你了解自己对网站做了什么，以及需要对它做哪些处理的简单方法。
+
+
+    如果你想真正确保捕捉到网站上的所有问题，可以考虑让别人来做。第二双眼睛会很有帮助，因为他们没有盯着这些东西看了几个小时，他们能够挑出你在编写代码时可能犯的更多错误。务必告诉他们你的网站还没有完成，如果他们帮助你的话，你可以做得更好。
+
+
+    ### 出现的问题
+
+
+    当你查看网页并进行测试时，可能会出现很多问题。最常见的问题是内容编写不正确，或者没有放在你希望所在的位置。例如，你需要确保你的 `JavaScript` 编写方式正确，这样你才能把它放在正确的位置。
+
+
+    你的提示框可能没有出现，或者出现时旁边没有警报框（alert）。当它出现时，可能会有问题。它看起来可能不同，可能会有你不想要的单词，或者代码取决于你真正想要写的内容而不同。
+
+
+    在查看网站时，确保你记录下所有问题。这将节省你的时间，并避免你不断在查看已完成的代码和编写让代码完成后呈现成那样的代码之间进行切换。如果你在电脑上工作且旁边有一部智能手机，你甚至可以在访问网站时为你看到的内容拍几照片，这样当你回来开始编写时就能确定自己在寻找什么。
+
+
+    ### 检查错误
+
+
+    人们在编写代码时最常犯的错误是将不该大写的地方写了大写，或者忘记大写该大写的地方。这种错误不仅会改变你网站的外观，还可能使其变得无法识别。确保你始终检查大小写。
+
+
+    现在有一些可用程序会将你写的单词自动大写，即使这些程序是专门为制作代码和编写 `JavaScript` 设计的。一个不会为你进行自动大写的程序是 `Notepad`。这是为什么它对初学者来说是一个很好程序的众多原因之一。
+
+
+    如果你使用了 `Notepad` 程序并确保所有大小写都正确，你可以尝试代码中可能存在的其他问题。某些可能拼写错误，你可能使用了错误的运算符，或者只是在编写方式有问题。这并不意味着你代码写得不好，而是你可能溜进了一些额外的字母。
+
+
+    ### 确保保存
+
+
+    如果你使用的是保存到不同文件的方法，你始终需要确保保存。除了其他错误（如大小写错误或额外字母）之外，这是你在查看网页时发现的最常见问题之一。只需确保你已保存所有内容，并且它们处于你想要的状态即可。
+
+
+    '
+- fmt: '
+
+    Coding directly into the tags is a little different, but you still need to make
+    sure that you are saving it as often as possible. You can save it in the web browser,
+    or you can save it into a different area so that you will be able to do the best
+    job possible. If you have made the decision to just write within the tags, you
+    can always save it in a way that it convenient for you so that you don’t have
+    to worry about different problems.
+
+
+    ## Try for More
+
+
+    When you have tested your website, and everything is working out the right way,
+    you may want to add more to it. You can add different prompts and alerts to it,
+    and this will allow it to appear to be more professional. It will also give you
+    the chance to expand the page and make it fit in with other pages that are on
+    your website. You can even write codes that connect your pages together and send
+    your visitors to different pages when they click on one of them.
+
+
+    There are so much more things that you can do with your web pages when you know
+    how to write `JavaScript`. Consider all of the things that you can do when you
+    are trying to add different options to the web page. You may find that you are
+    able to do more and that you can get more out of your website if you add more
+    information into it.
+
+
+    Even with the simplest of commands, like `alerts` and `prompts`, you can make
+    your page multidimensional. It is a good idea to always try your best to add more
+    to the page and to always learn what you can about `JavaScript` so that you can
+    add more.
+
+
+    ## Add Different Variables
+
+
+    While `alerts` and `prompts` are great, your website will need to be much more
+    than just asking people about how many of your grapes they want to eat. It will
+    need to have different pages, different prompts and even different buttons that
+    people can click. Among these, you may want to change the color, the font and
+    the positioning on the page. Thankfully, these are all things that you can do
+    with `JavaScript`.
+
+
+    Once you have mastered the basics of `JavaScript` and the way that it works, you
+    can make major changes to it. You can change the color of the text by using “text
+    color” tags as well as “text style” fonts. This you can use the `<b>`, `<u>`,
+    and `<i>` tags to bold, underline and italicize things on your site. To stop using
+    the tags, you would simply have to do `</style>` or `</b>`, `</u>`, and `</i>`.
+
+
+    Each of these things will make your text appear to be different. You can even
+    use tags to change the color of your alert boxes, the background and the way that
+    your text is positioned on the page.
+
+
+    As you learn more about `JavaScript`, you will find that the options for doing
+    different things on your web page are completely endless. Anything that you would
+    want to write or change on the page is at your fingertips. It is all up to your
+    imagination whether or not you will be able to use the different things.
+
+
+    Before you can do each of these, though, you need to make sure that you are always
+    testing your site. Test it to figure out what is wrong with it. Test it to make
+    sure that it looks good and test it to find out what you can add to it. As you
+    get more comfortable with `JavaScript`, you will find that testing can be fun
+    and can even allow you to do more with your page. Testing is key to making sure
+    that your site is great.
+
+
+    ## Chapter 4: Putting it Into Action
+
+
+    What good is knowing `JavaScript` and building web pages if there is no chance
+    that anyone will be able to see those pages? There are many things that you and
+    do with `JavaScript`, but you need to be able to put all of it into action if
+    you want to be successful and if you want your `JavaScript` knowledge to work
+    for you. Take these steps to put your `JavaScript` abilities into action.
+
+
+    ### Get a Website
+
+
+    If you want people to be able to visit your website, you need to have a domain
+    name. Those who are not using the same computer as you cannot just click on the
+    file that you made to be able to see what you created with your site. Even if
+    the `JavaScript` that you created using `Notepad` is perfect, your visitors cannot
+    see it without being able to look at it through a website.
+
+
+    You can purchase a domain name from many different sources. There are some, like
+    `Goaddy`, that sell domain names for really low prices. These are often domains
+    that allow you the chance to name your site and to ensure that you are getting
+    the most out of it by creating something that you will be able to give to people
+    who you want to visit your site. Make sure that the domain is something that both
+    you and your visitors will remember easily.
+
+
+    There may be different domain names that are most costly because of their popularity.
+    For example, you could use your name as a domain name, but `joseph.com` could
+    already be taken or could be in the thousands of dollars since it is something
+    that is very popular and something that could cost a lot of money. Variations
+    on websites, like `facebookses.com`, may also be costly. If you want something
+    basic, like `iliketocode.com`, may be less because they are not extremely common.
+
+
+    It is a good idea to research the types of domain names where you are going to
+    host your `JavaScript` at. This is something that will be important when it comes
+    to your site and when it comes to making sure that your `JavaScript` is able to
+    be seen. It is a good idea to find something that fits in with what your web page
+    is about and with what you want people to see when they visit your web page. If
+    you are just getting started with `JavaScript` and building pages, consider only
+    getting a very cheap domain name to start. Even if it is not something that you
+    love, it will be a great way for you to use it to practice your `JavaScript` with.
+
+
+    ### Use a Host
+
+
+    The Internet isn’t all just like your computer. You can’t just open a web page
+    and begin to type on it because you have the domain name. You need to make sure
+    that you are using a host. A host will allow you the platform to put your information
+    in and the way that you can build your JavaScript. The host is what the information
+    will go into, and the page is what people will see when they visit your site.
+
+
+    Find a host that is compatible with `JavaScript`. Unlike some of the other coding
+    languages, nearly all hosts will be able to work with `JavaScript` because it
+    is a universal coding language. This means only that it can be used on any type
+    of browser so the host that you choose should be able to work with it.
+
+
+    There are many different hosts that are available for you to use. With all of
+    them, you will need to download some software onto your computer. The most common
+    are `WordPress`. You will just need to download the software and then you can
+    host your site, and the `JavaScript` will be able to be put into that host so
+    that your visitors can see it. From your host, you can control everything including
+    the codes that you use for your computer.
+
+
+    ### Input Your JavaScript
+
+
+    Putting your `JavaScript` into the host that you have chosen for your domain name
+    is the most important part of the process especially if you want to be able to
+    have a functional website. Your site should appear to your visitors, and it should
+    look better than the other options that are available on the web. Make sure that
+    you do what you can to put your `JavaScript` in and that you put it in the right
+    way.
+
+
+    If you are using the link method, make sure that your site is going to be linked
+    the correct way to the `JavaScript` that you have written. Always make sure that
+    you update the file so that when people are shown the site, they see the outcome
+    of the `JavaScript` instead of just seeing a large number of codes written into
+    it.
+
+    '
+  raw: 'Coding directly into the tags is a little different, but you still need to
+    make sure that you are saving it as often as possible. You can save it in the
+    web browser, or you can save it into a different area so that you will be able
+    to do the best job possible. If you have made the decision to just write within
+    the tags, you can always save it in a way that it convenient for you so that you
+    don’t have to worry about different problems.
+
+
+    Try for More
+
+
+    When you have tested your website, and everything is working out the right way,
+    you may want to add more to it. You can add different prompts and alerts to it,
+    and this will allow it to appear to be more professional. It will also give you
+    the chance to expand the page and make it fit in with other pages that are on
+    your website. You can even write codes that connect your pages together and send
+    your visitors to different pages when they click on one of them.
+
+
+    There are so much more things that you can do with your web pages when you know
+    how to write JavaScript. Consider all of the things that you can do when you are
+    trying to add different options to the web page. You may find that you are able
+    to do more and that you can get more out of your website if you add more information
+    into it.
+
+
+    Even with the simplest of commands, like alerts and prompts, you can make your
+    page multidimensional. It is a good idea to always try your best to add more to
+    the page and to always learn what you can about JavaScript so that you can add
+    more.
+
+
+    Add Different Variables
+
+
+    While alerts and prompts are great, your website will need to be much more than
+    just asking people about how many of your grapes they want to eat. It will need
+    to have different pages, different prompts and even different buttons that people
+    can click. Among these, you may want to change the color, the font and the positioning
+    on the page. Thankfully, these are all things that you can do with JavaScript.
+
+
+    Once you have mastered the basics of JavaScript and the way that it works, you
+    can make major changes to it. You can change the color of the text by using “text
+    color” tags as well as “text style” fonts. This you can use the <b>, <u>, and
+    <i> tags to bold, underline and italicize things on your site. To stop using the
+    tags, you would simply have to do </style> or </b>,</u>, and </i>.
+
+
+    Each of these things will make your text appear to be different. You can even
+    use tags to change the color of your alert boxes, the background and the way that
+    your text is positioned on the page.
+
+
+    As you learn more about JavaScript, you will find that the options for doing different
+    things on your web page are completely endless. Anything that you would want to
+    write or change on the page is at your fingertips. It is all up to your imagination
+    whether or not you will be able to use the different things.
+
+
+    Before you can do each of these, though, you need to make sure that you are always
+    testing your site. Test it to figure out what is wrong with it. Test it to make
+    sure that it looks good and test it to find out what you can add to it. As you
+    get more comfortable with JavaScript, you will find that testing can be fun and
+    can even allow you to do more with your page. Testing is key to making sure that
+    your site is great.
+
+
+    Chapter 4: Putting it Into Action
+
+
+    What good is knowing JavaScript and building web pages if there is no chance that
+    anyone will be able to see those pages? There are many things that you and do
+    with JavaScript, but you need to be able to put all of it into action if you want
+    to be successful and if you want your JavaScript knowledge to work for you. Take
+    these steps to put your JavaScript abilities into action.
+
+
+    Get a Website
+
+
+    If you want people to be able to visit your website, you need to have a domain
+    name. Those who are not using the same computer as you cannot just click on the
+    file that you made to be able to see what you created with your site. Even if
+    the JavaScript that you created using Notepad is perfect, your visitors cannot
+    see it without being able to look at it through a website.
+
+
+    You can purchase a domain name from many different sources. There are some, like
+    Godaddy, that sell domain names for really low prices. These are often domains
+    that allow you the chance to name your site and to ensure that you are getting
+    the most out of it by creating something that you will be able to give to people
+    who you want to visit your site. Make sure that the domain is something that both
+    you and your visitors will remember easily.
+
+
+    There may be different domain names that are most costly because of their popularity.
+    For example, you could use your name as a domain name, but joseph.com could already
+    be taken or could be in the thousands of dollars since it is something that is
+    very popular and something that could cost a lot of money. Variations on websites,
+    like facebookses.com, may also be costly. If you want something basic, like, iliketocode.com,
+    may be less because they are not extremely common.
+
+
+    It is a good idea to research the types of domain names where you are going to
+    host your JavaScript at. This is something that will be important when it comes
+    to your site and when it comes to making sure that your JavaScript is able to
+    be seen. It is a good idea to find something that fits in with what your web page
+    is about and with what you want people to see when they visit your web page.
+
+
+    If you are just getting started with JavaScript and building pages, consider only
+    getting a very cheap domain name to start. Even if it is not something that you
+    love, it will be a great way for you to use it to practice your JavaScript with.
+
+
+    Use a Host
+
+
+    The Internet isn’t all just like your computer. You can’t just open a web page
+    and begin to type on it because you have the domain name. You need to make sure
+    that you are using a host. A host will allow you the platform to put your information
+    in and the way that you can build your JavaScript website. The host is what the
+    information will go into, and the page is what people will see when they visit
+    your site.
+
+
+    Find a host that is compatible with JavaScript. Unlike some of the other coding
+    languages, nearly all hosts will be able to work with JavaScript because it is
+    a universal coding language. This means only that it can be used on any type of
+    browser so the host that you choose should be able to work well with it.
+
+
+    There are many different hosts that are available for you to use. With all of
+    them, you will need to download some software onto your computer. The most common
+    are WordPress. You will just need to download the software and then you can host
+    your site, and the JavaScript will be able to be put into that host so that your
+    visitors can see it. From your host, you can control everything including the
+    codes that you use for your computer.
+
+
+    When it comes time to choose a host, you should make sure that you are ready to
+    put your JavaScript into it and that you can do the most with it. This is something
+    that is important if you want to put your JavaScript into action and when you
+    want to do different things with it.
+
+
+    Input Your JavaScript
+
+
+    Putting your JavaScript into the host that you have chosen for your domain name
+    is the most important part of the process especially if you want to be able to
+    have a functional website. Your site should appear to your visitors, and it should
+    look better than the other options that are available on the web. Make sure that
+    you do what you can to put your JavaScript in and that you put it in the right
+    way.
+
+
+    If you are using the link method, make sure that your site is going to be linked
+    the correct way to the JavaScript that you have written. Always make sure that
+    you update the file so that when people are shown the site, they see the outcome
+    of the JavaScript instead of just seeing a large number of codes written into
+    it.'
+  toc: []
+  trans: '
+
+    直接在标签中编写代码略有不同，但你仍然需要确保尽可能地保存它。你可以将其保存在网络浏览器中，也可以将其保存到不同的区域，以便你能够尽可能完美地完成工作。如果你决定直接在标签内编写，你始终可以用一种方便你的方式来保存，这样你就不必担心各种问题了。
+
+
+    ## 尝试更多
+
+
+    当你测试了你的网站，并且一切都运行正常时，你可能想向它添加更多内容。你可以为它添加不同的提示框（prompts）和警告框（alerts），这会让它看起来更专业。它还将带给你一个机会来扩展页面，使其与你网站上的其他页面相匹配。你甚至可以编写代码将你的页面连接起来，并在访问者点击其中一个页面时，将他们引导到不同的页面。
+
+
+    当你学会如何编写 `JavaScript` 时，你可以在网页上做很多更多事情。考虑一下当你尝试为网页添加不同选项时可以做的一切事情。你可能会发现，通过向网页中添加更多信息，你可以做更多，并从你的网站中获得更多。
+
+
+    即使是最简单的命令，如 `alerts` 和 `prompts`，你也可以让你的页面变得多维度。始终尽力为页面添加更多内容，并不断学习关于 `JavaScript`
+    的知识，这样你就能添加更多功能。
+
+
+    ## 添加不同的变量
+
+
+    虽然 `alerts` 和 `prompts` 非常棒，但你的网站需要的不仅仅是问人们想吃多少颗你的葡萄。它需要有不同的页面、不同的提示框，甚至有人们可以点击的不同按钮。在这些之中，你可能想要更改颜色、字体以及在页面上的位置。幸运的是，这些都是你通过
+    `JavaScript` 可以实现的内容。
+
+
+    一旦你掌握了 `JavaScript` 的基础及其工作原理，你就可以对它进行重大更改。你可以通过“文本颜色”标签以及“文本样式”字体来更改文本颜色。你可以使用
+    `<b>`、`<u>` 和 `<i>` 标签对网站上的内容进行加粗、下划线和斜体处理。要停止使用这些标签，你只需要输入 `</style>` 或 `</b>`、`</u>`
+    和 `</i>`。
+
+
+    这些每一个操作都会让你的文本与众不同。你甚至可以使用标签来更改警告框的颜色、背景以及你的文本在页面上的位置方式。
+
+
+    随着你学习更多 `JavaScript`，你会发现你的网页上执行不同事情的选项是完全无尽的。任何你想在页面上编写或更改的内容触手可及。是否能够使用这些不同的功能完全取决于你的想象力。
+
+
+    不过，在进行这些操作之前，你需要确保你始终在测试你的网站。测试它以找出哪里出了问题。测试它以确保它看起来良好，并测试它以发现你还可以添加什么。随着你越来越熟悉
+    `JavaScript`，你会发现测试是可以很有趣的，甚至可以让你在页面上做得更多。测试是确保你的网站出色的关键。
+
+
+    ## 第 4 章：付诸行动
+
+
+    如果没有人能看到那些页面，那么了解 `JavaScript` 和构建网页又有什么用呢？你和 `JavaScript` 之间可以做很多事情，但如果你想成功并让你的
+    `JavaScript` 知识为你服务，你就需要能够将这一切付诸行动。采取以下步骤将你的 `JavaScript` 能力付诸实践。
+
+
+    ### 获取网站
+
+
+    如果你想让人们能够访问你的网站，你需要一个域名。那些没有使用你同一台电脑的人无法通过点击你创建的文件来看到你用创建的内容。即使你使用 `Notepad` 创建的
+    `JavaScript` 是完美的，如果访问者无法通过网站查看它，他们也无法看到。
+
+
+    你可以从许多不同的来源购买域名。有些平台，比如 `Goaddy`，以非常低的价格出售域名。这些通常是允许你为网站命名的域名，并确保你通过创建一些你能够提供给想要访问你网站的人的东西，从而获得最大价值。确保该域名是你和你和你的访问者都能轻松记住的。
+
+
+    某些域名可能因为其流行程度而非常昂贵。例如，你可以使用你的名字作为域名，但 `joseph.com` 可能已经被占用，或者可能花费数千美元，因为它是一个非常受欢迎且可能耗费大量资金的东西。网站的变体，如
+    `facebookses.com`，可能也很贵。如果你想要一些基础的，比如 `iliketocode.com`，价格可能会便宜一些，因为它们并不极端常见。
+
+
+    研究一下你打算托管 `JavaScript` 的域名类型是一个好主意。这对于你的网站以及确保你的 `JavaScript` 能够被看到来说是非常重要的。找到一个与你的网页主题以及你希望人们在访问时看到的内容相匹配的域名是一个好主意。如果你刚刚开始学习
+    `JavaScript` 和构建页面，考虑只从获取一个非常便宜的域名开始。即使它不是你喜爱的，它也将是你利用它练习 `JavaScript` 的绝佳方式。
+
+
+    ### 使用托管主机
+
+
+    互联网并不完全像你的电脑。你不能只是打开一个网页就开始在上面打字，除非你有一个域名。你需要确保你正在使用托管主机。托管主机将为你提供一个放置信息以及构建 JavaScript
+    的平台。托管主机是信息进入的地方，而页面是人们访问网站时看到的内容。
+
+
+    寻找与 `JavaScript` 兼容的托管主机。与其他某些编程语言不同，几乎所有的托管主机都能支持 `JavaScript`，因为它是一种通用编程语言。这意味着可以在任何类型的浏览器上使用，所以你选择的托管主机应该都能兼容。
+
+
+    有很多不同的托管主机供你选择。对于所有这些主机，你都需要电脑上下载一些软件。最常见的是 `WordPress`。你只需要下载软件，就可以托管你的网站，`JavaScript`
+    也可以被放入该托管主机中，以便你的访问者看到它。通过你的托管主机，你可以控制一切，包括你用于电脑的代码。
+
+
+    ### 输入你的 JavaScript
+
+
+    将你的 `JavaScript` 放入你为域名选择的托管主机中是整个过程中最重要的部分，特别是如果你想拥有一个功能完备的网站。你的网站应该呈现在访问者面前，并且应该比网络上提供的其他选项更好。确保你尽力将你的
+    `JavaScript` 放入其中，并以正确的方式放入。
+
+
+    如果你使用链接法，请确保你的网站以正确的方式链接到你编写的 `JavaScript`。始终确保你更新文件，这样当人们看到网站时，看到的是 `JavaScript`
+    的结果，而不是仅仅看到在其中的大量的代码。
+
+    '
+- fmt: '
+
+    Using the tag method may be easier for you depending on the type of host that
+    you are using. When you use this method or even the link method, you will want
+    to make sure that you are saving the information that you put into it. When you
+    are working on the platform, you can save the work that you are working on without
+    ever having to show your visitors the unfinished product. Your website will not
+    appear to be live if you are working on it and visitors will just see an error
+    message or a blank page.
+
+
+    Once you have finished working on it and adding all of the `JavaScript` that you
+    want to it (and saving it in the process), you can publish it. Your visitors will
+    not see the changes that you made or the `JavaScript` that you put into your site
+    until you decide to use the `publish` function on your host for your page.
+
+
+    # Format It
+
+
+    You can format the different things that are in your `JavaScript`. The first thing
+    that you want to do is design the landing page using the `JavaScript`. You can
+    do this through `alerts` and `prompts`, or you can start out with a “script background”
+    tag. You can make the background anything that you want. It can be a solid color
+    or it can be something that you have taken a picture of. Always make sure that
+    you are within your rights if you are using a picture as the background of your
+    web page.
+
+
+    You can then add different things to the page. You can use a welcome `alert` that
+    will pop up as soon as people visit your page. You can also use the different
+    `prompts` that you have learned about to make sure that people know what they
+    are supposed to be doing on the page.
+
+
+    Once you have learned all about the `JavaScript` that you can use for your site,
+    you can start to change the colors and the way that it looks when people first
+    visit your site. This will allow you the chance to make sure that things look
+    better and that they are being done the right way.
+
+
+    It is a good idea to only do this after you have done the basic part of your web
+    page. For example, you want to make sure that you have all of your information
+    put on the web page using `JavaScript` before you make the decision to change
+    the colors or the fonts on the web page. Always make sure that you can do everything
+    possible with the `JavaScript` before you begin to do any type of heavy customization
+    with the page that you are creating.
+
+
+    # Use As Template
+
+
+    It can be hard to make sure that you have all of your formatting correct when
+    you are writing the `JavaScript`. Since it is time-consuming to do all of this,
+    you should save your work often. If you make a web page that you like with `JavaScript`,
+    you can save it as a template to use later on with the other pages that you are
+    creating under the same domain name or even under a different one. These can be
+    used as templates or as starting points where you can add to them or tweak them,
+    but you won’t have to completely rewrite the page each time that you want to make
+    a new page.
+
+
+    The more experienced you get with writing `JavaScript`, the more likely you will
+    be to have many of these templates. You will likely have a few different templates
+    that you like to use with the different pages that you have, and this will allow
+    you the chance to do more with what you have. It will also give you the chance
+    to make sure that you have to do less work when you are starting out with a web
+    page. In addition to these templates, you can also find ones that others have
+    made with `JavaScript` and use those. While this is a great “cheat” way to get
+    started, it will not teach you everything that you need to know about `JavaScript`.
+
+
+    The easiest way for you to learn as much as possible about `JavaScript` is to
+    start doing it on your own. Even if you have no need for a website or a web page,
+    make one that you can practice your `JavaScript` with as you are learning to do
+    more with the skill.
+
+
+    # Chapter 5: Document JavaScript
+
+
+    You will never completely learn what you are doing with `JavaScript` if you do
+    not mark down what you have done and what it does with the `JavaScript` that you
+    have done. Make sure that you learn as much as possible about the `JavaScript`
+    and always keep track of what you are doing with it and what you have done with
+    it. This will show you what all you have learned and what you need to learn. It
+    will also work as somewhat of a reference dictionary for you to be able to keep
+    track of the `JavaScript` that you know and the `JavaScript` you learn how to
+    do.
+
+
+    There are two ways that you can document. You can do it on the computer, or you
+    can do it in real time. If you want to do it on a computer, begin by opening a
+    Word document or another type of processing document. Don’t use a `Notepad` document
+    because it may not work out well and it may end up getting marked up. As you learn,
+    write it down. If you learn a lot about `JavaScript`, begin to organize the document
+    in a way that makes sense to you. You can organize it by simple codes, different
+    observations and even with `prompts`. Make sure that you include:
+
+
+    - How to code a background
+
+    - How to change font colors (or any colors)
+
+    - How to change the font style
+
+    - Where to move things to
+
+    - How to make an `alert` and format it
+
+    - How to make a `prompt` and format it
+
+    - Changes to the way that you write different things
+
+    - Sizes of fonts, objects, and even pages
+
+
+    You can do this by organizing the Word document into different “sections” and
+    labeling them. This is easy because you will always have it with you if you are
+    working on your computer and you will always be able to find the exact instructions
+    that you need to make sure that you are getting it done the right way.
+
+
+    Another thing that you can do is keep your `JavaScript` documentation out of your
+    computer and in “real life.” You can use a subject notebook to keep track of the
+    information. When you first start out, divide it into different sections like
+    fonts, alerts, and formats. As you learn different things, add them to the section
+    that they correspond to.
+
+
+    ## When You Learn
+
+
+    As you are learning more about `JavaScript` and you find different codes that
+    you can use, write them down. Don’t just use them and forget about them.
+
+
+    For example, when you learned how to make the `alert` using `JavaScript`, you
+    may have begun to use it when you were coding. This is a great way to make sure
+    that you have a lot of practice, but you will need to return to this book if you
+    forget how you did it. Write it down somewhere that is not on your actual JavaScript
+    page.
+
+
+    ## As You Code
+
+
+    It is obvious that you are going to write down the codes that you learn into the
+    actual JavaScript documentation but you should also write down what you did in
+    the document that you are keeping for reference. Write down the code that you
+    used, what it did and what it looked like when you did it.
+
+
+    Doing this will allow you to come back to it if you need to later on but it will
+    also serve as a way to change it if something goes wrong with the code while you
+    are reviewing it and testing it out.
+
+    '
+  raw: 'Using the tag method may be easier for you depending on the type of host that
+    you are using. When you use this method or even the link method, you will want
+    to make sure that you are saving the information that you put into it. When you
+    are working on the platform, you can save the work that you are working on without
+    ever having to show your visitors the unfinished product. Your website will not
+    appear to be live if you are working on it and visitors will just see an error
+    message or a blank page.
+
+
+    Once you have finished working on it and adding all of the JavaScript that you
+    want to it (and saving it in the process), you can publish it. Your visitors will
+    not see the changes that you made or the JavaScript that you put into your site
+    until you decide to use the publish function on your host for your page.
+
+
+    Format It
+
+
+    You can format the different things that are in your JavaScript. The first thing
+    that you want to do is design the landing page using the JavaScript. You can do
+    this through alerts and prompts, or you can start out with a “script background”
+    tag. You can make the background anything that you want. It can be a solid color
+    or it can be something that you have taken a picture of. Always make sure that
+    you are within your rights if you are using a picture as the background of your
+    web page.
+
+
+    You can then add different things to the page. You can use a welcome alert that
+    will pop up as soon as people visit your page. You can also use the different
+    prompts that you have learned about to make sure that people know what they are
+    supposed to be doing on the page.
+
+
+    Once you have learned all about the JavaScript that you can use for your site,
+    you can start to change the colors and the way that it looks when people first
+    visit your site. This will allow you the chance to make sure that things look
+    better and that they are being done the right way.
+
+
+    It is a good idea to only do this after you have done the basic part of your web
+    page. For example, you want to make sure that you have all of your information
+    put on the web page using JavaScript before you make the decision to change the
+    colors or the fonts on the web page. Always make sure that you can do everything
+    possible with the JavaScript before you begin to do any type of heavy customization
+    with the page that you are creating.
+
+
+    Use As Template
+
+
+    It can be hard to make sure that you have all of your formatting correct when
+    you are writing the JavaScript. Since it is time-consuming to do all of this,
+    you should save your work often. If you make a web page that you like with JavaScript,
+    you can save it as a template to use later on with the other pages that you are
+    creating under the same domain name or even under a different one. These can be
+    used as templates or as starting points where you can add to them or tweak them,
+    but you won’t have to completely rewrite the page each time that you want to make
+    a new page.
+
+
+    The more experienced you get with writing JavaScript, the more likely you will
+    be to have many of these templates. You will likely have a few different templates
+    that you like to use with the different pages that you have, and this will allow
+    you the chance to do more with what you have. It will also give you the chance
+    to make sure that you have to do less work when you are starting out with a web
+    page. In addition to these templates, you can also find ones that others have
+    made with JavaScript and use those. While this is a great “cheat” way to get started,
+    it will not teach you everything that you need to know about JavaScript.
+
+
+    The easiest way for you to learn as much as possible about JavaScript is to start
+    doing it on your own. Even if you have no need for a website or a web page, make
+    one that you can practice your JavaScript with as you are learning to do more
+    with the skill.
+
+
+    Chapter 5: Document JavaScript
+
+
+    You will never completely learn what you are doing with JavaScript if you do not
+    mark down what you have done and what it does with the JavaScript that you have
+    done. Make sure that you learn as much as possible about the JavaScript and always
+    keep track of what you are doing with it and what you have done with it. This
+    will show you what all you have learned and what you need to learn. It will also
+    work as somewhat of a reference dictionary for you to be able to keep track of
+    the JavaScript that you know and the JavaScript that you learn how to do.
+
+
+    There are two ways that you can document. You can do it on the computer, or you
+    can do it in real time. If you want to do it on a computer, begin by opening a
+    Word document or another type of processing document. Don’t use a Notepad document
+    because it may not work out well and it may end up getting marked up. As you learn,
+    write it down. If you learn a lot about JavaScript, begin to organize the document
+    in a way that makes sense to you. You can organize it by simple codes, different
+    observations and even with prompts. Make sure that you include:
+
+
+    How to code a background
+
+
+    How to change font colors (or any colors)
+
+
+    How to change the font style
+
+
+    Where to move things to
+
+
+    How to make an alert and format it
+
+
+    How to make a prompt and format it
+
+
+    Changes to the way that you write different things
+
+
+    Sizes of fonts, objects, and even pages
+
+
+    You can do this by organizing the Word document into different “sections” and
+    labeling them. This is easy because you will always have it with you if you are
+    working on your computer and you will always be able to find the exact instructions
+    that you need to make sure that you are getting it done the right way.
+
+
+    Another thing that you can do is keep your JavaScript documentation out of your
+    computer and in “real life.” You can use a subject notebook to keep track of the
+    information. When you first start out, divide it into different sections like
+    fonts, alerts, and formats. As you learn different things, add them to the section
+    that they correspond to.
+
+
+    When You Learn
+
+
+    As you are learning more about JavaScript and you find different codes that you
+    can use, write them down. Don’t just use them and forget about them.
+
+
+    For example, when you learned how to make the alert using JavaScript, you may
+    have already begun to use it when you were coding. This is a great way to make
+    sure that you have a lot of practice, but you will need to return to this book
+    if you forget how you did it. Write it down somewhere that is not on your actual
+    JavaScript page.
+
+
+    When you learn something, you should always write it down. Even if you don’t think
+    that you will use it ever again or even if you don’t think that you will use it
+    at all, write it down. It is a good idea to write down codes that you come across
+    no matter where they come from. You can always go back and reference them later.
+    You never know when you will need to use a certain code later on in your JavaScript
+    career.
+
+
+    As You Code
+
+
+    It is obvious that you are going to write down the codes that you learn into the
+    actual JavaScript documentation but you should also write down what you did in
+    the document that you are keeping for reference. Write down the code that you
+    used, what it did and what it looked like when you did it.
+
+
+    Doing this will allow you to come back to it if you need to later on but it will
+    also serve as a way to change it if something goes wrong with the code while you
+    are reviewing it and testing it out. You can see exactly what you did (which can
+    sometimes be hard to remember on your own) and see what you need to do to make
+    sure that you do it the right way. Change it if you need to but keeping it in
+    the document will allow you to see what you shouldn’t do if something goes wrong
+    with the code.'
+  toc: []
+  trans: '
+
+
+    取决于你使用的主机类型，使用标签方法可能会对你来说更容易。当你使用这种方法甚至链接方法时，你会想要确保你已经保存了存入其中的信息。在平台上进行工作时，你可以保存正在处理的工作，而无需向访问者展示未完成的产品。如果你正在开发网站，你的网站将不会显示为已上线，访问者只会看到错误信息或空白页面。
+
+
+    一旦你完成了工作并添加了所有你需要的 `JavaScript`（并在此过程中进行了保存），你就可以发布它了。在你决定在主机上对该页面使用 `publish`
+    函数之前，访问者不会看到你所做的更改或你放入网站的 `JavaScript`。
+
+
+    # 格式化它
+
+
+    你可以对 `JavaScript` 中的不同内容进行格式化。你想要做的第一件事是使用 `JavaScript` 设计落地页。你可以通过 `alerts` 和
+    `prompts` 实现这一点，也可以从一个“脚本背景”标签开始。你可以将背景设置为你喜欢的任何。它可以是纯色，也可以是你拍摄的照片。在将图片作为网页的背景时，请务必确保你拥有相应的权利。
+
+
+    然后，你可以向页面添加各种不同的内容。你可以使用在人们访问你的页面时立即弹出的欢迎 `alert`。你还可以使用你学过的不同 `prompts`，确保人们知道他们在页面上应该做什么。
+
+
+    一旦你完全学习了可以用于你网站的所有 `JavaScript`，你就可以开始更改人们首次访问你网站时的颜色和外观了。这将让你有机会确保某些事情看起来更好，并且它们是以正确的方式执行的。
+
+
+    在完成网页的基础部分后再进行这样做是一个好主意。例如，在决定更改网页的颜色或字体之前，务要确保你已经使用 `JavaScript` 将所有信息都放在了网页上。在开始对你创建的页面进行任何类型的深度定制之前，始终务要确保你已经通过
+    `JavaScript` 完成了所有可能的操作。
+
+
+    # 作为模板使用
+
+
+    在编写 `JavaScript` 时，要确保所有的格式都正确可能是困难的。由于完成所有这些工作非常耗时，你应该经常保存你的工作。如果你用 `JavaScript`
+    制作了一个你喜欢的网页，可以将其保存为模板，稍后用于你在相同域名下甚至不同域名下创建的其他页面。这些可以作为模板或起始点，你可以在其基础上进行添加或调整，但你就不需要每次在创建一个新页面时都完全重写页面了。
+
+
+    你编写 `JavaScript` 的经验越丰富，就越可能拥有许多这样的模板。你可能会有几个不同的模板，供你在拥有的不同页面中使用，这将让你有机会利用现有的工具做更多事情。它还会让你在开始制作网页时确保少做一些工作。除了这些模板，你还可以找到别人用
+    `JavaScript` 制作的模板并使用它们。虽然这是一个快速起步绝佳“捷径”方法，但它并不会教你你所需的关于 `JavaScript` 的所有知识。
+
+
+    你尽可能学习更多 `JavaScript` 知识的最简单方法是开始自己动手。即使你不需要网站或网页，也创建一个，以便在你学习如何利用这项技能完成更多事情时可以练习你的
+    `JavaScript`。
+
+
+    # 第 5 章：文档化 JavaScript
+
+
+    如果你不记录你做了什么以及你所做的 `JavaScript` 起了什么作用，你永远无法完全掌握你在 `JavaScript` 中在做什么。请确保尽可能多地学习
+    `JavaScript`，并始终跟踪你如何使用它以及你用它做了什么。这将向你展示你已经学了什么以及你还需要学习什么。它还可以作为你的参考字典，方便你跟踪你已经掌握的
+    `JavaScript` 以及你学会如何做的 `JavaScript`。
+
+
+    有两种记录记录方法。你可以在电脑上记录，也可以实时记录。如果你想在电脑上记录，请从打开一个 Word 文档或其他类型的处理文档开始。不要使用 `Notepad`
+    文档，因为可能效果不好，并且最终可能会被标记。在学习时，把它写下来。如果你学习了许多 `JavaScript` 知识，开始以符合你逻辑的方式来组织文档。你可以通过简单的代码、不同的观察结果甚至
+    `prompts` 来组织它。确保你包含了：
+
+
+    - 如何编写背景代码
+
+    - 如何更改字体颜色（或任何颜色）
+
+    - 如何更改字体样式
+
+    - 将内容移动到哪里
+
+    - 如何创建一个 `alert` 并对其进行格式化
+
+    - 如何创建一个 `prompt` 并对其进行格式化
+
+    - 编写不同内容的方式的变化
+
+    - 字体、对象甚至页面的尺寸
+
+
+    你可以通过将 Word 文档组织成不同的“章节”并对其标记标签来实现这一点。这很容易，因为如果你在电脑上工作，它会一直带在身边，你将能够找到所需的确切指令，以确保你以正确的方式完成任务。
+
+
+    你可以做的另一件事是将你的 `JavaScript` 文档放在电脑之外，放在“现实生活中”。你可以使用学科笔记本来跟踪信息。当你刚开始时，将其划分为不同的章节，如字体、警报和格式。当你学习不同的内容时，将它们添加到相应的章节中。
+
+
+    ## 学习时
+
+
+    当你学习更多关于 `JavaScript` 并发现可以使用不同的代码时，请把它们写下来。不要只是用过它们就忘记了。
+
+
+    例如，当你学习如何使用 `JavaScript` 创建 `alert` 时，你可能在编码时就开始使用它了。这是一个确保你有大量练习的好极方法，但如果你忘记了是如何做的，你仍然需要回到这本书。把它写在不在你实际
+    JavaScript 页面上的地方。
+
+
+    '
+- fmt: '
+
+    Since there is often a lot going on when you are coding, and you will need to
+    remember many different things, you should write down the information as you go
+    because without that information you may forget what you did to code the right
+    way. Always do different things with the codes that you have and always try to
+    make sure that they are written in the right way.
+
+
+    # Something New
+
+
+    Don’t be afraid to try new things when you are coding. If you find a code that
+    you want to try but that you have no use for, always go back to that initial practice
+    web page that you had.
+
+
+    Even the most experienced developers will try something new if they find it. It
+    may also be helpful to try on your own to write the code. Try to put different
+    information in and see what happens. This is great but document it so that you
+    can come back and remove it if it does not work out or if it causes your page
+    to lose a lot of information. You never know what changing around a code can do
+    so document it to enable yourself to come back later and delete it.
+
+
+    If you find something that you really like to do with the codes that you have,
+    you should mark that down. Consider making a place in your document for things
+    that you have tried and really like. While these are things that you will probably
+    remember the most, you will still also want to have a reference point for them
+    when you are learning how to do more things. As soon as you find something new
+    in `JavaScript`, you should make every effort possible to be able to include it
+    in your document.
+
+
+    If you find something that you don’t like, blacklist it. That means that you should
+    have a place in your document for things that you don’t like. That way, when you
+    want to look for something new to do in the document, you will know not to get
+    it from there because you didn’t like it the last time that you did it.
+
+
+    # Changing Things
+
+
+    Changes are the best thing about `JavaScript` and will allow you to make the colors
+    look different as well as the styles.
+
+
+    To change the color in your `JavaScript`, all you need to do:
+
+
+    ```
+
+    var color= documentname.col.style.color = “color”
+
+    ```
+
+
+    The color that you are using can be something like red, blue or yellow to get
+    a basic color. If you want to do different colors or colors that will stand out
+    and be customized, use a color wheel. The color wheel that you will likely use
+    on the Internet and when you are writing `JavaScript` is called a `hex`. This
+    is the code for the color that you want to use. Every color has a set of letters
+    and numbers that makes it unique. It starts with `FFFF` for white and `000000`
+    for black. There are hundreds of colors that are in between, and the most involved
+    `hex` codes will have many different shades of each color. Find the one that you
+    like and put that where “color” is written into the code.
+
+
+    When you want to have the text stop having that color or have the different object
+    in your `JavaScript` markup to stop having that color, all you need to do is `</color>`.
+    In general, using the `/` in between the `<>` brackets will stop something and
+    return it back to the automatic color. If you want to change the color again,
+    simply write a new `var color` code.
+
+
+    To change the size, all you need to do is:
+
+
+    ```
+
+    var str = “Words that you want to have the same font.”
+
+    var result = str.fontzise(14)
+
+    ```
+
+
+    The font sizes will have different meanings and can be different depending on
+    the browser that you are looking at the web page with. Be sure to learn the font
+    sizes and to keep track of the way that they work. It is a good idea to have a
+    way that you can compare the difference in something like font size 1 and 14\.
+    For many things, you will use anywhere from a 10 to a 16 with headings usually
+    being in the 20’s. The smaller font sizes, like 1-6, will be used for small information
+    that you don’t necessarily want people to be able to easily read.
+
+
+    # Making Notes
+
+
+    As you make the web page and enjoy the different things that you can do with it,
+    you should make sure that you are making notes.
+
+
+    If you are using a document to keep track of everything, make sure that you keep
+    a “notes” section. The notes will allow you the chance to write down different
+    things that may not be coded.
+
+
+    For example, you could include this in your notes:
+
+
+    “Used color code for `FF5581` and liked the color combined with the `000000`.
+    The combination looked good and used a bold tag of `<b>` to make it pop more on
+    the page. Text size did not make a difference because it looks great and shows
+    up in nearly every color.”
+
+
+    The more that you do `JavaScript` and the more pages that you create, the more
+    notes you will have so be sure to leave plenty of room for different things included
+    in the notes section.
+
+
+    # Chapter 6: Hiring a Professional
+
+
+    When you are considering `JavaScript` and what all you can learn from it, it may
+    be tempting for you to try to find someone who can teach you everything that you
+    need to know. A professional is able to both teach you the way of `JavaScript`
+    and simply do it for you. This is the easy way out and something that many people
+    choose to do so that they do not have to learn something new. You can hire a professional,
+    but why would you if you can learn it yourself? To save time, of course.
+
+
+    Doing it yourself, though, isn’t for everyone. The information about hiring a
+    professional will help you decide if that is the right decision for you. If that
+    is the case, you should continue reading this chapter, but you should not continue
+    reading the series. Doing so will teach you how to write `JavaScript`…which is
+    not something that you want to do, right?
+
+
+    ## Do It For You
+
+
+    There are professionals who are able to do all you can learn for you... (text
+    truncated for brevity based on instructional flow).
+
+    '
+  raw: 'Since there is often a lot going on when you are coding, and you will need
+    to remember many different things, you should write down the information as you
+    go because without that information you may forget what you did to code the right
+    way. Always do different things with the codes that you have and always try to
+    make sure that they are written in the right way.
+
+
+    Something New
+
+
+    Don’t be afraid to try new things when you are coding. If you find a code that
+    you want to try but that you have no use for, always go back to that initial practice
+    web page that you had.
+
+
+    Even the most experienced developers will try something new if they find it. It
+    may also be helpful to try on your own to write the code. Try to put different
+    information in and see what happens. This is great but document it so that you
+    can come back and remove it if it does not work out or if it causes your page
+    to lose a lot of information. You never know what changing around a code can do
+    so document it to enable yourself to come back later and delete it.
+
+
+    If you find something that you really like to do with the codes that you have,
+    you should mark that down. Consider making a place in your document for things
+    that you have tried and really like. While these are things that you will probably
+    remember the most, you will still also want to have a reference point for them
+    when you are learning how to do more things. As soon as you find something new
+    in JavaScript, you should make every effort possible to be able to include it
+    in your document.
+
+
+    If you find something that you don’t like, blacklist it. That means that you should
+    have a place in your document for things that you don’t like. That way, when you
+    want to look for something new to do in the document, you will know not to get
+    it from there because you didn’t like it the last time that you did it.
+
+
+    Changing Things
+
+
+    Changes are the best thing about JavaScript and will allow you to make the colors
+    look different as well as the styles.
+
+
+    To change the color in your JavaScript, all you need to do:
+
+
+    var color= documentname.col.style.color = “color”
+
+
+    The color that you are using can be something like red, blue or yellow to get
+    a basic color. If you want to do different colors or colors that will stand out
+    and be customized, use a color wheel. The color wheel that you will likely use
+    on the Internet and when you are writing JavaScript is called a hex. This is the
+    code for the color that you want to use. Every color has a set of letters and
+    numbers that makes it unique. It starts with FFFFFF for white and 000000 for black.
+    There are hundreds of colors that are in between, and the most involved hex codes
+    will have many different shades of each color. Find the one that you like and
+    put that where “color” is written into the code.
+
+
+    When you want to have the text stop having that color or have the different object
+    in your JavaScript markup to stop having that color, all you need to do is </color>.
+    In general, using the / in between the <> brackets will stop something and return
+    it back to the automatic color. If you want to change the color again, simply
+    write a new var color code.
+
+
+    To change the size, all you need to do is:
+
+
+    var str = “Words that you want to have the same font.”
+
+
+    var result = str.fontzise(14)
+
+
+    The font sizes will have different meanings and can be different depending on
+    the browser that you are looking at the web page with. Be sure to learn the font
+    sizes and to keep track of the way that they work. It is a good idea to have a
+    way that you can compare the difference in something like font size 1 and 14\.
+    For many things, you will use anywhere from a 10 to a 16 with headings usually
+    being in the 20’s. The smaller font sizes, like 1-6, will be used for small information
+    that you don’t necessarily want people to be able to easily read.
+
+
+    Making Notes
+
+
+    As you make the web page and enjoy the different things that you can do with it,
+    you should make sure that you are making notes.
+
+
+    If you are using a document to keep track of everything, make sure that you keep
+    a “notes” section. The notes will allow you the chance to write down different
+    things that may not be coded.
+
+
+    For example, you could include this in your notes:
+
+
+    “Used color code for FF5581 and liked the color combined with the 000000\. The
+    combination looked good and used a bold tag of <b> to make it pop more on the
+    page. Text size did not make a difference because it looks great and shows up
+    in nearly every color.”
+
+
+    The more that you do JavaScript and the more pages that you create, the more notes
+    you will have so be sure to leave plenty of room for different things included
+    in the notes section.
+
+
+    Chapter 6: Hiring a Professional
+
+
+    When you are considering JavaScript and what all you can learn from it, it may
+    be tempting for you to try to find someone who can teach you everything that you
+    need to know. A professional is able to both teach you the way of JavaScript and
+    simply do it for you. This is the easy way out and something that many people
+    choose to do so that they do not have to learn something new. You can hire a professional,
+    but why would you if you can learn it yourself? To save time, of course.
+
+
+    Doing it yourself, though, isn’t for everyone. The information about hiring a
+    professional will help you decide if that is the right decision for you. If that
+    is the case, you should continue reading this chapter, but you should not continue
+    reading the series. Doing so will teach you how to write JavaScript…which is not
+    something that you want to do, right?
+
+
+    Do It For You
+
+
+    There are professionals who are able to do all of the JavaScript work for you.
+    They are able to do it in a quick manner, and they can charge you a great deal
+    of money for the work that they do since it is a professional skill that they
+    have. They want to make money from you, and they will do everything that they
+    can to do that.
+
+
+    Many experts will not let in on the fact that they have templates saved and that
+    it will only take them a short amount of time to finish it. Instead, they will
+    tell you that it can take weeks and that it will cost a lot of money both upfront
+    and throughout the process because their time is valuable.
+
+
+    The secret of these professionals?
+
+
+    They’re just people who have learned how to do JavaScript and perfected the craft.
+    They are no different than what you could be if you continue on with the series
+    and learn everything that you can about JavaScript. They make their money by telling
+    you that they have the best service, but they are no different than what you could
+    be if you learned.
+
+
+    A Teacher
+
+
+    If you do want to learn JavaScript, your first thought may be that you should
+    just hire someone to help you learn all about it. These are people who may not
+    necessarily sell their JavaScript services, but they sell the idea that they can
+    help you learn how to do what the professionals do. They charge you to show you
+    the things that you would typically be able to learn on your own.
+
+
+    They have their own notebooks and documentation that they have made during their
+    JavaScript writing days, and they want to charge you to show you what you can
+    do. They likely have the same books as you, the same search engines to find codes
+    and the same capabilities that you have when it comes time to do different things
+    with JavaScript.
+
+
+    The only difference in these people and those who will charge you to do it for
+    you is that these “teachers” can sometimes be even more expensive than those who
+    will just do the work for you. They charge for the service of teaching, and that
+    is the only thing that they want to be able to show you.
+
+
+    A teacher is great, but you may not get everything that you want out of him or
+    her. You may end up spending a lot of money and not getting the results that you
+    desire. You may also want to learn more that they cannot teach you. When it comes
+    to the JavaScript that they have taught you, you can even find out things on your
+    own. You may still need to use your own resources to find it.'
+  toc: []
+  trans: '
+
+
+    由于编码时通常会有很多事情需要处理，而且你需要记住许多不同的事情，因此你应该在操作过程中记录下信息，因为如果没有这些信息，你可能会忘记自己是如何正确地编写代码的。始终对已有的代码进行不同的操作，并始终尝试确保它们是以正确的方式编写的。
+
+
+    # 新尝试
+
+
+    在编码时，不要害怕尝试新事物。如果你发现了一些想要尝试但目前用不上的代码，始终回到你最初的那个练习网页。
+
+
+    即使是最经验丰富的开发者，在发现新事物时也会尝试一下。自己尝试编写代码可能也会有帮助。尝试输入不同的信息并看看会发生什么。这很棒，但请将其记录下来，这样如果它不起作用或导致你的页面丢失大量信息，你可以回来并将其删除。你永远不知道调整代码会产生什么影响，所以要记录下来，以便以后回来删除它。
+
+
+    如果你发现了你非常喜欢对现有代码进行的某些操作，你应该将其标记。考虑在你的文档中开辟一个地方存放你尝试过并真正喜欢的内容。虽然这些可能是你记得最深的事情，但在学习如何进行更多操作时，你仍然需要为它们一个参考点。一旦你在
+    `JavaScript` 中发现了新东西，你就应该尽一切努力将其包含在你的文档中。
+
+
+    如果你发现了你不喜欢的东西，请将其列入黑名单。这意味着你应该在文档中留出一个地方存放你不喜欢的东西。这样，当你想要在文档中寻找新的操作方法时，你就知道不要从那里获取，因为你上次尝试时并不喜欢它。
+
+
+    # 改变事物
+
+
+    改变是 `JavaScript` 最棒的地方，它将让你能够颜色和样式看起来不同。
+
+
+    要更改你的 `JavaScript` 中的颜色，你只需要做：
+
+
+    ```
+
+    var color= documentname.col.style.color = “color”
+
+    ```
+
+
+    你使用的颜色可以是红色、蓝色或黄色等基础颜色。如果你想使用不同的颜色或脱颖而出且自定义的颜色，请使用调色轮。你在网上以及编写 `JavaScript` 时可能会使用的调色轮被称为
+    `hex`。这是你想要使用的颜色的代码。每种颜色都有一组独特的字母和数字使其独一无二。它以 `FFFF` 代表白色，以 `000000` 代表黑色。之间有数百种颜色，最复杂的
+    `hex` 代码将包含每种颜色的许多深浅色。找到你喜欢的那个，并将其放在代码中“color”所在的位置。
+
+
+    当你想要让文本不再显示那种颜色，或者让你 `JavaScript` 标记中的不同对象不再显示那种颜色时，你只需要做 `</color>`。通常，在 `<>`
+    括号之间使用 `/` 会停止某种效果并恢复自动颜色。如果你想再次更改颜色，只需编写新的 `var color` 代码即可。
+
+
+    要更改大小，你只需要做：
+
+
+    ```
+
+    var str = “Words that you want to have the same font.”
+
+    var result = str.fontzise(14)
+
+    ```
+
+
+    字体大小具有不同的含义，取决于你查看网页时使用的浏览器。一定要学习字体大小并跟踪它们的工作方式。准备一种可以比较字体大小 1 和 14 之间差异的方法是一个好主意。对于很多内容，你将使用
+    10 到 16 之间的数字，标题通常在 20 左右。较小的字体（如 1-6）将用于你不一定希望人们能轻松阅读的小信息。
+
+
+    # 制作笔记
+
+
+    当你制作网页并享受可以使用它所做的不同事情时，你应该确保自己正在做笔记。
+
+
+    如果你正在使用文档来跟踪一切，请确保你保留了一个“笔记”部分。笔记将让你有机会写下不同的可能没有编写代码的内容。
+
+
+    例如，你可以在笔记中包含这些内容：
+
+
+    “使用了颜色代码 `FF5581`，并且喜欢这种颜色与 `000000` 的组合。这种组合看起来很好，并使用了加粗标签 `<b>` 让它在页面上更加突出。字体大小没有区别，因为它看起来很棒而且在几乎每种颜色下显示。”
+
+
+    你做的 `JavaScript` 越多，创建的页面越多，笔记就会越多，所以请为笔记部分包含的不同内容留出足够的空间。
+
+
+    # 第 6 章：聘请专业
+
+
+    当你考虑 `JavaScript` 以及你能从中学到的所有东西时，你可能会想找一个可以教你所有所需知识的人。专业人士既可以教你 `JavaScript` 的方法，也可以直接为你完成。这是一种省事的方法，许多人选择这样做，这样他们就不需要学习新东西。你可以聘请专业，但如果你可以自己学，为什么要请他们呢？当然是为了节省时间。
+
+
+    然而，自己动手并不适合所有人。关于聘请专业的信息将帮助你决定这是否是你的正确决定。如果是这样，你应该继续阅读本章，但不应该继续阅读该系列教程了。这样做将教你如何编写
+    `JavaScript`……而这并不是你想做的，对吧？
+
+
+    ## 为你做
+
+
+    有专业人士可以为你完成你能学到的一切内容……（根据教学流程，此处已省略）。
+
+
+    '
+- fmt: '
+
+    Instead of finding out what you need to know on your own, you will need to learn
+    what the teacher teaches you. It can take a long time, it will be costly, and
+    you may not learn everything that you need to know.
+
+
+    # Learn a Skill
+
+
+    For those who have read those two sections, you likely now know that you will
+    be much better off if you just learn the `JavaScript` on your own. You do not
+    need a teacher, you do not need a professional. You only need something that can
+    show you all of the different things that you can do and in a way that makes sense
+    to you.
+
+
+    It is a good idea to do it yourself because you will learn a valuable skill. Learning
+    this skill will give you the ideas that you need to make things on your own web
+    page and to get creative with the `JavaScript` process.
+
+
+    Once you have learned everything that you can about `JavaScript`, you can even
+    become one of those professionals or teachers. They charge a lot, so that means
+    that they make a lot of money for a little bit of work. If you are confident in
+    your `JavaScript` skills, you will be able to do the same thing and get the money
+    out of it. Even if you’t want to teach or do `JavaScript` for people to make money,
+    having this as a skill can be very helpful for you.
+
+
+    # Expensive
+
+
+    Hiring someone to do the work for you or getting a teacher to show you how to
+    do it is not the answer. It is a good idea to learn as much as possible from what
+    you can in this series. Purchasing the rest of the books in the series about `JavaScript`
+    will likely be far less expensive than even a first lesson with a teacher. It
+    will be just a fraction of the cost of hiring one to do your `JavaScript`.
+
+
+    Since you can move at your own pace, it may even be quicker for you to do it yourself.
+    This will give you a chance to learn more, to do more and to start making money
+    from it. You can save a lot of money by not hiring a professional, but you can
+    make a lot of money by becoming an expert at `JavaScript`. Make sure that you
+    are ready to learn and to continue doing well with each of the `JavaScript` things
+    that you learn in these books.
+
+
+    If you feel that you have learned what you need to know from this book, congratulations.
+    You are no longer a beginner, and you can move on to the different things with
+    `JavaScript`. Try out everything that this book has taught you and get ready to
+    start becoming a `JavaScript` professional. You will be able to benefit from it
+    in now time. Just learning the few codes that were included in this book will
+    be enough to get you started. In fact, you could build a whole web page from these.
+    It wouldn’t be very fun or interactive, but it would be something that you could
+    do on your own.
+
+
+    As you begin to learn more, keep in mind all of the things that this book taught
+    you. Always document the changes that you made, keep things in one location and
+    use the information that you learned to look back in reference. Even professionals
+    may forget how to change the color of their text or the size of their font sometimes.
+    Keeping track and documenting everything will allow you to always have a place
+    you can go back to that is simpler than the advanced `JavaScript` you will learn.
+
+
+    # Conclusion
+
+
+    Thank for making it through to the end of this book, let’s hope it was informative
+    and able to provide you with all of the tools you need to achieve your goals whatever
+    they may be.
+
+
+    The next step is to begin using the `JavaScript` that you have learned and start
+    preparing. You can also check out the rest of the books in this series to learn
+    much more than just the basics of `JavaScript`. The more you read about it, the
+    more you will learn how to write it and what you can use it for.
+
+
+    Finally, if you found this book useful in any way, a review on Amazon is always
+    appreciated!
+
+    '
+  raw: 'Instead of finding out what you need to know on your own, you will need to
+    learn what the teacher teaches you. It can take a long time, it will be costly,
+    and you may not learn everything that you need to know.
+
+
+    Learn a Skill
+
+
+    For those who have read those two sections, you likely now know that you will
+    be much better off if you just learn the JavaScript on your own. You do not need
+    a teacher, you do not need a professional. You only need something that can show
+    you all of the different things that you can do and in a way that makes sense
+    to you.
+
+
+    It is a good idea to do it yourself because you will learn a valuable skill. Learning
+    this skill will give you the ideas that you need to make things on your own web
+    page and to get creative with the JavaScript process.
+
+
+    Once you have learned everything that you can about JavaScript, you can even become
+    one of those professionals or teachers. They charge a lot, so that means that
+    they make a lot of money for a little bit of work. If you are confident in your
+    JavaScript skills, you will be able to do the same thing and get the money out
+    of it. Even if you don’t want to teach or do JavaScript for people to make money,
+    having this as a skill can be very helpful for you.
+
+
+    Expensive
+
+
+    Hiring someone to do the work for you or getting a teacher to show you how to
+    do it is not the answer. It is a good idea to learn as much as possible from what
+    you can in this series. Purchasing the rest of the books in the series about JavaScript
+    will likely be far less expensive than even a first lesson with a teacher. It
+    will be just a fraction of the cost of hiring one to do your JavaScript.
+
+
+    Since you can move at your own pace, it may even be quicker for you to do it yourself.
+    This will give you a chance to learn more, to do more and to start making money
+    from it. You can save a lot of money by not hiring a professional, but you can
+    make a lot of money by becoming an expert at JavaScript. Make sure that you are
+    ready to learn and to continue doing well with each of the JavaScript things that
+    you learn in these books.
+
+
+    If you feel that you have learned what you need to know from this book, congratulations.
+    You are no longer a beginner, and you can move on to the different things with
+    JavaScript. Try out everything that this book has taught you and get ready to
+    start becoming a JavaScript professional. You will be able to benefit from it
+    in now time. Just learning the few codes that were included in this book will
+    be enough to get you started. In fact, you could build a whole web page from these.
+    It wouldn’t be very fun or interactive, but it would be something that you could
+    do on your own.
+
+
+    As you begin to learn more, keep in mind all of the things that this book taught
+    you. Always document the changes that you made, keep things in one location and
+    use the information that you learned to look back in reference. Even professionals
+    may forget how to change the color of their text or the size of their font sometimes.
+    Keeping track and documenting everything will allow you to always have a place
+    you can go back to that is simpler than the advanced JavaScript you will learn.
+
+
+    Conclusion
+
+
+    Thank for making it through to the end of this book, let’s hope it was informative
+    and able to provide you with all of the tools you need to achieve your goals whatever
+    they may be.
+
+
+    The next step is to begin using the JavaScript that you have learned and start
+    preparing. You can also check out the rest of the books in this series to learn
+    much more than just the basics of JavaScript. The more you read about it, the
+    more you will learn how to write it and what you can use it for.
+
+
+    Finally, if you found this book useful in any way, a review on Amazon is always
+    appreciated!'
+  toc: []
+  trans: '
+
+
+    与其自己去寻找需要的知识，你将需要学习老师教你的内容。这可能花费很长时间，代价高昂，而且你可能无法学到你需要的全部知识。
+
+
+    # 学习一项技能
+
+
+    对于那些读过那两个章节的人，你可能已经知道，如果自己学习 `JavaScript`，情况会好得多。你不需要老师，不需要专业人士。你只需要一些能够向你展示你可以所做的所有不同内容，并以一种让你理解的方式来呈现它们。
+
+
+    自己动手做是一个好主意，因为你将学到一项宝贵的技能。学习这项技能将为你提供所需的思路，让你能够在自己的网页上创建内容，并并在 `JavaScript` 的学习过程中发挥创意。
+
+
+    一旦你掌握了关于 `JavaScript` 的所有知识，你甚至可以成为那些专业人士或老师之一。他们的收费非常高，这意味着他们只需花一点精力就能赚到很多钱。如果你对自己的
+    `JavaScript` 技能有信心，你也可以做同样的事情并从中赚钱。即使你不想通过教学或为他人编写 `JavaScript` 来赚钱，拥有这项技能对你也会非常有帮助。
+
+
+    # 昂贵
+
+
+    雇人为你完成工作或请老师教你如何操作并不是解决办法。从本系列课程中尽可能多学习是一个好主意。购买该系列中关于 `JavaScript` 的其余书籍，其价格可能比向老师上的第一课还要便宜得多。这仅仅是雇佣专业人士处理你的
+    `JavaScript` 任务费用的一小部分。
+
+
+    由于你可以按照自己的进度进行，自己做甚至可能更快。这让你有机会学习得更多、做更多事情，并开始从中赚钱。通过不雇佣专业人士，你可以节省大量资金，但通过成为 `JavaScript`
+    专家，你可以赚到很多钱。请确保你已经准备好学习，并对在书中学到的每项 `JavaScript` 知识继续保持良好的表现。
+
+
+    如果你觉得你已经从这本书中学到了你需要的知识，那么恭喜你。你不再是一个初学者了，可以转向 `JavaScript` 的其他领域了。尝试书中教给你的所有内容，准备开始成为一名
+    `JavaScript` 专业人士。你现在就能从中获益。仅仅学习书中包含的几段代码就足够让你入门了。事实上，你完全可以利用这些代码构建一个整个网页。它可能不会非常有趣或具有互动性，但它是你可以独立完成的。
+
+
+    当你开始学习更多内容时，请记住书中教给你的一切。始终记录你所做的更改，将内容保持在一个地方，并利用你学到的信息进行回顾参考。即使是专业人士有时也会忘记如何更改文本颜色或字体大小。跟踪并记录一切将让你始终有一个可以回溯的地方，那里会比你以后将学习的高级
+    `JavaScript` 要简单。
+
+
+    # 结
+
+
+    感谢你读完这本书，希望它为你提供了许多有益的信息，并能够为你提供实现目标（无论这些目标为何）所需的所有工具。
+
+
+    下一步是开始使用你所学到的 `JavaScript` 并开始准备。你也可以查看该系列中的其他书籍，学习比 `JavaScript` 基础知识更多的内容。你关于它读得越多，就越能学会如何编写它以及可以用它来做什么。
+
+
+    最后，如果你发现这本书在任何方面都有用，我们非常欢迎你在 Amazon 上给出评价！
+
+
+    '

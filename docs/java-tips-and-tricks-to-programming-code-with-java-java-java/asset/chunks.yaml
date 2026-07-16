@@ -1,0 +1,3882 @@
+- fmt: "\n![](cover.jpeg)\n\n# Java: Tips and Tricks to Programming Code with Java\n\
+    \nCharlie Masterson\n\n## Table of Contents\n\n- [Introduction](#part0000_split_003.html_Introduction)\n\
+    - [Chapter 1: Hibernation in Implementations That Are Standalone](#part0000_split_003.html_Ch1)\n\
+    - [Chapter 2: SharePoint Services on the Internet that Use a Java Client](#part0000_split_004.html_Ch2)\n\
+    - [Chapter 3: SOA Integration Using Apache Camel](#part0000_split_006.html_Ch3)\n\
+    - [Chapter 4: Orthogonality](#part0000_split_008.html_Ch4)\n- [Chapter 5: JavaFX\
+    \ Applications That Can Be Used in Multiple Environments](#part0000_split_010.html_Ch5)\n\
+    - [Chapter 6: Controlling the Flow of Java](#part0000_split_012.html_Ch6)\n- [Conclusion](#part0000_split_014.html_Conclusion)\n\
+    - [About the Author](#part0000_split_015.html_About)\n\n© Copyright 2017 by Charlie\
+    \ Masterson - All rights reserved.\n\nThe contents of this book may not be reproduced,\
+    \ duplicated or transmitted without direct written permission from the author.\n\
+    \nUnder no circumstances will any legal responsibility or blame be held against\
+    \ the publisher for any reparation, damages, or monetary loss due to the information\
+    \ herein, either directly or indirectly.\n\n### Legal Notice\nThis book is copyright\
+    \ protected. This is only for personal use. You cannot amend, distribute, sell,\
+    \ use, quote or paraphrase any part or the content within this book without the\
+    \ consent of the author.\n\n### Disclaimer Notice\nPlease note the information\
+    \ contained within this document is for educational and entertainment purposes\
+    \ only. Every attempt has been made to provide accurate, up to date and reliable\
+    \ complete information. No warranties of any kind are expressed or implied. Readers\
+    \ acknowledge that the author is not engaging in the rendering of legal, financial,\
+    \ medical or professional advice. The content of this book has been derived from\
+    \ various sources. Please consult a licensed professional before attempting any\
+    \ techniques outlined in this book.\n\nBy reading this document, the reader agrees\
+    \ that under no circumstances is the author responsible for any losses, direct\
+    \ or indirect, which are incurred as a result of the use of information contained\
+    \ within this document, including, but not limited to, errors, omissions, or inaccuracies.\n\
+    \n# Introduction\n\nCongratulations on downloading `Java: Tips and Tricks to Programming\
+    \ Code with Java` and thank you for doing so.\n\nThe following chapters will discuss\
+    \ how you can use `Java` and what tips and tricks you are going to be able to\
+    \ use to further what knowledge you know on `Java`. This book is meant to help\
+    \ you push past the most basic of knowledge and find easier ways for you to be\
+    \ able to use `Java` so that it can benefit you. There are plenty of books on\
+    \ this subject on the market, thanks again for choosing this one! Every effort\
+    \ was made to ensure it is full of as much useful information as possible, so\
+    \ please enjoy!\n\n# Chapter 1: Hibernation in Implementations that are Standalone\n\
+    \nBefore you can begin to develop a project, you need to be able to have a strategy\
+    \ that is going to work well with the data that you are inputting into the program.\
+    \ This is something that needs to happen no matter what project that you are working\
+    \ on so that you know where you are supposed to go instead of trying to do whatever\
+    \ and potentially mess up what you are trying to do. Not only that, but you are\
+    \ going to be able to use a framework that is going to be reliable and improve\
+    \ your project over the course of the time that it is used.\n\nHowever, if you\
+    \ are using a framework that is unstructured and cannot be controlled you are\
+    \ going to end up having to continuously fix your project and spend money on trying\
+    \ to maintain it properly so that it does not change your code and mess up your\
+    \ entire project. Basically, making sure that the framework that you decide to\
+    \ use is going to make sure that your project is protected and has the proper\
+    \ tools that are needed to debug your project. The `hibernate validator` is going\
+    \ to a project that is open sourced and will help when it comes to demonstrating\
+    \ key features or composing rules that are going to be valid.\n\n## Hibernate\
+    \ Validator\n\nThe validator for the `hibernate` is going to be a foundation that\
+    \ is built solidly but will allow for you to write code that is flexible and lightweight\
+    \ for `Java EE` and `SE`. The validator is going to be able to help with different\
+    \ frameworks that are going to be used when working with `Java` but you are also\
+    \ going to be able to use frameworks that are going to be standalone. The `Java\
+    \ SE` standalones are going to become very important parts of the application\
+    \ on the server side for more complex heterogeneous.\n\nTo be able to use the\
+    \ validator so that you can build a component that is standalone, you are going\
+    \ to want to make sure that you have `JDK` version six or higher installed on\
+    \ your computer. Having this version is going to make it to where you can use\
+    \ the `5.0.3` version of the validator by downloading version five of the `hibernate`\
+    \ binary distribution package. Your directory is going to have all of the binaries\
+    \ that you need to make sure that you are able to build implementations that are\
+    \ standalone.\n\nThe first example will show you how an `ant` built script is\
+    \ going to have the dependencies that are going to be for standalone implementations\
+    \ under the `manifest` section. This section is going to be required for the metadata\
+    \ that is outside of the code that you are writing. Because of the `ant` build,\
+    \ you are going to have all of the validator’s that are dependent `JAR`s through\
+    \ the header of `class-path` for the `manifest` file.\n\n### Example: manifest\
+    \ section with ant build\n```xml\n<manifest>\n  <attribute name=\"Main-Class\"\
+    \ value=\"com.example\"/>\n  <attribute name=\"Class-Path\" value=\"hibernate-validator-5.0.3.jar\"\
+    />\n</manifest>\n```\n\n## Annotation declaratives and definitions for constraints\n\
+    \nWith version five of the `hibernate validator`, you are going to have an implementation\
+    \ that is open for the `JSR` bean validation version 1. Annotations for the declaratives\
+    \ and the definition for constraints are going to have highlights for the bean\
+    \ validation framework that has been updated. When you look at the rules for validation\
+    \ that are made through the syntax for declaratives is going to improve how your\
+    \ code is read.\n\n### Example: declarative annotations\n```java\npublic class\
+    \ place {\n    @NotNull\n    private String nameofwhiveshere;\n\n    @Pattern(regexp\
+    \ = \"^[0-9]{5}(-[0-9]{4})?$| [0-9]{5}$\", message = \"this is not the correct\
+    \ address for this person.\")\n    private String codeforcity;\n\n    @NotNull\n\
+    \    private String city;\n\n    @Pattern(regexp = \"^(FH|ME|EL|EJ|AL|EE|ME|DI|AO|EM|NE|OI|LA)$\"\
+    , message = \"this is not the correct city for this zip code\")\n    private String\
+    \ zipcode;\n}\n```\n"
+  raw: "\n\n![](cover.jpeg)\n\nJava:\n\nTips and Tricks to Programming Code with Java\n\
+    \nCharlie Masterson\n\nTable of Contents\n\n[Introduction](#part0000_split_003.html_Introduction)\n\
+    \n[Chapter 1: Hibernation in Implementations That Are Standalone](#part0000_split_003.html_Ch1)\n\
+    \n[Chapter 2: SharePoint Services on the Internet that Use  a Java Client](#part0000_split_004.html_Ch2)\n\
+    \n[Chapter 3: SOA Integration Using Apache Camel](#part0000_split_006.html_Ch3)\n\
+    \n[Chapter 4: Orthogonality](#part0000_split_008.html_Ch4)\n\n[Chapter 5: JavaFX\
+    \ Applications That Can Be Used in Multiple Environments](#part0000_split_010.html_Ch5)\n\
+    \n[Chapter 6: Controlling the Flow of Java](#part0000_split_012.html_Ch6)\n\n\
+    [Conclusion](#part0000_split_014.html_Conclusion)\n\n[About the Author](#part0000_split_015.html_About)\n\
+    \n© Copyright 2017 by Charlie Masterson - All rights reserved.\n\nThe contents\
+    \ of this book may not be reproduced, duplicated or transmitted without direct\
+    \ written permission from the author.\n\nUnder no circumstances will any legal\
+    \ responsibility or blame be held against the publisher for any reparation, damages,\
+    \ or monetary loss due to the information herein, either directly or indirectly.\n\
+    \nLegal Notice:\n\nThis book is copyright protected. This is only for personal\
+    \ use. You cannot amend, distribute, sell, use, quote or paraphrase any part or\
+    \ the content within this book without the consent of the author.\n\nDisclaimer\
+    \ Notice:\n\nPlease note the information contained within this document is for\
+    \ educational and entertainment purposes only. Every attempt has been made to\
+    \ provide accurate, up to date and reliable complete information. No warranties\
+    \ of any kind are expressed or implied. Readers acknowledge that the author is\
+    \ not engaging in the rendering of legal, financial, medical or professional advice.\
+    \ The content of this book has been derived from various sources. Please consult\
+    \ a licensed professional before attempting any techniques outlined in this book.\n\
+    \nBy reading this document, the reader agrees that under no circumstances are\
+    \ is the author responsible for any losses, direct or indirect, which are incurred\
+    \ as a result of the use of information contained within this document, including,\
+    \ but not limited to, —errors, omissions, or inaccuracies.\n\nIntroduction\n\n\
+    Congratulations on downloading Java: Tips and Tricks to Programming Code with\
+    \ Java and thank you for doing so.\n\nThe following chapters will discuss how\
+    \ you can use Java and what tips and tricks you are going to be able to use to\
+    \ further what knowledge you know on Java.\n\nThis book is mean to help you push\
+    \ past the most basic of knowledge and find easier ways for you to be able to\
+    \ use Java so that it can benefit you.             \n\nThere are plenty of books\
+    \ on this subject on the market, thanks again for choosing this one! Every effort\
+    \ was made to ensure it is full of as much useful information as possible, so\
+    \ please enjoy!\n\nChapter 1:\n\nHibernation in Implementations that are Standalone\n\
+    \nBefore you can begin to develop a project, you need to be able to have a strategy\
+    \ that is going to work well with the data that you are inputting into the program.\n\
+    \nThis is something that needs to happen no matter what project that you are working\
+    \ on so that you know where you are supposed to go instead of trying to do whatever\
+    \ and potentially mess up what you are trying to do. Not only that, but you are\
+    \ going to be able to use a framework that is going to be reliable and improve\
+    \ your project over the course of the time that it is used.\n\nHowever, if you\
+    \ are using a framework that is unstructured and cannot be controlled you are\
+    \ going to end up having to continuously fix your project and spend money on trying\
+    \ to maintain it properly so that it does not change your code and mess up your\
+    \ entire project.\n\nBasically, making sure that the framework that you decide\
+    \ to use is going to make sure that your project is protected and has the proper\
+    \ tools that are needed to debug your project.\n\nThe hibernate validator is going\
+    \ to a project that is open sourced and will help when it comes to demonstrating\
+    \ key features or composing rules that are going to be valid.\n\nHibernate Validator\n\
+    \nThe validator for the hibernate is going to be a foundation that is built solidly\
+    \ but will allow for you to write code that is flexible and lightweight for Java\
+    \ EE and SE. The validator is going to be able to help with different frameworks\
+    \ that are going to be used when working with Java but you are also going to be\
+    \ able to use frameworks that are going to standalone.\n\nThe Java SE standalones\
+    \ are going to become very important parts of the application on the server side\
+    \ for more complex heterogeneous.\n\nTo be able to use the validator so that you\
+    \ can build a component that is stand alone, you are going to want to make sure\
+    \ that you have JDK version six or higher installed on your computer.\n\nHaving\
+    \ this version is going to make it to where you can use the 5.0.3 version of the\
+    \ validator by downloading version five of the hibernate binary distribution package.\
+    \ Your directory is going to have all of the binaries that you need to make sure\
+    \ that you are able to build implementations that are stand alone.\n\nThe first\
+    \ example will show you how an ant built script is going to have the dependencies\
+    \ that are going to be for standalone implementations under the manifest section.\
+    \ This section is going to be required for the metadata that is outside of the\
+    \ code that you are writing. Because of the ant build, you are going to have all\
+    \ of the validator’s that are dependent JARs through the header of class-path\
+    \ for the manifest file.\n\nExample: manifest section with ant build and dependencies\n\
+    \nCODE:\n\n<manifest>\n\n<symbol title = “I made this” amount = “${ name. user}\
+    \ “ / >\n\n<symbol title = primary-class” amount =- “come.utility.validationutilities”\
+    \ / >\n\n<symbole title = “class-path” amount = “library/hibernate-validator-dic-5.0.3\\\
+    . last.bottle libarary/ hibernate-validator-mark-processor- 5.0.3\\. last bottle\
+    \ library/validation-cdi 1.1.0 last jar library/ classperson – 1.0.0 glass library/\
+    \ javae dl – 2.2.4 glass library/ javae.le-dpi- 2.2.4 glass library jhead- listing-\
+    \ 3.1.1\\. DP. Glass library/ system4k- 1.2.17 glass . “ / >\n\n< / manifest >\n\
+    \n<metainj directory - $ {workplace_ deal_ route} / meta idj” additionally = *.mlx”\
+    \ / >\n\nAnnotation declaratives and definitions for constraints\n\nWith version\
+    \ five of the hibernate validator, you are going to have an implementation that\
+    \ is open for the JSR bean validation version 1.1\\. Annotations for the declaratives\
+    \ and the definition for constraints is going to have two highlights for the bean\
+    \ validation framework that has been updated.\n\nWhen you look at the rules for\
+    \ validation that are made through the syntax for declaratives is going to improve\
+    \ how your code is read.\n\nExample: declarative annotations\n\nCODE:\n\nOpen\
+    \ class place {\n\n@codeishere\n\nClosed string nameofwholiveshere ;\n\n…\n\n\
+    @morecode\n\n@pattern ( regapd  “ [ D-Ej-d] \\\\ j[ D-Dj-d] [\\\\e](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)?\
+    \ \\\\ j]D-Ej-d\\\\\\ j” , readme = “this is not the correct address for this\
+    \ person.” )\n\nClosed string codeforcity\n\n@codehere\n\nClosed string city;\n\
+    \n@morecode\n\n@pattern (regapd = FH|ME|EL| EJ| AL| EE| ME| DI| AO| EM | NE| OI|\
+    \ LA}” , readme = “this is not the correct city for this zip code” )\n\nClosed\
+    \ string zipcode ;\n\n…\n\nThe validation method is going to have conditions that\
+    \ are going to be defined based on conditions that were set before so that the\
+    \ code is improved on readability. The rules for this are going to be easier for\
+    \ you to understand being that you will only need to take notice of the annotations\
+    \ and methods that are being used.\n\nDeclarative styles are going to be delete\
+    \ the necessary need to have a model for execution due to transitions of the different\
+    \ states all while analyzing the conditions that are going to come before and\
+    \ after the code.\n\nConstraints will apply to the objects that fall under the\
+    \ @valid annotations.\n\n   Chapter 2:"
+  toc: []
+  trans: "\n\n![](img/cover.jpeg)\n\n# Java：使用 Java 编程的技巧与技巧\n\nCharlie Masterson\n\
+    \n## 目录\n\n- 引言\n- 第 1 章：独立实现中的 Hibernate\n- 第 2 章：使用 Java 客户端的互联网 SharePoint\
+    \ 服务\n- 第 3 章：使用 Apache Camel 进行 SOA 集成\n- 第 4 章：正交性\n- 第 5 章：可在多环境中使用的 JavaFX\
+    \ 应用\n- 第 6 章：控制 Java 的流\n- 结论\n- 关于作者\n\n© Copyright 2017 by Charlie Masterson\
+    \ - 版权所有。\n\n未经作者直接书面许可，不得复制、复制或传输本书书的内容。\n\n在任何情况下，对于由于此处信息直接或间接导致的任何赔偿、损害或资金损失，出版商不承担任何法律责任或过。\n\
+    \n### 法律声明\n本书受版权保护。本书仅供个人使用。未经作者同意，您不得修改、分发、销售、使用、引用或转述本书的任何部分或内容。\n\n### 免责声明\n\
+    请注意，本文档中包含的信息仅供教育和娱乐目的。我们尽一切提供准确、最新和可靠的完整信息。不提供任何形式的明示或暗示保证。读者承认作者并未提供法律、财务、医疗或专业建议。本书的内容源自各种来源。在尝试本书中概述的任何技术之前，请咨询执业专业人士。\n\
+    \n通过阅读本文，读者同意在任何情况下，作者对因使用本文中所包含的信息而导致的任何直接或间接损失均不负责，包括但不限于错误、遗漏或不准确。\n\n# 引言\n\
+    \n恭喜下载 `Java: Tips and Tricks to Programming Code with Java`，感谢你的支持。\n\n接下来的章节将讨论你如何使用\
+    \ `Java`，以及你可以使用哪些技巧和技巧来进一步丰富你对 `Java` 的知识。本书旨在帮助你超越最基础的知识，找到更简单的方法来使用 `Java`，使其为你获益。市面上有许多关于这个主题的书，再次感谢你选择这一本！我们已尽全力确保它包含尽可能多的有用信息，因此请尽情享受！\n\
+    \n# 第 1 章：独立实现中的 Hibernate\n\n在开始开发项目之前，你需要一个能够与你输入到程序中的数据良好配合的策略。无论你正在从事什么项目，这都是必须发生的事情，以便你知道该往哪里去，而不是尝试随心所欲，并可能搞乱你正在做的事情。不仅如此，你还将能够使用一个可靠的框架，并在在使用过程中改进你的项目。\n\
+    \n然而，如果你使用一个没有结构且无法控制的框架，你将不得不不断修复你的项目，并花费资金进行善维护，以防止它更改你的代码并搞乱整个项目。基本上，确保你决定使用的框架将确保你的项目受到保护，并拥有调试项目所需的适当工具。`hibernate\
+    \ validator` 是一个开源项目，它在演示关键功能或组合有效规则方面提供帮助。\n\n## Hibernate Validator\n\n`hibernate`\
+    \ 的验证器将成为一个坚固的基础，但它允许你为 `Java EE` 和 `SE` 编写灵活且轻量级的代码。该验证器能够帮助处理在使用 `Java` 工作时使用的不同框架，你也可以使用独立的框架。`Java\
+    \ SE` 独立程序将成为服务器端更复杂异构应用中的重要部分。\n\n为了能够使用验证器来构建独立的组件，你需要确保电脑上安装了六或更高版本的 `JDK`。拥有此版本使你能够通过下载五版本的\
+    \ `hibernate` 二进制发行包来使用 `5.0.3` 版本的验证器。你的目录将包含所需的所有二进制文件，以确保能够构建独立的实现。\n\n第一个示例将向你展示\
+    \ `ant` 构建脚本如何在 `manifest` 部分包含独立实现的依赖项。该部分对于你编写的代码之外的元数据是必需。由于使用了 `ant` 构建，你将通过\
+    \ `manifest` 文件的 `class-path` 表头获得所有验证器依赖的 `JAR` 包。\n\n### 示例：ant 构建的 manifest\
+    \ 部分\n```xml\n<manifest>\n  <attribute name=\"Main-Class\" value=\"com.example\"\
+    />\n  <attribute name=\"Class-Path\" value=\"hibernate-validator-5.0.3.jar\"/>\n\
+    </manifest>\n```\n\n## 注解声明式和约束定义\n\n通过五版本的 `hibernate validator`，你将获得一个适用于 `JSR`\
+    \ 豆验证一版本的实现。声明式的注解和约束的定义将突出显示更新后的豆验证框架。当你查看通过声明式语法创建的验证规则时，将提高代码的可读性。\n\n### 示例：声明式注解\n\
+    ```java\npublic class place {\n    @NotNull\n    private String nameofwhiveshere;\n\
+    \n    @Pattern(regexp = \"^[0-9]{5}(-[0-9]{4})?$| [0-9]{5}$\", message = \"this\
+    \ is not the correct address for this person.\")\n    private String codeforcity;\n\
+    \n    @NotNull\n    private String city;\n\n    @Pattern(regexp = \"^(FH|ME|EL|EJ|AL|EE|ME|DI|AO|EM|NE|OI|LA)$\"\
+    , message = \"this is not the correct city for this zip code\")\n    private String\
+    \ zipcode;\n}\n```\n\n"
+- fmt: '
+
+    # SharePoint Services on the Internet that Use a Java Client
+
+
+    For this chapter you are going to learn CRUD operations for SharePoint documents
+    that use a Java client. It is going to focus on the web services that are going
+    to be found in the copy and list services that you can use with Microsoft.
+
+
+    CRUD services can also be used with CAML which stands for Collaborative Application
+    Markup Language. It is based on XML that is going to utilize the different methods
+    that are going to be used with copy and lists.
+
+
+    On top of that you are going to be able to construct a CAML structure that is
+    going to be able to pass through the different conditions that are going to be
+    set for the properties that are assigned to the objects in the code.
+
+
+    ## Background
+
+
+    In the event that you are working with a large amount of data that may be in different
+    forms, you are going to be able to look at that data in a compounded file so that
+    you can make any decisions that you need to make. There are different kinds of
+    monitoring that is going to happen in this kind of environment.
+
+
+    An audit is going to make sure that the data you are working with is going to
+    be in a constant state and then these reports can be sent out to the people that
+    need to have them in order for them to be saved to SharePoint.
+
+
+    But, the engines that you are going to use are going to need to have an output
+    writer concept that is going to help set up writing in SharePoint. This helps
+    with the writing that happens in databases and the servers that are SMTP so that
+    you can avoid having to do everything manually.
+
+
+    ## Communicating with SharePoint
+
+
+    When you are working with SharePoint you are going to use code you write on your
+    own for the solution that you need to reach. The code is going to be saved onto
+    the Microsoft SharePoint website which is also code generated.
+
+
+    There are going to be two services that you are using with Microsoft, because
+    of this, you are going to be accessing different services that are offered through
+    SharePoint. They will be communicating through two different locations.
+
+
+    Location one will be: `https://server/site/_vti_bin/Lists.asmx`
+
+
+    The second location: `https://server/site/_vti_bin/Copy.asmx`
+
+
+    ## Generating packages on web services
+
+
+    In order to generate the web service packages that you are going to be using,
+    you are going to be using a `wsimport` function that you can find in the bin directory
+    when you look at how Java has been installed. That is going to be based on the
+    fact of you have installed version 1.6 of Java.
+
+
+    SharePoint is going to run on HTTPS which may end up causing you to find a few
+    problems with `wsimport` when you look at the server that you are using thanks
+    to the two different URLs that you are going to use.
+
+
+    In that case, you are going to end up getting an error that will look similar
+    to this.
+
+
+    ### CODE
+
+    ```
+
+    [ERROR] bright. Protected.validator.validatorException: XPIK follow building untrue.
+    Bright.procted.offered.certified.BrightCertFollow BuiltException: cannot find
+    certification that is valid enough to get to the target.
+
+    ```
+
+
+    This error happens because the file that you are using does not have the proper
+    certification that it needs for the site to run. How you are going to get around
+    this is to download a file locally for WSDL.
+
+
+    ### Example: Copy service code
+
+
+    #### CODE:
+
+    ```
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing Copy. Swld
+
+    ```
+
+
+    #### Parsing DLSW
+
+    ```
+
+    [ALERT] CLEAN opening “copyclean91” : please us a different holding than this
+
+    Section 34 of file : / C: / parma/ Copy/ swdl
+
+    ```
+
+    Code is being created
+
+
+    ### Example two: lists service code
+
+
+    #### CODE:
+
+    ```
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing list. Swld
+
+    ```
+
+
+    #### Parsing DLSW
+
+    ```
+
+    [ALERT] CLEAN opening “listclean91” : please us a different holding than this
+
+    Section 34 of file : / C: / parma/ list/ swdl
+
+    ```
+
+    Code is being created
+
+
+    After the code, has been created, then it can be added to the solution that you
+    made and use it. The compile option can be changed to a different command. However,
+    doing this is going to make the class files be created differently inside of the
+    source that you are using while allowing Eclipse to compile them only if we have
+    written the source code out already.
+
+
+    ## Security
+
+
+    So, that SharePoint does what you want it to do, you are going to need to change
+    your process so that you can add in Axis2. Axis2 is going to have a few issues,
+    but you can overcome the issue by using the `JCIFS` along with Axis2. However,
+    you may think that this is going overboard but it is going to do what you want
+    it to do all while making it easier to do what you want done.
+
+
+    Should the website that you are using have the `cacerts` file and have it updated
+    to where it is going to be, you can use this as long as the certification for
+    the site is up to date as well.
+
+
+    #### CODE
+
+    ```
+
+    Ajavae.web.lss.trustbought – you will use this to update the files that you are
+    using.
+
+    ```
+
+
+    # Chapter 3: SOA Integration Using Apache Camel
+
+
+    The Apache Camel is an integration service that is geared towards the architecture
+    of the program that you are running. Camel lets you configure the integrations
+    so that it works for web services such as message transformations, routing, and
+    the handling of exceptions. All without having to use too much code from Java.
+
+
+    The integration in Java is going to be mainly used for projects that are looking
+    to connect the endpoints for multiple web services quickly so that they work efficiently
+    and are easy to maintain.
+
+
+    When you look at the development of the standpoints, the integration is going
+    to be a challenge that you have to be willing to work for. However, you can make
+    it easier by using the Apache Camel framework.
+
+
+    The API components for Apache Camel are going to be mostly recognized when it
+    comes to enterprise integration patterns or `EIPs` for short. The `EIPs` make
+    it easy to do the tasks that are required when it comes to working with integration
+    for logging and much more.
+
+
+    ## Enterprise integration example
+
+
+    Think about working for a major airline that is trying to make it easier for their
+    customers to be able to make reservations. One of the simplest ways to do this
+    now is online because everything is online nowadays. When creating the service,
+    it is going to compare multiple airlines and their prices so that the customer
+    can get the best price for when they want to travel.
+
+
+    There are going to be several web services that are going to be included in this
+    because the airline that you are working for is going to have to pull the prices
+    from competing websites so that they can give it to their customers.
+
+
+    You are going to be making a list of quotes based on what the customer is looking
+    for in their airline experience. The portal that the customer is using is going
+    to be specific to them and give them everything that they are wanting from their
+    destination to the best price that they can get for that fare.
+
+
+    Instead of using the code for Java, you are going to use `DSL` or `Domain Specific
+    Language` so that it only works with the domain that it is set up to work with.
+
+    '
+  raw: 'SharePoint Services on the Internet that Use a Java Client
+
+
+    For this chapter you are going to learn CRUD operations for SharePoint documents
+    that use a Java client. It is going to focus on the web services that are going
+    to be found in the copy and list services that you can use with Microsoft.
+
+
+    CRUD services can also be used with CAML which stands for Collaborative Application
+    Markup Language. It is based on XML that is going to utilize the different methods
+    that are going to be used with copy and lists.
+
+
+    On top of that you are going to be able to construct a CAML structure that is
+    going to be able to pass through the different conditions that are going to be
+    set for the properties that are assigned to the objects in the code.
+
+
+    Background
+
+
+    In the event that you are working with a large amount of data that may be in different
+    forms, you are going to be able to look at that data in a compounded file so that
+    you can make any decisions that you need to make. There are different kinds of
+    monitoring that is going to happen in this kind of environment.
+
+
+    An audit is going to make sure that the data you are working with is going to
+    be in a constant state and then these reports can be sent out to the people that
+    need to have them in order for them to be saved to SharePoint.
+
+
+    But, the engines that you are going to use are going to need to have an output
+    writer concept that is going to help set up writing in SharePoint. This helps
+    with the writing that happens in databases and the servers that are SMTP so that
+    you can avoid having to do everything manually.
+
+
+    Communicating with SharePoint
+
+
+    When you are working with SharePoint you are going to be using code that you write
+    on your own for the solution that you need to reach. The code is going to be saved
+    onto the Microsoft SharePoint website which is also code generated.
+
+
+    There are going to be two services that you are using with Microsoft, because
+    of this, you are going to be accessing different services that are offered through
+    SharePoint. They will be communicating through two different locations.
+
+
+    Location one will be: [https://server/site/_vti_bin/Lists.asmx](https://server/site/_vti_bin/Lists.asmx)
+
+
+    The second location: [https://server/site/_vti_bin/Copy.asmx](https://server/site/_vti_bin/Copy.asmx)
+
+
+    Generating packages on web services
+
+
+    In order to generate the web service packages that you are going to be using,
+    you are going to be using a wsimport function that you can find in the bin directory
+    when you look at how Java has been installed. That is going to be based on the
+    fact of you have installed version 1.6 of Java.
+
+
+    SharePoint is going to run on HTTPS which may end up causing you to find a few
+    problems with wsimport when you look at the server that you are using thanks to
+    the two different URLs that you are going to use.
+
+
+    In that case, you are going to end up getting an error that will look similar
+    to this.
+
+
+    CODE:
+
+
+    [ERROR] bright. Protected.validator.validatorException: XPIK follow building untrue.
+    Bright.procted.offered.certified.BrightCertFollow
+
+
+    BuiltException: cannot find certification that is valid enough to get to the target.
+
+
+    This error happens because the file that you are using does not have the proper
+    certification that it needs for the site to run. How you are going to get around
+    this is to download a file locally for WSDL.
+
+
+    Example: Copy service code
+
+
+    CODE:
+
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing Copy. Swld
+
+
+    Parsing DLSW
+
+
+    [ALERT] CLEAN opening “copyclean91” : please us a different holding than this
+
+
+    Section 34 of file : / C: / parma/ Copy/ swdl
+
+
+    Code is being created
+
+
+    Example two: lists service code
+
+
+    CODE:
+
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing list. Swld
+
+
+    Parsing DLSW
+
+
+    [ALERT] CLEAN opening “listclean91” : please us a different holding than this
+
+
+    Section 34 of file : / C: / parma/ list/ swdl
+
+
+    Code is being created
+
+
+    After the code, has been created, then it can be added to the solution that you
+    made and use it. The compile option can be changed to a different command. However,
+    doing this is going to make the class files be created differently inside of the
+    source that you are using while allowing Eclipse to compile them only if we have
+    written the source code out already.
+
+
+    Security
+
+
+    So, that SharePoint does what you want it to do, you are going to need to change
+    your process so that you can add in Axis2\. Axis2 is going to have a few issues,
+    but you can overcome the issue by using the JCIFS along with Axis2\. However,
+    you may think that this is going overboard, but it is going to do what you want
+    it to do all while making it easier to do what you want done.
+
+
+    Should the website that you are using have the cacerts file and have it updated
+    to where it is going to be, you can use this as long as the certification for
+    the site is up to date as well.
+
+
+    CODE:
+
+
+    Ajavae.web.lss.trustbought – you will use this to update the files that you are
+    using.
+
+
+    Chapter 3:
+
+
+    SOA Integration Using Apache Camel
+
+
+    The Apache Camel is an integration service that is geared towards the architecture
+    of the program that you are running. Camel lets you configure the integrations
+    so that it works for web services such as message transformations, routing, and
+    the handling of exceptions. All without having to use too much code from Java.
+
+
+    The integration in Java is going to mainly be used for the priority of projects
+    that are looking to connect the end points for multiple web services quickly so
+    that they work efficiently and are easy to maintain.
+
+
+    When you look at the development of the standpoints, the integration is going
+    to be a challenge that you have to be willing to work for. However, you can make
+    it easier by using the Apache Camel framework.
+
+
+    The API and different components for the Apache Camel are going to be mostly recognized
+    when it comes to enterprise integration patterns or EIPs for short. The EIPs make
+    it easy to do the tasks that are required when it comes to working with integration
+    for the connection of web services like XSL, logging audits and much more.
+
+
+    Enterprise integration example
+
+
+    Think about working for a major airline that is trying to make it easier for their
+    customers to be able to make reservations. One of the simplest ways to do this
+    now is online because everything is online now days. When creating the service,
+    it is going to compare multiple airlines and their prices so that the customer
+    can get the best price for when they want to travel.
+
+
+    There are going to be several web services that are going to be included in this
+    because the airline that you are working for is going to have to pull the prices
+    from their competing airlines websites so that they can give it to their customers.
+
+
+    You are going to be making a list of quotes based on what the customer is looking
+    for in their airline experience. The portal that the customer is using is going
+    to be specific to them and give them everything that they are wanting from their
+    destination to the best price that they can get for that fare and when they are
+    going to reach their destination.
+
+
+    Writing out the custom Java code is going to require a lot of Java code so that
+    you can map everything to process the request from the user properly.
+
+
+    It is best that you are able to map out the request from start to finish by using
+    threads in Java to set up a parallel web service that is going to get all the
+    services involved in supporting the task.
+
+
+    Apache Camel is going to use a framework that will allow shortcuts to make the
+    programming easier. All you are going to need to do is leverage the API components
+    for Camel and therefore design a web service integration task that is going to
+    work with the EIPs. Instead of using the code for Java, you are going to use DSL
+    or Domain Specific Language so that it only works with the domain that it is set
+    up to work with.'
+  toc: []
+  trans: '
+
+
+    # 在互联网上使用 Java 客户端 SharePoint 服务
+
+
+    在本章中，你将学习使用 Java 客户端对 SharePoint 文档进行 CRUD（增删改查）操作。重点将是你可以与 Microsoft 配合使用的复制（copy）和列表（list）服务中的
+    Web 服务。
+
+
+    CRUD 服务也可以用于 CAML，即协作应用程序标记语言（Collaborative Application Markup Language）。它基于 XML，将利用与复制和列表使用的不同方法。
+
+
+    此外，你将能够构建一个 CAML 结构，能够传递为代码中分配对象的属性设置的各种条件。
+
+
+    ## 背景
+
+
+    当你处理可能以不同形式存在的大量数据时，你可以在复合文件中查看这些数据，以便做出任何所需的决策。在此类环境中，会发生不同类型的监控。
+
+
+    审计（Audit）将确保你正在处理的数据处于持续状态，然后可以将这些报告发送给需要它们的人员，以便将其保存到 SharePoint 中。
+
+
+    但是，你将使用的引擎需要一个输出写入器（output writer）概念，以帮助设置向 SharePoint 的写入。这有助于数据库和 SMTP 服务器中的写入操作，从而避免手动完成一切。
+
+
+    ## 与 SharePoint 通信
+
+
+    当你使用 SharePoint 时，你将为你需要的解决方案编写自己的代码。这些代码将保存到 Microsoft SharePoint 网站上，这些也是生成的代码。
+
+
+    你将使用 Microsoft 的两项服务，因此，你将访问通过 SharePoint 提供的不同服务。它们将通过两个不同的位置进行通信。
+
+
+    位置一：`https://server/site/_vti_bin/Lists.asmx`
+
+
+    第二个位置：`https://server/site/_vti_bin/Copy.asmx`
+
+
+    ## 在 Web 服务上生成包
+
+
+    为了生成你将使用的 Web 服务包，你将使用 `wsimport` 函数，你可以在查看 Java 安装路径时在 bin 目录中找到它。这是基于你安装了 1.6
+    版本的 Java。
+
+
+    SharePoint 将运行在 HTTPS 上，由于你使用的两个不同的 URL，这在你查看正在使用的服务器时可能会发现 `wsimport` 出现一些问题。
+
+
+    在这种情况下，你将得到一个类似于下面的错误。
+
+
+    ### 代码
+
+    ```
+
+    [ERROR] bright. Protected.validator.validatorException: XPIK follow building untrue.
+    Bright.procted.offered.certified.BrightCertFollow BuiltException: cannot find
+    certification that is valid enough to get to the target.
+
+    ```
+
+
+    此错误发生是因为你使用的文件没有站点运行所需的适当证书。你解决此方法是在本地下载一个 WSDL 文件。
+
+
+    ### 示例：复制服务代码
+
+
+    #### 代码：
+
+    ```
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing Copy. Swld
+
+    ```
+
+
+    #### 解析 DLSW
+
+    ```
+
+    [ALERT] CLEAN opening “copyclean91” : please us a different holding than this
+
+    Section 34 of file : / C: / parma/ Copy/ swdl
+
+    ```
+
+    代码正在创建
+
+
+    ### 示例二：列表服务代码
+
+
+    #### 代码：
+
+    ```
+
+    C : \ parma > “% JAVA_NATIONAL% \ nib \ swimport “ -e . -a come.microsoft. schemas.
+    Sharpoint. Clean – hold -addmore -Anothing list. Swld
+
+    ```
+
+
+    #### 解析 DLSW
+
+    ```
+
+    [ALERT] CLEAN opening “listclean91” : please us a different holding than this
+
+    Section 34 of file : / C: / parma/ list/ swdl
+
+    ```
+
+    代码正在创建
+
+
+    代码创建后，可以将其添加到你制作的解决方案并使用。编译选项可以更改为不同的命令。然而，这样做将在你使用的源码内部以不同的方式创建类文件，同时允许 Eclipse
+    在我们已经写出源码时才对其进行编译。
+
+
+    ## 安全
+
+
+    为了让 SharePoint 按照你的意愿运行，你需要更改流程以引入 Axis2。Axis2 会产生一些问题，但你可以通过结合 `JCIFS` 和 Axis2
+    来解决问题。然而，你可能认为这有些过度，但它会在按照你的意愿运行的同时，让实现目标变得更容易。
+
+
+    如果你使用的网站拥有 `cacerts` 文件并已更新到应所在的位置，只要站点的证书也是最新的，你就可以使用。
+
+
+    #### 代码
+
+    ```
+
+    Ajavae.web.ssl.truststore – 你将使用此更新你正在使用的文件。
+
+    ```
+
+
+    # 第 3 章：使用 Apache Camel 进行 SOA 集成
+
+
+    Apache Camel 是一种面向你运行程序架构的集成服务。Camel 允许你配置集成，使其适用于 Web 服务，例如消息转换、路由和异常处理，而无需使用过多的
+    Java 代码。
+
+
+    Java 中的集成将主要用于那些希望快速连接多个 Web 服务端点的项目，以便它们运行高效且易于维护。
+
+
+    当你查看端点的开发时，集成将是一个你愿意面对的挑战。然而，通过使用 Apache Camel 框架可以使其变得更容易。
+
+
+    Apache Camel 的 API 组件主要被识别为企业集成模式（简称 `EIPs`）。`EIPs` 让处理日志记录等集成工作所需的任务变得简单。
+
+
+    ## 企业级集成示例
+
+
+    想象为一家大型航空公司工作，该航空公司正努力让客户能够进行预订。现在实现这一点最简单的方法之一在线，因为现在一切都是在线的。在创建服务时，它将比较多家航空公司及其价格，以便客户在旅行时获得最佳价格。
+
+
+    '
+- fmt: "\nApache Camel is going to make DSL code based on Java so that it can route\
+    \ and configure the integration layer the way that it is supposed to be.\n\nContinuing\
+    \ with our airline example, you are going to see through the portal that your\
+    \ customer is going to send a request through the starting location and the airline\
+    \ that they would prefer to use. From there, the code that you have written into\
+    \ the website is going to send back the airlines and destination information that\
+    \ they are looking for so that they can compare prices and airlines.\n\nIf they\
+    \ have decided on what airline they want to use, then they are going to use the\
+    \ reservation service to accept the quote that came through to them based on the\
+    \ preferences that they inputted.\n\nJava code is going to need to be written\
+    \ for the processors so that the routes that the customer takes are going to not\
+    \ be compromised by the website.\n\n# Terminology\n\nA route in the Apache Camel\
+    \ is going to be a chain of processors that a message is sent through between\
+    \ two points. The preferred route is going to go between the endpoints. The messages\
+    \ are going to be kept in a component that is going to be to as the exchange.\n\
+    \nThe runtime that it takes for Camel to get the message from point a to point\
+    \ b is going to be the Camel Context.\n\n## Components for Camel SOA\n\n- **CXF\
+    \ Endpoint**: Apache CXF is going to be used for web services and their implementations.\
+    \ The CXF component is going to be used when configuring the web services that\
+    \ are being used and help to determine which route they are going to take.\n-\
+    \ **Camel Bean**: the component that uses JavaBeans. The bean is going to be used\
+    \ when setting up custom processes that have steps that need to be followed.\n\
+    - **Camel Direct**: two routes are going to be connected through a synchronous\
+    \ invocation.\n- **Camel XSLT**: The XSLT sheet will be loaded by the springs\
+    \ resource loading technique. This component is going to be used to handle the\
+    \ request and response transformations from web servers.\n- **Camel Multicast\
+    \ EIP**: the EIP pattern is going to send messages to different places that need\
+    \ to be processed. From here you can use multicasting to send the requests.\n\
+    - **Camel Aggregator EIP**: the pattern is going to combine two different results\
+    \ that have messages that are similar into one message that will be sent to the\
+    \ user. the aggregator is going to combine the responses so that the client is\
+    \ not getting overwhelmed.\n- **Camel WireTap EIP**: with wiretap, you can inspect\
+    \ the messages while they go through the system to the user. the EIP is going\
+    \ to log the messages with the points that are appropriate for it.\n\n# Web interfaces\n\
+    \nWSDL files are going to be tied to the schemas for XML in web service interfaces\
+    \ when you look at the source code.\n\nThere are eight steps that you are going\
+    \ to use to implement the SOA layers.\n\n### Step one: Generate Java types for\
+    \ WSDLs\n\nYou are going to use the `cxf codegen` plugin that works with Maven\
+    \ along with the `wsdl2java` tool that is going to assist in generating the Java\
+    \ code that you need for the different types of WSDLs that you are going to find\
+    \ in the source code.\n\nIn order to execute this code you are going to use the\
+    \ cmd: `mvn generate sources code`.\n\nFrom here CSF is going to generate the\
+    \ code that is needed to place the artifact into the proper directory that it\
+    \ belongs in. From there, Maven can be used to build the artifacts that you are\
+    \ going to use.\n\n#### Example\n\n```xml\n<plugin>\n    <id for group>org.Camel.Cxf</id\
+    \ for group>\n    <id for the object>cxf codegen plugin</id for the object>\n\
+    \    <version>2.8.0</version>\n    <carry out the code>\n        <number>create\
+    \ source</number>\n        <series>create source</series>\n        <configure>\n\
+    \            <origin>${bottomry}/cor/primary/java</origin>\n            <Wsdlchange>\n\
+    \                // reservation made by user\n                <wsdl>${bottomry}/cor/primary/resource/wsdl/reservation</wsdl>\n\
+    \            </Wsdlchange>\n            <wsdlchange>\n                //reservation\
+    \ made on airline D\n                <wsdl>${bottomry}/cor/primary/resource/wsdl/reservation\
+    \ on airline d.wsdl</wsdl>\n            </wsdlchange>\n            <wsdlchange>\n\
+    \                // reservation by airline F\n                <wsdl>${bottomry}/cor/primary/resources/wsdl/reservation\
+    \ on airline f wsdl</wsdl>\n            </wsdlchange>\n        </configure>\n\
+    \        <achieve>\n            <achieve wsdl2java</achieve>\n        </achieve>\n\
+    \    </carry out>\n</plugin>\n```\n\n### Step two: Configure Camel CXF end points\n\
+    \nHere is where you are going to need to define the end points for your code.\
+    \ The end points are going to be used in the routes that you use for Camel.\n\n\
+    You need to remember though that the interface that you are using is going to\
+    \ need be generated by the end point that you have already put in place.\n\nCamel\
+    \ cxf end point will be the default end point in your code so that you can get\
+    \ XML in its raw form. You will need to enable the validation so that you can\
+    \ validate the requests that come in through XSD in the WSDL so that you can reduce\
+    \ time that needs to be invested into the validation.\n\n#### Example CODE:\n\n\
+    ```xml\n// end point for the reservation made on airline D\n<cxf:endpoint number=endpointairlineD\n\
+    URL=\"http://localhost:9898/reservation made\" servicegenre=\"mor.Small.Rira.Recall.airlineDquote\"\
+    \nwsdladdress=\"wdsl/reservation for airline d wsdl\">\n    <cxf:ability>\n  \
+    \      <enter key=\"informationinput\" number=\"pay\"/>\n    </cxf:ability>\n\
+    </cxf:endpoint>\n\n// end point for the reservation made on airline F\n<cxf:endpoint\
+    \ number=endpointairlineF\nURL=\"http://localhost:9898/reservation made\" servicegenre=\"\
+    mor.Small.Rira.Recall.airlineFquote\"\nwsdladdress=\"wdsl/reservation for airline\
+    \ d wsdl\">\n    <cxf:ability>\n        <enter key=\"informationinput\" number=\"\
+    pay\"/>\n    </cxf:ability>\n</cxf:endpoint>\n```\n\nAs for the explanation of\
+    \ the rest of steps:\n- Step three is so you can make the proper routes with the\
+    \ use of multicast.\n- Step four lets you see the messages as they go through\
+    \ the system.\n- Step five is where you can write your messages using XSLT.\n\
+    - Step six uses wiretap.\n- Step seven will create the context for XML.\n- Finally,\
+    \ step eight will execute the code you have.\n\n# Chapter 4: Orthogonality\n\n\
+    Using orthogonality is going to make it easier to maintain your program’s software\
+    \ therefore making it easier to understand. Orthogonality comes from the Greek\
+    \ word `orthogonios` which literally means \"right angled\". This is normally\
+    \ a word that is used when you are talking about the difference between a set\
+    \ of dimensions.\n\nAs you look at a graph, you are going to notice that an object\
+    \ is going to move along the `x` axis but only if it is occupying a space of three\
+    \ dimensions. The coordinates are not going to change. But, if you change the\
+    \ dimension of one of the coordinates, you are going to need to change the other\
+    \ dimension because there cannot be side effects on other dimensions just because\
+    \ you changed one. That is why orthogonality is used for describing software designs\
+    \ that are modular and maintainable as you think about the system in a multi-dimensional\
+    \ space.\n\n## Dimensions of Log4j\n\nWhen you use logging, you are doing nothing\
+    \ more than using a fancy version of the `println()` function that you use in\
+    \ Java, but Log4j is going to have a package that is going to change the mechanics\
+    \ of how the Java platform is going to respond.\n\nNot only that: it also allows\
+    \ developers to do different things such as:\n- Creating new layouts so that events\
+    \ for logging are defined by a string.\n- Appenders are going to be logged differently.\
+    \ This is not limited to consoles but also to locations of networks, logs for\
+    \ operating systems, and more.\n- Control will be centrally located depending\
+    \ on how much information has to be logged.\n- There are now layers for things\
+    \ like debug and errors.\n\nLog4j includes other features that you can explore\
+    \ as you work with Java.\n"
+  raw: 'Apache Camel is going to make DSL code based on Java so that it can route
+    and configure the integration layer the way that it is supposed to be.
+
+
+    Continuing with our airline example, you are going to see through the portal that
+    your customer is going to send a request through the starting location and the
+    airline that they would prefer to use. From there, the code that you have written
+    into the website is going to send back the airlines and destination information
+    that they are looking for so that they can compare prices and airlines.
+
+
+    If they have decided on what airline they want to use, then they are going to
+    use the reservation service to accept the quote that came through to them based
+    on the preferences that they inputted.
+
+
+    Java code is going to need to be written for the processors so that the routes
+    that the customer takes are going to not be compromised by the website.
+
+
+    Terminology
+
+
+    A route in the Apache Camel is going to be a chain of processors that a message
+    is sent through between two points. The preferred route is going to go between
+    the endpoints. The messages are going to be kept in a component that is going
+    to be referred to as the exchange.
+
+
+    The runtime that it takes for Camel to get the message from point at to point
+    be is going to be the Camel Context.
+
+
+    Components for Camel SOA
+
+
+    CXF Endpoint: Apache CXF is going to be used for web services and their implementations.
+    The CXF component is going to be used when configuring the web services that are
+    being used and help to determine which route they are going to take.
+
+
+    Camel Bean: the component that uses JavaBeans. The bean is going to be used when
+    setting up custom processes that have steps that need to be followed.
+
+
+    Camel Direct: two routes are going to be connected through a synchronous invocation.
+
+
+    Camel XSLT: the XSLT sheet will be loaded by the springs resource loading technique.
+    This component is going to be used to handle the request and response transformations
+    from web servers.
+
+
+    Camel Multicast EIP: the EIP pattern is going to send messages to different places
+    that need to be processed. From here you can use multicasting to send the requests.
+
+
+    Camel Aggregator EIP: the pattern is going to combine two different results that
+    have messages that are similar into one message that will be sent to the user.
+    The aggregator is going to combine the responses so that the client is not getting
+    overwhelmed.
+
+
+    Camel WireTap EIP: with wiretap, you can inspect the messages while they go through
+    the system to the user. The EIP is going to log the messages with the points that
+    are appropriate for it.
+
+
+    Web interfaces
+
+
+    WSDL files are going to be tied to the schemas for XML in web service interfaces
+    when you look at the source code.
+
+
+    There are eight steps that you are going to use to implement the SOA layers.
+
+
+    Step one: Generate Java types for WSDLs
+
+
+    You are going to use the cxf codegen plugin that works with Maven along with the
+    wsdl2java took that is going to assist in generating the Java code that you need
+    for the different types of WSDLs that you are going to find in the source code.
+
+
+    In order to execute this code you are going to use the cmd: mvn generate sources
+    code.
+
+
+    From here CSF is going to generate the code that is needed to place the artifact
+    into the proper directory that it belongs in. From there, Maven can be used to
+    build the artifacts that you are going to use.
+
+
+    Example
+
+
+    < plugin >
+
+
+    <id for group> gor. Camel. Cxf < / id for group >
+
+
+    <id for the object> cxf codegen plugin < / id for the object>
+
+
+    <version> 2.8.0 < / version>
+
+
+    <carry out the code>
+
+
+    <number> create source < / number>
+
+
+    <series> create source < / series>
+
+
+    <configure>
+
+
+    <origin> $ { bottomry } / cor/ primary / java < /origin>
+
+
+    <Wsdlchange>
+
+
+    // reservation made by user
+
+
+    <wsdl> $ {bottom ry}/ cor/ primary/ resource/ wsdl/ reservation </wsdl>
+
+
+    </wsdlchange>
+
+
+    <wsdlchange>
+
+
+    //reservation made on airline D
+
+
+    <wsdl> $ { bottomry } / cor / primary/ resource/ wsdl/ reservation on airline
+    d. wsdl </ wsdl>
+
+
+    </wsdlchange>
+
+
+    <wsdlchange>
+
+
+    // reservation by airline F
+
+
+    <wsdl> $ {bottomry}/ cor/ primary/ resources/ wsdl / reservation on airline f
+    wsdl </wsdl>
+
+
+    </wsdlchange>
+
+
+    </wsdlchanges>
+
+
+    </ configure>
+
+
+    <achieve>
+
+
+    <achieve wsdl2java </achieve>
+
+
+    </achieve>
+
+
+    </ carry out>
+
+
+    <plugin>
+
+
+    Step two: Configure Camel CXF end points
+
+
+    Here is where you are going to need to define the end points for your code. The
+    end points are going to be used in the routes that you use for Camel.
+
+
+    You need to remember though that the interface that you are using is going to
+    need to be generated by the end point that you have already put in place.
+
+
+    Camel cxf end point will be the default end point in your code so that you can
+    get XML in its raw form. You will need to enable the validation so that you can
+    validate the requests that come in through XSD in the WSDL so that you can reduce
+    time that needs to be invested into the validation.
+
+
+    Example
+
+
+    CODE:
+
+
+    // end point for the reservation made on airline D
+
+
+    <cxf: endpoint number = endpointairlineD
+
+
+    URL = “http:// nationalhost: 9898/ reservation made” servicegenre = “mor. Small.
+    Rira. Recall. airlineDquote”
+
+
+    Wsdladdress = “wdsl/ reservation for airline d wsdl”>
+
+
+    <cxf: ability>
+
+
+    <enter key = informationinput” number = “pay” / >
+
+
+    </ cxf: ability>
+
+
+    </ cxf: cxfend>
+
+
+    // end point for the reservation made on airline F
+
+
+    <cxf: endpoint number = endpointairlineF
+
+
+    URL = “http:// nationalhost: 9898/ reservation made” servicegenre = “mor. Small.
+    Rira. Recall. airlineFquote”
+
+
+    Wsdladdress = “wdsl/ reservation for airline f wsdl”>
+
+
+    <cxf: ability>
+
+
+    <enter key = informationinput” number = “pay” / >
+
+
+    </ cxf: ability>
+
+
+    </ cxf: cxfend>
+
+
+    As for the explanation of the rest of the steps:
+
+
+    Step three is so you can make the proper routes with the use of multicast.
+
+
+    Step four lets you see the messages as they go through the system.
+
+
+    Step five is where you can write your messages by using XSLT.
+
+
+    Step six uses wiretap.
+
+
+    Step seven will create the context for XML.
+
+
+    Finally, step eight will execute the code you have written.
+
+
+    Chapter 4:
+
+
+    Orthogonality
+
+
+    Using orthogonality is going to make it easier to maintain your program’s software
+    therefore making it easier to understand for your users.
+
+
+    Orthogonality comes from the Greek word orthogonios which literally means “right
+    angled”. This is normally a word that is used when you are talking about the difference
+    between a set of dimensions.
+
+
+    As you look at a graph, you are going to notice that an object is going to move
+    along the x axis but only if it is occupying a space of three dimensions.
+
+
+    The coordinates are not going to change. But, if you change the dimension of one
+    of the coordinates, you are going to need to change the other dimension because
+    there cannot be side effects on other dimensions just because you changed one.
+
+
+    That is why orthogonality is used for describing software designs that are modular
+    and maintainable as you think about the system in a multi-dimensional space.
+
+
+    Orthogonality is going to be what assists a developer to make sure that the changes
+    are not going to have side effects on other parts of the system.
+
+
+    Dimensions of Log4j
+
+
+    When you use logging, you are doing nothing more than using a fancy version of
+    the println() function that you use in Java, but Log4j is going to have a package
+    that is going to change the mechanics of how the Java platform is going to respond.
+
+
+    Not only that: it also allows developers to do different things such as:
+
+
+    - Creating new layouts so that events for logging are defined by a string.
+
+
+    - Appenders are going to be logged differently. This is not limited to consoles
+    but also to locations of networks, logs for operating systems, and more.
+
+
+    - Control will be centrally located depending on how much information has to be
+    logged.
+
+
+    - There are now layers for things like debug and errors.
+
+
+    Log4j includes other features that you can explore as you work with Java.
+
+
+    Log4j types considered like aspects'
+  toc: []
+  trans: "\nApache Camel 将生成基于 Java 的 DSL 代码，以便能够按照预期的方式对集成层进行路由和配置。\n\n继续我们的航空公司示例，你将通过门户看到客户将通过起始位置发送请求，并选出他们偏好使用的航空公司。从那里开始，你在网站上编写的代码将返回他们正在寻找的航空公司和目的地信息，以便他们比较价格和航空公司。\n\
+    \n如果他们已经决定了想使用哪家航空公司，他们将使用预订服务来接受根据他们输入的偏好所发送给他们的报价。\n\n需要为处理器（processors）编写 Java\
+    \ 代码，以确保客户所经过的路由不会受到网站的影响。\n\n# 术语\n\nApache Camel 中的路由（route）是一系列处理器链，消息在两个点之间通过该链进行传输。默认路由运行在端点（endpoints）之间。消息将保留在一个称为交换（exchange）的组件中。\n\
+    \nCamel 将消息从 A 点移动到 B 点所需的运行环境是 Camel 上文（Camel Context）。\n\n## Camel SOA 的组件\n\
+    \n- **CXF 端点**: Apache CXF 将用于 Web 服务及其实现。在配置正在使用的 Web 服务时将使用 CXF 组件，并帮助确定它们将采取哪条路由。\n\
+    - **Camel Bean**: 使用 JavaBeans 的组件。在设置具有需要遵循步骤的自定义处理过程时将使用该 Bean。\n- **Camel Direct**:\
+    \ 两个路由将通过同步调用连接。\n- **Camel XSLT**: XSLT 表将通过 Spring 资源加载技术加载。该组件将用于处理来自 Web 服务器的请求和响应转换。\n\
+    - **Camel Multicast EIP**: 该 EIP 模式将消息发送到需要处理的不同地方。从这里你可以使用多播（multic）发送请求。\n-\
+    \ **Camel Aggregator EIP**: 该模式将具有相似消息的两个不同结果合并为一条消息发送给用户。聚合器（aggregator）将合并响应，以免客户端被大量信息淹没。\n\
+    - **Camel WireTap EIP**: 通过电线抽吸（wiretap），你可以在消息通过系统到达用户的过程中对其进行检查。该 EIP 将在合适的点记录消息。\n\
+    \n# Web 接口\n\n当你查看源代码时，WSDL 文件将与 Web 服务接口中的 XML 架构绑定。\n\n实现 SOA 层将将使用以下八个步骤。\n\
+    \n### 第一步：为 WSDL 生成 Java 类型\n\n你将使用与 Maven 配合工作的 `cxf codegen` 插件，以及 `wsdl2java`\
+    \ 工具，该工具将帮助为你在源代码中找到的不同类型的 WSDL 生成所需的 Java 代码。\n\n为了执行此代码，你将使用命令：`mvn generate\
+    \ sources code`。\n\n从这里开始，CSF 将生成所需的代码，并将制品放置到其所属的正确目录。从那里，可以使用 Maven 构建你将使用的制品件。\n\
+    \n#### 示例\n\n```xml\n<plugin>\n    <id for group>org.Camel.Cxf</id for group>\n\
+    \    <id for the object>cxf codegen plugin</id for the object>\n    <version>2.8.0</version>\n\
+    \    <carry out the code>\n        <number>create source</number>\n        <series>create\
+    \ source</series>\n        <configure>\n            <origin>${bottomry}/cor/primary/java</origin>\n\
+    \            <Wsdlchange>\n                // 用户进行的预订\n                <wsdl>${bottomry}/cor/primary/resource/wsdl/reservation</wsdl>\n\
+    \            </Wsdlchange>\n            <wsdlchange>\n                // 在 D 航空公司上进行的预订\n\
+    \                <wsdl>${bottomry}/cor/primary/resource/wsdl/reservation on airline\
+    \ d.wsdl</wsdl>\n            </wsdlchange>\n            <wsdlchange>\n       \
+    \         // F 航空公司进行的预订\n                <wsdl>${bottomry}/cor/primary/resources/wsdl/reservation\
+    \ on airline f wsdl</wsdl>\n            </wsdlchange>\n        </configure>\n\
+    \        <achieve>\n            <achieve wsdl2java</achieve>\n        </achieve>\n\
+    \    </carry out>\n</plugin>\n```\n\n### 第二步：配置 Camel CXF 端点\n\n在这里，你将为你的代码定义端点。这些端点将用于你为\
+    \ Camel 使用的路由中。\n\n但是，请记住，你正在使用的接口需要由你已经放置的端点生成。\n\nCamel cxf 端点将是你代码中的默认端点，以便你获取原始格式的\
+    \ XML。你需要启用验证，以便能够通过 WSDL 中的 XSD 验证传入的请求，从而减少在验证上投入的时间。\n\n#### 示例代码：\n\n```xml\n\
+    // 在 D 航空公司上进行的预订的端点\n<cxf:endpoint number=endpointairlineD\nURL=\"http://localhost:9898/reservation\
+    \ made\" servicegenre=\"mor.Small.Rira.Recall.airlineDquote\"\nwsdladdress=\"\
+    wdsl/reservation for airline d wsdl\">\n    <cxf:ability>\n        <enter key=\"\
+    informationinput\" number=\"pay\"/>\n    </cxf:ability>\n</cxf:endpoint>\n\n//\
+    \ 在 F 航空公司上进行的预订的端点\n<cxf:endpoint number=endpointF\nURL=\"http://localhost:9898/reservation\
+    \ made\" servicegenre=\"mor.Small.Rira.Recall.airlineF\"\nwsdladdress=\"wdsl/reservation\
+    \ for airline d wsdl\">\n    <cxf:ability>\n        <enter key=\"informationinput\"\
+    \ number=\"pay\"/>\n    </cxf:ability>\n</cxf:endpoint>\n```\n\n其余步骤解释如下：\n- 第三步是使用多播（multicast）创建路由。\n\
+    - 第四步允许你在消息通过系统时查看它们。\n- 第五步是使用 XSLT 编写消息。\n- 第六步使用电线抽吸（wiretap）。\n- 第七步将为 XML\
+    \ 创建上下文。\n- 最后，第八步将执行你的代码。\n\n# 第 4 章：正交性\n\n使用正交性将使你的程序更易维护，从而更容易理解。正交性源于希腊语\
+    \ `orthogonios`，字面意思是“直角”。\n\n当你查看一个图表时，你会注意到对象将沿着 `x` 轴移动，前提是它占据了三维空间。坐标不会改变。但是，如果你改变了其中一个坐标的维度，你就需要更改另一个维度，因为不能因为改变一个维度就对其他维度产生副作用。这就是为什么在以多维空间思考系统时，正交性被用于描述模块化且可维护的软件设计。\n\
+    \n## Log4j 的维度\n\n当你使用日志时，你只是在使用你在 Java 中使用的 `println()` 函数的高级版本，但 Log4j 将拥有一个改变\
+    \ Java 平台响应机制的包。\n\n不仅如此，它还允许开发者执行不同的事情：\n"
+- fmt: '
+
+    The appender has levels and there are three aspects of it that you are going to
+    see on the independent dimensions of the program.
+
+
+    - `Level`: the events that are logged by the program
+
+    - `Appender`: the data that is displayed or stored
+
+    - `Layout`: how the data is presented to the user.
+
+
+    You have to look at the aspects all together instead of individually and they
+    have to be on a three-dimensional space. Every point for the aspect is going to
+    be part of the space that is going to configure the system the way that it is
+    supposed to be.
+
+
+    ### Example:
+
+
+    ```
+
+    // logging started!
+
+
+    Logging logger = logging . the logging aspect (“No”) ;
+
+
+    Appender appended = old the appender for the system() ;
+
+
+    Layout display = old gor camel log4j CTCTdisplay()
+
+
+    Appender.Howdisplayed (displayed) ;
+
+
+    Logger.Showappender (appender) ;
+
+
+    Logger.Howhigh (information on how high it is) ;
+
+
+    // logging started!
+
+
+    Logger.Alert (“ You shall not pass!”) ;
+
+    ```
+
+
+    The code in the example is an orthogonal code and it is going to enable you to
+    change the layout, appender, and level of the aspect without ever causing your
+    code to break therefore it continues to be functional.
+
+
+    The design for orthogonal code is going to have points that are going to have
+    enough space on the script that is going to make it valid so that you can configure
+    the system.
+
+
+    The orthogonality is a concept that is powerful and is going to establish a mental
+    model that is going to be somewhat simple to understand even though you are using
+    it for applications that are more complex.
+
+
+    If you want a situation that is going to be useful to use orthogonality, then
+    you are going to use it when you are testing the code’s functionality and levels
+    so that you can fix the code that is not going to work with the appender or the
+    layout.
+
+
+    The use of orthogonality is going to make sure that there are no surprises with
+    your code and that they all work the same on each level. This is going to be true
+    when you are using `log4j` and other tools and utilities that are designed by
+    third parties.
+
+
+    Thanks to the complexity of the orthogonality, program’s software is going to
+    be somewhat like the dimensions that you use when you are working with geometry.
+
+
+    ## Code and designing it for orthogonality
+
+
+    Now that you know what orthogonality is, you are going to need to know how to
+    design and code it so that you can use it in your programming. The whole point
+    behind it is that you need to use abstract concepts.
+
+
+    Every dimension that you see in an orthogonal system is going to have one aspect
+    for each program. Some dimensions are going to have types that are going to be
+    one of the most common solutions for using abstract types.
+
+
+    Every type will have a dimension that is going to represent the points that are
+    given inside of the dimension. Abstract types are not going to be directly tied
+    into instantiated or concrete classes. There are some classes that you do not
+    need to use. Like you do not need to use concrete classes whenever the type you
+    are using is just a markup and not showing any encapsulated behavior.
+
+
+    However, you can just look at the type to see if it represents the dimension itself
+    and if it is predefined for a set of instances that are fixed in place. It will
+    even work for variables that are static.
+
+
+    A general rule of thumb to remember when you are working with orthogonality is
+    to try and avoid the references that are going to be for concrete types that will
+    represent a different aspect for the program that you are using.
+
+
+    Keeping to this rule is going to allow you to write code that is more generic
+    code that is going to work in all instances that you are going to be putting it
+    into. The code can have references to properties just as long as they are part
+    of the interface that is used when defining the dimension.
+
+
+    For example, if you look at the aspect type of `layout` that defines a different
+    method, then this method is going to give you a `Boolean` that will indicate if
+    the layout has the ability to be rendered with stack traces or not.
+
+
+    At the point that an appender uses the layout, it is going to be fine to write
+    code that is conditional for the method that you are using. That way that the
+    appender for the file will print the exception of stack traces that are going
+    to use a layout that cannot normally handle exceptions.
+
+
+    The layout implementation is going to refer to when you are using a level in a
+    particular that is going to be used when you are logging events.
+
+
+    For example, if you want to log a level error in a layout that is using `HTML`,
+    then you can wrap the log message in tags. But, the error is going to define the
+    level you are working with by representing the dimension.
+
+
+    References can still be avoided based on implementation classes that you use with
+    other dimensions. So, if you use a `layout` then you are not going to need to
+    know what sort of layout you are using.
+
+
+    ## Violating orthogonality
+
+
+    `Log4j` is one of the best examples that you are going to have for orthogonality.
+    But, some parts of `log4j` are going to violate the rules in orthogonality. There
+    is an appender that is going to log the relational database. Since there is a
+    scale and popularity issue with the database, it makes it easier to search for
+    the logs with `SQL`.
+
+
+    There is an appender that is based on fixing the problem that you will run into
+    when it comes to logging a database that is rational by turning the events that
+    are logged into the insert statements with `SQL`. Therefore, the problem with
+    the `pattern layout` is solved.
+
+
+    The `patternlayout` is going to have a template that is going to give the user
+    flexibility that is going to configure the strings to be created each time that
+    an event is logged. The template will define the string and all the variables
+    that are included in it.
+
+
+    ### Example:
+
+
+    ```
+
+    Pattern for the string =
+
+    “%d [ @ %a  {ss:mm:HH yyy MM dd} no %l] %l] ;
+
+
+    Layout display =
+
+    Old gor. Camel. Log4j layout for the pattern (pattern) ;
+
+
+    Appender. Layout setup (display) ;
+
+    ```
+
+
+    The appender will use the layout with the pattern to define the statement.
+
+
+    ### Example:
+
+
+    ```
+
+    National untrue holdSql (string d) {
+
+    Statement for sql = d ;
+
+    if (display() == false) {
+
+    This display (old layout for the pattern (d)) ;
+
+    }
+
+    else {
+
+    (( layout for the pattern) pattern()) conversion (d) ;
+
+    }
+
+    ```
+
+
+    There is an implicit assumption that is built into the code for the set that you
+    are using in this example that will define the appender. When looking at the orthogonality
+    code, this is going to point to a lot of different aspects of a three-dimensional
+    cube that is going to show the layout with the `patternlayout` that is not going
+    to be represented in a system configuration that is valid.
+
+
+    Any attempts that are put into place for the `SQL` are going to have to use a
+    layout that is different so that there is a different exception being used for
+    the class cast.
+
+
+    If that is not enough reason for you, then another reason is that the appender’s
+    design is quite questionable. When you use the layout for the pattern, the template
+    will be bypassed. But this is not always a good thing because the `JDBC` will
+    compile all of the statements that were prepared previously and this is going
+    to end up leading to improvements in the performance that are not going to be
+    easy to fix. The appropriate approach for this though is to control what your
+    layout does by overriding it.
+
+
+    ### Example:
+
+
+    ```
+
+    National open display set (layout display) {
+
+    if ( display instanceof layout pattern) {
+
+    Superb layout setup (display) ;
+
+    }
+
+    else {
+
+    Set a new argument that is not valid (“ layout is not going to work”) ;
+
+    }
+
+    }
+
+    ```
+
+
+    Sadly, you are going to find problems with this example as well. There is a runtime
+    exception that is going to make the application using this method unprepared to
+    catch the mistake. Essentially, you are going to use the layout method, but it
+    is not going to have a runtime exception that is going to work with it and the
+    guarantee is going to be weakened.
+
+    '
+  raw: 'The appender has levels and there are three aspects of it that you are going
+    to see on the independent dimensions of the program.
+
+
+    - Level: the events that are logged by the program
+
+
+    - Appender: the data that is displayed or stored
+
+
+    - Layout: how the data is presented to the user.
+
+
+    You have to look at the aspects all together instead of individually and they
+    have to be on a three-dimensional space. Every point for the aspect is going to
+    be part of the space that is going to configure the system the way that it is
+    supposed to be.
+
+
+    Example:
+
+
+    CODE:
+
+
+    // logging started!
+
+
+    Logging logger = logging . the logging aspect (“No”) ;
+
+
+    Appender appended = old the appender for the system() ;
+
+
+    Layout display = old gor camel log4j CTCTdisplay()
+
+
+    Appender. Howdisplayed (displayed) ;
+
+
+    Logger. Showappender (appender) ;
+
+
+    Logger. Howhigh (information on how high it is) ;
+
+
+    // logging started!
+
+
+    Logger. Alert (“ You shall not pass!”) ;
+
+
+    The code in the example is an orthogonal code and it is going to enable you to
+    change the layout, appender, and level of the aspect without ever causing your
+    code to break therefore it continues to be functional.
+
+
+    The design for orthogonal code is going to have points that are going to have
+    enough space on the script that is going to make it valid so that you can configure
+    the system.
+
+
+    The orthogonality is a concept that is powerful and is going to establish a mental
+    model that is going to be somewhat simple to understand even though you are using
+    it for applications that are more complex.
+
+
+    If you want a situation that is going to be useful to use orthogonality, then
+    you are going to use it when you are testing the code’s functionality and levels
+    so that you can fix the code that is not going to work with the appender or the
+    layout.
+
+
+    The use of orthogonality is going to make sure that there are no surprises with
+    your code and that they all work the same on each level. This is going to be true
+    when you are using log4j and other tools and utilities that are designed by third
+    parties.
+
+
+    Thanks to the complexity of the orthogonality, program’s software is going to
+    be somewhat like the dimensions that you use when you are working with geometry.
+
+
+    Code and designing it for orthogonality
+
+
+    Now that you know what orthogonality is, you are going to need to know how to
+    design and code it so that you can use it in your programming. The whole point
+    behind it is that you need to use abstract concepts.
+
+
+    Every dimension that you see in an orthogonal system is going to have one aspect
+    for each program.  Some dimensions are going to have types that are going to be
+    one of the most common solutions for using abstract types.
+
+
+    Every type will have a dimension that is going to represent the points that are
+    given inside of the dimension. Abstract types are not going to be directly tied
+    into instantiated or concrete classes.
+
+
+    There are some classes that you do not need to use. Like you do not need to use
+    concrete classes whenever the type you are using is just a markup and not showing
+    any encapsulated behavior.
+
+
+    However, you can just look at the type to see if it represents the dimension itself
+    and if it is predefined for a set of instances that are fixed in place. It will
+    even work for variables that are static.
+
+
+    A general rule of thumb to remember when you are working with orthogonality is
+    to try and avoid the references that are going to be for concrete types that will
+    represent a different aspect for the program that you are using.
+
+
+    Keeping to this rule is going to allow you to write code that is more generic
+    code that is going to work in all instances that you are going to be putting it
+    into.
+
+
+    The code can have references to properties just as long as they are part of the
+    interface that is used when defining the dimension.
+
+
+    For example, if you look at the aspect type of layout that defines a different
+    method, then this method is going to give you a Boolean that will indicate if
+    the layout has the ability to be rendered with stack traces or not.
+
+
+    At the point that an appender uses the layout, it is going to be fine to write
+    code that is conditional for the method that you are using. That way that the
+    appender for the file will print the exception of stack traces that are going
+    to use a layout that cannot normally handle exceptions.
+
+
+    The layout implementation is going to refer to when you are using a level in particular
+    that is going to be used when you are logging events.
+
+
+    For example, if you want to log a level error in a layout that is using HTML,
+    then you can wrap the log message in tags. But, the error is going to define the
+    level you are working with by representing the dimension.
+
+
+    References can still be avoided based on implementation classes that you use with
+    other dimensions. So, if you use a layout then you are not going to need to know
+    what sort of layout you are using.
+
+
+    Violating orthogonality
+
+
+    Log4j is one of the best examples that you are going to have for orthogonality.
+    But, some parts of log4j are going to violate the rules in orthogonality.
+
+
+    There is an appender that is going to log the relational database. Since there
+    is a scale and popularity issue with the database, it makes it easier to search
+    for the logs with SQL.
+
+
+    There is an appender that is based on fixing the problem that you will run into
+    when it comes to logging a database that is rational by turning the events that
+    are logged into the insert statements with SQL. Therefore, the problem with the
+    pattern layout is solved.
+
+
+    The patternlayout is going to have a template that is going to give the user flexibility
+    that is going to configure the strings to be created each time that an event is
+    logged. The template will define the string and all the variables that are included
+    in it.
+
+
+    Example:
+
+
+    CODE:
+
+
+    Pattern for the string =
+
+
+    “%d [ @ %a  {ss:mm:HH yyy MM dd} no %l] %l%j” ;
+
+
+    Layout display =
+
+
+    Old gor. Camel. Log4j layout for the pattern (pattern) ;
+
+
+    Appender. Layout setup (display) ;
+
+
+    The appender will use the layout with the pattern that is going to define the
+    statement.
+
+
+    Example:
+
+
+    CODE:
+
+
+    National untrue holdSql (string d) {
+
+
+    Statement for sql = d ;
+
+
+    if (display() == false) {
+
+
+    This display (old layout for the pattern (d)) ;
+
+
+    }
+
+
+    else {
+
+
+    (( layout for the pattern) pattern()) conversion pattern (d) ;
+
+
+    }
+
+
+    }
+
+
+    There is an implicit assumption that is built into the code for the set that you
+    are using in this example that will define the appender. When looking at the orthogonality
+    code, this is going to point to a lot of different aspects of a three-dimensional
+    cube that is going to show the layout with the patternlayout that is not going
+    to be represented in a system configuration that is valid.
+
+
+    Any attempts that are put into place for the SQL are going to have to use a layout
+    that is different so that there is a different exception being used for the class
+    cast.
+
+
+    If that is not enough reason for you, then another reason is that the appender’s
+    design is quite questionable. When you use the layout for the pattern, the template
+    will be bypassed.
+
+
+    But this is not always a good thing because the JDBC will compile all of the statements
+    that were prepared previously and this is going to end up leading to improvements
+    in the performance that are not going to be easy to fix. The appropriate approach
+    for this though is to control what your layout does by overriding it.
+
+
+    Example:
+
+
+    CODE:
+
+
+    National open display set (layout display) {
+
+
+    if ( display instanceof layout pattern) {
+
+
+    Superb layout setup (display) ;
+
+
+    }
+
+
+    else {
+
+
+    Set a new argument that is not valid (“ layout is not going to work”) ;
+
+
+    }
+
+
+    }
+
+
+    Sadly, you are going to find problems with this example as well. There is a runtime
+    exception that is going to make the application using this method unprepared to
+    catch the mistake. Essentially, you are going to use the layout method, but it
+    is not going to have a runtime exception that is going to work with it and the
+    guarantee is going to be weakened.'
+  toc: []
+  trans: '
+
+    Appender（输出器）具有级别，你将在程序的独立维度上看到关于它的三个方面：
+
+
+    - `Level`（级别）：程序记录的事件。
+
+    - `Appender`（输出器）：显示或存储的数据。
+
+    - `Layout`（布局）：数据呈现给用户的方式。
+
+
+    你必须整体观察这些方面而不是单独看，它们必须处于一个三维空间中。每个方面的点都将成为空间的一部分，按照预期的方式配置系统。
+
+
+    ### 示例：
+
+
+    ```
+
+    // logging started!
+
+
+    Logging logger = logging . the logging aspect (“No”) ;
+
+
+    Appender appended = old the appender for the system() ;
+
+
+    Layout display = old gor camel log4j CTCTdisplay()
+
+
+    Appender.Howdisplayed (displayed) ;
+
+
+    Logger.Showappender (appender) ;
+
+
+    Logger.Howhigh (information on how high it is) ;
+
+
+    // logging started!
+
+
+    Logger.Alert (“ You shall not pass!”) ;
+
+    ```
+
+
+    示例中的代码是正交代码（orthogonal code），它允许你在不会导致代码崩溃的情况下更改层面的布局、输出器和级别，因此它能够保持功能性。
+
+
+    正交代码的设计将在脚本上拥有足够的空间来使其有效，从而让你能够配置系统。
+
+
+    正交性是一个强大的概念，它能建立一个心理模型，尽管你将其用于更复杂的应用程序，但它仍然是易于理解的。如果你想找一个使用正交性的实用场景，那么你可以在测试代码的功能和级别时使用它，以便修复那些无法与输出器或布局正常工作的代码。
+
+
+    正交性的使用可以确保你的代码不会出现意外，并确保它们在每个级别上工作方式相同。当你使用 `log4j` 以及其他第三方设计的工具和实用程序时，情况将会如此。
+
+
+    得益于正交性的复杂性，程序的软件在某种程度上类似于你在处理几何图形时使用的维度。
+
+
+    ## 代码及其面向正交性的设计
+
+
+    现在你已经了解了什么是正交性，你将需要如何如何对其设计和编码，以便在编程中使用它。其核心点在于你需要使用抽象概念。
+
+
+    你在正交系统中看到的每个维度对于每个程序都有一个方面。某些维度拥有的类型，这些类型是使用抽象类型最常见的解决方案之一。
+
+
+    每个类型都将有一个维度代表该维度内部给出的点。抽象类型不会直接与实例化类或具体类绑定。有些类是你不需要使用的。就像当你使用的类型仅仅是一个标记而没有显示任何封装行为时，你不需要使用具体类。
+
+
+    然而，你只需要查看该类型以判断它是否代表维度本身，以及它是否为一组固定的实例预先定义。它甚至适用于静态变量。
+
+
+    在处理正交性时，需要记住的一个通用规则是：尽量避免引用具体类型，因为这些类型代表了你所用程序的不同方面。
+
+
+    遵循这一规则将允许你编写更通用的代码，这些代码可以在你将其放入任何实例中运行。只要属性是定义维度时使用的接口的一部分，代码就可以包含对属性的引用。
+
+
+    例如，如果你查看 `layout` 的方面类型，它定义了一个不同的方法，那么该方法将给你一个 `Boolean` 值，指示该布局是否有能力带堆栈跟踪（stack
+    traces）渲染。
+
+
+    在输出器使用布局时，针对你正在使用的方法编写条件代码是没问题的。这样，文件的输出器就可以打印使用通常无法处理异常的布局的堆栈跟踪异常。
+
+
+    布局的实现将引用你在记录事件时在特定特定下使用的级别。
+
+
+    例如，如果你想在使用 `HTML` 的布局中记录 error 级别的日志，你可以将日志消息封装在标签中。但是，错误将通过代表维度来定义你正在工作的级别。
+
+
+    仍然可以根据与其他维度配合使用的实现类来避免引用。因此，如果你使用 `layout`，你就不需要知道你正在使用的是哪种布局。
+
+
+    ## 违反正交性
+
+
+    `Log4j` 是你拥的正交性的最佳示例之一。但 `log4j` 的某些部分将违反正交性规则。有一个输出器会记录关系型数据库。由于数据库存在规模和流行度问题，这使得使用
+    `SQL` 搜索日志更容易。
+
+
+    有一个输出器旨在解决你在记录关系型数据库时会遇到的问题，通过将记录的事件转换为 `SQL` 插入语句。因此，`pattern layout`（模式布局）的问题得到了解决。
+
+
+    `patternlayout` 将有一个模板，为用户提供灵活性来配置每次记录事件时创建的字符串。模板将定义字符串以及其中包含的所有变量。
+
+
+    ### 示例：
+
+
+    ```
+
+    Pattern for the string =
+
+    “%d [ @ %a  {ss:mm:HH yyy MM dd} no %l] %l] ;
+
+
+    Layout display =
+
+    Old gor. Log4j layout for the pattern (pattern) ;
+
+
+    Appender. Layout setup (display) ;
+
+    ```
+
+
+    输出器将使用模式布局定义语句。
+
+
+    ### 示例：
+
+
+    ```
+
+    National untrue holdSql (string d) {
+
+    Statement for sql = d ;
+
+    if (display() == false) {
+
+    This display (old layout for the pattern (d)) ;
+
+    }
+
+    else {
+
+    (( layout for the pattern) pattern()) conversion (d) ;
+
+    }
+
+    ```
+
+
+    示例代码中构建了一个隐含假设，该假设定义了输出器。在观察正交代码时，这将指向三维立方体的许多不同方面，显示在有效系统配置中显示的 `patternlayout`。
+
+
+    任何针对 `SQL` 的尝试都必须使用不同的布局，以便在类转换时产生不同的异常。
+
+
+    如果这还不能说服你，另一个原因是输出器的设计非常有问题。当你使用模式布局时，模板会被跳过。但这并不总是好事，因为 `JDBC` 会编译之前准备的所有语句，这会导致难以修复的性能问题。不过，正确的方法是通过重写来控制布局的行为。
+
+
+    ### 示例：
+
+
+    ```
+
+    National open display set (layout display) {
+
+    if ( display instanceof layout pattern) {
+
+    Superb layout setup (display) ;
+
+    }
+
+    else {
+
+    Set a new argument that is not valid (“ layout is not going to work”) ;
+
+    }
+
+    }
+
+    ```
+
+
+    遗憾的是，你也会在这个示例中发现问题。存在一个运行时异常会导致使用该方法的应用程序准备好捕获错误。从本质上，你将使用布局方法，但它没有可以配合工作的运行时异常，保证也被削弱了。
+
+
+    '
+- fmt: '
+
+    If you look at the preconditions that are set up, then the layout is going to
+    need stronger preconditions so that the method can override it. If you do not
+    do it that way, then you are going to violate the object-oriented core that is
+    going to be meant just for the principle.
+
+
+    ### Workaround
+
+
+    Since there is no really easy solution for fixing the appender, you are going
+    to end up finding that there are deeper problems that you have to deal with. Because
+    of this, the level of abstraction that you are going to use is going to happen
+    when you are designing the abstract types for the core which are ultimately going
+    to be fine-tuned.
+
+
+    The core method is defined by the layout and how it is formatted. The method will
+    end up returning a string to you which is going to have a database that is based
+    on tuples and not strings.
+
+
+    A solution that you can use is one that is going to be based on a data structure
+    that is more sophisticated for the return format. You will need to imply the overhead
+    in any situations that you are going to want a string to be returned to you. Also,
+    the objects that are intermediate are going to be used when created before dealing
+    with the garbage collected performance that is working on the framework for logging.
+
+
+    When you have more than one return type that is sophisticated, you are also going
+    to make log4j more difficult for you to understand. The ultimate goal is to make
+    everything as easy to understand as possible.
+
+
+    Yet another solution is to use abstracts that are layered and involves using two
+    abstract types that will end up extending the appender. The only appender that
+    you should be using is the `JDBC` appender because most other appenders are going
+    to have implementations that have to be implemented so that they work the way
+    that they need to.
+
+
+    The biggest drawback that you are going to see with this one is that the complexity
+    is going to increase yet again. Not only that, but the developers of the appender
+    will need to make sure that they have all the information before they make the
+    decisions that are needed to be made for the level of abstraction that they are
+    going to use.
+
+
+    ## Chapter 5: JavaFX Applications That Can Be Used in Multiple Environments
+
+
+    When you are using version 2.0.2 of `JavaFX` along with `SDK` you are going to
+    be allowed to deploy applications inside of multiple environments along with applications
+    that are going to stand alone thanks to Java web start or a web page that is embedded.
+
+
+    ### Preparing JPadFX for deployment
+
+
+    There are source files that you are going to have to use with the `JPadFX` application.
+    After all of the files have been placed into the directory that you are using,
+    then you are going to be allowed to execute the commands that you put into the
+    application.
+
+
+    Example:
+
+
+    ```
+
+    Javae – pc “C: \ project source \ oracle \ javafx 2.0 DKS\ tr\ library\ trxfj.
+    Glass” ; . -q in jpadfx. Java
+
+    ```
+
+
+    Please note that this is only going to work if you have version 2.0.2 installed
+    on your computer.
+
+
+    ### Deploying JPadFx as standalone applications
+
+
+    With the version that you should have downloaded on your computer, you are going
+    to have a tool that is going to be for inserting your commands so that the application
+    is deployed almost automatically. When you look at it, there is a completely different
+    directory that is used for this version of the program.
+
+
+    After the source files, have been compiled, then you can use the `javafxpackager`
+    so that you can deal with the class files along with the launcher into a new file.
+
+
+    Example:
+
+
+    ```
+
+    Javafxpackager makeglass applicationtype jpadfx directory crs in directory outside
+    in inside file jpadfx. Glass. D
+
+    ```
+
+
+    #### Terminology
+
+
+    - `makeglass`: are going to tell the program to create a new file in that directory.
+
+    - `Applicationtype`: the main class is going to be identified with the launcher
+
+    - `Dircrs`: the directory will be identified.
+
+    - `In directory`: the name of the file will be identified.
+
+    - `-d`: is going to tell you what the output is going to be and where the error
+    message is going to be displayed.
+
+
+    Should the commands be successful then you are going to be introduced to a new
+    function. The simplest way to deal with this is to use the `jar` tool. But, that
+    is only going to work if your current directory has the proper tools and the subdirectory
+    tied to it so that the command can be carried out and stored in the directory.
+
+
+    Example:
+
+
+    ```
+
+    Glass fu in \ jpadfx. Glass icon.png
+
+    ```
+
+
+    It is at this point that the stand alone will be run with `Jpadfx` so that you
+    can test the file’s veracity. But you are going to need to switch out of the directory
+    and into a new directory that has the correct command that needs to be executed.
+
+
+    Example:
+
+
+    ```
+
+    Java -pc “C: \ project source\ oracle\ javafx 2.0 DKS\ tr \ library \ jfxrt. Glass”
+    ; . -glass jpadfx.glass
+
+    ```
+
+
+    This command will add the class paths to the correct files so that the runtime
+    is loaded correctly.
+
+
+    ### Deploying JPadFX in a web page
+
+
+    The `javafxpackager` can be used in creating HTML pages along with deploying them
+    with the correct files so that scenarios can be handled when it comes to embedding
+    the applications in a web page or running it with Java web start.
+
+
+    Example:
+
+
+    ```
+
+    javafxpackager -execute -in directory in -in file jpadfx -how wide 500 -how tall
+    500 – directory crs in crs source jpadfx.glass -class of application jpadfx -title
+    “jpad fx” -name “jpadfx is equal to jpad” -manager “Timothy Mason” – d
+
+    ```
+
+
+    #### Terminologies explained:
+
+
+    - `Execute`: the packager will be executed with HTML and JNLP files
+
+    - `Directory in`: identifies which directory the file is stored in
+
+    - `Infile`: the file name will be identified
+
+    - `How wide`: the width of the page
+
+    - `How tall`: how tall the page is
+
+    - `Directory crs`: where the file is coming from
+
+    - `Crs source`: the file is identified
+
+
+    ## Chapter 6: Controlling the Flow of Java
+
+
+    Any programming that you have done before this point is going to be known as sequential
+    programming which basically means that the code was read from top to bottom, every
+    line being read the way it is written. However, not all programs are going to
+    work like that. Some code has to be run but only in the event that a condition
+    has been met. For code, you may want your client to be of a certain age.
+
+
+    This is going to be where you control the flow of how the program operates through
+    conditional logic. Conditional statements are going to use the word if mostly,
+    but there are other words that can be used to create conditional.
+
+
+    ### If statement
+
+
+    The code is going to be executed whenever something happens instead of waiting
+    for something else, which is going to be most common when it comes to programming,
+    therefore the `if` statement was created. An `if` statement is going to look like
+    this:
+
+
+    ```
+
+    if ( statement ) {
+
+    }
+
+    ```
+
+
+    The word `if` is going to be lowerased before your condition is paced in a set
+    of brackets. The curly brackets are going to be used to divide the chunks of code.
+    This code is going to be executed only in the case that the condition has been
+    met.
+
+
+    Example:
+
+
+    ```
+
+    if( client < 18) {
+
+    }
+
+    ```
+
+
+    This condition states that if the client is less than 18. Instead of typing it
+    all out, shorthand is going to be used so that the chunk of code is shorter and
+    easier to read.
+
+
+    Example:
+
+
+    ```
+
+    if( client < 18) {
+
+    // display message
+
+    }
+
+    ```
+
+
+    Therefore, should the client be over 18, the code set in the two sets of curly
+    brackets is going to be jumped over while Java proceeds how it is supposed to.
+    Anything that is in the middle of the curly brackets will be carried out only
+    if the condition has been met.
+
+
+    Another short hand notion is going to be to point the triangle to the right which
+    means greater than.
+
+
+    Example:
+
+
+    ```
+
+    if( client > 18) {
+
+    //display message
+
+    }
+
+    ```
+
+
+    The code is the exact same except that the condition is going to apply to those
+    who are over 18.
+
+
+    ### If … else
+
+
+    Instead of an `if` statement being used, an `if then` statement can be used.
+
+
+    ```
+
+    if( condition_to_test) {
+
+    }
+
+    else {
+
+    }
+
+    ```
+
+    '
+  raw: 'If you look at the preconditions that are set up, then the layout is going
+    to need stronger preconditions so that the method can override it. If you do not
+    do it that way, then you are going to violate the object-oriented core that is
+    going to be meant just for the principle.
+
+
+    Workaround
+
+
+    Since there is no really easy solution for fixing the appender, you are going
+    to end up finding that there are deeper problems that you have to deal with. Because
+    of this, the level of abstraction that you are going to use is going to happen
+    when you are designing the abstract types for the core which are ultimately going
+    to need to be fine-tuned.
+
+
+    The core method is defined by the layout and how it is formatted. The method will
+    end up returning a string to you which is going to have a database that is based
+    on tuples and not strings.
+
+
+    A solution that you can use is one that is going to be based on a data structure
+    that is more sophisticated for the return format. You will need to imply the overhead
+    in any situations that you are going to want a string to be returned to you. Also,
+    the objects that are intermediate are going to be used when created before dealing
+    with the garbage collected performance that is working on the framework for logging.
+
+
+    When you have more than one return type that is sophisticated, you are also going
+    to make log4j more difficult for you to understand. The ultimate goal is to make
+    everything as easy to understand as possible.
+
+
+    Yet another solution is to use abstracts that are layered and involves using two
+    abstract types that will end up extending the appender. The only appender that
+    you should be using is the JDBC appender because most other appenders are going
+    to have implementations that have to be implemented so that they work the way
+    that they need to.
+
+
+    The biggest drawback that you are going to see with this one is that the complexity
+    is going to increase yet again. Not only that, but the developers of the appender
+    will need to make sure that they have all the information before they make the
+    decisions that are needed to be made for the level of abstraction that they are
+    going to use.
+
+
+    Chapter 5:
+
+
+    JavaFX Applications That Can Be Used in Multiple Environments
+
+
+    When you are using version 2.0.2 of JavaFX along with SDK you are going to be
+    allowed to deploy applications inside of multiple environments along with applications
+    that are going to stand alone thanks to Java web start or a web page that is embedded.
+
+
+    Preparing JPadFX for deployment
+
+
+    There are source files that you are going to have to use with the JPadFX application.
+
+
+    After all of the files have been placed into the directory that you are using,
+    then you are going to be allowed to execute the commands that you put into the
+    application.
+
+
+    Example:
+
+
+    CODE:
+
+
+    Javae – pc “C: \ project source \ oracle \ javafx 2.0
+
+
+    DKS\ tr\ library\ trxfj. Glass” ; . -q in jpadfx. Java
+
+
+    Please note that this is only going to work if you have version 2.0.2 installed
+    on your computer.
+
+
+    Deploying JPadFx as standalone applications
+
+
+    With the version that you should have downloaded on your computer, you are going
+    to have a tool that is going to be for inserting your commands so that the application
+    is deployed almost automatically. When you look at it, there is a completely different
+    directory that is used for this version of the program.
+
+
+    After the source files, have been compiled, then you can use the javafxpackager
+    so that you can deal with the class files along with the launcher into a new file.
+
+
+    Example:
+
+
+    Javafxpackager makeglass applicationtype jpadfx directory crs in directory outside
+    in inside file jpadfx. Glass. D
+
+
+    Terminology
+
+
+    - makeglass are going to tell the program to create a new file in that directory.
+
+
+    - Applicationtype: the main class is going to be identified with the launcher
+
+
+    - Dircrs: the directory will be identified.
+
+
+    - In directory: the name of the file will be identified
+
+
+    - -d is going to tell you what the output is going to be and where the error message
+    is going to be displayed.
+
+
+    Should the commands be successful then you are going to be introduced to a new
+    function. The simplest way to deal with this is to use the jar tool. But, that
+    is only going to work if your current directory has the proper tools and the subdirectory
+    tied to it so that the command can be carried out and stored in the directory.
+
+
+    Example:
+
+
+    CODE:
+
+
+    Glass fu
+
+
+    In \ jpadfx. Glass icon.png
+
+
+    It is at this point that the stand alone will be run with Jpadfx so that you can
+    test the file’s veracity. But you are going to need to switch out of the directory
+    and into a new directory that has the correct command that needs to be executed.
+
+
+    Example:
+
+
+    CODE:
+
+
+    Java -pc “C: \ project source\ oracle\ javafx 2.0
+
+
+    DKS\ tr \ library \ jfxrt. Glass” ; . -glass jpadfx.glass
+
+
+    This command will add the class paths to the correct files so that the runtime
+    is loaded correctly.
+
+
+    Deploying JPadFX in a web page
+
+
+    The javafxpackager can be used in creating HTML pages along with deploying them
+    with the correct files so that scenarios can be handled when it comes to embedding
+    the applications in a web page or running it with Java web start.
+
+
+    Example
+
+
+    Javafxpackager -execute -in directory in -in file jpadfx -how wide 500 -how tall
+    500 – directory crs in crs source jpadfx.glass
+
+
+    -class of application jpadfx -title “jpad fx” -name “jpadfx is equal to jpad”
+    -manager “Timothy Mason” – d
+
+
+    Terminologies explained:
+
+
+    - Execute: the packager will be executed with HTML and JNLP files
+
+
+    - Directory in: identifies which directory the file is stored in
+
+
+    - Infile: the file name will be identified
+
+
+    - How wide: the width of the page
+
+
+    - How high: how tall the page is
+
+
+    - Directory crs: where the file is coming from
+
+
+    - Crs source: the file is identified
+
+
+    Chapter 6:
+
+
+    Controlling the Flow of Java
+
+
+    Any programming that you have done before this point is going to be known as sequential
+    programming which basically means that the code you have entered was read from
+    top to bottom, every line being read the way that it is written. However, not
+    all programs are going to work like that.
+
+
+    Some code has to be run but only in the event that a condition has been met. For
+    code, you may want your client to be of a certain age.
+
+
+    This is going to be where you will control the flow of how the program operates
+    through conditional logic.
+
+
+    Conditional statements are going to use the word if mostly, but there are other
+    words that can be used to create conditional statements.
+
+
+    If statement
+
+
+    The code is going to be executed whenever something happens instead of waiting
+    for something else, which is going to be most common when it comes to programming,
+    therefore the if statement was created. An if statement is going to look like
+    this:
+
+
+    CODE:
+
+
+    if ( statement ) {
+
+
+    }
+
+
+    The word if is going to be lowercased before your condition is paced in a set
+    of brackets. The curly brackets are going to be used to divide the chunks of code.
+
+
+    This code is going to be executed only in the case that the condition has been
+    met.
+
+
+    Example:
+
+
+    CODE:
+
+
+    if( client < 18) {
+
+
+    }
+
+
+    This condition states that if the client is less than 18\. Instead of typing it
+    all out, shorthand is going to be used so that the chunk of code is shorter and
+    easier to read.
+
+
+    Example:
+
+
+    CODE:
+
+
+    if( client < 18) {
+
+
+    // display message
+
+
+    }
+
+
+    Therefore, should the client be over 18, the code set in the two sets of curly
+    brackets is going to be jumped over while Java proceeds how it is supposed to.
+    Anything that is in the middle of the curly brackets will be carried out only
+    if the condition has been met.
+
+
+    Another short hand notion is going to be to point the triangle to the right which
+    means greater than.
+
+
+    Example:
+
+
+    CODE:
+
+
+    if( client > 18) {
+
+
+    //display message
+
+
+    }
+
+
+    The code is the exact same except that the condition is going to apply to those
+    who are over 18\.
+
+
+    If … else
+
+
+    Instead of an if statement being used, an if then statement can be used.
+
+
+    if( condition_to_test) {
+
+
+    }
+
+
+    else {
+
+
+    }'
+  toc: []
+  trans: '
+
+    如果你查看已设置的预取条件，那么布局（layout）将需要更强的预取条件，以便该方法可以覆盖它。如果你不这样做，你将违反面向对象的核心原则，而这本应是为了该原则服务的。
+
+
+    ### 变通方法
+
+
+    由于修复添加器（appender）没有真正简单的解决方案，你最终会发现必须处理更深层次的问题。正如此，你将使用的抽象级别出现在你为核心设计抽象类型时，而这些类型最终将进行微调。
+
+
+    核心方法由布局及其格式化方式定义。该方法最终将向你返回一个字符串，该字符串将包含基于元组（tuples）而不是字符串的数据库。
+
+
+    你可以使用的解决方案是基于一种更复杂的返回格式的数据结构。在任何想要返回字符串的情况下，你可能需要考虑开销。此外，在处理用于日志框架的垃圾回收性能之前，将在创建中间对象时使用这些对象。
+
+
+    当你有多个复杂的返回类型时，由于你也会让 log4j 变得更难以理解。最终目标是让一切尽可能易于理解。
+
+
+    另一种解决方案是使用分层抽象类，并涉及使用两个最终将扩展添加器的抽象类型。你应该使用的唯一添加器是 `JDBC` 添加器，因为大多数其他添加器都有必须实现的实现，以便按照它们需要的方式工作。
+
+
+    你通过这种方法看到的最大缺点是复杂性将再次增加。不仅如此，添加器的开发者还需要确保在为他们将使用的抽象级别做出决策之前，他们已经拥有了所有信息。
+
+
+    ## 第 5 章：可以在多个环境中使用的 JavaFX 应用程序
+
+
+    当你配合 `SDK` 使用 `JavaFX` 版本 2.0.2 时，你被允许将应用程序部署在多个环境中，也可以通过 Java web start 或嵌入的网页作为独立应用程序运行。
+
+
+    ### 为部署 JPadFX 准备
+
+
+    你将需要配合 `JPadFX` 应用程序的一些源文件。在将所有文件放入你正在使用的目录之后，你将被允许执行你放入应用程序中的命令。
+
+
+    示例：
+
+
+    ```
+
+    Javae – pc “C: \ project source \ oracle \ javafx 2.0 DKS\ tr\ library\ trxfj.
+    Glass” ; . -q in jpadfx. Java
+
+    ```
+
+
+    请注意，只有当你电脑上安装了 2.0.2 版本时，此操作才能生效。
+
+
+    ### 将 JPadFx 部署为独立应用程序
+
+
+    使用你在电脑上下载的版本，你将有一个工具用于插入你的命令，以便应用程序几乎自动地部署。当你查看它时，会有一个完全不同的目录用于此版本的程序。
+
+
+    在源文件编译后，你可以使用 `javafxpackager` 将类文件与启动器一起处理到一个新文件中。
+
+
+    示例：
+
+
+    ```
+
+    Javafxpackager makeglass applicationtype jpadfx directory crs in directory outside
+    in inside file jpadfx. Glass. D
+
+    ```
+
+
+    #### 术语
+
+
+    - `makeglass`：将告诉程序在那个目录下创建一个新文件。
+
+    - `Applicationtype`：主类将与启动器一起标识。
+
+    - `Dircrs`：将识别目录。
+
+    - `In directory`：将识别文件名。
+
+    - `-d`：将告诉你输出是什么，以及错误信息将显示在哪里。
+
+
+    如果命令执行成功，你将引入一个新的函数。处理此问题的最简单的方法是使用 `jar` 工具。但，只有在你当前目录具有适当工具以及与其关联的子目录时，该命令才能执行并存储在目录中。
+
+
+    示例：
+
+
+    ```
+
+    Glass fu in \ jpadfx. Glass icon.png
+
+    ```
+
+
+    此时，将使用 `Jpadfx` 独立运行，以便你可以测试文件的真实性。但你需要切换出目录并进入一个具有需要执行的正确命令的新目录。
+
+
+    示例：
+
+
+    ```
+
+    Java -pc “C: \ project source\ oracle\ javafx 2.0 DKS\ tr \ library \ jfxrt. Glass”
+    ; . -glass jpadfx.glass
+
+    ```
+
+
+    此命令将把类路径添加到正确的文件中，以便运行时被正确加载。
+
+
+    ### 在网页中部署 JPadFX
+
+
+    可以使用 `javafxpackager` 来创建 HTML 页面，并带有正确的文件进行部署，以便在处理将应用程序嵌入网页或使用 Java web start
+    运行时的场景。
+
+
+    示例：
+
+
+    ```
+
+    javafxpackager -execute -in directory in -in file jpadfx -how wide 500 -how tall
+    500 – directory crs in crs source jpadfx.glass -class of application jpadfx -title
+    “jpad fx” -name “jpadfx is equal to jpad” -manager “Timothy Mason” – d
+
+    ```
+
+
+    #### 术语解释：
+
+
+    - `Execute`：打包器将执行 HTML 和 JNLP 文件
+
+    - `Directory in`：标识文件所在的目录
+
+    - `Infile`：文件名
+
+    - `How wide`：页宽
+
+    - `How tall`：页高
+
+    - `Directory crs`：文件来源
+
+    - `Crs source`：标识
+
+
+    ## 第 6 章：控制 Java 的流
+
+
+    在此之前的任何编程都被称为顺序编程，这意味着代码从上到下读取，每一行都按照其编写的方式进行读取。然而，并非所有程序都这样工作。某些代码必须满足条件才会运行。对于代码，你可能希望客户处于特定年龄。
+
+
+    这就是通过条件逻辑控制程序流的地方。条件语句通常使用 `if`，但可以使用其他词来创建条件。
+
+
+    ### If 语句
+
+
+    当某些事情发生时，代码将执行，而不是等待其他事情。`if` 语句如下：
+
+
+    ```
+
+    if ( statement ) {
+
+    }
+
+    ```
+
+
+    `if` 单词在小写之前会将你的条件放置在一组括号中。大括号将用于划分代码块。这段代码只有在条件满足的情况下才会执行。
+
+
+    示例：
+
+
+    ```
+
+    if( client < 18) {
+
+    }
+
+    ```
+
+
+    此条件表示如果客户小于 18 岁。与其把所有内容都写出来，不如使用简写，使代码块更短且更易读。
+
+
+    示例：
+
+
+    ```
+
+    if( client < 18) {
+
+    // 显示消息
+
+    }
+
+    ```
+
+
+    ### If … else
+
+
+    与其使用 `if` 语句，不如可以使用 `if then` 语句。
+
+
+    ```
+
+    if( condition_to_test) {
+
+    }
+
+    else {
+
+    }
+
+    ```
+
+    '
+- fmt: '
+
+    The first line will still start with `if` while being followed by the condition.
+    The curly brackets are going to divide different parts of the code.
+
+
+    The second choice is going to go after the `else` with its own curly brackets.
+
+
+    There are only two choices that you are going to have, either your client is going
+    to be younger than 18 or older than 18. Your code will have to match what you
+    want to happen.
+
+
+    ### If … else if
+
+
+    More than two conditions can be tested at once. If you want to test a certain
+    range of ages, you are going to use an `if else if` statement.
+
+
+    The syntax is going to be:
+
+
+    ```
+
+    If(condition_one) {
+
+
+    }
+
+
+    Else if ( condition_ two ) {
+
+
+    }
+
+
+    Else {
+
+
+    }
+
+    ```
+
+
+    The newest part of the code is going to be the `else if ( condition_two) { }`.
+
+
+    When the `if` statement is sent, the next is going to be followed by round brackets.
+    The second condition is going to be in between two new brackets but it is not
+    going to be caught by the first condition.
+
+
+    The code is still going to be sectioned off with curly brackets with every `if
+    else if` statement that you have each having its own curly brackets. If you miss
+    one then you are going to get an error message.
+
+
+    The conditional operators that you need to use are:
+
+
+    - Greater than (`>`)
+
+    - Less than (`<`)
+
+    - Greater than or equal to (`>=`)
+
+    - Less than or equal to (`<=`)
+
+    - AND (`&&`)
+
+    - OR (`||`)
+
+    - A value of (`==`)
+
+    - NOT (`!`)
+
+
+    The two ampersand symbols are going to be used to test for more than one condition
+    at the same time.
+
+
+    #### Example:
+
+
+    ```
+
+    else if ( client > 18 && client < 40)
+
+    ```
+
+
+    With this code, you are going to want to have the knowledge need to know the age
+    of the `client` and to see if they are older than 18 but younger than 40.
+
+
+    You are only trying to see what is inside of the variable that the `client` inputs.
+    The `client` has to be older than 18 but younger than 40. Your `client` has to
+    meet both conditions since the `AND` operator was used.
+
+
+    ### Nested if
+
+
+    `if` statements can be nested just like `if else` and `if else if` statements.
+    An `if` statement that has been nested is going to be putting one `if` statement
+    with another.
+
+
+    #### Example:
+
+
+    ```
+
+    if( client < 19) {
+
+
+    system.out.println ( “ 18 or younger”) ;
+
+
+    }
+
+    ```
+
+
+    To check and see if your `client` is over sixteen there has to be another `if`
+    statement placed inside of the `if` statement that you have already created.
+
+
+    The first `if` statement will be where the `client` is going to be caught if they
+    are less than 19 and the second one will narrow it down so that they are over
+    16. When you want to print a different message, you can use an `if else` statement.
+
+
+    #### Example:
+
+
+    ```
+
+    if( client < 20) {
+
+
+    if( client > 20 && client < 23 ) {
+
+
+    System.out.println( “You are 21 or 22”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“ 22 or younger”) ;
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    The curly brackets that are placed in the code have to be exact or the program
+    is not going to be run. Nested `if` statement are tricky to learn, but they can
+    be narrowed down.
+
+
+    ### Boolean values
+
+
+    Boolean values are only going to be true or false, 1 or 0 or even yes or no. Java
+    has a variable that is done for Boolean values:
+
+
+    ```
+
+    Boolean client = true ;
+
+    ```
+
+
+    You are not going to need to type `int`, `string`, or `double` you are going to
+    need to type `Boolean` by using a lower case b. the name of the variable will
+    come after it has been assigned to the value of `true` or `false`.
+
+
+    The assignment is going to have one equals sign. However, should you evaluate
+    the variable and it has a value of something then you are going to need to use
+    two equals signs.
+
+
+    #### Example :
+
+
+    ```
+
+    Boolean client = true;
+
+
+    if ( client == true) {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+    else {
+
+
+    System.out.println(“it’s false”) ;
+
+    ```
+
+
+    The `if` statement is going to see if the variable entered by the `client` is
+    `true`. The `else` will check to see if it is `false`.
+
+
+    You are not going to need to say `else if ( client == false)` When something turns
+    out to not be true, it is going to obviously be false.
+
+
+    You are going to use `else` since there are only going to be two choices when
+    it comes to Boolean values.
+
+
+    The other operator that is used for conditions is the `NOT` operator, this is
+    used with Boolean values.
+
+
+    #### Example:
+
+
+    ```
+
+    Boolean client = true;
+
+
+    if( !client) {
+
+
+    System.out.println (“it’s false”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+    ```
+
+
+    This is the same as any other code that is used with a Boolean except for the
+    statement `if ( !client) {`.
+
+
+    The `NOT` operator is going to come before the `client`’s variable. This operator
+    will use a single exclamation mark but it will fall before the variable that has
+    to be tested.
+
+
+    The code is going to be tested for negation which means that it is not what it
+    actually is.
+
+
+    Since the `client` variable has been set to `true`, the `!client` will end up
+    testing for `false` values.
+
+
+    If the condition is set to `false`, then the `NOT` operator will test for values
+    that are `true`.
+
+
+    ### Conclusion
+
+
+    Thank you again for downloading this book!
+
+
+    I hope this book was able to help you to gain more knowledge on the Java programming
+    language and use it to apply to your programming requirements.
+
+
+    The next step is to continue programming as you learn more topics for your Java
+    programming skillset.
+
+
+    Finally, if this book has given you value and helped you in any way, then I’d
+    like to ask you for a favor, if you would be kind enough to leave a review for
+    this book on Amazon? It’d be greatly appreciated!
+
+
+    Thank you and good luck!
+
+
+    ### About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+    '
+  raw: 'The first line will still start with if while being followed by the condition.
+    The curly brackets are going to divide different parts of the code.
+
+
+    The second choice is going to go after the else with its own curly brackets.
+
+
+    There are only two choices that you are going to have, either your client is going
+    to be younger than 18 or older than 18\. Your code will have to match what you
+    want to happen.
+
+
+    If … else if
+
+
+    More than two conditions can be tested at once. If you want to test a certain
+    range of ages, you are going to use an if else if statement.
+
+
+    The syntax is going to be:
+
+
+    If(condition_one) {
+
+
+    }
+
+
+    Else if ( condition_ two ) {
+
+
+    }
+
+
+    Else {
+
+
+    }
+
+
+    The newest part of the code is going to be the else if ( condition_two) {
+
+
+    }
+
+
+    When the if statement is sent, the next is going to be followed by round brackets.
+    The second condition is going to be in between two new brackets but it is not
+    going to be caught by the first condition.
+
+
+    The code is still going to be sectioned off with curly brackets with every if
+    else if statement that you have each having its own curly brackets. If you miss
+    one then you are going to get an error message.
+
+
+    The conditional operators that you need to use are:
+
+
+    Greater than (>)
+
+
+    Less than (<)
+
+
+    Greater than or equal to (>=)
+
+
+    Less than or equal to ( <=)
+
+
+    AND (&&)
+
+
+    OR ( ||)
+
+
+    A value of ( ==)
+
+
+    NOT (!)
+
+
+    The two ampersand symbols are going to be used to test for more than one condition
+    at the same time.
+
+
+    Example:
+
+
+    CODE:
+
+
+    else if ( client > 18 && client < 40)
+
+
+    With this code, you are going to want to have the knowledge need to know the age
+    of the client and to see if they are older than 18 but younger than 40\.
+
+
+    You are only trying to see what is inside of the variable that the client inputs.
+    The client has to be older than 18 but younger than 40\. Your client has to meet
+    both conditions since the AND operator was used.
+
+
+    Nested if
+
+
+    If statements can be nested just like if else and if else if statements. An if
+    statement that has been nested is going to be putting one if statement with another.
+
+
+    Example:
+
+
+    CODE:
+
+
+    if( client < 19) {
+
+
+    system.out.println ( “ 18 or younger”) ;
+
+
+    }
+
+
+    To check and see if your client is over sixteen there has to be another if statement
+    placed inside of the if statement that you have already created.
+
+
+    The first if statement will be where the client is going to be caught if they
+    are less than 19 and the second one will narrow it down so that they are over
+    16\. When you want to print a different message, you can use an if else statement.
+
+
+    Example:
+
+
+    CODE:
+
+
+    if( client < 20) {
+
+
+    if( client > 20 && client < 23 ) {
+
+
+    System.out.println( “You are 21 or 22”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“ 22 or younger”) ;
+
+
+    }
+
+
+    }
+
+
+    The curly brackets that are placed in the code have to be exact or the program
+    is not going to be run. Nested if statement are tricky to learn, but they can
+    be narrowed down.
+
+
+    Boolean values
+
+
+    Boolean values are only going to be true or false, 1 or 0 or even yes or no. Java
+    has a variable that is done for Boolean values:
+
+
+    Boolean client = true ;
+
+
+    You are not going to need to type int, string, or double you are going to need
+    to type Boolean by using a lower case b. the name of the variable will come after
+    it has been assigned to the value of true or false.
+
+
+    The assignment is going to have one equals sign. However, should you evaluate
+    the variable and it has a value of something then you are going to need to use
+    two equals signs.
+
+
+    Example :
+
+
+    CODE:
+
+
+    Boolean client = true;
+
+
+    if ( client == true) {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println(“it’s false”) ;
+
+
+    The if statement is going to see if the variable entered by the client is true.
+    The else will check to see if it is false.
+
+
+    You are not going to need to say “else if ( client == false)”. When something
+    turns out to not be true, it is going to obviously be false.
+
+
+    You are going to use else since there are only going to be two choices when it
+    comes to Boolean values.
+
+
+    The other operator that is used for conditions is the NOT operator, this is used
+    with Boolean values.
+
+
+    Example:
+
+
+    Boolean client = true;
+
+
+    if( !client) {
+
+
+    System.out.println (“it’s false”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+
+    This is the same as any other code that is used with a Boolean except for the
+    statement  “if ( !client) {“.
+
+
+    The NOT operator is going to come before the client’s variable. This operator
+    will use a single exclamation mark but it will fall before the variable that has
+    to be tested.
+
+
+    The code is going to be tested for negation which means that it is not what it
+    actually is.
+
+
+    Since the client variable has been set to true, the !client will end up testing
+    for false values.
+
+
+    If the condition is set to false, then the NOT operator will test for values that
+    are true.
+
+
+    Conclusion
+
+
+    Thank you again for downloading this book!
+
+
+    I hope this book was able to help you to gain more knowledge on the Java programming
+    language and use it to apply to your programming requirements.
+
+
+    The next step is to continue programming as you learn more topics for your Java
+    programming skillset.
+
+
+    Finally, if this book has given you value and helped you in any way, then I’d
+    like to ask you for a favor, if you would be kind enough to leave a review for
+    this book on Amazon? It’d be greatly appreciated!
+
+
+    Thank you and good luck!
+
+
+    About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+
+    With the books that he writes on computer programming, he hopes to provide great
+    value and help readers interested to learn computer-related topics.'
+  toc: []
+  trans: '
+
+    第一行仍将以 `if` 开头，随后是条件。大括号将划分代码的不同部分。
+
+
+    第二种选择将跟在 `else` 之后，并带有它自己的大括号。
+
+
+    你只有两种选择：你的客户要么小于 18 岁，要么大于 18 岁。你的代码必须匹配你想要发生的结果。
+
+
+    ### If … else if
+
+
+    可以同时测试两个以上的条件。如果你想测试某个年龄范围，你将使用 `if else if` 语句。
+
+
+    语法如下：
+
+
+    ```
+
+    If(condition_one) {
+
+
+    }
+
+
+    Else if ( condition_ two ) {
+
+
+    }
+
+
+    Else {
+
+
+    }
+
+    ```
+
+
+    代码中新引入的部分是 `else if ( condition_two) { }`。
+
+
+    当 `if` 语句发送时，紧跟着将是圆括号。第二个条件将位于两个新括号之间，但它不会被第一个条件捕获。
+
+
+    代码仍然会用大括号隔开，你的每一个 `if else if` 语句都有它们自己的大括号。如果你漏掉了一个，你将会收到错误信息。
+
+
+    你需要的条件运算符有：
+
+
+    - 大于 (`>`)
+
+    - 小于 (`<`)
+
+    - 大于或等于 (`>=`)
+
+    - 小于或等于 (`<=`)
+
+    - 与/AND (`&&`)
+
+    - 或/OR (`||`)
+
+    - 等于 (`==`)
+
+    - 非/NOT (`!`)
+
+
+    两个 Amp` 符号将用于同时测试多个条件。
+
+
+    #### 示例：
+
+
+    ```
+
+    else if ( client > 18 && client < 40)
+
+    ```
+
+
+    通过这段代码，你需要了解 `client` 年龄的知识，并查看他们是否大于 18 岁但小于 40 岁。
+
+
+    你只是试图查看 `client` 输入的变量内部的内容。`client` 必须大于 18 岁但小于 40 岁。由于使用了 `AND` 运算符，你的 `client`
+    必须同时满足这两个条件。
+
+
+    ### 嵌套的 if
+
+
+    `if` 语句可以像 `if else` 和 `if else if` 语句一样嵌套。嵌套的 `if` 语句是将一个 `if` 语句放入另一个 `if` 语句中。
+
+
+    #### 示例：
+
+
+    ```
+
+    if( client < 19) {
+
+
+    system.out.println ( “ 18 or younger”) ;
+
+
+    }
+
+    ```
+
+
+    要检查你的 `client` 是否超过十六六岁，必须在你已经创建的 `if` 语句内部放置另一个 `if` 语句。
+
+
+    第一个 `if` 语句将捕获小于 19 岁的 `client`，而第二个语句将缩小范围，使他们超过 16 岁。当你想要打印不同的消息时，可以使用 `if else`
+    语句。
+
+
+    #### 示例：
+
+
+    ```
+
+    if( client < 20) {
+
+
+    if( client > 20 && client < 23 ) {
+
+
+    System.out.println( “You are 21 or 22”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“ 22 or younger”) ;
+
+
+    }
+
+
+    }
+
+    ```
+
+
+    代码中放置的大括号必须准确，否则程序将无法运行。嵌套的 `if` 语句很难学，但可以逐步掌握。
+
+
+    ### 布尔值
+
+
+    布尔值只有 `true` 或 `false`、`1` 或 `0`，甚至可以是 `yes` 或 `no`。Java 有一个专门用于布尔值的变量：
+
+
+    ```
+
+    Boolean client = true ;
+
+    ```
+
+
+    你不需要输入 `int`、`string` 或 `double`，你需要使用小写的 `b` 输入 `Boolean`。变量名将在被赋值为 `true` 或
+    `false` 值之后出现。
+
+
+    赋值将有一个等号。然而，如果你要评估变量并且它有某个值，那么你就需要使用两个等号。
+
+
+    #### 示例：
+
+
+    ```
+
+    Boolean client = true;
+
+
+    if ( client == true) {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+    else {
+
+
+    System.out.println(“it’s false”) ;
+
+    ```
+
+
+    `if` 语句将检查 `client` 输入的变量是否为 `true`。`else` 将检查它是否为 `false`。
+
+
+    当某结果不真时，你不需要说 `else if ( client == false)`，因为它显然是 `false`。
+
+
+    由于涉及布尔值只有两种选择，所以你将使用 `else`。
+
+
+    另一个用于条件的运算符是 `NOT` 运算符，它与布尔值配合。
+
+
+    #### 示例：
+
+
+    ```
+
+    Boolean client = true;
+
+
+    if( !client) {
+
+
+    System.out.println (“it’s false”) ;
+
+
+    }
+
+
+    else {
+
+
+    System.out.println (“it’s true”) ;
+
+
+    }
+
+    ```
+
+
+    这与任何用于布尔值的其他代码相同，除了 `if ( !client) {` 语句。
+
+
+    `NOT` 运算符将位于 `client` 变量之前。该运算符将使用单个感叹号，但它将落在待测试的变量之前。
+
+
+    代码将进行取反测试，这意味着它不是它实际的样子。
+
+
+    由于 `client` 变量已设置为 `true`，`!client` 最终将测试 `false` 值。
+
+
+    如果条件被设置为 `false`，那么 `NOT` 运算符将测试 `true` 值。
+
+
+    ### 总结
+
+
+    再次感谢你下载这本书！
+
+
+    我希望这本书能够帮助你获得更多 Java 编程语言的知识并将其应用于你的编程需求中。
+
+
+    下一步是在学习更多主题的同时继续编程。
+
+
+    最后，如果这本书带给你任何价值并在某方面对你有帮助，我想请你一个忙，如果你愿意，在 Amazon 上给这本书留个评论？不胜感激！
+
+
+    感谢并祝你好运！
+
+
+    ### 关于作者
+
+
+    Charlie Masterson 是一位计算机程序员和讲师，开发过多个应用程序和计算机程序。
+
+
+    作为一名计算机科学学生，他很早就对编程产生了兴趣，但学习高度复杂的主题让他感到挫败。
+
+
+    Charlie 想要一种可以轻松学习并开发编程技能的方法。他很快发现了一系列让他学得更快更好的教学教程。
+
+
+    通过这种方法，Charlie 成功地学习了不同的编程语言，现在正通过写书来教授这些主题。
+
+    '

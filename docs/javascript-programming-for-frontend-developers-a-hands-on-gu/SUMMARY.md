@@ -1,0 +1,2 @@
++   [前端开发者 JavaScript 编程：使用 jQuery 和 Redux 构建快速、可扩展且交互式 Web 应用程序实用指南](README.md)
++   [前端开发者 JavaScript 编程：使用 jQuery 和 Redux 构建快速、可扩展且交互式 Web 应用程序实用指南](javascript-programming-for-frontend-developers-a-hands-on-gu_0.md)

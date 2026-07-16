@@ -1,0 +1,170 @@
+- "# JavaScript 基础：初学者指南\n\n\n\n![](img/cover0007.jpeg)\n\n\n## JavaScript 教程\n这节\
+  \ JavaScript 课程让初学者和专家都能轻松学习 JavaScript。\n\n### 什么是 JavaScript？它是如何工作的？\nJavaScript\
+  \ 是一种用于计算机的动态编程语言。它是一种轻量级的跨基于对象的脚本语言。\n通过 JavaScript，我们可以让网站更具活力和吸引力。\n由 Netscape\
+  \ 员工 Brendan Eich 在 1995 年设计了它。这是一种用于创建交互式网站的编程语言。它最常用于：\n- 客户端验证。\n- 下拉菜单是动态的。\n\
+  - 显示当前日期和时间。\n- 在数据传输到服务器之前，验证 HTML 表单中的用户输入。\n- 创建无需连接服务器即可响应用户输入的表单。\n- 开启新窗口或帧并关闭它们。\n\
+  - 使用弹出窗口和对话框显示信息（例如：警报对话框、确认对话框或提示对话框）。\n- 创建短小但完整的客户端程序。\n- 闹钟和其他计时器。\n- 移动设备的游戏和应用开发。\n\
+  \n### JavaScript 的特性\n- JavaScript 是一种基于对象的脚本语言。\n- 该语言区分大小敏感。\n- 它是轻量级的。\n- 在 JavaScript\
+  \ 中，每个语句后面都必须跟一个分号（`;`）。\n\n### JavaScript 的优势\n- JavaScript 是一种解释型脚本语言。不需要编译器，因为没有编译过程。JavaScript\
+  \ 被浏览器当作 HTML 标签进行解释。\n- JavaScript 是一种简单的编程语言。对任何人来说都非常容易学习。它被用于创建动态且吸引人的网站。\n\
+  - 因为 JavaScript 在客户端运行，所以它降低了网站服务器的负载。\n- 它包含了可以在网页中使用的条件检查、循环和分支功能。\n对于 对于终端用户来说，JavaScript\
+  \ 是相对快速。他们不需要等待页面加载来检查是否漏掉了某些内容。\n- 网页现在拥有更多功能。为了给网站访问者提供更多功能，我们可以使用 JavaScript\
+  \ 包含拖放组件和滑块。\n\n## JavaScript 示例\n```html\n<h2>欢迎来到 JavaScript</h2>\n<script>\n\
+  \  document.write(\"Hello JavaScript by TutorialandExample\");\n</script>\n```\n\
+  **输出：**\n欢迎来到 JavaScript\nHello JavaScript by TutorialandExample\n\n### JavaScript\
+  \ 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <h2>欢迎来到 JavaScript</h2>\n  <script>\n\
+  \  document.write(\"Hello Friends\");\n  </script>\n</body>\n</html>\n```\n**输出：**\n\
+  欢迎来到 JavaScript\nHello Friends\n\n可以通过在代码中包含 JavaScript 语句来实现引入 JavaScript：`<script>...</script>`。\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script type=\"text/javascript\">\n\
+  \  document.write(\"Hello World\");\n  </script>\n</body>\n</html>\n```\n**输出：**\n\
+  Hello World\n\n在 JavaScript 中，代码可以写在三个地方：\n1. 在 HTML 的 `<body>`...`</body>` 标签之间。\n\
+  2. 在 HTML 的 `<head>`...`</head>` 标签之间。\n3. 在 `.js` 文件中（外部 JavaScript）。\n\n#### 示例说明（body\
+  \ 标签之间的代码）\n在下面的示例中，body 标签包含了 JavaScript 代码。\n```html\n<!DOCTYPE html>\n<html>\n\
+  <body>\n  <script type=\"text/javascript\">\n  alert(\"Hello world\");\n  </script>\n\
+  </body>\n</html>\n```\n\n#### 示例 2（head 标签之间的代码）\n我们将在下面的示例中创建函数 `msg()`。在 JavaScript\
+  \ 中，你必须编写函数名来定义一个函数。要调用函数，我们必须先创建一个事件。在这种情况下，我们正在使用 `onclick` 事件来调用 `msg()` 函数。\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <script type=\"text/javascript\">\n\
+  \  function msg(){\n    alert(\"Hello world\");\n  }\n  </script>\n</head>\n<body>\n\
+  \  <p>欢迎来到 JavaScript</p>\n  <form>\n    <input type=\"button\" value=\"click\"\
+  \ onclick=\"msg()\"/>\n  </form>\n</body>\n</html>\n```\n\n#### 外部 JavaScript\n\
+  我们可以创建一个 JavaScript 文件并将其包含在 HTML 文件中。由于单个 JavaScript 文件可以被多个 HTML 页面使用，因此它允许代码复用。提高了网页的性能。该文件必须具有\
+  \ `.js` 扩展名。\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <script type=\"text/javascript\"\
+  \ src=\"message.js\"></script>\n</head>\n<body>\n  <p>Hello world</p>\n  <form>\n\
+  \    <input type=\"button\" value=\"click\" onclick=\"msg()\"/>\n  </form>\n</body>\n\
+  </html>\n```\n\n## JavaScript 注释\nJavaScript 中的注释用于描述代码。它用于包含代码相关信息，例如警告或建议，以便终端用户可以理解它。\n\
+  ### 类型\n1. 单行注释\n2. 多行注释\n\n### 单行注释\n使用双正斜线 `//` 来表示单行注释。在程序运行时，双斜线之间的任何文本都会被忽略。\n\
+  \n**例 1：在语句前添加注释：**\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n  //\
+  \ 单行注释\n  document.write(\"hello world\");\n  </script>\n</body>\n</html>\n```\n\
+  \n**例 2：在语句后添加注释：**\n```html\n<!DOCTYPE html>\n<html>\n<body>\n  <script>\n  var\
+  \ a=10;\n  var b=20;\n  var c=a+b; //添加 a 和 b 变量的和\n  document.write(c); //打印 10\
+  \ 和 20 的和\n  </script>\n</body>\n</html>\n```\n**输出：** 30\n\n### 多行注释\n单行和多行注释都可以通过多行注释来实现。跨多行的注释以\
+  \ `/*` 开始，以 `*/` 结束。JavaScript 将忽略其中的文本。\n\n**示例：**\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n  <script>\n  /* 这是多行注释。\n     不会显示 */\n  document.write (\"Example\
+  \ of JavaScript line comment\");\n  </script>\n</body>\n</html>\n```\n\n## JavaScript\
+  \ 变量\n值（`name=\"Ram\"`）和表达式（`Sum=x+y`）存储在变量中。在使用变量之前必须先声明它。要声明变量，我们使用 `var` 关键字，如下：\n\
+  `var name;`\n\n变量有 2 类：\n1. 局部变量\n2. 全局变量\n\n### 局部变量\n它定义在函数或块内部。\n**示例：**\n```javascript\n\
+  <script>\nfunction abc(){\n  var x=10; //局部变量\n}\n</script>\n```\n\n### 全局变量\n它具有全局作用域，意味着它可以在\
+  \ JavaScript 代码的任何地方定义。在函数外部声明变量。\n**示例：**\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+  \  <script>\n  var data =200; //全局变量\n  function a(){\n    document.writeln(data);\n\
+  \  }\n  function b(){\n    document.writeln(data);\n  }\n  a();//调用 javascript 函数\n\
+  \  b();\n  </script>\n</body>\n</html>\n```\n\n### 在 JavaScript 中在函数内部声明全局变量\n要在函数内部声明\
+  \ JavaScript 全局变量，我们必须使用 `window` 对象。\n**示例：**\n```javascript\nwindow.value=90;\n\
+  ```\n现在它可以在任何函数内部声明，并在任何函数内部访问。\n\n\n\n\n\n```html\nwindow.value=50; //使用 window\
+  \ 对象声明全局变量\n\n}\n\nfunction b(){\n\nalert(window.value);//从其他函数访问全局变量\n\n}\n\na();\n\
+  \nb();      \n\n</script>\n\n</body>\n\n</html\n```\n\n# JavaScript 数据类型\n\n它有多种数据类型来存储各种类型的值。\n\
+  在 JavaScript 中，有两种数据类型。\n\n1. 基本数据类型。\n2. 非基本数据类型。\n\n由于 JavaScript 是一种动态类型语言，我们不需要定义变量的类型，因为\
+  \ JavaScript 引擎动态使用它。在这种情况下，使用 `var` 指定数据类型。它可能存储任何类型的值，包括数字、字符串和对象。\n\n### 示例\n\
+  \n```javascript\nvar a=Ram; //String\nvar b=20; //Number\nvar x= {FirstName:'Ram',\
+  \ lastName:'Doe'}; //Object\n```\n\n### JavaScript - 基本数据类型\n在 JavaScript 中，有五种不同的基本数据类型。\n\
+  \n![](img/image00059.jpeg)\n\n### JavaScript 非基本数据类型\n有 3 种非基本数据类型如下：\n\n![](img/image00060.jpeg)\n\
+  \n# JavaScript 操作符\n\n运算符是 JavaScript 中用于对操作数执行操作的符号。简单来说 `3+2` 等于 `5`。这里的操作数是 `3`\
+  \ 和 `2`，运算符是 `+`。\n\nJavaScript 运算符如下：\n\n1. 算术运算符。\n2. 比较（关系）运算符。\n3. 位运算符。\n4.\
+  \ 逻辑运算符。\n5. 赋值运算符。\n6. 特殊运算符。\n\n## 算术运算符\n我们在算术运算符中对操作数进行算术操作。\n\n![](img/image00061.jpeg)\n\
+  \n### 比较运算符\n在比较运算符中，比较两个操作数 `A` 和 `B`。\n\n![](img/image00062.jpeg)\n\n### 赋值运算符\n\
+  JavaScript 支持以下 赋值运算符。\n\n![](img/image00063.jpeg)\n\n### 位运算符\nJavaScript 支持以下\
+  \ - 位运算符：\n\n![](img/image00064.jpeg)\n\n### 逻辑运算符\n布尔值通常与逻辑运算符配合使用。\n以下是 - 逻辑运算符-\n\
+  \n![](img/image00065.jpeg)\n\n## JavaScript If Else\n\nJavaScript 中的条件语句用于根据标准执行不同的活动。\n\
+  在 JavaScript 中，有三种类型的语句。\n\n1. `if` 语句。\n2. `if else` 语句。\n3. `if else if` 语句。\n\
+  \n### if 语句\n如果条件为真或假，在 JavaScript 中 `if` 语句来运行函数。\n\n```javascript\nif (condition){\n\
+  \    // 要评估的内容\n}\n```\n\n![Image 1.jpg](img/image00066.jpeg)\n\n**示例：**\n\n```html\n\
+  <!DOCTYPE html>\n<html>\n<body>\n<script>\nvar x=50;\nif(x>30){\ndocument.write(\"\
+  value of x is greater than 30\");\n}\n</script>\n</body>\n</html>\n```\n**输出：**\
+  \ Value of x is greater than 30\n\n### if else 语句\n如果任一条件为真或假（此处指逻辑分支），使用 `if else`\
+  \ 语句。\n\n### 语法\n```javascript\nif(condition)\n{\n// 一组语句\n}\nelse\n{\n// 一组语句\n\
+  }\n```\n![Image 2.jpg](img/image00067.jpeg)\n\n**示例**\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\nvar x=20;\nif(x%2==0){\ndocument.write(\"x is even number\"\
+  );\n}\nelse{\ndocument.write(\"a is odd number\")\n}\n</script>\n</body>\n</html>\n\
+  ```\n**输出：** X is even number\n\n### If else if\n它仅仅查看内容以检查在许多表达式中表达式是否为真。`otherwise\
+  \ if` 是 `if else` 语句的更复杂版本。\n\n### 语法\n```javascript\nIf (condition1)\n{\n如果 condition\
+  \ 1 为真，则执行语句\n}\nelse if (condition 2)\n{\n如果 condition 2 为真，则执行语句\n}\nelse if (condition\
+  \ 3)\n{\n如果 condition 3 为真，则执行语句\n}\nelse\n{\n如果没有没有条件为真，则执行语句\n}\n```\n\n**示例**\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar x=50;\nif (x==10){\ndocument.write(\"\
+  x is equal to 10\");\n}\nelse if(x==50){\ndocument.write(\"x is equal to 50\");\n\
+  }\nelse if(x==30){\ndocument.write(\"x is equal to 30\");\n}\nelse{\ndocument.write(\"\
+  a is not equal to 10, 50 or 30\");\n}\n</script>\n</body>\n</html>\n```\n**输出：**\
+  \ x is equal to 50\n\n## JavaScript Switch 语句\n\n在 JavaScript 中，`switch` 语句用于在多个条件下执行单个代码。它与\
+  \ `else if` 语句相同，但比 `else if` 语句更容易记忆。\n\n![Image 3.jpg](img/image0068.jpeg)\n\n\
+  ### 语法\n```javascript\nswitch (expression)\n{\ncase 1:\n语句(s)\nbreak\ncase 2:\n\
+  语句(s)\nbreak\ncase n:\n语句(s)\nbreak\ndefault:\n语句(s)\n}\n```\n**注意：** 在 `switch`\
+  \ 中，`break` 是重要的。\n\n**示例**\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+  var grade='B';\nvar result;\nswitch(grade){\ncase 'A':\nresult=\"A\";\nbreak\ncase\
+  \ 'B':\nresult=\"B\";\nbreak\ncase 'C':\nresult=\"C\";\nbreak\ndefault:\nresult=\"\
+  No Grade\";\n}\ndocument.write(result);\n</script>\n</body>\n</html>\n```\n**输出：**\
+  \ B\n\n## JavaScript 循环\n\n重复操作的形式被称为循环。在 JavaScript 中，有三种形式：\n\n1. `while` 循环\n\
+  2. `for` 循环\n3. `do-while` 循环\n\n### while 循环\n`while` 循环执行代码直到表达式为真。如果迭代次数未知，则应该使用它。\n\
+  \n![Image 4.jpg](img/image0069.jpeg)\n\n### 语法\n```javascript\nwhile (condition)\n\
+  {\n语句(s)\n}\n```\n\n**示例**\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+  var i=1;\nwhile(i<=10){\ndocument.write(i+\"<br/>\");\ni++;\n}\n</script>\n</body>\n\
+  </html>\n```\n**输出：** 1 2 3 4 5 6 7 8 9 10\n\n### for 循环\n它在 `for` 循环中初始化变量、检查条件并增加或减少值。它运行固定的时间。\n\
+  \n![Image 5.jpg](img/image0070.jpeg)\n\n### 语法\n```javascript\nfor (initialization;\
+  \ condition; increment)\n{\n要执行的代码\n}\n```\n\n**示例**\n\n```html\n<!DOCTYPE html>\n\
+  <html>\n<body>\n<script>\nfor (i=1; i<=12; i++)\n{\ndocument.write(i+\"<br/>\")\n\
+  }\n</script>\n</body>\n</html>\n```\n**输出：** 1 2 3 4 5 6 7 8 9 10 11 12\n\n### do\
+  \ while 循环\n虽然 `while` 循环无限执行，但 `do while` 循环无论条件真假都只执行一次。当我们至少需要重复语句块时，我们使用 `do-while`。\n\
+  \n![Image 6.jpg](img/image0071.jpeg)\n\n### 语法\n```javascript\ndo{\n要执行的代码\n增加/减小\n\
+  }\nwhile (condition);\n```\n\n**示例**\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+  <script>\nvar i=11;\ndo{\ndocument.write(i+\"<br/>\");\ni++;\n}while (i<=15);\n\
+  </script>\n</body>\n</html>\n```\n**输出：** 11 12 13 14 15\n\n## JavaScript 函数\n\n\
+  在 <script>.....</script> 标签内定义新函数是 JavaScript 的一项重要功能。`function` 关键字用于在 JavaScript\
+  \ 中声明函数。\n\n\n\n\n\n为了复用代码，我们多次调用 JavaScript 方法。\n\n### 优点 - JavaScript 函数\n\n1.\
+  \ **代码可重用性**：我们多次使用同一个方法来节省时间和代码量。\n2. **更少的代码**：结果是我们的应用程序被压缩了。当我们执行常规任务时，不需要编写大量的代码。\n\
+  \n### 语法\n\n```javascript\nfunction functionName(parameter or not) \n{\n  statements\n\
+  }\n```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body\n<script>\nfunction\
+  \ msg() {\n  alert(\"Hello! world\");\n}\n</script>\n<input type=\"button\" onclick=\"\
+  msg()\" value=\"click here\"/>\n</body>\n</html>\n```\n\n### 输出\nHello world!\n\n\
+  ### 带参数的函数\n\n通过传递参数来调用函数。\n\n```html\n<!DOCTYPE html>\n<html>\n<body\n<script>\n\
+  function getcube(number) {\n  alert(number*number*number);\n}\n</script>\n<form>\n\
+  \  <input type=\"button\" value=\"click\" onclick=\"getcube(3)\"/>\n</form>\n</body>\n\
+  </html>\n```\n\n### 输出\n27\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <script>\nfunction getname() {\n  name=prompt(\"Enter the Name\");\n  alert(\"Welcome\
+  \ Mr/Mrs \" + name);\n}\n</script>\n</body>\n<form>\n  <input type=\"button\" value=\"\
+  Click\" onclick=\"getname()\"/>\n</form>\n</html>\n```\n\n### 带返回值的函数\n\n调用返回值的函数，并在程序中使用它。\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<body\n<script>\nfunction getInfo() {\n  return\
+  \ \"Hello Raj! How are you?\";\n}\n</script>\n<script>\n  document.write(getInfo());\n\
+  </script>\n</body>\n</html>\n```\n\n### 输出\nHello Raj! How are you?\n\n### Function()\
+  \ 构造函数\n\n函数语句不仅用于定义新函数，还可以使用 `Function()` 构造函数和 `new` 运算符来动态定义函数。\n\n### 语法\n\n\
+  ```javascript\n<script>\n    var varilename = new Function(Arg1, Arg2..., \"Function\
+  \ Body\" );\n</script>\n```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <script>\nvar func = new Function(\"a\", \"b\", \"return a+b;\");\nfunction secondFunction(){\n\
+  \  var result;\n  result = func(50,50);\n  document.write ( result );\n}\n</script>\n\
+  </head>\n<body>\n  <p>点击按钮调用函数</p>\n  <form>\n    <input type=\"button\" onclick=\"\
+  secondFunction()\" value=\"Call Function\">\n  </form>\n  <p>在函数内部使用不同的参数并尝试一下吧...</p>\n\
+  </body>\n</html>\n```\n\n### 函数字面量 (Function Literals)\n\n函数字面量的概念（构造函数的另一种方式）在\
+  \ JavaScript 1.2 中被引入。它是一个表达式，定义了一个没有名字的函数。\n\n函数字面量的语法与函数语句相似，不同之处在于被用作表达式而不是语句，并且不需要函数名。\n\
+  \n### 语法\n\n```javascript\n<script>\nvar variablename = function (Argument List){\n\
+  \  Function Body\n};\n</script>\n```\n\n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n<script>\nvar func = function(a,b){return a+b};\nfunction secondFunction(){\n\
+  \  var result;\n  result = func(10,20);\n  document.write ( result );\n}\n</script>\n\
+  </head>\n<body>\n  <p>点击按钮调用函数</p>\n  <form>\n    <input type=\"button\" onclick=\"\
+  secondFunction()\" value=\"Call Function\">\n  </form>\n  <p>在函数内部使用不同的参数并尝试一下吧...</p>\n\
+  </body>\n</html>\n```\n\n### JavaScript 对象\n\n对象是一个包含状态和行为的实体。JavaScript 是一种专注于对象的脚本语言。虽然\
+  \ JavaScript 更多基于模板而非基于类，但它允许我们创建对象。\n\n### 语法 - 添加属性 - 添加对象\n\n`objectName.objectProperty\
+  \ = propertyValue;`\n\n我们使用 `write()` 方法来记录对象，以便在文档上写入任何内容。\n`document.write(\"\
+  Hello world\")`\n\n### 示例 以下示例展示了如何创建一个对象。\n\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n<title>用户自定义对象</title>\n<script type=\"text/javascript\">\nvar book = new\
+  \ Object(); // 创建了对象\nbook.subject = \"5 points someone\"; // 将属性赋值给对象\nbook.author\
+  \ = \"Chetanagat\";\n</script>\n</head>\n<body>\n  <script type=\"text/javascript\"\
+  >\n    document.write(\"Book Name is: \" + book.subject + \"<br>\");\n    document.write(\"\
+  Book Author is: \" + book.author + \"<br>\");\n  </script>\n</body>\n</html>\n```\n\
+  \n### 输出\nBook Name is : 5 points someone\nBook Author is : Chetanagat\n\n### 对象的方法\n\
+  \n```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>用户自定义对象</title>\n<script type=\"\
+  text/javascript\">\n// 定义作为方法的函数\nfunction addPrice(amount){\n  this.price = amount;\n\
+  }\nfunction book(title, author){\n  this.title = title;\n  this.author = author;\n\
+  \  .addPrice = addPrice; // 将该方法作为属性\n}\n</script>\n</head>\n<body>\n  <script type=\"\
+  text/javascript\">\n    var myBook = new book(\"5 points\", \"Chetanagat\");\n \
+  \   myBook.addPrice(150);\n    document.write(\"Book Name is: \" + myBook.title\
+  \ + \"<br>\");\n    document.write(\"Book Author is: \" + myBook.author + \"<br>\"\
+  );\n    document.write(\"Book Price is: \" + myBook.price + \"<br>\");\n  </script>\n\
+  </body>\n</html>\n```\n\n### 数组 (array)\n\n数组用于表示单个单元或内存区域中的元素集合。元素从零开始唯一索引。我们通过索引存储数据。在\
+  \ JavaScript 中，必须使用 `new` 关键字来声明数组。我们使用 `new` 来构造数组。数组中的槽的数量由 `n` 表示。\n\n### 语法\n\
+  \n```javascript\narray = new array(n);\n```\n注意：当我们在 JavaScript 中构建数组时不指定大小，我们会构造一个零大小的数组。\n\
+  \n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar i;\nvar emp\
+  \ = new Array();\nemp[0] = \"Ajay\";\nemp[1] = \"Abhay\";\nemp[2] = \"Arun\";\n\
+  emp[3] = \"Shipra\";\nfor(i=0; i<emp.length; i++) {\n  document.write(emp[i] + \"\
+  <br>\");\n}\n</script>\n</body>\n</html>\n```\n\n### 输出\nAjay\nAbhay\nArun\nShipra\n\
+  \n### 示例\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script type=\"text/javascript\"\
+  >\nfunction array() {\n  num = new Array(5);\n  num[0] = 10;\n  num[1] = 20;\n \
+  \ num[2] = 30;\n  num[3] = 40;\n  num[4] = 50;\n  sum = 0;\n  for(i=0; i<num.length;\
+  \ i++) {\n    sum = sum + num[i];\n  }\n  alert(sum);\n}\n</script>\n</head>\n<body>\n\
+  \  <input type=\"button\" onclick=\"array()\" value=\"click here\">\n</body>\n</html>\n\
+  ```\n\n### 数组中使用的函数\n\n![](img/image00072.jpeg)\n\n"

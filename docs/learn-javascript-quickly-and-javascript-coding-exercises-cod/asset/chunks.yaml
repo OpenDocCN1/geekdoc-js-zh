@@ -1,0 +1,2519 @@
+- fmt: '
+
+    ![](image_rsrc3JX.jpg)
+
+
+    # LEARN JAVASCRIPT QUICKLY AND JAVASCRIPT CODING EXERCISES CODING FOR BEGINNERS
+    WITH HANDS ON PROJECTS BY J J TAM
+
+
+    ## Table of Contents
+
+    [Introduction to Javascript](#part0003.xhtml)
+
+    - [Javascript: Hello world program](#part0004.xhtml)
+
+    - [Javascript: Variables](#part0005.xhtml)
+
+    - [Javascript: Statements](#part0006.xhtml)
+
+    - [Javascript: comments](#part0007.xhtml)
+
+    - [JavaScript: Types](#part0008.xhtml)
+
+    - [Javascript: operators](#part0009.xhtml)
+
+    - [Javascript: Arithmetic Operators](#part0010.xhtml)
+
+    - [Javascript: Increment/decrement: ++, -- operators](#part0011.xhtml)
+
+    - [Javascript: Bitwise operators](#part0012.xhtml)
+
+    - [JavaScript: Logical operators](#part0013.xhtml)
+
+    - [JavaScript: Assignment operators](#part0014.xhtml)
+
+    - [JavaScript: Compound Assignment operator](#part0015.xhtml)
+
+    - [Javascript: Ternary operator](#part0016.xhtml)
+
+    - [JavaScript: Working with boolean values](#part0017.xhtml)
+
+    - [JavaScript: Decision Making: if, if-then](#part0018.xhtml)
+
+    - [Javascript: if-else-if-else ladder](#part0019.xhtml)
+
+    - [JavaScript: Decision making using switch statement](#part0020.xhtml)
+
+    - [JavaScript: loops](#part0021.xhtml)
+
+    - [JavaScript: do-while loop](#part0021.xhtml_a3F7)
+
+    - [JavaScript: for loop](#part0021.xhtml_a3F8)
+
+    - [JavaScript: break statement](#part0022.xhtml)
+
+    - [JavaScript: continue statement](#part0022.xhtml_a3FA)
+
+    - [JavaScript: break in label form](#part0022.xhtml_a3FB)
+
+    - [JavaScript: for in loop](#part0022.xhtml_a3FC)
+
+    - [JavaScript: for-of loop](#part0022.xhtml_a3FD)
+
+    - [JavaScript: get the type of variable](#part0023.xhtml)
+
+    - [JavaScript: Working with strings](#part0023.xhtml_a3FF)
+
+    - [JavaScript: Nested functions](#part0024.xhtml)
+
+    - [JavaScript: Array](#part0025.xhtml)
+
+    - [JavaScript: Introduction to Classes](#part0026.xhtml)
+
+    - [JavaScript: Define class using class expressions](#part0027.xhtml)
+
+
+    ## JAVASCRIPT CODING EXERCISES](#part0029.xhtml)
+
+    - [Display the current day and time](#part0029.xhtml_a3FN)
+
+    - [Print the contents](#part0030.xhtml)
+
+    - [Display the current date](#part0031.xhtml)
+
+    - [Find the area of a triangle](#part0032.xhtml)
+
+    - [Check whether a given year is a leap year](#part0033.xhtml)
+
+    - [Calculate multiplication and division](#part0034.xhtml)
+
+    - [Convert temperatures](#part0035.xhtml)
+
+    - [Find the largest](#part0036.xhtml)
+
+    - [Reverse a given string](#part0037.xhtml)
+
+    - [Replace every character](#part0038.xhtml)
+
+    - [Capitalize The First Letter](#part0039.xhtml)
+
+    - [Convert number to hours and minutes](#part0040.xhtml)
+
+    - [Count vowels in a given string](#part0041.xhtml)
+
+    - [Create a new string](#part0042.xhtml)
+
+    - [Concatenate two strings](#part0043.xhtml)
+
+    - [Move last three character](#part0044.xhtml)
+
+    - [Compute the sum](#part0045.xhtml)
+
+    - [Add two digits](#part0046.xhtml)
+
+    - [Check whether a given year is a leap](#part0047.xhtml)
+
+    - [Check given positive number](#part0048.xhtml)
+
+    - [Check a string starts with ''Java''](#part0049.xhtml)
+
+    - [Check two given integer values](#part0050.xhtml)
+
+    - [Find a value which is nearest to 100](#part0051.xhtml)
+
+
+    ## Introduction to Javascript
+
+    Javascript is a scripting language, used to validate html form data, before submitting
+    to the server. Now days javaScript is also used for server side development (Read
+    `node.js`).
+
+
+    ### What can I do with Javascript?
+
+    a. You can perform client side validation.
+
+    b. You can give dynamic behavior to static HTML pages.
+
+    c. Show animations on web paged. You can update partial portion of page using
+    `AJAX`.
+
+    e. Develop Server side applications using frameworks like `node.js`.
+
+
+    ### Javascript is interpreted language
+
+    Javascript is interpreted language, write once and attach it to HTML page. No
+    further compilation is required.
+
+
+    ### Is there any relation between JavaScript and Java?
+
+    Absolutely there is no relation between JavaScript and Java.
+
+
+    ### What is ECMAScript?
+
+    ECMAScript is a standard, JavaScript is the language that implement ECMAScript
+    standard.
+
+
+    ### Is JavaScript supports Unicode?
+
+    JavaScript programs are written in Unicode. ECMAScript `5` standard supports Unicode
+    `3`.
+
+
+    ### Is JavaScript case-sensitive?
+
+    Yes JavaScript is a case sensitive language.
+
+
+    ### Is it compulsory to end statement using ;?
+
+    Many languages like `Java`, `C`, `C++` use `;` as statement terminator. Usage
+    of `;` is optional in JavaScript, but I always prefer to use `;` to maintain consistency.
+
+
+    ### Is JavaScript support automatic garbage collection?
+
+    Yes, JavaScript support automatic garbage collection, whenever JavaScript interpreter
+    finds an unreachable object (or) variable, it frees the memory allocated for that
+    variable (or) object.
+
+
+    ### Is JavaScript an object oriented language?
+
+    Yes, JavaScript is an object-oriented language, but the kind of inheritance it
+    provides is different from the inheritance provided by languages like `Java` and
+    `C++`. JavaScript supports Prototype inheritance.
+
+
+    ### Javascript: Hello world program
+
+    `helloWorld.html`
+
+    '
+  raw: '
+
+
+    ![](image_rsrc3JX.jpg)
+
+
+    LEARNJAVASCRIPT QUICKLYANDJAVASCRIPTCODING EXERCISESCODING FOR BEGINNERSWITH HANDS
+    ON PROJECTSBYJ J TAM[Introduction to Javascript](#part0003.xhtml)[Javascript:
+    Hello world program](#part0004.xhtml)[Javascript: Variables](#part0005.xhtml)[Javascript:
+    Statements](#part0006.xhtml)[Javascript: comments](#part0007.xhtml)[JavaScript:
+    Types](#part0008.xhtml)[Javascript: operators](#part0009.xhtml)[Javascript: Arithmetic
+    Operators](#part0010.xhtml)[Javascript: Increment/decrement: ++, -- operators](#part0011.xhtml)[Javascript:
+    Bitwise operators](#part0012.xhtml)[JavaScript: Logical operators](#part0013.xhtml)[JavaScript:
+    Assignment operators](#part0014.xhtml)[JavaScript: Compound Assignment operator](#part0015.xhtml)[Javascript:
+    Ternary operator](#part0016.xhtml)[JavaScript: Working with boolean values](#part0017.xhtml)[JavaScript:
+    Decision Making: if, if-then](#part0018.xhtml)[Javascript: if-else-if-else ladder](#part0019.xhtml)[JavaScript:
+    Decision making using switch statement](#part0020.xhtml)[JavaScript: loops](#part0021.xhtml)[JavaScript:
+    do-while loop](#part0021.xhtml_a3F7)[JavaScript: for loop](#part0021.xhtml_a3F8)[JavaScript:
+    break statement](#part0022.xhtml)[JavaScript: continue statement](#part0022.xhtml_a3FA)[JavaScript:
+    break in label form](#part0022.xhtml_a3FB)[JavaScript: for in loop](#part0022.xhtml_a3FC)[JavaScript:
+    for-of loop](#part0022.xhtml_a3FD)[JavaScript: get the type of variable](#part0023.xhtml)[JavaScript:
+    Working with strings](#part0023.xhtml_a3FF)[JavaScript: Nested functions](#part0024.xhtml)[JavaScript:
+    Array](#part0025.xhtml)[JavaScript: Introduction to Classes](#part0026.xhtml)[JavaScript:
+    Define class using class expressions](#part0027.xhtml)[JAVASCRIPT CODING EXERCISES](#part0029.xhtml)[Display
+    the current day and time](#part0029.xhtml_a3FN)[Print the contents](#part0030.xhtml)[Display
+    the current date](#part0031.xhtml)[Find the area of a triangle](#part0032.xhtml)[Check
+    whether a given year is a leap year](#part0033.xhtml)[Calculate multiplication
+    and division](#part0034.xhtml)[Convert temperatures](#part0035.xhtml)[Find the
+    largest](#part0036.xhtml)[Reverse a given string](#part0037.xhtml)[Replace every
+    character](#part0038.xhtml)[Capitalize The First Letter](#part0039.xhtml)[Convert
+    number to hours and minutes](#part0040.xhtml)[Count vowels in a given string](#part0041.xhtml)[Create
+    a new string](#part0042.xhtml)[Concatenate two strings](#part0043.xhtml)[Move
+    last three character](#part0044.xhtml)[Compute the sum](#part0045.xhtml)[Add two
+    digits](#part0046.xhtml)[Check whether a given year is a leap](#part0047.xhtml)[Check
+    given positive number](#part0048.xhtml)[Check a string starts with ''Java''](#part0049.xhtml)[Check
+    two given integer values](#part0050.xhtml)[Find a value which is nearest to 100](#part0051.xhtml)Introduction
+    to JavascriptJavascript is a  scripting language, used to validate html form data,
+    before submitting to the server. Now a days javaScript is also used for server
+    side development (Read node.js)What can I do with Javascript?a.   You can perform
+    client side validation.b.   You can give dynamic behavior to static HTML pages.c.   Show
+    animations on web paged.   You can update partial portion of page using AJAX.
+
+
+    e. Develop Server side applications using frameworks like node.jsJavascript is
+    interpreted languageJavascript is interpreted language, write once and attach
+    it to HTML page. No further compilation is required.Is there any relation between
+    JavaScript and Java?Absolutely there is no relation between JavaScript and Java.What
+    is ECMAScript?ECMAScript is a standard, JavaScript is the language that implement
+    ECMAScript standard.Is JavaScript supports Unicode?JavaScript programs are written
+    in Unicode. ECMAScript 5 standard supports Unicode 3.Is JavaScript case-sensitive?Yes
+    JavaScript is a case sensitive language.Is it compulsory to end statement using
+    ;?Many languages like Java, C, C++ use ; as statement terminator. Usage of ; is
+    optional in JavaScript, but I always prefer to use ; to maintain consistency.Is
+    JavaScript support automatic garbage collection?Yes, JavaScript support automatic
+    garbage collection, whenever JavaScript interpreter finds an unreachable object
+    (or) variable, it frees the memory allocated for that variable (or) object.Is
+    JavaScript an object oriented language?Yes, JavaScript is an object-oriented language,
+    but the kind of inheritance it provides is different from the inheritance provided
+    by languages like Java and C++. JavaScript supports Prototype inheritance.Javascript:
+    Hello world programhelloWorld.html'
+  toc: []
+  trans: '
+
+
+    ![](img/image_rsrc3JX.jpg)
+
+
+    # 快速学习 JavaScript 与 JavaScript 编程练习：初学者编程指南，由 J J TAM 编写
+
+
+    ## 目录
+
+    Javascript 简介
+
+    - Javascript: 问候程序
+
+    - Javascript: 变量
+
+    - Javascript: 语句
+
+    - Javascript: 注释
+
+    - JavaScript: 类型
+
+    - Javascript: 运算符
+
+    - Javascript: 算术运算符
+
+    - Javascript: 增/减运算符：++, --
+
+    - Javascript: 位运算运算符
+
+    - JavaScript: 逻辑运算符
+
+    - JavaScript: 赋值运算符
+
+    - JavaScript: 复合赋值运算符
+
+    - Javascript: 三元运算符
+
+    - JavaScript: 处理布尔值
+
+    - JavaScript: 决策：if, if-then
+
+    - Javascript: if-else-if-else 阶链
+
+    - JavaScript: 使用 switch 语句进行决策
+
+    - JavaScript: 循环
+
+    - JavaScript: do-while 循环
+
+    - JavaScript: for 循环
+
+    - JavaScript: break 语句
+
+    - JavaScript: continue 语句
+
+    - JavaScript: 标签形式的 break
+
+    - JavaScript: for in 循环
+
+    - JavaScript: for-of 循环
+
+    - JavaScript: 获取变量类型
+
+    - JavaScript: 处理字符串
+
+    - JavaScript: 嵌套函数
+
+    - JavaScript: 数组
+
+    - JavaScript: 类初类
+
+    - JavaScript: 使用类表达式定义类
+
+
+    ## JavaScript 编程练习](#part0029.xhtml)
+
+    - 显示当前的日期和时间
+
+    - 打印内容
+
+    - 显示当前日期
+
+    - 计算三角形面积
+
+    - 检查给定年份是否为闰年
+
+    - 计算乘法和除法
+
+    - 温度转换
+
+    - 寻找最大值
+
+    - 反转给定字符串
+
+    - 替换每个字符
+
+    - 首字母大写化
+
+    - 将数字转换为小时和分钟
+
+    - 统计给定字符串中的元音
+
+    - 创建一个新字符串
+
+    - 拼接两个字符串
+
+    - 移动最后三个字符
+
+    - 计算和
+
+    - 两个数字相加
+
+    - 检查给定年份是否为闰年
+
+    - 检查给定的正数
+
+    - 检查字符串是否以 ''Java'' 开头
+
+    - 检查两个给定的整数值
+
+    - 找到最  100 的值
+
+
+    ## Javascript 简介
+
+    Javascript 是一种脚本语言，用于在提交数据到服务器之前验证 HTML 表单数据。如今，JavaScript 也用于服务器端开发（阅读 `node.js`）。
+
+
+    ### 我可以用 Javascript 做什么？
+
+    a. 你可以进行客户端验证。
+
+    b. 你可以为静态 HTML 页面添加动态行为。
+
+    c. 在网页上显示动画。你可以使用 `AJAX` 更新页面的部分内容。
+
+    e. 使用 `node.js` 等框架开发服务器应用程序。
+
+
+    ### JavaScript 是解释型语言
+
+    Javascript 是解释型语言，编写一次并附加到 HTML 页面。不需要进一步编译。
+
+
+    ### JavaScript 和 Java 之间有关系吗？
+
+    JavaScript 和 Java 之间没有任何关系。
+
+
+    ### 什么是 ECMAScript？
+
+    ECMAScript 是一个标准，JavaScript 是实现 ECMAScript 标准的语言。
+
+
+    ### JavaScript 支持 Unicode 吗？
+
+    JavaScript 程序是用 Unicode 编写的。ECMAScript `5` 标准支持 Unicode `3`。
+
+
+    ### JavaScript 对大小写敏感吗？
+
+    是的，JavaScript 是一种大小写敏感的语言。
+
+
+    ### 必须使用 `;` 结束语句吗？
+
+    许多语言如 `Java`、`C`、`C++` 使用 `;` 作为语句终止符。在 JavaScript 中使用 `;` 是可选的，但我倾向于使用 `;` 以保持一致性。
+
+
+    ### JavaScript 支持自动垃圾回收吗？
+
+    是的，JavaScript 支持自动垃圾回收，当 JavaScript 解释器发现无法访问的对象或变量时，它会释放分配给该变量或对象的内存。
+
+
+    ### JavaScript 是一种面向对象的语言吗？
+
+    是的，JavaScript 是一种面向对象的语言，但它所提供的继承类型与 `Java` 和 `C++` 等语言提供的继承不同。JavaScript 支持原型继承。
+
+
+    ### Javascript: 问候程序
+
+    `helloWorld.html`
+
+
+    '
+- fmt: '
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Hello world</title></head><body><script type="text/javascript">document.write("Hello
+    World");</script></body></html>
+
+    ```
+
+    ![image_rsrc3JY.jpg](https://1.bp.blogspot.com/-JJo0VYFJ_jw/W30-Atn4RXI/AAAAAAAAK_w/rOj32k5M6cQxtQnQUGLah6aPApXRoWUNwCLcBGAs/s1600/javascript+hello+world.png)
+
+
+    ```javascript
+
+    document.write("Hello World");
+
+    ```
+
+    Above statement gives instruction to the browser to write "Hello World". Java
+    Script is embedded between `<script></script>` tags.
+
+
+    ## Javascript: Variables
+
+
+    Variable `Variable` holds a value. Following are some of the examples of variables.
+
+
+    ```javascript
+
+    var name = "Krishna"
+
+    var id=123
+
+    ```
+
+    Above statements define two variables `name`, `id`. ‘`var` keyword is used to
+    define variables.
+
+
+    ### Naming constraints
+
+    a. Variable name must begin with any alphabet, `_` (or) `$`.
+
+    b. Variable name can contain any character.
+
+    c. Spaces are not allowed between variable names.
+
+    d. Don’t use Javascript keywords as variable names.
+
+    e. Variable names are case sensitive. `Name`, `NAme`, `name` are three different
+    variables.
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">var
+    name = "Krishna" ;var id=123;document.write("name = " + name + "<br />");document.write("id
+    = " + id);</script></body></html>
+
+    ```
+
+    ![image_rsrc3JZ.jpg]
+
+    Javascript is case sensitive, so `banana`, `BaNa` are different.
+
+
+    ## Javascript: Statements
+
+
+    Statement is an executable statement, statements in Javascript are terminated
+    using `;`.
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">document.write("Hello
+    World" + "<br />");document.write("");</script></body></html>
+
+    ```
+
+    In the above example, below are statements.
+
+
+    ```javascript
+
+    document.write("Hello World" + "<br />");
+
+    document.write("");
+
+    ```
+
+    ![image_rsrc3K.jpg]
+
+
+    Comments are used to document the source code. In JavaScript, makes the program
+    more readable. Suppose you written thousand lines of program without proper documentation,
+    after some time, it is very difficult to figure out what was written. By using
+    comments, you can document your code at the time of writing program. Comments
+    won''t affect program execution. Comments simply document your code.
+
+
+    ### Javascript support 2 kinds of comments
+
+    a. Single line comments
+
+    b. Multi line comments
+
+
+    #### Single line comment
+
+    Single line comments starts with `//` It is a single line comment
+
+
+    #### Multi Line comment
+
+    Multi line comments are encoded in `/* ... */`.
+
+
+    ```html
+
+    /* I am a multiline comment */
+
+    ```
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">/*JavaScript
+    is weakly typed*/var a = 10;document.write("Value of a is " + a + "<br />");a
+    = "Hello World"; // Assigning stringdocument.write("Value of a is " + a + "<br
+    />");a = true; // Assigning booleandocument.write("Value of a is " + a + "<br
+    />");a = 10.0; // Assigning numberdocument.write("Value of a is " + a + "<br />");</script></body></html>
+
+    ```
+
+
+    ## JavaScript: Types
+
+
+    Types are used to represent the type of data. Primarily, there are two categories
+    of types:
+
+    a. Primitive types: Numbers, strings and Boolean values considered as primitive
+    types. In addition to these, special values `null`, `undefined` also considered
+    as primitive types.
+
+    b. Reference Types: Objects and arrays are considered as reference types. An object
+    is a collection of name and value pairs. Array is a collection of elements. One
+    more thing to note is that JavaScript treats functions also objects.
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Data Types</title></head><body><script >var
+    a = 10;var b = 10.0;var c = true;var d = "Hello World";var e = {name : "Hari krishna",city
+    : "Bangalore"};var f = [2, 3, 5, 7];document.write("a = " + a + " Type of " +
+    (typeof a) + "<br />");document.write("b = " + b + " Type of " + (typeof b) +
+    "<br />");document.write("c = " + c + " Type of " + (typeof c) + "<br />");document.write("d
+    = " + d + " Type of " + (typeof d) + "<br />");document.write("e = " + e + " Type
+    of " + (typeof e) + "<br />");document.write("f = " + f + " Type of " + (typeof
+    f) + "<br />");</script></body></html>
+
+    ```
+
+    Open above page in browser, you can able to see following messages in the html
+    page:
+
+    - `a = 10` Type of number
+
+    - `b = 10.0` Type of number
+
+    - `c = true` Type of boolean
+
+    - `d = Hello World` Type of string
+
+    - `e = [object Object]` Type of object
+
+    - `f = 2,3,5,7` Type of object
+
+
+    As you see the output, JavaScript treats both integer and float values as type
+    number and arrays, objects are treated as type object.
+
+
+    ## Javascript: operators
+
+
+    An operator is a symbol which perform an operation. An operator is said to be
+    unary, if it performs operation on single operand. An operator is said to be binary,
+    if it performs operation on two operands. An Operator is said to be ternary if
+    it perform operation on three operands. Javascript provides following operators:
+
+    a. Arithmetic operators
+
+    b. Increment/decrement: `++`, `--`
+
+    c. Bitwise operators
+
+    d. Logical operators
+
+    e. Assignment operators
+
+    f. String concatenation
+
+    g. Comparison operators
+
+    h. Other operators like `===` (Strict comparison), `?:`
+
+
+    ### Javascript: Arithmetic Operators
+
+
+    Following table summarizes Arithmetic operators supported by Javascript.
+
+
+    | Operator | Description |
+
+    | :--- | :--- |
+
+    | `+` | Addition (also used for String concatenation) |
+
+    | `-` | Subtraction |
+
+    | `/` | Division |
+
+    | `*` | Multiplication |
+
+    | `%` | Gives Remainder |
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title> Arithmetic Operators </title><style>p { font-size
+    : 2em ; color : seagreen ;}</style></head><body><p><script type= "text/javascript"
+    >var a = 23 ;var b = 3 ; document .write( "a = " + a + "<br />" );document .write(
+    "b = " + b + "<br />" );document .write( "a+b = " + (a + b) + "<br />" );document
+    .write( "a-b = " + (a - b) + "<br />" );document .write( "a*b = " + (a * b) +
+    "<br />" );document .write( "a/b = " + (a / b) + "<br />" );document .write( "a%b
+    = " + (a % b) + "<br />" );</script></p></body></html>
+
+    ```
+
+    Unlike Java, integer division in JavaScript returns float value.
+
+
+    ### Increment/decrement: ++, -- operators
+
+
+    Increment & decrement operators `++` operator; increments a value by 1. `--` operator;
+    decrements a value by 1.
+
+
+    #### Pre increment
+
+    Syntax: `++variable`. Pre increment increments the variable value by 1 immediately.
+
+
+    #### Post increment
+
+    Syntax: `variable++`. Post increment increments the variable value by 1 after
+    executing the statement.
+
+
+    #### Pre Decrement
+
+    Syntax: `--variable`. Pre decrement decrements the variable value by 1 immediately.
+
+
+    #### Post Decrement
+
+    Syntax: `variable--`. Post decrement decrements the variable value by 1 after
+    executing the statement.
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title> Increment & Decrement Operators </title><style>p
+    { font-size : 2em ; color : seagreen ;}</style></head><body><p><script type= "text/javascript"
+    >var a = 23 ;var b = 3 ; document .write( "a = " + a + "<br />" );document .write(
+    "a++ = " + (a ++ ) + "<br />" );document .write( "++a = " + ( ++ a) + "<br />"
+    );document .write( "a-- = " + (a -- ) + "<br />" );document .write( "--a = " +
+    ( -- a) + "<br />" );</script></p></body></html>
+
+    ```
+
+
+    ## Javascript: Bitwise operators
+
+
+    Following table summarizes the bitwise operators supported by Javascript.
+
+
+    | Operator | Description |
+
+    | :--- | :--- |
+
+    | `~` | Inverts bit pattern |
+
+    | `<<` | Perform Left shift |
+
+    | `>>` | Perform Right Shift |
+
+    | `>>>` | Perform unsigned right shift |
+
+    | `&` | Bitwise AND |
+
+    | `\|` | Bitwise OR |
+
+    | `^` | Bitwise Exclusive XOR |
+
+    '
+  raw: ' <!DOCTYPE html><html><head><title>Hello world</title></head><body><script
+    type="text/javascript">document.write("Hello World");</script></body></html>[![](image_rsrc3JY.jpg)](https://1.bp.blogspot.com/-JJo0VYFJ_jw/W30-Atn4RXI/AAAAAAAAK_w/rOj32k5M6cQxtQnQUGLah6aPApXRoWUNwCLcBGAs/s1600/javascript+hello+world.png)document.write("Hello
+    World");Above statement gives instruction to the browser to write "Hello World".
+    Java Script is embedded between <script></script> tags.Javascript: VariablesVariable
+    holds a value. Following are some of the examples of variables.var name = "Krishna"var
+    id=123Above statements define two variables name, id. ‘var’ keyword is used to
+    define variables.Naming constraintsa.   Variable name must begin with any alphabet,
+    _ (or) $.b.   Variable name can contain any character.c.   Spaces are not allowed
+    in between variable names.d.   Don’t use Javascript keywords as variable names.e.   Variable
+    names are case sensitive. Name, NAme, name are 3 different variables.variables.html<!DOCTYPE
+    html><html><head><title>Variables</title></head><body><script type="text/javascript">var
+    name = "Krishna" ;var id=123;document.write("name = " + name + "<br />");document.write("id
+    = " + id);</script></body></html>![](image_rsrc3JZ.jpg)NoteJava script is case
+    sensitive, so the names banana, Banana, BaNaNa are three different variables.Javascript:
+    StatementsStatement is an executable statement, statements in Javascript are terminated
+    using ‘;’.statements.html<!DOCTYPE html><html><head><title>Variables</title></head><body><script
+    type="text/javascript">document.write("Hello World" + "<br />");document.write("Hello
+    PTR");</script></body></html>![](image_rsrc3K0.jpg)In the above example, below
+    are the java script statements.document.write("Hello World" + "<br />");document.write("Hello
+    PTR");Javascript: commentsComments are used to document the source code. Comments
+    in javaScript, makes the program more readable. Comments are ignored by JavaScript.Suppose
+    you written thousand lines of program, with out proper documentation, after some
+    time, for the owner of the application also, it is very difficult to figure out
+    what was written.Comments solve this problem:By using comments, you can document
+    your code at the time of writing program. Comments won''t affect your program
+    execution. Comments simply document your code.Javascript support 2 kinds of comments.a.   Single
+    line commentsb.   Multi line commentsSingle line comment :Single line comments
+    starts with //// It is a single line commentMulti Line commentMulti line comments
+    are encoded in /* *//* I am a mulltiline comment */sample.html<!DOCTYPE html><html><head><title>Variables</title></head><body><script
+    type="text/javascript">/*Java script is weakly typed languageAuthor: Hari krishna*/var
+    a = 10;document.write("Value of a is " + a + "<br />");a = "Hello World"; // Assigning
+    stringdocument.write("Value of a is " + a + "<br />");a = true; // Assigning booleandocument.write("Value
+    of a is " + a + "<br />");a = 10.09; // Assigning numberdocument.write("Value
+    of a is " + a + "<br />");</script></body></html>JavaScript: TypesTypes are used
+    to represent the type of data. Primarily, there are two categories of types.a.   Primitive
+    typesb.   Reference typesPrimitive TypesNumbers, strings and Boolean values considered
+    as primitive types. In addition to these, special values null, undefined are also
+    considered as primitive types.Reference TypesObjects and arrays are considered
+    as reference types. An object is a collection of name and value pairs. Array is
+    a collection of elements.One more thing to note is that JavaScript treats functions
+    also objects.types.html<!DOCTYPE html><html><head><title>Data Types</title></head><body><script
+    >var a = 10;var b = 10.01;var c = true;var d = "Hello World";var e = {name : "Hari
+    krishna",city : "Bangalore"};var f = [2, 3, 5, 7];document.write("a = " + a +
+    " Type of a = " + (typeof a) + "<br />");document.write("b = " + b + " Type of
+    b = " + (typeof b) + "<br />");document.write("c = " + c + " Type of c = " + (typeof
+    c) + "<br />");document.write("d = " + d + " Type of d = " + (typeof d) + "<br
+    />");document.write("e = " + e + " Type of e = " + (typeof e) + "<br />");document.write("f
+    = " + f + " Type of f = " + (typeof f) + "<br />");</script></body></html>Open
+    above page in browser, you can able to see following messages in the html page.a
+    = 10 Type of a = numberb = 10.01 Type of b = numberc = true Type of c = booleand
+    = Hello World Type of d = stringe = [object Object] Type of e = objectf = 2,3,5,7
+    Type of f = objectAs you see the output, JavaScript treats both integer and float
+    values as type number and arrays, objects are treated as type object.Javascript:
+    operatorsAn operator is a symbol which perform an operationAn operator is said
+    to be unary, if it performs operation on single operand.An operator is said to
+    be binary, if it performs operation on two operandsAn Operator is said to be ternary
+    if it perform operation on three operands.Javascript provides following operators.a
+    .      Arithmetic operatorsb .      Increment/decrement:++, --c .      Bitwise
+    operatorsd .      Logical operatorse .      Assignment operatorsf .       String
+    concatenationg .      Comparison operatorsh. Other operators like === (Strict
+    comparison), ternary (?:)Javascript: Arithmetic OperatorsFollowing table summarizes
+    Arithmetic operators supported by Javascript.
+
+
+    | Operator | Description |
+
+
+    | + | Additon (also used for String concatenation) |
+
+
+    | - | Subtraction |
+
+
+    | / | Division |
+
+
+    | * | Multiplication |
+
+
+    | % | Gives Remainder |
+
+
+    arithmetic.html<!DOCTYPE html><html>  <head>  <title> Arithmetic Operators </title>  
+    <style>    p {     font-size : 2em ;     color : seagreen ;   }   </style>  </head> 
+    <body>   <p>    <script type= "text/javascript" >     var a = 23 ;     var b =
+    3 ;    document .write( "a = " + a + "<br />" );    document .write( "b = " +
+    b + "<br />" );    document .write( "a+b = " + (a + b) + "<br />" );    document
+    .write( "a-b = " + (a - b) + "<br />" );    document .write( "a*b = " + (a * b)
+    + "<br />" );    document .write( "a/b = " + (a / b) + "<br />" );    document
+    .write( "a%b = " + (a % b) + "<br />" );    </script>   </p>  </body></html>NoteUnlike
+    languages like Java, integer division in JavaScript returns float value.Javascript:
+    Increment/decrement: ++, -- operatorsIncrement & decrement operators++ Increment
+    operator; increments a value by 1-- Decrement operator; decrements a value by
+    1Pre increment    Syntax:    ++variable      pre increment operator increments
+    the variable value by 1 immediately.Post increment    Syntax:        variable++         post
+    increment operator increments the variable value by 1 after executing the current
+    statement.Pre Decrement    Syntax:        --variable         pre decrement operator
+    decrements the variable value by 1 immediately.Post Decrement    Syntax:        variable--         post
+    decrement operator decrements the variable value by 1 after executing the current
+    statement.arithmetic.html<!DOCTYPE html><html>  <head>  <title> Increment & Decrement
+    Operators </title>   <style>    p {     font-size : 2em ;     color : seagreen
+    ;   }   </style>  </head>  <body>   <p>    <script type= "text/javascript" >    
+    var a = 23 ;    document .write( "a = " + a + "<br />" );    document .write(
+    "a++ = " + (a ++ ) + "<br />" );    document .write( "++a = " + ( ++ a) + "<br
+    />" );    document .write( "a-- = " + (a -- ) + "<br />" );    document .write(
+    "--a = " + ( -- a) + "<br />" );    </script>   </p>  </body></html>Javascript:
+    Bitwise operatorsFollowing table summarizes the bitwise operators supported by
+    Javascript.
+
+
+    | Operator | Description |
+
+
+    | ~ | Inverts bit pattern |
+
+
+    | << | Perform Left shift |
+
+
+    | >> | Perform Right Shift |
+
+
+    | >>> | Perform unsigned right shift |
+
+
+    | & | Bit wise AND |
+
+
+    | &#124; | Bit wise OR |
+
+
+    | ^ | Bit wise Exclusive OR |'
+  toc: []
+  trans: '
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Hello world</title></head><body><script type="text/javascript">document.write("Hello
+    World");</script></body></html>
+
+    ```
+
+    ![image_rsrc3JY.jpg](https://1.bp.blogspot.com/-JJo0VYFJ_jw/W30-Atn4RXI/AAAAAAAAK_w/rOj32k5M6cQxtQnQUGLah6aPApXRoWUNwCLcBGAs/s1600/javascript+hello+world.png)
+
+
+    ```javascript
+
+    document.write("Hello World");
+
+    ```
+
+    上述语句指示浏览器写入 "Hello World"。JavaScript 嵌入在 `<script></script>` 标签之间。
+
+
+    ## Javascript: 变量
+
+
+    变量 `Variable` 存储一个值。以下是变量的一些示例。
+
+
+    ```javascript
+
+    var name = "Krishna"
+
+    var id=123
+
+    ```
+
+    上述语句定义了两个变量 `name` 和 `id`。使用 `var` 关键字来定义变量。
+
+
+    ### 命名限制
+
+    a. 变量名必须以字母、`_`（或 `$`）开头。
+
+    b. 变量名可以包含任何字符。
+
+    c. 变量名之间不允许有空格。
+
+    d. 不要使用 Javascript 关键字作为变量名。
+
+    e. 变量名大小敏感。`Name`、`NAme`、`name` 是三个不同的变量。
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">var
+    name = "Krishna" ;var id=123;document.write("name = " + name + "<br />");document.write("id
+    = " + id);</script></body></html>
+
+    ```
+
+    ![image_rsrc3JZ.jpg]
+
+    Javascript 是大小敏感的，因此 `banana` 和 `BaNa` 是不同的。
+
+
+    ## Javascript: 语句
+
+
+    语句是可执行的语句，Javascript 中的语句使用 `;` 结束。
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">document.write("Hello
+    World" + "<br />");document.write("");</script></body></html>
+
+    ```
+
+    在上面的示例中，下面是语句。
+
+
+    ```javascript
+
+    document.write("Hello World" + "<br />");
+
+    document.write("");
+
+    ```
+
+    ![image_rsrc3K.jpg]
+
+
+    注释用于记录源代码。在 JavaScript 中，注释使程序更具读性。假设你写了数千行程序但没有适当的文档，一段时间后，很难弄清楚写了什么。通过注释，你可以在编写程序时对代码进行说明。注释不会影响程序的执行。注释仅说明你的代码。
+
+
+    ### Javascript 支持 2 类注释
+
+    a. 单行注释
+
+    b. 多行注释
+
+
+    #### 单行注释
+
+    单行注释以 `//` 开始。这是一个单行注释。
+
+
+    #### 多行注释
+
+    多行注释编码在 `/* ... */` 中。
+
+
+    ```html
+
+    /* I am a multiline comment */
+
+    ```
+
+    <!DOCTYPE html><html><head><title>Variables</title></head><body><script type="text/javascript">/*JavaScript
+    is weakly typed*/var a = 10;document.write("Value of a is " + a + "<br />");a
+    = "Hello World"; // Assigning stringdocument.write("Value of a is " + a + "<br
+    />");a = true; // Assigning booleandocument.write("Value of a is " + a + "<br
+    />");a = 10.0; // Assigning numberdocument.write("Value of a is " + a + "<br />");</script></body></html>
+
+    ```
+
+
+    ## JavaScript: 类型
+
+
+    类型用于表示数据的类型。主要有两类类型：
+
+    a. 原始类型：数字、字符串和布尔值被视为原始类型。除了这些之外，特殊值 `null` 和 `undefined` 也被视为原始类型。
+
+    b. 引用类型：对象和数组被视为引用类型。对象是键值值对的集合。数组是元素的集合。另一点需要注意的是，JavaScript 也将函数视为对象。
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Data Types</title></head><body><script >var
+    a = 10;var b = 10.0;var c = true;var d = "Hello World";var e = {name : "Hari krishna",city
+    : "Bangalore"};var f = [2, 3, 5, 7];document.write("a = " + a + " Type of " +
+    (typeof a) + "<br />");document.write("b = " + b + " Type of " + (typeof b) +
+    "<br />");document.write("c = " + c + " Type of " + (typeof c) + "<br />");document.write("d
+    = " + d + " Type of " + (typeof d) + "<br />");document.write("e = " + e + " Type
+    of " + (typeof e) + "<br />");document.write("f = " + f + " Type of " + (typeof
+    f) + "<br />");</script></body></html>
+
+    ```
+
+    在浏览器中打开上述页面，你可以在 html 页面中看到以下消息：
+
+    - `a = 10` Type of number
+
+    - `b = 10.0` Type of number
+
+    - `c = true` Type of boolean
+
+    - `d = Hello World` Type of string
+
+    - `e = [object Object]` Type of object
+
+    - `f = 2,3,5,7` Type of
+
+
+    ## Javascript: 运算符
+
+
+    运算符是用于操作的指令。Javascript 运算符提供以下操作：
+
+    a. 算术运算符
+
+    b. 递增减运算符
+
+    c. 位运算符
+
+    d. 逻辑运算符
+
+    e. 赋值运算符
+
+    f. 字符串拼接
+
+    g. 比较运算符
+
+    h. 三元运算符
+
+
+    ### 算术运算符
+
+
+    下表总结了 Javascript 支持的算术运算符。
+
+
+    | 运算符 | 说明 |
+
+    | :--- | :--- |
+
+    | `+` | 加法（用于字符串拼接） |
+
+    | `-` | 减法 |
+
+    | `/` | 除法 |
+
+    | `*` | 乘法 |
+
+    | `%` | 取余 |
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title>Arithmetic Operators</title></head><style>p
+    { font-size : 2em ; color : seagreen ;}</style></head><body><p><script type="text/javascript"
+    >var a = 23 ;var b = 3 ; document .write( "a = " + a + "<br />" );document .write(
+    "b = " + b + "<br />" );document .write( "a+b = " + (a + b) + "<br />" );document
+    .write( "a-b = " + (a - b) + "<br />" );document .write( "a/b = " + (a / b) +
+    "<br />" );document .write( "a*b = " + (a * b) + "<br />" );document .write( "a%b
+    = " + (a % b) + "<br />" );</script></p></body></html>
+
+    ```
+
+    与 Java 不同，JavaScript 中的除法返回浮点数。
+
+
+    ### 递增减运算符： ++, --
+
+
+    递增减运算符 `++` 运算符将值加 1。`--` 运算符将值减 1。
+
+
+    #### 前递增
+
+    语法：`++variable`。立即将变量加 1。
+
+
+    #### 后递增
+
+    语法：`variable++`。在执行语句后将变量加 1。
+
+
+    #### 前递减
+
+    语法：`--variable`。立即将变量减 1。
+
+
+    #### 后递减
+
+    语法：`variable--`。在执行语句后将变量减 1。
+
+
+    ```html
+
+    <!DOCTYPE html><html><head><title> Increment & Decrement Operators </title></head><style>p
+    { font-size : 2em ; color : seagreen ;}</style></head><body><p><script type="text/javascript"
+    >var a = 23 ;var b = 3 ; document .write( "a = " + a + "<br />" );document .write(
+    "a++ = " + (a ++ ) + "<br />" );document .write( "++a = " + ( ++ a) + "<br />"
+    );document .write( "a-- = " + (a -- ) + "<br />" );document .write( "--a = " +
+    ( -- a) + "<br />" );</script></p></body></html>
+
+    ```
+
+
+    ## Javascript: 位运算符
+
+
+    下表总结了 Javascript 支持的位运算符。
+
+
+    | 运算符 | 说明 |
+
+    | :--- | :--- |
+
+    | `~` | 取反位模式 |
+
+    | `<<` | 执行左移 |
+
+    | `>>` | 执行右移 |
+
+    | `>>>` | 执行无符号右移 |
+
+    | `&` | 按位与 |
+
+    | `\|` | 按位或 |
+
+    | `^` | 按位异或 |
+
+
+    '
+- fmt: "\nBefore discuss about the Bit wise operators, will discuss about Binary representations\
+    \ of a number. \n\n## 1's complement\n1's complement simply inverts the bits,\
+    \ if the bit is set to zero, it sets the bit to 1 and if the bit is set to 1 it\
+    \ sets the bit to zero.\nEx:\n`8` in binary = `0 0 0 0 1 0 0 0`\n`1's complement(8)`\
+    \ = `1 1 1 1 0 1 1 1`\n\n## 2's complement\nNegative numbers are stored in 2's\
+    \ complement form. i.e., `-8` is 2's complement of `8`.\n2's complement is sum\
+    \ of (`1's complement of a number` + `1`)\n\nEx:\n`8` in binary = `0 0 0 0 1 0\
+    \ 0 0`\n`1's complement(8)` = `1 1 1 1 0 1 1 1`\n`2's complement(8)` =\n```\n\
+    \  1 1 1 1 0 1 1 1\n(+)             1\n-----------------\n1 1 1 1 1 0 0 0\n-----------------\n\
+    ```\n`8` in 2's complement form is `11111000`\n\n## Inversion (~)\nInversion operator\
+    \ change the bit value to zero, if it is one and change the bit value to one if\
+    \ it is zero.\nExample\n`a = 7;`\n`a` in binary format is `0 0 0 0 0 1 1 1`\n\
+    `~(a)` in binary format is `1 1 1 1 1 0 0 0`\n`~(a)` represents `-8` in binary\
+    \ format.\n\n## Bit Wise Left Shift (<<)\nLeft shift operator shifts all the bits\
+    \ to one bit left, i.e, it doubles the value.\nSyntax: `variable << n`\nleft shift\
+    \ the variable by `'n'` number of times.\n`Variable << n` is equals to `variable\
+    \ = variable * 2 power n`\n\n```javascript\nvar1 = 2;\nvar1 << 1 = 2 * 2 power\
+    \ 1 = 4\nvar1 << 2 = 2 * 2 power 2 = 8\nvar1 << 9 = 2 * 2 power 9 = 1024\n```\n\
+    \n## Bit Wise Right Shift (>>)\nRight shift operator simply shifts all the bits\
+    \ to one bit right, i.e, it simply half (divide by 2) the value\nSyntax: `variable\
+    \ >> n`\nright shift the variable by `'n'` number of times.\n`Variable >> n` is\
+    \ equals to `variable = variable / 2 power n`\n\n```javascript\nvar1 = 128;\n\
+    var1 >> 1 = 128 / (2 power 1) = 64\nvar1 >> 2 = 128 / (2 power 2) = 32\n```\n\n\
+    ## Bit Wise unsigned Right Shift (>>>)\nShifts all the bits to one bit right,\
+    \ and make the left most bit to zero.\n`-128` in 2's complement form is `11111111\
+    \ 11111111 11111111 10000000`\n`>>>` shifts the one bit right and replace leftmost\
+    \ bit by zeros\nso `(-128>>>1)` is like below\n`01111111 11111111 11111111 11000000`\
+    \ = `2147483584` (in decimal)\n\n## Bit Wise AND (&), OR (|), Exclusive OR (^)\n\
+    \n| Bit 1 | Bit 2 | & | | |\n| :--- | :--- | :--- | :--- |\n| 0 | 0 | 0 | 0 |\n\
+    | 0 | 1 | 0 | 1 |\n| 1 | 0 | 0 | 1 |\n| 1 | 1 | 1 | 1 |\n\nFor `a = 8` and `b\
+    \ = 9`.\n`a` = `0000 1000`\n`b` = `0000 1001`\n`a & b` = `0000 1000` (8 in decimal)\n\
+    `a | b` = `0000 1001` (9 in decimal)\n`a ^ b` = `0000 0001` (1 in decimal)\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title> Bitwise Operators</title>\n\
+    \  <style>\n    p {\n      font-size: 2em;\n      color: green;\n    }\n  </style>\n\
+    </head>\n<body>\n  <p>\n    <script type=\"text/javascript\">\n      var a = 7;\n\
+    \      var b = 2;\n      var c = 128;\n      var d = -128;\n      var e = 8;\n\
+    \      var f = 9;\n      document.write(\"a = \" + a + \"<br />\");\n      document.write(\"\
+    ~a = \" + ~a + \"<br />\");\n      document.write(\"b = \" + b + \"<br />\");\n\
+    \      document.write(\"b << 1 = \" + (b << 1) + \"<br />\");\n      document.write(\"\
+    b << 2 = \" + (b << 2) + \"<br />\");\n      document.write(\"b << 9 = \" + (b\
+    \ << 9) + \"<br /><br />\");\n      document.write(\"c = \" + c + \"<br />\");\n\
+    \      document.write(\"c >> 1 = \" + (c >> 1) + \"<br />\");\n      document.write(\"\
+    c >> 2 = \" + (c >> 2) + \"<br /><br />\");\n      document.write(\"d = \" + d\
+    \ + \"<br />\");\n      document.write(\"d >>> 1 = \" + (d >>> 1) + \"<br /><br\
+    \ />\");\n      document.write(\"e = \" + e + \"<br />\");\n      document.write(\"\
+    f = \" + f + \"<br />\");\n      document.write(\"e&f = \" + (e & f) + \"<br />\"\
+    );\n      document.write(\"e|f = \" + (e | f) + \"<br />\");\n      document.write(\"\
+    e^f = \" + (e ^ f) + \"<br />\");\n    </script>\n  </p>\n</body>\n</html>\n```\n\
+    \n## JavaScript: Logical operators\nJavaScript provides three logical operators,\
+    \ These are `&&`, `||`, and `!`\nLogical AND is called Conditional AND\nLogical\
+    \ OR is called Conditional OR\nLogical AND, OR are called Short circuit operators,\
+    \ see why these are called circuit soon.\n\n### AND Operator\n| Operand 1 | Operand\
+    \ 2 | Evaluates To |\n| :--- | :--- | :--- |\n| true | true | true |\n| true |\
+    \ false | false |\n| false | true | false |\n| false | false | false |\nIf the\
+    \ first statement in the expression evaluates to false, Javascript won't evaluates\
+    \ the entire expression.\n\n### OR Operator\n| Operand 1 | Operand 2 | Evaluates\
+    \ To |\n| :--- | :--- | :--- |\n| true | true | true |\n| true | false | true\
+    \ |\n| false | true | true |\n| false | false | false |\nAs shown in above table,\
+    \ `||` operator returns true if any of the operand evaluates to true, otherwise\
+    \ returns false.\nIf the first statement evaluates to true, then JavaScript won't\
+    \ evaluates the entire expression.\n\n### NOT Operator\n| Operand | Evaluates\
+    \ To |\n| :--- | :--- |\n| false | true |\n| true | false |\nIf the operand is\
+    \ false, `!` evaluates it to true. If the operand is true, `!` evaluates it to\
+    \ false.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title> Operators </title>\n\
+    \  <style>\n    p {\n      font-size: 2em;\n      color: green;\n    }\n  </style>\n\
+    </head>\n<body>\n  <p>\n    <script type=\"text/javascript\">\n      var a = true;\n\
+    \      var b = true;\n      var c = false;\n      var d = false;\n      document.write(\"\
+    a = \" + a + \"<br />\");\n      document.write(\"b = \" + b + \"<br />\");\n\
+    \      document.write(\"c = \" + c + \"<br />\");\n      document.write(\"d =\
+    \ \" + d + \"<br />\");\n      document.write(\"a&&b = \" + (a && b) + \"<br />\"\
+    );\n      document.write(\"a&&c = \" + (a && c) + \"<br />\");\n      document.write(\"\
+    c&&d = \" + (c && d) + \"<br /><br />\");\n      document.write(\"a||b = \" +\
+    \ (a || b) + \"<br />\");\n      document.write(\"a||c = \" + (a || c) + \"<br\
+    \ />\");\n      document.write(\"c||d = \" + (c || d) + \"<br />\");\n    </script>\n\
+    \  </p>\n</body>\n</html>\n```\n\n## JavaScript: Assignment operators\nAssignment\
+    \ operator is used to assign value to a variable. Since JavaScript is weakly typed\
+    \ language, you can assign any type of value to a variable.\nSyntax: `var variableName\
+    \ = value;`\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title> Variables </title>\n\
+    </head>\n<body>\n  <script type=\"text/javascript\">\n    var a = 10;\n    document.write(\"\
+    Value of a is \" + a + \"<br />\");\n    a = \"Hello World\"; // Assigning string\n\
+    \    document.write(\"Value of a is \" + a + \"<br />\");\n    a = true; // Assigning\
+    \ boolean\n    document.write(\"Value of a is \" + a + \"<br />\");\n    a = 10.09;\
+    \ // Assigning number\n    document.write(\"Value of a is \" + a + \"<br />\"\
+    );\n  </script>\n</body>\n</html>\n```\n\n## JavaScript: Compound Assignment operator\n\
+    JavaScript supports compound assignments.\n\n### Compound Assignment\nSyntax:\
+    \ `variable operator= value`\nExample:\nlets say\n```javascript\nvar a = 10;\n\
+    ```\n`a+=10` evaluates to `a=a+10`\n\n| Compound Operator | Example | Description\
+    \ |\n| :--- | :--- | :--- |\n| += | a+=10 | a=a+10 |\n| -= | a-=10 | a=a-10 |\n\
+    | *= | a*=10 | a=a*10 |\n| /= | a/=10 | a=a/10 |\n| >>= | a>>=10 | a=a>>10 |\n\
+    | <<= | a<<=10 | a=a<<10 |\n| >>>= | a>>>=10 | a=a>>>10 |\n| &= | a&=10 | a=a&10\
+    \ |\n| |= | a&#124;=10 | a=a&#124;10 |\n| ^= | a^=10 | a=a^10 |\n"
+  raw: 'Before discuss about the Bit wise operators, will discuss about Binary representations
+    of a number1''s Complement1''s complement simply inverts the bits, if the bit
+    is set to zero, it sets the bit to 1 and if the bit is set to 1 it sets the bit
+    to zero.Ex:8 in binary            = 0 0 0 0 1 0 0 01''s complement(8) = 1 1 1
+    1 0 1 1 12''s complementNegative numbers are stored in 2''s complement form. i.e.,
+    -8 is 2''s complement of 8.2''s complement is sum of (1''s complement of a number
+    + 1)Ex:8 in binary            = 0 0 0 0 1 0 0 01''s complement(8) = 1 1 1 1 0
+    1 1 12''s complement(8) =               (+) 1                               -----------------                                1
+    1 1 1 1 0 0 0                               -----------------8 in 2''s complement
+    form is 11111000Inversion (~)Inversion operator change the bit value to zero,
+    if it is one and change the bit value to one if it is zero.Examplea = 7;a in binary
+    format is       0 0 0 0 0 1 1 1~(a) in binary format is  1 1 1 1 1 0 0 0~(a) represents
+    -8 in binary format.         Bit Wise Left Shift(<<)Left shift operator shifts
+    all the bits to one bit left, i.e, it doubles the value.Syntax:    variable <<
+    n    left shift the variable by ''n'' number of times.    Variable << n is equals
+    to variable = variable * 2 power n         var1 = 2;        var1 << 1 = 2 * 2
+    power 1 = 4        var1 << 2 = 2 * 2 power 2 = 8        var1 << 9 = 2 * 2 power
+    9 = 1024Bit Wise Right Shift(>>)Right shift operator simply shifts all the bits
+    to one bit right, i.e, it simply half (divide by 2) the value   Syntax:   variable
+    >> n      right shift the variable by ''n'' number of times.   Variable >> n is
+    equals to variable = variable / 2 power n   var1 = 128;   var1 >> 1 = 128 / (2
+    power 1) = 64   var1 >> 2 = 128 / (2 power 2) = 32Bit Wise unsigned Right Shift(>>>)Shifts
+    all the bits to one bit right, and make the left most bit to zero.-128 in 2''s
+    complement form is11111111 11111111 11111111 10000000>>> shifts the one bit right
+    and replace leftmost bit by zeroso (-128>>>1) is like below sequence01111111 11111111
+    11111111 11000000 = 2147483584 (in decimal)Bit Wise AND(&), OR(|), Exclusive OR(^)
+
+
+    | Bit 1 | Bit 2 | & | &#124; |
+
+
+    | 0 | 0 | 0 | 0 |
+
+
+    | 0 | 1 | 0 | 1 |
+
+
+    | 1 | 0 | 0 | 1 |
+
+
+    | 1 | 1 | 1 | 1 |
+
+
+    For a = 8 and b = 9.a    = 0000 1000b    = 0000 1001a&b  = 0000 1000 (8 in decimal)a    =
+    0000 1000b    = 0000 1001a|b  = 0000 10001 (9 in decimal)a     = 0000 1000b     =
+    0000 1001a^b   = 0000 0001 (1 in decimal)bitwise.html<!DOCTYPE html><html><head>    
+    <title> Bitwise Operators </title>     <style>         p {             font-size
+    : 2em ;             color : seagreen ;        }     </style></head><body>    
+    <p>         <script type= "text/javascript" >             var a = 7 ;            
+    var b = 2 ;             var c = 128 ;             var d = - 128 ;            
+    var e = 8 ;             var f = 9 ;             document .write( "a = " + a +
+    "<br />" );             document .write( "~a = " + ~ a + "<br /><br />" );            
+    document .write( "b = " + b + "<br />" );             document .write( "b << 1
+    = " + (b << 1 ) + "<br />" );             document .write( "b << 2 = " + (b <<
+    2 ) + "<br />" );             document .write( "b << 9 = " + (b << 9 ) + "<br
+    /><br />" );             document .write( "c = " + c + "<br />" );            
+    document .write( "c >> 1 = " + (c >> 1 ) + "<br />" );             document .write(
+    "c >> 2 = " + (c >> 2 ) + "<br /><br />" );             document .write( "d =
+    " + d + "<br />" );             document .write( "d >>> 1 = " + (d >>> 1 ) + "<br
+    /><br />" );             document .write( "e = " + e + "<br />" );            
+    document .write( "f = " + f + "<br />" );             document .write( "e&f =
+    " + (e & f) + "<br />" );             document .write( "e|f = " + (e | f) + "<br
+    />" );             document .write( "e^f = " + (e ^ f) + "<br />" );         </script>    
+    </p></body></html>JavaScript: Logical operatorsJavaScript provides three logical
+    operators, These are &&(AND), || (OR), and !(NOT)Logical AND is also called Conditional
+    ANDLogical OR is also called Conditional ORLogical AND, OR are called Short circuit
+    operators, will see why these are called short circuit soon.Logical AND Operator
+
+
+    | Operand1 | Operand2 | Evaluates To |
+
+
+    | true | true | true |
+
+
+    | true | false | false |
+
+
+    | false | true | false |
+
+
+    | false | false | false |
+
+
+    Why Logical AND is called short circuit operator?Since if the first statement
+    in the expression evaluates to false, then Javascript won''t evaluates the entire
+    expression.Logical OR Operator
+
+
+    | Operand1 | Operand2 | Evaluates To |
+
+
+    | true | true | true |
+
+
+    | true | false | true |
+
+
+    | false | true | true |
+
+
+    | false | false | false |
+
+
+    As shown in the above table, || operator returns true if any of the operand evaluates
+    to true, otherwise returns false.Why Logical OR is called short circuit operator?Since
+    if the first statement evaluates to true, then JavaScript won''t evaluates the
+    entire expression.Logical (!)NOT operator
+
+
+    | Operand | Evaluates To |
+
+
+    | false | true |
+
+
+    | true | false |
+
+
+    If the operand is false, ! Operator evaluates it to trueIf the operand is true,
+    ! Operator evaluates it to false.logical.html<!DOCTYPE html><html><head>     <title>
+    Logical Operators </title>     <style>         p {             font-size : 2em
+    ;             color : seagreen ;        }     </style></head><body>     <p>        
+    <script type= "text/javascript" >             var a = true ;             var b
+    = true ;             var c = false ;             var d = false ;             document
+    .write( "a = " + a + "<br />" );             document .write( "b = " + b + "<br
+    />" );             document .write( "c = " + c + "<br />" );             document
+    .write( "d = " + d + "<br />" );             document .write( "a&&b = " + (a &&
+    b) + "<br />" );             document .write( "a&&c = " + (a && c) + "<br />"
+    );             document .write( "c&&d = " + (c && d) + "<br /><br />" );            
+    document .write( "a||b = " + (a || b) + "<br />" );             document .write(
+    "a||c = " + (a || c) + "<br />" );             document .write( "c||d = " + (c
+    || d) + "<br />" );         </script>     </p></body></html>JavaScript: Assignment
+    operatorsAssignment operator is used to assign value to a variable. Since JavaScript
+    is weakly typed language, you can assign any type of value to a variable.Syntaxvar
+    variableName = value;variables.html<!DOCTYPE html><html><head>     <title> Variables
+    </title></head><body>     <script type= "text/javascript" >         var a = 10
+    ;         document .write( "Value of a is " + a + "<br />" );        a = "Hello
+    World" ; // Assigning string         document .write( "Value of a is " + a + "<br
+    />" );        a = true ; // Assigning boolean         document .write( "Value
+    of a is " + a + "<br />" );        a = 10.09 ; // Assigning number         document
+    .write( "Value of a is " + a + "<br />" );     </script></body></html>JavaScript:
+    Compound Assignment operatorJavaScript supports compound assignments    Compound
+    Assignment      Syntax:         variable operator= value      Example:         lets
+    say         var a = 10;         a+=10 evaluates to a=a+10
+
+
+    | Compound Operator | Example | Description |
+
+
+    | += | a+=10 | a=a+10 |
+
+
+    | -= | a-=10 | a=a-10 |
+
+
+    | *= | a*=10 | a=a*10 |
+
+
+    | /= | a/=10 | a=a/10 |
+
+
+    | >>= | a>>=10 | a=a>>10 |
+
+
+    | <<= | a<<=10 | a=a<<10 |
+
+
+    | >>>= | a>>>=10 | a=a>>>10 |
+
+
+    | &= | a&=10 | a=a&10 |
+
+
+    | &#124;= | a&#124;=10 | a=a&#124;10 |
+
+
+    | ^= | a^=10 | a=a^10 |'
+  toc: []
+  trans: "\n\n在讨论位运算符之前，我们先来讨论数字的二进制表示法。\n\n## 反码 (1's complement)\n反码简单地反转所有位：如果位为\
+    \ 0，则将其设置为 1；如果位为 1，则将其设置为 0。\n示例：\n`8` 的二进制形式 = `0 0 0 0 1 0 0 0`\n`1's complement(8)`\
+    \ = `1 1 1 1 0 1 1 1`\n\n## 补码 (2's complement)\n负数以补码的形式存储。例如，`-8` 是 `8` 的补码。\n\
+    补码是（一个数字的反码` + `1`）之和。\n\n示例：\n`8` 的二进制形式 = `0 0 0 0 1 0 0 0`\n`1's complement(8)`\
+    \ = `1 1 1 1 0 1 1 1`\n`2's complement(8)` =\n```\n  1 1 1 1 0 1 1 1\n(+)    \
+    \         1\n-----------------\n1 1 1 1 1 0 0 0\n-----------------\n```\n`8` 的补码形式为\
+    \ `11111000`\n\n## 取反 (~)\n取反运算符将位为 1 的值改为 0，将位为 0 的值改为 1。\n示例：\n`a = 7;`\n`a`\
+    \ 的二进制格式为 `0 0 0 0 0 1 1 1`\n`~(a)` 的二进制格式为 `1 1 1 1 1 0 0 0`\n`~(a)` 在二进制格式中表示\
+    \ `-8`。\n\n## 位左移 (<<)\n左移运算符将所有位向左移动一位，即：使数值翻倍。\n语法：`variable << n`\n将变量向左移动\
+    \ `'n'` 次。\n`Variable << n` 等于 `variable = variable * 2 power n`\n\n```javascript\n\
+    var1 = 2;\nvar1 << 1 = 2 * 2 power 1 = 4\nvar1 << 2 = 2 * 2 power 2 = 8\nvar1\
+    \ << 9 = 2 * 2 power 9 = 1024\n```\n\n## 位右移 (>>)\n右移运算符简单是将所有位向右移动一位，即：使数值减半（除以\
+    \ 2）。\n语法：`variable >> n`\n将变量向右移动 `'n'` 次。\n`Variable >> n` 等于 `variable = variable\
+    \ / 2 power n`\n\n```javascript\nvar1 = 128;\nvar1 >> 1 = 128 / (2 power 1) =\
+    \ 64\nvar1 >> 2 = 128 / (2 power 2) = 32\n```\n\n## 位无符号右移 (>>>)\n将所有位向右移动一位，并将最左位设置为\
+    \ 0。\n`-128` 的补码形式为 `11111111 11111111 11111111 10000000`\n`>>>` 将位向右移并用 0 替换最左位\n\
+    所以 `(-128>>>1)` 如下所示：\n`01111111 11111111 11111111 11000000` = `2147483584`（十进制）\n\
+    \n## 位与 (&), 位或 (|), 位异异 (^)\n\n| 位 1 | 位 2 | & | | | |\n| :--- | :--- | :---\
+    \ | :--- |\n| 0 | 0 | 0 | 0 |\n| 0 | 1 | 0 | 1 |\n| 1 | 0 | 0 | 1 |\n| 1 | 1 |\
+    \ 1 | 1 |\n\n当 `a = 8` 且 `b = 9` 时。\n`a` = `0000 1000`\n`b` = `0000 1001`\n`a\
+    \ & b` = `0000 1000`（十进制 8）\n`a | b` = `0000 1001`（十进制 9）\n`a ^ b` = `0000 0001`（十进制\
+    \ 1）\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title> 位运算符</title>\n  <style>\n\
+    \    p {\n      font-size: 2em;\n      color: green;\n    }\n  </style>\n</head>\n\
+    <body>\n  <p>\n    <script type=\"text/javascript\">\n      var a = 7;\n     \
+    \ var b = 2;\n      var c = 128;\n      var d = -128;\n      var e = 8;\n    \
+    \  var f = 9;\n      document.write(\"a = \" + a + \"<br />\");\n      document.write(\"\
+    ~a = \" + ~a + \"<br />\");\n      document.write(\"b = \" + b + \"<br />\");\n\
+    \      document.write(\"b << 1 = \" + (b << 1) + \"<br />\");\n      document.write(\"\
+    b << 2 = \" + (b << 2) + \"<br />\");\n      document.write(\"b << 9 = \" + (b\
+    \ << 9) + \"<br />\");\n      document.write(\"c = \" + c + \"<br />\");\n   \
+    \   document.write(\"c >> 1 = \" + (c >> 1) + \"<br />\");\n      document.write(\"\
+    c >> 2 = \" + (c >> 2) + \"<br />\");\n      document.write(\"d = \" + d + \"\
+    <br />\");\n      document.write(\"d >>> 1 = \" + (d >>> 1) + \"<br />\");\n \
+    \     document.write(\"e = \" + e + \"<br />\");\n      document.write(\"f = \"\
+    \ + f + \"<br />\");\n      document.write(\"e & f = \" + (e & f) + \"<br />\"\
+    );\n      document.write(\"e | f = \" + (e | f) + \"<br />\");\n      document.write(\"\
+    e ^ f = \" + (e ^ f) + \"<br />\");\n    </script>\n  </p>\n</body>\n</html>\n\
+    ```\n\n## JavaScript: 逻辑运算符\nJavaScript 提供了三种逻辑运算符：`&&`、`||` 和 `!`。\n逻辑与被称为短路与。\n\
+    逻辑或被称为短路或。\n`&&` 和 `||` 被称为短路运算符，原因如下：\n\n### 与 运算符\n| 操作数 1 | 操作数 2 | 结果 |\n\
+    | :--- | :--- | :--- |\n| true | true | true |\n| true | false | false |\n| false\
+    \ | true | false |\n| false | false | false |\n如果表达式中的第一个语句为假，JavaScript 将不会执行整个表达式。\n\
+    \n### 或运算符\n| 操作数 1 | 操作数 2 | 结果 |\n| :--- | :--- | :--- |\n| true | true | true\
+    \ |\n| true | false | true |\n| false | true | true |\n| false | false | false\
+    \ |\n如上表所示，如果任一操作数为真，`||` 运算符返回真，否则返回假。如果第一个语句为真，JavaScript 将不会执行整个表达式。\n\n###\
+    \ 非 运算符\n| 操作数 | 结果 |\n| :--- | :--- |\n| false | true |\n| true | false |\n如果操作数为假，`!`\
+    \ 将其变为真。如果操作数为真，`!` 将其变为假。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <title>\
+    \ 运算符</title>\n  <style>\n    p {\n      font-size: 2em;\n      color: green;\n\
+    \    }\n  </style>\n</head>\n<body>\n  <p>\n    <script type=\"text/javascript\"\
+    >\n      var a = true;\n      var b = true;\n      var c = false;\n      var d\
+    \ = false;\n      document.write(\"a = \" + a + \"<br />\");\n      document.write(\"\
+    b = \" + b + \"<br />\");\n      document.write(\"c = \" + c + \"<br />\");\n\
+    \      document.write(\"d = \" + d + \"<br />\");\n      document.write(\"a &&\
+    \ b = \" + (a && b) + \"<br />\");\n      document.write(\"a && c = \" + (a &&\
+    \ c) + \"<br />\");\n      document.write(\"c && d = \" + (c && d) + \"<br /><br\
+    \ />\");\n      document.write(\"a || b = \" + (a || b) + \"<br />\");\n     \
+    \ document.write(\"a || c = \" + (a || c) + \"<br />\");\n      document.write(\"\
+    c || d = \" + (c || d) + \"<br />\");\n    </script>\n  </p>\n</body>\n</html>\n\
+    ```\n\n## JavaScript: 赋值运算符\n赋值运算符用于给变量赋值。由于 JavaScript 是一种弱类型语言，你可以为变量分配任何类型的值。\n\
+    语法：`var variableName = value;`\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n \
+    \ <title> 变量</title>\n</head>\n<body>\n  <script type=\"text/javascript\">\n \
+    \   var a = 10;\n    document.write(\"a 的值为: \" + a + \"<br />\");\n    a = \"\
+    Hello World\"; // 赋值字符串\n    document.write(\"a 的值为: \" + a + \"<br />\");\n \
+    \   a = true; // 赋值布尔值\n    document.write(\"a 的值为: \" + a + \"<br />\");\n  \
+    \  a = 10.09; // 赋值数字\n    document.write(\"a 的值为: \" + a + \"<br />\");\n  </script>\n\
+    </body>\n</html>\n```\n\n## JavaScript: 复合赋值运算符\nJavaScript 支持复合赋值。\n\n### 复合赋值\n\
+    语法：`variable operator= value`\n示例：\n假设\n```javascript\nvar a = 10;\n```\n`a+=10`\
+    \ 等于 `a=a+10`\n\n| 复合运算符 | 示例 | 描述 |\n| :--- | :--- | :--- |\n| += | a+=10 | a=a+10\
+    \ |\n| -= | a-=10 | a=a-10 |\n| *= | a*=10 | a=a*10 |\n| /= | a/=10 | a=a/10 |\n\
+    | >>= | a>>=10 | a=a>>10 |\n| <<= | a<<=10 | a=a<<10 |\n| >>>= | a>>>=10 | a=a>>>10\
+    \ |\n| &= | a&=10 | a=a&10 |\n| |= | a&#124;=10 | a=a&#124;10 |\n| ^= | a^=10\
+    \ | a=a¹⁰ |\n\n"
+- fmt: "\n# Compound Operators\n\n## Javascript: Ternary operator\nTernary operator\
+    \ `(?: )` returns one of two expressions depending on a condition.\n\n### Syntax\n\
+    ```\ntest ? expression1 : expression2\n```\nReturns `expression1` if the `test`\
+    \ condition evaluates to true otherwise returns `expression2`.\n\n### Example\n\
+    ```javascript\nvar x = prompt(\"Enter an Integer\", \"100\");\nvar y = (x > 10)?\
+    \ \"x is greater than 10\": \"x is less than 11\";\n```\nIf you enter a value\
+    \ which is `> 10`, then `y` is assigned message `\"x is greater than 10\"`, else\
+    \ `y` is assigned message `\"x is less than 11\"`.\n\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <title> Ternary </title>\n</head>\n<body>\n    <script type=\
+    \ \"text/javascript\" >\n        var x = prompt( \"Enter an Integer\" , \"100\"\
+    \ );\n        var y = (x > 10 ) ? \"x is greater than 10\" : \"x is less than\
+    \ 1\" ;\n        document .write( \"value of x is \" + x + \"<br />\" );\n   \
+    \     document .write(y);\n    </script>\n</body>\n</html>\n```\n\n## Javascript:\
+    \ Working with boolean\nFollowing values are considered `false`:\na. `undefined`\n\
+    b. `Null`\nc. `0`, `-0`, or `NaN`\n\nAll other values, which are not mentioned\
+    \ above, are considered `true`.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \    <title> true and false </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var x = \"\" ;\n        var y = \"h\" ;\n        var z = 0 ;\n  \
+    \      if (x) {\n            document .write( \"x is true\" + \"<br />\" );\n\
+    \        } else {\n            document .write( \"x is false\" + \"<br />\" );\n\
+    \        }\n        if (y) {\n            document .write( \"y is true\" + \"\
+    <br />\" );\n        } else {\n            document .write( \"y is false\" + \"\
+    <br />\" );\n        }\n        if (z) {\n            document .write( \"z is\
+    \ true\" + \"<br />\" );\n        } else {\n            document .write( \"z is\
+    \ false\" + \"<br />\" );\n        }\n    </script>\n</body>\n</html>\n```\n\n\
+    ## Javascript: Decision Making: if, if-then\n\n### if statement\n`if` tell the\
+    \ program execute the section of code when the condition evaluates to true.\n\n\
+    ### Syntax\n```javascript\nif(condition){\n    // Executes if the condition true\n\
+    }\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> if statement </title>\n\
+    </head>\n<body>\n    <script type= \"text/javascript\" >\n        var a = prompt(\
+    \ \"Enter any Integer\" , 100 );\n        if (a % 2 == 0 ) {\n            document\
+    \ .write( \"You entered even number\" );\n        }\n    </script>\n</body>\n\
+    </html>\n```\nOpen above html file in browser, it prompts for input. If you enter\
+    \ even number, it prints the message `'You entered even number'` else it prints\
+    \ nothing.\n\n### if-else statement\nIf the condition true, then if block code\
+    \ executed. other wise else block code executed.\n\n### Syntax\n```javascript\n\
+    if(condition){}else{}\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>\
+    \ if-else statement </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var a = prompt( \"Enter any Integer\" , 100 );\n        if (a % 2\
+    \ == 0 ) {\n            document .write( \"You entered even number\" );\n    \
+    \    } else {\n            document .write( \"You odd number\" );\n        }\n\
+    \    </script>\n</body>\n</html>\n```\nOpen above html in browser, it prompts\
+    \ for input. If you enter even number, it prints the message `'You entered number'`\
+    \ else it prints `\"You odd number\"`.\n\n### Javascript: if-else-if ladder\n\
+    In my previous post, I explained about statement, if-else statement. In addition\
+    \ to these, Javascript provides if-else if ladder, used to choose a solution.\n\
+    \n### Syntax\n```javascript\nif(condition){\n    //Block of statements\n}else\
+    \ if(condition){\n    //Block of statements\n}else{\n    //Block of statements\n\
+    }\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> if-else-else statement\
+    \ </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n       \
+    \ var marks = prompt( \"Enter marks\" ,100 );\n        if (marks < 35 ) {\n  \
+    \          document .write( \"You are failed\" );\n        } else if (marks <\
+    \ 50 ) {\n            document .write( \"You are passed and got third class\"\
+    \ );\n        } else if (marks < 60 ) {\n            document .write( \"You are\
+    \ passed and got second class\" );\n        } else if (marks < 70 ) {\n      \
+    \      document .write( \"You are passed and got first class\" );\n        } else\
+    \ {\n            document .write( \"You are passed and got distinction\" );\n\
+    \        }\n    </script>\n</body>\n</html>\n```\n\n## Javascript: Decision making\
+    \ using switch statement\nThe body of a switch statement is known as a switch\
+    \ block. A statement in the switch block can be labelled with one or more case\
+    \ or default labels. The switch statement evaluates its expression, then executes\
+    \ all statements that follow the matching case.\n\n### Syntax\n```javascript\n\
+    switch(expression){\n    case expression1:\n        //statements\n        break;\n\
+    \    case expression2:\n        //statements\n        break;\n    default:\n \
+    \       //statements\n}\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n   \
+    \ <title> switch statement </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var day = parseInt (prompt( \"Enter an integer between 1 and 7\"\
+    \ , 6 ));\n        switch (day) {\n            case 1 :\n                document\
+    \ .write( \"Sunday\" );\n                break;\n            case 2 :\n      \
+    \          document .write( \"Monday\" );\n                break;\n          \
+    \  case 3 :\n                document .write( \"Tueday\" );\n                break;\n\
+    \            case 4 :\n                document .write( \"Wednesday\" );\n   \
+    \             break;\n            case 5 :\n                document .write( \"\
+    ThursDay\" );\n                break;\n            case 6 :\n                document\
+    \ .write( \"Friday\" );\n                break;\n            case 7 :\n      \
+    \          document .write( \"Saturday\" );\n                break;\n        \
+    \    default :\n                document .write( \"You entered day number\" );\n\
+    \        }\n    </script>\n</body>\n</html>\n```\nLoad above html page in a browser,\
+    \ it prompts for input. If you enter 1, it prints Sunday; if you enter 2, it prints\
+    \ Monday; if you enter 3, it prints Tueday; if you enter 4, it prints Wednesday;\
+    \ if you enter 5, it prints ThursDay; if you enter 6, it prints Friday; if you\
+    \ enter 7, it prints Saturday for all other inputs, it print \"You entered day\
+    \ number\".\n\n## Javascript: loops\nLoops are used to repeat a section of code\
+    \ until given condition is true. JavaScript support following loop constructs:\n\
+    a. `while`\nb. `do…while`\nc. `for`\n\n### Javascript: while loop\n`while` statement\
+    \ executes a block of statements until expression is true.\n\n### Syntax\n```javascript\n\
+    while (expression) {\n    //statements\n}\n```\n\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <title> while loop </title>\n</head>\n<body>\n    <script type= \"\
+    text/javascript\" >\n        var number = parseInt (prompt( \"Enter a number\"\
+    \ , \"10\" ));\n        document .write( \"<h2>Even numbers from 0 to \" + number\
+    \ + \" are </h2>\" );\n        var i = 0 ;\n        while (i <= number) {\n  \
+    \          document .write(i + \"<br />\" );\n            i += 2 ;\n        }\n\
+    \    </script>\n</body>\n</html>\n```\nLoad above page in browser, it prompts\
+    \ for a number, and print all the even numbers from 0 to the number given by user.\n\
+    \n### Javascript: do-while loop\n`do-while` is also a loop construct like `while`,\
+    \ but evaluates its expression at the bottom of the loop instead of the top.\n\
+    \n### Syntax\n```javascript\ndo {\n    //statement(s)\n} while (expression);\n\
+    ```\nAbove statement executes block of statement until the condition is true.\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> do-while loop </title>\n\
+    </head>\n<body>\n    <script type= \"text/javascript\" >\n        var number =\
+    \ parseInt (prompt( \"Enter a number\" , \"0\" ));\n        document .write( \"\
+    <h2>Even numbers from 0 to \" + number + \" are </h2>\" );\n        var i = 0\
+    \ ;\n        do {\n            document .write(i + \"<br />\" );\n           \
+    \ i += 2 ;\n        } while (i <= number);\n    </script>\n</body>\n</html>\n\
+    ```\nLoad above page in browser, it prompts for a number, and print all the even\
+    \ numbers from 0 to the number by by user.\n\n Javascript: for loop\n`for` statement\
+    \ provides a compact way to iterate over a range of values.\n\n### Syntax\n```javascript\n\
+    for(initialization; condition; update){\n    //statements to be executed\n}\n\
+    ```\n`for` loop execute the statements until the condition evaluates to false.\n\
+    a. `Initialization` section executed once, at the starting of loop.\nb. `Condition`\
+    \ section evaluated every time, before executing loop statements.\nc. `update`\
+    \ section executes immediately after execution of loop finishes.\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <title> for loop </title>\n</head>\n<body>\n\
+    \    <script type= \"text/javascript\" >\n        var number = parseInt (prompt(\
+    \ \"Enter a number\" , \"10\" ));\n        document .write( \"<h2>Even numbers\
+    \ from 0 to \" + number + \" are </h2>\" );\n        for ( var i = 0 ; i <= number;\
+    \ i += 2 ) {\n            document .write(i + \"<br />\" );\n        }\n    </script>\n\
+    </body>\n</html>\n```\nLoad above page in browser, it prompts for a number, and\
+    \ print all the even numbers from 0 to the number by user.\n\n### Javascript:\
+    \ break statement\nWe already saw the use of `break` in `switch` case. Similarly,\
+    \ `break` is used in `while`, `do-while` and `for` loops to come out of a loop.\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> while loop </title>\n\
+    </head>\n<body>\n    <script type= \"text/javascript\" >\n        var number =\
+    \ parseInt (prompt( \"Enter a number less than100\" , \"10\" ));\n        document\
+    \ .write( \"<h2>Even numbers from 0 to \" + number + \" are </h2>\" );\n     \
+    \   var i = 0 ;\n        while (i <= number) {\n            if (number >= 100\
+    \ ) {\n                document .write( \"Input should be < 100\" );\n       \
+    \         break ;\n            }\n            document .write(i + \"<br />\" );\n\
+    \            i += 2 ;\n        }\n    </script>\n</body>\n</html>\n```\nLoad above\
+    \ page in browser, it prompt for input, if you enter a number which is `>=100`,\
+    \ it prints the message `\"Input should be < 100\"` and come put of the loop,\
+    \ else it print all the even numbers from 0 to given number.\n\n### Javascript:\
+    \ continue statement\n`continue` statement skips the current iteration of a `for`,\
+    \ `while`, `do-while` loops.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n   \
+    \ <title> continue statement </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var number = parseInt (prompt( \"Enter a number less than10\" , \"\
+    0\" ));\n        document .write( \"<h2>Even numbers from 0 to \" + number + \"\
+    \ are </h2>\" );\n        var i = 0 ;\n        while (i <= number) {\n       \
+    \     if ((i % 4 ) == 0 ) {\n                i += 2 ;\n                continue\
+    \ ;\n            }\n            document .write(i + \"<br />\" );\n          \
+    \  i += 2 ;\n        }\n    </script>\n</body>\n</html>\n```\nLoad above page\
+    \ in browser, it prompts for a number and prints all even up to the number which\
+    \ are not divisible by 4.\n\n## Javascript: break in label\n`label` is a group\
+    \ of statements, identified by `name`.\n\n### Syntax\n```javascript\nlabelName:{\n\
+    \    statement 1\n    statement 2\n    ....\n    statement N\n}\n```\n`break`\
+    \ is also available in label form.\n\n### Syntax\n```javascript\nbreak labelName;\n\
+    ```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> break label example\
+    \ </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n       \
+    \ outer :\n        for ( var i = 0 ; i < 10 ; i ) {\n            inner : for (\
+    \ var j = 0 ; j < 10 ; j ) {\n                document .write(i + \",\" + j +\
+    \ \"<br />\" );\n                if (i * j > 10 )\n                    break outer;\n\
+    \            }\n        }\n    </script>\n</body>\n</html>\n```\n\n## Javascript:\
+    \ for in loop\n`for in` loop is used to get all enumerable properties of object.\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> for in loop Example </title>\n\
+    </head>\n<body>\n    <script>\n        var employee = {\n            firstName\
+    \ : \"Hari Krishna\" ,\n            lastName : \"Gurram\" ,\n            age :\
+    \ 26 ,\n            getDetails : function () {\n                return \"[firstName\
+    \ = \" + firstName + \", lastName = \" + lastName + \"]\";\n            }\n  \
+    \      }\n        for (property in employee) {\n            document .write(property\
+    \ + \" : \" + employee[property] + \"<br />\" );\n        }\n    </script>\n</body>\n\
+    </html>\n```\nOpen above page in browser, you can able to see following text.\
+    \ As you observe the output, `for in` loop don’t display the built-in properties\
+    \ like `toString`, because built-in methods are not enumerable. Since arrays are\
+    \ also special kind of objects in JavaScript, you can traverse array using `for\
+    \ in`.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> for in loop </title>\n\
+    </head>\n<body>\n    <script>\n        var arr = [ \"Hari Krishna\" , \"Gurram\"\
+    \ , 26 ];\n        for (index in arr) {\n            document .write(index + \"\
+    \ : \" + arr[index] + \"<br />\" );\n        }\n    </script>\n</body>\n</html>\n\
+    ```\nOpen above page in browser, you can able to see following: 0 : Hari Krishna\n\
+    1 : Gurram\n2 : 26\n\n### Javascript: for-of loop\n`for-of` loop is used to iterate\
+    \ over iterable objects like `String`, `Array`, `TypedArray`, and `Set`.\n\n```javascript\n\
+    var arr = [ 2 , 3 , 5 , 7 ,1 , 3 ];\nfor ( var i of arr) {\n    console.log(i);\n\
+    }\n```\nOutput: 2357113\n\n### Javascript: get the type of variable\nJavascript\
+    \ provide `typeof` operator, to get the type of a variable.\n\n### Syntax\n```javascript\n\
+    typeof variable\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>\
+    \ Type of variables </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var a = 10 ;\n        var b = 10.0 ;\n        var c = true ;\n  \
+    \      var d = \"Hello\" ;\n        var e = new String ( \"Hello\" );\n      \
+    \  document .write( \"a = \" + a + \", type = \" + typeof (a) + \"<br />\" );\n\
+    \        document .write( \"b = \" + b + \", type = \" + typeof (b) + \"<br />\"\
+    \ );\n        document .write( \"c = \" + c + \", type = \" + typeof (c) + \"\
+    <br />\" );\n        document .write( \"d = \" + d + \", type = \" + typeof (d)\
+    \ + \"<br />\" );\n        document .write( \"e = \" + e + \", type = \" + typeof\
+    \ (e) + \"<br />\" );\n    </script>\n</body>\n</html>\n```\n\n## Javascript:\
+    \ Working with strings\nString is a collection of characters. Unlike other languages,\
+    \ JavaScript don’t have any data type to represent character.\n\n### How to define\
+    \ a string?\nEnclose collection of characters in single quotes (or) double quotes.\n\
+    ```javascript\nvar str1 = \"Hello World\";\nvar str2 = 'Hello World';\n```\nYou\
+    \ can also create string by `String` object.\n```javascript\nvar str3 = new String(\"\
+    Hello World\");\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>\
+    \ strings </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n\
+    \        var str1 = \"Good Morning\" ;\n        var str2 = 'Good Afternoon' ;\n\
+    \        var str3 = new String ( \"Good Night\" );\n        document .write(str1\
+    \ + \"<br />\" );\n        document .write(str2 + \"<br />\" );\n        document\
+    \ .write(str3 + \"<br />\" );\n    </script>\n</body>\n</html>\n```\nHow the string\
+    \ in JavaScript is different from other languages?\nAll strings are Unicode internally.\n\
+    \n## Javascript: Nested functions\nYou can define function inside other function.\
+    \ Embedded function can able to access all the variables defined in enclosing\
+    \ function.\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> Embedded\
+    \ Functions </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n\
+    \        //Calculate (b*b - 4*a*c)/2*a\n        function descriminator(a, b, c)\
+    \ {\n            return (square(b) - 4 * a * c) / twice(a);\n        }\n     \
+    \   function square(x) {\n            return (x * x);\n        }\n        function\
+    \ twice(x) {\n            return 2 * x;\n        }\n        document .write( \"\
+    Discriminator of 5, 10, 3 is : + descriminator(5, 10, 3 ));\n    </script>\n</body>\n\
+    </html>\n```\nScope of variables: Embedded function can able to access all the\
+    \ variables defined in parent function and any variable where parent function\
+    \ has access.\n\n## Javascript: Array\nArray is an ordered collection of elements.\n\
+    \n### Syntax\n```javascript\nvar array = [elem1, elem2 ....N];\nvar array = new\
+    \ Array(size)\n```\n\n### How to access element of an array?\nBy using index notation,\
+    \ you can access element of an array. Index starts from 0.\n\n### Syntax\n```javascript\n\
+    array[index]\narr[0] : Return the first element\narr[1] : Return 2 nd element\n\
+    …..arr[n] : Return n-1th element\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \    <title> Array </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var arr = [ 2 , \"Hello\" ,123.5 , true ];\n        document .write(\
+    \ \"arr[0] : \" + arr[0] + \"<br />\" );\n        document .write( \"arr[1] :\
+    \ \" + arr[1] + \"<br />\" );\n        document .write( \"arr[2] : \" + arr[2]\
+    \ + \"<br />\" );\n        document .write( \"arr[3] : \" + arr[3] + \"<br />\"\
+    \ );\n        document .write( \"arr[4] : \" + arr[4] + \"<br />\" );\n      \
+    \  document .write( typeof arr);\n    </script>\n</body>\n</html>\n```\nOpen above\
+    \ page in browser, you can able to see following data:\n0 : 2\n1 : Hello\n2 :\
+    \ 123.5\n3 : true\n4 : undefined\n\n### What is the maximum index number in array?\n\
+    Arrays in JavaScript use 32-bit indexes. So the maximum array index number is\
+    \ `((2^32)-2) = 4294967294` (Since arrays are zero indexed).\n\n## Javascript:\
+    \ Introduction to Classes\nClasses are used to create objects. Let me try to explain\
+    \ with an example.\n\n```javascript\nclass Employee {\n    constructor(id, firstName,\
+    \ lastName){\n        this.id = id;\n        this.firstName = firstName;\n   \
+    \     this.lastName = lastName;\n    }\n}\n```\nAs you see above snippet, I defined\
+    \ a class `Employee`, which has 3 properties `id`, `firstName`, `lastName`.\n\
+    a. `class` keyword is used to create a class.\nb. `constructor` function is used\
+    \ to initialize the properties.\nYou can define object to the class `Employee`\
+    \ using `new` operator, followed by constructor function.\n```javascript\nvar\
+    \ emp1 = new Employee(1, \"Sailaja\", \"PTR\");\n```\n\n```javascript\nclass Employee\
+    \ {\n    constructor(id, firstName, lastName){\n        this.id = id;\n      \
+    \  this.firstName = firstName;\n        this.lastName = lastName;\n    }\n}\n\
+    function print_employee_info(emp){\n    console.log( \"id : \" + emp.id);\n  \
+    \  console.log( \"firstName : \" + emp.firstName);\n    console.log( \"lastName\
+    \ : \" + emp.lastName);\n}\nvar emp1 = new Employee( 1 , \"Sailaja\" , \"PTR\"\
+    \ );\nprint_employee_info(emp1);\n```\nOutput:\nid : 1\nfirstName : Sailaja\n\
+    lastName : PTR\n\n## Javascript: Define class using class expressions\nYou can\
+    \ define a class using class expression also.\n\n### Syntax\n```javascript\nvar/let\
+    \ ClassName = class {\n    //Class Body\n}\nvar/let ClassName = class ClazzName{\n\
+    \    //Class Body\n}\n```\n\n### Example 1\n```javascript\nvar Employee = class\
+    \ {\n    constructor(id, firstName, lastName){\n        this.id = id;\n      \
+    \  this.firstName = firstName;\n        this.lastName = lastName;\n    }\n};\n\
+    ```\n\n```javascript\nvar Employee = class {\n    constructor(id, firstName, lastName){\n\
+    \        this.id = id;\n        this.firstName = firstName;\n        this.lastName\
+    \ = lastName;\n    }\n};\nfunction print_employee_info(emp){\n    console.log(\
+    \ \"id : \" + emp.id);\n    console.log( \"firstName : \" + emp.firstName);\n\
+    \    console.log( \"lastName : \" + emp.lastName);\n}\nvar emp1 = new Employee(\
+    \ 1 , \"Sailaja\" , \"PTR\" );\nprint_employee_info(emp1);\n```\n\n### Example\
+    \ 2\n```javascript\nvar MyEmployee = class {\n    constructor(id, firstName, lastName){\n\
+    \        this.id = id;\n        this.firstName = firstName;\n        this.lastName\
+    \ = lastName;\n    }\n};\n```\n\n## Javascript Coding Exercises\n\n### Display\
+    \ the current day and time\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta\
+    \ charset=\"utf-8\">\n    <title>JavaScript current day and time</title>\n</head>\n\
+    <body></body>\n</html>\n```\n```javascript\nvar today = new Date();\nvar day =\
+    \ today.getDay();\nvar daylist = [\"Sunday\",\"Monday\",\"Tuesday \",\"Thursday\"\
+    ,\"Friday\",\"Saturday\"];\nconsole.log(\"Today is : \" + daylist[day] + \".\"\
+    );\nvar hour = today.getHours();\nvar minute = today.getMinutes();\nvar second\
+    \ = today.getSeconds();\nvar prepand = (hour >= 12)? \" PM \":\" AM \";\nhour\
+    \ = (hour >= 12)? hour - 12: hour;\nif (hour===0 && prepand===' PM '){\n    if\
+    \ (minute===0 && second===0){hour=12}else{hour=12;prepand=' PM'};\n}\nif (hour===0\
+    \ && prepand===' AM '){\n    if (minute===0 && second===0){hour=12}else{hour=12;prepand='\
+    \ AM'};\n}\nconsole.log(\"Current Time : \"+hour + prepand + \" : + minute + \"\
+    \ : \" + second);\n```\n\n### Print the contents of the current window\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Print\
+    \ the page.</title>\n</head>\n<body>\n    <p></p><p>Click the button to print\
+    \ the current page.</p>\n    <button onclick=\"print_current_page()\">Print this\
+    \ page</button>\n</body>\n</html>\n```\n```javascript\nfunction print_current_page(){\n\
+    \    window.print();\n}\n```\n\n### Display the current date\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Write a JavaScript\
+    \ program to get the current date.</title>\n</head>\n<body></body>\n</html>\n\
+    ```\n```javascript\nvar today = new Date();\nvar dd = today.getDate();\nvar mm\
+    \ = today.getMonth()+1;\nvar yyyy = today.getFullYear();\nif(dd<10){dd='0'+dd;}\n\
+    if(mm<10){mm='0'+mm;}\ntoday = mm+'-'+dd+'-'+yyyy;\nconsole.log(today);\ntoday\
+    \ = mm+'/'+dd+'/'+yyyy;\nconsole.log(today);\ntoday = dd+'-'+mm+'-'+yyyy;\nconsole.log(today);\n\
+    today = dd+'/'+mm+'/'+yyyy;\nconsole.log(today);\n```\n\n### Find the area of\
+    \ a triangle\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <title>The area of a triangle</title>\n</head>\n<body></body>\n</html>\n\
+    ```\n```javascript\nvar side1 = 5;\nvar side2 = 6;\nvar side3 = 7;\nvar s = (side1\
+    \ + side2 + side3)/2;\nvar area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));\n\
+    console.log(area);\n```\n\n### Check whether a given year is a leap year\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Find\
+    \ Leap Year</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\nfunction\
+    \ leapyear(year){\n    return (year % 100 === 0) ? (year % 400 === 0) : (year\
+    \ % 4 === 0);\n}\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\n\
+    console.log(leapyear(1700));\nconsole.log(leapyear(1800));\nconsole.log(leapyear(100));\n\
+    ```\nOutput: true true false false false\n\n### Calculate multiplication and division\
+    \ of two numbers\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>JavaScript program to calculate multiplication and division\
+    \ of two numbers </title>\n    <style type=\"text/css\">body {margin:30px;}</style>\n\
+    </head>\n<body>\n    <form>\n        1st Number : <input type=\"text\" id=\"firstNumber\"\
+    \ /><br>\n        2nd Number: <input type=\"text\" id=\"secondNumber\" /><br>\n\
+    \        <input onClick=\"multiplyBy()\" Value=\"Multiply\" />\n        <input\
+    \ onClick=\"divideBy()\" Value=\"Divide\" />\n    </form>\n    <p>The Result is\
+    \ : <br><span id=\"result\"></span></p>\n</body>\n</html>\n```\n```javascript\n\
+    function multiplyBy(){\n    num1 = document.getElementById(\"firstNumber\").value;\n\
+    \    num2 = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 * num2;\n}\nfunction divideBy(){\n    num1 = document.getElementById(\"\
+    firstNumber\").value;\n    num2 = document.getElementById(\"secondNumber\").value;\n\
+    \    document.getElementById(\"result\").innerHTML = num1 / num2;\n}\n```\n\n\
+    ### Convert temperatures and from celsius, Fahrenheit\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Write a JavaScript program\
+    \ to convert temperatures and from celsius, fahrenheit</title>\n</head>\n<body></body>\n\
+    </html>\n```\n```javascript\nfunction cToF(celsius){\n    var cTemp = celsius;\n\
+    \    var cToF = cTemp * 9 / 5 + 32;\n    var message = cTemp+'C is ' + cToF +\
+    \ '°F.';\n    console.log(message);\n}\nfunction fToC(fahrenheit){\n    var fTemp\
+    \ = fahrenheit;\n    var fToCel = (fTemp - 32) * 5 / 9;\n    var message = fTemp+'F\
+    \ is ' + fToCel + '°C.';\n    console.log(message);\n}\ncToF(60);\nfToC(45);\n\
+    ```\nOutput: 60°C is 140°F.,45°F is 22.22222222222°C.\n\n### Find the largest\
+    \ of three integers\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>JavaScript program to find the largest of three integers.</title>\n\
+    </head>\n<body></body>\n</html>\n```\n```javascript\nfunction max_of_three(x,\
+    \ y, z){\n    max_val = 0;\n    if (x > y){\n        max_val = x;\n    } else{\n\
+    \        max_val = y;\n    }\n    if (z > max_val){\n        max_val = z;\n  \
+    \  }\n    return max_val;\n}\nconsole.log(max_of_three(1,0,1));\nconsole.log(max_of_three(0,-10,-20));\n\
+    console.log(max_of_three(1000,5,40));\n```\nOutput: 1,0,1000.\n\n### Reverse a\
+    \ given string\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"\
+    utf-8\">\n    <title>JavaScript program to reverse a given string.</title>\n</head>\n\
+    <body></body>\n</html>\n```\n```javascript\nfunction string_reverse(str){\n  \
+    \  return str.split(\"\").reverse().join(\"\");\n}\nconsole.log(string_reverse(\"\
+    resource\"));\nconsole.log(string_reverse(\"www\"));\nconsole.log(string_reverse(\"\
+    JavaScript\"));\n```\nOutput: ecouserjwtpircavaJ\n\n### Replace every character\
+    \ with the character following it in the alphabet\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>JavaScript program to\
+    \ replace every character in a given string with the character following it in\
+    \ the alphabet.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\n\
+    function LetterChanges(text){\n    var s = text.split('');\n    for (var i = 0;\
+    \ i < s.length; i++) {\n        // Caesar ciphers\n        switch(s[i]) {\n  \
+    \          case ' ':break;\n            case 'z':s[i] = 'a';break;\n         \
+    \   case 'Z':s[i] = 'A';break;\n            default:s[i] = String.fromCharCode(1\
+    \ + s[i].charCodeAt(0));\n        }\n        // Upper-case vowels\n        switch(s[i])\
+    \ {\n            case 'a': case 'e': case 'i': case 'o': case 'u':\n         \
+    \   s[i] = s[i].toUpperCase();\n        }\n    }\n    return s.join('');\n}\n\
+    console.log(LetterChanges(\"PYTHON\"));\nconsole.log(LetterChanges(\"W3R\"));\n\
+    console.log(LetterChanges(\"php\"));\n```\nOutput: QZUIPOX4SqIq\n\n### Capitalize\
+    \ The First Letter of Each Word Of A Given String\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>JavaScript program to\
+    \ capitalize the first letter of each word of a given string.</title>\n</head>\n\
+    <body></body>\n</html>\n```\n```javascript\nfunction capital_letter(str){\n  \
+    \  str = str.split(\" \");\n    for (var i = 0, x = str.length; i < x; i++) {\n\
+    \        str[i] = str[i][0].toUpperCase() + str[i].substr(1);\n    }\n    return\
+    \ str.join(\" \");\n}\nconsole.log(capital_letter(\"Write a JavaScript program\
+    \ to capitalize the first letter of each word of a given string.\"));\n```\nOutput:\
+    \ Write A JavaScript Program To Capitalize The First Letter Of Each Word Of A\
+    \ Given String.\n\n### Convert number to hours and minutes\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n    <title>JavaScript program to convert given\
+    \ number to hours and minutes.</title>\n</head>\n<body></body>\n</html>\n```\n\
+    ```javascript\nfunction time_convert(num){\n    var hours = Math.floor(num / 60);\n\
+    \    var minutes = num % 60;\n    return hours + \":\" + minutes;\n}\nconsole.log(time_convert(71));\n\
+    console.log(time_convert(45));\nconsole.log(time_convert(144));\n```\nOutput:\
+    \ 1:11,2:24\n\n### Count vowels in a given string\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"\
+    width=device-width\">\n    <title>JavaScript program to count the number of vowels\
+    \ in a given string.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\n\
+    function vowel_Count(str){\n    return str.replace(/aeiou]/g, \"\").length;\n\
+    }\nconsole.log(vowel_Count(\"Python\"));\nconsole.log(vowel_Count(\"html\"));\n\
+    ```\nOutput: 51\n\n### Create a new string\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>JavaScript program to create a new string without the first and\
+    \ last character.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\n\
+    function without_first_end(str){\n    return str.substring(1, str.length - 1);\n\
+    }\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+    console.log(without_first_end('PHP'));\n```\nOutput: avaScripH\n\n### Concatenate\
+    \ two strings Except their first character\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>JavaScript program to concatenate two strings except their first\
+    \ character.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\nfunction\
+    \ concatenate(str1, str2){\n    str1 = str1.substring(1, str1.length);\n    str2\
+    \ = str2.substring(1, str2.length) \n    return str1 + str2;\n}\nconsole.log(concatenate(\"\
+    PHP\",\"JS\"));\nconsole.log(concatenate(\"A\",\"B\"));\nconsole.log(concatenate(\"\
+    AA\",\"BB\"));\n```\nOutput: HABS\n\n### Move last three start of a specified\
+    \ string\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to move last three character to the start of a given string. The string\
+    \ length must be 3.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\n\
+    function right_three(str) {\n    if (str.length > 1){\n        return str.slice(-3)\
+    \ + str.slice(0, -3);\n    }\n    return str;\n}\nconsole.log(right_three(\"Python\"\
+    ));\nconsole.log(right_three(\"JavaScript\"));\nconsole.log(right_three(\"Hi\"\
+    ));\n```\nOutput: honPytJavaScr\n\n### Compute the sum of three elements of a\
+    \ given array of length 3\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta\
+    \ charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n    <title>JavaScript program to compute the sum of three elements of a given\
+    \ array of length 3.</title>\n</head>\n<body></body>\n</html>\n```\n```javascript\n\
+    function sum_three(nums){\n    return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10,\
+    \ 32, 20]));\nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+    \ -11]));\n```\nOutput: 6221-3\n\n### Add two digits of a positive integer of\
+    \ length two\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"\
+    >\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>JavaScript\
+    \ program to add two digits of a positive integer of length two.</title>\n</head>\n\
+    <body></body>\n</html>\n```\n```javascript\nfunction add_two_digits(n){\n    return\
+    \ n % 10 + Math.floor(n / 10);\n}\nconsole.log(add_two_digits(25))\nconsole.log(add_two_digits(50))\n\
+    ```\nOutput: 75\n"
+  raw: 'compound.html<!DOCTYPE html><html><head>     <title> Compound Operators </title>    
+    <style>         p {             font-size : 2em ;             color : seagreen
+    ;        }     </style></head><body>     <p>         <script type= "text/javascript"
+    >             var a = 7 ;             document .write( "a = " + a + "<br />" );            
+    document .write( "(a+=10) = " + (a += 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a-=10) = " + (a -= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a*=10) = " + (a *= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a/=10) = " + (a /= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a%=10) = " + (a %= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a>>=10) = " + (a >>= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a<<=10) = " + (a <<= 10 ) + "<br />" );            a = 7 ;            
+    document .write( "(a>>>=10) = " + (a >>>= 10 ) + "<br />" );            a = 7
+    ;             document .write( "(a&=10) = " + (a &= 10 ) + "<br />" );            a
+    = 7 ;             document .write( "(a|=10) = " + (a |= 10 ) + "<br />" );            a
+    = 7 ;             document .write( "(a^=10) = " + (a ^= 10 ) + "<br />" );        
+    </script>     </p></body></html>Javascript: Ternary operatorTernary operator(
+    ?: )   Returns one of two expressions depending on a condition.  Syntax test ?
+    expression1 : expression2Returns expression1 if the “test” condition evaluates
+    to true other wise returns expression2.Examplevar x = prompt("Enter an Integer",
+    "100");var y = (x > 10)? "x is greater than 10": "x is less than 11";If you enter
+    a value which is > 10, then y is assigned with message "x is greater than 10",
+    else y is assigned with message "x is less than 11".ternary.html<!DOCTYPE html><html><head>    
+    <title> Ternary </title></head><body>     <script type= "text/javascript" >        
+    var x = prompt( "Enter an Integer" , "100" );        var y = (x > 10 ) ? "x is
+    greater than 10" : "x is less than 11" ;         document .write( "value of x
+    is " + x + "<br />" );         document .write(y);     </script></body></html>JavaScript:
+    Working with boolean valuesFollowing values are considered as false.a .      undefinedb
+    .      Nullc .      +0, −0, or NaNd .      Empty stringAll other values, which
+    are not mentioned above, are considered as true.bool.html<!DOCTYPE html><html><head>    
+    <title> true and false </title></head><body>     <script type= "text/javascript"
+    >         var x = "" ;         var y = "h" ;         var z = 0 ;         if (x)
+    {             document .write( "x is true" + "<br />" );        } else {            
+    document .write( "x is false" + "<br />" );        }         if (y) {            
+    document .write( "y is true" + "<br />" );        } else {             document
+    .write( "y is false" + "<br />" );        }         if (z) {             document
+    .write( "z is true" + "<br />" );        } else {             document .write(
+    "z is false" + "<br />" );        }     </script></body></html>JavaScript: Decision
+    Making: if, if-thenif statement"if" tell the program execute the section of code
+    when the condition evaluates to true.Syntaxif(condition){         // Executes
+    if the condition true}if.html<!DOCTYPE html><html><head>     <title> if statement
+    </title></head><body>     <script type= "text/javascript" >         var a = prompt(
+    "Enter any Integer" , 100 );         if (a % 2 == 0 ) {             document .write(
+    "You entered even number" );        }     </script></body></html>Open above html
+    file in browser, it prompts for input. If you enter even number, it prints the
+    message ''You entered even number'' else it prints nothing.if-else statementIf
+    the condition true, then if block code executed. other wise else block code executed.Syntax:if(condition){}else{}ifelse.html<!DOCTYPE
+    html><html><head>     <title> if-else statement </title></head><body>     <script
+    type= "text/javascript" >         var a = prompt( "Enter any Integer" , 100 );        
+    if (a % 2 == 0 ) {             document .write( "You entered even number" );        }
+    else {             document .write( "You entered odd number" );        }     </script></body></html>Open
+    above html file in browser, it prompts for input. If you enter even number, it
+    prints the message ''You entered even number'' else it prints "You entered odd
+    number".Javascript: if-else-if-else ladderIn my previous post, I explained about
+    if statement, if-else statement. In addition to these, Javascript provides if-else
+    if- else ladder, used to choose a solution, when you had multiple alternatives.Syntaxif(condition){         //Block
+    of statements}else if(condition){         //Block of statements}else{         //Block
+    of statements}ladder.html<!DOCTYPE html><html><head>     <title> if-else if-else
+    statement </title></head><body>     <script type= "text/javascript" >        
+    var marks = prompt( "Enter Your marks" , 100 );         if (marks < 35 ) {            
+    document .write( "You are failed" );        } else if (marks < 50 ) {            
+    document .write( "You are passed and got third class" );        } else if (marks
+    < 60 ) {             document .write( "You are passed and got second class" );        }
+    else if (marks < 70 ) {             document .write( "You are passed and got first
+    class" );        } else {             document .write( "You are passed and got
+    distinction" );        }     </script></body></html>JavaScript: Decision making
+    using switch statementThe body of a switch statement is known as a switch block.
+    A statement in the switch block can be labelled with one or more case or default
+    labels. The switch statement evaluates its expression, then executes all statements
+    that follow the matching case label.Syntaxswitch(expression){         case expression1:                           //statements                           break;         case
+    expression2:                           //statements                           break;         default:                  //statements}switch.html<!DOCTYPE
+    html><html><head>     <title> switch statement </title></head><body>     <script
+    type= "text/javascript" >         var day = parseInt (prompt( "Enter an integer
+    between 1 and 7" , 6 ));         switch (day) {             case 1 :                
+    document .write( "Sunday" );                 break ;             case 2 :                
+    document .write( "Monday" );                 break ;             case 3 :                
+    document .write( "Tueday" );                 break ;             case 4 :                
+    document .write( "Wednesday" );                 break ;             case 5 :                
+    document .write( "ThursDay" );                 break ;             case 6 :                
+    document .write( "Friday" );                 break ;             case 7 :                
+    document .write( "Saturday" );                 break ;             default :                
+    document .write( "You entered wrong day number" );        }     </script></body></html>Load
+    above html page in a browser, it prompts for input.If you enter 1, it prints SundayIf
+    you enter 2, it prints MondayIf you enter 3, it prints TuedayIf you enter 4, it
+    prints WednesdayIf you enter 5, it prints ThursDayIf you enter 6, it prints FridayIf
+    you enter 7, it prints Saturdayfor all other inputs, it print "You entered wrong
+    day number".JavaScript: loopsLoops are used to repeat a section of code until
+    given condition is true. JavaScript support following loop constructs.a .     
+    whileb .      do…whilec .      forJavaScript: while loopwhile statement executes
+    a block of statements until expression is trueSyntaxwhile (expression) {      //statements}while.html<!DOCTYPE
+    html><html><head>     <title> while loop </title></head><body>     <script type=
+    "text/javascript" >         var number = parseInt (prompt( "Enter a number" ,
+    "10" ));         document .write( "<h2>Even numbers from 0 to " + number + " are
+    </h2>" );         var i = 0 ;         while (i <= number) {             document
+    .write(i + "<br />" );            i += 2 ;        }     </script></body></html>Load
+    above page in browser, it prompts for a number, and print all the even numbers
+    from 0 to the number given by user.JavaScript: do-while loopdo-whiledo-while is
+    also a loop construct like while, but evaluates its expression at the bottom of
+    the loop instead of the top.Syntaxdo {   //statement(s)} while (expression);Above
+    statement executes block of statement until the condition is true.doWhile.html<!DOCTYPE
+    html><html><head>     <title> do-while loop </title></head><body>     <script
+    type= "text/javascript" >         var number = parseInt (prompt( "Enter a number"
+    , "10" ));         document .write( "<h2>Even numbers from 0 to " + number + "
+    are </h2>" );         var i = 0 ;         do {             document .write(i +
+    "<br />" );            i += 2 ;        } while (i <= number);     </script></body></html>Load
+    above page in browser, it prompts for a number, and print all the even numbers
+    from 0 to the number given by user.JavaScript: for loopThe for statement provides
+    a compact way to iterate over a range of values.Syntax    for(initialization;
+    condition; update){        //statements to be executed    }for loop execute the
+    statements until the condition evaluates to false.a .      Initialization section
+    executed only once, at the starting of loop.b .      Condition section evaluated
+    every time, before executing the loop statementsc .      update section executes
+    immediately after every execution of loop finishes.for.html<!DOCTYPE html><html><head>    
+    <title> for loop </title></head><body>     <script type= "text/javascript" >        
+    var number = parseInt (prompt( "Enter a number" , "10" ));         document .write(
+    "<h2>Even numbers from 0 to " + number + " are </h2>" );         for ( var i =
+    0 ; i <= number; i += 2 ) {             document .write(i + "<br />" );       
+     }     </script></body></html>Load above page in browser, it prompts for a number,
+    and print all the even numbers from 0 to the number given by user.JavaScript:
+    break statementWe already saw the use of break in switch case. Similarly, break
+    is used in while, do-while and for loops to come out of a loop.break.html<!DOCTYPE
+    html><html><head>     <title> while loop </title></head><body>     <script type=
+    "text/javascript" >         var number = parseInt (prompt( "Enter a number less
+    than 100" , "10" ));         document .write( "<h2>Even numbers from 0 to " +
+    number + " are </h2>" );         var i = 0 ;         while (i <= number) {            
+    if (number >= 100 ) {                 document .write( "Input should be < 100"
+    );                 break ;            }             document .write(i + "<br />"
+    );            i += 2 ;         }     </script></body></html>Load above page in
+    browser, it prompt for input, if you enter a number which is >=100, it prints
+    the message "Input should be < 100" and come put of the loop, else it print all
+    the even numbers from 0 to given number.JavaScript: continue statementcontinue
+    statement skips the current iteration of a for, while, do-while loops.continue.html<!DOCTYPE
+    html><html><head>     <title> continue statement </title></head><body>     <script
+    type= "text/javascript" >         var number = parseInt (prompt( "Enter a number
+    less than 100" , "10" ));         document .write( "<h2>Even numbers from 0 to
+    " + number + " are </h2>" );         var i = 0 ;         while (i <= number) {            
+    if ((i % 4 ) == 0 ) {                i += 2 ;                 continue ;            }            
+    document .write(i + "<br />" );            i += 2 ;        }     </script></body></html>Load
+    above page in browser, it prompts for a number and prints all even numbers up
+    to the number, which are not divisible by 4.JavaScript: break in label formlabel
+    is a group of statements, identified by using labelname.Syntax    labelName:{      statement
+    1      statement 2      …....      statement N    }break is also available in
+    label form.Syntaxbreak labelName;breakLabel.html<!DOCTYPE html><html><head>    
+    <title> break label example </title></head><body>     <script type= "text/javascript"
+    >        outer :             for ( var i = 0 ; i < 10 ; i ++ ) {                inner
+    : for ( var j = 0 ; j < 10 ; j ++ ) {                     document .write(i +
+    "," + j + "<br />" );                     if (i * j > 10 )                        
+    break outer;                }            }     </script></body></html>JavaScript:
+    for in loopfor in loop is used to get all enumerable properties of object.forin.html<!DOCTYPE
+    html><html><head>     <title> for in loop Example </title></head><body>     <script>        
+    var employee = {            firstName : "Hari Krishna" ,            lastName :
+    "Gurram" ,            age : 26 ,            getDetails : function () {                
+    return "[firstName = " + firstName + ", lastName = " + lastName + "]" ;            }        }        
+    for (property in employee) {             document .write(property + " : " + employee[property]
+    + "<br />" );        }     </script></body></html>Open above page in browser,
+    you can able to see following text. As you observe the output, for-in loop don’t
+    display the built-in properties like toString, it is because built-in methods
+    are not enumerablefirstName : Hari KrishnalastName : Gurramage : 26getDetails
+    : function (){ return "[firstName = " + firstName + ", lastName = " + lastName
+    + "]"; }Since arrays are also special kind of objects in JavaScript, you can traverse
+    array using for-in loop.forin.html<!DOCTYPE html><html><head>     <title> for
+    in loop Example </title></head><body>     <script>         var arr = [ "Hari Krishna"
+    , "Gurram" , 26 ];         for (index in arr) {             document .write(index
+    + " : " + arr[index] + "<br />" );        }     </script></body></html>Open above
+    page in browser, you can able to see following text.0 : Hari Krishna1 : Gurram2
+    : 26JavaScript: for-of loopfor-of loop is used to iterate over iterable objects
+    like String, Array, TypedArray, Map and Set.HelloWorld.jsvar arr = [ 2 , 3 , 5
+    , 7 , 11 , 13 ];for ( var i of arr) {   console.log(i);}Output23571113JavaScript:
+    get the type of variableJavascript provide typeof operator, to get the type of
+    a variable.Syntaxtypeof variableNametype.html<!DOCTYPE html><html><head>     <title>
+    Type of variables </title></head><body>     <script type= "text/javascript" >        
+    var a = 10 ;         var b = 10.09 ;         var c = true ;         var d = "Hello"
+    ;         var e = new String ( "Hello" );         document .write( "a = " + a
+    + ", type = " + typeof (a) + "<br />" );         document .write( "b = " + b +
+    ", type = " + typeof (b) + "<br />" );         document .write( "c = " + c + ",
+    type = " + typeof (c) + "<br />" );         document .write( "d = " + d + ", type
+    = " + typeof (d) + "<br />" );         document .write( "e = " + e + ", type =
+    " + typeof (e) + "<br />" );     </script></body></html>JavaScript: Working with
+    stringsString is a collection of characters. Unlike other languages, JavaScript
+    don’t have any data type to represent character.How to define a string?Enclose
+    collection of characters in single quotes (or) double quotes.var str1 = "Hello
+    World";var str2 = ''Hello World'';You can also create string by using String object.var
+    str3 = new String("Hello World");string.html<!DOCTYPE html><html><head>     <title>
+    strings </title></head><body>     <script type= "text/javascript" >         var
+    str1 = "Good Morning" ;         var str2 = ''Good Afternoon'' ;         var str3
+    = new String ( "Good Night" );         document .write(str1 + "<br />" );        
+    document .write(str2 + "<br />" );         document .write(str3 + "<br />" );    
+    </script></body></html>How the string in JavaScript is different from other languages?All
+    strings are Unicode internally.JavaScript: Nested functionsYou can define function
+    inside other function. Embedded function can able to access all the variables
+    defined in enclosing function.embedded.html<!DOCTYPE html><html><head>     <title>
+    Embedded Functions </title></head><body>     <script type= "text/javascript" >        
+    //Calculate (b*b - 4*a*c)/2*a         function descriminator(a, b, c) {            
+    return (square(b) - 4 * a * c) / twice(a);             function square(x) {                
+    return (x * x);            }             function twice(x) {                 return
+    2 * x;            }        }         document .write( "Discriminator of 5, 10,
+    3 is : " + descriminator( 5 , 10 , 3 ));     </script></body></html>Open above
+    page in browser, you can able to see following message.Discriminator of 5, 10,
+    3 is : 4Scope of variablesEmbedded function can able to access all the variables
+    defined in parent function and any other variable where parent function has access.JavaScript:
+    ArrayArray is an ordered collection of elements.Syntaxvar arrayName = [elem1,
+    elem2 .... elemN];var arrayName = new Array(size)How to access element of an array?By
+    using index notation, you can access element of an array. Index starts from 0.SyntaxarrayName[index]arr[0]
+    : Return the first elementarr[1] : Return 2 nd  element…..…..arr[n] : Return n-1th
+    elementarray.html<!DOCTYPE html><html><head>     <title> Array </title></head><body>    
+    <script type= "text/javascript" >         var arr = [ 2 , "Hello" , 123.5 , true
+    ];         document .write( "arr[0] : " + arr[ 0 ] + "<br />" );         document
+    .write( "arr[1] : " + arr[ 1 ] + "<br />" );         document .write( "arr[2]
+    : " + arr[ 2 ] + "<br />" );         document .write( "arr[3] : " + arr[ 3 ] +
+    "<br />" );         document .write( "arr[4] : " + arr[ 4 ] + "<br />" );        
+    document .write( typeof arr);     </script></body></html>Open above page in browser,
+    you can able to see following data.arr[0] : 2arr[1] : Helloarr[2] : 123.5arr[3]
+    : truearr[4] : undefinedobjectWhat is the maximum index number in array?Arrays
+    in javaScript use 32-bit indexes. So the maximum array index number is ((2^32)-2)
+    = 4294967294 (Since arrays are zero indexed).JavaScript: Introduction to ClassesClasses
+    are used to create objects. Let me try to explain with an example.class Employee{ 
+    constructor(id, firstName, lastName){    this.id = id;    this.firstName = firstName;    this.lastName
+    = lastName;  }}As you see above snippet, I defined a class Employee, which has
+    3 properties id, firstName, lastName.a .      class keyword is used to create
+    a class.b .      constructor function is used to initialize the properties.You
+    can define object to the class Employee using new operator, followed by constructor
+    function.var emp1 = new Employee(1, "Sailaja", "PTR");HelloWorld.jsclass Employee{ 
+    constructor(id, firstName, lastName){     this .id = id;     this .firstName =
+    firstName;     this .lastName = lastName;  }}function print_employee_info(emp){ 
+    console.log( "id : " + emp.id);  console.log( "firstName : " + emp.firstName); 
+    console.log( "lastName : " + emp.lastName);}var emp1 = new Employee( 1 , "Sailaja"
+    , "PTR" );print_employee_info(emp1);Outputid : 1firstName : SailajalastName :
+    PTRJavaScript: Define class using class expressionsYou can define a class using
+    class expression also.Syntaxvar/let ClassName = class {         //Class Body}var/let
+    ClassName = class ClazzName{         //Class Body}Exmaple 1:var Employee = class
+    {  constructor(id, firstName, lastName){    this.id = id;    this.firstName =
+    firstName;    this.lastName = lastName;  }}HelloWorld.jsvar Employee = class { 
+    constructor(id, firstName, lastName){     this .id = id;     this .firstName =
+    firstName;     this .lastName = lastName;  }}function print_employee_info(emp){ 
+    console.log( "id : " + emp.id);  console.log( "firstName : " + emp.firstName); 
+    console.log( "lastName : " + emp.lastName);}var emp1 = new Employee( 1 , "Sailaja"
+    , "PTR" );print_employee_info(emp1);Example 2var Employee = class MyEmployee{ 
+    constructor(id, firstName, lastName){    this.id = id;    this.firstName = firstName;    this.lastName
+    = lastName;  }}HelloWorld.jsvar Employee = class MyEmployee{  constructor(id,
+    firstName, lastName){     this .id = id;     this .firstName = firstName;    
+    this .lastName = lastName;  }}function print_employee_info(emp){  console.log(
+    "id : " + emp.id);  console.log( "firstName : " + emp.firstName);  console.log(
+    "lastName : " + emp.lastName);}var emp1 = new Employee( 1 , "Sailaja" , "PTR"
+    );print_employee_info(emp1);JAVASCRIPTCODING EXERCISESCODING FOR BEGINNERSJJ TAMJAVASCRIPT
+    CODING EXERCISESDisplay the current day and timeHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><title>JavaScript current day and time</title></head><body></body></html>JAVASCRIPT
+    CODEvar today = new Date();var day = today.getDay();var daylist = ["Sunday","Monday","Tuesday","Wednesday
+    ","Thursday","Friday","Saturday"];console.log("Today is : " + daylist[day] + ".");var
+    hour = today.getHours() ;var minute = today.getMinutes();var second = today.getSeconds();var
+    prepand = (hour >= 12)? " PM ":" AM ";hour = (hour >= 12)? hour - 12: hour;if
+    (hour===0 && prepand==='' PM ''){if (minute===0 && second===0){hour=12;prepand=''
+    Noon'';}else{hour=12;prepand='' PM'';}}if (hour===0 && prepand==='' AM ''){if
+    (minute===0 && second===0){hour=12;prepand='' Midnight'';}else{hour=12;prepand=''
+    AM'' ;}}console.log("Current Time : "+hour + prepand + " : " + minute + " : "
+    + second);Print the contentsof the current windowHTML CODE<!DOCTYPE html><html><head><meta
+    charset=utf-8 /><title>Print the current page.</title></head><body><p></p><p>Click
+    the button to print the current page.</p><button onclick="print_current_page()">Print
+    this page</button></body></html>JAVASCRIPT CODEfunction print_current_page(){window.print();}Display
+    the current dateHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><title>Write
+    a JavaScript program to get the current date.</title></head><body></body></html>JAVASCRIPT
+    CODEvar today = new Date();var dd = today.getDate();var mm = today.getMonth()+1;var
+    yyyy = today.getFullYear();if(dd<10){dd=''0''+dd;}if(mm<10){mm=''0''+mm;}today
+    = mm+''-''+dd+''-''+yyyy;console.log(today);today = mm+''/''+dd+''/''+yyyy;console.log(today);today
+    = dd+''-''+mm+''-''+yyyy;console.log(today);today = dd+''/''+mm+''/''+yyyy;console.log(today);Find
+    the area of a triangleHTML CODE<!DOCTYPE html><html><head><meta charset=utf-8
+    /><title>The area of a triangle</title></head><body></body></html>JAVASCRIPT CODEvar
+    side1 = 5;var side2 = 6;var side3 = 7;var s = (side1 + side2 + side3)/2;var area
+    =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));console.log(area);Check whether
+    a given year is a leap yearHTML CODE<!DOCTYPE html><html><head><meta charset=utf-8
+    /><title>Find Leap Year</title></head><body></body></html>JAVASCRIT CODEfunction
+    leapyear(year){return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 ===
+    0);}console.log(leapyear(2016));console.log(leapyear(2000));console.log(leapyear(1700));console.log(leapyear(1800));console.log(leapyear(100));OUTPUTtruetruefalsefalsefalseCalculate
+    multiplication and divisionof two numbersHTML CODE<!DOCTYPE html><html><head><meta
+    charset=utf-8 /><title>JavaScript program to calculate multiplication and division
+    of two numbers </title><style type="text/css">body {margin: 30px;}</style></head><body><form>1st
+    Number : <input type="text" id="firstNumber" /><br>2nd Number: <input type="text"
+    id="secondNumber" /><br><input type="button" onClick="multiplyBy()" Value="Multiply"
+    /><input type="button" onClick="divideBy()" Value="Divide" /></form><p>The Result
+    is : <br><span id = "result"></span></p></body></html>JAVASCRIPT CODEfunction
+    multiplyBy(){num1 = document.getElementById("firstNumber").value;num2 = document.getElementById("secondNumber").value;document.getElementById("result").innerHTML
+    = num1 * num2;}function divideBy(){num1 = document.getElementById("firstNumber").value;num2
+    = document.getElementById("secondNumber").value;document.getElementById("result").innerHTML
+    = num1 / num2;}OUTPUT![](image_rsrc3K1.jpg)Convert temperaturesTo and from celsius,
+    Fahrenheit in JAVASCRIPTHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><title>Write
+    a JavaScript program to convert temperatures to and from celsius, fahrenheit</title></head><body></body></html>JAVASCRIPT
+    CODEfunction cToF(celsius){var cTemp = celsius;var cToFahr = cTemp * 9 / 5 + 32;var
+    message = cTemp+''\xB0C is '' + cToFahr + '' \xB0F.'';console.log(message);}function
+    fToC(fahrenheit){var fTemp = fahrenheit;var fToCel = (fTemp - 32) * 5 / 9;var
+    message = fTemp+''\xB0F is '' + fToCel + ''\xB0C.'';console.log(message);}cToF(60);fToC(45);OUTPUT60°C
+    is 140 °F.45°F is 7.222222222222222°C.Find the largestOf three given integersHTML
+    CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to find the largest of three given integers.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction max_of_three(x, y, z){max_val = 0;if (x > y){max_val = x;} els e{max_val
+    = y;}if (z > max_val){max_val = z;}return max_val;}console.log(max_of_three(1,0,1));console.log(max_of_three(0,-10,-20));console.log(max_of_three(1000,510,440));Output:101000Reverse
+    a given stringHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta
+    name="viewport" content="width=device-width"><title>JavaScript program to reverse
+    a given string.</title></head><body></body></html>JAVASCRIPT CODEfunction string_reverse(str){return
+    str.split("").reverse().join("");}console.log(string_reverse("jsresource"));console.log(string_reverse("www"));console.log(string_reverse("JavaScript"));OUTPUTecruosersjwwwtpircSavaJReplace
+    every characterwith the character following it in the alphabetHTML CODE<!DOCTYPE
+    html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to replace every character in a given string with the character following
+    it in the alphabet.</title></head><body></body></html>JAVASCRIPT CODEfunction
+    string_reverse(str)function LetterChanges(text) {//https://goo.gl/R8gn7uvar s
+    = text.split('''');for (var i = 0; i < s.length; i++) {// Caesar cipherswitch(s[i])
+    {case '' '':break;case ''z'':s[i] = ''a'';break;case ''Z'':s[i] = ''A'';break;default:s[i]
+    = String.fromCharCode(1 + s[i].charCodeAt(0));}// Upper-case vowelsswitch(s[i])
+    {case ''a'': case ''e'': case ''i'': case ''o'': case ''u'':s[i] = s[i].toUpperCase();}}return
+    s.join('''');}console.log(LetterChanges("PYTHON"));console.log(LetterChanges("W3R"));console.log(LetterChanges("php"));Output:QZUIPOX4SqIqCapitalize
+    The First LetterOf Each WordOf A Given StringHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to capitalize the first letter of each word of a given string.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction capital_letter(str){str = str.split(" ");for (var i = 0, x = str.length;
+    i < x; i++) {str[i] = str[i][0].toUpperCase() + str[i].substr(1);}return str.join("
+    ");}console.log(capital_letter("Write a JavaScript program to capitalize the first
+    letter of each word of a given string."));OUTPUTOutput:Write A JavaScript Program
+    To Capitalize The First Letter Of Each Word Of A Given String.Convert number to
+    hours and minutesHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta
+    name="viewport" content="width=device-width"><title>JavaScript program to convert
+    a given number to hours and minutes.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction time_convert(num){var hours = Math.floor(num / 60); var minutes =
+    num % 60;return hours + ":" + minutes;        }console.log(time_convert(71));console.log(time_convert(450));console.log(time_convert(1441));OUTPUT1:117:3024:1Count
+    vowels in a given stringHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta
+    name="viewport" content="width=device-width"><title>JavaScript program to count
+    the number of vowels in a given string.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction vowel_Count(str){return str.replace(/[^aeiou]/g, "").length;}console.log(vowel_Count("Python"));console.log(vowel_Count("htmlresource.com"));Output:15Create
+    a new stringHTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport"
+    content="width=device-width"><title>JavaScript program to create a new string
+    without the first and last character.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction without_first_end(str) {return str.substring(1, str.length - 1);}console.log(without_first_end(''JavaScript''));console.log(without_first_end(''JS''));console.log(without_first_end(''PHP''));Output:avaScripHConcatenate
+    two stringsExcept their first characterHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to concatenate two strings except their first character.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction concatenate(str1, str2) {str1 = str1.substring(1, str1.length);str2
+    = str2.substring(1, str2.length) ;return str1 + str2;}console.log(concatenate("PHP","JS"));console.log(concatenate("A","B"));console.log(concatenate("AA","BB"));Output:HPSABMove
+    last three characterstart of a specified stringHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to move last three character to the start of a given string. The string
+    length must be 3.</title></head><body></body></html>JAVASCRIPT CODEfunction right_three(str)
+    {if (str.length > 1){return str.slice(-3) + str.slice(0, -3);}return str;}console.log(right_three("Python"));console.log(right_three("JavaScript"));console.log(right_three("Hi"));Output:honPytiptJavaScrHiCompute
+    the sumOf three elements of a given arrayOf integers of length 3HTML CODE<!DOCTYPE
+    html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to compute the sum of three elements of an given integers of length 3.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction sum_three(nums){return nums[0] + nums[1] + nums[2];}console.log(sum_three([10,
+    32, 20]));console.log(sum_three([5, 7, 9]));console.log(sum_three([0, 8, -11]));Output:6221-3Add
+    two digitsOf a given positive integerOf length twoHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to add two digits of a given positive integer of length two.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction add_two_digits(n){return n % 10 + Math.floor(n / 10);}console.log(add_two_digits(25))console.log(add_two_digits(50))Output:75Check
+    whether a given year is a leapHTML CODE<!DOCTYPE html><html><head><meta charset=utf-8
+    /><title>Find Leap Year</title></head><body></body></html>JAVASCRIPT CODEfunction
+    leapyear(year){return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 ===
+    0);}console.log(leapyear(2016));console.log(leapyear(2000));console.log(leapyear(1700));console.log(leapyear(1800));console.log(leapyear(100));OUTPUTtruetruefalsefalsefalseCheck
+    given positive numberMultiple of 3 or a multiple of 7HTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to check whether a given positive number is a multiple of 3 or a multiple
+    of 7\. </title></head><body></body></html>JAVASCRIPT CODEfunction test37(x){if
+    (x % 3 == 0 || x % 7 == 0){return true;}else {return false;}}console.log(test37(12));console.log(test37(14));console.log(test37(10));console.log(test37(11));Output:truetruefalsefalseCheck
+    a string starts with ''Java''And false otherwiseHTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to check whether a string starts with ''Java'' and false otherwise.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction start_spec_str(str){if (str.length < 4){return false;}front = str.substring(0,
+    4);if (front == ''Java''){return true;}else{return false;}}console.log(start_spec_str("JavaScript"));console.log(start_spec_str("Java"));console.log(start_spec_str("Python"));Output:truetruefalseCheck
+    two given integer valuesIn the range 50..99HTML CODE<!DOCTYPE html><html><head><meta
+    charset="utf-8"><meta name="viewport" content="width=device-width"><title>JavaScript
+    program to check whether two given integer values are in the range 50..99 (inclusive).
+    Return true if either of them are in the said range.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction check_numbers(x, y){if ((x >= 50 && x <= 99) || (y >= 50 && y <=
+    99)){return true;}else{return false;}}console.log(check_numbers(12, 101));console.log(check_numbers(52,
+    80));console.log(check_numbers(15, 99));OUTPUTfalsetruetrueFind a value which
+    is nearest to 100HTML CODE<!DOCTYPE html><html><head><meta charset="utf-8"><meta
+    name="viewport" content="width=device-width"><title>JavaScript program to find
+    a value which is nearest to 100 from two different given integer values.</title></head><body></body></html>JAVASCRIPT
+    CODEfunction near_100(x, y) {if (x != y){x1 = Math.abs(x - 100);y1 = Math.abs(y
+    - 100);if (x1 < y1 ){return x;}if (y1 < x1){return y;}return 0;}elsereturn false;}console.log(near_100(90,
+    89));console.log(near_100(-90, -89));console.log(near_100(90, 90));Output:90-89false'
+  toc: []
+  trans: "\n\n# 复合运算符\n\n## Javascript: 三元运算符\n三元运算符 `(?: )` 根据条件返回两个表达式中的一个。\n\n\
+    ### 语法\n```\ntest ? expression1 : expression2\n```\n如果 `test` 条件求值为真，则返回 `expression1`，否则返回\
+    \ `expression2`。\n\n### 示例\n```javascript\nvar x = prompt(\"Enter an Integer\"\
+    , \"100\");\nvar y = (x > 10)? \"x is greater than 10\": \"x is less than 11\"\
+    ;\n```\n如果你输入的一个值 `> 10`，则 `y` 被赋值为消息 `\"x is greater than 10\"`；否则，`y` 被赋值为消息\
+    \ `\"x is less than 11\"`。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>\
+    \ 三元运算符 </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n \
+    \       var x = prompt( \"Enter an Integer\" , \"100\" );\n        var y = (x\
+    \ > 10 ) ? \"x is greater than 10\" : \"x is less than 1\" ;\n        document\
+    \ .write( \"value of x is \" + x + \"<br />\" );\n        document .write(y);\n\
+    \    </script>\n</body>\n</html>\n```\n\n## Javascript: 与布尔值操作\n以下值被视为 `false`：\n\
+    a. `undefined`\nb. `Null`\nc. `0`、`-0` 或 `NaN`\n\n所有未提到的上述值都被视为 `true`。\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <title> true and false </title>\n</head>\n\
+    <body>\n    <script type= \"text/javascript\" >\n        var x = \"\" ;\n    \
+    \    var y = \"h\" ;\n        var z = 0 ;\n        if (x) {\n            document\
+    \ .write( \"x is true\" + \"<br />\" );\n        } else {\n            document\
+    \ .write( \"x is false\" + \"<br />\" );\n        }\n        if (y) {\n      \
+    \      document .write( \"y is true\" + \"<br />\" );\n        } else {\n    \
+    \        document .write( \"y is false\" + \"<br />\" );\n        }\n        if\
+    \ (z) {\n            document .write( \"z is true\" + \"<br />\" );\n        }\
+    \ else {\n            document .write( \"z is false\" + \"<br />\" );\n      \
+    \  }\n    </script>\n</body>\n</html>\n```\n\n## Javascript: 决策：if, if-then\n\n\
+    ### if 语句\n`if` 告诉程序当条件求值为真时执行部分代码。\n\n### 语法\n```javascript\nif(condition){\n\
+    \    // 如果条件为真则执行\n}\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>\
+    \ if 语句 </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n \
+    \       var a = prompt( \"Enter any Integer\" , 100 );\n        if (a % 2 == 0\
+    \ ) {\n            document .write( \"You entered even number\" );\n        }\n\
+    \    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的 html 文件，它会提示输入。如果你输入偶数，它会打印消息\
+    \ `'You entered even number'`，否则什么都不打印。\n\n### if-else 语句\n如果条件为真，则执行 if 块代码；否则执行\
+    \ else 块代码。\n\n### 语法\n```javascript\nif(condition){}else{}\n```\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <title> if-else 语句 </title>\n</head>\n<body>\n\
+    \    <script type= \"text/javascript\" >\n        var a = prompt( \"Enter any\
+    \ Integer\" , 100 );\n        if (a % 2 == 0 ) {\n            document .write(\
+    \ \"You entered even number\" );\n        } else {\n            document .write(\
+    \ \"You odd number\" );\n        }\n    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的\
+    \ html，它会提示输入。如果你输入偶数，它会打印消息 `'You entered number'`，否则它打印 `\"You odd number\"\
+    `。\n\n### Javascript: if-else-if 阶梯\n在我的之前的文章中，我解释了语句和 if-else 语句。除了这些之外，Javascript\
+    \ 提供了 if-else if 阶梯，用于选择解决方案。\n\n### 语法\n```javascript\nif(condition){\n    //\
+    \ 语句块\n}else if(condition){\n    // 语句块\n}else{\n    // 语句块\n}\n```\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <title> if-else-else 语句 </title>\n</head>\n\
+    <body>\n    <script type= \"text/javascript\" >\n        var marks = prompt( \"\
+    Enter marks\" ,100 );\n        if (marks < 35 ) {\n            document .write(\
+    \ \"You are failed\" );\n        } else if (marks < 50 ) {\n            document\
+    \ .write( \"You are passed and got third class\" );\n        } else if (marks\
+    \ < 60 ) {\n            document .write( \"You are passed and got second class\"\
+    \ );\n        } else if (marks < 70 ) {\n            document .write( \"You are\
+    \ passed and got first class\" );\n        } else {\n            document .write(\
+    \ \"You are passed and got distinction\" );\n        }\n    </script>\n</body>\n\
+    </html>\n```\n\n## Javascript: 使用 switch 语句决策\nswitch 体被称为 switch 块。switch 块可以使用一个或多个\
+    \ case 或 default 标签。switch 语句评估其表达式，然后执行匹配的 case。\n\n### 语法\n```javascript\nswitch(expression){\n\
+    \    case expression1:\n        // 语句\n        break;\n    case expression2:\n\
+    \        // 语句\n        break;\n    default:\n        // 语句\n}\n```\n\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n    <title> switch 语句 </title>\n</head>\n<body>\n\
+    \    <script type= \"text/javascript\" >\n        var day = parseInt (prompt(\
+    \ \"Enter an integer between 1 and 7\" , 6 ));\n        switch (day) {\n     \
+    \       case 1 :\n                document .write( \"Sunday\" );\n           \
+    \     break;\n            case 2 :\n                document .write( \"Monday\"\
+    \ );\n                break;\n            case 3 :\n                document .write(\
+    \ \"Tueday\" );\n                break;\n            case 4 :\n              \
+    \  document .write( \"Wednesday\" );\n                break;\n            case\
+    \ 5 :\n                document .write( \"ThursDay\" );\n                break;\n\
+    \            case 6 :\n                document .write( \"Friday\" );\n      \
+    \          break;\n            case 7 :\n                document .write( \"Saturday\"\
+    \ );\n                break;\n            default :\n                document\
+    \ .write( \"You entered day\" );\n        }\n    </script>\n</body>\n</html>\n\
+    ```\n在浏览器中打开上面的 html 页，它会提示输入。如果你输入 1，它打印 Sunday；如果你输入 2，它打印 Monday；如果你输入 3，它打印\
+    \ Tueday；如果你输入 4，它打印 Wednesday；如果你输入 5，它打印 ThursDay；如果你输入 6，它打印 Friday；如果你输入 7，它打印\
+    \ Saturday；对于其他输入，它打印 \"You entered day\"。\n\n## Javascript: 循环\n循环用于重复一段代码直到给定条件为真。JavaScript\
+    \ 支持以下循环结构：\na. `while`\nb. `do…while`\nc. `for`\n\n### Javascript: while 循环\n\
+    `while` 语句执行语句块直到表达式为真。\n\n### 语法\n```javascript\nwhile (expression) {\n    //\
+    \ 语句\n}\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> while 循环\
+    \ </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n       \
+    \ var number = parseInt (prompt( \"Enter a number\" , \"10\"));\n        document\
+    \ .write( \"<h2>Even numbers from 0 to \" + number + \" are </h2>\" );\n     \
+    \   var i = 0 ;\n        while (i <= number) {\n            document .write(i\
+    \ + \"<br />\" );\n            i += 2 ;\n        }\n    </script>\n</body>\n</html>\n\
+    ```\n在浏览器中打开上面的页面，它会提示输入，并打印从 0 到用户数字的所有偶数。\n\n### Javascript: do-while 循环\n`do-while`\
+    \ 也是像 `while` 的循环结构，但它在循环的底部评估表达式。\n\n### 语法\n```javascript\ndo {\n    // 语句\n\
+    } while (expression);\n```\n上面的语句执行语句块直到条件为真。\n\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <title> do-while 循环 </title>\n</head>\n<body>\n    <script type= \"\
+    text/javascript\" >\n        var number = parseInt (prompt( \"Enter a number\"\
+    \ , \"0\"));\n        document .write( \"<h2>Even numbers from 0 to \" + number\
+    \ + \" are </h2>\" );\n        var i = 0 ;\n        do {\n            document\
+    \ .write(i + \"<br />\" );\n            i += 2 ;\n        } while (i <= number);\n\
+    \    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的页面，它会提示输入，并打印从 0 到用户数字的所有偶数。\n\
+    \n### Javascript: for 循环\n`for` 语句提供了一种紧凑的方法范围的方法。\n\n### 语法\n```javascript\n\
+    for(initialization; condition; update){\n    // 要执行的语句\n}\n```\n`for` 循环执行语句直到条件求值为假。\n\
+    a. `Initialization` 部分在循环开始时执行一次。\nb. `Condition` 部分在每次执行循环语句之前评估。\nc. `update`\
+    \ 部分在循环执行完成后立即执行。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> for\
+    \ 循环 </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n    \
+    \    var number = parseInt (prompt( \"Enter a number\" , \"10\" ));\n        document\
+    \ .write( \"<h2>Even numbers from 0 to \" + number + \" are </h2>\" );\n     \
+    \   for ( var i = 0 ; i <= number; i += 2 ) {\n            document .write(i +\
+    \ \"<br />\" );\n        }\n    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的页面，它会提示输入，并打印从\
+    \ 0 到用户数字的所有偶数。\n\n### Javascript: break 语句\n我们已经见过 `switch` case 中 `break` 的用法。同样，`break`\
+    \ 用于 `while`、`do-while` 和 `for` 循环以跳出循环。\n\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <title> while 循环 </title>\n</head>\n<body>\n    <script type= \"text/javascript\"\
+    \ >\n        var number = parseInt (prompt( \"Enter a number less than100\" ,\
+    \ \"10\"));\n        document .write( \"<h2>Even numbers from 0 to \" + number\
+    \ + \" are </h2>\" );\n        var i = 0 ;\n        while (i <= number) {\n  \
+    \          if (number >= 100 ) {\n                document .write( \"Input should\
+    \ be <100\" );\n                break ;\n            }\n            document .write(i\
+    \ + \"<br />\" );\n            i += 2 ;\n        }\n    </script>\n</body>\n</html>\n\
+    ```\n在浏览器中打开上面的页面，它会提示输入。如果你输入一个 `>=100` 的数字，它会打印 \"Input should be <100\" 并跳出循环；否则它打印从\
+    \ 0 到数字的所有偶数。\n\n### Javascript: continue 语句\n`continue` 语句跳过 `for`、`while`、`do-while`\
+    \ 循环的当前迭代。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> continue 语句\
+    \ </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n       \
+    \ var number = parseInt (prompt( \"Enter a number lessthan10\" , \"0\"));\n  \
+    \      document .write( \"<h2>Even numbers from 0 to \" + number + \" are </h2>\"\
+    \ );\n        var i = 0 ;\n        while (i <= number) {\n            if ((i %\
+    \ 4 ) == 0 ) {\n                i += 2 ;\n                continue ;\n       \
+    \     }\n            document .write(i + \"<br />\" );\n            i += 2 ;\n\
+    \        }\n    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的页面，它会提示输入，并打印直到数字不被\
+    \ 4 整除的所有偶数。\n\n## Javascript: label 中的 break\n`label` 是由 `name` 标识的语句组。\n\n###\
+    \ 语法\n```javascript\nlabelName:{\n    statement 1\n    statement 2\n    ....\n\
+    \    statement N\n}\n```\n`break` 在标签形式也可用。\n\n### 语法\n```javascript\nbreak labelName;\n\
+    ```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> break label 示例 </title>\n\
+    </head>\n<body>\n    <script type= \"text/javascript\" >\n        outer :\n  \
+    \      for ( var i = 0 ; i < 10 ; i ) {\n            inner : for ( var j = 0 ;\
+    \ j < 10 ; j ) {\n                document .write(i + \",\" + j + \"<br />\" );\n\
+    \                if (i * j > 10 )\n                    break outer;\n        \
+    \    }\n        }\n    </script>\n</body>\n</html>\n```\n\n## Javascript: for\
+    \ in 循环\n`for in` 循环用于获取对象的可枚举属性。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \    <title> for in loop 示例 </title>\n</head>\n<body>\n    <script>\n        var\
+    \ employee = {\n            firstName : \"Hari Krishna\" ,\n            lastName\
+    \ : \"Gurram\" ,\n            age : 26 ,\n            getDetails : function ()\
+    \ {\n                return \"[firstName = \" + firstName + \", lastName = \"\
+    \ + lastName + \"]\";\n            }\n        }\n        for (property in employee)\
+    \ {\n            document .write(property + \" : \" + employee[property] + \"\
+    <br />\" );\n        }\n    </script>\n</body>\n</html>\n```\n在浏览器中打开上面的页面，你可以看到以下文本。观察输出，`for\
+    \ in` 循环没有显示 `toString` 等内置属性，因为内置方法不是枚举的。由于数组也是 JavaScript 中的一种特殊对象，你可以使用 `for\
+    \ in` 遍历数组。\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> for in 循环\
+    \ </title>\n</head>\n<body>\n    <script>\n        var arr = [ \"Hari Krishna\"\
+    \ , \"Gurram\" , 26 ];\n        for (index in arr) {\n            document .write(index\
+    \ + \" : \" + arr[index] + \"<br />\" );\n        }\n    </script>\n</body>\n\
+    </html>\n```\n在浏览器中打开上面的页面，你可以看到：0 : Hari Krishna\n1 : Gurram\n2 : 26\n\n### Javascript:\
+    \ for-of 循环\n`for-of` 循环用于迭代可迭代对象，如 `String`、`Array`、`TypedArray` 和 `Set`。\n\n\
+    ```javascript\nvar arr = [ 2 , 3 , 5 , 7 ,1 , 3 ];\nfor ( var i of arr) {\n  \
+    \  console.log(i);\n}\n```\n输出: 2357113\n\n### Javascript: 获取变量类型\nJavascript\
+    \ 提供了 `typeof` 运算符来获取变量类型。\n\n### 语法\n```javascript\ntypeof variable\n```\n\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> 变量类型 </title>\n</head>\n\
+    <body>\n    <script type= \"text/javascript\" >\n        var a = 10 ;\n      \
+    \  var b = 10 ;\n        var c = true ;\n        var d = \"Hello\" ;\n       \
+    \ var e = new String ( \"Hello\" );\n        document .write( \"a = \" + a + \"\
+    , type = \" + typeof (a) + \"<br />\" );\n        document .write( \"b = \" +\
+    \ b + \", type = \" + typeof (b) + \"<br />\" );\n        document .write( \"\
+    c = \" + c + \", type = \" + typeof (c) + \"<br />\" );\n        document .write(\
+    \ \"d = \" + d + \", type = \" + typeof (d) + \"<br />\" );\n        document\
+    \ .write( \"e = \" + e + \", type = \" + typeof (e) + \"<br />\" );\n    </script>\n\
+    </body>\n</html>\n```\n\n## Javascript: 字符串操作\n字符串是字符的集合。与其他语言不同，JavaScript 没有任何数据类型来表示字符。\n\
+    \n### 如何定义字符串？\n使用单引号或双引号包裹字符。\n```javascript\nvar str1 = \"Hello\";\nvar str2\
+    \ = 'World';\n```\n也可以通过 `String` 对象创建字符串。\n```javascript\nvar str3 = new String(\"\
+    Hello\");\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> 字符串 </title>\n\
+    </head>\n<body>\n    <script type= \"text/javascript\" >\n        var str1 = \"\
+    Good Morning\" ;\n        var str2 = 'Good Afternoon' ;\n        var str3 = new\
+    \ String ( \"Good Night\" );\n        document .write(str1 + \"<br />\");\n  \
+    \      document .write(str2 + \"<br />\");\n        document .write(str3 + \"\
+    <br />\");\n    </script>\n</body>\n</html>\n```\n\n## Javascript: 嵌套函数\n你可以在函数内部定义函数。嵌套函数可以访问外部函数中定义的变量。\n\
+    \n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> 嵌套函数 </title>\n</head>\n\
+    <body>\n    <script type= \"text/javascript\" >\n        function descriminator(a,\
+    \ b, c) {\n            return (square(b) - 4 * c) / twice(a);\n        }\n   \
+    \     function square(x) {\n            return (x * x);\n        }\n        function\
+    \ twice(x) {\n            return 2 * x;\n        }\n        document .write( \"\
+    Discriminator of 5, 10, 3 is : + descriminator(5, 10, 3));\n    </script>\n</body>\n\
+    </html>\n```\n变量作用域：嵌套函数可以访问父函数中定义的变量以及父函数有权访问的变量。\n\n## Javascript: 数组\n数组是元素的有序集合。\n\
+    \n### 语法\n```javascript\nvar array = [elem1, elem2 ....N];\nvar array = new Array(size)\n\
+    ```\n\n### 如何访问数组元素？\n通过索引表示法访问数组元素。索引从 0 开始。\n\n### 语法\n```javascript\narray[index]\n\
+    arr[0] : 返回第一个元素\narr[1] : 返回第二个元素\n…..arr[n] : 返回 n-1 个元素\n```\n\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <title> 数组 </title>\n</head>\n<body>\n    <script\
+    \ type= \"text/javascript\" >\n        var arr = [ 2 , \"Hello\" ,123.5 , true\
+    \ ];\n        document .write( \"arr[0] : \" + arr[0] + \"<br />\" );\n      \
+    \  document .write( \"arr[1] : \" + arr[1] + \"<br />\" );\n        document .write(\
+    \ \"arr[2] : \" + arr[2] + \"<br />\" );\n         . .write( \"arr[3] : \" + arr[3]\
+    \ + \"<br />\" );\n        document .write( \"arr[4] : \" + arr[4] + \"<br />\"\
+    \ );\n        document .write( typeof arr);\n    </script>\n</body>\n</html>\n\
+    ```\n在浏览器中打开上面的页面，你可以看到以下数据：\n0 : 2\n1 : Hello\n2 : 123.5\n3 : true\n4 : undefined\n\
+    \n### 数组中的最大索引是多少？\nJavaScript 数组使用 32 位的索引。因此最大的数组索引是 `((2³²)-2) = 4294967294`（因为数组是零索引的）。\n\
+    \n## Javascript: 类介绍\n类被用于创建对象。让我尝试用一个例子来解释。\n\n```javascript\nclass Employee\
+    \ {\n    constructor(id, firstName, lastName){\n        this.id = id;\n      \
+    \  this.firstName = firstName;\n        this.lastName = lastName;\n    }\n}\n\
+    ```\n如你所看到的代码片段，我定义了一个 `Employee` 类，它有 3 个属性 `id`、`firstName` 和 `lastName`。\n\
+    a. `class` 关键字用于创建类。\nb. `constructor` 函数用于初始化属性。\n你可以使用 `new` 运算符结合 `constructor`\
+    \ 函数来创建对象。\n\n```javascript\nclass Employee {\n    constructor(id, firstName,\
+    \ lastName){\n        this.id = id;\n        this.firstName = firstName;\n   \
+    \     this.lastName = lastName;\n    }\n}\nvar emp1 = new Employee(1, \"John\"\
+    , \"Doe\");\n```\n\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title> 类的介绍\
+    \ </title>\n</head>\n<body>\n    <script type= \"text/javascript\" >\n       \
+    \ class Employee {\n            constructor(id, firstName, lastName){\n      \
+    \          this.id = id;\n                this.firstName = firstName;\n      \
+    \          this.lastName = lastName;\n            }\n        }\n        function\
+    \ print_employee_info(emp){\n            console.log(\"id : \" + emp.id);\n  \
+    \          console.log(\"firstName : \" + emp.firstName);\n            console.log(\"\
+    lastName : \" + emp.lastName);\n        }\n        var emp1 = new Employee(1,\
+    \ \"John\", \"Doe\");\n        print_employee_info(emp1);\n    </script>\n</body>\n\
+    </html>\n```\n\n## Javascript: 使用表达式定义类\n你可以使用表达式来定义类。\n\n```javascript\nvar MyEmployee\
+    \ = class {\n    constructor(id, firstName, lastName){\n        this.id = id;\n\
+    \        this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\
+    };\n```\n\n## Javascript 编码练习\n\n### 显示当前日期和时间\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <title>JavaScript 当前日期和时间</title>\n\
+    </head>\n<body></body>\n</html>\n```\n```javascript\nvar today = new Date();\n\
+    var day = today.getDay();\nvar daylist = [\"Sunday\",\"Monday\",\"Tuesday\",\"\
+    Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"];\nvar hour = today.getHours();\n\
+    var minute = today.getMinutes();\nvar second = today.getSeconds();\nvar prepand\
+    \ = (hour >= 12)? \" PM \":\" AM \";\nhour = (hour >= 12)? hour - 12: hour;\n\
+    console.log(\"Today is : \" + daylist[day] + \".\");\nconsole.log(\"Current Time\
+    \ : \"+hour + prepand + \" : + minute + \" \" + second);\n```\n\n### 查找三角形面积\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>三角形的面积</title>\n\
+    </head>\n<body></body>\n</html>\n```\n```javascript\nvar side1 = 5;\nvar side2\
+    \ = 6;\nvar side3 = 7;\nvar s = (side1 + side2 + side3)/2;\nvar area = Math.sqrt((s-side1)*(s-side2)*(s-side3));\n\
+    console.log(area);\n```\n\n### 检查给定年份是否为闰年\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n    <meta charset=\"utf-8\">\n    <title>闰年</title>\n</head>\n<body></body>\n\
+    </html>\n```\n```javascript\nfunction leapyear(year){\n    return (year % 100\
+    \ === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\n\
+    console.log(leapyear(2000));\nconsole.log(leapyear(1700));\nconsole.log(leapyear(1800));\n\
+    ```\nOutput: true true false false\n\n### 计算两个数字的乘法和除法\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>两个数字的乘法和除法</title>\n\
+    </head>\n<body>\n    <form>\n        1st Number : <input type=\"text\" id=\"firstNumber\"\
+    \ /><br>\n        2nd Number: <input type=\"text\" id=\"secondNumber\" /><br>\n\
+    \        <input onClick=\"multiplyBy()\" Value=\"Multiply\" />\n        <input\
+    \ onClick=\"divideBy()\" Value=\"Divide\" />\n    </form>\n    <p>The Result is\
+    \ : <br><span id=\"result\"></span></p>\n</body>\n</html>\n```\n```javascript\n\
+    function multiplyBy(){\n    var num1 = document.getElementById(\"firstNumber\"\
+    ).value;\n    var num2 = document.getElementById(\"secondNumber\").value;\n  \
+    \  document.getElementById(\"result\").innerHTML = num1 * num2;\n}\nfunction divideBy(){\n\
+    \    var num1 = document.getElementById(\"firstNumber\").value;\n    var num2\
+    \ = document.getElementById(\"secondNumber\").value;\n    document.getElementById(\"\
+    result\").innerHTML = num1 / num2;\n}\n```\n\n### 将温度从摄氏转换为华氏\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>温度从摄氏转换为华氏</title>\n\
+    </head>\n<body></body>\n</html>\n```\n```javascript\nfunction cToF(celsius){\n\
+    \    var cTemp = celsius;\n    var cToF = cTemp * 9 / 5 + 32;\n    var message\
+    \ = cTemp+'C is ' + cToF + '°F.';\n    console.log(message);\n}\nfunction fToC(fahrenheit){\n\
+    \    var fTemp = fahrenheit;\n    var fToCel = (fTemp - 32) * 5 / 9;\n    var\
+    \ message = fTemp+'F is ' + fToCel + '°C.';\n    console.log(message);\n}\ncToF(60);\n\
+    fToC(45);\n```\nOutput: 60°C is 140°F.,45°F is 22.2222222222°C.\n\n"

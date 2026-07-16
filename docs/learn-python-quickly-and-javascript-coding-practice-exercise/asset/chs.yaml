@@ -1,0 +1,372 @@
+- "# 快速学习 Python 与 JavaScript 编程实践练习：初学者编程\n\n\n\n![](img/Image00010.jpg)\n\n\n- JavaScript\
+  \ 函数 – 练习\n- JavaScript: 查找第一个非重复字符\n- JavaScript: 查找字符串中最长的单词\n- JavaScript: 统计字符串中的元音数量\n\
+  - JavaScript: 检查数字是否为质数\n- JavaScript: 获取数据类型\n- JavaScript: 寻找第二小和第二大值\n- JavaScript\
+  \ 基础\n- 乘法和除法计算\n- 温度转换\n- 寻找最大值\n- 反转给定字符串\n- 替换每个字符\n- 创建新字符串\n- 拼接两个字符串\n- 移动最后三个字符\n\
+  - 计算总和\n- 两个数字相加\n- 检查给定的年份是否为闰年\n- 检查给定的正数\n- 检查字符串是否以 'Java' 开头\n- 检查给定的整数值\n\
+  - 寻找接近 100 的值` 并将文件保存为 `hello.py`。\n\n```python\nprint ('hello world')\n```\n\n\
+  打开终端（或命令提示符），使用命令 `python3 hello.py` 运行文件 `hello.py`。你将得到如下输出：\n\n```\n$ python3\
+  \ hello.py\nhello world\n```\n\n## 当你指示 Python 运行脚本时发生了什么？\nPython 首先将你的源代码编译为字节码（bytecode），并将其发送到\
+  \ Python 虚拟机 (`PVM`)。字节码是源代码的平台无关的表示。PVM 逐个读取字节码并执行它们。\n\n![](https://2.blogspot.com/-4SrPn1e0H1A/VmFSCiufP1I/AAAAAAAACtw/bnSNuricpw/s400/python%2Bexecution%2Bprocess.png](Image00000.jpg)\n\
+  \n**注意：** 字节码不是机器理解的代码，它是 Python 特有的表示。\n\n## Python 交互式命令行\n打开命令提示符（或终端）并输入命令 `python3`。它会打开\
+  \ Python 交互会话。\n\n```\n$ python3\nPython 3.5.0 (v3.5.0:374f501f467, Sep 12 2015,\
+  \ 11:00:19)\nGCC 4.2.1 (Apple Inc. build 5666) (dot 3) on darwin\n```\n\n输入 `help`、`copyright`、`credits`\
+  \ 或 `license` 获取更多信息。\n\n### 如何退出 Python 解释器\n在 Windows 上，使用 `Ctrl-Z` 可以退出会；在 Unix\
+  \ 上，尝试 `Ctrl-D`。另一种方法是直接调用 `quit()` 函数退出 Python。\n\n```\n$ python3\nPython 3.5.0\
+  \ (v3.5.0:374f501f467, Sep 12 2015, 11:00:19)\nGCC 4.2.1 (Apple Inc. build 5666)\
+  \ (dot 3) on darwin\n>>> quit()\n```\n\n你可以在 Python 解释器中输入任何语句（或）表达式，解释器会执行这些语句并给你结果。\n\
+  \n```\n>>> 10+20\n30\n>>> 20*20\n400\n>>> print('Hello World')\nHello World\n```\n\
+  \n**注意：** 在 Unix 上，Python 3.x 解释器默认不以 `python` 命名安装，以免与其他安装的 Python 2.x 可执行文件冲突。\n\
+  \n## Python: 运算符\n运算符是一个符号，用于执行操作。Python 支持的运算符有：\n- 算术运算符\n- 关系运算符\n- 赋值运算符\n-\
+  \ 逻辑运算符\n- 位运算符\n- 成员运算符\n- 身份运算符\n\n### Python 中的算术运算符\n以下是 Python 支持的算术运算符。\n\n\
+  | 运算符 |  | 示例 |\n| :--- | :--- | :--- |\n| + | 加法 | `2+3` |\n| - | 减法 | `2-3` |\n\
+  | * | 乘法 | `2*3` |\n| / | 除法始终返回浮点值。要获取整数结果请使用 `//`。 | `2/3` 返回 `0.6666666666666666`\
+  \ |\n| // | 整除丢弃小数部分 | `2//3` 返回 `0` |\n| % | 返回除法的余数。 | `2%3` |\n| ** | 幂 | `2**3`\
+  \ 返回 `2 的 3 次方 = 8` |\n\n\n\n\n\n| 运算符 | 名称 | 描述 |\n| :--- | :--- | :--- |\n| `==`\
+  \ | 等于 | 如果 `a` 等于 `b`，则 `a==b` 返回 true，否则返回 false |\n| `!=` | 不等于 | 如果 `a` 不等于\
+  \ `b`，则 `a!=b` 返回 true，否则返回 false |\n| `>` | 大于 | 如果 `a` 大于 `b`，则 `a>b` 返回 true，否则返回\
+  \ false |\n| `>=` | 大于等于 | 如果 `a` 大于等于 `b`，则 `a>=b` 返回 true，否则返回 false |\n| `<`\
+  \ | 小于 | 如果 `a` 小于 `b`，则 `a<b` 返回 true，否则返回 false |\n| `<=` | 小于等于 | 如果 `a` 小于等于\
+  \ `b`，则 `a<=b` 返回 true，否则返回 false |\n\n```python\n>>> a = 10\n>>> b = 12\n>>> a\
+  \ == b\nFalse\n>>> a != b\nTrue\n>>> a > b\nFalse\n>>> a >= b\nFalse\n>>> a < b\n\
+  True\n>>> a <= b\nTrue\n```\n\n### Python 中的赋值运算符\n\n赋值运算符用于给变量赋值。以下是 Python 提供的赋值运算符。\n\
+  \n| 运算符 | 描述 |\n| :--- | :--- |\n| `=` | `a=10` 将 `10` 赋值给变量 `a` |\n| `+=` | `a+=10`\
+  \ 等于 `a=a+10` |\n| `-=` | `a-=10` 等于 `a=a-10` |\n| `*=` | `a*=10` 等于 `a=a*10` |\n\
+  | `/=` | `a/=10` 等于 `a=a/10` |\n| `//=` | `a//=10` 等于 `a=a//10` |\n| `%=` | `a%=10`\
+  \ 等于 `a=a%10` |\n| `**=` | `a**=10` 等于 `a=a**10` |\n\n```python\n>>> a = 10\n>>>\
+  \ a\n10\n>>> a += 10\n>>> a\n20\n>>> a -= 10\n>>> a\n10\n>>> a *= 10\n>>> a\n100\n\
+  >>> a /= 10\n>>> a\n10.0\n>>> a //= 10\n>>> a\n1.0\n>>> a **= 10\n>>> a\n1.0\n```\n\
+  \n#### 多重赋值\n\n你可以同时给多个变量赋值。\n\n```python\n>>> a, b, c = 10 , 'hello ', 12.345\n\
+  >>> a\n10\n>>> b\n'hello'\n>>> c\n12.345\n```\n\n### Python 中的逻辑运算符\n\n以下是 Python\
+  \ 支持的逻辑运算符。\n\n| 运算符 | 描述 |\n| :--- | :--- |\n| `and` | 如果 `a` 和 `b` 都为 true，则 `'a\
+  \ and b'` 返回 true。否则返回 false。 |\n| `or` | 如果 `a` 和 `b` 都为 false，则 `'a or b'` 返回\
+  \ false；否则返回 true。 |\n| `not` | 如果 `a` 为 false，则 `'not a'` 返回 True；否则返回 true |\n\
+  \n```python\n>>> a = bool(0)\n>>> b = bool(1)\n>>> a\nFalse\n>>> b\nTrue\n>>> a\
+  \ and b\nFalse\n>>> a or b\nTrue\n>>> not a\nTrue\n>>> not (a and b)\nTrue\n>>>\
+  \ not (a or b)\nFalse\n```\n\n### Python 中的位运算符\n\nPython 支持以下位运算符，用于对整数进行按位运算。\n\
+  \n| 运算符 | 描述 |\n| :--- | :--- |\n| `>>` | 位右移 |\n| `<<` | 位左移 |\n| `&` | 位与 |\n\
+  | `^` | 位异异 |\n| `|` | 位或 |\n| `~` | 位取反（位非） |\n\n以下是对位运算符的详细解释。\n\n```python\n\
+  >>> a = 2\n>>> a >> 1\n1\n>>> a << 1\n4\n>>> a & 3\n2\n>>> a | 3\n3\n>>> ~ a\n-3\n\
+  ```\n\n### Python 中的成员运算符\n\n成员运算符用于测试值或变量是否存在于序列（字符串、列表、元组、集合和字典）中。\n\n| 运算符 |\
+  \ 描述 |\n| :--- | :--- |\n| `in` | 如果值/变量在序列中，返回 true；否则返回 false。 |\n| `not in` |\
+  \ 如果值/变量不在序列中，返回 True；否则返回 false |\n\n```python\n>>> primeNumbers = [2, 3, 5, 7]\n\
+  >>> 2 in primeNumbers\nTrue\n>>> 4 not in primeNumbers\nFalse\n>>> 3 in primeNumbers\n\
+  True\n```\n\n### Python 中的身份运算符\n\n身份运算符用于比较两个对象的内存位置。\n\n| 运算符 | 描述 |\n| :--- |\
+  \ :--- |\n| `is` | 如果 `a` 和 `b` 都指向同一个对象，则 `a is b` 返回 true；否则返回 false。 |\n| `is\
+  \ not` | 如果 `a` 和 `b` 不指向同一个对象，则 `a is not b` 返回 true；否则返回 false。 |\n\n```python\n\
+  >>> name1 = \"Hari Krishna\"\n>>> name2 = \"Hari Krishna\"\n>>> name1 is name2\n\
+  True\n>>> name1 is not name2\nFalse\n```\n\n### Python：短路运算符\n\n布尔运算符 `and` 和 `or`\
+  \ 被称为短路运算符，因为表达式的结果一旦确定就会停止求值。\n\n为什么 `and` 是短路运算符？\n因为如果第一个语句为 false，则不会评估整个表达式。\n\
+  \n为什么 `or` 是短路运算符？\n因为如果第一个语句为 true，则不会评估整个表达式。\n\n## Python 中的字符串\n\n字符串可以是单引号（`'...'`）、双引号（`\"\
+  ...\"`）或三引号（`\"\"\"\"\"\"`）。Python 中的字符串是不可变的。\n\n```python\n>>> str1 = 'Hello World'\n\
+  >>> str2 = \"Hello World\"\n>>> str3 = \"\"\"Hello World\"\"\"\n>>> str1\n'Hello\
+  \ World'\n>>> str2\n'Hello World'\n>>> str3\n'Hello World'\n```\n\n### 特殊字符\n\n\
+  特殊字符使用反斜杠 `\\` 进行转义。`print()` 方法会将跟在 `\\` 之后的字符解释为特殊字符。\n\n```python\n>>> print('first\\\
+  nline')\nfirst\nline\n```\n\n### 字符串操作\n\n`+` 运算符用于拼接字符串。\n\n```python\n>>> hello\
+  \ = \"Hello,\"\n>>> message = \"are you\"\n>>> info = hello + message\n>>> info\n\
+  'Hello,are you'\n```\n\n两个或多个字符串字面量会自动拼接。\n\n```python\n>>> 'Hello ' \"are \" 'you'\n\
+  'Hello are you'\n```\n\n### 重复字符串\n\n通过使用 `*` 我们可以重复字符串。\n\n```python\n>>> 'hi'\
+  \ * 2\n'hihi'\n>>> 'hi' * 2 + 'hello'\n'hihihello'\n```\n\n### 从字符串访问特定字符\n\n可以使用索引位置访问字符串的特定字符。\n\
+  \n```python\n>>> name = \"Hello World\"\n>>> name[0]\n'H'\n>>> name[6]\n'W'\n```\n\
+  \n索引 0 代表第一个字符，1 代表第二个字符，以此此类推。你也可以使用负数进行索引。`-1` 代表最后一个字符，`-2` 代表倒数第二个字符等等。\n\n\
+  ```python\n>>> name = \"Hello World\"\n>>> name[-1]\n'd'\n>>> name[-2]\n'l'\n>>>\
+  \ name[-7]\n'o'\n```\n\n### 切片\n\n切片用于获取给定字符串的子字符串。\n\n| 示例 | 描述 |\n| :--- | :---\
+  \ |\n| `string[start:end]` | 返回从索引 `start`（包含）到结束索引（不包含）的子字符串 |\n| `string[:end]`\
+  \ | 返回从索引 0（包含）到结束索引（不包含）的子字符串 |\n| `string[start:]` | 返回从索引 `start` 到末尾的子字符串 |\n\
+  | `string[-2:]` | 返回从倒第二个到末尾的字符 |\n\n```python\n>>> message = \"Hello World\"\n\
+  >>> message[0 : 5]\n'Hello'\n>>> message[5 :]\n' World'\n>>> message[:]\n'Hello\
+  \ World'\n>>> message[-2:]\n'ld'\n>>> message[-5:]\n'Wor'\n```\n\n### 获取字符串长度\n\n\
+  `len(str)` 用于获取字符串的长度。\n\n```python\n>>> message = 'Hello World'\n>>> len(message)\n\
+  11\n>>> len (\"are you \")\n11\n```\n\n## Python：if 条件\n\n“if”语句在条件求值为 true 时执行代码段。\n\
+  \n语法：\n`if_stmt ::= \"if\" expression \":\" suite`\n\n```python\ntest.py\na = 10\n\
+  if (a < 10 ) :\n  print ( \"a is less than 10\" )\n```\n\n### if-else 语句\n\n如果条件为真，则执行\
+  \ if 块；否则执行 else 块。\n\n语法：\n`if_stmt ::= \"if\" expression \":\" suite [\"else\"\
+  \ \":\" suite]`\n\n```python\ntest.py\na = 10\nif (a != 10 ) :\n  print ( \"a is\
+  \ not equal to 10\" )\nelse :\n  print ( \"a is equal to 10\" )\n```\n\n### if-elif-else\
+  \ 语句\n\n通过使用 if-elif-else 结构，你可以选择多个备方案。if 语句后面可以跟可选的 elif...else 语句。\n\n语法：\n`if_stmt\
+  \ ::= \"if\" expression \":\" suite (\"elif\" expression \":\" suite)* [\"else\"\
+  \ \":\" suite]`\n\n```python\ntest.py\na = 10\nif (a > 10 ) :\n  print ( \"a is\
+  \ greater than 10\" )\nelif (a < 10 ) :\n  print ( \"a is less than 10\" )\nelse\
+  \ :\n  print ( \"a is equal to 10\" )\n```\n\n### 注意事项\n\na. 在 Python 中，任何非零整数值被视为\
+  \ true；零为 false。\n\n```python\ntest.py\nif ( 100 ) :\n  print ( \"Hello\" )\nelse\
+  \ :\n  print ( \"Bye\" )\n```\n\n\n\n\n\n```bash\n$ python3 test.py\n```\n\nHello\n\
+  \nb. 任何非零长度的序列（字符串、列表等）为真，空序列为假。\n\n`test.py`\n\n```python\nlist = []\n\ndata =\
+  \ \"abc\"\n\nif ( list ) :\n  print ( \"list is not empty\" )\nelse :\n  print (\
+  \ \"list is empty\" )\n\nif (data) :\n  print ( \"data is not empty\" )\nelse :\n\
+  \  print ( \"data is empty\" )\n```\n\n```bash\n$ python3 test.py\nlist is empty\n\
+  data is not empty\n```\n\n## Python: while 语句\n\n`while` 语句执行语句块，直到特定条件为真\n\n###\
+  \ 语法\n```\nwhile_stmt ::= \"while\" expression \":\" suite\n                [\"\
+  else\" \":\" suite]\n```\n`else` 子句是可选的。如果表达式求值为假，则执行 `else` 子句（如果存在）并结束循环。\n\n\
+  `test.py`\n```python\na = 2\nprint ( \"Even numbers are \" )\nwhile (a < 10 ) :\n\
+  \  print (a, end = ' ' )\na += 2\nelse :\n  print ( \" \\n Exit from loop\" )\n\
+  print ( \"Done \" )\n```\n\n```bash\n$ python3 test.py\nEven numbers are\n2 4 6\
+  \ 8\nExit from loop\nDone\n```\n\n## Python: for 语句\n\nPython 的 `for` 语句用于遍历任何序列（如列表、字符串）的项。\n\
+  \n### 语法\n```\nfor_stmt ::= \"for\" target_list \"in\" expression_list \":\" suite\n\
+  \                [\"else\" \":\" suite]\n```\n`else` 子句是可选的，它会在循环结束时执行一次。\n\n`test.py`\n\
+  ```python\nnames = [ \"Phalgun \" , \"Sambith \" , \"Mahesh \" , \"swapna \" ]\n\
+  for name in names:\n  print (name)\nelse :\n  print ( \"Exiting from loop\" )\n\
+  print ( \"Finsihed Execution \" )\n```\n\n```bash\n$ python3 test.py\nPhalgun\n\
+  Sambith\nMahesh\nswapna\nExiting from loop\nFinsihed Execution\n```\n\n## Python:\
+  \ break 语句\n\n`break` 语句用于跳 `for` 或 `while` 循环。\n\n`test.py`\n```python\ni = 0\n\
+  while ( 1 ):\n  i += 2\n  print (i)\n  if (i == 10 ):\n    break\nelse :\n  print\
+  \ ( \"Exiting loop\" )\nprint ( \"Finished Execution \" )\n```\n\n```bash\n$ python3\
+  \ test.py\n2\n4\n6\n8\n10\nFinished Execution\n```\n如你观察到的输出所示，`else` 子句中的 `print`\
+  \ 语句没有被打印。这是因为当 `break` 语句终止循环时，`else` 子句不会执行。\n\n## Python: continue 语句\n\n`continue`\
+  \ 语句跳过 `for` 或 `while` 循环的当前迭代。\n\n`test.py`\n```python\ni = 2\nwhile (i < 20 ):\n\
+  \  i += 2\n  if (i % 2 != 0 ):\n    continue\n  print (i)\nelse :\n  print ( \"\
+  Exiting loop\" )\nprint ( \"Finished Execution \" )\n```\n上述程序打印直到 20（不包含 20）的所有偶数。\n\
+  \n```bash\n$ python3 test.py\n4\n6\n8\n10\n12\n14\n16\n18\n20\nExiting loop\nFinished\
+  \ Execution\n```\n\n## Python: 函数\n\n函数是由名称标识的语句块。关键字 `def` 用于定义函数。函数主要用于两个原因：\n\
+  \na. 使代码更易构建和理解\nb. 重用代码\n\n### 语法\n```\ndef functionName(argument1, argument2 ….\
+  \ argumentN):\n```\n\n`test.py`\n```python\ndef factorial (n):\n  if (n <= 1 ):\n\
+  \    return 1\n  result = 1\n  for i in range ( 2 , n + 1 ):\n    result *= i\n\
+  \  return result\n\nprint(factorial ( 1 ))\nprint(factorial ( 2 ))\nprint(factorial\
+  \ ( 3 ))\nprint(factorial ( 4 ))\nprint(factorial ( 5 ))\n```\n\n```bash\n$ python3\
+  \ test.py\n1\n2\n6\n24\n120\n```\n在函数定义之前创建的变量只有在函数不改变其值时，才能在函数内部读取。\n\n`test.py`\n\
+  ```python\n### 创建变量 x 并设置为 44\nx = 44\n### 定义一个打印 x 的简单函数\ndef f ():\n  x += 1\n\
+  \  print (x)\n### 调用函数\nf()\n```\n运行上述程序，你将得到以下错误。\n\n```bash\n$ python3 test.py\n\
+  Traceback (most recent call last):\n  File \"test.py\", line 11, in <module>\n \
+  \   f()\n  File \"test.py\", line 7, in f\n    x += 1\nUnboundLocalError: local\
+  \ variable 'x' referenced before assignment\n```\n移除 `x+=1` 语句并重新运行程序，控制台将打印 `x`\
+  \ 的值。\n\n### Python: 函数: return 语句\n\n`return` 语句用于向调用者返回值。\n\n`test.py`\n```python\n\
+  def factorial (n):\n  if (n <= 1 ):\n    return 1\n  result = 1\n  for i in range\
+  \ ( 2 , n + 1 ):\n    result *= i\n  return result\n```\n*(注：此处原文代码逻辑似乎混乱，已根据要求保留结构并翻译逻辑描述)*\n\
+  ```python\nprint(factorial ( 1 ))\nprint(factorial ( 2 ))\nprint(factorial ( 3 ))\n\
+  print(factorial ( 4 ))\nprint(factorial ( 5 ))\n\n```\n```bash\n$ python3 test.py\n\
+  1\n2\n6\n24\n12```\n`return` 在没有表达式时返回 `None`。\n```python\ndef hello():\n  return\n\
+  print(\"Hello\")\n```\n```bash\n$ python3 test.py\nNone\n\n## Python: 列表\n\n 列表是用逗号分隔的值组。\n\
+  ```python\n>>> primes = [ 2 , 3 , 5 , 7 , 11 , 13 , 17 , 19 , 23 ]\n>>> [2, 3, 5,\
+  \ 7, 11, 13, 17, 19, 23]\n```\n`primes` 是包含质数的列表。\n```python\n>>> students = [ \"\
+  Hari \" , \"Krishna \" , \"Ravi \" ]\n>>> ['Hari', 'Krishna', 'Ravi']\n```\n`students`\
+  \ 是包含所有名字的列表。\n```python\n>>> objects = [ 1 , 3 , \"Hello\" , 10 , 23 ]\n>>> [1,\
+  \ 3, 'Hello', 10, 23]\n```\n列表可以包含任何类型的数据。\n```python\n>>> numbers = [ 1 , 3 , 'Hello'\
+  \ , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n```\n使用索引访问列表元素。\n```python\n>>> objects\
+  \ = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[ 0 ]\n\
+  1\n>>> objects[ 1 ]\n3\n```\n`objects[0]` 返回列表的第一个元素。`objects[1]` 返回列表的第二个元素。负索引也用于访问列表元素。\n\
+  ```python\n>>> objects = [ 1 , 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10,\
+  \ 23]\n>>> objects[ -1 ]\n23\n>>> objects[ -3 ]\n3\n```\n\n### 切片\n切片用于获取子列表。\n\n\
+  | 示例 | 描述 |\n| :--- | :--- |\n| `list[start:end]` | 返回从 `start`（包含）到 `end`（不包含）的子列表。\
+  \ |\n| `list[:end]` | 返回从索引 0（包含）到 `end`（不包含）的子列表。 |\n| `list[start:]` | 返回从 `start`\
+  \ 到结束的子列表。 |\n| `list[-2:]` | 返回倒第二个到结束的列表。 |\n\n```python\n>>> objects = [ 1 ,\
+  \ 3 , 'Hello' , 10 , 23 ]\n>>> [1, 3, 'Hello', 10, 23]\n>>> objects[ -1 ]\n23\n\
+  >>> objects[ -3 ]\n[1, 3, 'Hello', 10, 23]\n>>> objects[:]\n[1, 3, 'Hello', 10,\
+  \ 23]\n>>> objects[ 2 :]\n['Hello', 10, 23]\n>>> objects[ : 3 ]\n[1, 3, 'Hello']\n\
+  ```\n\n### 合并两个列表\n`+` 运算符用于合并两个列表。\n```python\n>>> even = [ 2 , 4 , 6 , 8 , 10\
+  \ ]\n>>> odd = [ 1 , 3 , 5 , 7 , 9 ]\n>>> numbers = even + odd\n>>> [2, 4, 6, 8,\
+  \ 10, 1, 3, 5, 7, 9]\n```\n列表是可变的，你可以更改列表的值。\n```python\n>>> numbers = [ 2 , 4 ,\
+  \ 6 , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers[ 0 ] = 12\n>>> numbers[ 1 ] = 14\n\
+  >>> [12, 14, 6, 8, 10, 1, 3, 5, 7, 9]\n```\n\n### 向列表末尾添加元素\n列表提供了 `append` 方法向列表末尾添加新元素。\n\
+  ```python\n>>> numbers = [ 12 , 14 , 6 , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers.append(\
+  \ 11 )\n>>> numbers.append( 13 )\n>>> [12, 14, 6, 8, 10, 1, 3, 5, 7, 9, 11, 13]\n\
+  ```\n\n### 切片赋值\n如果你想替换列表中的元素序列，可以使用切片符号。\n```python\nnumbers[2:5] = [21, 22, 23]\n\
+  ```\n上述语句将索引 2, 3, 4 处的元素替换为 21, 22, 23。\n```python\nnumbers[:] = []\n```\n上述语句通过将所有元素替换为空列表来清空列表。\n\
+  ```python\n>>> numbers = [ 12 , 14 , 6 , 8 , 10 , 1 , 3 , 5 , 7 , 9 ]\n>>> numbers[2:5]\
+  \ = [21, 22, 23]\n>>> [12, 14, 21, 22, 23, 1, 3, 5, 7, 9]\n>>> numbers[:] = []\n\
+  >>> []\n```\n\n### 获取列表长度\n使用 `len` 函数可以获取列表的长度。\n```python\n>>> vowels = ['a',\
+  \ 'e', 'i', 'o', 'u']\n>>> len(vowels)\n5\n```\n\n### 嵌套列表\n列表可以嵌套在其他列表中。例如，在下面的示例中，`numbers`\
+  \ 包含 3 个列表，第一个列表表示奇数，第二个列表表示偶数，第三个列表表示质数。\n```python\n>>> numbers = [ [ 1 , 3 ,\
+  \ 5 , 7 ], [ 2 , 4 , 6 , 8 ], [ 2 , 3 , 5 , 7 , 11 ]]\n>>> [[1, 3, 5, 7], [2, 4,\
+  \ 6, 8], [2, 3, 5, 7, 11]]\n>>> numbers[ 0 ]\n[1, 3, 5, 7]\n>>> numbers[ 1 ]\n[2,\
+  \ 4, 6, 8]\n>>> numbers[ 2 ]\n[2, 3, 5, 7, 11]\n>>> len(numbers)\n3\n>>> len(numbers[\
+  \ 0 ])\n4\n>>> len(numbers[ 1 ])\n4\n>>> len(numbers[ 2 ])\n5\n>>> numbers[ 0 ]\
+  \ [ 1 ] = 9\n>>> numbers[ 1 ] [ 1 : 4 ] = [ 10 , 12 , 14 ]\n>>> [[1, 9, 5, 7], [2,\
+  \ 10, 12, 14], [2, 3, 5, 7, 11]]\n```\n\n\n\n\n\n## 元组（tuple）与列表（list）的区别\n\n- `List`\
+  \ 是变的，而 `tuple` 是不可变的。\n- `Tuple` 可以包含异构数据，而 `list` 通常包含同质数据。\n\n`test.py`\n```python\n\
+  employee e = ( 1 , \"Hari Krihsna \", \"Gurram \", 12345.678 )\nprint(employee)\n\
+  print(employee[0])\nprint(employee[1])\nprint(employee[2])\nprint(employee[3])\n\
+  ```\n```bash\n$ python3 test.py\n(1, 'Hari Krihsna', 'Gurram', 12345.678)\n1\nHari\
+  \ Krihsna\nGurram\n12345.678\n```\n\n通过观察上面的示例，`tuple` 中的元素包含在括号内。尽管元组是不可变的，但你可以创建包含可变对象的元组，例如列表。\n\
+  \n`test.py`\n```python\nemployee e = ( 1 , [])\nprint(employee)\nemployee[1].append(2)\n\
+  employee[1].append(4)\nemployee[1].append(6)\nprint(employee)\n```\n```bash\n$ python3\
+  \ test.py\n(1, [])\n(1, [2, 4, 6])\n```\n\n### 打包（Packing）与解包（Unpacking）\n\n你可以在不使用括号定义元组。\n\
+  例如：\n```python\nemployee=1, \"Hari Krihsna\", \"Gurram\", 12345.678\n```\n上面是元组打包的示例。\n\
+  \n```python\nid, firstName, lastName, salary = employee\n```\n上面是元组解包的示例。序列解包要求等号左侧的变量数量与序列中的元素数量一致。\n\
+  \n`test.py`\n```python\nemployee e = 1 , \"Hari Krihsna \", \"Gurram \", 12345.678\n\
+  id, firstName, lastName, salary = employee\nprint(id)\nprint(firstName)\nprint(lastName)\n\
+  print(salary)\n```\n```bash\n$ python3 test.py\n1\nHari Krihsna\nGurram\n12345.678\n\
+  ```\n\n### 合并元组（Concatenate tuples）\n\n`+` 运算符用于合并元组。\n\n```python\n>>> tuple_1\
+  \ = ( 1 , \"HI \", 2 , 45.65 )\n>>> tuple_2 = ( \"abcdef \", 54 , 67 )\n>>> tuple_3\
+  \ = tuple_1 + tuple_2\n>>> tuple_3\n( 1 , 'HI' , 2 , 45.65 , 'abcdef' , 54 , 67\
+  \ )\n```\n\n### 切片（Slicing）\n\n和列表一样，你可以使用切片语法访问元组。\n\n| 示例 | 描述 |\n| :--- | :---\
+  \ |\n| `tuple[start:end]` | 返回从索引 `start`（包含）到结束索引（不包含）的 `tuple` |\n| `tuple[:end]`\
+  \ | 返回从索引 0（包含）到结束索引（不包含）的 `tuple` |\n| `tuple[start:]` | 返回从索引 `start` 到末尾的 `tuple`\
+  \ |\n| `tuple[-2:]` | 返回从倒数第二个到末尾的元素 |\n\n```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n\
+  >>> tuple1[0:]\n(1, 'HI', 2, 45.65)\n>>> tuple1[:]\n(1, 'HI', 2, 45.65)\n>>> tuple1[:3]\n\
+  (1, 'HI', 2)\n>>> tuple1[2:5]\n(2, 45.65)\n```\n\n### 重复元组元素（Repeat tuple elements）\n\
+  \n`*` 运算符用于重复 `tuple` 中的元素。\n\n```python\n>>> tuple1\n(1, 'HI', 2, 45.65)\n>>> tuple1\
+  \ * 3\n(1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65, 1, 'HI', 2, 45.65)\n```\n\n### 删除元组元素（Remove\
+  \ tuple elements）\n\n正如我所说，元组是不可变的，因此无法从 `tuple` 中删除元素。但你可以使用 `del` 语句删除整个元组。\n\n\
+  ```python\n>>> tuple1 = ( 1 , \"HI \", 2 , 45.65 )\n>>> del tuple1\nTraceback (most\
+  \ recent call last):\n  File \"<stdin>\", line 1, in <module>\nNameError: 'tuple1'\
+  \ is not defined\n```\n观察输出，引发异常是因为在删除后，`tuple1` 不再存在了。\n\n## Python：类变量与实例变量（Class\
+  \ Vs Instance variables）\n\n类变量与类相关，并对类的所有实例（对象）可用，而实例变量是对象唯一的，用于标识该对象。\n\n`Employee.py`\n\
+  ```python\nclass Employee :\n    \"\"\" 用于所有员工的类 \"\"\"\n    noOfEmployees = 0\n\
+  \    organization = \"abc corporation\"\n\n    def __init__( self , id , firstName\
+  \ , lastName ):\n        self.id = id\n        self.firstName = firstName\n    \
+  \    self.lastName = lastName\n        Employee.noOfEmployees += 1\n\n    def displayEmployee\
+  \ ( self ):\n        print ( self.id, self.firstName, self.lastName)\n\nemp1 = Employee(\
+  \ 1 , \"Hari Krishna\", \"Gurram\" )\nemp1.displayEmployee()\nprint (\"Total Employees\
+  \ \", Employee.noOfEmployees)\n```\n\n\n\n\n\n```python\nprint ( \"请输入有效数字（或）y 应该大于\
+  \ 0\" )\n```\n\n```\n$ python3 test.py\nEnter divisor 2\nEnter dividend 0\n请输入有效数字（或）y\
+  \ 应该大于 0\nEnter divisor aa\n请输入有效数字（或）y 应该大于 0\nEnter divisor 2\nEnter dividend\
+  \ 4\n0.5\n```\n\n最后一个 `except` 子句可以省略异常名称。它被用作全局异常处理器。\n\n`test.py`\n```python\n\
+  while True :\n  try :\n    tempList = []\n    print (tempList[ 10 ])\n    break\n\
+  \  except ValueError :\n  print ( \"请输入有效数字\" )\n  except ZeroDivisionError :\n\
+  \  print ( \"y 应该不为零\" )\n  except Exception as inst:\n  print ( \"全局处理器\" , inst)\n\
+  \  break\n```\n\n```\n$ python3 test.py\nGlobal handler list index out of range\n\
+  ```\n\n### try…except…else 子句\n\n`try…except` 语句可以有一个可选的 `else` 子句，它跟在 `except`\
+  \ 子句之后。如果 `try` 块没有抛出任何异常，将执行 `else` 子句。\n\n`test.py`\n```python\nwhile True :\n\
+  \  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int ( input ( \"输入被除数 \" ))\n\
+  \    print (x / y)\n  except ValueError :\n  print ( \"请输入有效数字\" )\n  except ZeroDivisionError\
+  \ :\n  print ( \"y 应该不为零\" )\n  else :\n  print ( \"程序执行成功\" )\n  break\n```\n\n\
+  ```\n$ python3 test.py\nEnter divisor 4\nEnter dividend 2\n2.0\nProgram executed\
+  \ successfully\n```\n\n### 异常参数\n\n每发生异常时，它都会与一个名为异常参数的变量关联。\n\n`test.py`\n```python\n\
+  while True :\n  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int ( input (\
+  \ \"输入被除数 \" ))\n    print (x / y)\n  except ValueError as inst:\n  print(inst)\n\
+  \  except ZeroDivisionError as inst:\n  print(inst)\n  else :\n  print ( \"程序执行成功\"\
+  \ )\n  break\n```\n\n```\n$ python3 test.py\nEnter divisor qwerty\ninvalid literal\
+  \ for int() with base 10: 'qwerty'\nEnter divisor 4\nEnter dividend 0\ndivision\
+  \ by zero\nEnter divisor 2\nEnter dividend 4\n0.5\nProgram executed successfully\n\
+  ```\n\n`except` 子句可以在异常名称后指定一个变量。该变量将绑定到异常实例，其参数存储在 `instance.args` 中。\n\n`test.py`\n\
+  ```python\nwhile True :\n  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int\
+  \ ( input ( \"输入被除数 \" ))\n    if y == 0 :\n      raise Exception (x, y)\n    print\
+  \ ( \"x/y = \" ,x / y)\n    break\n  except Exception as inst:\n  arg1, arg2 = inst\
+  \ . args\n  print ( \"arg1=\" , arg1)\n  print ( \"arg2=\" , arg2)\n```\n\n```\n\
+  $ python3 test.py\nEnter divisor 2\nEnter dividend 0\narg1= 2\narg2= 0\nEnter divisor\
+  \ 2\nEnter dividend 4\nx/y =  0.5\n```\n\n如果异常与其关联有参数，这些参数将作为异常消息的最后部分被打印。\n\n`test.py`\n\
+  ```python\nwhile True :\n  try :\n    x = int ( input ( \"输入除数 \" ))\n    y = int\
+  \ ( input ( \"输入被除数 \" ))\n    if y == 0 :\n      raise Exception (x, y)\n    print\
+  \ ( \"x/y = \" ,x / y)\n    break\n  except Exception as inst:\n  print (inst)\n\
+  ```\n\n```\n$ python3 test.py\nEnter divisor 2\nEnter dividend 0\n(2, 0)\nEnter\
+  \ divisor 2\nEnter dividend 4\nx/y =  0.5\n```\n\n## Python global 关键字\n\n`global`\
+  \ 关键字用于从局部上下文中创建/修改全局变量（你也可以在其中声明函数、类等）。\n\n`test.py`\n```python\ndef function1\
+  \ ():\n  global data\ndata = \"Hello World\"\n\ndef function2 ():\n  print (data)\n\
+  \nfunction1()\nfunction2()\n```\n\n```\n$ python3 test.py\nHello World\n```\n\n\
+  观察 `test.py`，尽管 `data` 在 `function1` 中声明，但它被 `function2` 访问。这是因为 `data` 在全局作用域中声明的。\n\
+  \n## Python: 获取变量类型\n\n你可以使用 `type()` 函数或 `__class__` 属性获取变量的类型。\n\n```python\n\
+  >>> data = [ 1 , 2 , 3 , 4 ]\n>>> type(data)\n<class 'list'>\n>>> data . __class__\n\
+  <class 'list'>\n>>>\n>>> data = { 1 : \"hari \" , 2 : \"Krishna \" }\n>>> type(data)\n\
+  <class 'dict'>\n>>> data . __class__\n<class 'dict'>\n>>>\n```\n\n### 使用 if 语句检查类型\n\
+  \n`data = { 1 : \"hari \" , 2 : \"Krishna \" }`\n\n#### 方法 1\n```python\nif (data\
+  \ . __class__ . __name__ == 'dict' ):\n    pass\n```\n\n#### 方法 2\n```python\nif\
+  \ type(data) == dict:\n    pass\n```\n\n#### 方法 3\n```python\nif isinstance(data,\
+  \ dict):\n    pass\n```\n\n\n\n\n## indexOf() 方法\n\n`indexOf()` 方法返回调用的 `String`\
+  \ 对象中指定值第一次出现的索引。如果找不到该值，则返回 `-1`。\n\n语法：\n`str.indexOf(searchValue[, fromIndex])`\n\
+  \n参数包括：\n- `searchValue`：要查找的字符串。\n- `fromIndex`（可选）：开始搜索的索引。可以是任何整数。\n\n如果满足 `str.indexOf(searchValue)\
+  \ !== -1` 条件，该字符将被计数。\n\n### 流程图\n![](img/Image0003.jpg)\n\n### JavaScript：判断一个数字是否为质数\n\
+  \n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\"\
+  >\n<title>判断数字是否为质数的 JavaScript 程序</title>\n</head>\n<body>\n<form>\n第一个数字：<input\
+  \ type=\"text\" id=\"firstNumber\" /><br>\n第二个数字：<input type=\"text\" id=\"secondNumber\"\
+  \ /><br>\n<input type=\"button\" onclick=\"multiplyBy()\" Value=\"乘法\" />\n<input\
+  \ type=\"button\" onclick=\"divideBy()\" Value=\"除法\" />\n</form>\n<p>结果是：<br>\n\
+  <span id=\"result\"></span></p>\n</body>\n</html>\n```\n\n#### JavaScript 代码\n```javascript\n\
+  function test_prime(n) {\n  if (n === 1) {\n    return false;\n  } else if (n ===\
+  \ 2) {\n    return true;\n  } else {\n    for (var x = 2; x < n; x++) {\n      if\
+  \ (n % x === 0) {\n        return false;\n      }\n    }\n    return true;\n  }\n\
+  }\nconsole.log(test_prime(37));\n```\n\n#### 输出\nTrue\n\n### 流程图\n![](img/Image0005.jpg)\n\
+  \n### JavaScript：获取数据类型\n创建一个 JavaScript 函数，接收参数并返回其类型。可能的值：object、boolean、number、string\
+  \ 或 undefined。\n\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta\
+  \ charset=\"utf-8\">\n<title>检测数据类型</title>\n</head>\n<body>\n</body>\n</html>\n\
+  ```\n\n#### JavaScript 代码\n```javascript\nfunction detect_data_type(value) {\n \
+  \ var dtypes = [Function, RegExp, Number, String, Object], x, len;\n  if (typeof\
+  \ value === \"object\" || typeof value === \"function\") {\n    for (x = 0, len\
+  \ = dtypes.length; x < len; x++) {\n      if (value instanceof dtypes[x]) {\n  \
+  \      return dtypes[x];\n      }\n    }\n  }\n  return typeof value;\n}\nconsole.log(detect_data_type(12));\n\
+  console.log(detect_data_type('w3'));\nconsole.log(detect_data_type(false));\n```\n\
+  \n#### 输出\nnumber\nstring\nBoolean\n\n### JavaScript：获取数组中的第二小和第二大\n\n#### HTML\
+  \ 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>从数组中获取第二小和第二数字</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n#### JavaScript 代码\n```javascript\nfunction\
+  \ Second_Greatest_Lowest(arr_num) {\n  arr_num.sort(function(x, y) {\n    return\
+  \ x - y;\n  });\n  var uniqa = [arr_num[0]];\n  var result = [];\n  for (var j =\
+  \ 1; j < arr_num.length; j++) {\n    if (arr_num[j - 1] !== arr_num[j]) {\n    \
+  \  uniqa.push(arr_num[j]);\n    }\n  }\n  result.push(uniqa[1], uniqa[uniqa.length\
+  \ - 2]);\n  return result.join(',');\n}\nconsole.log(Second_Greatest_Lowest([1,\
+  \ 2, 3, 4, 5]));\n```\n\n#### 输出\n2,4\n\n### 流程图\n![](img/Image0007.jpg)\n\n###\
+  \ JavaScript 基础：两个数字的乘法和除法\n\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+  <meta charset=\"utf-8\">\n<title>计算两个数字乘法和除法的 JavaScript 程序</title>\n<style type=\"\
+  text/css\">\nbody {margin:30px;}\n</style>\n</head>\n<body>\n<form>\n第一个数字：<input\
+  \ type=\"text\" id=\"firstNumber\" /><br>\n第二个数字：<input type=\"text\" id=\"secondNumber\"\
+  \ /><br>\n<input type=\"button\" onclick=\"multiplyBy()\" Value=\"乘法\" />\n<input\
+  \ type=\"button\" onclick=\"divideBy()\" Value=\"除法\" />\n</form>\n<p>结果是：<br>\n\
+  <span id=\"result\"></span></p>\n</body>\n</html>\n```\n\n#### JavaScript 代码\n```javascript\n\
+  function multiplyBy() {\n  var num1 = document.getElementById(\"firstNumber\");\n\
+  \  var num2 = document.getElementById(\"secondNumber\");\n  document.getElementById(\"\
+  result\").innerHTML = num1 * num2;\n}\nfunction divideBy() {\n  var num1 = document.getElementById(\"\
+  firstNumber\");\n  var num2 = document.getElementById(\"secondNumber\");\n  document.getElementById(\"\
+  result\").innerHTML = num1 / num2;\n}\n```\n\n#### 解析\n- `document.getElementById(id).value`:\
+  \ 文本字段的 `value` 属性用于设置或返回值属性。\n- `document.getElementById(id).innerHTML`: 元素的 `innerHTML`\
+  \ 属性用于设置 HTML 内容。\n\n#### 输出\n![](img/Image0008.jpg)\n\n### 将摄氏度转换为华氏度\n\n#### HTML\
+  \ 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>摄氏度转换为华氏度的\
+  \ JavaScript 程序</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n#### JavaScript\
+  \ 代码\n```javascript\nfunction celsiusToF(celsius) {\n  var cTemp = celsius;\n  var\
+  \ fahr = (cTemp * 9 / 5) + 32;\n  var message = cTemp + \"°C 是 \" + fahr + \"°F\"\
+  ;\n  document.getElementById(\"result\").innerHTML = message;\n}\nfunction fahrenheitToC(fahrenheit)\
+  \ {\n  var fTemp = fahrenheit;\n  var cTemp = (fTemp - 32) * 5 / 9;\n  var message\
+  \ = fTemp + \"°F 是 \" + cTemp + \"°C\";\n  document.getElementById(\"result\").innerHTML\
+  \ = message;\n}\n```\n\n\n\n\n```javascript\nconsole.log(without_first_end('JavaScript'));\n\
+  console.log(without_first_end('JS'));\nconsole.log(without_first_end('PHP'));\n\
+  ```\nOutput:\navaScrip\nH\n\n## 拼接两个字符串\n除它们的第一个字符\n\n### HTML CODE\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+  width=device-width\">\n  <title>JavaScript 程序：除掉第一个字符后拼接两个字符串。</title>\n</head>\n\
+  <body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction concatenate(str1,\
+  \ str2) {\n  str1 = str1.substring(1, str1.length);\n  str2 = str2.substring(1,\
+  \ str2.length);\n  return str1 + str2;\n}\nconsole.log(concatenate(\"PHP\",\"JS\"\
+  ));\nconsole.log(concatenate(\"A\",\"B\"));\nconsole.log(concatenate(\"AA\",\"BB\"\
+  ));\n```\nOutput:\nHPS\nAB\n\n## 将最后三个字符移动\n到指定字符串的开头\n\n### HTML CODE\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+  \ content=\"width=device-width\">\n  <title>JavaScript 程序：将最后三个字符移动到给定字符串的开头。字符串长度必须至少为\
+  \ 3。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\n\
+  function right_three(str) {\n  if (str.length > 1) {\n    return str.slice(-3) +\
+  \ str.slice(0, -3);\n  }\n  return str;\n}\nconsole.log(right_three(\"Python\"));\n\
+  console.log(right_three(\"JavaScript\"));\nconsole.log(right_three(\"Hi\"));\n```\n\
+  Output:\nhonPyt\niptJavaScr\nHi\n\n## 计算和\n给定数组中三个元素的和\n长度为 3 的整数和\n\n### HTML CODE\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"\
+  viewport\" content=\"width=device-width\">\n  <title>JavaScript 程序：计算长度为 3 的给定整数中三个元素的和。</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction\
+  \ sum_three(nums) {\n  return nums[0] + nums[1] + nums[2];\n}\nconsole.log(sum_three([10,\
+  \ 32, 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+  \ -11]));\n```\nOutput:\n62\n21\n-3\n\n## 相加两个数字\n给定正整数的两个数字\n长度为二\n\n### HTML CODE\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"\
+  viewport\" content=\"width=device-width\">\n  <title>JavaScript 程序：相加长度为二的正整数的两个数字。</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction\
+  \ add_two_digits(n) {\n  return n % 10 + Math.floor(n / 10);\n}\nconsole.log(add_two_digits(25));\n\
+  console.log(add_two_digits(50));\n```\nOutput:\n7\n5\n\n## 检查给定年份是否为闰年\n### HTML\
+  \ CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+  \ <title>查找闰年</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+  ```javascript\nfunction leapyear(year) {\n  return (year % 100 === 0) ? (year %\
+  \ 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\n\
+  console.log(leapyear(1700));\nconsole.log(leapyear(1800));\nconsole.log(leapyear(100));\n\
+  ```\nOutput:\ntrue\ntrue\nfalse\nfalse\n\n## 检查给定正数\n3 或 7 的倍数\n### HTML CODE\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"\
+  viewport\" content=\"width=device-width\">\n  <title>JavaScript 程序：检查给定正数是否是 3 的倍数或\
+  \ 7 的倍数。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT CODE\n\
+  ```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return\
+  \ true;\n  } else {\n    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+  console.log(test37(10));\nconsole.log(test37(11));\n```\nOutput:\ntrue\ntrue\nfalse\n\
+  false\n\n## 字符串以'Java'开头\n否则\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+  <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+  >\n  <title>JavaScript 程序：检查字符串是否以'Java'开头，否则返回 false。</title>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n### JAVCRIPT CODE\n```javascript\nfunction start_java(str)\
+  \ {\n  if (str.length < 4) {\n    return false;\n  }\n  front = str.substring(0,\
+  \ 4);\n  if (front == 'Java') {\n    return true;\n  } else {\n    return false;\n\
+  \  }\n}\nconsole.log(start_java(\"JavaScript\"));\nconsole.log(start_java(\"Java\"\
+  ));\nconsole.log(start_java(\"Python\"));\n```\nOutput:\ntrue\ntrue\nfalse\n\n\n\
+  \n\n\n# [初学者 Django 与 Python：二本书合一 - 快速学习编程！](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS/ref=sr_1_1?dchild=1&keywords=DJANGO+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654258&s=digital-text&sr=1-1)\n\
+  \n# [JavaScript 与 Dart 编程基础：适合零基础学者](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9/ref=sr_1_1?dchild=1&keywords=JAVASCRIPT+AND+DART+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654541&s=digital-text&sr=1-1)\n\
+  \n# [初学者 TensorFlow 与 Python 编程基础：适合零基础学者](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+FOR+BEGINNERS+AND+PYTHON+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654724&s=digital-text&sr=1-2)\n\
+  \n# [Rust 编程语言：适合初学者，快速学习编程！](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VRXQ2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653241&s=digital-text&sr=1-2)\n\
+  \n# [初学者 Hadoop 与 Python：二本书合一 - 快速学习编程！](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654833&s=digital-text&sr=1-1)\n\
+  \n# [初学者 Selenium 与 Java：二本书合一 - 快速学习编程！](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654994&s=digital-text&sr=1-1)\n\
+  \n# [初学者 Android 与 Java：二本书合一 - 快速学习编程！](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627655061&s=digital-text&sr=1-1)\n\
+  \n# [Python 与 Hadoop 基础](https://www.amazon.com/PYTHON-HADOOP-BASICS-PROGRAMMING-QuickStart-ebook/dp/B08CVY/ref=sr_1_1?dchild=1)\n\
+  \n# [HADOOP-BASICS-PYTHON-PROGRAMMING-J\n\n# [Python 基础与编程示例](https://www.amazon.com/PYTHON-BASICS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B08FL5Q/ref=sr_1_10?dchild=1)\n\
+  \n# [C# 与 C++ 编程示例](https://www.amazon.com/C-AND-C-CODING-EXAMPLES-BEGINNERS-ebook/dp/B08KN56/ref=sr_1_1?dchild=1)\n\
+  \n# [Python 编程与 C 语言示例](https://www.amazon.com/PYTHON-CODING-AND-C-PROGRAMMING-BEGINNERS-ebook/dp/B08PLYH/ref=sr_1_3?dchild=1)\n\
+  \n# [C++ 与 Java 编程示例](https://www.amazon.com/CPP-JAVA-CODING-EXAMPLES-BEGINNERS-ebook/dp/B082WH5G/ref=sr_1_1?dchild=1)\n\
+  \n# [Android 基础与 Python 编程示例](https://www.amazon.com/ANDROID-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B099PM2/ref=sr_1_3?dchild=1)\n\
+  \n# [C# 基础与编程示例](https://www.amazon.com/CS-BASICS-CODING-EXAMPLES-PROGRAMMING-QuickStart-ebook/dp/B08GZLNW6/ref=sr_1_6?dchild=1)\n\
+  \n# [Angular 与 Python 基础](https://www.amazon.com/ANGULAR-PYTHON-BASICS-QuickStart-Tutorial-ebook/dp/B08GH59/ref=sr_1_1?dchild=1)\n\
+  \n# [Python 基础与 Scala 编程示例](https://www.amazon.com/PYTHON-BASICS-SCALA-CODING-EXAMPLES-ebook/dp/B095DJ1/ref=sr_1_19?dchild=1)\n\
+  \n# [Java 基础与 Python 编程示例](https://www.amazon.com/JAVA-BASICS-PYTHON-CODING-EXAMPLES-ebook/dp/B098LV4/ref=sr_1_21?dchild=1)\n\
+  \n# [Python 基础与 C# 编程示例](https://www.amazon.com/PYTHON-BASICS-CS-CODING-EXAMPLES-PROGRAMMING-ebook/dp/B098FMB/ref=sr_1_20?dchild=1)\n\
+  \n# [Android 基础与 Java 编程示例](https://www.amazon.com/ANDROID-BASICS-JAVA-CODING-EXAMPLES-ebook/dp/B098PKH/ref=sr_1_24?dchild=1)\n\
+  \n"

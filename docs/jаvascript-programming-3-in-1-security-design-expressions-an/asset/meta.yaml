@@ -1,0 +1,78 @@
+name: jаvascript Programming： 3 In 1 Security Design, Expressions And Web Development
+name_cn: JavaScript 编程：三合一安全设计、表达式与 Web 开发
+slug: jаvascript-programming-3-in-1-security-design-expressions-an
+toc:
+- - '#'
+  - JavaScript 编程：三合一安全设计、表达式与 Web 开发
+- - '##'
+  - 第一部分：JAVASCRIPT 安全设计
+- - '###'
+  - 代码执行与漏洞利用
+- - '##'
+  - 第二部分：JAVASCRIPT 表达式
+- - '###'
+  - 运算符、循环与 switch 语句
+- - '##'
+  - 第三部分：JAVASCRIPT Web 开发
+- - '###'
+  - 使用 Node 和 Express JS 构建 REST API
+- - '##'
+  - 序言
+- - '##'
+  - 第一章 浏览器如何执行 JavaScript 代码
+- - '##'
+  - 第一章 switch 语句的工作原理
+- - '##'
+  - 第二章 switch 语句的块作用域问题
+- - '##'
+  - 第三章 使用 for/in 循环
+- - '##'
+  - 第四章 break 和 continue 语句
+- - '##'
+  - 第五章 数运算符
+- - '##'
+  - 第六章 赋值与三元运算符
+- - '##'
+  - 第七章 逻辑运算符
+- - '##'
+  - 第八章 短路与运算符优先级
+- - '##'
+  - 第九章 利用 JavaScript 异常处理
+- - '##'
+  - 第十章 如何检测错误类型
+- - '##'
+  - 第十一章 如何确定 JavaScript 变量数据类型
+- - '##'
+  - 第十二章 属性的辅助函数
+- - '##'
+  - 第十三章 理解 JavaScript 中的 'this'
+- - '##'
+  - 第十四章 复制数组
+- - '##'
+  - 第十五章 使用展开运算符传递参数
+- - '##'
+  - 第十六章 对象字面量的浅拷贝
+- - '##'
+  - 第一章 如何获取正确的工具
+- - '##'
+  - 第二章 如何创建 Express 服务器
+- - '##'
+  - 第三章 如何使用 REST API 方法检索和搜索数据
+- - '##'
+  - 第四 如何创建模块
+- - '##'
+  - 第五章 如何获取单条数据
+- - '##'
+  - 第六章 如何搜索数据
+- - '##'
+  - 第七章 如何创建 POST 端插入数据
+- - '##'
+  - 第八章 如何创建 DELETE 端删除数据
+- - '##'
+  - 第九章 如何创建 PATCH 端修改数据
+- - '##'
+  - 第十章 如何处理 REST API 方法中的异常
+- - '##'
+  - 第十一章 如何构建复用的错误模块
+- - '##'
+  - 第十二章 如何从 HTML 页面调用 REST API

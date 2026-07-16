@@ -1,0 +1,2 @@
++   [JavaScript：轻松学习脚本语言基础并易编程编程(javascript 高级指南、javascript 算法、javascript 和 jquery、javascript 初学者指南、javascript 面试)](README.md)
++   [JavaScript：轻松学习脚本语言基础并易编程编程(javascript 高级指南、javascript 算法、javascript 和 jquery、javascript 初学者指南、javascript 面试)](javascript-learn-basics-of-scripting-language-and-use-in-pro_0.md)

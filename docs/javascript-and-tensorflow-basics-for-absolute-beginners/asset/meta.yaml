@@ -1,0 +1,482 @@
+name: JAVASCRIPT AND TENSORFLOW BASICS： FOR ABSOLUTE BEGINNERS
+name_cn: JavaScript 与 TensorFlow 基础：零基础学者指南
+slug: javascript-and-tensorflow-basics-for-absolute-beginners
+toc:
+- - '#'
+  - JavaScript 与 TensorFlow 基础：零基础学者指南
+- - '#'
+  - JAVASCRIPT
+- - '##'
+  - JAVASCRIPT 示例
+- - '###'
+  - JavaScript 代码可以在 JavaScript 中的 3 个地方编写
+- - '###'
+  - 示例（在 body 标签之间编写代码）
+- - '###'
+  - 示例 2（在 head 标签之间编写代码）
+- - '###'
+  - 外部文件
+- - '#'
+  - JavaScript 注释
+- - '##'
+  - JavaScript 注释的类型
+- - '###'
+  - 单行注释
+- - '####'
+  - 输出
+- - '##'
+  - 多行注释
+- - '###'
+  - /* 在此处编写注释 */
+- - '#'
+  - JavaScript 变量
+- - '###'
+  - 在函数内部声明全局变量
+- - '###'
+  - JavaScript 是一种动态类型语言，我们不需要定义变量的类型
+- - '###'
+  - 示例
+- - '###'
+  - JavaScript 原始数据类型
+- - '##'
+  - JavaScript 非原始数据类型
+- - '##'
+  - 算术运算符
+- - '##'
+  - 比较运算符
+- - '##'
+  - 赋值运算符
+- - '###'
+  - 位运算运算符
+- - '##'
+  - 逻辑运算符
+- - '###'
+  - 布尔值常用于逻辑运算符。
+- - '###'
+  - 逻辑运算符如下：
+- - '#'
+  - JavaScript If Else
+- - '##'
+  - if 语句
+- - '###'
+  - 示例
+- - '##'
+  - if else 语句
+- - '###'
+  - 语法
+- - '##'
+  - If else if
+- - '###'
+  - 语法
+- - '#'
+  - Switch 语句
+- - '###'
+  - 语法
+- - '#'
+  - JavaScript 函数
+- - '##'
+  - JavaScript 函数的优点
+- - '##'
+  - 带参数的函数
+- - '###'
+  - 示例
+- - '##'
+  - 带返回值的函数
+- - '###'
+  - 输出
+- - '##'
+  - Function() 构造函数
+- - '###'
+  - 语法
+- - '##'
+  - 函数字面量 (Function Literals)
+- - '#'
+  - JavaScript 对象 (Javascript Object)
+- - '###'
+  - 语法
+- - '###'
+  - 对象的方法 (Methods of Object)
+- - '#'
+  - JavaScript 数组 (Javascript array)
+- - '###'
+  - 语法
+- - '###'
+  - 示例 2
+- - '###'
+  - 数组中的函数 (FUNCTIONS IN ARRAY)
+- - '#'
+  - JavaScript 字符串 (Javascript String)
+- - '###'
+  - 语法
+- - '###'
+  - 使用 new 关键字
+- - '###'
+  - 输出 (OUTPUT)
+- - '##'
+  - 字符串属性 (String properties)
+- - '##'
+  - 方法 (METHODS)
+- - '###'
+  - charAt()
+- - '##'
+  - concat(str)
+- - '##'
+  - indexOf(str)
+- - '##'
+  - lastindexOf(str)
+- - '##'
+  - match()
+- - '##'
+  - toLowerCase()
+- - '##'
+  - toUpperCase()
+- - '##'
+  - valueOf()
+- - '#'
+  - JavaScript Date
+- - '###'
+  - 语法
+- - '###'
+  - 描述
+- - '###'
+  - Date 示例
+- - '#'
+  - JavaScript Math
+- - '###'
+  - 语法
+- - '###'
+  - Math.pow()
+- - '###'
+  - Math.sqrt()
+- - '###'
+  - Math.ceil()
+- - '#'
+  - JavaScript Number
+- - '###'
+  - 语法
+- - '###'
+  - 示例输出
+- - '#'
+  - TensorFlow 简史
+- - '##'
+  - TensorFlow 的历史
+- - '##'
+  - TensorFlow 的组件
+- - '###'
+  - 张量 (Tensor)
+- - '###'
+  - 图 (Graphs)
+- - '###'
+  - 优势
+- - '###'
+  - 会话 (Session)
+- - '##'
+  - 为什么 TensorFlow 如此流行？
+- - '###'
+  - TensorFlow 的用例/应用
+- - '###'
+  - 1. 语音/声音识别
+- - '###'
+  - 2. 图像识别
+- - '###'
+  - 3. 时间序列
+- - '###'
+  - 4. 视频检测
+- - '###'
+  - 5. 基于文本的应用
+- - '##'
+  - TensorFlow 的特性
+- - '###'
+  - 1. 响应式构造
+- - '###'
+  - 2. 灵活
+- - '###'
+  - 3. 易于训练
+- - '###'
+  - 4. 并行神经网络训练
+- - '###'
+  - 5. 大型社区
+- - '###'
+  - 6. 开源
+- - '###'
+  - 7. 特征列 (Feature Columns)
+- - '###'
+  - 8. 统计分布的可用性
+- - '###'
+  - 9. 特性层
+- - '###'
+  - 10. 可视化
+- - '###'
+  - 11. 事件日志器
+- - '##'
+  - 通过 pip 安装 TensorFlow
+- - '##'
+  - 什么是 pip？
+- - '##'
+  - 安装我们的 TensorFlow
+- - '#'
+  - 通过 conda 安装 TensorFlow
+- - '#'
+  - TensorFlow 架构
+- - '##'
+  - 1. TensorFlow Server
+- - '##'
+  - 2. Server Versions
+- - '##'
+  - 3. Server Streams
+- - '##'
+  - 4. TensorFlow Models
+- - '##'
+  - 5. TensorFlow Loaders
+- - '##'
+  - 6. TensorFlow 架构中的 Sources
+- - '##'
+  - 7. TensorFlow Managers
+- - '##'
+  - 8. TensorFlow Core
+- - '##'
+  - 9. Server 的生命
+- - '##'
+  - 10. TensorFlow Loaders
+- - '##'
+  - 11. TensorFlow 架构中的 Batcher
+- - '#'
+  - TensorFlow 的优点与缺点
+- - '##'
+  - TensorFlow 的优点
+- - '###'
+  - 1) 图：TensorFlow 的数值图可视化更为优越。
+- - '###'
+  - 2) 库管理：它有 Google 的支持。
+- - '###'
+  - 3) 调试：允许我们执行图的子部分。
+- - '###'
+  - 4) 可扩展性
+- - '###'
+  - 5) 流线化
+- - '##'
+  - TensorFlow 的缺点
+- - '###'
+  - 1) 缺少符号循环
+- - '###'
+  - 2) 不支持 Windows
+- - '###'
+  - 3) 基准测试
+- - '###'
+  - 4) 不支持 Nvidia GPU
+- - '###'
+  - 5) 计算速度
+- - '###'
+  - 6) 不支持 OpenCL。
+- - '###'
+  - 7) 要求在高等微积分和线性代数方面有坚实的基础。
+- - '###'
+  - 8) 调试错误困难。
+- - '###'
+  - 10) 学习曲线陡峭。
+- - '#'
+  - TensorFlow Playground
+- - '###'
+  - 软输出激活函数
+- - '###'
+  - L1 正则化
+- - '###'
+  - L2 正则化
+- - '##'
+  - 神经网络模型/ 感知器
+- - '###'
+  - Playground 中颜色的含义
+- - '###'
+  - 用例
+- - '###'
+  - 为什么在分类问题中使用非线性激活函数？
+- - '#'
+  - TensorFlow 基础
+- - '###'
+  - 张量的表示
+- - '#'
+  - 张量的类型
+- - '#'
+  - 导入 tf
+- - '#'
+  - 创建 n 维张量
+- - '##'
+  - 'rank 0: 命名为 my_scalar'
+- - '##'
+  - 小数数据
+- - '#'
+  - 字符串数据
+- - '##'
+  - 秩 1_ 向量
+- - '##'
+  - 秩 2
+- - '##'
+  - 秩 3
+- - '#'
+  - 张量的形状
+- - '#'
+  - 乘法
+- - '##'
+  - 变量
+- - '###'
+  - 创建变量
+- - '###'
+  - 创建任意值
+- - '###'
+  - 创建 2x2 矩阵
+- - '##'
+  - 占位符
+- - '##'
+  - 代码解释
+- - '##'
+  - 创建 TensorFlow 流线的步骤
+- - '###'
+  - 步骤 1) 创建数据
+- - '###'
+  - 步骤 2) 创建占位符
+- - '###'
+  - 步骤 3) 定义数据集
+- - '###'
+  - 步骤 4) 创建流水线
+- - '###'
+  - 步骤 5) 执行操作
+- - '#'
+  - 单层感知机完整代码
+- - '#'
+  - Import MNIST dataset
+- - '#'
+  - Parameters
+- - '#'
+  - tf Graph Input
+- - '#'
+  - Create model
+- - '#'
+  - Set model weights
+- - '#'
+  - Constructing the model
+- - '#'
+  - Minimizing error using cross entropy
+- - '#'
+  - Initializing the variables
+- - '#'
+  - Launching the graph
+- - '#'
+  - Test the model
+- - '#'
+  - Calculating the accuracy of dataset
+- - '#'
+  - TensorFlow - 多层感知机
+- - '#'
+  - Import MNIST data
+- - '#'
+  - Parameters
+- - '#'
+  - Network Parameters
+- - '#'
+  - tf Graph input
+- - '#'
+  - weights layer 1
+- - '#'
+  - weights layer 2
+- - '#'
+  - weights output layer
+- - '#'
+  - cost function
+- - '#'
+  - optimizer
+- - '#'
+  - Initializing the variables
+- - '#'
+  - Launching the graph
+- - '#'
+  - 显示每个 epoch 的日志
+- - '#'
+  - 测试模型
+- - '#'
+  - 计算准确率
+- - '##'
+  - 创建交互会话
+- - '##'
+  - 创建占位符
+- - '#'
+  - 机器学习与深度学习
+- - '##'
+  - 什么是机器学习？
+- - '##'
+  - 机器学习的特征
+- - '##'
+  - 机器学习的需求
+- - '##'
+  - 机器学习的类型
+- - '###'
+  - 监督学习
+- - '###'
+  - 无监督学习
+- - '###'
+  - 半监督学习
+- - '###'
+  - 强化学习
+- - '####'
+  - 强化学习的组件
+- - '##'
+  - 深度学习
+- - '##'
+  - 感知器模型的数学表示
+- - '##'
+  - 人工神经网络的类型
+- - '###'
+  - 前馈神经网络（人工神经元）
+- - '###'
+  - 径基函数神经网络
+- - '###'
+  - 径基函数
+- - '###'
+  - 多层感知器
+- - '###'
+  - 卷积神经网络
+- - '###'
+  - 循环神经网络
+- - '###'
+  - 序列序列网络
+- - '###'
+  - 梯度下降
+- - '###'
+  - 牛顿法
+- - '###'
+  - 共轭梯度法
+- - '###'
+  - 拟牛顿法
+- - '###'
+  - 莱文伯格奎特法
+- - '##'
+  - 人工神经网络：优点与缺点
+- - '###'
+  - ANN 的优点
+- - '###'
+  - ANN 的缺点
+- - '#'
+  - TensorFlow 线性回归
+- - '##'
+  - 线性回归的实现
+- - '#'
+  - 生成随机线性数据
+- - '#'
+  - 为随机线性数据添加噪声
+- - '###'
+  - 训练数据点图
+- - '#'
+  - 函数假设
+- - '#'
+  - 均方误差函数
+- - '#'
+  - 梯度下降优化器
+- - '#'
+  - 全局变量初始化
+- - '#'
+  - 启动 Tensorflow Session
+- - '###'
+  - '# 存储 Session 外部使用的必要值'
+- - '###'
+  - '# 计算预测值'
+- - '###'
+  - '# 绘制下方结果'

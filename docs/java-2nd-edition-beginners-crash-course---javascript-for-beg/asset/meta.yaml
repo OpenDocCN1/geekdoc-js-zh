@@ -1,0 +1,199 @@
+name: JAVA： 2nd Edition! Beginner's Crash Course - Javascript for Beginners Guide
+  to： Program Java, jQuery, & Java Programming (Java for Beginners, Learn Java, ...
+  Programming Language, Coding Book 1)
+name_cn: JAVA：第2版！初学者快速课程 - Javascript 初学者指南：程序 Java、jQuery 及 Java 编程（初学者 Java、学习
+  Java... 编程语言，编码书籍 1）
+slug: java-2nd-edition-beginners-crash-course---javascript-for-beg
+toc:
+- - '#'
+  - 引言
+- - '#'
+  - 第 1 章：Java 概述
+- - '#'
+  - 第 2 章：Java 基础语法
+- - '##'
+  - 基础语法
+- - '##'
+  - 实例变量
+- - '#'
+  - 第 3 章：对象与类
+- - '##'
+  - 更多关于 Java 中的对象
+- - '#'
+  - 第 4 章：构造函数
+- - '##'
+  - 创建对象
+- - '#'
+  - 第 5 章：Java 包
+- - '##'
+  - 导入语句
+- - '##'
+  - 一个简单的案例研究
+- - '#'
+  - 第 6 章：Java 中的数据类型
+- - '##'
+  - 基本数据类型
+- - '###'
+  - 'byte:'
+- - '###'
+  - 'short:'
+- - '###'
+  - 'int:'
+- - '###'
+  - 'long:'
+- - '###'
+  - 'float:'
+- - '###'
+  - 'double:'
+- - '###'
+  - 'boolean:'
+- - '###'
+  - 'char:'
+- - '##'
+  - 引用数据类型
+- - '#'
+  - 第 7 章：变量
+- - '##'
+  - 局部变量
+- - '##'
+  - 实例变量
+- - '##'
+  - 类变量/静态变量
+- - '##'
+  - 修饰符 (Modifiers)
+- - '##'
+  - 访问控制修饰符 (Access Control Modifiers)
+- - '##'
+  - 非访问修饰符 (Non Access Modifiers)
+- - '#'
+  - 第 8 章：运算符 (Operators)
+- - '##'
+  - 算术运算符 (The Arithmetic Operators)
+- - '##'
+  - 关系运算符 (The Relational Operators)
+- - '##'
+  - 位运算符 (The Bitwise Operators)
+- - '##'
+  - 逻辑运算符 (The Logical Operators)
+- - '##'
+  - 赋值运算符 (The Assignment Operators)
+- - '###'
+  - Java 运算符的优先级
+- - '#'
+  - 第 9 章：条件语句
+- - '###'
+  - if 语句
+- - '###'
+  - if...else 语句
+- - '###'
+  - if...else if...else 语句
+- - '###'
+  - 嵌套 if...else 语句
+- - '###'
+  - switch 语句
+- - '#'
+  - 第 10 章：异常
+- - '##'
+  - 捕获异常
+- - '###'
+  - 多个 catch 块
+- - '###'
+  - throw/throws 关键字
+- - '###'
+  - finally 关键字
+- - '##'
+  - 自定义异常
+- - '##'
+  - 常见异常
+- - '#'
+  - 第 11 章：如何安装 Java
+- - '##'
+  - 如何在 Windows 上安装 Java
+- - '###'
+  - 在线安装
+- - '###'
+  - 安装
+- - '###'
+  - 离线安装
+- - '##'
+  - 如何在 Mac OS X 上安装 Java
+- - '##'
+  - 如何在 Linux 上下载 Java
+- - '###'
+  - Linux 平台
+- - '###'
+  - 基于 RPM 的 Linux 平台
+- - '##'
+  - 启用与配置
+- - '##'
+  - Firefox 浏览器
+- - '##'
+  - 如何在 Solaris 上安装 Java
+- - '##'
+  - 启用与配置
+- - '#'
+  - 第 12 章：编写你的第一个程序
+- - '##'
+  - Mac
+- - '##'
+  - 循环控制
+- - '###'
+  - 循环控制语句
+- - '###'
+  - 增强型 for 循环 (Enhanced for loop)
+- - '###'
+  - 示例
+- - '##'
+  - Numbers 类
+- - '###'
+  - Number 方法
+- - '##'
+  - Character 类
+- - '###'
+  - 这里原始 'x' 装箱传递给方法 test，
+- - '###'
+  - 转义序列
+- - '###'
+  - 字符方法
+- - '###'
+  - 字符串 类
+- - '###'
+  - 字符串长度
+- - '###'
+  - 字符串拼接
+- - '###'
+  - 创建字符串
+- - '###'
+  - 字符串方法
+- - '##'
+  - 数组
+- - '###'
+  - 声明数组变量
+- - '###'
+  - 创建数组
+- - '###'
+  - 处理数组
+- - '###'
+  - foreach 循环
+- - '###'
+  - 将数组传递给方法
+- - '###'
+  - 方法返回数组
+- - '###'
+  - Arrays 类
+- - '##'
+  - 日期和时间
+- - '###'
+  - 获取当前日期和时间
+- - '###'
+  - 日期比较
+- - '###'
+  - 使用 SimpleDateFormat 进行日期格式化
+- - '###'
+  - SimpleDateFormat 格式化代码
+- - '###'
+  - 使用 printf 进行日期格式化
+- - '###'
+  - 示例
+- - '#'
+  - 结语

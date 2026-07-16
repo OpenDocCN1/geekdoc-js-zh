@@ -1,0 +1,2793 @@
+<p><img src="image_rsrc21P.jpg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMidYMid meet" viewbox="0 0 1000 1250" height="100%" width="100%">
+<image xlink:href="image_rsrc21P.jpg" height="1250" width="1000"></image>
+</svg>
+<p><span id="part0001.xhtml"></span></p>
+<p>NODE JS</p>
+<p>FOR BEGINNER</p>
+<p>AND</p>
+<p>MySQL</p>
+<p>In This Book You Will Learn Explanation with Diagramme and</p>
+<p>Working Exercises with Successfull Execution of Exercises with
+Output</p>
+<p>Readymade Solution With Step By Step Explanation</p>
+<p>AMIT K</p>
+<p>Contents</p>
+<p>Beginners Guide to Learn Node Js Programming Step by Step</p>
+<p>Introduction</p>
+<p>Chapter 1 : Introduction to NodeJs</p>
+<p>1  What is NodeJs</p>
+<p>2  Chrome &amp; V8 Javascript Engine</p>
+<p>3  NodeJS</p>
+<p>4  NodeJs Javascript Library</p>
+<p>Chapter 2 : Install Atom Editor</p>
+<p>1  What is Atom software</p>
+<p>Chapter 3 : Install NodeJS on Windows</p>
+<p>1  Install NodeJS</p>
+<p>Chapter 4 : What is NPM</p>
+<p>1  What is NPM</p>
+<p>2  Features of the NPM</p>
+<p>Chapter 5 : NodeJS</p>
+<p>1  Create a NodeJS project</p>
+<p>2  Express</p>
+<p>3  Create structure for project</p>
+<p>Chapter 6 : Create a Simple HTTP Server with NodeJS</p>
+<p>1  Create NodeJS HTTP Server</p>
+<p>Chapter 7 : NodeJS Modules</p>
+<p>1  What is NodeJS Module</p>
+<p>2  Create your Module</p>
+<p>Chapter 8 : Concept of Callback in NodeJS</p>
+<p>1  What is Callback</p>
+<p>2  NodeJS Callback</p>
+<p>Chapter 9 : Understanding Event Loop in NodeJS</p>
+<p>1  NodeJS Event Loop Overview</p>
+<p>2  Event Loop</p>
+<p>3  Thread Pool</p>
+<p>Chapter 10 : NodeJS EventEmitter</p>
+<p>1  NodeJS EventEmitter</p>
+<p>2  Listener</p>
+<p>Chapter 11 : Software  Installation</p>
+<p>1  Introduction</p>
+<p>2  Eclipse Installation</p>
+<p>3  Jdk1.6 Installation And Configuring to Eclipse</p>
+<p>4  Tomcat1.6 Installation And Configuring to Eclipse</p>
+<p>5  MySql5.0 Installation</p>
+<p>6  Eclipse Font Size Increase</p>
+<p>Introduction</p>
+<p>Learning Node Js step by step.</p>
+<p>Node Js For Beginner : The Ultimade Guide for Intermediate Developer
+to Unleash the Power of Server Side Javascript</p>
+<p>Unlock the full potential of Node.js and revolutionize your web and
+server-side development skills with "Mastering Node.js: The Ultimate
+Guide for Intermediate Developers to Unleash the Power of Server-Side
+JavaScript."</p>
+<p>Node.js has taken the world of web development by storm, thanks to
+its speed, scalability, and rich ecosystem. In this comprehensive ebook,
+we take you on a journey from intermediate to advanced Node.js
+developer, arming you with the knowledge and skills to tackle complex
+projects and build high-performance applications.</p>
+<p>Discover the core concepts of Node.js, from asynchronous programming
+and event-driven architecture to managing dependencies with npm and
+Yarn. Dive into the world of web applications with Express.js and
+explore specialized frameworks for creating RESTful APIs, whether it's
+building a single-page application or a high-traffic service.</p>
+<p>Learn the art of real-time communication with WebSockets, perfect for
+crafting interactive applications and delivering data updates in
+real-time. Explore database integration with MySQL databases.</p>
+<p>Chapter 1 :</p>
+<p>Introduction to NodeJs</p>
+<p>What is NodeJs</p>
+<p>Before directly answering the question "What is NodeJS?", I am going
+to introduce you about the birth context of the NodeJS, which helps you
+understand the matter more easily.</p>
+<p>Chrome &amp; V8 Javascript Engine</p>
+<p>Everyone knows that <span class="class_s21C">Chrome</span> is a
+famous and free <span class="class_s21C">Google</span> browser with the
+first version released in December 2008, of which <span
+class="class_s21C">V8 JavaScript Engine</span> is a program written on
+<span class="class_s21C">C++</span>, open source code, used in the <span
+class="class_s21C">Google Chrome</span> to parse and execute <span
+class="class_s21C">Javascript</span> code with high performance. It
+parses Javascript syntax and interprets it into computer code for
+execution.</p>
+<table class="class_s3B">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc21R.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p><span class="class_s21C">Note : </span>The Browser other than the
+Chrome may use another Javascript Engine.</p>
+<table class="class_s46">
+<tbody class="class-1">
+<tr>
+<td class="class_s3H"><p>Browser</p></td>
+<td class="class_s3H">Javascript Engine</td>
+</tr>
+<tr>
+<td class="class_s3H">Chrome</td>
+<td class="class_s3H">V8 JS Engine</td>
+</tr>
+<tr>
+<td class="class_s3H">Firefox</td>
+<td class="class_s3H">SpiderMonkey</td>
+</tr>
+<tr>
+<td class="class_s3H">IE, Edge</td>
+<td class="class_s3H">Chakra</td>
+</tr>
+</tbody>
+</table>
+<p>NodeJS</p>
+<p>You can use <span class="class_s21C">"thesyntax of Javascript"</span>
+to write code snippets to connect to a database. The <span
+class="class_s21C">V8 JS Engine</span> will parse your <span
+class="class_s21C">Javascript</span> code and interprets it into
+computer code for execution. Of course, such code snippet is not for
+execution at the client side. it is used at the server side. Thus, an
+ability is opened, you can use <span class="class_s21C">"theJavascript
+syntax"</span> to write <span class="class_s21C">server-side</span> web
+applications instead of using <span class="class_s21C">PHP</span> or
+<span class="class_s21C">Java</span>.</p>
+<p>Javascript code</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>const mysql = require('mysql');</p>
+<p>const connection = mysql.createConnection({</p>
+<p>host: 'localhost',</p>
+<p>user: 'user',</p>
+<p>password: 'password',</p>
+<p>database: 'database name'</p>
+<p>});</p>
+<p>connection.connect((err) =&gt; {</p>
+<p>if (err) throw err;</p>
+<p>console.log('Connected!');</p>
+<p>});</p></td>
+</tr>
+</tbody>
+</table>
+<p>and <span class="class_s21C">NodeJS</span> was born. The <span
+class="class_s21C">V8 Javascript Engine</span> is one of components of
+the <span class="class_s21C">NodeJS</span>. Below is the architecture
+image of the <span class="class_s21C">NodeJS</span>:</p>
+<p>NodeJs Javascript Library</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc21S.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>In short, the <span class="class_s21C">NodeJS</span> may replace
+<span class="class_s21C">PHP</span>, <span
+class="class_s21C">Java</span> to build <span
+class="class_s21C">Server-side</span> <span class="class_s21C">web
+applications</span>. Instead of writing code by <span
+class="class_s21C">PHP</span>, <span class="class_s21C">Java</span> you
+use the syntax of <span class="class_s21C">Javascript</span>.</p>
+<p>So, What is NodeJS</p>
+<p>The NodeJS is JavaScript Runtime Environment outside browser. The
+NodeJS also consists of other components and libraries so that it may
+operate like a Web Application Server.</p>
+<p><span class="class_s21C">Important note:</span> The NodeJS is not the
+extended language of Javascript.</p>
+<p>Chapter 2 :</p>
+<p>Install Atom Editor</p>
+<p>What is Atom software</p>
+<p><span class="class_s21C">Atom</span> is a text (and source code)
+editor free of charge. The open source code supports operating systems
+such as <span class="class_s21C">Linux, Mac OS, Windows</span>. It
+supports <span class="class_s21C">plugins</span> to program with the
+<span class="class_s21C">NodeJS</span> and embed <span
+class="class_s21C">Git-Control</span>, which is developed by <span
+class="class_s21C">GitHub</span>.</p>
+<p><span class="class_s21C">Atom</span> is evaluated as text editing
+(and source code) software with a modern, easy-to-use interface and
+outstanding features compared to similar pieces of software.</p>
+<p>The languages are supported by the <span
+class="class_s21C">Atom</span>:</p>
+<p>C/C++, C#, Clojure, CSS, CoffeeScript, GitHub Flavored Markdown, Go,
+Git, HTML, JavaScript, Java, JSON, Julia, Less, Make, Mustache,
+Objective-C, PHP, Perl, Property List (Apple), Python, Ruby on Rails,
+Ruby, Sass, Shell script, Scala, SQL, TOML, XML, YAML</p>
+<table class="class_s64">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc21T.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Download Atom</p>
+<p>To download the <span class="class_s21C">Atom</span>, let's visit its
+home page at the following address. it is noted that the <span
+class="class_s21C">Atom</span> supports all of three kinds of operating
+systems: <span class="class_s21C">Windows, Mac OS</span>, and <span
+class="class_s21C">Linux</span>. If you use <span
+class="class_s21C">Windows</span>, ensure that your operating system is
+<span class="class_s21C">Windows 7 64bit</span> or later.</p>
+<ul>
+<li>https://atom.io/</li>
+</ul>
+<table class="class_s6N">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc21U.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>After downloading successfully, you have a file with capacity of
+approximately 150MB.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6U-0">
+<img src="image_rsrc21V.jpg" class="class_s6U-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>OK, after finishing downloading and installing the <span
+class="class_s21C">Atom</span>, this is the interface image of the <span
+class="class_s21C">Atom</span>:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc21W.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 3 :</p>
+<p>Install NodeJS on Windows</p>
+<p>Download NodeJS</p>
+<p>To download <span class="class_s21C">NodeJS</span>, you need to
+access to the following address:</p>
+<ul>
+<li><span class="class_s21J">https://nodejs.org/en/download/</span></li>
+</ul>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc21X.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>After downloading successfully, you have a file.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s7X-0">
+<img src="image_rsrc21Y.jpg" class="class_s7X-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Install NodeJS</p>
+<p>The installation of NodeJS on Windows is very simple. Accept default
+options and press "Next .. Next" until final step.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s89-0">
+<img src="image_rsrc21Z.jpg" class="class_s89-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<table class="class_s8S">
+<tbody>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_13"
+class="class_s8J-0">
+<img src="image_rsrc220.jpg" class="class_s8J-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<table class="class_s92">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s8W-0">
+<img src="image_rsrc221.jpg" class="class_s8W-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>By default, <span class="class_s21C">NPM</span> software is also
+installed in your system. This is a piece of software that manages <span
+class="class_s21C">Javascript</span> libraries.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s97-0">
+<img src="image_rsrc222.jpg" class="class_s97-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<table class="class_s92">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s97-0">
+<img src="image_rsrc223.jpg" class="class_s97-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_15"
+class="class_s89-0">
+<img src="image_rsrc224.jpg" class="class_s89-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Check and configure</p>
+<p>OK, in the above step, we have downloaded and installed the <span
+class="class_s21C">NodeJS</span> successfully. Now, you need to check
+installation results and configure the <span
+class="class_s21C">NodeJS</span>.</p>
+<p>Open the <span class="class_s21C">CMD</span> window and execute the
+following command to inspect the version of the <span
+class="class_s21C">NodeJS</span> and the <span
+class="class_s21C">NPM</span>:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>node -v</p>
+<p>npm -v</p></td>
+</tr>
+</tbody>
+</table>
+<table class="class_sAE">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc225.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 4 :</p>
+<p>What is NPM</p>
+<p>What is NPM</p>
+<p><span class="class_s21C">NPM</span> stands for <span
+class="class_s21C">Node Package Manager</span>, which is a (program)
+tool managing <span class="class_s21C">Javascript</span> programming
+libraries for <span class="class_s21C">Node.js</span>. This tool is
+actually necessary for the open source world. In the <span
+class="class_s21C">Javascript</span> community, developers share
+hundreds of thousands of code snippets that help new projects avoid
+rewriting basic components, programming libraries or even frameworks.
+Each of these code snippets may depend on many other open source codes.
+Fortunately, library management tools are born. If not, it will take a
+lot of effort to manage these libraries.</p>
+<p><span class="class_s21C">NPM</span> is basically similar to <span
+class="class_s21C">Maven</span>. The difference here is that the <span
+class="class_s21C">NPM</span> manages <span
+class="class_s21C">Javascript</span> libraries while the <span
+class="class_s21C">Maven</span> manages <span
+class="class_s21C">Java</span> libraries.</p>
+<p>A piece of software similar to the <span
+class="class_s21C">NPM</span> is <span class="class_s21C">Yarn</span>,
+developed by <span class="class_s21C">Facebook</span>, with outstanding
+features is emerging as an alternative to the <span
+class="class_s21C">NPM</span>. In the same situation, <span
+class="class_s21C">Java</span> library management software is <span
+class="class_s21C">Gradle</span>, with its outstanding features, which
+is gradually replacing <span class="class_s21C">Maven</span>.</p>
+<p>Features of the NPM</p>
+<p>To be able to run <span class="class_s21C">NPM</span> software, your
+system needs installing <span class="class_s21C">NodeJS</span>. The
+<span class="class_s21C">NPM</span> software is built in <span
+class="class_s21C">NodeJS</span> installer, therefore, when you have
+finished installing the <span class="class_s21C">NodeJS</span>, you will
+have both of them.</p>
+<p>After the <span class="class_s21C">NPM</span> has been installed on
+your computer, you can examine its version:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm –v</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sB7">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc226.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Because the <span class="class_s21C">NPM</span> is a piece of
+software installed on your computer, you can use it to install <span
+class="class_s21C">Javascript</span> libraries from the <span
+class="class_s21C">Internet</span>. To install a library, it is
+necessary to open only CMD window and execute the command as below:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm install &lt;package name&gt;</td>
+</tr>
+</tbody>
+</table>
+<table class="class_s92">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm install vue</td>
+</tr>
+</tbody>
+</table>
+<p>And you can use Vue.js in your Javascript code:</p>
+<p>javascript</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">var Vue = require('vue');</td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 5 :</p>
+<p>NodeJS</p>
+<p>Create a NodeJS project</p>
+<p>First of all, you need to create a directory named MyProject, or a
+name that you want.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sC3-0">
+<img src="image_rsrc227.jpg" class="class_sC3-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Open <span class="class_s21C">CMD</span> and <span
+class="class_s21C">CD</span> windows to the directory just created by
+you. After that run the following command so that <span
+class="class_s21C">NPM</span> creates project for you.</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm init</td>
+</tr>
+</tbody>
+</table>
+<table class="class_s92">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc228.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Accept default options and press "Enter" until completion.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc229.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>A file with the name of package.json has been created on your
+project.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sD6-0">
+<img src="image_rsrc22A.jpg" class="class_sD6-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>There are some library packages necessary for your project, and you
+need to install it with the support of <span
+class="class_s21C">NPM</span>:</p>
+<p>Express</p>
+<p><span class="class_s21C">Express.js</span> (or simply <span
+class="class_s21C">Express</span>) means a <span class="class_s21C">Web
+Application Framework </span>for the <span
+class="class_s21C">NodeJS</span>. It provides a set of strong features
+to web and mobile applications.</p>
+<p>Ejs</p>
+<p><span class="class_s21C">EJS</span> stands for <span
+class="class_s21C">"Embedded JavaScript templating"</span>, which is a
+library, used to parse <span class="class_s21C">ejs</span> files and
+create <span class="class_s21C">HTML</span> to return to client
+(browser).</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm install express ejs</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sB7">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc22B.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>After the installation finishes, you can see changes on your
+project:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sC3-0">
+<img src="image_rsrc22C.jpg" class="class_sC3-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Create structure for project</p>
+<p>In the above step, we have created a project by command. Now we will
+open this project by a more visual tool. Here, I use Atom editor (The
+software which I advise you to install in the above step).</p>
+<ul>
+<li>File/Add Project Folder</li>
+</ul>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc22D.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>OK, Project is opened on the Atom:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc22E.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>On the project, create 2 sub-directories: public &amp; views:</p>
+<ul>
+<li>public: a directory containing all files which users can access, for
+example image, video,..</li>
+<li>views: Your website will have a lot of pages, for example, home
+page, login page, ...This directory is the place containg all your
+pages.</li>
+</ul>
+<table class="class_s64">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sF6-0">
+<img src="image_rsrc22F.jpg" class="class_sF6-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>In views directory, we create 2 files:</p>
+<ul>
+<li>homePage.ejs</li>
+<li>testPage.ejs</li>
+</ul>
+<table class="class_s3B">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sFK-0">
+<img src="image_rsrc22G.jpg" class="class_sFK-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>homePage.ejs</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="en" dir="ltr"&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Home&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;This is Home Page&lt;/h1&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p>testPage.ejs</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="en" dir="ltr"&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="utf-8"&gt;</p>
+<p>&lt;title&gt;Test&lt;/title&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&lt;h1&gt;This is Test Page&lt;/h1&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<p>Next, create a file named index.js, and enter contents for this file.
+This is configuration file for your project:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_27"
+class="class_s5Y-0">
+<img src="image_rsrc22H.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>index.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var express = require("express");</p>
+<p>var app = express();</p>
+<p>app.use(express.static("public"));</p>
+<p>app.set("view engine", "ejs");</p>
+<p>app.set("views", "./views");</p>
+<p>app.listen(3000);</p>
+<p>app.get("/", function(request, response)  {</p>
+<p>response.render("homePage");</p>
+<p>});</p>
+<p>app.get("/test", function(request, response)  {</p>
+<p>response.render("testPage");</p>
+<p>});</p></td>
+</tr>
+</tbody>
+</table>
+<p>OK, Now, it is time to explain the contents of the index.js above
+file.</p>
+<table class="class_s46">
+<tbody class="class-1">
+<tr class="class-24">
+<td class="class_s3H">Code</td>
+<td class="class_s3H">Description</td>
+</tr>
+<tr>
+<td class="class_s3H">var express = require("express");</td>
+<td class="class_s3H"><span class="class_s21C">ExpressJS</span> means a
+Web <span class="class_s21C">Application Framework</span>.This code line
+says that you want to use it.</td>
+</tr>
+<tr>
+<td class="class_s3H">var app = express();</td>
+<td class="class_s3H">Create an <span class="class_s21C">Express</span>
+object.</td>
+</tr>
+<tr>
+<td class="class_s3H">app.use(express.static("public"));</td>
+<td class="class_s3H">This code line tells <span
+class="class_s21C">Application Server</span> that you want to use public
+directory to contain static data, users can access the files in this
+directory.</td>
+</tr>
+<tr>
+<td class="class_s3H">app.set("view engine", "ejs");</td>
+<td class="class_s3H">This code line tells the <span
+class="class_s21C">Application Server</span> that you want to use <span
+class="class_s21C">EJS</span> library. It is a machinery to handle your
+page. The <span class="class_s21C">EJS</span> will create <span
+class="class_s21C">HTML</span> <span
+id="part0001.xhtml_page_29"></span>to return to user's browser.</td>
+</tr>
+<tr>
+<td class="class_s3H">app.set("views", "./views");</td>
+<td class="class_s3H">This code line shows the Application Server the
+path to the directory containing your pages</td>
+</tr>
+<tr>
+<td class="class_s3H">app.listen(3000);</td>
+<td class="class_s3H">Your application will listen on port 3000 when it
+is deployed</td>
+</tr>
+<tr>
+<td class="class_s3H"><p>app.get("/test", function(req, res) { ...</p>
+<p>});</p></td>
+<td class="class_s3H">Define the path to access to a page.</td>
+</tr>
+</tbody>
+</table>
+<p>Run Application Server</p>
+<p>Open the <span class="class_s21C">CMD</span>, and <span
+class="class_s21C">CD</span> window to go to the directory of your
+project and perform the following command to deploy your
+application.</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node index.js</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sAE">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc22J.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>The above command will start the Web Application Server, and deploy
+your application on this Web Server. At this moment, it is ready to
+serve the request sent from the client.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc22K.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p><span class="class_s21C">Note:</span> Not close the CMD window,
+because your Application Serser is running. Open the browser and visit
+the link:</p>
+<ul>
+<li>http://localhost:3000/</li>
+<li>http://localhost:3000/test</li>
+</ul>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sFK-0">
+<img src="image_rsrc22M.jpg" class="class_sFK-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>What will take place at the Server when the user accesses the above
+address.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc22N.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 6 :</p>
+<p>Create a Simple HTTP Server with NodeJS</p>
+<p>The objective of post</p>
+<p>In this post, I am going to show you how to create a very simple
+<span class="class_s21C">HTTP Server</span> with<span
+class="class_s21C"> NodeJS</span>. And you can access static data
+sources such as <span class="class_s21C">HTML, Javascript, CSS</span>,
+etc in the directory via <span class="class_s21C">http</span>, for
+example:</p>
+<ul>
+<li>http://localhost:8080/abc.html</li>
+<li>http://localhost:8080/abc.js</li>
+</ul>
+<p>Instead of accessing through file:///</p>
+<ul>
+<li>file:///E:/webexamples/reactjs/abc.html</li>
+<li>file:///E:/webexamples/reactjs/abc.js</li>
+</ul>
+<table class="class_sNB">
+<tbody>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_33"
+class="class_s5Y-0">
+<img src="image_rsrc22P.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>The question is why do you need a <span
+class="class_s21C">HTTP</span> only to access static data sources.</p>
+<p>If you want to learn <span class="class_s21C">ReactJS</span> you will
+need an <span class="class_s21C">HTTP</span>. Although <span
+class="class_s21C">ReactJS</span> is just a <span
+class="class_s21C">Javascript</span> library, and <span
+class="class_s21C">HTML</span> files can be run directly in a browser.
+However, sometimes browser prevents the operations of the local <span
+class="class_s21C">Javascript</span> files. It requires the <span
+class="class_s21C">Javascript</span> file to come from one of the <span
+class="class_s21C">schemas</span>: <span class="class_s21C">http, data,
+chrome, chrome-extension, https</span>.</p>
+<table class="class_sNR">
+<tbody>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_34"
+class="class_sNH-0">
+<img src="image_rsrc22R.jpg" class="class_sNH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Error Message!</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>Failed to load
+file:///E:/webexamples/reactjs/hello-reactjs/person.jsx:</p>
+<p>Cross origin requests are only supported for protocol schemes: http,
+data, chrome, chrome-extension, https.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Create NodeJS HTTP Server</p>
+<p>Create an empty directory:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sP4-0">
+<img src="image_rsrc22S.jpg" class="class_sP4-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Open the CMD window, and CD to the folder you created in the previous
+step.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sPE-0">
+<img src="image_rsrc22T.jpg" class="class_sPE-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Run the following command to install http-server:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">npm install -g http-server</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sB7">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc22U.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Start HTTP-Server:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p># Note: -c-1 to disable caching!!</p>
+<p>http-server -c-1</p></td>
+</tr>
+</tbody>
+</table>
+<table class="class_s64">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc22V.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Your HTTP Server has been started.it is listening at port 8080. You
+can check it by visiting the following link:</p>
+<ul>
+<li>http://localhost:8080/</li>
+</ul>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sRR-0">
+<img src="image_rsrc22W.jpg" class="class_sRR-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Create a HTML file in that directory, and you can access it via
+HTTP:</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sS1-0">
+<img src="image_rsrc22X.jpg" class="class_sS1-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<table class="class_sAE">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sRR-0">
+<img src="image_rsrc22Y.jpg" class="class_sRR-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 7 :</p>
+<p>NodeJS Modules</p>
+<p>What is NodeJS Module</p>
+<p>Speaking simply, <span class="class_s21C">NodeJS Module</span> is a
+<span class="class_s21C">Javascript</span> library. It is a set of
+functions, objects and variables, which you can put into your
+applications to use. Using <span class="class_s21C">Module</span> helps
+simplify writing code and manage it in your application. Normally, each
+<span class="class_s21C">module</span> will be written in a separate
+file.</p>
+<p>The <span class="class_s21C">NodeJS</span> builds in quite many <span
+class="class_s21C">Modules</span>. It has standard libraries for you to
+develop applications. Below is the list:</p>
+<table class="class_s46">
+<tbody class="class-1">
+<tr>
+<td class="class_s3H">Module</td>
+<td class="class_s3H">Description</td>
+</tr>
+<tr>
+<td class="class_s3H">assert</td>
+<td class="class_s3H">Provides a set of assertion tests</td>
+</tr>
+<tr>
+<td class="class_s3H">buffer</td>
+<td class="class_s3H">To handle binary data</td>
+</tr>
+<tr>
+<td class="class_s3H">child_process</td>
+<td class="class_s3H">To run a child process</td>
+</tr>
+<tr>
+<td class="class_s3H">cluster</td>
+<td class="class_s3H">To split a single Node process into multiple
+processes</td>
+</tr>
+<tr>
+<td class="class_s3H">crypto</td>
+<td class="class_s3H">To handle <span class="class_s21C">OpenSSL</span>
+cryptographic functions</td>
+</tr>
+<tr>
+<td class="class_s3H">dgram</td>
+<td class="class_s3H">Provides implementation of <span
+class="class_s21C">UDP</span> datagram sockets</td>
+</tr>
+<tr>
+<td class="class_s3H">dns</td>
+<td class="class_s3H">To do <span class="class_s21C">DNS</span> lookups
+and name resolution functions</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sV9">
+<tbody class="class-1">
+<tr>
+<td class="class_s3H"><p>events</p></td>
+<td class="class_s3H">To handle events</td>
+</tr>
+<tr>
+<td class="class_s3H">fs</td>
+<td class="class_s3H">To handle the file system</td>
+</tr>
+<tr>
+<td class="class_s3H">http</td>
+<td class="class_s3H">To make <span class="class_s21C">Node.js</span>
+act as an <span class="class_s21C">HTTP</span> server</td>
+</tr>
+<tr>
+<td class="class_s3H">https</td>
+<td class="class_s3H">To make <span class="class_s21C">Node.js</span>
+act as an <span class="class_s21C">HTTPS</span> server.</td>
+</tr>
+<tr>
+<td class="class_s3H">net</td>
+<td class="class_s3H">To create servers and clients</td>
+</tr>
+<tr>
+<td class="class_s3H">os</td>
+<td class="class_s3H">Provides information about the operation
+system</td>
+</tr>
+<tr>
+<td class="class_s3H">path</td>
+<td class="class_s3H">To handle file paths</td>
+</tr>
+<tr>
+<td class="class_s3H">querystring</td>
+<td class="class_s3H">To handle <span class="class_s21C">URL</span>
+query strings</td>
+</tr>
+</tbody>
+</table>
+<table class="class_sV9">
+<tbody class="class-1">
+<tr>
+<td class="class_s3H">readline</td>
+<td class="class_s3H">To handle readable streams one line at the
+time</td>
+</tr>
+<tr>
+<td class="class_s3H">stream</td>
+<td class="class_s3H">To handle streaming data</td>
+</tr>
+<tr>
+<td class="class_s3H">string_decoder</td>
+<td class="class_s3H">To decode buffer objects into strings</td>
+</tr>
+<tr>
+<td class="class_s3H">timers</td>
+<td class="class_s3H">To execute a function after a given number of
+milliseconds</td>
+</tr>
+<tr>
+<td class="class_s3H">tls</td>
+<td class="class_s3H">To implement TLS and SSL protocols</td>
+</tr>
+<tr>
+<td class="class_s3H">tty</td>
+<td class="class_s3H">Provides classes used by a text terminal</td>
+</tr>
+<tr>
+<td class="class_s3H"><p>url</p></td>
+<td class="class_s3H">To parse URL strings</td>
+</tr>
+<tr>
+<td class="class_s3H">util</td>
+<td class="class_s3H">To access utility functions</td>
+</tr>
+</tbody>
+</table>
+<p>To use a module, use require(moduleName) function. For example, http
+is a module that makes the NodeJS work like a HTTP Server.</p>
+<p>On your <span class="class_s21C">NodeJS</span> project, create a
+module-examples directory to contain the <span
+class="class_s21C">Javascript</span> files which you practise in this
+lesson.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sWT-0">
+<img src="image_rsrc22Z.jpg" class="class_sWT-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Create a file named http-example.js in the module-examples
+directory.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc230.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>http-example.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var http = require("http");</p>
+<p>http.createServer(function(req, res)  {</p>
+<p>res.writeHead(200, {"Content-Type": "text/html"});</p>
+<p>res.write("&lt;h1&gt;Hello World&lt;/h1&gt;");</p>
+<p>res.write("&lt;h2&gt;Hello Http&lt;/h2&gt;");</p>
+<p>res.end();</p>
+<p>}).listen(8080)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Open <span class="class_s21C">CMD</span> and <span
+class="class_s21C">CD</span> windows to go to your project directory,
+use the <span class="class_s21C">NodeJS</span> to run the
+http-example.js file:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node ./module-examples/http-example.js</td>
+</tr>
+</tbody>
+</table>
+<p>Open the browser and visit the path:</p>
+<ul>
+<li>http://localhost:8080/</li>
+</ul>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sY1-0">
+<img src="image_rsrc231.jpg" class="class_sY1-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Create your Module</p>
+<p>In the <span class="class_s21C">NodeJS</span>, you can create a
+customized <span class="class_s21C">module</span>. The <span
+class="class_s21C">Module</span> is a <span
+class="class_s21C">Javascript</span> file. please note to the position
+of this <span id="part0001.xhtml_page_42"></span>file because it affect
+the way for you to use it . You have 2 ways of choosing position of this
+file:</p>
+<p>1   The <span class="class_s21C">Module</span> file is put in the
+directory named</p>
+<p><span class="class_s21C">node_modules</span> (subdirectory of the
+project). This is</p>
+<p>encouraged position.</p>
+<p>2   The <span class="class_s21C">Module</span> file is put in one of
+your directories, not</p>
+<p><span class="class_s21C">node_modules</span>.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc232.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>The <span class="class_s21C">NodeJS</span> advises you to place your
+<span class="class_s21C">Module</span> files into the <span
+class="class_s21C">node_modules</span> directory of the project. Wait
+for a minute, I am going to explain the reason why your <span
+class="class_s21C">module</span> should be put in this directory.</p>
+<p>The syntax for exporting something in your <span
+class="class_s21C">Javascript</span> file.</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>exports = something;</p>
+<p>// or:</p>
+<p>module.exports = something;</p></td>
+</tr>
+</tbody>
+</table>
+<p>my-first-module.js</p>
+<p>First of all, create a <span
+class="class_s21C">my-first-module.js</span> file in the <span
+class="class_s21C">node_modules</span> directory and the <span
+class="class_s21C">test-my-first-module.js</span> file in another
+directory.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc233.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>In this example, the <span
+class="class_s21C">my-first-module.js</span> file has a lot of functions
+but I only <span class="class_s21C">export"sum"</span> function.</p>
+<p>node_modules/my-first-module.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>subtract = function(a, b)  {</p>
+<p>return a - b;</p>
+<p>}</p>
+<p>sum = function (a, b)  {</p>
+<p>return a + b;</p>
+<p>}</p>
+<p>module.exports = sum;</p></td>
+</tr>
+</tbody>
+</table>
+<table class="class_sB7">
+<tbody>
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_44"
+class="class_s5Y-0">
+<img src="image_rsrc234.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>module-examples/test-my-first-module.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var sum = require("my-first-module.js");</p>
+<p>console.log("Sum 100 and 150");</p>
+<p>var c = sum(100, 150);</p>
+<p>console.log("Value = " + c);</p></td>
+</tr>
+</tbody>
+</table>
+<p>Run the above example:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node
+./module-examples/test-my-first-module.js</td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 8 :</p>
+<p>The concept of Callback in NodeJS</p>
+<p>What is Callback</p>
+<p>To explain what the Callback is, let's see a situation as
+follows:</p>
+<p>You come to a shop to buy a something you like. The shop staff tells
+you that the item is out of stock now. You leave the phone number and
+ask them to call back immediately after the goods is available. Then you
+can go out or do a job and do not need to care about the shop anymore,
+until you get a phone call notifying of the item asked by you from the
+shop.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc235.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p><span class="class_s21C">NodeJS</span> server can receive many
+requests from many users. Therefore to improve serviceability, all <span
+class="class_s21C">APIs</span> of the <span
+class="class_s21C">NodeJS</span> are designed to support <span
+class="class_s21C">Callback</span>. The "<span
+class="class_s21C">callback</span>" is a function that will be called
+when the <span class="class_s21C">NodeJs</span> completes a specific
+task.</p>
+<p>NodeJS Callback</p>
+<p>In the <span class="class_s21C">NodeJS</span>, <span
+class="class_s21C">APIs</span> is designed to support the <span
+class="class_s21C">Callback</span>. Assume that you are writing a
+program to read 2 files. To do this you use the <span
+class="class_s21C">fs</span> module, which gives you two functions such
+as <span class="class_s21C">readFile</span> and <span
+class="class_s21C">readFileSync</span> to read the file. We will learn
+about the differences between these two functions.</p>
+<p>Blocking</p>
+<p>The <span class="class_s21C">readFileSync</span> is a function
+reading files synchronously,. Therefore, while this function is
+executing, it will block the program from executing next code lines.</p>
+<p>blocking-example.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var fs = require("fs");</p>
+<p>// -----&gt; Read file 1:</p>
+<p>console.log("\n");</p>
+<p>console.log("Read File 1");</p>
+<p>var data1 = fs.readFileSync('C:\\test\\file1.txt');</p>
+<p>console.log("- Data of file 1: ");</p>
+<p>console.log(data1.toString());</p>
+<p>// -----&gt; Read file 2:</p>
+<p>console.log("\n");</p>
+<p>console.log("Read File 2");</p>
+<p>var data2 = fs.readFileSync('C:\\test\\file2.txt');</p>
+<p>console.log("- Data of file 2: ");</p>
+<p>console.log(data2.toString());</p>
+<p>console.log("\n");</p>
+<p>console.log("Program Ended");</p></td>
+</tr>
+</tbody>
+</table>
+<p>Open CMD window and execute the blocking-example.js file</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node callback-examples/blocking-example.js</td>
+</tr>
+</tbody>
+</table>
+<p>Non Blocking</p>
+<p>You should use <span class="class_s21C">readFile</span> function to
+achieve better performance for the program. This function reads files
+asynchronously. It doesn't block the program executing the next code
+lines. In other words, the program does not wait for the function to
+complete. But when this function completes its task, it calls the <span
+class="class_s21C">Callback</span> function.</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>// Read a file Asynchronous.</p>
+<p>fs.readFile('C:\\test\\file1.txt', aCallbackFunction );</p></td>
+</tr>
+</tbody>
+</table>
+<p>See the full example:</p>
+<p>non-blocking-example.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var fs = require("fs");</p>
+<p>// A Callback function!</p>
+<p>function readFinishedFile1(err, data)  {</p>
+<p>if (err) console.log(err);</p>
+<p>console.log("- Data of file 1: ");</p>
+<p>console.log(data.toString());</p>
+<p>}</p>
+<p>// A Callback function!</p>
+<p>function readFinishedFile2(err, data)  {</p>
+<p>if (err) console.log(err);</p>
+<p>console.log("- Data of file 2: ");</p>
+<p>console.log(data.toString());</p>
+<p>}</p>
+<p>// -----&gt; Read file 1:</p>
+<p>console.log("\n");</p>
+<p>console.log("Read File 1");</p>
+<p>fs.readFile('C:\\test\\file1.txt', readFinishedFile1);</p>
+<p>// -----&gt; Read file 2:</p>
+<p>console.log("\n");</p>
+<p>console.log("Read File 2");</p>
+<p>fs.readFile('C:\\test\\file2.txt', readFinishedFile2);</p>
+<p>console.log("\n");</p>
+<p>console.log("Program Ended \n");</p></td>
+</tr>
+</tbody>
+</table>
+<p>Open CMD window and run the non-blocking-example.js file:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node
+callback-examples/non-blocking-example.js</td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 9 :</p>
+<p>Understanding Event Loop in NodeJS</p>
+<p>NodeJS Event Loop Overview</p>
+<p><span class="class_s21C">NodeJS</span> is a Single Thread
+application, which operates on a platform written by <span
+class="class_s21C">C++</span>. This platform uses multi-thread to carry
+out tasks at the same time.</p>
+<p>The following figure illustrates requests sent to the <span
+class="class_s21C">NodeJS</span> server from the users side.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc236.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Each request from the users side is treated to be an event by the
+<span class="class_s21C">NodeJS</span>. They is placed into an <span
+class="class_s21C">Event Queue</span>. The <span
+class="class_s21C">NodeJS</span> uses <span class="class_s21C">FIFO
+(First In First Out)</span> principle, which means that the requests
+coming first will be handled first.</p>
+<p>Event Loop</p>
+<p>As an endless loop, it passes the requests to the <span
+class="class_s21C">thread Pool</span> and each request is registered a
+<span class="class_s21C">Callback</span> function. When a request is
+finished handling, the corresponding <span
+class="class_s21C">Callback</span> function will be called to be
+executed.</p>
+<p>Thread Pool</p>
+<p>Being a program by C<span class="class_s21C">++</span> language, it
+supports multi threads. Therefore, herein, requests will be handled on
+different threads. The <span class="class_s21C">NodeJS</span> also
+supports Multi Processes. This means that they can be executed on
+different cores.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc237.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>When a request is finished handling. The <span
+class="class_s21C">NodeJS</span> will call the <span
+class="class_s21C">Callback</span> function (registered for this
+request) to execute it.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc238.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>CONCLUSIONS:</p>
+<p><span class="class_s21C">First basic conclusion:</span> If each
+connection to <span class="class_s21C">Server</span> opens a Thread . It
+will take very much memory. This has been proven when you compare <span
+class="class_s21C">Apache</span> and <span
+class="class_s21C">Nginx</span> (two <span class="class_s21C">Web
+Servers</span> deploying <span class="class_s21C">PHP</span>
+applications). The <span class="class_s21C">Apache</span> uses much more
+memory than the <span class="class_s21C">Nginx</span>.</p>
+<p>The <span class="class_s21C">NodeJS</span> is similar to the <span
+class="class_s21C">Nginx</span> in the fact that they use only a Single
+thread to receive connections from an user, and treat each request of
+the user as an event.</p>
+<p><span class="class_s21C">Second basic conclusion:I/O</span>
+activities cost many resources of the system, therefore, the <span
+class="class_s21C">NodeJS</span> manages use of <span
+class="class_s21C">I/O</span> activities strictly. So you need to use
+only <span class="class_s21C">Callback</span> when you execute the
+duties related to <span class="class_s21C">I/O</span>.</p>
+<p>Chapter 10 :</p>
+<p>NodeJS EventEmitter</p>
+<p>NodeJS EventEmitter</p>
+<p>NodeJS supports events in applications very perfectly. Every action
+on a computer is an event. For example, when you read a file on hard
+drive. It means that you have to do two actions "open the file" and
+"close it" after finishing reading it, so here we have two " Open
+"&amp;" Close " events. Based on events, you insert your codes to do
+something.</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>var fs = require('fs');</p>
+<p>// Create a stream to read file</p>
+<p>var rs = fs.createReadStream('C:/test/demo.txt');</p>
+<p>// The event 'open':</p>
+<p>rs.on('open', function() {</p>
+<p>console.log('File opened!');</p>
+<p>});</p></td>
+</tr>
+</tbody>
+</table>
+<p>Module events provides you with an EventEmitter class, that is a
+central class in the NodeJS, assisting in defining an event, registering
+Listeners of this event, and emitting (emit) the event.</p>
+<p>Listener</p>
+<p>In the NodeJS, the Listener is a function. It will be called to
+execute when an event occurs. Probably, 0, 1 or many Listeners are being
+bound to such event.</p>
+<p>For simplicity, look at the following illustration: a mouse and a
+mouse trap. An event is prepared to take place. When the event occurs
+(the cake is stolen), the mouse trap will perform its task. The mouse
+trap herein is a "Listener", which will work when the event happens.</p>
+<p>Example of EventEmitter</p>
+<p>Import Eventsmodule, and declare an EventEmitter object:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>// Import events module</p>
+<p>var events = require('events');</p>
+<p>// Create an EventEmitter object</p>
+<p>var eventEmitter = new events.EventEmitter();</p></td>
+</tr>
+</tbody>
+</table>
+<p>Register Listeners (The functions will be called to execute when an
+event occurs).</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>// Add Event Listener</p>
+<p>eventEmitter.addListener('bellRing', bellRingHandler1);</p>
+<p>// Add Event Listener</p>
+<p>eventEmitter.addListener('bellRing', bellRingHandler2);</p></td>
+</tr>
+</tbody>
+</table>
+<p>Emit the event:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>// Fire bellRing event!!</p>
+<p>eventEmitter.emit('bellRing', 'Jerry');</p></td>
+</tr>
+</tbody>
+</table>
+<table class="class_sB7">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc239.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>first-example.js</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><p>// Import events module</p>
+<p>var events = require('events');</p>
+<p>// Create an eventEmitter object</p>
+<p>var eventEmitter = new events.EventEmitter();</p>
+<p>// A Listener</p>
+<p>var bellRingHandler1 = function bellRingHandler1(who) {</p>
+<p>console.log("\n");</p>
+<p>console.log('The Bell Ringing..... (Handler 1)');</p>
+<p>console.log(" " + who + " was standing behind the door!");</p>
+<p>if(who == 'Jerry') {</p>
+<p>console.log(' Tom, help me!!');</p>
+<p>return;</p>
+<p>}</p>
+<p>console.log(" Welcome " + who);</p>
+<p>}</p>
+<p>// A Listener</p>
+<p>var bellRingHandler2 = function bellRingHandler2(who) {</p>
+<p>console.log("\n");</p>
+<p>console.log('The Bell Ringing..... (Handler 2)');</p>
+<p>eventEmitter.emit("nobodyIsAtHome");</p>
+<p>}</p>
+<p>// A Listener</p>
+<p>var nobodyIsAtHomeHandler = function nobodyIsAtHomeHandler()  {</p>
+<p>console.log("\n");</p>
+<p>console.log(" Sorry, Nobody is at home now, Please leave your
+message!")</p>
+<p>}</p>
+<p>// Add Event Listeners</p>
+<p>eventEmitter.addListener('bellRing', bellRingHandler1);</p>
+<p>eventEmitter.addListener('bellRing', bellRingHandler2);</p>
+<p>eventEmitter.addListener('nobodyIsAtHome',
+nobodyIsAtHomeHandler);</p>
+<p>// ----- Testing ------</p>
+<p>// Fire bellRing event!!</p>
+<p>eventEmitter.emit('bellRing', 'Jerry');</p></td>
+</tr>
+</tbody>
+</table>
+<p>Run the example:</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-1">node eventemitter-examples/first-example.js</td>
+</tr>
+</tbody>
+</table>
+<p>Chapter 11 :</p>
+<p>Software  Installation</p>
+<p>1   Introduction</p>
+<p>2   Eclipse Installation</p>
+<p>3   Jdk1.6 Installation And Configuring to Eclipse</p>
+<p>4   <span class="class_s21F">Tomcat1.6 Installation And Configuring
+to Eclipse</span></p>
+<p>5   MySql5.0 Installation</p>
+<p>6   Eclipse Font Size Increase</p>
+<p>1   Introduction</p>
+<p><span class="class_s21C">First         </span><span
+class="class_s21G"> </span><span class="class_s21H">→</span>    We will
+see</p>
+<p>→<span class="class_s21C"> </span>   Software <span
+class="class_s21C">Installation</span> and <span
+class="class_s21C">Configuration</span></p>
+<p><span class="class_s21C">Second    </span><span
+class="class_s21G"> </span><span class="class_s21H">→</span>    We will
+see</p>
+<p>→<span class="class_s21C"> </span>   Complete Explanation
+of  Different Topics   </p>
+<p>With Diagrams</p>
+<p>2   Eclipse Installation</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc23A.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 1 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc23B.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 2 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sPE-0">
+<img src="image_rsrc23C.jpg" class="class_sPE-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 3 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc23D.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 4 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc23E.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 5 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc23F.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 6 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc23G.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 7 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc23H.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 8 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc23J.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 9 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc23K.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 10 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc23M.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>3   Jdk1.6 Installation And Configuring to Eclipse</p>
+<table class="class_s1BW">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc23N.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 1 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sPE-0">
+<img src="image_rsrc23P.jpg" class="class_sPE-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 2 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CA-0">
+<img src="image_rsrc23R.jpg" class="class_s1CA-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 3 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CM-1">
+<img src="image_rsrc23S.jpg" class="class_s1CM-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 4 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CY-1">
+<img src="image_rsrc23T.jpg" class="class_s1CY-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 5 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1D9-0">
+<img src="image_rsrc23U.jpg" class="class_s1D9-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 6 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc23V.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 7 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc23W.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 8 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc23X.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 9 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc23Y.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 10 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc23Z.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 11 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc240.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 12 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc241.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 13 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc242.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 14 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc243.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 15 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc244.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>4   <span class="class_s21F">Tomcat1.6 Installation And Configuring
+to Eclipse</span></p>
+<p>Step 1 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc245.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 2 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1GY-0">
+<img src="image_rsrc246.jpg" class="class_s1GY-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 3 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1H8-0">
+<img src="image_rsrc247.jpg" class="class_s1H8-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 4 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1HJ-0">
+<img src="image_rsrc248.jpg" class="class_s1HJ-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 5 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1HW-0">
+<img src="image_rsrc249.jpg" class="class_s1HW-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 6 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc24A.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 7 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc24B.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 8 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc24C.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 9 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc24D.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 10 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc24E.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 11 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc24F.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 12 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc24G.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 13 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc24H.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 14 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1MJ-0">
+<img src="image_rsrc24J.jpg" class="class_s1MJ-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 15 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1MX-0">
+<img src="image_rsrc24K.jpg" class="class_s1MX-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 16 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc24M.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 17 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s57-0">
+<img src="image_rsrc24N.jpg" class="class_s57-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 18 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc24P.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 19 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc24R.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 20 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1PD-0">
+<img src="image_rsrc24S.jpg" class="class_s1PD-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>5   MySql5.0 Installation</p>
+<p>Here we will learn Step by Step Installation process.</p>
+<p>Simply follow the steps.</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc24T.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 1 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1R3-0">
+<img src="image_rsrc24U.jpg" class="class_s1R3-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 2 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CM-1">
+<img src="image_rsrc24V.jpg" class="class_s1CM-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 3 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc24W.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 4 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CM-1">
+<img src="image_rsrc24X.jpg" class="class_s1CM-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 5 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc24Y.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 6 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc24Z.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 7 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc250.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 8 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc251.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 9 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc252.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 10 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc253.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 11 :</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s37"><img src="image_rsrc254.jpg"
+class="class_s1RP-0" /></td>
+</tr>
+</tbody>
+</table>
+<p>Step 12 :</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s37"><img src="image_rsrc255.jpg"
+class="class_s1RP-0" /></td>
+</tr>
+</tbody>
+</table>
+<p>Step 13 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1UJ-0">
+<img src="image_rsrc256.jpg" class="class_s1UJ-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 14 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1D9-0">
+<img src="image_rsrc257.jpg" class="class_s1D9-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 15 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CM-1">
+<img src="image_rsrc258.jpg" class="class_s1CM-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 16 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1UJ-0">
+<img src="image_rsrc259.jpg" class="class_s1UJ-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 17 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1CY-1">
+<img src="image_rsrc25A.jpg" class="class_s1CY-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 18 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc25B.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 19 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1RP-1">
+<img src="image_rsrc25C.jpg" class="class_s1RP-0" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 20 :</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s37"><img src="image_rsrc25D.jpg"
+class="class_s1CM-0" /></td>
+</tr>
+</tbody>
+</table>
+<p>Step 21 :</p>
+<table class="class_s4Z">
+<tbody class="class-1">
+<tr>
+<td class="class_s4V-0"><img src="image_rsrc25E.jpg"
+class="class_s1CY-0" /></td>
+</tr>
+</tbody>
+</table>
+<p>Step 22 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_sMH-0">
+<img src="image_rsrc25F.jpg" class="class_sMH-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 23 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1XB-0">
+<img src="image_rsrc25G.jpg" class="class_s1XB-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 24 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1XN-0">
+<img src="image_rsrc25H.jpg" class="class_s1XN-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 25 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc25J.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 26 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc25K.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 27 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s5Y-0">
+<img src="image_rsrc25M.jpg" class="class_s5Y-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 28 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1YU-0">
+<img src="image_rsrc25N.jpg" class="class_s1YU-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 29 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s6F-0">
+<img src="image_rsrc25P.jpg" class="class_s6F-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>6   Eclipse Font Size Increase</p>
+<p>Step 1 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s33-0">
+<img src="image_rsrc25R.jpg" class="class_s33-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 2 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s1ZU-0">
+<img src="image_rsrc25S.jpg" class="class_s1ZU-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 3 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s205-0">
+<img src="image_rsrc25T.jpg" class="class_s205-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 4 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s20G-0">
+<img src="image_rsrc25U.jpg" class="class_s20G-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 5 :</p>
+<table class="class_s4Z">
+<tbody>
+<tr>
+<td class="class_s37"><div class="class_s20G-0">
+<img src="image_rsrc25V.jpg" class="class_s20G-1" />
+</div>
+<div class="class_s35">
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<p>Step 6 :</p>
+<table class="class_s219">
+<tbody class="class-1">
+<tr>
+<td class="class_s37"><div id="part0001.xhtml_page_104">
+<img src="image_rsrc25W.jpg" class="class_s214" />
+</div></td>
+</tr>
+</tbody>
+</table>

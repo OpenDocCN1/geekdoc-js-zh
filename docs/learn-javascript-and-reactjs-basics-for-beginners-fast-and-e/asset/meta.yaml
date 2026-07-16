@@ -1,0 +1,247 @@
+name: LEARN JAVASCRIPT AND REACTJS BASICS： FOR BEGINNERS： FAST AND EASY WAY TO LEARN
+  CODING BASICS
+name_cn: 学习 JavaScript 和 ReactJS 基础：初学者指南：快速易学学习编程基础的方法
+slug: learn-javascript-and-reactjs-basics-for-beginners-fast-and-e
+toc:
+- - '#'
+  - 学习 JavaScript 和 ReactJS 基础：初学者指南：快速易学学习编程基础的方法
+- - '##'
+  - JavaScript 教程
+- - '###'
+  - 什么是 JavaScript 以及如何工作？
+- - '###'
+  - JavaScript 的特性
+- - '###'
+  - JavaScript 的优势
+- - '###'
+  - JavaScript 示例
+- - '###'
+  - 示例
+- - '###'
+  - JavaScript 可以通过在代码中包含 JavaScript 语句来引入
+- - '###'
+  - 演示（body 标签之间的代码）
+- - '###'
+  - 示例 2（在 head 标签之间，代码）
+- - '###'
+  - 外部 JavaScript 文件
+- - '###'
+  - JavaScript 注释
+- - '####'
+  - 注释类型
+- - '####'
+  - 单行注释
+- - '####'
+  - 多行注释
+- - '###'
+  - JavaScript 变量
+- - '##'
+  - 全局变量
+- - '###'
+  - 示例
+- - '##'
+  - 在 JavaScript 中，在函数内部声明全局变量
+- - '###'
+  - 示例
+- - '###'
+  - 示例
+- - '##'
+  - JavaScript 数据类型
+- - '###'
+  - 示例
+- - '###'
+  - 原始类型
+- - '###'
+  - 非原始类型
+- - '##'
+  - JavaScript 运算符
+- - '###'
+  - 算术运算符
+- - '###'
+  - 比较运算符
+- - '###'
+  - 赋值运算符
+- - '###'
+  - 逻辑运算符
+- - '##'
+  - JavaScript 语句
+- - '###'
+  - if 语句
+- - '###'
+  - else 语句
+- - '##'
+  - JavaScript 函数
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 参数函数
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 返回值的函数
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 构造函数
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 字面量
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 对象
+- - '###'
+  - 属性
+- - '###'
+  - 示例
+- - '##'
+  - 方法
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - 数组
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '#'
+  - ReactJS 基础：初学者教程
+- - '##'
+  - ReactJS 简介
+- - '##'
+  - React 环境搭建
+- - '###'
+  - ReactJS 的前提条件
+- - '###'
+  - 使用 npm 命令
+- - '####'
+  - 配置 Webpack
+- - '###'
+  - 启动服务器
+- - '##'
+  - React JSX
+- - '##'
+  - 为什么使用 JSX？
+- - '##'
+  - JSX 中的嵌套元素
+- - '##'
+  - JSX 属性
+- - '##'
+  - 表达式
+- - '##'
+  - JSX 样式
+- - '##'
+  - JSX 注释
+- - '##'
+  - 示例
+- - '##'
+  - ReactJS 的优缺点
+- - '###'
+  - ReactJS 的优点
+- - '###'
+  - ReactJS 的缺点
+- - '##'
+  - ReactJS 的特性
+- - '##'
+  - 组件
+- - '##'
+  - 性能
+- - '##'
+  - React 和 Vue 的比较
+- - '##'
+  - ReactJS vs AngularJS
+- - '###'
+  - ReactJS 和 AngularJS 之间的区别
+- - '###'
+  - AngularJS
+- - '####'
+  - AngularJS 的特性
+- - '###'
+  - ReactJS
+- - '####'
+  - ReactJS 的特性
+- - '###'
+  - React Native 和 ReactJS 之间的区别
+- - '###'
+  - React Native
+- - '####'
+  - React Native 的优势
+- - '##'
+  - React Native 优势
+- - '##'
+  - Native - React Native
+- - '##'
+  - ReactJS
+- - '##'
+  - ReactJS 的优势
+- - '##'
+  - ReactJS 的缺点
+- - '###'
+  - 示例
+- - '###'
+  - 修改状态
+- - '###'
+  - 示例
+- - '###'
+  - React Props
+- - '###'
+  - 默认 Props
+- - '###'
+  - 示例
+- - '###'
+  - 状态与属性 (State and Props)
+- - '##'
+  - findDOMNode()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '##'
+  - setState()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '##'
+  - forceUpdate()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '##'
+  - React 组件生命周期 (Life-Cycle)
+- - '###'
+  - 初始化阶段 (Initial Phase)
+- - '###'
+  - 挂载阶段 (Mounting Phase)
+- - '###'
+  - 更新阶段 (Updating Phase)
+- - '###'
+  - 卸载阶段 (Unmounting Phase)
+- - '###'
+  - 示例
+- - '#'
+  - React 构造函数
+- - '##'
+  - 什么是 constructor？
+- - '###'
+  - 语法
+- - '##'
+  - 示例
+- - '#'
+  - 箭头函数
+- - '###'
+  - 示例

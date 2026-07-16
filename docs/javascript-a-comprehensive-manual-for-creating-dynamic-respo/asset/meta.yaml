@@ -1,0 +1,949 @@
+name: JavaScript. A Comprehensive manual for creating dynamic, responsive websites
+  and applications
+name_cn: JavaScript：创建动态响应式网站与应用的全面手册
+slug: javascript-a-comprehensive-manual-for-creating-dynamic-respo
+toc:
+- - '#'
+  - JavaScript：创建动态响应式网站与应用的全面手册
+- - '##'
+  - 读者群体
+- - '##'
+  - 准备工作
+- - '#'
+  - JavaScript if, else 和 else if
+- - '##'
+  - 条件语句
+- - '###'
+  - if 语句
+- - '###'
+  - 示例
+- - '###'
+  - else 语句
+- - '###'
+  - 示例
+- - '###'
+  - else if 语句
+- - '###'
+  - 示例
+- - '#'
+  - JavaScript Switch 语句
+- - '###'
+  - 示例
+- - '###'
+  - break 关键字
+- - '###'
+  - default 关键字
+- - '#'
+  - JavaScript 数组
+- - '#'
+  - JavaScript Array
+- - '##'
+  - JavaScript 数组方法
+- - '#'
+  - JavaScript 对象
+- - '###'
+  - 运算符类型
+- - '#'
+  - 第七章
+- - '#'
+  - JavaScript 函数
+- - '##'
+  - 函数语法
+- - '###'
+  - 函数声明
+- - '###'
+  - 函数调用
+- - '###'
+  - 调用 JavaScript 函数
+- - '###'
+  - JavaScript 中的“this”术语
+- - '###'
+  - 注意事项
+- - '###'
+  - 全局对象
+- - '###'
+  - 将函数作为方法调用
+- - '###'
+  - 使用函数构造函数调用函数
+- - '###'
+  - 函数返回
+- - '###'
+  - ( ) 运算符
+- - '###'
+  - 局部变量
+- - '#'
+  - 第八章
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 现实中的对象、属性和方法
+- - '###'
+  - 对象定义
+- - '###'
+  - 对象属性
+- - '###'
+  - 访问对象属性
+- - '###'
+  - 对象方法
+- - '###'
+  - this 关键字
+- - '###'
+  - 访问对象方法
+- - '###'
+  - 不要将字符串、数字和布尔值声明为对象！
+- - '#'
+  - 第九章
+- - '#'
+  - JavaScript 事件
+- - '##'
+  - HTML 事件
+- - '###'
+  - 鼠标事件
+- - '###'
+  - onclick 类型
+- - '###'
+  - onsubmit 类型
+- - '###'
+  - onmouseover 和 onmouseout
+- - '###'
+  - 键盘事件
+- - '###'
+  - 表单事件
+- - '###'
+  - 窗口/文档事件
+- - '##'
+  - HTML DOM 事件
+- - '###'
+  - JavaScript 事件处理器
+- - '#'
+  - 第十章
+- - '#'
+  - JavaScript 循环
+- - '###'
+  - for 循环
+- - '###'
+  - do...while 语句
+- - '###'
+  - 示例
+- - '###'
+  - do...while 循环的区别
+- - '###'
+  - while 语句
+- - '###'
+  - 示例
+- - '###'
+  - while 循环与 for 循环的比较
+- - '###'
+  - 示例：JavaScript for 循环
+- - '###'
+  - for-in 循环
+- - '###'
+  - for...of 循环
+- - '###'
+  - document 对象属性
+- - '###'
+  - document 对象的方法
+- - '###'
+  - 通过 document 对象访问字段值
+- - '###'
+  - JavaScript - `document.getElementById()` 方法
+- - '###'
+  - JavaScript - `document.getElementsByName()` 方法
+- - '###'
+  - JavaScript - `document.getElementsByTagName()` 方法
+- - '###'
+  - '`document.getElementsByTagName()` 方法的另一个示例'
+- - '#'
+  - JavaScript - innerHTML
+- - '###'
+  - innerHTML 属性示例
+- - '###'
+  - 使用 innerHTML 显示/隐藏注释的示例
+- - '#'
+  - JavaScript - innerText
+- - '###'
+  - JavaScript innerText 示例
+- - '#'
+  - 理解浏览器环境
+- - '###'
+  - 用户界面
+- - '###'
+  - 加载器
+- - '###'
+  - HTML 解析
+- - '###'
+  - CSS 解析
+- - '###'
+  - JavaScript 解析
+- - '###'
+  - 布局与渲染
+- - '#'
+  - 激活 DOM
+- - '##'
+  - Navigator 对象
+- - '##'
+  - Window 对象
+- - '###'
+  - window 对象的方法
+- - '###'
+  - JavaScript 中 `alert()` 的示例
+- - '###'
+  - JavaScript 中 `confirm()` 的示例
+- - '###'
+  - JavaScript 中 `prompt()` 的示例
+- - '###'
+  - JavaScript 中 `open()` 的示例
+- - '###'
+  - JavaScript 中 `setTimeout()` 的示例
+- - '#'
+  - JavaScript history 对象
+- - '###'
+  - JavaScript history 对象的属性
+- - '###'
+  - JavaScript history 对象的方法
+- - '###'
+  - history 对象示例
+- - '#'
+  - JavaScript navigator 对象
+- - '###'
+  - JavaScript navigator 对象属性
+- - '###'
+  - JavaScript navigator 对象的方法
+- - '###'
+  - navigator 对象示例
+- - '#'
+  - JavaScript Screen 对象
+- - '###'
+  - JavaScript Screen 对象属性
+- - '###'
+  - JavaScript Screen 对象示例
+- - '#'
+  - JavaScript 表单验证方法
+- - '###'
+  - JavaScript 表单验证示例
+- - '###'
+  - JavaScript 重输密码验证
+- - '###'
+  - JavaScript 数字验证
+- - '###'
+  - 图像的 JavaScript 验证
+- - '###'
+  - JavaScript 邮箱验证
+- - '#'
+  - JavaScript 类
+- - '##'
+  - 类声明
+- - '###'
+  - 类声明示例
+- - '###'
+  - 类声明示例：变量提升
+- - '###'
+  - 类声明示例：重复声明类
+- - '#'
+  - 类表达式
+- - '##'
+  - 无名类表达式
+- - '##'
+  - 类表达式示例：重新声明类
+- - '##'
+  - 命名类表达式示例
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 在 JavaScript 中创建对象
+- - '###'
+  - 1) 通过对象字面量创建 JavaScript 对象
+- - '###'
+  - 2) 通过创建 Object 实例
+- - '###'
+  - 3) 使用 Object 构造函数
+- - '##'
+  - 在 JavaScript 对象中定义方法
+- - '##'
+  - JavaScript 对象方法
+- - '#'
+  - JavaScript 原型对象
+- - '##'
+  - 语法：
+- - '##'
+  - 原型链
+- - '##'
+  - JavaScript 原型对象
+- - '##'
+  - JavaScript 构造方法
+- - '##'
+  - 注意事项
+- - '##'
+  - 构造方法示例
+- - '#'
+  - JavaScript 静态方法
+- - '##'
+  - JavaScript 静态方法示例
+- - '###'
+  - 示例 4
+- - '#'
+  - JavaScript 封装
+- - '##'
+  - JavaScript 封装示例
+- - '##'
+  - JavaScript 封装示例：验证
+- - '##'
+  - JavaScript 封装示例：基于原型的方法
+- - '#'
+  - JavaScript 继承
+- - '##'
+  - JavaScript extends 示例：内置对象
+- - '##'
+  - JavaScript extends 示例：自定义类
+- - '##'
+  - JavaScript extends 示例：基于原型的方法
+- - '#'
+  - JavaScript 多态
+- - '##'
+  - JavaScript 抽象
+- - '#'
+  - 第十五章
+- - '#'
+  - JavaScript Cookie
+- - '##'
+  - Cookie 是如何运作的？
+- - '##'
+  - 如何在 JavaScript 中创建 Cookie？
+- - '##'
+  - JavaScript Cookie 示例
+- - '##'
+  - Cookie 属性
+- - '###'
+  - Cookie expires 属性
+- - '###'
+  - Cookie max-age 属性
+- - '###'
+  - Cookie path 属性
+- - '###'
+  - Cookie path 属性示例
+- - '###'
+  - Cookie domain 属性
+- - '###'
+  - 带有多个键值对的 Cookie
+- - '###'
+  - 在 Cookie 中存储键值对的示例
+- - '##'
+  - 在 JavaScript 中删除 Cookie
+- - '##'
+  - 删除 Cookie 的示例
+- - '###'
+  - 示例 3
+- - '#'
+  - 第十六章
+- - '#'
+  - 将 JavaScript 与 Google Apps Script 应用
+- - '##'
+  - Apps Script 能做什么？
+- - '##'
+  - Google Workspace 中的自定义菜单
+- - '##'
+  - Google Sheets 中的可点击图像和图形
+- - '##'
+  - Google Workspace 文档中的对话框和侧边栏
+- - '###'
+  - 警告对话框
+- - '###'
+  - 提示对话框
+- - '###'
+  - 自定义对话框
+- - '###'
+  - 自定义侧边栏
+- - '###'
+  - 文件打开对话框
+- - '##'
+  - Google Sheets 中的自定义函数
+- - '##'
+  - 开发自定义函数
+- - '##'
+  - 通过 Marketplace 获取个性化功能
+- - '##'
+  - 使用自定义函数
+- - '##'
+  - 自定义函数指南
+- - '##'
+  - 命名
+- - '##'
+  - 参数
+- - '##'
+  - 数据类型
+- - '##'
+  - 自动补全
+- - '##'
+  - 使用 Apps Script 服务
+- - '##'
+  - 共享
+- - '##'
+  - 优化
+- - '##'
+  - Google Sheets 宏
+- - '##'
+  - 在 Apps Script 中创建宏
+- - '##'
+  - 编辑宏
+- - '###'
+  - 导入函数
+- - '###'
+  - 宏的结构
+- - '#'
+  - 第十七章
+- - '##'
+  - 在 Apps Script 中开发 Web 应用
+- - '##'
+  - 请求参数
+- - '##'
+  - 部署
+- - '###'
+  - 脚本
+- - '##'
+  - 权限
+- - '##'
+  - 结论
+- - '#'
+  - 第二章
+- - '##'
+  - JavaScript 基础
+- - '##'
+  - JavaScript 更改内容
+- - '##'
+  - JavaScript 属性值
+- - '##'
+  - JavaScript 样式 (CSS)
+- - '##'
+  - JavaScript 隐藏元素
+- - '##'
+  - JavaScript 标签
+- - '##'
+  - JavaScript 函数和事件
+- - '##'
+  - 表达式
+- - '##'
+  - innerHTML
+- - '##'
+  - 使用 document.write()
+- - '##'
+  - 使用 window.alert()
+- - '##'
+  - 使用 console.log()
+- - '##'
+  - 打印 (Print)
+- - '#'
+  - 第一章
+- - '##'
+  - JavaScript 简介
+- - '##'
+  - JavaScript 特性
+- - '#'
+  - JavaScript 语句 (Statements)
+- - '##'
+  - JavaScript 程序
+- - '##'
+  - JavaScript 语句
+- - '###'
+  - 分号 (Semicons)
+- - '###'
+  - 空格 (White Space)
+- - '###'
+  - 行长度 (Line Length)
+- - '###'
+  - 代码块 (Code Blocks)
+- - '##'
+  - 关键字
+- - '##'
+  - 值 (Values)
+- - '##'
+  - 字面量 (Literals)
+- - '##'
+  - 数字
+- - '##'
+  - 字符串
+- - '#'
+  - 第三章
+- - '##'
+  - JavaScript 注释
+- - '###'
+  - 注释的优势
+- - '###'
+  - 注释的类型
+- - '###'
+  - 单行注释
+- - '###'
+  - 多行注释
+- - '##'
+  - 使用注释防止代码执行
+- - '###'
+  - 注释调用
+- - '###'
+  - 注释体 — 无返回值
+- - '###'
+  - 注释体 — 有返回值
+- - '##'
+  - 编写有效的 JavaScript 注释
+- - '#'
+  - 第四章
+- - '##'
+  - JavaScript 变量
+- - '##'
+  - 关键字
+- - '##'
+  - 变量命名规范
+- - '##'
+  - var 关键字
+- - '###'
+  - 使用 var 的示例
+- - '##'
+  - Let 关键字
+- - '###'
+  - 使用 let 的示例
+- - '##'
+  - Const 关键字
+- - '###'
+  - 使用 Const 的示例
+- - '##'
+  - 什么时候使用 const？
+- - '#'
+  - JavaScript 局部变量
+- - '#'
+  - 函数作用域
+- - '#'
+  - JavaScript 全局变量
+- - '###'
+  - 在函数内部声明全局变量
+- - '##'
+  - 自动全局
+- - '##'
+  - 全局变量
+- - '##'
+  - 如何使用变量
+- - '##'
+  - 在何处使用种变量
+- - '#'
+  - 第五章
+- - '##'
+  - JavaScript 运算符
+- - '##'
+  - 赋值
+- - '###'
+  - 赋值示例
+- - '##'
+  - 算术运算符
+- - '##'
+  - 比较运算符
+- - '###'
+  - 示例
+- - '##'
+  - 字符串相加
+- - '###'
+  - 示例
+- - '##'
+  - 注意事项
+- - '##'
+  - 字符串与数字相加
+- - '###'
+  - 示例
+- - '##'
+  - 逻辑运算符
+- - '###'
+  - Demo：JavaScript 逻辑运算符
+- - '##'
+  - 位运算符
+- - '###'
+  - 位运算符（概念性）
+- - '##'
+  - 位按与 (AND)
+- - '###'
+  - 示例
+- - '##'
+  - 位按或 (OR)
+- - '###'
+  - 示例：
+- - '##'
+  - 位按异或 (XOR)
+- - '##'
+  - 位按取反 (~)
+- - '##'
+  - 零填充位移 (<<)
+- - '##'
+  - 符号位移 (>>)
+- - '##'
+  - 零填充右移 (>>>)
+- - '##'
+  - 原始数据类型
+- - '##'
+  - 非原始数据类型
+- - '###'
+  - 示例
+- - '##'
+  - 数据类型的概念
+- - '##'
+  - JavaScript 是动态
+- - '##'
+  - 字符串
+- - '#'
+  - JavaScript 方法
+- - '##'
+  - 字符串长度
+- - '##'
+  - 提取字符串部分
+- - '##'
+  - JavaScript String slice()
+- - '###'
+  - 注意
+- - '###'
+  - 示例
+- - '##'
+  - JavaScript String substring()
+- - '##'
+  - 替换字符串内容
+- - '###'
+  - 注意
+- - '##'
+  - JavaScript String ReplaceAll
+- - '##'
+  - 转换为大写和小写
+- - '##'
+  - JavaScript String concat()
+- - '##'
+  - JavaScript String trim()
+- - '#'
+  - JavaScript 数字
+- - '#'
+  - JavaScript 随机数
+- - '##'
+  - 指数计数法
+- - '##'
+  - JavaScript BigInt
+- - '##'
+  - 精度
+- - '##'
+  - 如何创建 BigInt
+- - '##'
+  - JavaScript 布尔
+- - '##'
+  - Boolean() 函数
+- - '##'
+  - NaN 数据类型
+- - '##'
+  - undefined 数据类型
+- - '##'
+  - 比较与条件
+- - '#'
+  - JavaScript 比较与逻辑运算符
+- - '##'
+  - 比较运算符
+- - '##'
+  - 如何使用
+- - '##'
+  - 条件（三元）运算符
+- - '###'
+  - 语法
+- - '##'
+  - 不同类型的比较
+- - '##'
+  - JavaScript if .. else
+- - '#'
+  - JavaScript Switch 语句
+- - '###'
+  - 语法
+- - '###'
+  - 示例
+- - '##'
+  - break 关键字
+- - '##'
+  - default 关键字
+- - '###'
+  - 示例
+- - '##'
+  - JavaScript 数组
+- - '###'
+  - 1. 数组字面量
+- - '###'
+  - 2. 直接创建 (new 关键字)
+- - '###'
+  - 3. 数组构造函数 (new 关键字)
+- - '##'
+  - JavaScript 数组方法
+- - '##'
+  - JavaScript 对象
+- - '##'
+  - 运算符
+- - '#'
+  - 七章
+- - '##'
+  - JavaScript 函数
+- - '###'
+  - 函数语法
+- - '###'
+  - 函数调用
+- - '###'
+  - 调用 JavaScript 函数
+- - '###'
+  - JavaScript 中的“this”术语
+- - '###'
+  - 注意事项
+- - '###'
+  - 全局对象
+- - '###'
+  - 将函数作为方法调用
+- - '###'
+  - 使用函数构造函数调用函数
+- - '###'
+  - 函数返回
+- - '###'
+  - ( ) 运算符
+- - '###'
+  - 局部变量
+- - '#'
+  - 第八章
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 对象中的属性和方法
+- - '###'
+  - 对象定义
+- - '###'
+  - 对象属性
+- - '###'
+  - 访问对象属性
+- - '###'
+  - 对象方法
+- - '###'
+  - 'this 关键字 '
+- - '###'
+  - 访问对象方法
+- - '###'
+  - 不要将字符串、数字和布尔值声明为对象！
+- - '#'
+  - 第九章
+- - '#'
+  - JavaScript 事件
+- - '##'
+  - HTML 事件
+- - '###'
+  - 鼠标事件
+- - '###'
+  - onclick 类型
+- - '###'
+  - onsubmit 类型
+- - '###'
+  - onmouseover 和 onmouseout
+- - '###'
+  - 键盘事件
+- - '###'
+  - 表单事件
+- - '###'
+  - 窗口/文档事件
+- - '##'
+  - HTML DOM 事件
+- - '###'
+  - JavaScript 事件处理器
+- - '#'
+  - 第十章
+- - '#'
+  - JavaScript 循环
+- - '##'
+  - HTML DOM 事件
+- - '###'
+  - JavaScript 事件处理器
+- - '#'
+  - 第十二章
+- - '##'
+  - 浏览器模型
+- - '##'
+  - 理解浏览器环境
+- - '###'
+  - 用户界面
+- - '###'
+  - 加载器
+- - '###'
+  - HTML 解析
+- - '###'
+  - CSS 解析
+- - '###'
+  - JavaScript 解析
+- - '###'
+  - 布局与渲染
+- - '##'
+  - 激活 DOM
+- - '##'
+  - Navigator 对象
+- - '##'
+  - Window 对象
+- - '###'
+  - window 对象的方法
+- - '###'
+  - JavaScript 中 `alert()` 的示例
+- - '###'
+  - JavaScript 中 `confirm()` 的示例
+- - '###'
+  - JavaScript 中 `prompt()` 的示例
+- - '###'
+  - JavaScript 中 `open()` 的示例
+- - '###'
+  - JavaScript 中 `setTimeout()` 的示例
+- - '#'
+  - JavaScript history 对象
+- - '###'
+  - JavaScript history 对象的属性
+- - '###'
+  - JavaScript history 对象的方法
+- - '###'
+  - history 对象示例
+- - '#'
+  - JavaScript navigator 对象
+- - '###'
+  - JavaScript navigator 对象属性
+- - '###'
+  - JavaScript navigator 对象的方法
+- - '###'
+  - navigator 对象示例
+- - '#'
+  - JavaScript Screen 对象
+- - '###'
+  - JavaScript Screen 对象属性
+- - '###'
+  - JavaScript Screen 对象示例
+- - '#'
+  - JavaScript 表单验证方法
+- - '###'
+  - JavaScript 重输密码验证
+- - '###'
+  - JavaScript 数字验证
+- - '###'
+  - 图像的 JavaScript 验证
+- - '###'
+  - JavaScript 邮箱验证
+- - '#'
+  - JavaScript 类
+- - '##'
+  - 类声明
+- - '###'
+  - 类声明示例
+- - '###'
+  - 类声明示例：变量提升
+- - '###'
+  - 类声明示例：重复声明类
+- - '#'
+  - 类表达式
+- - '##'
+  - 无名类表达式
+- - '##'
+  - 类表达式示例：重新声明类
+- - '##'
+  - 命名类表达式示例
+- - '#'
+  - JavaScript 对象
+- - '##'
+  - 在 JavaScript 中创建对象
+- - '###'
+  - 1) 通过对象字面量创建 JavaScript 对象
+- - '###'
+  - 2) 通过创建 Object 实例
+- - '###'
+  - 3) 使用 Object 构造函数
+- - '##'
+  - 在 JavaScript 对象中定义方法
+- - '##'
+  - JavaScript 对象方法
+- - '#'
+  - JavaScript 原型对象
+- - '##'
+  - 语法：
+- - '##'
+  - 原型链
+- - '##'
+  - JavaScript 原型对象
+- - '##'
+  - JavaScript 构造方法
+- - '##'
+  - 注意事项
+- - '##'
+  - 构造方法示例
+- - '#'
+  - JavaScript 静态方法
+- - '##'
+  - JavaScript 静态方法示例
+- - '###'
+  - 示例 4
+- - '#'
+  - JavaScript 封装
+- - '##'
+  - JavaScript 封装示例
+- - '##'
+  - JavaScript 封装示例：验证
+- - '##'
+  - JavaScript 封装示例：基于原型的方法
+- - '#'
+  - JavaScript 继承
+- - '##'
+  - JavaScript extends 示例：内置对象
+- - '##'
+  - JavaScript extends 示例：自定义类
+- - '##'
+  - JavaScript extends 示例：基于原型的方法
+- - '#'
+  - JavaScript 多态
+- - '##'
+  - JavaScript 抽象
+- - '#'
+  - 第十五章
+- - '#'
+  - JavaScript Cookie
+- - '##'
+  - Cookie 是如何运作的？
+- - '##'
+  - 如何在 JavaScript 中创建 Cookie？
+- - '##'
+  - JavaScript Cookie 示例
+- - '##'
+  - Cookie 属性
+- - '###'
+  - Cookie expires 属性
+- - '###'
+  - Cookie max-age 属性
+- - '###'
+  - Cookie path 属性
+- - '###'
+  - Cookie path 属性示例
+- - '###'
+  - Cookie domain 属性
+- - '###'
+  - 带有多个键值对的 Cookie
+- - '###'
+  - 在 Cookie 中存储键值对的示例
+- - '##'
+  - 在 JavaScript 中删除 Cookie
+- - '##'
+  - 删除 Cookie 的示例
+- - '###'
+  - 示例 3
+- - '#'
+  - 第十六章
+- - '#'
+  - 将 JavaScript 与 Google Apps Script 应用
+- - '##'
+  - Apps Script 能做什么？
+- - '##'
+  - Google Workspace 中的自定义菜单
+- - '##'
+  - Google Sheets 中的可点击图像和图形
+- - '##'
+  - Google Workspace 文档中的对话框和侧边栏
+- - '###'
+  - 警告对话框
+- - '###'
+  - 提示对话框
+- - '###'
+  - 自定义对话框
+- - '###'
+  - 自定义侧边栏
+- - '###'
+  - 文件打开对话框
+- - '##'
+  - Google Sheets 中的自定义函数
+- - '##'
+  - 开发自定义函数

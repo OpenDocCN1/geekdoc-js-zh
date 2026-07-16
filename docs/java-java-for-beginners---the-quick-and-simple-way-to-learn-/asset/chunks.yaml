@@ -1,0 +1,4063 @@
+- fmt: '
+
+    ![](cover.jpeg)
+
+
+    # Java Programming: For Beginners
+
+
+    ![dimav888_java.jpg](images/00001.jpeg)
+
+
+    ## Table of Contents
+
+
+    - [Table of Contents](#part0000_split_001.html__Toc418147749)
+
+    - [What Will This Book Teach You?](#part0000_split_003.html__Toc418147750)
+
+    - [A Brief History of Java](#part0000_split_004.html__Toc418147751)
+
+    - [The Popularity of Java](#part0000_split_006.html__Toc418147752)
+
+    - [Platform Independence](#part0000_split_007.html__Toc418147753)
+
+    - [Java API](#part0000_split_008.html__Toc418147754)
+
+    - [Object Orientation](#part0000_split_009.html__Toc418147755)
+
+    - [Classes](#part0000_split_010.html__Toc418147756)
+
+    - [Getting Started](#part0000_split_011.html__Toc418147757)
+
+    - [Using a Dedicated IDE](#part0000_split_012.html__Toc418147758)
+
+    - [Netbeans](#part0000_split_013.html__Toc418147759)
+
+    - [Using a Text Editor](#part0000_split_014.html__Toc418147760)
+
+    - [Learning the Lingo (Acronyms)](#part0000_split_015.html__Toc418147761)
+
+    - [CPU - Central Processing Unit](#part0000_split_016.html__Toc418147762)
+
+    - [CRT - Cathode Ray Tube](#part0000_split_017.html__Toc418147763)
+
+    - [ALU - Arithmetic Logic Unit](#part0000_split_018.html__Toc418147764)
+
+    - [LAN - Local Area Network](#part0000_split_019.html__Toc418147765)
+
+    - [IDE - Integrated Development Environment](#part0000_split_020.html__Toc418147766)
+
+    - [DOS - Disk Operating System](#part0000_split_021.html__Toc418147767)
+
+    - [OOP - Object Oriented Programming](#part0000_split_022.html__Toc418147768)
+
+    - [ROM - Read Only Memory](#part0000_split_023.html__Toc418147769)
+
+    - [RAM - Random Access Memory](#part0000_split_024.html__Toc418147770)
+
+    - [Basics of Programming Languages](#part0000_split_025.html__Toc418147771)
+
+    - [Variables](#part0000_split_026.html__Toc418147772)
+
+    - [Variable Types](#part0000_split_027.html__Toc418147773)
+
+    - [Control Structures](#part0000_split_028.html__Toc418147774)
+
+    - [Syntax](#part0000_split_030.html__Toc418147775)
+
+    - [Data Structures](#part0000_split_031.html__Toc418147776)
+
+    - [Arithmetic Operators](#part0000_split_032.html__Toc418147777)
+
+    - [Your First Application: Hello World](#part0000_split_033.html__Toc418147778)
+
+    - [Making Your IDE Project](#part0000_split_034.html__Toc418147779)
+
+    - [Build Project (Hello World App).](#part0000_split_036.html__Toc418147780)
+
+    - [How Hello World! Works](#part0000_split_037.html__Toc418147781)
+
+    - [Comments in the Source Code](#part0000_split_038.html__Toc418147782)
+
+    - [Your Main Method](#part0000_split_039.html__Toc418147783)
+
+    - [More Definitions](#part0000_split_040.html__Toc418147784)
+
+    - [Objects](#part0000_split_041.html__Toc418147785)
+
+    - [Classes](#part0000_split_043.html__Toc418147786)
+
+    - [Inheritance](#part0000_split_044.html__Toc418147787)
+
+    - [Java Code Examples](#part0000_split_045.html__Toc418147788)
+
+    - [Calling Methods](#part0000_split_046.html__Toc418147789)
+
+    - [Example of Strings](#part0000_split_047.html__Toc418147790)
+
+    - [Value Parameters](#part0000_split_048.html__Toc418147791)
+
+    - [Pointers As Value Parameters](#part0000_split_049.html__Toc418147792)
+
+    - [Array Examples](#part0000_split_050.html__Toc418147793)
+
+    - [Connecting to a Webpage and Reading from It](#part0000_split_051.html__Toc418147794)
+
+    - [List That Can Store Anything, and Not Only Ints](#part0000_split_052.html__Toc418147795)
+
+    - [Writing Ints onto File](#part0000_split_053.html__Toc418147796)
+
+    - [Word Counting Code](#part0000_split_054.html__Toc418147797)
+
+    - [Using Scanner Class to Read Ints From File](#part0000_split_055.html__Toc418147798)
+
+
+    ## Introduction
+
+
+    If you are at least slightly interested in programming, you have probably heard
+    about Java. It is a language for programming that follows the style of `C` and
+    `C++`. These are also very common languages so anyone who already has experience
+    with them should feel comfortable picking up Java. However, there are some important
+    differences with language which will be discussed in the next chapter.
+
+
+    ## What Will This Book Teach You?
+
+
+    There is a lot to learn in the world of programming, and many languages have similarities.
+    As mentioned, if you are already familiar with another language, you should find
+    it easier to get with Java. However, for everyone else, there are some basics
+    to learn in the beginning. They might seem quite unusual at first, but you need
+    to build a firm understanding of the basics before you can create your own applications.
+
+
+    If you are serious about learning computer programming, please understand that
+    it is not easy. You will need to learn a lot of technical terms, and it will take
+    a long time before you fully understand the basics of programming.
+
+
+    ## A Brief History of Java
+
+
+    Java was first made in 1991, so it is fairly new in comparison to some languages.
+    Working at Sun Microsystems, James Gosling and his team started to make Java.
+    It was originally made to work with home appliances, which needed to include their
+    own computer processors.
+
+
+    The new Java language had to work with a variety of different types. Netscape
+    Incorporated released a version of its Internet browser in 1995. They made the
+    browser to be compatible with Java applications.
+
+
+    As for the name `Java`, it was named by its creator. In the beginning, it was
+    called `Oak`. However, it was soon found out that there was already a programming
+    language with that name. After quite some time trying to think of a suitable name
+    to replace `Oak`, Gosling’s team of developers decided to take a break and grab
+    some coffee. Since `java` is another term for the popular beverage, it gave them
+    the idea for a new name for their programming language.
+
+
+    In 2010, Sun Microsystems was acquired by a software company called Oracle. They
+    have since then continued to develop Java and related products.
+
+
+    People often think of Java as a programming language that is just for Internet
+    applications. However, it is actually intended for a variety of purposes for use
+    on many different platforms. That is one of the things that make it so popular
+    to those who understand its power.
+
+
+    # The Popularity of Java
+
+
+    One of the reasons that Java is so popular is that it is so popular. Basically,
+    it is one of the most commonly used programming languages in the world. Many programmers
+    have had some experience with Java at one point or another in their careers. If
+    you are thinking about getting into programming, but you cannot decide which language
+    to learn first, Java is a recommended choice for you.
+
+
+    Since Java is particularly popular at the moment, it is a great choice for people
+    who rely on freelance programmers and consultants. Finding someone to help maintain
+    your code in the future will be pretty easy. This takes away some of the worries
+    about creating coding that will be accessible into the future. That type of ubiquity
+    is very appealing to a lot of people, especially those outsourcing programming
+    work for businesses.
+
+
+    As well as being popular, Java is great because it is easy to use for cross-platform
+    applications. That means that it can be used to create programming for a variety
+    of different operating systems and platforms. Java is dominant on the server’s
+    side of a system.
+
+
+    Take a look at some of the different things that Java can do, and why it is a
+    great programming language to learn:
+
+
+    ## Platform Independence
+
+
+    This is a key reason for Java being so popular. Platform independence refers to
+    its ability to run on a range of different computers. If you have a system that
+    is able to run an appropriate `JRE` (Java Runtime Environment), it will be capable
+    of running Java applications. This includes Windows, Mac, Linux, Unix, computer
+    mainframes, and even many mobile devices.
+
+
+    ## Java API
+
+    '
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    Java Programming
+
+
+    For Beginners
+
+
+    ![dimav888_java.jpg](images/00001.jpeg)
+
+
+    # Table of Contents
+
+
+    [Table of Contents](#part0000_split_001.html__Toc418147749)
+
+
+    [What Will This Book Teach You?](#part0000_split_003.html__Toc418147750)
+
+
+    [A Brief History of Java](#part0000_split_004.html__Toc418147751)
+
+
+    [The Popularity of Java](#part0000_split_006.html__Toc418147752)
+
+
+    [Platform Independence](#part0000_split_007.html__Toc418147753)
+
+
+    [Java API](#part0000_split_008.html__Toc418147754)
+
+
+    [Object Orientation](#part0000_split_009.html__Toc418147755)
+
+
+    [Classes](#part0000_split_010.html__Toc418147756)
+
+
+    [Getting Started](#part0000_split_011.html__Toc418147757)
+
+
+    [Using a Dedicated IDE](#part0000_split_012.html__Toc418147758)
+
+
+    [Netbeans](#part0000_split_013.html__Toc418147759)
+
+
+    [Using a Text Editor](#part0000_split_014.html__Toc418147760)
+
+
+    [Learning the Lingo (Acronyms)](#part0000_split_015.html__Toc418147761)
+
+
+    [CPU - Central Processing Unit](#part0000_split_016.html__Toc418147762)
+
+
+    [CRT - Cathode Ray Tube](#part0000_split_017.html__Toc418147763)
+
+
+    [ALU - Arithmetic Logic Unit](#part0000_split_018.html__Toc418147764)
+
+
+    [LAN - Local Area Network](#part0000_split_019.html__Toc418147765)
+
+
+    [IDE - Integrated Development Environment](#part0000_split_020.html__Toc418147766)
+
+
+    [DOS - Disk Operating System](#part0000_split_021.html__Toc418147767)
+
+
+    [OOP - Object Oriented Programming](#part0000_split_022.html__Toc418147768)
+
+
+    [ROM - Read Only Memory](#part0000_split_023.html__Toc418147769)
+
+
+    [RAM - Random Access Memory](#part0000_split_024.html__Toc418147770)
+
+
+    [Basics of Programming Languages](#part0000_split_025.html__Toc418147771)
+
+
+    [Variables](#part0000_split_026.html__Toc418147772)
+
+
+    [Variable Types](#part0000_split_027.html__Toc418147773)
+
+
+    [Control Structures](#part0000_split_028.html__Toc418147774)
+
+
+    [Syntax](#part0000_split_030.html__Toc418147775)
+
+
+    [Data Structures](#part0000_split_031.html__Toc418147776)
+
+
+    [Arithmetic Operators](#part0000_split_032.html__Toc418147777)
+
+
+    [Your First Application: Hello World](#part0000_split_033.html__Toc418147778)
+
+
+    [Making Your IDE Project](#part0000_split_034.html__Toc418147779)
+
+
+    [Build Project (Hello World App).](#part0000_split_036.html__Toc418147780)
+
+
+    [How Hello World! Works](#part0000_split_037.html__Toc418147781)
+
+
+    [Comments in the Source Code](#part0000_split_038.html__Toc418147782)
+
+
+    [Your Main Method](#part0000_split_039.html__Toc418147783)
+
+
+    [More Definitions](#part0000_split_040.html__Toc418147784)
+
+
+    [Objects](#part0000_split_041.html__Toc418147785)
+
+
+    [Classes](#part0000_split_043.html__Toc418147786)
+
+
+    [Inheritance](#part0000_split_044.html__Toc418147787)
+
+
+    [Java Code Examples](#part0000_split_045.html__Toc418147788)
+
+
+    [Calling Methods](#part0000_split_046.html__Toc418147789)
+
+
+    [Example of Strings](#part0000_split_047.html__Toc418147790)
+
+
+    [Value Parameters](#part0000_split_048.html__Toc418147791)
+
+
+    [Pointers As Value Parameters](#part0000_split_049.html__Toc418147792)
+
+
+    [Array Examples](#part0000_split_050.html__Toc418147793)
+
+
+    [Connecting to a Webpage and Reading from It](#part0000_split_051.html__Toc418147794)
+
+
+    [List That Can Store Anything, and Not Only Ints](#part0000_split_052.html__Toc418147795)
+
+
+    [Writing Ints onto File](#part0000_split_053.html__Toc418147796)
+
+
+    [Word Counting Code](#part0000_split_054.html__Toc418147797)
+
+
+    [Using Scanner Class to Read Ints From File](#part0000_split_055.html__Toc418147798)
+
+
+    Introduction
+
+
+    If you are at least slightly interested in programming, you have probably heard
+    about Java. It is a language for programming that follows in the style of C and
+    C++. These are also very common languages, so anyone who already has experience
+    with them, should feel comfortable picking up with Java. However, there are some
+    important differences with these language, which will be discussed in the next
+    chapter.
+
+
+    ## What Will This Book Teach You?
+
+
+    There is a lot to learn in the world of programming, and many languages have similarities.
+    As mentioned, if you are already familiar with another language, you should find
+    it easier to get started with Java. However, for everyone else, there are some
+    basics to learn in the beginning. They might seem quite unusual at first, but
+    you need to build a firm understanding of the basics, before you can start to
+    create your own applications.
+
+
+    While this book is helpful to beginners, it is also a great resource for people
+    who already know a little about computer use, and possibly even programming.
+
+
+    If you are serious about learning computer programming, please understand that
+    it is not easy. You will need to learn a lot of technical terms, and it will take
+    a long time before you start to fully understand the basics of programming.
+
+
+    ## A Brief History of Java
+
+
+    Java was first made in 1991, so it is fairly new in comparison to some languages.
+    Working at Sun Microsystems, James Gosling and his team started to make Java.
+    It was originally made to work with home appliances, such as microwaves, which
+    needed to include their own computer processors.
+
+
+    The new Java language had to work with a range of different computer processors.
+    This was because it needed to be compatible with a variety of appliance types.
+    Netscape Incorporated released a version of its Netscape Internet browser in 1995\.
+    They made the browser to be compatible with Java applications.
+
+
+    As for the name “Java”, it was named by its creator. In the beginning, it was
+    called “Oak”. However, it was soon found out that there was already a programming
+    language with that name. After quite some time trying to think of a suitable name
+    to replace Oak, Gosling’s team of developers decided to take a break and grab
+    some coffee. Since java is another term for the popular beverage, it gave them
+    the idea for a new name for their programming language.
+
+
+    In 2010, Sun Microsystems was acquired by a software company called Oracle. They
+    have since then continued to develop Java and related products.
+
+
+    People often think of Java as a programming language that is just for Internet
+    applications. However, it is actually intended for a variety of purposes, for
+    use on many different platforms. That is one of the things that make it so popular,
+    to those who understand its power.
+
+
+    # The Popularity of Java
+
+
+    One of the reasons that Java is so popular, is that it’s so popular. Basically,
+    it is one of the most commonly used programming languages in the world. Many programmers
+    have had some experience with Java at one point or another in their careers. If
+    you are thinking about getting into programming, but you cannot decide which language
+    to learn first, Java is a recommended choice for you.
+
+
+    Since Java is particularly popular at the moment, it is a great choice for people
+    who rely on freelance programmers and consultants. Finding someone to help maintain
+    your code in the future will be pretty easy. This takes away some of the worries
+    about creating coding that will be accessible into the future. That type of ubiquity
+    is very appealing to a lot of people, especially those outsourcing programming
+    work for businesses.
+
+
+    As well as being popular, Java is great because it is easy to use for cross-platform
+    applications. That means that it can be used to create programming for a variety
+    of different operating systems and platforms. Java is dominant on the server’s
+    side of a system.
+
+
+    Take a look at some of the different things that Java can do, and why it is a
+    great programming language to learn:
+
+
+    ## Platform Independence
+
+
+    This is a key reason for Java being so popular. Platform independence refers to
+    its ability to run on a range of different computers. If you have a system that
+    is able to run an appropriate JRE (Java Runtime Environment), it will be capable
+    of running Java applications. This includes Windows, Mac, Linux, Unix, computer
+    mainframes, and even many mobile devices.
+
+
+    ## Java API'
+  toc: []
+  trans: '
+
+
+    ![](img/cover.jpeg)
+
+
+    # Java 编程：入门
+
+
+    ![dimav888_java.jpg](img/00001.jpeg)
+
+
+    ## 目录
+
+
+    - 目录
+
+    - 这本书将将教你什么？
+
+    - Java 简史
+
+    - Java 的流行程度
+
+    - 平台无关性
+
+    - Java API
+
+    - 面向对象
+
+    - 类
+
+    - 入门
+
+    - 使用专用 IDE
+
+    - Netbeans
+
+    - 使用文本编辑器
+
+    - 学习术语（缩写词）
+
+    - CPU - 中央处理单元
+
+    - CRT - 阴极射线管
+
+    - ALU - 算术逻辑单元
+
+    - LAN - 局域网
+
+    - IDE - 集成开发环境
+
+    - DOS - 磁盘操作系统
+
+    - OOP - 面向对象编程
+
+    - ROM - 只读存储器
+
+    - RAM - 随机存存储器
+
+    - 编程语言基础
+
+    - 变量
+
+    - 变量类型
+
+    - 控制结构
+
+    - 语法
+
+    - 数据结构
+
+    - 算术运算符
+
+    - 你的第一个应用程序：Hello World
+
+    - 创建你的 IDE 项目
+
+    - 构建项目（Hello World 应用）。
+
+    - Hello World!是如何工作的
+
+    - 源代码中的注释
+
+    - 你的主方法
+
+    - 更多定义
+
+    - 对象
+
+    - 类
+
+    - 入门
+
+    - 使用专用 IDE
+
+    - Netbeans
+
+    - 使用文本编辑器
+
+    - 学习术语（缩写词）
+
+    - CPU - 中央处理单元
+
+    - CRT - 阴极射线管
+
+    - ALU - 算术逻辑单元
+
+    - LAN - 局域网
+
+    - IDE - 集成开发环境
+
+    - DOS - 磁盘操作系统
+
+    - OOP - 面向对象编程
+
+    - ROM - 只读存储器
+
+    - RAM - 随机存存储器
+
+    - 编程语言基础
+
+    - 变量
+
+    - 变量类型
+
+    - 控制结构
+
+    - 语法
+
+    - 数据结构
+
+    - 算术运算符
+
+    - 你的第一个应用程序：Hello World
+
+    - 创建你的 IDE 项目
+
+    - 构建项目（Hello World 应用）。
+
+    - Hello World!是如何工作的
+
+    - 源代码中的注释
+
+    - 你的主方法
+
+    - 更多定义
+
+    - 对象
+
+
+    ![](img/cover.jpeg)
+
+
+    # Java 编程：入门
+
+
+    ![dimav888_java.jpg](img/00001.jpeg)
+
+
+    ## 引言
+
+
+    如果你对编程有一点兴趣，你可能听说过 Java。
+
+
+    ## 这本书将将教你什么？
+
+
+    如果你对编程感兴趣，你可能听说过 Java。事实上，它是为了各种目的而设计的语言。在开始之前，你可能需要了解一些基础。
+
+
+    ## Java 简史
+
+
+    Java 最初创建于 1991 年。在 Sun Microsystems 工作时 James Gosling 和他的团队创建了 Java。它最初是为各种家用电器设计的。在
+    1995 年，Netscape 发布了其版本的浏览器，该浏览器能够运行 Java。
+
+
+    在花了一些时间思考一个合适的名称来取代 `Oak` 后，他们发现已经有语言叫这个名字。由于 `java` 是流行饮料的另一种说法，这给了他们一个新名字的想法。2010
+    年，Sun Microsystems 被一家名为 Oracle 的软件公司收购。从那时，他们继续开发 Java 及相关产品。
+
+
+    ## Java 的流行程度
+
+
+    Java 如此流行的原因之一是它非常流行。基本上，它是世界上最常用的编程语言之一。许多程序员在职业生涯的某个阶段都有过 Java 的经验。如果你正在考虑学习编程，但不知道先学哪种语言，Java
+    是一个推荐的选择。
+
+
+    由于 Java 目前非常流行，对于那些依赖自由职业程序员和顾问的人来说，它是一个很棒的选择。未来寻找可以帮助维护代码的人将非常容易。这消除了对创建未来可访问代码的担忧。这种普及性对许多人都有吸引力，特别是对于那些外包编程业务的人。
+
+
+    除了流行之外，Java 也很棒，因为它易于使用。这意味着它可以为各种不同的操作系统和平台创建程序。Java 在系统的服务器端占据主导地位。
+
+
+    看看 Java 可以做的某些事情，以及为什么它是一个很棒的编程语言：
+
+
+    ## 平台无关性
+
+
+    这是 Java 如此流行的关键原因。平台无关性是指它在不同计算机上运行的能力。如果你有一个可以运行适当 `JRE`（Java 运行环境）的系统，它就能运行
+    Java 应用程序。这包括 Windows、Mac、Linux、Unix、大型主机，甚至是许多移动设备。
+
+
+    ## Java API
+
+
+    '
+- fmt: '
+
+    Actually learning Java is fairly simple, because there are just 50 different keywords
+    within the language. However, there is an library that contain thousands of different
+    classes. In addition to this, there is a far greater number of methods for use
+    in programs. The contents of a library is what gives Java a range of different
+    functions. Without a library, Java would not be able to have its functionality,
+    so it is as integral to Java as the language itself. The library of classes is
+    known as the `Java API`. You are not limited to just one library either. There
+    are many options, and they have a range of purposes. Suppose that wanted to create
+    a certain genre of game, for example. You could probably find a special library
+    that was created to make that task easier. In this way, you can basically acquire
+    a customized environment to work in, so you don’t have to build everything from
+    the ground, up.
+
+
+    Before you start to panic, understand that there is no need to learn the `Java
+    API` entirely. Programmers typically only learn smaller parts of it in entirety.
+    If someone needs to use some classes that they are not comfortable with, it is
+    easy to look up more details about them.
+
+
+    ## Object Orientation
+
+
+    Inherently, Java is an object-oriented language. Programs made using it will be
+    comprised of objects. These are elements of programs that are representative of
+    abstract concepts, or real objects.
+
+
+    Here are the two fundamental characteristics of an object:
+
+
+    - An object has its own behavior. This means that it is capable of carrying out
+    specific tasks, which are known as `methods`. For example, if an object is representing
+    a vehicle within an application, its methods might include include starting, driving,
+    stopping, and crashing. Sometimes a method just allows the user access to the
+    data of the object, such as its title.
+
+
+    - They also have their own state, which is basically data. For example, if an
+    object is representing a book, it might have data about the author, title, and
+    publisher of that book.
+
+
+    ## Classes
+
+
+    A class is related closely to objects, since they are the coding that is written
+    to make an object. Classes describe the methods and data that define the behavior
+    and state of an object. When a program is run, the objects are created through
+    the use of a class.
+
+
+    Imagine that you were making an application for dealing with a payroll. The employees
+    of the business would need to be represented by objects. In order to make these
+    objects, you would need to create a class for defining the method and data for
+    making every employee an object. You might choose to title this class `Employees`.
+    While the name of your class isn’t going to show up to users who run the payroll
+    application, it will be very helpful for you in the coding process.
+
+
+    # Getting Started
+
+
+    There are several different ways to get what you need to start programming with
+    Java. You are going to need these three basic things:
+
+
+    - The `Java API`
+
+    - A `Java Compiler`
+
+    - A virtual machine for Java
+
+
+    You can simply download them from the [Oracle](http://www.oracle.com/)[’]’s website],
+    the company that acquired Sun Microsystems. They have two different downloads
+    for you two choose from:
+
+
+    - The software development kit (`SDK`). This contains the three tools that you
+    need. You can use this to program Java applications. Make sure to get the version
+    that is compatible with your computer and operating system.
+
+
+    - The Java runtime environment (`JRE`). This only contains a virtual machine,
+    and an application programming language. However, for the purposes of learning
+    Java, this will not be enough. The `JRE` is only good for running Java applications,
+    but does not include an actual compiler.
+
+
+    Alternatively, you can choose to get with as part of a commercial package. There
+    are many to choose from, including `Borland JBuilder` and `Visual J++`. For now,
+    while you are getting started with Java, it is recommended that you just get the
+    Java runtime environment from Oracle.
+
+
+    Even if you do decide to use third-party Java development tools, you should use
+    Oracle’s Java runtime environment as well. This is great way to make sure that
+    your programs are as compatible as possible.
+
+
+    ## Using a Dedicated IDE
+
+
+    These allow you to create code, but they offer many great features that make working
+    with Java easy, although they can work with other programming languages. If you
+    would like to, you can simply use a text editor. However, a dedicated IDE will
+    make the job of learning much easier, so that’s what this book will use for learning
+    purposes.
+
+
+    ## Netbeans
+
+
+    There are many of these to choose from. Some will cost you money to buy, but there
+    are also some great free choices. For the purposes of this book, you should download
+    [NetBeans IDE](http://www.netbeans.com), which is an open-source, free piece of
+    software. Make sure that you download a version of Netbeans that is compatible
+    with your operating system. Complete the installation process, and then you will
+    be ready to get started with your very first piece of Java coding.
+
+
+    For the instructions contained in this book, you will need to download and install
+    the `NetBeans IDE`.
+
+
+    Later, once you are more comfortable with programming in Java, you might want
+    to find something else to use, but that is really a personal choice.
+
+
+    ## Using a Text Editor
+
+
+    Computer programs are created using code, and that is made up of text, in its
+    raw form. It stands to reason that to write and edit pieces of code (which is
+    text), you will need a text editor. You are probably familiar with word processors,
+    which can also create text. However, those are great for making formatted text,
+    including letters, reports, books, etc. You will need to work with plain, unformatted
+    text, so something like Word will not be acceptable.
+
+
+    There are a lot of text editors for writing your code, including one that you
+    have probably used already, called `Notepad`, which comes with Windows. These
+    are small and often free, although there are some commercial text editors that
+    cost money.
+
+
+    While you can use a very basic text editor like `Notepad`, it will be much easier
+    to use something with more features. A text editor that is made specifically for
+    coding will be most useful. Here are some good features to look for in a text
+    editor:
+
+
+    - Highlighting of syntax in you code.
+
+    - Shortcuts to making running and compiling your programs easier.
+
+    - Helpful completion of codes.
+
+    - Previews of your programs.
+
+    - Many other useful functions to make your work easier.
+
+
+    While it is considered a little more old school these days, many programmers still
+    use a simple text editor. It allows them to work with a range of different languages,
+    without swapping the software that they are using. As mentioned above, however,
+    you should use the `Netbeans IDE` while starting out.
+
+
+    # Learning the Lingo (Acronyms)
+
+
+    Before you can start to understand the Java programming language, you should get
+    familiar with the following acronyms. You will come across them while learning
+    about Java, so it helps to get an overview right away. Don’t worry about trying
+    to memorize them all just yet, as it take some time. Yes, some of these terms
+    are somewhat general for computers, but they are important for a programmer to
+    learn. That is why they are good to become familiar with as you start to learn
+    Java.
+
+
+    ## CPU - Central Processing Unit
+
+
+    You probably already know this one. It is the “brains” of a computer system. It
+    contains the arithmetic logic unit, the control unit, and the temporary storage,
+    known as the `RAM` (Random Access Memory).
+
+
+    ## CRT - Cathode Ray Tube
+
+
+    This is the part of a monitor that uses an electron beam to excite phosphor dots.
+    `CRT` will often be used to refer to a computer monitor (screen).
+
+
+    ## ALU - Arithmetic Logic Unit
+
+
+    This is the part of the `CPU` that processes mathematical equations.
+
+
+    ## LAN - Local Area Network
+
+    '
+  raw: 'Actually learning Java is fairly simple, because there are just 50 different
+    keywords within the language. However, there is an library that contain thousands
+    of different classes. In addition to this, there is a far greater number of methods
+    for use in programs. The contents of a library is what gives Java a range of different
+    functions. Without a library, Java would not be able to have its functionality,
+    so it is as integral to Java as the language itself. The library of classes is
+    known as the Java API. You are not limited to just one library either. There are
+    many options, and they have a range of purposes. Suppose that wanted to create
+    a certain genre of game, for example. You could probably find a special library
+    that was created to make that task easier. In this way, you can basically acquire
+    a customized environment to work in, so you don’t have to build everything from
+    the ground, up.
+
+
+    Before you start to panic, understand that there is no need to learn the Java
+    API entirely. Programmers typically only learn smaller parts of it in entirety.
+    If someone needs to use some classes that they are not comfortable with, it is
+    easy to look up  more details about them.
+
+
+    ## Object Orientation
+
+
+    Inherently, Java is an object-oriented language. Programs made using it will be
+    comprised of objects. These are elements of programs that are representative of
+    abstract concepts, or real objects.
+
+
+    Here are the two fundamental characteristics of an object:
+
+
+    ● An object has its own behavior. This means that it is capable of carrying out
+    specific tasks, which are known as methods. For example, if an object is representing
+    a vehicle within an application, its methods might include include starting, driving,
+    stopping, and crashing. Sometimes a method just allows the user access to the
+    data of the object, such as its title.
+
+
+    ● They also have their own state, which is basically data. For example, if an
+    object is representing a book, it might have data about the author, title, and
+    publisher of that book.
+
+
+    ## Classes
+
+
+    A class is related closely to objects, since they are the coding that is written
+    to make an object. Classes describe the methods and data that define the behavior
+    and state of an object. When a program is run, the objects are created through
+    the use of a class.
+
+
+    Imagine that you were making an application for dealing with a payroll. The employees
+    of the business would need to be represented by objects. In order to make these
+    objects, you would need to create a class for defining the method and data for
+    making every employee an object. You might choose to title this class “Employees”.
+    While the name of your class isn’t going to show up to users who run the payroll
+    application, it will be very helpful for you in the coding process.
+
+
+    # Getting Started
+
+
+    There are several different ways to get what you need to start programming with
+    Java. You are going to need these three basic things:
+
+
+    ● The Java API
+
+
+    ● A Java Compiler
+
+
+    ● A virtual machine for Java
+
+
+    You can simply download them from the [Oracle](http://www.oracle.com/)[’](http://www.oracle.com/)[s
+    website](http://www.oracle.com/), the company that acquired Sun Microsystems.
+    They have two different downloads for you two choose from:
+
+
+    ● The software development kit (SDK). This contains the three tools that you need.
+    You can use this to program Java applications. Make sure to get the version that
+    is compatible with your computer and operating system.
+
+
+    ● The Java runtime environment (JRE). This only contains a virtual machine, and
+    an application programming language. However, for the purposes of learning Java,
+    this will not be enough. The JRE is only good for running Java applications, but
+    does not include an actual compiler.
+
+
+    Alternatively, you can choose to get with as part of a commercial package. There
+    are many to choose from, including Borland JBuilder and Visual J++. For now, while
+    you are getting started with Java, it is recommended that you just get the Java
+    runtime environment from Oracle.
+
+
+    Even if you do decide to use third-party Java development tools, you should use
+    Oracle’s Java runtime environment as well. This is great way to make sure that
+    your programs are as compatible as possible
+
+
+    ## Using a Dedicated IDE
+
+
+    These allow you to create code, but they offer many great features that make working
+    with Java easy, although they can work with other programming languages. If you
+    would like to, you can simply use a text editor. However, a dedicated IDE will
+    make the job of learning much easier, so that’s what this book will use for learning
+    purposes.
+
+
+    ## Netbeans
+
+
+    There are many of these to choose from. Some will cost you money to buy, but there
+    are also some great free choices. For the purposes of this book, you should download
+    [NetBeans IDE](http://www.netbeans.com), which is an open-source, free piece of
+    software. Make sure that you download a version of Netbeans that is compatible
+    with your operating system. Complete the installation process, and then you will
+    be ready to get started with your very first piece of Java coding.
+
+
+    For the instructions contained in this book, you will need to download and install
+    the NetBeans IDE.
+
+
+    Later, once you are more comfortable with programming in Java, you might want
+    to find something else to use, but that is really a personal choice.
+
+
+    ## Using a Text Editor
+
+
+    Computer programs are created using code, and that is made up of text, in its
+    raw form. It stands to reason that to write and edit pieces of code (which is
+    text), you will need a text editor. You are probably familiar with word processors,
+    which can also create text. However, those are great for making formatted text,
+    including letters, reports, books, etc. You will need to work with plain, unformatted
+    text, so something like Word will not be acceptable. 
+
+
+    There are a lot of text editors for writing your code, including one that you
+    have probably used already, called Notepad, which comes with Windows. These are
+    small and often free, although there are some commercial text editors that cost
+    money to buy.
+
+
+    While you can use a very basic text editor like Notepad, it will be much easier
+    to use something with more features. A text editor that is made specifically for
+    coding will be most useful for programming. Here are some good features to look
+    for in a text editor:
+
+
+    ● Highlighting of syntax in you code.
+
+
+    ● Shortcuts to making running and compiling your programs easier.
+
+
+    ● Helpful completion of codes.
+
+
+    ● Previews of your programs.
+
+
+    ● Many other useful functions to make your work easier.
+
+
+    While it is considered a little more “old school” these days, many programmers
+    still use a simple text editor. It allows them to work with a range of different
+    programming languages, without swapping the software that they are using. As mentioned
+    above, however, you should use the Netbeans IDE while starting out.
+
+
+    # Learning the Lingo (Acronyms)
+
+
+    Before you can start to understand the Java programming language, you should get
+    familiar with the following acronyms. You will come across them while learning
+    about Java, so it helps to get an overview right away. Don’t worry about trying
+    to memorize them all just yet, as it take some time. Yes, some of these terms
+    are somewhat general for computers, but they are important for a programmer to
+    learn. That is why they are good to become familiar with as you start to learn
+    Java.
+
+
+    ## CPU - Central Processing Unit
+
+
+    You probably already know this one. It is the “brains” of a computer system. It
+    contains the arithmetic logic unit, the control unit, and the temporary storage,
+    known as the RAM (Random Access Memory).
+
+
+    ## CRT - Cathode Ray Tube
+
+
+    This is the part of a monitor that uses  an electron beam to excite phosphor dots.
+    CRT will often be used to refer to a computer monitor (screen).
+
+
+    ## ALU - Arithmetic Logic Unit
+
+
+    This is the part of the CPU that processes mathematical equations.
+
+
+    ## LAN - Local Area Network'
+  toc: []
+  trans: '
+
+    实际上学习 Java 相当简单，因为该语言中只有 50 个不同的关键字。然而，有一个包含数千个不同类的库。此外，在程序中使用的方法数量要多得多。库的内容为
+    Java 提供了各种功能。没有库，Java 将无法具备这些功能，因此它对 Java 来说就像语言本身一样不可或缺。这个类库被称为 `Java API`。你并不局限于某一个库，有很多选择，而且它们有各种用途。假设你想创建一个某种类型的游戏，例如。你可能会找到一个专门为了让该任务更简单而创建的特殊库。通过这种方式，你基本上获得了一个定制的工作环境来工作，而无需从零开始构建一切。
+
+
+    在你开始恐慌之前，请理解为没有完全学习 `Java API`。程序员通常只完整地学习其中的较小部分。如果有人需要使用某些不熟悉的类，可以很容易地查找它们的更多细节。
+
+
+    ## 对象导向
+
+
+    从本质上说，Java 是一种面向对象的编程语言。使用它编写的程序将由对象组成。这些对象是代表抽象概念或真实对象的程序元素。
+
+
+    以下是对象的两个基本特征：
+
+
+    - 对象有自己的行为。这意味着它能够执行特定任务，这些任务被称为 `methods`。例如，如果一个对象代表应用程序中的一个车辆，它的方法可能包括启动、行驶、停止和碰撞。有时，方法仅允许用户访问对象的数据，例如它的标题。
+
+
+    - 它们还有自己的状态，这基本上是数据。例如，如果一个对象代表一本书，它可能包含关于该书作者、标题和出版者的数据。
+
+
+    ## 类
+
+
+    类与对象密切相关，因为类是用于创建对象而编写的代码。类描述了定义对象行为和状态的方法和数据。当程序运行时，通过使用类创建对象。
+
+
+    想象一下你正在制作一个处理工资单的应用程序。公司的员工需要由对象来表示。为了创建这些对象，你需要创建一个类，来定义让每个员工成为一个对象的方法和数据。你可能会将这个类命名为
+    `Employees`。虽然你的类名不会出现在运行工资单应用程序的用户面前，但它编码过程中对你非常有帮助。
+
+
+    # 入门
+
+
+    有几种不同的方法可以获取开始 Java 编程所需的内容。你需要这三样基本东西：
+
+
+    - `Java API`
+
+    - 一个 `Java Compiler`
+
+    - 一个 Java 虚拟机
+
+
+    你可以直接从 [Oracle 网站](http://www.oracle.com/) 下载，这是收购了 Sun Microsystems 的公司。他们提供了两个不同的下载供你选择：
+
+
+    - 软件开发工具包 (`SDK`)。它包含了你需要的三个工具。你可以用它来编写 Java 应用程序。确保获取的是与你的电脑和操作系统兼容的版本。
+
+
+    - Java 运行时环境 (`JRE`)。它只包含一个虚拟机和一个应用程序编程语言。然而，对于学习 Java 的目的，这是不够的。`JRE` 只适用于运行
+    Java 应用程序，但不包含实际的编译器。
+
+
+    或者，你可以选择作为商业包的一部分来获取。有很多选择，包括 `Borland JBuilder` 和 `Visual J++`。目前，在你开始学习 Java
+    时，建议你直接从 Oracle 获取 Java 运行时环境。
+
+
+    即使你决定使用第三方 Java 开发工具，你也应该使用 Oracle 的 Java 运行时环境。这是确保你的程序具有尽可能兼容性的极方法。
+
+
+    ## 使用专用 IDE
+
+
+    这些工具允许你创建代码，但它们提供了许多很棒的功能，让 Java 工作变得简单，尽管它们也可以处理其他编程语言。如果你愿意，可以简单地使用文本编辑器。然而，专用的
+    IDE 会让学习工作变得容易得多，因此这本书将用于学习目的。
+
+
+    ## Netbeans
+
+
+    有很多供选择。有些需要花钱购买，但也有一些很棒的免费选择。出于本书的目的，你应该下载 [NetBeans IDE](http://www.netbeans.com)，这是一款开源的免费软件。确保你下载的是与你的操作系统兼容的
+    Netbeans 版本。完成安装过程，你就可以准备好开始你的第一段 Java 代码了。
+
+
+    对于书中包含的指令，你需要下载并安装 `NetBeans IDE`。
+
+
+    稍后，一旦你对 Java 编程更加熟悉，你可能想找其他东西来使用，但这真的是个人选择。
+
+
+    ## 使用文本编辑器
+
+
+    计算机程序是使用代码创建的，而代码是由原始形式的文本组成的。理理，为了编写和编辑代码（即文本），你需要一个文本编辑器。你可能熟悉文字处理器，它们也可以创建文本。然而，那些工具非常适合制作格式化文本，包括信件、报告、书籍等。你需要处理的是纯的、未格式化的文本，所以像
+    Word 这样的工具是不可接受的。
+
+
+    有很多用于编写代码的文本编辑器，其中一个你可能已经用过了，叫做 `Notepad`，它是 Windows 自带的。这些工具很小且通常是免费的，尽管也有一些收费的文本编辑器。
+
+
+    你可以使用像 `Notepad` 这样基础的编辑器来编写代码，但使用具有更多功能的会容易得多。专门为编码设计的编辑器将是最用的。以下是编辑器中可以寻找的一些功能：
+
+
+    - 代码语法高亮
+
+    - 方便运行和编译程序的快捷键
+
+    - 代码补全
+
+    - 程序预览
+
+    - 许多其他让工作变得简单的有用功能
+
+
+    虽然现在这被认为老派，但许多程序员仍然使用简单的文本编辑器。它允许他们处理各种语言，而无需切换正在使用的软件。正如上面提到的，在开始阶段你应该使用 Netbeans
+    IDE。
+
+
+    # 学习术语（缩写）
+
+
+    在开始理解 Java 编程语言之前，你应该熟悉以下缩写。你在学习 Java 时会遇到它们，因此尽早了解概述是有帮助的。现在不要尝试记住所有的它们，因为这需要时间。是的，其中一些术语对计算机来说是通用的，但对程序员来说是重要的。这就是为什么在你开始学习
+    Java 时，熟悉它们是好的。
+
+
+    ## CPU - 中央处理器
+
+
+    你可能已经知道这一个。它是计算机系统的“大脑”。它包含算术逻辑单元、控制单元和临时存储，即 `RAM`（随机存内存）。
+
+
+    ## CRT - 阴射线管
+
+
+    这是显示器中利用电子束激发荧光点的部分。`CRT` 通常被用来代替计算机显示器（屏幕）。
+
+
+    ## ALU - 算术逻辑单元
+
+
+    这是 `CPU` 中处理数学方程的部分。
+
+
+    '
+- fmt: "\nThis is actually a series of connected computers, that can share their storage\
+    \ space and installed programs. This is unlike the Internet, because it is local.\
+    \ LANs are often set up within business buildings, schools, and even in people’s\
+    \ homes.\n\n## IDE - Integrated Development Environment\nThis is an environment\
+    \ for creating and compiling all necessary coding components, from a single program.\n\
+    \n## DOS - Disk Operating System\nThis was the first computer operating system\
+    \ that was used by a wide amount of people. It was created by Microsoft, for IBM.\
+    \ It manages any type of data on a computer, by dealing with storage devices.\
+    \ The “disk” part of the name comes from the fact that many storage devices contain\
+    \ spinning disks.\n\n## OOP - Object Oriented Programming\nThis is a popular feature\
+    \ of Java. It involves using reusable, small parts in order to create a larger\
+    \ piece of software.\n\n## ROM - Read Only Memory\nThis is memory on a system\
+    \ that is “hardwired”, so that it can’t be altered. It contains information that\
+    \ allows the system to work, even without an operating system installed.\n\n##\
+    \ RAM - Random Access Memory\nUnlike normal memory, which can be used for storage,\
+    \ RAM is temporary. You can think of it as a computer’s short-term memory, used\
+    \ for performing tasks. This is lost after the computer shuts down.\n\n# Basics\
+    \ of Programming Languages\nNow that you are a bit more comfortable with the core\
+    \ elements of Java, take a look at programming language basics.\n\n## Variables\n\
+    You already know that the state of any object is stored in a field. You with find\
+    \ that both variables and fields are used in Java. However, they can both appear\
+    \ to be the same, for people who are new to programming. It is important to accept\
+    \ that they are different, and that you should treat them as such.\n\nVariables\
+    \ are an essential part of any programming language, and Java is no different.\
+    \ A variable is basically a storage location, a symbolic name that is associated\
+    \ with that location, and then a specific amount of information (called a value).\
+    \ That is a fairly technical way to think of variables, but it helps to look at\
+    \ the proper terms from the beginning.\n\nHere is an easier way to think of variables:\
+    \ they are a way for storing information, so it can be used later. To access that\
+    \ information, a specific name is used. As an example, imagine that a website\
+    \ asks for your name. A text box would appear, requesting that you enter your\
+    \ name. That box would be representing variable. The person who owns the website\
+    \ might have named that box `username`, and that would be the symbolic name. As\
+    \ for the name that you entered, that would be a value. Wherever this information\
+    \ is stored, would be the storage location.\n\n## Variable Types\nNow that you\
+    \ know what a variable is, you can learn about the different types. Simply knowing\
+    \ that something is a variable is not enough for Java. It also needs to know what\
+    \ kind of information you want to store with your variables.\n\nHere are some\
+    \ important types of variables:\n\n- Integer. This is just a number that does\
+    \ not contain any decimal places. For example, `5`, `10`, `50`, and even `-5`,\
+    \ `-10`, etc. If you were to try to use an integer to store any numbers that did\
+    \ have decimals, it would result in an error with your application. So, integers\
+    \ are variables that can only store whole numbers.\n\n- String. This is used for\
+    \ data that contains a string of characters. Java will just store this type of\
+    \ data as it is entered, without worrying about the meaning, or real-world value.\
+    \ For example, if you added the Strings `1` and `5` together, you wouldn’t get\
+    \ `6`. You would end up with `15`, because Java will simply string the two variables\
+    \ together.\n\nThis book will not go too deeply into types of variables. For now,\
+    \ it is more important that you understand what a variable is used for, and that\
+    \ there are different types available.\n\n## Control Structures\nA control structure\
+    \ is any chunk of code that looks at variables, analyzes them, and then chooses\
+    \ what to do, based on the elements of the variables.\n\nA simpler explanation\
+    \ is that a computer looks at each line of an applications code, when it is run.\
+    \ It begins from the top, and goes down to the bottom, generally moving from the\
+    \ left to the right. This is done in the same way that someone would read a book,\
+    \ and it is called code flow.\n\nWhile the computer is moving through the code,\
+    \ it might come to certain areas where it needs to make a choice. Applications\
+    \ don’t usually just run in a linear way, like a book would. They often jump around\
+    \ as different things happen, like objects interacting together. The computer\
+    \ cannot actually make these choices by itself, so it needs a strict set of rules\
+    \ to tell it what to do. These decisions are called control structure.\n\nWithin\
+    \ that control structure, the computer will make certain decisions based on the\
+    \ state of your variables. You have looked at states earlier in this book. So,\
+    \ now you can see how objects can affect the way that the computer reacts while\
+    \ running different codes. If you were running a car racing game, and the state\
+    \ of your car object indicated that it had crashed into a wall, the computer would\
+    \ cause your car to crash. It does get much more complex than this, but it’s a\
+    \ good example for now.\n\n## Syntax\nThis word has already been used in this\
+    \ book, but you have likely already heard it before. It has its own definition\
+    \ in regards to languages that people speak and write. However, it is a little\
+    \ different for programming. A programming language’s syntax is basically the\
+    \ rules that define how different symbols work, and what they do when used together\
+    \ in certain ways.\n\nJava uses symbols like brackets, curly brackets, variables,\
+    \ and different things. You can think of syntax kind of like the grammar rules\
+    \ that a programming language follows. You need to use certain symbols, in certain\
+    \ ways, and then position things properly. If you fail to use proper syntax, Java\
+    \ will not be able to understand what you are trying to do.\n\nUsing correct syntax\
+    \ is something that you should learn early on. Always make sure that you enter\
+    \ coding correctly, and check that your syntax is right.\n\n## Data Structures\n\
+    In the world of computer programming, data structures are a way to organize and\
+    \ store data within a computer. It is done in a way that allows a computer to\
+    \ use efficiently. It is possible to simply store data in a big bunch, and it\
+    \ would be possible for a computer to use it. However, if it is not done efficiently,\
+    \ you will probably end up with a very unstable application.\n\nA big part of\
+    \ computer programming is trying to create code that is efficient, so that it\
+    \ works well. Doing this can also make the code easier for people to upgrade and\
+    \ maintain. In turn, it can be easier to keep improving an application, creating\
+    \ additional features, or fixing problems.\n\n## Arithmetic Operators\nJava has\
+    \ five basic arithmetic operators. These are:\n\n- Addition +\n- Subtraction -\n\
+    - Division /\n- Multiplication *\n- Modulo %\n\nYou will probably recognize these\
+    \ from your days of math classes in school. To get an idea of what you can use\
+    \ them for in Java, take a look at these examples, which use operators named `op1`\
+    \ and `op2`:\n\n| Use | If true, will return |\n| :--- | :--- |\n| `op1 + op2`\
+    \ | `op1` plus `op2` |\n| `op1 - op2` | `op1` minus `op2` |\n| `op1 / op2` | `op1`\
+    \ divided by `op2` |\n| `op1 * op2` | `op1` times `op2` |\n| `op1 % op2` | divides\
+    \ `op1` by `op2` to find the remainder |\n\n# Your First Application: Hello World\n\
+    ```java\npublic class HelloWorld {\n    public static void main(String[] args)\
+    \ {\n        System.out.println(\"Hello,!\");\n    }\n}\n```\n"
+  raw: 'This is actually a series of connected computers, that can share their storage
+    space and installed programs. This is unlike the Internet, because it is local.
+    LANs are often set up within business buildings, schools, and even in people’s
+    homes.
+
+
+    ## IDE - Integrated Development Environment
+
+
+    This is an environment for creating and compiling all necessary coding components,
+    from a single program.
+
+
+    ## DOS - Disk Operating System
+
+
+    This was the first computer operating system that was used by a wide amount of
+    people. It was created by Microsoft, for IBM. It manages any type of data on a
+    computer, by dealing with storage devices. The “disk” part of the name comes from
+    the fact that many storage devices contain spinning disks.
+
+
+    ## OOP - Object Oriented Programming
+
+
+    This is a popular feature of Java. It involves using reusable, small parts in
+    order to create a larger piece of software.
+
+
+    ## ROM - Read Only Memory
+
+
+    This is memory on a system that is “hardwired”, so that it can’t be altered. It
+    contains information that allows the system to work, even without an operating
+    system installed.
+
+
+    ## RAM - Random Access Memory
+
+
+    Unlike normal memory, which can be used for storage, RAM is temporary. You can
+    think of it as a computer’s short-term memory, used for performing tasks. This
+    is lost after the computer shuts down.
+
+
+    # Basics of Programming Languages
+
+
+    Now that you are a bit more comfortable with the core elements of Java, take a
+    look at programming language basics.
+
+
+    ## Variables
+
+
+    You already know that the state of any object is stored in a field. You with find
+    that both variables and fields are used in Java. However, they can both appear
+    to be the same, for people who are new to programming. It is important to accept
+    that they are different, and that you should treat them as such.
+
+
+    Variables are an essential part of any programming language, and Java is no different.
+    A variable is basically a storage location, a symbolic name that is associated
+    with that location, and then a specific amount of information (called a value).
+    That is a fairly technical way to think of variables, but it helps to look at
+    the proper terms from the beginning.
+
+
+    Here is an easier way to think of variables: they are a way for storing information,
+    so it can be used later. To access that information, a specific name is used.
+    As an example, imagine that a website asks for your name. A text box would appear,
+    requesting that you enter your name. That box would be representing variable.
+    The person who owns the website might have named that box “usernames”, and that
+    would be the symbolic name. As for the name that you entered, that would be a
+    value. Wherever this information is stored, would be the storage location.
+
+
+    ## Variable Types
+
+
+    Now that you know what a variable is, you can learn about the different types.
+    Simply knowing that something is a variable is not enough for Java. It also needs
+    to know what kind of information you want to store with your variables.
+
+
+    Here are some important types of variables:
+
+
+    ● Integer. This is just a number that does not contain any decimal places. For
+    example, 5, 10, 50, and even -5, -10, etc. If you were to try to use an integer
+    to store any numbers that did have decimals, it would result in an error with
+    your application. So, integers are variables that can only store whole numbers.
+
+
+    ● String. This is used for data that contains a string of characters. Java will
+    just store this type of data as it is entered, without worrying about the meaning,
+    or real-world value. For example, if you added the Strings 1 and 5 together, you
+    wouldn’t get 6\. You would end up with 15, because Java will simply string the
+    two variables together.
+
+
+    This book will not go too deeply into types of variables. For now, it is more
+    important that you understand what a variable is used for, and that there are
+    different types available.
+
+
+    ## Control Structures
+
+
+    A control structure is any chunk of code that looks at variables, analyzes them,
+    and then chooses what to do, based on the elements of the variables.
+
+
+    A simpler explanation is that a computer looks at each line of an applications
+    code, when it is run. It begins from the top, and goes down to the bottom, generally
+    moving from the left to the right. This is done in the same way that someone would
+    read a book, and it is called code flow.
+
+
+    While the computer is moving through the code, it might come to certain areas
+    where it needs to make a choice. Applications don’t usually just run in a linear
+    way, like a book would. They often jump around as different things happen, like
+    objects interacting together. The computer cannot actually make these choices
+    by itself, so it needs a strict set of rules to tell it what to do. These decisions
+    are called control structure.
+
+
+    Within that control structure, the computer will make certain decisions based
+    on the state of your variables. You have looked at states earlier in this book.
+    So, now you can see how objects can affect the way that the computer reacts while
+    running different codes. If you were running a car racing game, and the state
+    of your car object indicated that it had crashed into a wall, the computer would
+    cause your car to crash. It does get much more complex than this, but it’s a good
+    example for now.
+
+
+    ## Syntax
+
+
+    This word has already been used in this book, but you have likely already heard
+    it before. It has its own definition in regards to languages that people speak
+    and write. However, it is a little different for programming. A programming language’s
+    syntax is basically the rules that define how different symbols work, and what
+    they do when used together in certain ways.
+
+
+    Java uses symbols like brackets, curly brackets, variables, and different things.
+    You can think of syntax kind of like the grammar rules that a programming language
+    follows. You need to use certain symbols, in certain ways, and then position things
+    properly. If you fail to use proper syntax, Java will not be able to understand
+    what you are trying to do. This will lead to errors when you run your applications.
+
+
+    Using correct syntax is something that you should learn early on. Always make
+    sure that you enter coding correctly, and check that your syntax is right.
+
+
+    ## Data Structures
+
+
+    In the world of computer programming, data structures are a way to organize and
+    store data within a computer. It is done in a way that allows a computer to use
+    it efficiently. It is possible to simply store data in a big bunch, and it would
+    be possible for a computer to use it. There are many different ways to code things,
+    and to store data. However, if it is not done efficiently, you will probably end
+    up with a very unstable application. It might be extremely slow, or it might not
+    work properly all of the time.
+
+
+    A big part of computer programming is trying to create code that is efficient,
+    so that it works well. Doing this can also make the code easier for people to
+    upgrade and maintain. In turn, it can be easier to keep improving an application,
+    creating additional features, or fixing problems.
+
+
+    ## Arithmetic Operators
+
+
+    Java has five basic arithmetic operators. These are:
+
+
+    ● Addition +
+
+
+    ● Subtraction -
+
+
+    ● Division /
+
+
+    ● Multiplication *
+
+
+    ● Modulo %
+
+
+    You will probably recognize these from your days of of math classes in school.
+    To get an idea of what you can use them for in Java, take a look at these examples,
+    which use operators named op1 and op2:
+
+
+    | Use | If true, will return |
+
+
+    | op1 + op2 | op1 plus op2 |
+
+
+    | op1 - op2 | op1 minus op2 |
+
+
+    | op1 / op2 | op1 divided by op2 |
+
+
+    | op1 * op2 | op1 times op2 |
+
+
+    | op1 % op2 | divides op1 by op2 to find the remainder |
+
+
+    # Your First Application: Hello World'
+  toc: []
+  trans: "\n这实际上是一系列连接的计算机，它们可以共享存储空间和安装的程序。这与互联网不同，因为它是本地的。局域网（LAN）通常建立在办公大楼、学校，甚至人们的家中。\n\
+    \n## IDE - 集成开发环境\n这是一个用于从单个程序创建并编译所有必要代码组件的环境。\n\n## DOS - 磁盘操作系统\n这是首个被大量用户使用的计算机操作系统。它由微软公司为\
+    \ IBM 开发。它通过处理存储设备来管理计算机上的任何类型数据。名称中的“磁盘”部分是因为许多存储设备包含旋转磁盘。\n\n## OOP - 面向对象程序编程\n\
+    这是 Java 的一个流行特性。它涉及使用可重用的小部分来创建一个更大的软件整体。\n\n## ROM - 只读存储器\n这是系统上是“硬连线”的内存，因此无法被更改。它包含了允许系统在没有安装操作系统的情况下也能运行的信息。\n\
+    \n## RAM - 随机访问存储器\n与用于存储的普通内存不同，RAM 是暂性的。你可以将其想象成计算机的内存，用于执行任务。在计算机关闭后，这些将会丢失。\n\
+    \n# 编程语言基础\n现在你已经对 Java 的核心元素稍微熟悉了一些，请看一眼编程语言基础。\n\n## 变量\n你已经知道任何对象的状态都存储在字段（field）中。你会发现\
+    \ Java 中既使用变量也使用字段。然而，对于编程初学者来说，它们看起来可能是一样的的。重要的是要接受它们是不同的，并且你应该像那样对待它们。\n\n变量是任何编程语言中必不可少的一部分，Java\
+    \ 也不例外。变量基本上是一个存储位置，一个与该位置关联的符号名称，以及特定数量的信息（称为值）。这是一种对变量的相当有技术性的思考方式，但从一开始就观察正确的术语是有帮助的。\n\
+    \n这里有一种更容易理解变量的方法：它们是存储信息的一种方式，以便以后使用。为了访问这些信息，会使用特定的名称。例如，想象一个网站要求你输入姓名。会出现一个文本框，要求你输入名字。那个框就代表变量。拥有该网站的人可能将那个框命名为\
+    \ `username`，这就是符号名称。至于你输入的那个名称，它就是一个值。无论这些信息存储在何处，那里就是存储位置。\n\n## 变量类型\n现在你知道什么是变量了，你可以学习不同的类型。对于\
+    \ Java 来说，仅仅知道某物是一个变量是不够的。它还需要知道你想用你的变量存储什么类型的信息。\n\n这里是一些重要的变量类型：\n\n- 整数（Integer）。这只是一个不包含任何小数的数字。例如，`5`、`10`、`50`\
+    \ 甚至 `-5`、`-10` 等。如果你尝试使用整数来存储任何带有小数的数字，会导致你的应用程序报错。因此，整数是只能存储整数的变量。\n\n- 字符串（String）。这用于包含字符字符串的数据。Java\
+    \ 将直接按照输入的方式存储这种类型的数据，而无需担心其含义或现实世界的价值。例如，如果你将字符串 `1` 和 `5` 相加，你不会得到 `6`。你会得到\
+    \ `15`，因为 Java 将简单地将两个变量拼接在一起。\n\n这本书将不会深入探讨变量类型。现在，更重要的是理解变量是用来做什么的，以及有不同的类型可供。\n\
+    \n## 控制结构\n控制结构是任何查看变量、分析它们，然后根据变量的元素选择执行操作的代码块。\n\n更简单的解释是，计算机在运行时会查看应用程序代码的每一行。它从顶部开始，向下移动，通常从左向右移动。这与人阅读书的方式相同，被称为代码流。\n\
+    \n当计算机在代码中移动时，它可能会遇到某些需要做出的区域。应用程序通常不像书籍那样线性运行。它们经常随着不同事件的发生而跳跃，例如对象之间的相互作用。计算机实际上无法自己做出这些选择，因此它需要一套严格的规则来告诉它做什么。这些决策被称为控制结构。\n\
+    \n在控制结构内部，计算机将根据你变量的状态做出某些决定。你之前在书中已经看过了状态。所以，现在你可以看到对象如何影响计算机在运行不同代码时的反应方式。如果你正在运行一个赛车游戏，而你的汽车对象的状态显示它已经撞上了墙，计算机就会导致你的汽车撞毁。情况比这要复杂得多，但目前这是一个很好的例子。\n\
+    \n## 语法（Syntax）\n这个词在书中已经出现过，但你可能已经听过它了。在人们说话和书写的语言方面，它有自己的定义。然而，对于编程来说，它有一点不同。编程语言的语法基本上是定义不同符号如何工作的规则，以及它们在以特定方式一起使用时会做什么。\n\
+    \nJava 使用括号、大括号、变量和不同的符号。你可以将语法想象成编程语言遵循的语法规则。你需要使用某些符号，以特定的方式，并妥善地放置内容。如果你没有使用正确的语法，Java\
+    \ 将无法理解你想做什么。\n\n使用正确的语法是你应该尽早学习的。始终确保你的语法是正确的。\n\n## 数据结构\n在编程世界中，数据结构是在计算机内部组织和存储数据的方式。它是以允许计算机高效使用的方式进行的。可以将数据简单存储在一个堆中，这样计算机就可以使用。然而，如果做得不高效，你可能会得到一个非常不稳定的应用程序。\n\
+    \n编程的很大一部分是尝试创建高效的代码，以便其运行良好。这还可以让代码更容易升级和维护。反过来也可以更容易改进应用程序、创建新功能或修复问题。\n\n##\
+    \ 算术运算符\nJava 有五个基本的算术运算符。这些是：\n\n- 加 +\n- 减 -\n- 除 /\n- 乘 *\n- 取模 %\n\n你可能在过去在学校的数学课上就认识这些了。为了了解\
+    \ Java 中可以用它们做什么，请看这些示例，它们使用了名为 `op1` 和 `op2` 的运算符：\n\n| 使用 | 如果为真，将返回 |\n| :---\
+    \ | :--- |\n| `op1 + op2` | `op1` 加上 `op2` |\n| `op1 - op2` | `op1` 减去 `op2` |\n\
+    | `op1 / op2` | `op1` 除以 `op2` |\n| `op1 * op2` | `op1` 乘以 `op2` |\n| `op1 % op2`\
+    \ | `op1` 除以 `op2` 以找到余数 |\n\n# 你的第一个应用程序：Hello World\n```java\npublic class HelloWorld\
+    \ {\n    public static void main(String[] args) {\n        System.out.println(\"\
+    Hello,!\");\n    }\n}\n```\n\n"
+- fmt: "\nOnce you have installed the software detailed in the previous chapter, it\
+    \ is time to start coding a very simple application. Remember that you will need\
+    \ the `Netbeans` IDE, which you were instructed to download as well. At first,\
+    \ you might not understand everything that you do, but just complete the steps,\
+    \ exactly as they are detailed. The understanding will come later, but everyone\
+    \ has to start somewhere.\n\nYou will be making a type of application that is\
+    \ commonly made by people as they first begin to learn programming. That makes\
+    \ it a perfect first piece of code to create. It is called “Hello World”, and\
+    \ is extremely simple. This might sound overly basic, but the application simply\
+    \ displays “Hello Word!” It certainly is not anything complicated, or even particularly\
+    \ useful by itself. However, it is a great way to get a grip on some of the most\
+    \ basic parts of coding in Java.\n\n## Making Your IDE Project\n\nBy making an\
+    \ IDE project, you are creating the environment in which to build your application.\
+    \ One of the benefits of using and IDE like `Netbeans`, is that it avoids issues\
+    \ with configuration. If you were to create you code in a text editor, it might\
+    \ be easier to run into some problems.\n\nTo create your IDE project, follow these\
+    \ steps:\n\n- Start up the `Netbeans` IDE that you downloaded.\n- Click on `File`\
+    \ > `New Project`. The `New Project` wizard will open.\n- Click on the `Java`\
+    \ category to expand it, and then choose `Java Application` and click `Next`.\n\
+    - The `Name` and `Location` section will open:\n    - Enter “Hello World App”\
+    \ as the Project Name.\n    - Enter `helloworldapp.HeloWorldApp` in the `Create\
+    \ Main Class` area.\n- Click `Finish`.\n\nYou have just created your first project,\
+    \ and you will not be able to see several windows, including:\n\n- The `Navigator`\
+    \ window, where you will be able to easily navigate around between the parts of\
+    \ different classes.\n- The `Source Editor` window, where you will be able to\
+    \ see the file of the new project you just made, `HelloWorldApp.java`.\n- The\
+    \ `Projects` window, with the hierarchal layout of every component of your project.\
+    \ This includes the `libraries` needed for your code, source files, etc.\n\nThere\
+    \ is a chance that you will need to add the version of the `JDK` that you have.\
+    \ This would be due to having a new version that is not already listed with `Netbeans`,\
+    \ but it’s not likely.\n\n- Click on `Tools`.\n- Go to `Java Platform` and select\
+    \ it.\n- You will be able to see listings with the number of the `JDK`, and easily\
+    \ be able to tell if yours is already listed.\n\nNext you are going to add some\
+    \ code to the Generated Source File. As you were creating your project in the\
+    \ `New Project` wizard, you left the check box titled `Create Main Class`. This\
+    \ lead the IDE to make a skeleton class automatically.\n\nIn the source editor,\
+    \ find the following line:\n\n```java\n// TODO code application logic here\n```\n\
+    \nYou will need to replace that line with the following one:\n\n```java\nSystem.out.println(\"\
+    Hellow World!\"); // Display string.\n```\n\nThe next step will show you how to\
+    \ add notes to your codes. When you add notes, they will not be considered part\
+    \ of the actual coding. They are for you to read only.\n\nFind the following four\
+    \ lines:\n\n```java\n/**\n*\n* @author\n*/\n```\n\nReplace them with the following\
+    \ four lines:\n\n```java\n/**\n* This app simply prints “Hello World!”\n*\n*/\n\
+    ```\n\nWhen you are writing your code, be very careful to type exactly the right\
+    \ things. Be sure that you use the right case as well, because the Java launcher\
+    \ and compiler and both case-sensitive.\n\nFor example, when you chose the name\
+    \ `HelloWorldApp`, it is different to typing `helloworldapp`.\n\nNext, you will\
+    \ save your new app. Click on `File` > `Save`.\n\n## Compile Your Source as a\
+    \ .class File\n\nYou will now run your very first application. In `Netbeans` main\
+    \ menu, click `Run` > `Build Project (Hello World App)`.\n\nThe output window\
+    \ will not show you the built code beneath the source editor. You should be able\
+    \ to see “Hello World!” printed. More importantly, however, you should see the\
+    \ words “BUILD SUCCESSFUL”. If so, you have just made your first successful application.\n\
+    \nWhat if you see the words “BUILD FAILED”? Your code likely has some sort of\
+    \ syntax error. Don’t worry, because dealing with such errors is easier to do\
+    \ with a dedicated IDE, like `Netbeans`. Errors will be displayed in your Output\
+    \ widow, and they will be displayed as hyperlinks. If you want to find out an\
+    \ error’s source, double click on its hyperlink. This will make it easy for you\
+    \ to change the error. After that, you can run your project again, and see if\
+    \ you solved the problem.\n\nIn the navigation window, you click on the `Files`\
+    \ tab, then expand `Hello World App` > `build` > `classes` > `helloworldapp`.\
+    \ This is the class file that was generated for your project.\n\nOnce you have\
+    \ built the project, and seen that there are no issues with it, you can officially\
+    \ run it. The the main menu, click `Run` > `Run Main Project`.\n\nThe program\
+    \ will print the text “Hello World!” in your Output window, as well as some other\
+    \ build script output.\n\nYou just ran your first program. Congratulations!\n\n\
+    ## How Hello World! Works\n\nYou should understand what the Hello World! application\
+    \ did, but might be eager to find out how it works. Take a look at that code that\
+    \ you used again:\n\n```java\nclass HelloWorldApp {\n    System.out.println(\"\
+    Hello World!\"); // Display string.\n}\n```\n\nThere are three basic components\
+    \ that make up your application, which are:\n\n- Your `HelloWorldAppp` class.\n\
+    - Your comments in the source code.\n- Your `main` method.\n\nThese explanations\
+    \ will give you a beginning understanding of your code. However, it might take\
+    \ some time before you really know what it is about.\n\n### Your HelloWorldApp\
+    \ Class\n\nLook at the line that says:\n\n```java\nclass HelloWorld App{\n```\n\
+    \nThis creates a class definition, telling the code which class to use for the\
+    \ following code. The curly brackets that follow will then surround the code you\
+    \ want for that class. This can get quite a lot more complicated, but you only\
+    \ need to learn the basics for now.\n\n### Comments in the Source Code\n\nTake\
+    \ a look at the text that was written after the `//` in your code. That is a comment,\
+    \ which the compiler will have ignored completely. You might feel that you don’t\
+    \ need to add comments in your codes, since you already know why you did certain\
+    \ things. Keep in mind that many codes become extremely long and complicated.\
+    \ It is easy to become lost, or forget why you did certain things, so creating\
+    \ comments is always important. They are also helpful when other programmers need\
+    \ to work with code that you create, so they can easily find way around, and understand\
+    \ everything.\n\nThere are three different types of comments, and they each work\
+    \ a little differently:\n\n`/** your documentation */`\n\nThe compiler will ignore\
+    \ everything between the `/**` and `*/` but the comment will be considered a “doc\
+    \ comment”. This is short for documentation comment. All doc comments can be compiled\
+    \ with an automated tool later, making it easy to create a reference document.\n\
+    \n`// text`\n\nEverything on the line after the `//` will be ignored by the compiler.\n\
+    \n`/* your comment */`\n\nWhen you use this type of comment, everything within\
+    \ the `/*` and `*/` will be ignored by your compiler.\n\n### Your Main Method\n\
+    \nFinally, take a look at the line that actually tells your application what your\
+    \ `HelloWorldApp` class does:\n\n```java\nSystem.out.println(\"Hello World!\"\
+    );\n```\n\nThe `System` class comes from Java’s fundamental library. It simply\
+    \ tells it to print “Hello World!” as standard output. This is why, when you run\
+    \ your application, it prints these words on the screen.\n\n# More Definitions\n\
+    \n## Objects\n"
+  raw: 'Once you have installed the software detailed in the previous chapter, it
+    is time to start coding a very simple application. Remember that you will need
+    to the Netbeans IDE, which you were instructed to download as well. At first,
+    you might not understand everything that you do, but just complete the steps,
+    exactly as they are detailed. The understanding will come later, but everyone
+    has to start somewhere.
+
+
+    You will be making a type of application that is commonly made by people as they
+    first begin to learn programming. That makes it a perfect first piece of code
+    to create. It is called “Hello World”, and is extremely simple. This might sound
+    overly basic, but the application simply displays “Hello Word!” It certainly is
+    not anything complicated, or even particularly useful by itself. However, it is
+    a great way to get a grip on some of the most basic parts of coding in Java.
+
+
+    ## Making Your IDE Project
+
+
+    By making an IDE project, you are creating the environment in which to build your
+    application. One of the benefits of using and IDE like Netbeans, is that it avoids
+    issues with configuration. If you were to create you code in a text editor, it
+    might be easier to run into some problems.
+
+
+    To create your IDE project, follow these steps:
+
+
+    ● Start up the Netbeans IDE that you downloaded.
+
+
+    ● Click on File > New Project. The New Project wizard will open.
+
+
+    ● Click on the Java category to expand it, and then choose Java Application and
+    click Next.
+
+
+    ● The Name and Location section will open. Enter the following information:
+
+
+    ○ Enter “Hello World App” as the Project Name.
+
+
+    ○ Enter “helloworldapp.HeloWorldApp” in the Create Main Class area.
+
+
+    ● Click Finish.
+
+
+    You have just created your first project, and you will not be able to see several
+    windows, including:
+
+
+    ● The Navigator window, where you will be able to easily navigate around between
+    the parts of different classes.
+
+
+    ● The Source Editor window, where you will be able to see the file of the new
+    project you just made, HelloWorldApp.java.
+
+
+    ● The Projects window, with the hierarchal layout of every component of your project.
+    This includes the libraries needed for your code, source files, etc.
+
+
+    There is a chance that you will need to add the version of the JDK that you have.
+    This would be due to having a new version that is not already listed with Netbeans,
+    but it’s not likely.
+
+
+    ● Click on Tools.
+
+
+    ● Go to Java Platform and select it.
+
+
+    ● You will be able to see listings with the number of the JDK, and easily be able
+    to tell if yours is already listed.
+
+
+    Next you are going to add some code to the Generated Source File. As you were
+    creating your project in the New Project wizard, you left the check box titled
+    Create Main Class. This lead the IDE to make a skeleton class automatically.
+
+
+    In the source editor, find the following line:
+
+
+    // TODO code application logic here
+
+
+    You will need to replace that line with the following one:
+
+
+    System.out.println(”Hellow World!”); // Display string.
+
+
+    The next step will show you how to add notes to your codes. When you add notes,
+    they will not be considered part of the actual coding. They are for you to read
+    only.
+
+
+    Find the following four lines:
+
+
+    /**
+
+
+    *
+
+
+    * @author
+
+
+    */
+
+
+    Replace them with the following four lines:
+
+
+    /**
+
+
+    * This app simply prints “Hello World!”
+
+
+    *
+
+
+    */
+
+
+    When you are writing your code, be very careful to type exactly the right things.
+    Be sure that you use the right case as well, because the Java launcher and compiler
+    and both case-sensitive.
+
+
+    For example, when you chose the name HelloWorldApp, it is different to typing
+    helloworldapp.
+
+
+    Next, you will save your new app. Click on File > Save.
+
+
+    Compile Your Source as a .class File
+
+
+    You will now run your very first application. In Netbeans main menu, click Run
+    >
+
+
+    ## Build Project (Hello World App).
+
+
+    The output window will not show you the built code beneath the source editor.
+    You should be able to see “Hello World!” printed. More importantly, however, you
+    should see the words “BUILD SUCCESSFUL”. If so, you have just made your first
+    successful application.
+
+
+    What if you see the words “BUILD FAILED”? Your code likely has some sort of syntax
+    error. Don’t worry, because dealing with such errors is easier to do with a dedicated
+    IDE, like Netbeans. Errors will be displayed in your Output widow, and they will
+    be displayed as hyperlinks. If you want to find out an error’s source, double
+    click on its hyperlink. This will make it easy for you to change the error. After
+    that, you can run your project again, and see if you solved the problem.
+
+
+    In the navigation window, you click on the Files tab, then expand Hello World
+    App > build > classes > helloworldapp . This is the class file that was generated
+    for your project.
+
+
+    Once you have built the project, and seen that there are no issues with it, you
+    can officially run it. The the main menu, click Run > Run Main Project.
+
+
+    The program will print the text “Hello World!” in your Output window, as well
+    as some other build script output.
+
+
+    You just ran your first program. Congratulations!
+
+
+    ## How Hello World! Works
+
+
+    You should understand what the Hello World! application did, but might be eager
+    to find out how it works. Take a look at that code that you used again:
+
+
+    class HelloWorldApp {
+
+
+            System.out.println("Hello World!"); // Display string.
+
+
+        }
+
+
+    }
+
+
+    There are three basic components that make up your application, which are:
+
+
+    ● Your HelloWorldAppp class.
+
+
+    ● Your comments in the source code.
+
+
+    ● Your main method.
+
+
+    These explanations will give you a beginning understanding of your code. However,
+    it might take some time before you really know what it is all about.
+
+
+    Your HelloWorldApp Class
+
+
+    Look at he line that says:
+
+
+    class HelloWorld App{
+
+
+    This creates a class definition, telling the code which class to use for the following
+    code. The curly brackets that follow will then surround the code that you want
+    to use for that particular class. This can get quite a lot more complicated, but
+    you only need to learn the basics for now.
+
+
+    ## Comments in the Source Code
+
+
+    Take a look at the text that was written after the // in your code. That is a
+    comment, which the compiler will have ignored completely. They are for the eyes
+    of programmers only. You might feel that you don’t need to add comments in your
+    codes, since you already know why you did certain things. Keep in mind that many
+    codes become extremely long and complicated. It is easy to become lost, or forget
+    why you did certain things, so creating comments is always important. They are
+    also helpful when other programmers need to work with code that you create, so
+    they can easily find their way around, and understand everything.
+
+
+    There are three different types of comments, and they each work a little differently:
+
+
+    /** your documentation */
+
+
+    The compiler will ignore everything between the /** and */ but the comment will
+    be considered a “doc comment”. This is short for documentation comment. All doc
+    comments can be compiled with an automated tool later, making it easy to create
+    a reference document.
+
+
+    // text
+
+
+    Everything on the line after the // will be ignored by the compiler.
+
+
+    /* your comment */
+
+
+    When you use this type of comment, everything withing the */ and */ will be ignored
+    by your compiler.
+
+
+    ## Your Main Method
+
+
+    Finally, take a look at the line that actually tells your application what your
+    HelloWorldApp class does:
+
+
+    System.out.println("Hello World!");
+
+
+    The System class comes from Java’s fundamental library. It simply tells it to
+    print “Hello World!” as standard output. This is why, when you run your application,
+    it prints these words on the screen.
+
+
+    # More Definitions
+
+
+    ## Objects'
+  toc: []
+  trans: "\n\n一旦你安装了上一章详细介绍的软件，现在就可以开始编写一个非常简单的应用程序了。记住，你需要使用 `Netbeans` IDE，你也被指示下载了它。起初，你可能不会理解你所做的一切，但只需按照详细说明完成所有步骤即可。理解会在之后产生，但每个人都必须从某处开始。\n\
+    \n你将创建一种人们在初开始学习编程时经常制作应用程序。这使其成为你创建的第一个完美代码。它被称为“Hello World”，极其简单。这听起来可能过于基础，但该程序仅仅是显示“Hello\
+    \ World!”。它本身并不是任何复杂的内容，甚至并不特别有用。然而，它是掌握 Java 编码一些最基础部分的极佳方法。\n\n## 创建你的 IDE 项目\n\
+    \n通过创建一个 IDE 项目，你正在创建一个用于构建应用程序的环境。使用像 `Netbeans` 这样的 IDE 的用处之一是它可以避免配置问题。如果你在文本编辑器中创建代码，可能会遇到一些问题。\n\
+    \n要创建你的 IDE 项目，请遵循以下步骤：\n\n- 启动你下载的 `Netbeans` IDE。\n- 点击 `File`（文件） > `New Project`（新建项目）。将打开\
+    \ `New Project` 向导。\n- 点击 `Java` 类别将其展开，然后选择 `Java Application`（Java 应用程序）并点击\
+    \ `Next`（下一步）。\n- 打开 `Name`（名称）和 `Location`（位置）部分：\n    - 输入“Hello World App”作为项目名称。\n\
+    \    - 在 `Create Main Class`（创建主类）区域输入 `helloworldapp.HeloWorldApp`。\n- 点击 `Finish`（完成）。\n\
+    \n你刚刚创建了第一个项目，你将看到几个窗口，包括：\n\n- `Navigator`（导航）窗口，你可以在这里轻松在不同类的部分之间导航。\n- `Source\
+    \ Editor`（源编辑器）窗口，你可以在这里看到刚刚创建的新项目文件 `HelloWorldApp.java`。\n- `Projects`（项目）窗口，显示项目每个组件的层级布局。这包括你的代码所需的\
+    \ `libraries`（库）、源文件等。\n\n你可能需要添加你所拥有的 `JDK` 版本。这是因为你有一个新版本，它尚未列在 `Netbeans` 中，但可能性不大。\n\
+    \n- 点击 `Tools`（工具）。\n- 转到 `Java Platform`（Java 平台）并选择它。\n- 你将看到带有 `JDK` 的列表，并能轻松判断你的版本是否已经列出。\n\
+    \n接下来，你将向生成的源文件中添加一些代码。在 `New Project` 向导中创建项目时，你勾选了 `Create Main Class`（创建主类）复选框。这导致\
+    \ IDE 自动创建一个骨架类。\n\n在源编辑器中，找到以下行：\n\n```java\n// TODO code application logic here\n\
+    ```\n\n你需要将该行替换为以下行：\n\n```java\nSystem.out.println(\"Hellow World!\"); // Display\
+    \ string.\n```\n\n下一步将向你展示如何向代码添加注释。当你添加注释时，它们不会被视为实际代码的一部分。它们仅供你阅读。\n\n找到以下四行：\n\
+    \n```java\n/**\n*\n* @author\n*/\n```\n\n将它们替换为以下四行：\n\n```java\n/**\n* This app\
+    \ simply prints “Hello World!”\n*\n*/\n```\n\n在编写代码时，请务必小心输入完全正确的内容。要确保你使用了正确的大小写，因为\
+    \ Java 启动器和编译器都是区分大小写的。\n\n例如，当你选择名称 `HelloWorldApp` 时，与输入 `helloworldapp` 是不同的。\n\
+    \n接下来，你将保存新应用程序。点击 `File`（文件） > `Save`（保存）。\n\n## 将你的源码编译为 .class 文件\n\n你现在将运行你的第一个应用程序。在\
+    \ `Netbeans` 主菜单中，点击 `Run`（运行） > `Build Project (Hello World App)`（构建项目）。\n\n\
+    输出窗口不会在源编辑器下方显示构建后的代码。你应该能看到打印出的“Hello World!”。更重要的是，你应该看到“BUILD SUCCESSFUL”（构建成功）字样。如果是这样，你刚刚制作了第一个成功的应用程序。\n\
+    \n如果看到“BUILD FAILED”（构建失败）怎么办？你的代码可能存在某种语法错误。不要担心，因为使用像 `Netbeans` 这样的专用 IDE 处理此类错误会更容易。错误将显示在你的\
+    \ Output（输出）窗口中，并以超链接的形式显示。如果你想找到错误来源，双击其超链接。这将方便你修改错误。之后，你可以再次运行项目，看看是否解决了问题。\n\
+    \n在导航窗口中，你点击 `Files`（文件）选项卡，然后展开 `Hello World App` > `build` > `classes` > `helloworldapp`。这是为你的项目生成的类文件。\n\
+    \n一旦构建了项目并确认没有问题，你就可以正式运行它。在主菜单中，点击 `Run` > `Run Main Project`（运行主项目）。\n\n程序将在你的\
+    \ Output 窗口中打印文本“Hello World!”以及其他构建脚本输出。\n\n你刚刚运行了第一个程序。恭喜你！\n\n## Hello World!是如何工作的\n\
+    \n你应该理解 Hello World! 应用程序做了什么，但可能急于了解它是如何工作的。再次看看你使用的那些代码：\n\n```java\nclass HelloWorldApp\
+    \ {\n    System.out.println(\"Hello World!\"); // Display string.\n}\n```\n\n\
+    构成你应用程序的是三个基本部分：\n\n- `HelloWorldApp` 类。\n- 源代码中的注释。\n- `main` 方法。\n\n这些解释将让你对代码有一个初步了解。然而，可能需要一些时间才能真正理解它是什么。\n\
+    \n### HelloWorldApp 类\n\n查看这一行：\n\n```java\nclass HelloWorld App{\n```\n\n这创建了一个类定义，告诉代码使用哪个类。随后的大括号将包含你想要的代码。这可能会变得非常复杂，但你现在只需要学习基础知识。\n\
+    \n### 源代码中的注释\n\n查看在你代码中 `//` 之后编写的文本。这是一个注释，编译器会完全忽略它。你可能觉得不需要在代码中添加注释，因为你已经知道为什么要这样做。记住，许多代码会变得非常长且复杂。人们很容易迷失，或者忘记为什么要执行某些事情，因此创建注释是非常重要的。当其他程序员需要处理你创建的代码时，注释也有帮助，让他们可以轻松地导航并理解一切。\n\
+    \n有三种类型的注释，它们的工作方式略有不同：\n\n`/** your documentation */`\n\n编译器将忽略 `/**` 和 `*/`\
+    \ 之间的所有内容，但该注释将被视为“文档注释”。它是 documentation comment 的缩写。所有的文档注释以后都可以使用工具进行编译，方便创建参考文档。\n\
+    \n`// text`\n\n`//` 之后的整行内容都会被编译器忽略。\n\n`/* your comment */`\n\n当你使用这种注释时，`/*`\
+    \ 和 `*/` 之间的所有内容都将被你的编译器忽略。\n\n### main 方法\n\n最后，查看这一行实际上告诉你的应用程序 `HelloWorldApp`\
+    \ 类是做什么的：\n\n```java\nSystem.out.println(\"Hello World!\");\n```\n\n`System` 类来自\
+    \ Java 的基础库。它只是告诉系统向标准输出打印“Hello World!”。这就是为什么当你运行应用程序时，它会在屏幕上打印这些词。\n\n# 更多定义\n\
+    \n## 对象\n\n"
+- fmt: "\nYou have already dealt with objects, and learned a little about them. Now\
+    \ that you have completed a practical exercise in coding, it is time to look at\
+    \ some more theory about objects, and what they do. In `Java`, objects are essential,\
+    \ as it is an object-oriented language. It’s not the only language that works\
+    \ in this way, but this is one of the most popular features of `Java`.\n\nTo get\
+    \ a better understanding of objects, look around you right now. You can probably\
+    \ see many different objects, from the computer that you are using, to your chair,\
+    \ your dog, and even other people near you. Consider a dog as if it were an object\
+    \ in `Java`. It has its own state (name, breed, color), as well as behavior (wagging\
+    \ its tail, sleeping, barking). To get a better understanding of how objects work\
+    \ in `Java`, try thinking of different real-world objects in terms of their state,\
+    \ and their behavior.\n\nAn object’s state is kept inside a field. Pay careful\
+    \ attention here, because this is one of the things that makes object-oriented\
+    \ languages so unique. An object’s behavior is exposed through a method. These\
+    \ methods are guided by the state of an object, and tell it how to act with other\
+    \ objects. Objects in `Java` work with internal states, which other objects cannot\
+    \ directly access. This is called data encapsulation.\n\nThink about a dog as\
+    \ an object in `Java` again. While that object has certain behaviors (methods),\
+    \ which let you observe and interact with the dog, you are not aware of its internal\
+    \ state. You cannot change the dogs internal state directly, unless you deal with\
+    \ its outside behavior.\n\nThis type of programming has some great advantages\
+    \ over coding that isn’t object-oriented:\n\n* Inbuilt hiding. Other objects only\
+    \ interact with the methods (behaviors) of an object, so the internal state can\
+    \ remain hidden.\n* Modular. Objects can be coded and worked on outside of a larger\
+    \ piece of code (application). After an object is finished, it can then be introduced\
+    \ to the source code, where it can interact with other objects. \n* Debugging\
+    \ and pluggability. If you find that an object isn’t working properly, it is easy\
+    \ to remove for debugging. Plugging in a different object is then simple, to see\
+    \ if that will work better. In this way, programmers only need to replace objects,\
+    \ instead of fixing entire applications.\n* Re-using Code. If someone has already\
+    \ created a certain object that is appropriate for another application, it’s easy\
+    \ to re-use it.\n\n## Classes\n\nYou have also looked at classes, and even worked\
+    \ with using one in your own application. Take a look into them more deeply, to\
+    \ find out what they are really about. Think about the real world that you live\
+    \ in again. There are plenty of different objects that are the same type. For\
+    \ example, there are many different cars in the world. Even those that are the\
+    \ same model, will have differences.\n\nAll cars are essentially the same kind\
+    \ of object, with the same basic components, even when there are variations. You\
+    \ can think of one car as a particular instance of a class of objects, called\
+    \ cars. You can think of a class as a kind of basic plan for an object.\n\n##\
+    \ Inheritance\n\nMany objects are different, but they often have a certain number\
+    \ of things in common with other objects. Think about cars again, and the many\
+    \ different models and types that are out in the world. They all have a number\
+    \ of the same characteristics at any point in time, such as a current speed, the\
+    \ gear they are in, and an amount of petrol in their engine.\n\nAll of those cars\
+    \ will have certain features that are different from some other cars. These include\
+    \ the number of seats they have, the type of engine, and the legal class of car\
+    \ that they are.\n\nIn object-oriented languages like `Java`, a class can inherit\
+    \ other behaviors and states from different classes. The class of car could become\
+    \ truck, bus, or van. The general class of car would then be considered a superclass\
+    \ for these other classes. A class can have just one superclass, which can in\
+    \ turn have as many subclasses as you would like.\n\nIf you want to make a subclass\
+    \ (`truck`) for your superclass (`car`), you can use the following syntax:\n\n\
+    ```java\nclass Car extends truck {\n  // you would place your code for defining\
+    \ a truck here\n}\n```\n\nThis would tell your code that `truck` contains the\
+    \ same methods and fields as `car`. However, it would allow you to create new\
+    \ features that make a truck different from a car.\n\nWhen you are making a new\
+    \ superclass, be sure that you write documentation notes to describe any new behavior\
+    \ and state that you give it. This is important, because you will not be able\
+    \ to see this information in the source files of your subclasses.\n\n# Java Code\
+    \ Examples\n\nThis section assumes that you know a little about coding, or that\
+    \ you are willing to experiment yourself. As you can see, there are notes within\
+    \ the codes, so that you can see what they do. This is where you can just have\
+    \ some fun, and play around with some pre-built codes. First, paste them into\
+    \ your `Netbeans` source editor window, built them, and run them. You will see\
+    \ that they work, and you can then play around to experience how they work.\n\n\
+    ## Calling Methods\n\nHere is a coding some that calls methods within the same\
+    \ class.\n\n```java\n/* CallingMethodsInSameClass.java\n*\n* illustrates how to\
+    \ call static methods a class\n* from a method in the same class\n*/\npublic class\
+    \ CallingMethodsInSameClass {\n    public static void main(String[] args) {\n\
+    \        printOne();\n        printOne();\n        printTwo();\n    }\n    public\
+    \ static void printOne() {\n        System.out.println(\"Hello World\");\n   \
+    \ }\n    public static void printTwo() {\n        printOne();\n        printOne();\n\
+    \    }\n}\n```\n\n### Example of Strings\n\nHere are some different manipulations.\n\
+    \n```java\npublic class StringExample {\n    public static void main(String[]\
+    \ args) {\n        String s1 = \"Computer Science\";\n        int x = 307;\n \
+    \       String s2 = s1 + \" \" + x;\n        String s3 = s2.substring(10,17);\n\
+    \        String s4 = \"is fun\";\n        String s5 = s2 + s4;\n        System.out.println(\"\
+    s1: \" + s1);\n        System.out.println(\"s2: \" + s2);\n        System.out.println(\"\
+    s3: \" + s3);\n        System.out.println(\"s4: \" + s4);\n        System.out.println(\"\
+    s5: \" + s5);\n        // showing of precedence\n        x = 3;\n        int y\
+    \ = 5;\n        String s6 = x + y + \"total\";\n        String s7 = \"total\"\
+    \ + x + y;\n        String s8 = \" \" + x + y + \"total\";\n        System.out.println(\"\
+    s6: \" + s6);\n        System.out.println(\"s7: \" + s7);\n        System.out.println(\"\
+    s8: \" + s8);\n    }\n}\n```\n\n### Value Parameters\n\nParameters are all passed\
+    \ by value in `Java`. This example shows value parameter’s behavior.\n\n```java\n\
+    public class PrimitiveParameters {\n    public static void main(String[] args)\
+    \ {\n        go();\n    }\n    public static void go() {\n        int x = 3;\n\
+    \        int y = 2;\n        System.out.println(\"In method go. x: \" + x + \"\
+    \ y: \" + y);\n        falseSwap(x,y);\n        System.out.println(\"in method\
+    \ go. x: \" + x + \" y: \" + y);\n        moreParameters(x,y);\n        System.out.println(\"\
+    in method go. x: \" + x + \" y: \" + y);\n    }\n    public static void falseSwap(int\
+    \ x, int y)\n}\n```\n"
+  raw: 'You have already dealt with objects, and learned a little about them. Now
+    that you have completed a practical exercise in coding, it is time to look at
+    some more theory about objects, and what they do. In Java, objects are essential,
+    as it is an object-oriented language. It’s not the only language that works in
+    this way, but this is one of the most popular features of Java.
+
+
+    To get a better understanding of objects, look around you right now. You can probably
+    see many different objects, from the computer that you are using, to your chair,
+    your dog, and even other people near you. Consider a dog as if it were an object
+    in Java. It has its own state (name, breed, color), as well as behavior (wagging
+    its tail, sleeping, barking). To get a better understanding of how objects work
+    in Java, try thinking of different real-world objects in terms of their state,
+    and their behavior.
+
+
+    An object’s state is kept inside a field.
+
+
+    Pay careful attention here, because this is one of the things that makes object-oriented
+    languages so unique. An object’s behavior is exposed through a method. These methods
+    are guided by the state of an object, and tell it how to act with other objects.
+    Objects in Java work with internal states, which other objects cannot directly
+    access. This is called data encapsulation.
+
+
+    Think about a dog as an object in Java again. While that object has certain behaviors
+    (methods), which let you observe and interact with the dog, you are not aware
+    of its internal state. You cannot change the dogs internal state directly, unless
+    you deal with its outside behavior.
+
+
+    This type of programming has some great advantages over coding that isn’t object-oriented:
+
+
+    ● Inbuilt hiding. Other objects only interact with the methods (behaviors) of
+    an object, so the internal state can remain hidden.
+
+
+    ● Modular. Objects can be coded and worked on outside of a larger piece of code
+    (application). After an object is finished, it can then be introduced to the source
+    code, where it can interact with other objects.
+
+
+    ● Debugging and pluggability. If you find that an object isn’t working properly,
+    it is easy to remove for debugging. Plugging in a different object is then simple,
+    to see if that will work better. In this way, programmers only need to replace
+    objects, instead of fixing entire applications.
+
+
+    ● Re-using Code. If someone has already created a certain object that is appropriate
+    for another application, it’s easy to re-use it.
+
+
+    ## Classes
+
+
+    You have also looked at classes, and even worked with using one in your own application.
+    Take a look into them more deeply, to find out what they are really about. Think
+    about the real world that you live in again. There are plenty of different objects
+    that are the same type. For example, there are many different cars in the world.
+    Even those that are the same model, will have differences.
+
+
+    All cars are essentially the same kind of object, with the same basic components,
+    even when there are variations. You can think of one car as a particular instance
+    of a class of objects, called cars. You can think of a class as a kind of basic
+    plan for an object.
+
+
+    ## Inheritance
+
+
+    Many objects are different, but they often have a certain number of things in
+    common with other objects. Think about cars again, and the many different models
+    and types that are out in the world. They all have a number of the same characteristics
+    at any point in time, such as a current speed, the gear they are in, and an amount
+    of petrol in their engine.
+
+
+    All of those cars will have certain features that are different from some other
+    cars. These include the number of seats they have, the type of engine, and the
+    legal class of car that they are.
+
+
+    In object-oriented languages like Java, a class can inherit other behaviors and
+    states from different classes. The class of car could become truck, bus, or van.
+    The general class of car would then be considered a superclass for these other
+    classes. A class can have just one superclass, which can in turn have as many
+    subclasses as you would like.
+
+
+    If you want to make a subclass (truck) for your superclass (car), you can use
+    the following syntax:
+
+
+    class Car extends truck {
+
+
+      // you would place your code for defining a truck here
+
+
+    }
+
+
+    This would tell your code that truck contains the same methods and fields as car.
+    However, it would allow you to create new features that make a truck different
+    from a car.
+
+
+    When you are making a new superclass, be sure that you write documentation notes
+    to describe any new behavior and state that you give it. This is important, because
+    you will not be able to see this information in the source files of your subclasses.
+
+
+    # Java Code Examples
+
+
+    This section assumes that you know a little about coding, or that you are willing
+    to experiment yourself. As you can see, there are notes within the codes, so that
+    you can see what they do. This is where you can just have some fun, and play around
+    with some pre-built codes. First, paste them into your Netbeans source editor
+    window, built them, and run them. You will see that they work, and you can then
+    play around to experience how they work.
+
+
+    ## Calling Methods
+
+
+    Here is a coding some that calls methods within the same class.
+
+
+    /* CallingMethodsInSameClass.java
+
+
+    *
+
+
+    * illustrates how to call static methods a class
+
+
+    * from a method in the same class
+
+
+    */
+
+
+    public class CallingMethodsInSameClass
+
+
+    {
+
+
+                  public static void main(String[] args) {
+
+
+                                printOne();
+
+
+                                printOne();
+
+
+                                printTwo();
+
+
+                  }
+
+
+                  public static void printOne() {
+
+
+                                System.out.println("Hello World");
+
+
+                  }
+
+
+                  public static void printTwo() {
+
+
+                                printOne();
+
+
+                                printOne();
+
+
+                  }
+
+
+    }
+
+
+    ## Example of Strings
+
+
+    Here are some different string manipulations.
+
+
+    public class StringExample
+
+
+    {              public static void main(String[] args)
+
+
+                  {              String s1 = "Computer Science";
+
+
+                                int x = 307;
+
+
+                                String s2 = s1 + " " + x;
+
+
+                                String s3 = s2.substring(10,17);
+
+
+                                String s4 = "is fun";
+
+
+                                String s5 = s2 + s4;
+
+
+                                System.out.println("s1: " + s1);
+
+
+                                System.out.println("s2: " + s2);
+
+
+                                System.out.println("s3: " + s3);
+
+
+                                System.out.println("s4: " + s4);
+
+
+                                System.out.println("s5: " + s5);
+
+
+                                //showing effect of precedence
+
+
+                                x = 3;
+
+
+                                int y = 5;
+
+
+                                String s6 = x + y + "total";
+
+
+                                String s7 = "total " + x + y;
+
+
+                                String s8 = " " + x + y + "total";
+
+
+                                System.out.println("s6: " + s6);
+
+
+                                System.out.println("s7: " + s7);
+
+
+                                System.out.println("s8: " + s8);
+
+
+                  }
+
+
+    }
+
+
+    ## Value Parameters
+
+
+    Parameters are all passed by value in Java. This example code shows you value
+    parameter’s behavior.
+
+
+    public class PrimitiveParameters
+
+
+    {             
+
+
+                  public static void main(String[] args)
+
+
+                  {              go();
+
+
+                  }
+
+
+                  public static void go()
+
+
+                  {              int x = 3;
+
+
+                                int y = 2;
+
+
+                                System.out.println("In method go. x: " + x + " y:
+    " + y);
+
+
+                                falseSwap(x,y);
+
+
+                                System.out.println("in method go. x: " + x + " y:
+    " + y);
+
+
+                                moreParameters(x,y);
+
+
+                                System.out.println("in method go. x: " + x + " y:
+    " + y);
+
+
+                  }
+
+
+                  public static void falseSwap(int x, int y)'
+  toc: []
+  trans: "\n\n你已经处理过对象，并对它们有了初步了解。现在你已经完成了一项实战编程练习，是时候查看更多关于对象的理论以及它们的作用了。在 `Java`\
+    \ 中，对象是至关重要的，因为它是一门面向对象的语言。这不是唯一以这种方式工作的语言，但它是 `Java` 最受欢迎特性之一。\n\n为了更好地理解对象，现在观察一下你周围的环境。你可能会看到许多不同的对象，从你正在使用的电脑到你的椅子、你的狗，甚至你周围的其他的人。把一只狗想象成\
+    \ `Java` 中的一个对象。它有自己的状态（名称、品种、颜色）以及行为（摇尾巴、睡觉、汪叫）。为了更好地理解对象在 `Java` 中是如何工作的，请尝试从状态和行为的角度来思考不同的现实世界对象。\n\
+    \n对象的状态存储在字段（field）中。请务必注意这里，因为这是面向对象语言如此如此独特的特性之一。对象的行为通过方法（method）暴露出来。这些方法由对象的状态引导，并告诉它如何与其他对象交互。`Java`\
+    \ 中的对象通过内部状态工作，其他对象无法直接访问这些状态。这被称为数据封装。\n\n再次把狗想象成 `Java` 中的一个对象。虽然该对象具有某些行为（方法），让你能够观察并与狗交互，但你并不知道它的内部状态。你无法直接改变狗的内部状态，除非你处理它的外部行为。\n\
+    \n这种编程类型与非面向对象的编码相比具有巨大的优点：\n\n*   **内置隐藏**。其他对象只与对象的方法（行为）交互，因此内部状态可以保持隐藏。\n\
+    *   **模块化**。对象可以在较大的代码块（应用程序）之外进行编码和处理。当一个对象完成后，可以将其引入源代码中，在其中它可以与其他对象交互。\n* \
+    \  **调试和插拔性**。如果你发现某个对象工作不正常，很容易将其移除进行调试。然后接入一个不同的对象也很简单，看看效果是否更好。通过这种方式，程序员只需要替换对象，而不是修复整个应用程序。\n\
+    *   **代码复用**。如果有人已经创建了适用于另一个程序的特定对象，那么很容易复用它。\n\n## 类 (Classes)\n\n你还查看了类，甚至在自己的应用程序中使用过类。更深入地研究它们，以发现它们究竟是什么。再次思考你所生活的现实世界。有许多相同类型的不同对象。例如，世界上有很多不同的汽车。即使是相同型号的汽车也会有差异。\n\
+    \n所有汽车本质上都是同一种对象，具有相同的基本组件，即使存在差异。你可以将一辆汽车看作是汽车（cars）这一对象类的一个特定实例（instance）。你可以将类看作是对象的一种基础蓝。\n\
+    \n## 继承 (Inheritance)\n\n许多对象虽然是不同的，但它们通常与其他对象具有某些共同点。再次考虑汽车，以及世界上许多不同的型号和类型。在任何时刻，它们都具有许多相同的特征，例如当前速度、所处的挡挡位，以及发动机中的汽油量。\n\
+    \n所有这些汽车都具有某些与其他汽车不同的特征。这些包括座椅数量、发动机类型以及它们所属的法律汽车分类。\n\n在 `Java` 这样的面向对象语言中，类可以从不同的类继承其他行为和状态。汽车类可以变成卡车、公共汽车或面包车。那么通用的汽车类就被视为这些其他类的超类（superclass）。一个类可以仅有一个超类，而超类反过来可以拥有任意数量的子类。\n\
+    \n如果你想为你的超类（`car`）创建一个子类（`truck`），可以使用以下语法：\n\n```java\nclass Car extends truck\
+    \ {\n  // 你将在此处编写定义卡车的代码\n}\n```\n\n这将告诉你的代码 `truck` 包含与 `car` 相同的方法和字段。然而，它允许你创建新特性，使卡车区别于汽车。\n\
+    \n当你创建一个新的超类时，请务必编写文档注释，以描述你赋予给它的任何新行为和状态。这是重要的，因为你将无法在子类的源文件中看到这些信息。\n\n# Java\
+    \ 代码示例 (Java Code Examples)\n\n这一部分假设你对编码有所了解，或者你愿意亲自尝试。正如你所看到的，代码中有注释，以便你看到它们的作用。在这里你可以你可以尽情玩耍，尝试一些预构建的代码。首先，将它们粘贴到你的\
+    \ `Netbeans` 源码编辑器窗口中，进行构建并运行。你会发现它们可以正常工作，然后你可以通过尝试来体验它们是如何运作的。\n\n## 调用方法 (Calling\
+    \ Methods)\n\n这是一个在同一类中调用方法的代码示例。\n\n```java\n/* CallingMethodsInSameClass.java\n\
+    *\n* 演示了如何从同一类中的方法\n* 调用该类的静态方法\n*/\npublic class CallingMethodsInSameClass {\n\
+    \    public static void main(String[] args) {\n        printOne();\n        printOne();\n\
+    \        printTwo();\n    }\n    public static void printOne() {\n        System.out.println(\"\
+    Hello World\");\n    }\n    public static void printTwo() {\n        printOne();\n\
+    \        printOne();\n    }\n}\n```\n\n### 字符串示例 (Example of Strings)\n\n这里是一些不同的操作。\n\
+    \n```java\npublic class StringExample {\n    public static void main(String[]\
+    \ args) {\n        String s1 = \"Computer Science\";\n        int x = 307;\n \
+    \       String s2 = s1 + \" \" + x;\n        String s3 = s2.substring(10,17);\n\
+    \        String s4 = \"is fun\";\n        String s5 = s2 + s4;\n        System.out.println(\"\
+    s1: \" + s1);\n        System.out.println(\"s2: \" + s2);\n        System.out.println(\"\
+    s3: \" + s3);\n        System.out.println(\"s4: \" + s4);\n        System.out.println(\"\
+    s5: \" + s5);\n        // 优先级演示\n        x = 3;\n        int y = 5;\n        String\
+    \ s6 = x + y + \"total\";\n        String s7 = \"total\" + x + y;\n        String\
+    \ s8 = \" \" + x + y + \"total\";\n        System.out.println(\"s6: \" + s6);\n\
+    \        System.out.println(\"s7: \" + s7);\n        System.out.println(\"s8:\
+    \ \" + s8);\n    }\n}\n```\n\n### 值参数 (Value Parameters)\n\n在 `Java` 中，参数都是按值传递的。此示例了值参数的行为。\n\
+    \n```java\npublic class PrimitiveParameters {\n    public static void main(String[]\
+    \ args) {\n        go();\n    }\n    public static void go() {\n        int x\
+    \ = 3;\n        int y = 2;\n        System.out.println(\"In method go. x: \" +\
+    \ x + \" y: \" + y);\n        falseSwap(x,y);\n        System.out.println(\"in\
+    \ method go. x: \" + x + \" y: \" + y);\n        moreParameters(x,y);\n      \
+    \  System.out.println(\"in method go. x: \" + x + \" y: \" + y);\n    }\n    public\
+    \ static void falseSwap(int x, int y)\n}\n```\n\n"
+- fmt: "\n```java\n{\n    System.out.println(\"in method falseSwap. x: \" + x + \"\
+    \ y: \" + y);\n    int temp = x;\n    x = y;\n    y = temp;\n    System.out.println(\"\
+    in method falseSwap. x: \" + x + \" y: \" + y);\n}\n\npublic static void moreParameters(int\
+    \ a, int b)\n{\n    System.out.println(\"in method moreParameters. a: \" + a +\
+    \ \" b: \" + b);\n    a = a * b;\n    b = 12;\n    System.out.println(\"in method\
+    \ moreParameters. a: \" + a + \" b: \" + b);\n    falseSwap(b, a);\n    System.out.println(\"\
+    in method moreParameters. a: \" + a + \" b: \" + b);\n}\n```\n\n## Pointers As\
+    \ Value Parameters\n\n```java\nimport java.awt.Rectangle;\n\npublic class ObjectVarsAsParameters\n\
+    {\n    public static void main(String[] args)\n    {\n        go();\n    }\n\n\
+    \    public static void go()\n    {\n        Rectangle r1 = new Rectangle(0, 0,\
+    \ 5, 5);\n        System.out.println(\"In method go. r1 \" + r1 + \"\\n\");\n\
+    \        // could have been\n        // System.out.println(\"r1\" + r1.toString());\n\
+    \        r1.setSize(10, 15);\n        System.out.println(\"In method go. r1 \"\
+    \ + r1 + \"\\n\");\n        altertee(r1);\n        System.out.println(\"In method\
+    \ go. r1 \" + r1 + \"\\n\");\n        alterPointer(r1);\n        System.out.println(\"\
+    In method go. r1 \" + r1 + \"\\n\");\n    }\n\n    public static void altertee(Rectangle\
+    \ r)\n    {\n        System.out.println(\"In method altertee. r \" + r + \"\\\
+    n\");\n        r.setSize(20, 30);\n        System.out.println(\"In method altertee.\
+    \ r \" + r + \"\\n\");\n    }\n\n    public static void alterPointer(Rectangle\
+    \ r)\n    {\n        System.out.println(\"In method alterPointer. r \" + r + \"\
+    \\n\");\n        r = new Rectangle(5, 10, 30, 35);\n        System.out.println(\"\
+    In method alterPointer. r \" + r + \"\\n\");\n    }\n}\n```\n\n## Array Examples\n\
+    \n```java\n// Mike Scott\n// examples of array manipulations\npublic class ArrayExamples\n\
+    {\n    public static void main(String[] args)\n    {\n        int[] list = {1,\
+    \ 2, 3, 4, 1, 2, 3};\n        findAndPrintPairs(list, 5);\n        bubblesort(list);\n\
+    \        showList(list);\n        list = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9,\
+    \ 0};\n        bubblesort(list);\n        showList(list);\n        list = new\
+    \ int[]{1, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -2};\n        bubblesort(list);\n\
+    \        showList(list);\n        list = new int[]{1};\n        bubblesort(list);\n\
+    \        showList(list);\n    }\n\n    // pre: list != null, list.length > 0\n\
+    \    // post: return index of minimum element of array\n    public static int\
+    \ findMin(int[] list)\n    {\n        assert list != null && list.length > 0 :\
+    \ \"failed precondition\";\n        int indexOfMin = 0;\n        for (int i =\
+    \ 1; i < list.length; i++)\n        {\n            if (list[i] < list[indexOfMin])\n\
+    \            {\n                indexOfMin = i;\n            }\n        }\n  \
+    \      return indexOfMin;\n    }\n\n    /*\n    * pre: list != null, newSize >=\
+    \ 0\n    * post: nothing. the method does not succeed resizing the argument\n\
+    \    */\n    public static void badResize(int[] list, int newSize)\n    {\n  \
+    \      assert list != null && newSize >= 0 : \"failed precondition\";\n      \
+    \  int[] temp = new int[newSize];\n        int limit = Math.min(list.length, newSize);\n\
+    \        for (int i = 0; i < limit; i++)\n        {\n            temp[i] = list[i];\n\
+    \        }\n        // uh oh!! Changing pointer, not pointe. This breaks the relationship\
+    \ between the parameter and argument\n        list = temp;\n    }\n\n    /*\n\
+    \    * pre: list != null, newSize >= 0\n    * post: returns an array of size newSize.\
+    \ Elements from 0 to newSize - 1 will be copied into the new array\n    */\n \
+    \   public static int[] goodResize(int[] list, int newSize)\n    {\n        assert\
+    \ list != null && newSize >= 0 : \"failed precondition\";\n        int[] result\
+    \ = new int[newSize];\n        int limit = Math.min(list.length, newSize);\n \
+    \       for (int i = 0; i < limit; i++)\n        {\n            result[i] = list[i];\n\
+    \        }\n        return result;\n    }\n\n    /*\n    * pre: list != null\n\
+    \    * post: prints out the indices and values of all pairs of numbers in list\
+    \ that list[a] + list[b] = target\n    */\n    public static void findAndPrintPairs(int[]\
+    \ list, int target)\n    {\n        assert list != null : \"failed precondition\"\
+    ;\n        for (int i = 0; i < list.length; i++)\n        {\n            for (int\
+    \ j = i + 1; j < list.length; j++)\n            {\n                if (list[i]\
+    \ + list[j] == target)\n                {\n                    System.out.println(\"\
+    The two elements at indices \" + i + \" and \" + j + \" are \" + list[i] + \"\
+    \ and \" + list[j] + \" add up to \" + target);\n                }\n         \
+    \   }\n        }\n    }\n\n    /*\n    * pre: list != null;\n    * post: sort\
+    \ the elements of list that they are in ascending order\n    */\n    public static\
+    \ void bubblesort(int[] list)\n    {\n        assert list != null : \"failed precondition\"\
+    ;\n        int temp;\n        boolean changed = true;\n        for (int i = 0;\
+    \ i < list.length && changed; i++)\n        {\n            changed = false;\n\
+    \            for (int j = 0; j < list.length - i - 1; j++)\n            {\n  \
+    \              assert (j > 0) && (j + 1 < list.length) : \"loop counter j \" +\
+    \ j + \" out bounds.\";\n                if (list[j] > list[j + 1])\n        \
+    \        {\n                    changed = true;\n                    temp = list[j\
+    \ + 1];\n                    list[j + 1] = list[j];\n                    list[j]\
+    \ = temp;\n                }\n            }\n        }\n    }\n}\n```\n"
+  raw: '              {              System.out.println("in method falseSwap. x: "
+    + x + " y: " + y);
+
+
+                                int temp = x;
+
+
+                                x = y;
+
+
+                                y = temp;
+
+
+                                System.out.println("in method falseSwap. x: " + x
+    + " y: " + y);
+
+
+                  }
+
+
+                  public static void moreParameters(int a, int b)
+
+
+                  {              System.out.println("in method moreParameters. a:
+    " + a + " b: " + b);
+
+
+                                a = a * b;
+
+
+                                b = 12;
+
+
+                                System.out.println("in method moreParameters. a: "
+    + a + " b: " + b);
+
+
+                                falseSwap(b,a);
+
+
+                                System.out.println("in method moreParameters. a: "
+    + a + " b: " + b);             
+
+
+                  }
+
+
+    }
+
+
+    ## Pointers As Value Parameters
+
+
+    import java.awt.Rectangle;
+
+
+    public class ObjectVarsAsParameters
+
+
+    {              public static void main(String[] args)
+
+
+                  {              go();
+
+
+                  }
+
+
+                  public static void go()
+
+
+                  {              Rectangle r1 = new Rectangle(0,0,5,5);
+
+
+                                System.out.println("In method go. r1 " + r1 + "\n");
+
+
+                                // could have been
+
+
+                                //System.out.prinltn("r1" + r1.toString());
+
+
+                                r1.setSize(10, 15);
+
+
+                                System.out.println("In method go. r1 " + r1 + "\n");
+
+
+                                alterPointee(r1);
+
+
+                                System.out.println("In method go. r1 " + r1 + "\n");
+
+
+                                alterPointer(r1);
+
+
+                                System.out.println("In method go. r1 " + r1 + "\n");
+
+
+                  }
+
+
+                  public static void alterPointee(Rectangle r)
+
+
+                  {              System.out.println("In method alterPointee. r " +
+    r + "\n");
+
+
+                                r.setSize(20, 30);
+
+
+                                System.out.println("In method alterPointee. r " +
+    r + "\n");
+
+
+                  }
+
+
+                  public static void alterPointer(Rectangle r)
+
+
+                  {              System.out.println("In method alterPointer. r " +
+    r + "\n");
+
+
+                                r = new Rectangle(5, 10, 30, 35);
+
+
+                                System.out.println("In method alterPointer. r " +
+    r + "\n");
+
+
+                  }
+
+
+    }
+
+
+    ## Array Examples
+
+
+    //Mike Scott
+
+
+    //examples of array manipulations
+
+
+    public class ArrayExamples
+
+
+    {              public static void main(String[] args)
+
+
+                  {              int[] list = {1, 2, 3, 4, 1, 2, 3};
+
+
+                                findAndPrintPairs(list, 5);
+
+
+                                bubblesort(list);
+
+
+                                showList(list);
+
+
+                                list = new int[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+
+
+                                bubblesort(list);
+
+
+                                showList(list);
+
+
+                                list = new int[]{11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1,
+    0, -1, -2};
+
+
+                                bubblesort(list);
+
+
+                                showList(list);
+
+
+                                list = new int[]{1};
+
+
+                                bubblesort(list);
+
+
+                                showList(list);
+
+
+                  }
+
+
+                  // pre: list != null, list.length > 0
+
+
+                  // post: return index of minimum element of array
+
+
+                  public static int findMin(int[] list)
+
+
+                  {              assert list != null && list.length > 0 : "failed
+    precondition";
+
+
+                                int indexOfMin = 0;
+
+
+                                for(int i = 1; i < list.length; i++)
+
+
+                                {              if(list[i] < list[indexOfMin])
+
+
+                                              {              indexOfMin = i;
+
+
+                                              }
+
+
+                                }
+
+
+                                return indexOfMin;
+
+
+                  }
+
+
+                  /*
+
+
+                  *pre: list != null, newSize >= 0
+
+
+                  *post: nothing. the method does not succeed it resizing the
+
+
+                  * argument
+
+
+                  */
+
+
+                  public static void badResize(int[] list, int newSize)
+
+
+                  {              assert list != null && newSize >= 0 : "failed precondition";
+
+
+                                int[] temp = new int[newSize];
+
+
+                                int limit = Math.min(list.length, newSize);
+
+
+                                for(int i = 0; i < limit; i++)
+
+
+                                {              temp[i] = list[i];
+
+
+                                }
+
+
+                                // uh oh!! Changing pointer, not pointee. This breaks
+    the
+
+
+                                // relationship between the parameter and argument
+
+
+                                list = temp;
+
+
+                  }
+
+
+                  /*
+
+
+                  *pre: list != null, newSize >= 0
+
+
+                  *post: returns an array of size newSize. Elements from 0 to newSize
+    - 1
+
+
+                  *              will be copied into the new array
+
+
+                  */
+
+
+                  public static int[] goodResize(int[] list, int newSize)
+
+
+                  {              assert list != null && newSize >= 0 : "failed precondition";
+
+
+                                int[] result = new int[newSize];
+
+
+                                int limit = Math.min(list.length, newSize);
+
+
+                                for(int i = 0; i < limit; i++)
+
+
+                                {              result[i] = list[i];
+
+
+                                }
+
+
+                                return result;
+
+
+                  }
+
+
+                  /*
+
+
+                  *pre: list != null
+
+
+                  *post: prints out the indices and values of all pairs of numbers
+
+
+                  *in list such that list[a] + list[b] = target
+
+
+                  */
+
+
+                  public static void findAndPrintPairs(int[] list, int target)
+
+
+                  {              assert list != null : "failed precondition";
+
+
+                                for(int i = 0; i < list.length; i++)
+
+
+                                {              for(int j = i + 1; j < list.length;
+    j++)
+
+
+                                              {              if(list[i] + list[j]
+    == target)
+
+
+                                                            {              System.out.println("The
+    two elements at indices " + i + " and " + j
+
+
+                                                                                       
+    + " are " + list[i] + " and " + list[j] + " add up to " + target);
+
+
+                                                            }
+
+
+                                              }
+
+
+                                }
+
+
+                  }
+
+
+                  /*
+
+
+                  *pre: list != null;
+
+
+                  *post: sort the elements of list so that they are in ascending order
+
+
+                  */
+
+
+                  public static void bubblesort(int[] list)
+
+
+                  {
+
+
+                                assert list != null : "failed precondition";
+
+
+                                int temp;
+
+
+                                boolean changed = true;
+
+
+                                for(int i = 0; i < list.length && changed; i++)
+
+
+                                {              changed = false;
+
+
+                                              for(int j = 0; j < list.length - i -
+    1; j++)
+
+
+                                              {              assert (j > 0) && (j
+    + 1 < list.length) : "loop counter j " + j +
+
+
+                                                                          "is out
+    of bounds.";
+
+
+                                                            if(list[j] > list[j+1])
+
+
+                                                            {              changed
+    = true;
+
+
+                                                                          temp = list[j
+    + 1];
+
+
+                                                                          list[j +
+    1] = list[j];
+
+
+                                                                          list[j]
+    = temp;
+
+
+                                                            }
+
+
+                                              }'
+  toc: []
+  trans: "\n\n## 作为值参数指针\n\n```java\nimport java.awt.Rectangle;\n\npublic class ObjectVarsAsParameters\n\
+    {\n    public static void main(String[] args)\n    {\n        go();\n    }\n\n\
+    \    public static void go()\n    {\n        Rectangle r1 = new Rectangle(0, 0,\
+    \ 5, 5);\n        System.out.println(\"In method go. r1 \" + r1 + \"\\n\");\n\
+    \        // could have been\n        // System.out.println(\"r1\" + r1.toString());\n\
+    \        r1.setSize(10, 15);\n        System.out.println(\"In method go. r1 \"\
+    \ + r1 + \"\\n\");\n        altertee(r1);\n        System.out.println(\"In method\
+    \ go. r1 \" + r1 + \"\\n\");\n        alterPointer(r1);\n        System.out.println(\"\
+    In method go. r1 \" + r1 + \"\\n\");\n    }\n\n    public static void altertee(Rectangle\
+    \ r)\n    {\n        System.out.println(\"In method altertee. r \" + r + \"\\\
+    n\");\n        r.setSize(20, 30);\n        System.out.println(\"In method altertee.\
+    \ r \" + r + \"\\n\");\n    }\n\n    public static void alterPointer(Rectangle\
+    \ r)\n    {\n        System.out.println(\"In method alterPointer. r \" + r + \"\
+    \\n\");\n        r = new Rectangle(5, 10, 30, 35);\n        System.out.println(\"\
+    In method alterPointer. r \" + r + \"\\n\");\n    }\n}\n```\n\n## 数组示例\n\n```java\n\
+    // Mike Scott\n// examples of array manipulations\npublic class ArrayExamples\n\
+    {\n    public static void main(String[] args)\n    {\n        int[] list = {1,\
+    \ 2, 3, 4, 1, 2, 3};\n        findAndPrintPairs(list, 5);\n        bubblesort(list);\n\
+    \        showList(list);\n        list = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9,\
+    \ 0};\n        bubblesort(list);\n        showList(list);\n        list = new\
+    \ int[]{1, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -2};\n        bubblesort(list);\n\
+    \        showList(list);\n        list = new int[]{1};\n        bubblesort(list);\n\
+    \        showList(list);\n    }\n\n    // pre: list != null, list.length > 0\n\
+    \    // post: 返回数组中最小元素的元素的索引\n    public static int findMin(int[] list)\n   \
+    \ {\n        assert list != null && list.length > 0 : \"failed precondition\"\
+    ;\n        int indexOfMin = 0;\n        for (int i = 1; i < list.length; i++)\n\
+    \        {\n            if (list[i] < list[indexOfMin])\n            {\n     \
+    \           indexOfMin = i;\n            }\n        }\n        return indexOfMin;\n\
+    \    }\n\n    /*\n    * pre: list != null, newSize >= 0\n    * post: 无. 该方法没有成功地调整参数的大小\n\
+    \    */\n    public static void badResize(int[] list, int newSize)\n    {\n  \
+    \      assert list != null && newSize >= 0 : \"failed precondition\";\n      \
+    \  int[] temp = new int[newSize];\n        int limit = Math.min(list.length, newSize);\n\
+    \        for (int i = 0; i < limit; i++)\n        {\n            temp[i] = list[i];\n\
+    \        }\n        // 噢！！改变了指针，而不是指针的内容。这破坏了参数和参数之间的关系\n        list = temp;\n\
+    \    }\n\n    /*\n    * pre: list != null, newSize >= 0\n    * post: 返回一个大小为 newSize\
+    \ 的数组。从 0 到 newSize - 1 的元素将被复制到新数组中\n    */\n    public static int[] goodResize(int[]\
+    \ list, int newSize)\n    {\n        assert list != null && newSize >= 0 : \"\
+    failed precondition\";\n        int[] result = new int[newSize];\n        int\
+    \ limit = Math.min(list.length, newSize);\n        for (int i = 0; i < limit;\
+    \ i++)\n        {\n            result[i] = list[i];\n        }\n        return\
+    \ result;\n    }\n\n    /*\n    * pre: list != null\n    * post: 打印 list 中满足 list[a]\
+    \ + list[b] = target 的所有数字的索引和值\n    */\n    public static void findAndPrintPairs(int[]\
+    \ list, int target)\n    {\n        assert list != null : \"failed precondition\"\
+    ;\n        for (int i = 0; i < list.length; i++)\n        {\n            for (int\
+    \ j = i + 1; j < list.length; j++)\n            {\n                if (list[i]\
+    \ + list[j] == target)\n                {\n                    System.out.println(\"\
+    索引 \" + i + \" 和 \" + j + \" 处的元素 \" + list[i] + \" 和 \" + list[j] + \" 之和为 \"\
+    \ + target);\n                }\n            }\n        }\n    }\n\n    /*\n \
+    \   * pre: list != null;\n    * post: 对 list 的元素进行升序排序\n    */\n    public static\
+    \ void bubblesort(int[] list)\n    {\n        assert list != null : \"failed precondition\"\
+    ;\n        int temp;\n        boolean changed = true;\n        for (int i = 0;\
+    \ i < list.length && changed; i++)\n        {\n            changed = false;\n\
+    \            for (int j = 0; j < list.length - i - 1; j++)\n            {\n  \
+    \              assert (j > 0) && (j + 1 < list.length) : \"loop counter j \" +\
+    \ j + \" out bounds.\";\n                if (list[j] > list[j + 1])\n        \
+    \        {\n                    changed = true;\n                    temp = list[j\
+    \ + 1];\n                    list[j + 1] = list[j];\n                    list[j]\
+    \ = temp;\n                }\n            }\n        }\n    }\n}\n```\n\n"
+- fmt: "\n```java\n    }\n\n    assert isAscending(list);\n\n    }\n\n    public static\
+    \ void showList(int[] list)\n    {\n        for(int i = 0; i < list.length; i++)\n\
+    \            System.out.print(list[i] + \" \" );\n        System.out.println();\n\
+    \    }\n\n    /*\n        pre: list != null\n        post: return true if list\
+    \ is sorted in ascending order, false otherwise\n    */\n    public static boolean\
+    \ isAscending(int[] list)\n    {\n        boolean ascending = true;\n        int\
+    \ index = 1;\n        while(ascending && index < list.length)\n        {\n   \
+    \         assert index >= 0 && index < list.length;\n            ascending = (list[index\
+    \ - 1] <= list[index]);\n            index++;\n        }\n        return ascending;\n\
+    \    }\n}\n```\n\n## Connecting to a Webpage and Reading from It\n\n```java\n\
+    import java.io.InputStreamReader;\nimport java.net.URL;\nimport java.net.URLConnection;\n\
+    import java.util.Scanner;\n\npublic class URLExpSimple {\n    public static void\
+    \ main(String[] args)\n    {\n        try {\n            URL mySite = new URL(\"\
+    http://www.cs.utex.edu/~scott\");\n            URLConnection yc = mySite.openConnection();\n\
+    \            Scanner in = new Scanner(new InputStreamReader(yc.getInputStream()));\n\
+    \            int count = 0;\n            while (in.hasNext()) {\n            \
+    \    System.out.println(in.next());\n                count++;\n            }\n\
+    \            System.out.println(\"Number of tokens: \" + count);\n           \
+    \ in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n\
+    \        }\n    }\n}\n```\n\n## List That Can Store Anything, and Not Ints\n\n\
+    ```java\n/**\n* A class to provide a simple list.\n* List resizes automatically.\
+    \ Used to illustrate\n* various design and implementation details of\n* a class\
+    \ in Java.\n*\n* @author scott\n*/\npublic class GenericList{\n    // class constant\
+    \ for default size\n    private static final int DEFAULT_CAP = 10;\n    //instance\
+    \ variables\n    // iValues store the elements of the list and\n    // may have\
+    \ extra capacity\n    private Object[] iValues;\n    private int iSize;\n    /**\n\
+    \    * Default add method. Add x to the end of this List.\n    * Size of the list\
+    \ goes up by 1.\n    * @param x The value to add to the end of this list.\n  \
+    \  */\n    public void add(Object x){\n        insert(iSize, x);\n    }\n    public\
+    \ Object get(int pos){\n        return iValues[pos];\n    }\n    /**\n    * Insert\
+    \ obj at position pos.\n    * post: get(pos) = x, size() = old size() + 1\n  \
+    \  * @param pos 0 <= pos <= size()\n    * @param obj The element to add.\n   \
+    \ */\n    public void insert(int pos, Object obj){\n        ensureCapcity();\n\
+    \        for(int i = iSize; i > pos; i--){\n            iValues[i] = iValues[i\
+    \ - 1];\n        }\n        iValues[pos] = obj;\n        iSize++;\n    }\n   \
+    \ public Object remove(int pos){\n        Object removedValue = iValues[pos];\n\
+    \        for(int i = pos; i < iSize - 1; i++)\n            iValues[i] = iValues[i\
+    \ + 1];\n        iValues[iSize - 1] = null;\n        iSize--;\n        return\
+    \ removedValue;\n    }\n    private void ensureCapcity(){\n        // is there\
+    \ extra capacity available?\n        // if not, resize\n        if(iSize == iValues.length)\n\
+    \            resize();\n    }\n    public int size(){\n        return iSize;\n\
+    \    }\n    // resize internal container by a factor of 2\n    private void resize()\
+    \ {\n        Object[] temp = new Object[iValues.length * 2];\n        System.arraycopy(iValues,\
+    \ 0, temp, 0, iValues.length);\n        iValues = temp;\n    }\n    /**\n    *\
+    \ Return a String version of this list. Size and\n    * elements included.\n \
+    \   */\n    public String toString(){\n        // we could make this more efficient\
+    \ using a StringBuffer.\n        // See alternative version\n        String result\
+    \ = \"size: \" + iSize + \", elements: [\";\n        for(int i = 0; i < iSize\
+    \ - 1; i++)\n            result += iValues[i].toString() + \", \";\n        if(iSize\
+    \ > 0 )\n            result += iValues[iSize - 1];\n        result += \"]\";\n\
+    \        return result;\n    }\n    // Would not have this and toString available\
+    \ just for testing\n    public String toStringUsingStringBuffer(){\n        StringBuffer\
+    \ result = new StringBuffer();\n        result.append(\"size: \");\n        result.append(iSize);\n\
+    \        result.append(\", elements: [\");\n        for(int i = 0; i < iSize -\
+    \ 1; i++){\n            result.append(iValues[i]);\n            result.append(\"\
+    , \");\n        }\n        if( iSize > 0 )\n            result.append(iValues[iSize\
+    \ - 1]);\n        result.append(\"]\");\n        return result.toString();\n \
+    \   }\n    /**\n    * Default constructor. Creates an empty list.\n    */\n  \
+    \  public GenericList(){\n        // redirect to single int constructor\n    \
+    \    this(DEFAULT_CAP);\n        // other statements could go here.\n    }\n \
+    \   /**\n    * Constructor to allow user of class to specify\n    * initial capacity\
+    \ in case they intend to add a lot\n    * of elements to new list. Creates an\
+    \ empty list.\n    * @param initialCap > 0\n    */\n    public GenericList(int\
+    \ initialCap) {\n        assert initialCap > 0 : \"Violation of precondition.\
+    \ IntListVer1(int initialCap):\"\n                + \"initialCap must be greater\
+    \ than 0\\. Value of initialCap: \" + initialCap;\n        iValues = new Object[initialCap];\n\
+    \        iSize = 0;\n    }\n    /**\n    * Return true if this IntList is equal\
+    \ to other.\n    * pre: none\n    * @param other The object to compare to this\n\
+    \    * @return true if other is a non null, IntList object\n    * that is the\
+    \ same size as thisList and has\n    * elements in the same order, otherwise.\n\
+    \    */\n    public boolean equals(Object other){\n        boolean result;\n \
+    \       if(other == null)\n            // we know this is null so can't be equal\n\
+    \            result = false;\n        else if(this == other)\n            // check\
+    \ if this and other refer to same IntList object\n            result = true;\n\
+    \        else if(this.getClass() != other.getClass())\n            // other is\
+    \ not an IntList they can't be equal\n            result = false;\n        else{\n\
+    \            // other is not null and refers to IntList\n            GenericList\
+    \ otherList = (GenericList)other;\n            result = this.size() == otherList.size();\n\
+    \            int i = 0;\n            while(i < iSize && result){\n           \
+    \     result = this.iValues[i].equals(otherList.iValues[i]);\n               \
+    \ i++;\n            }\n        }\n        return result;\n    }\n}\n```\n\n##\
+    \ Writing Ints File\n\n```java\n// sample code to write 100 random ints to a file,\
+    \ 1 per line\nimport java.io.PrintStream;\nimport java.io.IOException;\nimport\
+    \ java.io.File;\nimport java.util.Random;\n\npublic class WriteToFile\n{\n   \
+    \ public static void main(String[] args)\n    {\n        try {\n            PrintStream\
+    \ writer = new PrintStream(new File(\"randInts.txt\"));\n            Random r\
+    \ = new Random();\n            final int LIMIT = 100;\n            for(int i =\
+    \ 0; i < LIMIT; i++)\n                writer.println(r.nextInt());\n         \
+    \   writer.close();\n        } catch (IOException e) {}\n    }\n}\n```\n\n## Word\
+    \ Counting Code\n\n```java\nimport java.io.File;\nimport java.io.IOException;\n\
+    import java.util.Map;\nimport java.util.Scanner;\nimport java.util.TreeMap;\n\n\
+    public class SimpleWordCounter {\n```\n"
+  raw: '                            }
+
+
+                                assert isAscending( list );
+
+
+                  }
+
+
+                  public static void showList(int[] list)
+
+
+                  {              for(int i = 0; i < list.length; i++)
+
+
+                                              System.out.print( list[i] + " " );
+
+
+                                System.out.println();
+
+
+                  }
+
+
+                  /*               pre: list != null
+
+
+                                post: return true if list is sorted in ascending order,
+    false otherwise
+
+
+                  */
+
+
+                  public static boolean isAscending( int[] list )
+
+
+                  {              boolean ascending = true;
+
+
+                                int index = 1;
+
+
+                                while( ascending && index < list.length )
+
+
+                                {              assert index >= 0 && index < list.length;
+
+
+                                              ascending = (list[index - 1] <= list[index]);
+
+
+                                              index++;
+
+
+                                }
+
+
+                                return ascending;
+
+
+                  }
+
+
+    }
+
+
+    ## Connecting to a Webpage and Reading from It
+
+
+    import java.io.InputStreamReader;
+
+
+    import java.net.URL;
+
+
+    import java.net.URLConnection;
+
+
+    import java.util.Scanner;
+
+
+    public class URLExpSimple {
+
+
+        public static void main(String[] args) {
+
+
+            try {
+
+
+                URL mySite = new URL("http://www.cs.utexas.edu/~scottm");
+
+
+                URLConnection yc = mySite.openConnection();
+
+
+                Scanner in = new Scanner(new InputStreamReader(yc.getInputStream()));
+
+
+                int count = 0;
+
+
+                while (in.hasNext()) {
+
+
+                    System.out.println(in.next());
+
+
+                    count++;
+
+
+                }
+
+
+                System.out.println("Number of tokens: " + count);
+
+
+                in.close();
+
+
+            } catch (Exception e) {
+
+
+                e.printStackTrace();
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+    ## List That Can Store Anything, and Not Only Ints
+
+
+    /**
+
+
+    * A class to provide a simple list.
+
+
+    * List resizes automatically. Used to illustrate
+
+
+    * various design and implementation details of
+
+
+    * a class in Java.
+
+
+    *
+
+
+    * @author scottm
+
+
+    *
+
+
+    */
+
+
+    public class GenericList{
+
+
+        // class constant for default size
+
+
+        private static final int DEFAULT_CAP = 10;
+
+
+        //instance variables
+
+
+        // iValues store the elements of the list and
+
+
+        // may have extra capacity
+
+
+        private Object[] iValues;
+
+
+        private int iSize;
+
+
+        /**
+
+
+         * Default add method. Add x to the end of this IntList.
+
+
+         * Size of the list goes up by 1.
+
+
+         * @param x The value to add to the end of this list.
+
+
+         */
+
+
+        public void add(Object x){
+
+
+            insert(iSize, x);
+
+
+        }
+
+
+        public Object get(int pos){
+
+
+            return iValues[pos];
+
+
+        }
+
+
+        /**
+
+
+         * Insert obj at position pos.
+
+
+         * post: get(pos) = x, size() = old size() + 1
+
+
+         * @param pos 0 <= pos <= size()
+
+
+         * @param obj The element to add.
+
+
+         */
+
+
+        public void insert(int pos, Object obj){
+
+
+            ensureCapcity();
+
+
+            for(int i = iSize; i > pos; i--){
+
+
+                iValues[i] = iValues[i - 1];
+
+
+            }
+
+
+            iValues[pos] = obj;
+
+
+            iSize++;
+
+
+        }
+
+
+        public Object remove(int pos){
+
+
+            Object removedValue = iValues[pos];
+
+
+            for(int i = pos; i < iSize - 1; i++)
+
+
+                iValues[i] = iValues[i + 1];
+
+
+            iValues[iSize - 1] = null;
+
+
+            iSize--;
+
+
+            return removedValue;
+
+
+        }
+
+
+        private void ensureCapcity(){
+
+
+            // is there extra capacity available?
+
+
+            // if not, resize
+
+
+            if(iSize == iValues.length)
+
+
+                resize();
+
+
+        }
+
+
+        public int size(){
+
+
+            return iSize;
+
+
+        }
+
+
+        // resize internal storage container by a factor of 2
+
+
+        private void resize() {
+
+
+            Object[] temp = new Object[iValues.length * 2];
+
+
+            System.arraycopy(iValues, 0, temp, 0, iValues.length);
+
+
+            iValues = temp;
+
+
+        }
+
+
+        /**
+
+
+         * Return a String version of this list. Size and
+
+
+         * elements included.
+
+
+         */
+
+
+        public String toString(){
+
+
+            // we could make this more efficient by using a StringBuffer.
+
+
+            // See alternative version
+
+
+            String result = "size: " + iSize + ", elements: [";
+
+
+            for(int i = 0; i < iSize - 1; i++)
+
+
+                result += iValues[i].toString() + ", ";
+
+
+            if(iSize > 0 )
+
+
+                result += iValues[iSize - 1];
+
+
+            result += "]";
+
+
+            return result;
+
+
+        }
+
+
+        // Would not really have this and toString available
+
+
+        // both included just for testing
+
+
+        public String toStringUsingStringBuffer(){
+
+
+            StringBuffer result = new StringBuffer();
+
+
+            result.append( "size: " );
+
+
+            result.append( iSize );
+
+
+            result.append(", elements: [");
+
+
+            for(int i = 0; i < iSize - 1; i++){
+
+
+                result.append(iValues[i]);
+
+
+                result.append(", ");
+
+
+            }
+
+
+            if( iSize > 0 )
+
+
+                result.append(iValues[iSize - 1]);
+
+
+            result.append("]");
+
+
+            return result.toString();
+
+
+        }
+
+
+        /**
+
+
+         * Default constructor. Creates an empty list.
+
+
+         */
+
+
+        public GenericList(){
+
+
+            //redirect to single int constructor
+
+
+            this(DEFAULT_CAP);
+
+
+            //other statments could go here.
+
+
+        }
+
+
+        /**
+
+
+         * Constructor to allow user of class to specify
+
+
+         * initial capacity in case they intend to add a lot
+
+
+         * of elements to new list. Creates an empty list.
+
+
+         * @param initialCap > 0
+
+
+         */   
+
+
+        public GenericList(int initialCap) {
+
+
+            assert initialCap > 0 : "Violation of precondition. IntListVer1(int initialCap):"
+
+
+                + "initialCap must be greater than 0\. Value of initialCap: " + initialCap;
+
+
+            iValues = new Object[initialCap];
+
+
+            iSize = 0;
+
+
+        }
+
+
+       /**
+
+
+        * Return true if this IntList is equal to other.<br>
+
+
+        * pre: none
+
+
+        * @param other The object to compare to this
+
+
+        * @return true if other is a non null, IntList object
+
+
+        * that is the same size as this IntList and has the
+
+
+        * same elements in the same order, false otherwise.
+
+
+        */
+
+
+        public boolean equals(Object other){
+
+
+            boolean result;
+
+
+            if(other == null)
+
+
+                // we know this is not null so can''t be equal
+
+
+                result = false;
+
+
+            else if(this == other)
+
+
+                // quick check if this and other refer to same IntList object
+
+
+                result = true;
+
+
+            else if( this.getClass() != other.getClass() )
+
+
+                // other is not an IntList they can''t be equal
+
+
+                result = false;
+
+
+            else{
+
+
+                // other is not null and refers to an IntList
+
+
+                GenericList otherList = (GenericList)other;
+
+
+                result = this.size() == otherList.size();
+
+
+                int i = 0;
+
+
+                while(i < iSize && result){
+
+
+                    result = this.iValues[i].equals( otherList.iValues[i] );
+
+
+                    i++;
+
+
+                }
+
+
+            }
+
+
+            return result;    
+
+
+        }
+
+
+    }
+
+
+    ## Writing Ints onto File
+
+
+    //sample code to write 100 random ints to a file, 1 per line
+
+
+    import java.io.PrintStream;
+
+
+    import java.io.IOException;
+
+
+    import java.io.File;
+
+
+    import java.util.Random;
+
+
+    public class WriteToFile
+
+
+    {              public static void main(String[] args)
+
+
+                  {              try
+
+
+                                {              PrintStream writer = new PrintStream(
+    new File("randInts.txt"));
+
+
+                                              Random r = new Random();
+
+
+                                              final int LIMIT = 100;
+
+
+                                              for(int i = 0; i < LIMIT; i++)
+
+
+                                              {              writer.println( r.nextInt()
+    );
+
+
+                                              }
+
+
+                                              writer.close();
+
+
+                                }
+
+
+                                catch(IOException e)
+
+
+    ## Word Counting Code
+
+
+    import java.io.File;
+
+
+    import java.io.IOException;
+
+
+    import java.util.Map;
+
+
+    import java.util.Scanner;
+
+
+    import java.util.TreeMap;
+
+
+    public class SimpleWordCounter {'
+  toc: []
+  trans: "\n\n```java\n    }\n\n    assert isAscending(list);\n\n    }\n\n    public\
+    \ static void showList(int[] list)\n    {\n        for(int i = 0; i < list.length;\
+    \ i++)\n            System.out.print(list[i] + \" \" );\n        System.out.println();\n\
+    \    }\n\n    /*\n        pre: list != null\n        post: 如果 list 是升序排列的返回 true，否则返回\
+    \ false\n    */\n    public static boolean isAscending(int[] list)\n    {\n  \
+    \      boolean ascending = true;\n        int index = 1;\n        while(ascending\
+    \ && index < list.length)\n        {\n            assert index >= 0 && index <\
+    \ list.length;\n            ascending = (list[index - 1] <= list[index]);\n  \
+    \          index++;\n        }\n        return ascending;\n    }\n}\n```\n\n##\
+    \ 连接网页并从中读取内容\n\n```java\nimport java.io.InputStreamReader;\nimport java.net.URL;\n\
+    import java.net.URLConnection;\nimport java.util.Scanner;\n\npublic class URLExpSimple\
+    \ {\n    public static void main(String[] args)\n    {\n        try {\n      \
+    \      URL mySite = new URL(\"http://www.cs.utex.edu/~scott\");\n            URLConnection\
+    \ yc = mySite.openConnection();\n            Scanner in = new Scanner(new InputStreamReader(yc.getInputStream()));\n\
+    \            int count = 0;\n            while (in.hasNext()) {\n            \
+    \    System.out.println(in.next());\n                count++;\n            }\n\
+    \            System.out.println(\"Number of tokens: \" + count);\n           \
+    \ in.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n\
+    \        }\n    }\n}\n```\n\n## 可以存储任何内容（而非整数）的列表\n\n```java\n/**\n* 提供简单列表的类。\n\
+    * List 会自动调整大小。用于演示\n* Java 类中各种* 设计和实现细节。\n*\n* @author scott\n*/\npublic class\
+    \ GenericList{\n    // 默认大小的类常量\n    private static final int DEFAULT_CAP = 10;\n\
+    \    // 实例变量\n    // iValues 存储列表的元素，\n    // 可能有额外的容量\n    private Object[] iValues;\n\
+    \    private int iSize;\n    /**\n    * 默认添加方法。向此列表末尾添加 x。\n    * 列表的大小增加 1。\n\
+    \    * @param x 要添加到此列表末尾的值。\n    */\n    public void add(Object x){\n       \
+    \ insert(iSize, x);\n    }\n    public Object get(int pos){\n        return iValues[pos];\n\
+    \    }\n    /**\n    * 在位置 pos 插入 obj。\n    * post: get(pos) = x, size() = 旧 size()\
+    \ + 1\n    * @param pos 0 <= pos <= size()\n    * @param obj 要添加的元素。\n    */\n\
+    \    public void insert(int pos, Object obj){\n        ensureCapcity();\n    \
+    \    for(int i = iSize; i > pos; i--){\n            iValues[i] = iValues[i - 1];\n\
+    \        }\n        iValues[pos] = obj;\n        iSize++;\n    }\n    public Object\
+    \ remove(int pos){\n        Object removedValue = iValues[pos];\n        for(int\
+    \ i = pos; i < iSize - 1; i++)\n            iValues[i] = iValues[i + 1];\n   \
+    \     iValues[iSize - 1] = null;\n        iSize--;\n        return removedValue;\n\
+    \    }\n    private void ensureCapcity(){\n        // 是否有额外的可用容量？\n        //\
+    \ 如果没有，则调整大小\n        if(iSize == iValues.length)\n            resize();\n   \
+    \ }\n    public int size(){\n        return iSize;\n    }\n    // 按因子 2 调整内部容器\n\
+    \    private void resize() {\n        Object[] temp = new Object[iValues.length\
+    \ * 2];\n        System.arraycopy(iValues, 0, temp, 0, iValues.length);\n    \
+    \    iValues = temp;\n    }\n    /**\n    * 返回此列表的字符串版本。包含大小和    * 元素。\n    */\n\
+    \    public String toString(){\n        // 可以使用 StringBuffer 使此更高效。\n        //\
+    \ 查看替代版本\n        String result = \"size: \" + iSize + \", elements: [\";\n  \
+    \      for(int i = 0; i < iSize - 1; i++)\n            result += iValues[i].toString()\
+    \ + \", \";\n        if(iSize > 0 )\n            result += iValues[iSize - 1];\n\
+    \        result += \"]\";\n        return result;\n    }\n    // 仅为了测试不提供这个和 toString\n\
+    \    public String toStringUsingStringBuffer(){\n        StringBuffer result =\
+    \ new StringBuffer();\n        result.append(\"size: \");\n        result.append(iSize);\n\
+    \        result.append(\", elements: [\");\n        for(int i = 0; i < iSize -\
+    \ 1; i++){\n            result.append(iValues[i]);\n            result.append(\"\
+    , \");\n        }\n        if( iSize > 0 )\n            result.append(iValues[iSize\
+    \ - 1]);\n        result.append(\"]\");\n        return result.toString();\n \
+    \   }\n    /**\n    * 默认构造函数。创建一个空列表。\n    */\n    public GenericList(){\n   \
+    \     // 重定向到单 int 构造函数\n        this(DEFAULT_CAP);\n        // 其他语句可以放在这里。\n\
+    \    }\n    /**\n    * 构造函数允许类用户指定\n    * 初始容量，以防他们打算向新列表\n    * 添加大量元素。创建一个空列表。\n\
+    \    * @param initialCap > 0\n    */\n    public GenericList(int initialCap) {\n\
+    \        assert initialCap > 0 : \"违反了前置条件。IntListVer1(int initialCap):\"\n  \
+    \              + \"initialCap 必须大于 0。initialCap 的值为: \" + initialCap;\n      \
+    \  iValues = new Object[initialCap];\n        iSize = 0;\n    }\n    /**\n   \
+    \ * 如果此 IntList 等于其他，则返回 true。\n    * pre: 无\n    * @param other 要与此比较的对象\n  \
+    \  * @return 如果 other 是一个非空、IntList 对象，\n    * 且与 thisList 大小相同且元素顺序相同，则返回 true；否则如此。\n\
+    \    */\n    public boolean equals(Object other){\n        boolean result;\n \
+    \       if(other == null)\n            // 我们为空所以不相等\n            result = false;\n\
+    \        else if(this == other)\n            // 检查是否指向同一个 IntList 对象\n       \
+    \     result = true;\n        else if(this.getClass() != other.getClass())\n \
+    \           // other 不是 IntList 所以不相等\n            result = false;\n        else{\n\
+    \            // other 不空且是 IntList\n            GenericList otherList = (GenericList)other;\n\
+    \            result = this.size() == otherList.size();\n            int i = 0;\n\
+    \            while(i < iSize && result){\n                result = this.iValues[i].equals(otherList.iValues[i]);\n\
+    \                i++;\n            }\n        }\n        return result;\n    }\n\
+    }\n```\n\n"
+- fmt: "\n```java\npublic static void main(String[] args) {\n    try {\n        File\
+    \ f = new File(\"ciaFactBook2008.txt\");\n        Scanner sc;\n        sc = new\
+    \ Scanner(f);\n        // sc.useDelimiter(\"[^a-zA-Z']+\");\n        Map<String,\
+    \ Integer> wordCount = new TreeMap<String, Integer>();\n        while(sc.hasNext())\
+    \ {\n            String word = sc.next();\n            if(!wordCount.containsKey(word))\n\
+    \                wordCount.put(word, 1);\n            else\n                wordCount.put(word,\
+    \ wordCount.get(word) + 1);\n        }\n        // show results\n        for(String\
+    \ word : wordCount.keySet())\n            System.out.println(word + \" \" + wordCount.get(word));\n\
+    \        System.out.println(wordCount.size());\n    }\n    catch(IOException e)\
+    \ {\n        System.out.println(\"Unable to read from file.\");\n    }\n}\n{\n\
+    \    System.out.println(\"An error occured while trying to write to the file\"\
+    );\n}\n}\n```\n\n## Using Scanner Class to Read Ints From File\n\n```java\nimport\
+    \ java.util.Scanner;\n\npublic class ScannerAndKeyboard\n{\n    public static\
+    \ void main(String[] args)\n    {\n        Scanner s = new Scanner(System.in);\n\
+    \        System.out.print( \"Enter your name: \" );\n        String name = s.nextLine();\n\
+    \        System.out.println( \"Hello \" + name + \"!\" );\n    }\n}\n```\n\nJAVA\n\
+    \nFREE Books and Relevant Information Brought to you by C Tech Publishing\n\n\
+    CLICK BELOW\n\n[![gift_button.png](images/00002.jpeg)](http://acepublishing.gr8.com/)\n\
+    \nPublished By:\n\nC Tech Publishing\n\nManufactured in Canada\n\nCopyright 2015\
+    \ © All Rights Reserved\n"
+  raw: '    public static void main(String[] args) {
+
+
+            try {
+
+
+                File f = new File("ciaFactBook2008.txt");
+
+
+                Scanner sc;
+
+
+                sc = new Scanner(f);
+
+
+                // sc.useDelimiter("[^a-zA-Z'']+");
+
+
+                Map<String, Integer> wordCount = new TreeMap<String, Integer>();
+
+
+                while(sc.hasNext()) {
+
+
+                    String word = sc.next();
+
+
+                    if(!wordCount.containsKey(word))
+
+
+                        wordCount.put(word, 1);
+
+
+                    else
+
+
+                        wordCount.put(word, wordCount.get(word) + 1);
+
+
+                }
+
+
+                // show results
+
+
+                for(String word : wordCount.keySet())
+
+
+                    System.out.println(word + " " + wordCount.get(word));
+
+
+                System.out.println(wordCount.size());
+
+
+            }
+
+
+            catch(IOException e) {
+
+
+                System.out.println("Unable to read from file.");
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+                                {              System.out.println("An error occured
+    while trying to write to the file");
+
+
+                                }
+
+
+                  }
+
+
+    }
+
+
+    ## Using Scanner Class to Read Ints From File
+
+
+    import java.util.Scanner;
+
+
+    public class ScannerAndKeyboard
+
+
+    {
+
+
+                  public static void main(String[] args)
+
+
+                  {              Scanner s = new Scanner(System.in);
+
+
+                                System.out.print( "Enter your name: "  );
+
+
+                                String name = s.nextLine();
+
+
+                                System.out.println( "Hello " + name + "!" );
+
+
+                  }
+
+
+    }
+
+
+    JAVA
+
+
+    FREE Books and Relevant Information Brought to you by C Tech Publishing
+
+
+    CLICK BELOW
+
+
+    [![gift_button.png](images/00002.jpeg)](http://acepublishing.gr8.com/)
+
+
+    Published By:
+
+
+    C Tech Publishing
+
+
+    Manufactured in Canada
+
+
+    Copyright 2015 © All Rights Reserved'
+  toc: []
+  trans: "\n\n```java\npublic static void main(String[] args) {\n    try {\n     \
+    \   File f = new File(\"ciaFactBook2008.txt\");\n        Scanner sc;\n       \
+    \ sc = new Scanner(f);\n        // sc.useDelimiter(\"[^a-zA-Z']+\");\n       \
+    \ Map<String, Integer> wordCount = new TreeMap<String, Integer>();\n        while(sc.hasNext())\
+    \ {\n            String word = sc.next();\n            if(!wordCount.containsKey(word))\n\
+    \                wordCount.put(word, 1);\n            else\n                wordCount.put(word,\
+    \ wordCount.get(word) + 1);\n        }\n        // show results\n        for(String\
+    \ word : wordCount.keySet())\n            System.out.println(word + \" \" + wordCount.get(word));\n\
+    \        System.out.println(wordCount.size());\n    }\n    catch(IOException e)\
+    \ {\n        System.out.println(\"Unable to read from file.\");\n    }\n}\n{\n\
+    \    System.out.println(\"An error occured while trying to write to the file\"\
+    );\n}\n}\n```\n\n## 使用 Scanner 类从文件读取整数\n\n```java\nimport java.util.Scanner;\n\
+    \npublic class ScannerAndKeyboard\n{\n    public static void main(String[] args)\n\
+    \    {\n        Scanner s = new Scanner(System.in);\n        System.out.print(\
+    \ \"Enter your name: \" );\n        String name = s.nextLine();\n        System.out.println(\
+    \ \"Hello \" + name + \"!\" );\n    }\n}\n```\n\nJAVA\n\n由 C Tech Publishing 提供的免费书籍及相关信息\n\
+    \n点击下方\n\n![gift_button.png](http://acepublishing.gr8.com/)\n\n出版商：\n\nC Tech\
+    \ Publishing\n\n加拿大制造\n\n版权 2015 © 版权所有\n\n"

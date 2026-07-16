@@ -1,0 +1,326 @@
+name: Javascript： Javascript Back End Programming
+name_cn: Javascript 后端编程
+slug: javascript-javascript-back-end-programming
+toc:
+- - '#'
+  - Javascript 后端编程
+- - '##'
+  - 简介
+- - '###'
+  - Node.js 特性
+- - '###'
+  - 先决条件
+- - '#'
+  - 第一章：搭建你的 Node.js 环境
+- - '##'
+  - Windows
+- - '###'
+  - 验证安装
+- - '##'
+  - Mac 和 Linux
+- - '###'
+  - 验证下载
+- - '##'
+  - IDE 安装
+- - '###'
+  - IDE – Visual Studio Code
+- - '####'
+  - Windows
+- - '####'
+  - Mac
+- - '##'
+  - Hello World
+- - '###'
+  - 集成终端
+- - '###'
+  - 调试 Hello World
+- - '##'
+  - Express 应用
+- - '###'
+  - Excellent 的代码编辑
+- - '###'
+  - 调试 Express 应用
+- - '##'
+  - 第一步 — 启动和停止 REPL
+- - '##'
+  - 第二步 — 在 REPL 中执行代码
+- - '###'
+  - 调用函数
+- - '###'
+  - 创建变量
+- - '###'
+  - 多行块
+- - '##'
+  - 第三步 — 掌握 REPL 快捷键
+- - '##'
+  - 第四步 — REPL 命令
+- - '##'
+  - 版本控制
+- - '##'
+  - 运行任务
+- - '##'
+  - npm 将包安装在何处？
+- - '##'
+  - 使用或执行用 npm 安装的包
+- - '##'
+  - 第四章：Node.js 回调与 Promise
+- - '##'
+  - 第五章：异步 JavaScript 编程
+- - '###'
+  - '[同步 JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing#synchronous_javascript)'
+- - '###'
+  - 异步 JavaScript
+- - '###'
+  - 异步回调 (Async Callbacks)
+- - '###'
+  - Promise (Promises)
+- - '###'
+  - Promise 与 回调 (Promises vs. Callbacks)
+- - '###'
+  - 异步代码的本质
+- - '##'
+  - 第六章：Node.js 事件循环与发射器
+- - '###'
+  - 阶段概述
+- - '###'
+  - 定时器
+- - '###'
+  - 待处理回调
+- - '###'
+  - 轮询
+- - '###'
+  - 检查阶段 (Check Phase)
+- - '###'
+  - 关闭回调 (Close Callbacks)
+- - '###'
+  - setImmediate() vs setTimeout()
+- - '###'
+  - process.nextTick()
+- - '###'
+  - process.nextTick() vs setImmediate()
+- - '###'
+  - 为什么使用 process.nextTick()？
+- - '##'
+  - 第七章：Node.js Buffers
+- - '###'
+  - 什么是 Buffers？
+- - '###'
+  - 创建 Buffers
+- - '###'
+  - 写入 Buffers
+- - '###'
+  - '从 Buffers 读取：toString:'
+- - '###'
+  - 效率
+- - '###'
+  - 实际示例
+- - '###'
+  - 异步迭代器 (Async Iterator)
+- - '###'
+  - 'Readable.from(): 如何从可迭代对象创建可读流'
+- - '##'
+  - 两种读取模式
+- - '##'
+  - 如何创建可写流 (Writable Stream)
+- - '##'
+  - 管道 (Pipeline)
+- - '##'
+  - Stream 模块 (The Stream Module)
+- - '##'
+  - 流驱动的 Node API (Streams-Powered Node APIs)
+- - '##'
+  - 用例场景
+- - '##'
+  - 使用 `fs` 模块的一些常用 I/O 操作包括：
+- - '###'
+  - 读取文件
+- - '####'
+  - 参数
+- - '###'
+  - 写入文件
+- - '####'
+  - 参数
+- - '###'
+  - 打开文件
+- - '####'
+  - 参数：
+- - '####'
+  - 标志 (Flags)
+- - '###'
+  - 删除文件
+- - '##'
+  - 重要的 fs 方法
+- - '##'
+  - 第十章：Node.js 全局对象
+- - '###'
+  - 全局对象
+- - '###'
+  - 全局模块和函数
+- - '###'
+  - Process
+- - '###'
+  - Buffer
+- - '###'
+  - 前提条件
+- - '###'
+  - Process
+- - '##'
+  - require()
+- - '##'
+  - __dirname
+- - '##'
+  - __filename
+- - '##'
+  - module
+- - '##'
+  - URL
+- - '##'
+  - 第十一章：Node.JS 实用模块
+- - '###'
+  - OS 模块
+- - '###'
+  - OS 模块方法
+- - '###'
+  - OS 模块属性
+- - '###'
+  - Path 模块
+- - '###'
+  - Path 模块方法
+- - '###'
+  - Path 模块属性
+- - '##'
+  - Net 模块
+- - '###'
+  - Net 模块方法
+- - '###'
+  - 类 - net.Server
+- - '###'
+  - net.Server 方法
+- - '###'
+  - 事件
+- - '###'
+  - 类 - net.Socket
+- - '###'
+  - net.Socket 事件
+- - '###'
+  - net.Socket 属性
+- - '###'
+  - net.Socket 方法
+- - '##'
+  - Socket 方法
+- - '##'
+  - DNS 模块
+- - '###'
+  - DNS 模块方法
+- - '###'
+  - DNS 模块 rrtypes
+- - '##'
+  - DNS 模块错误代码
+- - '##'
+  - Domain 模块
+- - '###'
+  - 内部绑定
+- - '###'
+  - 外部绑定
+- - '###'
+  - Domain 方法
+- - '###'
+  - Domain 属性
+- - '##'
+  - 第十二章：Node.js Web 模块
+- - '###'
+  - Web 应用架构
+- - '###'
+  - 使用 Node 创建 Web 服务器
+- - '###'
+  - 向 Node.js 服务器发送请求
+- - '###'
+  - 使用 Node 创建 Web 客户端
+- - '##'
+  - 第十三章：Node.js Express 框架
+- - '###'
+  - 什么是 Express.js?
+- - '###'
+  - 安装并使用 Express
+- - '###'
+  - 什么是路由 (Routes)?
+- - '###'
+  - 3. 默认路由 / - 这将显示“Welcome to My Tutorials”字符串
+- - '####'
+  - 代码解释：
+- - '###'
+  - 使用 Express.js 构建 Web 服务器
+- - '####'
+  - 代码解释：
+- - '###'
+  - 快速总结
+- - '##'
+  - 第十四章：Node.js RESTful API
+- - '###'
+  - HTTP 方法
+- - '###'
+  - RESTful 服务
+- - '###'
+  - 为库创建 RESTful
+- - '###'
+  - 列出用户
+- - '###'
+  - 添加用户
+- - '###'
+  - 显示详情
+- - '###'
+  - 删除用户
+- - '##'
+  - Cluster 模块
+- - '##'
+  - HTTP 服务器的负载均衡
+- - '##'
+  - 广播消息
+- - '##'
+  - 增加服务器的可用性
+- - '##'
+  - 零停机重启
+- - '##'
+  - 共享状态与负载均衡
+- - '##'
+  - 第十六章：Node.js 打包
+- - '###'
+  - 依赖版本控制
+- - '###'
+  - 部署成功并不由你控制
+- - '###'
+  - 打包你的 Node.js 应用
+- - '###'
+  - 创建了 ../RandomQuotes.1.0.zip (5.2 MB)
+- - '###'
+  - 使用命令行打包
+- - '###'
+  - 使用代码打包
+- - '##'
+  - MongoDB + Mongoose
+- - '###'
+  - 为什么你需要 Mongoose
+- - '###'
+  - 连接 Mongoose + MongoDB
+- - '###'
+  - 执行 Mongoose 操作
+- - '###'
+  - 基于游标的查询
+- - '###'
+  - 全量查询
+- - '###'
+  - 使用 Mongoose 模型
+- - '###'
+  - 执行 CRUD 操作
+- - '###'
+  - 创建操作（Create Operation）
+- - '###'
+  - 读取操作（Read Operation）
+- - '##'
+  - 更新操作
+- - '##'
+  - 删除操作
+- - '##'
+  - 结论
+- - '##'
+  - 参考文献

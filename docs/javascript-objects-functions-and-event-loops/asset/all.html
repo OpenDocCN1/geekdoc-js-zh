@@ -1,0 +1,3614 @@
+<p><img src="images/calibre_cover.jpg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 790 1186" preserveaspectratio="none">
+<image width="790" height="1186" xlink:href="images/calibre_cover.jpg"></image>
+</svg>
+</div>
+<p><span id="index_split_000.html"></span></p>
+<p><span class="calibre1"><span class="bold">Javascript: Objects,
+Functions, and Event Loops</span></span></p>
+<p><span class="calibre2"><span class="bold">by J Adrian
+Zimmer</span></span></p>
+<p>Author's email: jazimmer@BonsaiReads.com.</p>
+<p>Published by <a href="http://BonsaiReads.com">Bonsai Reads</a> and
+distributed by Amazon.</p>
+<p>Cover Design: J Adrian Zimmer</p>
+<div id="index_split_000.html_calibre_pb_0" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_001.html"></span></p>
+<p>Copyright 2017 by J Adrian Zimmer</p>
+<p>All rights reserved. Permission to copy is granted to the purchaser
+for personal use provided purchaser takes reasonable steps to prohibit
+further copying by others.</p>
+<p>Edition: 1.0</p>
+<p>There are two tables of contents. One is an annotated list of
+sections. The other has a listing for every major code segment.</p>
+<div id="index_split_001.html_calibre_pb_1" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_002.html"></span></p>
+<p><span class="calibre1"><span class="bold">Annotated List of
+Keywords</span></span></p>
+<p><span class="calibre3"><span
+class="bold">Javascript</span></span></p>
+<p>For Javascript programmers who are ready to learn something more
+about how things work.</p>
+<p><span class="calibre3"><span class="bold">Objects</span></span></p>
+<p>Javascript is object oriented, but not class oriented.</p>
+<p><span class="calibre3"><span class="bold">Functions</span></span></p>
+<p>Javascript functions are callable objects.</p>
+<p><span class="calibre3"><span class="bold">Event</span></span></p>
+<p>Events from outside the Javascript system cause handler functions to
+be queued for later execution.</p>
+<p><span class="calibre3"><span class="bold">Event
+Loop</span></span></p>
+<p>Event loop processing chooses queued functions one by one for
+execution. Functions are usually, but not exclusively, queued as a
+response to an outside event.</p>
+<p><span class="calibre3"><span class="bold">Macrotask
+queue</span></span></p>
+<p>Think of the macrotask queue as the event-handler queue.</p>
+<p><span class="calibre3"><span class="bold">Microtask
+queue</span></span></p>
+<p>Think of the microtask queue as the me-first queue.</p>
+<p><span class="calibre3"><span class="bold">Promises</span></span></p>
+<p>Promises handle asynchronous requests, sequencing follow up actions
+on the me-first queue.</p>
+<p><span class="calibre3"><span class="bold">Pseudo
+Classes</span></span></p>
+<p>Javascript's clever use of <span class="calibre4"><code
+class="calibre5">new</code></span> makes an object-based language look
+class-based.</p>
+<div id="index_split_002.html_calibre_pb_2" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_003.html"></span></p>
+<p><span class="calibre1"><span class="bold">Annotated List of
+Sections</span></span></p>
+<p><a href="#index_split_005.html_filepos8396"><span
+class="calibre3"><span class="bold">I. Object
+Inheritance</span></span></a></p>
+<p>A quick look at the role of prototypes in object inheritance
+chains.</p>
+<p><a href="#index_split_008.html_filepos15555"><span
+class="calibre3"><span class="bold">II. Functions</span></span></a></p>
+<p>Functions are callable objects which inherit their function
+characteristics.</p>
+<p><a href="#index_split_014.html_filepos24867"><span
+class="calibre3"><span class="bold">III. Centering Two Lines of
+Text</span></span></a></p>
+<p>A webpage template for our example scripts.</p>
+<p><a href="#index_split_018.html_filepos30319"><span
+class="calibre3"><span class="bold">IV. Event
+Loops</span></span></a></p>
+<p>Making use of an event handler.</p>
+<p><a href="#index_split_022.html_filepos37930"><span
+class="calibre3"><span class="bold">V. Multitasking with an Event
+Loop</span></span></a></p>
+<p>Setting up two independent repeating processes.</p>
+<p><a href="#index_split_027.html_filepos44854"><span
+class="calibre3"><span class="bold">VI. Multitasking with Event
+Queuing</span></span></a></p>
+<p>Eliminating <span class="calibre4"><code
+class="calibre5">setTimeout</code></span> from repetitive processes.</p>
+<p><a href="#index_split_032.html_filepos59787"><span
+class="calibre3"><span class="bold">VII. Functions as
+Objects</span></span></a></p>
+<p>Adding a state to <span class="calibre4"><code
+class="calibre5">writeMessage</code></span> and <span
+class="calibre4"><code class="calibre5">setColor</code></span>.</p>
+<p><a href="#index_split_036.html_filepos66178"><span
+class="calibre3"><span class="bold">VIII. Promises</span></span></a></p>
+<p>How promises decouple the steps of a process while making use of a
+me-first queue.</p>
+<p><a href="#index_split_046.html_filepos85813"><span
+class="calibre3"><span class="bold">IX. Multitasking Example with
+Promises</span></span></a></p>
+<p>Independent repeating processes with promises.</p>
+<p><a href="#index_split_049.html_filepos91680"><span
+class="calibre3"><span class="bold">X. Making
+Promises</span></span></a></p>
+<p>Two examples in which promises manage responses to outside
+events.</p>
+<p><a href="#index_split_056.html_filepos106371"><span
+class="calibre3"><span class="bold">XI. Implementing </span></span><span
+class="calibre4"><span class="bold"><code
+class="calibre5">hesitating</code></span></span></a></p>
+<p>Implementing the <span class="calibre4"><code
+class="calibre5">hesitating</code></span> factory method.</p>
+<p><a href="#index_split_059.html_filepos111516"><span
+class="calibre3"><span class="bold">XII. More on Object Orientation in
+Javascript</span></span></a></p>
+<p>How the <span class="calibre4"><code
+class="calibre5">new</code></span> operator fakes classes.</p>
+<div id="index_split_003.html_calibre_pb_3" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_004.html"></span></p>
+<p><span class="calibre1"><span class="bold">Preface</span></span></p>
+<p>“Javascript: Objects, Functions, and Event Loops” is not an
+introductory book nor does it go into lots of detail. Rather it goes
+into depth about a few concepts whose Javascript variations confuse many
+programmers, namely objects, functions, promises, event loop
+programming, and the way Javascript fakes classes. The intent is to
+provide a solid base on which to continue building your understanding of
+Javascript. To that end, each section contains a single exercise which
+you should attempt before paging ahead to the answer. Even if you do not
+finish the exercise, the attempt will make the answer more meaningful
+and later sections more intelligible.</p>
+<p>It is assumed that you already know some Javascript and are familiar
+with class-based object orientation as found in languages such as Java
+and Python.</p>
+<p>This ebook has a <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/">Github
+repository</a> where you can find downloadable copies of the answers to
+exercises. It also contains two useful factory methods.</p>
+<p>Be aware that the formatting of scripts and interactive sessions in
+this ebook is not meant to be exemplary. Rather it is meant to produce
+short lines so that the scripts can be read more easily on small
+screens.</p>
+<p>You can recognize interactive sessions because they have lines
+beginning with <span class="calibre4"><code
+class="calibre5">&gt;</code></span>. They are transcribed from the <a
+href="https://nodejs.org/">Node.js</a> interpreter but the
+transcriptions have many appearances of <span class="calibre4"><code
+class="calibre5">undefined</code></span> removed. For example</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var x = 'hi'</code></span><br />
+<span class="calibre6"><code
+class="calibre5">undefined </code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; console.log(x)</code></span><br />
+<span class="calibre6"><code class="calibre5">hi</code></span><br />
+<span class="calibre6"><code
+class="calibre5">undefined</code></span><br />
+
+</blockquote>
+<p>is transcribed merely as</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var x = 'hi'</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; console.log(x)</code></span><br />
+<span class="calibre6"><code class="calibre5">hi</code></span><br />
+
+</blockquote>
+<p>Both <span class="calibre4"><code class="calibre5">var</code></span>
+and <span class="calibre4"><code
+class="calibre5">console.log</code></span> actually return <span
+class="calibre4"><code class="calibre5">undefined</code></span> but to
+see that in the transcript is confusing because we do not think of them
+as returning anything.</p>
+<div id="index_split_004.html_calibre_pb_4" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_005.html"></span></p>
+<p><span class="calibre1"><span class="bold">I. Object
+Inheritance</span></span></p>
+<p>A counting object in Javascript might be defined this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var counter = { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">  val: 0,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  incr: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">          this.val += 1; </code></span><br />
+<span class="calibre6"><code
+class="calibre5">          return this.val </code></span><br />
+<span class="calibre6"><code
+class="calibre5">        }</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>Do not confuse this with a class. It is an object. As you will see,
+it can inherit from other objects in much the same way that classes can
+inherit from other classes. But it is nevertheless an object.</p>
+<p>Both <span class="calibre4"><code class="calibre5">val</code></span>
+and <span class="calibre4"><code class="calibre5">incr</code></span> are
+<span class="italic">properties</span> of the object. You can see that
+one represents an integer and the other a function. The property <span
+class="calibre4"><code class="calibre5">incr</code></span> would
+normally be called a “method”. Methods can be assigned this way because
+functions can be assigned to variables and properties. They can be
+passed as arguments and can serve as return values. In other words they
+are <span class="italic">first class</span>. (Yep, the “class” in “first
+class” is different than the object-oriented “class”.)</p>
+<p>Javascript has a built-in object named <span class="calibre4"><code
+class="calibre5">Object</code></span> whose methods help programmers
+manipulate objects. Two example methods are <span class="calibre4"><code
+class="calibre5">getOwnPropertyNames</code></span> and <span
+class="calibre4"><code class="calibre5">getPrototypeOf</code></span>.
+When applied to <span class="calibre4"><code
+class="calibre5">counter</code></span> these functions produce</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; Object.getOwnPropertyNames(counter)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">[ 'val', 'incr' ]</code></span><br />
+
+</blockquote>
+<p>and</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var getP = Object.getPrototypeOf;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; getP(counter)  === Object.prototype</code></span><br />
+<span class="calibre6"><code class="calibre5">true</code></span><br />
+
+</blockquote>
+<p>To get “own” property names means to get the properties that are in
+the object itself and not those inherited from other objects.</p>
+<p>The <span class="calibre4"><code
+class="calibre5">getPrototypeOf</code></span> method returns the
+immediate predecessor of its argument in an inheritance chain. You can
+think of this as the “super” object. Often it is referred to as the
+[[Prototype]] of an object.</p>
+<p>Many objects have a property named <span class="calibre4"><code
+class="calibre5">prototype</code></span>. As you will see <span
+class="calibre4"><code class="calibre5">prototype</code></span>s become
+[[Prototype]]s of other objects. They are not the [[Prototype]]s of the
+objects to which they belong. In some cases they may not be
+[[Prototype]]s of any object.</p>
+<p>For example <span class="calibre4"><code
+class="calibre5">Object.prototype</code></span> becomes the last object
+in the inheritance chains of most other objects. So most objects have
+access to a <span class="calibre4"><code
+class="calibre5">toString</code></span> method because <span
+class="calibre4"><code class="calibre5">toString</code></span> is
+present in <span class="calibre4"><code
+class="calibre5">Object.prototype</code></span>.</p>
+<p>There are other useful functions in <span class="calibre4"><code
+class="calibre5">Object</code></span>. One I will make use of is <span
+class="calibre4"><code class="calibre5">Object.create</code></span>
+which can create an empty object that has a designated [[Prototype]]. In
+particular this expression</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Object.create{obj}</code></span><br />
+
+</blockquote>
+<p>creates a new empty object whose [[Prototype]] is <span
+class="calibre4"><code class="calibre5">obj</code></span>.</p>
+<div id="index_split_005.html_calibre_pb_5" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_006.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Implement <span class="calibre4"><code
+class="calibre5">counter</code></span> as above and then</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>create <span class="calibre4"><code
+class="calibre5">counter2</code></span> which inherits from <span
+class="calibre4"><code class="calibre5">counter</code></span> and adds a
+<span class="calibre4"><code class="calibre5">decr</code></span> method
+which decrements <span class="calibre4"><code
+class="calibre5">val</code></span> by 1.</li>
+<li><p>check to see what each of</p>
+<p><span class="calibre4"><code
+class="calibre5">Object.getOwnPropertyNames(counter2)</code></span><br />
+<span class="calibre4"><code
+class="calibre5">Object.getOwnPropertyNames(counter)</code></span><br />
+</p>
+<p>returns. The answer isn't completely apparent from what has been
+said, so experiment a bit.</p></li>
+</ol>
+<div id="index_split_006.html_calibre_pb_6" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_007.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>Create <span class="calibre4"><code
+class="calibre5">counter2</code></span> this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var counter2 = Object.create(counter);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">counter2.decr = function() { this.var -= 1 }</code></span><br />
+
+</blockquote>
+<p>The own properties of <span class="calibre4"><code
+class="calibre5">counter</code></span> are of course</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; Object.getOwnPropertyNames(counter)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">[ 'val', 'incr' ]</code></span><br />
+
+</blockquote>
+<p>However the order in which you see them will be depend on how the
+Javascript engine is implemented.</p>
+<p>If you didn't get two different answers for the own properties of
+<span class="calibre4"><code class="calibre5">counter2</code></span>,
+you missed something. Things change when you execute <span
+class="calibre4"><code class="calibre5">incr</code></span> or <span
+class="calibre4"><code class="calibre5">decr</code></span>.</p>
+<p>Upon creation</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; Object.getOwnPropertyNames(counter2)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">[ 'decr' ]</code></span><br />
+
+</blockquote>
+<p>but after either of <span class="calibre4"><code
+class="calibre5">counter2.incr</code></span> or <span
+class="calibre4"><code class="calibre5">counter2.decr</code></span> has
+executed, you will get</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; Object.getOwnPropertyNames(counter2)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">[ 'decr', 'val' ]</code></span><br />
+
+</blockquote>
+<p>The reason is that <span class="calibre4"><code
+class="calibre5">counter2</code></span> can fetch data values from <span
+class="calibre4"><code class="calibre5">counter</code></span> through
+inheritance but it cannot alter them. When alteration is necessary a new
+property in <span class="calibre4"><code
+class="calibre5">counter2</code></span> is made. After that, fetching
+from <span class="calibre4"><code
+class="calibre5">counter2</code></span> will be of <span
+class="calibre4"><code class="calibre5">counter2</code></span>'s
+property not its original in <span class="calibre4"><code
+class="calibre5">counter</code></span>.</p>
+<p>This means that <span class="calibre4"><code
+class="calibre5">counter</code></span> can be used to give an initial
+value to any object for which it is a [[Prototype]].</p>
+<div id="index_split_007.html_calibre_pb_7" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_008.html"></span></p>
+<p><span class="calibre1"><span class="bold">II.
+Functions</span></span></p>
+<p>Functions are callable objects which means:</p>
+<div class="calibre_3">
+ 
+</div>
+<ul>
+<li>they are objects containing the function body (probably in compiled
+form).</li>
+<li>their inheritance chains have access to methods which can execute
+this function body.</li>
+</ul>
+<p>The reason function objects can have access to methods which execute
+their code is that their inheritance chains have</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Function.prototype</code></span><br />
+
+</blockquote>
+<p>inserted in them. There are two methods in <span
+class="calibre4"><code class="calibre5">Function.prototype</code></span>
+which can execute a function, namely <span class="calibre4"><code
+class="calibre5">apply</code></span> and <span class="calibre4"><code
+class="calibre5">call</code></span>.</p>
+<p>The following short interactive session shows the inheritance chain
+of a function.</p>
+<div id="index_split_008.html_calibre_pb_8" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_009.html"></span></p>
+<p><span class="bold">Clarifing </span><span class="calibre4"><span
+class="bold"><code
+class="calibre5">Function.prototype</code></span></span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var getP = Object.getPrototypeOf;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; function f() {}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; getP(f)===Function.prototype</code></span><br />
+<span class="calibre6"><code class="calibre5">true</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; getP(Function.prototype)===Object.prototype</code></span><br />
+<span class="calibre6"><code class="calibre5">true</code></span><br />
+
+</blockquote>
+<p>Both <span class="calibre4"><code
+class="calibre5">apply</code></span> and <span class="calibre4"><code
+class="calibre5">call</code></span> require an argument which specifies
+which object <span class="calibre4"><code
+class="calibre5">this</code></span> will refer to when the function is
+executing. In addition both these functions accept a list of normal
+arguments. They differ only in the way the arguments list is specified.
+You can see the difference in the following example.</p>
+<div id="index_split_009.html_calibre_pb_9" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_010.html"></span></p>
+<p><span class="bold">Difference between </span><span
+class="calibre4"><span class="bold"><code
+class="calibre5">call</code></span></span><span class="bold"> and
+</span><span class="calibre4"><span class="bold"><code
+class="calibre5">apply</code></span></span></p>
+<p>Assume this definition</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f(x,y) { return x+y }</code></span><br />
+
+</blockquote>
+<p>Then this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">f.call({},2,3)</code></span><br />
+
+</blockquote>
+<p>and this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">f.apply({},[2,3])</code></span><br />
+
+</blockquote>
+<p>will both return 5.</p>
+<p>In both cases <span class="calibre4"><code
+class="calibre5">this</code></span> refers to an empty object.</p>
+<p>A more informative example involves this function</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f(x) { return x+this.y }</code></span><br />
+
+</blockquote>
+<p>which expects to be executed in the context of a <span
+class="calibre4"><code class="calibre5">this</code></span> object that
+contains <span class="calibre4"><code class="calibre5">y</code></span>.
+Execute it this way</p>
+<blockquote>
+<span class="calibre6"><code class="calibre5">f(2)</code></span><br />
+
+</blockquote>
+<p>and <span class="calibre4"><code class="calibre5">this</code></span>
+will refer to the global object. Execution will fail unless <span
+class="calibre4"><code class="calibre5">y</code></span> has been
+assigned a value globally.</p>
+<p>Another way to execute <span class="calibre4"><code
+class="calibre5">f</code></span> is</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var obj = {f:f, y;3}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; obj.f(2)</code></span><br />
+<span class="calibre6"><code class="calibre5">5</code></span><br />
+
+</blockquote>
+<p>This works because <span class="calibre4"><code
+class="calibre5">obj</code></span> contains both <span
+class="calibre4"><code class="calibre5">y</code></span> and <span
+class="calibre4"><code class="calibre5">f</code></span>. If <span
+class="calibre4"><code class="calibre5">f</code></span> is missing from
+the object then it won't work.</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var obj = {y:3}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; obj.f(2)         // nope</code></span><br />
+
+</blockquote>
+<p>What <span class="calibre4"><code class="calibre5">call</code></span>
+and <span class="calibre4"><code class="calibre5">apply</code></span> do
+is allow <span class="calibre4"><code
+class="calibre5">this</code></span> to refer to a different object than
+<span class="calibre4"><code class="calibre5">f</code></span> is
+executed from. For example we can execute <span class="calibre4"><code
+class="calibre5">f</code></span> from the global object with <span
+class="calibre4"><code class="calibre5">this.y</code></span> taken from
+a different object this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; Object.apply({y:3},f)</code></span><br />
+<span class="calibre6"><code class="calibre5">5</code></span><br />
+
+</blockquote>
+<p>To summarize: functions are callable objects, methods are functions,
+and <span class="calibre4"><code class="calibre5">this</code></span> is
+determined by the context in which a function is executed. You can mess
+with that context by using <span class="calibre4"><code
+class="calibre5">call</code></span> or <span class="calibre4"><code
+class="calibre5">apply</code></span>.</p>
+<p>You can read more about <span class="calibre4"><code
+class="calibre5">this</code></span> in the next section.</p>
+<div id="index_split_010.html_calibre_pb_10" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_011.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>When a function <span class="calibre4"><code
+class="calibre5">f</code></span> executes, the object pointed to by
+<span class="calibre4"><code class="calibre5">this</code></span> is
+determined by the context in which it executes. What if that is not
+wanted? Suppose I want the <span class="calibre4"><code
+class="calibre5">this</code></span> in a function definition to point to
+the same thing regardless of context. That can be accomplished with
+either <span class="calibre4"><code class="calibre5">call</code></span>
+or <span class="calibre4"><code class="calibre5">apply</code></span> but
+these functions are unpleasant to use.</p>
+<p>This is a problem you can fix. Create a factory method <span
+class="calibre4"><code class="calibre5">fixThis</code></span> such
+that</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">f.fixThis(obj);</code></span><br />
+
+</blockquote>
+<p>will return a function just like <span class="calibre4"><code
+class="calibre5">f</code></span> except that its <span
+class="calibre4"><code class="calibre5">this</code></span> pointer will
+always reference <span class="calibre4"><code
+class="calibre5">obj</code></span>. For example</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; function f(z) { return z + this.x }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var x = '?'</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; f('hi')</code></span><br />
+<span class="calibre6"><code class="calibre5">'hi?'</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var obj = { x: '!' }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var g = f.fixThis(obj)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; g('hi')</code></span><br />
+<span class="calibre6"><code class="calibre5">'hi!'</code></span><br />
+
+</blockquote>
+<p>You may know that <span class="calibre4"><code
+class="calibre5">Function.prototype</code></span> already contains a
+function <span class="calibre4"><code
+class="calibre5">bind</code></span> which behaves like <span
+class="calibre4"><code class="calibre5">fixThis</code></span>. Using
+that function would be to miss the point of this exercise.</p>
+<div id="index_split_011.html_calibre_pb_11" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_012.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>You probably figured out that the definition needs to start this
+way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Function.prototype.fixThis = function(obj) {</code></span><br />
+<span class="calibre6"><code class="calibre5">   …</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>and that you need to define a function for <span
+class="calibre4"><code class="calibre5">fixThis</code></span> to return.
+That function must execute <span class="calibre4"><code
+class="calibre5">f</code></span> with <span class="calibre4"><code
+class="calibre5">apply</code></span> or <span class="calibre4"><code
+class="calibre5">call</code></span>. At that point you may have gotten
+stuck because you were not sure how to refer to <span
+class="calibre4"><code class="calibre5">f</code></span>. To get that
+right you needed to remember two things: that <span
+class="calibre4"><code class="calibre5">f</code></span> is the object
+that <span class="calibre4"><code class="calibre5">this</code></span>
+will refer to in <span class="calibre4"><code
+class="calibre5">f.fixThis</code></span> but that <span
+class="calibre4"><code class="calibre5">f</code></span> is <span
+class="italic">not</span> the object <span class="calibre4"><code
+class="calibre5">this</code></span> will refer to in the function that
+<span class="calibre4"><code class="calibre5">f.fixThis</code></span>
+returns. If need be, try again with this insight in mind.</p>
+<p>The answer appears on the next page.</p>
+<div id="index_split_012.html_calibre_pb_12" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_013.html"></span></p>
+<p><span class="bold">Implementation of </span><span
+class="calibre4"><span class="bold"><code
+class="calibre5">fixThis</code></span></span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Function.prototype.fixThis = function(obj) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var that = this;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              return that.apply(obj,arguments);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">          }</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>As you probably know, <span class="calibre4"><code
+class="calibre5">arguments</code></span> is a pseudo array containing
+whatever arguments have been passed to the function it is contained
+in.</p>
+<div id="index_split_013.html_calibre_pb_13" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_014.html"></span></p>
+<p><span class="calibre1"><span class="bold">III. Centering Two Lines of
+Text</span></span></p>
+<p>Javascript normally runs in a browser and is initiated from an HTML
+page. I have chosen to use basically the same web page for my examples
+and exercises. This web page displays two lines of text centered
+vertically and horizontally. Taking a break from the subject of this
+ebook, I show how this centering can be done.</p>
+<p>To begin with, I create a separate <span class="calibre4"><code
+class="calibre5">div</code></span> for each line this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;div id='upper' class="upper_center"&gt;&lt;/div&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;div id='lower' class="lower_center"&gt;&lt;/div&gt;</code></span><br />
+
+</blockquote>
+<p>Assuming each <span class="calibre4"><code
+class="calibre5">div</code></span> will get one line of text I can
+center them horizontally with CSS's <span class="calibre4"><code
+class="calibre5">textalign</code></span> and vertically by absolutely
+positioning <span class="calibre4"><code
+class="calibre5">upper</code></span> so that its bottom margin is 50% of
+the page and <span class="calibre4"><code
+class="calibre5">lower</code></span> so that its top margin is 50% of
+the page.</p>
+<p>The next page shows a template for the web pages you will be asked to
+create in the exercises.</p>
+<div id="index_split_014.html_calibre_pb_14" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_015.html"></span></p>
+<p><span class="bold">Template for centering two lines</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;!DOCTYPE html&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;html&gt;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">&lt;header&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;title&gt; </code></span><br />
+<span class="calibre6"><code
+class="calibre5">Display? from "Javascript Objects, Functions, and Event Loops"</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/title&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;style&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">.lower_center {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   position:absolute;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   width:100%;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   text-align:center;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   top:50%;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">.upper_center {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   position:absolute;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   width:100%;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   text-align:center;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   bottom:50%;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/style&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">LOAD SCRIPTS HERE</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/header&gt;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">&lt;body&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;div id='upper' class="upper_center"&gt;upper&lt;/div&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;div id='lower' class="lower_center"&gt;lower&lt;/div&gt;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">INCLUDE SCRIPT HERE</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/body&gt;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">&lt;/html&gt;</code></span><br />
+
+</blockquote>
+<p>If your browser is rather recent you can place text in the <span
+class="calibre4"><code class="calibre5">div</code></span>s with the
+<span class="calibre4"><code class="calibre5">innerText</code></span>
+property as in</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  .getElementById('upper')</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  .innerText               = "Hi there!";</code></span><br />
+
+</blockquote>
+<p>But I don't care how you do it. Use jQuery if you like.</p>
+<div id="index_split_015.html_calibre_pb_15" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_016.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that these two lines</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Line one.</code></span><br />
+<span class="calibre6"><code
+class="calibre5">Line two.</code></span><br />
+
+</blockquote>
+<p>are written with</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">writeMessage("Line One","Line Two")</code></span><br />
+
+</blockquote>
+<div id="index_split_016.html_calibre_pb_16" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_017.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>LOAD SCRIPTS HERE</p>
+<p><span class="italic">remove</span></p>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function writeMessage(line1,line2) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = line1;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = line2;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage("Line One","Line Two")</code></span><br />
+
+</blockquote>
+<p>This complete HTML is available at <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display1.html">Display1.html</a>.</p>
+<div id="index_split_017.html_calibre_pb_17" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_018.html"></span></p>
+<p><span class="calibre1"><span class="bold">IV. Event
+Loops</span></span></p>
+<p>You have probably had some experience with event listeners. What this
+section can do is fill in some details about how things work. It will
+also establish language for use in subsequent sections.</p>
+<p>The first linguistic issue is the difference between “listener” and
+“event handler”. It is minuscule. Either can be a function defined by
+programmers to handle some kind of outside event. “Listener” emphasizes
+the source of the event and “event handler” emphasizes what will be done
+when the event has happened. I will use the terms almost
+interchangeably.</p>
+<p>Assuming this function</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f(x,y) { return x+y }</code></span><br />
+
+</blockquote>
+<p>I will describe another function such as this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function t() { f(2,2) }</code></span><br />
+
+</blockquote>
+<p>as a <span class="italic">task</span>. Tasks take no arguments and
+return no values. They can be stored for later execution. In fact they
+often exist just to set up delayed execution of another function. A
+sequence of tasks can be queued and then executed one after the other
+without necessarily influencing each other.</p>
+<p>In the example just given, the function <span class="calibre4"><code
+class="calibre5">f</code></span> is said to be <span
+class="italic">wrapped</span> in the task <span class="calibre4"><code
+class="calibre5">t</code></span>.</p>
+<p>An <span class="italic">event loop</span> is a run-time system that
+takes tasks from a queue and executes them. Each task executes to
+completion before the next is executed.</p>
+<p>Of course the rest of the world does not stand still while a task is
+executing. Incoming data arrives. Mouse clicks happen. Such things are
+the result of outside forces. They are <span
+class="italic">events</span>. Event loop systems have a mechanism for
+handling events without having any effect on the currently executing
+task. When the event-loop system becomes aware of an event, it wraps an
+event handler with an argument describing the event into a task and
+enqueues that task. To do this, the system interrupts the currently
+executing task. A task can be interrupted and restarted without being
+aware that the interruption has occurred. Actual processing of an event
+is left for a subsequent task.</p>
+<p>Note:</p>
+<blockquote>
+Of course an interruption may not be necessary on a multi-processor
+system but most software systems do not seem to have caught up with
+hardware in this respect.
+</blockquote>
+<p>I will use <span class="calibre4"><code
+class="calibre5">addEventListener</code></span> to add listeners to a
+running Javascript session. The next page shows an example. Listeners
+are normally defined anonymously but in the following example I use the
+name <span class="calibre4"><code
+class="calibre5">aHandler</code></span> so I can talk about the listener
+being added.</p>
+<div id="index_split_018.html_calibre_pb_18" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_019.html"></span></p>
+<p><span class="bold">Example of adding a listener.</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "click",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function aHandler (event) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      console.log(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">          event.pageX,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">          event.pageY</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      )</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5"> )</code></span><br />
+
+</blockquote>
+<p>After this, whenever a click event happens the run-time system
+creates an event object <span class="calibre4"><code
+class="calibre5">E</code></span> and wraps <span class="calibre4"><code
+class="calibre5">aHandler</code></span> with it this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function() { aHandler(E) }</code></span><br />
+
+</blockquote>
+<p>The task is then enqueued.</p>
+<p>For a mouse click, <span class="calibre4"><code
+class="calibre5">E</code></span>'s content will include the screen
+coordinates <span class="calibre4"><code
+class="calibre5">pageX</code></span> and <span class="calibre4"><code
+class="calibre5">pageY</code></span> of the place where the mouse was
+when the click happened.</p>
+<p>The queue where such tasks wait for execution is usually called an
+<span class="italic">event queue</span>. But event queues may contain
+tasks that do not handle actual events. In an acknowledgement of this,
+Javascript documentation writes “macrotask queue” instead of “event
+queue”.</p>
+<p>Note:</p>
+<blockquote>
+For those who would look this up know that, for silly trademark reasons,
+official Javascript documentation describes “ECMAScript” not
+“Javascript”.
+</blockquote>
+<div id="index_split_019.html_calibre_pb_19" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_020.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>From <a href="#index_split_014.html_filepos24867">Section III</a>,
+fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that, when there is a mouse click over the screen, the display
+lines will be:</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">X coordinate: </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">the X coordinate where the mouse clicked</code></span></span><br />
+<span class="calibre6"><code
+class="calibre5">Y coordinate: </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">the Y coordinate where the mouse clicked</code></span></span><br />
+
+</blockquote>
+<p>Use <span class="calibre4"><code
+class="calibre5">writeMessage</code></span> from <a
+href="#index_split_014.html_filepos24867">Section III</a> to create the
+splash page (i.e. the initial screen) with</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">writeMessage('Click','someplace');</code></span><br />
+
+</blockquote>
+<div id="index_split_020.html_calibre_pb_20" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_021.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>LOAD SCRIPTS HERE</p>
+<p><span class="italic">remove</span></p>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function writeMessage(line1,line2) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = line1;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = line2;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "click",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function aHandler (event) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     writeMessage(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">         'X coord: ' + event.pageX,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">         'Y coord: ' + event.pageY</code></span><br />
+<span class="calibre6"><code class="calibre5">     )</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5"> )</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage('Click','someplace');</code></span><br />
+
+</blockquote>
+<p>The complete HTML is available at <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display2.html">Display2.html</a></p>
+<div id="index_split_021.html_calibre_pb_21" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_022.html"></span></p>
+<p><span class="calibre1"><span class="bold">V. Multitasking with an
+Event Loop</span></span></p>
+<p>In Javascript when you want to put your own task on the event queue,
+you use the <span class="calibre4"><code
+class="calibre5">setTimeout</code></span> function. Essentially what you
+are doing is enqueuing a handler for a timing event. For example, to
+cause a function <span class="calibre4"><code
+class="calibre5">f</code></span> to be applied to arguments <span
+class="calibre4"><code class="calibre5">"one"</code></span> and <span
+class="calibre4"><code class="calibre5">"two"</code></span> after 5
+seconds have elapsed you would write</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">setTimeout(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    function () { f("one ","two ") },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    5000</code></span><br />
+<span class="calibre6"><code class="calibre5">)</code></span><br />
+
+</blockquote>
+<p>This creates an anonymous task that goes on the event queue after
+5000 milliseconds have elapsed.</p>
+<p>Note:</p>
+<blockquote>
+Replace 5000 with 0 if you want the task to go on the queue immediately
+but remember that being placed immediately on the event queue is not the
+same thing as immediately executing.
+</blockquote>
+<p>The following page shows what you could write to repeat a task <span
+class="calibre4"><code class="calibre5">t</code></span> every half
+second.</p>
+<div id="index_split_022.html_calibre_pb_22" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_023.html"></span></p>
+<p><span class="bold">Using the event queue for repetition.</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function t() {</code></span><br />
+<span class="calibre6"><code class="calibre5">   …</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setTimeout( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      function() { t() },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      500</code></span><br />
+<span class="calibre6"><code class="calibre5">   )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>This looks recursive but it is not. Recursive functions call
+themselves as they would any other function and they remain ready to
+continue executing when the called function returns. The kind of
+repetition <span class="calibre4"><code class="calibre5">t</code></span>
+shows is different. Instead of calling itself, <span
+class="calibre4"><code class="calibre5">t</code></span> finishes
+executing after having arranged for the Javascript engine to do the
+calling. Each execution of <span class="calibre4"><code
+class="calibre5">t()</code></span> returns to the same place in the
+event loop where another task will be chosen for execution.</p>
+<p>Before asking this section's question I want to provide you with some
+data. The next page shows three messages attributed to Mark Twain and an
+array of color declarations. You will use them in your answer.</p>
+<div id="index_split_023.html_calibre_pb_23" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_024.html"></span></p>
+<p><span class="bold">Messages and Colors</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     "Politicians and diapers " +</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        "should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      "with your education" </code></span><br />
+<span class="calibre6"><code class="calibre5">    ],</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    colors = ["BBFFFF", "FFBBFF", "FFFFBB"];</code></span><br />
+
+</blockquote>
+<div id="index_split_024.html_calibre_pb_24" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_025.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that the display rotates through the three two-line messages in
+<span class="calibre4"><code class="calibre5">messages</code></span> and
+the background color through the three choices in <span
+class="calibre4"><code class="calibre5">colors</code></span>. These
+rotations should be independent of each other with the message changing
+approximately each 1500 milliseconds and the background color changing
+approximately each 850 milliseconds.</p>
+<div id="index_split_025.html_calibre_pb_25" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_026.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>LOAD SCRIPTS HERE</p>
+<p><span class="italic">remove</span></p>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Politicians and diapers should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    "with your education"</code></span><br />
+<span class="calibre6"><code class="calibre5">];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">var colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function writeMessage(which) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = messages[2*which];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = messages[2*which+1];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setTimeout(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       function () { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">          writeMessage( (which+1)%3 )</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       1500</code></span><br />
+<span class="calibre6"><code class="calibre5">   )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function setColor(which) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.bgColor = colors[which];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setTimeout(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       function () {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">          setColor( (which+1)%3 )</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       850</code></span><br />
+<span class="calibre6"><code class="calibre5">   )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage(0);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor(0);</code></span><br />
+
+</blockquote>
+<p>The complete HTML is available at <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display3.html">Display3.html</a></p>
+<div id="index_split_026.html_calibre_pb_26" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_027.html"></span></p>
+<p><span class="calibre1"><span class="bold">VI. Multitasking with Event
+Queuing</span></span></p>
+<p><span class="italic">Event queuing</span> is a name I give to a
+technique that simplifies writing the kind of script you wrote in the
+previous section's exercise. Event queuing replaces <span
+class="calibre4"><code class="calibre5">setTimeout</code></span> with
+single-purpose function that can wrap and queue other functions. Suppose
+this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f(x,y) { return x+y }</code></span><br />
+
+</blockquote>
+<p>were the function to be wrapped. Instead of doing it this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">setTimeout(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function() { f(2,2) },</code></span><br />
+<span class="calibre6"><code class="calibre5">   0</code></span><br />
+<span class="calibre6"><code class="calibre5">);</code></span><br />
+
+</blockquote>
+<p>event queuing does it this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">f.que(2,2)</code></span><br />
+
+</blockquote>
+<p>The syntax is pleasingly similar to</p>
+<blockquote>
+<span class="calibre6"><code class="calibre5">f(2,2)</code></span><br />
+
+</blockquote>
+<p>but the effect is the same as with <span class="calibre4"><code
+class="calibre5">setTimeout</code></span>.</p>
+<p>It is possible to implement <span class="calibre4"><code
+class="calibre5">que</code></span> using techniques you have already
+seen: <span class="calibre4"><code
+class="calibre5">setTimeout</code></span> will arrange for the actual
+enqueuing and <span class="calibre4"><code
+class="calibre5">apply</code></span> will do the actual executing. So
+that <span class="calibre4"><code class="calibre5">que</code></span>
+will be available to any <span class="calibre4"><code
+class="calibre5">f</code></span>, it will reside in <span
+class="calibre4"><code
+class="calibre5">Function.prototype</code></span>.</p>
+<p>The next page shows my first (inadequate) attempt at implementing
+<span class="calibre4"><code class="calibre5">que</code></span>.</p>
+<div id="index_split_027.html_calibre_pb_27" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_028.html"></span></p>
+<p><span class="bold">Inadequate </span><span class="calibre4"><span
+class="bold"><code class="calibre5">que</code></span></span><span
+class="bold"> function.</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function.prototype.que = function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var that = this;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setTimeout( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">     function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        that.apply({},arguments)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     },</code></span><br />
+<span class="calibre6"><code class="calibre5">     0</code></span><br />
+<span class="calibre6"><code class="calibre5">   );</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>This definition of <span class="calibre4"><code
+class="calibre5">que</code></span> works but I was dissatisfied with it
+for three reasons:</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>the name <span class="calibre4"><code
+class="calibre5">que</code></span> might not always be appropriate.</li>
+<li><span class="calibre4"><code
+class="calibre5">Function.prototype</code></span> ought not be altered
+without providing some notification of what has been done.</li>
+<li>there needs to be a way to choose a delay other than 0
+milliseconds.</li>
+</ol>
+<p>All three changes are possible if instead of defining <span
+class="calibre4"><code class="calibre5">que</code></span> I define a
+factory function that makes <span class="calibre4"><code
+class="calibre5">que</code></span>. I can pass the desired name and
+number of microseconds delay to the factory function. These choices will
+then be built into <span class="calibre4"><code
+class="calibre5">que</code></span> whose name can be anything. Here is
+an example</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; installQer('queue',3000)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">'queue' has been added to Function.prototype.</code></span><br />
+
+</blockquote>
+<p>This installs a method <span class="calibre4"><code
+class="calibre5">queue</code></span> in <span class="calibre4"><code
+class="calibre5">Function.prototype</code></span> and sends a message
+about the installation to the console. Given any <span
+class="calibre4"><code class="calibre5">f</code></span>, the
+installation allows this statement</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">f.queue(2,2)</code></span><br />
+
+</blockquote>
+<p>to cause this task</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function() { f(2,2) }</code></span><br />
+
+</blockquote>
+<p>to be enqueued after 3 seconds have passed.</p>
+<p>Before I implement <span class="calibre4"><code
+class="calibre5">installQer</code></span> there is a question I need to
+consider. It concerns the visibility of the method being installed.
+What, for example, should this loop</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">for(o in Function.prototype) console.log(o)</code></span><br />
+
+</blockquote>
+<p>display? The designers of Javascript chose not to let it display
+built-in functions such as <span class="calibre4"><code
+class="calibre5">apply</code></span> and <span class="calibre4"><code
+class="calibre5">call</code></span>. Feel free to disagree but I think a
+meethod installed by <span class="calibre4"><code
+class="calibre5">installQer</code></span> is similar and so should be
+similarly invisible.</p>
+<p>This kind of visibility is determined by something called a property
+<span class="italic">descriptor</span>. Javascript didn't always have
+descriptors and not all properties have them but many do. Descriptors
+are like objects in that they have their own properties but these
+descriptor properties are only used to provide information about the
+property they describe. One piece of information of course is the value
+assigned to the described property. The value is placed in the <span
+class="calibre4"><code class="calibre5">value</code></span> descriptor
+property. Another descriptor property is <span class="calibre4"><code
+class="calibre5">enumerable</code></span> which determines the
+visibility of the property being described.</p>
+<p>The <span class="calibre4"><code
+class="calibre5">Object.defineProperty</code></span> function is used to
+create a property with a descriptor. If <span class="calibre4"><code
+class="calibre5">installQer</code></span>'s installations are to have
+the same limited visibility as the built-in functions, I must use it.
+Here is the general pattern</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">Object.defineProperty(</code></span><br />
+<span class="calibre6"><code class="calibre5">   </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">object</code></span></span><span class="calibre6"><code
+class="calibre5">,</code></span><br />
+<span class="calibre6"><code class="calibre5">   </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">property name</code></span></span><span
+class="calibre6"><code class="calibre5">,</code></span><br />
+<span class="calibre6"><code class="calibre5">   </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">complete or partial descriptor object</code></span></span><br />
+<span class="calibre6"><code class="calibre5">);</code></span><br />
+
+</blockquote>
+<p>When a partial descriptor object is used Javascript fills in default
+values.</p>
+<p>The next page shows my implementation of <span class="calibre4"><code
+class="calibre5">installQer</code></span>.</p>
+<div id="index_split_028.html_calibre_pb_28" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_029.html"></span></p>
+<p><span class="calibre4"><span class="bold"><code
+class="calibre5">installQer</code></span></span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function installQer(desired_name,delay) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   delay = delay || 0;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   Object.defineProperty( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      Function.prototype, </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      desired_name, </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      { enumerable: false,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        value: function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">           var that = this;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">           setTimeout( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              ()=&gt;that.apply({},arguments), </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              delay </code></span><br />
+<span class="calibre6"><code
+class="calibre5">           ) </code></span><br />
+<span class="calibre6"><code
+class="calibre5">       }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     } </code></span><br />
+<span class="calibre6"><code class="calibre5">   );</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   console.log( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      desired_name + </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      ' has been added to Function.prototype'</code></span><br />
+<span class="calibre6"><code class="calibre5">   )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>This script contains another feature of Javascript which you may not
+be aware of, namely the use of <span class="calibre4"><code
+class="calibre5">=&gt;</code></span>. Know that</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">()=&gt;that.apply({},args)</code></span>
+</blockquote>
+<p>stands for</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function() {return that.apply({},args)}</code></span>
+</blockquote>
+<p>A more typical use might be</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">(x) =&gt; x+1</code></span>
+</blockquote>
+<p>Because event queuing sometimes comes in handy I have placed <span
+class="calibre4"><code class="calibre5">installQer</code></span> in a
+script named <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/JavascriptEventLoopTools.js">JavascriptEventLoopTools.js</a>.</p>
+<p>If you place <span class="calibre4"><code
+class="calibre5">JavascriptEventLoopTools.js</code></span> in a folder
+with your HTML pages, you can make its functions available by adding</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> src="JavascriptEventLoopTools.js"&gt; </code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt; </code></span><br />
+
+</blockquote>
+<p>to your HTML header.</p>
+<p>Note:</p>
+<blockquote>
+If this were a lecture there would be somebody at the back of the room
+who would tell me: "You didn't really remove <span
+class="calibre4"><code class="calibre5">setTimeout</code></span>." These
+kinds of objections, which revolve around the semantics of words like
+“really”, always seem to come from the back of the room.
+</blockquote>
+<blockquote>
+I did remove <span class="calibre4"><code
+class="calibre5">setTimeout</code></span> from the scripts we have to
+write. In so doing I made those scripts more intelligible and pleasing
+to look at. Of course <span class="calibre4"><code
+class="calibre5">setTimeout</code></span> is hiding in <span
+class="calibre4"><code class="calibre5">installQer</code></span> so, in
+a sense, it is not really removed.
+</blockquote>
+<div id="index_split_029.html_calibre_pb_29" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_030.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that the display is the same as the previous section's exercise
+but the rotating of messages and background colors can be stopped by
+pressing the ESC key.</p>
+<p>The implementation should expand this event handler</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    'keydown',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    function (e) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      if(e.code=='Escape') {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        …</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      }</code></span><br />
+<span class="calibre6"><code class="calibre5">    }</code></span><br />
+<span class="calibre6"><code class="calibre5">  )</code></span><br />
+
+</blockquote>
+<p>and make use of <span class="calibre4"><code
+class="calibre5">installQer</code></span> instead of <span
+class="calibre4"><code class="calibre5">setTimeout</code></span>.</p>
+<div id="index_split_030.html_calibre_pb_30" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_031.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>LOAD SCRIPTS HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> src="JavascriptEventLoopTools.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Politicians and diapers should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    "with your education"</code></span><br />
+<span class="calibre6"><code class="calibre5">];</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">var colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">var running = true;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">installQer('q1500',1500);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">installQer('q850',850);</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function writeMessage(which) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = messages[2*which];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = messages[2*which+1];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.q1500( (which+1)%3 ) </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function setColor(which) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.bgColor = colors[which];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setColor.q850( (which+1)%3 ) </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     'keydown',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     function (e) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        if(e.code=='Escape') running = false;</code></span><br />
+<span class="calibre6"><code class="calibre5">     }</code></span><br />
+<span class="calibre6"><code class="calibre5"> )</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage(0);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor(0);</code></span><br />
+
+</blockquote>
+<p>The complete HTML is available at <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display4.html">Display4.html</a>.</p>
+<div id="index_split_031.html_calibre_pb_31" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_032.html"></span></p>
+<p><span class="calibre1"><span class="bold">VII. Functions as
+Objects</span></span></p>
+<p>Since functions are objects, we can give them states that remember
+what they have done from one execution to the next. The following shows
+how I might add a state to <span class="calibre4"><code
+class="calibre5">writeMessage</code></span>.</p>
+<div id="index_split_032.html_calibre_pb_32" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_033.html"></span></p>
+<p><span class="bold">A Statefull </span><span class="calibre4"><span
+class="bold"><code
+class="calibre5">writeMessage</code></span></span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function writeMessage() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var ms = writeMessage.messages,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       i = 2*writeMessage.which;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.which = (writeMessage.which+1)%3;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = ms[i];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = ms[i+1];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.q1500()</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Politicians and diapers should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "with your education"</code></span><br />
+<span class="calibre6"><code class="calibre5">];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.which = 0;</code></span><br />
+
+</blockquote>
+<p>You can see that this state not only keeps track of which message to
+write next but it also adheres to the general rule: “Don't clutter your
+global namespace with names that are not needed there.”</p>
+<div id="index_split_033.html_calibre_pb_33" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_034.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that <span class="calibre4"><code
+class="calibre5">writeMessage</code></span> and <span
+class="calibre4"><code class="calibre5">setColor</code></span> are
+statefull.</p>
+<div id="index_split_034.html_calibre_pb_34" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_035.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>LOAD SCRIPTS HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        src="JavascriptEventLoopTools.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var running = true;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">installQer('q1500',1500);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">installQer('q850',850);</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Stateful writeMessage</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function writeMessage() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var ms = writeMessage.messages,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       i = 2*writeMessage.which;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.which = (writeMessage.which+1)%3;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = ms[i];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = ms[i+1];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.q1500()   // repeating</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Politicians and diapers should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "with your education"</code></span><br />
+<span class="calibre6"><code class="calibre5">];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.which = 0;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Stateful setColor</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function setColor() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var cs = setColor.colors,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       i = setColor.which;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setColor.which = (setColor.which+1)%3;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.bgColor = cs[i];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setColor.q850()   // repeating</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor.colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor.which=0;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Keystroke Event Handler</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   'keydown',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function (e) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     if( e.code=='Escape' ) running = false;</code></span><br />
+<span class="calibre6"><code class="calibre5">   } </code></span><br />
+<span class="calibre6"><code class="calibre5"> );</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Start</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage();</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor();</code></span><br />
+<br />
+
+</blockquote>
+<p>The complete HTML is available at <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display5.html">Display5.html</a></p>
+<div id="index_split_035.html_calibre_pb_35" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_036.html"></span></p>
+<p><span class="calibre1"><span class="bold">VIII.
+Promises</span></span></p>
+<p>Suppose you have three functions <span class="calibre4"><code
+class="calibre5">f1</code></span>, <span class="calibre4"><code
+class="calibre5">f2</code></span>, and <span class="calibre4"><code
+class="calibre5">f3</code></span>. Suppose further you want <span
+class="calibre4"><code class="calibre5">f2</code></span> to execute
+after <span class="calibre4"><code class="calibre5">f1</code></span> has
+finished, but not necessarily immediately after. Instead you want
+already queued tasks to have their turn. Suppose further that you want
+<span class="calibre4"><code class="calibre5">f3</code></span> to
+execute after <span class="calibre4"><code
+class="calibre5">f2</code></span> in the same way. With the event
+queuing technique you would do something like the following.</p>
+<div id="index_split_036.html_calibre_pb_36" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_037.html"></span></p>
+<p><span class="bold">Using </span><span class="calibre4"><span
+class="bold"><code class="calibre5">f1.que</code></span></span><span
+class="bold">, </span><span class="calibre4"><span class="bold"><code
+class="calibre5">f2.que</code></span></span><span class="bold">, and
+</span><span class="calibre4"><span class="bold"><code
+class="calibre5">f3.que</code></span></span><span class="bold">
+sequentially</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f1(</code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f1 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   …    </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   f2.que(…)   </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">function f2(</code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f2 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code class="calibre5">   …  </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   f3.que(…)   </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">function f3(</code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f3 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code class="calibre5">   …  </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">f1.que( </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f1 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5"> )</code></span><br />
+
+</blockquote>
+<p>The <span class="calibre4"><code class="calibre5">que</code></span>
+method wraps each <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> in a task with an
+argument of your choice and places the task on the event queue.</p>
+<p>Notice that the functions <span class="calibre4"><code
+class="calibre5">f1</code></span>, <span class="calibre4"><code
+class="calibre5">f2</code></span>, and <span class="calibre4"><code
+class="calibre5">f3</code></span> are not independent of each other:
+<span class="calibre4"><code class="calibre5">f2</code></span> is
+mentioned in <span class="calibre4"><code
+class="calibre5">f1</code></span> and <span class="calibre4"><code
+class="calibre5">f3</code></span> in <span class="calibre4"><code
+class="calibre5">f2</code></span>. This can make it hard to reuse these
+functions for other purposes. For example, it will be hard to use <span
+class="calibre4"><code class="calibre5">f1</code></span> in any setting
+where it is not followed by <span class="calibre4"><code
+class="calibre5">f2</code></span>.</p>
+<p>Promises allow <span class="calibre4"><code
+class="calibre5">f1</code></span>, <span class="calibre4"><code
+class="calibre5">f2</code></span>, and <span class="calibre4"><code
+class="calibre5">f3</code></span> to be decoupled from each other. The
+next page shows how the decoupling works.</p>
+<div id="index_split_037.html_calibre_pb_37" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_038.html"></span></p>
+<p><span class="calibre4"><span class="bold"><code
+class="calibre5">f1</code></span></span><span class="bold">,
+</span><span class="calibre4"><span class="bold"><code
+class="calibre5">f2</code></span></span><span class="bold">, and
+</span><span class="calibre4"><span class="bold"><code
+class="calibre5">f3</code></span></span><span class="bold"> with a
+promise</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function f1(</code></span><span class="calibre6"><span
+class="italic"><code class="calibre5">f1 arg</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code class="calibre5">   … </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f1 return val&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function f2(</code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f2 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code class="calibre5">   … </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f2 return val&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function f3(</code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f3 arg&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   …   </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">&lt;f3 return val&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">p.then(f1) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f2) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f3) </code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>Here <span class="calibre4"><code class="calibre5">p</code></span> is
+a promise that starts things up. All promises have a <span
+class="calibre4"><code class="calibre5">then</code></span> method which
+creates another promise. There is much more to say about <span
+class="calibre4"><code class="calibre5">p</code></span> and how <span
+class="italic">&lt;f1 arg&gt;</span> comes into the picture, but for now
+I'll focus on the sequencing of the <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span>'s. How promises are
+created will come up later in <a
+href="#index_split_049.html_filepos91680">Section X</a> and <a
+href="#index_split_056.html_filepos106371">Section XI</a>.</p>
+<p>Although specified differently, sequencing is similar to event
+queuing, the underlying mechanism will cause each <span
+class="calibre4"><code class="calibre5">f</code><sub><span
+class="small"><span class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> to be wrapped and
+queued after <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i-1</code></span></span></sub></span> has finished.</p>
+<p>However unlike event queuing, each <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> passes a value to
+the next by simply returning that value.</p>
+<p>Another difference is that the queuing is not done on the event
+queue. An additional queue exists for use by promises. Because tasks on
+this additional queue have priority over tasks on the event queue, I
+call it the <span class="italic">me-first</span> queue. The real name
+however is the <span class="italic">microtask</span> queue.</p>
+<p>Here is an example of resequencing the <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span>'s</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p.then(f1) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f3) </code></span><br />
+
+</blockquote>
+<p>and here is another</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p.then(f1) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f2) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f2a) </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f3) </code></span><br />
+
+</blockquote>
+<p>Of course not all functions can be resequenced in these ways. Those
+which can include functions that act independently of each other and
+functions that act as filters for each other.</p>
+<p>A final significant difference with event queuing is that promises
+give better control over error handling. Error handling is supported
+with a <span class="calibre4"><code class="calibre5">catch</code></span>
+method; <span class="calibre4"><code
+class="calibre5">catch</code></span> is similar to <span
+class="calibre4"><code class="calibre5">then</code></span> but responds
+to error situations. The next page shows how <span
+class="calibre4"><code class="calibre5">catch</code></span> methods
+might be interleaved with <span class="calibre4"><code
+class="calibre5">then</code></span> methods.</p>
+<div id="index_split_038.html_calibre_pb_38" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_039.html"></span></p>
+<p><span class="bold">A </span><span class="calibre4"><span
+class="bold"><code class="calibre5">then/catch</code></span></span><span
+class="bold"> chain</span></p>
+<blockquote>
+<span class="calibre6"><code class="calibre5">p </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f1)    // p1</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(f2)   // p2</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f3)    // p3</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(f4)   // p4</code></span><br />
+
+</blockquote>
+<p>The p<sub><span class="small"><span
+class="calibre10">i</span></span></sub>'s refer to the promises created
+by the various <span class="calibre4"><code
+class="calibre5">then</code></span>'s and <span class="calibre4"><code
+class="calibre5">catch</code></span>'s. You can see that the first <span
+class="calibre4"><code class="calibre5">catch</code></span> method
+belongs to p1 and produces p2, the second <span class="calibre4"><code
+class="calibre5">then</code></span> belongs to p2 and produces p3, and
+so on.</p>
+<p>The promises generated this way are all in a state known as <span
+class="calibre4"><code class="calibre5">pending</code></span>. In
+general promises have three states: <span class="italic">pending</span>
+(waiting for something to happen), <span class="italic">fulfilled</span>
+(no error), and <span class="italic">rejected</span> (error). Fulfilled
+and rejected promises are said to be <span class="italic">settled</span>
+and they have <span class="italic">promise values</span>.</p>
+<p>How <span class="calibre4"><code class="calibre5">p</code></span>
+becomes settled is discussed in <a
+href="#index_split_049.html_filepos91680">Section X</a>. When <span
+class="calibre4"><code class="calibre5">p</code></span> does become
+settled, a task capable of settling p1 will be enqueued, when p1 becomes
+settled a task capable of settling p2 will be enqueued, and so on.</p>
+<p>Unlike event queuing, promises have a mechanism for transferring data
+from one step to the next. This mechanism passes the promise value of a
+settled promise to the next <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span>.</p>
+<p>The way any p<sub><span class="small"><span
+class="calibre10">i</span></span></sub> will be settled depends on
+whether it was generated with <span class="calibre4"><code
+class="calibre5">then</code></span> or <span class="calibre4"><code
+class="calibre5">catch</code></span> and on whether the previous promise
+has been fulfilled or rejected.</p>
+<p><span class="bold">Previous promise fulfilled, p<sub><span
+class="small"><span class="calibre10"><span
+class="bold">i</span></span></span></sub> from</span> <span
+class="calibre4"><code class="calibre5">then</code></span><span
+class="bold">:</span></p>
+<p>In this case <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> will be wrapped for
+execution; its argument will be previous promise value; p<sub><span
+class="small"><span class="calibre10">i</span></span></sub> will be
+fulfilled or rejected depending on the outcome from executing <span
+class="calibre4"><code class="calibre5">f</code><sub><span
+class="small"><span class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span>. Its promise value
+arises from the value <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> returns.</p>
+<p><span class="bold">Previous promise fulfilled, p<sub><span
+class="small"><span class="calibre10"><span
+class="bold">i</span></span></span></sub> from</span> <span
+class="calibre4"><code class="calibre5">catch</code></span><span
+class="bold">:</span></p>
+<p>In this case <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> will not be
+executed; p<sub><span class="small"><span
+class="calibre10">i</span></span></sub> will be fulfilled and its
+promise value will be the same as the previous promise value.</p>
+<p><span class="bold">Previous promise rejected, p<sub><span
+class="small"><span class="calibre10"><span
+class="bold">i</span></span></span></sub> from</span> <span
+class="calibre4"><code class="calibre5">then</code></span><span
+class="bold">:</span></p>
+<p>In this case <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> will not be
+executed; p<sub><span class="small"><span
+class="calibre10">i</span></span></sub> will be rejected and its promise
+value will be the same as the previous promise value.</p>
+<p><span class="bold">Previous promise rejected, p<sub><span
+class="small"><span class="calibre10"><span
+class="bold">i</span></span></span></sub> from</span> <span
+class="calibre4"><code class="calibre5">catch</code></span><span
+class="bold">:</span></p>
+<p>In this case <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> will be wrapped for
+execution; its argument will be the previous promise value; p<sub><span
+class="small"><span class="calibre10">i</span></span></sub> will be
+fulfilled or rejected depending on the outcome from <span
+class="calibre4"><code class="calibre5">f</code><sub><span
+class="small"><span class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span>. Its promise value
+arises from the value <span class="calibre4"><code
+class="calibre5">f</code><sub><span class="small"><span
+class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> returns.</p>
+<p>Note:</p>
+<blockquote>
+When <span class="calibre4"><code class="calibre5">f</code><sub><span
+class="small"><span class="calibre10"><code
+class="calibre5">i</code></span></span></sub></span> is executed, the
+outcome can be a thrown error, a non-promise return value or a returned
+promise. If a thrown error, p<sub><span class="small"><span
+class="calibre10">i</span></span></sub> is rejected with the error
+object as its value. If a non-promise return value <span
+class="calibre4"><code class="calibre5">rv</code></span>, p<sub><span
+class="small"><span class="calibre10">i</span></span></sub> is fulfilled
+with promise value <span class="calibre4"><code
+class="calibre5">rv</code></span>. If the return value <span
+class="calibre4"><code class="calibre5">rp</code></span> is a promise,
+p<sub><span class="small"><span class="calibre10">i</span></span></sub>
+is given the same state as <span class="calibre4"><code
+class="calibre5">rp</code></span>.
+</blockquote>
+<p>The slightly more complex <span class="calibre4"><code
+class="calibre5">then/catch</code></span> chain on the next page
+illustrates how error handling can work. Take the time to think about
+the ensuing explanation.</p>
+<div id="index_split_039.html_calibre_pb_39" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_040.html"></span></p>
+<p><span class="bold">A </span><span class="calibre4"><span
+class="bold"><code class="calibre5">then/catch</code></span></span><span
+class="bold"> chain</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p             // assume fulfilled </code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f1)    // p1</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f2)    // p2</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(f3)   // p3</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then(f4)    // p4</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(f5)   // p5</code></span><br />
+
+</blockquote>
+<p>If <span class="calibre4"><code class="calibre5">f1</code></span>
+throws an error, <span class="calibre4"><code
+class="calibre5">f2</code></span> will be skipped and <span
+class="calibre4"><code class="calibre5">f3</code></span> will have a
+chance to repair the problem. If <span class="calibre4"><code
+class="calibre5">f3</code></span> executes and simply returns a value,
+then that value will be assumed to be fulfilled and processing will
+continue with <span class="calibre4"><code
+class="calibre5">f4</code></span>.</p>
+<p>If neither p1 or p2 is rejected <span class="calibre4"><code
+class="calibre5">f3</code></span> will be skipped and <span
+class="calibre4"><code class="calibre5">f4</code></span> will receive
+the value that <span class="calibre4"><code
+class="calibre5">f2</code></span> returned.</p>
+<p>The final <span class="calibre4"><code
+class="calibre5">catch</code></span> will execute <span
+class="calibre4"><code class="calibre5">f5</code></span> if, and only
+if, a rejected promise has propagated to it.</p>
+<p>Note:</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>You might wonder what advantages event queuing can have over
+promises. The most obvious is that event queuing is easier to
+understand.</li>
+<li>Less obvious but important is that event queuing plays nice with
+event handlers. Because the settling of promises is done with tasks
+placed on the me-first queue, a promise programmer must be careful not
+to create an <span class="calibre4"><code
+class="calibre5">then/catch</code></span> chain that will starve tasks
+on the event queue. That would make the script unresponsive to user
+input.</li>
+<li>I believe the sequencing flexibility of promise responders will
+encourage the development of utility functions in much the same way the
+flexibility of Unix pipes did.</li>
+</ol>
+<div id="index_split_040.html_calibre_pb_40" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_041.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Assume there are two settled promises <span class="calibre4"><code
+class="calibre5">p</code></span> and <span class="calibre4"><code
+class="calibre5">q</code></span>, that <span class="calibre4"><code
+class="calibre5">p</code></span> is fulfilled with promise value <span
+class="calibre4"><code class="calibre5">'good'</code></span>, and that
+<span class="calibre4"><code class="calibre5">q</code></span> is
+rejected with promise value <span class="calibre4"><code
+class="calibre5">'bad'</code></span>. Assume also that we have a
+function</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function s(x) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   console.log(x); return x+x;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>This question has two parts, a and b.</p>
+<div id="index_split_041.html_calibre_pb_41" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_042.html"></span></p>
+<p><span class="bold">Question: Part a</span></p>
+<p>What be written on the console and what will happen to p1, p2, and p3
+if the following executes?</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p                   // p1</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  .catch(s)         // p2</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  .then(s);         // p3</code></span><br />
+<span class="calibre6"><code
+class="calibre5">console.log("That's All Folks!")</code></span>
+</blockquote>
+<div id="index_split_042.html_calibre_pb_42" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_043.html"></span></p>
+<p><span class="bold">Answer: Part a</span></p>
+<p>Nothing appears on the console while p1, p2, and p3 are being
+created. The first to appear will be “That's All Folks!!”</p>
+<p>Later promise p2 will become fulfilled with promise value <span
+class="calibre4"><code class="calibre5">'good'</code></span>. The <span
+class="calibre4"><code class="calibre5">s</code></span> in <span
+class="calibre4"><code class="calibre5">.catch(s)</code></span> will not
+execute.</p>
+<p>Yet later the <span class="calibre4"><code
+class="calibre5">s</code></span> in <span class="calibre4"><code
+class="calibre5">.then(s)</code></span> will execute causing “good” to
+be written. Promise p3 will become fulfilled with promise value</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">'goodgood'</code></span><br />
+
+</blockquote>
+<p>So what you will see on the screen is</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">That's All Folks!</code></span><br />
+<span class="calibre6"><code class="calibre5">good</code></span><br />
+
+</blockquote>
+<div id="index_split_043.html_calibre_pb_43" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_044.html"></span></p>
+<p><span class="bold">Question: Part b</span></p>
+<p>What be written on the console and what will happen to p1, p2, and p3
+if the following executes?</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">q                  // p1</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(s)         // p2</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(s)         // p3</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .then( () =&gt; q )  // p4</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .catch(s)         // p5</code></span><br />
+<span class="calibre6"><code
+class="calibre5">console.log("That's All Folks!")</code></span><br />
+
+</blockquote>
+<div id="index_split_044.html_calibre_pb_44" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_045.html"></span></p>
+<p><span class="bold">Answer: Part b</span></p>
+<p>Again “That's All Folks!” will be the first to appear on the
+console.</p>
+<p>The <span class="calibre4"><code class="calibre5">s</code></span> in
+the first <span class="calibre4"><code
+class="calibre5">.catch(s)</code></span> will execute causing “bad” to
+be written on the console. The promise p2 will become fulfilled with
+promise value “badbad”.</p>
+<p>The <span class="calibre4"><code class="calibre5">s</code></span> in
+the second <span class="calibre4"><code
+class="calibre5">.catch(s)</code></span> will not execute. The promise
+p3 will become fulfilled with promise value “badbad”.</p>
+<p>The <span class="calibre4"><code
+class="calibre5">()=&gt;q</code></span> will execute. Promise p4 will
+become rejected with promise value “bad” (the same as <span
+class="calibre4"><code class="calibre5">q</code></span>'s promise
+value).</p>
+<p>The <span class="calibre4"><code class="calibre5">s</code></span> in
+the third <span class="calibre4"><code
+class="calibre5">.catch(s)</code></span> will execute causing <span
+class="calibre4"><code class="calibre5">bad</code></span> to be written
+on the screen. Promise p5 will become fulfilled with the promise value
+<span class="calibre4"><code class="calibre5">badbad</code></span>.</p>
+<p>So what you will see on the screen is</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">That's All Folks!</code></span><br />
+<span class="calibre6"><code class="calibre5">bad</code></span><br />
+<span class="calibre6"><code class="calibre5">bad</code></span><br />
+
+</blockquote>
+<div id="index_split_045.html_calibre_pb_45" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_046.html"></span></p>
+<p><span class="calibre1"><span class="bold">IX. Multitasking Example
+with Promises</span></span></p>
+<p>This section is mostly an exercise asking you to rewrite the
+multitasking exercise in <a
+href="#index_split_032.html_filepos59787">Section VII</a> with promises.
+However before you can do that, you need a way to generate an initial
+promise. The <span class="calibre4"><code
+class="calibre5">hesitating</code></span> factory method can do that. It
+is found in <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/JavascriptEventLoopTools.js">JavascriptEventLoopTools.js</a>.
+You first made use of this file in <a
+href="#index_split_027.html_filepos44854">Section VI</a>.</p>
+<p>This statement</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var p = hesitating(</code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">&lt;microseconds&gt;</code></span></span><span
+class="calibre6"><code class="calibre5">)</code></span><br />
+
+</blockquote>
+<p>will create a promise that will wait the specified number of
+microseconds before becoming fulfilled with an <span
+class="calibre4"><code class="calibre5">undefined</code></span> promise
+value. While it is waiting, tasks on the event queue can execute. Using
+<span class="calibre4"><code class="calibre5">hesitating</code></span>
+is the easiest way forward with the next exercise.</p>
+<div id="index_split_046.html_calibre_pb_46" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_047.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Redo the multitasking exercise in <a
+href="#index_split_032.html_filepos59787">Section VII</a>. Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that the event queuing methodology is replaced with
+promises.</p>
+<div id="index_split_047.html_calibre_pb_47" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_048.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>No need to install anything in <span class="calibre4"><code
+class="calibre5">Function.prototype</code></span> here. Instead <span
+class="calibre4"><code class="calibre5">hesitating</code></span> is used
+in both <span class="calibre4"><code
+class="calibre5">writeMessage</code></span> and <span
+class="calibre4"><code class="calibre5">setColor</code></span>.</p>
+<p>LOAD SCRIPTS HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        src="JavascriptEventLoopTools.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var running = true;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Stateful writeMessage</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function writeMessage() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var ms = writeMessage.messages,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       i = 2*writeMessage.which;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   writeMessage.which = (writeMessage.which+1)%3;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('upper').innerText = ms[i];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.getElementById('lower').innerText = ms[i+1];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   hesitating(1500).then(writeMessage)   // repeating</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.messages = [</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Politicians and diapers should be changed frequently",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "and for the same reason.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Actions speak louder than words",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "but not nearly as often.",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "Don't let schooling interfere",</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   "with your education"</code></span><br />
+<span class="calibre6"><code class="calibre5">];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">writeMessage.which = 0;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Stateful setColor</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function setColor() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if( !running ) return;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var cs = setColor.colors,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       i = setColor.which;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setColor.which = (setColor.which+1)%3;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document.bgColor = cs[i];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   hesitating(850).then(setColor)   // repeating</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">setColor.colors = [ "BBFFFF", "FFBBFF", "FFFFBB" ];</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor.which=0;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Keystroke Event Handler</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   'keydown',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function (e) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     if( e.code=='Escape' ) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        running = false;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     } </code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5"> );</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">// Start</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">writeMessage();</code></span><br />
+<span class="calibre6"><code
+class="calibre5">setColor();</code></span><br />
+
+</blockquote>
+<p>The complete HTML is available as <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display6.html">Display6.html</a></p>
+<div id="index_split_048.html_calibre_pb_48" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_049.html"></span></p>
+<p><span class="calibre1"><span class="bold">X. Making
+Promises</span></span></p>
+<p>You saw in <a href="#index_split_036.html_filepos66178">Section
+VIII</a> how to use existing promises to decouple a chain of actions
+from each other. Another important use of promises is to make a request
+of an outside force. Making the request and channeling the response to a
+<span class="calibre4"><code class="calibre5">then/catch</code></span>
+chain is the job of the script which creates the promise.</p>
+<p>Here is how promises are created</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var p = new Promise(e)</code></span><br />
+
+</blockquote>
+<p>where <span class="calibre4"><code class="calibre5">e</code></span>
+is a function called an <span class="italic">executor</span>. I
+distinguish executors from functions passed to <span
+class="calibre4"><code class="calibre5">then</code></span> and <span
+class="calibre4"><code class="calibre5">catch</code></span> by calling
+those functions <span class="italic">responders</span>.</p>
+<p>I'll first show how this works without the outside force: an executor
+takes two arguments, both functions, as in</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function e(resolve,reject) { … }</code></span><br />
+
+</blockquote>
+<p>This executor</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">new Promise(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  function f(resolve,reject) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">     resolve('hi');</code></span><br />
+<span class="calibre6"><code class="calibre5">})</code></span><br />
+
+</blockquote>
+<p>creates a promise which quickly settles with a fulfilled promise
+value of <span class="calibre4"><code
+class="calibre5">'hi'</code></span>. Similarly this executor</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">new Promise(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  function f(resolve,reject) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">     reject('bad juju');</code></span><br />
+<span class="calibre6"><code class="calibre5">})</code></span><br />
+
+</blockquote>
+<p>creates a promise which quickly settles with a rejected promise value
+of “bad juju”.</p>
+<p>To demonstrate how to create a promise whose settling will depend on
+a response from an outside force I will continue with two examples of
+outside forces</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>Node.js's run-time system which (in conjunction with your computer's
+operating system) can provide a file's contents.</li>
+<li>JQuery's <span class="calibre4"><code
+class="calibre5">$.ajax</code></span> function which (in conjunction
+with your browser, your computer's operating system, a server, and a
+network) can provide the response to a request made to a server.</li>
+</ol>
+<p>Both these examples will involve displaying a file <span
+class="calibre4"><code class="calibre5">Sample.txt</code></span>. <a
+href="https://nodejs.org/">Node.js</a>, which the first example
+requires, is a Javascript interpreter that lacks access to a browser's
+DOM and but has file read/write capability.</p>
+<p>JQuery, which the second example requires, can be loaded into your
+browser with an HTML <span class="calibre4"><code
+class="calibre5">script</code></span> tag this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script</code></span><br />
+<span class="calibre6"><code
+class="calibre5">src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt; </code></span>
+</blockquote>
+<p>The second example also requires you to have an operational web
+server capable of serving <span class="calibre4"><code
+class="calibre5">Sample.txt</code></span>. In theory you could just
+fetch <span class="calibre4"><code
+class="calibre5">Sample.txt</code></span> from Github but cross origin
+security restrictions prohibit that. The easiest way to do the <span
+class="calibre4"><code class="calibre5">$.ajax</code></span> exercise is
+to have <span class="calibre4"><code
+class="calibre5">Sample.txt</code></span> and your HTML page in the same
+folder on your computer and set up your own web server. You can easily
+arrange for this through Node.js's <span class="calibre4"><code
+class="calibre5">http-server</code></span> module. Install <span
+class="calibre4"><code class="calibre5">http-server</code></span> with
+Node.js's <span class="calibre4"><code
+class="calibre5">npm</code></span> and then run it from a folder
+containing <span class="calibre4"><code
+class="calibre5">Sample.txt</code></span>. Be sure nothing you want to
+keep private is accessible through that folder.</p>
+<p>Note:</p>
+<blockquote>
+If you don't want to install these things, you can always answer this
+section's question with a paper and pencil effort. This is the only
+section in which you need these installations.
+</blockquote>
+<div id="index_split_049.html_calibre_pb_49" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_050.html"></span></p>
+<p><span class="bold">Reading a File</span></p>
+<p>In Node.js you can read a file asynchronously this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var fs = require('fs');</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    fs.readFile('Sample.txt','utf8',callback)</code></span><br />
+
+</blockquote>
+<p>where <span class="calibre4"><code
+class="calibre5">callback</code></span> has been defined to handle both
+failed and successful reads like this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function callback(err,data) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   if(err)     </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">handle error with</code></span></span><span
+class="calibre6"><code class="calibre5"> err</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   then        </code></span><span
+class="calibre6"><span class="italic"><code
+class="calibre5">handle success with</code></span></span><span
+class="calibre6"><code class="calibre5"> data</code></span><br />
+<span class="calibre6"><code class="calibre5">} </code></span><br />
+
+</blockquote>
+<p>Your operating system is an outside force that a script using <span
+class="calibre4"><code class="calibre5">readFile</code></span> must wait
+on. The script could block until the read operation is finished (which
+would be the case with <span class="calibre4"><code
+class="calibre5">readFileSync</code></span>) or it could make use of a
+callback as shown above with <span class="calibre4"><code
+class="calibre5">readFile</code></span>. Using <span
+class="calibre4"><code class="calibre5">readFile</code></span> is
+exactly the kind of situation that fits into a promise's executor. The
+next page shows how that might be done.</p>
+<div id="index_split_050.html_calibre_pb_50" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_051.html"></span></p>
+<p><span class="bold">Reading with a promise.</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var p = new Promise(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">         function (resolve,reject) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">           function callback(err,txt) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">             if(err)     reject(err)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">             then        resolve(txt)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">           } </code></span><br />
+<span class="calibre6"><code
+class="calibre5">           fs.readFile(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              'Sample.txt',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              'utf8',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              callback</code></span><br />
+<span class="calibre6"><code
+class="calibre5">           )</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      )</code></span><br />
+
+</blockquote>
+<p>Notice I have not tried to process the text or the error message in
+the callback. I am letting the promise decouple that processing from
+this request. Given these functions for displaying errors and file
+contents</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function showError(e) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   console.log(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       "ERROR:\n" + e</code></span><br />
+<span class="calibre6"><code class="calibre5">   )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">function showText(t) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   console.log(t)</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>here is one way the processing might be done</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p.then(showText).catch(showError);</code></span><br />
+
+</blockquote>
+<p>and here is another</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">p.catch(showError).then(showText);</code></span><br />
+
+</blockquote>
+<p>The difference is that with the second way any error that happened to
+be thrown writing the text to the console wouldn't be handled.</p>
+<p>Note:</p>
+<blockquote>
+You would think that <span class="calibre4"><code
+class="calibre5">showText</code></span> would not be needed as it could
+be replaced with <span class="calibre4"><code
+class="calibre5">console.log</code></span>. It is one of Node.js's
+quirks that this does not always work.
+</blockquote>
+<div id="index_split_051.html_calibre_pb_51" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_052.html"></span></p>
+<p><span class="bold">Ajax</span></p>
+<p>Simple requests for information over the world wide web can be made
+with JQuery's <span class="calibre4"><code
+class="calibre5">ajax</code></span> method as shown in the
+following.</p>
+<div id="index_split_052.html_calibre_pb_52" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_053.html"></span></p>
+<p><span class="bold">An </span><span class="calibre4"><span
+class="bold"><code class="calibre5">ajax</code></span></span><span
+class="bold"> request</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">$.ajax({</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   url: "Sample.txt", </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   success: </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">function to process text</code></span></span><br />
+<span class="calibre6"><code
+class="calibre5">   error: </code></span><span class="calibre6"><span
+class="italic"><code
+class="calibre5">function to process error object</code></span></span><br />
+<span class="calibre6"><code class="calibre5">});</code></span><br />
+
+</blockquote>
+<p>I am going to put this in a web page that requests the file <span
+class="calibre4"><code class="calibre5">Sample.txt</code></span> when
+the user clicks on a button. Two tweaks are needed to the template shown
+in <a href="#index_split_014.html_filepos24867">Section III</a>:</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li><p>A button is needed. Insert this<br />
+</p>
+<p><span class="calibre4"><code
+class="calibre5">&lt;button id='aButton'&gt;Explain Things&lt;/button&gt;</code></span></p>
+<p><br />
+into the <span class="calibre4"><code
+class="calibre5">upper</code></span> <span class="calibre4"><code
+class="calibre5">div</code></span>.</p></li>
+<li>The fetched text may require more room than can fit in half the
+page. Shift things upward by changing the bottom margin of <span
+class="calibre4"><code class="calibre5">upper</code></span> to %80 and
+the top margin of <span class="calibre4"><code
+class="calibre5">lower</code></span> to 22%.</li>
+</ol>
+<p>The 2% gap gives the button some room before the text starts.</p>
+<div id="index_split_053.html_calibre_pb_53" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_054.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Fill in</p>
+<blockquote>
+LOAD SCRIPTS HERE
+</blockquote>
+<p>and</p>
+<blockquote>
+INCLUDE SCRIPT HERE
+</blockquote>
+<p>such that the web page will fetch (through <span
+class="calibre4"><code class="calibre5">$.ajax</code></span>) and
+display <span class="calibre4"><code
+class="calibre5">Sample.txt</code></span> when the user clicks on the
+button.</p>
+<p>Know that it is the <span class="calibre4"><code
+class="calibre5">'click'</code></span> event you want your <span
+class="calibre4"><code class="calibre5">aButton</code></span> listener
+to respond to. Your response should create an appropriate promise with
+<span class="calibre4"><code class="calibre5">then/catch</code></span>
+chain. If an error is reported, you can extract an error message from
+the <span class="calibre4"><code
+class="calibre5">statusText</code></span> property of the error
+event.</p>
+<p>You can write whatever you like on the page before the user clicks on
+the button.</p>
+<p>This is a exercise, not an attempt to define production code. I am
+ignoring important things like how to let the user specify the file name
+and what to do if the network request times out and I am keeping <span
+class="calibre4"><code class="calibre5">Sample.txt</code></span>
+hard-coded into the script. Rename the file in its folder if you want to
+test the error response.</p>
+<div id="index_split_054.html_calibre_pb_54" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_055.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>Assuming the HTML display template in <a
+href="#index_split_014.html_filepos24867">Section III</a> has been
+tweaked as described above the answer is:</p>
+<p>LOAD SCRIPTS HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        src="JavascriptEventLoopTools.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<p>INCLUDE SCRIPT HERE</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function writeMessage(txt) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   document</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     .getElementById('lower')</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     .innerText = txt;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">document</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .getElementById('aButton')</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> .addEventListener(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   'click',</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   function() {  </code></span><br />
+<span class="calibre6"><code
+class="calibre5">     var p = new Promise(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">               function(resolve,reject) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                  $.ajax({</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                    url: "Sample.txt", </code></span><br />
+<span class="calibre6"><code
+class="calibre5">                    success: resolve ,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                    error: reject </code></span><br />
+<span class="calibre6"><code
+class="calibre5">               } ) }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">             );</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     p.then ( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">        writeMessage</code></span><br />
+<span class="calibre6"><code
+class="calibre5">     ).catch(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">        err =&gt; writeMessage(err.statusText)</code></span><br />
+<span class="calibre6"><code class="calibre5">     )</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5"> )</code></span><br />
+
+</blockquote>
+<p>The complete answer is available as <a
+href="https://github.com/J-Adrian-Zimmer/JavascriptObjectsFunctionsAndEventLoops/blob/master/Display7.html">Display7.html</a></p>
+<div id="index_split_055.html_calibre_pb_55" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_056.html"></span></p>
+<p><span class="calibre1"><span class="bold">XI. Implementing
+</span></span><span class="calibre2"><span class="bold"><code
+class="calibre5">hesitating</code></span></span></p>
+<p>The <span class="calibre4"><code
+class="calibre5">hesitating</code></span> factory method, described in
+this section, was used in the exercise of <a
+href="#index_split_046.html_filepos85813">Section IX</a> to make
+promises for our multitasking display. Only one argument was used there
+but <span class="calibre4"><code
+class="calibre5">hesitating</code></span> can take two: the first is the
+number of microseconds to wait before the created promise becomes
+fulfilled and the second, optional argument, is the promise value to
+give to the fulfilled promise. In particular, this argument is the <span
+class="italic">&lt;arg 1&gt;</span> I neglected to work with in <a
+href="#index_split_036.html_filepos66178">Section VIII</a>.</p>
+<p>If you have read through to here you should be able to implement the
+<span class="calibre4"><code class="calibre5">hesitating</code></span>
+factory method yourself.</p>
+<div id="index_split_056.html_calibre_pb_56" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_057.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Here is how the <span class="calibre4"><code
+class="calibre5">hesitating</code></span> script begins</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function hesitating(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   micros,       // number of microseconds for the</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // returned promise to hesitate</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // before becoming settled</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // 0 if omitted</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   promise_val   // promise value of returned promise</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // undefined if omitted</code></span><br />
+<span class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // returns a promise that hesitates for the given </code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // number of microseconds before resolving with</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // the given promise value  -- allows tasks</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // on the event queue to execute before the</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // effects of settling happen</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  micros = micros || 0;</code></span><br />
+<span class="calibre6"><code class="calibre5">    … </code></span><br />
+<span class="calibre6"><code class="calibre5">  );</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span>
+</blockquote>
+<p>Finish the implementation.</p>
+<p>You can test your answer by replacing</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"</code></span><br />
+<span class="calibre6"><code
+class="calibre5"> src="JavascriptEventLoopTools.js"&gt;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<p>in Display6.html with</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&lt;script type="text/javascript"&gt;</code></span><br />
+<span class="calibre6"><span class="italic"><code
+class="calibre5">your definition of </code></span></span><span
+class="calibre6"><code class="calibre5">hesitating</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&lt;/script&gt;</code></span><br />
+
+</blockquote>
+<div id="index_split_057.html_calibre_pb_57" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_058.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<p>This answer also appears in the <span class="calibre4"><code
+class="calibre5">JavascriptEventLoopTools.js</code></span> file.</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function hesitating(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   micros,       // number of microseconds for the</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // returned promise to hesitate</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // before becoming settled</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // 0 if omitted</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   promise_val   // promise value of returned promise</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                 // undefined if omitted</code></span><br />
+<span class="calibre6"><code class="calibre5">) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // returns a promise that hesitates for the given </code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // number of microseconds before resolving with</code></span><br />
+<span class="calibre6"><code
+class="calibre5">  // the given promise value </code></span><br />
+<span class="calibre6"><code
+class="calibre5">  micros = micros || 0;</code></span><br />
+<br />
+<span class="calibre6"><code
+class="calibre5">return new Promise(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    function(resolve) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       setTimeout( </code></span><br />
+<span class="calibre6"><code
+class="calibre5">          ()=&gt;resolve(promise_val), </code></span><br />
+<span class="calibre6"><code
+class="calibre5">          micros </code></span><br />
+<span class="calibre6"><code
+class="calibre5">       )</code></span><br />
+<span class="calibre6"><code class="calibre5">    }</code></span><br />
+<span class="calibre6"><code class="calibre5">  );</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<div id="index_split_058.html_calibre_pb_58" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_059.html"></span></p>
+<p><span class="calibre1"><span class="bold">XII. More on Object
+Orientation in Javascript</span></span></p>
+<p>Object orientation involves defining kinds of objects and then
+creating working objects that match those definitions. The working
+objects are usually called <span class="italic">instances</span>. Object
+orientation also involves some kind of inheritance in which there can be
+refinements of existing kinds of objects.</p>
+<p>Traditional languages like Java and Python have a concept of a class
+that is used for defining kinds of objects. An instance is constructed
+from a class and linked to that class. Javascript is different: kinds of
+objects are defined by example. That is to say you define a <span
+class="italic">prototype</span> object and instances are just new
+objects that inherit from the prototype.</p>
+<p>With the class-based approach it is classes that do the inheriting.
+With the object-based approach it is objects that do the inheriting.
+Whether object based or class based the rules that inheritance follows
+are pretty much the same.</p>
+<p>In <a href="#index_split_005.html_filepos8396">Section I</a> and <a
+href="#index_split_008.html_filepos15555">Section II</a> you saw two
+built-in <span class="calibre4"><code
+class="calibre5">prototype</code></span> objects, <span
+class="calibre4"><code class="calibre5">Object.prototype</code></span>
+and <span class="calibre4"><code
+class="calibre5">Function.prototype</code></span>. Those prototypes
+provide services to all objects and/or functions. I use the word <span
+class="italic">archetype</span> for prototypes which define a kind of
+object that programmers define for their own use. The next page shows an
+example of an archetype with two instance variables and two methods.</p>
+<div id="index_split_059.html_calibre_pb_59" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_060.html"></span></p>
+<p><span class="bold">An archetype</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var archetype = { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   x : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   y : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   add: function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this.x+this.y;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   double: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.x = 2*this.x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.y = 2*this.y</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5">};</code></span><br />
+
+</blockquote>
+<p>OK, it is a silly example but clear your mind of that and realize
+this is an object not a class. Archetypes are not meant to be used
+directly. Instances that inherit from them are constructed instead.
+Inheritance lets the archetype be an unchanging template for all
+instances of the same kind, that is to say all objects that directly
+inherit from the archetype. The unchanging aspect is what makes the
+archetype a reliable description of a kind of object.</p>
+<p>In Java and Python, when a class is meant to have just one instance,
+it is said to be a <span class="italic">singleton</span>. This is a
+little weird as it is like defining a whole subspecies to describe your
+dog “Rover”. Rover would be the single instance of that subspecies or
+class. In Javascript you merely describe Rover and dispense with the
+subspecies. Said another way: in Javascript you describe a single object
+and dispense with the idea of an archetype. There is no need for the
+concept of singleton in Javascript. Such things are merely objects.</p>
+<p>When archetypes are used to describe kinds of objects, it is the
+<span class="calibre4"><code class="calibre5">create</code></span>
+method discussed in <a href="#index_split_005.html_filepos8396">Section
+I</a> that creates instances. For example new instances <span
+class="calibre4"><code class="calibre5">obj1</code></span> and <span
+class="calibre4"><code class="calibre5">obj2</code></span> of <span
+class="calibre4"><code class="calibre5">archetype</code></span> can be
+created this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var obj1 = Object.create(archetype),</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    obj2 = Object.create(archetype);</code></span><br />
+
+</blockquote>
+<p>Because of the way inheritance works <span class="calibre4"><code
+class="calibre5">obj1</code></span> and <span class="calibre4"><code
+class="calibre5">obj2</code></span> are independent of each other.
+Changes to one do not impact the other. The first time <span
+class="calibre4"><code class="calibre5">obj1.double()</code></span> or
+<span class="calibre4"><code
+class="calibre5">obj2.double()</code></span> executes the inheritance
+search for values of <span class="calibre4"><code
+class="calibre5">x</code></span> and <span class="calibre4"><code
+class="calibre5">y</code></span> will take 1 from <span
+class="calibre4"><code class="calibre5">archetype.x</code></span> and
+<span class="calibre4"><code class="calibre5">archetype.y</code></span>.
+However the doubled values will not be assigned to the same <span
+class="calibre4"><code class="calibre5">x</code></span> and <span
+class="calibre4"><code class="calibre5">y</code></span> because there is
+no inheritance search when assigning a value. Instead new properties of
+<span class="calibre4"><code class="calibre5">x</code></span> and <span
+class="calibre4"><code class="calibre5">y</code></span> will be created
+in <span class="calibre4"><code class="calibre5">obj1</code></span> or
+<span class="calibre4"><code class="calibre5">obj2</code></span> and
+given the doubled values. From then on each instance is on its own.</p>
+<p>In this example <span class="calibre4"><code
+class="calibre5">obj1</code></span> and <span class="calibre4"><code
+class="calibre5">obj2</code></span> are initialized with the same
+starting values. If they are to be initialized with different starting
+values, a constructor would be useful. A <span
+class="italic">constructor</span> is a function that</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>creates a new object.</li>
+<li>initializes the instance variables of the newly created object.</li>
+</ol>
+<p>Of course <span class="calibre4"><code
+class="calibre5">Object.create</code></span> can perform the first step,
+but to get both steps we need to write our own constructor function. The
+next page shows one way to do this.</p>
+<div id="index_split_060.html_calibre_pb_60" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_061.html"></span></p>
+<p><span class="bold">Archetypal construction</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Calc(x,y) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var obj = Object.create(archetype);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   obj.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   obj.y = y</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return obj;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>This is a complete constructor. An instance can be created this
+way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; var obj = Calc(2,-3)</code></span><br />
+
+</blockquote>
+<p>This function may seem more like a factory method to you than a
+constructor because it makes no use of a <span class="calibre4"><code
+class="calibre5">this</code></span> or <span class="calibre4"><code
+class="calibre5">self</code></span> keyword. I think of it as a
+constructor because it is meant to create an instance rather that a
+specialized instance. If writing constructors without <span
+class="calibre4"><code class="calibre5">this</code></span> or <span
+class="calibre4"><code class="calibre5">self</code></span> disturbs you,
+you can make use of Javascript's <span class="calibre4"><code
+class="calibre5">new</code></span> operator whose purpose is to fake
+class-based object orientation. With <span class="calibre4"><code
+class="calibre5">new</code></span> you can define your constructor this
+way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Calc(x,y) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.y = y;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>and your methods as shown on the next page</p>
+<div id="index_split_061.html_calibre_pb_61" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_062.html"></span></p>
+<p><span class="bold">Pseudo-class construction</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Calc(x,y) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.y = y;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">Calc.prototype = {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   add: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">            return this.x + this.y</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   double: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.x = 2*this.x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.y = 2*this.y</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<p>When I first saw this way of defining methods, I thought it pretty
+weird. But it really isn't. The fact is that <span
+class="calibre4"><code class="calibre5">Calc.prototype</code></span> is
+an archetype in disguise. That is to say each instance created with</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">new Calc(</code></span><span class="calibre6"><span
+class="italic"><code class="calibre5">args</code></span></span><span
+class="calibre6"><code class="calibre5">)</code></span><br />
+
+</blockquote>
+<p>will have the same <span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span> as its [[Prototype]]. This
+is possible because the <span class="calibre4"><code
+class="calibre5">function</code></span> statement that defined <span
+class="calibre4"><code class="calibre5">Calc</code></span> created an
+empty <span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span> object which I later
+redefined. (Confused? Then recall that functions are callable objects.
+That is to say we can think of them both as functions and as
+objects.)</p>
+<p>This is the way <span class="calibre4"><code
+class="calibre5">new</code></span> works: all instances it creates
+inherit from a pre-existing <span class="calibre4"><code
+class="calibre5">prototype</code></span> object. Once an instance is
+created, <span class="calibre4"><code class="calibre5">new</code></span>
+runs your constructor. It does so in such a way that <span
+class="calibre4"><code class="calibre5">this</code></span> refers to the
+newly created instance. You saw a way for <span class="calibre4"><code
+class="calibre5">new</code></span> to do that in <a
+href="#index_split_008.html_filepos15555">Section II</a>.</p>
+<p>So what is going on with <span class="calibre4"><code
+class="calibre5">new</code></span> is really object orientation in the
+Javascript object-based system.</p>
+<p>In the above definition I reassigned <span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span> to an archetypal object
+that contains the desired methods. I need to confess that this is not
+the normal way of defining methods. What you are more likely to see is
+shown on the next page.</p>
+<div id="index_split_062.html_calibre_pb_62" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_063.html"></span></p>
+<p><span class="bold">Pseudo-class construction, common
+variation</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Calc(x,y) {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   this.y = y;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">Calc.prototype.add = function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                           return this.x+this.y;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                        };</code></span><br />
+<span class="calibre6"><code
+class="calibre5">Calc.prototype.double = function () {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                           this.x = 2*this.x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                           this.y = 2*this.y</code></span><br />
+<span class="calibre6"><code
+class="calibre5">                        }</code></span><br />
+
+</blockquote>
+<p>This style of defining a kind of object individually adds properties
+to <span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span>. Each addition preserves
+what is already there. Although this style is much more common I see no
+advantage to it because I prefer to write a complete definition in one
+place.</p>
+<p>There is a third style for defining a kind of object which is useful
+in some situations and which emphasizes the similarities between using
+<span class="calibre4"><code class="calibre5">new</code></span> or not.
+This style involves writing a setter for each instance variable. The
+setters are written in such a way that they can be chained together when
+instances are created. The obvious name for this technique is the <span
+class="italic">chaining setter</span> technique.</p>
+<p>I'll show the chaining setter technique to you in both the archetypal
+and pseudo-class styles. The next page shows <span
+class="calibre4"><code class="calibre5">Calc</code></span> defined in a
+chaining setter, archetypal style.</p>
+<div id="index_split_063.html_calibre_pb_63" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_064.html"></span></p>
+<p><span class="bold">Archetypal, chaining setter style</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">&gt; function Calc() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return Object.create(</code></span><br />
+<span class="calibre6"><code
+class="calibre5">            Calc.prototype</code></span><br />
+<span class="calibre6"><code
+class="calibre5">          )</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; Calc.prototype = {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   x : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   y : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setX:  function(x) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      this.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setY:  function(y) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      this.y = y;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   add: function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this.x+this.y;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   double: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.x = 2*this.x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.y = 2*this.y</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5">};</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var add1 = Calc().setX(2).setY(-3);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; add1.add()</code></span><br />
+<span class="calibre6"><code class="calibre5">-1</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var add2 = Calc().setX(2);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; add2.add()</code></span><br />
+<span class="calibre6"><code class="calibre5">2</code></span><br />
+
+</blockquote>
+<p>Extrapolating from two instance variables, you can see that the
+chaining setter style is advantageous when there are a lot of instance
+variables and those instance variables have default values that seldom
+need overriding. In that case creating a new instance becomes easy.</p>
+<p>Note:</p>
+<blockquote>
+Does it bother you to use <span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span> within the definition of
+<span class="calibre4"><code class="calibre5">Calc</code></span>? It
+works because, when <span class="calibre4"><code
+class="calibre5">Calc</code></span> is executed, these things have
+happened;
+</blockquote>
+<blockquote>
+1) the callable object <span class="calibre4"><code
+class="calibre5">Calc</code></span> has been created.
+</blockquote>
+<blockquote>
+2) an archetypal object has been assigned to <span
+class="calibre4"><code class="calibre5">Calc.prototype</code></span>.
+</blockquote>
+<p>As shown on the next page, essentially the same definition works for
+the pseudo-classes.</p>
+<div id="index_split_064.html_calibre_pb_64" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_065.html"></span></p>
+<p><span class="bold">Pseudo-class, chaining setter style</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Calc() { }</code></span><br />
+<span class="calibre6"><code
+class="calibre5">Calc.prototype = {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   x : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   y : 1,</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setX:  function(x) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      this.x = x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   setY:  function(y) { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">      this.y = y;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   add: function() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">      return this.x+this.y;</code></span><br />
+<span class="calibre6"><code class="calibre5">   },</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   double: function() { </code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.x = 2*this.x;</code></span><br />
+<span class="calibre6"><code
+class="calibre5">              this.y = 2*this.y</code></span><br />
+<span class="calibre6"><code class="calibre5">   }</code></span><br />
+<span class="calibre6"><code class="calibre5">};</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var add1 = (new Calc()).setX(2).setY(-3)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; add1.add()</code></span><br />
+<span class="calibre6"><code class="calibre5">-1</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; var add2 = (new Calc()).setX(2)</code></span><br />
+<span class="calibre6"><code
+class="calibre5">&gt; add2.add()</code></span><br />
+<span class="calibre6"><code class="calibre5">2</code></span><br />
+
+</blockquote>
+<p>Both variations of the chaining setter style create an object with
+this inheritance chain</p>
+<div class="calibre_3">
+ 
+</div>
+<ol>
+<li>The instance</li>
+<li>The archetype (<span class="calibre4"><code
+class="calibre5">Calc.prototype</code></span>)</li>
+<li>Object.prototype</li>
+</ol>
+<div id="index_split_065.html_calibre_pb_65" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_066.html"></span></p>
+<p><span class="bold">Question</span></p>
+<p>Implement a function <span class="calibre4"><code
+class="calibre5">Construct</code></span> that can be used like this</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var obj = Construct(Calc,2,-3);</code></span><br />
+
+</blockquote>
+<p>as a replacement for</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var obj = new Calc(2,-3);</code></span><br />
+
+</blockquote>
+<p>One thing you will need to know to answer this question is how to
+remove the first argument from the pseudo-array <span
+class="calibre4"><code class="calibre5">arguments</code></span>. Do it
+this way</p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">var args = Array.from(arguments),</code></span><br />
+<span class="calibre6"><code
+class="calibre5">    F = args.shift();</code></span><br />
+
+</blockquote>
+<p>Now <span class="calibre4"><code class="calibre5">F</code></span> is
+the first argument and <span class="calibre4"><code
+class="calibre5">args</code></span> is an array of the remaining
+arguments.</p>
+<div id="index_split_066.html_calibre_pb_66" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_067.html"></span></p>
+<p><span class="bold">Answer</span></p>
+<blockquote>
+<span class="calibre6"><code
+class="calibre5">function Construct() {</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   var args = Array.from(arguments),</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       F = args.shift(),</code></span><br />
+<span class="calibre6"><code
+class="calibre5">       obj = Object.create(F.prototype); </code></span><br />
+<span class="calibre6"><code
+class="calibre5">   F.apply(obj,args);</code></span><br />
+<span class="calibre6"><code
+class="calibre5">   return obj;</code></span><br />
+<span class="calibre6"><code class="calibre5">}</code></span><br />
+
+</blockquote>
+<div id="index_split_067.html_calibre_pb_67" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_068.html"></span></p>
+<p><span class="calibre1"><span class="bold">About the
+Author</span></span></p>
+<p><span class="calibre3"><span class="bold">J Adrian
+Zimmer</span></span></p>
+<p><img src="images/00001.jpg" class="calibre_11" /></p>
+<p>Zimmer is a Ph.D. mathematician who retired knowing more about
+computer science than about mathematics. He has taught at all levels
+from high school though graduate school. His expertise lies more in
+explaining things than in any one specialty.</p>
+<p>His hobbies include biking, reading, American Sign Language, and
+watching the kind of movies that make one think about the various ways
+to be human.</p>
+<p>(See also <a href="http://jazimmer.net">jazimmer.net</a>.)</p>
+<div id="index_split_068.html_calibre_pb_68" class="mbp_pagebreak">
+
+</div>
+<p><span id="index_split_069.html"></span></p>
+<p><span></span> <span></span> <span></span></p>
+<p><a href="#index_split_000.html_filepos319">Title Page</a></p>
+<p><a href="#index_split_001.html_filepos782">Copyright Page</a></p>
+<p><a href="#index_split_002.html_filepos1262">Annotated List of
+Keywords</a></p>
+<p><a href="#index_split_003.html_filepos3042">Annotated List of
+Sections</a></p>
+<p><a href="#index_split_004.html_filepos5713">Preface</a></p>
+<p><a href="#index_split_005.html_filepos8396">I. Object
+Inheritance</a></p>
+<p><a href="#index_split_006.html_filepos12404">Ia Question</a></p>
+<p><a href="#index_split_007.html_filepos13224">Ib Answer</a></p>
+<p><a href="#index_split_008.html_filepos15555">II. Functions</a></p>
+<p><a href="#index_split_009.html_filepos16634">IIa Clarifing
+Function.prototype</a></p>
+<p><a href="#index_split_010.html_filepos17631">IIb Difference between
+call and apply</a></p>
+<p><a href="#index_split_011.html_filepos20908">IIc Question</a></p>
+<p><a href="#index_split_012.html_filepos22788">IId Answer</a></p>
+<p><a href="#index_split_013.html_filepos24075">IIe Implementation of
+fixThis</a></p>
+<p><a href="#index_split_014.html_filepos24867">III. Centering Two Lines
+of Text</a></p>
+<p><a href="#index_split_015.html_filepos26224">IIIa Template for
+centering two lines</a></p>
+<p><a href="#index_split_016.html_filepos28785">IIIb Question</a></p>
+<p><a href="#index_split_017.html_filepos29454">IIIc Answer</a></p>
+<p><a href="#index_split_018.html_filepos30319">IV. Event Loops</a></p>
+<p><a href="#index_split_019.html_filepos33438">IVa Example of adding a
+listener.</a></p>
+<p><a href="#index_split_020.html_filepos35378">IVb Question</a></p>
+<p><a href="#index_split_021.html_filepos36444">IVc Answer</a></p>
+<p><a href="#index_split_022.html_filepos37930">V. Multitasking with an
+Event Loop</a></p>
+<p><a href="#index_split_023.html_filepos39329">Va Using the event queue
+for repetition.</a></p>
+<p><a href="#index_split_024.html_filepos40677">Vb Messages and
+Colors</a></p>
+<p><a href="#index_split_025.html_filepos41588">Vc Question</a></p>
+<p><a href="#index_split_026.html_filepos42292">Vd Answer</a></p>
+<p><a href="#index_split_027.html_filepos44854">VI. Multitasking with
+Event Queuing</a></p>
+<p><a href="#index_split_028.html_filepos46803">VIa Inadequate que
+function.</a></p>
+<p><a href="#index_split_029.html_filepos51836">VIb installQer</a></p>
+<p><a href="#index_split_030.html_filepos55542">VIc Question</a></p>
+<p><a href="#index_split_031.html_filepos56809">VId Answer</a></p>
+<p><a href="#index_split_032.html_filepos59787">VII. Functions as
+Objects</a></p>
+<p><a href="#index_split_033.html_filepos60133">VIIa A Statefull
+writeMessage</a></p>
+<p><a href="#index_split_034.html_filepos61914">VIIb Question</a></p>
+<p><a href="#index_split_035.html_filepos62343">VIIc Answer</a></p>
+<p><a href="#index_split_036.html_filepos66178">VIII. Promises</a></p>
+<p><a href="#index_split_037.html_filepos66873">VIIIa Using f1.que,
+f2.que, and f3.que sequentially</a></p>
+<p><a href="#index_split_038.html_filepos69202">VIIIb f1, f2, and f3
+with a promise</a></p>
+<p><a href="#index_split_039.html_filepos73572">VIIIc A then/catch
+chain</a></p>
+<p><a href="#index_split_040.html_filepos79067">VIIId A then/catch
+chain</a></p>
+<p><a href="#index_split_041.html_filepos81352">VIIIe Question</a></p>
+<p><a href="#index_split_042.html_filepos82111">VIIIf Question: Part
+a</a></p>
+<p><a href="#index_split_043.html_filepos82668">VIIIg Answer: Part
+a</a></p>
+<p><a href="#index_split_044.html_filepos83671">VIIIh Question: Part
+b</a></p>
+<p><a href="#index_split_045.html_filepos84381">VIIIj Answer: Part
+b</a></p>
+<p><a href="#index_split_046.html_filepos85813">IX. Multitasking Example
+with Promises</a></p>
+<p><a href="#index_split_047.html_filepos87104">IXa Question</a></p>
+<p><a href="#index_split_048.html_filepos87560">IXb Answer</a></p>
+<p><a href="#index_split_049.html_filepos91680">X. Making
+Promises</a></p>
+<p><a href="#index_split_050.html_filepos96367">Xa Reading a
+File</a></p>
+<p><a href="#index_split_051.html_filepos97898">Xb Reading with a
+promise.</a></p>
+<p><a href="#index_split_052.html_filepos100609">Xc Ajax</a></p>
+<p><a href="#index_split_053.html_filepos100855">Xd An ajax
+request</a></p>
+<p><a href="#index_split_054.html_filepos102394">Xe Question</a></p>
+<p><a href="#index_split_055.html_filepos103793">Xf Answer</a></p>
+<p><a href="#index_split_056.html_filepos106371">XI. Implementing
+hesitating</a></p>
+<p><a href="#index_split_057.html_filepos107317">XIa Question</a></p>
+<p><a href="#index_split_058.html_filepos109656">XIb Answer</a></p>
+<p><a href="#index_split_059.html_filepos111516">XII. More on Object
+Orientation in Javascript</a></p>
+<p><a href="#index_split_060.html_filepos113199">XIIa An
+archetype</a></p>
+<p><a href="#index_split_061.html_filepos117425">XIIb Archetypal
+construction</a></p>
+<p><a href="#index_split_062.html_filepos119149">XIIc Pseudo-class
+construction</a></p>
+<p><a href="#index_split_063.html_filepos121964">XIId Pseudo-class
+construction, common variation</a></p>
+<p><a href="#index_split_064.html_filepos124030">XIIe Archetypal,
+chaining setter style</a></p>
+<p><a href="#index_split_065.html_filepos127054">XIIf Pseudo-class,
+chaining setter style</a></p>
+<p><a href="#index_split_066.html_filepos129206">XIIg Question</a></p>
+<p><a href="#index_split_067.html_filepos130259">XIIh Answer</a></p>
+<p><a href="#index_split_068.html_filepos130845">About the
+Author</a></p>
+<div id="index_split_069.html_calibre_pb_69" class="mbp_pagebreak">
+
+</div>

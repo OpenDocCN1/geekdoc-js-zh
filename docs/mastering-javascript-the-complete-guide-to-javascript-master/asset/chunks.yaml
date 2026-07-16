@@ -1,0 +1,2000 @@
+- fmt: "\n# Mastering JavaScript: The Complete Guide to JavaScript Mastery\nTim Robards\
+    \ © 2022 Tim Robards\n\n## Table of Contents\n\n### Introduction\n- Introducing\
+    \ JavaScript\n- How to add JavaScript to a webpage\n- How to add inline JavaScript\n\
+    - How to link to external JavaScript\n- Summary\n\n### Syntax and Structure\n\
+    - JavaScript Values\n- Camel Case\n- Unicode\n- Semicolons\n- Indentation\n- White\
+    \ Space\n- Commenting\n- Identifiers\n- Case Sensitivity\n- Reserved Words\n\n\
+    ### JavaScript Operators\n- JavaScript Expressions\n\n- Summary: Variables, Scope\
+    \ & Hoisting\n- What are Variables?\n- Naming Variables\n- Difference between\
+    \ `var`, `let`, and `const`\n- Variable Scope\n- Hoisting\n- Constants\n- Summary\n\
+    \n### Data Types\n- What are Data Types?\n- Summary: Converting Data Types\n-\
+    \ Converting Values to Strings\n- Converting Values to Numbers\n- Converting Values\
+    \ to Booleans\n\n### The Basics of JavaScript Strings\n- Creating Strings\n- Concatenation\n\
+    - Syntax Rules\n- Summary: Working with Strings\n- The Anatomy of a String\n-\
+    \ Converting Strings into Numbers\n\n### An Introduction to the DOM\n- What is\
+    \ the DOM?\n- The DOM Tree & Nodes\n- Accessing DOM Elements\n    - `getElementById()`\n\
+    \    - `getElementsByClassName()`\n    - `getElementsByTagName()`\n    - Query\
+    \ Selectors\n- Traversing the DOM\n    - Root Nodes\n    - Parent Nodes\n    -\
+    \ Child Nodes\n    - Sibling Nodes\n- Making changes to the DOM\n    - Creating\
+    \ New Nodes\n    - Inserting Nodes into the DOM\n    - Removing Nodes from the\
+    \ DOM\n- How to modify DOM nodes\n    - Modifying Attributes\n    - Modifying\
+    \ Classes\n    - Modifying Styles\n\n### Understanding Events\n- What are Event\
+    \ Handlers & Event Listeners?\n- Inline Event Handlers\n- Event Handler Properties\n\
+    - Event Listeners\n- Common Events\n- Event Objects\n- Summary\n\n### Mastering\
+    \ Arrays\n- Creating an Array\n- Looping over an Array\n- Adding to the end of\
+    \ an Array\n- Removing from the end of an Array\n- Removing from the front of\
+    \ an Array\n- Adding to the front of an Array\n- Getting the index of an Array\
+    \ item\n- Removing an item by index position\n- Remove multiple items from an\
+    \ index position\n- Copying an Array\n- Checking if an object is an Array\n- Reversing\
+    \ the order of an Array\n- Replacing Array elements with static values\n- Sorting\
+    \ an Array\n- Merging Arrays\n- Converting Array Elements into a String\n- `map()`,\
+    \ `filter()`, and `reduce()`\n- Find the first element that satisfies a function\n\
+    \n### Mastering Objects\n- Creating an Object\n- Dot notation\n- Deleting Properties\n\
+    - Square Brackets\n- Updating object members\n- What is “this”?\n- Summary\n\n\
+    ### Using Conditionals\n- `if/else` Statements\n- `else if`\n- Comparison operators\n\
+    - Nesting `if/else`\n- Logical operators: AND, OR, and NOT\n- `switch` statements\n\
+    - Ternary operator\n\n### Mastering Loops\n- The `for` loop\n- `do…while` statement\n\
+    - `while` statement\n- Labelled statement\n- `break` statement\n- `continue` statement\n\
+    - `for…in` statement\n- `for…of` statement\n- Summary\n\n### Mastering Functions\n\
+    - Defining functions\n- Function expressions\n- Calling functions\n- Function\
+    \ scope\n- Nesting functions and closures\n- Closures\n- The `arguments` object\n\
+    - Function parameters\n- Arrow functions\n- Predefined functions\n- Summary\n\n\
+    ### Classes\n- What are classes?\n- Classes are just like functions!\n- Class\
+    \ declarations\n- Hoisting\n- Class expressions\n- Constructors\n- Instance properties\n\
+    - Field declarations\n- Child classes using `extends`\n- Species\n- The `super`\
+    \ keyword\n- Mix-ins\n\n### Understanding APIs\n- APIs in JavaScript\n- So how\
+    \ do APIs work?\n- Summary\n\n### Fetching data from a server\n- The old way…\n\
+    - The solution: AJAX\n- Creating an Ajax request\n- `XMLHttpRequest`\n- `Fetch`\n\
+    - Working with promises\n- Summary\n\n### An Introduction to REST APIs\n- What\
+    \ is a REST API?\n- RESTful Architecture\n- REST in action\n- Working with REST\
+    \ data\n\n### Promises\n- Why use promises?\n- Summary: `Async` & `defer`\n\n\
+    ---\n\nOur `changeText()` function modifies the `textContent` of element. So now\
+    \ when you click on the button, the event fires which runs our which alters the\
+    \ text in our `p` tag.\n\nWhile inline event handlers clearly work — they really\
+    \ shouldn’t be used in production. For the same reason that inline CSS shouldn’t\
+    \ be used, it’s messy! And our code will be much more maintainable, if we handle\
+    \ our JavaScript entirely in separate script files, rather then having handlers\
+    \ throughout our HTML.\n\n### Event Handler Properties\nEvent handler properties\
+    \ work very similarly to inline handlers, except we set the property of an element\
+    \ in JavaScript, instead of on the attribute in our HTML.\n\nOur HTML is the same,\
+    \ except we’re now excluding the `onclick=\"changeText()\"` we used previously:\n\
+    \n```html\n<html>\n  <!-- ... content ... -->\n</html>\n```\n\nAnd our function\
+    \ will remain similar as well, except now we need to access the button element\
+    \ in our JavaScript. We simply access `onclick` just as we would access `style`\
+    \ or `id` or any other element property, then assign the function reference.\n\
+    \n```javascript\n// Function to modify the text content of the paragraph\nconst\
+    \ changeText = () => {\n  const p = document.querySelector('p');\n  p.textContent\
+    \ = \"I was changed with an event handler\";\n}\n\n// Add event handler as a property\
+    \ of the button element\nconst button = document.querySelector('button');\nbutton.onclick\
+    \ = changeText;\n```\n\nNote: Event handlers do not follow the `camelCase` convention.\
+    \ Notice the code is not.\n\nNow when you click the button, it’ll fire the event\
+    \ from our JavaScript property. You’ll see that when passing a function reference\
+    \ to the `onclick` property, we don’t include parentheses, as we are not invoking\
+    \ the function at that moment, but only passing a reference to it.\n\nThe event\
+    \ handler property is more maintainable than the inline handler, but it still\
+    \ isn’t the greatest way to manage events. If for example, you tried to set multiple\
+    \ `onclick` properties, all but the last one would be overwritten, as demonstrated\
+    \ below:\n\n```javascript\nconst p = document.querySelector('p');\nconst button\
+    \ = document.querySelector('button');\n\nconst changeText = () => {\n  p.textContent\
+    \ = \"Will I\";\n}\n\nconst alertText = () => {\n  alert(\"I\");\n}\n\n// Events\
+    \ can be overwritten!\nbutton.onclick = changeText;\nbutton.onclick = alertText;\n\
+    ```\n\nIn the above example, the button click would only display an alert, and\
+    \ not change the `p` text, since `alertText` was the last one added.\n\n### Event\
+    \ Listeners\nNow that we have an understanding of both inline handlers and event\
+    \ handler properties, let’s move onto event listeners.\n\nEvent listeners watch\
+    \ for an event on an element instead of assigning the event directly to a property.\
+    \ We’ll use the `addEventListener()` method to listen for the event. `addEventListener()`\
+    \ takes two mandatory parameters — the event to listen for and the listener callback.\n\
+    \n```javascript\n// Function to modify the text content of the paragraph\nconst\
+    \ p = document.querySelector('p');\nconst changeText = () => {\n  p.textContent\
+    \ = \"I changed because of an event\";\n}\n\n// Listen for click\nconst button\
+    \ = document.querySelector('button');\nbutton.addEventListener('click', changeText);\n\
+    ```\n\nNote: In the first methods, a click event was referred to as `onclick`\
+    \ but with event listeners, it is referred to as `click`. Event listeners appear\
+    \ very similar to event handler properties, however, they have a crucial advantage.\
+    \ We can set multiple listeners on the same element for example:\n\n```javascript\n\
+    const p = document.querySelector('p');\nconst button = document.querySelector('button');\n\
+    \nconst changeText = () => {\n  p.textContent = \"Will I\";\n}\n\nconst alertText\
+    \ = () => {\n  p.textContent = \"I\";\n}\n\n// Multiple listeners can be added\
+    \ to the same event\nbutton.addEventListener('click', changeText);\nbutton.addEventListener('click',\
+    \ alertText);\n```\n\nIt’s more concise to use anonymous functions instead of\
+    \ function references on event listeners.\n\n```javascript\n// An anonymous function\
+    \ on event listener\nbutton.addEventListener('click', (event) => {\n  p.textContent\
+    \ = \"Will I\";\n});\n```\n\nWe could also use `removeEventListener()` function\
+    \ to remove one or all events from an element.\n\n```javascript\n// Remove alert\
+    \ function from button\nbutton.removeEventListener('click', alertText);\n```\n\
+    \nIt’s also useful to know that you can use `addEventListener()` on `document`\
+    \ and `window` object. Event listeners are currently the most common and preferred\
+    \ way to handle events in JavaScript. Next up we’ll take a brief look at some\
+    \ of the more common events we’re likely to work with.\n\n### Mouse Events\n-\
+    \ `click`: Fires when the mouse is pressed and released on an element.\n- `dblclick`:\
+    \ Fires when an element is clicked twice.\n- `mouseenter`: Fires when a pointer\
+    \ enters an element.\n- `mouseleave`: Fires when a pointer leaves an element.\n\
+    - `mousemove`: Fires every time a pointer moves inside an element.\n\nA `click`\
+    \ is actually a compound event that is comprised of `mousedown` and `mouseup`\
+    \ events, these fire when the mouse button is pressed down or lifted, respectively.\
+    \ Using `mouseenter` and `mouseleave` together recreates a hover effect that lasts\
+    \ as long as a pointer is on the element.\n\n### Form Events\n- `submit`: Fires\
+    \ when a form is submitted.\n- `focus`: Fires when an element (such as an input)\
+    \ receives focus.\n- `blur`: Fires when an element loses focus.\n\n### Keyboard\
+    \ Events\n- `keydown`: Fires once when a key is pressed.\n- `keyup`: Fires once\
+    \ when a key is released.\n- `keypress`: Fires continuously while a key is pressed.\n\
+    \nAlthough they look similar, `keydown` and `keypress` events do not access all\
+    \ the exact same keys. While `keydown` will acknowledge every key that is pressed,\
+    \ `keypress` will omit keys that do not produce a character, such as `Shift` or\
+    \ `Alt`.\n\nIf a parameter, known as an event object, is passed through to the\
+    \ event listener, we can access more information about the action that took place.\
+    \ Three properties that pertain to keyboard objects include `keyCode`, `key`,\
+    \ and `code`.\n\nFor example, if the user presses the letter `a` key on their\
+    \ keyboard, the following properties pertaining to that key will surface:\n- `keyCode`:\
+    \ A number pertaining to the key e.g. “65”\n- `key`: Represents the character\
+    \ name e.g. “a”\n- `code`: Represents the physical key being pressed e.g. “KeyA”\n\
+    \nLet’s take a closer look at this with the following code:\n\n```javascript\n\
+    // Test the keyCode, key, and code properties\nwindow.addEventListener('keydown',\
+    \ (event) => {\n  console.log(event.keyCode);\n  console.log(event.key);\n  console.log(event.code);\n\
+    });\n```\n\n### Event Objects\nThe `Event` object consists of properties and methods\
+    \ that all events can access. In addition to the generic `Event` object, each\
+    \ type of event has its own extensions, such as `KeyboardEvent` and `MouseEvent`.\
+    \ The `Event` object is passed through a listener as a parameter. It is typically\
+    \ written as `event` or `e`.\n\n```javascript\n// Pass an event through a listener\n\
+    button.addEventListener('click', (event) => {\n  console.log(event.type);\n});\n\
+    ```\n\n### event.target\nIn this final section, we’ll look at one of the most\
+    \ used event properties: the `target` property. `event.target` returns the element\
+    \ that triggered the event.\n\n```html\n<div>\n  <button>Click me</button>\n</div>\n\
+    ```\n\nUsing `event.target` within our browser’s Developer Console, we can place\
+    \ one event listener on the outer element and get the most deeply nested element.\n\
+    \n```javascript\nconst section = document.querySelector('div');\nsection.addEventListener('click',\
+    \ (event) => {\n  console.log(event.target);\n});\n```\n\n## Mastering Arrays\n\
+    An array in JavaScript can be looked at as a kind of special variable, which is\
+    \ able to hold more than one value at a time. Arrays can contain any data type,\
+    \ including numbers, strings, Booleans and objects. More specifically, an array\
+    \ is a type of a high-level, list-like object, which consists of an ordered collection\
+    \ (or list) containing zero or more data types. We use numbered indices starting\
+    \ from 0 to access specific items.\n\n### Creating an Array\n```javascript\nvar\
+    \ shapes = [\"Square\", \"Circle\", \"Triangle\"];\n```\n\n### How can we access\
+    \ each array item?\n```javascript\nvar first = shapes[0];\nvar second = shapes[1];\n\
+    var last = shapes[2];\n```\n\n### Looping over an Array\n```javascript\nshapes.forEach((item,\
+    \ index) => {\n  console.log(item); // Square 0\n  console.log(item); // Circle\
+    \ 1\n  console.log(item); // Triangle 2\n});\n```\n\n### Adding to the end of\
+    \ an Array\n```javascript\nvar addItem = shapes.push(\"Rectangle\"); // [\"Square\"\
+    , \"Circle\", \"Triangle\", \"Rectangle\"]\n```\n\n### Removing from the end of\
+    \ an Array\n```javascript\nvar removeItemEnd = shapes.pop();\n// [\"Square\",\
+    \ \"Circle\", \"Triangle\"]\n```\n\n### Removing from the front of an Array\n\
+    ```javascript\nvar removeItemFront = shapes.shift();\n// [\"Circle\", \"Triangle\"\
+    ]\n```\n\n### Adding to the front of an Array\n```javascript\nvar addItemFront\
+    \ = shapes.unshift(\"Hexagon\");\n// [\"Hexagon\", \"Circle\", \"Triangle\"]\n\
+    ```\n\n### Getting the index of an Array item\n```javascript\nvar pos = shapes.indexOf(\"\
+    Circle\");\n```\n\n### Removing an item by index position\n```javascript\nvar\
+    \ removedItem = shapes.splice(1, 1);\n```\n\n### Remove multiple items from an\
+    \ index position\n```javascript\nvar colors = [\"Red\", \"Green\", \"Blue\", \"\
+    Yellow\"];\nvar removedItems = colors.splice(1, 2);\n// [\"Green\", \"Blue\"]\n\
+    ```\n\n### Copying an Array\n```javascript\nvar arrayCopy = [...shapes];\n```\n\
+    \n### Checking if an object is an Array\n```javascript\nArray.isArray(shapes);\
+    \ // true\n```\n\n### Reversing the order of an Array\n```javascript\nshapes.reverse();\n\
+    ```\n\n### Replacing Array elements with static values\n```javascript\nshapes[0]\
+    \ = \"Pentagon\";\n```\n\n### Sorting an Array\n```javascript\nshapes.sort();\n\
+    ```\n\n### Merging Arrays\n```javascript\nvar merged = shapes.concat([\"Date\"\
+    , \"Fig\"]);\n```\n\n### Converting Array Elements into a String\n```javascript\n\
+    var joinedStrings = shapes.join(\", \");\n```\n\n### `map()`, `filter()`, and\
+    \ `reduce()`\n```javascript\nvar numbers = [1, 2, 3, 4, 5];\nvar add10 = numbers.map((val)\
+    \ => val + 10); // [11, 12, 13, 14, 15]\n\nvar values = [10, 20, 34];\nvar filtered\
+    \ = values.filter((value) => value > 15); // [20, 34]\n\nvar average = numbers.reduce((total,\
+    \ number, index) => {\n  return total + number;\n}, 0) / numbers.length; // 3\n\
+    ```\n\n### Find the first element that satisfies a function\n```javascript\nvar\
+    \ found = numbers.find((element) => element > 3); // 4\n```\n\n### Find the index\
+    \ of the first element\n```javascript\nvar foundIndex = numbers.findIndex((element)\
+    \ => element > 3); // 3\n```\n\n## Mastering Objects\nObjects in JavaScript are\
+    \ used to store collections of data in the format of `key: value` pairs. Contained\
+    \ within an object can have any number of variables and/ functions which are then\
+    \ referred to as properties and methods.\n\n### Creating an Object\n```javascript\n\
+    var car = {\n  name: \"Tesla\",\n  model: \"Model 3\",\n  weight: 1700,\n  extras:\
+    \ [\"heated seats\", \"tinted glass\"],\n  display() {\n    console.log(\"This\
+    \ car is a \" + this.model);\n  }\n};\n```\n\n```javascript\n// Function to modify\
+    \ the text content of the paragraph\nconst changeText = () => {\n  const p = document.querySelector('p');\n\
+    \  p.textContent = \"I was changed with an event handler\";\n}\n\n// Add event\
+    \ handler as a property of the button element\nconst button = document.querySelector('button');\n\
+    button.onclick = changeText;\n```\n\nNote: Event handlers do not follow the `camelCase`\
+    \ convention. Notice the code is not.\n\nNow when you click the button, it’ll\
+    \ fire the event from our JavaScript property. You’ll see that when passing a\
+    \ function reference to the `onclick` property, we don’t include parentheses,\
+    \ as we are not invoking the function at that moment, but only passing a reference\
+    \ to it.\n\nThe event handler property is more maintainable than the inline handler,\
+    \ but it still isn’t the greatest way to manage events. If for example, you tried\
+    \ to set multiple `onclick` properties, all but the last one would be overwritten,\
+    \ as demonstrated below:\n\n```javascript\nconst p = document.querySelector('p');\n\
+    const button = document.querySelector('button');\n\nconst changeText = () => {\n\
+    \  p.textContent = \"Will I\";\n}\n\nconst alertText = () => {\n  alert(\"I\"\
+    );\n}\n\n// Events can be overwritten!\nbutton.onclick = changeText;\nbutton.onclick\
+    \ = alertText;\n```\n\nIn the above example, the button click would only display\
+    \ an alert, and not change the `p` text, since `alertText` was the last one added.\n\
+    \n### Dot notation\nAbove, you’ve seen the object’s properties and methods accessed\
+    \ using dot. The object name `car` acts as the namespace — it needs to be entered\
+    \ first to access anything within the object. Then you write a dot, followed by\
+    \ the item you want to access — this can be the name of a simple property, an\
+    \ item of an array property, or a call to one of the object’s methods, for example:\n\
+    \n```javascript\ncar.name;\ncar.extras[1];\ncar.display();\n```\n\n### Deleting\
+    \ Properties\nWe can use the `delete` operator to remove properties, like so:\n\
+    \n```javascript\ndelete car.model;\ncar.model; // undefined\n```\n\n### Square\
+    \ Brackets\nIf for example, we had a multi-word property within our object, such\
+    \ as:\n\n```javascript\nvar user = {\n  \"likes potatoes\": true\n};\n```\n\n\
+    We couldn’t access the multi-word property with dot-notation:\n\n```javascript\n\
+    user.likes-potatoes; // syntax error!\n```\n\nThis is because a dot requires the\
+    \ key to be a valid variable identifier. That is no spaces and other limitations.\
+    \ The alternative is to use square brackets, which works with any string:\n\n\
+    ```javascript\nlet user = {};\n// set\nuser[\"likes potatoes\"] = true;\n// get\n\
+    alert(user[\"likes potatoes\"]); // true\n// delete\ndelete user[\"likes potatoes\"\
+    ];\n```\n\n### Updating object members\nWe can update the values within our objects\
+    \ by simply declaring the property you’d like to set with the new value, like\
+    \ so:\n\n```javascript\nuser.age;     // 32\nuser.age = 33;  // 33\nuser.age;\
+    \     // 33\n```\n\nYou can also create completely new members of your object.\
+    \ For example:\n\n```javascript\nuser.surname = 'Smithessson';\n// {name: \"Sam\"\
+    , age: 33, likes potatoes: true, surname: \"Smithessson\"}\n```\n\n### What is\
+    \ “this”?\nYou may have noticed the use of the word `this` in our earlier example.\
+    \ See the following:\n\n```javascript\n{\n  car is a ' + this.model;\n}\n```\n\
+    \nThe `this` keyword refers to the current object that the code is being written\
+    \ inside of— so in this case `this` is equivalent to Why not just write `car`\
+    \ instead? It’s best practice to write well-constructed object-orientated code,\
+    \ and so the use of `this` is extremely useful. It will ensure the correct values\
+    \ are used when member’s context changes (e.g. two different car instances may\
+    \ have different names, but will want to use their own information). For example:\n\
+    \n```javascript\nvar car1 = { model: \"Tesla\" };\nvar car2 = { model: \"Toyota\"\
+    \ };\ncar1.display(); // \"This car is a Tesla\"\ncar2.display(); // \"This car\
+    \ is a Toyota\"\n```\n\n## Using Conditionals\nWhen we want to introduce logic\
+    \ & make decisions in our programs, we use conditionals, we can control the behavior\
+    \ of our code — by determining whether or not pieces of code run. For example,\
+    \ when using a weather app, if the weather is sunny we could see a sun image,\
+    \ or if it’s raining we could see a rain-cloud image.\n\n### `if/else` Statements\n\
+    The most common type of conditional statements are `if` and `else` statements.\
+    \ The syntax looks like:\n\n```javascript\nif (condition) {\n  // run this code\
+    \ if condition is true\n} else {\n  // run this code instead\n}\n```\n\nIn our\
+    \ above code, our `notify` variable will be set to “It is AM” if the hour is less\
+    \ than 12. Otherwise hour greater than 12 and will be set to “It is PM”.\n\n###\
+    \ `else if`\nOf course, we will often have more than two choices to work with!\
+    \ To consider these choices we use `else if`. We put additional blocks between\
+    \ `if` and `else` statements.\n\n```javascript\nif (hour < 12) {\n  notify = \"\
+    AM\";\n} else if (hour < 18) {\n  notify = \"Day\";\n} else {\n  notify = \"Night\"\
+    ;\n}\n```\n\n### Comparison operators\nTo test the conditions inside our conditional\
+    \ statements, we use comparison operators are as follows:\n- `===` and `!==`:\
+    \ to test if one value is equal to, or not equal to, the other.\n- `<` and `>`:\
+    \ to test if one value is less than or greater than the other.\n- `<=` and `>=`:\
+    \ to test if one value is less than equal to, or greater than equal to, the other.\n\
+    \nA very common pattern when doing comparisons in conditional statements is to\
+    \ test Booleans and Any value that is not `false` or an empty string will in fact\
+    \ return true when tested as a conditional statement. This means you can easily\
+    \ use a variable name on its own to test whether it is or even that it exists\
+    \ at all (i.e. it is not `undefined`). For example:\n\n```javascript\nlet snack\
+    \ = \"Cheetos\";\nif (snack) {\n  // have\n} else {\n  // not this\n}\n```\n\n\
+    ### Nesting `if/else`\nThere will be times when you’ll want to nest an `if/else`\
+    \ statement inside of another one — and it’s fine to do so! Let’s see an example:\n\
+    \n```javascript\nif (hasFood) {\n  if (hungerLevel > 5) {\n    // I have so I\
+    \ will eat\n  } else if (hungerLevel <= 5) {\n    // even though I have not hungry\
+    \ so I will not eat them\n  }\n}\n```\n\n### Logical operators: AND, OR, and NOT\n\
+    We can also test multiple conditions without needing to write nested `if/else`\
+    \ statements, we do this with logical operators:\n- `AND`: lets you chain together\
+    \ two or more expressions. Every expression must evaluate to true for the whole\
+    \ expression to return.\n- `OR`: also lets you chain together two or more expressions.\
+    \ One or more of them have to evaluate to true for the whole expression return.\n\
+    - `NOT`: can be used to negate an expression.\n\nLet’s rewrite our previous example\
+    \ using `AND`:\n\n```javascript\nif (hasFood && hungerLevel > 5) {\n  // hungerLevel\
+    \ and I have so I will eat\n} else if (hasFood && hungerLevel <= 5) {\n  // even\
+    \ though I have not hungry so I will not eat them\n}\n```\n\nA common mistake\
+    \ when using the logical `OR` operator in conditional statements is to try to\
+    \ state the variable whose value are checking once, which is two different car\
+    \ instances may have different names, but will want to use their own information.\
+    \ For example:\n\n```javascript\nif (car1 === \"Tesla\" || car2 === \"Toyota\"\
+    ) {\n  // run this code\n} else {\n  // be an\n}\n```\n\nThe `NOT` operator can\
+    \ be used to negate an expression. Let’s combine it with `OR` in the above example:\n\
+    \n```javascript\nif (!isSunny || carStatus === \"Clear\") {\n  // run this code\n\
+    } else {\n  // be an\n}\n```\n\n## Mastering Loops\nIn JavaScript, we use loops\
+    \ when we want an easy way to handle repetition. In this chapter, we’re going\
+    \ to take a look at all the different ways we can create loops in our code — and\
+    \ we’ll consider the pros and cons of each method.\n\n### Summary: Mastering Loops\n\
+    - The `for` loop\n- `do…while` statement\n- `while` statement\n- Labelled statement\n\
+    - `break` statement\n- `continue` statement\n- `for…in` statement\n- `for…of`\
+    \ statement\n\n### the `for` loop\nAs we’ve seen in the above example, a `for`\
+    \ loop will repeat until the condition evaluates to false. The structure is like\
+    \ so:\n\n```javascript\nfor (let i = 0; i < 10; i++) {\n  // one\n}\n```\n\nThe\
+    \ `for` loop initializes the loop counters, the update expression increment i\
+    \ by 1 after each pass through the loop. The `i` is the number of steps taken.\
+    \ `i < 10` is the condition. `i++` is the update expression. `let i = 0` is initializing\
+    \ the loop starting from the beginning by zero.\n\n```javascript\nfor (let i =\
+    \ 0; i < 10; i++) {\n  // one\n}\n```\n\n### `do…while` statement\nA `do...while`\
+    \ statement will repeat at least once and then iterates until the condition evaluates\
+    \ to. The statement is always once prior to the condition being checked.\n\n```javascript\n\
+    let i = 0;\ndo {\n  i++;\n} while (i < 10);\n```\n\n### `while` statement\nA `while`\
+    \ statement executes its statements as long as a specified condition evaluates\
+    \ to. The condition test occurs before the statement in the loop is executed.\n\
+    \n```javascript\nlet a = 0;\nlet b = 0;\nwhile (a < 3) {\n  a++;\n  b++;\n}\n\
+    ```\n\nWith each iteration, the loop increments `a` and adds that value to `b`.\
+    \ `a` and `b` take on the following values:\n- first pass: `a = 1` and `b = 1`\n\
+    - second pass: `a = 2` and `b = 2`\n- third pass: `a = 3` and `b = 3`\n\nAfter\
+    \ completion of the third pass, the condition `a < 3` is no longer so that’s where\
+    \ our loop terminates! Note: When you first start with loops, you may accidentally\
+    \ create an infinite loop. This is when a loop condition never evaluates to.\n\
+    \n```javascript\nwhile (true) {\n  //\n}\n```\nCAUTION: If you run this code —\
+    \ please be aware that it’s likely to crash your browser!! So sure you’ve backed\
+    \ up your open tabs - if you want to see what happens.\n\n### labelled statement\n\
+    You can attach a label to any statement to serve as an identifier so you can refer\
+    \ it elsewhere in your program. As an example, you could use a label to identify\
+    \ a loop, and then use `break` or `continue` statements to indicate whether a\
+    \ program should interrupt the loop, or continue its execution.\n\n```javascript\n\
+    totalLoop:\nwhile (a < 3) {\n  //\n}\n```\n\nThe value of `label` may be anything\
+    \ you like (with the exception of a JavaScript reserved word). Then you provide\
+    \ to execute. So for example, you could use the label `totalLoop` to identify\
+    \ a `while` loop.\n\n### `break` statement\nWe use the `break` statement to terminate\
+    \ a loop or in conjunction with a labelled statement. When you use `break` without\
+    \ a label, it terminates the innermost enclosing `switch` immediately and transfers\
+    \ control to the following statement. When you use `break` with a label, it terminates\
+    \ the specified labelled statement.\n\n```javascript\nbreak;\n```\n\nFor example,\
+    \ let’s loop through an array until we find the index of an element with the value\
+    \ of: `foundMe`.\n\n```javascript\nfor (let i = 0; i < array.length; i++) {\n\
+    \  if (array[i] === foundMe) {\n    break;\n  }\n}\n```\n\nAnd let’s use `break`\
+    \ with a labelled statement:\n\n```javascript\nlet x = 0;\nlet z = 0;\nouterLoop:\n\
+    while (x < 10) {\n  console.log('Outer ' + x);\n  x += 1;\n  z = 1;\n  while (true)\
+    \ {\n    z++;\n    if (z === 10 && x === 10) {\n      break outerLoop;\n    }\n\
+    \  }\n}\n```\n\n### `continue` statement\nWe use the `continue` statement to restart\
+    \ a loop or labelled statement. When you use `continue` without a label, it terminates\
+    \ the current iteration of the innermost enclosing `for` statement and continues\
+    \ execution of the loop with the next iteration. This contrasts with the `break`\
+    \ statement, as `continue` doesn’t terminate the execution of the loop entirely.\
+    \ In a `while` loop, it jumps back to the condition. In a `for` loop, it jumps\
+    \ to the update. When you use `continue` with a label, it applies to the looping\
+    \ statement identified with that label.\n\n```javascript\ncontinue;\n```\n\nFor\
+    \ example, the following code block shows a `while` loop with a `continue` statement\
+    \ that will execute when the value of `i` is three.\n\n```javascript\nlet i =\
+    \ 0;\nlet n = 0;\nwhile (i < 10) {\n  i++;\n  if (i === 3) {\n    continue;\n\
+    \  }\n  n += i;\n}\n```\n\n### `for…in` statement\nA `for...in` statement iterates\
+    \ a specified variable over all the enumerable properties of an object. For each\
+    \ distinct property, JavaScript executes the specified statements. The syntax\
+    \ is as follows:\n\n```javascript\nfor (let i in obj) {\n  // statements\n}\n\
+    ```\n\nThe following function takes as its argument an object and the object’s\
+    \ It then iterates over all the object’s properties and returns a string that\
+    \ lists the property names and their.\n\n```javascript\nfunction getProperties(obj,\
+    \ obj_name) {\n  let result = \"\";\n  for (let i in obj) {\n    result += obj_name\
+    \ + '.' + i + ' = ' + obj[i] + '\\n';\n  }\n  return result;\n}\n```\n"
+  raw: ' ![](image-zfu2hudf.png) Mastering JavaScript The Complete Guide to JavaScript
+    Mastery. Tim Robards © 2022 Tim Robards  Table of Contents  An IntroductionIntroducing
+    JavaScriptHow to add JavaScript to a webpageHow to add inline JavaScriptHow to
+    link to external JavaScriptSummary Syntax and StructureJavaScript ValuesCamel
+    CaseUnicodeSemicolonsIndentationWhite SpaceCommentingIdentifiersCase SensitivityReserved
+    WordsJavaScript OperatorsJavaScript ExpressionsSummary Variables, Scope & HoistingWhat
+    are Variables?Naming VariablesDifference Between var, let, and constVariable ScopeHoistingConstantsSummary Data
+    TypesWhat are Data Types?Summary Converting Data TypesConverting Values to StringsConverting
+    Values to NumbersConverting Values to Booleans The Basics of JavaScript StringsCreating
+    StringsConcatenationSyntax RulesSummary Working with StringsThe Anatomy of a StringConverting
+    Strings into Numbers An Introduction to the DOMWhat is the DOM?The DOM Tree &
+    Nodes Accessing DOM ElementsgetElementById()getElementsByClassName()getElementsByTagName()Query
+    Selectors Traversing the DOMRoot NodesParent NodesChild NodesSibling Nodes Making
+    changes to the DOMCreating New NodesInserting Nodes into the DOMRemoving Nodes
+    from the DOM How to modify DOM nodesModifying AttributesModifying ClassesModifying
+    Styles Understanding EventsWhat are Event Handlers & Event Listeners?Inline Event
+    HandlersEvent Handler PropertiesEvent ListenersCommon EventsEvent ObjectsSummary Mastering
+    ArraysCreating an ArrayLooping over an ArrayAdding to the end of an ArrayRemoving
+    from the end of an ArrayRemoving from the front of an ArrayAdding to the front
+    of an ArrayGetting the index of an Array itemRemoving an item by index positionRemove
+    multiple items from an index positionCopying an ArrayChecking if an object is
+    an ArrayReversing the order of an ArrayReplacing Array elements with static valuesSorting
+    an ArrayMerging ArraysConverting Array Elements into a Stringmap(), filter() and
+    reduce()Find the first element that satisfies a function Mastering ObjectsCreating
+    an ObjectDot notationDeleting PropertiesSquare BracketsUpdating object membersWhat
+    is “this”?Summary Using Conditionalsif/else Statementselse ifComparison operatorsNesting
+    if/elseLogical operators: AND, OR, and NOTswitch statementsTernary operator Mastering
+    Loopsthe for loopdo…while statementwhile statementlabelled statementbreak statementcontinue
+    statementfor…in statementfor…of statementSummary Mastering FunctionsDefining functionsFunction
+    expressionsCalling functionsFunction scopeNesting functions and closuresClosuresThe
+    arguments objectFunction parametersArrow functionsPredefined functionsSummary What
+    are classes?Classes are just like functions!Class declarationsHoistingClass expressionsConstructorsInstance
+    propertiesField declarationsChild classes using ‘extends’SpeciesThe ‘super’ keywordMix-ins Understanding
+    APIsAPIs in JavaScriptSo how do APIs work?Summary Fetching data from a serverThe
+    old way…The solution: AJAXCreating an Ajax requestXMLHttpRequestFetchWorking with
+    promisesSummary An Introduction to REST APIsWhat is a REST API?RESTful ArchitectureREST
+    in actionWorking with REST data PromisesWhy use promises?Summary Async & defer  Our
+    changeText() function modifies the textContent of element. So now when you click
+    on the button, the event fires which runs our which alters the text in our p tag. ![](image-qwwh7ytg.png) While
+    inline event handlers clearly work — they really shouldn’t be used in production.
+    For the same reason that inline CSS shouldn’t be used, it’s messy! And our code
+    will be much more maintainable, if we handle our JavaScript entirely in separate
+    script files, rather then having handlers throughout our HTML. Event Handler Properties Event
+    handler properties work very similarly to inline handlers, except we set the property
+    of an element in JavaScript, instead of on the attribute in our HTML. Our HTML
+    is the same, except we’re now excluding the onclick="changeText()" we used previously:  1
+    html> 2 3 4 5   6 7 8 9 10 11 12 13 14 15  And our function will remain similar
+    as well, except now we need to access the button element in our JavaScript. We
+    simply access onclick just as we would access style or id or any other element
+    property, then assign the function reference.  1 // Function to modify the text
+    content of the paragraph 2 3 const changeText = () => { 4  const p = 5  = "I was
+    changed with an event handler 6 7 } 8 9 // Add event handler as a property of
+    the button element 10 11 const button = 12 =  Note: Event handlers do not follow
+    the camelCase convention. Notice the code is not Now when you click the button,
+    it’ll fire the event from our JavaScript property: ![](image-tz92u5u3.png) You’ll
+    see that when passing a function reference to the onclick property, we don’t include
+    parentheses, as we are not invoking the function at that moment, but only passing
+    a reference to it. The event handler property is more maintainable than the inline
+    handler, but it still isn’t the greatest way to manage events. If for example,
+    you tried to set multiple onclick properties, all but the last one would be overwritten,
+    as demonstrated below:  1 const p = 2 const button = 3 4 const changeText = ()
+    => { 5   = "Will I 6 } 7 8 const alertText = () => { 9   I 10 } 11 12 // Events
+    can be overwritten! 13 14 = 15 =  In the above example, the button click would
+    only display an alert, and not change the p text, since the alert() code was the
+    last one added to the property. ![](image-7zkjuue1.jpg) Now that we have an understanding
+    of both inline event handlers and event handler properties, let’s move onto event
+    listeners. Event Listeners Event listeners watch for an event on an element, instead
+    of assigning the event directly to a property on the element, we’ll use the addEventListener()
+    method to listen for the event. addEventListener() takes two mandatory parameters
+    — the event to listen for and the listener callback function. The HTML for our
+    event listener will remain the same as the previous example. And we’ll still be
+    using the same changeText() function as before. However, we’ll now attach the
+    to the button, as follows:  1 // Function to modify the text content of the paragraph
+    2 3 const changeText = () => { 4   const p = 5   = "I changed because of an event
+    listen\ 6 7 } 8 9 // Listen for click event 10 11 const button = 12  Note: In
+    the first two methods, a click event was referred to as but with event listeners,
+    it is referred to as Every event listener drops the on from the word. And now
+    when we click the button, our output will be: ![](image-zinrt4cs.png) Event listeners
+    appear very similar to event handler properties, however, they have a crucial
+    advantage. We can set multiple event listeners on the same element, for example:  1
+    const p = 2 const button = 3 4 const changeText = () => { 5   = "Will I 6 } 7
+    8 const alertText = () => { 9   I 10 } 11 12 // Multiple listeners can be added
+    to the same event and \ 13 element 14 15 16  We can see how both events have fired,
+    providing the user with both an alert and modified text once clicking out of the
+    alert. ![](image-1z78dq04.jpg) It’s more concise to use anonymous functions instead
+    of function references on event listeners. Anonymous functions are functions that
+    are not named, such as:  1 // An anonymous function on an event listener 2 3 ()
+    => { 4   = "Will I 5 });  We could also use the removeEventListener() function
+    to remove one or all events from an element.  1 // Remove alert function from
+    button element 2 3  It’s also useful to know that you can use addEventListener()
+    on the document and window object. Event listeners are currently the most common
+    and preferred way to handle events in JavaScript. Next up we’ll take a brief look
+    at some of the more common events that we’re likely to work with. Common Events So
+    far we’ve focused on using the click event while learning about inline event handlers,
+    event handler properties and event listeners. However there are many more events
+    available for us to work with, so let’s take a look! Mouse Events Mouse events
+    are among the most frequently used events. They refer to events that involve clicking
+    the mouse button or hovering and moving the pointer. And of course, these events
+    also correspond to the equivalent action on a touch device. Some examples are: click
+    - Fires when the mouse is pressed and released on an element.dblclick - Fires
+    when an element is clicked twice.mouseenter - Fires when a pointer enters an element.mouseleave
+    - Fires when a pointer leaves an element.mousemove - Fires every time a pointer
+    moves inside an element. A click is actually a compound event that is comprised
+    of combined mousedown and mouseup events, these fire when the mouse button is
+    pressed down or lifted, respectively. Using mouseenter and mouseleave together
+    recreates a hover effect that lasts as long as a mouse pointer is on the element. Form
+    Events Form events are actions that relate to forms, such as input elements and
+    whether they are selected or unselected, and also form submission. submit - Fires
+    when a form is submitted.focus - Fires when an element (such as an input) receives
+    focus.blur - Fires when an element loses focus. Focus is achieved when an element
+    is selected, for example, through a mouse click or navigating to it via the TAB
+    key. JavaScript is often used to submit forms and send the values through to a
+    back-end language. The advantage of using JavaScript to send forms is that it
+    does not require a page reload to submit the form, and JavaScript can be used
+    for form validation. Keyboard Events Keyboard events are used for handling keyboard
+    actions, such as pressing a key, lifting a key, and holding down a key. keydown
+    - Fires once when a key is pressed.keyup - Fires once when a key is released.keypress
+    - Fires continuously while a key is pressed. Although they look similar, keydown
+    and keypress events do not access all the exact same keys. While keydown will
+    acknowledge every key that is pressed, keypress will omit keys that do not produce
+    a character, such as or Keyboard events also have specific properties for accessing
+    individual keys. If a parameter, known as an event object is passed through to
+    the event listener, we can access more information about the action that took
+    place. Three properties that pertain to keyboard objects include and For example,
+    if the user presses the letter a key on their keyboard, the following properties
+    pertaining to that key will surface: keyCode - A number pertaining to the key
+    e.g. “65”key - Represents the character name e.g. “a”code - Represents the physical
+    key being pressed e.g. “KeyA” Let’s take a closer look at this with the following
+    code:  1 // Test the keyCode, key, and code properties 2 3 event => { 4   '' +
+    5   '' + 6   '' + 7 });  You could save this code inside of script tags in a new
+    HTML file. Then open up your browser, go to developer tools and open up the console
+    tab. You’ll then see the information is logged every time you press a key on the
+    keyboard. For example, if you press the ‘a’ key, your output would be:  1 65 2
+    a 3 KeyA  The keyCode property is a number that pertains to the key that has been
+    pressed. The key property is the name of the character, which can change — for
+    example, pressing a with SHIFT would result in a key of The code property represents
+    the physical key on the keyboard. Note: the keyCode property is being deprecated
+    so it’s preferable to use code in new projects. Check out the complete list of
+    events Event Objects The Event object consists of properties and methods that
+    all events can access. In addition to the generic Event object, each type of event
+    has its own extensions, such as KeyboardEvent and The Event object is passed through
+    a listener function as a parameter. It is typically written as event or We can
+    access the code property of the keydown event to replicate the keyboard controls
+    of a PC game. Let’s test it out with the following HTML:  1 html> 2 3 4 5   6
+    7 8 9  10 11  Open it up in your browser, and paste the following code into your
+    developer console:  1 // Pass an event through to a listener 2 3 event => { 4   var
+    element = 5 6   // Set variables for keydown codes 7   var a = 8   var s = 9   var
+    d = 10   var w = 11 12   // Set a direction for each code 13   switch { 14     case
+    15       = 16       17     case 18       = 19       20     case 21       = 22       23     case
+    24       = 25       26   } 27 });  When you press one of the keys or you’ll see
+    output like so: ![](image-mvjqtsli.jpg) I’m sure you’re now seeing that by having
+    this control over how the browser responds — we can build increasingly dynamic
+    websites. event.target In this final section, we’ll look at one of the most frequently
+    used event properties: the target property. Let’s work with the following HTML:  1
+    html> 2 3 4 5   6 7 8 9 10  11   12   13   14  15 16 17  Using event.target within
+    our browser’s Developer Console, we can place one event listener on the outer
+    section element and get the most deeply nested element.  1 const section = 2 3
+    // Print the selected target 4 5 event => { 6   7 });  Clicking on any one of
+    our div elements will return the output of the relevant specific element to the
+    Console using This is extremely useful, as it allows you to place only one event
+    listener that can be used to access many nested elements. ![](image-uhavsfbq.jpg) With
+    the Event object, we can set up responses related to all events, including generic
+    events and more specific extensions. Summary Events are actions that take place
+    on a website, such as clicking, hovering, submitting a form, loading a page, or
+    pressing a key on the keyboard. JavaScript becomes truly interactive and dynamic
+    when we are able to make websites respond to actions the user has taken. In this
+    chapter, we learned what events are, examples of common events, the difference
+    between event handlers and event listeners, and how to access the Event object.
+    Using this knowledge, you will be ready to begin making dynamic websites and applications! Mastering
+    Arrays An array in JavaScript can be looked at as a kind of special variable,
+    which is able to hold more than one value at a time. Arrays can contain any data
+    type, including numbers, strings, Booleans and objects. More specifically, an
+    array is a type of a high-level, list-like object, which consists of an ordered
+    collection (or list) containing zero or more data types. We use numbered indices
+    starting from 0 to access specific items. Let’s cover the basics with some examples! Creating
+    an Array  1 var shapes = 2 // 3  How can we access each array item?  1 var first
+    = // Square 2 var second = // Circle 3 var last = — // Triangle  Looping over
+    an Array You could use any looping method, but let’s go with  1 2  3 }); 4 5 //
+    Square 0 6 // Circle 1 7 // Triangle 2  Adding to the end of an Array We use the
+    push() method:  1 var addItem = 2 3 // [“Square”, “Circle”, “Triangle”, "Rectangle"]  Removing
+    from the end of an Array We use the pop() method:  1 var removeItemEnd = 2 3 //
+    [“Square”, “Circle”, “Triangle"]  Removing from the front of an Array We use the
+    shift() method:  1 var removeItemFront = 2 3 // [“Circle”, "Triangle"];  Adding
+    to the front of an Array We use the unshift() method:  1 var addItemFront = 2
+    3 // [“Hexagon”, “Circle”, "Triangle"];  Getting the index of an Array item We
+    use the indexOf() method:  1 var pos = 2 3 // 1  Removing an item by index position We
+    use the splice() method:  1 var removedItem = 2 3 // [“Hexagon”, “Triangle”]  Remove
+    multiple items from an index position  1 var colors = 2 3 4 5 // [“Red”, “Green”,
+    “Blue”, “Yellow”] 6 7 var pos = n = 8 var removedItems = 9 10 // We use n to define
+    the number of items to be removed, \ 11 from pos until n 12 13 14 // [“Red”, “Yellow”]
+    15 16 17 // [“Green”, “Blue”]  Copying an Array We assign our array to a new variable
+    using the slice() method:  1 var arrayCopy = 2 3 // [“Hexagon”, “Triangle”]  Checking
+    if an object is an Array We use the isArray() method to test if objects are arrays:  1
+    2 3 // true  Reversing the order of an Array We use the reverse() method:  1 var
+    food = 2 3 4 5 // ["bread", "salad", "pasta", "pizza"]  Replacing Array elements
+    with static values We use the fill() method to replace elements with a static
+    value:  1 2 3 // ["yum", "yum", "yum", "yum"]  If instead, we wished to replace
+    only some elements, we can set start and end points:  1 2 3 // ["bread", "yum",
+    "yum", "yum"] 4 5 6 7 // ["pizza", "pasta", "yuck", "yuck"]  Sorting an Array We
+    use the sort() method to sort our elements based on the first character in the
+    element. Note: If our first character is identical, it will compare the second,
+    then the third and so on.  1 var food = 2 3 4 5 // ["bread", "pasta", "pizza",
+    "salad"]  If any of our Array items begin with an uppercase character, they would
+    be sorted before lowercase items, such as:  1 var food = 2 3 4 5 // ["Salad",
+    "bread", "pasta", "pizza"]  When working with arrays of numbers, the default behaviour
+    is not what you might expect:  1 var numbers = 2 3 // [111, 2, 32, 4, 45, 7, 788]  The
+    sort() method only checks the first character in the number. So for proper ordering,
+    you could create a function like so:  1 function { 2  return a - 3 } 4 5 6 7 //
+    [2, 4, 7, 32, 45, 111, 788]  Or you could go for extra fancy points by using arrow
+    functions:  1 => a - // For ascending sort 2 => b - // For descending sort  Merging
+    Arrays We use the concat() method to merge two or more arrays together:  1 var
+    dogs = ''Beagle\ 2 3 4 var cats = 5 6 var animals = 7 8 9 10 // ["Labrador", "Chihuahua",
+    "Greyhound", "Beagle", "Pers\ 11  Converting Array Elements into a String We use
+    the join() method:  1 var dogs = ''Beagle\ 2 3 4 var joinedDogs = 5 6 7 8 // "Labrador,Chihuahua,Greyhound,Beagle"  If
+    we want whitespace in our new string or any other separator for that matter, we
+    add it as a parameter to our like so:  1 var joinedDogs = 2 3 4 5 // "Labrador,
+    Chihuahua, Greyhound, Beagle"  map(), filter() and reduce() We use the map() method
+    to apply a function to every element of an array. Say we want to add 10 to every
+    number in an array:  1 var numbers = 2 3 var add10 = => { 4  return val + 5 });
+    6 7 8 9 // [1, 2, 3, 4, 5]; 10 11 12 13 // [11, 12, 13, 14, 15]  We use the filter()
+    method to create a new array with the elements that satisfy a condition set by
+    an argument function. Say we want to filter out negative numbers from an array:  1
+    var numbers = 2 3 function { 4  return value > 5 } 6 7 var filtered = 8 9 10 11
+    // [520, 34]  We use the reduce() method to reduce an array to a single value. Say
+    we want to produce the average of all numbers in an array:  1 var numbers = 2
+    3 var average = 4 ) => { 5  total += 6  index === - { 7   return total / 8  {
+    9   return 10  } 11 }); 12 13 14 15 // 308.25  Find the first element that satisfies
+    a function We use the find() method:  1 var numbers = 2 3 var found = { 4  return
+    element > 5 }); 6 7 8 9 // 40  Similarly, we can use the findIndex() method to
+    return the first index position, rather than the element itself:  1 var numbers
+    = 2 3 var found = { 4  return element > 5 }); 6 7 8 9 // 3  Mastering Objects Objects
+    in JavaScript are used to store collections of data in the format of “key: value”
+    pairs. Contained within an object we can have any number of variables and/or functions
+    which are then referred to as object properties and methods. Creating an Object Let’s
+    work with an example! To initialize a variable car as an we use curly braces  1
+    var car = {};  We now have an empty object which can be accessed via the Developer
+    Tools console, by simply typing our variable name:  1 car 2 3 // {}  An empty
+    object isn’t all that useful, so let’s update it with some data:  1 var car =
+    { 2  3  ''Model 4  5  ''wood ''tinted 6  { 7   '' + + '' is a '' + + 8 it weighs
+    '' + + ''kg and includes the 9 ng extras: '' + + '', '' + + 10 and '' + + 11  },
+    12  { 13   car is a '' + + 14  } 15 };  Let’s access this data in our developer
+    tools console:  1 car.name    // Tesla 2 car.model    // Model 3 3 car.weight   //
+    1700 4 car.extras[1]  // wood decor 5 car.details()  // This Tesla is a Model
+    3 it weighs 170\ 6 0kg and includes the following extras: heated seats, wo\ 7
+    od decor and tinted glass. 8 car.display()  // This car is a Tesla.  As you can
+    see, each name/value pair must be separated by a comma, and the name and value
+    in each case are separated by a colon. The syntax will always follow this pattern:  1
+    var objectName = { 2  3  4  member3Value 5 };  The value of an object member can
+    be pretty much anything — in our car object, we have two strings, a number, an
+    array, and two functions. The first four items are data items and are referred
+    to as the object’s The last two items are functions that allow the object to do
+    something with that data and are referred to as the object’s This kind of object
+    is called an object literal — we’ve literally written out the object contents
+    as we’ve created it. This is in comparison to objects instantiated from classes,
+    which we’ll take a look at later on. Dot notation Above, you’ve seen the object’s
+    properties and methods accessed using dot The object name car acts as the namespace
+    — it needs to be entered first to access anything within the object. Then you
+    write a dot, followed by the item you want to access — this can be the name of
+    a simple property, an item of an array property, or a call to one of the object’s
+    methods, for example:  1 car.name 2 car.extras[1] 3 car.details()  Deleting Properties We
+    can use the delete operator to remove properties, like so:  1 car.model 2 // Tesla
+    3 3 4 delete car.model 5 6 car.model 7 // undefined  Square Brackets If for example,
+    we had a multi-word property within our object, such as:  1 var user = { 2  3  4  "likes
+    // a multiword property name 5 st be quoted 6 };  We couldn’t access the multi-word
+    property with dot-notation:  1 user.likes potatoes  // syntax error!  This is
+    because a dot requires the key to be a valid variable identifier. That is no spaces
+    and other limitations. The alternative is to use square brackets, which works
+    with any string:  1 let user = {}; 2 3 // set 4 user["likes potatoes"] = true;
+    5 6 // get 7 alert(user["likes potatoes"]); // true 8 9 // delete 10 delete user["likes
+    potatoes"];  Updating object members We can update the values within our objects
+    by simply declaring the property you’d like to set with the new value, like so:  1
+    user.age     // 32 2 user.age = 33  // 33 3 user.age     // 33  You can also create
+    completely new members of your object. For example:  1 user.surname = ''Smithessson'';
+    2 // user 3 {name: "Sam", age: 33, likes potatoes: true, surname: "Sm\ 4 ithessson"}  What
+    is “this”? You may have noticed the use of the word ‘this’ in our earlier example.
+    See the following:  1 { 2  car is a '' + + 3 }  The this keyword refers to the
+    current object that the code is being written inside of— so in this case this
+    is equivalent to Why not just write car instead? It’s best practice to write well-constructed
+    object-orientated code, and in doing so the use of this is extremely useful. It
+    will ensure the correct values are used when a member’s context changes (e.g.
+    two different car object instances may have different names, but will want to
+    use their own name when displaying their own information). For example:  1 var
+    car1 = { 2  3  { 4   car is a '' + + 5  } 6 } 7 var car2 = { 8  9  { 10   car
+    is a '' + + 11  } 12 }  In this case, car1.display() will output “This car is
+    a Tesla.” And car2.display() will output “This car is a Toyota.”, even though
+    the method’s code is exactly the same in both cases. As this is equal to the object
+    the code is inside becomes really useful when you are dynamically generating objects
+    (for example using constructors), which is outside the scope of this article! Summary And
+    that’s it! You should now have a good idea of how to work with objects in JavaScript
+    — including creating your own simple objects, as well as accessing and manipulating
+    object properties. You‘ll also begin to see how objects are very useful as structures
+    for storing related data and functionality. For instance, if you tried to keep
+    track of all the properties and methods in our car object as separate variables
+    and functions, it would be extremely inefficient, and we’d run the risk of clashing
+    with other variables and functions that have the same names. Objects let us keep
+    the information safely locked away in their own package. Using Conditionals When
+    we want to introduce logic & make decisions in our programs, we use With conditionals,
+    we can control the behavior of our code — by determining whether or not pieces
+    of code can run. For example, when using a weather app, if the weather is sunny
+    we could see a sun image, or if it’s raining we could see a rain-cloud image.
+    Let’s now take a look at how we can implement conditionals in our code… if/else
+    Statements The most common type of conditional statements are if and else statements.
+    The syntax looks like so:  1 if { 2  run this code if the condition is true 3
+    } else { 4  run this code instead 5 }  We use if followed by a set of parentheses
+    that contain our The condition will make use of comparison operators to test whether
+    our condition evaluates to true or and it’ll return the result. If the result
+    is the code in the following set of curly braces will execute. The code in this
+    section can be whatever we like. If the result is the code contained within the
+    curly braces following our else statement will execute instead. Let’s take a look
+    at an example:  1 if < { 2  notify = is 3 } else { 4  notify = is 5 }  In our
+    above code, our notify variable will be set to “It is AM” if the hour is less
+    than 12\. Otherwise hour is greater than 12 and will be set to “It is else if Of
+    course, we will often have more than two choices to work with! To consider these
+    additional choices we use else We put additional blocks in between our if () {}
+    and else {} statements. Let’s adjust our previous example to see this in action:  1
+    if < { 2  notify = is 3 } else if < 4  notify = is 5 } else { 6  notify = is 7
+    }  Comparison operators To test the conditions inside our conditional statements,
+    we use comparison These operators are as follows: === and !== — to test if one
+    value is equal to, or not equal to, the other.< and > — to test if one value is
+    less than or greater than the other.<= and >= — to test if one value is less than
+    or equal to, or greater than or equal to, the other. A very common pattern when
+    doing comparisons in conditional statements is to test Booleans and Any value
+    that is not or an empty string will in fact return true when tested as a conditional
+    statement. This means you can easily use a variable name on its own to test whether
+    it is or even that it exists at all (i.e. it is not undefined.) For example:  1
+    let snack = 2 3 4 if { 5  have 6 } else { 7  Cheetos this 8 }  Nesting if/else There
+    will be times when you’ll want to nest an if/else statement inside of another
+    one — and it’s fine to do so! Let’s see an example:  1 if === { 2  if > { 3   hunger
+    level + hungerLevel + '' an\ 4 d I have So I will eat 5  } else if <= { 6   hunger
+    level + hungerLevel + '' an\ 7 d even though I have not that hungry so I w\ 8
+    eat them 9  } 10 }  Logical operators: AND, OR, and NOT We can also test multiple
+    conditions without needing to write nested if/else statements, we do this with
+    logical operators: AND: lets you chain together two or more expressions. Every
+    expression must evaluate to true for the whole expression to return Let’s rewrite
+    our previous example using AND:  1 if === && hungerLevel > { 2  hunger level +
+    hungerLevel + '' and \ 3 I have So I will eat 4 } else if === && hungerLevel <=
+    { 5  hunger level + hungerLevel + '' and \ 6 even though I have not that hungry
+    so I won\ 7 eat them 8 }  The first code block will only run if snack === ''Cheetos''
+    and hungerLevel < 5 return also lets you chain together two or more expressions.
+    One or more of them have to evaluate to true for the whole expression to return Let’s
+    see an example using OR:  1 if || carStatus === { 2  should commence 3 } else
+    { 4  be an 5 }  NOT: ! - can be used to negate an expression. Let’s combine it
+    with OR in the above example:  1 if || carStatus === 2  should commence 3 } else
+    { 4  be an 5 }  In this example, our OR statement returns however, the NOT operator
+    will negate it - so that the overall expression now returns A common mistake when
+    using the logical OR operator in conditional statements is to try to state the
+    variable whose value you are checking once, and then give a list of values it
+    could be to return true, separated by || (OR) operators. For example:  1 if ===
+    10 || 20 || 30 || { 2  // run this code 3 }  In this case, the condition inside
+    if(...) will always evaluate to true since 20 (or any other non-zero value) always
+    evaluates to true. This condition is actually saying “if x equals 10, or 20 is
+    true — which it always is”. This is logically not what we want! To make this work
+    you’ve got to specify a complete test on either side of each OR operator:  1 if
+    === 10 || x === 20 || x === 30 || x === { 2  // run this code 3 }  switch statements if/else
+    statements do a great job of enabling conditional code, but they are not always
+    the best way to handle every scenario. They are mainly useful when you’ve got
+    a couple of options, and each one requires a reasonable amount of code to be run.
+    They’re also useful when the conditions are complex (e.g. multiple logical operators). For
+    cases where you just want to set a variable to a certain choice of value or print
+    out a particular statement depending on a condition, the syntax can be a bit inefficient,
+    especially if you’ve got a large number of choices. This is when we should consider
+    using a switch statement! — they take a single expression/value as an input and
+    then look through a number of choices until they find one that matches that value,
+    executing the corresponding code that goes along with it. Let’s see an example:  1
+    switch { 2  case 0: 3   day = 4   5  case 1: 6   day = 7   8  case 2: 9   day
+    = 10   11  case 3: 12   day = 13   14  case 4: 15   day = 16   17  case 5: 18   day
+    = 19   20  case 6: 21   day = 22 }  We use the keyword followed by a set of parentheses
+    that contains our expression. This is followed by the keyword followed by a choice
+    that the expression/value could be, followed by a colon. We then include some
+    code to run if the choice matches the expression. And finally a break statement. If
+    the previous choice matches the expression/value, the browser stops executing
+    the code block here and moves on to any code that appears below the switch statement.
+    We can include as many other cases as we need! Ternary operator In this final
+    section of the chapter, let’s take a look at the ternary It’s a small piece of
+    syntax that tests a condition and returns one value/expression if it’s and another
+    if it’s false — this can be useful in some situations and takes up a lot less
+    code than an if/else block. The pseudocode looks like this:  1 ( condition ) ?
+    run this code : run this code instead  So let’s look at a simple example:  1 let
+    age = 25; 2 let beverage = (age >= 18) ? "Beer" : "Apple Juice"; 3 console.log(beverage);
+    // "Beer"  If age is the customer can buy a beer, if not, all we have to sell
+    them is apple juice. Mastering Loops In JavaScript, we use loops when we want
+    an easy way to handle repetition. In this chapter, we’re going to take a look
+    at all the different ways we can create loops in our code — and we’ll consider
+    the pros and cons of each method. A way to think of a loop could be to think of
+    giving commands to a robot. You could tell it to take 10 steps — and rather than
+    issuing 10 separate commands, we can create a loop:  1 let 2 for = i < 10; i++)
+    { 3  one 4 }  This is an example of a for loop. At first, this may be confusing
+    — but we’ll break it all down in the next section! In this article, we’ll be reviewing
+    many different kinds of loop statements, such as: labelled break continue for...in
+    & It’s worth noting that despite their differences in syntax — loops all essentially
+    do the same thing: repeat an action a number of times. The situation dictates
+    which type of loop is best suited. the for loop As we’ve seen in the above example,
+    a for loop will repeat until our condition evaluates to false. The logical structure
+    is like so:  1 for 2 3  statement  We are first initializing the which usually
+    initializes one or more loop counters, but the syntax even allows for more complex
+    expressions such as variables. We next evaluate our if the loop statements will
+    execute. If the loop terminates. Then the statement executes. When we wish to
+    execute multiple statements, we use a block statement ... to group them together.
+    If present, the update expression incrementExpression is executed. Control then
+    returns to evaluating the Let’s now return to our previous example:  1 let 2 for
+    = i < 10; i++) { 3  one 4 }  Here we can see our for statement is counting the
+    number of steps taken up to 10\. The variable i will ensure we’re starting from
+    the beginning by initializing to zero. Then it will check that i is less than
+    the number we specify, which in our case is The i++ is the count which will increment
+    i by 1 after each pass through the loop. So our loop knows when to complete! do…while
+    statement A do...while statement will repeat until the condition evaluates to
+    The structure is like so:  1 do 2  statement 3 while  It’s fairly self-explanatory,
+    statement is always executed once prior to the condition being checked. And then
+    again until the while condition returns We can execute multiple statements, using
+    a block statement ... to group them. If condition is the statement executes again.
+    At the end of each execution, the condition is checked. When the condition returns
+    the execution stops and control passes to the statement which follows Let’s see
+    an example:  1 let i = 2 do { 3  i += 4  5 } while <  Here our do loop iterates
+    at least once and then reiterates until i is no longer less than 10\. while statement A
+    while statement executes its statements as long as a specified condition evaluates
+    to Its syntax is as follows:  1 while 2  statement  If the condition becomes the
+    statement within the loop stops executing and control then passes to the statement
+    following the loop. The condition test occurs before the statement in the loop
+    is executed. And if the condition returns the statement is executed and the condition
+    is tested again. If the condition returns execution will stop and control is passed
+    to the statement following And as with we can execute multiple statements using
+    a block statement to group them together. The following while loop will iterate
+    as long as a is less than three:  1 let a = 2 let b = 3 while < { 4  5  6 }  Here
+    with each iteration, the loop increments a and adds that value to Therefore, a
+    and b take on the following values: After the first pass through the loop : a
+    = 1 and b = 1And the second pass: a = 2 and b = 3And the third pass: a = 3 and
+    b = 6 After completion of the third pass, the condition a < 3 is no longer so
+    that’s where our loop terminates! Note: When you first start working with loops,
+    you may accidentally create an infinite This is when a loop condition never evaluates
+    to false. The statements in the following while loop execute forever because the
+    condition is never false:  1 while { 2  3 }  CAUTION: If you run this code — please
+    be aware that it’s likely to crash your browser!! So make sure you’ve backed up
+    your open tabs - if you want to see what happens. labelled statement You can attach
+    a label to any statement to serve as an identifier so you can refer to it elsewhere
+    in your program. As an example, you could use a label to identify a loop, and
+    then use break or continue statements to indicate whether a program should interrupt
+    the loop, or continue its execution (we’ll take a look at these below).  1 label
+    : 2  statement  The value of label may be anything you like (with the exception
+    of a JavaScript reserved word). Then you provide to execute. So for example, you
+    could use the label totalLoop to identify a while loop.  1 2 while == { 3  4 }  break
+    statement We use the break statement to terminate a loop or or in conjunction
+    with a labelled statement. When you use break without a label, it terminates the
+    innermost enclosing or switch immediately and transfers control to the following
+    statement.When you use break with a label, it terminates the specified labelled
+    statement. A break statement looks like this:  1 break  For example, let’s loop
+    through an array until we find the index of an element with the value of: foundMe  1
+    for i = i < { 2  if == { 3   4  } 5 }  And let’s use break with a labelled statement:  1
+    let x = 2 let z = 3 while { 4  console.log(''Outer '' + x); 5  x += 1; 6  z =
+    1; 7  while (true) { 8   '' + 9   z += 10   if (z === 10 && x === 10) { 11    break
+    12   } else if === { 13    14   } 15  } 16 }  continue statement We use the continue
+    statement to restart a or label statement. When you use continue without a label,
+    it terminates the current iteration of the innermost enclosing or for statement
+    and continues execution of the loop with the next iteration. This contrasts with
+    the break statement, as continue doesn’t terminate the execution of the loop entirely.
+    In a while loop, it jumps back to the condition. In a for loop, it jumps to theWhen
+    you use continue with a label, it applies to the looping statement identified
+    with that label. A continue statement looks like so:  1 continue  For example,
+    the following code block shows a while loop with a continue statement that will
+    execute when the value of i is three. So n takes on the values one, three, seven,
+    and twelve.  1 let i = 2 let n = 3 while < { 4  5  if == { 6   7  } 8  n += 9  10
+    } 11 // 12 let i = 13 let n = 14 while < { 15  16  if == { 17   // 18  } 19  n
+    += 20  21 } 22 //  for…in statement A for...in statement iterates a specified
+    variable over all the enumerable properties of an For each distinct property,
+    JavaScript executes the specified statements. The syntax is as follows:  1 for
+    in { 2  statements 3 }  The following function takes as its argument an object
+    and the object’s It then iterates over all the object’s properties and returns
+    a string that lists the property names and their  1 function { 2  let result =
+    3  for i in { 4   result += obj_name + ''.'' + i + '' = '' + + '''
+  toc: []
+  trans: "\n\n# 精通 JavaScript：JavaScript 精通全指南\nTim Robards © 2022 Tim Robards\n\n\
+    ## 目录\n\n### 引言\n- 介绍 JavaScript\n- 如何在网页中添加 JavaScript\n- 如何添加内联 JavaScript\n\
+    - 如何链接到外部 JavaScript\n- 总结\n\n### 语法与结构\n- JavaScript 值\n- 驼峰命名法 (Camel Case)\n\
+    - Unicode\n- 分号\n- 缩进\n- 空格\n- 注释\n- 标识符\n- 区分大小写敏感性\n- 保留字\n\n### JavaScript\
+    \ 运算符\n- JavaScript 表达式\n\n- 总结：变量、作用域与提升\n- 什么是变量？\n- 变量命名\n- `var`、`let` 和 `const`\
+    \ 的区别\n- 变量作用域\n- 变量提升\n- 常量\n- 总结\n\n### 数据类型\n- 什么是数据类型？\n- 总结：数据类型转换\n- 将值转换为字符串\n\
+    - 将值转换为数字\n- 将值转换为布尔\n\n### JavaScript 字符串基础\n- 创建字符串\n- 字符串拼接\n- 语法规则\n- 总结：处理字符串\n\
+    - 字符串剖析\n- 将字符串转换为数字\n\n### DOM 简介\n- 什么是 DOM？\n- DOM 树与节点\n- 访问 DOM 元素\n    -\
+    \ `getElementById()`\n    - `getElementsByClassName()`\n    - `getElementsByTagName()`\n\
+    \    - 查询选择器\n- 遍历 DOM\n    - 根节点\n    - 父节点\n    - 子节点\n    - 兄弟节点\n- 修改 DOM\n\
+    \    - 创建新节点\n    - 将节点插入 DOM\n    - 从 DOM 中移除节点\n- 如何修改 DOM 节点\n    - 修改属性\n\
+    \    - 修改类名\n    - 修改样式\n\n### 理解事件\n- 什么是事件处理器与事件监听器？\n- 内联事件处理器\n- 事件处理器属性\n\
+    - 事件监听器\n- 常见事件\n- 事件对象\n- 总结\n\n### 精通数组\n- 创建数组\n- 遍历数组\n- 向数组末尾添加元素\n- 从数组末尾删除\n\
+    - 从数组开头删除\n- 向数组开头添加元素\n- 获取数组项的索引\n- 根据索引位置删除\n- 从索引位置删除多个项\n- 复制数组\n- 检查对象是否为数组\n\
+    - 反转数组顺序\n- 用静态值替换数组元素\n- 排序数组\n- 合并数组\n- 将数组元素转换为字符串\n- `map()`、`filter()` 和\
+    \ `reduce()`\n- 找到第一个满足函数的元素\n\n### 精通对象\n- 创建对象\n- 点符号符号\n- 删除属性\n- 方括号语法\n-\
+    \ 更新对象成员\n- 什么是“this”？\n- 总结\n\n### 使用条件语句\n- `if/else` 语句\n- `else if`\n- 比较运算符\n\
+    - 嵌套 `if/else`\n- 逻辑运算符：AND、OR 和 NOT\n- `switch` 语句\n- 三元运算符\n\n### 精通循环\n- `for`\
+    \ 循环\n- `do…while` 语句\n- `while` 语句\n- 标签语句\n- `break` 语句\n- `continue` 语句\n-\
+    \ `for…in` 语句\n- `for…of` 语句\n- 总结\n\n### 精通函数\n- 定义函数\n- 函数表达式\n- 调用函数\n- 函数作用域\n\
+    - 嵌套函数与闭包\n- 闭包\n- `arguments` 对象\n- 函数参数\n- 箭头函数\n- 预定义函数\n- 总结\n\n### 类\n- 什么是类？\n\
+    - 类就像函数一样！\n- 类声明\n- 提升\n- 类表达式\n- 构造函数\n- 实例属性\n- 字段声明\n- 使用 `extends` 的子类\n\
+    - 物种 (Species)\n- `super` 关键字\n- 混合入 (Mix-ins)\n\n### 理解 API\n- JavaScript 中的\
+    \ API\n- API 是如何工作的？\n- 总结\n\n### 从服务器获取数据\n- 旧方法……\n- 解决方案：AJAX\n- 创建 Ajax 请求\n\
+    - `XMLHttpRequest`\n- `Fetch`\n- 使用 Promise (Promises)\n- 总结\n\n### REST API 简介\n\
+    - 什么是 REST API？\n- RESTful 架构\n- REST 实战\n- 处理 REST 数据\n\n### Promise\n- 为什么要使用\
+    \ Promise？\n- 总结：`Async` 与 `defer`\n\n---\n\n我们的 `changeText()` 函数修改了元素的 `textContent`。所以现在当你点击按钮时，会触发事件并运行我们的函数，从而更改我们\
+    \ `p` 标签中的文本。\n\n虽然内联事件处理器确实有效——但它们真的不应该在生产环境中使用。与不使用内联 CSS 的原因相同，太乱了！如果我们将 JavaScript\
+    \ 完全放在单独的脚本文件中，而不是在 HTML 中到处使用处理器，我们的代码将更具可维护性。\n\n### 事件处理器属性\n事件处理器属性的工作与内联处理器非常相似，不同在于我们在\
+    \ JavaScript 中设置元素的属性，而不是在 HTML 属性中设置。\n\n我们的 HTML 是一样的，只是我们现在排除了之前使用的 `onclick=\"\
+    changeText()\"`：\n\n```html\n<html\n  <!-- ... content ... -->\n</html>\n```\n\
+    \n我们的函数也将保持相似，但现在我们需要在 JavaScript 中访问按钮元素。我们只需要访问 `onclick`，就像访问 `style` 或 `id`\
+    \ 或任何其他元素属性一样，然后分配函数引用。\n\n```javascript\n// 修改段落文本内容的函数\nconst changeText = ()\
+    \ => {\n  const p = document.querySelector('p');\n  p.textContent = \"我通过事件处理器更改了\"\
+    ;\n}\n\n// 将事件处理器作为按钮元素的属性添加\nconst button = document.querySelector('button');\n\
+    button.onclick = changeText;\n```\n\n*(注：由于原文后续部分似乎存在逻辑混乱或重复的示例描述，翻译已根据提供的文本结构进行对齐，并保持\
+    \ Markdown 格式。)*\n\n"
+- fmt: "\n```javascript\n5 6 } 7 result += 8 return 9 }\n```\nFor an object `food`\
+    \ with properties `lunch` and `result` would be:\n1 `food.lunch = Sandwich`\n\
+    2 `food.dinner = Lasagna` \n\n**Note**: Given that `for...in` is built for iterating\
+    \ object it’s not recommended for use with arrays — where the index order is important.\
+    \ For arrays, it’s better to use the more traditional `for` loop.\n\n### `for…of`\
+    \ statement\nA `for ... of` statement creates a loop that iterates over iterable\
+    \ objects, such as `arguments` and so on. The syntax is like so:\n\n```javascript\n\
+    1 for of { \n2  statement \n3 } \n```\nThe below example shows the difference\
+    \ between a `for...of` loop and a `for … in` loop. While `for...in` iterates over\
+    \ property names, `for...of` iterates over property values:\n\n```javascript\n\
+    1 let arr = 2 = 3 \nfor i in { \n4  // logs \"0\", \"1\", \"2\", \"greet\" \n\
+    5 } \nfor i of { \n7  // logs 10, 20, 30 \n8 } \n```\n\n### Summary\nAnd that’s\
+    \ it! We’ve learned about many of the different loop statements, such as: labeled\
+    \ `break`, `continue`, `for..in` & `And`. And we’ve looked at a number of examples\
+    \ highlighting ideal use cases for each type of loop. Whichever statements we\
+    \ choose to utilize, we’re now well equipped to add logic and reasoning to our\
+    \ programs.\n\n# Mastering Functions\nFunctions can be thought of as one of the\
+    \ core building blocks of our JavaScript programs. A function is simply a set\
+    \ of statements designed to perform a particular task — which is executed whenever\
+    \ it is invoked (or “called”).\n\nIn this chapter we’re going to take a look at\
+    \ defining functions, function expressions, calling functions, scope, nesting,\
+    \ closures, the `arguments` object, function parameters & arrow functions!\n\n\
+    ## Defining functions\nA function definition (otherwise known as a function declaration,\
+    \ or function statement) will always begin with the `function` keyword. What follows\
+    \ is the name of our function, any parameters enclosed in parenthesis, and then\
+    \ our JavaScript statements (enclosed in `{}` which are executed when our function\
+    \ is called).\n\nLet’s see an example:\n\n```javascript\n1 function() { \n2  return\
+    \ a * 3 \n} \n```\nOur function `multiply` takes two parameters and included in-between\
+    \ the curly braces is a statement that returns the result of the first parameter\
+    \ `a` multiplied by the second parameter `b`.\n\n### Function expressions\nThere\
+    \ is another way to define a function, known as the function expression. These\
+    \ types of functions can actually be anonymous. They don’t need to be given a\
+    \ name.\n\nFor example, our previous `multiply` function could’ve also been defined\
+    \ like so:\n\n```javascript\n1 let multiply = function() { return a * b };\n2\
+    \ let x = // x returns 4\n```\nA typical use case for function expressions might\
+    \ be when passing a function as an argument to another function.\n\nWe can also\
+    \ define a function based on a condition. For example, the following function\
+    \ defines `addItem` only if `num` equals 1:\n\n```javascript\n1 let num = 1\n\
+    2 if (num === 1) { \n3  addItem = function() { \n4   return 5 \n5  } \n6 } \n\
+    ```\n\n### Calling functions\nWhen we define a function all we’ve done is given\
+    \ it a name & specified what to do when the function executes. So to actually\
+    \ run the function, we’ll need to call it within our program!\n\nTo call our earlier\
+    \ function we could invoke it as follows:\n\n```javascript\n1 multiply(2,2);\n\
+    ```\nHere we’re calling our function which is set to receive two arguments with\
+    \ the arguments of `2` and `2`. The function executes and runs its statements\
+    \ which returns the result of `2` multiplied by `2`.\n\nFunctions need to be in\
+    \ scope when they are called, but the function declaration can be hoisted (appear\
+    \ below the call in the code), like so:\n\n```javascript\n1 // call here\n2 /*\
+    \ ... */ \n3 function multiply(a, b) { return a * b } \n```\nThe scope of a function\
+    \ is the function in which it is declared, or the entire program if it is declared\
+    \ at the global level.\n**Note**: This only works with function declarations.\
+    \ Not function expressions!\n\n### Function scope\nWhen variables are defined\
+    \ inside a function they cannot be accessed anywhere outside of that function.\
+    \ As that would be outside the scope. However, a function is able to access all\
+    \ variables and functions defined inside the scope in which it is defined. So\
+    \ a function defined in the global scope can access all variables defined in the\
+    \ global scope. A function defined inside another function can also access all\
+    \ variables defined in its parent function and any other variable to which the\
+    \ parent function has access.\n\nLet’s see an example…\n\n```javascript\n1 //\
+    \ These variables are defined globally\n2 let a = 10\n3 b = 20\n4 name = \"Bruce\"\
+    \n5 // This function is defined globally\n6 function multiply(a, b) { \n7  return\
+    \ a * b \n8 } \n9 // returns 200\n10 // Working with a nested function\n11 function\
+    \ getGreeting(name) { \n12  let a = 5\n13  let b = 10\n14  \n15  function inner()\
+    \ { \n16   return name + \" received \" + (a * b) \n17  } \n18  \n19  return inner()\
+    \ \n20 } \n21 // returns \"Bruce received 50\"\n```\n\n### Nesting functions and\
+    \ closures\nSo you can nest a function within a function! The nested (inner) function\
+    \ is private to its containing (outer) function. It also forms a closure. A closure\
+    \ is an expression (usually a function) that can have free variables together\
+    \ with an environment that binds those variables (it “closes” the expression).\n\
+    \nAnd as a nested function is a closure, it’s able to “inherit” the arguments\
+    \ and variables of its containing function. As follows:\n\n```javascript\n1 function\
+    \ outer(x) { \n2  function inner(y) { \n3   return x + y \n4  } \n5  return inner\
+    \ \n6 } \n7 let a = outer(5); // returns a function\n8 let b = a(10); // returns\
+    \ 15\n9 let c = a(5); // returns 10\n```\n\n### Closures\nAs we now know, we can\
+    \ nest our functions and JavaScript will give the inner function full access to\
+    \ all variables defined inside the outer function (as well as all functions it\
+    \ has access to). However, the outer function does not have access to the variables\
+    \ and functions defined inside the inner function. Let’s see an example:\n\n```javascript\n\
+    1 // The outer function defines \"name\" variable\n2 function makeGreeting(name)\
+    \ { \n3  let count = 0\n4  return function() { \n5    count++;\n6    return name\
+    \ + \" \" + count;\n7  }; \n8 } \n9 let greet = makeGreeting(\"Steve\");\n10 greet();\
+    \ // returns \"Steve 1\"\n11 greet(); // returns \"Steve 2\"\n```\n\n### The `arguments`\
+    \ object\nThe `arguments` of any function are maintained in an array-like object.\
+    \ Within a function, you can address the arguments as `arguments[i]`. Here `i`\
+    \ is the index number, starting at zero. So the first argument passed to a function\
+    \ would be `arguments[0]`.\n\nUsing the `arguments` object, you can call a function\
+    \ with more arguments than it is declared to accept. You can use `arguments.length`\
+    \ to determine the number of arguments actually passed to the function, and then\
+    \ access each argument using the `arguments` object.\n\nFor example, consider\
+    \ a function that concatenates several strings. The only argument for the function\
+    \ is a string that separates the items to concatenate. The function is defined\
+    \ as follows:\n\n```javascript\n1 function concat(separator) { \n2  let result\
+    \ = \"\";\n3  for (let i = 0; i < arguments.length; i++) {\n4    result += arguments[i]\
+    \ + separator;\n5  }\n6  return result; \n7 } \n```\nYou can pass any number of\
+    \ arguments into this function, and it’ll concatenate each argument into a string:\n\
+    \n```javascript\n1 concat(\", \", \"fred\", \"wilma\", \"barney\", \"betty\");\
+    \ // returns \"fred, wilma, barney, bety,\"\n2 concat(\"; \", \"marge\", \"lisa\"\
+    , \"bart\", \"maggie\"); // returns \"marge; lisa; bart; maggie;\"\n3 concat(\"\
+    . \", \"jerry\", \"kramer\", \"elaine\", \"george\", \"new\"); // returns \"jerry.\
+    \ kramer. elaine. george. newman.\"\n```\n**Note**: The variable is “array-like”,\
+    \ but not an array. It has a numbered index and a `length` property. However,\
+    \ it does not possess all of the array-manipulation methods.\n\n### Function parameters\n\
+    There are two kinds of function parameters: default parameters and rest parameters.\
+    \ Let’s now take a look at each…\n\n#### Default parameters\nIn JavaScript, parameters\
+    \ of functions default to `undefined`. However, in some situations, it might be\
+    \ useful to set a different default value. This is where default parameters are\
+    \ useful. It’s actually quite simple to implement:\n\n```javascript\n1 function\
+    \ b(a, b = 2) { \n2  return a * b \n3 } // returns 10\n```\nYou can simply put\
+    \ `2` as the default value for `b` in the function head.\n\n#### Rest parameters\n\
+    The rest parameter syntax allows us to represent an indefinite number of arguments\
+    \ as an array. In this example, we use the rest parameters to collect arguments\
+    \ from the second one to the end. We then multiply them by the first one. This\
+    \ example uses an arrow function, which we’ll look at next!\n\n```javascript\n\
+    1 multiply = (multiplier, ...args) => {\n2  return args.reduce((acc, val) => acc\
+    \ + val * multiplier, 0);\n } \nlet arr = [2, 4, 6];\nresult = multiply(2, ...arr);\
+    \ // returns 24\n```\n\n#### Arrow functions\nAn arrow function has a much shorter\
+    \ syntax compared to function expressions. For example, here is a regular function:\n\
+    \n```javascript\n1 function(params) { \n2  return params + 10 \n3 } // 12\n```\n\
+    And here is the same function, expressed as an arrow:\n\n```javascript\n1 let\
+    \ funcName = (params) => params + 10\n2 funcName(2); // 12\n```\nThe same function\
+    \ in just one line of code! Pretty neat!\n\nIf we have no parameters, we express\
+    \ our arrow function like this:\n\n```javascript\n1 () => { statements }\n```\n\
+    And when we have just one parameter, the opening parenthesis are optional:\n\n\
+    ```javascript\n1 parameters => { statements }\n```\nFinally, if you’re returning\
+    \ an expression, you can remove the brackets:\n\n```javascript\n1 parameters =>\
+    \ expression\n2 // is the same as\n3 function(parameters) {\n4  return expression;\n\
+    5 }\n```\n**Note**: Unlike a regular function, an arrow function does not bind\
+    \ `this`. Instead, this is bound to keep its meaning from its original context.\
+    \ We’ll be taking a closer look at the `this` keyword later on!\n\n#### Predefined\
+    \ functions\nIt’s well worth noting that JavaScript has numerous built-in functions!\
+    \ And they’ll likely save you a lot of time, especially for common tasks. See:\
+    \ https://www.tutorialpoint.com/javascript/builtin_functions\n\n# Classes\n##\
+    \ What are classes?\nJavaScript classes were introduced with ECMAScript2015, they’re\
+    \ often described as syntactical sugar over JavaScript’s existing structure of\
+    \ prototypical inheritance. So while classes do not introduce a new inheritance\
+    \ model they do provide syntactical simplicity. This can help us produce less\
+    \ error-prone & more readable code.\n\nClasses are just like functions!\nClasses\
+    \ are very similar to functions. Much like functions that have both expressions\
+    \ and declarations, classes have two components: expressions and methods.\n\n\
+    ### Class declarations\nLet’s take a look at how we can define a class using the\
+    \ `class` keyword followed by the name of the class:\n\n```javascript\n1 class\
+    \ Image {\n  constructor(name) {\n    this.name = name;\n  }\n}\n```\n\n### Hoisting\n\
+    One important difference between function declarations and class declarations\
+    \ is that function declarations are hoisted and class declarations are not. You\
+    \ first need to declare your class and then access it, otherwise code like the\
+    \ following will throw a `Error`:\n\n```javascript\n1 const p = new Image(); //\
+    \ Error\n```\n\n### Class expressions\nA class expression is the other way to\
+    \ define a class. Class expressions can be named or unnamed. Note that the name\
+    \ given to a named class is local to the class’s body:\n\n```javascript\n1 //\
+    \ An unnamed class\nlet Image = class {\n  constructor(name) {\n    this.name\
+    \ = name;\n  }\n};\n// A named class\nlet MyImage = class {\n  constructor(name)\
+    \ {\n    this.name = name;\n  }\n};\n```\n**Note**: Class expressions are subject\
+    \ to the same hoisting restrictions described previously in the declarations section.\n\
+    \n### Constructors\nThe `constructor` method is a special method within a class\
+    \ that we use to create and initialize an object created with `new`. We can only\
+    \ use one method with the name `constructor` within a class. Our constructor can\
+    \ use the `super` keyword to call the constructor of the super class (more on\
+    \ this later!).\n\n### Instance properties\nInstance properties must be defined\
+    \ inside our class methods:\n\n```javascript\n1 class Image {\n  constructor(name)\
+    \ {\n    this.name = name;\n  }\n}\n```\nIf we wish to use static class-side properties,\
+    \ these must be defined outside of the class body:\n\n```javascript\n1 Image.staticWidth\
+    \ = 50;\n2 Image.prototype.prototypeWidth = 55;\n```\n\n### Field declarations\n\
+    Whilst the syntax is still considered experimental not yet adopted by many public\
+    \ and private field declarations are also worth knowing — as often you’ll be developing\
+    \ with Babel which will transpile the syntax for you.\n\n### Public field declarations\n\
+    Let’s revisit our example with the JavaScript field declaration syntax:\n\n```javascript\n\
+    1 class Image {\n  height = 0\n  width = 0;\n}\n```\nThe difference is our fields\
+    \ have been declared up-front. So our class definitions become more self-documenting,\
+    \ and the fields are always present.\n**Note**: the fields can be declared with\
+    \ or without a default value!\n\n### Private field declarations\nWhen we use private\
+    \ fields, the definition can be refined like so:\n\n```javascript\n1 class Image\
+    \ {\n  #height = 0;\n  #width = height;\n}\n```\nPrivate fields (declared with\
+    \ `#`) cannot be referenced outside of the class, only within the class body.\
+    \ This ensures that your classes’ users can’t depend on internals, which may change\
+    \ with version.\n**Note**: Private fields cannot be created later through assignment.\
+    \ They can only be declared up-front in a field declaration.\n\n### Child classes\
+    \ using ‘extends’\nWe can use the `extends` keyword with either class declarations\
+    \ or class expressions to create a class as a child of another class.\n\n```javascript\n\
+    1 class Image {\n  constructor(name) {\n    this.name = name;\n  }\n}\nclass Car\
+    \ extends Image {\n  constructor(name) {\n    // call the super class constructor\
+    \ and pass in the name parameter\n    super(name);\n  }\n}\nlet c = new Car(\"\
+    Volkswagen\"); // The Volkswagen\n```\nIf there is a constructor present in the\
+    \ subclass, it needs to first call `super()` before using `this`. Function-based\
+    \ “classes” may also be extended:\n\n```javascript\n1 function Vehicle(name) {\n\
+    \  this.name = name;\n}\nclass Car extends Vehicle {\n  constructor(name) {\n\
+    \    super(name);\n  }\n}\nlet c = new Car(\"Volkswagen\"); // The Volkswagen\n\
+    ```\n**Note**: classes cannot extend regular objects! If you want to inherit from\
+    \ an object, use:\n\n```javascript\nconst Vehicle = {\n  constructor(name) {\n\
+    \    this.name = name;\n  }\n};\nclass Image extends Vehicle {\n  constructor(name)\
+    \ {\n    super(name);\n  }\n}\n```\n\n### Summary\nAnd that’s all for this chapter!\
+    \ We’ve learned about defining functions, function expressions, calling functions,\
+    \ scope, nesting, closures, the `arguments` object, function parameters & arrow\
+    \ functions.\n"
+  raw: '\ 5 6  } 7  result += 8  return 9 }  For an object food with properties lunch
+    and result would be:  1 food.lunch = Sandwich 2 food.dinner = Lasagna  Note: Given
+    that for...in is built for iterating object it’s not recommended for use with
+    arrays — where the index order is important. For arrays, it’s better to use the
+    more traditional for loop. for…of statement A for … of statement creates a loop
+    that iterates over iterable objects, such as arguments and so on. The syntax is
+    like so:  1 for of { 2  statement 3 }  The below example shows the difference
+    between a for...of loop and a for … in loop. While for...in iterates over property
+    names, for...of iterates over property values:  1 let arr = 2 = 3 for i in { 4  //
+    logs "0", "1", "2", "greet" 5 } 6 for i of { 7  // logs 10, 20, 30 8 }  Summary And
+    that’s it! We’ve learned about many of the different loop statements, such as:
+    labeled break continue for..in & And we’ve looked at a number of examples highlighting
+    ideal use cases for each type of loop. Whichever statements we choose to utilize,
+    we’re now well equipped to add logic and reasoning to our programs. Mastering
+    Functions Functions can be thought of as one of the core building blocks of our
+    JavaScript programs. A function is simply a set of statements designed to perform
+    a particular task — which is executed whenever it is invoked (or “called”). In
+    this chapter we’re going to take a look at defining functions, function expressions,
+    calling functions, scope, nesting, closures, the arguments object, function parameters
+    & arrow functions! Defining functions A function definition (otherwise known as
+    a function declaration, or function statement) will always begin with the function
+    keyword. What follows is the name of our function, any parameters enclosed in
+    parenthesis, and then our JavaScript statements (enclosed in { which are executed
+    when our function is called. Let’s see an example:  1 function { 2  return a *
+    3 }  Our function multiply takes two parameters and Included in-between the curly
+    braces is a statement that returns the result of the first parameter a multiplied
+    by the second parameter Function expressions There is another way to define a
+    function, known as the function expression. These types of functions can actually
+    be anonymous. They don’t need to be given a name. For example, our previous multiply
+    function could’ve also been defined like so:  1 let multiply = { return a * };
+    2 let x = // x returns 4  A typical use case for function expressions might be
+    when passing a function as an argument to another function. We can also define
+    a function based on a condition. For example, the following function defines addItem
+    only if num equals 1:  1 let 2 if === { 3  addItem = { 4   = 5  } 6 }  Calling
+    functions When we define a function all we’ve done is given it a name & specified
+    what to do when the function executes. So to actually run the function, we’ll
+    need to call it within our program! To call our earlier function we could invoke
+    it as follows:  1 multiply(2,2);  Here we’re calling our function which is set
+    to receive two arguments with the arguments of 2 and The function executes and
+    runs its statements which returns the result of multiplied by 2). Functions need
+    to be in scope when they are called, but the function declaration can be hoisted
+    (appear below the call in the code), like so:  1 2 /* ... */ 3 function { return
+    a * }  The scope of a function is the function in which it is declared, or the
+    entire program if it is declared at the global level. Note: This only works with
+    function declarations. Not function expressions! Function scope When variables
+    are defined inside a function they cannot be accessed anywhere outside of that
+    function. As that would be outside the scope. However, a function is able to access
+    all variables and functions defined inside the scope in which it is defined. So
+    a function defined in the global scope can access all variables defined in the
+    global scope. A function defined inside another function can also access all variables
+    defined in its parent function and any other variable to which the parent function
+    has access. Let’s see an example…  1 // These variables are defined globally 2
+    let a = 3   b = 4   name = 5 // This function is defined globally 6 function {
+    7  return a * 8 } 9 // returns 30 10 // Working with a nested function 11 function
+    { 12  let a = 13    b = 14  15  function { 16   return name + ‘ + * 17  } 18  19  return
+    20 } 21 // returns "Bruce received 120"  Nesting functions and closures So you
+    can nest a function within a function! The nested (inner) function is private
+    to its containing (outer) function. It also forms a closure. A closure is an expression
+    (usually a function) that can have free variables together with an environment
+    that binds those variables (it “closes” the expression). And as a nested function
+    is a closure, it’s able to “inherit” the arguments and variables of its containing
+    function. As follows:  1 function { 2  function { 3   return x * 4  } 5  return
+    + 6 } 7 a = // returns 13 8 b = // returns 25 9 c = // returns 41  Since the inner
+    function forms a closure, you can call the outer function and specify arguments
+    for both the outer and inner function! Closures As we now know, we can nest our
+    functions and JavaScript will give the inner function full access to all the variables
+    and functions defined inside the outer function (as well as all variables & functions
+    that it has access to). However, the outer function does not have access to the
+    variables and functions defined inside the inner function! A closure is created
+    when the inner function is somehow made available to any scope outside the outer
+    function. Let’s see an example:  1 // The outer function defines a "name" variable
+    2 let user = 3  let getName = { 4   return      5   // The inner function can
+    access the "name" variable \ 6 of outer function 7  } 8 // Return the inner and
+    expose it to outer 9 es 10 return      11 } 12 makeAdmin = 13  14 // returns "Steve
+    Stevesson"  The arguments object The arguments of any function are maintained
+    in an array-like object. Within a function, you can address the arguments to it
+    as follows:  1  Here i is the first number of the argument, starting at zero.
+    So, the first argument passed to a function would be The total number of arguments
+    would be Using the arguments object, you can call a function with more arguments
+    than it is formally declared to accept. This is often useful if you don’t know
+    in advance how many arguments will be passed to the function. You can use arguments.length
+    to determine the number of arguments actually passed to the function, and then
+    access each argument using the arguments object. For example, consider a function
+    that concatenates several strings. The only formal argument for the function is
+    a string that specifies the characters that separate the items to concatenate.
+    The function is defined as follows:  1 function { 2  let result = // initialize
+    list 3  let 4  // loop through arguments 5  for = i < { 6    result += + 7  }
+    8  return 9 }  You can pass any number of arguments into this function, and it’ll
+    concatenate each argument into a string “list”:  1 myConcat('', '', ''fred'',
+    ''wilma'', ''barney'', ''betty''); 2 // returns "fred, wilma, barney, betty, "
+    3 myConcat(''; '', ''marge'', ''homer'', ''lisa'', ''bart'', ''maggie''\ 4 );
+    5 // returns "marge; homer; lisa; bart; maggie; " 6 myConcat(''. '', ''jerry'',
+    ''kramer'', ''elaine'', ''george'', ''ne\ 7 wman''); 8 // returns "jerry. kramer.
+    elaine. george. newman. "  Note: The arguments variable is “array-like”, but not
+    an array. It has a numbered index and a length property. However, it does not
+    possess all of the array-manipulation methods. Function parameters There are two
+    kinds of function parameters: default parameters and rest parameters. Let’s now
+    take a look at each… Default parameters In JavaScript, parameters of functions
+    will default to However, in some situations, it might be useful to set a different
+    default value. This is where default parameters are useful. It’s actually quite
+    simple to implement:  1 function b = { 2  return a * 3 } 4 5 // 10  You can simply
+    put 1 as the default value for b in the function head. Rest parameters The rest
+    parameter syntax allows us to represent an indefinite number of arguments as an
+    array. In this example, we use the rest parameters to collect arguments from the
+    second one to the end. We then multiply them by the first one. This example uses
+    an arrow function, which we’ll look at next!  1 function { 2  return => multiplier
+    * 3 } 4 5 let arr = 6 // [2, 4, 6]  Arrow functions An arrow function has a much
+    shorter syntax compared to function expressions. For example, here is a regular
+    function:  1 function { 2  return params + 3 } 4 5 // 12  And here is the same
+    function, expressed as an arrow  1 let funcName = (params) => params + 10 2 3
+    funcName(2); // 12  The same function in just one line of code! Pretty neat! If
+    we have no parameters, we express our arrow function like this:  1 () => { statements
+    }  And when we have just one parameter, the opening parenthesis are optional:  1
+    parameters => { statements }  Finally, if you’re returning an expression, you
+    can remove the brackets:  1 parameters => expression 2 3 // is the same 4 5 function
+    6  return 7 }  Note: Unlike a regular function, an arrow function does not bind
+    Instead, this is bound to keep its meaning from its original context. We’ll be
+    taking a closer look at the “this” keyword later on! Predefined functions It’s
+    well worth noting that JavaScript has numerous built-in functions! And they’ll
+    likely save you a lot of time, especially for common tasks. See:https://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm Summary And
+    that’s all for this chapter! We’ve learned about defining functions, function
+    expressions, calling functions, scope, nesting, closures, the arguments object,
+    function parameters & arrow functions :) What are classes? JavaScript classes
+    we’re introduced with ECMAScript 2015, they’re often described as syntactical
+    sugar over JavaScript’s existing structure of prototypical inheritance. So while
+    classes do not introduce a new inheritance model to JavaScript — they do provide
+    syntactical simplicity. This simplicity can help us produce less error-prone &
+    more readable code. Classes are just like functions! Classes are very similar
+    to functions. Much like functions that have both function expressions and function
+    declarations, classes have two components: class expressions and class Class declarations Let’s
+    take a look at how we can define a class using a class We use the followed the
+    name of the class:  1 class Image { 2  { 3   = 4   = 5  } 6 }  Hoisting One important
+    difference between function declarations and class declarations is that function
+    declarations are hoisted and class declarations are not. You first need to declare
+    your class and then access it, otherwise, code like the following will throw a  1
+    const p = new // ReferenceError 2 3 class  Class expressions A class expression
+    is the other way to define a class. Class expressions can be named or unnamed.
+    Note that the name given to a named class expression is local to the class’s body.
+    (So it’s retrievable through the classes name property):  1 // An unnamed class
+    expression 2 let Image = class { 3  { 4   = 5   = 6  } 7 }; 8 9 // "Image" 10
+    11 // A named class expression 12 let MyImage = class Image { 13  { 14   = 15   =
+    16  } 17 }; 18 19 // "Image"  Note: Class expressions are subject to the same
+    hoisting restrictions as described previously in the Class declarations section. Constructors The
+    constructor method is a special method within JavaScript that we use to create
+    and initialize an object created with a We can only use one method with the name
+    “constructor” within a class. Our constructor can use the super keyword to call
+    the constructor of the super class (more on this later in the article!). Instance
+    properties Instance properties must be defined inside of our class methods:  1
+    class Image { 2   3   = 4   = 5  } 6 }  If we wish to use static class-side properties
+    and prototype data properties, these must be defined outside of the classes body
+    declaration:  1 Image.staticWidth = 50; 2 Image.prototype.prototypeWidth = 55;  Field
+    declarations Whilst the syntax is still considered experimental not yet adopted
+    by many public and private field declarations are also worth knowing about — as
+    often you’ll be developing with a Babel which will transpile the syntax for you. Public
+    field declarations Let’s revisit our example with the JavaScript field declaration
+    syntax:  1 class Image { 2  height = 3  4   5   = 6   = 7  } 8 }  The difference
+    is our fields have been declared up-front. So our class definitions become more
+    self-documenting, and the fields are always present. Note: the fields can be declared
+    with or without a default value! Private field declarations When we use private
+    fields, the definition can be refined like so:  1 class Image { 2  #height = 0;
+    3  #width; 4   5   = height; 6   = width; 7  } 8 }  Private fields (declared with
+    a cannot be referenced outside of the class, only within the class body. This
+    ensures that your classes’ users can’t depend on internals, which may change with
+    version changes. Note: Private fields cannot be created later through assignment.
+    They can only be declared up-front in a field declaration. Child classes using
+    ‘extends’ We can use the extends keyword with either class declarations or class
+    expressions to create a class as a child of another class.  1 class 2  { 3   =
+    4  } 5  6  { 7   makes a 8  } 9 } 10 class Car extends 11  { 12   // call the
+    super class constructor and \ 13 pass in the name parameter 14  } 15  { 16   tooted
+    its 17  } 18 } 19 let c = new 20 // The Volkswagen tooted its  If there is a constructor
+    present in the subclass, it needs to first call super() before using “this”. Function-based
+    “classes” may also be extended:  1 function Vehicle { 2  = 3 } 4 = function ()
+    { 5  makes a 6 } 7 class Car extends 8  { 9   tooted its 10  } 11 } 12 let c =
+    new 13 // The Volkswagen tooted its  Note: classes cannot extend regular objects!
+    If you want to inherit from an object, use  1 const Vehicle = { 2  { 3   makes
+    a 4  } 5 }; 6 7 class 8  { 9   = 10  } 11 } 12 13 let c = new 14 // Volkswagen
+    makes a  Species If you want to return Array objects from an array class You can
+    do so with the “species” pattern, which lets you override the default constructors. If
+    using methods such as map() it’ll return the default constructor. Then you’ll
+    want these methods to return a parent Array object, instead of the MyArray object.
+    you do this, like so:  1 class MyArray extends Array { 2  // Overwrite species
+    to the parent Array constructor 3  static get { return } 4 } 5 6 let a = new 7
+    let mapped = => x * 8 9 instanceof // false 10 instanceof // true  The ‘super’
+    keyword The super keyword is used to call corresponding methods of super class.
+    This is one advantage over prototype-based inheritance. Let’s see an example:  1
+    class Volkswagen { 2  { 3   = 4  } 5  6  { 7   makes a 8  } 9 } 10 11 class Beetle
+    extends Volkswagen { 12  { 13   14   toots horn.`); 15  } 16 } 17 18 let b = new
+    19 20 21 // Herbie makes a 22 // Herbie toots horn.  Mix-ins Mix-ins are templates
+    for classes. An ECMAScript class can only have a single superclass, so multiple
+    inheritance from tooling classes, for example, isn’t possible. The functionality
+    must be provided by the superclass. A function with a superclass as input and
+    a subclass extending that superclass as output can be used to implement mix-ins
+    in ECMAScript:  1 let calculatorMixin = Base => class extends Base { 2  { } 3
+    }; 4 5 let randomizerMixin = Base => class extends Base { 6  { } 7 };  A class
+    that uses these mix-ins can then be written like this:  1 class First { } 2 class
+    Second extends 3 { ...  And that’s it! We’ve taken a deep dive into JavaScript
+    classes including class declarations, class expressions, constructors, instance
+    properties, field declarations, extends, species, super and mix-ins. Understanding
+    APIs Application (APIs) can be defined as sets of functions and procedures which
+    are created by an operating system, application or other service. They can be
+    utilized by developers who wish to interact with those set procedures when building
+    their own applications. Essentially they’re created to take away a lot of the
+    more complex code and provide an easier syntax to work with. For example, you
+    might want to add a live twitter feed into your website. By working with the relevant
+    methods provided by the Twitter API (via the developer documentation), you could
+    query twitter & display the latest tweets by a particular user or hashtag. APIs
+    in JavaScript JavaScript has numerous APIs available to it, which are typically
+    defined as either Browser APIs or Third Party Let’s take a look at each.. Browser
+    APIs Browser APIs are built into the browser — containing data from the browser.
+    With this data we can do many useful things, from simply manipulating the window
+    or to generating intricate effects using APIs such as WebGL. Some of the more
+    common browser APIs that you’ll encounter are: APIs for document manipulation:
+    The DOM (Document Object Model) is in fact an API! It allows you to manipulate
+    HTML and CSS — creating, removing and changing HTML, dynamically applying new
+    styles to your page, etc.APIs for fetching server data: Such as XMLHttpRequest
+    and the Fetch API, which we often use for data exchange and partial page updates.
+    This technique is often called Ajax.APIs for manipulating graphics: Here we’re
+    talking about Canvas and WebGL, which allow you to programmatically update the
+    pixel data contained in an HTML'
+  toc: []
+  trans: "\n\n```javascript\n5 6 } 7 result += 8 return 9 }\n```\n对于一个具有 `lunch` 和\
+    \ `result` 属性的对象 `food`，如下：\n1 `food.lunch = Sandwich`\n2 `food.dinner = Lasagna`\n\
+    \n**注意**：考虑到 `for...in` 是为迭代对象设计的，不建议用于数组使用——因为数组的索引顺序很重要。对于数组，最好使用更传统的 `for`\
+    \ 循环。\n\n### `for…of` 语句\n`for ... of` 语句创建一个遍历可迭代对象的循环，例如 `arguments` 等。语法如下：\n\
+    \n```javascript\n1 for of { \n2  statement \n3 } \n```\n下面的示例展示了 `for...of` 循环和\
+    \ `for … in` 循环之间的区别。`for...in` 遍历的是属性名，而 `for...of` 遍历的是属性值：\n\n```javascript\n\
+    1 let arr = 2 = 3 \nfor i in { \n4  // 打印 \"0\", \"1\", \"2\", \"greet\" \n5 }\
+    \ \nfor i of { \n7  // 打印 10, 20, 30 \n8 } \n```\n\n### 总结\n就是这些！我们学习了许多不同的循环语句，例如：标记的\
+    \ `break`、`continue`、`for..in` 和 `And`。我们还看了一些示例，突出了每个类型循环的理想用场景。无论我们选择利用哪种语句，现在我们都有足够的工具为我们的程序添加逻辑和推理了。\n\
+    \n# 掌握函数\n函数可以被看作 JavaScript 程序的内核构建块之一。函数本质是一组旨在执行特定任务的语句——每当它被调用（或“执行”）时，它就会被执行。\n\
+    \n在本章中，我们将查看定义函数、函数表达式、调用函数、作用域、嵌套、闭包、`arguments` 对象、函数参数和箭头函数！\n\n## 定义函数\n函数定义（也称为函数声明或函数语句）始终以\
+    \ `function` 关键字开始。紧随其后的是函数名、圆括号内的任何参数，然后是我们的 JavaScript 语句（括在 `{}` 中，当我们的函数被调用时执行）。\n\
+    \n让我们来看一个例子：\n\n```javascript\n1 function() { \n2  return a * 3 \n} \n```\n我们的函数\
+    \ `multiply` 接收两个参数，大括号之间包含一条语句，返回第一个参数 `a` 乘以第二个参数 `b` 的结果。\n\n### 函数表达式\n另一种定义函数的方法是函数函数表达式。这些类型的函数实际上可以是匿名的。它们不需要命名。\n\
+    \n例如，我们之前的 `multiply` 函数也可以这样定义：\n\n```javascript\n1 let multiply = function()\
+    \ { return a * b };\n2 let x = // x 返回 4\n```\n函数表达式的一个典型用例可能是当将函数作为参数传递给另一个函数时。\n\
+    \n我们也可以根据条件来定义函数。例如，以下函数仅在 `num` 等于 1 时才定义 `addItem`：\n\n```javascript\n1 let\
+    \ num = 1\n2 if (num === 1) { \n3  addItem = function() { \n4   return 5 \n5 \
+    \ } \n6 } \n```\n\n### 调用函数\n当我们定义一个函数时，我们做的只是给它起了一个名字，并指定了函数执行时要做什么。所以为了实际运行该函数，我们需要在程序中调用它！\n\
+    \n要调用我们之前的函数，我们可以按照如下方式调用它：\n\n```javascript\n1 multiply(2,2);\n```\n在这里我们正在调用函数，该函数被设置为接收两个参数，参数为\
+    \ `2` 和 `2`。函数执行并运行其语句，返回 `2` 乘以 `2` 的结果。\n\n函数在被调用时必须在作用域内，但函数声明可以被提升（出现在代码中调用的下方），如下：\n\
+    \n```javascript\n1 // 在此处调用\n2 /* ... */ \n3 function multiply(a, b) { return\
+    \ a * b } \n```\n函数的作用域是声明它的函数，或者如果它是在全局级别定义的，则作用域是整个程序。\n**注意**：这只对函数声明有效。函数表达式无效！\n\
+    \n### 函数作用域\n当变量定义在函数内部时，无法在该函数外部的任何地方访问，因为那超出了作用域。然而，函数能够访问其所在作用域内定义的所有变量和函数。因此，在全局作用域定义的函数可以访问全局作用域定义的所有变量。在另一个函数内部定义的函数也可以访问其父函数定义的所有变量，以及父函数可以访问的任何其他变量。\n\
+    \n让我们来看一个例子……\n\n```javascript\n1 // 这些变量定义在全局\n2 let a = 10\n3 b = 20\n4 name\
+    \ = \"Bruce\"\n5 // 这个函数定义在全局\n6 function multiply(a, b) { \n7  return a * b \n\
+    8 } \n9 // 返回 200\n10 // 使用嵌套函数\n11 function getGreeting(name) { \n12  let a =\
+    \ 5\n13  let b = 10\n14  \n15  function inner() { \n16   return name + \" received\
+    \ \" + (a * b) \n17  } \n18  \n19  return inner()\n20 } \n```\n\n### 函数作用域\n当变量定义在函数内部时，它们无法在该函数外部的任何地方访问，因为那超出了作用域。然而，函数能够访问其定义所在作用域内的所有变量。因此，在全局作用域定义的函数可以访问全局作用域定义的所有变量。在另一个函数内部定义的函数也可以访问其父函数定义的所有变量，以及父函数可以访问的任何其他变量。\n\
+    \n让我们来看一个例子……\n\n```javascript\n1 // 这些变量定义在全局\n2 let a = 10\n3 b = 20\n4 name\
+    \ = \"Bruce\"\n5 // 这个函数定义在全局\n6 function multiply(a, b) { \n7  return a * b \n\
+    8 } \n9 // 返回 200\n10 // 使用嵌套函数\n11 function getGreeting(name) { \n12  let a =\
+    \ 5\n13  let b = 10\n14  \n15  function inner() { \n16   return name + \" received\
+    \ \" + (a * b) \n17  } \n18  \n19  return inner()\n20 } \n```\n\n### 嵌套函数与闭包\n\
+    你可以在函数内部嵌套另一个函数！嵌套函数（inner）是其包含函数（outer）的私有的。闭包是一个表达式（通常是函数），它与与其环境绑定的变量在一起。\n\
+    \n由于嵌套函数是闭包，它能够“继承”包含函数的参数和变量。闭包定义如下：\n\n```javascript\n1 function outer(x) {\n\
+    2  function inner(y) {\n3    return x + y\n4  }\n5  return inner;\n6 }\nlet a\
+    \ = outer(5); // a 是一个函数\nlet b = a(10); // b 返回 15\n```\n\n### 闭包\n现在我们知道，我们可以嵌套函数，JavaScript\
+    \ 将允许内部函数访问外部函数定义的所有变量（以及它所能访问的所有函数）。然而，外部函数无法访问内部函数定义的变量和函数。如下：\n\n```javascript\n\
+    1 // 外部函数定义了 \"name\"\n2 function makeGreeting(name) { \n3  let count = 0\n4 \
+    \ return function() { \n5    count++;\n6    return name + \" \" + count;\n7  };\n\
+    8 }\n9 let greet = makeGreeting(\"Steve\");\n10 greet(); // 返回 \"Steve 1\"\n11\
+    \ greet(); // 返回 \"Steve 2\"\n```\n\n### `arguments` 对象\n任何函数的参数都在一个数组对象中。在函数内部，你可以通过\
+    \ `arguments[i]` 访问参数，其中 `i` 是从零开始的索引。你可以使用 `arguments.length` 来确定实际传递给函数的数量。\n\
+    \n例如，考虑一个拼接多个字符串的函数。函数定义如下：\n\n```javascript\n1 function concat(separator) { \n\
+    2  let result = \"\";\n3  for (let i = 0; i < arguments.length; i++) {\n4    result\
+    \ += arguments[i] + separator;\n5  }\n6  return result; \n7 }\n```\n你可以向此函数传递任意数量的参数，它会将每个参数拼接成字符串：\n\
+    \n```javascript\n1 concat(\", \", \"fred\", \"wilma\", \"betty\"); // 返回 \"fred,\
+    \ wilma, bety,\"\n2 concat(\"; \", \"marge\", \"bart\", \"maggie\"); // 返回 \"\
+    marge; bart; maggie;\"\n3 concat(\". \", \"jerry\", \"kramer\", \"elaine\"); //\
+    \ 返回 \"jerry. kramer. elaine. george.\"\n```\n\n### 函数参数\n函数参数有两种：默认参数和剩余参数。让我们来看看……\n\
+    \n#### 默认参数\n在 JavaScript 中，函数的参数默认值为 `undefined`。但在某些情况下，设置一个不同的默认值是有用的。这就是默认参数的用处。实现起来非常简单：\n\
+    \n```javascript\n1 function b(a, b = 2) { \n2  return a * b\n3 } // 返回 10\n```\n\
+    你只需要在函数头为 `b` 设置默认值 `2`。\n\n#### 剩余参数\n剩余参数语法允许我们将不定数量的参数表示为一个数组。在这个示例中，我们使用剩余参数收集从第二个到最后一个的所有参数，然后将它们乘以第一个参数。这个示例使用了箭头函数，我们将将介绍！\n\
+    \n```javascript\n1 multiply = (multiplier, ...args) => {\n2  return args.reduce((acc,\
+    \ val) => acc + val * multiplier, 0);\n } \nlet arr = [2, 4, 6];\nresult = multiply(2,\
+    \ ...arr); // 返回 24\n```\n\n#### 箭头函数\n与函数表达式相比，箭头函数的语法短得多。例如，这是一个普通函数：\n\n```javascript\n\
+    1 function(params) { \n2  return params + 10 \n } // 返回 12\n```\n这里是同一个函数的箭头形式表示：\n\
+    \n```javascript\n1 let funcName = (params) => params + 10\n2 funcName(2); // 返回\
+    \ 12\n```\n只需一行代码就实现了相同的函数！非常酷！\n\n如果我们没有参数，我们这样表示箭头函数：\n\n```javascript\n1 ()\
+    \ => { statements }\n```\n当我们只有一个参数时，圆括号是可选的：\n\n```javascript\n1 parameters =>\
+    \ { statements }\n```\n最后，如果你返回一个表达式，可以去掉括号：\n\n```javascript\n1 parameters =>\
+    \ expression\n2 // 等同于\n3 function(parameters) {\n4  return expression;\n5 }\n\
+    ```\n**注意**：与普通函数不同，箭头函数不绑定 `this`。相反，`this` 被绑定以保持其原始上下文的含义。稍我们将详细查看 `this` 关键字！\n\
+    \n#### 预定义函数\n值得注意的是 JavaScript 有许多内置函数！它们可能会为你节省大量时间，特别是对于常见任务。请参：https://www.tutorialpoint.com/javascript/builtin_functions\n\
+    \n# 类\n## 什么是类？\nJavaScript 类是 ECMAScript2015 引入的，它们通常被描述为 JavaScript 现有原型继承结构的语法糖。因此，虽然类没有引入新的继承模型，但它们提供了语法上的简单性。这可以帮助我们产生更少错误且更易读的代码。\n\
+    \n类就像函数一样！\n类与函数非常相似。就像具有表达式和声明的函数一样，类也有两个组件：表达式和方法。\n\n### 类声明\n让我们看看如何使用 `class`\
+    \ 关键字后跟类名来定义类：\n\n```javascript\n1 class Image {\n  constructor(name) {\n    this.name\
+    \ = name;\n  }\n}\n```\n\n### 提升\n类与函数声明的一个重要区别是，类声明是可以提升的，而类表达式不是。如下：\n\n```javascript\n\
+    1 class Image {\n  constructor(name) {\n    this.name = name;\n  }\n}\n```\n\n\
+    ### 类表达式\n我们可以使用类表达式来创建类：\n\n```javascript\n1 Image = class {\n  constructor(name)\
+    \ {\n    this.name = name;\n  }\n};\n```\n**注意**：变量是“类数组”，但不是数组。它有索引和 `length`\
+    \ 属性。\n\n### 构造函数\n`constructor` 方法在类中被用于初始化对象：\n\n```javascript\n1 class Image\
+    \ {\n  constructor(name) {\n    this.name = name;\n  }\n}\n```\n\n### 静态属性\n静态属性定义在类中：\n\
+    \n```javascript\n1 class Image {\n  static staticWidth = 50;\n}\n```\n\n### 静态方法\n\
+    静态方法定义在类中：\n\n```javascript\n1 class Image {\n  static staticMethod() {\n    //\
+    \ 方法体\n  }\n}\n```\n\n### 继承\n我们可以使用 `extends` 关键字创建类作为另一个类的子类：\n\n```javascript\n\
+    1 class Image {\n  constructor(name) {\n    this.name = name;\n  }\n}\nclass Car\
+    \ extends Image {\n  constructor(name) {\n    // 调用父类构造函数并传入 name 参数\n    super(name);\n\
+    \  }\n}\nlet c = new Car(\"Volkswagen\"); // 返回 Volkswagen\n```\n\n"
+- fmt: "\nelement to create 2D and 3D scenes.\n\n### Audio/Video APIs\nSuch as `HTMLMediaElement`\
+    \ and the `Web Audio API`. You can use these to create custom controls for playing\
+    \ audio and video, display text tracks like captions and subtitles along with\
+    \ your videos. For audio you can add effects to audio tracks (such as `gain`,\
+    \ distortion etc).\n\n### Device APIs\nAre for manipulating and retrieving data\
+    \ from device hardware to use with web apps. Such as notifying the user that an\
+    \ update is available.\n\n### Third party APIs\nThird party APIs are not built\
+    \ into the browser, and you’ll need to retrieve their code and information from\
+    \ somewhere else. By connecting with the third party API you can access and then\
+    \ work with the methods provided by the API. Some common third party APIs are:\n\
+    \n- `Openweathermap.org`: allows you to query weather data. For example, you could\
+    \ capture a users location and display their current temperature.\n- `Twitter\
+    \ API`: you could display your latest tweets on your website.\n- `Google Maps\
+    \ API`: allows you to completely customize maps to include on your web pages.\n\
+    - `YouTube API`: allows you to embed YouTube videos on your site, search YouTube\
+    \ and automatically generate playlists.\n- `Twilio API`: this API provides a framework\
+    \ for building voice and video call functionality into your app, sending SMS/MMS\
+    \ from your apps, and more.\n\n## So how do APIs work?\nDespite different APIs\
+    \ working in different ways, they all share some common base factors which we’ll\
+    \ take a look at now:\n\n### APIs are based on objects\nThe code you write to\
+    \ interact with APIs will use one or more JavaScript objects. These objects serve\
+    \ as containers for the data the API uses (contained in object properties), and\
+    \ the functionality the API makes available (contained in object methods). Let’s\
+    \ take a look at an example using the Web Audio API — the API consists of a number\
+    \ of objects. For example, we have:\n\n- `AudioContext`: this represents an audio\
+    \ graph that can be used to manipulate audio playing inside the browser, and has\
+    \ a number of methods and properties available to manipulate that audio.\n- `MediaElementAudioSourceNode`:\
+    \ this represents an element containing sound you want to play and manipulate\
+    \ inside the audio context.\n- `AudioDestinationNode`: this represents the destination\
+    \ of the audio, i.e. the device on your computer that will actually output it\
+    \ — usually either your speakers or headphones.\n\n#### How do these objects interact?\n\
+    Let’s look at the following HTML:\n\n```html\n<audio src=\"music.mp3\"></audio>\n\
+    ```\nWe have here an element which we use to embed our MP3 into the page. We don’t\
+    \ include any default browser controls. Then we’ve added a `<button>`.\n\nLet’s\
+    \ see the JavaScript for this example..\nWe’ll start by creating an `AudioContext`\
+    \ instance inside which to manipulate our track:\n```javascript\nconst AudioContext\
+    \ = window || {};\nconst audioCtx = new AudioContext();\n```\nThen we’ll create\
+    \ constants that store references to our `audioElement` and `playBtn` and `volumeSlider`\
+    \ and use the `AudioContext.createMediaElementSource()` method to create a `MediaElementAudioSourceNode`\
+    \ representing the source of our audio — the it will be played from:\n\n```javascript\n\
+    const audioElement = document.querySelector('audio');\nconst playBtn = document.querySelector('button');\n\
+    const volumeSlider = document.querySelector('input');\nconst audioSource = audioCtx.createMediaElementSource(audioElement);\n\
+    ```\n\nNext we’ll include a couple of event handlers that toggle between play\
+    \ and pause whenever the button is pressed, and reset the display back to the\
+    \ beginning when the song has finished playing:\n\n```javascript\n// Play + Pause\
+    \ audio\nplayBtn.addEventListener('click', () => {\n  // check if context is in\
+    \ suspended state\n  if (audioCtx.state === 'suspended') {\n    audioCtx.resume();\n\
+    \  }\n  // If track is play it\n  if (audioElement.paused) {\n    audioElement.play();\n\
+    \    playBtn.textContent = 'Pause';\n  } else {\n    // If track is stop it\n\
+    \    audioElement.pause();\n    playBtn.textContent = 'Play';\n  }\n});\n// If\
+    \ the track ends\naudioElement.addEventListener('ended', () => {\n  audioElement.currentTime\
+    \ = 0;\n  playBtn.textContent = 'Play';\n});\n```\nThe `play()` and `pause()`\
+    \ methods being used are actually part of the `HTMLMediaElement` API, and not\
+    \ the `Web Audio API` (though they’re closely-related!).\n\nNow we create a `GainNode`\
+    \ object using the `AudioContext.createGain()` method, which can be used to adjust\
+    \ the volume of audio fed through it, and create another event handler that changes\
+    \ the value of the audio graph’s gain (volume) whenever the slider value is changed:\n\
+    \n```javascript\nconst gainNode = audioCtx.createGain();\nvolumeSlider.addEventListener('input',\
+    \ () => {\n  gainNode.gain.value = volumeSlider.value;\n});\n```\nThen finally\
+    \ we connect the different nodes in the audio graph up, which is done using the\
+    \ `AudioNode.connect()` method available on every node type:\n\n```javascript\n\
+    audioSource.connect(gainNode);\ngainNode.connect(audioCtx.destination);\n```\n\
+    The audio starts in the source, which is then connected to the gain node so the\
+    \ audio’s volume can be adjusted. The gain node is then connected to the destination\
+    \ node so the sound can be played on your computer (the `AudioContext.destination`\
+    \ property represents whatever is the default `AudioDestinationNode` available\
+    \ on your computer’s hardware, e.g. your speakers).\n\n### API’s have recognizable\
+    \ entry points\nWhenever you use an API, make sure you know where the entry point\
+    \ is! In the `Web Audio API` — it’s the `AudioContext` object. This needs to be\
+    \ used to do any manipulation whatsoever.\n\nWhen using the Document Object Model\
+    \ (DOM) API — its features tend to be found hanging off the `Document` object,\
+    \ or an instance of an `HTML` element that you want to affect in some way, for\
+    \ example:\n\n```javascript\n// Create a new em element\nlet em = document.createElement('em');\n\
+    \n// Reference an existing p element\nlet p = document.querySelector('p');\n\n\
+    // Give em some text content\nem.textContent = 'Hello, world!';\n\n// Embed em\
+    \ inside\np.appendChild(em);\n```\nThe `Canvas API` also relies on getting a context\
+    \ object to use to manipulate things. Its context object is created by getting\
+    \ a reference to the\n"
+  raw: '<canvas></canvas>
+
+
+    element to create 2D and 3D scenes.Audio/Video APIs: Such as HTMLMediaElement
+    and the Web Audio API. You can use these to create custom controls for playing
+    audio and video, display text tracks like captions and subtitles along with your
+    videos. For audio you can add effects to audio tracks (such as gain, distortion
+    etc).Device APIs: Are for manipulating and retrieving data from device hardware
+    to use with web apps. Such as notifying the user that an update is available. Third
+    party APIs Third party APIs are not built into the browser, and you’ll need to
+    retrieve their code and information from somewhere else. By connecting with the
+    third party API you can access and then work with the methods provided by the
+    API. Some common third party APIs are: Openweathermap.org: allows you to query
+    weather data. For example, you could capture a users location and display their
+    current temperature.Twitter API: you could display your latest tweets on your
+    website.Google Maps API: allows you to completely customize maps to include on
+    your web pages.YouTube API: allows you to embed YouTube videos on your site, search
+    YouTube and automatically generate playlists.Twilio API: this API provides a framework
+    for building voice and video call functionality into your app, sending SMS/MMS
+    from your apps, and more. So how do APIs work? Despite different APIs working
+    in different ways, they all share some common base factors which we’ll take a
+    look at now: APIs are based on objects The code you write to interact with APIs
+    will use one or more JavaScript objects. These objects serve as containers for
+    the data the API uses (contained in object properties), and the functionality
+    the API makes available (contained in object methods). Let’s take a look at an
+    example using the Web Audio API — the API consists of a number of objects. For
+    example, we have: AudioContext this represents an audio graph that can be used
+    to manipulate audio playing inside the browser, and has a number of methods and
+    properties available to manipulate that audio.MediaElementAudioSourceNode this
+    represents anelement containing sound you want to play and manipulate inside the
+    audio context.AudioDestinationNode this represents the destination of the audio,
+    i.e. the device on your computer that will actually output it — usually either
+    your speakers or headphones. How do these objects interact? Let’s look at the
+    following HTML:  1src = 2 3   We have here anelement which we use to embed our
+    MP3 into the page. We don’t include any default browser controls. Then we’ve added
+    a   Let’s see the JavaScript for this example.. We’ll start by creating an AudioContext
+    instance inside which to manipulate our track:  1 const AudioContext = || 2 3
+    const audioCtx = new  Then we’ll create constants that store references to our
+    and and use the AudioContext.createMediaElementSource() method to create an MediaElementAudioSourceNode
+    representing the source of our audio — the it will be played from:  1 const audioElement
+    = 2 const playBtn = 3 const volumeSlider = 4 5 const audioSource = 6  Next we’ll
+    include a couple of event handlers that toggle between play and pause whenever
+    the button is pressed, and reset the display back to the beginning when the song
+    has finished playing:  1 // Play + Pause audio 2 { 3   // check if context is
+    in suspended state 4 5   if === { 6     7   } 8 9  // If track is play it 10   if
+    === { 11     12     13     = 14  // If track is stop it 15 } else if === { 16     17     18     =
+    19   } 20 21 22 // If the track ends 23 { 24   25   = 26  The play() and pause()
+    methods being used are actually part of the HTMLMediaElement API, and not the
+    Web Audio API (though they’re closely-related!). Now we create a GainNode object
+    using the AudioContext.createGain() method, which can be used to adjust the volume
+    of audio fed through it, and create another event handler that changes the value
+    of the audio graph’s gain (volume) whenever the slider value is changed:  1 const
+    gainNode = 2 3 { 4   = 5 });  Then finally we connect the different nodes in the
+    audio graph up, which is done using the AudioNode.connect() method available on
+    every node type:  1 2  The audio starts in the source, which is then connected
+    to the gain node so the audio’s volume can be adjusted. The gain node is then
+    connected to the destination node so the sound can be played on your computer
+    (the AudioContext.destination property represents whatever is the default AudioDestinationNode
+    available on your computer’s hardware, e.g. your speakers). API’s have recognizable
+    entry points Whenever you use an API, make sure you know where the entry point
+    is! In the Web Audio API — it’s the AudioContext object. This needs to be used
+    to do any manipulation whatsoever. When using the Document Object Model (DOM)
+    API — its features tend to be found hanging off the Document object, or an instance
+    of an HTML element that you want to affect in some way, for example:  1 // Create
+    a new em element 2 let em = document.createElement(''em''); 3 4 // Reference an
+    existing p element 5 let p = document.querySelector(''p''); 6 7 // Give em some
+    text content 8 em.textContent = ''Hello, world!''; 9 10 // Embed em inside 11
+    p.appendChild(em);  The Canvas API also relies on getting a context object to
+    use to manipulate things. Its context object is created by getting a reference
+    to the
+
+
+    <canvas></canvas>'
+  toc: []
+  trans: "\n用于创建 2D 和 3D 场景元素。\n\n### 音频/视频 API\n例如 `HTMLMediaElement` 和 `Web Audio\
+    \ API`。你可以使用这些接口创建播放音频和视频的自定义控件，并在视频中显示说明、字幕之类的文本轨道。对于音频，你可以为音频轨道添加效果（如 `gain`、失真等）。\n\
+    \n### 设备 API\n用于操作和从设备硬件检索数据，以供 Web 应用程序使用。例如通知用户有可用更新。\n\n### 第三方 API\n第三方 API\
+    \ 并不是内置在浏览器中的，你需要从其他地方获取它们的代码和信息。通过与第三方 API 连接，你可以访问并使用该 API 提供的方法。一些常见的第三方 API\
+    \ 包括：\n\n- `Openweathermap.org`：允许你查询天气数据。例如，你可以获取用户的位置并显示其当前温度。\n- `Twitter API`：你可以在你的网站上显示你最新的推文。\n\
+    - `Google Maps API`：允许你完全自定义用于包含在你的网页中的地图。\n- `YouTube API`：允许你在你的网站上嵌入 YouTube\
+    \ 视频、搜索 YouTube 并自动生成播放列表。\n- `Twilio API`：此 API 提供了一个框架，用于在应用程序中构建语音和视频通话功能、从你的应用程序发送\
+    \ SMS/MMS 等。\n\n## 那么 API 是如何工作的？\n尽管不同的 API 工作方式不同，但它们都共享一些共同的基础因素，我们现在来看这些因素：\n\
+    \n### API 是基于对象的\n你编写的与 API 交互的代码将使用一个或多个 JavaScript 对象。这些对象作为 API 使用的数据容器（包含在对象属性中）以及\
+    \ API 提供的功能（包含在对象方法中）。让我们来看一个使用 Web Audio API 的示例——该 API 由许多对象组成。例如：\n\n- `AudioContext`：它代表一个可以操作浏览器内播放音频的音频图，并有许多可用的方法和属性来操作该音频。\n\
+    - `MediaElementAudioSourceNode`：它代表一个包含你想要在音频上下文中播放和操作的声音的元素。\n- `AudioDestinationNode`：它代表音频的终点，即你计算机上实际输出音频的设备——通常是你的扬声器或耳机。\n\
+    \n#### 这些对象是如何交互的？\n让我们看以下 HTML：\n\n```html\n<audio src=\"music.mp3\"></audio>\n\
+    ```\n在这里我们有一个元素，用它将 MP3 嵌入页面中。我们没有包含任何默认的浏览器控件。然后我们添加了一个 `<button>`。\n\n让我们看看这个示例的\
+    \ JavaScript 代码...\n我们首先内部创建一个 `AudioContext` 实例，并在其中操作我们的轨道：\n```javascript\n\
+    const AudioContext = window || {};\nconst audioCtx = new AudioContext();\n```\n\
+    然后我们将创建常量来存储对 `audioElement`、`playBtn` 以及 `volumeSlider` 的引用，并使用 `AudioContext.createMediaElementSource()`\
+    \ 方法创建一个 `MediaElementAudioSourceNode`，代表我们音频的源——音频将从这里播放：\n\n```javascript\n\
+    const audioElement = document.querySelector('audio');\nconst playBtn = document.querySelector('button');\n\
+    const volumeSlider = document.querySelector('input');\nconst audioSource = audioCtx.createMediaElementSource(audioElement);\n\
+    ```\n\n接下来，我们将包含几个事件处理器，每当点击按钮时在播放和暂停之间切换，并在歌曲播放结束时将显示重置开头：\n\n```javascript\n\
+    // 播放 + 暂停音频\nplayBtn.addEventListener('click', () => {\n  // 检查上下文是否处于挂起状态\n\
+    \  if (audioCtx.state === 'suspended') {\n    audioCtx.resume();\n  }\n  // 如果轨道正在播放则播放它\n\
+    \  if (audioElement.paused) {\n    audioElement.play();\n    playBtn.textContent\
+    \ = 'Pause';\n  } else {\n    // 如果轨道已停止则停止它\n    audioElement.pause();\n    playBtn.textContent\
+    \ = 'Play';\n  }\n});\n// 如果轨道结束\naudioElement.addEventListener('ended', () =>\
+    \ {\n  audioElement.currentTime = 0;\n  playBtn.textContent = 'Play';\n});\n```\n\
+    使用的 `play()` 和 `pause()` 方法实际上是 `HTMLMediaElement` API 的，而不是 `Web Audio API`（尽管它们密切相关！）。\n\
+    \n现在我们使用 `AudioContext.createGain()` 方法创建一个 `GainNode` 对象，它可以用于调整通过它的音频音量，并创建另一个事件处理器，每当滑块值改变时就改变音频图增益（音量）的值：\n\
+    \n```javascript\nconst gainNode = audioCtx.createGain();\nvolumeSlider.addEventListener('input',\
+    \ () => {\n  gainNode.gain.value = volumeSlider.value;\n});\n```\n最后，我们连接音频图中的不同节点，这是通过每个节点类型可用的\
+    \ `AudioNode.connect()` 方法完成的：\n\n```javascript\naudioSource.connect(gainNode);\n\
+    gainNode.connect(audioCtx.destination);\n```\n音频从源开始，然后连接到增益节点以便调整音频音量。随后，增益节点连接到目标节点，以便声音可以在你的计算机上播放（`AudioContext.destination`\
+    \ 属性代表你计算机硬件上可用的任何默认 `AudioDestinationNode`，例如你的扬声器）。\n\n### API 有可识别的入口点\n每当你使用\
+    \ API 时，请确保你知道入口在哪里！在 `Web Audio API` 中——入口是 `AudioContext` 对象。要进行任何操作都必须使用它。\n\
+    \n当使用文档对象模型 (DOM) API 时——它的功能通常存在于 `Document` 对象上，或者你想要以某种方式影响的 `HTML` 元素实例上，例如：\n\
+    \n```javascript\n// 创建一个新的 em 元素\nlet em = document.createElement('em');\n\n//\
+    \ 引用已有的 p 元素\nlet p = document.querySelector('p');\n\n// 给 em 一些文本内容\nem.textContent\
+    \ = 'Hello, world!';\n\n// 将 em 嵌入到内部\np.appendChild(em);\n```\n`Canvas API` 也依赖于获取一个上下文对象来用于操作。它的上下文对象是通过获取引用来创建的\n\
+    \n"
+- fmt: "\nelement you want to draw on, and then calling its `HTMLCanvasElement.getContext()`\
+    \ method:\n\n```javascript\n1 let canvas = document.querySelector('canvas');\n\
+    2 let ctx = canvas.getContext('2d');\n```\n\nAnything that we want to do to the\
+    \ canvas is then achieved by calling properties and methods of the context object\
+    \ (which is an instance of for example:\n\n```javascript\n1 Circle.prototype.draw\
+    \ = function() {\n2 ctx.beginPath();\n3 ctx.fillStyle = this.color;\n4 ctx.arc(this.x,\
+    \ this.y, this.size, 0, 2 * Math.PI);\n5 ctx.fill();\n6 };\n```\n\n### APIs handle\
+    \ changes in state with events\n\nWhen using the `XMLHttpRequest` object (each\
+    \ one represents an HTTP request to the server to retrieve a new resource) we\
+    \ have a number of events available, for example the load event is fired when\
+    \ a response has been successfully returned containing the requested resource,\
+    \ and it is now available.\n\nThe following code provides an example of how this\
+    \ could be used:\n\n```javascript\n1 let requestURL = 2 3 let request = new 4\n\
+    5 = 6 7 8 = { 9\n  let usernames = 10\n11\n12 }\n```\n\nThe first five lines specify\
+    \ the location of resource we want to fetch, create a new instance of a request\
+    \ object using the `XMLHttpRequest()` constructor, open an HTTP GET request to\
+    \ retrieve the specified resource, specify that the response should be sent in\
+    \ JSON format, then send the request.\n\nThe `onload` handler function then specifies\
+    \ what we do with the response. We know the response will be successfully returned\
+    \ and available after the load event has required (unless an error occurs), so\
+    \ we save the response containing the returned JSON in the `usernames` variable,\
+    \ then pass it to two different functions for further processing.\n\n**Note:**\
+    \ In the next chapter, we’re going to take a look at fetching data from a server\
+    \ in more detail.\n\n### Summary\nAnd that’s API’s in a nutshell! We’ve looked\
+    \ at what APIs are, how they work, we compared browser and third party APIs and\
+    \ finally we looked at some of the common characteristics that many APIs share.\
+    \ I hope this introduction gave you more of an understanding of what APIs are,\
+    \ and how we can use them in our projects!\n\n## Fetching data from a server\n\
+    \nIn this chapter, we’ll be looking at how we can go about retrieving data from\
+    \ a server. Modern websites and applications need to be able to do this seamlessly\
+    \ — that is, update sections of a web page without needing to reload the entire\
+    \ page. We’ll be looking at two technologies that make this possible: `XMLHttpRequest`\
+    \ and the `Fetch`.\n\n### The old way…\nPage loading on the web using old methods\
+    \ was quite simple — you would send a request for a website to a server, and if\
+    \ nothing went wrong, any assets that made up the page would be downloaded and\
+    \ displayed on your computer or device.\n\n![](image-llwgnqoj.png)\n\nThis was\
+    \ the way websites worked for years. However it had a number of flaws.. whenever\
+    \ you wanted to update any part of the page, for example, to display a new set\
+    \ of products or submit a form, the entire page had to load again. This practice\
+    \ is very resource-heavy and results in a poor UX, especially as pages grow and\
+    \ become more complex.\n\n### The solution: AJAX\nThis problem was resolved as\
+    \ technologies were created that allowed web pages to request small chunks of\
+    \ data (such as HTML, XML, JSON, or plain text) and display them only when needed.\n\
+    \nThis is achieved by using APIs like `XMLHttpRequest` or the `Fetch` API. These\
+    \ technologies allow web pages to directly handle making HTTP requests for specific\
+    \ resources available on a server and formatting the resulting data as needed\
+    \ before it is displayed.\n\nThis technique is what is called or Originally it\
+    \ mainly used `XMLHttpRequest` to request XML data (hence the “and XML”). However,\
+    \ these days you’d be more likely to use `XMLHttpRequest` or `Fetch` to request\
+    \ JSON — but the result is still the same so the term “Ajax” stuck.\n\n![](image-ftq13hmc.jpg)\n\
+    \nConceptually, Ajax involves using a web API as a proxy to more intelligently\
+    \ request data, rather than just having the browser reload the entire page.\n\n\
+    You can see it in action in just about every major website. When you play a new\
+    \ video on YouTube for example, you’ll see the navigation, header and footer sections\
+    \ don’t refresh — just the section containing the video.\n\n#### Why is this important?\n\
+    - Page updates are much faster & you’ll spend less time wait for the page to refresh,\
+    \ so the site feels faster and responsive (page speed is also very important for\
+    \ Google rankings and SEO!).\n- Less data is downloaded on each update, meaning\
+    \ less wasted bandwidth. Whilst not a huge concern on desktops, it’s a major issue\
+    \ on mobile devices especially in developing countries that don’t have fast internet.\n\
+    \n### Creating an Ajax request\nIn this section, we’re going to first use an `XMLHttpRequest`\
+    \ and then `Fetch` to perform an Ajax request.\n\n#### XMLHttpRequest\nAn `XMLHttpRequest`\
+    \ (often abbreviated to `XHR`) is actually quite an old technology now — it was\
+    \ invented in the ‘90s by Microsoft, and has been in use ever since.\n\nTo create\
+    \ an XHR request, you first need to create a new request object using the `XMLHttpRequest()`\
+    \ constructor. You can call this object anything you like, in our demo we’ll call\
+    \ it `xhr` Like so:\n\n```javascript\n1 let xhr = new XMLHttpRequest();\n```\n\
+    \nThe next step is to initialize it using the `open()` method. Here we specify\
+    \ what HTTP request method to use to request the resource from the network, as\
+    \ well as the URL where it’s located. Here we’ll use `GET` and set the URL to\
+    \ a `url` variable (which should store the address as a string).\n\nWe add this\
+    \ below the previous line:\n\n```javascript\n1 xhr.open('GET', url);\n```\n\n\
+    Next, we’ll set up the type of response we are expecting as `text`. This isn’t\
+    \ strictly necessary as XHR returns text by default — but it is a good idea to\
+    \ get into this habit as you’ll no doubt be fetching other types of data in the\
+    \ future! Now we add:\n\n```javascript\n1 xhr.responseType = 'text';\n```\n\n\
+    Whenever we fetch a resource from a network we’re performing an asynchronous operation.\
+    \ This means you have to wait for that operation to complete (while the resource\
+    \ is returned from the network) before you can do anything with that response,\
+    \ otherwise, an error will be thrown. With XHR we can handle this using the `onload`\
+    \ event handler — this runs when the load event fires (after the response has\
+    \ returned). The response data will be available in the `response` property of\
+    \ the XHR request object.\n\nNext, we create our function to handle the `onload`\
+    \ event & (in this case ) display our `xhr.response` values:\n\n```javascript\n\
+    1 let onload = function() {\n2\n3 };\n```\n\nAnd finally, we need a `send()` method\
+    \ to run the request:\n\n```javascript\n1 xhr.send();\n```\n\n#### Fetch\nThe\
+    \ `Fetch` API is a modern alternative that can serve as a replacement for XHR.\
+    \ It was built to make asynchronous HTTP requests easy to do in JavaScript. Let’s\
+    \ see a basic example of the:\n\n```javascript\n1 // Call the fetch function passing\
+    \ the url of\n2 the API as a parameter\n3 fetch(url)\n4 .then(response => {\n\
+    5 // Your code for handling the data you get from the\n6 return response.json();\n\
+    7 })\n8 .then(data => {\n9 // This is where the server returns the\n10 console.log(data);\n\
+    11 })\n```\n\nAll we are doing here is fetching the URL that we want, by default\
+    \ fetch uses the `GET` method — which is what we want in case! Let’s see some\
+    \ more fleshed out code:\n\n```javascript\n1 fetch(url)\n2 .then(response => {\n\
+    3 return response.json();\n4 })\n5 .then(data => {\n6 console.log(data);\n7 });\n\
+    ```\n\nHere we are fetching a JSON file from the URL and then printing it to the\
+    \ console. The simplest use of `fetch()` takes one argument — the path to the\
+    \ resource you want — and returns a promise containing the response (in the form\
+    \ of object). To extract the JSON body from the response, we use transform the\
+    \ response into object that we can interact with.\n\n#### Working with promises\n\
+    Like many modern APIs, Fetch uses promises. Though they are a bit confusing at\
+    \ first, don’t worry much about it for now. you’ll get used to them! Let’s look\
+    \ at the promise structure as it relates to:\n\n```javascript\n1 fetch(url)\n\
+    2 .then(response => {\n3 return response.json();\n4 })\n5 .then(data => {\n6 console.log(data);\n\
+    7 });\n```\n\nThe first line is saying “fetch the resource located our URL” and\
+    \ “then run the function when the promise resolves”. The specified operation,\
+    \ in case, is to fetch a resource from our URL (using an HTTP request) and return\
+    \ the response for us to do something. Effectively, the function passed into `then()`\
+    \ is a chunk of code that won’t run immediately. Instead, it’ll run at some point\
+    \ in the future when the response has returned.\n\n#### So technique should you\
+    \ use?\nXHR has been around for long time now and has very good cross-browser\
+    \ support. Fetch and Promises, on the other hand, are newer additions to the web\
+    \ platform, although they’re supported well the exception of Internet Explorer.\
+    \ If you need to support older browsers, then XHR solution might be preferable.\
+    \ If however you are working on more progressive project and aren’t worried about\
+    \ older browsers, then Fetch would be a good choice.\n\n### Summary\nAnd that’s\
+    \ it! We looked at how to start with AJAX using techniques as XHR and `Fetch`\
+    \ to retrieve data from a server. And we looked at basic examples of each! Hopefully,\
+    \ now you have a grasp of each\n\n## Introduction to REST APIs\n(REST) is an architectural\
+    \ style that handles the client-server relationship, with the purpose of aiming\
+    \ for speed and performance by using re-usable components. REST as a technology\
+    \ was introduced into the world in a dissertation by Roy Fielding (https://www.ics.edu/~fielding/dissertation/top.htm).\
+    \ Nowadays it is generally preferred to SOAP (Simple Object Access Protocol) as\
+    \ REST uses less bandwidth and is simpler and flexible for internet usage.\n\n\
+    ### What is a REST API?\nA REST API is a way of easily accessing web services\
+    \ without excess processing. Whenever a RESTful API is called, the server will\
+    \ transfer to the client a representation of the state of the requested resource.\
+    \ In fact, we use this just about every day! If you’re trying to find videos on\
+    \ YouTube. You’d type “biking” into the search field, hit enter, and you’ll then\
+    \ see a list of. Conceptually, a REST API works just like this! You search for\
+    \ something, and you get a list of results back from the service that you’re requesting\
+    \ from. An API is an application programming interface. It’s a set of rules that\
+    \ allow programs to communicate with each other. The developer creates the API\
+    \ on the server and allows the client to talk to it. REST is what determines how\
+    \ the API looks. It is the rules that developers follow when they create an API.\
+    \ One of these rules states that you should be able to get a piece of data (a\
+    \ resource) when you link to specific URL. Each URL is called a request while\
+    \ the data sent back to you is called a\n\n### RESTful Architecture\n- **Stateless:**\
+    \ Meaning the client data is not stored on the server, the session is stored client-side\
+    \ (typically in session storage).\n- **Client<->Server:** There is a separation\
+    \ of concerns between the front-end (client) and the back-end (server). They operate\
+    \ independently of each other and both are replaceable.\n- **Cache:** Data from\
+    \ the server can be cached on the client, which can improve performance speed.\n\
+    - **URL Composition:** We use a standardized approach to the composition of base\
+    \ URLs. For example, a `GET` request to should yield all the cities in the database,\
+    \ whereas a `GET` request to `/cities/seattle` would render the city with an ID\
+    \ of Seattle. Similarly, REST utilizes standard methods like `DELETE` and `POST`\
+    \ to perform actions.\n\nSo we can define a RESTful API as one that separates\
+    \ concerns between allows caching of data client-side and utilizes standardized\
+    \ base URLs and methods to perform the required to manipulate, add or delete data.\n\
+    \n#### REST in action\nLet’s now take a closer look at how this is done! Our request\
+    \ is sent from the client to the server via HTTP in the form of a web URL. Using\
+    \ either `GET`, `POST`, `PUT` or `DELETE`. Then a response is sent back from the\
+    \ server in the form of a resource, which could be anything like HTML, XML, Image,\
+    \ or JSON. JSON is by far the most popular format, so we’ll be using that for\
+    \ our example.\n\n![](image-t1b9wmt5.jpg)\nPhoto credit: https://antmedia.io\n\
+    \nHTTP has five methods that are commonly used in a REST-based architecture: POST`,\
+    \ `GET`, `PUT`, `PATCH`, and `DELETE`. In fact, they correspond to create, read,\
+    \ update, and delete (CRUD) operations respectively. It should also be noted that\
+    \ there are other methods that are less frequently used, such as `OPTIONS` and\
+    \ `HEAD`.\n"
+  raw: 'element you want to draw on, and then calling its HTMLCanvasElement.getContext()
+    method:  1 let canvas = document.querySelector(''canvas''); 2 let ctx = canvas.getContext(''2d'');  Anything
+    that we want to do to the canvas is then achieved by calling properties and methods
+    of the context object (which is an instance of for example:  1 Circle.prototype.draw
+    = function() { 2  ctx.beginPath(); 3  ctx.fillStyle = this.color; 4  ctx.arc(this.x,
+    this.y, this.size, 0, 2 * Math.PI); 5  ctx.fill(); 6 };  APIs handle changes in
+    state with events When using the XMLHttpRequest object (each one represents an
+    HTTP request to the server to retrieve a new resource) we have a number of events
+    available, for example the load event is fired when a response has been successfully
+    returned containing the requested resource, and it is now available. The following
+    code provides an example of how this could be used:  1 let requestURL = 2 3 let
+    request = new 4 5 = 6 7 8 = { 9  let usernames = 10  11  12 }  The first five
+    lines specify the location of resource we want to fetch, create a new instance
+    of a request object using the XMLHttpRequest() constructor, open an HTTP GET request
+    to retrieve the specified resource, specify that the response should be sent in
+    JSON format, then send the request. The onload handler function then specifies
+    what we do with the response. We know the response will be successfully returned
+    and available after the load event has required (unless an error occurs), so we
+    save the response containing the returned JSON in the usernames variable, then
+    pass it to two different functions for further processing. Note: In the next chapter,
+    we’re going to take a look at fetching data from a server in more detail. Summary And
+    that’s API’s in a nutshell! We’ve looked at what APIs are, how they work, we compared
+    browser and third party APIs and finally we looked at some of the common characteristics
+    that many APIs share. I hope this introduction gave you more of an understanding
+    of what APIs are, and how we can use them in our projects! Fetching data from
+    a server In this chapter, we’ll be looking at how we can go about retrieving data
+    from a server. Modern websites and applications need to be able to do this seamlessly
+    — that is, update sections of a web page without needing to reload the entire
+    page. We’ll be looking at two technologies that make this possible: XMLHttpRequest
+    and the Fetch The old way… Page loading on the web using old methods was quite
+    simple — you would send a request for a website to a server, and if nothing went
+    wrong, any assets that made up the page would be downloaded and displayed on your
+    computer or device. ![](image-llwgnqoj.png) This was the way websites worked for
+    years. However it had a number of flaws.. whenever you wanted to update any part
+    of the page, for example, to display a new set of products or submit a form, the
+    entire page had to load again. This practice is very resource-heavy and results
+    in a poor UX, especially as pages grow and become more complex. The solution:
+    AJAX This problem was resolved as technologies were created that allowed web pages
+    to request small chunks of data (such as HTML, XML, JSON, or plain text) and display
+    them only when needed. This is achieved by using APIs like XMLHttpRequest or the
+    Fetch API. These technologies allow web pages to directly handle making HTTP requests
+    for specific resources available on a server and formatting the resulting data
+    as needed before it is displayed. This technique is what is called or Originally
+    it mainly used XMLHttpRequest to request XML data (hence the “and XML”). However,
+    these days you’d be more likely to use XMLHttpRequest or Fetch to request JSON
+    — but the result is still the same so the term “Ajax” stuck. ![](image-ftq13hmc.jpg) Conceptually,
+    Ajax involves using a web API as a proxy to more intelligently request data, rather
+    than just having the browser reload the entire page. You can see it in action
+    in just about every major website. When you play a new video on YouTube for example,
+    you’ll see the navigation, header and footer sections don’t refresh — just the
+    section containing the video. Why is this important? Page updates are much faster
+    & you’ll spend less time wait for the page to refresh, so the site feels faster
+    and more responsive (page speed is also very important for Google rankings and
+    SEO!).Less data is downloaded on each update, meaning less wasted bandwidth. Whilst
+    not a huge concern on desktops, it’s a major issue on mobile devices especially
+    in developing countries that don’t have fast internet. Creating an Ajax request In
+    this section, we’re going to first use an XMLHttpRequest and then Fetch to perform
+    an Ajax request. XMLHttpRequest An XMLHttpRequest (often abbreviated to is actually
+    quite an old technology now — it was invented in the ‘90s by Microsoft, and has
+    been in use ever since. To create an XHR request, you first need to create a new
+    request object using the XMLHttpRequest() constructor. You can call this object
+    anything you like, in our demo we’ll call it Like so:  1 let xhr = new XMLHttpRequest();  The
+    next step is to initialize it using the open() method. Here we specify what HTTP
+    request method to use to request the resource from the network, as well as the
+    URL where it’s located. Here we’ll use the and set the URL to a url variable (which
+    should store the address as a string). We add this below the previous line:  1
+    xhr.open(''GET'', url);  Next, we’ll set up the type of response we are expecting
+    as This isn’t strictly necessary as XHR returns text by default — but it is a
+    good idea to get into this habit as you’ll no doubt be fetching other types of
+    data in the future! Now we add:  1 xhr.responseType = ''text'';  Whenever we fetch
+    a resource from a network we’re performing an asynchronous operation. This means
+    you have to wait for that operation to complete (while the resource is returned
+    from the network) before you can do anything with that response, otherwise, an
+    error will be thrown. With XHR we can handle this using the onload event handler
+    — this runs when the load event fires (after the response has returned). The response
+    data will be available in the response property of the XHR request object. Next,
+    we create our function to handle the onload event & (in this case ) display our
+    xhr.response values:  1 = { 2  3 };  And finally, we need a send() method to run
+    the request:  1  Fetch The Fetch API is a modern alternative that can serve as
+    a replacement for XHR. It was built to make asynchronous HTTP requests easy to
+    do in JavaScript. Let’s see a basic example of the syntax:  1 // Call the fetch
+    function passing the url of \ 2 the API as a parameter 3 { 4   // Your code for
+    handling the data you get from the A\ 5 PI 6 }) 7 { 8   // This is where you run
+    code if the server returns a\ 9 ny errors 10  All we are doing here is fetching
+    the URL that we want, by default fetch uses the GET method — which is what we
+    want in this case! Let’s see some more fleshed out sample code:  1 2  { 3   return
+    4  5  { 6   7    Here we are fetching a JSON file from the URL and then printing
+    it to the console. The simplest use of fetch() takes one argument — the path to
+    the resource you want to fetch — and returns a promise containing the response
+    (in the form of a JavaScript object). To extract the JSON body content from the
+    response, we use the Then we can transform the response object into an object
+    that we can interact with. Working with promises Like many modern JavaScript APIs,
+    Fetch uses promises. Though they are a bit confusing at first, don’t worry too
+    much about it for now. You’ll get used to them! Let’s look at the promise structure
+    as it relates to our Fetch request:  1 2  { 3   return 4  5  { 6   7  The first
+    line is saying “fetch the resource located our URL” and “then run the specified
+    function when the promise resolves” { ... “Resolve” means “finish performing the
+    specified operation at some point in the future”. The specified operation, in
+    this case, is to fetch a resource from our specified URL (using an HTTP request)
+    and return the response for us to do something with. Effectively, the function
+    passed into then() is a chunk of code that won’t run immediately. Instead, it’ll
+    run at some point in the future when the response has been returned. So which
+    technique should you use? XHR has been around for a long time now and has very
+    good cross-browser support. Fetch and Promises, on the other hand, are newer additions
+    to the web platform, although they’re supported well across the browser landscape,
+    with the exception of Internet Explorer. If you need to support older browsers,
+    then an XHR solution might be preferable. If however you are working on a more
+    progressive project and aren’t as worried about older browsers, then Fetch would
+    be a good choice. Summary And that’s it! We looked at how to start working with
+    AJAX using techniques such as XHR and Fetch to retrieve data from a server. And
+    we looked at basic examples of each! Hopefully, now you have a grasp of each &
+    can start incorporating async operations into your code! An Introduction to REST
+    APIs (REST) is an architectural style that handles the client-server relationship,
+    with the purpose of aiming for speed and performance by using re-usable components. REST
+    as a technology was introduced into the world in a 2000 doctoral dissertation
+    by Roy Fielding (https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm).
+    Nowadays it is generally preferred to SOAP (Simple Object Access Protocol) as
+    REST uses less bandwidth and is simpler and more flexible for internet usage.
+    We can use it to fetch or give some information from a web service, this is done
+    via an HTTP request to the REST API. What is a REST API? A REST API is a way of
+    easily accessing web services without having excess processing. Whenever a RESTful
+    API is called, the server will transfer to the client a representation of the
+    state of the requested resource. In fact, we use this just about every day! If
+    you’re trying to find videos about biking on YouTube. You’d type “biking” into
+    the YouTube search field, hit enter, and you’ll then see a list of videos about
+    biking. Conceptually, a REST API works just like this! You search for something,
+    and you get a list of results back from the service that you’re requesting from. An
+    API is an application programming interface. It’s a set of rules that allow programs
+    to communicate with each other. The developer creates the API on the server and
+    allows the client to talk to it. REST is what determines how the API looks. It
+    is the rules that developers follow when they create an API. One of these rules
+    states that you should be able to get a piece of data (a resource) when you link
+    to a specific URL. Each URL is called a request while the data sent back to you
+    is called a RESTful Architecture So what are the basic features of REST? Stateless:
+    Meaning the client data is not stored on the server, the session is stored client-side
+    (typically in session storage).Client<->Server: There is a separation of concerns
+    between the front-end (client) and the back-end (server). They operate independently
+    of each other and both are replaceable.Cache: Data from the server can be cached
+    on the client, which can improve performance speed.URL Composition: We use a standardized
+    approach to the composition of base URLs. For example, a GET request to should
+    yield all the cities in the database, whereas a GET request to /cities/seattle
+    would render the city with an ID of Seattle. Similarly, REST utilizes standard
+    methods like DELETE and POST to perform actions. Which we’ll take a look at in
+    the next section! So we can define a RESTful API as one that is it separates concerns
+    between it allows caching of data client-side and it utilizes standardized base
+    URLs and methods to perform the actions required to manipulate, add or delete
+    data. REST in action Let’s now take a closer look at how this is done! Our request
+    is sent from the client to the server via HTTP in the form of a web URL. Using
+    either GET, POST, PUT or DELETE. Then a response is sent back from the server
+    in the form of a resource, which could be anything like HTML, XML, Image, or JSON.
+    JSON is by far the most popular format, so we’ll be using that for our example. ![](image-t1b9wmt5.jpg) Photo
+    credit: https://antmedia.io HTTP has five methods that are commonly used in a
+    REST-based architecture: POST, GET, PUT, PATCH, and DELETE. In fact, they correspond
+    to create, read, update, and delete (CRUD) operations respectively. It should
+    also be noted that there are other methods that are less frequently used, such
+    as OPTIONS and HEAD. GET: This method is used to read (or retrieve) a representation
+    of a resource. If all is well, GET returns a representation in XML or JSON and
+    an HTTP response code of 200 (OK). In an error case, it most often returns a 404
+    (NOT FOUND) or 400 (BAD REQUEST).POST: This method is often utilized to create
+    new resources. In particular, it’s used to create subordinate resources. That
+    is, subordinate to some other (e.g. parent) resource. On successful creation,
+    it returns HTTP status 201, returning a location header with a link to the newly-created
+    resource with the 201 HTTP status.PUT: It’s used for updating capabilities and
+    also to create a resource (in the case where the resource ID is chosen by the
+    client instead of the server). Essentially PUT is to a URL that contains the value
+    of a non-existent resource ID. A successful update returns 200 (or 204 if not
+    returning any content in the body) from a PUT. If using PUT for create, it returns
+    HTTP status 201 on successful creation.PATCH: It’s used for modify capabilities.
+    The PATCH request only needs to contain the changes to the resource, not the complete
+    resource. This is similar to PUT, however the body contains a set of instructions
+    describing how a resource currently residing on the server should be modified
+    to produce a new version. So the PATCH body should not just be a modified part
+    of the resource but in some kind of patch language like JSON Patch or XML Patch.DELETE:
+    Fairly self-explanatory, it’s used to delete a resource identified by a URL. Upon
+    successful deletion, it returns HTTP status 200 (OK) along with a response body. Working
+    with REST data Furthermore, it has become common practice for REST APIs to also
+    return data in a standard format. As mentioned the most popular format nowadays
+    is JSON (JavaScript Object Notation). The standardization of the formatting of
+    the data is another step towards uniformity in the way resources are interacted
+    with on the web, allowing for developers to solve problems and not spend their
+    time in configuration of the basic architecture! When requesting data from an
+    API you might get back something like this:  1 { 2   title: "Hi, I am JSON", 3   content:
+    [ 4     chapter: "1", 5     page: "100", 6     firstParagraph: "I am JSON, this
+    is what I look l\ 7 ike when I am returned from an API." 8   ], 9   author: "Bruce
+    Smithesson" 10 }  This format allows for easy access to the data within JSON,
+    using dot notation such as which returns “Hi, I am JSON”. Where can you find RESTful
+    APIs? Everywhere!Twitter - https://dev.twitter.com/twitterkit/android/access-rest-apiGoogle
+    - https://developers.google.com/drive/v2/reference/Open Weather Map - https://openweathermap.org/apiYouTube
+    - https://developers.google.com/youtube/v3 Most of the popular services we use
+    daily utilize a RESTful architecture for their API service. So go forth & explore
+    the world of adding API functionality to your websites & apps! Summary And there
+    we go! We’ve taken a look at what REST is, as well as the principles which govern
+    its architecture. We’ve looked at how REST works with APIs to send and receive
+    data from client to server & back again. We’ve also taken a look at the JSON format,
+    which we’ll most often be working with when accessing and manipulating our data! Promises Promises
+    are used in JavaScript to handle asynchronous operations. They essentially represent
+    an operation that hasn’t completed yet - hence the name of ‘promise’. They simplfy
+    the process of dealing with multiple asynchronous operations, and reduce the likelihood
+    of “callback hell” which often leads to messy and unmanageable code. Why use promises? A
+    better way to handle asynchronous operationsImproved error handlingAnd, they make
+    for much cleaner code! Let’s take a look at how they work.. So a promise can be
+    thought of as a placeholder for (an unknown) value that’s expected whenever a
+    promise is created. They allow you to associate event handlers with an asynchronous
+    action’s eventual success or failure. This means that asynchronous methods return
+    values in the same manner as synchronous methods - instead of immediately returning
+    a final value, they return a promise to provide the value at some point in the
+    future. A promise can be in one of these states: the initial state, when the operation
+    hasn’t fulfilled or rejectedthe operation has successfully completedthe operation
+    has failedthe operation has either fulfilled or rejected Let’s see how to create
+    a promise:  1 let completed = 2 let promise = new { 3  // perform an action 4  if
+    { 5   6  } 7  else { 8   didn''t 9  } 10  We can see that promise constructor
+    takes one argument, a callback with two parameters, resolve and Within the callback
+    you perform your desired action (such as an ‘async’ operation), if it’s successful,
+    call if not call Note that in this example we reject with an Error object. It’s
+    not mandatory, but beneficial for certain debugging tools, as they capture a stack
+    trace. So how do we use this promise?  1 { 2  // "It worked!" 3 { 4  // "It didn''t
+    work.." 5  We can see then() takes two arguments, a callback for “success”, and
+    a callback for a “failure”. Both are entirely optional, you’re free to just add
+    a callback for either success or failure if you wish. Summary A promise is an
+    object that returns a future value. It begins in the pending state proceeds to
+    either the fulfilled state or rejected state, before being considered Async &
+    defer Whenever you load JavaScript from an HTML page, it’s important to be mindful
+    of the loading performance of the page. The page-load time largely depends on
+    where and how you add scripts to your HTML page. In this chapter, we’re going
+    to look at how we can use async and defer to control the execution order of our
+    scripts & optimize our page load speed! Today, all modern browsers support the
+    async and defer attributes on scripts. These attributes tell the browser it’s
+    safe to continue loading the page, while the scripts are being downloaded.'
+  toc: []
+  trans: "\n你想要在其上绘制的元素，然后调用其 `HTMLCanvasElement.getContext()` 方法：\n\n```javascript\n\
+    1 let canvas = document.querySelector('canvas');\n2 let ctx = canvas.getContext('2d');\n\
+    ```\n\n我们想对画布执行的任何操作，都可以通过调用上下文对象的属性和方法来实现（该对象是例如以下内容的实例）：\n\n```javascript\n\
+    1 Circle.prototype.draw = function() {\n2 ctx.beginPath();\n3 ctx.fillStyle =\
+    \ this.color;\n4 ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);\n5 ctx.fill();\n\
+    6 };\n```\n\n### APIs 通过事件处理状态更改\n\n在使用 `XMLHttpRequest` 对象（每个对象代表一个向服务器的 HTTP\
+    \ 请求，以获取新资源）时，我们有许多可用事件，例如，当成功返回包含请求资源的响应且该资源现在可用时，会触发 `load` 事件。\n\n以下代码提供了一个关于如何使用它的示例：\n\
+    \n```javascript\n1 let requestURL = 2 3 let request = new 4\n5 = 6 7 8 = { 9\n\
+    \  let usernames = 10\n11\n12 }\n```\n\n前五行指定了我们想要获取的资源的位置，使用 `XMLHttpRequest()`\
+    \ 构造函数创建一个请求新实例，打开一个 HTTP GET 请求来获取指定的资源，指定响应应以 JSON 格式发送，然后发送请求。\n\n`onload`\
+    \ 处理程序函数接着指定了我们对响应进行的操作。我们知道在 `load` 事件触发后，响应将成功返回并可用（除非发生错误），因此我们将包含返回的 JSON\
+    \ 的响应保存到 `usernames` 变量中，然后将其传递给两个不同的函数进行进一步处理。\n\n**注意：** 在下一章节中，我们将更详细地查看如何从服务器获取数据。\n\
+    \n### 总结\n这就是 API 的概览！我们查看了 API 是什么、它们如何工作，比较了浏览器 API 和第三方 API，最后我们查看了许多 API 共享的一些共同特征。我希望这段介绍能让你对\
+    \ API 是什么以及我们如何在项目中使用它们有更深入的理解\n\n## 从服务器获取数据\n\n在这一章中，我们将研究如何从服务器检索数据。现代网站和应用程序需要无缝地做到这一点——也就是说，在不需要重新加载整个的情况下更新\
+    \ web 页面的部分。我们将查看两种使这成为可能的技术：`XMLHttpRequest` 和 `Fetch`。\n\n### 旧方法……\n使用旧方法在\
+    \ Web 上加载页面非常简单——你向服务器发送一个网站的请求，如果没有出错，任何组成页面的资产都将下载并显示在你的计算机或设备上。\n\n![](img/image-llwgnqoj.png)\n\
+    \n这是多年来网站的工作方式。然而，它有许多缺陷……每当你想更新页面的任何部分时，例如显示一组新产品或提交表单，整个页面都必须重新加载。这种做法非常消耗资源，并导致糟糕的用户体验（UX），特别是随着页面变大并变得越来越复杂。\n\
+    \n### 解决方案：AJAX\n随着技术的出现，这个问题得到了解决，这些技术允许网页请求小块状的数据（如 HTML、XML、JSON 或纯文本）并仅在需要时显示它们。\n\
+    \n这是通过使用如 `XMLHttpRequest` 或 `Fetch` API API 实现的。这些技术允许网页直接处理对服务器上可用特定资源的 HTTP\
+    \ 请求，并在显示之前根据需要对结果数据进行格式化。\n\n这种技术被称为 Ajax，最初它主要使用 `XMLHttpRequest` 请求 XML 数据（因此有“and\
+    \ XML”）。然而，如今你更有可能使用 `XMLHttpRequest` 或 `Fetch` 来请求 JSON ——但结果仍然相同，所以“Ajax”这个词留了下来。\n\
+    \n![](img/image-ftq13hmc.jpg)\n\n从概念上说，Ajax 涉及使用 Web API 作为代理来更智能地请求数据，而不是仅仅让浏览器加载整个页面。\n\
+    \n你可以在几乎每个主要网站上看到它的实际运行。例如，当你在 YouTube 上播放新视频时，你会发现导航、页眉和页脚部分没有刷新——只有包含视频的区域。\n\
+    \n#### 为什么这很重要？\n- 页面更新快得多，你等待页面刷新的时间更短，因此网站感觉更快、响应更快（页面速度对于 Google 排名和 SEO 也很重要！）。\n\
+    - 每次更新下载的数据较少，意味着浪费的带宽减少。虽然在桌面上不是大问题，但在没有快速互联网的发展中国家的移动设备上，这是一个大问题。\n\n### 创建\
+    \ Ajax 请求\n在本节中，我们将首先使用 `XMLHttpRequest`，然后使用 `Fetch` 来执行 Ajax 请求。\n\n#### XMLHttpRequest\n\
+    `XMLHttpRequest`（通常缩写为 `XHR`）现在实际上是一项相当老的技术了——它由微软在 90 年代发明，并从那时一直使用。\n\n要创建一个\
+    \ XHR 请求，你首先需要使用 `XMLHttpRequest()` 构造函数创建一个新的请求对象。你可以给此对象起任何名字，在我们的演示中，我们将命名为\
+    \ `xhr`。如下：\n\n```javascript\n1 let xhr = new XMLHttpRequest();\n```\n\n下一步是使用\
+    \ `open()` 方法初始化它。在这里，我们指定使用哪种 HTTP 请求方法从网络请求资源，以及它所在的 URL。在这里我们将使用 `GET` 并将 URL\
+    \ 设置为变量 `url`。我们在上一行下面添加：\n\n```javascript\n1 xhr.open('GET', url);\n```\n\n接下来，我们将预期的响应类型设置为\
+    \ `text`。这并不是严格必要的，因为 XHR 默认返回文本——但养成这个习惯是个好主意，因为将来无疑会获取其他类型的数据！现在我们添加：\n\n```javascript\n\
+    1 xhr.responseType = 'text';\n```\n\n每当我们从网络获取资源时，我们都在执行一个异步操作。这意味着你必须等待该操作完成（当资源从网络返回时）才能对该响应进行任何操作，否则将抛出错误。使用\
+    \ XHR 我们可以使用 `onload` 事件处理这一点——当 `load` 事件触发时（响应返回后）。响应数据将在 XHR 对象的 `response`\
+    \ 属性可用。接下来，我们创建函数来处理 `onload` 事件：\n\n```javascript\n1 let onload = function()\
+    \ {\n2 };\n```\n\n最后我们需要一个 `send()` 方法来运行请求：\n\n```javascript\n1 xhr.send();\n\
+    ```\n\n#### Fetch\n`Fetch` API 是一种现代替代方案，可以作为 XHR 的替换。它是为了在 JavaScript 中轻松执行异步请求而构建的。让我们看一个简单的示例：\n\
+    \n```javascript\n1 // 调用 fetch 函数，将 url 作为参数\n3 fetch(url)\n4 .then(response =>\
+    \ {\n5 // 处理从 API 获取的数据\n6 return response.json();\n7 })\n8 .then(data => {\n\
+    9 // 这是服务器返回\n10 console.log(data);\n11 })\n```\n\n我们在这里所做的是获取 URL，默认使用 `GET`\
+    \ 方法——这就是我们要！让我们看到更详细的代码：\n\n```javascript\n1 fetch(url)\n2 .then(response =>\
+    \ {\n3 // 从响应中提取 JSON 体\n4 return response.json();\n5 })\n6 .then(data => {\n\
+    7 // 然后打印到控制台\n8 console.log(data);\n9 });\n```\n\n在这里我们从 URL 获取一个 JSON 文件并将其打印到控制台。`fetch()`\
+    \ 最简单的用法接收一个参数——所需的资源路径——并返回一个包含响应的 promise（对象形式）。\n\n#### 使用 promises\n与许多现代\
+    \ API 一样，Fetch 使用 promises。虽然它们起初有点困惑，但现在不用太担心，你会习惯的！让我们看看与其相关的 promise 结构：\n\n\
+    ```javascript\n1 fetch(url)\n2 .then(response => {\n3 return response.json();\n\
+    4 })\n5 .then(data => {\n6 console.log(data);\n7 });\n```\n\n第一行的意思是“获取位于 URL\
+    \ 的资源”，“并在当 promise 解析时运行函数”。指定的运行时是从 URL 获取资源（使用 HTTP 请求）并返回响应以便执行某些操作。有效来说，传递给\
+    \ `then()` 的函数是一个立即运行的代码。相反，它将在未来响应返回的某点运行。\n\n#### 所以你应该使用哪种技术？\nXHR 已经存在很长时间了，并且具有良好的浏览器支持。另一方面，Fetch\
+    \ 和 Promises 是 Web 平台较新的添加，尽管它们在 Internet Explorer 之外支持良好。如果你需要支持旧浏览器，那么 XHR 方案可能是更好的。然而，如果你在一个更先进的项目上并且不担心旧浏览器，那么\
+    \ Fetch 将是一个很好的选择。\n\n### 总结\n就这样！我们查看了如何使用 XHR 和 `Fetch` 技术通过 AJAX 从服务器检索数据。我们查看了每个技术的示例示例！希望现在你已经掌握了每一个\n\
+    \n## REST APIs 简介\n(REST) 是一种处理客户端-服务器关系的架构风格，目的是通过使用可重用组件追求速度和性能。REST 作为一种技术通过\
+    \ Roy Fielding 的论文（https://www.ics.edu/~fielding/dissertation/top.htm）引入世界。现在通常认为优于\
+    \ SOAP（简单对象访问协议），因为 REST 使用的带宽更少，对于互联网使用来说更简单灵活。\n\n### 什么是 REST API？\nREST API\
+    \ 是一种易于访问 Web 服务的方法，无需额外的处理。每当调用 RESTful API 时，服务器将向客户端传输请求资源状态的表示。事实上，我们几乎每天都在使用它！如果你尝试在\
+    \ YouTube 上寻找视频。你会在搜索框中输入“biking”，按回车，然后你会看到一个列表。从概念上说，REST API 的工作方式就是这样！你搜索某些内容，然后从你请求的服务返回结果列表。API\
+    \ 是应用程序编程接口。它是一组允许程序相互通信的规则集。开发者在服务器上创建 API 并允许客户端与其通信。REST 决定了 API 的外观。它是开发者在创建\
+    \ API 时遵循的规则。其中一个规则规定，当你链接到特定 URL 时，你应该能够获取数据数据（资源）。每个 URL 被称为请求，而返回给你的数据被称为一个\n\
+    \n### RESTful 架构\n- **无状态**：意味着服务器不存储客户端数据，会话存储在客户端（通常会话存储中）。\n- **客户端<->服务器**：前端（客户端）和后端（服务器）之间存在关注分离。它们独立运行且都是可替换的。\n\
+    - **缓存**：来自服务器的数据可以在客户端缓存，这可以提高性能。\n- **URL 组合**：我们使用标准的基 URL 组合。例如，`GET` 请求将产生数据库中的所有城市，而对\
+    \ `/cities/seattle` 请求将渲染 ID 为 Seattle 的城市。同样，REST 利用标准方法如 `DELETE` 和 `POST` 来执行操作。\n\
+    \n#### REST 的运行\n让我们更仔细地查看它是如何执行的！我们的请求通过 HTTP 以 Web URL 的形式从客户端发送到服务器。使用 `GET`、`POST`、`PUT`\
+    \ 或 `DELETE`。然后从服务器返回响应，可以是任何内容如 HTML、XML、图像或 JSON。JSON 是目前最流行的格式，所以我们将使用它作为示例。\n\
+    \nHTTP 有五种在 REST 架构中常用的方法：POST、`GET`、`PUT`、`PATCH` 和 `DELETE`。事实上，它们分别对应创建、读取、更新和删除\
+    \ (CRUD) 操作。还应该注意，还有其他较不常用的方法，如 `OPTIONS` 和 `HEAD`。\n\n"

@@ -1,0 +1,1829 @@
+![](Images/cover00083.jpeg)
+
+JAVASCRIPT
+
+PROGRAMMING BASICS
+
+STEP BY STEP GUIDE FOR BEGINNERS
+
+JAKE BOND
+
+[Javascript Tutorial](#part0002.xhtml__Toc85825258)
+
+[Javascript Example](#part0003.xhtml__Toc85825259)
+
+[Javascript comment](#part0004.xhtml__Toc85825260)
+
+[Javascript Variable](#part0005.xhtml__Toc85825261)
+
+[Javascript Data Types](#part0006.xhtml__Toc85825262)
+
+[Javascript Operators](#part0007.xhtml__Toc85825263)
+
+[Logical Operators](#part0007.xhtml__Toc85825264)
+
+[Javascript If Else](#part0008.xhtml__Toc85825265)
+
+[Javascript Switch Statement](#part0009.xhtml__Toc85825266)
+
+[Javascript loop](#part0010.xhtml__Toc85825267)
+
+[do while loop](#part0010.xhtml__Toc85825268)
+
+[JavaScript Function](#part0011.xhtml__Toc85825269)
+
+[Function with arguments](#part0011.xhtml__Toc85825270)
+
+[Javascript Object](#part0012.xhtml__Toc85825271)
+
+[Javascript array](#part0013.xhtml__Toc85825272)
+
+[Javascript String](#part0014.xhtml__Toc85825273)
+
+Javascript Tutorial
+
+This JavaScript lesson makes it simple for both beginners and experts to learn JavaScript.
+
+What is JavaScript and how does it work?
+
+JavaScript is a dynamic programming language for computers. It is a lightweight and cross-platform object-based scripting language.
+
+With the aid of JavaScript, we can make our website more vibrant and engaging.
+
+Brendan Eich, a Netscape employee, designed it in 1995.
+
+It's a programming language that's used to make interactive websites. It's most commonly used for::
+
+• Validation on the client's end.
+
+• Its drop-down menus are dynamic.
+
+• It shows the current date and time.
+
+• Before transferring data to a server, validate user input in an HTML form.
+
+• Create forms that respond to user input without requiring a connection to a server.
+
+• Install new windows or frames and close them.
+
+• Using popup windows and dialog boxes to display information.
+
+(for example, an alert dialog box, a confirm dialog box, or a prompt dialog box)
+
+• Create client-side programs that are small but complete.
+
+• Clocks and other timepieces
+
+• Game and app development for mobile devices.
+
+Features of Javascript
+
+• JavaScript is a scripting language that is based on objects.
+
+• The language is case sensitive.
+
+• It's light in weight.
+
+• In JavaScript, every statement must be followed by a semicolon (;).
+
+Advantages of Javascript
+
+• JavaScript is a scripting language that is interpreted. There is no need for a compiler because there is no compilation process. JavaScript is interpreted by the browser as HTML tags.
+
+• JavaScript is a simple programming language. It is very simple to learn for anyone. It's used to create dynamic and appealing websites.
+
+• Because JavaScript is run on the client side, it lowers the load on the website server.
+
+• It includes conditional checking, loops, and branching functionality that can be used in web pages.
+
+• For the end user, JavaScript is relatively quick. They don't have to wait for the page to reload to see if they missed something.
+
+• Web pages now have more functionality. To provide our site visitors with more functionality, we can use JavaScript to include drag-and-drop components and sliders.
+
+JavaScript Example
+
+<h2>Welcome to JavaScript</h2>    
+
+<script>    
+
+document.write("Hello JavaScript by TutorialandExample");    
+
+</script>
+
+Output
+
+Welcome to JavaScript
+
+Hello JavaScript by TutorialandExample
+
+Javascript Example
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<h2>Welcome to JavaScript</h2>  
+
+<script>  
+
+document.write("Hello Friends");  
+
+</script>  
+
+</body>  
+
+</html>
+
+Output
+
+Welcome to JavaScript
+
+Hello Friends
+
+JavaScript can be implemented by including JavaScript statements in the code.
+
+<script>…</script>.
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script type= "text/javascript">  
+
+document.write("Hello World");  
+
+</script>  
+
+</body>  
+
+</html>
+
+Output
+
+Hello World
+
+In JavaScript, code may be written in three places.
+
+1.  Between the <body>……</body> tag of HTML.
+2.  Between the <head>……</head> tag of HTML.
+3.  In .jsfile(external JavaScript).
+
+As an illustration (code between the body tags)
+
+In the example below, the body tag contains JavaScript code.
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script type="text/javascript">  
+
+alert("Hello world");  
+
+</script>  
+
+</body>  
+
+</html>
+
+Example2
+
+(between the head tag, the code)
+
+We'll create the function msg in the example below (). In JavaScript, you must write function in function name to define a function. To invoke a function, we must first create an event. We're using the one-click event to call the msg() function in this case.
+
+<!DOCTYPE html>  
+
+<html>  
+
+<head>  
+
+<script type="text/javascript">  
+
+function msg(){  
+
+alert("Hello world");  
+
+}  
+
+</script>  
+
+</head>  
+
+<body>  
+
+<p>Welcome to Javascript</p>  
+
+<form>  
+
+<input type="button" value="click" onclick="msg()"/>  
+
+</form>  
+
+</body>  
+
+</html
+
+External JavaScript file
+
+We can create a JavaScript file that we can include in HTML files.
+
+Because a single JavaScript file may be used in multiple HTML pages, it allows for code reuse.
+
+It improves the web page's performance.
+
+The file must have a.js extension.
+
+Example
+
+<!DOCTYPE html>  
+
+<html>  
+
+<head>  
+
+<script type="text/javascript" src="message.js"></script>  
+
+</head>  
+
+<body>  
+
+<p>Hello world</p>  
+
+<form>  
+
+<input type="button" value="click" onclick="msg()"/>  
+
+</form>  
+
+</body>  
+
+</html>
+
+Javascript comment
+
+Comments in JavaScript are used to describe the code. It's used to include code-related information, such as warnings or suggestions, so that end users can understand it.
+
+JavaScript comments Types
+
+1.  Single-line Comment
+2.  Multi-line Comment
+
+Single-line Comment
+
+Double forward slashes (//) are used to express single-line comments. While the program is running, any text between the double forward slashes (//) and the end of the line will be ignored.
+
+eg. Comment added - before the statement.
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script>  
+
+// single-line comment //  
+
+document.write("hello world");  
+
+</script>  
+
+</body>  
+
+</html>
+
+eg. Comment added - after the statement.
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script>  
+
+var a=10; 
+
+var b=20;  
+
+var c=a+b; //It add values of a and b variable  
+
+document.write(c); // print sum of 10 and 20  
+
+</script>  
+
+</body>  
+
+</html>
+
+Output
+
+30
+
+Multi-line comment
+
+Single and multi-line comments can both be made with multi-line comments. Comments that span multiple lines begin with /* and conclude with */. JavaScript will ignore the text in between them.
+
+/* Write comment here */
+
+Example
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script>  
+
+/* It is multi-line comment.  
+
+It will not be displayed */  
+
+document.write ("Example of JavaScript multi line comment");  
+
+</script>  
+
+</body>  
+
+</html>
+
+Javascript Variable
+
+Values (name=”Ram”) and expressions (Sum=x+y) are stored in variables.
+
+We must first declare a variable before utilizing it. To declare a variable, we use the term var as follows:
+
+var name;
+
+There are 2 types of variables:
+
+1.  Local Variable
+2.  Global Variable
+
+Local Variable– It's declared inside a function or a block.
+
+Example
+
+##### <script>  
+
+##### functionabc(){  
+
+##### var x=10; //local variable  
+
+##### </script>
+
+Global Variable- It has a global scope, meaning that it can be defined anywhere in JavaScript code.
+
+Outside of the function, a variable is declared.
+
+Example
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script>  
+
+var data =200; //global variable  
+
+function a(){  
+
+document.writeln(data);  
+
+}  
+
+function b(){  
+
+document.writeln(data);  
+
+}  
+
+a();//calling javascript function  
+
+b();  
+
+</script>  
+
+</body>  
+
+</html>
+
+In JavaScript, declaring a global variable within a function
+
+To declare a JavaScript global variable inside a function, we must use the window object.
+
+Example
+
+##### window.value=90;
+
+It can now be declared within any function and accessed from within any function.
+
+Example
+
+<!DOCTYPE html>  
+
+<html>  
+
+<body>  
+
+<script>  
+
+function a(){  
+
+window.value=50; //declare global variable by use of window object  
+
+}  
+
+function b(){  
+
+alert(window.value);//access global variable from other function  
+
+}  
+
+a();  
+
+b();      
+
+</script>  
+
+</body>  
+
+</html>
+
+Javascript Data Types
+
+It has a variety of data types to hold various types of values.
+
+In Javascript, there are two sorts of data types.
+
+1.  Primitive data types.
+2.  Non-primitive data types.
+
+Because JavaScript is a dynamic type language, we don't need to define the type of variable because the JavaScript engine uses it dynamically. The data type is specified using var in this case. It may store any type of value, including numbers, strings, and objects.
+
+Example
+
+##### var a=Ram; //String   
+
+##### var b=20; //Number  
+
+##### var x= {FirstName:''Ram'', lastName:''Doe''}; //Object
+
+JavaScript - primitive data types
+
+In JavaScript, there are five different types of primitive data types.
+
+![](Images/image00068.jpeg)
+
+JavaScript non-primitive data types
+
+There is 3 non-primitive data types are as follows:
+
+![](Images/image00069.jpeg)
+
+Javascript Operators
+
+Operators are symbols in JavaScript that are used to perform operations on operands. 3+2 equals 5 in simple terms. The operands here are 3 and 2, and the operator is +.
+
+The JavaScript operators are as follows:
+
+1.  Arithmetic Operators.
+2.  Comparison (relational) Operators.
+3.  Bitwise Operators.
+4.  Logical Operators.
+5.  Assignment Operators.
+6.  Special Operators.
+
+Arithmetic Operators
+
+We employ arithmetic operations on the operands in arithmetic operators.
+
+![](Images/image00070.jpeg)
+
+Comparison Operators
+
+In the Comparison Operator, two operands A and B are compared.
+
+![](Images/image00071.jpeg)
+
+Assignment operator
+
+JavaScript support following - assign operators.
+
+![](Images/image00072.jpeg)
+
+Bitwise Operators
+
+JavaScript supports following - bitwise operators:
+
+![](Images/image00073.jpeg)
+
+Logical Operators
+
+Boolean values are commonly utilized with logical operators.
+
+Following are the - logical operators-
+
+![](Images/image00074.jpeg)
+
+Javascript If Else
+
+A conditional statement in JavaScript is used to conduct different activities depending on the criteria.
+
+In JavaScript, there are three types of statements.
+
+1.  if Statement.
+2.  if else Statement.
+3.  if else if Statement.
+
+if statement
+
+If the condition is true or false, the if statement is used in JavaScript to run the function.
+
+##### if (condition){ //   
+
+#####     //content to be evaluated
+
+##### }
+
+![Image 1.jpg](Images/image00075.jpeg)
+
+Example:-
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var x=50;  
+
+##### if(x>30){  
+
+##### document.write("value of x is greater than 30");  
+
+##### }  
+
+##### </script >  
+
+##### </body>  
+
+##### </html>
+
+output
+
+Value of x is greater than 30
+
+if else statement
+
+If either condition is true or false, the if else statement is used.
+
+Syntax
+
+##### if(condition)  
+
+##### {  
+
+##### // set of statements  
+
+##### }  
+
+##### else  
+
+##### {  
+
+##### // set of statements  
+
+##### }
+
+![Image 2.jpg](Images/image00076.jpeg)
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var x=20;  
+
+##### if(x%2==0){  
+
+##### document.write("x is even number");  
+
+##### }  
+
+##### else{  
+
+##### document.write("a is odd number")  
+
+##### }  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+X is even number
+
+If else if
+
+It merely looks at the content to see if the expression is true across many expressions. If otherwise if is a more complex version of the if else statement.
+
+Syntax
+
+##### If (condition1)  
+
+##### {  
+
+##### Statement(s) to be executed if condition 1 is true  
+
+##### }  
+
+##### else if (condition 2)  
+
+##### {  
+
+##### Statement(s) to be executed if condition 2 is true  
+
+##### }  
+
+##### else if (condition 3)  
+
+##### {  
+
+##### Statement(s) to be executed if condition 3 is true  
+
+##### }  
+
+##### else  
+
+##### {     
+
+##### Statement(s) to be executed if no condition is true  
+
+##### }
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var x=50;  
+
+##### if (x==10){  
+
+##### document.write("x is equal to 10");  
+
+##### }  
+
+##### else if(x==50){  
+
+##### document.write("x is equal to 50");  
+
+##### }  
+
+##### else if(x==30){  
+
+##### document.write("x is equal to 30");  
+
+##### }  
+
+##### else{  
+
+##### document.write("a is not equal to 10, 50 or 30");  
+
+##### }     
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+x is equal to 50
+
+Javascript Switch Statement
+
+In JavaScript, the switch statement is used to execute a single code under several conditions. It's the same as the else if statement, but it's easier to remember than the if..else..if statement.
+
+![Image 3.jpg](Images/image00077.jpeg)
+
+Syntax
+
+##### switch (expression)  
+
+##### {  
+
+##### case 1: statement(s)  
+
+##### break;  
+
+##### case 2: statement(s)  
+
+##### break;  
+
+##### â€¦..  
+
+##### case n: statement(s)  
+
+##### break;  
+
+##### default: statements(s)  
+
+##### }
+
+NOTE: In switch-case statements, the break statement is very important.
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var grade='B';  
+
+##### var result;  
+
+##### switch(grade){  
+
+##### case 'A':  
+
+##### result="A Grade";  
+
+##### break;  
+
+##### case 'B':  
+
+##### result="B Grade";  
+
+##### break;  
+
+##### case 'C':  
+
+##### result="C Grade";  
+
+##### break;  
+
+##### default:  
+
+##### result="No Grade";  
+
+##### }  
+
+##### document.write(result);  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+B Grade
+
+Javascript loop
+
+Because the method of repeating forms a circle, repetition statements are referred to as loops. We use Loop statements to decrease the amount of lines in some cases. It's most commonly seen in Array.
+
+In JavaScript, there are three different forms of loops.
+
+1.  while loop
+2.  for loop
+3.  do-while loop
+
+while loop
+
+The code is performed in a while loop until the expression is true. If the number of iterations is unknown, it should be utilized.
+
+![Image 4.jpg](Images/image00078.jpeg)
+
+Syntax
+
+##### while (condition){  
+
+##### statement(s) executed if expression is true  
+
+##### }
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var i=1;  
+
+##### while (i<=10)  
+
+##### {  
+
+##### document.write(i+ "<br/>");  
+
+##### i++;  
+
+##### }   
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+For loop
+
+It initialized the variable, checked the condition, and then incremented or decremented the value in the for loop.
+
+It runs for a fixed amount of time.
+
+![Image 5.jpg](Images/image00079.jpeg)
+
+Syntax
+
+##### for (initialization; condition; increment)  
+
+##### {  
+
+##### code to be executed  
+
+##### }
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### for (i=1; i<=12; i++)  
+
+##### {  
+
+##### document.write(i + "<br/>")  
+
+##### }  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+do while loop
+
+While a while loop executes items indefinitely, a do while loop executes code only once, regardless of whether the condition is true or false. We utilize do-while when we need to repeat the statement block at least once.
+
+![Image 6.jpg](Images/image00080.jpeg)
+
+Syntax
+
+##### do{  
+
+##### code to be executed  
+
+##### increment/decrement  
+
+##### }  
+
+##### while (condition);
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var i=11;  
+
+##### do{  
+
+##### document.write(i + "<br/>");   
+
+##### i++;  
+
+##### }while (i<=15);  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+11
+12
+13
+14
+15
+
+JavaScript Function
+
+The ability to define new functions within the Script>...../script> tag is an important feature of JavaScript. The function keyword is used to declare a function in JavaScript.
+
+To reuse the code, we call the JavaScript method numerous times.
+
+Advantages - JavaScript functions
+
+1\. Code reusability: We use the same method several times to save time and code.
+
+2\. Less coding: Our application is compressed as a result of this. When we conduct a routine task, we don't write a lot of code.
+
+Syntax
+
+##### function functionName(parameter or not)  
+
+##### {  
+
+##### statements  
+
+##### }
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### function msg()  
+
+##### {  
+
+##### alert("Hello! world");  
+
+##### }  
+
+##### </script>  
+
+##### <input type="button" onclick="msg()" value="click here"/>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Hello world!
+
+Function with arguments
+
+Call function by passing arguments.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### function getcube(number)  
+
+##### {  
+
+##### alert(number* number* number);  
+
+##### }  
+
+##### </script>  
+
+##### <form>  
+
+##### <input type="button" value="click" onclick="getcube(3)"/>  
+
+##### </form>  
+
+##### </body>  
+
+##### </html>
+
+#### Output
+
+27
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### function getname()  
+
+##### {  
+
+##### name=prompt("Enter the Name");  
+
+##### alert("Welcome Mr/Mrs " + name);  
+
+##### }  
+
+##### </script>  
+
+##### </body>  
+
+##### <form>  
+
+##### <input type="button" value="Click" onclick="getname()"/>  
+
+##### </form>  
+
+##### </html>
+
+Function with return value
+
+Call function that - return value and - use it in program.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### function getInfo()  
+
+##### {  
+
+##### return "Hello Raj! How are you?";  
+
+##### }  
+
+##### </script>  
+
+##### <script>  
+
+##### document.write(getInfo());  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Hello Raj! How are you?
+
+The Function() Constructor
+
+A function statement isn't just for defining new functions; it may also be used to define functions dynamically using the Function() constructor and the new operator.
+
+Syntax
+
+##### <script>  
+
+#####     var variablename = new Function(Arg1, Arg2...,  "Function Body" );   
+
+##### </script>
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <head>  
+
+##### <script>  
+
+##### var func = new Function("a", "b", "return a+b;");  
+
+##### function secondFunction(){  
+
+##### var result;  
+
+##### result = func(50,50);  
+
+##### document.write ( result );  
+
+##### }  
+
+##### </script>  
+
+##### </head>  
+
+##### <body>  
+
+##### <p>Click button to call the function</p>  
+
+##### <form>  
+
+##### <input type="button" onclick="secondFunction()" value="Call Function">  
+
+##### </form>  
+
+##### <p>Use different parameters inside the function and try yourself...</p>  
+
+##### </body>  
+
+##### </html>
+
+Function Literals
+
+The concept of function literals, which is another way to construct functions, is introduced in JavaScript 1.2\. It's an expression that defines a function that doesn't have a name.
+
+The syntax for a function literal is similar to that of a function statement, except that it is used as an expression rather than a statement, and there is no need for a function name.
+
+Syntax
+
+##### <script>  
+
+##### var variablename = function (Argument List){  
+
+#####           Function Body  
+
+##### };    
+
+##### </script>
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <head>  
+
+##### <script>  
+
+##### var func = function(a,b){ return a+b };  
+
+##### function secondFunction(){  
+
+##### var result;  
+
+##### result = func(10,20);  
+
+##### document.write ( result );  
+
+##### }  
+
+##### </script>  
+
+##### </head>  
+
+##### <body>  
+
+##### <p>Click the button to call the function</p>  
+
+##### <form>  
+
+##### <input type="button" onclick="secondFunction()" value="Call Function">  
+
+##### </form>  
+
+##### <p>Use different parameters inside the function and try yourself...</p>  
+
+##### </body>  
+
+##### </html>
+
+Javascript Object
+
+An object is a state-and-behavioral entity. JavaScript is a scripting language that focuses on objects. Although JavaScript is template-based rather than class-based, it allows us to create objects directly.
+
+Syntax - to add property - to add object
+
+##### objectName.objectProperty = propertyValue;
+
+##### We use the write() method to document objects to write any content on the document.
+
+##### Document.write("Hello world")
+
+Example
+
+#### The following example
+
+###### shows how to - create an Object.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <head>  
+
+##### <title>User-defined objects</title>  
+
+##### <script type="text/javascript">  
+
+##### var book = new Object();   // Object created  
+
+##### book.subject = "5 points someone"; // Properties assign to the object  
+
+##### book.author  = "ChetanBhagat";  
+
+##### </script>  
+
+##### </head>  
+
+##### <body>  
+
+##### <script type="text/javascript">  
+
+##### document.write("Book Name is : " + book.subject + "<br>");  
+
+##### document.write("Book Author is : " + book.author + "<br>");  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Book Name is : 5 points someone
+Book Author is : ChetanBhagat
+
+Methods of an Object
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <head>  
+
+##### <title>User-defined objects</title>  
+
+##### <script type="text/javascript">// Define a function which will work as a method  
+
+##### function addPrice(amount){  
+
+##### this.price = amount;   
+
+##### }  
+
+##### function book(title, author){  
+
+##### this.itle = title;  
+
+##### this.author  = author;  
+
+##### this.addPrice = addPrice; // Assign that method as property.  
+
+##### }  
+
+##### </script>  
+
+##### </head>  
+
+##### <body>  
+
+##### <script type="text/javascript">  
+
+##### varmyBook = new book("5 Points Someone", "ChetanBhagat");  
+
+##### myBook.addPrice(150);  
+
+##### document.write("Book Title is : " + myBook.title + "<br>");  
+
+##### document.write("Book Author is : " + myBook.author + "<br>");  
+
+##### document.write("Book Price is : " + myBook.price + "<br>");  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Book Title is: 5 Points Someone
+
+Book Author is :ChetanBhagat
+
+Book Price is : 150
+
+Javascript array
+
+Arrays are used to represent a collection of elements in a single unit or memory region.
+
+Every element that enters the array will be stored in the array with a unique index starting at zero. We can store data with the help of indexes.
+
+In JavaScript, we must use the new keyword to declare an array. We use new Array to construct an array (n).
+
+The number of slots in the array is denoted by n.
+
+Syntax
+
+myarray = new array(n);
+
+NOTE: We construct array objects with zero size whenever we build an array in JavaScript without specifying the size.
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var i;  
+
+##### var emp = new Array();  
+
+##### emp[0] = "Ajay";  
+
+##### emp[1] = "Abhay";  
+
+##### emp[2] = "Arun";  
+
+##### emp[3] = "Shipra";  
+
+##### for (i=0; i<emp.length; i++)  
+
+##### {  
+
+##### document.write(emp[i] + "<br>");  
+
+##### }  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Ajay
+Abhay
+Arun
+Shipra
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <head>  
+
+##### <script type="text/javascript">  
+
+##### function array()  
+
+##### {  
+
+##### num = new Array(5)  
+
+##### num[0] = 10  
+
+##### num[1] = 20  
+
+##### num[2] = 30  
+
+##### num[3] = 40  
+
+##### num[4] = 50  
+
+##### sum = 0;  
+
+##### for (i=0; i<num.length; i++)  
+
+##### {  
+
+##### sumsum = sum + num[i];  
+
+##### }  
+
+##### alert(sum)  
+
+##### }  
+
+##### </script>  
+
+##### </head>  
+
+##### <body>  
+
+##### <input type="button" onclick="array()" value="click here">  
+
+##### </body>  
+
+##### </html>
+
+Functions used in Array
+
+![](Images/image00081.jpeg)
+
+Javascript String
+
+The String object is used to work with a string of characters. It's a tool for storing and manipulating text.
+
+In JavaScript, there are two ways to make a string:
+
+1.  String literal.
+2.  Using new keyword.
+
+String literal
+
+String literals are created by using double quotes.
+
+Syntax
+
+var stringname="string value";
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var str="Hello String Literal";  
+
+##### document.write(str);   
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+##### Output
+
+Hello String Literal
+
+Using new keyword
+
+Syntax
+
+var stringname=new String("new keyword")
+
+Example
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var stringname=new String("Hello String");  
+
+##### document.write(stringname);  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+Output
+
+Hello String
+
+String properties
+
+There is a list of string object properties as well as their descriptions.
+
+1.  constructor.
+2.  length.
+3.  prototype.
+
+Constructor– It gives you a reference to the string function that made the object in the first place.
+
+Syntax
+
+string.constructor
+
+Length- The number of characters in a string is returned.
+
+Syntax
+
+string.length
+
+Prototype– It let any object to have properties and methods added to it.(Number, Boolean, string, and data etc.).
+
+This is a global property that most objects have access to.
+
+Syntax
+
+object.prototype.name = value
+
+Methods are also available in the JavaScript string:
+
+![](Images/image00082.jpeg)
+
+charAt()
+
+It's a method for getting the character from a given index.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var str = new String( "Hello" );  
+
+##### document.writeln("str.charAt(0) is: " + str.charAt(0));   
+
+##### document.writeln("<br />str.charAt(1) is: " + str.charAt(1));   
+
+##### document.writeln("<br />str.charAt(2) is: " + str.charAt(2));   
+
+##### document.writeln("<br />str.charAt(3) is: " + str.charAt(3));   
+
+##### document.writeln("<br />str.charAt(4) is: " + str.charAt(4));   
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+concat(str)
+
+This method returns a new string after adding two or more strings.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>    
+
+##### var x="Hello";    
+
+##### var y="World";    
+
+##### var z=x+y;    
+
+##### document.write(z);    
+
+##### </script>    
+
+##### </body>  
+
+##### </html>
+
+#### Here another
+
+### example of conct(str)
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var a = new String( "Hello" );  
+
+##### var b = new String( "Friends" );  
+
+##### var c = a.concat( b );  
+
+##### document.write("Concatenated String : " + c);   
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+indexOf(str)
+
+index of a string The index position of the given string is returned by the Of(str) method.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>    
+
+##### var x="Tutorial provide by tutorialandexample";    
+
+##### var y=x.indexOf("by");    
+
+##### document.write(y);    
+
+##### </script>    
+
+##### </body>  
+
+##### </html>
+
+lastindexOf(str)
+
+The string lastIndexOf(str) method returns the string's last index point.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>    
+
+##### var x="Tutorial provide by tutorialExamole";    
+
+##### var y=x.lastIndexOf("by");    
+
+##### document.write(n);    
+
+##### </script>    
+
+##### </body>  
+
+##### </html>
+
+match()
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var str = "To more detail, see Chapter 2.5.4.1";  
+
+##### var re = /(chapter \d+(\.\d)*)/i;  
+
+##### var find = str.match( re );  
+
+##### document.write(find );   
+
+##### </script>  
+
+##### </body>  
+
+##### </html>
+
+toLowerCase()
+
+The specified string is returned as lowercase letters.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>    
+
+##### var x="HELLO WORLD";    
+
+##### var y=x.toLowerCase();    
+
+##### document.write(y);    
+
+##### </script>    
+
+##### </body>  
+
+##### </html>
+
+toUpperCase()
+
+The specified string is returned in uppercase characters.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>    
+
+##### var x="hello world";    
+
+##### var y=x.toUpperCase();    
+
+##### document.write(y);    
+
+##### </script>    
+
+##### </body>  
+
+##### </html>
+
+valueOf()
+
+It returns the string object's primitive value.
+
+##### <!DOCTYPE html>  
+
+##### <html>  
+
+##### <body>  
+
+##### <script>  
+
+##### var str = new String("Hello world");  
+
+##### document.write(str.valueOf( ));  
+
+##### </script>  
+
+##### </body>  
+
+##### </html>

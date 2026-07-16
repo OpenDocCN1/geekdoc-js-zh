@@ -1,0 +1,2 @@
++   [初学者 24 小时学会 Django：使用 HTML、CSS、JavaScript、Python 和 Django Web 框架构建 Web 应用的简单、易懂指南](README.md)
++   [初学者 24 小时学会 Django：使用 HTML、CSS、JavaScript、Python 和 Django Web 框架构建 Web 应用的简单、易懂指南](learn-django-in-24-hours-for-beginners-simple-concise-easy-g_0.md)

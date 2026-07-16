@@ -1,0 +1,98 @@
+name: JavaScript Fundamentals
+name_cn: JavaScript 入门指南
+slug: javascript-fundamentals
+toc:
+- - '#'
+  - JavaScript 入门指南
+- - '#'
+  - JavaScript 基础
+- - '##'
+  - 什么是 JAVASCRIPT？
+- - '###'
+  - JavaScript 的两种类型
+- - '###'
+  - JavaScript 与 Java
+- - '###'
+  - JavaScript 和 Java 的区别
+- - '###'
+  - JavaScript 版本历史
+- - '###'
+  - JavaScript 的组成
+- - '##'
+  - 在网页中嵌入 JavaScript
+- - '###'
+  - 步骤
+- - '##'
+  - 核心术语
+- - '##'
+  - 操作 JavaScript
+- - '###'
+  - 语句
+- - '###'
+  - 条件语句
+- - '###'
+  - 循环语句
+- - '###'
+  - 值
+- - '###'
+  - 运算符
+- - '###'
+  - 赋值运算符
+- - '###'
+  - 位运算符
+- - '###'
+  - 比较运算符
+- - '###'
+  - 条件运算符
+- - '###'
+  - 逻辑运算符
+- - '##'
+  - 关键字与注释
+- - '###'
+  - JavaScript 关键字
+- - '###'
+  - 保留字
+- - '###'
+  - 注释
+- - '####'
+  - 编写 JavaScript 的提示
+- - '##'
+  - JavaScript 数据类型
+- - '###'
+  - JavaScript 数字
+- - '###'
+  - JavaScript 布尔值
+- - '###'
+  - JavaScript 数字
+- - '###'
+  - JavaScript Null
+- - '###'
+  - JavaScript Void
+- - '###'
+  - 复合类型
+- - '####'
+  - 函数
+- - '##'
+  - 对象
+- - '###'
+  - 属性
+- - '###'
+  - 方法
+- - '##'
+  - HTML DOM
+- - '##'
+  - JavaScript 对象层次结构
+- - '###'
+  - Window 对象
+- - '###'
+  - Window 方法
+- - '##'
+  - JavaScript 数组
+- - '##'
+  - JavaScript 事件
+- - '##'
+  - AJAX 与 CSS
+- - '##'
+  - 在线资源
+- - '##'
+  - 通知与免责声明

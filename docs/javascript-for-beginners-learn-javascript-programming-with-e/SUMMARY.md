@@ -1,0 +1,2 @@
++   [JavaScript 初学者指南：用一半倍的时间轻松 JavaScript 编程：你需要了解的所有语言、编码、编程和网页知识](README.md)
++   [JavaScript 初学者指南：用一半倍的时间轻松 JavaScript 编程：你需要了解的所有语言、编码、编程和网页知识](javascript-for-beginners-learn-javascript-programming-with-e_0.md)

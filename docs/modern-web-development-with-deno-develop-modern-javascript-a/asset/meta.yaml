@@ -1,0 +1,413 @@
+name: MODERN WEB DEVELOPMENT WITH DENO ： develop modern javascript and typescript
+  code with svelte,... react, and graphql
+name_cn: Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL 现代现代 JavaScript 和 TypeScript 代码
+slug: modern-web-development-with-deno-develop-modern-javascript-a
+toc:
+- - '#'
+  - Deno 现代 Web 开发：使用 Svelte、React 和 GraphQL
+- - '#'
+  - 现代 JavaScript 和 TypeScript 代码
+- - '#'
+  - 献给
+- - '#'
+  - 关于作者
+- - '#'
+  - 关于评审员
+- - '#'
+  - 致谢
+- - '#'
+  - 前言
+- - '#'
+  - 彩色图片
+- - '#'
+  - '[[`rebrand.ly/nbyzlk9`](](https://rebrand.ly/nbyzlk9)'
+- - '#'
+  - 盗版
+- - '#'
+  - 如果您兴趣成为作者
+- - '#'
+  - 评论
+- - '#'
+  - 第一章 (#toc.xhtml_c01)
+- - '##'
+  - Deno 之之旅 (#toc.xhtml_c01)
+- - '###'
+  - 引言 (#toc.xhtml_s1a)
+- - '###'
+  - 结构 (#toc.xhtml_s2a)
+- - '###'
+  - 目标 (#toc.xhtml_s3a)
+- - '###'
+  - 介绍 Deno (#toc.xhtml_s4a)
+- - '###'
+  - Node 革命 (#toc.xhtml_s5a)
+- - '###'
+  - 无处处 JavaScript
+- - '###'
+  - 异步与事件驱动架构
+- - '###'
+  - 开源与跨平台
+- - '###'
+  - 高性能
+- - '###'
+  - 用于处理依赖的 Node 包管理器 (npm)
+- - '###'
+  - 事件循环 (#toc.xhtml_s6a)
+- - '###'
+  - Deno 与 Node 的比较 (#toc.xhtml_s7a)
+- - '###'
+  - Deno 特性
+- - '###'
+  - Deno 基础栈
+- - '###'
+  - Google 开发的 V8 引擎
+- - '###'
+  - Rust
+- - '###'
+  - Tokio I/O 库
+- - '###'
+  - 什么是 JavaScript 引擎
+- - '###'
+  - 什么是 JavaScript 运行时
+- - '###'
+  - 总结
+- - '#'
+  - 第二章](#toc.xhtml_c02)
+- - '##'
+  - TypeScript 简介](#toc.xhtml_c02)
+- - '###'
+  - 简介](#toc.xhtml_s16a)
+- - '###'
+  - 结构](#toc.xhtml_s17a)
+- - '###'
+  - 目标](#toc.xhtml_s18a)
+- - '###'
+  - 介绍 TypeScript](#toc.xhtml_s19a)
+- - '###'
+  - TypeScript 的优势](#toc.xhtml_s20a)
+- - '###'
+  - TypeScript 特性](#toc.xhtml_s21a)
+- - '###'
+  - TypeScript 基础](#toc.xhtml_s22a)
+- - '###'
+  - 基本类型](#toc.xhtml_s23a)
+- - '###'
+  - 接口 (Interfaces](#toc.xhtml_s24a)
+- - '###'
+  - 可选属性](#toc.xhtml_s25a)
+- - '###'
+  - 只读属性](#toc.xhtml_s26a)
+- - '###'
+  - 类型别名 (Type aliases](#toc.xhtml_s27a)
+- - '####'
+  - 联合类型 (Unions)
+- - '####'
+  - 与接口（interfaces）功能相似
+- - '##'
+  - 接口 (Interfaces) 与 类型别名 (type aliases)
+- - '##'
+  - 类型推断 (Type inference)
+- - '###'
+  - 显式类型
+- - '####'
+  - 隐式类型
+- - '##'
+  - 类型断言 (Type assertions)
+- - '###'
+  - '`as` 语法'
+- - '###'
+  - 尖括号 <> 语法
+- - '##'
+  - 联合类型 (Unions)
+- - '##'
+  - 交叉类型 (Intersections)
+- - '##'
+  - 类 (Classes)
+- - '###'
+  - 修饰符 (Modifiers)
+- - '####'
+  - public
+- - '####'
+  - private
+- - '####'
+  - protected
+- - '###'
+  - Getter 和 Setter
+- - '###'
+  - 静态 (Static)
+- - '###'
+  - 抽象 (Abstract)
+- - '###'
+  - 静态类型与动态类型
+- - '###'
+  - 强类型与弱类型
+- - '###'
+  - 强类型 (Python)
+- - '###'
+  - 弱类型 (JavaScript)
+- - '##'
+  - TypeScript 安装
+- - '###'
+  - tsconfig.json
+- - '###'
+  - 总结
+- - '##'
+  - 结构
+- - '##'
+  - 目标
+- - '##'
+  - 安装 Deno
+- - '##'
+  - 开发工具
+- - '###'
+  - 终端 (Terminal)
+- - '###'
+  - zsh + oh my zsh
+- - '###'
+  - Vim
+- - '###'
+  - VS Code
+- - '###'
+  - VS Code 插件
+- - '###'
+  - Git 和 GitHub
+- - '###'
+  - Postman
+- - '###'
+  - Docker
+- - '###'
+  - Silver Searcher
+- - '###'
+  - Docker Compose
+- - '##'
+  - 数据库
+- - '###'
+  - PostgreSQL
+- - '###'
+  - '`Install postgres`'
+- - '##'
+  - MongoDB 和 MongoDB Atlas
+- - '##'
+  - Redis
+- - '##'
+  - Heroku
+- - '###'
+  - 注册 Heroku
+- - '###'
+  - Heroku CLI
+- - '##'
+  - Tmux
+- - '##'
+  - 番茄工作法
+- - '##'
+  - 总结
+- - '#'
+  - 第 4 章
+- - '##'
+  - Deno 生态系统
+- - '###'
+  - 引言
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - Deno CLI
+- - '###'
+  - 环境变量
+- - '###'
+  - 子命令
+- - '###'
+  - 传递参数
+- - '###'
+  - 文件监听
+- - '###'
+  - 权限标志
+- - '###'
+  - Deno 运行时 API
+- - '###'
+  - Web APIs
+- - '###'
+  - Deno 全局 APIs
+- - '###'
+  - 变量
+- - '###'
+  - 类
+- - '###'
+  - Deno 模块
+- - '###'
+  - 标准库
+- - '###'
+  - 第三方模块
+- - '###'
+  - deps.ts 中的中心依赖
+- - '###'
+  - 结论
+- - '#'
+  - 第 5 章
+- - '##'
+  - Todos 应用—API
+- - '###'
+  - 简介
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 引入 Aleph.js
+- - '###'
+  - 特性
+- - '###'
+  - 命令行界面
+- - '###'
+  - 概念
+- - '###'
+  - 页面
+- - '###'
+  - 示例：
+- - '###'
+  - 路由
+- - '###'
+  - 应用程序接口 (API)
+- - '###'
+  - 初始化应用
+- - '###'
+  - 项目结构
+- - '###'
+  - Todos API
+- - '###'
+  - '[POST]'
+- - '###'
+  - 结论
+- - '#'
+  - 第 6 章
+- - '##'
+  - Todos App—UI 实现
+- - '###'
+  - 引言
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - Styled components
+- - '###'
+  - 创建 Todos 组件
+- - '###'
+  - TodoList
+- - '###'
+  - TodoDetails
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 引入 GraphQL
+- - '###'
+  - 特性
+- - '###'
+  - 精确获取
+- - '###'
+  - 单一 API 端点
+- - '###'
+  - 验证与类型检查
+- - '###'
+  - 片段 (Fragments)
+- - '###'
+  - 自动生成的 API 文档
+- - '###'
+  - 核心概念
+- - '###'
+  - Schema
+- - '###'
+  - Type
+- - '###'
+  - Input
+- - '###'
+  - Query
+- - '###'
+  - Mutation
+- - '###'
+  - Relationship
+- - '###'
+  - Resolver
+- - '###'
+  - Oak framework
+- - '###'
+  - Oak-GraphQL middleware
+- - '###'
+  - 结论
+- - '#'
+  - 第 8 章
+- - '##'
+  - 电话录应用—API 实现
+- - '###'
+  - 引言
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 初始化设置
+- - '###'
+  - 使用 git 进行版本控制
+- - '###'
+  - Trex 作为包管理器
+- - '###'
+  - Velociraptor 作为脚本运行器
+- - '###'
+  - Oak GraphQL 设置
+- - '##'
+  - scripts.yaml
+- - '###'
+  - 模式 (Schema)
+- - '##'
+  - 数据库设置
+- - '###'
+  - 模型
+- - '###'
+  - 控制器
+- - '###'
+  - '认证 '
+- - '###'
+  - 总结
+- - '#'
+  - 第 9 章
+- - '##'
+  - 通讯录应用 - UI 实现
+- - '###'
+  - 引言
+- - '###'
+  - 结构
+- - '###'
+  - 目标
+- - '###'
+  - 初始设置
+- - '###'
+  - Snell 设置
+- - '###'
+  - Snell Carbon 安装
+- - '###'
+  - '路由 '
+- - '###'
+  - Login
+- - '###'
+  - Register
+- - '###'
+  - Home (首页)
+- - '###'
+  - NotFound (未找到)
+- - '###'
+  - Private route (私有路由)
+- - '##'
+  - ContactTable
+- - '###'
+  - 布局
+- - '###'
+  - Header
+- - '###'
+  - SideNav
+- - '###'
+  - 结论
+- - '###'
+  - 索引

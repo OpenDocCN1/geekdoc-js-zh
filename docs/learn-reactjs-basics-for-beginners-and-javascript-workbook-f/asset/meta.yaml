@@ -1,0 +1,271 @@
+name: LEARN REACTJS BASICS： FOR BEGINNERS AND JAVASCRIPT WORKBOOK FOR EXAMS AND INTERVIEWS：
+  FAST AND EASY WAY TO LEARN CODING BASICS
+name_cn: 学习 ReactJS 基础：初学者指南及考试面试 JavaScript 练习册：快速轻松地学习编程基础
+slug: learn-reactjs-basics-for-beginners-and-javascript-workbook-f
+toc:
+- - '#'
+  - 学习 ReactJS 基础：初学者指南及考试面试
+- - '##'
+  - ReactJS 简介
+- - '##'
+  - React 环境搭建分步指南
+- - '###'
+  - ReactJS 准备工作
+- - '####'
+  - '两种方式 - 安装 ReactJS:'
+- - '####'
+  - 使用 `npm` 命令
+- - '####'
+  - 第 10 步：配置编译器、加载器和 React 服务器
+- - '###'
+  - index.html 的 HTML webpack 模板
+- - '###'
+  - 创建 `.babelrc` 文件
+- - '##'
+  - React JSX
+- - '###'
+  - 为什么使用 JSX？
+- - '###'
+  - JSX 中的嵌套元素
+- - '###'
+  - JSX 属性
+- - '###'
+  - JavaScript 表达式
+- - '##'
+  - Functional Components
+- - '###'
+  - Example
+- - '##'
+  - Class Components
+- - '###'
+  - Example
+- - '##'
+  - ReactJS 的优缺点
+- - '###'
+  - ReactJS 的优点
+- - '###'
+  - ReactJS 的缺点
+- - '##'
+  - ReactJS 的特性
+- - '##'
+  - JSX
+- - '##'
+  - 单向数据绑定
+- - '##'
+  - 虚拟 DOM
+- - '##'
+  - 简单性
+- - '##'
+  - 组件
+- - '##'
+  - 性能
+- - '##'
+  - React 与 Vue 的比较
+- - '##'
+  - ReactJS vs AngularJS
+- - '###'
+  - AngularJS
+- - '####'
+  - AngularJS 的特性
+- - '###'
+  - ReactJS
+- - '####'
+  - ReactJS 的特性
+- - '##'
+  - 性能
+- - '##'
+  - AngularJS 与 ReactJS 的对比
+- - '##'
+  - React Native vs ReactJS
+- - '###'
+  - React Native 与 ReactJS 之间的区别
+- - '###'
+  - React Native
+- - '###'
+  - React Native 的优势
+- - '###'
+  - React Native 的缺点
+- - '##'
+  - ReactJS
+- - '###'
+  - ReactJS 的益处
+- - '###'
+  - ReactJS 的缺点
+- - '##'
+  - React State (状态)
+- - '###'
+  - 定义状态 (Defining the State)
+- - '###'
+  - 示例：
+- - '###'
+  - 更改状态 (Changing the State)
+- - '###'
+  - 示例：
+- - '##'
+  - React Props (属性)
+- - '###'
+  - 默认 Props (Default Props)
+- - '###'
+  - 示例：
+- - '##'
+  - State and Props (状态与属性)
+- - '###'
+  - 示例：
+- - '##'
+  - React Props Validation (属性验证)
+- - '###'
+  - 验证 Props (Validating Props)
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '###'
+  - Main.js
+- - '##'
+  - ReactJS Props 校验
+- - '##'
+  - React 组件 API
+- - '###'
+  - findDOMNode()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '###'
+  - setState()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '###'
+  - forceUpdate()
+- - '###'
+  - 语法：
+- - '###'
+  - 示例：
+- - '##'
+  - 组件生命周期
+- - '##'
+  - 初始化阶段
+- - '##'
+  - 挂载阶段
+- - '##'
+  - 更新阶段
+- - '##'
+  - 卸载阶段
+- - '###'
+  - 示例
+- - '##'
+  - React 构造函数
+- - '###'
+  - 什么是构造函数？
+- - '###'
+  - 语法
+- - '###'
+  - 示例：
+- - '##'
+  - 箭头函数
+- - '###'
+  - 示例：
+- - '#'
+  - JAVASCRIPT 练习题与面试
+- - '###'
+  - 将每个单词的首字母大写
+- - '###'
+  - 小时分钟
+- - '###'
+  - 计数元音
+- - '###'
+  - 创建新字符串
+- - '###'
+  - 拼接两个字符串（排除第一个字符）
+- - '###'
+  - 第一个未重复的字符
+- - '##'
+  - 查找字符串中最长的单词
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 统计字符串中元音的数量
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 检查数字是否为质数
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 'JavaScript: 获取数据类型'
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 从数组中找出第二小和第二大的数字
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 相加两位正整数的两个数字之和
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 闰年检查
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 检查给定的正数
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 以 'Java' 开头 - 否则 false
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 两个给定的整数 - 检查
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 查找距离 100 的值
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 正数 - 检查
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '##'
+  - 两个数字的乘法和除法
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出
+- - '##'
+  - 转换温度
+- - '###'
+  - HTML 代码
+- - '###'
+  - JAVASCRIPT 代码
+- - '###'
+  - 输出

@@ -1,0 +1,627 @@
+name: Mastering JavaScript： A Complete Programming Guide Including jQuery, AJAX, Web
+  Design, Scripting and Mobile Application Development
+name_cn: 精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发
+slug: mastering-javascript-a-complete-programming-guide-including-
+toc:
+- - '#'
+  - 精通 JavaScript：完整编程指南，包含 jQuery、AJAX、Web 设计、脚本编写和移动应用开发
+- - '###'
+  - 多行模板字符串字量
+- - '####'
+  - 多行
+- - '####'
+  - 嵌入表达式
+- - '##'
+  - 国际化
+- - '###'
+  - 格式化数据和时间
+- - '###'
+  - 格式化数字
+- - '###'
+  - 使用括号
+- - '####'
+  - 与正则表达式配合工作
+- - '###'
+  - 括号分组子字符串匹配
+- - '###'
+  - 使用标志的高级搜索
+- - '###'
+  - 更改输入字符串中的顺序
+- - '##'
+  - 索引集合
+- - '###'
+  - 数组对象
+- - '###'
+  - 创建数组
+- - '####'
+  - 注意
+- - '###'
+  - 数组填充
+- - '####'
+  - 注意
+- - '###'
+  - 引用其他元素
+- - '###'
+  - 理解数组长度
+- - '###'
+  - 遍历数组
+- - '###'
+  - 数组方法
+- - '###'
+  - 多维数组
+- - '###'
+  - 数组与正则表达式
+- - '###'
+  - 操作类数组对象
+- - '###'
+  - 类型数组 (Typed Arrays)
+- - '####'
+  - 类型数组架构 – 缓冲区与视图
+- - '####'
+  - ArrayBuffer
+- - '####'
+  - 类型数组视图
+- - '###'
+  - 键值集合 (Keyed Collections)
+- - '####'
+  - Map
+- - '####'
+  - Map 与 对象
+- - '####'
+  - WeakMap 对象
+- - '###'
+  - Set (集合)
+- - '###'
+  - 数组与 Set 之间的转换
+- - '###'
+  - 比较数组和 Set
+- - '###'
+  - WeakSet 对象
+- - '###'
+  - Map 和 Set 的键/值相等性
+- - '##'
+  - 使用对象
+- - '###'
+  - 对象
+- - '###'
+  - 对象和属性
+- - '##'
+  - 创建新对象
+- - '##'
+  - 使用对象初始化器
+- - '##'
+  - 使用构造函数
+- - '##'
+  - 使用 Object.create
+- - '###'
+  - 对象的属性索引
+- - '###'
+  - 继承
+- - '###'
+  - 定义对象类型属性
+- - '###'
+  - 方法定义
+- - '###'
+  - 使用 this 关键字引用对象
+- - '###'
+  - 定义 Getter（访问器）和 Setter（赋值器）
+- - '###'
+  - 删除属性
+- - '##'
+  - 比较对象
+- - '##'
+  - 对象模型
+- - '##'
+  - 基于类的语言与基于原型的语言区别
+- - '##'
+  - 定义类
+- - '##'
+  - 子类与继承
+- - '##'
+  - 添加和删除属性
+- - '##'
+  - 员工层级
+- - '##'
+  - 创建层级
+- - '###'
+  - JavaScript
+- - '###'
+  - Java
+- - '###'
+  - JavaScript
+- - '###'
+  - Java
+- - '###'
+  - 对象层次结构
+- - '###'
+  - 对象属性
+- - '####'
+  - 继承属性
+- - '####'
+  - 添加属性
+- - '####'
+  - 灵活构造函数
+- - '###'
+  - JavaScript
+- - '###'
+  - Java
+- - '###'
+  - JavaScript
+- - '###'
+  - Java
+- - '###'
+  - JavaScript
+- - '###'
+  - Java
+- - '###'
+  - 本地值 vs 继承值
+- - '###'
+  - 确定实例关系
+- - '###'
+  - 在构造函数中使用全局信息
+- - '###'
+  - 多重继承
+- - '##'
+  - Promises
+- - '###'
+  - 保证
+- - '###'
+  - 链式调用
+- - '###'
+  - Catch 之后的链式调用
+- - '###'
+  - 错误传播
+- - '###'
+  - 围绕旧版 API 创建 Promise
+- - '###'
+  - 组合
+- - '###'
+  - 这里的时机 (Timing)
+- - '###'
+  - 嵌套 (Nesting)
+- - '###'
+  - 常见错误 (Common Mistakes)
+- - '###'
+  - 迭代器与生成器 (Iterators and Generators)
+- - '###'
+  - 迭代器 (Iterators)
+- - '###'
+  - 可迭代对象 (Iterables)
+- - '####'
+  - 用户自定义可迭代对象
+- - '####'
+  - 内置可迭代对象
+- - '####'
+  - 期望可迭代对象的语法
+- - '###'
+  - 高级生成器 (Advanced Generators)
+- - '####'
+  - 元编程 (Meta Programming)
+- - '####'
+  - 代理 (Proxies)
+- - '####'
+  - 术语 (Terminology)
+- - '####'
+  - 处理器与陷阱 (Handlers and Traps)
+- - '###'
+  - 可撤销代理 (Revocable Proxy)
+- - '###'
+  - 反射 (Reflection)
+- - '###'
+  - 更好的 Apply (A Better Apply)
+- - '###'
+  - 检查属性定义的成功情况
+- - '##'
+  - Note
+- - '##'
+  - JSON 的结构
+- - '##'
+  - 作为 JSON 的数组
+- - '##'
+  - 其他需要了解的知识
+- - '##'
+  - 一个 JSON 示例
+- - '##'
+  - 开始
+- - '##'
+  - 获取 JSON
+- - '##'
+  - 填充页眉 (Populating the Header)
+- - '##'
+  - 创建信息卡片 (Creating Information Cards)
+- - '###'
+  - 注意 (Note)
+- - '###'
+  - 为球体建模
+- - '###'
+  - 绘制球
+- - '###'
+  - 让球体动起来
+- - '###'
+  - 添加碰撞检测
+- - '##'
+  - 添加更多功能
+- - '###'
+  - 项目计划
+- - '###'
+  - 创建新对象
+- - '###'
+  - 定义恶性圆 (The Evil Circle)
+- - '###'
+  - EvilCircle() 方法
+- - '####'
+  - '`draw()`'
+- - '####'
+  - '`checkBounds()`'
+- - '####'
+  - '`setControls()`'
+- - '####'
+  - '`collisionDetect()`'
+- - '###'
+  - 分数计数器 (The Score Counter)
+- - '##'
+  - Web API (Client-side Web APIs)
+- - '###'
+  - Web API 简介 (Introduction to the Web API)
+- - '###'
+  - 在客户端 JavaScript 中使用 APIs
+- - '####'
+  - 浏览器 APIs
+- - '####'
+  - 第三方 APIs
+- - '###'
+  - JavaScript、JavaScript 工具与 APIs 之间的关系
+- - '###'
+  - API 能做什么
+- - '###'
+  - 第三方 API
+- - '###'
+  - 注意
+- - '###'
+  - 事件用于处理状态的变化
+- - '###'
+  - 需要时的额外安全机制
+- - '##'
+  - 第 2 部分：掌握 jQuery
+- - '###'
+  - 什么是 jQuery？
+- - '###'
+  - jQuery 可以用于什么？
+- - '###'
+  - 使用 jQuery 的优势
+- - '##'
+  - 本节涵盖内容
+- - '###'
+  - 入门
+- - '###'
+  - 通过 CDN 使用 jQuery
+- - '###'
+  - 让我们创建一个 jQuery 网页
+- - '##'
+  - jQuery 语法
+- - '###'
+  - 标准语法
+- - '###'
+  - 解释
+- - '##'
+  - 注意
+- - '##'
+  - jQuery 选择器
+- - '##'
+  - 提示
+- - '###'
+  - 使用 ID 选择
+- - '###'
+  - 通过类名选择
+- - '###'
+  - 通过名称选择
+- - '###'
+  - 通过属性选择
+- - '###'
+  - 组合 CSS 选择
+- - '###'
+  - 自定义选择器
+- - '##'
+  - jQuery 事件
+- - '###'
+  - 鼠标事件
+- - '####'
+  - 点击 (Click)
+- - '####'
+  - 双击 (dblclick)
+- - '####'
+  - 悬停 (hover)
+- - '###'
+  - mouseenter()
+- - '###'
+  - mouseleave()
+- - '###'
+  - 键盘事件
+- - '####'
+  - keypress()
+- - '####'
+  - keydown()
+- - '####'
+  - keyup()
+- - '###'
+  - 表单事件
+- - '####'
+  - change()
+- - '####'
+  - focus()
+- - '####'
+  - blur()
+- - '####'
+  - submit()
+- - '###'
+  - 文档和窗口事件
+- - '####'
+  - ready()
+- - '####'
+  - resize()
+- - '####'
+  - scroll()
+- - '###'
+  - Note
+- - '###'
+  - toggle()
+- - '##'
+  - jQuery 淡入淡出效果
+- - '###'
+  - fadeIn() 和 fadeOut 方法
+- - '###'
+  - Note
+- - '###'
+  - jQuery fadeToggle() 方法
+- - '##'
+  - jQuery 滑动效果
+- - '###'
+  - jQuery slideUp() 和 slideDown()
+- - '###'
+  - jQuery slideToggle() 方法
+- - '##'
+  - jQuery 动画效果
+- - '###'
+  - jQuery animate() 方法
+- - '##'
+  - 多属性的同步动画
+- - '###'
+  - 队列动画
+- - '###'
+  - 使用相对值
+- - '###'
+  - 使用预定义值
+- - '##'
+  - jQuery 停止动画
+- - '###'
+  - jQuery stop() 方法
+- - '###'
+  - 创建平滑悬停效果
+- - '##'
+  - jQuery 链式调用
+- - '##'
+  - jQuery 回调
+- - '###'
+  - jQuery 回调函数
+- - '####'
+  - Note
+- - '##'
+  - jQuery Getter 和 Setter (Getters and Setters)
+- - '###'
+  - jQuery 获取或设置内容和值
+- - '###'
+  - jQuery text() 方法
+- - '####'
+  - Note
+- - '####'
+  - Note
+- - '###'
+  - jQuery html() 方法
+- - '####'
+  - Note
+- - '###'
+  - jQuery attr() 方法
+- - '####'
+  - Note
+- - '###'
+  - jQuery val() 方法
+- - '####'
+  - Note
+- - '##'
+  - jQuery 插入内容
+- - '###'
+  - jQuery 插入新内容
+- - '###'
+  - jQuery append() 方法
+- - '####'
+  - Note
+- - '###'
+  - jQuery `prepend()` 方法
+- - '###'
+  - 使用 `append()` 和 `prepend()` 多个元素
+- - '###'
+  - jQuery `before()` 方法
+- - '####'
+  - Note
+- - '###'
+  - jQuery `after()` 方法
+- - '###'
+  - 使用 `before()` 和 `after()` 插入多个元素
+- - '###'
+  - jQuery `wrap()` 方法
+- - '##'
+  - jQuery 移除元素和属性
+- - '###'
+  - jQuery `empty()` 方法
+- - '####'
+  - Note
+- - '###'
+  - jQuery `remove()` 方法
+- - '###'
+  - jQuery `unwrap()` 方法
+- - '###'
+  - jQuery `removeAttr()` 方法
+- - '##'
+  - jQuery 添加和移除 CSS 类
+- - '###'
+  - jQuery `addClass()` 方法
+- - '##'
+  - 介绍
+- - '##'
+  - jQuery removeClass() 方法
+- - '##'
+  - jQuery toggleClass() 方法
+- - '##'
+  - jQuery 获取和设置 CSS 属性
+- - '###'
+  - css() 方法
+- - '###'
+  - 设置单个 CSS 属性和值
+- - '###'
+  - 设置多个 CSS 属性和值
+- - '##'
+  - jQuery 尺寸
+- - '###'
+  - jQuery `width()` 和 `height()` 方法
+- - '####'
+  - Note 事项
+- - '###'
+  - jQuery `innerWidth()` 和 `innerHeight()` 方法
+- - '###'
+  - jQuery `outerWidth()` 和 `outerHeight()` 方法
+- - '##'
+  - jQuery 遍历 (Traversing)
+- - '###'
+  - 什么是遍历？
+- - '##'
+  - 注意
+- - '##'
+  - 遍历 DOM 树
+- - '##'
+  - jQuery 遍历祖先
+- - '###'
+  - jQuery parent() 方法
+- - '###'
+  - jQuery parents() 方法
+- - '###'
+  - jQuery parentsUntil() 方法
+- - '##'
+  - 遍历后代
+- - '##'
+  - 遍历祖先
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQueryUntil() 方法
+- - '##'
+  - 遍历后代
+- - '##'
+  - 遍历祖先
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQueryUntil() 方法
+- - '##'
+  - 遍历后代
+- - '##'
+  - 遍历祖先
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQuery() 方法
+- - '###'
+  - jQueryUntil() 方法
+- - '##'
+  - 注意
+- - '##'
+  - 遍历 DOM 树
+- - '##'
+  - jQuery 遍历祖先
+- - '###'
+  - jQuery parent() 方法
+- - '###'
+  - jQuery parents() 方法
+- - '###'
+  - jQuery parentsUntil() 方法
+- - '##'
+  - jQuery 遍历同级元素 (Traversing Siblings)
+- - '##'
+  - jQuery siblings() 方法
+- - '##'
+  - jQuery next() 方法
+- - '##'
+  - jQuery nextAll() 方法
+- - '##'
+  - jQuery nextUntil() 方法
+- - '##'
+  - jQuery prev() 方法
+- - '##'
+  - jQuery prevAll() 方法
+- - '##'
+  - jQuery prevUntil() 方法
+- - '##'
+  - jQuery 过滤
+- - '##'
+  - jQuery first() 方法
+- - '##'
+  - jQuery last() 方法
+- - '##'
+  - jQuery eq() 方法
+- - '###'
+  - 注意：
+- - '##'
+  - filter() 方法
+- - '##'
+  - has() 方法
+- - '##'
+  - not() 方法
+- - '###'
+  - jQuery `slice()` 方法
+- - '##'
+  - 第 3 部分：Ajax
+- - '##'
+  - 什么是 Ajax？
+- - '##'
+  - 配合 jQuery 使用 Ajax
+- - '###'
+  - jQuery `load()` 方法
+- - '###'
+  - 提示
+- - '###'
+  - 注意事项
+- - '###'
+  - 加载页面片段
+- - '###'
+  - jQuery $.get() 和 $.post() 方法
+- - '###'
+  - 使用 jQuery 执行 GET 请求
+- - '###'
+  - 使用 jQuery 执行 POST 请求
+- - '##'
+  - jQuery 无冲突模式
+- - '##'
+  - jQuery noConflict() 方法
+- - '##'
+  - 冲突性
+- - '##'
+  - 冲突性
+- - '##'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - 冲突性
+- - '###'
+  - ' '

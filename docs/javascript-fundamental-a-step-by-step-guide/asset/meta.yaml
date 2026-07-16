@@ -1,0 +1,70 @@
+name: JavaScript Fundamental A Step by Step Guide
+name_cn: JavaScript 基础：循步指南
+slug: javascript-fundamental-a-step-by-step-guide
+toc:
+- - '##'
+  - 弹出框 (POPUP BOXES)
+- - '###'
+  - 提示框 (Alert Box)
+- - '###'
+  - 确认框 (Confirm Box)
+- - '###'
+  - 输入框 (Prompt Box)
+- - '###'
+  - 弹出框换行 (Popup Box Line Break)
+- - '##'
+  - 日期和时间 (DATE AND TIME)
+- - '###'
+  - 时间
+- - '###'
+  - 日期和时间 (Date and Time)
+- - '##'
+  - 函数 (FUNCTION)
+- - '##'
+  - 事件处理器 (EVENT HANDLERS)
+- - '###'
+  - onload
+- - '###'
+  - onclick
+- - '###'
+  - onMouseOver
+- - '##'
+  - 使用 JavaScript 在 HTML 文中设置颜色
+- - '##'
+  - 重复执行 (REPEATED PERFORMANCE)
+- - '###'
+  - 使用 While 循环 (Looping with While)
+- - '###'
+  - 使用 For 循环 (Looping with For)
+- - '##'
+  - 数组 (Array)
+- - '###'
+  - 阶乘表 (Factorial Table)
+- - '##'
+  - 文档格式化 (DOCUMENT FORMATTING)
+- - '###'
+  - 创建新的格式化页面 (Create a New Formatted Page)
+- - '##'
+  - 创建一个新的格式化窗口
+- - '##'
+  - 事件对象 (EVENT OBJECT)
+- - '###'
+  - 文对象 (Document Object)
+- - '####'
+  - 使用 `getElementById()`：
+- - '####'
+  - 使用 `getElementsByName()`：
+- - '###'
+  - 事件对象：光标的坐标是多少？
+- - '###'
+  - 事件对象：按下按键的 Unicode 是什么？
+- - '###'
+  - 事件对象：点击了哪个元素？
+- - '##'
+  - 鼠标悬停 (IMAGE ROLLVER)
+- - '##'
+  - JavaScript 变量 (JAV VARIABLE)
+- - '###'
+  - 示例
+- - '####'
+  - 构建变量名称的规则：

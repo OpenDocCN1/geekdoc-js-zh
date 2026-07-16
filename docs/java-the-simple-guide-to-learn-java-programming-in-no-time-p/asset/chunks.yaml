@@ -1,0 +1,2171 @@
+- fmt: '
+
+    ![](cover.jpeg)
+
+
+    # Java
+
+    ## The Simple Guide to Learn Java Programming In No Time (Java for Beginners,
+    Java for Dummies, how to program, java app, java programming)
+
+    DAVID HOFFMAN
+
+
+    ### CONTENTS
+
+    - [Introduction](#introduction)
+
+    - [Chapter 1 – General Programming Guidelines](#chapter-1–general-programming-guidelines)
+
+    - [Chapter 2- How & When to Use Exceptions]()
+
+
+    I think next books will also be intersting for you:
+
+
+    - [C++](https://www.amazon.com/Ultimate-Programming-beginners-database-computer-ebook/dp/B01DED6QNO?ie=UTF8&keywords=C%2B%2B%20robert%20hoffman&qid=1463743006&ref_=sr_1_1&s=digital-text&sr=1-1)
+
+    ![C++3](images/00001.jpeg)
+
+    - [Javascript](http://www.amazon.com/Javascript-javascript-programming-development-Developers-ebook/dp/B017YZ6CYG/ref=sr_1_7?s=digital-text&ie=UTF8&qid=1447666305&sr=1-7&keywords=javascript)
+
+    ![D:\Физические книги\Covers\Javascript.cover.jpg](images/00002.jpeg)
+
+    - [Computer Hacking](http://www.amazon.com/Computer-Hacking-Essential-Beginners-internet-ebook/dp/B010965F36/ref=sr_1_fkmr1_3?s=digital-text&ie=UTF8&qid=1444557942&sr=1-3-fkmr1&keywords=Computer+Hacking%3A+The+Essential+Hacking+Guide+for+Beginners+%28+Hacking%2C+How+to+Hack%2C)
+
+    ![computerhacking](images/00003.jpeg)
+
+    - [Hacking for Dummies](http://www.amazon.com/Computer-Hacking-beginners-computer-security-ebook/dp/B015T8FZYI/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1446193044&sr=1-1&keywords=hacking+for+dummies+matt+benton)
+
+    ![HACKING2](images/00004.jpeg)
+
+    - [Python](http://www.amazon.com/Python-Ultimate-Learning-Programming-Hands--ebook/dp/B014MV238Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1442836729&sr=1-1&keywords=Python%3A+Learn+Python+FAST+-+The+Ultimate+Crash+Course+to+Learning+the+Basics+of+the+Python+Programming+)
+
+    ![D:\Физические книги\Covers\Python.jpg](images/00005.jpeg)
+
+    - [SQL](http://www.amazon.com/SQL-Beginners-database-programming-Programming-ebook/dp/B019A7VQD8/ref=sr_1_25?ie=UTF8&qid=1451913155&sr=8-25&keywords=sql)
+
+    ![SQL](images/00006.jpeg)
+
+
+    # Introduction
+
+    Most importantly, use common sense. When unable to find a rule or guideline. When
+    the rule clearly does not apply. When all else fails: Please make use of common
+    sense, check the fundamental principles of Java and coding. This rule overrides
+    all of the others. Common sense is a requirement.
+
+
+    1. Program for people, not the machine. Use naming conventions. Document your
+    code. Paragraph it. If no one else can figure it out, then it isn''t any good.
+
+    2. Design first, then code. Take the time to figure out how the code is going
+    to be written before coding starts, you will definitely spend less time writing
+    it. You reduce the impact of future changes on the code simply thinking about
+    them first.
+
+    3. Develop in small steps. It is much easier and faster to test and fix ten lines
+    of code than 1000; one could program, test, and fix 100 lines of code in ten,
+    10-line increments in half the time that you could write one single 100 line block
+    of code that did the same work.
+
+    4. Keep your code simple. Coding that needs to be redone later is nothing to be
+    proud of, so follow the KISS rule: Keep It Simple, Stupid.
+
+    5. Learn common patterns, anti-patterns, and idioms. There is a wealth of analysis
+    available to guide you in increasing your development productivity, design, and
+    process patterns and anti-patterns, as well as programming idioms.
+
+
+    # Chapter 1 – General Programming Guidelines
+
+    We will begin this tutorial by discussing general principles of good programming
+    style as well as those that define robust design in Java. Most of these principles
+    have been touched on in introduction to Java Programming, however many new advices
+    shall be introduced in this chapter to improve your skills as a Java developer.
+
+
+    ## Variable scope
+
+    within the Java language, each local variable, once it has been declared, has
+    a definitive scope. The variable then becomes visible from the place where it
+    is declared to the ending of the method, or block that it is now in. Therefore,
+    only one rule is necessary to follow; declare the local variable as close as possible
+    to the place where it is used. Below are some typical examples:
+
+
+    ```
+
+    1 for(final locale : Locale.getLocales()) {
+
+    2     // Some implementation
+
+    3 }
+
+    4
+
+    5 try(InputStream in = new FileInputStream("file.txt")) {
+
+    6     // Some implementation
+
+    7 }
+
+    ```
+
+
+    each snippet the local variable’s scope is limited to what blocks they are declared
+    in. When the block ends, the local variable is not visible anymore and goes out
+    of scope. The look is clean and concise but with the introduction of lambdas and
+    the release of Java 8, Much of well-known idioms using local variables are becoming
+    obsolete. Here is a rewrite of the `forEach` loop from the above example utilizing
+    lambdas instead:
+
+
+    ```
+
+    1 Arrays.stream(Locale.getLocales()).forEach(locale -> {
+
+    2     // Some implementation
+
+    3 }
+
+    4 );
+
+    ```
+
+    Notice that the local variable becomes the argument of this function which then
+    is passed as the argument of `forEach` method.
+
+
+    ## Class fields and local variables
+
+    Every method in Java will belong to some class (or, in some cases interface, like
+    Java 8 where the method is declared as default). There is a probability of some
+    name conflicts with local variables that are used in method implementations and
+    as class members. The Java compiler will pick the correct variable from the scope,
+    however it may not be the exact one the developer intended to use. Many Java IDEs
+    do much work to alert the developer when conflicts as such are taking place (red
+    script, highlighting and warnings) however, it is still better to be proactive
+    while in the development. Below is an example:
+
+
+    ```
+
+    1 public class LocalVariableAndClassMember {
+
+    2     private long value;
+
+    3
+
+    4     public long calculateValue(final long initial) {
+
+    5         long value = initial;
+
+    6
+
+    7         value *= 10;
+
+    8         value += value;
+
+    9
+
+    10        return value;
+
+    11    }
+
+    12 }
+
+    ```
+
+    This example appears to be very simple but there is one catch. The method `calculateValue`
+    introduces a local variable named `value` and hides the class member with the
+    same name by doing that. Code line 8 should sum the class member and the local
+    variable but in application it does something different. A corrected version would
+    look like that (with keyword `this`):
+
+
+    ```
+
+    1 public class LocalVariableAndClassMember {
+
+    2     private long value;
+
+    3
+
+    4     public long calculateValue(final long initial) {
+
+    5         long value = initial;
+
+    6
+
+    7         value *= 10;
+
+    8         value += this.value;
+
+    9
+
+    10        return value;
+
+    11    }
+
+    12 }
+
+    ```
+
+    This simple implementation highlights an important issue that in some cases would
+    take more than a few hours to troubleshoot and debug.
+
+
+    ## Method arguments and local variables
+
+    A different scenario that many beginning developers fall into is using method
+    arguments as local variables. Java allows reassignment of `non-final` method arguments
+    with an alternate value (but this has no effect on the original value). In example:
+
+
+    ```
+
+    1 public String sanitize(String str) {
+
+    2     if(!str.isEmpty()) {
+
+    3         str = str.trim();
+
+    4     }
+
+    5
+
+    6     str = str.toLowerCase();
+
+    7     return str;
+
+    8 }
+
+    ```
+
+    '
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    Java
+
+
+    The Simple Guide to Learn Java Programming In No Time (Java for Beginners, Java
+    for Dummies, how to program, java app, java programming)
+
+
+    DAVID HOFFMAN
+
+
+    CONTENTS
+
+
+    [Introduction](#part0000_split_008.html__Toc451775675)
+
+
+    [Chapter 1 – General Programming Guidelines](#part0000_split_009.html__Toc451775676)
+
+
+    [Chapter 2- How & When to Use Exceptions](#part0000_split_010.html__Toc451775677)
+
+
+    [Conclusion](#part0000_split_011.html__Toc451775678)
+
+
+    I think next books will also be intersting for you:
+
+
+    [C++](https://www.amazon.com/Ultimate-Programming-beginners-database-computer-ebook/dp/B01DED6QNO?ie=UTF8&keywords=C%2B%2B%20robert%20hoffman&qid=1463743006&ref_=sr_1_1&s=digital-text&sr=1-1)
+
+
+    ![C++3](images/00001.jpeg)
+
+
+    [Javascript](http://www.amazon.com/Javascript-javascript-programming-development-Developers-ebook/dp/B017YZ6CYG/ref=sr_1_7?s=digital-text&ie=UTF8&qid=1447666305&sr=1-7&keywords=javascript)
+
+
+    ![D:\Физические книги\Covers\Javascript.cover.jpg](images/00002.jpeg)
+
+
+    [Computer Hacking](http://www.amazon.com/Computer-Hacking-Essential-Beginners-internet-ebook/dp/B010965F36/ref=sr_1_fkmr1_3?s=digital-text&ie=UTF8&qid=1444557942&sr=1-3-fkmr1&keywords=Computer+Hacking%3A+The+Essential+Hacking+Guide+for+Beginners+%28+Hacking%2C+How+to+Hack%2C)
+
+
+    ![computerhacking](images/00003.jpeg)
+
+
+    [Hacking for Dummies](http://www.amazon.com/Computer-Hacking-beginners-computer-security-ebook/dp/B015T8FZYI/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1446193044&sr=1-1&keywords=hacking+for+dummies+matt+benton)
+
+
+    ![HACKING2](images/00004.jpeg)
+
+
+    [Python](http://www.amazon.com/Python-Ultimate-Learning-Programming-Hands--ebook/dp/B014MV238Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1442836729&sr=1-1&keywords=Python%3A+Learn+Python+FAST+-+The+Ultimate+Crash+Course+to+Learning+the+Basics+of+the+Python+Programming+)
+
+
+    ![D:\Физические книги\Covers\Python.jpg](images/00005.jpeg)
+
+
+    [SQL](http://www.amazon.com/SQL-Beginners-database-programming-Programming-ebook/dp/B019A7VQD8/ref=sr_1_25?ie=UTF8&qid=1451913155&sr=8-25&keywords=sql)
+
+
+    ![SQL](images/00006.jpeg)
+
+
+    # Introduction
+
+
+    Most importantly, use common sense. When unable to find a rule or guideline. 
+    When the rule clearly does not apply.  When all else fails: Please make use of
+    common sense, check the fundamental principles of Java and coding. This rule overrides
+    all of the others. Common sense is  a requirement.
+
+
+    1.  Program for people, not the machine. Use naming conventions. Document your
+    code. Paragraph it. If no one else can figure it out, then it isn''t any good.
+
+
+    2.  Design first, then code. Take the time to figure out how the code is going
+    to be written before coding starts, you will definitely spend less time writing
+    it. You reduce the impact of future changes on the code simply thinking about
+    them first.
+
+
+    3.  Develop in small steps. It is much easier and faster to test and fix ten lines
+    of code than 1000; one could program, test, and fix 100 lines of code in ten,
+    10-line increments in half the time that you could write one single 100 line block
+    of code that did the same work.
+
+
+    4.  Keep your code simple.  Coding that needs to be redone later is nothing to
+    be proud of, so follow the KISS rule: Keep It Simple, Stupid.
+
+
+    5.  Learn common patterns, anti-patterns, and idioms. There is a wealth of analysis
+    available to guide you in increasing your development productivity, design, and
+    process patterns and anti-patterns, as well as programming idioms.
+
+
+    # Chapter 1 – General Programming Guidelines
+
+
+    We will begin this tutorial by discussing general principles of good programming
+    style as well as those that define robust design in Java. Most of these principles
+    have been touched on in the introduction to Java Programming, however many new
+    practical advices shall be introduced in this chapter to improve your skills as
+    a Java developer.
+
+
+    Variable scope
+
+
+    within the Java programming language, each local variable, once it has been declared,
+    has a definitive scope. The variable then becomes visible from the place where
+    it is declared to the ending of the method, or code block that it is now declared
+    in. Therefore, only one single rule is necessary to follow; declare the local
+    variable as close as possible to the place where it is used. Below are some typical
+    examples:
+
+
+    | 1 | for( final  Locale locale: Locale.getAvailableLocales() ) { |
+
+
+    | 2 |     // Some implementation here |
+
+
+    | 3 | } |
+
+
+    | 4 |  |
+
+
+    | 5 | try( final  InputStreamin = new  FileInputStream( "file.txt"  ) ) { |
+
+
+    | 6 |     // Some implementation here |
+
+
+    | 7 | } |
+
+
+    With each code snippet the local variable’s scope is limited only to what execution
+    blocks they are now declared in. When the block ends, the local variable is not
+    visible anymore and goes out of scope. The look is clean and concise but with
+    the introduction of lambdas and the release of Java 8, Much of the  well-known
+    idioms for using local variables are becoming totally obsolete.
+
+
+    Here is a rewrite of the ‘forEach’ loop from the above example utilizing lambdas
+    instead:
+
+
+    | 1 | Arrays.stream( Locale.getAvailableLocales() ).forEach( ( locale ) -> { |
+
+
+    | 2 |         // Some implementation here |
+
+
+    | 3 |     } |
+
+
+    | 4 | ); |
+
+
+    Notice that the local variable becomes the argument of this function which then
+    itself is passed as the argument of the forEach method.
+
+
+    Class fields and local variables
+
+
+    Every method in Java will belong to some distinct class (or, in some cases some
+    interface, like Java 8 where the method is declared as default). There is a probability
+    of some name conflicts with local variables that are used in method implementations
+    and as class members. The Java compiler will pick the correct variable from the
+    scope, however it may not be the exact one the developer intended to use. Many
+    modern Java IDEs do much work to alert the developer when conflicts such as these
+    are taking place (red script, highlighting and warnings) however, it is still
+    better to be proactive while in the development.
+
+
+    Below is an example:
+
+
+    | 01 | public  class  LocalVariableAndClassMember { |
+
+
+    | 02 |      private  long  value; |
+
+
+    | 03 |  |
+
+
+    | 04 |      public  long  calculateValue( final  long  initial ) { |
+
+
+    | 05 |          long  value = initial;        |
+
+
+    | 06 |  |
+
+
+    | 07 |          value *= 10; |
+
+
+    | 08 |          value += value; |
+
+
+    | 09 |  |
+
+
+    | 10 |          return  value; |
+
+
+    | 11 |      } |
+
+
+    | 12 |  } |
+
+
+    This example appears to be very simple but there is one catch. The method called
+    calculateValue introduces a local variable named value and hides the class member
+    with the same name by doing that.  Code line 08 should sum the class member and
+    the local variable but in application it does something different. A corrected
+    version would look like that (with keyword this):
+
+
+    | 01 | public  class  LocalVariableAndClassMember { |
+
+
+    | 02 |      private  long  value; |
+
+
+    | 03 |  |
+
+
+    | 04 |      public  long  calculateValue( final  long  initial ) { |
+
+
+    | 05 |          long  value = initial;        |
+
+
+    | 06 |  |
+
+
+    | 07 |          value *= 10; |
+
+
+    | 08 |          value += this.value;        |
+
+
+    | 09 |  |
+
+
+    | 10 |          return  value; |
+
+
+    | 11 |      } |
+
+
+    | 12 |  } |
+
+
+    This simple implementation highlights an important issue that in some cases would
+    take more than a few hours to troubleshoot and debug.
+
+
+    Method arguments and local variables
+
+
+    A different scenario that many beginning developers fall into is using method
+    arguments as local variables. Java allows reassignment of  non-final method arguments
+    with an alternate value (but this has no effect on the original value).
+
+
+    In example:
+
+
+    | 1 | public  String sanitize( String str ) { |
+
+
+    | 2 |     if( !str.isEmpty() ) { |
+
+
+    | 3 |         str = str.trim(); |
+
+
+    | 4 |     } |
+
+
+    | 5 |  |
+
+
+    | 6 |     str = str.toLowerCase(); |
+
+
+    | 7 |     return  str; |
+
+
+    | 8 | } |'
+  toc: []
+  trans: "\n\n![](img/cover.jpeg)\n\n# Java\n## 快速学习 Java 编程简单指南（Java 入门、小白教程、如何编程、Java\
+    \ 应用、Java 编程）\nDAVID HOFFMAN\n\n### 目录\n- 介绍\n- 第 1 章 – 通用编程指南\n- [第 2 章 - 如何以及何时使用异常]()\n\
+    \n认为你可能对以下书籍感兴趣：\n\n- [C++](https://www.amazon.com/Ultimate-Programming-beginners-database-computer-ebook/dp/B01DED6QNO?ie=UTF8&keywords=C%2B%2B%20robert%20hoffman&qid=1463743006&ref_=sr_1_1&s=digital-text&sr=1-1)\n\
+    ![C++3](img/00001.jpeg)\n- [Javascript](http://www.amazon.com/Javascript-javascript-programming-development-Developers-ebook/dp/B017YZ6CYG/ref=sr_1_7?s=digital-text&ie=UTF8&qid=1447666305&sr=1-7&keywords=javascript)\n\
+    ![D:\\Физические книги\\Covers\\Javascript.cover.jpg](img/00002.jpeg)\n- [计算机黑客](http://www.amazon.com/Computer-Hacking-Essential-Beginners-internet-ebook/dp/B010965F36/ref=sr_1_fkmr1_3?s=digital-text&ie=UTF8&qid=1444557942&sr=1-3-fkmr1&keywords=Computer+Hacking%3A+The+Essential+Hacking+Guide+for+Beginners+%28+Hacking%2C+How+to+Hack%2C)\n\
+    ![computerhacking](img/00003.jpeg)\n- [小白黑客教程](http://www.amazon.com/Computer-Hacking-beginners-computer-security-ebook/dp/B015T8FZYI/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1446193044&sr=1-1&keywords=hacking+for+dummies+matt+benton)\n\
+    ![HACKING2](img/00004.jpeg)\n- [Python](http://www.amazon.com/Python-Ultimate-Learning-Programming-Hands--ebook/dp/B014MV238Y/ref=sr_1_1?s=digital-text&ie=UTF8&qid=1442836729&sr=1-1&keywords=Python%3A+Learn+Python+FAST+-+The+Ultimate+Crash+Course+to+Learning+the+Basics+of+the+Python+Programming+)\n\
+    ![D:\\Физические книги\\Covers\\Python.jpg](img/00005.jpeg)\n- [SQL](http://www.amazon.com/SQL-Beginners-database-programming-Programming-ebook/dp/B019A7VQD8/ref=sr_1_25?ie=UTF8&qid=1451913155&sr=8-25&keywords=sql)\n\
+    ![SQL](img/00006.jpeg)\n\n# 介绍\n最重要的是，运用常识。当找不到规则或指南时。当规则明显不适用时。当其他所有方法都失败时：请利用常识，检查\
+    \ Java 和编码的基本原理。这条规则优于所有其他规则。常识是一项要求。\n\n1. 为人编写程序，而不是为机器。使用命名规范。为你的代码编写注释。分段。如果没人能看懂，那么它就没用。\n\
+    2. 先设计，后编码。在开始编写代码之前，花时间考虑代码将如何编写，你绝对会花费更少编写时间。通过先考虑未来的变化，你可以减少这些变化对代码的影响。\n3.\
+    \ 小步子开发。测试和修复 10 行代码比 1000 行要容易且快速得多；人们可以在一半的时间内，以每次 10 行的增量，编写、测试并修复 100 行代码，而直接写一个执行相同工作的\
+    \ 100 行代码块要花费更多时间。\n4. 保持代码简单。以后需要重写的代码是不值得自豪的，所以遵循 KISS 原则：保持简单，愚蠢（Keep It Simple,\
+    \ Stupid）。\n5. 学习常见的模式、反模式和惯用法。有大量的分析可以指导你提高开发生产力、设计和流程模式与反模式，以及编程惯用法。\n\n# 第\
+    \ 1 章 – 通用编程指南\n我们将从本教程开始，讨论良好编程风格的通用原则，以及定义 Java 健壮设计的原则。这些原则中的大部分在《Java 编程入门》中已经过，但本章将引入许多新建议，以提高你作为\
+    \ Java 开发者的技能。\n\n## 变量作用域\n在 Java 语言中，每个局部变量一旦声明，就有一个确定的作用域。该变量从声明处到它当前所在的方法或块的结束都是可见的。因此，只需要遵循一条规则：尽可能靠近使用局部变量的地方声明它。以下是一些示例：\n\
+    \n```java\nfor (String locale : locales()) {\n    // 使用实现\n}\n\ntry (InputStream\
+    \ in = new FileInputStream(\"file.txt\")) {\n    // 使用实现\n}\n```\n\n## 类成员字段与局部变量\n\
+    Java 中的每个方法都属于某个类（在某些情况下是接口，如 Java 8 中声明为默认的方法）。局部变量与类成员之间存在命名冲突的概率，Java 编译器会选择作用域内的正确变量，但可能不是开发者想要使用的那个。许多\
+    \ Java IDE 在此类冲突发生时会进行大量工作（红色高亮和警告），然而，在开发过程中主动处理更好。以下是一个示例：\n\n```java\npublic\
+    \ class LocalVariableAndClassMember {\n    private long value;\n\n    public long\
+    \ calculateValue(final long initial) {\n        long value = initial;\n\n    \
+    \    value *= 10;\n        value += value;\n\n        return value;\n    }\n}\n\
+    ```\n这个示例看起来非常简单，但有一个陷阱：`calculateValue` 方法引入了一个名为 `value` 的局部变量，并隐藏了同名的类成员。第\
+    \ 8 行代码应该是类成员加上局部变量，但在应用中执行的是不同的操作。修正后的版本应该是这样的（使用 `this` 关键字）：\n\n```java\npublic\
+    \ class LocalVariableAndClassMember {\n    private long value;\n\n    public long\
+    \ calculateValue(final long initial) {\n        long value = initial;\n\n    \
+    \    value *= 10;\n        value += this.value;\n\n        return value;\n   \
+    \ }\n}\n```\n这种简单的实现凸显了一个重要问题，在某些情况下，需要花费几个小时来排故障和调试。\n\n## 方法参数与局部变量\n许多初学者经常陷入的另一种场景是将方法参数作为局部变量。Java\
+    \ 允许对非 `final` 方法参数重新赋值替代值（但对原始值没有影响）。例如：\n\n```java\npublic String sanitize(String\
+    \ str) {\n    if(!str.isEmpty()) {\n        str = str.trim();\n    }\n\n    str\
+    \ = str.toLowerCase();\n    return str;\n}\n```\n使用 Lambda 表达式对上述 `forEach` 循环重写：\n\
+    \n```java\nArrays.stream(locales()).forEach(locale -> {\n    // 实现\n});\n```\n\
+    注意，局部变量变成了 `forEach` 的参数。\n\n"
+- fmt: "\nThis is not the cleanest piece of coding but it does highlight the problem:\
+    \ the method argument `str` has been reassigned to a different value (and used\
+    \ as a local variable). In these cases (and without exception) this coding pattern\
+    \ should be avoided and can be by declaring method arguments as `final`.\n\nBelow\
+    \ is an example of this:\n\n```java\npublic String sanitize(final String str)\
+    \ {\n    String sanitized = str;\n    if(!str.isEmpty()) {\n        sanitized\
+    \ = str.trim();\n    }\n    sanitized = sanitized.toLowerCase();\n    return sanitized;\n\
+    }\n```\n\nCoding that follows this simple rule is generally easier to follow and\
+    \ reason with. This is done even at the expense of introducing local variables.\n\
+    \n### Boxing and unboxing\n\nBoxing and unboxing are Java techniques that allow\
+    \ conversion between primitive types (`int`, `long`, `double`) and respective\
+    \ primitive type wrappers (`Integer`, `Long`, `Double`).\n\nEven though the Java\
+    \ compiler attempts to hide those conversions by performing autoboxing, this may\
+    \ make things worse and sometimes leads to random results.\n\nBelow is an example:\n\
+    \n```java\npublic static void calculate(final long value) {\n    // Some implementation\
+    \ here\n}\nfinal Long value = null;\ncalculate(value);\n```\n\nThis code snippet\
+    \ compiles well, but it gives `NullPointerException` on line 02 as the conversion\
+    \ between `Long` and `long` executes. The best point of advice here would be to\
+    \ use the primitive type (but as we already know, in some cases it is not possible).\n\
+    \n### Interfaces\n\nInterfaces should have preference over concrete classes where\
+    \ possible. This should convince you to at least consider interfaces first by\
+    \ showing these real examples.\n\nInterfaces are only tied to default methods,\
+    \ not any particular implementation. They function merely as contracts, they provide\
+    \ much of the freedom and flexibility in the way the contracts could be fulfilled.\
+    \ Flexibility like this becomes more important if the implementation involves\
+    \ external services or systems.\n\nBelow is an example of a simple interface and\
+    \ its possible implementation:\n\n```java\npublic interface TimezoneService {\n\
+    \    TimeZone getTimeZone(final double lat, final double lon) throws IOException;\n\
+    }\n\npublic class TimezoneServiceImpl implements TimezoneService {\n    @Override\n\
+    \    public TimeZone getTimeZone(final double lat, final double lon) throws IOException\
+    \ {\n        final URL url = new URL(String.format(\n            \"[http://api.geonames.org/timezone?lat=%.2f&lng=%.2f&username=demo](http://api.geonames.org/timezone?lat=%25.2f&lng=%25.2f&username=demo)\"\
+    ,\n            lat, lon\n        ));\n        final HttpURLConnection connection\
+    \ = (HttpURLConnection)url.openConnection();\n\n        connection.setRequestMethod(\"\
+    GET\");\n        connection.setConnectTimeout(1000);\n        connection.setReadTimeout(1000);\n\
+    \        connection.connect();\n\n        int status = connection.getResponseCode();\n\
+    \        if (status == 200) {\n            // Do something here\n        }\n\n\
+    \        return TimeZone.getDefault();\n    }\n}\n```\n\nThe coding shown above\
+    \ demonstrates a common interface/implementation pattern. This implementation\
+    \ exclusively uses an external HTTP (note: NOT https, which is a secure server)\
+    \ service (`http://api.geonames.org/`) that retrieves the time zone for a queried\
+    \ location. But, because the contact is interface driven, it is not difficult\
+    \ to introduce another implementation using flat file or a database. That way\
+    \ interfaces greatly help to design testable code. It may not be practical to\
+    \ call the external service on every test run, therefore it makes sense to provide\
+    \ this alternative, dummy implementation (also called stub or mock) as an alternative:\n\
+    \n```java\npublic class TimezoneServiceTestImpl implements TimezoneService {\n\
+    \    @Override\n    public TimeZone getTimeZone(final double lat, final double\
+    \ lon) throws IOException {\n        return TimeZone.getDefault();\n    }\n}\n\
+    ```\n\nThe above implementation may be used in each place where `TimezoneService`\
+    \ interfacing is required, this isolates the test scenario from its dependency\
+    \ on external components.\n\nExamples of appropriate interface use included inside\
+    \ the Java standard collection library. `Collection`, `List`, `Set`, all those\
+    \ interfaces are backed by several more implementations that could be replaced\
+    \ interchangeably and seamlessly when contracts may be preferred.\n\nBelow is\
+    \ an example of this:\n\n```java\npublic static <T> void print(final Collection<T>\
+    \ collection) {\n    for(final T element: collection) {\n        System.out.println(element);\n\
+    \    }\n}\nprint(new HashSet<Object>(/* ... */));\nprint(new ArrayList<Integer>(/*\
+    \ ... */));\nprint(new TreeSet<String>(/* ... */));\n```\n\nStrings are immutable\
+    \ in Java. Each time any operation is performed a new instance is created. There\
+    \ are two very helpful classes provided in the standard library to facilitate\
+    \ string manipulations: `StringBuilder` and `StringBuffer` (mainly different that\
+    \ `StringBuffer` is thread-safe while `StringBuilder` is not).\n\n```java\nfinal\
+    \ sb = new StringBuilder();\nfor(int i = 1; i <= 10; ++i) {\n    sb.append(\"\
+    \ \");\n    sb.append(i);\n}\nsb.delete(0);\nsb.insert(0, \"[\");\nsb.replace(sb.length()\
+    \ - 3, sb.length(), \"]\");\n```\n\nUsing `StringBuilder`/`StringBuffer` is recommended\
+    \ to manipulate strings, however it may look over the top when concaten two or\
+    \ three strings; in this case the regular `+` operator may be used.\n\nBelow is\
+    \ an example:\n\n```java\nString userId = \"user:\" + new Random().nextInt(100);\n\
+    ```\n\nThe use of string formatting is an alternative to straightforward concatenation\
+    \ Java standard library provides the static helper method `String.format`. It\
+    \ also supports a complete set of format specifiers, including dates/times, characters,\
+    \ etc. (see the full [official documentation](https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax)).\n\
+    \nBelow explore the power of formatting by example:\n\n```java\nString.format(\"\
+    %04d\", 1); // 0001\nString.format(\"%.2f\", 15.643624); // 15.64\nString.format(\"\
+    %tR\", new Date()); // 14:07\nString.format(\"%tF\", new Date()); // 2016-20-04\n\
+    String.format(\"%d%%\", 22); // 22%\n```\n\n`String.format` method is a simple\
+    \ and clean way to construct strings originating in different data types. Some\
+    \ modern Java IDEs can analyze the format specification against the arguments\
+    \ passed on to the `String.format` method and then warn developers when any mismatches\
+    \ are detected.\n"
+  raw: 'This is not the cleanest piece of coding but it does highlight the problem:
+    the method argumentstr has been  reassignedto a different value (and used as a
+    local variable). In these cases (and without exception) this coding pattern should
+    be avoided and can be by declaring method arguments asfinal.
+
+
+    Below is an example of this:
+
+
+    | 01 | public  String sanitize( final  String str ) { |
+
+
+    | 02 |     String sanitized = str; |
+
+
+    | 03 |  |
+
+
+    | 04 |     if( !str.isEmpty() ) { |
+
+
+    | 05 |         sanitized = str.trim(); |
+
+
+    | 06 |     } |
+
+
+    | 07 |  |
+
+
+    | 08 |     sanitized = sanitized.toLowerCase(); |
+
+
+    | 09 |     return  sanitized; |
+
+
+    | 10 | } |
+
+
+    Coding that  follows this simple rule is generally easier to follow and reason
+    with. This is done even at the expense of introducing local variables.
+
+
+    Boxing and unboxing
+
+
+    Boxing and unboxing are Java techniques that allow conversion between primitive
+    types (int,long,double) and respective primitive type wrappers (Integer,Long,Double).
+
+
+    Even though the Java compiler attempts to hide those conversions by performing
+    autoboxing, this may make things worse and sometimes leads to random results.
+
+
+    Below is an  example:
+
+
+    | 1 | public  static  void  calculate( final  long  value ) { |
+
+
+    | 2 |     // Some implementation here |
+
+
+    | 3 | } |
+
+
+    | 1 | final  Long value = null; |
+
+
+    | 2 | calculate( value ); |
+
+
+    This code snippet compiles well, but it givesNullPointerException on line  02
+    as the conversion between  Long  and  long executes.The best point of  advice
+    here would be to use the primitive type (but as we already know, in some cases
+    it is not possible).
+
+
+    Interfaces
+
+
+    Interfaces should have preference over concrete classes where possible. This should
+    convince you to at least consider interfaces first by showing these real examples.
+
+
+    Interfaces are only tied to default methods, not any particular implementation.
+    They function merely as contracts, they provide much of the freedom and flexibility
+    in the way the contracts could be fulfilled. Flexibility like this becomes more
+    important if the implementation involves external services or systems.
+
+
+    Below is an example of a simple interface and its possible implementation:
+
+
+    | 1 | public  interface  TimezoneService { |
+
+
+    | 2 |     TimeZone getTimeZone( final  double  lat, final  double  lon) throws  IOException;
+    |
+
+
+    | 3 | } |
+
+
+    | 01 | public  class  TimezoneServiceImplimplements  TimezoneService { |
+
+
+    | 02 |     @Override |
+
+
+    | 03 |     public  TimeZone getTimeZone(final  double  lat, final  double  lon)
+    throws  IOException { |
+
+
+    | 04 |         final  URL url= new  URL( String.format( |
+
+
+    | 05 |             "[http://api.geonames.org/timezone?lat=%.2f&lng=%.2f&username=demo](http://api.geonames.org/timezone?lat=%25.2f&lng=%25.2f&username=demo)",
+    |
+
+
+    | 06 |             lat, lon |
+
+
+    | 07 |         ) ); |
+
+
+    | 08 |         final  HttpURLConnection connection = ( HttpURLConnection )url.openConnection();
+    |
+
+
+    | 09 |  |
+
+
+    | 10 |         connection.setRequestMethod( "GET"  ); |
+
+
+    | 11 |         connection.setConnectTimeout( 1000  ); |
+
+
+    | 12 |         connection.setReadTimeout( 1000  ); |
+
+
+    | 13 |         connection.connect(); |
+
+
+    | 14 |  |
+
+
+    | 15 |         int  status = connection.getResponseCode(); |
+
+
+    | 16 |         if  (status == 200) { |
+
+
+    | 17 |             // Do something here |
+
+
+    | 18 |         } |
+
+
+    | 19 |  |
+
+
+    | 20 |         return  TimeZone.getDefault(); |
+
+
+    | 21 |     } |
+
+
+    | 22 | } |
+
+
+    The coding shown above demonstrates a common interface/implementation pattern.
+    This implementation exclusively uses an external HTTP (note: NOT https, which
+    is a secure server) service ([http://api.geonames.org/](http://api.geonames.org/))
+    that retrieves the time zone for a queried location. But, because the contact
+    is interface driven, it is not difficult to introduce another implementation using
+    flat file or a database. That way interfaces greatly help to design testable code.
+    It may not be practical to call the external service on every test run, therefore
+    it makes sense to provide this alternative, dummy implementation (also called
+    stub or mock) as an alternative:
+
+
+    | 1 | public  class  TimezoneServiceTestImplimplements  TimezoneService { |
+
+
+    | 2 |     @Override |
+
+
+    | 3 |     public  TimeZone getTimeZone(final  double  lat, final  double  lon)
+    throws  IOException { |
+
+
+    | 4 |         return  TimeZone.getDefault(); |
+
+
+    | 5 |     } |
+
+
+    | 6 | } |
+
+
+    The above implementation may be used in each place whereTimezoneService  interfacing
+    is required, this isolates the test scenario from its dependency on external components.
+
+
+    Examples of appropriate interface use included inside the Java standard collection
+    library.  Collection,List,Set,all those interfaces are backed by several more
+    implementations that could be replaced  interchangeably and seamlessly when contracts
+    may be preferred.
+
+
+    Below is an example of this:
+
+
+    | 1 | public  static< T > void  print( final  Collection< T > collection ) { |
+
+
+    | 2 |     for( final  T element: collection ) { |
+
+
+    | 3 |         System.out.println( element ); |
+
+
+    | 4 |     } |
+
+
+    | 5 | } |
+
+
+    | 1 | print( new  HashSet< Object >( /* ... */ ) ); |
+
+
+    | 2 | print( new ArrayList< Integer >( /* ... */ ) ); |
+
+
+    | 3 | print( new TreeSet< String >( /* ... */ ) ); |
+
+
+    | 4 | print( new Vector< Long >( /* ... */  ) ); |
+
+
+    Strings
+
+
+    Some of the most widely used types in Java and most of the programming languages
+    are Strings. Java natively supports the concatenations and comparison through
+    simplifying much of the routine operations over strings. The Java standard library
+    also provides many unique classes to increase efficiency of strings operations.
+
+
+    Strings are immutable objects in Java, and are represented in UTF-16 format. Each
+    time the strings are concatenated (or when any operation which modifies the original
+    string is performed) a new instance ofString class is created. That is why the
+    concatenation operations sometimes become ineffective, initiating many intermediate
+    string instances (also called: generating garbage).
+
+
+    There are two very helpful classes provided in the Java standard library that
+    aim to facilitate string manipulations:StringBuilder andStringBuffer (mainly different
+    in thatStringBuffer is thread-safe while  StringBuilder  is not).
+
+
+    Below are a few examples using one of these classes:
+
+
+    | 01 | final  StringBuilder sb= new  StringBuilder(); |
+
+
+    | 02 |  |
+
+
+    | 03 | for( int  i = 1; i <= 10; ++i ) { |
+
+
+    | 04 |     sb.append( " "  ); |
+
+
+    | 05 |     sb.append( i ); |
+
+
+    | 06 | } |
+
+
+    | 07 |  |
+
+
+    | 08 | sb.deleteCharAt( 0  ); |
+
+
+    | 09 | sb.insert( 0, "["  ); |
+
+
+    | 10 | sb.replace( sb.length() - 3, sb.length(), "]"  ); |
+
+
+    Using  StringBuilder  /StringBuffer is recommended to manipulate strings, however
+    it may look over the top when concatenating two or three strings; in this case
+    the regular + operator may be used instead.
+
+
+    Below is an example:
+
+
+    | 1 | String userId= "user:"  + new  Random().nextInt( 100  ); |
+
+
+    The use of string formatting is an alternative to straightforward concatenation
+    and Java standard library provides the static helper methodString.format.It also
+    supports a complete set of format specifiers, including dates/times, characters,
+    numbers, etc. (see the full reference [official documentation](https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax)).
+
+
+    Below explore the power of formatting by example:
+
+
+    | 1 | String.format( "%04d", 1  );                      -> 0001 |
+
+
+    | 2 | String.format( "%.2f", 15.643624d );             -> 15.64 |
+
+
+    | 3 | String.format( "%tR", new  Date() );              -> 14:07 |
+
+
+    | 4 | String.format( "%tF", new  Date() );              -> 2016-20-04 |
+
+
+    | 5 | String.format( "%d%%", 22  );                     -> 22% |
+
+
+    String.format method is a simple and clean way to construct strings originating
+    in different data types. Some modern Java IDEs can analyze the format specification
+    against the arguments passed on to the  String.format method and then warn developers
+    when any mismatches are detected.
+
+
+    Naming conventions'
+  toc: []
+  trans: "\n\n这段代码并不是最整洁的，但它突出了问题：方法参数 `str` 被重新赋值了一个不同的值（并被用作局部变量）。在这些情况下（无例外地），应该避免这种编码模式，可以通过将方法参数声明为\
+    \ `final` 来避免。\n\n以下是此点的示例：\n\n```java\npublic String sanitize(final String str)\
+    \ {\n    String sanitized = str;\n    if(!str.isEmpty()) {\n        sanitized\
+    \ = str.trim();\n    }\n    sanitized = sanitized.toLowerCase();\n    return sanitized;\n\
+    }\n```\n\n遵循这一简单规则的代码通常更容易理解和推理。即使以引入局部变量为代价，这种做法也是值得的。\n\n### 装箱与拆箱（Boxing and\
+    \ unboxing）\n\n装箱和拆箱是 Java 技术，允许在原始类型（`int`, `long`, `double`）与相应的原始类型包装类（`Integer`,\
+    \ `Long`, `Double`）之间进行转换。\n\n尽管 Java 编译器试图图通过执行自动装箱（autoboxing）来隐藏这些转换，但这可能会让情况变得糟糕，有时会导致产生随机的结果。\n\
+    \n以下是一个示例：\n\n```java\npublic static void calculate(final long value) {\n    //\
+    \ Some implementation here\n}\nfinal Long value = null;\ncalculate(value);\n```\n\
+    \n这段代码段可以正常编译，但在执行 `Long` 到 `long` 的转换时会在第 02 行抛出 `NullPointerException`。这里的最佳建议是使用原始类型（但我们所知，在某些情况下是不可能的）。\n\
+    \n### 接口（Interfaces）\n\n在可能的情况下，接口优于具体类。这些真实的示例应该能让你至少先考虑使用接口。\n\n接口仅与默认方法绑定，而不与任何特定的实现绑定。它们仅仅作为合同，在履行合同的方式上提供了许多自由和灵活性。如果实现涉及外部服务或系统，这种灵活性会变得更加重要。\n\
+    \n以下是一个简单接口及其可能的实现的示例：\n\n```java\npublic interface TimezoneService {\n    TimeZone\
+    \ getTimeZone(final double lat, final double lon) throws IOException;\n}\n\npublic\
+    \ class TimezoneServiceImpl implements TimezoneService {\n    @Override\n    public\
+    \ TimeZone getTimeZone(final double lat, final double lon) throws IOException\
+    \ {\n        final URL url = new URL(String.format(\n            \"[`api.geonames.org/timezone?lat=%.2f&lng=%.2f&username=demo`](http://api.geonames.org/timezone?lat=%25.2f&lng=%25.2f&username=demo)\"\
+    ,\n            lat, lon\n        ));\n        final HttpURLConnection connection\
+    \ = (HttpURLConnection)url.openConnection();\n\n        connection.setRequestMethod(\"\
+    GET\");\n        connection.setConnectTimeout(1000);\n        connection.setReadTimeout(1000);\n\
+    \        connection.connect();\n\n        int status = connection.getResponseCode();\n\
+    \        if (status == 200) {\n            // Do something here\n        }\n\n\
+    \        return TimeZone.getDefault();\n    }\n}\n```\n\n上述代码展示了一种常见的接口/实现模式。该实现专门使用一个外部\
+    \ HTTP（注意：不是 https，后者是安全的服务器）服务（`http://api.geonames.org/`）来获取查询位置的时区。但是由于接触是由接口驱动的，引入另一个使用扁平文件或数据库的实现并不困难。这样，接口极大地帮助设计了可测试的代码。在每次测试运行期间调用外部服务可能并不切实际，因此提供这种备选的虚拟实现（也称为\
+    \ stub 或 mock）作为替代方案是有意义的：\n\n```java\npublic class TimezoneServiceTestImpl implements\
+    \ TimezoneService {\n    @Override\n    public TimeZone getTimeZone(final double\
+    \ lat, final double lon) throws IOException {\n        return TimeZone.getDefault();\n\
+    \    }\n}\n```\n\n上述实现可以用任何需要 `TimezoneService` 接口的地方，这使得测试场景与其对外部组件的依赖隔离离开。\n\
+    \nJava 标准集合库内部包含了适当使用接口示例。`Collection`、`List`、`Set`，所有这些接口都有多个更多的实现支持，当首选使用接口时，这些实现可以互换且无缝地替换。\n\
+    \n以下是此点的示例：\n\n```java\npublic static <T> void print(final Collection<T> collection)\
+    \ {\n    for(final T element: collection) {\n        System.out.println(element);\n\
+    \    }\n}\nprint(new HashSet<Object>(/* ... */));\nprint(new ArrayList<Integer>(/*\
+    \ ... */));\nprint(new TreeSet<String>(/* ... */));\n```\n\nString 在 Java 中是不可变的。每次执行任何操作时，都会创建一个新实例。标准库提供了两个非常有帮助的类来方便字符串操作：`StringBuilder`\
+    \ 和 `StringBuffer`（主要区别在于 `StringBuffer` 是线程安全的，而 `StringBuilder` 不是）。\n\n```java\n\
+    final sb = new StringBuilder();\nfor(int i = 1; i <= 10; ++i) {\n    sb.append(\"\
+    \ \");\n    sb.append(i);\n}\nsb.delete(0);\nsb.insert(0, \"[\");\nsb.replace(sb.length()\
+    \ - 3, sb.length(), \"]\");\n```\n\n建议使用 `StringBuilder`/`StringBuffer` 来操作字符串，但在连接两个或三个字符串时可能看起来过头了；在这种情况下，可以使用普通的\
+    \ `+` 运算符。\n\n以下是一个示例：\n\n```java\nString userId = \"user:\" + new Random().nextInt(100);\n\
+    ```\n\n使用字符串格式化是直接拼接的替代方案，Java 标准库提供了静态辅助方法 `String.format`。它还支持完整的格式化符集，包括日期/时间、字符等（参见完整的[官方文档](https://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax)）。\n\
+    \n通过示例探索格式化的威力：\n\n```java\nString.format(\"%04d\", 1); // 0001\nString.format(\"\
+    %.2f\", 15.643624); // 15.64\nString.format(\"%tR\", new Date()); // 14:07\nString.format(\"\
+    %tF\", new Date()); // 2016-20-04\nString.format(\"%d%%\", 22); // 22%\n```\n\n\
+    `String.format` 方法是一种构建来自不同数据类型的字符串的简单且整洁的方法。某些现代 Java IDE 可以分析格式规范与传递给 `String.format`\
+    \ 方法的参数，并在检测到任何不匹配时警告开发者。\n\n"
+- fmt: "\nThere is no reason to strictly follow any specific naming conventions in\
+    \ Java, but there are a set of easy to follow rules that make Java code look uniform\
+    \ across standard library or any other Java project in the wild.\n\n- local variable\
+    \ and method arguments names are typed in camel case: `str`, `newLength`, `minimumCapacity`\n\
+    - static final field or enumeration constant names are typed in upper case, separated\
+    \ by underscore `_`: `LOG`, `MIN_RADIX`, `INSTANCE`\n- class, `enum`, `interface`\
+    \ or annotation names are typed in capitalized case: `StringBuilder`, `Runnable`,\
+    \ `@Override`\n- generic type parameter names are usually represented as one character\
+    \ in upper case: `T`, `U`, `E`\n- method or field names(except `static final`)\
+    \ are typed in camel case: `isEmpty`, `format`, `addAll`\n- package names are\
+    \ typed in lower case: `org.junit`, `com.fasterxml.jackson`, `javax.json`\n\n\
+    With these simple conventions the code will look concise and indistinguishable\
+    \ other library or framework.\n\n### Standard Libraries\n\nthe Java standard libraries\
+    \ have some rough edges and strange design decisions but 99% of it is high quality\
+    \ code written by coding experts. It is worth being familiar with these resources.\n\
+    \nEach new Java release includes many new features being added to existing libraries\
+    \ (and possible deprecation of the older ones) and addition of new libraries.\
+    \ Java 5 introduced a new concurrency library that reconciles as `java.util.concurrent`\
+    \ package. Java 6 debuteda scripting support `javax.script` package and Java compiler\
+    \ API `javax.tools` package. Java 7 included improvements to `java.util.concurrent`,\
+    \ featured a newI/O library under `java.nio.file` package, and dynamic languages\
+    \ support with `java.lang.invoke` package. Currently, Java 8 has delivered the\
+    \ long-awaited date/time API hosted as `java.time` package.\n\nJava’s platform\
+    \ is growing and evolving; it is extremely important to keep educated in this\
+    \ evolution. Whenever a third-party library or framework is introduced into a\
+    \ project, ensure the required functionality is not available in the Java standard\
+    \ libraries.\n\n### Immutability\n\nPlease take immutability seriously. If a class\
+    \ being designed or a method being implemented might provide the immutability\
+    \ guarantee, it could be used almost universally without fearing concurrent modifications.\
+    \ This will improve life as a developer and team member.\n\n### Testing\n\nTest-driven\
+    \ development (TDD) practices are widely practiced in the Java community, constantly\
+    \ working to raise the bar of the coding quality. TDD brings many benefits to\
+    \ the table, however Java standard library does not currently include any test\
+    \ framework or scaffolding.\n\nTesting is still a necessary part of modern Java\
+    \ development. Here we will cover some basics using a well written `JUnit` framework.\
+    \ Using `JUnit`, each test is a set of assertions regarding the expect object\
+    \ state or behavior.\n\nGreat tests are short and simple, testing one thing at\
+    \ a time. let us test to verify that `String.format` function from the section\
+    \ Strings returns the desired results by writing a set of tests:\n\n```java\n\
+    package com.javacodegeeks.advanced.generic;\n\nimport static org.junit.Assert.assertThat;\n\
+    import static org.hamcrest.CoreMatchers.equalTo;\n\nimport org.junit.Test;\n\n\
+    public class StringFormatTestCase {\n    @Test\n    public void testNumberFormattingWithLeadingZeros()\
+    \ {\n        final String formatted = String.format(\"%04d\", 1);\n        assertThat(formatted,\
+    \ equalTo(\"0001\"));\n    }\n\n    @Test\n    public void testDoubleFormattingWithTwoDecimalPoints()\
+    \ {\n        final String formatted = String.format(\"%.2f\", 12.324234d);\n \
+    \       assertThat(formatted, equalTo(\"12.32\"));\n    }\n}\n```\n\nThese tests\
+    \ are readable and execution is instantiations. A Java project contains hundreds\
+    \ of test cases, for quick feedback on regressions or features that are under\
+    \ development.\n\n# Chapter 2- How & When to Use Exceptions\n\n### Introduction\n\
+    \nExceptions in Java signal abnormal, or exceptional, conditions in the flow of\
+    \ the program that may prevent it from making further progress. These exceptional\
+    \ conditions could be fatal; where the program is not able to function anymore\
+    \ and should be terminated. Or the conditions could be recoverable; where the\
+    \ program continues to run but some functionality may be lost.\n\nHere we will\
+    \ walk through a typical scenario utilizing exceptions in Java Explain the checked\
+    \ and unchecked exceptions, and touch on some corner cases and helpful idioms.\n\
+    \n### Exceptions: when to use them\n\nSimply put exceptions are events or signals\
+    \ that happen while a program is executing and interrupt the normal flow of execution.\
+    \ Exceptions are a replacement to error codes and status techniques used in the\
+    \ early days. Now exceptions have gained acceptance as the standard in varied\
+    \ languages, including Java.\n\nExceptions handling has only one important rule:\
+    \ do not ignore them. Each exception should be logged but never ignored. There\
+    \ are rare instances when an exception could be ignored because not much can be\
+    \ done with it.\n\nManagement of exceptions in Java is unique. There are two distinct\
+    \ classes of exceptions: checked exceptions and unchecked exceptions.\n\nUnchecked\
+    \ exceptions signal erroneous conditions related to program logic and assumptions.\
+    \ unchecked exception would be a subclass of `RuntimeException` and that is how\
+    \ Java compiler sees that specific exception belongs.\n\n```java\npublic class\
+    \ NullPointerException extends RuntimeException {\n    public NullPointerException()\
+    \ {\n        super();\n    }\n\n    public NullPointerException(String s) {\n\
+    \        super(s);\n    }\n}\n```\n\nChecked exceptions show invalid conditions\
+    \ in areas outside the immediate control of the program (like memory, network,\
+    \ file system). Unlike the unchecked exceptions, checked exceptions must be caught\
+    \ by the caller or listed as part of the method signature. The `IOException` is\
+    \ the most known in checked:\n\n```java\npublic class IOException extends Exception\
+    \ {\n    public IOException() {\n        super();\n    }\n\n    public IOException(String\
+    \ message) {\n        super(message);\n    }\n\n    public IOException(String\
+    \ message, Throwable cause) {\n        super(message, cause);\n    }\n\n    public\
+    \ IOException(Throwable cause) {\n        super(cause);\n    }\n}\n```\n\nChecked\
+    \ and unchecked exceptions has introduced more boilerplate and ugly code patterns\
+    \ than solved the real problems. The typical pattern that has emerged within Java\
+    \ ecosystem is, to hide, or wrap, the checked exception within unchecked one.\n\
+    \nBelow is an example:\n\n```java\ntry {\n    // Some I/O operation here\n}\n\
+    ```\n"
+  raw: 'There is no reason to strictly follow any specific naming conventions in Java,
+    but there are a set of easy to follow rules that make Java code look uniform across
+    standard library or any other Java project in the wild.
+
+
+    *   local variable and method arguments names are typed in camel case:str,newLength,minimumCapacity
+
+
+    *   static final field or enumeration constant names are typed in upper case,
+    separated by underscore  ‘_’:LOG,MIN_RADIX,INSTANCE
+
+
+    *   class, enum, interface or annotation names are typed in capitalized case:StringBuilder,Runnable,@Override
+
+
+    *   generic type parameter names are usually represented as one character in upper
+    case:  T,U,E
+
+
+    *   method or field names(exceptstatic final)are typed in camel case:isEmpty,format,addAll
+
+
+    *   package names are typed in lower case:org.junit,com.fasterxml.jackson,javax.json
+
+
+    With these simple conventions the code will look concise and indistinguishable
+    other library or framework.
+
+
+    Standard Libraries
+
+
+    the Java standard libraries have some rough edges and strange design decisions
+    but 99% of it is high quality code written by coding experts. It is worth being
+    familiar with these resources.
+
+
+    Each new Java release includes many new features being added to existing libraries
+    (and possible deprecation of the older ones) and addition of new libraries. Java
+    5 introduced a  new concurrency library that reconciles as  java.util.concurrent
+    package. Java 6 debuteda scripting supportjavax.script package and Java compiler
+    API  javax.tools package.  Java 7 included improvements to  java.util.concurrent,featured
+    a  newI/O library under  java.nio.file package, and dynamic languages support
+    with  java.lang.invoke package. Currently, Java 8 has delivered the long-awaited
+    date/time API hosted as  java.time package.
+
+
+    Java’s platform is growing and evolving; it is extremely important to keep educated
+    in  this evolution. Whenever a third-party library or framework is introduced
+    into a project, ensure the required functionality is not available in the Java
+    standard libraries.
+
+
+    Immutability
+
+
+    Please take immutability seriously. If a class being designed or a method being
+    implemented might provide the immutability guarantee, it could be used almost
+    universally without fearing concurrent modifications. This will improve life as
+    a developer and team member.
+
+
+    Testing
+
+
+    Test-driven development (TDD) practices are widely practiced in the Java community,
+    constantly working to raise the bar of the coding quality. TDD brings many benefits
+    to the table, however Java standard library does not currently include any test
+    framework or scaffolding.
+
+
+    Testing is still a necessary part of modern Java development.  Here we will cover
+    some basics using a well written JUnit framework. Using JUnit, each test is a
+    set of assertions regarding the expect object state or behavior.
+
+
+    Great tests are short and simple, testing one thing at a time. let us test to
+    verify that  String.format  function from the section Strings  returns the desired
+    results by writing a set of tests:
+
+
+    | 01 | package  com.javacodegeeks.advanced.generic; |
+
+
+    | 02 |  |
+
+
+    | 03 | import  static  org.junit.Assert.assertThat; |
+
+
+    | 04 | import  static  org.hamcrest.CoreMatchers.equalTo; |
+
+
+    | 05 |  |
+
+
+    | 06 | import  org.junit.Test; |
+
+
+    | 07 |  |
+
+
+    | 08 | public  class  StringFormatTestCase { |
+
+
+    | 09 |     @Test |
+
+
+    | 10 |     public  void  testNumberFormattingWithLeadingZeros() { |
+
+
+    | 11 |         final  String formatted = String.format( "%04d", 1  ); |
+
+
+    | 12 |         assertThat( formatted, equalTo( "0001"  ) ); |
+
+
+    | 13 |     } |
+
+
+    | 14 |  |
+
+
+    | 15 |     @Test |
+
+
+    | 16 |     public  void  testDoubleFormattingWithTwoDecimalPoints() { |
+
+
+    | 17 |         final  String formatted = String.format( "%.2f", 12.324234d );
+    |
+
+
+    | 18 |         assertThat( formatted, equalTo( "12.32"  ) ); |
+
+
+    | 19 |     } |
+
+
+    | 20 | } |
+
+
+    These tests are readable and execution is instantiations. A Java project contains
+    hundreds of test cases, for quick feedback on regressions or features that are
+    under development.
+
+
+    # Chapter 2- How & When to Use Exceptions
+
+
+    Introduction
+
+
+    Exceptions in Java signal abnormal, or exceptional, conditions in the flow of
+    the program that may prevent it from making further progress. These exceptional
+    conditions could be fatal; where the program is not able to function anymore and
+    should be terminated.  Or the conditions could be recoverable; where the program
+    continues to run but some functionality may be lost.
+
+
+    Here we will walk through a typical scenario utilizing exceptions in Java  Explain
+    the checked and unchecked exceptions, and touch on some corner cases and helpful
+    idioms.
+
+
+    Exceptions: when to use them
+
+
+    Simply put exceptions are events or signals that happen while a program is executing
+    and interrupt the normal flow of execution. Exceptions are a replacement to the
+    error codes and status checking techniques used in the early days of coding. Now
+    exceptions have gained acceptance as the standard in dealing with error conditions
+    in varied coding languages, including Java.
+
+
+    Exceptions handling has only one important rule universally: do not ignore them.
+     Each exception should be logged but never ignored. There are rare instances when
+    an exception could be safely ignored because not much can be done with it.
+
+
+    Exceptions are a crucial part of argument validation and sanity checks. Every
+    public method should verify inclusion of all required preconditions prior to doing
+    any real work and raise the appropriate exception if some have not been met.
+
+
+    Checked and unchecked exceptions
+
+
+    Management of exceptions in the Java language is unique. There are two distinct
+    classes of exceptions in Java: checked exceptions and unchecked exceptions. These
+    two classes are primarily artificial, imposed by Java language rules and its compiler.
+     It should be noted that JVM makes no difference between them.
+
+
+    Unchecked exceptions signal erroneous conditions related to program logic and
+    assumptions being made (invalid arguments, null pointers, unsupported operations,
+    etc). An unchecked exception would be a subclass of RuntimeException and that
+    is how Java compiler sees that a specific exception belongs to the class of unchecked
+    items.
+
+
+    An unchecked exception is not required to be defined as caught by the caller or
+    to be listed part of the method signature (this throws keyword).NullPointerException  is
+    a widely known member of unchecked exceptions.
+
+
+    Here is its declaration from the Java standard library:
+
+
+    | 1 | public  class  NullPointerExceptionextends  RuntimeException { |
+
+
+    | 2 |     public  NullPointerException() { |
+
+
+    | 3 |         super(); |
+
+
+    | 4 |     } |
+
+
+    | 5 |  |
+
+
+    | 6 |     public  NullPointerException(String s) { |
+
+
+    | 7 |         super(s); |
+
+
+    | 8 |     } |
+
+
+    | 9 | } |
+
+
+    Checked exceptions show invalid conditions in areas outside the immediate control
+    of the program (like memory, network, file system, etc). A checked exception is
+    a direct subclass of Exception. Unlike the unchecked exceptions, checked exceptions
+    must be aughtby the caller or listed as a part of the method signature (thisthrows
+    keyword). The  IOException is the most known in checked exceptions:
+
+
+    | 01 | public  class  IOExceptionextends  Exception { |
+
+
+    | 02 |     public  IOException() { |
+
+
+    | 03 |         super(); |
+
+
+    | 04 |     } |
+
+
+    | 05 |  |
+
+
+    | 06 |     public  IOException(String message) { |
+
+
+    | 07 |         super(message); |
+
+
+    | 08 |     } |
+
+
+    | 09 |  |
+
+
+    | 10 |     public  IOException(String message, Throwable cause) { |
+
+
+    | 11 |         super(message, cause); |
+
+
+    | 12 |     } |
+
+
+    | 13 |  |
+
+
+    | 14 |     public  IOException(Throwable cause) { |
+
+
+    | 15 |         super(cause); |
+
+
+    | 16 |     } |
+
+
+    | 17 | } |
+
+
+    Checked and unchecked exceptions has introduced more boilerplate and ugly code
+    patterns than solved the real problems. The typical pattern that has emerged within
+    Java ecosystem is, to hide, or wrap, the checked exception within unchecked one.
+
+
+    Below is an example:
+
+
+    | 1 | try  { |
+
+
+    | 2 |     // Some I/O operation here |'
+  toc: []
+  trans: "\n在 Java 中没有理由严格遵守任何特定的命名规范，但有一套易于遵循的规则，使得 Java 代码在标准库或任何其他外部 Java 项目中看起来风格统一。\n\
+    \n- 局部变量和方法参数名使用驼峰命名法（camel case）：`str`、`newLength`、`minimumCapacity`\n- static\
+    \ final 字段或枚举常量使用大写，并用下划线 `_` 分隔：`LOG`、`MIN_RADIX`、`INSTANCE`\n- 类、`enum`、`interface`\
+    \ 或注解名称使用首字母大写：`StringBuilder`、`Runnable`、`@Override`\n- 泛型类型参数名通常表示为大写的字母：`T`、`U`、`E`\n\
+    - 方法或字段名（`static final` 除外）使用驼峰命名法：`isEmpty`、`format`、`addAll`\n- 包名为小写：`org.junit`、`com.fasterxml.jackson`、`javax.json`\n\
+    \n通过这些简单的约定，代码看起来非常简洁，且与其他库或框架无异。\n\n### 标准库\n\nJava 标准库存在一些粗糙的边缘和奇怪的设计决策，但 99%\
+    \ 是由编码专家编写的高质量代码。熟悉这些资源是非常值得。\n\n每个新的 Java 版本都包含现有库的许多新功能（并可能弃用旧版本）以及新库的添加。Java\
+    \ 5 引入了一个新的并发库，位于 `java.util.concurrent` 包中。Java 6 发布了脚本支持 `javax.script` 包和 Java\
+    \ 编译器 API `javax.tools` 包。Java 7 包含了对 `java.util.concurrent` 的改进，引入了 `java.nio.file`\
+    \ 包下的新 I/O 库，以及通过 `java.lang.invoke` 包对动态语言的支持。目前，Java 8 提供了期待已日期时间 API，托管在 `java.time`\
+    \ 包中。\n\nJava 平台正在增长和演进；保持这种演变的认知极其重要。每当项目中引入第三方库或框架时，请确保所需的功能在 Java 标准库中尚未提供。\n\
+    \n### 不变性\n\n请认真对待不可变性。如果设计的类或实现的方法可以提供不可变性保证，那么它几乎可以在任何地方使用，而无需担心并发修改。这将改善开发者和团队成员的生活。\n\
+    \n### 测试\n\n测试驱动开发（TDD）实践在 Java 社区被广泛采用，不断提高代码质量标准。TDD 带来了许多好处，但 Java 标准库目前不包含任何测试框架或脚手架。\n\
+    \n测试仍然是现代 Java 开发不可或缺的一部分。在这里我们将使用编写良好的 `JUnit` 框架涵盖一些基础知识。使用 `JUnit`，每个测试都是关于预期对象状态或行为的断言集合。\n\
+    \n优秀的测试是短小且简单的，一次测试一点。让我们通过编写一组测试来验证 Strings 章节中的 `String.format` 函数返回预期的结果：\n\
+    \n```java\npackage com.javacodegeeks.advanced.generic;\n\nimport static org.junit.Assert.assertThat;\n\
+    import static org.hamcrest.CoreMatchers.equalTo;\n\nimport org.junit.Test;\n\n\
+    public class StringFormatTestCase {\n    @Test\n    public void testNumberFormattingWithLeadingZeros()\
+    \ {\n        final String formatted = String.format(\"%04d\", 1);\n        assertThat(formatted,\
+    \ equalTo(\"0001\"));\n    }\n\n    @Test\n    public void testDoubleFormattingWithTwoDecimalPoints()\
+    \ {\n        final String formatted = String.format(\"%.2f\", 12.324234d);\n \
+    \       assertThat(formatted, equalTo(\"12.32\"));\n    }\n}\n```\n\n这些测试具有可读性且执行速度快。一个\
+    \ Java 项目包含数百个测试用例，以便对回归或开发中的功能提供快速反馈。\n\n# 第 2 章 - 何时以及如何使用异常\n\n### 引言\n\nJava\
+    \ 中的异常表示程序流中的异常或特殊情况，这些情况可能会阻止程序继续运行。这些异常情况可能是致命的；程序无法继续运行并应该终止；或者这些情况是可以恢复的；程序继续运行但某些功能可能会丢失。\n\
+    \n在这里我们将遍历使用 Java 异常的典型场景，解释检查异常（checked exceptions）和未检查异常（unchecked exceptions），并涉及一些边界情况和实用的用法。\n\
+    \n### 异常：何时使用\n\n简单来说，异常是程序执行期间发生并中断正常执行流的事件或信号。异常是早期使用的错误代码和状态技术的替代方案。现在，异常已被接受为包括\
+    \ Java 在内的多种语言的标准。\n\n异常处理只有一个重要的规则：不要忽略它们。每个异常都应该被记录但绝不能被忽略。在极少数情况下，由于对异常能做不了什么，异常可以被忽略。\n\
+    \nJava 中的异常管理是独特的。异常分为两个不同的类：检查异常和未检查异常。\n\n未检查异常表示与程序逻辑和假设相关的错误状况。未检查异常将是 `RuntimeException`\
+    \ 的子类，Java 编译器通过这种方式识别特定的异常所属。\n\n```java\npublic class NullPointerException extends\
+    \ RuntimeException {\n    public NullPointerException() {\n        super();\n\
+    \    }\n\n    public NullPointerException(String s) {\n        super(s);\n   \
+    \ }\n}\n```\n\n检查异常显示程序直接控制范围之外无效状况（如内存、网络、文件系统）。与未检查异常不同，检查异常必须由调用者捕获，或者作为方法签名的一部分列出。`IOException`\
+    \ 是检查异常中最著名的：\n\n```java\npublic class IOException extends Exception {\n    public\
+    \ IOException() {\n        super();\n    }\n\n    public IOException(String message)\
+    \ {\n        super(message);\n    }\n\n    public IOException(String message,\
+    \ Throwable cause) {\n        super(message, cause);\n    }\n\n    public IOException(Throwable\
+    \ cause) {\n        super(cause);\n    }\n}\n```\n\n检查异常和未检查异常引入的样板代码和丑陋的代码模式比解决实际问题的更多。在\
+    \ Java 生态系统中出现的典型模式是，将检查异常隐藏或包装在未检查异常中。\n\n下面是一个示例：\n\n```java\ntry {\n    //\
+    \ 一些 I/O 操作\n}\n```\n"
+- fmt: "\nA careful design of the exception hierarchies may reduce the amount of boilerplate\
+    \ code needed.\n\nAn Additional class of exceptions in Java that extends the `Error`\
+    \ class is `OutOfMemoryError` or `StackOverflowError`. These exceptions indicate\
+    \ a fatal execution failure that leads to immediate program termination with no\
+    \ possible recovery.\n\n### Using try-with-resources\n\nStack unwinding is often\
+    \ caused by an exception being thrown. It is common that program execution flow\
+    \ mutations happen in this same manner. Resource leaks directly related to native\
+    \ resources that remain unclosed, network sockets and file handles, for example,\
+    \ are the result of these thrown exceptions.\n\nA well-behaved, typical I/O operation\
+    \ in Java (prior to version 7) using a mandatory `finally` block to execute the\
+    \ cleanup:\n\n```java\npublic void readFile( final File file ) {\n    InputStream\
+    \ in = null;\n    try {\n        in = new FileInputStream( file );\n        //\
+    \ Some implementation here\n    } catch( IOException ex ) {\n        // Some implementation\
+    \ here\n    } finally {\n        if( in != null ) {\n            try {\n     \
+    \           in.close();\n            } catch( final IOException ex ) {\n     \
+    \           /* do nothing */\n            }\n        }\n    }\n}\n```\n\nThe `finally`\
+    \ block is not well coded (but calling `close` method on the input stream could\
+    \ also result in `IOException` exception), the attempt to close input stream (and\
+    \ free up the operation system resources behind it) will be performed. Exceptions\
+    \ should be never ignored, but the kind thrown by `close` method are the single\
+    \ exclusion of this rule.\n\nJava 7 has had a new construct introduced into the\
+    \ language named `try-with-resources` which made overall resource management easier.\
+    \ Below is the code snippet from above rewritten using `try-with-resources`:\n\
+    \n```java\npublic void readFile( final File file ) {\n    try( InputStream in\
+    \ = new FileInputStream( file ) ) {\n        // Some implementation here\n   \
+    \ } catch( final IOException ex ) {\n        // Some implementation here\n   \
+    \ }\n}\n```\n\nThe resource is required to have implementation of the interface\
+    \ `AutoCloseable` in order to be used in the `try-with-resources` blocks. Java\
+    \ compiler expands this construct from behind the scenes to something more complex,\
+    \ and developers the code looks very readable and concise. This is a very convenient\
+    \ technique where appropriate.\n\n### Exceptions and lambdas\n\nUnchecked exceptions\
+    \ will work as expected, but the syntax of Java’s lambda functions does not allow\
+    \ specification of the checked exceptions; unless those are defined by `@FunctionalInterface`\
+    \ itself, which may be thrown.\n\nThe below code snippet should not compile with\
+    \ compilation error ‘Unhandled exception type IOException’ (which could be thrown\
+    \ at line 03):\n\n```java\npublic void readFile() {\n    run( () -> {\n      \
+    \  Files.readAllBytes( new File( \"some.txt\" ).toPath() );\n    } );\n}\n\npublic\
+    \ void run( final Runnable runnable ) {\n    runnable.run();\n}\n```\n\nThe solution\
+    \ is to catch the `IOException` exception within lambda body and re-throw the\
+    \ correct `RuntimeException` (passing the original exception as cause). Below\
+    \ is an example:\n\n```java\npublic void readFile() {\n    run( () -> {\n    \
+    \    try {\n            Files.readAllBytes( new File( \"some.txt\" ).toPath()\
+    \ );\n        } catch( IOException ex ) {\n            throw new RuntimeException(\
+    \ \"Error reading file\", ex );\n        }\n    } );\n}\n```\n\nA number of functional\
+    \ interfaces are declared and have the ability to throw any `Exception` from its\
+    \ implementation, but if not, like `Runnable`, wrapping, or catching the checked\
+    \ exceptions within unchecked ones is what to do.\n\n### Standard exceptions\n\
+    \nThe Java standard libraries provide a wealth of information on exception classes.\
+    \ These classes are specifically designed to cover the majority of generic errors\
+    \ that may occur in the process execution. The table below shows the exception\
+    \ classes that are used often, always consider these prior to defining your own.\n\
+    \n| Exception | Purpose |\n| :--- | :--- |\n| `NullPointerException` | Attempts\
+    \ to use `null` where an object is required. |\n| `IllegalArgumentException` |\
+    \ Method passed an illegal or inappropriate argument. |\n| `IllegalStateException`\
+    \ | Method invoked at an illegal or inappropriate time. |\n| `IndexOutOfBoundsException`\
+    \ | Index (to a vector, to a string, or to an array) is out of range. |\n| `UnsupportedOperationException`\
+    \ | Requested operation is not supported. |\n| `ArrayIndexOutOfBoundsException`\
+    \ | An array was accessed with an illegal index. |\n| `ClassCastException` | Code\
+    \ attempted to cast an object to a subclass where it is not an instance. |\n|\
+    \ `EnumConstantNotPresentException` | Attempt to access enum constant by name\
+    \ and the type contains no constant with the specified name. |\n| `FormatException`\
+    \ | Attempts to convert a string to one of the numeric types, but the string does\
+    \ not have the appropriate format. |\n| `StringIndexOutOfBoundsException` | Index\
+    \ is either negative or greater than the size of the string. |\n| `IOException`\
+    \ | I/O exception of some sort has occurred. This class is the general class of\
+    \ exceptions produced by failed or interrupted I/O operations. |\n\n### Defining\
+    \ your own exceptions\n\nException classes are very easily defined in Java language.\
+    \ Exception hierarchies that have been carefully designed for detailed, erroneous\
+    \ conditions management and reporting to allow detailed implementation. Achieving\
+    \ the correct balance is singularly important; especially in the event that are\
+    \ too many exception classes that might complicate the development as well as\
+    \ inflate the amount of the code to catch exceptions or propagate them further\
+    \ down the stack.\n\nAll user-defined exceptions must be inherited from `RuntimeException`\
+    \ class and be part the class of unchecked exceptions, there are always some exclusions\
+    \ from the rule. Below is defined exception to dial with authentication:\n\n```java\n\
+    public class NotAuthenticatedException extends RuntimeException {\n    private\
+    \ static final long serialVersionUID = 2079235381336055509L;\n\n    public NotAuthenticatedException()\
+    \ {\n        super();\n    }\n\n    public NotAuthenticatedException( final String\
+    \ message ) {\n        super( message );\n    }\n\n    public NotAuthenticatedException(\
+    \ final String message, final Throwable cause ) {\n        super( message, cause\
+    \ );\n    }\n}\n```\n\nThe purpose of this exception is to signal about non-existing\
+    \ or invalid user credentials during sing-in process, for example:\n\n```java\n\
+    public void signin( final String username, final String password ) {\n    if(\
+    \ !exists( username, password ) ) {\n        throw new NotAuthenticatedException(\"\
+    User / Password combination is not recognized\") );\n    }\n}\n```\n\nPassing\
+    \ the informative message along with the exception helps to troubleshoot production\
+    \ systems. If the exception was re-thrown as the result of a different exceptional\
+    \ condition, the initial exception must be preserved using the cause constructor\
+    \ argument. This will help to source the problem.\n\n### Documenting exceptions\n\
+    \nThe next topic will be discussing how to make exceptions to be a part of the\
+    \ documentation as well.\n"
+  raw: '| 3 | } catch( final  IOException ex ) { |
+
+
+    | 4 |     throw  new  RuntimeException( "I/O operation failed", ex ); |
+
+
+    | 5 | } |
+
+
+    A careful design of the exception hierarchies may reduce the amount of boilerplate
+    code needed.
+
+
+    An Additional class of exceptions in Java that extends the Error class isOutOfMemoryError  orStackOverflowError.These
+    exceptions indicate a fatal execution failure that leads to immediate program
+    termination with no possible recovery.
+
+
+    Using try-with-resources
+
+
+    Stack unwinding is often caused by an exception being thrown.  It is common that
+    program execution flow mutations happen in this same manner.  Resource leaks directly
+    related to native resources that remain unclosed, network sockets and file handles,
+    for example, are the result of these thrown exceptions.
+
+
+    A well-behaved, typical I/O operation in Java (prior to version 7) using a mandatoryfinally
+    block to execute the cleanup:
+
+
+    | 01 | public  void  readFile( final  File file ) { |
+
+
+    | 02 |     InputStream in = null; |
+
+
+    | 03 |  |
+
+
+    | 04 |     try  { |
+
+
+    | 05 |         in = new  FileInputStream( file ); |
+
+
+    | 06 |         // Some implementation here |
+
+
+    | 07 |     } catch( IOException ex ) { |
+
+
+    | 08 |         // Some implementation here |
+
+
+    | 09 |     } finally  { |
+
+
+    | 10 |         if( in != null  ) { |
+
+
+    | 11 |             try  { |
+
+
+    | 12 |                 in.close(); |
+
+
+    | 13 |             } catch( final  IOException ex ) { |
+
+
+    | 14 |                 /* do nothing */ |
+
+
+    | 15 |             } |
+
+
+    | 16 |         } |
+
+
+    | 17 |     } |
+
+
+    | 18 | } |
+
+
+    Thefinally block lisnot well coded (but calling close method on the input stream
+    could also result in  IOException exception), the attempt to close input stream
+    (and free up the operation system resources behind it) will be performed. Exceptions
+    should be never ignored, but the kind thrown by close method are the single exclusion
+    of this rule.
+
+
+    Java 7 has had a new construct introduced into the language named try-with-resources
+    which made overall resource management easier.
+
+
+    Below is the code snippet from above rewritten using try-with-resources:
+
+
+    | 1 | public  void  readFile( final  File file ) { |
+
+
+    | 2 |     try( InputStreamin = new  FileInputStream( file ) ) { |
+
+
+    | 3 |         // Some implementation here |
+
+
+    | 4 |     } catch( final  IOException ex ) { |
+
+
+    | 5 |         // Some implementation here |
+
+
+    | 6 |     } |
+
+
+    | 7 | } |
+
+
+    The resource is required to have implementation of the interface AutoCloseable
+    in order to be used in the try-with-resources blocks. Java compiler expands this
+    construct from behind the scenes to something more complex, and developers the
+    code looks very readable and concise. This is a very convenient technique where
+    appropriate.
+
+
+    Exceptions and lambdas
+
+
+    Unchecked exceptions will work as expected, but the syntax of Java’s lambda functions
+    does not allow specification of the checked exceptions; unless those are defined
+    by@FunctionalInterface  itself, which may be thrown.
+
+
+    The below code snippet should not compile with compilation error ‘Unhandled exception
+    type IOException’ (which could be thrown at line03):
+
+
+    | 1 | public  void  readFile() { |
+
+
+    | 2 |      run( () -> { |
+
+
+    | 3 |          Files.readAllBytes( new  File( "some.txt"  ).toPath() ); |
+
+
+    | 4 |      } ); |
+
+
+    | 5 |  } |
+
+
+    | 6 |  |
+
+
+    | 7 |  public  void  run( final  Runnable runnable ) { |
+
+
+    | 8 |      runnable.run(); |
+
+
+    | 9 |  } |
+
+
+    The solution is to catch the  IOException exception within the lambda function
+    body and re-throw the correctRuntimeException exception (passing the original
+    exception as a cause).
+
+
+    Below is an example:
+
+
+    | 1 | public  void  readFile() { |
+
+
+    | 2 |     run( () -> { |
+
+
+    | 3 |         try  { |
+
+
+    | 4 |             Files.readAllBytes( new  File( "some.txt"  ).toPath() ); |
+
+
+    | 5 |         } catch( final  IOException ex ) { |
+
+
+    | 6 |             throw  new  RuntimeException( "Error reading file", ex ); |
+
+
+    | 7 |         } |
+
+
+    | 8 |     } ); |
+
+
+    | 9 | } |
+
+
+    A number of functional interfaces are declared and have the ability to throw any
+    Exception from its implementation, but if not, like Runnable, wrapping, or catching
+    the checked exceptions within unchecked ones is what to do.
+
+
+    Standard Java exceptions
+
+
+    The Java standard libraries provide a wealth of information on exception classes. 
+    These classes are specifically designed to cover the majority of generic errors
+    that may occur in the process program execution.  The table below shows the exception
+    classes that are used most often, always consider these prior to defining your
+    own. 
+
+
+    | Exception Class | Purpose |
+
+
+    | NullPointerException | Attempts to usenull  where an object is required. |
+
+
+    | IllegalArgumentException | Method passed an illegal or inappropriate argument.
+    |
+
+
+    | IllegalStateException | Method invoked at an illegal or inappropriate time.
+    |
+
+
+    | IndexOutOfBoundsException | Index (to a vector, to a string, or to an array)
+    is out of range. |
+
+
+    | UnsupportedOperationException | Requested operation is not supported. |
+
+
+    | ArrayIndexOutOfBoundsException | An array was accessed with an illegal index.
+    |
+
+
+    | ClassCastException | Code attempted to cast an object to a subclass where it
+    is not an instance. |
+
+
+    | EnumConstantNotPresentException | Attempt to access anenum  constant by name
+    and theenum  type contains no constant with the specified name. |
+
+
+    | NumberFormatException | Attempts to convert a string to one of the numeric types,
+    but that the string does not have the appropriate format. |
+
+
+    | StringIndexOutOfBoundsException | Index is either negative or greater than the
+    size of the string. |
+
+
+    | IOException | I/O exception of some sort has occurred. This class is the general
+    class of exceptions produced by failed or interrupted I/O operations. |
+
+
+    Defining your own exceptions
+
+
+    Exception classes are very easily defined in Java language.  Exception hierarchies
+    that have been carefully designed for detailed, erroneous conditions management
+    and reporting and to allow detailed implementation. Achieving the correct balance
+    is singularly important; especially in the event that there are too many exception
+    classes that might complicate the development as well as inflate the amount of
+    the code needed to catch exceptions or propagate them further down the stack.
+
+
+    All user-defined exceptions must be inherited from  RuntimeException class and
+    be part of the class of unchecked exceptions, there are always some exclusions
+    from the rule.
+
+
+    Below is defined exception to dial with authentication:
+
+
+    | 01 | public  class  NotAuthenticatedExceptionextends  RuntimeException { |
+
+
+    | 02 |     private  static  final  long  serialVersionUID = 2079235381336055509L;
+    |
+
+
+    | 03 |  |
+
+
+    | 04 |     public  NotAuthenticatedException() { |
+
+
+    | 05 |         super(); |
+
+
+    | 06 |     } |
+
+
+    | 07 |  |
+
+
+    | 08 |     public  NotAuthenticatedException( final  String message ) { |
+
+
+    | 09 |         super( message ); |
+
+
+    | 10 |     } |
+
+
+    | 11 |  |
+
+
+    | 12 |     public  NotAuthenticatedException( final  String message, final  Throwable
+    cause ) { |
+
+
+    | 13 |         super( message, cause ); |
+
+
+    | 14 |     } |
+
+
+    | 15 | } |
+
+
+    The purpose of this exception is to signal about non-existing or invalid user
+    credentials during sing-in process, for example:
+
+
+    | 1 | public  void  signin( final  String username, final  String password ) {
+    |
+
+
+    | 2 |     if( !exists( username, password ) ) { |
+
+
+    | 3 |         throw  new  NotAuthenticatedException( |
+
+
+    | 4 |             "User / Password combination is not recognized"  ); |
+
+
+    | 5 |     } |
+
+
+    | 6 | } |
+
+
+    Passing the informative message along with the exception helps to troubleshoot
+    production systems. If the exception was re-thrown as the result of a different
+    exceptional condition, the initial exception must be preserved using the cause
+    constructor argument. This will help to source the problem.
+
+
+    Documenting exceptions
+
+
+    The next topic will be discussing how to make exceptions to be a part of the documentation
+    as well.'
+  toc: []
+  trans: "\n\n精心设计的异常层级结构可以减少所需的样板代码。\n\nJava 中继承自 `Error` 类的其他异常类包括 `OutOfMemoryError`\
+    \ 或 `StackOverflowError`。这些异常表示致命的执行失败，会导致程序立即终止且无法恢复。\n\n### 使用 try-with-resources\n\
+    \n栈回溯（Stack unwinding）通常是由抛出异常引起的。程序执行流的变化通常也以这种方式发生。例如，直接与未关闭的本地资源、网络套接字和文件句柄相关的资源泄漏，就是这些抛出异常的结果。\n\
+    \n在 Java（版本 7 之前）中，一个良好的典型 I/O 操作使用强制的 `finally` 块来执行清理工作：\n\n```java\npublic\
+    \ void readFile( final File file ) {\n    InputStream in = null;\n    try {\n\
+    \        in = new FileInputStream( file );\n        // Some implementation here\n\
+    \    } catch( IOException ex ) {\n        // Some implementation here\n    } finally\
+    \ {\n        if( in != null ) {\n            try {\n                in.close();\n\
+    \            } catch( final IOException ex ) {\n                /* do nothing\
+    \ */\n            }\n        }\n    }\n}\n```\n\n`finally` 块的代码编写并不完美（但调用输入流的\
+    \ `close` 方法也可能导致 `IOException` 异常），关闭输入流（并释放其背后的操作系统资源）的操作将被执行。异常永远不被忽略，但 `close`\
+    \ 方法抛出的异常是这一规则的唯一例外。\n\nJava 7 在语言中引入了一种名为 `try-with-resources` 的新结构，使得整体资源管理变得更加简单。以下是使用\
+    \ `try-with-resources` 重写的上述代码段：\n\n```java\npublic void readFile( final File\
+    \ file ) {\n    try( InputStream in = new FileInputStream( file ) ) {\n      \
+    \  // Some implementation here\n    } catch( final IOException ex ) {\n      \
+    \  // Some implementation here\n    }\n}\n```\n\n资源需要实现 `AutoCloseable` 接口才能在\
+    \ `try-with-resources` 块中使用。Java 编译器会在后台将此结构扩展为更复杂的代码，而开发者的代码看起来非常易读且简洁。在适当的情况下，这是一种非常方便的技术。\n\
+    \n### 异常与 lambda\n\n未检查的异常（Unchecked exceptions）将按预期工作，但 Java Lambda 函数的语法不允许指定受检查异常（Checked\
+    \ exceptions）；除非这些异常是由 `@FunctionalInterface` 本身定义的且该异常可能被抛出。\n\n下面的代码段将无法通过编译，会产生编译错误“Unhandled\
+    \ exception type IOException”（该异常可能在第 03 行抛出）：\n\n```java\npublic void readFile()\
+    \ {\n    run( () -> {\n        Files.readAllBytes( new File( \"some.txt\" ).toPath()\
+    \ );\n    } );\n}\n\npublic void run( final Runnable runnable ) {\n    runnable.run();\n\
+    }\n```\n\n解决方案是在 Lambda 体内部捕获 `IOException` 异常并重新抛出正确的 `RuntimeException`（将原始异常作为原因传递）。以下是一个示例：\n\
+    \n```java\npublic void readFile() {\n    run( () -> {\n        try {\n       \
+    \     Files.readAllBytes( new File( \"some.txt\" ).toPath() );\n        } catch(\
+    \ IOException ex ) {\n            throw new RuntimeException( \"Error reading\
+    \ file\", ex );\n        }\n    } );\n}\n```\n\n许多函数式接口已经声明，并能够从其实现中抛出任何 `Exception`，但如果不能（如\
+    \ `Runnable`），则包装或在未检查异常内部捕获受检查异常是正确的做法。\n\n### 标准异常\n\nJava 标准库提供了大量关于异常类的信息。这些类被专门设计用于涵盖过程执行过程中可能发生的大多数通用错误。下表显示了经常使用的异常类，在定义自己的异常之前，请务必考虑这些。\n\
+    \n| 异常 | 用途 |\n| :--- | :--- |\n| `NullPointerException` | 在需要对象的地方尝试使用 `null`。\
+    \ |\n| `IllegalArgumentException` | 为方法传递了非法或不适当的参数。 |\n| `IllegalStateException`\
+    \ | 在非法或不适当的时间调用了方法。 |\n| `IndexOutOfBoundsException` | 索引（针对向量、字符串或数组）超出范围。 |\n\
+    | `UnsupportedOperationException` | 请求的操作不支持。 |\n| `ArrayIndexOutOfBoundsException`\
+    \ | 使用非法索引访问了数组。 |\n| `ClassCastException` | 代码尝试将对象转换为其不是其实例的子类。 |\n| `EnumConstantNotPresentException`\
+    \ | 尝试通过名称访问枚举常量，但该类型不包含指定名称的常量。 |\n| `FormatException` | 尝试将字符串转换为数值类型之一，但字符串没有适当的格式。\
+    \ |\n| `StringIndexOutOfBoundsException` | 索引为负或大于字符串的大小。 |\n| `IOException` |\
+    \ 发生了某种 I/O 异常。该类是失败或中断的 I/O 操作产生的异常的通用类。 |\n\n### 定义你自己的异常\n\n在 Java 语言中定义异常类非常容易。为了详细的错误条件管理和报告，精心设计的异常层级允许进行详细的实现。实现正确的平衡至关重要；特别是当异常类过多时，可能会使开发复杂化，并增加捕获异常或将其向下层传递的代码量。\n\
+    \n所有用户定义的异常必须继承自 `RuntimeException` 类，并属于未检查异常类，但该规则总有一些例外。以下是用于处理身份验证的定义的异常：\n\
+    \n```java\npublic class NotAuthenticatedException extends RuntimeException {\n\
+    \    private static final long serialVersionUID = 2079235381336055509L;\n\n  \
+    \  public NotAuthenticatedException() {\n        super();\n    }\n\n    public\
+    \ NotAuthenticatedException( final String message ) {\n        super( message\
+    \ );\n    }\n\n    public NotAuthenticatedException( final String message, final\
+    \ Throwable cause ) {\n        super( message, cause );\n    }\n}\n```\n\n该异常的目的是在登录过程中对不存在或无效的用户凭据发出信号，例如：\n\
+    \n```java\npublic void signin( final String username, final String password )\
+    \ {\n    if( !exists( username, password ) ) {\n        throw new NotAuthenticatedException(\"\
+    用户名 / 密码组合不被识别\") );\n    }\n}\n```\n\n随异常传递信息性消息有助于排查生产系统的故障。如果异常是由于另一种异常情况而重新抛出的，则必须使用原因构造函数参数保留初始异常。这将有助于追踪问题来源。\n\
+    \n### 文档异常\n\n下一个主题将讨论如何让异常也成为文档的一部分。\n\n"
+- fmt: "\nA method that may throw the checked exception, as part of its implementation,\
+    \ should then be made apart of the method signature. This is done using `throws`\
+    \ declaration. The `@throws` tag is used for describing those exceptions within\
+    \ the Java documentation tool.\n\nBelow is an example:\n\n```java\n/**\n * Reads\
+    \ file from the file system.\n * @throws IOException if an I/O error occurs.\n\
+    \ */\npublic void readFile() throws IOException {\n    // Some implementation\
+    \ here\n}\n```\n\nThe unchecked exceptions are not declared as a part of method\
+    \ signature. Document them so the caller of the method is aware of possible exceptions\
+    \ that may be thrown (using the same `@throws` tag).\n\nBelow is an example:\n\
+    \n```java\n/**\n * Parses the string representation of some concept.\n * @param\
+    \ str String to parse\n * @throws IllegalArgumentException if the specified string\
+    \ cannot be parsed properly\n * @throws NullPointerException if the specified\
+    \ string is null\n */\npublic void parse(final String str) {\n    // Some implementation\
+    \ here\n}\n```\n\nAlways document the exceptions that the methods could throw.\
+    \ It will help to implement proper exception handling and recovering (fallback)\
+    \ logic from the coding start, keeping them safe from troubleshooting issues in\
+    \ production systems.\n\n## Exceptions and logging\n\nLogging ([http://en.wikipedia.org/wiki/Logfile](http://en.wikipedia.org/wiki/Logfile))\
+    \ is a necessary part of any complex Java application, library or framework. It\
+    \ is a journal of the events in the application and exceptions that are the crucial\
+    \ part of the flow. Exceptions must be correctly logged and analyzed later in\
+    \ order to discover problems in the applications and troubleshoot.\n\n## Conclusion\n\
+    \nExceptions are an important feature of the Java language. Exceptions are the\
+    \ basis of the management of errors in Java. Exceptions make handling and signaling\
+    \ erroneous conditions an easy job and, in contrast to error codes, flags and\
+    \ statuses, once occurred, exceptions cannot be ignored.\n\nThese words of advice\
+    \ will assist with the understanding of the Java coding standards and guidelines\
+    \ described in this book more effectively. These tools may also be used when coding\
+    \ or programming in most languages. Languages like Python, C++, CSS, and JavaScript\
+    \ all use general formats, succession rules, exceptions and standards to ensure\
+    \ that information is easily understood, edited and added to, so that improvements\
+    \ and new versions of programs and apps may be developed.\n\n1. **Understand the\
+    \ standards.** Take time to understand greater productivity through each standard\
+    \ and guideline. Do not declare each local variable on its own line simply because\
+    \ you were told to. Do it because there is an understanding that it increases\
+    \ the comprehension of your code.\n2. **Believe in them.** Following standards\
+    \ should be something that is always done because it is the best way to code.\n\
+    3. **Follow them while you are coding, not as an afterthought.** Clean code is\
+    \ easier. Both during development and maintenance. Following standards will increase\
+    \ productivity, while developing, and will make the code easier to maintain. If\
+    \ clean code is produced from the beginning, you can benefit from it as it is\
+    \ being created.\n4. **Make them part of your quality assurance process.** Ensure\
+    \ that the source code follows the standards adopted by who the work is being\
+    \ done for. Standards should be used as the basis to train and mentor developers\
+    \ to become more effective.\n\nJava is a dynamic and useful coding languages,\
+    \ hopefully this book assisted you in your understanding some more advanced aspects\
+    \ of coding in Java.\n\nThank you for reading. I hope you enjoy it. I ask you\
+    \ to leave your honest feedback.\n"
+  raw: 'A method that may throw the checked exception, as part of its implementation,
+    should then be made  apart of the method signature.  This is done usingthrows
+    declaration. The@throws tag is used for describing those exceptions within the
+    Java documentation tool.
+
+
+    Below is an example:
+
+
+    | 1 | /** |
+
+
+    | 2 |  * Reads file from the file system. |
+
+
+    | 3 |  * @throws IOException if an I/O error occurs. |
+
+
+    | 4 |  */ |
+
+
+    | 5 | public  void  readFile() throws  IOException { |
+
+
+    | 6 |     // Some implementation here |
+
+
+    | 7 | } |
+
+
+    The unchecked exceptions are not declared as a part of method signature. Document
+    them so the caller of the method is aware of possible exceptions that may be thrown
+    (using the same @throws tag).
+
+
+    Below is an example:
+
+
+    | 1 | /** |
+
+
+    | 2 |  * Parses the string representation of some concept. |
+
+
+    | 3 |  * @param str String to parse |
+
+
+    | 4 |  * @throws IllegalArgumentException if the specified string cannot be parsed
+    properly |
+
+
+    | 5 |  * @throws NullPointerException if the specified string is null |
+
+
+    | 6 |  */ |
+
+
+    | 7 | public  void  parse( final  String str ) { |
+
+
+    | 8 |     // Some implementation here |
+
+
+    | 9 | } |
+
+
+    Always document the exceptions that the methods could throw. It will help to implement
+    proper exception handling and recovering (fallback) logic from the coding start,
+    keeping them safe from troubleshooting issues in production systems.
+
+
+    Exceptions and logging
+
+
+    Logging ([http://en.wikipedia.org/wiki/Logfile](http://en.wikipedia.org/wiki/Logfile))
+    is a necessary part of any complex Java application, library or framework. It
+    is a journal of the events in the application and exceptions that are the crucial
+    part of the flow. Exceptions must be correctly logged and analyzed later in order
+    to discover problems in the applications and troubleshoot.
+
+
+    Conclusion
+
+
+    Exceptions are an important feature of the Java language. Exceptions are the basis
+    of the management of errors in Java. Exceptions make handling and signaling erroneous
+    conditions an easy job and, in contrast to error codes, flags and statuses, once
+    occurred, exceptions cannot be ignored.
+
+
+    # Conclusion
+
+
+    These words of advice will assist with the understanding of the  Java coding standards
+    and guidelines described in this book more effectively. These tools may also be
+    used when coding or programming in most languages.  Languages like Python, C++,
+    CSS, and JavaScript all use general formats, succession rules, exceptions and
+    standards to ensure that information is easily understood, edited and added to,
+    so that improvements and new versions of programs and apps may be developed. 
+
+
+    1.  Understand the standards. Take time to understand greater productivity through
+    each standard and guideline.  Do not declare each local variable on its own line
+    simply because you were told to. Do it because there is an understanding that
+    it increases the comprehension of your code.
+
+
+    2.  Believe in them. Following standards should be something that is always done
+    because it is the best way to code.
+
+
+    3.  Follow them while you are coding, not as an afterthought. Clean code is easier.
+    Both during development and maintenance. Following standards will increase productivity,
+    while developing, and will make the code easier to maintain. If clean code is
+    produced from the beginning, you can benefit from it as it is being created.
+
+
+    4.  Make them part of your quality assurance process. Ensure that the source code
+    follows the standards adopted by who the work is being done for. Standards should
+    be used as the basis to train and mentor developers to become more effective.
+
+
+    Java is a dynamic and useful coding languages, hopefully this book assisted you
+    in your understanding some more advanced aspects of coding in Java.
+
+
+    Thank you for reading. I hope you enjoy it. I ask you to leave your honest feedback.'
+  toc: []
+  trans: "\n作为实现的一部分，可能会抛出检查异常（checked exception）的方法应当作为方法签名的一部分。这是通过 `throws` 声明来实现的。`@throws`\
+    \ 标签用于在 Java 文档工具中描述这些异常\n\n以下是一个示例：\n\n```java\n/**\n * 从文件系统读取文件。\n * @throws\
+    \ IOException 如果发生 I/O 错误。\n */\npublic void readFile() throws IOException {\n\
+    \    // Some implementation here\n}\n```\n\n未检查异常（unchecked exceptions）不声明为方法签名的一部分。但请对它们进行记录，以便方法的调用者能够意识到可能抛出的异常（使用相同的\
+    \ `@throws` 标签）。\n\n以下是一个示例：\n\n```java\n/**\n * 解析某些概念的字符串表示。\n * @param str\
+    \ 要解析的字符串\n * @throws IllegalArgumentException 如果指定的字符串无法正确解析\n * @throws NullPointerException\
+    \ 如果指定的字符串为 null\n */\npublic void parse(final String str) {\n    // Some implementation\
+    \ here\n}\n```\n\n务必对方法可能抛出的异常进行记录。这有助于从编码开始就实现适当的异常处理和恢复（回退）逻辑，确保它们免受生产系统中故障排除问题的干扰。\n\
+    \n## 异常与日志\n\n日志（[`en.wikipedia.org/wiki/Logfile`](http://en.wikipedia.org/wiki/Logfile)）是任何复杂的\
+    \ Java 应用、库或框架必不可少的一部分。它是应用程序事件的日志，而异常是流程中的关键部分。必须正确记录异常并在稍后进行分析，以便发现应用程序中的问题并进行故障排除。\n\
+    \n## 结论\n\n异常是 Java 语言的一重要特性。异常是 Java 错误管理的基础。异常使处理和信号错误状态变得简单；与错误码、标志和状态相反，异常一旦发生就无法被忽略。\n\
+    \n这些建议将帮助你更有效地理解书中描述的 Java 编码标准和指南。在使用大多数语言进行编码或编程时也可以使用这些工具。Python、C++、CSS 和\
+    \ JavaScript 等语言都使用通用格式、规则、异常和标准来确保信息易于理解、编辑和添加，从而开发程序和应用程序的改进和新版本。\n\n1. **理解标准。**\
+    \ 花时间理解每种标准和指南如何提高生产力。不要仅仅因为被告知就将每个局部变量单独写一行。这样做是因为你理解到这可以提高对代码的理解。\n2. **相信它们。**\
+    \ 遵循标准应该是始终如一做的事，因为它是最好的编码方式。\n3. **在编码时遵循它们，而不是事后补救。** 洁洁的代码更容易，无论是在开发还是维护期间都是如此。遵循标准将提高开发时的生产力，并使代码更易维护。如果从一开始就产生洁洁的代码，你就能在创建过程中从中受益。\n\
+    4. **将它们成为你质量保证流程的一部分。** 确保源代码遵循工作对象所采纳的标准。标准应作为培训和指导开发人员变得更高效的基础。\n\nJava 是一门动态且实用的编码语言，希望这本书能帮助你更深入地理解\
+    \ Java 编码的某些高级方面。\n\n感谢阅读。希望你喜欢。请留下你诚恳的反馈。\n"

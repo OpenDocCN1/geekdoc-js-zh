@@ -1,0 +1,180 @@
+name: JavaScript ： From Beginner To Expert In Less Than A Week
+name_cn: JavaScript：一周内从初学者到精通
+slug: javascript-from-beginner-to-expert-in-less-than-a-week
+toc:
+- - '#'
+  - JavaScript：一周内从初学者到精通
+- - '##'
+  - JavaScript 简介
+- - '##'
+  - JavaScript 的用途
+- - '##'
+  - JavaScript 能为你做什么
+- - '##'
+  - 进入 DOM 脚本
+- - '##'
+  - JavaScript 的其他现代用途
+- - '##'
+  - 明智且负责任地使用 JavaScript
+- - '##'
+  - JavaScript 和 HTML
+- - '##'
+  - HTML 基础
+- - '###'
+  - HTML
+- - '###'
+  - jQuery
+- - '###'
+  - 为什么使用 jQuery?
+- - '###'
+  - 如何使用 jQuery?
+- - '###'
+  - 常用 jQuery 方法
+- - '###'
+  - jQuery Ajax
+- - '###'
+  - 结论
+- - '##'
+  - jQuery 插件结构
+- - '##'
+  - 为我们的插件添加功能
+- - '##'
+  - Javascript 和 CSS
+- - '##'
+  - 使用 JavaScript 获取伪元素
+- - '#'
+  - 使用加载器加载 CSS 文件
+- - '#'
+  - CSS 基础
+- - '##'
+  - CSS pointer-events
+- - '###'
+  - 使用
+- - '###'
+  - 基础
+- - '####'
+  - 浏览器支持
+- - '###'
+  - 组件
+- - '####'
+  - 网格
+- - '####'
+  - 加载旋转
+- - '####'
+  - 文本截断
+- - '####'
+  - 向上动画
+- - '##'
+  - 自定义
+- - '##'
+  - 命令行值
+- - '#'
+  - 每个设计师都应该知道的 20 个必备 CSS 技巧
+- - '###'
+  - 绝对定位
+- - '###'
+  - '* 选择器'
+- - '###'
+  - 覆盖所有样式
+- - '###'
+  - 居中
+- - '####'
+  - 文本
+- - '####'
+  - 内容
+- - '####'
+  - 垂直对齐（针对单行文本）
+- - '####'
+  - 悬停效果
+- - '###'
+  - Transition（过渡）
+- - '###'
+  - 7. Link states（链接状态）
+- - '###'
+  - 8. Easily resize images to fit（轻松缩放图像以适应）
+- - '###'
+  - 9. Control the elements of a section（控制区域元素）
+- - '###'
+  - 10. Direct children（直接子元素）
+- - '####'
+  - Specific Child Elements（特定子元素）
+- - '###'
+  - 11. Apply CSS to multiple classes, or selectors（向多个类或选择器应用 CSS）
+- - '###'
+  - '12. box-sizing: border-box'
+- - '###'
+  - 13. :before
+- - '###'
+  - 14. :after
+- - '###'
+  - 15. content
+- - '###'
+  - 16. reset
+- - '###'
+  - 17. text-transform
+- - '###'
+  - 18. vh
+- - '###'
+  - 19. Vertical screen height（垂直屏幕高度）
+- - '###'
+  - 20. Style telephone links（设置电话链接）
+- - '##'
+  - JavaScript 函数的不同方式
+- - '###'
+  - 1 – 裸露锚点
+- - '###'
+  - 2 – 锚点哈希链接
+- - '###'
+  - 3 – 锚点伪协议
+- - '###'
+  - 4 – 锚点伪协议 void
+- - '###'
+  - 5 – 锚点返回 false
+- - '###'
+  - 6 – 锚点漂亮 URL/jQuery
+- - '##'
+  - 学习 CSS 语法和正确应用
+- - '###'
+  - CSS 语法由三个元素组成。
+- - '####'
+  - 内联样式
+- - '####'
+  - 内部样式
+- - '####'
+  - 外部样式
+- - '##'
+  - 为什么 JavaScript 对大小写敏感如此重要？
+- - '##'
+  - 理解注释
+- - '##'
+  - 信誉循环
+- - '###'
+  - 偶尔
+- - '###'
+  - 感知
+- - '###'
+  - GNP
+- - '###'
+  - GNP 之前
+- - '###'
+  - 线条之前
+- - '###'
+  - 我们的觉醒
+- - '###'
+  - Ajax 技术与性能
+- - '###'
+  - 安全与开发
+- - '##'
+  - CSS - 基础
+- - '###'
+  - 什么是 CSS
+- - '###'
+  - 你可以用 CSS 做什么
+- - '###'
+  - 如何让搜索引擎……
+- - '###'
+  - CSS 语法
+- - '###'
+  - CSS 的放置
+- - '###'
+  - 总结

@@ -1,0 +1,137 @@
+name: Java： Beginner's Guide to Programming Code with Java (Java, JavaScript, Python,
+  Code, Programming Language, Programming, Computer Programming)
+name_cn: Java 编程入门指南
+slug: java-beginners-guide-to-programming-code-with-java-java-java
+toc:
+- - '#'
+  - Java 编程入门指南
+- - '##'
+  - 介绍
+- - '##'
+  - 第 1 章：Java
+- - '###'
+  - 虚拟机
+- - '###'
+  - 软件开发工具包
+- - '###'
+  - Java 的工作原理
+- - '###'
+  - NetBeans
+- - '###'
+  - Code
+- - '##'
+  - Java 结构
+- - '##'
+  - 运行 Java 程序
+- - '##'
+  - 第 2 章：变量
+- - '###'
+  - 金额
+- - '###'
+  - Double 变量
+- - '###'
+  - Code
+- - '###'
+  - Short 和 float
+- - '###'
+  - Code
+- - '###'
+  - 简单算术
+- - '###'
+  - 运算符优先级
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - String 变量
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - 客户端输入
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '##'
+  - 选项面板 (Option Panes)
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '###'
+  - Code
+- - '#'
+  - 第三章：
+- - '##'
+  - Java 的控制流 (Control Flow for Java)
+- - '###'
+  - If 语句
+- - '###'
+  - If ... else
+- - '###'
+  - If ... else if
+- - '###'
+  - 嵌套 if (Nested if)
+- - '###'
+  - 布尔值
+- - '####'
+  - 代码
+- - '####'
+  - 代码
+- - '###'
+  - Switch 语句
+- - '####'
+  - 代码
+- - '###'
+  - 循环
+- - '####'
+  - 代码
+- - '###'
+  - For 循环
+- - '####'
+  - 代码
+- - '###'
+  - While 循环
+- - '####'
+  - 代码
+- - '###'
+  - do while
+- - '#'
+  - 第 4 章：数组
+- - '##'
+  - 循环与数组
+- - '##'
+  - 字符串与数组
+- - '###'
+  - 多维数组
+- - '###'
+  - 用于数组的列表
+- - '###'
+  - 代码
+- - '###'
+  - 字符串比较
+- - '###'
+  - 代码
+- - '###'
+  - indexOf
+- - '###'
+  - 代码
+- - '###'
+  - 代码

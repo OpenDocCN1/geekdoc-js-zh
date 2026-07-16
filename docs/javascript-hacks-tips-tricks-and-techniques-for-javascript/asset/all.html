@@ -1,0 +1,1155 @@
+<p><img src="cover.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 743 1186" preserveaspectratio="none">
+<image width="743" height="1186" xlink:href="cover.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000.html"></span></p>
+<h2 class="calibre1"
+id="part0000.html_calibre_pb_0"><strong>Contents</strong></h2>
+<p><br />
+</p>
+<p><a
+href="#part0001.html_UGI0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER ONE
+Introduction</a></p>
+<p><a
+href="#part0002.html_1T140-be68632f57af4bd3967d594a82bfa4b5">CHAPTER TWO
+arrays</a></p>
+<p><a
+href="#part0003.html_2RHM0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER
+THREE conditionals</a></p>
+<p><a
+href="#part0004.html_3Q280-be68632f57af4bd3967d594a82bfa4b5">CHAPTER
+FOUR functions</a></p>
+<p><a
+href="#part0005.html_4OIQ0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER
+FIVE numbers</a></p>
+<p><a
+href="#part0006.html_5N3C0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER SIX
+objects</a></p>
+<p><a
+href="#part0007.html_6LJU0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER
+SEVEN strings</a></p>
+<p><a
+href="#part0008.html_7K4G0-be68632f57af4bd3967d594a82bfa4b5">CHAPTER
+EIGHT miscellaneous</a></p>
+<p><span id="part0001.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span id="part0001.html_UGI8-be68632f57af4bd3967d594a82bfa4b5"
+class="scrivener3">CHAPTER ONE</span></p>
+<p><span class="scrivener4">Introduction</span></p>
+<p> </p>
+<p><span class="scrivener7">Introduction</span><span><br />
+</span></p>
+<p><span>I've been working with code for over 30 years now. I still find
+new things to learn about coding every day. Here is a small collection
+of JavaScript tips tricks and techniques that I have picked up over the
+years.</span></p>
+<p><span> </span></p>
+<p><span>You can download samples of this code at my website, </span><a
+href="https://www.williamclarkson.net/code"><span>WilliamClarkson.net</span></a><span>,
+and if you have any questions about the code or JavaScript in particular
+you can contact me there and I'll be happy to do my best to help you.
+</span></p>
+<p> </p>
+<p><span>I love talking about code!</span></p>
+<p> </p>
+<p><span>If you are interested in using JavaScript for game design you
+might want to check out some of my other books, or my website on game
+development </span><a
+href="https://www.phasergames.com"><span>phasergames.com</span></a><span>.
+</span></p>
+<p> </p>
+<p><span>I hope you enjoy this collection of JavaScript Snippets!
+</span></p>
+<p> </p>
+<p><span id="part0002.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER TWO</span></p>
+<p><span class="scrivener4">arrays</span></p>
+<p> </p>
+<p><span class="scrivener7">Array to list</span></p>
+<p> </p>
+<p><span>This is a handy little function I've used in a couple of my
+programs to be able to convert an array to an HTML list.</span></p>
+<p> </p>
+<p><span>function arrayToList(array) {</span></p>
+<p><span> var oString = "&lt;ol&gt;";</span></p>
+<p><span> var len = array.length;</span></p>
+<p><span> for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> var word = array[i];</span></p>
+<p><span> oString += "&lt;li&gt;" + word + "&lt;/li&gt;";</span></p>
+<p><span> }</span></p>
+<p><span> oString += "&lt;/ol&gt;";</span></p>
+<p><span> return oString;</span></p>
+<p><span>}</span></p>
+<p><span>window.onload = function() {</span></p>
+<p><span> document.getElementById('output').innerHTML =
+arrayToList(['red', 'blue', 'green']);</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Cache the array length</span></p>
+<p> </p>
+<p><span>Storing an array length in a variable means that the browser
+will not have to calculate the length of the array every time the loop
+is executed. I've seen good performance results on my own code over the
+years.</span></p>
+<p> </p>
+<p><span>Some research seems to suggest that the browser makers
+realizing that the array had to be calculated every time have now done
+workarounds to cache the array length for you, however, I still like to
+do it. It is also a good practice because you never know how old the
+browser that your user is using. </span></p>
+<p> </p>
+<p><span class="scrivener7">not cached</span></p>
+<p><span>for (i = 0; i &lt; array.length; i++) {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">cached</span></p>
+<p><span>var len = array.length;</span></p>
+<p><span>for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> //do stuff </span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Binary search</span></p>
+<p> </p>
+<p><span>This is a trick I used way back in the 80s when computers were
+a lot slower than they are today. It works only on arrays that are
+alphabetically sorted but you could also modify this code where you have
+an array of objects it's alphabetically sorted on a key.</span></p>
+<p> </p>
+<p><span>It works like this: imagine that you have a telephone book and
+you want to find a certain name. You don't start at the letter A and
+work your way through until you find the name that you are looking for.
+However, that's how we often do it in programming with just a for Loop
+going through every name until we find the one that we want. With the
+phone book, we open it to a random page and then turn forwards or
+backward depending on where we landed. This code looks at the element in
+the middle or halfway through the array. It did either discards the last
+half or the first half of the array depending on if the name that is
+looking for is greater than or less than the value of that middle
+element. It keeps discarding half of the array until it finds the one
+that it wants</span></p>
+<p> </p>
+<p> </p>
+<p><span>function binSearch(array, value) {</span></p>
+<p><span> var first = 0,</span></p>
+<p><span> last = array.length - 1,</span></p>
+<p><span> middle = Math.floor((last + first) / 2);</span></p>
+<p><span> while (array[middle] != value &amp;&amp; first &lt; last)
+{</span></p>
+<p><span> if (value &lt; array[middle]) {</span></p>
+<p><span> last = middle - 1;</span></p>
+<p><span> } else if (value &gt; array[middle]) {</span></p>
+<p><span> first = middle + 1;</span></p>
+<p><span> }</span></p>
+<p><span> middle = Math.floor((last + first) / 2);</span></p>
+<p><span> }</span></p>
+<p><span> return (array[middle] != value) ? -1 : middle;</span></p>
+<p><span>}</span></p>
+<p><span>var array = ['Norberto', 'Fay', 'Leonia', 'Silvana',
+'Julieann', 'Nubia', 'Verlene', 'Mittie', 'Ophelia', 'Kali', 'Mertie',
+'Alaine', 'Caryn', 'Joeann', 'Leonie', 'Carolina', 'Kimber', 'Lacresha',
+'Lianne', 'Tatiana'];</span></p>
+<p> </p>
+<p><span>//sort the array</span></p>
+<p><span>array.sort();</span></p>
+<p><span>console.log(binSearch(array, 'Nubia'));</span></p>
+<p><span>//returns 5</span></p>
+<p> </p>
+<p><span class="scrivener7">Clear array</span></p>
+<p> </p>
+<p><span>A quick little trick to empty out an array that you want to
+keep using it simply to set the length of the array to zero.</span></p>
+<p> </p>
+<p> </p>
+<p><span>var array = [11, 22, 33, 44, 55, 66];</span></p>
+<p><span>//</span></p>
+<p><span>console.log(array);</span></p>
+<p><span>//set length to zero</span></p>
+<p><span>//</span></p>
+<p><span>array.length=0;</span></p>
+<p><span>//</span></p>
+<p><span>console.log(array);</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Truncate array</span></p>
+<p> </p>
+<p><span>Just as setting an array length 0 will clear the array, you can
+also truncate the array by setting the length to the number of elements
+you want to keep.</span></p>
+<p> </p>
+<p><span>var array = [11, 22, 33, 44, 55, 66];</span></p>
+<p><span>//</span></p>
+<p><span>console.log(array);</span></p>
+<p><span>//set length to zero</span></p>
+<p><span>//</span></p>
+<p><span>array.length=3;</span></p>
+<p><span>//</span></p>
+<p><span>console.log(array);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span> [11,22,33]</span></p>
+<p> </p>
+<p><span class="scrivener7">Slice vs Delete</span></p>
+<p> </p>
+<p><span>Deleting an element on an array will set that element to
+undefined. Slice will simply remove it.</span></p>
+<p> </p>
+<p><span>//array.splice(index,delete_count)</span></p>
+<p> </p>
+<p><span>array.splice(position, 1);</span></p>
+<p><span>delete array[1];</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">delete output</span></p>
+<p> </p>
+<p><span>[ 'a', undefined, 'c' ]</span></p>
+<p> </p>
+<p><span class="scrivener7">splice output</span></p>
+<p> </p>
+<p><span> [ 'a', 'c' ]</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Shuffle</span></p>
+<p> </p>
+<p><span>The shuffle array function will take two random elements of an
+array and swap their values. I use this function a lot in card
+games.</span></p>
+<p> </p>
+<p><span>var array = [1, 2, 3, 4, 5, 6, 7];</span></p>
+<p><span>for (var i = 0; i &lt; 20; i++) {</span></p>
+<p><span> array = shuffleArray(array);</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>function shuffleArray(arr) {</span></p>
+<p><span> var index1 = Math.floor(Math.random() *
+arr.length);</span></p>
+<p><span> var index2 = Math.floor(Math.random() *
+arr.length);</span></p>
+<p><span> //</span></p>
+<p><span> //</span></p>
+<p><span> var temp = arr[index1];</span></p>
+<p><span> arr[index1] = arr[index2];</span></p>
+<p><span> arr[index2] = temp;</span></p>
+<p><span> return arr;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Get last element</span></p>
+<p> </p>
+<p><span>Use the built-in array slice function to be able to get a list
+of elements from the end of an array.</span></p>
+<p> </p>
+<p><span>var array = [1, 2, 3, 4, 5, 6,7,8,9]; </span></p>
+<p> </p>
+<p><span class="scrivener7">get last element</span></p>
+<p><span>console.log(array.slice(-1)); // [9] </span></p>
+<p> </p>
+<p><span class="scrivener7">get last two elements</span></p>
+<p><span>console.log(array.slice(-2)); // [8,9] </span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Join 2 arrays</span></p>
+<p> </p>
+<p><span>If you want to join two arrays together take the array that you
+want to go at the beginning and then concat the second array to it
+</span></p>
+<p> </p>
+<p> </p>
+<p><span>var array1 = [1, 2, 3]; </span></p>
+<p><span>var array2 = [4, 5, 6]; </span></p>
+<p><span>var array3=array1.concat(array2);</span></p>
+<p> </p>
+<p><span>console.log(array3);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p><span> [1,2,3,4,5,6];</span></p>
+<p> </p>
+<p><span class="scrivener7">Using Array.find</span></p>
+<p> </p>
+<p><span>Use the array built-in find function to quickly search through
+an array of objects.</span></p>
+<p> </p>
+<p> </p>
+<p><span>const animals = [</span></p>
+<p><span>{ type: 'Dog', name: 'Rover'},</span></p>
+<p><span>{ type: 'Cat', name: 'Eliza'},</span></p>
+<p><span>{ type: 'Cat', name: 'Angel'}]</span></p>
+<p> </p>
+<p> </p>
+<p><span>animal = animals.find(animal =&gt; animal.type ==='Cat'
+&amp;&amp; animal.name === 'Eliza');</span></p>
+<p><span>console.log(animal); </span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>{ type: 'Cat', name: 'Eliza' }</span></p>
+<p> </p>
+<p><span class="scrivener7">Get random element</span></p>
+<p> </p>
+<p><span>This function will pick an element at random from the
+array.</span></p>
+<p> </p>
+<p> </p>
+<p><span>var items=['fishes','cats','dogs','elephants'];</span></p>
+<p> </p>
+<p><span>var randItem = items[Math.floor(Math.random() *
+items.length)];</span></p>
+<p> </p>
+<p><span class="scrivener7">Get unique values</span></p>
+<p> </p>
+<p><span>There are two methods listed here to be able to get unique
+elements from an array the first one is an older one that I've used over
+the years the second one is a new way of accomplishing the task with
+functionality more recently added to JavaScript. </span></p>
+<p> </p>
+<p><span>//old method</span></p>
+<p><span>function getUniques(array) {</span></p>
+<p><span> var uArray = [];</span></p>
+<p><span> var len = array.length;</span></p>
+<p><span> for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> uArray[array[i]] = 1;</span></p>
+<p><span> }</span></p>
+<p><span> var nArray = [];</span></p>
+<p><span> for (var key in uArray) {</span></p>
+<p><span> nArray.push(key);</span></p>
+<p><span> }</span></p>
+<p><span> return nArray;</span></p>
+<p><span>}</span></p>
+<p><span>console.log(getUniques([1, 2, 3, 'fish', 3, 'cake', 'cake',
+'cake', 1, 2, 3, 4, 'fish']));</span></p>
+<p> </p>
+<p> </p>
+<p><span>//ES6 -newer shorter method</span></p>
+<p><span>var arr = [...new Set([1, 2, 3, 'fish', 3, 'cake', 'cake',
+'cake', 1, 2, 3, 4, 'fish'])];</span></p>
+<p> </p>
+<p><span>console.log(arr);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>[1,2,3,'fish','cake',4]</span></p>
+<p> </p>
+<p><span id="part0003.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER THREE</span></p>
+<p><span class="scrivener4">conditionals</span></p>
+<p> </p>
+<p><span class="scrivener7">Conditinal shortcurt</span></p>
+<p> </p>
+<p><span>Instead of using an if statement to call a function you can
+simply take the condition and use the ‘and’ (&amp;&amp;) to call the
+function if the conditional is true.</span></p>
+<p> </p>
+<p><span class="scrivener7">old way</span></p>
+<p><span>if (conected) { </span></p>
+<p><span> login();</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">new way</span></p>
+<p><span>conected &amp;&amp; login(); </span></p>
+<p> </p>
+<p><span class="scrivener7">Ternary operator</span></p>
+<p> </p>
+<p><span>Using a ternary operator can shorten several lines of if-then
+code into one </span></p>
+<p> </p>
+<p><span class="scrivener7">old way</span></p>
+<p> </p>
+<p><span>var age = 19;</span></p>
+<p><span>var canDrink;</span></p>
+<p><span>if (age &gt; 20) {</span></p>
+<p><span> canDrink = true;</span></p>
+<p><span>} else {</span></p>
+<p><span> canDrink = false;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">new way</span></p>
+<p> </p>
+<p><span>var age = 19</span></p>
+<p><span>canDrink=(age&gt;20)?true:false;</span></p>
+<p> </p>
+<p><span>Console.log(canDrink);</span></p>
+<p> </p>
+<p><span>The formula for this is:</span></p>
+<p> </p>
+<p><span>variable=(condition)?meetsCondition:doesNotMeetCondition</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Ternary operator with methods</span></p>
+<p> </p>
+<p><span>You can also use ternary operators to call a method.</span></p>
+<p> </p>
+<p><span class="scrivener7">old way</span></p>
+<p> </p>
+<p><span>if (success) {</span></p>
+<p><span> avatar.start();</span></p>
+<p><span>} else {</span></p>
+<p><span> avatar.stop();</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">new way</span></p>
+<p> </p>
+<p><span>success ? avatar.start() : avatar.stop();</span></p>
+<p> </p>
+<p><span class="scrivener7">Switch vs If</span></p>
+<p> </p>
+<p><span>Using a switch statement instead of a series of if-then
+statements will make your code more readable and in some cases speed up
+the execution.</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">old way</span></p>
+<p> </p>
+<p><span>if (color == "red") {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p><span>if (color == "blue") {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p><span>if (color == "green") {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p><span>if (color == "brown") {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p><span>if (color == "yellow") {</span></p>
+<p><span> //do stuff</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">new way</span></p>
+<p> </p>
+<p><span>switch (color) {</span></p>
+<p><span> case "red":</span></p>
+<p><span> //do stuff</span></p>
+<p><span> break;</span></p>
+<p><span> case "blue":</span></p>
+<p><span> //do stuff</span></p>
+<p><span> break;</span></p>
+<p><span> case "green":</span></p>
+<p><span> //do stuff</span></p>
+<p><span> break;</span></p>
+<p><span> case "brown":</span></p>
+<p><span> //do stuff</span></p>
+<p><span> break;</span></p>
+<p><span> case "yellow":</span></p>
+<p><span> //do stuff</span></p>
+<p><span> break;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span id="part0004.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER FOUR</span></p>
+<p><span class="scrivener4">functions</span></p>
+<p> </p>
+<p><span class="scrivener7">Assumed Arguments</span></p>
+<p> </p>
+<p><span>If you want to be able to send an unfixed amount of arguments
+to a function, you can just leave the argument section blank and then
+use the arguments keyword to access any parameters past. It's worth
+noting that although the arguments act as an array it is not an actual
+JavaScript array.</span></p>
+<p> </p>
+<p><span>function sum1(a, b) {</span></p>
+<p><span> return a + b;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>function sum2() {</span></p>
+<p><span> return arguments[0] + arguments[1];</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>function sum3() {</span></p>
+<p><span> var sum = 0;</span></p>
+<p><span> for (var i = 0, len = arguments.length; i &lt; len; ++i)
+{</span></p>
+<p><span> sum += arguments[i];</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>sum1(1,2);</span></p>
+<p><span>sum2(1,2);</span></p>
+<p><span>sum3(1,2,3,4,5,6,7,8,9);</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Object vs Parameters</span></p>
+<p> </p>
+<p><span>Many times when I am writing classes there are times when I
+will wind up with 10 to 15 parameters being passed to the constructor.
+Some of the parameters are optional so when I want to add a required
+parameter later I have to go back and change a lot of code. I have found
+in some cases passing a single object as a sole parameter saves a lot of
+time </span></p>
+<p> </p>
+<p> </p>
+<p><span>function doAttack(weapon, damage, monster, useMagic = false)
+{</span></p>
+<p><span> console.log('you use the ' + weapon + ' on the ' +
+monster);</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>function doAttack2(obj) {</span></p>
+<p><span> console.log('you use the ' + obj.weapon + ' on the ' +
+obj.monster);</span></p>
+<p><span>}</span></p>
+<p><span>doAttack('sword', 10, orc);</span></p>
+<p><span>var attackObj = {</span></p>
+<p><span> 'weapon': 'sword',</span></p>
+<p><span> 'damage': 10,</span></p>
+<p><span> 'monster': 'orc'</span></p>
+<p><span>};</span></p>
+<p><span>attackObj.extraStuff = 'whatever';</span></p>
+<p><span>attackObj.speed = 10;</span></p>
+<p><span>doAttack2(attackObj);</span></p>
+<p> </p>
+<p><span class="scrivener7">Defaults</span></p>
+<p> </p>
+<p><span>Use the double pipe (||) ‘or’ keyword to set defaults to a
+variable. The defaults will be set if no value is passed for that
+variable. </span></p>
+<p> </p>
+<p><span>function User(name, age) { </span></p>
+<p><span> this.name = name || "Oliver Stirling";</span></p>
+<p><span> this.age = age || 63;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Short Hand Functions</span></p>
+<p> </p>
+<p><span>You can use double arrow notation to create a
+function.</span></p>
+<p> </p>
+<p><span>function calcCircumference(diameter) {</span></p>
+<p><span> return Math.PI * diameter</span></p>
+<p><span>}</span></p>
+<p><span>calcCircumference = diameter =&gt; (Math.PI *
+diameter;)</span></p>
+<p><span id="part0005.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER FIVE</span></p>
+<p><span class="scrivener4">numbers</span></p>
+<p> </p>
+<p><span class="scrivener7">Even or Odd?</span></p>
+<p> </p>
+<p><span>If you divide a number by 2 and there is no remainder it is an
+even number else it is odd.</span></p>
+<p> </p>
+<p> </p>
+<p><span>function isEven(num)</span></p>
+<p><span>{</span></p>
+<p><span> return num/2==Math.floor(num/2);</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Is divisible by?</span></p>
+<p> </p>
+<p><span>Use this function to tell if a number is divisible by another
+number without remainders. </span></p>
+<p> </p>
+<p><span>function isDivisbleBy(num, div) {</span></p>
+<p><span> return (num / div == Math.floor(num / div));</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Get Max or Min values</span></p>
+<p> </p>
+<p><span>Use the built-in math functions of JavaScript to get the
+maximum or minimum number in an array</span></p>
+<p> </p>
+<p><span>var numbers = [3, 3354, 143, -245, 118, 400, 122222,
+-80011];</span></p>
+<p><span>var maxInNumbers = Math.max.apply(Math, numbers);</span></p>
+<p><span>var minInNumbers = Math.min.apply(Math, numbers);</span></p>
+<p><span>//</span></p>
+<p><span>//</span></p>
+<p><span>console.log("max", maxInNumbers);</span></p>
+<p><span>console.log("min=" + minInNumbers);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>122222</span></p>
+<p><span>-80011</span></p>
+<p> </p>
+<p><span class="scrivener7">Random In Range</span></p>
+<p> </p>
+<p><span>This function will return a random whole number between the two
+numbers that are passed to it.</span></p>
+<p> </p>
+<p><span>function between(start, end) {</span></p>
+<p><span> return Math.floor(Math.random() * (end - start + 1)) +
+start;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Round to decimal places</span></p>
+<p> </p>
+<p><span>This bit of code is good for rounding off to a certain decimal
+place </span></p>
+<p> </p>
+<p> </p>
+<p><span>var num =8.675309;</span></p>
+<p><span>num = Math.floor(num*1000)/1000;</span></p>
+<p> </p>
+<p><span>//10 for 2 places</span></p>
+<p><span>//100 for 3 places</span></p>
+<p><span>//1000 for 4 places</span></p>
+<p> </p>
+<p><span class="scrivener7">String to Number</span></p>
+<p> </p>
+<p><span>Use the plus sign operator to convert a string to a
+number.</span></p>
+<p> </p>
+<p> </p>
+<p><span>function toNumber(strNumber) { </span></p>
+<p><span> return +strNumber;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>var myNum=toNumber('213');</span></p>
+<p><span>console.log(myNum);</span></p>
+<p><span id="part0006.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER SIX</span></p>
+<p><span class="scrivener4">objects</span></p>
+<p> </p>
+<p><span class="scrivener7">Array to object</span></p>
+<p> </p>
+<p><span>Use the ...arr keyword to convert an array to an
+object</span></p>
+<p> </p>
+<p><span>var arr = [ 'fish', 'chicken', 100]</span></p>
+<p> </p>
+<p><span>var obj = { ...arr }</span></p>
+<p><span>console.log(obj) </span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span> {0: "fish", 1: "chicken", 2: 100}</span></p>
+<p> </p>
+<p><span class="scrivener7">Clone Object</span></p>
+<p> </p>
+<p><span>We can use JSON to turn an object into a string and then use
+that string to create a new object.</span></p>
+<p> </p>
+<p> </p>
+<p><span>var obj={'name':'Jane','age':20};</span></p>
+<p> </p>
+<p><span>var newObj = JSON.parse(JSON.stringify(obj));</span></p>
+<p> </p>
+<p><span>newObj.age=22;</span></p>
+<p> </p>
+<p><span>console.log(obj);</span></p>
+<p><span>console.log(newObj);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>{name: "Jane", age: 20}</span></p>
+<p><span>{name: "Jane", age: 22}</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Shorthand create</span></p>
+<p> </p>
+<p><span>If you pass variables into an object without a key-value pair
+the name of the variable will become the key with the value
+set.</span></p>
+<p> </p>
+<p> </p>
+<p><span>var x=10;</span></p>
+<p><span>var y=10;</span></p>
+<p> </p>
+<p><span>var obj = { x:x, y:y };</span></p>
+<p><span>console.log(obj);</span></p>
+<p> </p>
+<p><span>var obj2={x,y};</span></p>
+<p><span>console.log(obj2);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>Both objects will output as: {x: 10, y: 10}</span></p>
+<p><span id="part0007.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER SEVEN</span></p>
+<p><span class="scrivener4">strings</span></p>
+<p> </p>
+<p><span class="scrivener7">Cap first letter</span></p>
+<p> </p>
+<p><span>Put the first letter of a word in caps. </span></p>
+<p> </p>
+<p> </p>
+<p><span>function capFirstLetter(word) {</span></p>
+<p><span> return word.charAt(0).toUpperCase() +
+word.slice(1);</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Get words</span></p>
+<p> </p>
+<p><span>Split a sentence into an array of words.</span></p>
+<p> </p>
+<p><span>function getWords(sentence) {</span></p>
+<p><span> var words=sentence.split(" ");</span></p>
+<p><span> return words;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Cap all words</span></p>
+<p> </p>
+<p><span>Let's combine a couple of the functions we've already made and
+capitalize the first letter of every word in a sentence.</span></p>
+<p> </p>
+<p><span>function capAllWords(sentence) {</span></p>
+<p><span> var words = sentence.split(" ");</span></p>
+<p><span> var numWords = words.length;</span></p>
+<p><span> for (var i = 0; i &lt; numWords; i++) {</span></p>
+<p><span> words[i] = words[i].charAt(0).toUpperCase() +
+words[i].slice(1);</span></p>
+<p><span> }</span></p>
+<p><span> return words;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span class="scrivener7">Multi-line text</span></p>
+<p> </p>
+<p><span>Use backticks for line returns instead of escape
+characters.</span></p>
+<p> </p>
+<p><span class="scrivener7">Old way</span></p>
+<p><span>var lorem = 'Lorem ipsum dolor sit amet,
+consectetur\n\t'</span></p>
+<p><span>+ 'adipisicing elit, sed do eiusmod tempor
+incididunt\n\t'</span></p>
+<p><span>+ 'ut labore et dolore magna aliqua. Ut enim ad
+minim\n\t'</span></p>
+<p><span>+ 'veniam, quis nostrud exercitation ullamco
+laboris\n\t'</span></p>
+<p><span>+ 'nisi ut aliquip ex ea commodo consequat. Duis
+aute\n\t'</span></p>
+<p><span>+ 'irure dolor in reprehenderit in voluptate velit
+esse.\n\t';</span></p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">New way</span></p>
+<p> </p>
+<p><span>var lorem = `Lorem ipsum dolor sit amet, consectetur</span></p>
+<p><span>adipisicing elit, sed do eiusmod tempor incididunt</span></p>
+<p><span>ut labore et dolore magna aliqua. Ut enim ad minim</span></p>
+<p><span>veniam, quis nostrud exercitation ullamco laboris</span></p>
+<p><span>nisi ut aliquip ex ea commodo consequat. Duis aute</span></p>
+<p><span>irure dolor in reprehenderit in voluptate velit
+esse.`;</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Random String</span></p>
+<p> </p>
+<p><span>This function is useful for generating test data and
+nonces.</span></p>
+<p> </p>
+<p> </p>
+<p><span>makeRandString(len) {</span></p>
+<p><span> var text = "";</span></p>
+<p><span> var letters =
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";</span></p>
+<p><span> for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> text += letters.charAt(Math.floor(Math.random() *
+letters.length));</span></p>
+<p><span> }</span></p>
+<p><span> text += " ";</span></p>
+<p><span> return text;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>makeRandString(10);</span></p>
+<p> </p>
+<p><span class="scrivener7">Remove double spaces</span></p>
+<p> </p>
+<p><span>Sometimes double spaces creep into strings from user input.
+This function will remove the double spaces.</span></p>
+<p> </p>
+<p><span>function removeDoubleSpaces(text) {</span></p>
+<p><span> for (var i = 0; i &lt; 100; i++) {</span></p>
+<p><span> text = text.split(" ").join(" ");</span></p>
+<p><span> }</span></p>
+<p><span> return text;</span></p>
+<p><span>}</span></p>
+<p><span>var myText = removeDoubleSpaces("test me to see if I remove all
+double spaces or not !");</span></p>
+<p> </p>
+<p><span>console.log(myText);</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Replace all</span></p>
+<p> </p>
+<p><span>This function splits a string by the needle or search phrase
+and then rejoins the array into a string using the replace keyword as
+the delimiter </span></p>
+<p> </p>
+<p><span>function replaceAll(haystack,needle,replace)</span></p>
+<p><span>{</span></p>
+<p><span> var array=haystack.split(needle);</span></p>
+<p><span> var str=array.join(replace);</span></p>
+<p><span> return str;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>var myString="It was the best of times, it was the worst of
+times";</span></p>
+<p> </p>
+<p><span>myString=replaceAll(myString,'times','occasions');</span></p>
+<p> </p>
+<p><span class="scrivener7">Returns</span></p>
+<p> </p>
+<p><span>It was the best of occasions, it was the worst of
+occasions</span></p>
+<p> </p>
+<p><span class="scrivener7">Find string in string</span></p>
+<p> </p>
+<p><span>Use this function to tell if one string contains another
+</span></p>
+<p> </p>
+<p> </p>
+<p><span>function contains(haystack,needle)</span></p>
+<p><span>{</span></p>
+<p><span> return string.indexOf(substring)!=1;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>//</span></p>
+<p><span>//</span></p>
+<p><span>console.log(contains("the quick brown fox jumped over the lazy
+dog","fox"));</span></p>
+<p> </p>
+<p><span class="scrivener7">Returns</span></p>
+<p><span>true</span></p>
+<p><span id="part0008.html"></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener3">CHAPTER EIGHT</span></p>
+<p><span class="scrivener4">miscellaneous</span></p>
+<p> </p>
+<p><span class="scrivener7">Shortcut for console.log</span></p>
+<p> </p>
+<p><span>If you use console.log a lot you can shorten that function and
+save yourself from some typing by binding the function to the document
+</span></p>
+<p> </p>
+<p><span>var cl = console.log.bind(document);</span></p>
+<p><span>cl('shorter to type');</span></p>
+<p><span> </span><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span> shorter to type</span></p>
+<p> </p>
+<p><span>cl(1 + 1);</span></p>
+<p> </p>
+<p><span class="scrivener7">Output</span></p>
+<p> </p>
+<p><span>2</span></p>
+<p> </p>
+<p><span class="scrivener7">console.table</span></p>
+<p> </p>
+<p><span>Use table.log to see a visual representation of your objects in
+the console.</span></p>
+<p> </p>
+<p><span>var person={'name':'Hero','hp':100};</span></p>
+<p><span>console.table(person);</span></p>
+<p> </p>
+<p><img src="images/00001.jpeg" class="calibre4" alt=" " /></p>
+<p> </p>
+<p><span class="scrivener7">Using classes</span></p>
+<p> </p>
+<p><span>Classes are a fairly new addition to JavaScript. this allows us
+a lot more flexibility than the old function object.</span></p>
+<p> </p>
+<p><span>function Person(firstName, lastName) {</span></p>
+<p><span> this.firstName = firstName;</span></p>
+<p><span> this.lastName = lastName;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>class Person2 {</span></p>
+<p><span> constructor(firstName, lastName) {</span></p>
+<p><span> this.firstName = firstName;</span></p>
+<p><span> this.lastName = lastName;</span></p>
+<p><span> }</span></p>
+<p><span> sayName()</span></p>
+<p><span> {</span></p>
+<p><span> console.log("Hi "+this.firstName);</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span>var player = new Person('Bob', 'Smith');</span></p>
+<p><span>var player2=new Person2('Bob','Smith');</span></p>
+<p> </p>
+<p><span>player2.sayName();</span></p>
+<p> </p>
+<p><span class="scrivener7">Extending Classes</span></p>
+<p> </p>
+<p><span>By using the Extends keyword we can take all the properties and
+methods of one class and add on to them in our new class.</span></p>
+<p> </p>
+<p><span>class Person2 {</span></p>
+<p><span> constructor(firstName, lastName) {</span></p>
+<p><span> this.firstName = firstName;</span></p>
+<p><span> this.lastName = lastName;</span></p>
+<p><span> }</span></p>
+<p><span> sayName() {</span></p>
+<p><span> console.log("Hi " + this.firstName);</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p><span>class Superman extends Person2 {</span></p>
+<p><span> constructor(firstName, lastName) {</span></p>
+<p><span> super(firstName, lastName);</span></p>
+<p><span> }</span></p>
+<p><span> fly() {</span></p>
+<p><span> console.log("up up and away");</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p><span>var player = new Superman('Clark', 'Kent');</span></p>
+<p><span>player.sayName();</span></p>
+<p><span>player.fly();</span></p>
+<p> </p>
+<p><span class="scrivener7">Linked List</span></p>
+<p> </p>
+<p><span>A linked list is a series of objects that have a reference to
+either the previous item the next item or both. using a linked list can
+have a great advantage over looping through items. I use it frequently
+when I'm making virtual worlds and it really speeds up the the
+program.</span></p>
+<p> </p>
+<p> </p>
+<p><span>class Person {</span></p>
+<p><span> constructor(name) {</span></p>
+<p><span> this.name = name;</span></p>
+<p><span> this.nextPerson = null;</span></p>
+<p><span> }</span></p>
+<p><span> sayName() {</span></p>
+<p><span> console.log(this.name);</span></p>
+<p><span> if (this.nextPerson) {</span></p>
+<p><span> this.nextPerson.sayName();</span></p>
+<p><span> }</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p><span>var names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer',
+'Araceli', 'Jolie', 'Denyse'];</span></p>
+<p><span>//</span></p>
+<p><span>//</span></p>
+<p><span>var firstPerson = null;</span></p>
+<p><span>var previousPerson = null;</span></p>
+<p><span>//</span></p>
+<p><span>//make the list</span></p>
+<p><span>var len = names.length;</span></p>
+<p><span>for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> //make a new person</span></p>
+<p><span> var person = new Person(names[i]);</span></p>
+<p><span> //set first person to current if not already set</span></p>
+<p><span> if (firstPerson == null) {</span></p>
+<p><span> firstPerson = person;</span></p>
+<p><span> }</span></p>
+<p><span> //if previousPerson exists then assign current person as
+next</span></p>
+<p><span> if (previousPerson) {</span></p>
+<p><span> previousPerson.nextPerson = person;</span></p>
+<p><span> }</span></p>
+<p><span> previousPerson = person;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p> </p>
+<p><span>//call the first person sayName function</span></p>
+<p><span>//to start a chain reaction</span></p>
+<p><span>firstPerson.sayName();</span></p>
+<p> </p>
+<p><span class="scrivener7">Delete a linked list element</span></p>
+<p> </p>
+<p><span>To remove elements from a linked list we need to have a
+reference to both the next and previous elements of the list. To remove
+an element we simply take the previous element and set the next item to
+the next item of the item we're deleting. It makes more sense in the
+code!</span></p>
+<p> </p>
+<p><span>class Person {</span></p>
+<p><span> constructor(name) {</span></p>
+<p><span> this.name = name;</span></p>
+<p><span> this.nextPerson = null;</span></p>
+<p><span> this.previousPerson = null;</span></p>
+<p><span> }</span></p>
+<p><span> sayName() {</span></p>
+<p><span> console.log(this.name);</span></p>
+<p><span> if (this.nextPerson) {</span></p>
+<p><span> this.nextPerson.sayName();</span></p>
+<p><span> }</span></p>
+<p><span> }</span></p>
+<p><span> removeByName(name) {</span></p>
+<p><span> if (this.name == name) {</span></p>
+<p><span> this.previousPerson.nextPerson = this.nextPerson;</span></p>
+<p><span> }</span></p>
+<p><span> if (this.nextPerson) {</span></p>
+<p><span> this.nextPerson.removeByName(name);</span></p>
+<p><span> }</span></p>
+<p><span> }</span></p>
+<p><span>}</span></p>
+<p><span>var names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer',
+'Araceli', 'Jolie', 'Denyse'];</span></p>
+<p><span>//</span></p>
+<p><span>//</span></p>
+<p><span>var firstPerson = null;</span></p>
+<p><span>var lastPerson = null;</span></p>
+<p><span>//</span></p>
+<p><span>//</span></p>
+<p><span>var len = names.length;</span></p>
+<p><span>for (var i = 0; i &lt; len; i++) {</span></p>
+<p><span> //make a new person</span></p>
+<p><span> var person = new Person(names[i]);</span></p>
+<p><span> //set first person to current if not already set</span></p>
+<p><span> if (firstPerson == null) {</span></p>
+<p><span> firstPerson = person;</span></p>
+<p><span> }</span></p>
+<p><span> //if lastPerson exists then assign current person as
+next</span></p>
+<p><span> //asign lastPerson to previousPerson of current
+person</span></p>
+<p><span> if (lastPerson) {</span></p>
+<p><span> lastPerson.nextPerson = person;</span></p>
+<p><span> person.previousPerson = lastPerson;</span></p>
+<p><span> }</span></p>
+<p><span> lastPerson = person;</span></p>
+<p><span>}</span></p>
+<p><span>firstPerson.removeByName('Summer');</span></p>
+<p><span>firstPerson.sayName();</span></p>
+<p> </p>
+<p><span class="scrivener7">Collision detection</span></p>
+<p> </p>
+<p><span>This is a function I use in a lot of my games to tell if two
+objects are touching each other.</span></p>
+<p> </p>
+<p><span>function checkCollide(obj1, obj2) {</span></p>
+<p><span> var distX = Math.abs(obj1.x - obj2.x);</span></p>
+<p><span> var distY = Math.abs(obj1.y - obj2.y);</span></p>
+<p><span> if (distX &lt; obj1.width / 2) {</span></p>
+<p><span> if (distY &lt; obj1.height / 2) {</span></p>
+<p><span> return true;</span></p>
+<p><span> }</span></p>
+<p><span> }</span></p>
+<p><span> return false;</span></p>
+<p><span>}</span></p>
+<p><span>var obj1={x:100,y:100,width:200,height:50};</span></p>
+<p><span>var obj2={x:150,y:120,width:200,height:50};</span></p>
+<p> </p>
+<p><span>checkCollide(obj1,obj2);</span></p>
+<p> </p>
+<p><span class="scrivener7">Convert to Boolean</span></p>
+<p> </p>
+<p><span>Use double exclamation points (!!) to turn a number into a
+Boolean. Please note this only works with zero for false. negative
+numbers will still give a true value.</span></p>
+<p> </p>
+<p><span>function checkPlayerHealth(hitPoints) {</span></p>
+<p><span> var isAlive = !!hitPoints;</span></p>
+<p><span> return isAlive;</span></p>
+<p><span>}</span></p>
+<p><span>console.log(checkPlayerHealth(100));</span></p>
+<p><span>console.log(checkPlayerHealth(0));</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span class="scrivener7">Get URL of page</span></p>
+<p> </p>
+<p><span>If you need to know the name of the page that you are on use
+window.location.href</span></p>
+<p> </p>
+<p><span>function getUrl()</span></p>
+<p><span>{</span></p>
+<p><span> return window.location.href;</span></p>
+<p><span>}</span></p>
+<p> </p>
+<p><span>console.log(getUrl());</span></p>
+<p> </p>
+<p><span class="scrivener7">Local storage - Strings</span></p>
+<p> </p>
+<p><span>Use local storage to store strings into the browser memory
+cache.</span></p>
+<p> </p>
+<p><span>//set the value</span></p>
+<p><span>localStorage.setItem('monsterName', 'orc');</span></p>
+<p> </p>
+<p><span>//get the value</span></p>
+<p><span>var name=localStorage.getItem('monsterName');</span></p>
+<p> </p>
+<p><span class="scrivener7">Local storage - Objects</span></p>
+<p> </p>
+<p><span>To store an object into local storage first use JSON.stringify
+to turn it into a string.</span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><span>var monsterObj = { 'name':'orc','health':100,'defense':20
+};</span></p>
+<p> </p>
+<p><span>// Put the object into storage</span></p>
+<p><span>localStorage.setItem('monster',
+JSON.stringify(monsterObj));</span></p>
+<p> </p>
+<p><span>// Retrieve the object from storage</span></p>
+<p><span>// </span></p>
+<p><span>var monsterObj = localStorage.getItem('monster');</span></p>
+<p> </p>
+<p><span>var monster=JSON.parse(monsterObj);</span></p>
+<p> </p>
+<p><span class="scrivener7">Swap variables</span></p>
+<p> </p>
+<p><span>Use anonymous arrays to be able to quickly swap
+values.</span></p>
+<p> </p>
+<p><span>var a = 'world';</span></p>
+<p><span>var b = 'hello';</span></p>
+<p><span>[a, b] = [b, a]</span></p>
+<p><span>console.log(a) //hello</span></p>
+<p><span>console.log(b) //world</span></p>
+<p> </p>
+<p><span>I hope you enjoyed this collection of JavaScript Snippets and
+please remember if you have any questions or found any mistakes please
+contact me at </span><a
+href="https://www.williamclarkson.net/code"><span>WilliamClarkson.net</span></a></p>

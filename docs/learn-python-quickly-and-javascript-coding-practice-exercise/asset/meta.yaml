@@ -1,0 +1,222 @@
+name: LEARN PYTHON QUICKLY AND JAVASCRIPT CODING PRACTICE EXERCISES： Coding For Beginners
+name_cn: 快速学习 Python 与 JavaScript 编程实践练习：初学者编程
+slug: learn-python-quickly-and-javascript-coding-practice-exercise
+toc:
+- - '#'
+  - 快速学习 Python 与 JavaScript 编程实践练习：初学者编程
+- - '##'
+  - 当你指示 Python 运行脚本时发生了什么？
+- - '##'
+  - Python 交互式命令行
+- - '###'
+  - 如何退出 Python 解释器
+- - '##'
+  - 'Python: 运算符'
+- - '###'
+  - Python 中的算术运算符
+- - '###'
+  - Python 中的赋值运算符
+- - '####'
+  - 多重赋值
+- - '###'
+  - Python 中的逻辑运算符
+- - '###'
+  - Python 中的位运算符
+- - '###'
+  - Python 中的成员运算符
+- - '###'
+  - Python 中的身份运算符
+- - '###'
+  - Python：短路运算符
+- - '##'
+  - Python 中的字符串
+- - '###'
+  - 特殊字符
+- - '###'
+  - 字符串操作
+- - '###'
+  - 重复字符串
+- - '###'
+  - 从字符串访问特定字符
+- - '###'
+  - 切片
+- - '###'
+  - 获取字符串长度
+- - '##'
+  - Python：if 条件
+- - '###'
+  - if-else 语句
+- - '###'
+  - if-elif-else 语句
+- - '###'
+  - 注意事项
+- - '##'
+  - 'Python: while 语句'
+- - '###'
+  - 语法
+- - '##'
+  - 'Python: for 语句'
+- - '###'
+  - 语法
+- - '##'
+  - 'Python: break 语句'
+- - '##'
+  - 'Python: continue 语句'
+- - '##'
+  - 'Python: 函数'
+- - '###'
+  - 语法
+- - '###'
+  - 创建变量 x 并设置为 44
+- - '###'
+  - 定义一个打印 x 的简单函数
+- - '###'
+  - 调用函数
+- - '###'
+  - 'Python: 函数: return 语句'
+- - '##'
+  - 'Python: 列表'
+- - '###'
+  - 切片
+- - '###'
+  - 合并两个列表
+- - '###'
+  - 向列表末尾添加元素
+- - '###'
+  - 切片赋值
+- - '###'
+  - 获取列表长度
+- - '###'
+  - 嵌套列表
+- - '##'
+  - 元组（tuple）与列表（list）的区别
+- - '###'
+  - 打包（Packing）与解包（Unpacking）
+- - '###'
+  - 合并元组（Concatenate tuples）
+- - '###'
+  - 切片（Slicing）
+- - '###'
+  - 重复元组元素（Repeat tuple elements）
+- - '###'
+  - 删除元组元素（Remove tuple elements）
+- - '##'
+  - Python：类变量与实例变量（Class Vs Instance variables）
+- - '###'
+  - try…except…else 子句
+- - '###'
+  - 异常参数
+- - '##'
+  - Python global 关键字
+- - '##'
+  - 'Python: 获取变量类型'
+- - '###'
+  - 使用 if 语句检查类型
+- - '####'
+  - 方法 1
+- - '####'
+  - 方法 2
+- - '####'
+  - 方法 3
+- - '##'
+  - indexOf() 方法
+- - '###'
+  - 流程图
+- - '###'
+  - JavaScript：判断一个数字是否为质数
+- - '####'
+  - HTML 代码
+- - '####'
+  - JavaScript 代码
+- - '####'
+  - 输出
+- - '###'
+  - 流程图
+- - '###'
+  - JavaScript：获取数据类型
+- - '####'
+  - HTML 代码
+- - '####'
+  - JavaScript 代码
+- - '####'
+  - 输出
+- - '###'
+  - JavaScript：获取数组中的第二小和第二大
+- - '####'
+  - HTML 代码
+- - '####'
+  - JavaScript 代码
+- - '####'
+  - 输出
+- - '###'
+  - 流程图
+- - '###'
+  - JavaScript 基础：两个数字的乘法和除法
+- - '####'
+  - HTML 代码
+- - '####'
+  - JavaScript 代码
+- - '####'
+  - 解析
+- - '####'
+  - 输出
+- - '###'
+  - 将摄氏度转换为华氏度
+- - '####'
+  - HTML 代码
+- - '####'
+  - JavaScript 代码
+- - '##'
+  - 拼接两个字符串
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 将最后三个字符移动
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 计算和
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 相加两个数字
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 检查给定年份是否为闰年
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 检查给定正数
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '##'
+  - 字符串以'Java'开头
+- - '###'
+  - HTML CODE
+- - '###'
+  - JavaScript CODE
+- - '#'
+  - '[初学者 Django 与 Python：二本书合一 - 快速学习编程！]'
+- - '#'
+  - '[JavaScript 与 Dart 编程基础：适合零基础学者]'
+- - '#'
+  - '[初学者 TensorFlow 与 Python 编程基础：适合零基础学者]'
+- - '#'
+  - '[Rust 编程语言：适合初学者，快速学习编程！]'
+- - '#'
+  - '[初学者 Django 与 Python：二本书合一 - 快速学习编程！]'
+- - '#'
+  - '[初学者 Django 与 Python：二本书合一 - 快速学习编程！]'

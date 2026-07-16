@@ -1,0 +1,551 @@
+- "# 快速学习 C# 与 JavaScript 编程实践指南：初学者编程\n\n\n\n![](img/Image00014.jpg)\n\n\n# C# 简介\n\
+  C# 是一种支持多种范式的编程语言。C# 的基本语法与 C、C++ 和 `Java` 相似。因此，如果你熟悉其中任何一种语言，就可以很轻松地学习 C#。\n\n\
+  ## 什么是多范式语言？\n支持多一种范式的语言被称为多范式语言。C# 是一种多范式语言，它同时支持命令式和面向对象的范式。C# 也支持某种程度的函数式编程。\n\
+  \n# C# 与 .net\nC# 是一种编程语言，而 `.NET` 是一个框架`.`.NET`包含多种语言。C# 是 `.NET` 中的语言之一。\n\n##\
+  \ C# 的最新版本是什么？\n在编写本文时，最新版本是 C# 6.0，它于 2015 年发布。\n\n## 使用 C# 的前提\n安装 Visual studio。你可以通过以下链接获取社区版：https://www.visualstudio.com/vs/community/\n\
+  \n# C#: Hello World 程序\n希望你已经安装了 Visual studio。以下步骤介绍了如何创建一个“Hello World”应用程序。\n\
+  \n第 1 步：打开 Visual studio\n第 2 步：进入文件 (File) -> 新建 (New) -> 项目 (Project)。选择“控制台应用程序\
+  \ (Console Application)”，将项目命名为“HelloWorld”。按下确定。它会创建一个名为 `Program.cs` 的文件，包含一些默认数据。按如下更新程序。\n\
+  \n```csharp\nusing System;\n\nnamespace HelloWorld\n{\n    class Program\n    {\n\
+  \        static void Main (string [] args)\n        {\n            Console.WriteLine(\"\
+  Hello World\");\n            Console.WriteLine(\"Welcome To C# Programming...\"\
+  );\n        }\n    }\n}\n```\n\n按下 `CTRL + F5`，它将打开命令提示符并显示传递给 `Console.WriteLine`\
+  \ 方法的字符串。\n\n## 分析程序\n\n`using System`\n上述语句加载了命名空间 `System`。命名空间用于组织代码。命名空间是类、接口、枚举、结构和委托的集合。\n\
+  \n`namespace HelloWorld`\n上述语句为程序提供了命名空间 `HelloWorld`。这是可选的。你甚至可以在没有此语句的情况下运行程序。\n\
+  \n```csharp\nusing System;\n\nclass Program\n{\n    static void Main (string []\
+  \ args)\n    {\n        Console.WriteLine(\"Hello World\");\n        Console.WriteLine(\"\
+  Welcome To C# Programming...\");\n    }\n}\n```\n\n`class Program`\n类（Class）用于将方法和属性封装成单个实体。暂时忽略它，我将在后面的文章中解释。\n\
+  \n`static void Main(string[] args)`\n`Main` 方法是你的 C# 应用程序的入口点。应用程序的执行从这里开始。\n\n\
+  `Console.WriteLine(\"Hello World\");`\n上述语句将消息 \"Hello World\" 写入控制台。`Console` 是位于命名空间\
+  \ `System` 中的类。`WriteLine` 是 `Console` 类的方法。\n\n# C#: 从控制台读取输入\n`Console` 类提供了 `ReadLine`\
+  \ 方法从控制台读取输入。`ReadLine` 方法从控制台读取信息并以字符串格式返回输入。\n\n```csharp\nString name = Console.ReadLine();\n\
+  ```\n\nProgram.cs\n```csharp\nusing System;\n\nclass Program\n{\n    static void\
+  \ Main (string [] args)\n    {\n        Console.WriteLine(\"Welcome to C#, Please\
+  \ Enter Information\");\n        Console.WriteLine(\"Enter Your Name\");\n     \
+  \   String name = Console.ReadLine();\n        Console.WriteLine(\"Enter Your Age\"\
+  );\n        String age = Console.ReadLine();\n        Console.WriteLine(\"Hello\
+  \ \" + name + \" You are \" + age + \" years old\");\n    }\n}\n```\n\n输出\n```\n\
+  Welcome to C#, Please Enter Information\nEnter Your Name\nJJ TAM\nEnter Your Age\n\
+  26\nHello JJ TAM You are 26 years old\n```\n\n## 占位符语法\n在拼接字符串时，占位符语法比使用 `+` 运算符更方便。\n\
+  \n以下是占位符语法的示例。\n\n```csharp\nConsole.WriteLine(\"Hello {0}. You are {1} years old\"\
+  , name, age);\n```\n\n上述语句等同于以下语句。\n\n```csharp\nConsole.WriteLine(\"Hello \" +\
+  \ name + \" You are \" + age + \" years old\");\n```\n\n\n\n\n```cs\nConsole.WriteLine(\"\
+  You are {0} years old\", age);\nConsole.WriteLine(\"Hello {1}. You are {0} years\
+  \ old\", name, age);\n}\n}\n```\nOutput\n```\nWelcome to C#, Please Enter Basic\
+  \ Informaiton\nEnter Your Name\nJJ TAM\nEnter Your Age\n26\nHello JJ TAM\nYou are\
+  \ 26 years old\nHello 26. You are JJ TAM years old\nPress any key to continue .\
+  \ . .\n```\n\n# C#: 内置类型\n\nC# 支持几乎所有类型的数据进行操作。所有数据类型都表示为 `System` 命名空间中的类。数据类型可以分为以下类型：\n\
+  \na. 布尔型：`bool`\nb. 整数：`byte`, `sbyte`, `int`, `uint`, `short`, `ushort`, `long`,\
+  \ `ulong`\nc. 浮点型：`double`, `float`, `decimal`\nd. 字符：`char`\ne. 字符串：`String`\n\n\
+  下表总结了所有数据类型：\n\n| 简写 | 类 | 最小值 | 最大值 |\n| :--- | :--- | :--- | :--- |\n| `byte`\
+  \ | `Byte` | 0 | 255 |\n| `sbyte` | `SByte` | -128 | 127 |\n| `int` | `Int32` |\
+  \ -2,147,483,648 | 2,147,483,647 |\n| `uint` | `UInt32` | 0 | 4294967295 |\n| `short`\
+  \ | `Int16` | -32,768 | 32767 |\n| `ushort` | `UInt16` | 0 | 65535 |\n| `long` |\
+  \ `Int64` | -9223372036854775808 | 9223372036854775807 |\n| `ulong` | `UInt64` |\
+  \ 0 | 18446744073709551615 |\n| `float` | `Single` | -3.402823e38 | 3.402823e38\
+  \ |\n| `double` | `Double` | -1.79769313486232e308 | 1.79769313486232e308 |\n| `decimal`\
+  \ | `Decimal` | ±1.0 × 10e−28 | ±7.9 × 10e28 |\n| `char` | `Char` | | 表示 Unicode\
+  \ 字符。占用 16 位。 |\n| `string` | `String` | | 字符序列 |\n\n## Note\n\na. `Float` 变量后加\
+  \ `f` 后缀。\n   例：`float floatVar = 18.18f;`\nb. `Decimal` 变量后加 `m` 后缀。\n   例：`decimal\
+  \ decimalVar = 20.20m;`\n\n## Program.cs\n```cs\nusing System ;\n\nclass Program\n\
+  {\n    static void Main ( string [] args)\n    {\n        byte byteVar = 10 ;\n\
+  \        sbyte sbyteVar = 11 ;\n        int intVar = 12 ;\n        uint uintVar\
+  \ = 13 ;\n        short shortVar = 14 ;\n        ushort ushortVar = 15 ;\n     \
+  \   long longVar = 16 ;\n        ulong ulongVar = 17 ;\n        float floatVar =\
+  \ 18.18f ;\n        double doubleVar = 19.19 ;\n        decimal decimalVar = 20.20\
+  \ m;\n        char charVar = 'S';\n        string stringVar = \"Hello World\";\n\
+  \        Console.WriteLine(\"byteVar = {0}\", byteVar);\n        Console.WriteLine(\"\
+  sbyteVar = {0}\", sbyteVar);\n        Console.WriteLine(\"intVar = {0}\", intVar);\n\
+  \        Console.WriteLine(\"uintVar = {0}\", uintVar);\n        Console.WriteLine(\"\
+  shortVar = {0}\", shortVar);\n        Console.WriteLine(\"ushortVar = {0}\", ushortVar);\n\
+  \        Console.WriteLine(\"longVar = {0}\", longVar);\n        Console.WriteLine(\"\
+  ulongVar = {0}\", ulongVar);\n        Console.WriteLine(\"floatVar = {0}\", floatVar);\n\
+  \        Console.WriteLine(\"doubleVar = {0}\", doubleVar);\n        Console.WriteLine(\"\
+  decimalVar = {0}\", decimalVar);\n        Console.WriteLine(\"charVar = {0}\", charVar);\n\
+  \        Console.WriteLine(\"stringVar = {0}\", stringVar);\n    }\n}\n```\n\n#\
+  \ C#: 字符串与转义序列\n\n`String` 是字符的集合。字符串用双引号包围。\n例：\n`String firstName = \"JJ TAM\"\
+  ;`\n`String lastName = \"Delhi\";`\n\n## Program.cs\n```cs\nusing System ;\n\nclass\
+  \ Program\n{\n    static void Main ( string [] args)\n    {\n        String firstName\
+  \ = \"JJ TAM\";\n        String lastName = \"Delhi\";\n        Console.WriteLine(\"\
+  Hello Mr {0} {1}\", firstName, lastName);\n    }\n}\n```\nOutput\n```\nHello Mr\
+  \ JJ TAM Delhi\n```\n\n## 转义序列\n\n程序语言中的转义序列具有特殊含义，例如 `\\n` 在新行中打印字符串，`\\t` 是制表符等。下表总结了\
+  \ C# 中的一些转义字符。\n\n| 转义序列 | 说明 |\n| :--- | :--- |\n| `\\a` | 蜂鸣 |\n| `\\b` | 退格 |\n\
+  | `\\f` | 换页 |\n| `\\n` | 换行 |\n| `\\r` | 回车 |\n| `\\t` | 水平制表符 |\n| `\\v` | 垂直制表符\
+  \ |\n| `\\'` | 单引号 |\n| `\\\"` | 双引号 |\n| `\\\\` | 反斜杠 |\n| `\\?` | 问号 |\n| `\\\
+  ooo` | 八进制格式的 ASCII 字符 |\n| `\\xhh` | 十进制格式的 ASCII 字符 |\n| `\\xhhhh` | 十进制格式的 Unicode\
+  \ 字符 |\n\n## Program.cs\n```cs\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        String quote = \"Life is an \\\"Open Secret\\\
+  \". \\nEverything is avialble, you can't hidden\";\n        Console.WriteLine(quote);\n\
+  \    }\n}\n```\nOutput\n```\nLife is an \"Open Secret\".\nEverything is avialble,\
+  \ you can't hidden\n```\n\n# C#: 逐字面量 (Verbatim Literal)\n\n逐字面字符串字量由一个 `@` 字符后跟双引号内的字符串组成。逐字面字符串量中的转义序列不会被处理。\n\
+  \n## Program.cs\n```cs\nusing System ;\n\nclass Program\n{\n    static void Main\
+  \ ( string [] args)\n    {\n        String withVerbatim = @\"1\\n2\\n3\\t4\";\n\
+  \        String withoutVerbatim = \"1\\n2\\n3\\t4\";\n        Console.WriteLine(withVerbatim);\n\
+  \        Console.WriteLine(\"******************\");\n        Console.WriteLine(withoutVerbatim);\n\
+  \    }\n}\n```\nOutput\n```\n1\\n2\\n3\\t4\n******************\n1\n2\n3       4\n\
+  ```\n如输出所示，`@` 符号不会解释转义序列 `\\n`, `\\t`。而不带 Verbatim 的字符串会将 `\\n` 解析为换行并将 `\\t` 解析为制表符。\n\
+  \n# C#: 运算符\n\n运算符是执行操作的符号。\n\n如果运算符对单个操作数执行操作，称为一元运算符。\n例：\n`int a = 10;`\n`a++;`\n\
+  \n如果运算符对两个操作数执行操作，称为二元运算符。\n例：\n`int a=10, b=20;`\n\n如果运算符对三个操作数执行操作，则称为三元运算符。\n\
+  例：\n`int a=10, b=20, c = a>b ? a : b;`\n\nC# 中的运算符分为 4 类：\n1. 算术运算符\n2. 条件运算符\n\
+  3. 逻辑运算符\n4. 位运算运算符\n\n## 算术运算符\n\n算术运算符用于执行算术运算。\n\n\n\n\n\n```csharp\nConsole.WriteLine(\"\
+  var = {0}\", var ++);\nConsole.WriteLine(\"var = {0}\", var );\n```\nOutput\n```\n\
+  var = 10\nvar = 11\n```\n\n## 前置减\n\n### 语法\n```text\n--variable\n```\n前置减运算符会立即将变量值减\
+  \ 1。\n\n`Program.cs`\n```csharp\nusing System ;\n\nclass Program\n{\n    static\
+  \ void Main ( string [] args)\n    {\n        int var = 10 ;\n        Console.WriteLine(\"\
+  var = {0}\", -- var );\n    }\n}\n```\nOutput\n```\nvar = 9\n```\n\n## 后置减\n\n###\
+  \ 语法\n```text\nvariable--\n```\n后置减运算符在执行完当前语句后，将变量值减 1。\n\n`Program.cs`\n```csharp\n\
+  using System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n   \
+  \ {\n        int var = 10 ;\n        Console.WriteLine(\"var = {0}\", var --);\n\
+  \        Console.WriteLine(\"var = {0}\", var );\n    }\n}\n```\nOutput\n```\nvar\
+  \ = 10\nvar = 9\n```\n\n# C#: 条件运算符\n\n条件运算符用于判断一个操作数是否大于、小于、等于或不等于另一个操作数。\n\n![条件运算符](https://4.bp.blogspot.com/-L0p6MK64YEg/W3bnD8IFVLI/AAAAAAAAK7E/mqCH_nXaXWsY-VvmKP-hR-xFUA0zLgwKwCLcBGAs/s400/C%2523%2BConditional%2Boperators.jpg)(Image00003.jpg)](https://4.bp.blogspot.com/-L0p6MK64YEg/W3bnD8IFVLI/AAAAAAAAK7E/mqCH_nXaXWsY-VvmKP-hR-xFUA0zLgwKwCLcBGAs/s1600/C#+Conditional+operators.jpg)\n\
+  \n条件运算符接受两个操作数，如果条件为真，则返回 true，否则返回 false。\n\n`Program.cs`\n```csharp\nusing System\
+  \ ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n       \
+  \ int a = 10 , b = 11 ;\n        Console.WriteLine(\"is a equals to a {0}\", (a\
+  \ == a));\n        Console.WriteLine(\"is a equals to b {0}\", (a == b));\n    \
+  \    Console.WriteLine(\"is a equals equals a {0}\", (a != a));\n        Console.WriteLine(\"\
+  is a not equals to b {0}\", (a != b));\n        Console.WriteLine(\"is a less than\
+  \ a {0}\", (a < a));\n        Console.WriteLine(\"is a less than b {0}\", (a < b));\n\
+  \        Console.WriteLine(\"is a less or equal to a {0}\", (a <= a));\n       \
+  \ Console.WriteLine(\"is a less or equal b {0}\", (a <= b));\n        Console.WriteLine(\"\
+  is a greater than a {0}\", (a > a));\n        Console.WriteLine(\"is a greater than\
+  \ b {0}\", (a > b));\n        Console.WriteLine(\"is a greater or equal to a {0}\"\
+  , (a >= a));\n        Console.WriteLine(\"is a greater or equal b {0}\", (a >= b));\n\
+  \    }\n}\n```\nOutput\n```\nis a equals a True\nis a equals b False\nis a not equals\
+  \ a False\nis a not equals to b True\nis less than a False\nis less than b True\n\
+  is less or equal to a True\nis less or equal b True\nis greater than a False\nis\
+  \ greater than b False\nis greater or equal to a True\nis greater or equal b False\n\
+  ```\n\n# C#: 逻辑运算符\n\nC# 提供了三种逻辑运算符，分别是 `&&` (与)、`||` (或) 和 `!` (非)。\n`&&` 也称为条件与。\n\
+  `||` 也称为条件或。\n`&&` 和 `||` 被称为短路运算符，请查看为什么它们被称为短路运算符。\n\n## 逻辑与运算符\n\n| 操作数 1 | 操作数\
+  \ 2 | 结果 |\n| :--- | :--- | :--- |\n| TRUE | TRUE | TRUE |\n| TRUE | FALSE | FALSE\
+  \ |\n| FALSE | TRUE | FALSE |\n| FALSE | FALSE | FALSE |\n\n`Program.cs`\n```csharp\n\
+  using System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n   \
+  \ {\n        bool operand1 = true ;\n        bool operand2 = true ;\n        Console.WriteLine(\"\
+  operand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 && operand2 = {0}\", (operand1 && operand2));\n\
+  \n        bool operand1 = true ;\n        bool operand2 = false ;\n        Console.WriteLine(\"\
+  \\noperand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 && operand2 = {0}\",(operand1 && operand2));\n\
+  \n        bool operand1 = false ;\n        bool operand2 = true ;\n        Console.WriteLine(\"\
+  \\noperand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 && operand2 = {0}\", (operand1 && operand2));\n\
+  \n        bool operand1 = false ;\n        bool operand2 = false ;\n        Console.WriteLine(\"\
+  \\noperand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 && operand2 = {0}\", (operand1 && operand2));\n\
+  \    }\n}\n```\nOutput\n```\noperand1 = True\noperand2 = True\noperand1 && operand2\
+  \ = True\noperand1 = True\noperand2 = False\noperand1 && operand2 = False\noperand1\
+  \ = False\noperand2 = True\noperand1 && operand2 = False\noperand1 = False\noperand2\
+  \ = False\noperand1 && operand2 = False\n```\n\n### 为什么逻辑与被称为短路运算符？\n因为如果表达式中的第一个语句求值为假，那么\
+  \ Java 就不会再评估整个表达式。因此，逻辑与被称为短路与。\n\n`Program.cs`\n```csharp\nusing System ;\n\n\
+  class Program\n{\n    static void Main ( string [] args)\n    {\n        int a =\
+  \ 10 , b = 21 ;\n        if ((a > b) && (a++ > b))\n        {\n            Console.WriteLine(\"\
+  This not evaluated\");\n        }\n        Console.WriteLine(\"a is not incremented\
+  \ \" + a);\n        if ((a < b) && (a++ < b))\n        {\n            Console.WriteLine(\"\
+  This statement evaluated\");\n        }\n        Console.WriteLine(\"a is incremented\
+  \ \" + a);\n    }\n}\n```\nOutput\n```\na is not incremented 10\nThis statement\
+  \ evaluated\na is incremented 11\n```\n### 观察\n在表达式 `(a>b) && (a++ > b)` 中，`a>b`\
+  \ 为假，所以 `&&` 运算符不会评估第二个语句，因此 `a` 没有自增。\n\n## 逻辑或运算符\n\n| 操作数 1 | 操作数 2 | 结果 |\n\
+  | :--- | :--- | :--- |\n| TRUE | TRUE | TRUE |\n| TRUE | FALSE | TRUE |\n| FALSE\
+  \ | TRUE | TRUE |\n| FALSE | FALSE | FALSE |\n\n如上表所示，如果任何一个操作数求值为真，则 `||` 运算符返回\
+  \ true，否则返回 false。\n\n`Program.cs`\n```csharp\nusing System ;\n\nclass Program\n\
+  {\n    static void Main ( string [] args)\n    {\n        bool operand1 = true ;\n\
+  \        bool operand2 = true ;\n        Console.WriteLine(\"operand1 = {0}\", operand1);\n\
+  \        Console.WriteLine(\"operand2 = {0}\", operand2);\n        Console.WriteLine(\"\
+  operand1 || operand2 = {0}\", (operand1 || operand2));\n\n        bool operand1\
+  \ = true ;\n        bool operand2 = false ;\n        Console.WriteLine(\"\\noperand1\
+  \ = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 || operand2 = {0}\", (operand1 || operand2));\n\
+  \n        bool operand1 = false ;\n        bool operand2 = true ;\n        Console.WriteLine(\"\
+  \\noperand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 || operand2 = {0}\", (operand1 || operand2));\n\
+  \n        bool operand1 = false ;\n        bool operand2 = false ;\n        Console.WriteLine(\"\
+  \\noperand1 = {0}\", operand1);\n        Console.WriteLine(\"operand2 = {0}\", operand2);\n\
+  \        Console.WriteLine(\"operand1 || operand2 = {0}\", (operand1 || operand2));\n\
+  \    }\n}\n```\nOutput\n```\noperand1 = True\noperand2 = True\noperand1 || operand2\
+  \ = True\noperand1 = True\noperand2 = False\noperand1 || operand2 = True\noperand1\
+  \ = False\noperand2 = True\noperand1 || operand2 = True\noperand1 = False\noperand2\
+  \ = False\noperand1 || operand2 = False\n```\n\n### 为什么逻辑或被称为短路运算符？\n因为如果第一个语句求值为真，那么\
+  \ Java 就不会评估整个表达式。因此，逻辑或被称为短路或。\n\n\n\n\n\n如果操作数为 `TRUE`，`!` 运算符将其求值为 `FALSE`。\n\
+  \n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        bool a = true ;\n        Console.WriteLine(\"\
+  a = {0}, !a = {1}\", a, !a);\n        a = false ;\n        Console.WriteLine(\"\
+  a = {0}, !a = {1}\", a, !a);\n    }\n}\n```\n\n### 输出\n```\noperand1 = True\noperand2\
+  \ = True\noperand1 || operand2 = True\noperand1 = True\noperand2 = False\noperand1\
+  \ || operand2 = True\noperand1 = False\noperand2 = True\noperand1 || operand2 =\
+  \ True\noperand1 = False\noperand2 = False\noperand1 || operand2 = False\n```\n\n\
+  # C#: 移位运算符\n\n## 按位左移(<<)\n\n左移运算符将所有位向左移动一位，即：它简单地将值翻倍。\n\n### 语法:\n`variable\
+  \ << n`\n- 将变量向左移动 'n' 次。\n- `Variable << n` 等于 `variable = variable * 2 power n`\n\
+  \n```csharp\nint var = 2;\nvar << 1 = 2 * 2 power 1 = 4\nvar << 2 = 2 * 2 power\
+  \ 2 = 8\nvar << 9 = 2 * 2 power 9 = 1024\n```\n\n`Program.cs`\n\n```csharp\nusing\
+  \ System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n\
+  \        byte byteVar = 7 ;\n        Console.WriteLine(\"Value of Byte variable\
+  \ is \" + byteVar);\n        Console.WriteLine(\"After shifting 1 bit left \" +\
+  \ (byteVar << 1 ));\n        Console.WriteLine(\"After shifting 2 bits left \" +\
+  \ (byteVar << 2 ));\n        Console.WriteLine(\"After shifting 3 bits left \" +\
+  \ (byteVar << 3 ));\n        Console.WriteLine(\"After shifting 4 bits left \" +\
+  \ (byteVar << 4 ));\n        Console.WriteLine(\"After shifting 5 bits left \" +\
+  \ (byteVar << 5 ));\n        Console.WriteLine(\"After shifting 6 bits left \" +\
+  \ (byteVar << 6 ));\n        Console.WriteLine(\"Value of Byte variable is \" +\
+  \ byteVar);\n    }\n}\n```\n\n### 输出\n```\nValue of Byte variable is 7\nAfter shifting\
+  \ 1 bit left 14\nAfter shifting 2 bits left 28\nAfter shifting 3 bits left 56\n\
+  After shifting 4 bits left 112\nAfter shifting 5 bits left 224\nAfter shifting 6\
+  \ bits left 448\nValue of Byte variable is 7\n```\n\n## 按位右移(>>)\n\n右移运算符将所有位向右移动一位，即：它简单地将值减半（除以\
+  \ 2）。\n\n### 语法:\n`variable >> n`\n- 将变量向右移动 'n' 次。\n- `Variable >> n` 等于 `variable\
+  \ = variable / 2 power n`\n\n```csharp\nint var = 128;\nvar >> 1 = 128 / (2 power\
+  \ 1) = 64\nvar >> 2 = 128 / (2 power 2) = 32\n```\n\n`Program.cs`\n\n```csharp\n\
+  using System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n   \
+  \ {\n        int intVar = 128 ;\n        Console.WriteLine(\"Value of int variable\
+  \ is \" + intVar);\n        Console.WriteLine(\"After shifting 1 bit Right \" +\
+  \ (intVar >> 1 ));\n        Console.WriteLine(\"After shifting 2 bits Right \" +\
+  \ (intVar >> 2 ));\n        Console.WriteLine(\"After shifting 3 bits Right \" +\
+  \ (intVar >> 3 ));\n        Console.WriteLine(\"After shifting 4 bits Right \" +\
+  \ (intVar >> 4 ));\n        Console.WriteLine(\"After shifting 5 bits Right \" +\
+  \ (intVar >> 5 ));\n        Console.WriteLine(\"After shifting 6 bits Right \" +\
+  \ (intVar >> 6 ));\n        Console.WriteLine(\"After shifting 7 bits Right \" +\
+  \ (intVar >> 7 ));\n        Console.WriteLine(\"Value of int variable is \" + intVar);\n\
+  \    }\n}\n```\n\n### 输出\n```\nValue of int variable is 128\nAfter shifting 1 bit\
+  \ Right 64\nAfter shifting 2 bits Right 32\nAfter shifting 3 bits Right 16\nAfter\
+  \ shifting 4 bits Right 8\nAfter shifting 5 bits Right 4\nAfter shifting 6 bits\
+  \ Right 2\nAfter shifting 7 bits Right 1\nValue of int variable is 128\n```\n\n\
+  # C#: 按位运算符\n\n## 按位与(&), 按位或(|), 异或(^)\n\n`Program.cs`\n\n```csharp\nusing System\
+  \ ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n       \
+  \ byte a = 8 ;\n        byte b = 9 ;\n        Console.WriteLine(\"a & b is \" +\
+  \ (a & b));\n        Console.WriteLine(\"a | b is \" + (a | b));\n        Console.WriteLine(\"\
+  a ^ b is \" + (a ^ b));\n    }\n}\n```\n\n### 输出\n```\na & b is 8\na | b is 9\n\
+  a ^ b is 1\n```\n\n### 解析\n`a = 0000 1000`\n`b = 0000 1001`\n`a&b = 0000 1000`\n\
+  `a = 0000 1000`\n`b = 0000 1001`\n`a|b = 0000 1001`\n`a = 0000 1000`\n`b = 0000\
+  \ 1001`\n`a^b = 0000 0001`\n\n# C#: 复合赋值运算符\n\n## 复合赋值\n\n### 语法:\n`variable operator=\
+  \ value`\n\n### 示例:\n`int a = 10;`\n`a+=10` 求值为 `a=a+10`\n\n| 复合运算符 | 示例 | 描述 |\n\
+  | :--- | :--- | :--- |\n| `+=` | `a+=10` | `a=a+10` |\n| `-=` | `a-=10` | `a=a-10`\
+  \ |\n| `*=` | `a*=10` | `a=a*10` |\n| `/=` | `a/=10` | `a=a/10` |\n\n`Program.cs`\n\
+  \n```csharp\nusing System ;\n\nclass Program\n{\n    static void Main ( string []\
+  \ args)\n    {\n        int var1 = 100 ;\n        int sum = 10 , sub = 10 , mul\
+  \ = 10 , div = 1000 ;\n        Console.WriteLine(\"sum+var1 is \" + (sum += var1));\n\
+  \        Console.WriteLine(\"sub-var1 is \" + (sub -= var1));\n        Console.WriteLine(\"\
+  mul*var1 is \" + (mul *= var1));\n        Console.WriteLine(\"div/var1 is \" + (div\
+  \ /= var1));\n    }\n}\n```\n\n### 输出\n```\nsum+var1 is 110\nsub-var1 is -90\nmul*var1\
+  \ is 1000\ndiv/var1 is 100\n```\n\n# C#: 三元运算符( ?:\n\n根据条件返回两个表达式之一。\n\n### 语法\n\
+  `test ? expression1 : expression2`\n如果 `test` 求值为真，则返回 `expression1`，否则返回 `expression2`。\n\
+  \n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        int a = 100 ;\n        bool flag = a >\
+  \ 10 ? true : false ;\n        Console.WriteLine(\"flag = {0}\", flag);\n    }\n\
+  }\n```\n\n### 输出\n```\nflag = True\n```\n\n# C#: 数组\n\n数组是存储在连续内存中的一系列相同类型的元素。使用索引访问数组中的元素。\n\
+  \n### 语法\n`datatype[] arrayName = new datatype[sizeOfTheArray];`\n\n### 示例:\n`int[]\
+  \ evenNumbers = new int[10];`\n假设你想计算 9 个整数之和，你必须定义 9 个变量：\n`int var1, var2, var3,\
+  \ var4, var5, var6, var7, var8, var9;`\n`var1 = 5;`\n`var2 = -10;`\n`var3 = 7;`\n\
+  `var4 = 8;`\n`var5 = 11;`\n`var6 = 12;`\n`var7 = 14;`\n`var8 = 21;`\n`var9 = 0;`\n\
+  \n通过数组可以声明如下：\n`int[] var = new int[9];`\n`var[0] = 5;\n`var[1] = -10;`\n`var[2]\
+  \ = 7;`\n`var[3] = 8;`\n`var[4] = 11;`\n`var[5] = 12;`\n`var[6] = 14;`\n`var[7]\
+  \ = 21;`\n`var[8] = 0;`\n可见，数组索引从 0 开始。`var[0]` 代表 5，`var[2]` 代表 7 等。\n\n`Program.cs`\n\
+  \n```csharp\nusing System ;\n\nclass Program\n{\n    static void Main ( string []\
+  \ args)\n    {\n        int [] var = new int [ 9 ];\n        var[0] = 5 ;\n    \
+  \    var[1] = -10 ;\n        var[2] = 7 ;\n        var[3] = 8 ;\n        var[4]\
+  \ = 11 ;\n        var[5] = 12 ;\n        var[6] = 14 ;\n        var[7] = 21 ;\n\
+  \        var[8] = 0 ;\n        Console.WriteLine(\"var[0] = {0}\", var [0]);\n \
+  \       Console.WriteLine(\"var[1] = {0}\", var [1]);\n        Console.WriteLine(\"\
+  var[2] = {0}\", var [2]);\n        Console.WriteLine(\"var[3] = {0}\", var [3]);\n\
+  \        Console.WriteLine(\"var[4] = {0}\", var [4]);\n        Console.WriteLine(\"\
+  var[5] = {0}\", var [5]);\n        Console.WriteLine(\"var[6] = {0}\", var [6]);\n\
+  \        Console.WriteLine(\"var[7] = {0}\", var [7]);\n        Console.WriteLine(\"\
+  var[8] = {0}\", var [8]);\n    }\n}\n```\n\n### 输出\n```\nvar[0] = 5\nvar[1] = -10\n\
+  var[2] = 7\nvar[3] = 8\nvar[4] = 11\nvar[5] = 12\nvar[6] = 14\nvar[7] = 21\nvar[8]\
+  \ = 0\n```\n\n\n\n\n\n通过注释，你可以在编写程序时对代码进行记录。注释不会影响程序的执行。注释仅仅是记录你的代码。\n\nC# 支持 3\
+  \ 类型的注释\n\n## 单行注释：\n\n单行注释以 `//` 开头\n\n```csharp\n// 这是一个单行注释\n```\n\n## 多行注释\n\
+  \n多行注释置于 `/* */` 之间\n\n```csharp\n/* 这是一个多行注释 */\n```\n\n## XML 文档注释\n\nXML 文档注释用于为指定的类、函数、命名空间等提供帮助，\n\
+  \n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        int marks; /* variable marks 代表学生\n   \
+  \                   获得的分 */\n        marks = 70 ;\n        Console.WriteLine(\"\
+  Marks : {0}\", marks); //打印到控制台\n    }\n}\n```\n\n输出\n```\nMarks : 70\n```\n\n###\
+  \ XML 文档注释示例\n\n如下所示更新 `Program.cs`。\n\n`Program.cs`\n\n```csharp\nusing System\
+  \ ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n       \
+  \ IntresetCalculator calc;\n    }\n}\n\n/// <summary>\n/// 计算简单利类\n/// </summary>\n\
+  class IntresetCalculator\n{\n}\n```\n\n当你将鼠标悬停在 `IntresetCalculator` 上时，你可以看到 `IntresetCalculator`\
+  \ 类的摘要。\n\n# C#: if, else : 条件判断语句\n\nC# 提供了用于决策的控制流语句。\n\n## 决策语句\n\n## if 语句\n\
+  \n“if”语句在条件求值为真时执行该代码段。\n\n### 语法\n\n```csharp\nif(condition){\n// 如果条件为真则执行\n}\n\
+  ```\n\n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n{\n    static\
+  \ void Main ( string [] args)\n    {\n        Console.WriteLine(\"Please Enter Your\
+  \ Marks\");\n        int marks = int .Parse(Console.ReadLine());\n        if (marks\
+  \ < 35 )\n        {\n            Console.WriteLine(\"You failed in the Exam. Better\
+  \ luck next time\");\n        }\n        if (marks >= 35 )\n        {\n        \
+  \    Console.WriteLine(\"Congrats, you passed in the Exam\");\n        }\n    }\n\
+  }\n```\n\n示例输出 1\n```\nPlease Enter Your Marks\n85\nCongrats, you passed in the\
+  \ Exam\n```\n\n示例输出 2\n```\nPlease Enter Your Marks\n20\nYou failed in the Exam.\
+  \ Better luck next time\n```\n\n## if-else 语句\n\n### 语法：\n\n```csharp\nif(condition){\n\
+  }\nelse{\n}\n```\n\n如果条件为真，则执行 if 块代码，否则执行 else 块代码。\n\n`Program.cs`\n\n```csharp\n\
+  using System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n   \
+  \ {\n        Console.WriteLine(\"Please Enter Your Marks\");\n        int marks\
+  \ = int .Parse(Console.ReadLine());\n        if (marks < 35 )\n        {\n     \
+  \       Console.WriteLine(\"You failed in the Exam. Better luck next time\");\n\
+  \        }\n        else\n        {\n            Console.WriteLine(\"Congrats, you\
+  \ passed in the Exam\");\n        }\n    }\n}\n```\n\n示例输出 1\n```\nPlease Enter\
+  \ Your Marks\n85\nCongrats, you passed in the Exam\n```\n\n示例输出 2\n```\nPlease Enter\
+  \ Your Marks\n20\nYou failed in the Exam. Better luck next time\n```\n\n## if-else\
+  \ if-else 阶梯\n\n通过使用 if-else if-else 结构，你可以选择多个备选方案。\n\nif 语句后面可以跟随可选的 else if...else\
+  \ 语句，这对于测试各种条件非常有用。\n\n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n\
+  {\n    static void Main ( string [] args)\n    {\n        Console.WriteLine(\"Please\
+  \ Enter Your Marks\");\n        int marks = int .Parse(Console.ReadLine());\n  \
+  \      if (marks < 35 )\n        {\n            Console.WriteLine(\"You are failed\"\
+  );\n        }\n        else if (marks < 50 )\n        {\n            Console.WriteLine(\"\
+  You are passed and third class\");\n        }\n        else if (marks < 60 )\n \
+  \       {\n            Console.WriteLine(\"You are passed and second class\");\n\
+  \        }\n        else if (marks < 70 )\n        {\n            Console.WriteLine(\"\
+  You are passed and first class\");\n        }\n        else\n        {\n       \
+  \     Console.WriteLine(\"You are passed and distinction\");\n        }\n    }\n\
+  }\n```\n\n示例输出 1\n```\nPlease Enter Your Marks\n20\nYou are failed\n```\n\n示例输出\
+  \ 2\n```\nPlease Enter Your Marks\n40\nYou are passed and third class\n```\n\n示例输出\
+  \ 3\n```\nPlease Enter Your Marks\n60\nYou are passed and first class\n```\n\n示例输出\
+  \ 4\n```\nPlease Enter Your Marks\n80\nYou are passed and distinction\n```\n\n#\
+  \ C#: Switch 语句\n\nswitch 语句求值其表达式，然后执行所有匹配 case 标签的语句。switch 语句的体被称为 switch 块。switch\
+  \ 块中的语句可以用一个或多个 case 或 default 标签标记。\n\n`Program.cs`\n\n```csharp\nusing System\
+  \ ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n       \
+  \ Console.WriteLine(\"Enter a Number\");\n        int number = int .Parse(Console.ReadLine());\n\
+  \        switch (number)\n        {\n            case 1 :\n                Console.WriteLine(\"\
+  Sunday\");\n                break ;\n            case 2 :\n                Console.WriteLine(\"\
+  Monday\");\n                break ;\n            case 3 :\n                Console.WriteLine(\"\
+  Tueday\");\n                break ;\n            case 4 :\n                Console.WriteLine(\"\
+  Wednesday\");\n                break ;\n            case 5 :\n                Console.WriteLine(\"\
+  ThursDay\");\n                break ;\n            case 6 :\n                Console.WriteLine(\"\
+  Friday\");\n                break ;\n            case 7 :\n                Console.WriteLine(\"\
+  Saturday\");\n                break ;\n            default :\n                Console.WriteLine(\"\
+  You entered wrong day\");\n                break ;\n        }\n    }\n}\n```\n\n\
+  示例输出\n```\nEnter a Number\n5\nThursDay\n```\n\n示例输出\n```\nEnter a Number\n15\nYou\
+  \ entered wrong day\n```\n\n# C#: goto 语句\n\n通过 goto 语句，我们可以将控制转移到标签。标签是程序中的一个标记，你的代码可以跳转那里。\n\
+  \n### 语法\n\n```csharp\ngoto label;\n```\n\n`Program.cs`\n\n```csharp\nusing System\
+  \ ;\n\nclass Program\n{\n    static void Main ( string [] args)\n    {\n       \
+  \ Console.WriteLine(\"Enter a Number\");\n        int num = int .Parse(Console.ReadLine());\n\
+  \        if (num == 5 )\n        {\n            goto error;\n        }\n       \
+  \ else\n        {\n            Console.WriteLine(\"You Entered {0}\", num);\n  \
+  \          goto exit;\n        }\n        error:\n        Console.WriteLine(\"Wrong\
+  \ Choice\");\n        System.Environment.Exit( 1 );\n        exit:\n        Console.WriteLine(\"\
+  Exiting Successfully\");\n        System.Environment.Exit( 0 );\n    }\n}\n```\n\
+  \n示例输出 1\n```\nEnter a Number\n5\nWrong Choice\n```\n\n示例输出 2\n```\nEnter a Number\n\
+  10\nYou Entered 10\nExiting Successfully\n```\n\n# C#: while 循环\n\nwhile 语句执行一组语句，直到特定条件为真\n\
+  \n### 语法\n\n```csharp\nwhile (expression) {\n    //执行语句\n}\n```\n\nwhile 语句中的表达式必须求值为布尔值，否则编译器会抛出错误。while\
+  \ 语句首先评估表达式，直到表达式求值为真，它会执行 while 块内部的代码，否则退出 while 循环。\n\n`Program.cs`\n\n```csharp\n\
+  using System ;\n\nclass Program\n{\n    static void Main ( string [] args)\n   \
+  \ {\n        int var1 = 0 ;\n        while (var1 < 10 )\n        {\n           \
+  \ Console.WriteLine(var1);\n            var1++;\n        }\n    }\n}\n```\n\n输出\n\
+  ```\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n```\n\n# C#: do-while 循环\n\ndo-while 是一种类似于 while\
+  \ 循环的循环结构，但它在循环结束时评估表达式。\n\n### 语法\n\n```csharp\ndo {\n//语句(s)\n} while (expression);\n\
+  ```\n\n`Program.cs`\n\n```csharp\nusing System ;\n\nclass Program\n{\n    static\
+  \ void Main ( string [] args)\n    {\n        int var1 = 0 ;\n        do\n     \
+  \   {\n            Console.WriteLine(var1);\n            var1++;\n        } while\
+  \ (var1 < 10 );\n    }\n}\n```\n\n# C#: for 循环\n\n‘for’语句提供了一种紧凑的方法来遍历值范围的值。\n\n\
+  ### 语法\n\n```csharp\nfor(initialization; condition; update){\n    //要执行的语句\n}\n\
+  ```\n\n\n\n\n\n`for` 循环执行语句，直到条件求值为假。\n\n- **初始化**（Initialization）部分在循环开始时执行一次。\n\
+  - **条件**（Condition）部分在每次执行循环语句之前求值。\n- **更新**（Update）部分在每次循环执行完成后立即执行。\n\n### `Program.cs`\n\
+  ```csharp\nusing System ;\n\nclass Program\n{\n    static void Main ( string []\
+  \ args)\n    {\n        for ( int var1 = 0 ; var1 < 10 ; var1++)\n        {\n  \
+  \          Console.WriteLine(var1);\n        }\n    }\n}\n```\n\n### 输出\n```\n0\n\
+  1\n2\n3\n4\n5\n6\n7\n8\n9\n```\n\n# C#: for-each 循环\n\n`for-each` 循环用于遍历元素集合。\n\n\
+  ### 语法\n```\nforeach(datatype variable in collection){\n}\n```\n\n### `Program.cs`\n\
+  ```csharp\nusing System ;\n\nclass Program\n{\n    static void Main ( string []\
+  \ args)\n    {\n        int [] primeNumbers = new int [ 10 ];\n        primeNumbers[\
+  \ 0 ] = 2 ;\n        primeNumbers[ 1 ] = 3 ;\n        primeNumbers[ 2 ] = 5 ;\n\
+  \        primeNumbers[ 3 ] = 7 ;\n        primeNumbers[ 4 ] = 11 ;\n        primeNumbers[\
+  \ 5 ] = 13 ;\n        foreach ( int num in primeNumbers)\n        {\n          \
+  \  Console.WriteLine(num);\n        }\n    }\n}\n```\n\n### 输出\n```\n2\n3\n5\n7\n\
+  11\n13\n```\n\n# C#: break 语句\n\n`break` 语句用于退出循环。\n\n### 语法\n```\nbreak;\n```\n\
+  \n### `Program.cs`\n```csharp\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        for ( int i = 0 ; i < 10 ; i++)\n     \
+  \   {\n            if (i == 5 ) break ;\n            Console.WriteLine(i);\n   \
+  \     }\n        Console.WriteLine(\"I am out of the loop\");\n    }\n}\n```\n\n\
+  ### 输出\n```\n0\n1\n2\n3\n4\nI am out of the loop\n```\n\n# C#: continue 语句\n\n`continue`\
+  \ 语句跳过 for, while, do-while, for-each 循环的当前迭代。\n\n### 语法\n```\ncontinue;\n```\n\n\
+  ### `Program.cs`\n```csharp\nusing System ;\n\nclass Program\n{\n    static void\
+  \ Main ( string [] args)\n    {\n        for ( int i = 0 ; i < 10 ; i++)\n     \
+  \   {\n            if (i % 2 == 0 ) continue ;\n            Console.WriteLine(i);\n\
+  \        }\n        Console.WriteLine(\"I am out of the loop\");\n    }\n}\n```\n\
+  \n### 输出\n```\n1\n3\n5\n7\n9\nI am out of the loop\n```\n\n# C#: 方法 (Methods)\n\n\
+  方法是一个语句块，你可以定义一次方法并执行任意次。\n\n### 语法\n```\naccessModifier returnType methodName(arguments){\n\
+  \    //方法体\n}\n```\n\n- 现在不要担心 `accessModifier`，我会在解释完类之后再解释它。\n- `returnType` 是方法返回的值，可以是任何有效的预定义（或）自定义数据类型。如果你不想从方法返回任何值，请将返回类型设为\
+  \ `void`。\n- `methodName` 是任何不是 C# 关键字的有效名称。\n- 你可以向方法传递零（或）多个参数。\n\n### 示例\n```csharp\n\
+  int sum(int a, int b)\n{\n    return a + b;\n}\n```\n- `int` : 方法的返回类型\n- `sum`\
+  \ : 方法名\n- `int a, int b` : 方法的参数\n\n### `Program.cs`\n```csharp\nusing System ;\n\
+  \nclass Program\n{\n    static void Main ( string [] args)\n    {\n        Program\
+  \ obj = new Program();\n        int result1 = obj.sum(10, 5);\n        int result2\
+  \ = obj.sub(10, 5);\n        int result3 = obj.mul(10, 5);\n        int result4\
+  \ = obj.div(10, 5);\n        Console.WriteLine(\"Sum of 10 and 5 is {0}\", result1);\n\
+  \        Console.WriteLine(\"Subtraction of 10 and 5 is {0}\", result2);\n     \
+  \   Console.WriteLine(\"Multiplication of 10 and 5 is {0}\", result3);\n       \
+  \ Console.WriteLine(\"Division of 10 and 5 is {0}\", result4);\n        obj.printEvenNumbers();\n\
+  \    }\n    int sum (int a, int b)\n    {\n        return a + b;\n    }\n    int\
+  \ sub (int a, int b)\n    {\n        return a - b;\n    }\n    int mul (int a, int\
+  \ b)\n    {\n        return a * b;\n    }\n    int div (int a, int b)\n    {\n \
+  \       return a/ b;\n    }\n    void printEvenNumbers ()\n    {\n        Console.WriteLine(\"\
+  Even Numbers from 0 to 10 are : \");\n        for ( int i= 0 ; i< 10 ; i += 2 )\n\
+  \        {\n            Console.WriteLine(i);\n        }\n    }\n}\n```\n\n### 输出\n\
+  ```\nSum of 10 and 5 is 15\nSubtraction of 10 and 5 is 5\nMultiplication of 10 and\
+  \ 5 is 50\nDivision of 10 and 5 is 2\nEven Numbers from 0 to 10 are :\n0\n2\n4\n\
+  ```\n\n注意上述代码段，方法是通过类的实例（object）调用的：\n```csharp\nProgram obj = new Program();\n\
+  int result1 = obj.sum(10, 5);\nint result2 = obj.sub(10, 5);\nint result3 = obj.mul(10,\
+  \ 5);\nint result4 = obj.div(10, 5);\n```\n\n未定义 `static` 关键字的方法是实例方法。实例方法必须通过类的对象来调用。在上面的示例中，`sum`、`sub`、`mul`、`div`、`printEvenNumbers`\
+  \ 实例方法。\n\n定义对象：\n```csharp\nProgram obj = new Program();\n```\n\n### 静态方法 (Static\
+  \ Methods)\n\n使用 `static` 关键字定义的是静态方法。这些方法通过类名调用。\n\n例如：\n```csharp\nstatic int\
+  \ sum(int a, int b)\n{\n    return a + b;\n}\n```\n你可以通过 `Program.sum(10, 5)` 调用上述方法，其中\
+  \ `Program` 是类名。\n\n### `Program.cs`\n```csharp\nusing System ;\n\nclass Program\n\
+  {\n    static void Main ( string [] args)\n    {\n        Program obj = new Program();\n\
+  \        int result1 = Program.sum(10, 5);\n        int result2 = Program.sub(10,\
+  \ 5);\n        int result3 = Program.mul(10, 5);\n        int result4 = Program.div(10,\
+  \ 5);\n        Console.WriteLine(\"Sum of 10 and 5 is {0}\", result1);\n       \
+  \ Console.WriteLine(\"Subtraction of 10 and 5 is {0}\", result2);\n        Console.WriteLine(\"\
+  Multiplication of 10 and 5 is {0}\", result3);\n        Console.WriteLine(\"Division\
+  \ of 10 and 5 is {0}\", result4);\n        Program.printEvenNumbers();\n    }\n\
+  \    static int sum (int a, int b)\n    {\n        return a + b;\n    }\n    static\
+  \ int sub (int a, int b)\n    {\n        return a - b;\n    }\n    static int mul\
+  \ (int a, int b)\n    {\n        return a * b;\n    }\n    static int div (int a,\
+  \ int b)\n    {\n        return a/ b;\n    }\n    static void printEvenNumbers ()\n\
+  \    {\n        Console.WriteLine(\"Even Numbers from 0 to 10 are : \");\n     \
+  \   for ( int i= 0 ; i< 10 ; i += 2 )\n        {\n            Console.WriteLine(i);\n\
+  \        }\n    }\n}\n```\n\n### 输出\n```\nSum of 10 and 5 is 15\nSubtraction of\
+  \ 10 and 5 is 5\nMultiplication of 10 and 5 is 50\nDivision of 10 and 5 is 2\nEven\
+  \ Numbers from 0 to 10 are :\n0\n2\n4\n6\n```\n\n### JAVASCRIPT 编程练习\n\n## 初学者编程\n\
+  ### JAVASCRIPT 编程练习\n### JavaScript 函数练习\n\n### JavaScript: 查找第一个非重复字符\n示例参数：`'abacddbec'`\n\
+  预期输出：`'e'`\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+  utf-8\">\n  <title>查找第一个非重复字符</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n\
+  ### JAVCRIPT 代码\n```javascript\nfunction find_FirstNotRepeatedChar(str) {\n  var\
+  \ arra1 = str.split('');\n  var result = '';\n  var ctr = 0;\n  for (var x = 0;\
+  \ x < arra1.length; x++) {\n    ctr = 0;\n    for (var y = 0; y < arra1.length;\
+  \ y++)\n    {\n      if (arra1[x] === arra1[y]) {\n        ctr+= 1;\n      }\n \
+  \   }\n    if (ctr < 2) {\n      result = arra1[x];\n      break;\n    }\n  }\n\
+  \  return result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n```\n\
+  \n### 输出\n```\ne\n```\n\n### 流程图\n![](img/Image00005.jpg)\n\n### JavaScript: 查找字符串中最长的单词\n\
+  示例字符串：`'Web Development Tutorial'`\n预期输出：`'Development'`\n\n### HTML 代码\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>查找字符串中最长的单词</title>\n\
+  </head>\n<body>\n</body>\n</html>\n```\n\n## JAVASCRIPT 代码\n```javascript\nfunction\
+  \ find_longest_word(str)\n{\n  var array1 = str.match(/\\w[a-z]{0,}/gi);\n  var\
+  \ result = array1[0];\n  for(var x = 1 ; x < array1.length ; x++)\n  {\n    if(result.length\
+  \ < array1[x].length)\n    {\n      result = array1[x];\n    }\n  }\n  return result;\n\
+  }\nconsole.log(find_longest_word('Web Development Tutorial'));\n```\n\n### 输出\n\
+  ```\nDevelopment\n```\n\n\n\n\n\n当字符串与正则表达式进行匹配时，使用 `match()` 方法可以获取匹配结果。\n\n`str.match(/w[a-z]*/gi)`\
+  \ 的结果将返回 `[\"Web\", \"Development\", \"Tutorial\"]`。\n\n`for` 循环将每个数组元素的长度与前一个元素进行比较，并返回最长的字符串。\n\
+  \n`length` 属性是一个 32 位无符号整数，其数值始终大于数组的最高索引。\n\n### 语法\n`arr.length`\n\n### 流程图\n\
+  ![](img/Image00006.jpg)\n\n### JavaScript: 统计字符串中的元音数量\n示例字符串：'The quick brown fox'\n\
+  预期输出：5\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8\
+  \ />\n<title>Counts the number of vowels within a string</title>\n</head>\n<body>\n\
+  </body>\n</html>\n```\n\n### JAVCRIPT 代码\n```javascript\nfunction vowel_count(str1)\n\
+  {\n  var vowel_list = 'aeiouAEIOU';\n  var vcount = 0;\n  for(var x = 0; x < str1.length\
+  \ ; x++)\n  {\n    if (vowel_list.indexOf(str1[x]) !== -1)\n    {\n      vcount\
+  \ += 1;\n    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"The quick brown\
+  \ fox\"));\n```\n\n### 输出\n5\n\n### 解释\n`indexOf()` 方法返回指定值在调用的 `String` 对象中首次出现的索引，从\
+  \ `fromIndex` 开始。如果找不到该值，则返回 `-1`。\n\n### 语法\n`str.indexOf(searchValue[, fromIndex])`\n\
+  \n**参数包括：**\n- `searchValue`：表示要查找值的字符串。\n- `fromIndex`（可选）：字符串正向搜索的索引。可以使用任何整数。\n\
+  \n如果满足条件 `vowel_list.indexOf(str1[x])!== -1`，则字符串中的字符将被计为元音。\n\n### 流程图\n![](img/Image00007.jpg)\n\
+  \n### JavaScript: 检查数字是否为质数\n![](img/Image00008.jpg)\n\n### HTML 代码\n```html\n<!DOCTYPE\
+  \ html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>Check a number is prime\
+  \ or not</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT 代码\n```javascript\n\
+  function test_prime(n)\n{\n  if (n===1)\n  {\n    return false;\n  }\n  else if(n\
+  \ === 2)\n  {\n    return true;\n  }else\n  {\n    for(var x = 2; x < n; x++)\n\
+  \    {\n      if(n % x === 0)\n      {\n        return false;\n      }\n    }\n\
+  \    return true; \n  }\n}\nconsole.log(test_prime(37));\n```\n\n### 输出\nTrue\n\n\
+  ### 流程图\n![](img/Image00009.jpg)\n\n### JavaScript: 获取数据类型\n我们将创建一个 JavaScript 函数，接收一个参数并返回其类型。\n\
+  注意六种可能的值：`object`、`boolean`、`method`、`number`、`string` 或 `undefined`。\n\n### HTML\
+  \ 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>Detect\
+  \ JavaScript Data Types</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVCRIPT\
+  \ 代码\n```javascript\nfunction detect_data_type(value)\n{\n  var dtypes = [Function,\
+  \ RegExp, Number, String, Boolean, Object], x, len;\n  if (typeof value === \"object\"\
+  \ || typeof value === \"function\")\n  {\n    for (x = 0, len = dtypes.length; x\
+  \ < len; x++)\n      {\n        if (value instanceof dtypes[x])\n        {\n   \
+  \       return dtypes[x];\n        }\n      }\n  }\n  return typeof value;\n}\n\
+  console.log(detect_data_type(12));\nconsole.log(detect_data_type('w3resource'));\n\
+  console.log(detect_data_type(false));\n```\n\n### 输出\nnumber\nstring\nBoolean\n\n\
+  ### JavaScript: 从数组中找到第二小和第二数字\n![](img/Image00010.jpg)\n\n### HTML 代码\n```html\n\
+  <!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>Find the second\
+  \ lowest and second greatest numbers from an array</title>\n</head>\n<body>\n</body>\n\
+  </html>\n```\n\n### JAVCRIPT 代码\n```javascript\nfunction Second_Greatest_Lowest(arr_num)\n\
+  {\n  arr_num.sort(function(x,y)\n          {\n    return x-y;\n          });\n \
+  \ var uniqa = [arr_num[0]];\n  var result = [];\n  for(var j=1; j < arr_num.length;\
+  \ j++)\n  {\n    if(arr_num[j-1] !== arr_num[j])\n    {\n      uniqa.push(arr_num[j]);\n\
+  \    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+  }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n### 输出\n2,4\n\n###\
+  \ 流程图\n![](img/Image00011.jpg)\n\n### JavaScript 基础\n计算两个数字的乘法和除法\n\n### HTML 代码\n\
+  ```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>JavaScript\
+  \ program to calculate multiplication and division of numbers</title>\n<style>\n\
+  body {margin:30px;}\n</style>\n</head>\n<body>\n<form>\n1st Number : <input type=\"\
+  text\" id=\"firstNumber\" />\n2nd Number: <input type=\"text\" id=\"secondNumber\"\
+  \ />\n<input type=\"button\" onclick=\"multiplyBy()\"> Multiply />\n<input type=\"\
+  button\" onclick=\"divideBy()\"> Divide />\n</form>\n<p>Result is : <span id=\"\
+  result\"></span></p>\n</body>\n</html>\n```\n\n### JAVCRIPT 代码\n```javascript\n\
+  function multiplyBy()\n{\n  var num1 = document.getElementById(\"firstNumber\").value;\n\
+  \  var num2 = document.getElementById(\"secondNumber\").value;\n  document.getElementById(\"\
+  result\").innerHTML = num1 * num2;\n}\n\nfunction divideBy()\n{\n  var num1 = document.getElementById(\"\
+  firstNumber\").value;\n  var num2 = document.getElementById(\"secondNumber\").value;\n\
+  \  document.getElementById(\"result\").innerHTML = num1 / num2;\n}\n```\n\n### 解释\n\
+  可以使用以下公式进行精确转换（华氏度转摄氏）：\n- 华氏转摄氏： (°F − 32) ÷ 1.8\n- 摄氏转华氏： (°C × 1.8) + 32\n\n\
+  元素的 `innerHTML` 属性用于设置内容。\n\n![](img/Image00012.jpg)\n\n### 温度转换\n从摄氏度到华氏度\n\n###\
+  \ HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=utf-8 />\n<title>JavaScript\
+  \ program to convert temperatures to from celsius</title>\n</head>\n<body>\n</body>\n\
+  </html>\n```\n\n### JAVCRIPT 代码\n```javascript\nfunction cToF(celsius)\n{\n  var\
+  \ cTemp = celsius;\n  var cFahr = (cTemp - 32) * 9 / 5;\n  var message = cFahr +\
+  \ '°F';\n}\n\nfunction fToC(fahrenheit)\n{\n  var fTemp = fahrenheit;\n  var fCel\
+  \ = (fTemp - 32) * 5 / 9;\n  var message = fCel + '°C';\n}\ncToF(60);\nfToC(45);\n\
+  ```\n\n### 输出\n68°F\n7.°C\n\n\n\n\n\n# JavaScript 程序：将给定字符串中的每个字符替换为字母表中的下一个字符。\n\
+  \n## JAVASCRIPT 代码\n```javascript\nfunction string_reverse(str)\n\nfunction LetterChanges(text)\
+  \ {\n  //https://goo.gl/R8gn7u\n  var s = text.split('');\n\n  for (var i = 0; i\
+  \ < s.length; i++) {\n    // 凯撒密码\n    switch(s[i]) {\n      case ' ':\n       \
+  \ break;\n      case 'z':\n        s[i] = 'a';\n        break;\n      case 'Z':\n\
+  \        s[i] = 'A';\n        break;\n      default:\n        s[i] = String.fromCharCode(1\
+  \ + s[i].charCodeAt(0));\n    }\n    // 大写元音\n    switch(s[i]) {\n      case 'a':\
+  \ case 'e': case 'i': case 'o': case 'u':\n        s[i] = s[i].toUpperCase();\n\
+  \    }\n  }\n  return s.join('');\n}\n\nconsole.log(LetterChanges(\"PYTHON\"));\n\
+  console.log(LetterChanges(\"W3R\"));\nconsole.log(LetterChanges(\"php\"));\n```\n\
+  **输出：**\nQZUIPO\nX4S\nqIq\n\n---\n\n# JavaScript 程序：创建一个去掉第一个和最后一个字符的新字符串。\n\n##\
+  \ JAVASCRIPT 代码\n```javascript\nfunction without_first_end(str) {\n  return str.substring(1,\
+  \ str.length - 1);\n}\n\nconsole.log(without_first_end('JavaScript'));\nconsole.log(without_first_end('JS'));\n\
+  console.log(without_first_end('PHP'));\n```\n**输出：**\navaScrip\nH\n\n---\n\n# 拼接两个字符串，除掉它们的第一个字符\n\
+  \n## JAVASCRIPT 代码\n```javascript\nfunction concatenate(str1, str2) {\n  str1 =\
+  \ str1.substring(1, str1.length);\n  str2 = str2.substring(1, str2.length);\n  return\
+  \ str1 + str2;\n}\n\nconsole.log(concatenate(\"PHP\",\"JS\"));\nconsole.log(concatenate(\"\
+  A\",\"B\"));\nconsole.log(concatenate(\"AA\",\"BB\"));\n```\n**输出：**\nHPS\nAB\n\n\
+  ---\n\n# 将指定字符串的最后三个字符移动到开头\n\n## JAVASCRIPT 代码\n```javascript\nfunction right_three(str)\
+  \ {\n  if (str.length > 1) {\n    return str.slice(-3) + str.slice(0, -3);\n  }\n\
+  \  return str;\n}\n\nconsole.log(right_three(\"Python\"));\nconsole.log(right_three(\"\
+  JavaScript\"));\nconsole.log(right_three(\"Hi\"));\n```\n**输出：**\nhonPyt\niptJavaScr\n\
+  Hi\n\n---\n\n# 计算长度为 3 的给定整数数组中三个元素的和\n\n## JAVASCRIPT 代码\n```javascript\nfunction\
+  \ sum_three(nums) {\n  return nums[0] + nums[1] + nums[2];\n}\n\nconsole.log(sum_three([10,\
+  \ 32, 20])); \nconsole.log(sum_three([5, 7, 9]));\nconsole.log(sum_three([0, 8,\
+  \ -11]));\n```\n**输出：**\n62\n21\n-3\n\n---\n\n# 将长度为二的给定正整数两个数字相加\n\n## JAVASCRIPT\
+  \ 代码\n```javascript\nfunction add_two_digits(n) {\n  return n % 10 + Math.floor(n\
+  \ / 10);\n}\n\nconsole.log(add_two_digits(25));\nconsole.log(add_two_digits(50));\n\
+  ```\n**输出：**\n7\n5\n\n---\n\n# 检查给定年份是否为闰年\n\n## JAVASCRIPT 代码\n```javascript\n\
+  function leapyear(year) {\n  return (year % 100 === 0) ? (year % 400 === 0) : (year\
+  \ % 4 === 0);\n}\n\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\n\
+  console.log(leapyear(1700));\nconsole.log(leapyear(1800));\nconsole.log(leapyear(100));\n\
+  ```\n**输出：**\ntrue\ntrue\nfalse\nfalse\n\n---\n\n# 检查正数是否为 3 或 7 的倍数\n\n## JAVASCRIPT\
+  \ 代码\n```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n \
+  \   return true;\n  } else {\n    return false;\n  }\n}\n\nconsole.log(test37(12));\n\
+  console.log(test37(14));\nconsole.log(test37(10));\nconsole.log(test37(11));\n```\n\
+  **输出：**\ntrue\ntrue\nfalse\nfalse\n\n---\n\n# 检查字符串是否以 'Java' 开头，否则返回 false\n\n\
+  ## JAVASCRIPT 代码\n```javascript\nfunction start_spec_str(str) {\n  if (str.length\
+  \ < 4) {\n    return false;\n  }\n  front = str.substring(0, 4);\n  if (front ==\
+  \ 'Java') {\n    return true;\n  } else {\n    return false;\n  }\n}\n\nconsole.log(start_spec_str(\"\
+  JavaScript\"));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"\
+  Python\"));\n```\n**输出：**\ntrue\ntrue\nfalse\n\n---\n\n# 检查两个整数是否在 50..99 范围内\n\n\
+  ## JAVASCRIPT 代码\n```javascript\nfunction check_numbers(x, y) {\n  if ((x >= 50\
+  \ && x <= 99) || (y >= 50 && y <= 99)) {\n    return true;\n  } else {\n    return\
+  \ false;\n  }\n}\n\nconsole.log(check_numbers(12, 101));\nconsole.log(check_numbers(52,\
+  \ 80));\nconsole.log(check_numbers(15, 99));\n```\n**输出：**\nfalse\ntrue\ntrue\n\n\
+  ---\n\n# 从两个不同的整数值中找到距离 100 最近的值\n\n## JAVASCRIPT 代码\n```javascript\nfunction near_100(x,\
+  \ y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y - 100);\n\
+  \    if (x1 < y1) {\n      return x;\n    }\n    if (y1 < x1) {\n      return y;\n\
+  \    }\n    return 0;\n  } else\n    return false;\n}\n\nconsole.log(near_100(90,\
+  \ 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90, 90));\n```\n\
+  **输出：**\n90\n-89\nfalse\n\n\n\n\n\n# 编程书籍资源列表\n\n- [初学者 HTML 教程：HTML/CSS 编程语言快速上手教程，简单步骤网页设计快速启动脚本教程书](https://www.amazon.com/HTML-BEGINNERS-Programming-Language-Tutorial-ebook/dp/B07SBFC4TG/ref=sr_1_1?dchild=1&keywords=HTML+FOR+BEGINNERS%3A+Html+CSS+Programming+Language+Crash+Course%2C+Web+Design+Quick+Start+Script+Tutorial+Book+in+Easy+Steps+-+LEARN+TO+CODE+FAST&qid=1627653769&s=digital-text&sr=1-1)\n\
+  - [DART 编程入门：针对初学者](https://www.amazon.com/DART-PROGRAMMING-BASICS-ABSOLUTE-BEGINNERS-ebook/dp/B08ZHVYV2L/ref=sr_1_1?dchild=1&keywords=DART+PROGRAMMING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627653907&s=digital-text&sr=1-1)\n\
+  - [初学者 Rust 和 Go 语言 ang：二合一 - 快速学习编程！RUST 和 GOLANG](https://www.amazon.com/RUST-GOLANG-BEGINNERS-QuickStart-Tutorial-ebook/dp/B085417G1F/ref=sr_1_1?dchild=1&keywords=RUST+AND+GOLANG+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654027&s=digital-text&sr=1-1)\n\
+  - [初学者 APACHE SPARK 和 HADOOP：二合一 - 快速学习编程！](https://www.amazon.com/APACHE-SPARK-HADOOP-BEGINNERS-QuickStart-ebook/dp/B083KDVCKQ/ref=sr_1_1?dchild=1&keywords=APACHE+SPARK+AND+HADOOP+FOR+BEGINNERS%3A&qid=1627654125&s=digital-text&sr=1-1)\n\
+  - [初学者 TensorFlow：快速学习编程](https://www.amazon.com/TensorFlow-Beginners-Framework-learning-Hands-ebook/dp/B0872T7GS1/ref=sr_1_1?dchild=1&keywords=TensorFlow+For+Beginners%3A+Learn+Coding+Fast%3A&qid=1627654182&s=digital-text&sr=1-1)\n\
+  - [初学者 Django 和 Python：二合一 - 快速学习编程！](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS/ref=sr_1_1?dchild=1&keywords=DJANGO+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654258&s=digital-text&sr=1-1)\n\
+  - [JavaScript 和 Dart 编程基础：针对初学者](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9/ref=sr_1_1?dchild=1&keywords=JAVASCRIPT+AND+DART+CODING-BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654541&s=digital-text&sr=1-1)\n\
+  - [初学者 TensorFlow 和 Python 编程基础：针对初学者](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C/ref=sr_1_2?dchild=1&keywords=TENSORFLOW+FOR+BEGINNERS+AND+PYTHON+CODING+BASICS%3A+FOR+ABSOLUTE+BEGINNERS&qid=1627654724&s=digital-text&sr=1-2)\n\
+  - [Rust 编程语言：针对初学者，快速学习编程！](https://www.amazon.com/RUST-Programming-Language-Beginners-QuickStart-ebook/dp/B07VRXQ2PR/ref=sr_1_2?dchild=1&keywords=RUST+Programming+Language+TAM+SEL&qid=1627653241&s=digital-text&sr=1-2)\n\
+  - [初学者 HADOOP 和 Python：二合一 - 快速学习编程！](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X/ref=sr_1_1?dchild=1&keywords=HADOOP+AND+PYTHON+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654833&s=digital-text&sr=1-1)\n\
+  - [初学者 Selenium 和 Java：二合一 - 快速学习编程！](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9/ref=sr_1_1?dchild=1&keywords=SELENIUM+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627654994&s=digital-text&sr=1-1)\n\
+  - [初学者 Android 和 Java：二合一 - 快速学习编程！](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2/ref=sr_1_1?dchild=1&keywords=ANDROID+AND+JAVA+FOR+BEGINNERS%3A+2+BOOKS+IN+1+-+Learn+Coding+Fast%21&qid=1627655061&s=digital-text&sr=1-1)\n\
+  \n## 特定语言指南\n\n### Python 与数据\n- [Hadoop 和 Python](https://www.amazon.com/HADOOP-PYTHON-BEGINNERS-QuickStart-Tutorial-ebook/dp/B082WH5Y1X)\n\
+  - [TensorFlow 和 Python](https://www.amazon.com/TENSORFLOW-BEGINNERS-PYTHON-CODING-BASICS-ebook/dp/B08RVGF33C)\n\
+  \n### Java 与 Android\n- [Selenium 和 Java](https://www.amazon.com/SELENIUM-JAVA-BEGINNERS-framework-QuickStart-ebook/dp/B08533D6L9)\n\
+  - [Android 和 Java](https://www.amazon.com/ANDROID-JAVA-BEGINNERS-QuickStart-Tutorial-ebook/dp/B087F54VY2)\n\
+  \n### Web 与框架\n- [Django 和 Python](https://www.amazon.com/DJANGO-PYTHON-BEGINNERS-Programming-QuickStart-ebook/dp/B07Y58ZGVS)\n\
+  - [JavaScript 和 Dart](https://www.amazon.com/JAVASCRIPT-DART-CODING-BASICS-BEGINNERS-ebook/dp/B092DKX7S9)\n\
+  - [HTML 和 CSS](https://www.amazon.com/HTML-BEGINNERS-Programming-Language-Tutorial-ebook/dp/B07SBFC4TG)\n\
+  \n"

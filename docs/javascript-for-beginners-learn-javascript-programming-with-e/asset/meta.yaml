@@ -1,0 +1,140 @@
+name: JavaScript For Beginners ： Learn JavaScript Programming with Ease in HALF THE
+  TIME ： Everything about the Language, Coding, Programming and Web Pages You need
+  to know
+name_cn: JavaScript 初学者指南：用一半倍的时间轻松 JavaScript 编程：你需要了解的所有语言、编码、编程和网页知识
+slug: javascript-for-beginners-learn-javascript-programming-with-e
+toc:
+- - '#'
+  - JavaScript 初学者指南：用一半倍的时间轻松 JavaScript 编程：你需要了解的所有语言、编码、编程和网页知识
+- - '##'
+  - JavaScript 简介
+- - '##'
+  - JavaScript 的用途
+- - '##'
+  - JavaScript 能为你做什么
+- - '##'
+  - 进入 DOM 脚本
+- - '##'
+  - JavaScript 的其他现代用途
+- - '##'
+  - 明智且负责任地使用 JavaScript
+- - '##'
+  - JavaScript 和 HTML
+- - '##'
+  - HTML 基础
+- - '##'
+  - 你知道 HTML 是什么吗？
+- - '##'
+  - jQuery 插件结构
+- - '##'
+  - 为我们的插件添加功能
+- - '###'
+  - 获取 HTML 部分 - 构建折叠面板结构
+- - '##'
+  - JavaScript 和 CSS
+- - '##'
+  - 使用 JavaScript 获取伪元素
+- - '##'
+  - 使用加载器加载 CSS 文件
+- - '##'
+  - CSS 核心基础
+- - '###'
+  - CSS pointer-events
+- - '####'
+  - 用法
+- - '####'
+  - 基础设置
+- - '#####'
+  - 网格
+- - '#####'
+  - 加载动画
+- - '#####'
+  - 文本截断
+- - '#####'
+  - 推入动画
+- - '#####'
+  - 自定义
+- - '#####'
+  - 命令值
+- - '##'
+  - 每位设计师都应该知道的 20 个核心 CSS 技巧
+- - '###'
+  - Transition（过渡效果）
+- - '###'
+  - . Link states（链接状态）
+- - '###'
+  - 8. 轻松缩放图片以适应
+- - '###'
+  - 9. 控制区域内的元素
+- - '###'
+  - 10. Direct children（直接子元素）
+- - '####'
+  - Specific Child Elements（特定子元素）
+- - '###'
+  - 11. 将 CSS 应用到多个类或选择器
+- - '###'
+  - '12. box-sizing: border-box;'
+- - '###'
+  - 13. :before
+- - '###'
+  - 14. :after
+- - '###'
+  - 15. content
+- - '###'
+  - 16. CSS reset（CSS 重置）
+- - '###'
+  - Drop caps（首字母大字）
+- - '##'
+  - 运行 JavaScript 函数的不同方法
+- - '###'
+  - 1 – 裸锚点 (anchor naked)
+- - '###'
+  - 2 – 锚点哈引用 (anchor hash ref)
+- - '###'
+  - 3 – 锚点伪协议 (anchor pseudo)
+- - '###'
+  - 4 – 锚点伪协议 void (anchor pseudo void)
+- - '###'
+  - 5 – 锚点返回 false (anchor return false)
+- - '###'
+  - 6 – 锚点美化 URL/jQuery (anchor pretty url/jQuery)
+- - '##'
+  - 学习 CSS 语法和正确应用
+- - '##'
+  - CSS 语法由三个元素组成。
+- - '###'
+  - 内联样式 (Inline Styles)
+- - '###'
+  - 内部样式 (Internal Styles)
+- - '###'
+  - 外部样式 (External Styles)
+- - '##'
+  - 为什么 JavaScript 中的大小写敏感如此重要？
+- - '##'
+  - 理解注释
+- - '###'
+  - 句子中的冒号用法
+- - '##'
+  - 递归循环
+- - '###'
+  - 偶尔
+- - '###'
+  - 恐惧
+- - '###'
+  - 感知
+- - '###'
+  - 递归
+- - '##'
+  - C# .Net 中的数组
+- - '###'
+  - 什么是数组？
+- - '###'
+  - 我们每天都使用数组
+- - '###'
+  - 如何声明数组？
+- - '###'
+  - 实际应用
+- - '##'
+  - CSS - 基础
+- - '##'
+  - CSS 语法

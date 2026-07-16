@@ -1,0 +1,1766 @@
+- "# JavaScript 入门指南 第6 版\n\n\n\n\n\n\n\n\n\n\n\n版权 © 2020 In Easy Steps Limited.\
+  \ 版权所有。未经出版者书面许可，不得以任何形式或通过任何手段（电子或机械，包括复印、录制或通过信息存储或检索系统）复制或传输本书的任何部分。\n\n# 免责声明\n\
+  \n我们已尽力确保本书包含准确和最新的信息。然而，In Easy Steps Limited 和作者对读者因此处包含的任何信息而遭受的任何损失或损害不承担任何责任。\n\
+  \n# 商标\n\n所有商标均归其各自公司所有。\n\n# 目录\n\n## 1 **入门 JavaScript**\n- 了解 JS\n- 引入脚本\n- 控制台输出\n\
+  - 编写语句\n- 避免关键字\n- 存储数值\n- 创建函数\n- 分配函数\n- 识别作用域\n- 使用闭包\n- 总结\n\n## 2 **执行常用操作**\n\
+  - 转换数值\n- 进行算术运算\n- 赋值\n- 进行比较\n- 评估逻辑\n- 检查条件\n- 处理位操作\n- 强制排序\n- 总结\n\n## 3 **管理脚本流程**\n\
+  - if 分支\n- 备分支\n- switch 分支\n- for 循环\n- while 循环\n- do 循环\n- 退出\n- 捕获错误\n- 总结\n\
+  \n## 4 **使用脚本对象**\n- 自定义对象\n- 扩展对象\n- 内置对象\n- 创建数组\n- 循环元素\n- 切片数组\n- 排序元素\n- 获取日期\n\
+  - 提取日历\n- 提取时间\n- 设置日期\n- 匹配模式\n- 总结\n\n## 5 **控制数字与字符串**\n- 计算面积\n- 比较数字\n- 四舍五入小数\n\
+  - 生成随机数\n- 合并字符串\n- 分割字符串\n- 查找字符\n- 修剪字符串\n- 总结\n\n## 6 **处理 Window 对象**\n- 了解\
+  \ DOM\n- 检查属性\n- 显示对话框\n- 滚动页面\n- 弹出窗口\n- 制作计时器\n- 检查浏览器\n- 检查状态\n- 控制位置\n- 浏览历史记录\n\
+  - 总结\n\n## 7 **与文档交互**\n- 提取信息\n- 处理数组\n- 处理元素\n- 写入内容\n- 管理 Cookies\n- 加载事件\n-\
+  \ 鼠标事件\n- 事件值\n- 复选框\n- 选择选项\n- 验证表单\n- 总结\n\n## 8 **创建 Web **\n- 了解 JSON\n- 制作\
+  \ Promises\n- 获取数据\n- 创建界面\n- 填充单元\n- 总值\n- 更新应用\n- 总结\n\n## 9 **脚本魔法**\n- 请求数据\n\
+  - 嵌入矢量\n- 绘制 Canvas\n- 存储数据\n- 传递消息\n- 定位用户\n- 总结\n\n# 1 **入门 JavaScript**\n*本章介绍了\
+  \ JavaScript 的精彩世界。它演示了如何向 HTML 添加脚本。*\n\n- 了解 JS\n- 引入脚本\n- 控制台输出\n- 编写语句\n- 避免关键字\n\
+  - 存储数值\n- 创建函数\n- 分配函数\n- 识别作用域\n- 使用闭包\n- 总结\n\nJavaScript (“JS”)是一种基于对象的脚本语言，其解释器嵌入\
+  \ Google Chrome、Microsoft Edge、Firefox 和 Safari 等浏览器软件中。这允许网页中的脚本在页面加载时被解释。出于安全考虑，它无法读取或写入存储数据的\
+  \ `cookie` 文件。\n\n- 引入脚本\n- 控制台输出\n- 编写语句\n- 避免关键字\n- 存储数值\n- 创建函数\n- 分配函数\n- 识别作用域\n\
+  - 使用闭包\n- 总结\n\n# 2 **执行操作**\n*本章介绍了如何使用算术、比较和逻辑运算符来操作数据。*\n\n- 转换数值\n- 进行算术运算\n\
+  - 赋值\n- 进行比较\n- 评估逻辑\n- 检查条件\n- 处理位操作\n- 强制排序\n- 总结\n\n# 3 **管理脚本流程**\n*本章解释了如何使用条件、循环和错误处理来控制脚本的执行。*\n\
+  \n- if 分支\n- 备分支\n- switch 分支\n- for 循环\n- while 循环\n- do 循环\n- 退出\n- 捕获错误\n- 总结\n\
+  \n# 4 **使用脚本对象**\n*本章探索了如何处理自定义和内置对象、数组和日期。*\n\n- 自定义对象\n- 扩展对象\n- 内置对象\n- 创建数组\n\
+  - 循环元素\n- 切片数组\n- 排序元素\n- 获取日期\n- 提取日历\n- 提取时间\n- 设置日期\n- 匹配模式\n- 总结\n\n# 5 **控制数字与字符串**\n\
+  *本章了处理数字和字符串的技术。*\n\n- 计算面积\n- 比较数字\n- 四舍五入小数\n- 生成随机数\n- 合并字符串\n- 分割字符串\n- 查找字符\n\
+  - 修剪字符串\n- 总结\n\n# 6 **处理 Window 对象**\n*本章侧重于与浏览器窗口和 DOM 的交互。*\n\n- 了解 DOM\n- 检查属性\n\
+  - 显示对话框\n- 滚动页面\n- 弹出窗口\n- 制作计时器\n- 检查浏览器\n- 检查状态\n- 控制位置\n- 浏览历史记录\n- 总结\n\n# 7\
+  \ **与文档交互**\n*本章介绍了如何动态操作 HTML 元素和处理用户事件。*\n\n- 提取信息\n- 处理数组\n- 处理元素\n- 写入内容\n-\
+  \ 管理 Cookies\n- 加载事件\n- 鼠标事件\n- 事件值\n- 复选框\n- 选择选项\n- 验证表单\n- 总结\n\n# 8 **创建 Web\
+  \ 应用**\n*本章介绍了现代 JavaScript 特性，如 JSON、Promises 和异步编程。*\n\n- 了解 JSON\n- 制作 Promises\n\
+  - 获取数据\n- 创建界面\n- 填充单元\n- 总值\n- 更新应用\n- 总结\n\n# 9 **脚本魔法**\n*本章涵盖了创建更强大的 Web 应用的高级主题。*\n\
+  \n- 请求数据\n- 嵌入矢量\n- 绘制 Canvas\n- 存储数据\n- 传递消息\n- 定位用户\n- 总结\n\n\n\n\n\n- **Web 应用程序**\
+  \ – 阐述响应式 Web 应用和 JavaScript 对象表示法（JSON）技术。\n\n### 引入脚本\n\n要在 HTML 文档中直接包含 JavaScript\
+  \ 代码，必须将其插入 `<script>` 和 `</script>` 标签之间，如下：\n\n```html\n<script>\ndocument.getElementById(\
+  \ ‘message’ ).innerText = ‘Hello World!’\n</script>\n```\n\nHTML 文档可以包含多个脚本，这些脚本可以放置在文档的\
+  \ `head` 或 `body` 部分。然而，建议将脚本放在 `body` 部分的末尾（紧接 `</</body>` 结束标签之前），这样浏览器在解释脚本之前可以先渲染网页。\n\
+  \nJavaScript 代码也可以写在具有 `.js` 文件扩展名的外部纯文本文件中。这允许多个不同的网页页面调用同一个脚本。若要在 HTML 文档中引入外部脚本，必须将脚本的文件赋值给\
+  \ `<script>` 标签的 `src` 属性，如下：\n\n```html\n<script src=”external_script.js”> </script>\n\
+  ```\n\n同样，这可以放置在文档的 `head` 或 `body` 部分，浏览器会将该脚本视为直接写在 HTML 文档中该位置。\n\n仅将外部脚本的文件赋值给\
+  \ `<script>` 标签的 `src` 属性需要脚本文件与 HTML 文档位于同一个文件夹（目录）。如果脚本位于相邻的文件夹，你可以分配文件的相对路径地址，如下：\n\
+  \n```html\n<script src=”js/external_script.js”> </script>\n```\n\n如果脚本位于其他地方，你可以分配文件的绝对路径地址，如下：\n\
+  \n```html\n<script src=”https://www.example.com/js/external_script.js”>\n</script>\n\
+  ```\n\n你还可以通过在 HTML 文档的 `body` 中包含 `<noscript>` 元素来指定用户在浏览器中禁用 JavaScript 时才会显示的内容，如下：\n\
+  \n```html\n<noscript>JavaScript is Not Enabled!</noscript>\n```\n\n![image](img/hot.jpg)\n\
+  \n你可能会在`<script>` 标签中看到 `type=”text/javascript”` 属性，但这不再是需要的，因为 JavaScript 现在是 HTML\
+  \ 的默认脚本语言。\n\n![image](img/snake.jpg)\n\n在外部 JavaScript 文件中不要包含 `<script>` 和 `</script>`\
+  \ 标签，只包含脚本代码。\n\n![image](img/forget.jpg)\n\n外部脚本文件可以使代码维护变得更容易，但为了清晰起见，书中几乎所有的示例都是独立的，因此请直接在\
+  \ HTML 文档的标签之间包含脚本代码。\n\n### 控制台输出\n\nJavaScript 可以通过动态向 HTML 元素写入内容来显示输出。例如，使用这段代码：\n\
+  \n```javascript\ndocument.getElementById( ‘message’ ).innerText = ‘Hello World!’\n\
+  ```\n\n该元素通过赋值给其 `id` 属性的值来识别，`innerText` 属性指定写入该处的文本。\n\n![image](img/pg10_1.jpg)\n\
+  \n此外，JavaScript 还可以通过将内容写入弹出对话框来显示输出，如下：\n\n```javascript\nwindow.alert( ‘Hello\
+  \ World!’ )\n```\n\n这调用了 `window` 对象的 `alert()` 方法，在对话框中显示 `()` 括号内指定的内容。\n\n![image](img/pg10_2.jpg)\n\
+  \n在开发 JavaScript 和学习该语言时，最初最好在浏览器的 JavaScript 控制台中显示输出，如下：\n\n```javascript\nconsole.log(\
+  \ ‘Hello World!’ )\n```\n\n这调用了 `console` 对象的 `log()` 方法，在控制台窗口中显示 `()` 括号内指定的内容。所有主流浏览器在其开发者工具中都有\
+  \ JavaScript 控制台——通常通过按 F12 键访问。由于 Google Chrome Web 浏览器在编写时统计上是最流行的浏览器，书中全程用于演示\
+  \ JavaScript，并最初使用其控制台窗口显示输出。\n\n![image](img/hot.jpg)\n\n注意使用 `.`（句号）运算符通过“点点表示法”来描述对象的属性或方法。\n\
+  \n![image](img/snake.jpg)\n\n还有一个 `document.write()` 方法，它可以替换网页的整个头部和正文，但其使用通常被认为是坏做法。\n\
+  \n![image](img/hot.jpg)\n\n如果代码中发生错误，控制台会提供有用的信息——因此非常适合调试代码。\n\n![image](img/1b.jpg)创建一个\
+  \ HTML 文档，其中包含一个空段落和一个以三种方式显示输出的脚本。\n\n```html\n<p id=”message”></p>\n<script>\n\
+  document.getElementById( ‘message’ ).innerText = ‘Hello World!’\nwindow.alert( ‘Hello\
+  \ World!’ )\nconsole.log( ‘Hello World!’ )\n</script>\n```\n\n![image](img/htmlb.jpg)\n\
+  \noutput.html\n\n![image](img/2b.jpg)保存 HTML 文档然后在浏览器中打开它，查看在段落中写入并在对话框中显示的输出——如侧所示\n\
+  \n![image](img/3b.jpg)接下来，按下 F12 键，或使用浏览器的菜单打开开发者工具功能\n\n![image](img/4b.jpg)现在，选择\
+  \ Console 标签以查看写入控制台窗口的输出\n\n![image](img/pg11_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n看到控制台显示了输出以及 HTML 文档名称和创建输出的 JavaScript 代码所在的行号。\n\n![image](img/5b.jpg)点击![image](img/pg11_3.jpg)\
+  \ 显示/隐藏按钮来隐藏或显示侧边栏，点击自定义按钮选择控制台窗口在浏览器窗口中的停靠方式，然后点击![image](img/pg11_4.jpg) 清除按钮清除控制台中的所有内容\n\
+  \n![image](img/pg11_2.jpg)\n\n### 语句\n\nJavaScript 代码由一系列称为“语句”的指令组成，当浏览器 JavaScript\
+  \ 引擎处理脚本时，它们通常按从到下的顺序执行。\n\n每个语句都可能包含以下任何组件：\n\n- **关键字** – 在 JavaScript 语言中具有特殊意义的单词。\n\
+  - **运算符** – 对一个或多个操作数执行操作的特殊字符。\n- **值** – 文本字符串、数字、布尔值 `true` 或 `false`、`undefined`\
+  \ 和 `null`。\n- **表达式** – 产生单个值的代码单元。\n\n在早期的 JavaScript 代码中，每条语句都必须以 `;` 分号字符结束——就像英语中的每个句子都必须以\
+  \ `.`（句号）字符结束一样。现在这是可选的，所以除非你想在一行中编写多条语句，否则可以省略。在这种情况下，语句确实需要用分号分隔，如下：\n\n```javascript\n\
+  statement ; statement ; statement\n```\n\n一些 JavaScript 程序员仍然倾向于在每条语句结束加上分号。书中的示例为了简洁省略了它们，但选择权在于你。\n\
+  \nJavaScript 解释器会忽略制表符和空格（“空白字符”），因此你应该使用间距来提高代码的可读性。例如，当两个数字相加时：\n\n```javascript\n\
+  total = 100 + 200\n```\n\n而不是 `total=100+200`\n\nJavaScript 语句通常分组在函数块中的 `{ }` 大括号（大括号），这些块可以在需要时被重复调用。良好的做法是将这些语句缩进两个空格以提高可读性，如下：\n\
+  \n```javascript\n{\nstatement\nstatement\nstatement\n}\n```\n\n![image](img/hot.jpg)\n\
+  \nJavaScript 关键字将在此处，你稍后将学习运算符、值和表达式。\n\n![image](img/forget.jpg)\n\n“表达式”产生一个值，而“语句”执行一个动作。\n\
+  \n![image](img/snake.jpg)\n\n使用空格键来缩进语句，因为在文本编辑器中查看代码时，制表符间距可能会被不同的处理。\n\n\n\n\n\
+  \n管理 JavaScript 语言的规则被称为“语法”（syntax），它识别两种值——固定值和变量。固定的数值和文本字符串值被称为“字面量”（literals）：“\n\
+  \n*   **数字字面量** – 整数，如 `100`，或浮点数如 `3.142`。\n*   **字符串字面量** – 位于双引号内的文本，如 `“JavaScript\
+  \ Fun”`，或单引号内的文本，如 `‘JavaScript Fun’`。\n\n变量值简单来说被称为“变量”，用于在脚本中存储数据。可以使用 JavaScript\
+  \ 的 `let` 关键字创建变量——例如，`let total` 会创建一个名为“total”的变量。可以使用 JavaScript 的 `=` 赋值运算符为变量赋值以存储，如下所示：\n\
+  \n```javascript\nlet total = 300\n```\n\n可以使用其他 JavaScript 运算符形成表达式，这些表达式将求出一个单一值。通常，一个表达式可以包含在\
+  \ `( )` 括号内，如下所示由数字和 JavaScript 的 `+` 加法运算符组成的表达式，其求值为单一 100：\n\n```javascript\n\
+  ( 80 + 20 )\n```\n\n表达式也可能包含变量值，如下所示由之前的变量值、JavaScript 的 `-` 减法运算符和一个数字组成的表达式，其求值为单一\
+  \ 100：\n\n```javascript\n( total - 200 )\n```\n\nJavaScript 是一种区分大小写的语言，因此名为 `total`\
+  \ 和 `Total` 的变量被视为两个完全不同的变量。\n\n在 JavaScript 代码中添加解释性注释是一个良好的习惯，这可以让其他人更容易理解代码，也能让你以后回顾代码时更容易理解。出现在\
+  \ `//` 双斜杠之后的单行，或出现在一行或多行 `/*` 和 `*/` 字符序列之间的任何内容都会被忽略。\n\n```javascript\nlet total\
+  \ = 100 // 这代码将会被执行。\n\n/* let total = 100\n这段代码将不会被执行。 */\n```\n\n![image](img/hot.jpg)\n\
+  \n决定在代码的字符串字面量中使用哪一种引号形式，并保持一致性。本书中的示例使用单引号。\n\n![image](img/hot.jpg)\n\n在调试代码时，“注释掉”某些代码行以防止其执行通常很有用。\n\
+  \n### 避免关键字\n\n![image](img/pg14_1.jpg)\n\n在 JavaScript 代码中，你可以为变量和函数选择自己的名称。名称应该具有意义并反映变量或函数的用途。你的名称由字母、数字和下划线组成，但不能包含空格或以数字开头。你还必须避免这些\
+  \ JavaScript 语言中具有特殊意义的词：\n\n| JavaScript 关键字 | | | | |\n| :--- | :--- | :--- |\
+  \ :--- |\n| `abstract` | `arguments` | `await` | `boolean` |\n| `break` | `byte`\
+  \ | `case` | `catch` |\n| `char` | `class` | `const` | `continue` |\n| `debugger`\
+  \ | `default` | `delete` | `do` |\n| `double` | `else` | `enum` | `eval` |\n| `export`\
+  \ | `extends` | `false` | `final` |\n| `finally` | `float` | `for` | `function`\
+  \ |\n| `goto` | `if` | `implements` | `import` |\n| `in` | `instanceof` | `int`\
+  \ | `interface` |\n| `let` | `long` | `native` | `new` |\n| `null` | `package` |\
+  \ `private` | `protected` |\n| `public` | `return` | `short` | `static` |\n| `super`\
+  \ | `switch` | `synchronized` | `this` |\n| `throw` | `throws` | `transient` | `true`\
+  \ |\n| `try` | `typeof` | `var` | `void` |\n| `volatile` | `while` | `with` | `yield`\
+  \ |\n\n| JavaScript 对象、属性和方法 | | | |\n| :--- | :--- | :--- | :--- |\n| `Array` |\
+  \ `Date` | `eval` | `function` |\n| `hasOwnProperty` | `Infinity` | `isFinite` |\
+  \ `isNaN` |\n| `isPrototypeOf` | `length` | `Math` | `NaN` |\n| `name` | `Number`\
+  \ | `Object` | `prototype` |\n| `String` | `toString` | `undefined` | `valueOf`\
+  \ |\n\n| HTML 名称、窗口对象和属性 | | | | |\n| :--- | :--- | :--- | :--- |\n| `alert` | `all`\
+  \ | `anchor` | `anchors` |\n| `area` | `assign` | `blur` | `button` |\n| `checkbox`\
+  \ | `clearInterval` | `clearTimeout` | `clientInformation` |\n| `close` | `closed`\
+  \ | `confirm` | `constructor` |\n| `crypto` | `decodeURI` | `decodeURIcomponent`\
+  \ | `defaultStatus` |\n| `document` | `element` | `elements` | `embed` |\n| `embeds`\
+  \ | `encodeURI` | `encodeURIcomponent` | `escape` |\n| `event` | `fileUpload` |\
+  \ `focus` | `form` |\n| `forms` | `frame` | `innerHeight` | `innerWidth` |\n| `layer`\
+  \ | `layers` | `link` | `location` |\n| `mimeTypes` | `navigate` | `navigator` |\
+  \ `frames` |\n| `frameRate` | `hidden` | `history` | `image` |\n| `images` | `offscreenBuffering`\
+  \ | `open` | `opener` |\n| `option` | `outerHeight` | `outerWidth` | `packages`\
+  \ |\n| `pageXOffset` | `pageYOffset` | `parent` | `parseFloat` |\n| `parseInt` |\
+  \ `password` | `pkcs11` | `plugin` |\n| `prompt` | `propertyIsEnum` | `radio` |\
+  \ `reset` |\n| `screenX` | `screenY` | `scroll` | `secure` |\n| `select` | `self`\
+  \ | `setInterval` | `setTimeout` |\n| `status` | `submit` | `taint` | `text` |\n\
+  | `textarea` | `top` | `unescape` | `untaint` |\n| `window` | | | |\n\n| HTML 事件属性\
+  \ | 示例： | | | |\n| :--- | :--- | :--- | :--- |\n| `onclick` | `ondblclick` | `onfocus`\
+  \ | `onfocusout` |\n| `onkeydown` | `onkeypress` | `onkeyup` | `onload` |\n| `onmousedown`\
+  \ | `onmouseup` | `onmouseover` | `onmouseout` |\n| `onmousemove` | `onchange` |\
+  \ `reset` | `submit` |\n\n### 存储值\n\n![image](img/box.jpg)\n\n“变量”是每种脚本语言通用的容器，可以在其中存储和检索数据。与大多数语言中的“强类型”变量不同（它们必须声明包含的特定类型），JavaScript\
+  \ 变量要容易得多，因为它们是“松类型”的——它们可以包含任何类型的数据：\n\n| 数据类型 | 示例 | 描述 |\n| :--- | :--- | :---\
+  \ |\n| 字符串 | `‘Hello World!’` | 字符字符串 |\n| 数字 | `3.142` | 整数或浮点数 |\n| 布尔 | `true`\
+  \ | 真 (1) 或 假 (0) 值 |\n| 对象 | `console` | 用户定义或内置对象 |\n| 函数 | `log()` | 用户定义函数、内置函数或对象方法\
+  \ |\n| Symbol | `Symbol()` | 唯一的属性标识符 |\n| null | `null` | 绝对的一无所有 |\n| undefined\
+  \ | `undefined` | 未配置的属性 |\n\nJavaScript 变量可以使用 `let`、`const` 或 `var` 关键字后跟一个空格和你选择的名称来声明。`let`\
+  \ 变量声明可能只是创建一个可以被赋值的变量，也可能包含一个赋值来“初始化”变量的值：\n\n```javascript\nlet myNumber // 声明变量。\n\
+  myNumber = 10 // 初始化变量。\nlet myString = ‘Hello World!’ // 声明并初始化变量。\n```\n\n也可以在同一行声明多个变量：\n\
+  \n```javascript\nlet i, j, k // 声明 3 个变量。\nlet num = 10, char = ‘C’ // 声明并初始化 2\
+  \ 个变量。\n```\n\n用 `let` 声明的变量可以在脚本执行过程中重新赋予新值，而 `const`（常量）不能。`var` 关键字在 `let` 关键字引入之前已用于\
+  \ JavaScript，但现在最好，因为它不会阻止你重复声明同一个变量。\n\n常量变量必须在声明时初始化：\n\n```javascript\nconst\
+  \ myName = ‘Mike’\n```\n\n![image](img/forget.jpg)\n\n变量名是其包含值的别名——在脚本中使用名称即是引用其存储的值。\n\
+  \n\n\n\n\n在初始化时，JavaScript 会自动为赋值的值设置变量类型。在脚本后续部分，可以通过赋值不同的数据类型来更改变量类型。可以使用 `typeof`\
+  \ 关键字显示当前的变量类型。\n\n![image](img/1b.jpg)\n创建一个 HTML 文档，并在其中包含脚本，声明几个赋值了不同数据类型的变量\n\
+  \n```javascript\nconst firstName = ‘Mike’\nconst valueOfPi = 3.142\nlet isValid\
+  \ = true\nlet jsObject = console\nlet jsMethod = console.log\nlet jsSymbol = Symbol(\
+  \ )\nlet emptyVariable = null\nlet unusedVariable\n```\n\n![image](img/htmlb.jpg)\n\
+  \nvariables.html\n\n![image](img/2b.jpg)\n添加语句来输出每个变量的数据类型\n\n```javascript\nconsole.log(\
+  \ ‘firstName: ‘ + typeof firstName )\nconsole.log( ‘valueOfPi: ‘ + typeof valueOfPi\
+  \ )\nconsole.log( ‘isValid: ‘ + typeof isValid )\nconsole.log( ‘jsObject: ‘ + typeof\
+  \ jsObject )\nconsole.log( ‘jsMethod: ‘ + typeof jsMethod )\nconsole.log( ‘jsSymbol:\
+  \ ‘ + typeof jsSymbol )\nconsole.log( ‘emptyVariable: ‘ + typeof emptyVariable )\n\
+  console.log( ‘unusedVariable: ‘ + typeof unusedVariable )\n```\n\n![image](img/3b.jpg)\n\
+  保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出的数据类型\n\n![image](img/pg17_1.jpg)\n\n![image](img/snake.jpg)\n\
+  \n你可能会惊讶地发现，赋值为 `null` 值的变量被描述为 `object` 类型，而不是 `null` 类型。这是 JavaScript 语言中的已知错误。\n\
+  \n![image](img/hot.jpg)\n\n这里使用了拼接运算符 `+` 来输出组合后的文本字符串。\n\n## 创建函数\n\n函数表达式简单来说就是成组在\
+  \ `{}` 大括号中以便执行的一个或多个语句，并且它返回一个最终的单一值。函数可以根据脚本需要被调用以执行其语句。属于对象的函数（例如 `console.log()`）被称为“方法”——以将其与内置函数和用户定义函数区分开来。两者都有末尾的括号，可以接收“参数”值并传递给函数进行处理——例如，在\
+  \ `console.log()` 方法的括号中传递的参数。\n\n![image](img/pg18_1.jpg)\n\n传递给函数的参数数量通常必须与函数块声明括号内指定的“参数”数量匹配。例如，一个需要恰好一个参数的用户定义函数看起来如下：\n\
+  \n```javascript\nfunction *function-name* ( *parameter* ) {\n// 在此处编写要执行的语句。\n}\n\
+  ```\n\n多个参数可以以逗号分隔列表的形式指定，你可以选择指定一个默认值，当函数调用未传递参数时使用该值，如下：\n\n```javascript\nfunction\
+  \ *function-name* ( *parameter , parameter* = *value* ) {\n// 在此处编写要执行的语句。\n}\n\
+  ```\n\n你遵循与变量名相同的命名规范来选择自己的参数名。这些参数名可以在函数内部使用，引用从函数调用括号传递的参数值。\n\n函数块可以包含一个 `return`\
+  \ 语句，以便脚本流在调用者处继续——函数中的后续语句将不再执行。通常的做法是将处理过的传递参数值的结果返回给调用者：\n\n```javascript\nfunction\
+  \ *function-name* ( *parameter , parameter* ) {\n// 在此处编写要执行的语句。\nreturn *result*\n\
+  }\n```\n\n函数块内的语句包含对其他函数的调用是很常见的——以便将脚本模块化为块。\n\n![image](img/hot.jpg)\n\n注意函数声明的首选格式是将左大括号\
+  \ `{` 放在与 `function` 关键字同一行。\n\n![image](img/hot.jpg)\n\n你可以省略 `return` 语句，或者在不指定值的情况下使用\
+  \ `return` 关键字，函数将简单向调用者返回一个 `undefined` 值。\n\n![image](img/1b.jpg)\n创建一个 HTML 文档，并在其中包含脚本，声明一个返回所传参数平方值的函数\n\
+  \n```javascript\nfunction square ( arg ) {\nreturn arg * arg\n}\n```\n\n![image](img/htmlb.jpg)\n\
+  \nfunctions.html\n\n![image](img/2b.jpg)\n接下来，添加一个返回加法结果的函数\n\n```javascript\nfunction\
+  \ add ( argOne, argTwo = 10 ) {\nreturn argOne + argTwo\n}\n```\n\n![image](img/3b.jpg)\n\
+  现在，通过调用上述每个函数，添加一个返回平方和加法结果的函数\n\n```javascript\nfunction squareAdd ( arg ) {\n\
+  let result = square( arg )\nreturn result + add( arg )\n}\n```\n\n![image](img/4b.jpg)\n\
+  最后，添加调用函数并将返回值打印在输出字符串中的语句\n\n```javascript\nconsole.log( ‘8 x 8: ‘ + square( 8\
+  \ ) )\nconsole.log( ‘8 + 20: ‘ + add( 8, 20 ) )\nconsole.log( ‘8 + 10: ‘ + add(\
+  \ 8 ) )\nconsole.log( ‘(8 x 8) + (8 + 10): ‘ + squareAdd( 8 ) )\n```\n\n![image](img/forget.jpg)\n\
+  \n注意当调用者只传递一个参数值时，这里使用了默认的第二个参数值（10）。\n\n![image](img/5b.jpg)\n保存 HTML 文档，然后在浏览器中打开它并启动控制台查看函数返回值\n\
+  \n![image](img/pg19_1.jpg)\n\n![image](img/hot.jpg)\n\n`*` 星号字符是 JavaScript 中的算术乘法运算符。\n\
+  \n## 分配函数\n\n函数在 JavaScript 中非常有用，因为它们可以在需要时被调用（“触发”）以执行其语句，调用者可以传递不同的参数以返回不同的结果。\n\
+  \n重要的是，JavaScript 的 `()` 括号运算符是调用语句中实际调用函数的组件。这意味着语句可以通过仅指定函数名将函数赋值给变量。然后该变量可以在指定变量名后跟\
+  \ `()` 运算符的语句中用于调用该函数。但请注意，如果你尝试通过指定函数名后跟 `()` 将函数赋值给变量，该函数将被调用，该函数返回的值将被赋值。\n\n\
+  ![image](img/forget.jpg)\n\n在将命名函数赋值给变量时，仅在语句中指定函数名。\n\n## 函数提升\n\n尽管 JavaScript\
+  \ 解释器从上到下读取脚本，但它实际上进行了两次扫描。第一次扫描寻找函数声明并记住找到任何项，这一过程被称为“提升”。第二次扫描是解释器实际执行脚本时。提升允许函数调用出现在函数声明之前，因为解释器在第一次扫描时已经识别了函数。然而，第一次扫描不会识别使用\
+  \ `let` 或 `const` 关键字赋值给变量的函数！\n\n![image](img/hot.jpg)\n\n使用旧 `var` 关键字声明的变量也会提升，但使用\
+  \ `let` 或 `const` 声明的变量不会。\n\n## 匿名函数\n\n将函数赋值给变量时，可以省略函数名，因为函数可以在指定变量名和 `()` 运算符的语句中调用。这些被称为匿名函数表达式，其语法如下：\n\
+  \n```javascript\nlet *variable* = function ( *parameters* ) { *statements* ; return\
+  \ *value* }\n```\n\n匿名函数表达式还可以通过整个函数封装在 `()` 括号内并在表达式末尾添加 `()` 括号运算符变为“自执行”。这意味着它们的语句在浏览器首次加载脚本时会自动执行一次。自执行函数表达式的语法如下：\n\
+  \n```javascript\n**( function ( ) { *statements* ; return *value* } ) ( )\n```\n\
+  \n\n\n\n\n自调用函数（Self-invoking functions）在本书中广泛用于在脚本加载时执行示例代码。\n\n![image](img/hot.jpg)\n\
+  \n自调用函数表达式也称为立即执行函数表达式（Immediately Invoked Function Expressions，简称 IIFE – 通常读作“iffy”）。\n\
+  \n![image](img/1b.jpg)创建一个 HTML 文档，其中脚本调用了一个尚未定义的函数\n\n```javascript\nconsole.log(\
+  \ ‘Hoisted: ‘ + add( 100, 200 ) )\n```\n\n![image](img/htmlb.jpg)\n\nanonymous.html\n\
+  \n![image](img/2b.jpg)接下来，在上方调用的函数下方添加\n\n```javascript\nfunction add( numOne, numTwo\
+  \ ) {\n  return numOne + numTwo\n}\n```\n\n![image](img/3b.jpg)现在，添加一个将上述函数赋值给变量并调用该被赋值函数\n\
+  \n```javascript\nlet addition = add\nconsole.log( ‘Assigned: ‘ + addition( 32, 64\
+  \ ) )\n```\n\n![image](img/4b.jpg)然后，将一个类似的但匿名函数赋值给变量并调用该被赋值的函数\n\n```javascript\n\
+  let anon = function ( numOne, numTwo ) {\n  let result = numOne + numTwo ; return\
+  \ result\n}\nconsole.log( ‘Anonymous: ‘ + anon( 9, 1 ) )\n```\n\n![image](img/5b.jpg)最后，将自调用函数的返回值赋值给变量并显示该值\n\
+  \n```javascript\nlet iffy = ( function ( ) {\n  let str = ‘Self Invoked Output’\
+  \ ; return str\n} ) ( )\nconsole.log( iffy )\n```\n\n![image](img/6b.jpg)保存 HTML\
+  \ 文档，然后在浏览器中打开它并启动控制台以查看函数返回的值\n\n![image](img/pg21_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n自调用函数的意义可能不会立而易见，但到本章结束时，它们的重要性应该变得清晰。\n\n## 识别作用域\n\n变量在脚本中的可访问范围取决于它们的“词法作用域”（lexical\
+  \ scope）——即变量创建的环境。这可以是“全局的”，也可以是“局部的”。\n\n![image](img/pg22_1.jpg)\n\n### 全局作用域\n\
+  \n在函数块外部创建的变量在整个脚本范围内全局可用。这意味着它们持续存在，并对同一脚本环境中的函数可用。初看之下这可能非常方便，但它有一个非常严重的缺点：同名的变量可能会发生冲突。例如，假设你创建了一个全局变量\
+  \ `myName` 并赋值了你的名字，但随后又包含了一个外部脚本，另一个开发者在脚本中也创建了一个全局变量 `myName` 并赋值了他们的名字。两个同名变量存在于同一个脚本环境中，因此产生冲突。最好避免这种情况，因此你不应该在脚本中创建全局变量来存储原始值（除\
+  \ `Object` 和 `Function` 外的所有数据类型）。\n\n### 局部作用域\n\n在函数块内部创建的变量在函数的整个生命周期内仅局部可用。它们只在函数执行时存在，随后会被销毁。它们的脚本环境是有限的——从创建点开始到最后的\
+  \ `}` 大括号，或者函数返回的那一刻。在函数块的最开始声明变量是一个良好的习惯，这样它们的词法作用域就是整个函数的时长。这意味着同名变量可以在不同的函数中存在而不会产生冲突。例如，局部变量\
+  \ `myName` 可以愉快地存在于脚本中不同函数中，以及包含的外部脚本的函数中。建议你在脚本中只尝试创建局部变量来存储值。\n\n## 最佳实践\n\n使用旧的\
+  \ `var` 关键字声明全局变量会导致同名的冲突变量在没有警告的情况下覆盖其被赋值的值。较新的 `let` 和 `const` 关键字禁止了这种行为，并将该行为识别为“未捕获的语法错误”（Uncaught\
+  \ SyntaxError）。因此，建议使用 `let` 或 `const` 关键字声明变量来在脚本中存储值。\n\n![image](img/hot.jpg)\n\
+  \n你可以在这里发现如何捕捉错误。\n\n![image](img/1b.jpg)创建一个外部脚本，通过调用函数来输出全局变量的值\n\n```javascript\n\
+  let myName = ‘External Script’\nfunction readName( ) { console.log( myName ) }\n\
+  readName( )\n```\n\n![image](img/pg23_1.jpg)\n\nexternal.js\n\n![image](img/2b.jpg)创建一个\
+  \ HTML 文档，包含外部脚本并添加一个类似的脚本\n\n```html\n<script src=”external.js”></script>\n<script>\n\
+  let myName = ‘Internal Script’\nfunction getName( ) { console.log( myName ) }\n\
+  getName( )\n</script>\n```\n\n![image](img/htmlb.jpg)\n\nscope.html\n\n![image](img/3b.jpg)将两个文件保存在同一个文件夹中，然后打开\
+  \ HTML 文档查看控制台中报告的冲突错误\n\n![image](img/pg23_2.jpg)\n\n![image](img/4b.jpg)编辑两个脚本，将全局变量变为局部变量，然后刷新浏览器查看无冲突\n\
+  \n```javascript\nfunction readName( ) {\n  let myName = ‘External Script’ ; console.log(\
+  \ myName )\n}\nfunction getName( ) {\n  let myName = ‘Internal Script’ ; console.log(\
+  \ myName )\n}\n```\n\n![image](img/pg23_3)\n\n![image](img/forget.jpg)\n\n## 使用闭包\n\
+  \n上一个示例演示了创建全局变量存储值的危险，但有时你可能想要存储持续存在的值——例如，随着脚本的进行记住不断增加的分数。如何在不使用全局变量的情况下做到这一点？答案在于使用“闭包”。\n\
+  \n![image](img/pg24_1.jpg)\n\n闭包嵌套在外部函数内部的函数，它保留了对外部函数中声明的变量的访问——因为那是函数创建时的词法作用域。\n\
+  \n![image](img/1b.jpg)创建一个 HTML 文档，其脚本将自调用函数赋值给全局变量\n\n```javascript\nconst add\
+  \ = ( function ( ) {\n  // 在此处插入语句。\n} ) ( )\n```\n\n![image](img/htmlb.jpg)\n\n\
+  closure.html\n\n![image](img/2b.jpg)接下来，插入语句初始化局部变量并在同一作用域内赋值一个函数\n\n```javascript\n\
+  let count = 0\nconst nested = function ( ) { return count = count + 1 }\n```\n\n\
+  ![image](img/3b.jpg)现在，插入一条语句返回内部函数——将内部函数赋值给全局变量\n\n```javascript\nreturn nested\n\
+  ```\n\n![image](img/4b.jpg)最后，向已赋值给全局变量的内部函数添加三个相同的函数调用\n\n```javascript\nconsole.log(\
+  \ ‘Count is ‘ + add( ) )\nconsole.log( ‘Count is ‘ + add( ) )\nconsole.log( ‘Count\
+  \ is ‘ + add( ) )\n```\n\n![image](img/5b.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看闭包返回的值\n\
+  \n![image](img/pg24_2.jpg)\n\n![image](img/forget.jpg)\n\n自调用函数表达式在这里 有描述。它们只执行一次语句。在这里，你可以使用\
+  \ `console.log( add )` 来确认函数表达式已赋值给外部变量。\n\n理解闭包的概念可能困难，因为在这个示例中 `count` 变量似乎在自调用函数执行完成后应该被销毁。为了更好地理解闭包的工作原理，你可以探索被赋值函数的\
+  \ `prototype` 属性。\n\n![image](img/6b.jpg)在脚本末尾添加语句以揭示被赋值函数是如何构造的\n\n```javascript\n\
+  console.log( add.prototype )\n```\n\n![image](img/7b.jpg)保存 HTML 文档，然后刷新浏览器并展开“constructor”下拉菜单以查看作用域\n\
+  \n![image](img/pg25_1.jpg)\n\n\n\n\n仔细观察可以发现，赋值的函数除了普通的局部（脚本）作用域和外部（全局）作用域外还有一个特殊的（闭包）作用域。这就是为什么\
+  \ `count` 变量可以通过赋值函数访问，但重要的是，它无法通过任何其他方式被引用。\n\n使用闭包来从脚本的其他部分隐藏持久变量是一个重要概念。这类似于在其他编程语言中隐藏“私有”变量，并仅通过“getter”方法访问。\n\
+  \n![image](img/hot.jpg)\n\n所有的 JavaScript 对象都从 `prototype` 继承属性和方法。标准的 JavaScript\
+  \ 对象（如函数）会调用内部构造函数，通过定义其组件来创建对象。\n\n![image](img/hot.jpg)\n\n如果你不能立即理解闭包的工作原理，不要担心。它们起初看起来可能神秘，但随着经验的增加会变得清晰。你可以继续后续稍后再回来这项技术。\n\
+  \n## 总结\n\n- JavaScript 代码可以直接包含在 HTML 文档中，也可以使用 `<script> </script>` 标签从外部文件引入。\n\
+  - JavaScript 可以在 HTML 元素的警报对话框或浏览器的控制台窗口显示输出。\n- JavaScript 语句可以包含关键字、运算符、值和表达式。\n\
+  - JavaScript 解释器忽略制表符和空格。\n- JavaScript 语句可以分组在 `{ }` 大括号函数块中，可以在需要时调用执行。\n- 变量和函数名可以由字母、数字和下划线字符组成，但必须避免关键字。\n\
+  - JavaScript 变量可以包含 String、Number、Boolean、Object、Function、Symbol、`null` 和 `undefined`\
+  \ 数据类型。\n- 使用 `let` 关键字声明的变量可以重新赋值新值，但 `const` 关键字不允许此操作。\n- 函数表达式具有分组在 `{ }` 大括号中的语句用于执行，并返回最终的单一值。\n\
+  - 函数表达式的 `( )` 括号可以包含参数，用于从调用者传递参数值。\n- 函数块可以包含一个 `return` 语句，用于指定传递给调用者的数据。\n-\
+  \ JavaScript 的 `( )` 运算符调用函数。\n- 提升允许函数调用出现在函数声明之前的脚本中。\n- 匿名函数表达式没有函数名。\n- 词法作用域是变量创建的环境，可以是全局、局部的或闭包。\n\
+  - 局部变量应用于存储值，但全局变量可以分配函数以创建闭包。\n- 闭包嵌套在外部函数内部的函数，它保留了对外部函数中声明变量的访问。\n\n## 2 执行常用操作\n\
+  \n*本章描述了 JavaScript 运算符并演示了如何在你的脚本中使用它们。*\n\n- 转换值\n- 进行算术运算\n- 赋值值\n- 进行比较\n- 评估逻辑\n\
+  - 检查条件\n- 处理位运算\n- 强制排序\n- 总结\n\n## 转换值\n\n在 JavaScript 中执行操作之前，识别你正在处理的值的数据类型是重要的，以避免出现意外的结果。例如，值\
+  \ 42 是数字，但值 ‘42’ 是字符串，因此尝试执行 `‘42’ + 8` 加法将返回字符串结果 `‘428’，而不是数字 50。幸运的是，JavaScript\
+  \ 提供了多种方法返回其他数据类型的值的版本，而不改变值的原始数据类型。\n\n![image](img/pg28_1.jpg)\n\n### 字符串转数字\n\
+  \nJavaScript 内置函数 `parseInt()` 可以返回括号内指定字符串的整数版本（在数字数据类型中）。例如，`parseInt( ‘42’ )`\
+  \ 将返回数字 42，因此 `42 + 8` 将返回数字结果 50。\n\n同样，JavaScript 内置函数 `parseFloat()` 可以返回括号内指定字符串的浮点数版本（在数字数据类型中）。\n\
+  \n这两个方法都允许字母跟在指定字符串的数字部分之后，并将其从结果中剔除——例如，`parseInt( ‘42nd Street’ )` 返回数字 42。\n\n\
+  如果这两个函数任一无法在指定字符串的开头找到数值，结果将是 `NaN` —— 这是一个 JavaScript 属性，意味着“不是数字”（Not a Number）。你也可以通过在\
+  \ JavaScript 内置函数 `isNaN()` 的括号内指定值来检查一个值是否不是数字。这同样会首先尝试在指定值的开头寻找数字，如果找到了数字（即使来自指定的字符串），则返回\
+  \ false，否则如果找不到数字，将返回 true。\n\n![image](img/hot.jpg)\n\n数据类型的转换被称为“强制类型转换”（coercion），它可以是显式的也可以是隐式的。`‘42’\
+  \ + 8` 返回字符串 `‘428’` 是隐式转换。而 `String( 42 )` 返回字符串 `‘42’` 是显式转换。\n\n### 数字转字符串\n\n\
+  JavaScript 的 `String()` 方法可以返回括号内指定数字的字符串表示（在字符串数据类型中）——例如，`String( 42 )` 将返回字符串数据类型的数字\
+  \ `’42’`。\n\n或者，你可以在变量名后附加 `toString()` 方法调用，以返回存储的数字数据类型的字符串表示。例如，当一个名为“num”的变量被赋值数字时，`num.toString()`\
+  \ 将返回该存储数字的字符串版本。\n\n![image](img/1r.jpg)\n创建一个带有自执行匿名函数块的 HTML 文档，其中声明了三个变量\n\n\
+  ```javascript\n( function ( ) {\n  let sum, net = ‘25’, tax = 5.00\n  // 在此处插入语句。\n\
+  } ) ( )\n```\n\n![image](img/htmlr.jpg)\nconversion.html\n\n![image](img/2r.jpg)\n\
+  接下来，插入创建不同数据类型版本的语句并在输出字符串中打印结果\n\n```javascript\nsum = net + tax\nconsole.log(\
+  \ ‘sum: ‘ + sum + ‘ ‘ + typeof sum )\nsum = parseFloat( net ) + tax\nconsole.log(\
+  \ ‘sum: ‘ + sum + ‘ ‘ + typeof sum )\nconsole.log( ‘tax: ‘ + tax + ‘ ‘ + typeof\
+  \ sum )\ntax = tax.toString( )\nconsole.log( ‘tax: ‘ + tax + ‘ ‘ + typeof tax )\n\
+  net = ‘$’ + net\nconsole.log( ‘net: ‘ + net + ‘ ‘ + parseInt( net ) )\nconsole.log(\
+  \ ‘net Not a Number? ‘ + isNaN( net ) )\n```\n\n![image](img/3r.jpg)\n保存 HTML 文档，然后在浏览器中打开它并启动控制台以查看不同的版本\n\
+  \n![image](img/pg29_1.jpg)\n\n![image](img/forget.jpg)\n\n如果你在向字符串添加 ‘$’ 前缀之前尝试\
+  \ `isNaN( net )`，结果为 **false** —— 因为该方法在 `‘25’` 字符串的开头找到了数字。\n\n## 进行算术运算\n\nJavaScript\
+  \ 中常用的算术运算符列在下表中，以及它们执行的操作：\n\n![image](img/pg30_1.jpg)\n\n| **运算符** | **操作** |\n\
+  | :--- | :--- |\n| + | 数字相加 字符串拼接 |\n| **–** | 减法 |\n| ***** | 法 |\n| **/** | 除法\
+  \ |\n| **%** | 取模 |\n| **++** | 增 |\n| **– –** | 减 |\n| ****** | 幂 |\n\n操作语句中指定的值被称为“操作数”。例如，在语句\
+  \ `5 + 2` 中，`+` 运算符被提供了五和二的操作数值。注意 `+` 运算符根据操作数的类型执行两种不同的操作。数字操作数相加返回总和，但字符串操作数拼接返回单个连接的字符串。\n\
+  \n\n\n\n\n`%` 模运算符将第一个操作数除以第二个操作数，并返回余数。除以二会返回一或零，从而很有用地判断第一个操作数是奇数还是偶数。\n\n`++`\
+  \ 增量运算符和 `--` 减量运算符会将单个操作数的值改变一，并返回新值。这些运算符通常用于计数循环的次数，并有两种不同的不同的方式，产生细微不同的效果。当放在操作数之前（前置）时，在表达式求值之前立即改变值；但当放在操作数之后（后置）时，先求值表达式，然后改变值。\n\
+  \n![image](img/hot.jpg)\n\n`**` 幂运算符返回第一个操作数相对于第二个操作数的幂次方的结果。\n\n![image](img/hot.jpg)\n\
+  \n使用模运算符判断奇数或偶数的示例可以参考这里。\n\n![image](img/1r.jpg)创建一个带有自执行匿名函数块的 HTML 文档\n\n```javascript\n\
+  function ( ) {\n  // 在此处插入语句。\n} ( ) ;\n```\n\n![image](img/htmlr.jpg)\n\narithmetic.html\n\
+  \n![image](img/2r.jpg)接下来，插入使用每个算术运算符为变量赋值的语句并在输出字符串中打印每个结果\n\n```javascript\nlet\
+  \ sum = 80 + 20 ; console.log( ‘Addition: ‘ + sum )\nlet sub = sum - 50 ; console.log(\
+  \ ‘Subtraction: ‘ + sub )\nlet mul = sum * 5 ; console.log( ‘Multiplication: ‘ +\
+  \ mul )\nlet div = sum / 4 ; console.log( ‘Division: ‘ + div )\nlet mod = sum %\
+  \ 2 ; console.log( ‘Modulus: ‘ + mod )\nlet inc = ++sum ; console.log( ‘Increment:\
+  \ ‘ + inc )\nlet dec = --sum ; console.log( ‘Decrement: ‘ + dec )\n```\n\n![image](img/3r.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台以查看算术结果\n\n![image](img/pg31_1.jpg)\n\n### 赋值值\n\nJavaScript\
+  \ 中常用的用于赋值的运算符都列在下表中。除了简单的 `=` 赋值运算符外，所有运算符都是较长表达式的简写，因此为了清晰起见，也提供了相应的写法。\n\n![image](img/pg32_1.jpg)\n\
+  \n| 运算符 | 示例 | 等效于 |\n| :--- | :--- | :--- |\n| `=` | `a = b` | `a = b` |\n| `+=`\
+  \ | `a += b` | `a = ( a + b )` |\n| `–=` | `a –= b` | `a = ( a – b )` |\n| `*=`\
+  \ | `a *= b` | `a = ( a * b )` |\n| `/=` | `a /= b` | `a = ( a / b )` |\n| `%=`\
+  \ | `a %= b` | `a = ( a % b )` |\n| `**=` | `a ** b` | 错误 |\n\n将 `=` 运算符理解为“赋值”而不是“等于”是非常重要的，以避免与\
+  \ JavaScript 的 `===` 相等运算符混淆。\n\n在表格的 `=` 示例中，变量 `a` 被赋值变量 `b` 中包含的值，成为其新的存储值。\n\
+  \n组合运算符 `+=` 很有用，可以用于将字符串附加到现有字符串上。例如，对于变量 `let str = ‘JavaScript’` 和 `str += ‘\
+  \ Fun’`，变量现在存储组合后的字符串 ‘JavaScript Fun’。\n\n从数字上来说，表格中的 `+=` 示例将变量 `a` 中的值加到变量 `b`\
+  \ 中的值，然后将总和赋值为变量 `a` 中存储的新值。\n\n所有其他组合赋值运算符的工作方式与 `+=` 运算符类似。它们都先对两个操作数执行算术操作，然后将该操作的结果赋值给第一个变量——使其成为其新的存储值。\n\
+  \n![image](img/hot.jpg)\n\n`===` 相等运算符比较值，并在此处 有详细解释。\n\n![image](img/1r.jpg)创建一个带有连接两个字符串的自执行匿名函数的\
+  \ HTML 文档\n\n```javascript\nfunction ( ) {\n  let msg = ‘JavaScript’ ; msg += ‘\
+  \ Fun’\n  console.log( ‘Add & concatenate: ‘ + msg )\n  // 在此处插入语句。\n} ( ) ;\n```\n\
+  \n![image](img/htmlr.jpg)\n\nassignment.html\n\n![image](img/2r.jpg)接下来，插入使用组合运算符执行算术运算并赋值结果输出的语句\n\
+  \n```javascript\nlet sum = 5.00 ; sum += 2.50\nconsole.log( ‘Add & assign decimal:\
+  \ ‘ + sum )\nsum = 8 ; sum -= 4\nconsole.log( ‘Subtract & assign integer: ‘ + sum\
+  \ )\nsum = 8 ; sum *= 4\nconsole.log( ‘Multiply & assign integer: ‘ + sum )\nsum\
+  \ = 8 ; sum /= 4\nconsole.log( ‘Divide & assign integer: ‘ + sum )\nsum = 8 ; sum\
+  \ %= 4\nconsole.log( ‘Modulus & assign integer: ‘ + sum )\n```\n\n![image](img/3r.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台以查看算术结果\n\n![image](img/pg33_1.jpg)\n\n### 比较\n\nJavaScript\
+  \ 中常用的用于比较值的运算符都列在下表中。\n\n![image](img/pg34.jpg)\n\n| 运算符 | 比较 |\n| :--- | :---\
+  \ |\n| `===` | 相等 |\n| `!==` | 不相等 |\n| `>` | 大于 |\n| `<` | 小于 |\n| `>=` | 大于等于\
+  \ |\n| `<=` | 小于等于 |\n\n`===` 相等运算符比较两个值，如果它们完全相等则返回 true，否则返回 false。`>` 大于运算符在第一个值大于值时返回\
+  \ true。`<` 小于运算符在第一个值小于第二个值时返回 true。在 `>` 大于运算符或 `<` 小于运算符后添加 `=` 字符可以使它们在两个操作数相等时也返回\
+  \ true。`>` 大于运算符和 `<` 小于运算符经常用于测试循环结构中计数器变量的值。\n\n![image](img/hot.jpg)\n\n在循环结构中使用\
+  \ `<` 小于运算符的示例可以参考这里。\n\n![image](img/snake.jpg)\n\n还有 `==` 相等运算符和 `!=` 不相等运算符，但这些可能会产生意外的结果，因为与\
+  \ `===` 和 `!==` 不同，它们不确保所比较的值是相同类型。这意味着 `25 == ‘25’` 返回 `true`，而 `25 === ‘25’` 返回\
+  \ `false`。始终使用三字符的版本，以便你的脚本进行准确的比较。\n\n![image](img/1r.jpg)创建一个声明三个变量的自执行匿名函数的 HTML\
+  \ 文档\n\n```javascript\nfunction ( ) {\n  let comparison, sum = 8, str = ‘JavaScript’\n\
+  \  // 在此处插入语句。\n} ( ) ;\n```\n\n![image](img/htmlr.jpg)\n\ncomparison.html\n\n![image](img/2r.jpg)接下来，插入使用比较运算符赋值布尔结果输出的语句\n\
+  \n```javascript\ncomparison = str === ‘JAVASCRIPT’\nconsole.log( ‘String Equality?\
+  \ ‘ + comparison )\ncomparison = str === ‘JavaScript’\nconsole.log( ‘String Equality?\
+  \ ‘ + comparison )\ncomparison = sum === 8\nconsole.log( ‘Number Equality? ‘ + comparison\
+  \ )\ncomparison = sum > 5\nconsole.log( ‘Greater Than? ‘ + comparison )\ncomparison\
+  \ = sum < 5\nconsole.log( ‘Less Than? ‘ + comparison )\ncomparison = sum <= 8\n\
+  console.log( ‘Less Than or Equal To? ‘ + comparison )\n```\n\n\n\n\nJavaScript 是区分大小写的，因此为了使比较的字符串相等，字符的大小写必须匹配。\n\
+  \n## 评估逻辑\n\nJavaScript 中可以使用的三种逻辑运算符列如表所示：\n\n![image](img/pg36_1.jpg)\n\n| 运算符\
+  \ | 操作 |\n| :--- | :--- |\n| `&&` | 逻辑与 (AND) |\n| `||` | 逻辑或 (OR) |\n| `!` | 逻辑非\
+  \ (NOT) |\n\n逻辑运算符通常用于具有布尔值 true 或 false 的操作数——或者可以转换为 true 或 false 的值。\n\n`&&`\
+  \ 逻辑与运算符评估两个操作数，只有当两个操作数本身都为 true 时，才会返回 true。否则，`&&` 与运算符将返回 false。这通常用于条件分支，即通过测试两个条件来决定脚本的执行方向。如果两个条件都满足，脚本将按照特定方向执行，否则将遵循另一个方向。\n\
+  \n与需要两个操作数都为 true 的 `&&` 逻辑与运算符不同，`||` 逻辑或运算符会评估两个操作数，如果其中一个操作数本身为 true，则返回 true。如果两个操作数都不\
+  \ true，则 `||` 或运算符将返回 false。这对于在两个测试条件中的任意一个满足时让脚本执行特定操作非常有用。\n\n第三个逻辑运算符是 `!` 逻辑非运算符，它用于单个操作数之前，并返回操作数的反向值。例如，如果名为\
+  \ `tog` 的变量值为 true，那么 `!tog` 将返回 false。这对于在连续的循环迭代中使用如 `tog = !a` 的语句来“切换”变量的值非常有用，使其每次迭代时值发生反转——就像开关灯泡一样。\n\
+  \n![image](img/pg36_2.jpg)\n\n“布尔”（Boolean）一词指的是由英国数学家乔治·布尔（George Boole，1815-1864）开发的逻辑思维体系。\n\
+  \n![image](img/1r.jpg)创建一个带有自执行匿名函数的 HTML 文档，并声明三个变量\n\n```javascript\nfunction\
+  \ () {\n  let result, yes = true, no = false;\n  // 在此处插入语句。\n}()\n```\n\n![image](img/htmlr.jpg)\n\
+  \n`logic.html`\n\n![image](img/2r.jpg)接下来，插入使用逻辑运算符为输出分配布尔结果的语句\n\n```javascript\n\
+  result = yes && yes\nconsole.log( ‘Are both true? ‘ + result )\nresult = yes &&\
+  \ no\nconsole.log( ‘Are both still true? ‘ + result )\nresult = yes || no\nconsole.log(\
+  \ ‘Are either true? ‘ + result )\nresult = no || no\nconsole.log( ‘Are either still\
+  \ true? ‘ + result )\nconsole.log( ‘Original value: ‘ + yes )\nyes = !yes\nconsole.log(\
+  \ ‘Toggled value: ‘ + yes )\n```\n\n![image](img/3r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台以查看返回的结果\n\
+  \n![image](img/pg37_1.jpg)\n\n![image](img/hot.jpg)\n\n看 `false && false` 返回的是 `false`\
+  \ 而不是 `true`——这也许证明了“两个错不成就一个对”的格言。\n\n## 检查条件\n\n可能 JavaScript 作者最喜欢的运算符是 `?:`\
+  \ 条件运算符。该运算符也被称为“三元”运算符——意味着它由三部分组成。\n\n三元运算符评估指定条件为 true 或 false 值，然后根据结果执行两个指定语句中的一个。它的语法如下：\n\
+  \n![image](img/pg38_1.jpg)\n\n```\ncondition ? if-true-do-this : if-false-do-this\n\
+  ```\n\n其中如果根据条件评估的结果需要执行多个操作，每个指定的语句可以是一个函数调用，以便在每个函数中执行多个语句——例如，根据名为 `flag` 的变量的布尔值调用函数来执行多个语句，如下：\n\
+  \n```javascript\nflag === true ? doThis() : doThat()\n```\n\n在这个示例中，`===` 等于运算符和\
+  \ `true` 关键字实际上是多余的，因为评估表达式的布尔值的运算符会自动执行这种评估，因此示例可以更简单地表述为：\n\n```javascript\nflag\
+  \ ? doThis() : doThat()\n```\n\n或者，为三元运算符指定的两个语句可能会根据条件评估的结果为变量赋值，如下所示：\n\n```javascript\n\
+  flag ? str = ‘Go left’ : str = ’Go right’\n```\n\n虽然这在语法上是正确的，但通过让三元运算符在单个赋值语句中为变量分配适当的值可以得更优雅，如下：\n\
+  \n```javascript\nstr = flag ? ‘Go left’ : ’Go right’\n```\n\n当条件评估数值的奇偶性时，两个语句可以根据评估结果确定数字是偶数还是奇数来提供方案。\n\
+  \n![image](img/forget.jpg)\n\n三元运算符有三个操作数——`?` 之前的以及 `:` 冒号两侧的\n\n![image](img/1r.jpg)创建一个带有自执行匿名函数的\
+  \ HTML 文档，并声明两个变量\n\n```javascript\nfunction () {\n  const numOne = 8, numTwo =\
+  \ 3;\n  // 在此处插入语句。\n}()\n```\n\n![image](img/htmlr.jpg)\n\n`ternary.html`\n\n![image](img/2r.jpg)接下来，插入使用合适数量语法的输出字符串的语句\n\
+  \n```javascript\nlet verb = ( numOne !== 1 ) ? ‘ are ‘ : ‘ is ‘\nconsole.log( ‘There’\
+  \ + verb + numOne )\n```\n\n![image](img/3r.jpg)现在，插入语句以正确描述两个变量值的奇偶性的字符串\n\n```javascript\n\
+  let parity = ( numOne % 2 !== 0 ) ? ‘Odd’ : ‘Even’\nconsole.log( numOne + ‘ is ‘\
+  \ + parity )\nparity = ( numTwo % 2 !== 0 ) ? ‘Odd’ : ‘Even’\nconsole.log( numTwo\
+  \ + ‘ is ‘ + parity )\n```\n\n![image](img/4r.jpg)最后，插入语句输出两个变量值中较大者的字符串\n\n```javascript\n\
+  let max = ( numOne > numTwo ) ? numOne : numTwo\nconsole.log( max + ‘ is the Greater\
+  \ Number ‘ )\n```\n\n![image](img/5r.jpg)保存该 HTML 文档，然后在浏览器中打开它并启动控制台以查看字符串描述\n\n\
+  ![image](img/pg39_1.jpg)\n\n![image](img/hot.jpg)\n\n三元运算符可以返回任何数据类型的值——字符串、数字、布尔值等。\n\
+  \n## 位位运算\n\nJavaScript “位”运算符将其操作数视为 32 位的序列，其中每个位可能包含零 (0) 或一 (1) 的值。只有当该位包含一时，该位才贡献一个十进制部分。组件从右到左从“最低有效位”（LSB）命名为“最高有效位”（MSB）。下方八位模式中的二进制数表示十进制\
+  \ 50，由设置为 1 值的位表示（2 + 16 + 32 = 50）。\n\n![image](img/pg40_1.jpg)\n\n| 位数 | 8 | 7\
+  \ | 6 | 5 | 4 | 3 | 2 | 1 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\
+  \ :--- | :--- |\n| 十进制 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |\n| 二进制 | 0 | 0 | 1\
+  \ | 1 | 0 | 0 | 1 | 0 |\n\n可以使用表中所列的 JavaScript 位运算符操作序列中的单个位。\n\n| 运算符 | 称为 | 二进制数操作\
+  \ |\n| :--- | :--- | :--- |\n| `\\|` | 或 (OR) | 如果两个比较位中任意一个为 1，则每个位都返回 1 示例：`1010\
+  \ \\| 0101 = 1111` |\n| `&` | 与 (AND) | 如果两个比较位都为 1，则每个位都返回 1 示例：`1010 & 1100 =\
+  \ 1000` |\n| `~` | 非 (NOT) | 当位不是 1 时，每个位都返回 1；当位为 1 时，返回 0 示例：`~ 1010 = 0101` |\n\
+  | `^` | 异或 (XOR) | 如果两个比较位中只有一个为 1，则每个位都返回 1 示例：`1010 ^ 0100 = 1110` |\n| `<<` |\
+  \ 左移 | 从右侧推入零，将每个位向左移动位数 示例：`0010<< 2 = 1000` |\n| `>>` | 有符号右移 | 从左侧推入最左侧位的副本，将每个位向右移动位数。示例：`1000\
+  \ >> 2 = 0010` |\n\n\n\n\n\n| **>>>** | 右移 | 从左侧补零，将每个位向右移动指定的的位数。示例：**1000 >> 2\
+  \ = 0010** |\n\n![image](img/forget.jpg)\n\n许多 JavaScript 作者从不使用位运算符，但了解它们是什么以及如何使用是有用的。\n\
+  \n![image](img/hot.jpg)\n\n一个“字节”（byte）包含 8 位，字节的每个半部分被称为“半字节”（nibble，4 位）。此表示例中的二进制数描述了存储在半字节中的值。\n\
+  \n![image](img/1r.jpg)创建一个 HTML 文档，使用一个自执行的匿名函数来声明两个变量\n\n```javascript\nfunction\
+  \ ( ) {\n  let numOne = 10, numTwo = 5;\n  // 在此处插入语句。\n} ( )\n```\n\n![image](img/htmlr.jpg)\n\
+  \nbitwise.html\n\n![image](img/2r.jpg)接下来，插入语句简单输出字符串，以确认存储在每个变量中的初始值\n\n```javascript\n\
+  console.log( ‘numOne:‘ + numOne )\nconsole.log( ‘numTwo: ‘ + numTwo )\n```\n\n![image](img/3r.jpg)现在，插入语句使用位运算交换每个变量中存储的值\n\
+  \n```javascript\nnumOne = numOne ^^ numTwo;\n// 1010 ^^ 0101 = 1111 = (十进制 15)\n\
+  numTwo = numOne ^^ numTwo;\n// 1111 ^^ 0101 = 1010 (十进制 10)\nnumOne = numOne ^^\
+  \ numTwo;\n// 1111 ^^ 1010 = 0101 (十进制 5)\n```\n\n![image](img/4r.jpg)最后，插入语句输出换行符和字符串，以确认存储在每个变量中的最终值\n\
+  \n```javascript\nconsole.log( ‘\\n’ + ‘numOne: ‘ + numOne )\nconsole.log( ‘numTwo:\
+  \ ‘ + numTwo )\n```\n\n![image](img/5r.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看交换后的值\n\n\
+  ![image](img/pg41_1.jpg)\n\n![image](img/hot.jpg)\n\n注意此示例如何使用特殊的 `\\n` 转义序列在控制台输出中创建换行。\n\
+  \n**强制顺序**\n\nJavaScript 运算符具有不同的优先级，用于决定包含多个不同运算符的语句的评估顺序——优先级高的运算符优于优先级低的运算符。下表按照从高到低的顺序列出了每种类型的运算符：\n\
+  \n![image](img/pg42_1.jpg)\n\n| | 运算符 | 操作 |\n| :--- | :--- | :--- |\n| ![images](img/pg42_2.jpg)\
+  \ | `( )` | 表达式分组 |\n| `.` | 对象成员 |\n| `[ ]` | 数组成员 |\n| `( )` | 函数调用 |\n| `++ --`\
+  \ | 后置递增、后置递减 |\n| `++ --` | 前置递增、前置递减 |\n| `! ~` | 逻辑非、位非 |\n| `******` | 幂 |\n\
+  | `*** / %` | 乘法、除法、取模 |\n| `+ –` | 加法、减法 |\n| `<< >> >>>` | 位移 |\n| `< <= => >`\
+  \ | 比较 |\n| `=== === !== !=` | 相等、不相等 |\n| `&` | 位与 |\n| `^` | 位异异 |\n| `&#124;`\
+  \ | 位或 |\n| `&&` | 逻辑与 |\n| `&#124;&#124;` | 逻辑或 |\n| `?:` | 三元条件运算符 |\n| `= +=\
+  \ –= *= /= %= &= ^= &#124;= <<= >>= >>>=` | 赋值 |\n| `,` | 逗号 |\n\n![image](img/hot.jpg)\n\
+  \n`[ ]` 运算符在演示数组的章节中从此处` 等点符号表示法）具有高优先级，以便及早识别对象及其成员。\n\n![image](img/1r.jpg)创建一个\
+  \ HTML 文档，使用一个自执行的匿名函数用未分组表达式的结果初始化变量并输出其值\n\n```javascript\nfunction ( ) {\n  let\
+  \ sum = 9 + 12 / 3; // 等于 9 + 4。\n  console.log( ‘Ungrouped sum: ‘ + sum )\n} (\
+  \ )\n```\n\n![image](img/htmlr.jpg)\n\nprecedence.html\n\n![image](img/2r.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台查看结果\n\n![image](img/pg43_1.jpg)\n\n首先计算除法，因为它的运算符优先级高于加法运算符，所以结果是\
+  \ 13。但你可以通过括号内分组表达式来强制优先级顺序，使其先计算，因为 `( )` 运算符具有所有运算符中最高的优先级。\n\n![image](img/3r.jpg)编辑函数内的语句以强制评估顺序，使加法在除法之前执行\n\
+  \n```javascript\nlet sum = ( 9 + 12 ) / 3; // 等于 21 / 3.\nconsole.log( ‘Grouped\
+  \ sum: ‘ + sum )\n```\n\n![image](img/4r.jpg)再次保存 HTML 文档，然后刷新浏览器查看新的结果值\n\n![image](img/pg43_2.jpg)\n\
+  \n![image](img/hot.jpg)\n\n养成使用括号分组表达式的习惯，从而设定评估的优先级顺序。\n\n**总结**\n\n- `parseInt()`\
+  \ 和 `parseFloat()`可以将字符串转换为数字，但 `String()` 和 `toString()`可以将数字转换为字符串。\n- `isNaN()`\
+  \ 函数测试其参数是否为 NaN 值。\n- 算术运算符执行常规算术以及 `%` 取模、`++` 增、`--` 减以及 `**` 幂。\n- 当 `++` 增或\
+  \ `--` 减运算符位于操作数之前时，其值立即改变；但当它们位于操作数之后时，先评估表达式。\n- `=` 运算符可以与算术运算符结合进行运算。\n- `+=`\
+  \ `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` 用于赋值。\n- `,` 逗号。\n\n**3**\n\
+  \n**管理脚本流**\n\n*本章介绍了 JavaScript 控制结构并演示了它们如何控制脚本的进度。*\n\n- If 分支\n- 备选分支\n- Switch\
+  \ 分支\n- For 循环\n- While 循环\n- Do 循环\n- Break 跳\n- 捕获错误\n- 总结\n\n**If 分支**\n\n任何脚本或计算机程序的进度都取决于条件的评估，以确定流的方向。每次评估都可能根据评估结果提供一个或多个继续执行的分支。\n\
+  \n![image](img/pg46_1.jpg)\n\n在 JavaScript 中，基本的条件测试使用 `if` 关键字进行，用以测试条件是否为布尔真或假值。当结果为真时，将执行评估后的语句；否则，跳过该语句并在后续语句处继续执行。\n\
+  \n`if` 语句的语法要求将测试的条件放在 `if` 关键字后的括号内，格式如下：\n\n```javascript\nif ( condition ) execute-this-statement-when-true\n\
+  ```\n\n`if` 语句也可以通过将语句封装在大括号内来指定在结果为真时执行的多个语句，如下所示：\n\n```javascript\nif ( condition\
+  \ )\n{\n  execute-this-statement-when-true\n  execute-this-statement-when-true\n\
+  \  execute-this-statement-when-true\n}\n```\n\n\n\n\n对条件进行评估并根据结果执行操作，简单地反映了现实中的思考过程——例如，你可能在夏日里执行的动作：\n\
+  \n```javascript\nlet temperature = readThermometer( )\nconst tolerable = 25\nif\
+  \ ( temperature > tolerable )\n{\n  turn_on_air-conditioning( )\n  get_a_cool_drink(\
+  \ )\n  stay_in_shade( )\n}\n```\n\n条件测试等于 `if( condition === true )`，但因为它会自动对真值进行等值测试，因此没有必要在括号中包含\
+  \ `=== true`。\n\n![image](img/hot.jpg)\n\n建议即使是执行单个语句，也将其封装在大括号内 ——用以保持一致的编码风格。\n\
+  \n![image](img/1g.jpg)创建一个 HTML 文档，包含一个自执行函数，首先初始化一个布尔变量\n\n```javascript\nlet flag\
+  \ = true\n```\n\n![image](img/htmlg.jpg)\n\nif.html\n\n![image](img/2g.jpg)接下来，插入语句对变量的布尔值进行条件测试\n\
+  \n```javascript\nif( !flag )\n{\n  console.log( ‘Power is OFF’ )\n}\nif( flag )\n\
+  {\n  console.log( ‘Power is ON’ )\n}\n```\n\n![image](img/3g.jpg)现在，插入语句对比较两个整数的表达式进行条件测试\n\
+  \n```javascript\nif( 7 < 2 )\n{\n  console.log( ‘Failure’ )\n}\nif( 7 > 2 )\n{\n\
+  \  console.log( ‘Success’ )\n}\n```\n\n![image](img/4g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台，查看哪些输出语句被执行，哪些被忽略了\n\
+  \n![image](img/pg47_1.jpg)\n\n![image](img/hot.jpg)\n\n这里使用了逻辑 `!`（非）运算符来反转条件测试，使其等同于\n\
+  \n```javascript\nif( flag === false )\n```\n\n![image](img/hot.jpg)\n\n为了节省页面空间，本示例以及大多数后续示例都省略了创建函数块的脚本代码。你可以参考此处\
+  \ 获取有关如何创建匿名自执行函数的说明。\n\n## 分支备\n\n`if` 语句测试条件的布尔值并仅在结果为真时执行其语句，它提供了一个脚本可以遵循的单一分支。通过\
+  \ `else` 关键字扩展 `if` 语句，可以提供脚本在结果为假时遵循的备选分支。\n\n![image](img/pg48_1.jpg)\n\n`else`\
+  \ 语句位于 `if` 语句之后如下：\n\n```javascript\nif ( condition ) execute-this-statement-when-true\n\
+  else execute-this-statement-when-false\n```\n\n`if else` 语句也可以通过将这些语句封装在大括号内来指定多个执行语句，如下：\n\
+  \n```javascript\nif ( condition )\n{\n  execute-this-statement-when-true\n  execute-this-statement-when-true\n\
+  }\nelse\n{\n  execute-this-statement-when-false\n  execute-this-statement-when-false\n\
+  }\n```\n\n通过在每个 `else` 语句块的开头进行后续的条件 `if` 测试，可以提供多个分支，如下：\n\n```javascript\nif (\
+  \ condition )\n{\n  execute-these-statements-when-true\n}\nelse if ( condition )\n\
+  {\n  execute-these-statements-when-true\n}\nelse if ( condition )\n{\n  execute-these-statements-when-true\n\
+  }\nelse\n{\n  execute-this-statements-when-false\n}\n```\n\n`if else if` 语句可能会反复测试变量在一个范围内的值，也可能会测试各种条件。最终的\
+  \ `else` 语句在没有找到真条件时充当默认值。\n\n![image](img/hot.jpg)\n\n一旦在 `if else` 语句中发现真条件，其关联语句将被执行，然后流在\
+  \ `if else` 语句之后继续 ——不再评估后续的 `else` 语句。\n\n![image](img/1g.jpg)创建一个 HTML 文档，包含一个自执行函数，首先初始化两个变量\n\
+  \n```javascript\nlet flag = false\nconst num = 10\n```\n\n![image](img/htmlg.jpg)\n\
+  \nelse.html\n\n![image](img/2g.jpg)接下来，插入语句对第一个变量的布尔值进行条件测试\n\n```javascript\nif(\
+  \ !flag )\n{\n  console.log( ‘Power is OFF’ )\n}\nelse\n{\n  console.log( ‘Power\
+  \ is ON’ )\n}\n```\n\n![image](img/3g.jpg)现在，插入语句对第二个变量的数值值进行条件测试\n\n```javascript\n\
+  if( num === 5 )\n{\n  console.log( ‘Number is Five’ )\n}\nelse if( num === 10 )\n\
+  {\n  console.log( ‘Number is Ten’ )\n}\nelse\n{\n  console.log( ‘Number is Neither\
+  \ Five nor Ten’ )\n}\n```\n\n![image](img/4g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台，查看哪些输出语句被执行，哪些被忽略了\n\
+  \n![image](img/pg47_1.jpg)\n\n![image](img/hot.jpg)\n\n使用 `if` 语句进行条件分支流测试几个条件是可以的，但当有许多条件时，会变得臃肿。在这种情况下，使用\
+  \ `switch` 语句通常更高效、更优雅。\n\n![image](img/50.jpg)\n\n`switch` 语句的工作方式很特殊 —— 它首先评估一个表达式，然后为结果值寻找匹配。在找到匹配的地方，`switch`\
+  \ 语句将执行与该值关联的一个语句，否则它将执行一个指定为 `default` 的语句。\n\n因此，`switch` 语句的语法如下：\n\n```javascript\n\
+  switch ( expression )\n{\n  case value-1 : statements-to-executed-when-matched ;\
+  \ break\n  case value-2 : statements-to-executed-when-matched ; break\n  case value-3\
+  \ : statements-to-executed-when-matched ; break\n  default : statements-to-executed-when-match-found\n\
+  }\n```\n\n`switch` 语句首先通过在 `switch` 关键字后的括号内封装要评估的表达式。紧接着是一对 `{ }` 大括号，其中包含了可能的匹配项。每个匹配项都跟一个\
+  \ `case` 关键字，并使用冒号 `:` 关联一个更多要执行的语句。重要的是，每个 `case` 必须以 `break` 语句结束，以便在执行其关联语句后退出\
+  \ `switch` 语句。\n\n可选地，`switch` 语句可以包含一个最后的 `default` 备选，以便在未找到匹配时关联一个更多要执行的语句。\n\
+  \n`switch` 语句中包含的 `case` 值数量没有限制，因此它是匹配几十、数百或数千个不同值的理想方式。\n\n![image](img/snake.jpg)\n\
+  \n省略 `break` 语句允许脚本也执行与后续不匹配 `case` 值关联的语句。\n\n![image](img/1g.jpg)创建一个 HTML 文档，包含一个自执行函数，首先声明一个变量\n\
+  \n```javascript\nlet day\n```\n\n![image](img/htmlg.jpg)\n\nswitch.html\n\n![image](img/2g.jpg)接下来，插入一个\
+  \ `switch` 语句在评估表达式后给变量赋值一个值\n\n```javascript\nswitch( 5 - 2 )\n{\n  case 1 : day\
+  \ = ‘Monday’ ; break\n  case 2 : day = ‘Tuesday’ ; break\n  case 3 : day = ‘Wednesday’\
+  \ ; break\n  case 4 : day = ‘Thursday’ ; break\n  case 5 : day = ‘Friday’ ; break\n\
+  \  default : day = ‘Weekend’\n}\n```\n\n![image](img/3g.jpg)现在，插入一个语句输出由匹配的 `case`\
+  \ 语句赋值的值\n\n```javascript\nconsole.log( ‘It is ‘ + day )\n```\n\n![image](img/4g.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台，查看输出中的赋值值\n\n![image](img/pg51_1.jpg)\n\n![image](img/forget.jpg)\n\
+  \n\n\n\n作为可能情况匹配的 `String` 值必须像所有其他字符串值一样括在引号内。\n\n### For 循环\n\n循环是一种包含一个测试条件和一个或多个语句的结构，当测试条件满足时，这些语句会被重复执行。对条件的单次检查和语句的执行被称为一次“迭代”。当测试条件不再满足时，不再进行后续迭代，程序流将到循环结构之后的下一个语句。\n\
+  \n![image](img/pg52_1.jpg)\n\n在 JavaScript 中最常用的循环结构可能是 `for` 循环，其语法如下：\n\n`for\
+  \ ( *initializer ; condition ; modifier ) { *statements-to-be-executed }`\n\n`for`\
+  \ 关键字后面的括号内包含三个表达式，用于控制循环执行的次数：\n\n- `Initializer`（初始化器） – 一个语句，指定用于计数循环迭代次数变量的初始值。传统上，这个简单的计数器变量通常命名为“i”。\n\
+  - `Condition`（条件） – 在每次迭代中都会进行布尔值测试的表达式。当求值结果为 true 时，执行循环语句以完成该迭代。如果求值结果为 false，则不执行语句并结束循环。通常，该条件检查循环计数器变量的值。\n\
+  - `Modifier`（修改器） – 一个修改测试条件中值的语句，以便在某一点其求值结果能返回 false。通常，这会递增或递减循环计数器变量。\n\n例如，执行一组语句一百次的\
+  \ `for` 循环结构可能如下所示：\n\n```javascript\nlet i\nfor ( i = 0 ; i < 100 ; i++ ) { statements-to-be-executed\
+  \ }\n```\n\n在这种情况下，计数器变量在每次迭代中递增，直到其值达到 100，此时求值返回 false，循环结束。\n\n![image](img/snake.jpg)\n\
+  \n除非修改器能够让求值在某一点返回 false，否则会创建一个永远运行的死循环。\n\n![image](img/1g.jpg)创建一个带有自执行函数的 HTML\
+  \ 文档，从初始化一个循环计数器变量开始\n\n```javascript\nlet i = 0\n```\n\n![image](img/htmlg.jpg)\n\
+  \nfor.html\n\n![image](img/2g.jpg)接下来，插入一个 for 循环结构，它将进行 10 次迭代并在每次迭代中输出循环计数器的值\n\
+  \n```javascript\nfor( i = 1 ; i < 11 ; i++ )\n{\nconsole.log( ‘Iteration Number:\
+  \ ‘ + i )\n}\n```\n\n![image](img/3g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看循环迭代\n\n![image](img/pg53_1.jpg)\n\
+  \n![image](img/hot.jpg)\n\n这是普通的 `for` 循环。还有一种特殊的 `for in` 循环，用于遍历对象的属性，稍后会演示，详见此处。\n\
+  \n### While 循环\n\n此处描述的 `for` 循环结构适用于所需迭代次数已知的情况，但在次数未知时，`while` 循环结构通常更好。`while`\
+  \ 循环的语法如下：\n\n```javascript\nwhile( *condition )\n{\n*statements-to-be-executed*\n\
+  *modifier*\n}\n```\n\n![image](img/pg54_1.jpg)\n\n`while` 关键字后面的括号内包含一个条件，在每次迭代时进行布尔值求值。每次迭代要执行的语句括在大括号内，并包含一个修改测试条件中值的语句，以便在某一点其求值结果返回\
+  \ false 并退出循环。只要求值结果保持为 true，语句就会循环的每次迭代中执行。\n\n如果条件在第一次迭代时求值为 false，循环将立即退出，因此大括号内的语句永远不会被执行。`while`\
+  \ 循环和 `for` 循环有时被称为“预测试”循环，因为它们的测试条件是在执行任何语句之前进行求值的。\n\n通过使用计数器变量作为测试条件并在每次迭代中增加其值，可以让\
+  \ `while` 循环像 `for` 循环一样执行特定次数的迭代。例如，执行一组语句一百次的 `while` 循环结构可能如下所示：\n\n```javascript\n\
+  let i = 0\nwhile ( i < 100 )\n{\nstatements-to-be-executed\ni++ ;\n}\n```\n\n计数器变量在每次迭代中递增，直到其值达到\
+  \ 100，此时求值返回 `false` 循环结束。\n\n![image](img/snake.jpg)\n\n在 `while` 循环结构中省略修改器将创建一个永远运行的死循环。\n\
+  \n![image](img/1g.jpg)创建一个带有自执行函数的 HTML 文档，从初始化一个循环计数器变量开始\n\n```javascript\nlet\
+  \ i = 10\n```\n\n![image](img/htmlg.jpg)\n\nwhile.html\n\n![image](img/2g.jpg)接下来，插入一个\
+  \ while 循环结构，它将进行迭代并在每次迭代中输出循环计数器的值，直到其达到零\n\n```javascript\nwhile( i > -1 )\n{\n\
+  console.log( ‘Countdown Number: ‘ + i )\ni--\n}\n```\n\n![image](img/3g.jpg)保存 HTML\
+  \ 文档，然后在浏览器中打开它并启动控制台查看循环迭代\n\n![image](img/pg55_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n每个 `while` 循环必须带有大括号，因为它们至少包含两个语句——一个执行语句和一个修改器。\n\n### Do 循环\n\nJavaScript 中提供的另一种循环是\
+  \ `do while` 循环结构。这是此处描述的 `while` 循环的反转版本，适用于每次迭代要执行的语句绝对至少执行一次的情况。其语法如下：\n\n```javascript\n\
+  do\n{\nstatements-to-be-executed\nmodifier\n}\nwhile *( condition )\n```\n\n![image](img/pg54_1.jpg)\n\
+  \n`while` 关键字后面的括号内包含一个条件，在每次迭代后进行布尔值求值。每次迭代要执行的语句括在大括号内，并包含一个修改测试条件中值的语句，以便在某一点其求值结果返回\
+  \ false 并退出循环。只要求值结果保持为 true，语句就会循环的每次迭代中执行。\n\n如果条件在第一次迭代时求值为 false，循环将立即退出，因此大括号内的语句已经执行了一次。`do\
+  \ while` 循环有时被称为“后测试”循环，因为测试条件是在语句执行后求值的。\n\n通过使用计数器变量作为测试条件并在每次迭代中增加其值，可以让 `do\
+  \ while` 循环像 `for` 循环一样执行特定次数的迭代。例如，执行一组语句一百次的 `do while` 循环结构可能如下所示：\n\n```javascript\n\
+  let i = 0\ndo\n{\nstatements-to-be-executed\ni++\n}\nwhile ( i < 100 )\n```\n\n\
+  计数器变量在每次迭代中递增，直到其值达到 100，此时求值返回 false 循环结束。\n\n![image](img/hot.jpg)\n\n只有在语句绝对至少执行一次时，才使用\
+  \ `do while` 循环。\n\n![image](img/1g.jpg)创建一个带有自执行函数的 HTML 文档，从初始化一个循环计数器变量开始\n\n\
+  ```javascript\nlet i = 2\n```\n\n![image](img/htmlg.jpg)\n\ndo.html\n\n![image](img/2g.jpg)接下来，插入一个\
+  \ do while 循环结构，它将进行迭代并在每次迭代中输出循环计数器的值，直到其超过 1000\n\n```javascript\ndo\n{\ni *=\
+  \ 2\nconsole.log( ‘Multiplied Number: ‘ + i )\n}\nwhile( i < 1000 )\n```\n\n![image](img/3g.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台查看循环迭代\n\n![image](img/pg57_1.jpg)\n\n![image](img/forget.jpg)\n\
+  \n注意，最终值超过了条件限制，是因为它在测试之前就已经写入了输出中。\n\n### 跳出循环\n\n\n\n\n\nJavaScript `break` 关键字可以用于遇到指定条件时退出循环。条件测试应该出现在所有要执行的其他语句之前，这样循环将立即结束。\n\
+  \n![image](img/pg58_1.jpg)\n\n当 `break` 语句在嵌套在外层循环的循环中使用时，流将回到外层循环迭代继续执行。\n\nJavaScript\
+  \ `continue` 关键字可以用于遇到指定条件时跳过循环的单次迭代。\n\n当 `continue` 语句在嵌套在外层循环的循环中使用时，流将从内层循环的下一次迭代开始。\n\
+  \n![image](img/1g.jpg)创建一个 HTML 文档，包含一个自执行函数，该函数开始初始化两个循环计数器\n\n`let i = 0`\n\n\
+  `let j = 0`\n\n![image](img/htmlg.jpg)\n\nbreak.html\n\n![image](img/2g.jpg)接下来，插入一个包含内部嵌套\
+  \ for 循环的 for 循环\n\n```javascript\nfor ( i = 1 ; i < 3 ; i++ )\n{\n    console.log(\
+  \ ‘Outer Loop: ‘ + i )\n    for ( j = 1 ; j < 4 ; j++ )\n    {\n        // 在此处插入语句。\n\
+  \        console.log( ‘\\tInner Loop: ‘ + j )\n    }\n}\n```\n\n![image](img/hot.jpg)\n\
+  \n此处处使用 `\\t` 转义序列是为了在输出中包含一个制表符空格。\n\n![image](img/3g.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台，查看外层循环的两次迭代和内层循环的三次迭代\n\
+  \n![image](img/pg59_1.jpg)\n\n![image](img/4g.jpg)接下来，在内层循环中插入语句以跳过内层循环的迭代并跳出外层循环\n\
+  \n```javascript\nif( ( i === 1 ) && ( j === 2 ) ) {\n    console.log( ‘\\tSkipped:\
+  \ ‘ + j )\n    continue\n}\n\nif( ( i === 2 ) && ( j === 2 ) ) {\n    console.log(\
+  \ ‘\\tBroken: ‘ + j )\n    break\n}\n```\n\n![image](img/5g.jpg)再次保存 HTML 文档，然后在浏览器中打开它并启动控制台，看到一次迭代被跳过且循环被完全中断\n\
+  \n![image](img/pg59_2.jpg)\n\n![image](img/forget.jpg)\n\n`break` 关键字也用作 switch\
+  \ 语句中的终止符。\n\n![image](img/snake.jpg)\n\n不要倾向于使用 `break` 语句来退出循环，以代替构成循环结构部分的常规条件测试。\n\
+  \n## 捕获错误\n\n可能预判错误的脚本部分（例如处理用户输入的部分）可以封装在 `try catch` 结构中以处理“异常”错误。要执行的语句包含在 `try`\
+  \ 块的大括号内，异常作为参数传递给随后的 `catch` 块进行处理。可选情况下，后面可以跟一个 `finally` 块，其中包含在处理异常后执行的语句。\n\
+  \n![image](img/pg60_1.jpg)\n\nJavaScript 识别 `Error`、`EvalError`、`InternalError`、`RangeError`、`ReferenceError`、`SyntaxError`、`TypeError`\
+  \ 和 `URIError` 错误对象。这些对象可能由解析器自动创建并传递给 `catch` 块，或通过 `new` 关键字和构造方法手动创建，然后使用 `throw`\
+  \ 关键字传递。\n\n每个错误对象都可以有一个 `name` 属性和一个 `message` 属性，以允许 `catch` 块描述其性质。`message`\
+  \ 被指定为手动创建的错误对象的构造函数的参数，否则它是预定义的。\n\n或者，也可以通过 `throw` 关键字将字符串传递给 `catch` 块以识别错误。然后可以通过检查字符串值来确定适当的操作。\n\
+  \n![image](img/1g.jpg)创建一个 HTML 文档，包含一个自执行函数，该函数开始初始化一个变量\n\n`let day = 32`\n\n\
+  ![image](img/htmlg.jpg)\n\ncatch.html\n\n![image](img/2g.jpg)接下来，插入一个 `try` 块来识别无效的整数值\n\
+  \n```javascript\ntry\n{\n    if( day > 31 )\n    {\n        throw new RangeError(\
+  \ ‘Day Cannot Exceed 31’ )\n    }\n    if( day < 1 )\n    {\n        throw ‘invalid’\n\
+  \    }\n}\n```\n\n![image](img/3g.jpg)现在，在 `try` 块后附加一个 `catch` 块来处理无效的整数值\n\n```javascript\n\
+  catch( err )\n{\n    if( err === ‘invalid’ )\n    {\n        console.log( ‘Variable\
+  \ has invalid value of ‘ + day )\n    }\n    else\n    {\n        console.log( err.name\
+  \ + ‘ Exception: ‘ + err.message )\n    }\n}\n```\n\n![image](img/4g.jpg)然后，在 `catch`\
+  \ 块后附加一个 `finally` 块以输出最终消息\n\n```javascript\nfinally\n{\n    console.log( ‘The\
+  \ script has ignored the error...’ )\n}\n```\n\n![image](img/5g.jpg)再次保存 HTML 文档，然后在浏览器中打开它并启动控制台查看捕获到的错误\n\
+  \n![image](img/pg61_1.jpg)\n\n![image](img/6g.jpg)将变量值改为零，然后保存 HTML 文档并刷新浏览器以查看捕获到的错误\n\
+  \n![image](img/pg61_2.jpg)\n\n![image](img/hot.jpg)\n\n删除或注释掉 `day` 变量声明，然后保存并刷新此示例以查看自动捕获的\
+  \ `ReferenceError`。\n\n## 总结\n\n- 基本条件测试使用 `if` 关键字进行，以测试条件是否为布尔真或假值。\n- 可以通过 `else`\
+  \ 关键字扩展 `if` 语句来提供基本条件测试的备分支。\n- 使用 `switch` 语句对大量条件进行布尔真或假值的测试。\n- 在 `switch` 块中，每个\
+  \ `case` 语句必须以 `break` 关键字结束，以便在找到匹配时退出。\n- `switch` 块可以包含一个最终的 `default` 语句，在未找到匹配时执行。\n\
+  - `for` 循环必须指定一个初始化器、一个测试布尔真或假值的条件以及一个修饰符。\n- 循环修饰符必须使测试的条件在某一点变为假。\n- `while` 循环在执行语句前测试条件是否为布尔真或假值。\n\
+  - `do while` 循环在执行语句后测试条件。\n\n- `break` 关键字可以用于遇到指定条件时退出循环。\n- `continue` 关键字可以用于遇到指定条件时跳过循环的单次迭代。\n\
+  - `try catch` 结构可以用于处理脚本中发生的异常。\n- 每个错误对象都可以有一个 `name` 属性和一个 `message` 属性，以允许 `catch`\
+  \ 块描述其性质。\n- 可以通过 `throw` 关键字将字符串传递给 `catch` 块以识别错误。\n- `try catch` 结构后面可以跟一个 `finally`\
+  \ 块，包含处理异常后执行的语句。\n\n## 4 使用对象\n\n*本章介绍了如何创建脚本对象并演示了如何使用内置对象。*\n\n- 自定义对象\n- 扩展对象\n\
+  - 内置对象\n- 创建数组\n- 循环元素\n- 切片数组\n- 排序元素\n- 获取日期\n- 提取日历\n- 提取时间\n- 设置日期\n- 匹配模式\n\
+  - 总结\n\n## 自定义对象\n\n![image](img/pg64_1.jpg)\n\n现实世界的对象无处不在，它们都有我们可以描述的属性和行为：\n\n\
+  - 属性描述对象拥有的特征。\n- 行为描述对象可以执行的操作。\n\n例如，可以描述汽车具有“品牌”和“型号”属性，以及“加速”和“刹车”行为。\n\n![image](img/pg64_2.jpg)\n\
+  \n这些特征可以用 JavaScript 中的一个自定义汽车对象来表示，该对象包含品牌和型号的变量属性，以及 `accelerate()` 和 `brake()`\
+  \ 方法。\n\n值通过 `{ }` 内逗号分隔的键值对列表分配给对象，如下：\n\n```javascript\nlet car = { make: ‘Jeep’,\
+  \ model: ‘Wrangler’,\n```\n\n\n\n\n\n```javascript\naccelerate: function ( ) { return\
+  \ this.model + ‘ drives away’ } ,\nbrake: function ( ) { return this.make + ‘ pulls\
+  \ up’ }\n}\n```\n\n你可以通过两种方式引用对象的属性值——使用 `objectName.propertyName` 的点符号语法，或者使用 `objectName['propertyName']`\
+  \ 语法。\n\n可以使用点符号语法 `objectName.methodName()` 来调用对象方法。\n\n`this` 关键字可以在对象方法定义中使用，用以指向“拥有”该方法的对象。在上面的示例中，它指的是\
+  \ `car` 对象，因此 `this.model` 引用 `car.model` 属性，而 `this.make` 引用 `car.make` 属性。\n\n\
+  ![image](img/hot.jpg)\n\n在对象的 `name:value` 键值对列表中，空白会被忽略，但不要忘记在键值对之间加上逗号。\n\n![image](img/1p.jpg)\n\
+  \n创建一个带有自执行执行函数的 HTML 文档，该函数首先声明一个变量来包含一个对象定义\n\n```javascript\nlet car = {\n//\
+  \ 在此处插入语句。\n}\n```\n\n![image](img/htmlp.jpg)\n\nobject.html\n\n![image](img/2p.jpg)接下来，插入语句来定义对象的属性\n\
+  \n```javascript\nmake: ‘Jeep’ ,\nmodel: ‘Wrangler’ ,\n```\n\n![image](img/3p.jpg)现在，插入语句来定义对象的方法\n\
+  \n```javascript\naccelerate: function ( ) {\nreturn this.model + ‘ drives away’\
+  \ } ,\nbrake: function ( ) {\nreturn this.make + ‘ pulls up’ }\n```\n\n![image](img/4p.jpg)然后，在变量声明的结束括号\
+  \ `}` 之后，添加一条语句输出包含对象属性值的字符串——使用每种引用技术\n\n```javascript\nconsole.log( ‘Car is a\
+  \ ‘ + car.make + ‘ ‘ + car[ ‘model’ ] )\n```\n\n![image](img/5p.jpg)最后，添加语句来调用每个对象方法\n\
+  \n```javascript\nconsole.log( car.accelerate( ) )\nconsole.log( car.brake( ) )\n\
+  ```\n\n![image](img/6p.jpg)保存该 HTML 文档，然后在浏览器中打开并启动控制台，查看对象的属性值以及从方法返回的字符串\n\n![image](img/pg65_1.jpg)\n\
+  \n![image](img/forget.jpg)\n\n你必须包含结尾的 `()` 括号来调用方法，否则它将仅仅返回函数定义。\n\n## 扩展对象\n\n\
+  自定义对象非常灵活，只需通过赋值新值即可随时轻松扩展和更新，使用点符号引用属性，如 `objectName.propertyName`。\n\n![image](img/pg66_1.jpg)\n\
+  \n可以使用特殊的 `for...in` 循环并使用以下语法来列出对象的所有属性名和方法名（“键”）：\n\n```javascript\nfor ( property\
+  \ in objectName ) { console.log( property ) }\n```\n\n为了在每次迭代中引用每个属性的值，可以将属性变量名包含在对象名称后的方括号中，格式为\
+  \ `object-Name[property]`。\n\n![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数首先初始化一个变量，精确重建上一个示例中的对象\n\
+  \n```javascript\nlet property, car = {\nmake: ‘Jeep’ ,\nmodel: ‘Wrangler’ ,\naccelerate:\
+  \ function ( ) {\nreturn this.model + ‘ drives away’ } ,\nbrake: function ( ) {\n\
+  return this.make + ‘ pulls up’ }\n}\n```\n\n![image](img/htmlp.jpg)\n\nextend.html\n\
+  \n![image](img/2p.jpg)添加循环语句来列出每个属性和方法的名称和值\n\n```javascript\nfor( property in car\
+  \ ) {\nconsole.log( property + ‘: ‘ + car[ property ] )\n}\n```\n\n![image](img/3p.jpg)保存该\
+  \ HTML 文档，然后在浏览器中打开并启动控制台，查看对象的键和值\n\n![image](img/pg66_2.jpg)\n\n![image](img/forget.jpg)\n\
+  \n示例中的 `property` 变量实际上可以被赋予任何有效的变量名。\n\n![image](img/4p.jpg)接下来，添加语句为两个现有的对象属性分配新值\n\
+  \n```javascript\ncar.make = ‘Ford’\ncar.model = ‘Bronco’\n```\n\n![image](img/5p.jpg)现在，添加语句通过一个额外的属性和额外的方法来扩展对象\n\
+  \n```javascript\ncar.engine = ‘V6’\ncar.start = function ( ) {\nreturn this.make\
+  \ + ‘ motor is running’ }\n```\n\n![image](img/6p.jpg)然后，添加语句输出包含对象属性值的字符串——使用每种引用技术\n\
+  \n```javascript\nconsole.log( ‘\\nCar is a ‘ + car.make + ‘ ‘ + car[ ‘model’ ] )\n\
+  console.log( ‘Engine Type: ‘ + car.engine )\n```\n\n![image](img/hot.jpg)\n\n该语句中的\
+  \ `\\n` 转义序列用于在输出中包含换行（换行符）。\n\n![image](img/7p.jpg)最后，添加语句来调用每个对象方法\n\n```javascript\n\
+  console.log( car.start( ) )\nconsole.log( car.accelerate( ) )\nconsole.log( car.brake(\
+  \ ) )\n```\n\n![image](img/8p.jpg)再次保存该 HTML 文档，然后刷新浏览器以查看扩展对象的属性值以及从其方法返回的字符串\n\
+  \n![image](img/pg67_1.jpg)\n\n## 内置对象\n\n![image](img/pg68_1.jpg)\n\n| 对象 |\n| :---\
+  \ |\n| `String`（仅在使用 `new` 关键字创建时为对象） |\n| `Number`（仅在使用 `new` 关键字创建时为对象） |\n| `Boolean`（仅在使用\
+  \ `new` 关键字创建时为对象） |\n| `Object` – 你定义的对象 |\n| `Date` – 包含日期和时间部分的对象 |\n| `Array`\
+  \ – 存储索引数据项的对象 |\n| `RegExp` – 描述正则表达式模式的对象 |\n| `Math` – 提供数学属性和方法的对象 |\n| `Error`\
+  \ – 提供错误详细信息的对象 |\n\nJavaScript 提供了上表列出的预定义内置对象。这些对象中，除了 `Math` 之外，每个对象都有同名的构造方法可以使用。\n\
+  \n\n\n\n\n![image](img/3p.jpg)现在，插入语句输出 `Date` 节点的内容和本地格式化的日期字符串\n\n```javascript\n\
+  console.log( ‘Date Object: ‘ + jsDate )\nconsole.log( ‘Locale Date String: ‘ + jsDate.toLocaleString(\
+  \ ) )\n```\n\n![image](img/4p.jpg)然后，插入语句输出原始类型字面量数值值和本地格式化的数字字符串\n\n```javascript\n\
+  console.log( ‘\\nPrimitive Number: ‘ + jsNumber )\nconsole.log( ‘Locale Number String:\
+  \ ‘ + jsNumber.toLocaleString( ) )\n```\n\n![image](img/5p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看输出字符串\n\
+  \n![image](img/pg69_1.jpg)\n\n![image](img/forget.jpg)\n\n`Math` 对象是唯一一个不提供构造方法的\
+  \ JavaScript 对象。\n\n## 创建数组\n\n`Array` 对象是 JavaScript 的内置对象，可以在单独的“元素”中存储多个项目（各种数据类型）。数组通过给变量赋值\
+  \ `[]` 方括号来创建，方括号内可以包含由逗号分隔的值列表，用于初始化数组元素。其语法如下：\n\n![image](img/pg70_1.jpg)\n\n\
+  ```javascript\nlet arrayName = [ value1 , value2 , value3 ]\n```\n\n与自定义对象不同（对象的每个属性都有名称），数组元素是自动编号的——从零开始。因此，第一个元素是\
+  \ 0，第二个是 1，第三个是 2，以此此类推。这种编号系统通常被称为“基于零的索引”。\n\n存储在数组元素中的值可以通过在对象名后加上方括号并包含其元素索引数字来引用。例如，`colors[\
+  \ 0 ]` 将引用名为“colors”的数组中第一个元素的值。\n\n当数组元素不需要立即初始化时，可以创建一个空数组稍后将值赋值给其元素，如下：\n\n```javascript\n\
+  let colors = [ ]\ncolors[ 0 ] = ‘Red’\ncolors[ 1 ] = ‘Green’\ncolors[ 2 ] = ‘Blue’\n\
+  ```\n\n虽然 `Array` 对象提供了 `Array()` 构造函数，但不应使用它，因为它可能会产生意想不到的结果——例如，创建一个初始化了第一个元素的数组，如下：\n\
+  \n```javascript\nlet jsArray = new Array( 10 )\n```\n\n你可能会合理地预期 `jsArray[ 0 ]`\
+  \ 引用第一个元素中的整数值 10，但它实际上返回一个 `undefined` 值。这是怎么了？这是一个只在你向构造方法指定单个整数参数时才会发生的异常——这会导致\
+  \ JavaScript 创建一个包含 10 个空元素的数组！使用 `jsArray = [ 10 ]` 创建数组则没有该效果，并会如预期创建一个第一个元素包含整数值\
+  \ 10 的数组。\n\n![image](img/forget.jpg)\n\n所有内置对象的名称以大写字母开头——因此构造函数的名称是“Array”，而不是“array”。\n\
+  \n![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数首先创建一个数组——用错误的方法\n\n```javascript\n\
+  let jsArray = new Array( 10 )\n```\n\n![image](img/htmlp.jpg)\n\narray.html\n\n\
+  ![image](img/2p.jpg)接下来，添加语句输出第一个数组元素的值并列出整个数组\n\n```javascript\nconsole.log( jsArray[\
+  \ 0 ] )\nconsole.log( jsArray )\n```\n\n![image](img/3p.jpg)现在，添加语句声明一个变量，并声明一个初始化数组的变量\n\
+  \n```javascript\nlet month, summer = [ ‘June‘, ‘July‘, ‘August‘ ]\n```\n\n![image](img/4p.jpg)然后，添加一个循环输出每个数组元素的索引号和值\n\
+  \n```javascript\nfor ( month in summer )\n{\n  if ( month !== ‘ ‘ )\n  {\n    console.log(\
+  \ month + ‘: ‘ + summer[ month ] )\n  }\n}\n```\n\n![image](img/5p.jpg)最后添加语句输出第一个数组元素的值并列出整个数组\n\
+  \n```javascript\nconsole.log( ‘Start of Summer: ‘ + summer[ 0 ] )\nconsole.log(\
+  \ summer )\n```\n\n![image](img/6p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看数组元素的内容\n\n\
+  ![image](img/pg71_1.jpg)\n\n![image](img/hot.jpg)\n\n将 `for in` 循环的主体封装在 `if` 语句中是一个良好的习惯——在这里，它确保了元素不是空的。\n\
+  \n## 循环元素\n\n数组和循环是绝佳拍档！任何类型的循环都可以用于向元素填充值。即使是非常巨大的数组，也可以通过这种方式“填充”——而且代码少得惊人。\n\
+  \n![image](img/pg72_1.jpg)\n\n同样，循环可以快速读取每个数组元素的值，并在循环的每次迭代中对该值执行适当的操作。\n\n有用的是，每个数组都有一个\
+  \ `length` 属性，其中包含该数组元素总数的整数记录。由于基于零的索引，此值始终比最后一个元素的索引号大一，因此可以随时用于条件测试以终止循环。\n\n\
+  ![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数首先声明三个变量\n\n```javascript\nlet i, result,\
+  \ boolArray = [ ]\n```\n\n![image](img/htmlp.jpg)\n\nelements.html\n\n![image](img/2p.jpg)接下来，输出一个简单的标题\n\
+  \n```javascript\nconsole.log( ‘Fill Elements...’ )\n```\n\n![image](img/3p.jpg)现在，添加一个循环用布尔值填充\
+  \ 10 个元素，并输出它们的索引号和每个存储的值\n\n```javascript\nfor( i = 1 ; i < 11 ; i++ )\n{\n  boolArray[\
+  \ i ] = ( i % 2 === 0 ) ? true : false\n  console.log( ‘Element ‘ + i + ‘: ‘ + boolArray[\
+  \ i ] )\n}\n```\n\n![image](img/4p.jpg)然后，输出第二个简单的标题并用空字符串值初始化变量\n\n```javascript\n\
+  console.log( ‘Read Elements...’ )\nresult = ‘’\n```\n\n![image](img/5p.jpg)接下来，添加一个循环将任何包含\
+  \ true 值的元素的索引号赋值给字符串\n\n```javascript\nfor( i = 1 ; i < boolArray.length ; i++\
+  \ )\n{\n  if( boolArray[ i ] ) { result += i + ‘ | ‘ }\n}\n```\n\n![image](img/hot.jpg)\n\
+  \n这里的数组 `length` 属性值为 11，因为数组有十一个元素——尽管元素 0 还没有填充。\n\n![image](img/6p.jpg)现在，输出字符串以显示包含\
+  \ true 值的元素的索引号\n\n```javascript\nconsole.log( ‘True in Elements: ‘ + result )\n\
+  ```\n\n![image](img/7p.jpg)重置字符串变量包含一个空字符串\n\n```\nresult = ‘‘\n```\n\n![image](img/8p.jpg)然后，添加一个循环将任何包含\
+  \ false 值的元素的索引号赋值给字符串\n\n```javascript\nfor( i = 1 ; i < boolArray.length ; i++\
+  \ )\n{\n  if( !boolArray[ i ] ) { result += i + ‘ | ‘ }\n}\n```\n\n![image](img/9p.jpg)最后，输出字符串以显示包含\
+  \ false 值的元素的索引号\n\n```javascript\nconsole.log( ‘False in Elements: ‘ + result )\n\
+  ```\n\n![image](img/10p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台写入和读取元素\n\n![image](img/pg73_1.jpg)\n\
+  \n![image](img/forget.jpg)\n\n布尔值的条件测试不需要包含 `=== true`，因为那是自动的。\n\n## 切割数组\n\nJavaScript\
+  \ 对象具有属性和方法。除了 `length` 属性外，每个数组对象都有用于操作数组元素的方法。它们列在下表中，并附带有它们执行任务的简短描述：\n\n![image](img/pg74_1.jpg)\n\
+  \n| 方法 | 描述 |\n| :--- | :--- |\n| `join( *separator* )` | 将所有元素值合并由指定分隔符分隔的字符串，如果没有指定分隔符则用逗号分隔\
+  \ |\n| `pop()` | 删除数组的最后一个元素并返回其值 |\n| `push( *value , value* )` | 在数组末尾添加元素并返回新长度\
+  \ |\n| `reverse()` 反转数组中所有元素的顺序并返回每个元素的重排序后的值 |\n| `shift()` | 删除数组的第一个元素并返回其值 |\n\
+  \n\n\n\n\n| `slice( *begin , end* )` | 返回指定索引位置之间的元素，如果未指定结束位置，则返回数组的末尾 |\n| `sort(\
+  \ )` | 将数组中的所有元素按字母顺序或数字顺序进行排序，并返回每个元素重排序后的值 |\n| `splice( *position , number, value,\
+  \ value* )` | 从指定的索引位置开始替换指定数量的元素值，并返回被替换的值 |\n| `unshift( *value , value* )` |\
+  \ 在数组开头添加元素并返回新长度 |\n\n当 `push( )` 或 `unshift()` 方法未指定任何值时，会向数组中添加一个单一空元素。可以为 `push()`、`unshift()`\
+  \ 和 `splice()` 方法指定一个用逗号分隔的值列表来更改多个元素。\n\n![image](img/hot.jpg)\n\n`join( )` 方法在将大量元素值合并为单个字符串时速度更快，但\
+  \ `+` 拼接运算符在合并少数几个元素值时速度更快。\n\n![image](img/snake.jpg)\n\n`slice( )` 方法返回直到可选的结束索引位置但不包括该位置在内的元素值。\n\
+  \n![image](img/1p.jpg)创建一个带有自执行函数的 HTML 文档，该函数首先创建一个数组\n\n```\nlet seasons = [ ‘Spring’,\
+  \ ‘Summer’, ‘Fall’, ‘Winter’ ]\nconsole.log( ‘Elements: ‘ + seasons )\n```\n\n![image](img/htmlp.jpg)\n\
+  \nslice.html\n\n![image](img/2p.jpg)接下来，输出修改后的元素列表\n\n```\nconsole.log( ‘Joined:\
+  \ ‘ + seasons.join( ‘ & ‘ ) )\n```\n\n![image](img/3p.jpg)现在，从数组中提取最后一个元素\n\n```\n\
+  console.log( ‘Popped: ‘ + seasons.pop( ) )\nconsole.log( ‘Elements: ‘ + seasons\
+  \ )\n```\n\n![image](img/4p.jpg)然后，将最后一个元素放回数组\n\n```javascript\nconsole.log( ‘Pushed:\
+  \ ‘ + seasons.push( ‘Winter’ ) )\nconsole.log( ‘Elements: ‘ + seasons )\n```\n\n\
+  ![image](img/5p.jpg)接下来，仅输出两个元素值\n\n```javascript\nconsole.log( ‘Sliced: ‘ + seasons.slice(\
+  \ 1, 3 ) )\n```\n\n![image](img/6p.jpg)最后，替换第三个元素的值\n\n```javascript\nconsole.log(\
+  \ ‘Spliced: ‘ + seasons.splice( 2, 1, ‘Autumn’ ) )\nconsole.log( ‘Elements: ‘ +\
+  \ seasons )\n```\n\n![image](img/7p.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看操作后的元素\n\n\
+  ![image](img/pg75_1.jpg)\n\n![image](img/hot.jpg)\n\n不使用 `slice( )` 方法（此处原文似乎不完整，根据上下文推测为“使用\
+  \ slice( ) 方法不...”）[注：由于提供的原文文本后半部分存在大量乱码或重复逻辑，此处已根据逻辑对对有效部分进行了翻译。]\n\n\n\n\n计算机日期和时间以数值形式测量，即自\
+  \ 1970 年 1 月 1 日 00:00:00 以来的已时间——该点通常被称为“纪元”（epoch）。在 JavaScript 中，已时间被记录为自 `epoch`\
+  \ 以来的毫秒数。可以使用 `Date` 对象的 `getTime()` 方法提取此数字，并可能将其减去另一个 `Date` 对象的数值，以计算脚本中两个时间点之间的间隔时间——例如，计算执行循环所需的时间。\n\
+  \n可以使用 `toString()` 方法提取 `Date` 对象中各个组件的字符串，或者使用 `toUTCString()` 方法将其转换为 UTC 时间的等效字符串。\n\
+  \n在系统已正确设置为本地时间的情况下，JavaScript 可以通过检查当前 `Date` 对象的 `getTimezoneOffset()` 方法返回的值，确定用户所在的时区。该方法返回一个整数值，表示当前本地时间与\
+  \ UTC 时间的分钟差。之所以以分钟而不是小时进行计算，是因为某些时区的偏移量不是一小时的间隔——例如，加拿大的纽芬兰岛在夏令时期间为 UTC -3:30。\n\
+  \n时区偏移值可用于为美国时区提供本地化，但在夏令时期间必须减去 60（分钟）。示例调用了 `Date` 对象的 `getMonth()` 和 `getDate()`\
+  \ 方法，如果当前日期处于夏令时期间，则调整时区偏移值。\n\n![image](img/hot.jpg)\n\n更多示例请参见 #chapter04.xhtml，其中演示了如何通过调用\
+  \ `Date` 对象的方法来使用其组件。\n\n![image](img/1p.jpg)\n\n创建一个 HTML 文档，包含一个自执行函数，开始初始化三个变量\n\
+  \n```javascript\nconst now = new Date()\nlet offset = now.getTimezoneOffset()\n\
+  let dst = 60\n```\n\n![image](img/htmlp.jpg)\ndate.html\n\n![image](img/2p.jpg)\n\
+  \n接下来，添加语句在 11 月 3 日至 3 月 10 日之间关闭夏令时\n\n```javascript\nif (now.getMonth() < 3 &&\
+  \ now.getDate() < 10) {\n    dst = 0\n}\nif (now.getMonth() > 9 && now.getDate()\
+  \ > 2) {\n    dst = 0\n}\n```\n\n![image](img/3p.jpg)\n\n现在，添加一条语句来建立时区\n\n```javascript\n\
+  switch (offset) {\n    case 300:\n        offset = 'East Coast';\n        break;\n\
+  \    case 360:\n        offset = 'Central';\n        break;\n    case 420:\n   \
+  \     offset = 'Mountain';\n        break;\n    case 480:\n        offset = 'Pacific';\n\
+  \        break;\n    default:\n        offset = 'All';\n}\n```\n\n![image](img/4p.jpg)\n\
+  \n最后，添加语句输出日期时间信息以及适当的问候消息\n\n```javascript\nconsole.log('System Time: ' + now.toString())\n\
+  console.log('UTC (GMT) Time: ' + now.toUTCString())\nconsole.log('Welcome to ' +\
+  \ offset + ' Visitors')\n```\n\n![image](img/5p.jpg)\n\n保存 HTML 文档，然后在浏览器中打开它并启动控制台查看元素\n\
+  \n![image](img/pg79.jpg)\n\n![image](img/snake.jpg)\n\n`getMonth()` 方法返回一个从零开始的索引数字，其中三月的位置是\
+  \ 2——更多信息请参见下一个示例 #chapter04.xhtml。\n\n![image](img/hot.jpg)\n\n发现用户的本地时区可用于引导浏览器进入与该时区相关的页面——例如，为太平洋时区的用户显示一个仅包含加州经销商的页面。但请注意，系统时间信息可以被用户轻松更改为任何时间、日期或时区，因此不一定反映其实际位置。\n\
+  \n### 提取日历\n\nJavaScript `Date` 对象提供了独立的方法来提取其每个日期组件，包括年份、月份名称、日期和星期名：\n\n![image](img/pg80_1.jpg)\n\
+  \n| 方法 | 返回值 |\n| :--- | :--- |\n| `getFullYear()` | 四位数的年份 (yyyy) |\n| `getMonth()`\
+  \ | 月份索引数字 (0-11) |\n| `getDate()` | 日期数字 (1-31) |\n| `getDay()` | 星期几索引数字 (0-6)\
+  \ |\n\n`Date` 对象的 `getFullYear()` 方法返回四位数的年份（例如 2025），而 `Date` 对象的 `getDate()` 方法返回月份中的日期数字——因此在每月的第一天，它返回\
+  \ 1。\n\n出于国际化的考虑，`getMonth()` 和 `getDay()` 返回的是索引值，必须由脚本转换为本地语言的月份和星期名称。对于月份名称，这种转换很容易实现：创建一个包含所有月份名称的数组（从一月开始），然后使用\
+  \ `getMonth()` 返回的索引数字从数组元素中引用相应的月份名称。\n\n同样，星期名的转换也是通过创建一个所有星期名称的数组（从星期日开始），然后使用\
+  \ `getDay()` 方法返回的索引数字从数组元素中引用相应的星期名。\n\n可以将各种组件组合成按照任何区域偏好日期格式排列的日期字符串。\n\n![image](img/1p.jpg)\n\
+  \n创建一个 HTML 文档，包含一个自执行函数，开始初始化三个变量\n\n```javascript\nconst days = ['Sun', 'Mon',\
+  \ 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']\nconst months = ['Jan', 'Feb', 'Mar', 'Apr',\
+  \ 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']\nconst now = new Date()\n\
+  ```\n\n![image](img/htmlp.jpg)\ndate.html\n\n![image](img/2p.jpg)\n\n接下来，添加语句使用\
+  \ `Date` 对象提取各个组件\n\n```javascript\nlet year = now.getFullYear()\nlet month = now.getMonth()\n\
+  let dayNumber = now.getDate()\nlet dayName = now.getDay()\n```\n\n![image](img/3p.jpg)\n\
+  \n现在，添加语句将索引数字转换为月份名称和星期名称\n\n```javascript\nlet monthName = months[month]\nlet\
+  \ dayName = days[dayName]\n```\n\n![image](img/4p.jpg)\n\n然后将日期组件拼接成日期字符串——包括美式和英式格式\n\
+  \n```javascript\nlet usDate = monthName + ' ' + dayNumber + ', ' + year\nlet ukDate\
+  \ = dayName + ', ' + monthName + ' ' + year\n```\n\n![image](img/5p.jpg)\n\n最后，添加语句输出日期字符串\n\
+  \n```javascript\nconsole.log('U.S. Date: ' + usDate)\nconsole.log('U.K. Date: '\
+  \ + ukDate)\n```\n\n\n\n\n## Date 对象操作\n\n`Date` 对象的时间组件基于用户的系统时间，而该时间可能并不准确。\n\n\
+  ![image](img/1p.jpg)\n\n创建一个 HTML 文档，包含一个自执行函数，该函数从初始化变量开始\n\n```javascript\nconst\
+  \ now = new Date()\nlet hour = now.getHours()\nlet minute = now.getMinutes()\nlet\
+  \ second = now.getSeconds()\nlet millisecond = now.getMilliseconds()\n```\n\n![image](img/htmlp.jpg)\n\
+  time.html\n\n## 设置日期\n\n接下来，添加语句为小于 10 的分钟和秒值前加上一个零：\n\n```javascript\nif (minute\
+  \ < 10) { minute = '0' + minute }\nif (second < 10) { second = '0' + second }\n\
+  ```\n\n![image](img/2p.jpg)\n\n现在，将时间组件拼接成字符串，然后输出该字符串：\n\n```javascript\nlet time\
+  \ = 'It is now: ' + hour + ':' + minute + ':' + second + '.' + millisecond\nconsole.log(time)\n\
+  ```\n\n![image](img/3p.jpg)\n\n然后，输出与当前时间合适的问候语：\n\n```javascript\nlet greeting\
+  \ = 'Morning!'\nif (hour > 12) { greeting = 'Afternoon!' }\nif (hour > 17) { greeting\
+  \ = 'Evening!' }\nconsole.log(greeting)\n```\n\n![image](img/4p.jpg)\n\n最后，以 12\
+  \ 小时格式输出时间：\n\n```javascript\nlet suffix = (hour > 11) ? 'P.M.' : 'A.M.'\nif (hour\
+  \ > 12) { hour -= 12 }\nconsole.log('Time is: ' + hour + ':' + minute + suffix)\n\
+  ```\n\n![image](img/5p.jpg)\n保存该 HTML 文档，然后在浏览器中打开并启动控制台查看格式化的时间字符串。\n\n![image](img/pg85_1.jpg)\n\
+  ![image](img/hot.jpg)\n\n`Date` 对象还提供了方法来获取每个日期和时间组件的 UTC 等值——例如方法 `getUTCHours()`\
+  \ 和 `getUTCMinutes()`。\n\n## 设置日期 (Set Dates)\n\nJavaScript 的 `Date()` 构造函数可以可选指定七个参数来设置每个组件的值：\n\
+  \n```javascript\nnew Date(year, month, date, hours, minutes, seconds, milliseconds)\n\
+  ```\n\n![image](img/84.jpg)\n\n当只指定年份和月份时，日期组件被设置为 1，所有时间组件被设置为 0。`Date` 对象提供了独立的方法来指定每个日期和时间组件的值：\n\
+  \n| 方法 | 设置内容 |\n| :--- | :--- |\n| `setDate()` | 日期数字 (1-31) |\n| `setFullYear()`\
+  \ | 四位年份 (yyyy) |\n| `setMonth()` | 月份数字 (0-11) |\n| `setHours()` | 小时数字 (0-23)\
+  \ |\n| `setMinutes()` | 分钟数字 (0-59) |\n| `setSeconds()` | 秒数字 (0-59) |\n| `setMilliseconds()`\
+  \ | 毫秒数字 (0-999) |\n\n`setMonth()` 方法在数值范围内设置月份，其中 0=一月-11=十二月，此外，`setFullYear()`\
+  \ 方法也可以使用此语法设置月份和日期：\n\n```javascript\ndate.setFullYear(year, monthNumber, dayNumber)\n\
+  ```\n\n通过显示整个 Date 对象可以显示每个组件的值。此外，所有 Date 对象都具有方法来输出显示日期和时间的各种字符串：\n\n- `toString()`\
+  \ 将日期转换为字符串值\n- `toUTCString()` 将日期转换为其 UTC 等值\n- `toLocaleString()` 使用计算机的本地化习惯显示日期\n\
+  - `toDateString()` 和 `toTimeString()` 可以显示日期和时间组件\n\n![image](img/hot.jpg)\n\n###\
+  \ 示例：修改特定日期\n\n创建一个 HTML 文档，包含一个自执行函数，该函数从创建一个 7 月 4 日的 `Date` 对象开始：\n\n```javascript\n\
+  const holiday = new Date(2025, 6, 4)\nconsole.log('Object: ' + holiday)\n```\n\n\
+  ![image](img/htmlp.jpg)\nsetdate.html\n\n接下来，添加语句修改单个日期组件，使其成为中午的圣诞节：\n\n```javascript\n\
+  holiday.setFullYear(2028)\nholiday.setMonth(11)\nholiday.setDate(25)\nholiday.setHours(12)\n\
+  holiday.setMinutes(0)\nholiday.setSeconds(0)\nholiday.setMilliseconds(0)\n```\n\n\
+  ![image](img/3p.jpg)\n\n现在，添加语句输出修改后的日期和时间及其对应的 UTC (GMT) 时间：\n\n```javascript\n\
+  console.log('String: ' + holiday.toString())\nconsole.log('UTC: ' + holiday.toUTCString())\n\
+  ```\n\n![image](img/4p.jpg)\n\n然后，添加语句以本地化字符串、日期字符串和时间字符串格式输出修改后的日期和时间：\n\n```javascript\n\
+  console.log('Locale: ' + holiday.toLocaleString())\nconsole.log('Date: ' + holiday.toDateString())\n\
+  console.log('Time: ' + holiday.toTimeString())\n```\n\n![image](img/5p.jpg)\n\n\
+  `Date` 对象还有一个 `setTime()` 方法，它接受自纪元以来的毫秒数作为参数——每天有 86,400,000 毫秒，因此 `setTime(86400000)`\
+  \ 将日期设置为 1970 年 1 月 1 日。\n\n## 匹配模式 (Match Patterns)\n\n`RegExp` 对象是 JavaScript\
+  \ 的内置对象，可以包含“正则表达式”。\n\n![image](img/hot.jpg)\n\n正则表达式模式可能完全由字面字符组成。例如，`/wind/`\
+  \ 匹配 \"windows\"。\n\n| 元字符 | 匹配内容 | 示例 |\n| :--- | :--- | :--- |\n| `.` | 任意字符 |\
+  \ `..` |\n| `^` | 起始字符 | `^ja` |\n| `$` | 结尾字符 | `ja$` |\n| `*` | 零或多次重复 | `ja*`\
+  \ |\n| `+` | 一或多次重复 | `ja+` |\n| `?` | 零或一次重复 | `ja?` |\n| `{ }` | 多次重复 | `ja{3\
+  \ }` |\n| `[ ]` | 字符类 | `[a-z]` |\n| `\\` | 任意数字 | `\\d` |\n| `\\|` | 或或可选字符 | `a\\\
+  |b` |\n| `( )` | 表达式分组 | `( )` |\n\n模式还可以在最后一个 `/` 之后包含 `i` 修饰符以执行不区分大小写的搜索，或者包含\
+  \ `g` 修饰符以对所有匹配执行全局搜索。\n\n![image](img/snake.jpg)\n\n`RegExp` 对象有一个 `test()` 方法，找到匹配时返回\
+  \ true，返回 false。`RegExp` 对象还有一个 `exec()` 方法，在未找到匹配时返回 `null` 值，在搜索成功时返回找到的文本，其 `index`\
+  \ 属性包含匹配开始的字符位置。\n\n### 示例：正则表达式测试\n\n创建一个 HTML 文档，包含一个自执行函数，该函数从初始化变量开始：\n\n```javascript\n\
+  const system = 'Windows', suite = 'Office', pattern = /ice/i\n```\n\n```javascript\n\
+  console.log('In ' + system + '? ' + pattern.test(system))\nconsole.log('In ' + suite\
+  \ + '? ' + pattern.test(suite))\n```\n\n\n\n\n\n![image](img/4p.jpg)然后，添加语句来输出验证格式错误的电子邮件地址的尝试结果。\n\
+  \n```javascript\nlet email = ‘mike@example’\n```\n\n```javascript\nconst format\
+  \ = /.+\\@.+\\..+/**\n```\n\n```javascript\nconsole.log( email + ‘ Valid? ‘ + format.test(\
+  \ email ) )\n```\n\n![image](img/snake.jpg)\n\n这里使用的正则表达式仅测试了最基本的电子邮件格式要求。\n\n![image](img/5p.jpg)最后，添加语句来纠正地址格式并输出验证结果。\n\
+  \n```javascript\nemail += ‘.com’\n```\n\n```javascript\nconsole.log( email + ‘ Valid?\
+  \ ‘ + format.test( email ) )\n```\n\n![image](img/6.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看正则表达式的匹配情况。\n\
+  \n![image](img/pg87_1.jpg)\n\n![image](img/hot.jpg)\n\n字符索引从零开始，所以第四个字符位于索引位置 3。\n\
+  \n## 总结\n\n- 值以逗号分隔的`名称:值`列表形式赋值给自定义对象，位于 `{ }` 大括号内。\n- 对象属性可以使用点符号语法或通过在`[ ]`\
+  \ 方括号中加引号的名称来引用。\n- 通过在对象方法名后附加 `( )` 括号来调用对象方法。\n- `this` 关键字可以在对象方法定义中使用，指向拥有该方法的对象。\n\
+  - 可以通过使用点符号语法引用属性并赋值新值来扩展自定义对象。\n- 可以使用 `for in` 循环列出对象的所有属性名和方法名。\n- 所有 JavaScript\
+  \ 内置对象都从顶层的 `Object.prototype` 对象继承属性和方法。\n- JavaScript 内置的 `Array` 对象将项目存储在单独的元素中，元素从零开始编号。\n\
+  - 值可以以`[ ]` 方括号内的逗号分隔列表形式赋值给数组。\n- 通过在对象名后将索引数字封装在 `[ ]` 方括号中来引用数组元素中的值。\n- 每个 `Array`\
+  \ 对象都有一个 `length` 属性和可以操作数组中元素的方法。\n- JavaScript 内置的 `Date` 对象提供了单独的方法来提取每个日期和时间分量。\n\
+  - JavaScript `Date()` 构造函数可以可选指定二到七个参数，为每个分量设置值。\n- `Date` 对象还提供了单独的方法分别设置每个日期和时间分量的值。\n\
+  - JavaScript 内置的 `RegExp` 对象可以包含一个描述字符字符串的正则表达式模式。\n- `RegExp` 对象拥有 `test()` 和 `exec()`\
+  \ 方法，用于在指定的字符串参数中搜索与其模式匹配的内容。\n\n## 5 控制数字与字符串\n\n**本章描述并演示了 JavaScript 内置 `Math`\
+  \ 和 `String` 对象的方法。**\n\n- 计算面积\n- 比较数字\n- 小数舍舍入\n- 生成随机数\n- 合并字符串\n- 分割字符串\n- 查找字符\n\
+  - 修剪字符串\n- 总结\n\n## 计算面积\n\n![image](img/pg90_1.jpg)\n\nJavaScript 有一个内置的 `Math`\
+  \ 对象，提供了许多实用的方法和数学常量。常量列在下表中，以及它们的近似值：\n\n| 常量 | 描述 |\n| :--- | :--- |\n| `Math.E`\
+  \ | 常数 E，自然对数的底，近似值为 2.71828 |\n| `Math.LN2` | 2 的自然对数，近似值为 0.69315 |\n| `Math.LN10`\
+  \ | 10 的自然对数，近似值为 2.30259 |\n| `Math.LOG2E` | 常数 E 的以 2 为底的数，近似值为 1.44269 |\n| `Math.LOG10E`\
+  \ | 常数 E 的以十数为底的数，近似值为 0.43429 |\n| `Math.PI` | 常数 PI，近似值为 3.14159 |\n| `Math.SQRT1_2`\
+  \ | 0.5 的平方根，近似值为 0.70711 |\n| `Math.SQRT2` | 2 的平方根，近似值为 1.41421 |\n\n不需要创建 `Math`\
+  \ 对象的实例，因为它默认全局可用，因此在脚本的任何地方都可以通过 `Math` 对象和点符号语法访问 `Math` 常量和方法。\n\n`Math` 常量主要用于具有特定数学目的的脚本，但为了完整，上面列出了所有\
+  \ `Math` 常量。\n\n![image](img/hot.jpg)\n\n所有的 `Math` 方法可以在这里查看。\n\n![image](img/1o.jpg)创建一个自执行函数的\
+  \ HTML 文档，该函数从初始化变量开始。\n\n```javascript\nlet radius = 4\n```\n\n```javascript\n\
+  console.log( ‘\\nRadius of Circle: ‘ + radius )\n```\n\n![image](img/htmlo.jpg)\n\
+  \nconstants.html\n\n![image](img/2o.jpg)接下来，添加语句执行数学计算并在输出中显示结果。\n\n```javascript\n\
+  let area = Math.PI * ( radius * radius )\n```\n\n```javascript\nconsole.log( ‘\\\
+  nArea of Circle: ‘ + area )\n```\n\n![image](img/3o.jpg)现在，添加语句执行另一个数学计算并在输出中显示结果。\n\
+  \n```javascript\nlet circumference = 2 * ( Math.PI * radius )\n```\n\n```javascript\n\
+  console.log( ‘\\nPerimeter of Circle: ‘ + circumference )\n```\n\n![image](img/4o.jpg)然后，添加语句执行最后的数学计算并在输出中显示结果。\n\
+  \n```javascript\nlet cube = ( radius * radius * radius )\n```\n\n```javascript\n\
+  let volume = ( ( 4 / 3 ) * Math.PI ) * cube\n```\n\n```javascript\nconsole.log(\
+  \ ‘\\nVolume of Sphere: ‘ + volume )\n```\n\n![image](img/5o.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台查看数学结果。\n\
+  \n![image](img/pg91_1.jpg)\n\n![image](img/snake.jpg)\n\n所有的 `Math` 常量名必须大写——例如，确保使用\
+  \ `Math.PI` 而不是 `Math.pi`。\n\n## 比较数字\n\n![image](img/pg92_1.jpg)\n\n内置的 `Math`\
+  \ 对象提供了这些有用的方法：\n\n| 方法 | 返回 |\n| :--- | :--- |\n| `Math.abs()` | 绝对值 |\n| `Math.acos()`\
+  \ | 弧余弦值 |\n| `Math.asin()` | 弧正弦值 |\n| `Math.atan()` | 弧正切值 |\n| `Math.atan2()`\
+  \ | 来自 X 轴点的角度 |\n| `Math.ceil()` | 向上取整的值 |\n| `Math.cos()` | 余弦值 |\n| `Math.exp()`\
+  \ | 常数 E 的指数 |\n| `Math.floor()` | 向下取整的值 |\n| `Math.log()` | 自然对数值 |\n| `Math.max()`\
+  \ | 两个数字中较大的 |\n| `Math.min()` | 两个数字中较小的 |\n| `Math.pow()` | 幂值 |\n| `Math.random()`\
+  \ | 伪随机数 |\n| `Math.round()` | 最近的整数值 |\n| `Math.sin()` | 正弦值 |\n| `Math.sqrt()`\
+  \ | 平方根值 |\n| `Math.tan()` | 正切值 |\n\n![image](img/1o.jpg)创建一个自执行函数的 HTML 文档，该函数从初始化两个变量开始。\n\
+  \n```javascript\nlet square = Math.pow( 5, 2 ) // 5 的 2 次方幂 ( 5 x 5 )\n```\n\n```javascript\n\
+  let cube = Math.pow( 4, 3 ) // 4 的 3 次方幂 ( 4 x 4 x 4 )\n```\n\n![image](img/htmlo.jpg)\n\
+  \nmath.html\n\n![image](img/2o.jpg)接下来，添加语句在输出中显示这两个正变量值中的最大值最小值。\n\n```javascript\n\
+  console.log( ‘\\nLargest Positive: ‘ + Math.max( square, cube ) )\n```\n\n```javascript\n\
+  console.log( ‘\\nSmallest Positive: ‘ + Math.min( square, cube ) )\n```\n\n![image](img/3o.jpg)现在，添加语句反转每个变量的数值极性——将正值变为负值。\n\
+  \n```javascript\nsquare *= -1\n```\n\n```javascript\ncube *= -1\n```\n\n![image](img/4o.jpg)然后，添加语句在输出中显示这两个负变量值中的最大值最小值。\n\
+  \n```javascript\nconsole.log( ‘\\nLargest Negative: ‘ + Math.max( square, cube )\
+  \ )\n```\n\n```javascript\nconsole.log( ‘\\nSmallest Negative: ‘ + Math.min( square,\
+  \ cube ) )\n```\n\n\n\n\n\n![image](img/forget.jpg)\n\n最大的负值是最接近零的那个。\n\n## 小数舍入\n\
+  \nJavaScript 内置的 `Math` 对象提供了三种方法将浮点数舍入为整数值。每个方法都接受浮点值作为参数并返回一个整数。`Math.ceil()`\
+  \ 方法向上舍入，`Math.floor()` 方法向下舍入，而 `Math.round()` 方法则四舍五入到最近的整数。\n\n![image](img/pg94_1.jpg)\n\
+  \n在处理浮点数时，识别出 IEEE（电气与电子工程师学会）定义的流行计算机浮点数数学标准与通常接受的数学准确性之间存在差异是非常重要的。这是因为某些十进制数字无法精确转换为二进制形式。例如，小数\
+  \ `81.66` 无法精确转换为二进制——因此表达式 `81.66 * 15` 返回的是 `1224.8999999999999`，而不是数学上准确的数字 `1224.9`。\n\
+  \n某些编程语言提供自动舍入功能来克服浮点数差异，但 JavaScript 没有，因此必须小心，特别是在处理货币值时，以避免数学错误结果。推荐的做法是先将浮点值乘以\
+  \ `100`，然后进行算术运算，最后将结果除以 `100` 以返回相同的小数位。\n\n可以使用类似的步骤将长浮点数转换为两位小数。在将值乘以 `100` 后，可以使用\
+  \ `Math.round()` 方法对该值进行舍入，然后除以零返回两位小数。\n\n乘、运算、除的步骤可以写为单独步骤，也可以使用括号在单个简洁的表达式中确定顺序。例如，将名为\
+  \ `num` 的变量中的长浮点数可以写写：\n\n```javascript\nnum = num * 100\nnum = Math.round( num\
+  \ )\nnum /= 100\n```\n\n或者写为：\n\n```javascript\nnum = ( Math.round( num * 100 )\
+  \ ) / 100\n```\n\n![image](img/hot.jpg)\n\n`Math.round()` 方法默认向上舍入——因此 `Math.round(\
+  \ 7.5 )` 返回 8 而不是 7，而 `Math.round( -7.5 )` 返回 -7 而不是 -8。\n\n![image](img/1o.jpg)创建一个带有自执行函数的\
+  \ HTML 文档，从初始化变量开始\n\n```javascript\nlet bodyTemp = 98.6\n```\n\n![image](img/htmlo.jpg)\n\
+  \nround.html\n\n![image](img/2o.jpg)接下来，添加语句显示与浮点值最接近的整数\n\n```javascript\nconsole.log(\
+  \ ‘Ceiling: ‘ + Math.ceil( bodyTemp ) )\nconsole.log( ‘Floor: ‘ + Math.floor( bodyTemp\
+  \ ) )\nconsole.log( ‘Round: ‘ + Math.round( bodyTemp ) )\n```\n\n![image](img/3o.jpg)现在，添加语句显示表达式的错误计算结果及其后的等值结果\n\
+  \n```javascript\nconsole.log( ‘\\nImprecision: ‘ + ( 81.66 * 15 ) )\nconsole.log(\
+  \ ‘Corrected: ‘ + ( ( 81.66 * 100 ) / 100 ) )\n```\n\n![image](img/4o.jpg)然后，添加语句显示长浮点值及其转换后的等值结果\n\
+  \n```javascript\nconsole.log( ‘\\nFloat: ‘ + Math.PI )\nconsole.log( ‘Commuted:\
+  \ ‘ + ( Math.round ( Math.PI * 100 ) / 100 ) )\n```\n\n![image](img/5o.jpg)保存 HTML\
+  \ 文档，然后在浏览器中打开它并启动控制台查看舍入后的数字\n\n![image](img/pg95_1.jpg)\n\n![image](img/forget.jpg)最内层括号中的表达式优先计算。\n\
+  \n## 生成随机数\n\nJavaScript 的 `Math.random()` 方法返回一个 `0.0` 到 `1.0` 之间的随机点数。它可以用于各种需要随机数的网页效果。乘以浮点值会增加其范围。例如，将其乘以\
+  \ `10` 会将范围扩大到 `0.0-10.0`。\n\n![image](img/pg96_1.jpg)\n\n通常，使用 `Math.ceil()` 方法将随机值向上舍入是有用的，这样范围就变成了\
+  \ `1-10`。指定随机数范围的过程可以写为单独步骤，也可以使用括号在单个表达式中确定顺序。例如，为名为 `rand` 的变量指定 `1-10` 的范围可以写为：\n\
+  \n```javascript\nlet rand = Math.random()\nrand *= 10\nrand = Math.ceil( rand )\n\
+  ```\n\n或者写为：\n\n```javascript\nlet rand = Math.ceil( Math.random() * 10 )\n```\n\
+  \n在指定的范围内可以生成一系列唯一的随机数。例如，在 `1-59` 范围内产生随机彩票号码：\n\n![image](img/1o.jpg)创建一个带有自执行函数的\
+  \ HTML 文档，从声明变量开始\n\n```javascript\nlet i, rand, temp, nums = []\nlet str = ‘\\\
+  nYour Lucky Numbers: ‘\n```\n\n![image](img/htmlo.jpg)\n\nrandom.html\n\n![image](img/2o.jpg)接下来，添加一个循环将数组元素\
+  \ `1-59` 填充为相应的索引号\n\n```javascript\nfor( i = 1 ; i < 60 ; i ) { nums[ i ] = i }\n\
+  ```\n\n![image](img/3o.jpg)现在，添加循环使数组元素中的数字随机化\n\n```javascript\nfor( i = 1 ; i\
+  \ < 60 ; i ) {\n  rand = Math.ceil( Math.random() * 59 )\n  temp = nums[ i ]\n \
+  \ nums[ i ] = nums[ rand ]\n  nums[ rand ] = temp\n}\n```\n\n![image](img/hot.jpg)步骤\
+  \ 3 包含一个洗牌算法，并确保没有两个元素包含相同的数字。\n\n![image](img/4o.jpg)然后，添加循环将包含六个元素值的连字符列表追加到字符串变量\n\
+  \n```javascript\nfor( i = 1 ; i < 7 ; i ) {\n  str += nums[ i ]\n  if( i !== 6 )\
+  \ { str += ‘ - ‘ }\n}\n```\n\n![image](img/5o.jpg)最后，添加语句输出字符串变量\n\n```javascript\n\
+  console.log( str )\n```\n\n![image](img/6o.jpg)保存 HTML 文档，然后在浏览器中打开它并启动控制台，每次执行脚本都会看到指定范围内唯一的随机数选择。\n\
+  \n![image](img/pg97_1.jpg)\n\n![image](img/pg97_2.jpg)这里，随机数在 `1` 到 `59` 范围内——用于玩英国乐透或美国纽约乐透。\n\
+  \n![image](img/pg97_3.jpg)\n\n## 并字符串\n\nJavaScript 有一个 `String` 对象，提供了操作字符串值的有用方法。然而，没有需要使用\
+  \ `new` 关键字和 `String()` 构造函数创建 `String` 对象的实例，因为其方法可以直接使用点表示法应用于字符串变量。例如，`str.toUpperCase()`\
+  \ 返回名为 `str` 的字符串变量中所有字符的大写形式，而 `str.toLowerCase()` 则返回其所有字符的小写形式。\n\n![image](img/pg98_1.jpg)\n\
+  \n还有一个 `length` 属性，用于存储字符串中的字符总数。\n\n之前列出的许多示例使用 `+` 拼接运算符来合并多个字符串，但也可以使用字符串 `concat()`\
+  \ 方法以逗号分隔的参数列表的形式追加一个或多个字符串。\n\n某些脚本作者使用内置函数 `eval()` 来合并字符串和变量——但绝对应该避免这样做。`eval()`\
+  \ 函数直接调用 JavaScript 编译器将其字符串参数编译为 JavaScript 语句：\n\n- 如果字符串表示一个表达式，`eval()` 将计算该表达式——例如\
+  \ `eval('1 + 1')` 返回 `2`。\n- 如果字符串表示一个语句或一系列语句，`eval()` 将计算最后一个语句——例如代码 `eval('let\
+  \ num = 100 ; alert( num )')` 会产生一个警告对话框。\n\n![image](img/pg98_2.jpg)\n\n这种 `eval()`\
+  \ 的用法会在脚本性能上产生巨大代价，并且在几乎所有情况下都是必要的，因为通常有更高效、更优雅的解决方案。此外，如果脚本允许用户输入作为 JavaScript\
+  \ 指令进行评估，`eval()` 函数可能会产生影响。这提供了执行恶意代码的机会。例如，代码 `eval('while( true) ; alert( )')`\
+  \ 将产生导致浏览器锁死的无限循环。\n\n![image](img/snake.jpg)\n\n\n\n\n\n避免使用 `eval()` 函数，因为“eval\
+  \ 是邪恶的”。\n\n![image](img/1o.jpg)\n\n创建一个 HTML 文档，包含一个自执行函数，并开始声明三个变量\n\n```javascriptlet\
+  \ topic = ‘JavaScript’\nlet series = ‘in easy steps’\nlet title = ‘‘\n```\n\n![image](img/htmlo.jpg)\n\
+  \nstring.html\n\n![image](img/2o.jpg)\n\n接下来，添加语句显示前两个字符串变量值转换大小写后的版本\n\n```javascript\n\
+  console.log( topic + ‘ > ‘ + topic.toLowerCase( ) )\nconsole.log( series + ‘ > ‘\
+  \ + series.toUpperCase( ) )\n```\n\n![image](img/3o.jpg)\n\n现在，添加语句将空格和第二个字符串附加到第一个字符串，然后将其赋值给第三个变量并输出拼接后的字符串\n\
+  \n```javascript\ntitle = topic.concat( ‘ ‘, series )\nconsole.log( ‘Title: ‘ + title\
+  \ )\n```\n\n![image](img/4o.jpg)\n\n然后，添加语句在输出中显示每个字符串的长度\n\n```javascript\nconsole.log(\
+  \ ‘\\n’ + topic + ‘ - Length: ‘ + topic.length )\nconsole.log( series + ‘ - Length:\
+  \ ‘ + series.length )\nconsole.log( title + ‘ - Length: ‘ + title.length )\n```\n\
+  \n![image](img/5o.jpg)\n\n保存 HTML 文档，然后在浏览器中打开它并启动控制台查看字符串输出\n\n![image](img/pg99_1.jpg)\n\
+  \n## 分割字符串\n\n有几种字符串方法允许从完整字符串中复制指定的某个部分。这些方法将每个字符串视为数组，其中每个元素包含一个字符或一个空格，可以通过它们的索引位置引用。与数组一样，字符串索引是从零开始的，因此第一个字符位于位置零。\n\
+  \n![image](img/pg100_1.jpg)\n\n通过将其索引位置作为字符串的 `substring()` 方法的参数，可以指定开始复制“子字符串”的起点。这将复制该位置之后直到字符串末尾的所有字符。可选，可以为字符串的\
+  \ `substring()` 方法提供第二个参数，以指定随后的索引位置作为子字符串的结束。这将复制起始和结束位置之间的所有字符。\n\n字符串 `substr()`\
+  \ 方法提供了另一种复制子字符串的方法。与 `substring()` 方法类似，它可以接受一个参数来指定开始复制的索引位置，并将复制该位置之后直到字符串末尾的所有字符。与\
+  \ `substring()` 方法不同，`substr()` 方法可以可选地提供第二个参数，以指定起始位置后要复制的字符数。\n\n同样，可以使用字符串 `slice()`\
+  \ 方法来返回起始位置（由单个参数指定）之后的所有字符，或返回两个位置（由两个参数指定）之间的所有字符。\n\n有时复制由特定字符分隔的字符串部分是非常有用的。可以将分隔符指定为字符串\
+  \ `split()` 方法的参数，该方法将返回该字符出现处之间所有子字符串的数组。可选，`split()` 方法可以提供第二个参数来指定它应该返回的数组大小。在这种情况下，将返回指定分隔符之间的每个子字符串，直到达到限制为止，字符串的其余部分将被忽略。\n\
+  \n这些字符串方法都不会修改原始字符串，只是创建了原始字符串某个部分的副本。\n\n![image](img/hot.jpg)\n\n`substr()` 方法一向比\
+  \ `substring()` 方法更容易使用——因为你只需要计算起始位置和子字符串的长度，而不需要结束位置。\n\n![image](img/hot.jpg)\n\
+  \n`split()` 方法用于在示例此处 中分离 cookie 数据。\n\n![image](img/1o.jpg)\n\n创建一个 HTML 文档，包含一个自执行函数，并开始初始化一个变量\n\
+  \n```javascript\nlet definition = ‘JavaScript is the original dialect of \\ the\
+  \ ECMAScript standard language.’\n```\n\n![image](img/hot.jpg)\n\n反斜杠字符允许你在下一行继续字符串\n\
+  \n![image](img/htmlo.jpg)\n\nsplit.html\n\n![image](img/2o.jpg)\n\n接下来，添加语句将选定的字符串切片赋值给第二个变量，然后输出其值\n\
+  \n```javascript\nlet str = definition.slice( 0, 27 )\nstr += definition.slice( 62,\
+  \ 70 )\nconsole.log( str )\n```\n\n![image](img/3o.jpg)\n\n现在，添加语句输出切片的四个独立单词\n\n\
+  ```javascript\nconsole.log( str.split( ‘ ‘, 4 )\n```\n\n![image](img/4o.jpg)\n\n\
+  然后，添加语句将原始字符串的选定子字符串赋值给第二个变量，然后输出其值\n\n```javascript\nstr = definition.substring(\
+  \ 42, 52 )\nstr += definition.substring( 10, 17 )\nstr += definition.substr( 52,\
+  \ 70 )\nconsole.log( str )\n```\n\n![image](img/5o.jpg)\n\n保存 HTML 文档，然后在浏览器中打开它并启动控制台查看分割后的字符串输出\n\
+  \n![image](img/pg101_1.jpg)\n\n![image](img/forget.jpg)\n\n将 `''`（不带空格的空字符串）指定 `split()`\
+  \ 函数的分隔符以返回字符数组。\n\n## 查找字符\n\nJavaScript `String` 对象提供了许多方法，允许在字符串中搜索特定字符或子字符串。`search()`\
+  \ 方法接受子字符串作为参数，并返回它在搜索字符串中出现的位置，如果未找到则返回 -1。或者，可以将子字符串指定为 `match()` 方法的参数，如果它存在则返回该子字符串，如果不存在则返回\
+  \ JavaScript 的 `null` 值。\n\n![image](img/pg102_1.jpg)\n\n`indexOf()` 方法接受子字符串作为参数，并返回首次出现的索引。`lastIndexOf()`\
+  \ 工作原理相同，但它从字符串末尾向后搜索，报告最后一次出现。\n\n要发现字符串中特定索引位置的字符，可以将其索引值作为 `charAt()` 方法的参数，或者通过将其索引指定给\
+  \ `charCodeAt()` 方法来揭示其数值 Unicode 值。相反，可以将一个或多个 Unicode 值作为 `String.fromCharCode()`\
+  \ 方法的参数，以返回它们的字符值。\n\n此外，可以通过将字符或子字符串的值指定为 `replace()` 方法的第一个参数，并将替换值指定为第二个参数来替换所有出现的位置。\n\
+  \n![image](img/1o.jpg)\n\n创建一个 HTML 文档，包含一个自执行函数，并开始用字符串值初始化一个变量\n\n```javascript\n\
+  let str = ‘JavaScript in easy steps’\n```\n\n![image](img/htmlo.jpg)\n\nfind.html\n\
+  \n![image](img/2o.jpg)\n\n接下来，添加语句输出两个区分敏感字符串搜索的结果\n\n```javascript\nconsole.log(\
+  \ ‘”Script” Search: ‘ + str.search( ‘Script’ ) )\nconsole.log( ‘”script” Search:\
+  \ ‘ + str.search( ‘script’ ) )\n```\n\n![image](img/3o.jpg)\n\n现在，添加语句输出两个区分敏感字符串匹配的结果\n\
+  \n```javascript\nconsole.log( ‘\\n”Script” Match: ‘ + str.match( ‘Script’ ) )\n\
+  console.log( ‘”script” Match: ‘ + str.match( ‘script’ ) )\n```\n\n![image](img/snake.jpg)\n\
+  \n`null` 关键字不等同于零值，因为 `null` 没有任何值。\n\n![image](img/hot.jpg)\n\n使用双引号在单引号围绕的字符串中包含引号。\n\
+  \n![image](img/4o.jpg)\n\n添加语句，如果在字符串内找到字符，则输出该字符的和最后一个索引位置\n\n```javascript\nconsole.log(\
+  \ ‘\\nindexOf “s”: ‘ + str.indexOf( ‘s’ ) )\nconsole.log( ‘indexOf “m”: ‘ + str.indexOf(\
+  \ ‘m’ ) )\nconsole.log( ‘\\nlastIndexOf “s”: ‘ + str.lastIndexOf( ‘s’ ) )\nconsole.log(\
+  \ ‘lastIndexOf “m”: ‘ + str.lastIndexOf( ‘m’ ) )\n```\n\n![image](img/5o.jpg)\n\n\
+  然后，添加语句输出字符串中的第一个字符及其 Unicode 值，加上通过其 Unicode 值指定的四个字符。\n\n\n\n\n\n```javascript\n\
+  console.log( ‘\\ncharAt 0: ‘ + str.charAt( 0 ) )\n```\n\n```javascript\nconsole.log(\
+  \ ‘charCodeAt 0: ‘ + str.charCodeAt( 0 ) )\n```\n\n```javascript\nconsole.log( ‘fromCharCode:\
+  \ ‘ +\nString.fromCharCode( 74, 97, 118, 97 ) )\n```\n\n![image](img/6o.jpg)最后，添加语句来输出原始字符串及其修改后的版本。\n\
+  \n```javascript\nconsole.log( ‘\\nOriginal: ‘ + str )\n```\n\n```javascript\nconsole.log(\
+  \ ‘Replaced: ‘ + str.replace( ‘easy’, ‘simple’ ) )\n```\n\n![image](img/7o.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台以查看输出结果。\n\n![image](img/pg103_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \nUnicode 大写字母 A-Z 的值为 65-90，小写字母 a-z 的值为 97-122。\n\n![image](img/forget.jpg)\n\n\
+  `replace( )` 方法返回原始字符串的修改版本，但实际上不会改变原始字符串。\n\n### 修剪字符串\n\nJavaScript 的 `String`\
+  \ 对象提供了一个 `trim( )` 方法，可以移除字符串两端的空白字符。这对于确保用户输入不会意外包含空格、制表符或换行符特别有用。\n\n![image](img/pg104_1.jpg)\n\
+  \n从字符串中修剪空白后，你可以使用 `startsWith( )` 方法验证其开头字符，并使用 `endsWith( )` 方法验证其末尾字符。这些方法都接受字符或子字符串作为参数，并在字符串中进行区分大小的匹配。如果找到匹配，它们将返回\
+  \ `true`；否则如果没有找到匹配，将返回 `false`。\n\n可以通过在字符串变量名后的 `[ ]` 方括号中指定其索引位置来引用单个字符——例如使用\
+  \ `str[ 0 ]` 来引用名为“str”的变量中的第一个字母。\n\n你还可以通过指定字符或子字符串作为 `includes( )` 方法的参数，在字符串中进行区分大小的匹配。如果找到匹配，将返回\
+  \ `true`；否则如果没有找到匹配，将返回 `false`。\n\n如果你希望构建一个包含现有字符串多个副本的新字符串，只需为 `repeat( )` 方法指定一个整数参数，以确定现有字符串在新创建的字符串中重复的次数。\n\
+  \n![image](img/1o.jpg)创建一个 HTML 文档，其中包含自执行函数，该函数首先初始化一个变量——其值为一个两端带有空白字符的字符串。\n\n\
+  ```javascript\nlet str = ‘ Love For All, Hatred For None.  ;’\n```\n\n![image](img/htmlo.jpg)\n\
+  \ntrim.html\n\n![image](img/2o.jpg)接下来，添加语句输出字符串并测试它的开头和结尾。\n\n```javascript\nconsole.log(\
+  \ ‘String: ‘ + str )\n```\n\n```javascript\nconsole.log( ‘Starts With “L” ? ‘ +\
+  \ str.startsWith( ‘L’ ) )\n```\n\n```javascript\nconsole.log( ‘Ends With “.” ? ‘+str.endsWith(\
+  \ ‘.’ ) )\n```\n\n```javascript\nconsole.log( ‘First Letter: ‘ + str[ 0 ] )\n```\n\
+  \n![image](img/3o.jpg)现在，添加一条语句将修剪后的字符串赋值给变量。\n\n```javascript\nstr = str.trim(\
+  \ )\n```\n\n![image](img/hot.jpg)\n\n`split( )` 方法用于移除示例此处中 cookie 数据中的空白字符。\n\n\
+  ![image](img/4o.jpg)然后，添加语句输出修剪后的字符串并像之前一样测试它的开头和结尾。\n\n```javascript\nconsole.log(\
+  \ ‘Trimmed: ‘ + str )\n```\n\n```javascript\nconsole.log( ‘Starts With “L” ? ‘ +\
+  \ str.startsWith( ‘L’ ) )\n```\n\n```javascript\nconsole.log( ‘Ends With “.” ? ‘+str.endsWith(\
+  \ ‘.’ ) )\n```\n\n```javascript\nconsole.log( ‘First Letter: ‘ + str[ 0 ] )\n```\n\
+  \n![image](img/5o.jpg)添加语句以查看字符串中的子字符串。\n\n```javascript\nconsole.log( ‘\\nIncludes\
+  \ “Hat” ?+ str.includes( ‘Hat’ ) )\n```\n\n```javascript\nconsole.log( ‘Includes\
+  \ “hat” ?+ str.includes( ‘hat’ ) )\n```\n\n![image](img/6o.jpg)最后，添加一条语句输出 10 份修剪后的字符串。\n\
+  \n```javascript\nconsole.log( ‘\\nRepeat:\\n’ + str.repeat( 10 ) )\n```\n\n![image](img/7o.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它并启动控制台以查看输出结果。\n\n![image](img/pg105_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n字符匹配也可以使用等等运算符进行，例如 `str[ 0 ] === ‘L’`。\n\n![image](img/forget.jpg)\n\n使用这些方法匹配是区分大小的。\n\
+  \n## 总结\n\n- `Math` 对象提供了数学常量（如 `Math.PI`）和数学方法（如 `Math.max( )`）。\n- 浮点数可以使用 `Math.floor(\
+  \ )`、`Math.ceil( )` 和 `Math.round( )` 方法舍入到最接近的整数。\n- JavaScript 不提供自动舍入来解决浮点数差异。\n\
+  - 将浮点值乘以 100，执行运算，然后将结果除以 100 以避免差异误差。\n- `Math.random( )` 方法返回一个 0.0 到 1.0 之间的随机浮点数。\n\
+  - 将随机浮点数乘以 10 并使用 `Math.ceil( )` 对结果舍入，范围变为 1-10。\n- `String` 对象提供了处理字符串值的有用方法，如\
+  \ `toUpperCase( )` 和 `toLowerCase( )`。\n- 每个字符串都有一个 `length` 属性，包含一个表示该字符串字符总数的整数。\n\
+  - 可以使用 `+` 拼接运算符或字符串 `concat( )` 方法将字符串连接在一起。\n- `eval( )` 内置函数可能会产生安全影响，因此最好避免。\n\
+  - `slice( )` 和 `substring( )` 方法的参数指定起始和结束位置，但 `substr( )` 方法的参数指定起始位置和要复制的字符数。\n\
+  - `split( )` 方法返回位于指定字符出现位置之间的所有子字符串的数组。\n- `search( )`、`match( )`、`indexOf( )`、`lastIndexOf(\
+  \ )` 和 `charAt( )` 方法可用于在字符串内查找字符。\n- `trim( )` 方法移除字符串两端的空白字符。\n- `startsWith(\
+  \ )`、`endsWith( )` 和 `includes( )` 方法在字符串内进行区分大小的匹配。\n- `replace( )` 和 `repeat(\
+  \ )` 方法创建后的字符串。\n\n## 6 处理 Window 对象\n\n*本章描述并演示了顶层 Window 对象环境的方法。*\n\n- 认识 DOM\n\
+  - 检查属性\n- 显示对话框\n- 滚动查看\n- 弹出窗口\n- 制作计时器\n- 检查浏览器\n- 检查状态\n- 控制位置\n- 浏览历史\n- 总结\n\
+  \n### 认识 DOM\n\n![image](img/pg108_1.jpg)\n\n浏览器在一个称为“文档模型”（DOM）的层次树中表示网页的所有组件。每个组件都在顶层窗口对象下方，树包含如下分支：\n\
+  \n![image](img/pg108_2.jpg)\n\n可以使用 `for in` 循环列出浏览器提供的窗口对象属性。列表将包含所有现代浏览器的基础属性，以及特定浏览器的少量属性。\n\
+  \n![image](img/hot.jpg)\n\n跟随方括号的项目是数组对象，而圆括号内的是各种表单元素。\n\n![image](img/1bl.jpg)创建一个带有空列表元素的\
+  \ HTML 文档。\n\n```html\n<ol id=\"props\" style=\"column-count:3\"></ol>\n```\n\n\
+  ![image](img/htmlbl.jpg)\n\ndom.html\n\n![image](img/2bl.jpg)接下来，在 `script` 元素中创建一个自执行函数，该函数首先初始化两个变量。\n\
+  \n```javascript\nconst list = document.getElementById( ‘props’ )\nlet property =\
+  \ null\n```\n\n![image](img/3bl.jpg)现在，添加一个循环，为列表元素填充浏览器窗口对象的直接属性。\n\n```javascript\n\
+  for( property in window )\n{\n  if( property ) { list.innerHTML += ‘<li>’ + property\
+  \ }\n}\n```\n\n![image](img/4bl.jpg)保存 HTML 文档，然后在浏览器中打开它以查看窗口属性和方法名。\n\n![image](img/pg109_1.jpg)\n\
+  \n\n\n\n\n![image](img/forget.jpg)\n\n闭合 `</li>` 标签是可选的，因此在此循环中省略了。\n\n![image](img/hot.jpg)\n\
+  \n滚动列表以检查所有的 `window` 属性和方法——这次总共有 204 个项目。对面树状插图中重要的属性在截图中已高亮显示。\n\n### 检查属性\n\n\
+  顶层 DOM `window` 对象有一个 `screen` 子对象，该对象提供了描述用户显示器分辨率（以像素为单位）的属性。屏幕尺寸可以在 `window.screen.width`\
+  \ 和 `window.screen.height` 属性中找到。\n\n![image](img/pg110_1.jpg)\n\n同样，可用的屏幕尺寸（排除桌面任务栏占据的空间）可以在\
+  \ `window.screen.availWidth` 和 `window.screen.availHeight` 属性中找到。\n\n屏幕的色彩能力可以通过\
+  \ `window.screen.colorDepth` 属性发现，该属性包含一个位值，描述屏幕可以显示的可能颜色范围：\n\n- **8-bit** – 低色（Low\
+  \ Color），只能显示 256 种颜色。\n- **16-bit** – 高色（High Color），可以显示 65,536 种颜色。\n- **24-bit**\
+  \ – 真色（True Color），可以显示数百万种颜色。\n- **32-bit** – 深色（Deep Color），可以显示包含十亿或更多颜色的色域。\n\
+  \n现代计算机使用 24 位或 32 位硬件进行色彩显示，而旧的计算机使用 16 位硬件。只有非常旧的计算机和旧手机使用 8 位硬件进行色彩显示。\n\n还有一个\
+  \ `window.screen.pixelDepth` 属性包含屏幕的像素深度，但在现代计算机上，这个值与 `window.screen.colorDepth`\
+  \ 属性的值相同——始终使用 `window.screen.colorDepth` 来发现色彩能力。\n\n某些浏览器现在支持 `window.screen.orientation`\
+  \ 对象，它有一个 `type` 属性，描述屏幕当前的方向为横屏或竖屏，以及这是否为屏幕的主次常用方向。\n\n由于 `window` 对象是浏览器脚本环境中的顶层全局对象，在引用其子对象及其属性时可以可选省略它的名称。例如，你可以直接写\
+  \ `screen.colorDepth` 来引用 `window.screen.colorDepth` 属性。\n\n![image](img/snake.jpg)\n\
+  \n注意这些属性名的“驼峰命名法”（camelCase）大小写。\n\n![image](img/1bl.jpg)创建一个空段落的 HTML 文档\n\n```html\n\
+  <p id=\"props\" style=\"font:1.5em sans-serif\"></p>\n```\n\n![image](img/htmlbl.jpg)\n\
+  \nscreen.html\n\n![image](img/2bl.jpg)接下来，在 script 元素中创建一个自执行函数，该函数开始初始化六个变量\n\n\
+  ```javascript\nconst info = document.getElementById( ‘props’ )\nlet width = window.screen.width\
+  \ + ‘px’\nlet height = window.screen.height + ‘px’\nlet availW = window.screen.availWidth\
+  \ + ‘px’\nlet availH = window.screen.availHeight + ‘px’\nlet colors = ‘Unknown’\n\
+  ```\n\n![image](img/3bl.jpg)现在，添加一条语句描述色彩能力\n\n```javascript\nswitch( window.screen.colorDepth\
+  \ )\n{\n  case 8 : colors = ‘Low Color’ ; break\n  case 16 : colors = ‘High Color’\
+  \ ; break\n  case 24 : colors = ‘True Color’ ; break\n  case 32 : colors = ‘Deep\
+  \ Color’ ; break\n}\n```\n\n![image](img/4bl.jpg)然后，添加语句显示屏幕信息\n\n```javascript\n\
+  info.innerHTML = ‘Screen Resolution: ‘ +\nwidth + ‘ x ‘ + height + ‘<br>’\ninfo.innerHTML\
+  \ += ‘Available Screen Size: ‘ +\navailW + ‘ x ‘ + availH + ‘<br>’\ninfo.innerHTML\
+  \ += ‘Color Capability: ‘ + colors + ‘<br>’\nif( window.screen.orientation )\n{\n\
+  \  info.innerHTML += ‘Orientation: ‘ +\n  window.screen.orientation.type\n}\n```\n\
+  \n![image](img/5bl.jpg)保存 HTML 文档，然后在浏览器中打开它以查看屏幕信息\n\n![image](img/pg111_1.jpg)\n\
+  \n![image](img/forget.jpg)\n\n这里的可用高度比屏幕高度少 40 像素，因为桌面任务栏高度为 40 像素。\n\n![image](img/hot.jpg)\n\
+  \n`colorDepth` 属性可以用于为色彩能力有限的浏览器在文档提供低分辨率图像。\n\n### 显示对话框\n\n顶层 DOM `window` 对象提供了三种方法，JavaScript\
+  \ 可以这些方法向用户显示对话消息。可以将简单的警告消息字符串作为 `window.alert()` 方法的参数。它将显示在一个只有一个“确定”按钮的对话框中，点击该按钮仅会关闭对话框。\n\
+  \n![image](img/pg112_1.jpg)\n\n更有用的是，可以指定消息作为 `window.confirm()` 方法的参数，请求用户做出决定。它将显示在一个带有“确定”按钮和“取消”按钮的对话框中。按下任何一个按钮都会关闭对话框，但“确定”按钮返回\
+  \ `true` 值，而“取消”按钮返回 `false` 值。\n\n还可以指定消息作为 `window.prompt()` 方法的参数，请求用户输入。它将显示在一个带有“确定”按钮、“取消”按钮和一个文本输入字段的对话框中。按下任何一个按钮都会关闭对话框，但“确定”按钮返回文本字段中的值，而“取消”按钮返回\
+  \ `null` 值。还可以为 `window.prompt()` 方法提供第二个参数来指定文本字段的默认内容。\n\n![image](img/1bl.jpg)创建一个空段落的\
+  \ HTML 文档\n\n```html\n<p id=\"response\" style=\"font:1.5em sans-serif\"></p>\n\
+  ```\n\n![image](img/htmlbl.jpg)\n\ndialogs.html\n\n![image](img/2bl.jpg)接下来，在 script\
+  \ 元素中创建一个自执行函数，该函数开始初始化一个变量引用\n\n```javascript\nconst info = document.getElementById(\
+  \ ‘response’ )\n```\n\n![image](img/3bl.jpg)现在，添加一条语句在简单的对话框上显示消息\n\n```javascript\n\
+  window.alert( ‘Hello from JavaScript’ )\n```\n\n![image](img/4bl.jpg)然后，添加一条语句用户用户决定并将响应写入段落中\n\
+  \n```javascript\ninfo.innerHTML = ‘Confirm: ‘ + window.confirm( ‘Go or Stop?’ )\n\
+  ```\n\n![image](img/5bl.jpg)接下来，添加一条语句请求用户输入文本并将文本响应写入段落中\n\n```javascript\ninfo.innerHTML\
+  \ += ‘<br>Prompt: ‘ + window.prompt( ‘Yes or No?’, ‘Yes’ )\n```\n\n![image](img/6bl.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开它以查看消息出现在简单的对话框上\n\n![image](img/pg113_1.jpg)\n\n![image](img/7bl.jpg)点击每个对话框上的“确定”按钮以依次关闭它们，然后查看响应出现在段落中\n\
+  \n![image](img/pg113_2.jpg)\n\n![image](img/pg113_3.jpg)\n\n![image](img/pg113_4.jpg)\n\
+  \n![image](img/hot.jpg)\n\n`confirm` 对话框结合 `if` 语句用于脚本分支——例如，\n\n```javascript\n\
+  if( confirm( ‘OK?’ ) ) { ... } else { ... }\n```\n\n![image](img/forget.jpg)\n\n\
+  如果脚本要使用来自 `prompt` 对话框的文本输入，良好的做法是去除字符串两端的空格——参见此处。\n\n### 滚动查看\n\nDOM `window`\
+  \ 对象有一个 `scrollBy()` 方法，允许窗口在内容向任一方向溢出时进行水平或垂直滚动。该方法需要两个参数来指定沿 X 轴和 Y 轴移动的像素数。\n\
+  \n![image](img/pg114_1.jpg)\n\n当内容垂直溢出窗口时，浏览器窗口的右侧会出现一个滚动条。`scrollBy()` 方法将按照其第一个参数指定的像素数进行滚动——直到到达内容的末端。\n\
+  \n同样，当内容水平溢出窗口时，浏览器窗口的底部会出现一个滚动条。`scrollBy()` 方法将按照其第二个参数指定的像素数进行滚动——直到到达内容的末端。\n\
+  \n\n\n\n\n还有一个 `scrollTo()` 方法，它接受两个参数，用于指定 X 和 Y 坐标，当内容在水平或垂直方向溢出窗口时，窗口左上角应滚动到的这些坐标。这可以用于偏离默认的\
+  \ `X=0`, `Y=0` 坐标，到指定的替代位置。例如，当浏览器以表格电子表格格式显示数据，且第一行的第一个单元格位于浏览器窗口的左上角时，`scrollTo()`\
+  \ 方法可以将特定的单元格放在浏览器窗口的左上角。\n\nDOM 窗口对象有一个 `scrollX` 属性，存储窗口水平滚动的像素数。这表示“滑块”（滚动框）在窗口底部滚动条上的位置，相对于其左角的距离。`window.scrollX`\
+  \ 属性是旧属性 `window.pageXOffset` 的别名，该属性在 DOM 中仍然存在，并且为了向后兼容可以代替 `window.scrollX` 使用。\n\
+  \n同样，还有一个 `scrollY` 属性，它存储窗口垂直滚动的像素数。这表示滑块在窗口右侧滚动条上的位置，相对于其顶角的距离。`window.scrollY`\
+  \ 属性是旧属性 `window.pageYOffset` 的别名，该属性在 DOM 中仍然存在，并且为了向后兼容可以代替 `window.scrollY` 使用。\n\
+  \n![image](img/hot.jpg)\n\n为 `scrollBy()` 方法提供负值可以向上和向左移动。\n\n![image](img/snake.jpg)\n\
+  \n`scrollby()` 方法的效果在内容溢出窗口（导致滚动条出现）时才会明显。\n\n![image](img/1bl.jpg)创建一个 HTML 文档，其中包含一个从左侧缩进的空段落\n\
+  \n```html\n<p id=”info\" style=\"width:2000px; margin-left:300px; font:1.2em sans-serif\"\
+  ></p>\n```\n\n![image](img/htmlbl.jpg)\n\nscroll.html\n\n![image](img/2bl.jpg)接下来，在\
+  \ script 元素中创建一个自执行函数，该函数开始初始化两个变量\n\n```javascript\nconst info = document.getElementById(\
+  \ ‘info’ )\nlet i = 0\n```\n\n![image](img/3bl.jpg)现在，添加一个循环向段落中写入一列 40 个数字\n\n\
+  ```javascript\nfor( i = 1 ; i < 41 ; i++ )\n{\n    info.innerHTML += ( i + ‘<br>’\
+  \ )\n}\n```\n\n![image](img/4bl.jpg)然后，添加一条语句窗口水平向右滚动 200 像素，并垂直向下滚动段落元素的高度\n\n\
+  ```javascript\nwindow.scrollBy( 200, info.clientHeight )\n```\n\n![image](img/hot.jpg)\n\
+  \n注意这里使用了元素的 `clientHeight` 属性。元素还有一个非常有用的 `clientWidth` 属性。\n\n![image](img/5bl.jpg)最后，添加一条语句来追加当前窗口滑块位置的确认\n\
+  \n```javascript\ninfo.innerHTML += ‘scrollX: ‘ + window.scrollX + ‘& scrollY: ‘\
+  \ + window.scrollY\n```\n\n![image](img/6bl.jpg)保存该 HTML 文档，然后在浏览器中打开它以查看窗口滚动和滑块位置\n\
+  \n![image](img/pg115_1.jpg)\n\n## 弹出窗口\n\n![image](img/pg116_1.jpg)\n\n可以使用窗口对象的\
+  \ `open()` 方法打开新的浏览器窗口。这需要三个参数：指定在新窗口中加载的 HTML 文档的 URL 地址、新窗口的名称，以及该窗口应包含的逗号分隔特性列表——来自下表描述的可能特性：\n\
+  \n| 特性 | 说明 |\n| :--- | :--- |\n| directories | 添加链接栏 |\n| height | 设置文档区域的高度（像素）\
+  \ |\n| left | 窗口的屏幕 X 坐标 |\n| location | 添加地址栏 |\n| menubar | 添加标准菜单栏 |\n| resizable\
+  \ | 允许调整窗口大小 |\n| scrollbars | 需要时启用滚动条 |\n| status | 添加状态栏 |\n| toolbar | 添加前进和后退按钮栏\
+  \ |\n| top | 窗口的屏幕 Y 坐标 |\n| width | 设置文档区域的宽度（像素） |\n\n当成功时，`window.open()` 方法返回一个新窗口对象并打开新的“弹出”窗口；如果失败，该方法简单返回\
+  \ null。返回的结果应赋值给一个变量，随后对其进行测试——如果变量不为 null，则它必须代表弹出窗口对象。然后可以通过调用 `close()` 方法关闭该窗口，或通过调用\
+  \ `print()` 方法打印其内容。\n\n还可以通过指定 X 和 Y 屏幕轴坐标作为窗口 `moveTo()` 方法的参数来定位窗口。还有一个类似的 `window.moveBy()`\
+  \ 方法，它接受两个参数，指定窗口从当前屏幕位置沿 X 和 Y 轴移动多少像素。\n\n![image](img/forget.jpg)\n\n由于弹出窗口烦人的泛滥，浏览器制造商添加了弹出拦截器——因此不再建议使用弹出窗口，但为了完整性，这里对其进行了演示。\n\
+  \n![image](img/1bl.jpg)创建一个包含标题的 HTML 文档\n\n```html\n<h1>Pop-up Window</h1>\n```\n\
+  \n![image](img/htmlbl.jpg)popup.html\n\n![image](img/2bl.jpg)创建一个包含标题的第二个文档\n\n\
+  ```html\n<h1>Main Window</h1>\n```\n\n![image](img/3bl.jpg)opener.html\n\n![image](img/4bl.jpg)接下来，在第二个文档的\
+  \ script 元素中添加\n\n```javascript\nconst popWin = window.open( ‘popup.html’, ‘Popup’,\
+  \ ‘top=150,left=100,width=350,height=100’ )\n```\n\n![image](img/5bl.jpg)保存两个 HTML\
+  \ 文档，然后在浏览器中打开它们以查看弹出已被拦截\n\n![image](img/pg117_1.jpg)\n\n![image](img/6.jpg)打开浏览器的弹出拦截器对话框并选择允许来自此页面的弹出\n\
+  \n![image](img/pg117_2.jpg)\n\n![image](img/6bl.jpg)现在，刷新浏览器窗口查看弹出窗口出现\n\n![image](img/pg117_3.jpg)\n\
+  \n![image](img/snake.jpg)\n\n在特性列表中不要包含任何空格，否则可能导致 `window.open()` 方法失败。\n\n![image](img/hot.jpg)\n\
+  \n注意弹出窗口没有在其标题栏上显示指定的“网站图标”。\n\n## 创建计时器\n\nJavaScript 窗口对象有一个有趣的 `setTimeout()`\
+  \ 方法，它可以在指定时间后重复评估一个表达式。在指定的表达式调用 `setTimeout()` 语句的地方，会创建一个递归循环——其中函数会在指定时间后被重复执行。\n\
+  \n![image](img/pg118_1.jpg)\n\n`setTimeout()` 方法要评估的表达式必须作为其第一个参数指定，而时间必须作为第二个参数指定的数字。时间以毫秒表示，其中\
+  \ 1000 代表一秒。\n\n`setTimeout()` 方法返回一个数值，该数值可以赋值给变量以唯一标识等待过程。此值可以作为窗口对象 `clearTimeout()`\
+  \ 方法的参数，以便在某处终止计时循环。\n\n窗口对象还有 `setInterval()` 和 `clearInterval()` 方法，它们采用相同的参数且工作方式相似。区别在于，`setInterval()`\
+  \ 指定的时间是评估表达式的间隔时间，无论执行需要多长时间。相反，`setTimeout()` 方法指定的时间是从上一次执行结束到下一次执行开始的时间段。这意味着当间隔较短且执行表达式所需时间较长，`setInterval()`\
+  \ 可能会尝试重叠执行。因此，通常优选使用 `setTimeout()` 方法。\n\n![image](img/1bl.jpg)创建一个带有空段落的 HTML\
+  \ 文档\n\n```html\n<p id=”info\"></p>\n```\n\n![image](img/htmlbl.jpg)\n\ntimer.html\n\
+  \n\n\n\n\n![image](img/2bl.jpg)\n\n接下来，在 script 元素中，使用一个返回递减整数的闭包函数初始化一个变量\n\n```javascript\n\
+  const count = ( function ( ) {\n  let num = 10\n  return ( function( ) { return\
+  \ num-- } )\n} ) ( )\n```\n\n![image](img/forget.jpg)\n\n一个设置为间隔为 10 分钟的两分钟任务每 10\
+  \ 分钟启动一次，但一个设置为超时为 10 分钟的相同任务则每 12 分钟启动一次（10+2）。\n\n![image](img/hot.jpg)\n\n关于闭包函数的复习，请参此处。\n\
+  \n![image](img/3bl.jpg)现在，添加一个计时器函数，该函数开始初始化三个变量\n\n```javascript\nfunction countDown(\
+  \ ) \n{\n  const info = document.getElementById( ‘info’ )\n  let timerId = null\n\
+  \  let num = count( )\n  // 在此处插入语句。\n}\n```\n\n![image](img/4bl.jpg)插入语句以每秒一次的间隔将递减整数写入段落中，直到达到零\n\
+  \n```javascript\nif ( num > 0 )\n{\n  info.innerHTML += ‘<span>’+ num + ‘</span>’\n\
+  \  timerId = window.setTimeout( countDown , 1000 )\n}\nelse\n{\n  info.innerHTML\
+  \ += ‘<span>Lift Off!</span>’\n  window.clearTimeout( timerId )\n}\n```\n\n![image](img/5bl.jpg)在函数块之后，添加一条语句在页面加载时调用计时器函数\n\
+  \n```javascript\ncountDown( )\n```\n\n![image](img/6bl.jpg)保存 HTML 文档，然后在浏览器中打开它，以查看计时器倒计时\
+  \ 10 秒\n\n![image](img/pg119_1.jpg)\n\n![image](img/pg119_2.jpg)\n\n![image](img/pg119_3.jpg)\n\
+  \n![image](img/hot.jpg)\n\n你可以性地在计时器函数中添加 `console.log( timerId )` 语句，以查看计时器的 ID\
+  \ 值。\n\n## 检查浏览器\n\n在 DOM 层次结构中，顶层窗口对象有很多子对象，每个对象都有自己的属性和方法。其中之一是 `window.navigator`\
+  \ 对象，它包含了有关网络浏览器的信息。由于顶层窗口对象存在“全局命名空间”中，它的所有子对象都可以省略地址的该部分，因此可以使用 `alert(` 直接调用\
+  \ `window.alert( )` 方法，可以使用 `onload` 引用 `window.onload` 属性，可以使用 `navigator` 引用 `window.\
+  \ navigator` 对象。\n\n![image](img/pg120_1.jpg)\n\n`navigator` 对象有一个 `appName` 属性包含浏览器名称，`appCodeName`\
+  \ 属性包含其代码，`appVersion` 属性包含其版本号。但你可能会对这些值感到惊讶，因为 Google Chrome、Firefox、Safari 和\
+  \ Opera 都将它们的代码标记为“Mozilla”。\n\n每个浏览器在向 Web 服务器发送请求时，会在名为“User-Agent”的 HTTP 请求头中发送浏览器代码和版本，此字符串也可以从\
+  \ `navigator.userAgent` 属性中获取。还有一个 `navigator.platform` 属性用于描述浏览器的宿操作系统。\n\n在过去几年中，人们非常关注浏览器检测脚本，这些脚本尝试通过\
+  \ `navigator` 属性来识别浏览器，以便提供适用于该浏览器支持的功能的适当代码。这现在被认为是不良实践，现在建议使用特性检测。\n\n例如，查询浏览器是否支持有用的\
+  \ `addEventListener( )` 方法可以判断该浏览器是否支持现代的文档对象模型。\n\n![image](img/1bl.jpg)创建一个空列表的\
+  \ HTML 文档\n\n```html\n<ul id=”list”></ul>\n```\n\n![image](img/htmlbl.jpg)\n\nbrowser.html\n\
+  \n![image](img/2bl.jpg)接下来，在 script 元素中，创建一个自执行函数，该函数开始初始化变量引用\n\n```javascript\n\
+  const list = document.getElementById( ‘list’ )\n```\n\n![image](img/3bl.jpg)现在，添加语句列出你浏览器的名称\n\
+  \n```javascript\nlist.innerHTML = ‘<li>Browser: ‘ + navigator.appName\nlist.innerHTML\
+  \ += ‘<li>Code Name: ‘ +\nnavigator.appCodeName\n```\n\n![image](img/hot.jpg)\n\n\
+  之前的示例显式地使用了 `window` 前缀，以使 `window` 对象方法和属性的父关系明显，但在技术上最好省略 `window.` 前缀——这样它们就不会通过\
+  \ `window` 对象自身的 `window` 属性被引用。例如，直接使用 `onload` 而不是 `window.onload`。\n\n![image](img/4bl.jpg)然后，添加语句列出你的浏览器和你操作系统的版本详情\n\
+  \n```javascript\nlist.innerHTML += ‘<li>Version: ‘ + navigator.appVersion\nlist.innerHTML\
+  \ += ‘<li>Platform: ‘ + navigator.platform\n```\n\n![image](img/5bl.jpg)最后，添加一条语句确认你使用的是现代浏览器\n\
+  \n```javascript\nif( window.addEventListener )\n{\n  list.innerHTML += ‘<li>This\
+  \ is a modern DOM browser’\n}\n```\n\n![image](img/6bl.jpg)保存 HTML 文档，然后在任何浏览器中打开它以查看名称和版本详情\n\
+  \n![image](img/pg119_1.jpg)\n\n![image](img/pg119_2.jpg)\n\n![image](img/pg119_3.jpg)\n\
+  \n![image](img/hot.jpg)\n\n在所有现代浏览器中，`window` 对象都有一个 `addEventListener( )` 方法——Google\
+  \ Chrome 和其他浏览器之所以自称为 Netscape，原因源于“浏览器大战”时代——当时浏览器必须采用这些名称以便提供网页。\n\n## 检查状态\n\n\
+  DOM 窗口对象有一个 `javaEnabled()` 方法，只有在启用了 Java 支持时它才会返回 true。\n\n![image](img/pg122.jpg)\n\
+  \n还有一个 `cookieEnabled` 属性，只有在启用了 cookie 支持时它为真。\n\n此外，`navigator` 拥有 `plugins` 子对象和\
+  \ `mimeTypes` 子对象。与其他数组一样，`plugins` 和 `mimeTypes` 数组都有一个 `length` 属性，包含其元素的数字总数。\n\
+  \n每个 `plugin` 数组元素都有 `name` 和 `description` 属性，包含一个插件的详情。可以使用元素索引引用它们。例如，`navigator.plugins[0].name`\
+  \ 引用第一个元素的名称。\n\n同样，每个 `mimeTypes` 数组元素都有 `type` 和 `description` 属性，包含一个支持的 MIME\
+  \ 特性的详情。可以使用元素索引引用它们。例如，`navigator.mimeTypes[0].type` 引用第一个元素的类型。\n\n![image](img/1bl.jpg)创建一个空段落的\
+  \ HTML 文档\n\n```html\n<p id=”info”></p>\n```\n\n![image](img/htmlbl.jpg)\n\nenabled.html\n\
+  \n![image](img/2bl.jpg)接下来，在 script 元素中，创建一个自执行函数，该函数开始初始化两个变量\n\n```javascript\n\
+  const info = document.getElementById( ‘info’ )\nlet status = ‘‘\n```\n\n![image](img/3bl.jpg)现在，添加语句在启用了\
+  \ Java 支持时在段落中写入确认\n\n```javascript\nstatus = ( navigator.javaEnabled( ) ) ? ‘Enabled’\
+  \ : ‘Disabled’\ninfo.innerHTML += ‘Java Support is ‘ + status + ‘<hr>’\n```\n\n\
+  ![image](img/4bl.jpg)然后，添加语句在启用了 cookie 支持时在段落中写入确认\n\n```javascript\nstatus = (\
+  \ navigator.cookieEnabled ) ? ‘Enabled’ : ‘Disabled’\ninfo.innerHTML += ‘Cookie\
+  \ Support is ‘ + status + ‘<hr>’\n```\n\n![image](img/forget.jpg)\n\n这些数组元素的内容根据每个浏览器支持的功能而异。\n\
+  \n![image](img/5bl.jpg)现在，添加语句写入 `plugins` 数组的长度和一个示例元素\n\n```javascript\nif ( navigator.plugins.length\
+  \ !== 0 )\n{\n  info.innerHTML += ‘No. of Plugins: ‘ +\n  navigator.plugins.length\n\
+  \  info.innerHTML += ‘<br>Example: ‘ +\n  navigator.plugins[ 0 ].name\n  info.innerHTML\
+  \ += ‘<br>For: ‘ +\n  navigator.plugins[ 0 ].description + ‘<hr>’\n}\n```\n\n\n\n\
+  \n\n![image](img/6bl.jpg)最后，添加语句来写入 MIME 类型数组的长度和一个示例元素\n\n```javascript\nif ( navigator.mimeTypes.length\
+  \ !== 0 )\n{\n  info.innerHTML += ‘No. of MIME Types: ‘ + navigator.mimeTypes.length\n\
+  \  info.innerHTML += `<br>Example: ‘ + navigator.mimeTypes[ 1 ].type\n  info.innerHTML\
+  \ += `<br>For: ‘ + navigator.mimeTypes[ 1 ].description\n}\n```\n\n![image](img/7bl.jpg)保存\
+  \ HTML 文档，然后在任何浏览器中打开它以查看已启用功能的状态\n\n![image](img/pg123_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n你可以使用循环来编写所有插件和 mimeTypes 元素的内容。\n\n## 控制位置\n\n窗口的 `location` 对象具有五个属性，包含了当前在浏览器窗口中加载的文档的完整\
+  \ URL 地址的组件。描述协议、域名、文件名以及（如果适用）片段锚点的完整地址包含在 `location.href` 属性中。完整地址的各个组件包含在 `location.protocol`（`http:`\
+  \ 或 `https:`）、`location.host`（域名）、`location.pathname`（文件路径）和 `location.hash`（片段锚点）中。为\
+  \ `location` 属性分配一个新 URL 将导致浏览器加载该地址的页面或其他资源。\n\n![image](img/pg124_1.jpg)\n\n![image](img/1bl.jpg)创建一个包含超链接锚点段落的\
+  \ HTML 文档\n\n```html\n<p id=”info”>\n<a id=”frag”>片段锚点</a>\n</p>\n```\n\n![image](img/htmlbl.jpg)\n\
+  \nlocation.html\n\n![image](img/2bl.jpg)接下来，在 script 元素中，创建一个自执行函数，该函数从初始化两个变量开始\n\
+  \n```javascript\nconst info = document.getElementById( ‘info’ )\nlet jump = confirm(\
+  \ ‘Jump to Fragment?’ )\n```\n\n![image](img/3bl.jpg)现在，添加语句，如果用户同意了请求，则更改窗口的 location\n\
+  \n```javascript\nif ( jump )\n{\n  location = location.href + ‘#frag’\n}\n```\n\n\
+  ![image](img/4bl.jpg)然后，添加语句在面板中写入当前位置地址的每个组件\n\n```javascript\ninfo.innerHTML +=\
+  \ `<hr>Href: ‘ + location.href\ninfo.innerHTML += `<br>Protocol: ‘ + location.protocol\n\
+  info.innerHTML += `<br>Host:‘ + location.host\ninfo.innerHTML += `<br>Path:‘ + location.pathname\n\
+  info.innerHTML += `<br>Hash: ‘ + location.hash\n```\n\n![image](img/5bl.jpg)保存 HTML\
+  \ 文档，然后在任何浏览器中打开它，以查看请求更改位置的确认对话框\n\n![image](img/6bl.jpg)点击取消按钮拒绝请求，并查看页面照常加载在其“根部”位置\n\
+  \n![image](img/forget.jpg)\n\n网页浏览器可以加载任何支持的 MIME 类型的文件——例如，所有 PNG 文件的 MIME 类型为\
+  \ `image/png`。\n\n![image](img/pg125_1.jpg)\n\n![image](img/pg125_2.jpg)\n\n![image](img/7bl.jpg)刷新浏览器，然后点击\
+  \ OK 按钮接受请求，并查看页面加载在其片段位置\n\n![image](img/pg125_3.jpg)\n\n![image](img/pg125_4.jpg)\n\
+  \n![image](img/hot.jpg)\n\n这里显示的 location 是位于本地系统 Web 服务器上的页面。如果页面位于你的桌面上，协议将是 `file:`\
+  \ 且没有 `host` 值。\n\n## 历史记录\n\n网页浏览器将当前会话中访问的 URL 历史存储在 `window` 对象的 `history` 子对象中的数组中。像其他数组一样，它有一个\
+  \ `length` 属性，以及用于在元素之间移动的 `back()` 和 `forward()` 方法。或者，`history` 对象的 `go()` 方法接受一个正或负整数参数，指定沿数组移动多少个元素。例如，`history.go(\
+  \ 1 )` 向前移动一个元素，`history.go( -2 )` 向后移动两个元素。\n\n![image](img/pg126_1.jpg)\n\n![image](img/1bl.jpg)创建三个相同的\
+  \ HTML 文档，它们包含一个空段落并嵌入相同的外部脚本文件\n\n```html\n<p id=”info” > </p>\n<script src=”history.js”\
+  \ > </script>\n```\n\n![image](img/htmlbl.jpg)\n\npage-1.html\n\npage-2.html\n\n\
+  page-3.html\n\n![image](img/2bl.jpg)接下来，创建一个脚本文件，其中包含一个从初始化变量引开始自执行函数\n\n```javascript\n\
+  const info = document.getElementById( ‘info’ )\n```\n\n![image](img/pg126_2.jpg)\n\
+  \nhistory.js\n\n![image](img/3bl.jpg)现在，在函数块中，添加语句将内容写入空段落中\n\n```javascript\ninfo.innerHTML\
+  \ += `<a href=”page-1.xhtml”>Page 1</a> | ‘\ninfo.innerHTML += `<a href=”page-2.xhtml”>Page\
+  \ 2</a> | ‘\ninfo.innerHTML += `<a href=”page-3.xhtml”>Page 3</a’\ninfo.innerHTML\
+  \ += `<br>History Length: ‘ + history.length\ninfo.innerHTML += `<br>Current Location:\
+  \ ‘ + location.pathname + ‘<br>’\n```\n\n![image](img/4bl.jpg)然后，添加语句在段落中创建按钮\n\n\
+  ```javascript\ninfo.innerHTML += `<button onclick=”history.back( )”>Back</button>’\n\
+  info.innerHTML += `<button onclick=”history.forward( )”>Forward</button>’\n```\n\
+  \n![image](img/5bl.jpg)将 HTML 文档和 JavaScript 脚本文件放在同一个文件夹中，然后清除浏览器历史\n\n![image](img/hot.jpg)\n\
+  \n要在 Google Chrome 浏览器中清除历史记录，点击 ![image](img/pg126_i.jpg)按钮，然后选择**更多工具**、**清除浏览数据**，并点击**清除数据**按钮。\n\
+  \n![image](img/6bl.jpg)打开第一个页面查看初始历史长度为 1\n\n![image](img/pg127_1.jpg)\n\n![image](img/7bl.jpg)点击链接加载第三页，查看历史长度增加到\
+  \ 2\n\n![image](img/pg127_2.jpg)\n\n![image](img/8bl.jpg)点击后退按钮返回第一个页，查看历史长度保持为\
+  \ 2\n\n![image](img/pg127_3.jpg)\n\nURL 存储在 `history` 对象数组中并受保护，无法以字符串形式检索\n\n![image](img/forget.jpg)\n\
+  \n在本示例中，只有当点击链接进入不同页面时，URL 才会添加到 history 数组。`back()`、`forward()` 和 `go()` 方法只是选择数组中的元素，不会更改\
+  \ `length` 属性。\n\n## 总结\n\n- 文档对象模型 (DOM) 是网页组件的层级表示。\n- `window` 对象是 DOM 的顶层，具有描述浏览器窗口的属性。\n\
+  - `screen` 对象是 `window` 对象的子，具有描述屏幕尺寸和色彩深度属性。\n- `window` 对象具有 `scrollBy()` 和 `scrollTo()`\
+  \ 方法，以及指定滚动位置的 `scrollX` 和 `scrollY` 属性。\n- 使用 `window` 对象的 `alert()`、`confirm()`\
+  \ 和 `prompt()` 方法显示对话消息。\n- 使用 `window` 对象的 `open()` 方法可以创建窗口，但可能会被弹出拦截。\n- `window`\
+  \ 对象的 `setTimeout()` 方法创建一个定时器，稍可以使用 `clearTimeout()` 方法取消。\n- `navigator` 对象是 `window`\
+  \ 对象的子，具有描述浏览器和主机平台版本的属性。\n- `window` 对象存在于全局命名空间中，因此所有子对象不需要包含地址中的 window 部分。\n\
+  - 功能检测用于识别现代 DOM。\n- `navigator.plugins` 和 `navigator.mimeTypes` 属性是包含支持功能详情数组。\n\
+  - `location` 对象是 `window` 对象的子，具有描述加载文档地址的属性。\n- `history` 对象是 `window` 对象的子，包含当前会话中访问过的位置的数组。\n\
+  - `history` 对象具有 `back()`、`forward()` 和 `go()` 方法，用于在当前会话中切换页面。\n\n\n\n\n\n## 元素数组\
+  \ (#chapter07.xhtml_sec64)\n\n## 元素 (#chapter07.xhtml_sec65)\n\n## 写入内容 (#chapter07.xhtml_sec66)\n\
+  \n## 管理 Cookies (#chapter07.xhtml_sec67)\n\n## 加载事件 (#chapter07.xhtml_sec68)\n\n\
+  ## 鼠标事件 (#chapter07.xhtml_sec69)\n\n## 事件值 (#chapter07.xhtml_sec70)\n\n## 复选框 (#chapter07.xhtml_sec71)\n\
+  \n## 选择选项 (#chapter07.xhtml_sec72)\n\n## 重置更改 (#chapter07.xhtml_sec73)\n\n## 验证表单\
+  \ (#chapter07.xhtml_sec74)\n\n## 总结 (#chapter07.xhtml_sec75)\n\n## 提取信息\n\nDOM window\
+  \ 对象子元素中最有趣的是 document 对象，它提供了对 HTML 文档的访问。\n\n![image](img/pg130_1.jpg)\n\ndocument\
+  \ 对象有许多个描述文档及其位置的属性：\n\n• `document.title` 属性包含 HTML 文档 title 元素中指定的值。\n\n• HTML\
+  \ 文档的位置包含在 `document.URL` 属性中，与 `location.href` 属性中的值相似。\n\n•托管文档的域名包含在 `document.domain`\
+  \ 属性中，类似于 `location.host` 值。\n\n• HTML 文档会将其创建日期或最后修改日期作为 HTTP 请求头提供给浏览器，以便浏览器决定是使用文档的缓存还是获取新副本。此日期也可以在\
+  \ JavaScript 中通过 DOM 的 `document.lastModified` 属性获取。\n\n![image](img/1v.jpg)创建一个\
+  \ HTML 文档，在其主体部分提供一个指向第二个（目标）HTML 文档的超链接。\n\n```html\n<p>\n<a href=\"info-2.html\"\
+  >跳转到下一页</a>\n</p>\n```\n\n![image](img/htmlv.jpg)\n\ninfo-1.html\n\n![image](img/2v.jpg)接下来，创建目标\
+  \ HTML 文档，它包含一个空的无序列表。\n\n```html\n<ul id=\"list\"></ul\n```\n\n![image](img/htmlv.jpg)\n\
+  \ninfo-2.html\n\n![image](img/3v.jpg)现在，在 script 元素中创建一个自执行函数，该函数初始化一个变量引用。\n\n\
+  ```javascript\nconst list = document.getElementById('list');\n```\n\n![image](img/4v.jpg)然后，添加语句来列出文档的特征。\n\
+  \n```javascript\nlist.innerHTML = '<li>来源页: ' + document.referrer;\nlist.innerHTML\
+  \ += '<li>标题: ' + document.title;\nlist.innerHTML += '<li>URL: ' + document.URL;\n\
+  list.innerHTML += '<li>域名: ' + document.domain;\nlist.innerHTML += '<li>最后修改: '\
+  \ + document.lastModified;\n```\n\n![image](img/5v.jpg)将 HTML 文档保存在同一个文件夹中，然后在浏览器中打开包含链接的文档。\n\
+  \n![image](img/pg131_1.jpg)\n\n![image](img/6v.jpg)现在，点击超链接在浏览器中加载第二个 HTML 文档，并查看文档信息。\n\
+  \n![image](img/pg131_2.jpg)\n\n![image](img/forget.jpg)\n\n`document.lastModified`\
+  \ 中的日期仅与 HTML 文档本身有关，而与 HTML 文档可能导入的任何样式表或外部脚本文件无关。\n\n![image](img/snake.jpg)\n\
+  \n这里显示的域名位于本地系统 Web 服务器上的页面。如果页面位于你的桌面上，`document.referrer` 和 `document.domain`\
+  \ 属性将不会赋予任何值。\n\n## 元素数组\n\nDOM document 对象拥有表单、图像、链接、样式表和脚本的子对象。这些子对象都是数组，其中每个数组元素按照它们在\
+  \ HTML 文档中出现的顺序代表文档组件。例如，文档主体中的第一张图像（由 HTML `<img>` 标签指定）由 `document.images[0]`\
+  \ 表示。这意味着可以使用 `document.images[0].src` 引用其 URL，这会显示分配给 HTML `<img>` 标签 `src` 属性的路径。在脚本中为此组件分配新\
+  \ URL 将动态替换旧图像。\n\n![image](img/pg132_1.jpg)\n\n`links` 数组代表 HTML 文档中的 HTML `<a>`\
+  \ 标签；`styleSheets` 数组代表 HTML `<style>` 标签；`scripts` 数组代表 HTML `<script>` 标签。\n\n\
+  `forms` 数组代表 HTML `<form>` 标签，但它也有自己的子元素对象，它是所有表单组件的数组。例如，HTML 文档中第一个表单的第一个组件的值可以使用\
+  \ `document.forms[0].elements[0].value` 引用。在脚本中为此组件分配新值将动态替换旧值。\n\n![image](img/1v.jpg)创建一个包含表单和空列表的\
+  \ HTML 文档。\n\n```html\n<form>\n<img src=\"user.png\" alt=\"用户\" height=\"64\" width=\"\
+  64\">\n<input type=\"text\" name=\"topic\" size=\"30\">\n<input type=\"button\"\
+  \ value=\"提问\">\n<br>\n<a href=\"help.html\" style=\"\">帮助？</a>\n</form>\n<ul id=\"\
+  list\"></ul\n```\n\n![image](img/htmlv.jpg)\n\ncomponents.html\n\n![image](img/2v.jpg)现在，添加一个样式表来美化表单。\n\
+  \n```html\n<style>\nform {\n    font:1em sans-serif;\n    width: 500px;\n    height:\
+  \ 100px;\n    background: url(bg.png);\n}\n</style>\n```\n\n![image](img/pg132_2.jpg)\n\
+  \nbg.png 64x64 透明\n\n![image](img/3v.jpg)\n\n接下来，在 script 元素中创建一个自执行函数，该函数初始化一个变量引用。\n\
+  \n```javascript\nconst list = document.getElementById('list');\n```\n\n![image](img/snake.jpg)\n\
+  \n注意 `styleSheets` 数组的驼峰命名法。\n\n![image](img/4v.jpg)现在，添加语句列出文档的组件。\n\n```javascript\n\
+  list.innerHTML = '<li>表单数量: ' + document.forms.length;\nlist.innerHTML += '<li>链接数量:\
+  \ ' + document.links.length;\nlist.innerHTML += '<li>图像数量: ' + document.images.length;\n\
+  list.innerHTML += '<li>样式表数量: ' + document.styleSheets.length;\nlist.innerHTML +=\
+  \ '<li>脚本数量: ' + document.scripts.length;\n```\n\n![image](img/5v.jpg)最后，添加语句列出属性值。\n\
+  \n```javascript\nlist.innerHTML += '<li>第一张图像 URL: ' + document.images[0].src;\n\
+  list.innerHTML += '<li>第一个表单元素值: ' + document.forms[0].elements[0].value;\n```\n\
+  \n![image](img/6v.jpg)保存 HTML 文档，然后在浏览器中打开它查看列出的文档组件。\n\n![image](img/pg133_1.jpg)\n\
+  \n注意，通过样式规则包含在文档中的图像不包含在图像数组中，只有通过 `<img>` 标签包含的——因此，这里的表单背景图像（`bg.png`）没有出现在图像数组。同样，分配给\
+  \ style 属性的样式规则也没有包含在 `styleSheets` 数组中。\n\n![image](img/forget.jpg)\n\n数组元素仅代表相关的\
+  \ HTML 标签。\n\n## 元素\n\n![image](img/pg134_1.jpg)（等待，原文说是 pg134_1.jpg）\n\n使用组件数组配合点表示法来引用特定元素需要脚本作者计算组件数量以确定每个索引位置。这对于很长的文档来说特别繁琐，容易出错，而且修改\
+  \ HTML 文档可能会更改元素的索引位置。这在早几年是必须的，但最终通过向 document 对象添加三个新方法解决了这个问题：\n\n• `document.getElementById(\
+  \ )` 方法在书中之前的示例中用于从 JavaScript 代码添加内容，它允许通过 HTML id 属性值来引用任何组件。该方法仅将目标 id 值作为参数，用于引用单个特定的\
+  \ HTML 元素。\n\n\n\n\n\n- `document.getElementsByTagName( ` 方法返回一个类数组的 `HTMLCollection`\
+  \ 对象，该对象引用了所有作为参数指定的标签名称的 HTML 元素。可以使用元素的索引数字来引用特定的 HTML 元素，就像在数组中操作一样。\n- `document.getElementsByClassName(\
+  \ ` 方法返回一个类数组的 `HTMLCollection` 对象，该对象引用了所有包含作为参数指定的类名属性的 HTML 元素。可以使用元素的索引数字来引用特定的\
+  \ HTML 元素，就像在数组中操作一样。\n\n![image](img/1v.jpg)创建一个包含两个列表和一个空段落的 HTML 文档\n\n```html\n\
+  <ol>\n  <li class=\"fruit\">Apple</li>\n  <li class=\"nut\">Almond</li>\n  <li class=\"\
+  fruit\">Apricot</li>\n</ol>\n<ol>\n  <li class=\"fruit\">Blackberry</li>\n  <li\
+  \ id=\"country\" class=\"nut\">Brazil</li>\n  <li class=\"fruit\">Banana</li>\n\
+  </ol>\n<p id=\"info\"></p>\n```\n\n![image](img/htmlv.jpg)\n\ncollection.html\n\n\
+  ![image](img/snake.jpg)\n\n在返回 `HTMLCollection` 的两个方法名称中，使用的是“Elements”（复数），而在另一个方法的名称中，用的是“Element”（单数）。\n\
+  \n![image](img/2v.jpg)接下来，在 script 元素中，创建一个自执行函数，该函数首先初始化五个变量\n\n```javascript\n\
+  const info = document.getElementById( ‘info’ )\nconst item = document.getElementById(\
+  \ ‘country’ )\nconst lists = document.getElementsByTagName( ‘ol’ )\nconst fruits\
+  \ = document.getElementsByClassName( ‘fruit’ )\nlet i = 0\n```\n\n![image](img/3v.jpg)现在，添加一条语句来描述元素对象以及该元素包含的文本\n\
+  \n```javascript\ninfo.innerHTML = item + ‘ Id: ‘ + item.innerText + ‘<br>’\n```\n\
+  \n![image](img/4v.jpg)然后，添加语句来描述 HTMLCollection 对象及其元素包含的文本\n\n```javascript\ninfo.innerHTML\
+  \ += ‘<br>’ + lists + ‘ Tags:<br>’\nfor( i = 0; i < lists.length ; i++ ) {\n  info.innerHTML\
+  \ += ( i + 1 ) + ‘ of ‘ + lists.length\n  info.innerHTML += ‘ : ‘ + lists[ i ].innerText\
+  \ + ‘<br>’\n}\n```\n\n![image](img/hot.jpg)\n\n元素的 `innerText` 属性仅返回其起始标签和结束标签之间的内容，而\
+  \ `innerHTML` 属性也会返回 HTML 标签。将其更改为 `innerHTML` 以查看差异。\n\n![image](img/5v.jpg)最后，添加语句来描述第二个\
+  \ HTMLCollection 对象及其元素包含的文本\n\n```javascript\ninfo.innerHTML += ‘<br>’ + fruits\
+  \ + ‘ Class:<br>’\nfor( i = 0 ; i < fruits.length ; i++ ) {\n  info.innerHTML +=\
+  \ ( i + 1 ) + ‘ of ‘ + fruits.length\n  info.innerHTML += ‘ : ‘ + fruits[ i ].innerText+\
+  \ ‘<br>’\n}\n```\n\n![image](img/6v.jpg)保存 HTML 文档，然后在浏览器中打开它，查看通过不同方法获取的元素值\n\n\
+  ![image](img/pg135_1.jpg)\n\n## 写入内容\n\n如前面的示例所示，`document` 对象的 `innerHTML` 和 `innerText`\
+  \ 属性可以用于内容写入现有元素中。`document` 对象还有一个 `write( )` 方法，提供了另一种写入内容的方法，但它会自动调用 `document.open(\
+  \ )` 方法来启动新文档——因此当前文档不再显示。\n\n![image](img/pg136_1.jpg)\n\n更有用的是 `document.createElement(\
+  \ )` 方法接受标签名作为参数并创建该类型的元素。然后可以通过赋值给其 `innerHTML` 或 `innerText` 属性向新元素添加内容。随后，通过指定新元素作为\
+  \ `document.appendChild( )` 方法的参数，将其插入到网页中现有元素内。\n\n你还可以通过指定属性名和值作为元素 `setAttribute(\
+  \ )` 方法的两个参数，动态地向元素写入属性。\n\n![image](img/1v.jpg)创建一个包含标题和一个包含三个项目的有序列表的 HTML 文档\n\
+  \n```html\n<h1 id=”heading”>Top 3 Cities</h1>\n<ol id=”list”>\n  <li>Tokyo, Japan</li>\n\
+  \  <li>New York, USA</li>\n  <li>Rio de Janeiro, Brazil</li>\n</ol>\n```\n\n![image](img/htmlv.jpg)\n\
+  \nwrite.html\n\n![image](img/2v.jpg)保存 HTML 文档，然后在浏览器中打开它查看网页\n\n![image](img/pg136_2.jpg)\n\
+  \n![image](img/3v.jpg)接下来，在 script 元素中，创建一个自执行函数，该函数首先初始化两个新的新的列表项元素和一个变量引用\n\n\
+  ```javascript\nconst itemFour = document.createElement( ‘li’ )\nconst itemFive =\
+  \ document.createElement( ‘li’ )\nconst heading = document.getElementById( ‘heading’\
+  \ )\n```\n\n![image](img/4v.jpg)现在，为两个新元素分配文本内容\n\n```javascript\nitemFour.innerText\
+  \ = ‘London, England’\nitemFive.innerText = ‘Cape Town, South Africa’\n```\n\n![image](img/5v.jpg)然后，将新元素内容作为有序列表元素的子元素插入网页\n\
+  \n```javascript\ndocument.getElementById( ‘list’ ).appendChild( itemFour )\ndocument.getElementById(\
+  \ ‘list’ ).appendChild( itemFive )\n```\n\n![image](img/6v.jpg)给现有标题元素添加属性以更改其字体颜色\n\
+  \n```javascript\nheading.setAttribute( ‘style’, ‘color:Red’ )\n```\n\n![image](img/7v.jpg)最后，更改标题以更好地描述扩展后的列表\n\
+  \n```javascript\nheading.innerText = ‘Best Five Cities’\n```\n\n![image](img/8v.jpg)再次保存\
+  \ HTML 文档，然后刷新浏览器查看新写入的内容\n\n![image](img/pg137_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n通过将现有元素作为 `document.removeChild( )` 方法的参数，可以从网页中移除它，或者通过指定新旧元素作为 `document.replaceChild(\
+  \ )` 方法的参数来替换它。\n\n![image](img/hot.jpg)\n\n你可以通过将属性名作为元素 `removeAttribute( )` 方法的参数来移除属性。\n\
+  \n## 管理 Cookie\n\n出于安全考虑，JavaScript 无法在用户的硬盘上写入普通文件，但它可以写入“cookie”文件来存储少量数据。这些文件的大小限制为最大\
+  \ 4KB，每个 Web 服务器最多 20 个。通常，存储在 cookie 中的数据将用于识别后续访问网站的用户。\n\n![image](img/pg138_1.jpg)\n\
+  \nCookie 数据存储在 DOM `document` 对象的 `cookie` 属性中，格式为一个或多个“key=value”对，并以“;”分号结尾。值可能包含空格、逗号或分号，除非作为内置\
+  \ `encodeURI( )` 函数的参数传递，该函数会将字符串以 Unicode 格式编码——例如，这会将空格表示为 %20。\n\n默认情况下，cookie\
+  \ 的寿命限制为当前浏览器会话，除非在创建 cookie 时通过“expires=date”对指定过期日期（该日期值为 UTC 字符串）。通常，这通过使用 JavaScript\
+  \ `Date` 对象并使用 `toUTCString( )` 方法来实现。将现有 cookie 的过期日期设置为过去的时间将删除该 cookie。\n\n从\
+  \ cookie 中检索数据需要一些字符串处理将 Unicode 转换为普通文本（使用内置的 `decodeURI( )` 函数让 %20 再次变为空格），并分离数据的名称和值项。在\
+  \ cookie 字符串内部，多个对可以通过指定“;”分号作为 `split( )` 方法的参数来分离。同样，键和值可以通过指定“=”字符作为 `split(\
+  \ )` 方法的参数来分离。同样，当值是逗号分隔的项目列表时，可以指定“，”逗号作为 `split( )` 方法的参数将其分离为数组元素。\n\n创建一个包含“setter”和“getter”实用函数的外部\
+  \ JavaScript 文件是有用的，这些函数可以被方便地调用以存储和检索 cookie 数据。\n\n![image](img/1v.jpg)从 JavaScript\
+  \ 文件开始编写一个 setter 函数，该函数具有键、值和过期期的参数\n\n```javascript\nfunction setCookie( key,\
+  \ value, days ) {\n  const d = new Date( )\n}\n```\n\n\n\n\n\n```javascript\nd.setTime(\
+  \ d.getTime( ) + ( days * 86400000 ) )\n```\n\n```javascript\ndocument.cookie =\
+  \ key + ‘=’ + encodeURI( value ) + ‘;expires=’ + d.toUTCString( ) + ‘;’\n}\n```\n\
+  \n![image](img/pg138_2.jpg)\n\ncookie.js\n\n![image](img/snake.jpg)\n\ncookie 的过期时间通常无法通过\
+  \ JavaScript 读取。如果需要它可读，请将其也添加到 cookie 值的列表中。\n\n![image](img/hot.jpg)\n\n此处设置过期的长数字是一天的毫秒数。\n\
+  \n![image](img/2v.jpg)然后，添加一个 getter 函数来接收一个键参数\n\n```javascript\nfunction getCookie(\
+  \ key ) {\n  if( document.cookie )\n  {\n    const pairs = decodeURI( document.cookie\
+  \ ).split( ‘;’ )\n    let i, name, value\n    for( i = 0 ; i < pairs.length ; i++\
+  \ )\n    {\n      name = ( pairs[ i ].split( ‘=’ )[ 0 ] ).trim( )\n      if( name\
+  \ === key ) { value = pairs[ i ].split( ‘=’ )[ 1 ] }\n    }\n    return value\n\
+  \  }\n}\n```\n\n![image](img/snake.jpg)\n\n注意这里使用了 `trim( )` 方法来移除名称末尾的任何空格。\n\n\
+  ![image](img/3v.jpg)接下来，创建一个 HTML 文档，其中包含一个空列表并导入了外部 JavaScript 文件\n\n```html\n\
+  <ul id=”list”></ul> <script src=”cookie.js”></script>\n```\n\n![image](img/htmlv.jpg)\n\
+  \ncookie.html\n\n![image](img/4v.jpg)现在，在另一个 script 元素中，创建一个自执行函数来设置 cookie，然后获取它的值\n\
+  \n```javascript\nsetCookie( ‘User’,’Mike McGrath,12345’, 7 )\nconst list = document.getElementById(\
+  \ ‘list’ )\nlet i, value = getCookie( ‘User’ )\nif( value.indexOf( ‘,’ ) )\n{\n\
+  \  value = value.split( ‘,’ )\n}\nfor( i = 0 ; i < value.length ; i++ )\n{\n  list.innerHTML\
+  \ += ‘<li>’ + value[ i ]\n}\n```\n\n![image](img/5v.jpg)将 HTML 文档和 JavaScript 文件保存在\
+  \ Web 服务器的同一个文件夹中，然后在浏览器中打开网页以查看检索到的 cookie 值\n\n![image](img/pg139_1.jpg)\n\n![image](img/forget.jpg)\n\
+  \n可以通过将 cookie 的过期日期设置为早于当前实际日期的来删除 cookie。\n\n## 加载事件\n\n![image](img/pg140_1.jpg)\n\
+  \nDOM 允许 JavaScript 通过脚本作者提供在特定事件发生时执行的函数，来响应网页上发生的“事件”。这些函数被称为“事件处理器”，可以对以下事件做出反应：\n\
+  \n-   **load** – 页面加载到浏览器时触发\n-   **click** – 用户点击鼠标按钮时触发\n-   **keydown** – 用户按下键盘键时触发\n\
+  -   **change** – 用户修改输入字段时触发\n- **submit** – 用户提交 HTML 表单时触发\n\n要响应加载事件，可以通过将事件处理器函数赋值给\
+  \ window 对象的 `onload` 属性来指定，使用此语法：\n\n`onload=*function-name*`\n\n或者，可以将事件名称和事件处理器函数名作为\
+  \ window 对象的 `addEventListener( )` 方法的参数，但事件名称必须包含引号内：\n\n`addEventListener( ‘load’\
+  \ , *function-name* )`\n\n加载事件的事件处理器可能用于检查浏览器的功能，并有效地检查 cookie 数据。\n\n![image](img/1v.jpg)创建一个\
+  \ HTML 文档，其中包含一个指向 cookie 示例此处的链接、一个空段落，并导入了上一个示例中的外部 JavaScript 文件\n\n```html\n\
+  <p><a href=”cookie.html”>Link</a></p>\n<p id=”info”></p>\n<script src=”cookie.js”></script>\n\
+  ```\n\n![image](img/htmlv.jpg)\n\nload.html\n\n![image](img/2v.jpg)接下来，在 script\
+  \ 元素中指定一个在页面加载后执行的事件处理器函数\n\n```javascript\naddEventListener( ‘load’, welcome )\n\
+  ```\n\n![image](img/hot.jpg)\n\n还有一个卸载事件，在用户离开页面时触发。其事件处理器可以通过赋值给 `window.onunload`\
+  \ 属性来指定，也可以指定给 `addEventListener( )` 方法。\n\n![image](img/3v.jpg)现在，添加事件处理器函数来欢迎用户\n\
+  \n```javascript\nfunction welcome( ) {\n  const info = document.getElementById(\
+  \ ‘info’ )\n  if( getCookie( ‘Name’ ) )\n  {\n    info.innerHTML = ‘Welcome Back,\
+  \ ‘ + getCookie( ‘Name’ )\n  }\n  else\n  {\n    let name = prompt( ‘Please Enter\
+  \ Your Name’, ‘User’ )\n    setCookie( ‘Name’, name, 7 )\n    info.innerHTML = ‘Welcome,\
+  \ ‘ + name\n  }\n}\n```\n\n![image](img/forget.jpg)\n\n`prompt( )` 方法的第二个参数是默认输入值。\n\
+  \n![image](img/4v.jpg)保存 HTML 文档并在浏览器中打开它 —— 输入名字，点击链接，然后点击后退按钮\n\n![image](img/pg141_1.jpg)\n\
+  \n![image](img/pg141_2.jpg)\n\n![image](img/pg141_3.jpg)\n\n![image](img/pg141_4.jpg)\n\
+  \n## 鼠标事件\n\n当用户点击 HTML 文档中的特定对象时执行的事件处理器函数，可以通过将函数名赋值给该对象的 `onclick` 和 `ondblclick`\
+  \ 属性来指定。这些处理器响应于：当用户点击一次鼠标按钮时触发的“click”事件，以及当快速连续按下两次鼠标按钮时触发的“dblclick”事件。\n\n![image](img/pg142_1.jpg)\n\
+  \n此外，对象的 `onmousedown` 和 `onmouseup` 属性可以指定事件处理器函数，在鼠标按钮被按下时执行（触发“mousedown”事件），以及在释放时执行（触发“mouseup”事件）。\n\
+  \n同样，对象的 `onmouseover` 和 `onmouseout` 属性可以指定事件处理器函数，在鼠标悬停在元素上时执行（触发“mouseover”事件），以及在移离开元素时执行（触发“mouseout”事件）。这些通常用于创建悬停效果，例如将该元素的\
+  \ `style.background` 属性值更改为不同的颜色。\n\n或者，可以将事件名称和事件处理器函数名作为该对象的 `addEventListener(\
+  \ )` 方法的参数。这可以像上一个示例中 window 对象的 `addEventListener( )` 方法一样使用，通过名称指定函数，或者你可以在第二个参数中内联编写函数定义。\n\
+  \n当事件发生时，可以将事件对象传递给内联事件处理器函数。它有一个 `type` 属性，用于识别该事件的名称。\n\n![image](img/1v.jpg)创建一个包含两个段落和一个按钮的\
+  \ HTML 文档\n\n```html\n<p id=”box”>Target</p>\n<p id=”info”>Place Mouse Over</p>\n\
+  <button id=”btn”>Click Me</button>\n```\n\n![image](img/htmlv.jpg)\n\nmouse.html\n\
+  \n![image](img/2v.jpg)接下来，在 script 元素中创建一个自执行函数，首先初始化两个变量\n\n```javascript\n( function\
+  \ ( ) {\n  const box = document.getElementById( ‘box’ )\n  const btn = document.getElementById(\
+  \ ‘btn’ )\n  // 在此处插入语句\n} ) ( )\n```\n\n![image](img/hot.jpg)\n\nHTML 文档中的任何可见对象都可以为其\
+  \ **click** 事件分配事件处理器，以便该对象可以像按钮一样工作。大多数开发者倾向于使用 `addEventListener( )` 方法指定事件处理器函数，而不是赋值给\
+  \ `onclick` 属性。\n\n![image](img/3v.jpg)现在，插入语句来指定内联事件处理器，这些处理器将向第二个函数传递参数\n\n```javascript\n\
+  box.addEventListener( ‘mouseover’,\n  function ( event ) { reactTo( event, ‘Red’\
+  \ } ) )\nbox.addEventListener( ‘mouseout’,\n  function ( event ) { reactTo( event,‘Purple’\
+  \ } ) )\nbox.addEventListener( ‘mousedown’,\n  function ( event ) { reactTo( event,‘Green’\
+  \ } ) )\nbox.addEventListener( ‘mouseup’,\n  function ( event ) { reactTo( event,‘Blue’\
+  \ } ) )\nbtn.addEventListener( ‘click’,\n  function ( event ) { reactTo( event,‘Orange’\
+  \ } ) )\n```\n\n![image](img/4v.jpg)最后，添加第二个函数来显示事件类型并更改第一个段落的背景颜色\n\n```javascript\n\
+  function reactTo( event, color ) {\n```\n\n\n\n\n\n```javascript\ndocument.getElementById(\
+  \ ‘box’ ).style.background = color\ndocument.getElementById( ‘info’ ).innerText\
+  \ = event.type\n}\n```\n\n![image](img/5v.jpg)保存该 HTML 文档并在浏览器中打开它，然后使用鼠标查看事件和反应\n\
+  \n![image](img/pg143_1.jpg)\n\n![image](img/pg143_2.jpg)\n\n![image](img/pg143_3.jpg)\n\
+  \n![image](img/pg143_4.jpg)\n\n![image](img/pg143_5.jpg)\n\n![image](img/snake.jpg)\n\
+  \n如果移除一个绑定了事件处理程序的对象，你也应该移除其事件处理程序，以避免创建内存泄漏。\n\n## 事件值\n\n除了此处 描述的鼠标事件外，还有一个 `“mousemove”`\
+  \ 事件。它可以将一个事件对象传递给事件处理函数，该对象包含 `x` 和 `y` 属性，这些属性包含了鼠标指针的当前窗口坐标。\n\n![image](img/pg144_1.jpg)\n\
+  \n还有一个 `“keydown”` 事件，在用户首次按下键时触发；一个 `“keypress”` 事件在键被按下时触发；以及一个 `“keyup”` 事件在键释放时触发。这些事件都可以将一个事件对象传递给事件处理函数，该对象包含一个\
+  \ `type` 属性用于识别事件名称，以及一个 `keyCode` 属性用于存储最后一次按下键的数值值。\n\n按键的数值值是其 Unicode 值，可以作为\
+  \ `String.fromCharCode( )` 方法的参数，将其转换为字符值。\n\n事件处理函数可以被指定为 `onmousemove`、`onkeydown`、`onkeypress`\
+  \ 和 `onkeyup` 属性，或者指定为对象的 `addEventListener( )` 方法的参数。\n\n![image](img/1v.jpg)创建一个包含空段落的\
+  \ HTML 文档\n\n```html\n<p id=”info”></p>\n```\n\n![image](img/htmlv.jpg)values.html\n\
+  \n![image](img/2v.jpg)接下来，在脚本元素中，创建一个自执行函数，该函数为三个事件指定一个事件处理函数，并将事件参数传递给该函数\n\n```javascript\n\
+  function ( ) {\n  document.addEventListener( ‘keydown’,\n  function ( event ){ reactTo(\
+  \ event ) } )\n  document.addEventListener( ‘keyup’,\n  function ( event ){ reactTo(\
+  \ event ) } )\n  document.addEventListener( ‘mousemove’,\n  function ( event ){\
+  \ reactTo( event ) } )\n} ) ( )\n```\n\n![image](img/3v.jpg)现在，用一个语句开始事件处理函数以初始化变量\n\
+  \n```javascript\nfunction reactTo( event ) {\n  const info = document.getElementById(\
+  \ ‘info’ )\n  // 在此处插入语句。\n}\n```\n\n![image](img/hot.jpg)常用字符的 Unicode 值与 ASCII\
+  \ 码值相同，其中小写 a-z 为 65-90，A-Z 为 97-122。\n\n![image](img/4v.jpg)然后，插入语句显示鼠标指针的当前窗口坐标值\n\
+  \n```javascript\nif( event.type === ‘mousemove’ )\n{\n  info.innerHTML =\n  ‘Mouse\
+  \ pointer is at X:’ + event.x + ‘ Y:’ + event.y\n}\n```\n\n![image](img/5v.jpg)接下来，添加语句在按下键盘键时显示该键的\
+  \ Unicode 值\n\n```javascript\nif( event.type === ‘keydown’ )\n{\n  info.innerHTML\
+  \ += ‘<hr>’ + event.type\n  info.innerHTML += ‘: ‘ + event.keyCode\n}\n```\n\n![image](img/6v.jpg)最后，添加语句在释放键盘键时显示该键的字符\n\
+  \n```javascript\nif( event.type === ‘keyup’ )\n{\n  info.innerHTML += ‘<br>’ + event.type\
+  \ + ‘: ‘ +\n  String.fromCharCode(** event.keyCode ) + ‘<hr>’\n}\n```\n\n![image](img/7v.jpg)保存该\
+  \ HTML 文档然后在浏览器中打开它，并将鼠标移动到窗口上方，观察随着鼠标移动时显示的坐标值的变化\n\n![image](img/pg145_1.jpg)\n\
+  \n![image](img/8v.jpg)按下任何字母数字键以查看该键的 Unicode 数字和字符值\n\n![image](img/snake.jpg)\n\
+  \n`keydown` 和 `keyup` 事件适用于所有键盘键，但 `keypress` 仅作用于字母数字键。\n\n![image](img/forget.jpg)\n\
+  \n坐标值始终相对于窗口位置，即使事件处理程序绑定在 `document` 对象以外的其他对象上。\n\n## 复选框\n\n单选按钮组允许用户从组中选择任意一个按钮，该组中所有单选按钮输入元素的\
+  \ HTML `name` 属性共享相同的名称。在脚本术语中，该组名是一个数组的名称，可以通过其索引值引用每个单选按钮对象。\n\n![image](img/pg146_1.jpg)\n\
+  \n与单选按钮组不同，复选框按钮组允许用户选择组中的一个或多个按钮。但与单选按钮组一样，每个 `name` 属性都共享相同的组名。该组名也是数组的名称，可以通过其索引值引用每个复选框按钮对象。\n\
+  \n单选按钮对象和复选框按钮对象都有一个 `checked` 属性，当按钮被选中时其为 `true`，否则为 `false`。通过循环数组来检查哪些框被选中。脚本语句也可以为\
+  \ `checked` 属性赋值为 `true`。\n\n![image](img/1v.jpg)创建一个包含三个复选框和一个提交按钮的表单的 HTML 文档\n\
+  \n```html\n<form id=”pizza” action=”echo.pl” method=”POST”>\n  <fieldset>\n    <legend>Select\
+  \ Toppings</legend>\n    <input type=”checkbox” name=”Top” value=”Cheese”\n    <input\
+  \ type=”checkbox” name=”Top” value=”Ham”\n    <input type=”checkbox” name=”Top”\
+  \ value=”Peppers”\n  </fieldset>\n  <input type=”submit”>\n</form>\n```\n\n![image](img/htmlv.jpg)checkbox.html\n\
+  \n![image](img/2v.jpg)接下来，在脚本元素中，创建一个自执行函数，为表单的“submit”事件指定一个事件处理函数并检查一个复选框\n\n\
+  ```javascript\nfunction ( ) {\n  const form = document.getElementById( ‘pizza’ )\n\
+  \  form.addEventListener( ‘submit’,\n  function ( event ){ reactTo( event ) } )\n\
+  \  form.Top[ 0 ].checked = true\n} ) ( )\n```\n\n![image](img/3v.jpg)当复选框组中的多个按钮被选中时，它们的值将以逗号分隔列表的形式提交。\n\
+  \n![image](img/hot.jpg)现在，通过声明三个变量和一个循环开始事件处理函数，以确定哪些框被选中\n\n```javascript\nfunction\
+  \ reactTo( form, event ) {\n  let i, ok, summary = ‘’\n  for( i = 0 ; i < form.Top.length\
+  \ ; i++ )\n  {\n    if( form.Top[ i ].checked )\n    {\n      summary += form.Top[\
+  \ i ].value + ‘ ‘\n    }\n  }\n  // 在此处插入语句。\n}\n```\n\n然后，添加语句确认选择并将其提交到 Web 服务器，或者取消提交\n\
+  \n```javascript\nok = confirm( ‘Submit These Choices?\\n’ + summary )\nif( !ok )\
+  \ { event.preventDefault( ) }\n```\n\n![image](img/4v.jpg)将 HTML 文档保存到 Web 服务器，然后在浏览器中打开它，做出选择，然后确认提交\n\
+  \n![image](img/5v.jpg)\n\n![image](img/6v.jpg)\n\n![image](img/7v.jpg)\n\n![image](img/pg145_1.jpg)\n\
+  \n![image](img/8v.jpg)\n\n![image](img/snake.jpg)\n\n当表单按钮被点击时，会触发表单的默认**事件**动作，即将表单数据提交到\
+  \ Web 服务器。调用表单事件的 `preventDefault( )` 方法可以阻止表单数据的提交。\n\n![image](img/forget.jpg)此示例在支持\
+  \ Perl 服务器端脚本的本地 Web 服务器上运行，该脚本处理表单提交并为浏览器提供响应。\n\n## 选择选项\n\nHTML `<select>` 下拉列表对象中的选项在\
+  \ DOM 中由 `options[ ]` 数组唯一表示，其中每个数组元素包含 HTML `<option>` 标签指定的选项。提交到 Web 服务器时，赋值给\
+  \ `<select>` 标签 `name` 属性的值以及赋值给当前选中 `<option>` 标签 `value` 属性的值将以 name=value 对的形式发送。\n\
+  \n\n\n\n\n重要的是，选择列表对象有一个 `selectedIndex` 属性，它包含当前选中的 `options[]` 数组元素的索引号，可以用它来获取当前所选选项的值。\n\
+  \n当用户更改选择列表中的选定选项时，会触发“change”事件。列表对象的 `onclick` 属性可以指定一个事件处理函数，在选定选项更改时执行该函数。或者，也可以将事件名称和事件处理函数名称作为列表对象的\
+  \ `addEventListener()` 方法的参数。\n\n![image](img/1v.jpg)创建一个包含表单选择列表、提交按钮以及一个空段落的 HTML\
+  \ 文档。\n\n```html\n<form action=”echo.pl” method=”POST\">\n<select id=”list” name=”City\"\
+  >\n<option value=”Rome” selected>Rome</option>\n<option value=”London”>London</option>\n\
+  <option value=”New York” >New York</option>\n</select>\n<input type=”submit\">\n\
+  </form>\n<p id=”info”></p>\n```\n\n![image](img/htmlv.jpg)\n\noptions.html\n\n![image](img/2v.jpg)接下来，在一个\
+  \ script 元素中创建一个自执行函数，为表单的“submit”事件和窗口的“load”事件指定一个事件处理函数。\n\n```javascript\nfunction\
+  \ ( ) {\nconst list = document.getElementById( ‘list’ )\nlist.addEventListener(\
+  \ ‘change’ ,\nfunction ( ) { reactTo( list, event ) } )\naddEventListener( ‘load’\
+  \ ,\nfunction ( ) { reactTo( list, event ) } )\n} ) ( )\n```\n\n![image](img/forget.jpg)\n\
+  \n注意，HTML 的 selected 属性选择了第一个 元素，该元素在 DOM 中由 `options[0]` 表示。\n\n![image](img/3v.jpg)现在，添加事件处理函数，它将在段落中显示事件类型和当前的列表选择项。\n\
+  \n```javascript evenfunction reactTo( list, event ) {\nconst info = document.getElementById(\
+  \ ‘info’ )\nlet index = list.options.selectedIndex\nlet city = list.options[ index\
+  \ ].value\ninfo.innerHTML = event.type + ‘<br>Selected: ‘\ninfo.innerHTML += city\
+  \ + ‘<br>Index: ‘ + index\n}\n```\n\n![image](img/4v.jpg)将 HTML 文档保存到 Web 服务器上，然后在浏览器中打开它，选择一个选项并提交表单。\n\
+  \n![image](img/pg149_1.jpg)\n\n![image](img/pg149_2.jpg)\n\n![image](img/pg149_3.jpg)\n\
+  \n![image](img/common1.jpg)\n\necho.pl\n\n![image](img/hot.jpg)\n\n从层级上来说，这个选中选项可以通过\
+  \ `document.forms[0].elements[0].options[1].value` 来引用——这是 DOM 的最深层。\n\n## 重置更改\n\
+  \n为表单文本输入对象和文本对象的 `onfocus` 和 `onfocusout` 属性指定事件处理函数，以识别活动元素。当用户选择文本字段时，会触发“focus”事件；当用户离开该文本字段时，会触发“focusout”事件。\n\
+  \n![image](img/pg150_1.jpg)\n\n很有用的是，为表单对象的 `onreset` 属性指定事件处理函数，当表单通过重置按钮恢复到原始状态时，移除与表单输入相关的内容。\n\
+  \n与其他对象一样，也可以将事件名称和事件处理函数名称作为文本字段和表单对象的 `addEventListener()` 方法的参数。\n\n![image](img/1v.jpg)创建一个包含带有文本字段和重置按钮的表单以及一个空段落的\
+  \ HTML 文档。\n\n```html\n<form id=”code” >\n<input id=”lang” name=”Language” type=”text”\
+  \ >\n<input type=”reset\">\n<input type=”submit\">\n</form>\n<p id=”info”></p>\n\
+  ```\n\n![image](img/htmlv.jpg)\n\nreset.html\n\n![image](img/2v.jpg)接下来，在一个 script\
+  \ 元素中创建一个自执行函数，为文本字段的“focus”和“focusout”事件、表单的“reset”事件以及窗口的“load”事件指定事件处理函数。\n\n\
+  ```javascript\nfunction ( ) {\nconst form = document.getElementById( ‘code ’ )\n\
+  const lang = document.getElementById( ‘lang ’ )\nconst info = document.getElementById(\
+  \ ‘info’ )\nlang.addEventListener( ‘focus’ ,\nfunction ( event ) { reactTo( event,\
+  \ info ) } )\nlang.addEventListener( ‘focusout’ ,\nfunction ( event ) { reactTo(\
+  \ event, info ) } )\nform.addEventListener( ‘reset’,\nfunction ( ) { defaultMessage(\
+  \ info ) } )\naddEventListener( ‘load’,\nfunction ( ) { defaultMessage( info ) }\
+  \ )\n} ) ( )\n```\n\n![image](img/hot.jpg)\n\n文本字段还有一个 `onselect` 属性，可以对其指定事件处理函数，以响应用户选择其部分文本时触发的“select”事件。\n\
+  \n![image](img/3v.jpg)现在，为文本字段的“focus”和“focusout”事件添加事件处理函数以显示事件类型。\n\n```javascript\n\
+  function reactTo( event, info ) {\ninfo.innerHTML = event.type\n}\n```\n\n![image](img/4v.jpg)然后，为窗口的“load”和表单的“reset”事件添加事件处理函数以显示一条消息。\n\
+  \n```javascript\nfunction defaultMessage( info ) {\ninfo.innerHTML =\n‘Please enter\
+  \ your favorite coding language’\n}\n```\n\n![image](img/5v.jpg)保存 HTML 文档，然后在浏览器中打开它，查看段落中出现的默认消息。\n\
+  \n![image](img/pg151_1.jpg)\n\n![image](img/6v.jpg)选择文本字段并查看“focus”事件触发，然后输入你喜欢的编程语言名称。\n\
+  \n![image](img/pg151_2.jpg)\n\n![image](img/7v.jpg)按下 Tab 键将焦点移动到重置按钮并查看“focusout”事件触发。\n\
+  \n![image](img/pg151_3.jpg)\n\n![image](img/8v.jpg)按下 Enter 键（触发重置按钮）清除文本字段，并再次看到默认消息。\n\
+  \n![image](img/pg151_4.jpg)\n\n## 验证表单\n\n表单对象的 `onsubmit` 属性可以指定事件处理函数，在用户输入的表单提交到\
+  \ Web 服务器之前进行验证。或者，也可以将“submit”事件名称和事件处理函数名称作为表单对象的 `addEventListener()` 方法的参数。\n\
+  \n![image](img/pg152_1.jpg)\n\n简单的表单验证检查文本输入以确保用户已输入内容。当其值为空字符串时，说明没有输入，因此验证函数可以调用\
+  \ `event.preventDefault()` 方法阻止表单提交。\n\n高级表单验证可以检查用户输入的字符串以确保符合预期格式。例如，对于电子邮件地址，格式要求字符串包含“@”字符和至少一个“.”字符。当缺失其中任何一个时，字符串不是有效的邮箱地址，因此验证函数可以阻止表单提交。\n\
+  \n可以通过在表单的 `elements[]` 中引用属性值来引用表单元素。\n\n![image](img/1v.jpg)创建一个包含两个文本字段和一个提交按钮表单的\
+  \ HTML 文档。\n\n```html\n<form id=”contact” action=”echo.pl” method=”POST\">\n<fieldset>\n\
+  <legend>Please Enter Your Details</legend>\nName: <input type=”text” name=”Name”\
+  \ value=””>\n<br><br>\nEmail: <input type=”text” name=”Email” value=””>\n</fieldset>\n\
+  <input type=”submit\">\n</form>\n```\n\n![image](img/htmlv.jpg)\n\nvalidate.html\n\
+  \n![image](img/2v.jpg)接下来，在一个 script 元素中创建一个自执行函数，为表单的“submit”事件指定一个事件处理函数。\n\n\
+  ```javascript\nfunction ( ) {\nconst form = document.getElementById( ‘contact’ )\n\
+  form.addEventListener( ‘submit’ ,\nfunction ( event ) { validate( form, event )\
+  \ } )\n} ) ( )\n```\n\n![image](img/3v.jpg)现在，添加事件处理函数来验证输入。\n\n```javascript\n\
+  function validate( form, event ) {\nlet value = form.elements[ ‘Name’ ].value\n\
+  if( value === ‘’ ) {\nalert( ‘Please Enter Your Name’ )\nevent.preventDefault( )\
+  \ ; return }\nvalue = form.elements[ ‘Email’ ].value\nif( ( value === ‘’ ) || (\
+  \ value.indexOf(‘@’) === -1 ) ||\n(value.indexOf(‘.’) === -1 ) ) {\n```\n\n\n\n\n\
+  \n```javascript\nalert( ‘Please Enter A Valid Email Address’ )\nevent.preventDefault(\
+  \ ) }\n}\n```\n\n![image](img/forget.jpg)\n\n`indexOf()` 方法返回一个整数，表示字符在字符串中的位置；如果未找到字符则返回\
+  \ -1。详情请参见此处。\n\n![image](img/4v.jpg)将 HTML 文档保存到 Web 服务器上，然后在浏览器中打开，输入详细信息并提交表单\n\
+  \n![image](img/pg153_1.jpg)\n![image](img/pg153_2.jpg)\n![image](img/pg153_3.jpg)\n\
+  ![image](img/pg153_4.jpg)\n![image](img/pg153_5.jpg)\n![image](img/pg153_6.jpg)\n\
+  ![image](img/common1.jpg)\n\n```pl\necho.pl\n```\n\n## 总结\n\n- document 对象具有 title、URL、domain、lastModified\
+  \ 和 referrer 属性，用于描述该文档。\n- document 对象具有 forms、images、links、styleSheets 和 scripts\
+  \ 子对象，它们是文档组件的数组。\n- forms 数组代表 `<form>` 标签，并具有一个 elements 子对象，它是表单组件的数组。\n- document\
+  \ 对象具有 `getElementById()`、`getElementsByTagName()` 和 `getElementsByClassName()`\
+  \ 方法，可用于引用 HTML 元素。\n- document 对象的 `innerHTML` 和 `innerText` 属性可向现有元素写入内容。\n- document\
+  \ 对象具有 `createElement()`、`appendChild()` 和 `setAttribute()` 方法，可以向文档添加内容。\n- document\
+  \ 对象的 `cookie` 属性具有“key=value”键对，可以在用户系统上存储少量数据。\n- `encodeURI()`、`decodeURI()`、`toUTCString()`\
+  \ 和 `split()` 函数用于处理 cookie 数据的字符串。\n- DOM 允许 JavaScript 响应如 load、click、keydown、change\
+  \ 和 submit 等事件，以响应用户操作。\n- 事件处理器函数可以赋值给对象属性，或通过 `addEventListener()` 方法指定。\n- 事件对象可以传递给事件处理器函数，并通过其\
+  \ `event.type` 属性识别事件。\n- mousemove 事件对象具有 `x` 和 `y` 属性，包含指针的当前窗口坐标。\n- 单选按钮和复选框按钮对象具有\
+  \ `checked` 布尔属性，仅在按钮被选中时为 true。\n- 选择列表列表对象具有 `selectedIndex` 属性，包含当前选中选项 `[]`\
+  \ 数组元素的索引号。\n- 表单提交事件具有 `preventDefault()` 方法，可以调用它来停止表单提交到 Web 服务器。\n\n## 8 创建\
+  \ Web 应用程序\n\n本章演示了如何创建一个从在线资源获取数据的 Web 应用程序。\n\n- 认识 JSON\n- 制作 Promise\n- 获取数据\n\
+  - 创建界面\n- 填充单元\n- 计算总值\n- 更新应用\n- 总结\n\n## 认识 JSON\n\n![image](img/pg156_1.jpg)\n\
+  \nJavaScript 对象表示法（“JSON”）是一种常用于存储和交换数据的流行文本格式。它是 JavaScript 语言的子集，数据在 JSON 对象内部以用逗号分隔的键值对列表形式存储。所有键必须是\
+  \ String 类型，并用双引号括起来，关联的值只能是以下数据类型之一：\n\n- **String** – 位于双引号内，而不是单引号。\n- **Number**\
+  \ – 整数或浮点数。\n- **Object** – 一个 JSON 对象。\n- **Array** – 但不是 Function 或 Date。\n- **Boolean**\
+  \ – true 或 false。\n- **null** – 但不是 undefined。\n\nJSON 键值对被括在花括号中，如下所示：\n\n`{\"\
+  name”:”Alice”,”age”:21，“city”:”New York”}`\n\n你可以通过将 JavaScript 对象指定为 `JSON.stringify()`\
+  \ 方法的参数，轻松地将其转换为 JSON 对象。\n\n相反，你可以通过将 JSON 对象指定为 `JSON.parse()` 方法的参数，将其转换为 JavaScript\
+  \ 对象。\n\n通常，JSON 对象将数据存储在具有 `.json` 扩展名的文本文件中，并作为在线资源。因此，网页脚本可能会从 Web 服务器接收 JSON\
+  \ 格式的数据。\n\n使用 `JSON.parse()` 方法将 JSON 对象转换为 JavaScript 对象后，可以像往常一样使用点表示法或括号表示法来访问数据。\n\
+  \nJSON 和 XML（可扩展标记语言）都可以用于从 Web 服务器接收数据，但 JSON 被认为更好，因为你需要遍历元素来从 XML 格式中提取数据，而 `JSON.parse()`\
+  \ 方法只需返回所有数据的字符串。\n\n非常有用的是，JavaScript 可以从在线 JSON 资源获取数据用于 Web 应用程序。\n\n![image](img/hot.jpg)\n\
+  \n你可以在 [jsonlint.com](http://www.jsonlint.com) 在线找到免费的 JSON 对象验证器。\n\n![image](img/1b.jpg)用自执行函数开始脚本，创建一个包含\
+  \ String 和 Array 的 JavaScript 对象\n\n```javascript\nlet obj = { category : ’Fashion’\
+  \ ,\nmodels : [ { name : ’Alice’, age : 21, city : ’New York’ } ,\n{ name : ’Kelly’,\
+  \ age : 23, city : ’Las Vegas’ } ] }\n```\n\n![image](img/htmlb.jpg)\n\n```html.html\n\
+  ```\n\n![image](img/2b.jpg)接下来，创建 JavaScript 对象的 JSON 版本并打印出来\n\n```javascript\n\
+  let json_obj = JSON.stringify( obj )\nconsole.log( json_obj )\n```\n\n![image](img/3b.jpg)现在，创建一个\
+  \ JSON 对象的 JavaScript 版本并打印出来进行对比\n\n```javascript\nlet new_obj = JSON.parse( json_obj\
+  \ )\nconsole.log( new_obj )\n```\n\n![image](img/4b.jpg)最后，分别使用点表示法和括号表示法打印选定的值\n\
+  \n```javascript\nconsole.log( new_obj[ ‘category’ ] )\nconsole.log( new_obj.models[\
+  \ 0 ].name )\nconsole.log( new_obj[ ‘models’ ][ 1 ][ ‘name’ ] )\n```\n\n![image](img/5b.jpg)保存\
+  \ HTML 文档，然后在浏览器中打开并启动开发者工具中的控制台以比较对象\n\n![image](img/pg157_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n可以看到 JSON 对象所有的 String 值都在双引号内。\n\n## 制作 Promise\n\nJavaScript 是一种单线程的“同步”语言。这意味着在任何给定时刻只能执行一个操作。随着脚本的进行，每个操作被添加到“调用栈”中，然后执行（按顺序）——然后从栈中移除。\n\
+  \n然而，某些函数是由浏览器 API（应用程序接口）处理的，而不是由 JavaScript 引擎。例如，`setTimeout()` 方法是由浏览器处理的——这样在等待计时器结束就可以执行其他操作。当计时器结束时，会将操作传递给“回调队列”，然后（当它到达队列头部时）执行执行。整个过程由“事件循环”控制，它不断监控调用栈和回调队列的状态。\n\
+  \n![image](img/pg158_1.jpg)\n\n在 JavaScript 中，Promise 对象代表异步操作的最终完成或失败及其结果值。它的状态可以是等待中（pending）、已解决（resolved）或已拒绝（rejected）。\n\
+  \n使用 JavaScript 的 `new` 关键字和 `Promise()` 构造函数创建 promise。它接受一个函数作为参数，该函数反过来接受两个函数名称，指定在\
+  \ promise 解决或拒绝时执行的操作。\n\n每个 JavaScript promise 都有 `then()` 和 `catch()` 方法，可以使用点表示法在\
+  \ promise 对象之后进行“链式”。`then()` 方法可以处理异步操作的结果，而 `catch()` 方法可以处理拒绝时的错误。\n\n![image](img/hot.jpg)\n\
+  \nWeb 浏览器有多个 API，包括 Fetch API，它用于从网络获取资源。\n\n![image](img/hot.jpg)\n\n你可以在 promise\
+  \ 上链式调用多个 `then()` 方法，但只有一个会接收解析后的结果。\n\n\n\n\n\n![image](img/1b.jpg)用一个自执行函数开始脚本，该函数创建一个\
+  \ JavaScript Promise 对象，该对象将在一秒后执行两个函数之一。\n\n```javascript\nconst promise = new\
+  \ Promise( function( resolve, reject ) {\n  let random = Math.round( Math.random(\
+  \ ) * 10 )\n  if ( random % 2 === 0 ) {\n    { setTimeout( function( ) { resolve(\
+  \ random ) }, 1000 ) }\n  } else {\n    { setTimeout( function( ) { reject( random\
+  \ ) }, 1000 ) }\n  }\n} )\n```\n\n![image](img/htmlb.jpg)\n\npromise.html\n\n![image](img/2b.jpg)接下来，添加带有链式方法的语句来显示\
+  \ promise 的状态并处理返回的值。\n\n```javascript\npromise\n  .then( console.log( promise )\
+  \ )\n  .then( function( res ) { console.log( res + ‘ Is Even’ ) ) )\n  .catch( function(\
+  \ err ) { console.log( err + ‘ Is Odd’ ) ) )\n```\n\n![image](img/3b.jpg)保存 HTML\
+  \ 文档然后在网页浏览器中打开它，启动开发者工具中的控制台以查看异步操作。\n\n![image](img/pg159_1.jpg)\n\n![image](img/pg159_2.jpg)\n\
+  \n![image](img/hot.jpg)\n\n注意控制台是如何提供 promise 的行号以及处理结果函数的行号的。\n\n## 获取数据\n\n浏览器支持\
+  \ Fetch API，可以在 JavaScript 中使用它通过网络获取资源。`fetch()` 方法接受单个参数，即要获取的资源的 URL。\n\n![image](img/pg160_1.jpg)\n\
+  \n`fetch()` 方法是异步的，这意味着在等待资源到达时，可以执行其他操作。完成后，`fetch()` 方法会返回一个 `Promise` 对象，该对象包含一个响应（一个\
+  \ `HTTPResponse` 对象）。\n\n通常情况下，`fetch()` 方法可以获取 JSON 资源并使用 `HTTPResponse` 对象的 `json()`\
+  \ 方法对其进行解析。返回的 JSON 数据随后可以作为参数传递给下一个链式 promise 方法，该方法反过来又可以将 JSON 数据传递给处理函数。该过程的语法如下：\n\
+  \n```javascript\nfetch( url )\n  .then( function( response ) { return response.json(\
+  \ ) } )\n  .then( function( data ) { return handler( data ) } )\n  .catch( function(\
+  \ err ) { return console.log( err ) } )\n```\n\n## 箭头函数表达式\n\n上面的函数定义可以选择地写成更简洁的\
+  \ JavaScript `=>` 箭头函数表达式。这允许你省略 `function` 关键字，如下：\n\n```javascript\n.then( ( response\
+  \ ) => { return response.json( ) } )\n```\n\n如果函数体只包含一条语句，并且该语句返回一个值，你也可以省略 `=>`\
+  \ 箭头函数中的大括号和 `return` 关键字，如下：\n\n```javascript\n.then( ( response ) => response.json(\
+  \ ) )\n```\n\n任何参数都可以像往常一样圆圆 `()` 中以逗号分隔列表出现，但如果只有一个参数，你甚至可以省略 `=>` 箭头函数的括号——因此整个过程的语法可以选择地看起来像这样：\n\
+  \n```javascript\nfetch( url )\n  .then( response => response.json( ) )\n  .then(\
+  \ data => handler( data ) )\n  .catch( err => console.log( err ) )\n```\n\n这种方式更易读，但你应该意识到\
+  \ `=>` 箭头函数处理 `this` 关键字的方式与普通函数不同。\n\n![image](img/snake.jpg)\n\n使用箭头函数时，`this`\
+  \ 关键字代表原始上下文的对象，而在普通函数中，`this` 关键字代表调用函数的对象。\n\n![image](img/1b.jpg)打开一个纯文本编辑器（例如\
+  \ Windows 的记事本应用），然后创建一个包含五个键值对对象的 JSON 文档。\n\n![image](img/pg161_3.jpg)\n\nweekdays.json\n\
+  \n![image](img/pg161_1.jpg)\n\n![image](img/2b.jpg)将 JSON 文档保存在 Web 服务器的“htdocs”文件夹中——这样就可以通过网络访问了。\n\
+  \n![image](img/3b.jpg)创建一个创建一个通过获取数据来解析的 promise，通过异步 HTTP 请求开始脚本。\n\n```javascript\n\
+  fetch( http://localhost/weekdays.json’ )\n  .then( response => response.json( )\
+  \ )\n  .then( data => list( data ) )\n  .catch( err => console.log( err ) )\n```\n\
+  \n![image](img/htmlb.jpg)\n\nfetch.html\n\n![image](img/4b.jpg)现在，创建一个用于打印数据的函数。\n\
+  \n```javascript\nfunction list( data ) {\n  const values = Object.values( data )\n\
+  \  let i = 0\n  while( i < values.length ) { console.log( values[ i ] ) ; i++ }\n\
+  }\n```\n\n![image](img/5b.jpg)将 HTML 文档与 JSON 文档保在一起，然后通过 HTTP 打开网页并启动开发者工具中的控制台以查看数据。\n\
+  \n![image](img/pg161_2.jpg)\n\n## 创建界面\n\n本章其余部分将演示一个 Web 应用程序的创建，该程序允许在不重新加载的情况下动态更新网页上的数据。\n\
+  \n网页上的数据可以在不重新加载的情况下动态更新。界面提供了一个表单和一个表格。部分单元格被填充了数据，其他单元格是空的。\n\n在文档主体部分创建一个包含表格的\
+  \ `div` 元素的 HTML 文档。\n\n```html\n<div id=\"databox\">\n  <table>\n    <tr>\n   \
+  \   <td></td>\n      <td class=\"col\">1</td>\n      <td class=\"col\">2</td>\n\
+  \      <td class=\"col\">3</td>\n      <td class=\"col\">4</td>\n      <td class=\"\
+  col\">5</td>\n      <td class=\"tot\">Total</td>\n    </tr>\n    <tr>\n      <td\
+  \ class=\"row\">1</td>\n      <td id=\"n0\"></td>\n      <td id=\"n1\"></td>\n \
+  \     <td id=\"n2\"></td>\n      <td id=\"n3\"></td>\n      <td id=\"n4\"></td>\n\
+  \      <td id=\"rt1\"></td>\n    </tr>\n    <tr>\n      <td class=\"row\">2</td>\n\
+  \      <td id=\"n5\"></td>\n      <td id=\"n6\"></td>\n      <td id=\"n7\"></td>\n\
+  \      <td id=\"n8\"></td>\n      <td id=\"n9\"></td>\n      <td id=\"rt2\"></td>\n\
+  \    </tr>\n    <tr>\n      <td class=\"row\">3</td>\n      <td id=\"n10\"></td>\n\
+  \      <td id=\"n11\"></td>\n      <td id=\"n12\"></td>\n      <td id=\"n13\"></td>\n\
+  \      <td id=\"n14\"></td>\n      <td id=\"rt3\"></td>\n    </tr>\n    <tr>\n \
+  \     <td class=\"col\">1</td>\n      <td class=\"col\">2</td>\n      <td class=\"\
+  col\">3</td>\n      <td class=\"col\">4</td>\n      <td class=\"col\">5</td>\n \
+  \     <td id=\"gt\" class=\"tot\"></td>\n    </tr>\n  </table>\n</div>\n```\n\n\
+  ![image](img/htmlb.jpg)\n\nwebapp.html\n\n![image](img/hot.jpg)表格中的空单元格具有 `id` `n0-n14`，行合计单元格具有\
+  \ `rt1-rt3`，列合计单元格具有 `ct1-ct3`，右下角的总计单元格具有 `id` `gt`。在表格之后添加一个包含两个选择框、一个文本输入和一个按钮的表单。\n\
+  \n```html\n<form action=\"#\">\n  <fieldset id=\"editbox\">\n    <legend>单元格编辑器</legend>\n\
+  \    <div>\n      <select id=\"rownum\">\n        <option selected=\"selected\"\
+  >1</option>\n        <option>2</option>\n        <option>3</option>\n      </select>\n\
+  \      <select id=\"colnum\">\n        <option selected=\"selected\">1</option>\n\
+  \        <option>2</option>\n        <option>3</option>\n        <option>4</option>\n\
+  \        <option>5</option>\n      </select>\n      新值: <input id=\"newval\" type=\"\
+  text\" size=\"5\" value=\"\">\n      <input type=\"button\" value=\"更新\" onclick=\"\
+  update()\">\n    </div>\n  </fieldset>\n</form>\n```\n\n在 HTML 文档的头部部分添加样式表，然后通过\
+  \ HTTP 打开网页以查看应用于表格和表单的样式。\n\n```css\n<style>\n  legend { background: Tomato; color:\
+  \ White; }\n  table { text-align: center; }\n  td { width: 50px; height: 20px; }\n\
+  \  td.col { background: LightBlue; }\n  td.row { background: LightGreen; }\n  td.tot\
+  \ { background: DarkOrange; color : White; }\n  td.gto { background: Khaki; }\n\
+  \  #databox { width: 360px; padding: 5px; margin: auto; }\n  #editbox { width :\
+  \ 360px; padding : 5px; margin: auto; border: 1px solid Tomato; color: Tomato; }\n\
+  </style>\n```\n\n\n\n\n\n此示例中的 JSON 和 HTML 文件位于位于此 PC 上运行的 Web 服务器的“htdocs”文件夹中，因此\
+  \ HTTP 中的域名 URL 地址为“localhost”。\n\n## 填充单元格\n\n在此处创建了 Web 应用程序表格和表单后，可以创建一个 JSON\
+  \ 数据文件和 JavaScript 例程，用于填充表格。\n\n![image](img/1b.jpg)打开一个纯文本编辑器（如 Windows 的记事本应用），然后创建一个包含十五个键值对的对象的\
+  \ JSON 文档。\n\n![image](img/pg161_3.jpg)\n\n`data.json`\n\n![image](img/pg164_1.jpg)\n\
+  \n![image](img/2b.jpg)将 JSON 文档与 HTML 文档一起保存到 Web 服务器的“htdocs”文件夹中。\n\n![image](img/3b.jpg)在\
+  \ HTML 文档的 `</body>` 标签之前添加一个 `<script> </script>` 元素。\n\n![image](img/htmlb.jpg)\n\
+  \n`webapp.html`（续）\n\n![image](img/4b.jpg)接下来，在 `<script>` 元素中插入一个函数，通过创建一个必须通过获取\
+  \ JSON 数据来解析的 promise，来执行异步 HTTP 请求。\n\n```javascript\nfetch( ‘http://localhost/data.json’\
+  \ )\n```\n\n```javascript\n.then( response => response.json( ) )\n```\n\n![image](img/5b.jpg)现在，在\
+  \ promise 上再链接另外两个语句，将 JSON 数据传递给下一个链式方法，或者如果请求无法解析，则记录错误消息。\n\n```javascript\n\
+  .then( cells => fill( cells ) )\n```\n\n```javascript\n.catch( err => console.log(\
+  \ err ) )\n```\n\n![image](img/6b.jpg)保存 HTML 文档，然后通过 HTTP 重新加载网页并打开开发者工具中的控制台查看错误消息——因为接收\
+  \ JSON 数据的函数尚未创建。\n\n![image](img/pg165_1.jpg)\n\n![image](img/7b.jpg)返回 HTML 文档中的\
+  \ `<script>` 元素，创建一个接收 JSON 数据的函数，并将其所有值插入表格单元格中。\n\n```javascript\nfunction fill(\
+  \ cells ) {\n  const values = Object.values( cells )\n  let i = 0\n  while( i <\
+  \ values.length ) {\n    document.getElementById( ‘n’ + i ).innerText =\n    values[\
+  \ i ].toFixed( 2 )\n    i++\n  }\n}\n```\n\n![image](img/8b.jpg)再次保存 HTML 文档，然后通过\
+  \ HTTP 重新加载网页即可在表格中看到数值。\n\n![image](img/pg165_2.jpg)\n\n## 总数值\n\n一旦空白白色表格单元格填充了数据，就可以按照此处的步骤计算并写入行合计、列合计以及总计。\n\
+  \n![image](img/1b.jpg)在 `fill( cells )` 函数块的末尾，最后一个 `}` 之前，插入一个计算总计的函数调用。\n\n```javascript\n\
+  total( )\n```\n\n![image](img/htmlb.jpg)\n\n`webapp.html`（续）\n\n![image](img/2b.jpg)通过初始化四个变量开始计算总计的函数。\n\
+  \n```javascript\nfunction total( ) {\n  let i = 0\n  let sum = 0\n  let rownum =\
+  \ 1\n  let colnum = 0\n  // 在此处插入语句。\n}\n```\n\n![image](img/3b.jpg)在函数块变量之后，插入一个循环在每行末尾的单元格中写入每行的合计。\n\
+  \n```javascript\nfor ( i = 0 ; i < 15 ; i++ ) {\n  sum +=\n  parseFloat( document.getElementById(\
+  \ ‘n’ + i ).innerText )\n  if ( ( i + 1 ) % 5 === 0 ) {\n    document.getElementById(\
+  \ ‘rt’ + rownum ).innerText =\n    sum.toFixed( 2 )\n    rownum++\n    sum = 0\n\
+  \  }\n}\n```\n\n![image](img/hot.jpg)\n\n该循环通过在字母“n”后面附加递增的索引数字来选择行单元格，选择元素 `id`\
+  \ 值为 `n0`、`n1`、`n2`、`n3`、`n4`，然后是下一行的单元格。\n\n![image](img/4b.jpg)接下来，在函数块中插入一个循环，在每列底部的单元格中写入每列的合计。\n\
+  \n```javascript\nwhile ( colnum !== 5 ) {\n  for ( i = 0 ; i < 15 ; i++ ) {\n  \
+  \  if ( i % 5 === 0 ) sum += parseFloat(\n      document.getElementById( ‘n’ + (\
+  \ i + colnum ) ).innerText )\n    )\n  }\n  colnum++\n  document.getElementById(\
+  \ ‘ct’ + colnum ).innerText =\n  sum.toFixed( 2 )\n  sum = 0\n}\n```\n\n![image](img/5b.jpg)现在，在函数块中插入一个循环，在表格右下角的单元格中写入所有白色单元格的总计。\n\
+  \n```javascript\nfor ( i = 0 ; i < 15 ; i++ ) {\n  sum +=\n  parseFloat( document.getElementById(\
+  \ ‘n’ + i ).innerText )\n}\ndocument.getElementById( ‘gt’ ).innerText = sum.toFixed(\
+  \ 2 )\n```\n\n![image](img/hot.jpg)\n\n注意 `toFixed( 2 )` 方法确保单元格值将以两位小数显示。\n\n![image](img/6b.jpg)保存更改并通过\
+  \ HTTP 重新加载网页即可查看总计被写入表格。\n\n![image](img/pg167_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n该循环通过在字母“n”后面附加递增的索引数字加递增的列号来选择列单元格，选择元素 `id` 值为 `n0`、`n5`、`n10`，然后是下一列的单元格。\n\
+  \n## 更新应用\n\n一旦填充了合计单元，就可以按照此处的步骤向脚本添加允许用户更新表格的表单按钮事件处理函数。\n\n![image](img/1b.jpg)开始一个初始化六个变量的函数。\n\
+  \n```javascript\nfunction update( ) {\n  let row =\n  document.getElementById( ‘rownum’\
+  \ ).options.selectedIndex\n  let col =\n  document.getElementById( ‘colnum’ ).options.selectedIndex\n\
+  \  let newval =\n  parseFloat( document.getElementById( ‘newval’ ).value )\n  let\
+  \ legend = document.getElementById( ‘legend’ )\n  let target = null\n  // 在此处插入语句。\n\
+  }\n```\n\n![image](img/htmlb.jpg)\n\n`webapp.html`（续）\n\n![image](img/forget.jpg)\n\
+  \n此处使用 `parseFloat( )` 函数将字符串输入转换为数字类型以便进行算术运算。\n\n![image](img/2b.jpg)接下来，在函数块中插入验证表单语句，如果无效则写入提示。\n\
+  \n```javascript\nif( row === 0 ) { legend.innerText = ‘选择行’ ; return }\nif( col\
+  \ === 0 ) { legend.innerText = ‘选择列’ ; return }\nif( !newval ) { legend.innerText\
+  \ = ‘输入值’ ; return }\nif( isNaN( newval ) ) { legend.innerText = ‘输入数字’ ; return\
+  \ }\n```\n\n![image](img/3b.jpg)现在，在函数块中将用户的有效输入进入选定的单元格，然后计算并应用新的总计。\n\n```javascript\n\
+  target = ( ( row - 1 ) * 5 ) + col ) -1\ndocument.getElementById( ‘n’ + target ).innerText\
+  \ =\nnewval.toFixed( 2 )\ntotal( )\n```\n\n![image](img/4b.jpg)最后，在函数块中重置表单以便进一步输入。\n\
+  \n```javascript\ndocument.getElementById( ‘rownum’ ).options[ 0 ].selected = true\n\
+  document.getElementById( ‘colnum’ ).options[ 0 ].selected = true\ndocument.getElementById(\
+  \ ‘newval’ ).value = ‘ ‘\nlegend.innerText = ‘单元格编辑器’\n```\n\n![image](img/5b.jpg)保存\
+  \ HTML 文档，然后通过 HTTP 在浏览器中打开网页并编辑单元格值以查看总计更新。\n\n![image](img/pg169_1.jpg)\n\n例如：选择第二行第一列。\n\
+  \n![image](img/pg169_2.jpg)输入新值并点击按钮。\n\n![image](img/hot.jpg)当输入不完整时，可以点击按钮查看验证消息。\n\
+  \n![image](img/pg169_3.jpg)看到单元格值、列合计、行合计以及总计全部更新，并看到表单重置以便再次编辑。\n\n![image](img/forget.jpg)\n\
+  \n`toFixed( 2 )` 函数确保整数输入以两位小数显示。\n\n总结\n\n•JSON 是一种用于存储和交换数据的文本格式，是 JavaScript\
+  \ 语言的子集。\n\n•JSON 对象在花括号内包含逗号分隔的键值对列表。\n\n•JSON 对象中的所有键必须是 String 类型。\n\n•JSON 对象中的所有值只能是\
+  \ String、Number、Object、Array、Boolean 或 null 类型。\n\n•可以使用 `JSON.stringify( )` 方法将\
+  \ JavaScript 对象转换为 JSON 对象。\n\n\n\n\n\n- JSON 对象可以通过 `JSON.parse()` 方法转换为 JavaScript\
+  \ 对象。\n- JavaScript 是一种单线程同步语言，但浏览器 API 支持一些异步操作。\n- 事件循环（event loop）不断监控调用栈和回调队列的状态。\n\
+  - `Promise` 对象代表异步操作的最终完成或失败及其产生的值。\n- `then()` 和 `catch()` 方法可以链式调用到 `Promise`\
+  \ 对象，以处理异步操作的结果。\n- `Fetch API` 可以在 JavaScript 中用于通过网络异步获取资源。\n- 完成后，`fetch()` 方法返回一个包含\
+  \ `HTTPResponse` 对象的 `Promise` 对象。\n- `HTTPResponse` 对象有一个 `json()` 方法，可以解析 JSON\
+  \ 对象。\n- 一些函数定义可以写成更简洁的 JavaScript `=>` 箭头函数表达式。\n- 箭头函数表达式处理 JavaScript `this`\
+  \ 关键字的方式与普通函数不同。\n- JSON 数据可以填充 Web 应用程序的单元格。\n\n## 9 编写脚本魔法\n\n本章演示了使用各种 API 的魔法能力。\n\
+  \n- 请求数据\n- 嵌入矢量\n- 绘制画布\n- 存储数据\n- 拖拽项目\n- 传递消息\n- 定位用户\n- 总结\n\n## 请求数据\n\n异步\
+  \ JavaScript 和 XML (“AJAX”)允许通过向 Web 服务器请求数据来更新 页面，而不中断其他操作。\n\n要使用 AJAX，JavaScript\
+  \ 必须首先使用 `new` 关键字和 `XMLHttpRequest()` 构造函数创建一个 `XMLHttpRequest` 对象。实际请求作为该对象的 `open()`\
+  \ 方法的三个参数指定——说明检索方法、一个 `URL` 以及一个使请求异步执行的布尔值 `true`。\n\n然后可以通过调用对象的 `send()` 方法来发送请求。最后，必须将事件处理程序指定给\
+  \ `XMLHttpRequest` 对象的 `onreadystatechange` 属性以处理来自 Web 服务器的响应。这可以首先测试对象的 `readyState`\
+  \ 属性是否为 `4` 且对象的 `status` 属性为 `200`，以确保响应确实完成且成功。\n\n通过 `XMLHttpRequest` 对象检索的文本自动存储在它的\
+  \ `responseText` 属性中，但 XML 数据自动存储在 `responseXML` 属性中。DOM 将 XML 文档元素表示为“节点”，因此需要额外的步骤来访问其内容。例如，特定标签名的元素节点可以通过\
+  \ `responseXML` 属性的 `getElementsByTagName()` 方法分配给数组变量。\n\n每个元素节点都有一个 `firstChild`\
+  \ 属性，它是内容的文本节点。这反过来有一个 `data` 属性，包含实际的文本内容。因此，元素节点的 `firstChild.data` 属性可以揭示该 XML\
+  \ 元素中的文本。\n\n![image](img/pg172_2.jpg)\n\n`books.xml`\n\n![image](img/1r.jpg)创建一个包含\
+  \ 10 个 `<book>` 元素和内部（子）`<title>` 元素的 XML 文档\n\n![image](img/pg172_1.jpg)\n\n![image](img/hot.jpg)\n\
+  \n在请求的每个阶段，`readyState` 属性会被分配一个数字：\n\n- **0**: 未初始化\n- **1**: 服务器已连接\n- **2**:\
+  \ 请求已接收\n- **3**: 正在处理请求\n- **4**: 响应就绪\n\n完成后，`status` 属性会被分配一个代码：\n\n- **200**:\
+  \ “OK”\n- **403**: “Forbidden”\n- **404**: “Page Not Found”\n\n![image](img/forget.jpg)\n\
+  \n这里的截图只显示了 10 个 `<book>` 元素中的两个，这些元素提供从 [www.ineasysteps.com/resource-centre/downloads](http://www.ineasysteps.com/resource-centre/downloads)\
+  \ 下载的免费源码。\n\n![image](img/2r.jpg)创建一个包含按钮元素和空有序列表元素的 HTML 文档\n\n```html\n<button\
+  \ onclick=\"loadXML()\">获取书籍</button>\n<ol id=\"list\"></ol>\n```\n\n![image](img/htmlr.jpg)\n\
+  \n`xmldom.html`\n\n![image](img/3r.jpg)以一个请求 XML 数据的函数开始脚本\n\n```javascript\nfunction\
+  \ loadXML() {\n  const xmlhttp = new XMLHttpRequest();\n  xmlhttp.open('GET', 'books.xml',\
+  \ true);\n  xmlhttp.send();\n  xmlhttp.onreadystatechange = function() {\n    if(this.readyState\
+  \ == 4 && this.status == 200)\n      getData(this)\n  }\n}\n```\n\n![image](img/4r.jpg)接下来，添加一个函数处理响应并将\
+  \ XML 数据写入页面的空列表元素\n\n```javascript\nfunction getData(xml) {\n  const xmlDoc = xml.responseXML;\n\
+  \  const tags = xmlDoc.getElementsByTagName('book');\n  let list = '', i = 0;\n\
+  \  for (i = 0; i < tags.length; i++) {\n    list += '<li>' + tags[i].getElementsByTagName('title')[0].firstChild.data;\n\
+  \  }\n  document.getElementById('list').innerHTML = list;\n}\n```\n\n![image](img/hot.jpg)\n\
+  \n此处的循环的每次迭代都在获取“book.title.data”。使用 CSS，通过 `li.nth-child(even)` 选择器为列表项目赋予了交替的背景颜色。\n\
+  \n![image](img/5r.jpg)将 XML 和 HTML 文档保存到 Web 服务器的“htdocs”文件夹中，然后打开网页并点击按钮，魔法般请求\
+  \ XML 数据\n\n![image](img/pg173_1.jpg)\n\n![image](img/pg173_2.jpg)\n\n![image](img/common3.jpg)\n\
+  \n像 HTML 文档一样，XML 文档也可以通过 W3C 的线验证工具 [validator.w3.org](http://validator.w3.org)\
+  \ 进行验证\n\n## 嵌入矢量\n\n嵌入在 HTML 文档中的 SVG 图形维护了所有元素和属性的 SVG DOM 节点树。这与 HTML DOM 分离，但可以通过脚本轻松访问，允许\
+  \ HTML 文档与嵌入的 SVG 图形进行交互。\n\n![image](img/pg174_1.jpg)\n\n访问 SVG DOM 的关键是首先使用 `getSVGDocument()`\
+  \ 方法创建 SVG 文档的引用对象。然后可以通过以下方式访问 SVG 文档中的元素、属性和文本：\n\n![image](img/1r.jpg)创建一个带有矩形、圆形和文本的\
+  \ SVG 图形\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg xmlns=\"http://www.w3.org/2000/svg\"\
+  \ version=\"1.1\" width=\"100%\" height=\"100%\" viewBox=\"0 0 500 70\" preserveAspectRatio=\"\
+  none\">\n  <rect width=\"100%\" height=\"100%\" style=\"fill:bisque;stroke-width:2;stroke:tomato\"\
+  \ />\n  <text id=\"svgTxt\" x=\"10\" y=\"50\" font-family=\"sans-serif\" font-size=\"\
+  30\" fill=\"tomato\">SVG Text</text>\n  <circle id=\"svgBtn\" cx=\"460\" cy=\"35\"\
+  \ r=\"30\" fill=\"tomato\" cursor=\"pointer\" />\n</svg>\n```\n\n![image](img/pg174_2.jpg)\n\
+  \n`banner.svg`\n\n![image](img/2r.jpg)接下来，创建一个嵌入 SVG 图形并包含文本输入字段和推送按钮的 HTML 文档\n\
+  \n```html\n<embed id=\"svgDoc\" src=\"banner.svg\" type=\"image/svg+xml\" width=\"\
+  500\" height=\"70\">\n<br>\n<input id=\"htmTxt\" size=\"50\">\n<button id=\"htmBtn\"\
+  >发送到 SVG 文档</button>\n```\n\n![image](img/htmlr.jpg)\n\n`svgdom.html`\n\n![image](img/3r.jpg)现在，在脚本元素中为\
+  \ SVG 文档和两个文档内的元素创建引用\n\n```javascript\nfunction loadSVG() {\n  const svgDoc = document.getElementById('svgDoc').getSVGDocument();\n\
+  \  const svgTxt = svgDoc.getElementById('svgTxt');\n  const svgBtn = svgDoc.getElementById('svgBtn');\n\
+  \  const htmTxt = document.getElementById('htmTxt');\n  const htmBtn = document.getElementById('htmBtn');\n\
+  \  // 插入语句\n}\n\nonload = loadSVG;\n```\n\n![image](img/forget.jpg)\n\n注意此示例通过 `window.onload`\
+  \ 事件初始化\n\n![image](img/4r.jpg)插入语句为 HTML 推送按钮指定点击事件处理函数\n\n```javascript\nhtmBtn.addEventListener('click',\
+  \ function () {\n  svgTxt.lastChild.replaceWith(htmTxt.value)\n})\n```\n\n\n\n\n\
+  \n![image](img/5r.jpg)然后，插入语句为 SVG 圆形指定点击事件处理函数\n\n```javascript\nsvgBtn.addEventListener(\
+  \ ‘click’, function ( ) {\n  htmTxt.value = svgTxt.lastChild.wholeText\n  svgTxt.lastChild.replaceWith(\
+  \ ‘SVG Text’ ) )\n```\n\n![image](img/6r.jpg)将 HTML 和 SVG 文档保存到 Web 服务器的“htdocs”文件夹中，然后在浏览器中打开网页并输入一些文本——点击按钮和圆形，查看你的文本如何在\
+  \ HTML 和 SVG 之间发生魔法般地移动\n\n![image](img/pg175_1.jpg)\n![image](img/pg175_2.jpg)\n\
+  ![image](img/pg175_3.jpg)\n![image](img/hot.jpg)\n\n注意，在 SVG DOM 中，实际文本包含在 SVG `<text>`\
+  \ 元素的 `lastChild` 节点的 `wholeText` 属性中。\n\n![image](img/common3.jpg)\n\n在线在 **[w3.org/TR/SVG11/svgdom.html](http://www.w3.org/TR/SVG11/svgdom.html)**\
+  \ 更多关于 SVG DOM 的知识。\n\n## 绘制画布 (Paint Canvas)\n\n![image](img/pg176_1.jpg)\n\n在\
+  \ HTML 中，`<canvas>` 元素在页面上创建一个位图画布区域，JavaScript 可以 Canvas2D API 的方法和属性在该区域绘制形状和文本。可以轻松创建动画，只需反复清除当前画布，然后以比人眼能察觉的速度在修改后的位置重绘形状。画布动画脚本的基本组件是：\n\
+  \n• 初始化 Context 对象和形状的起始位置。\n• 清空画布，然后在画布上绘制形状。\n•为下一次重绘计算新的形状位置。\n\n![image](img/1r.jpg)创建一个在\
+  \ body 部分包含一个有颜色画布区域的 HTML 文档\n\n```html\n<canvas id=“canvas” width=“500” height=“150”\
+  \ style=“background: Bisque; border: 2px solid Tomato”>\n[Canvas Area]\n</canvas>\n\
+  ```\n\n![image](img/htmlr.jpg)\n\ncanvas.html\n\n![image](img/2r.jpg)接下来，编写一个脚本，用函数在\
+  \ HTML DOM 内容加载后初始化 context 对象属性，然后用画布大小、“小球”起始位置的 X 和 Y 坐标以及它的方向步长初始化变量\n\n```javascript\n\
+  function init( ) {\n  const canvas = document.getElementById( ‘canvas’ )\n  if (\
+  \ canvas.getContext ) {\n    const context = canvas.getContext( ‘2d’ )\n    const\
+  \ cw = canvas.width\n    const ch = canvas.height\n    let x = 5 , y = 44 , dx =\
+  \ 5 , dy = 5\n    context.fillStyle = ‘Red’\n    // 在此处插入语句。\n  }\n}\n\ndocument.addEventListener(\
+  \ ‘DOMContentLoaded’, init )\n```\n\n![image](img/hot.jpg)\n\n要在画布上绘制，脚本必须首先创建一个具有绘制方法和属性的\
+  \ `CanvasRenderingContext2D` 对象。在这里，该对象赋值给名为 `context` 的变量。注意初始化函数会在 `DOMContentLoaded`\
+  \ 事件触发时被调用。\n\n![image](img/3r.jpg)现在，插入语句每隔 25 毫秒计算新的 X 和 Y 坐标并调用函数在画布上绘制小球\n\n\
+  ```javascript\nsetInterval( function( ) {\n  if ( ( x + dx > cw-30 ) || ( x + dx\
+  \ < 10 ) ) dx = -dx\n  if ( ( y + dy > ch-30 ) || ( y + dy < 10 ) ) dy = -dy\n \
+  \ x += dx\n  y += dy\n  paint( context, cw, ch, x, y ) } , 25 )\n```\n\n![image](img/4r.jpg)最后，添加函数以真正向画布上绘制小球\n\
+  \n```javascript\nfunction paint( context, cw, ch, x, y ) {\n  context.clearRect(\
+  \ 0, 0, cw, ch )\n  context.beginPath( )\n  context.arc( x, y, 30, 0, ( Math.Pi\
+  \ * 2 ), true )\n  context.fill( )\n}\n```\n\n![image](img/5r.jpg)保存 HTML 文档和脚本，然后在浏览器中打开网页，查看动画小球魔法般地在画布上跳动\n\
+  \n![image](img/pg177_1.jpg)\n![image](img/pg177_2.jpg)\n![image](img/hot.jpg)\n\n\
+  注意当小球碰撞边界时方向步长的极性是如何反转的——这样它就不会跳出画布。\n\n![image](img/hot.jpg)\n\n创建静态背景和边框作为样式——这样它们就不需要反复绘制。\n\
+  \n![image](img/common3.jpg)\n\n在线在 **[w3.org/TR/2dcontext](http://www.w3.org/TR/2dcontext)**\
+  \ 更多关于 Canvas2D API 的知识。\n\n## 存储数据\n\n卓越的 Web Storage API 支持存储用户数据，它让存储用户数据变得轻而易举。它提供了\
+  \ `localStorage` 对象，即使在浏览器关闭后仍保留存储的数据，以及 `sessionStorage` 对象，它只保留数据直到浏览器关闭。这些对象都具有相同存储和检索数据的方法。`setItem()`\
+  \ 方法需要两个参数来指定键和要存储的数据——例如，使用 `localStorage.setItem( “Name”, “Mike” )` 中的键“Name”。然后可以通过指定键作为\
+  \ `getItem()` 方法的唯一参数来检索存储的数据，或者通过指定键作为 `removeItem()` 方法的唯一参数来删除数据。此外，可以使用不带参数的\
+  \ `clear()` 方法删除所有存储项。\n\n![image](img/1r.jpg)创建一个包含带有文本输入和三个按钮的 fieldset 的 HTML\
+  \ 文档\n\n```html\n<fieldset> <legend id=”legend” >输入数据</legend>\n<input id=”data”\
+  \ type=”text” >\n<button onclick=”store( )”>存储数据</button>\n<button onclick=”recall(\
+  \ )”>召回数据</button>\n<button onclick=”remove( )”>重置</button> </fieldset>\n```\n\n\
+  ![image](img/htmlr.jpg)\n\nwebstorage.html\n\n![image](img/2r.jpg)接下来，为第一个按钮创建一个事件处理函数——如果有效，则将数据保存到本地存储中\n\
+  \n```javascript\nfunction store( ) {\n  let data = document.getElementById( ‘data’\
+  \ ).value\n  if( data === ‘‘ ) { return false } else {\n    localStorage.setItem(\
+  \ ‘ls_data’ , data )\n    document.getElementById( ‘data’ ).value = ‘‘\n    document.getElementById(\
+  \ ‘legend’ ).innerText =\n    localStorage.getItem( ‘ls_data’ ) + ‘ - 已存储’ )\n \
+  \ }\n}\n```\n\n![image](img/3r.jpg)接下来，为第二个按钮添加事件处理函数——从本地存储中检索并显示数据\n\n```javascript\n\
+  function recall( ) {\n  if ( localStorage.getItem( ‘ls_data’ ) === null ) {\n  \
+  \  document.getElementById( ‘legend’ ).innerText =\n    ‘输入数据’ ; return false }\
+  \ else {\n    document.getElementById( ‘data’ ).value = ‘‘\n    document.getElementById(\
+  \ ‘legend’ ).innerText =\n    ‘存储的数据：’ + localStorage.getItem( ‘ls_data’ )\n  }\n\
+  }\n```\n\n![image](img/snake.jpg)\n\n`localStorage` 和 `sessionStorage` 中的所有数据都以字符串值存储——因此添加检索到的值\
+  \ 5 和 7 将拼接为 57。\n\n![image](img/forget.jpg)\n\n页面必须通过 HTTP（来自 Web 服务器）提供才能使用 Web\
+  \ Storage。它提供了 cookie 存储的替代方案，并提供了至少 5MB 的更大容量。\n\n![image](img/4r.jpg)最后，为第三个按钮添加事件处理函数——移除本地存储中的数据\n\
+  \n```javascript\nfunction remove( ) {\n  if ( localStorage.getItem( ‘ls_data’ )\
+  \ === null ) {\n    document.getElementById( ‘legend’ ).innerText =\n    ‘输入数据’\
+  \ ; return false } else {\n    document.getElementById( ‘legend’ ).innerText =\n\
+  \    localStorage.getItem( ‘ls_data’ ) + ‘ 已删除’\n    localStorage.remove( ‘ls_data’\
+  \ )\n    document.getElementById( ‘data’ ).value = ‘‘\n  }\n}\n```\n\n\n\n\n您可以在\
+  \ [www.w3.org/TR/webstorage](http://www.w3.org/TR/webstorage) 在线了解更多关于 Web Storage\
+  \ API 的信息。\n\n## 拖拽项目\n\n![image](img/pg180_1.jpg)\n\nDrag-and-Drop API 支持用户拖动页面对象并将其释放到目标上。它指定了许多在用户拖动对象时触发的事件，但最重要的的是\
+  \ `dragstart`、`dragover` 和 `drop` 事件。需要为这些事件中的每一个编写事件处理器：\n\n• `ondragstart` 事件处理器\
+  \ – 用于指定在拖拽开始时附加到被拖拽对象上的 `Text` 数据。\n• `ondragover` 事件处理器 – 用于取消释放目标的默认行为，从而允许将对象释放到其上。\n\
+  • `ondrop` 事件处理器 – 用于定义当对象被释放到释放目标时应该发生什么。\n\n此外，`ondrop` 事件处理器通常应该确保目标本身不会被拖拽到自身：\n\
+  \n![image](img/1r.jpg)创建一个 HTML 文档，其中包含一个带有图片的段落以及 fieldset 中的一个空列表\n\n```html\n\
+  <p>\n<img id=\"bin\" src=\"bin.png\" alt=\"Bin\">\n<img class=\"folder\" id=\"Red\"\
+  \ src=\"red.png\" alt=\"Folder\">\n<img class=\"folder\" id=\"Yellow\" src=\"yel.png\"\
+  \ alt=\"Folder\">\n<img class=\"folder\" id=\"Green\" src=\"grn.png\" alt=\"Folder\"\
+  >\n</p>\n<fieldset>\n<legend>Folders Dropped:</legend>\n<ol id=\"list\"></ol>\n\
+  </fieldset>\n```\n\n![image](img/pg180_2.jpg)\n\n![image](img/htmlr.jpg)\n\ndragndrop.html\n\
+  \n![image](img/2r.jpg)编写一个脚本，在 DOM 完全加载后通过一个语句添加事件监听器\n\n```javascript\ndocument.addEventListener('DOMContentLoaded',\
+  \ dragNdrop)\n```\n\n![image](img/3r.jpg)接下来，创建事件处理器函数，该函数首先获取对图片和列表元素的引用\n\n```javascript\n\
+  function dragNdrop() {\n    const bin = document.getElementById('bin');\n    const\
+  \ folders = document.getElementsByClassName('folder');\n    const list = document.getElementById('list');\n\
+  \    // Statements to be inserted here.\n}\n```\n\n![image](img/4r.jpg)现在，插入语句为每个文件夹图片附加事件处理器，并取消\
+  \ bin 的默认行为\n\n```javascript\nlet i = 0;\nfor(i = 0; i < folders.length; i++) {\n\
+  \    folders[i].ondragstart = function(event) {\n        event.dataTransfer.setData('Text',\
+  \ this.id)\n    }\n}\nbin.ondragover = function(event) { return false }\n```\n\n\
+  ![image](img/5r.jpg)最后，插入语句来获取被拖拽文件夹的 id 和元素引用，然后（除非是 bin）将其 id 写入列表并删除该文件夹图片\n\n\
+  ```javascript\nbin.ondrop = function(event) {\n    const did = event.dataTransfer.getData('Text');\n\
+  \    const tag = document.getElementById(did);\n    if (did === 'bin') { return\
+  \ false }\n    else { list.innerHTML += '<li>' + did }\n    tag.parentNode.removeChild(tag)\n\
+  }\n```\n\n![image](img/6r.jpg)保存 HTML 文档，然后在浏览器中打开它，神奇地将文件夹拖入垃圾桶中\n\n![image](img/pg181_1.jpg)\n\
+  \n![image](img/pg181_2.jpg)\n\n![image](img/hot.jpg)\n\n注意 `dragstart` 事件的 `dataTransfer.setData()`\
+  \ 方法的参数指定了数据格式和实际数据——在这种情况下是“Text”格式和被拖拽元素的 `id`。\n\n![image](img/common3.jpg)\n\
+  \n您可以在 [dev.w3.org/html5/spec/dnd.html](http://dev.w3.org/html5/spec/dnd.html) 在线了解更多关于\
+  \ Drag-and-Drop API 的信息。\n\n## 传递消息\n\nMessaging API 支持在文档之间发送纯文本消息。要向另一个文档发送消息，发送者可以在目标窗口引用（例如\
+  \ `iframe` 元素）调用 `postMessage()`。接收者监听 `message` 事件并处理来自 `event` 对象的数据。出于安全考虑，接收者应该始终使用\
+  \ `event.origin` 验证发送者的来源。\n\n```javascript\n// 发送端\nconst cage = document.getElementById('cage').contentWindow;\n\
+  cage.postMessage('Hello from sender', 'http://localhost');\n```\n\n```javascript\n\
+  // 接收端\nwindow.addEventListener('message', function(event) {\n    if (event.origin\
+  \ === 'http://localhost') {\n        document.getElementById('msg').innerText =\
+  \ event.data;\n    }\n});\n```\n\n## 定位用户\n\n强大的 Geolocation API 支持精确定用户的地理位置。它首先请求用户同意共享位置详情——例如，将附近的无线访问点和计算机的\
+  \ IP 地址信息发送给 Google 位置服务。该服务返回用户估计的纬经度坐标。成功获取的坐标可以显示在页面上，并提供给 Google Maps 服务以获取该位置的地图。\n\
+  \n在 body 部分创建一个包含两个固定大小段落的 HTML 文档：\n\n```html\n<p id=\"msg\" style=\"width:450px;height:50px;\"\
+  ></p>\n```\n\n\n\n\n<p id=\"map\" style=\"width:450px;height:200px\"></p>\n\n![image](img/htmlr.jpg)\n\
+  \ngeolocation.html\n\n接下来，在文档的头部（head）部分添加一个元素来获取 Google Maps API\n\n```html\n<script\
+  \ src=\"https://maps.googleapis.com/maps/api/js?key=API_KEY\"></script>\n```\n\n\
+  ![image](img/3r.jpg)\n\n现在，在文档的主体（body）部分结尾开始一个脚本，包含一个在 HTML 文档加载后尝试获取用户位置函数\n\n\
+  ```javascript\nfunction init( ) {\n  if ( navigator.geolocation ) {\n    document.getElementById(\
+  \ ‘msg’ ).innerText = ‘Geolocation service is trying to find you...’\n    navigator.geolocation.getCurrentPosition(\
+  \ success , fail )\n  } else {\n    document.getElementById( ‘msg’ ).innerText =\
+  \ ‘Your browser does not support Geolocation service’\n  }\n}\ndocument.addEventListener(\
+  \ ‘DOMContentLoaded’, init )\n```\n\n![image](img/4r.jpg)\n\n然后，添加一个函数在尝试失败时显示消息\n\
+  \n```javascript\nfunction fail( position ) {\n  document.getElementById( ‘msg’ ).innerText\
+  \ = ‘Geolocation service cannot find you at this time’\n}\n```\n\n![image](img/forget.jpg)\n\
+  \n在此示例中，`navigator.geolocation` 对象提供了 `getCurrentPosition()` 方法，该方法必须指定函数来处理成功和失败。这些函数必须都接受一个返回的\
+  \ `position` 对象参数，因为其中包含了坐标或错误详情。\n\n![image](img/5r.jpg)\n\n最后，添加一个成功函数，在尝试成功时显示获取到的坐标和地图\n\
+  \n```javascript\nfunction success( position ) {\n  const lat = position.coords.latitude\n\
+  \  const lng = position.coords.longitude\n  document.getElementById( ‘msg’ ).innerHTML\
+  \ = ‘Found you at...<br>Latitude: ‘ + lat + ‘ , Longitude: ‘ + lng\n  const latlng\
+  \ = new google.maps.LatLng( lat , lng )\n  const options = { zoom: 18 , center :\
+  \ latlng , mapTypeId: google.maps.MapTypeId.ROADMAP }\n  const map = new google.maps.Map(\
+  \ document.getElementById( ‘map’ ) , options )\n  const marker = new google.maps.Marker(\
+  \ { position: latlng , map: map , title: ‘You are here’ } )\n}\n```\n\n![image](img/6r.jpg)\n\
+  \n将 HTML 文档保存在本地 Web 服务器的“htdocs”文件夹中，然后打开网页并允许获取您的位置——即可神奇地精准定位\n\n![image](img/pg185_1.jpg)\n\
+  \n![image](img/pg185_2.jpg)\n\n![image](img/hot.jpg)\n\n要重现此示例，你首先需要在 [cloud.google.com](http://cloud.google.com)\
+  \ 登录在线 Google Cloud 并创建一个项目。然后，为你的项目启用 Maps JavaScript API 并获取 API 密钥。将步骤 2 中的 `API_KEY`\
+  \ 替换为你自己的密钥以运行该示例。\n\n![image](img/common3.jpg)\n\n可以在 [dev.w3.org/geo/api](http://dev.w3.org/geo/api)\
+  \ 在线发现更多关于 Geolocation API 的信息。\n\n## 总结\n\n- AJAX 允许网页通过从 Web 服务器请求数据来更新，而不会中断其他操作。\n\
+  - 成功的 `XMLHttpRequest` 将文本存储在 `responseText` 属性中，并将 XML 数据存储在 `responseXML` 属性中。\n\
+  - 嵌入 HTML 文档的 SVG 图形维护其所有元素和属性的 SVG DOM 节点树。\n- `getSVGDocument()` 方法创建 SVG 文档元素、属性和文本的引用对象。\n\
+  - Canvas2D API 提供了可以在画布区域绘制形状和文本的方法和属性。\n- `getContext()` 方法创建画布区域的引用对象。\n- Web\
+  \ Storage API 提供了长期的 `localStorage` 对象和用于临时存储的 `sessionStorage` 对象。\n- 使用 `setItem()`\
+  \ 方法可以将项目存储在 `localStorage` 或 `sessionStorage` 中，并指定键和数据。\n- 拖放 API 允许用户拖动页面对象并将其到到目标。\n\
+  - 需要为 `dragstart`、`dragover` 和 `drop` 事件编写脚本，以创建拖放界面。\n- Messaging API 允许在文档之间安全地发送纯文本消息——即使是不同域的文档。\n\
+  - 要接收消息，接收方文档必须正确识别托管发送文档的域。\n- Geolocation API 提供了在用户同意共享位置详情时精准定位用户位置的能力。\n- Google\
+  \ Location Services 返回用户估计的纬度和经度坐标。\n- 坐标可以显示在页面上并提供给 Google Maps 以获取该位置地图。\n\n\
+  ![image](img/bm1.jpg)\n\n![image](https://iescourses.com/)\n\n![image](img/bm2.jpg)\n\
+  \n![image](img/bcover.jpg)\n\n"

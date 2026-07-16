@@ -1,0 +1,1904 @@
+<p><img src="Images/cover00047.jpeg" /></p>
+<p><span id="part0000.xhtml"></span></p>
+<div id="part0000.xhtml_aid-1">
+<p><span style=" font-size:3.0rem; font-weight:bold; "> </span></p>
+<p><br />
+<span
+style=" font-size:3.0rem; font-weight:bold; ">JavaScript:</span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span
+style=" font-size:2.0rem; font-weight:normal; font-style:italic; ">Best
+Practices </span><br />
+<span
+style=" font-size:2.0rem; font-weight:normal; font-style:italic; ">to
+Programming Code </span><br />
+<span
+style=" font-size:2.0rem; font-weight:normal; font-style:italic; ">with
+JavaScript </span><br />
+<br />
+<br />
+<br />
+<br />
+<span style=" font-size:1.7rem; font-weight:bold; ">Charlie
+Masterson</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.3rem; font-weight:normal; ">Table of
+Contents</span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><a href="#part0000.xhtml__Introduction"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Introduction</span></a></p>
+<p><a href="#part0000.xhtml_Ch1"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Chapter
+1: Common JavaScript Mistakes</span></a></p>
+<p><a href="#part0000.xhtml_Ch2"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Chapter
+2: General Recommendations</span></a></p>
+<p><a href="#part0000.xhtml_Ch3"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Chapter
+3: Best Practices for Comments and Logging</span></a></p>
+<p><a href="#part0000.xhtml_Ch4"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Chapter
+4: Tips for Better Performance</span></a></p>
+<p><a href="#part0000.xhtml_Ch5"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Chapter
+5: Best JavaScript Tips for Beginners</span></a></p>
+<p><a href="#part0000.xhtml_Conclusion"><span
+style=" font-size:1.0rem; text-decoration:underline; color:#0000ff">Conclusion</span></a></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<div style="page-break-after:always">
+
+</div>
+<p><span style=" font-size:1.3rem; font-weight:bold;  ">©</span><span
+style=" font-size:1.3rem; "> Copyright 2016 by Charlie Masterson - All
+rights reserved.</span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem">The following eBook is reproduced
+below with the goal of providing information that is as accurate and
+reliable as possible. Regardless, purchasing this eBook can be seen as
+consent to the fact that both the publisher and the author of this book
+are in no way experts on the topics discussed within and that any
+recommendations or suggestions that are made herein are for
+entertainment purposes only. Professionals should be consulted as needed
+prior to undertaking any of the action endorsed herein.</span><br />
+<br />
+<span style=" font-size:1.0rem">This declaration is deemed fair and
+valid by both the American Bar Association and the Committee of
+Publishers Association and is legally binding throughout the United
+States. </span><br />
+<br />
+<span style=" font-size:1.0rem">Furthermore, the transmission,
+duplication or reproduction of any of the following work including
+specific information will be considered an illegal act irrespective of
+if it is done electronically or in print. This extends to creating a
+secondary or tertiary copy of the work or a recorded copy and is only
+allowed with express written consent from the Publisher. All additional
+right reserved.</span><br />
+<br />
+<span style=" font-size:1.0rem">The information in the following pages
+is broadly considered to be a truthful and accurate account of facts and
+as such any inattention, use or misuse of the information in question by
+the reader will render any resulting actions solely under their purview.
+There are no scenarios in which the publisher or the original author of
+this work can be in any fashion deemed liable for any hardship or
+damages that may befall them after undertaking information described
+herein.</span><br />
+<br />
+<span style=" font-size:1.0rem">Additionally, the information in the
+following pages is intended only for informational purposes and should
+thus be thought of as universal. As befitting its nature, it is
+presented without assurance regarding its prolonged validity or interim
+quality. Trademarks that are mentioned are done without written consent
+and can in no way be considered an endorsement from the trademark
+holder.</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<h3 style="margin:0.77% 0.00%"><span
+id="part0000.xhtml__Introduction"></span><span
+id="part0000.xhtml__Toc468700067"></span><span
+id="part0000.xhtml_Introduction"><span
+style="-aw-bookmark-end:_Introduction"></span><span
+style=" font-size:2.3rem; font-weight:bold">I</span><span
+style="-aw-bookmark-end:_Toc468700067"></span><span
+style=" font-size:2.3rem; font-weight:bold">ntroduction</span></span></h3>
+<p><span style="-aw-bookmark-end:Introduction"></span><br />
+<span style=" font-size:1.0rem">Welcome to our book, "JavaScript: Best
+Practices to Programming Code with JavaScript”. Whether you are a
+beginner with coding or have been doing it for a while, you know how
+hard JavaScript can be! Even the simplest mistakes can mess up your
+entire code! We are here to tell you that it happens with everyone! You
+are not alone in this situation. It is how you handle these mistakes
+that could differentiate you from the other coders. </span></p>
+<p><span style=" font-size:1.0rem">Do you just give up because of one
+mistake? Of course not! Life is all about making mistakes, and learning
+from them. Within these chapters, we will be teaching you some basic
+practices to enhance your skills within JavaScript. We will be giving
+you the best methods, processes, and techniques that will help lead to a
+better JavaScript programming code. As you learn, you will be able to
+apply your new skills to everyday life.</span></p>
+<p><span style=" font-size:1.0rem"> Our goal is to have our readers
+proficient in JavaScript code, so they can expand their knowledge by
+reading this book. If you are at this point, we expect that you have
+some previous knowledge of JavaScript, even if it is just the basics.
+Sometimes, JavaScript books can be frustrating. The code is not always
+an easy topic to explain clearly. We promise to make this coding process
+as simple as possible. </span></p>
+<p><span style=" font-size:1.0rem"> For our first chapter, we will be
+going into depth on some of the common JavaScript mistakes every coder
+has done. You may find that you aren't the only one making some of these
+errors. In fact, some seem silly to be messing up! Don't worry;
+sometimes it is the smallest mistakes that are the easiest to fix!
+Perhaps you are skipping attention to detail such as mismatching quotes
+or even changing your variable names. Were you aware that properties and
+variable names were case sensitive? If not, we have got you covered!
+</span></p>
+<p><span style=" font-size:1.0rem"> After the common mistakes, we will
+go over some general recommendations to help improve your code. For
+example, we will be going over how to define your local vars, how to
+avoid global variables and more! Once we have discussed the general
+recommendations, we move onto tips to improve your comments, logging,
+and overall performance. As we stated before, our primary goal is to
+develop your skills as a coder.</span></p>
+<p><span style=" font-size:1.0rem"> As you read, please feel free to
+stop and practice the codes we provide. After all, practice makes
+perfect! Eventually, coding will become more natural for you and you
+won't have to stop and think about the code as much. Of course, errors
+are bound to happen, but as you learn you may find yourself making less
+of them. We hope that you enjoy the read and will learn a thing or two
+while you're at it! </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span id="part0000.xhtml_Ch1"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 1: </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Common JavaScript
+Mistakes</span></span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem">Yes, you probably know all of the
+codes to follow. Just remember that coding in JavaScript can trip you
+up, no matter how long you've been working with code. The following
+examples are some of the common traps people fall into. When you are
+working, try to keep these models in your mind. This way, when you are
+coding or debugging, you will catch yourself sooner! </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Mismatching Quotes,
+Curly Brace, and Parenthesis</span></p>
+<p><span style=" font-size:1.0rem"> If you do this a lot, there is an
+easy way to avoid the mistake. All you will need to do is to code your
+opening and closing elements at the same time! After you do this, you
+can enter your element that you want to add to your code. Here is an
+example: </span></p>
+<p><br />
+<span style=" font-size:0.83rem">CODE</span><br />
+<br />
+<span style=" font-size:0.83rem">var myString=" "; </span><br />
+<span style=" font-size:0.83rem">function myFunction(){</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">if(){</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">}</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">}</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">First line, you want to code the
+quotes before you even enter your string value. This way, you don’t
+forget them.</span></li>
+<li><span style=" font-size:1.0rem">In your second line, close every
+bracket as soon as you open it.</span></li>
+<li><span style=" font-size:1.0rem">Within your code, be sure you double
+check and count the left and right parenthesis within your code. You
+will want to double check and make sure that they are equal</span></li>
+<li><span style=" font-size:1.0rem">Finally, if you open a parenthesis,
+be certain you close it!</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Case
+Sensitive</span></p>
+<p><span style=" font-size:1.0rem">In case you aren’t already aware,
+functions and variables are both case sensitive. While you are working,
+it can be VERY easy to make this silent error. When you are picking
+names, we suggest you stick with it. As a small tip, just remember that
+the CSS properties within JavaScript are going to be camelCase. Here’s a
+quick example:</span></p>
+<p><span style=" font-size:0.83rem">getElementById("theId") !=
+getElementByID("theId");</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Did you catch the mistake? Instead
+of "ID" it should have been "Id"</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem">getElementById("theId") !=
+getElementById("theID");</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">What about this time? You got it!
+"Id" will not equal "ID." You can see how this is a common mistake,
+especially if you are trying to move quickly!</span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Line Breaks and
+Extra Commas</span></p>
+<p><span style=" font-size:1.0rem">When you are coding, you will want to
+stay away from hard-line breaks. When you use line breaks, they will be
+interpreted as a line-ending semicolon. This can also happen in a
+string. When you include a hard line break in your quotes, you are going
+to get an error.  It will most likely be the ‘unterminated string’ parse
+error. Here is an example:</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Unterminated String
+Error:</span><br />
+<br />
+<span style=" font-size:0.83rem">var bad= &lt;ul
+id="myId"&gt;</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">&lt;li&gt;writing the
+text&lt;/li&gt;</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">&lt;li&gt;even more text
+&lt;/li&gt;</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">&lt;/ul&gt;;</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+<li><span style=" font-size:1.0rem">Correct Line Break</span><br />
+<br />
+<span style=" font-size:0.83rem">var good= '&lt;ul id="myId"&gt;'
++</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">'&lt;li&gt; writing the text &lt;/li&gt;'
++</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">'&lt;li&gt; even more text &lt;/li&gt;'
++</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">'&lt;/ul&gt;';</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+<li><span style=" font-size:1.0rem">It should be noted that this
+semi-colon rule will not hold true with control structures. In control
+structures, a line break AFTER your closing parenthesis is not given by
+a semi-colon.</span></li>
+<li><span style=" font-size:1.0rem">To fix this mistake, you will want
+always to use semi-colons and parenthesis. This way, your code is easier
+to read, you will not get tripped up by the breaking lines, and when you
+move your code around, you will never have to worry about your initial
+statement closing.</span></li>
+<li><span style=" font-size:1.0rem">If you have extra commas, remember
+that your last property should not end with a comma. While some browsers
+won't be tripped up by the extra commas (such as Firefox), Internet
+explorer will. Just try and remember that it is better to be safe than
+sorry when you are working with code!</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Conditional
+Statements</span></p>
+<p><span style=" font-size:1.0rem">When you are coding, there are three
+common conditional statement mistakes. Here are some of the
+following:</span></p>
+<ol type="1">
+<li><span style=" font-size:1.0rem">When you are coding, try not to get
+tripped up by using an assignment operator. When you do this, you are
+conveying your second argument value to your first. Obviously, this will
+come back as a logic issue. When this happens, it will return true and
+will not throw an error if value in var2 is not zero.</span><br />
+<br />
+<span style=" font-size:1.0rem">Example:</span></li>
+</ol>
+<p><span style=" font-size:0.83rem">if(var1 = var2) {}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">This will return true or false,
+depends on value in var2. It assigns var2 to var1. You have to be
+careful in case this is something you did not mean!</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<ol start="2" type="1">
+<li><span style=" font-size:1.0rem">Remember that all of your
+conditional comments have to be within parentheses. This may seem like a
+simple mistake. However, you would be surprised just how common it is!
+</span><br />
+<br />
+<span style=" font-size:1.0rem">Example:</span></li>
+</ol>
+<p><span style=" font-size:0.83rem">if(var1 == var2) {}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ol start="3" type="1">
+<li><span style=" font-size:1.0rem">For most cases, JavaScript is
+loosely typed. This is not the fact when you switch statements. Your
+JavaScript will not be loosely typed when you use case comparisons.
+</span><br />
+<br />
+<span style=" font-size:1.0rem">Example:</span></li>
+</ol>
+<p><span style=" font-size:0.83rem">var myVar = 1;</span><br />
+<span style=" font-size:0.83rem">if(myVar == '1') {</span><br />
+<span style=" font-size:0.83rem">alert ("hey");</span><br />
+<br />
+<span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:0.83rem">switch(myVar) {</span><br />
+<span style=" font-size:0.83rem">case '1' :</span><br />
+<span style=" font-size:0.83rem">alert("hey");</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">In the first line, your code will
+return true because JavaScript is loosely typed</span></li>
+<li><span style=" font-size:1.0rem">As for your alert in the third lime,
+it will show because most of the time, JavaScript will not care about
+the data type</span></li>
+<li><span style=" font-size:1.0rem">In the last line, your alert will
+NOT show because your data types will not match.</span></li>
+<li><span style=" font-size:1.0rem">However, if you want to make
+javascript also check the data type, instead of two equals signs, you
+should use three (===). In this case, this will not alert:</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem">var myVar = 1;</span><br />
+<span style=" font-size:0.83rem">if(myVar === '1') {</span><br />
+<span style=" font-size:0.83rem">alert ("hey");</span><br />
+<span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Variable
+Scope</span></p>
+<p><span style=" font-size:1.0rem"> </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.86pt"></span></span><span
+style=" font-size:1.0rem">Not surprising, there are quite a few issues
+that can come from the variable scope. Some of these issues include
+overwriting the global variable from a local variable within your
+function or even thinking that a local variable is incorrectly a global
+variable. As you will be learning later, it is best just not to use any
+global variables. If you can't avoid them, at least know how to avoid
+them. </span></p>
+<p><span style=" font-size:1.0rem">When you have global variables,
+remember that they will not be declared by the typical var keyword.
+Instead, you must declare your variables with the key term to keep them
+from having a global scope. Here is an example of a variable having a
+declared function and in return, getting a global scope:</span></p>
+<p><br />
+<span style=" font-size:0.83rem">CODE:</span><br />
+<br />
+<span style=" font-size:0.83rem">anonymousFunction1 =
+function(){</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">globalvar= 'global scope';</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">return globalvar;</span><br />
+<span style=" font-size:0.83rem">} ();</span><br />
+<br />
+<span style=" font-size:0.83rem">alert(globalvar);</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">In this code, the "var" is missing,
+when this happens, globally will be declared.</span><br />
+<br />
+<span style=" font-size:0.83rem">CODE:</span><br />
+<br />
+<span style=" font-size:0.83rem">anonymousFunction2 =
+function(){</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">var localvar = 'local scope' ;</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 18pt"></span></span><span
+style=" font-size:0.83rem">return localvar;</span><br />
+<span style=" font-size:0.83rem">} ();</span></li>
+</ul>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">alert(localvar);</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">In this code, there is a locally
+declared "var"</span></li>
+<li><span style=" font-size:1.0rem">Last, there will be an error of
+"localvar is not defined." As you can see, this is because there is no
+globally defined localvar.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">HTML id
+Conflicts</span></p>
+<p><span style=" font-size:1.0rem"> </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.86pt"></span></span><span
+style=" font-size:1.0rem">This little mistake is more of a best practice
+for CSS, but sometimes it can be helpful if you are having a JavaScript
+issue. An HTML id allows JavaScript to have DOM bindings to allow
+indexing. As you will recall, both properties and functions share a
+namespace in your coding. So, if your properties and function happen to
+have the same name, you may be creating a logic error. These errors are
+hard to track down! When you are using JavaScript to code, we suggest
+avoiding variable names that are also ID values. Also, if you are
+marking your HTML, try not to use a property name as a value. This will
+help avoid confusion. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an example: </span><br />
+<br />
+<span style=" font-size:0.83rem">CODE:</span></p>
+<p><span style=" font-size:0.83rem">var listitems=
+document.getElementsByTagName('a');</span></p>
+<p><span style=" font-size:0.83rem">var aCount=
+listitems.length;</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">If you happened to have &lt;a
+id="length"&gt;, it would sometimes return as &lt;a&gt; instead of the
+count you asked for. This is why it is very important to remember this
+little tip.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">String
+Replace</span></p>
+<p><span style=" font-size:1.0rem"> This string replace happens to be
+another very common mistake in the coding world. You may have made this
+mistake of assuming the behavior of your string replace method. When you
+make assumptions, it could impact all of your possible matches. If you
+weren't already aware, JavaScript will only change the first occurrence
+in your string replace method. If you want to replace all of your
+occurrences, it should be noted that you will need first to set a global
+modifier. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is a good example: </span></p>
+<p><br />
+<span style=" font-size:0.83rem">CODE:</span><br />
+<br />
+<span style=" font-size:0.83rem">var myString = "the string were talking
+about";</span><br />
+<span style=" font-size:0.83rem">myString= myString.replace(/ /, "%10");
+//</span><br />
+<span style=" font-size:0.83rem">"the%10string were talking
+about"</span><br />
+<span style=" font-size:0.83rem">myString = myString.replace(/
+/g,"%10"); //</span><br />
+<span
+style=" font-size:0.83rem">"the%10string%10were%10talking%10about"</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">‘this’</span></p>
+<p><span style=" font-size:1.0rem">If you are used to using JavaScript
+for coding, you may have made the mistake of forgetting to use the
+‘this’. If this isn’t ringing a bell for you, the functions in
+JavaScript are defined as object accessing properties. When you fail to
+use the ‘this’ identifier, things may get lost. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an incorrect example:</span></p>
+<p><span style=" font-size:0.83rem">function myFunction ()
+{</span><br />
+<span style=" font-size:0.83rem"> var myObject = {</span><br />
+<span style=" font-size:0.83rem"> objProperty: " the text you are
+using",</span><br />
+<span style=" font-size:0.83rem"> objMethod: function () {</span><br />
+<span style=" font-size:0.83rem">                        alert
+(objProperty);</span><br />
+<span style=" font-size:0.83rem">                        }</span><br />
+<span style=" font-size:0.83rem"> };</span><br />
+<span style=" font-size:0.83rem"> myObject. objMethod ();</span><br />
+<span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:1.0rem">Here is the correct code when you use
+‘this’:</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:0.83rem">function myFunction ()
+{</span><br />
+<span style=" font-size:0.83rem"> var myObject = {</span><br />
+<span style=" font-size:0.83rem"> objProperty: " the text you are
+using",</span><br />
+<span style=" font-size:0.83rem"> objMethod: function () {</span><br />
+<span style=" font-size:0.83rem">                        alert
+(this.objProperty);</span><br />
+<span style=" font-size:0.83rem">                        }</span><br />
+<span style=" font-size:0.83rem"> };</span><br />
+<span style=" font-size:0.83rem"> myObject. objMethod ();</span><br />
+<span style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">Missing
+Parameter</span></p>
+<p><span style=" font-size:1.0rem"> </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.86pt"></span></span><span
+style=" font-size:1.0rem">When you are coding, remember that you will
+want to update all of your function calls. This happens when you add the
+parameter to your function. Sometimes, people miss this and cause
+themselves some simple errors. Remember that if you do need to add a
+parameter to a special case, you will have to first set a default value
+for the parameter first for your function. This way, you won't miss
+updating your calls in any of your scripts. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an example: </span></p>
+<p><span style=" font-size:0.83rem">function addressFunction ( city,
+state, country){</span></p>
+<p><span style=" font-size:0.83rem">               Country = country ||
+"London" ; </span><br />
+<span style=" font-size:0.83rem">}</span></p>
+<p><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:bold">Overwriting/
+Overloading Functions</span></p>
+<p><span style=" font-size:1.0rem"> </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.86pt"></span></span><span
+style=" font-size:1.0rem">When you are coding, if you declare a function
+more than once, your last declaration of the same function will
+overwrite any of the previous functions. This can be difficult because
+it will not give you any warnings or sign of error. In JavaScript, there
+is no overloading. This is why it is important to avoid any core names
+of JavaScript in your code. You will also want to avoid including
+JavaScript files in excess. If this happens, it could overwrite the same
+function in another script. Instead, we suggest using namespaces and
+functions instead, here is an example: </span><br />
+<br />
+<span style=" font-size:1.0rem"> </span><span
+style=" font-size:0.83rem">CODE:</span><br />
+<span style=" font-size:0.83rem">// the creation of the
+namespace</span></p>
+<p><span style=" font-size:0.83rem">// if the namespace does not exist,
+create it.</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">if (!window.THENAMESPACE) {</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">window [ 'THENAMESPACE' ] = {}; </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.03pt"></span></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:0.83rem">// note that this function is only
+accessible in the anonymous function</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">function myFunction (var1, var2){</span></p>
+<p><span style=" font-size:0.83rem">//the local function code will go
+here }</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">/* This will attach the local function to
+your namespace. This meaning that it will be accessible outside of your
+anonymous function when it uses the namespace*/</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">window['THENAMESPACE']['myFunction'] =
+myFunction;</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">};</span><br />
+<span style=" font-size:0.83rem">//Note that the parenthesis will open
+an immediate execution //</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">It is the parenthesis that
+encompasses the code that will make your anonymous
+function.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Using ‘For Each’
+Correctly</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:1.0rem">As you will recall, JavaScript uses the "for"
+loop for your object attributes, properties, and methods. It uses the
+code to loop all your property names in an object. This loop will also
+include the functions and properties that you are not interested in
+having in your code. If you filter out these values, you will want to
+use the "hasOwnProperty" or the "typeof" function. While coding, we
+suggest staying away from the "each"; the only time you will want to use
+"each" is when you want to iterate methods and object properties.
+</span><br />
+<br />
+<span style=" font-size:1.0rem">Here are a few tips when
+coding:</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">for (var myVar in myObject)The code
+from above is meant to iterate a specific variable in the properties of
+a specific object. This will not matter what order it is in. The for…in
+loop will not iterate the built-in properties.</span></li>
+<li><span style=" font-size:1.0rem">for (var i=0; i &lt;myArray.length;
+i++)</span><br />
+<span style=" font-size:1.0rem">This code should be used for all
+elements of your array. It will iterate thru all of the
+above.</span></li>
+<li><span style=" font-size:1.0rem">for each (var myVar in
+myObject)</span><br />
+<span style=" font-size:1.0rem">This code is meant for specific
+variables in all of your object’s properties</span></li>
+<li><span style=" font-size:1.0rem">If you wish to solve this issue, you
+will want to use the for…in if you are using it for objects. When you
+want to loop your array, just use for. Here is an example:</span></li>
+<li><span
+style=" font-size:1.0rem">listItems=document.getElementsByTagName('La');</span></li>
+</ul>
+<p><span style=" font-size:1.0rem">for each (var listitem in
+listItems){</span><br />
+<span style=" font-size:1.0rem">}</span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Note: The code from above will go
+thru all of the methods of the object and all of the
+properties</span></li>
+<li><span style=" font-size:1.0rem">This will include any native
+properties and methods. Please also note that it will not go thru the
+array. Instead, it will throw an error.</span></li>
+<li><span style=" font-size:1.0rem">Due to the fact that there is the
+array of objects that you will want to look thru. Use the for loop such
+as followed:</span></li>
+<li><span style=" font-size:1.0rem">for ( var i = 1; i
+&lt;listItems.length; i++) {</span><br />
+<span style=" font-size:1.0rem">}</span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Function
+Location</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:1.0rem">When you are using JavaScript to code,
+remember that there are two ways that you are able to declare the
+function. First, you will declare a function if you want to form a
+variable assignment. When you do this, the location of the function will
+not matter. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is a simple example:</span></p>
+<p><span style=" font-size:0.83rem">var myFunction = function (arg1,
+arg2){</span><br />
+<span style=" font-size:0.83rem">// You can put any code here, again, it
+doesn’t matter</span><br />
+<span style=" font-size:0.83rem">};</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">When the function is declared as
+function myFunction (arg1, arg2) {},this means that it can be used in
+your file, no matter where it is located. This is both before and after
+your function has been declared. However, if your function happens to be
+declared with a variable assignment, it can only be used by a code that
+will execute this assignment according to its declared
+function.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Undefined and
+Null</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:1.0rem">Going back to basic coding 101, it is
+important that you understand these terms are not one in the same! In
+case you forgot, null is used for an object in your code. Undefined will
+be used for the variables, methods, and the properties in your code. In
+order to be null, the object in question will need to be defined. If it
+is not, you can test to see if it is null. When an object is not
+defined, it cannot be tested and will throw an error instead.
+</span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an example:</span></p>
+<p><span style=" font-size:0.83rem">if (myObject ! == null &amp;
+typeof(myObject) ! ==</span><br />
+<span style=" font-size:0.83rem">'undefined') {</span><br />
+<span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Note: if myObject happens to be
+undefined, remember that it cannot be tested for null. Instead, it will
+throw an error.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem">if (typeof (myObject) ! ==
+'undefined' &amp;&amp; myObject !==</span><br />
+<span style=" font-size:0.83rem">null) {</span><br />
+<span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">Note: This code will be in charge of
+handling myObject</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:1.0rem; font-weight:bold">Statement
+Switching</span><span
+style="width:49.39pt; text-indent:0.0em; display:none; -aw-tabstop-align:left; -aw-tabstop-pos:164.25pt"
+data-amznremoved-m8="true" data-amznremoved="mobi7"></span></p>
+<p><span style=" font-size:1.0rem"> </span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.86pt"></span></span><span
+style=" font-size:1.0rem">When you are using the switch statement in
+JavaScript, there are a few things you need to recognize. First,
+remember that there is no datatype conversion. Instead, there is a
+match, and at this points, all of the expressions are going to be
+executed until there is either a return statement or a break statement.
+In this case, you can include multiple cases in your code in just a
+single block! Remember as we stated earlier in the chapter, your Data
+Type is going to be very important. In comparisons, JavaScript is not
+loosely typed. Statements are something you will need to pay close
+attention to. We will be going over this practice in later chapters. Be
+sure to stick around and learn as much as you can. </span><br />
+<br />
+<span style=" font-size:1.0rem"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><br />
+<span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span id="part0000.xhtml__Toc468700069"></span><span
+id="part0000.xhtml_Ch2"><span
+style=" font-size:2.3rem; font-weight:bold">Chapter 2: </span><br />
+<span style="-aw-bookmark-end:_Toc468700069"></span><span
+style=" font-size:2.3rem; font-weight:bold">General
+Recommendations</span></span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:0.92rem"> </span></p>
+<p><span style=" font-size:1.0rem">While you are reading through this
+book, we want it to be a learning tool. Essentially, we wish for you
+also to use this as a quick guide. Below, we will list a general
+recommendation checklist for you to peek at quickly while you are in the
+middle of coding. After, we will go into depth on each of the
+suggestions from below. Remember that everyone is going to make
+mistakes. When you are learning to code, it is much like learning a new
+language. This important factor is to catch your mistakes, learn from
+them, and then try to make them as little as possible. </span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:bold">Here is your
+checklist:  </span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT persist password locally</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT use hard code usernames (or passwords)
+in your client processed codes</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT use hard code strings in a program
+template or code</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT test for variables against the strings
+for any triggered events</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT use hyphens when naming a
+variable</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT leave a "debugger" statement in your
+code</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT use the function "eval()"</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT EVER use Global Variables</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO NOT leave any dangling commas, especially
+in object definitions and lists</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO define all of your local var’s at the TOP
+of your function</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO use (ie"===") explicit
+comparators.</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO use shortcuts for your value assignment
+defaults</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO place braces on the right side of your
+block definitions</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO use semi-colons at the end of your
+lines</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO follow naming conventions for your
+functions and variables</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="font:7.0pt &#39;Times New Roman&#39;">         </span><span
+style=" font-size:1.0rem">DO use double quotes for your NLS’d
+Strings</span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<ol type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT persist
+password locally</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">As you could
+imagine, if you store any passwords in your code, this could create some
+major security holes. These are aspects you will want to avoid at all
+costs. The last thing you will want to do is be exploited by an attacker
+because you made a simple mistake. In any case, we suggest never
+persisting your passwords in sessionStorage, Cookies, or even
+localStorage. Instead, allow the user to get the password through normal
+mechanisms such as the browser. Just avoid putting it in code at all
+costs.</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT use hard
+code usernames (or passwords) in your client processed
+codes</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Again, this is an
+easy way to create security holes. To some coders, this could make you
+just a lazy coder! Even if your code is just a test or a simple demo,
+never use your username and password in the code. You just never know
+who could get their hands on the code. The internet is a very wide
+world.</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT use hard
+code strings in a program template or code</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">When you are coding,
+you should just always assume that your code is going to be translated.
+If you want to avoid being lazy, at least create a map for the key
+values of your strings. </span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Here is a simple
+example:</span></li>
+</ol>
+<ul>
+<li><span style=" font-size:0.83rem; font-weight:normal">this.Text =
+{</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">"greeting" :
+"Hello",</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">"firstName" ;
+"First name",</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">};</span><br />
+<span style=" font-size:0.83rem; font-weight:bold"> </span></li>
+</ul>
+<ol start="4" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT test for
+variables against the strings for any triggered events</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Remember that while
+you are condition checking in your code, these checks should be made
+against the variables or the reference node that is meant to trigger an
+event. We suggest not doing these checks against multilingual values. If
+you do this, it could help reduce the chance of throwing an error. By
+doing this, it will also help improve the maintainability of the code.
+When you are careful, the code will clearly show the actual conditions
+for the given action in the code. Here is an incorrect example followed
+by a better example:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:bold">Incorrect
+Example:</span><br />
+<br />
+<span style=" font-size:0.83rem; font-weight:normal">if
+acct.type.match(/^A LINE OF CREDIT.*/) ||</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">    acct.type.match
+(/LINEA DE CREDITO.*/) ) {</span><br />
+<span style=" font-size:0.92rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">Correct
+Example:</span><br />
+<br />
+<span style=" font-size:0.83rem; font-weight:normal">if (acct.type ===
+this.acct.TYPES.credit) {</span><br />
+<span style=" font-size:0.92rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:normal">While you are
+coding, be sure to be aware of your patterns. Some have made the mistake
+of checking the target.label of an event to determine whether or not it
+is a source button. Instead, we suggest using an "class" or "id"
+identifier. This way, it will not break an application if it gets
+translated.</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ul>
+<ol start="5" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT use hyphens
+when naming a variable</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Coding can be
+difficult; this is why we suggest not using hyphens in a variable name.
+if this happens, it could be confused as an attempt at subtraction. For
+example:</span><br />
+<span style=" font-size:0.92rem; font-weight:bold"> </span></li>
+</ol>
+<p><span style=" font-size:0.83rem">var hello-name =
+"Welcome";</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem">The way this code is set up, it will
+try to take the name away from the world. Obviously, this will throw an
+error.</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<ol start="6" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT leave a
+"debugger" statement in your code</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<p><span style=" font-size:1.0rem">As a reminder, a "debugger" statement
+is used to force your browser to a breakpoint during any testing. This
+is the code that helps most developers to locate the bugs quickly and
+efficiently. However, it could build other failures if it is accidently
+left in the code. Instead, we suggest manually setting up a breakpoint
+by using a browser tool instead. This could save you the time and hassle
+at the end of the day.</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<ol start="7" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT use the
+function "eval()"</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">There is a saying
+that some developers use that is known as "eval is evil." This should be
+an easy way to remember that you should rarely use eval, if ever. This
+code is a very easy way to make bad things happen in your code. Unless
+you truly know what you are doing with code, the source needs always to
+be trusted. If not, it could lead to vulnerabilities in your code. As
+you learned earlier, this is something you want to avoid at all
+costs!</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT EVER use
+Global Variables</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<p><span style=" font-size:1.0rem">This is something we will say over
+and over again. When you are defining local variables, always use the
+var statement. If not, the variable will be placed into a global scope.
+You need to avoid this. Instead, we suggest using an AMD based loader.
+This way, it will eliminate any packages or modules that are globally
+namespaced. Please also note that this will not apply on browsers that
+provide global including console, navigator, window, or
+document.</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<ol start="9" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO NOT leave any
+dangling commas, especially in object definitions and lists</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">While most browsers
+will actually allow this with modern technology, it used to cause
+Internet Explorer to throw errors. It should be noted that by leaving
+dangling commas, it could create some sloppy programming. Most of the
+time, an issue like this is seen in define statements. It has also been
+found after the last method/function in a declared class. Here is an
+incorrect example:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<p><span style=" font-size:0.83rem; font-weight:normal">var a =
+[1,2,3,];</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">var b = { a:1, b:
+"B", c: x,};</span><br />
+<span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:normal">As a general
+tip, you will want to generate your visual lists by using an Array. This
+way, you can join the results. Here is an example:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem; font-weight:normal">console.log ( "A
+List of Names: ", nameList.join ("firstname, lastname") );</span><br />
+<br />
+<span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<ol start="10" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO define all of
+your local var’s at the TOP of your function</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">While this isn’t
+necessarily required, by defining your local variables at the top of
+your function, it can lead to a leaner code. The local variables are
+normally at the "function" scope. In other words, they are accessible
+within any enclosing function. This does not mean that they are only
+within the closing blocks. Instead, random "var" definitions that are
+placed throughout an entire function could lead to errors such as
+unintended variable re-assignment. Remember this will also apply for the
+"for (var I in…) blocks as well. While the "I" variable will not be
+scoped for the block, it will be scoped for the outer containing
+function. This can become very confusing as this is a common practice in
+other coding languages. Please note that this is not the case for
+JavaScript. Please just define your local variables at the top of your
+function to avoid any unintended side-effects.</span><br />
+<span style=" font-size:1.0rem; font-weight:normal"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">DO use (ie"===")
+explicit comparators.</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">In JavaScript, you
+will always want to use the explicit comparators over any coerced
+comparators. By using the coerced comparators, you will be able to
+convert any value types then be able to match and compare them.
+</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Here is a great
+example of doing this:</span></li>
+</ol>
+<p><span style=" font-size:0.83rem; font-weight:normal">"Hey" ==
+2</span></p>
+<p><span style=" font-size:0.83rem; font-weight:normal">" " ==
+1</span></p>
+<p><span style=" font-size:0.83rem; font-weight:normal">1 ==
+true</span></p>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:normal">By using the
+triple equals as compared to the !== this will force your code to create
+a pure comparison of the values.</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ul>
+<ol start="12" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO use shortcuts
+for your value assignment defaults</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">When you are coding,
+your main goal is to make your code fast and readable. By using the
+logical OR during operation assignments, this will allow your code to
+have default values. Here is an example of putting simple validation on
+an input args. By doing this, it will ensure that the code will work on
+any expected object.</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<p><span style=" font-size:0.83rem; font-weight:normal"> //"Args" will
+default to an empty object if it is not defined</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">args = args || {}
+;</span></p>
+<p><span style=" font-size:0.83rem; font-weight:normal">//As you know,
+args will be an object. Now that it is defined, it will be safe to do a
+var greeting such as:</span><br />
+<span style=" font-size:0.83rem; font-weight:normal">var greeting =
+args. Greeting || "Hello";</span><br />
+<span style=" font-size:0.83rem; font-weight:bold"> </span></p>
+<ol start="13" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO place braces on
+the right side of your block definitions</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">While this is a
+personal style choice, it is always suggested to place the braces on the
+right of your block definitions to keep a safer code. As you start
+coding more, you will find a style that makes your work easier for you.
+Here are a couple of examples of placing the braces:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:bold">Bad:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem">return</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 6.16pt"></span></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">//If you do this, returns will be undefined
+and not expected by the object.</span><br />
+<span style=" font-size:0.83rem">{</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 32.07pt"></span></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">//This will make sure that the block is
+valid. Please note that it will be no-ops!</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">Ok : false</span><br />
+<span style=" font-size:0.83rem">};</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:bold">Good:</span><br />
+<span style=" font-size:1.0rem"> </span></li>
+</ul>
+<p><span style=" font-size:0.83rem">return {</span><br />
+<span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">ok : true</span><br />
+<span style=" font-size:0.83rem">};</span><br />
+<span style=" font-size:0.83rem"> </span></p>
+<ol start="14" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO use semi-colons
+at the end of your lines</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">While the use of
+semi-colons at the end of your lines is not TECHNICALLY required, your
+code will do better this way. Instead of guessing how the lines will be
+interpreted by your compiler, just place your semi-colons at the end, so
+there is no guessing game!</span></li>
+<li><span style=" font-size:1.0rem; font-weight:bold">DO follow naming
+conventions for your functions and variables</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">By doing this, it
+will help create a cleaner code. Remember that you will not always be
+the one reading/ writing your code. To keep your code consistent, use
+some of the following naming conventions to stay organized:</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ol>
+<ul>
+<li><span style=" font-size:1.0rem; font-weight:normal">First, make sure
+that your constants are always uppercase</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">Example: var A=
+1.2</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:normal">Next, when you
+are using PRIVATE variables, try and use leading underscore</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">Example:
+_myUsername</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+<li><span style=" font-size:1.0rem; font-weight:normal">Last, remember
+that normal variables will be labeled at the following:</span><br />
+<span style=" font-size:1.0rem; font-weight:normal">Example:
+camelCase</span><br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></li>
+</ul>
+<ol start="16" type="1">
+<li><span style=" font-size:1.0rem; font-weight:bold">DO use double
+quotes for your NLS’d Strings</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">In coding, there are
+many languages that will use single quotes heavily as part of that
+specific language. Most of the time, translators will not understand the
+"JSON" structure style. If this happens, it will introduce invalid
+strings if there are single quoted strings. </span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:normal">Here is an
+example:</span></li>
+</ol>
+<p><br />
+<span style=" font-size:1.0rem">English: { "end" : "The end of the
+story" }</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span id="part0000.xhtml_Ch3"><span
+style=" font-size:2.3rem; font-weight:bold">Chapter 3: </span><br />
+<span
+style=" font-size:2.3rem; font-weight:bold">Best</span></span><span
+style=" font-size:2.3rem; font-weight:bold"> Practices for Comments and
+Logging</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:bold"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+<span style=" font-size:1.0rem">When you are coding with JavaScript,
+there are a few tricks to make your comments and logging a bit easier.
+Remember that while you are working or practicing coding, you will want
+to do whatever you can to keep your coding clean and organized. Both
+loggings and comments should be used through your code. Please note that
+there are no performance penalties for using either. Most of the time,
+they will be removed during your building phase anyway. While some
+developers may note that logging can be a substitute for debugging
+skills, it is a valuable skill you will want to have to help aid your
+logic comprehension in coding. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here, we will provide you with a quick
+list to remember when working with logging and comments.</span>
+</p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use proper logging levels</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use comment for all complex
+logic</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use standard logging for any useful
+details</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use JSDoc Syntax for any public functions,
+variables, or modules</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT use string concatenation</span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">1.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.11pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use proper logging
+levels</span></p>
+<p><span style=" font-size:1.0rem">Please note that both WL.logger and
+Console both support a few different levels for logging. If you don’t
+recall, these include: warn, error, log, and debug. When you use a
+proper level in your coding for a certain situation, it will help you
+manage what you log in a better way. For example, if you are building
+code, your default for the Dojo is going to be removing the logging that
+appears below the "error." In this case, any console.error() would
+remain in the code. The issue with this is that after you build, any
+error conditions would be removed from the code and then it would be
+lost. </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">2.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.64pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use comment for all
+complex logic</span></p>
+<p><span style=" font-size:1.0rem">Most of the time, a code in
+JavaScript is readable if you have the skills. There are those times
+when the code gets too complex even to solve complex problems. For
+example, it isn't always practical to have a refractor code just so that
+someone else (such as a novice) can understand the code. This also
+stands for the developers who try to be "elegant" with their code. To
+keep it simple, and make everyone's lives easier, comment your complex
+code. At the end of the day, this will help aid everyone in the
+comprehension of the code.</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">3.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.74pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use standard logging for
+any useful details</span></p>
+<p><span style=" font-size:1.0rem">When you are creating code, your
+logging should include content that will be meaningful. Most developers
+will want to stay liberal when they are logging by using console.log ().
+When creating a log, be sure to provide the valuable content such as
+module, source, and function. Any message that you include should be
+descriptive and include useful variables. We also suggest avoiding using
+alert () statements as a substitute for the logging. Most of the times,
+it could get left in the code, and it will make it more difficult for
+everyone.</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">4.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.29pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use JSDoc Syntax for any
+public functions, variables, or modules</span></p>
+<p><span style=" font-size:1.0rem">If you weren't already aware, JSDOC
+is a way that you can annotate your JavaScript code. This is a reason
+why it is vital to comment on your public variables and functions
+properly. By nature, private variables and functions can be documented,
+but they are less important. If you are using a reusable code, it could
+be contributed to a public or private library, and at this point, it
+will need to be properly documented.</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">5.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.66pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT use string
+concatenation</span></p>
+<p><span style=" font-size:1.0rem">While you are coding, we suggest
+using multiple arguments when you are logging. This way, you will be
+able to avoid using string concatenation. This is a very common
+anti-pattern within logging. </span></p>
+<p><span style=" font-size:1.0rem">Here is a bad example:</span></p>
+<p><span style=" font-size:0.83rem">Console.error ("Invalid arguments
+provided: " + args);</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">In this case, the code will fail. The output
+has to run toString() on the objects. In this case, it will show as the
+following:</span></p>
+<p><span style=" font-size:0.83rem">Invalid arguments provided:
+[Object]</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">Instead, you will want to use multiple
+arguments to show the object you want. Here is the proper
+example:</span></p>
+<p><span style=" font-size:0.83rem">Console.error ("Invalid arguments
+provided:", args);</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">As you can see, it is a simple fix, but it
+something you could be making fairly easily. </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span id="part0000.xhtml_Ch4"><br />
+<br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Chapter
+4:</span></span><span style=" font-size:2.3rem; font-weight:bold; ">
+</span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">Tips for Better
+Performance</span><span style=" font-size:1.0rem"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style=" font-size:1.0rem">Whether you are a novice in the
+coding world or have been practicing for a while, you can admit to
+yourself that you make mistakes. Remember that this is ok. There are
+always ways to help you perform better in coding.</span></p>
+<p><span style=" font-size:1.0rem">In this chapter, we will be providing
+you with just a few ways to help improve your code. From minimizing your
+DOM access to staying suspicious of any logic inside of your loops,
+there is always room for improvement.</span></p>
+<p><span style=" font-size:1.0rem">Here is your checklist if you are in
+a rush!</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO ensure that your 3rd party libraries are
+always optimized</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO minimize any DOM manipulation and DOM
+access</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO keep your DOM at a minimum</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO stay suspicious of the logic inside of your
+loops</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO delay JavaScript Loading</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO reduce activity in your loops</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:bold">1.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.11pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO ensure that your 3rd
+party libraries are always optimized</span><br />
+<br />
+<span style=" font-size:1.0rem">While coding, you will want to be aware
+that you will ALWAYS need to optimize any custom JavaScript. On top of
+this, you must be sure that you are using an optimized version of any
+3rd party libraries as well. As a general tip, minimized libraries will
+have ".min" in their title. While researching, you will want to look for
+websites that promise you are using an optimized version as opposed to a
+developer's source.  </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">2.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.64pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO minimize any DOM
+manipulation and DOM access</span></p>
+<p><span style=" font-size:1.0rem">If you weren't already aware, DOM is
+incredibly slow compared to any other code in your application. This is
+why it is vital for you to minimize any access to the DOM when it is
+possible. If you absolutely need to access a certain node, we suggest
+doing this once and then store your results into a local variable. Last,
+we suggest you build a large DOM fragment to insert once. This is a much
+better option compared to building nodes into your DOM and having to
+iterate it every time.</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">3.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.74pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO keep your DOM at a
+minimum</span></p>
+<p><span style=" font-size:1.0rem">If you are coding for an application,
+you will want the code to be as quick and seamless as possible.
+Unfortunately, the performance will drop as the complexity and DOM size
+increase. By being proactive on your DOM size, you can improve the
+reflow of the operations. Luckily, you have two basic options to help
+minimize your DOM. First, you could destroy the view to save state. You
+will also need to destroy its children. While this can become complex to
+manage the state and child widget, it is actually very unlikely that
+your user will revisit this view again. Instead, you will want to clean
+up any DOM resources or memory. </span></p>
+<p><span style=" font-size:1.0rem">Your second option is to use the
+DomCache code. For this, the code will offload the view’s node tree. In
+return, it will turn into a DomFragment variable and be transitioned out
+of the code. At this point, if you need the view again, you can check
+your cache and then reinsert it back into the DOM. If you have a view
+that is revisited, this is the best option for you.</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">4.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.29pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO stay suspicious of the
+logic inside of your loops</span></p>
+<p><span style=" font-size:1.0rem">For most developers, it is normal to
+iterate through your elements and data by using a loop. However, you do
+not want to take the information as it happens within your loop.
+Remember that a number of potential negative performances could occur.
+You will want to keep your eye out for DOM access, storage access, math
+calculations, AJAC calls, and any other manipulations. The sooner you
+catch any of these outside of your loop, the better!</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">5.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.66pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO delay JavaScript
+Loading</span></p>
+<p><span style=" font-size:1.0rem">If you put your script at the bottom
+of the page, it will allow your browser to load the page first. But,
+while your script is loading, your browser will not be able to start
+other downloads. If this happens, other rendering activity could be
+blocked. Instead, try using the code defer= "true" in your script tag.
+This attribute will be executed once your page  has finished parsing.
+Please note that this will only work on external scripts. Try the
+following code example:</span></p>
+<p><span style=" font-size:0.83rem">CODE:</span><br />
+<span style=" font-size:0.83rem">&lt;script&gt;</span></p>
+<p><span style=" font-size:0.83rem">window. onload =
+downScripts;</span></p>
+<p><span style=" font-size:0.83rem"> </span></p>
+<p><span style=" font-size:0.83rem">function downScripts ( )
+{</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">var element = document. createElement
+("thescript");</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">element.src = "theScript.js";</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">document.body.appendChild(element);</span></p>
+<p><span style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:0.83rem">&lt;/script&gt;</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">6.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.68pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">Do reduce activity in your
+loops</span></p>
+<p><span style=" font-size:1.0rem">Remember that the loops in your code
+will include a statement. This statement will be executed during each
+iteration of the loop. If your statements are placed outside of the
+loop, this will help you run the loop faster. </span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an example of a bad code and a
+better code to help improve the performance:’</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">Bad Code:</span></p>
+<p><span style=" font-size:0.83rem">var I;</span></p>
+<p><span style=" font-size:0.83rem">for (I = 1; I&lt;arr.length; I++)
+{</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">Better Code Performance:</span></p>
+<p><span style=" font-size:0.83rem">var I;</span></p>
+<p><span style=" font-size:0.83rem">var m = arr.length;</span></p>
+<p><span style=" font-size:0.83rem">for ( I = 1; I &lt; m; I++)
+{</span></p>
+<p><span id="part0000.xhtml__Toc468198076"></span><span
+id="part0000.xhtml__Toc468700086"></span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+</a>
+</p>
+<h3 style="margin:0.77% 0.00%"><span
+id="part0000.xhtml__Toc468700087"><span
+style="-aw-bookmark-end:_Toc468198076"></span><span
+style="-aw-bookmark-end:_Toc468700086"></span><span
+style=" font-size:1.2rem; font-weight:bold"> </span></span></h3>
+<h3 style="margin:0.77% 0.00%"><span
+style=" font-size:1.2rem; font-weight:bold"> </span></h3>
+<h3 style="margin:0.77% 0.00%"><span
+style=" font-size:1.2rem; font-weight:bold"> </span></h3>
+<h3 style="margin:0.77% 0.00%"><span
+style=" font-size:1.2rem; font-weight:bold"> </span></h3>
+<p><span id="part0000.xhtml_Ch5"><span
+style=" font-size:2.3rem; font-weight:bold; ">Chapter 5: </span><br />
+</span><span style=" font-size:2.3rem; font-weight:bold; ">Best
+JavaScript Tips </span><br />
+<span style=" font-size:2.3rem; font-weight:bold; ">for
+Beginners</span></p>
+<div style="page-break-after:always">
+
+</div>
+<br />
+
+</p>
+<p><span style="-aw-bookmark-end:_Toc468700087"></span><span
+style=" font-size:1.0rem">Whether you like it or not, as a programmer or
+web or app developer, you need to learn JavaScript. It is considered the
+computer language of the future simply because it is an integral part of
+web ad app development. </span></p>
+<p><br />
+<span style=" font-size:1.0rem">Of course, it would be next to
+impossible to cover every trick to help you learn the best practices for
+JavaScript. Instead, we want to focus on the main attributes you will
+come across as you learn to code. In the chapter to follow, we will
+provide you with some of the simpler best practices to get you on the
+right path. Remember that there is always more information to learn
+about coding. </span><br />
+<br />
+<span style=" font-size:1.0rem">This is just an excellent start!
+</span></p>
+<p><br />
+<span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT declare Boolean Objects, Strings, or
+Numbers</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO Initialize Any Variables</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT use newObject ()</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use Parameter Defaults</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT use Automatic Type
+Conversions</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use "Timer" to Optimize Code</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT Pass String to "SetTimeOut" or
+"SetInterval"</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO use "For in" Statements</span></p>
+<p><span style=" font-size:1.0rem"></span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO NOT use "With" Statements</span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">1.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 29.11pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT declare Boolean
+Objects, Strings, or Numbers</span></p>
+<p><span style=" font-size:1.0rem">While you are coding, it is very
+important that you treat your Booleans, strings, and numbers as
+primitive values. You will not want to see these as objects. If you
+define any of these codes as objects, it could produce bad side effects
+and will just slow down the speed of your execution. </span></p>
+<p><span style=" font-size:1.0rem">Here is a quick example:</span></p>
+<p><span style=" font-size:0.83rem">var x= "Joe";</span></p>
+<p><span style=" font-size:0.83rem">var y= new String
+("Joe");</span></p>
+<p><span style=" font-size:0.83rem">(x ===y) </span></p>
+<p><span style=" font-size:1.0rem; font-weight:normal">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem; font-weight:normal">As you can see, this will
+be false due to the fact that x is a string while y is an object. It
+will throw an error, and this is something you can avoid!</span><br />
+<br />
+<span style=" font-size:1.0rem; font-weight:bold">2.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.64pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO Initialize Any
+Variables</span></p>
+<p><span style=" font-size:1.0rem">Whether you are learning code, or are
+just looking to fix your skills, it is great practice to initialize your
+variables as you declare them. When you do this, it will help avoid
+undefined values, it will provide you with a single place to do this,
+and it will help give you a cleaner code. </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">3.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.74pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT use
+newObject()</span></p>
+<p><span style=" font-size:1.0rem">While this is something we touched on
+a bit earlier, it is important to remember. Here is a quick cheat sheet
+to help you remember which code to use compared to its similar code. By
+being organized, you can keep your code clean.</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE: {} DO NOT USE: new Object()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE 0 DO NOT USE new Number()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE " " DO NOT USE new String()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE false DO NOT USE new
+Boolean()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE function () {} DO NOT USE new
+Function()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE /()/ DO NOT USE new RegExp()</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">DO USE [] DO NOT USE new Array()</span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">4.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.29pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use Parameter
+Defaults</span></p>
+<p><span style=" font-size:1.0rem">We invite you to ask a moment to ask
+yourself, what do I remember about functions? What do you call it when
+your function is missing an argument? That's right! The value of that
+missing argument will be called undefined. If you weren't already aware,
+these undefined values can and will break your code. To break this
+habit, try your best to assign values to your arguments automatically.
+</span><br />
+<br />
+<span style=" font-size:1.0rem">Here is an example:</span></p>
+<p><span style=" font-size:0.83rem">function myFunction (x, y)
+{</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">if ( x === undefined) {</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">x= 1;</span></p>
+<p><span style=" font-size:0.83rem">  }</span></p>
+<p><span style=" font-size:0.83rem">}</span><br />
+<span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">5.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.66pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT use Automatic Type
+Conversions</span></p>
+<p><span style=" font-size:1.0rem">While you are coding, you will want
+to be aware of the numbers that could be converted to NaN or strings. If
+you need a refresher, NaN stands for Not a Number. This is something
+that can happen automatically due to the fact that JavaScript is typed
+loosely. The variables in your code can change the data type as well as
+contain a few different types of data. </span></p>
+<p><span style=" font-size:1.0rem">Here is a quick example:</span></p>
+<p><span style=" font-size:0.83rem">var x = "Hey"; </span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">In this case, x is a string but if you were to
+continue;</span></p>
+<p><span style=" font-size:0.83rem">x= 4;</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">Then, this changes your x to a number. You can
+see where this could cause errors in your code.</span></p>
+<p><span style=" font-size:1.0rem">You also should be aware that your
+JavaScript will convert numbers into strings if you are doing
+mathematical problems. If you type it the wrong way, it will give you an
+answer, but it may not be the one you wanted. Here is a quick
+example:</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">In this example, typeof x will be a
+number</span></p>
+<p><span style=" font-size:0.83rem">var x = 5+ 7;  // x.valueOf() will
+be 12</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">In this next example, the typeof x will be a
+string</span></p>
+<p><span style=" font-size:0.83rem">var x = 5+ "7"; // x.valueOf() will
+be 57</span></p>
+<p><span style=" font-size:1.0rem">In a different case, you could try to
+use your function to subtract one string from another string. In this
+case, it will return as NaN. </span></p>
+<p><span style=" font-size:1.0rem">Use this example:</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">"Goodbye" – "Love" // This will return as
+NaN</span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">6.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.68pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use "Timer" to Optimize
+Code</span></p>
+<p><span style=" font-size:1.0rem">This practice is super simple. Are
+there ever times that you need a quick way to determine exactly how long
+your operation will take? Luckily, Firebug has a "timer" feature that
+will log the results for you! Sometimes it helps to have some tricks on
+the side to help your coding along. </span></p>
+<p><span style=" font-size:1.0rem">Here is the code for that:</span></p>
+<p><span style=" font-size:0.83rem">function TimeTracker () {</span></p>
+<p><span style=" font-size:0.83rem">   console.time
+("MyTimer");</span></p>
+<p><span style=" font-size:0.83rem">    for (x=4000; x &gt; 0; x--)
+{}</span></p>
+<p><span style=" font-size:0.83rem">   console.timeEnd
+("MyTimer");</span></p>
+<p><span style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">7.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.71pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT Pass String to
+"SetTimeOut" or "SetInterval"</span></p>
+<p><span style=" font-size:1.0rem">Remember when we told you not to use
+the "eval" function? This code will function the same way. This is why
+we suggest never passing the string to SetTimeOut or SetInterval.
+Unfortunately, this code is super inefficient. </span><br />
+<br />
+<span style=" font-size:1.0rem">Instead of this code:</span></p>
+<p><span style=" font-size:0.83rem">setInterval (</span></p>
+<p><span
+style=" font-size:0.83rem">"document.getElementById('container').innerHTML
+_+= 'The New Number: ' + I" , 2000</span></p>
+<p><span style=" font-size:0.83rem">);</span></p>
+<p><span style=" font-size:1.0rem">Use this one:</span></p>
+<p><span style=" font-size:0.83rem">setInterval(someFunction,
+2000);</span></p>
+<p><br />
+<span style=" font-size:1.0rem; font-weight:bold">8.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.47pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO use "For in"
+Statements</span></p>
+<p><span style=" font-size:1.0rem">Sometimes when you loop items in an
+object, you may have noticed that at the same time, you retrieve the
+method functions as well. If you do not want this to happen, there is a
+way you can wrap your code as an if statement. This way, it will filter
+your information. </span></p>
+<p><span style=" font-size:1.0rem">Here is an example:</span></p>
+<p><span style=" font-size:0.83rem">for (key in object) {</span></p>
+<p><span style=" font-size:0.83rem"> if(object. hasOwnProperty(key))
+{</span></p>
+<p><span style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 36pt"></span></span><span
+style=" font-size:0.83rem">//…do something…</span></p>
+<p><span style=" font-size:0.83rem">    }</span></p>
+<p><span style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:1.0rem; font-weight:bold">9.</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 27.63pt"></span></span><span
+style=" font-size:1.0rem; font-weight:bold">DO NOT use "With"
+Statements</span></p>
+<p><span style=" font-size:1.0rem">Now, this coding tip is up for
+debate. On the one hand, "with" statements truly sound like a good idea
+to use. In retrospect, a "with" statement should be able to be used as a
+shorthand to access any objects that could be deeply nested in your
+code. </span></p>
+<p><span style=" font-size:1.0rem">Here is an example:</span></p>
+<p><span style=" font-size:0.83rem">with (person.woman.bodyparts)
+{</span></p>
+<p><span style=" font-size:0.83rem">hand = true;</span></p>
+<p><span style=" font-size:0.83rem">foot= true;</span></p>
+<p><span style=" font-size:0.83rem">}</span></p>
+<p><span style=" font-size:1.0rem">•</span><span
+style="text-indent:0.0em"><span
+style="padding:0pt 0pt 0pt 30.81pt"></span></span><span
+style=" font-size:1.0rem">As we noted, you would use these statements
+instead:</span></p>
+<p><span style=" font-size:0.83rem">person.woman.bodyparts.hand=
+true;</span></p>
+<p><span style=" font-size:0.83rem">person.woman.bodyparts.foot=
+true;</span></p>
+<p><br />
+<span style=" font-size:1.0rem">After some tests, it was found that
+these codes behaved badly, especially when setting up new members.
+Instead of using "with" you can use "var" and get the proper results.
+</span></p>
+<p><br />
+<span style=" font-size:1.0rem"> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<p><span id="part0000.xhtml_Conclusion"><span
+style=" font-size:2.3rem; font-weight:bold">Conclusion</span></span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; ">There we go! We hope at this point
+in the book you feel a bit better and more confident about your coding
+skills. </span></p>
+<p><span style=" font-size:1.0rem; ">True, it can be challenging at
+times, but with enough practice, you will only get better! Remember that
+the examples we included in this book just scratch the surface. There
+are always ways to improve your coding; just keep on working on
+it.</span></p>
+<p><span style=" font-size:1.0rem; ">The book provided a lot of topics
+on applying Best Practices to your JavaScript programming code. It is
+important to be aware of this in order to have much better and efficient
+code.</span></p>
+<p><span style=" font-size:1.0rem; "> In the first chapter, we went over
+some of the common JavaScript Mistakes. We want you to understand that
+simple mistakes that could be messing up your code. </span></p>
+<p><span style=" font-size:1.0rem; ">After that, we went over some
+general recommendations to practice better coding. We also went over the
+best practices for a better performance and also the best practices for
+your comments and logging. Finally, we discussed the best tricks up our
+sleeves for beginners. </span></p>
+<p><span style=" font-size:1.0rem; ">We hope you get a lot of valuable
+information. </span></p>
+<p><span style=" font-size:1.0rem; ">We wish you the best of luck on
+your coding journey!!</span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem"> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<div style="page-break-after:always">
+
+</div>
+<p><span style=" font-size:2.3rem; font-weight:bold">About the
+Author</span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; ">Charlie Masterson is a computer
+programmer and instructor who have developed several applications and
+computer programs.</span></p>
+<p><span style=" font-size:1.0rem; ">As a computer science student, he
+got interested in programming early but got frustrated learning the
+highly complex subject matter.</span></p>
+<p><span style=" font-size:1.0rem; ">Charlie wanted a teaching method
+that he could easily learn from and develop his programming skills. He
+soon discovered a teaching series that made him learn faster and
+better.</span></p>
+<p><span style=" font-size:1.0rem; ">Applying the same approach, Charlie
+successfully learned different programming languages and is now teaching
+the subject matter through writing books.</span></p>
+<p><span style=" font-size:1.0rem; ">With the books that he writes on
+computer programming, he hopes to provide great value and help readers
+interested to learn computer-related topics. </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><span style=" font-size:1.0rem; "> </span></p>
+<p><br />
+<span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+<p><span style=" font-size:0.92rem; "> </span></p>
+</div>

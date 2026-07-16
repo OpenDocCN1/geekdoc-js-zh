@@ -1,0 +1,2 @@
++   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](README.md)
++   [MySQL 入门指南（编程语言 - JavaScript, Java, MySQL, PHP 及使用 Python 自动化）](mysql-guide-for-beginner-programming-languages---javascript-_0.md)

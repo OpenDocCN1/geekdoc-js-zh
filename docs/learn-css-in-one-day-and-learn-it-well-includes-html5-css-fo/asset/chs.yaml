@@ -1,0 +1,646 @@
+- "# 一天学会并精通 CSS（包含 HTML5）：带实战项目的 CSS 初学者实用指南。你开始 CSS 编程所需的唯一书籍……通过实战项目快速编程（第 2 卷）\n\
+  \n\n\n![](img/cover.jpeg)\n\n\n\n\n[`www.learncodingfast.com/css`](http://www.learncodingfast.com/css)\n\
+  \n\n\n## 前言\n\n本书的编写目的是帮助你**快速**学习 CSS 并**精通**它。\n\n本书不假设你具备任何编程背景。如果你是一个完全的初学者，你会发现这本书以易于理解的方式解释了复杂的概念。如果你是一个经验丰富的编程人员但刚接触\
+  \ CSS，这本书将为你提供足够的深度，让你立即开始编写 CSS 代码。\n\n书中的所有示例和图像都经过仔细挑选，用于演示每个概念，以便你对该语言有更深入的理解。每个\
+  \ CSS 章节末尾都有一个练习。这些练习旨在帮助你进一步加强理解。所有练习的源代码可以在书末的附录中找到。\n\n此外，正如理查德·布兰森所说：“学习任何事情最好的方法就是实践”。本书包含一个额外的赠送项目，你将在引导下从零开始编写一个网页。该项目使用了书中涵盖的概念，并让你有机会看到它们是如何整合在一起的。\n\
+  \n你可以在下处下载额外项目和所有练习的源代码：\n\n[`www.learncodingfast.com/css`](http://www.learncodingfast.com/css)。\n\
+  \n## 联系信息\n\n我非常期待听到你的反馈。\n\n如需反馈或查询，您可以通过 jamie@learncodingfast.com 联系我。\n\n##\
+  \ Jamie 的其他书籍\n\n![](img/00012.jpg)\n\n[Python：一天学会并精通 Python](http://mybook.to/Python)\n\
+  \n\n\n> 工具工具\n\n> 打开 .HTML 文件\n\n\n> 什么是 HTML\n> HTML 页面的基本结构\n> Doctype\n> 开始和结束标签\n\
+  > Head 元素\n> Body 元素\n> Head 元素中的元素\n> Body 元素中的元素\n> 用于向添加内容的元素\n> 与 CSS 配合使用的元素\n\
+  > 用于为网站添加 JavaScript 代码的元素\n> 用于格式化文本的元素\n> 定义网页区域的元素\n> 注释\n> 字符实体\n\n\n> 应用 CSS\
+  \ 代码\n> CSS 规则的语法\n> 选择元素\n> 选择类和 ID\n> 更多选择器\n> 不区分大小写\n> 优先级顺序\n> 显示不一致性\n> 注释\n\
+  > 练习 3\n> 练习 3.1\n\n\n> 什么是 CSS 盒模型\n> 宽度和高度属性\n> 溢出属性\n> 内边距和外边距属性\n> 边框属性\n> `border-width`\n\
+  > `border-color`\n> `border-style`\n> `border-radius`\n> 练习 4\n## 第五章：定位\n> 静态 Static\n\
+  > 相对 Relative\n> 固定 Fixed\n> 绝对 Absolute\n> 练习 5\n## 第六章：显示与可见性\n\n> 显示 Display\n\
+  > 可见性 Visibility\n> 练习 6\n## 第七章：背景\n\n> 背景图片 Background-image`\n> 背景重复 Background-repeat`\n\
+  > 背景属性 Background-attachment`\n> 练习 7\n## 第八章：文本与字体\n\n> 字体族 Font-family`\n> 字体样式\
+  \ Font-style`\n> 字体粗细 Font-weight`\n> 文本颜色 Text-color`\n> 文本对齐 Text-alignment`\n\
+  > 文本装饰 Text-decoration`\n> 字间距 Letter-spacing`\n> 词间距 Word-spacing`\n> 行高 Line-height`\n\
+  > 练习 8\n\n## 第九章：列表、链接与导航栏\n> 列表 Lists\n> 列表类型 List-style-type`\n> 列表图片 List-style-image`\n\
+  > 链接 Links\n> 导航栏 Navigation Bars\n> 练习 9\n## 第十章：表格\n> 边框、内边距和外边距\n\n\n\n\n\n#\
+  \ 第 1 章：引言\n\n欢迎来到 CSS 的世界。非常荣幸也感谢你选择这本书。在我们共同开启这段学习之旅之前，让我们先定义什么是 CSS。\n\nCSS 代表级联样式表（Cascading\
+  \ Stylesheet），用于网站的样式设置和设计。它是 Web 程序员创建网站时使用的多种语言之一。其他网页语言包括 HTML、Javascript 和 PHP\
+  \ 等（仅列举几个）。\n\nHTML 关注网站的内容和结构。由于没有内容的网站存在是毫无意义的，因此对于任何对网页编程感兴趣的人来说，了解 HTML 是至关重要的。本书将首先从介绍\
+  \ HTML 开始，涵盖你可能需要了解的一些 HTML 基础知识。虽然这些内容并非无一不包，但它足够你完成大部分必要的 HTML 任务。如果你已经熟悉 HTML，可以随时跳到第\
+  \ 3 章。\n\n## 工具\n\n在我们开始编写 HTML 和 CSS 页面之前，让我们先看一些推荐用于网页编程的工具。\n\n在最基础的层，你只需要一个网页浏览器（例如\
+  \ Internet Explorer、Chrome、Safari、Firefox）和一个文本编辑器（例如记事本）就可以开始编写网站代码。然而，除非你属于认为真正的程序员不应该使用任何编程辅助工具的流派，否则我强烈建议使用一些在线免费工具来让你的编码生活更轻松。\n\
+  \n最推荐的工具之一是提供语法高亮的高级文本编辑器。语法高亮意味着编辑器会根据文本用途用不同的颜色显示文本。例如，编辑器可以使用红色表示关键字，蓝色表示注释，绿色表示变量。这个简单的功能将使你的代码变得更容易阅读和调试。如果你使用的是\
+  \ Windows 机器，我建议使用 Notepad++ ([`notepad-plus-plus.org/`](http://notepad-plus-plus.org/))。对于\
+  \ Mac，我建议使用 TextWrangler ([`www.barebones.com/products/textwrangler/`](http://www.barebones.com/products/textwrangler/))。两者都是免费的。\n\
+  \n### 打开 .HTML 文件\n\n.HTML 文件有两种打开方式。一种方法是通过双击文件在网页浏览器中打开，这用于查看页面。另一种方法是在文本编辑器中打开进行编辑。要这样做，首先启动你的文本编辑器，然后在编辑器内部打开文件。\n\
+  \n在处理 HTML 文件时，我建议你同时在浏览器和文本编辑器中打开文件，并将两个窗口并排排列。这样，你就可以在编辑器中编辑代码，保存，然后移动到浏览器，刷新页面并立即检查对代码所做更改的效果。在完成第\
+  \ 3 章到第 10 章的练习时，请遵循此步骤。\n\n# 第 2 章：HTML 基础\n\n现在我们已经介绍了网页编程的基础，让我们开始学习一些实际的 HTML\
+  \ 代码。在本章中，我们将涵盖 HTML 的核心内容。如果你熟悉 HTML，可以跳过本章直接进入第 3 章。\n\n对于初次接触 HTML 的同学，让我们开始吧。\n\
+  \n## 什么是 HTML\n\nHTML 代表超文本标记语言（Hypertext Markup Language），是 Web 程序员用于向网页添加内容的语言。标记语言简单来说是一种用于注释文档的语言，用以解释文本的不同部分是什么以及它们应该如何呈现。例如，我们可以使用\
+  \ HTML 来指定内容应该以列表形式还是表格形式呈现。目前的 HTML 版本是 HTML5。\n\nHTML 最棒的一点是网页的源代码对所有人免费开放。这使得我们很容易通过研究其他网页的代码来学习\
+  \ HTML。在 Windows 上查看网页源代码，只需在页面任何地方点击右键，并选择“查看源代码”（或其他类似的选项，取决于你使用的浏览器，例如“查看页面源代码”）。如果你使用的是\
+  \ Mac，点击菜单栏中的“查看”，选择“开发工具”，然后选择“查看源代码”。\n\n你看到的大部分源代码看起来会非常复杂，特别是如果你没有任何 HTML 基础知识。不用担心。很快，你就能自己写出这些“复杂”的代码了。\n\
+  \n为了更好地理解 HTML5 的工作原理，让我们从检查 HTML 文档的基本结构开始。\n\n### HTML 页面的基本结构\n\n下面是一个基础 HTML\
+  \ 文档的示例。我在每一行旁边添加了数字。\n\n```\n1 <!doctype html>\n2 <html>\n3 <head>\n4 <title>My\
+  \ HTML Page</title>\n5 </head>\n6 <body>\n7 <p>This is just text</p>\n8 <img src=\"\
+  image.jpg\" alt=\"some image\">\n9 </body>\n10 </html>\n```\n\n从上面的代码可以看出，HTML 使用了许多标签，例如\
+  \ `<head>` 和 `<body>`。\n\n#### Doctype\n\n在第 1 行，`<!doctype html>` 标签告诉浏览器此文档使用的是\
+  \ HTML5。如果你检查旧页面的源代码，可能会看到类似 `<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\
+  \ \"http://www.w3.org/TR/html4/strict.dtd\">` 的内容。这意味着它们使用的是其他版本，如 HTML4.01。\n\n\
+  插入 开始和结束标签\n\n在第 2 行，`<html>` 标签告诉浏览器 HTML 代码从这里开始。HTML 中的大多数标签都有对应的结束标签。`<html>`\
+  \ 标签的结束标签位于第 10 行。它在 `html` 单词之前有一个额外的斜杠 (/)。\n\n注意，HTML 中的并非所有标签都有结束标签。例如，用于向网页添加图像的\
+  \ `<img>` 标签就没有结束标签。通常，当我们需要告诉浏览器标签的效果应该何时结束时，就需要一个结束标签。例如，如果我们想在 HTML 中将某些文本加粗，我们可以写道：\n\
+  \n`This text is <strong>important</strong>, but this text is not.`\n\n我们将得到：This\
+  \ text is important, but this text is not.\n\n`<strong>` 标签和 `</<strong>` 标签告诉浏览器加粗效果从何时开始以及何时结束。相比之下，不需要告诉浏览器插入的图像应该何时结束。\n\
+  \n#### head 元素\n\n在第 3 行，我们是 `head` 元素的开始。\n\n从广义上说，一个 HTML 文档由两个主要元素组成：`head` 元素和\
+  \ `body` 元素。\n\n`head` 元素提供了关于文档的一信息，包括元数据、标题以及附加资源的链接。它从第 3 行的 `<head>` 标签开始，到第\
+  \ 5 行的 `</head>` 标签结束。在 `<head>...</head>` 标签之间，我们封装了其他提供文档所有这些后台信息的标签。\n\n在示例中，我们只在\
+  \ `head` 元素中包含了关于标题的信息。`<title>` 元素（第 4 行）显示浏览器应该在标题栏或页面标签页上显示的标题。在这种情况下，将显示文本“My\
+  \ First HTML Page”。我们将在后的章节中介绍更多在 `head` 元素内部使用的标签。\n\n### body 元素\n\n\n\n\n\n第\
+  \ 6 行是 `body` 元素开始的地方。`<body>...</body>` 标签内的内容将显示在网页上。在我们的示例中，文本“This is just text”和图像“someimage.jpg”将被显示。\n\
+  \n在 `<body>...</body>` 标签内部，我们还可以使用许多其他标签，例如用于添加图像的 `<img>` 标签、用于显示表格的 `<table>`\
+  \ 标签以及用于添加列表的 `<ul>` 标签。我们将在稍后详细介绍这些标签。\n\n为了直观地感受它的工作原理，你可以从配套网站（[`http://learncodingfast.com/css`](http://learncodingfast.com/css)）下载本章节的代码。你可以在\
+  \ `Chapter 2 - Basics of HTML` 文件夹中找到源代码。双击 `HTML` 文件即可启动它。\n\n在完成本书附带的额外项目时，你也将被引导去编写一个真实的\
+  \ HTML 文档。该项目的源代码可以在 `Bonus Project\\Answers` 文件夹中找到。\n\n## head 元素中的元素\n\n现在我们已经了解了\
+  \ HTML 的工作原理，让我们详细查看 `head` 元素。\n\n如上所述，`head` 元素提供了有关文档通用信息，例如元数据、标题以及指向外部资源的链接。让我们来看看\
+  \ `head` 元素中的一些标签。\n\n### `<meta>`\n\n`<meta>` 标签包含在 `<head>…</head>` 标签内，用于向浏览器、搜索引擎或其他网络服务提供有关网站的附加信息。这些信息不会显示在页面本身。`<meta>`\
+  \ 标签没有结束标签。\n\n`<meta>` 标签的一个常见用途为搜索引擎提供关键词。例如：\n\n```html\n<meta name=\"keywords\"\
+  \ content=\"HTML, CSS, Learn in One Day\">\n```\n\n你可能会注意到这个标签比我们之前讨论的标签要长得多。这是因为\
+  \ `<meta>` 标签有两个属性：`name` 和 `content`。\n\n`name` 用于指定标签包含的信息的类型（在本例中为关键词），而 `content`\
+  \ 用于指定信息的内容。\n\n你还可以使用 `name=description` 属性为你的网站提供描述。例如：\n\n```html\n<meta name=\"\
+  description\" content=\"This is my first Website. It teaches you how to use HTML\
+  \ and CSS\">\n```\n\n`<meta>` 标签的另一个常见用途是用它来指定浏览器如何控制页面缩放级别和尺寸。这是通过使用 `name=viewport`\
+  \ 属性实现的。例如，你可以写：\n\n```html\n<meta name=\"viewport\" content=\"width=300, initial-scale=1\"\
+  >\n```\n\n`width=300` 将视口的宽度设置为 300 像素。一个像素（`px`等于计算机屏幕上的一个点。\n\n当你将视口设置为 300px\
+  \ 且有一张宽度为例如 500 像素的图像时，你只能看到图像的一部分，因为图像的宽度大于视口的宽度。要查看图像的其余部分，你需要向下滚动页面。相比之下，如果你将视口设置为\
+  \ 500px，整个图像将完整显示，无需任何滚动。如果你将视口设置为 1000px，整个图像也会显示，但它会更小，并且只占屏幕宽度的一半。\n\n`initial-scale=1`\
+  \ 设置页面在被浏览器首次加载时的初始缩放级别（在本例中为 1x）。\n\n如果你感兴趣了解更多关于视口的工作原理，可以查看 [`https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html`](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html)\n\
+  \n### `<title>...</title>`\n\n`<title>` 标签用于定义浏览器应该在其标题栏或页面标签页上显示的标题。\n\n### `<style>...</style>`\n\
+  \n`<style>` 标签用于向我们的 HTML 文档添加内部 CSS 代码。我们将在第 3 章学习如何操作。\n\n示例：\n\n```html\n<style\
+  \ type=\"text/css\">\nbody {\n  …\n}\n</style>\n```\n\n### `<link>`\n\n`<link>`\
+  \ 标签用于链接到外部资源，最常用于链接到外部 CSS 样式表。它不需要结束标签。\n\n示例：\n\n```html\n<link rel=\"stylesheet\"\
+  \ type=\"text/css\" href=\"mystyle.css\">\n```\n\n`rel` 和 `type` 属性只是告诉浏览器你正在链接到一个\
+  \ CSS 样式表。你不需要修改它们。唯一你需要修改的属性是 `href` 属性。该属性用于指定 CSS 文件的路径。\n\n## 如何编写外部文件的路径\n\n\
+  任何外部文件的路径始终从 HTML 文档的当前文件夹开始。假设有五个文件夹：`User`、`Documents`、`MyWebsite`、`MyCSS` 和 `MoreCSS`，结构如下：\n\
+  \n`User > Documents > MyWebsite > MyCSS > MoreCSS`\n\n这意味着 `User` 文件夹包含 `Documents`\
+  \ 文件夹，该文件夹又包含 `MyWebsite` 文件夹。在 `MyWebsite` 文件夹中，我们有 `MyCSS` 文件夹，它包含 `MoreCSS` 文件夹。\n\
+  \n如果你正在 `MyWebsite` 中处理一个 HTML 文件，并想访问 `MoreCSS` 中的文件，你将使用路径 `MyCSS/MoreCSS/filename.ext`。\n\
+  \n\n\n\n\n`<ol>` 标签代表有序列表，用于创建一个以数字或字母作为列表标记的列表。\n\n### 有序列表\n\n示例：\n\n```html\n\
+  <ol>\n  <li>Chocolate</li>\n  <li>Strawberry</li>\n  <li>Vanilla</li>\n</ol>\n```\n\
+  \n输出：\n> 1. Chocolate（巧克力）\n> 2. Strawberry（草莓）\n> 3. Vanilla（香草味）\n\n### 无序列表\n\
+  `<ul>`...`</ul>` 和 `<li>`...`</li>`\n\n`<ul>` 标签代表无序列表，与 `<ol>`</ol>` 标签类似。但是，它不使用数字或字母作为列表标记，而是使用形状（如圆点或空心圆）。\n\
+  \n### 表格\n`<table>`...`</table>`, `<tr>`...`</tr>`, `<th>`...`</th>`, `<td>`...`</td>`\n\
+  \n`<table>` 标签用于创建表格。`<tr>` 代表“表格行（Table Row）”，`<th>` 代表“表头（Table Header）”，而 `<td>`\
+  \ 代表“表格数据（Table Data）”。在 HTML 中，表格是逐行创建的。\n\n示例（数字不属于代码内容）：\n\n```html\n<table>\n\
+  \  <tr>\n    <th>Name</th>\n    <th>Gender</th>\n  </tr>\n  <tr>\n    <td>Abigail</td>\n\
+  \    <td>F</td>\n  </tr>\n  <tr>\n    <td>Benny</td>\n    <td>M</td>\n  </tr>\n\
+  </table>\n```\n\n这段代码将为你生成一个有 3 行 2 列的表格。第 2 到 5 行定义了表格的第一行，由于使用了 `<th>` 标签，它是表头行。第\
+  \ 6 到 9 行定义了第二行，10 到 13 行定义了第三行。取决于你在 CSS 中如何样式化表格，你将得到一个类似于下面的表格：\n\n![](img/00005.jpg)\n\
+  \n### 与 CSS 结合使用的元素\n\n有两个特殊的 HTML 元素在 HTML 中没有任何固有含义。它们主要与 CSS 结合使用，为网页的特定部分设置样式。这两个元素是\
+  \ `div` 和 `span`。\n\n#### Div 标签\n`<div>`...`</div>`\n\n`<div>` 代表“划分（division）”，用于定义\
+  \ HTML 文档中的一个划分或区域。`<div>` 标签通常与 CSS 结合使用，以格式化 `<div>`...`</div>` 标签内的内容。\n\n例如，如果我们写：\n\
+  \n```html\n<div>\n  This is some division in the HTML document.\n  <ol>\n    <li>Chocolate</li>\n\
+  \    <li>Strawberry</li>\n    <li>Vanilla</li>\n  </ol>\n</div>\n```\n\n我们可以使用 CSS\
+  \ 来格式化 `div` 标签内的所有内容（即：文本和有序列表）。我们将在下一章学习如何操作。\n\n#### Span 标签\n`<span>`...`</span>`\n\
+  \n`<span>` 标签与 `<div>` 标签类似。主要区别在于 `<div>` 是**块级元素 (block element)**，而 `<span>`\
+  \ 是**行内元素 (inline element)**。\n\n块级元素是以新换行开始并结束的元素。相比之下，行内元素不会以换行开始或结束。例如，如果我们写：\n\
+  \n`This is a <div>block element</div>, while this is an <span>inline</span> element.`\n\
+  \n我们将得到：\n\nThis is a\nblock element\nwhile this is an inline element.\n\n由于短语“block\
+  \ element”被标记为 `<div>`标签，它会在新行开始并结束。另一方面，“inline”一词是一个行内元素，不会在新行开始或结束。通常，我们倾向于使用\
+  \ `<div>` 来封装文档的章节，而 `<span>` 用于封装一小部分文本、图像等。\n\n### 用于向网站添加 JavaScript 代码的元素\n\n\
+  `<script>`...`</script>`\n\n`<script>` 标签用于向我们的 HTML 文档添加内部 JavaScript 代码，或链接到外部脚本。JavaScript\
+  \ 是一种脚本语言，为我们的网站添加交互性。\n\n示例（添加内部 JS 代码）：\n\n```html\n<script>\n  document.getElementById(\"\
+  para1\").innerHTML = \"Hello JavaScript!\";\n</script>\n```\n\n示例（链接到外部 JS 脚本）：\n\
+  \n```html\n<script type=\"text/javascript\" src=\"myscripts.js\"></script>\n```\n\
+  \n### 用于格式化文本的元素\n\n#### Strong 标签\n`<strong>`...`</strong>`\n\n`<strong>` 标签用于定义重要的文本。大多数浏览器会将文本**加粗**。\n\
+  \n示例：\n\n`The examination will be held on <strong>12 Jan at 2pm</strong>. Late will\
+  \ not be allowed into the hall.`\n\n输出：\n考试将于 1 月 12 日下午 2 点举行。迟到者将不允许进入现场。\n\n\
+  #### Em 标签\n`<em>`...`</em>`\n\n`<em>` 标签用于定义强调的文本。大多数浏览器将以*斜体*形式显示文本。\n\n示例：\n\n\
+  `The examination will be held on 12 Jan at 2pm. Late <em>not</em> be allowed into\
+  \ the hall.`\n\n### 用于定义网页部分的元素\n\n`<header>`...`</header>`\n\n`<header>` 标签用于定义页面的页眉部分。\n\
+  \n`<nav>`...`</nav>`\n\n`<nav>` 标签用于导航。\n\n`<main>`...`</main>`\n\n`<main>` 标签用于页面的主要内容。\n\
+  \n`<footer>`...`</footer>`\n\n`<footer>` 标签用于页面的页脚部分。\n\n```html\n<!doctype html>\n\
+  <html>\n<head>\n  <title>Example</title>\n</head>\n<body>\n  <header>\n    <!--\
+  \ Insert Header -->\n  </header>\n  <nav>\n    <!-- Insert Navigation -->\n  </nav>\n\
+  \  <main>\n    <!-- Insert Main Content -->\n  </main>\n  <footer>\n    <!-- Insert\
+  \ Footer -->\n  </footer>\n</body>\n</html>\n```\n\n## 注释\n\n注意在之前的示例中，我们使用了大量的\
+  \ `<!--` 和 `-->` 符号？这些被称为注释。通常我们在编程时，需要添加注释以便阅读和理解。注释不会在浏览器中显示，它们仅仅是为了解释我们的代码。\n\
+  \n要在 HTML 中添加注释，我们使用 `<!--...-->` 标签。\n\n示例：\n\n```html\n<!--This is a comment.\
+  \ It will not be displayed in the browser-->\n```\n\n### 字符实体\n\n某些字符在 HTML 中有预定义定义的特定用途。例如，小于符号\
+  \ `<` 用于启动所有标签。如果我们需要在网页上显示文本 5<12 怎么办？\n\n为了实现这一点，我们需要使用字符实体。字符实体始终以与符号 `&` 开始并以分号\
+  \ `;` 结束。显示小于符号有两种方法。我们可以写成 `&lt;` 或 `&#60;`。前者被称为实体名称，而后者被称为实体数字。实体名称更容易记忆（`lt`\
+  \ 代表 less than），但某些浏览器并不支持所有的实体名称。\n\n常用的字符实体包括：\n\n小于符号 (<):\n`&lt;` 或 `&#60;`\n\
+  \n大于符号 (>):\n`&gt;` 或 `&#62;`\n\n安培符号 (&):\n`&amp;` 或 `&#38;`\n\n例如，如果你想在网站上显示 5<12，你在\
+  \ HTML 代码中应将其写为 `5&lt;12`。\n\n\n\n\n\n另一个常用的字符实体是不换行空格（`&nbsp;`）。不换行空格实体用于显示连续的空格。在默认情况下，HTML\
+  \ 不识别连续的空格。如果你在 HTML 代码中写 5 个空格，浏览器会移除其中的 4 个并只显示一个空格。例如，如果你写\n\n`“There are 5 spaces\
+  \      here”`\n\n浏览器将将其显示为\n\n`“There are 5 spaces here”。\n\n如果你想显示多个空格，你需要写\n\n\
+  `“There are 5 spaces &nbsp;&nbsp;&nbsp;&nbsp;here”`。\n\n# 第 3 章：CSS 基础\n\n现在我们已经涵盖了大量的\
+  \ HTML，让我们转向 CSS。CSS 代表级联样式表（Cascading Stylesheet），正如其名所示，CSS 的核心在于样式设计以及让你的网站看起来非常精美。\n\
+  \nCSS 的最新版本是 `CSS3`。与之前的 CSS 版本（即 `CSS1` 和 `CSS2.1`）不同，`CSS3` 将语言分成了不同的模块，以便每个模块可以以不同的速度独立开发。每个模块都添加了新功能，或者扩展了之前在\
+  \ `CSS2.1` 中定义的功能能力。本质上，`CSS3` 只是 `CSS2.1` 的扩展。\n\n本书涵盖了 `CSS2.1` 的核心属性，以及 `CSS3`\
+  \ 中引入的几个新属性。一旦你掌握了核心属性，你就可以毫无问题地转向 `CSS3` 中新添加的高级属性。这些高级属性允许对你的网站进行更奇幻的样式设计，例如添加过渡和动画。\n\
+  \n在本章中，我们将介绍 CSS 的基础，包括它的语法和优先级。然而，在进入 CSS 语法之前，让我们先学习如何向我们的网站添加 CSS 规则。\n\n## 应用\
+  \ CSS 代码\n\n有三种方法可以将 CSS 代码应用到我们的网站中。\n\n第一种是链接到外部文件。这是推荐的方法。要进行链接，你需要将 CSS 规则写在一个单独的文本文件中并将其保存为\
+  \ `.css` 扩展名。在 HTML 代码中添加规则的语法为\n\n```\n<link rel=\"stylesheet\" type=\"text/css\"\
+  \ href=\"style.css\">\n```\n\n你将将 `<link>` 标签添加到 `head` 元素中，位于 `<head>...</head>`\
+  \ 标签之间。前两个属性 `rel` 和 `type  告诉这是一个 CSS 样式表。你不需要修改它们。最后一个属性 `href` 是你指定要链接的 CSS 文件路径的地方。CSS\
+  \ 文件仅仅是一个包含 CSS 规则的文件，不包含任何 HTML 标签。下例所示。如果代码对你来说意义不大不要担心，我们很快就会讲解。\n\n```\nbody\
+  \ {\n    margin: 0;\n    background-color: green;\n}\n```\n\n将此代码保存为“style.css”，并与\
+  \ `.html` 文件放在同一个文件夹中。然后你可以使用上面的 `<link>` 标签将此 CSS 文件链接到你的 HTML 文件。\n\n第二种向我们的网站添加\
+  \ CSS 规则的方法是将代码直接嵌入到 HTML 源代码中，位于 `head` 元素内。这是通过 `<style>` 标签实现的。下例所示。\n\n```html\n\
+  <head>\n<style>\ndiv {\n    color: blue;\n    width: 100px;\n    height: 200px;\n\
+  }\n</style>\n</head>\n```\n\n最后一种方法是使用内联 CSS。内联 CSS 是在你想要应用它的元素的起始标签中，使用 `style`\
+  \ 属性指定的。每个规则以分号（`;`）结束。示例如下：\n\n```\n<div style=\"text-decoration:underline; color:blue;\"\
+  >Some text</div>\n```\n\n在这三种方法中，链接是首选方法。链接将 HTML 内容与样式规则分离，使其更易维护。当我们需要对多个页面应用相同的\
+  \ CSS 规则时，它也非常有用。相反，嵌入式 CSS 通常用于适用于页面的规则。当你需要将一个规则应用于一个元素，或者当你想覆盖应用于同一元素的其他 CSS\
+  \ 规则时，内联 CSS 非常方便。这是因为内联 CSS 的优先级高于使用其他两种方法添加的 CSS。我们稍后会讨论优先级。然而，内联 CSS 将样式与内容混合在一起，应该尽可能避免。\n\
+  \n## CSS 规则的语法\n\n现在我们已经知道如何将 CSS 规则应用到 HTML 中，让我们学习实际的 CSS 代码。学习 CSS 的第一件事是它的语法，它相对非常直观。语法是：\n\
+  \n`selector { property : value; property : value; }`\n\n例如，如果你想为 `<div>` 标签内部的内容设置样式，你可以这样写规则：\n\
+  \n```\ndiv {\n    background-color: green;\n    font-size: 12px;\n}\n```\n\n第一个单词\
+  \ `div` 是选择器。它告诉浏览器大括号 `{ }` 内部的规则适用于所有带有 `<div>` 标签的元素。在大括号内部，你写所有的声明。你首先声明你想要设置的属性（在第一个声明中是\
+  \ `background-color`），紧接着是一个冒号（`:`）。然后，你给出你想要的值（在这种情况下是 `green`）。最后，你用分号（`;`）结束每个声明。\n\
+  \n在 CSS 中，缩进和换行并不重要。你也可以这样写你的声明：\n\n```\ndiv { background-color: green; font-size:\
+  \ 12px; }\n```\n\n非常直观，对吧？太棒了！让我们继续...\n\n## 选择元素\n\n在上面的示例中，大括号中声明的规则将适用于所有带有 `<div>`\
+  \ 标签的元素。然而，在大多数情况下，我们希望有所变化。假设你想让一个 `<div>` 元素具有 `12px` 的字体大小，而另一个具有 `14px` 的字体大小。你会如何做呢？\n\
+  \n### 选择类和 ID\n\n基本上有两种方法。第一种是使用 `id` 属性。在你的 HTML 文档中，不再仅仅使用 `<div>` 标签，你可以给它添加一个\
+  \ `id` 属性。例如，你可以写：\n\n```html\n<div id=\"para1\">Some text.</div\n<div id=\"para2\"\
+  >More text.</div>\n```\n\n在我们的 CSS 代码中，我们可以通过在 `id` 名称前添加 `#` 号来选择相应的 `id`。示例所示：\n\
+  \n```css\ndiv {\n    background-color: green;\n}\n#para1 {\n    font-size: 12px;\n\
+  }\n#para2 {\n    font-size: 14px;\n}\n```\n\n第一条规则适用于所有带有 `<div>` 标签的元素。第二条规则仅适用于\
+  \ `id=\"para1\"` 的元素。第三条规则仅适用于 `id=\"para2\"` 的元素。\n\n除了选择器 `#para1` 之外，你也可以写得更具体，比如\
+  \ `div#para1`，在 `#` 号前后都不留空格。这两种方法将选择同一个元素，但第二种方法具有更高的优先级（稍后详细介绍）。\n\n注意，`id` 在页面内应该是唯一的。不允许有两个\
+  \ `<div id=\"para1\">` 标签。一个 `<div id=\"para1\">` 和一个 `<p id=\"para1\">` 标签也是不允许的，因为它们具有相同的\
+  \ `id`。即使你有两个具有相同 `id` 的元素，你的 HTML 和 CSS 代码也可以工作，但当你开始在网站上使用 JavaScript 或其他脚本语言时就会出现问题。如果你需要对两个不同的元素应用相同的\
+  \ CSS 规则，可以使用 `class`。`class` 类似于 `id`，区别在于 `class` 不需要是唯一的。此外，`id` 的优先级高于 `class`。\n\
+  \n现在，让我们考虑以下代码：\n\n```html\n<div class=\"myclass1\">Some text.</div\n<p class=\"\
+  myclass1\">More text.</p>\n<div>Yet more text.</div>\n```\n\n如果你想选择所有的 `<div>` 元素（即第一个和第三个元素），你写：\n\
+  \n```css\ndiv { ... }\n```\n\n如果你想选择所有 `class=\"myclass1\"` 的元素（即第一个和第二个元素），你在 `class`\
+  \ 名称前添加一个点（`.`），如下：\n\n```css\n.myclass1 { ... }\n```\n\n如果你只想选择 `class=\"myclass1\"\
+  ` 的 `<p>` 标签（即第二个元素），你写：\n\n```css\np.myclass1 { ... }\n```\n\n点的前后不应该留空格。\n\n\n\
+  \n\n一个元素可以有多个类。在 HTML 属性中，多个类之间用空格分隔。例如，下面的 `div` 元素有两个类：`myclass1` 和 `myclass2`。\n\
+  \n```html\n<div class=\"myclass1 myclass2\">\n…\n</div>\n```\n\n如果我们有以下 CSS 代码：\n\
+  \n```css\n.myclass1 { … }\n.myclass2 { … }\n```\n\n那么 `myclass1` 和 `myclass2` 的规则都适用于上述\
+  \ `<div>` 元素。\n\n## 更多选择器\n\n除了通过 `id` 和 `class` 选择元素外，CSS 还提供了许多方法来指定我们想要选择的元素。\n\
+  \n### 选择多个元素\n\n例如，我们可以一次选择多个元素。如果我们想选择 `<div>`、`<p>` 和 `<ul>` 元素，我们可以写：\n\n```css\n\
+  div, p, ul { … }\n```\n\n### 选择子元素\n\n如果我们想选择 `<div>` 元素内部所有的 `<p>` 元素，我们可以写：\n\n\
+  ```css\ndiv p { … }\n```\n\n注意 `div` 和 `p` 之间没有逗号。在这种情况下，CSS 规则将仅适用于 `<div>` 内部的\
+  \ `<p>` 元素。例如，如果我们有下所示 HTML 结构，规则将适用于“I am a paragraph inside div”，而不会适用于“I am a\
+  \ stand-alone paragraph”。\n\n```html\n<div>\n    <p>I am a paragraph inside div</p>\n\
+  </div>\n<p>I am a stand-alone paragraph</p>\n```\n\n第一个段落“I am a paragraph inside\
+  \ div”被称为 `<div>` 标签的子元素，因为它的起始和结束标签（`<p>` 和 `</p>`）完全位于 `<div>...</div>` 标签之内。\n\
+  \n### 按属性选择\n\n你也可以根据元素的属性来选择元素。如果你想选择所有指向 `http://www.learncodingfast.com/` 的超链接，你可以写：\n\
+  \n```css\na[href=\"http://www.learncodingfast.com\"] { … }\n```\n\n方括号前不应该有空格。如果你有以下\
+  \ HTML 代码，只有第一个链接会被选中。\n\n```html\n<a href=\"http://www.learncodingfast.com/\">Learn\
+  \ Coding Fast</a>\n<a href=\"http://www.google.com/\">Google</a>\n```\n\n### 选择伪类\n\
+  \n另一个常用的选择器是伪类选择器。伪类指的是元素的一种特殊状态。最常见的伪类是针对 `<a>...</a>` 元素的伪类。超链接可以处于四种状态之一：\n\n\
+  - `link`（未访问过的链接）\n- `visited`（已过的链接）\n- `hover`（当用户鼠标悬停在其上方时），或\n- `active`（当链接被点击时）。\n\
+  \n我们可以根据链接所处的状态来选择它。例如，要选择悬停状态，我们写：\n\n```css\na:hover { … }\n```\n\n关键字 `hover`\
+  \ 通过冒号（`:`）添加到 `a` 选择器的后面，冒号前后均不留空格。我们将在第 9 章中回到选择和样式化链接不同状态的概念。\n\n除了选择链接的不同状态外，我们还可以使用伪类来选择子元素。假设我们有一个带有三个\
+  \ `<p>` 子元素的 `<div>` 元素：\n\n```html\n<div>\n    <p>I am the first child</p>\n  \
+  \  <p>I am the second child</p>\n    <p>I am the third child</p>\n</div>\n```\n\n\
+  我们可以使用 `first-child` 伪类来选择第一个 `<p>` 元素。我们也可以使用 `last-child` 选择器选择最后一个子元素，或者使用 `nth-child(n)`\
+  \ 选择器来选择第 n 个子元素。例如，如果我们写：\n\n```css\np:nth-child(2) { … }\n```\n\n由于括号 `()` 中的数字‘2’，我们将选择段落“I\
+  \ am the second child”。\n\n### 选择伪元素\n\n除了伪类，CSS 还有伪元素的概念。伪元素指的是元素的指定部分，例如元素的第一个字母或第一行。\n\
+  \n例如，如果我们有下所示的 `<p>` 元素：\n\n```html\n<p>This is some text.</p>\n```\n\n我们可以通过书写以下代码来选择第一个字母\
+  \ (T)：\n\n```css\np::first-letter { … }\n```\n\n注意，在这种情况下使用了双冒号。另一个伪元素是 `first-line`\
+  \ 元素。它将选择文本的第一行。\n\n最后，我们可以使用 `before` 和 `after` 伪元素在元素的内容之前或之后插入内容。例如，如果我们想在所有的\
+  \ `<h1>` 元素之后添加一个感叹号，我们可以写：\n\n```css\nh1::after {\n    content: \"!\";\n}\n```\n\
+  \n这将在会在所有的 `<h1>` 元素之后添加一个感叹号。如果我们有以下 HTML 代码：\n\n```html\n<h1>This is a heading</h1>\n\
+  ```\n\n## 大小不敏感\n\n在大多数情况下，选择器是不区分大小写的的。然而，唯一的例外是某些语境下的 `id` 和 `class` 名称（等等，根据提供的文本：“在大多数情况下，选择器是不区分大小写的的”）。实际上，提供的文本有些碎片化，但我将保留核心信息。\n\
+  \n## 优先级\n\n现在我们已经学会了如何选择，让我们进入一个非常重要的概念：优先级。三个原则控制着哪条规则生效。\n\n### 原则 1：选择器越具体，优先级越高\n\
+  \n我们不会详细介绍如何计算选择性。要记住的点是 `id` 比 `class` 更具体，而 `class` 比元素更具体。考虑以下代码：\n\n```css\n\
+  div { font-size: 10px; }\n#myId { font-size: 12px; }\n.myClass { font-size: 14px;\
+  \ }\n```\n```html\n<div id=\"myId\" class=\"myClass\">Some text</div>\n```\n\n由于\
+  \ `<div>` 元素拥有 `class=\"myClass\"` 和 `id=\"myId\"`，三条规则 `div`、`#myId` 和 `.myClass`\
+  \ 都生效。然而，由于 `id` 优先级最高，“Some text”将以 12px 显示。\n\n此外，关于特性的另一点是，选择器越详细，优先级越高。例如，`div#myId`\
+  \ 的优先级高于 `#myId`。这是因为 `div#myId` 更详细，因为它告诉我们 `myId` 是 `div` 元素的 `id`。在示例代码中，将应用黄色。\n\
+  \n```css\ndiv { color: red; }\ndiv#myId { color: yellow; }\n#myId { color: blue;\
+  \ }\n.myClass { color: green; }\n```\n\n### 原则 2：如果没有指定样式，元素将从父容器继承样式\n\n子元素是完全位于另一个元素的起始和结束标签之内的元素。例如，在下代码中，`<p>`\
+  \ 是 `<body>` 元素的子元素。由于没有定义 `<p>` 的字体大小，它将从定义了该属性的 `<body>` 元素继承该属性。\n\n```css\n\
+  body {\n    font-size: 1.5em;\n}\n```\n```html\n<body>\n    <p>Some text</p>\n</body>\n\
+  ```\n\n如果 `<body>` 元素也没有定义 `font-size` 属性，将使用浏览器的字体字体。\n\n### 原则 3：在其他相等的情况下，最后声明的规则胜出\n\
+  \n假设你在 HTML `<head>` 元素中有以下 CSS 声明。\n\n```html\n<head>\n<style>\n    p { font-size:\
+  \ 20px; }\n</style>\n</head>\n```\n\n\n\n\n在 HTML 文档的后续，你有以下 HTML 代码，其中包含一条内联 CSS\
+  \ 规则：\n\n```html\n<p style=”font-size: 30px;>Some text</p>\n```\n\n你认为哪种规则将应用于“Some\
+  \ text”这些单词上？\n\n正确答案是内联规则。这是因为在其他相等的情况下，最后声明的规则优先级最高。由于内联 CSS 是在 HTML 代码内部声明的，它的声明顺序晚于在\
+  \ `head` 部分中声明的嵌入式 CSS。因此，将应用 30px 的字体大小。\n\n## 显示不一致\n\n在处理 CSS 时需要解决的另一个问题是跨浏览器的显示不一致问题。你可能会发现你的网站在不同的浏览器中看起来略有（或极度）不同。大多数显示问题倾向于旧版本的\
+  \ Internet Explorer，尽管问题也可能发生在其他浏览器中（尤其是移动浏览器）。\n\n显示不一致的发生的原因是不同的浏览器使用不同的布局引擎来解释网站的\
+  \ CSS 代码。例如，`Safari` 和 `Chrome` 使用 `WebKit` 引擎，而 `Firefox` 使用 `Gecko` 引擎。一个引擎计算和显示页面的方式可能与另一个引擎不同。例如，`Internet\
+  \ Explorer` 使用的引擎 `Trident` 会为某些页面设计自动加宽页面像素宽度。这可能导致侧边栏因宽度不足而被推到底部。\n\n另一个导致显示不一致的问题是对某些\
+  \ CSS 属性缺乏通用支持。某些属性并不是所有浏览器都支持。你可以访问 [`www.caniuse.com`](http://www.caniuse.com/)\
+  \ 网站来检查你正在开发的浏览器是否支持特定的 CSS 属性。\n\n有时，只有当我们为 CSS 规则添加前缀时，特定的浏览器才支持某个 CSS 属性。这对于\
+  \ CSS3 中的新属性尤其如此。一个例子是 CSS 中的 `column-count` 属性。该属性将元素分成多个列。例如，我们可以通过编写 `column-count:\
+  \ 3` 将一个 `div` 元素分为三列。\n\n旧版本的 `Firefox`、`Chrome`、`Safari` 和 `Opera` 不支持此属性。为了让该属性在这些浏览器上生效，你必须将其三个三个声明：\n\
+  \n```css\n-webkit-column-count: 3;\n-moz-column-count: 3;\ncolumn-count: 3;\n```\n\
+  \n而不是简单的\n\n```css\ncolumn-count: 3;\n```\n\n`-webkit-` 前缀增加了对旧版本 `Chrome`、`Safari`\
+  \ 和 `Opera` 的支持，而 `-moz-` 前缀增加了对 `Firefox` 的支持。此外，我们还有 `-ms-` 前缀增加了对 `Internet Explorer`\
+  \ 的支持。\n\n在创建网站时，在各种浏览器上进行测试是有用的，以确保没有内容损坏。修复“损坏”显示的方法取决于导致问题的原因。如果你真的卡住了，我建议在 [`stackoverflow.com`](http://stackoverflow.com/)\
+  \ 上搜索或发布问题，这是一个非常有用的程序员在线社区。\n\n## 注释\n\n本章最后介绍的是注释。在 CSS 中，我们使用 `/*...*/` 符号向代码中添加注释。例如所示：\n\
+  \n```css\n/*\n下面的规则是注释。\np {\n    background-color: black;\n    font-size: 20px;\n\
+  \    color: white;\n}\n*/\n```\n\n`/*` 和 `*/` 符号之间的所有内容会被浏览器忽略。\n\n## 练习 3\n\n从\
+  \ [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。此练习的源代码可以在“Chapter\
+  \ 3 - Basics of CSS”文件夹中找到。\n\n### 练习 3.1\n\n> 1. 在你的浏览器和文本编辑器中同时打开 `Chapter 3 -\
+  \ Basics of CSS.html` 文件。\n> 2. 首先，在文本编辑器的源代码中寻找以下行：\n```css\np {\nbackground-color:\
+  \ yellow;\n}\n```\n这选取了所有的 `<p>` 元素并将它们的背景颜色设置为黄色。“This is some text in the div\
+  \ element.” 这一行没有被选中，因为它不在任何 `<p>...</p>` 标签之内。\n> 3. 现在，让我们尝试将规则从\n```css\np {\n\
+  background-color: yellow;\n}\n```\n改为\n```css\nP {\nBackground-coloR: YELLOW;\n\
+  }\n```\n在你的文本编辑器中保存文件并刷新浏览器。注意看没有发生变化？这是因为在大多数情况下 CSS 是不区分大小写的。\n> 4. 现在，让我们尝试选择不同的\
+  \ HTML 元素，并观察哪些元素最终变成了黄色背景。对于下方的每一项，只需将 HTML 文件第 6 行的选择器更改为所需的选择器即可。\n> 首先，让我们选取\
+  \ `class = \"myClassPara\"` 的元素。要做到这一点，将 CSS 规则中的 `p` 选择器改为 `.myClassPara`。在编辑器中保存文件并刷新浏览器中的页面。注意现在哪个段落被选中了。\n\
+  > 5. 现在将选择器改为 `.myclasspara`。注意现在什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。\n> 6. 接下来，让我们选取\
+  \ `id = \"myIDPara\"` 的元素。尝试自己做一下。\n> 明白了吗？\n> 将 `.myClassPara` 改为 `#myIDPara`。注意现在哪个段落被选中了。\n\
+  > 7. 现在，将 `#myIDPara` 改为 `#myidpara`。注意什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。\n> 8.\
+  \ 接下来，让我们选取 `id = \"myIDPara\"` 的元素。尝试自己做一下。\n> 明白了吗？\n> 将 `.myClassPara` 改为 `#myIDPara`。注意现在哪个段落被选中了。\n\
+  > 9. 现在，将 `#myIDPara` 改为 `#myidpara`。注意什么都没有被选中？那是因为 CSS 在选取类和 id 时是区分大小写的。\n\n\
+  # 第 4 章：CSS 盒模型\n\n到目前，我们已经涵盖了 HTML 和 CSS 的基础。在本章中，我们将开始进行实际的 CSS 编码。具体来说，我们将学习\
+  \ CSS 盒模型，并研究如何修改 CSS 盒的外观。\n\n## 什么是 CSS 盒模型\n\nCSS 中的所有元素都被视为盒子。CSS 盒子由外边距、边框、内边距和实际内容组成，如下所示。\n\
+  \n\n\n\n\n![](img/00011.jpg)\n\n粗黑线是边框（border）。边界内部是内边距（padding）和实际内容。边界外部是框的外边距（margin）。内边距、边框和外边距的厚度都可以\
+  \ CSS 修改。为了理解这个盒模型是如何工作的，让我们分析下面的代码。你可以在 [`learncodingfast.com/css`](http://learncodingfast.com/css)\
+  \ 下载这段代码。\n\n```html\n<!doctype html>\n<html\n<head><title>Chapter 4 - CSS Box Model</title>\n\
+  <style type=\"text/css\">\n#box1 {\n  margin: 20px;\n  padding: 10px;\n  border:\
+  \ 5px solid black;\n  width: 100px;\n  height: 100px;\n  text-align: justify;\n\
+  \  float: left;\n}\n#box2 {\n  margin: 20px;\n  padding: 50px;\n  border: 5px solid\
+  \ black;\n  width: 100px;\n  height: 100px;\n  text-align: justify;\n  float: left;\n\
+  }\n</style></head>\n<body>\n<div id=\"box1\">Learn CSS in One Day and Learn It Well.\
+  \ CSS is easy.</div>>\n<div id=\"box2\">Learn CSS in One Day and Learn It Well.\
+  \ CSS is easy.</div>>\n<p>skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd ckasj\
+  \ cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd\
+  \ ckasj cnkas djvcn ksa mc nlkasd jn skajd fhadlc vkas j cnl ka jshvn aclaks jdclkasjd\
+  \ ckasj cnkas djvcn ksa mc nlkasd jn</p>\n</body>\n</html>\n```\n\n如果你运行这段代码，你将得到下面的框。框旁边和下方的乱码文本是为了显示外边距（margin）。\n\
+  \n![](img/00003.jpg)\n\n这段代码定义了两个宽度和高度均为 100 像素的框。这个宽度和高度仅指内容区域的尺寸。\n\n第一个框（`box1`）内容区域周围有\
+  \ 10 像素（px）的内边距。在内边距周围，它有一个 5px 的黑色实线边框。`box1` 的总宽度（包括边框）为 100（内容区域）+ 10*2（两侧内边距）+\
+  \ 5*2（两侧边框）=130 px。高度也是如此。\n\n第二个框（`box2`）有 50px 的内边距。尽管 `box2` 比 `box1` 大得多，但请注意文字“Learn\
+  \ CSS in One Day and Learn It Well. CSS is easy.” 仍然占据相同的区域？这是因为内容区域是由宽度和高度属性决定的，而不是内边距。`box2`\
+  \ 的总宽度为 100+50*2+5*2 = 210px。它的高度也是 210px。\n\n在边框外部，两个框都有 20px 的外边距。注意乱码文本和框之间有一些空间吗？那就是外边距。\n\
+  \n尝试稍微修改代码，更改宽度、height、padding、margin 和 border 属性的值。观察每项变化影响了哪些部分。你会注意到宽度和高度影响内容区域。外边距影响边框外部的区域，而内边距影响内部的区域。边框理当然是框的边界。我们将在接下来详细介绍这些每一个属性。\n\
+  \n## 宽度和高度属性\n\nCSS 框的 `width` 和 `height` 属性指定了内容区域的尺寸（不包括内边距、边框和外边距）。值通常以像素或百分比给出。例如，示例中的代码将\
+  \ `box1` 和 `box2` 的宽度和高度都设置为 100px。你也可以将宽度设置为 80%。此时框的内容区域将占据页面宽度的 80%。最后，你可以将高度和宽度设置为\
+  \ `auto`。在这种情况下，浏览器将根据显示框内内容所需的空间自动计算这些值。\n\n## Overflow 溢出属性\n\n有时，内容区域的宽度和高度可能太小，无法容纳框内的内容。默认情况下，内容将溢出框外并与其他内容重叠。这将导致网页格式非常糟糕。如果你不希望发生这种情况，可以使用\
+  \ `overflow` 属性。下面的图显示了使用 `overflow` 属性的不同值（`visible`、`hidden`、`scroll` 和 `auto`）如何显示内容。\n\
+  \n![](img/00001.jpg)\n\n## Padding 和 Margin 属性\n\n内边距和外边距都是透明的。因此，我们无法改变它们的颜色。但我们可以指定它们的宽度。指定宽度最常用的单位是像素。如果你希望外边距为\
+  \ 10 像素，可以写 `margin: 10px;`。10 和 px 之间不应有空格。\n\n下面的示例显示了指定外边距宽度的四种不同语法。内边距也一样。只需将属性名从\
+  \ `margin` 更改为 `padding`。\n\n语法 1\n```css\nmargin: 25px;\n```\n语法 2\n```css\nmargin:\
+  \ 25px 50px;\n```\n语法 3\n```css\nmargin-top: 25px;\n```\n语法 4\n```css\nmargin: 25px\
+  \ 50px 60px 10px;\n```\n\n\n\n\n\n除了使用 RGB 表示法外，你也可以使用十六进制表示法，它使用 6 位数字表示颜色。前两个数字代表“红色”强度的十六进制值，接下来的两个代表“绿色”，最后两个代表“蓝色”。通常使用颜色工具来生成这些十六进制值。可以访问\
+  \ [`instant-eyedropper.com/`](http://instant-eyedropper.com/) 网站获取其中一个免费工具。\n\n\
+  或者，你可以访问 [`html-color-codes.info/`](http://html-color-codes.info/)，那里有一张颜色表供你选择所需的颜色。点击它，就会得到对应的十六进制值。\n\
+  \n### 示例\n\n```css\nborder-color: rgb(255, 0, 0);\n```\n将所有边框设置为红色。\n\n```css\n\
+  border-color: red green;\n```\n将顶部和底部边框设置为红色，左侧和右侧边框设置为绿色。\n\n```css\nborder-top-color:\
+  \ #12005F;\n```\n将顶部边框设置为 #12005F。\n\n### border-style\n\n要设置边框样式，你需要使用属性 `border-style`。接受的值有：`none`、`dotted`、`dashed`、`solid`、`double`、`groove`、`ridge`、`inset`\
+  \ 和 `outset`。例如，如果你写\n\n```css\nborder-style: solid dotted;\n```\n顶部和底部边界将为实线，左侧和右侧将为虚线。如果你想单独设置样式，可以写：\n\
+  \n```css\nborder-top-style: solid;\n```\n\n```css\nborder-left-style: dotted;\n\
+  ```\n\n### border-radius\n\n`border-radius` 属性用于创建圆角边框。值通常以像素或百分比给出。\n\n可以为四个角单独设置圆角半径。四个角分别是\
+  \ `top-left`（左上）、`top-right`（右上）、`bottom-right`（右下）和 `bottom-left`（左下）。\n\n### 示例\n\
+  \n```css\nborder-radius: 5px;\n```\n将所有角的圆角半径设置为 5px。\n\n```css\nborder-radius:\
+  \ 10px 20px;\n```\n将左上和右下（即两个对角的角）的半径设置为 10px，右上和左下的半径设置为 20px。\n\n```css\nborder-radius:\
+  \ 25px 5px 0 50px;\n```\n从左上角开始按顺时针方向设置各个角的值。\n\n```css\nborder-top-left-radius:\
+  \ 10px;\n```\n将左上角的圆角半径设置为 10px。\n\n如果元素的宽度和高度为 100px，内边距为 20px，边框宽度为 50px（总宽度和总高度\
+  \ = 100 + 20*2 + 50*2 = 240px），将圆角半径设置为 120px（240 除以 2）将得到一个圆而不是正方形。\n\n### 边框简写\n\
+  \n`border` 属性是单行内指定边框宽度、样式和颜色的简写，而不需要分开进行。只需写：\n\n```css\nborder: 5px solid green;\n\
+  ```\n这些值分别为宽度 (5px)、样式 (solid) 和颜色 (green)。此简写中不包含圆角半径。\n\n## 练习 4\n\n从 [`learncodingfast.com/css`](http://learncodingfast.com/css)\
+  \ 下载此练习的源代码并解压文件。此练习的源代码可以在第 4 章 - CSS 模型中找到。\n\n### 练习 4.1\n\n1. 在浏览器和文本编辑器中同时打开\
+  \ `Chapter 4 - CSS Model.html` 文件。\n2. 调整浏览器窗口大小，观察乱码文本如何环绕方框。\n3. 修改 `box1` 的 CSS\
+  \ 声明，将 `width: 100px;` 和 `height: 100px;` 分别改为以下各项：\n   - (a) `width: 200px; height:\
+  \ 200px;`\n   - (b) `width: 60%;`\n   - (c) `height: auto; width: auto;`\n   在文本编辑器中保存文件并刷新页面。注意每种情况下\
+  \ `box1` 发生了什么。\n4. 现在将 `box1` 的宽度和高度改回 100px，并将标签 `<div id=\"box1\">...</div>`\
+  \ 之间的文本更改为：“Learn CSS in One Day and It Well. 这个例子显示了文本溢出框尺寸会发生什么。”接下来，在 `box1`\
+  \ 的 CSS 声明中添加以下各项，并注意每种情况下发生了什么：\n   - (a) `overflow: visible;`\n   - (b) `overflow:\
+  \ hidden;`\n   - (c) `overflow: scroll;`\n   - (d) `overflow: auto;`\n5. 修改 `box1`\
+  \ 的 CSS 声明，将 `margin: 20px;` 改为以下各项，并注意 `box1` 周围空间的变化：\n   - (a) `margin: 50px;`\n\
+  \   - (b) `margin: -50px;`\n   - (c) `margin: 25px 200px;`\n   - (d) `margin: 25px\
+  \ 50px 60px 10px;`\n6. 移除 `box1` 的外边距规则并添加以下 4 行：\n   ```css\n   margin-top: 25px;\n\
+  \   margin-right: 50px;\n   margin-bottom: 60px;\n   margin-left: 10px;\n   ```\n\
+  \   注意 `box1` 有任何变化吗？应该没有变化，因为这与上面的 5(d) 相同。\n7. 移除 `box1` 的外边距规则并添加下面的一行：\n   ```css\n\
+  \   margin: 0 auto;\n   ```\n   接下来，将 `box1` 的宽度改为 80%。最后，删除行 `float: left;`。注意发生了什么（我们将在下一章解释\
+  \ `float` 的作用）。`box1` 现在居中对齐了。\n8. 现在，让我们处理 `box2`。修改 `box2` 的 CSS 声明，将 `padding:\
+  \ 50px;` 改为以下各项，并注意 `box2` 内部的变化：\n   - (a) `padding: 25px;`\n   - (b) `padding:\
+  \ -10px;`\n   - (c) `padding: 25px 50px;`\n   - (d) `padding: 25px 50px 60px 10px;`\n\
+  \   8(b) 将不起作用，因为内边距不能为负值。你将得到 0 像素的内边距。\n9. 移除 `box2` 的内边距规则并添加以下 4 行：\n   ```css\n\
+  \   padding-top: 25px;\n   padding-right: 50px;\n   padding-bottom: 60px;\n   padding-left:\
+  \ 10px;\n   ```\n   注意 `box2` 有任何变化吗？应该没有变化，因为这与上面的 8(d) 相同。\n10. 现在让我们更改 `box2`\
+  \ 的边框样式。从 `box2` 的 CSS 声明中删除行 `border: 5px solid black;` 并添加以下各项。注意边框在每种情况下发生了什么：\n\
+  \    - (a) `border-style: solid;`\n    - (b) `border-style: none double;`\n    -\
+  \ (c) `border-style: inset;`\n    - (d) `border-style: outset;`\n11. 接下来，移除 `box2`\
+  \ 的 `border-style` 规则并添加以下：\n    ```css\n    border-top-style: dotted;\n    border-left-style:\
+  \ double;\n    ```\n12. 现在移除第 11 的规则并将边框样式改为实线（`border-style: solid;`）。添加以下各项。注意每种情况下\
+  \ `box2` 发生了什么：\n    - (a) `border-width: 25px;`\n    - (b) `border-width: 25px\
+  \ thin;`\n    - (c) `border-top-width: 30px;`\n13. 现在我们要更改 `box2` 的边框颜色。尝试添加以下各项：\n\
+  \    - (a) `border-color: rgb(255, 0, 0);`\n    - (b) `border-color: red green;`\n\
+  \    - (c) `border-top-color: #12FF5F;`\n14. 接下来，我们尝试边框简写。移除 `box2` 的所有边框属性。添加以下：\n\
+  \    ```css\n    border: 5px solid green;\n    ```\n15. 现在，尝试 `border-radius` 属性。尝试以下各项：\n\
+  \    - (a) `border-radius: 20px;`\n    - (b) `border-radius: 10px 20px;`\n    -\
+  \ (c) `border-radius: 25px 5px 0 50px;`\n    - (d) `border-top-left-radius: 10px;`\n\
+  \n\n\n\n\n定位元素有四种方法。为了理解这四种方法的工作原理，我强烈建议你尝试本章末尾的练习。这是一个没有实践很难理解的话题。\n\n## 静态定位 (Static\
+  \ Positioning)\n\n第一种定位方法是 `static` 静态定位。静态并没有特殊含义，它意味着元素是根据页面的正常流进行定位的。所有的 HTML\
+  \ 元素默认都使用这种方法进行定位。如果你想指定使用 `static` 定位（例如为了覆盖同一元素的其他定位规则），你可以写：\n\n```css\nposition:\
+  \ static;\n```\n\n## 相对定位 (Relative Positioning)\n\n定位元素的第二种方法是 `relative` 相对定位方法。这种方法相对于元素相对于正常位置进行定位。正常位置是指元素在没有指定定位规则或使用\
+  \ `static` 定位时的默认位置。\n\n假设我们有两个盒子，`box1` 和 `box2`，且没有指定定位。如果我们在 HTML 代码中在 `box1`\
+  \ 之后创建 `box2`，那么 `box2` 默认将位于 `box1` 下方（参见下方代码）。\n\n```html\n<!DOCTYPE html>\n<html\n\
+  <head>\n<style>\n#box1 {\n  /*一些用于 box1 的样式规则*/\n}\n#box2 {\n  /*一些用于 box2 的样式规则*/\n\
+  }\n</style>\n</head>\n<body>\n<div id=\"box1\">Box 1</div>\n<div id=\"box2\">Box\
+  \ 2</div>\n</body>\n</html>\n```\n\n现在，假设我们为 `box2` 的 CSS 声明添加了以下规则：\n\n```css\n\
+  position: relative;\nleft: 150px;\ntop: 50px;\n```\n\n我们所做的是将 `box2` 的定位更改为 `relative`\
+  \ 相对定位。\n\n![](img/00002.jpg)\n\n上面的图片显示了在使用 `relative` 定位时 `box2` 的位置。添加了一个白色虚线框来显示\
+  \ `box2` 的原始位置。\n\n当应用 `relative` 定位时，`box2` 会相对于它的正常位置移动。`top: 50px;` 行将盒子距离原始位置的顶部移动\
+  \ 50px，而 `left: 150px;` 行将其向左移动 150px。\n\n你也可以使用 `right` 和 `bottom` 属性来定位 `box2`。例如，`bottom:\
+  \ 50px;` 将将 `box2` 从其原始底部向上移动 50px，而 `right: 50px;` 将将其从 `box2` 的原始右边缘向左移动 50px。此外，你可以使用负像素来定位盒子（例如\
+  \ `left: -50px`）。\n\n尝试第 5 章的练习，并调整这些值看看所有所有设置是如何工作的。\n\n注意，当使用 `relative` 定位时，元素可能会与其他元素重叠。\n\
+  \n如果你想指定哪个元素应该在前面，必须使用 `z-index` 属性。`z-index` 属性适用于任何定位为 `relative`、`fixed` 或 `absolute`\
+  \ 的元素（即非 `static`）。`z-index` 值较大的元素将定位在 `z-index` 值较小的元素前面。\n\n假设你有两个盒子，`greenBox`\
+  \ 和 `redBox`，它们相互重叠。如果你将 `greenBox` 的 `z-index` 声明为\n\n```css\nz-index: 1;\n```\n\
+  \n并将 `redBox` 的 `z-index` 声明为\n\n```css\nz-index: 2;\n```\n\n那么 `redBox` 将位于 `greenBox`\
+  \ 之上，因为它的 `z-index` 值更大。\n\n## 固定定位 (Fixed Positioning)\n\n第三种定位方法是 `fixed` 固定定位。顾如其名，使用\
+  \ `fixed` 方法定位的元素将始终保持在它指定的位置；即使页面滚动，它也不会移动。固定定位通常用于在网页的侧边定位社交分享按钮。要使用 `fixed` 定位，我们写：\n\
+  \n```css\nposition: fixed;\n```\n\n在使用 `fixed` 定位时，我们可以使用 `top` 属性指定盒子距离页面顶部的像素数，而使用\
+  \ `left` 属性指定它距离页面左侧的像素数。\n\n除了 `top` 和 `left`，还有 `right` 和 `bottom` 属性，它们分别指定盒子距离页面右侧和底部的像素数。\n\
+  \n## 绝对定位 (Absolute Positioning)\n\n最后的方法是 `absolute` 绝对定位。\n\n当使用 `absolute` 定位时，元素相对于第一个定位非\
+  \ `static` 的父元素进行定位。如果没有找到这样的元素，它将相对于页面进行定位。\n\n例如，假设我们有以下 HTML 代码：\n\n```html\n\
+  <div id=\"box1\">Content in Box 1</div>\n<div id=\"box2\">Content in Box 2</div>\n\
+  ```\n\n以及以下 CSS 声明：\n\n```css\n#box1 {\n  position: relative;\n}\n#box2 {\n  position:\
+  \ absolute;\n  top: 50px;\n  left: 150px;\n}\n```\n\n假设 `box2` 不是任何具有非静态定位元素的子元素，它将相对于页面进行定位。也就是说，它距离页面顶部\
+  \ 50px，距离左侧 150px。\n\n然而，如果我们更改 HTML 结构为：\n\n```html\n<div id=\"box1\">Content in\
+  \ Box 1\n  <div id=\"box2\">Content in Box 2</div>\n</div>\n```\n\n`box2` 现在是 `box1`\
+  \ 的子元素。因此 `box2` 将相对于 `box1` 定位。它距离 `box1` 顶部 50px，距离 `box1` 左侧 150px。\n\n在某种程度上，`absolute`\
+  \ 定位与 `relative` 定位相似，只是元素相对于父元素而不是正常位置。\n\n## 浮动 (Floating)\n\n我们将讨论的下一个 CSS 属性是浮动。浮动是一种在页面上排列元素的技术。这种想法类似于将书放在书架上。假设你有一叠厚度和高度不同的书，你需要将这些书放在书架上。此外，不允许重新排列书籍。也就是说，书籍必须按照它们在原始中的顺序放在书架上。\n\
+  \n```html\n<!doctype html>\n<html>\n<head>\n<title>Float</title>\n<style type=\"\
+  text/css\">\ndiv {\n  float: left;\n  border: 1px dashed black;\n  margin: 5px;\n\
+  }\n#box1 {\n  width: 60px;\n  height: 100px;\n}\n#box2 {\n  width: 100px;\n  height:\
+  \ 20px;\n}\n#box3 {\n  width: 50px;\n  height: 150px;\n}\n#box4 {\n  width: 20px;\n\
+  \  height: 50px;\n}\n#box5 {\n  width: 150px;\n  height: 120px;\n}\n#box6 {\n  width:\
+  \ 120px;\n  height: 70px;\n}\n#box7 {\n  width: 25px;\n  height: 80px;\n}\n</style>\n\
+  </head>\n<body>\n<div id=\"box1\">Box 1</div>\n<div id=\"box2\">Box 2</div>\n<div\
+  \ id=\"box3\">Box 3</div>\n<div id=\"box4\">Box 4</div>\n<div id=\"box5\">Box 5</div>\n\
+  <div id=\"box6\">Box 6</div>\n<div id=\"box7\">Box 7</div>\n</body>\n</html>\n```\n\
+  \n如果我们运行这段代码，我们将得到类似下面的图片。\n\n![](img/00013.jpg)\n\n注意盒子是如何是从顶部开始从左到右排列的。由于 box\
+  \ 5 太厚无法放入第一行，CSS 将其放在上一个盒子的下方。\n\n现在，假设在这些 7 个盒子之外，我们还有想要显示在网站上的以下文本。\n\n<p>这是一些非浮动的文本。</p>\n\
+  <p>这是更多非浮动的文本。</p>\n<p>这是更多的非浮动的文本。</p>\n\n\n\n\n\n如果这些段落包含在 `div` 框之后的 HTML 文档中，我们将得到下面的图。这些段落将仅仅“挤入”任何可用的空间。\n\
+  \n![](img/00006.jpg)\n\n如果你不希望发生这种情况，可以使用 `clear: both` 属性来清除浮动。要这样做，请在 CSS 声明中添加以下内容：\n\
+  \n```css\n.clearFloat { clear: both; }\n```\n\n要使用此类，我们将其添加到第一个 `<p>` 标签中：\n\n```html\n\
+  <p class=\"clearFloat\">这是某段未浮动的文本。</p>\n```\n\n你只需要在第一个 `<p>` 标签上添加 `clearFloat`\
+  \ 类。一旦清除了浮动，文本将不再环绕这些框布局。\n\n这就是 CSS 中定位和浮动的的工作原理精要。我强烈建议你尝试本章节的练习题，以更好地理解这两个概念。\n\
+  \n## 练习 5\n\n从 [`learncodingfast.com/css`](http://learncodingfast.com/css) 下载此练习的源代码并解压文件。该练习的源代码可以在\
+  \ `Chapter 5 - Positioning and Floating` 文件夹中找到。\n\n### 练习 5.1\n\n> 1. 在浏览器和文本编辑器中同时打开\
+  \ `Chapter 5 - Positioning.html` 文件。\n\n> 2. 为 `#box1` 和 `#box2` 的 CSS 声明添加规则 `position:\
+  \ static;`，并观察两个框的位置发生了什么变化。\n\n>\n> 没有任何变化，对吧？那是因为所有 HTML 元素默认都使用 `static` 定位。\n\
+  \n> 3. 从 `#box1` 和 `#box2` 的 CSS 声明中移除规则 `position: static;`。在 `#box2` 的 CSS 声明中添加以下几行。\n\
+  \n```css\nposition: relative;\ntop: 50px;\nleft: 70px;\n```\n\n> 观察第二个框的位置发生了什么变化。\
+  \ 3. 它现在距离顶部 50px，距离其正常位置左侧 70px。\n\n> 尝试对 `top` 和 `left` 属性使用不同的值，观察 `box2` 位置发生的变化。也尝试使用负值。你也可以尝试使用\
+  \ `right` 和 `bottom` 属性。\n\n> 4. 现在将 `#box2` 的 CSS 声明改回\n\n```css\nposition: relative;\n\
+  top: 50px;\nleft: 70px;\n```\n\n> 注意到文本被红色框部分遮挡了吗？\n\n> 如果你想让文本出现在红色框前面，请在 `p` 的\
+  \ CSS 声明中添加以下几行。\n\n```css\nposition: relative;\nz-index: 2;\n```\n\n> 你可以将位置设置为\
+  \ `relative`、`absolute` 或 `fixed`。只要不是 `static` 即可。\n\n> 接下来，为 `#box2` 的 CSS 声明添加行\
+  \ `z-index: 1;`。刷新页面。现在文本应该在红色框前面了，因为文本的 `z-index` 大于红色框的 `z-index`。\n\n> 如果你想让红色框反出现在文本前面，只需将\
+  \ `#box2` 的 `z-index` 改为大于 2 的值即可。\n\n> 5. 现在，将 `#box1` 的高度改为 `5000px`，并将 `#box2`\
+  \ 的定位改为 `fixed`（`position: fixed;`）。\n\n> 滚动页面。 5. 红色框没有移动，因为它现在使用了固定定位。\n\n> 6.\
+  \ 将 `#box2` 的定位改回 `relative`，并将 `#box1` 的高度改回 `100px`。在文件底部的 HTML 代码中的 `<p>` 标签之前添加以下行。\n\
+  \n```html\n<div id=\"box3\"></div>\n```\n\n现在添加以下 CSS 声明来样式化 `box3`。\n\n```css\n\
+  #box3 {\n  position: absolute;\n  top: 50px;\n  left: 150px;\n  background-color:\
+  \ yellow;\n  width: 50px;\n  height: 50px;\n  padding: 20px;\n  border: 5px dotted\
+  \ black;\n  margin: 10px;\n}\n```\n\n> `box3` 使用 `absolute` 定位，由于它不是任何 `<div>` 元素的子元素，因此它是相对于页面定位的。也就是说，它距离页面顶部\
+  \ 50px，距离左侧 150px。\n\n> 7. 现在将三个框的 `<div>` 代码改为以下内容：\n\n```html\n<div id=\"box1\"\
+  > </div>\n<div id=\"box2\">\n    <div id=\"box3\"></div>\n</div>\n```\n\n> `box3`\
+  \ 现在是 `box2` 的子元素。因此，它是相对于 `box2` 定位的。\n\n### 练习 5.2\n\n> 1. 在浏览器和文本编辑器中同时打开 `Chapter\
+  \ 5 - Positioning.html` 文件。\n\n> 2. 为 `#box1` 和 `#box2` 的 CSS 声明添加规则 `position:\
+  \ static;`，并观察两个框的位置发生了什么变化。\n\n> 3. 从 `#box1` 和 `#box2` 的 CSS 声明中移除规则 `position:\
+  \ static;`。在 `#box2` 的 CSS 声明中添加以下几行。\n\n> 4. 现在将 `#box2` 的 CSS 声明改回 `position:\
+  \ relative; top: 50px; left: 70px;`。注意到文本被红色框部分遮挡了吗？\n\n> 5. 如果你想让文本出现在红色框前面，请在\
+  \ `p` 的 CSS 声明中添加以下行：`position: relative; z-index: 2;`。\n\n> 6. 接下来，为 `#box2` 的\
+  \ CSS 声明添加行 `z-index: 1;`。刷新页面。现在文本应该在红色框前面了，因为文本的 `z-index` 大于红色框的 `z-index`。\n\
+  \n> 7. 如果你想让红色框反出现在文本前面，只需将 `#box2` 的 `z-index` 改为大于 2 的值即可。\n\n> 8. 现在，将 `#box1`\
+  \ 的高度改为 `5000px`，并将 `#box2` 的定位改为 `fixed`（`position: fixed;`）。\n\n> 9. 滚动页面。红色框没有移动，因为它现在使用了固定定位。\n\
+  \n> 10. 将 `#box2` 的定位改回 `relative`，并将 `#box1` 的高度改回 `100px`。在文件底部的 HTML 代码中的 `<p>`\
+  \ 标签之前添加以下行：`<div id=\"box3\"></div>`。\n\n> 11. 现在添加以下 CSS 声明来样式化 `box3`。`box3`\
+  \ 使用 `absolute` 定位，由于它不是任何 `<div>` 元素的子元素，因此它是相对于页面定位的。\n\n> 12. 现在将三个框的 `<div>`\
+  \ 代码改为嵌套结构。`box3` 现在是 `box2` 的子元素。因此，它是相对于 `box2` 定位的。\n\n\n\n\n\n> 没有任何变化，对吧？黄色框被声明为内联元素。因此，它只会占据它所需的宽度和高度。事实上，你可以移除高度和宽度属性，且什么都不会改变。\n\
+  \n> 3. 现在将 `#displaydemo` 的 `display` 属性从 `display: inline;` 改为 `display: block;`。发生了什么？\n\
+  \n> 黄色框现在以块级元素的形式显示。它会在新行开始并结束。如果你声明了它的宽度和高度，宽度和高度将是你你指定的值。如果你没有指定宽度和高度，黄色框将占据页面的整个宽度。它将占据它所需的高度。\n\
+  \n> 4. 尝试更改 CSS 中针对 `#displaydemo` 声明的高度和宽度。观察发生了什么。\n\n> 5. 现在，让我们来看 `visibility`\
+  \ 属性。将 `#magic` 的 CSS 声明从 `display: inline;` 改为 `visibility: hidden;`。观察蓝色句子中“magic”一词发生了什么。\n\
+  \n> 6. 接下来，将 `#magic` 的 CSS 声明从 `visibility: hidden;` 改为 `display: none;`。观察发生了什么。\n\
+  \n# 第 7 章：背景\n\n在本章中，我们将学习如何更改元素的背景属性。这些属性包括更改其背景颜色和背景图像。\n\n首先，让我们先看看如何更改背景颜色。\n\
+  \n## 背景颜色\n\n要声明元素的背景颜色，我们使用 `background-color` 属性。类似于指定 CSS 框的边框颜色，我们可以使用三种表示法之一声明元素的背景颜色：颜色名称、rgb\
+  \ 表示法或十六进制表示法。\n\n示例：\n\n```\nbackground-color: green;\nbackground-color: rgb(0,\
+  \ 255, 0);\nbackground-color: #00FF00;\n```\n\n## 背景图像\n\n如果你觉得仅使用颜色作为元素的背景太单调，你可以选择使用图像。CSS\
+  \ 允许我们在图像显示上具有极大的灵活性。\n\n### background-image\n\n要使用图像作为背景，我们使用 `background-image`\
+  \ 属性指定图片的 URL。\n\n示例：\n\n```\nbackground-image: url(“image1.jpg”);\n```\n\n### background-repeat\n\
+  \n默认情况下，背景图像位于元素的左上角，并在水平和垂直方向上重复。如果你不希望背景图像重复，可以使用 `background-repeat` 属性进行更改。以下列表显示了\
+  \ `background-repeat` 属性的一些常用值：\n\n- `repeat`: 默认值。图像将在水平和垂直方向上重复。\n- `repeat-x`:\
+  \ 图像仅在水平方向重复。\n- `repeat-y`: 图像仅在垂直方向重复。\n- `no-repeat`: 图像不重复。\n\n示例：\n\n```\n\
+  background-repeat: repeat-x;\n```\n\n### background-attachment\n\n`background-attachment`\
+  \ 属性指定背景图像应该是固定还是随页面滚动。两个常用的值是 `fixed` 和 `scroll`。默认值是 `scroll`。尝试本章末尾的练习来看看它是如何工作的。\n\
+  \n示例：\n\n```\nbackground-attachment: scroll;\n```\n\n### background-position\n\n\
+  如果你想指定显示背景图像的哪个区域，`background-position` 属性非常有用。\n\n假设你有一个宽度和高度均为 100px 的元素。如果你使用的背景图像宽度为\
+  \ 200px，高度为 300px，那么由于图像大于元素的大小，只有背景图像的一部分会被显示。\n\n![](img/00009.jpg)\n\n例如，如果你使用上面的图像（200px\
+  \ x 300px）作为 100px x 100px 元素的背景图像，默认只会显示区域 A（左上角）。如果你想显示区域 F 呢？要实现，你需要更改 `background-position`\
+  \ 属性的值。\n\n指定 `background-position` 值的最常用方法是使用像素。语法为：\n\n```\nbackground-position:\
+  \ xpos ypos;\n```\n\n为了理解这种语法如何工作，让我们想象一块中间有一个 100px x 100px 孔洞的纸板。纸板上的这个孔代表 HTML\
+  \ 元素。现在想象你的背景图像在纸板下方。默认情况下，图像将对齐，使得区域 A 通过纸板上的孔显示。如果你想显示区域 F，你必须将图像（而不是纸板）向左移动 100px\
+  \ 并向上移动 200px。用 CSS 实现这一点，你需要写：\n\n```\nbackground-position: -100px -200px;\n```\n\
+  \n第一个数字（`-100px`）水平移动图像。如果这个数字是正数，图像向右移动。如果是负数，则向左移动。\n\n第二个数字（`-200px`）垂直移动图像。如果这个数字是正数，图像向下移动。如果是负数，则向上移动。\n\
+  \n理解这个概念的最佳方法是尝试本章的练习。我强烈建议你在进入第 8 章之前完成这些练习。\n\n## 练习 7\n\n从 [`learncodingfast.com/css`](http://learncodingfast.com/css)\
+  \ 下载此练习的源代码并解压文件。此练习的源代码可以在章节找到。\n\n### 练习 7.1\n\n1. 从 [`learncodingfast.com/css`](http://learncodingfast.com/css)\
+  \ 下载此练习的源代码并解压文件。此练习的源代码可以在章节找到。\n2. 在浏览器中打开 `7 - Background.html` 文件。注意滚动时发生了什么。\n\
+  3. 在 `body` 元素中，将 `background-attachment: fixed;` 改为 `background-attachment: scroll;`。注意标志发生了什么。\n\
+  4. 接下来，将 `background-repeat: repeat;` 改为：\n   - (a) `repeat-x;`\n   - (b) `no-repeat;`\n\
+  \   - (c) `repeat-y;`\n   注意每种情况下发生了什么。\n5. 接下来，将 `background-color: white;` 改为\
+  \ `background-color: #0000FF;`。这应该改变页面的背景颜色。\n6. 最后，我们将查看 `backgroundposition` 属性。此示例使用的图像是存储在相同文件夹中的‘backgroundposition.png’。在继续之前看一眼图像。\n\
+  7. 注意当 `background-position` 设置为 `0 0`（默认值）时，显示区域 A。更改 `background-position` 属性将相对于区域\
+  \ A 移动背景图像。\n8. 在 `#box1` 的 CSS 中，将 `background-position: 0 0;` 改为：\n   - (a) `background-position:\
+  \ -100px 0;`\n   - (b) `background-position: 100px 0;`\n   - (c) `background-position:\
+  \ 0 -100px;`\n   - (d) `background-position: 0 100px;`\n   - (e) `background-position:\
+  \ -100px -100px;`\n   尝试弄清楚你会得到哪个区域。\n\n# 第 8 章：文本和字体\n\nCSS 中的文本和字体属性用于格式化网页上单词和文本的外观。`font`\
+  \ 属性涉及字符的外观，例如它们是“粗”还是“细”、“大”还是“小”，以及使用哪种字体。`text` 属性用于样式化所有其他内容。在本章中，我们将涵盖常用的 `text`\
+  \ 和 `font` 属性。\n\n## 字体属性\n\nfont-family\n\n`font-family` 属性用于设置字体类型。\n\n\n\n\n\n\
+  字体类型主要三大类：衬线字体、无衬线字体和等宽字体。\n\n衬线字体（Serif）在字符的末端有一个小装饰线。例如“Times New Roman”和 Georgia。\n\
+  \n无衬线字体（San Serif）字符的末端没有装饰线。例如 Arial 和 Verdana。\n\n等宽字体（Monospace）所有字符都使用相同的空间。例如，字母‘i’的宽度与字母‘a’相同。等宽字体的示例包括“Courier\
+  \ New”和“Lucida Console”。\n\n在指定 `font-family` 属性时，你应该始终包含多个字体名称，这样如果浏览器不支持第一个字体，它就会尝试下一个字体，直到找到它支持的字体为止。从更具体的字体（如“Times\
+  \ New Roman”）开始，并以通用字体族结束。如果字体名称包含多个单词，应使用引号。\n\n示例：\n\n```css\nfont-family: \"\
+  Times New Roman\", Times, serif;\n```\n\n## font-size\n\n`font-size` 属性设置文本的大小。字体大小可以使用像素\
+  \ (px)、em、百分比 (%) 或使用关键字来设置。\n\n### 使用 px\n\n大多数浏览器使用的默认字体大小是 16 像素。如果你想让网站显示不同的字体大小，可以这样指定：`font-size:\
+  \ 20px;`。\n\n### 使用 em\n\n一个 em 等于当前的字体大小。如果该元素是另一个元素的子元素，则当前字体大小是父元素的字体大小。如果该元素不是任何元素的子元素，则当前字体大小是浏览器的默认字体大小。如上述，大多数浏览器使用的默认字体大小为\
+  \ 16px。因此，默认情况下 `1em = 16px`。\n\n然而，可以通过更改浏览器设置来更改默认字体大小。例如，要更改 Firefox 的默认字体大小，点击菜单按钮（右侧的三条横线按钮），选择“选项”（Options），最后选择“内容”选项卡。然后你可以在“字体与颜色”部分下更改当前字体大小。\n\
+  \n如果用户将默认字体设置为 20px，`1em` 变为 20px。如果你想让字体大小变为当前字体大小的 1.5 倍，只需编写 `1.5em`。em 是大多数开发者使用的首选单位大小，因为默认字体大小可以由用户自定义。\n\
+  \n### 使用百分比\n\n百分比类似于 em。`200%` 仅意味着当前字体大小的 2 倍。因此，`200% = 2em`。\n\n### 使用关键字\n\n\
+  指定字体大小的最后方法是使用关键字。常用的关键字有 `xx-small`、`x-small`、`small`、`medium`（默认值）、`large`、`x-large`\
+  \ 和 `xx-large`。\n\n示例：\n\n```css\nfont-size: 40px;\nfont-size: 1.5em;\nfont-size:\
+  \ 120%;\nfont-size: large;\n```\n\n## font-style\n\n`font-style` 属性用于指定斜体文本。两个常用值是\
+  \ `normal` 和 `italic`。normal 显示不斜体的文本，而 italic 以斜体显示文本。\n\n示例：\n\n```css\nfont-style:\
+  \ italic;\n```\n\n## font-weight\n\n`font-weight` 属性是 `font-style` 的对应属性。`font-style`\
+  \ 用于指定斜体文本，而 `font-weight` 用于指定加粗文本。常用的值包括 `normal`、`bold`、`bolder` 和 `lighter`。或者，你也可以使用\
+  \ 100 的倍数数字指定字符的粗细，从 100（最细）到 900（最粗）。400 是正常粗细，700 等于粗。\n\n然而，注意大多数网络浏览器只支持 `normal`\
+  \ 和 `bold` 字体权重。在这种情况下，100-500 对应 `normal`，而 600 及以上对应 `bold`。\n\n示例：\n\n```css\n\
+  font-weight: bold;\nfont-weight: 300;\n```\n\n## Text Properties\n\nCSS `text` 属性允许你设置与文本字体相关的属性。常用属性包括文本颜色、文本对齐、文本装饰、字间距、词间距行高。\n\
+  \n### color\n\nCSS `color` 属性指定文本的颜色。与我们在第 4 章中学习的 `border-color` 属性类似，文本颜色可以通过三种方式之一指定：使用颜色名称、RGB\
+  \ 值或十六进制值。\n\n示例：\n\n```css\ncolor: blue;\ncolor: #00ff00;\ncolor: rgb(255,0,0);\n\
+  ```\n\n### text-alignment\n\n`text-alignment` 属性允许我们指定文本是居中、左对齐、右对齐还是两端对齐。常用的值有\
+  \ `left`、`right`、`center` 和 `justify`。\n\n示例：\n\n```css\ntext-align: center;\n```\n\
+  \n### text-decoration\n\n`text-decoration` 属性主要用于指定文本是否带有装饰。常用的值有 `none`（即：普通文本，无装饰）、`underline`（下划线）、`overline`（文本上方的线）和\
+  \ `line-through`（文本删除线）。\n\n此属性通常用于移除链接的下划线。默认情况下，大多数浏览器将以蓝色并带下划线显示链接。你可以使用代码 `text-decoration:\
+  \ none;` 来移除下划线。\n\n示例：\n\n```css\ntext-decoration: none;\n```\n\n### letter-spacing\n\
+  \n字间距用于增加或减少字符之间的间距。\n\n### word-spacing\n\n词间距用于增加或减少单词之间的间距。\n\n### line-height\n\
+  \n行高用于设置文本行之间的垂直距离。\n\n\n\n\n\n## 7. 修改 CSS 属性 `text-align` 并观察示例文本的变化。默认情况下，此段的文字是左对齐的。现在尝试每一项：\n\
+  \n(a) `text-align: justify;`\n\n(b) `text-align: right;`\n\n(c) `text-align: center;`\n\
+  \n## 8. 修改 CSS 属性 `text-decoration` 并观察示例文本的变化。尝试：\n\n(a) `text-decoration: underline;`\n\
+  \n(b) `text-decoration: overline;`\n\n(c) `text-decoration: line-through;`\n\n##\
+  \ 9. 修改 CSS 属性 `letter-spacing` 并观察示例文本的变化。尝试：\n\n(a) `letter-spacing: 5px;`\n\n\
+  (b) `letter-spacing: -5px;`\n\n## 10. 将 `letter-spacing` 改回 `0px`。修改 CSS 属性 `word-spacing`\
+  \ 并观察示例文本的变化。尝试：\n\n(a) `word-spacing: 10px;`\n\n(b) `word-spacing: -20px;`\n\n\
+  ## 11. 将 `word-spacing` 改回 `0px`。修改 CSS 属性 `line-height` 并观察示例文本的变化。尝试：\n\n(a) `line-height:\
+  \ 2;`\n\n(b) `line-height: 25px;`\n\n(c) `line-height: 30%;`\n\n# 第 9 章：列表、链接与导航栏\n\
+  \n在本章中，我们将学习用于样式化链接和列表的 CSS 属性。此外，我们还将结合这两个概念，讨论如何创建网页上常见的导航栏。准备好了吗？让我们从 CSS 列表开始。\n\
+  \n## CSS 列表\n\n回想在 HTML 中，我们可以创建两种类型的列表：有序列表和无序列表。我们可以使用 CSS 列表属性对这些列表进行样式化。\n\n\
+  ### list-style-type\n\n`list-style-type` 属性允许为列表设置列表项目标记。列表项目标记是指每个列表项目左侧的那些符号/数字/字母。\n\
+  \n对于有序列表，我们可以指定想要作为标记的数字或字母类型。例如，如果我们想使用罗马数字（例如 i, ii, iii）作为项目标记，可以写 `list-style-type:\
+  \ lower-roman;`。\n\n其他常用的标记包括：\n\n- `decimal`（这是默认值），\n- `decimal-leading-zero`（带有前导零的数字，例如\
+  \ 01, 02..），\n- `lower-alpha`（例如 a, b, c..），\n- `lower-greek`（例如 α, β, γ..），\n-\
+  \ `upper-alpha`（例如 A, B, C..）以及\n`upper-roman`（例如 I, II, III…）。\n\n对于无序列表，你可以指定想要作为符号的形状。默认标记是\
+  \ `disc`（实心圆）。你可以将其更改为 `square`（正方形）或 `circle`（空心圆）。\n\n此外，还可以选择不为列表使用任何项目标记。要这样做，你需要写\
+  \ `list-style-type: none;`。这在创建导航栏时非常常见。\n\n示例：\n\n- `list-style-type: lower-roman;`\n\
+  - `list-style-type: circle;`\n- `list-style-type: none;`\n\n### list-style-image\n\
+  \n如果你不喜欢提供的任何列表样式，可以选择使用图像作为列表项目标记。要这样做，你可以使用 `list-style-image` 属性来指定使用的图像 URL。\n\
+  \n示例：\n\n- `list-style-image: url(‘myMarker.gif’);`\n\n### list-style-position\n\
+  \n`list-style-position` 属性用于指定列表项目标记应该出现在内容流内部还是外部。有两个接受的值：`inside` 和 `outside`。\n\
+  \n默认情况下，列表项目带有一定程度的缩进。如果 `list-style-position` 设置为 `inside`，则列表项目标记将在缩进后显示。缩进由下方图中框框的左边缘表示。如果\
+  \ `list-style-position` 设置为 `outside`，则标记将在缩进之前显示![](img/00004.jpg)\n\n换句话说，`list-style-position:\
+  \ inside` 导致的缩进比 `list-style-position: outside` 更多。默认位置是 `outside`。\n\n示例：\n\n-\
+  \ `list-style-position: outside;`\n\n### list-style\n\n`list-style` 是一个简写属性，用于在一条声明中设置所有列表属性（即\
+  \ `list-style-type`、`list-style-position` 和 `list-style-image`）。如果缺少任何值，将使用该缺失属性的默认值。\n\
+  \n示例：\n\n- `list-style: square inside url(\"myMarker.gif\");`\n\n## CSS 链接\n\n链接可以使用之前章节中讨论过的任何\
+  \ CSS 属性进行样式化。你可以使用 `background-color` 属性设置背景颜色，这将为链接提供高亮显示效果。你还可以使用第 8 章涵盖的文本和字体属性来更改字体大小、字体样式、文本颜色、文本装饰等。\n\
+  \n此外，我们可以根据状态对链接进行样式化。链接可以处于四种状态：\n\n- `link`（未访问的链接）\n- `visited`（已访问的链接）\n- `hover`（当鼠标悬停在其上方时）\n\
+  - `active`（当点击点击时）\n\n要指定状态，我们写：\n\n```css\na:link { ... }\na:visited { ... }\n\
+  a:hover { ... }\na:active { ... }\n```\n\n## 导航栏\n\n导航栏通常作为无序列表创建。让我们尝试制作自己的菜单。\n\
+  \n```html\n<ul>\n  <li><a href=\"home.html\">首页</a></li>\n  <li><a href=\"html.html\"\
+  >HTML 教程</a></li>\n  <li><a href=\"csst.html\">CSS 教程</a></li>\n  <li><a href=\"\
+  javascript.html\">Javascript 教程</a></li>\n</ul>\n```\n\n接下来，我们需要移除列表的项目符号。\n\n```css\n\
+  ul {\n  list-style-type: none;\n}\n```\n\n现在，我们必须对链接进行样式化。\n\n```css\na {\n  display:\
+  \ block;\n  width: 160px;\n  text-align: center;\n  text-decoration: none;\n  background-color:\
+  \ #0000FF;\n}\n\na:link {\n  color: #0000FF;\n}\n\na:visited {\n  color: #00FF00;\n\
+  }\n\na:hover {\n  color: #FFFF00;\n}\n\na:active {\n  color: #FF00FF;\n}\n```\n\n\
+  最后，如果我们想让导航栏成为水平条，我们需要让列表项目浮动（float）。\n\n```css\nli {\n  float: left;\n}\n```\n\n\
+  搞定！我们刚刚创建了一个简单的水平导航栏。该导航栏的源代码已作为练习的一部分给出。尝试一下并让它在视觉上更有吸引力。你还可以为四种链接状态指定不同的样式。\n\n\
+  \n\n\n\n> 刷新浏览器。什么都没有变化吧？那是因为 `list-style-position: outside;` 是默认值。现在将 `list-style-position:\
+  \ outside;` 改为 `list-style-position: inside;`。你会发现无序列表向右稍微移动了（即缩进变大了）。\n\n> 5. 移除\
+  \ `ul` 的 `list-style-type` 属性，并改用以下属性：\n\n> (a) `list-style-image: url(\"myMarker.gif\"\
+  );`\n\n> 观察“Cars Unordered List”发生了什么变化。\n\n> 6. 现在让我们来看看如何为超链接样式。尝试在指定的选择器中添加以下规则：\n\
+  \n> (a) 在 `a:link{}` 中添加 `color: green;`，并观察“Click Me”链接发生了什么变化。\n\n> (b) 在 `a:active{}`\
+  \ 中添加 `font-size: 2em;` 并点击该链接。\n\n> (c) 在 `a:hover{}` 中添加 `background-color: red;`\
+  \ 并将鼠标悬停在链接上。\n\n### 练习 9.2\n\n1. 在浏览器和文本编辑器中同时打开 `Chapter 9 - Navigation Bar.html`\
+  \ 文件。\n2. 此页面展示了如何使用列表和链接的 CSS 规则创建一个水平导航栏的示例。书中解释了这些步骤。学习代码并尝试修改 CSS 声明以改进此导航栏的设计。\n\
+  \n# 第 10 章：表格\n\nHTML 表格默认看起来并不好看。然而，通过一些简单的 CSS 样式，我们可以轻松地将其转换为精美的表格。在本章中，我们将学习如何实现。\n\
+  \n## 边框、内边距和外边距\n\n我们将的第一组属性是 `border`、`padding` 和 `margin`。还记得我们在讨论 CSS 盒模型时提到过这些属性吗？HTML\
+  \ 表格（<table>`）和单元格（`<th>` 和 `<td>`）遵循与其他 CSS 元素相同的盒模型，因此可以使用这些属性进行样式设置。\n\n请参考下面的图（“Table\
+  \ Margin”和“Table Padding”字样是为了参考添加的，实际表格中并不存在）。\n\n![](img/00014.jpg)\n\n该表格的 CSS\
+  \ 规则如下：\n\n```css\ntable {\n  border: dashed 1px black;\n  padding: 50px;\n  margin:\
+  \ 60px;\n}\n\nth {\n  border: solid 1px black;\n  padding: 30px;\n  text-align:\
+  \ center;\n}\n\ntd {\n  border: solid 1px black;\n  padding: 20px;\n}\n```\n\n虚线是表格的边框。虚线框周围的空间是表格的外边距（margin，声明为\
+  \ 60px），虚线框内部的空间是它的内边距（padding，50px）。\n\n第一行（Firstname, Lastname, Age）使用 `<th>`\
+  \ 标签定义为表格表头。“Firstname”、“Lastname”和“Age”单词周围的空间是 `<th>` 元素的内边距（30px）。\n\n第二行、第三行和第四行使用\
+  \ `<td>` 标签定义。“Derek”、“Aaron”和“31”等单词周围的空间是 `<td>` 元素的内边距（20px）。\n\n`<th>` 和 `<td>`\
+  \ 元素没有声明外边距，因为外边距会被表格单元格忽略。因此，我们无法指定单元格之间的间距。默认情况下，单个表格单元格之间会有一个小的间隙。此外，即使你将表格内边距设置为\
+  \ 0px，表格边框（虚线）与单元格边框（实线）之间也存在间隙。如果你只需要一个边框，必须使用 `border-collapse` 属性：\n\n```css\n\
+  border-collapse: collapse;\n```\n\n在本章的练习中，我们将有机会尝试各种 `border`、`padding` 和 `margin`\
+  \ 属性。现在，让我们来看下一个属性。\n\n## 高和宽\n\n表格的宽高度可以使用 `width` 和 `height` 属性设置。值通常以像素或百分比的形式给出。例如，下面的代码将表格宽度设置为父元素的\
+  \ 100%，高度设置为 500px。\n\n```css\ntable {\n  width: 100%;\n  height: 500px;\n}\n```\n\
+  \n你也可以在 `tr`、`th` 或 `td` 级别上使用 `height` 属性。例如，如果你想让表头行的高度为 100px，可以写道：\n\n```css\n\
+  th {\n  height: 100px;\n}\n```\n\n此外，你可以在表格单元格级别设置 `width` 属性（即针对 `td` 和 `th` 元素）。如果你想让表格单元格的宽度为\
+  \ 200px，可以写道：\n\n```css\nth {\n  width: 200px;\n}\n```\n\n如果你想对单独列设置样式，可以使用 `id`/`class`\
+  \ 属性。例如，如果你有如下表格结构：\n\n```html\n<table>\n  <tr>\n    <th id=\"firstColumn\">Firstname</th>\n\
+  \    <th class=\"secondColumn\">Lastname</th>\n  </tr>\n  <tr>\n    <td>Derek</td>\n\
+  \    <td>Aaron</td>\n  </tr>\n</table>\n```\n\n如果你只需要一个边框，就必须使用 `border-collapse`\
+  \ 属性：\n\n```css\nborder-collapse: collapse;\n```\n\n## 文本对齐\n\n表格单元格内的文本可以使用 `text-align`\
+  \ 属性进行水平对齐，并使用 `vertical-align` 属性进行垂直对齐。例如：\n\n```css\ntd {\n  text-align: center;\n\
+  \  vertical-align: top;\n}\n```\n\n## 背景、字体和文本\n\n还可以使用第 7 章涵盖的背景、字体和文本设置样式。例如：\n\
+  \n```css\nth {\n  background-color: #f2f2f2;\n  font-weight: bold;\n}\n```\n\n##\
+  \ nth-child 选择器\n\n有时当我们有一个非常大的表格时，很难阅读。提高可读性的一种方法是使用 `nth-child()` 选择器为交替行上色。\n\
+  \n```css\ntr:nth-child(even) {\n  background-color: lightgray;\n}\n\ntr:nth-child(odd)\
+  \ {\n  background-color: white;\n}\n```\n\n\n\n\n## 7. 分别在第一个、第二个和第三个 `<th>` 起始标签上添加\
+  \ `id=\"firstColumn\"`、`id=\"secondColumn\"` 和 `id=\"thirdColumn\"` 属性。接下来，添加以下\
+  \ CSS 规则来分别调整三列的宽度：\n\n```css\n#firstColumn {\n    width: 100px;\n}\n#secondColumn\
+  \ {\n    width: 200px;\n}\n#thirdColumn {\n    width: 50px;\n}\n```\n\n刷新页面并观察变化。尝试使用不同的值调整宽度。\n\
+  \n## 8. 修改 `tr` 的 CSS 声明并观察表格发生了什么。尝试添加：\n\n(a) `text-align: center;`\n(b) `vertical-align:\
+  \ top;`\n\n从 `tr` 中删除上述属性并将它们添加到 `th` 中。注意发生了什么。对 `td` 重复相同的操作。如果你没有看到任何区别，请增加表格的宽度和/或行的高度。\n\
+  \n## 9. 修改 `tr` 的 CSS 声明并观察表格发生了什么。尝试添加：\n\n(a) `background-color: green;`\n(b)\
+  \ `color: white;`\n\n从 `tr` 中删除上述属性并将它们添加到 `th` 中。注意发生了什么。\n\n现在，从 `th` 中删除属性并将它们添加到\
+  \ `td` 中。\n\n## 10. 最后，让我们尝试为交替行染色。首先从 `td` 中移除 `background-color` 和 `color` 规则。接下来，添加以下代码并观察发生了什么。\n\
+  \n```css\ntr:nth-child(even) {\n    background-color: lightgreen;\n}\ntr:nth-child(odd)\
+  \ {\n    background-color: lightgray;\n}\n```\n\n## 额外项目\n\n恭喜你！我们现在涵盖了足够的 CSS（以及\
+  \ HTML）基础知识来从开始编写我们的第一个网页。学习 CSS 的最佳方法是实践。因此，我在书中包含了一个额外项目，它将引导你编写一个虚构旅行社的网页。你可以在\
+  \ `http://www.learncodingfast.com/demo/jetspeed.html` 查看该项目的演示。\n\n最初我打算将该项目放在书末。然而，考虑到\
+  \ CSS 的图形化特性，我决定在 Kindle 书中包含该项目的所有指令和图像并不理想。因此，我为项目创建了一个单独的 PDF 文件，你可以在 `http://learncodingfast.com/css`\
+  \ 下载。\n\n我强烈鼓励你尝试这个项目，因为它将让你有机会看到在书中学到的所有概念是如何结合在一起的。通过完成项目将有助于巩固你的学习，并填补你可能存在的任何空白。\n\
+  \n祝编程愉快！\n\n## 感谢\n\n我们已经读到了书的最后。感谢你阅读这本书，希望你喜欢它。更重要的是，我诚地希望这本书帮助你掌握了 CSS 的基础知识。\n\
+  \n我知道你本可以在几十本 CSS 相关的书中选择任何一本，但你选择了这本书。再次感谢你下载这本书并一直读到最后。请尝试练习题和额外项目。你将在实践中学学到很多。\n\
+  \n现在，我想请你帮个“小”忙。你能否花一或两分钟时间[在亚马逊上为此书留评论](http://www.amazon.com/review/create-review/ref=cm_cr_dp_wrt_summary?ie=UTF8&asin=B00UI2QHQG&channel=detail-glance&nodeID=133140011&store=digital-text)？\n\
+  \n这些反馈对我将非常有帮助，并将帮助我继续编写更多编程指南。如果你喜欢这本书或有任何改进建议，请告诉我。我将深表感激 :)\n\n最后但同样重要的是，记住你可以在\
+  \ `http://www.learncodingfast.com/css` 下载项目和练习源代码。\n\n你也可以通过 `jamie@learncodingfast.com`\
+  \ 与我联系。\n\n## 附录 A：练习源代码\n\n### 练习 3.1\n\n```html\n<!doctype html>\n<html>\n<head><title>第\
+  \ 3 章 - CSS 基础</title>\n<style> \np{\nbackground-color: yellow;\n}\n</style>\n</head>\n\
+  <body>\n<h1>第 3 章 - CSS 基础</h1>\n<h2>CSS 选择器</h2>\n<p>这个练习使用背景颜色来帮助我们确定我们正在选择哪个元素。这个段落既没有\
+  \ class 没有 id。</p>\n<p id=\"myIDPara\">这个段落有 id = \"myIDPara\".</p>\n<p class=\"\
+  myClass\">这个段落有 class=\"myClass\".</p>\n<p class=\"myClass mySecondPara\">这个段落有\
+  \ class=\"myClass\" 和 class=\"mySecondPara\".</p>\n<div>\n    这是 div 中的一些文本。\n \
+  \   <p>这个段落是 'div' 的第一个孩子。</p>\n    <p>这个段落是 'div' 的第二个孩子。</p>\n    <p>这个段落是 'div'\
+  \ 的第三个孩子。</p>\n</div>\n<a href=\"http://www.learncodingfast.com\">快速学习</a><br>\n\
+  <a href=\"http://www.google.com\">Google</a>\n</body></html>\n```\n\n### 练习 4.1\n\
+  \n```html\n<!doctype html>\n<html>\n<head><title>第 4 章 - 盒模型</title>\n<style type=\"\
+  text/css\">\ndiv {\n    width: 100px;\n    height: 100px;\n    padding: 10px;\n\
+  \     :0px;\n    float: left;\n}\n</style>\n</head>\n<body>\n<div id=\"box1\">盒子</div>\n\
+  <div id=\"box2\">盒子</div>\n<div id=\"box3\">盒子</div>\n<div id=\"box4\">盒子</div>\n\
+  <div id=\"box5\">盒子</div>\n<div id=\"box6\">盒子</div>\n<div id=\"box7\">盒子</div>\n\
+  </body></html>\n```\n\n### 练习 5.1\n\n```html\n<!DOCTYPE html>\n<html>\n<head><title>第\
+  \ 5 章 - 定位</title>\n<style type=\"text/css\">\n#box1 {\n    background-color: green;\n\
+  \    width: 100px;\n    height: 100px;\n    padding: 20px;\n    border: 5px solid\
+  \ black;\n}\n#box2 {\n    background-color: red;\n    width: 100px;\n    height:\
+  \ 100px;\n    padding: 20px;\n    border: 5px dotted black;\n}\np {\n}\n</style>\n\
+  </head>\n<body>\n    <div id=\"box1\"></div>\n    <div id=\"box2\"></div>\n    <p>添加了一些文本。</p>\n\
+  </body></html>\n```\n\n### 练习 5.2\n\n```html\n<!doctype html>\n<html>\n<head><title>第\
+  \ 5 章 - 浮动</title>\n<style type=\"text/css\">\ndiv {\n    padding: 10px;\n    border:\
+  \ 1px dashed black;\n    margin: 5px;\n    float: left;\n}\n#box1 {\n    width:\
+  \ 60px;\n    height: 100px;\n}\n#box2 {\n    width: 100px;\n    height: 20px;\n\
+  }\n#box3 {\n    width: 50px;\n    height: 150px;\n}\n#box4 {\n    width: 20px;\n\
+  \    height: 50px;\n}\n#box5 {\n    width: 150px;\n    height: 120px;\n}\n#box6\
+  \ {\n    width: 120px;\n    height: 70px;\n}\n#box7 {\n    width: 25px;\n    height:\
+  \ 80px;\n}\n</style>\n</head>\n<body>\n<div id=\"box1\">盒子 1</div>\n<div id=\"box2\"\
+  >盒子 2</div>\n<div id=\"box3\">盒子 3</div>\n<div id=\"box4\">盒子 4</div>\n<div id=\"\
+  box5\">盒子 5</div>\n<div id=\"box6\">盒子 6</div>\n<div id=\"box7\">盒子 7</div>\n</body></html>\n\
+  ```\n\n### 练习 6.1\n\n```html\n<!doctype html>\n<html>\n<head><title>第 6 章 - 显示与可见性</title>\
+  \ \n<style type=\"text/css\">\n#displaydemo {\nborder: 1px dashed black;\nbackground-color:\
+  \ yellow;\ndisplay: inline;\nwidth: 100px;\nheight: 100px;\n}\n#magic {\ndisplay:\
+  \ inline;\n}\n#magicsentence {\n    color: blue;\n    font-size: 2em;\n}\n</style>\n\
+  </head>\n<body>\n```\n\n\n\n\n\n这个 `<span id=\"displaydemo\">黄色框</span>` 用来演示行内元素和块级元素之间的区别。\n\
+  \n“这就像`<span id=\"magic\">魔法</span>`一样。你可以让文字消失。”\n\n### 练习 7.1\n\n```html\n<!doctype\
+  \ html>\n<html>\n<head>\n<title>第 7 章 - 背景</title>\n<style type=\"text/css\">\n\
+  body {\n    background-color: white;\n    background-image: url(\"learncodingfast.png\"\
+  );\n    background-repeat: repeat-x;\n    background-attachment: fixed;\n}\n#box1\
+  \ {\n    width: 100px;\n    height: 100px;\n    background-repeat: no-repeat;\n\
+  \    background-color: blue;\n    background-image: url(\"backgroundposition.png\"\
+  );\n    background-position: 0 0;\n}\n#box2 {\n    height: 1000px;\n}\n</style>\n\
+  </head>\n<body>\n    <div id=\"box1\"></div>\n    <div id=\"box2\"></div>\n</body>\n\
+  </html>\n```\n\n### 练习 8.1\n\n```html\n<!doctype html>\n<html>\n<head>\n<title>第\
+  \ 8 章 - 字体与文本</title>   \n<style type=\"text/css\">\n#sampletext{\nwidth: 300px;\n\
+  border: 1px solid black;\npadding: 20px;\nfont-family: Times, \"Times New Roman\"\
+  , Georgia, serif;\nfont-size: 1em;\nfont-style: normal;\nfont-weight: normal;\n\
+  color: black;\ntext-align: left;\ntext-decoration: none;\nletter-spacing: 0px;\n\
+  word-spacing: 0px;\nline-height: 1;\n}\n</style>\n</head>\n<body>\n    <h3>示例文本</h3>\n\
+  \    <p id=\"sampletext\">这段文本用于演示各种字体和文本属性的效果。修改为 \"sampletext\" 的 CSS 声明，并观察这段文本发生了什么。这段文本被添加了边框，以显示“两端对齐”（justify）的效果。</p>\n\
+  </body>\n</html>\n```\n\n### 练习 9.1\n\n```html\n<!doctype html>\n<html>\n<head>\n\
+  <title>第 9 章 - 列表与链接</title>   \n<style type=\"text/css\">\nbody { padding-left:\
+  \ 20px; }\ndiv { font-weight: bold; text-decoration: underline; font-size: 1.2em;\
+  \ padding-top: 5px;}\nol {\n    list-style-type: decimal;\n}\nul { \n    list-style-type:\
+  \ disc;\n}\na { text-decoration: none;}\na:link { }\na:visited { }\na:hover { }\n\
+  a:active { }\n</style>\n</head>\n<body>\n<div>样式化 HTML 列表</div>\n<p>本节用于演示如何在 CSS\
+  \ 中样式化有序列表和无序列表</p>\n汽车有序列表\n<ol>\n    <li>福特</li>\n    <li>本田</li>\n    <li>丰田</li>\n\
+  </ol>\n汽车无序列表\n<ul>\n    <li>福特</li>\n    <li>本田</li>\n    <li>丰田</li>\n</ul>\n\
+  <hr>\n<div>样式化超链接</div>\n<p>本节用于演示如何在 CSS 中样式化超链接</p>\n<a href=\"some.html\">点击我</a>\n\
+  </body>\n</html>\n```\n\n### 练习 9.2\n\n```html\n<!doctype html>\n<html>\n<head>\n\
+  <title>第 9 章 - 导航栏</title>\n<style>\nul {\nlist-style-type: none;\n}\na {\ndisplay:\
+  \ block;\nwidth: 160px;\ntext-align: center;\ntext-decoration: none;\nbackground-color:\
+  \ #00FF00;\n}\nli {\nfloat: left;\n}\n</style>\n</head>\n<body>\n<ul>\n<li><a href=\"\
+  home.html\">首页</a></li>\n<li><a href=\"htmltutorial.html\">HTML 教程</a></li>\n<li><a\
+  \ href=\"csstutorial.html\">CSS 教程</a></li>\n<li><a href=\"javascripttutorial.html\"\
+  >Javascript 教程</a></li>\n</ul>\n</body>\n</html>\n```\n\n### 练习 10.1\n\n```html\n\
+  <!doctype html>\n<html>\n<head>\n<title>第 10 章 - 表格</title>\n<style>\ndiv {\n  \
+  \  width: 100%;\n    height: 600px;\n    border: red solid 1px;\n}\ntable {\nborder:\
+  \ dashed 1px black;\n}\nth {\n    border: solid 1px black;\n}\ntd {\n    border:\
+  \ solid 1px black;\n}\ntr {\n}\n</style>\n</head>\n<body>\n下表是红框的子元素。添加红框是为了显示 'table'\
+  \ 的高度和宽度属性的效果。<br><br>\n<div>\n<table>\n    <tr><th>名</th><th>姓</th><th>年龄</th></tr>\n\
+  \    <tr><td>Derek</td><td>Lee</td><td>24</td></tr>\n    <tr><td>Aaron</td><td>Flynn</td><td>16</td></tr>\n\
+  \    <tr><td>Joe</td><td>Murphy</td><td>31</td></tr>\n</table>\n</div>\n</body>\n\
+  </html>\n```\n\n"

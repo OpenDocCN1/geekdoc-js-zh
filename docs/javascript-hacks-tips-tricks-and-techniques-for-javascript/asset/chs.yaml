@@ -1,0 +1,154 @@
+- "# JavaScript Hacks：JavaScript 技巧、窍门与技术\n\n\n\n![](img/cover.jpeg)\n\n\n# 第一章 引言\n\
+  \n引言\n\n我编写代码已经 30 多年了。我每天仍然能发现关于编程的新知识。这里是我多年来总结的一些 JavaScript 技巧、窍门和方法。\n\n你可以在我的网站下载代码示例：[WilliamClarkson.net](https://www.williamclarkson.net/code)，如果你对代码或特别是\
+  \ JavaScript 有任何问题，可以在那里联系我，我会乐意尽力帮助你。\n\n我热爱讨论代码！\n\n如果你对使用 JavaScript 进行游戏设计感兴趣，你可能想看看我的其他书籍，或者访问我的游戏开发网站\
+  \ [phasergames.com](https://www.phasergames.com)。\n\n希望你喜欢这系列 JavaScript 代码片段！\n\
+  \n# 第二章 数组\n\n## 数组转列表\n\n这是一个实用的小函数，我在我的几个程序中使用它，它能将数组转换为 HTML 列表。\n\n```javascript\n\
+  function arrayToList(array) {\n  var oString = \"<ol>\";\n  var len = array.length;\n\
+  \  for (var i = 0; i < len; i++) {\n    var word = array[i];\n    oString += \"\
+  <li>\" + word + \"</li>\";\n  }\n  oString += \"</ol>\";\n  return oString;\n}\n\
+  \nwindow.onload = function() {\n  document.getElementById('output').innerHTML =\
+  \ arrayToList(['red', 'blue', 'green']);\n}\n```\n\n## 缓存数组长度\n\n将数组长度存储在变量中意味着浏览器每次执行循环时不需要重新计算数组的长度。多年来，我在自己的代码中看到良好的性能结果。\n\
+  \n一些研究似乎表明，浏览器厂商在意识到数组每次都需要计算后，现在已经采取了变通方法为你缓存数组长度，然而，我仍然喜欢这样做。这也是一个良好的习惯，因为你永远不知道用户使用的浏览器有多旧。\n\
+  \n未缓存\n```javascript\nfor (i = 0; i < array.length; i++) {\n  //执行某些操作\n}\n```\n\
+  \n已缓存\n```javascript\nvar len = array.length;\nfor (var i = 0; i < len; i++) {\n\
+  \  //执行某些操作\n}\n```\n\n## 二分查找\n\n这是我在 80 年代使用的一种技巧，那时的时的计算机比现在慢得多。它只适用于按字母顺序排序的数组，但你也可以修改这段代码，使其适用于根据某个键（key）按字母顺序排序的对象数组。\n\
+  \n它的工作原理是这样的：想象你有一本电话簿，你想找某个名字。你不会从字母 A 开始一直找，直到找到你要找的那个。但在编程中，我们经常这样做，即只用一个 `for`\
+  \ 循环遍历每一个名字，直到找到我们想要的那个。对于电话簿，我们随机打开一页，然后根据落脚的位置向前或向后翻页。这段代码查看数组中间或一半位置的元素。根据要查找的名字大于还是小于中间元素的值，它会丢弃数组的后半部分或部分。它不断丢弃数组的一半，直到找到想要的那个。\n\
+  \n```javascript\nfunction binSearch(array, value) {\n  var first = 0,\n  last =\
+  \ array.length - 1,\n  middle = Math.floor((last + first) / 2);\n  while (array[middle]\
+  \ != value && first < last) {\n    if (value < array[middle]) {\n      last = middle\
+  \ - 1;\n    } else if (value > array[middle]) {\n      first = middle + 1;\n   \
+  \ }\n    middle = Math.floor((last + first) / 2);\n  }\n  return (array[middle]\
+  \ != value) ? -1 : middle;\n}\n\nvar array = ['Norberto', 'Fay', 'Leonia', 'Silvana',\
+  \ 'Julieann', 'Nubia', 'Verlene', 'Mittie', 'Ophelia', 'Kali', 'Mertie', 'Alaine',\
+  \ 'Caryn', 'Joeann', 'Leonie', 'Carolina', 'Kimber', 'Lacresha', 'Lianne', 'Tatiana'];\n\
+  //对数组排序\narray.sort();\nconsole.log(binSearch(array, 'Nubia'));\n//返回 5\n```\n\n\
+  ## 清空数组\n\n清空你想要继续使用的数组的一个快速小技巧就是简单将数组的长度设置为零。\n\n```javascript\nvar array = [11,\
+  \ 22, 33, 44, 55, 66];\n//\nconsole.log(array);\n//将长度设置为零\n//\narray.length=0;\n\
+  //\nconsole.log(array);\n```\n\n## 截断数组\n\n就像将数组长度设置为 0 会清空数组一样，你也可以通过将长度设置为想要保留的元素数量来截断数组。\n\
+  \n```javascript\nvar array = [11, 22, 33, 44, 55, 66];\n```\n\n\n\n\n\n```javascript\n\
+  var age = 19;\n\nvar canDrink;\n\nif (age > 20) {\n  canDrink = true;\n} else {\n\
+  \  canDrink = false;\n}\n```\n\n## 新写法\n```javascript\nvar age = 19\ncanDrink =\
+  \ (age > 20) ? true : false;\nConsole.log(canDrink);\n```\n\n其公式为：\n`variable =\
+  \ (condition) ? 符合条件 : 不符合条件`\n\n### 方法的三元运算符\n你也可以使用三元运算符来调用方法。\n\n## 旧写法\n```javascript\n\
+  if (success) {\n  avatar.start();\n} else {\n  avatar.stop();\n}\n```\n\n## 新写法\n\
+  ```javascript\nsuccess ? avatar.start() : avatar.stop();\n```\n\n### Switch vs If\n\
+  使用 `switch` 语句代替系列的 `if-then` 语句会让代码更具可读性，并在某些情况下加快执行速度。\n\n## 旧写法\n```javascript\n\
+  if (color == \"red\") {\n  //执行某些操作\n}\nif (color == \"blue\") {\n  //执行某些操作\n}\n\
+  if (color == \"green\") {\n  //执行某些操作\n}\nif (color == \"brown\") {\n  //执行某些操作\n\
+  }\nif (color == \"yellow\") {\n  //执行某些操作\n}\n```\n\n## 新写法\n```javascript\nswitch\
+  \ (color) {\n  case \"red\":\n    //执行某些操作\n    break;\n  case \"blue\":\n    //执行某些操作\n\
+  \    break;\n  case \"green\":\n    //执行某些操作\n    break;\n  case \"brown\":\n  \
+  \  //执行某些操作\n    break;\n  case \"yellow\":\n    //执行某些操作\n    break;\n}\n```\n\n\
+  # 第四章\n## 函数\n\n## 假设参数\n如果你想能够向函数发送不固定数量的参数，只需让参数部分为空，然后使用 `arguments` 关键字来访问传入的任何参数。值得注意的是，尽管\
+  \ `arguments` 行为像一个数组，但它并不是真正的 JavaScript 数组。\n\n```javascript\nfunction sum1(a,\
+  \ b) {\n  return a + b;\n}\n\nfunction sum2() {\n  return arguments[0] + arguments[1];\n\
+  }\n\nfunction sum3() {\n  var sum = 0;\n  for (var i = 0, len = arguments.length;\
+  \ i < len; ++i) {\n    sum += arguments[i];\n  }\n}\n\nsum1(1, 2);\nsum2(1, 2);\n\
+  sum3(1, 2, 3, 4, 5, 6, 7, 8, 9);\n```\n\n## 对象 vs 参数\n很多时候我在编写类时，我最终会向构造函数传递 10\
+  \ 到 15 个参数。其中一些参数是可选的，因此当我以后想添加必填参数时，我必须回去修改大量代码。我发现，某些情况下，将单个对象作为唯一参数可以节省大量时间。\n\
+  \n```javascript\nfunction doAttack(weapon, damage, monster, useMagic = false) {\n\
+  \  console.log('you use the ' + weapon + ' on the ' + monster);\n}\n\nfunction doAttack2(obj)\
+  \ {\n  console.log('you use the ' + obj.weapon + ' on the ' + obj.monster);\n}\n\
+  \ndoAttack('sword', 10, orc);\n\nvar attackObj = {\n  'weapon': 'sword',\n  'damage':\
+  \ 10,\n  'monster': 'orc'\n};\n\nattackObj.extraStuff = 'whatever';\nattackObj.speed\
+  \ = 10;\ndoAttack2(attackObj);\n```\n\n## 默认值\n使用双管道符 (`||`) `or` 关键字为变量设置默认值。如果没有为该变量传递值，则会设置默认值。\n\
+  \n```javascript\nfunction User(name, age) {\n  this.name = name || \"Oliver Stirling\"\
+  ;\n  this.age = age || 63;\n}\n```\n\n## 简写函数\n你可以使用双箭头符号来创建一个函数。\n\n```javascript\n\
+  function calcCircumference(diameter) {\n  return Math.PI * diameter\n}\n\ncalcCircumference\
+  \ = diameter => (Math.PI * diameter;)\n```\n\n# 第五章\n## 数字\n\n## 偶数还是奇数？\n如果将一个数字除以\
+  \ 2 没有余数，它就是偶数，否则是奇数。\n\n```javascript\nfunction isEven(num) {\n  return num/2 ==\
+  \ Math.floor(num/2);\n}\n```\n\n## 能被...除？\n使用此函数判断一个数字是否能被另一个数字除而没有余数。\n\n```javascript\n\
+  function isDivisbleBy(num, div) {\n  return (num / div == Math.floor(num / div));\n\
+  }\n```\n\n## 获取最大值或最小值\n使用 JavaScript 的内置数学函数获取数组中的最大或最小数字。\n\n```javascript\nvar\
+  \ numbers = [3, 3354, 143, -245, 118, 400, 122222, -80011];\nvar maxInNumbers =\
+  \ Math.max.apply(Math, numbers);\nvar minInNumbers = Math.min.apply(Math, numbers);\n\
+  \nconsole.log(\"max\", maxInNumbers);\nconsole.log(\"min=\" + minInNumbers);\n```\n\
+  **输出：**\n122222\n\n## 随机范围\n该函数将返回一个范围内的随机整数。\n\n```javascript\nfunction random(start,\
+  \ end) {\n  return Math.floor(Math.random() * (end - start)) + start;\n}\n```\n\n\
+  ## 小数\n该代码将数字保留到特定的小数。\n\n```javascript\nfunction toDecimal(num) {\n  return num.toFixed(2);\n\
+  }\n```\n\n## 字符串转数字\n使用加号运算符将字符串转换为数字。\n\n```javascript\nfunction toNumber(str)\
+  \ {\n  return +str;\n}\n```\n\n# 第六章\n## 对象\n\n## 数组转对象\n使用 `...` 关键字将数组转换为对象。\n\
+  \n```javascript\nvar obj = {...['fish', 'chicken']}\n```\n\n## 多行文本\n使用反引号代替转义字符。\n\
+  \n## 旧写法\n```javascript\nvar lorem = 'Lorem ipsum dolor amet, consectetur\\n' +\n\
+  'adipisicing elit, sed tempor incididunt\\n' +\n'ut labore magna aliqua';\n```\n\
+  \n## 新写法\n```javascript\nvar lorem = `Lorem ipsum dolor amet, consectetur\nadipisicing\
+  \ elit, sed tempor incididunt\nut labore magna aliqua`;\n```\n\n## 随机字符串\n该函数用于生成测试数据和指定长度的随机字符串。\n\
+  \n```javascript\nfunction makeRandString(len) {\n  var text = \"\";\n  var letters\
+  \ = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefuvwxyz0123456789\";\n  for (var i = 0; i <\
+  \ len; i++) {\n    text += letters.charAt(Math.floor(Math.random() * letters.length));\n\
+  \  }\n  text += \" \";\n  return text;\n}\n\nmakeRandString(10);\n```\n\n## 删除双空格\n\
+  有时用户输入会产生双空格。此函数会移除这些双空格。\n\n```javascript\nfunction removeDoubleSpaces(text) {\n\
+  \  for (var i = 0; i < 100; i++) {\n    text = text.split(\" \").join(\" \");\n\
+  \  }\n  return text;\n}\n```\n\n## 克隆对象\n```\n```javascript\nvar obj = \"It was\
+  \ the best of times, it was the worst of times\";\n```\n\n## 替换所有\n此函数通过指针或搜索词分割字符串，然后使用替换关键字作为分隔符将数组重新组合成字符串。\n\
+  \n```javascript\nfunction replaceAll(haystack, needle, replace) {\n  var array =\
+  \ haystack.split(needle);\n  var str = array.join(replace);\n  return str;\n}\n\
+  ```\n\n# 第七章\n## 字符串\n\n## 首字母大写\n将单词的首字母大写。\n\n```javascript\nfunction capFirstLetter(word)\
+  \ {\n  return word.charAt(0).toUpperCase() + word.slice(1);\n}\n```\n\n## 获取单词\n\
+  将句子拆分为数组。\n\n```javascript\nfunction getWords(sentence) {\n  return sentence.split(\"\
+  \ \");\n}\n```\n\n## 全大写单词\n合并并将每个单词的首字母大写。\n\n```javascript\nfunction capAllWords(sentence)\
+  \ {\n  var words = sentence.split(\" \");\n  var numWords = words.length;\n  for\
+  \ (var i = 0; i < numWords; i++) {\n    words[i] = words[i].charAt(0).toUpperCase()\
+  \ + words[i].slice(1);\n  }\n  return words.join(\" \");\n}\n```\n\n## 字符串查找字符串\n\
+  使用此函数判断一个字符串是否包含另一个字符串。\n\n```javascript\nfunction contains(haystack, needle) {\n\
+  \  return haystack.indexOf(needle) != -1;\n}\n```\n\n\n\n\n\n# 杂杂\n\n## console.log\
+  \ 的快捷方式\n\n如果你经常使用 `console.log`，可以通过将函数绑定到 `document` 来缩短该函数并减少输入时间。\n\n```javascript\n\
+  var cl = console.log.bind(document);\n\ncl('shorter to type');\n```\n\n**输出**\n\
+  `shorter to type`\n\n```javascript\ncl(1 + 1);\n```\n\n**输出**\n`2`\n\n## console.table\n\
+  \n使用 `console.table` 在控制台中查看对象的视觉化表示。\n\n```javascript\nvar person={'name':'Hero','hp':100};\n\
+  \nconsole.table(person);\n```\n\n![ ](img/00001.jpeg)\n\n---\n\n## 使用类\n\n类是 JavaScript\
+  \ 中一个相当新的特性。它让我们比旧的函数对象提供了更大的灵活性。\n\n```javascript\nfunction Person(firstName, lastName)\
+  \ {\n  this.firstName = firstName;\n  this.lastName = lastName;\n}\n\nclass Person2\
+  \ {\n  constructor(firstName, lastName) {\n    this.firstName = firstName;\n   \
+  \ this.lastName = lastName;\n  }\n  sayName() {\n    console.log(\"Hi \"+this.firstName);\n\
+  \  }\n}\n\nvar player = new Person('Bob', 'Smith');\nvar player2=new Person2('Bob','Smith');\n\
+  player2.sayName();\n```\n\n---\n\n## 扩展类\n\n通过使用 `Extends` 关键字，我们可以获取一个类的所有属性和方法，并在新类中对其进行扩展。\n\
+  \n```javascript\nclass Person2 {\n  constructor(firstName, lastName) {\n    this.firstName\
+  \ = firstName;\n    this.lastName = lastName;\n  }\n  sayName() {\n    console.log(\"\
+  Hi \" + this.firstName);\n  }\n}\n\nclass Superman extends Person2 {\n  constructor(firstName,\
+  \ lastName) {\n    super(firstName, lastName);\n  }\n  fly() {\n    console.log(\"\
+  up up and away\");\n  }\n}\n\nvar player = new Superman('Clark', 'Kent');\nplayer.sayName();\n\
+  player.fly();\n```\n\n---\n\n## 链表\n\n链表是一系列对象，每个对象都有前一个项目、下一个项目或两者的引用。与循环遍历相比，使用链表可以具有巨大的优势。当我创建虚拟世界时经常使用它，它确实加快了程序的运行。\n\
+  \n```javascript\nclass Person {\n  constructor(name) {\n    this.name = name;\n\
+  \    this.nextPerson = null;\n  }\n  sayName() {\n    console.log(this.name);\n\
+  \    if (this.nextPerson) {\n      this.nextPerson.sayName();\n    }\n  }\n}\n\n\
+  var names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer', 'Araceli', 'Jolie', 'Denyse'];\n\
+  \nvar firstPerson = null;\nvar previousPerson = null;\n\n//创建列表\nvar len = names.length;\n\
+  for (var i = 0; i < len; i++) {\n  //创建一个新人物\n  var person = new Person(names[i]);\n\
+  \  // 如果尚未设置第一个，则将当前人物设置为第一个\n  if (firstPerson == null) {\n    firstPerson = person;\n\
+  \  }\n  // 如果 previousPerson 存在，则将当前人物赋值为下一个\n  if (previousPerson) {\n    previousPerson.nextPerson\
+  \ = person;\n  }\n  previousPerson = person;\n}\n// 调用第一个人的 sayName 函数\n// 启动链式反应\n\
+  firstPerson.sayName();\n```\n\n### 删除链表元素\n\n要从链表中删除元素，我们需要同时拥有链表中下一个和前一个元素的引用。要删除一个元素，我们只需获取前一个元素，并将下一个项目设置为被删除元素的下一个项目。这在代码中更符合逻辑！\n\
+  \n```javascript\nclass Person {\n  constructor(name) {\n    this.name = name;\n\
+  \    this.nextPerson = null;\n    this.previousPerson = null;\n  }\n  sayName()\
+  \ {\n    console.log(this.name);\n    if (this.nextPerson) {\n      this.nextPerson.sayName();\n\
+  \    }\n  }\n  removeByName(name) {\n    if (this.name == name) {\n      this.previousPerson.nextPerson\
+  \ = this.nextPerson;\n    }\n    if (this.nextPerson) {\n      this.nextPerson.removeByName(name);\n\
+  \    }\n  }\n}\n\nvar names = ['Aubrey', 'Marlin', 'Brittanie', 'Summer', 'Araceli',\
+  \ 'Jolie', 'Denyse'];\n\nvar firstPerson = null;\nvar lastPerson = null;\n\nvar\
+  \ len = names.length;\nfor (var i = 0; i < len; i++) {\n  //创建一个新人物\n  var person\
+  \ = new Person(names[i]);\n  // 如果尚未设置第一个，则将当前人物设置为第一个\n  if (firstPerson == null)\
+  \ {\n    firstPerson = person;\n  }\n  // 如果 lastPerson 存在，则将当前人物设置为下一个\n  // 将\
+  \ lastPerson 赋值给当前人物的前一个\n  if (lastPerson) {\n    lastPerson.nextPerson = person;\n\
+  \    person.previousPerson = lastPerson;\n  }\n  lastPerson = person;\n}\nfirstPerson.removeByName('Summer');\n\
+  firstPerson.sayName();\n```\n\n---\n\n## 碰撞检测\n\n这是我在很多游戏中使用的函数，用于判断两个对象是否互相接触。\n\
+  \n```javascript\nfunction checkCollide(obj1, obj2) {\n  var distX = Math.abs(obj1.x\
+  \ - obj2.x);\n  var distY = Math.abs(obj1.y - obj2.y);\n  if (distX < obj1.width\
+  \ / 2) {\n    if (distY < obj1.height / 2) {\n      return true;\n    }\n  }\n \
+  \ return false;\n}\n\nvar obj1={x:100,y:100,width:200,height:50};\nvar obj2={x:150,y:120,width:200,height:50};\n\
+  checkCollide(obj1,obj2);\n```\n\n---\n\n## 转换为布尔值\n\n使用双感叹号（`!!`）将数字转换为布尔值。请注意，这仅对\
+  \ 0 返回假。负数仍会返回值。\n\n```javascript\nfunction checkPlayerHealth(hitPoints) {\n  var\
+  \ isAlive = !!hitPoints;\n  return isAlive;\n}\nconsole.log(checkPlayerHealth(100));\n\
+  console.log(checkPlayerHealth(0));\n```\n\n---\n\n## 获取页面 URL\n\n如果你需要知道当前页面的名称，请使用\
+  \ `window.location.href`\n\n```javascript\nfunction getUrl() {\n  return window.location.href;\n\
+  }\nconsole.log(getUrl());\n```\n\n---\n\n## 本地存储 - 字符串\n\n使用本地存储（local storage）将字符串存储到浏览器内存中。\n\
+  \n```javascript\n//设置值\nlocalStorage.setItem('monsterName', 'orc');\n//获取值\nvar\
+  \ name=localStorage.getItem('monsterName');\n```\n\n---\n\n## 本地存储 - 对象\n\n要将对象存储到本地存储，首先使用\
+  \ `JSON.stringify` 将转换为字符串。\n\n```javascript\nvar monsterObj = { 'name':'orc','health':100,'defense':20\
+  \ };\n//将对象存入\nlocalStorage.setItem('monster', JSON.stringify(monsterObj));\n\n\
+  //从存储中检索对象\nvar monsterObj = localStorage.getItem('monster');\nvar monster=JSON.parse(monsterObj);\n\
+  ```\n\n---\n\n## 交换变量\n\n使用匿名数组快速交换值。\n\n```javascript\nvar a = 'world';\nvar b\
+  \ = 'hello';\n[a, b] = [b, a]\nconsole.log(a) //hello\nconsole.log(b) //world\n\
+  ```\n\n希望你喜欢这些 JavaScript 代码段，如果你有任何问题或发现错误，请通过以下方式联系我：[WilliamClarkson.net](https://www.williamclarkson.net/code)\n\
+  \n"

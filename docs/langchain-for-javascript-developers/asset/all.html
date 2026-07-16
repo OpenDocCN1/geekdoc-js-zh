@@ -1,0 +1,3081 @@
+<p><span id="index_split_000.html"></span></p>
+<p><span id="index_split_000.html_p1"></span><img src="index-1_1.png"
+class="calibre2" /></p>
+<p>No. 1 / 120</p>
+<p><span id="index_split_000.html_p2"></span>Copyright © 2024 by Daniel
+Nastase Al rights reserved.</p>
+<p>No part of this book may be reproduced in any form or by any
+electronic or mechanical means including information storage and
+retrieval systems, without permission in writing from the author. The
+only exception is by a reviewer, who may quote short excerpts in a
+review.</p>
+<p><a href="#index_split_000.html_p4">1. Introduction</a></p>
+<p><a href="#index_split_000.html_p5">1.1. Getting Book Updates and Code
+Examples</a></p>
+<p><a href="#index_split_000.html_p6">1.2. About the author</a></p>
+<p><a href="#index_split_000.html_p7">1.3. How this book came to
+be</a></p>
+<p><a href="#index_split_000.html_p9">1.4. What is LangChain</a></p>
+<p><a href="#index_split_000.html_p11">1.5. Overview of this
+book</a></p>
+<p><a href="#index_split_000.html_p13">1.6. Requirements and how to use
+this book</a></p>
+<p><a href="#index_split_000.html_p15">2. Models, Prompts and
+Chains</a></p>
+<p><a href="#index_split_000.html_p16">2.1. Introduction</a></p>
+<p><a href="#index_split_000.html_p17">2.2. Getting Started</a></p>
+<p><a href="#index_split_000.html_p20">2.3. The API key for the OpenAI
+ChatGPT model</a></p>
+<p><a href="#index_split_000.html_p21">2.4. Using the ChatOpenAI
+LangChain model</a></p>
+<p><a href="#index_split_000.html_p24">2.5. Prompt templates</a></p>
+<p><a href="#index_split_000.html_p28">2.6. Chains</a></p>
+<p><a href="#index_split_000.html_p32">2.7. LCEL - LangChain Expression
+Language</a></p>
+<p><a href="#index_split_000.html_p35">3. Streams in LangChain</a></p>
+<p><a href="#index_split_000.html_p36">3.1. Introduction and project
+setup</a></p>
+<p><a href="#index_split_000.html_p38">3.2. Project refactor</a></p>
+<p><a href="#index_split_000.html_p42">3.3. Streaming the
+response</a></p>
+<p><a href="#index_split_000.html_p46">4. Output parsers</a></p>
+<p><a href="#index_split_000.html_p47">4.1. Introduction</a></p>
+<p>No. 2 / 120</p>
+<p><span id="index_split_000.html_p3"></span><a
+href="#index_split_000.html_p48">4.2. Example setup</a></p>
+<p><a href="#index_split_000.html_p51">4.3. StringOutputParser</a></p>
+<p><a href="#index_split_000.html_p54">4.4.
+CommaSeparatedListOutputParser</a></p>
+<p><a href="#index_split_000.html_p59">4.5. The getFormatInstructions()
+method and custom parsers</a></p>
+<p><a href="#index_split_000.html_p62">4.6.
+StructuredOutputParser</a></p>
+<p><a href="#index_split_000.html_p67">5. Chat memory</a></p>
+<p><a href="#index_split_000.html_p68">5.1. Introduction and project
+setup</a></p>
+<p><a href="#index_split_000.html_p71">5.2. Injecting messages into the
+conversation memory</a></p>
+<p><a href="#index_split_000.html_p76">5.3. Ful conversation
+history</a></p>
+<p><a href="#index_split_000.html_p80">6. RAG / Chating with
+documents</a></p>
+<p><a href="#index_split_000.html_p81">6.1. Introduction</a></p>
+<p><a href="#index_split_000.html_p83">6.2. Example setup</a></p>
+<p><a href="#index_split_000.html_p88">6.3. Using local
+documents</a></p>
+<p><a href="#index_split_000.html_p92">6.4. Components of the RAG
+process</a></p>
+<p><a href="#index_split_000.html_p93">6.5. Vectors, Embeddings and
+Vector databases</a></p>
+<p><a href="#index_split_000.html_p96">6.6. Using CheerioWebBaseLoader
+and MemoryVectorStore</a></p>
+<p><a href="#index_split_000.html_p105">7. AI Agents</a></p>
+<p><a href="#index_split_000.html_p106">7.1. Introduction and project
+setup</a></p>
+<p><a href="#index_split_000.html_p110">7.2. Making an agent</a></p>
+<p><a href="#index_split_000.html_p114">7.3. Monitoring agents and
+performance considerations</a></p>
+<p><a href="#index_split_000.html_p118">7.4. Recap</a></p>
+<p><a href="#index_split_000.html_p120">7.5. Final Words</a></p>
+<p>No. 3 / 120</p>
+<p><span id="index_split_000.html_p4"></span><strong>1.</strong></p>
+<p><strong></strong></p>
+<p><strong>Introduction</strong></p>
+<p>No. 4 / 120</p>
+<p><span id="index_split_000.html_p5"></span><strong>1.1. Getting Book
+Updates and Code</strong></p>
+<p><strong></strong></p>
+<p><strong>Examples</strong></p>
+<p>To receive the latest versions of the book, subscribe to our mailing
+list by emailing <a
+href="mailto:daniel@js-craft.io">daniel@js-craft.io.</a> I strive to
+keep my book with the latest version of LangChain and other libraries. I
+regularly update the code and content so make sure to subscribe to stay
+informed about these updates.</p>
+<p>In order to access the ful source code for al the completed projects,
+or the PDF version of the book just write me at <a
+href="mailto:daniel@js-craft.io">daniel@js-craft.io</a>.</p>
+<p>No. 5 / 120</p>
+<p><span id="index_split_000.html_p6"></span><strong>1.2. About the
+author</strong></p>
+<p><strong></strong></p>
+<p>Hi there, friend! I’m Daniel, a software developer and educator.</p>
+<p>I like computers. I try to make them like me back. More than
+computers I like humans. I think every person has value, intelligence,
+and good inside. I believe that education is the key to building a
+better, stable, and richer world.</p>
+<p>I used to work at companies such as Skil share, Tradeshift and ING,
+where I had a chance to be exposed to completely different types of
+frontend development in various teams.</p>
+<p>Over the past five years, I've been writing articles on <a
+href="https://www.js-craft.io/">js-craft.io</a> about JavaScript, CSS,
+and other software development topics.</p>
+<p>I've always enjoyed teaching, holding both in-class and online
+classes, and being involved in tech education startups.</p>
+<p>You can always reach me a<a href="mailto:daniel@js-craft.io">t
+daniel@js-craft.io,</a> and read more about me at</p>
+<p><a
+href="https://www.js-craft.io/about/">https://www.js-craft.io/about/</a>.</p>
+<p>You can find me also on:</p>
+<p>GitHub: <a
+href="https://github.com/daniel-jscraft">github.com/daniel-jscraft</a></p>
+<p>Twitter: <a
+href="https://twitter.com/js_craft_hq">@js_craft_hq</a></p>
+<p>Mastdotodn: <a
+href="https://mastodon.social/@daniel_js_craft">@daniel_js_craft</a></p>
+<p>YouTube: <a
+href="https://www.youtube.com/@js-craftacademy6740">@js-craftacademy6740</a></p>
+<p>No. 6 / 120</p>
+<p><span id="index_split_000.html_p7"></span><strong>1.3. How this book
+came to be</strong></p>
+<p><strong></strong></p>
+<p>The first time I wrote a computer program was 26 years ago, in Turbo
+Pascal.</p>
+<p>To someone who did not know how to code it felt like casting spells.
+But I understood how spells were made. If - then - else statements,
+functions, variables. This was how you make spells.</p>
+<p>The only time I've had again this feeling was in 2022 when a friend
+showed me ChatGPT. It felt like some mystical magic. But this time I was
+not the one who was writing the spells. I did not truly understand how
+that 'AI thing' was made; you couldn't create it with just the
+programming I was used to.</p>
+<p>So, I went down to the "learn how AI works" rabbit hole. And oh boy,
+this was a deep one. I was trying to understand this thing from the
+ground up.</p>
+<p>I was trying to build and train my models from scratch. After some
+time, my only practical project was a <a
+href="https://github.com/daniel-jscraft/Pure-js-neural-network">pure
+JavaScript neuronal network.</a> The model was written from scratch and
+could be trained to detect if a hand-drawn shape was a digit.</p>
+<p>I gave up after some time. With al the different architectures, bias
+neurons, training data sets, backpropagation, or gradient descent. It
+was too much for my mediocre brain. The AI thing was a bit more logical
+and less mystical but I was far away from being able to use the new
+learnings practical y.</p>
+<p>Therefore I went back to my normal job as a web developer. But in the
+background of my mind was stil the feeling that I should stil pay
+attention to AI. There was something there.</p>
+<p>After a while, I was listening to an episode of the excellen<a
+href="https://www.latent.space/podcast">t Latent Space</a></p>
+<p>podcast. I was following <a href="https://www.swyx.io/">Swan Swyx
+Wang,</a> the co-founder of this podcast from the time he has speaking
+about React (the JavaScript framework not ReAct prompting).</p>
+<p>No. 7 / 120</p>
+<p><span id="index_split_000.html_p8"></span>In that episode, Swyx
+mentioned something about LangChain. This LangChain framework was made
+for integrating AI models with "traditional"</p>
+<p>apps. I realized that I did not ful y understand al the inner
+mechanics of databases, or operating systems, but I was using them.
+Therefore decided to give AI another shot. But this time from a more
+practical angle.</p>
+<p>One book later I can now say that I love LangChain for al it taught
+me about how Large Language Models (LLMs for short) work. The
+abstractions, the mental models, and the use cases of this framework wil
+teach you a lot about AI models and how to use them in conjunction with
+JavaScript-powered apps.</p>
+<p>LangChain can be seen as the orchestrator that connects nearly
+everything in the AI-Webapp integration system. This makes it an
+excellent gateway for understanding how al the components work
+together.</p>
+<p>So, let's learn!</p>
+<p>No. 8 / 120</p>
+<p><span id="index_split_000.html_p9"></span><strong>1.4. What is
+LangChain</strong></p>
+<p><strong></strong></p>
+<p>LangChain is a framework designed to simplify the creation of
+applications that integrate Large Language Models (LLMs).</p>
+<p>LangChain provides al the AI integration building blocks in one
+framework. It offers a modular, flexible, and scalable architecture that
+is easy to maintain.</p>
+<p>You can see LangChain as the glue layer for almost everything in the
+AI ecosystem.</p>
+<p>By learning LangChain, you wil gain a deep understanding of the
+structure, workflows, and practices of AI Engineering.</p>
+<p>Some use cases for LangChain include:</p>
+<p>LLMs are trained on human-written unstructured text. While this works
+well for human interactions, it may not work well for sending
+unformatted text to an API. APIs instead of structured data like
+JSON.</p>
+<p>LangChain can format the input and output in LLM interactions.</p>
+<p>LLMs are stateless. They don't remember who you are or what you said
+a few seconds ago. LangChain provides support for both long-term and
+short-term memory.</p>
+<p>LLMs can be slow. LangChain can stream responses as they are
+generated, providing fast feedback to the user.</p>
+<p>LLMs have knowledge cutoff dates. For example, GPT 3.5 does not have
+training data after 2021. And GPT-4o does not know anything after Oct
+2023. With LangChain, we can create and manage AI Agents that go online,
+search for information, and use tools to parse that information.</p>
+<p>We can chain multiple LLMs together. For example, we can generate an
+article with Google's Gemini model and then pass the text to Midjourney
+to generate images for that article.</p>
+<p>No. 9 / 120</p>
+<p><span id="index_split_000.html_p10"></span>LLMs lack access to
+internal organization documents. We can use Retrieval-Augmented
+Generation (RAG) to provide extra context to a model, al owing it to
+interact with users based on an organization's rules and knowledge.
+LangChain has a great toolset for RAG operations.</p>
+<p>LangChain standardizes operations like the ones above, making it easy
+to swap components as needed. Want to use a different LLM because it's
+better or cheaper? Want to change the vector database to store the
+RAG</p>
+<p>embeddings? No problem, LangChain has you covered.</p>
+<p>LangChain abstracts and standardizes common patterns when working
+with LLMs. Remember the old days with browser incompatibilities? Then
+jQuery appeared. This is what LangChain aims to do for LLM
+integration.</p>
+<p>While it is possible to create any app without LangChain, it
+simplifies the process to a great extent and is much better than manual
+prompting.</p>
+<p>If you want to delve deeper into the subject, I recommend listening
+to the</p>
+<p><a href="https://www.latent.space/p/langchain">episode with Harrison
+Chase, the founder of LangChain</a> from the excellent Latent Space
+podcast.</p>
+<p>No. 10 / 120</p>
+<p><span id="index_split_000.html_p11"></span><strong>1.5. Overview of
+this book</strong></p>
+<p><strong></strong></p>
+<p>In this book, we email on a fun, hands-on, and pragmatic journey to
+learning LangChain. Every main chapter has an associated example
+application that gradual y evolves during that chapter. Each step
+introduces a few new LangChain core concepts in a manageable way without
+overwhelming you.</p>
+<p>The book is purposeful y broken down into short chapters, each
+focusing on different topics.</p>
+<p>Here is how the main chapters and example applications are
+structured: <strong>Chapter 1</strong>: We wil use a Story Generator for
+Kids app to introduce the basics of LangChain. We wil connect to the
+first LLM, and use prompt templates and chains. We wil delve deeper into
+partial templates, template composition, and more.</p>
+<p><strong>Chapter 2</strong>: After the basic setup in Chapter 1, this
+chapter wil introduce the concept of streaming. Using the same app,
+Story Generator for Kids, we wil stream long responses from the LLMs to
+improve the user experience.</p>
+<p><strong>Chapter 3</strong>: One chal enge with LLMs is that they give
+responses in an unstructured format, as they were trained on
+human-intelligible text. In this chapter, we wil study output parsers by
+making a ful Trivia Game from scratch using ChatGPT.</p>
+<p><strong>Chapter 4</strong>: The memory module enables LLM memory for
+LangChain apps. We can remember past conversations and responses in the
+current session similar to how ChatGPT does it. In this chapter, we wil
+build a Tea Facts Wiki application.</p>
+<p><strong>Chapter 5</strong>: One of the key features of LangChain is
+its support for RAG -</p>
+<p>Retrieval Augmented Generation. In this chapter, we wil build a Chat
+Bot app that answers questions based on external context. We wil see how
+to provide data from sources like PDFs or online documents, what
+embeddings are, and how vector data stores work.</p>
+<p>No. 11 / 120</p>
+<p><span id="index_split_000.html_p12"></span><strong>Chapter
+6</strong>: More flexible and versatile compared to chains, AI agents
+help you build complex solutions and enable access to third-party tools
+such as Google search and math calculators. They can make decisions on
+the appropriate tool to use in a given situation.</p>
+<p>From building a Story Generator to creating a Trivia Game and a real
+Chat Bot application, each chapter gradual y expands your understanding.
+By the end, we wil have explored streaming, output parsing, memory
+modules, AI agents, and RAG capabilities, empowering you to develop
+complex solutions.</p>
+<p>Get ready to embark on an enriching journey into the world of
+LangChain development.</p>
+<p>No. 12 / 120</p>
+<p><span id="index_split_000.html_p13"></span><img src="index-13_1.png"
+class="calibre2" /></p>
+<p>!</p>
+<p><strong>1.6. Requirements and how to use this</strong></p>
+<p><strong>book</strong></p>
+<p>LangChain offers implementations in both JavaScript and Python.</p>
+<p>Throughout this book, our focus wil be on JavaScript.</p>
+<p>You'l find that you learn best by coding along with the examples
+provided in the book. My suggestion is to initial y go through each
+chapter, absorbing the content to grasp the concepts. Then, during a
+second pass, code along as you progress.</p>
+<p>We'l utilize a combination of LangChain, React, and Next.js. While a
+basic understanding of React is expected, you need not be an expert.</p>
+<p>For setting up Next.js, the simplest approach is to utilize th<a
+href="https://www.npmjs.com/package/create-next-app">e
+create-next-app</a></p>
+<p>utility.</p>
+<p>In most instances, our work wil be confined to just 2 files:
+src/app/page.js - handling the frontend; its primary function is to
+display information and data.</p>
+<p>src/app/api/route.js - managing the backend; this file wil handle the
+API interactions with the LLM.</p>
+<p>The examples wil progress in a step-by-step iterative manner. Each
+modification wil be denoted by the</p>
+<p>sign, with the path of the modified</p>
+<p>file provided for reference.</p>
+<p>For instance:</p>
+<p>No. 13 / 120</p>
+<p><span id="index_split_000.html_p14"></span><img src="index-14_1.png"
+class="calibre2" /></p>
+<p><img src="index-14_2.png" class="calibre2" /></p>
+<p>!</p>
+<p>!</p>
+<p>// src/app/page.js - path of the updated file</p>
+<p>//</p>
+<p>add the PromptTemplate to avoid repetition - file change import {
+PromptTemplate } from "@langchain/core/prompts"</p>
+<p>//</p>
+<p>make a new ChatGPT model - file change</p>
+<p>const model = new ChatGPT({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>Please note that LangChain is currently undergoing development and is
+chaining rapidly. While I'l strive to update the book frequently, there
+might be brief periods where method names or import statements are not
+aligned with the latest version.</p>
+<p>For support, feel free to reach out via email at <a
+href="mailto:daniel@js-craft.io">daniel@js-craft.io.</a></p>
+<p>No. 14 / 120</p>
+<p><span id="index_split_000.html_p15"></span><strong>2.
+Models,</strong></p>
+<p><strong>Prompts and</strong></p>
+<p><strong>Chains</strong></p>
+<p>No. 15 / 120</p>
+<p><span id="index_split_000.html_p16"></span><img src="index-16_1.png"
+class="calibre2" /></p>
+<p><strong>2.1. Introduction</strong></p>
+<p><strong></strong></p>
+<p>It's now time to create our first app using LangChain and
+JavaScript.</p>
+<p>You have been assigned to create an app cal ed "The Story Maker".
+This app wil generate titles for children's stories. Here's what the
+final UI of the app wil look like:</p>
+<p>For instance, if we specify that we want a story with Unicorns as the
+main characters, the app wil generate a story title like this:</p>
+<p>"The Magical Adventures of Stardust the Unicorn"</p>
+<p>No. 16 / 120</p>
+<p><span id="index_split_000.html_p17"></span><strong>2.2. Getting
+Started</strong></p>
+<p><strong></strong></p>
+<p>The easiest way to get started is by using the <a
+href="https://nextjs.org/docs/pages/api-reference/create-next-app">create-next-app</a>
+utility. Once you have it instal ed, create a new project named
+story-generator : yarn create next-app</p>
+<p>Alternatively, you can use the starting code from the code examples
+folder.</p>
+<p>Just remember to run npm install from within the folder of the
+example.</p>
+<p>We'l need to instal a couple of npm dependencies: LangChain and
+OpenAI.</p>
+<p>Go to the root folder of the project and, in your terminal, execute
+the following command:</p>
+<p>npm i langchain @langchain/openai</p>
+<p>At the time of writing this book, these are the current versions of
+the instal ed modules:</p>
+<p>"@langchain/openai": "^0.0.14",</p>
+<p>"langchain": "^0.1.19",</p>
+<p>Please note that LangChain is currently undergoing rapid development,
+and as it progresses, certain parts of the code may become obsolete. I'm
+striving to keep the book updated, but if, for any reason, something
+breaks, it might be wise to revert to these version numbers.</p>
+<p>Once the dependencies are set up, we'l proceed to create the frontend
+of our app using React.</p>
+<p>Insert the following code into src\App.js :</p>
+<p>// code/story-generator/src/app/page.js</p>
+<p>export default function Home() {</p>
+<p>const onSubmitHandler = async (event)=&gt; {</p>
+<p>event.preventDefault()</p>
+<p>No. 17 / 120</p>
+<p><span id="index_split_000.html_p18"></span><img src="index-18_1.png"
+class="calibre2" /></p>
+<p><img src="index-18_2.png" class="calibre2" /></p>
+<p>#</p>
+<p>"</p>
+<p>const subject = event.target.subject.value</p>
+<p>console.log(subject)</p>
+<p>}</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;</p>
+<p>The Story Maker&lt;/h1&gt;</p>
+<p>&lt;em&gt;This app uses a GPT Model to generate a story for
+kids.&lt;/em&gt;</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>&lt;label htmlFor="subject"&gt;Main subject of the story:</p>
+<p>&lt;/label&gt;</p>
+<p>&lt;input name='subject' placeholder='subject...' /&gt;</p>
+<p>&lt;button&gt;</p>
+<p>Ask AI Model&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>Nothing particularly remarkable at this stage. It's just a React UI
+that fetches the subject of the story from a text input and logs it to
+the console.</p>
+<p>We'l launch our app by executing the following command in the
+terminal: npm run dev</p>
+<p>This wil generate the following output:</p>
+<p>No. 18 / 120</p>
+<p><span id="index_split_000.html_p19"></span><img src="index-19_1.png"
+class="calibre2" /></p>
+<p>Currently, if the user enters a subject, no story wil be generated as
+we haven't yet integrated the app with OpenAI. We'l address this in the
+next chapter.</p>
+<p>No. 19 / 120</p>
+<p><span id="index_split_000.html_p20"></span><strong>2.3. The API key
+for the OpenAI ChatGPT</strong></p>
+<p><strong>model</strong></p>
+<p>To use OpenAI's ChatGPT model, you wil need an API key. The API is
+subscription-based and the key can be generated from the following URL:
+https://platform.openai.com/api-keys</p>
+<p>You can top up your account with the minimum value. For example,
+writing al the examples in this book cost me under 2 USD.</p>
+<p>Once you've generated your API key, return to the Next.js project and
+paste it into the .env file:</p>
+<p>// code/story-generator/.env</p>
+<p>OPENAI_API_KEY='sk-1234567890B2tT4HT3BlbkFJXkATN1arB9DXABkRQ1uj'</p>
+<p>This key wil be used only in the backend part of our app. To access
+the API key in the code/story-generator/src/app/api/route.js file we can
+write the following:</p>
+<p>// code/story-generator/src/app/api/route.js</p>
+<p>console.log( process.env.OPENAI_API_KEY )</p>
+<p>The key wil be later passed to the LangChain model object
+constructor.</p>
+<p>This step wil be the default procedure for each of the code examples
+in the following chapters of this book.</p>
+<p><a href="https://js.langchain.com/docs/modules/model_io/models/">If
+you don’t wish to use an API key, you can check out this
+list](https://js.langc</a></p>
+<p><a
+href="https://js.langchain.com/docs/modules/model_io/models/">hain.com/docs/modules/model_io/models/)
+with the LLMs supported by</a></p>
+<p>LangChain and pick up a free model. You can even use a free
+HuggingFace token to avoid the OpenAI API.</p>
+<p>No. 20 / 120</p>
+<p><span id="index_split_000.html_p21"></span><strong>2.4. Using the
+ChatOpenAI LangChain</strong></p>
+<p><strong></strong></p>
+<p><strong>model</strong></p>
+<p>Let's move forward by establishing a connection to OpenAI's LLM. Add
+the following code to the backend of the app, in the
+src/app/api/route.js file:</p>
+<p>// code/story-generator/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { subject } = await req.json()</p>
+<p>const gptResponse = await model.invoke(subject)</p>
+<p>return Response.json({data: gptResponse})</p>
+<p>}</p>
+<p>To initiate a connection with OpenAI, we create a new instance of the
+ChatOpenAI object. Within its constructor, we define the following: a
+temperature parameter, set to 0.9</p>
+<p>the API key obtained from the preceding subchapter</p>
+<p>You might be curious about this temperature parameter, right?</p>
+<p>The temperature parameter affects how imaginative our model gets.</p>
+<p>Increasing it results in more creative outputs while lowering it
+keeps responses more grounded and factual. Sticking to facts reduces
+potential inaccuracies or hal ucinations from the model.</p>
+<p>Choosing the right temperature depends on the task. For brainstorming
+catchy story titles, a higher temperature is preferable. For tasks where
+accuracy is key like summarizing a legal document, a lower temperature
+is better.</p>
+<p>No. 21 / 120</p>
+<p><span id="index_split_000.html_p22"></span><img src="index-22_1.png"
+class="calibre2" /></p>
+<p><img src="index-22_2.png" class="calibre2" /></p>
+<p>!</p>
+<p>!</p>
+<p>With our temperature set, let's now update the frontend of our
+app:</p>
+<p>// code/story-generator/src/app/page.js</p>
+<p>export default function Home() {</p>
+<p>const onSubmitHandler = async (event) =&gt; {</p>
+<p>event.preventDefault()</p>
+<p>const subject = event.target.subject.value</p>
+<p>//</p>
+<p>call the LLM with the subject as the main prompt</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({ subject })</p>
+<p>})</p>
+<p>//</p>
+<p>destructure and print out the response's data</p>
+<p>const {data} = await response.json()</p>
+<p>console.log(response)</p>
+<p>}</p>
+<p>// the rest remains the same</p>
+<p>// ...</p>
+<p>}</p>
+<p>To test, let's input a generic question like Who is Elsa? As an
+answer, we wil receive:</p>
+<p>"Elsa is a fictional character and the protagonist of Disney animated
+film, Frozen. She is the queen of Arendelle and possesses the magical
+ability to create ice and snow."</p>
+<p>No. 22 / 120</p>
+<p><span id="index_split_000.html_p23"></span><img src="index-23_1.png"
+class="calibre2" /></p>
+<p>This confirms our successful connection to OpenAI.</p>
+<p>Please note that your answer may be a bit different. Opposite to the
+classic way of programming, an LLM can give a different output to the
+same input.</p>
+<p>LLMs work by estimating stuff, it's al probabilistic.</p>
+<p>Another test could involve requesting story a title such as:</p>
+<p>"Tell me a bedside story title about unicorns."</p>
+<p>Or:</p>
+<p>"Tell me a bedside story title about cats."</p>
+<p>Give it a shot and see how it goes.</p>
+<p>No. 23 / 120</p>
+<p><span id="index_split_000.html_p24"></span><img src="index-24_1.png"
+class="calibre2" /></p>
+<p><img src="index-24_2.png" class="calibre2" /></p>
+<p><img src="index-24_3.png" class="calibre2" /></p>
+<p>!</p>
+<p>!</p>
+<p><strong>2.5. Prompt templates</strong></p>
+<p><strong></strong></p>
+<p>You'l soon notice that the prompt requires repetitive input, such as
+Tell me a bedside story title about ... followed by the main
+subject.</p>
+<p>This redundancy can be addressed using prompt templates, which we'l
+explore next.</p>
+<p>Before we move to the next chapter let's add a smal tweak to our app.
+Wil display the story title given by the LLM in the UI using a React
+state variable.</p>
+<p>This is the ful code with the highlighted additions:</p>
+<p>//code/story-generator/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>//</p>
+<p>adding the React state variable</p>
+<p>const [storyTitle, setStoryTitle] = useState()</p>
+<p>const onSubmitHandler = async (e)=&gt; {</p>
+<p>e.preventDefault()</p>
+<p>const subject = e.target.subject.value</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({ subject })</p>
+<p>})</p>
+<p>const { data } = await response.json()</p>
+<p>//</p>
+<p>update the React state when we have the LLM's answer
+setStoryTitle(data)</p>
+<p>No. 24 / 120</p>
+<p><span id="index_split_000.html_p25"></span><img src="index-25_1.png"
+class="calibre2" /></p>
+<p><img src="index-25_2.png" class="calibre2" /></p>
+<p><img src="index-25_3.png" class="calibre2" /></p>
+<p><img src="index-25_4.png" class="calibre2" /></p>
+<p>!</p>
+<p>#</p>
+<p>"</p>
+<p>}</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;</p>
+<p>The Story Maker&lt;/h1&gt;</p>
+<p>&lt;em&gt;This app uses a GPT Model to generate a story for
+kids.&lt;/em&gt;</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>&lt;label htmlFor="subject"&gt;Main subject of the story:</p>
+<p>&lt;/label&gt;</p>
+<p>&lt;input name='subject' placeholder='subject...' /&gt;</p>
+<p>&lt;button&gt;</p>
+<p>Ask AI Model&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>{/*</p>
+<p>display the story title in the UI */}</p>
+<p>&lt;p&gt;{ storyTitle }&lt;/p&gt;</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>And this is how the UI wil look after the change:</p>
+<p>Let's now get back to the main content of this chapter: prompt
+templates.</p>
+<p>No. 25 / 120</p>
+<p><span id="index_split_000.html_p26"></span><img src="index-26_1.png"
+class="calibre2" /></p>
+<p><img src="index-26_2.png" class="calibre2" /></p>
+<p><img src="index-26_3.png" class="calibre2" /></p>
+<p>!</p>
+<p>!</p>
+<p>!</p>
+<p>Language models use text as input. That text is cal ed a prompt. It's
+not just a fixed string, though. Usual y, it's a mix of a template,
+examples, and what the user adds.</p>
+<p>With templates, we can streamline the prompting process, making sure
+that users don't have to repetitively type the same prefix for each
+request.</p>
+<p>For our particular use case, the prompt template wil look like
+so:</p>
+<p>`Tell me a story title about {subject}Àl the chances we need to make
+are in the backend:</p>
+<p>//code/story-generator/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>//</p>
+<p>we will use the PromptTemplate to avoid repetition</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>//</p>
+<p>establishing the general format of the template</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: [ "subject"],</p>
+<p>template: "Tell me a story title about {subject}"</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { subject } = await req.json()</p>
+<p>//</p>
+<p>passing down the { subject } parameter</p>
+<p>const formattedPrompt = await prompt.format({</p>
+<p>subject</p>
+<p>})</p>
+<p>const gptResponse = await model.invoke(formattedPrompt) return
+Response.json({data: gptResponse.content})</p>
+<p>}</p>
+<p>No. 26 / 120</p>
+<p><span id="index_split_000.html_p27"></span><img src="index-27_1.png"
+class="calibre2" /></p>
+<p>The default format of writing prompt templates is the F-String
+format, popular in Python. If you want to use the more familiar double
+curly braces JavaScript Mustache format you can have:</p>
+<p>const prompt = PromptTemplate.fromTemplate(</p>
+<p>inputVariables: [ "subject"],</p>
+<p>template: "Tell me a story title about {{subject}}",</p>
+<p>{</p>
+<p>templateFormat: "mustache"</p>
+<p>}</p>
+<p>)</p>
+<p>If you want to read more you can take a look at th<a
+href="https://js.langchain.com/docs/modules/model_io/prompts/quick_start/">e
+quick start guide</a> from the documentation.</p>
+<p>No. 27 / 120</p>
+<p><span id="index_split_000.html_p28"></span><img src="index-28_1.png"
+class="calibre2" /></p>
+<p><strong>2.6. Chains</strong></p>
+<p><strong></strong></p>
+<p>Chains refer to sequences of cal s - whether to an LLM, a tool, or a
+data preprocessing step.</p>
+<p>They are a vital core concept of LangChain and can be seen as short
+programs written around LLMs to execute complex tasks.</p>
+<p>Speaking of chains, here's a fun fact about LangChain's logo: The
+parrot and a chain link were inspired by people cal ing LLMs "stochastic
+parrots". These models can mimic human writing but don't truly
+understand what they're saying. This library aims to "chain" these
+"parrots" together to produce more meaningful and useful outputs.</p>
+<p>The output of one link from the chain becomes the input for the next
+link.</p>
+<p>Let's say we need to create an article for a magazine. We wil follow
+these steps:</p>
+<p>1. Use ChatGPT to generate the article title.</p>
+<p>2. Pass this title to a local LLM to compose the actual article,
+utilizing internal documents.</p>
+<p>No. 28 / 120</p>
+<p><span id="index_split_000.html_p29"></span><img src="index-29_1.png"
+class="calibre2" /></p>
+<p><img src="index-29_2.png" class="calibre2" /></p>
+<p><img src="index-29_3.png" class="calibre2" /></p>
+<p><img src="index-29_4.png" class="calibre2" /></p>
+<p>!</p>
+<p>!</p>
+<p>!</p>
+<p>!</p>
+<p>3. Pass the article to Midjourney, another LLM, to generate images
+for the article.</p>
+<p>Let's see how to add a chain to our backend code:</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>//</p>
+<p>using the LLMChain; maybe the most straightforward chain import {
+LLMChain } from "langchain/chains"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: [ "subject"],</p>
+<p>template: "Tell me a story title about {subject}"</p>
+<p>})</p>
+<p>//</p>
+<p>a chain that links the model, the prompt and the verbose option</p>
+<p>const chain = new LLMChain({</p>
+<p>llm: model,</p>
+<p>prompt,</p>
+<p>//</p>
+<p>use verbose to debug the chain</p>
+<p>verbose: true</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { subject } = await req.json()</p>
+<p>//</p>
+<p>invoking the chain</p>
+<p>const gptResponse = await chain.invoke({subject})</p>
+<p>return Response.json({data: gptResponse.text})</p>
+<p>}</p>
+<p>No. 29 / 120</p>
+<p><span id="index_split_000.html_p30"></span><img src="index-30_1.png"
+class="calibre2" /></p>
+<p>You may encounter some examples online that utilize the chain.call()
+method instead of chain.invoke() . Please note that .call() is
+deprecated and wil be removed.</p>
+<p>The verbose: true option is optional. If enabled, it wil provide
+additional details about the chain in the backend console. This
+information includes: the input and output for each step of the
+chain</p>
+<p>how long each step took</p>
+<p>the tokenUsage variable</p>
+<p>This last point is important because we pay to use the LLM's API with
+tokens.</p>
+<p>On average, 100 words are roughly 130 tokens. A helpful tool for
+managing tokens is the <a
+href="https://platform.openai.com/tokenizer">OpenAI Tokenizer</a>. The
+tokenUsage is divided into how much the input prompt used and how much
+the actual response used:</p>
+<p>"llmOutput": {</p>
+<p>"tokenUsage": {</p>
+<p>"completionTokens": 14,</p>
+<p>"promptTokens": 14,</p>
+<p>"totalTokens": 28</p>
+<p>}</p>
+<p>}</p>
+<p>In the frontend code, we wil simply replace the text input with a
+select box to facilitate data entry:</p>
+<p>export default function Home() {</p>
+<p>No. 30 / 120</p>
+<p><span id="index_split_000.html_p31"></span><img src="index-31_1.png"
+class="calibre2" /></p>
+<p><img src="index-31_2.png" class="calibre2" /></p>
+<p><img src="index-31_3.png" class="calibre2" /></p>
+<p><img src="index-31_4.png" class="calibre2" /></p>
+<p><img src="index-31_5.png" class="calibre2" /></p>
+<p><img src="index-31_6.png" class="calibre2" /></p>
+<p>// the rest remains the same</p>
+<p>// ...</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;" The Story Maker&lt;/h1&gt;</p>
+<p>&lt;em&gt;This app uses a GPT Model to generate a story for
+kids.&lt;/em&gt;</p>
+<p>{/*! adding a select box to make the data entry faster</p>
+<p>*/}</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>Main subject of the story:</p>
+<p>&lt;select name="subject"&gt;</p>
+<p>&lt;option value="cats"&gt;$ Cats&lt;/option&gt;</p>
+<p>&lt;option value="unicorns"&gt;" Unicorns&lt;/option&gt;</p>
+<p>&lt;option value="elfs"&gt;% •♀ Elfs&lt;/option&gt;</p>
+<p>&lt;/select&gt;</p>
+<p>&lt;button&gt;# Ask AI Model&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;p&gt;{ storyTitle }&lt;/p&gt;</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>No. 31 / 120</p>
+<p><span id="index_split_000.html_p32"></span><strong>2.7. LCEL -
+LangChain Expression</strong></p>
+<p><strong></strong></p>
+<p><strong>Language</strong></p>
+<p>The LangChain Expression Language, or LCEL, provides a simpler way to
+chain multiple custom components.</p>
+<p>In short, using LCEL, we can replace other classes, such as LLMChain
+, with the .pipe() method to form a chain.</p>
+<p>Let's take another look at the chain for the above example: const
+model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: ["subject"],</p>
+<p>template: "Tell me a story title about {subject}"</p>
+<p>})</p>
+<p>const chain = new LLMChain({</p>
+<p>llm: model,</p>
+<p>prompt,</p>
+<p>})</p>
+<p>await chain.invoke({subject})</p>
+<p>We can replace the LLMChain wrapper by using the .pipe() method. The
+rest of the code remains the same:</p>
+<p>No. 32 / 120</p>
+<p><span id="index_split_000.html_p33"></span>// BEFORE</p>
+<p>const chain = new LLMChain({</p>
+<p>llm: model,</p>
+<p>prompt,</p>
+<p>})</p>
+<p>await chain.invoke({subject})</p>
+<p>// AFTER</p>
+<p>const chain = prompt.pipe(model)</p>
+<p>await chain.invoke({subject})</p>
+<p>Later, we wil see that we can build more complex chains by adding
+other types of nodes, such as output parsers.</p>
+<p>The output of a node in the chain becomes the input of the next node.
+The key element of LCEL is th<a
+href="https://v02.api.js.langchain.com/interfaces/langchain_core_runnables.RunnableInterface.html">e
+RunnableInterface</a>. It ensures that the nodes in a chain have a
+common communication pattern.</p>
+<p>LCEL standardizes communication and enables easy swapping of
+components within the LangChain framework. Al the components are
+modular. If something needs to be changed, only that part of the code
+has to be replaced rather than the entire pipeline.</p>
+<p>It also makes the code cleaner.</p>
+<p>Many of the examples in this book wil be made using LCEL chains.</p>
+<p><a href="https://js.langchain.com/v0.1/docs/expression_language/">If
+you want to explore more on this topic, be sure to check out the
+official</a></p>
+<p><a
+href="https://js.langchain.com/v0.1/docs/expression_language/">LCEL docs
+and I've also written a few articles on my blog:</a></p>
+<p><a
+href="https://www.js-craft.io/blog/nested-chains-langchain-js-passing-output-from-one-chain-to-another/">Nested
+Chains in LangChain JS – Passing the Output from One Chain to</a></p>
+<p><a
+href="https://www.js-craft.io/blog/nested-chains-langchain-js-passing-output-from-one-chain-to-another/">Another</a></p>
+<p><a
+href="https://www.js-craft.io/blog/custom-functions-runnablelambda-langchain-js/">Custom
+Functions with RunnableLambda in LangChain JS</a></p>
+<p><a
+href="https://www.js-craft.io/blog/runnablemap-runnableparallel-langchain-js/">RunnableMap
+and RunnableParal el in LangChain JS</a></p>
+<p><a
+href="https://www.js-craft.io/blog/routing-langchain-js-different-prompts-based-on-query-type/">Routing
+in LangChain JS – Use LLM Classifiers to Cal Different Prompts</a></p>
+<p><a
+href="https://www.js-craft.io/blog/langchain-runnablebranch-javascript/">Using
+RunnableBranch to Route Execution to Different Prompts in</a></p>
+<p><a
+href="https://www.js-craft.io/blog/langchain-runnablebranch-javascript/">LangChain.js</a></p>
+<p>No. 33 / 120</p>
+<p><span id="index_split_000.html_p34"></span><img src="index-34_1.png"
+class="calibre2" /></p>
+<p>This concludes our first smal app with JavaScript, LangChain, and
+ChatGPT.</p>
+<p>We have learned how to:</p>
+<p>bootstrap and connect a web app app to an LLM.</p>
+<p>utilize LangChain's prompt templates to prevent repetition and create
+our first chain.</p>
+<p>In the next chapter, we wil expand this application to generate the
+actual story body and integrate data streams.</p>
+<p>No. 34 / 120</p>
+<p><span id="index_split_000.html_p35"></span><strong>3. Streams
+in</strong></p>
+<p><strong>LangChain</strong></p>
+<p>No. 35 / 120</p>
+<p><span id="index_split_000.html_p36"></span><img src="index-36_1.png"
+class="calibre2" /></p>
+<p><strong>3.1. Introduction and project setup</strong></p>
+<p><strong></strong></p>
+<p>Some answers may take a lot of time to be generated by an LLM. For
+instance, if you request the model to craft a complex response like a
+poem or summarize a document.</p>
+<p>Given the way LLMs work, we don't have to wait for the ful answer to
+be complete. Have you noticed that when you ask ChatGPT something you
+wil see that typewriter effect, wherein each word appears gradual y on
+the screen?</p>
+<p>A Large Language Model does not reason like a human. It does not
+first build the ful response and then explain it. Nor does it map the
+answer to a knowledge graph or something similar. It just adds one token
+at a time to the answer.</p>
+<p>This is great because we can use this streaming behavior to update
+the UI as soon as we have new info to show to the user.</p>
+<p>Returning to the story generator example, let's say we want to make a
+story named The Secret of the Silver Elves . Instead of waiting for the
+ful story to be generated, we can stream the story while it is written:
+No. 36 / 120</p>
+<p><span id="index_split_000.html_p37"></span><img src="index-37_1.png"
+class="calibre2" /></p>
+<p>Once upon a time</p>
+<p>...</p>
+<p>...</p>
+<p>Once upon a time, in a mystical forest</p>
+<p>...</p>
+<p>...</p>
+<p>Once upon a time, in a mystical forest hidden deep within the
+mountains</p>
+<p>...</p>
+<p>...</p>
+<p>Once upon a time, in a mystical forest hidden deep within the
+mountains, there lived a clan of silver elves.</p>
+<p>In this chapter, we wil implement the streaming feature. This is how
+the UI of the app wil look like at the end:</p>
+<p>No. 37 / 120</p>
+<p><span id="index_split_000.html_p38"></span><img src="index-38_1.png"
+class="calibre2" /></p>
+<p><img src="index-38_2.png" class="calibre2" /></p>
+<p><strong>3.2. Project refactor</strong></p>
+<p><strong></strong></p>
+<p>Before we move forward, we first need to do a bit of refactoring to
+our project.</p>
+<p>On the frontend, we wil do the following:</p>
+<p>1. once we have a title for the story, we wil display it as a button
+with the text Tell me the story of &lt;&lt;story name here&gt;&gt; 2.
+when this button is pressed, we wil make a cal to the backend, pass in
+the story name and print the response</p>
+<p>This is how the code wil look like:</p>
+<p>// code/streaming/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [storyTitle, setStoryTitle] = useState()</p>
+<p>//! a new state variable for the storyBody</p>
+<p>const [storyBody, setStoryBody] = useState()</p>
+<p>const onSubmitHandler = async (e)=&gt; {</p>
+<p>e.preventDefault()</p>
+<p>const subject = e.target.subject.value</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({ subject })</p>
+<p>})</p>
+<p>No. 38 / 120</p>
+<p><span id="index_split_000.html_p39"></span><img src="index-39_1.png"
+class="calibre2" /></p>
+<p><img src="index-39_2.png" class="calibre2" /></p>
+<p><img src="index-39_3.png" class="calibre2" /></p>
+<p><img src="index-39_4.png" class="calibre2" /></p>
+<p><img src="index-39_5.png" class="calibre2" /></p>
+<p><img src="index-39_6.png" class="calibre2" /></p>
+<p><img src="index-39_7.png" class="calibre2" /></p>
+<p><img src="index-39_8.png" class="calibre2" /></p>
+<p>const { data } = await response.json()</p>
+<p>setStoryTitle(data)</p>
+<p>}</p>
+<p>//! call this method when the start story button is pressed const
+startStoryStream = async ()=&gt; {</p>
+<p>//! reset the story body, call the backend</p>
+<p>// and display the response in the story body</p>
+<p>setStoryBody('')</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({ storyTitle })</p>
+<p>})</p>
+<p>const { data } = await response.json()</p>
+<p>setStoryBody(data)</p>
+<p>}</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;" The Story Maker&lt;/h1&gt;</p>
+<p>&lt;em&gt;This app uses a GPT Model to generate a story for
+kids.&lt;/em&gt;</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>Main subject of the story:</p>
+<p>&lt;select name="subject"&gt;</p>
+<p>&lt;option value="cats"&gt;$ Cats&lt;/option&gt;</p>
+<p>&lt;option value="unicorns"&gt;" Unicorns&lt;/option&gt;</p>
+<p>&lt;option value="elfs"&gt;% •♀ Elfs&lt;/option&gt;</p>
+<p>&lt;/select&gt;</p>
+<p>&lt;button&gt;# Ask AI Model&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>{/* ! if we have the story title show</p>
+<p>the start story button and the story body */}</p>
+<p>{storyTitle &amp;&amp; &lt;div&gt;</p>
+<p>&lt;button onClick={startStoryStream}&gt;</p>
+<p>Tell me the story of {storyTitle}</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;p&gt;{storyBody}&lt;/p&gt;</p>
+<p>No. 39 / 120</p>
+<p><span id="index_split_000.html_p40"></span><img src="index-40_1.png"
+class="calibre2" /></p>
+<p><img src="index-40_2.png" class="calibre2" /></p>
+<p><img src="index-40_3.png" class="calibre2" /></p>
+<p>&lt;/div&gt;}</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>On the backend, we wil add these changes:</p>
+<p>add a makeStoryTitle() method that wil contain al the previous logic
+add a streamStory() method. We wil later use this method to implement
+the streaming mechanism. For the time being, it wil return some static
+text</p>
+<p>check if the request from the frontend is asking for a story title or
+for the story body. Cal one of the above methods.</p>
+<p>Here is how the backend code wil look:</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>//! we will use the NextResponse to send the story body import {
+NextResponse } from "next/server"</p>
+<p>//! all the previous logic goes in here</p>
+<p>const makeStoryTitle = async (subject)=&gt; {</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: [ "subject"],</p>
+<p>template: "Tell me a story title about {subject}",</p>
+<p>})</p>
+<p>const chain = prompt.pipe(model)</p>
+<p>return await chain.invoke({subject})</p>
+<p>}</p>
+<p>//! we will later update this to add the streaming const streamStory
+= async (storyTitle)=&gt; {</p>
+<p>No. 40 / 120</p>
+<p><span id="index_split_000.html_p41"></span><img src="index-41_1.png"
+class="calibre2" /></p>
+<p><img src="index-41_2.png" class="calibre2" /></p>
+<p><img src="index-41_3.png" class="calibre2" /></p>
+<p>return new NextResponse(</p>
+<p>JSON.stringify( { data: "And here the story begins..."}</p>
+<p>),</p>
+<p>{ headers: { 'content-type': 'application/json' },</p>
+<p>})</p>
+<p>}</p>
+<p>export async function POST(req) {</p>
+<p>const { subject, storyTitle } = await req.json()</p>
+<p>//! if the request has a storyTitle then return the streamStory()</p>
+<p>if (storyTitle) {</p>
+<p>return streamStory(storyTitle)</p>
+<p>}</p>
+<p>//! if we don't have a storyTitle the return one</p>
+<p>const gptResponse = await makeStoryTitle(subject)</p>
+<p>return Response.json({data: gptResponse.text})</p>
+<p>}</p>
+<p>And this is how the app wil look like at this stage: No. 41 / 120</p>
+<p><span id="index_split_000.html_p42"></span><img src="index-42_1.png"
+class="calibre2" /></p>
+<p><strong>3.3. Streaming the response</strong></p>
+<p><strong></strong></p>
+<p>In some cases, AI models can take several seconds to generate a
+complete response to a prompt. This is slower than the ~200-300 ms
+threshold at which an app feels responsive to the end user.</p>
+<p>To make the app feel more responsive we need to show intermediate
+progress and stream the final output in chunks, yielding each chunk as
+soon as it is available.</p>
+<p>Not al models support streaming, so be sure to check if the model you
+use supports this feature.</p>
+<p>It's time to add the streaming feature to our story generator
+app.</p>
+<p>Note that this wil not be a single request-response interaction. It
+wil be more like an ongoing chat. The frontend wil keep requesting new
+LLM</p>
+<p>response chunks and update the ongoing result, while the backend
+sends back response chunks or indicates when the stream is finished.</p>
+<p>We wil start with the backend. Al the changes wil be made in the
+streamStory() method we have defined during the previous step:</p>
+<p>// code/streaming/src/app/api/route.js</p>
+<p>// the rest remains the same</p>
+<p>No. 42 / 120</p>
+<p><span id="index_split_000.html_p43"></span>// ...</p>
+<p>const streamStory = async (storyTitle)=&gt; {</p>
+<p>const encoder = new TextEncoder()</p>
+<p>const stream = new TransformStream()</p>
+<p>const writer = stream.writable.getWriter()</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9,</p>
+<p>streaming: true,</p>
+<p>callbacks: [{</p>
+<p>handleLLMNewToken: async (token) =&gt; {</p>
+<p>await writer.ready</p>
+<p>await writer.write(encoder.encode(`${token}`))</p>
+<p>},</p>
+<p>handleLLMEnd: async () =&gt; {</p>
+<p>await writer.ready</p>
+<p>await writer.close()</p>
+<p>}</p>
+<p>}]</p>
+<p>})</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: [ "storyTitle" ],</p>
+<p>template: "Tell me story titled {storyTitle}"</p>
+<p>})</p>
+<p>const chain = prompt.pipe(model)</p>
+<p>chain.invoke({storyTitle})</p>
+<p>return new NextResponse(stream.readable, {</p>
+<p>headers: { "Content-Type": "text/event-stream" }</p>
+<p>})</p>
+<p>}</p>
+<p>// the rest remains the same</p>
+<p>// ...</p>
+<p>First, we wil need to create a new chain that generates the story
+body.</p>
+<p>The model instance passed to this chain has two updates: No. 43 /
+120</p>
+<p><span id="index_split_000.html_p44"></span><img src="index-44_1.png"
+class="calibre2" /></p>
+<p><img src="index-44_2.png" class="calibre2" /></p>
+<p><img src="index-44_3.png" class="calibre2" /></p>
+<p>the streaming flag is enabled</p>
+<p>the handleLLMNewToken() and handleLLMEnd() cal backs implemented.</p>
+<p>To keep the communication channel open after the initial request, the
+returned response content type is set to text/event-stream instead of
+the standard application/json .</p>
+<p>Additional y, on the frontend, we wil modify a single method:
+startStoryStream() :</p>
+<p>// code/streaming/src/app/page.js</p>
+<p>// the rest remains the same</p>
+<p>// ...</p>
+<p>const startStoryStream = async ()=&gt; {</p>
+<p>setStoryBody('')</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({ storyTitle })</p>
+<p>})</p>
+<p>//! the reader will act as a data communication "pipe"</p>
+<p>const reader = response.body.getReader()</p>
+<p>const decoder = new TextDecoder()</p>
+<p>//! keep the connection while we keep receiving new response
+chunks</p>
+<p>while (true) {</p>
+<p>const { value, done } = await reader.read()</p>
+<p>if (done) break</p>
+<p>const chunkValue = decoder.decode(value)</p>
+<p>//! the way to append text to a React state string value
+setStoryBody(prev =&gt; prev + chunkValue)</p>
+<p>}</p>
+<p>}</p>
+<p>// the rest remains the same</p>
+<p>// ...</p>
+<p>No. 44 / 120</p>
+<p><span id="index_split_000.html_p45"></span><img src="index-45_1.png"
+class="calibre2" /></p>
+<p>With these final UI changes, we can watch the story unfold as it's
+generated by the LLM:</p>
+<p>If you want to take a more in-depth look at this topic the
+LangChain</p>
+<p><a
+href="https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain">documentation
+has a nice</a> <a
+href="https://js.langchain.com/docs/expression_language/streaming">guide
+about streaming,</a> <a
+href="https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain">including
+this part on how</a></p>
+<p><a
+href="https://js.langchain.com/docs/modules/chains/foundational/llm_chain#cancelling-a-running-llmchain">to
+stop the streaming process if the response is not as you
+intended.</a></p>
+<p>No. 45 / 120</p>
+<p><span id="index_split_000.html_p46"></span><strong>4.
+Output</strong></p>
+<p><strong>parsers</strong></p>
+<p>No. 46 / 120</p>
+<p><span id="index_split_000.html_p47"></span><strong>4.1.
+Introduction</strong></p>
+<p><strong></strong></p>
+<p>Alright, let's dive into the nitty-gritty of output parsers in
+LangChain.</p>
+<p>Why do we need them? Well, when working with LLMs, you wil realize
+the response may not be the same if you ask the same question twice.
+Also, the format of the output can vary as well.</p>
+<p>For example, if we ask for the recipe for a dish, sometimes the LLM
+wil return Ingredients as the first step, sometimes Preparations. This
+is normal as LLMs are generative, not deterministic. This variability
+may be fine for a human reader, but it becomes problematic if we want an
+API endpoint to process those responses.</p>
+<p>And when you change the type of underlying LLM model it wil only get
+worse.</p>
+<p>Think of output parsers as your formatting sidekicks. They can: 1.
+tweak your prompt by adding things such as prefixes or suffixes to steer
+the output in a certain direction. Want a JavaScript array? Want a
+simple string or JSON nested structure? LangChain's output parsers got
+you covered;</p>
+<p>2. after the output is ready, a JavaScript function may step in to
+tidy things up. This function might even use other LLMs to polish the
+output into the perfect format.</p>
+<p>No. 47 / 120</p>
+<p><span id="index_split_000.html_p48"></span><img src="index-48_1.png"
+class="calibre2" /></p>
+<p><strong>4.2. Example setup</strong></p>
+<p><strong></strong></p>
+<p>LangChain has several pre-defined output parsers that can be used
+directly.</p>
+<p>We wil use some of them in the following example.</p>
+<p>You were tasked with making a trivia game using ChatGPT. The user wil
+ask for a trivia question with four possible answers. Only one of these
+answers is correct. Once a possible answer is clicked, a popup
+indicating whether the answer is correct or incorrect wil be displayed.
+At any time, the user wil be able to ask for a new question.</p>
+<p>This is how the final version of the app wil look: We wil start from
+a very simple state.</p>
+<p>On the backend, we wil make an OpenAI model and ask it for a trivia
+question:</p>
+<p>// code/trivia-game/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>})</p>
+<p>No. 48 / 120</p>
+<p><span id="index_split_000.html_p49"></span>const prompt =
+PromptTemplate.fromTemplate(</p>
+<p>Àsk me a trivia question about geography.`</p>
+<p>)</p>
+<p>const chain = prompt.pipe(model)</p>
+<p>export async function GET() {</p>
+<p>const gptResponse = await chain.invoke()</p>
+<p>return Response.json({question: gptResponse.text})</p>
+<p>}</p>
+<p>Notice that this time we are using a GET request since we don't need
+to send any request body. We just need to get a question back.</p>
+<p>On the frontend, we have a simple button that makes the cal to the
+backend. Using a React state variable, the question is displayed once we
+get the response:</p>
+<p>// code/trivia-game/src/app/page.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY</p>
+<p>})</p>
+<p>const prompt = PromptTemplate.fromTemplate(</p>
+<p>Àsk me a trivia question about geography.`</p>
+<p>)</p>
+<p>const chain = new prompt.pipe(model)</p>
+<p>export async function GET() {</p>
+<p>const gptResponse = await chain.invoke()</p>
+<p>return Response.json({question: gptResponse.text})</p>
+<p>}</p>
+<p>No. 49 / 120</p>
+<p><span id="index_split_000.html_p50"></span><img src="index-50_1.png"
+class="calibre2" /></p>
+<p>This is how the project wil look in its first phase.</p>
+<p>No. 50 / 120</p>
+<p><span id="index_split_000.html_p51"></span><img src="index-51_1.png"
+class="calibre2" /></p>
+<p><strong>4.3. StringOutputParser</strong></p>
+<p><strong></strong></p>
+<p>The output parsers from LangChain.js are meant to convert the AI
+responses into common structures, like JSON, Arrays, String, and
+more.</p>
+<p>The <a
+href="https://js.langchain.com/docs/modules/model_io/output_parsers/types/string">StringOutputParser</a>
+takes the model's output and converts it into a simple string. This one
+is maybe the easiest-to-use parser.</p>
+<p>Let's take a look at what an actual response from a ChatGPT cal looks
+like: const prompt = PromptTemplate.fromTemplate(</p>
+<p>Àsk me a trivia question about geography.`</p>
+<p>)</p>
+<p>const chain = prompt.pipe(model)</p>
+<p>const gptResponse = await chain.invoke()</p>
+<p>console.log(gptResponse)</p>
+<p>If we print the gptResponse constant, it wil look like this: This is
+the structure that comes from a ChatGPT model without any added output
+parsers.</p>
+<p>However, if we use another type of model, such as Llama (made by
+Meta) or Claude (made by Anthropic), the structure can be different.
+Each model may provide the answer wrapped in a different structure.</p>
+<p>This means the line that extracts the final string response may fail
+because the text property might not exist:</p>
+<p>No. 51 / 120</p>
+<p><span id="index_split_000.html_p52"></span><img src="index-52_1.png"
+class="calibre2" /></p>
+<p><img src="index-52_2.png" class="calibre2" /></p>
+<p><img src="index-52_3.png" class="calibre2" /></p>
+<p><img src="index-52_4.png" class="calibre2" /></p>
+<p><img src="index-52_5.png" class="calibre2" /></p>
+<p>question: gptResponse.text</p>
+<p>In the end, we need just a simple string containing the question.</p>
+<p>This is where the StringOutputParser comes into play. You can add the
+parser to the chain, and it wil ensure the various response types from
+different LLMs are transformed into a simple string.</p>
+<p>Let's see how this looks in the code:</p>
+<p>// code/trivia-game/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>//! importing the parser</p>
+<p>import { StringOutputParser} from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY</p>
+<p>})</p>
+<p>//! making the prompt and invoking the chain</p>
+<p>const makeQuestion = async ()=&gt; {</p>
+<p>const prompt = PromptTemplate.fromTemplate(</p>
+<p>Àsk me a trivia question about geography.`</p>
+<p>)</p>
+<p>//! adding the parser to the LCEL chain so that we get</p>
+<p>//! just a simple string output instead of an object const chain =
+prompt</p>
+<p>.pipe(model)</p>
+<p>.pipe(new StringOutputParser())</p>
+<p>return await chain.invoke()</p>
+<p>}</p>
+<p>export async function GET() {</p>
+<p>//! extracted the make question part into its method const question =
+await makeQuestion()</p>
+<p>No. 52 / 120</p>
+<p><span id="index_split_000.html_p53"></span> return
+Response.json({question})</p>
+<p>}</p>
+<p>Remember that in a chain, we can set up multiple consecutive
+operations, including output parsers.</p>
+<p>Notice that after we add an output parser to the chain, we don't need
+to manual y parse the .text property:</p>
+<p>// before using the parser</p>
+<p>return Response.json({question: gptResponse.text})</p>
+<p>// after adding the output parser to the chain</p>
+<p>return Response.json({question})</p>
+<p>This wil work even if we change the model type.</p>
+<p>Next, let's see how we can use another type of parser to create an
+array of responses.</p>
+<p>No. 53 / 120</p>
+<p><span id="index_split_000.html_p54"></span><strong>4.4.
+CommaSeparatedListOutputParser</strong> There are cases where we need to
+get multiple items from the response of an LLM.</p>
+<p>Let's ask ChatGPT to also help us with some possible answers for the
+trivia question. This is how the prompt wil look:</p>
+<p>`Give 4 possible answers for {question}, separated by commas, 3 false
+and 1 correct, in a random order.`</p>
+<p>Without any output parsers, the standard response from ChatGPT wil
+look like this:</p>
+<p>AIMessage {</p>
+<p>lc_serializable: true,</p>
+<p>lc_kwargs: {</p>
+<p>content: 'North America, Africa, Australia, Asia',</p>
+<p>additional_kwargs: { function_call: undefined, tool_calls: undefined
+},</p>
+<p>response_metadata: {}</p>
+<p>},</p>
+<p>lc_namespace: [ 'langchain_core', 'messages' ],</p>
+<p>content: 'North America, Africa, Australia, Asia',</p>
+<p>name: undefined,</p>
+<p>additional_kwargs: { function_call: undefined, tool_calls: undefined
+},</p>
+<p>response_metadata: {</p>
+<p>tokenUsage: { completionTokens: 8, promptTokens: 47, totalTokens: 55
+},</p>
+<p>finish_reason: 'stop'</p>
+<p>}</p>
+<p>}</p>
+<p>A long, complex JavaScript object that we wil need to manual y
+parse.</p>
+<p>By the way, we wil go into more detail about the AIMessage class
+during the chat memory chapter.</p>
+<p>No. 54 / 120</p>
+<p><span id="index_split_000.html_p55"></span><img src="index-55_1.png"
+class="calibre2" /></p>
+<p><img src="index-55_2.png" class="calibre2" /></p>
+<p><img src="index-55_3.png" class="calibre2" /></p>
+<p>For situations like these, LangChain can help us with the</p>
+<p><a
+href="https://api.js.langchain.com/classes/langchain_core_output_parsers.CommaSeparatedListOutputParser.html">CommaSeparatedListOutputParser</a>.</p>
+<p>The CommaSeparatedListOutputParser takes a complex answer given by an
+LLM and reformats it as a standard array of strings. For example, the
+AIMessage from the above example wil become:</p>
+<p>[</p>
+<p>'North America',</p>
+<p>'Africa',</p>
+<p>'Australia',</p>
+<p>'Asia'</p>
+<p>]</p>
+<p>Much, much cleaner!</p>
+<p>Let's see how our backend code wil look after we add this
+CommaSeparatedListOutputParser to handle the possible answers for the
+question:</p>
+<p>// code/trivia-game/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { StringOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>//! import the CommaSeparatedListOutputParser</p>
+<p>import { CommaSeparatedListOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>//! increase the model temperature</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>//! ask the model for possible answers</p>
+<p>const makePossibileAnswers = async (question) =&gt; {</p>
+<p>No. 55 / 120</p>
+<p><span id="index_split_000.html_p56"></span><img src="index-56_1.png"
+class="calibre2" /></p>
+<p><img src="index-56_2.png" class="calibre2" /></p>
+<p>const prompt = PromptTemplate.fromTemplate(</p>
+<p>`Give 4 possible answers for {question}, separated by commas,</p>
+<p>3 false and 1 correct, in a random order.`</p>
+<p>)</p>
+<p>//! apply the CommaSeparatedListOutputParser to the chain const chain
+= prompt</p>
+<p>.pipe(model)</p>
+<p>.pipe(new CommaSeparatedListOutputParser())</p>
+<p>return await chain.invoke({question: question})</p>
+<p>}</p>
+<p>const makeQuestion = async ()=&gt; {</p>
+<p>const prompt = PromptTemplate.fromTemplate(</p>
+<p>Àsk me a trivia question about geography.`</p>
+<p>)</p>
+<p>const chain = prompt</p>
+<p>.pipe(model)</p>
+<p>.pipe(new StringOutputParser())</p>
+<p>return await chain.invoke()</p>
+<p>}</p>
+<p>export async function GET() {</p>
+<p>const question = await makeQuestion()</p>
+<p>//! once we have the question fetch some possible answers const
+answers = await</p>
+<p>makePossibileAnswersmakePossibileAnswers(question)</p>
+<p>return Response.json({question, answers})</p>
+<p>}</p>
+<p>Note that we have increased the temperature of the model, given that
+it wil need to be creative when generating the possible answers.</p>
+<p>While you may be tempted to use the <a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">JavaScript
+string split()</a> method, think again! What wil happen if we change the
+LLM and the structure of the response changes? This is why LangChain is
+so powerful! It standardizes the way we interact with AI models.</p>
+<p>No. 56 / 120</p>
+<p><span id="index_split_000.html_p57"></span><img src="index-57_1.png"
+class="calibre2" /></p>
+<p><img src="index-57_2.png" class="calibre2" /></p>
+<p><img src="index-57_3.png" class="calibre2" /></p>
+<p><img src="index-57_4.png" class="calibre2" /></p>
+<p>At this point, we are using two output parsers:</p>
+<p>the StringOutputParser for the main trivia question the
+CommaSeparatedListOutputParser to parse the list of possible answers</p>
+<p>On the frontend, we wil read the possible answers and display them as
+buttons:</p>
+<p>// code/trivia-game/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [question, setQuestion] = useState()</p>
+<p>//! adding an empty array state variable to store the answers</p>
+<p>const [answers, setAnswers] = useState([])</p>
+<p>const getTriviaQuestion = async ()=&gt; {</p>
+<p>const response = await fetch('api')</p>
+<p>const data = await response.json()</p>
+<p>console.log(data)</p>
+<p>setQuestion(data.question)</p>
+<p>//! once we have the answers update the state</p>
+<p>setAnswers(data.answers)</p>
+<p>}</p>
+<p>return (&lt;&gt;</p>
+<p>&lt;h1&gt;' Geography trivia&lt;/h1&gt;</p>
+<p>&lt;button onClick={getTriviaQuestion}&gt;</p>
+<p>Ask me a geography question</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;p&gt;{question}&lt;/p&gt;</p>
+<p>{/*! loop through and display each answer as a button */}</p>
+<p>{answers.map((answ, i) =&gt;</p>
+<p>&lt;button key={i}&gt;</p>
+<p>No. 57 / 120</p>
+<p><span id="index_split_000.html_p58"></span><img src="index-58_1.png"
+class="calibre2" /></p>
+<p>{answ}</p>
+<p>&lt;/button&gt;</p>
+<p>)}</p>
+<p>&lt;/&gt;)</p>
+<p>}</p>
+<p>This is how the UI of the app wil look at this stage: By the way, if
+the list is not separated by a comma character you can use the</p>
+<p><a
+href="https://js.langchain.com/docs/modules/model_io/output_parsers/types/custom_list_parser">CustomListOutputParser</a>.</p>
+<p>A fun extra project wil be to add memory to this app so that it wil
+not repeat its questions. We wil see in the next chapters how to use the
+chat memory features of LangChain.</p>
+<p>The next step wil be to determine if the user clicked the correct
+answer.</p>
+<p>No. 58 / 120</p>
+<p><span id="index_split_000.html_p59"></span><img src="index-59_1.png"
+class="calibre2" /></p>
+<p><strong>4.5. The getFormatInstructions()</strong></p>
+<p><strong></strong></p>
+<p><strong>method and custom parsers</strong></p>
+<p>Before we continue, let's make a short detour to talk about the
+getFormatInstructions() method and how output parsers work under the
+hood.</p>
+<p>There are many output parsers in LangChain. The documentation
+provides</p>
+<p><a
+href="https://js.langchain.com/docs/modules/model_io/output_parsers/types">this
+table</a> to summarize the main types: Al of these parsers have the
+getFormatInstructions() method in common.</p>
+<p>Let's create a CommaSeparatedListOutputParser and cal this method:
+const parser = new CommaSeparatedListOutputParser()
+console.log(parser.getFormatInstructions())</p>
+<p>// PRINTS:</p>
+<p>// the result will be just a simple string:</p>
+<p>// Your response should be a list of comma separated values, eg:</p>
+<p>`foo, bar, baz`</p>
+<p>Basical y, this is just an extra part we can add to the prompt.</p>
+<p>No. 59 / 120</p>
+<p><span id="index_split_000.html_p60"></span><img src="index-60_1.png"
+class="calibre2" /></p>
+<p>For example, we can just make a RunnableSequence and pass in the
+result of the getFormatInstructions() method:</p>
+<p>const commaListOutputParser = new</p>
+<p>CommaSeparatedListOutputParser()</p>
+<p>const chain = RunnableSequence.from([</p>
+<p>PromptTemplate.fromTemplate(`Give me 3</p>
+<p>{topic}.\n{formatInstructions}`),</p>
+<p>new OpenAI({}),</p>
+<p>parser,</p>
+<p>])</p>
+<p>return await chain.invoke({</p>
+<p>topic: 'car brands',</p>
+<p>formatInstructions:</p>
+<p>commaListOutputParser.getFormatInstructions()</p>
+<p>})</p>
+<p>If we print commaListOutputParser.getFormatInstructions() we wil get
+the following:</p>
+<p>Your response should be a list of comma separated values, eg:</p>
+<p>`foo, bar, bazÌt's kind of funny if we think about it. We are using
+an LLM to parse the output of . . an LLM ( .</p>
+<p>This wil do the same as adding the parser directly to the chain, and
+wil output something similar to this:</p>
+<p>[</p>
+<p>'Audi',</p>
+<p>'Ford',</p>
+<p>'Doge'</p>
+<p>]</p>
+<p>No. 60 / 120</p>
+<p><span id="index_split_000.html_p61"></span>We can even make our own
+custom output parsers. Documentation link</p>
+<p><a
+href="https://js.langchain.com/docs/modules/model_io/output_parsers/quick_start">here</a>.</p>
+<p>There are two main methods an output parser must implement:
+getFormatInstructions() returns a string containing instructions for how
+the output of a language model should be formatted. You can inject this
+into your prompt if necessary.</p>
+<p>parse() : takes in a string (assumed to be the response from a
+language model) and parses it into a specific structure.</p>
+<p>No. 61 / 120</p>
+<p><span id="index_split_000.html_p62"></span><strong>4.6.
+StructuredOutputParser</strong></p>
+<p><strong></strong></p>
+<p>Large Language Models like to have structure! Their output is much
+more accurate when we define a clear expected structure for both the
+input and the output. More info about this <a
+href="https://www.youtube.com/watch?v=gsO5V30h-lU">here</a>.</p>
+<p>While CommaSeparatedListOutputParser or StringOutputParser are great
+tools for simpler direct responses, when we have to deal with more
+complex outputs, we wil need other types of parsers such as <a
+href="https://api.js.langchain.com/classes/langchain_output_parsers.StructuredOutputParser.html">StructuredOutputParser</a></p>
+<p>or <a
+href="https://api.js.langchain.com/classes/langchain_core_output_parsers.JsonOutputParser.html">JsonOutputParser.</a></p>
+<p>For our smal trivia app, a big improvement wil be to receive the
+output in the following format:</p>
+<p>{</p>
+<p>question: 'question text here',</p>
+<p>answers: [</p>
+<p>'foo',</p>
+<p>'bar',</p>
+<p>'qux',</p>
+<p>'baz',</p>
+<p>],</p>
+<p>correct: 2 // 'qux' is correct</p>
+<p>}</p>
+<p>To achieve this, we wil use a StructuredOutputParser with a Zod
+schema.</p>
+<p>The reason for this is that StructuredOutputParser is more versatile
+and covers more use cases than the JsonOutputParser .</p>
+<p><a href="https://zod.dev/">Zod</a> is a schema validation library for
+defining complex data structures.</p>
+<p>Let's see how adding a StructuredOutputParser wil change our backend
+code:</p>
+<p>// code/trivia-game/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>No. 62 / 120</p>
+<p><span id="index_split_000.html_p63"></span><img src="index-63_1.png"
+class="calibre2" /></p>
+<p><img src="index-63_2.png" class="calibre2" /></p>
+<p><img src="index-63_3.png" class="calibre2" /></p>
+<p><img src="index-63_4.png" class="calibre2" /></p>
+<p><img src="index-63_5.png" class="calibre2" /></p>
+<p><img src="index-63_6.png" class="calibre2" /></p>
+<p>//! remove imports of StringOutputParser &amp;</p>
+<p>CommaSeparatedListOutputParser</p>
+<p>//! we will need this one to build a new chain structure import {
+RunnableSequence } from "@langchain/core/runnables"</p>
+<p>//! adding the StructuredOutputParser to replace the other
+parsers</p>
+<p>import { StructuredOutputParser } from</p>
+<p>"langchain/output_parsers"</p>
+<p>//! we will use the Zod schema to define the types of returned
+data</p>
+<p>import { z } from "zod"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9</p>
+<p>})</p>
+<p>//! Zod is used to define if a field is a string, number, array
+etc</p>
+<p>const parser = StructuredOutputParser.fromZodSchema(</p>
+<p>z.object({</p>
+<p>question: z.string().describe(</p>
+<p>`tell me a random geography trivia question`</p>
+<p>),</p>
+<p>answers: z</p>
+<p>.array(z.string())</p>
+<p>.describe(`</p>
+<p>give 4 possible answers, in a random order,</p>
+<p>out of which only one is true.`</p>
+<p>),</p>
+<p>correctIndex: z.number().describe(</p>
+<p>`the number of the correct answer, zero indexed`</p>
+<p>),</p>
+<p>})</p>
+<p>)</p>
+<p>//! define a new chain with RunnableSequence</p>
+<p>const chain = RunnableSequence.from([</p>
+<p>No. 63 / 120</p>
+<p><span id="index_split_000.html_p64"></span><img src="index-64_1.png"
+class="calibre2" /></p>
+<p><img src="index-64_2.png" class="calibre2" /></p>
+<p><img src="index-64_3.png" class="calibre2" /></p>
+<p><img src="index-64_4.png" class="calibre2" /></p>
+<p>PromptTemplate.fromTemplate(</p>
+<p>Ànswer the user question as best as possible.\n</p>
+<p>{format_instructions}`</p>
+<p>),</p>
+<p>model,</p>
+<p>parser,</p>
+<p>])</p>
+<p>//! using the StructuredOutputParser we can now wrap all the</p>
+<p>//! data into one single structure</p>
+<p>const makeQuestionAndAnswers = async () =&gt; {</p>
+<p>//! returning a JSON the defined structure</p>
+<p>return await chain.invoke({</p>
+<p>format_instructions: parser.getFormatInstructions(),</p>
+<p>})</p>
+<p>}</p>
+<p>export async function GET() {</p>
+<p>//! makeQuestion() &amp; makePossbileAnswers() are merged in one
+function</p>
+<p>const data = await makeQuestionAndAnswers()</p>
+<p>return Response.json({data})</p>
+<p>}</p>
+<p>Even though it looks like we have made a lot of changes, if we remove
+the new line comments, you wil notice that our code is simpler now.</p>
+<p>From the LLM, we are returning a single JSON structure that contains
+al the info our app needs.</p>
+<p>Also, the makeQuestion() and makePossibleAnswers() methods are now
+merged into a single cal , making the app a bit faster.</p>
+<p>With these changes added, we can now indicate if the user clicked a
+correct or incorrect answer.</p>
+<p>Let's see the changes in the frontend:</p>
+<p>// code/trivia-game/src/app/page.js</p>
+<p>No. 64 / 120</p>
+<p><span id="index_split_000.html_p65"></span><img src="index-65_1.png"
+class="calibre2" /></p>
+<p><img src="index-65_2.png" class="calibre2" /></p>
+<p><img src="index-65_3.png" class="calibre2" /></p>
+<p><img src="index-65_4.png" class="calibre2" /></p>
+<p><img src="index-65_5.png" class="calibre2" /></p>
+<p><img src="index-65_6.png" class="calibre2" /></p>
+<p><img src="index-65_7.png" class="calibre2" /></p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [question, setQuestion] = useState()</p>
+<p>const [answers, setAnswers] = useState([])</p>
+<p>//! adding a third state var to store the correct answer const
+[correctIndex, setCorrectIndex] = useState()</p>
+<p>const getTriviaQuestion = async ()=&gt; {</p>
+<p>const response = await fetch('api')</p>
+<p>const { data } = await response.json()</p>
+<p>setQuestion(data.question)</p>
+<p>setAnswers(data.answers)</p>
+<p>//! once we have the correct answer index update the state
+setCorrectIndex(data.correctIndex)</p>
+<p>}</p>
+<p>//! use the correct answer index to see if the right answer was
+picked</p>
+<p>const checkAnswer = async (selectedIndex) =&gt; {</p>
+<p>(correctIndex === selectedIndex) ?</p>
+<p>alert(') Correct!'):</p>
+<p>alert('( Try again!')</p>
+<p>}</p>
+<p>return (&lt;&gt;</p>
+<p>&lt;h1&gt;' Geography trivia&lt;/h1&gt;</p>
+<p>&lt;button onClick={getTriviaQuestion}&gt;</p>
+<p>Ask me a geography question</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;p&gt;{question}&lt;/p&gt;</p>
+<p>{/*! onClick check if the user answered correctly */}</p>
+<p>{answers.map((answ, i) =&gt;</p>
+<p>&lt;button key={i}</p>
+<p>onClick={() =&gt; checkAnswer(i)}&gt;</p>
+<p>{answ}</p>
+<p>No. 65 / 120</p>
+<p><span id="index_split_000.html_p66"></span><img src="index-66_1.png"
+class="calibre2" /></p>
+<p><img src="index-66_2.png" class="calibre2" /></p>
+<p>&lt;/button&gt;</p>
+<p>)}</p>
+<p>&lt;/&gt;)</p>
+<p>}</p>
+<p>Nothing too special here. We have added a click listener to each
+answer button and we wil check if the index of that clicked button
+matches the index of the correct answer.</p>
+<p>And this is how the final version of the UI wil look like: Note that
+even if newer models such as ChatGpt 4 can do part of this data
+manipulation out of the box, they are more expensive to use. Therefore
+we can leverage output parsers to save costs and also define a very
+clear output format, thus reducing unexpected behavior.</p>
+<p>Our final app is just a bit over 80 lines of code. Both backend and
+frontend.</p>
+<p>We're talking about a ful y functional trivia game with an endless
+stream of questions. Plus, it's super flexible and a breeze to tweak.
+One more testament to how much power the new capabilities of LLMs
+provide us as web developers. Cool stuff * !</p>
+<p>No. 66 / 120</p>
+<p><span id="index_split_000.html_p67"></span><strong>5.
+Chat</strong></p>
+<p><strong></strong></p>
+<p><strong>memory</strong></p>
+<p>No. 67 / 120</p>
+<p><span id="index_split_000.html_p68"></span><strong>5.1. Introduction
+and project setup</strong></p>
+<p><strong></strong></p>
+<p>The chat memory feature al ows a Large Language Model (LLM) to
+remember previous interactions with the user.</p>
+<p>Conversational memory is how a chatbot can respond to multiple
+queries in a chat-like manner. Without it, every query would be treated
+as a single independent input without considering past interactions.</p>
+<p>Follow-up questions only make sense when they reference the previous
+questions and answers. For example, if I just say to an LLM Explain in
+detail it wil ask for more context. But if I first tell the same LLM How
+the speed of light was calculated followed by Explain in detail I wil
+get a coherent answer.</p>
+<p>By default, LLMs are stateless. Each incoming query is processed
+independently of other interactions. The only thing that exists for a
+stateless entity is the current input and nothing else.</p>
+<p>You are working with a tea shop and have been tasked to make a
+GPT-powered app that provides users with interesting facts about tea.
+Below is a picture of what the final version of the app should look
+like: No. 68 / 120</p>
+<p><span id="index_split_000.html_p69"></span><img src="index-69_1.png"
+class="calibre2" /></p>
+<p>We wil start with the following setup.</p>
+<p>On the frontend, we have a button that makes a POST request to the
+API and prints out the answer:</p>
+<p>// code/tea-wiki/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [answer, setAnswer] = useState()</p>
+<p>const tellFact = async ()=&gt; {</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST"</p>
+<p>})</p>
+<p>const { data } = await response.json()</p>
+<p>setAnswer(data)</p>
+<p>}</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>No. 69 / 120</p>
+<p><span id="index_split_000.html_p70"></span><img src="index-70_1.png"
+class="calibre2" /></p>
+<p>&lt;h1&gt;+ Tea Facts&lt;/h1&gt;</p>
+<p>&lt;button onClick={tellFact}&gt;</p>
+<p>Tell a fact about my favourite drink</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;div&gt;{answer}&lt;/div&gt;</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>While on the backend, we return the answer given by a GPT model to
+the prompt Tell me a fact about my favorite drink :</p>
+<p>// code/tea-wiki/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { StringOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9,</p>
+<p>})</p>
+<p>const prompt = ChatPromptTemplate.fromMessages([</p>
+<p>["human", "{input}"]</p>
+<p>])</p>
+<p>const outputParser = new StringOutputParser()</p>
+<p>const chain = prompt.pipe(model).pipe(outputParser) export async
+function POST() {</p>
+<p>const question = `Tell me a fact about my favorite drink.`</p>
+<p>const fact = await chain.invoke({</p>
+<p>input: question,</p>
+<p>})</p>
+<p>return Response.json({data: fact})</p>
+<p>}</p>
+<p>No. 70 / 120</p>
+<p><span id="index_split_000.html_p71"></span><img src="index-71_1.png"
+class="calibre2" /></p>
+<p><img src="index-71_2.png" class="calibre2" /></p>
+<p><strong>5.2. Injecting messages into the</strong></p>
+<p><strong></strong></p>
+<p><strong>conversation memory</strong></p>
+<p>Right from the gecko it's clear that we have a problem: When invoking
+a chain we can use the chat_history property to set up a memory context
+for the conversation at hand.</p>
+<p>Let's see how we can do this!</p>
+<p>Below is the updated code for the backend:</p>
+<p>// code/tea-wiki/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { StringOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>//! add the HumanMessage, and MessagesPlaceholder imports import {
+HumanMessage } from "@langchain/core/messages"</p>
+<p>import { MessagesPlaceholder } from "@langchain/core/prompts"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9,</p>
+<p>})</p>
+<p>No. 71 / 120</p>
+<p><span id="index_split_000.html_p72"></span><img src="index-72_1.png"
+class="calibre2" /></p>
+<p><img src="index-72_2.png" class="calibre2" /></p>
+<p><img src="index-72_3.png" class="calibre2" /></p>
+<p>//! the initial conversation memory context</p>
+<p>const chatHistory = [</p>
+<p>new HumanMessage(`My favorite drink is tea.`)</p>
+<p>]</p>
+<p>const prompt = ChatPromptTemplate.fromMessages([</p>
+<p>//! we need to tell to the promt that it will have a memory new
+MessagesPlaceholder("chat_history"),</p>
+<p>["human", "{input}"]</p>
+<p>])</p>
+<p>const outputParser = new StringOutputParser()</p>
+<p>const chain = prompt.pipe(model).pipe(outputParser) export async
+function POST() {</p>
+<p>const question = `Tell me a fact about my favorite drink.`</p>
+<p>const fact = await chain.invoke({</p>
+<p>input: question,</p>
+<p>//! link the chatHistory array with the prompt</p>
+<p>chat_history: chatHistory</p>
+<p>})</p>
+<p>return Response.json({data: fact})</p>
+<p>}</p>
+<p>The key here is the MessagesPlaceholder object. We can set up
+different message placeholders for a prompt.</p>
+<p>For example, we can use the agent scratchpad message placeholders to
+store the "thoughts" of an AI agent. Don't worry, we wil talk more about
+AI agents in the next chapters.</p>
+<p>In this case, we wil use the MessagesPlaceholder with a chat_history
+to indicate to the prompt that it's not stateless and has a previous
+history.</p>
+<p>No. 72 / 120</p>
+<p><span id="index_split_000.html_p73"></span><img src="index-73_1.png"
+class="calibre2" /></p>
+<p><img src="index-73_2.png" class="calibre2" /></p>
+<p><img src="index-73_3.png" class="calibre2" /></p>
+<p>The chatHistory is just a simple array where we can store the
+conversation history with HumanMessage and AIMessage objects. In the
+end, the content of these objects is made of just simple strings with
+some extra formatting.</p>
+<p>With these changes, the model wil now know that our favorite drink is
+tea: Great! One step forward!</p>
+<p>However, we now face another issue. Let's see what happens after we
+request multiple facts.</p>
+<p>To implement storing the previous facts we only change the frontend.
+We wil track and show al the previous responses given by the model:</p>
+<p>// code/tea-wiki/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>//! replace the answer with an array of facts</p>
+<p>const [facts, setFacts] = useState([])</p>
+<p>const tellFact = async ()=&gt; {</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST"</p>
+<p>})</p>
+<p>const { data } = await response.json()</p>
+<p>//! add the new fact to the array</p>
+<p>setFacts([data, ...facts])</p>
+<p>}</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>No. 73 / 120</p>
+<p><span id="index_split_000.html_p74"></span><img src="index-74_1.png"
+class="calibre2" /></p>
+<p><img src="index-74_2.png" class="calibre2" /></p>
+<p><img src="index-74_3.png" class="calibre2" /></p>
+<p>&lt;h1&gt;+ Tea Facts&lt;/h1&gt;</p>
+<p>&lt;button onClick={tellFact}&gt;</p>
+<p>Tell a fact about my favorite drink</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;ul&gt;</p>
+<p>{</p>
+<p>//! display the array</p>
+<p>facts.map( (fact,i) =&gt; &lt;li key={i}&gt;{fact}&lt;/li&gt;)</p>
+<p>}</p>
+<p>&lt;/ul&gt;</p>
+<p>&lt;/&gt;</p>
+<p>)</p>
+<p>}</p>
+<p>The model keeps giving back the same old few facts, like an old
+grandpa who keeps repeating the same stories over and over again.</p>
+<p>We can try to update the prompt, but it wil not help: No. 74 /
+120</p>
+<p><span id="index_split_000.html_p75"></span><img src="index-75_1.png"
+class="calibre2" /></p>
+<p>//! changing the promt will not fix the duplication const response =
+await chain.invoke({</p>
+<p>input: `Tell me a fact about my favorite drink.</p>
+<p>Do not repeat any of the previous facts.`,</p>
+<p>chat_history: chatHistory</p>
+<p>})</p>
+<p>Remember that the LLMs are stateless — meaning each incoming query is
+processed independently of other interactions. For a stateless model,
+the only thing that exists is the current input. Nothing else.</p>
+<p>This happens because we only provided the initial message ( My
+favorite drink is tea. ). We also need to update the message history as
+the conversation evolves.</p>
+<p>No. 75 / 120</p>
+<p><span id="index_split_000.html_p76"></span><strong>5.3. Full
+conversation history</strong></p>
+<p><strong></strong></p>
+<p>If you take a look at how we store the conversation history, it's
+just a plain JavaScript array.</p>
+<p>const chatHistory = [</p>
+<p>new HumanMessage(`My favorite drink is tea.`)</p>
+<p>]</p>
+<p>This means that we can easily add messages by pushing new items to
+the array:</p>
+<p>messages from the user side, represented with the HumanMessage class
+and responses given by the AI, represented by the AIMessage class As we
+receive more facts from the model, the conversation wil look something
+like this:</p>
+<p>[</p>
+<p>// starting state</p>
+<p>new HumanMessage(`My favorite drink is tea.`),</p>
+<p>// user clicks the button</p>
+<p>new HumanMessage(`Tell me a fact about my favorite drink. Do not
+repeat any of the previous facts.`),</p>
+<p>// the LLM replies</p>
+<p>new AIMessage(Ìs the second most consumed beverage in the world,
+after water...`),</p>
+<p>// user clicks again the button</p>
+<p>new HumanMessage(`Tell me a fact about my favorite drink. Do not
+repeat any of the previous facts.`),</p>
+<p>// the LLM replies with another fact</p>
+<p>new AIMessage(Ìs the second most consumed beverage in the world,
+after water...`),</p>
+<p>// and so on</p>
+<p>// ...</p>
+<p>// ...</p>
+<p>]</p>
+<p>No. 76 / 120</p>
+<p><span id="index_split_000.html_p77"></span><img src="index-77_1.png"
+class="calibre2" /></p>
+<p><img src="index-77_2.png" class="calibre2" /></p>
+<p>For this step, there wil be no changes to the frontend.</p>
+<p>Here is how the ful code of the backend wil look: import { ChatOpenAI
+} from "@langchain/openai"</p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { StringOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>//! import the AIMessage class to store the responses given by the
+LLM</p>
+<p>import { HumanMessage, AIMessage } from</p>
+<p>"@langchain/core/messages"</p>
+<p>import { MessagesPlaceholder } from "@langchain/core/prompts"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0.9,</p>
+<p>})</p>
+<p>const chatHistory = [</p>
+<p>new HumanMessage(`My favorite drink is tea.`)</p>
+<p>]</p>
+<p>const prompt = ChatPromptTemplate.fromMessages([</p>
+<p>new MessagesPlaceholder("chat_history"),</p>
+<p>["human", "{input}"]</p>
+<p>])</p>
+<p>const outputParser = new StringOutputParser()</p>
+<p>const chain = prompt.pipe(model).pipe(outputParser) export async
+function POST() {</p>
+<p>//! update the prompt</p>
+<p>const question = `Tell me a fact about my favorite drink.</p>
+<p>Do not repeat any of the previous</p>
+<p>facts.`</p>
+<p>No. 77 / 120</p>
+<p><span id="index_split_000.html_p78"></span><img src="index-78_1.png"
+class="calibre2" /></p>
+<p><img src="index-78_2.png" class="calibre2" /></p>
+<p><img src="index-78_3.png" class="calibre2" /></p>
+<p>//! add in the chat history the conversations sent by the user</p>
+<p>chatHistory.push(new HumanMessage(question))</p>
+<p>const fact = await chain.invoke({</p>
+<p>input: question,</p>
+<p>chat_history: chatHistory</p>
+<p>})</p>
+<p>//! store each fact so that the LLM knows what not to repeat</p>
+<p>chatHistory.push(new AIMessage(fact))</p>
+<p>return Response.json({data: fact})</p>
+<p>}</p>
+<p>Each time a new question comes from the user, we wil push it wrapped
+in a HumanMessage object.</p>
+<p>More importantly, we wil push each fact about tea in an AIMessage
+object.</p>
+<p>This wil al ow the LLM to avoid repeating itself.</p>
+<p>And this is how the final version of our app wil look at the end: No
+more repetition here, thanks to the updated version of the conversation
+history.</p>
+<p>No. 78 / 120</p>
+<p><span id="index_split_000.html_p79"></span><img src="index-79_1.png"
+class="calibre2" /></p>
+<p>As a final thought keep in mind that we can use a sessionId
+configuration parameter in the invoke() method to manage multiple
+conversation threads on different topics:</p>
+<p>{</p>
+<p>configurable: {</p>
+<p>sessionId: "id_value_here"</p>
+<p>}</p>
+<p>}</p>
+<p>The way how the OpenAI ChatGPT web app does it:</p>
+<p>You can read more details about this here:</p>
+<p><a
+href="https://js.langchain.com/docs/use_cases/chatbots/memory_management/">https://js.langchain.com/docs/use_cases/chatbots/memory_management/</a></p>
+<p>No. 79 / 120</p>
+<p><span id="index_split_000.html_p80"></span><strong>6. RAG
+/</strong></p>
+<p><strong></strong></p>
+<p><strong>Chating with</strong></p>
+<p><strong>documents</strong></p>
+<p>No. 80 / 120</p>
+<p><span id="index_split_000.html_p81"></span><strong>6.1.
+Introduction</strong></p>
+<p><strong></strong></p>
+<p>Let's talk about a very important topic in working with LLMs: RAG,
+which stands for Retrieval Augmented Generation.</p>
+<p>RAG is the process of optimizing the output of an LLM by referencing
+a knowledge base outside of its training data sources.</p>
+<p>For example, the knowledge cutoff date for ChatGPT 3.5 Turbo is
+September 2021. This means that, without external help, the model wil
+not know what happened after this date.</p>
+<p>But what if we need to work with information about LangSmith, a tool
+developed by the same company as LangChain? This new tool was released
+in 2023, after the knowledge cutoff date.</p>
+<p>Or what if we need to make a chatbot that references some internal
+documents of an organization to provide customer support?</p>
+<p>This is where RAG comes in. Using RAG you can connect external data
+sources like CSV files, videos, PDFs, etc. to an LLM and provide
+external context.</p>
+<p>A few considerations about RAG:</p>
+<p>RAG does not retrain the model. It does not update the weights of the
+neuronal network. It just provides more information for the model to
+reference.</p>
+<p>in the next chapter, we wil talk about AI Agents. Although AI Agents
+can search for external info, they are slower, more expensive, and can
+provide unreliable outputs. AI Agents are good for complex situations
+and if-then-else nonlinear cases that can be solved using various
+tools.</p>
+<p>With RAG, you can perform the knowledge retrieval process upfront and
+deliver fast solutions for scenarios such as Q&amp;A.</p>
+<p>But why is RAG so important?</p>
+<p>No. 81 / 120</p>
+<p><span id="index_split_000.html_p82"></span>LLM training costs a lot.
+Like a LOT! For example, the Llama 2 model from Meta, was trained using
+6000 GPUs, running for 12 days. The training had a cost of about 2 mil
+ion USD. In the vast majority of cases, you don't want to train your
+model from scratch.</p>
+<p>However, with every passing minute, there is some
+information/knowledge that is getting generated. Keeping a model updated
+with new information is a constant race.</p>
+<p>Even fine-tuning takes a lot of time.</p>
+<p>What’s the other option? Use RAG to provide just the slice of
+knowledge we need for our LLM.</p>
+<p>RAG saves both time and money, as no training is required.</p>
+<p>No. 82 / 120</p>
+<p><span id="index_split_000.html_p83"></span><img src="index-83_1.png"
+class="calibre2" /></p>
+<p><strong>6.2. Example setup</strong></p>
+<p><strong></strong></p>
+<p>We wil explore how to connect an LLM with external documents by
+building the following example:</p>
+<p>In its final version, our app wil know to do the following: read an
+external data source</p>
+<p>extract the embeddings from the text</p>
+<p>store the embeddings from the previous step in a local vector
+databases answer questions based on this information</p>
+<p>This wil be the data flow of the app:</p>
+<p>No. 83 / 120</p>
+<p><span id="index_split_000.html_p84"></span><img src="index-84_1.png"
+class="calibre2" /></p>
+<p>Below is the initial frontend setup. We send a question and print out
+the response:</p>
+<p>// code/rag/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [answer, setAnswer] = useState()</p>
+<p>const askQuestion = async (e)=&gt; {</p>
+<p>e.preventDefault()</p>
+<p>const question = e.target.question.value</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({question})</p>
+<p>})</p>
+<p>No. 84 / 120</p>
+<p><span id="index_split_000.html_p85"></span><img src="index-85_1.png"
+class="calibre2" /></p>
+<p>const {data} = await response.json()</p>
+<p>setAnswer(data)</p>
+<p>}</p>
+<p>return (&lt;&gt;</p>
+<p>&lt;h1&gt;, Documents chatbot&lt;/h1&gt;</p>
+<p>&lt;form onSubmit={askQuestion} &gt;</p>
+<p>&lt;input name="question" /&gt;</p>
+<p>&lt;button&gt;Ask chatbot&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;p&gt;{answer}&lt;/p&gt;</p>
+<p>&lt;/&gt;)</p>
+<p>}</p>
+<p>While on the backend we use a GPT model to answer the question:</p>
+<p>// code/rag/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { LLMChain } from "langchain/chains"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY</p>
+<p>})</p>
+<p>const prompt = ChatPromptTemplate.fromTemplate(</p>
+<p>Ànswer the user's question:</p>
+<p>Question: {input}`</p>
+<p>)</p>
+<p>const chain = new LLMChain({</p>
+<p>llm: model,</p>
+<p>prompt</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { question } = await req.json()</p>
+<p>const data = await chain.invoke({</p>
+<p>No. 85 / 120</p>
+<p><span id="index_split_000.html_p86"></span><img src="index-86_1.png"
+class="calibre2" /></p>
+<p>input: question</p>
+<p>})</p>
+<p>return Response.json({data: data.text})</p>
+<p>}</p>
+<p>This is how the initial setup of the app looks:</p>
+<p>While this works as expected for simple questions, the limits of the
+model become visible when we ask about topics outside its training
+data.</p>
+<p>For example, if we ask about LangSmith, a platform for deploying and
+monitoring LLM applications, it wil give general answers like the one
+below: No. 86 / 120</p>
+<p><span id="index_split_000.html_p87"></span><img src="index-87_1.png"
+class="calibre2" /></p>
+<p>You may say that we could try to use a newer model. For example, we
+could try to use a gpt-4o model, which has its training data up to
+October 2023.</p>
+<p>Most likely, it wil know something about LangSmith. However, the core
+problem wil remain: we wil always play catch-up with the cutoff date of
+the models.</p>
+<p>Therefore, it's time to bring in the Retrieval Augmented
+Generation!</p>
+<p>We can use RAG to add new information to the model and overcome its
+limitations. This information can be:</p>
+<p>after the cut-off date of the model training</p>
+<p>outside the domain of the initial training data</p>
+<p>So, let's explain to our model what LangSmith is.</p>
+<p>No. 87 / 120</p>
+<p><span id="index_split_000.html_p88"></span><img src="index-88_1.png"
+class="calibre2" /></p>
+<p><img src="index-88_2.png" class="calibre2" /></p>
+<p><img src="index-88_3.png" class="calibre2" /></p>
+<p><strong>6.3. Using local documents</strong></p>
+<p><strong></strong></p>
+<p>One of the easiest ways to expand the context of an LLM with
+LangChain is by using local documents.</p>
+<p>We can create smal pieces of information and feed them to the
+LLM:</p>
+<p>//! manually create static documents</p>
+<p>const documentA = new Document({</p>
+<p>pageContent:</p>
+<p>`LangSmith is a unified DevOps platform for developing,
+collaborating, testing, deploying, and monitoring</p>
+<p>LLM applications.`</p>
+<p>})</p>
+<p>const documentB = new Document({</p>
+<p>pageContent: `LangSmith was first launched in closed beta in July
+2023`</p>
+<p>})</p>
+<p>In this example, we have used simple text pieces, but we can also
+have local y stored PDFs, CSVs, and other types of files. We can even
+include videos and audio, which can contain a larger quantity of
+information.</p>
+<p>Let's see how al of this comes together in backend code:</p>
+<p>// code/rag/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>//! we need the this one to create local documents import { Document
+} from "@langchain/core/documents"</p>
+<p>//! createStuffDocumentsChain replaces LLMChain</p>
+<p>import { createStuffDocumentsChain } from</p>
+<p>"langchain/chains/combine_documents"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>No. 88 / 120</p>
+<p><span id="index_split_000.html_p89"></span><img src="index-89_1.png"
+class="calibre2" /></p>
+<p><img src="index-89_2.png" class="calibre2" /></p>
+<p><img src="index-89_3.png" class="calibre2" /></p>
+<p><img src="index-89_4.png" class="calibre2" /></p>
+<p><img src="index-89_5.png" class="calibre2" /></p>
+<p>//! zero temperature, no extra creativity</p>
+<p>temperature: 0</p>
+<p>})</p>
+<p>//! adding the extra context to the prompt</p>
+<p>const prompt = ChatPromptTemplate.fromTemplate(</p>
+<p>Ànswer the user's question from the following context:</p>
+<p>{context}</p>
+<p>Question: {input}`</p>
+<p>)</p>
+<p>//! manually create static documents</p>
+<p>const documentA = new Document({</p>
+<p>pageContent:</p>
+<p>`LangSmith is a unified DevOps platform for developing,
+collaborating, testing, deploying, and monitoring</p>
+<p>LLM applications.`</p>
+<p>})</p>
+<p>const documentB = new Document({</p>
+<p>pageContent: `LangSmith was first launched in closed beta in July
+2023`</p>
+<p>})</p>
+<p>//! updating the chain type</p>
+<p>const chain = await createStuffDocumentsChain({</p>
+<p>llm: model,</p>
+<p>prompt,</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { question } = await req.json()</p>
+<p>//! pass the documents array as the context</p>
+<p>const data = await chain.invoke({</p>
+<p>input: question,</p>
+<p>context: [documentA, documentB]</p>
+<p>})</p>
+<p>return Response.json({data})</p>
+<p>No. 89 / 120</p>
+<p><span id="index_split_000.html_p90"></span><img src="index-90_1.png"
+class="calibre2" /></p>
+<p>}</p>
+<p>Note that a chain made with createStuffDocumentsChain() expects to
+receive a context variable when you are cal ing its invoke() method.</p>
+<p>Failing to do so wil result in the following error: Error: Prompt
+must include a context variable</p>
+<p>The createStuffDocumentsChain() takes a list of documents and formats
+them al into a prompt, then passes that prompt to an LLM. It passes
+ALL</p>
+<p>documents, so you should make sure it fits within the context length
+of the LLM you are using.</p>
+<p>Context length refers to the maximum number of words a model can
+handle at once. Think of it as the model's memory or attention span.
+This is a predetermined feature in transformer-based models such as
+ChatGPT and Llama.</p>
+<p>Below are the default context lengths of some popular LLMs: Expanding
+the context does not retrain the model; the weights remain unchanged in
+this process.</p>
+<p>The frontend wil remain the same. We simply pass in the question and
+display the answer.</p>
+<p>No. 90 / 120</p>
+<p><span id="index_split_000.html_p91"></span><img src="index-91_1.png"
+class="calibre2" /></p>
+<p>Let's test it out. Wil ask it again What is LangSmith? and wil now
+get an answer from the local documents we have just created: No. 91 /
+120</p>
+<p><span id="index_split_000.html_p92"></span><strong>6.4. Components of
+the RAG process</strong></p>
+<p><strong></strong></p>
+<p>Let's take a look at the different component types involved in the
+RAG</p>
+<p>process:</p>
+<p>1. Document Loaders - think of these as your data gatherers. They pul
+in external info and load it up, whether it's plain old .txt files, web
+page text, or even YouTube video transcripts.</p>
+<p>2. Transformers - you've got your docs loaded, but sometimes they
+need a little makeover to fit your app just right. LangChain's pre-made
+transformers help you tweak the docs. A basic example can be to use a
+transformer to break down a big document into smal er segments that fit
+within your model's contextual window.</p>
+<p>3. Embeddings - this is al about turning data into vectors. The
+Embeddings class is your go-to for working with embedding models like
+the ones from OpenAI, Meta, or those on Hugging Face. Think of text
+embeddings as a way to represent text or data in a vector space, making
+stuff like semantic search faster.</p>
+<p>4. Vector Databases - time to stash the text embeddings we have
+generated in the previous step. These specialized databases are built to
+store and fetch vector data efficiently. They make semantic searches
+easy and quick. We can pul up the most relevant text in a snap. We'l
+dive deeper into vector databases later on.</p>
+<p>5. Retrievers - last but not least, meet your info-fetching sidekick:
+the retrievers. Unlike vector stores that just hold onto data, a
+retriever goes out and fetches the docs you need. While some retrievers
+might use vector stores, there are al kinds of retrievers tailored for
+specific tasks.</p>
+<p>No. 92 / 120</p>
+<p><span id="index_split_000.html_p93"></span><strong>6.5. Vectors,
+Embeddings and Vector</strong></p>
+<p><strong></strong></p>
+<p><strong>databases</strong></p>
+<p>Before we continue, we need to make a short detour and discuss some
+fundamental concepts involved in the RAG process.</p>
+<p>We wil start with vectors. A vector is simply an array of
+numbers.</p>
+<p>// this is how a vector looks like</p>
+<p>let vec = [2.5, 1.3, 7.0, 9.2]</p>
+<p>What's cool about vectors is that they can represent more complex
+objects like words, sentences, audio files, or even images in a
+high-dimensional space cal ed an embedding.</p>
+<p>For example, let's take the following entries: snail , plane , speed
+train and turtle .</p>
+<p>We can store these entries in a two-dimensional embedding space based
+on: how big they are</p>
+<p>how fast they are</p>
+<p>A visual representation might look like this:</p>
+<p>No. 93 / 120</p>
+<p><span id="index_split_000.html_p94"></span><img src="index-94_1.png"
+class="calibre2" /></p>
+<p>Each point is a vector with the following format:</p>
+<p>[</p>
+<p>x, // how big is the object</p>
+<p>y // how fast is the object</p>
+<p>]</p>
+<p>Each axis of an embedding space is also known as a dimension or a
+feature.</p>
+<p>Keep in mind that this representation is very simplified. In general,
+each entry has many more dimensions, ranging from tens to thousands,
+depending on the complexity and granularity of the data.</p>
+<p>Given a set of dimensions, similar objects are grouped together, al
+owing us to map the semantic meaning of words or similar features in
+virtual y any other data type.</p>
+<p>Using these embeddings we can do stuff such as recommendation
+systems, search engines and even text generation like the one in Chat
+GPT.</p>
+<p>No. 94 / 120</p>
+<p><span id="index_split_000.html_p95"></span>But once we have our
+vector entries mapped to the dimensions of the embeddings, where do we
+store them? And how can we query them quickly?</p>
+<p>Well, that's where vector databases come in. In a classic relational
+database, we have rows and columns; in a vector database, we have arrays
+of numbers (vectors) grouped together based on similarity.</p>
+<p>Organizing data this way al ows us to make similar queries with
+ultra-low latency.</p>
+<p>We can easily retrieve the distance between these entries. This makes
+semantic search faster as we can easily relate between different
+concepts based on one or multiple dimensions.</p>
+<p>Some of the main vector databases we can use today:</p>
+<p><a href="https://www.trychroma.com/">Chroma</a></p>
+<p><a href="https://www.pinecone.io/">Pinecone</a></p>
+<p><a href="https://weaviate.io/">Weaviate</a></p>
+<p><a href="https://redis.io/solutions/vector-search/">Redis Vector
+Database</a></p>
+<p>No. 95 / 120</p>
+<p><span id="index_split_000.html_p96"></span><img src="index-96_1.png"
+class="calibre2" /></p>
+<p><strong>6.6. Using CheerioWebBaseLoader and</strong></p>
+<p><strong>MemoryVectorStore</strong></p>
+<p>In the previous example, we used just the document loaders and the
+retriever. Now, it's time to expand our example and put the other
+RAG</p>
+<p>components to work.</p>
+<p>We want to add the following features to the app:</p>
+<p>read a given URL provided by the user</p>
+<p>load the content of the page from the URL</p>
+<p>create embeddings and store the results in the local vector database
+retrive and answer questions from the new data</p>
+<p>This is how the final example wil look like:</p>
+<p>We'l start with the frontend. We wil add a new button that asks for a
+URL</p>
+<p>and sends it to the backend:</p>
+<p>// code/rag/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>No. 96 / 120</p>
+<p><span id="index_split_000.html_p97"></span><img src="index-97_1.png"
+class="calibre2" /></p>
+<p><img src="index-97_2.png" class="calibre2" /></p>
+<p><img src="index-97_3.png" class="calibre2" /></p>
+<p><img src="index-97_4.png" class="calibre2" /></p>
+<p><img src="index-97_5.png" class="calibre2" /></p>
+<p>export default function Home() {</p>
+<p>const [answer, setAnswer] = useState()</p>
+<p>//! add a new state variable</p>
+<p>const [docStatus, setDocStatus] = useState(false)</p>
+<p>const askQuestion = async (e)=&gt; {</p>
+<p>e.preventDefault()</p>
+<p>const question = e.target.question.value</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({question})</p>
+<p>})</p>
+<p>const {data} = await response.json()</p>
+<p>setAnswer(data)</p>
+<p>}</p>
+<p>//! ask for the URL, pass it to the backend, update the docStatus</p>
+<p>const loadUrl = async (e)=&gt; {</p>
+<p>const url = prompt("Please enter the URL for the document
+context:")</p>
+<p>const response = await fetch('api', {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({url})</p>
+<p>})</p>
+<p>const { loaded } = await response.json()</p>
+<p>setDocStatus(loaded ? `✅ Loaded: ${url}` : false)</p>
+<p>}</p>
+<p>return (&lt;&gt;</p>
+<p>&lt;h1&gt;, Documents chatbot&lt;/h1&gt;</p>
+<p>{/*! ask for the URL and show the docStatus */}</p>
+<p>&lt;p&gt;</p>
+<p>&lt;button onClick={loadUrl}&gt;Load URL&lt;/button&gt;</p>
+<p>{docStatus}</p>
+<p>&lt;/p&gt;</p>
+<p>No. 97 / 120</p>
+<p><span id="index_split_000.html_p98"></span><img src="index-98_1.png"
+class="calibre2" /></p>
+<p><img src="index-98_2.png" class="calibre2" /></p>
+<p>&lt;form onSubmit={askQuestion} &gt;</p>
+<p>&lt;input name="question" /&gt;</p>
+<p>{/*! disabled until we have a doc status*/}</p>
+<p>&lt;button disabled={!docStatus}&gt;</p>
+<p>Ask chatbot</p>
+<p>&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;p&gt;{answer}&lt;/p&gt;</p>
+<p>&lt;/&gt;)</p>
+<p>}</p>
+<p>By default, the ask-question form wil be disabled. Once the backend
+finishes loading the data from the URL it wil enable the question form:
+The main difference is in the backend, where the model answers the
+question.</p>
+<p>First, we wil need to instal the CheerioWebBaseLoader : npm install
+--save cheerio</p>
+<p>Now, let's first see the complete code, and we'l delve into further
+explanations afterward:</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>No. 98 / 120</p>
+<p><span id="index_split_000.html_p99"></span><img src="index-99_1.png"
+class="calibre2" /></p>
+<p><img src="index-99_2.png" class="calibre2" /></p>
+<p><img src="index-99_3.png" class="calibre2" /></p>
+<p><img src="index-99_4.png" class="calibre2" /></p>
+<p><img src="index-99_5.png" class="calibre2" /></p>
+<p><img src="index-99_6.png" class="calibre2" /></p>
+<p>import { ChatPromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { createStuffDocumentsChain } from</p>
+<p>"langchain/chains/combine_documents"</p>
+<p>//! document loader that can retrive the content of a web page import
+{ CheerioWebBaseLoader } from</p>
+<p>"langchain/document_loaders/web/cheerio"</p>
+<p>//! tool for making the vectors and embeddings</p>
+<p>import { RecursiveCharacterTextSplitter } from</p>
+<p>"langchain/text_splitter"</p>
+<p>import { OpenAIEmbeddings } from "@langchain/openai"</p>
+<p>import { MemoryVectorStore } from</p>
+<p>"langchain/vectorstores/memory"</p>
+<p>//! retrieval tool</p>
+<p>import { createRetrievalChain } from</p>
+<p>"langchain/chains/retrieval"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>temperature: 0</p>
+<p>})</p>
+<p>const prompt = ChatPromptTemplate.fromTemplate(</p>
+<p>Ànswer the user's question from the following context:</p>
+<p>{context}</p>
+<p>Question: {input}`</p>
+<p>)</p>
+<p>let retrievalChain, splitDocs</p>
+<p>//! the RAG process</p>
+<p>async function loadDocumentsFromUrl(url) {</p>
+<p>//! document loaders</p>
+<p>const loader = new CheerioWebBaseLoader(url)</p>
+<p>const docs = await loader.load()</p>
+<p>//! document transformers</p>
+<p>const splitter = new RecursiveCharacterTextSplitter({</p>
+<p>chunkSize: 100,</p>
+<p>No. 99 / 120</p>
+<p><span id="index_split_000.html_p100"></span><img
+src="index-100_1.png" class="calibre2" /></p>
+<p><img src="index-100_2.png" class="calibre2" /></p>
+<p><img src="index-100_3.png" class="calibre2" /></p>
+<p><img src="index-100_4.png" class="calibre2" /></p>
+<p>chunkOverlap: 20,</p>
+<p>})</p>
+<p>splitDocs = await splitter.splitDocuments(docs)</p>
+<p>//! setting up the embeddings</p>
+<p>const embeddings = new OpenAIEmbeddings()</p>
+<p>//! making a local vector DB</p>
+<p>const vectorstore = await MemoryVectorStore.fromDocuments(</p>
+<p>splitDocs,</p>
+<p>embeddings</p>
+<p>)</p>
+<p>//! what we use to fetch data from the vector DB</p>
+<p>const retriever = vectorstore.asRetriever()</p>
+<p>const chain = await createStuffDocumentsChain({</p>
+<p>llm: model,</p>
+<p>prompt</p>
+<p>})</p>
+<p>retrievalChain = await createRetrievalChain({</p>
+<p>combineDocsChain: chain,</p>
+<p>retriever</p>
+<p>})</p>
+<p>}</p>
+<p>export async function POST(req) {</p>
+<p>const { question, url } = await req.json()</p>
+<p>//! if the user sends an url setup RAG and return</p>
+<p>if (url) {</p>
+<p>await loadDocumentsFromUrl(url);</p>
+<p>return Response.json({ loaded: true });</p>
+<p>}</p>
+<p>const data = await retrievalChain.invoke({</p>
+<p>input: question,</p>
+<p>context: splitDocs</p>
+<p>No. 100 / 120</p>
+<p><span id="index_split_000.html_p101"></span><img
+src="index-101_1.png" class="calibre2" /></p>
+<p>})</p>
+<p>return Response.json({data: data.answer})</p>
+<p>}</p>
+<p>In this code, we see in action the RAG components described in the
+previous chapter.</p>
+<p>First, we load the raw text from the URL provided by the user: const
+loader = new CheerioWebBaseLoader(url)</p>
+<p>const docs = await loader.load()</p>
+<p><a
+href="https://js.langchain.com/docs/integrations/document_loaders">This
+is just one type of loader LangChain provides. You can see the ful list
+of</a></p>
+<p><a
+href="https://js.langchain.com/docs/integrations/document_loaders">loaders
+here.</a></p>
+<p>We have access to two types of loaders:</p>
+<p>file loaders, such as CVSs, PDFs, EPUBs etc</p>
+<p>and web loaders, such as Figma, Amazon S3, Youtube transcripts etc
+Once the raw text is loaded we start the process of transforming the
+text (understandable by humans) into number vectors (understandable by
+AI): This splitter is tailored for processing general text. It attempts
+to segment the text at these characters sequential y until the resulting
+chunks reach an optimal size.</p>
+<p>No. 101 / 120</p>
+<p><span id="index_split_000.html_p102"></span>By default, it employs a
+list comprising ["\n\n", "\n", " ", ""]. This configuration aims to
+maintain the integrity of paragraphs first, then sentences, and final y
+words, as these segments typical y exhibit the highest semantic
+cohesion.</p>
+<p>The text is split by the list of characters, and the chunk size is
+measured by the number of characters:</p>
+<p>const splitter = new RecursiveCharacterTextSplitter({</p>
+<p>chunkSize: 100,</p>
+<p>chunkOverlap: 20,</p>
+<p>})</p>
+<p>splitDocs = await splitter.splitDocuments(docs)</p>
+<p>const embeddings = new OpenAIEmbeddings()</p>
+<p>Next, we store al of these embeddings in a vector database. For this
+smal example, we used a local database. For production, we can use a
+real vector DB service such as Chroma or Pinecone.</p>
+<p>const vectorstore = await MemoryVectorStore.fromDocuments(</p>
+<p>splitDocs,</p>
+<p>embeddings</p>
+<p>)</p>
+<p>Do we have to recreate embeddings each time we run a RAG query? This
+might work for smal files, but for larger ones, the embedding creation
+process could be very time-consuming.</p>
+<p>For example, we can set a parameter during the creation of a Chroma
+DB</p>
+<p>object, like persist_directory , specifying a valid local path. This
+way, when you create your Vector DB using a file, it wil be stored in
+the specified location. Subsequently, it wil be loaded from that
+location the next time, significantly reducing processing time.</p>
+<p>The createRetrievalChain() takes a user inquiry, which is then passed
+to the retriever to fetch relevant documents. Those documents (and
+original inputs) are then passed to an LLM to generate a response.</p>
+<p>No. 102 / 120</p>
+<p><span id="index_split_000.html_p103"></span><img
+src="index-103_1.png" class="calibre2" /></p>
+<p><img src="index-103_2.png" class="calibre2" /></p>
+<p><img src="index-103_3.png" class="calibre2" /></p>
+<p>Final y, we wil build a retriever that can be used by a chain to
+fetch information from the vector database.</p>
+<p>const retriever = vectorstore.asRetriever()</p>
+<p>const chain = await createStuffDocumentsChain({</p>
+<p>llm: model,</p>
+<p>prompt</p>
+<p>})</p>
+<p>retrievalChain = await createRetrievalChain({</p>
+<p>combineDocsChain: chain,</p>
+<p>retriever</p>
+<p>})</p>
+<p>As a side note, Google's Gemini 1.5 model has a mil ion token
+contexts and is researching 10 mil ion tokens. It's so large that you
+can include an entire knowledge base, books, or films without worrying
+about context limits. Some people think this wil make RAG obsolete.
+However, this is unlikely due to: 1. . Costs - you stil pay per token.
+Google is like perfectly happy to let you pay a mil ion tokens every
+single time you make an API cal . So, good luck having a $100 API cal
+.</p>
+<p>2. / Slow - the API cal wil be huuuuge, and the response wil be slow
+as well.</p>
+<p>3. 0 Troubleshooting - a very big context is not debuggable. If
+something goes wrong, you can't do the RAG's decomposition to see the
+source of the error.</p>
+<p>One fun experiment could be to take a book like this use one, and
+using RAG</p>
+<p>feed the content to an LLM model. A user can later come and interact
+with that LLM to learn about LangChain using the approach from this
+book. Or just ask the model for recap questions.</p>
+<p>Maybe this wil be the future of future of how we consume technical
+books.</p>
+<p>No. 103 / 120</p>
+<p><span id="index_split_000.html_p104"></span></p>
+<p>No. 104 / 120</p>
+<p><span id="index_split_000.html_p105"></span><strong>7. AI
+Agents</strong></p>
+<p>No. 105 / 120</p>
+<p><span id="index_split_000.html_p106"></span><strong>7.1. Introduction
+and project setup</strong></p>
+<p><strong></strong></p>
+<p>Up until now, we have looked at creating chains. Chains follow a
+predetermined sequence specified by us.</p>
+<p>Agents are different in the sense that we can simply give them a
+goal, and they wil dynamical y figure out the best course of actions to
+take and the order of those actions to reach that final goal.</p>
+<p>We wil assign tools to an agent, and the agent wil try to figure out
+when to use a tool to complete the task.</p>
+<p>Until this moment, we have used the LLM primarily as an NLP (Natural
+Language Processing) tool. AI agents are closer to what we imagine "real
+AI"</p>
+<p>to be.</p>
+<p>Having objectives, trying different approaches, interacting with the
+environment, and making decisions are more aligned with what we consider
+real intelligence.</p>
+<p>We were tasked with building a tool to help journalists in their
+research for new articles. The tool needs to be able to search on
+Wikipedia and perform precise math calculations.</p>
+<p>By the end of this chapter, we wil build an app that wil do the
+following: read a question from the user</p>
+<p>use an agent to answer the question</p>
+<p>the output wil contain the answer to the question, and the tools used
+by the agent to find that answer.</p>
+<p>No. 106 / 120</p>
+<p><span id="index_split_000.html_p107"></span><img
+src="index-107_1.png" class="calibre2" /></p>
+<p>We wil start from the following state: on the frontend, we wil let
+the user type a question and submit that question to the server. When
+the response arrives, we wil display its text.</p>
+<p>// code/agents/src/app/page.js</p>
+<p>"use client";</p>
+<p>import { useState } from "react";</p>
+<p>export default function Home() {</p>
+<p>const [data, setData] = useState();</p>
+<p>const onSubmitHandler = async (e) =&gt; {</p>
+<p>e.preventDefault();</p>
+<p>const question = e.target.question.value;</p>
+<p>if (question) {</p>
+<p>const response = await fetch("api", {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({</p>
+<p>question,</p>
+<p>}),</p>
+<p>});</p>
+<p>const { data } = await response.json();</p>
+<p>setData(data);</p>
+<p>}</p>
+<p>};</p>
+<p>return (</p>
+<p>No. 107 / 120</p>
+<p><span id="index_split_000.html_p108"></span><img
+src="index-108_1.png" class="calibre2" /></p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;1 •♂ Article research agent&lt;/h1&gt;</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>&lt;input name="question" /&gt;</p>
+<p>&lt;button&gt;Ask question&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>&lt;p&gt;{data?.text}&lt;/p&gt;</p>
+<p>&lt;/&gt;</p>
+<p>);</p>
+<p>}</p>
+<p>On the backend, we wil ask a GPT-4 Omni model the question inputted
+by the user.</p>
+<p>// code/agents/src/app/api/route.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { PromptTemplate } from "@langchain/core/prompts"</p>
+<p>import { StringOutputParser } from</p>
+<p>"@langchain/core/output_parsers"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>modelName: "gpt-4o",</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY,</p>
+<p>})</p>
+<p>const prompt = new PromptTemplate({</p>
+<p>inputVariables: ["question"],</p>
+<p>template: "Answer the user {question}",</p>
+<p>})</p>
+<p>const chain = prompt</p>
+<p>.pipe(model)</p>
+<p>.pipe(new StringOutputParser())</p>
+<p>export async function POST(req) {</p>
+<p>const { question } = await req.json()</p>
+<p>No. 108 / 120</p>
+<p><span id="index_split_000.html_p109"></span> const data = await
+chain.invoke({</p>
+<p>question</p>
+<p>})</p>
+<p>return Response.json({data})</p>
+<p>}</p>
+<p>The initial version of our app seems to work quite nicely. For
+example, if we ask it to tell us a joke, everything works as
+expected.</p>
+<p>![](img/agents-joke.png'&gt;</p>
+<p>But what if we ask Who won the Super Bowl in 2024? the limitations of
+the training data set start to emerge. Given that the model has been
+trained on data up to Oct 2023, it does not know the answer.</p>
+<p>![](img/agents-limit-2023.png'&gt;</p>
+<p>No. 109 / 120</p>
+<p><span id="index_split_000.html_p110"></span><strong>7.2. Making an
+agent</strong></p>
+<p><strong></strong></p>
+<p>It's time to make our first agent. To overcome the limitations
+imposed by the training dataset, we wil give the chatbot the option to
+conduct its own research online.</p>
+<p>To do their job, agents require access to specific tools, such as
+Google or Wikipedia search capabilities. By combining the GPT models
+with these tools, agents determine the actions needed to achieve their
+goals.</p>
+<p>If we check the Tools documentation we wil see the ful list of
+available options <a
+href="https://js.langchain.com/docs/integrations/tools/">https://js.langchain.com/docs/integrations/tools/.</a></p>
+<p>![](img/agents-docs-tools.png'&gt;</p>
+<p>While it might be tempting to load al available tools, it's essential
+to equip the agent only with the necessary ones. Providing too many
+options may lead to one or more of the following:</p>
+<p>the agent selected an inappropriate tool</p>
+<p>higher cost per API cal ; the agent wil use more tokens increased
+network latency</p>
+<p>For our use case, we wil equip the agent with only 2 tools. A
+Wikipedia search tool and a math calculator.</p>
+<p>const wikipediaQuery = new WikipediaQueryRun({topKResults: 1}) const
+calculator = new Calculator()</p>
+<p>const tools = [wikipediaQuery, calculator]</p>
+<p>Please note that for the Calculator tool, you wil need to instal
+the</p>
+<p>@langchain/community package:</p>
+<p>npm install @langchain/community</p>
+<p>No. 110 / 120</p>
+<p><span id="index_split_000.html_p111"></span><img
+src="index-111_1.png" class="calibre2" /></p>
+<p><img src="index-111_2.png" class="calibre2" /></p>
+<p><img src="index-111_3.png" class="calibre2" /></p>
+<p>Wait, what!? A math calculator for an AI model? Well, because neural
+networks work by estimating stuff, they are not great at math. There is
+a very smal chance they wil mess up a basic math operation. Therefore,
+it's safer and faster to use a basic math tool for these operations.</p>
+<p>This toolset wil be passed to an AI agent. Each agent type serves a
+unique purpose, as seen from the documentation:</p>
+<p><a
+href="https://js.langchain.com/docs/modules/agents/agent_types/">https://js.langchain.com/docs/modules/agents/agent_types/</a>.
+For instance, a Structured Chat is optimized for multiple back-and-forth
+interactions.</p>
+<p>We'l employ the ReAct Agent, the most versatile action agent. As a
+side note, the ReAct Agent has nothing to do with the JavaScript React
+framework.</p>
+<p>This is how the ful code of the backend wil look like:</p>
+<p>// code/agents/src/app/page.js</p>
+<p>import { ChatOpenAI } from "@langchain/openai"</p>
+<p>import { WikipediaQueryRun } from</p>
+<p>"@langchain/community/tools/wikipedia_query_run"</p>
+<p>import { createReactAgent, AgentExecutor } from</p>
+<p>"langchain/agents"</p>
+<p>import { Calculator } from</p>
+<p>"@langchain/community/tools/calculator"</p>
+<p>import { pull } from "langchain/hub"</p>
+<p>const model = new ChatOpenAI({</p>
+<p>modelName: "gpt-4o",</p>
+<p>openAIApiKey: process.env.OPENAI_API_KEY</p>
+<p>})</p>
+<p>// ! making the toolbox for the agent</p>
+<p>// ! remember to run 'npm install @langchain/community'</p>
+<p>const wikipediaQuery = new WikipediaQueryRun({topKResults: 1}) const
+calculator = new Calculator()</p>
+<p>const tools = [wikipediaQuery, calculator]</p>
+<p>// ! getting the agent rule set</p>
+<p>const prompt = await pull("hwchase17/react") No. 111 / 120</p>
+<p><span id="index_split_000.html_p112"></span><img
+src="index-112_1.png" class="calibre2" /></p>
+<p>// ! define the Agent and the AgentExecutor</p>
+<p>const agent = await createReactAgent({</p>
+<p>llm: model,</p>
+<p>tools,</p>
+<p>prompt</p>
+<p>})</p>
+<p>const agentExecutor = new AgentExecutor({</p>
+<p>agent,</p>
+<p>tools</p>
+<p>})</p>
+<p>export async function POST(req) {</p>
+<p>const { question } = await req.json()</p>
+<p>const response = await agentExecutor.invoke({</p>
+<p>input: question</p>
+<p>})</p>
+<p>return Response.json({data: response, prompt})</p>
+<p>}</p>
+<p>And this is the frontend code:</p>
+<p>// code/agents/src/app/page.js</p>
+<p>'use client'</p>
+<p>import { useState } from "react"</p>
+<p>export default function Home() {</p>
+<p>const [data, setData] = useState();</p>
+<p>const onSubmitHandler = async (e) =&gt; {</p>
+<p>e.preventDefault();</p>
+<p>const question = e.target.question.value;</p>
+<p>if (question) {</p>
+<p>const response = await fetch("api", {</p>
+<p>method: "POST",</p>
+<p>body: JSON.stringify({</p>
+<p>question,</p>
+<p>No. 112 / 120</p>
+<p><span id="index_split_000.html_p113"></span><img
+src="index-113_1.png" class="calibre2" /></p>
+<p><img src="index-113_2.png" class="calibre2" /></p>
+<p><img src="index-113_3.png" class="calibre2" /></p>
+<p>}),</p>
+<p>});</p>
+<p>const { data } = await response.json();</p>
+<p>setData(data);</p>
+<p>}</p>
+<p>};</p>
+<p>return (</p>
+<p>&lt;&gt;</p>
+<p>&lt;h1&gt;1 •♂ Article research agent&lt;/h1&gt;</p>
+<p>&lt;form onSubmit={onSubmitHandler}&gt;</p>
+<p>&lt;input name="question" /&gt;</p>
+<p>&lt;button&gt;Ask question&lt;/button&gt;</p>
+<p>&lt;/form&gt;</p>
+<p>{data &amp;&amp; (</p>
+<p>&lt;div&gt;</p>
+<p>&lt;p&gt;</p>
+<p>&lt;b&gt;❓ question:&lt;/b&gt; {data.input}{" "}</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;p&gt;</p>
+<p>&lt;b&gt;# answer:&lt;/b&gt; {data.output}{" "}</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>)}</p>
+<p>&lt;/&gt;</p>
+<p>);</p>
+<p>}</p>
+<p>At this moment, if we ask the model again Who won the Super Bowl in
+2024? it wil be able to use the Wikipedia tool to search for an
+answer.</p>
+<p>![](img/agents-wiki-answer.png'&gt;</p>
+<p>Oh boy, Taylor Swift must be happy!</p>
+<p>No. 113 / 120</p>
+<p><span id="index_split_000.html_p114"></span><img
+src="index-114_1.png" class="calibre2" /></p>
+<p><img src="index-114_2.png" class="calibre2" /></p>
+<p><img src="index-114_3.png" class="calibre2" /></p>
+<p><strong>7.3. Monitoring agents and performance</strong></p>
+<p><strong>considerations</strong></p>
+<p>Agents are fantastic, but they come at a cost. They can be:</p>
+<p>/ slow to respond</p>
+<p>. have high computational costs</p>
+<p>4 sometimes can give random results</p>
+<p>Luckily, we have a few ways to control the autonomous behavior of the
+agents.</p>
+<p>Let's update the backend code with some monitoring and performance
+enhancements.</p>
+<p>Add the following lines in the constructor of the AgentExecutor :</p>
+<p>// code/agents/src/app/api/route.js</p>
+<p>const agentExecutor = new AgentExecutor({</p>
+<p>agent,</p>
+<p>tools,</p>
+<p>verbose: true,</p>
+<p>returnIntermediateSteps:true,</p>
+<p>maxIterations: 4,</p>
+<p>})</p>
+<p>And this code in the returned HTML of the frontend: No. 114 / 120</p>
+<p><span id="index_split_000.html_p115"></span><img
+src="index-115_1.png" class="calibre2" /></p>
+<p><img src="index-115_2.png" class="calibre2" /></p>
+<p><img src="index-115_3.png" class="calibre2" /></p>
+<p><img src="index-115_4.png" class="calibre2" /></p>
+<p>// code/agents/src/app/page.js</p>
+<p>data &amp;&amp; (&lt;div&gt;</p>
+<p>&lt;p&gt;&lt;b&gt;❓ question:&lt;/b&gt; {data.input} &lt;/p&gt;</p>
+<p>&lt;p&gt;&lt;b&gt;# answer:&lt;/b&gt; {data.output} &lt;/p&gt;</p>
+<p>&lt;p&gt;&lt;b&gt;5 tools used:&lt;/b&gt; {</p>
+<p>data.intermediateSteps.map(step =&gt; step.action.tool)</p>
+<p>}&lt;/p&gt;</p>
+<p>&lt;/div&gt;)</p>
+<p>At this point, if we ask the agent, "How many years have passed since
+Brazil won the World Cup?" we wil get the following result: Let's talk a
+bit about the added chances.</p>
+<p>First, the maxIterations option limits the number of attempts an
+agent has to find the solution. This is a good option to speed up the
+response and to ensure we do not run into an infinite loop.</p>
+<p>No. 115 / 120</p>
+<p><span id="index_split_000.html_p116"></span>As in the previous use
+case, the verbose option prints - in the backend console - the reasoning
+that leads to a given result. For example, when asked, "What is the
+double of PI?" it wil print something like this:</p>
+<p>[chain/start] [1:chain:AgentExecutor &gt; 18:chain:ReactAgent &gt;
+22:prompt:PromptTemplate] Entering Chain run with input: {</p>
+<p>"input": "What is the double of PI?",</p>
+<p>"steps": [</p>
+<p>{</p>
+<p>"action": {</p>
+<p>"tool": "wikipedia-api",</p>
+<p>"toolInput": "PI",</p>
+<p>"log": "PI is a mathematical constant that can be found on
+Wikipedia\nAction: wikipedia-api\nAction Input: PI"</p>
+<p>},</p>
+<p>{</p>
+<p>"action": {</p>
+<p>"tool": "calculator",</p>
+<p>"toolInput": "2*3.14159",</p>
+<p>"log": "I know that PI is approximately equal to 3.14159, so I can
+calculate the double of it\nAction: calculator\nAction Input:
+2*3.14159"</p>
+<p>},</p>
+<p>],</p>
+<p>"content": "I now know the final answer\nFinal Answer: 6.28318"</p>
+<p>}</p>
+<p>This is quite cool, isn't it?</p>
+<p><a
+href="https://js.langchain.com/docs/modules/agents/how_to/max_iterations/">And
+the third option, the returnIntermediateSteps (documentation
+link</a></p>
+<p><a
+href="https://js.langchain.com/docs/modules/agents/how_to/max_iterations/">here)
+prints the tools used by the agent and their order. Agents are</a></p>
+<p>autonomous and can decide their own set of actions.</p>
+<p>For example, the Wikipedia tool was enough to respond to the
+question,</p>
+<p>"Who won the Super Bowl in 2024?" On the other hand, the question,
+"How many years have passed since Brazil won the World Cup?" required
+the use of both Wikipedia and the Calculator tools. With this option, we
+can monitor No. 116 / 120</p>
+<p><span id="index_split_000.html_p117"></span>if the agent is using the
+correct tools for the job.</p>
+<p>No. 117 / 120</p>
+<p><span id="index_split_000.html_p118"></span><strong>7.4.
+Recap</strong></p>
+<p><strong></strong></p>
+<p>Agents and tool use in general, are key concepts of LangChain.</p>
+<p>At a high level agents involve using a LLM and asking it to reason
+about which actions to take and then executing those actions. Often this
+is done in a loop that repeats until the LLM decides it has reached the
+objectives, or there are no other actions it can take.</p>
+<p>The tools are representations of actions a language model can take,
+along with the functions that implement those actions.</p>
+<p>Agents and tools are combined with an agent executor. This agent
+executor is essential y a loop that runs to cal an LLM to figure out
+what tool the agent should try to use next unless it has reached its
+objective.</p>
+<p>Agents are constructed based on prompts, as you may have noticed from
+the code:</p>
+<p>const prompt = await pull("hwchase17/react") const agent = await
+createReactAgent({</p>
+<p>llm: model,</p>
+<p>tools,</p>
+<p>prompt</p>
+<p>})</p>
+<p>There are many different agent types. You can see the five main types
+of agents available at this moment on <a
+href="https://js.langchain.com/docs/modules/agents/agent_types/">this
+page</a>: No. 118 / 120</p>
+<p><span id="index_split_000.html_p119"></span><img
+src="index-119_1.png" class="calibre2" /></p>
+<p>Some are good for local models, some are good for the newest OpenAI
+models, some support paral el function cal ing, and some support
+conversational history. Others are great for using simple tools and
+single inputs because of their general prompting strategies.</p>
+<p>When discussing AI agents, please note that there are many other
+topics, concepts, techniques, prompts, and features. What we have
+discussed in this chapter is just a very brief introduction to the
+subject.</p>
+<p>No. 119 / 120</p>
+<p><span id="index_split_000.html_p120"></span><strong>7.5. Final
+Words</strong></p>
+<p><strong></strong></p>
+<p>Hopeful y, you have enjoyed this book!</p>
+<p>I would love to get your feedback. Let me know what you liked and
+didn't like so I can improve this book.</p>
+<p>I would love to get your feedback, and learn what you liked and
+didn't so I can improve this book.</p>
+<p>Feel free to email me at <a
+href="mailto:daniel@js-craft.io">daniel@js-craft.io</a> to get updated
+versions of this book. If you think I should have covered more topics,
+please email me. I’d love to hear from you!</p>
+<p>If you like the book, I would appreciate it if you could leave a
+review too.</p>
+<p>Thanks, friend and keep coding!</p>
+<p>No. 120 / 120</p>
+<p><span id="index_split_000.html_outline"></span></p>
+<p><span id="index_split_001.html"></span></p>
+<h1 class="calibre4" id="index_split_001.html_calibre_pb_0">Document
+Outline</h1>
+<ul>
+<li><a href="#index_split_000.html_p4">1. Introduction</a>
+<ul>
+<li><a href="#index_split_000.html_p5">1.1. Getting Book Updates and
+Code Examples</a></li>
+<li><a href="#index_split_000.html_p6">1.2. About the author</a></li>
+<li><a href="#index_split_000.html_p7">1.3. How this book came to
+be</a></li>
+<li><a href="#index_split_000.html_p9">1.4. What is LangChain</a></li>
+<li><a href="#index_split_000.html_p11">1.5. Overview of this
+book</a></li>
+<li><a href="#index_split_000.html_p13">1.6. Requirements and how to use
+this book</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p15">2. Models, Prompts and
+Chains</a>
+<ul>
+<li><a href="#index_split_000.html_p16">2.1. Introduction</a></li>
+<li><a href="#index_split_000.html_p17">2.2. Getting Started</a></li>
+<li><a href="#index_split_000.html_p20">2.3. The API key for the OpenAI
+ChatGPT model</a></li>
+<li><a href="#index_split_000.html_p21">2.4. Using the ChatOpenAI
+LangChain model</a></li>
+<li><a href="#index_split_000.html_p24">2.5. Prompt templates</a></li>
+<li><a href="#index_split_000.html_p28">2.6. Chains</a></li>
+<li><a href="#index_split_000.html_p32">2.7. LCEL - LangChain Expression
+Language</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p35">3. Streams in LangChain</a>
+<ul>
+<li><a href="#index_split_000.html_p36">3.1. Introduction and project
+setup</a></li>
+<li><a href="#index_split_000.html_p38">3.2. Project refactor</a></li>
+<li><a href="#index_split_000.html_p42">3.3. Streaming the
+response</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p46">4. Output parsers</a>
+<ul>
+<li><a href="#index_split_000.html_p47">4.1. Introduction</a></li>
+<li><a href="#index_split_000.html_p48">4.2. Example setup</a></li>
+<li><a href="#index_split_000.html_p51">4.3. StringOutputParser</a></li>
+<li><a href="#index_split_000.html_p54">4.4.
+CommaSeparatedListOutputParser</a></li>
+<li><a href="#index_split_000.html_p59">4.5. The getFormatInstructions()
+method and custom parsers</a></li>
+<li><a href="#index_split_000.html_p62">4.6.
+StructuredOutputParser</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p67">5. Chat memory</a>
+<ul>
+<li><a href="#index_split_000.html_p68">5.1. Introduction and project
+setup</a></li>
+<li><a href="#index_split_000.html_p71">5.2. Injecting messages into the
+conversation memory</a></li>
+<li><a href="#index_split_000.html_p76">5.3. Full conversation
+history</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p80">6. RAG / Chating with
+documents</a>
+<ul>
+<li><a href="#index_split_000.html_p81">6.1. Introduction</a></li>
+<li><a href="#index_split_000.html_p83">6.2. Example setup</a></li>
+<li><a href="#index_split_000.html_p88">6.3. Using local
+documents</a></li>
+<li><a href="#index_split_000.html_p92">6.4. Components of the RAG
+process</a></li>
+<li><a href="#index_split_000.html_p93">6.5. Vectors, Embeddings and
+Vector databases</a></li>
+<li><a href="#index_split_000.html_p96">6.6. Using CheerioWebBaseLoader
+and MemoryVectorStore</a></li>
+</ul></li>
+<li><a href="#index_split_000.html_p105">7. AI Agents</a>
+<ul>
+<li><a href="#index_split_000.html_p106">7.1. Introduction and project
+setup</a></li>
+<li><a href="#index_split_000.html_p110">7.2. Making an agent</a></li>
+<li><a href="#index_split_000.html_p114">7.3. Monitoring agents and
+performance considerations</a></li>
+<li><a href="#index_split_000.html_p118">7.4. Recap</a></li>
+<li><a href="#index_split_000.html_p120">7.5. Final Words</a></li>
+</ul></li>
+</ul>
+</p>

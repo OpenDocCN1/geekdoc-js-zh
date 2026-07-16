@@ -1,0 +1,3896 @@
+- fmt: "\n![](d2d_images/cover.jpg)\n\n# JavaScript: Tips and Tricks to Programming\
+    \ Code with JavaScript\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\n\
+    Charlie Masterson\n\n## Table of Contents\n\n- [Introduction](#c003.xhtml__Introduction)\n\
+    - [Chapter 1: Simple Tricks to Help You Learn JavaScript Faster](#c004.xhtml_Ch1)\n\
+    - [Chapter 2: JavaScript Cheat Sheet – Must Haves for Every Programmer](#c005.xhtml_Ch2)\n\
+    - [Chapter 3: Tips and Tricks to Design and Build Your Own JavaScript Library](#c006.xhtml_Ch3)\n\
+    - [Chapter 4: JavaScript Tips & Tricks to Keep and Remember](#c007.xhtml_Ch4)\n\
+    - [Chapter 5: JavaScript Skills to Know Moving Forward](#c008.xhtml_Ch5)\n- [Conclusion](#c009.xhtml_Conclusion)\n\
+    \n© Copyright 2017 by Charlie Masterson - All rights reserved.\n\nThe following\
+    \ eBook is reproduced below with the goal of providing information that is as\
+    \ accurate and reliable as possible. Regardless, purchasing this eBook can be\
+    \ seen as consent to the fact that both the publisher and the author of this book\
+    \ are in no way experts on the topics discussed within and that any recommendations\
+    \ or suggestions that are made herein are for entertainment purposes only. Professionals\
+    \ should be consulted as needed prior to undertaking any of the action endorsed\
+    \ herein.\n\nThis declaration is deemed fair and valid by both the American Bar\
+    \ Association and the Committee of Publishers Association and is legally binding\
+    \ throughout the United States.\n\nFurthermore, the transmission, duplication\
+    \ or reproduction of any of the following work including specific information\
+    \ will be considered an illegal act irrespective of if it is done electronically\
+    \ or in print. This extends to creating a secondary or tertiary copy of the work\
+    \ or a recorded copy and is only allowed with express written consent from the\
+    \ Publisher. All additional right reserved.\n\nThe information in the following\
+    \ pages is broadly considered to be a truthful and accurate account of facts and\
+    \ as such any inattention, use or misuse of the information in question by the\
+    \ reader will render any resulting actions solely under their purview. There are\
+    \ no scenarios in which the publisher or the original author of this work can\
+    \ be in any fashion deemed liable for any hardship or damages that may befall\
+    \ them after undertaking information described herein.\n\nAdditionally, the information\
+    \ in the following pages is intended only for informational purposes and should\
+    \ thus be thought of as universal. As befitting its nature, it is presented without\
+    \ assurance regarding its prolonged validity or interim quality. Trademarks that\
+    \ are mentioned are done without written consent and can in no way be considered\
+    \ an endorsement from the trademark holder.\n\n| ![image](d2d_images/chapter_title_corner_decoration_left.png)\
+    \ |  | ![image](d2d_images/chapter_title_corner_decoration_right.png) |\n\n![image](d2d_images/chapter_title_above.png)\n\
+    \n# Introduction\n\n![image](d2d_images/chapter_title_below.png)\n\nJavaScript,\
+    \ a widely used programming language is an integral part of a web programmer’s\
+    \ life and programming skills. It is the foundation of what makes web pages interactive\
+    \ and dynamic; it’s used to create forms, polls, and quizzes and is often used\
+    \ in lightweight programming.\n\nIt’s the most common computer language utilized\
+    \ in all major browsers from the humble Internet Explorer to the advanced Google\
+    \ Chrome and Safari. Most computers already come with `JavaScript` installed into\
+    \ their system, so it’s guaranteed that visitors from all around the world will\
+    \ be able to view what you have on the internet, software and computer programs.\n\
+    \nEveryone and anyone can use `JavaScript` without purchasing licenses. \n\nAlso,\
+    \ in case you are wondering, `JavaScript` and `Java` are completely two different\
+    \ computer languages used for various programming needs.\n\nThe thing about `JavaScript`\
+    \ is that there are plenty of `JavaScript` codes pre-written that you can copy\
+    \ and plug it directly into your web page for a similar effect, instead of writing\
+    \ all the codes again on your own. All you every need to know is find out what\
+    \ the code does and then where to copy and paste these codes in its particular\
+    \ places to get the desired effect, like baking a cake.\n\nIf you have opened\
+    \ this book, we are not going to go into the specifics of `JavaScript` and teach\
+    \ you the basics or the steps of coding and programming or pasting these codes\
+    \ into your web page.\n\nWhat this book will do however, is give you loads of\
+    \ tips and tricks to help you navigate your way into becoming a better programmer\
+    \ and use `JavaScript` more efficiently.\n\n## A Brief History of JavaScript\n\
+    \nBack in the 1990s when the world wide web was still in its developing stages,\
+    \ all web pages were static- there was no way of interaction between user and\
+    \ the website. What you saw was exactly what was set up.\n\nTwo of the most popular\
+    \ browsers at that time were Internet Explorer and Netscape Navigator. While the\
+    \ Internet Explorer was a lot more famous, Netscape was the first to bring about\
+    \ a programming language that enabled a webpage to be interactive with the user.\
+    \ This language was called `LiveScript` and it was integrated into Netscape’s\
+    \ browsers. Anyone using Netscape could now interact with the pages thanks to\
+    \ this language. `LiveScript` did not need a plugin.\n\nOn another note, there\
+    \ was another programming language that required a separate plugin to run and\
+    \ that was called `Java`. At this point, `Java` became very well known and Netscape\
+    \ decided to cash in on this by renaming `LiveScript` to `JavaScript`.\n\nAs mentioned\
+    \ earlier, there is a wide difference between `Java` and `JavaScript`, although\
+    \ their codes appear similar.\n\nAnd then Internet Explorer, with the need to\
+    \ innovate, is updated and supported by two integrated languages which was called\
+    \ `vbscript` based on `BASIC` programming and another called `Jscript` which was\
+    \ similar to `JavaScript`.\n\nBy the time Internet Explore became the most used\
+    \ browser, `JavaScript` also became the most accepted and widely used programming\
+    \ language to be used in up coming browsers.\n\nFast forward to 1996, scripting\
+    \ language became so important that it was risky to leave it to competing browser\
+    \ developers. In that same year, `JavaScript` was given to the `ECMA`, the international\
+    \ standards body who was responsible for the development of programming language.\
+    \ This language was officially renamed to `ECMAScript` but programmers and everyone\
+    \ else still know it as `JavaScript`.\n\nIt’s a lot cooler sounding too.\n\n##\
+    \ The Importance of JavaScript\n\nTo understand how `JavaScript` is used is to\
+    \ understand the basic roles of other programming that goes into the development\
+    \ of a webpage.\n\nSimply put:\n\n1. `HTML` is the language that is used to markup\
+    \ content. `HTML` defines what the content is, and not how it looks on a webpage.\n\
+    2. `CSS` is used to define the appearance of a webpage This entails specifying\
+    \ which media corresponds to which command\n\nJust by using these two languages,\
+    \ you can already create a static webpage that can be easily accessed regardless\
+    \ of what device you view the webpage on and what browser is used to access it.\n\
+    \nHowever, the biggest disadvantage of web pages like these is that the only way\
+    \ your visitor can interact with your static site is by filling up a form and\
+    \ waiting for a new page to load.\n\nThat’s where `JavaScript` comes in.\n\n`JavaScript`\
+    \ converts static pages into one that is interactive so that site visitors won’t\
+    \ need to wait for a new page to load every time they make a request. `JavaScript`\
+    \ enables your web pages to have a behavior - to make them capable of responding\
+    \ to a variety of actions in real-time.\n\nWith `JavaScript`, you can:\n\n- Validate\
+    \ each field in a form as a user enters the information and not fill up the whole\
+    \ form and only be told the user made a typo after submitting the form.\n- Enables\
+    \ your page to be interactive in more ways than involving forms\n- Add animations\
+    \ to a page, attracting attention to a specific part or making the website easier\
+    \ to use\n"
+  raw: '
+
+
+    ![](d2d_images/cover.jpg)
+
+
+    ![img](d2d_images/cover.jpg)
+
+
+    JavaScript:
+
+
+    Tips and Tricks
+
+
+    to Programming Code
+
+
+    with JavaScript
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Charlie Masterson
+
+
+    # Table of Contents
+
+
+    [Introduction](#c003.xhtml__Introduction)
+
+
+    [Chapter 1: Simple Tricks to Help You Learn JavaScript Faster](#c004.xhtml_Ch1)
+
+
+    [Chapter 2: JavaScript Cheat Sheet – Must Haves for Every Programmer](#c005.xhtml_Ch2)
+
+
+    [Chapter 3: Tips and Tricks to Design and Build Your Own JavaScript Library](#c006.xhtml_Ch3)
+
+
+    [Chapter 4: JavaScript Tips & Tricks to Keep and Remember](#c007.xhtml_Ch4)
+
+
+    [Chapter 5: JavaScript Skills to Know Moving Forward](#c008.xhtml_Ch5)
+
+
+    [Conclusion](#c009.xhtml_Conclusion)
+
+
+    © Copyright 2017 by Charlie Masterson - All rights reserved.
+
+
+    The following eBook is reproduced below with the goal of providing information
+    that is as accurate and reliable as possible. Regardless, purchasing this eBook
+    can be seen as consent to the fact that both the publisher and the author of this
+    book are in no way experts on the topics discussed within and that any recommendations
+    or suggestions that are made herein are for entertainment purposes only. Professionals
+    should be consulted as needed prior to undertaking any of the action endorsed
+    herein.
+
+
+    This declaration is deemed fair and valid by both the American Bar Association
+    and the Committee of Publishers Association and is legally binding throughout
+    the United States.
+
+
+    Furthermore, the transmission, duplication or reproduction of any of the following
+    work including specific information will be considered an illegal act irrespective
+    of if it is done electronically or in print. This extends to creating a secondary
+    or tertiary copy of the work or a recorded copy and is only allowed with express
+    written consent from the Publisher. All additional right reserved.
+
+
+    The information in the following pages is broadly considered to be a truthful
+    and accurate account of facts and as such any inattention, use or misuse of the
+    information in question by the reader will render any resulting actions solely
+    under their purview. There are no scenarios in which the publisher or the original
+    author of this work can be in any fashion deemed liable for any hardship or damages
+    that may befall them after undertaking information described herein.
+
+
+    Additionally, the information in the following pages is intended only for informational
+    purposes and should thus be thought of as universal. As befitting its nature,
+    it is presented without assurance regarding its prolonged validity or interim
+    quality. Trademarks that are mentioned are done without written consent and can
+    in no way be considered an endorsement from the trademark holder.
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Introduction
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    JavaScript, a widely used programming language is an integral part of a web programmer’s
+    life and programming skills. It is the foundation of what makes web pages interactive
+    and dynamic; it’s used to create forms, polls, and quizzes and is often used in
+    lightweight programming.
+
+
+    It’s the most common computer language utilized in all major browsers from the
+    humble Internet Explorer to the advanced Google Chrome and Safari. Most computers
+    already come with JavaScript installed into their system, so it’s guaranteed that
+    visitors from all around the world will be able to view what you have on the internet,
+    software and computer programs.
+
+
+    Everyone and anyone can use JavaScript without purchasing licenses. 
+
+
+    Also, in case you are wondering, JavaScript and Java are completely two different
+    computer languages used for various programming needs. 
+
+
+    The thing about JavaScript is that there are plenty of JavaScript codes pre-written
+    that you can copy and plug it directly into your web page for a similar effect,
+    instead of writing all the codes again on your own. All you every need to know
+    is find out what the code does and then where to copy and paste these codes in
+    its particular places to get the desired effect, like baking a cake.
+
+
+    If you have opened this book, we are not going to go into the specifics of JavaScript
+    and teach you the basics or the steps of coding and programming or pasting these
+    codes into your web page.
+
+
+    What this book will do however, is give you loads of tips and tricks to help you
+    navigate your way into becoming a better programmer and use JavaScript more efficiently.
+
+
+    A Brief History of JavaScript
+
+
+    Back in the 1990s when the world wide web was still in its developing stages,
+    all web pages were static- there was no way of interaction between user and the
+    website. What you saw was exactly what was set up.
+
+
+    Two of the most popular browsers at that time were Internet Explorer and Netscape
+    Navigator. While the Internet Explorer was a lot more famous, Netscape was the
+    first to bring about a programming language that enabled a webpage to be interactive
+    with the user. This language was called LiveScript and it was integrated into
+    Netscape’s browsers. Anyone using Netscape could now interact with the pages thanks
+    to this language. LiveScript did not need a plugin.
+
+
+    On another note, there was another programming language that required a separate
+    plugin to run and that was called Java. At this point, Java became very well known
+    and Netscape decided to cash in on this by renaming LiveScript to JavaScript.
+
+
+    As mentioned earlier, there is a wide difference between Java and JavaScript,
+    although their codes appear similar.
+
+
+    And then Internet Explorer, with the need to innovate, is updated and supported
+    by two integrated languages which was called vbscript based on BASIC programming
+    and another called Jscript which was similar to JavaScript.
+
+
+    By the time Internet Explore became the most used browser, JavaScript also became
+    the most accepted and widely used programming language to be used in up and coming
+    web browsers.
+
+
+    Fast forward to 1996, scripting language became so important that it was risky
+    to leave it to competing browser developers. In that same year, JavaScript was
+    given to the ECMA, the international standards body who was responsible for the
+    development of programming language. This language was officially renamed to ECMAScript
+    but programmers and everyone else still know it as JavaScript.
+
+
+    It’s a lot cooler sounding too.
+
+
+    The Importance of JavaScript
+
+
+    To understand how JavaScript is used is to understand the basic roles of other
+    programming that goes into the development of a webpage.
+
+
+    Simply put:
+
+
+    1-  HTML is the language that is used to markup content. HTML defines what the
+    content is, and not how it looks on a webpage.
+
+
+    2-  CSS is used to define the appearance of a webpage. This entails specifying
+    which media corresponds to which command
+
+
+    Just by using these two languages, you can already create a static webpage that
+    can be easily accessed regardless of what device you view the webpage on and what
+    browser is used to access it.
+
+
+    However, the biggest disadvantage of web pages like these is that the only way
+    your visitor can interact with your static site is by filling up a form and waiting
+    for a new page to load.
+
+
+    That’s where JavaScript comes in.
+
+
+    JavaScript converts static pages into one that is interactive so that site visitors
+    won’t need to wait for a new page to load every time they make a request. JavaScript
+    enables your web pages to have a behavior -  to make them capable of responding
+    to a variety of actions in real-time.
+
+
+    With JavaScript, you can:
+
+
+    -  Validate each field in a form as a user enters the information and not fill
+    up the whole form and only be told the user made a typo after submitting the form.
+
+
+    -  Enables your page to be interactive in more ways than involving forms
+
+
+    -  Add animations to a page, attracting attention to a specific part or making
+    the website easier to use'
+  toc: []
+  trans: '
+
+
+    ![](img/cover.jpg)
+
+
+    # JavaScript：使用 JavaScript 编程的技巧与策略
+
+
+    ––––––––
+
+
+    ![image](img/scene_break.png)
+
+
+    Charlie Masterson
+
+
+    ## 目录
+
+
+    - 介绍
+
+    - 第一章：帮助你更快速学习 JavaScript 的简单技巧
+
+    - 第二章：JavaScript 备查——每个程序员的必备项
+
+    - 第三章：设计和构建自己的 JavaScript 库的技巧与策略
+
+    - 第四章：保持和记忆的 JavaScript 技巧与策略
+
+    - 第五章：未来需要的 JavaScript 技能
+
+    - 结论
+
+
+    © Copyright 2017 by Charlie Masterson - 版权所有。
+
+
+    以下复制的电子书旨在提供尽可能准确和可靠的信息。尽管如此，购买本电子书可视为同意：本书的出版商和作者并非书中讨论的话题的专家，且书中提出的任何建议或提示仅供娱乐之用。在采取书中支持的任何行动之前，应根据需要咨询专业人士。
+
+
+    此声明被美国律师协会和美国出版商协会委员会认为是公平且有效的，并在整个美国范围内具有法律约束力。
+
+
+    此外，无论是以电子形式还是纸质形式，对以下任何作品（包括特定信息）的传输、复制或复制将被视为非法行为。这延伸到创建作品的二次或三级副本或录制副本，并且在获得出版商的书面许可后方可允许。保留所有其他权利。
+
+
+    后续页面中的信息被广泛认为是对事实的真实准确描述，因此，读者对相关信息的任何疏忽、使用或误用将导致其产生的后果完全由其个人承担。在任何情况下，对于在采取了书中描述的信息后可能发生的任何困难或损害，本作品的出版商或原作者均不承担任何责任。
+
+
+    此外，后续页面中的信息仅供参考，因此应被认为是通用的。根据其性质，其呈现时不对其长期有效性或中间质量提供保证。文中提到的商标是在未获得书面许可的情况下使用的，绝不视为商标持有者的背书。
+
+
+    | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](img/chapter_title_above.png)
+
+
+    # 介绍
+
+
+    ![image](img/chapter_title_below.png)
+
+
+    JavaScript 是一种广泛使用的编程语言，是 Web 程序员生活和编程技能不可或缺的一部分。它是使网页具有交互性和动态的基础；它被用于创建表单、调查和测验，并经常用于轻量级编程。
+
+
+    它是从基础的 Internet Explorer 到先进的 Google Chrome 和 Safari 等所有主要浏览器中使用的常用的计算机语言。大多数计算机在安装系统时已经安装了
+    `JavaScript`，因此可以确保来自世界的访问者都能查看你在互联网上的内容、软件和计算机程序。
+
+
+    每个人任何人都可以使用 `JavaScript` 而无需购买许可证。
+
+
+    此外，如果你在好奇的话，`JavaScript` 和 `Java` 是两种完全不同的计算机语言，用于各种编程需求。
+
+
+    `JavaScript` 的特点在于，有许多预先写的 `JavaScript` 代码，你可以复制并直接插入到你的网页中以实现类似的效果，而无需自己重新编写所有代码。你唯一需要知道的是找出代码的作用，然后将这些代码复制并粘贴到特定的位置，以获得预期的效果，就像烘焙蛋糕一样。
+
+
+    如果你打开了这本书，我们不会进入 `JavaScript` 的细节，也不会教你基础知识、编码和编程的步骤，或如何将这些代码粘贴到你的网页中。
+
+
+    然而，这本书将为你提供大量的技巧和策略，帮助你成为一名更优秀的程序员，并更高效地使用 `JavaScript`。
+
+
+    ## JavaScript 简史
+
+
+    回到 20 世纪 90 年代，当世界网仍处于发展阶段时，所有网页都是静态的——用户与网站之间没有交互。你看到的完全就是设置好的。
+
+
+    当时最流行的两个浏览器是 Internet Explorer 和 Netscape Navigator。虽然 Internet Explorer 名得多，但
+    Netscape 是第一个引入让网页能够与用户交互的编程语言的浏览器。这种语言被称为 `LiveScript`，并被集成在 Netscape 浏览器中。得益于这种语言，任何使用
+    Netscape 的现在都可以与页面进行交互了。`LiveScript` 不需要插件。
+
+
+    另一方面，还有另一种编程语言需要单独的插件才能运行，那被称为 `Java`。此时，`Java` 变得非常有名，Netscape 决定通过此大赚其利，将 `LiveScript`
+    重命名为 `JavaScript`。
+
+
+    正如前面提到的，`Java` 和 `JavaScript` 之间存在巨大差异，尽管它们的代码看起来相似。
+
+
+    然后，Internet Explorer 出于创新需求进行了更新，并受到了两种集成语言的支持，一种是基于 `BASIC` 编程的 `vbscript`，另一种是类似于
+    `JavaScript` 的 `Jscript`。
+
+
+    当 Internet Explorer 成为最常用的浏览器时，`JavaScript` 也成为了即将出现的浏览器中最受接受和最广泛使用的编程语言。
+
+
+    回到 1996 年，脚本语言变得如此重要，以至于将其交给竞争性的浏览器开发者是有风险的。在同年，`JavaScript` 被交给了 `ECMA`，这是一个负责编程语言开发的国际标准机构。这种语言被正式命名为
+    `ECMAScript`，但程序员和其他人仍然称它为 `JavaScript`。
+
+
+    它听起来也酷得多。
+
+
+    ## JavaScript 的重要性
+
+
+    理解 `JavaScript` 如何使用，就是理解开发网页时其他编程语言的基础作用。
+
+
+    简单来说：
+
+
+    1. `HTML` 是用于标记内容的语言。`HTML` 定义内容是什么，而不是它在网页上什么样子。
+
+    2. `CSS` 用于定义网页的外观，这涉及到指定哪些媒体对应哪些命令。
+
+
+    只需使用这两种语言，你就可以创建一个易访问的静态网页，无论你在什么设备上查看网页以及使用什么浏览器访问。
+
+
+    然而，这类网页最大的缺点是，访问者与静态网站交互的唯一方式就是填写表单并等待新页面加载。
+
+
+    这就是 `JavaScript` 发挥用场的地方。
+
+
+    `JavaScript` 将静态页面转换为交互式，这样网站访问者每次提出请求都不需要等待新页面加载。`JavaScript` 使你的网页具有行为——让它们能够响应各种操作。
+
+
+    通过 `JavaScript`，你可以：
+
+
+    - 在用户输入信息时验证表单中的每个字段，而不是填完整个表单并在提交后才告诉用户拼写错误。
+
+    - 让你的页面具有比表单之外的更多交互方式。
+
+    - 为页面添加动画，吸引对特定部分的注意力或使网站更易用。
+
+
+    '
+- fmt: '
+
+    - Load new and heavier images and scripts on the webpage
+
+    - Enables you to improve your visitor’s experiences
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 1:
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    ## Simple Tricks to Help You Learn JavaScript Faster
+
+
+    Oftentimes when anyone is on the path of learning JavaScript or any coding skill,
+    they often experience some of these issues:
+
+
+    - Confusing concepts
+
+    - Time and motivation to learn
+
+    - Easy to forget codes
+
+    - Tooling landscape keeps changing
+
+
+    In this chapter, we are going to look at conquering these challenges with some
+    mind tricks that can help you learn the JavaScript landscape faster, making you
+    a more productive coder.
+
+
+    ### TIP 1: CREATE A ROADMAP OF WHAT YOU WANT TO LEARN
+
+
+    Let’s face it- there are plenty of frameworks to use and new coders are always
+    at the crossroads of which to start off with first. Instead of researching which
+    frameworks to start on, one of the best ways to overcome this would be to create
+    your roadmap of learning what you need to know.
+
+
+    For example, if you want to become a front-end developer, then your roadmap could
+    look like this:
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    ![image](d2d_images/image017.png)
+
+
+    HTML and CSS are the most basic coding knowledge you need to know before you proceed
+    to learn other things. Then you can move on to JavaScript and jQuery. Once you
+    have created your roadmap, it’ll make it easier for you to focus on what is essential
+    first so you don’t waste time and effort.
+
+
+    ### TIP 2: TAKE YOUR TIME
+
+
+    Wanting to understand coding quickly will be one of the harmful things that can
+    halt your progress of learning coding and JavaScript.
+
+
+    Attempting to skim something and then moving on to the next issue at hand will
+    only make you forget things even more. You’ll forget what you read the first time,
+    go back to it and read it to refresh your memory and then move on. By this time,
+    you’d have forgotten something else entirely. This cycle will keep repeating,
+    and then you’ll find yourself discouraged. To prevent this from happening, you
+    can do this:
+
+
+    - Limit the amount of coding to a particular task. Learn one thing at a time
+
+    - Practice what you’ve learned
+
+
+    By learning and practicing your coding skills, you’ll find that it is a lot easier
+    to remember things and absorb them as you go on learning new things. This process
+    may seem longer, but practice does make it perfect.
+
+
+    ### TIP 3: PRACTICE WITH THE RIGHT MINDSET
+
+
+    Remember this: if you try to take shortcuts in your JavaScript practice, you will
+    only end up taking a longer time to learn it. Yes practicing is boring and repetitive
+    but here are some ways to make it exciting:
+
+
+    Try treating each new concept in JavaScript like a new toy, car or iPhone or even
+    a new dress. You are excited to try it, especially when it’s new and you use it
+    several times. Apply something cool with the concept that you’ve just learned;
+    surprise yourself and show your friends.
+
+
+    ### TIP 4: COMPARTMENTAL YOUR TIME
+
+
+    Wait, by learning and practicing your coding skills, you’ll find that it is a
+    lot easier to remember things and absorb them as you go on learning new things.
+    This process may seem longer, but practice does make it perfect.
+
+
+    ### TIP 5: GIVE YOURSELF TIME
+
+
+    ### TIP 6: WRITE IN PLAIN LANGUAGE
+
+    '
+  raw: '-  Load new and heavier images and scripts on the webpage
+
+
+    -  Enables you to improve your visitor’s experiences
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 1:
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    Simple Tricks to Help You
+
+
+    Learn JavaScript Faster
+
+
+    Oftentimes when anyone is on the path of learning JavaScript or any coding skill,
+    they often experience some of these issues:
+
+
+    -  Confusing concepts
+
+
+    -  Time and motivation to learn
+
+
+    -  Easy to forget codes
+
+
+    -  Tooling landscape keeps changing
+
+
+    In this chapter, we are going to look at conquering these challenges with some
+    mind tricks that can help you learn the JavaScript landscape faster, making you
+    a more productive coder.
+
+
+    TIP 1: CREATE A ROADMAP OF WHAT YOU WANT TO LEARN
+
+
+    Let’s face it- there are plenty of frameworks to use and new coders are always
+    at the crossroads of which to start off with first. Instead of researching which
+    frameworks to start on, one of the best ways to overcome this would be to create
+    your roadmap of learning what you need to know.
+
+
+    For example, if you want to become a front-end developer, then your roadmap could
+    look like this:
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    ![image](d2d_images/image017.png)
+
+
+    HTML and CSS are the most basic coding knowledge you need to know before you proceed
+    to learn other things. Then you can move on to JavaScript and jQuery. Once you
+    have created your roadmap, it’ll make it easier for you to focus on what is essential
+    first so you don’t waste time and effort.
+
+
+    TIP 2: TAKE YOUR TIME
+
+
+    Wanting to understand coding quickly will be one of the harmful things that can
+    halt your progress of learning coding and JavaScript.
+
+
+    Attempting to skim something and then moving on to the next issue at hand will
+    only make you forget things even more. You’ll forget what you read the first time,
+    go back to it and read it to refresh your memory and then move on. By this time,
+    you’d have forgotten something else entirely. This cycle will keep repeating,
+    and then you’ll find yourself discouraged. To prevent this from happening, you
+    can do this:
+
+
+    -  Limit the amount of coding to a particular task. Learn one thing at a time
+
+
+    -  Practice what you’ve learned
+
+
+    By learning and practicing your coding skills, you’ll find that it is a lot easier
+    to remember things and absorb them as you go on learning new things.  This process
+    may seem longer, but practice does make it perfect.
+
+
+    TIP 3: PRACTICE WITH THE RIGHT MINDSET
+
+
+    Remember this: if you try to take shortcuts in your JavaScript practice, you will
+    only end up taking a longer time to learn it. Yes practicing is boring and repetitive
+    but here are some ways to make it exciting:
+
+
+    Try treating each new concept in JavaScript like a new toy, car or iPhone or even
+    a new dress. You are excited to try it, especially when it’s new and you use it
+    several times. Apply something cool with the concept that you’ve just learned;
+    surprise yourself and show your friends your new skill.
+
+
+    With a slightly more playful approach to learning new things, you can have fun
+    while learning. You’ll also find that you remember these concepts longer and you
+    learn a lot faster.
+
+
+    TIP 4: COMPARTMENTALIZING YOUR TIME
+
+
+    Finding time to practice coding can be difficult. However, the same people who
+    code are also heavy social media users, often spending time on YouTube and Facebook,
+    Reddit or even Wikipedia. Whether or not you are like this, there are valuable
+    lessons to be learned from using social media.
+
+
+    The fact that we all spend so much time on Facebook even if all we just wanted
+    to do was just to look at one notification says a lot. We get sucked into Facebook
+    because one thing leads to another and because you constantly have people updating
+    their status and walls and your news feed always have something new to see.
+
+
+    Using this same psychology, you can use this to your advantage in learning code.
+    Instead of committing several hours of learning codes, you can just tell yourself
+    that you will commit to 15 whole minutes without any disturbance.
+
+
+    Then look at Facebook, take a little break.
+
+
+    Then come back again and do another 15 minutes.
+
+
+    But, this technique can only work if stay focused to your goal, and not allow
+    Facebook or anything other suck you into, and make you totally forget what you
+    were doing.
+
+
+    TIP 5: GIVE YOURSELF TIME
+
+
+    There’s a saying that goes if you take your time to think slowly, you’ll learn
+    a lot faster. Coding needs time. You need time to understand it. Otherwise, you’ll
+    only get more confused. Take your time to figure out what it is that you are trying
+    to learn. Explain it to someone if you have to. Take your time to go through each
+    step, and each line of code before you figure it all in one go.
+
+
+    TIP 6: WRITE IN PLAIN LANGUAGE
+
+
+    Coding can be incredibly complex. If what you are reading becomes too complicated
+    or unfamiliar, then try writing it out in simple terms- or in any way that you
+    can understand it first. That way, you can figure out what it is that you want
+    to code before actually writing it.
+
+
+    This will enable you to code much easily the next time around, and you’ll also
+    be faster at writing your codes because you wouldn’t need to stop and think with
+    each line of code. You’ll also be able to spot bugs even before you code them
+    in.
+
+
+    BOTTOM LINE
+
+
+    Many of these tips can make you learn JavaScript easily and at a faster rate.
+    The truth is, you would be able to apply these tips to learn any sort of lesson
+    you need to.
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 2:
+
+
+    JavaScript Cheat Sheet – Must Haves for Every Programmer
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    By now you know how important learning JavaScript is if you are serious about
+    becoming a programmer. JavaScript is no doubt the most practical programming language
+    in our digital world. It is used in app development, web apps, web pages and programming
+    in general.
+
+
+    In this chapter, we introduce to you some of the must-have cheat sheets you can
+    get your hands on to make yourself better at coding and writing the programming
+    language. These cheat sheets are handy to have as they help you master the basics
+    while you are learning.
+
+
+    [CHEATOGRAPHY JAVASCRIPT CHEAT SHEET](https://www.cheatography.com/davechild/cheat-sheets/javascript/)
+
+
+    With this site, you can find various listing methods and functions that include
+    guides to common expressions as well as more complicated items such as the XMLHttpRequest
+    object as well as many references to JavaScript.
+
+
+    ![image](d2d_images/image014.png)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    [QUICKLYCODE- PROGRAMMING CHEAT SHEET AND MANY OTHERS](http://www.quicklycode.com/)
+
+
+    This site links you to even more cheat sheets and other resources for your programming
+    needs from JavaScript to SQL, Java, WordPress, Ruby on Rails and PHP.
+
+
+    ![image](d2d_images/image003.png)
+
+
+    [FIRSTSITEGUIDE JAVASCRIPT CHEAT SHEET](https://firstsiteguide.com/javascript-cheat-sheet/)
+
+
+    FirstSiteGuide comprises several self-confessed web geeks who offer advice and
+    tutorials on everything from SEO to marketing, web hosting, design and development.
+    They also link you up to free resources and toolkits.
+
+
+    ![image](d2d_images/image000.png)
+
+
+    [MOOTOOLS CHEAT SHEET](http://mootools.net/)
+
+
+    This site gives you all kinds of JavaScript utilities that are excellent for JavaScript
+    developers in the intermediate or advanced levels. You can write powerful and
+    flexible coding with the many well documented and elegant APIs.
+
+
+    ![image](d2d_images/image007.png)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    [jQUERY  CHEATSHEET](https://oscarotero.com/jquery/)
+
+
+    Managed by Oscar Otero, the jQUERY Cheat Sheet enables developers to find functions
+    and properties related to jQuery 1.3 library.'
+  toc: []
+  trans: '
+
+
+    - 在网页上加载更新、更重的图像和脚本
+
+    - 帮助你提升访问者的体验
+
+
+    | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](img/chapter_title_above.png)
+
+
+    # 第一章：
+
+
+    ![image](img/chapter_title_below.png)
+
+
+    ## 帮助你快速学习 JavaScript 的简单技巧
+
+
+    通常，在学习 JavaScript 或任何编码技能的道路上，人们往往会遇到以下问题：
+
+
+    - 概念混淆
+
+    - 学习的时间和动力
+
+    - 代码容易忘记
+
+    - 工具链不断变化
+
+
+    在本章中，我们将学习如何通过一些心理技巧来攻克这些挑战，这些技巧可以帮助你更快地掌握 JavaScript 领域，让你成为一名更高效的编码员。
+
+
+    ### 技巧 1：为你想要学习的内容制定路线图
+
+
+    面对现实吧——有许多框架可以使用，新手新手总是处于“该从哪一个开始”的十字路口。与其研究从哪个框架开始，克服这一问题的最好方法之一就是为你需要了解的知识制定学习路线图。
+
+
+    例如，如果你想成为一名前端开发者，那么你的路线图可能如下：
+
+
+    ––––––––
+
+
+    ![image](img/scene_break.png)
+
+
+    ![image](img/image017.png)
+
+
+    在学习其他内容之前，HTML 和 CSS 是你需要掌握的最基础编码知识。然后你可以学习 JavaScript 和 jQuery。一旦你制定了路线图，它将让你更容易专注于最核心的内容，从而避免浪费精力和。
+
+
+    ### 技巧 2：慢慢来
+
+
+    想要快速理解编码将是阻碍你学习编码和 JavaScript 进展的有害因素之一。
+
+
+    试图走马读某些内容然后跳到下一个问题，只会让你忘记得更彻底。你会忘记第一次读到的内容，回去重读一遍以加深记忆，然后继续。到那时，你又完全忘记了其他某些东西。这种循环会不断重复，最后你会发现自己灰心意丧。为了防止这种情况发生，你可以这样做：
+
+
+    - 将编码量限制在特定任务上。一次只学一件事
+
+    - 练习你所学的内容
+
+
+    通过学习和练习你的编码技能，你会发现随着学习新内容的深入，记忆和吸收它们会变得容易得多。这个过程看起来可能很长，但熟能生工。
+
+
+    ### 技巧 3：带着正确的心态进行练习
+
+
+    记住：如果你试图在 JavaScript 练习中走捷径，最终只会花费更长时间来学习它。是的，练习是无聊且重复的，但这里有一些让它变得有趣的方法：
+
+
+    尝试将 JavaScript 中的每个新概念看作一个新玩具、汽车、iPhone 甚至一件新衣服。你会对尝试它感到兴奋，尤其是当它是新的而且你使用了几次之后。用你刚刚学到的概念应用一些酷酷的东西；让自己惊喜并展示给朋友们看。
+
+
+    ### 技巧 4：划分你的时间
+
+
+    等一下，通过通过学习和练习你的编码技能，你会发现随着学习新内容的深入，记忆和吸收它们会变得容易得多。这个过程看起来可能很长，但熟能生工。
+
+
+    ### 技巧 5：给自己留出时间
+
+
+    ### 技巧 6：用通俗易懂的语言编写
+
+
+    '
+- fmt: '
+
+    [![image](d2d_images/image011.png)](http://oscarotero.com/jquery/)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    [STEAMFEED HTML & JAVASCRIPT SHORTCUTS](http://www.steamfeed.com/html-and-javascript-cheat-sheet-for-site-designers/)
+
+
+    The good people at SteamFeed came up with a great cheat sheet that puts HTML codes
+    and JavaScript information in a clean and easily readable infographic that you
+    can print and place at reading distance so you have easy access when practicing
+    your coding.
+
+
+    ![image](d2d_images/image019.png)
+
+
+    [WEB DESIGN CHEAT SHEET](http://blog.sellfy.com/cheat-sheets-for-web-designers/)
+
+
+    If you need a site that you can go to for all sorts of cheat sheets related to
+    web design, then Sellfy has some good resources for CSS, responsive web design
+    cheat sheets, HTML tags and many more.
+
+
+    ![image](d2d_images/image020.png)
+
+
+    [THE ULTIMATE JAVASCRIPT CHEAT SHEET](https://www.codementor.io/johnnyb/tutorials/javascript-cheatsheet-fb54lz08k)
+
+
+    This cheat list from the website codementor, offers a quick overview of the JavaScript
+    language. You have the choice to either read it from the start or to jump to a
+    topic that you like.
+
+
+    ![image](d2d_images/image002.jpg)
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 3: Tips and Tricks to Design and Build Your Own JavaScript Library
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    JavaScript Library you say?
+
+
+    No, it doesn’t contain books. It does, however, include packaged codes that web
+    designers, developers, and programmers can use in their projects that will save
+    time and effort. In other words, you do not need to reinvent the wheel when you
+    want to apply the same package of codes to deliver the same kind of effect on
+    different websites and programs.
+
+
+    ## So what makes a JavaScript Library?
+
+
+    Here are a few distinct features of a JavaScript Library:
+
+
+    - It has one file or several files in a single folder
+
+    - Its coding must be maintained separately and remain as-is when you use it to
+    implement a project
+
+    - It should allow the user to set project-specific behavior or configuration
+
+
+    In this chapter, we will talk about why you should build a JavaScript library
+    and how they are built- in the simplest ways possible.
+
+
+    ## Why build your own JavaScript Library?
+
+
+    Firstly, it makes things convenient for programmers and web developers alike,
+    especially if you code and develop plenty of programs, websites, and web applications.
+    Having a library with existing codes makes your job easier and saves you time
+    since you do not need to keep digging up old projects from some obscure folder
+    in your hard drive. All you just need to is pull it out of your library. You have
+    a convenient place to store all your codes; you have a place to fragment all your
+    applications and keep them all in an easier to maintain location.
+
+
+    Essentially, any code that makes your work easier and which can be reused is a
+    great component to be added to the library. One such good example is `jQuery`.
+    `jQuery`’s `API` is a more simplified DOM API. Back when cross-browser DOM manipulation
+    was difficult, `jQuery` was essential.
+
+
+    And if an open-source venture becomes increasingly popular, more developers use
+    it, and it will eventually encourage more developers to join in and assist with
+    this venture by contributing to the code and submitting issues that will help
+    make it easier to manipulate. This contribution will benefit the library and all
+    other experiments that depend on it.
+
+
+    Popular open-source projects can also lead to fantastic opportunities for developers
+    alike. A tech firm or any organization may be impressed by the quality of a developer’s
+    work, and they will be offered a job. It could also mean that a company will provide
+    a developer to collaborate on a project or get them to integrate their project
+    into an application of their own.
+
+
+    But for most developers or coders, having their own library is a hobby; one that
+    enables them to write multiple codes and help others and contribute to the process.
+
+
+    ## Your Goals and Scope of Work
+
+
+    Before you set out writing your codes, you need to be clear on what your goals
+    are for this library. With this, it will help you keep focused on what problems
+    you encounter and how to solve them with your library.
+
+
+    Your primary goal is also to make your library easy to use. Essentially, the simpler
+    your `API`, the easier it will be for anyone to use your library.
+
+
+    So ask yourself- what problems does your library solve and how can you solve it?
+    Will you utilize codes from someone else’s library or will you write everything
+    yourself?
+
+
+    In chapter 1, we discussed creating a roadmap. This roadmap for your library will
+    be one of the techniques you use in any other code development you set out to
+    do.
+
+
+    ### A Roadmap for your library:
+
+
+    - List out the features you want in your library
+
+    - Make these features minimum and practical
+
+    - Create milestones for each feature
+
+
+    What you are doing with the roadmap is setting goals for each function, essentially
+    breaking your project into manageable sizes so it is easier to accomplish and
+    the process of creating it is a lot more enjoyable. It’ll also keep you sane and
+    focused.
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    ## Your Library API Design
+
+
+    When creating your library, think of yourself as the end-user. By putting yourself
+    as the user, you will work towards a user-centric design.
+
+
+    ### Testing Your API
+
+
+    The best way to test the quality of your `API` is to use it for your projects.
+    What you can do is to substitute the application code with your library and see
+    if the result it gives covers all the features you want.
+
+
+    Here is one example of what User-Agent library outline would look like:
+
+
+    ```javascript
+
+    // Start with empty UserAgent
+
+    var userAgent = new UserAgent();
+
+
+    // Create and add first product: EvilCorpBrowser/1.2 (X11; Linux; en-us)
+
+    var application = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+    application.setComment(''X11'', ''Linux'', ''en-us'');
+
+    userAgent.addProduct(application);
+
+
+    // Create and add second product: Blink/2042010
+
+    var engine = new UserAgent.Product(''Blink'', ''2042010'');
+
+    userAgent.addProduct(engine);
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/2042010
+
+    userAgent.toString();
+
+
+    // Make some more changes to engine
+
+    engine.setComment(''Hello World'');
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/2042010 (Hello World)
+
+    userAgent.toString();
+
+    ```
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Depending on how complex your library is, you also need to give some thought to
+    structuring. One way to do this is to utilize design patterns to structure your
+    library as well as overcome any technical issues you may experience along the
+    way.
+
+
+    Structuring also reduces the risk of re-aligning huge parts when you are adding
+    new features to your library.
+
+
+    ## Flexibility and Customization
+
+
+    A cool thing about most JavaScript libraries out there is its flexibility. However,
+    many developers face problems when deciding what they can and cannot customize.
+    One of this is `chart.js` and `D3.js`.
+
+
+    Both elements are great libraries to visualize data. If you need more control
+    over your graphics, then the `D3.js` is what you want. If you want something that
+    is easy to create yet give you different types of built-in charts, then `Chart.js`
+    is the one to use.
+
+
+    There are three ways that you can give your user control over your library:
+
+
+    1-  Configuration
+
+    2-  Exposing public methods
+
+    3-  Callbacks & events
+
+    '
+  raw: '[![image](d2d_images/image011.png)](http://oscarotero.com/jquery/)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    [STEAMFEED HTML & JAVASCRIPT SHORTCUTS](http://www.steamfeed.com/html-and-javascript-cheat-sheet-for-site-designers/)
+
+
+    The good people at SteamFeed came up with a great cheat sheet that puts HTML codes
+    and JavaScript information in a clean and easily readable infographic that you
+    can print and place at reading distance so you have easy access when practicing
+    your coding.
+
+
+    ![image](d2d_images/image019.png)
+
+
+    [WEB DESIGN CHEAT SHEET](http://blog.sellfy.com/cheat-sheets-for-web-designers/)
+
+
+    If you need a site that you can go to for all sorts of cheat sheets related to
+    web design, then Sellfy has some good resources for CSS, responsive web design
+    cheat sheets, HTML tags and many more.
+
+
+    ![image](d2d_images/image020.png)
+
+
+    [THE ULTIMATE JAVASCRIPT CHEAT SHEET](https://www.codementor.io/johnnyb/tutorials/javascript-cheatsheet-fb54lz08k)
+
+
+    This cheat list from the website codementor, offers a quick overview of the JavaScript
+    language. You have the choice to either read it from the start or to jump to a
+    topic that you like.
+
+
+    ![image](d2d_images/image002.jpg)
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 3:
+
+
+    Tips and Tricks to Design and Build Your Own JavaScript Library
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    JavaScript Library you say?
+
+
+    No, it doesn’t contain books. It does, however, include packaged codes that web
+    designers, developers, and programmers can use in their projects that will save
+    time and effort. In other words, you do not need to reinvent the wheel when you
+    want to apply the same package of codes to deliver the same kind of effect on
+    different websites and programs.
+
+
+    So what makes a JavaScript Library?
+
+
+    Here are a few distinct features of a JavaScript Library:
+
+
+    -  It has one file or several files in a single folder
+
+
+    -  Its coding must be maintained separately and remain as-is when you use it to
+    implement a project
+
+
+    -  It should allow the user to set project-specific behavior or configuration
+
+
+    In this chapter, we will talk about why you should build a JavaScript library
+    and how they are built- in the simplest ways possible.
+
+
+    Why build your own JavaScript Library?
+
+
+    Firstly, it makes things convenient for programmers and web developers alike,
+    especially if you code and develop plenty of programs, websites, and web applications.
+    Having a library with existing codes makes your job easier and saves you time
+    since you do not need to keep digging up old projects from some obscure folder
+    in your hard drive. All you just need to is pull it out of your library. You have
+    a convenient place to store all your codes; you have a place to fragment all your
+    applications and keep them all in an easier to maintain location.
+
+
+    Essentially, any code that makes your work easier and which can be reused is a
+    great component to be added to the library. One such good example is jQuery. jQuery’s
+    API is a more simplified DOM API. Back when cross-browser DOM manipulation was
+    difficult, jQuery was essential.
+
+
+    And if an open-source venture becomes increasingly popular, more developers use
+    it, and it will eventually encourage more developers to join in and assist with
+    this venture by contributing to the code and submitting issues that will help
+    make it easier to manipulate. This contribution will benefit the library and all
+    other experiments that depend on it.
+
+
+    Popular open-source projects can also lead to fantastic opportunities for developers
+    alike. A tech firm or any organization may be impressed by the quality of a developer’s
+    work, and they will be offered a job. It could also mean that a company will provide
+    a developer to collaborate on a project or get them to integrate their project
+    into an application of their own.
+
+
+    But for most developers or coders, having their own library is a hobby; one that
+    enables them to write multiple codes and help others and contribute to the process.
+
+
+    ## Your Goals and Scope of Work
+
+
+    Before you set out writing your codes, you need to be clear on what your goals
+    are for this library. With this, it will help you keep focused on what problems
+    you encounter and how to solve them with your library.
+
+
+    Your primary goal is also to make your library easy to use. Essentially, the simpler
+    your API, the easier it will be for anyone to use your library.
+
+
+    So ask yourself- what problems does your library solve and how can you solve it?
+    Will you utilize codes from someone else’s library or will you write everything
+    yourself?
+
+
+    In chapter 1, we discussed creating a roadmap. This roadmap for your library will
+    be one of the techniques you use in any other code development you set out to
+    do.
+
+
+    A Roadmap for your library:
+
+
+    -  List out the features you want in your library
+
+
+    -  Make these features minimum and practical
+
+
+    -  Create milestones for each feature
+
+
+    What you are doing with the roadmap is setting goals for each function, essentially
+    breaking your project into manageable sizes so it is easier to accomplish and
+    the process of creating it is a lot more enjoyable. It’ll also keep you sane and
+    focused.
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Your Library API Design
+
+
+    When creating your library, think of yourself as the end-user. By putting yourself
+    as the user, you will work towards a user-centric design and development. This
+    will make your library more convenient to use by anyone who has access to it.
+
+
+    Testing Your API
+
+
+    The best way to test the quality of your API is to use it for your projects. What
+    you can do is to substitute the application code with your library and see if
+    the result it gives covers all the features you want. Keep to the minimum bare
+    essentials as possible and also provide room for flexibility to change and revise
+    anything that may seem slightly off.
+
+
+    Here is one example of what the implementation coding or User-Agent string library
+    outline would look like:
+
+
+    Code:
+
+
+    // Start with empty UserAgent string
+
+
+    var userAgent = new UserAgent;
+
+
+    // Create and add first product: EvilCorpBrowser/1.2 (X11; Linux; en-us)
+
+
+    var application = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+
+    application.setComment(''X11'', ''Linux'', ''en-us'');
+
+
+    userAgent.addProduct(application);
+
+
+    // Create and add second product: Blink/20420101
+
+
+    var engine = new UserAgent.Product(''Blink'', ''20420101'');
+
+
+    userAgent.addProduct(engine);
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/20420101
+
+
+    userAgent.toString();
+
+
+    // Make some more changes to engine product
+
+
+    engine.setComment(''Hello World'');
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/20420101 (Hello World)
+
+
+    userAgent.toString();
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Depending on how complex your library is, you also need to give some thought to
+    structuring. One way to do this is to utilize design patterns to structure your
+    library as well as overcome any technical issues you may experience along the
+    way.
+
+
+    Structuring also reduces the risk of re-aligning huge parts when you are adding
+    new features to your library.
+
+
+    Flexibility and Customization
+
+
+    A cool thing about most JavaScript libraries out there is its flexibility. However,
+    many developers face problems when deciding what they can and cannot customize.
+    One of this is the chart.js and D3.js.
+
+
+    Both elements are great libraries to visualize data. If you need more control
+    over your graphics, then the D3.js is what you want. If you want something that
+    is easy to create yet give you different types of built-in charts, then Chart.js
+    is the one to use.
+
+
+    There are three ways that you can give your user control over your library:
+
+
+    1-  Configuration
+
+
+    2-  Exposing public methods
+
+
+    3-  Callbacks & events'
+  toc: []
+  trans: '
+
+
+    ![image](http://oscarotero.com/jquery/)
+
+
+    ––––––––
+
+
+    ![image](img/scene_break.png)
+
+
+    [STEAMFEED HTML 与 JavaScript 快捷键备查表](http://www.steamfeed.com/html-and-javascript-cheat-sheet-for-site-designers/)
+
+
+    SteamFeed 的优秀们制作了一份非常棒的备查表，将 HTML 代码和 JavaScript 信息放在一个整洁且易于阅读的信息图中，你可以将其打印并放置在视线范围内，这样在练习编码时就可以轻松查阅。
+
+
+    ![image](img/image019.png)
+
+
+    [网页设计备查表](http://blog.sellfy.com/cheat-sheets-for-web-designers/)
+
+
+    如果你需要一个可以访问各种网页设计相关备查表的网站，那么 Sellfy 提供了关于 CSS、响应式网页设计备查表、HTML 标签等更多优质资源。
+
+
+    ![image](img/image020.png)
+
+
+    [终极 JavaScript 备查表](https://www.codementor.io/johnnyb/tutorials/javascript-cheatsheet-fb54lz08k)
+
+
+    这份来自 codementor 网站的备查列表提供了 JavaScript 语言的快速概述。你可以选择从头开始阅读，也可以跳转到感兴趣的话题。
+
+
+    ![image](img/image002.jpg)
+
+
+    | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](img/chapter_title_above.png)
+
+
+    # 第三章：设计和构建自己的 JavaScript 库的技巧与窍门
+
+
+    ![image](img/chapter_title_below.png)
+
+
+    你说 JavaScript 库吗？
+
+
+    不，它并不包含书籍。但是，它包含了封装的代码，网页设计师、开发者和程序员可以在项目中使用这些代码，从而节省时间和精力。换句话说，当你想要将相同的代码应用到不同的网站和程序以实现相同的效果时，你不需要重复发明轮。
+
+
+    ## 什么是 JavaScript 库？
+
+
+    以下是 JavaScript 库的几个显著特征：
+
+
+    - 它在单个文件夹中有一个或多个文件
+
+    - 当你使用它实现项目时，它的代码必须单独维护并保持原样
+
+    - 它应该允许用户设置项目特定的行为或配置
+
+
+    在本章中，我们将讨论为什么你应该构建 JavaScript 库，以及如何用最简单的方法构建它们。
+
+
+    ## 为什么要构建自己的 JavaScript 库？
+
+
+    首先，它对程序员和网页开发者来说都非常方便，特别是当你编写和开发大量的程序、网站和 Web 应用程序时。拥有一个现有代码的库会让你的工作变得更容易并节省时间，因为你不需要不断地从硬盘中某个模糊的文件夹里翻找旧项目。你只需要从库中提取它们即可。你有一个方便的地方来存储所有的代码；你有一个地方来拆分所有的应用程序，并将它们都保持在一个更容易维护的位置。
+
+
+    本质上，任何让你的工作变得更容易且可以重用的代码都是添加到库中的极佳组件。其中一个很好的例子就是 `jQuery`。`jQuery` 的 `API` 是一个更简单的
+    DOM API。在跨浏览器 DOM 操作仍然困难的，`jQuery` 是必不可少的。
+
+
+    如果一个开源项目变得越来越流行，会有越来越多的开发者使用它，最终将鼓励更多开发者加入并通过贡献代码和提交问题来协助这项事业，这将帮助它变得更容易操作。这种贡献将使该库以及所有依赖于它的其他实验受益。
+
+
+    热门的开源项目也可以为开发者带来绝佳的机会。科技公司或任何组织可能会对某位开发者的工作质量留下深刻印象，并向他们提供工作。这可能意味着一家公司将提供一名开发者来合作某个项目，或者让他们将其项目集成到自己的应用程序中。
+
+
+    但对于大多数开发者或编码员来说，拥有自己的库是一种爱好；这种爱好使他们能够编写多个代码、帮助他人并对过程做出贡献。
+
+
+    ## 你的目标和工作范围
+
+
+    在你开始编写代码之前，你需要明确你对这个库的目标是什么。这有助于帮助你专注于你遇到的问题，以及如何使用你的库来解决它们。
+
+
+    你的首要目标也是让你的库易于使用。本质上说，你的 `API` 越简单，任何人就越容易使用你的库。
+
+
+    所以问问自己——你的库解决了什么问题，你如何解决它？你会利用来自别人库的代码，还是会自己编写一切？
+
+
+    在第一章中，我们讨论了创建路线图。你库的这个路线图将是你开始任何其他代码开发时会使用的技术之一。
+
+
+    ### 你的库的路线图：
+
+
+    - 列出你想要在库中的功能
+
+    - 让这些功能保持最少且实用
+
+    - 为每个功能创建里程碑
+
+
+    你通过路线图所做的是为每个功能设定目标，本质上是将你的项目拆分成可管理的规模，使其更容易完成，并且创建过程会变得有趣得多。它还会让你保持清醒和专注。
+
+
+    ––––––––
+
+
+    ![image](img/scene_break.png)
+
+
+    ## 你的库 API 设计
+
+
+    在创建库时，把自己想象成终端用户。通过把自己放在用户的位置，你朝着以用户为中心的设计努力。
+
+
+    ### 测试你的 API
+
+
+    测试你的 `API` 质量的最佳方法是将其用于你的项目。你可以做是用你的代码替换它，看看结果是否涵盖了你想要的功能。
+
+
+    这里是 UserAgent 库的一个示例：
+
+
+    ```javascript
+
+    // 从空的 UserAgent 开始
+
+    var userAgent = new UserAgent();
+
+
+    // 创建并添加第一个产品：EvilCorpBrowser/1.2 (X11; Linux; en-us)
+
+    var application = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+    application.setComment(''X11'', ''Linux'', ''en-us'');
+
+    userAgent.addProduct(application);
+
+
+    // 创建并添加第二个产品：Blink/204210
+
+    var engine = new UserAgent.Product(''Blink'', ''204210'');
+
+    userAgent.addProduct(engine);
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/204210
+
+    userAgent.toString();
+
+
+    // 对引擎进行一些更多更改
+
+    engine.setComment(''Hello World'');
+
+
+    // EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/204210 (Hello World)
+
+    userAgent.toString();
+
+    ```
+
+
+    ––––––––
+
+
+    ![image](img/scene_break.png)
+
+
+    根据你的库的复杂程度，你还需要考虑结构化。这种的方法是利用设计模式来构建你的库，并克服过程中可能遇到的任何技术问题。
+
+
+    结构化还减少了在库添加新功能时重新对齐大部分部分的风险。
+
+
+    ## 灵活性与自定义
+
+
+    大多数 JavaScript 库的一个酷酷之处在于其灵活性。然而，许多开发者在决定哪些可以自定义哪些不能自定义时会遇到问题。其中就有 `chart.js`
+    和 `D3.js`。
+
+
+    这两个元素都是数据可视化很好的库。如果你需要对图形有更多控制权，那么 `D3.js` 是你想要的。如果你想要一种容易创建且提供不同类型内置图表的东西，那么
+    `Chart.js` 是你的选择。
+
+
+    你有三种方法可以让你的用户控制你的库：
+
+
+    1-� 配置
+
+    2-� 暴露公共方法
+
+    3-� 回调与事件'
+- fmt: "\nConfiguring a library is often done at the project initialization stage,\
+    \ but some of these libraries also allow you to set during run-time. These configurations\
+    \ are commonly limited to simple issues as changing these settings will only update\
+    \ these values for use later on.\n\nCode:\n\n```javascript\n// Configure at initialization\n\
+    \nvar userAgent = new UserAgent({\n\n  commentSeparator: ';'\n});\n\n// Run-time\
+    \ configuration using a public method\n\nuserAgent.setOption('commentSeparator',\
+    \ '-');\n\n// Run-time configuration using a public property\n\nuserAgent.commentSeparator\
+    \ = '-';\n```\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\nCertain methods\
+    \ are exposed intentionally to interact with an instance (getters) such as to\
+    \ retrieve data from the instance or to put data in the instance (setters) as\
+    \ well as perform certain actions.\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\
+    \nCode:\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\n```javascript\n\
+    var userAgent = new UserAgent;\n\n// A getter to retrieve comments from all products\n\
+    userAgent.getComments();\n\n// An action to shuffle the order of all products\n\
+    userAgent.shuffleProducts();\n```\n\nCallbacks are also sometimes accepted and\
+    \ passed using public methods and it often used to run user-codes after an asynchronous\
+    \ task.\n\n```javascript\nvar userAgent = new UserAgent;\n\nuserAgent.doAsyncThing(function\
+    \ asyncThingDone() {\n  // Run code after async thing is done\n});\n```\n\nEvents\
+    \ have a huge potential in JavaScript libraries. Slightly similar to callbacks,\
+    \ they have a slight difference where adding event handlers do not cause trigger\
+    \ actions. Events are also used to indicate certain events and can provide additional\
+    \ information to the user as well as return a specific value for the library to\
+    \ correspond with.\n\nCode:\n\n```javascript\nvar userAgent = new UserAgent;\n\
+    \n// Validate a product on addition\nuserAgent.on('product.add', function onProductAdd(e,\
+    \ product) {\n  var shouldAddProduct = product.toString().length < 5;\n  // Tell\
+    \ the library to add the product or not\n  return shouldAddProduct;\n});\n```\n\
+    \n––––––––\n\n![image](d2d_images/scene_break.png)\n\nYou may also enable your\
+    \ users to extend your own library. In order to do this, you need to make available\
+    \ your public method or property so that users can populate it, such as the Angular\
+    \ modules.\n\nCode:\n\n```javascript\n(angular.module('myModule')) and jQuery’s\
+    \ fn(jQuery.fn.myPlugin)\n```\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\
+    \nYou can also just do nothing of the above and allow users to access your library\
+    \ through its namespace.\n\nCode:\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\
+    \n```javascript\n// AngryUserAgent module\n// Has access to UserAgent namespace\n\
+    (function AngryUserAgent(UserAgent) {\n  // Create new method .toAngryString()\n\
+    \  UserAgent.prototype.toAngryString = function() {\n    return this.toString().toUpperCase();\n\
+    \  };\n})(UserAgent);\n\n// Application code\nvar userAgent = new UserAgent;\n\
+    \n// ...\n// EVILCORPBROWSER/1.2 (X11; LINUX; EN-US) BLINK/20420101\nuserAgent.toAngryString();\n\
+    ```\n\nSimilarly, this allows you to overwrite methods as well.\n\n```javascript\n\
+    // AngryUserAgent module\n(function AngryUserAgent(UserAgent) {\n  // Store old\
+    \ .toString() method for later use\n  var _toString = UserAgent.prototype.toString;\n\
+    \  // Overwrite .toString()\n  UserAgent.prototype.toString = function() {\n \
+    \   return _toString.call(this).toUpperCase();\n  };\n})(UserAgent);\n\nvar userAgent\
+    \ = new UserAgent;\n\n// ...\n// EVILCORPBROWSER/1.2 (X11; LINUX; EN-US) BLINK/20420101\n\
+    userAgent.toString();\n```\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\
+    \nIn this case, giving users access to your library’s namespace also gives you\
+    \ less control over how plugins and extensions are defined.\n\nTo allow for extensions\
+    \ to follow some certain convention, you need to write documentation.\n\n### Testing\n\
+    \nFor test-driven development, an outline is essential. In other words, this is\
+    \ the time when you write down the features and criteria in the form of tests,\
+    \ even before you write down the actual library.\n\nIf your test show you that\
+    \ a feature behaves like it was supposed to, and you write it down before writing\
+    \ it in your library, then this strategy is called behavior-driven development.\n\
+    \nIf your tests cover every aspect of your library then and if your code surpasses\
+    \ all these tests, then you can safely say that your library is working well.\n\
+    \nOther testing frameworks that you can use are:\n\n[Unit Test Your JavaScript\
+    \ Using Mocha and Chai](http://www.sitepoint.com/unit-test-javascript-mocha-chai/)\
+    \ by Jani Hartikainen, where you can write unit tests in Mocha.\n\n[Testing JavaScript\
+    \ with Jasmine, Travis, and Karma](http://www.sitepoint.com/testing-javascript-jasmine-travis-karma/)\
+    \ by Tim Evko shows you how to set up a testing pipeline coherently with another\
+    \ framework called Jasmine.\n\nBelow mentioned is another outline that you can\
+    \ try by Tim Severien. He has used a Jasmine test for his library and it looks\
+    \ something like this.\n\nCode:\n\n```javascript\ndescribe('Basic usage', function\
+    \ () {\n  it('should generate a single product', function () {\n    // Create\
+    \ a single product\n    var product = new UserAgent.Product('EvilCorpBrowser',\
+    \ '1.2');\n  });\n\n  it('should combine several products', function () {\n  \
+    \  var userAgent = new UserAgent;\n    // Create and add product\n    var application\
+    \ = new UserAgent.Product('EvilCorpBrowser', '1.2');\n  });\n\n  it('should update\
+    \ products correctly', function () {\n    var userAgent = new UserAgent;\n   \
+    \ // Create and add product\n    var application = new UserAgent.Product('EvilCorpBrowser',\
+    \ '1.2');\n  });\n});\n```\n"
+  raw: 'Configuring a library is often done at the project initialization stage, but
+    some of these libraries also allow you to set during run-time. These configurations
+    are commonly limited to simple issues as changing these settings will only update
+    these values for use later on. 
+
+
+    Code:
+
+
+    // Configure at initialization
+
+
+    var userAgent = new UserAgent({
+
+
+    commentSeparator: '';''
+
+
+    });    
+
+
+    // Run-time configuration using a public method
+
+
+    userAgent.setOption(''commentSeparator'', ''-'');
+
+
+    // Run-time configuration using a public property
+
+
+    userAgent.commentSeparator = ''-'';
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Certain methods are exposed intentionally to interact with an instance (getters)
+    such as to retrieve data from the instance or to put data in the instance (setters)
+    as well as perform certain actions.
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Code:
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    var userAgent = new UserAgent;
+
+
+    // A getter to retrieve comments from all products
+
+
+    userAgent.getComments();
+
+
+    // An action to shuffle the order of all products
+
+
+    userAgent.shuffleProducts();
+
+
+    Callbacks are also sometimes accepted and passed using public methods and it often
+    used to run user-codes after an asynchronous task.
+
+
+    var userAgent = new UserAgent;
+
+
+    userAgent.doAsyncThing(function asyncThingDone() {
+
+
+    // Run code after async thing is done
+
+
+    });
+
+
+    Events have a huge potential in JavaScript libraries. Slightly similar to callbacks,
+    they have a slight difference where adding event handlers do not cause trigger
+    actions. Events are also used to indicate certain events and can provide additional
+    information to the user as well as return a specific value for the library to
+    correspond with.
+
+
+    Code:
+
+
+    var userAgent = new UserAgent;
+
+
+    // Validate a product on addition
+
+
+    userAgent.on(''product.add'', function onProductAdd(e, product) {
+
+
+    var shouldAddProduct = product.toString().length < 5;
+
+
+    // Tell the library to add the product or not
+
+
+    return shouldAddProduct;
+
+
+    });
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    You may also enable your users to extend your own library. In order to do this,
+    you need to make available your public method or property so that users can populate
+    it, such as  the Angular modules.
+
+
+    Code:
+
+
+    (angular.module(''myModule'')) and jQuery’s fn(jQuery.fn.myPlugin)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    You can also just do nothing of the above and allow users to access  your library
+    through its namespace.
+
+
+    Code:
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    // AngryUserAgent module
+
+
+    // Has access to UserAgent namespace
+
+
+    (function AngryUserAgent(UserAgent) {
+
+
+    // Create new method .toAngryString()
+
+
+    UserAgent.prototype.toAngryString = function() {
+
+
+    return this.toString().toUpperCase();
+
+
+    };
+
+
+    })(UserAgent);
+
+
+    // Application code
+
+
+    var userAgent = new UserAgent;
+
+
+    // ...
+
+
+    // EVILCORPBROWSER/1.2 (X11; LINUX; EN-US) BLINK/20420101
+
+
+    userAgent.toAngryString();
+
+
+    Similarly, this allows you to overwrite methods as well.
+
+
+    // AngryUserAgent module
+
+
+    (function AngryUserAgent(UserAgent) {
+
+
+    // Store old .toString() method for later use
+
+
+    var _toString = UserAgent.prototype.toString;
+
+
+    // Overwrite .toString()
+
+
+    UserAgent.prototype.toString = function() {
+
+
+    return _toString.call(this).toUpperCase();
+
+
+    };
+
+
+    })(UserAgent);
+
+
+    var userAgent = new UserAgent;
+
+
+    // ...
+
+
+    // EVILCORPBROWSER/1.2 (X11; LINUX; EN-US) BLINK/20420101
+
+
+    userAgent.toString();
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    In this case, giving users access to your library’s namespace also gives you less
+    control over how plugins and extensions are defined.
+
+
+    To allow for extensions to follow some certain convention, you need to write documentation.
+
+
+    Testing
+
+
+    For test-driven development, an outline is essential. In other words, this is
+    the time when you write down the features and criteria in the form of tests, even
+    before you write down the actual library.
+
+
+    If your test show you that a feature behaves like it was supposed to, and you
+    write it down before writing it in your library, then this strategy is called
+    behavior-driven development.
+
+
+    If your tests cover every aspect of your library then and if your code surpasses
+    all these tests, then you can safely say that your library is working well.
+
+
+    Other testing frameworks that you can use are:
+
+
+    [Unit Test Your JavaScript Using Mocha and Chai](http://www.sitepoint.com/unit-test-javascript-mocha-chai/)
+    by Jani Hartikainen, where you can write unit tests in Mocha.
+
+
+    [Testing JavaScript with Jasmine, Travis, and Karma](http://www.sitepoint.com/testing-javascript-jasmine-travis-karma/)
+    by Tim Evko shows you how to set up a testing pipeline coherently with another
+    framework called Jasmine.
+
+
+    Below mentioned is another outline that you can try by Tim Severien. He has used
+    a Jasmine test for his library and it looks something like this.
+
+
+    Code:
+
+
+    describe(''Basic usage'', function () {
+
+
+    it(''should generate a single product'', function () {
+
+
+    // Create a single product
+
+
+    var product = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+
+    product.setComment(''X11'', ''Linux'', ''en-us'');
+
+
+    expect(product.toString())
+
+
+    .toBe(''EvilCorpBrowser/1.2 (X11; Linux; en-us)'');
+
+
+    });
+
+
+    it(''should combine several products'', function () {
+
+
+    var userAgent = new UserAgent;
+
+
+    // Create and add first product
+
+
+    var application = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+
+    application.setComment(''X11'', ''Linux'', ''en-us'');
+
+
+    userAgent.addProduct(application);
+
+
+    // Create and add second product
+
+
+    var engine = new UserAgent.Product(''Blink'', ''20420101'');
+
+
+    userAgent.addProduct(engine);
+
+
+    expect(userAgent.toString())
+
+
+    .toBe(''EvilCorpBrowser/1.2 (X11; Linux; en-us) Blink/20420101'');
+
+
+    });
+
+
+    it(''should update products correctly'', function () {
+
+
+    var userAgent = new UserAgent;
+
+
+    // Create and add first product
+
+
+    var application = new UserAgent.Product(''EvilCorpBrowser'', ''1.2'');
+
+
+    application.setComment(''X11'', ''Linux'', ''en-us'');
+
+
+    userAgent.addProduct(application);
+
+
+    // Update first product
+
+
+    application.setComment(''X11'', ''Linux'', ''nl-nl'');
+
+
+    expect(userAgent.toString())
+
+
+    .toBe(''EvilCorpBrowser/1.2 (X11; Linux; nl-nl)'');
+
+
+    });
+
+
+    });
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Once you have done your testing and you are completely satisfied with the API
+    design for your first library version, then you can start thinking about the site’s
+    architecture and how exactly will your library be used.
+
+
+    Module Loader Compatibility
+
+
+    Not many developers use module loaders, and this is entirely up to you too. However,
+    you need to be aware that some developers that use your library might choose to
+    use a module loader, so you need to make your library compatible with this feature.
+
+
+    You can choose some of the popular module loaders such as AMD, RequireJS, and
+    CommonJS. If choosing between these functions is hard for you, you can also try
+    Universal Module Definition (UMD) which is aimed at supporting several types of
+    module loaders.
+
+
+    To make your library UMD compatible, you can also find some variations such as
+    the UMD GitHub repository. Begin to create your library by using one of these
+    templates. Another tip is to use Babel to compile ES5 combined with Babel’s UMD
+    plugin if you choose to use ES2015 import/export syntax function. This way, you
+    can use ES2015 in your projects as well as produce a library that can be used
+    by all kinds of developers using various modules.
+
+
+    Documentation
+
+
+    You need to start your documentation with basic information such as your project
+    name as well as a short description of what it is about. This will help others
+    understand what your library is meant to do and whether using your library is
+    a good choice for them. You can also include a little bit more information on
+    things such as scope and goals so users are better informed. Your roadmap can
+    also be included so users know what they can expect in the future in your library
+    development and how they can also contribute to it.
+
+
+    API, Tutorials and Examples'
+  toc: []
+  trans: "\n库的配置通常在项目初始化阶段完成，但某些库也允许你在运行时进行设置。这些配置通常仅限于简单的问题，因为更改这些设置只会更新这些值以供后续使用。\n\
+    \n代码：\n\n```javascript\n// 在初始化时配置\n\nvar userAgent = new UserAgent({\n\n  commentSeparator:\
+    \ ';'\n});\n\n// 使用公共方法进行运行时配置\n\nuserAgent.setOption('commentSeparator', '-');\n\
+    \n// 使用公共属性进行运行时配置\n\nuserAgent.commentSeparator = '-';\n```\n\n––––––––\n\n![image](img/scene_break.png)\n\
+    \n某些方法被刻意暴露出来以便与实例交互（getter），例如从实例中检索数据或向实例中写入数据（setter），以及执行某些操作。\n\n––––––––\n\
+    \n![image](img/scene_break.png)\n\n代码：\n\n––––––––\n\n![image](img/scene_break.png)\n\
+    \n```javascript\nvar userAgent = new UserAgent;\n\n// 获取所有产品注释的 getter\nuserAgent.getComments();\n\
+    \n// 打乱所有产品顺序的动作\nuserAgent.shuffleProducts();\n```\n\n回调有时也会通过公共方法接受并传递，它通常用于在异步任务后运行用户代码。\n\
+    \n```javascript\nvar userAgent = new UserAgent;\n\nuserAgent.doAsyncThing(function\
+    \ asyncThingDone() {\n  // 在异步任务完成后运行代码\n});\n```\n\n事件在 JavaScript 库中具有巨大的潜力。它们与回调略相似，但区别在于添加事件处理器不会导致触发动作。事件还用于指示某些事件，并可以向用户提供额外信息，同时为库返回对应的特定值。\n\
+    \n代码：\n\n```javascript\nvar userAgent = new UserAgent;\n\n// 在添加产品时进行验证\nuserAgent.on('product.add',\
+    \ function onProductAdd(e, product) {\n  var shouldAddProduct = product.toString().length\
+    \ < 5;\n  // 告诉库是否添加该产品\n  return shouldAddProduct;\n});\n```\n\n––––––––\n\n\
+    ![image](img/scene_break.png)\n\n你还可以允许用户扩展你自己的库。为了实现这一点，你需要公开你的公共方法或属性，以便用户对其填充，例如\
+    \ Angular 模块。\n\n代码：\n\n```javascript\n(angular.module('myModule')) and jQuery’s\
+    \ fn(jQuery.fn.myPlugin)\n```\n\n––––––––\n\n![image](img/scene_break.png)\n\n\
+    你也可以对上述操作都不做，允许用户通过它的命名空间访问你的库。\n\n代码：\n\n––––––––\n\n![image](img/scene_break.png)\n\
+    \n```javascript\n// AngryUserAgent 模块\n// 拥有 UserAgent 命名空间的权限\n(function AngryUserAgent(UserAgent)\
+    \ {\n  // 创建新方法 .toAngryString()\n  UserAgent.prototype.toAngryString = function()\
+    \ {\n    return this.toString().toUpperCase();\n  };\n})(UserAgent);\n\n// 应用代码\n\
+    var userAgent = new UserAgent;\n\n// ...\n// EVILCORPBROWSER/1.2 (X11; LINUX;\
+    \ EN-US) BLINK/20420101\nuserAgent.toAngryString();\n```\n\n同样，这允许你覆盖方法。\n\n```javascript\n\
+    // AngryUserAgent 模块\n(function AngryUserAgent(UserAgent) {\n  // 存储旧的 .toString()\
+    \ 方法以备后用\n  var _toString = UserAgent.prototype.toString;\n  // 覆盖 .toString()\n\
+    \  UserAgent.prototype.toString = function() {\n    return _toString.call(this).toUpperCase();\n\
+    \  };\n})(UserAgent);\n\nvar userAgent = new UserAgent;\n\n// ...\n// EVILCORPBROWSER/1.2\
+    \ (X11; LINUX; EN-US) BLINK/20420101\nuserAgent.toString();\n```\n\n––––––––\n\
+    \n![image](img/scene_break.png)\n\n在这种情况下，允许用户访问库的命名空间也意味着你对插件和扩展的定义控制力更小。\n\n\
+    为了让扩展遵循某些约定，你需要编写文档。\n\n### 测试\n\n对于测试驱动开发，大纲是必不可少的。换句话说，这是在你编写实际库之前，以测试的形式写下功能和标准的时间。\n\
+    \n如果你的测试显示某功能行为符合预期，并且你在将其写入库中之前就已经写下了它，那么这种策略被称为行为驱动开发。\n\n如果你的测试覆盖了库的每一个方面，并且你的代码通过了所有这些测试，那么你就可以安全地说你的库运行良好。\n\
+    \n你可以使用的其他测试框架还有：\n\n[使用 Mocha 和 Chai 测试你的 JavaScript](http://www.sitepoint.com/unit-test-javascript-mocha-chai/)\
+    \ 由 Jani Hartikainen 编写，你可以在 Mocha 中编写单元测试。\n\n[使用 Jasmine、Travis 和 Karma 测试 JavaScript](http://www.sitepoint.com/testing-javascript-jasmine-travis-karma/)\
+    \ 由 Tim Evko 编写，向你展示如何与另一个名为 Jasmine 的框架协调地设置测试流水线。\n\n下面是 Tim Severien 提供的另一个你可以尝试的大纲。他为他的库使用了\
+    \ Jasmine 测试，看起来像这样：\n\n代码：\n\n```javascript\ndescribe('Basic usage', function\
+    \ () {\n  it('should generate a single product', function () {\n    // 创建单个产品\n\
+    \    var product = new UserAgent.Product('EvilCorpBrowser', '1.2');\n  });\n\n\
+    \  it('should combine several products', function () {\n    var userAgent = new\
+    \ UserAgent;\n    // 创建并添加产品\n    var application = new UserAgent.Product('EvilCorpBrowser',\
+    \ '1.2');\n  });\n\n  it('should update products correctly', function () {\n \
+    \   var userAgent = new UserAgent;\n    // 创建并添加产品\n    var application = new\
+    \ UserAgent.Product('EvilCorpBrowser', '1.2');\n  });\n});\n```\n\n"
+- fmt: "\nAPI documentation is also an essential part of documentation as it will\
+    \ tell users how exactly to use your library. Other good additions would be examples\
+    \ as well as tutorials. This can take up some time so you can do this as your\
+    \ library development is on-going.\n\n## Meta-tasks\n\nUsers will also want to\
+    \ make changes to your library and this is usually in the form of a contribution\
+    \ but some may want to create a custom build only for private use. For these users,\
+    \ you can include documentation for meta-tasks that include a list of commands\
+    \ to build the library, run testing, generate and convert or download data.\n\n\
+    ## Contribution\n\nContributions are great especially when you open-source your\
+    \ library. Another documentation you can add in is to guide contributors to explain\
+    \ the steps in making a contribution to the library and what kind of criteria\
+    \ should they fill before making a contribution. This will make your review process\
+    \ easier to accept contributions that can actively upgrade and enhance your library.\n\
+    \n## License\n\nLicenses are important too. Include licenses so everyone knows\
+    \ what material is copyrighted. [ChooseALicense.com](http://choosealicense.com/)\
+    \ is recommended as an excellent resource for acquiring a license without any\
+    \ legal advisor. Save your chosen license as text in a `LICENSE.txt` file format\
+    \ in your project’s root.\n\n## Adding Versions/Releases to Your Git Repository\n\
+    \nVersioning is necessary for a good library. The current standard for version\
+    \ naming is via the `SemVer`, short for [Semantic Versioning](http://semver.org/).\
+    \ This version comprises three numbers to indicate different changes for major,\
+    \ minor and patch. If you do have a git repository, you can also add in version\
+    \ numbers. Consider the snapshots of your repository or `Tags`. To create a tag,\
+    \ open its terminal and do the following:\n\n```bash\ngit tag -a [version] -m\
+    \ [version message]\n```\n\n```bash\ngit tag -a v1.2.0 -m \"Awesome Library v1.2.0\"\
+    \n```\n\nGitHub for example provides a comprehensive view of all your versions\
+    \ as well as download links for each one of them.\n\n### Publishing to Common\
+    \ Repositories\n\n### npm\n\nMost programming languages are equipped with package\
+    \ managers or they at least have a third party package manager that enables users\
+    \ to pull in specific libraries for that specific programming language. For example,\
+    \ PHP’s manager is [Composer](http://www.sitepoint.com/mastering-composer-tips-tricks/)\
+    \ and Ruby on Rails is [RubyGems](https://rubygems.org/). For a standalone JavaScript\
+    \ engine such as Node.js you have [npm](https://www.npmjs.com/). By default, your\
+    \ `npm` package will be available publicly. But you also have the option of publishing\
+    \ the following:\n\n- [private packages](https://www.npmjs.com/npm/private-packages)\n\
+    - [set up a private registry](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry)\
+    \ \n- [completely avoid publishing](https://docs.npmjs.com/misc/registry#i-dont-want-my-package-published-in-the-official-registry-its-private)\n\
+    \nHowever, should you decide to publish your package, then you need the `package.json`\
+    \ file. You can do this manually or use an interactive wizard for thisit-or-use\
+    \ an interactive wizard for this. To begin this wizard, start by typing:\n\n```bash\n\
+    npm init\n```\n\nThe `version` property should match your git tag. Include the\
+    \ `README.md` file as well. Just like GitHub, `npm` uses that for the page presenting\
+    \ your package.\n\nOnce done, publish your package by typing:\n\n```bash\nnpm\
+    \ publish\n```\n\nThat’s it! You have successfully published your `npm` package.\n\
+    \n### Bower\n\nAnother useful package manager called Bower surfaced a few years\
+    \ ago. This is a package manager designed for the web. Here, you can find all\
+    \ major front-end asserts. The only thing is, your library will benefit from using\
+    \ Bower to publish your package is if your library set up to be browser-compatible.\n\
+    \n`npm` packages are primarily for JavaScript and many front-end packages still\
+    \ use npm but Bower is still fundamentally popular so go ahead and publish using\
+    \ Bower too.\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n\nTo generate\
+    \ a `bower.json` file, type:\n\n```bash\nbower init\n```\n\nJust like `npm init`,\
+    \ the instructions are self-explanatory. Finally, to publish your package:\n\n\
+    ```bash\nbower register awesomelib [https://github.com/you/awesomelib]\n```\n\n\
+    ––––––––\n\n![image](d2d_images/scene_break.png)\n\nNow you have your library\
+    \ available for everyone to use in their Node projects or on the web!\n\n## Conclusion\n\
+    \nRemember that your code development is the library. Make sure your library solves\
+    \ a problem, it is convenient and easy to use and above all stable. This will\
+    \ ensure that you and many other developers who use it are happy.\n\nThe tasks\
+    \ explained above are easily automated such as running tests and creating tags,\
+    \ updating your versions and publishing your packages.\n\n| ![image](d2d_images/chapter_title_corner_decoration_left.png)\
+    \ |  | ![image](d2d_images/chapter_title_corner_decoration_right.png) |\n\n![image](d2d_images/chapter_title_above.png)\n\
+    \n# Chapter 4:\n\n![image](d2d_images/chapter_title_below.png)\n\n# JavaScript\
+    \ Tips & Tricks\n\nto Keep and Remember\n\nIn this chapter, we will look into\
+    \ some short and useful tips related to improving your JavaScript skills and enhancing\
+    \ your code writing.\n\n| USING === Instead of == | The `==` (or `!=`) operator\
+    \ performs an automatic type conversion if needed. The `===` (or `!==`) operator\
+    \ will not perform any conversion. |\n| :--- | :--- |\n| charAt() Shorthand |\
+    \ To do this, you can utilize the `eval()` function however this bracket notation\
+    \ technique is much simpler than an evaluation: `\"myString\"[0]; // Returns 'm'`\
+    \ |\n| Strings convert to Numbers | The fastest and easiest ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29))\
+    \ way to do this would be using the `+` (plus) operator. `var one = '1'; var numberOne\
+    \ = +one; // Number 1`. You can also use the `-` (minus) operator which type-converts\
+    \ the value into number but also negates it. `var one = '1'; var negativeNumberOne\
+    \ = -one; // Number -1` |\n| Truthy/falsy values converted to boolean | You can\
+    \ convert a Truthy or Falsy value to true boolean with `!!`. `!!\"\" // false\
+    \ !!0 // false !!null // false !!NaN // false!!\"hello\" // true !!1 // true !![]\
+    \ // true` |\n| Using JSON.Stringify | Let’s say there is an object with properties\
+    \ “prop1”, “prop2”, “prop3”. Additional params can be passed to `JSON.stringify`\
+    \ to selectively write properties of the object to string like: `var obj = {'prop1':\
+    \ 'value1','prop2': 'value2','prop3': 'value3'}; var selectedProperties = ['prop1',\
+    \ 'prop2']; var str = JSON.stringify(obj, selectedProperties); // str {\"prop1\"\
+    :\"value1\",\"prop2\":\"value2\"}` The `str` will contain only info on selected\
+    \ properties. Instead of array we can pass a function also. `function selectedProperties(key,\
+    \ val) { the first val will be the entire object, key is empty string if (!key)\
+    \ {return val;} if (key === 'prop1' || key === 'prop2') {return val;} return;}`\
+    \ The last optional param it takes is to modify the way it writes the object to\
+    \ string. `var str = JSON.stringify(obj, selectedProperties, '\\t\\t'); /* str\
+    \ output with double tabs in every line.{\"prop1\": \"value1\",\"prop2\": \"value2\"\
+    }*/` |\n\n––––––––\n\n![image](d2d_images/scene_break.png)\n"
+  raw: 'API documentation is also an essential part of documentation as it will tell
+    users how exactly to use your library. Other good additions would be examples
+    as well as tutorials. This can take up some time so you can do this as you library
+    development is on-going.
+
+
+    Meta-tasks
+
+
+    Users will also want to make changes to your library and this is usually in the
+    form of a contribution but some may want to create a custom build only for private
+    use. For these users, you can include documentation for meta-tasks that include
+    a list of commands to build the  library, run testing, generate and convert or
+    download data.
+
+
+    Contribution
+
+
+    Contributions are great especially when you open-source your library. Another
+    documentation you can add in is to guide contributors to explain the steps in
+    making a contribution to the library and what kind of criteria should they fill
+    before making a contribution. This will make your review process easier to accept
+    contributions that can actively upgrade and enhance your library.
+
+
+    License
+
+
+    Licenses are important too. Include licenses so everyone knows what material is
+    copyrighted. [ChooseALicense.com](http://choosealicense.com/) is recommended as
+    an excellent resource for acquiring a license without any legal advisor. Save
+    your chosen license as text in a LICENSE.txt file format in your project’s root.
+
+
+    Adding Versions/Releases to Your Git Repository
+
+
+    Versioning is necessary for a good library. The current standard for version naming
+    is via the SemVer, short for [Semantic Versioning](http://semver.org/). This version
+    comprises three numbers to indicate different changes for major, minor and patch.
+    If you do have a git repository, you can also add in version numbers. Consider
+    the snapshots of your repository or Tags. To create a tag, open its terminal and
+    do the following:
+
+
+    # git tag -a [version] -m [version message]
+
+
+    git tag -a v1.2.0 -m "Awesome Library v1.2.0"
+
+
+    GitHub for example provides a comprehensive view of all your versions as well
+    as download links for each one of them.
+
+
+    ### Publishing to Common Repositories
+
+
+    npm
+
+
+    Most programming languages are equipped with package managers or they at least
+    have a third party package manager that enables users to pull in specific libraries
+    for that specific programming language. For example, PHP’s manager is [Composer](http://www.sitepoint.com/mastering-composer-tips-tricks/) and
+    Ruby on Rails is [RubyGems](https://rubygems.org/). For a standalone JavaScript
+    engine such as Node.js you have [npm](https://www.npmjs.com/). By default, your
+    npm package will be available publicly. But you also have the option of publishing
+    the following:
+
+
+    - [private packages](https://www.npmjs.com/npm/private-packages)
+
+
+    - [set up a private registry](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry) 
+
+
+    - [completely avoid publishing](https://docs.npmjs.com/misc/registry#i-dont-want-my-package-published-in-the-official-registry-its-private)
+
+
+    However, should you decide to publish your package, then you need the package.json
+    file. You can do this manually or use an interactive wizard for this. To begin
+    this wizard, start by typing:
+
+
+    npm init 
+
+
+    The version property should match your git tag. Include the README.md file as
+    well. Just like GitHub, npm uses that for the page presenting your package.
+
+
+    Once done, publish your package by typing:
+
+
+    npm publish
+
+
+    That’s it! You have successfully published your npm package.
+
+
+    Bower
+
+
+    Another useful package manager called Bower surfaced a few years ago. This is
+    a package manager designed for the web. Here, you can find all major front-end
+    asserts. The only thing is, your library will benefit from using Bower to publish
+    your package is if your library set up to be browser-compatible.
+
+
+    npm packages are primarily for JavaScript and many front-end packages still use
+    npm but Bower is still fundamentally popular so go ahead and publish using Bower
+    too.
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    To generate a bower.json file, type:
+
+
+    bower init
+
+
+    Just like npm init, the instructions are self-explanatory. Finally, to publish
+    your package:
+
+
+    bower register awesomelib [https://github.com/you/awesomelib](https://github.com/you/awesomelib)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Now you have your library available for everyone to use in their Node projects
+    or on the web!
+
+
+    ## Conclusion
+
+
+    Remember that your code development is the library. Make sure your library solves
+    a problem, it is convenient and easy to use and above all stable. This will ensure
+    that you and many other developers who use it are happy.
+
+
+    The tasks explained above are easily automated such as running tests and creating
+    tags, updating your versions and publishing your packages.
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 4:
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    JavaScript Tips & Tricks
+
+
+    to Keep and Remember
+
+
+    In this chapter, we will look into some short and useful tips related to improving
+    your JavaScript skills and enhancing your code writing.
+
+
+    | USING === Instead of == | The == (or !=) operator performs an automatic type
+    conversion if needed. The === (or !==) operator will not perform any conversion.What
+    it will do is compare the value and the type, which could be considered faster
+    ([jsPref](http://jsperf.com/strictcompare)) than ==.[10] == 10 // is true[10]
+    === 10  // is false''10'' ==  10  // is true''10'' === 10  // is false[]  == 
+    0  // is true[]  === 0  // is false''''   ==  false  // is true but true == "a"
+    is false''''  === false  // is false |
+
+
+    | charAt() Shorthand | To do this, you can utilize the eval() function however
+    this bracket notation shorthand technique is much simpler than an evaluationLonghand:"myString".charAt(0);Shorthand:"myString"[0];
+    // Returns ''m'' |
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    | Strings convert to Numbers | The fastest and easiest ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29))
+    way to do this would be using the + (plus) operator.var one = ''1'';var numberOne
+    = +one; // Number 1You can also use the - (minus) operator which type-converts
+    the value into number but also negates it.var one = ''1'';var negativeNumberOne
+    = -one; // Number -1 |
+
+
+    | Truthy/falsy values converted to boolean | You can convert a Truthy or Falsy
+    value to true boolean with ‘!!’ !!"" // false!!0 // false!!null // false!!undefined
+    // false!!NaN // false!!"hello" // true!!1 // true!!{} // true!![] // true |
+
+
+    | Using JSON.Stringify | Let’s say there is an object with properties “prop1”,
+    “prop2”, “prop3”. Additional params can be passed to JSON.stringify to selectively
+    write properties of the object to string like:var obj = {''prop1'': ''value1'',''prop2'':
+    ''value2'',''prop3'': ''value3''};var selectedProperties = [''prop1'', ''prop2''];var
+    str = JSON.stringify(obj, selectedProperties);// str// {"prop1":"value1","prop2":"value2"}The “str”will
+    contain only info on selected properties only. Instead of array we can pass a
+    function also.function selectedProperties(key, val) {// the first val will be
+    the entire object, key is empty stringif (!key) {return val;}if (key === ''prop1''
+    &#124;&#124; key === ''prop2'') {return val;}return;}The last optional param it
+    takes is to modify the way it writes the object to string.var str = JSON.stringify(obj,
+    selectedProperties, ''\t\t'');/* str output with double tabs in every line.{"prop1":
+    "value1","prop2": "value2"}*/ |'
+  toc: []
+  trans: "\n\nAPI 文档是文档中不可或缺的一部分，因为它会告诉用户具体如何使用你的库。其他很好的补充内容还有示例和教程。这可能会花费一些时间，因此你可以在库开发的过程中进行这些。\n\
+    \n## 元任务 (Meta-tasks)\n\n用户还可能想要对你的库进行更改，这通常以贡献的形式出现，但某些人可能想要仅供私下使用的自定义构建。对于这些用户，你可以包含关于元任务的文档，其中包含构建库、运行测试、生成、转换或下载数据的命令列表。\n\
+    \n## 贡献 (Contribution)\n\n贡献是非常棒的，尤其是当你开源你的库时。你可以添加的另一个文档是引导贡献者解释向库提交贡献的步骤，以及在提交贡献之前应该满足哪些标准。这将使你的审核过程更容易接受能够积极升级和增强你的库的贡献。\n\
+    \n## 许可证 (License)\n\n许可证同样重要。包含许可证，以便每个人都知道哪些材料受版权保护。[ChooseALicense.com](http://choosealicense.com/)\
+    \ 是一个在没有法律顾问的情况下获取许可证的优秀资源。将你选择的许可证以文本格式保存为项目根目录下的 `LICENSE.txt` 文件。\n\n## 向 Git\
+    \ 仓库中添加版本/发布\n\n版本控制对于一个良好的库来说是必要的。目前的版本命名标准是通过 `SemVer`，即 [Semantic Versioning](http://semver.org/)（语义化）的写。该版本由三个数字组成，表示主版本、次版本和补丁的不同更改。如果你有\
+    \ git 仓库，也可以添加版本号。考虑你仓库的快照或 `Tags`。要创建一个标签，打开终端并执行以下操作：\n\n```bash\ngit tag -a\
+    \ [version] -m [version message]\n```\n\n```bash\ngit tag -a v1.2.0 -m \"Awesome\
+    \ Library v1.2.0\"\n```\n\n例如，GitHub 提供了你所有版本的综合视图，以及每个版本的下载链接。\n\n### 发布到公共仓库\n\
+    \n### npm\n\n大多数编程语言都配备了包管理器，或者它们至少有一个第三方包管理器，允许用户拉取特定编程语言的特定库。例如，PHP 的管理器是 [Composer](http://www.sitepoint.com/mastering-composer-tips-tricks/)，Ruby\
+    \ on Rails 的是 [RubyGems](https://rubygems.org/)。对于像 Node.js 这样的独立 JavaScript 引擎，你有\
+    \ [npm](https://www.npmjs.com/)。默认情况下，你的 `npm` 包将公开可用。你也可以选择发布以下：\n\n- [私有包](https://www.npmjs.com/npm/private-packages)\n\
+    - [设置私有仓库](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry)\
+    \ \n- [完全避免发布](https://docs.npmjs.com/misc/registry#i-dont-want-my-package-published-in-the-official-registry-its-private)\n\
+    \n然而，如果你决定发布你的包，那么你需要一个 `package.json` 文件。你可以手动执行此操作，或使用交互式向导完成。要启动此向导，首先输入：\n\
+    \n```bash\nnpm init\n```\n\n`version` 属性应该与你的 git tag 匹配。包含 `README.md` 文件。就像\
+    \ GitHub 一样，`npm` 使用它作为展示你包的页面。\n\n完成后，通过输入以下命令发布你的包：\n\n```bash\nnpm publish\n\
+    ```\n\n大喜！你已成功发布了你的 `npm` 包。\n\n### Bower\n\n另一个名为 Bower 的实用包管理器几年前出现了。这是一个专为网页设计的包管理器。在这里，你可以找到所有主要的前端资源。唯一的是，如果你的库被设置为兼容浏览器，那么使用\
+    \ Bower 发布你的包将会从中获益。\n\n`npm` 包主要用于 JavaScript，许多前端包仍然在使用 npm，但 Bower 从根本上说仍然流行，所以也去使用\
+    \ Bower 发布吧。\n\n––––––––\n\n![image](img/scene_break.png)\n\n要生成 `bower.json`\
+    \ 文件，输入：\n\n```bash\nbower init\n```\n\n就像 `npm init` 一样，指令是自言自语的。最后，发布你的包：\n\n\
+    ```bash\nbower register awesomelib [https://github.com/you/awesomelib]\n```\n\n\
+    ––––––––\n\n![image](img/scene_break.png)\n\n现在，你的库可以供大家在他们的 Node 项目或网页上使用了！\n\
+    \n## 结论\n\n记住，你的代码开发就是库。确保你的库解决了问题，它是方便易用的，最重要的是它是稳定的。这将确保你和许多使用它的开发者都能感到开心。\n\
+    \n上面解释的任务可以很容易自动化，例如运行测试和创建标签、更新版本以及发布你的包。\n\n| ![image](img/chapter_title_corner_decoration_left.png)\
+    \ |  | ![image](img/chapter_title_corner_decoration_right.png) |\n\n![image](img/chapter_title_above.png)\n\
+    \n# 第 4 章：\n\n![image](img/chapter_title_below.png)\n\n# JavaScript 技巧与窍门\n\n\
+    保持与记忆\n\n在本章中，我们将介绍一些与提高 JavaScript 技能和增强代码写作相关的短小实用技巧。\n\n| 使用 === 代替 == | `==`（或\
+    \ `!=`）运算符在需要时会执行自动类型转换。`===`（或 `!==`）运算符不会执行任何转换。 |\n| :--- | :--- |\n| charAt()\
+    \ 简写 | 实现这一点，你可以利用 `eval()` 函数，但括号表示法比评估要简单得多：`\"myString\"[0]; // 返回 'm'` |\n\
+    | 字符串转换为数字 | 最快且最简单的 ([jsPerf](https://jsperf.com/number-vs-parseint-vs-plus/29))\
+    \ 方法是使用 `+`（加）运算符。`var one = '1'; var numberOne = +one; // 数字 1` 你也可以使用 `-`（减）运算符，它会将值转换为数字并取反。`var\
+    \ one = '1'; var negativeNumberOne = -one; // 数字 -1` |\n| 真假值转换为布尔 | 你可以使用 `!!`\
+    \ 将真值或假值转换为布尔值。`!!\"\" // false !!0 // false !!null // false !!NaN // false!!\"\
+    hello\" // true !!1 // true !![] // true` |\n| 使用 JSON.Stringify | 假设有一个具有“prop1”、“prop2”、“prop3”的对象。可以向\
+    \ `stringify` 传递额外的参数以选择性地将对象的属性写入字符串，例如：`var obj = {'prop1': 'value1','prop2':\
+    \ 'value2','prop3': 'value3'}; var selectedProperties = ['prop1', 'prop2']; var\
+    \ str = JSON.stringify(obj, selectedProperties); // str {\"prop1\":\"value1\"\
+    ,\"prop2\":\"value2\"}` `str` 将仅包含所选属性的信息。我们也可以传递函数。`function selectedProperties(key,\
+    \ val) { 第一个 val 将是整个对象，如果 key 为空字符串则 (!key) {return val;} 如果 (key === 'prop1'\
+    \ || key === 'prop2') {return val;} return;}` 最后一个可选参数是修改它将对象写入字符串的方式。`var str\
+    \ = JSON.stringify(obj, selectedProperties, '\\t\\t'); /* str 输出在每行都有双制表符。{\"\
+    prop1\": \"value1\",\"prop2\": \"value2\"}*/` |\n\n"
+- fmt: "\n## Single Method for Arrays and Writing Single Element\n\nInstead of writing\
+    \ separate methods to hold an array and a single element parameter, you can write\
+    \ functions so that they can handle both. You just have to concat everything into\
+    \ an array first. `Array.concat` will accept an array or a single element.\n\n\
+    ```javascript\nfunction printUpperCase(words) {\n  var elements = [].concat(words\
+    \ || []);\n  for (var i = 0; i < elements.length; i++) {\n    console.log(elements[i].toUpperCase());\n\
+    \  }\n}\n```\n\n`printUpperCase` is now ready to accept a single node or an array\
+    \ of nodes as its parameter. It also avoids the potential `TypeError` that would\
+    \ be thrown if no parameter was passed.\n\n```javascript\nprintUpperCase(\"cactus\"\
+    ); // => CACTUS\nprintUpperCase([\"cactus\", \"bear\", \"potato\"]); // => CACTUS,\
+    \ BEAR, POTATO\n```\n\n## Measure performance for a JavaScript Block\n\nFor quickly\
+    \ measuring performance of a JavaScript block, we can use the console functions\
+    \ like `[console.time(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimabel)`\
+    \ and `[console.timeEnd(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)`\n\
+    \n```javascript\nconsole.time(\"Array initialize\");\nvar arr = new Array(100),len\
+    \ = arr.length,i;\nfor (i = 0; i < len; i++) {\n  arr[i] = new Object();\n};\n\
+    console.timeEnd(\"Array initialize\"); // Outputs: Array initialize: 0.711ms\n\
+    ```\n\n## Hoisting\n\nHoisting will help you manage your function scope. Variable\
+    \ declarations and functions are hoisted to the top where as variable definitions\
+    \ are not.\n\n```javascript\nfunction doTheThing() {\n  // ReferenceError: notDeclared\
+    \ is not defined\n  console.log(notDeclared); // Outputs: undefined\n  console.log(definedLater);\n\
+    \  var definedLater;\n  definedLater = 'I am defined!' // Outputs: 'I am defined!'\n\
+    \  console.log(definedLater); // Outputs: undefined\n  console.log(definedSimulateneously);\n\
+    \  var definedSimulateneously = 'I am defined!' // Outputs: 'I am defined!'\n\
+    \  console.log(definedSimulateneously); // Outputs: 'I did it!'\n}\ndoSomethingElse();\n\
+    function doSomethingElse(){\n  console.log('I did it!');\n}\n// TypeError: undefined\
+    \ is not a function\nfunctionVar();\nvar functionVar = function(){\n  console.log('I\
+    \ did it!');\n}\n```\n\n# Chapter 5:\n\n## JavaScript Skills to Know Moving Forward\n\
+    \nWhether you like it or not, as a programmer or web or app developer, you need\
+    \ to learn JavaScript. It is considered the computer language of the future simply\
+    \ because it is an integral part of web ad app development.\n\nAs common as it\
+    \ is, JavaScript is pretty complicated especially when trends keep changing and\
+    \ with that, comes the ensuing chaos. Despite all that, things are improving in\
+    \ the JavaScript landscape, and with technology evolving, old problems with JavaScript\
+    \ are fixed, no doubt with new ones coming in.\n\nIf you are a new developer in\
+    \ 2016, your willingness and ability to learn JavaScript will definitely contribute\
+    \ to the success of your career and your skills as a programmer/coder/hacker or\
+    \ developer.\n\nSo what are the trends of JavaScript development should programmers\
+    \ work on going forward? In this chapter, we will look at the various things that\
+    \ will go big in the programming language world.\n\n## React & Redux\n\nIn 2015,\
+    \ React gained traction especially when more and more programmers started complaining\
+    \ about the `AngularJS` framework as 2014 came to an end. The fact that news broke\
+    \ out that `Angular 2` will be unsuitable to run with `Angular 1` made it even\
+    \ worse for the Angular community. React came in and closed this gap in 2016.\n\
+    \nEstimates based on screenshots from the internet archive. Perhaps a more telling\
+    \ pointer would be the npm download count for `react`, `angular`, and `Angular2`\
+    \ packages:\n\n[![angularjs vs react](d2d_images/image015.png)](http://www.npmtrends.com/react-vs-angular)\n\
+    \nFor the past year, React has been getting more traction from the JavaScript\
+    \ community than `AngularJS` has. So if you look at the graph above, you are probably\
+    \ wondering what happened after August? It shows that npm downloads for `React`\
+    \ have surged significantly and it also shows exactly when GitHub stars for `React`\
+    \ being to catch up with `AngularJS`’s stars.\n\nThe change is due to `Redux`,\
+    \ created by Dan Abramov during the `ReactEurope2015` conference. `Redux` had\
+    \ a simple flux implementation that convinced many programmers that it was time\
+    \ to adopt the one and only React.\n\nBefore the materialization of `Redux`, React\
+    \ was turbulent as people were trying to figure out how to best execute the ‘Flux’\
+    \ architecture. Since then, many other implementations begin surfacing, and while\
+    \ they aren’t bad, they weren’t exactly solving any issues that made most JavaScript\
+    \ developers wary.\n\nIn spite of the universal rendering and the gold stars for\
+    \ `React` and its virtual DOM, programmers were still cautious about using it\
+    \ in their projects. Despite this, more and more people started using `Redux`\
+    \ and realized it makes testing and debugging apps running on JavaScript a lot\
+    \ easier. From then on, `Redux` rose from the Flux are the real winner. `React`,\
+    \ and `Redux` definitely is the hottest trend for 2016, and it doesn’t look like\
+    \ it’ll fade away come 2017, regarding front-end ‘framework’. Netflix, Yahoo!,\
+    \ and Dropbox have all adopted `React` into their tech arsenal, giving it a confidence\
+    \ boost. Even so, Facebook’s `Relay` looks like a prospective contender in 2017.\n\
+    \n## Other Frameworks of Interest\n\nOther frameworks may come into the foray\
+    \ and while they aren’t comparable but here’s a general overview of what other\
+    \ frameworks are out there. Again, things may change with technology. What may\
+    \ not work so well this year might end up becoming top of the league next year.\n\
+    \n### Angular2\n\nPlenty of non-tech companies will be looking into Angular 2\
+    \ especially businesses that use Microsoft's framework. `Angular 2`, developed\
+    \ through a partnership between Google and Microsoft was designed to make JavaScript\
+    \ a more manageable language. Microsoft themselves were pushing for.NET aggressively\
+    \ last year as it open-sourced quite some elements and strove to make Microsoft\
+    \ tools more accessible to developers. After the rewrite, the teams hope to fix\
+    \ any sort of escalating issues with the `Angular 1` apps, and performance so\
+    \ far has been stellar. `Angular2` has been developed to support web components,\
+    \ and according to Google, it is the future for web development. The `Angular`\
+    \ community though has differing opinions about the direction that Angular is\
+    \ taking- all this despite the efforts the Angular team has been investing in\
+    \ helping developers transition properly from `Angular 1` to `Angular 2`. This\
+    \ rewrite has also allowed `React` to develop and mature as with its community\
+    \ growing each day. Because of this, programmers are skeptical that `Angular 2`\
+    \ will be as successful as `Angular 1`. However, as mentioned above, things can\
+    \ change in the tech world so it could be `Angular 2` will have room to grow in\
+    \ 2017. `Angular2` is still preferred as an alternative to the React app.\n\n\
+    ### Meteor\n\nAnother upcoming trend to look out for is Meteor, which has been\
+    \ enjoying steady downloads and GitHub stars. It integrates well with `React`\
+    \ and `Angular` and has plenty of nifty features. As a lightweight, full-stack\
+    \ JavaScript framework, developers are finding the Meteor framework a pleasure\
+    \ to work with. Meteor, always known as a solid beginner framework is great for\
+    \ prototyping as well.\n"
+  raw: '| Single Method for Arrays and Writing Single Element | Instead of writing
+    separate methods to hold an array and a single element parameter, you can write
+    functions so that they can handle both.You just have to concat everything into
+    an array first. Array.concat will accept an array or a single element.function
+    printUpperCase(words) {var elements = [].concat(words &#124;&#124; []);for (var
+    i = 0; i < elements.length; i++) {console.log(elements[i].toUpperCase());}}Print
+    UpperCase is now ready to accept a single node or an array of nodes as its parameter.
+    It also avoids the potentialTypeError that would be thrown if no parameter was
+    passed.printUpperCase("cactus");// => CACTUSprintUpperCase(["cactus", "bear",
+    "potato"]);// => CACTUS//  BEAR//  POTATO––––––––![image](d2d_images/scene_break.png)
+    |
+
+
+    | Measure performance for a JavaScript Block | For quickly measuring performance
+    of a JavaScript block, we can use the console functions like [console.time(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimelabel) and[console.timeEnd(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)console.time("Array
+    initialize");var arr = new Array(100),len = arr.length,i;for (i = 0; i < len;
+    i++) {arr[i] = new Object();};console.timeEnd("Array initialize"); // Outputs:
+    Array initialize: 0.711ms |
+
+
+    | Hoisting | Hoisting will help you manage your function scope.  Variable declarations
+    and functions are hoisted to the top where as variable definitions are not.function
+    doTheThing() { // ReferenceError: notDeclared is not definedconsole.log(notDeclared);//
+    Outputs: undefinedconsole.log(definedLater);var definedLater;definedLater = ''I
+    am defined!''// Outputs: ''I am defined!''console.log(definedLater)// Outputs:
+    undefinedconsole.log(definedSimulateneously);var definedSimulateneously = ''I
+    am defined!''// Outputs: ''I am defined!''console.log(definedSimulateneously)//
+    Outputs: ''I did it!''doSomethingElse();function doSomethingElse(){console.log(''I
+    did it!'');}// TypeError: undefined is not a functionfunctionVar();var functionVar
+    = function(){console.log(''I did it!'');} |
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Chapter 5:
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    JavaScript Skills to Know Moving Forward
+
+
+    Whether you like it or not, as a programmer or web or app developer, you need
+    to learn JavaScript. It is considered the computer language of the future simply
+    because it is an integral part of web ad app development.
+
+
+    As common as it is, JavaScript is pretty complicated especially when trends keep
+    changing and with that, comes the ensuing chaos. Despite all that, things are
+    improving in the JavaScript landscape, and with technology evolving, old problems
+    with JavaScript are fixed, no doubt with new ones coming in.
+
+
+    If you are a new developer in 2016, your willingness and ability to learn JavaScript
+    will definitely contribute to the success of your career and your skills as a
+    programmer/coder/hacker or developer.
+
+
+    So what are the trends of JavaScript development should programmers work on going
+    forward?
+
+
+    In this chapter, we will look at the various things that will go big in the programming
+    language world.
+
+
+    React & Redux
+
+
+    In 2015, React gained traction especially when more and more programmers started
+    complaining about the AngularJS framework as 2014 came to an end. The fact that
+    news broke out that Angular 2 will be unsuitable to run with Angular 1 made it
+    even worse for the Angular community. React came in and closed this gap in 2016.
+
+
+    ![github star growth](d2d_images/image009.png)
+
+
+    Estimates based on screenshots from the internet archive. Perhaps a more telling
+    pointer would be the npm download count for react, angular, and Angular2 packages:
+
+
+    [![angularjs vs react](d2d_images/image015.png)](http://www.npmtrends.com/react-vs-angular)
+
+
+    For the past year, React has been getting more traction from the JavaScript community
+    than AngularJS has. So if you look at the graph above, you are probably wondering
+    what happened after August? It shows that npm downloads for React have surged
+    significantly and it also shows exactly when GitHub stars for React being to catch
+    up with AngularJS’s stars.
+
+
+    The change is due to Redux, created by Dan Abramov during the ReactEurope2015
+    conference. Redux had a simple flux implementation that convinced many programmers
+    that it was time to adopt the one and only React.
+
+
+    Before the materialization of Redux, React was turbulent as people were trying
+    to figure out how to best execute the ‘Flux’ architecture. Since then, many other
+    implementations begin surfacing, and while they aren’t bad, they weren’t exactly
+    solving any issues that made most JavaScript developers wary.
+
+
+    In spite of the universal rendering and the gold stars for React and its virtual
+    DOM, programmers were still cautious about using it in their projects. Despite
+    this, more and more people started using Redux and realized it makes testing and
+    debugging apps running on JavaScript a lot easier. From then on, Redux rose from
+    the Flux are the real winner.
+
+
+    React, and Redux definitely is the hottest trend for 2016, and it doesn’t look
+    like it’ll fade away come 2017, regarding front-end ‘framework’ JavaScript. Netflix,
+    Yahoo!, and Dropbox have all adopted React into their tech arsenal, giving it
+    a confidence boost. Even so, Facebook’s Relay looks like a prospective contender
+    in 2017\.
+
+
+    Other Frameworks of Interest
+
+
+    Other frameworks may come into the foray and while they aren’t comparable but
+    here’s a general overview of what other frameworks are out there. Again, things
+    may change with anything regarding technology. What may not work so well this
+    year might end up becoming top of the league the next year.
+
+
+    Without further ado, here are some other frameworks to look into.
+
+
+    Angular2
+
+
+    Plenty of non-tech companies will be looking into using Angular 2 especially businesses
+    that use Microsoft''s.NET framework. Angular 2, developed through a partnership
+    between Google and Microsoft was designed to make JavaScript a more manageable
+    language.
+
+
+    Microsoft themselves were pushing for the.NET aggressively last year as it open-sourced
+    quite some elements and strove to make Microsoft tools more accessible to developers.
+    After the rewrite, the teams hope to fix any sort of escalating issues with the
+    Angular 1 apps, and performance so far has been stellar. Angular2 has been developed
+    to support web components, and according to Google, it is the future for web development.
+    The AngularJS community though has differing opinions about the direction that
+    Angular is taking- all this despite the efforts the Angular team has been investing
+    in helping developers transition properly from Angular 1 to Angular 2\.
+
+
+    This rewrite has also allowed React to develop and mature as with its community
+    growing larger each day. Because of this, programmers are skeptical that Angular
+    2 will be as successful as Angular 1. However, as mentioned above, things can
+    change in the tech world so it could be Angular 2 will have room to grow in 2017\.
+    Angular2 is still preferred as an alternative to the React app.
+
+
+    Meteor
+
+
+    Another upcoming trend to look out for is Meteor, which has been enjoying steady
+    downloads and GitHub stars. It integrates well with React and Angular and has
+    plenty of nifty features. As a lightweight, full-stack JavaScript framework, developers
+    are finding the Meteor framework a pleasure to work with. Meteor, always known
+    as a solid beginner framework is great for prototyping as well.'
+  toc: []
+  trans: "\n\n## 数组与单元素的单一处理方法\n\n与其编写单独的方法来处理数组和单个元素参数，你也可以编写函数使其能够同时处理这两者。你只需要先将所有内容合并到一个数组中。`Array.concat`\
+    \ 可以接受数组或单个元素。\n\n```javascript\nfunction printUpperCase(words) {\n  var elements\
+    \ = [].concat(words || []);\n  for (var i = 0; i < elements.length; i++) {\n \
+    \   console.log(elements[i].toUpperCase());\n  }\n}\n```\n\n`printUpperCase` 现在已准备好接收单个节点或节点数组作为参数。它还避免了在未传递参数时可能抛出的\
+    \ `TypeError`。\n\n```javascript\nprintUpperCase(\"cactus\"); // => CACTUS\nprintUpperCase([\"\
+    cactus\", \"bear\", \"potato\"]); // => CACTUS, BEAR, POTATO\n```\n\n## 测量 JavaScript\
+    \ 代码块的性能\n\n为了快速测量 JavaScript 代码块的性能，我们可以使用控制台函数，如 [console.time(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimabel)\
+    \ 和 [console.timeEnd(label)](https://developer.chrome.com/devtools/docs/console-api#consoletimeendlabel)\n\
+    \n```javascript\nconsole.time(\"Array initialize\");\nvar arr = new Array(100),len\
+    \ = arr.length,i;\nfor (i = 0; i < len; i++) {\n  arr[i] = new Object();\n};\n\
+    console.timeEnd(\"Array initialize\"); // 输出: Array initialize: 0.711ms\n```\n\
+    \n## 提升 (Hoisting)\n\n提升将帮助你管理函数作用域。变量声明和函数会被提升到顶部，而变量的定义则不会。\n\n```javascript\n\
+    function doTheThing() {\n  // ReferenceError: notDeclared is not defined\n  console.log(notDeclared);\
+    \ // 输出: undefined\n  console.log(definedLater);\n  var definedLater;\n  definedLater\
+    \ = 'I am defined!' // 输出: 'I am defined!'\n  console.log(definedLater); // 输出:\
+    \ undefined\n  console.log(definedSimulateneously);\n  var definedSimulateneously\
+    \ = 'I am defined!' // 输出: 'I am defined!'\n  console.log(definedSimulateneously);\
+    \ // 输出: 'I did it!'\n}\ndoSomethingElse();\nfunction doSomethingElse(){\n  console.log('I\
+    \ did it!');\n}\n// TypeError: undefined is not a function\nfunctionVar();\nvar\
+    \ functionVar = function(){\n  console.log('I did it!');\n}\n```\n\n# 第 5 章：\n\
+    \n## 未来需要掌握的 JavaScript 技能\n\n无论你是否喜欢，作为一名程序员或 Web 或 App 开发者，你都需要学习 JavaScript。它被认为是未来的计算机语言，仅仅是因为它是\
+    \ Web 和 App 开发不可或缺的一部分。\n\n尽管 JavaScript 非常常见，但它非常复杂，尤其是当趋势不断变化时，随之而来的是随之产生的混乱。尽管如此，JavaScript\
+    \ 领域正在不断改进，随着技术的演进，JavaScript 的旧问题得到了解决，毫无疑问会有新问题踵而至。\n\n如果你是 2016 年的新开发者，你学习\
+    \ JavaScript 的意愿和能力将有助于你职业生涯的成功，以及你作为程序员/编码员/黑客或开发者的技能。\n\n那么，程序员未来应该关注 JavaScript\
+    \ 开发的哪些趋势？在本章中，我们将看看编程语言世界中将变得流行的各种事物。\n\n## React & Redux\n\n在 2015 年，React 获得了关注，特别是当\
+    \ 2014 年结束时，越来越多的程序员开始抱怨 `AngularJS` 框架。`Angular 2` 将无法与 `Angular 1` 同时运行的消息传出，让\
+    \ Angular 社区的境地更加糟糕。React 在 2016 年填补了这一空白。\n\n根据互联网存档的截图进行估计。也许更具说明力的指标是 `react`、`angular`\
+    \ 和 `Angular2` 包的 npm 下载次数：\n\n![angularjs vs react](http://www.npmtrends.com/react-vs-angular)\n\
+    \n在过去的一年里，React 从 JavaScript 社区中获得的关注比 `AngularJS` 多。所以，如果你查看上面的图表，你可能在好奇 8 月之后发生了什么？它显示\
+    \ `React` 的 npm 下载量激增，并确切显示了 `React` 的 GitHub Star 数在何时追上 `AngularJS` 的 Star。\n\
+    \n这种变化归功于 Dan Abramov 在 `ReactEurope2015` 大会上创建的 `Redux`。`Redux` 有一个简单的 flux 实现，说服了许多程序员是时候采用唯一一的\
+    \ React 了。\n\n在 `Redux` 出现之前，React 处于动荡中，因为人们正试图弄清楚如何执行执行“Flux”架构。从那时起，出现了许多实现，虽然它们并不坏，但并没有完全解决让大多数\
+    \ JavaScript 开发者警惕的问题。\n\n尽管有通用的渲染以及 `React` 及其虚拟 DOM 的广受赞誉，程序员们在项目中使用它时仍然非常谨慎。尽管如此，越来越多的人开始使用\
+    \ `Redux` 并发现它让运行在 JavaScript 上的应用测试和调试变得简单得多。从那时起，`Redux` 从 Flux 脱颖而出成为真正的赢。`React`\
+    \ 和 `Redux` 绝对是 2016 年最热门的趋势，而且看起来在 2017 年也不会消失，就前端“框架”而言。\n\n## 其他关注的框架\n\n其他框架可能会进入这一领域，虽然它们并不完全对等，但这里是对现有框架的总体概述。再次，事情可能会随技术而改变。今年不理想的在明年可能会变成顶尖的。\n\
+    \n### Angular2\n\n许多非技术公司将研究 Angular 2，特别是使用微软框架的企业。`Angular 2` 是由 Google 和微软合作开发的，旨在让\
+    \ JavaScript 语言更易管理。去年微软积极推行 .NET，因为它开源了许多元素，并努力让微软工具对开发者可用。重写后，团队希望解决 `Angular\
+    \ 1` 应用的任何升级问题，到目前为止性能非常出色。`Angular2` 的开发是为了支持 Web 组件，根据 Google 的说法，它是 Web 开发的未来。尽管\
+    \ Angular 团队投入精力帮助开发者正确从 `Angular 1` 迁移到 `Angular 2`，`Angular` 社区对 Angular 的发展方向持有不同意见。这种重写也让\
+    \ `React` 得以发展和成熟，随着其社区日益增长。由于由于，程序员怀疑 `Angular 2` 会像 `Angular 1` 那样成功。然而，正如上面提到的，技术可能会变化，所以\
+    \ `Angular 2` 在 2017 年可能有增长空间。`Angular2` 仍然被认为是 React 应用的替代方案。\n\n### Meteor\n\
+    \n另一个值得关注的趋势是 Meteor，它一直拥有稳定的下载量和 GitHub Star。它与 `React` 和 `Angular` 集成良好，并具有许多巧妙的功能。作为一个轻量级的全栈\
+    \ JavaScript 框架，开发者发现 Meteor 框架非常好用。Meteor 一直作为实用的初学者框架，也非常适合原型制作。\n\n"
+- fmt: '
+
+    The thing that has prevented Meteor from becoming a mainstream success is due
+    to the hidden complexities that keep cropping up over time particularly when production
+    is concerned. Meteor, despite having raised loads of money, isn’t backed by a
+    leading tech enterprise with a broad pool of engineers, like what `React` & `AngularJS`.
+    Notwithstanding the fact that `AngularJS` has plenty of issues and yet is backed
+    up by Google, Meteor, on the other hand, is considered an investment risk as it’s
+    a framework for both the backend and frontend development. To get the most out
+    of the deployment ease, Meteor would also need to be hosted.
+
+
+    Another thing that isn’t working for Meteor at the moment is that many developers
+    aren’t big fans of the `MongoDB` and well, Mongo is Meteor’s default database.
+    Meteor will remain a nice though for 2017 since more developers will likely wait
+    for more reliable evidence that Meteor can be used for large and more complex
+    application development. Needless to say, Meteor will likely remain niche going
+    forward in 2016 or even 2017. Most professional developers will wait for any evidence
+    that it can be used for developing large, complex applications.
+
+
+    ## ES6 At Last
+
+
+    One of the things that JavaScript developers do in 2016 moving forward 2017 is
+    to ensure that all their apps are ES2015 compliant. But like many other complications
+    with tech apps and programming language, we have the `Babel` vs. `TypeScript`
+    issue.
+
+
+    `Babel` mostly translates the ES6 code to ES5 whereas `TypeScript` is really a
+    superset of JavaScript that adds necessary but optional static typing to JavaScript
+    and then compiles all of this to plain JavaScript as well. `Babel` and `TypeScript`
+    have been created with totally different purposes and therefore not comparable.
+
+
+    `Babel`, developed by Facebook, supports `Flow` which also adds in the static
+    type-checking for JavaScript. Using `Babel` makes a little bit more sense since
+    you can use both consecutively. `Babel` was also the first to helped bridge the
+    difference between ES5 and ES6 applications.
+
+
+    `TypeScript` on the other hand only supports ES6, thus playing second fiddle to
+    `Babel` when it comes to progressiveness. Checking in with the GitHub stars, it
+    looks like `Babel` is the most preferred transpiler. `React` developers also prefer
+    to use the `Babel` + `Webpack` combo.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/babel_vs_typescript.png](d2d_images/image012.png)
+
+
+    Despite the stars, `TypeScript` seems to be a lot more viable and sometimes and
+    even preferred choice especially if you are looking for a solution to make your
+    JavaScript codebase much more manageable. JavaScript has always been known to
+    be a difficult to read language making it even more difficult to debug, due to
+    its weak type-checking system. So in terms of support, `TypeScript` has enjoyed
+    a larger following than `Flow`.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/so_staticjs.png](d2d_images/image016.png)
+
+
+    The graph below shows the Google Trends Graph showing the growth of interest for
+    `TypeScript`.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/es6.png](d2d_images/image001.png)
+
+
+    Another reason that `TypeScript` could be getting popular is because of `Angular2`,
+    but just because JavaScript apps get larger focus, that isn’t the contributing
+    reason of why `TypeScript` becomes popular.
+
+
+    While `Redux` has made testing much easier, `TypeScript` makes codebase a lot
+    easier to maintain. Apart from this, Google, Facebook, and Microsoft are collaborating
+    to add on static typing to JavaScript and thus paving the way to EMCAScript.
+
+
+    At the same time, Google dropped `AtScript` and `AngularJS` in favor for `TypeScript`
+    by Microsoft. `Flow` by Facebook, on the other hand, doesn’t have the same community
+    popularity as `TypeScript`.
+
+
+    This goes to show that statically typed JavaScript is an active and growing trend
+    that even JavaScript non-believers will approve of where is `TypeScript` is the
+    most solid solution.
+
+
+    ## Functional Programming is Becoming Mainstream
+
+
+    Plenty of functional programming platforms have been making their way into mainstream
+    programming but very recently, the ‘functional programming model’ has gained plenty
+    of attention especially with the rise of complex web apps.
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/hn-fp.png](d2d_images/image013.png)
+
+
+    `Scala` is coming back as a favored language among backend developers who want
+    to embrace functional programming. However, Facebook’s `React`, on the other hand,
+    has encouraged front-end JavaScript developers to take on UI development using
+    a practical approach.
+
+
+    More and more positive feedback is coming in for functional programming, and it
+    looks like it will become mainstream in 2017. At this point of time, front-end
+    web development is taking the forefront in reactive and functional programming.
+
+
+    So the `React`+`Redux` agenda is really the most sought after beginner-friendly
+    solution for those that are comfortable with programming that is object-oriented.
+    In other words, `React` only needs developers to take a functional approach to
+    UI whereas `Redux` is mostly a system that encourages a practical approach to
+    handling data. All other things are done in the OOP-style.
+
+
+    ## RxJS
+
+
+    But for those who still want to go on track with the full-on functional reactive
+    programming, which is considered the ‘true’ FRP and still want to use JavaScript,
+    then `RxJS` is a necessary skill to learn. `RxJS` is an extension of JavaScript
+    that is reactive that can be used to replace the `Flux` architecture. It may sound
+    like overkill for simple and small apps but in truth, it builds a powerful foundation
+    for web applications that will go through a complicated stream of processing.
+
+
+    Netflix uses `RxJS` while `Angular2` also relies on `RxJS`. Developed by Microsoft,
+    `RxJS` works incredibly well with `TypeScript` thus developers can expect that
+    `RxJS` will continue to be improved.
+
+
+    Learning `RxJS` though is an entirely different arena. It has a steep learning
+    curve that make most developers give up on doing any FRP in JavaScript and pick
+    up other functional programming languages that are compatible with JavaScript.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/frp_gtrend.png](d2d_images/image022.png)
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Some of the compatible programming that developers choose to use instead of `RxJS`
+    is `ClojureScript` and `Elm`. However all these program’s growth and popularity
+    pales in comparison with `Redux`+`React`.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/frp_with_redux.png](d2d_images/image023.png)
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    The thing is, looking at how functional programming fits perfectly with addressing
+    modern issues in web development, one has to agree that functional programming
+    paradigm and its equivalent concepts will stick around as a necessary skill that
+    JavaScript developers will need to harness and learn.
+
+
+    ## Desktop Framework Showdown: Nw.js vs. Electron
+
+
+    Plenty of data nowadays requires synchronizing data from various platforms such
+    a desktop and mobile. However, many services mostly start out as web apps before
+    they are converted as desktop apps for enhanced user-experience. It is done this
+    way because web app developments are a lot faster and more easily updated. Above
+    all, users can also try out web apps more instantly without having to install
+    anything else.
+
+
+    Developers in the past were confined to using `CEF` if they wanted to use web
+    technologies to create front-end UI for desktop apps. Not an easy process and
+    the apps themselves weren’t truly cross-platform compatible. Though that, `Node.js`
+    has made cross-platform apps easier for desktop frameworks. The shift of using
+    web technologies for desktop app development began to rise starting 2014.
+
+
+    Thus, let’s take a look at the GitHub Star history for both projects:
+
+
+    ![nwjs vs electron](d2d_images/image004.png)
+
+    '
+  raw: 'The thing that has prevented Meteor from becoming a mainstream success is
+    due to the hidden complexities that keep cropping up over time particularly when
+    production is concerned. Meteor, despite having raised loads of money, isn’t backed
+    by a leading tech enterprise with a broad pool of engineers, like what React &
+    AngularJS are. Notwithstanding the fact that AngularJS has plenty of issues and
+    yet is backed up by Google, Meteor, on the other hand, is considered an investment
+    risk as it’s a framework for both the backend and frontend development. To get
+    the most out of the deployment ease, Meteor would also need to be hosted.
+
+
+    Another thing that isn’t working for Meteor at the moment is that many developers
+    aren’t big fans of the MongoDB and well, Mongo is Meteor’s default database. Meteor
+    will remain a nice though for 2017 since more developers will likely wait for
+    more reliable evidence that Meteor can be used for large and more complex application
+    development. Needless to say, Meteor will likely remain niche going forward in
+    2016 or even 2017\. Most professional developers will wait for any evidence that
+    it can be used for developing large, complex applications.
+
+
+    ES6 At Last
+
+
+    One of the things that JavaScript developers do in 2016 moving forward 2017 is
+    to ensure that all their apps are ES2015 compliant. But like many other complications
+    with tech apps and programming language, we have the Babel vs. TypeScript issue.
+
+
+    Babel mostly translates the ES6 code to ES5 whereas TypeScript is really a superset
+    of JavaScript that adds necessary but optional static typing to JavaScript and
+    then compiles all of this to plain JavaScript as well. Babel and TypeScript have
+    been created with totally different purposes and therefore not comparable.
+
+
+    Babel, developed by Facebook, supports Flow which also adds in the static type-checking
+    for JavaScript. Using Babel makes a little bit more sense since you can use both
+    consecutively. Babel was also the first to helped bridge the difference between
+    ES5 and ES6 applications.
+
+
+    TypeScript on the other hand only supports ES6, thus playing second fiddle to
+    Babel when it comes to progressiveness. Checking in with the GitHub stars, it
+    looks like Babel is the most preferred transpiler. React developers also prefer
+    to use the Babel + Webpack combo.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/babel_vs_typescript.png](d2d_images/image012.png)
+
+
+    Despite the stars, TypeScript seems to be a lot more viable and sometimes and
+    even preferred choice especially if you are looking for a solution to make your
+    JavaScript codebase much more manageable. JavaScript has always been known to
+    be a difficult to read language making it even more difficult to debug, due to
+    its weak type-checking system. So in terms of support, TypeScript has enjoyed
+    a larger following than Flow.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/so_staticjs.png](d2d_images/image016.png)
+
+
+    The graph below shows the Google Trends Graph showing the growth of interest for
+    TypeScript.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/es6.png](d2d_images/image001.png)
+
+
+    Another reason that TypeScript could be getting popular is because of  Angular2,
+    but just because JavaScript apps get larger focus, that isn’t the contributing
+    reason of why TypeScript becomes popular.
+
+
+    While Redux has made testing much easier, TypeScript makes codebase a lot easier
+    to maintain. Apart from this, Google, Facebook, and Microsoft are collaborating
+    to add on static typing to JavaScript and thus paving the way to EMCAScript.
+
+
+    At the same time, Google dropped AtScript and AngularJS in favor for TypeScript
+    by Microsoft. Flow by Facebook, on the other hand, doesn’t have the same community
+    popularity as TypeScript.
+
+
+    This goes to show that statically typed JavaScript is an active and growing trend
+    that even JavaScript non-believers will approve of where is TypeScript is the
+    most solid solution.
+
+
+    Functional Programming is Becoming Mainstream
+
+
+    Plenty of functional programming platforms have been making their way into mainstream
+    programming but very recently, the ‘functional programming model’ has gained plenty
+    of attention especially with the rise of complex web apps.
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/hn-fp.png](d2d_images/image013.png)
+
+
+    Scala is coming back as a favored language among backend developers who want to
+    embrace functional programming. However, Facebook’s React, on the other hand,
+    has encouraged front-end JavaScript developers to take on UI development using
+    a practical approach.
+
+
+    More and more positive feedback is coming in for functional programming, and it
+    looks like it will become mainstream in 2017\. At this point of time, front-end
+    web development is taking the forefront in reactive and functional programming.
+
+
+    So the React+Redux agenda is really the most sought after beginner-friendly solution
+    for those that are comfortable with programming that is object-oriented. In other
+    words, React only needs developers to take a functional approach to UI whereas
+    Redux is mostly a system that encourages a practical approach to handling data.
+    All other things are done in the OOP-style.
+
+
+    RxJS
+
+
+    But for those who still want to go on track with the full-on functional reactive
+    programming, which is considered the ‘true’ FRP and still want to use JavaScript,
+    then RxJS is a necessary skill to learn. RxJS is an extension of JavaScript that
+    is reactive that can be used to replace the Flux architecture. It may sound like
+    overkill for simple and small apps but in truth, it builds a powerful foundation
+    for web applications that will go through a complicated stream of processing.
+
+
+    Netflix uses RxJS while Angular2 also relies on RxJS. Developed by Microsoft,
+    RxJS works incredibly well with TypeScript thus developers can expect that RxJS
+    will continue to be improved.
+
+
+    Learning RxJS though is an entirely different arena. It has a steep learning curve
+    that make most developers give up on doing any FRP in JavaScript and pick up other
+    functional programming languages that are compatible with JavaScript.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/frp_gtrend.png](d2d_images/image022.png)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    Some of the compatible programming that developers choose to use instead of RxJS
+    is ClojureScript and Elm. However all these program’s growth and popularity pales
+    in comparison with Redux+React.
+
+
+    ![https://s3.amazonaws.com/codementor_content/2016-May/frp_with_redux.png](d2d_images/image023.png)
+
+
+    ––––––––
+
+
+    ![image](d2d_images/scene_break.png)
+
+
+    The thing is, looking at how functional programming fits perfectly with addressing
+    modern issues in web development, one has to agree that functional programming
+    paradigm and its equivalent concepts will stick around as a necessary skill that
+    JavaScript developers will need to harness and learn.
+
+
+    Desktop Framework Showdown: Nw.js vs. Electron
+
+
+    Plenty of data nowadays requires synchronizing data from various platforms such
+    a desktop and mobile. However, many services mostly start out as web apps before
+    they are converted as desktop apps for enhanced user-experience. It is done this
+    way because web app developments are a lot faster and more easily updated. Above
+    all, users can also try out web apps more instantly without having to install
+    anything else.
+
+
+    Developers in the past were confined to using CEF if they wanted to use web technologies
+    to create front-end UI for desktop apps. Not an easy process and the apps themselves
+    weren’t truly cross-platform compatible. Though that, Node.js has made cross-platform
+    apps easier for desktop frameworks. The shift of using web technologies for desktop
+    app development began to rise starting 2014.
+
+
+    Thus, let’s take a look at the GitHub Star history for both projects:
+
+
+    ![nwjs vs electron](d2d_images/image004.png)'
+  toc: []
+  trans: '
+
+
+    Meteor 没能取得主流成功的原因是随着时间推移不断出现的隐藏复杂性，特别是在涉及生产环境时。Meteor 尽管募集了大量资金，但它并没有像 `React`
+    和 `AngularJS` 那样拥有庞大工程师团队领先科技企业支持。尽管 `AngularJS` 有很多问题，但它有 Google 支撑；相比之下，Meteor
+    被认为一种投资风险，因为它是一个兼顾后端和前端开发的框架。为了充分利用部署的便利性，Meteor 还需要进行托管。
+
+
+    目前 Meteor 不理想的另一点是，许多开发者并不喜欢 `MongoDB`，而 Mongo 正恰是 Meteor 的默认数据库。在 2017 年，Meteor
+    可能仍然仅仅是一个不错的选择，因为更多开发者可能会在等待更可靠的证据，证明 Meteor 可用于大型、更复杂的应用程序开发。不言说，Meteor 在未来的
+    2016 年甚至 2017 年可能仍将保持小众地位。大多数专业开发者将等待任何关于它能开发大型、复杂应用的证据。
+
+
+    ## ES6 终于到来
+
+
+    JavaScript 开发者在 2016 年及未来的 2017 年要做的事情之一，是确保他们所有的应用都符合 ES2015 标准。但与其他许多技术应用和编程语言的复杂问题一样，我们面临着
+    `Babel` 与 `TypeScript` 问题。
+
+
+    `Babel` 主要将 ES6 代码翻译为 ES5，而 `TypeScript` 实际上是 JavaScript 的超集，它为 JavaScript 增加了必要的但可选的静态类型，然后将所有内容编译为纯
+    JavaScript。`Babel` 和 `TypeScript` 的创建目的完全不同，因此不具有可比性。
+
+
+    由 Facebook 开发的 `Babel` 支持 `Flow`，后者也为 JavaScript 增加了静态类型检查。使用 `Babel` 更有意义，因为你可以连续使用两者。`Babel`
+    也是第一个帮助桥接 ES5 和 ES6 应用程序差异的工具。
+
+
+    另一方面，`TypeScript` 只支持 ES6，因此在进步性方面次于 `Babel`。查看 GitHub Stars 数，`Babel` 似乎是最受欢迎的转编译器。`React`
+    开发者也倾向于使用 `Babel` + `Webpack` 的组合。
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/babel_vs_typescript.png`](img/image012.png)
+
+
+    尽管关注度很高，`TypeScript` 似乎要可行得多，有时甚至是更优的选择，特别是当你寻找一种能让你的 JavaScript 代码库更易于管理的解决方案时。JavaScript
+    一直以难以阅读而闻名，由于其弱类型检查系统，使其调试更加困难。因此在支持方面，`TypeScript` 拥有比 `Flow` 更多的追随者。
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/so_staticjs.png`](img/image016.png)
+
+
+    下面的图显示了 Google 趋势中 `TypeScript` 热度的增长。
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/es6.png`](img/image001.png)
+
+
+    `TypeScript` 可能流行的另一个原因是由于 `Angular2`，但仅仅因为 JavaScript 应用受到更多关注，并不是导致 `TypeScript`
+    流行的主要原因。
+
+
+    虽然 `Redux` 让测试变得简单得多，但 `TypeScript` 让代码库变得容易维护得多。此外，Google、Facebook 和微软正合作为 JavaScript
+    增加静态类型，从而为 ECMAScript 铺平道路。
+
+
+    与此同时，Google 放弃了 `AtScript` 和 `AngularJS`，转而采用微软的 `TypeScript`。另一方面，Facebook 的
+    `Flow` 并没有 `TypeScript` 那样的社区人气。
+
+
+    这表明静态类型 JavaScript 是一个活跃且不断增长的趋势，即使是 JavaScript 的否定者也会认可，而 `TypeScript` 是最可靠的解决方案。
+
+
+    ## 函数式编程走向主流
+
+
+    许多函数式编程平台已经进入主流编程，但最近，“函数式编程模型”引起了大量关注，特别是随着复杂 Web 应用的兴。
+
+
+    ![image](img/scene_break.png)
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/hn-fp.png`](img/image013.png)
+
+
+    `Scala` 回归想要拥抱函数式编程的后端开发者青睐语言。然而，Facebook 的 `React` 则鼓励前端 JavaScript 开发者使用实用的方法进行
+    UI 开发。
+
+
+    对于函数式编程的正面反馈越来越多，看起来它将在 2017 年成为主流。在此时，前端 Web 开发正处于响应式和函数式编程的前沿。
+
+
+    因此，`React`+`Redux` 方案对于那些习惯面向对象编程的人来说，是最受青的入门级解决方案。换句话说，`React` 只需要开发者对 UI 采用函数式方法，而
+    `Redux` 主要是一个鼓励使用实用方法处理数据的系统。其他事情都通过 OOP 风格完成。
+
+
+    ## RxJS
+
+
+    但对于那些仍然想坚持完全函数式响应式编程（被认为是“真正的” FRP）并且仍然想使用 JavaScript 的人，`RxJS` 是一个必须学习的技能。`RxJS`
+    是 JavaScript 的响应式扩展，可以取代 `Flux` 架构。对于简单的小应用，这可能大得其实，但事实上，它为通过复杂处理流的 Web 应用构建了强大的基础。
+
+
+    Netflix 使用 `RxJS`，而 `Angular2` 也依赖 `RxJS`。由微软开发的 `RxJS` 与 `TypeScript` 配合得非常好，因此开发者可以预期
+    `RxJS` 将继续改进。
+
+
+    然而，学习 `RxJS` 是一个完全不同的领域。它陡峭的学习曲线让大多数开发者放弃在 JavaScript 中进行任何 FRP，转而学习与 JavaScript
+    兼容的其他函数式编程语言。
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/frp_gtrend.png`](img/image022.png)
+
+
+    ![image](img/scene_break.png)
+
+
+    开发者选择替代 `RxJS` 使用的一些兼容语言是 `ClojureScript` 和 `Elm`。然而，所有程序的增长和人气与 `Redux`+`React`
+    相比都相形见绌。
+
+
+    ![`s3.amazonaws.com/codementor_content/2016-May/frp_with_redux.png`](img/image023.png)
+
+
+    ![image](img/scene_break.png)
+
+
+    事实考虑到函数式编程如何完美解决现代 Web 开发中的问题，人们必须承认函数式编程范式及其等概念将作为 JavaScript 开发者需要掌握和学习的技能生存。
+
+
+    ## 桌面框架对决：Nw.js vs. Electron
+
+
+    如今许多数据需要从各种平台（如桌面和移动端）同步数据。然而，许多服务大多数作为 Web 应用启动，然后被转换为桌面应用以增强用户体验。这样做是因为 Web
+    应用开发要快得多且更于更新。此外，用户也可以立即尝试 Web 应用，而无需安装其他任何东西。
+
+
+    过去的开发者如果想使用 Web 技术创建桌面应用的前端 UI，受限于使用 `CEF`。这不是一个容易的过程，而且应用程序本身并不是真正的跨平台兼容。尽管如此，`Node.js`
+    让桌面框架的跨平台应用变得更简单。使用 Web 技术开发桌面应用的趋势从 2014 年开始兴起。
+
+
+    因此，让我们来看看这两个项目的 GitHub Stars 历史：
+
+
+    ![nwjs vs electron](img/image004.png)
+
+
+    '
+- fmt: '
+
+    Although Nw.js broke into the scene much earlier and is considered older, it looks
+    like Electron is growing at an explosive rate, while nw.js is growing at a monotonous
+    linear rate.
+
+
+    ![nw.js vs electron](d2d_images/image005.png)
+
+
+    While Electron is pretty new, it is used by several established organizations
+    like Slack, Microsoft (Visual Studio Code), WordPress, and Sencha. But with the
+    ease of use that Electron’s has, the network and community grew very fast. This
+    wave of popularity is very likely to go on into 2017, thus enabling Electron to
+    become the framework of choice for desktop and web app development.
+
+
+    ## Mobile App Framework Showdown: React Native vs. Ionic
+
+
+    When Reactive Native came out, it was predicted that it would take over and charts
+    the course of mobile development with web technologies since it can be used to
+    develop cross-platform apps natively. So is 2017 the year of React Native? There
+    might be some expectations to that through this graph:
+
+
+    ![react native vs ionic](d2d_images/image008.png)
+
+
+    At this moment, React Native has not yet released any updated software as it is
+    still at version `0.26`. Whether or not it will become mainstream in 2017 depends
+    largely on developer’s patience to deal with app-development changes that needs
+    refactoring the whole codebase together with other issues.
+
+
+    Therefore, let’s take a look at the approximate npm downloads of React Native
+    vs Ionic:
+
+
+    ![react native vs ionic](d2d_images/image021.png)
+
+
+    From the graph, it seems that React Native is on track to overtake ionic as the
+    framework of choice for cross-platform mobile development using web technologies.
+
+
+    In terms of the job market, React Native is also becoming more in-demand than
+    Ionic:
+
+
+    [![react native vs ionic](d2d_images/image010.png)](http://www.indeed.com/jobtrends/q-react-native-q-ionic.html)
+
+
+    A quick search on job postings, show that at least 75 job postings are looking
+    for developers with ionic skills whereas 65 job postings are looking for developers
+    with React skills. This shows that there is an increasing surge of the familiarity
+    with React Native that will most likely be a huge push to any up and coming developers
+    going forward 2017.
+
+
+    ## The Future of Web API: GraphQL vs REST
+
+
+    Soon after Facebook mentioned that they were open-sourcing GraphQL, plenty of
+    JavaScript developers jumped onto the hype train earlier on in 2016, especially
+    since Facebook turned into the Apple of JavaScript when it came to open source
+    projects.
+
+
+    ![graphql](d2d_images/image018.png)
+
+
+    GraphQL was aiming to sort of replace REST APIs, but considering how ubiquitous
+    REST APIs are, this is an unlikely scenario:
+
+
+    ![rest vs graphql](d2d_images/image006.png)
+
+
+    GraphQL would do well with REST APIs, but it will definitely not replace REST
+    as some developers thought it would have. Even more to do with this is that GraphQL
+    is relatively new and linked with Facebook Relay, so there aren’t any learning
+    resources or best practices for programmers and developers to pick the skill up
+    elsewhere. With that said, 2017 is still too early for GraphQL to be going mainstream
+    despite the strong hype it has now.
+
+
+    ## JavaScript Trends Conclusion
+
+
+    In conclusion, the community of JavaScript moves and changes at a fast pace, keeping
+    up with any upcoming trends and in line with mainstream technology which means
+    more support, relevance, and resources. Based on the trends discussed in this
+    chapter, JavaScript developers should equip themselves with Redux & React and
+    also with other familiar functional programming such as `TypeScript`. Not only
+    that, having experience with React Native and Electron will definitely give upcoming
+    programmers a lot more push and credibility in a job search.
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Conclusion
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    Thank for making it through to the end of JavaScript: Tips and Tricks to Programming
+    Code with JavaScript. Let’s hope it was informative and able to provide you with
+    all of the tools you need to achieve your goals whatever it may be.
+
+
+    The next step is to use the coding skills that you have learned and apply it to
+    your own projects. Learning takes time, but you should be patient because just
+    like when you learn anything new, you are going to make mistakes.
+
+
+    Go over the lessons in this book again and reread them. Learning how to write
+    code is going to be confusing until you get the hang of it because of all the
+    different conditions and exceptions that you are going to learn.
+
+
+    Thanks and good luck!
+
+
+    ## About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+
+    With the books that he writes on computer programming, he hopes to provide great
+    value and help readers interested to learn computer-related topics.
+
+    '
+  raw: 'Although Nw.js broke into the scene much earlier and is considered older,
+    it looks like Electron is growing at an explosive rate, while nw.js is growing
+    at a monotonous linear rate.
+
+
+    ![nw.js vs electron](d2d_images/image005.png)
+
+
+    While Electron is pretty new, it is used by several established organizations
+    like Slack, Microsoft (Visual Studio Code), WordPress, and Sencha. But with the
+    ease of use that Electron’s has, the network and community grew very fast. This
+    wave of popularity is very likely to go on into 2017, thus enabling Electron to
+    become the framework of choice for desktop and web app development.
+
+
+    Mobile App Framework Showdown: React Native vs. Ionic
+
+
+    When Reactive Native came out, it was predicted that it would take over and charts
+    the course of mobile development with web technologies since it can be used to
+    develop cross-platform apps natively. So is 2017 the year of React Native? There
+    might be some expectations to that through this graph:
+
+
+    ![react native vs ionic](d2d_images/image008.png)
+
+
+    At this moment, React Native has not yet released any updated software as it is
+    still at version 0.26\. Whether or not it will become mainstream in 2017 depends
+    largely on developer’s patience to deal with app- development changes that needs
+    refactoring the whole codebase together with other issues.
+
+
+    Therefore, let’s take a look at the approximate npm downloads of React Native
+    vs Ionic:
+
+
+    ![react native vs ionic](d2d_images/image021.png)
+
+
+    From the graph, it seems that React Native is on track to overtake ionic as the
+    framework of choice for cross-platform mobile development using web technologies.
+
+
+    In terms of the job market, React Native is also becoming more in-demand than
+    Ionic:
+
+
+    [![react native vs ionic](d2d_images/image010.png)](http://www.indeed.com/jobtrends/q-react-native-q-ionic.html)
+
+
+    A quick search on job postings, show that at least 75 job postings are looking
+    for developers with ionic skills whereas 65 job postings are looking for developers
+    with React skills. This shows that there is an increasing surge of the familiarity
+    with React Native that will most likely be a huge push to any up and coming developers
+    going forward 2017\.
+
+
+    The Future of Web API: GraphQL vs REST
+
+
+    Soon after Facebook mentioned that they were open-sourcing GraphQL, plenty of
+    JavaScript developers jumped onto the hype train earlier on in 2016, especially
+    since Facebook turned into the Apple of JavaScript when it came to open source
+    projects.
+
+
+    ![graphql](d2d_images/image018.png)
+
+
+    GraphQL was aiming to sort of replace REST APIs, but considering how ubiquitous
+    REST APIs are, this is an unlikely scenario:
+
+
+    ![rest vs graphql](d2d_images/image006.png)
+
+
+    GraphQL would do well with REST APIs, but it will definitely not replace REST
+    as some developers thought it would have. Even more to do with this is that GraphQL
+    is relatively new and linked with Facebook Relay, so there aren’t any learning
+    resources or best practices for programmers and developers to pick the skill up
+    elsewhere. With that said, 2017 is still too early for GraphQL to be going mainstream
+    despite the strong hype it has now.
+
+
+    JavaScript Trends Conclusion
+
+
+    In conclusion, the community of JavaScript moves and changes at a fast pace, keeping
+    up with any upcoming trends and in line with mainstream technology which means
+    more support, relevance, and resources. Based on the trends discussed in this
+    chapter, JavaScript developers should equip themselves with Redux & React and
+    also with other familiar functional programming such as TypeScript. Not only that,
+    having experience with React Native and Electron will definitely give upcoming
+    programmers a lot more push and credibility in a job search.
+
+
+    | ![image](d2d_images/chapter_title_corner_decoration_left.png) |  | ![image](d2d_images/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](d2d_images/chapter_title_above.png)
+
+
+    # Conclusion
+
+
+    ![image](d2d_images/chapter_title_below.png)
+
+
+    Thank for making it through to the end of JavaScript: Tips and Tricks to Programming
+    Code with JavaScript. Let’s hope it was informative and able to provide you with
+    all of the tools you need to achieve your goals whatever it may be.
+
+
+    The next step is to use the coding skills that you have learned and apply it to
+    your own projects. Learning takes time, but you should be patient because just
+    like when you learn anything new, you are going to make mistakes.
+
+
+    Go over the lessons in this book again and reread them. Learning how to write
+    code is going to be confusing until you get the hang of it because of all the
+    different conditions and exceptions that you are going to learn.
+
+
+    Thanks and good luck!
+
+
+    About the Author
+
+
+    Charlie Masterson is a computer programmer and instructor who have developed several
+    applications and computer programs.
+
+
+    As a computer science student, he got interested in programming early but got
+    frustrated learning the highly complex subject matter.
+
+
+    Charlie wanted a teaching method that he could easily learn from and develop his
+    programming skills. He soon discovered a teaching series that made him learn faster
+    and better.
+
+
+    Applying the same approach, Charlie successfully learned different programming
+    languages and is now teaching the subject matter through writing books.
+
+
+    With the books that he writes on computer programming, he hopes to provide great
+    value and help readers interested to learn computer-related topics.'
+  toc: []
+  trans: '
+
+    尽管 Nw.js 出现得早得多并被认为更老，但看起来 Electron 正在以爆炸性的速度增长，而 nw.js 则在以单调的线性速度增长。
+
+
+    ![nw.js vs electron](img/image005.png)
+
+
+    虽然 Electron 还很新，但它已经被 Slack、微软（Visual Studio Code）、WordPress 和 Sencha 等多家成熟机构使用。但由于
+    Electron 易易用性，其网络和社区增长得非常快。这股热潮可能会持续到 2017 年，从而使 Electron 成为桌面和 Web 应用开发的首选框架。
+
+
+    ## 移动应用框架对决：React Native vs Ionic
+
+
+    当 React Native 出世时，人们预测它将接管市场，并利用 Web 技术规划移动开发的路线，因为它可以用于开发原生跨平台应用。那么 2017 年是
+    React Native 的年吗？通过这张图表，可能会产生一些预期：
+
+
+    ![react native vs ionic](img/image008.png)
+
+
+    目前，React Native 尚未发布任何更新软件，其版本仍停留在 `0.26`。它是否会在 2017 年成为主流，很大程度上取决于开发者对处理应用开发变化的耐心，这些变化可能需要同时重构整个代码库以及处理其他问题。
+
+
+    因此，让我们来看 React Native 与 Ionic 的近似 npm 下载量：
+
+
+    ![react native vs ionic](img/image021.png)
+
+
+    从图表来看，React Native 有望超越 Ionic，成为使用 Web 技术进行跨平台移动应用开发的首选框架。
+
+
+    在求职市场方面，React Native 的需求也正变得比 Ionic 更大：
+
+
+    ![react native vs ionic](http://www.indeed.com/jobtrends/q-react-native-q-ionic.html)
+
+
+    对职位招聘的快速搜索显示，至少有 75 份招聘正在寻找具备 Ionic 技能的开发者，而 65 份招聘正在寻找具备 React 技能的开发者。这表明对 React
+    Native 的熟悉度正日益激增，这可能会对 2017 年之后任何新颖的开发者提供巨大的推动力。
+
+
+    ## Web API 的未来：GraphQL vs REST
+
+
+    在 Facebook 提到他们将开源 GraphQL 后不久，许多 JavaScript 开发者在 2016 年早期就跟上了这一热潮，尤其是考虑到 Facebook
+    在开源项目方面已变为了 JavaScript 界的“苹果公司”。
+
+
+    ![graphql](img/image018.png)
+
+
+    GraphQL 旨在取代 REST APIs，但考虑到 REST APIs 是多么无处不在，这种可能性较小：
+
+
+    ![rest vs graphql](img/image006.png)
+
+
+    GraphQL 与 REST APIs 配合得很好，但它绝对不会像某些开发者认为的那样取代 REST。更进一步的是，GraphQL 相对较新，且与 Facebook
+    Relay 关联，因此程序员和开发者在其他地方没有足够的可以掌握该技能的学习资源或最佳实践。尽管如此，尽管 GraphQL 现在有很强的炒作，但 2017
+    年对于它成为主流仍然为过早。
+
+
+    ## JavaScript 趋势总结
+
+
+    结论是，JavaScript 社区移动和变化非常快，跟上任何即将到来的趋势并与主流技术保持一致，这意味着更多的支持、相关性和资源。根据本章讨论的趋势，JavaScript
+    开发者应该让自己配备 Redux & React，以及其他熟悉的函数式编程语言，如 `TypeScript`。不仅如此，拥有 React Native 和
+    Electron 的经验无疑将为未来的程序员求职时提供更多推动力和信誉。
+
+
+    | ![image](img/chapter_title_corner_decoration_left.png) |  | ![image](img/chapter_title_corner_decoration_right.png)
+    |
+
+
+    ![image](img/chapter_title_above.png)
+
+
+    # 结论
+
+
+    ![image](img/chapter_title_below.png)
+
+
+    感谢你看到《JavaScript：使用 JavaScript 编程的技巧与窍门》。希望这本书能够具有启发性，并能为你提供实现目标所需的所有工具，无论你的目标是什么。
+
+
+    下一步是使用你学到的编码技能并将其应用到你自己的项目中。学习需要时间，但你应该保持耐心，因为就像学习任何新事物一样，你会犯错。
+
+
+    再次回顾书中的课程并重新阅读它们。由于你将学习所有不同的条件和异常，在学会如何编写代码之前，你会感到困惑。
+
+
+    感谢并祝你好运！
+
+
+    ## 关于作者
+
+
+    Charlie Masterson 是一位计算机程序员和讲师，他开发过多个应用程序和计算机程序。
+
+
+    作为一名计算机科学学生，他很早就编程产生了兴趣，但在学习极其复杂的学科内容时感到挫败。
+
+
+    Charlie 想要一种他可以轻松学习并提高编程技能的教学方法。他很快发现了一系列让他学得更快、更好的教学课程。
+
+
+    通过同样的方法，Charlie 成功地学习了不同的编程语言，现在通过写书来教授这些主题。
+
+
+    通过他编写的计算机编程书籍，他希望提供巨大的价值，并帮助对学习计算机相关话题的读者。
+
+    '

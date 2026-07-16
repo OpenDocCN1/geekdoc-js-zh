@@ -1,0 +1,108 @@
+name: Javascript： Ultimate Beginners Guide
+name_cn: Javascript：初学者指南
+slug: javascript-ultimate-beginners-guide
+toc:
+- - '#'
+  - Javascript：初学者指南
+- - '##'
+  - 引言
+- - '##'
+  - 第 1 章：学习 JavaScript 基础
+- - '###'
+  - 使用 JavaScript 的益处
+- - '###'
+  - 设置 JavaScript
+- - '###'
+  - 换行符与空格
+- - '###'
+  - 使用分号
+- - '###'
+  - 大小写敏感
+- - '###'
+  - 编写注释
+- - '###'
+  - 输出
+- - '##'
+  - 第 3 章：使用 JavaScript 语法
+- - '###'
+  - Values
+- - '###'
+  - Operators
+- - '###'
+  - Expressions
+- - '###'
+  - Understanding how keywords work with JavaScript
+- - '###'
+  - Using Camel Case
+- - '##'
+  - 第 4 章：妥善放置你的 JavaScript
+- - '###'
+  - 在 `<head>…</head>` 部分中编写 JavaScript
+- - '###'
+  - 在 `<body>…</body>` 部分中编写 JavaScript
+- - '###'
+  - 在 body 和 head 部分中编写 JavaScript
+- - '###'
+  - 将 JavaScript 添加到外部文件然后引入到头部部分
+- - '##'
+  - 第 5 章：在 JavaScript 中使用变量
+- - '###'
+  - 变量
+- - '###'
+  - 变量的作用域
+- - '###'
+  - 变量的命名
+- - '##'
+  - 第 6 章：在 JavaScript 中使用运算符
+- - '###'
+  - 算术运算符
+- - '###'
+  - 比较运算符
+- - '###'
+  - 关系运算符
+- - '###'
+  - 赋值运算符
+- - '##'
+  - 第 7 章：教程序如何做决定
+- - '###'
+  - “if” 语句
+- - '###'
+  - “if…else” 语句
+- - '##'
+  - 第 8 章：在 JavaScript 中使用函数
+- - '###'
+  - 函数的定义
+- - '###'
+  - 返回语句
+- - '##'
+  - 第 9 章：对象在 JavaScript 中如何工作
+- - '###'
+  - 对象的属性
+- - '###'
+  - 对象方法（Object Methods）
+- - '###'
+  - 使用 `new` 操作符
+- - '###'
+  - Object () 构造函数
+- - '##'
+  - 第 10 章：在 JavaScript 中创建事件
+- - '###'
+  - 对话框
+- - '###'
+  - 警报对话框
+- - '###'
+  - 确认对话框
+- - '###'
+  - 提示对话框
+- - '##'
+  - 第 11 章：在代码中创建循环
+- - '###'
+  - While 循环语句
+- - '###'
+  - Do….while 循环语句
+- - '###'
+  - For 循环语句
+- - '###'
+  - 循环控制语句
+- - '###'
+  - 结论

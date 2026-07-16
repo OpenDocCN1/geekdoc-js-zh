@@ -1,0 +1,2170 @@
+- fmt: "\n![](cover.jpeg)\n\nJavaScript for Kids\n\nStart Your Coding Adventure\n\n\
+    Abdelfattah Ragab\n\n# Introduction\n\nWelcome to the book “JavaScript for Kids:\
+    \ Start your Coding Adventure”.\n\nThis book is your introduction to the world\
+    \ of JavaScript. It's your first step towards developing websites and mobile applications.\
+    \ With JavaScript, you can turn your ideas into reality. Learning should be fun,\
+    \ so you will feel like you are reading a story.\n\nBy the end of this book, you\
+    \ will have a good understanding of JavaScript. You will have taken the first\
+    \ steps in your modern web programming adventure.\n\nHave fun programming!\n\n\
+    # Move forward\n\nWhen you start a new topic, you should explore it broadly and\
+    \ focus on moving forward without getting lost in the details. I also recommend\
+    \ that you gather information on the same topic from different sources.\n\nTake\
+    \ breaks from time to time, look for short answers to questions, and use different\
+    \ sources to get different perspectives. Don´t worry if you still don't understand\
+    \ after many attempts, just keep going because you will come across it again later.\n\
+    \n# Java vs JavaScript\n\nJava and JavaScript are different programming languages\
+    \ with different goals: Java is a general-purpose, object-oriented language used\
+    \ for developing applications for various platforms, while JavaScript is a scripting\
+    \ language used mainly for creating interactive content on websites.\n\n# What\
+    \ is JavaScript?\n\nJavaScript is a programming language that is mainly used to\
+    \ create interactive content on websites. It allows developers to implement features\
+    \ on web pages, such as interactive forms and real-time updates, without having\
+    \ to reload the page.\n\nJavaScript was primarily developed for execution by the\
+    \ web browser. You are familiar with web browsers because we use them all the\
+    \ time. The most popular browsers include Google Chrome, Microsoft Edge, Mozilla\
+    \ Firefox, Opera and Safari.\n\nJavaScript is a programming language that mainly\
+    \ exists and is executed within the web browser. This was the case for many years\
+    \ before the release of `Node.js`. With `Node.js`, you can use JavaScript for\
+    \ server-side programming outside the web browser. Now we use JavaScript for all\
+    \ types of programming.\n\n# How do web browsers work?\n\nWhen you visit a website\
+    \ in the browser, it goes to the specified `URL`, downloads the files and displays\
+    \ them on the screen. Websites are made up of three types of files that together\
+    \ make up the page you see online.\n\nFirst, there is the HTML code, which is\
+    \ responsible for the content of the website, with no styles or programming, just\
+    \ the content.\n\nLet's say we have a web page for a product on Amazon.com. The\
+    \ HTML consists of the product name, price, images, description and shipping details.\n\
+    \nEverything is written in plain text, line by line. And the images are displayed\
+    \ one after the other, each on a separate line.\n\nImagine I give you some information\
+    \ and ask you to write it down in your notebook.\n\nYou write the product name\
+    \ on the first line, the price on the second line and so on.\n\nJust the information\
+    \ without any design or programming.\n\n![Image](images/image18.jpeg)\n\nThat's\
+    \ what HTML does: it displays the information in a semantic way. Accessibility\
+    \ devices read their information from the HTML. They are mainly interested in\
+    \ the information. If you use a screen reader for a blind user, it will read the\
+    \ content of the page. All styles are ignored.\n\nHowever, for sighted people\
+    \ who can see and interact with the website, the styles are important.\n\nFor\
+    \ example, if we apply styles to a product page on Amazon, we can make the title\
+    \ bigger and put the images on the left-hand side in a separate area. We can also\
+    \ hide all the images and only show the first image in a carousel or slider. We\
+    \ can change colors, fonts, spacing and borders, draw shapes and do all sorts\
+    \ of things with CSS.\n\n![Image](images/image17.png)\n\nSo, now you know HTML\
+    \ and CSS, but there's a third component: JavaScript.\n\n# What is programming?\n\
+    \nProgramming is the process of creating a set of instructions that a computer\
+    \ can follow to perform specific tasks.\n\n# Create a small application\n\nLet\
+    \ us create a small application so that you understand what programming means.\n\
+    \nThe application takes two numbers and should return the sum of the two.\n\n\
+    I will create a variable called `firstNumber` and a second one called `secondNumber`.\n\
+    \nYou can define the variables `x` and `y`, but professional programmers recommend\
+    \ giving the variables a meaningful name that clarifies the purpose of the creation.\
+    \ This is very useful when sharing your code with others so that they can easily\
+    \ understand what you are trying to do.\n\n```javascript\nlet firstNumber;\nlet\
+    \ secondNumber;\nreturn firstNumber + secondNumber;\n```\n\nIn JavaScript, we\
+    \ use the word `let` to declare a variable. You can then refer to the variable\
+    \ name to perform calculations.\n\nWe use the word `return` to return the final\
+    \ result once the calculations are complete.\n\nTo be able to call this, it is\
+    \ inserted into a function.\n\n```javascript\nfunction sum(firstNumber, secondNumber)\
+    \ {\n  return firstNumber + secondNumber;\n}\n```\n\nYou can then call it as follows:\n\
+    \n```javascript\nconst result = sum(1, 2);\nconsole.log('Result is: ', result)\n\
+    ```\n\n`const` is similar to `let`, but is used for constants that will not change.\
+    \ We can still use `let`, but we use `const` to save memory and prevent others\
+    \ from changing it.\n\n`console.log` is used to display a message in the browser\
+    \ console. You can display multiple values with commas in between like I did.\
+    \ I show the statement 'Result is: ' followed by the actual result.\n\n# Try it\
+    \ yourself\n\nSearch for “online javascript compiler” and choose your favorite\
+    \ online JavaScript compiler.\n\nWrite the code in the online compiler and run\
+    \ it.\n\n```javascript\nfunction sum(firstNumber, secondNumber) {\n  return firstNumber\
+    \ + secondNumber;\n}\n\nconst result = sum(1, 2);\nconsole.log('Result is: ',\
+    \ result)\n```\n\n![Image](images/image11.png)\n\n![Image](images/image7.png)\n\
+    \n**Congratulations!** You have created your first JavaScript program. All that\
+    \ comes next are variations of what you have done.\n\n# DOM (Document Object Model)\n\
+    \nWhen a web page is loaded in a browser, the browser creates a DOM of the page,\
+    \ which is essentially a tree-like structure where each node corresponds to a\
+    \ part of the document, such as elements, attributes, and text.\n\n# JavaScript\
+    \ and DOM\n\nJavaScript allows you to access the `dom`, so you can modify the\
+    \ web page programmatically at run time.\n\nThe browser window is represented\
+    \ by the `window` object, which you can access in JavaScript to get information\
+    \ about things such as location and so on.\n\nThe other important object which\
+    \ is available for you in JavaScript is the `document` object, which represents\
+    \ the entire HTML document loaded in the browser. It provides methods to access\
+    \ and manipulate the content of the document.\n\n# document.querySelector()\n\n\
+    The `document.querySelector()` method is a powerful function in JavaScript that\
+    \ allows you to select HTML elements using CSS selectors.\n\nThe string passed\
+    \ to `querySelector()` must be a valid CSS selector. This is related to CSS, so\
+    \ here are some examples on CSS selectors.\n\nLet’s say you have the following\
+    \ HTML in your web page:\n\n```html\n<div id=\"myDiv\" class=\"container\">\n\
+    \  <p class=\"text\">Hello, World!</p>\n</div>\n```\n\n# Select element by tag\
+    \ name\n\nTo select the first paragraph:\n\n```javascript\nlet firstParagraph\
+    \ = document.querySelector(\"p\");\n```\n\nThis will select the bolded paragraph\
+    \ element\n\n```html\n<div id=\"myDiv\" class=\"container\">\n  <p class=\"text\"\
+    >Hello, World!</p>\n</div>\n```\n\nThere is another method called `querySelectorAll`,\
+    \ that you can use if you want to select all the paragraphs in the document.\n\
+    \n# Select element by id\n\nTo select the element with the id `myDiv`:\n\n```javascript\n\
+    let myDivElement = document.querySelector(\"#myDiv\");\n```\n\nNote the `#` in\
+    \ front of the id.\n\nThis will select the bolded div element.\n\n```html\n<div\
+    \ id=\"myDiv\" class=\"container\">\n  <p class=\"text\">Hello, World!</p>\n</div>\n\
+    ```\n\n# Select element by class name\n\nTo select the element with the class\
+    \ `container`:\n\n```javascript\nlet myDivElement = document.querySelector(\"\
+    .container\");\n```\n"
+  raw: '
+
+
+    ![](cover.jpeg)
+
+
+    JavaScript for Kids
+
+
+    Start Your Coding Adventure
+
+
+    Abdelfattah Ragab
+
+
+    # Introduction
+
+
+    Welcome to the book “JavaScript for Kids: Start your Coding Adventure”.
+
+
+    This book is your introduction to the world of JavaScript. It''s your first step
+    towards developing websites and mobile applications. With JavaScript, you can
+    turn your ideas into reality. Learning should be fun, so you will feel like you
+    are reading a story.
+
+
+    By the end of this book, you will have a good understanding of JavaScript. You
+    will have taken the first steps in your modern web programming adventure.
+
+
+    Have fun programming!
+
+
+    # Move forward
+
+
+    When you start a new topic, you should explore it broadly and focus on moving
+    forward without getting lost in the details. I also recommend that you gather
+    information on the same topic from different sources.
+
+
+    Take breaks from time to time, look for short answers to questions, and use different
+    sources to get different perspectives. Don´t worry if you still don''t understand
+    after many attempts, just keep going because you will come across it again later.
+
+
+    # Java vs JavaScript
+
+
+    Java and JavaScript are different programming languages with different goals:
+    Java is a general-purpose, object-oriented language used for developing applications
+    for various platforms, while JavaScript is a scripting language used mainly for
+    creating interactive content on websites.
+
+
+    # What is JavaScript?
+
+
+    JavaScript is a programming language that is mainly used to create interactive
+    content on websites. It allows developers to implement features on web pages,
+    such as interactive forms and real-time updates, without having to reload the
+    page.
+
+
+    JavaScript was primarily developed for execution by the web browser. You are familiar
+    with web browsers because we use them all the time. The most popular browsers
+    include Google Chrome, Microsoft Edge, Mozilla Firefox, Opera and Safari.
+
+
+    JavaScript is a programming language that mainly exists and is executed within
+    the web browser. This was the case for many years before the release of Node.js.
+    With Node.js, you can use JavaScript for server-side programming outside the web
+    browser. Now we use JavaScript for all types of programming.
+
+
+    # How do web browsers work?
+
+
+    When you visit a website in the browser, it goes to the specified URL, downloads
+    the files and displays them on the screen. Websites are made up of three types
+    of files that together make up the page you see online.
+
+
+    First, there is the HTML code, which is responsible for the content of the website,
+    with no styles or programming, just the content.
+
+
+    Let''s say we have a web page for a product on Amazon.com. The HTML consists of
+    the product name, price, images, description and shipping details.
+
+
+    Everything is written in plain text, line by line. And the images are displayed
+    one after the other, each on a separate line.
+
+
+    Imagine I give you some information and ask you to write it down in your notebook.
+
+
+    You write the product name on the first line, the price on the second line and
+    so on.
+
+
+    Just the information without any design or programming.
+
+
+    ![Image](images/image18.jpeg)
+
+
+    That''s what HTML does: it displays the information in a semantic way. Accessibility
+    devices read their information from the HTML. They are mainly interested in the
+    information. If you use a screen reader for a blind user, it will read the content
+    of the page. All styles are ignored.
+
+
+    However, for sighted people who can see and interact with the website, the styles
+    are important.
+
+
+    For example, if we apply styles to a product page on Amazon, we can make the title
+    bigger and put the images on the left-hand side in a separate area. We can also
+    hide all the images and only show the first image in a carousel or slider. We
+    can change colors, fonts, spacing and borders, draw shapes and do all sorts of
+    things with CSS.
+
+
+    ![Image](images/image17.png)
+
+
+    So, now you know HTML and CSS, but there''s a third component: JavaScript.
+
+
+    # What is programming?
+
+
+    Programming is the process of creating a set of instructions that a computer can
+    follow to perform specific tasks.
+
+
+    # Create a small application
+
+
+    Let us create a small application so that you understand what programming means.
+
+
+    The application takes two numbers and should return the sum of the two.
+
+
+    I will create a variable called first firstNumber and a second one called secondNumber.
+
+
+    You can define the variables x and y, but professional programmers recommend giving
+    the variables a meaningful name that clarifies the purpose of the creation. This
+    is very useful when sharing your code with others so that they can easily understand
+    what you are trying to do.
+
+
+    let firstNumber;
+
+
+    let secondNumber;
+
+
+    return firstNumber + secondNumber;
+
+
+    In JavaScript, we use the word let to declare a variable. You can then refer to
+    the variable name to perform calculations.
+
+
+    We use the word return to return the final result once the calculations are complete.
+
+
+    To be able to call this, it is inserted into a function.
+
+
+    function sum(firstNumber, secondNumber) {
+
+
+    return firstNumber + secondNumber;
+
+
+    }
+
+
+    You can then call it as follows:
+
+
+    const result = sum(1, 2);
+
+
+    console.log(''Result is: '', result)
+
+
+    const is similar to let, but is used for constants that will not change. We can
+    still use let, but we use const to save memory and prevent others from changing
+    it.
+
+
+    Console.log is used to display a message in the browser console. You can display
+    multiple values with commas in between like I did. I show the statement ''Result
+    is: '' followed by the actual result.
+
+
+    # Try it yourself
+
+
+    Search for “online javascript compiler” and choose your favorite online JavaScript
+    compiler.
+
+
+    Write the code in the online compiler and run it.
+
+
+    function sum(firstNumber, secondNumber) {
+
+
+    return firstNumber + secondNumber;
+
+
+    }
+
+
+    const result = sum(1, 2);
+
+
+    console.log(''Result is: '', result)
+
+
+    ![Image](images/image11.png)
+
+
+    ![Image](images/image7.png)
+
+
+    **Congratulations!** You have created your first JavaScript program. All that
+    comes next are variations of what you have done.
+
+
+    # DOM (Document Object Model)
+
+
+    When a web page is loaded in a browser, the browser creates a DOM of the page,
+    which is essentially a tree-like structure where each node corresponds to a part
+    of the document, such as elements, attributes, and text.
+
+
+    # JavaScript and DOM
+
+
+    JavaScript allows you to access the dom, so you can modify the web page programmatically
+    at run time.
+
+
+    The browser window is represented by the window object, which you can access in
+    JavaScript to get information about things such as location and so on.
+
+
+    The other important object which is available for you in JavaScript is the document
+    object, which represents the entire HTML document loaded in the browser. It provides
+    methods to access and manipulate the content of the document.
+
+
+    # document.querySelector()
+
+
+    The document.querySelector() method is a powerful function in JavaScript that
+    allows you to select HTML elements using CSS selectors.
+
+
+    The string passed to querySelector() must be a valid CSS selector. This is related
+    to CSS, so here are some examples on CSS selectors.
+
+
+    Let’s say you have the following HTML in your web page:
+
+
+    <div id="myDiv" class="container">
+
+
+    <p class="text">Hello, World!</p>
+
+
+    </div>
+
+
+    # Select element by tag name
+
+
+    To select the first paragraph:
+
+
+    let firstParagraph = document.querySelector("p");
+
+
+    This will select the bolded paragraph element
+
+
+    <div id="myDiv" class="container">
+
+
+    <p class="text">Hello, World!</p>
+
+
+    </div>
+
+
+    There is another method called querySelectorAll, that you can use if you want
+    to select all the paragraphs in the document.
+
+
+    # Select element by id
+
+
+    To select the element with the id **myDiv**:
+
+
+    let myDivElement = document.querySelector("#myDiv");
+
+
+    Note the # in front of the id.
+
+
+    This will select the bolded div element.
+
+
+    <div id="myDiv" class="container">
+
+
+    <p class="text">Hello, World!</p>
+
+
+    </div>
+
+
+    # Select element by class name
+
+
+    To select the element with the class **container**:
+
+
+    let myDivElement = document.querySelector(".container");'
+  toc: []
+  trans: "\n\n![](img/cover.jpeg)\n\n少儿 JavaScript\n\n开启你的编程冒险\n\nAbdelfattah Ragab\n\
+    \n# 引言\n\n欢迎阅读《少儿 JavaScript：开启你的编程冒险》。\n\n这本书将带你进入 JavaScript 的世界。它是迈向开发网站和移动应用程序的第一步。通过\
+    \ JavaScript，你可以将你的想法变为现实。学习应该是乐趣的，所以你会觉得像在读一个故事一样。\n\n读完这本书，你将对 JavaScript 有了良好的理解。你已经在现代网页编程的冒险中迈出了第一步。\n\
+    \n祝编程愉快！\n\n# 向前进\n\n当你开始学习新主题时，应该对其进行广泛探索，并专注于前进，而不是迷失在细节中。我建议你从不同的来源收集关于同一主题的信息。\n\
+    \n时不时休息，寻找问题的简短答案，并使用不同的来源获取不同的观点。如果尝试多次后仍然不理解也不要担心，继续坚持，因为你以后会再次遇到它。\n\n# Java\
+    \ vs JavaScript\n\nJava 和 JavaScript 是不同的编程语言，目标也不同：Java 是一种通用面向对象的语言，用于开发各种平台的应用程序；而\
+    \ JavaScript 是一种脚本语言，主要用于在网站上创建交互式内容。\n\n# 什么是 JavaScript？\n\nJavaScript 是一种主要用于在网站上创建交互式内容的编程语言。它允许开发者在网页上实现功能，如交互式表单和实时更新，而无需重新加载页面。\n\
+    \nJavaScript 最初主要是为了浏览器执行而开发的。你对浏览器熟悉，因为我们一直在使用它们。最流行的浏览器包括 Google Chrome、Microsoft\
+    \ Edge、Mozilla Firefox、Opera 和 Safari。\n\nJavaScript 是一种主要存在并运行在网页浏览器中的编程语言。在\
+    \ `Node.js` 发布之前情况一直是如此。有了 `Node.js`，你可以在浏览器之外使用 JavaScript 进行服务器端编程。现在我们使用 JavaScript\
+    \ 进行所有类型的编程。\n\n# 网页浏览器是如何工作的？\n\n当你在浏览器中访问网站时，它会访问指定的 `URL`，下载文件并将它们显示在屏幕上。网站由三类型的文件组成，共同构成了你在网上看到的页面。\n\
+    \n首先是 HTML 代码，它负责网站的内容，没有样式或编程，只有内容。\n\n假设我们在 Amazon.com 上有一个产品产品页。HTML 包含了产品名称、价格、图片、描述和运费详情。\n\
+    \n所有内容都以纯文本形式逐行编写。图像一个接一个地显示，每个图像单独占一行。\n\n想象我给了你一些信息，并让你把它写在笔记本上。\n\n你在第一行写下产品名称，第二行写下价格，以此此类推。\n\
+    \n只有信息，没有任何设计或编程。\n\n![Image](img/image18.jpeg)\n\n这正是 HTML 的作用：它以语义化的方式显示信息。无障碍设备从\
+    \ HTML 中读取信息。它们主要对信息感兴趣。如果你为盲障用户使用屏幕阅读器，它会读取页面的内容。所有的样式都会被忽略。\n\n然而，对于可以看到网站并与网站交互的视力人士来说，样式是重要的。\n\
+    \n例如，如果我们对 Amazon 的产品页应用样式，我们可以让标题变大，并将图片放在左侧的独立区域。我们还可以隐藏所有图片，只在轮播图或滑块中显示第一张图片。我们可以使用\
+    \ CSS 颜色、字体、间距和边框，绘制形状并进行各种事情。\n\n![Image](img/image17.png)\n\n所以，现在你了解了 HTML\
+    \ 和 CSS，但还有第三个组件：JavaScript。\n\n# 什么是编程？\n\n编程是创建一组计算机可以遵循以执行特定任务指令的过程。\n\n# 创建一个小型应用程序\n\
+    \n让我们创建一个小型应用程序，以便你理解编程的含义。\n\n该应用程序接收两个数字并应该返回这两个数字之和。\n\n我将创建一个名为 `firstNumber`\
+    \ 的变量和第二个名为 `secondNumber` 的变量。\n\n你可以定义变量 `x` 和 `y`，但专业程序员建议给变量起有意义的名称，以明确创建的目的。当你与他人分享代码时，这非常有用，让他们能够轻松理解你正在尝试做什么。\n\
+    \n```javascript\nlet firstNumber;\nlet secondNumber;\nreturn firstNumber + secondNumber;\n\
+    ```\n\n在 JavaScript 中，我们使用单词 `let` 来声明变量。然后你可以引用变量名来执行计算。\n\n我们使用单词 `return` 在计算完成后返回最终结果。\n\
+    \n为了能够调用它，我们将其插入到函数函数中。\n\n```javascript\nfunction sum(firstNumber, secondNumber)\
+    \ {\n  return firstNumber + secondNumber;\n}\n```\n\n然后你可以这样调用它：\n\n```javascript\n\
+    const result = sum(1, 2);\nconsole.log('Result is: ', result)\n```\n\n`const`\
+    \ 与 `let` 类似，但用于不会改变的常量。我们仍然可以使用 `let`，但我们使用 `const` 来节省内存并防止他人更改它。\n\n`console.log`\
+    \ 用于在浏览器控制台中显示消息。你可以像我做的那样用逗号分隔多个值。我显示了字符串 'Result is: '，后面跟着实际结果。\n\n# 亲自尝试一下\n\
+    \n搜索“online javascript compiler”并选择你最喜欢的在线 JavaScript 编译器。\n\n在在线编译器中编写代码并运行。\n\
+    \n```javascript\nfunction sum(firstNumber, secondNumber) {\n  return firstNumber\
+    \ + secondNumber;\n}\n\nconst result = sum(1, 2);\nconsole.log('Result is: ',\
+    \ result)\n```\n\n![Image](img/image11.png)\n\n![Image](img/image7.png)\n\n**恭喜你！**\
+    \ 你创建了自己的第一个 JavaScript 程序。接下来的所有的都是你所做内容的变体。\n\n# DOM (文档对象模型)\n\n当网页在浏览器中加载时，浏览器会创建页面的\
+    \ DOM，这本质上是一个树形结构，其中每个节点对应文档的一部分，例如元素、属性和文本。\n\n# JavaScript 和 DOM\n\nJavaScript\
+    \ 允许你访问 `dom`，因此你可以在运行时通过程序化修改网页。\n\n浏览器窗口由 `window` 对象表示，你可以在 JavaScript 中访问它以获取有关位置等信息。\n\
+    \n在 JavaScript 中可供使用的另一个重要对象是 `document` 对象，它代表在浏览器中加载的整个 HTML 文档。它提供了访问和操作文档内容的方法。\n\
+    \n# document.querySelector()\n\n`document.querySelector()` 方法是 JavaScript 中一个强大的函数，允许你使用\
+    \ CSS 选择器选择 HTML 元素。\n\n传递给 `querySelector()` 的字符串必须是有效的 CSS 选择器。这与 CSS 有关，所以这里有一些\
+    \ CSS 选择器的示例。\n\n假设你的网页中有以下 HTML：\n\n```html\n<div id=\"myDiv\" class=\"container\"\
+    >\n  <p class=\"text\">Hello, World!</p>\n</div>\n```\n\n# 按标签名选择元素\n\n要选择第一个段落：\n\
+    \n```javascript\nlet firstParagraph = document.querySelector(\"p\");\n```\n\n\
+    这将选择加粗的段落元素\n\n```html\n<div id=\"myDiv\" class=\"container\">\n  <p class=\"\
+    text\">Hello, World!</p>\n</div>\n```\n\n还有一种名为 `querySelectorAll` 的方法，如果你想选择文档中的所有段落，可以使用它。\n\
+    \n# 按 id 选择元素\n\n要选择 id 为 `myDiv` 的元素：\n\n```javascript\nlet myDivElement = document.querySelector(\"\
+    #myDiv\");\n```\n\n注意 id 前面的 `#`。\n\n这将选择加粗的 div 元素。\n\n```html\n<div id=\"myDiv\"\
+    \ class=\"container\">\n  <p class=\"text\">Hello, World!</p>\n</div>\n```\n\n\
+    # 按类名选择元素\n\n要选择类名为 `container` 的元素：\n\n```javascript\nlet myDivElement = document.querySelector(\"\
+    .container\");\n```\n"
+- fmt: "\nNote the dot in front of the class name.\n\nThis will select the bolded\
+    \ div element.\n\n```html\n<div id=\"myDiv\" class=\"container\">\n  <p class=\"\
+    text\">Hello, World!</p>\n</div>\n```\n\n# Manipulate DOM\n\nOnce you select the\
+    \ element you can do anything with it. You can read its contents, modify its properties\
+    \ such as color, size etc... Or you can even delete it from the page or do anything\
+    \ you like.\n\n# Other selectors\n\n`document.querySelector` and `document.querySelectorAll`\
+    \ are new methods that were added recently with the release of DOM Level 3 Specifications;\
+    \ before them there were other methods for selecting elements which are still\
+    \ valid for use today.\n\n- `document.getElementById()`\n- `document.getElementsByClassName()`\n\
+    - `document.getElementsByTagName()`\n\n# Primitive types vs Reference types\n\n\
+    We categorize data types into two main groups: primitive types and reference types.\n\
+    \n`Primitive types` are the most basic data types and represent single values.\n\
+    \n`Reference types` are more complex data types that can hold collections of values.\n\
+    \n# Primitive types\n\n- **Number:** Represents both integer and floating-point\
+    \ numbers\n```javascript\nlet num = 42;\n```\n- **String:** Represents a sequence\
+    \ of characters.\n```javascript\nlet str = \"Hello, World!\";\n```\n- **Boolean:**\
+    \ Represents a logical entity and can be either true or false.\n```javascript\n\
+    let isActive = true;\n```\n\n# Reference types\n\nReference types are more complex\
+    \ data structures that can hold collections of values.\n\n- **Object:** an object\
+    \ is a collection of key-value pairs that can store multiple values of different\
+    \ types and are used to represent real-world entities.\n```javascript\nlet person\
+    \ = {\n  name: \"Alice\",\n  age: 30,\n  isActive: true\n};\n```\n- **Array:**\
+    \ an array is a special type of object that is used to store ordered collections\
+    \ of values. Arrays can hold elements of any type, including other arrays or objects.\n\
+    ```javascript\nlet colors = [\"red\", \"green\", \"blue\"];\n```\n\n# Default\
+    \ value\n\nWhen you declare a variable it will have the value `undefined` by default.\n\
+    \n# Operators\n\nOperators are special symbols that perform operations on one\
+    \ or more values or variables. They are fundamental to programming as they allow\
+    \ developers to perform calculations and control the flow of the program.\n\n\
+    ### Arithmetic Operators\n\nArithmetic operators are used to perform mathematical\
+    \ calculations.\n- `+`: Addition.\n- `-`: Subtraction.\n- `*`: Multiplication.\n\
+    - `/`: Division.\n\n### Comparison Operators\n\nComparison operators are used\
+    \ to compare two values and return a Boolean result (true or false).\n- `==`:\
+    \ Equal\n- `!=`: Not Equal\n- `>`: Greater Than\n- `<`: Less Than\n\n# Conditional\
+    \ Statements\n\nConditional statements control the flow of execution in your code\
+    \ based on specific conditions. They allow you to execute different blocks of\
+    \ code depending on whether a condition evaluates to true or false.\n\n```javascript\n\
+    let score = 80;\nif (score > 60) {\n  console.log(\"You passed!\");\n} else {\n\
+    \  console.log(\"You failed.\");\n}\n```\n\nThe `if` statement executes a block\
+    \ of code if the specified condition is true.\nThe `else` statement executes when\
+    \ the condition is false.\n\n# Ternary Operator\n\nThe ternary operator is a shorthand\
+    \ for the `if...else` statement.\n\n`condition ? expression If True : expression\
+    \ If False;`\n\n```javascript\nlet score = 80;\nconst result = score > 60 ? \"\
+    You passed!\" : \"You failed.\";\nconsole.log(result);\n// Outputs: You passed!\n\
+    ```\n\n# Loops\n\nLoops allow you to execute a block of code repeatedly based\
+    \ on a specified condition.\n\n```javascript\nfor (let i = 0; i < 5; i++) {\n\
+    \  console.log(i);\n}\n// Outputs: 0, 1, 2, 3, 4\n```\n\nYou can write loops using\
+    \ the `while` loop:\n\n```javascript\nlet count = 0;\nwhile (count < 5) {\n  console.log(count);\n\
+    \  count++;\n}\n// Outputs: 0, 1, 2, 3, 4\n```\n\n# Events\n\nEvents are notifications\
+    \ that something has happened in the system. When an event occurs, it can trigger\
+    \ a reaction in the code. There are many types of events for mouse click, for\
+    \ key press, for window resize.\n\nFor example, we can attach an event handler\
+    \ to a button as follows:\n\n```html\n<button id=\"myButton\">Click Me</button>\n\
+    ```\n\n```javascript\nconst myButton = document.querySelector('#myButton');\n\
+    myButton.addEventListener('click', () => {\n  console.log('Button clicked!');\n\
+    });\n```\n\n# Arrow functions\n\nArrow functions are introduced in ES6. They provide\
+    \ a concise syntax compared to traditional function expressions, particularly\
+    \ useful when dealing with callbacks.\n\nOld way:\n```javascript\nfunction sum(a,\
+    \ b) {\n  return a + b;\n}\n```\n\nArrow function:\n```javascript\nconst sum =\
+    \ (a, b) => a + b;\n```\n"
+  raw: 'Note the dot in front of the class name.
+
+
+    This will select the bolded div element.
+
+
+    <div id="myDiv" class="container">
+
+
+    <p class="text">Hello, World!</p>
+
+
+    </div>
+
+
+    # Manipulate DOM
+
+
+    Once you select the element you can do anything with it. You can read its contents,
+    modify its properties such as color, size etc... Or you can even delete it from
+    the page or do anything you like.
+
+
+    # Other selectors
+
+
+    document.querySelector and document.querySelectorAll are new methods that were
+    added recently with the release of DOM Level 3 Specifications; before them there
+    were other methods for selecting elements which are still valid for use today.
+
+
+    document.getElementById()
+
+
+    document.getElementsByClassName()
+
+
+    document.getElementsByTagName()
+
+
+    # Primitive types vs Reference types
+
+
+    We categorize data types into two main groups: primitive types and reference types.
+
+
+    **Primitive types** are the most basic data types and represent single values.
+
+
+    **Reference types** are more complex data types that can hold collections of values.
+
+
+    # Primitive types
+
+
+    **Number:** Represents both integer and floating-point numbers
+
+
+    let num = 42;
+
+
+    **String:** Represents a sequence of characters.
+
+
+    let str = "Hello, World!";
+
+
+    **Boolean:** Represents a logical entity and can be either true or false.
+
+
+    let isActive = true;
+
+
+    # Reference types
+
+
+    Reference types are more complex data structures that can hold collections of
+    values.
+
+
+    **Object:** An object is a collection of key-value pairs that can store multiple
+    values of different types and are used to represent real-world entities.
+
+
+    let person = {
+
+
+    name: "Alice",
+
+
+    age: 30,
+
+
+    isActive: true
+
+
+    };
+
+
+    **Array:** An array is a special type of object that is used to store ordered
+    collections of values. Arrays can hold elements of any type, including other arrays
+    or objects.
+
+
+    let colors = ["red", "green", "blue"];
+
+
+    # Default value
+
+
+    When you declare a variable it will have the value undefined by default.
+
+
+    # Operators
+
+
+    Operators are special symbols that perform operations on one or more values or
+    variables. They are fundamental to programming as they allow developers to perform
+    calculations and control the flow of the program.
+
+
+    Arithmetic Operators:
+
+
+    Arithmetic operators are used to perform mathematical calculations.
+
+
+    ● + : Addition.● - : Subtraction.● * : Multiplication.● / : Division.
+
+
+    Comparison Operators:
+
+
+    Comparison operators are used to compare two values and return a Boolean result
+    (true or false).
+
+
+    ● == : Equal● != : Not Equal● > : Greater Than● < : Less Than
+
+
+    # Conditional Statements
+
+
+    Conditional statements control the flow of execution in your code based on specific
+    conditions. They allow you to execute different blocks of code depending on whether
+    a condition evaluates to true or false.
+
+
+    let score = 80;
+
+
+    if (score > 60) {
+
+
+    console.log("You passed!");
+
+
+    } else {
+
+
+    console.log("You failed.");
+
+
+    }
+
+
+    The if statement executes a block of code if the specified condition is true.
+
+
+    The else statement executes when the condition is false.
+
+
+    # Ternary Operator
+
+
+    The ternary operator is a shorthand for the if...else statement.
+
+
+    condition **?** expression If True **:** expression If False;
+
+
+    let score = 80;
+
+
+    const result = score > 60 **?** "You passed!" **:** "You failed.";
+
+
+    console.log(result);
+
+
+    // Outputs: You passed!
+
+
+    # Loops
+
+
+    Loops allow you to execute a block of code repeatedly based on a specified condition.
+
+
+    for (let i = 0; i < 5; i++) {
+
+
+    console.log(i);
+
+
+    }
+
+
+    // Outputs: 0, 1, 2, 3, 4
+
+
+    You can write loops using the while loop
+
+
+    let count = 0;
+
+
+    while (count < 5) {
+
+
+    console.log(count);
+
+
+    count++;
+
+
+    }
+
+
+    // Outputs: 0, 1, 2, 3, 4
+
+
+    # Events
+
+
+    Events are notifications that something has happened in the system. When an event
+    occurs, it can trigger a specific reaction in your JavaScript code. For example,
+    when a user clicks a button, an event is triggered and you can write code that
+    executes in response to that click.
+
+
+    There are many types of events for the mouse (e.g. click), for the keyboard (e.g.
+    key press), for the window (e.g. resize) and many more.
+
+
+    For example, we have the HTML button with the ID myButton:
+
+
+    <button id=”myButton”>Click Me</button>
+
+
+    We can attach an event handler to the click action using JavaScript as follows:
+
+
+    const myButtonElement = document.querySelector(''#myButton'');
+
+
+    myButtonElement.addEventListener(''click'',() => {
+
+
+    console.log(''Button clicked!'');
+
+
+    });
+
+
+    # Arrow functions
+
+
+    Arrow functions are a concise way to write function expressions in JavaScript,
+    introduced in ES6. They provide a more streamlined syntax compared to traditional
+    function expressions.
+
+
+    Old way:
+
+
+    function sum(firstNumber, secondNumber) {
+
+
+    return firstNumber + secondNumber;
+
+
+    }
+
+
+    Arrow function:
+
+
+    const sum = (firstNumber, secondNumber) => {
+
+
+    return firstNumber + secondNumber;
+
+
+    }
+
+
+    They are particularly useful for writing cleaner code when dealing with callbacks.
+
+
+    # Example on local machine
+
+
+    Now let’s create a web page on your computer and have fun manipulating the DOM.
+    We want to change the background color when the user clicks. But first we need
+    to set up the environment.
+
+
+    # Visual Studio Code
+
+
+    Download and install Visual Studio Code.
+
+
+    # Live Server Extension
+
+
+    From the extensions tab of the Visual Studio Code, install the Live Server extension
+    by Ritwick Dey.
+
+
+    ![Image](images/image8.png)
+
+
+    # Open Folder
+
+
+    From the “**File**” menu, choose “**Open Folder..**”. Select the folder on your
+    computer where you want to save your work.
+
+
+    # Create a new file
+
+
+    Create a new file and name it **index.html**
+
+
+    ![Image](images/image2.png)
+
+
+    ![Image](images/image6.png)
+
+
+    # Add HTML
+
+
+    Visual Studio Code helps you to create the HTML file.
+
+
+    Start typing “html” and you will be shown some suggestions. Select the suggestion
+    with “html:5”. It will generate the HTML file for you.
+
+
+    ![Image](images/image1.png)
+
+
+    ![Image](images/image4.png)
+
+
+    # Open in Live Server
+
+
+    Right click anywhere in the file and choose “**Open with Live Server**”
+
+
+    ![Image](images/image5.png)
+
+
+    ![Image](images/image10.png)
+
+
+    # Change the title
+
+
+    Change the title from “*Document*” to “*JavaScript Example*”
+
+
+    <!DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <head>
+
+
+    <meta charset="UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>**JavaScript Example**</title>
+
+
+    </head>
+
+
+    <body></body>
+
+
+    </html>
+
+
+    ![Image](images/image16.png)
+
+
+    # Internal scripts
+
+
+    You can place your JavaScript code within a <script> tag in the HTML document.
+    This method is suitable for small scripts.
+
+
+    <!DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <head>
+
+
+    <meta charset="UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>JavaScript Example</title>
+
+
+    </head>
+
+
+    <body></body>
+
+
+    <script>
+
+
+    console.log("Hello!");
+
+
+    </script>
+
+
+    </html>
+
+
+    # External scripts
+
+
+    For larger scripts or when you want to reuse code across multiple HTML files,
+    it''s best to use an external JavaScript file.
+
+
+    # Create scripts.js file
+
+
+    Crate another file **scripts.js**
+
+
+    ![Image](images/image12.png)
+
+
+    ![Image](images/image3.png)
+
+
+    Add a console log line as follows:
+
+
+    console.log("Hello from the scripts.js");
+
+
+    # Link it to the index.html
+
+
+    Add the script tag to the html page and set the src attribute to point to the
+    scripts file as follows:
+
+
+    <!DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <head>
+
+
+    <meta charset="UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>JavaScript Example</title>
+
+
+    <script src="scripts.js"></script>
+
+
+    </head>
+
+
+    <body></body>
+
+
+    </html>
+
+
+    # Dev Tools
+
+
+    console.log messages are displayed in the browser console. Open the dev tools
+    and go to the console tab to read the console log messages.
+
+
+    ![Image](images/image13.png)
+
+
+    # Change background color upon click
+
+
+    Add the following html to your index.html file inside the <body> tag.
+
+
+    <button id="myButton">Colorize</button>
+
+
+    <div
+
+
+    id="myDiv"
+
+
+    style="width: 300px; height: 200px; background-color: red"
+
+
+    ></div>
+
+
+    Add the script as follows:
+
+
+    <script>
+
+
+    const myButton = document.querySelector("#myButton");
+
+
+    myButton.addEventListener("click", () => {
+
+
+    const myDiv = document.querySelector("#myDiv");'
+  toc: []
+  trans: "\n\n注意类名前的点。\n\n这将选取加粗的 div 元素。\n\n```html\n<div id=\"myDiv\" class=\"container\"\
+    >\n  <p class=\"text\">Hello, World!</p>\n</div\n```\n\n# 操作 DOM\n\n一旦你选取了元素，就可以对它进行任何操作。你可以读取它的内容，修改它的属性（如颜色、大小等）……或者你甚至可以将其从页面上删除，或者进行任何你喜欢的的操作。\n\
+    \n# 其他选择器\n\n`document.querySelector` 和 `document.querySelectorAll` 是最近随着 DOM\
+    \ Level 3 规范发布添加的新方法；在它们之前还有其他选择元素的方法，这些方法在今天仍然有效。\n\n- `document.getElementById()`\n\
+    - `document.getElementsByClassName()`\n- `document.getElementsByTagName()`\n\n\
+    # 基本数据类型 vs 引用类型\n\n我们将数据类型分为两大类：基本类型和引用类型。\n\n`Primitive types` 是最基础的数据类型，代表单个值。\n\
+    \n`Reference types` 是更复杂的数据类型，可以持有值的集合。\n\n# 基本数据类型\n\n- **Number：** 代表整数和浮点数。\n\
+    ```javascript\nlet num = 42;\n```\n- **String：** 代表字符序列。\n```javascript\nlet str\
+    \ = \"Hello, World!\";\n```\n- **Boolean：** 代表逻辑实体，可以是 true 或 false。\n```javascript\n\
+    let isActive = true;\n```\n\n# 引用类型\n\n引用类型是更复杂的数据结构，可以持有值的集合。\n\n- **Object（对象）：**\
+    \ 对象是键值对的集合，可以存储不同类型的多个值，并用于表示现实世界中的实体。\n```javascript\nlet person = {\n  name:\
+    \ \"Alice\",\n  age: 30,\n  isActive: true\n};\n```\n- **Array（数组）：** 数组是一种特殊的对象，用于存储有序的值集合。数组可以包含任何类型的元素，包括其他数组或对象。\n\
+    ```javascript\nlet colors = [\"red\", \"green\", \"blue\"];\n```\n\n# 默认值\n\n\
+    当你声明一个变量时，它的默认值是 `undefined`。\n\n# 运算符\n\n运算符是用于对或多个值或变量执行操作的特殊符号。它们是编程的基础，因为它们允许开发者执行计算并控制程序的流。\n\
+    \n### 算术运算符\n\n算术运算符用于执行数学计算。\n- `+`：加法。\n- `-`：减法。\n- `*`：乘法。\n- `/`：除法。\n\n\
+    ### 比较运算符\n\n比较运算符用于比较两个值并返回布尔结果（true 或 false）。\n- `==`：相等\n- `!=`：不相等\n- `>`：大于\n\
+    - `<`：小于\n\n# 条件语句\n\n条件语句根据特定条件控制代码的执行流。它们允许你根据条件的求真值假来执行不同的代码块。\n\n```javascript\n\
+    let score = 80;\nif (score > 60) {\n  console.log(\"You passed!\");\n} else {\n\
+    \  console.log(\"You failed.\");\n}\n```\n\n`if` 语句在指定条件为真时执行一个代码块。\n`else` 语句在条件为假时执行。\n\
+    \n# 三元运算符\n\n三元运算符是 `if...else` 语句的简写形式。\n\n`condition ? expression If True :\
+    \ expression If False;`\n\n```javascript\nlet score = 80;\nconst result = score\
+    \ > 60 ? \"You passed!\" : \"You failed.\";\nconsole.log(result);\n// 输出: You\
+    \ passed!\n```\n\n# 循环\n\n循环允许你根据指定的条件重复执行一个代码块。\n\n```javascript\nfor (let i\
+    \ = 0; i < 5; i++) {\n  console.log(i);\n}\n// 输出: 0, 1, 2, 3, 4\n```\n\n你可以使用\
+    \ `while` 循环编写循环：\n\n```javascript\nlet count = 0;\nwhile (count < 5) {\n  console.log(count);\n\
+    \  count++;\n}\n// 输出: 0, 1, 2, 3, 4\n```\n\n# 事件\n\n事件是系统中发生了某些事的通知。当事件发生时，它可以触发代码中的反应。有许多类型的事件，如鼠标点击、按键按下、窗口大小调整。\n\
+    \n例如，我们可以如下所示为按钮绑定事件处理器：\n\n```html\n<button id=\"myButton\">Click Me</button>\n\
+    ```\n\n```javascript\nconst myButton = document.querySelector('#myButton');\n\
+    myButton.addEventListener('click', () => {\n  console.log('Button clicked!');\n\
+    });\n```\n\n# 箭头函数\n\n箭头函数是在 ES6 中引入的。与传统的函数表达式相比，它们提供了更简洁的语法，在处理回调时特别有用。\n\n\
+    旧方法：\n```javascript\nfunction sum(a, b) {\n  return a + b;\n}\n```\n\n箭头函数：\n\
+    ```javascript\nconst sum = (a, b) => a + b;\n```\n\n"
+- fmt: '
+
+    ```javascript
+
+    myDiv.style.backgroundColor = "green";
+
+
+    });
+
+
+    </script>
+
+    ```
+
+
+    Here is the full code, the complete html file. You can copy/paste it into the
+    `index.html` file and start the live server to see it in action.
+
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Example</title>
+
+    <script src="scripts.js"></script>
+
+    </head>
+
+    <body>
+
+    <button id="myButton">Colorize</button>
+
+    <div id="myDiv" style="width: 300px; height: 200px; background-color: red"></div>
+
+    <script>
+
+    const myButton = document.querySelector("#myButton");
+
+    myButton.addEventListener("click", () => {
+
+    const myDiv = document.querySelector("#myDiv");
+
+    myDiv.style.backgroundColor = "green";
+
+    });
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![Image](images/image15.png)
+
+
+    ![Image](images/image14.png)
+
+
+    **Congratulations!** You have successfully completed your first JavaScript application
+    in real life.
+
+
+    # What to do Next?
+
+
+    The aim of this book is to make it easier for you to get started with JavaScript.
+    I have given you an overview of everything, but there are more details you will
+    learn as you continue to work with JavaScript. Try to familiarise yourself with
+    HTML and CSS and keep practicing JavaScript.
+
+
+    Do not try to create real applications using only JavaScript, because that will
+    cost you a lot of time.
+
+
+    Once you are confident with JavaScript and ready to build a real application,
+    you should learn new JavaScript frameworks. I am talking about Angular, React
+    and Vue.
+
+
+    They all do the same thing, building client-side applications. In web development,
+    there are two types of applications, server-side applications and client-side
+    applications. The server-side applications are responsible for the business logic,
+    security, database communication and so on, while the client-side applications
+    are responsible for the user interface.
+
+
+    They collect the user''s input, send it to the backend server and display the
+    results to the end user as soon as they are returned by the backend server. They
+    do not perform sensitive operations such as security, business logic or communication
+    with the database.
+
+
+    There are many programming languages for creating backend applications such as
+    C#, Java, PHP, Node.JS (JavaScript), Python, etc.
+
+
+    For the frontend, it is mainly JavaScript and TypeScript with frameworks such
+    as Angular, React and Vue.
+
+
+    Mobile applications are another type of application that are more similar to client-side
+    applications and also connect to the backend server.
+
+
+    Most backend servers today are built on the principle of REST APIs. The server
+    provides endpoints that the client can use to send and receive data.
+
+
+    You will learn everything over time, don’t worry.
+
+
+    It may take you several attempts to understand a topic, so just keep going, because
+    you will come across these topics again and again.
+
+
+    Over time, you will build up your understanding of the subject and approach things
+    professionally.
+
+
+    Good luck with your learning and I will see you again on another topic!
+
+
+    — Abdelfattah Ragab
+
+
+    # Conclusion
+
+
+    **Congratulations!** You have read the book "JavaScript for Kids: Start Your Coding
+    Adventure". Now you have a good understanding of JavaScript. Remember that learning
+    JavaScript is an ongoing process. Practice makes perfect — build your own projects,
+    experiment with the features you have learned, and delve into the extensive online
+    resources.
+
+
+    Thank you for joining me in my exploration of JavaScript. I wish you the best
+    of luck on your programming journey. Have fun programming and good luck with your
+    applications!
+
+
+    # Media Attributions
+
+
+    Students working on computer laptops
+
+
+    Image by [brgfx](https://www.freepik.com/free-vector/students-working-computer-laptops_1503669.htm)
+    on Freepik
+
+
+    Modern annual report magazine page flyer a company catalog
+
+
+    Image by [starline](https://www.freepik.com/free-vector/modern-annual-report-magazine-page-flyer-company-catalog_135390347.htm#fromView=search&page=1&position=21&uuid=46d2297f-1be2-49f9-abd4-ba755ef564f9)
+    on Freepik
+
+
+    # Don''t miss out!
+
+
+    Receive an email when Abdelfattah Ragab publishes a new book. It''s free and without
+    obligation.
+
+
+    ![Image](images/image9.png)
+
+
+    # Also by Abdelfattah Ragab
+
+
+    ♢ Angular for Kids ♢ CSS Flex Layout ♢ CSS Grid Layout ♢ CSS Box Model and Layouts
+    ♢ Angular Portfolio App Development
+
+
+    # About the Author
+
+
+    Abdelfattah Ragab is a professional software developer with more than 20 years
+    of experience.
+
+
+    https://abdelfattah-ragab.com
+
+
+    # About the Publisher
+
+
+    Abdelfattah Ragab is a highly qualified and experienced software developer with
+    over 20 years of experience in the industry. Specializing in front-end development,
+    Abdelfattah Ragab has a deep understanding of Angular, JavaScript, TypeScript,
+    HTML and CSS.
+
+
+    Read more at https://abdelfattah-ragab.com
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover1.jpg)
+
+
+    ## Angular for Kids
+
+
+    Ragab, Abdelfattah
+
+
+    9783384411686
+
+
+    34 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    Welcome to the book "Angular for Kids: Start your Coding Adventure". This book
+    is your introduction to the world of Angular. It''s your first step towards developing
+    websites and mobile applications. With Angular, you can turn your ideas into reality.
+    Learning should be fun, so you will feel like you are reading a story. By the
+    end of this book, you will have a good understanding of Angular. You will have
+    taken the first steps in your modern web programming adventure. Have fun programming!
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover2.jpg)
+
+
+    ## My Husband, the Babysitter and Me
+
+
+    White, Emily
+
+
+    9783384113863
+
+
+    80 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    Indulge in an Unforgettable Journey of Passion and Temptation with Emily White''s
+    Erotic Masterpiece! Step into a captivating world where seduction knows no bounds
+    in Emily White''s latest collection of scintillating erotic stories, enriched
+    with enchanting hentai illustrations. Immerse yourself in a universe where each
+    word is a whispered promise, and every brushstroke is a visual enchantment that
+    brings fantasies to life in pure hentai style. This collection is a daring invitation
+    to explore the uncharted depths of desire, where pleasure unfolds with audacious
+    strokes and details that will quicken your heartbeat. The carefully crafted hentai
+    illustrations serve as sensuous portals, transporting you into dimensions where
+    every hidden fantasy finds unabashed expression. What to Expect: - A Fusion of
+    Literary Mastery and Sensual Artistry - Explicit and Alluring Hentai Illustrations
+    - Stories That Explore the Boundaries of Lust and Fantasy - A Whirlwind of Seduction
+    and Temptation This isn''t just a collection; it''s your exclusive ticket to a
+    dimension of hentai eros, meticulously narrated and ardently illustrated by Emily
+    White. Lift the cover and prepare for an intense experience fueled by the flame
+    of passion. Caution: This Collection is Not for the Faint of Heart. Are You Ready
+    to Cross the Threshold?
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover3.jpg)
+
+
+    ## The 48 Laws of Power in Practice
+
+
+    Waterlow, Jon
+
+
+    9783732387144
+
+
+    84 pages
+
+    '
+  raw: 'myDiv.style.backgroundColor = "green";
+
+
+    });
+
+
+    </script>
+
+
+    Here is the full code, the complete html file. You can copy/paste it into the
+    index.html file and start the live server to see it in action.
+
+
+    <!DOCTYPE html>
+
+
+    <html lang="en">
+
+
+    <head>
+
+
+    <meta charset="UTF-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>JavaScript Example</title>
+
+
+    <script src="scripts.js"></script>
+
+
+    </head>
+
+
+    <body>
+
+
+    <button id="myButton">Colorize</button>
+
+
+    <div
+
+
+    id="myDiv"
+
+
+    style="width: 300px; height: 200px; background-color: red"
+
+
+    ></div>
+
+
+    <script>
+
+
+    const myButton = document.querySelector("#myButton");
+
+
+    myButton.addEventListener("click", () => {
+
+
+    const myDiv = document.querySelector("#myDiv");
+
+
+    myDiv.style.backgroundColor = "green";
+
+
+    });
+
+
+    </script>
+
+
+    </body>
+
+
+    </html>
+
+
+    ![Image](images/image15.png)
+
+
+    ![Image](images/image14.png)
+
+
+    **Congratulations!** You have successfully completed your first JavaScript application
+    in real life.
+
+
+    # What to do Next?
+
+
+    The aim of this book is to make it easier for you to get started with JavaScript.
+    I have given you an overview of everything, but there are more details you will
+    learn as you continue to work with JavaScript. Try to familiarise yourself with
+    HTML and CSS and keep practicing JavaScript.
+
+
+    Do not try to create real applications using only JavaScript, because that will
+    cost you a lot of time.
+
+
+    Once you are confident with JavaScript and ready to build a real application,
+    you should learn new JavaScript frameworks. I am talking about Angular, React
+    and Vue.
+
+
+    They all do the same thing, building client-side applications. In web development,
+    there are two types of applications, server-side applications and client-side
+    applications. The server-side applications are responsible for the business logic,
+    security, database communication and so on, while the client-side applications
+    are responsible for the user interface.
+
+
+    They collect the user''s input, send it to the backend server and display the
+    results to the end user as soon as they are returned by the backend server. They
+    do not perform sensitive operations such as security, business logic or communication
+    with the database.
+
+
+    There are many programming languages for creating backend applications such as
+    C#, Java, PHP, Node.JS (JavaScript), Python, etc.
+
+
+    For the frontend, it is mainly JavaScript and TypeScript with frameworks such
+    as Angular, React and Vue.
+
+
+    Mobile applications are another type of application that are more similar to client-side
+    applications and also connect to the backend server.
+
+
+    Most backend servers today are built on the principle of REST APIs. The server
+    provides endpoints that the client can use to send and receive data.
+
+
+    You will learn everything over time, don’t worry.
+
+
+    It may take you several attempts to understand a topic, so just keep going, because
+    you will come across these topics again and again.
+
+
+    Over time, you will build up your understanding of the subject and approach things
+    professionally.
+
+
+    Good luck with your learning and I will see you again on another topic!
+
+
+    — Abdelfattah Ragab
+
+
+    # Conclusion
+
+
+    **Congratulations!** You have read the book "JavaScript for Kids: Start Your Coding
+    Adventure". Now you have a good understanding of JavaScript. Remember that learning
+    JavaScript is an ongoing process. Practice makes perfect — build your own projects,
+    experiment with the features you have learned, and delve into the extensive online
+    resources.
+
+
+    Thank you for joining me in my exploration of JavaScript. I wish you the best
+    of luck on your programming journey. Have fun programming and good luck with your
+    applications!
+
+
+    # Media Attributions
+
+
+    Students working on computer laptops
+
+
+    Image by [brgfx](https://www.freepik.com/free-vector/students-working-computer-laptops_1503669.htm)
+    on Freepik
+
+
+    Modern annual report magazine page flyer a company catalog
+
+
+    Image by [starline](https://www.freepik.com/free-vector/modern-annual-report-magazine-page-flyer-company-catalog_135390347.htm#fromView=search&page=1&position=21&uuid=46d2297f-1be2-49f9-abd4-ba755ef564f9)
+    on Freepik
+
+
+    # Don''t miss out!
+
+
+    Receive an email when Abdelfattah Ragab publishes a new book. It''s free and without
+    obligation.
+
+
+    ![Image](images/image9.png)
+
+
+    # Also by Abdelfattah Ragab
+
+
+    ♢ Angular for Kids♢ CSS Flex Layout♢ CSS Grid Layout♢ CSS Box Model and Layouts♢ Angular
+    Portfolio App Development
+
+
+    # About the Author
+
+
+    Abdelfattah Ragab is a professional software developer with more than 20 years
+    of experience.
+
+
+    https://abdelfattah-ragab.com
+
+
+    # About the Publisher
+
+
+    Abdelfattah Ragab is a highly qualified and experienced software developer with
+    over 20 years of experience in the industry. Specializing in front-end development,
+    Abdelfattah Ragab has a deep understanding of Angular, JavaScript, TypeScript,
+    HTML and CSS.
+
+
+    Read more at https://abdelfattah-ragab.com
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover1.jpg)
+
+
+    ## Angular for Kids
+
+
+    Ragab, Abdelfattah
+
+
+    9783384411686
+
+
+    34 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    Welcome to the book "Angular for Kids: Start your Coding Adventure". This book
+    is your introduction to the world of Angular. It''s your first step towards developing
+    websites and mobile applications. With Angular, you can turn your ideas into reality.
+    Learning should be fun, so you will feel like you are reading a story. By the
+    end of this book, you will have a good understanding of Angular. You will have
+    taken the first steps in your modern web programming adventure. Have fun programming!
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover2.jpg)
+
+
+    ## My Husband, the Babysitter and Me
+
+
+    White, Emily
+
+
+    9783384113863
+
+
+    80 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    Indulge in an Unforgettable Journey of Passion and Temptation with Emily White''s
+    Erotic Masterpiece! Step into a captivating world where seduction knows no bounds
+    in Emily White''s latest collection of scintillating erotic stories, enriched
+    with enchanting hentai illustrations. Immerse yourself in a universe where each
+    word is a whispered promise, and every brushstroke is a visual enchantment that
+    brings fantasies to life in pure hentai style. This collection is a daring invitation
+    to explore the uncharted depths of desire, where pleasure unfolds with audacious
+    strokes and details that will quicken your heartbeat. The carefully crafted hentai
+    illustrations serve as sensuous portals, transporting you into dimensions where
+    every hidden fantasy finds unabashed expression. What to Expect: - A Fusion of
+    Literary Mastery and Sensual Artistry - Explicit and Alluring Hentai Illustrations
+    - Stories That Explore the Boundaries of Lust and Fantasy - A Whirlwind of Seduction
+    and Temptation This isn''t just a collection; it''s your exclusive ticket to a
+    dimension of hentai eros, meticulously narrated and ardently illustrated by Emily
+    White. Lift the cover and prepare for an intense experience fueled by the flame
+    of passion. Caution: This Collection is Not for the Faint of Heart. Are You Ready
+    to Cross the Threshold?
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover3.jpg)
+
+
+    ## The 48 Laws of Power in Practice
+
+
+    Waterlow, Jon
+
+
+    9783732387144
+
+
+    84 pages'
+  toc: []
+  trans: '
+
+
+    ```javascript
+
+    myDiv.style.backgroundColor = "green";
+
+
+    });
+
+
+    </script>
+
+    ```
+
+
+    这里是完整代码，完整的 HTML 文件。你可以将其复制并粘贴到 `index.html` 文件中，并启动本地服务器查看效果。
+
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript 示例</title>
+
+    <script src="scripts.js"></script>
+
+    </head>
+
+    <body>
+
+    <button id="myButton">变色</button>
+
+    <div id="myDiv" style="width: 300px; height: 200px; background-color: red"></div>
+
+    <script>
+
+    const myButton = document.querySelector("#myButton");
+
+    myButton.addEventListener("click", () => {
+
+    const myDiv = document.querySelector("#myDiv");
+
+    myDiv.style.backgroundColor = "green";
+
+    });
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ![Image](img/image15.png)
+
+
+    ![Image](img/image14.png)
+
+
+    **恭喜你！** 你已经在现实生活中完成了你的第一个 JavaScript 应用程序。
+
+
+    # 接下来做什么？
+
+
+    本书的目标是让你更轻松地上手 JavaScript。我已经为你提供了所有内容的概览，但随着你继续学习 JavaScript，你将学到更多细节。尝试熟悉 HTML
+    和 CSS，并坚持练习 JavaScript。
+
+
+    不要尝试仅用 JavaScript 就创建真实的应用程序，因为那将花费你大量的时间。
+
+
+    一旦你对 JavaScript 有了信心并准备好构建一个真实的应用程序，你就应该学习新的 JavaScript 框架。我指的是 Angular、React
+    和 Vue。
+
+
+    它们的作用都是相同的，即构建客户端应用程序。在 Web 开发中，应用程序有两种：服务端应用程序和客户端应用程序。服务端应用程序负责业务逻辑、安全、数据库通信等，而客户端应用程序负责用户界面。
+
+
+    它们收集用户的输入，将其发送到后端服务器，并在后端服务器返回结果后立即显示给终端用户。它们不执行敏感操作，如安全、业务逻辑或与数据库的通信。
+
+
+    有许多编程语言可以创建后端应用程序，如 C#、Java、PHP、Node.JS (JavaScript)、Python 等。
+
+
+    对于前端，主要是 JavaScript 和 TypeScript，配合 Angular、React 和 Vue 等框架。
+
+
+    移动端应用程序是另一种类型，它们与客户端应用程序更相似，并且连接到后端服务器。
+
+
+    今天大多数后端服务器都是基于 REST API 原构建的。服务器提供客户端用于发送和接收数据的端点。
+
+
+    随着时间的推移你会学会一切，不要担心。
+
+
+    你可能需要多次尝试才能理解一个主题，所以请坚持下去，因为你会反复遇到这些主题。
+
+
+    随着时间的推移，你将对该领域建立理解，并以专业的方式处理问题。
+
+
+    祝你学习顺利，我们下个话题再见！
+
+
+    — Abdelfattah Ragab
+
+
+    # 结语
+
+
+    **恭喜你！** 你读完了《儿童少 JavaScript：开启你的编程之旅》。现在你对 JavaScript 有了良好的理解。记住，学习 JavaScript
+    是一个持续的过程。实践出精兵——构建你自己的项目，尝试你学过的功能，并深入研究在线资源。
+
+
+    感谢你与我一起探索 JavaScript。祝你的编程之旅好运连连。祝编程愉快，祝你的应用程序取得成功！
+
+
+    # 媒体归属
+
+
+    在电脑笔记本电脑上工作的学生
+
+
+    图片来自 [brgfx](https://www.freepik.com/free-vector/students-working-computer-laptops_1503669.htm)
+    于 Freepik
+
+
+    现代年度报告杂志页传单公司目录
+
+
+    图片来自 [starline](https://www.freepik.com/free-vector/modern-annual-report-magazine-page-flyer-company-catalog_135390347.htm#fromView=search&page=1&position=21&uuid=46d2297f-1be2-49f9-abd4-ba755ef564f9)
+    于 Freepik
+
+
+    # 不要错过！
+
+
+    当 Abdelfattah Ragab 出版新书时，你将接收电子邮件。这是免费且无义务的。
+
+
+    ![Image](img/image9.png)
+
+
+    # Abdelfattah Ragab 的其他作品
+
+
+    ♢ 儿童 Angular ♢ CSS Flex 布局 ♢ CSS Grid 网格布局 ♢ CSS 盒模型与布局 ♢ Angular 作品集应用开发
+
+
+    # 关于作者
+
+
+    Abdelfattah Ragab 是一位拥有 20 多年经验的专业软件开发人员。
+
+
+    https://abdelfattah-ragab.com
+
+
+    # 关于出版社
+
+
+    Abdelfattah Ragab 是一位高资深且经验丰富的软件开发人员，在行业内拥有 20 多年的经验。专精前端开发，Abdelfattah Ragab
+    对 Angular、JavaScript、TypeScript、HTML 和 CSS 有深入的理解。
+
+
+    访问 https://abdelfattah-ragab.com 更多。
+
+
+    ![推荐书籍封面](img/bookwire_ad_cover1.jpg)
+
+
+    ## 儿童 Angular
+
+
+    Ragab, Abdelfattah
+
+
+    9783384411686
+
+
+    34 页
+
+
+    [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    欢迎阅读《儿童 Angular：开启你的编程之旅》。这本书是你进入 Angular 世界的大门。它是你开发网站和移动应用程序的第一步。通过 Angular，你可以将你的想法变为现实。学习应该是充满乐趣的，所以你会感觉像在读一个故事。读完这本书后，你对
+    Angular 将有良好的理解。你已经在现代 Web 编程之旅中迈出了第一步。祝编程愉快！
+
+
+    [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384411686/28f44a00e985e1b51cc4dada09525887?dipaMethod=AUTHOR&ibpPosition=END&orderId=0)
+
+
+    ![推荐书籍封面](img/bookwire_ad_cover2.jpg)
+
+
+    ## 我的丈夫、保政员和我
+
+
+    White, Emily
+
+
+    9783384113863
+
+
+    80 页
+
+
+    [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    在 Emily White 的情色杰作中沉浸于激情与诱惑的难忘之旅！在 Emily White 最新的迷人情色故事集中，进入一个迷人的世界，在那里，诱惑无边，并配有迷幻的成人漫画（hentai）插画。沉浸在一个宇宙中，每一个词都是一个低语的承诺，每一笔触都是视觉上的魔力，以纯正的动漫风格让幻想变为现实。这个系列是对探索未知欲望深处的大胆邀请，愉悦在大胆的笔触和细节中展开，加速你的心跳。精心制作的成人插画作为感官的门户，将你带入一个每个隐藏的幻想都能得到直率表达的维度。预期内容：
+
+    - 文学造诣与感官艺术的融合
+
+    - 露骨且迷人的成人插画
+
+    - 探索欲望与幻想边界的故事
+
+    - 诱惑与引诱的旋风
+
+    这不仅仅是一个集；它是你通往动漫色情维度的专属门票，由 Emily White 精心叙述并热烈插画。打开封面，准备好迎接由激情火焰驱动的强烈体验。警告：本集不适合心脏脆弱的人。你准备好跨越那道门槛了吗？
+
+
+    [立即购买并阅读（广告）](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384113863/db140da8e8f24c34044bfa8c302ff8a9?dipaMethod=TOPSELLER&ibpPosition=END&orderId=1)
+
+
+    ![推荐书籍封面](img/bookwire_ad_cover3.jpg)
+
+
+    ## 权力 48 法则实战应用
+
+
+    Waterlow, Jon
+
+
+    9783732387144
+
+
+    84 页
+
+
+    '
+- fmt: "\n[Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)\n\
+    \nRobert Greene's `The 48 Laws of Power` has shaken up the lives of millions.\
+    \ It's wielded by successful business executives, leading actors and musicians,\
+    \ and even by criminal kingpins. But how can you apply its lessons to your life?\
+    \ Perhaps you want to become a modern Machiavelli. Perhaps you want to escape\
+    \ the daily grind and realise your true potential and your dreams. Or maybe you're\
+    \ just tired of finding yourself the victim of other people's games. But with\
+    \ 48 Laws to choose from and a strong possibility that any one of them might seem\
+    \ like a radical overhaul of your habits and thought processes, it can seem overwhelming\
+    \ or impossible to put the Laws into practice. Help is at hand. Drawing on our\
+    \ major podcast series, `Exploring The 48 Laws of Power`, this book provides all\
+    \ you need to put the Laws into practice and make lasting changes to your life.\
+    \ We reveal the 3 Most Powerful Laws (the ones you should start with, and on which\
+    \ all the others build) and the 4 Indispensable Power Principles (the specific\
+    \ rules of thumb and social 'hacks' which explain how the Laws really work in\
+    \ the world today). Armed with this knowledge, `The 48 Laws of Power` won't be\
+    \ a cool book you glanced through and then shelved. It will change your life.\n\
+    \n[Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)\n\
+    \n![The cover of the recommended book](bookwire/bookwire_ad_cover4.jpg)\n\n##\
+    \ A Swiss Soldier In Ukraine\n\nNeidhart, Jona\n9783384240583 \n80 pages\n\n[Buy\
+    \ now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)\n\
+    \nWhy would a god-fearing Swiss citizen go against the laws of his own country\
+    \ to fight for Ukraine? Why does he disagree with his own country? Could the EU\
+    \ and NATO do more for Ukraine? What do you think? And is Russia really as bad\
+    \ as often depicted? Or do people exaggerate? Besides that, how is the everyday\
+    \ life of a soldier in a country at war? Is the life of such a soldier really\
+    \ filled with as much action as often depicted in action movies and action games?\
+    \ And how is it to deal with real death and destruction? What does a real battle\
+    \ feel like and what are some of the most important skills at war? If questions\
+    \ like the ones above intrigue you, then you have found the right book to read…\n\
+    \n[Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)\n\
+    \n![The cover of the recommended book](bookwire/bookwire_ad_cover5.jpg)\n\n##\
+    \ The Gynecologist\n\nWhite, Emily\n9783384121356 \n92 pages\n\n[Buy now and read\
+    \ (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)\n\
+    \nIndulge in an Unforgettable Journey of Passion and Temptation with Emily White's\
+    \ Erotic Masterpiece! Step into a captivating world where seduction knows no bounds\
+    \ in Emily White's latest collection of scintillating erotic stories, enriched\
+    \ with enchanting hentai illustrations. Immerse yourself in a universe where each\
+    \ word is a whispered promise, and every brushstroke is a visual enchantment that\
+    \ brings fantasies to life in pure hentai style. This collection is a daring invitation\
+    \ to explore the uncharted depths of desire, where pleasure unfolds with audacious\
+    \ strokes and details that will quicken your heartbeat. The carefully crafted\
+    \ hentai illustrations serve as sensuous portals, transporting you into dimensions\
+    \ where every hidden fantasy finds unabashed expression.\n\n**What to Expect:**\n\
+    - A Fusion of Literary Mastery and Sensual Artistry\n- Explicit and Alluring Hentai\
+    \ Illustrations\n- Stories That Explore the Boundaries of Lust and Fantasy\n-\
+    \ A Whirlwind of Seduction and Temptation\n\nThis isn't just a collection; it's\
+    \ your exclusive ticket to a dimension of hentai eros, meticulously narrated and\
+    \ ardently illustrated by Emily White. Lift the cover and prepare for an intense\
+    \ experience fueled by the flame of passion.\n\n**Caution:** This Collection is\
+    \ Not for the Faint of Heart. Are You Ready to Cross the Threshold?\n\n[Buy now\
+    \ and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)\n"
+  raw: '[Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
+
+
+    Robert Greene''s The 48 Laws of Power has shaken up the lives of millions. It''s
+    wielded by successful business executives, leading actors and musicians, and even
+    by criminal kingpins. But how can you apply its lessons to your life? Perhaps
+    you want to become a modern Machiavelli. Perhaps you want to escape the daily
+    grind and realise your true potential and your dreams. Or maybe you''re just tired
+    of finding yourself the victim of other people''s games. But with 48 Laws to choose
+    from and a strong possibility that any one of them might seem like a radical overhaul
+    of your habits and thought processes, it can seem overwhelming or impossible to
+    put the Laws into practice. Help is at hand. Drawing on our major podcast series,
+    Exploring The 48 Laws of Power, this book provides all you need to put the Laws
+    into practice and make lasting changes to your life. We reveal the 3 Most Powerful
+    Laws (the ones you should start with, and on which all the others build) and the
+    4 Indispensable Power Principles (the specific rules of thumb and social ''hacks''
+    which explain how the Laws really work in the world today). Armed with this knowledge,
+    The 48 Laws of Power won''t be a cool book you glanced through and then shelved.
+    It will change your life.
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover4.jpg)
+
+
+    ## A Swiss Soldier In Ukraine
+
+
+    Neidhart, Jona
+
+
+    9783384240583
+
+
+    80 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
+
+
+    Why would a god-fearing Swiss citizen go against the laws of his own country to
+    fight for Ukraine? Why does he disagree with his own country? Could the EU and
+    NATO do more for Ukraine? What do you think? And is Russia really as bad as often
+    depicted? Or do people exaggerate? Besides that, how is the everyday life of a
+    soldier in a country at war? Is the life of such a soldier really filled with
+    as much action as often depicted in action movies and action games? And how is
+    it to deal with real death and destruction? What does a real battle feel like
+    and what are some of the most important skills at war? If questions like the ones
+    above intrigue you, then you have found the right book to read…
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)
+
+
+    ![The cover of the recommended book](bookwire/bookwire_ad_cover5.jpg)
+
+
+    ## The Gynecologist
+
+
+    White, Emily
+
+
+    9783384121356
+
+
+    92 pages
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)
+
+
+    Indulge in an Unforgettable Journey of Passion and Temptation with Emily White''s
+    Erotic Masterpiece! Step into a captivating world where seduction knows no bounds
+    in Emily White''s latest collection of scintillating erotic stories, enriched
+    with enchanting hentai illustrations. Immerse yourself in a universe where each
+    word is a whispered promise, and every brushstroke is a visual enchantment that
+    brings fantasies to life in pure hentai style. This collection is a daring invitation
+    to explore the uncharted depths of desire, where pleasure unfolds with audacious
+    strokes and details that will quicken your heartbeat. The carefully crafted hentai
+    illustrations serve as sensuous portals, transporting you into dimensions where
+    every hidden fantasy finds unabashed expression. What to Expect: - A Fusion of
+    Literary Mastery and Sensual Artistry - Explicit and Alluring Hentai Illustrations
+    - Stories That Explore the Boundaries of Lust and Fantasy - A Whirlwind of Seduction
+    and Temptation This isn''t just a collection; it''s your exclusive ticket to a
+    dimension of hentai eros, meticulously narrated and ardently illustrated by Emily
+    White. Lift the cover and prepare for an intense experience fueled by the flame
+    of passion. Caution: This Collection is Not for the Faint of Heart. Are You Ready
+    to Cross the Threshold?
+
+
+    [Buy now and read (Advertising)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)'
+  toc: []
+  trans: "\n\n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)\n\
+    \n罗伯特·格林的《权力的 48 法则》震撼了数百万人的生活。成功的商业高管、顶尖的演员和音乐家，甚至是犯罪头目都在运用它。但你又该如何将这些教训应用于你的生活呢？也许你想成为一个现代的马基雅维利。也许你想逃离日常的琐碎，实现你真正的潜力和梦想。又或者，你只是厌倦了自己成为他人游戏的受害者。但是，由于有\
+    \ 48 条法则可供选择，而且其中任何一条似乎都像是对你习惯和思维模式的彻底颠覆，将这些法则付诸实践似乎可能令人无从下手或遥不可及。帮助就在身边。本书基于我们主要的播客系列——《探索权力的\
+    \ 48 法则》，为你提供了将法则付诸实践并为生活带来持久改变所需的所有内容。我们揭示了 **3 条最重要的法则**（你应该从它们开始，且其他法则都建立在此此）以及\
+    \ **4 个不可或缺的权力原则**（解释法则在当今世界真实运作的具体准则和社交“黑科技”）。掌握了这些知识，《权力的 48 法则》将不再是一本你扫一眼就放在架子上的酷书。它将改变你的生活。\n\
+    \n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783732387144/8a87ef3ef306f91107c5e4ab3a4822a0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=2)\n\
+    \n![推荐书籍的封面](img/bookwire_ad_cover4.jpg)\n\n## 乌克兰的瑞士士兵\n\nNeidhart, Jona\n9783384240583\
+    \ \n80 页\n\n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)\n\
+    \n为什么一个虔畏上帝的瑞士公民会违反本国法律去为乌克兰战斗？他为什么要反对自己的国家？欧盟和北约能为乌克兰多做些吗？你怎么看？俄罗斯真的像描述的那样糟糕吗？还是说人们在夸大？此外，在战国家士兵的日常生活是怎样的？这种士兵的生活真的像动作电影和游戏中描写的那样充满动作感吗？面对真实的死亡和毁灭又是种什么？真正的战斗是什么感觉？战争中最重要的技能有哪些？如果你对上述问题感兴趣，那么你找到了这本该读的书……\n\
+    \n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384240583/f843e10a9461d304930fc1208b6aa99a?dipaMethod=TOPSELLER&ibpPosition=END&orderId=3)\n\
+    \n![推荐书籍的封面](img/bookwire_ad_cover5.jpg)\n\n## 妇产科医生\n\nWhite, Emily\n9783384121356\
+    \ \n92 页\n\n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)\n\
+    \n跟随 Emily White 的色情杰作，沉浸在场令人难忘的激情与诱惑之旅中！在 Emily White 最新的一系列闪耀色情故事集中，进入一个诱惑毫无边界的世界，书中还配有迷人的工口（hentai）插画。沉浸在这个宇宙中，每一个字都是一个低语的承诺，每一笔触都是一次视觉魔力，以纯粹的工口风格让幻想栩如生。这部合集是一次探索欲望未知深度的大胆邀请，在那里，快感以大胆的笔触和细节展开，令你的心跳加速。精心设计的工口插画作为感官的门户，将你带入一个维度，在那里每个隐藏的幻想都能找到毫无掩饰的表达。\n\
+    \n**内容期待：**\n- 文学造诣与感官艺术的融合\n- 露骨且迷人的工口插画\n- 探索欲望与幻想边界的故事\n- 诱惑与挑逗的旋风\n\n这不仅仅是一个合集；这是你通往工口爱欲维度的专属门票，由\
+    \ Emily White 细心叙述并热烈插绘。翻开封面，准备好迎接由激情火焰驱动的强烈体验。\n\n**警告：** 本合集不适合心理胆小者。你准备好跨越那道门槛了吗？\n\
+    \n[立即购买并阅读（广告)](http://www.mynextread.de/redirect/Kobo/2012001/9783384443243/9783384121356/5e67200e5ccd3105930a86cb8478b4c0?dipaMethod=TOPSELLER&ibpPosition=END&orderId=4)\n\
+    \n"

@@ -1,0 +1,4691 @@
+- fmt: '
+
+    ![](Images/cover00136.jpeg)
+
+
+    # LEARN JAVASCRIPT BASICS: FOR BEGINNERS AND JAVASCRIPT WORKBOOK FOR EXAMS AND
+    INTERVIEWS
+
+    FAST AND EASY WAY TO LEARN CODING BASICS
+
+    JP TAM
+
+
+    ## Table of Contents
+
+    - [Javascript Tutorial](#part0003.xhtml__Toc78463966)
+
+    - [Javascript Example](#part0004.xhtml__Toc78463967)
+
+    - [Javascript comment](#part0005.xhtml__Toc78463968)
+
+    - [Javascript Variable](#part0006.xhtml__Toc78463969)
+
+    - [Javascript Data Types](#part0007.xhtml__Toc78463970)
+
+    - [Javascript Operators](#part0008.xhtml__Toc78463971)
+
+    - [Logical Operators](#part0008.xhtml__Toc78463972)
+
+    - [Javascript If Else](#part0009.xhtml__Toc78463973)
+
+    - [Javascript Switch Statement](#part0010.xhtml__Toc78463974)
+
+    - [Javascript loop](#part0011.xhtml__Toc78463975)
+
+    - [do while loop](#part0011.xhtml__Toc78463976)
+
+    - [JavaScript Function](#part0012.xhtml__Toc78463977)
+
+    - [Function with arguments](#part0012.xhtml__Toc78463978)
+
+    - [Javascript Object](#part0013.xhtml__Toc78463979)
+
+    - [Javascript array](#part0014.xhtml__Toc78463980)
+
+    - [JAVASCRIPT WORKBOOK](#part0016.xhtml__Toc78463981)
+
+    - [Capitalize The First Letter](#part0016.xhtml__Toc78463982)
+
+    - [Hours and minutes](#part0017.xhtml__Toc78463983)
+
+    - [Count vowels](#part0018.xhtml__Toc78463984)
+
+    - [Create a new string](#part0019.xhtml__Toc78463985)
+
+    - [Concatenate two strings](#part0020.xhtml__Toc78463986)
+
+    - [First not repeated character](#part0021.xhtml__Toc78463987)
+
+    - [Find the longest word](#part0022.xhtml__Toc78463988)
+
+    - [Counts the number of vowels](#part0023.xhtml__Toc78463989)
+
+    - [Check a number is prime](#part0024.xhtml__Toc78463990)
+
+    - [JavaScript: Get the data type](#part0025.xhtml__Toc78463991)
+
+    - [Find the second lowest and second greatest](#part0026.xhtml__Toc78463992)
+
+    - [Add two digits](#part0027.xhtml__Toc78463993)
+
+    - [Leap Year Check](#part0028.xhtml__Toc78463994)
+
+    - [Check given positive number](#part0029.xhtml__Toc78463995)
+
+    - [string starts with ''Java'' - Check](#part0030.xhtml__Toc78463996)
+
+    - [Two given integer values - Check](#part0031.xhtml__Toc78463997)
+
+    - [Find a value which is nearest to 100](#part0032.xhtml__Toc78463998)
+
+    - [Positive number - Check](#part0033.xhtml__Toc78463999)
+
+    - [String starts with ''Java'' - Check](#part0034.xhtml__Toc78464000)
+
+    - [Multiplication and division](#part0035.xhtml__Toc78464001)
+
+    - [Convert temperatures](#part0036.xhtml__Toc78464002)
+
+
+    ## Javascript Tutorial
+
+    This JavaScript lesson makes it simple for both beginners and experts to learn
+    JavaScript.
+
+
+    ### What is JavaScript and how does it work?
+
+    JavaScript is a dynamic programming language for computers. It is a lightweight
+    and cross-platform object-based scripting language.
+
+    With the aid of JavaScript, we can make our website more vibrant and engaging.
+
+    Brendan Eich, a Netscape employee, designed it in 1995. It''s a programming language
+    that''s used to make interactive websites. It''s most commonly used for:
+
+    - Validation on the client''s end.
+
+    - Its drop-down menus are dynamic.
+
+    - It shows the current date and time.
+
+    - Before transferring data to a server, validate user input in an HTML form.
+
+    - Create forms that respond to user input without requiring a connection to a
+    server.
+
+    - Install new windows or frames and close them.
+
+    - Using popup windows and dialog boxes to display information (for example, an
+    alert dialog box, a confirm dialog box, or a prompt dialog box).
+
+    - Create client-side programs that are small but complete.
+
+    - Clocks and other timepieces.
+
+    - Game and app development for mobile devices.
+
+
+    ### Features of Javascript
+
+    - JavaScript is a scripting language that is based on objects.
+
+    - The language is case sensitive.
+
+    - It''s lightweight.
+
+    - In JavaScript, every statement must be followed by a semicolon (`;`).
+
+
+    ### Advantages of Javascript
+
+    - JavaScript is a scripting language that is interpreted. There is no need for
+    a compiler because there is no compilation process. JavaScript is interpreted
+    by the browser as HTML tags.
+
+    - JavaScript is a simple programming language. It is very simple to learn for
+    anyone. It''s used to create dynamic and appealing websites.
+
+    - Because JavaScript run on the client side, it lowers the load on the server.
+
+    - It includes conditional checking, loops, and branching functionality that can
+    be used in web pages.
+
+    - For the end user, JavaScript is relatively quick. They don''t have to wait for
+    the page to reload if they missed something.
+
+    - Web pages now have more functionality. To provide site visitors with more functionality,
+    we can use JavaScript to include drag-and-drop components and sliders.
+
+
+    ## JavaScript Example
+
+    ```html
+
+    <h2>Welcome to JavaScript</h2>
+
+    <script>
+
+    document.write("Hello JavaScript by Tutorial");
+
+    </script>
+
+    ```
+
+    Output: Hello JavaScript by Tutorial
+
+
+    ### Javascript Example
+
+    ```html
+
+    <h2>Welcome to JavaScript</h2>
+
+    <script>
+
+    document.write("Hello Friends");
+
+    </script>
+
+    ```
+
+    Output: Hello Friends
+
+
+    ### JavaScript can be implemented by including JavaScript in the code.
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    document.write("Hello World");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+    Output: Hello World
+
+
+    In JavaScript, code may be written in three places:
+
+    1. Between the `<body>` tag of HTML.
+
+    2. Between the `<head>` tag of HTML.
+
+    3. In `.js` file (external JavaScript).
+
+
+    ### As illustration (code between body tags)
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script type="text/javascript">
+
+    alert("world");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ### Example (between the head tag, the code)
+
+    We''ll create the `msg()` function in the example below. In JavaScript, you must
+    write `function` name to define a function. To invoke a function, we must first
+    create an event. We''re using the onclick event to call the `msg()` function in
+    this case.
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript">
+
+    function msg(){
+
+    alert("world");
+
+    }
+
+    </script>
+
+    </head>
+
+    <body>
+
+    <p>Welcome to Javascript</p>
+
+    <form>
+
+    <input type="button" value="click" onclick="msg()"/>
+
+    </form>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ### External JavaScript file
+
+    We can create a JavaScript file that we can include in HTML files. Because a single
+    JavaScript file may be used in multiple HTML pages, it allows for code reuse and
+    improves the web page''s performance. The file must have `.js` extension.
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <head>
+
+    <script type="text/javascript" src="message.js"></script>
+
+    </head>
+
+    <body>
+
+    <p>Hello world</p>
+
+    <form>
+
+    <input type="button" value="click" onclick="msg()"/>
+
+    </form>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    ## Javascript comment
+
+    Comments in JavaScript are used to describe the code. It''s used to include code-related
+    information, such as warnings or suggestions, so that end users can understand
+    it.
+
+
+    ### JavaScript comments Types
+
+    1. Single-line Comment
+
+    2. Multi-line Comment
+
+
+    ### Single-line Comment
+
+    Double forward slashes (`//`) are used to express single-line comments. While
+    the program is running, any text between the double forward slashes (`//`) and
+    the end of the line will be ignored.
+
+
+    **Comment added - before the statement:**
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    // single-line comment //
+
+    document.write("hello world");
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+
+    **Comment added - after the statement:**
+
+    ```html
+
+    <!DOCTYPE html>
+
+    <html>
+
+    <body>
+
+    <script>
+
+    var a=10;
+
+    var b=20;
+
+    var c=a+b; //It add values of a and b variable
+
+    document.write(c); //print sum of 10 and 20
+
+    </script>
+
+    </body>
+
+    </html>
+
+    ```
+
+    Output: 30
+
+
+    ### Multi-line comment
+
+    Single and multi-line comments can both be made with multi-line comments. Comments
+    that span multiple lines begin with `/*` and conclude with `*/`. JavaScript will
+    ignore the text in between them.
+
+    ```javascript
+
+    /* Write comment here */
+
+    ```
+
+    '
+  raw: '
+
+
+    ![](Images/cover00136.jpeg)
+
+
+    LEARN JAVASCRIPT BASICS:
+
+
+    FOR BEGINNERS
+
+
+    AND
+
+
+    JAVASCRIPT WORKBOOK
+
+
+    FOR
+
+
+    EXAMS AND INTERVIEWS
+
+
+    FAST AND EASY WAY TO LEARN CODING BASICS
+
+
+    JP TAM
+
+
+    [Javascript Tutorial](#part0003.xhtml__Toc78463966)
+
+
+    [Javascript Example](#part0004.xhtml__Toc78463967)
+
+
+    [Javascript comment](#part0005.xhtml__Toc78463968)
+
+
+    [Javascript Variable](#part0006.xhtml__Toc78463969)
+
+
+    [Javascript Data Types](#part0007.xhtml__Toc78463970)
+
+
+    [Javascript Operators](#part0008.xhtml__Toc78463971)
+
+
+    [Logical Operators](#part0008.xhtml__Toc78463972)
+
+
+    [Javascript If Else](#part0009.xhtml__Toc78463973)
+
+
+    [Javascript Switch Statement](#part0010.xhtml__Toc78463974)
+
+
+    [Javascript loop](#part0011.xhtml__Toc78463975)
+
+
+    [do while loop](#part0011.xhtml__Toc78463976)
+
+
+    [JavaScript Function](#part0012.xhtml__Toc78463977)
+
+
+    [Function with arguments](#part0012.xhtml__Toc78463978)
+
+
+    [Javascript Object](#part0013.xhtml__Toc78463979)
+
+
+    [Javascript array](#part0014.xhtml__Toc78463980)
+
+
+    [JAVASCRIPT WORKBOOK](#part0016.xhtml__Toc78463981)
+
+
+    [Capitalize The First Letter](#part0016.xhtml__Toc78463982)
+
+
+    [Hours and minutes](#part0017.xhtml__Toc78463983)
+
+
+    [Count vowels](#part0018.xhtml__Toc78463984)
+
+
+    [Create a new string](#part0019.xhtml__Toc78463985)
+
+
+    [Concatenate two strings](#part0020.xhtml__Toc78463986)
+
+
+    [First not repeated character](#part0021.xhtml__Toc78463987)
+
+
+    [Find the longest word](#part0022.xhtml__Toc78463988)
+
+
+    [Counts the number of vowels](#part0023.xhtml__Toc78463989)
+
+
+    [Check a number is prime](#part0024.xhtml__Toc78463990)
+
+
+    [JavaScript: Get the data type](#part0025.xhtml__Toc78463991)
+
+
+    [Find the second lowest and second greatest](#part0026.xhtml__Toc78463992)
+
+
+    [Add two digits](#part0027.xhtml__Toc78463993)
+
+
+    [Leap Year Check](#part0028.xhtml__Toc78463994)
+
+
+    [Check given positive number](#part0029.xhtml__Toc78463995)
+
+
+    [string starts with ''Java'' - Check](#part0030.xhtml__Toc78463996)
+
+
+    [Two given integer values - Check](#part0031.xhtml__Toc78463997)
+
+
+    [Find a value which is nearest to 100](#part0032.xhtml__Toc78463998)
+
+
+    [Positive number - Check](#part0033.xhtml__Toc78463999)
+
+
+    [String starts with ''Java'' - Check](#part0034.xhtml__Toc78464000)
+
+
+    [Multiplication and division](#part0035.xhtml__Toc78464001)
+
+
+    [Convert temperatures](#part0036.xhtml__Toc78464002)
+
+
+    LEARN JAVASCRIPT BASICS:
+
+
+    FOR BEGINNERS
+
+
+    FAST AND EASY WAY TO LEARN CODING BASICS
+
+
+    JP TAM
+
+
+    Javascript Tutorial
+
+
+    This JavaScript lesson makes it simple for both beginners and experts to learn
+    JavaScript.
+
+
+    What is JavaScript and how does it work?
+
+
+    JavaScript is a dynamic programming language for computers. It is a lightweight
+    and cross-platform object-based scripting language.
+
+
+    With the aid of JavaScript, we can make our website more vibrant and engaging.
+
+
+    Brendan Eich, a Netscape employee, designed it in 1995.
+
+
+    It''s a programming language that''s used to make interactive websites. It''s
+    most commonly used for::
+
+
+    • Validation on the client''s end.
+
+
+    • Its drop-down menus are dynamic.
+
+
+    • It shows the current date and time.
+
+
+    • Before transferring data to a server, validate user input in an HTML form.
+
+
+    • Create forms that respond to user input without requiring a connection to a
+    server.
+
+
+    • Install new windows or frames and close them.
+
+
+    • Using popup windows and dialog boxes to display information.
+
+
+    (for example, an alert dialog box, a confirm dialog box, or a prompt dialog box)
+
+
+    • Create client-side programs that are small but complete.
+
+
+    • Clocks and other timepieces
+
+
+    • Game and app development for mobile devices.
+
+
+    Features of Javascript
+
+
+    • JavaScript is a scripting language that is based on objects.
+
+
+    • The language is case sensitive.
+
+
+    • It''s light in weight.
+
+
+    • In JavaScript, every statement must be followed by a semicolon (;).
+
+
+    Advantages of Javascript
+
+
+    • JavaScript is a scripting language that is interpreted. There is no need for
+    a compiler because there is no compilation process. JavaScript is interpreted
+    by the browser as HTML tags.
+
+
+    • JavaScript is a simple programming language. It is very simple to learn for
+    anyone. It''s used to create dynamic and appealing websites.
+
+
+    • Because JavaScript is run on the client side, it lowers the load on the website
+    server.
+
+
+    • It includes conditional checking, loops, and branching functionality that can
+    be used in web pages.
+
+
+    • For the end user, JavaScript is relatively quick. They don''t have to wait for
+    the page to reload to see if they missed something.
+
+
+    • Web pages now have more functionality. To provide our site visitors with more
+    functionality, we can use JavaScript to include drag-and-drop components and sliders.
+
+
+    JavaScript Example
+
+
+    <h2>Welcome to JavaScript</h2>    
+
+
+    <script>    
+
+
+    document.write("Hello JavaScript by TutorialandExample");    
+
+
+    </script>
+
+
+    Output
+
+
+    Welcome to JavaScript
+
+
+    Hello JavaScript by TutorialandExample
+
+
+    Javascript Example
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <h2>Welcome to JavaScript</h2>  
+
+
+    <script>  
+
+
+    document.write("Hello Friends");  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Output
+
+
+    Welcome to JavaScript
+
+
+    Hello Friends
+
+
+    JavaScript can be implemented by including JavaScript statements in the code.
+
+
+    <script>…</script>.
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script type= "text/javascript">  
+
+
+    document.write("Hello World");  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Output
+
+
+    Hello World
+
+
+    In JavaScript, code may be written in three places.
+
+
+    1.  Between the <body>……</body> tag of HTML.
+
+
+    2.  Between the <head>……</head> tag of HTML.
+
+
+    3.  In .jsfile(external JavaScript).
+
+
+    As an illustration (code between the body tags)
+
+
+    In the example below, the body tag contains JavaScript code.
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script type="text/javascript">  
+
+
+    alert("Hello world");  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Example2
+
+
+    (between the head tag, the code)
+
+
+    We''ll create the function msg in the example below (). In JavaScript, you must
+    write function in function name to define a function. To invoke a function, we
+    must first create an event. We''re using the one-click event to call the msg()
+    function in this case.
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <head>  
+
+
+    <script type="text/javascript">  
+
+
+    function msg(){  
+
+
+    alert("Hello world");  
+
+
+    }  
+
+
+    </script>  
+
+
+    </head>  
+
+
+    <body>  
+
+
+    <p>Welcome to Javascript</p>  
+
+
+    <form>  
+
+
+    <input type="button" value="click" onclick="msg()"/>  
+
+
+    </form>  
+
+
+    </body>  
+
+
+    </html
+
+
+    External JavaScript file
+
+
+    We can create a JavaScript file that we can include in HTML files.
+
+
+    Because a single JavaScript file may be used in multiple HTML pages, it allows
+    for code reuse.
+
+
+    It improves the web page''s performance.
+
+
+    The file must have a.js extension.
+
+
+    Example
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <head>  
+
+
+    <script type="text/javascript" src="message.js"></script>  
+
+
+    </head>  
+
+
+    <body>  
+
+
+    <p>Hello world</p>  
+
+
+    <form>  
+
+
+    <input type="button" value="click" onclick="msg()"/>  
+
+
+    </form>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Javascript comment
+
+
+    Comments in JavaScript are used to describe the code. It''s used to include code-related
+    information, such as warnings or suggestions, so that end users can understand
+    it.
+
+
+    JavaScript comments Types
+
+
+    1.  Single-line Comment
+
+
+    2.  Multi-line Comment
+
+
+    Single-line Comment
+
+
+    Double forward slashes (//) are used to express single-line comments. While the
+    program is running, any text between the double forward slashes (//) and the end
+    of the line will be ignored.
+
+
+    eg. Comment added - before the statement.
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script>  
+
+
+    // single-line comment //  
+
+
+    document.write("hello world");  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    eg. Comment added - after the statement.
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script>  
+
+
+    var a=10; 
+
+
+    var b=20;  
+
+
+    var c=a+b; //It add values of a and b variable  
+
+
+    document.write(c); // print sum of 10 and 20  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Output
+
+
+    30
+
+
+    Multi-line comment
+
+
+    Single and multi-line comments can both be made with multi-line comments. Comments
+    that span multiple lines begin with /* and conclude with */. JavaScript will ignore
+    the text in between them.
+
+
+    /* Write comment here */
+
+
+    Example
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  '
+  toc: []
+  trans: "\n\n![](img/cover00136.jpeg)\n\n# 学习 JavaScript 基础：初学者教程及考试与面试 JavaScript\
+    \ 练习册\n快速简易学习编程基础的方法\nJP TAM\n\n## 目录\n- Javascript 教程\n- Javascript 示例\n- Javascript\
+    \ 注释\n- Javascript 变量\n- Javascript 数据类型\n- Javascript 运算符\n- 逻辑运算符\n- Javascript\
+    \ If Else\n- Javascript Switch 语句\n- Javascript 循环\n- do while 循环\n- JavaScript\
+    \ 函数\n- 带参数的函数\n- Javascript 对象\n- Javascript 数组\n- JavaScript 练习册\n- 首字母大写\n\
+    - 小时和分钟\n- 统计元音数量\n- 创建一个新字符串\n- 拼接两个字符串\n- 第一个非重复字符\n- 找到最长单词\n- 统计元音个数\n- 检查数字是否为素数\n\
+    - JavaScript: 获取数据类型\n- 寻找第二小和第二大\n- 两个数字相加\n- 闰年检查\n- 检查给定的正数\n- 字符串以 'Java'\
+    \ 开头 - 检查\n- 两个给定的整数值 - 检查\n- 寻找接近 100 的值\n- 正数 - 检查\n- 字符串以 'Java' 开头 - 检查\n\
+    - 乘法和除法\n- 温度转换\n\n## Javascript 教程-这节 JavaScript 课程让初学者和专家都能轻松学习 JavaScript。\n\
+    \n### 什么是 JavaScript？它是如何工作的？\nJavaScript 是一种用于计算机的动态编程语言。它是一种轻量级、跨平台的基于对象的脚本语言。\n\
+    通过 JavaScript，我们可以让网站更有活力和吸引力。\n由 Netscape 员工 Brendan Eich 于 1995 年设计。它是一种用于创建交互式网站的编程语言。它最常用的用途包括：\n\
+    - 客户端验证。\n- 动态下拉菜单。\n- 显示当前日期和时间。\n- 在将数据传输到服务器之前，验证 HTML 表单中的用户输入。\n- 创建无需连接服务器即可响应用户输入的表单。\n\
+    - 打开新窗口或框架（frames）并关闭它们。\n- 使用弹出窗口和对话框显示信息（例如：警报对话框、确认对话框或提示对话框）。\n- 创建小巧但完整的客户端程序。\n\
+    - 钟和其他计时器。\n- 移动端游戏和应用开发。\n\n### JavaScript 特性\n- 区分大小写。\n- 它是轻量级的。\n- 基于对象的。\n\
+    \n### JavaScript 的优点\n- 它是脚本语言。\n- 是在浏览器中运行的。\n- 它是动态的。\n- 它是交互式的。\n- 它可以与 HTML\
+    \ 配合工作。\n- 它可以处理用户输入。\n- 它可以执行复杂的逻辑。\n- 它可以与服务器通信。\n- 它是跨平台的。\n- 它是广泛流行的。\n- 它是免费的。\n\
+    - 拥有庞大的社区支持。\n- 有许多框架和库可用。\n- 学习非常容易。\n- 它是非常强大的。\n- 它的应用非常广泛。\n- 它是不断发展的。\n-\
+    \ 它是活跃的。\n- 它是可靠的。\n- 它是安全的。\n- 它是开源的。\n- 它是标准化的。\n- 它是。\n- \n- \n- \n- \n- \n\
+    - \n- \n- \n- \n- \n- \n- \n- \n-\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
+    \n\n\n\n\n\n\n\n\n\n\n\n \n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n\
+    <body>\n\n<script>\nfunction myFunction() {\n  alert(\"Hello World!\");\n}\n</script>\n\
+    \n<button onclick=\"myFunction()\">点击我</button>\n\n</body>\n</html>\n```\n\n###\
+    \ JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar firstName\
+    \ = \"John\";\nvar lastName = \"Doe\";\ndocument.write(firstName + \" \" + lastName);\n\
+    </script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n\
+    <html>\n<body>\n\n<script>\nvar color = \"red\";\ndocument.body.style.backgroundColor\
+    \ = color;\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar fruits = [\"Apple\", \"Banana\"\
+    , \"Cherry\"];\ndocument.write(fruits[0]);\n</script>\n\n</body>\n</html>\n```\n\
+    \n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar\
+    \ person = {\n  name: \"Alice\",\n  age: 25,\n  city: \"New York\"\n};\ndocument.write(person.name);\n\
+    </script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n\
+    <html>\n<body>\n\n<script>\nfor (var i = 0; i < 5; i++) {\n  document.write(i\
+    \ + \"<br>\");\n}\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar i = 0;\nwhile (i < 5) {\n  document.write(i\
+    \ + \"<br>\");\n  i++;\n}\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript\
+    \ 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nfunction add(a, b)\
+    \ {\n  return a + b;\n}\ndocument.write(add(5, 10));\n</script>\n\n</body>\n</html>\n\
+    ```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\n\
+    function greet(name) {\n  return \"Hello, \" + name;\n}\ndocument.write(greet(\"\
+    Alice\"));\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar x = 10;\nif (x > 5) {\n  document.write(\"\
+    x is greater than 5\");\n} else {\n  document.write(\"x is not greater than 5\"\
+    );\n}\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n\n<script>\nvar t = 2;\nswitch (t) {\n  case 1:\n   \
+    \ document.write(\"t is 1\");\n    break;\n  case 2:\n    document.write(\"t is\
+    \ 2\");\n    break;\n  default:\n    document.write(\"t is not 1 or 2\");\n}\n\
+    </script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n\
+    <html>\n<body>\n\n<script>\nvar i = 0;\ndo {\n  document.write(i + \"<br>\");\n\
+    \  i++;\n} while (i < 5);\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript\
+    \ 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar colors = [\"red\"\
+    , \"green\", \"blue\"];\nfor (var i = 0; i < colors.length; i++) {\n  document.write(colors[i]\
+    \ + \"<br>\");\n}\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar fruits = [\"Apple\", \"Banana\"\
+    , \"Cherry\"];\nfruits.forEach(function(fruit) {\n  document.write(fruit + \"\
+    <br>\");\n});\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar numbers = [1, 2, 3, 4, 5];\n\
+    var doubled = numbers.map(function(num) {\n  return num * 2;\n});\nconsole.log(doubled);\n\
+    </script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n\
+    <html>\n<body>\n\n<script>\nvar numbers = [1, 2, 3, 4, 5];\nvar filtered = numbers.filter(function(num)\
+    \ {\n  return num > 2;\n});\nconsole.log(filtered);\n</script>\n\n</body>\n</html>\n\
+    ```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\n\
+    var numbers = [1, 2, 3, 4, 5];\nvar sum = numbers.reduce(function(accumulator,\
+    \ current) {\n  return accumulator + current;\n}, 0);\nconsole.log(sum);\n</script>\n\
+    \n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n\
+    <body>\n\n<script>\nvar str = \"hello world\";\nconsole.log(str.toUpperCase());\
+    \ // 输出: \"HELLO WORLD\"\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript\
+    \ 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar str = \"JavaScript\"\
+    ;\nvar firstChar = str.charAt(0);\nconsole.log(firstChar); // 输出: \"J\"\n</script>\n\
+    \n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n\
+    <body>\n\n<script>\nvar str = \"Hello world\";\nvar index = str.indexOf(\"world\"\
+    );\nconsole.log(index); // 输出: 6\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript\
+    \ 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar str = \"Hello\
+    \ world\";\nvar substring = str.substring(0, 5);\nconsole.log(substring); // 输出:\
+    \ \"Hello\"\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar str = \"Hello world\";\nvar replaced\
+    \ = str.replace(\"world\", \"JavaScript\");\nconsole.log(replaced); // 输出: \"\
+    Hello JavaScript\"\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\nvar str = \"Hello world\"\
+    ;\nvar words = str.split(\" \");\nconsole.log(words); // 输出: [\"Hello\", \"world\"\
+    ]\n</script>\n\n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n\n<script>\nvar user = {\n  name: \"Alice\",\n  age:\
+    \ 30\n};\nconsole.log(user.name); // 输出: \"Alice\"\n</script>\n\n</body>\n</html>\n\
+    ```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\n<script>\n\
+    var arr = [1, 2, 3];\narr.push(4);\nconsole.log(arr); // 输出: [1, 2, 3, 4]\n</script>\n\
+    \n</body>\n</html>\n```\n\n### JavaScript 示例\n```html\n<!DOCTYPE html>\n<html>\n\
+    <body>\n\n<script>\nvar arr = [1, 2, 3, 4];\nvar lastElement = arr.pop();\nconsole.log(arr);\
+    \ // 输出: [1, 2, 3]\n</script>\n\n</body>\n</html>\n```\n\n### JASCRIPT 练习册\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n\n<p>欢迎使用 JavaScript 练习册！</p>\n\n</body>\n</html>\n\
+    ```\n\n### 练习 1：首字母大写\n```javascript\nfunction capitalize(str) {\n  return str.charAt(0).toUpperCase()\
+    \ + str.slice(1);\n}\nconsole.log(capitalize(\"hello\")); // 输出: \"Hello\"\n```\n\
+    \n### 练习 2：统计元音数量\n```javascript\nfunction countVowels(str) {\n  let count = 0;\n\
+    \  const vowels = \"aeiouAEIOU\";\n  for (let char of str) {\n    if (vowels.includes(char))\
+    \ {\n      count++;\n    }\n  }\n  return count;\n}\nconsole.log(countVowels(\"\
+    hello\")); // 输出: 2\n```\n\n### 练习 3：创建一个新字符串\n```javascript\nfunction createString(str1,\
+    \ str2) {\n  return str1 + str2;\n}\nconsole.log(createString(\"Hello \", \"World\"\
+    )); // 输出: \"Hello World\"\n```\n\n### 练习 4：拼接两个字符串\n```javascript\nfunction concatenateStrings(str1,\
+    \ str2) {\n  return str1 + \" \" + str2;\n}\nconsole.log(concatenateStrings(\"\
+    Hello\", \"World\")); // 输出: \"Hello World\"\n```\n\n### 练习 5：第一个非重复字符\n```javascript\n\
+    function firstNonRepeatedChar(str) {\n  let charCount = {};\n  for (let char of\
+    \ str) {\n    charCount[char] = (charCount[char] || 0) + 1;\n  }\n  for (let char\
+    \ of str) {\n    if (charCount[char] === 1) {\n      return char;\n    }\n  }\n\
+    \  return null;\n}\nconsole.log(firstNonRepeatedChar(\"swiss\")); // 输出: \"w\"\
+    \n```\n\n### 练习 6：找到最长单词\n```javascript\nfunction findLongestWord(str) {\n  let\
+    \ words = str.split(\" \");\n  let longest = \"\";\n  for (let word of words)\
+    \ {\n    if (word.length > longest.length) {\n      longest = word;\n    }\n \
+    \ }\n  return longest;\n}\nconsole.log(findLongestWord(\"The quick brown fox jumps\
+    \ over the lazy dog\")); // 输出: \"jumps\"\n```\n\n### 练习 7：统计元音个数\n```javascript\n\
+    function countVowels(str) {\n  let count = 0;\n  const vowels = \"aeiouAEIOU\"\
+    ;\n  for (let char of str) {\n    if (vowels.includes(char)) {\n      count++;\n\
+    \    }\n  }\n  return count;\n}\nconsole.log(countVowels(\"JavaScript programming\"\
+    )); // 输出: 5\n```\n\n### 练习 8：检查数字是否为素数\n```javascript\nfunction isPrime(num)\
+    \ {\n  if (num <= 1) return false;\n  for (let i = 2; i <= Math.sqrt(num); i++)\
+    \ {\n    if (num % i === 0) return false;\n  }\n  return true;\n}\nconsole.log(isPrime(11));\
+    \ // 输出: true\n```\n\n### JavaScript: 获取数据类型\n```javascript\nconsole.log(typeof\
+    \ 42); // 输出: \"number\"\nconsole.log(typeof \"hello\"); // 输出: \"string\"\nconsole.log(typeof\
+    \ true); // 输出: \"boolean\"\nconsole.log(typeof {}); // 输出: \"object\"\nconsole.log(typeof\
+    \ []); // 输出: \"object\"\n```\n\n### 寻找第二小和第二大\n```javascript\nfunction findSecondLowestAndGreatest(arr)\
+    \ {\n  let uniqueArr = [...new Set(arr)].sort((a, b) => a - b);\n  if (uniqueArr.length\
+    \ < 2) return null;\n  return {\n    secondLowest: uniqueArr[1],\n    secondGreatest:\
+    \ uniqueArr[uniqueArr.length - 2]\n  };\n}\nconsole.log(findSecondLowestAndGreatest([1,\
+    \ 5, 2, 8, 3, 1])); // 输出: {secondLowest: 2, secondGreatest: 5}\n```\n\n### 两个数字相加\n\
+    ```javascript\nfunction addDigits(a, b) {\n  return a + b;\n}\nconsole.log(addDigits(5,\
+    \ 10)); // 输出: 15\n```\n\n### 闰年检查\n```javascript\nfunction isLeapYear(year) {\n\
+    \  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);\n}\nconsole.log(isLeapYear(2000));\
+    \ // 输出: true\nconsole.log(isLeapYear(2023)); // 输出: false\n```\n\n### 检查给定的正数\n\
+    ```javascript\nfunction isPositive(num) {\n  return num > 0;\n}\nconsole.log(isPositive(5));\
+    \ // 输出: true\nconsole.log(isPositive(-3)); // 输出: false\n```\n\n### 字符串以 'Java'\
+    \ 开头 - 检查\n```javascript\nfunction startsWithJava(str) {\n  return str.startsWith(\"\
+    Java\");\n}\nconsole.log(startsWithJava(\"JavaScript\")); // 输出: true\nconsole.log(startsWithJava(\"\
+    Python\")); // 输出: false\n```\n\n### 两个给定的整数值 - 检查\n```javascript\nfunction areIntegers(a,\
+    \ b) {\n  return Number.isInteger(a) && Number.isInteger(b);\n}\nconsole.log(areIntegers(5,\
+    \ 10)); // 输出: true\nconsole.log(areIntegers(5, 10.5)); // 输出: false\n```\n\n\
+    ### 寻找接近 100 的值\n```javascript\nfunction nearestTo100(num) {\n  if (Math.abs(100\
+    \ - num) <= 49) {\n    return Math.round(num / 100) * 100;\n  } else {\n    return\
+    \ Math.floor(num / 100) * 100;\n  }\n}\nconsole.log(nearestTo100(95)); // 输出:\
+    \ 100\nconsole.log(nearestTo100(150)); // 输出: 100\n```\n\n### 正数 - 检查\n```javascript\n\
+    function isPositive(num) {\n  return num > 0;\n}\nconsole.log(isPositive(10));\
+    \ // 输出: true\n```\n\n### 字符串以 'Java' 开头 - 检查\n(此处与上方重复，保持逻辑一致)\n```javascript\n\
+    function startsWithJava(str) {\n  return str.startsWith(\"Java\");\n}\nconsole.log(startsWithJava(\"\
+    JavaScript\")); // 输出: true\n```\n\n### 乘法和除法\n```javascript\nfunction multiply(a,\
+    \ b) {\n  return a * b;\n}\nfunction divide(a, b) {\n  if (b === 0) return \"\
+    Cannot divide by zero\";\n  return a / b;\n}\nconsole.log(multiply(4, 5)); //\
+    \ 输出: 20\nconsole.log(divide(10, 2)); // 输出: 5\n```\n\n### 温度转换\n```javascript\n\
+    function celsiusToFahrenheit(c) {\n  return (c * 9/5) + 32;\n}\nfunction fahrenheitToCelsius(f)\
+    \ {\n  return (f - 32) * 5/9;\n}\nconsole.log(celsiusToFahrenheit(25)); // 输出:\
+    \ 77\nconsole.log(fahrenheitToCelsius(77)); // 输出: 25\n```\n"
+- fmt: "\n```html\n<script>  \n  /* It is multi-line comment.  \n  It will not be\
+    \ displayed */  \n  document.write (\"Example of JavaScript multi line comment\"\
+    );  \n</script>  \n</body>  \n</html>\n```\n\n# Javascript Variable\n\nValues\
+    \ (`name=\"Ram\"`) and expressions (`Sum=x+y`) are stored in variables. We must\
+    \ first declare a variable before utilizing it. To declare a variable, we use\
+    \ the term `var` as follows:\n\n```javascript\nvar name;\n```\n\nThere are 2 types\
+    \ of variables:\n\n1. Local Variable\n2. Global Variable\n\n### Local Variable\n\
+    It's declared inside a function or a block.\n\n#### Example\n```html\n<script>\
+    \  \nfunction abc(){  \n  var x=10; //local variable  \n</script>\n```\n\n###\
+    \ Global Variable\nIt has a global scope, meaning that it can be defined anywhere\
+    \ in JavaScript code. Outside of the function, a variable is declared.\n\n####\
+    \ Example\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar data\
+    \ =200; //global variable  \nfunction a(){  \n  document.writeln(data);  \n} \
+    \ \nfunction b(){  \n  document.writeln(data);  \n}  \na();//calling javascript\
+    \ function  \nb();  \n</script>  \n</body>  \n</html>\n```\n\n### In JavaScript,\
+    \ declaring a global variable within a function\nTo declare a JavaScript global\
+    \ variable inside a function, we must use the `window` object.\n\n#### Example\n\
+    ```javascript\nwindow.value=90;\n```\nIt can now be declared within any function\
+    \ and accessed from within any function.\n\n#### Example\n```html\n<!DOCTYPE html>\
+    \  \n<html>  \n<body>  \n<script>  \nfunction a(){  \n  window.value=50; //declare\
+    \ global variable by use of window object  \n}  \nfunction b(){  \n  alert(window.value);//access\
+    \ global variable from other function  \n}  \na();  \nb();      \n</script>  \n\
+    </body>  \n</html>\n```\n\n# Javascript Data Types\n\nIt has a variety of data\
+    \ types to hold various types of values. In Javascript, there are two sorts of\
+    \ data types.\n\n1. Primitive data types.\n2. Non-primitive data types.\n\nBecause\
+    \ JavaScript is a dynamic type language, we don't need to define the type of variable\
+    \ because the JavaScript engine uses it dynamically. The data type is specified\
+    \ using `var` in this case. It may store any type of value, including numbers,\
+    \ strings, and objects.\n\n#### Example\n```javascript\nvar a=Ram; //String  \n\
+    var b=20; //Number  \nvar x= {FirstName:'Ram', lastName:'Doe'}; //Object\n```\n\
+    \n### JavaScript - primitive data types\nIn JavaScript, there are five different\
+    \ types of primitive data types.\n![](Images/image00101.jpeg)\n\n### JavaScript\
+    \ non-primitive data types\nThere is 3 non-primitive data types are as follows:\n\
+    ![](Images/image00102.jpeg)\n\n# Javascript Operators\n\nOperators are symbols\
+    \ in JavaScript that are used to perform operations on operands. `3+2` equals\
+    \ `5` in simple terms. The operands here are `3` and `2`, and the operator is\
+    \ `+`.\n\nThe JavaScript operators are as follows:\n\n1. Arithmetic Operators.\n\
+    2. Comparison (relational) Operators.\n3. Bitwise Operators.\n4. Logical Operators.\n\
+    5. Assignment Operators.\n6. Special Operators.\n\n### Arithmetic Operators\n\
+    We employ arithmetic operations on the operands in arithmetic operators.\n![](Images/image00103.jpeg)\n\
+    \n### Comparison Operators\nIn the Comparison Operator, two operands `A` and `B`\
+    \ are compared.\n![](Images/image00104.jpeg)\n\n### Assignment operator\nJavaScript\
+    \ support following - assign operators.\n![](Images/image00105.jpeg)\n\n### Bitwise\
+    \ Operators\nJavaScript supports following - bitwise operators:\n![](Images/image00106.jpeg)\n\
+    \n### Logical Operators\nBoolean values are commonly utilized with logical operators.\
+    \ Following are the - logical operators-\n![](Images/image00107.jpeg)\n\n# Javascript\
+    \ If Else\n\nA conditional statement in JavaScript is used to conduct different\
+    \ activities depending on the criteria. In JavaScript, there are three types of\
+    \ statements.\n\n1. `if` Statement.\n2. `if else` Statement.\n3. `if else if`\
+    \ Statement.\n\n### if statement\nIf the condition is true or false, the `if`\
+    \ statement is used in JavaScript to run the function.\n\n```javascript\nif (condition){\
+    \ //\n  //content to be evaluated\n}\n```\n![](Images/image0108.jpeg)\n\n####\
+    \ Example:\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar x=50;\
+    \  \nif(x>30){  \n  document.write(\"value of x is greater than 30\");  \n}  \n\
+    </script>  \n</body>  \n</html>\n```\nOutput: Value of x is greater than 30\n\n\
+    ### if else statement\nIf condition is true or false, the if else statement is\
+    \ used.\n\n```javascript\nif(condition) {\n  //set of statements\n} else {\n \
+    \ //set of statements\n}\n```\n![](Images/image109.jpeg)\n\n#### Example:\n```html\n\
+    <!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar x=20;  \nif(x%2==0){  \n\
+    \  document.write(\"x is even number\");  \n} else{\n  document.write(\"a is odd\
+    \ number\")  \n}  \n</script>  \n</body>  \n</html>\n```\nOutput: x is even\n\n\
+    ### if else if\nIt merely looks at the content to see if the expression is true\
+    \ across many expressions. If else if is a more complex version of the if else\
+    \ statement.\n\n```javascript\nif (condition1) {\n  //Statements to be executed\
+    \ if condition1 is true\n} else if (condition2) {\n  //Statements to be executed\
+    \ if condition2 is true\n} else if (condition3) {\n  //Statements to be executed\
+    \ if condition3 is true\n} else {\n  //Statements to be executed if no condition\
+    \ is true\n}\n```\n\n#### Example:\n```html\n<!DOCTYPE html>  \n<html>  \n<body>\
+    \  \n<script>  \nvar x=50;  \nif (x==10){  \n  document.write(\"x is equal to\
+    \ 10\");  \n} else if(x==50){  \n  document.write(\"x is equal to 50\");  \n}\
+    \ else if(x==30){  \n  document.write(\"x is equal to 30\");  \n} else{\n  document.write(\"\
+    a is not equal to 10, 50 or 30\");  \n}  \n</script>  \n</body>  \n</html>\n```\n\
+    Output: x is equal to 50\n\n# Javascript Switch Statement\n\nIn JavaScript, the\
+    \ `switch` statement is used to execute a single code under several conditions.\
+    \ It's the same as the else if statement, but it's easier to remember than the\
+    \ `if..else..if` statement.\n![](Images/image00110.jpeg)\n\n#### Syntax\n```javascript\n\
+    switch (expression) {\n  case 1: statement(s)\n  break;\n  case 2: statement(s)\n\
+    \  break;\n  ..\n  case n: statement(s)\n  break;\n  default:statements(s)\n}\n\
+    ```\n**NOTE:** In switch-case statements, the `break` statement is very important.\n\
+    \n#### Example\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar\
+    \ grade='B';  \nvar result;  \nswitch(grade){\n  case 'A':\n    result=\"A Grade\"\
+    ;\n    break;\n  case 'B':\n    result=\"B Grade\";\n    break;\n  case 'C':\n\
+    \    result=\"C Grade\";\n    break;\n  default:\n    result=\"No Grade\";\n}\
+    \  \ndocument.write(result);  \n</script>  \n</body>  \n</html>\n```\nOutput:\
+    \ B Grade\n\n# Javascript loop\n\nBecause the method of repeating forms a circle,\
+    \ repetition statements are referred to as loops. We use Loop statements to decrease\
+    \ the amount of lines in some cases. It's most commonly seen in Array.\n\nIn JavaScript,\
+    \ there are three different forms of loops.\n\n1. while loop\n2. for loop\n3.\
+    \ do-while loop\n\n### while loop\nThe code is performed in a while loop until\
+    \ the expression is true. If the number of iterations is unknown, it should be\
+    \ utilized.\n![](Images/image00111.jpeg)\n\n#### Syntax\n```javascript\nwhile\
+    \ (condition){\n  statement(s) executed if expression is true\n}\n```\n\n####\
+    \ Example\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar i=1;\
+    \  \nwhile (i<=10) {\n  document.write(i+\"<br/>\");\n  i++;\n}  \n</script> \
+    \ \n</body>  \n</html>\n```\nOutput:\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n### For\
+    \ loop\n"
+  raw: '<script>  
+
+
+    /* It is multi-line comment.  
+
+
+    It will not be displayed */  
+
+
+    document.write ("Example of JavaScript multi line comment");  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Javascript Variable
+
+
+    Values (name=”Ram”) and expressions (Sum=x+y) are stored in variables.
+
+
+    We must first declare a variable before utilizing it. To declare a variable, we
+    use the term var as follows:
+
+
+    var name;
+
+
+    There are 2 types of variables:
+
+
+    1.  Local Variable
+
+
+    2.  Global Variable
+
+
+    Local Variable– It''s declared inside a function or a block.
+
+
+    Example
+
+
+    ##### <script>  
+
+
+    ##### functionabc(){  
+
+
+    ##### var x=10; //local variable  
+
+
+    ##### </script>
+
+
+    Global Variable- It has a global scope, meaning that it can be defined anywhere
+    in JavaScript code.
+
+
+    Outside of the function, a variable is declared.
+
+
+    Example
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script>  
+
+
+    var data =200; //global variable  
+
+
+    function a(){  
+
+
+    document.writeln(data);  
+
+
+    }  
+
+
+    function b(){  
+
+
+    document.writeln(data);  
+
+
+    }  
+
+
+    a();//calling javascript function  
+
+
+    b();  
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    In JavaScript, declaring a global variable within a function
+
+
+    To declare a JavaScript global variable inside a function, we must use the window
+    object.
+
+
+    Example
+
+
+    ##### window.value=90;
+
+
+    It can now be declared within any function and accessed from within any function.
+
+
+    Example
+
+
+    <!DOCTYPE html>  
+
+
+    <html>  
+
+
+    <body>  
+
+
+    <script>  
+
+
+    function a(){  
+
+
+    window.value=50; //declare global variable by use of window object  
+
+
+    }  
+
+
+    function b(){  
+
+
+    alert(window.value);//access global variable from other function  
+
+
+    }  
+
+
+    a();  
+
+
+    b();      
+
+
+    </script>  
+
+
+    </body>  
+
+
+    </html>
+
+
+    Javascript Data Types
+
+
+    It has a variety of data types to hold various types of values.
+
+
+    In Javascript, there are two sorts of data types.
+
+
+    1.  Primitive data types.
+
+
+    2.  Non-primitive data types.
+
+
+    Because JavaScript is a dynamic type language, we don''t need to define the type
+    of variable because the JavaScript engine uses it dynamically. The data type is
+    specified using var in this case. It may store any type of value, including numbers,
+    strings, and objects.
+
+
+    Example
+
+
+    ##### var a=Ram; //String   
+
+
+    ##### var b=20; //Number  
+
+
+    ##### var x= {FirstName:''''Ram'''', lastName:''''Doe''''}; //Object
+
+
+    JavaScript - primitive data types
+
+
+    In JavaScript, there are five different types of primitive data types.
+
+
+    ![](Images/image00101.jpeg)
+
+
+    JavaScript non-primitive data types
+
+
+    There is 3 non-primitive data types are as follows:
+
+
+    ![](Images/image00102.jpeg)
+
+
+    Javascript Operators
+
+
+    Operators are symbols in JavaScript that are used to perform operations on operands.
+    3+2 equals 5 in simple terms. The operands here are 3 and 2, and the operator
+    is +.
+
+
+    The JavaScript operators are as follows:
+
+
+    1.  Arithmetic Operators.
+
+
+    2.  Comparison (relational) Operators.
+
+
+    3.  Bitwise Operators.
+
+
+    4.  Logical Operators.
+
+
+    5.  Assignment Operators.
+
+
+    6.  Special Operators.
+
+
+    Arithmetic Operators
+
+
+    We employ arithmetic operations on the operands in arithmetic operators.
+
+
+    ![](Images/image00103.jpeg)
+
+
+    Comparison Operators
+
+
+    In the Comparison Operator, two operands A and B are compared.
+
+
+    ![](Images/image00104.jpeg)
+
+
+    Assignment operator
+
+
+    JavaScript support following - assign operators.
+
+
+    ![](Images/image00105.jpeg)
+
+
+    Bitwise Operators
+
+
+    JavaScript supports following - bitwise operators:
+
+
+    ![](Images/image00106.jpeg)
+
+
+    Logical Operators
+
+
+    Boolean values are commonly utilized with logical operators.
+
+
+    Following are the - logical operators-
+
+
+    ![](Images/image00107.jpeg)
+
+
+    Javascript If Else
+
+
+    A conditional statement in JavaScript is used to conduct different activities
+    depending on the criteria.
+
+
+    In JavaScript, there are three types of statements.
+
+
+    1.  if Statement.
+
+
+    2.  if else Statement.
+
+
+    3.  if else if Statement.
+
+
+    if statement
+
+
+    If the condition is true or false, the if statement is used in JavaScript to run
+    the function.
+
+
+    ##### if (condition){ //   
+
+
+    #####     //content to be evaluated
+
+
+    ##### }
+
+
+    ![Image 1.jpg](Images/image00108.jpeg)
+
+
+    Example:-
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var x=50;  
+
+
+    ##### if(x>30){  
+
+
+    ##### document.write("value of x is greater than 30");  
+
+
+    ##### }  
+
+
+    ##### </script >  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    output
+
+
+    Value of x is greater than 30
+
+
+    if else statement
+
+
+    If either condition is true or false, the if else statement is used.
+
+
+    Syntax
+
+
+    ##### if(condition)  
+
+
+    ##### {  
+
+
+    ##### // set of statements  
+
+
+    ##### }  
+
+
+    ##### else  
+
+
+    ##### {  
+
+
+    ##### // set of statements  
+
+
+    ##### }
+
+
+    ![Image 2.jpg](Images/image00109.jpeg)
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var x=20;  
+
+
+    ##### if(x%2==0){  
+
+
+    ##### document.write("x is even number");  
+
+
+    ##### }  
+
+
+    ##### else{  
+
+
+    ##### document.write("a is odd number")  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    X is even number
+
+
+    If else if
+
+
+    It merely looks at the content to see if the expression is true across many expressions.
+    If otherwise if is a more complex version of the if else statement.
+
+
+    Syntax
+
+
+    ##### If (condition1)  
+
+
+    ##### {  
+
+
+    ##### Statement(s) to be executed if condition 1 is true  
+
+
+    ##### }  
+
+
+    ##### else if (condition 2)  
+
+
+    ##### {  
+
+
+    ##### Statement(s) to be executed if condition 2 is true  
+
+
+    ##### }  
+
+
+    ##### else if (condition 3)  
+
+
+    ##### {  
+
+
+    ##### Statement(s) to be executed if condition 3 is true  
+
+
+    ##### }  
+
+
+    ##### else  
+
+
+    ##### {     
+
+
+    ##### Statement(s) to be executed if no condition is true  
+
+
+    ##### }
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var x=50;  
+
+
+    ##### if (x==10){  
+
+
+    ##### document.write("x is equal to 10");  
+
+
+    ##### }  
+
+
+    ##### else if(x==50){  
+
+
+    ##### document.write("x is equal to 50");  
+
+
+    ##### }  
+
+
+    ##### else if(x==30){  
+
+
+    ##### document.write("x is equal to 30");  
+
+
+    ##### }  
+
+
+    ##### else{  
+
+
+    ##### document.write("a is not equal to 10, 50 or 30");  
+
+
+    ##### }     
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    x is equal to 50
+
+
+    Javascript Switch Statement
+
+
+    In JavaScript, the switch statement is used to execute a single code under several
+    conditions. It''s the same as the else if statement, but it''s easier to remember
+    than the if..else..if statement.
+
+
+    ![Image 3.jpg](Images/image00110.jpeg)
+
+
+    Syntax
+
+
+    ##### switch (expression)  
+
+
+    ##### {  
+
+
+    ##### case 1: statement(s)  
+
+
+    ##### break;  
+
+
+    ##### case 2: statement(s)  
+
+
+    ##### break;  
+
+
+    ##### â€¦..  
+
+
+    ##### case n: statement(s)  
+
+
+    ##### break;  
+
+
+    ##### default: statements(s)  
+
+
+    ##### }
+
+
+    NOTE: In switch-case statements, the break statement is very important.
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var grade=''B'';  
+
+
+    ##### var result;  
+
+
+    ##### switch(grade){  
+
+
+    ##### case ''A'':  
+
+
+    ##### result="A Grade";  
+
+
+    ##### break;  
+
+
+    ##### case ''B'':  
+
+
+    ##### result="B Grade";  
+
+
+    ##### break;  
+
+
+    ##### case ''C'':  
+
+
+    ##### result="C Grade";  
+
+
+    ##### break;  
+
+
+    ##### default:  
+
+
+    ##### result="No Grade";  
+
+
+    ##### }  
+
+
+    ##### document.write(result);  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    B Grade
+
+
+    Javascript loop
+
+
+    Because the method of repeating forms a circle, repetition statements are referred
+    to as loops. We use Loop statements to decrease the amount of lines in some cases.
+    It''s most commonly seen in Array.
+
+
+    In JavaScript, there are three different forms of loops.
+
+
+    1.  while loop
+
+
+    2.  for loop
+
+
+    3.  do-while loop
+
+
+    while loop
+
+
+    The code is performed in a while loop until the expression is true. If the number
+    of iterations is unknown, it should be utilized.
+
+
+    ![Image 4.jpg](Images/image00111.jpeg)
+
+
+    Syntax
+
+
+    ##### while (condition){  
+
+
+    ##### statement(s) executed if expression is true  
+
+
+    ##### }
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var i=1;  
+
+
+    ##### while (i<=10)  
+
+
+    ##### {  
+
+
+    ##### document.write(i+ "<br/>");  
+
+
+    ##### i++;  
+
+
+    ##### }   
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    1
+
+
+    2
+
+
+    3
+
+
+    4
+
+
+    5
+
+
+    6
+
+
+    7
+
+
+    8
+
+
+    9
+
+
+    10
+
+
+    For loop'
+  toc: []
+  trans: "\n\n```html\n<script>  \n  /* 这是一个多行注释。  \n  它不会被显示 */  \n  document.write\
+    \ (\"Example of JavaScript multi line comment\");  \n</script>  \n</body>  \n\
+    </html\n```\n\n# JavaScript 变量\n\n值（`name=\"Ram\"`）和表达式（`Sum=x+y`）存储在变量中。在使用变量之前，必须先对其声明。要声明变量，我们如下使用\
+    \ `var` 关键字：\n\n```javascript\nvar name;\n```\n\n变量有 2  类型：\n\n1. 局部变量\n2. 全局变量\n\
+    \n### 局部变量\n它在函数或块内部声明。\n\n#### 示例\n```html\n<script>  \nfunction abc(){  \n \
+    \ var x=10; //局部变量  \n</script>\n```\n\n### 全局变量\n它具有全局作用域，意味着可以在 JavaScript 代码的任何地方定义。在函数外部声明的变量。\n\
+    \n#### 示例\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar data\
+    \ =200; //global 变量  \nfunction a(){  \n  document.writeln(data);  \n}  \nfunction\
+    \ b(){  \n  document.writeln(data);  \n}  \na();//调用 javascript 函数  \nb();  \n\
+    </script>  \n</body>  \n</html>\n```\n\n### 在 JavaScript 中，在函数内部声明全局变量\n若要在函数内部声明\
+    \ JavaScript 全局变量，我们必须使用 `window` 对象。\n\n#### 示例\n```javascript\nwindow.value=90;\n\
+    ```\n现在可以在任何函数内部声明它，并从任何函数内部访问。\n\n#### 示例\n```html\n<!DOCTYPE html>  \n<html>\
+    \  \n<body>  \n<script>  \nfunction a(){  \n  window.value=50; //使用 window 对象声明全局变量\
+    \  \n}  \nfunction b(){  \n  alert(window.value);//从其他函数访问全局变量  \n}  \na();  \n\
+    b();      \n</script>  \n</body>  \n</html>\n```\n\n# JavaScript 数据类型\n\n它有多种数据类型来存放各种类型的值。在\
+    \ JavaScript 中，有两种类的数据类型。\n\n1. 原始数据类型（Primitive data types）。\n2. 非原始数据类型（Non-primitive\
+    \ data types）。\n\n由于 JavaScript 是动态类型语言，我们不需要定义变量的类型，因为 JavaScript 引擎会动态使用它。在这种情况下，使用\
+    \ `var` 指定数据类型。它可以存储任何类型的值，包括数字、字符串和对象。\n\n#### 示例\n```javascript\nvar a=Ram;\
+    \ //String  \nvar b=20; //Number  \nvar x= {FirstName:'Ram', lastName:'Doe'};\
+    \ //Object\n```\n\n### JavaScript - 原始数据类型\n在 JavaScript 中，有五种不同的原始数据类型。\n![](img/image00101.jpeg)\n\
+    \n### JavaScript 非原始数据类型\n有 3 种非原始数据类型如下：\n![](img/image00102.jpeg)\n\n# JavaScript\
+    \ 运算符\n\n运算符是 JavaScript 中的符号，用于对操作数执行操作。简单来说，`3+2` 等于 `5`。这里的操作数是 `3` 和 `2`，运算符是\
+    \ `+`。\n\nJavaScript 运算符如下：\n\n1. 算术运算符。\n2. 比较（关系）运算符。\n3. 位运算符。\n4. 逻辑运算符。\n\
+    5. 赋值运算符。\n6. 特殊运算符。\n\n### 算术运算符\n我们在算术运算符对操作数使用算术操作。\n![](img/image00103.jpeg)\n\
+    \n### 比较运算符\n在比较运算符中，比较两个操作数 `A` 和 `B`。\n![](img/image00104.jpeg)\n\n### 赋值运算符\n\
+    JavaScript 支持以下 - 赋值运算符。\n![](img/image00105.jpeg)\n\n### 位运算符\nJavaScript 支持以下\
+    \ - 位运算符：\n![](img/image00106.jpeg)\n\n### 逻辑运算符\n布尔值通常与逻辑运算符配合使用。以下是 逻辑运算符-\n\
+    ![](img/image00107.jpeg)\n\n# JavaScript If Else\n\nJavaScript 中的条件语句用于根据标准执行不同的活动。在\
+    \ JavaScript 中，三种类型的语句。\n\n1. `if` 语句。\n2. `if else` 语句。\n3. `if else if` 语句。\n\
+    \n### if 语句\n如果条件为真或假，JavaScript 中使用 `if` 语句来运行函数。\n\n```javascript\nif (condition){\
+    \ //\n  // 等待评估的内容\n}\n```\n![](img/image0108.jpeg)\n\n#### 示例:\n```html\n<!DOCTYPE\
+    \ html>  \n<html>  \n<body>  \n<script>  \nvar x=50;  \nif(x>30){  \n  document.write(\"\
+    value of x is greater than 30\");  \n}  \n</script>  \n</body>  \n</html>\n```\n\
+    输出：Value of x is greater than 30\n\n### if else 语句\n如果条件为真或假，使用 if else 语句。\n\n\
+    ```javascript\nif(condition) {\n  // 语句组\n} else {\n  // 语句组\n}\n```\n![](img/image109.jpeg)\n\
+    \n#### 示例:\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar x=20;\
+    \  \nif(x%2==0){  \n  document.write(\"x is even\");  \n} \n</script>  \n</body>\
+    \  \n</html>\n```\n输出：x is even\n\n### if else if\n如果条件为真或假，使用 if else 语句。\n\n\
+    ```javascript\nif(condition) {\n  // 语句组\n} else if (condition) {\n  // 语句组\n\
+    } else {\n  // 语句组\n}\n```\n\n#### 示例:\n```html\n<!DOCTYPE html>  \n<html>  \n\
+    <body>  \n<script>  \nvar x=50;  \nif(x>30){  \n  document.write(\"value of x\
+    \ is greater than 30\");  \n} else if(x>20){  \n  document.write(\"value of x\
+    \ is between 20 and 30\");  \n} else {\n  document.write(\"value of x is less\
+    \ than 20\");  \n}  \n</script>  \n</body>  \n</html>\n```\n输出：value of x is greater\
+    \ than 30\n\n# JavaScript Switch 语句\n\nJavaScript 中的 `switch` 语句用于在多个条件下执行单个代码。它与\
+    \ `else if` 语句相同，但更容易记忆。\n![](img/image0110.jpeg)\n\n#### 语法：\n```javascript\n\
+    switch (expression) {\n  case 1:语句(s)\n  break;\n  case 2:语句(s)\n  break;\n  ..\n\
+    \  case n:语句(s)\n  break;\n  default:语句(s)\n}\n```\n**注意：** 在 switch-case 语句中，`break`\
+    \ 语句非常重要。\n\n#### 示例\n```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>\
+    \  \nvar grade='B';  \nvar result;  \nswitch(grade){\n  case 'A':\n    result=\"\
+    A Grade\";\n    break;\n  case 'B':\n    result=\"B Grade\";\n    break;\n  case\
+    \ 'C':\n    result=\"C Grade\";\n    break;\n  default:\n    result=\"No Grade\"\
+    ;\n}  \ndocument.write(result);  \n</script>  \n</body>  \n</html>\n```\n输出：B\
+    \ Grade\n\n# JavaScript 循环\n\n由于重复的方法形成圈，重复语句被称为循环。我们使用循环语句减少某些情况下的行数。它在数组中最为常见。\n\
+    \n在 JavaScript 中，有三种形式的循环。\n\n1. while 循环\n2. for 循环\n3. do-while 循环\n\n### while\
+    \ 循环\n代码在 while 循环中执行直到表达式为真。如果迭代次数未知，应使用它。\n![](img/image00111.jpeg)\n\n####\
+    \ 语法：\n```javascript\nwhile (condition){\n  如果表达式为真则执行语句(s)\n}\n```\n\n#### 示例\n\
+    ```html\n<!DOCTYPE html>  \n<html>  \n<body>  \n<script>  \nvar i=1;  \nwhile\
+    \ (i<=10) {\n  document.write(i+\"<br/>\");\n  i++;\n}  \n</script>  \n</body>\
+    \  \n</html>\n```\n输出：\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\n### for 循环\n\n"
+- fmt: "\nIt initialized the variable, checked the condition, and then incremented\
+    \ or decremented the value in the `for` loop.\n\nIt runs for a fixed amount of\
+    \ time.\n\n![Image 5.jpg](Images/image00112.jpeg)\n\n## for\n\n### Syntax\n```javascript\n\
+    for (initialization; condition; increment)\n{\n  code to be executed\n}\n```\n\
+    \n### Example\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfor (i=1; i<=12;\
+    \ i++)\n{\n  document.write(i + \"<br/>\")\n}\n</script>\n</body>\n</html>\n```\n\
+    \n#### Output\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n\n## do while loop\nWhile\
+    \ a `while` loop executes items indefinitely, a `do while` loop executes code\
+    \ only once, regardless of whether the condition is true or false. We utilize\
+    \ `do-while` when we need to repeat the statement block at least once.\n\n![Image\
+    \ 6.jpg](Images/image00113.jpeg)\n\n### Syntax\n```javascript\ndo{\n  code to\
+    \ be executed\n  increment/decrement\n} while (condition);\n```\n\n### Example\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar i=11;\ndo{\n  document.write(i\
+    \ + \"<br/>\");\n  i++;\n}while (i<=15);\n</script>\n</body>\n</html>\n```\n\n\
+    #### Output\n11\n12\n13\n14\n15\n\n## JavaScript Function\nThe ability to define\
+    \ new functions within the `<script>...</script>` tag is an important feature\
+    \ of JavaScript. The `function` keyword is used to declare a function in JavaScript.\n\
+    \nTo reuse the code, we call the JavaScript method numerous times.\n\n### Advantages\
+    \ - JavaScript functions\n1. **Code reusability**: We use the same method several\
+    \ times to save time and code.\n2. **Less coding**: Our application is compressed\
+    \ as a result of this. When we conduct a routine task, we don't write a lot of\
+    \ code.\n\n### Syntax\n```javascript\nfunction functionName(parameter or not)\n\
+    {\n  statements\n}\n```\n\n### Example\n```html\n<!DOCTYPE html>\n<html>\n<body>\n\
+    <script>\nfunction msg()\n{\n  alert(\"Hello! world\");\n}\n</script>\n<input\
+    \ type=\"button\" onclick=\"msg()\" value=\"click here\"/>\n</body>\n</html>\n\
+    ```\n\n#### Output\nHello world!\n\n### Function with arguments\nCall function\
+    \ by passing arguments.\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+    function getcube(number)\n{\n  alert(number*number*number);\n}\n</script>\n<form>\n\
+    <input type=\"button\" value=\"click\" onclick=\"getcube(3)\"/>\n</form>\n</body>\n\
+    </html>\n```\n#### Output\n27\n\n### Example\n```html\n<!DOCTYPE html>\n<html>\n\
+    <body>\n<script>\nfunction getname()\n{\n  name=prompt(\"Enter the Name\");\n\
+    \  alert(\"Welcome Mr/Mrs \" + name);\n}\n</script>\n</body>\n<form>\n<input type=\"\
+    button\" value=\"Click\" onclick=\"getname()\"/>\n</form>\n</html>\n```\n\n###\
+    \ Function with return value\nCall function that - return value and - use it in\
+    \ program.\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getInfo()\n\
+    {\n  return \"Hello Raj! How are you?\";\n}\n</script>\n<script>\ndocument.write(getInfo());\n\
+    </script>\n</body>\n</html>\n```\n#### Output\nHello Raj! How are you?\n\n## Function()\
+    \ Constructor\nA function statement isn't just for defining functions; it may\
+    \ also be used to define functions dynamically using the `Function()` constructor\
+    \ and the `new` operator.\n\n### Syntax\n```javascript\n<script>\nvar name = new\
+    \ Function(Arg1, Arg2..., \"Function Body\");\n</script>\n```\n\n### Example\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n<script>\nvar func = new Function(\"\
+    a\", \"b\", \"return a+b;\");\nfunction secondFunction(){\n  var result;\n  result\
+    \ = func(50,50);\n  document.write (result);\n}\n</script>\n</head>\n<body>\n\
+    <p>Click button to call the function</p>\n<form>\n<input type=\"button\" onclick=\"\
+    secondFunction()\" value=\"Call Function\">\n</form>\n<p>Use different parameters\
+    \ inside the function and try yourself...</p>\n</body>\n</html>\n```\n\n## Function\
+    \ Literals\nThe concept of function literals, which is another way to construct\
+    \ functions, is introduced in JavaScript 1.2. It's an expression that defines\
+    \ a function that't have a name.\nThe syntax for a function literal is similar\
+    \ to that of a function statement, except that it is used as an expression rather\
+    \ than a statement, and there is no need for a function name.\n\n### Syntax\n\
+    ```javascript\n<script>\nvar name = function (Argument List){\n  Function Body\n\
+    };\n</script>\n```\n\n### Example\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    <script>\nvar func = function(a,b){return a+b};\nfunction secondFunction(){\n\
+    \  var result;\n  result = func(10,20);\n  document.write (result );\n}\n</script>\n\
+    </head>\n<body>\n<p>Click the button to call the function</p>\n<form>\n<input\
+    \ type=\"button\" onclick=\"secondFunction()\" value=\"Call Function\">\n</form>\n\
+    <p>Use different parameters inside the function and try yourself...</p>\n</body>\n\
+    </html>\n```\n\n## Javascript Object\nAn object is a state-and-behavioral entity.\
+    \ JavaScript is a scripting language that focuses on objects. Although JavaScript\
+    \ is template-based rather than class-based, it allows us to create objects directly.\n\
+    \n### Syntax - to add property - to add object\n```javascript\nobjectName.objectProperty\
+    \ = propertyValue;\n```\nWe use the `write()` method to document objects to write\
+    \ any content on the document.\n```javascript\nDocument.write(\"Hello world\"\
+    )\n```\n\n### Example The following example shows how to create an Object.\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n<title>User-defined objects</title>\n<script\
+    \ type=\"text/javascript\">\nvar book = new Object(); // Object created\nbook.subject\
+    \ = \"5 points someone\"; // Properties assign to the object\nbook.author = \"\
+    ChetanBhagat\";\n</script>\n</head>\n<body>\n<script type=\"text/javascript\"\
+    >\ndocument.write(\"Book Name is : \" + book.subject + \"<br>\");\ndocument.write(\"\
+    Book Author is : \" + book.author + \"<br>\");\n</script>\n</body>\n</html>\n\
+    ```\n#### Output\nBook Name is : 5 points someone\nBook Author is : ChetanBhagat\n\
+    \n### Methods of an Object\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>User-defined\
+    \ objects</title>\n<script type=\"text/javascript\">\nfunction addPrice(amount){\n\
+    \  this.price = amount;\n}\nfunction book(title, author){\n  this.title = title;\n\
+    \  this.author = author;\n  this.addPrice = addPrice; // Assign that method as\
+    \ property\n}\n</script>\n</head>\n<body>\n<script type=\"text/javascript\">\n\
+    myBook = new book(\"5 Points Someone\", \"ChetanBhagat\");\nmyBook.addPrice(150);\n\
+    document.write(\"Book Title is : \" + myBook.title + \"<br>\");\ndocument.write(\"\
+    Book Author is : \" + myBook.author + \"<br>\");\ndocument.write(\"Book Price\
+    \ is : \" + myBook.price + \"<br>\");\n</script>\n</body>\n</html>\n```\n\n##\
+    \ Javascript array\nArrays are used to represent a collection of elements in a\
+    \ single unit or memory region.\n\nEvery element that enters the array will be\
+    \ stored in the array with a unique index starting at zero. We can store data\
+    \ with the help of indexes.\n\nIn JavaScript, we must use the `new` keyword to\
+    \ declare an array. We use `new Array` to construct an array (n).\n"
+  raw: 'It initialized the variable, checked the condition, and then incremented or
+    decremented the value in the for loop.
+
+
+    It runs for a fixed amount of time.
+
+
+    ![Image 5.jpg](Images/image00112.jpeg)
+
+
+    Syntax
+
+
+    ##### for (initialization; condition; increment)  
+
+
+    ##### {  
+
+
+    ##### code to be executed  
+
+
+    ##### }
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### for (i=1; i<=12; i++)  
+
+
+    ##### {  
+
+
+    ##### document.write(i + "<br/>")  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    1
+
+
+    2
+
+
+    3
+
+
+    4
+
+
+    5
+
+
+    6
+
+
+    7
+
+
+    8
+
+
+    9
+
+
+    10
+
+
+    11
+
+
+    12
+
+
+    do while loop
+
+
+    While a while loop executes items indefinitely, a do while loop executes code
+    only once, regardless of whether the condition is true or false. We utilize do-while
+    when we need to repeat the statement block at least once.
+
+
+    ![Image 6.jpg](Images/image00113.jpeg)
+
+
+    Syntax
+
+
+    ##### do{  
+
+
+    ##### code to be executed  
+
+
+    ##### increment/decrement  
+
+
+    ##### }  
+
+
+    ##### while (condition);
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### var i=11;  
+
+
+    ##### do{  
+
+
+    ##### document.write(i + "<br/>");   
+
+
+    ##### i++;  
+
+
+    ##### }while (i<=15);  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    11
+
+
+    12
+
+
+    13
+
+
+    14
+
+
+    15
+
+
+    JavaScript Function
+
+
+    The ability to define new functions within the Script>...../script> tag is an
+    important feature of JavaScript. The function keyword is used to declare a function
+    in JavaScript.
+
+
+    To reuse the code, we call the JavaScript method numerous times.
+
+
+    Advantages - JavaScript functions
+
+
+    1\. Code reusability: We use the same method several times to save time and code.
+
+
+    2\. Less coding: Our application is compressed as a result of this. When we conduct
+    a routine task, we don''t write a lot of code.
+
+
+    Syntax
+
+
+    ##### function functionName(parameter or not)  
+
+
+    ##### {  
+
+
+    ##### statements  
+
+
+    ##### }
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### function msg()  
+
+
+    ##### {  
+
+
+    ##### alert("Hello! world");  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### <input type="button" onclick="msg()" value="click here"/>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    Hello world!
+
+
+    Function with arguments
+
+
+    Call function by passing arguments.
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### function getcube(number)  
+
+
+    ##### {  
+
+
+    ##### alert(number* number* number);  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### <form>  
+
+
+    ##### <input type="button" value="click" onclick="getcube(3)"/>  
+
+
+    ##### </form>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    #### Output
+
+
+    27
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### function getname()  
+
+
+    ##### {  
+
+
+    ##### name=prompt("Enter the Name");  
+
+
+    ##### alert("Welcome Mr/Mrs " + name);  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### <form>  
+
+
+    ##### <input type="button" value="Click" onclick="getname()"/>  
+
+
+    ##### </form>  
+
+
+    ##### </html>
+
+
+    Function with return value
+
+
+    Call function that - return value and - use it in program.
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <body>  
+
+
+    ##### <script>  
+
+
+    ##### function getInfo()  
+
+
+    ##### {  
+
+
+    ##### return "Hello Raj! How are you?";  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### <script>  
+
+
+    ##### document.write(getInfo());  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    Hello Raj! How are you?
+
+
+    The Function() Constructor
+
+
+    A function statement isn''t just for defining new functions; it may also be used
+    to define functions dynamically using the Function() constructor and the new operator.
+
+
+    Syntax
+
+
+    ##### <script>  
+
+
+    #####     var variablename = new Function(Arg1, Arg2...,  "Function Body" );   
+
+
+    ##### </script>
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <head>  
+
+
+    ##### <script>  
+
+
+    ##### var func = new Function("a", "b", "return a+b;");  
+
+
+    ##### function secondFunction(){  
+
+
+    ##### var result;  
+
+
+    ##### result = func(50,50);  
+
+
+    ##### document.write ( result );  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </head>  
+
+
+    ##### <body>  
+
+
+    ##### <p>Click button to call the function</p>  
+
+
+    ##### <form>  
+
+
+    ##### <input type="button" onclick="secondFunction()" value="Call Function">  
+
+
+    ##### </form>  
+
+
+    ##### <p>Use different parameters inside the function and try yourself...</p>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Function Literals
+
+
+    The concept of function literals, which is another way to construct functions,
+    is introduced in JavaScript 1.2\. It''s an expression that defines a function
+    that doesn''t have a name.
+
+
+    The syntax for a function literal is similar to that of a function statement,
+    except that it is used as an expression rather than a statement, and there is
+    no need for a function name.
+
+
+    Syntax
+
+
+    ##### <script>  
+
+
+    ##### var variablename = function (Argument List){  
+
+
+    #####           Function Body  
+
+
+    ##### };    
+
+
+    ##### </script>
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <head>  
+
+
+    ##### <script>  
+
+
+    ##### var func = function(a,b){ return a+b };  
+
+
+    ##### function secondFunction(){  
+
+
+    ##### var result;  
+
+
+    ##### result = func(10,20);  
+
+
+    ##### document.write ( result );  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </head>  
+
+
+    ##### <body>  
+
+
+    ##### <p>Click the button to call the function</p>  
+
+
+    ##### <form>  
+
+
+    ##### <input type="button" onclick="secondFunction()" value="Call Function">  
+
+
+    ##### </form>  
+
+
+    ##### <p>Use different parameters inside the function and try yourself...</p>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Javascript Object
+
+
+    An object is a state-and-behavioral entity. JavaScript is a scripting language
+    that focuses on objects. Although JavaScript is template-based rather than class-based,
+    it allows us to create objects directly.
+
+
+    Syntax - to add property - to add object
+
+
+    ##### objectName.objectProperty = propertyValue;
+
+
+    ##### We use the write() method to document objects to write any content on the
+    document.
+
+
+    ##### Document.write("Hello world")
+
+
+    Example
+
+
+    #### The following example
+
+
+    ###### shows how to - create an Object.
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <head>  
+
+
+    ##### <title>User-defined objects</title>  
+
+
+    ##### <script type="text/javascript">  
+
+
+    ##### var book = new Object();   // Object created  
+
+
+    ##### book.subject = "5 points someone"; // Properties assign to the object  
+
+
+    ##### book.author  = "ChetanBhagat";  
+
+
+    ##### </script>  
+
+
+    ##### </head>  
+
+
+    ##### <body>  
+
+
+    ##### <script type="text/javascript">  
+
+
+    ##### document.write("Book Name is : " + book.subject + "<br>");  
+
+
+    ##### document.write("Book Author is : " + book.author + "<br>");  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    Book Name is : 5 points someone
+
+
+    Book Author is : ChetanBhagat
+
+
+    Methods of an Object
+
+
+    Example
+
+
+    ##### <!DOCTYPE html>  
+
+
+    ##### <html>  
+
+
+    ##### <head>  
+
+
+    ##### <title>User-defined objects</title>  
+
+
+    ##### <script type="text/javascript">// Define a function which will work as a method  
+
+
+    ##### function addPrice(amount){  
+
+
+    ##### this.price = amount;   
+
+
+    ##### }  
+
+
+    ##### function book(title, author){  
+
+
+    ##### this.itle = title;  
+
+
+    ##### this.author  = author;  
+
+
+    ##### this.addPrice = addPrice; // Assign that method as property.  
+
+
+    ##### }  
+
+
+    ##### </script>  
+
+
+    ##### </head>  
+
+
+    ##### <body>  
+
+
+    ##### <script type="text/javascript">  
+
+
+    ##### varmyBook = new book("5 Points Someone", "ChetanBhagat");  
+
+
+    ##### myBook.addPrice(150);  
+
+
+    ##### document.write("Book Title is : " + myBook.title + "<br>");  
+
+
+    ##### document.write("Book Author is : " + myBook.author + "<br>");  
+
+
+    ##### document.write("Book Price is : " + myBook.price + "<br>");  
+
+
+    ##### </script>  
+
+
+    ##### </body>  
+
+
+    ##### </html>
+
+
+    Output
+
+
+    Book Title is: 5 Points Someone
+
+
+    Book Author is :ChetanBhagat
+
+
+    Book Price is : 150
+
+
+    Javascript array
+
+
+    Arrays are used to represent a collection of elements in a single unit or memory
+    region.
+
+
+    Every element that enters the array will be stored in the array with a unique
+    index starting at zero. We can store data with the help of indexes.
+
+
+    In JavaScript, we must use the new keyword to declare an array. We use new Array
+    to construct an array (n).'
+  toc: []
+  trans: "\n\n它初始化了变量，检查了条件，然后在 `for` 循环中递增或减少了值。\n\n它运行固定的时间。\n\n![Image 5.jpg](img/image00112.jpeg)\n\
+    \n## for\n\n### 语法\n```javascript\nfor (initialization; condition; increment)\n\
+    {\n  // 要执行的代码\n}\n```\n\n### 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\n\
+    for (i=1; i<=12; i++)\n{\n  document.write(i + \"<br/>\")\n}\n</script>\n</body>\n\
+    </html>\n```\n\n#### 输出\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n\n## do while\
+    \ 循环\n`while` 循环会无限执行项目，而 `do while` 循环只执行一次代码，无论条件是真还是假。当我们需要至少执行一次语句块时，我们使用\
+    \ `do-while`。\n\n![Image 6.jpg](img/image00113.jpeg)\n\n### 语法\n```javascript\n\
+    do{\n  // 要执行的代码\n  // 递增/减少\n} while (condition);\n```\n\n### 示例\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n<script>\nvar i=11;\ndo{\n  document.write(i + \"<br/>\"\
+    );\n  i++;\n}while (i<=15);\n</script>\n</body>\n</html>\n```\n\n#### 输出\n11\n\
+    12\n13\n14\n15\n\n## JavaScript 函数\n在 `<script>...</script>` 标签内定义新函数的能力是 JavaScript\
+    \ 的一个重要特性。在 JavaScript 中，使用 `function` 关键字来声明函数。\n\n为了重用代码，我们多次调用该 JavaScript\
+    \ 方法。\n\n### 优点 - JavaScript 函数\n1. **代码可重用性**：我们多次使用相同的方法来节省时间和代码量。\n2. **更少的代码**：结果我们的应用程序被压缩了。当我们执行例行任务时，不需要编写大量的代码。\n\
+    \n### 语法\n```javascript\nfunction 函数名(参数或无参数)\n{\n  // 语句\n}\n```\n\n### 示例\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction msg()\n{\n  alert(\"\
+    Hello! world\");\n}\n</script>\n<input type=\"button\" onclick=\"msg()\" value=\"\
+    click here\"/>\n</body>\n</html>\n```\n\n#### 输出\nHello world!\n\n### 带参数的函数\n\
+    通过传递参数调用函数。\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getcube(number)\n\
+    {\n  alert(number*number*number);\n}\n</script>\n<form>\n<input type=\"button\"\
+    \ value=\"click\" onclick=\"getcube(3)\"/>\n</form>\n</body>\n</html>\n```\n####\
+    \ 输出\n27\n\n### 示例\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction\
+    \ getname()\n{\n  name=prompt(\"请输入姓名\");\n  alert(\"Welcome Mr/Mrs \" + name);\n\
+    }\n</script>\n</body>\n<form>\n<input type=\"button\" value=\"Click\" onclick=\"\
+    getname()\"/>\n</form>\n</html>\n```\n\n### 带返回值的函数\n调用返回值的函数并在程序中使用它。\n```html\n\
+    <!DOCTYPE html>\n<html>\n<body>\n<script>\nfunction getInfo()\n{\n  return \"\
+    Hello Raj! How are you?\";\n}\n</script>\n<script>\ndocument.write(getInfo());\n\
+    </script>\n</body>\n</html>\n```\n#### 输出\nHello Raj! How are you?\n\n## Function()\
+    \ 构造函数\n函数语句不仅用于定义函数，还可以使用 `Function()` 构造函数和 `new` 运算符来动态定义函数。\n\n### 语法\n```javascript\n\
+    <script>\nvar name = new Function(Arg1, Arg2..., \"函数体内容\");\n</script>\n```\n\
+    \n### 示例\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script>\nvar func = new Function(\"\
+    a\", \"b\", \"return a+b;\");\nfunction secondFunction(){\n  var result;\n  result\
+    \ = func(50,50);\n  document.write (result);\n}\n</script>\n</head>\n<body>\n\
+    <p>点击按钮调用函数</p>\n<form>\n<input type=\"button\" onclick=\"secondFunction()\" value=\"\
+    Call Function\">\n</form>\n<p>在函数内部使用不同的参数并尝试一下吧...</p>\n</body>\n</html>\n```\n\
+    \n## 函数字面量\n函数字面量的概念（构造函数的另一种方式）在 JavaScript 1.2 中引入。它是一个定义无名函数的表达式。\n函数字面量的语法与函数语句相似，区别在于它是作为表达式而不是语句使用的，并且不需要函数名。\n\
+    \n### 语法\n```javascript\n<script>\nvar name = function (参数列表){\n  // 函数体\n};\n\
+    </script>\n```\n\n### 示例\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script>\n\
+    var func = function(a,b){return a+b};\nfunction secondFunction(){\n  var result;\n\
+    \  result = func(10,20);\n  document.write (result);\n}\n</script>\n</head>\n\
+    <body>\n<p>点击按钮调用函数</p>\n<form>\n<input type=\"button\" onclick=\"secondFunction()\"\
+    \ value=\"Call Function\">\n</form>\n<p>在函数内部使用不同的参数并尝试一下吧...</p>\n</body>\n</html>\n\
+    ```\n\n## JavaScript 对象\n对象是状态和行为的实体。JavaScript 是一种关注对象的脚本语言。尽管它是基于模板而非类的，但它允许我们直接创建对象。\n\
+    \n### 语法 - 添加属性 - 添加对象\n```javascript\n对象名.属性名 = 属性值\n```\n我们使用 `write()` 方法向文档写入对象内容。\n\
+    ```javascript\ndocument.write(\"Hello world\")\n```\n\n### 示例 以下示例显示了如何创建一个对象。\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n<script type=\"\
+    text/javascript\">\nvar book = new Object(); // 创建对象\nbook.subject = \"JavaScript\
+    \ 入门\"; // 给对象赋值属性\nbook.author = \"Chetan Bharti\";\n</script>\n</head>\n<body>\n\
+    <script type=\"text/javascript\">\ndocument.write(\"书籍名称为：\" + book.subject +\
+    \ \"<br>\");\ndocument.write(\"书籍作者为：\" + book.author + \"<br>\");\n</script>\n\
+    </body>\n</html>\n```\n#### 输出\n书籍名称为：JavaScript 入门\n书籍作者为：Chetan Bharti\n\n###\
+    \ 对象的方法\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<title>用户定义对象</title>\n<script\
+    \ type=\"text/javascript\">\nfunction addPrice(amount){\n  this.price = amount;\n\
+    }\nfunction book(title, author){\n  this.title = title;\n  this.author = author;\n\
+    \  this.addPrice = addPrice; // 将方法赋值为属性\n}\n</script>\n</head>\n<body>\n<script\
+    \ type=\"text/javascript\">\nmyBook = new book(\"JavaScript 入门\", \"Chetan Bharti\"\
+    );\nmyBook.addPrice(150);\ndocument.write(\"书籍标题为：\" + myBook.title + \"<br>\"\
+    );\ndocument.write(\"书籍作者为：\" + myBook.author + \"<br>\");\ndocument.write(\"\
+    书籍价格为：\" + myBook.price + \"<br>\");\n</script>\n</body>\n</html>\n```\n\n## JavaScript\
+    \ 数组\n数组用于在单元或内存区域表示元素集合。\n\n进入数组的每个元素将以唯一索引（从零开始）存储在数组中。我们可以通过索引来存储数据。\n\n在 JavaScript\
+    \ 中，我们必须使用 `new` 关键字来声明数组。我们使用 `new Array` 来构造数组 (n)。\n\n"
+- fmt: "\nThe number of slots in the array is denoted by `n`.\n\n### Syntax\n```javascript\n\
+    myarray = new array(n);\n```\n\nNOTE: We construct array objects with zero size\
+    \ whenever we build an array in JavaScript without specifying the size.\n\n###\
+    \ Example\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<script>\nvar i;\nvar emp\
+    \ = new Array();\nemp[0] = \"Ajay\";\nemp[1] = \"Abhay\";\nemp[2] = \"Arun\";\n\
+    emp[3] = \"Shipra\";\nfor (i=0; i<emp.length; i++) {\n  document.write(emp[i]\
+    \ + \"<br>\");\n}\n</script>\n</body>\n</html>\n```\n\n#### Output\nAjay\nAbhay\n\
+    Arun\nShipra\n\n### Example\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<script\
+    \ type=\"text/javascript\">\nfunction array() {\nnum = new Array(5)\nnum[0] =\
+    \ 10;\nnum[1] = 20;\nnum[2] = 30;\nnum[3] = 40;\nnum[4] = 50;\nsum = 0;\nfor (i=0;\
+    \ i<num.length; i++) {\n  sumsum = sum + num[i];\n}\nalert(sum)\n}\n</script>\n\
+    </head>\n<body>\n<input type=\"button\" onclick=\"array()\" value=\"click here\"\
+    >\n</body>\n</html>\n```\n\n### Functions used in Array\n![](Images/image00114.jpeg)\n\
+    \n# JAVASCRIPT WORKBOOK\n## Capitalize The First Letter Of Each Word\n\n### Of\
+    \ A Given String\n#### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n \
+    \ <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n![](Images/image00115.jpeg)\n</head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction capital_letter(str) {\n  str = str.split(\" \"\
+    );\n  for (var i = 0, x = str.length; i < x; i++) {\n    str[i] = str[i][0].toUpperCase()\
+    \ + str[i].substr(1);\n  }\n  return str.join(\" \");\n}\n```\n### ![](Images/image00116.jpeg)\n\
+    #### OUTPUT\nOutput: ![](Images/image00117.jpeg)\n\n# Hours and minutes\n####\
+    \ HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n![](Images/image00118.jpeg)\
+    \ \n</head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT CODE\n```javascript\n\
+    function time_convert(num) {\n  var hours = Math.floor(num / 60); \n  var minutes\
+    \ = num % 60;\n  return hours + \":\" + minutes;\n}\nconsole.log(time_convert(71));\n\
+    console.log(time_convert(450));\nconsole.log(time_convert(1441));\n```\n#### OUTPUT\n\
+    1:11\n7:30\n24:1\n\n# Count vowels\n#### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"\
+    width=device-width\">\n  <title>JavaScript program to count the number of vowels\
+    \ in a given string.</title>\n</head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction vowel_Count(str) {\n  return str.replace(/[^aeiou]/g,\
+    \ \"\").length;\n}\nconsole.log(vowel_Count(\"Python\"));\nconsole.log(vowel_Count(\"\
+    html.com\"));\n```\n#### Output:\n1\n5\n\n# Create a new string\n#### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta\
+    \ name=\"viewport\" content=\"width=device-width\">\n![](Images/image0019.jpeg)\n\
+    </head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT CODE\n```javascript\nfunction\
+    \ without_first_end(str) {\n  return str.substring(1, str.length - 1);\n}\nconsole.log(without_first_end('JavaScript'));\n\
+    console.log(without_first_end('JS'));\nconsole.log(without_first_end('PHP'));\n\
+    ```\n#### Output:\navaScript\nH\n\n# Concatenate two strings Except first character\n\
+    #### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript\
+    \ program to concatenate strings except their first character.</title>\n</head>\n\
+    <body></body>\n</html>\n```\n#### JAVASCRIPT CODE\n```javascript\nfunction concatenate(str1,\
+    \ str2) {\n  str1 = str1.substring(1, str1.length);\n  str2 = str2.substring(1,\
+    \ str2.length);\n  return str1 + str2;\n}\nconsole.log(concatenate(\"PHP\",\"\
+    JS\"));\nconsole.log(concatenate(\"A\",\"B\"));\nconsole.log(concatenate(\"AA\"\
+    ,\"BB\"));\n```\n#### Output:\nHPS\nAB\n\n# First not repeated character\n![](Images/image0020.jpeg)\n\
+    #### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>find the first repeated character.</title>\n</head>\n<body></body>\n\
+    </html>\n```\n#### JAVASCRIPT CODE\n```javascript\nfunction find_FirstNotRepeatedChar(str)\
+    \ {\n  var arra1 = str.split('');\n  var result = '';\n  var ctr = 0;\n  for (var\
+    \ x = 0; x < arra1.length; x++) {\n    ctr = 0;\n    for (var y = 0; y < arra1.length;\
+    \ y++) {\n      if (arra1[x] === arra1[y]) {\n        ctr+= 1;\n      }\n    }\n\
+    \    if (ctr < 2) {\n      result = arra1[x];\n      break;\n    }\n  }\n  return\
+    \ result;\n}\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n```\n####\
+    \ OUTPUT\ne\n\n# Find the longest word within a string\n![](Images/image0021.jpeg)\n\
+    #### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>Find the longest word within a string</title>\n</head>\n<body></body>\n\
+    </html>\n```\n#### JAVASCRIPT CODE\n```javascript\nfunction find_longest_word(str)\
+    \ {\n  var array1 = str.match(/\\w[a-z]{0,}/gi);\n  var result = array1[0];\n\
+    \  for(var x = 1 ; x < array1.length ; x++) {\n    if(result.length < array1[x].length)\
+    \ {\n      result = array1[x];\n    }\n  }\n  return result;\n}\nconsole.log(find_longest_word('Web\
+    \ Development Tutorial'));\n```\n#### OUTPUT\nDevelopment\n\n# Counts the number\
+    \ of vowels within a string\n![](Images/image0022.jpeg)\n#### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Counts the\
+    \ number of vowels within a string</title>\n</head>\n<body></body>\n</html>\n\
+    ```\n#### JAVASCRIPT CODE\n```javascript\nfunction vowel_count(str1) {\n  var\
+    \ vowel_list = 'aeiouAEIOU';\n  var vcount = 0;\n  for(var x = 0; x < str1.length;\
+    \ x++) {\n    if (vowel_list.indexOf(str1[x]) !== -1) {\n      vcount += 1;\n\
+    \    }\n  }\n  return vcount;\n}\nconsole.log(vowel_count(\"The brown fox\"));\n\
+    ```\n#### OUTPUT\n5\n\n# Check a number is prime\n![](Images/image0023.jpeg)\n\
+    #### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\
+    \ />\n  <title>Check a number is prime or not</title>\n</head>\n<body></body>\n\
+    </html>\n```\n#### JAVASCRIPT CODE\n```javascript\nfunction test_prime(n) {\n\
+    \  if (n===1) {\n    return false;\n  } else if(n === 2) {\n    return true;\n\
+    \  }else {\n    for(var x = 2; x < n; x++) {\n      if(n % x === 0) {\n      \
+    \  return false;\n      }\n    }\n    return true;\n  }\n}\nconsole.log(test_prime(37));\n\
+    ```\n#### OUTPUT\nTrue\n\n# JavaScript: Get the data type\n#### HTML CODE\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8 />\n  <title>Detect JavaScript\
+    \ Data Types</title>\n</head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT CODE\n\
+    ```javascript\nfunction detect_data_type(value) {\n  var dtypes = [Function, RegExp,\
+    \ Number, String, Boolean, Object], x, len;\n  if (typeof value === \"object\"\
+    \ || typeof value === \"function\") {\n    for (x = 0, len = dtypes.length; x\
+    \ < len; x++) {\n      if (value instanceof dtypes[x]) {\n        return dtypes[x];\n\
+    \      }\n    }\n  }\n}\n```\n"
+  raw: "The number of slots in the array is denoted by n.\n\nSyntax\n\nmyarray = new array(n);\n\
+    \nNOTE: We construct array objects with zero size whenever we build an array in\
+    \ JavaScript without specifying the size.\n\nExample\n\n##### <!DOCTYPE html>  \n\
+    \n##### <html>  \n\n##### <body>  \n\n##### <script>  \n\n##### var i;  \n\n#####\
+    \ var emp = new Array();  \n\n##### emp[0] = \"Ajay\";  \n\n##### emp[1] = \"\
+    Abhay\";  \n\n##### emp[2] = \"Arun\";  \n\n##### emp[3] = \"Shipra\";  \n\n#####\
+    \ for (i=0; i<emp.length; i++)  \n\n##### {  \n\n##### document.write(emp[i] + \"\
+    <br>\");  \n\n##### }  \n\n##### </script>  \n\n##### </body>  \n\n##### </html>\n\
+    \nOutput\n\nAjay\n\nAbhay\n\nArun\n\nShipra\n\nExample\n\n##### <!DOCTYPE html>  \n\
+    \n##### <html>  \n\n##### <head>  \n\n##### <script type=\"text/javascript\">  \n\
+    \n##### function array()  \n\n##### {  \n\n##### num = new Array(5)  \n\n#####\
+    \ num[0] = 10  \n\n##### num[1] = 20  \n\n##### num[2] = 30  \n\n##### num[3] = 40  \n\
+    \n##### num[4] = 50  \n\n##### sum = 0;  \n\n##### for (i=0; i<num.length; i++)  \n\
+    \n##### {  \n\n##### sumsum = sum + num[i];  \n\n##### }  \n\n##### alert(sum)  \n\
+    \n##### }  \n\n##### </script>  \n\n##### </head>  \n\n##### <body>  \n\n#####\
+    \ <input type=\"button\" onclick=\"array()\" value=\"click here\">  \n\n#####\
+    \ </body>  \n\n##### </html>\n\nFunctions used in Array\n\n![](Images/image00114.jpeg)\n\
+    \nJAVASCRIPT\n\nWORKBOOK\n\nFOR\n\nEXAMS AND INTERVIEWS\n\nFAST AND EASY WAY TO\n\
+    \nLEARN CODING BASICS\n\nJP TAM\n\n# JAVASCRIPT WORKBOOK\n\n# Capitalize The First\
+    \ Letter\n\n## Of Each Word\n\n### Of A Given String\n\n### HTML CODE\n\n#####\
+    \ <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n#####   <meta charset=\"\
+    utf-8\">\n\n#####   <meta name=\"viewport\" content=\"width=device-width\">\n\n\
+    #####  ![](Images/image00115.jpeg)\n\n##### </head>\n\n##### <body>\n\n##### </body>\n\
+    \n##### </html>\n\n### JAVASCRIPT CODE\n\n##### function capital_letter(str)\n\
+    \n##### {\n\n#####     str = str.split(\" \");\n\n#####     for (var i = 0, x\
+    \ = str.length; i < x; i++) {\n\n#####         str[i] = str[i][0].toUpperCase()\
+    \ + str[i].substr(1);\n\n#####     }\n\n#####     return str.join(\" \");\n\n\
+    ##### }\n\n### ![](Images/image00116.jpeg)\n\n### OUTPUT\n\nOutput:\n\n![](Images/image00117.jpeg)\n\
+    \n# Hours and minutes\n\n### HTML CODE\n\n##### <!DOCTYPE html>\n\n##### <html>\n\
+    \n##### <head>\n\n#####   <meta charset=\"utf-8\">\n\n#####   <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n\n##### ![](Images/image00118.jpeg) \n\n#####\
+    \ </head>\n\n##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT\
+    \ CODE\n\n##### function time_convert(num)\n\n##### {\n\n#####   var hours = Math.floor(num\
+    \ / 60); \n\n#####   var minutes = num % 60;\n\n#####   return hours + \":\" +\
+    \ minutes;        \n\n##### }\n\n##### console.log(time_convert(71));\n\n#####\
+    \ console.log(time_convert(450));\n\n##### console.log(time_convert(1441));\n\n\
+    ### OUTPUT\n\n1:11\n\n7:30\n\n24:1\n\n# Count vowels\n\n### HTML CODE\n\n#####\
+    \ <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n#####   <meta charset=\"\
+    utf-8\">\n\n#####   <meta name=\"viewport\" content=\"width=device-width\">\n\n\
+    #####   <title>JavaScript program to count the number of vowels in a given string.</title>\n\
+    \n##### </head>\n\n##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT\
+    \ CODE\n\n##### function vowel_Count(str)\n\n##### {\n\n#####   return str.replace(/[^aeiou]/g,\
+    \ \"\").length;\n\n##### }\n\n##### console.log(vowel_Count(\"Python\"));\n\n\
+    ##### console.log(vowel_Count(\"htmlresource.com\"));\n\n### Output:\n\n1\n\n\
+    5\n\n#  Create a new string \n\n### HTML CODE\n\n<!DOCTYPE html>\n\n<html>\n\n\
+    <head>\n\n  <meta charset=\"utf-8\">\n\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n\n ![](Images/image00119.jpeg)\n\n</head>\n\n<body>\n\n</body>\n\n</html>\n\
+    \n### JAVASCRIPT CODE\n\nfunction without_first_end(str) {\n\n  return str.substring(1,\
+    \ str.length - 1);\n\n}\n\nconsole.log(without_first_end('JavaScript'));\n\nconsole.log(without_first_end('JS'));\n\
+    \nconsole.log(without_first_end('PHP'));\n\n### Output:\n\navaScrip\n\nH\n\n#\
+    \ Concatenate two strings\n\n## Except their first character\n\n### HTML CODE\n\
+    \n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n  <meta charset=\"utf-8\">\n\n  <meta\
+    \ name=\"viewport\" content=\"width=device-width\">\n\n  <title>JavaScript program\
+    \ to concatenate two strings except their first character.</title>\n\n</head>\n\
+    \n<body>\n\n</body>\n\n</html>\n\n### JAVASCRIPT CODE\n\nfunction concatenate(str1,\
+    \ str2) {\n\n  str1 = str1.substring(1, str1.length);\n\n  str2 = str2.substring(1,\
+    \ str2.length);\n\n  return str1 + str2;\n\n}\n\nconsole.log(concatenate(\"PHP\"\
+    ,\"JS\"));\n\nconsole.log(concatenate(\"A\",\"B\"));\n\nconsole.log(concatenate(\"\
+    AA\",\"BB\"));\n\n### Output:\n\nHPS\n\nAB\n\n# First not repeated character\n\
+    \n## ![](Images/image00120.jpeg)\n\n## HTML CODE\n\n##### <!DOCTYPE html>\n\n\
+    ##### <html>\n\n##### <head>\n\n#####   <meta charset=\"utf-8\">\n\n#####   <title>find\
+    \ the first not repeated character.</title>\n\n##### </head>\n\n##### <body>\n\
+    \n##### </body>\n\n##### </html>\n\n## JAVASCRIPT CODE\n\nfunction find_FirstNotRepeatedChar(str)\
+    \ {\n\n  var arra1 = str.split('');\n\n  var result = '';\n\n  var ctr = 0;\n\n\
+      for (var x = 0; x < arra1.length; x++) {\n\n    ctr = 0;\n\n    for (var y =\
+    \ 0; y < arra1.length; y++)\n\n    {\n\n      if (arra1[x] === arra1[y]) {\n\n\
+            ctr+= 1;\n\n      }\n\n    }\n\n    if (ctr < 2) {\n\n      result = arra1[x];\n\
+    \n      break;\n\n    }\n\n  }\n\n  return result;\n\n}\n\nconsole.log(find_FirstNotRepeatedChar('abacddbec'));\n\
+    \n### OUTPUT\n\ne\n\n# Find the longest word\n\n## within a string\n\n![](Images/image00121.jpeg)\n\
+    \n### HTML CODE\n\n##### <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n#####\
+    \ <meta charset=utf-8 />\n\n##### <title>Find the longest word within a string</title>\n\
+    \n##### </head>\n\n##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT\
+    \ CODE\n\n##### function find_longest_word(str)\n\n##### {\n\n#####   var array1\
+    \ = str.match(/\\w[a-z]{0,}/gi);\n\n#####   var result = array1[0];\n\n#####  \
+    \ for(var x = 1 ; x < array1.length ; x++)\n\n#####   {\n\n#####     if(result.length\
+    \ < array1[x].length)\n\n#####     {\n\n#####     result = array1[x];\n\n#####\
+    \     }\n\n#####   }\n\n#####   return result;\n\n##### }\n\n##### console.log(find_longest_word('Web\
+    \ Development Tutorial'));\n\n### OUTPUT\n\nDevelopment\n\n# Counts the number\
+    \ of vowels\n\n## within a string\n\n### ![](Images/image00122.jpeg)\n\n### HTML\
+    \ CODE\n\n##### <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n##### <meta\
+    \ charset=utf-8 />\n\n##### <title>Counts the number of vowels within a string</title>\n\
+    \n##### </head>\n\n##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT\
+    \ CODE\n\n##### function vowel_count(str1)\n\n##### {\n\n#####   var vowel_list\
+    \ = 'aeiouAEIOU';\n\n#####   var vcount = 0;\n\n#####   for(var x = 0; x < str1.length\
+    \ ; x++)\n\n#####   {\n\n#####     if (vowel_list.indexOf(str1[x]) !== -1)\n\n\
+    #####     {\n\n#####       vcount += 1;\n\n#####     }\n\n#####   }\n\n#####  \
+    \ return vcount;\n\n##### }\n\n##### console.log(vowel_count(\"The quick brown\
+    \ fox\"));\n\n#### OUTPUT\n\n5\n\n# Check a number is prime\n\n![](Images/image00123.jpeg)\n\
+    \n### HTML CODE\n\n##### <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n#####\
+    \ <meta charset=utf-8 />\n\n##### <title>Check a number is prime or not</title>\n\
+    \n##### </head>\n\n##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT\
+    \ CODE\n\n##### function test_prime(n)\n\n##### {\n\n#####   if (n===1)\n\n#####\
+    \   {\n\n#####     return false;\n\n#####   }\n\n#####   else if(n === 2)\n\n\
+    #####   {\n\n#####     return true;\n\n#####   }else\n\n#####   {\n\n#####    \
+    \ for(var x = 2; x < n; x++)\n\n#####     {\n\n#####       if(n % x === 0)\n\n\
+    #####       {\n\n#####         return false;\n\n#####       }\n\n#####     }\n\
+    \n#####     return true; \n\n#####   }\n\n##### }\n\n##### console.log(test_prime(37));\n\
+    \n### OUTPUT\n\nTrue\n\n# JavaScript: Get the data type\n\n### HTML CODE\n\n#####\
+    \ <!DOCTYPE html>\n\n##### <html>\n\n##### <head>\n\n##### <meta charset=utf-8\
+    \ />\n\n##### <title>Detect JavaScript Data Types</title>\n\n##### </head>\n\n\
+    ##### <body>\n\n##### </body>\n\n##### </html>\n\n### JAVASCRIPT CODE\n\n#####\
+    \ function detect_data_type(value)\n\n##### {\n\n##### var dtypes = [Function,\
+    \ RegExp, Number, String, Boolean, Object], x, len;\n\n##### if (typeof value\
+    \ === \"object\" || typeof value === \"function\")\n\n#####     {\n\n#####     \
+    \ for (x = 0, len = dtypes.length; x < len; x++)\n\n#####      {\n\n#####            \
+    \ if (value instanceof dtypes[x])\n\n#####             {\n\n#####                \
+    \ return dtypes[x];\n\n#####             }\n\n#####       }\n\n#####     }"
+  toc: []
+  trans: "\n\n数组中的槽位数量由 `n` 表示。\n\n### 语法\n```javascript\nmyarray = new array(n);\n\
+    ```\n\n注意：当我们在 JavaScript 中构建数组而不指定大时，我们会创建一个大小为零的数组对象。\n\n### 示例\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<body>\n<script>\nvar i;\nvar emp = new Array();\nemp[0] = \"\
+    Ajay\";\nemp[1] = \"Abhay\";\nemp[2] = \"Arun\";\nemp[3] = \"Shipra\";\nfor (i=0;\
+    \ i<emp.length; i++) {\n  document.write(emp[i] + \"<br>\");\n}\n</script>\n</body>\n\
+    </html>\n```\n\n#### 输出\nAjay\nAbhay\nArun\nShipra\n\n### 示例\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n<script type=\"text/javascript\">\nfunction array() {\n\
+    num = new Array(5)\nnum[0] = 10;\nnum[1] = 20;\nnum[2] = 30;\nnum[3] = 40;\nnum[4]\
+    \ = 50;\nsum = 0;\nfor (i=0; i<num.length; i++) {\n  sumsum = sum + num[i];\n\
+    }\nalert(sum)\n}\n</script>\n</head>\n<body>\n<input type=\"button\" onclick=\"\
+    array()\" value=\"click here\">\n</body>\n</html>\n```\n\n### 数组中使用的函数\n![](img/image00114.jpeg)\n\
+    \n# JAVASCRIPT 笔记本\n## 每个单词的首字母大写\n\n### 针对给定字符串\n#### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n![](img/image00115.jpeg)\n</head>\n<body></body>\n\
+    </html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction capital_letter(str)\
+    \ {\n  str = str.split(\" \");\n  for (var i = 0, x = str.length; i < x; i++)\
+    \ {\n    str[i] = str[i][0].toUpperCase() + str[i].substr(1);\n  }\n  return str.join(\"\
+    \ \");\n}\n```\n### ![](img/image00116.jpeg)\n#### 输出\n输出：![](img/image00117.jpeg)\n\
+    \n# 小时和分钟\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"\
+    utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\">\n![](img/image00118.jpeg)\
+    \ \n</head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\n\
+    function time_convert(num) {\n  var hours = Math.floor(num / 60); \n  var minutes\
+    \ = num % 60;\n  return hours + \":\" + minutes;\n}\nconsole.log(time_convert(71));\n\
+    console.log(time_convert(450));\nconsole.log(time_convert(1441));\n```\n#### 输出\n\
+    1:11\n7:30\n24:1\n\n# 统计元音\n#### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>统计给定字符串中元音数量的 JavaScript 程序</title>\n</head>\n<body></body>\n</html>\n\
+    ```\n#### JAVASCRIPT 代码\n```javascript\nfunction vowel_Count(str) {\n  return\
+    \ str.replace(/[^aeiou]/g, \"\").length;\n}\nconsole.log(vowel_Count(\"Python\"\
+    ));\nconsole.log(vowel_Count(\"html.com\"));\n```\n#### 输出：\n1\n5\n\n# 创建新字符串\n\
+    #### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n![](img/image0019.jpeg)\n\
+    </head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ without_first_end(str) {\n  return str.substring(1, str.length - 1);\n}\nconsole.log(without_first_end('JavaScript'));\n\
+    console.log(without_first_end('JS'));\nconsole.log(without_first_end('PHP'));\n\
+    ```\n#### 输出：\navaScript\nH\n\n# 合并两个字符串并排除第一个字符\n#### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>合并除其第一个字符外字符串的 JavaScript 程序</title>\n\
+    </head>\n<body></body>\n</html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ concatenate(str1, str2) {\n  str1 = str1.substring(1, str1.length);\n  str2\
+    \ = str2.substring(1, str2.length);\n  return str1 + str2; // 修正：原文逻辑不完整，此处按原意翻译\n\
+    }\n```\n*(注：原文代码片段似乎存在缺失，此处已按代码结构翻译)*\n\n# 重复的字符\n#### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>查找重复的字符</title>\n</head>\n<body></body>\n\
+    </html>\n```\n#### JAVASCRIPT 代码\n```javascript\nfunction find_Repeated(str) {\n\
+    \  var arra1 = str.split('');\n  var result = '';\n  for (var x = 0; x < arra1.length;\
+    \ x++) {\n    for (var y = x + 1; y < arra1.length; y++) {\n      // 逻辑省略\n  \
+    \  }\n  }\n}\n```\n*(注：原文代码不完整)*\n\n# 查找字符串中最长的单词\n#### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>查找最长的单词</title>\n</head>\n```\n####\
+    \ JAVASCRIPT 代码\n```javascript\nfunction find_longest_word(str) {\n  var arra1\
+    \ = str.split(' ');\n  var result = '';\n  for (var x = 0; x < arra1.length; x++)\
+    \ {\n    if (arra1[x].length > result.length) {\n      result = arra1[x];\n  \
+    \  }\n  }\n  return result;\n}\n```\n\n"
+- fmt: "\n```javascript\nreturn typeof value;\n}\n\nconsole.log(detect_data_type(12));\n\
+    console.log(detect_data_type('w3resource'));\nconsole.log(detect_data_type(false));\n\
+    ```\n\n#### OUTPUT\nnumber\nstring\nBoolean\n\n# Find the second lowest and second\
+    \ greatest numbers from an array\n\n![](Images/image0012.jpeg)\n\n### HTML CODE\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8 />\n  <title>Find\
+    \ the second lowest and second greatest numbers from an array</title>\n</head>\n\
+    <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction\
+    \ Second_Greatest_Lowest(arr_num) {\n  arr_num.sort(function(x,y) {\n    return\
+    \ x-y;\n  });\n  var uniqa = [arr_num[0]];\n  var result = [];\n  for(var j=1;\
+    \ j < arr_num.length; j++) {\n    if(arr_num[j-1] !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n\
+    \    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n  return result.join(',');\n\
+    }\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n```\n\n#### OUTPUT\n2,4\n\
+    \n# Add two digits of a given positive integer\n\n### Of length two\n\n### HTML\
+    \ CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+    \  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript\
+    \ program to add two digits of a given positive integer of length two.</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\n\
+    function add_two_digits(n) {\n  return n % 10 + Math.floor(n / 10);\n}\nconsole.log(add_two_digits(25))\n\
+    console.log(add_two_digits(50))\n```\n\n### Output:\n7\n5\n\n# Leap Year Check\n\
+    \n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8\
+    \ />\n  <title>Find Leap Year</title>\n</head>\n<body>\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT CODE\n```javascript\nfunction leapyear(year) {\n  return (year\
+    \ % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);\n}\nconsole.log(leapyear(2016));\n\
+    console.log(leapyear(2000));\nconsole.log(leapyear(1700));\nconsole.log(leapyear(1800));\n\
+    console.log(leapyear(100));\n```\n\n### OUTPUT\ntrue\ntrue\nfalse\nfalse\nfalse\n\
+    \n# Check given positive number\n\n## ![](Images/image00125.jpeg)\n\n### HTML\
+    \ CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n\
+    \  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>JavaScript\
+    \ program to check whether a given positive number is a multiple of 3 or a multiple\
+    \ of 7\\. </title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n\
+    ```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return\
+    \ true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(test37(12));\n\
+    console.log(test37(14));\nconsole.log(test37(10));\nconsole.log(test37(11));\n\
+    ```\n\n### Output:\ntrue\ntrue\nfalse\nfalse\n\n# string starts with 'Java' -\
+    \ Check false otherwise\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>JavaScript program to check whether string starts with 'Java' and\
+    \ false otherwise.</title>\n</head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT\
+    \ CODE\n```javascript\nfunction start_spec_str(str) {\n  if (str.length < 4) {\n\
+    \    return false;\n  }\n  front = str.substring(0, 4);\n  if (front == 'Java')\
+    \ {\n    return true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(start_spec_str(\"\
+    JavaScript\"));\nconsole.log(start_spec_str(\"Java\"));\nconsole.log(start_spec_str(\"\
+    Python\"));\n```\n\n### Output:\ntrue\ntrue\nfalse\n\n# Two given integer values\
+    \ - Check\n\n## ![](Images/image00126.jpeg)\n\n### HTML CODE\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  ![](Images/image00127.jpeg)\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction check_numbers(x,\
+    \ y) {\n  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {\n    return true;\n\
+    \  }\n  else {\n    return false;\n  }\n}\nconsole.log(check_numbers(12, 101));\n\
+    console.log(check_numbers(52, 80));\nconsole.log(check_numbers(15, 99));\n```\n\
+    \n### OUTPUT\nfalse\ntrue\ntrue\n\n# Find a value which is nearest to 100\n\n\
+    ### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  ![](Images/image00128.jpeg)\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\n\
+    function near_100(x, y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1\
+    \ = Math.abs(y - 100);\n    if (x1 < y1) {\n      return x;\n    }\n    if (y1\
+    \ < x1) {\n      return y;\n    }\n    return 0;\n  }\n  else\n    return false;\n\
+    }\nconsole.log(near_100(90, 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90,\
+    \ 90));\n```\n\n### Output:\n90\n-89\nfalse\n\n# Positive number - Check\n\n##\
+    \ ![](Images/image00129.jpeg)\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  ![](Images/image00130.jpeg)\n</head>\n<body>\n</body>\n</html>\n```\n\n###\
+    \ JAVASCRIPT CODE\n```javascript\nfunction test37(x) {\n  if (x % 3 == 0 || x\
+    \ % 7 == 0) {\n    return true;\n  }\n  else {\n    return false;\n  }\n}\nconsole.log(test37(12));\n\
+    console.log(test37(14));\nconsole.log(test37(10));\nconsole.log(test37(11));\n\
+    ```\n\n### Output:\ntrue\ntrue\nfalse\nfalse\n\n# Multiplication and division\
+    \ of two numbers\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=utf-8 />\n  ![](Images/image00132.jpeg)\n  <style type=\"text/css\"\
+    >\n  body {margin: 30px;}\n  </style>\n</head>\n<body>\n<form>\n1st Number : <input\
+    \ type=\"text\" id=\"firstNumber\" /><br>\n2nd Number: <input type=\"text\" id=\"\
+    secondNumber\" /><br>\n<input type=\"button\" onClick=\"multiplyBy()\" Value=\"\
+    Multiply\" />\n<input type=\"button\" onClick=\"divideBy()\" Value=\"Divide\"\
+    \ />\n</form>\n<p>The Result is : <br>\n<span id = \"result\"></span>\n</p>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction multiplyBy()\
+    \ {\n  num1 = document.getElementById(\"firstNumber\").value;\n  num2 = document.getElementById(\"\
+    secondNumber\").value;\n  document.getElementById(\"result\").innerHTML = num1\
+    \ * num2;\n}\n```\n"
+  raw: '#####     return typeof value;
+
+
+    ##### }
+
+
+    ##### console.log(detect_data_type(12));
+
+
+    ##### console.log(detect_data_type(''w3resource''));
+
+
+    ##### console.log(detect_data_type(false));
+
+
+    #### OUTPUT
+
+
+    number
+
+
+    string
+
+
+    Boolean
+
+
+    # Find the second lowest and second greatest
+
+
+    ## numbers from an array
+
+
+    ![](Images/image00124.jpeg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Find the second lowest and second greatest numbers from an array</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function Second_Greatest_Lowest(arr_num)
+
+
+    ##### {
+
+
+    #####   arr_num.sort(function(x,y)
+
+
+    #####            {
+
+
+    #####            return x-y;
+
+
+    #####            });
+
+
+    #####   var uniqa = [arr_num[0]];
+
+
+    #####   var result = [];
+
+
+    #####   for(var j=1; j < arr_num.length; j++)
+
+
+    #####   {
+
+
+    #####     if(arr_num[j-1] !== arr_num[j])
+
+
+    #####     {
+
+
+    #####       uniqa.push(arr_num[j]);
+
+
+    #####     }
+
+
+    #####   }
+
+
+    #####     result.push(uniqa[1],uniqa[uniqa.length-2]);
+
+
+    #####   return result.join('','');
+
+
+    #####   }
+
+
+    ##### console.log(Second_Greatest_Lowest([1,2,3,4,5]));
+
+
+    #### OUTPUT
+
+
+    2,4
+
+
+    # Add two digits
+
+
+    ## Of a given positive integer
+
+
+    ### Of length two
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to add two digits of a given positive integer
+    of length two.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function add_two_digits(n)
+
+
+    #####    {
+
+
+    #####       return n % 10 + Math.floor(n / 10);
+
+
+    #####    }
+
+
+    ##### console.log(add_two_digits(25))
+
+
+    ##### console.log(add_two_digits(50))
+
+
+    ### Output:
+
+
+    7
+
+
+    5
+
+
+    # Leap Year Check
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### <title>Find Leap Year</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function leapyear(year)
+
+
+    ##### {
+
+
+    ##### return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+
+    ##### }
+
+
+    ##### console.log(leapyear(2016));
+
+
+    ##### console.log(leapyear(2000));
+
+
+    ##### console.log(leapyear(1700));
+
+
+    ##### console.log(leapyear(1800));
+
+
+    ##### console.log(leapyear(100));
+
+
+    ### OUTPUT
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    false
+
+
+    # Check given positive number
+
+
+    ## ![](Images/image00125.jpeg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to check whether a given positive number is
+    a multiple of 3 or a multiple of 7\. </title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function test37(x)
+
+
+    ##### {
+
+
+    #####   if (x % 3 == 0 || x % 7 == 0)
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####   else {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(test37(12));
+
+
+    ##### console.log(test37(14));
+
+
+    ##### console.log(test37(10));
+
+
+    ##### console.log(test37(11));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    # string starts with ''Java'' - Check
+
+
+    ## And false otherwise
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####   <title>JavaScript program to check whether a string starts with ''Java''
+    and false otherwise.</title>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function start_spec_str(str)
+
+
+    ##### {
+
+
+    #####   if (str.length < 4)
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    #####   front = str.substring(0, 4);
+
+
+    #####   if (front == ''Java'')
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####    else
+
+
+    #####    {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(start_spec_str("JavaScript"));
+
+
+    ##### console.log(start_spec_str("Java"));
+
+
+    ##### console.log(start_spec_str("Python"));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    # Two given integer values - Check
+
+
+    ### ![](Images/image00126.jpeg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    ##### ![](Images/image00127.jpeg)
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function check_numbers(x, y)
+
+
+    #####   {
+
+
+    #####   if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####   else
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(check_numbers(12, 101));
+
+
+    ##### console.log(check_numbers(52, 80));
+
+
+    ##### console.log(check_numbers(15, 99));
+
+
+    ### OUTPUT
+
+
+    false
+
+
+    true
+
+
+    true
+
+
+    # Find a value which is nearest to 100
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####  ![](Images/image00128.jpeg)
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function near_100(x, y) {
+
+
+    #####   if (x != y)
+
+
+    #####   {
+
+
+    #####   x1 = Math.abs(x - 100);
+
+
+    #####   y1 = Math.abs(y - 100);
+
+
+    #####   if (x1 < y1)
+
+
+    #####   {
+
+
+    #####     return x;
+
+
+    #####   }
+
+
+    #####   if (y1 < x1)
+
+
+    #####   {
+
+
+    #####     return y;
+
+
+    #####   }
+
+
+    #####   return 0;
+
+
+    #####   }
+
+
+    #####   else
+
+
+    #####     return false;
+
+
+    ##### }
+
+
+    ##### console.log(near_100(90, 89));
+
+
+    ##### console.log(near_100(-90, -89));
+
+
+    ##### console.log(near_100(90, 90));
+
+
+    ### Output:
+
+
+    90
+
+
+    -89
+
+
+    false
+
+
+    # Positive number - Check
+
+
+    ### ![](Images/image00129.jpeg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    #####  ![](Images/image00130.jpeg)
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function test37(x)
+
+
+    ##### {
+
+
+    #####   if (x % 3 == 0 || x % 7 == 0)
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####   else {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(test37(12));
+
+
+    ##### console.log(test37(14));
+
+
+    ##### console.log(test37(10));
+
+
+    ##### console.log(test37(11));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    false
+
+
+    # String starts with ''Java'' - Check
+
+
+    ## And false otherwise
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <meta name="viewport" content="width=device-width">
+
+
+    ##### ![](Images/image00131.jpeg) 
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function start_spec_str(str)
+
+
+    ##### {
+
+
+    #####   if (str.length < 4)
+
+
+    #####   {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    #####   front = str.substring(0, 4);
+
+
+    #####   if (front == ''Java'')
+
+
+    #####   {
+
+
+    #####     return true;
+
+
+    #####   }
+
+
+    #####    else
+
+
+    #####    {
+
+
+    #####     return false;
+
+
+    #####   }
+
+
+    ##### }
+
+
+    ##### console.log(start_spec_str("JavaScript"));
+
+
+    ##### console.log(start_spec_str("Java"));
+
+
+    ##### console.log(start_spec_str("Python"));
+
+
+    ### Output:
+
+
+    true
+
+
+    true
+
+
+    false
+
+
+    # Multiplication and division
+
+
+    ## of two numbers
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    ##### <html>
+
+
+    ##### <head>
+
+
+    ##### <meta charset=utf-8 />
+
+
+    ##### ![](Images/image00132.jpeg)
+
+
+    ##### <style type="text/css">
+
+
+    ##### body {margin: 30px;}
+
+
+    ##### </style>
+
+
+    ##### </head>
+
+
+    ##### <body>
+
+
+    ##### <form>
+
+
+    ##### 1st Number : <input type="text" id="firstNumber" /><br>
+
+
+    ##### 2nd Number: <input type="text" id="secondNumber" /><br>
+
+
+    ##### <input type="button" onClick="multiplyBy()" Value="Multiply" />
+
+
+    ##### <input type="button" onClick="divideBy()" Value="Divide" />
+
+
+    ##### </form>
+
+
+    ##### <p>The Result is : <br>
+
+
+    ##### <span id = "result"></span>
+
+
+    ##### </p>
+
+
+    ##### </body>
+
+
+    ##### </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function multiplyBy()
+
+
+    ##### {
+
+
+    #####         num1 = document.getElementById("firstNumber").value;
+
+
+    #####         num2 = document.getElementById("secondNumber").value;
+
+
+    #####         document.getElementById("result").innerHTML = num1 * num2;
+
+
+    ##### }'
+  toc: []
+  trans: "\n\n```javascript\nreturn typeof value;\n}\n\nconsole.log(detect_data_type(12));\n\
+    console.log(detect_data_type('w3resource'));\nconsole.log(detect_data_type(false));\n\
+    ```\n\n#### 输出\nnumber\nstring\nBoolean\n\n# 从数组中寻找第二小和第二大的数字\n\n![](img/image0012.jpeg)\n\
+    \n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8\
+    \ />\n  <title>从数组中寻找第二小和第二大的数字</title>\n</head>\n<body>\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT 代码\n```javascript\nfunction Second_Greatest_Lowest(arr_num) {\n\
+    \  arr_num.sort(function(x,y) {\n    return x-y;\n  });\n  var uniqa = [arr_num[0]];\n\
+    \  var result = [];\n  for(var j=1; j < arr_num.length; j++) {\n    if(arr_num[j-1]\
+    \ !== arr_num[j]) {\n      uniqa.push(arr_num[j]);\n    }\n  }\n  result.push(uniqa[1],uniqa[uniqa.length-2]);\n\
+    \  return result.join(',');\n}\nconsole.log(Second_Greatest_Lowest([1,2,3,4,5]));\n\
+    ```\n\n#### 输出\n2,4\n\n# 计算给定正整数的两个数字之和\n\n### 长度为二\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  <title>计算长度为二的给定正整数两个数字之和的 JavaScript 程序</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ add_two_digits(n) {\n  return n % 10 + Math.floor(n / 10);\n}\nconsole.log(add_two_digits(25))\n\
+    console.log(add_two_digits(50))\n```\n\n### 输出:\n7\n5\n\n# 闰年检查\n\n### HTML 代码\n\
+    ```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=utf-8 />\n  <title>查找闰年</title>\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ leapyear(year) {\n  return (year % 100 === 0) ? (year % 400 === 0) : (year %\
+    \ 4 === 0);\n}\nconsole.log(leapyear(2016));\nconsole.log(leapyear(2000));\nconsole.log(leapyear(1700));\n\
+    console.log(leapyear(1800));\nconsole.log(leapyear(100));\n```\n\n### 输出\ntrue\n\
+    true\nfalse\nfalse\nfalse\n\n# 检查给定的正整数\n\n## ![](img/image00125.jpeg)\n\n###\
+    \ HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\"\
+    >\n  <meta name=\"viewport\" content=\"width=device-width\">\n  <title>检查给定的正整数是否是\
+    \ 3 的倍数或 7 的倍数的 JavaScript 程序。</title>\n</head>\n<body>\n</body>\n</html>\n```\n\
+    \n### JAVASCRIPT 代码\n```javascript\nfunction test37(x) {\n  if (x % 3 == 0 ||\
+    \ x % 7 == 0) {\n    return true;\n  }\n  else {\n    return false;\n  }\n}\n\
+    console.log(test37(12));\nconsole.log(test37(14));\nconsole.log(test37(10));\n\
+    console.log(test37(11));\n```\n\n### 输出:\ntrue\ntrue\nfalse\nfalse\n\n# 字符串以 'Java'\
+    \ 开头 - 是 true 否则返回 false\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n\
+    \  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width\"\
+    >\n  <title>检查字符串是否以'Java'开头的否则返回 false 的 JavaScript 程序。</title>\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction start_spec_str(str)\
+    \ {\n  if (str.length < 4) {\n    return false;\n  }\n  front = str.substring(0,\
+    \ 4);\n  if (front == 'Java') {\n    return true;\n  }\n  else {\n    return false;\n\
+    \  }\n}\nconsole.log(start_spec_str(\"JavaScript\"));\nconsole.log(start_spec_str(\"\
+    Java\"));\nconsole.log(start_spec_str(\"Python\"));\n```\n\n### 输出:\ntrue\ntrue\n\
+    false\n\n# 两个给定的整数值 - 检查\n\n## ![](img/image00126.jpeg)\n\n### HTML 代码\n```html\n\
+    <!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  ![](img/image00127.jpeg)\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction check_numbers(x,\
+    \ y) {\n  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {\n    return true;\n\
+    \  }\n  else {\n    return false;\n  }\n}\nconsole.log(check_numbers(12, 101));\n\
+    console.log(check_numbers(52, 80));\nconsole.log(check_numbers(15, 99));\n```\n\
+    \n### 输出\nfalse\ntrue\ntrue\n\n# 寻找最接近 100 的数值\n\n### HTML 代码\n```html\n<!DOCTYPE\
+    \ html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\"\
+    \ content=\"width=device-width\">\n  ![](img/image00128.jpeg)\n</head>\n<body>\n\
+    </body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction near_100(x,\
+    \ y) {\n  if (x != y) {\n    x1 = Math.abs(x - 100);\n    y1 = Math.abs(y - 100);\n\
+    \    if (x1 < y1) {\n      return x;\n    }\n    if (y1 < x1) {\n      return\
+    \ y;\n    }\n    return 0;\n  }\n  else\n    return false;\n}\nconsole.log(near_100(90,\
+    \ 89));\nconsole.log(near_100(-90, -89));\nconsole.log(near_100(90, 90));\n```\n\
+    \n### 输出:\n90\n-89\nfalse\n\n# 正数 - 检查\n\n## ![](img/image00129.jpeg)\n\n### HTML\
+    \ 代码\n```html\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n \
+    \ <meta name=\"viewport\" content=\"width=device-width\">\n  ![](img/image00130.jpeg)\n\
+    </head>\n<body>\n</body>\n</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction\
+    \ test37(x) {\n  if (x % 3 == 0 || x % 7 == 0) {\n    return true;\n  }\n  else\
+    \ {\n    return false;\n  }\n}\nconsole.log(test37(12));\nconsole.log(test37(14));\n\
+    console.log(test37(10));\nconsole.log(test37(11));\n```\n\n### 输出:\ntrue\ntrue\n\
+    false\nfalse\n\n# 两个数字的乘法和除法\n\n### HTML 代码\n```html\n<!DOCTYPE html>\n<html>\n\
+    <head>\n  <meta charset=utf-8 />\n  ![](img/image00132.jpeg)\n  <style type=\"\
+    text/css\">\n  body {margin: 30px;}\n  </style>\n</head>\n<body>\n<form>\n第一个数字\
+    \ : <input type=\"text\" id=\"firstNumber\" /><br>\n第二个数字: <input type=\"text\"\
+    \ id=\"secondNumber\" /><br>\n<input type=\"button\" onClick=\"multiplyBy()\"\
+    \ Value=\"乘法\" />\n<input type=\"button\" onClick=\"divideBy()\" Value=\"除法\"\
+    \ />\n</form>\n<p>结果是：<br>\n<span id = \"result\"></span>\n</p>\n</body>\n</html>\n\
+    ```\n\n### JAVASCRIPT 代码\n```javascript\nfunction multiplyBy() {\n  num1 = document.getElementById(\"\
+    firstNumber\").value;\n  num2 = document.getElementById(\"secondNumber\").value;\n\
+    \  document.getElementById(\"result\").innerHTML = num1 * num2;\n}\n```\n\n"
+- fmt: "\n### function divideBy()\n\n```javascript\nfunction divideBy() {\n    num1\
+    \ = document.getElementById(\"firstNumber\").value;\n    num2 = document.getElementById(\"\
+    secondNumber\").value;\n    document.getElementById(\"result\").innerHTML = num1\
+    \ / num2;\n}\n```\n\n#### OUTPUT\n![](Images/image00133.jpeg)\n\n# Convert temperatures\n\
+    \n### ![](Images/image00134.jpeg)\n\n### HTML CODE\n```html\n<!DOCTYPE html>\n\
+    <html>\n  <head>\n  <meta charset=\"utf-8\">\n  <title>Write a JavaScript program\
+    \ to convert temperatures to and from celsius, fahrenheit</title>\n  </head>\n\
+    \  <body>\n</body>\n</html>\n```\n\n### JAVASCRIPT CODE\n```javascript\nfunction\
+    \ cToF(celsius) {\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n\
+    \  var message = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n  console.log(message);\n\
+    }\nfunction fToC(fahrenheit) {\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp\
+    \ - 32) * 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n \
+    \ console.log(message);\n}\ncToF(60);\nfToC(45);\n```\n\n### OUTPUT\n![](Images/image00135.jpeg)\n"
+  raw: '##### function divideBy()
+
+
+    ##### {
+
+
+    #####         num1 = document.getElementById("firstNumber").value;
+
+
+    #####         num2 = document.getElementById("secondNumber").value;
+
+
+    ##### document.getElementById("result").innerHTML = num1 / num2;
+
+
+    ##### }
+
+
+    #### OUTPUT
+
+
+    ![](Images/image00133.jpeg)
+
+
+    # Convert temperatures
+
+
+    ### ![](Images/image00134.jpeg)
+
+
+    ### HTML CODE
+
+
+    ##### <!DOCTYPE html>
+
+
+    #####   <html>
+
+
+    #####   <head>
+
+
+    #####   <meta charset="utf-8">
+
+
+    #####   <title>Write a JavaScript program to convert temperatures to and from
+    celsius, fahrenheit</title>
+
+
+    #####   </head>
+
+
+    #####   <body>
+
+
+    ##### </body>
+
+
+    #####   </html>
+
+
+    ### JAVASCRIPT CODE
+
+
+    ##### function cToF(celsius)
+
+
+    ##### {
+
+
+    #####   var cTemp = celsius;
+
+
+    #####   var cToFahr = cTemp * 9 / 5 + 32;
+
+
+    #####   var message = cTemp+''\xB0C is '' + cToFahr + '' \xB0F.'';
+
+
+    #####     console.log(message);
+
+
+    ##### }
+
+
+    ##### function fToC(fahrenheit)
+
+
+    ##### {
+
+
+    #####   var fTemp = fahrenheit;
+
+
+    #####   var fToCel = (fTemp - 32) * 5 / 9;
+
+
+    #####   var message = fTemp+''\xB0F is '' + fToCel + ''\xB0C.'';
+
+
+    #####     console.log(message);
+
+
+    ##### }
+
+
+    ##### cToF(60);
+
+
+    ##### fToC(45);
+
+
+    ### OUTPUT
+
+
+    ![](Images/image00135.jpeg)'
+  toc: []
+  trans: "\n\n### function divideBy()\n\n```javascript\nfunction divideBy() {\n  \
+    \  num1 = document.getElementById(\"firstNumber\").value;\n    num2 = document.getElementById(\"\
+    secondNumber\").value;\n    document.getElementById(\"result\").innerHTML = num1\
+    \ / num2;\n}\n```\n\n#### 输出\n![](img/image00133.jpeg)\n\n# 转换温度\n\n### ![](img/image00134.jpeg)\n\
+    \n### HTML 代码\n```html\n<!DOCTYPE html>\n<html\n  <head>\n  <meta charset=\"utf-8\"\
+    >\n  <title>编写一个 JavaScript 程序，在摄氏度和华氏度之间进行温度转换</title>\n  </head>\n  <body>\n\
+    </body>\n</</html>\n```\n\n### JAVASCRIPT 代码\n```javascript\nfunction cToF(celsius)\
+    \ {\n  var cTemp = celsius;\n  var cToFahr = cTemp * 9 / 5 + 32;\n  var message\
+    \ = cTemp+'\\xB0C is ' + cToFahr + ' \\xB0F.';\n  console.log(message);\n}\nfunction\
+    \ fToC(fahrenheit) {\n  var fTemp = fahrenheit;\n  var fToCel = (fTemp - 32) *\
+    \ 5 / 9;\n  var message = fTemp+'\\xB0F is ' + fToCel + '\\xB0C.';\n  console.log(message);\n\
+    }\ncToF(60);\nfToC(45);\n```\n\n### 输出\n![](img/image00135.jpeg)\n\n"

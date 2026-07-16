@@ -1,0 +1,108 @@
+name: JAVA： JAVA for Beginners - The Quick and Simple Way to Learn JAVA - Programming
+  Language for JAVA： JAVASCRIPT： Java Programming (Web Site Design, Programming ...
+  and Technology, HTML 5, JAVA Book 1)
+name_cn: 'JAVA：JAVA 初学者指南 - 快速简单地学习 JAVA - JAVA 编程语言
+
+  JAVASCRIPT：Java编程（网站设计、编程...以及技术，HTML 5，Java 书籍 1）'
+slug: java-java-for-beginners---the-quick-and-simple-way-to-learn-
+toc:
+- - '#'
+  - JAVA：JAVA 初学者指南 - 快速简单地学习 JAVA - JAVA 编程语言
+- - '#'
+  - Java 编程：入门
+- - '##'
+  - 引言
+- - '##'
+  - 这本书将要教你什么？
+- - '##'
+  - Java 简史
+- - '##'
+  - Java 的流行程度
+- - '##'
+  - 平台无关性
+- - '##'
+  - Java API
+- - '##'
+  - 对象导向
+- - '##'
+  - 类
+- - '#'
+  - 入门
+- - '##'
+  - 使用专用 IDE
+- - '##'
+  - Netbeans
+- - '##'
+  - 使用文本编辑器
+- - '#'
+  - 学习术语（缩写）
+- - '##'
+  - CPU - 中央处理器
+- - '##'
+  - CRT - 阴射线管
+- - '##'
+  - ALU - 算术逻辑单元
+- - '##'
+  - IDE - 集成开发环境
+- - '##'
+  - DOS - 磁盘操作系统
+- - '##'
+  - OOP - 面向对象程序编程
+- - '##'
+  - ROM - 只读存储器
+- - '##'
+  - RAM - 随机访问存储器
+- - '#'
+  - 编程语言基础
+- - '##'
+  - 变量
+- - '##'
+  - 变量类型
+- - '##'
+  - 控制结构
+- - '##'
+  - 语法（Syntax）
+- - '##'
+  - 数据结构
+- - '##'
+  - 算术运算符
+- - '#'
+  - 你的第一个应用程序：Hello World
+- - '##'
+  - 创建你的 IDE 项目
+- - '##'
+  - 将你的源码编译为 .class 文件
+- - '##'
+  - Hello World!是如何工作的
+- - '###'
+  - HelloWorldApp 类
+- - '###'
+  - 源代码中的注释
+- - '###'
+  - main 方法
+- - '#'
+  - 更多定义
+- - '##'
+  - 对象
+- - '##'
+  - 类 (Classes)
+- - '##'
+  - 继承 (Inheritance)
+- - '#'
+  - Java 代码示例 (Java Code Examples)
+- - '##'
+  - 调用方法 (Calling Methods)
+- - '###'
+  - 字符串示例 (Example of Strings)
+- - '###'
+  - 值参数 (Value Parameters)
+- - '##'
+  - 作为值参数指针
+- - '##'
+  - 数组示例
+- - '##'
+  - 连接网页并从中读取内容
+- - '##'
+  - 可以存储任何内容（而非整数）的列表
+- - '##'
+  - 使用 Scanner 类从文件读取整数

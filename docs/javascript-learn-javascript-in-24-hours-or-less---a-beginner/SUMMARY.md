@@ -1,0 +1,2 @@
++   [JavaScript：在 24 小时内掌握 JavaScript - 学习 JavaScript 编程初学者指南](README.md)
++   [JavaScript：在 24 小时内掌握 JavaScript - 学习 JavaScript 编程初学者指南](javascript-learn-javascript-in-24-hours-or-less---a-beginner_0.md)

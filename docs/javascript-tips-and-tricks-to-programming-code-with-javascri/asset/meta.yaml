@@ -1,0 +1,100 @@
+name: JavaScript： Tips and Tricks to Programming Code with JavaScript
+name_cn: JavaScript 编程技巧与技巧指南
+slug: javascript-tips-and-tricks-to-programming-code-with-javascri
+toc:
+- - '#'
+  - JavaScript 编程技巧与技巧指南
+- - '#'
+  - 介绍
+- - '##'
+  - JavaScript 简史
+- - '##'
+  - JavaScript 的重要性
+- - '#'
+  - 第一章：
+- - '##'
+  - 帮助你快速学习 JavaScript 的简单技巧
+- - '###'
+  - 技巧 1：为你想要学习的内容制定路线图
+- - '###'
+  - 技巧 2：慢慢来
+- - '###'
+  - 技巧 3：带着正确的心态进行练习
+- - '###'
+  - 技巧 4：划分你的时间
+- - '###'
+  - 技巧 5：给自己留出时间
+- - '###'
+  - 技巧 6：用通俗易懂的语言编写
+- - '#'
+  - 第三章：设计和构建自己的 JavaScript 库的技巧与窍门
+- - '##'
+  - 什么是 JavaScript 库？
+- - '##'
+  - 为什么要构建自己的 JavaScript 库？
+- - '##'
+  - 你的目标和工作范围
+- - '###'
+  - 你的库的路线图：
+- - '##'
+  - 你的库 API 设计
+- - '###'
+  - 测试你的 API
+- - '##'
+  - 灵活性与自定义
+- - '###'
+  - 测试
+- - '##'
+  - 元任务 (Meta-tasks)
+- - '##'
+  - 贡献 (Contribution)
+- - '##'
+  - 许可证 (License)
+- - '##'
+  - 向 Git 仓库中添加版本/发布
+- - '###'
+  - 发布到公共仓库
+- - '###'
+  - npm
+- - '###'
+  - Bower
+- - '##'
+  - 结论
+- - '#'
+  - 第 4 章：JavaScript 技巧与窍门
+- - '##'
+  - 数组与单元素的单一处理方法
+- - '##'
+  - 测量 JavaScript 代码块的性能
+- - '##'
+  - 提升 (Hoisting)
+- - '#'
+  - 第 5 章：
+- - '##'
+  - 未来需要掌握的 JavaScript 技能
+- - '##'
+  - React & Redux
+- - '##'
+  - 其他关注的框架
+- - '###'
+  - Angular2
+- - '###'
+  - Meteor
+- - '##'
+  - ES6 终于到来
+- - '##'
+  - 函数式编程走向主流
+- - '##'
+  - RxJS
+- - '##'
+  - 桌面框架对决：Nw.js vs. Electron
+- - '##'
+  - 移动应用框架对决：React Native vs Ionic
+- - '##'
+  - Web API 的未来：GraphQL vs REST
+- - '##'
+  - JavaScript 趋势总结
+- - '#'
+  - 结论
+- - '##'
+  - 关于作者

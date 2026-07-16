@@ -1,0 +1,2 @@
++   [JAVA：第2版！初学者快速课程 - Javascript 初学者指南：程序 Java、jQuery 及 Java 编程（初学者 Java、学习 Java... 编程语言，编码书籍 1）](README.md)
++   [JAVA：第2版！初学者快速课程 - Javascript 初学者指南：程序 Java、jQuery 及 Java 编程（初学者 Java、学习 Java... 编程语言，编码书籍 1）](java-2nd-edition-beginners-crash-course---javascript-for-beg_0.md)
