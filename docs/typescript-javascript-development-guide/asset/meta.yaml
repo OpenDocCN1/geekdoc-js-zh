@@ -1,0 +1,64 @@
+name: TypeScript： JavaScript Development Guide
+name_cn: TypeScript：JavaScript 开发指南
+slug: typescript-javascript-development-guide
+toc:
+- - '#'
+  - TypeScript：JavaScript 开发指南
+- - '##'
+  - 免责声明
+- - '#'
+  - 引言
+- - '#'
+  - 第 1 章- TypeScript 概览
+- - '#'
+  - 第 2 章- 安装 TypeScript
+- - '##'
+  - Hello 示例
+- - '#'
+  - 第 3 章- 类型注解
+- - '#'
+  - 第 4 章 - 接口 (Interfaces)
+- - '#'
+  - 第 5 章 - 箭头函数表达式 (Arrow Functions)
+- - '#'
+  - 第 6 章- 类
+- - '##'
+  - 继承
+- - '###'
+  - 使用构造函数定义
+- - '###'
+  - 属性初始化
+- - '###'
+  - 剩余参数
+- - '#'
+  - 第 7 章- 解构
+- - '##'
+  - 对象解构
+- - '##'
+  - 数组解构
+- - '#'
+  - 第 9 章 - 迭代器 (Iterators)
+- - '#'
+  - 第 11 章 - 展开运算符 (Spread Operator)
+- - '##'
+  - 应用 (Apply)
+- - '##'
+  - 解构 (Destructuring)
+- - '#'
+  - 第 12 章- 枚举 (Enums)
+- - '##'
+  - 枚举与数字
+- - '##'
+  - 枚举与字符串
+- - '##'
+  - 枚举作为标志 (Flags)
+- - '##'
+  - 常量枚举 (Const Enums)
+- - '#'
+  - 第 13 章- let
+- - '##'
+  - 生成的 JS
+- - '###'
+  - 在闭包中
+- - '###'
+  - 结论

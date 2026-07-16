@@ -1,0 +1,311 @@
+name: The joy of jQuery ： a beginner's guide to the world's most popular JavaScript
+  library
+name_cn: jQuery 的乐趣：全球最流行的 JavaScript 库初学者指南
+slug: the-joy-of-jquery-a-beginners-guide-to-the-worlds-most-popul
+toc:
+- - '#'
+  - jQuery 的乐趣：全球最流行的 JavaScript 库初学者指南
+- - '#'
+  - 目录
+- - '#'
+  - 什么是 jQuery?
+- - '##'
+  - 简介
+- - '###'
+  - 特性
+- - '###'
+  - 为什么它不是
+- - '###'
+  - 下载的替代方案
+- - '##'
+  - 联系作者
+- - '##'
+  - 为网站安装
+- - '##'
+  - 开始使用 jQuery
+- - '###'
+  - jQuery 基本语法
+- - '###'
+  - jQuery 语法
+- - '###'
+  - jQuery 示例
+- - '###'
+  - 文档就绪事件
+- - '##'
+  - HTML 简介
+- - '###'
+  - 简介
+- - '###'
+  - 基础 HTML
+- - '####'
+  - HTML 基本元素
+- - '##'
+  - 必需标签
+- - '###'
+  - DocType（文档类型声明）
+- - '###'
+  - Head（头部）
+- - '##'
+  - 可选标签
+- - '###'
+  - Meta Tags（元数据标签）
+- - '##'
+  - 有用标签
+- - '###'
+  - Headers（标题）
+- - '###'
+  - DIV
+- - '###'
+  - Images/Picture（图像/图片）
+- - '###'
+  - Links（链接）
+- - '###'
+  - Lists（列表）
+- - '###'
+  - Exercise（练习）
+- - '##'
+  - HTML Tables（HTML 表格）
+- - '###'
+  - Table Example（表格示例）
+- - '###'
+  - HTML Tables and Border Attribute（HTML 表格与边界属性）
+- - '###'
+  - HTML Table Headers（HTML 表头）
+- - '##'
+  - HTML Forms（HTML 表单）
+- - '###'
+  - The Input tag（Input 标签）
+- - '###'
+  - 单选按钮 (Radio Buttons)
+- - '###'
+  - 复选框 (Checkboxes)
+- - '###'
+  - 提交按钮 (Submit Button)
+- - '##'
+  - HTML 表单动作与方法 (HTML Form Actions & Methods)
+- - '##'
+  - CSS 简介 (Introduction to CSS)
+- - '###'
+  - 什么是 CSS？
+- - '###'
+  - 外部样式表 (External Style Sheets) 可以节省大量工作
+- - '###'
+  - CSS 规则语法 (CSS Rule Syntax)
+- - '###'
+  - 如何使用样式表 (How to use a Style Sheet)
+- - '###'
+  - 选择器 (Selectors)
+- - '###'
+  - 子元素与后代选择器 (Child vs Descendant)
+- - '###'
+  - CSS 示例 (CSS Examples)
+- - '##'
+  - CSS 注释
+- - '##'
+  - 指定字体
+- - '##'
+  - 使用 CSS 定位元素
+- - '###'
+  - 定位简介
+- - '###'
+  - 静态定位
+- - '###'
+  - 固定定位
+- - '###'
+  - 相对定位
+- - '###'
+  - 绝对定位
+- - '###'
+  - 元素重叠
+- - '##'
+  - jQuery 选择器
+- - '###'
+  - 什么是 jQuery 选择器
+- - '###'
+  - jQuery 选择器返回什么
+- - '#'
+  - jQuery 选择器的类型
+- - '##'
+  - 基础 CSS 选择器
+- - '###'
+  - 选择器的实际示例
+- - '##'
+  - 多重选择器
+- - '##'
+  - 位置选择器
+- - '###'
+  - 示例位置选择器语法
+- - '###'
+  - 实际示例
+- - '##'
+  - jQuery 自定义选择器
+- - '#'
+  - JavaScript 对象
+- - '#'
+  - 对结果集采取操作
+- - '##'
+  - 向结果集添加元素
+- - '##'
+  - 从结果集中移除元素
+- - '###'
+  - 示例
+- - '##'
+  - 查找后代元素
+- - '###'
+  - 示例
+- - '##'
+  - 过滤匹配集
+- - '#'
+  - 使用 jQuery 进行表单验证
+- - '##'
+  - 简介 - 表单验证
+- - '#'
+  - 带有 jQuery 验证的表单
+- - '##'
+  - 代码
+- - '##'
+  - 代码解释
+- - '###'
+  - Date Picker
+- - '###'
+  - Code
+- - '###'
+  - Code 解释
+- - '###'
+  - 自动补全文本字段
+- - '##'
+  - jQuery UI 按钮
+- - '###'
+  - 代码
+- - '###'
+  - 代码解释
+- - '#'
+  - jQuery 进度条
+- - '##'
+  - 示例代码
+- - '#'
+  - jQuery 滑块
+- - '##'
+  - 代码示例
+- - '##'
+  - jQuery Tabs（标签页）
+- - '##'
+  - 代码
+- - '##'
+  - 其他控件
+- - '###'
+  - Accordion（折叠面板）
+- - '###'
+  - Spinner（计数器）
+- - '###'
+  - Tooltip（提示框）
+- - '##'
+  - 简介（Introduction）
+- - '##'
+  - jQuery Mobile 主题
+- - '###'
+  - 练习
+- - '##'
+  - 如何测试你的移动页面
+- - '##'
+  - 一个带有 UI 元素和多页面的更高级示例
+- - '###'
+  - Sam 的二手车网站代码
+- - '####'
+  - 立即致电 Sam 吧！
+- - '#'
+  - 代码解析
+- - '##'
+  - AJAX
+- - '###'
+  - Get 与 Post
+- - '##'
+  - jQuery $.get() 方法
+- - '###'
+  - $.get() 示例
+- - '##'
+  - jQuery $.post() 方法
+- - '###'
+  - $.post() 示例
+- - '#'
+  - jQuery 之悦 - Ajax POST 示例
+- - '##'
+  - 备用 AJAX 语法 - Load
+- - '###'
+  - 基础示例：加载简单数据
+- - '###'
+  - 更高级的示例：加载数据并执行函数
+- - '#'
+  - 代码 – ajax2.html
+- - '##'
+  - 跨域
+- - '##'
+  - jQuery 动画
+- - '##'
+  - jQuery hide(), show(), and toggle()
+- - '###'
+  - 隐藏
+- - '###'
+  - 显示
+- - '###'
+  - 语法
+- - '###'
+  - jQuery toggle()
+- - '###'
+  - 示例
+- - '###'
+  - 语法
+- - '##'
+  - jQuery 渐变 (Fading)
+- - '###'
+  - jQuery fadeIn() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery fadeIn() 示例
+- - '###'
+  - jQuery fadeOut() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery fadeOut() 示例
+- - '###'
+  - jQuery fadeToggle() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery fadeToggle() 示例
+- - '###'
+  - jQuery fadeTo() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery fadeTo() 示例
+- - '##'
+  - jQuery 滑动 (Sliding)
+- - '###'
+  - jQuery slideDown() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery slideDown() 示例
+- - '###'
+  - jQuery slideUp() 方法
+- - '###'
+  - 语法
+- - '###'
+  - jQuery slideUp() 示例
+- - '###'
+  - jQuery slideToggle() 方法
+- - '##'
+  - jQuery slideToggle() 示例
+- - '##'
+  - jQuery Animate
+- - '##'
+  - 语法
+- - '##'
+  - jQuery Animate 示例
+- - '##'
+  - 动画多个属性
+- - '#'
+  - 作者的话

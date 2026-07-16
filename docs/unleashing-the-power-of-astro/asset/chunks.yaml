@@ -1,0 +1,2227 @@
+- fmt: "\n![](Images/astro1.jpg)\n\n# Unleashing the Power of Astro\n\nCopyright ©\
+    \ 2024 SitePoint Pty. Ltd.\n\nEbook ISBN: 978-1-925836-60-8\n\n* **Author:** Tamas\
+    \ Piros\n* **Cover Design:** Volodymyr Boyarinov\n* **Technical editor:** Joan\
+    \ León\n* **Series editor:** Oliver Lindberg\n\n## Notice of Rights\n\nAll rights\
+    \ reserved. No part of this book may be reproduced, stored in a retrieval system\
+    \ or transmitted in any form or by any means, without the prior written permission\
+    \ of the publisher, except in the case of brief quotations embodied in critical\
+    \ articles or reviews.\n\n## Notice of Liability\n\nThe author and publisher have\
+    \ made every effort to ensure the accuracy of the information herein. However,\
+    \ the information contained in this book is sold without warranty, either express\
+    \ or implied. Neither the authors and SitePoint Pty. Ltd., nor its dealers or\
+    \ distributors will be held liable for any damages to be caused either directly\
+    \ or indirectly by the instructions contained in this book, or by the software\
+    \ or hardware products described herein.\n\n## Trademark Notice\n\nRather than\
+    \ indicating every occurrence of a trademarked name as such, this book uses the\
+    \ names only in an editorial fashion and to the benefit of the trademark owner\
+    \ with no intention of infringement of the trademark.\n\n![SitePoint logo](Images/sitepoint-logo-2012.png)\n\
+    \nPublished by SitePoint Pty. Ltd.\n\n71 Balmain Street, Cremorne, VIC, 3121\n\
+    \nAustralia\n\nWeb: www.sitepoint.com\nEmail: books@sitepoint.com\n\n## About\
+    \ SitePoint\n\nSitePoint specializes in publishing fun, practical, and easy-to-understand\
+    \ content for web professionals. Visit [http://www.sitepoint.com/](http://www.sitepoint.com/)\
+    \ to access our blogs, books, newsletters, articles, and community forums. You’ll\
+    \ find a stack of information on JavaScript, PHP, design, and more.\n\n## About\
+    \ the Author\n\nTamas is a Google Developer Expert in Web Technologies and a seasoned\
+    \ Developer Evangelist. He is a passionate advocate for modern web technologies,\
+    \ helping people understand and unlock the latest & greatest features of web development.\n\
+    \n# Preface\n\n## Who Should Read This Book?\n\nThis book is for developers who\
+    \ are interested in learning to use Astro to build websites. It assumes familiarity\
+    \ with JavaScript, HTML, and CSS. Some familiarity with other front-end frameworks\
+    \ will be beneficial but is not required.\n\n## Conventions Used\n\n### Code Samples\n\
+    \nCode in this book is displayed using a fixed-width font, like so:\n\n```\n <h1>A\
+    \ Perfect Summer's Day</h1>\n<p>It was a lovely day for a walk in the park.\n\
+    The birds were singing and the kids were all back at school.</p> \n```\n\nYou’ll\
+    \ notice that we’ve used certain layout styles throughout this book to signify\
+    \ different types of information. Look out for the following items.\n\n### Tips,\
+    \ Notes, and Warnings\n\n#### Hey, You!\n\nTips provide helpful little pointers.\n\
+    \n#### Ahem, Excuse Me ...\n\nNotes are useful asides that are related—but not\
+    \ critical—to the topic at hand. Think of them as extra tidbits of information.\n\
+    \n#### Make Sure You Always ...\n\n... pay attention to these important points.\n\
+    \n#### Watch Out!\n\nWarnings highlight any gotchas that are likely to trip you\
+    \ up along the way.\n\n## Supplementary Materials\n\n* [https://www.sitepoint.com/community/](https://www.sitepoint.com/community/)\
+    \ are SitePoint’s forums, for help on any tricky problems.\n* `books@sitepoint.com`\
+    \ is our email address, should you need to contact us to report a problem, or\
+    \ for any other reason.\n\n# Chapter 1: Getting Started with the Basics of Astro\n\
+    \n[Astro](https://astro.build) is a modern static site generator that allows developers\
+    \ to build fast, optimized websites—a critical requirement in today’s rapidly\
+    \ evolving ecosystem, where user demands are high. Astro’s story goes back to\
+    \ 2021, when Fred K. Schott released the first version of the framework. At the\
+    \ time of writing this tutorial, Astro is already at version 4 and has seen many\
+    \ amazing features added to it.\n\nAstro has [gained popularity](https://2022.stateofjs.com/en-US/libraries/rendering-frameworks/)\
+    \ over its brief existence, due to:\n\n* its innovative approach to creating websites,\
+    \ which emphasizes performance\n* its smooth developer experience\n* its ability\
+    \ to blend various other frameworks seamlessly\n\nDue in part to a [new monthly\
+    \ sponsorship from Vercel](https://astro.build/blog/vercel-official-hosting-partner/),\
+    \ and because it’s the first framework to [implement the View Transitions API](https://thenewstack.io/dev-news-astro-3-0-state-of-css-and-react-opinions/),\
+    \ Astro is a force to be reckoned with.\n\nThis tutorial is the first in a series\
+    \ that will introduce Astro and walk through some its basics—such as rendering,\
+    \ content collections, data fetching, and image optimization.\n\n## Key Concepts\
+    \ of Astro\n\nHow can one framework stand out in terms of performance? Let’s start\
+    \ by discussing one of the key concepts of Astro, called Astro Islands (or Component\
+    \ Islands). To better understand this web architecture style, let’s take a step\
+    \ back and discuss purely component-based development. If you’ve worked with React,\
+    \ Vue or Angular before, you likely have created components. `Components` encapsulate\
+    \ functionality: a React application is just a set of components put together\
+    \ in a logical way. My favorite analogy is that components are like Lego blocks:\
+    \ we use them to build our project.\n\nThere’s a striking problem with how components\
+    \ work under the hood in frameworks such as React and Angular. Usually, when a\
+    \ project is created, some components don’t necessarily require JavaScript, as\
+    \ the component isn’t interactive. For example, think about a navigation bar.\
+    \ Built out as a component, it may contain little apart from text, HTML and some\
+    \ styling. However, due to the nature of a framework such as React, we must load\
+    \ all the JavaScript. Otherwise, the component will fail to function.\n\nWhen\
+    \ speaking of an Astro `island`, we refer to an interactive piece of UI element—“interactive”\
+    \ in the sense that it requires some JavaScript code to be run in order for it\
+    \ to be fully functional. Still, at the same time, Astro can also work with static\
+    \ (that is, non-interactive) components. Returning to our previous example, we\
+    \ could have a non-interactive navbar requiring zero bytes of JavaScript, while\
+    \ at the same time another interactive component loads some JavaScript.\n\n![Astro\
+    \ islands in a typical web page](Images/1_1.png)\n\nThis architectural pattern\
+    \ technique may also be called partial or selective `hydration`, which pertains\
+    \ to optimizing how web apps load and render content. Both of these techniques\
+    \ involve the deliberate loading and rendering of only essential parts, deferring\
+    \ less critical components until they’re needed by the app. The main purpose of\
+    \ this is to strike a balance between providing a speedy initial page load and\
+    \ allowing for a responsive user experience.\n\nTo sum up, Astro uses interactive\
+    \ and non-interactive components to create a site.\n\nAstro’s default behavior\
+    \ is to ship zero client-side JavaScript. That doesn’t mean we can’t use JavaScript\
+    \ in an Astro project. Far from it. But its island architecture means that client-side\
+    \ JavaScript will only be loaded where necessary.\n\n## Getting Started with Astro\n\
+    \nWhat better way to explore Astro than to create a project? And it couldn’t be\
+    \ easier: all we need to do is execute `npm create astro@latest`, which will allow\
+    \ the creation of a brand new project.\n\n#### npm\n\nThe command above refers\
+    \ to `npm`, the Node Package Manager. Make sure you have an up-to-date version\
+    \ of Node.js and `npm` on your computer before working with Astro. Check out this\
+    \ [comprehensive tutorial on installing and working with npm](https://www.sitepoint.com/npm-guide/)\
+    \ if you need help with this.\n"
+  raw: "\n\n![](Images/astro1.jpg)\n\n## Unleashing the Power of Astro\n\nCopyright\
+    \ © 2024 SitePoint Pty. Ltd.\n\nEbook ISBN: 978-1-925836-60-8\n\n*   **Author:**\
+    \ Tamas Piros\n\n*   **Cover Design:** Volodymyr Boyarinov\n\n*   **Technical\
+    \ editor:** Joan León\n\n*   **Series editor:** Oliver Lindberg\n\n## Notice of\
+    \ Rights\n\nAll rights reserved. No part of this book may be reproduced, stored\
+    \ in a retrieval system or transmitted in any form or by any means, without the\
+    \ prior written permission of the publisher, except in the case of brief quotations\
+    \ embodied in critical articles or reviews.\n\n## Notice of Liability\n\nThe author\
+    \ and publisher have made every effort to ensure the accuracy of the information\
+    \ herein. However, the information contained in this book is sold without warranty,\
+    \ either express or implied. Neither the authors and SitePoint Pty. Ltd., nor\
+    \ its dealers or distributors will be held liable for any damages to be caused\
+    \ either directly or indirectly by the instructions contained in this book, or\
+    \ by the software or hardware products described herein.\n\n## Trademark Notice\n\
+    \nRather than indicating every occurrence of a trademarked name as such, this\
+    \ book uses the names only in an editorial fashion and to the benefit of the trademark\
+    \ owner with no intention of infringement of the trademark.\n\n![SitePoint logo](Images/sitepoint-logo-2012.png)\n\
+    \nPublished by SitePoint Pty. Ltd.\n\n71 Balmain Street, Cremorne, VIC, 3121\n\
+    \nAustralia\n\nWeb: www.sitepoint.com\n\nEmail: books@sitepoint.com\n\n## About\
+    \ SitePoint\n\nSitePoint specializes in publishing fun, practical, and easy-to-understand\
+    \ content for web professionals. Visit [http://www.sitepoint.com/](http://www.sitepoint.com/)\
+    \ to access our blogs, books, newsletters, articles, and community forums. You’ll\
+    \ find a stack of information on JavaScript, PHP, design, and more.\n\n## About\
+    \ the Author\n\nTamas is a Google Developer Expert in Web Technologies and a seasoned\
+    \ Developer Evangelist. He is a passionate advocate for modern web technologies,\
+    \ helping people understand and unlock the latest & greatest features of web development.\n\
+    \n# Preface\n\n## Who Should Read This Book?\n\nThis book is for developers who\
+    \ are interested in learning to use Astro to build websites. It assumes familiarity\
+    \ with JavaScript, HTML, and CSS. Some familiarity with other front-end frameworks\
+    \ will be beneficial but is not required.\n\n## Conventions Used\n\n### Code Samples\n\
+    \nCode in this book is displayed using a fixed-width font, like so:\n\n```\n <h1>A\
+    \ Perfect Summer's Day</h1>\n<p>It was a lovely day for a walk in the park.\n\
+    The birds were singing and the kids were all back at school.</p> \n```\n\nYou’ll\
+    \ notice that we’ve used certain layout styles throughout this book to signify\
+    \ different types of information. Look out for the following items.\n\n### Tips,\
+    \ Notes, and Warnings\n\n#### Hey, You!\n\nTips provide helpful little pointers.\n\
+    \n#### Ahem, Excuse Me ...\n\nNotes are useful asides that are related—but not\
+    \ critical—to the topic at hand. Think of them as extra tidbits of information.\n\
+    \n#### Make Sure You Always ...\n\n... pay attention to these important points.\n\
+    \n#### Watch Out!\n\nWarnings highlight any gotchas that are likely to trip you\
+    \ up along the way.\n\n## Supplementary Materials\n\n*   [https://www.sitepoint.com/community/](https://www.sitepoint.com/community/)\
+    \ are SitePoint’s forums, for help on any tricky problems.\n\n*   **books@sitepoint.com**\
+    \ is our email address, should you need to contact us to report a problem, or\
+    \ for any other reason.\n\n# Chapter 1: Getting Started with the Basics of Astro\n\
+    \n[Astro](https://astro.build) is a modern static site generator that allows developers\
+    \ to build fast, optimized websites—a critical requirement in today’s rapidly\
+    \ evolving ecosystem, where user demands are high. Astro’s story goes back to\
+    \ 2021, when Fred K. Schott released the first version of the framework. At the\
+    \ time of writing this tutorial, Astro is already at version 4 and has seen many\
+    \ amazing features added to it.\n\nAstro has [gained popularity](https://2022.stateofjs.com/en-US/libraries/rendering-frameworks/)\
+    \ over its brief existence, due to:\n\n*   its innovative approach to creating\
+    \ websites, which emphasizes performance\n\n*   its smooth developer experience\n\
+    \n*   its ability to blend various other frameworks seamlessly\n\nDue in part\
+    \ to a [new monthly sponsorship from Vercel](https://astro.build/blog/vercel-official-hosting-partner/),\
+    \ and because it’s the first framework to [implement the View Transitions API](https://thenewstack.io/dev-news-astro-3-0-state-of-css-and-react-opinions/),\
+    \ Astro is a force to be reckoned with.\n\nThis tutorial is the first in a series\
+    \ that will introduce Astro and walk through some its basics—such as rendering,\
+    \ content collections, data fetching, and image optimization.\n\n## Key Concepts\
+    \ of Astro\n\nHow can one framework stand out in terms of performance? Let’s start\
+    \ by discussing one of the key concepts of Astro, called Astro Islands (or Component\
+    \ Islands). To better understand this web architecture style, let’s take a step\
+    \ back and discuss purely component-based development. If you’ve worked with React,\
+    \ Vue or Angular before, you likely have created components. **Components** encapsulate\
+    \ functionality: a React application is just a set of components put together\
+    \ in a logical way. My favorite analogy is that components are like Lego blocks:\
+    \ we use them to build our project.\n\nThere’s a striking problem with how components\
+    \ work under the hood in frameworks such as React and Angular. Usually, when a\
+    \ project is created, some components don’t necessarily require JavaScript, as\
+    \ the component isn’t interactive. For example, think about a navigation bar.\
+    \ Built out as a component, it may contain little apart from text, HTML and some\
+    \ styling. However, due to the nature of a framework such as React, we must load\
+    \ all the JavaScript. Otherwise, the component will fail to function.\n\nWhen\
+    \ speaking of an Astro **island**, we refer to an interactive piece of UI element—“interactive”\
+    \ in the sense that it requires some JavaScript code to be run in order for it\
+    \ to be fully functional. Still, at the same time, Astro can also work with static\
+    \ (that is, non-interactive) components. Returning to our previous example, we\
+    \ could have a non-interactive navbar requiring zero bytes of JavaScript, while\
+    \ at the same time another interactive component loads some JavaScript.\n\n![Astro\
+    \ islands in a typical web page](Images/1_1.png)\n\nThis architectural pattern\
+    \ technique may also be called partial or selective **hydration**, which pertains\
+    \ to optimizing how web apps load and render content. Both of these techniques\
+    \ involve the deliberate loading and rendering of only essential parts, deferring\
+    \ less critical components until they’re needed by the app. The main purpose of\
+    \ this is to strike a balance between providing a speedy initial page load and\
+    \ allowing for a responsive user experience.\n\nTo sum up, Astro uses interactive\
+    \ and non-interactive components to create a site. This approach means that much\
+    \ less JavaScript is loaded, and only when it’s needed.\n\nAstro’s default behavior\
+    \ is to ship zero client-side JavaScript. That doesn’t mean we can’t use JavaScript\
+    \ in an Astro project. Far from it. But its island architecture means that client-side\
+    \ JavaScript will only be loaded where necessary.\n\n## Getting Started with Astro\n\
+    \nWhat better way to explore Astro than to create a project? And it couldn’t be\
+    \ easier: all we need to do is execute `npm create astro@latest`, which will allow\
+    \ the creation of a brand new project.\n\n#### npm\n\nThe command above refers\
+    \ to npm, the Node Package Manager. Make sure you have an up-to-date version of\
+    \ Node.js and npm on your computer before working with Astro. Check out this [comprehensive\
+    \ tutorial on installing and working with npm](https://www.sitepoint.com/npm-guide/)\
+    \ if you need help with this."
+  toc: []
+  trans: "\n\n![](img/astro1.jpg)\n\n# 释放 Astro 的威力\n\nCopyright © 2024 SitePoint\
+    \ Pty. Ltd.\n\n电子书 ISBN: 978-1-925836-60-8\n\n* **作者：** Tamas Piros\n* **封面设计：**\
+    \ Volodymyr Boyarinov\n* **技术编辑：** Joan León\n* **系列编辑：** Oliver Lindberg\n\n\
+    ## 权利声明\n\n版权所有。未经出版商事先书面许可，不得将此书的任何部分以任何形式或通过任何手段复制、存储在检索系统中或传输，但批判性文章或评论中包含的简短引用除外。\n\
+    \n## 免责声明\n\n作者和出版商已尽一切努力确保书中信息的准确性。然而，本书中所包含的信息按现状出售，且不提供任何明示或暗示的保证。无论是作者还是 SitePoint\
+    \ Pty. Ltd. 或其经销商或分销商，对于因遵循书中的说明或此处描述的软件或硬件产品而直接或间接造成的任何损害均不承担责任。\n\n## 商标公告\n\
+    \n本书并非对每一个出现的商标名称都标注为商标，而是仅以编辑方式使用这些名称，旨在维护所有者的利益，无侵犯商标的意图。\n\n![SitePoint logo](img/sitepoint-logo-2012.png)\n\
+    \nSitePoint Pty. Ltd. 出版\n\n71 Balmain Street, Cremorne, VIC, 3121\n\nAustralia\n\
+    \n网站：www.sitepoint.com\n邮箱：books@sitepoint.com\n\n## 关于 SitePoint\n\nSitePoint\
+    \ 专门为 Web 专业人士出版有趣、实用且易于理解的内容。访问 [`www.sitepoint.com/`](http://www.sitepoint.com/)\
+    \ 获取我们的博客、书籍、通讯通讯、文章和社区论坛。你可以在那里找到关于 JavaScript、PHP、设计等信息。\n\n## 关于作者\n\nTamas\
+    \ 是 Web 技术 Google 开发者专家（GDE），也是一位资深的开发者布道师。他是现代 Web 技术的热热支持者，帮助人们理解并解锁 Web 开发中最新且最大的功能。\n\
+    \n# 前言\n\n## 谁应该读这本书？\n\n本书适用于想要学习使用 Astro 构建网站的开发者。它假设读者已经熟悉 JavaScript、HTML\
+    \ 和 CSS。对其他前端框架有一定的了解将有所帮助，但并非必须。\n\n## 使用的惯例\n\n### 代码示例\n\n书中的代码使用等宽字体显示，如下：\n\
+    \n```\n <h1>A Perfect Summer's Day</h1>\n<p>这是一个适合在公园散步的美好日子。\n鸟儿在歌唱，孩子们都回学校上学了。</p>\
+    \ \n```\n\n你会发现我们在整本书中使用了特定的布局样式来表示不同类型的信息。请关注以下项目。\n\n### 提示、备注和警告\n\n#### 嘿，你！\n\
+    \n提示（Tips）提供了有用的小贴士。\n\n#### 咳，打扰一下……\n\n备注（Notes）是与主题相关但并非至关重要的补充说明。你可以将它们看作额外的信息片段。\n\
+    \n#### 确保你始终……\n\n……注意这些重要的要点。\n\n#### 注意！\n\n警告（Warnings）突出了在学习过程中可能会让你绊倒的任何“坑”。\n\
+    \n## 补充材料\n\n* [`www.sitepoint.com/community/`](https://www.sitepoint.com/community/)\
+    \ 是 SitePoint 的论坛，用于在使用任何棘手问题寻求帮助。\n* `books@sitepoint.com` 是我们的电子邮箱地址，如果你需要联系我们报告问题或出于任何其他原因。\n\
+    \n# 第 1 章：入门 Astro \n\n[Astro](https://astro.build) 是一个现代静态站点生成器，允许开发者构建快速、优化的网站——在当今用户需求高、且快速发展的生态系统中，这是一个关键需求。Astro\
+    \ 的故事可以追溯到 2021 年，当时 Fred K. Schott 发布了该框架的第一版本。在编写本教程时，Astro 已经处于第 4 版本，并添加了许多惊叹的功能。\n\
+    \nAstro 在其短的存在时间内[获得了人气](https://2022.stateofjs.com/en-US/libraries/rendering-frameworks/)，原因如下：\n\
+    \n* 它具有创新的网站创建方法，强调性能\n* 它流畅的开发者体验\n* 它无缝融合各种其他框架的能力\n\n部分归功于 [来自 Vercel 的新每月赞助](https://astro.build/blog/vercel-official-hosting-partner/)，并且由于它是第一个[实现\
+    \ View Transitions API](https://thenewstack.io/dev-news-astro-3-0-state-of-css-and-react-opinions/)\
+    \ 的框架，Astro 是一个不可忽视的力量。\n\n本教程是系列教程的第一篇，将介绍 Astro 并引导一些基础知识——如渲染、内容集合、数据获取和图像优化。\n\
+    \n## Astro 的核心概念\n\n一个框架如何在性能方面脱颖而出？让我们从讨论 Astro 的一个核心概念开始，称为 Astro Islands（岛屿，或组件岛屿）。为了更好地理解这种\
+    \ Web 架构风格，让我们退一步讨论纯基于组件的开发。如果你以前用过 React、Vue 或 Angular，你可能创建过组件。`Components`\
+    \ 封装了功能：React 应用程序只是以逻辑方式组合的一组组件。我最喜欢的类比是组件就像乐高积木：我们使用它们来构建项目。\n\n在 React 和 Angular\
+    \ 等框架中，组件底层的工作方式存在一个显著的问题。通常，在创建项目时，某些组件并不需要 JavaScript，因为它们是非交互。例如，考虑一个导航栏。作为组件构建，它可能只包含文本和样式。然而，由于\
+    \ React 等框架的性质，我们必须加载 JavaScript。否则，组件将无法运行。\n\n当我们谈论 `island`（岛屿）时，指的是交互式的 UI\
+    \ 元素——“交互”是指需要运行某些 JavaScript 代码才能完全正常工作。尽管如此，我们 同时也可以处理静态（即非交互）组件。回到我们之前的例子，我们可以有一个不需要零字节\
+    \ JavaScript 的非交互导航栏，而另一个交互组件同时加载一些 JavaScript。\n\n![典型网页中的 Astro 岛屿](img/1_1.png)\n\
+    \n这种架构模式技术也称为部分注水或选择性注水（hydration），与 Web 应用如何加载和渲染内容有关。这两种技术都涉及有目的地地加载和渲染关键部分，延迟加载不重要的组件。其目的是在提供快速的初始页面加载和允许响应式用户体验之间取得平衡。\n\
+    \n总结：Astro 使用交互性和非交互性组件来创建站点。\n\nAstro 的默认行为是不发送任何客户端 JavaScript。这并不意味着我们不能在 Astro\
+    \ 项目中使用 JavaScript。恰恰相反。但它的岛屿架构意味着只在需要的地方加载客户端 JavaScript。\n\n## 开始使用 Astro\n\n\
+    没有什么比创建一个项目来更适合探索 Astro 了？而且再简单不过了：我们只需要执行 `npm create astro@latest` 即可创建一个全新的项目。\n\
+    \n#### npm\n\n上面的命令指的是 `npm`，即 Node 包管理器。在处理 Astro 之前，确保你的电脑上安装了最新版本的 Node.js\
+    \ 和 `npm`。如果你需要帮助，请查看这篇[关于安装和使用 npm 的全面教程](https://www.sitepoint.com/npm-guide/)。\n\
+    \n"
+- fmt: "\nThe above command will ask multiple questions, such as the project’s location\
+    \ and how to start a project. This includes a choice of sample templates such\
+    \ as “blog”. For the purposes of this tutorial, just choose an empty project.\n\
+    \n### Starter Templates\n\nAstro offers a wide range of [starter templates](https://docs.astro.build/en/install/auto/#starter-templates),\
+    \ which you may like to check out, as well as an extensive range of [themes](https://astro.build/themes/).\n\
+    \nThe next step in the process is to make sure that the dependencies are installed.\
+    \ Astro also supports TypeScript by default, and the installer will prompt us\
+    \ to select whether we plan to write TypeScript or just JavaScript.\n\nLet’s next\
+    \ look at some of the key folders and files. The good news is that there’s only\
+    \ a small number of these within an empty project installation.\n\n## Project\
+    \ Structure\n\nThe `src` folder is where the entire application will be built.\
+    \ By default, the `src` folder contains a `pages` folder and an `env.d.ts` file.\
+    \ As stated earlier, Astro has TypeScript support out of the box, and the `env.d.ts`\
+    \ file has a [triple slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)\
+    \ that points to the appropriate Astro typings.\n\nAstro uses file system-based\
+    \ routing. This essentially means that every folder and file placed in the `pages`\
+    \ folder will act as a route. Therefore, adding `about.astro` to `src/pages` will\
+    \ create the `/about` page. Adding a new `countries` folder, along with a `singapore.astro`\
+    \ file, will create the route `/countries/singapore`—and so on.\n\nWhat’s really\
+    \ amazing about Astro is that linking between these pages doesn’t require a third-party\
+    \ dependency or a dedicated component. Instead, a standard `<a href=\"/about\"\
+    >` element can be used.\n\n### File Extensions\n\nWe don’t need to use the `.astro`\
+    \ extension. Astro can also use `.md`, `.mdx`, and `.html` extensions, as well\
+    \ as `.js` and `.ts` (for API endpoints, but more on this later). For this tutorial,\
+    \ we’ll stick to creating `.astro` files and components.\n\nThe last file that\
+    \ needs mentioning is `astro.config.mjs`, where we can specify some of Astro’s\
+    \ behavior or add plugins. We’ll return to this file later in the series and explore\
+    \ some of the options available.\n\nIt’s also important to discuss some naming\
+    \ conventions Astro suggests. Some of these are just suggestions. However, Astro\
+    \ reserves some folder names. Similarly to building a project with React, an Astro\
+    \ project comprises multiple components (either `.astro` or others). Therefore,\
+    \ it makes sense to store these in a centralized location. Astro’s documentation\
+    \ suggests storing these in `src/components`.\n\nIn the following chapter, we’ll\
+    \ talk about layouts in Astro, which can be used to define the UI structure of\
+    \ the entire application. Astro again suggests using `src/layouts` for files related\
+    \ to UI structures.\n\nStyling is an important part of modern web applications,\
+    \ and `src/styles` could be used to store CSS or even Sass files.\n\nThe `public`\
+    \ folder can store assets such as images and fonts.\n\nLast but not least, apart\
+    \ from `src/pages`, the other folder name that’s reserved by Astro is `src/content`.\
+    \ This location is to be used by content collections, which we’ll explore later.\n\
+    \nNow that we’ve discussed the folder structure, let’s also discuss what files\
+    \ go into some folders. We’ll start by looking at how an Astro file is constructed.\
+    \ (An Astro file has a `.astro` extension, referring to an “Astro component”.)\n\
+    \n## Anatomy of an Astro File\n\nAn `.astro` component has two parts: a script\
+    \ and a template. The component script usually goes on top, and it’s separated\
+    \ by what’s called a code fence—three dashed lines at the top and the bottom of\
+    \ the “script” section: `---`. (If you’ve used `frontmatter` in Markdown, the\
+    \ syntax is exactly the same.)\n\nThe component script is basically JavaScript\
+    \ code executed using a Node.js runtime during build time. Typically, we can import\
+    \ other components in here (either other Astro components or React components\
+    \ as well!), do data imports, execute Fetch API requests, create variables that\
+    \ would be used in the template, and even safely use API keys or write to a database.\
+    \ The key thing to understand here is that the JavaScript (or TypeScript) code\
+    \ written in this part of an Astro component will never make it to the client.\n\
+    \nAny variable created in the script section can be referenced in the template\
+    \ section by using curly braces. (We’ll see an example of this later.)\n\nThe\
+    \ second part of an Astro component is the template. This is where the HTML tags\
+    \ should be added, and based on this, Astro will generate its final output during\
+    \ the build process. Apart from standard HTML elements, in this part of the template\
+    \ we can use JavaScript expressions, Astro components (or components from any\
+    \ other [supported framework](https://docs.astro.build/en/guides/integrations-guide/#official-integrations)),\
+    \ and special Astro directives. The template can also naturally accept a `<script>`\
+    \ element if client-side JavaScript is required.\n\nThis is how a sample `.astro`\
+    \ file might look, showing both the script and the HTML template parts:\n\n```\n\
+    ---\nconst name = 'Jack'\n---\n<h1>Hello there, {name}</h1>\n```\n\n### Placing\
+    \ JavaScript\n\nBy default, any JavaScript added to the `<script>` element will\
+    \ be bundled and added to the `<head>` of the statically generated page using\
+    \ the `type=\"module\"` attribute. Add `<script is:inline>` if you want your JavaScript\
+    \ to be inline. See the next section for more details.\n\n## Client-side JavaScript\
+    \ vs Build-time\n\nLet’s check quickly to understand the concept of JavaScript\
+    \ added in the script part of an component versus a `<script>` element.\n\nHere’s\
+    \ one option:\n\n```\n---\nconst copyrightYear = new Date().getFullYear();\n---\n\
+    <small>Copyright, {copyrightYear}</small>\n```\n\nHere’s another option:\n\n```\n\
+    <small>Copyright</small>\n<script>\ndocument.querySelector('small').insertAdjacentText('beforeend',`\
+    \ ${new Date().getFullYear()}`);\n</script>\n```\n\nWhich option would we use\
+    \ to display the copyright year in Astro? Both of them work (seemingly) correctly,\
+    \ and both of them will display the current year.\n\nHowever, there’s a crucial\
+    \ difference. Imagine we end up using the first solution and build our project\
+    \ on December 29, 2024 and deploy it. Then we don’t do another build for two years.\
+    \ Opening the page will still display 2024 once that year has expired. Why? Because\
+    \ the JavaScript code placed between the code fence `---` executes during build\
+    \ time. The second solution, however, will always display the correct year, as\
+    \ that code executes at the request time. That is, every time someone views the\
+    \ page, that piece of JavaScript will run.\n\n## Styling an Astro Component\n\n\
+    Now that we have a good idea of what an Astro component looks like, let’s also\
+    \ discuss styling these components. Astro, out of the box, supports CSS, Sass\
+    \ and Less. Similar to how adding a `<script>` element is possible in a component,\
+    \ adding a `<style>` element is also possible. And the good news? CSS rules are\
+    \ scoped by default to the component where they’re defined. This means that the\
+    \ styles defined at the individual page or component level don’t pollute the rest\
+    \ of the application and the CSS rules will only apply to the necessary pages/components.\
+    \ That said, global styles can also be created by adding the `is:global` attribute\
+    \ to the `<style>` element.\n\nTake this example:\n\n```\n<style is:global>\n\
+    p {\n  font-weight: bold;\n}\n</style>\n```\n\nIn the code sample above, all paragraphs\
+    \ will be bold in the entire project because of the `is:global` directive. These\
+    \ two approaches can also be combined by using the `<style>` element and the `:global()`\
+    \ CSS selector.\n\nFurthermore, CSS variables can be used from the script part\
+    \ of an Astro component by utilizing the `define:vars` attribute on the `<style>`\
+    \ element.\n"
+  raw: "The above command will ask multiple questions, such as the project’s location\
+    \ and how to start a project. This includes a choice of sample templates such\
+    \ as “blog”. For the purposes of this tutorial, just choose an empty project.\n\
+    \n#### Starter Templates\n\nAstro offers a wide range of [starter templates](https://docs.astro.build/en/install/auto/#starter-templates),\
+    \ which you may like to check out, as well as an extensive range of [themes](https://astro.build/themes/).\n\
+    \nThe next step in the process is to make sure that the dependencies are installed.\
+    \ Astro also supports TypeScript by default, and the installer will prompt us\
+    \ to select whether we plan to write TypeScript or just JavaScript.\n\nLet’s next\
+    \ look at some of the key folders and files. The good news is that there’s only\
+    \ a small number of these within an empty project installation.\n\n## Project\
+    \ Structure\n\nThe `src` folder is where the entire application will be built.\
+    \ By default, the `src` folder contains a `pages` folder and an `env.d.ts` file.\
+    \ As stated earlier, Astro has TypeScript support out of the box, and the `env.d.ts`\
+    \ file has a [triple slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)\
+    \ that points to the appropriate Astro typings.\n\nAstro uses file system-based\
+    \ routing. This essentially means that every folder and file placed in the `pages`\
+    \ folder will act as a route. Therefore, adding `about.astro` to `src/pages` will\
+    \ create the `/about` page. Adding a new `countries` folder, along with a `singapore.astro`\
+    \ file, will create the route `/countries/singapore`—and so on.\n\nWhat’s really\
+    \ amazing about Astro is that linking between these pages doesn’t require a third-party\
+    \ dependency or a dedicated component. Instead, a standard `<a href=\"/about\"\
+    >` element can be used.\n\n#### File Extensions\n\nWe don’t need to use the `.astro`\
+    \ extension. Astro can also use `.md`, `.mdx`, and `.html` extensions, as well\
+    \ as `.js` and `.ts` (for API endpoints, but more on this later). For this tutorial,\
+    \ we’ll stick to creating `.astro` files and components.\n\nThe last file that\
+    \ needs mentioning is `astro.config.mjs`, where we can specify some of Astro’s\
+    \ behavior or add plugins. We’ll return to this file later in the series and explore\
+    \ some of the options available.\n\nIt’s also important to discuss some naming\
+    \ conventions Astro suggests. Some of these are just suggestions. However, Astro\
+    \ reserves some folder names. Similarly to building a project with React, an Astro\
+    \ project comprises multiple components (either `.astro` or others). Therefore,\
+    \ it makes sense to store these in a centralized location. Astro’s documentation\
+    \ suggests storing these in `src/components`.\n\nIn the following chapter, we’ll\
+    \ talk about layouts in Astro, which can be used to define the UI structure of\
+    \ the entire application. Astro again suggests using `src/layouts` for files related\
+    \ to UI structures.\n\nStyling is an important part of modern web applications,\
+    \ and `src/styles` could be used to store CSS or even Sass files.\n\nThe `public`\
+    \ folder can store assets such as images and fonts.\n\nLast but not least, apart\
+    \ from `src/pages`, the other folder name that’s reserved by Astro is `src/content`.\
+    \ This location is to be used by content collections, which we’ll explore later.\n\
+    \nNow that we’ve discussed the folder structure, let’s also discuss what files\
+    \ go into some folders. We’ll start by looking at how an Astro file is constructed.\
+    \ (An Astro file has a `.astro` extension, referring to an “Astro component”.)\n\
+    \n## Anatomy of an Astro File\n\nAn `.astro` component has two parts: a script\
+    \ and a template. The component script usually goes on top, and it’s separated\
+    \ by what’s called a **code fence**—three dashed lines at the top and the bottom\
+    \ of the “script” section: `---`. (If you’ve used `frontmatter` in Markdown, the\
+    \ syntax is exactly the same.)\n\nThe component script is basically JavaScript\
+    \ code executed using a Node.js runtime during build time. Typically, we can import\
+    \ other components in here (either other Astro components or React components\
+    \ as well!), do data imports, execute Fetch API requests, create variables that\
+    \ would be used in the template, and even safely use API keys or write to a database.\
+    \ The key thing to understand here is that the JavaScript (or TypeScript) code\
+    \ written in this part of an Astro component will never make it to the client.\n\
+    \nAny variable created in the script section can be referenced in the template\
+    \ section by using curly braces. (We’ll see an example of this later.)\n\nThe\
+    \ second part of an Astro component is the **template**. This is where the HTML\
+    \ tags should be added, and based on this, Astro will generate its final output\
+    \ during the build process. Apart from standard HTML elements, in this part of\
+    \ the template we can use JavaScript expressions, Astro components (or components\
+    \ from any other [supported framework](https://docs.astro.build/en/guides/integrations-guide/#official-integrations)),\
+    \ and special Astro directives. The template can also naturally accept a `<script>`\
+    \ element if client-side JavaScript is required.\n\nThis is how a sample `.astro`\
+    \ file might look, showing both the script and the HTML template parts:\n\n```\n\
+    ---\nconst name = 'Jack'\n---\n<h1>Hello there, {name}</h1>\n```\n\n#### Placing\
+    \ JavaScript\n\nBy default, any JavaScript added to the `<script>` element will\
+    \ be bundled and added to the `<head>` of the statically generated page using\
+    \ the `type=\"module\"` attribute. Add `<script is:inline>` if you want your JavaScript\
+    \ to be inline instead. See the next section for more details.\n\n## Client-side\
+    \ JavaScript vs Build-time JavaScript\n\nLet’s check quickly to ensure we understand\
+    \ the concept of JavaScript added in the script part of an Astro component versus\
+    \ adding JavaScript in a `<script>` element in the template.\n\nHere’s one option:\n\
+    \n```\n---\nconst copyrightYear = new Date().getFullYear();\n---\n<small>Copyright,\
+    \ {copyrightYear}</small>\n```\n\nHere’s another option:\n\n```\n<small>Copyright</small>\n\
+    <script>\ndocument.querySelector('small').insertAdjacentText('beforeend',` ${new\
+    \ Date().getFullYear()}`);\n</script>\n```\n\nWhich option would we use to display\
+    \ the copyright year in Astro? Both of them work (seemingly) correctly, and both\
+    \ of them will display the current year.\n\nHowever, there’s a crucial difference.\
+    \ Imagine we end up using the first solution and build our project on December\
+    \ 29, 2024 and deploy it. Then we don’t do another build for two years. Opening\
+    \ the page will still display 2024 once that year has expired. Why? Because the\
+    \ JavaScript code placed between the code fence (`---`) executes during build\
+    \ time. The second solution, however, will always display the correct year, as\
+    \ that code executes at the request time. That is, every time someone views the\
+    \ page, that piece of JavaScript code will run.\n\n## Styling an Astro Component\n\
+    \nNow that we have a good idea of what an Astro component looks like, let’s also\
+    \ discuss styling these components. Astro, out of the box, supports CSS, Sass\
+    \ and Less. Similar to how adding a `<script>` element is possible in a component,\
+    \ adding a `<style>` element is also possible. And the good news? CSS rules are\
+    \ scoped by default to the component where they’re defined. This means that the\
+    \ styles defined at the individual page or component level don’t pollute the rest\
+    \ of the application and the CSS rules will only apply to the necessary pages/components.\
+    \ That said, global styles can also be created by adding the `is:global` attribute\
+    \ to the `<style>` element.\n\nTake this example:\n\n```\n<style is:global>\n\
+    p {\n  font-weight: bold;\n}\n</style>\n```\n\nIn the code sample above, all paragraphs\
+    \ will be bold in the *entire* project because of the `is:global` directive.\n\
+    \nThese two approaches can also be combined by using the `<style>` element and\
+    \ the `:global()` CSS selector.\n\nFurthermore, CSS variables can be used from\
+    \ the script part of an Astro component by utilizing the `define:vars` attribute\
+    \ on the `<style>` element:"
+  toc: []
+  trans: "\n\n上述命令将询问多个问题，例如项目的位置以及如何启动项目。这包括对如“blog”等示例模板的选择。为了本教程的目的，只需选择一个空项目即可。\n\
+    \n### 启动模板\n\nAstro 提供了丰富的[启动模板](https://docs.astro.build/en/install/auto/#starter-templates)，你可能想要查看这些模板，还有大量的[主题](https://astro.build/themes/)\
+    \ 供选择。\n\n流程的下一步一步是确保依赖项已安装。Astro 默认支持 TypeScript，安装程序会提示我们选择计划编写 TypeScript 还是仅\
+    \ JavaScript。\n\n接下来让我们来看一些关键的文件夹和文件。好消息是，在空项目安装中，这些文件的数量很少。\n\n## 项目结构\n\n`src`\
+    \ 文件夹是构建整个应用程序的地方。默认情况下，`src` 文件夹包含一个 `pages` 文件夹和一个 `env.d.ts` 文件。如前所述，Astro\
+    \ 开箱支持 TypeScript，且 `env.d.ts` 文件包含一个指向适当 Astro 类型定义的 [三斜杠指令](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)。\n\
+    \nAstro 使用基于文件系统的路由。这本质上意味着放在 `pages` 文件夹中的每个文件夹和文件都将作为一个路由。因此，在 `src/pages` 中添加\
+    \ `about.astro` 将创建 `/about` 页面。添加一个新的 `countries` 文件夹以及 `singapore.astro` 文件将创建路由\
+    \ `/countries/singapore`——依此类推。\n\nAstro 真正令人惊叹的地方在于，这些页面之间的链接不需要第三方依赖或专用组件。相反，可以使用标准的\
+    \ `<a href=\"/about\">` 元素。\n\n### 文件扩展名\n\n我们不需要使用 `.astro` 扩展名。Astro 也可以使用 `.md`、`.mdx`\
+    \ 和 `.html` 扩展，以及 `.js` 和 `.ts`（用于 API 端点，稍后详细介绍）。对于本教程，我们将坚持创建 `.astro` 文件和组件。\n\
+    \n最后一个需要提的文件是 `astro.config.mjs`，在其中我们可以指定 Astro 的某些行为或添加插件。我们将在本系列的后续中回到此文件，并探索一些可用选项。\n\
+    \n讨论 Astro 建议的一些命名规范也是重要的。其中一些仅仅是建议。然而，Astro 预留了一些文件夹名称。与构建 React 项目类似，Astro 项目包含多个组件（可以是\
+    \ `.astro` 或其他）。因此，将这些存储在中心化位置是有意义的。Astro 文档建议将它们存储在 `src/components` 中。\n\n在接下来的章节中，我们将讨论\
+    \ Astro 中的布局（layouts），它可以用于定义整个应用程序的 UI 结构。Astro 再次建议使用 `src/layouts` 处理与 UI 结构相关的文件。\n\
+    \n样式是现代 Web 应用的重要部分，`src/styles` 可用于存储 CSS 甚至是 Sass 文件。\n\n`public` 文件夹可以存储图像和字体等资源。\n\
+    \n最后但同样重要的是，除了 `src/pages`，Astro 预留的另一个文件夹名称是 `src/content`。该位置用于内容集合（content\
+    \ collections），我们稍后会进行探索。\n\n现在我们已经讨论了文件夹结构，让我们讨论一下哪些文件放入哪些文件夹。我们将从查看 Astro 文件是如何构造的开始。（\
+    \ Astro 文件具有 `.astro` 扩展名，称为“Astro 组件”。）\n\n## Astro 文件的结构\n\n一个 `.astro` 组件有两个部分：脚本（script）和模板（template）。组件脚本通常位于顶部，它被所谓的代码围栏（code\
+    \ fence）隔开——即“脚本”部分顶部和底部的三横线：`---`。（如果你在 Markdown 中用过 `frontmatter`，语法完全相同。）\n\
+    \n组件脚本基本上是构建构建期间使用 Node.js 运行时执行的 JavaScript 代码。通常，我们可以在这里导入其他组件（可以是 Astro 组件或其他\
+    \ React 组件！）、进行数据导入、执行 Fetch API 请求、创建模板中使用的变量，甚至安全地使用 API 密钥或写入数据库。这里需要理解的关键是，编写在\
+    \ Astro 组件这部分的 JavaScript（或 TypeScript）代码永远不会到达客户端。\n\n在脚本部分创建的任何变量都可以通过大括号在模板部分引用。（我们稍后会看到一个示例。）\n\
+    \nAstro 组件的第二部分是模板。这是应该添加 HTML 标签的地方，基于此，Astro 将构建过程中生成最终输出。除了标准的 HTML 元素外，在模板的范围内我们可以使用\
+    \ JavaScript 表达式、Astro 组件（或来自任何其他[支持框架](https://docs.astro.build/en/guides/integrations-guide/#official-integrations)\
+    \ 的组件）以及特殊的 Astro 指令。如果需要客户端 JavaScript，模板也可以自然地接受 `<script>` 元素。\n\n这是一个示例 `.astro`\
+    \ 文件的外观，显示了脚本部分和 HTML 模板部分：\n\n```\n---\nconst name = 'Jack'\n---\n<h1>Hello there,\
+    \ {name}</h1>\n```\n\n### 放置 JavaScript\n\n默认情况下，任何添加到 `<script>` 元素中的 JavaScript\
+    \ 都会被打包，并使用 `type=\"module\"` 属性添加到静态生成页面的 `<head>` 中。如果你希望你的 JavaScript 是内联的，请添加\
+    \ `<script is:inline>`。更多细节请见下一节。\n\n## 客户端 JavaScript 与构建时\n\n让我们快速检查组件脚本部分添加\
+    \ JavaScript 与 `<script>` 元素的区别。\n\n这里是一种方案：\n\n```\n---\nconst copyrightYear\
+    \ = new Date().getFullYear();\n---\n<small>Copyright, {copyrightYear}</small>\n\
+    ```\n\n这是另一种方案：\n\n```html\n<small>Copyright</small>\n<script>\ndocument.querySelector('small').insertAdjacentText('beforeend',`\
+    \ ${new Date().getFullYear()}`);\n</script>\n```\n\n在 Astro 中使用哪种方案来显示年份？两者似乎都能工作，并且都能显示年份。\n\
+    \n然而，存在一个关键区别。假设我们使用第一种方案并在 2024 年 12 月 29 日构建并部署项目。然后两年内没有再次构建。当年份过期后，打开页面仍然显示\
+    \ 2024。为什么？因为放在代码围栏 `---` 之间的 JavaScript 代码是在构建期间执行的。然而，方案二将始终显示正确的年份，因为该代码是在请求时执行的。也就是说，每当有人查看页面时，该\
+    \ JavaScript 运行。\n\n## Astro Astro 组件\n\n现在我们已经熟悉 Astro 组件的样子，让我们也讨论这些组件的样式。Astro\
+    \ 开箱支持 CSS、Sass 和 Less。类似于在组件中添加 `<script>` 元素，添加 `<style>` 元素也是可能的。好消息是？CSS 规则默认限制在定义它们的组件。这意味着在单个页面或组件级别定义的样式不会污染应用程序的其他部分，CSS\
+    \ 规则仅适用于页面/组件。尽管如此，通过向 `<style>` 元素添加 `is:global` 属性也可以创建全局样式。\n\n看这个示例：\n\n```\n\
+    <style is:global>\np {\n  font-weight: bold;\n}\n</style>\n```\n\n在上面的代码示例中，由于\
+    \ `is:global` 指令的作用，整个项目中的所有落都会加粗。这两种方法也可以通过使用 `<style>` 元素和 `:global()` CSS 选择器结合起来。\n\
+    \n此外，可以通过 `<style>` 元素上的 `define:vars` 属性从 Astro 组件的脚本部分使用 CSS 变量。\n\n"
+- fmt: "\n```javascript\n---\nconst important = `#f00`;\n---\n<style define:vars={{\
+    \ important }}>\np {\n  color: var(--important);\n}\n</style>\n<p>Important message</p>\n\
+    ```\n\nIn the code above, we’re defining a variable in JavaScript (`important`)\
+    \ and then reusing it as a CSS variable within the Astro template by way of the\
+    \ `define:vars` directive on the `<style>` element.\n\nLastly, if we have external\
+    \ stylesheets and we’ve placed them in our `public` folder, we can easily import\
+    \ them from within the component using the standard ESM `import` syntax:\n\n```js\n\
+    ---\nimport '../path/to/style.css'\n---\n<p>some html...</p>\n```\n\nLet’s also\
+    \ talk about Astro in the context of a larger ecosystem. Astro integrates with\
+    \ tools such as [Tailwind](https://tailwindcss.com) (a utility-first CSS framework)\
+    \ and [Partytown](https://partytown.builder.io) (a library designed to assist\
+    \ moving resource intensive scripts—such as third-party scripts—to a web worker,\
+    \ therefore relieving the main thread to process app specific JavaScript instead).\n\
+    \n## Custom Integrations\n\nIt’s worth noting that we can build a custom integration\
+    \ as well via Astro’s [Integrations API](https://docs.astro.build/en/reference/integrations-reference/).\n\
+    \nThe easiest way to use Tailwind (and other officially supported integrations)\
+    \ is by using the `npx astro add [integration]` command: `npx astro add tailwind`.\
+    \ This command automatically installs a compatible version of Tailwind, generates\
+    \ a custom `tailwind.config.cjs` file, and updates the `astro.config.mjs` to look\
+    \ like this, making it really easy to add Tailwind to a project:\n\n```js\nimport\
+    \ { defineConfig } from 'astro/config';\n\nimport tailwind from \"@astrojs/tailwind\"\
+    ;\n\n// https://astro.build/config\nexport default defineConfig({\n  integrations:\
+    \ [tailwind()]\n});\n```\n\n## Demo\n\nThroughout this book, we’ll be referencing\
+    \ a sample app, which you can also take a look at by visiting [stackblitz.com](https://stackblitz.com/github/tpiros/sitepoint-astro).\
+    \ For the purposes of consolidating what you’ve learned in this first chapter,\
+    \ it would be good to review the file and folder structure as well as the Tailwind\
+    \ setup in this demo.\n\n## Conclusion\n\nIn this chapter, we got an introduction\
+    \ to Astro, a modern frontend framework. Astro’s rising popularity is attributed\
+    \ to its innovative approach to web development, prioritizing performance, seamless\
+    \ developer experience, and the ability to integrate with other frameworks and\
+    \ tools.\n\nSome of the key takeaways from this chapter are:\n\n* **Islands**.\
+    \ Astro’s island architecture allows us to create islands of interactivity—loading\
+    \ JavaScript where and when needed in our app.\n* **Project structure**. Our overview\
+    \ of the project structure of an Astro project showed the key files and folders\
+    \ found in an Astro project.\n* **File anatomy**. We explored the anatomy of a\
+    \ `.astro` file, discussing what the script and template sections of a typical\
+    \ `.astro` file look like.\n* **Styling**. We briefly touched on how to use styles\
+    \ in Astro.\n\nAnd that’s it for the first chapter in this Astro series. Now that\
+    \ we’ve covered the basic concepts, we’ll next take a look at Astro’s options\
+    \ for rendering and layouts.\n\n# Chapter 2: Rendering Options in Astro: Building\
+    \ a Layout\n\nIn the previous tutorial, we looked at the basics of Astro: its\
+    \ folder structure, how components work, and how styling works.\n\nThis tutorial\
+    \ will focus on layouts and the various rendering options available at our disposal\
+    \ with Astro. Rendering plays a critical part in any web application, since its\
+    \ goal is to display the final output to the end user. With Astro, we have the\
+    \ flexibility to choose between two primary rendering modes: **static site generation**\
+    \ (SSG) and **server-side rendering** (SSR). The former is ideal for generating\
+    \ highly optimized, pre-built HTML during the build process, resulting in lightning-fast\
+    \ load times and SEO-friendly websites. The latter enables dynamic content generation\
+    \ on the server, striking a balance between performance and flexibility.\n\n##\
+    \ Layouts in Astro\n\nWhile each `.astro` page (route) has the potential to contain\
+    \ a fully-fledged HTML document, it’s inefficient to duplicate that structure,\
+    \ especially when certain elements—such as `<meta>` and `<title>` elements—may\
+    \ vary depending on the currently viewed page. (The inefficiency comes from the\
+    \ fact that we would have to potentially add the same HTML structure to each `.astro`\
+    \ page.)\n\nTherefore, it’s advisable to establish an overarching layout that\
+    \ can be used across all pages. Although not mandatory, organizing the layout\
+    \ files within the `src/layouts` folder makes sense, enabling the addition of\
+    \ multiple layout files—such as one for navigation and another for a footer, or\
+    \ even splitting up the layout for parts of the page (for example, a separate\
+    \ layout for the overall page and for the blog).\n\nConsider the following as\
+    \ an example of a basic website that would encompass common UI elements:\n\n*\
+    \ `layouts/Layout.astro`: the primary layout file\n* `layouts/Head.astro`: a section\
+    \ for custom `<head>` elements, potentially unique for each page\n* `layouts/Nav.astro`:\
+    \ a navigation bar\n* `layouts/Footer.astro`: a footer section\n\n![Common UI\
+    \ elements on a page](Images/2_4.png)\n\nHere’s a glimpse of the `layouts/Layout.astro`\
+    \ file:\n\n```astro\n---\nimport Head from './Head.astro';\nimport Nav from './Nav.astro';\n\
+    const {\n  title = 'Footie is the best',\n  description = 'An online football\
+    \ magazine',\n} = Astro.props;\n\nimport Footer from './Footer.astro';\n---\n\n\
+    <html lang=\"en\">\n  <title>{title}</title>\n  <meta name=\"description\" content={description}>\n\
+    \  <body>\n    <Nav />\n    <div>\n      <main>\n        <slot />\n      </main>\n\
+    \    </div>\n    <Footer />\n  </body>\n</html>\n```\n\n#### Mixing HTML Elements\
+    \ and Astro Components\n\nNote that, in the example above, we’re mixing HTML elements\
+    \ with Astro components. The ones that are capitalized (`Nav` and `Footer`) are\
+    \ Astro components that are imported in the top part of sample layout file.\n\n\
+    ### Astro.props\n\nThere are a few key takeaways here. Take note of the `import`\
+    \ function and the usage of `Astro.props`. We can easily import any other component\
+    \ using the `import` keyword. The special built-in `Astro.props` object allows\
+    \ us to send properties to components and access them. In the code above, default\
+    \ values are set if `Astro.props` lacks the `title` or `description` keys (the\
+    \ default values are `Footie is the best` and `An football magazine`). This is\
+    \ good practice, and we’re leveraging JavaScript’s default params intermixed with\
+    \ object destructuring. However, if there are `props` sent, Astro will pick them\
+    \ up. Let’s take a look at this by examining the code below:\n\n```js\n<!-- Uses\
+    \ the defaults -->\n<Layout />\n\n<!-- Sets title to \"My Title,\" while description\
+    \ retains its default value -->\n<Layout title=\"My Title\" />\n```\n\nThe first\
+    \ `<Layout />` component doesn’t have any `props` attached to it, so it will resort\
+    \ to using the previously mentioned default values. In the second scenario, however,\
+    \ the `title` prop is sent with the value of `My Title`, which means that the\
+    \ page will display the appropriate title.\n\n#### Global Object Properties\n\n\
+    Multiple properties are available from the built-in global object [Astro](https://docs.astro.build/en/reference/api-reference/#astro-global).\n\
+    \nLastly, take note of the `<slot />` element, which serves as the insertion point\
+    \ for content from individual `.astro` pages. More on shortly.\n\nPlease also\
+    \ pay attention to the `<Head>` Astro component. Suppose the property and variable\
+    \ holding the value we wish to send to the property share the same name. In that\
+    \ case, we can employ a simpler syntax:\n\n```js\nconst title = 'my title';\n\n\
+    <Head title={title} />\n<!-- Can be simplified to \U0001F447 -->\n<Head {title}\
+    \ />\n```\n\n### Slot\n\nLet’s talk a bit more about the built-in `<slot />` element.\
+    \ Once the layouts are ready, the content from Astro files in the `src/pages`\
+    \ folder will be injected where the element mentioned above is placed.\n"
+  raw: "```\n---\nconst important = `#f00`;\n---\n<style define:vars={{ important\
+    \ }}>\np {\n  color: var(--important);\n}\n</style>\n<p>Important message</p>\n\
+    ```\n\nIn the code above, we’re defining a variable in JavaScript (`important`)\
+    \ and then reusing it as a CSS variable within the Astro template by way of the\
+    \ `define:vars` directive on the `<style>` element.\n\nLastly, if we have external\
+    \ stylesheets and we’ve placed them in our `public` folder, we can easily import\
+    \ them from within the component using the standard ESM `import` syntax:\n\n```\n\
+    ---\nimport '../path/to/style.css'\n---\n<p>some html...</p>\n```\n\nLet’s also\
+    \ talk about Astro in the context of a larger ecosystem. Astro integrates with\
+    \ tools such as [Tailwind](https://tailwindcss.com) (a utility-first CSS framework)\
+    \ and [Partytown](https://partytown.builder.io) (a library designed to assist\
+    \ moving resource intensive scripts—such as third-party scripts—to a web worker,\
+    \ therefore relieving the main thread to process app specific JavaScript instead).\n\
+    \n#### Custom Integrations\n\nIt’s worth noting that we can build a custom integration\
+    \ as well via Astro’s [Integrations API](https://docs.astro.build/en/reference/integrations-reference/).\n\
+    \nThe easiest way to use Tailwind (and other officially supported integrations)\
+    \ is by using the `npx astro add [integration]` command: `npx astro add tailwind`.\
+    \ This command automatically installs a compatible version of Tailwind, generates\
+    \ a custom `tailwind.config.cjs` file, and updates the `astro.config.mjs` to look\
+    \ like this, making it really easy to add Tailwind to a project:\n\n```\nimport\
+    \ { defineConfig } from 'astro/config';\n\nimport tailwind from \"@astrojs/tailwind\"\
+    ;\n\n// https://astro.build/config\nexport default defineConfig({\n  integrations:\
+    \ [tailwind()]\n});\n```\n\n## Demo\n\nThroughout this book, we’ll be referencing\
+    \ a sample app, which you can also take a look at by visiting [stackblitz.com](https://stackblitz.com/github/tpiros/sitepoint-astro).\
+    \ For the purposes of consolidating what you’ve learned in this first chapter,\
+    \ it would be good to review the file and folder structure as well as the Tailwind\
+    \ setup in this demo.\n\n## Conclusion\n\nIn this chapter, we got an introduction\
+    \ to Astro, a modern frontend framework. Astro’s rising popularity is attributed\
+    \ to its innovative approach to web development, prioritizing performance, seamless\
+    \ developer experience, and the ability to integrate with other frameworks and\
+    \ tools.\n\nSome of the key takeaways from this chapter are:\n\n*   **Islands**.\
+    \ Astro’s island architecture allows us to create islands of interactivity—loading\
+    \ JavaScript where and when needed in our app.\n\n*   **Project structure**. Our\
+    \ overview of the project structure of an Astro project showed the key files and\
+    \ folders found in an Astro project.\n\n*   **File anatomy**. We explored the\
+    \ anatomy of a `.astro` file, discussing what the script and template sections\
+    \ of a typical `.astro` file look like.\n\n*   **Styling**. We briefly touched\
+    \ on how to use styles in Astro.\n\nAnd that’s it for the first chapter in this\
+    \ Astro series. Now that we’ve covered the basic concepts, we’ll next take a look\
+    \ at Astro’s options for rendering and layouts.\n\n# Chapter 2: Rendering Options\
+    \ in Astro: Building a Layout\n\nIn the previous tutorial, we looked at the basics\
+    \ of Astro: its folder structure, how components work, and how styling works.\n\
+    \nThis tutorial will focus on layouts and the various rendering options available\
+    \ at our disposal with Astro. Rendering plays a critical part in any web application,\
+    \ since its goal is to display the final output to the end user. With Astro, we\
+    \ have the flexibility to choose between two primary rendering modes: **static\
+    \ site generation** (SSG) and **server-side rendering** (SSR). The former is ideal\
+    \ for generating highly optimized, pre-built HTML during the build process, resulting\
+    \ in lightning-fast load times and SEO-friendly websites. The latter enables dynamic\
+    \ content generation on the server, striking a balance between performance and\
+    \ flexibility.\n\n## Layouts in Astro\n\nWhile each `.astro` page (route) has\
+    \ the potential to contain a fully-fledged HTML document, it’s inefficient to\
+    \ duplicate that structure, especially when certain elements—such as `<meta>`\
+    \ and `<title>` elements—may vary depending on the currently viewed page. (The\
+    \ inefficiency comes from the fact that we would have to potentially add the same\
+    \ HTML structure to each `.astro` page.)\n\nTherefore, it’s advisable to establish\
+    \ an overarching layout that can be used across all pages. Although not mandatory,\
+    \ organizing the layout files within the `src/layouts` folder makes sense, enabling\
+    \ the addition of multiple layout files—such as one for navigation and another\
+    \ for a footer, or even splitting up the layout for parts of the page (for example,\
+    \ a separate layout for the overall page and for the blog).\n\nConsider the following\
+    \ as an example of a basic website that would encompass common UI elements:\n\n\
+    *   `layouts/Layout.astro`: the primary layout file\n\n*   `layouts/Head.astro`:\
+    \ a section for custom `<head>` elements, potentially unique for each page\n\n\
+    *   `layouts/Nav.astro`: a navigation bar\n\n*   `layouts/Footer.astro`: a footer\
+    \ section\n\n![Common UI elements on a page](Images/2_4.png)\n\nHere’s a glimpse\
+    \ of the `layouts/Layout.astro` file:\n\n```\n---\nimport Head from './Head.astro';\n\
+    import Nav from './Nav.astro';\nconst {\n  title = 'Footie is the best',\n  description\
+    \ = 'An online football magazine',\n} = Astro.props;\n\nimport Footer from './Footer.astro';\n\
+    ---\n\n<html lang=\"en\">\n  <title>{title}</title>\n  <meta name=\"description\"\
+    \ content={description}>\n  <body>\n    <Nav />\n    <div>\n      <main>\n   \
+    \     <slot />\n      </main>\n    </div>\n    <Footer />\n  </body>\n</html>\n\
+    ```\n\n#### Mixing HTML Elements and Astro Components\n\nNote that, in the example\
+    \ above, we’re mixing standard HTML elements with Astro components. The ones that\
+    \ are capitalized (`Nav` and `Footer`) are Astro components that are imported\
+    \ in the top part of this sample layout file.\n\n### Astro.props\n\nThere are\
+    \ a few key takeaways here. Take note of the `import` function and the usage of\
+    \ `Astro.props`. We can easily import any other component by using the `import`\
+    \ keyword. The special built-in `Astro.props` object allows us to send properties\
+    \ to components and access them. In the code above, default values are set if\
+    \ `Astro.props` lacks the `title` or `description` keys (the default values are\
+    \ `Footie is the best` and `An online football magazine`). This is good practice,\
+    \ and we’re leveraging JavaScript’s default params feature intermixed with object\
+    \ destructuring. However, if there are `props` sent, Astro will pick them up.\
+    \ Let’s take a look at this by examining the code below:\n\n```\n<!-- Uses the\
+    \ defaults -->\n<Layout />\n\n<!-- Sets title to \"My Title,\" while description\
+    \ retains its default value -->\n<Layout title=\"My Title\" />\n```\n\nThe first\
+    \ `<Layout />` component doesn’t have any `props` attached to it, so it will resort\
+    \ to using the previously mentioned default values. In the second scenario, however,\
+    \ the `title` prop is sent with the value of `My Title`, which means that the\
+    \ page will display the appropriate title.\n\n#### Global Object Properties\n\n\
+    Multiple properties are available from the built-in global object [Astro](https://docs.astro.build/en/reference/api-reference/#astro-global).\n\
+    \nLastly, take note of the `<slot />` element, which serves as the insertion point\
+    \ for content from individual `.astro` pages. More on this shortly.\n\nPlease\
+    \ also pay attention to the `<Head>` Astro component. Suppose the property and\
+    \ variable holding the value we wish to send to the property share the same name.\
+    \ In that case, we can employ a simpler syntax:\n\n```\nconst title = 'my title';\n\
+    \n<Head title={title} />\n<!-- Can be simplified to \U0001F447 -->\n<Head {title}\
+    \ />\n```\n\n### Slot\n\nLet’s talk a bit more about the built-in `<slot />` element.\
+    \ Once the layouts are ready, the content from Astro files in the `src/pages`\
+    \ folder will be injected where the element mentioned above is placed."
+  toc: []
+  trans: "\n\n```javascript\n---\nconst important = `#f00`;\n---\n<style define:vars={{\
+    \ important }}>\np {\n  color: var(--important);\n}\n</style>\n<p>Important message</p>\n\
+    ```\n\n在上面的代码中，我们正在 JavaScript 中定义一个变量（`important`），然后通过 `<style>` 元素上的 `define:vars`\
+    \ 指令，将其作为 CSS 变量在 Astro 模板中复用。\n\n最后，如果我们有外部样式表并将其放置在 `public` 文件夹中，我们就可以使用标准的\
+    \ ESM `import` 语法从组件内部轻松地导入它们：\n\n```js\n---\nimport '../path/to/style.css'\n\
+    ---\n<p>some html...</p>\n```\n\n让我们还从更大生态系统的背景下来谈谈 Astro。Astro 集成了诸如 [Tailwind](https://tailwindcss.com)（一个实用优先的\
+    \ CSS 框架）和 [Partytown](https://partytown.builder.io)（一个旨在帮助将资源密集型脚本——如第三方脚本——移动到\
+    \ Web Worker 的库，从而释放主线程来处理应用程序特定的 JavaScript）\n\n工具。\n\n## 自定义集成\n\n值得注意的是，我们还可以\
+    \ Astro 的 [集成 API](https://docs.astro.build/en/reference/integrations-reference/)\
+    \ 构建自定义集成。\n\n使用 Tailwind（以及其他官方支持的集成）最简单的方法是使用 `npx astro add [integration]`\
+    \ 命令：`npx astro add tailwind`。该命令会自动安装兼容版本的 Tailwind，生成自定义的 `tailwind.config.cjs`\
+    \ 文件，并更新 `astro.config.mjs` 如下所示，这使得向项目中添加 Tailwind 变得非常简单：\n\n```js\nimport {\
+    \ defineConfig } from 'astro/config';\n\nimport tailwind from \"@astrojs/tailwind\"\
+    ;\n\n// https://astro.build/config\nexport default defineConfig({\n  integrations:\
+    \ [tailwind()]\n});\n```\n\n## 演示\n\n在本书中，我们将引用一个示例应用，你也可以通过访问 [stackblitz.com](https://stackblitz.com/github/tpiros/sitepoint-astro)\
+    \ 来查看。为了巩固你在第一章中学到的知识，回顾此演示中的文件和文件夹结构以及 Tailwind 设置将很有帮助。\n\n## 总结\n\n在本章中，我们介绍了\
+    \ Astro，这是一个现代前端框架。Astro 的日益流行归功于其创新的 Web 开发方法，优先考虑性能、无缝的开发者体验以及与其他框架和工具集成的能力。\n\
+    \n本章的一些要点包括：\n\n* **岛屿 (Islands)**。Astro 的岛屿架构允许我们创建交互性岛屿——在应用程序需要的地方和时候加载 JavaScript。\n\
+    *   **项目结构**。我们对 Astro 项目的项目结构的概述展示了 Astro 项目中常见的关键文件和文件夹。\n*   **文件剖析**。我们探索了\
+    \ `.astro` 文件的剖析，讨论了典型的 `.astro` 文件的脚本部分和模板部分看起来是什么。\n*   **样式化**。我们简要提到了如何在 Astro\
+    \ 中使用样式。\n\n这个 Astro 系列的第一章就到此了。现在我们已经涵盖了基本概念，接下来将查看 Astro 的渲染选项和布局方案。\n\n# 第\
+    \ 2 章：Astro 中的渲染选项：构建布局\n\n在之前的教程中，我们查看了 Astro 的基础知识：它的文件夹结构、组件如何工作以及样式化如何工作。\n\
+    \n本教程将重点关注布局（Layouts）以及 Astro 提供的各种渲染选项。渲染在任何 Web 中都起着至关重要的作用，因为它的目标是将最终输出显示给最终用户。通过\
+    \ Astro，我们可以灵活地在两种主要的渲染模式之间选择：**静态站点生成** (SSG) 和**服务器端渲染** (SSR)。前者适合在构建过程中生成高度优化的预构建\
+    \ HTML，从而实现极快的加载速度和 SEO 友好的网站。后者允许在服务器上生成动态内容，在性能和灵活性之间取得平衡。\n\n## Astro 中的布局\n\
+    \n虽然每个 `.astro` 页面（路由）都有包含完整 HTML 文档的潜力，但重复这种结构是效的，特别是当某些元素——例如 `<meta>` 和 `<title>`\
+    \ 元素可能会根据当前查看的页面而变化时。（低效源于我们可能需要向每个 `.astro` 页面添加相同的 HTML 结构。）\n\n因此，建议建立一个可在所有页面使用的总览布局。虽然不是强制的，但在\
+    \ `src/layouts` 文件夹中组织布局文件是有意义的，这允许添加多个布局文件——例如一个用于导航，另一个用于页脚，甚至为页面的部分拆分布局（例如，为整个页面和博客分开设置布局）。\n\
+    \n考虑以下内容作为包含常用 UI 元素的基础网站示例：\n\n* `layouts/Layout.astro`：主布局文件\n* `layouts/Head.astro`：用于自定义\
+    \ `<head>` 元素的部分，每个页面可能唯一\n* `layouts/Nav.astro`：导航栏\n* `layouts/Footer.astro`：页脚部分\n\
+    \n![页面上的常用 UI 元素](img/2_4.png)\n\n这里是 `layouts/Layout.astro` 文件的预览：\n\n```astro\n\
+    ---\nimport Head from './Head.astro';\nimport Nav from './Nav.astro';\nconst {\n\
+    \  title = 'Footie is the best',\n  description = 'An online football magazine',\n\
+    } = Astro.props;\n\nimport Footer from './Footer.astro';\n---\n\n<html lang=\"\
+    en\">\n  <title>{title}</title>\n  <meta name=\"description\" content={description}>\n\
+    \  <body>\n    <Nav />\n    <div>\n      <main>\n        <slot />\n      </main>\n\
+    \    </div>\n    <Footer />\n  </body>\n</html>\n```\n\n#### 混合 HTML 元素与 Astro\
+    \ 组件\n\n注意在上面的例子中，我们混合了 HTML 元素和 Astro 组件。大写的那些（`Nav` 和 `Footer`）是位于布局文件顶部的 Astro\
+    \ 组件。\n\n### Astro.props\n\n这里有几个要点。注意 `import` 函数和 `Astro.props` 的用法。特殊的内置 `Astro.props`\
+    \ 对象允许我们向组件发送属性并访问它们。当 `Astro.props` 缺少 `title` 或 `description` 键时，会设置默认值（`Footie\
+    \ is the best` 和 `An football magazine`）。这是良好的做法，我们利用了 JavaScript 的默认参数。但是，如果发送了\
+    \ props，Astro 会获取它们。让我们通过查看下面的代码来看：\n\n```js\n<!-- 使用默认值 -->\n<Layout />\n\n<!--\
+    \ 将 title 设置为 \"My Title\"，description 保持默认值 -->\n<Layout title=\"My Title\" />\n\
+    ```\n\n第一个 `<Layout />` 组件没有任何 `props`，因此它将诉诸之前提到的默认值。在第二种情况下，发送了值为 `My Title`\
+    \ 的 `title` prop，这意味着页面将显示正确的标题。\n\n#### 全局对象属性\n\n从内置全局对象 [Astro](https://docs.astro.build/en/reference/api-reference/#astro-global)\
+    \ 可以获得多个属性。\n\n最后，注意 `<slot />` 元素，它是来自 `.astro` 页面内容的插入点。稍后详细介绍。\n\n### Slot\n\
+    \n让我们再多谈谈内置的 `<slot />` 元素。一旦布局就绪，`src/pages` 文件夹中 Astro 文件的内容将插入到上述元素所在的位置。\n\
+    \n请同时也注意 `<Head>` Astro 组件。假设属性和持有我们要发送到属性的变量具有相同的名称。在这种情况下，我们可以采用更简单的语法：\n\n\
+    ```js\nconst title = 'my title';\n\n<Head title={title} />\n<!-- 可以简化为 \U0001F447\
+    \ -->\n<Head {title} />\n```\n\n"
+- fmt: "\nTo apply a layout to an `Astro` file, we need to import it and use it as\
+    \ we’d use any other component:\n\n```\n---\nimport Layout from '../layouts/Layout.astro';\n\
+    ---\n<Layout title=\"Welcome\">\n  <p>Some content that will be injected into\
+    \ the \"slot\"</p>\n</Layout>\n```\n\n## Components\n\nApart from layout components,\
+    \ a recommended practice is to create a `src/components` folder for storing various\
+    \ components. In Astro, we can include components of any “type”—including both\
+    \ `.astro` and `.jsx` components, for example. One of the powerful features of\
+    \ Astro is that a component created in another framework can be added.\n\nTo do\
+    \ this, we first need to install the appropriate integration. (For React, it would\
+    \ be `@astrojs/react`, as explained [in the docs](https://docs.astro.build/en/guides/integrations-guide/react/).)\
+    \ After the installation, we can take a look at an example of adding a React component\
+    \ to Astro:\n\n```javascript\nimport { useState } from 'react';\n\nconst Counter\
+    \ = () => {\n  const [counter, setCounter] = useState(0);\n\n  const increment\
+    \ = () => {\n    setCounter(counter + 1);\n  };\n\n  const decrement = () => {\n\
+    \    setCounter(counter - 1);\n  };\n\n  return (\n    <div>\n      <h1>Counter:\
+    \ {counter}</h1>\n      <button onClick={increment}> + </button>\n      <button\
+    \ onClick={decrement}> - </button>\n    </div>\n  );\n};\n\nexport default Counter;\n\
+    ```\n\nThe code above is a React component with a counter that can be incremented\
+    \ and decremented. Let’s add this to Astro now:\n\n```astro\n---\nimport Counter\
+    \ from '../components/Counter.jsx';\n---\n<Counter client:only=\"react\" />\n\
+    ```\n\nNotice `client:only=\"react\"`, which is one of the [client directives](https://docs.astro.build/en/reference/directives-reference/).\
+    \ There are multiple ways to use these, and we’ll get back to them at the end\
+    \ of this chapter.\n\n## Routing\n\nAs previously discussed, Astro routing revolves\
+    \ around files in the `src/pages` folder. In this chapter, we’ll cover three types\
+    \ of routes: static routes, dynamic routes, and server endpoints (API routes).\n\
+    \n### Static Routes\n\nStatic routes are pretty straightforward: `.astro` files\
+    \ become routes in the `src/pages` folder. For example:\n\n* `src/pages/about.astro`\
+    \ becomes `example.com/about`\n* `src/pages/destinations/london.astro` becomes\
+    \ `example.com/destinations/london`\n\nPlease recall from the previous chapter\
+    \ that `.md`, `.mdx`, and `.html` files can also generate routes. For instance,\
+    \ `/src/pages/hello.md` becomes `example.com/hello`.\n\n### Dynamic Routes\n\n\
+    Dynamic routes are helpful when it’s impractical to manually create routes due\
+    \ to dynamic changes. For example, what if we’re working on a page that lists\
+    \ destinations, and there are over 100 destinations (or an unknown number of them)?\
+    \ Creating individual `.astro` files for each possible route combination isn’t\
+    \ viable.\n\nInstead, we can instruct Astro to use dynamic routes: `src/pages/[destination]`\
+    \ would then become `src/pages/*`, effectively handling all potential variations\
+    \ such as `example.com/london`, `example.com/singapore` and so on. (Note that\
+    \ the route actually requires the `[]` characters.)\n\nTo facilitate dynamic routes,\
+    \ Astro requires some information on how to generate files for dynamic routes.\
+    \ This is achieved through the built-in `getStaticPaths()` method. It returns\
+    \ an array of objects, each containing a mandatory `params` object. This object\
+    \ should match the dynamic route definition (such as `destination` in our case):\n\
+    \n```astro\n---\nconst { destination } = Astro.params;\n\nexport function getStaticPaths()\
+    \ {\n  const destinations = [\n    'london',\n    'rome',\n    'sanfrancisco',\n\
+    \    'singapore',\n    'cairo',\n    'medellin',\n  ];\n  // ☝\U0001F3FC remember,\
+    \ since this JavaScript is executed on the server, we could pull this data from\
+    \ a REST API endpoint as well\n  return destinations.map((destination) => ({ params:\
+    \ { destination } }));\n}\n---\n<h1>Welcome to: {destination}</h1>\n```\n\nFor\
+    \ situations where multiple parameters need to be handled (such as `/src/pages/[city]-[country].astro`),\
+    \ we can pass multiple props to the params object:\n\n```javascript\nreturn [{\
+    \ params: { city: 'london', country: 'uk' } }];\n```\n\n#### 404 Pages\n\nIf there’s\
+    \ a page that doesn’t match a route, Astro will generate a 404 page. Customizing\
+    \ the content of this page is possible by creating a `404.astro` page in the `src/pages`\
+    \ folder.\n\n#### Rest Params\n\nAstro also supports rest parameters in dynamic\
+    \ URL routing, as seen in `src/pages/destinations/[...path].astro`. This offers\
+    \ greater flexibility. For example, we could match a path with any combination\
+    \ such as `example.com/destinations/london` and `example.com/london` as well as\
+    \ `example.com/destinations/favourites/rome`.\n\n#### Path Undefined\n\nReturning\
+    \ `{params: { path: undefined }}` in `getSTaticPaths()` effectively matches `example.com/destinations/`.\n\
+    \n## Server-side Rendering\n\nBefore we continue with our discussion on routing,\
+    \ let’s divert a little bit to discuss another very important aspect of Astro:\
+    \ server-side rendering.\n\nTo recap, the default behavior of Astro is static\
+    \ site generation. This means that all the pages are built during build time.\
+    \ However, there can be situations when this isn’t the right approach; things\
+    \ that are dynamic in nature require server-side rendering. Imagine we had a small\
+    \ ecommerce site, and after each successful purchase we had to rebuild our entire\
+    \ site to show a modified stock count for a product. This wouldn’t only be unviable,\
+    \ but there would be times when incorrect stock information would be shown. Server-side\
+    \ rendering solves this problem, because the page content is rendered at the request\
+    \ time, which means that the most up-to-date information can arrive from the server.\n\
+    \nEarlier we talked about the `astro.config.mjs` file before. This is the place\
+    \ where we can switch on server-side rendering:\n\n```javascript\nimport { defineConfig\
+    \ } from 'astro/config';\nimport nodejs from '@astrojs/node';\n\nexport default\
+    \ defineConfig({\n  output: 'server',\n  adapter: nodejs(),\n});\n```\n\n`output:\
+    \ 'server'` is the key here, but also take note of the `adapter` setting. An adapter\
+    \ is needed because server-side rendering requires a runtime where server-side\
+    \ code is going to be executed.\n\n#### Adding the Node Adapter\n\nWe also need\
+    \ to run the `npx astro add node` command to install and let Astro automatically\
+    \ configure the `nodejs()` adapter for our project.\n\nThe key takeaway here is\
+    \ that, with this setting, we’re now switching off Astro’s default static rendering\
+    \ mechanism and swapping it out for server-side rendering—for all the pages.\n\
+    \nBut what if we have pages where we don’t want to utilize SSR? Luckily, Astro\
+    \ allows us to selectively turn off SSR and re-enable the default rendering behavior\
+    \ on a per-route basis. Make sure the following is added on the top of any page\
+    \ route:\n\n```astro\n---\nexport const prerender = true;\n---\n<p>This page is\
+    \ pre-rendered at build time</p>\n```\n\n### Hybrid Rendering\n\nEven better,\
+    \ we can do the same, but in reverse, so to speak: as opposed to setting the `output:\
+    \ 'server'` option, we can set `output: 'hybrid'`, which means that the default\
+    \ behavior is kept (static site generation at build time), and then we can add\
+    \ the following to page routes where we explicitly want to have SSR enabled:\n\
+    \n```astro\n---\nexport const prerender = false;\n---\n<p>This is now server-rendered</p>\n\
+    ```\n\n## Server-side Rendering Routes\n\nNow let’s continue our discussion on\
+    \ routes. For server-side rendered pages, `getStaticPaths()` shouldn’t be used,\
+    \ as the content is rendered at request time, not at build time.\n\n### Endpoints\n"
+  raw: "To apply a layout to an Astro file, we need to import it and use it as we’d\
+    \ use any other component:\n\n```\n---\nimport Layout from '../layouts/Layout.astro';\n\
+    ---\n<Layout title=\"Welcome\">\n  <p>Some content that will be injected into\
+    \ the \"slot\"</p>\n</Layout>\n```\n\n## Components\n\nApart from layout components,\
+    \ a recommended practice is to create a `src/components` folder for storing various\
+    \ components. In Astro, we can include components of any “type”—including both\
+    \ `.astro` and `.jsx` components, for example. One of the powerful features of\
+    \ Astro is that a component created in another framework can be added.\n\nTo do\
+    \ this, we first need to install the appropriate integration. (For React, it would\
+    \ be `@astrojs/react`, as explained [in the docs](https://docs.astro.build/en/guides/integrations-guide/react/).)\
+    \ After the installation, we can take a look at an example of adding a React component\
+    \ to Astro:\n\n```\nimport { useState } from 'react';\n\nconst Counter = () =>\
+    \ {\n  const [counter, setCounter] = useState(0);\n\n  const increment = () =>\
+    \ {\n    setCounter(counter + 1);\n  };\n\n  const decrement = () => {\n    setCounter(counter\
+    \ - 1);\n  };\n\n  return (\n    <div>\n      <h1>Counter: {counter}</h1>\n  \
+    \    <button onClick={increment}> + </button>\n      <button onClick={decrement}>\
+    \ - </button>\n    </div>\n  );\n};\n\nexport default Counter;\n```\n\nThe code\
+    \ above is a React component with a counter that can be incremented and decremented.\
+    \ Let’s add this to Astro now:\n\n```\n---\nimport Counter from '../components/Counter.jsx';\n\
+    ---\n<Counter client:only=\"react\" />\n```\n\nNotice `client:only=\"react\"`,\
+    \ which is one of the [client directives](https://docs.astro.build/en/reference/directives-reference/).\
+    \ There are multiple ways to use these, and we’ll get back to them at the end\
+    \ of this chapter.\n\n## Routing\n\nAs previously discussed, Astro routing revolves\
+    \ around files in the `src/pages` folder. In this chapter, we’ll cover three types\
+    \ of routes: static routes, dynamic routes, and server endpoints (API routes).\n\
+    \n### Static Routes\n\nStatic routes are pretty straightforward: `.astro` files\
+    \ become routes in the `src/pages` folder. For example:\n\n*   `src/pages/about.astro`\
+    \ becomes `example.com/about`\n\n*   `src/pages/destinations/london.astro` becomes\
+    \ `example.com/destinations/london`\n\nPlease recall from the previous chapter\
+    \ that `.md`, `.mdx`, and `.html` files can also generate routes. For instance,\
+    \ `/src/pages/hello.md` becomes `example.com/hello`.\n\n### Dynamic Routes\n\n\
+    Dynamic routes are helpful when it’s impractical to manually create routes due\
+    \ to dynamic changes. For example, what if we’re working on a page that lists\
+    \ destinations, and there are over 100 destinations (or an unknown number of them)?\
+    \ Creating individual `.astro` files for each possible route combination isn’t\
+    \ viable.\n\nInstead, we can instruct Astro to use dynamic routes: `src/pages/[destination]`\
+    \ would then become `src/pages/*`, effectively handling all potential variations\
+    \ such as `example.com/london`, `example.com/singapore` and so on. (Note that\
+    \ the route actually requires the `[]` characters.)\n\nTo facilitate dynamic routes,\
+    \ Astro requires some information on how to generate files for dynamic routes.\
+    \ This is achieved through the built-in `getStaticPaths()` method. It returns\
+    \ an array of objects, each containing a mandatory `params` object. This object\
+    \ should match the dynamic route definition (such as `destination` in our case):\n\
+    \n```\n---\nconst { destination } = Astro.params;\n\nexport function getStaticPaths()\
+    \ {\n  const destinations = [\n    'london',\n    'rome',\n    'sanfrancisco',\n\
+    \    'singapore',\n    'cairo',\n    'medellin',\n  ];\n  // ☝\U0001F3FC remember,\
+    \ since this JavaScript is executed on the server, we could pull this data from\
+    \ a REST API endpoint as well\n  return destinations.map((destination) => ({ params:\
+    \ { destination } }));\n}\n---\n<h1>Welcome to: {destination}</h1>\n```\n\nFor\
+    \ situations where multiple parameters need to be handled (such as `/src/pages/[city]-[country].astro`),\
+    \ we can pass multiple props to the params object:\n\n```\nreturn [{ params: {\
+    \ city: 'london', country: 'uk' } }];\n```\n\n#### 404 Pages\n\nIf there’s a page\
+    \ that doesn’t match a route, Astro will generate a 404 page. Customizing the\
+    \ content of this page is possible by creating a `404.astro` page in the `src/pages`\
+    \ folder.\n\n### Rest Params\n\nAstro also supports rest parameters in dynamic\
+    \ URL routing, as seen in `src/pages/destinations/[...path].astro`. This offers\
+    \ greater flexibility. For example, we could match a path with any combination\
+    \ such as `example.com/destinations/london` and `example.com/london` as well as\
+    \ `example.com/destinations/favourites/rome`.\n\n#### Path Undefined\n\nReturning\
+    \ `{params: { path: undefined }}` in `getSTaticPaths()` effectively matches `example.com/destinations/`.\n\
+    \n## Server-side Rendering\n\nBefore we continue with our discussion on routing,\
+    \ let’s divert a little bit to discuss another very important aspect of Astro:\
+    \ server-side rendering.\n\nTo recap, the default behavior of Astro is static\
+    \ site generation. This means that all the pages are built during build time.\
+    \ However, there can be situations when this isn’t the right approach; things\
+    \ that are dynamic in nature require server-side rendering. Imagine we had a small\
+    \ ecommerce site, and after each successful purchase we had to rebuild our entire\
+    \ site to show a modified stock count for a product. This wouldn’t only be unviable,\
+    \ but there would be times when incorrect stock information would be shown. Server-side\
+    \ rendering solves this problem, because the page content is rendered at the request\
+    \ time, which means that the most up-to-date information can arrive from the server.\n\
+    \nEarlier we talked about the `astro.config.mjs` file before. This is the place\
+    \ where we can switch on server-side rendering:\n\n```\nimport { defineConfig\
+    \ } from 'astro/config';\nimport nodejs from '@astrojs/node';\n\nexport default\
+    \ defineConfig({\n  output: 'server',\n  adapter: nodejs(),\n});\n```\n\n`output:\
+    \ 'server'` is the key here, but also take note of the `adapter` setting. An adapter\
+    \ is needed because server-side rendering requires a runtime where our server-side\
+    \ code is going to be executed. For development purposes, using the `nodejs()`\
+    \ adapter is fine, but Astro can be configured with [many other adapters](https://astro.build/integrations/?search=&categories%5B%5D=adapters),\
+    \ including but not limited to Netlify, Vercel and Cloudflare.\n\n#### Adding\
+    \ the Node Adapter\n\nWe also need to run the `npx astro add node` command to\
+    \ install and let Astro automatically configure the `nodejs()` adapter for our\
+    \ project.\n\nThe key takeaway here is that, with this setting, we’re now switching\
+    \ off Astro’s default static site rendering mechanism and swapping it out for\
+    \ server-side rendering—for all the pages.\n\nBut what if we have pages where\
+    \ we don’t want to utilize SSR? Luckily, Astro allows us to selectively turn off\
+    \ SSR and re-enable the default rendering behavior on a per-route basis. Make\
+    \ sure the following is added on the top of any such page route:\n\n```\n---\n\
+    export const prerender = true;\n---\n<p>This page is pre-rendered at build time<p>\n\
+    ```\n\n### Hybrid Rendering\n\nEven better, we can do the same, but in reverse,\
+    \ so to speak: as opposed to setting the `output: 'server'` option, we can set\
+    \ `output: 'hybrid'`, which means that the default behavior is kept (static site\
+    \ generation at build time), and then we can add the following to page routes\
+    \ where we explicitly want to have SSR enabled:\n\n```\n---\nexport const prerender\
+    \ = false;\n---\n<p>This is now server-rendered</p>\n```\n\n## Server-side Rendering\
+    \ Routes\n\nNow let’s continue our discussion on routes. For server-side rendered\
+    \ pages, `getStaticPaths()` shouldn’t be used, as the content is rendered at request\
+    \ time, not at build time.\n\n### Endpoints"
+  toc: []
+  trans: "\n要将布局应用到 `Astro` 文件，我们需要导入它并像使用其他组件一样使用它：\n\n```\n---\nimport Layout from\
+    \ '../layouts/Layout.astro';\n---\n<Layout title=\"Welcome\">\n  <p>一些将注入到“插槽”中的内容</p>\n\
+    </Layout>\n```\n\n## Components\n\n除了布局组件外，推荐的做法是创建一个 `src/components` 文件夹来存储各种组件。在\
+    \ Astro 中，我们可以包含任何“类型”的组件——例如，同时包含 `.astro` 和 `.jsx` 组件。Astro 的强大功能之一是它可以添加在其他框架中创建的组件。\n\
+    \n要做到这一点，我们首先需要安装相应的集成方案。（对于 React，将使用 `@astrojs/react`，正如[文档中](https://docs.astro.build/en/guides/integrations-guide/react/)所解释的那。）安装完成后，我们可以查看一个将\
+    \ React 组件添加到 Astro 的示例：\n\n```javascript\nimport { useState } from 'react';\n\
+    \nconst Counter = () => {\n  const [counter, setCounter] = useState(0);\n\n  const\
+    \ increment = () => {\n    setCounter(counter + 1);\n  };\n\n  const decrement\
+    \ = () => {\n    setCounter(counter - 1);\n  };\n\n  return (\n    <div>\n   \
+    \   <h1>Counter: {counter}</h1>\n      <button onClick={increment}> + </button>\n\
+    \      <button onClick={decrement}> - </button>\n    </div>\n  );\n};\n\nexport\
+    \ default Counter;\n```\n\n上面的代码是一个带有计数器的 React 组件，计数器可以增加和减少。现在让我们把它添加到 Astro\
+    \ 中：\n\n```astro\n---\nimport Counter from '../components/Counter.jsx';\n---\n\
+    <Counter client:only=\"react\" />\n```\n\n注意 `client:only=\"react\"`，它是[客户端指令](https://docs.astro.build/en/reference/directives-reference/)\
+    \ 之一。有多种方法使用这些指令，我们将在本章末尾再讨论它们。\n\n## Routing\n\n正如之前讨论的，Astro 路由围绕 `src/pages`\
+    \ 文件夹中的文件展开。在本章中，我们将涵盖三类型的路由：静态路由、动态路由和服务器端点（API 路由）。\n\n### Static Routes\n\n\
+    静态路由非常直观：`.astro` 文件变为 `src/pages` 文件夹中的路由。例如：\n\n* `src/pages/about.astro` 变为\
+    \ `example.com/about`\n* `src/pages/destinations/london.astro` 变为 `example.com/destinations/london`\n\
+    \n请回想上一章，`.md`、`.mdx` 和 `.html` 文件也可以生成路由。例如，`/src/pages/hello.md` 变为 `example.com/hello`。\n\
+    \n### Dynamic Routes\n\n当由于动态变化无法手动创建路由时，动态路由会非常有用。例如，如果我们正在制作一个列出目的地的页面，而有 100\
+    \ 多个目的地（或者数量未知），该怎么办？为每种可能的路由组合创建单独的 `.astro` 文件是不可行的。\n\n相反，我们可以指示 Astro 使用动态路由：`src/pages/[destination]`\
+    \ 将会变为 `src/pages/*`，从而有效地处理所有潜在的变体，例如 `example.com/london`、`example.com/singapore`\
+    \ 等。（注意，路由实际上需要 `[]` 字符。）\n\n为了方便动态路由，Astro 需要一些关于如何为动态路由生成文件的信息。这是通过内置的 `getStaticPaths()`\
+    \ 方法实现的。它返回一个对象数组，每个对象包含一个强制性的 `params` 对象。该对象应该匹配动态路由定义（在我们的案例中为 `destination`）：\n\
+    \n```astro\n---\nconst { destination } = Astro.params;\n\nexport function getStaticPaths()\
+    \ {\n  const destinations = [\n    'london',\n    'rome',\n    'sanfrancisco',\n\
+    \    'singapore',\n    'cairo',\n    'medellin',\n  ];\n  // ☝\U0001F3FC记住，由于这段\
+    \ JavaScript 是在服务器上执行的，我们也可以从 REST API 端点拉取这些数据\n  return destinations.map((destination)\
+    \ => ({ params: { destination } }));\n}\n---\n<h1>Welcome to: {destination}</h1>\n\
+    ```\n\n对于需要处理多个参数的情况（例如 `/src/pages/[city]-[country].astro`），我们可以向 `params` 对象传递多个\
+    \ prop：\n\n```javascript\nreturn [{ params: { city: 'london', country: 'uk' }\
+    \ }];\n```\n\n#### 404 Pages\n\n如果存在一个不匹配路由的页面，Astro 将生成一个 404 页面。通过在 `src/pages`\
+    \ 文件夹中创建 `404.astro` 页面，可以自定义该页的内容。\n\n#### Rest Params\n\nAstro 在动态 URL 路由中也支持剩余参数，如\
+    \ `src/pages/destinations/[...path].astro` 所示。这提供了更大的灵活性。例如，我们可以匹配任何组合的路径，如 `example.com/destinations/london`\
+    \ 和 `example.com/london` 以及 `example.com/destinations/favourites/rome`。\n\n####\
+    \ Path Undefined\n\n在 `getStaticPaths()` 中返回 `{params: { path: undefined }}` 可以有效匹配\
+    \ `example.com/destinations/`。\n\n## Server-side Rendering\n\n在我们继续讨论路由之前，让我们稍微转向讨论\
+    \ Astro 的另一个非常重要的方面：服务器端渲染。\n\n回顾一下，Astro 的默认行为是静态站点生成。这意味着所有页面都在构建期间期间生成。然而，在某些情况下这种方法并不适用；动态性质的内容需要服务器端渲染。假设我们有一个小型电子商务网站，每次购买后我们都必须重建整个网站来显示修改后的库存。这不仅不可行，而且会出现显示错误库存信息的情况。服务器端渲染解决了这个问题，因为页面内容是在请求时渲染的，这意味着可以获取最新的信息。\n\
+    \n之前我们提到了 `astro.config.mjs` 文件。这是我们开启服务器端渲染的地方：\n\n```javascript\nimport { defineConfig\
+    \ } from 'astro/config';\nimport nodejs from '@astrojs/node';\n\nexport default\
+    \ defineConfig({\n  output: 'server',\n  adapter: nodejs(),\n});\n```\n\n`output:\
+    \ 'server'` 是这里的关键，但请注意 `adapter` 设置。服务器端渲染需要一个执行服务器端代码的运行时。\n\n#### Adding the\
+    \ Node Adapter\n\n我们还需要运行 `npx astro add node` 命令来安装并让 Astro 自动为项目配置 `nodejs()`\
+    \ 适配器。\n\n这里的关键在于通过此设置，我们现在关闭了 Astro 默认的静态渲染机制，将其替换为服务器端渲染——针对所有页面。\n\n但如果我们某些页面不需要\
+    \ SSR 呢？幸运 Astro 允许我们根据路由选择地关闭 SSR。确保在任何页面路由顶部添加以下内容：\n\n```astro\n---\nexport\
+    \ const prerender = true;\n---\n<p>此页面在构建期间进行预渲染</p>\n```\n\n### Hybrid Rendering\n\
+    \n甚至更好，我们可以反向操作，可以这么说：与设置 `output: 'server'` 相反，我们可以设置 `output: 'hybrid'`，这意味着保留默认行为（构建期间的静态站点生成），然后在显式启用\
+    \ SSR 的页面路由添加以下内容：\n\n```astro\n---\nexport const prerender = false;\n---\n<p>此页面现在是服务器渲染的</p>\n\
+    ```\n\n## Server-side Rendering Routes\n\n现在让我们继续讨论路由。对于服务器端渲染的页面，不应使用 `getStaticPaths()`，因为内容是在请求时渲染的，而不是在构建期间。\n\
+    \n### Endpoints\n\n"
+- fmt: "\nThere are two types of endpoints in Astro: Static and API/Server. Static\
+    \ endpoints can be created by adding `.js` or `.ts` files to the `src/pages` directory,\
+    \ which will be called at build time to produce static files. It should also be\
+    \ noted that, during the build process, the extensions are removed. So, for example,\
+    \ `src/pages/destinations.json.js` will become `/destinations.json`.\n\nEndpoints\
+    \ have access to both the `request` and `params` objects, and they should export\
+    \ a `GET` function. Furthermore, dynamic routes are also supported (via the `[]`\
+    \ file naming notation). Recreating an earlier example to be an endpoint using\
+    \ `getStaticPaths()` would look like this:\n\n```\n// src/pages/api/[destination].json.js\n\
+    const destinations = [\n  'london',\n  'rome',\n  'sanfrancisco',\n  'singapore',\n\
+    \  'cairo',\n  'medellin',\n];\n\nexport const GET = ({ params }) => {\n  const\
+    \ { destination } = params;\n  const [myDestination] = destinations.filter(\n\
+    \    (destination) => destination === destination\n  );\n  return new Response(\n\
+    \    JSON.stringify({\n      destination: myDestination,\n    })\n  );\n};\n\n\
+    export function getStaticPaths() {\n  return destinations.map((destination) =>\
+    \ {\n    return {\n      params: {\n        destination,\n      },\n    };\n \
+    \ });\n}\n```\n\n### Using the api Folder\n\nNote that using the `api` folder\
+    \ isn’t mandatory, but it also provides a good separation of concerns, and it’s\
+    \ highly recommended that we use it for storing API endpoints.\n\n### Accessing\
+    \ the request Object\n\nThe endpoint also has access to the `request` object,\
+    \ but in static mode `request.url` is the only available property from that object.\n\
+    \n### Server Endpoints\n\nTo create server endpoints (API routes), we need to\
+    \ enable SSR mode in Astro’s configuration file.\n\nAdding a `.js` or `.ts` file\
+    \ to the pages directory creates REST API endpoints that can not only operate\
+    \ with `GET` methods but also have access to all other CRUD methods (`POST`, `PUT`,\
+    \ `DELETE`).\n\n### Handling GET, POST and DELETE Requests\n\nFor handling HTTP\
+    \ delete requests, use `del` in Astro, as `delete` is a JavaScript built-in keyword.\n\
+    \nHere’s an example illustrating how to handle HTTP `GET`, `POST` and `DELETE`\
+    \ requests in Astro. The `GET` method accepts parameters (note how the route is\
+    \ defined: `src/pages/api/[id].json.js`). Since we have `[id]` in the route, we\
+    \ can destructure the `params` object and retrieve the value of `id`. The rest\
+    \ of the code in the `GET` method makes a hypothetical database lookup and returns\
+    \ a response with the queried data.\n\nThe `POST` method checks if the `Authorization`\
+    \ header was sent as part of the request. If it wasn’t, we return an HTTP status\
+    \ code of 401 (Unauthorized). (Note that we’re simplifying the code here and authentication/authorization\
+    \ requires more steps). If everything’s fine, we parse the data sent as part of\
+    \ the request and do a hypothetical database insert and return a success 201 message:\n\
+    \n```\n// src/pages/api/[id].json.js\nimport { getCityData, addCity } from './fake-db.js';\n\
+    \nexport const GET = async ({ params }) => {\n  const { id } = params;\n  const\
+    \ cityData = await getCityData(id);\n  return new Response(JSON.stringify(cityData),\
+    \ {\n    status: 200,\n    headers: {\n      'Content-Type': 'application/json',\n\
+    \    },\n  });\n};\n\nexport const POST = async ({ request }) => {\n  if (!request.headers.get('Authorization'))\
+    \ {\n    return new Response(null, { status: 401 });\n  }\n  const body = await\
+    \ request.json();\n  const city = body.city;\n  await addCity(city);\n  return\
+    \ new Response(\n    JSON.stringify({\n      message: 'City added',\n    }),\n\
+    \    {\n      status: 201,\n    }\n  );\n};\n\nexport const DEL = ({ request })\
+    \ => {\n  // Handle HTTP delete\n};\n```\n\n### Using the request Object\n\nNote\
+    \ that it’s important to use the `request` object to its fullest to achieve authorization\
+    \ and to accept incoming data—which could come from a form.\n\n## Hydration of\
+    \ Interactive Components\n\nIn the previous chapter we talked about Astro’s island\
+    \ architecture, which basically is a way to break down a web application into\
+    \ isolated islands that are each responsible for rendering specific parts of the\
+    \ page. Furthermore, this architecture can also dictate which elements require\
+    \ JavaScript to be loaded.\n\nThe last thing we’ll discuss in this chapter is\
+    \ how Astro hydrates interactive components. With Astro, we can control when and\
+    \ how client-side JavaScript is loaded.\n\n### Summary of Hydration Strategies\n\
+    \n- `client:load`: This option has high priority and is suitable for crucial elements.\
+    \ The JavaScript is loaded during the initial load.\n- `client:idle`: This option\
+    \ has medium priority and is perfect for components that can afford to wait until\
+    \ the browser fires `requestIdle`.\n- `client:visible`: This low-priority choice\
+    \ is ideal for components initially hidden from view. The JavaScript is loaded\
+    \ when it becomes visible.\n- `client:media`: This is best suited for components\
+    \ visible only under specific screen sizes. The JavaScript is loaded when the\
+    \ specified media query triggers.\n- `client:only`: This attribute bypasses HTML\
+    \ rendering and exclusively renders on the client. However, we must specify the\
+    \ framework to load.\n"
+  raw: "There are two types of endpoints in Astro: Static and API/Server. Static endpoints\
+    \ can be created by adding `.js` or `.ts` files to the `src/pages` directory,\
+    \ which will be called at build time to produce static files. It should also be\
+    \ noted that, during the build process, the extensions are removed. So, for example,\
+    \ `src/pages/destinations.json.js` will become `/destinations.json`.\n\nEndpoints\
+    \ have access to both the `request` and `params` objects, and they should export\
+    \ a `GET` function. Furthermore, dynamic routes are also supported (via the `[]`\
+    \ file naming notation). Recreating an earlier example to be an endpoint using\
+    \ `getStaticPaths()` would look like this:\n\n```\n// src/pages/api/[destination].json.js\n\
+    const destinations = [\n  'london',\n  'rome',\n  'sanfrancisco',\n  'singapore',\n\
+    \  'cairo',\n  'medellin',\n];\n\nexport const GET = ({ params }) => {\n  const\
+    \ { destination } = params;\n  const [myDestination] = destinations.filter(\n\
+    \    (destination) => destination === destination\n  );\n  return new Response(\n\
+    \    JSON.stringify({\n      destination: myDestination,\n    })\n  );\n};\n\n\
+    export function getStaticPaths() {\n  return destinations.map((destination) =>\
+    \ {\n    return {\n      params: {\n        destination,\n      },\n    };\n \
+    \ });\n}\n```\n\n#### Using the api Folder\n\nNote that using the `api` folder\
+    \ isn’t mandatory, but it also provides a good separation of concerns, and it’s\
+    \ highly recommended that we use it for storing API endpoints.\n\n#### Accessing\
+    \ the request Object\n\nThe endpoint also has access to the `request` object,\
+    \ but in static mode `request.url` is the only available property from that object.\n\
+    \n#### Server Endpoints\n\nTo create server endpoints (API routes), we need to\
+    \ enable SSR mode in Astro’s configuration file.\n\nAdding a `.js` or `.ts` file\
+    \ to the pages directory creates REST API endpoints that can not only operate\
+    \ with `GET` methods but also have access to all other CRUD methods (`POST`, `PUT`,\
+    \ `DELETE`).\n\n#### Handling GET, POST and DELETE Requests\n\nFor handling HTTP\
+    \ delete requests, use `del` in Astro, as `delete` is a JavaScript built-in keyword.\n\
+    \nHere’s an example illustrating how to handle HTTP `GET`, `POST` and `DELETE`\
+    \ requests in Astro. The `GET` method accepts parameters (note how the route is\
+    \ defined: `src/pages/api/[id].json.js`). Since we have `[id]` in the route, we\
+    \ can destructure the `params` object and retrieve the value of `id`. The rest\
+    \ of the code in the `GET` method makes a hypothetical database lookup and returns\
+    \ a response with the queried data.\n\nThe `POST` method checks if the `Authorization`\
+    \ header was sent as part of the request. If it wasn’t, we return an HTTP status\
+    \ code of 401 (Unauthorized). (Note that we’re simplifying the code here and authentication/authorization\
+    \ requires more steps). If everything’s fine, we parse the data sent as part of\
+    \ the request and do a hypothetical database insert and return a success 201 message:\n\
+    \n```\n// src/pages/api/[id].json.js\nimport { getCityData, addCity } from './fake-db.js';\n\
+    \nexport const GET = async ({ params }) => {\n  const { id } = params;\n  const\
+    \ cityData = await getCityData(id);\n  return new Response(JSON.stringify(cityData),\
+    \ {\n    status: 200,\n    headers: {\n      'Content-Type': 'application/json',\n\
+    \    },\n  });\n};\n\nexport const POST = async ({ request }) => {\n  if (!request.headers.get('Authorization'))\
+    \ {\n    return new Response(null, { status: 401 });\n  }\n  const body = await\
+    \ request.json();\n  const city = body.city;\n  await addCity(city);\n  return\
+    \ new Response(\n    JSON.stringify({\n      message: 'City added',\n    }),\n\
+    \    {\n      status: 201,\n    }\n  );\n};\n\nexport const DEL = ({ request })\
+    \ => {\n  // Handle HTTP delete\n};\n```\n\n#### Using the request Object\n\n\
+    Note that it’s important to use the `request` object to its fullest to achieve\
+    \ authorization and to accept incoming data—which could come from a form.\n\n\
+    ## Hydration of Interactive Components\n\nIn the previous chapter we talked about\
+    \ Astro’s island architecture, which basically is a way to break down a web application\
+    \ into isolated islands that are each responsible for rendering specific parts\
+    \ of the page. Furthermore, this architecture can also dictate which elements\
+    \ require JavaScript to be loaded.\n\nThe last thing we’ll discuss in this chapter\
+    \ is how Astro hydrates interactive components. With Astro, we can control when\
+    \ and how client-side JavaScript is loaded for our components. The following options\
+    \ can be used:\n\n*   `client:load`. This option has a high priority and is suitable\
+    \ for crucial elements that require immediate interactivity. The JavaScript code\
+    \ for the component is loaded during the initial page load.\n\n*   `client:idle`.\
+    \ With a medium priority, this option is perfect for components that can afford\
+    \ to wait. The JavaScript code for the component is loaded either after the browser\
+    \ fires the `requestIdleCallback` or the `load` event.\n\n*   `client:visible`.\
+    \ With low priority, this option is ideal for components initially hidden from\
+    \ view and not immediately visible above the fold. The component’s JavaScript\
+    \ is loaded when it becomes visible in the viewport, utilizing the [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).\n\
+    \n*   `client:media`. This low-priority choice is best suited for components visible\
+    \ only under specific screen sizes. The JavaScript is loaded when the specified\
+    \ CSS media query triggers, such as `client:media=\"(min-width: 400px)\"`.\n\n\
+    *   `client:only`. This attribute bypasses HTML server rendering and exclusively\
+    \ renders on the client. However, we must specify the framework to load, because\
+    \ Astro doesn’t have this information by default. For instance, use `<MyReactComponent\
+    \ client:only=\"react\" />`.\n\n## Demo\n\nPlease take a look at the [demo app\
+    \ for this chapter](https://stackblitz.com/github/tpiros/sitepoint-astro) and\
+    \ see if you can determine whether static site rendering of server-side rendering\
+    \ is being used!\n\n## Conclusion\n\nIn this chapter, we shifted our focus to\
+    \ layouts and explored the diverse rendering options that Astro has to offer.\
+    \ Rendering is critical for any web app, as it determines the final presentation\
+    \ of content to end users. We explored how to create layouts in Astro and how\
+    \ to work with routes to create a compelling web application. We also looked at\
+    \ how to create and work with static site generation and server-side rendering\
+    \ in Astro.\n\nIn the next chapter, we’ll explore how to fetch data using Astro.\n\
+    \n# Chapter 3: Fetching and Using Data with Astro\n\nIn this third part of our\
+    \ Astro series, we’ll explore how to retrieve data in Astro. Data fetching is\
+    \ a fundamental aspect of web applications, as it allows for the creation of dynamic\
+    \ content—such as data coming from a content management system (CMS). It also\
+    \ caters for personalization, where applications retrieve user-specific information\
+    \ such as preferences or profile information.\n\nIn this series so far we’ve learned\
+    \ quite a few things about Astro, such as how its project structure works, how\
+    \ to create routes and components, and how to work with both static site generation\
+    \ and server-side rendering.\n\nIn this chapter, we’ll examine how Astro’s capabilities\
+    \ extend beyond rendering web content to efficiently handling the retrieval and\
+    \ integration of dynamic data, enhancing the overall user experience and functionality\
+    \ of web applications. You’ll be happy to hear that this is also incredibly straightforward.\n\
+    \nRemember that we have a code fence (the content enclosed between `---` lines\
+    \ at the top of each `.astro` page). Inside it, we can write JavaScript or TypeScript\
+    \ code, and this opens up a lot of possibilities.\n\nWhat’s even better news is\
+    \ the fact that, out of the box, Astro supports [top-level `await`](https://v8.dev/features/top-level-await)\
+    \ and all modern web APIs. This allows us to effortlessly use the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)\
+    \ to request data. And having zero third-party dependencies is always a good thing!"
+  toc: []
+  trans: "\n\nAstro 有两种类型的端点：静态（Static）和 API/服务器（Server）。可以通过向 `src/pages` 目录添加 `.js`\
+    \ 或 `.ts` 文件来创建静态端点，这些文件会在构建时被调用以生成静态文件。还需要注意的是，在构建过程中扩展名会被移除。例如，`src/pages/destinations.json.js`\
+    \ 将变为 `/destinations.json`。\n\n端点可以访问 `request` 和 `params` 对象，并且应该导出一个 `GET` 函数。此外，还支持动态路由（通过\
+    \ `[]` 文件命名约定）。将之前的示例使用 `getStaticPaths()` 重构为端点，其如下所示：\n\n```\n// src/pages/api/[destination].json.js\n\
+    const destinations = [\n  'london',\n  'rome',\n  'sanfrancisco',\n  'singapore',\n\
+    \  'cairo',\n  'medellin',\n];\n\nexport const GET = ({ params }) => {\n  const\
+    \ { destination } = params;\n  const [myDestination] = destinations.filter(\n\
+    \    (destination) => destination === destination\n  );\n  return new Response(\n\
+    \    JSON.stringify({\n      destination: myDestination,\n    })\n  );\n};\n\n\
+    export function getStaticPaths() {\n  return destinations.map((destination) =>\
+    \ {\n    return {\n      params: {\n        destination,\n      },\n    };\n \
+    \ });\n}\n```\n\n### 使用 api 文件夹\n\n注意，使用 `api` 文件夹并不是强制的，但它提供了良好的关注点分离，我们强烈建议使用它来存储\
+    \ API 端点。\n\n### 访问 request 对象\n\n端点也可以访问 `request` 对象，但在静态模式下，`request.url` 是该对象唯一的可用属性。\n\
+    \n### 服务器端点\n\n要创建服务器端点（API 路由），我们需要在 Astro 的配置文件启用 SSR 模式。\n\n在页面目录中添加 `.js`\
+    \ 或 `.ts` 文件可以创建 REST API 端点，它们不仅可以使用 `GET` 方法，还可以访问所有其他 CRUD 方法（`POST`、`PUT`,`DELETE`）。\n\
+    \n### 处理 GET、POST 和 DELETE 请求\n\n处理 HTTP 删除请求时，在 Astro 中使用 `del`，因为 `delete` 是\
+    \ JavaScript 的内置关键字。\n\n下面的示例说明了如何在 Astro 中处理 HTTP `GET`、`POST` 和 `DELETE` 请求。`GET`\
+    \ 方法接受参数（注意路由的定义方式：`src/pages/api/[id].json.js`）。由于路由中有 `[id]`，我们可以对 `params`\
+    \ 对象进行解构并获取 `id` 的值。`GET` 方法中的其余代码执行了一个假设的数据库查询，并返回一个带有查询数据的响应。\n\n`POST` 方法检查请求中是否发送了\
+    \ `Authorization` 请求头。如果没有，我们返回 HTTP 状态码 401（未授权）。注意我们在这里简化了代码，身份验证/授权需要更多步骤)。如果一切正常，我们解析作为请求部分发送的数据，执行一个假设的数据库插入，并返回成功的\
+    \ 201 消息：\n\n```\n// src/pages/api/[id].json.js\nimport { getCityData, addCity\
+    \ } from './fake-db.js';\n\nexport const GET = async ({ params }) => {\n  const\
+    \ { id } = params;\n  const cityData = await getCityData(id);\n  return new Response(JSON.stringify(cityData),\
+    \ {\n    status: 200,\n    headers: {\n      'Content-Type': 'application/json',\n\
+    \    },\n  });\n};\n\nexport const POST = async ({ request }) => {\n  if (!request.headers.get('Authorization'))\
+    \ {\n    return new Response(null, { status: 401 });\n  }\n  const body = await\
+    \ request.json();\n  const city = body.city;\n  await addCity(city);\n  return\
+    \ new Response(\n    JSON.stringify({\n      message: 'City added',\n    }),\n\
+    \    {\n      status: 201,\n    }\n  );\n};\n\nexport const DEL = ({ request })\
+    \ => {\n  // Handle HTTP delete\n};\n```\n\n### 使用 request 对象\n\n注意，充分利用 `request`\
+    \ 对象来实现授权并接收传入的数据（这些可能来自表单）是非常重要的。\n\n## 交互式组件的水化（Hydration）\n\n在上一章中，我们讨论了 Astro\
+    \ 的孤屿架构，这基本上是将 Web 应用程序分解为孤立岛的方法，每个岛负责渲染页面的特定部分。此外，这种架构还可以决定哪些元素需要加载 JavaScript。\n\
+    \n本章将讨论的最后一点是 Astro 如何水化交互式组件。通过 Astro，我们可以控制客户端 JavaScript 何时以及如何加载。\n\n### 水化策略总结\n\
+    \n-   `client:load`: 该选项优先级高，适用于关键元素。JavaScript 在初始加载期间加载。\n-   `client:idle`:\
+    \ 该选项具有中等优先级，非常适合可以等待浏览器触发 `requestIdle` 的组件。\n-   `client:visible`: 这种低优先级选择适用于初始隐藏在视图中的组件。JavaScript\
+    \ 在组件变得可见时加载。\n-   `client:media`: 最适用于仅在特定屏幕尺寸下可见的组件。当 在指定的媒体查询触发时加载 JavaScript。\n\
+    -   `client:only`: 此属性跳过 HTML 渲染，仅在客户端进行渲染。然而，我们必须指定要加载的框架。\n\n"
+- fmt: "\n## Fetch Execution\n\nWith server-side rendering enabled, fetch calls are\
+    \ executed at request time, while without SSR (Astro’s normal operation of static\
+    \ site rendering), fetch calls are executed at build time.\n\nLet’s take a look\
+    \ at how this works in action. In any `.astro` page, we can simply use code similar\
+    \ to this to fetch data:\n\n```\n---\nconst response = await fetch('an-api-endpoint');\n\
+    const data = await response.json();\n---\n<pre>{JSON.stringify(data)}</pre>\n\
+    ```\n\nThe code above makes a Fetch API request to an endpoint, parses the data\
+    \ to a JSON object, and then uses a simple `JSON.stringify` method to display\
+    \ the data.\n\nLet’s create another example where we fetch real data to see how\
+    \ to iterate through the results. While there are plenty of free REST APIs available\
+    \ out there, my choice is to use the [Star Wars API](https://swapi.dev):\n\n```\n\
+    ---\nconst response = await fetch('https://swapi.dev/api/people');\nconst data\
+    \ = await response.json();\nconst characters = data.results;\n---\n<h1>Star Wars\
+    \ Characters</h1>\n<ul\n  {characters.map(({name}) => (\n    <li>{name}</li>\n\
+    \  ))}\n</ul>\n```\n\nThe code above makes the request to the aforementioned REST\
+    \ API, processes the data, and iterates through the results by using the standard\
+    \ JavaScript `map()` method.\n\nNote that we can also consume an API endpoint\
+    \ created as part of the project. (We covered server endpoints in the previous\
+    \ chapter.) To do this, we need to reference the full URL, but luckily Astro exposes\
+    \ that via a built-in global object: `Astro.url`. This is how the code looks when\
+    \ referencing a custom-built API call:\n\n```\n---\nconst response = await fetch(`${Astro.url.origin}/api/endpoint`);\n\
+    const data = await response.json();\n---\n<pre>{JSON.stringify(data)}</pre>\n\
+    ```\n\nThis makes it incredibly easy to retrieve data.\n\n## Working with GraphQL\n\
+    \nSometimes there may be a requirement in a project to use GraphQL instead of\
+    \ a REST API. (GraphQL is a query language for APIs that enables clients to request\
+    \ precisely the data they need, facilitating more efficient and flexible data\
+    \ retrieval compared to traditional REST APIs, which typically expose a set of\
+    \ fixed endpoints with pre-defined data structures.)\n\nAstro can also seamlessly\
+    \ interact with GraphQL endpoints and utilize the Fetch API, so again, we can\
+    \ execute GraphQL queries with no additional dependencies added to a project:\n\
+    \n```\n---\nconst method = 'POST';\nconst query = `{\n  query getDestination($id:\
+    \ ID) {\n      destination($id) {\n        capital,\n        flag\n      }\n \
+    \   }\n  }\n}`;\nconst variables = {\n  id: 'italy'\n}\n\nconst options = {\n\
+    \  method,\n  body: {\n    query,\n    variables\n  }\n}\nconst response = await\
+    \ fetch('/graphql/endpoint', options);\nconst data = await response.json();\n\
+    ---\n<pre>{JSON.stringify(data)}</pre>\n```\n\nIn the code above, we’re constructing\
+    \ a GraphQL query to get information from a GraphQL service about a destination.\
+    \ As part of the query, we’re requesting the capital and the flag. Since this\
+    \ is a parameterized GraphQL query, we’re also specifying what the `id` should\
+    \ be.\n\nNext, we create an `options` object, which will make sure that our Fetch\
+    \ API request is using the HTTP method of `POST`, and that the GraphQL query and\
+    \ its variable are sent as part of the request body. The rest of the code is pretty\
+    \ self explanatory: we make the request, process the response, and display that\
+    \ using `JSON.stringify()`.\n\n## Data Retrieval from a Server Endpoint\n\nAs\
+    \ discussed in the previous chapter, Astro can create server API endpoints, and\
+    \ it’s possible to consume data returned from these server endpoints as well.\n\
+    \nSuppose we’ve added `src/pages/api/products.json.js` (a server API endpoint).\
+    \ In that case, we can easily access it on any `src/pages/` page by adding something\
+    \ similar to a `.astro` file, like so:\n\n```\n---\nconst response = await fetch(`${Astro.url.origin}/api/products.json`);\n\
+    const products = await response.json();\n---\n<ul\n  {products.map((data) => <li>{data.name}</li>)}\n\
+    </ul>\n```\n\nIn this block of code, we’re making a request against an Astro server\
+    \ endpoint, grabbing the results, and storing them in a `products` variable. Since\
+    \ the data we get back is an array, we can iterate through that using the `map()`\
+    \ method.\n\n### Sensitive Data Protected by Fences\n\nRemember that, since the\
+    \ code between the `---` fences is executed at build time, it’s safe to use API\
+    \ keys and other methods even for data fetching.\n\n## Forms\n\nThough working\
+    \ with form data isn’t necessarily directly related to data retrieval, it’s still\
+    \ worth mentioning it here. With Astro, we can rely on `Astro.request` not only\
+    \ to check if the incoming method (via the `.method` property) is a `POST` method,\
+    \ but we can also access `formData` sent from the UI interface.\n\n### formData\
+    \ and SSR\n\nNote that `formData` is only available if we have server-side rendering\
+    \ enabled.\n\nYou can access any form of data in the script section of `.astro`\
+    \ files:\n\n```\n---\nif (Astro.request.method === 'POST') {\n  const data = await\
+    \ Astro.request.formData();\n  const name = data.get('name');\n  // Process 'data'\n\
+    }\n---\n<h1>Form</h1>\n<form method=\"post\">\n  <input type=\"text\" name=\"\
+    name\" />\n  <button>Submit</button>\n</form>\n```\n"
+  raw: "#### Fetch Execution\n\nWith server-side rendering enabled, fetch calls are\
+    \ executed at request time, while without SSR (Astro’s normal operation of static\
+    \ site rendering), fetch calls are executed at build time.\n\nLet’s take a look\
+    \ at how this works in action. In any `.astro` page, we can simply use code similar\
+    \ to this to fetch data:\n\n```\n---\nconst response = await fetch('an-api-endpoint');\n\
+    const data = await response.json();\n---\n<pre>{JSON.stringify(data)}</pre>\n\
+    ```\n\nThe code above makes a Fetch API request to an endpoint, parses the data\
+    \ to a JSON object, and then uses a simple `JSON.stringify` method to display\
+    \ the data.\n\nLet’s create another example where we fetch real data to see how\
+    \ to iterate through the results. While there are plenty of free REST APIs available\
+    \ out there, my choice is to use the [Star Wars API](https://swapi.dev):\n\n```\n\
+    ---\nconst response = await fetch('https://swapi.dev/api/people');\nconst data\
+    \ = await response.json();\nconst characters = data.results;\n---\n<h1>Star Wars\
+    \ Characters</h1>\n<ul>\n  {characters.map(({name}) => (\n    <li>{name}</li>\n\
+    \  ))}\n</ul>\n```\n\nThe code above makes the request to the aforementioned REST\
+    \ API, processes the data, and iterates through the results by using the standard\
+    \ JavaScript `map()` method.\n\nNote that we can also consume an API endpoint\
+    \ created as part of the project. (We covered server endpoints in the previous\
+    \ chapter.) To do this, we need to reference the full URL, but luckily Astro exposes\
+    \ that via a built-in global object: `Astro.url`. This is how the code looks when\
+    \ referencing a custom-built API call:\n\n```\n---\nconst response = await fetch(`${Astro.url.origin}/api/endpoint`);\n\
+    const data = await response.json();\n---\n<pre>{JSON.stringify(data)}</pre>\n\
+    ```\n\nThis makes it incredibly easy to retrieve data.\n\n## Working with GraphQL\n\
+    \nSometimes there may be a requirement in a project to use GraphQL instead of\
+    \ a REST API. (GraphQL is a query language for APIs that enables clients to request\
+    \ precisely the data they need, facilitating more efficient and flexible data\
+    \ retrieval compared to traditional REST APIs, which typically expose a set of\
+    \ fixed endpoints with pre-defined data structures.)\n\nAstro can also seamlessly\
+    \ interact with GraphQL endpoints and utilize the Fetch API, so again, we can\
+    \ execute GraphQL queries with no additional dependencies added to a project:\n\
+    \n```\n---\nconst method = 'POST';\nconst query = `{\n  query getDestination($id:\
+    \ ID) {\n      destination($id) {\n        capital,\n        flag\n      }\n \
+    \   }\n  }\n}`;\nconst variables = {\n  id: 'italy'\n}\n\nconst options = {\n\
+    \  method,\n  body: {\n    query,\n    variables\n  }\n}\nconst response = await\
+    \ fetch('/graphql/endpoint', options);\nconst data = await response.json();\n\
+    ---\n<pre>{JSON.stringify(data)}</pre>\n```\n\nIn the code above, we’re constructing\
+    \ a GraphQL query to get information from a GraphQL service about a destination.\
+    \ As part of the query, we’re requesting the capital and the flag. Since this\
+    \ is a parameterized GraphQL query, we’re also specifying what the `id` should\
+    \ be.\n\nNext, we create an `options` object, which will make sure that our Fetch\
+    \ API request is using the HTTP method of `POST`, and that the GraphQL query and\
+    \ its variable are sent as part of the request body. The rest of the code is pretty\
+    \ self explanatory: we make the request, process the response, and display that\
+    \ using `JSON.stringify()`.\n\n## Data Retrieval from a Server Endpoint\n\nAs\
+    \ discussed in the previous chapter, Astro can create server API endpoints, and\
+    \ it’s possible to consume data returned from these server endpoints as well.\n\
+    \nSuppose we’ve added `src/pages/api/products.json.js` (a server API endpoint).\
+    \ In that case, we can easily access it on any `src/pages/` page by adding something\
+    \ similar to a `.astro` file, like so:\n\n```\n---\nconst response = await fetch(`${Astro.url.origin}/api/products.json`);\n\
+    const products = await response.json();\n---\n<ul>\n  {products.map((data) =>\
+    \ <li>{data.name}</li>)}\n</ul>\n```\n\nIn this block of code, we’re making a\
+    \ request against an Astro server endpoint, grabbing the results, and storing\
+    \ them in a `products` variable. Since the data we get back is an array, we can\
+    \ iterate through that using the `map()` method.\n\n#### Sensitive Data Protected\
+    \ by Fences\n\nRemember that, since the code between the `---` fences is executed\
+    \ at build time, it’s safe to use API keys and other methods even for data fetching.\n\
+    \n## Forms\n\nThough working with form data isn’t necessarily directly related\
+    \ to data retrieval, it’s still worth mentioning it here. With Astro, we can rely\
+    \ on `Astro.request` not only to check if the incoming method (via the `.method`\
+    \ property) is a `POST` method, but we can also access `formData` sent from the\
+    \ UI interface.\n\n#### formData and SSR\n\nNote that `formData` is only available\
+    \ if we have server-side rendering enabled.\n\nYou can access any form of data\
+    \ in the script section of `.astro` files:\n\n```\n---\nif (Astro.request.method\
+    \ === 'POST') {\n  const data = await Astro.request.formData();\n  const name\
+    \ = data.get('name');\n  // Process 'data' or 'name,' e.g., send it to a server\
+    \ via `fetch()`\n}\n---\n<h1>Form</h1>\n  <form method=\"post\">\n  <input type=\"\
+    text\" name=\"name\" />\n  <button>Submit</button>\n</form>\n```\n\nThe code above\
+    \ first checks if the request method is using the HTTP `POST` method. Since we’re\
+    \ using `method=\"post\"` on the form in the HTML template, the `if` clause will\
+    \ trigger and we’ll be able to access the data from the form by using `Astro.request.formData()`.\
+    \ Once we have that data, we can use the `get()` method to grab the value from\
+    \ `<input type=\"text\" name=\"name\" />`. Please note that the input’s `name`\
+    \ attribute matches the value passed to the `get()` method.\n\n## Headless CMS\n\
+    \nOften data will be coming from a CMS of some sort. The good news (yet again!)\
+    \ is that Astro can also be [integrated with various Headless CMS providers](https://docs.astro.build/en/guides/cms/).\n\
+    \nIt’s worth noting that these out-of-the-box integrations are great, but we can\
+    \ also work with a CMS that isn’t on the list. One prominent example is [Strapi](https://strapi.io),\
+    \ which exposes its data via API endpoints (as well as GraphQL queries)—meaning\
+    \ that we can simply use that CMS by utilizing the Fetch API in Astro for even\
+    \ greater flexibility.\n\n## Demo\n\nThe demo for this tutorial series on [stackblitz.com](https://stackblitz.com/github/tpiros/sitepoint-astro).\
+    \ Take a look at `characters.astro` to see how a Fetch API request is done.\n\n\
+    ## Conclusion\n\nIn this chapter, we dived deep into the realm of data retrieval\
+    \ with Astro. Data fetching—a fundamental pillar of web applications—opens the\
+    \ door to dynamic content, enabling the integration of data from sources like\
+    \ content management systems and providing the means for personalization by fetching\
+    \ user-specific information.\n\nThe beauty of Astro lies in its native support\
+    \ for modern web APIs and top-level `await`, allowing effortless use of the Fetch\
+    \ API without any third-party dependencies. With server-side rendering, fetch\
+    \ calls occur at request time, whereas in Astro’s default static site rendering\
+    \ mode they take place at build time.\n\nWe also delved into the world of GraphQL,\
+    \ demonstrating how Astro seamlessly interacts with GraphQL endpoints, utilizing\
+    \ the Fetch API to execute GraphQL queries as well.\n\nLastly, we highlighted\
+    \ Astro’s versatility in working with headless content management systems. Whether\
+    \ through out-of-the-box integrations or custom interactions with CMS providers\
+    \ like Strapi, Astro offers flexibility and ease in integrating external data\
+    \ sources, further expanding its capabilities in data retrieval for web applications.\n\
+    \nIn the next chapter, we’ll learn how to work with content collections in Astro.\n\
+    \n# Chapter 4: Getting Started with Content Collections and View Transitions in\
+    \ Astro\n\nIn this chapter, we’ll take a look at content collections and view\
+    \ transitions."
+  toc: []
+  trans: "\n\n## 获取执行\n\n在启用服务端渲染（SSR）时，fetch 调用会在请求时执行；而在未启用 SSR（即 Astro 正常的静态站点渲染模式）时，fetch\
+    \ 调用会在构建时执行\n\n让我们来看看它是如何运作的。在任何 `.astro` 页面中，我们可以直接使用类似下面的代码来获取数据：\n\n```\n---\n\
+    const response = await fetch('an-api-endpoint');\nconst data = await response.json();\n\
+    ---\n<pre>{JSON.stringify(data)}</pre>\n```\n\n上述代码向端点发送了 Fetch API 请求，将数据解析为\
+    \ JSON 对象，然后使用简单的 `JSON.stringify` 方法显示数据。\n\n让我们创建另一个示例，通过获取真实数据来查看如何遍历结果。虽然世界上有很多免费的\
+    \ REST API 可用，但我选择的是使用 [星球大战 API](https://swapi.dev)：\n\n```\n---\nconst response\
+    \ = await fetch('https://swapi.dev/api/people');\nconst data = await response.json();\n\
+    const characters = data.results;\n---\n<h1>Star Wars Characters</h1>\n<ul\n  {characters.map(({name})\
+    \ => (\n    <li>{name}</li>\n  ))}\n</ul>\n```\n\n上述代码向上述 REST API 发起请求，处理数据，并使用标准的\
+    \ JavaScript `map()` 方法遍历结果。\n\n注意，我们也可以消费作为项目一部分创建的 API 端点。（我们在上一节中介绍过服务器端点。）要实现此点，我们需要引用完整的\
+    \ URL，但幸运的是 Astro 通过一个内置全局对象暴露了该内容：`Astro.url`。这是引用自定义构建的 API 调用时的代码写法：\n\n```\n\
+    ---\nconst response = await fetch(`${Astro.url.origin}/api/endpoint`);\nconst\
+    \ data = await response.json();\n---\n<pre>{JSON.stringify(data)}</pre>\n```\n\
+    \n这使得检索数据变得极其简单。\n\n## 使用 GraphQL\n\n有时项目中的需求可能要求使用 GraphQL 而不是 REST API。（GraphQL\
+    \ 是一种用于 API 的查询语言，允许客户端精确地请求它们所需的数据，与通常暴露一组具有预定义数据结构的固定端点的传统 REST API 相比，它有助于更高效、更灵活的数据检索。）\n\
+    \nAstro 也可以无缝地与 GraphQL 端点交互并利用 Fetch API，因此我们仍然可以在不向项目添加任何额外依赖的情况下执行 GraphQL\
+    \ 查询：\n\n```\n---\nconst method = 'POST';\nconst query = `{\n  query getDestination($id:\
+    \ ID) {\n      destination($id) {\n        capital,\n        flag\n      }\n \
+    \   }\n  }\n}`;\nconst variables = {\n  id: 'italy'\n}\n\nconst options = {\n\
+    \  method,\n  body: {\n    query,\n    variables\n  }\n}\nconst response = await\
+    \ fetch('/graphql/endpoint', options);\nconst data = await response.json();\n\
+    ---\n<pre>{JSON.stringify(data)}</pre>\n```\n\n在上面的代码中，我们正在构建一个 GraphQL 查询，以从\
+    \ GraphQL 服务获取关于目的地的信息。作为查询的一部分，我们请求了首都是旗帜。由于这是一个参数化的 GraphQL 查询，我们还指定了 `id` 的取值。\n\
+    \n接下来，我们创建了一个 `options` 对象，它将确保我们的 Fetch API 请求使用 `POST` HTTP 方法，并将 GraphQL 查询及其变量作为请求体的一部分发送。代码的其余部分是非常自言易懂的：我们发起请求，处理响应，并使用\
+    \ `JSON.stringify()` 将其显示。\n\n## 从服务器端点检索数据\n\n如上一节所述，Astro 可以创建服务器 API 端点，也可以消费从这些服务器端点返回的数据。\n\
+    \n假设我们已经添加了 `src/pages/api/products.json`（一个服务器 API 端点）。在这种情况下，我们可以通过在任何 `src/pages/`\
+    \ 页面中添加类似的内容来轻松访问它，如下所示：\n\n```\n---\nconst response = await fetch(`${Astro.url.origin}/api/products.json`);\n\
+    const products = await response.json();\n---\n<ul>\n  {products.map((data) =>\
+    \ <li>{data.name}</li>)}\n</ul>\n```\n\n在这段代码中，我们向 Astro 端点发送请求，获取结果并将其存储在 `products`\
+    \ 中。由于返回的数据是一个数组，我们可以使用 `map()` 方法进行遍历。\n\n### 受边界保护的敏感数据\n\n请记住，由于 `---` 边界之间的代码是在构建时执行的，因此在获取数据中使用\
+    \ API 密钥和其他方法也是安全的。\n\n## 表单\n\n虽然处理表单数据不一定与数据检索直接相关，但在这里提到它是值得的。在 Astro 中，我们不仅可以依靠\
+    \ `Astro.request` 来检查传入的方法（通过 `.method` 属性）是否为 `POST` 方法，还可以访问从 UI 界面发送的 `formData`。\n\
+    \n### formData 和 SSR\n\n注意，`formData` 只有在启用服务端渲染时可用。\n\n你可以在 `.astro` 文件的脚本部分访问任何形式的表单数据：\n\
+    \n```\n---\nif (Astro.request.method === 'POST') {\n  const data = await Astro.request.formData();\n\
+    \  const name = data.get('name');\n  // 处理 'data'\n}\n---\n<h1>Form</h1>\n<form\
+    \ method=\"post\">\n  <input type=\"text\" name=\"name\" />\n  <button>Submit</button>\n\
+    </form>\n```\n\n"
+- fmt: "\nOne of the notable additions in Astro version 2 was the introduction of\
+    \ content collections. This feature proves particularly valuable when working\
+    \ with `.md` or `.mdx` files. Content collections empower us to effectively manage\
+    \ our content while also enabling data validation and TypeScript type safety for\
+    \ all the content within an Astro project.\n\nSince Astro version 3, and with\
+    \ added features in version 4, view transitions are also part of Astro. In fact,\
+    \ Astro was the first framework to implement this new web feature. `View transitions`\
+    \ serve as a user navigation aid: they enable the seamless redirection of user\
+    \ attention towards the core message of a web page, allowing for a rich user experience.\
+    \ With view transitions, the user experience can be improved with no cost to performance.\n\
+    \n## Getting Started with Content Collections\n\nTo make use of content collections,\
+    \ Astro designates a special folder: `src/content`. Subsequently, we can create\
+    \ subfolders within this location, each generating individual content collections.\
+    \ For instance, we could create collections such as `src/content/dev-blog` and\
+    \ `src/content/corporate-blog`.\n\n![The architecture of our collections](Images/4.png)\n\
+    \nEach content collection can be configured in a config file—`/src/content/config.js`\
+    \ (or `.ts`)—where we have the option to employ collection schemas using [Zod](https://zod.dev).\n\
+    \nZod is a “TypeScript-first schema validation with static type inference” that’s\
+    \ integrated into Astro. Here’s an example of how this would take shape:\n\n```javascript\n\
+    // src/content/config.js\nimport { z, defineCollection } from 'astro:content';\n\
+    \nconst devBlogCollection = defineCollection({\n  schema: z.object({\n    title:\
+    \ z.string(),\n    author: z.string().default('The Dev Team'),\n    tags: z.array(z.string()),\n\
+    \    date: z.date(),\n    draft: z.boolean().default(true),\n    description:\
+    \ z.string(),\n  }),\n});\n\nconst corporateBlogCollection = defineCollection({\n\
+    \  schema: z.object({\n    title: z.string(),\n    author: z.string(),\n    date:\
+    \ z.date(),\n    featured: z.boolean(),\n    language: z.enum(['en', 'es']),\n\
+    \  }),\n});\n\nexport const collections = {\n  devblog: devBlogCollection,\n \
+    \ corporateblog: corporateBlogCollection,\n};\n```\n\nIn the code above, we’re\
+    \ defining two content collections—one for a “developer blog” and one for a “corporate\
+    \ blog”. The `defineCollection` method allows us to create a `schema` for any\
+    \ given collection. For the “developer blog”, we’re creating a schema where the\
+    \ articles for this blog category must have a title (string), author (string defaulting\
+    \ to “The Dev Team”), tags (array of strings), date (date type), draft (Boolean\
+    \ defaulting to `true`) and a description (string).\n\nFor the “corporate blog”,\
+    \ our schema is a little bit different: we have a string for both the title and\
+    \ the author. Date (data type) is also going to be required by the content, as\
+    \ well as the featured (Boolean) flag and a language (enum), which can either\
+    \ be set to `en` or `es`.\n\nLastly, we’re exporting a `collections` object with\
+    \ two properties, `devblog` and `corporateblog`. These will be used later on.\n\
+    \n### Markdown Files and Frontmatter\n\nThe examples in this tutorial about content\
+    \ collection assume that the `.md` files also include `frontmatter` matching the\
+    \ schema specified above in the configuration file. As an example, this is what\
+    \ a sample “corporate blog” post would look like:\n\n```markdown\n---\ntitle:\
+    \ 'Buy!!'\nauthor: 'Jack from Marketing'\ndate: 2023-07-19\nfeatured: true\nlanguage:\
+    \ 'en'\n---\n\n# Some Marketing Promo\n\nThis is the best product!\n```\n\n###\
+    \ Slug Creation\n\nAstro will automatically generate slugs for posts based on\
+    \ the file name. For example, the slug for `first-post.md` will be `first-post`.\
+    \ However, if we provide a `slug` entry in our `frontmatter`, Astro will respect\
+    \ that and use our custom slug.\n\nBear in mind that the properties specified\
+    \ in the `export const collections` object must match the folder names where the\
+    \ content is going to live. (Also note that they’re case sensitive!)\n\n### Querying\
+    \ Data\n\nOnce we have all the Markdown files in place (in our case, that would\
+    \ be under `src/content/devblog` and `src/content/corporateblog`) and our `config.js`\
+    \ file ready, we can start to query data from the collections, which is a straightforward\
+    \ process:\n\n```javascript\n---\nimport { getCollection } from 'astro:content';\n\
+    const allDevPosts = await getCollection('devblog');\nconst allCorporatePosts =\
+    \ await getCollection('corporateblog');\n---\n<pre>{JSON.stringify(allDevPosts)}</pre>\n\
+    <pre>{JSON.stringify(allCorporatePosts)}</pre>\n```\n\nAs seen above, the `getCollection`\
+    \ method can be used to retrieve all the entries from a given collection (again,\
+    \ referencing the exported collection names from earlier). In the example above,\
+    \ we retrieve all the posts from both the “developer blog” (`devblog`) and from\
+    \ the “corporate blog” (`corporateblog`). In the template, we simply return the\
+    \ raw data using `JSON.stringify()`.\n\nWe should also examine the data that’s\
+    \ being displayed via `JSON.stringify()`, and we should take note that, other\
+    \ than the `frontmatter` data, we also get an `id`, a `slug`, and a `body` property\
+    \ returned to use where the latter contains the post’s content.\n\nWe can also\
+    \ filter for drafts or posts in a particular language in the `frontmatter` by\
+    \ iterating through:\n\n```javascript\nimport { getCollection } from 'astro:content';\n\
+    \nconst spanishEntries = await getCollection('corporateblog', ({ data }) => {\n\
+    \  return data.language === 'es';\n});\n```\n\n`getCollection` returns all the\
+    \ posts, but we can also use `getEntry` to return a single entry from a collection:\n\
+    \n```javascript\nimport { getEntry } from 'astro:content';\n\nconst singleEntry\
+    \ = await getEntry('corporateblog', 'article-1');\n```\n\n### getCollection vs\
+    \ getEntries\n\nWhile there are two ways to return multiple posts from collections,\
+    \ there’s a subtle difference between the two of them. `getCollection()` retrieves\
+    \ a list of content entries by collection name, while `getEntries()` retrieves\
+    \ multiple collection entries from the same collection.\n\nThe Astro documentation\
+    \ gives the example of `getEntries()` being used to retrieve content when using\
+    \ reference entities (for example, a list of related posts). The concept of related\
+    \ posts is where we can reference an array of posts from a collection. This can\
+    \ be achieved by adding the following to the schema when using the `defineCollection`\
+    \ method:\n\n```javascript\nimport { defineCollection, reference, z } from 'astro:content';\n\
+    \nconst devblog = defineCollection({\n  type: 'content',\n  schema: z.object({\n\
+    \    title: z.string(),\n    relatedPosts: z.array(reference('blog')),\n  }),\n\
+    });\n```\n\nIn the code above, we’re also importing `reference` and using that\
+    \ when adding `relatedPosts` to our schema. (Note that we can call this whatever\
+    \ we want, such as `recommendedPosts` or `followupPosts`.)\n\nTo use these `relatedPosts`,\
+    \ the appropriate slug values should be added to the `frontmatter` part of the\
+    \ Markdown:\n\n```markdown\n---\ntitle: \"This is a post\"\nrelatedPosts:\n\n\
+    - A related post # `src/content/devblog/a-related-post.md\n```\n\nReference entities\
+    \ are defined in the `config.js` file for the content collection and use the `reference`\
+    \ method from Zod:\n\n```javascript\nconst blog = defineCollection({\n  type:\
+    \ 'content',\n  schema: z.object({\n    title: z.string(),\n    relatedPosts:\
+    \ z.array(reference('blog')).optional(),\n    author: reference('author'),\n \
+    \ }),\n});\n\nconst author = defineCollection({\n  type: 'data',\n  schema: z.object({\n\
+    \    name: z.string(),\n  }),\n});\n```\n\nAlso, notice the usage of `type: 'content'`\
+    \ and `type: 'data'`. In this case, the collection encompasses both content authoring\
+    \ formats such as Markdown (`type: 'content'`) and data formats like JSON or YAML\
+    \ (`type: 'data'`).\n\n### Displaying the Content\n"
+  raw: "One of the notable additions in Astro version 2 was the introduction of content\
+    \ collections. This feature proves particularly valuable when working with `.md`\
+    \ or `.mdx` files. Content collections empower us to effectively manage our content\
+    \ while also enabling data validation and TypeScript type safety for all the content\
+    \ within an Astro project.\n\nSince Astro version 3, and with added features in\
+    \ version 4, view transitions are also part of Astro. In fact, Astro was the first\
+    \ framework to implement this new web feature. **View transitions** serve as a\
+    \ user navigation aid: they enable the seamless redirection of user attention\
+    \ towards the core message of a web page, allowing for a rich user experience.\
+    \ With view transitions, the user experience can be improved with no cost to performance.\n\
+    \n## Getting Started with Content Collections\n\nTo make use of content collections,\
+    \ Astro designates a special folder: `src/content`. Subsequently, we can create\
+    \ subfolders within this location, each generating individual content collections.\
+    \ For instance, we could create collections such as `src/content/dev-blog` and\
+    \ `src/content/corporate-blog`.\n\n![The architecture of our collections](Images/4.png)\n\
+    \nEach content collection can be configured in a config file—`/src/content/config.js`\
+    \ (or `.ts`)—where we have the option to employ collection schemas using [Zod](https://zod.dev).\n\
+    \nZod is a “TypeScript-first schema validation with static type inference” that’s\
+    \ integrated into Astro. Here’s an example of how this would take shape:\n\n```\n\
+    // src/content/config.js\nimport { z, defineCollection } from 'astro:content';\n\
+    \nconst devBlogCollection = defineCollection({\n  schema: z.object({\n    title:\
+    \ z.string(),\n    author: z.string().default('The Dev Team'),\n    tags: z.array(z.string()),\n\
+    \    date: z.date(),\n    draft: z.boolean().default(true),\n    description:\
+    \ z.string(),\n  }),\n});\n\nconst corporateBlogCollection = defineCollection({\n\
+    \  schema: z.object({\n    title: z.string(),\n    author: z.string(),\n    date:\
+    \ z.date(),\n    featured: z.boolean(),\n    language: z.enum(['en', 'es']),\n\
+    \  }),\n});\n\nexport const collections = {\n  devblog: devBlogCollection,\n \
+    \ corporateblog: corporateBlogCollection,\n};\n```\n\nIn the code above, we’re\
+    \ defining two content collections—one for a “developer blog” and one for a “corporate\
+    \ blog”. The `defineCollection` method allows us to create a `schema` for any\
+    \ given collection. For the “developer blog”, we’re creating a schema where the\
+    \ articles for this blog category must have a title (string), author (string defaulting\
+    \ to “The Dev Team”), tags (array of strings), date (date type), draft (Boolean\
+    \ defaulting to `true`) and a description (string).\n\nFor the “corporate blog”,\
+    \ our schema is a little bit different: we have a string for both the title and\
+    \ the author. Date (data type) is also going to be required by the content, as\
+    \ well as the featured (Boolean) flag and a language (enum), which can either\
+    \ be set to `en` or `es`.\n\nLastly, we’re exporting a `collections` object with\
+    \ two properties, `devblog` and `corporateblog`. These will be used later on.\n\
+    \n#### Markdown Files and Frontmatter\n\nThe examples in this tutorial about content\
+    \ collection assume that the `.md` files also include `frontmatter` matching the\
+    \ schema specified above in the configuration file. As an example, this is what\
+    \ a sample “corporate blog” post would look like:\n\n```\n---\ntitle: 'Buy!!'\n\
+    author: 'Jack from Marketing'\ndate: 2023-07-19\nfeatured: true\nlanguage: 'en'\n\
+    ---\n\n# Some Marketing Promo\n\nThis is the best product!\n```\n\n### Slug Creation\n\
+    \nAstro will automatically generate slugs for posts based on the file name. For\
+    \ example, the slug for `first-post.md` will be `first-post`. However, if we provide\
+    \ a `slug` entry in our `frontmatter`, Astro will respect that and use our custom\
+    \ slug.\n\nBear in mind that the properties specified in the `export const collections`\
+    \ object must match the folder names where the content is going to live. (Also\
+    \ note that they’re case sensitive!)\n\n### Querying Data\n\nOnce we have all\
+    \ the Markdown files in place (in our case, that would be under `src/content/devblog`\
+    \ and `src/content/corporateblog`) and our `config.js` file ready, we can start\
+    \ to query data from the collections, which is a straightforward process:\n\n\
+    ```\n---\nimport { getCollection } from 'astro:content';\nconst allDevPosts =\
+    \ await getCollection('devblog');\nconst allCorporatePosts = await getCollection('corporateblog');\n\
+    ---\n<pre>{JSON.stringify(allDevPosts)}</pre>\n<pre>{JSON.stringify(allCorporatePosts)}</pre>\n\
+    ```\n\nAs seen above, the `getCollection` method can be used to retrieve all the\
+    \ entries from a given collection (again, referencing the exported collection\
+    \ names from earlier). In the example above, we retrieve all the posts from both\
+    \ the “developer blog” (`devblog`) and from the “corporate blog” (`corporateblog`).\
+    \ In the template, we simply return the raw data using `JSON.stringify()`.\n\n\
+    We should also examine the data that’s being displayed via `JSON.stringify()`,\
+    \ and we should take note that, other than the `frontmatter` data, we also get\
+    \ an `id`, a `slug`, and a `body` property returned to use where the latter contains\
+    \ the post’s content.\n\nWe can also filter for drafts or posts written in a particular\
+    \ language in the `frontmatter` section by iterating through all articles like\
+    \ this:\n\n```\nimport { getCollection } from 'astro:content';\n\nconst spanishEntries\
+    \ = await getCollection('corporateblog', ({ data }) => {\n  return data.language\
+    \ === 'es';\n});\n```\n\n`getCollection` returns all the posts, but we can also\
+    \ use `getEntry` to return a single entry from within a collection:\n\n```\nimport\
+    \ { getEntry } from 'astro:content';\n\nconst singleEntry = await getEntry('corporateblog',\
+    \ 'pr-article-1');\n```\n\n### getCollection vs getEntries\n\nWhile there are\
+    \ two ways to return multiple posts from collections, there’s a subtle difference\
+    \ between the two of them. `getCollection()` retrieves a list of content collection\
+    \ entries by collection name, while `getEntries()` retrieves multiple collection\
+    \ entries from the same collection.\n\nThe Astro documentation gives the example\
+    \ of `getEntries()` being used to retrieve content when using reference entities\
+    \ (for example, a list of related posts).\n\nThe concept of related posts is where\
+    \ we can reference an array of posts from a collection. This can be achieved by\
+    \ adding the following to the schema when using the `defineCollection` method:\n\
+    \n```\nimport { defineCollection, reference, z } from 'astro:content';\n\nconst\
+    \ devblog = defineCollection({\n  schema: z.object({\n    title: z.string(),\n\
+    \    relatedPosts: z.array(reference('blog')),\n  }),\n});\n```\n\nIn the code\
+    \ above, we’re also importing `reference` and using that when adding `relatedPosts`\
+    \ to our schema. (Note that we can call this whatever we want, such as `recommendedPosts`\
+    \ or `followupPosts`.)\n\nTo use these `relatedPosts`, the appropriate slug values\
+    \ should be added to the `frontmatter` part of the Markdown:\n\n```\ntitle: \"\
+    This is a post\"\nrelatedPosts:\n\n- A related post # `src/content/devblog/a-related-post.md\n\
+    ```\n\nReference entities are defined in the `config.js` file for the content\
+    \ collection and use the `reference` method from Zod:\n\n```\nconst blog = defineCollection({\n\
+    \  type: 'content',\n  schema: z.object({\n    title: z.string(),\n    relatedPosts:\
+    \ z.array(reference('blog')).optional(),\n    author: reference('author'),\n \
+    \ }),\n});\n\nconst author = defineCollection({\n  type: 'data',\n  schema: z.object({\n\
+    \    name: z.string(),\n  }),\n});\n```\n\nAlso, notice the usage of `type: 'content'`\
+    \ and `type: 'data'`. In this case, the collection encompasses both content authoring\
+    \ formats such as Markdown (`type: 'content'`) and data formats like JSON or YAML\
+    \ (`type: 'data'`).\n\n### Displaying the Content"
+  toc: []
+  trans: "\n\nAstro 2 版本中的一个显著特性是引入了内容集合（content collections）。这一功能在处理 `.md` 或 `.mdx`\
+    \ 文件时被证明特别有价值。内容集合使我们能够有效地管理内容，同时还为 Astro 项目中的所有内容提供了数据验证和 TypeScript 类型安全。\n\n\
+    从 Astro 3 版本开始，并随着 4 版本新增新功能，视图过渡（view transitions）也是 Astro 的一部分。事实上，Astro 是第一个实现这一新\
+    \ Web 特性的框架。`View transitions` 是一种用户导航辅助工具：它们能够将用户的注意力无缝引导至页面的核心信息，从而提供丰富的用户体验。通过视图过渡，可以在不牺牲性能的情况下提升用户体验。\n\
+    \n## 开始使用内容集合\n\n为了使用内容集合，Astro 指定了一个特殊文件夹：`src/content`。随后，我们可以在此位置创建子文件夹，每个子文件夹生成一个独立的内容集合。例如，我们可以创建如\
+    \ `src/content/dev-blog` 和 `src/content/corporate-blog` 这样的集合。\n\n![我们的集合架构](img/4.png)\n\
+    \n每个内容集合都可以在配置文件——`/src/content/config.js`（或 `.ts`）中配置，在其中，我们可以选择使用 [Zod](https://zod.dev)\
+    \ 使用集合模式（schemas）。\n\nZod 是一种“带有静态类型推断的 TypeScript 优先模式验证”，已集成到 Astro 中。以下是其实现形式的示例：\n\
+    \n```javascript\n// src/content/config.js\nimport { z, defineCollection } from\
+    \ 'astro:content';\n\nconst devBlogCollection = defineCollection({\n  schema:\
+    \ z.object({\n    title: z.string(),\n    author: z.string().default('The Dev\
+    \ Team'),\n    tags: z.array(z.string()),\n    date: z.date(),\n    draft: z.boolean().default(true),\n\
+    \    description: z.string(),\n  }),\n});\n\nconst corporateBlogCollection = defineCollection({\n\
+    \  schema: z.object({\n    title: z.string(),\n    author: z.string(),\n    date:\
+    \ z.date(),\n    featured: z.boolean(),\n    language: z.enum(['en', 'es']),\n\
+    \  }),\n});\n\nexport const collections = {\n  devblog: devBlogCollection,\n \
+    \ corporateblog: corporateBlogCollection,\n};\n```\n\n在上面的代码中，我们定义了两个内容集合——一个用于“开发者博客”，另一个用于“企业博客”。`defineCollection`\
+    \ 方法允许我们为任何给定的集合创建 `schema`。对于“开发者博客”，我们创建了一个模式，其中该类别的文章必须具有标题（字符串）、作者（字符串，默认为“The\
+    \ Dev Team”）、标签（字符串数组）、日期（日期类型）、草稿（默认为 `true` 的布尔值）和描述（字符串）。\n\n对于“企业博客”，我们的模式略有不同：标题和作者都是字符串类型。日期（数据类型）也是内容所必需的，还有精选（布尔值）标记和语言（枚举），语言可以设置为\
+    \ `en` 或 `es`。\n\n最后，我们导出了包含两个属性 `devblog` 和 `corporateblog` 的 `collections` 对象。这些属性将在后文中使用。\n\
+    \n### Markdown 文件与前置元数据（Frontmatter）\n\n本教程中关于内容集合的示例假设 `.md` 文件还包含了与配置文件中指定的模式匹配的\
+    \ `frontmatter`。例如，一个示例“企业博客”文章看起来如下：\n\n```markdown\n---\ntitle: 'Buy!!'\nauthor:\
+    \ 'Jack from Marketing'\ndate: 2023-07-19\nfeatured: true\nlanguage: 'en'\n---\n\
+    \n# Some Marketing Promo\n\nThis is the best product!\n```\n\n### Slug 的生成\n\n\
+    Astro 会根据文件名自动为文章生成 slug。例如，`first-post.md` 的 slug 将是 `first-post`。然而，如果我们在 `frontmatter`\
+    \ 中提供了 `slug` 条目，Astro 将尊重它并使用我们自定义的 slug。\n\n请记住，在 `export const collections`\
+    \ 对象中指定的属性必须与内容所在的文件夹名称相匹配。（另外注意，它们是区分大小大小的！）\n\n### 查询数据\n\n一旦我们准备好了所有的 Markdown\
+    \ 文件（在本文中，它们位于 `src/content/devblog` 和 `src/content/corporateblog` 下）以及 `config.js`\
+    \ 文件，我们就可以开始从集合中查询数据了，这是一个非常直接的过程：\n\n```javascript\n---\nimport { getCollection\
+    \ } from 'astro:content';\nconst allDevPosts = await getCollection('devblog');\n\
+    const allCorporatePosts = await getCollection('corporateblog');\n---\n<pre>{JSON.stringify(allDevPosts)}</pre>\n\
+    <pre>{JSON.stringify(allCorporatePosts)}</pre>\n```\n\n如上所示，可以使用 `getCollection`\
+    \ 方法从给定的集合中检索所有条目（再次引用之前导出的集合名称）。在上面的示例中，我们从“开发者博客”（`devblog`）和“企业博客”（`corporateblog`）中检索了所有文章。在模板中，我们简单地使用\
+    \ `JSON.stringify()` 返回原始数据。\n\n我们应该检查通过 `JSON.stringify()` 显示的数据，并应该注意，除了 `frontmatter`\
+    \ 数据外，我们还会获得 `id`、`slug` 和 `body` 属性，其中后者包含文章的内容。\n\n我们还可以通过迭代在 `frontmatter`\
+    \ 中过滤草稿或特定语言的文章：\n\n```javascript\nimport { getCollection } from 'astro:content';\n\
+    \nconst spanishEntries = await getCollection('corporateblog', ({ data }) => {\n\
+    \  return data.language === 'es';\n});\n```\n\n`getCollection` 返回所有文章，但我们也可以使用\
+    \ `getEntry` 从集合中返回单个条目：\n\n```javascript\nimport { getEntry } from 'astro:content';\n\
+    \nconst singleEntry = await getEntry('corporateblog', 'article-1');\n```\n\n###\
+    \ getCollection vs getEntries\n\n虽然有两种方法可以从集合中返回多篇文章，但它们之间存在细微的。`getCollection()`\
+    \ 通过集合名称检索内容条目列表，而 `getEntries()` 则从同一个集合中检索多个集合条目。\n\nAstro 文档提供了一个示例，说明在使用引用实体（例如，相关文章列表）时使用\
+    \ `getEntries()` 来获取内容。相关文章的概念是指引用集合中的文章数组。这可以通过在使用 `defineCollection` 方法时向模式添加以下内容来实现：\n\
+    \n```javascript\nimport { defineCollection, reference, z } from 'astro:content';\n\
+    \nconst devblog = defineCollection({\n  type: 'content',\n  schema: z.object({\n\
+    \    title: z.string(),\n    relatedPosts: z.array(reference('blog')),\n  }),\n\
+    });\n```\n\n在上面的代码中，我们还导入了 `reference` 并在向模式中添加 `relatedPosts` 时使用了它。（注意，我们可以为它起任何名称，例如\
+    \ `recommendedPosts` 或 `followupPosts`。）\n\n要使用这些 `relatedPosts`，应该在 Markdown\
+    \ 的 `frontmatter` 部分添加适当的 slug 值：\n\n```markdown\n---\ntitle: \"This is a post\"\
+    \nrelatedPosts:\n\n- A related post # `src/content/devblog/a-related-post.md\n\
+    ```\n\n引用实体在内容集合的 `config.js` 文件中定义，并使用 Zod 的 `reference` 方法：\n\n```javascript\n\
+    const blog = defineCollection({\n  type: 'content',\n  schema: z.object({\n  \
+    \  title: z.string(),\n    relatedPosts: z.array(reference('blog')).optional(),\n\
+    \    author: reference('author'),\n  }),\n});\n\nconst author = defineCollection({\n\
+    \  type: 'data',\n  schema: z.object({\n    name: z.string(),\n  }),\n});\n```\n\
+    \n同时注意 `type: 'content'` 和 `type: 'data'` 的用法。在这种情况下，集合包含了内容创作格式（如 Markdown，`type:\
+    \ 'content'`）和数据格式（如 JSON 或 YAML，`type: 'data'`）。\n\n### 显示内容\n\n"
+- fmt: "\nNow that we know how to query data, let’s discuss how to actually display\
+    \ it in a formatted way. Astro provides a convenient method called `render()`\
+    \ to render the entire content of the Markdown into a built-in Astro component\
+    \ called `<Content />`. How we build and display the content is also going to\
+    \ be driven by whether we have static site generation or server-side rendering\
+    \ mode.\n\nFor pre-rendering, we can use the `getStaticPaths()` method:\n\n```\n\
+    // /src/pages/posts/[...slug].astro\n---\nimport { getCollection } from 'astro:content';\n\
+    \nexport async function getStaticPaths() {\n  const blogEntries = await getCollection('blog');\n\
+    \  return blogEntries.map(entry => ({\n    params: { slug: entry.slug }, props:\
+    \ { entry },\n  }));\n}\n\nconst { entry } = Astro.props;\nconst { Content } =\
+    \ await entry.render();\n---\n<h1>{entry.data.title}</h1>\n<Content />\n```\n\n\
+    In the code above, we’re using `getStaticPaths()`. (We covered this method in\
+    \ the second chapter of this book as a way to cater for dynamic routes.) We then\
+    \ rely on `Astro.props` to capture the `entry`, which is going to be an object\
+    \ that contains the metadata about the entry, an `id`, a `slug`, and a `render()`\
+    \ method. This method is responsible for rendering the Markdown entry to HTML\
+    \ in the Astro template, and it does so by creating a `<Content />` component.\
+    \ What’s amazing about this is that all we need to do now is add the `<Content\
+    \ />` component to our template and we’ll be able to see the Markdown content\
+    \ rendered into HTML.\n\n## Rendering Options\n\nAs a refresher, or in case you\
+    \ missed it, the second chapter of this book discusses the various rendering options\
+    \ available.\n\nFor SSR, a slightly different approach needs to be followed. Instead\
+    \ of using `getStaticPaths()`, `Astro.params` can be utilized, as the content\
+    \ will be pulled and rendered at request time:\n\n```\n---\nimport { getEntry\
+    \ } from 'astro:content';\n\nconst { slug } = Astro.params;\nconst entry = await\
+    \ getEntry('blog', slug);\nconst { Content } = await entry.render();\n---\n<h1>{entry.data.title}</h1>\n\
+    <Content />\n```\n\n## Integrating Tailwind CSS with Astro\n\nIn the introductory\
+    \ tutorial, we talked about integrating Tailwind CSS with Astro. Tailwind has\
+    \ a [typography plugin](https://tailwindcss.com/docs/typography-plugin) (`@tailwindcss/typography`)\
+    \ that can be used to add styling to HTML rendered from Markdown. I recommend\
+    \ that you check it out if you haven’t already. Please take a look at the screenshot\
+    \ below. On the left is the rendered template from Markdown without the typography\
+    \ plugin, and on the right is the rendered template with it.\n\n![The rendered\
+    \ template with and without the typography plugin](Images/typography.png)\n\n\
+    ## View Transitions\n\nThe [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)\
+    \ offers a convenient way to generate animated transitions between various DOM\
+    \ states while simultaneously updating the DOM content in a single operation.\
+    \ Achieving this has traditionally been difficult on the Web, but with this new\
+    \ API, transitions can be handled in a rather easy way. [Studies](https://developer.chrome.com/blog/view-transitions-case-studies/#redbus)\
+    \ have shown that using the View Transitions API leads to a faster perceived site\
+    \ performance.\n\nAstro supports view transitions out of the box, with a built-in\
+    \ fallback mechanism for browsers that don’t currently support the API.\n\nThe\
+    \ out-of-the-box solution supports built-in animations, animations for forward\
+    \ and backward navigation, and automatic support for accessibility (via `prefers-reduced-motion`),\
+    \ amongst many other things.\n\n### Prefers Reduced Motion\n\nThe `prefers-reduced-motion`\
+    \ media query is important, as it allows web developers to create more inclusive\
+    \ and accessible user experiences by respecting user preferences for reduced motion,\
+    \ benefiting individuals with motion sensitivity or vestibular disorders.\n\n\
+    ### Browser Support for View Transitions\n\nWhile the View Transition API is a\
+    \ great innovation and is worth trying out, keep in mind that it’s still experimental\
+    \ and currently has [only partial browser support](https://caniuse.com/view-transitions).\n\
+    \nOne of the best ways to demonstrate view transitions is to utilize a video element\
+    \ that will maintain its state between page transitions. (Do note that we can\
+    \ also persist state between components that utilize the `client:*` directives\
+    \ as well.) An example of this is shown in [this video](https://player.vimeo.com/video/884466855?h=fdaebb6dba&badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479).\n\
+    \nLet’s assume that we have a `<Video />` component with this content:\n\n```\n\
+    ---\n// src/components/Video\nconst src = 'https://res.cloudinary.com/tamas-demo/video/upload/f_auto,q_auto/imagecon/ship.mp4';\n\
+    const {\n  autoplay = false,\n  controls = true,\n  loop = false\n} = Astro.props;\n\
+    ---\n\n<video {controls} {autoplay} {loop} transition:persist>\n  <source {src}\
+    \ />\n</video>\n```\n\nIn the code above, we’re grabbing a video from Cloudinary.\
+    \ Additionally, we’re allowing the video to automatically play and loop (start\
+    \ over) when it finishes, and we’re providing control buttons for the user. These\
+    \ settings are determined by properties sent to this video component, and if these\
+    \ properties aren’t provided, default values are used.\n\nPlease take note of\
+    \ the `transition:persist` directive. With this directive, we’ll maintain the\
+    \ state of the video player between transitions: while navigating to the next\
+    \ page, other parts of the page will show the updated content. We can use this\
+    \ component on both the `index.astro` and `about.astro` pages:\n\n```\n// src/pages/index.astro\n\
+    ---\nimport Video from '../components/Video.astro';\n---\n<!-- some other HTML\
+    \ -->\n<Video />\n```\n\nLastly, we need to enable page transitions, which we\
+    \ can either do per page or globally for the entire project. Assuming that we\
+    \ have a layout file of some sort, we can easily enable it, by importing `ViewTransitions`\
+    \ from `astro:transitions`:\n\n```\n// src/layouts/Layout.astro\n---\nimport {\
+    \ ViewTransitions } from 'astro:transitions';\n---\n<html lang=\"en\">\n  <head>\n\
+    \    <title>My site!</title>\n    <ViewTransitions />\n  </head>\n  <body>\n \
+    \   <slot />\n  </body>\n</html>\n```\n\nIn summary, the experimental View Transitions\
+    \ API simplifies visual transitions between various pages or elements through\
+    \ CSS pseudo-elements, JavaScript, and snapshots of the previous and current DOM\
+    \ states. It presents a fresh chance to enhance the perceived performance of a\
+    \ page, minimizing reliance on intricate custom JavaScript and CSS.\n\n## Demo\n\
+    \nThe [demo that we’ve deployed on StackBlitz](https://stackblitz.com/github/tpiros/sitepoint-astro)\
+    \ for this tutorial utilizes content collections. Take a look at `src/pages/posts.astro`,\
+    \ the `src/content` folder and `src/pages/posts/[...slug].astro` to check out\
+    \ the implementation details.\n\n## Conclusion\n\nIn this chapter, we delved into\
+    \ two essential features in Astro: content collections and view transitions. Content\
+    \ collection allows for efficient content management and data validation, particularly\
+    \ when working with `.md` or `.mdx` files. View transitions, on the other hand,\
+    \ provide a seamless way to enhance user navigation, all while maintaining excellent\
+    \ performance.\n\nIn the next chapter in this series, we’ll take a look at the\
+    \ built-in `Image` component in Astro, which allows for creating performant image\
+    \ assets.\n"
+  raw: "Now that we know how to query data, let’s discuss how to actually display\
+    \ it in a formatted way. Astro provides a convenient method called `render()`\
+    \ to render the entire content of the Markdown into a built-in Astro component\
+    \ called `<Content />`. How we build and display the content is also going to\
+    \ be driven by whether we have static site generation or server-side rendering\
+    \ mode.\n\nFor pre-rendering, we can use the `getStaticPaths()` method:\n\n```\n\
+    // /src/pages/posts/[...slug].astro\n---\nimport { getCollection } from 'astro:content';\n\
+    \nexport async function getStaticPaths() {\n  const blogEntries = await getCollection('blog');\n\
+    \  return blogEntries.map(entry => ({\n    params: { slug: entry.slug }, props:\
+    \ { entry },\n  }));\n}\n\nconst { entry } = Astro.props;\nconst { Content } =\
+    \ await entry.render();\n---\n<h1>{entry.data.title}</h1>\n<Content />\n```\n\n\
+    In the code above, we’re using `getStaticPaths()`. (We covered this method in\
+    \ the second chapter of this book as a way to cater for dynamic routes.) We then\
+    \ rely on `Astro.props` to capture the `entry`, which is going to be an object\
+    \ that contains the metadata about the entry, an `id`, a `slug`, and a `render()`\
+    \ method. This method is responsible for rendering the Markdown entry to HTML\
+    \ in the Astro template, and it does so by creating a `<Content />` component.\
+    \ What’s amazing about this is that all we need to do now is add the `<Content\
+    \ />` component to our template and we’ll be able to see the Markdown content\
+    \ rendered into HTML.\n\n#### Rendering Options\n\nAs a refresher, or in case\
+    \ you missed it, the second chapter of this book discusses the various rendering\
+    \ options available.\n\nFor SSR, a slightly different approach needs to be followed.\
+    \ Instead of using `getStaticPaths()`, `Astro.params` can be utilized, as the\
+    \ content will be pulled and rendered at request time:\n\n```\n---\nimport { getEntry\
+    \ } from 'astro:content';\n\nconst { slug } = Astro.params;\nconst entry = await\
+    \ getEntry('blog', slug);\nconst { Content } = await entry.render();\n---\n<h1>{entry.data.title}</h1>\n\
+    <Content />\n```\n\n#### Integrating Tailwind CSS with Astro\n\nIn the introductory\
+    \ tutorial, we talked about integrating Tailwind CSS with Astro. Tailwind has\
+    \ a [typography plugin](https://tailwindcss.com/docs/typography-plugin) (`@tailwindcss/typography`)\
+    \ that can be used to add styling to HTML rendered from Markdown. I recommend\
+    \ that you check it out if you haven’t already. Please take a look at the screenshot\
+    \ below. On the left is the rendered template from Markdown without the typography\
+    \ plugin, and on the right is the rendered template with it.\n\n![The rendered\
+    \ template with and without the typography plugin](Images/typography.png)\n\n\
+    ## View Transitions\n\nThe [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)\
+    \ offers a convenient way to generate animated transitions between various DOM\
+    \ states while simultaneously updating the DOM content in a single operation.\
+    \ Achieving this has traditionally been difficult on the Web, but with this new\
+    \ API, transitions can be handled in a rather easy way. [Studies](https://developer.chrome.com/blog/view-transitions-case-studies/#redbus)\
+    \ have shown that using the View Transitions API leads to a faster perceived site\
+    \ performance.\n\nAstro supports view transitions out of the box, with a built-in\
+    \ fallback mechanism for browsers that don’t currently support the API.\n\nThe\
+    \ out-of-the-box solution supports built-in animations, animations for forward\
+    \ and backward navigation, and automatic support for accessibility (via `prefers-reduced-motion`),\
+    \ amongst many other things.\n\n#### Prefers Reduced Motion\n\nThe `prefers-reduced-motion`\
+    \ media query is important, as it allows web developers to create more inclusive\
+    \ and accessible user experiences by respecting user preferences for reduced motion,\
+    \ benefiting individuals with motion sensitivity or vestibular disorders.\n\n\
+    #### Browser Support for View Transitions\n\nWhile the View Transition API is\
+    \ a great innovation and is worth trying out, keep in mind that it’s still experimental\
+    \ and currently has [only partial browser support](https://caniuse.com/view-transitions).\n\
+    \nOne of the best ways to demonstrate view transitions is to utilize a video element\
+    \ that will maintain its state between page transitions. (Do note that we can\
+    \ also persist state between components that utilize the `client:*` directives\
+    \ as well.) An example of this is shown in [this video](https://player.vimeo.com/video/884466855?h=fdaebb6dba&badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479).\n\
+    \nLet’s assume that we have a `<Video />` component with this content:\n\n```\n\
+    ---\n// src/components/Video\nconst src = 'https://res.cloudinary.com/tamas-demo/video/upload/f_auto,q_auto/imagecon/ship.mp4';\n\
+    const {\n  autoplay = false,\n  controls = true,\n  loop = false\n} = Astro.props;\n\
+    ---\n\n<video {controls} {autoplay} {loop} transition:persist>\n  <source {src}\
+    \ />\n</video>\n```\n\nIn the code above, we’re grabbing a video from Cloudinary.\
+    \ Additionally, we’re allowing the video to automatically play and loop (start\
+    \ over) when it finishes, and we’re providing control buttons for the user. These\
+    \ settings are determined by properties sent to this video component, and if these\
+    \ properties aren’t provided, default values are used. These variables are then\
+    \ added to the HTML `<video>` and `<source>` elements.\n\nPlease take note of\
+    \ the `transition:persist` directive. With this directive, we’ll maintain the\
+    \ state of the video player between transitions: while navigating to the next\
+    \ page, the video will keep on playing, while other parts of the page will show\
+    \ the updated content. We can use this component on both the `index.astro` and\
+    \ `about.astro` pages:\n\n```\n// src/pages/index.astro\n---\nimport Video from\
+    \ '../components/Video.astro';\n---\n<!-- some other HTML -->\n<Video />\n```\n\
+    \nLastly, we need to enable page transitions, which we can either do per page\
+    \ or globally for the entire project. Assuming that we have a layout file of some\
+    \ sort, we can easily enable it, by importing `ViewTransitions` from `astro:transitions`:\n\
+    \n```\n// src/layouts/Layout.astro\n---\nimport { ViewTransitions } from 'astro:transitions';\n\
+    ---\n<html lang=\"en\">\n  <head>\n    <title>My site!</title>\n    <ViewTransitions\
+    \ />\n  </head>\n  <body>\n    <slot />\n  </body>\n</html>\n```\n\nIn summary,\
+    \ the experimental View Transitions API simplifies visual transitions between\
+    \ various pages or elements through CSS pseudo-elements, JavaScript, and snapshots\
+    \ of the previous and current DOM states. It presents a fresh chance to enhance\
+    \ the perceived performance of a page, minimizing reliance on intricate custom\
+    \ JavaScript and CSS.\n\n## Demo\n\nThe [demo that we’ve deployed on StackBlitz](https://stackblitz.com/github/tpiros/sitepoint-astro)\
+    \ for this tutorial utilizes content collections. Take a look at `src/pages/posts.astro`,\
+    \ the `src/content` folder and `src/pages/posts/[...slug].astro` to check out\
+    \ the implementation details.\n\n## Conclusion\n\nIn this chapter, we delved into\
+    \ two essential features in Astro: content collections and view transitions. Content\
+    \ collection allows for efficient content management and data validation, particularly\
+    \ when working with `.md` or `.mdx` files. View transitions, on the other hand,\
+    \ provide a seamless way to enhance user navigation, all while maintaining excellent\
+    \ performance.\n\nIn the next chapter in this series, we’ll take a look at the\
+    \ built-in `Image` component in Astro, which allows for creating performant image\
+    \ assets.\n\n# Chapter 5: Image Optimization and Deploying Our First Astro Site\n\
+    \nIn this final chapter, we’ll look at the image optimization options offered\
+    \ by Astro, and we’ll learn how to deploy a production-ready site built with Astro."
+  toc: []
+  trans: "\n\n现在我们已经知道了如何查询数据，让我们来讨论如何实际上以格式化的方式显示它们。Astro 提供了一个名为 `render()` 的方便方法，可以将整个\
+    \ Markdown 内容渲染到一个名为 `<Content />` 的内置 Astro 组件中。我们如何构建和显示内容，也将取决于我们使用的是静态站点生成（SSG）还是服务器端渲染（SSR）模式。\n\
+    \n对于预渲染，我们可以使用 `getStaticPaths()` 方法：\n\n```\n// /src/pages/posts/[...slug].astro\n\
+    ---\nimport { getCollection } from 'astro:content';\n\nexport async function getStaticPaths()\
+    \ {\n  const blogEntries = await getCollection('blog');\n  return blogEntries.map(entry\
+    \ => ({\n    params: { slug: entry.slug }, props: { entry },\n  }));\n}\n\nconst\
+    \ { entry } = Astro.props;\nconst { Content } = await entry.render();\n---\n<h1>{entry.data.title}</h1>\n\
+    <Content />\n```\n\n在上面的代码中，我们使用了 `getStaticPaths()`。（我们在本书的第二章中介绍过这个方法，它是处理动态路由的一种方式。）然后我们依赖\
+    \ `Astro.props` 来捕获 `entry`，它是一个包含条目元数据、`id`、`slug` 以及一个 `render()` 方法的对象。该方法负责在\
+    \ Astro 模板中将 Markdown 条目渲染为 HTML，它通过创建一个 `<Content />` 组件来实现。这令人惊叹的是，我们现在只需要将\
+    \ `<Content />` 组件添加到我们的模板中，就能看到 Markdown 内容被渲染成 HTML 了。\n\n## 渲染选项\n\n作为一个回顾，或者以防你错过了内容，本书的第二章讨论了可用的各种渲染选项。\n\
+    \n对于 SSR，需要遵循稍微不同的方法。不再使用 `getStaticPaths()`，而是可以利用 `Astro.params`，因为内容将在请求时被拉取并渲染：\n\
+    \n```\n---\nimport { getEntry } from 'astro:content';\n\nconst { slug } = Astro.params;\n\
+    const entry = await getEntry('blog', slug);\nconst { Content } = await entry.render();\n\
+    ---\n<h1>{entry.data.title}</h1>\n<Content />\n```\n\n## 在 Astro 中集成 Tailwind\
+    \ CSS\n\n在入门教程中，我们讨论了如何将 Tailwind CSS 与 Astro 集成。Tailwind 有一个[排版插件](https://tailwindcss.com/docs/typography-plugin)\
+    \ (`@tailwindcss/typography`)，可以为从 Markdown 渲染的 HTML 添加样式。如果你还没有查看，建议你检查一下。请查看下面的截图。左侧是没有使用排版插件的\
+    \ Markdown 渲染模板，右侧是使用了它的模板。\n\n![带有和不带排版插件的渲染模板](img/typography.png)\n\n## 视图过渡\
+    \ (View Transitions)\n\n[View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)了一种在不同\
+    \ DOM 状态之间生成动画过渡的方法，同时在单次操作中更新 DOM 内容。这在 Web 上通常是很的，但有了这个新的 API，可以用非常简单的方式处理过渡。[研究](https://developer.chrome.com/blog/view-transitions-case-studies/#redbus)表明，使用\
+    \ View Transitions API 可以提高网站的感知性能。\n\nAstro 原生支持视图过渡，并为目前不支持该 API 的浏览器提供了内置的备备机制。\n\
+    \n这种开箱即用的方案支持内置动画、前进和后退导航的动画，以及对无障碍（通过 `prefers-reduced-motion`）的自动支持，等等许多功能。\n\
+    \n### 减少运动\n\n`prefers-reduced-motion` 媒体查询很重要，因为它允许网页开发者通过尊重用户对减少运动的偏好来创建更具包容性和无障碍的用户体验，从而使运动敏感或前庭功能障碍的人士受益。\n\
+    \n### 浏览器对视图过渡的支持\n\n虽然 View Transition API 是一项伟创新并且值得尝试，但请记住它仍然处于实验阶段，并且目前[只有部分浏览器支持](https://caniuse.com/view-transitions)。\n\
+    \n演示视图过渡的最佳方法之一是利用视频元素，该元素将在页面切换之间保持其状态。（请注意，我们也可以在利用 `client:*` 指令的组件之间持久化状态。）这种示例可以在此视频](https://player.vimeo.com/video/884466855?h=fdaebb6dba&badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479)中所示。\n\
+    \n假设我们有一个如下内容的 `<Video />` 组件：\n\n```\n---\n// src/components/Video\nconst src\
+    \ = 'https://res.cloudinary.com/tamas-demo/video/upload/f_auto,q_auto/imagecon/ship.mp4';\n\
+    const {\n  autoplay = false,\n  controls = true,\n  loop = false\n} = Astro.props;\n\
+    ---\n\n<video {controls} {autoplay} {loop} transition:persist>\n  <source {src}\
+    \ />\n</video>\n```\n\n在上面的代码中，我们从 Cloudinary 获取了一个视频。此外，我们允许视频在结束后自动播放并循环（重新），并为用户提供了控制按钮。这些设置由发送到此视频组件的属性决定，如果没有提供这些属性，将使用默认值。\n\
+    \n请注意 `transition:persist` 指令。通过此指令，我们在过渡之间维持视频播放器的状态：在导航到下一页时，面的其他部分将显示更新的内容。我们可以在\
+    \ `index.astro` 和 `about.astro` 页面上使用此组件：\n\n```\n// src/pages/index.astro\n---\n\
+    import Video from '../components/Video.astro';\n---\n<!-- 一其他 HTML -->\n<Video\
+    \ />\n```\n\n最后，我们需要启用页面过渡，可以按页面启用，也可以为整个项目全局启用。假设我们有某种布局文件，可以通过从 `astro:transitions`\
+    \ 导入 `ViewTransitions` 来轻松启用它：\n\n```\n// src/layouts/Layout.astro\n---\nimport\
+    \ { ViewTransitions } from 'astro:transitions';\n---\n<html lang=\"en\">\n  <head>\n\
+    \    <title>我的网站！</title>\n    <ViewTransitions />\n  </head>\n  <body>\n    <slot\
+    \ />\n  </body>\n</html>\n```\n\n总之，实验性的 View Transitions API 通过 CSS 伪元素、JavaScript\
+    \ 以及之前和当前 DOM 状态的快照简化了不同页面或元素之间的视觉过渡。它提供了一个增强页面感知性能的新机会，减少了对复杂的自定义 JavaScript\
+    \ 和 CSS 的依赖。\n\n## Demo\n\n我们在 StackBlitz 上为本教程部署的演示](https://stackblitz.com/github/tpiros/sitepoint-astro)\
+    \ 使用内容集合。查看 `src/pages/posts.astro`、`src/content` 文件夹以及 `src/pages/posts/[...slug].astro`\
+    \ 以检查实现细节。\n\n## 总结\n\n在本章中，我们深入探讨了 Astro 的两个核心功能：内容集合和视图过渡。内容集合允许高效的内容管理和数据验证，特别是在处理\
+    \ `.md` 或 `.mdx` 文件时。而视图过渡则提供了一种无缝增强用户导航的方法，同时保持了出色的性能。\n\n在本系列的下一章中，我们将查看 Astro\
+    \ 内置的 `Image` 组件，它允许创建高性能的图像资源。\n\n"
+- fmt: "\nImage optimization is (or rather, should be) an important discussion point,\
+    \ as the heaviest resources on a web page are generally image (or video) assets.\
+    \ Therefore, optimizing images plays a crucial part in web development. Today,\
+    \ there are multiple image formats. There are also many tools for converting images\
+    \ between formats so that they become smaller in terms of kilobytes, resulting\
+    \ in better experiences for users. This result is measured by the [Largest Contentful\
+    \ Paint](https://web.dev/articles/lcp) metric, which is part of [Core Web Vitals](https://web.dev/explore/learn-core-web-vitals).\n\
+    \nFortunately, Astro provides us with some incredibly handy tools right out of\
+    \ the box that make image optimization a snap. Let’s take a look!\n\n# The Image\
+    \ component\n\nAstro provides a built-in `<Image />` component that utilizes the\
+    \ [Sharp](https://www.npmjs.com/package/sharp) library or [Squoosh](https://www.npmjs.com/package/@squoosh/lib)\
+    \ behind the scenes to optimize images (the default is `Sharp`). This is an excellent\
+    \ starting point if you want to achieve quick improvements in your image performance.\
+    \ The component takes an image (which is an unoptimized image asset) and produces\
+    \ an optimized version of it. The good news is that, even without changing any\
+    \ defaults, you can get a lot of savings right out of the box.\n\n## Switching\
+    \ from Sharp to Squoosh\n\nTo change from `sharp` to `squoosh`, you need to edit\
+    \ your `astro.config.mjs` file:\n\n```\nimport { defineConfig, squooshImageService\
+    \ } from 'astro/config';\n\nexport default defineConfig({\n  image: {\n    service:\
+    \ squooshImageService(),\n  },\n});\n```\n\n## Squoosh CLI\n\nWhile we could choose\
+    \ the Squoosh CLI as an alternative to the default Sharp library, unfortunately\
+    \ Squoosh CLI is no longer actively maintained.\n\nTo use the `<Image />` component,\
+    \ we first simply place our image assets in the `src` folder (subfolders can be\
+    \ created as needed). Then, in any of our `.astro` files, we import them—along\
+    \ with the `<Image />` component—like this:\n\n```\nimport { Image } from 'astro:assets';\n\
+    import spain from '~/assets/spain.jpeg';\n```\n\nIn the code above, we’re importing\
+    \ both the `Image` component as well as an image (`spain.jpeg`).\n\n## Storing\
+    \ Images in the public Folder\n\nWe can also store images in the `public` folder,\
+    \ but that’s always going to be served from the `build` folder without any processing.\n\
+    \nWhen we’re ready to display the image(s), we can add the following code:\n\n\
+    ```\n<Image src={spain} width={400} alt=\"Some Text\" />\n```\n\nIn the code above,\
+    \ we’re using the previously imported `Image` component and setting its source\
+    \ (`src`) attribute to be equal to the image we’ve also imported earlier. We’re\
+    \ also adding a `width` and `alt` attribute to the component.\n\n## Cumulative\
+    \ Layout Shift\n\nAlways add a `width` or `height` property to your image to reduce\
+    \ your Cumulative Layout Shift (which is measured by the Core Web Vitals).\n\n\
+    `Cumulative Layout Shift` measures the visual stability of a page by quantifying\
+    \ the unexpected layout shifts that occur during the page’s loading time.\n\n\
+    As an additional exercise, we can run `console.log(spain)` to see the properties\
+    \ accessible from the imported image object. Also, inspect the network panel in\
+    \ the browser’s developer tools to observe the new image weight, as well as the\
+    \ image headers, which should now be set to a so-called “next-gen” image format\
+    \ such as `.webp`.\n\nDuring the production build of our Astro project, we’ll\
+    \ find details about image optimization in the build log for all our image assets,\
+    \ highlighting the savings as well as the time it took for the tool to optimize\
+    \ the image:\n\n```\n generating optimized images\n  ▶ /_astro/spain.9abbae23_ZpzbJG.webp\
+    \ (before: 2724kB, after: 24kB) (+78ms) (1/1)\n```\n\n## getImage\n\nAstro also\
+    \ has a [`getImage()` method](https://docs.astro.build/en/reference/api-reference/#getimage)\
+    \ that can do on-demand image optimization without using the `<Image />` component.\
+    \ But remember that this method only works with server-only APIs.\n\n# Performance\n\
+    \nChanging the width of the image via the image component actually generates an\
+    \ image with the given width (as opposed to just shrinking the original image\
+    \ down with CSS in the browser), which therefore yields further bandwidth savings.\
+    \ Generally speaking, it’s bad practice to transfer the image at its original\
+    \ size over the network and shrink it down using CSS only on the client side.\n\
+    \n## Don’t Be Lazy\n\nBy default, the `<Image />` component will generate an `<img>`\
+    \ element that has the `loading=\"lazy\"` attribute added to it. In my opinion,\
+    \ this is really dangerous, as it can cause performance issues related to the\
+    \ Largest Contentful Paint Core Web Vital metric. If an image element is being\
+    \ considered for the LCP calculation—in other words, if the image is the largest\
+    \ element that loads for the page and it’s “above the fold”—we shouldn’t set the\
+    \ image to load lazily. Be careful!\n\nFor more advanced image manipulation—such\
+    \ as generating thumbnails, cropping, or adding overlays—we may need to use a\
+    \ service like [Cloudinary](https://cloudinary.com). In fact, since Cloudinary\
+    \ provides a Node.js SDK that has the capacity to generate a fully optimized image\
+    \ and render it via the `<img>` element, it works charmingly with an Astro project\
+    \ as well.\n\n```\n---\nimport { Image } from 'astro:assets';\nimport { v2 as\
+    \ cloudinary } from 'cloudinary';\n\ncloudinary({\n  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,\n\
+    \  api_key: process.env.CLOUDINARY_API_KEY,\n  api_secret: process.env.CLOUDINARY_API_SECRET,\n\
+    });\n\nconst cloudinaryImage = cloudinary.image(\"sample-demo\", {\n  transformation:\
+    \ [\n    { width: 800, crop: \"scale\" },\n    { color: \"#ff00\", font_family:\
+    \ \"Roboto\", font_size: 70, font_weight: \"bold\", overlay: \"Munich, Germany\"\
+    \ },\n    { gravity: \"south\", y: 20 }\n  ]\n});\n---\n\n<div set:html={cloudinaryImage}></div>\n\
+    ```\n"
+  raw: "Image optimization is (or rather, should be) an important discussion point,\
+    \ as the heaviest resources on a web page are generally image (or video) assets.\
+    \ Therefore, optimizing images plays a crucial part in web development. Today,\
+    \ there are multiple image formats. There are also many tools for converting images\
+    \ between formats so that they become smaller in terms of kilobytes, resulting\
+    \ in better experiences for users. This result is measured by the [Largest Contentful\
+    \ Paint](https://web.dev/articles/lcp) metric, which is part of [Core Web Vitals](https://web.dev/explore/learn-core-web-vitals).\n\
+    \nFortunately, Astro provides us with some incredibly handy tools right out of\
+    \ the box that make image optimization a snap. Let’s take a look!\n\n## The Image\
+    \ component\n\nAstro provides a built-in `<Image />` component that utilizes the\
+    \ [Sharp](https://www.npmjs.com/package/sharp) library or [Squoosh](https://www.npmjs.com/package/@squoosh/lib)\
+    \ behind the scenes to optimize images (the default is Sharp). This is an excellent\
+    \ starting point if you want to achieve quick improvements in your image performance.\
+    \ The component takes an image (which is an unoptimized image asset) and produces\
+    \ an optimized version of it. The good news is that, even without changing any\
+    \ defaults, you can get a lot of savings right out of the box.\n\n#### Switching\
+    \ from Sharp to Squoosh\n\nTo change from `sharp` to `squoosh`, you need to edit\
+    \ your `astro.config.mjs` file:\n\n```\nimport { defineConfig, squooshImageService\
+    \ } from 'astro/config';\n\nexport default defineConfig({\n  image: {\n    service:\
+    \ squooshImageService(),\n  },\n});\n```\n\n#### Squoosh CLI\n\nWhile we could\
+    \ choose the Squoosh CLI as an alternative to the default Sharp library, unfortunately\
+    \ Squoosh CLI is no longer actively maintained.\n\nTo use the `<Image />` component,\
+    \ we first simply place our image assets in the `src` folder (subfolders can be\
+    \ created as needed). Then, in any of our `.astro` files, we import them—along\
+    \ with the `<Image />` component—like this:\n\n```\nimport { Image } from 'astro:assets';\n\
+    import spain from '~/assets/spain.jpeg';\n```\n\nIn the code above, we’re importing\
+    \ both the `Image` component as well as an image (`spain.jpeg`).\n\n#### Storing\
+    \ Images in the public Folder\n\nWe can also store images in the `public` folder,\
+    \ but that’s always going to be served from the `build` folder without any processing.\n\
+    \nWhen we’re ready to display the image(s), we can add the following code:\n\n\
+    ```\n<Image src={spain} width={400} alt=\"Some Text\" />\n```\n\nIn the code above,\
+    \ we’re using the previously imported `Image` component and setting its source\
+    \ (`src`) attribute to be equal to the image we’ve also imported earlier. We’re\
+    \ also adding a `width` and `alt` attribute to the component.\n\n#### Cumulative\
+    \ Layout Shift\n\nAlways add a `width` or `height` property to your image to reduce\
+    \ your Cumulative Layout Shift (which is measured by the Core Web Vitals).\n\n\
+    **Cumulative Layout Shift** measures the visual stability of a page by quantifying\
+    \ the unexpected layout shifts that occur during the page’s loading time.\n\n\
+    As an additional exercise, we can run `console.log(spain)` to see the properties\
+    \ accessible from the imported image object. Also, inspect the network panel in\
+    \ the browser’s developer tools to observe the new image weight, as well as the\
+    \ image headers, which should now be set to a so-called “next-gen” image format\
+    \ such as `.webp`.\n\nDuring the production build of our Astro project, we’ll\
+    \ find details about image optimization in the build log for all our image assets,\
+    \ highlighting the savings as well as the time it took for the tool to optimize\
+    \ the image:\n\n```\n generating optimized images\n  ▶ /_astro/spain.9abbae23_ZpzbJG.webp\
+    \ (before: 2724kB, after: 24kB) (+78ms) (1/1)\n```\n\n#### getImage\n\nAstro also\
+    \ has a [`getImage()` method](https://docs.astro.build/en/reference/api-reference/#getimage)\
+    \ that can do on-demand image optimization without using the `<Image />` component.\
+    \ But remember that this method only works with server-only APIs.\n\n## Performance\n\
+    \nChanging the width of the image via the image component actually generates an\
+    \ image with the given width (as opposed to just shrinking the original image\
+    \ down with CSS in the browser), which therefore yields further bandwidth savings.\
+    \ Generally speaking, it’s bad practice to transfer the image at its original\
+    \ size over the network and shrink it down using CSS only on the client side.\n\
+    \n#### Don’t Be Lazy\n\nBy default, the `<Image />` component will generate an\
+    \ `<img>` element that has the `loading=\"lazy\"` attribute added to it. In my\
+    \ opinion, this is really dangerous, as it can cause performance issues related\
+    \ to the Largest Contentful Paint Core Web Vital metric. If an image element is\
+    \ being considered for the LCP calculation—in other words, if the image is the\
+    \ largest element that loads for the page and it’s “above the fold”—we shouldn’t\
+    \ set the image to load lazily. Be careful!\n\nFor more advanced image manipulation—such\
+    \ as generating thumbnails, cropping, or adding overlays—we may need to use a\
+    \ service like [Cloudinary](https://cloudinary.com). In fact, since Cloudinary\
+    \ provides a Node.js SDK that has the capacity to generate a fully optimized image\
+    \ and render it via the `<img>` element, it works charmingly with an Astro project\
+    \ as well. Here’s how this would look:\n\n```\n---\nimport { Image } from 'astro:assets';\n\
+    import { v2 as cloudinary, config } from 'cloudinary';\n\nconfig({\n  cloud_name:\
+    \ 'tamas-demo',\n  api_key: import.meta.env.CLOUDINARY_API_KEY,\n  api_secret:\
+    \ import.meta.env.CLOUDINARY_API_SECRET,\n  secure: true\n});\n\nconst cloudinaryImage\
+    \ = cloudinary.image(\"r6bswlzed6oisy4bu4sb\", {\n  transformation: [\n    { width:\
+    \ 800, crop: \"scale\" },\n    { color: \"#ff0\", overlay: {font_family: \"Roboto\"\
+    , font_size: 70, font_weight: \"bold\", text: \"Munich, Germany\" } },\n    {\
+    \ flags: \"layer_apply\", gravity: \"south\", y: 20 }\n  ]\n})\n---\n\n<div class=\"\
+    py-6\" set:html={cloudinaryImage}></div>\n```\n\nIn the code above, we’re importing\
+    \ Astro’s `Image` component, as well as the Cloudinary Node.js SDK. Since this\
+    \ is a third-party service, we need to configure it by adding our Cloudinary username\
+    \ (`cloud_name`), the API key, and the secret—all of which can all be found in\
+    \ our Cloudinary account’s dashboard.\n\nUsing the Cloudinary Node.js SDK, we’re\
+    \ creating an image transformation. Each object in the `transformation` array\
+    \ modifies the image. The first object crops the image to a width of `800`. The\
+    \ second object overlays the image with text, using the Roboto font face at a\
+    \ size of `70px`. The overlay text is “Munich, Germany”. The last object places\
+    \ the text overlay at the bottom part of the image (`south`), `20px` from the\
+    \ bottom (`y: 20`).\n\nThe code above generates an actual `<img>` element, and\
+    \ from this point usage of the `set:html` directive is required. Also note that\
+    \ the code is using environment variables that live in a `.env` file. The resulting\
+    \ image will have a text overlay (where the text overlay has a few separate settings\
+    \ such as color and font face) carefully placed within the image. All of this\
+    \ is generated at build time, so the result will be an image with the text already\
+    \ overlaid.\n\n#### Environment Variable Rules\n\nIt’s worth noting here that\
+    \ the rules governing environment variables are consistent with those outlined\
+    \ in the [Vite documentation](https://vitejs.dev/guide/env-and-mode.html).\n\n\
+    ## Deployment\n\nNow that we’ve gone through the steps of preparing our Astro\
+    \ site, we come to the topic of deployment, as we get ready to show our project\
+    \ to the world. Astro deployment couldn’t be easier: we simply run the `npm run\
+    \ dev` command, which will result in the creation of a folder called `dist` in\
+    \ the root project folder.\n\n### Local Preview\n\nIf we want to see what our\
+    \ site looks like after a build, we can run `npx http-server dist/` (or use any\
+    \ other way) to serve the content of the `dist` folder. I also recommend opening\
+    \ up a few files in that folder to see what the Astro build has produced."
+  toc: []
+  trans: "\n\n图像优化是一个（或者说，应该是）一个重要的讨论点，因为网页上最重的资源通常是图像（或视频）资产。因此，优化图像在 Web 开发中起着至关重要的作用。今天有多种图像格式，也有许多工具可以在格式之间转换图像，以减小其字节数，从而为用户提供更好的体验。这种结果通过[最大内容绘制](https://web.dev/articles/lcp)\
+    \ 指标来衡量，该指标是[核心 Web 指标](https://web.dev/explore/learn-core-web-vitals)的一部分。\n\n\
+    幸运的是，Astro 为我们提供了一些非常实用的箱箱工具，让图像优化变得轻而易。让我们来看看！\n\n# Image 组件\n\nAstro 提供了一个内置的\
+    \ `<Image />` 组件，它在后台利用 [Sharp](https://www.npmjs.com/package/sharp) 库或 [Squoosh](https://www.npmjs.com/package/@squoosh/lib)\
+    \ 来优化图像（默认使用 `Sharp`）。如果你想快速提高图像性能，这是一个极佳的起点。该组件接收一个图像（未优化的图像资产）并生成其优化版本。好消息是，即使不更改任何默认设置，你也可以获得大量的节省。\n\
+    \n## 从 Sharp 切换到 Squoosh\n\n要从 `sharp` 切换到 `squoosh`，你需要编辑你的 `astro.config.mjs`\
+    \ 文件：\n\n```\nimport { defineConfig, squooshImageService } from 'astro/config';\n\
+    \nexport default defineConfig({\n  image: {\n    service: squooshImageService(),\n\
+    \  },\n});\n```\n\n## Squoosh CLI\n\n虽然选择 Squoosh CLI 作为默认 Sharp 库的替代方案，但遗憾的是\
+    \ Squoosh CLI 不再活跃维护。\n\n要使用 `<Image />` 组件，我们首先将图像资产放在 `src` 文件夹中（根据需要创建子文件夹）。然后在我们的任何\
+    \ `.astro` 文件中，像这样导入它们——连同 `<Image />` 组件：\n\n```\nimport { Image } from 'astro:assets';\n\
+    import spain from '~/assets/spain.jpeg';\n```\n\n在上面的代码中，我们同时导入了 `Image` 组件和图像（`spain.jpeg`）。\n\
+    \n## 在 public 文件夹中存储图像\n\n我们也可以将图像存储在 `public` 文件夹中，但它们始终从 `build` 文件夹中提供，而不经过任何处理。\n\
+    \n当我们准备好显示图像时，可以添加以下代码：\n\n```\n<Image src={spain} width={400} alt=\"Some Text\"\
+    \ />\n```\n\n在上面的代码中，我们使用了之前导入的 `Image` 组件，并将其源（`src`）属性设置为我们之前导入的图像。我们还为组件添加了\
+    \ `width` 和 `alt` 属性。\n\n## 累计布局偏移\n\n始终为你的图像添加 `width` 或 `height` 属性，以减少累计布局偏移（Cumulative\
+    \ Layout Shift，由核心 Web 指标衡量）。\n\n`Cumulative Layout Shift` 通过量化页面加载期间发生的意外布局偏移来衡量页面的视觉稳定性。\n\
+    \n作为一个额外的练习，我们可以运行 `console.log(spain)` 来查看从导入图像对象可以访问的属性。此外，检查浏览器开发者工具中的网络面板以观察新的图像权重，以及图像头，这些头现在应该被设置为所谓的“下一代”图像格式，例如\
+    \ `.webp`。\n\n在 Astro 项目的生产构建期间，我们将在构建日志中找到所有图像资产的优化详细信息，突出显示节省的空间以及工具优化图像所需的时间：\n\
+    \n```\n generating optimized images\n  ▶ /_astro/spain.9abbae23_ZpzbJG.webp (before:\
+    \ 2724kB, after: 24kB) (+78ms) (1/1)\n```\n\n## getImage\n\nAstro 还有一个 [`getImage()\
+    \ 方法](https://docs.astro.build/en/reference/api-reference/#getimage)，可以在不使用 `<Image\
+    \ />` 组件的情况下进行按需图像优化。但请记住，该方法仅适用于服务器端 API。\n\n# 性能\n\n通过图像组件更改图像宽度实际上会生成一个具有给定宽度的图像（而不是仅仅在浏览器中使用\
+    \ CSS 缩小原始图像），从而进一步节省了带宽。通常情况下，通过网络以原始大小传输图像并仅在客户端使用 CSS 将其缩小是一种不良的做法。\n\n## 不要偷懒\n\
+    \n默认情况下，`<Image />` 组件将生成一个带有 `loading=\"lazy\"` 属性的 `<img>` 元素。在我看来，这是非常危险的，因为可能会导致与最大内容绘制核心\
+    \ Web 指标相关的性能问题。如果一个图像元素被用于 LCP 计算——也就是说，如果该图像是页面加载的最大元素且位于“折线以上”——我们就不应该将图像设置为懒加载加载。小心！\n\
+    \n对于更高级的图像处理——例如生成缩略图、裁剪或添加叠加层——我们可能需要使用如 [Cloudinary](https://cloudinary.com)\
+    \ 服务。事实上，由于 Cloudinary 提供了 Node.js SDK，能够生成完全优化的图像并通过 `<img>` 元素进行渲染，它与 Astro\
+    \ 项目的配合也十分完美。\n\n```\n---\nimport { Image } from 'astro:assets';\nimport { v2\
+    \ as cloudinary } from 'cloudinary';\n\ncloudinary({\n  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,\n\
+    \  api_key: process.env.CLOUDINARY_API_KEY,\n  api_secret: process.env.CLOUDINARY_API_SECRET,\n\
+    });\n\nconst cloudinaryImage = cloudinary.image(\"sample-demo\", {\n  transformation:\
+    \ [\n    { width: 800, crop: \"scale\" },\n    { color: \"#ff00\", font_family:\
+    \ \"Roboto\", font_size: 70, font_weight: \"bold\", overlay: \"Munich, Germany\"\
+    \ },\n    { gravity: \"south\", y: 20 }\n  ]\n});\n---\n\n<div set:html={cloudinaryImage}></div>\n\
+    ```\n\n"
+- fmt: '
+
+    Depending on whether we have static site generation mode or server-side rendering
+    mode switched on, the type of deployment provider that we can use changes. For
+    example, a static site can be easily deployed to GitHub Pages or Cloudflare Pages,
+    while a site utilizing SSR can be deployed to Netlify or Vercel. For a full, filterable
+    list of the various deployment options on offer, [refer to the Astro documentation](https://docs.astro.build/en/guides/deploy/).
+
+
+    Also, bear in mind that, when using SSR mode with Astro, we need to [install an
+    adapter and configure it](https://docs.astro.build/en/guides/server-side-rendering/#adding-an-adapter)
+    appropriately.
+
+
+    ## Conclusion
+
+
+    Since this is the last chapter, let’s summarize what we’ve learned.
+
+
+    Astro is a modern frontend framework allowing developers to create performant
+    websites. It combines the benefits of static site generation with dynamic interactivity,
+    making it a powerful choice for building fast and efficient web applications.
+    Astro’s focus on performance and developer experience has led to a framework that’s
+    gaining popularity among developers looking for a fresh approach to web development.
+
+
+    In this book, we looked at Astro’s versatile rendering model, which blends static
+    site generation and server-side rendering. It allows developers to choose how
+    and when content is rendered, providing excellent flexibility.
+
+
+    We also looked at Astro’s data fetching features. Astro supports top-level `await`,
+    making it easy to fetch data from APIs or other sources. Developers can use the
+    `Fetch API` and modern web APIs without the need for third-party dependencies.
+
+
+    We also talked about content collections, a valuable feature for managing content,
+    especially when working with Markdown (`.md` or `.mdx`) files. This empowers developers
+    to maintain and validate content easily within an Astro project while ensuring
+    TypeScript type safety. In that chapter, we also explored the `View Transition
+    API`-an experimental feature in browsers that simplifies visual transitions between
+    pages or elements by combining CSS pseudo-elements, JavaScript, and DOM state
+    snapshots.
+
+
+    In this final chapter, we looked at Astro’s capabilities for image optimization,
+    minimizing the performance impact of images on web apps. Astro’s built-in image
+    optimization capabilities enable developers to create visually appealing websites
+    without compromising load times.
+
+
+    I hope you’ve enjoyed reading this series on Astro, and that you’re as enthusiastic
+    about Astro as I am. The last step in your learning process is to get your hands
+    dirty. Go and try out Astro today!
+
+    '
+  raw: 'Depending on whether we have static site generation mode or server-side rendering
+    mode switched on, the type of deployment provider that we can use changes. For
+    example, a static site can be easily deployed to GitHub Pages or Cloudflare Pages,
+    while a site utilizing SSR can be deployed to Netlify or Vercel. For a full, filterable
+    list of the various deployment options on offer, [refer to the Astro documentation](https://docs.astro.build/en/guides/deploy/).
+
+
+    Also, bear in mind that, when using SSR mode with Astro, we need to [install an
+    adapter and configure it](https://docs.astro.build/en/guides/server-side-rendering/#adding-an-adapter)
+    appropriately.
+
+
+    ## Conclusion
+
+
+    Since this is the last chapter, let’s summarize what we’ve learned.
+
+
+    Astro is a modern frontend framework allowing developers to create performant
+    websites. It combines the benefits of static site generation with dynamic interactivity,
+    making it a powerful choice for building fast and efficient web applications.
+    Astro’s focus on performance and developer experience has led to a framework that’s
+    gaining popularity among developers looking for a fresh approach to web development.
+
+
+    In this book, we looked at Astro’s versatile rendering model, which blends static
+    site generation and server-side rendering. It allows developers to choose how
+    and when content is rendered, providing excellent flexibility.
+
+
+    We also looked at Astro’s data fetching features. Astro supports top-level `await`,
+    making it easy to fetch data from APIs or other sources. Developers can use the
+    Fetch API and modern web APIs without the need for third-party dependencies.
+
+
+    We also talked about content collections, a valuable feature for managing content,
+    especially when working with Markdown (`.md` or `.mdx`) files. This empowers developers
+    to maintain and validate content easily within an Astro project while ensuring
+    TypeScript type safety. In that chapter, we also explored the View Transition
+    API—an experimental feature in browsers that simplifies visual transitions between
+    pages or elements by combining CSS pseudo-elements, JavaScript, and DOM state
+    snapshots.
+
+
+    In this final chapter, we looked at Astro’s capabilities for image optimization,
+    minimizing the performance impact of images on web apps. Astro’s built-in image
+    optimization capabilities enable developers to create visually appealing websites
+    without compromising load times.
+
+
+    I hope you’ve enjoyed reading this series on Astro, and that you’re as enthusiastic
+    about Astro as I am. The last step in your learning process is to get your hands
+    dirty. Go and try out Astro today!'
+  toc: []
+  trans: '
+
+
+    取决于我们是否开启了静态站点生成模式或服务器端渲染模式，我们可以使用的部署提供商类型会发生变化。例如，静态站点可以轻松地部署到 GitHub Pages 或
+    Cloudflare Pages，而利用 SSR 的站点可以部署到 Netlify 或 Vercel。有关提供的完整且可筛选部署选项列表，请[参考 Astro
+    文档](https://docs.astro.build/en/guides/deploy/)。
+
+
+    此外，请记住，当使用 Astro 的 SSR 模式时，我们需要相应地[安装并配置适配器](https://docs.astro.build/en/guides/server-side-rendering/#adding-an-adapter)。
+
+
+    ## 结论
+
+
+    由于这是最后一章，让我们总结一下我们学到的内容。
+
+
+    Astro 是一个现代前端框架，允许开发者创建高性能的网站。它将静态站点生成的优势与动态交互性相结合，使其成为构建快速高效 Web 应用的强大选择。Astro
+    对性能和开发者体验的关注，使得该框架在寻求新颖 Web 开发方式的开发者中变得越来越流行。
+
+
+    在书中，我们研究了 Astro 多能的渲染模型，该模型融合了静态站点生成和服务器端渲染。它允许开发者选择内容的渲染方式和时，提供了极佳的灵活性。
+
+
+    我们还研究了 Astro 的数据获取功能。Astro 支持顶层 `await`，使得从 API 或其他源获取数据变得简单。开发者可以使用 `Fetch API`
+    和现代 Web API，而无需第三方依赖。
+
+
+    我们还讨论了内容集合（content collections），这是管理内容的一项重要功能，特别是在处理 Markdown（`.md` 或 `.mdx`）文件时。它让开发者能够轻松在
+    Astro 项目中维护和验证内容，同时确保 TypeScript 的类型安全。在该章中，我们还探索了 `View Transition API`——这是一个浏览器实验性功能，通过结合
+    CSS 伪元素、JavaScript 和 DOM 状态快照，简化页面或元素之间的视觉过渡。
+
+
+    在最后一章中，我们查看了 Astro 的图像优化能力，以减少图像对 Web 应用的性能影响。Astro 内置的图像优化功能允许开发者在不影响加载时间的情况下创建具有视觉吸引力的网站。
+
+
+    希望你喜欢这一系列关于 Astro 的文章，并且像我一样对 Astro 热热。学习过程的最后一步是付诸实践。今天就去尝试 Astro 吧！
+
+
+    '

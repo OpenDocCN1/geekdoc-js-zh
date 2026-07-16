@@ -1,0 +1,168 @@
+name: Unleashing the Power of Astro
+name_cn: 释放 Astro 的力量
+slug: unleashing-the-power-of-astro
+toc:
+- - '#'
+  - 释放 Astro 的力量
+- - '##'
+  - 关于 SitePoint
+- - '##'
+  - 关于作者
+- - '#'
+  - 前言
+- - '##'
+  - 谁应该读这本书？
+- - '##'
+  - 使用的惯例
+- - '###'
+  - 代码示例
+- - '###'
+  - 提示、备注和警告
+- - '####'
+  - 嘿，你！
+- - '####'
+  - 咳，打扰一下……
+- - '####'
+  - 确保你始终……
+- - '####'
+  - 注意！
+- - '##'
+  - 补充材料
+- - '#'
+  - '第 1 章：入门 Astro '
+- - '##'
+  - Astro 的核心概念
+- - '##'
+  - 开始使用 Astro
+- - '###'
+  - npm
+- - '###'
+  - 启动模板
+- - '##'
+  - 项目结构
+- - '###'
+  - 文件扩展名
+- - '##'
+  - Astro 文件的结构
+- - '###'
+  - 放置 JavaScript
+- - '##'
+  - 客户端 JavaScript 与构建时
+- - '##'
+  - Astro Astro 组件
+- - '##'
+  - 自定义集成
+- - '##'
+  - 演示
+- - '##'
+  - 总结
+- - '#'
+  - 第 2 章：Astro 中的渲染选项：构建布局
+- - '##'
+  - Astro 中的布局
+- - '###'
+  - 混合 HTML 元素与 Astro 组件
+- - '###'
+  - Astro.props
+- - '####'
+  - 全局对象属性
+- - '###'
+  - Slot
+- - '##'
+  - Components
+- - '##'
+  - Routing
+- - '###'
+  - Static Routes
+- - '###'
+  - Dynamic Routes
+- - '####'
+  - 404 Pages
+- - '####'
+  - Rest Params
+- - '####'
+  - Path Undefined
+- - '##'
+  - Server-side Rendering
+- - '###'
+  - Adding the Node Adapter
+- - '###'
+  - Hybrid Rendering
+- - '##'
+  - Server-side Rendering Routes
+- - '###'
+  - Endpoints
+- - '###'
+  - 使用 api 文件夹
+- - '###'
+  - 访问 request 对象
+- - '###'
+  - 服务器端点
+- - '###'
+  - 处理 GET、POST 和 DELETE 请求
+- - '###'
+  - 使用 request 对象
+- - '##'
+  - 交互式组件的水化（Hydration）
+- - '###'
+  - 水化策略总结
+- - '##'
+  - 获取执行
+- - '##'
+  - 使用 GraphQL
+- - '##'
+  - 从服务器端点检索数据
+- - '###'
+  - 受边界保护的敏感数据
+- - '##'
+  - 表单
+- - '###'
+  - formData 和 SSR
+- - '##'
+  - 开始使用内容集合
+- - '###'
+  - Markdown 文件与前置元数据（Frontmatter）
+- - '#'
+  - Some Marketing Promo
+- - '###'
+  - Slug 的生成
+- - '###'
+  - 查询数据
+- - '###'
+  - getCollection vs getEntries
+- - '###'
+  - 显示内容
+- - '##'
+  - 渲染选项
+- - '##'
+  - 在 Astro 中集成 Tailwind CSS
+- - '##'
+  - 视图过渡 (View Transitions)
+- - '###'
+  - 减少运动
+- - '###'
+  - 浏览器对视图过渡的支持
+- - '##'
+  - Demo
+- - '##'
+  - 总结
+- - '#'
+  - Image 组件
+- - '##'
+  - 从 Sharp 切换到 Squoosh
+- - '##'
+  - Squoosh CLI
+- - '##'
+  - 在 public 文件夹中存储图像
+- - '##'
+  - 累计布局偏移
+- - '##'
+  - getImage
+- - '#'
+  - 性能
+- - '##'
+  - 不要偷懒
+- - '##'
+  - 结论
+- - '###'
+  - 修复说明：

@@ -1,0 +1,912 @@
+- "# TypeScript 专业人士笔记：JavaScript 的类型超集\n\n\n\n![](img/Image00012.jpg)\n\n\n![](img/Image00000.jpg)\n\
+  \n\n\n\n## 第 27.3 节：TSLint 规则集\n\n## 第 27.4 节：基础 tslint.json 设置\n\n## 第 27.5 节：使用预定义的规则集作为默认\n\
+  \n# 第 28 章：tsconfig.json\n\n## 第 28.1 节：使用 tsconfig.json 创建 TypeScript 项目\n\n##\
+  \ 第 28.2 节：减少编程错误的配置\n\n\n\n\n\n## 第 28.3 节：compileOnSave 80\n## 第 28.4 节：注释 80\n\
+  ## 第 28.5 节：preserveConstEnums 81\n\n## 第 29 章：调试 82\n## 第 29.1 节：在 WebStorm 中配合\
+  \ ts-node 使用 TypeScript 82\n## 第 29.2 节：在 Visual Studio Code 中配合 ts-node 使用 TypeScript\
+  \ 83\n## 第 29.3 节：在 Visual Studio Code 中配合 SourceMaps 使用 JavaScript 84\n## 第 29.4\
+  \ 节：在 WebStorm 中配合 SourceMaps 使用 JavaScript 84\n\n## 第 30 章：单元测试 86\n## 第 30.1 节：tape\
+  \ 86\n## 第 30.2 节：jest (ts-jest) 87\n## 第 30.3 节：Als 89\n## 第 30.4 节：chai-immutable\
+  \ 插件 89\n\n## 致谢 91\n\n你可能喜欢 93\n\n# 第 1 章：TypeScript 入门\n\n## 版本发布日期\n\n- 2.8.3\
+  \ 2018-04-20\n- 2.8 2018-03-28\n- 2.8 RC 2018-03-16\n- 2.7.2 2018-02-16\n- 2.7.1\
+  \ 2018-02-01\n- 2.7 beta 2018-01-18\n- 2.6.1 2017-11-01\n- 2.5.2 2017-09-01\n- 2.4.1\
+  \ 2017-06-28\n- 2.3.2 2017-04-28\n- 2.3.1 2017-04-25\n- 2.3.0 beta 2017-04-04\n\
+  - 2.2.2 2017-03-13\n- 2.2 2017-02-17\n- 2.1.6 2017-02-07\n- 2.2 beta 2017-02-02\n\
+  - 2.1.5 2017-01-05\n- 2.1.4 2016-12-05\n- 2.0.8 2016-11-08\n- 2.0.7 2016-11-03\n\
+  - 2.0.6 2016-10-23\n- 2.0.5 2016-09-22\n- 2.0 Beta 2016-07-08\n- 1.8.10 2016-04-09\n\
+  - 1.8.9 2016-03-16\n- 1.8.5 2016-03-02\n- 1.8.2 2016-02-17\n- 1.7.5 2015-12-14\n\
+  - 1.7 2015-11-20\n- 1.6 2015-09-11\n- 1.5.4 2015-07-15\n- 1.5 2015-07-15\n- 1.4\
+  \ 2015-01-13\n- 1.3 2014-10-28\n- 1.1.0.1 2014-09-23\n\n## 第 1.1 节：安装与设置\n\n###\
+  \ 背景\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript 代码。TypeScript 文件通常使用 `.ts`\
+  \ 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript Node.JS 软件包进行编译。\n\n\
+  ### ID\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript 代码。TypeScript 文件通常使用 `.ts`\
+  \ 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript Node.JS 软件包进行编译。\n\n\
+  ### IDE\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript 代码。TypeScript 文件通常使用\
+  \ `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript Node.JS 软件包进行编译。\n\
+  \n### Visual Studio\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript 代码。TypeScript\
+  \ 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript Node.JS\
+  \ 软件包进行编译。\n\n### Studio Code\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript\
+  \ 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript\
+  \ Node.JS 软件包进行编译。\n\n### WebStorm\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为 JavaScript\
+  \ 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用 TypeScript\
+  \ Node.JS 软件包进行编译。\n\n### IntelliJ IDEA\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### Atom\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### Sublime Text\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### Node.js\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 安装\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 全局\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 本地\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 通道\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 稳定\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### Beta\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 开发\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 编译 TypeScript\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n### 使用 tsconfig.json\nTypeScript 是 JavaScript 的带类型超集，可以直接编译为\
+  \ JavaScript 代码。TypeScript 文件通常使用 `.ts` 扩展名。许多 IDE 无需任何额外配置即可支持 TypeScript，但也可以通过命令行使用\
+  \ TypeScript Node.JS 软件包进行编译。\n\n```json\n{\n  \"compilerOptions\": {\n    \"module\"\
+  : \"commonjs\",\n    \"target\": \"es5\",\n    \"noImplicitAny\": false,\n    \"\
+  sourceMap\": false,\n    \"pretty\": true\n  },\n  \"exclude\": [\n    \"node_modules\"\
+  \n  ]\n}\n```\n\n## 第 1.2 节：基础语法\n\nTypeScript 是 JavaScript 的带类型超集，这意味着所有的 JavaScript\
+  \ 代码都是有效的 TypeScript。TypeScript 在此基础上增加了许多新功能。\n\nTypeScript 让 JavaScript 变得像 C#\
+  \ 和 Java 那种强类型面向对象的语言。这意味着 TypeScript 代码在大型项目中更容易使用，也更容易理解和维护。强类型意味着语言可以（并且已经）编译，且变量不能赋值超出范围的值。例如，当\
+  \ TypeScript 变量声明为数字时，你不能给它赋值文本值。\n\n### 类型声明\n\n你可以为变量、函数参数和函数返回值添加类型声明。类型写在变量名后面的冒号之后，例如`var\
+  \ num: number = 5;`。编译器将在编译时（尽可能）检查类型并报告类型错误。\n\n```typescript\nvar num: number\
+  \ = 5;\nnum = \"this is a string\"; // 错误：类型 'string' 不赋值给类型 'number'\n```\n\n基本类型有：\n\
+  \n- number（整数和浮点数）\n- string\n- boolean\n\n### 数组\n\n你可以指定数组元素的类型。定义数组类型有两种等效方式：`Array<T>`和`T[]`。例如：\n\
+  \n- `number[]` - 数字数组\n- `Array<string>` - 字符串数组\n\n### 元组\n\n元组具有固定数量且类型特定的元素。\n\
+  \n- `[boolean, string]` - 第一个元素为布尔值、第二个元素为字符串的元组\n- `[number, number, number]` -\
+  \ 三个数字的元组\n\n\n\n\n\n- `{}` - 对象，你可以定义它的属性或索引器\n- `{ name: string, age: number}`\
+  \ - 具有 name 和 age 属性的对象\n- `{[ key: string]: number}` - 一个以字符串索引的数字字典\n- `enum`\
+  \ - `{ Red = 0 , Blue, Green }` - 映射到数字的枚举\n\n### Function\n为参数和返回值指定类型：\n\n- `(\
+  \ param: number) => string` - 接收一个数字参数并返回字符串的函数\n- `() => number` - 无参数返回数字的函数\n\
+  - `( a: string, b?: boolean ) => void` - 接收一个字符串和一个可选布尔值且没有返回值的函数\n- `any` - 允许任何类型。涉及\
+  \ `any` 的表达式不会进行类型检查。\n- `void` - 表示“无”，可以用作函数的返回值。只有 `null` 和 `undefined` 是 `void`\
+  \ 类型的一部分。\n- `never`: `let foo: never;` - 用于类型守卫下永远为假的变量的类型。\n- `function error(\
+  \ message: string): never { throw new Error( message); }` - 作为永不返回的返回类型。\n- `null`\
+  \ - 值 `null` 的类型。除非启用了严格空检查，否则 `null` 隐式是每个类型的一部分。\n\n### Casting\n你可以通过角括号执行显式转换，例如：\n\
+  \n```typescript\nvar derived: MyInterface;\n(< ImplementingClass> derived) .someSpecificMethod\
+  \ ();\n```\n\n此示例显示了一个派生类，它被编译器视为 `MyInterface`。如果没有第二行的转换，编译器将抛出异常，因为它不理解 `someSpecificMethod()`，但通过\
+  \ `<ImplementingClass>` 对 `derived` 进行转换告诉了编译器该做什么。\n\nTypeScript 中另一种类型转换方法是使用\
+  \ `as` 关键字：\n\n```typescript\nvar derived: MyInterface;\n( derived as ImplementingClass)\
+  \ .someSpecificMethod ();\n```\n\n从 TypeScript 1.6 开始，默认使用 `as` 关键字，因为在 `.jsx` 文件中使用\
+  \ `< >` 具有歧义。这在 TypeScript 官方文档中有所提到。\n\n---\n\n### Classes\n可以在 TypeScript 代码中定义和使用类。要了解更多关于类，请参见类的文档页面。\n\
+  \n### Section 1.3: Hello World\n```typescript\nclass Greeter {\n  greeting: string;\n\
+  \  constructor ( message: string) {\n    this .greeting = message;\n  }\n  greet():\
+  \ string {\n    return this .greeting ;\n  }\n};\n\nlet greeter = new Greeter( \"\
+  Hello, world!\" ); console.log ( greeter.greet ());\n```\n在这里我们有一个类 `Greeter`，它有一个构造函数和一个\
+  \ `greet` 方法。我们可以使用 `new` 关键字构造类的实例，并传入我们希望 `greet` 方法在控制台输出的字符串。我们的 `Greeter` 类实例存储在变量\
+  \ `greeter` 中，然后我们使用它来调用 `greet` 方法。\n\n### Section 1.4: 使用 ts-node 运行 TypeScript\n\
+  `ts-node` 是一个 npm 包，允许用户直接运行 typescript 文件，而无需使用 `tsc` 预编译。它还提供了 REPL。\n\n使用以下命令全局安装\
+  \ `ts-node`：\n```bash\nnpm install -g ts-node\n```\n`ts-node` 不包含 typescript 编译器，所以你可能需要安装它：\n\
+  ```bash\nnpm install -g typescript\n```\n\n**执行脚本**\n要执行名为 `main.ts` 的脚本，运行：\n```bash\n\
+  ts- node main.ts\n```\n```typescript\n// main.ts\nconsole.log ( \"Hello world\"\
+  \ );\n```\n示例用法：\n```bash\n$ ts- node main.ts\nHello world\n```\n\n**运行 REPL**\n\
+  运行命令 `ts- node` 来运行 REPL\n示例用法：\n```bash\n$ ts - node\n> const sum = ( a, b): number\
+  \ => a + b;\nundefined\n> sum( 2 , 2 )\n4\n> .exit\n```\n退出 REPL 使用命令 `.exit` 或按两次\
+  \ CTRL+ C。\n\n### Section 1.5: Node.js 中的 TypeScript REPL\n为了在 Node.js 中使用 TypeScript\
+  \ REPL，你可以使用 `tsun` 包。\n全局全局安装它：\n```bash\nnpm install -g tsun\n```\n并在你的终端或命令提示符中使用\
+  \ `tsun` 命令运行。\n用法示例：\n```bash\n$ tsun\nTSUN : TypeScript Upgraded Node\n输入 TypeScript\
+  \ 表达式以求值类型：输入 help 查看 repl 中的命令\n$ function multiply( x, y) {\n  return x * y;\n\
+  }\nundefined\n$ multiply( 3 , 4 )\n12\n```\n\n---\n\n# Chapter 2: 为什么以及何时使用 TypeScript\n\
+  如果你发现发现类型系统的论点通常很有说服力，那么你会喜欢 TypeScript。\n它为 JavaScript 生态系统带来了类型系统的许多优势（安全性、可读性、改进的工具）。它也存在类型系统的一些缺点（增加复杂性和不完整性）。\n\
+  \n## Section 2.1: 安全性\nTypeScript 通过静态分析早期捕捉类型错误：\n```typescript\nfunction double\
+  \ ( x: number): number {\n  return 2 * x;\n}\ndouble ( '2' );\n// ~~~ 类型为 '\"2\"\
+  ' 的参数不可给类型为 'number' 的参数。\n```\n\n## Section 2.2: 可读性\nTypeScript 使编辑器提供上下文文档：\n\
+  ![](img/Image00001.jpg) 你永远不会忘记 `String.prototype.slice` 接收的是 `(start, stop)` 还是...\n\
+  \n## Section 2.3: 工具支持\nTypeScript 允许编辑器执行感知的重构：\n![](img/Image00002.jpg) 在这里，例如\
+  \ Visual Studio Code 能够重命名。\n\n# Chapter 3: TypeScript 核心类型\n\n## Section 3.1 字符串字面量类型\n\
+  字符串字面量类型允许你指定字符串可以拥有的精确值。\n```typescript\nlet myFavoritePet: \"dog\";\nmyFavoritePet\
+  \ = \"cat\"; // 错误：类型 '\"cat\"' 不赋值 '\"dog\"。\n```\n结合别名和联合类型，你可以获得类似枚举的行为：\n```typescript\n\
+  type Species = \"cat\" | \"dog\" | \"bird\";\n```\n字符串字面量类型可以用于区分重载：\n```typescript\n\
+  function buyPet(pet: \"cat\", name: string): Cat;\nfunction buyPet(pet: \"dog\"\
+  , name: string): Dog;\nfunction buyPet(pet: \"bird\", name: string): Bird;\n```\n\
+  \n### 自定义类型守卫\n它们对于自定义类型守卫效果良好。\n```typescript\ninterface Pet {\n  species: Species;\n\
+  \  eat();\n  sleep();\n}\n\ninterface Cat extends Pet {\n  species: \"cat\";\n}\n\
+  \ninterface Bird extends Pet {\n  species: \"bird\";\n  sing();\n}\n\nfunction petIsCat(pet:\
+  \ Pet): pet is Cat {\n  return pet.species === \"cat\";\n}\n\nfunction petIsBird(pet:\
+  \ Pet): pet is Bird {\n  return pet.species === \"bird\";\n}\n\nfunction playWithPet(pet:\
+  \ Pet) {\n  if (petIsCat(pet)) {\n    // pet 现在是类型 Cat (pet: Cat)\n    pet.eat();\n\
+  \    pet.sleep();\n  } else if (petIsBird(pet)) {\n    // pet 现在是类型 Bird (pet: Bird)\n\
+  \    pet.eat();\n    pet.sing();\n    pet.sleep();\n  }\n}\n```\n\n### 完整示例代码\n\
+  ```typescript\nlet myFavoritePet: \"dog\";\nmyFavoritePet = \"rock\"; // 错误：类型 '\"\
+  rock\"' 不赋值 '\"dog\"。\n\ntype Species = \"cat\" | \"dog\" | \"bird\";\n\ninterface\
+  \ Pet {\n  species: Species;\n  name: string;\n  eat();\n  sleep();\n}\n\ninterface\
+  \ Cat extends Pet {\n  species: \"cat\";\n}\n\ninterface Dog extends Pet {\n  species:\
+  \ \"dog\";\n}\n\ninterface Bird extends Pet {\n  species: \"bird\";\n  sing();\n\
+  }\n\n// 错误：接口 'Rock' 错误地扩展了接口 'Pet'。属性 'species' 的类型不兼容。类型 '\"rock\"' 不赋值 '\"cat\"\
+  \ | \"dog\" | \"bird\"'。类型 '\"rock\"' 不赋值 '\"bird\"'。\n```\n\n\n\n\n```typescript\n\
+  function buyPet( pet: Species, name: string) : Pet;\nfunction buyPet( pet: \"cat\"\
+  \ , name: string): Cat;\nfunction buyPet( pet: \"dog\" , name: string): Dog;\nfunction\
+  \ buyPet( pet: \"bird\" , name: string): Bird;\nfunction buyPet( pet: Species, name:\
+  \ string) : Pet {\n  if ( pet === \"cat\" ) {\n    return {\n      species: \"cat\"\
+  \ ,\n      name: name,\n      eat: function () {\n        console. log ( `${this.name\
+  \ } eats.`);\n      }, walk: function () {\n        console.log ( `${this.name }\
+  \ walks.`);\n      }, sleep: function () {\n        console.log ( `${this.name }\
+  \ sleeps.`);\n      }\n    } as Cat;\n  } else if ( pet === \"dog\" ) {\n    return\
+  \ {\n      species: \"dog\" ,\n      name: name,\n      eat: function () {\n   \
+  \     console.log ( `${this.name } eats.`);\n      }, walk: function () {\n    \
+  \    console.log ( `${this.name } walks.`);\n      }, sleep: function () {\n   \
+  \     console.log ( `${this.name } sleeps.`);\n      }\n    } as Dog;\n  } else\
+  \ if ( pet === \"bird\" ) {\n    return {\n      species: \"bird\" ,\n      name:\
+  \ name,\n      eat: function () {\n        console.log ( `${this.name } eats.`);\n\
+  \      }, walk: function () {\n        console.log ( `${this.name } walks.`);\n\
+  \      }, sleep: function () {\n        console.log ( `${this.name } sleeps.`);\n\
+  \      }, sing: function () {\n        console.log ( `${this.name } sings.`);\n\
+  \      }\n    } as Bird;\n  } else {\n    throw `Sorry we do not have a ${ pet}\
+  \ . Would you like to buy a dog? `;\n  }\n}\n\nfunction petIsCat( pet: Pet): pet\
+  \ is Cat { \n  return pet.species === \"cat\" ;\n}\n\nfunction petIsDog( pet: Pet):\
+  \ pet is Dog { \n  return pet.species === \"dog\" ;\n}\n\nfunction petIsBird( pet:\
+  \ Pet): pet is Bird { \n  return pet.species === \"bird\" ;\n}\n\nfunction playWithPet(\
+  \ pet: Pet) {\n  console.log ( `Hey ${ pet.name }, lets play.`);\n  if ( petIsCat(\
+  \ pet)) {\n    // pet is now from type Cat (pet: Cat)\n    pet.eat (); pet.sleep\
+  \ ();\n    // Error: Type '\"bird\"' is not assignable to type '\"cat\". // pet.type\
+  \ = \"bird\";\n    // Error: Property 'sing' does not exist on type 'Cat'. // pet.sing();\n\
+  \  } else if ( petIsDog( pet)) {\n    // pet is now from type Dog (pet: Dog)\n \
+  \   pet. eat (); pet.walk (); pet.sleep ();\n  } else if ( petIsBird( pet)) {\n\
+  \    // pet is now from type Bird (pet: Bird)\n    pet. eat ();\n    pet.sing ();\n\
+  \    pet.sleep ();\n  } else {\n    throw \"An unknown pet. Did you buy a rock?\"\
+  \ ;\n  }\n}\n\nlet dog = buyPet( myFavoritePet /* \"dog\" as defined above */ ,\
+  \ \"Rocky\" ); // dog is from type Dog (dog: Dog)\n// Error: Argument of type '\"\
+  rock\"' is not assignable to parameter of type \"'cat' | \"dog\" | \"bird\". Type\
+  \ '\"rock\"' is not assignable to type '\"bird\"'.\n// buyPet(\"rock\", \"Rocky\"\
+  );\n\nplayWithPet ( dog);\n// Output: Hey Rocky, lets play. // Rocky eats.\n// Rocky\
+  \ walks.\n// Rocky sleeps.\n```\n\n### 章节 3.2: 元组 (Tuple)\n\n具有已知且可能不同类型的数组类型：\n\
+  \n`let day: [ number, string];`\n\nday = [ 0 , 'Monday' ]; // 有效\nday = [ 'zero'\
+  \ , 'Monday' ]; // 无效：'zero' 不是数字 console.log ( day[ 0 ]); // 0\nconsole.log ( day[\
+  \ 1 ]); // Monday\nday[ 2 ] = 'Saturday' ; // 有效：[0, 'Saturday']\nday[ 3 ] = false;\
+  \ // 无效：必须是类型 'number | string'\n\n### 章节 3.3: 布尔值 (Boolean)\n\n布尔值表示 TypeScript\
+  \ 中最基础的数据类型，用于分配 true/false 值。\n\n// 带有初始值的设置（true 或 false）\n`let isTrue: boolean\
+  \ = true ;`\n\n// 当未显式设置时，默认为 'undefined'\n`let unsetBool: boolean ;`\n\n// 也可以被设置为\
+  \ 'null' `let nullableBool: boolean = null ;`\n\n### 章节 3.4: 交叉类型 (Intersection\
+  \ Types)\n\n一个交叉类型结合了两个或多个类型的成员。\n\n```typescript\ninterface Knife {\n  cut();\n\
+  }\n\ninterface BottleOpener{\n  openBottle();\n}\n\ninterface Screwdriver{\n  turnScrew();\n\
+  }\n\ntype SwissArmyKnife = Knife & BottleOpener & Screwdriver;\n```\n\n`function\
+  \ use( tool: SwissArmyKnife){\n  console.log ( \"I can do anything!\" );\n  tool.\
+  \ cut ();\n  tool.openBottle();\n}`\n\n### 章节 3.5: 函数参数和返回值的类型\n\n你可以指定函数参数和返回值的类型。例如：\n\
+  \n`function use( tool: SwissArmyKnife){\n  console.log ( \"I can do anything!\"\
+  \ );\n  tool. cut ();\n  tool.openBottle();\n}`\n\n### 章节 3.6: 函数参数和返回值的类型\n\n你可以指定函数参数和返回值的类型。例如：\n\
+  \n`function use( tool: SwissArmyKnife){\n  console.log ( \"I can do anything!\"\
+  \ );\n  tool. cut ();\n  tool.openBottle();\n}`\n\n### 章节 3.7: 常量枚举 (const Enum)\n\
+  \nconst enum 与普通枚举相同，区别在于运行时不会生成对象。\n\n```typescript\nconst NinjaActivity {\n  Espionage,\n\
+  \  Sabotage,\n  Assassination\n}\n```\n\n`let myFavoriteNinjaActivity = NinjaActivity.Espionage\
+  \ ;`\n\n### 章节 3.8: 数字 (Number)\n\n像 JavaScript 一样，数字是浮点值。\n\n`let pi: number =\
+  \ 3.14 ; // 默认十十进制小数` `let hexadecimal: number = 0xFF; // 十进制为 255`\n\nECMAScript\
+  \ 2015 允许二进制和八进制。\n\n\n\n\n\n```typescript\nlet binary: number = 0b10; // 2 in decimal\n\
+  let octal: number = 0o755; // 493 in decimal\n```\n\n### 第 3.9 ：字符串\n\n文本数据类型：\n\
+  \n```typescript\nlet singleQuotes: string = 'single' ;\nlet doubleQuotes: string\
+  \ = \"double\" ;\nlet templateString: string = `I am ${ singleQuotes } `; // I am\
+  \ single\n```\n\n### 第 3.10 ：数组\n\n值的数组：\n\n```typescript\nlet threePigs: number[]\
+  \ = [ 1 , 2 , 3 ];\nlet genericStringArray: Array< string> = [ 'first' , '2nd' ,\
+  \ '3rd' ];\n```\n\n### 第 3.11 ：枚举 (Enum)\n\n用于为一组数值命名的类型：\n\n数值默认认为 0：\n\n```typescript\n\
+  enum Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };\nlet\
+  \ bestDay: Day = Day.Saturday ;\n```\n\n设置默认起始数字：\n\n```typescript\nenum TenPlus\
+  \ { Ten = 10 , Eleven, Twelve }\n```\n\n或者直接赋值：\n\n```typescript\nenum MyOddSet\
+  \ { Three = 3 , Five = 5 , Seven = 7 , Nine = 9 }\n```\n\n### 第 3.12 ：Any\n\n当不确定类型时，可以使用\
+  \ `any`：\n\n```typescript\nlet anything: any = 'I am a string' ;\nanything = 5 ;\
+  \ // 但现在我变为了数字 5\n```\n\n### 第 3.13 ：Void\n\n如果你完全没有类型，通常用于不返回任何内容的函数：\n\n```typescript\n\
+  function log(): void {\n  console.log ( 'I return nothing' );\n}\n```\n\n`void`\
+  \ 类型只能赋值为 `null` 或 `undefined`。\n\n# 第 4 章：数组\n\n## 第 4.1 节：在数组中查找对象\n\n### 使用 `find()`\n\
+  \n```typescript\nconst inventory = [\n  { name: 'apples' , quantity: 2 },\n  { name:\
+  \ 'bananas' , quantity: 0 },\n  { name: 'cherries' , quantity: 5 }\n];\n\nfunction\
+  \ findCherries( fruit) {\n  return fruit.name === 'cherries' ;\n}\n\ninventory.find\
+  \ ( findCherries); // { name: 'cherries', quantity: 5 }\n\n/* 或者 */\ninventory.find\
+  \ ( e => e.name === 'apples' ); // { name: 'apples', quantity: 2 }\n```\n\n# 第 5\
+  \ 章：枚举 (Enum)\n\n## 第 5.1 节：带有显式值的枚举\n\n默认情况下，所有枚举值都解析为数字。假设你有如下内容：\n\n```typescript\n\
+  enum MimeType {\n  JPEG,\n  PNG,\n  PDF\n}\n```\n\n那么例如 `MimeType.PDF` 的真实值将是 `2`。\n\
+  \n但某些时候让枚举解析为不同的类型是非常重要的。例如，你从后端/前端/另一个系统接收到的确定是字符串的值。这可能会很麻烦，但幸运的是有这种方法：\n\n```typescript\n\
+  enum MimeType {\n  JPEG = < any> 'image/jpeg' ,\n  PNG = < any> 'image/png' ,\n\
+  \  PDF = < any> 'application/pdf'\n}\n```\n\n这会将 `MimeType.PDF` 解析为 `application/\
+  \ pdf`。\n\n从 TypeScript 2.4 开始，可以声明字符串枚举：\n\n```typescript\nenum MimeType {\n  JPEG\
+  \ = 'image/jpeg' , PNG = 'image/png' ,\n  PDF = 'application/pdf' ,\n}\n```\n\n\
+  你可以使用相同的方法显式地提供数值值：\n\n```typescript\nenum MyType {\n  Value = 3 ,\n  ValueEx =\
+  \ 30 , ValueEx2 = 300\n}\n```\n\n更复杂的类型也有效，因为非常量枚举在运行时是真实的对象，例如：\n\n```typescript\n\
+  enum FancyType {\n  OneArr = < any>[ 1 ],\n  TwoArr = < any>[ 2 , 2 ], ThreeArr\
+  \ = < any>[ 3 , 3 , 3 ]\n}\n```\n\n变为：\n\n```typescript\nvar FancyType;\n(function\
+  \ ( FancyType) {\n  FancyType[ FancyType[ \"OneArr\" ] = [ 1 ]] = \"OneArr\" ; FancyType[\
+  \ FancyType[ \"TwoArr\" ] = [ 2 , 2 ]] = \"TwoArr\" ;\n  FancyType[ FancyType[ \"\
+  ThreeArr\" ] = [ 3 , 3 , 3 ]] = \"ThreeArr\" ;\n})( FancyType || ( FancyType = {}));\n\
+  ```\n\n### 第 5.2 节：如何获取所有枚举值\n\n```typescript\nenum SomeEnum { A, B }\nlet enumValues:\
+  \ Array< string>= [];\nfor ( let value in SomeEnum) {\n  if ( typeof SomeEnum[ value]\
+  \ === 'number' ) {\n    enumValues.push ( value);\n  }\n}\nenumValues. forEach (\
+  \ v=> console.log ( v))\n//A\nB\n```\n\n### 第 5.3 节：在没有自定义枚举的情况下扩展枚举\n\n```typescript\n\
+  enum SourceEnum {\n  value1 = < any> 'value1' ,\n  value2 = < any> 'value2'\n}\n\
+  \nenum AdditionToSourceEnum { \n  value3 = < any> 'value3' , value4 = < any> 'value4'\n\
+  }\n```\n\n// 我们需要这种类型以便 TypeScript 能够正确解析类型* `type TestEnumType = SourceEnum | AdditionToSourceEnum;`\
+  \ // 并且我们需要这个值“实例”来使用值\n\n```typescript\nlet instance: TestEnumType = { value1:\
+  \ 'value1' }; // 示例\n```\n\n（注：第 5.3 节提供的原始文本在源码中变得碎片；我根据上下文对逻辑进行了格式化处理）。\n\n\n\n\
+  \n\n```typescript\nfunction foo( func: IFunction ) {\n  func();\n}\n```\n\n或者带有参数：\n\
+  \n```typescript\ninterface INumberFunction {\n  ( num: number): string;\n}\n```\n\
+  \n```typescript\nfunction foo( func: INumberFunction ) {\n  func( 1 );\n}\n```\n\
+  \n即使带有泛型：\n\n```typescript\ninterface ITFunc< T, U> {\n  ( item: T): U;\n}\n```\n\
+  \n```typescript\nfunction foo< T, U>( contructorFunc: ITFunc< T, U>, item: T): U\
+  \ {\n  return func( item);\n}\n```\n\n## 第 6.3 节：使用联合类型的函数\n\nTypeScript 函数可以使用联合类型来接收多个预定义类型的参数。\n\
+  \n```typescript\nfunction whatTime( hour: number| string, minute: number| string):\
+  \ string{\n  return hour+ ':' + minute;\n}\n```\n\n`whatTime( 1 , 30 )` //'1:30'*\n\
+  \n`whatTime( '1' , 30 )` //'1:30'*\n\n`whatTime( 1 , '30' )` //'1:30'*\n\n`whatTime(\
+  \ '1' , '30' )` //'1:30'*\n\nTypeScript 将这些参数视为其他类型联合的单一类型，因此你的函数必须能够处理联合类型中任何类型的参数。\n\
+  \n```typescript\nfunction addTen( start: number| string): number{\n  if ( typeof\
+  \ number === 'string' ){\n    return parseInt( number)+ 10 ;\n  } else {\n    return\
+  \ number+ 10 ;\n  }\n}\n```\n\n## 第 6.4 节：函数的类型\n\n### 命名函数\n\n```typescript\nfunction\
+  \ multiply( a, b) {\n  return a * b;\n}\n```\n\n### 匿名函数\n\n```typescript\nlet multiply\
+  \ = function ( a, b) { return a * b; };\n```\n\n### Lambda / 箭头函数\n\n```typescript\n\
+  let multiply = ( a, b) => { return a * b; };\n```\n\n# 第 7 章：类\n\nTypeScript 像 ECMAScript\
+  \ 6 一样支持使用类进行面向对象编程。这与旧版本的 JavaScript 形成对比，旧版本仅支持基于原型的继承链。\n\nTypeScript 对类的支持与\
+  \ Java 和 C# 等语言相似，即类可以继承自其他类，而对象被实例化为类的实例。\n\n同样与这些语言相似的是，TypeScript 类可以实现接口或使用泛型。\n\
+  \n## 第 7.1 节：抽象类\n\n```typescript\nabstract class Machine {\n  constructor( public\
+  \ manufacturer: string) {\n  }\n  // 抽象类可以定义自己的方法，或者...\n  summary(): string {\n\
+  \    return `${ this .manufacturer } makes this machine.`;\n  }\n  // 要求继承类实现该方法\n\
+  \  abstract moreInfo(): string;\n}\n```\n\n```typescript\nclass Car extends Machine\
+  \ {\n  constructor( manufacturer: string, public position: number, protected speed:\
+  \ number) { \n    super ( manufacturer);\n  }\n  move () {\n    this .position +=\
+  \ this .speed ;\n  }\n  moreInfo () {\n    return `This is a car located at ${ this\
+  \ .position } and going ${ this .speed } mph! `;\n  }\n}\n```\n\n```typescript\n\
+  let myCar = new Car( \"Konda\" , 10 , 70 );\nmyCar.move ( ); // position is now\
+  \ 80\nconsole.log ( myCar.summary ()); // prints \"Konda makes this machine.\"\n\
+  console.log ( myCar.moreInfo ()); // prints \"This is a car located at 80 and going\
+  \ 70mph!\"\n```\n\n抽象类是其他类可以扩展的基类。它们本身不能被实例化（即你不能执行 `new Machine( \"Konda\" )`）。\n\
+  \nTypeScript 中抽象类的两个关键特性是：\n\n1. 它们可以实现自己的方法。\n2. 它们可以定义继承类必须实现的方法。由于这个原因，抽象类在概念上可以认为是**接口和类的结合**。\n\
+  \n## 第 7.2 节：简单类\n\n```typescript\nclass Car {\n  public position: number = 0 ;\
+  \ \n  private speed: number = 42 ;\n  move () {\n    this .position += this .speed\
+  \ ;\n  }\n}\n```\n\n在这个示例中，我们声明了一个简单的类 `Car`。该类有三个成员：一个私有属性 `speed`、一个公共属性 `position`\
+  \ 和一个公共方法 `move`。注意，每个成员默认都是公共的。这就是为什么 `move()` 是公共的，即使我们没有使用 `public` 关键字。\n\n\
+  ```typescript\nvar car = new Car(); // 创建一个 Car 实例\ncar.move ( ); // 调用方法\nconsole.log\
+  \ ( car.position ); // 访问公共属性\n```\n\n## 第 7.3 节：基础继承\n\n```typescript\nclass Car\
+  \ {\n  public position: number = 0 ;\n  protected speed: number = 42 ;\n  move ()\
+  \ {\n    this .position += this .speed ;\n  }\n}\n\nclass SelfDrivingCar extends\
+  \ Car {\n  move () {\n    // 开始移动了 :-) \n    super .move ();\n    super .move ();\n\
+  \  }\n}\n```\n\n这个示例展示了如何使用 `extends` 关键字为 `Car` 类创建一个非常简单的子类。`SelfDrivingCar` 类重写了\
+  \ `move()` 方法，并使用 `super` 调用了基类的实现。\n\n## 第 7.4 节：构造函数\n\n在这个示例中，我们使用 `constructor`\
+  \ 在基类中声明一个公共属性 `position` 和一个受保护属性 `speed`。这些属性被称为*参数属性*。它们允许我们在一处声明构造参数和成员。\n\n\
+  ```typescript\nclass Car {\n  public position: number;\n  protected speed: number;\n\
+  }\n```\n\nTypeScript 访问器（accessors）允许我们向 getter（get 器）或 setter（赋值）添加代码。\n\n```typescript\n\
+  class Car {\n  public position: number = 0 ;\n  private _speed: number = 42 ;\n\
+  \  private _MAX_SPEED = 100;\n\n  get speed(): number {\n    return this ._speed;\n\
+  \  }\n\n  set speed(value: number) {\n    this ._speed = Math.min(value, this._MAX_SPEED);\n\
+  \  }\n}\n```\n\n```typescript\nlet car = new Car();\ncar.speed = 120;\nconsole.log\
+  \ ( car.speed ); // 100\n```\n\n## 第 7.6 节：编译\n\n给定一个类 `SomeClass`，让我们 TypeScript\
+  \ 是如何编译成 JavaScript 的。\n\n```typescript\nclass SomeClass {\n  static SomeValueValue:\
+  \ string = \"hello\" ;\n  public someMemberValue: number = 15 ;\n  private somePrivateValue:\
+  \ boolean = false ;\n\n  constructor () {\n    SomeClass.SomeStaticValue = SomeClass.getGoodbye();\n\
+  \    this.someMemberValue = this.getFortyTwo();\n    this.somePrivateValue = this.getTrue();\n\
+  \  }\n\n  static getGoodbye(): string {\n    return \"goodbye!\" ;\n  }\n\n  public\
+  \ getFortyTwo(): number {\n    return 42 ;\n  }\n\n  private getTrue(): boolean\
+  \ {\n    return true ;\n  }\n}\n```\n\n```javascript\nvar SomeClass = (function\
+  \ () {\n  function SomeClass() {\n    this.someMemberValue = 15;\n    this.somePrivateValue\
+  \ = false;\n    SomeClass.SomeStaticValue = SomeClass.getGoodbye();\n    this.someMemberValue\
+  \ = this.getFortyTwo();\n    this.somePrivateValue = this.getTrue();\n  }\n  SomeClass.getGoodbye\
+  \ = function () {\n    return \"goodbye!\" ;\n  };\n  SomeClass.prototype.getFortyTwo\
+  \ = function () {\n    return 42 ;\n  };\n  SomeClass.prototype.getTrue = function\
+  \ () {\n    return true ;\n  };\n  return SomeClass;\n})());\n```\n\n**观察**\n\n\
+  对类原型的修改被封装在一个 IIFE（立即调用函数表达式）中。\n\n\n\n\n成员变量定义在主类 `function` 内部。\n\n静态属性直接添加到类对象上，而实例属性被添加到原型上。\n\
+  \n## 第 7.7 节：向现有类猴子补丁（Monkey patch）函数\n\n有时候，用新函数扩展类是非常有用的。例如，假设我们需要将一个字符串转换为驼峰命名法（camel\
+  \ case）。因此，我们需要告诉 TypeScript `String` 包含一个名为 `toCamelCase` 的函数，该函数返回一个字符串。\n\n```typescript\n\
+  interface String {\n  toCamelCase(): string;\n}\n```\n\n现在我们可以将这个函数补丁到 `String`\
+  \ 的实现中。\n\n```typescript\nString.prototype.toCamelCase = function () : string {\n\
+  \  return this.replace(/[^a-z ]/ig, '')\n    .replace(/(?:^\\w|[A-Z]|\\b\\w|\\s+)/g,\
+  \ (match: any, index: number) => {\n      return +match === 0 ? \"\" : match[index\
+  \ === 0 ? 'toLowerCase' : 'toUpperCase']();\n    });\n}\n```\n\n如果加载了此 `String`\
+  \ 扩展，可以这样使用：`\"This is an example\".toCamelCase(); *// => \"thisIsAnExample\"*\n\
+  \n# 第 8 章：类装饰器\n\n**参数详情**\n`target` 被装饰的类\n\n## 第 8.1 节：使用类装饰器生成元数据\n\n这一次，我们将声明一个类装饰器，它会在被应用到类时为该类添加一些元数据：\n\
+  \n```typescript\nfunction addMetadata(target: any) {\n  // 添加一些元数据\n  target.__customMetadata\
+  \ = {\n    someKey: \"someValue\"\n  };\n  // 返回 target\n  return target;\n}\n```\n\
+  \n然后我们可以应用该类装饰器：\n\n```typescript\n@addMetadata\nclass Person {\n  private _name:\
+  \ string;\n  public constructor(name: string) {\n    this._name = name;\n  }\n \
+  \ public greet() {\n    return this._name;\n  }\n}\n```\n\n```typescript\nfunction\
+  \ getMetadataFromClass(target: any) {\n  return target.__customMetadata;\n}\n\n\
+  console.log(getMetadataFromClass(Person));\n```\n\n装饰器是在类声明时应用的，而不是在创建类实例时。这意味着元数据在类的所有实例之间是共享：\n\
+  \n```typescript\nfunction getMetadataFromInstance(target: any) {\n  return target.constructor.__customMetadata;\n\
+  }\n\nlet person1 = new Person(\"John\");\nlet person2 = new Person(\"Lisa\");\n\n\
+  console.log(getMetadataFromInstance(person1));\nconsole.log(getMetadataFromInstance(person2));\n\
+  ```\n\n## 第 8.2 节：向类装饰器传递参数\n\n我们可以用另一个函数封装类装饰器，以允许定制化：\n\n```typescript\nfunction\
+  \ addMetadata(metadata: any) {\n  return function log(target: any) {\n    // 添加元数据\n\
+  \    target.__customMetadata = metadata;\n    // 返回 target\n    return target;\n\
+  \  }\n}\n```\n\n`addMetadata` 接收一些参数作为配置，然后返回一个匿名函数，该函数才是实际的装饰器。在装饰器中我们可以访问这些参数，因为存在闭包。\n\
+  \n然后我们可以传递一些配置值来调用装饰器：\n\n```typescript\n@addMetadata({ guid: \"417c6ec7-ec05-4954-a3c6-73a0d7f9f5bf\"\
+  \ })\nclass Person {\n  private _name: string;\n  public constructor(name: string)\
+  \ {\n    this._name = name;\n  }\n  public greet() {\n    return this._name;\n \
+  \ }\n}\n```\n\n我们可以使用以下函数来访问生成的元数据：\n\n```typescript\nfunction getMetadataFromClass(target:\
+  \ any) {\n  return target.__customMetadata;\n}\n\nconsole.log(getMetadataFromClass(Person));\n\
+  ```\n\n如果一切顺利，控制台应该显示：`{ guid: \"417c6ec7-ec05-4954-a3c6-73a0d7f9f5bf\" }`\n\n##\
+  \ 第 8.3 节：基础类装饰器\n\n类装饰器只是一个函数，它接收类作为唯一参数，并在对其进行处理后返回它：\n\n```typescript\nfunction\
+  \ log<T>(target: T) {\n  // 对 target 进行某些操作\n  console.log(target);\n  // 返回 target\n\
+  \  return target;\n}\n```\n\n然后我们可以将类装饰器应用到类上：\n\n```typescript\n@log\nclass Person\
+  \ {\n  private _name: string;\n  public constructor(name: string) {\n    this._name\
+  \ = name;\n  }\n  public greet() {\n    return this._name;\n  }\n}\n```\n\n# 第 9\
+  \ 章：接口\n\n接口指定了一个字段和函数列表，这些字段和函数在实现接口的任何类中都是可以期的。相反，除非类拥有接口上指定的每个字段和函数，否则类无法实现该接口。\n\
+  \n使用接口的主要优势是它允许人们以多态的方式使用不同类型的对象。这是因为任何实现接口的类至少包含这些字段和函数。\n\n## 第 9.1 节：扩展接口\n\n\
+  假设我们有一个接口：\n\n```typescript\ninterface IPerson {\n  name: string;\n  age: number;\n\
+  \  breath(): void;\n}\n```\n\n如果我们想创建一个具有人类相同属性的更具体的接口，可以使用 `extends` 关键字来实现：\n\n\
+  ```typescript\ninterface IManager extends IPerson {\n  managerId: number;\n  managePeople(people:\
+  \ IPerson[]): void;\n}\n```\n\n## 第 9.2 节：类接口\n\n接口指定了一个字段和函数列表，这些字段和函数在实现接口的任何类中都是可以期的。相反，除非类拥有接口上指定的每个字段和函数，否则类无法实现该接口。\n\
+  \n使用接口的主要优势是它允许人们以多态的方式使用不同类型的对象。这是因为任何实现接口的类至少包含这些字段和函数。\n\n```typescript\ninterface\
+  \ ISampleInterface {\n  sampleVariable: string;\n  sampleMethod(): void;\n}\n```\n\
+  \n示例显示了如何创建一个接口 `ISampleInterface` 以及实现它的类 `SampleClass`。\n\n```typescript\nclass\
+  \ SampleClass implements ISampleInterface {\n  sampleVariable: string;\n  private\
+  \ answerToAndEverything: number;\n\n  constructor() {\n    this.sampleVariable =\
+  \ 'string value';\n    this.answerToAndEverything = 42;\n  }\n\n  public sampleMethod():\
+  \ void {\n    // 什么都不做\n  }\n\n  private answer(q: any): number {\n    return this.answerToAndEverything;\n\
+  \  }\n}\n```\n\n## 第 9.3 节：使用接口实现多态\n\n使用接口的主要原为了实现多态，并允许开发者在未来通过实现接口来实现自己的方式。\n\
+  \n假设我们有一个接口和三个类：\n\n```typescript\ninterface Connector {\n  doConnect(): boolean;\n\
+  }\n```\n\n这是 `connector` 接口。现在我们将为 wifi 通实现它。\n\n```typescript\nexport class WifiConnector\
+  \ implements Connector {\n  public doConnect(): boolean {\n    console.log(\"Connecting\
+  \ via wifi\");\n    console.log(\"Get password\");\n    console.log(\"Lease an IP\
+  \ for 24 hours\");\n    console.log(\"Connected\");\n    return true;\n  }\n}\n\
+  ```\n\n在这里开发了一个名为 `WifiConnector` 的具体类，它有自己的实现。现在它是 `Connector` 类型。\n\n现在我们创建一个包含\
+  \ `Connector` 组件的 `System` 类。这被称为依赖注入。\n\n```typescript\nexport class System {\n\
+  \  constructor(private connector: Connector) {\n    this.connector.doConnect();\n\
+  \  }\n}\n```\n\n`constructor(private connector: Connector)` 这一行在这里非常重要。`Connector`\
+  \ 是一个接口，并且必须有 `doConnect()`。由于 `Connector` 是一个接口，这个 `System` 类具有更大的灵活性。我们可以传递任何实现了\
+  \ `Connector` 接口的类型。在未来，开发者获得了更大的灵活性。例如，现在开发者想要添加蓝牙连接：\n\n```typescript\nexport\
+  \ class BluetoothConnector implements Connector {\n  public doConnect(): boolean\
+  \ {\n    console.log(\"Connecting via Bluetooth\");\n    console.log(\"Pair with\
+  \ PIN\");\n    console.log(\"Connected\");\n    return true;\n  }\n}\n```\n\n可以看到，`System`\
+  \ 类现在无法感知到是蓝牙还是 wifi，即使我们以后可以仅仅通过实现 `Connector` 接口来添加其他通信模块，如红外、蓝牙 5 等。这被称为鸭子类型（Duck\
+  \ typing）。`Connector` 类型现在是动态的，因为 `doConnect()` 只是一个占位符，开发者按照自己的方式来实现它。\n\n\n\n\n\
+  `if at constructor( private connector: WifiConnector) where `WifiConnector` is a\
+  \ concrete class what will happen?` 那么 `System` 类将与 `WifiConnector` 紧耦合，不再包含其他。这里接口通过多态解决了我们的问题。\n\
+  \n## 第 9.4 节：泛型接口\n\n和类一样，接口也可以接收多态参数（即泛型）。\n\n### 在接口上声明泛型参数\n\n```typescript\n\
+  interface IStatus< U> {\n  code: U;\n}\n\ninterface IEvents< T> {\n  list: T[];\n\
+  \  emit( event: T): void;\n  getAll(): T[];\n}\n```\n\n在这里，你可以看到我们的两个接口使用了一些泛型参数，`T`\
+  \ 和 `U`。\n\n### 实现泛型接口\n\n我们将创建一个简单的类来实现 `IEvents` 接口。\n\n```typescript\nclass State<\
+  \ T> implements IEvents< T> {\n  list: T[];\n  constructor () {\n    this.list =\
+  \ [];\n  }\n  emit ( event: T): void {\n    this.list .push ( event);\n  }\n  getAll\
+  \ (): T[] {\n    return this.list ;\n  }\n}\n```\n\n让我们为 `State` 类创建一些实例。\n\n在我们的示例中，`State`\
+  \ 类将通过使用 `IStatus< T>` 来处理泛型状态。这样，接口 `IEvent< T>` 也会处理 `IStatus< T>`。\n\n```typescript\n\
+  const s = new State< IStatus< number>>();\n// 预期 'code' 属性为数字，所以：s.emit ({ code:\
+  \ 200 }); // 正常工作\ns.emit ({ code: '500' }); // 类型错误\ns.getAll () .forEach ( event\
+  \ => console.log ( event.code ));\n```\n\n在这里，我们的 `State` 类被类型化为 `IStatus< number>`。\n\
+  \n```typescript\nconst s2 = new State< IStatus< Code>>();\n// 我们能够以 Code 类型发射 code\n\
+  s2.emit ({ code: { message: 'OK' , status: 200 } });\ns2. getAll () .map ( event\
+  \ => event.code ) .forEach ( event => {\n  console.log ( event.message );\n  console.log\
+  \ ( event.status );\n});\n```\n\n我们的 `State` 类被类型化为 `IStatus< Code>`。通过这种方式，我们能够向\
+  \ `emit` 方法传递更复杂的类型。如你所见，泛型接口是静态类型代码非常有用的工具。\n\n## 第 9.5 节：向现有接口添加函数或属性\n\n假设我们有一个\
+  \ `JQuery` 类型定义的引用，并且想要扩展它，以包含来自我们引入的插件的额外函数，而该插件没有官方的类型定义。我们可以通过在单独接口声明中声明插件添加的函数，并使用相同的\
+  \ `JQuery` 名称来轻松地扩展它：\n\n```typescript\ninterface JQuery {\n  pluginFunctionThatDoesNothing():\
+  \ void;\n  // 创建链式函数\n  manipulateDOM( HTMLElement): JQuery;\n}\n```\n\n编译器会将所有同名的声明合并为一个\
+  \ - 更多细节请参阅声明合并（declaration merging）。\n\n### 第 9.6 节：隐式实现与对象形状\n\nTypeScript 支持接口，但编译器输出的是\
+  \ JavaScript，而 JavaScript 不支持。因此，接口在编译步骤实际上丢失了。这就是为什么对接口的类型检查取决于对象的*形状*（shape），这意味着对象是否支持接口上的字段和函数——而不是取决于接口是否真的被实现。\n\
+  \n```typescript\ninterface IKickable {\n  kick( distance: number): void;\n}\n\n\
+  class Ball {\n  kick( distance: number): void {\n    console.log ( \"Kicked\" ,\
+  \ distance, \"meters!\" );\n  }\n}\nlet kickable: IKickable = new Ball();\nkickable.kick\
+  \ ( 40 );\n```\n\n所以，即使 `Ball` 没有显式实现 `IKickable`，`Ball` 实例也可以赋值给（并作为）`IKickable`\
+  \ 进行操作，即使指定了类型。\n\n### 第 9.7 节：使用接口强制类型\n\nTypeScript 的核心优势之一是它能够强制你在代码中传递的值具有数据类型，以帮助防止错误。\n\
+  \n假设你正在开发一个宠物约会应用程序。你有一个简单的函数来检查两只宠物是否相互兼容……\n\n```typescript\ncheckCompatible(\
+  \ petOne, petTwo) {\n  if ( petOne.species === petTwo.species &&\n  Math.abs ( petOne.age\
+  \ petTwo.age ) <= 5 ) {\n    return true ;\n  }\n}\n```\n\n这是一段完全功能代码，但对于某人（特别是其他编写此应用程序但没有编写此函数的人）来说，要意识到他们应该传递带有\
+  \ 'species' 和 'age' 属性的对象是非常的。他们可能会错误地尝试 `checkCompatible( petOne.species , petTwo.species\
+  \ )`，然后只能去解决函数尝试访问 `petOne.species.species` 或 `petOne.species.age` 时抛出的错误！\n\n我们可以防止这种情况发生的一种方法是在宠物参数上指定我们需要的属性：\n\
+  \n```typescript\ncheckCompatible ( petOne: { species: string, age: number}, petTwo:\
+  \ { species: string, age: number}) {\n  //...\n}\n```\n\n在这种情况下，TypeScript 将确保传递到函数的所有所有内容都具有\
+  \ 'species' 和 'age' 属性（即使它们有额外的属性也可以的），但即使只指定了两个属性，这个解决方案也有些笨拙。使用接口，有更好的方法！\n\n\
+  首先，我们定义接口：\n\n```typescript\ninterface Pet {\n  species: string;\n  age: number;\n\
+  \  // 如果需要，我们可以添加更多属性。\n}\n```\n\n现在，我们需要做的只是将参数的类型指定为我们的新接口，如下……\n\n```typescript\n\
+  checkCompatible ( petOne: Pet, petTwo: Pet) {\n  //...\n}\n```\n\n……TypeScript 将确保传递到我们函数的参数包含\
+  \ `Pet` 接口中指定的属性！\n\n# 第 10 章：泛型\n\n## 第 10.1 节：泛型接口\n\n#### 声明泛型接口\n\n```typescript\n\
+  interface IResult< T> {\n  wasSuccessful: boolean ;\n  error: T;\n}\n\nvar result:\
+  \ IResult< string> = ....\nvar error: string = result.error ;\n```\n\n**带有多个类型参数的泛型接口**\n\
+  \n```typescript\ninterface IRunnable< T, U> {\n  run( input: T): U;\n}\n\nvar runnable:\
+  \ IRunnable< string, number> = ... \nvar input: string;\nvar result: number = runnable.run\
+  \ ( input);\n```\n\n### 实现泛型接口\n\n```typescript\ninterface IResult< T>{\n  wasSuccessful:\
+  \ boolean ; error: T;\n  clone(): IResult< T>;\n}\n```\n\n使用泛型类实现：\n\n```typescript\n\
+  class Result< T> implements IResult< T> {\n  constructor( wasSuccessful: boolean\
+  \ , error: T) { }\n  clone (): IResult< T> {\n    return new Result< T>( this.result\
+  \ , this.error );\n  }\n}\n```\n\n使用非泛型类实现：\n\n```typescript\nclass StringResult\
+  \ implements IResult< string> {\n  constructor( wasSuccessful: boolean , error:\
+  \ string) { }\n  clone (): IResult< string> {\n    return new StringResult( this.result\
+  \ , this.error );\n  }\n}\n```\n\n## 第 10.2 节：泛型类\n\n```typescript\nclass Result<\
+  \ T> {\n  constructor( wasSuccessful: boolean , error: T) { }\n  clone (): Result<\
+  \ T> { ... }\n}\n\nlet r1 = new Result( false , 'error: 42' ); // 编译器推断 T 为 string\n\
+  let r2 = new Result( false , 42 ); // 编译器推断 T 为 number\nlet r3 = new Result< string>(\
+  \ true ,null ); // 显式设置 T 为 string\nlet r4 = new Result< string>( true ,4 ); //\
+  \ 编译错误，因为 4 不是 string\n```\n\n### 第 10.3 节：类型参数作为约束\n\n从 TypeScript 1.8 开始，类型参数约束可以引用同一类型参数列表中的类型参数。以前这是一个错误。\n\
+  \n```typescript\nfunction assign< T extends U, U>( target: T, source: U): T {\n\
+  \  for (let id in source) {\n    target[ id] = source[ id];\n  }\n  return target;\n\
+  }\n\nlet x = { a: 1 , b: 2 , c: 3 , d: 4 }; \nassign( x, { b: 10 , d: 20 });\nassign(\
+  \ x, { e: 0 }); // \n```\n\n## 第 10.4 节：泛型约束\n\n简单的约束：\n\n```typescript\ninterface\
+  \ IRunnable {\n  run(): void ;\n}\n\ninterface IRunner< T extends IRunnable> {\n\
+  \  runSafe( runnable: T): void ;\n}\n```\n\n更复杂的约束：\n\n```typescript\ninterface\
+  \ IRunnble< U> {\n  run(): U;\n}\n\ninterface IRunner< T extends IRunnble< U>, U>\
+  \ {\n  runSafe( runnable: T): U;\n}\n```\n\n更复杂的：\n\n```typescript\ninterface IRunnble<\
+  \ V> {\n  run( parameter: U): V;\n}\n\ninterface IRunner< T extends IRunnble< U,\
+  \ V>, U, V> { \n  runSafe( runnable: T, parameter: U): V; \n}\n```\n\n内联类型约束：\n\n\
+  \n\n\n\n```typescript\ninterface IRunnable< T extends { run(): void }> { runSafe(\
+  \ runnable: T): void ;\n\n}\n```\n\n## 第 10.5 节：泛型函数\n\n在接口中：\n\n```typescript\n\
+  interface IRunner {\n  runSafe< T extends IRunnable>( runnable: T): void ;\n}\n\
+  ```\n\n在类中：\n\n```typescript\nclass Runner implements IRunner {\n  public runSafe<\
+  \ T extends IRunnable>( runnable: T): void { \n    try {\n      runnable.run ();\n\
+  \    } catch ( e) {\n\n    }\n  }\n}\n```\n\n简单函数：\n\n```typescript\nfunction runSafe<\
+  \ T extends IRunnable>( runnable: T): void { \n  try {\n    runnable.run ();\n \
+  \ } catch ( e) {\n\n  }\n}\n```\n\n### 第 10.6 节：使用泛型类和函数：\n\n创建泛型类实例：\n\n```typescript\n\
+  var stringRunnable = new Runnable< string>();\n```\n\n运行泛型函数：\n\n```typescript\n\
+  function runSafe< T extends Runnable< U>, U>( runnable: T);\n```\n\n// 指定泛型类型：\n\
+  \n```typescript\nrunSafe< Runnable< string>, string>( stringRunnable);\n```\n\n\
+  // 让 typescript 自动推断泛型类型：\n\n```typescript\nrunSafe( stringRunnable);\n```\n\n###\
+  \ 第 11 章：严格空值检查\n\n#### 第 11.1 节：严格空值检查的应用\n\n默认情况下，TypeScript 中的所有类型都允许 `null`：\n\
+  \n```typescript\nfunction getId( x: Element) {\n  return x.id ;\n}\n```\n\n`getId(\
+  \ null );` // TypeScript 不报错，但这是一个运行时错误。\n\nTypeScript 2.0 增加了对严格空值检查的支持。如果你在运行\
+  \ `tsc` 时设置了 `-strictNullChecks`（或在 `tsconfig.json` 中设置此标志），类型将不再允许 `null`：\n\n\
+  ```typescript\nfunction getId( x: Element) {\n  return x.id ;\n}\n```\n\n`getId(\
+  \ null );` // 错误：类型为'null'不能赋值给类型为'Element'的参数。\n\n你必须显式地允许 `null` 值：\n\n```typescript\n\
+  function getId( x: Element| null ) {\n  return x.id ; // 错误 TS2531: 对象可能为 'null'。\n\
+  }\n```\n\n`getId( null );`\n\n通过适当的守卫，代码类型检查和运行将正常：\n\n```typescript\nfunction getId(\
+  \ x: Element| null ) {\n  if ( x) {\n    return x.id ; // 在此分支中，x 的类型是 Element\n\
+  \  } else {\n    return null ; // 在此分支中，x 的类型是 null。\n  }\n}\n```\n\n`getId( null\
+  \ );`\n\n## 第 11.2 节：非空断言\n\n非空断言运算符 `!` 允许你在 TypeScript 编译器无法自动推断时，断言某个表达式不为 `null`\
+  \ 或 `undefined`：\n\n```typescript\ntype ListNode = { data: number; next?: ListNode;\
+  \ };\n```\n\n```typescript\nfunction addNext( node: ListNode) {\n  if ( node.next\
+  \ === undefined ) {\n    node.next = { data: 0 };\n  }\n}\n```\n\n```typescript\n\
+  function setNextValue( node: ListNode, value: number) {\n  addNext( node);\n  //\
+  \ 尽管我们知道 `node.next` 是定义的，因为我们刚刚调用了 `addNext`，\n  // TypeScript 无法在下面的代码行中推断这一点：\n\
+  \  // node.next.data = value;\n  // 所以，我们可以使用非空断言运算符 !，\n  // 来断言 node.next 不是 undefined\
+  \ 并消除编译器警告\n  node.next ! .data = value;\n}\n```\n\n### 第 12 章：用户自定义类型守卫\n\n####\
+  \ 第 12.1 节：类型守卫函数\n\n你可以使用任何喜欢的逻辑来声明作为类型守卫的函数。\n\n它们的形式如下：\n\n```typescript\nfunction\
+  \ functionName( variableName: any): variableName is DesiredType {\n  // 返回布尔值的体\n\
+  }\n```\n\n如果函数返回 true，TypeScript 将在任何由函数调用守卫的块中将类型缩小为 `DesiredType`。\n\n例如（尝试一下）：\n\
+  \n```typescript\nfunction isString( test: any): test is string {\n  return typeof\
+  \ test === \"string\" ;\n}\n```\n\n```typescript\nfunction example( foo: any) {\n\
+  \  if ( isString( foo)) {\n    // 在此块中，foo 的类型为 string\n    console.log ( \"it's\
+  \ a string: \" + foo);\n  } else {\n    // 在此块中，foo 的类型为 any\n    console.log (\
+  \ \"don't know what this is! [\" + foo + \"]\" );\n  }\n}\n```\n\n`example( \"hello\
+  \ world\" );` // 输出 \"it's a string: hello world\"\n\n`example({ something: \"else\"\
+  \ });` // 输出 \"don't know what this is! [[object Object]]\"\n\n类型谓词（返回类型位置中的 `foo\
+  \ is Bar`）在编译时用于缩小类型，而函数体在运行时使用。类型谓词和函数必须一致，否则你的代码将无法工作。\n\n类型守卫函数不一定使用 `typeof`\
+  \ 或 `instanceof`，可以使用更复杂的逻辑。\n\n例如，此代码通过检查版本字符串来确定你是否拥有一个 jQuery 对象。\n\n```typescript\n\
+  function isJQuery( foo): foo is JQuery { \n  // 测试 jquery 的版本字符串\n  return foo !==\
+  \ undefined;\n}\n```\n\n```typescript\nfunction example( foo) {\n  if ( isJQuery(\
+  \ foo)) {\n    // ...\n  }\n}\n```\n\n## 第 12.2 节：使用 instanceof\n\n`instanceof`\
+  \ 要求变量是特定类的实例。\n\n示例：\n\n```typescript\nclass Pet { }\nclass Dog extends Pet {\n\
+  \  bark() { }\n}\nclass Cat extends Pet {\n  purr() { }\n}\n```\n\n用法：\n\n```typescript\n\
+  function example(foo: any) {\n  if (foo instanceof Dog) {\n    // ...\n  } else\
+  \ if (foo instanceof Cat) {\n    // ...\n  }\n}\n```\n\n## 第 12.3 节：使用 typeof\n\n\
+  `typeof` 用于区分 `number`、`string`、`boolean`, `symbol`。与 `instanceof` 不同，它作用于原始类型。\n\
+  \n```typescript\nfunction example(foo: any) {\n  if (typeof foo === \"number\")\
+  \ {\n    // ...\n  } else if (typeof foo === \"string\") {\n    // ...\n  }\n}\n\
+  ```\n\n# 第 13 章：TypeScript 基础示例\n\n#### 第 13.1 节：使用 super 关键字的类继承示例\n\n通用 Car 类有一些属性和一个描述方法。\n\
+  \n```typescript\nclass Car {\n  name: string;\n  engineCapacity: string;\n\n  constructor(name:\
+  \ string, engineCapacity: string) {\n    this.name = name;\n    this.engineCapacity\
+  \ = engineCapacity;\n  }\n\n  describeCar() {\n    console.log(`${this.name} car\
+  \ comes with ${this.engineCapacity} displacement`);\n  }\n}\n```\n\n`HondaCar` 继承了现有的通用类并增加了新属性。\n\
+  \n```typescript\nclass HondaCar extends Car {\n  seatingCapacity: number;\n\n  constructor(name:\
+  \ string, engineCapacity: string, seatingCapacity: number) {\n    super(name, engineCapacity);\n\
+  \    this.seatingCapacity = seatingCapacity;\n  }\n\n  describeHondaCar() {\n  \
+  \  super.describeCar();\n    console.log(`${this.name} cars comes with seating capacity\
+  \ of ${this.seatingCapacity}`);\n  }\n}\n```\n\n#### 第 13.2 节：静态类变量示例 - 计算方法被调用的次数\n\
+  \n这里 `countInstance` 是一个静态类变量。\n\n```typescript\nclass StaticTest {\n  static countInstance:\
+  \ number = 0;\n  constructor() {\n    StaticTest.countInstance++;\n  }\n}\n```\n\
+  \n`new StaticTest();`\n\n`new StaticTest();`\n\n`console.log(StaticTest.countInstance);`\n\
+  \n### 第 14 章：导入外部库\n\n## 第 14.1 节：查找定义文件\n\n对于 typescript 2.x：\n\n来自 DefinitelyTyped\
+  \ 的定义通过 `@types` npm 包可用：\n\n```bash\nnpm i --save lodash\nnpm i --save-dev @types/lodash\n\
+  ```\n\n但，如果你想从其他仓库使用类型，可以使用旧方法：\n\n对于 typescript 1.x：\n\nTypings 是一个可以自动将类型定义文件安装到本地项目的\
+  \ npm 包。我建议你阅读快速入门 .\n\n```bash\nnpm install -global typings\n```\n\n\n\n\n\nlodash\
+  \ npm `https://www.npmjs.com/package/lodash 1\n\n2016-07-01T20:51:07.000Z\n\n2.\
+  \ 然后决定你应该从哪个源安装。我使用 `dt`，它代表 `DefinitelyTyped`，这是一个社区可以编辑类型定义（typings）的 GitHub 仓库，它通常是最新更新的。\n\
+  \n3. 安装类型定义文件\n\n```\ntypings install dt~lodash -global -save\n```\n\n让我们拆解最后一条命令。我们正在将\
+  \ DefinitelyTyped 版本的 `lodash` 作为全局类型定义文件安装到项目中，并将其作为依赖保存到 `typings.json` 中。现在，无论何时何导入\
+  \ `lodash`，typescript 都会加载 `lodash` 的类型定义文件。\n\n4. 如果我们想安装仅用于开发环境的类型定义，可以提供 `-save-dev`\
+  \ 标志：\n\n```\ntypings install chai -save-dev\n```\n\n#### 14.2 节：从 npm 导入模块\n\n\
+  如果你有该模块的类型定义文件 (`d.ts`)，可以使用 import 语句。\n\n```typescriptimport _ = require('lodash');\n\
+  ```\n\n如果你没有该模块的定义文件，TypeScript 在编译时会抛出错误，因为它找不到你尝试导入的模块。\n\n在这种情况下，你可以使用普通的运行时\
+  \ `require` 函数导入该模块。然而，它将其返回为 `any` 类型。\n\n```typescript\n// _ 变量类型为 any，因此 TypeScript\
+  \ 不会执行任何类型检查。\nconst _: any = require('lodash');\n```\n\n从 TypeScript 2.0 开始，你还可以使用*简写环境模块声明\
+  \ (shorthand ambient module declaration)*，在没有模块类型定义文件的情况下告诉 TypeScript 模块存在。尽管在这种情况下，TypeScript\
+  \ 无法提供任何意义的类型检查。\n\n```typescript\ndeclare module \"lodash\";\n```\n\n```typescript\n\
+  // 现在你可以以任何想要的方式从 lodash 导入：\nimport { flatten } from \"lodash\";\nimport * as _\
+  \ from \"lodash\";\n```\n\n从从 TypeScript 2.1 开始，规则进一步放宽。现在，只要你的 `node_modules` 目录存在该模块，TypeScript\
+  \ 就会允许你导入它，即使没有没有模块声明。（注意，如果使用 `-noImplicitAny` 编译器选项，下例仍会生成警告。）\n\n```typescript\n\
+  // 如果 `node_modules/someModule/index.js` 存在，或者 `node_modules/someModule/package.json`\
+  \ 有有效的 \"main\" 入口点，则可行\nimport { foo } from \"someModule\";\n```\n\n#### 14.3 节：使用没有类型定义的全局外部库\n\
+  \n虽然模块是理想的，但如果你使用的库是通过全局变量（如 `$` 或 `_`）引用的（因为它通过脚本标签加载），你可以创建一个环境声明来引用它：\n\n```typescript\n\
+  declare const _: any;\n```\n\n#### 14.4 节：使用 TypeScript 2.x 查找定义文件\n\n在 TypeScript\
+  \ 2.x 版本中，类型定义现在从 npm 的 `@types` 仓库获取。这些由 TypeScript 编译器自动解析，使用起来简单得多。\n\n要安装类型定义，只需将其作为开发依赖安装在项目的\
+  \ `package.json` 中\n\n例如：\n\n```bash\nnpm i -S lodash\nnpm i -D @types/lodash\n\
+  ```\n\n安装后，你只需像以前一样使用该模块\n\n```typescript\nimport * as _ from 'lodash'\n```\n\n\
+  # 第 15 章：模块 - 导出与导入\n\n#### 15.1 节：Hello world 模块\n\n```typescript\n//hello.ts\n\
+  export function hello(name: string){\n  console.log (`Hello ${name}!`);\n}\n\nfunction\
+  \ helloES(name: string){\n  console.log (`Hola ${name}!`);\n}\n\nexport {helloES};\n\
+  export default hello;\n```\n\n### 使用目录加载\n\n如果目录包含名为 `index.ts` 的文件，则可以使用目录名加载（`index.ts`\
+  \ 是可选的）。\n\n```typescript\n//welcome/index.ts\nexport function welcome(name: string){\
+  \ console.log (`Welcome ${name}! }\n```\n\n### 定义模块的示例\n\n```typescript\nimport\
+  \ { hello, helloES} from \"./hello\"; // 导入指定的元素\nimport defaultHello from \"./hello\"\
+  ; \nimport * as Bundle from \"./hello\"; // 所有导出到 Bundle\nimport { welcome} from\
+  \ \"./welcome\"; // 默认导出到 name\n\n// index.ts 被省略\n\nhello (\"World\");\nhelloES\
+  \ (\"undo\");\ndefaultHello (\"World\"); // Hello World! // Hola Mundo!\n\nBundle.hello\
+  \ (\"World\"); Bundle.helloES (\"undo\"); // Hello World! // Hola Mundo!\n\nwelcome\
+  \ (\"Human\"); // Welcome Human!\n```\n\n#### 15.2：重新导出\n\nTypeScript 允许重新导出声明。\n\
+  \n```typescript\n//Operator.ts\ninterface Operator {\n  eval(a: number, b: number):\
+  \ number;\n}\nexport default Operator;\n```\n\n```typescript\n//Add.ts\nimport Operator\
+  \ from \"./Operator\";\nexport class Add implements Operator {\n  eval(a: number,\
+  \ b: number): number { return a + b; }\n}\n```\n\n```typescript\n//Mul.ts\nimport\
+  \ Operator from \"./Operator\"; \nexport class Mul implements Operator {\n  eval(a:\
+  \ number, b: number): number { return a * b; }\n}\n```\n\n可以在单个库中打包所有操作\n\n```typescript\n\
+  //Operators.ts\nimport {Add} from \"./Add\"; \nimport {Mul} from \"./Mul\";\nexport\
+  \ {Add, Mul};\n```\n\n**命名声明**可以使用更短的语法重新导出\n\n```typescript\n//NamedOperators.ts\n\
+  export {Add} from \"./Add\"; \nexport {Mul} from \"./Mul\";\n```\n\n**默认导出**也可以导出，但没有简写语法。记住，每个模块只能有一个默认导出。\n\
+  \n```typescript\n//Calculator.ts\nexport {Add} from \"./Add\";\nexport {Mul} from\
+  \ \"./Mul\";\nimport Operator from \"./Operator\";\nexport default Operator;\n```\n\
+  \n重新导出**打包导入**是可能的\n\n```typescript\n//RepackedCalculator.ts \nexport * from \"\
+  ./Operators\";\n```\n\n重新导出打包时，显式声明可能会被覆盖。\n\n```typescript\n//FixedCalculator.ts\n\
+  export * from \"./Calculator\"\nimport Operator from \"./Calculator\";\nexport class\
+  \ Add implements Operator {\n  eval(a: number, b: number): number { return 42; }\n\
+  }\n```\n\n用法示例\n\n```typescript\n//run.ts\nimport { Add, Mul} from \"./FixedCalculator\"\
+  ;\nconst add = new Add(); const mul = new Mul();\nconsole.log (add.eval(1, 1));\
+  \ // 42\nconsole.log (mul.eval(3, 4)); // 12\n```\n\n#### 15.3 节：导出/导入\n\n任何声明（变量、const、函数等）都可以从模块导出并在其他模块中导入。\n\
+  \nTypeScript 提供两种类型：命名和默认。\n\n**命名导出**\n\n```typescript\n// adams.ts\nexport function\
+  \ hello(name: string){\n  console.log (`Hello ${name}!`);\n}\nexport const answerToUniverseAndEverything\
+  \ = 42;\nexport const unused = 0;\n```\n\n导入命名导出时，你可以指定想要导入的元素。\n\n```typescript\n\
+  import {hello, answerToUniverseAndEverything} from \"./adams\"; \nhello(answerToUniverseAndEverything);\
+  \ // Hello 42!\n```\n\n**默认导出**\n\n每个模块可以有一个默认导出\n\n```typescript\n// dent.ts\n\
+  const defaultValue = 54; export default defaultValue;\n```\n\n可以使用以下方式导入\n\n```typescript\n\
+  import defaultValue from \"./dent\";\nconsole.log(defaultValue); // 54\n```\n\n\
+  **打包导入**\n\nTypeScript 提供了将整个模块导入到变量的方法\n\n```typescript\n// adams.ts\nexport function\
+  \ hello(name: string){\n  console.log (`Hello ${name}!`);\n}\nexport const answerToUniverseAndEverything\
+  \ = 42;\nexport const unused = 0;\n```\n\n```typescript\nimport * as Bundle from\
+  \ \"./adams\";\nBundle.hello(Bundle.answerToUniverseAndEverything); // Hello 42!\n\
+  console.log(Bundle.unused); // 0\n```\n\n#### 第 16 章：发布 TypeScript 定义文件\n\n####\
+  \ 16.1 节：在 npm 库中包含定义文件\n\n在你的 `package.json` 中添加 `typings`\n\n```json\n{\n  ...\n\
+  \  \"typings\" : \"path/file.d.ts\"\n  ...\n}\n```\n\n现在每当导入该库时，typescript 都会加载类型文件\n\
+  \n#### 第 17 章：配合 webpack 使用 TypeScript\n\n#### 17.1 节：webpack.config.js\n\n安装加载\
+  \ `npm install --save-dev ts-loader source-map-loader`\n\n**tsconfig.json**\n\n\
+  ```json\n{\n  \"compilerOptions\" : {\n    \"sourceMap\" : true,\n    \"noImplicitAny\"\
+  \ : true,\n    \"module\" : \"commonjs\",\n    \"target\" : \"es5\",\n    \"jsx\"\
+  \ : \"react\" // 如果你想使用 react jsx\n  }\n}\n```\n\n```javascript\nmodule.exports\
+  \ = {\n  entry: \"./src/index.ts\",\n  output: {\n    filename: \"./dist/bundle.js\"\
+  ,\n  },\n  // 为调试 webpack 的输出启用源 cemaps。\n  devtool: \"source-map\",\n  resolve\
+  \ : {\n```\n\n\n\n\n\n```javascript\n// 添加 '.ts' 和 '.tsx' 为可解析的扩展名。\nextensions:\
+  \ [ \"\" , \".webpack.js\" , \".web.js\" , \".ts\" , \".tsx\" , \".js\" ],\n\n},\n\
+  \nmodule : {\n  loaders: [\n    // 所有扩展名为 '.ts' 或 '.tsx' 的文件将由 'ts-loader' 处理。\n\
+  \    { test: */\\.tsx?$/* , loader: \"ts-loader\" }\n  ],\n  preLoaders : [\n  \
+  \  // 所有输出 '.js' 文件将由 'source-map-loader' 处理任何 sourcemaps。\n    { test: */\\.js$/*\
+  \ , loader: \"source-map-loader\" }\n  ]\n},\n```\n/******************************\n\
+  ** 如果你想使用 react\n********************************************/\n// 当导入的模块路径匹配以下任意之一时，只需\n\
+  // 假设存在相应的全局变量并使用该变量即可。\n// 这很重要，因为这允许我们避免打包所有的\n// 依赖，从而允许浏览器在多次构建之间缓存这些库。\n//\
+  \ externals: {\n// \"react\": \"React\",\n// \"react-dom\": \"ReactDOM\"\n// },\n\
+  };\n```\n\n# 第 18 章：混入 (Mixins)\n\n## 参数描述\n\n- `derivedCtor`: 你想要用作组合类（composition\
+  \ class）的类\n- `baseCtors`: 一个类数组，将这些类添加到组合类中\n\n## 第 18.1 节：混入的示例\n\n要创建混入，只需声明可以作为“行为”使用的轻量级类。\n\
+  \n```typescript\nclass Flies {\n  fly() {\n    alert( '这是鸟吗？还是飞机？' );\n  }\n}\n\n\
+  class Climbs {\n  climb() {\n    alert( '我的蜘蛛感在抽动。' );\n  }\n}\n\nclass Bulletproof\
+  \ {\n  deflect() {\n    alert( '我的翅膀是钢铁之盾。' );\n  }\n}\n```\n\n然后你可以将这些行为应用到组合类中：\n\
+  \n```typescript\nclass BeetleGuy implements Climbs, Bulletproof { \n  climb: ()\
+  \ => void ;\n  deflect: () => void ;\n}\n\napplyMixins ( BeetleGuy, [ Climbs, Bulletproof]);\n\
+  ```\n\n需要 `applyMixins` 函数来完成组合工作。\n\n```typescript\nfunction applyMixins( derivedCtor:\
+  \ any, baseCtors: any[]) { \n  baseCtors.forEach ( baseCtor => {\n    Object.getOwnPropertyNames\
+  \ ( baseCtor.prototype ) .forEach ( name => {\n      if ( name !== 'constructor'\
+  \ ) {\n        derivedCtor.prototype [ name] = baseCtor.prototype [ name];\n   \
+  \   }\n    });\n  });\n}\n```\n\n# 第 19 章：如何在没有类型定义文件使用 JavaScript 库\n\n虽然某些现有的\
+  \ JavaScript 库拥有定义文件，但有很多并没有。TypeScript 提供了模式来处理缺失的声明。\n\n## 第 19.1 节：创建一个导出默认 any\
+  \ 的模块\n\n对于更复杂的项目，或者在你打算逐步对依赖进行类型的情况下，创建一个模块可能会更整洁。\n\n以 JQuery 为例（尽管它有可用的类型）：\n\
+  \n```typescript\n// 放在 jquery.d.ts 中\ndeclare let $: any;\nexport default $;\n```\n\
+  \n然后在项目的任何一个文件中，你可以通过以下方式导入此定义：\n\n```typescript\n// 其他 .ts 文件\nimport $ from \"\
+  jquery\";\n```\n\n在导入之后，`$` 将被标记为 `any`。\n\n如果库有多个顶层变量，请按名称导出和导入：\n\n```typescript\n\
+  // 放在 jquery.d.ts 中\ndeclare module \"jquery\" {\n  let $: any;\n  let jQuery: any;\n\
+  \  export { $ };\n  export { jQuery };\n}\n```\n\n然后你可以同时导入并使用这两个名称：\n\n```typescript\n\
+  // 其他 .ts 文件\nimport { $, jQuery} from \"jquery\";\n$.doThing ();\njQuery.doOtherThing\
+  \ ();\n```\n\n## 第 19.2 节：声明一个 any 全局变量\n\n有时直接声明一个类型为 `any` 的全局是最简单的，特别是在简单的项目中。\n\
+  \n如果 jQuery 没有类型声明（它有），你可以写：\n\n```typescript\ndeclare var $: any;\n```\n\n现在任何对\
+  \ `$` 的使用都会被标记为 `any`。\n\n## 第 19.3 节：使用环境模块 (ambient module)\n\n如果你只想表示导入的*意图*（所以你不想声明全局变量），但又不想处理任何显式定义，你可以导入一个环境模块。\n\
+  \n```typescript\n// 在声明文件中（如 declarations.d.ts）\ndeclare module \"jquery\"; // 注意这里没有定义的导出内容\n\
+  ```\n\n然后你可以从该环境模块导入。\n\n```typescript\n// 其他 .ts 文件\nimport { $, jQuery} from \"\
+  jquery\";\n```\n从上述声明的模块中导入的任何内容（如 `$` 和 `jQuery`）都将是 `any` 类型。\n\n# 第 20 章：TypeScript\
+  \ 安装 typescript 和运行 typescript 编译器 tsc\n\n如何从命令行安装 TypeScript 并针对 `.ts` 文件运行 TypeScript\
+  \ 编译器。\n\n## 第 20.1 节：步骤\n\n安装 TypeScript 并运行 typescript 编译器。\n\n### 安装 TypeScript\
+  \ 编译器\n```bash\nnpm install -g typescript\n```\n\n### 检查 typescript 版本\n```bash\n\
+  tsc - v\n```\n\n![](img/Image00003.gif) **下载 Linux/Windows 版本的 Visual Studio Code**\n\
+  \nVisual Code 下载链接\n\n1. 打开 Visual Studio Code\n2. 打开 Visual Studio Code\n3. 点击左侧面板的加号\n\
+  4. 创建一个基础类。\n5. 编译你的类型文件并输出。\n\n![](img/Image0003.gif)\n\n# 第 21 章：TypeScript 配置\n\
+  \n## 第 21.1 节：步骤\n\n### 配置 tsconfig\n```bash\ntsc --init\n```\n这会创建一个 `tsconfig.json`\
+  \ 文件。\n\n### 使用 Gulp\n```typescript\nvar gulp = require( \"gulp\" );\nvar ts = require(\
+  \ \"gulp-typescript\" );\n\n\nvar tsResult = gulp.src ( \"src/*.ts\" )\n. pipe (\
+  \ ts({\n  noImplicitAny: true,\n  out: \"output.js\"\n}));\n\nreturn tsResult.js\
+  \ .pipe ( gulp.dest ( \"built/local\" ));\n```\n\n# 第 22 章：与构建工具集成\n\n## 第 22.1\
+  \ 节：Browserify\n\n### 安装\n```bash\nnpm install tsify\n```\n\n### 使用命令行\n```javascript\n\
+  var browserify = require( \"browserify\" );\nvar tsify = require( \"tsify\" );\n\
+  \nbrowserify ()\n  .pipe ( tsify({ noImplicitAny: true }))\n  .bundle()\n  .pipe(\
+  \ process.stdout );\n```\n\n## 第 22.2 节：Webpack\n\n### 安装\n```bash\nnpm install\
+  \ ts-loader --save-dev\n```\n\n### 基础 webpack.config.js\n```javascript\nmodule.exports\
+  \ = {\n  entry: ['./index.tsx'],\n  output: {\n    filename: \"bundle.js\"\n  },\n\
+  \  resolve: {\n    extensions: [ '.webpack.js', '.web.js', '.ts', '.tsx', '.js'\
+  \ ]\n  },\n  module: {\n    loaders: [\n      { test: /\\.ts(x)?$/, loader: 'ts-loader',\
+  \ exclude: /node_modules/ }\n    ]\n  }\n};\n```\n\n## 第 22.3 节：Grunt\n\n### 安装\n\
+  ```bash\nnpm install grunt-ts\n```\n\n### 基础 Gruntfile.js\n```javascript\nmodule.exports\
+  \ = function ( grunt) {\n  grunt.initConfig ({\n    ts: {\n      default: {\n  \
+  \      src: [ \"**/*.ts\", \"!node_modules/**/*.ts\" ]\n      }\n    }\n  });\n\
+  \  grunt.loadNpmTasks ( \"grunt-ts\" );\n  grunt.registerTask ( \"default\" , [\
+  \ \"ts\" ]);\n};\n```\n\n## 第 22.4 节：Gulp\n\n### 安装\n```bash\nnpm install gulp-typescript\n\
+  ```\n\n### 基础 gulpfile.js\n```javascript\nvar gulp = require( \"gulp\" );\nvar ts\
+  \ = require( \"gulp-typescript\" );\n\ngulp.task ( \"default\" , function () {\n\
+  \  var tsResult = gulp.src ( \"src/*.ts\" )\n    . pipe ( ts({\n      noImplicitAny:\
+  \ true,\n      out: \"output.js\"\n    }));\n\n  return tsResult.js .pipe ( gulp.dest\
+  \ ( \"built/local\" ));\n});\n```\n\n\n\n\n\n```javascript\nvar tsProject = ts.createProject('tsconfig.json',\
+  \ {\n  noImplicitAny: true // 你可以在这里添加并覆盖参数\n});\n\ngulp.task(\"default\", function\
+  \ () {\n  var tsResult = tsProject.src()\n    .pipe(tsProject());\n\n  return tsResult.js.pipe(gulp.dest('release'));\n\
+  });\n```\n更多详情：ivogabe/gulp-typescript\n\n## 第 22.5 ：MSBuild\n\n更新项目文件以包含本地安装的 `Microsoft.TypeScript.Default.props`（位于顶部）和\
+  \ `Microsoft.TypeScript.targets`（位于底部）：\n\n```xml\n<?xml version=\"1.0\" encoding=\"\
+  utf-8\"?>\n<Project ToolsVersion=\"4.0\" DefaultTargets=\"Build\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\"\
+  >\n  <!-- 在底部引入默认属性 -->\n  <Import\n    Project=\"$(MSBuildExtensionsPath32)\\Microsoft\\\
+  VisualStudio\\v$(VisualStudioVersion)\\TypeScript\\Microsoft.TypeScript.Default.props\"\
+  \n    Condition=\"Exists('$(MSBuildExtensionsPath32)\\Microsoft\\VisualStudio\\\
+  v$(VisualStudioVersion)\\TypeScript\\Microsoft.TypeScript.Default.props')\" />\n\
+  \  <!-- TypeScript 配置放置在此处 -->\n  <PropertyGroup Condition=\"'$(Configuration)'\
+  \ == 'Debug'\">\n    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>\n\
+  \    <TypeScriptSourceMap>true</TypeScriptSourceMap>\n  </PropertyGroup>\n  <PropertyGroup\
+  \ Condition=\"'$(Configuration)' == 'Release'\">\n    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>\n\
+  \    <TypeScriptSourceMap>false</TypeScriptSourceMap>\n  </PropertyGroup>\n  <!--\
+  \ 在底部引入默认目标 -->\n  <Import\n    Project=\"$(MSBuildExtensionsPath32)\\Microsoft\\\
+  VisualStudio\\v$(VisualStudioVersion)\\TypeScript\\Microsoft.TypeScript.targets\"\
+  \n    Condition=\"Exists('$(MSBuildExtensionsPath32)\\Microsoft\\VisualStudio\\\
+  v$(VisualStudioVersion)\\TypeScript\\Microsoft.TypeScript.targets')\" />\n</Project>\n\
+  ```\n关于定义 MSBuild 编译器选项的更多详情：在 MSBuild 项目中设置编译器选项\n\n## 第 22.6 ：NuGet\n\n右键点击 ->\
+  \ 管理 NuGet 包 搜索 `Microsoft.TypeScript.MSBuild` 并点击安装\n\n安装完成后，重新生成！\n\n更多详情可以在包管理器对话框和使用\
+  \ NuGet 使用每日构建中找到\n\n## 第 22.7 ：安装并配置 webpack + loaders\n\n### 安装\n\n```bash\nnpm\
+  \ install -D webpack typescript ts-loader\n```\n\nwebpack.config.js\n```javascript\n\
+  module.exports = {\n  entry: {\n    app: ['./src/'],\n  },\n  output: {\n    path:\
+  \ __dirname,\n    filename: './dist/[name].js',\n  },\n  resolve: {\n    extensions:\
+  \ ['', '.js', '.ts'],\n  },\n  module: {\n    loaders: [{\n      test: /\\.ts(x)$/,\n\
+  \      loaders: ['ts-loader'],\n      exclude: /node_modules/\n    }],\n  }\n};\n\
+  ```\n\n# 第 23 章：配合 RequireJS 使用 TypeScript\n\nRequireJS 是一个 JavaScript 文件和模块加载器。它针对浏览器内使用进行了优化，但也可以用于其他\
+  \ JavaScript 环境，如 Rhino 和 Node。使用诸如 RequireJS 这样的模块化脚本加载器将提高代码的速度和质量。\n\n配合 RequireJS\
+  \ 使用 TypeScript 需要配置 `tsconfig.json` 并在任何 HTML 文件中包含代码段。编译器会将导入从 TypeScript 语法翻译为\
+  \ RequireJS 的格式。\n\n### 第 23.1 ：使用 RequireJS CDN 引入已编译 TypeScript 文件的 HTML 示例\n\n\
+  ```html\n<body onload=\"__init();\">\n...\n<script src=\"http://requirejs.org/docs/release/2.3.2/comments/require.js\"\
+  ></script>\n<script>\nfunction __init() {\n  require([\"view/index.js\"]);\n}\n\
+  </script>\n</body>\n```\n\n### 第 23.2：使用 RequireJS 导入样式编译到 view 文件夹的 tsconfig.json\
+  \ 示例\n\n```json\n{\n  \"module\": \"amd\", // 使用适用于 RequireJS 的 AMD 模块代码生成器\n  \"\
+  rootDir\": \"./src\", // 修改为源文件夹\n  \"outDir\": \"./view\",\n  ...\n}\n```\n\n#\
+  \ 第 24 章：配合 AngularJS 使用 TypeScript\n\n| 名称 | 描述 |\n| :--- | :--- |\n| `controllerAs`\
+  \ | 别名，可以为其分配变量或函数。@参: https://docs.angularjs.org/guide/directive |\n| `$inject`\
+  \ | 依赖注入列表，由 angular 解析并作为参数传递给构造函数。 |\n\n### 第 24.1：指令\n\n```typescript\ninterface\
+  \ IMyDirectiveController {\n  //在此处指定暴露的控制器方法和属性\n  getUrl(): string;\n}\n\nclass\
+  \ MyDirectiveController implements IMyDirectiveController {\n  // 内部注入，针对每个指令\n\
+  \  public static $inject = [\"$location\", \"toaster\"];\n  constructor(private\
+  \ $location: ng.ILocationService, private toaster: any) {\n    // $location 和 toaster\
+  \ 现在是控制器的属性\n  }\n  public getUrl(): string {\n    return this.$location.url();\
+  \ // 利用 $location 获取 URL\n  }\n}\n\n/*\n外部注入，用于运行一次的控制。\n例如，我们把所有模板都放在一个 value 中，并想使用它。\
+  \ \n*/\nexport function myDirective(templatesUrl: ITemplates): ng.IDirective {\n\
+  \  return {\n    controller: MyDirectiveController,\n    controllerAs: \"vm\"\n\
+  \  };\n}\n```\n\n### 第 24.2：简单示例\n\n```typescript\nexport function myDirective($location:\
+  \ ng.ILocationService): ng.IDirective {\n  return {\n    controller: MyDirectiveController,\n\
+  \    controllerAs: \"vm\",\n    link: (scope: ng.IScope, element: ng.AugmentedJQuery,\
+  \ attributes: ng.ttributes) => {\n      let url = $location.url();\n      element.text(\"\
+  Current URL: \" + url);\n    },\n    replace: true,\n    require: \"ngModel\",\n\
+  \    templateUrl: templatesUrl,\n  };\n}\n```\n\n### 第 24.3：组件\n\n为了更容易过渡到 Angular\
+  \ 2，建议使用从 1.5.8 开始提供的 `Component`。\n\nmyModule.ts\n```typescript\nimport { MyModuleComponent\
+  \ } from \"./components/myModuleComponent\";\nimport { MyModuleService } from \"\
+  ./services/MyModuleService\";\n\nangular.module(\"myModule\", [])\n  .component(\"\
+  myModuleComponent\", new MyModuleComponent())\n  .service(\"myModuleService\", MyModuleService);\n\
+  ```\n\ncomponents/myModuleComponent.ts\n```typescript\nimport IComponentOptions\
+  \ = angular.IComponentOptions;\nimport IControllerConstructor = angular.IControllerConstructor;\n\
+  import Injectable = angular.Injectable;\nimport { MyModuleController } from \"../controller/MyModuleController\"\
+  ;\n\nexport class MyModuleComponent implements IComponentOptions {\n  public templateUrl\
+  \ = \"./app/myModule/templates/myComponentTemplate.html\";\n  public controller:\
+  \ Injectable<IControllerConstructor> = MyModuleController;\n  public bindings: {\
+  \ [boundProperty: string]: string } = {};\n}\n```\n\ntemplates/myModuleComponent.html\n\
+  ```html\n<div class=\"my-module-component\">{{$ctrl.someContent}}</div>\n```\n\n\
+  controller/MyModuleController.ts\n```typescript\nimport IController = angular.IController;\n\
+  import { MyModuleService } from \"../services/MyModuleService\";\n\nexport class\
+  \ MyModuleController implements IController {\n  public static readonly $inject:\
+  \ string[] = [\"$element\", \"myModuleService\"];\n  public someContent: string\
+  \ = \"Hello World\";\n\n  constructor($element: JQuery, private myModuleService:\
+  \ MyModuleService) {\n    console.log(\"element\", $element);\n  }\n\n  public doSomething():\
+  \ void {\n    // 实现..\n  }\n}\n```\n\n\n\n\n\n### `services/MyModuleService.ts`\n\
+  \n```typescript\nexport class MyModuleService {\n  public static readonly $inject:\
+  \ string[] = [];\n\n  constructor() { }\n\n  public doSomething(): void { // do\
+  \ something }\n}\n```\n\n### `somewhere.html <my-module-component></my-module-component>`\n\
+  \n# 第 25 章：配合 SystemJS 使用 TypeScript\n\n## 第 25.1 节：使用 SystemJS 在浏览器中使用 Hello World\n\
+  \n### 安装 systemjs 和 plugin-typescript\n\n```bash\nnpm install systemjs\nnpm install\
+  \ plugin-typescript\n```\n\n注意：这将安装尚未发布的 typescript 2.0.0 编译器。\n要使用 TypeScript 1.8，你需要使用\
+  \ plugin-typescript 4.0.16。\n\n### 创建 hello.ts 文件\n\n```typescript\nexport function\
+  \ greeter(person: String) {\n  return 'Hello, ' + person;\n}\n```\n\n### 创建 hello.html\
+  \ 文件\n\n```html\n<!doctype html>\n<html>\n<head>\n  <title>Hello World in TypeScript</title>\n\
+  \  <script src=\"node_modules/systemjs/dist/system.src.js\"></script>\n  <script\
+  \ src=\"config.js\"></script>\n  <script>\n    window.addEventListener('load', function()\
+  \ {\n      System.import('./hello.ts').then(function(hello) {\n        document.body.innerHTML\
+  \ = hello.greeter('World');\n      });\n    });\n  </script>\n</head>\n<body>\n\
+  </html>\n```\n\n### 创建 config.js - SystemJS 配置文件\n\n```javascript\nSystem.config({\n\
+  \  packages: {\n    \"plugin-typescript\": {\n      \"main\": \"plugin.js\"\n  \
+  \  },\n    \"typescript\": {\n      \"main\": \"lib/typescript.js\",\n      \"meta\"\
+  : {\n        \"lib/typescript.js\": {\n          \"exports\": \"ts\"\n        }\n\
+  \      }\n    }\n  },\n  map: {\n    \"plugin-typescript\": \"node_modules/plugin-typescript/lib/\"\
+  ,\n    /** 注意：这是针对 npm 3 (node 6) */\n    /* 对于 npm 2，typescript 路径将为 */\n    /**\
+  \ node_modules/plugin-typescript/node_modules/typescript/** \"typescript\": \"node_modules/typescript/\"\
+  \ */\n  },\n  transpiler: \"plugin-typescript\",\n  meta: {\n    \"./hello.ts\"\
+  : {\n      format: \"esm\",\n      loader: \"plugin-typescript\"\n    }\n  },\n\
+  \  typescriptOptions: {\n    typeCheck: 'strict'\n  }\n});\n```\n\n注意：如果你不想进行类型检查，请从\
+  \ config.js 中移除 `loader: \"plugin-typescript\"` 和 `typescriptOptions`。另外注意，它永远不会检查\
+  \ JavaScript 代码，特别是 html 示例中 `<script>` 标签中的代码。\n\n### 测试\n\n```bash\nnpm install\
+  \ live-server\n./node_modules/.bin/live-server --open=hello.html\n```\n\n### 构建生产环境版本\n\
+  \n```bash\nnpm install systemjs-builder\n```\n\n创建 build.js 文件：\n\n```javascript\n\
+  var Builder = require('systemjs-builder');\nvar builder = new Builder();\nbuilder.loadConfig('./config.js').then(function\
+  \ () {\n  builder.bundle('./hello.ts', './hello.js', { minify: true });\n});\n```\n\
+  \n从 hello.ts 构建 hello.js\n```bash\nnode build.js\n```\n\n### 在生产环境中使用\n\n在首次使用之前，只需用\
+  \ `<script>` 标签加载 `hello.js`。\nhello-production.html 文件：\n\n```html\n<!doctype html>\n\
+  <html>\n<head>\n  <title>Hello World in TypeScript</title>\n  <script src=\"node_modules/systemjs/dist/system.src.js\"\
+  ></script>\n  <script src=\"config.js\"></script>\n  <script src=\"hello.js\"></script>\n\
+  \  <script>\n    window.addEventListener('load', function() {\n      System.import('./hello.ts').then(function(hello)\
+  \ {\n        document.body.innerHTML = hello.greeter('World');\n      });\n    });\n\
+  \  </script>\n</head>\n<body>\n</html>\n```\n\n# 第 26 章：配合 React 使用 TypeScript (JS\
+  \ & 原生)\n\n## 第 26.1 节：用 TypeScript 编写 ReactJS 组件\n\n你可以在 TypeScript 中轻松地使用 ReactJS\
+  \ 组件。只需将 `.jsx` 文件扩展名重命名为 `.tsx` 即可：\n\n*helloMessage.tsx:*\n\n```javascript\nvar\
+  \ HelloMessage = React.createClass({\n  render: function () {\n    return <div>Hello\
+  \ {this.props.name}</div>;\n  }\n});\n\nReactDOM.render(<HelloMessage name=\"John\"\
+  \ />, mountNode);\n```\n\n但为了充分利用 TypeScript 的主要特性（静态类型检查），你必须完成几件事：\n\n##### 1)\
+  \ 将 React.createClass 转换为 ES6 Class：\n\n*helloMessage.tsx:*\n\n```typescript\nclass\
+  \ HelloMessage extends React.Component {\n  render() {\n    return <div>Hello {this.props.name}</div>;\n\
+  \  }\n}\nReactDOM.render(<HelloMessage name=\"John\" />, mountNode);\n```\n\n关于转换为\
+  \ ES6 的更多信息请参阅此处。\n\n##### 2) 添加 Props 和 State 接口：\n\n```typescript\ninterface Props\
+  \ {\n  name: string;\n  optionalParam?: number;\n}\n\ninterface State { // 在我们的案例中是空的\
+  \ }\n\nclass HelloMessage extends React.Component {\n  render() {\n    return <div>Hello\
+  \ {this.props.name}</div>;\n  }\n}\n```\n\n\n\n\n\n\"no-unsafe-finally\" : true\
+  \ , // 禁止在 finally 块中使用控制流语句，例如 `return`、`continue,` break 和  throws。\n\n\"no-var-keyword\"\
+  \ : true , // 禁止使用 `var` 关键字。\n\n\"radix\" : true , // 调用 `parseInt` 时要求指定 `radix`\
+  \ 参数。 \"triple-equals\" : true , // 要求使用 `===` 和 `!==` 代替 `==` 和 `!=`。\n\n\"use-isnan\"\
+  \ : true , // 强制使用 `isNaN()` 函数来检查 `NaN` 引用，而不是与 `NaN` 常量进行比较。\n\n# Style\n\n\"\
+  class-name\" : true , // 强制使用 PascalCase（大驼峰命名法）的类和接口名称。\n\n\"interface-name\" :\
+  \ [ true , \"never-prefix\" ], // 要求接口名称以大写字母 I 开头。\n\n\"no-angle-bracket-type-assertion\"\
+  \ : true , // 强制使用 `as Type` 进行类型断言，而不是 `<Type>`。\n\n\"one-variable-per-declaration\"\
+  \ : true , // 禁止在同一声明语句中定义多个变量。\n\n\"quotemark\" : [ true , \"double\" , \"avoid-escape\"\
+  \ ], // 要求字符串字面量使用双引号。 \"semicolon\" : [ true , \"always\" ], // 强制在每个语句末尾一致使用分号。\n\
+  \n\"variable-name\" : [ true , \"ban-keywords\" , \"check-format\" , \"allow-leading-underscore\"\
+  \ ] // 检查变量名的各种错误。禁止将某些 TypeScript 关键字（`any`, `Number`, `number`, `String`, `string`,\
+  \ `Boolean`, `boolean`, `undefined`）用变量或参数。仅允许 camelCase（小驼峰）或 UPPER_CASE（全大写）变量名。允许下划线开头（仅在指定了\
+  \ `checkformat` 时有效）。\n\n}\n\n}\n\n## 第 27.2 节：安装与设置\n\n安装 `tslint` 请运行命令\n\n```bash\n\
+  npm install -g tslint\n```\n\nTslint 通过文件 `tslint.json` 进行配置。初始化默认配置请运行命令：\n\n```bash\n\
+  tslint -init\n```\n\n检查文件中的可能错误请运行命令：\n\n```bash\ntslint filename.ts\n```\n\n##\
+  \ 第 27.3 节：TSLint 规则集\n\ntslint-microsoft-contrib\n\ntslint-eslint-rules\n\ncodelyzer\n\
+  \nYeoman 生成器支持所有这些预设并也可以扩展：`generator-tslint`\n\n## 第 27.4 节：基础 tslint.json 配置\n\
+  \n这是一个基础的 `tslint.json` 配置，它防止使用 `any`，要求 `if` / `else` / `for` / `do/while` 语句使用大括号，并要求字符串使用双引号\
+  \ (`\"`)\n\n```json\n{\n  \"rules\" : {\n    \"no-any\" : true ,\n    \"curly\"\
+  \ : true ,\n    \"quotemark\" : [ true , \"double\" ]\n  }\n}\n```\n\n## 第 27.5\
+  \ 节：使用预定义规则集作为默认\n\ntslint 可以扩展现有的规则集，并带有默认的 `tslint:recommended` 和 `tslint:latest`。\n\
+  \n`tslint:recommended` 是一个稳定的、带有一定主倾向的规则集，我们鼓励在通用 TypeScript 编程中使用。此配置遵循语义化版本（semver），因此在次版本或修订版本中不会有破坏性更改。\n\
+  \n`tslint:latest` 扩展了 `tslint:recommended` 并持续更新，以包含每次 TSLint 发布中的最新规则配置。使用此配置可能会在次版本之间引入破坏性更改，因为启用的新规则会导致代码出现\
+  \ lint 失败。当 TSLint 达到主版本更新时，`tslint:recommended` 将更新为与 `tslint:latest` 完全相同。\n\n\
+  ### 预定义规则集的文档和源码\n\n因此，可以简单使用：\n\n```json\n{ \"extends\" : \"tslint:recommended\"\
+  \ }\n```\n\n来获得一个合理的初始配置。\n\n随后可以通过 `rules` 覆盖该预设中的规则，例如，对于 Node 开发者来说，将 `no-console`\
+  \ 设置为 `false` 是有意义的：\n\n```json\n{ \n  \"extends\" : \"tslint:recommended\" \n \
+  \ \"rules\" : {\n    \"no-console\" : false\n  }\n}\n```\n\n# 第 28 章：tsconfig.json\n\
+  \n## 第 28.1 节：使用 tsconfig.json 创建 TypeScript 项目\n\n`tsconfig.json` 文件的存在表示当前目录是启用\
+  \ TypeScript 项目的根目录。\n\n初始化一个 TypeScript 项目，或者准确说是 `tsconfig.json` 文件，可以通过以下命令完成：\n\
+  \n```bash\ntsc -init\n```\n\n从 TypeScript v2.3.0 及更高版本开始，这将默认创建以下 `tsconfig.json`：\n\
+  \n```json\n{\n  \"compilerOptions\" : {\n    /* Basic Options */\n    \"target\"\
+  \ : \"es5\" , /* 指定 ECMAScript 目标版本：'ES3' (默认), 'ES5', 'ES2015', 'ES2016', 'ES2017',\
+  \ 或 'ESNEXT'. */\n    \"module\" : \"commonjs\" , /* 指定模块代码生成：'commonjs', 'amd',\
+  \ 'system', 'umd' 或 'es2015'. */\n    // \"lib\": [], /* 指定包含在编译中的库文件： */\n    //\
+  \ \"allowJs\": true, /* 允许编译 javascript 文件。 */ // \"checkJs\": true, /* 报告 .js 文件中的错误。\
+  \ */\n    // \"jsx\": \"preserve\", /* 指定 JSX 代码生成：'preserve', 'react'. */\n   \
+  \ // \"declaration\": true, /* 生成对应的 .ts 文件。 */\n    // \"sourceMap\": true, /*\
+  \ 生成对应的 map 文件。 */\n    // \"outFile\": \"./\", /* 合并输出到单个文件。 */\n    // \"outDir\"\
+  : \"./\", /* 重定向输出。 */\n    // \"rootDir\": \"./\", /* 输入文件的根目录。 */\n    // \"removeComments\"\
+  : true, /* 移除注释。 */\n    // \"noEmit\": true, /* 不输出。 */\n    // \"importHelpers\"\
+  : true, /* 从 tlib 导入助手。 */\n    // \"downlevelIteration\": true, /* 在目标为 ES5 时为迭代、展开和解构提供完整支持。\
+  \ */\n    // \"isolatedModules\": true, /* 将每个文件作为独立的模块（类似于'ts'）。 */\n\n    /* Strict\
+  \ Type-Checking Options */\n    \"strict\" : true /* 所有严格检查选项。 */\n    \"noImplicitAny\"\
+  \ : true, /* 对隐含 'any' 类型的表达式和声明报错。 */\n    \"strictNullChecks\" : true, /* 启用严格空检查。\
+  \ */\n    \"noImplicitThis\" : true, /* 对隐含 'any' 类型的 'this' 表达式报错。 */\n    \"alwaysStrict\"\
+  \ : true, /* 在每个源文件中严格模式解析并输出 \"use strict\"。 */\n\n    /* Additional Checks */\n\
+  \    \"noUnusedLocals\" : true, /* 报告未使用的本地变量。 */ // \"noUnusedParameters\" : true,\
+  \ /* 报告未使用的参数。 */\n    \"noImplicitReturns\" : true, /* 当函数所有路径未返回值时报错。 */\n   \
+  \ \"noFallthroughCasesInSwitch\" : true, /* 报告 switch 语句中的穿透情况。 */\n\n    /* Module\
+  \ Resolution Options */\n    \"moduleResolution\" : \"node\", /* 模块解析策略：'node' 或\
+  \ 'classic' (TypeScript)。 */\n    \"baseUrl\" : \"./\", /* 解析非绝对模块名的基目录。 */\n  \
+  \  \"paths\" : {}, /* 一系列将导入映射到相对于 'baseUrl' 查找位置的条目。 */\n    \"rootDirs\" : [],\
+  \ /* 代表运行时项目结构的根文件夹列表。 */\n    \"typeRoots\" : [], /* 包含类型定义的文件夹列表。 */\n    \"types\"\
+  \ : [], /* 编译包含的类型声明文件。 */\n    \"allowSyntheticDefaultImports\" : true, /* 允许从没有默认出的模块导入默认。这不影响代码输出，影响类型检查。\
+  \ */\n\n    /* Source Map Options */\n    \"sourceRoot\" : \"./\", /* 指定调试器查找 TypeScript\
+  \ 文件的位置而不是源位置。 */\n    \"mapRoot\" : \"./\", /* 指定调试器查找 map 文件的位置而不是生成的位置。 */\n\
+  \    \"inlineSourceMap\" : true, /* 输出包含 map 的单个文件而不是单独的文件；需要设置 '--inlineSourceMap'\
+  \ 或 '--sourceMap'。 */\n    \"inlineSources\" : true, /* 在单个文件中输出源码。 */\n\n    /*\
+  \ Experimental Options */\n    \"experimentalDecorators\" : true, /* 启用对 ES7 装饰器的实验性支持。\
+  \ */ // \"emitDecoratorMetadata\" : true, /* 启用发射装饰器类型元数据的实验性支持。 */\n  }\n}\n```\n\
+  \n大部分，甚至所有选项都是自动生成的，只留下了最基本的未注释选项。\n\n\n\n\n\n旧版本的 TypeScript（例如 v2.0.x 及以下版本）会生成如下\
+  \ `tsconfig.json`：\n\n```json\n{\n  \"compilerOptions\" : {\n    \"module\" : \"\
+  commonjs\" , \"target\" : \"es5\" ,\n    \"noImplicitAny\" : false , \"sourceMap\"\
+  \ : false\n  }\n}\n```\n\n## 第 28.2 节：减少编程错误的配置\n\n有一些非常好的配置可以强制类型检查并获取更有帮助的错误，这些配置默认是不启用的。\n\
+  \n```json\n{\n  \"compilerOptions\" : {\n    \"alwaysStrict\" : true , // 在严格模式下解析并为每个源文件生成\
+  \ \"use strict\"。\n    // 如果在引用的文件中大小写错误，例如文件名是 Global.ts，而你使用了 /// <reference path=\"\
+  global.ts\" /> 来引用该文件，这可能会导致意外错误。请访问：http://stackoverflow.com/questions/36628612/typescript-transpiler-casing-issue\n\
+  \    \"forceConsistentCasingInFileNames\" : true, // 不允许对同一个文件进行大小写一致的引用。\n    //\
+  \ \"allowUnreachableCode\": false, // 不对不可达代码报告错误。（默认: False） // \"allowUnusedLabels\"\
+  : false, // 不对未使用标签报告错误。（默认: False）\n    \"noFallthroughCasesInSwitch\" : true,\
+  \ // 对 switch 语句中的穿透情况（fallthrough）报告错误。\n    \"noImplicitReturns\" : true, // 当函数中并非所有代码路径都返回值时报告错误。\n\
+  \    \"noUnusedParameters\" : true, // 对未使用的参数报告错误。\n    \"noUnusedLocals\" : true,\
+  \ // 对未使用的局部变量报告错误。\n    \"noImplicitAny\" : true, // 对隐式 \"any\" 类型的表达式和声明引发错误。\n\
+  \    \"noImplicitThis\" : true, // 对隐式 \"any\" 类型的 this 表达式引发错误。\n    \"strictNullChecks\"\
+  \ : true, // null 和 undefined 值不属于所有类型的范围，且只能赋值给自身和 any。\n    // 若要强制执行此规则，请添加此配置。\n\
+  \    \"noEmitOnError\" : true // 如果报告了任何错误，则不生成输出。\n  }\n}\n```\n\n不够吗？如果你是一个硬核编码者并想要更多，你可能感兴趣在用\
+  \ `tsc` 编译之前用 tslint 检查你的 TypeScript 文件。查看如何配置 tslint 以获得更严格的代码。\n\n## 第 28.3 节：compileOnSave\n\
+  \n设置顶层属性 `compileOnSave` 会向 IDE 信号，在保存时为指定的 `tsconfig.json` 生成所有文件。\n\n```json\n\
+  {\n  \"compileOnSave\" : true ,\n  \"compilerOptions\" : {\n    ...\n  },\n  \"\
+  exclude\" : [\n    ...\n  ]\n}\n```\n\n此功能自 TypeScript 1.8.4 起可用，但需要 IDE 的直接支持。目前支持的\
+  \ IDE 示例包括：\n\n- 带 Update 3 的 Visual Studio 2015\n- JetBrains WebStorm\n- 带有 atom-typescript\
+  \ 的 Atom\n\n## 第 28.4 节：注释\n\n`tsconfig.json` 文件可以包含行注释和块注释，使用与 ECMAScript 相同的规则。\n\
+  \n```javascript\n//行首注释\n{\n  \"compilerOptions\" : {\n    //这是一行行注释\n    \"module\"\
+  \ : \"commonjs\" , //行尾注释\n    \"target\" /*内联块*/ : \"es5\" , /* 这是一个块注释 */\n  }\n\
+  }\n/*尾随注释 */\n```\n\n## 第 28.5 节：preserveConstEnums\n\nTypeScript 支持通过 `const` enum\
+  \ 声明常量枚举（constant enumerables）。\n\n这通常只是语法糖，因为常量枚举在编译后的 JavaScript 中被内联了。\n\n例如，以下代码\n\
+  \n```typescript\nconst enum Tristate {\n  True,\n  False,\n  Unknown\n}\n\nvar something\
+  \ = Tristate.True ;\n```\n\n编译为：\n\n```javascript\nvar something = 0 ;\n```\n\n\
+  虽然内联带来了性能上的处，但你可能更倾向于保留枚举即使它是常量（即：你可能希望开发代码具有可读性），要做到这一点，你必须在 `tsconfig.json` 的\
+  \ `compilerOptions` 中将 `preserveConstEnums` 子句设置为 `true`。\n\n```json\n{ \n  \"compilerOptions\"\
+  \ : {\n    \"preserveConstEnums\" = true , ...\n  },\n  \"exclude\" : [\n    ...\n\
+  \  ]\n}\n```\n\n通过这种方式，之前的示例将像其他枚举一样被编译，如下所示所示。\n\n```javascript\nvar Tristate;\n\
+  ( function ( Tristate) {\n  Tristate[ Tristate[ \"True\" ] = 0 ] = \"True\" ; Tristate[\
+  \ Tristate[ \"False\" ] = 1 ] = \"False\" ; Tristate[ Tristate[ \"Unknown\" ] =\
+  \ 2 ] = \"Unknown\" ;\n})( Tristate || ( Tristate = {}));\nvar something = Tristate.True\n\
+  ```\n\n# 第 29 章：调试\n\n运行和调试 TypeScript 有两种方法：\n\n1. **编译为 JavaScript**，在 node 中运行并使用映射链接回\
+  \ TypeScript 源文件。\n2. **使用 `ts-node` 直接运行 TypeScript**\n\n本文描述了使用 Visual Studio\
+  \ Code 和 WebStorm 的这两种方法。所有示例均假设你的主文件是 `index.ts`。\n\n### 第 29.1 节：配合 ts-node 的\
+  \ TypeScript\n\n在 WebStorm 中将此脚本添加到 `package.json`：\n\n```json\n{\n  \"scripts\"\
+  : {\n    \"start\": \"ts-node index.ts\"\n  }\n}\n```\n\n### 第 29.2 节：配合 ts-node\
+  \ 的 TypeScript\n\n在 VS Code 中将此脚本添加到 `package.json`：\n\n```json\n{\n  \"scripts\"\
+  : {\n    \"start\": \"ts-node index.ts\"\n  }\n}\n```\n\n### 第 29.3 节：配合 ts-node\
+  \ 的 TypeScript\n\n### 第 29.4 节：带有 SourceMaps 的 JavaScript\n\n# 第 30 章：单元测试\n\n##\
+  \ 第 30.1 节：tape\n\ntape 是一个极简的 JavaScript 框架，它输出符合 TAP 标准的标记。\n\n使用 npm 命令安装 tape：\n\
+  \n`npm install --save-dev tape @types/**`\n\n为了配合 TypeScript 使用 tape，你需要全局安装 ts-node，运行：\n\
+  \n`npm install -g ts-node`\n\n现在你准备好编写第一个测试了：\n\n```typescript\nimport * as test\
+  \ from \"tape\" ;\n\ntest ( \"Math\" , ( t) => {\n  t.equal ( 4 , 2 + 2 );\n  t.true\
+  \ ( 5 > 2 + 2 );\n  t.end ();\n});\n```\n\n执行测试命令：\n\n`ts-node node_modules/ tape/\
+  \ bin/ tape math.test.ts`\n\n你应该输出中看到：\n\n```text\nTAP version 13\n# Math test\n\
+  ok 1 should be equal ok 2 should be truthy\n1..2\n# tests 2 # pass 2\n# ok\n```\n\
+  \n很好，你运行了 TypeScript 测试。\n\n**运行多个测试文件**\n\n你可以使用路径通配符一次性运行多个测试文件。执行 tests 目录下所有\
+  \ TypeScript 测试的命令：\n\n`ts-node node_modules/ tape/ bin/ tape tests/**/*.ts`\n\n\
+  ## 第 30.2 节：jest (ts-jest)\n\njest 是 Facebook 的无痛 JavaScript 测试框架，配合 ts-jest 可以测试\
+  \ TypeScript 代码。\n\n使用 npm 命令安装 jest：\n\n`npm install --save-dev jest @types/**\
+  \ jest ts-jest typescript`\n\n为了方便使用，全局安装 jest：\n\n`npm install -g jest`\n\n为了让\
+  \ jest 与 TypeScript 工作，你需要在 `package.json` 中添加配置：\n\n```json\n{\n  \"jest\": {\n\
+  \    \"transform\": {\n      \"^.+\\\\.ts$\": \"ts-jest\"\n    }\n  }\n}\n```\n\n\
+  \n\n\n```json\n\".(ts|tsx)\" : \"<rootDir>/node_modules/ts-jest/preprocessor.js\"\
+  \n\n},\n\n\"testRegex\" : \"(/__tests__/.*|.*\\\\.(test|spec)).*.(ts|tsx|js)$\"\
+  \ ,\n\n\"moduleFileExtensions\" : [ \"ts\" , \"tsx\" , \"js\" ]\n\n}\n``````\n\n\
+  现在 `jest` 已经就绪了。假设我们有一个样例 fizz buz 需要测试。\n\n```typescript\n//fizzBuzz.ts\nexport\
+  \ function fizzBuzz(n: number): string {\n  let output = \"\";\n  for (let i = 1;\
+  \ i <= n; i++) {\n    if (i % 5 && i % 3) {\n      output += i + ' ';\n    }\n \
+  \   if (i % 3 === 0) {\n      output += 'Fizz ';\n    }\n    if (i % 5 === 0) {\n\
+  \      output += 'Buzz ';\n    }\n  }\n  return output;\n}\n```\n\n测试用例可能如下：\n\n\
+  ```typescript\n//FizzBuzz.test.ts\n/// <reference types=\"jest\" />\nimport { fizzBuzz}\
+  \ from \"./fizzBuzz\";\ntest(\"FizzBuzz test\", () => {\n  expect(fizzBuzz(2)).toBe(\"\
+  1 2 \");\n  expect(fizzBuzz(3)).toBe(\"1 2 Fizz \");\n});\n```\n\n执行测试运行：\n\n```bash\n\
+  jest\n```\n\n在输出中你应该看到：\n\n```\nPASS ./fizzBuzz.test.ts ✓ FizzBuzz test (3ms)\n\
+  Test Suites: 1 passed, 1 total Tests: 1 passed, 1 total Snapshots: 0 total\nTime:\
+  \ 1.46s, estimated 2s Ran all test suites.\n```\n\n### 代码覆盖率 (Code coverage)\n\n\
+  `jest` 支持生成代码覆盖率报告。\n\n要在 TypeScript 中使用代码覆盖率功能，你需要在 `package.json` 中添加另一行配置。\n\n\
+  ```json\n{\n  ...\n  \"jest\" : {\n    ...\n    \"testResultsProcessor\" : \"<rootDir>/node_modules/ts-jest/coverageprocessor.js\"\
+  \n  }\n}\n```\n\n运行并生成覆盖率报告的测试：\n\n```bash\njest -coverage\n```\n\n如果用于我们的样例 fizz\
+  \ buz，你应该看到：\n\n```\nPASS ./fizzBuzz.test.ts ✓ FizzBuzz test (3ms)\n-------------|----------|----------|----------|----------|----------------|\
+  \ File | % Stmts | % Branch | % Funcs | % Lines |Uncovered Lines |\n-------------|----------|----------|----------|----------|----------------|\
+  \ All files | 92.31 | 87.5 | 100 | 91.67 | | fizzBuzz.ts | 92.31 | 87.5 | 100 |\
+  \ 91.67 | 13 |\n-------------|----------|----------|----------|----------|----------------|\
+  \ Test Suites: 1 passed, 1 total\nTests: 1 passed, 1 total\nSnapshots: 0 total\n\
+  Time: 1.857s\nRan all test suites.\n```\n\n`jest` 还创建了 `coverage` 文件夹，其中包含各种格式的覆盖率报告，包括位于\
+  \ `coverage/lcov-report/index.html` 的用户友好的 html 报告。\n\n![](img/Image00011.jpg)\n\
+  \n### 第 30.3 节: Alsatian\n\nAlsatian 是用 TypeScript 编写的单元测试框架。它允许使用测试案例（Test Cases），并输出符合\
+  \ TAP 标准标记。\n\n要使用它，请从 npm 安装：\n\n```bash\nnpm install alsatian --save-dev\n```\n\
+  \n然后设置一个测试文件：\n\n```typescript\nimport { Expect, Test, TestCase } from \"alsatian\"\
+  ;\nimport { SomeModule } from \"../src/some-module\";\n\nexport SomeModuleTests\
+  \ {\n  @Test()\n  public statusShouldBeTrueByDefault() {\n    let instance = new\
+  \ SomeModule();\n    Expect(instance.status).toBe(true);\n  }\n\n  @Test(\"Name\
+  \ should be null by default\")\n  public nameShouldBeNullByDefault() {\n    let\
+  \ instance = new SomeModule();\n    Expect(instance.name).toBe(null);\n  }\n\n \
+  \ @TestCase(\"first name\")\n  @TestCase(\"apples\")\n  public shouldSetNameCorrectly(name:\
+  \ string) {\n    let instance = new SomeModule();\n    instance.setName(name);\n\
+  \    Expect(instance.name).toBe(name);\n  }\n}\n```\n\n欲查看完整文档，请参阅 Alsatian 的 GitHub\
+  \ 仓库。\n\n### 第 30.4 节: chai-immutable 插件\n\n1. 从 npm 安装 `chai`, `chai-immutable`\
+  \ 和 `ts-node`\n\n```bash\nnpm install --save-dev chai chai-immutable ts-node\n```\n\
+  \n2. 安装 mocha 和 `chai` 的类型\n\n```bash\nnpm install --save-dev @types/mocha @types/chai\n\
+  ```\n\n3. 编写简单的测试文件：\n\n```typescript\nimport { List, Set} from 'immutable';\nimport\
+  \ * as chai from 'chai';\nimport * as chaiImmutable from 'chai-immutable';\nchai.use(chaiImmutable);\n\
+  describe('chai immutable example', () => {\n  it('example', () => {\n    expect(Set.of(1,\
+  \ 2, 3)).to.not.be.empty;\n    expect(Set.of(1, 2, 3)).to.include(2);\n    expect(Set.of(1,\
+  \ 2, 3)).to.include(5);\n  });\n})\n```\n\n4. 在控制台中运行：\n\n```bash\nmocha -r ts:ts-node/register,\
+  \ tsx:ts-node/register 'test/**/*.spec.@(ts|tsx)'\n```\n\n### 致谢 (Credits)\n\n非常感谢\
+  \ Stack Overflow 上所有帮助过此内容的人，更多更改可以发送或更新至 246\n\n"

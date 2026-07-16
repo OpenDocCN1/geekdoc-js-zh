@@ -1,0 +1,536 @@
+name: The Modern JavaScript Collection 1-4
+name_cn: 现代 JavaScript 合集 1-4
+slug: the-modern-javascript-collection-1-4
+toc:
+- - '#'
+  - 现代 JavaScript 合集 1-4
+- - '##'
+  - 关于 SitePoint
+- - '#'
+  - 前言
+- - '##'
+  - 谁应该阅读这个集合？
+- - '##'
+  - 使用的规范
+- - '###'
+  - 代码示例
+- - '###'
+  - 提示、注释与警告
+- - '####'
+  - 嘿，你！
+- - '####'
+  - 额，打扰一下……
+- - '####'
+  - 确保你始终……
+- - '####'
+  - 注意！
+- - '#'
+  - 第一部分：实战 ES6
+- - '#'
+  - 第一章：新关键字：let 和 const
+- - '##'
+  - 作者 Aurelio de Rosa
+- - '##'
+  - let
+- - '##'
+  - const
+- - '##'
+  - 结论
+- - '#'
+  - 第 2 章：使用 Map, Set, WeakMap, WeakSet
+- - '##'
+  - 作者 Kyle Pennell
+- - '##'
+  - 寻找 JavaScript HashMap
+- - '###'
+  - '缺点 #1：ES5 中的键必须是字符串'
+- - '###'
+  - '缺点 #2：对象在本质上不是可迭代的'
+- - '##'
+  - 弱集合、内存与垃圾回收
+- - '##'
+  - WeakMap
+- - '###'
+  - 用例
+- - '###'
+  - 私有数据用例
+- - '###'
+  - DOM 节点用例
+- - '##'
+  - WeakSet
+- - '##'
+  - Map 与 Sets
+- - '##'
+  - 新 ES6 集合 提供更多 JavaScript
+- - '#'
+  - 第 3 章：Array.* 和 Array.prototype.* 方法
+- - '##'
+  - 作者 Aurelio De Rosa
+- - '##'
+  - Array.from()
+- - '##'
+  - Array.prototype.find()
+- - '##'
+  - Array.prototype.findIndex()
+- - '##'
+  - Array.prototype.keys()
+- - '##'
+  - Array.prototype.values()
+- - '##'
+  - String.prototype.endsWith()
+- - '##'
+  - String.prototype.includes()
+- - '##'
+  - String.prototype.repeat()
+- - '##'
+  - String.prototype.raw()
+- - '##'
+  - Number.isInteger()
+- - '##'
+  - Number.isNaN()
+- - '##'
+  - Number.isFinite()
+- - '##'
+  - Number.parseInt() 和 Number.parseFloat()
+- - '##'
+  - ES6 Number 方法：总结
+- - '#'
+  - 第 6 章：ES6 箭头函数：JavaScript 中强大且简洁的语法
+- - '##'
+  - 作者：Kyle Pennell
+- - '##'
+  - 什么是箭头函数？
+- - '##'
+  - 使用箭头函数
+- - '###'
+  - 多参数基础语法
+- - '###'
+  - 单参数基础语法
+- - '###'
+  - 无参数基础语法
+- - '###'
+  - 对象面量语法
+- - '##'
+  - 箭头函数的用例
+- - '###'
+  - Promises 与回调
+- - '##'
+  - 箭头函数的注意事项与陷阱
+- - '###'
+  - 关于 `this`
+- - '###'
+  - 构造函数
+- - '###'
+  - 总结
+- - '##'
+  - 我可以用符号做什么？
+- - '##'
+  - 常用符号
+- - '##'
+  - 全局注册表
+- - '##'
+  - 用例
+- - '##'
+  - 浏览器支持
+- - '##'
+  - 总结
+- - '#'
+  - 第 8 章：如何使用代理
+- - '##'
+  - 作者：Craig Buckler
+- - '##'
+  - Proxy 陷器类型
+- - '##'
+  - Proxy 示例 1：性能分析 (Profiling)
+- - '##'
+  - Proxy 示例 2：双向数据绑定 (Two-way Data Binding)
+- - '##'
+  - 更多示例
+- - '###'
+  - 代理支持
+- - '#'
+  - 第 9 章：解构赋值
+- - '##'
+  - 作者 Craig Buckler
+- - '##'
+  - 正则表达式处理
+- - '##'
+  - 解构赋值支持
+- - '#'
+  - 第 10 章：ES6 生成器与迭代器：开发者指南
+- - '##'
+  - '作者: Byron Houwens'
+- - '##'
+  - 迭代器
+- - '##'
+  - 生成器
+- - '##'
+  - 酷，我现在可以使用生成器和迭代器了吗？
+- - '#'
+  - 第 11 章：面向对象的 JavaScript：深入理解 ES6 类
+- - '##'
+  - 作者：Jeff Mott
+- - '##'
+  - 术语
+- - '##'
+  - 构造函数
+- - '##'
+  - 保持数据私有
+- - '###'
+  - 术语
+- - '###'
+  - 使用约定的私有化
+- - '###'
+  - 使用特权方法的私有化
+- - '###'
+  - 使用 Symbol 的私有化
+- - '###'
+  - 使用 Weak Maps 的私有化
+- - '###'
+  - 其他访问修饰符
+- - '##'
+  - 子类
+- - '##'
+  - 通过继承以避免重复
+- - '###'
+  - IS-A 和 WORKS-LIKE-A
+- - '###'
+  - 警惕过度使用
+- - '##'
+  - 通过继承以替换子类
+- - '##'
+  - 不仅仅是语法糖 (More than Sugar)
+- - '###'
+  - 静态属性是可以继承的
+- - '###'
+  - 内置构造函数可以被子类
+- - '##'
+  - 杂杂 (Miscellaneous)
+- - '###'
+  - 静态属性是可以继承的
+- - '###'
+  - 内置构造函数可以被子类
+- - '##'
+  - 结论
+- - '#'
+  - 第 12 章：理解 ES6 模块
+- - '##'
+  - JavaScript 中的模块在哪里？
+- - '###'
+  - 多个 HTML `<script>` 标签
+- - '###'
+  - 脚本合并 (Script Concatenation)
+- - '###'
+  - 模块加载器 (Module Loaders)
+- - '###'
+  - 模块打包器、预处理器和编译器 (Module Bundlers, Preprocessors and Transpilers)
+- - '##'
+  - ES6 模块 (ES6 Modules)
+- - '###'
+  - 在浏览器中使用 ES6 模块
+- - '###'
+  - 你应该在 Node.js 中使用 ES6 模块吗？
+- - '##'
+  - 模块大战
+- - '#'
+  - 第 13 章：JavaScript Promises 概述
+- - '##'
+  - 作者：Sandeep Panda
+- - '##'
+  - 概述
+- - '##'
+  - API
+- - '##'
+  - 处理错误
+- - '##'
+  - 结论
+- - '#'
+  - 第 14 章：JavaScript 装饰器：它们是什么以及何时使用
+- - '##'
+  - '作者：Graham Cox '
+- - '##'
+  - 什么是装饰器？
+- - '##'
+  - 如何使用 JavaScript 装饰器
+- - '##'
+  - 为什么要使用装饰器？
+- - '##'
+  - 装饰器的类型
+- - '###'
+  - 类成员装饰器
+- - '###'
+  - 类装饰器
+- - '##'
+  - 真实世界示例
+- - '###'
+  - Core 装饰器
+- - '###'
+  - React
+- - '###'
+  - MobX
+- - '##'
+  - 总结
+- - '#'
+  - 第 15 章：增强的对象字面量
+- - '##'
+  - 作者 Craig Buckler
+- - '##'
+  - 从变量初始化对象
+- - '##'
+  - 对象方法定义简写
+- - '##'
+  - 动态属性键
+- - '##'
+  - 解构（从对象属性提取变量）
+- - '##'
+  - ES2018 (ES9) 剩余属性
+- - '#'
+  - 第 16 章：Fetch API 简介
+- - '##'
+  - 作者 Ludovico Fischer
+- - '##'
+  - Fetch API
+- - '##'
+  - 加载 JSON
+- - '###'
+  - Async … await
+- - '##'
+  - 总结
+- - '##'
+  - 哪里
+- - '#'
+  - 第 17 章：ES6 (2015) 及以后：理解版本控制
+- - '##'
+  - 作者：James Wright
+- - '##'
+  - 版本控制历史
+- - '##'
+  - ECMAScript 的诞生
+- - '##'
+  - ECMAScript 2015 与年度发布
+- - '##'
+  - TC39 流程
+- - '###'
+  - Stage 0：草案 (Strawman)
+- - '###'
+  - Stage 1：提案 (Proposal)
+- - '###'
+  - Stage 2：草案 (Draft)
+- - '###'
+  - Stage 3：候选 (Candidate)
+- - '###'
+  - Stage 4：完成 (Finished)
+- - '##'
+  - 向后发展
+- - '###'
+  - ES2016
+- - '###'
+  - 幂运算符 (Exponent Operator)
+- - '###'
+  - 异步函数 (Asynchronous Functions)
+- - '###'
+  - 对象展开 (Object Spread)
+- - '#'
+  - 第 18 章：ES2017 新特性：异步函数、改进的对象以及更多
+- - '##'
+  - 作者：Craig Buckler
+- - '##'
+  - 更新流程
+- - '##'
+  - 异步迭代
+- - '##'
+  - Promise.finally()
+- - '##'
+  - Object.values()
+- - '##'
+  - Object.entries()
+- - '##'
+  - Object.getOwnPropertyDescriptors()
+- - '##'
+  - padStart() 和 padEnd()
+- - '#'
+  - 第 19 章：ES2018 的新特性
+- - '##'
+  - 作者 Craig Buckler
+- - '##'
+  - ES2016
+- - '##'
+  - ES2017
+- - '##'
+  - 剩余/属性
+- - '##'
+  - 正则表达式 (dotAll)
+- - '##'
+  - 模板字符串的调整
+- - '#'
+  - 第 20 章：JavaScript 最佳实践剖析
+- - '##'
+  - 作者 James Kolce
+- - '##'
+  - 关于 Node.js 的说明
+- - '##'
+  - JavaScript ES015+
+- - '##'
+  - 声明变量
+- - '##'
+  - 箭头函数
+- - '##'
+  - 改进的类
+- - '##'
+  - 异步函数
+- - '##'
+  - 模块
+- - '##'
+  - 代码格式 (Code linting)
+- - '##'
+  - 模块化 (Modular Code)
+- - '###'
+  - CommonJS 模块
+- - '###'
+  - ES2015 模块
+- - '###'
+  - 原生浏览器支持
+- - '##'
+  - 包管理 (Package Management)
+- - '##'
+  - 构建工具 (Build Tools)
+- - '###'
+  - 模块打包 (Module bundling)
+- - '###'
+  - 关于打包的扩展
+- - '##'
+  - Gulp.js 的进阶阅读
+- - '##'
+  - 应用架构
+- - '###'
+  - 单页应用 (SPAs)
+- - '###'
+  - 通用 / 同构应用 (Universal / Isomorphic Applications)
+- - '##'
+  - 部署
+- - '###'
+  - 不需要的文件
+- - '###'
+  - 团队开发
+- - '##'
+  - 总结
+- - '#'
+  - 使用 ES6 默认参数和属性简写编写洁代码
+- - '##'
+  - 作者 Moritz Kröger
+- - '##'
+  - 创建方法意味着编写 API —— 无论是你自己、团队中的开发者，还是使用你项目的开发者。根据函数的规模、复杂性和目的，你必须考虑设置以及输入/输出。
+- - '##'
+  - ES6 默认参数
+- - '###'
+  - 真实世界示例
+- - '##'
+  - ES6 属性简写
+- - '#'
+  - 第 3 章：JavaScript 性能优化技巧：概述
+- - '##'
+  - 设定背景
+- - '##'
+  - 到底什么是高性能 JS 代码？
+- - '###'
+  - Respond (响应)
+- - '###'
+  - Animate (动画)
+- - '###'
+  - Idle work (空闲工作)
+- - '###'
+  - Load (加载)
+- - '##'
+  - 上文决定一切
+- - '##'
+  - 解析、编译与执行
+- - '##'
+  - 包大小决定一切
+- - '##'
+  - 什么是单例
+- - '###'
+  - 单例是坏的？
+- - '##'
+  - JavaScript 中创建单例的旧方法
+- - '##'
+  - 新方法
+- - '##'
+  - 结论
+- - '#'
+  - 第 5 章：JavaScript 对象创建：模式与最佳实践
+- - '##'
+  - 作者 Jeff Mott
+- - '##'
+  - 对象字面量 (Object Literals)
+- - '##'
+  - 工厂函数 (Factory Functions)
+- - '##'
+  - 原型链 (Prototype Chains)
+- - '##'
+  - ES5 类
+- - '##'
+  - ES6 类
+- - '##'
+  - 比较
+- - '###'
+  - 性能
+- - '###'
+  - 特性
+- - '##'
+  - 结论
+- - '#'
+  - 第 6 章：使用现代 JavaScript 语法的最佳实践
+- - '##'
+  - 作者 M. David Green
+- - '##'
+  - 某些可以用来生存的东西
+- - '##'
+  - 语法糖
+- - '##'
+  - 当你的 `const` 不一致时
+- - '##'
+  - 限制函数的作用域
+- - '##'
+  - 准时到达（Getting to Class on Time）
+- - '##'
+  - 与箭头函数的显著区别
+- - '##'
+  - 了解你所得到的
+- - '##'
+  - 回调地狱 (Callback Hell)
+- - '##'
+  - Promises
+- - '###'
+  - 异步链
+- - '##'
+  - Async/Await
+- - '###'
+  - Promises, Promises
+- - '###'
+  - 同步循环中的异步 Await
+- - '###'
+  - try/catch 的丑陋性
+- - '##'
+  - JavaScript 之旅
+- - '#'
+  - JavaScript 的私有类字段以及如何使用它们
+- - '##'
+  - 作者 Craig Buckler
+- - '##'
+  - ES6 类基础
+- - '##'
+  - 访问器和 Setter (Getters and Setters)
+- - '##'
+  - 子类 (Child or Sub-Classes)
+- - '##'
+  - 静态方法和属性 (Static Methods and Properties)
+- - '##'
+  - ESnext 类字段 (ESnext Class Fields)
+- - '##'
+  - 私有类字段 (Private Class Fields)
+- - '##'
+  - '直接好处：更简洁的 React 代码 (Immediate Benefit: Cleaner React Code)'
+- - '#'
+  - 今日类字段
+- - '##'
+  - 类字段

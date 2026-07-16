@@ -1,0 +1,2531 @@
+<p><img src="images/00001.jpeg" /></p>
+<p><span id="titlepage.xhtml"></span></p>
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewbox="0 0 838 1186" preserveaspectratio="none">
+<image width="838" height="1186" xlink:href="images/00001.jpeg"></image>
+</svg>
+</div>
+<p><span id="part0000_split_000.html"></span></p>
+<div class="calibre1">
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre5">TypeScript</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre5">JavaScript Development Guide</span></p>
+<p><span class="calibre5"> </span></p>
+<p><span class="calibre6"> </span></p>
+<p><span class="calibre7">By Nicholas Brown</span></p>
+<p><span class="calibre8"> </span></p>
+<p><br />
+<span class="calibre10">Copyright©2016 by Nicholas Brown</span></p>
+<p><span class="calibre10"> All Rights Reserved</span></p>
+<div id="part0000_split_000.html_calibre_pb_0" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_001.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre3">Copyright © 2016 by David Johnson</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">All rights reserved. No part of this
+publication may be reproduced, distributed, or transmitted in any form
+or by any means, including photocopying, recording, or other electronic
+or mechanical methods, without the prior written permission of the
+author, except in the case of brief quotations embodied in critical
+reviews and certain other noncommercial uses permitted by copyright law.
+</span></p>
+<div id="part0000_split_001.html_calibre_pb_2" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_002.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre5">Table of Contents</span></p>
+<p><span id="part0000_split_002.html_toc"></span><a
+href="#part0000_split_004.html__Toc455006177"><span
+class="calibre19">Introduction</span></a></p>
+<p><a href="#part0000_split_005.html__Toc455006178"><span
+class="calibre19">Chapter 1- A Brief Overview of
+TypeScript</span></a></p>
+<p><a href="#part0000_split_006.html__Toc455006179"><span
+class="calibre19">Chapter 2- Installing TypeScript</span></a></p>
+<p><a href="#part0000_split_008.html__Toc455006180"><span
+class="calibre19">Chapter 3- Type Annotations</span></a></p>
+<p><a href="#part0000_split_009.html__Toc455006181"><span
+class="calibre19">Chapter 4- Interfaces</span></a></p>
+<p><a href="#part0000_split_010.html__Toc455006182"><span
+class="calibre19">Chapter 5- Arrow Function Expressions</span></a></p>
+<p><a href="#part0000_split_011.html__Toc455006183"><span
+class="calibre19">Chapter 6- Classes</span></a></p>
+<p><a href="#part0000_split_018.html__Toc455006184"><span
+class="calibre19">Chapter 7- Destructuring</span></a></p>
+<p><a href="#part0000_split_023.html__Toc455006185"><span
+class="calibre19">Chapter 8- for...of</span></a></p>
+<p><a href="#part0000_split_026.html__Toc455006186"><span
+class="calibre19">Chapter 9- Iterators</span></a></p>
+<p><a href="#part0000_split_027.html__Toc455006187"><span
+class="calibre19">Chapter 10- Template Strings</span></a></p>
+<p><a href="#part0000_split_031.html__Toc455006188"><span
+class="calibre19">Chapter 11- Spread Operator</span></a></p>
+<p><a href="#part0000_split_034.html__Toc455006189"><span
+class="calibre19">Chapter 12- Enums</span></a></p>
+<p><a href="#part0000_split_039.html__Toc455006190"><span
+class="calibre19">Chapter 13- let</span></a></p>
+<p><a href="#part0000_split_042.html__Toc455006191"><span
+class="calibre19">Conclusion</span></a></p>
+<div id="part0000_split_002.html_calibre_pb_4" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_003.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span id="part0000_split_003.html__Toc453019727"><span
+class="calibre21">Disclaimer</span></span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre23">While all attempts have been made to verify
+the information provided in this book, the author does assume any
+responsibility for errors, omissions, or contrary interpretations of the
+subject matter contained within.</span><span class="calibre3"> The
+information provided in this book is for educational and entertainment
+purposes only. The reader is responsible for his or her own actions and
+the author does not accept any responsibilities for any liabilities or
+damages, real or perceived, resulting from the use of this
+information.</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre23">The trademarks that are used are without any
+consent, and the publication of the trademark is without permission or
+backing by the trademark owner. All trademarks and brands within this
+book are for clarifying purposes only and are the owned by the owners
+themselves, not affiliated with this document.</span></p>
+</div>
+<p><span id="part0000_split_004.html"></span></p>
+<section id="part0000_split_004.html_calibre_pb_6"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_004.html__Toc455006177" class="calibre27"><span
+id="part0000_split_004.html_30-1f9f9dfc06ee4462aeb37b3fd989ec0f"
+class="calibre28">Introduction</span></span></h1>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">There is a greater need for large software
+applications, and especially the web applications. The reason behind
+this is the increase in the functionalities which are needed to be
+implemented in software applications. This calls for us to learn  how to
+develop large applications. This can only be done in programming
+languages which are capable of supporting that. TypeScript is one of
+such programming languages. It supports the creation of large
+applications. This book is an excellent waay for you to learn how to
+program in TypeScript. Enjoy reading!</span></p>
+<div id="part0000_split_004.html_calibre_pb_9" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_005.html"></span></p>
+<section id="part0000_split_005.html_calibre_pb_10"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_005.html__Toc455006178" class="calibre27"><span
+class="calibre28">Chapter 1- A Brief Overview of
+TypeScript</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">TypeScript is a programming language which was
+developed and is maintained by Microsoft. It is an open source
+programming language. The language is a superset of JavaScript since it
+has added some extra features to it, such as support for object oriented
+programming and optional static typing. The language was developed for
+the purpose of creating large applications, and it always compiles into
+JavaScript. One can use TypeScript to develop JavaScript applications
+for both the client side and server side. Since we have said that
+TypeScript is a superset of javaScript, any program written in
+JavaScript is also viable to be considered a TypeScript program. The
+TypeScript compiler was also written in TypeScript. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The aim of TypeScript is to provide developers
+with an easy mechanism by which  to develop large applications. It comes
+with concepts such as classes, inheritance, interfaces, modules, and
+others, and these make it easy for developers to create large
+applications with much ease. </span></p>
+<div id="part0000_split_005.html_calibre_pb_13" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_006.html"></span></p>
+<section id="part0000_split_006.html_calibre_pb_14"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_006.html__Toc455006179" class="calibre27"><span
+class="calibre28">Chapter 2- Installing TypeScript</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">There are two ways that  we can install
+TypeScript into our system. These include the following:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol type="1">
+<li><span class="calibre3">By use of the npm (Node Package Manager)
+tool.</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre3">By installation of Visual studio plugins for
+TypeScript.</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">For Windows users, you can use the second
+option if it will be more convenient for you. Just install the Visual
+Studio, and then download and install the necessary plugin for
+programming in TypeScript. This option has been found to be a bit
+superior compared to the use of other code editors. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">For those using platforms other than Windows,
+just ensure that you have a text editor, a browser, and the npm package
+for TypeScript so as to be able to program in TypeScript. The following
+steps can be followed for this to be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol type="1">
+<li><span class="calibre3">Begin by installing the Node Package Manager
+(npm).</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Just open the terminal, and execute the
+commands given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">$ curl http://npmjs.org/install.sh |
+sh</span></p>
+<p><span class="calibre23">$ npm --version</span></p>
+<p><span class="calibre23">1.1.70</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre3">In the next step, install the TypeScript npm
+package, and this should be done globally on the command line. The
+following commands can be used for doing this:</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">$ npm install -g typescript</span></p>
+<p><span class="calibre23">$ npm view typescript version</span></p>
+<p><span class="calibre23">npm http GET
+https://registry.npmjs.org/typescript</span></p>
+<p><span class="calibre23">npm http 304
+https://registry.npmjs.org/typescript</span></p>
+<p><span class="calibre23">0.8.1-1</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Make sure that you use the latest version of
+your browser, such as Chrome. Any text editor is appropriate, and an
+example of this is the Sublime text editor. </span></p>
+<div id="part0000_split_006.html_calibre_pb_17" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_007.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Hello World Example</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Now that we have set up the environment ready
+for programming, we can begin to program. We will begin by creating the
+Hello world example. Remember that TypeScript is a superset of ES5, and
+it has more features for ES6. TypeScript is also compiled into
+JavaScript. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">We want to create our index file and then
+reference it to an external file. Here is the code for the file
+“</span><span class="calibre38">index.html”</span><span
+class="calibre3">:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">&lt;!doctype html&gt;</span></p>
+<p><span class="calibre23">&lt;html lang="en"&gt;</span></p>
+<p><span class="calibre23">&lt;head&gt;</span></p>
+<p><span class="calibre23">  &lt;meta charset="UTF-8"&gt;</span></p>
+<p><span class="calibre23">  &lt;title&gt;This is
+TypeScript&lt;/title&gt;</span></p>
+<p><span class="calibre23">&lt;/head&gt;</span></p>
+<p><span class="calibre23">&lt;body&gt;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    &lt;script
+src="hello.ts"&gt;&lt;/script&gt;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">&lt;/body&gt;</span></p>
+<p><span class="calibre23">&lt;/html&gt;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As shown in the above code, we have referenced
+the code in the file to the file “</span><span
+class="calibre38">hello.ts.”</span><span class="calibre3"> This has been
+done in the line “&lt;script src="hello.ts"&gt;&lt;/script&gt;” as the
+script source. The extension “</span><span
+class="calibre38">.ts”</span><span class="calibre3"> in the file name
+means that it is a TypeScript file. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Now, create a new file and give it the name
+“</span><span class="calibre38">hello.ts.”</span><span class="calibre3">
+The following line of code should then be added to the file:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">alert('hello world, this is
+TypeScript!');</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">After that, just launch the command line, and
+then navigate to the folder with the file “</span><span
+class="calibre38">hello.ts.”</span><span class="calibre3"> Compile the
+file by executing the following command:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">tsc hello.ts</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The tsc command in TypeScript represents the
+TypeScript compiler, and it will generate a new file with the name
+“</span><span class="calibre38">hello.js.”</span><span class="calibre3">
+From the extension in the file, we will have transformed the TypeScript
+to a JavaScript file, which is what normally happens in TypeScript.
+</span></p>
+<div id="part0000_split_007.html_calibre_pb_19" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_008.html"></span></p>
+<section id="part0000_split_008.html_calibre_pb_20"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_008.html__Toc455006180" class="calibre27"><span
+class="calibre28">Chapter 3- Type Annotations</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">This feature is optional in TypeScript, and it
+allows us to express and implement indentation in our TypeScript
+programs. We need to demonstrate this by creating a program which will
+calculate the area of a rectangle. Just open your text editor and create
+a new file with the name “</span><span
+class="calibre38">area.ts.”</span><span class="calibre3"> Add the
+following code to the file:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function area(shape: string, width: number,
+height: number) {</span></p>
+<p><span class="calibre23">    var area = width * height;</span></p>
+<p><span class="calibre23">    return "The shape is " + shape + " having
+an area of " + area + " cm squared.";</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">document.body.innerHTML = area("rectangle",
+20, 15);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Next, open the file “</span><span
+class="calibre38">index.html”</span><span class="calibre3"> and change
+the script source from “</span><span
+class="calibre38">type.ts”</span><span class="calibre3"> to
+“</span><span class="calibre38">area.ts.” </span><span
+class="calibre3">Open your terminal, and then execute the following
+command so as to compile the whole thing:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">tsc area.ts</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The message together with the area of the
+rectangle will be displayed. As you must have noticed, the type
+annotations are passed to the parameters of the function, and they are
+used for indicating the kind of parameters which are supported by the
+function. In the above example, the parameter “</span><span
+class="calibre38">shape”</span><span class="calibre3"> is a string,
+while the parameters length and width are numbers. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">You have to know that both Type annotations
+and other TypeScript features are enforced during compile time. In case
+one passes other types of values to these parameters, a compile-time
+error will be displayed by the compiler. This is a very good idea when
+it comes to working with large applications. </span></p>
+<p><span class="calibre3">We need to demonstrate how errors will be
+detected in our case. Consider the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function area(shape: string, width: number,
+height: number) {</span></p>
+<p><span class="calibre23">    var area = width * height;</span></p>
+<p><span class="calibre23">    return "The shape is " + shape + " having
+an area of " + area + " cm squared.";</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">document.body.innerHTML = area("rectangle",
+"width", 15); // wrong type of width</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In the above example, the width has been
+passed in as a string, which is wrong. The compiler expects that the
+width should be a number. After compiling the program given above, you
+will get the following as the error:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">$ tsc type.ts</span></p>
+<p><span class="calibre23">type.ts(6,26): Supplied parameters do not
+match any signature of call target</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">That is the kind of error you get. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">However, you must have noticed that although
+there was a warning due to type mismatch, this did not stop  the
+TypeScript file from compiling and creating a JavaScript file.
+</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As shown in the above examples, it is very
+clear that annotations are used for the purpose of recording the
+function which a function or a variable is intended to perform. Suppose
+that you have a function which expects that only a single parameter
+should be passed to it, and the parameter should be of the string type.
+What should happen once we pass an array to it? Consider the example
+given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function welcome(name: string) {</span></p>
+<p><span class="calibre23">   return "Hello, " + name;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var user = [0, 1, 2];</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">document.body.innerHTML = wlecome(user);
+</span></p>
+<p><span class="calibre3">Once you recompile the above code, you will
+get the following error:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">welcome.ts(7,26): Supplied parameters do not
+match any signature of call target</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Similarly, you can try to remove all the
+parameters from the welcome call function. You will be warned by the
+TypeScript compiler that you have passed in an unexpected number of
+parameters. </span></p>
+<div id="part0000_split_008.html_calibre_pb_23" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_009.html"></span></p>
+<section id="part0000_split_009.html_calibre_pb_24"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_009.html__Toc455006181" class="calibre27"><span
+class="calibre28">Chapter 4- Interfaces</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">We need to use our previous example by
+expanding it so as to implement an interface which will describe the
+shape as an object having an optional color property. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Create a new file, and give it the name
+“</span><span class="calibre38">interface.ts.”</span><span
+class="calibre3"> Open the file “</span><span
+class="calibre38">index.html”</span><span class="calibre3"> and then
+modify it so as to have the script source as “</span><span
+class="calibre38">interface.js.”</span><span class="calibre3"> Add the
+following code to the file “</span><span
+class="calibre38">interface.ts”</span><span
+class="calibre3">:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">interface Shape {</span></p>
+<p><span class="calibre23">    name: string;</span></p>
+<p><span class="calibre23">    width: number;</span></p>
+<p><span class="calibre23">    height: number;</span></p>
+<p><span class="calibre23">    color?: string;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">function area(shape : Shape) {</span></p>
+<p><span class="calibre23">    var area = shape.width *
+shape.height;</span></p>
+<p><span class="calibre23">    return "The shape is " + shape.name + "
+having an area of " + area + " cm squared";</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">console.log( area( {name: "rectangle", width:
+20, height: 15} ) );</span></p>
+<p><span class="calibre23">console.log( area( {name: "square", width:
+20, height: 25, color: "blue"} ) );</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Interfaces are the names which are given to
+object types. It is possible for us to declare interfaces, and at the
+same time use it in our type annotation. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Once you compile the file “</span><span
+class="calibre38">interface.js,”</span><span class="calibre3"> you will
+get no errors. For us to make it give us an error, let us add a new line
+of code to the file “</span><span
+class="calibre38">interface.js”</span><span class="calibre3"> having a
+shape with no name property and then observe the result in the console
+of our browser. Append the line of code given below to the file
+“</span><span class="calibre38">interface.js”</span><span
+class="calibre3">:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">console.log( area( {width: 20, height: 15} )
+);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">You can then run the command “tsc
+interface.js” so as to compile the code in the file. An error will be
+the output, but do not be worried by that for now. Refresh your browser,
+and then observe what the console gives you. The text and the area of
+the rectangle will form the output on the console. The arrow should be
+as follows:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">interface.ts(26,13): Supplied parameters do
+not match any signature of call target:</span></p>
+<p><span class="calibre23">Could not apply type 'Shape' to argument 1,
+which is of type '{ width: number; height: number; }'</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The error shown above is  a result of the fact
+that the object which has been passed to the function “</span><span
+class="calibre38">area()”</span><span class="calibre3"> will not conform
+to the interface named “</span><span
+class="calibre38">shape,”</span><span class="calibre3"> and a name
+property is needed so as to do so. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the code given below, which shows how
+an interface can be used in TypeScript:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">interface Person {</span></p>
+<p><span class="calibre23">   fName: string;</span></p>
+<p><span class="calibre23">   lName: string;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function welcome(person: Person) {</span></p>
+<p><span class="calibre23">   return "Hello, " + person.fName + " " +
+person.lName;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var user = { fName: "Jane", lName: "User"
+};</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">document.body.innerHTML =
+welcome(user);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In the above example, we have implemented an
+interface which is to be used for describing a person by use of the
+first and last name. For two types to be compatible in JavaScript, you
+have to ensure that their internal is also compatible. With this, we
+will be able to implement an interface just by use of the shape which is
+needed by the interface, and we will not need to use an explicit
+“</span><span class="calibre38">implements”</span><span
+class="calibre3"> clause. </span></p>
+<div id="part0000_split_009.html_calibre_pb_27" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_010.html"></span></p>
+<section id="part0000_split_010.html_calibre_pb_28"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_010.html__Toc455006182" class="calibre27"><span
+class="calibre28">Chapter 5- Arrow Function
+Expressions</span></span></h1>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">For one to understand the scope of the keyword
+“</span><span class="calibre38">this,”</span><span class="calibre3"> it
+is a challenging practice. TypeScript supports the use of arrow
+functions and expressions so as to make this a bit easier for you. This
+is just a new feature which has been introduced in ES6 for the first
+time. In arrow functions, the value for keyword “</span><span
+class="calibre38">this”</span><span class="calibre3"> is preserved, and
+this becomes easy for us to write and use callbacks. Consider the sample
+code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var objectShape = {</span></p>
+<p><span class="calibre23">    name: "rectangle",</span></p>
+<p><span class="calibre23">    popup: function() {</span></p>
+<p><span class="calibre23">               </span></p>
+<p><span class="calibre23">        console.log('The inside popup(): ' +
+this.name);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">        setTimeout(function() {</span></p>
+<p><span class="calibre23">            console.log('The inside
+setTimeout(): ' + this.name);</span></p>
+<p><span class="calibre23">            console.log("The shape is a " +
+this.name + "!");</span></p>
+<p><span class="calibre23">        }, 3000);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    }</span></p>
+<p><span class="calibre23">};</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">objectShape.popup();</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The object “</span><span
+class="calibre38">this.name”</span><span class="calibre3"> will be
+empty, and this will be depicted clearly on the browser console.
+</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The TypeScript arrow function can be used for
+the purpose of fixing this problem. You have to replace “</span><span
+class="calibre38">function()”</span><span class="calibre3"> with “()
+=&gt;.” This is shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var objectShape = {</span></p>
+<p><span class="calibre23">    name: "rectangle",</span></p>
+<p><span class="calibre23">    popup: function() {</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">        console.log('The inside popup(): ' +
+this.name);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">        setTimeout( () =&gt; {</span></p>
+<p><span class="calibre23">            console.log('The inside
+setTimeout(): ' + this.name);</span></p>
+<p><span class="calibre23">            console.log("The shape is a " +
+this.name + "!");</span></p>
+<p><span class="calibre23">        }, 3000);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    }</span></p>
+<p><span class="calibre23">};</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">objectShape.popup();</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">You can then look at the JavaScript file which
+is generated. You will observe that the compiler has injected a new
+variable, which is “var _this = this;,” and this will be used in the
+callback “setTimeout(),” and the “</span><span
+class="calibre38">name”</span><span class="calibre3"> property will be
+referenced. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the pure JavaScript class given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function Person(age) {</span></p>
+<p><span class="calibre23">   this.age = age</span></p>
+<p><span class="calibre23">   this.becomeOld = function() {</span></p>
+<p><span class="calibre23">       this.age++;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">var person = new Person(1);</span></p>
+<p><span class="calibre23">setTimeout(person.becomeOld,1000);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">setTimeout(function() {
+console.log(person.age); },2000); // the 1 should have been set to
+2</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Once the above code has been executed in the
+browser, the object “</span><span class="calibre38">this”</span><span
+class="calibre3"> will point to “</span><span
+class="calibre38">window”</span><span class="calibre3"> since it will be
+the one used for executing the “</span><span
+class="calibre38">becomeOld”</span><span class="calibre3"> function.
+This can only be solved by executing the arrow function as shown
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function Person(age) {</span></p>
+<p><span class="calibre23">   this.age = age</span></p>
+<p><span class="calibre23">   this.becomeOld = () =&gt; {</span></p>
+<p><span class="calibre23">       this.age++;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">var person = new Person(1);</span></p>
+<p><span class="calibre23">setTimeout(person.becomeOld,1000);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">setTimeout(function() {
+console.log(person.age); },2000); // 2</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The reason behind the above code functioning
+is that referencing to the object “</span><span
+class="calibre38">this”</span><span class="calibre3"> will be captured
+from outside our function body. The above code is similar to the
+JavaScript code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function Person(age) {</span></p>
+<p><span class="calibre23">   this.age = age</span></p>
+<p><span class="calibre23">   var _this = this;  // capture the
+this</span></p>
+<p><span class="calibre23">   this.becomeOld = function() {</span></p>
+<p><span class="calibre23">       _this.age++;   // using the already
+captured this</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">var person = new Person(1);</span></p>
+<p><span class="calibre23">setTimeout(person.becomeOld,1000);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">setTimeout(function() {
+console.log(person.age); },2000); // 2</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Since we are using TypeScript, it is possible
+for us to use a sweeter syntax by combining classes and arrows. This is
+shown in the example code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Person {</span></p>
+<p><span class="calibre23">   constructor(public age:number)
+{}</span></p>
+<p><span class="calibre23">   becomeOld = () =&gt; {</span></p>
+<p><span class="calibre23">       this.age++;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">var person = new Person(1);</span></p>
+<p><span class="calibre23">setTimeout(person.becomeOld,1000);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">setTimeout(function() {
+console.log(person.age); },2000); // 2</span></p>
+<p><span class="calibre3">However, you should know that the fat arrow
+should only be used if you are to give the function to another
+individual so as to make the calling. This one shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var becomeOld = person.becomeOld;</span></p>
+<p><span class="calibre23">// This will be called by someone else
+later:</span></p>
+<p><span class="calibre23">becomeOld();</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">If you are to call it yourself, you should do
+it as shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">person.becomeOld();</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">And then the “</span><span
+class="calibre38">this”</span><span class="calibre3"> object will become
+the correct calling context. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In most cases, libraries will use the object
+“</span><span class="calibre38">this”</span><span class="calibre3"> so
+as to pass the object which is currently being iterated on. If you are
+in need of accessing the library passed “</span><span
+class="calibre38">this,”</span><span class="calibre3">  even your
+surrounding variable, you can make use of a temp variable like you would
+do in the absence of arrow functions. This is shown in the code given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let _self = this;</span></p>
+<p><span class="calibre23">thing.each(function() {</span></p>
+<p><span class="calibre23">   console.log(_self); // this is your
+lexically scoped value</span></p>
+<p><span class="calibre23">   console.log(this); // this is a library
+passed value</span></p>
+<p><span class="calibre23">});</span></p>
+<div id="part0000_split_010.html_calibre_pb_31" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_011.html"></span></p>
+<section id="part0000_split_011.html_calibre_pb_32"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_011.html__Toc455006183" class="calibre27"><span
+class="calibre28">Chapter 6- Classes</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In TypeScript, there are classes which have a
+public or private accessibility. In TypeScript, classes are used in the
+same way as in ES6. Create a new file, and give it the name
+“</span><span class="calibre38">class.ts.”</span><span class="calibre3">
+Add the following code to the class:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Shape {</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    area: number;</span></p>
+<p><span class="calibre23">    color: string;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    constructor ( name: string, width:
+number, height: number ) {</span></p>
+<p><span class="calibre23">        this.area = width *
+height;</span></p>
+<p><span class="calibre23">        this.color = "red";</span></p>
+<p><span class="calibre23">    };</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">    shoutit() {</span></p>
+<p><span class="calibre23">        return "The object is" + this.color +
+" " + this.name +  " having an area of " + this.area + " cm
+squared.";</span></p>
+<p><span class="calibre23">    }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">var square = new Shape("square", 20,
+20);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre23">console.log( square.shoutit() );</span></p>
+<p><span class="calibre23">console.log( 'Area of Object: ' + square.area
+);</span></p>
+<p><span class="calibre23">console.log( 'Name of Object: ' + square.name
+);</span></p>
+<p><span class="calibre23">console.log( 'Color of Object: ' +
+square.color );</span></p>
+<p><span class="calibre23">console.log( 'Width of Object: ' +
+square.width );</span></p>
+<p><span class="calibre23">console.log( 'Height of Object: ' +
+square.height );</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Our object in the above example has two
+properties, namely “</span><span class="calibre38">area”</span><span
+class="calibre3"> and “</span><span
+class="calibre38">color.”</span><span class="calibre3"> We have also
+implemented a constructor and the method “</span><span
+class="calibre38">shoutit().”</span><span class="calibre3">  Our
+constructor arguments have a scope which is local to the constructor.
+Due to this, errors will be observed both in the browser and the
+compiler, as shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class.ts(12,42): The 'name' property does not
+exist on the value of type 'Shape'</span></p>
+<p><span class="calibre23">class.ts(20,40): The 'name' property does not
+exist on the value of type 'Shape'</span></p>
+<p><span class="calibre23">class.ts(22,41): The 'width' property does
+not exist on the value of type 'Shape'</span></p>
+<p><span class="calibre23">class.ts(23,42): The 'height' property does
+not exist on the value of type 'Shape'</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">TypeScript supports both “</span><span
+class="calibre38">public”</span><span class="calibre3"> and
+“</span><span class="calibre38">private”</span><span class="calibre3">
+access modifiers. With public members, we are able to access them from
+everywhere, while with the private members, we can only access them from
+within the In JavaScript, there is no feature which can be used for the
+purpose of enforcing privacy, and this is why it is enforced during
+compile-time, and it serves to warn the developer about their intention
+to make it private. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">We are in need of adding the public
+accessibility modifier to the constructor argument “</span><span
+class="calibre38">name”</span><span class="calibre3"> and then a private
+accessibility modifier to a member, that is, “</span><span
+class="calibre38">color.”</span><span class="calibre3"> Once an
+accessibility modifier has been added to an argument of a constructor,
+this will automatically become a member of class with that accessibility
+modifier. Consider the example given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">...</span></p>
+<p><span class="calibre23">private color: string;</span></p>
+<p><span class="calibre23">...</span></p>
+<p><span class="calibre23">constructor ( public name: string, width:
+number, height: number ) {</span></p>
+<p><span class="calibre23">...</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the ES 6 class given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Monster {</span></p>
+<p><span class="calibre23">   constructor(name, initPosition)
+{</span></p>
+<p><span class="calibre23">       this.name = name;</span></p>
+<p><span class="calibre23">       this.initPosition = initPosition;
+</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In ES 6, the above class will be okay when
+used in the way it has been defined. However, this will not be okay in
+TypeScript as you are expected to define some properties on the object.
+This is shown in the code given below:</span></p>
+<p><span class="calibre23">interface Point {</span></p>
+<p><span class="calibre23">   a: number,</span></p>
+<p><span class="calibre23">   b: number</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Monster {</span></p>
+<p><span class="calibre23">   name: string;</span></p>
+<p><span class="calibre23">   initPosition: Point</span></p>
+<p><span class="calibre23">   constructor(name, initPosition)
+{</span></p>
+<p><span class="calibre23">       this.name = name;</span></p>
+<p><span class="calibre23">       this.initPosition = initPosition;
+</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var scaring = new Monster("Alien", {a: 0, b:
+0});</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">However, there is a shorthand to that. The
+following code will just do the same:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">interface Point {</span></p>
+<p><span class="calibre23">   a: number,</span></p>
+<p><span class="calibre23">   b: number</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Monster {</span></p>
+<p><span class="calibre23">   constructor(public name: string, public
+initPosition: Point) {</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var scaring = new Monster("Alien", {a: 0, b:
+0});</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As you must have noticed, the constructor has
+used the keyword “</span><span class="calibre38">public”</span><span
+class="calibre3"> before each variable name. This is an indication that
+we need to make the parameter to be a public property on our object.
+</span></p>
+<div id="part0000_split_011.html_calibre_pb_35" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_012.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Inheritance</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In TypeScript, the “</span><span
+class="calibre38">extends”</span><span class="calibre3"> keyword is used
+for the purpose of supporting a single inheritance. The code given below
+demonstrates how this can be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Point3 extends Point {</span></p>
+<p><span class="calibre23">   z: number;</span></p>
+<p><span class="calibre23">   constructor(x: number, y: number, z:
+number) {</span></p>
+<p><span class="calibre23">       super(x, y);</span></p>
+<p><span class="calibre23">       this.z = z;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">   add(point: Point3) {</span></p>
+<p><span class="calibre23">       var point2 =
+super.add(point);</span></p>
+<p><span class="calibre23">       return new Point3(point2.x, point2D.y,
+this.z + point.z);</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In case there is a constructor in your class,
+you will be forced to call the parent constructor from the constructor.
+This will ensure that the stuff which is needed for setting this will be
+set. Followed by the call to “</span><span
+class="calibre38">super,”</span><span class="calibre3"> one can add any
+additional stuff needed for doing the constructor. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the second example given below, which
+shows one can use the “</span><span
+class="calibre38">extends”</span><span class="calibre3"> keyword to
+create an inheritance in TypeScript:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class MyReport {</span></p>
+<p><span class="calibre23">   name: string;</span></p>
+<p><span class="calibre23">   constructor (name: string) {</span></p>
+<p><span class="calibre23">       this.name = name;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">   print() {</span></p>
+<p><span class="calibre23">       alert("My Report: " +
+this.name);</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class CashReport extends Report {</span></p>
+<p><span class="calibre23">   constructor (name: string) {</span></p>
+<p><span class="calibre23">       super(name);</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   print() {</span></p>
+<p><span class="calibre23">       alert("Cash Report: " +
+this.name);</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   getLineItems() {</span></p>
+<p><span class="calibre23">       alert("5 line items");</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myreport = new CashReport("Month's
+Sales");</span></p>
+<p><span class="calibre23">myreport.print();</span></p>
+<p><span class="calibre23">myreport.getLineItems();</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In the above example, we have created a base
+class with the name “</span><span
+class="calibre38">MyReport,”</span><span class="calibre3"> and it has a
+single variable “</span><span class="calibre38">name,”</span><span
+class="calibre3"> a constructor for accepting the variable name as a
+string, and a function with the name “</span><span
+class="calibre38">print().”</span><span class="calibre3"> The class
+“</span><span class="calibre38">CashReport”</span><span
+class="calibre3"> uses the “</span><span
+class="calibre38">extends”</span><span class="calibre3"> keyword so as
+to inherit from the class “</span><span
+class="calibre38">MyReport.”</span><span class="calibre3"> This means
+that the child class will have a direct access to the “</span><span
+class="calibre38">print()”</span><span class="calibre3"> function which
+has been defined in the base class. The class “</span><span
+class="calibre38">CashReport”</span><span class="calibre3"> will
+override the “</span><span class="calibre38">print()”</span><span
+class="calibre3"> method found in the base class and then create its
+own. The class “</span><span class="calibre38">CashReport”</span><span
+class="calibre3"> will also forward the name value which it receives in
+the constructor to its base class by use of the “</span><span
+class="calibre38">super()”</span><span class="calibre3"> call.
+</span></p>
+<div id="part0000_split_012.html_calibre_pb_37" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_013.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Statics</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Static properties are supported in TypeScript,
+and these are shared by all of the instances of the class. The best
+place to put these is in a class itself, and that is exactly what
+happens in TypeScript. Consider the code given below, which shows how
+this happens:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class MyClass {</span></p>
+<p><span class="calibre23">   static instances = 0;</span></p>
+<p><span class="calibre23">   constructor() {</span></p>
+<p><span class="calibre23">      MyClass.instances++;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var s1 = new MyClass ();</span></p>
+<p><span class="calibre23">var s2 = new MyClass ();</span></p>
+<p><span class="calibre23">console.log(MyClass.instances); //
+2</span></p>
+<p><span class="calibre3">It is possible for one to have both static
+members and static functions. </span></p>
+<div id="part0000_split_013.html_calibre_pb_39" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_014.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Access Modifiers</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In TypeScript, access modifiers are supported
+and these govern how variables can be accessed. A variable can be
+outside a class directly by its instances, or it may be accessible in
+the child classes. The following are the three types of access
+modifiers:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol type="1">
+<li><span class="calibre3">public: available on the instances
+everywhere.</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre3">private: not available for access outside
+class.</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol start="3" type="1">
+<li><span class="calibre3">protected: available on the child classes,
+but not on the instances directly.</span></li>
+</ol>
+<p><span class="calibre3">You should be aware that it will have no great
+impact on your programs, but if you try to access them during runtime,
+they will give you some errors. Consider the example given below, which
+shows how this can be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class ClassBase {</span></p>
+<p><span class="calibre23">   public a: number;</span></p>
+<p><span class="calibre23">   private b: number;</span></p>
+<p><span class="calibre23">   protected c: number;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// EFFECT ON the INSTANCES</span></p>
+<p><span class="calibre23">var myVar = new ClassBase();</span></p>
+<p><span class="calibre23">foo.a; // okay</span></p>
+<p><span class="calibre23">foo.b; // ERROR : private</span></p>
+<p><span class="calibre23">foo.c; // ERROR : protected</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// EFFECT ON THE CHILD CLASSES</span></p>
+<p><span class="calibre23">class ClassChild extends ClassBase
+{</span></p>
+<p><span class="calibre23">   constructor() {</span></p>
+<p><span class="calibre23">     super();</span></p>
+<p><span class="calibre23">       this.a; // okay</span></p>
+<p><span class="calibre23">       this.b; // ERROR: private</span></p>
+<p><span class="calibre23">       this.c; // okay</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As you are aware, the above modifiers will
+work for both member properties and the member functions. </span></p>
+<div id="part0000_split_014.html_calibre_pb_41" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_015.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Define using constructor</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">A member in a class can be initialized as
+shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class MyClass {</span></p>
+<p><span class="calibre23">   x: number;</span></p>
+<p><span class="calibre23">   constructor(x:number) {</span></p>
+<p><span class="calibre23">       this.x = x;</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">This is a very common scenario in TypeScript,
+and one can simply prefix the member using an access modifier and this
+will be declared automatically in the class and then copied from your
+constructor. With this, our previous example can be written as shown
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class MyClass {</span></p>
+<p><span class="calibre23">   constructor(public x:number) {</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_015.html_calibre_pb_43" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_016.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Property initializer</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">This is a very important feature which is
+supported in TypeScript. It is possible for you to initialize any member
+of the class outside the constructor, and it is good for providing a
+default value. Consider the example given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class MyClass {</span></p>
+<p><span class="calibre23">   members = [];  // Initializing
+directly</span></p>
+<p><span class="calibre23">   add(x) {</span></p>
+<p><span class="calibre23">       this.members.push(x);</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_016.html_calibre_pb_45" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_017.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Rest Parameters</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">This feature allows one to accept multiple
+parameters in a function, and then get these as an array. This can be
+denoted as shown in the example given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">Function allFunction(first, second, ...rest)
+{</span></p>
+<p><span class="calibre23">   console.log(rest);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">allFunction ('sample', 'bar'); //
+[]</span></p>
+<p><span class="calibre23">allFunction ('sample', 'bar', 'bas', 'qux');
+// ['bas','qux']</span></p>
+<div id="part0000_split_017.html_calibre_pb_47" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_018.html"></span></p>
+<section id="part0000_split_018.html_calibre_pb_48"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_018.html__Toc455006184" class="calibre27"><span
+class="calibre28">Chapter 7- Destructuring</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Destructuring means breaking up the structure.
+The following types of destructuring are supported in
+TypeScript:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol type="1">
+<li><span class="calibre3">Object Destructuring</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ol start="2" type="1">
+<li><span class="calibre3">Array Destructuring</span></li>
+</ol>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">To make it easy, see destructuring as the
+inverse of structuring. The example given below shows how structuring
+can be done in JavaScript:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myVar = {</span></p>
+<p><span class="calibre23">   bar: {</span></p>
+<p><span class="calibre23">       bas: 789</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">};</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">With the support for structuring in
+JavaScript, the process of creating new objects would have been a bit
+tough. With destructuring, we get the same level of convenience to
+obtaining data out of a particular source. </span></p>
+<div id="part0000_split_018.html_calibre_pb_51" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_019.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Object Destructuring</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">With destructuring, one can do much work which
+could have taken lines in just a single line. Consider the example given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var rectangle = { a: 0, b: 10, width: 20,
+height: 30 };</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// Destructuring the assignment</span></p>
+<p><span class="calibre23">var {a, b, width, height} =
+rectangle;</span></p>
+<p><span class="calibre23">console.log(a, b, width, height); </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">If we were not to use destructing, the a, b,
+width, and height would have been picked separately from the rectangle.
+Deep data can also be obtained from a structure by use of destruction.
+The following code best illustrates how this can be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var foo = { bar: { bas: 123 } };</span></p>
+<p><span class="calibre23">var {bar: {bas}} = foo; // Effectively `var
+bas = foo.bar.bas;`</span></p>
+<div id="part0000_split_019.html_calibre_pb_53" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_020.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Array Destructuring</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">“</span><span
+class="calibre38">const”</span><span class="calibre3"> is a new addition
+which is now offered in TypeScript and ES6. With it, one can be
+immutable with variables. This serves a good purpose in runtime and for
+documentation. For you to use it, you just have to replace the keyword
+“</span><span class="calibre38">var”</span><span class="calibre3"> with
+“</span><span class="calibre38">const.”</span><span class="calibre3">
+This is best demonstrated below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst = 123;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In TypeScript, use of const is easy compared
+to what happens in other programming languages. It helps us to avoid
+magic literals, and it is a good practice for improving readability and
+maintainability. Consider the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// Low readability</span></p>
+<p><span class="calibre23">if (a &gt; 10) {</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// This one is Better!</span></p>
+<p><span class="calibre23">const maximumRows = 10;</span></p>
+<p><span class="calibre23">if (a &gt; maximumRows) {</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Initialization of “</span><span
+class="calibre38">const”</span><span class="calibre3"> declarations has
+to be done. Consider the compile error given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst // ERROR: const declarations
+must be initialized</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Also, it is impossible for a left hand
+assignment to be a constant. This is because after creation of
+constants, they become immutable, so if you try to assign them to a new
+value, you will get a compile error. This is shown in the code given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst = 123;</span></p>
+<p><span class="calibre23">myConst = 540; // ERROR: Left-hand side of an
+assignment expression cannot be a constant</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As shown above, trying to do that results in
+the compile errors which have been commented. </span></p>
+<div id="part0000_split_020.html_calibre_pb_55" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_021.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Block Scoped</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">A “</span><span
+class="calibre38">const”</span><span class="calibre3"> is just a block
+which has been scoped like we did using “</span><span
+class="calibre38">let.”</span><span class="calibre3"> The code given
+below best describes this:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst = 123;</span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   const myConst = 500; // Allowed as its a
+new variable limited to this `if` block</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_021.html_calibre_pb_57" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_022.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Deep immutability</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">It is possible for us to use “</span><span
+class="calibre38">const”</span><span class="calibre3"> with object
+literals, as far as you are concerned with protecting the “</span><span
+class="calibre38">reference”</span><span class="calibre3"> to the
+variable. This is shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst = { bar: 123 };</span></p>
+<p><span class="calibre23">myConst = { bar: 500 }; // ERROR : Left hand
+side of an assignment expression cannot be a constant</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">However, it is possible for you to mute the
+sub properties of objects. This is shown in the code given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const myConst = { bar: 123 };</span></p>
+<p><span class="calibre23">myConst.bar = 500; // This one is
+Allowed!</span></p>
+<p><span class="calibre23">console.log(myConst); // { bar: 500
+}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">This is why it is recommended that you use the
+const with immutable data structures and with literals. Constants are
+very good when you need to maintain the value of a variable without
+changing it. </span></p>
+<div id="part0000_split_022.html_calibre_pb_59" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_023.html"></span></p>
+<section id="part0000_split_023.html_calibre_pb_60"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_023.html__Toc455006185" class="calibre27"><span
+class="calibre28">Chapter 8- for...of</span></span></h1>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">The “</span><span
+class="calibre38">for…of”</span><span class="calibre3"> does not iterate
+over the elements of an array, and this is a common problem experienced
+by JavaScript beginners. This one iterates over the keys of the objects
+which are passed in. Consider the example given below, which best
+describes this:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myArray = [7, 2, 5];</span></p>
+<p><span class="calibre23">for (var item in myArray) {</span></p>
+<p><span class="calibre23">   console.log(item); // 0,1,2</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In the above example, although we expect to
+get 7, 2, 5, we will get the indexes which are 0, 1, 2. Tihs is why the
+“</span><span class="calibre38">for…of”</span><span class="calibre3">
+was introduced in TypeScript. Consider the example given below, which
+will iterate over the elements of the array and output the result which
+is expected:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myArray = [7, 2, 5];</span></p>
+<p><span class="calibre23">for (var item of myArray) {</span></p>
+<p><span class="calibre23">   console.log(item); // 7,2,5</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The above example will output the result which
+you expect rather than the indexes. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Similarly, in TypeScript, it is no trouble for
+one to go through a string character by character by use of “for…of.”
+This is demonstrated in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var hi = "are you the one looking for
+me?";</span></p>
+<p><span class="calibre23">for (var char of hi) {</span></p>
+<p><span class="calibre23">   console.log(char); // are you the one
+looking for me?</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_023.html_calibre_pb_63" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_024.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">JS Generation</span></p>
+<h4 class="calibre44"><span class="calibre23"> </span></h4>
+<h4 class="calibre44"><span class="calibre23"> </span></h4>
+<p><span class="calibre3">TypeScript will always generate a standard
+“for (var i = 0; i &lt; list.length; i++)” for pre ES6 targets. Our
+previous example will generate the following:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myArray = [7, 2, 5];</span></p>
+<p><span class="calibre23">for (var item of myArray) {</span></p>
+<p><span class="calibre23">   console.log(item);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// it will become //</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">for (var _j = 0; _j &lt; myArray.length;
+_j++) {</span></p>
+<p><span class="calibre23">   var item = myArray[_j];</span></p>
+<p><span class="calibre23">   console.log(item);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As shown in the above example, use of
+“for...of” will make the “</span><span
+class="calibre38">intent”</span><span class="calibre3"> clearer and the
+amount of code you are expected to write will also be reduced, as well
+as the number of variables you are expected to create. </span></p>
+<div id="part0000_split_024.html_calibre_pb_65" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_025.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Limitations</span></p>
+<h4 class="calibre44"><span class="calibre23"> </span></h4>
+<h4 class="calibre44"><span class="calibre23"> </span></h4>
+<p><span class="calibre3">For those who are not targeting ES6 or above,
+the code which is generated will assume that the property “</span><span
+class="calibre38">length”</span><span class="calibre3"> exists on our
+object and it can be indexed via numbers. This means that it is only
+supported in arrays and string for the legacy JS engines. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In case TypeScript notices that you are not
+using either an array or string, then you will get an error. Consider
+the example given below which best describes this:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let artParagraphs =
+document.querySelectorAll("article &gt; p");</span></p>
+<p><span class="calibre23">// Error: Nodelist is not an array type or a
+string type</span></p>
+<p><span class="calibre23">for (let par of artParagraphs) {</span></p>
+<p><span class="calibre23">   par.classList.add("read");</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3">From the above demonstrations, it is very
+clear that “</span><span class="calibre38">for…of”</span><span
+class="calibre3"> should only be used for objects which are either an
+array or a string. </span></p>
+<div id="part0000_split_025.html_calibre_pb_67" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_026.html"></span></p>
+<section id="part0000_split_026.html_calibre_pb_68"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_026.html__Toc455006186" class="calibre27"><span
+class="calibre28">Chapter 9- Iterators</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">An iterator is a feature which is mostly used
+in object-oriented programming languages. It is an object, and is used
+for the purpose of implementation of the following types of
+interfaces:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">interface Iterator&lt;T&gt; {</span></p>
+<p><span class="calibre23">   next(value?: any):
+IteratorResult&lt;T&gt;;</span></p>
+<p><span class="calibre23">   return?(value?: any):
+IteratorResult&lt;T&gt;;</span></p>
+<p><span class="calibre23">   throw?(e?: any):
+IteratorResult&lt;T&gt;;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The interface allows us to retrieve a
+particular value from a collection or a sequence belonging to the
+object. Imagine a situation in which you have an object of a frame, and
+this includes a list of components of which our frame consists. With the
+iterator interface,  it becomes possible for us to retrieve components
+from the frame object as shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">'use strict';</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Component {</span></p>
+<p><span class="calibre23"> constructor (public name: string)
+{}</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Frame implements
+Iterator&lt;Component&gt; {</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> private point = 0;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> constructor(public name: string, public
+components: Component[]) {}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> public next():
+IteratorResult&lt;Component&gt; {</span></p>
+<p><span class="calibre23">   if (this.point &lt;
+this.components.length) {</span></p>
+<p><span class="calibre23">     return {</span></p>
+<p><span class="calibre23">       done: false,</span></p>
+<p><span class="calibre23">       value:
+this.components[this.point++]</span></p>
+<p><span class="calibre23">     }</span></p>
+<p><span class="calibre23">   } else {</span></p>
+<p><span class="calibre23">     return {</span></p>
+<p><span class="calibre23">       done: true</span></p>
+<p><span class="calibre23">     }</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23"> }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let fr = new Frame("Door", [new
+Component("top"), new Component("bottom"), new Component("left"), new
+Component("right")]);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let iteratorResult_1 = fr.next(); //{ done:
+false, value: Component { name: 'top' } }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let iteratorResult_2 = fr.next(); //{ done:
+false, value: Component { name: 'bottom' } }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let iteratorResult_3 = fr.next(); //{ done:
+false, value: Component { name: 'left' } }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let iteratorResult_4 = fr.next(); //{ done:
+false, value: Component { name: 'right' } }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let iteratorResult_5 = fr.next(); //{ done:
+true }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">//It is possible for us to access a value of
+iterator result by use of the value property:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let component = iteratorResult_1.value;
+//Component { name: 'top' }</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">You have to know that the iterator itself is
+not a feature in TypeScript, meaning the code could have worked without
+having to explicitly implement the iterator and the iteratorResult.
+However, for the sake of code consistency, it will be good for us to use
+those ES6 interface features. </span></p>
+<p><span class="calibre3">Consider the code given below, which shows how
+this can be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">//...</span></p>
+<p><span class="calibre23">class Frame implements
+Iterable&lt;Component&gt; {</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> constructor(public name: string, public
+components: Component[]) {}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> [Symbol.iterator]() {</span></p>
+<p><span class="calibre23">   let p = 0;</span></p>
+<p><span class="calibre23">   let components =
+this.components;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   return {</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">     next(): IteratorResult&lt;Component&gt;
+{</span></p>
+<p><span class="calibre23">       if (p &lt; components.length)
+{</span></p>
+<p><span class="calibre23">         return {</span></p>
+<p><span class="calibre23">           done: false,</span></p>
+<p><span class="calibre23">           value: components[p++]</span></p>
+<p><span class="calibre23">         }</span></p>
+<p><span class="calibre23">       } else {</span></p>
+<p><span class="calibre23">         return {</span></p>
+<p><span class="calibre23">           done: true</span></p>
+<p><span class="calibre23">         }</span></p>
+<p><span class="calibre23">       }</span></p>
+<p><span class="calibre23">     }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let fr = new Frame("Door", [new
+Component("top"), new Component("bottom"), new Component("left"), new
+Component("right")]);</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">for (let cmp of frame) {</span></p>
+<p><span class="calibre23"> console.log(cmp);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The iterator must not iterate a finite value.
+A good example of this is the finonacci sequence. This is best
+demonstrated in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">class Fibonacci implements
+IterableIterator&lt;number&gt; {</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> protected fbn1 = 0;</span></p>
+<p><span class="calibre23"> protected fbn2 = 1;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> constructor(protected maxValue?: number)
+{}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> public next(): IteratorResult&lt;number&gt;
+{</span></p>
+<p><span class="calibre23">   var current = this.fbn1;</span></p>
+<p><span class="calibre23">   this.fbn1 = this.fbn2;</span></p>
+<p><span class="calibre23">   this.fbn2 = current +
+this.fbn1;</span></p>
+<p><span class="calibre23">   if (this.maxValue &amp;&amp; current &lt;=
+this.maxValue) {</span></p>
+<p><span class="calibre23">     return {</span></p>
+<p><span class="calibre23">       done: false,</span></p>
+<p><span class="calibre23">       value: current</span></p>
+<p><span class="calibre23">     }</span></p>
+<p><span class="calibre23">   } return {</span></p>
+<p><span class="calibre23">     done: true</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23"> [Symbol.iterator]():
+IterableIterator&lt;number&gt; {</span></p>
+<p><span class="calibre23">   return this;</span></p>
+<p><span class="calibre23"> }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let fib = new Fibonacci();</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 0
+}</span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 1
+}</span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 1
+}</span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 2
+}</span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 3
+}</span></p>
+<p><span class="calibre23">fib.next() //{ done: false, value: 5
+}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let fibMax50 = new Fibonacci(50);</span></p>
+<p><span class="calibre23">console.log(Array.from(fibMax50)); // [ 0, 1,
+1, 2, 3, 5, 8, 13, 21, 34 ]</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let fibMax21 = new Fibonacci(21);</span></p>
+<p><span class="calibre23">for(let num of fibMax21) {</span></p>
+<p><span class="calibre23"> console.log(num); //will print a fibonacci
+sequence of 0 to 21</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_026.html_calibre_pb_71" class="calibre12">
+
+</div>
+</section>
+<p><span id="part0000_split_027.html"></span></p>
+<section id="part0000_split_027.html_calibre_pb_72"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_027.html__Toc455006187" class="calibre27"><span
+class="calibre28">Chapter 10- Template Strings</span></span></h1>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">These are the strings which are to use
+backticks instead of the single and double quotes. They are used in
+three areas:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ul>
+<li><span class="calibre3">Multiline Strings</span></li>
+</ul>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ul>
+<li><span class="calibre3">String Interpolation</span></li>
+</ul>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<ul>
+<li><span class="calibre3">Tagged Templates</span></li>
+</ul>
+<p><span class="calibre3"> </span></p>
+<div id="part0000_split_027.html_calibre_pb_75" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_028.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Multiline Strings</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Sometimes, one may need to embed something
+into their JavaScript string. For you to do this, you are required to
+use an escape character of the correct choice so as to put a new line in
+the string manually. This is shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lcs = "You should never give up
+\</span></p>
+<p><span class="calibre23">\nAll shall be well with you
+friend";              </span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In TypeScript, this can be done using a
+template string as shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lcs = ` You should never give
+up</span></p>
+<p><span class="calibre23">All shall be well with you
+friend`;</span></p>
+<div id="part0000_split_028.html_calibre_pb_77" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_029.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">String Interpolation</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">You might be in need of generating some
+strings from a static string and some variables. Some templating logic
+will be needed for doing this where the name for templating strings
+comes from. An html string could have been generated as follows
+previously:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lcs = ' You should never give up
+';</span></p>
+<p><span class="calibre23">var html = '&lt;div&gt;' + lcs +
+'&lt;/div&gt;';</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">With template strings, this can be done as
+follows:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lcs = ' You should never give up
+';</span></p>
+<p><span class="calibre23">var html =
+`&lt;div&gt;${lcs}&lt;/div&gt;`;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Since the placeholder inside the interpolation
+is treated as an expression, and then treated as shown above, you can do
+the following math:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">console.log(`1 and 1 will make ${1 +
+1}`);</span></p>
+<div id="part0000_split_029.html_calibre_pb_79" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_030.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Tagged Templates</span></p>
+<p><span class="calibre50"> </span></p>
+<p><span class="calibre50"> </span></p>
+<p><span class="calibre3">A function can be placed before a template
+string, and this will offer it an opportunity for pre-processing the
+template string literals plus the variables of the placeholder
+expressions and then return a result. You have to know that all your
+static literals should be passed in as an array for your first argument.
+</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the example given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var words = "if you are a man&gt; you wear
+trousers";</span></p>
+<p><span class="calibre23">var html = htmlEscape `&lt;div&gt; I would
+like to denote that : ${words}&lt;/div&gt;`;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// an example of tag function</span></p>
+<p><span class="calibre23">function htmlEscape(literals,
+...placeholders) {</span></p>
+<p><span class="calibre23">   let result = "";</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   // interleave your literals with the
+placeholders</span></p>
+<p><span class="calibre23">   for (let j = 0; j &lt;
+placeholders.length; j++) {</span></p>
+<p><span class="calibre23">       result += literals[j];</span></p>
+<p><span class="calibre23">       result += placeholders[j]</span></p>
+<p><span class="calibre23">           .replace(/&amp;/g,
+'&amp;amp;')</span></p>
+<p><span class="calibre23">           .replace(/"/g,
+'&amp;quot;')</span></p>
+<p><span class="calibre23">           .replace(/'/g,
+'&amp;#39;')</span></p>
+<p><span class="calibre23">           .replace(/&lt;/g,
+'&amp;lt;')</span></p>
+<p><span class="calibre23">           .replace(/&gt;/g,
+'&amp;gt;');</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   // adding the last literal</span></p>
+<p><span class="calibre23">   result += literals[literals.length -
+1];</span></p>
+<p><span class="calibre23">   return result;</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_030.html_calibre_pb_81" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_031.html"></span></p>
+<section id="part0000_split_031.html_calibre_pb_82"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_031.html__Toc455006188" class="calibre27"><span
+class="calibre28">Chapter 11- Spread Operator</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">This operator is intended at spreading the
+objects of an array. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre37">Apply</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">The operator is used for spreading an array
+into function arguments. In the past, one was expected to use the
+function “Function.prototype.apply.” This is shown in the code sample
+given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function myFunction(a, b, c) { }</span></p>
+<p><span class="calibre23">var args = [0, 1, 2];</span></p>
+<p><span class="calibre23">myFunction.apply(null, args);</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">For this to be done, one can prefix the
+arguments with (…). This is shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function myFunction(a, b, c) { }</span></p>
+<p><span class="calibre23">var args = [0, 1, 2];</span></p>
+<p><span class="calibre23">myFunction(...args);</span></p>
+<div id="part0000_split_031.html_calibre_pb_85" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_032.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Destructuring</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">You have already seen how this can be used in
+destructuring. This is shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var [a, b, ...remaining] = [1, 2, 3,
+4];</span></p>
+<p><span class="calibre23">console.log(a, b, remaining); // 1, 2,
+[3,4]</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The motivation behind this is to make it easy
+for one to capture the array elements which are remaining when
+destructuring. </span></p>
+<div id="part0000_split_032.html_calibre_pb_87" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_033.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Array Assignment</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">The spread operator can allow you to place an
+array which has been expanded into another array. Consider the example
+given below, which demonstrates how this can be done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var list = [5, 6];</span></p>
+<p><span class="calibre23">list = [...list, 7, 8];</span></p>
+<p><span class="calibre23">console.log(list); // [5,6,7,8]</span></p>
+<div id="part0000_split_033.html_calibre_pb_89" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_034.html"></span></p>
+<section id="part0000_split_034.html_calibre_pb_90"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_034.html__Toc455006189" class="calibre27"><span
+class="calibre28">Chapter 12- Enums</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">An enum provides us with a way to organize
+collections having related values. Other programming languages provide
+us with an enum data type except JavaScript. This is supported in
+TypeScript. In TypeScript, an enum can be declared as shown
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Card {</span></p>
+<p><span class="calibre23">   Clubs,</span></p>
+<p><span class="calibre23">   Spades,</span></p>
+<p><span class="calibre23">   Diamonds,</span></p>
+<p><span class="calibre23">   Hearts</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">// A sample usage</span></p>
+<p><span class="calibre23">var card = Card.Clubs;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// Safety</span></p>
+<p><span class="calibre23">card = "It is not a member of the card suit";
+// Error : string is not assignable to type `CardSuit`</span></p>
+<div id="part0000_split_034.html_calibre_pb_93" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_035.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Enums and Numbers</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Enums in TypeScfript are number-based. This is
+an indication that we can assign numbers to an instance of an enum in
+TypeScript, and the same applies to any type which is compatible to
+numbers. The code given below best describes how this can be
+done:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Color {</span></p>
+<p><span class="calibre23">   Red,</span></p>
+<p><span class="calibre23">   Green,</span></p>
+<p><span class="calibre23">   Blue</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">var color = Color.Red;</span></p>
+<p><span class="calibre23">color = 0; // This is the same as
+Color.Red</span></p>
+<div id="part0000_split_035.html_calibre_pb_95" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_036.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Enums and Strings</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">We want to know the kind of JavaScript which
+is produced by enums. Consider the sample TypeScript given below:
+</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum MyEnum {</span></p>
+<p><span class="calibre23">   False,</span></p>
+<p><span class="calibre23">   True,</span></p>
+<p><span class="calibre23">   Unknown</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The following JavaScript code will be
+generated from the above TypeScript code:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var MyEnum;</span></p>
+<p><span class="calibre23">(function (MyEnum) {</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["False"] = 0] =
+"False";</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["True"] = 1] =
+"True";</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["Unknown"] = 2] =
+"Unknown";</span></p>
+<p><span class="calibre23">})( MyEnum || (MyEnum = {}));</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The variable “</span><span
+class="calibre38">MyEnum”</span><span class="calibre3"> can be used for
+the purpose of converting an enum of string version into a number or
+maybe a number version of the enum. The code given below best describes
+this:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum MyEnum {</span></p>
+<p><span class="calibre23">   False,</span></p>
+<p><span class="calibre23">   True,</span></p>
+<p><span class="calibre23">   Unknown</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">console.log(MyEnum [0]); //
+"False"</span></p>
+<p><span class="calibre23">console.log(MyEnum ["False"]); //
+0</span></p>
+<p><span class="calibre23">console.log(MyEnum [MyEnum.False]); //
+"False" because ` MyEnum.False == 0`</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">It is also possible for us to change the
+number which is associated with the enum. The default setting is that
+enums are 0 and each subsequent increment is automatically made in
+intervals of 1. Consider the code given below which best describes
+this:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Color {</span></p>
+<p><span class="calibre23">   Red,     // 0</span></p>
+<p><span class="calibre23">   Green,   // 1</span></p>
+<p><span class="calibre23">   Blue     // 2</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The number associated with a specific enum can
+be automatically changed  by specifically assigning to it. The example
+given below shows how this can be done, we begin at 3, and then
+increment from there as shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Color {</span></p>
+<p><span class="calibre23">   LightRed = 3,  // 3</span></p>
+<p><span class="calibre23">   DarkGreen,    // 4</span></p>
+<p><span class="calibre23">   LightBlue      // 5</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3">You also have to know that enums are open
+ended. Consider the JavaScript code given below, which has been
+generated from an enum:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var MyEnum;</span></p>
+<p><span class="calibre23">(function (MyEnum) {</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["False"] = 0] =
+"False";</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["True"] = 1] =
+"True";</span></p>
+<p><span class="calibre23">   MyEnum [MyEnum ["Unknown"] = 2] =
+"Unknown";</span></p>
+<p><span class="calibre23">})( MyEnum || (MyEnum = {}));</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">An enum definition can be spread across
+multiple files. Consider the example given below, in which we are
+spreading the definition of Color to get two blocks:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Color {</span></p>
+<p><span class="calibre23">   Red,</span></p>
+<p><span class="calibre23">   Green,</span></p>
+<p><span class="calibre23">   Blue</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Color {</span></p>
+<p><span class="calibre23">   LightRed = 3,</span></p>
+<p><span class="calibre23">   DarkGreen,</span></p>
+<p><span class="calibre23">   LightBlue</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_036.html_calibre_pb_97" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_037.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Enums as flags</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Flgs provide us with an excellent ability  to
+use enums. Consider the example given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Animal {</span></p>
+<p><span class="calibre23">   None           = 0,</span></p>
+<p><span class="calibre23">   PossesClaws       = 1 &lt;&lt;
+0,</span></p>
+<p><span class="calibre23">   Flying         = 1 &lt;&lt; 1,</span></p>
+<p><span class="calibre23">   ConsumesFish       = 1 &lt;&lt;
+2,</span></p>
+<p><span class="calibre23">   Endangered     = 1 &lt;&lt; 3</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In the above case, we need to get bitwise
+disjoint operators by moving the 1 around. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the next example given
+below:</span></p>
+<p><span class="calibre23">enum Animal {</span></p>
+<p><span class="calibre23">   None           = 0,</span></p>
+<p><span class="calibre23">   PossesClaws       = 1 &lt;&lt;
+0,</span></p>
+<p><span class="calibre23">   Flies         = 1 &lt;&lt; 1,</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">function printAnimalAbilities(animal)
+{</span></p>
+<p><span class="calibre23">   var animFlags = animal.flags;</span></p>
+<p><span class="calibre23">   if (animFlags &amp; AnimFlags.PossesClaws)
+{</span></p>
+<p><span class="calibre23">       console.log('The animal has
+claws');</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">   if (animFlags &amp; AnimFlags.Flies)
+{</span></p>
+<p><span class="calibre23">       console.log('The animal can
+fly');</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">   if (animFlags == AnimFlags.None)
+{</span></p>
+<p><span class="calibre23">       console.log('nothing');</span></p>
+<p><span class="calibre23">   }</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var animal = { flags: AnimFlags.None
+};</span></p>
+<p><span class="calibre23">printAnimalAbilities(animal); //
+nothing</span></p>
+<p><span class="calibre23">animal.flags |=
+AnimFlags.PossesClaws;</span></p>
+<p><span class="calibre23">printAnimalAbilities(animal); //The animal
+has claws</span></p>
+<p><span class="calibre23">animal.flags &amp;=
+~AnimFlags.PossesClaws;</span></p>
+<p><span class="calibre23">printAnimalAbilities(animal); //
+nothing</span></p>
+<p><span class="calibre23">animal.flags |= AnimFlags.PossesClaws |
+AnimFlags.Flies;</span></p>
+<p><span class="calibre23">printAnimalAbilities(animal); // The animal
+has claws and the animal it flies</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Flags can be combined for the purpose of
+creating convenient shortcuts in the definition of the enum. This is
+shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum Animal {</span></p>
+<p><span class="calibre23">   None           = 0,</span></p>
+<p><span class="calibre23">   PossesClaws       = 1 &lt;&lt;
+0,</span></p>
+<p><span class="calibre23">   Flies         = 1 &lt;&lt; 1,</span></p>
+<p><span class="calibre23">   EatsFish       = 1 &lt;&lt; 2,</span></p>
+<p><span class="calibre23">   Endangered     = 1 &lt;&lt; 3,</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">   EndangeredFliesClawedEatFish = PossesClaws
+| Flies | EatsFish | Endangered,</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_037.html_calibre_pb_99" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_038.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Const Enums</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Suppose that you have an enum defined as
+follows:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">enum MyEnum {</span></p>
+<p><span class="calibre23">   False,</span></p>
+<p><span class="calibre23">   True,</span></p>
+<p><span class="calibre23">   Unknown</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lie = MyEnum.False;</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">For you to boost the performance, you have to
+mark the enum as a “const enum.”  This is shown in the code given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">const enum MyEnum {</span></p>
+<p><span class="calibre23">   False,</span></p>
+<p><span class="calibre23">   True,</span></p>
+<p><span class="calibre23">   Unknown</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lie = MyEnum.False;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The above will give the following JavaScript
+code after compilation:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var lie = 0;</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">What the compiler does is that it inilines any
+enum which has been used. Also, no JavaScript will be generated for the
+definition of the enum. This is because the usages for this will be
+inlined. </span></p>
+<div id="part0000_split_038.html_calibre_pb_101" class="calibre12">
+
+</div>
+</div>
+<p><span id="part0000_split_039.html"></span></p>
+<section id="part0000_split_039.html_calibre_pb_102"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_039.html__Toc455006190" class="calibre27"><span
+class="calibre28">Chapter 13- let</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In JavaScript, variables are function scoped.
+This is not the case with several other programming languages, such as
+Java and C#, in which variables are block scoped. Consider the
+JavaScript code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myVar = 123;</span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   var myVar = 500;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">console.log(myVar); // 500</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Although you expected the above code to print
+123, it will print 500. This is because our variable “</span><span
+class="calibre38">myVar”</span><span class="calibre3"> remains to be the
+same both inside and outside the “</span><span
+class="calibre38">if”</span><span class="calibre3"> block. This is one
+of the most common sources of errors in JavaScript. In TypeScript, the
+keyword “</span><span class="calibre38">let”</span><span
+class="calibre3"> was introduced so as to enable the programmers to
+define variables having a true block scope. This means that if you use
+the keyword “</span><span class="calibre38">let”</span><span
+class="calibre3"> rather than the “</span><span
+class="calibre38">var”</span><span class="calibre3"> keyword to define
+your variable, it will be seen and used differently as outside the
+scope. The previous example can be written using the “</span><span
+class="calibre38">let”</span><span class="calibre3"> keyword as shown
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">let myVar = 123;</span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   let myVar = 500;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">console.log(myVar); // 123</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Consider the example given below, which shows
+how the “</span><span class="calibre38">let”</span><span
+class="calibre3"> keyword can be used in loops:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var index = 0;</span></p>
+<p><span class="calibre23">var myArray = [1, 2, 3];</span></p>
+<p><span class="calibre23">for (let index = 0; index &lt;
+myArray.length; index++) {</span></p>
+<p><span class="calibre23">   console.log(myArray[index]);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">console.log(index); // 0</span></p>
+<p><span class="calibre3">Replacing it with the “</span><span
+class="calibre38">let”</span><span class="calibre3"> keyword will help
+save you from errors of the loop. This is shown below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var index = 0;</span></p>
+<p><span class="calibre23">var myArray = [1, 2, 3];</span></p>
+<p><span class="calibre23">for (let index = 0; index &lt;
+myArray.length; index++) {</span></p>
+<p><span class="calibre23">   console.log(myArray[index]);</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">console.log(index); // 0</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">As shown above, it is always good for you to
+use the “</span><span class="calibre38">let”</span><span
+class="calibre3"> keyword whenever possible, and you will be saved from
+many surprises and errors. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Functions are also used for the purpose of
+creating a new scope. We are in need of demonstrating how a function can
+be used for creating a new variable scope in JavaScript. Consider the
+code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myVar = 123;</span></p>
+<p><span class="calibre23">function testFunction() {</span></p>
+<p><span class="calibre23">   var myVar = 500;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">testFunction();</span></p>
+<p><span class="calibre23">console.log(myVar); // 123</span></p>
+<p><span class="calibre3">The above code will behave just as you would
+like. Without it, it will be hard for one to write their JavaScript
+code. </span></p>
+<div id="part0000_split_039.html_calibre_pb_105" class="calibre12">
+
+</div>
+</p>
+</section>
+<p><span id="part0000_split_040.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">Generated JS</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">TypeScript generates a JS code in which it is
+simple to rename the let variable if there exists a similar name in the
+surrounding. Consider the code given below, which shows a simple
+replacement of the </span><span class="calibre38">var</span><span
+class="calibre3"> with </span><span class="calibre38">let. </span><span
+class="calibre3">Here is the code:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   let myVar = 123;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// will become //</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   var myVar = 123;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">However, if the name of the variable has
+readily been taken by the surrounding scope, then a new variable name
+will be generated as shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myVar = '123';</span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   let myVar = 123;</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">// will become //</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var myVar = '123';</span></p>
+<p><span class="calibre23">if (true) {</span></p>
+<p><span class="calibre23">   var _myVar = 123; // It has been
+Renamed</span></p>
+<p><span class="calibre23">}</span></p>
+<div id="part0000_split_040.html_calibre_pb_107" class="calibre12">
+
+</div>
+</p>
+</div>
+<p><span id="part0000_split_041.html"></span></p>
+<div class="calibre1">
+<p><br />
+<span class="calibre37">let in closures</span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre16"> </span></p>
+<p><span class="calibre3">Consider the simple JavaScript code given
+below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var functions = [];</span></p>
+<p><span class="calibre23">// creating a bunch of functions</span></p>
+<p><span class="calibre23">for (var j = 0; j &lt; 3; j++) {</span></p>
+<p><span class="calibre23">   functions.push(function() {</span></p>
+<p><span class="calibre23">       console.log(j);</span></p>
+<p><span class="calibre23">   })</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">// call them</span></p>
+<p><span class="calibre23">for (var k = 0; k &lt; 3; k++) {</span></p>
+<p><span class="calibre23">   functions[k]();</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">In most interview questions, you are asked
+about the log in the above JavaScript file. Although most people expect
+the answer to be 0, 2,3, but the real answer is 3. The reason is that
+the three functions are making use of the variable “</span><span
+class="calibre38">j”</span><span class="calibre3"> from our outer scope,
+and we will in turn execute them the value of the variable “</span><span
+class="calibre38">j”</span><span class="calibre3"> will be 3. It will
+form the termination condition for our first loop. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">The solution to this problem is creation of a
+variable for each variable, and this should be specifically used for
+iteration in that loop. As you are aware, a new scope for a variable can
+be created by creation of a new function and then executing it
+immediately. This is shown in the code given below:</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre23">var functions = [];</span></p>
+<p><span class="calibre23">// creating a bunch of functions</span></p>
+<p><span class="calibre23">for (var j = 0; j &lt; 3; j++) {</span></p>
+<p><span class="calibre23">   (function() {</span></p>
+<p><span class="calibre23">       var local = j;</span></p>
+<p><span class="calibre23">       functions.push(function() {</span></p>
+<p><span class="calibre23">           console.log(local);</span></p>
+<p><span class="calibre23">       })</span></p>
+<p><span class="calibre23">   })();</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23">// calling them</span></p>
+<p><span class="calibre23">for (var k = 0; k &lt; 3; k++) {</span></p>
+<p><span class="calibre23">   funcs[k]();</span></p>
+<p><span class="calibre23">}</span></p>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">Once you use the </span><span
+class="calibre38">let </span><span class="calibre3">keyword rather than
+the </span><span class="calibre38">var </span><span
+class="calibre3">keyword, a variable which is unique to each loop
+iteration is created. </span></p>
+</div>
+<p><span id="part0000_split_042.html"></span></p>
+<section id="part0000_split_042.html_calibre_pb_109"
+class="calibre24 calibre1">
+<h1 class="calibre24"><br />
+<span id="part0000_split_042.html__Toc455006191" class="calibre27"><span
+class="calibre28">Conclusion</span></span></h1>
+<p><span class="calibre23"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">We have come to the conclusion of this guide.
+TypeScript is a programming language which always compiles into
+JavaScript. The language is open source, and it was developed and
+maintained by Microsoft. It is good for the development of large
+applications in which features such as static typing and object oriented
+programming are supported. These two features are the main ones which
+suit it for use to develop large applications.</span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3"> The language supports type annotations which
+are very good for maintaining the indentations in a program.
+Indentations usually ensure that a program is well readable. You have to
+remember that TypeScript is a superset of JavaScript, meaning that any
+JavaScript code is also a TypeScript code. This is the reason why
+TypeScript always compiles into JavaScript. For you to begin programming
+in TypeScript, you have to first get the environment ready for doing
+that. For Windows users, you just have to simply install the Visual
+Studio and then download and install the necessary plugin, and you will
+be set to get programming. </span></p>
+<p><span class="calibre3"> </span></p>
+<p><span class="calibre3">If you are using any other platform, then you
+have to rely on the Node package named “</span><span
+class="calibre38">npm.”</span><span class="calibre3"> Ensure that you
+have a text editor and a browser. Once you have installed the npm
+package for TypeScript, you can go ahead and begin to write your
+TypeScript programs. </span></p>
+<p><span class="calibre3"> </span></p>
+</section>

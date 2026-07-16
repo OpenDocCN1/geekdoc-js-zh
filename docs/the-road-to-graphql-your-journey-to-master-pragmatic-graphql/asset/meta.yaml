@@ -1,0 +1,492 @@
+name: The road to GraphQL ： your journey to master pragmatic GraphQL in JavaScript
+  with React.Js and Node.Js
+name_cn: GraphQL 之路：在 JavaScript、React.Js 和 Node.Js 中精通实用 GraphQL 的进阶
+slug: the-road-to-graphql-your-journey-to-master-pragmatic-graphql
+toc:
+- - '#'
+  - GraphQL 之路：在 JavaScript、React.Js 和 Node.Js 中精通实用 GraphQL 的进阶
+- - '#'
+  - 引言
+- - '##'
+  - 关于作者
+- - '##'
+  - 要求
+- - '###'
+  - 编辑器和终端
+- - '###'
+  - React
+- - '##'
+  - Node
+- - '##'
+  - Node and NPM
+- - '##'
+  - Command Line
+- - '##'
+  - FAQ
+- - '###'
+  - 为什么本书使用 React 来教授 GraphQL？
+- - '###'
+  - 为什么使用 Node/Express 来教授 GraphQL？
+- - '###'
+  - 我如何获取更新？
+- - '###'
+  - 我如何获取源代码项目？
+- - '###'
+  - 如果我在亚马逊上购买了书，我能获得副本吗？
+- - '###'
+  - 在阅读本书时我如何获得帮助？
+- - '###'
+  - 有任何故障排除区域吗？
+- - '###'
+  - 如果我付不起完整课程怎么办？
+- - '###'
+  - 我可以帮助内容吗？
+- - '###'
+  - 我如何支持这个项目？
+- - '###'
+  - 有退款保证吗？
+- - '##'
+  - 提示与技巧
+- - '##'
+  - 挑战
+- - '##'
+  - GraphQL
+- - '###'
+  - 什么是 GraphQL?
+- - '###'
+  - GraphQL 优势
+- - '###'
+  - 声明式数据获取
+- - '###'
+  - GraphQL 消灭了过度获取
+- - '###'
+  - 用于 React、Angular、Node 等的 GraphQL
+- - '###'
+  - 谁在使用 GraphQL？
+- - '###'
+  - 单一事实来源
+- - '###'
+  - GraphQL 拥抱现代趋势
+- - '###'
+  - GraphQL Schema Stitching
+- - '##'
+  - GraphQL 内省 (Introspection)
+- - '##'
+  - 强类型 GraphQL (Strongly Typed GraphQL)
+- - '##'
+  - GraphQL 版本控制 (Versioning)
+- - '##'
+  - 不断发展的 GraphQL 生态系统
+- - '##'
+  - 我应该全投入 GraphQL 吗？
+- - '##'
+  - GraphQL 的缺点
+- - '###'
+  - GraphQL 查询的复杂度 (Query Complexity)
+- - '###'
+  - GraphQL 速率限制 (Rate Limiting)
+- - '##'
+  - GraphQL 缓存 (Caching)
+- - '##'
+  - 为什么不用 REST？
+- - '###'
+  - GraphQL 替代方案
+- - '##'
+  - Apollo
+- - '###'
+  - Apollo 优势
+- - '###'
+  - Apollo 的生态系统
+- - '###'
+  - Apollo 背后的公司和社区
+- - '###'
+  - 谁在使用 Apollo？
+- - '###'
+  - Apollo 文档
+- - '###'
+  - Apollo 库
+- - '###'
+  - Apollo 特性
+- - '###'
+  - 与其他框架的互操作性
+- - '###'
+  - 使用 Apollo 进行现代数据处理
+- - '##'
+  - 便捷的开发体验
+- - '##'
+  - Apollo 的缺点
+- - '###'
+  - 尖端技术 (Bleeding Edge)
+- - '###'
+  - 建设中 (Under Construction)
+- - '###'
+  - 大胆且时尚
+- - '###'
+  - 缺乏竞争
+- - '##'
+  - JavaScript、React 和 Node.js 的 Apollo 替代方案
+- - '###'
+  - React 的 Apollo Client 替代方案
+- - '##'
+  - 用于 Node.js 的 Apollo Server 替代方案
+- - '##'
+  - GraphQL 设置、工具和 API
+- - '###'
+  - 在 GitHub 上为 API 填充数据
+- - '###'
+  - 练习：
+- - '###'
+  - GitHub 仓库 (Repositories)
+- - '###'
+  - 练习：
+- - '###'
+  - 分页数据 (Paginated Data)
+- - '###'
+  - Issues 和 Pull Requests
+- - '###'
+  - 练习：
+- - '##'
+  - 使用 GitHub 个人访问令牌读写数据
+- - '##'
+  - 与 GitHub GraphQL API 交互
+- - '##'
+  - GraphQL 基础
+- - '###'
+  - GraphQL 操作：Query
+- - '#'
+  - GitHub GraphQL Explorer
+- - '###'
+  - 练习题
+- - '###'
+  - GraphQL 操作：Mutation（变异）
+- - '###'
+  - 练习题
+- - '###'
+  - GraphQL 分页 (Pagination)
+- - '###'
+  - 练习：
+- - '##'
+  - React 与 GraphQL
+- - '###'
+  - 编写你的第一个 React GraphQL 客户端
+- - '###'
+  - 命令行
+- - '#'
+  - 介绍
+- - '###'
+  - '`src/App.js`'
+- - '##'
+  - 使用 Axios 进行初始设置
+- - '###'
+  - 命令行
+- - '###'
+  - '`src/App.js`'
+- - '##'
+  - 环境变量
+- - '###'
+  - 在 `.env` 中配置
+- - '###'
+  - '`.env`'
+- - '###'
+  - '`src/App.js`'
+- - '##'
+  - 实现表单
+- - '###'
+  - '`src/App.js`'
+- - '###'
+  - 练习：
+- - '###'
+  - React 中的 GraphQL 查询
+- - '###'
+  - 开发者工具
+- - '###'
+  - React 中的 GraphQL 变量和参数
+- - '###'
+  - 练习题
+- - '###'
+  - React 中的 GraphQL 分页
+- - '###'
+  - 练习：
+- - '###'
+  - React 中的 GraphQL Mutation
+- - '###'
+  - 练习
+- - '###'
+  - 离开 Apollo
+- - '##'
+  - Apollo Client
+- - '###'
+  - 从命令行开始使用 Apollo Boost
+- - '##'
+  - 命令行
+- - '##'
+  - Command Line
+- - '##'
+  - .env
+- - '##'
+  - Command Line (重复)
+- - '###'
+  - 练习：
+- - '###'
+  - Apollo Client 与 GraphQL 查询
+- - '##'
+  - Command Line
+- - '###'
+  - 练习：
+- - '###'
+  - 带有分页、变量、嵌套对象和列表字段的 Apollo Client
+- - '###'
+  - '`src/index.js`'
+- - '###'
+  - 练习：
+- - '###'
+  - Apollo Client 和 GraphQL Mutation
+- - '###'
+  - '`src/index.js`'
+- - '###'
+  - 练习：
+- - '##'
+  - React 结合 GraphQL
+- - '###'
+  - 现在，我们将专注于通过构建另一个应用程序在 Apollo Client。基本上，你将学习如何将数据层连接到视图层。我们将涵盖如何从视图层发送查询和变异，以及如何更新视图层以反映结果。此外，你将学习在
+    React 中使用 GraphQL 功能，如分页、乐观 UI、缓存、本地状态管理和预取。
+- - '###'
+  - 练习：
+- - '###'
+  - 为 React 和 GitHub 的 GraphQL API 配置 Apollo Client
+- - '###'
+  - 练习：
+- - '###'
+  - 连接数据层与视图层：引入 React Apollo
+- - '###'
+  - 练习：
+- - '###'
+  - 在 React 中使用 Apollo Client 进行 GraphQL 查询
+- - '###'
+  - src/Profile/index.js
+- - '###'
+  - src/Repository/index.js
+- - '###'
+  - src/Repository/RepositoryList/index.js
+- - '###'
+  - src/Repository/RepositoryItem/index.js
+- - '###'
+  - src/Link/index.js
+- - '###'
+  - 练习题：
+- - '###'
+  - React 中的 Apollo Client 错误处理
+- - '###'
+  - src/Profile/index.js
+- - '###'
+  - src/Error/index.js
+- - '##'
+  - 命令行
+- - '###'
+  - 练习题
+- - '##'
+  - 在 React 中使用 Apollo Client 进行 GraphQL Mutation
+- - '###'
+  - 练习
+- - '###'
+  - React 中带高阶组件的 GraphQL 查询/变异
+- - '###'
+  - 练习
+- - '###'
+  - React 中使用 Apollo Client 进行本地状态管理
+- - '###'
+  - 练习
+- - '###'
+  - React 中的 Apollo Client 乐观 UI
+- - '###'
+  - 练习：
+- - '###'
+  - 在 React 中使用 Apollo Client 实现 GraphQL 分页
+- - '###'
+  - 练习：
+- - '###'
+  - React 中使用 Apollo Client 缓存
+- - '###'
+  - 命令行
+- - '#'
+  - src/Repository/index.js
+- - '#'
+  - src/Issue/index.js
+- - '#'
+  - src/Issue/index.js
+- - '#'
+  - src/Issue/index.js
+- - '###'
+  - 练习：
+- - '###'
+  - 实现问题：客户端
+- - '###'
+  - 练习：
+- - '###'
+  - 实现问题：服务器
+- - '###'
+  - 命令行
+- - '###'
+  - 练习题
+- - '###'
+  - React 中的 Apollo 预取（Prefetching）
+- - '###'
+  - 练习
+- - '##'
+  - 评论功能
+- - '###'
+  - 练习
+- - '##'
+  - 附录：CSS 文件和样式
+- - '##'
+  - 使用 Apollo Server Node.js
+- - '###'
+  - GraphQL Playground
+- - '##'
+  - GraphQL Playground
+- - '##'
+  - 命令行
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Type Definitions'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Resolvers'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Resolvers'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Resolvers'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Types'
+- - '###'
+  - 练习题
+- - '###'
+  - 'Apollo Server: Types'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Types'
+- - '###'
+  - 练习题：
+- - '###'
+  - 'Apollo Server: Types'
+- - '###'
+  - 练习题
+- - '###'
+  - Schema 缝合
+- - '###'
+  - src/models/index.js
+- - '###'
+  - src/resolvers/index.js
+- - '###'
+  - src/schema/index.js
+- - '###'
+  - src/schema/user.js
+- - '###'
+  - 练习题
+- - '###'
+  - 使用 Sequelize 配合 PostgreSQL 构建 服务器
+- - '###'
+  - 命令行
+- - '###'
+  - 练习题
+- - '###'
+  - 解析器与数据库
+- - '###'
+  - 练习
+- - '###'
+  - Apollo Server：验证与错误
+- - '###'
+  - 解析器中的业务逻辑
+- - '###'
+  - 错误处理
+- - '###'
+  - GraphQL Playground
+- - '###'
+  - 练习题
+- - '###'
+  - Apollo Server：身份验证
+- - '###'
+  - 使用 GraphQL 进行注册（Sign Up）
+- - '###'
+  - 使用 Bcrypt 保护密码
+- - '###'
+  - 命令行
+- - '###'
+  - GraphQL 中的令牌身份验证
+- - '###'
+  - 命令行
+- - '###'
+  - 令牌
+- - '##'
+  - 使用 GraphQL 登录 (Sign In)
+- - '##'
+  - 使用 GraphQL 进行授权
+- - '###'
+  - 解析器层面的 GraphQL 授权
+- - '###'
+  - 命令行
+- - '###'
+  - 基于权限的 GraphQL 授权
+- - '###'
+  - 基于角色的 GraphQL 授权
+- - '###'
+  - 在 GraphQL Playground 中设置 Header
+- - '###'
+  - 自定义标量（Scalars）
+- - '###'
+  - 使用 Apollo Server 进行 GraphQL 分页（Pagination）
+- - '###'
+  - 使用 Apollo Server 和 GraphQL 实现偏移/限制分页
+- - '###'
+  - 使用 Apollo Server 和 GraphQL 实现游标分页
+- - '###'
+  - 基于标的分页：页面信息、连接（Connections）和哈希（Hashes）
+- - '###'
+  - 练习
+- - '###'
+  - GraphQL 订阅 (Subscriptions)
+- - '###'
+  - Apollo Server 订阅设置
+- - '###'
+  - 使用 PubSub 进行订阅和发布
+- - '##'
+  - 测试 GraphQL 服务器
+- - '###'
+  - GraphQL 服务器 E2E 测试设置
+- - '###'
+  - 命令行
+- - '###'
+  - 使用 E2E 测试用户场景
+- - '###'
+  - src/tests/api.js
+- - '###'
+  - src/tests/user.spec.js
+- - '###'
+  - 命令行 (Command Line)
+- - '##'
+  - 练习
+- - '#'
+  - GraphQL Server + PostgreSQL 部署到 Heroku
+- - '###'
+  - Heroku 故障排除
+- - '###'
+  - 命令行
+- - '###'
+  - 练习：
+- - '##'
+  - 结语
+- - '###'
+  - 进一步学习的路径
+- - '##'
+  - 永不停止学习
+- - '###'
+  - 感谢

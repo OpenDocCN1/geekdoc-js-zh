@@ -1,0 +1,18 @@
+name: Thinking in JavaScript
+name_cn: JavaScript 入门指南
+slug: thinking-in-javascript
+toc:
+- - '##'
+  - 变量
+- - '###'
+  - 注意
+- - '###'
+  - 注意
+- - '##'
+  - 全局和局部变量
+- - '##'
+  - 函数
+- - '###'
+  - 注意
+- - '##'
+  - 对象及其在 JavaScript 中的作用
