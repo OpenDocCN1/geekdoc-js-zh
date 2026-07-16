@@ -773,6 +773,7 @@
 +   [精通 TypeScript：现代 JavaScript 开发全面指南](docs/mastering-typescript-a-comprehensive-guide-to-modern-javascr/README.md)
 +   [掌握 Vue.js：初学者指南 (计算机科学大师)](docs/mastering-vuejs-a-beginners-guide-mastering-computer-science/README.md)
 +   [JavaScript 任务 (Mission： Code (Alternator Books ))](docs/mission-javascript-mission-code-alternator-books/README.md)
++   [现代异步 JavaScript 入门指南](docs/modern-asynchronous-javascript/README.md)
 +   [Modern JavaScript 入门指南](docs/modern-javascript/README.md)
 +   [适合急躁者的现代 JavaScript](docs/modern-javascript-for-the-impatient/README.md)
 +   [现代 JavaScript 工具与技能](docs/modern-javascript-tools-skills/README.md)
